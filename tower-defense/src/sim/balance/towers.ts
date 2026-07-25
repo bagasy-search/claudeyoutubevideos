@@ -61,6 +61,27 @@ export const TOWERS: readonly TowerDef[] = [
       slowDuration: 1.6,
     }),
   },
+  {
+    id: 'dragon',
+    name: 'Dragón',
+    cost: 150,
+    tags: ['physical', 'splash', 'fast'],
+    color: 0x5fb03a,
+    shot: 'shell',
+    // Es un personaje entero, no una torreta: se anima solo y no rota.
+    turret: false,
+    fps: 12,
+    desc: 'Cadencia alta y area chica. Cara pero contundente.',
+    base: stats({
+      damage: 16,
+      fireRate: 1.6,
+      range: 150,
+      projectileSpeed: 430,
+      splashRadius: 30,
+      critChance: 0.08,
+      critMult: 2,
+    }),
+  },
 ]
 
 export const TOWER_BY_ID = new Map(TOWERS.map((t) => [t.id, t]))

@@ -247,6 +247,61 @@ function drawTowerBase(g: Graphics, r: number, color: number): void {
   }
 }
 
+export const IDLE_FRAMES = 8
+
+/**
+ * Torre-personaje: una criatura de pie con un arma, en el mismo registro chibi
+ * que los enemigos. Respira en reposo en vez de rotar.
+ *
+ * Es el reemplazo procedural para una torre que se va a cubrir con arte real:
+ * asi el tipo de torre existe y se puede jugar antes de que el arte llegue.
+ */
+function drawCharacterTower(g: Graphics, r: number, color: number, phase: number): void {
+  const lw = Math.max(1.6, r * 0.11)
+  const outline = { width: lw, color: INK } as const
+  const breathe = Math.sin(phase) * r * 0.05
+  const face = lighten(color, 0.16)
+  const limb = darken(color, 0.2)
+  const metal = 0x8a7a5e
+
+  g.ellipse(0, r * 0.95, r * 0.7, r * 0.2).fill({ color: INK, alpha: 0.22 })
+
+  for (const side of [-1, 1]) {
+    g.roundRect(side * r * 0.26 - r * 0.13, r * 0.5, r * 0.26, r * 0.42, r * 0.12)
+      .fill({ color: limb })
+      .stroke(outline)
+  }
+
+  // Cuerpo.
+  g.roundRect(-r * 0.42, r * 0.02 + breathe, r * 0.84, r * 0.6, r * 0.22)
+    .fill({ color })
+    .stroke(outline)
+
+  // Arma cruzada al frente: es lo que dice "esto dispara".
+  g.roundRect(-r * 0.1, r * 0.28 + breathe, r * 1.05, r * 0.24, r * 0.1)
+    .fill({ color: metal })
+    .stroke(outline)
+  g.ellipse(r * 0.95, r * 0.4 + breathe, r * 0.1, r * 0.16)
+    .fill({ color: darken(metal, 0.5) })
+    .stroke(outline)
+
+  // Cabeza y cara.
+  const hy = -r * 0.42 + breathe
+  g.circle(0, hy, r * 0.46).fill({ color: face }).stroke(outline)
+  for (const side of [-1, 1]) {
+    g.ellipse(side * r * 0.18, hy + r * 0.04, r * 0.11, r * 0.14)
+      .fill({ color: SCLERA })
+      .stroke({ width: lw * 0.7, color: INK })
+    g.circle(side * r * 0.2, hy + r * 0.07, r * 0.06).fill({ color: INK })
+  }
+  // Cresta.
+  for (const t of [-1, 0, 1]) {
+    g.poly([t * r * 0.2 - r * 0.09, hy - r * 0.36, t * r * 0.2, hy - r * 0.66, t * r * 0.2 + r * 0.09, hy - r * 0.36])
+      .fill({ color: darken(color, 0.25) })
+      .stroke(outline)
+  }
+}
+
 /**
  * Pieza superior que si rota hacia el objetivo. Es chica a proposito: con la
  * torre en vista frontal, rotar el cuerpo entero romperia la camara, pero sin
@@ -307,7 +362,8 @@ function drawSoft(g: Graphics): void {
 export interface Atlas {
   /** [defIdx][frame] del ciclo de caminata. */
   enemy: Texture[][]
-  towerBase: Map<string, Texture>
+  /** Frames de la base. Las torres estaticas traen uno solo. */
+  towerBase: Map<string, Texture[]>
   towerTurret: Map<string, Texture>
   projectile: Texture[]
   shadow: Texture
@@ -333,12 +389,25 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
     return frames
   })
 
-  const towerBase = new Map<string, Texture>()
+  const towerBase = new Map<string, Texture[]>()
   const towerTurret = new Map<string, Texture>()
   for (const def of TOWERS) {
+    if (def.turret === false) {
+      // Torre-personaje: se hornea un ciclo de reposo procedural, que sirve de
+      // reemplazo hasta que entre el arte real por el manifiesto.
+      const frames: Texture[] = []
+      for (let f = 0; f < IDLE_FRAMES; f++) {
+        const g = new Graphics()
+        drawCharacterTower(g, TOWER_R, def.color, (f / IDLE_FRAMES) * Math.PI * 2)
+        frames.push(bake(renderer, g, TOWER_R * 1.5, 3))
+      }
+      towerBase.set(def.id, frames)
+      continue
+    }
+
     const gb = new Graphics()
     drawTowerBase(gb, TOWER_R, def.color)
-    towerBase.set(def.id, bake(renderer, gb, TOWER_R * 1.4, 3))
+    towerBase.set(def.id, [bake(renderer, gb, TOWER_R * 1.4, 3)])
 
     const gt = new Graphics()
     drawTurret(gt, TOWER_R, def.color, def.shot === 'bolt' ? 'arrow' : def.shot)

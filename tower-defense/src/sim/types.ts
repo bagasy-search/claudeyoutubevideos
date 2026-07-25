@@ -10,6 +10,13 @@ export interface TowerDef {
   base: Stats
   /** Como se ve/comporta el proyectil. */
   shot: 'bolt' | 'shell' | 'shard'
+  /**
+   * Si es false, la torre no tiene cañon giratorio: es un personaje entero que
+   * se anima solo. El apuntado se comunica con el fogonazo, no con la rotacion.
+   */
+  turret?: boolean
+  /** Cuadros por segundo de la animacion de reposo. */
+  fps?: number
   desc: string
 }
 

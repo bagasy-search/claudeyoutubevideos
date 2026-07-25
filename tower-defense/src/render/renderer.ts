@@ -7,10 +7,11 @@ import { Rng } from '../core/rng'
 import type { Game } from '../sim/game'
 import { FIELD_H, FIELD_W } from '../sim/game'
 import { MAX_ENEMIES, MAX_PROJECTILES } from '../sim/world'
-import { applyExternalArt } from './externalArt'
+import { INLINE_ART } from '../generated/inlineArt'
+import { applyExternalArt, applyManifest } from './externalArt'
 import { FxLayer } from './fx'
 import { GROUND, SEMANTIC, darken, ink, lighten, mix } from './palette'
-import { TOWER_R, buildAtlas, type Atlas } from './sprites'
+import { IDLE_FRAMES, TOWER_R, buildAtlas, type Atlas } from './sprites'
 
 /**
  * Capa de render. Solo LEE el estado de la simulacion — no lo modifica nunca.
@@ -78,9 +79,16 @@ export class Renderer {
     // Arte externo opcional. Se activa poniendo VITE_ART_MANIFEST (por ejemplo
     // "art/manifest.json"); sin esa variable ni se intenta el fetch, asi el
     // build por defecto no deja un 404 en la consola.
+    // INLINE_ART tiene prioridad: es el arte empotrado en el bundle, que es la
+    // unica via que funciona en el build de un solo archivo (no puede hacer
+    // requests). Si no hay, se intenta el manifiesto por URL.
     const manifestUrl = import.meta.env.VITE_ART_MANIFEST
-    if (manifestUrl) {
-      const art = await applyExternalArt(this.atlas, manifestUrl)
+    const art = INLINE_ART
+      ? await applyManifest(this.atlas, INLINE_ART)
+      : manifestUrl
+        ? await applyExternalArt(this.atlas, manifestUrl)
+        : null
+    if (art) {
       if (art.replaced.length > 0) console.info('[arte] reemplazado:', art.replaced.join(', '))
       if (art.missing.length > 0) console.warn('[arte] faltan:', art.missing.join(', '))
     }
@@ -411,21 +419,38 @@ export class Renderer {
     const seen = new Set<number>()
     for (const t of game.world.towers) {
       seen.add(t.id)
+      const def = game.towerDefs.find((d) => d.id === t.type)
+      const frames = this.atlas.towerBase.get(t.type) ?? []
+      const hasTurret = def?.turret !== false
+
       let view = this.towerViews.get(t.id)
       if (!view) {
-        const base = new Sprite(this.atlas.towerBase.get(t.type))
+        const base = new Sprite(frames[0])
         base.anchor.set(0.5)
         const turret = new Sprite(this.atlas.towerTurret.get(t.type))
         // El pivote del cañón no es su centro: está cerca de la base.
         turret.anchor.set(0.5, 0.5)
+        turret.visible = hasTurret
         this.towerLayer.addChild(base, turret)
         view = { base, turret }
         this.towerViews.set(t.id, view)
       }
 
       const recoil = t.recoil * t.recoil
+
+      // Las torres-personaje se animan solas; las clasicas tienen un solo frame.
+      if (frames.length > 1) {
+        const fps = def?.fps ?? IDLE_FRAMES
+        const frame = Math.floor(this.time * fps + t.id) % frames.length
+        view.base.texture = frames[frame]
+      }
       view.base.position.set(t.x, t.y)
       view.base.scale.set(1 - recoil * 0.05)
+
+      if (!hasTurret) {
+        view.turret.visible = false
+        continue
+      }
 
       let diff = ((t.angle - t.prevAngle + Math.PI * 3) % (Math.PI * 2)) - Math.PI
       view.turret.position.set(t.x, t.y - TOWER_R * 0.62)

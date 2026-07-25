@@ -56,6 +56,36 @@ Imprime la entrada de manifiesto lista para copiar. Opciones útiles:
 aparta del blanco puro y sigue siendo fondo; `-1` si el PNG ya viene con alfa),
 `--band` (qué franja inferior cuenta como pies).
 
+## Torres animadas
+
+Una torre con `turret: false` en `towers.ts` no lleva cañón giratorio: es un
+personaje entero que se anima solo, y el apuntado se comunica con el fogonazo.
+Su arte va en `towerBase` como una lista de frames:
+
+```json
+{ "towerBase": { "dragon": [
+  { "path": "dragon/walk_00.png", "pixelRatio": 2 },
+  { "path": "dragon/walk_01.png", "pixelRatio": 2 }
+] } }
+```
+
+La velocidad la fija `fps` en la definición de la torre.
+
+## Empotrar el arte en el build de un solo archivo
+
+Esa página no puede hacer requests, así que el manifiesto por fetch no le sirve:
+los PNG tienen que viajar dentro del JS.
+
+```bash
+python3 tools/inline_art.py          # genera src/generated/inlineArt.ts
+npm run build:singlefile
+python3 tools/inline_art.py --clear  # vuelve al stub
+```
+
+`inlineArt.ts` está commiteado a propósito, aunque sea generado: es lo que hace
+que un clon limpio pueda construir el archivo único con el arte incluido sin
+necesitar Python.
+
 ## Requisitos de los archivos
 
 - **PNG con alfa**, fondo recortado.

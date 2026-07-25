@@ -85,12 +85,12 @@ ENEMIES.forEach((def, i) => {
 // Fila 4: torres, base + cañón, a tamaño real y ampliado.
 label('Torres — tamaño real y ×2.6', 20, 466, true)
 TOWERS.forEach((def, i) => {
-  const x = 90 + i * 190
+  const x = 80 + i * 150
   for (const [sc, yy] of [
     [1, 505],
     [2.6, 590],
   ] as const) {
-    const base = new Sprite(atlas.towerBase.get(def.id))
+    const base = new Sprite(atlas.towerBase.get(def.id)?.[0])
     base.anchor.set(0.5)
     base.position.set(x, yy)
     base.scale.set(sc)
