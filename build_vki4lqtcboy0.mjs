@@ -14,29 +14,44 @@ const AVATAR = `${SLUG}_opt.mp4`;
 const caps = JSON.parse(fs.readFileSync(`public/captions_${SLUG}.json`, "utf8").replace(/^﻿/, ""));
 const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
 const Wc = caps.map((c) => ({ n: norm(c.text), ms: c.startMs, e: c.endMs }));
-const at = (phrase, maxTok = 8) => {
+// afterMs: la locución son DOS tandas de HeyGen unidas y hay frases que se repiten
+// literalmente en las dos mitades ("el pan de ayer", "tu abuela dejó de hacer..."). Sin
+// este piso, la búsqueda devuelve la PRIMERA aparición y el visual de la segunda mitad
+// se ancla 20 minutos antes. Los beats/componentes de la parte 2 traen afterMs.
+const at = (phrase, maxTok = 8, afterMs = 0) => {
   const words = norm(phrase).split(" ").filter(Boolean);
   const t = words.slice(0, Math.min(maxTok, words.length));
   for (let i = 0; i <= Wc.length - t.length; i++) {
+    if (Wc[i].ms < afterMs) continue;
     let ok = 1;
     for (let j = 0; j < t.length; j++) if (Wc[i + j].n !== t[j]) { ok = 0; break; }
     if (ok) return Wc[i].ms / 1000;
   }
   return null;
 };
-const atc = (phrase, maxTok) => { const v = at(phrase, maxTok); if (v == null) console.warn("⚠ anchor missing:", phrase.slice(0, 55)); return v; };
+const atc = (phrase, maxTok, afterMs) => { const v = at(phrase, maxTok, afterMs); if (v == null) console.warn("⚠ anchor missing:", phrase.slice(0, 55)); return v; };
 const TOTAL = +((Wc[Wc.length - 1].e) / 1000 + 1.2).toFixed(2);
 
-// ── 0) beats fuente (317, autorados por los agentes §1) ──
-const srcBeats = JSON.parse(fs.readFileSync(`_v3/${SLUG}_beats.json`, "utf8").replace(/^﻿/, ""));
+// ── 0) beats fuente — parte 1 (317) + parte 2 (280, autorados sobre la 2ª tanda de HeyGen) ──
+// OJO: la parte 2 vive en _beats_q.json con nombres `<slug>_q_NNN`. Hubo un dataset previo
+// (_beats_p2.json, nombres `<slug>_s_317+`) de una corrida cortada que compartía nombres de
+// asset con la parte 1 y quedó cruzado: clip de un beat sobre la frase de otro. No lo uses.
+const srcBeats = [
+  ...JSON.parse(fs.readFileSync(`_v3/${SLUG}_beats.json`, "utf8").replace(/^﻿/, "")),
+  ...JSON.parse(fs.readFileSync(`_v3/${SLUG}_beats_q.json`, "utf8").replace(/^﻿/, "")),
+];
 
 // ── 1) B-ROLL — 1 clip o imagen por beat, anclada a su frase real, contigua ──
 const rawBeats = [];
 let nClips = 0;
 for (const b of srcBeats) {
-  const t = atc(b.phrase);
+  const t = atc(b.phrase, 8, b.afterMs || 0);
   if (t == null) continue;
-  const hasClip = fs.existsSync(`public/broll/${b.name}.mp4`);
+  // El beat manda: si lo autoré como imagen, va la imagen aunque exista un .mp4 con ese
+  // nombre (public/broll es compartida y otros procesos dejan clips homónimos que no son
+  // los que pedí). Sólo cae al clip si la imagen todavía no está.
+  const wantsClip = b.src !== "image" || !fs.existsSync(`public/img/${b.name}.png`);
+  const hasClip = wantsClip && fs.existsSync(`public/broll/${b.name}.mp4`);
   if (hasClip) nClips++;
   rawBeats.push({
     id: b.name, start: +t.toFixed(2), kind: "raw",
@@ -52,7 +67,10 @@ for (let i = 0; i < rawBeats.length; i++) {
 
 // ── 2) COMPONENTES PREMIUM (autorados) ──
 // (archivo _final: propio de este build, para que ningún otro proceso lo pise)
-const PREMIUM = JSON.parse(fs.readFileSync(`_v3/${SLUG}_components_final.json`, "utf8").replace(/^﻿/, ""));
+const PREMIUM = [
+  ...JSON.parse(fs.readFileSync(`_v3/${SLUG}_components_final.json`, "utf8").replace(/^﻿/, "")),
+  ...JSON.parse(fs.readFileSync(`_v3/${SLUG}_components_q.json`, "utf8").replace(/^﻿/, "")),
+];
 
 const beats = [...rawBeats];
 let nOv = 0;
@@ -65,7 +83,7 @@ const ZONE_FIX = { top: "topLeft" }; // la franja "top" (1824px) tapa casi todo 
 // resolver el ms de cada componente (por frase o pre-resuelto) y ordenar antes de filtrar
 const resolved = [];
 for (const p of PREMIUM) {
-  const s = p.atSec != null ? p.atSec : atc(p.at, p.maxTok || 8);
+  const s = p.atSec != null ? p.atSec : atc(p.at, p.maxTok || 8, p.afterMs || 0);
   if (s == null) continue;
   resolved.push({ ...p, s });
 }
