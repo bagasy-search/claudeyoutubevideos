@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tower Defense — esqueleto jugable</title>
+    <link rel="stylesheet" href="/src/ui/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="hud">
+        <div class="hud-group">
+          <span class="stat"><b id="hud-wave">0</b><small>oleada</small></span>
+          <span class="stat gold"><b id="hud-gold">0</b><small>oro</small></span>
+          <span class="stat lives"><b id="hud-lives">20</b><small>vidas</small></span>
+          <span class="stat"><b id="hud-enemies">0</b><small>en campo</small></span>
+        </div>
+        <div class="hud-group" id="tower-bar"></div>
+        <div class="hud-group">
+          <button id="btn-start" class="primary">Iniciar oleada <kbd>Espacio</kbd></button>
+          <span id="hud-seed" class="seed"></span>
+        </div>
+      </header>
+
+      <main id="stage"></main>
+
+      <footer id="tips">
+        <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> elegir torre</span>
+        <span><kbd>click</kbd> construir</span>
+        <span><kbd>click derecho</kbd> vender</span>
+        <span><kbd>Esc</kbd> cancelar</span>
+        <span><kbd>R</kbd> reroll en el draft</span>
+        <span id="tip-msg"></span>
+      </footer>
+    </div>
+
+    <div id="draft" class="hidden">
+      <div class="draft-inner">
+        <h2>Oleada <span id="draft-wave">1</span> superada</h2>
+        <p class="draft-sub">Elegí una mejora</p>
+        <div id="draft-cards"></div>
+        <button id="btn-reroll" class="ghost">Reroll (<span id="reroll-count">1</span>) <kbd>R</kbd></button>
+      </div>
+    </div>
+
+    <div id="gameover" class="hidden">
+      <div class="draft-inner">
+        <h2>Se acabó</h2>
+        <p class="draft-sub" id="go-summary"></p>
+        <button id="btn-restart" class="primary">Otra run</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
