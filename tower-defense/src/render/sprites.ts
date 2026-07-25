@@ -19,6 +19,9 @@ import { GROUND, SEMANTIC, darken, ink, lighten } from './palette'
 
 export const WALK_FRAMES = 12
 
+/** Radio de dibujo de las torres. Lo usa el render para colocar el cañón. */
+export const TOWER_R = 24
+
 /** Bounding box fijo por frame: sin esto el recorte varia y el sprite tiembla. */
 function bake(renderer: PixiRenderer, g: Graphics, half: number, resolution = 3): Texture {
   const tex = renderer.generateTexture({
@@ -34,257 +37,243 @@ function bake(renderer: PixiRenderer, g: Graphics, half: number, resolution = 3)
 
 interface CreatureSpec {
   color: number
-  accent: number
-  /** Cuerpo, en múltiplos del radio de juego. */
-  bodyRx: number
-  bodyRy: number
-  /** Cuánto se estira el morro hacia adelante. Da dirección a la silueta. */
-  tip: number
-  legs: number
-  legLen: number
+  /** Todo se expresa en múltiplos del radio de colisión. */
+  headR: number
+  bodyW: number
+  bodyH: number
   legW: number
-  legSpread: number
-  legSwing: number
-  /** Hombreras al frente. Es como se lee "blindado" a 28 px. */
+  legH: number
+  armW: number
+  arms: boolean
+  /** Orejas barridas hacia atrás. */
+  ears: number
+  /** Hombreras. */
   shoulders: number
-  /** Cresta longitudinal sobre el lomo. */
-  ridge: number
-  /** Cuernos hacia adelante. */
-  horns: number
-  /** Púas barridas hacia atrás. */
-  crest: number
-  eye: number
-  /** Cuánto se hunde el cuerpo en el paso. */
-  bob: number
+  /** Corona de cuernos: el rasgo del boss. */
+  crown: number
+  eyeR: number
+  /** Inclinación de la ceja. 0 = neutro, 1 = furioso. */
+  brow: number
 }
 
 /**
- * Cada criatura tiene UN rasgo de silueta que la vuelve nombrable, y nada más.
- * A 18 px no entran dos ideas.
+ * Proporción chibi: la cabeza ocupa ~45% de la altura y la cara es el 60% de la
+ * lectura del personaje. Es lo contrario de la versión cenital anterior — acá
+ * las criaturas miran a la cámara y no rotan, solo se inclinan hacia donde van.
  */
 const CREATURES: Record<string, Partial<CreatureSpec>> = {
-  // Gota lisa con cuatro patas: la forma base contra la que se leen las demás.
-  grunt: { bodyRx: 0.84, bodyRy: 0.72, tip: 0.55, legs: 4, legLen: 0.78, legW: 0.15, legSpread: 1.08, legSwing: 0.4, ridge: 0.42, eye: 0.11, bob: 0.09 },
-  // Rasgo: largo, patas larguísimas y púas barridas hacia atrás. Grita velocidad.
-  runner: { bodyRx: 1.15, bodyRy: 0.44, tip: 0.85, legs: 4, legLen: 0.95, legW: 0.12, legSpread: 1.5, legSwing: 0.9, crest: 0.75, eye: 0.1, bob: 0.14 },
-  // Rasgo: seis patas radiales sobre un cuerpo diminuto. Se lee como bicho, no como soldado.
-  swarm: { bodyRx: 0.72, bodyRy: 0.66, tip: 0.3, legs: 6, legLen: 0.95, legW: 0.13, legSpread: 1.35, legSwing: 0.65, eye: 0.17, bob: 0.16 },
-  // Rasgo: dos hombreras al frente. La armadura se ve antes de que la explique un número.
-  brute: { bodyRx: 0.92, bodyRy: 0.9, tip: 0.4, legs: 4, legLen: 0.86, legW: 0.17, legSpread: 1.14, legSwing: 0.28, shoulders: 0.52, eye: 0.08, bob: 0.06 },
-  // Rasgo: cuernos hacia adelante y escala rota. Se ve que es un boss sin leer nada.
-  juggernaut: { bodyRx: 1.0, bodyRy: 1.0, tip: 0.35, legs: 6, legLen: 0.82, legW: 0.18, legSpread: 1.18, legSwing: 0.22, shoulders: 0.42, horns: 0.95, eye: 0.07, bob: 0.04 },
+  grunt: { headR: 0.72, bodyW: 0.9, bodyH: 0.7, eyeR: 0.24, brow: 0.3 },
+  runner: { headR: 0.62, bodyW: 0.7, bodyH: 0.6, legW: 0.2, legH: 0.62, ears: 0.9, eyeR: 0.2, brow: 0.6 },
+  swarm: { headR: 0.82, bodyW: 0.6, bodyH: 0.42, legW: 0.2, legH: 0.34, arms: false, eyeR: 0.3, brow: 0 },
+  brute: { headR: 0.66, bodyW: 1.12, bodyH: 0.82, legW: 0.34, armW: 0.3, shoulders: 0.5, eyeR: 0.19, brow: 0.8 },
+  juggernaut: { headR: 0.6, bodyW: 1.2, bodyH: 0.9, legW: 0.36, armW: 0.32, shoulders: 0.58, crown: 0.45, eyeR: 0.16, brow: 1 },
 }
 
 function specFor(id: string, color: number): CreatureSpec {
   return {
     color,
-    accent: darken(color, 0.4),
-    bodyRx: 1,
-    bodyRy: 0.8,
-    tip: 0.5,
-    legs: 4,
-    legLen: 0.6,
-    legW: 0.18,
-    legSpread: 1.05,
-    legSwing: 0.45,
+    headR: 0.7,
+    bodyW: 0.9,
+    bodyH: 0.7,
+    legW: 0.26,
+    legH: 0.5,
+    armW: 0.24,
+    arms: true,
+    ears: 0,
     shoulders: 0,
-    ridge: 0,
-    horns: 0,
-    crest: 0,
-    eye: 0.12,
-    bob: 0.1,
+    crown: 0,
+    eyeR: 0.22,
+    brow: 0.4,
     ...CREATURES[id],
   }
 }
 
-/**
- * Cuerpo en gota, mirando a +x. Una sola forma cerrada en vez de cuerpo + cabeza
- * suelta: a este tamaño dos círculos separados se leen como una burbuja pegada
- * al costado, no como una criatura.
- */
-function bodyPath(g: Graphics, rx: number, ry: number, tip: number, cy: number): void {
-  const nose = rx * (1 + tip)
-  g.moveTo(nose, cy)
-  g.quadraticCurveTo(rx * 0.75, cy - ry * 1.02, -rx * 0.25, cy - ry)
-  g.quadraticCurveTo(-rx * 1.12, cy - ry * 0.7, -rx * 1.02, cy)
-  g.quadraticCurveTo(-rx * 1.12, cy + ry * 0.7, -rx * 0.25, cy + ry)
-  g.quadraticCurveTo(rx * 0.75, cy + ry * 1.02, nose, cy)
-  g.closePath()
-}
+/** Contorno uniforme y oscuro para todo, como en el estilo de referencia. */
+const INK = 0x2b1a12
+const SCLERA = 0xfff6e6
 
 /**
- * Reglas de dibujo, todas heredadas del tamaño real en pantalla (12–40 px):
- *  - Las patas van FUERA de la silueta del cuerpo, o directamente no existen.
- *  - Nada dibujado en tono oscuro se ve: el suelo también es oscuro. Los
- *    detalles secundarios van en tono medio, no en sombra.
- *  - Un solo rasgo distintivo por criatura. Dos ya es ruido.
- *  - El ojo es el único punto claro. Chico, o se roba toda la atención.
+ * Reglas del registro chibi:
+ *  - Contorno uniforme y grueso en TODO. Es lo que sostiene la lectura.
+ *  - La cara es el rasgo principal: ojos grandes, ceja que da carácter.
+ *  - Un accesorio de silueta por criatura (orejas, hombreras, corona).
+ *  - Vista frontal: el sprite no rota con el camino, solo se inclina.
  */
 function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): void {
-  const lw = Math.max(1.2, r * 0.18)
-  const inkC = ink(s.color, 0.7)
-  const bob = Math.cos(phase * 2) * r * s.bob
-  const rx = r * s.bodyRx
-  const ry = r * s.bodyRy
-  const nose = rx * (1 + s.tip)
+  const lw = Math.max(1.6, r * 0.13)
+  const outline = { width: lw, color: INK } as const
+  const body = s.color
+  const limb = darken(s.color, 0.2)
+  const face = lighten(s.color, 0.16)
 
-  const pairs = Math.max(1, s.legs >> 1)
-  const legLen = r * s.legLen
-  const legW = Math.max(1.1, r * s.legW)
-  const spreadY = ry * s.legSpread
-  // Tono medio: contra suelo oscuro, una pata en sombra es una pata invisible.
-  const legColor = darken(s.color, 0.22)
+  const swing = Math.sin(phase)
+  // El cuerpo sube dos veces por ciclo, una por pisada.
+  const bob = -Math.abs(Math.cos(phase)) * r * 0.09
+  const sway = swing * r * 0.04
 
-  for (let p = 0; p < pairs; p++) {
-    const px = ((p - (pairs - 1) / 2) / Math.max(1, pairs)) * rx * 1.5
-    const ph = phase + p * 0.9
+  const feetY = r * 1.02
+  const bodyY = r * 0.3 + bob
+  const headY = -r * 0.52 + bob * 1.25
+
+  // Piernas: alternan, con el pie que despega levantándose.
+  for (const side of [-1, 1]) {
+    const ph = side > 0 ? phase : phase + Math.PI
+    const lift = Math.max(0, Math.sin(ph)) * r * 0.16
+    g.roundRect(
+      side * r * 0.3 - (r * s.legW) / 2 + sway,
+      feetY - r * s.legH - lift,
+      r * s.legW,
+      r * s.legH,
+      r * s.legW * 0.45,
+    )
+      .fill({ color: limb })
+      .stroke(outline)
+  }
+
+  // Brazos, detrás del cuerpo, balanceando al revés que las piernas.
+  if (s.arms) {
     for (const side of [-1, 1]) {
-      const sw = Math.sin(ph + (side > 0 ? Math.PI : 0)) * r * s.legSwing
-      // La pata arranca dentro del cuerpo y termina afuera: así se ve el nudillo.
-      g.roundRect(px + sw - legLen * 0.5, side * spreadY - legW, legLen, legW * 2, legW)
-        .fill({ color: legColor })
-        .stroke({ width: lw * 0.55, color: inkC })
+      const sw = -swing * side * r * 0.12
+      g.roundRect(
+        side * (r * s.bodyW * 0.5) - (r * s.armW) / 2 + sway,
+        bodyY - r * 0.16 + sw,
+        r * s.armW,
+        r * 0.5,
+        r * s.armW * 0.5,
+      )
+        .fill({ color: limb })
+        .stroke(outline)
     }
   }
 
-  // Púas barridas hacia atrás, antes del cuerpo para que asomen por detrás.
-  if (s.crest > 0) {
-    for (let i = 0; i < 3; i++) {
-      const t = i / 2 - 0.5
-      const cx = -rx * 0.1 + t * rx * 0.7
-      const len = r * s.crest * (1 - Math.abs(t) * 0.45)
-      for (const side of [-1, 1]) {
-        g.poly([
-          cx, bob + side * ry * 0.2,
-          cx - len, bob + side * (ry * 0.55 + len * 0.55),
-          cx + r * 0.16, bob + side * ry * 0.75,
-        ])
-          .fill({ color: darken(s.color, 0.3) })
-          .stroke({ width: lw * 0.5, color: inkC })
-      }
-    }
-  }
+  // Cuerpo.
+  g.roundRect(-r * s.bodyW * 0.5 + sway, bodyY - r * s.bodyH * 0.5, r * s.bodyW, r * s.bodyH, r * 0.3)
+    .fill({ color: body })
+    .stroke(outline)
 
-  // Cuernos hacia adelante: el rasgo del boss.
-  if (s.horns > 0) {
-    for (const side of [-1, 1]) {
-      g.poly([
-        rx * 0.35, bob + side * ry * 0.55,
-        nose + r * s.horns * 0.75, bob + side * ry * 0.95,
-        rx * 0.55, bob + side * ry * 0.15,
-      ])
-        .fill({ color: 0xd9c9a8 })
-        .stroke({ width: lw * 0.6, color: inkC })
-    }
-  }
-
-  // Cuerpo: una sola forma cerrada, relleno plano, contorno de tinta grueso.
-  bodyPath(g, rx, ry, s.tip, bob)
-  g.fill({ color: s.color }).stroke({ width: lw, color: inkC })
-
-  // Hombreras al frente: como se lee "blindado" a tamaño de juego.
+  // Hombreras: como se lee "blindado" de un vistazo.
   if (s.shoulders > 0) {
     for (const side of [-1, 1]) {
-      g.ellipse(rx * 0.22, bob + side * ry * 0.6, rx * s.shoulders * 0.5, ry * s.shoulders * 0.44)
-        .fill({ color: lighten(s.color, 0.16) })
-        .stroke({ width: lw * 0.65, color: inkC })
+      g.ellipse(side * r * s.bodyW * 0.46 + sway, bodyY - r * s.bodyH * 0.26, r * s.shoulders * 0.42, r * s.shoulders * 0.34)
+        .fill({ color: lighten(s.color, 0.3) })
+        .stroke(outline)
     }
   }
 
-  // Cresta longitudinal: una sola forma, no rayas de melón.
-  if (s.ridge > 0) {
-    g.ellipse(-rx * 0.15, bob, rx * 0.5, ry * s.ridge * 0.34)
-      .fill({ color: lighten(s.color, 0.14), alpha: 0.85 })
-      .stroke({ width: lw * 0.4, color: inkC, alpha: 0.5 })
+  // Orejas barridas: el rasgo de velocidad. Van detrás de la cabeza.
+  if (s.ears > 0) {
+    for (const side of [-1, 1]) {
+      g.poly([
+        sway, headY,
+        sway - side * r * s.ears * 1.05, headY - r * s.ears * 0.62,
+        sway - side * r * s.ears * 0.34, headY + r * 0.28,
+      ])
+        .fill({ color: limb })
+        .stroke(outline)
+    }
   }
 
-  // Realce del morro: da volumen y refuerza hacia dónde mira.
-  g.ellipse(rx * 0.5, bob - ry * 0.22, rx * 0.22, ry * 0.18)
-    .fill({ color: lighten(s.color, 0.36), alpha: 0.5 })
+  // Corona de cuernos: el rasgo del boss.
+  if (s.crown > 0) {
+    for (const t of [-1, 0, 1]) {
+      const cx = sway + t * r * s.headR * 0.62
+      const h = r * s.crown * (t === 0 ? 1 : 0.72)
+      g.poly([cx - r * 0.15, headY - r * s.headR * 0.75, cx, headY - r * s.headR * 0.75 - h, cx + r * 0.15, headY - r * s.headR * 0.75])
+        .fill({ color: 0xf0e2c0 })
+        .stroke(outline)
+    }
+  }
 
-  // El ojo es lo último y lo único brillante.
-  g.circle(nose - rx * 0.28, bob, Math.max(0.9, r * s.eye)).fill({ color: SEMANTIC.crit, alpha: 0.95 })
+  // Cabeza: lo más grande del personaje.
+  g.circle(sway, headY, r * s.headR).fill({ color: face }).stroke(outline)
+
+  // Cara. Los ojos son el 60% de la lectura del personaje.
+  const eyeX = r * s.headR * 0.42
+  const eyeY = headY + r * s.headR * 0.12
+  for (const side of [-1, 1]) {
+    g.ellipse(sway + side * eyeX, eyeY, r * s.eyeR * 0.78, r * s.eyeR)
+      .fill({ color: SCLERA })
+      .stroke({ width: lw * 0.7, color: INK })
+    g.circle(sway + side * eyeX + side * r * s.eyeR * 0.16, eyeY + r * s.eyeR * 0.16, r * s.eyeR * 0.46).fill({ color: INK })
+    g.circle(sway + side * eyeX - side * r * s.eyeR * 0.2, eyeY - r * s.eyeR * 0.3, r * s.eyeR * 0.2).fill({ color: 0xffffff, alpha: 0.9 })
+  }
+
+  // Cejas: con dos trazos el bicho pasa de tierno a hostil.
+  if (s.brow > 0) {
+    for (const side of [-1, 1]) {
+      const bx = sway + side * eyeX
+      const by = eyeY - r * s.eyeR * 1.25
+      g.moveTo(bx - side * r * s.eyeR * 0.85, by + r * s.brow * s.eyeR * 0.6)
+      g.lineTo(bx + side * r * s.eyeR * 0.8, by - r * s.brow * s.eyeR * 0.45)
+      g.stroke({ width: lw * 1.15, color: INK, cap: 'round' })
+    }
+  }
 }
 
 // ----------------------------------------------------------------- torres
 
+/**
+ * Torres en vista frontal, igual que las criaturas: pedestal, cuerpo y almenas.
+ * La camara tiene que ser una sola — mezclar cenital con frontal es lo que hace
+ * que un juego parezca armado con piezas de dos juegos distintos.
+ */
 function drawTowerBase(g: Graphics, r: number, color: number): void {
-  const inkC = ink(color, 0.72)
-  const lw = Math.max(1.3, r * 0.14)
+  const lw = Math.max(1.8, r * 0.13)
+  const outline = { width: lw, color: INK } as const
+  const stone = 0x8a7a5e
 
-  // Plataforma octogonal: angular y simetrica. Construido por humanos.
-  const pts: number[] = []
-  for (let i = 0; i < 8; i++) {
-    const a = (i / 8) * Math.PI * 2 + Math.PI / 8
-    pts.push(Math.cos(a) * r, Math.sin(a) * r)
-  }
-  g.poly(pts).fill({ color: darken(color, 0.55) }).stroke({ width: lw, color: inkC })
+  // Sombra de contacto: pega la torre al suelo.
+  g.ellipse(0, r * 0.98, r * 0.92, r * 0.3).fill({ color: INK, alpha: 0.22 })
 
-  const inner: number[] = []
-  for (let i = 0; i < 8; i++) {
-    const a = (i / 8) * Math.PI * 2 + Math.PI / 8
-    inner.push(Math.cos(a) * r * 0.74, Math.sin(a) * r * 0.74)
-  }
-  g.poly(inner).fill({ color: darken(color, 0.28) }).stroke({ width: lw * 0.6, color: inkC, alpha: 0.7 })
+  // Pedestal de piedra, mas ancho abajo.
+  g.poly([-r * 0.86, r * 1.02, -r * 0.62, r * 0.42, r * 0.62, r * 0.42, r * 0.86, r * 1.02])
+    .fill({ color: stone })
+    .stroke(outline)
+  g.ellipse(0, r * 0.42, r * 0.62, r * 0.2).fill({ color: lighten(stone, 0.2) }).stroke(outline)
 
-  // Remaches: dan escala y peso.
-  for (let i = 0; i < 4; i++) {
-    const a = (i / 4) * Math.PI * 2 + Math.PI / 4
-    g.circle(Math.cos(a) * r * 0.86, Math.sin(a) * r * 0.86, r * 0.09).fill({ color: inkC, alpha: 0.85 })
+  // Cuerpo de la torre.
+  g.roundRect(-r * 0.5, -r * 0.55, r, r * 1.02, r * 0.22)
+    .fill({ color })
+    .stroke(outline)
+  g.roundRect(-r * 0.32, -r * 0.34, r * 0.64, r * 0.42, r * 0.16)
+    .fill({ color: darken(color, 0.28) })
+    .stroke({ width: lw * 0.7, color: INK })
+
+  // Almenas.
+  for (const t of [-1, 0, 1]) {
+    g.roundRect(t * r * 0.34 - r * 0.14, -r * 0.8, r * 0.28, r * 0.32, r * 0.07)
+      .fill({ color: lighten(color, 0.18) })
+      .stroke(outline)
   }
-  g.circle(0, 0, r * 0.42).fill({ color: darken(color, 0.12) }).stroke({ width: lw * 0.7, color: inkC })
 }
 
+/**
+ * Pieza superior que si rota hacia el objetivo. Es chica a proposito: con la
+ * torre en vista frontal, rotar el cuerpo entero romperia la camara, pero sin
+ * nada que apunte no se entiende a quien le esta pegando.
+ */
 function drawTurret(g: Graphics, r: number, color: number, kind: string): void {
-  const inkC = ink(color, 0.72)
-  const lw = Math.max(1.2, r * 0.13)
-  const lit = lighten(color, 0.18)
+  const lw = Math.max(1.6, r * 0.12)
+  const outline = { width: lw, color: INK } as const
+  const lit = lighten(color, 0.3)
 
   if (kind === 'arrow') {
-    // Ballesta: dos brazos y un virote cargado.
-    g.ellipse(0, 0, r * 0.42, r * 0.38).fill({ color: lit }).stroke({ width: lw, color: inkC })
     for (const side of [-1, 1]) {
-      g.poly([r * 0.1, side * r * 0.14, r * 1.05, side * r * 0.5, r * 1.12, side * r * 0.34, r * 0.2, side * r * 0.02])
-        .fill({ color })
-        .stroke({ width: lw * 0.7, color: inkC })
+      g.poly([r * 0.05, side * r * 0.1, r * 0.72, side * r * 0.44, r * 0.8, side * r * 0.26, r * 0.15, 0])
+        .fill({ color: lit })
+        .stroke(outline)
     }
-    g.roundRect(r * 0.2, -r * 0.09, r * 1.05, r * 0.18, r * 0.08)
-      .fill({ color: darken(color, 0.2) })
-      .stroke({ width: lw * 0.7, color: inkC })
-    g.poly([r * 1.25, 0, r * 1.05, -r * 0.16, r * 1.05, r * 0.16]).fill({ color: SEMANTIC.crit })
+    g.roundRect(0, -r * 0.09, r * 0.82, r * 0.18, r * 0.09).fill({ color: darken(color, 0.2) }).stroke(outline)
   } else if (kind === 'shell') {
-    // Mortero: caño grueso con anillos.
-    g.roundRect(-r * 0.2, -r * 0.3, r * 1.3, r * 0.6, r * 0.16)
-      .fill({ color })
-      .stroke({ width: lw, color: inkC })
-    for (let i = 0; i < 3; i++) {
-      const x = r * (0.12 + i * 0.32)
-      g.roundRect(x, -r * 0.36, r * 0.1, r * 0.72, r * 0.05)
-        .fill({ color: darken(color, 0.3) })
-        .stroke({ width: lw * 0.5, color: inkC, alpha: 0.8 })
-    }
-    g.ellipse(r * 1.08, 0, r * 0.12, r * 0.32).fill({ color: darken(color, 0.62) }).stroke({ width: lw * 0.6, color: inkC })
-    g.circle(-r * 0.1, 0, r * 0.34).fill({ color: lit }).stroke({ width: lw, color: inkC })
+    g.roundRect(-r * 0.1, -r * 0.22, r * 0.92, r * 0.44, r * 0.2).fill({ color: lit }).stroke(outline)
+    g.ellipse(r * 0.78, 0, r * 0.11, r * 0.24).fill({ color: darken(color, 0.55) }).stroke(outline)
   } else {
-    // Prisma: cristales, sin caño. Comunica "esto no dispara balas".
-    g.circle(0, 0, r * 0.4).fill({ color: darken(color, 0.3) }).stroke({ width: lw, color: inkC })
-    const shards: [number, number, number][] = [
-      [0.95, 0, 0.42],
-      [0.5, -0.5, 0.3],
-      [0.5, 0.5, 0.3],
-    ]
-    for (const [cx, cy, sz] of shards) {
-      g.poly([
-        r * (cx + sz), r * cy,
-        r * cx, r * (cy - sz),
-        r * (cx - sz), r * cy,
-        r * cx, r * (cy + sz),
-      ])
-        .fill({ color: lit, alpha: 0.95 })
-        .stroke({ width: lw * 0.7, color: inkC })
-    }
-    g.circle(r * 0.95, 0, r * 0.13).fill({ color: SEMANTIC.crit, alpha: 0.9 })
+    g.poly([r * 0.85, 0, r * 0.4, -r * 0.36, r * 0.02, 0, r * 0.4, r * 0.36])
+      .fill({ color: lit })
+      .stroke(outline)
+    g.circle(r * 0.5, 0, r * 0.12).fill({ color: SEMANTIC.crit })
   }
+  g.circle(0, 0, r * 0.2).fill({ color: darken(color, 0.35) }).stroke(outline)
 }
 
 // ----------------------------------------------------------------- varios
@@ -334,7 +323,7 @@ export interface Atlas {
 export function buildAtlas(renderer: PixiRenderer): Atlas {
   const enemy: Texture[][] = ENEMIES.map((def) => {
     const spec = specFor(def.id, def.color)
-    const half = def.radius * 2.8
+    const half = def.radius * 2.1
     const frames: Texture[] = []
     for (let f = 0; f < WALK_FRAMES; f++) {
       const g = new Graphics()
@@ -346,11 +335,10 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
 
   const towerBase = new Map<string, Texture>()
   const towerTurret = new Map<string, Texture>()
-  const TOWER_R = 15
   for (const def of TOWERS) {
     const gb = new Graphics()
     drawTowerBase(gb, TOWER_R, def.color)
-    towerBase.set(def.id, bake(renderer, gb, TOWER_R * 1.3, 3))
+    towerBase.set(def.id, bake(renderer, gb, TOWER_R * 1.4, 3))
 
     const gt = new Graphics()
     drawTurret(gt, TOWER_R, def.color, def.shot === 'bolt' ? 'arrow' : def.shot)

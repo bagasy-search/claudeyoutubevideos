@@ -10,9 +10,9 @@ function findSpots(game: Game, n: number, type = 'arrow'): [number, number][] {
   for (let y = 30; y < game.world.height - 30 && out.length < n; y += 20) {
     for (let x = 30; x < game.world.width - 30 && out.length < n; x += 20) {
       const d = game.world.path.distanceToPoint(x, y)
-      if (d < 32 || d > 100) continue
+      if (d < 46 || d > 120) continue
       if (!game.canPlace(x, y, type).ok) continue
-      if (out.some(([ox, oy]) => Math.hypot(ox - x, oy - y) < 40)) continue
+      if (out.some(([ox, oy]) => Math.hypot(ox - x, oy - y) < 54)) continue
       out.push([x, y])
     }
   }

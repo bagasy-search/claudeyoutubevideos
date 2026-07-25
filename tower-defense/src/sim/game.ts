@@ -268,9 +268,9 @@ export class Game {
     if (!def) return { ok: false, reason: 'tipo desconocido' }
     if (this.gold < def.cost) return { ok: false, reason: 'sin oro' }
     if (x < 18 || y < 18 || x > FIELD_W - 18 || y > FIELD_H - 18) return { ok: false, reason: 'fuera del mapa' }
-    if (this.world.path.distanceToPoint(x, y) < 30) return { ok: false, reason: 'sobre el camino' }
+    if (this.world.path.distanceToPoint(x, y) < 44) return { ok: false, reason: 'sobre el camino' }
     for (const t of this.world.towers) {
-      if (Math.hypot(t.x - x, t.y - y) < 32) return { ok: false, reason: 'muy cerca de otra torre' }
+      if (Math.hypot(t.x - x, t.y - y) < 48) return { ok: false, reason: 'muy cerca de otra torre' }
     }
     return { ok: true }
   }

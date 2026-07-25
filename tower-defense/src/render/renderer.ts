@@ -9,7 +9,7 @@ import { FIELD_H, FIELD_W } from '../sim/game'
 import { MAX_ENEMIES, MAX_PROJECTILES } from '../sim/world'
 import { FxLayer } from './fx'
 import { GROUND, SEMANTIC, darken, ink, lighten, mix } from './palette'
-import { WALK_FRAMES, buildAtlas, type Atlas } from './sprites'
+import { TOWER_R, WALK_FRAMES, buildAtlas, type Atlas } from './sprites'
 
 /**
  * Capa de render. Solo LEE el estado de la simulacion — no lo modifica nunca.
@@ -153,12 +153,12 @@ export class Renderer {
     }
 
     // Viñeta: empuja la mirada al centro del campo.
-    for (let i = 0; i < 7; i++) {
-      const inset = i * 7
+    for (let i = 0; i < 5; i++) {
+      const inset = i * 8
       g.rect(inset, inset, FIELD_W - inset * 2, FIELD_H - inset * 2).stroke({
-        width: 8,
+        width: 9,
         color: GROUND.deep,
-        alpha: 0.12,
+        alpha: 0.07,
       })
     }
 
@@ -310,7 +310,7 @@ export class Renderer {
 
       // El frame se elige por distancia recorrida, no por tiempo: asi los pasos
       // van al ritmo del suelo y un enemigo ralentizado camina mas lento gratis.
-      const stride = Math.max(6, def.radius * 1.15)
+      const stride = Math.max(10, def.radius * 1.6)
       const dist = e.prevDist[i] + (e.dist[i] - e.prevDist[i]) * alpha
       const frame = Math.floor((dist / stride) * WALK_FRAMES) % WALK_FRAMES
       const angle = path.angleAt(e.dist[i])
@@ -319,7 +319,10 @@ export class Renderer {
       v.body.visible = true
       v.body.texture = frames[(frame + WALK_FRAMES) % WALK_FRAMES]
       v.body.position.set(x, y)
-      v.body.rotation = angle
+      // Vista frontal: el sprite NO rota con el camino. Solo se inclina hacia
+      // donde va, que es suficiente para comunicar direccion sin acostar al
+      // personaje cuando el camino baja.
+      v.body.rotation = Math.cos(angle) * 0.07
       v.body.scale.set(scale)
 
       // Estados, por orden de prioridad de lectura: golpe > quemadura > frío.
@@ -330,15 +333,15 @@ export class Renderer {
       v.body.tint = tint
 
       v.shadow.visible = true
-      v.shadow.position.set(x, y + r * 0.42)
-      v.shadow.scale.set((r * 1.5) / 16, (r * 1.5) / 16)
+      v.shadow.position.set(x, y + r * 0.98)
+      v.shadow.scale.set((r * 1.25) / 16, (r * 0.9) / 16)
 
       if (e.elite[i]) {
         v.aura.visible = true
         v.aura.position.set(x, y)
         v.aura.tint = SEMANTIC.crit
-        v.aura.alpha = 0.28 + Math.sin(this.time * 3.4) * 0.1
-        v.aura.scale.set((r * 2.4) / 30)
+        v.aura.alpha = 0.3 + Math.sin(this.time * 3.4) * 0.1
+        v.aura.scale.set((r * 2.1) / 30)
       } else if (v.aura.visible) {
         v.aura.visible = false
       }
@@ -352,8 +355,8 @@ export class Renderer {
       v.hpBg.visible = showHp
       v.hpFg.visible = showHp
       if (showHp) {
-        const w = Math.max(16, r * 2.3)
-        const by = y - r * scale - 7
+        const w = Math.max(18, r * 1.5)
+        const by = y - (r * 1.32 + 8) * scale
         v.hpBg.position.set(x, by)
         v.hpBg.scale.set(w / 16 + 0.15, 1.5)
         v.hpFg.position.set(x - w / 2, by)
@@ -398,7 +401,7 @@ export class Renderer {
         base.anchor.set(0.5)
         const turret = new Sprite(this.atlas.towerTurret.get(t.type))
         // El pivote del cañón no es su centro: está cerca de la base.
-        turret.anchor.set(0.42, 0.5)
+        turret.anchor.set(0.5, 0.5)
         this.towerLayer.addChild(base, turret)
         view = { base, turret }
         this.towerViews.set(t.id, view)
@@ -409,7 +412,7 @@ export class Renderer {
       view.base.scale.set(1 - recoil * 0.05)
 
       let diff = ((t.angle - t.prevAngle + Math.PI * 3) % (Math.PI * 2)) - Math.PI
-      view.turret.position.set(t.x, t.y)
+      view.turret.position.set(t.x, t.y - TOWER_R * 0.62)
       view.turret.rotation = t.prevAngle + diff * alpha
       // El retroceso empuja el cañón hacia atrás, no lo encoge.
       view.turret.scale.set(1 - recoil * 0.12, 1)
@@ -436,7 +439,7 @@ export class Renderer {
 
     this.rangePreview.circle(x, y, def.base.range).fill({ color, alpha: 0.06 })
     this.rangePreview.circle(x, y, def.base.range).stroke({ width: 1.5, color, alpha: 0.45 })
-    this.ghost.circle(x, y, 15).fill({ color, alpha: 0.35 }).stroke({ width: 2, color: ink(color, 0.3), alpha: 0.7 })
+    this.ghost.circle(x, y, TOWER_R * 0.8).fill({ color, alpha: 0.35 }).stroke({ width: 2, color: ink(color, 0.3), alpha: 0.7 })
   }
 
   hoverRange(x: number, y: number, radius: number, color: number): void {

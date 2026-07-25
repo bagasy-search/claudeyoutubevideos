@@ -28,15 +28,19 @@ export interface WavePlan {
 }
 
 /**
- * Tope de enemigos por oleada. Sin esto, el presupuesto exponencial termina
- * escupiendo 600+ bichos baratos: se muere el framerate y encima se juega peor.
- * El presupuesto que no entra se convierte en HP — la oleada se vuelve mas dura
- * en vez de mas larga.
+ * Tope de enemigos por oleada. El presupuesto que no entra se convierte en HP:
+ * la oleada se vuelve mas dura en vez de mas larga.
+ *
+ * El numero es una decision de diseño, no de rendimiento. Con 26 cada enemigo
+ * puede medir 40-76 px y mostrar una cara; con 180 mide 18 px y no hay estilo
+ * que sobreviva. Bajarlo obliga a bajar tambien el crecimiento del presupuesto
+ * (1.18 -> 1.13), o el multiplicador de vida se dispara y los enemigos tardios
+ * se vuelven esponjas.
  */
-export const MAX_SPAWNS = 180
+export const MAX_SPAWNS = 26
 
 export function waveBudget(wave: number): number {
-  return 10 * Math.pow(1.18, wave - 1)
+  return 10 * Math.pow(1.13, wave - 1)
 }
 
 /** HP superlineal: al principio suave, despues empieza a doler. */

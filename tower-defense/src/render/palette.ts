@@ -9,21 +9,20 @@
  */
 
 export const GROUND = {
-  deep: 0x0f0d09,
-  base: 0x1a1710,
-  lit: 0x201c14,
+  deep: 0x1d1710,
+  base: 0x463823,
+  lit: 0x51422a,
   /*
-   * El camino es apenas mas claro que el terreno, no mucho. Con el suelo tan
-   * oscuro, una calzada clara se vuelve el elemento mas brillante de la pantalla
-   * y le gana a las unidades — que es exactamente lo que la paleta tiene que
-   * evitar.
+   * Tablero cálido y claro, al reves que la version anterior. El estilo chibi
+   * lee por contorno oscuro sobre fondo claro; si el suelo es oscuro, el
+   * contorno desaparece y con el la silueta.
    */
-  path: 0x261f16,
-  pathEdge: 0x322818,
-  pathInner: 0x2c2418,
-  grid: 0x201b13,
-  prop: 0x2a2317,
-  propInk: 0x141007,
+  path: 0x6b5638,
+  pathEdge: 0x806844,
+  pathInner: 0x7a6240,
+  grid: 0x4d3e28,
+  prop: 0x5c4a30,
+  propInk: 0x241c12,
 }
 
 export const SEMANTIC = {
