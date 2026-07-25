@@ -7,6 +7,7 @@ import { Rng } from '../core/rng'
 import type { Game } from '../sim/game'
 import { FIELD_H, FIELD_W } from '../sim/game'
 import { MAX_ENEMIES, MAX_PROJECTILES } from '../sim/world'
+import { applyExternalArt } from './externalArt'
 import { FxLayer } from './fx'
 import { GROUND, SEMANTIC, darken, ink, lighten, mix } from './palette'
 import { TOWER_R, WALK_FRAMES, buildAtlas, type Atlas } from './sprites'
@@ -73,6 +74,17 @@ export class Renderer {
     parent.appendChild(this.canvas)
 
     this.atlas = buildAtlas(this.renderer)
+
+    // Arte externo opcional. Se activa poniendo VITE_ART_MANIFEST (por ejemplo
+    // "art/manifest.json"); sin esa variable ni se intenta el fetch, asi el
+    // build por defecto no deja un 404 en la consola.
+    const manifestUrl = import.meta.env.VITE_ART_MANIFEST
+    if (manifestUrl) {
+      const art = await applyExternalArt(this.atlas, manifestUrl)
+      if (art.replaced.length > 0) console.info('[arte] reemplazado:', art.replaced.join(', '))
+      if (art.missing.length > 0) console.warn('[arte] faltan:', art.missing.join(', '))
+    }
+
     this.fx = new FxLayer(this.atlas.soft, this.atlas.ring)
 
     this.world.addChild(
