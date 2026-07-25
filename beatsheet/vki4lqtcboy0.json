@@ -1,0 +1,4063 @@
+{
+ "video": "vki4lqtcboy0",
+ "avatar": "vki4lqtcboy0_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "vki4lqtcboy0_s_000",
+   "start": 0,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_000.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_001",
+   "start": 3.86,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_001.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86
+  },
+  {
+   "id": "vki4lqtcboy0_s_002",
+   "start": 7.42,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_002.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_003",
+   "start": 11.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_003.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_004",
+   "start": 14.62,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_004.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "vki4lqtcboy0_s_005",
+   "start": 18.84,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_005.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "ov_highlightsweep_19",
+   "start": 18.84,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Hoy esa olla",
+   "highlight": "no hierve en ninguna casa",
+   "post": ".",
+   "note": "se apagó, y con ella se apagaron los platos de tu infancia"
+  },
+  {
+   "id": "vki4lqtcboy0_s_006",
+   "start": 22.38,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_006.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_007",
+   "start": 26.48,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_007.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_008",
+   "start": 31.44,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_008.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_009",
+   "start": 34.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_009.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_010",
+   "start": 37.06,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_010.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6
+  },
+  {
+   "id": "ov_pullquote_37",
+   "start": 37.06,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "No se perdió una receta. Se perdió el domingo entero."
+  },
+  {
+   "id": "vki4lqtcboy0_s_011",
+   "start": 39.36,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_011.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_012",
+   "start": 43.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_012.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_013",
+   "start": 45.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_013.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_014",
+   "start": 49.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_014.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "vki4lqtcboy0_s_015",
+   "start": 53.14,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_015.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "ov_hookcaption_53",
+   "start": 53.14,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "earth",
+   "zone": "top",
+   "words": [
+    {
+     "text": "Veinticinco"
+    },
+    {
+     "text": "platos",
+     "boxed": true
+    },
+    {
+     "text": "que ya"
+    },
+    {
+     "text": "nadie hace",
+     "boxed": true
+    }
+   ],
+   "sub": "y todos los comiste de niño, en esa cocina"
+  },
+  {
+   "id": "vki4lqtcboy0_s_016",
+   "start": 57.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_016.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_017",
+   "start": 61.36,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_017.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_018",
+   "start": 63.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_018.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.86
+  },
+  {
+   "id": "vki4lqtcboy0_s_019",
+   "start": 66.12,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_019.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_020",
+   "start": 68.8,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_020.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "ov_stampbadge_70",
+   "start": 70.26,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "top",
+   "text": "UNO SOLO",
+   "sub": "dejó de hacerse de un día para otro",
+   "x": 0.5,
+   "y": 0.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_021",
+   "start": 73.06,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_021.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_022",
+   "start": 76.6,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_022.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_023",
+   "start": 78.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_023.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_024",
+   "start": 82.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_024.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_025",
+   "start": 85.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_025.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "vki4lqtcboy0_s_026",
+   "start": 89.12,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_026.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08
+  },
+  {
+   "id": "vki4lqtcboy0_s_027",
+   "start": 90.9,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_027.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_028",
+   "start": 94.98,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_028.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_029",
+   "start": 98.12,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_029.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_030",
+   "start": 101.18,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_030.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_031",
+   "start": 104.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_031.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "ov_bigstatreveal_105",
+   "start": 104.64,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Una sola olla",
+   "value": 10,
+   "prefix": "",
+   "suffix": " personas",
+   "source": "",
+   "support": "con huesos, pan de ayer y fruta golpeada — lo que hoy se tira"
+  },
+  {
+   "id": "vki4lqtcboy0_s_032",
+   "start": 108.3,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_032.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "vki4lqtcboy0_s_033",
+   "start": 110.54,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_033.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_034",
+   "start": 112.98,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_034.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "vki4lqtcboy0_s_035",
+   "start": 115.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_035.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_036",
+   "start": 117.5,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_036.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_037",
+   "start": 119.58,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_037.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_038",
+   "start": 124.42,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_038.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_039",
+   "start": 126.04,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_039.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_040",
+   "start": 129.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_040.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08
+  },
+  {
+   "id": "ov_chaptertitle_129",
+   "start": 129.32,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "1",
+   "title": "El puchero",
+   "sub": "la olla que hervía toda la mañana"
+  },
+  {
+   "id": "vki4lqtcboy0_s_041",
+   "start": 131.1,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_041.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_042",
+   "start": 133.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_042.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_043",
+   "start": 137.68,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_043.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "ov_checklistreveal_139",
+   "start": 139.2,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Lo que iba en la olla",
+   "stamp": "OLLA",
+   "items": [
+    "Carne dura, de la más barata",
+    "Huesos con tuétano",
+    "Una mazorca de maíz",
+    "Papa, zapallo y batata",
+    "Una zanahoria entera"
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_044",
+   "start": 141,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_044.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.8
+  },
+  {
+   "id": "vki4lqtcboy0_s_045",
+   "start": 142.5,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_045.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.64
+  },
+  {
+   "id": "vki4lqtcboy0_s_046",
+   "start": 144.84,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_046.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_047",
+   "start": 147.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_047.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "ov_layerstack_149",
+   "start": 149.26,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Todo lo que iba en la olla",
+   "layers": [
+    {
+     "label": "Zanahoria entera"
+    },
+    {
+     "label": "Papa, zapallo y batata"
+    },
+    {
+     "label": "Mazorca de maíz"
+    },
+    {
+     "label": "Huesos con tuétano"
+    },
+    {
+     "label": "Carne dura y barata"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_048",
+   "start": 152,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_048.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_049",
+   "start": 155.94,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_049.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_050",
+   "start": 159.84,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_050.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_051",
+   "start": 161.74,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_051.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "ov_pullquote_163",
+   "start": 162.62,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Mi abuela decía que el secreto no era la carne. Era la paciencia."
+  },
+  {
+   "id": "vki4lqtcboy0_s_052",
+   "start": 165.26,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_052.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_053",
+   "start": 169.06,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_053.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.8
+  },
+  {
+   "id": "vki4lqtcboy0_s_054",
+   "start": 170.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_054.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_055",
+   "start": 174.66,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_055.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_056",
+   "start": 177.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_056.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_057",
+   "start": 180.8,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_057.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_058",
+   "start": 182.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_058.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.86
+  },
+  {
+   "id": "ov_vsduel_183",
+   "start": 182.76,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Por qué se dejó de hacer",
+   "title": "Cuatro horas contra tres minutos",
+   "left": {
+    "label": "La olla de antes",
+    "sub": "cuatro horas, dos comidas de una vez",
+    "good": true
+   },
+   "right": {
+    "label": "El sobre de hoy",
+    "sub": "tres minutos, y en ese cambio perdimos",
+    "good": false
+   }
+  },
+  {
+   "id": "vki4lqtcboy0_s_059",
+   "start": 185.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_059.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_060",
+   "start": 189.18,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_060.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6
+  },
+  {
+   "id": "vki4lqtcboy0_s_061",
+   "start": 191.48,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_061.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "ov_chaptertitle_191",
+   "start": 191.48,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "2",
+   "title": "La sopa de pan",
+   "sub": "el arte de convertir la nada en algo"
+  },
+  {
+   "id": "vki4lqtcboy0_s_062",
+   "start": 194.26,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_062.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_063",
+   "start": 198.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_063.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_064",
+   "start": 203.14,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_064.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_065",
+   "start": 207,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_065.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_066",
+   "start": 210.96,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_066.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "ov_numberedsteps_213",
+   "start": 212.54,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Así se hacía",
+   "title": "La sopa de pan",
+   "steps": [
+    {
+     "title": "Pan duro de ayer",
+     "sub": "guardado tres días en la bolsita"
+    },
+    {
+     "title": "Un diente de ajo",
+     "sub": "y un poco de grasa"
+    },
+    {
+     "title": "Agua bien caliente",
+     "sub": "y a hervir"
+    },
+    {
+     "title": "Un huevo encima",
+     "sub": "se cocina con el calor de la sopa"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_067",
+   "start": 214.12,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_067.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_068",
+   "start": 217.2,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_068.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_069",
+   "start": 220.22,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_069.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_070",
+   "start": 224.18,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_070.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_071",
+   "start": 228.18,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_071.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_072",
+   "start": 232.16,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_072.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72
+  },
+  {
+   "id": "vki4lqtcboy0_s_073",
+   "start": 234.58,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_073.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6
+  },
+  {
+   "id": "vki4lqtcboy0_s_074",
+   "start": 237.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_074.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86
+  },
+  {
+   "id": "vki4lqtcboy0_s_075",
+   "start": 241.44,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_075.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "ov_highlightsweep_241",
+   "start": 241.44,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Muchas noches esa sopa era toda la cena.",
+   "highlight": "Y nadie se sintió pobre",
+   "post": ".",
+   "note": "el vapor empañaba la cara de todos"
+  },
+  {
+   "id": "vki4lqtcboy0_s_076",
+   "start": 244.98,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_076.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_077",
+   "start": 248.92,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_077.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "vki4lqtcboy0_s_078",
+   "start": 252.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_078.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "ov_pullquote_252",
+   "start": 252.32,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "El que come caliente duerme tranquilo."
+  },
+  {
+   "id": "vki4lqtcboy0_s_079",
+   "start": 256.42,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_079.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_080",
+   "start": 260.36,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_080.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_081",
+   "start": 262.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_081.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7
+  },
+  {
+   "id": "vki4lqtcboy0_s_082",
+   "start": 264.74,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_082.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "ov_chaptertitle_265",
+   "start": 264.74,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "3",
+   "title": "El locro",
+   "sub": "la olla que salía dos veces al año"
+  },
+  {
+   "id": "vki4lqtcboy0_s_083",
+   "start": 267.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_083.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_084",
+   "start": 270.5,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_084.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_085",
+   "start": 275.82,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_085.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76
+  },
+  {
+   "id": "ov_checklistreveal_276",
+   "start": 275.82,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Cuándo se hacía el locro",
+   "stamp": "DÍA GRANDE",
+   "items": [
+    "De fiesta",
+    "De frío",
+    "Cuando venía toda la familia",
+    "Dos o tres veces al año"
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_086",
+   "start": 278.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_086.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_087",
+   "start": 281.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_087.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.08
+  },
+  {
+   "id": "vki4lqtcboy0_s_088",
+   "start": 284.06,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_088.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_089",
+   "start": 287.9,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_089.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_090",
+   "start": 292,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_090.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "ov_bigstatreveal_292",
+   "start": 292,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La olla negra de hierro",
+   "value": 3,
+   "prefix": "",
+   "suffix": " veces al año",
+   "source": "",
+   "support": "tan pesada que entre dos la subían al fuego"
+  },
+  {
+   "id": "vki4lqtcboy0_s_091",
+   "start": 296.18,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_091.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_092",
+   "start": 300.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_092.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "vki4lqtcboy0_s_093",
+   "start": 304.84,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_093.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "ov_cycleloop_307",
+   "start": 307.02,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CycleLoop",
+   "theme": "earth",
+   "zone": "top",
+   "title": "Revolver sin parar, por turnos",
+   "center": "REVOLVER",
+   "nodes": [
+    {
+     "label": "Los grandes",
+     "sub": "empiezan de madrugada"
+    },
+    {
+     "label": "La abuela",
+     "sub": "toma el mango"
+    },
+    {
+     "label": "Yo, en el banquito",
+     "sub": "un ratito nomás"
+    },
+    {
+     "label": "Que no se pegue",
+     "sub": "en el fondo"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_094",
+   "start": 308.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_094.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_095",
+   "start": 312.66,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_095.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_096",
+   "start": 316.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_096.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_097",
+   "start": 320.52,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_097.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_098",
+   "start": 325.06,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_098.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_099",
+   "start": 327.94,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_099.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_100",
+   "start": 330.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_100.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_101",
+   "start": 334.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_101.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_102",
+   "start": 337,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_102.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_103",
+   "start": 341.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_103.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_104",
+   "start": 345.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_104.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_105",
+   "start": 347.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_105.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "ov_pullquote_347",
+   "start": 347.28,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Esa primera cucharada de locro caliente en un día helado, eso no se compra."
+  },
+  {
+   "id": "vki4lqtcboy0_s_106",
+   "start": 351.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_106.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_107",
+   "start": 355.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_107.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "ov_pullquote_357",
+   "start": 356.84,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Esa primera cucharada de locro caliente en un día helado. Eso no se compra."
+  },
+  {
+   "id": "vki4lqtcboy0_s_108",
+   "start": 358.66,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_108.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_109",
+   "start": 362.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_109.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_110",
+   "start": 366.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_110.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.12
+  },
+  {
+   "id": "vki4lqtcboy0_s_111",
+   "start": 370.62,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_111.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_112",
+   "start": 374.66,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_112.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "ov_mythtruth_377",
+   "start": 376.92,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "myth": "Las lentejas son lentejas y agua",
+   "truth": "Sin hueso no hay sabor: grasa, panceta y hueso con su carnecita"
+  },
+  {
+   "id": "vki4lqtcboy0_s_113",
+   "start": 378.9,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_113.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "vki4lqtcboy0_s_114",
+   "start": 382.36,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_114.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_115",
+   "start": 386.42,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_115.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.76
+  },
+  {
+   "id": "ov_vsduel_388",
+   "start": 387.7,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "La misma olla, otro plato",
+   "title": "La lenteja de hoy y la de antes",
+   "left": {
+    "label": "Las de hoy",
+    "sub": "agua y una lenteja triste flotando",
+    "good": false
+   },
+   "right": {
+    "label": "Las de antes",
+    "sub": "grasa, panceta y hueso con carne",
+    "good": true
+   }
+  },
+  {
+   "id": "vki4lqtcboy0_s_116",
+   "start": 390.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_116.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_117",
+   "start": 394.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_117.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_118",
+   "start": 398.9,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_118.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_119",
+   "start": 401.76,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_119.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "ov_highlightsweep_402",
+   "start": 401.76,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "La cuchara tenía que quedar parada sola.",
+   "highlight": "Si se caía, faltaba fuego",
+   "post": ".",
+   "note": "cositas que ya nadie te enseña"
+  },
+  {
+   "id": "vki4lqtcboy0_s_120",
+   "start": 405.2,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_120.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_121",
+   "start": 407.1,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_121.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_122",
+   "start": 409.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_122.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_123",
+   "start": 413.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_123.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "ov_flowsteps_414",
+   "start": 413.74,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "top",
+   "title": "Cómo se hacía",
+   "nodes": [
+    {
+     "label": "Maíz blanco",
+     "sub": "hervido horas hasta reventar"
+    },
+    {
+     "label": "Leche",
+     "sub": "y azúcar, o miel"
+    },
+    {
+     "label": "Tibia",
+     "sub": "en plato hondo, con cuchara"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_124",
+   "start": 417.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_124.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.06
+  },
+  {
+   "id": "vki4lqtcboy0_s_125",
+   "start": 422.68,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_125.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_126",
+   "start": 427.48,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_126.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_127",
+   "start": 432.1,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_127.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.66
+  },
+  {
+   "id": "vki4lqtcboy0_s_128",
+   "start": 436.46,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_128.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "ov_pullquote_436",
+   "start": 436.46,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Tenía gusto a algo antiguo. A algo que venía de nuestros abuelos, y de los abuelos de ellos."
+  },
+  {
+   "id": "vki4lqtcboy0_s_129",
+   "start": 439.94,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_129.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_130",
+   "start": 442.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_130.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_131",
+   "start": 445.86,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_131.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "ov_beforeafter_446",
+   "start": 445.86,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Dos generaciones",
+   "beforeLabel": "Antes: todos con el jarrito",
+   "afterLabel": "Hoy: te mira raro",
+   "caption": "y es de lo más antiguo que se comió en esta tierra"
+  },
+  {
+   "id": "vki4lqtcboy0_s_132",
+   "start": 449.7,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_132.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_133",
+   "start": 452.98,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_133.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "vki4lqtcboy0_s_134",
+   "start": 456.2,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_134.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "vki4lqtcboy0_s_135",
+   "start": 459.72,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_135.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.06
+  },
+  {
+   "id": "ov_chaptertitle_460",
+   "start": 459.72,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "6",
+   "title": "Arroz con leche",
+   "sub": "media hora de cuchara, sin parar"
+  },
+  {
+   "id": "vki4lqtcboy0_s_136",
+   "start": 464.48,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_136.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_137",
+   "start": 466.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_137.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_138",
+   "start": 469.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_138.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72
+  },
+  {
+   "id": "vki4lqtcboy0_s_139",
+   "start": 471.94,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_139.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "ov_numberedsteps_472",
+   "start": 471.94,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "El de antes",
+   "title": "Por qué quedaba cremoso",
+   "steps": [
+    {
+     "title": "Fuego lento",
+     "sub": "nunca hervor fuerte"
+    },
+    {
+     "title": "Cáscara de limón y canela en rama",
+     "sub": "flotando adentro"
+    },
+    {
+     "title": "Revolver sin parar",
+     "sub": "si parabas, se agarraba abajo"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_140",
+   "start": 475.32,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_140.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_141",
+   "start": 479.36,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_141.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "vki4lqtcboy0_s_142",
+   "start": 484,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_142.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_143",
+   "start": 487.86,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_143.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_144",
+   "start": 491.96,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_144.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "ov_cycleloop_493",
+   "start": 492.94,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CycleLoop",
+   "theme": "earth",
+   "zone": "top",
+   "title": "La posta de la cuchara",
+   "center": "SIN PARAR",
+   "nodes": [
+    {
+     "label": "La abuela",
+     "sub": "con el brazo cansado"
+    },
+    {
+     "label": "Mi madre",
+     "sub": "toma la cuchara"
+    },
+    {
+     "label": "Mi tía",
+     "sub": "sigue el turno"
+    },
+    {
+     "label": "Si parabas",
+     "sub": "se agarraba abajo"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_145",
+   "start": 495.9,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_145.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_146",
+   "start": 499.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_146.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "vki4lqtcboy0_s_147",
+   "start": 504.18,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_147.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_148",
+   "start": 508.22,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_148.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_149",
+   "start": 512.18,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_149.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "vki4lqtcboy0_s_150",
+   "start": 515.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_150.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.66
+  },
+  {
+   "id": "vki4lqtcboy0_s_151",
+   "start": 517.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_151.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "ov_stampbadge_521",
+   "start": 520.52,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "top",
+   "text": "LO QUEMADITO",
+   "sub": "la parte que nos peleábamos",
+   "x": 0.5,
+   "y": 0.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_152",
+   "start": 521.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_152.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_153",
+   "start": 524.8,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_153.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_154",
+   "start": 528.78,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_154.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_155",
+   "start": 533.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_155.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_156",
+   "start": 537.66,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_156.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_157",
+   "start": 540.5,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_157.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "ov_mythtruth_541",
+   "start": 540.5,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "myth": "Es el mismo postre que el del vasito del supermercado",
+   "truth": "No tiene la canela dibujada con los dedos, ni la posta de la cuchara, ni la pelea por lo quemadito"
+  },
+  {
+   "id": "vki4lqtcboy0_s_158",
+   "start": 544.78,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_158.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_159",
+   "start": 548.82,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_159.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "vki4lqtcboy0_s_160",
+   "start": 552.34,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_160.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "vki4lqtcboy0_s_161",
+   "start": 555.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_161.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "ov_chaptertitle_556",
+   "start": 555.6,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "7",
+   "title": "Dulce de leche casero",
+   "sub": "una hora larga de paciencia de santa"
+  },
+  {
+   "id": "vki4lqtcboy0_s_162",
+   "start": 559.58,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_162.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "vki4lqtcboy0_s_163",
+   "start": 562.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_163.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "ov_numberedsteps_563",
+   "start": 562.96,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Con paciencia de santa",
+   "title": "Dulce de leche en la olla",
+   "steps": [
+    {
+     "title": "Leche recién ordeñada",
+     "sub": "con azúcar"
+    },
+    {
+     "title": "Fuego bajísimo",
+     "sub": "nunca a hervor"
+    },
+    {
+     "title": "Una hora larga",
+     "sub": "revolviendo sin parar"
+    },
+    {
+     "title": "Marrón dorado",
+     "sub": "y olor a caramelo en toda la casa"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_164",
+   "start": 566.2,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_164.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_165",
+   "start": 570.3,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_165.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "ov_bigstatreveal_573",
+   "start": 572.84,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Leche recién ordeñada y azúcar",
+   "value": 1,
+   "prefix": "",
+   "suffix": " hora",
+   "source": "",
+   "support": "a fuego bajísimo, hasta el color marrón dorado"
+  },
+  {
+   "id": "vki4lqtcboy0_s_166",
+   "start": 574.16,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_166.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_167",
+   "start": 579.08,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_167.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_168",
+   "start": 582.52,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_168.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "vki4lqtcboy0_s_169",
+   "start": 585.9,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_169.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "ov_pullquote_586",
+   "start": 585.9,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Ese dedo con dulce de leche caliente pegado en la olla es uno de mis recuerdos más felices."
+  },
+  {
+   "id": "vki4lqtcboy0_s_170",
+   "start": 590.1,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_170.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_171",
+   "start": 592.3,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_171.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_172",
+   "start": 596.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_172.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_173",
+   "start": 600.14,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_173.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_174",
+   "start": 602.82,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_174.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.36
+  },
+  {
+   "id": "ov_chaptertitle_603",
+   "start": 602.82,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "8",
+   "title": "Dulce de membrillo",
+   "sub": "un día entero de trabajo, para todo el año"
+  },
+  {
+   "id": "vki4lqtcboy0_s_175",
+   "start": 606.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_175.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4
+  },
+  {
+   "id": "vki4lqtcboy0_s_176",
+   "start": 610.58,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_176.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "vki4lqtcboy0_s_177",
+   "start": 614.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_177.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "ov_flowsteps_614",
+   "start": 614.34,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "top",
+   "title": "Un día entero de trabajo",
+   "nodes": [
+    {
+     "label": "Pelar en ronda",
+     "sub": "kilos y kilos, en el patio"
+    },
+    {
+     "label": "Hervir",
+     "sub": "burbujea como lava"
+    },
+    {
+     "label": "Volcar",
+     "sub": "en cajones de madera"
+    },
+    {
+     "label": "Secar",
+     "sub": "en el estante alto"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_178",
+   "start": 617.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_178.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_179",
+   "start": 621.18,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_179.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "vki4lqtcboy0_s_180",
+   "start": 624.54,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_180.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_181",
+   "start": 628.42,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_181.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "ov_lowerthirdid_630",
+   "start": 630.38,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LowerThirdId",
+   "theme": "earth",
+   "zone": "bottomLeft",
+   "name": "Las mujeres de la casa",
+   "role": "un día entero pelando en ronda, en el patio"
+  },
+  {
+   "id": "vki4lqtcboy0_s_182",
+   "start": 632.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_182.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_183",
+   "start": 637.04,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_183.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_184",
+   "start": 639.48,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_184.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_185",
+   "start": 643.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_185.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_186",
+   "start": 646.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_186.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_187",
+   "start": 650.96,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_187.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_188",
+   "start": 654.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_188.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_189",
+   "start": 658.66,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_189.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "ov_stampbadge_660",
+   "start": 660.34,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "top",
+   "text": "VIGILANTE",
+   "sub": "queso y dulce de membrillo",
+   "x": 0.5,
+   "y": 0.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_190",
+   "start": 662.14,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_190.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_191",
+   "start": 664.82,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_191.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "vki4lqtcboy0_s_192",
+   "start": 667.4,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_192.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_193",
+   "start": 671.42,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_193.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_194",
+   "start": 673.54,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_194.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_195",
+   "start": 677.44,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_195.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_196",
+   "start": 681.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_196.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "ov_highlightsweep_681",
+   "start": 681.28,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Hoy el membrillo se cae al suelo y nadie lo junta.",
+   "highlight": "Nadie sabe ya qué hacer con él",
+   "post": ".",
+   "note": "postre de reyes con lo más humilde de la tierra"
+  },
+  {
+   "id": "vki4lqtcboy0_s_197",
+   "start": 685.3,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_197.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8
+  },
+  {
+   "id": "vki4lqtcboy0_s_198",
+   "start": 688.8,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_198.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_199",
+   "start": 692.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_199.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "ov_chaptertitle_693",
+   "start": 692.74,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "9",
+   "title": "Los buñuelos",
+   "sub": "de acelga o de manzana, según la temporada"
+  },
+  {
+   "id": "vki4lqtcboy0_s_200",
+   "start": 696.78,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_200.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_201",
+   "start": 700.78,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_201.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "ov_checklistreveal_701",
+   "start": 700.78,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Una tarde entera de alegría",
+   "stamp": "3",
+   "items": [
+    "Un poco de harina",
+    "Un huevo",
+    "La fruta o la verdura picada",
+    "Grasa bien caliente",
+    "Azúcar por encima"
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_202",
+   "start": 704.94,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_202.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_203",
+   "start": 710.04,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_203.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.66
+  },
+  {
+   "id": "vki4lqtcboy0_s_204",
+   "start": 714.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_204.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_205",
+   "start": 718.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_205.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_206",
+   "start": 722.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_206.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6
+  },
+  {
+   "id": "vki4lqtcboy0_s_207",
+   "start": 724.54,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_207.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_208",
+   "start": 728.62,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_208.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "vki4lqtcboy0_s_209",
+   "start": 732,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_209.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_210",
+   "start": 736.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_210.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_211",
+   "start": 740.78,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_211.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "ov_pullquote_742",
+   "start": 742.24,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "La lluvia en el techo de chapa y el olor a buñuelo friéndose. Dime tú si eso no era la felicidad."
+  },
+  {
+   "id": "vki4lqtcboy0_s_212",
+   "start": 744.7,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_212.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "vki4lqtcboy0_s_213",
+   "start": 749.2,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_213.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_214",
+   "start": 752.32,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_214.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.6
+  },
+  {
+   "id": "vki4lqtcboy0_s_215",
+   "start": 756.62,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_215.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_216",
+   "start": 760.52,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_216.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_217",
+   "start": 762.58,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_217.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "ov_bulletcascade_763",
+   "start": 762.58,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Diez platos, una sola verdad",
+   "bullets": [
+    {
+     "pre": "Ni uno solo llevaba ",
+     "key": "un ingrediente caro",
+     "post": ""
+    },
+    {
+     "pre": "Ni uno solo venía ",
+     "key": "en una caja",
+     "post": ""
+    },
+    {
+     "pre": "Todos se hacían ",
+     "key": "con las manos y con tiempo",
+     "post": ""
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_218",
+   "start": 766.46,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_218.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_219",
+   "start": 769.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_219.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_220",
+   "start": 773.62,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_220.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_221",
+   "start": 777.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_221.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "ov_highlightsweep_778",
+   "start": 777.72,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Las recetas están.",
+   "highlight": "Lo que perdimos fue el tiempo",
+   "post": " — y la costumbre de darle valor a lo humilde.",
+   "note": "guarda esta idea, al final la vamos a necesitar"
+  },
+  {
+   "id": "vki4lqtcboy0_s_222",
+   "start": 781.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_222.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_223",
+   "start": 783.18,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_223.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "vki4lqtcboy0_s_224",
+   "start": 785.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_224.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_225",
+   "start": 788.84,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_225.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_226",
+   "start": 793.38,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_226.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "vki4lqtcboy0_s_227",
+   "start": 796.86,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_227.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "ov_chaptertitle_797",
+   "start": 796.86,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "11",
+   "title": "Las tortas fritas",
+   "sub": "el plato de los días de lluvia"
+  },
+  {
+   "id": "vki4lqtcboy0_s_228",
+   "start": 800,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_228.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_229",
+   "start": 804.02,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_229.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "ov_flowsteps_804",
+   "start": 804.02,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "top",
+   "title": "El ritual de la lluvia",
+   "nodes": [
+    {
+     "label": "Masa",
+     "sub": "harina, grasa, agua y sal"
+    },
+    {
+     "label": "El agujerito",
+     "sub": "con el dedo, para que no se infle"
+    },
+    {
+     "label": "A la grasa",
+     "sub": "bien caliente"
+    },
+    {
+     "label": "Azúcar",
+     "sub": "que se derrite encima"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_230",
+   "start": 807.46,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_230.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_231",
+   "start": 811.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_231.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.66
+  },
+  {
+   "id": "vki4lqtcboy0_s_232",
+   "start": 815.76,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_232.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_233",
+   "start": 819.78,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_233.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_234",
+   "start": 823.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_234.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_235",
+   "start": 828.02,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_235.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_236",
+   "start": 832.1,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_236.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_237",
+   "start": 836.14,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_237.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_238",
+   "start": 840.1,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_238.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_239",
+   "start": 843.9,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_239.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "vki4lqtcboy0_s_240",
+   "start": 846.62,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_240.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_241",
+   "start": 851.06,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_241.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_242",
+   "start": 853.38,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_242.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.68
+  },
+  {
+   "id": "vki4lqtcboy0_s_243",
+   "start": 857.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_243.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_244",
+   "start": 861.68,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_244.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_245",
+   "start": 865.64,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_245.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_246",
+   "start": 868.5,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_246.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_247",
+   "start": 872.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_247.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "ov_beforeafter_872",
+   "start": 872.24,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "El mismo día de lluvia, cincuenta años después",
+   "beforeLabel": "Antes: todos alrededor de la fuente, el mate y las historias",
+   "afterLabel": "Hoy: cada uno en un cuarto, mirando su teléfono",
+   "caption": "la lluvia dejó de ser una fiesta y volvió a ser un problema"
+  },
+  {
+   "id": "vki4lqtcboy0_s_248",
+   "start": 876.48,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_248.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.78
+  },
+  {
+   "id": "vki4lqtcboy0_s_249",
+   "start": 877.96,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_249.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_250",
+   "start": 881.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_250.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "ov_chaptertitle_883",
+   "start": 883.3,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "12",
+   "title": "La polenta",
+   "sub": "servida en la tabla, todos del mismo montón"
+  },
+  {
+   "id": "vki4lqtcboy0_s_251",
+   "start": 885.54,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_251.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_252",
+   "start": 888.66,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_252.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08
+  },
+  {
+   "id": "vki4lqtcboy0_s_253",
+   "start": 890.44,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_253.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_254",
+   "start": 891.98,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_254.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_255",
+   "start": 895.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_255.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_256",
+   "start": 899.86,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_256.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_257",
+   "start": 902.7,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_257.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_258",
+   "start": 905.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_258.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_259",
+   "start": 908.86,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_259.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_260",
+   "start": 911.48,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_260.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_261",
+   "start": 914.54,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_261.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "ov_highlightsweep_915",
+   "start": 914.54,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Nos criamos peleando por la costra del fondo.",
+   "highlight": "Y en esas peleas había más amor",
+   "post": " que en muchas mesas elegantes de ahora.",
+   "note": "se raspaba con la cuchara, dura y tostada"
+  },
+  {
+   "id": "vki4lqtcboy0_s_262",
+   "start": 918.68,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_262.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_263",
+   "start": 922.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_263.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "ov_chaptertitle_923",
+   "start": 922.88,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "13",
+   "title": "Los fideos caseros",
+   "sub": "amasados sobre la mesa de la cocina"
+  },
+  {
+   "id": "vki4lqtcboy0_s_264",
+   "start": 926.1,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_264.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "vki4lqtcboy0_s_265",
+   "start": 929.5,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_265.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_266",
+   "start": 932.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_266.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.7
+  },
+  {
+   "id": "vki4lqtcboy0_s_267",
+   "start": 936.64,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_267.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "vki4lqtcboy0_s_268",
+   "start": 939.9,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_268.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_269",
+   "start": 943.78,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_269.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_270",
+   "start": 947.7,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_270.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "ov_highlightsweep_949",
+   "start": 948.82,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Salían tallarines de verdad.",
+   "highlight": "Disparejos, hermosos en su imperfección",
+   "post": ".",
+   "note": "la masa descansando bajo un repasador"
+  },
+  {
+   "id": "vki4lqtcboy0_s_271",
+   "start": 952.84,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_271.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_272",
+   "start": 956.82,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_272.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_273",
+   "start": 959.02,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_273.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_274",
+   "start": 962.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_274.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "vki4lqtcboy0_s_275",
+   "start": 964.66,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_275.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "ov_chaptertitle_965",
+   "start": 964.66,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "14",
+   "title": "Los ravioles caseros",
+   "sub": "un trabajo de horas y de muchas manos"
+  },
+  {
+   "id": "vki4lqtcboy0_s_276",
+   "start": 968.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_276.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_277",
+   "start": 972.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_277.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_278",
+   "start": 976.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_278.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.08
+  },
+  {
+   "id": "vki4lqtcboy0_s_279",
+   "start": 978.1,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_279.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.46
+  },
+  {
+   "id": "ov_numberedsteps_978",
+   "start": 978.1,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Cada uno con su tarea",
+   "title": "La mesa grande, en cadena",
+   "steps": [
+    {
+     "title": "Estirar la masa",
+     "sub": "con el palo largo"
+    },
+    {
+     "title": "Los montoncitos de relleno",
+     "sub": "con una cucharita"
+    },
+    {
+     "title": "Tapar y apretar",
+     "sub": "con los dedos, para sacar el aire"
+    },
+    {
+     "title": "Cortar con la ruedita",
+     "sub": "y una raya de harina para que no se peguen"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_280",
+   "start": 980.26,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_280.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.7
+  },
+  {
+   "id": "vki4lqtcboy0_s_281",
+   "start": 984.66,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_281.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_282",
+   "start": 988.64,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_282.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_283",
+   "start": 992.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_283.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_284",
+   "start": 996.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_284.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6
+  },
+  {
+   "id": "vki4lqtcboy0_s_285",
+   "start": 1000.06,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_285.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.12
+  },
+  {
+   "id": "vki4lqtcboy0_s_286",
+   "start": 1004.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_286.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "vki4lqtcboy0_s_287",
+   "start": 1008.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_287.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_288",
+   "start": 1012.48,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_288.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.52
+  },
+  {
+   "id": "vki4lqtcboy0_s_289",
+   "start": 1014.7,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_289.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_290",
+   "start": 1018.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_290.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_291",
+   "start": 1022.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_291.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_292",
+   "start": 1026.08,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_292.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_293",
+   "start": 1028.36,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_293.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.66
+  },
+  {
+   "id": "ov_pullquote_1028",
+   "start": 1028.36,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "La comida se hacía juntos, hablando, riéndose. El plato ya te alimentaba antes de comerlo."
+  },
+  {
+   "id": "vki4lqtcboy0_s_294",
+   "start": 1032.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_294.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_295",
+   "start": 1036.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_295.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "vki4lqtcboy0_s_296",
+   "start": 1039.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_296.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_297",
+   "start": 1042.32,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_297.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_298",
+   "start": 1045.36,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_298.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.56
+  },
+  {
+   "id": "vki4lqtcboy0_s_299",
+   "start": 1047.62,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_299.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "ov_chaptertitle_1048",
+   "start": 1047.62,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "top",
+   "number": "15",
+   "title": "Empanadas de horno de barro",
+   "sub": "cada repulgue, una firma"
+  },
+  {
+   "id": "vki4lqtcboy0_s_300",
+   "start": 1051.42,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_300.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_301",
+   "start": 1054.44,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_301.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_302",
+   "start": 1058.76,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_302.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.7
+  },
+  {
+   "id": "vki4lqtcboy0_s_303",
+   "start": 1063.16,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_303.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_304",
+   "start": 1067.34,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_304.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "ov_highlightsweep_1069",
+   "start": 1068.54,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Cada mujer cerraba distinto.",
+   "highlight": "Era como una firma en la masa",
+   "post": " — sabías quién había hecho cuál.",
+   "note": "sin que nadie dijera nada"
+  },
+  {
+   "id": "vki4lqtcboy0_s_305",
+   "start": 1071.54,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_305.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_306",
+   "start": 1074.46,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_306.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.72
+  },
+  {
+   "id": "vki4lqtcboy0_s_307",
+   "start": 1078.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_307.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "ov_ctacard_1079",
+   "start": 1078.88,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Las medidas exactas de estos platos",
+   "title": "La Guía de la Abuela Rosa",
+   "bullet": "las recetas de olla con sus cantidades, tal como se hacían en casa",
+   "price": 0,
+   "cta": "TE LA DEJO EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "vki4lqtcboy0_s_308",
+   "start": 1081.92,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_308.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_309",
+   "start": 1084.06,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_309.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_310",
+   "start": 1087.2,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_310.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_311",
+   "start": 1091.18,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_311.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_312",
+   "start": 1095.36,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_312.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "vki4lqtcboy0_s_313",
+   "start": 1098.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_313.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "ov_pullquote_1099",
+   "start": 1098.88,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Extraño ese brazo que sabía más que toda la tecnología junta."
+  },
+  {
+   "id": "vki4lqtcboy0_s_314",
+   "start": 1101.88,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_314.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_315",
+   "start": 1104.56,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_315.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_316",
+   "start": 1108.76,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_316.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  }
+ ]
+}
