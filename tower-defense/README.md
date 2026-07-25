@@ -120,6 +120,15 @@ Una mejora nueva es una entrada en `src/sim/balance/upgrades.ts`:
 No hay que tocar nada más: el draft, el preview de DPS y el recálculo de stats la
 levantan solos.
 
+## Arte
+
+El plan completo de dirección de arte, inventario de assets, pipeline de
+animación y presupuesto está en [`docs/ART.md`](docs/ART.md). La decisión que lo
+sostiene: con hasta 180 unidades en pantalla no se puede correr animación
+esqueletal viva por unidad, así que las tropas comunes se animan en Rive y se
+hornean a atlas (se reproducen cambiando `Texture` sobre los sprites ya
+pooleados), y solo torres y bosses corren esqueletal vivo.
+
 ## Qué falta para que sea un juego completo
 
 Por orden de impacto:
