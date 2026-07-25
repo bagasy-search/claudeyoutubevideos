@@ -1,4 +1,4 @@
-import { Assets, Texture } from 'pixi.js'
+import { Assets, ImageSource, Texture } from 'pixi.js'
 import { ENEMIES } from '../sim/balance/enemies'
 import type { Atlas } from './sprites'
 
@@ -32,6 +32,24 @@ export interface ArtManifest {
   projectiles?: ArtEntry[]
   portal?: ArtEntry
   core?: ArtEntry
+}
+
+/**
+ * Decodifica un data: URI a textura SIN pasar por el cargador de Pixi.
+ *
+ * Pixi levanta un web worker desde un `blob:` para decodificar imagenes, y una
+ * Content-Security-Policy estricta —la que tiene la pagina publicada— lo
+ * bloquea: el arte no cargaba y el juego se quedaba con el procedural. Aca se
+ * pasa de base64 a bytes, de bytes a ImageBitmap y de ahi a textura. Nada de
+ * eso es una request, asi que no hay superficie para que la CSP bloquee.
+ */
+async function textureFromDataUri(uri: string, resolution: number): Promise<Texture> {
+  const base64 = uri.slice(uri.indexOf(',') + 1)
+  const binary = atob(base64)
+  const bytes = new Uint8Array(binary.length)
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i)
+  const bitmap = await createImageBitmap(new Blob([bytes], { type: 'image/png' }))
+  return new Texture({ source: new ImageSource({ resource: bitmap, resolution }) })
 }
 
 export interface LoadReport {
@@ -73,19 +91,16 @@ export async function applyManifest(
     const path = typeof entry === 'string' ? entry : entry.path
     const pixelRatio = typeof entry === 'string' ? 1 : (entry.pixelRatio ?? 1)
     try {
+      if (path.startsWith('data:')) return await textureFromDataUri(path, pixelRatio)
       /*
        * La resolucion va como opcion de CARGA, no asignada despues. Mutar
        * `source.resolution` sobre una textura ya creada deja el frame calculado
        * con el tamaño viejo: la textura queda descuadrada y el sprite no dibuja
        * nada. Pasandola al loader, el frame se calcula bien de entrada.
        */
-      const tex = await Assets.load<Texture>({
-        src: resolve(path),
-        data: { resolution: pixelRatio },
-      })
-      return tex
-    } catch {
-      report.missing.push(path)
+      return await Assets.load<Texture>({ src: resolve(path), data: { resolution: pixelRatio } })
+    } catch (err) {
+      report.missing.push(`${path}: ${err instanceof Error ? err.message : String(err)}`)
       return null
     }
   }
