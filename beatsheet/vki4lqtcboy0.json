@@ -5,65 +5,62 @@
  "beats": [
   {
    "id": "vki4lqtcboy0_s_000",
-   "start": 0,
+   "start": 0.13,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_000.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_000.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.16
+   "dur": 3.8
   },
   {
    "id": "vki4lqtcboy0_s_001",
-   "start": 3.86,
+   "start": 3.63,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_001.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.86
+   "dur": 3.87
   },
   {
    "id": "vki4lqtcboy0_s_002",
-   "start": 7.42,
+   "start": 7.2,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_002.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.22
+   "dur": 4.29
   },
   {
    "id": "vki4lqtcboy0_s_003",
-   "start": 11.34,
+   "start": 11.19,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_003.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.58
+   "dur": 3.35
   },
   {
    "id": "vki4lqtcboy0_s_004",
-   "start": 14.62,
+   "start": 14.24,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_004.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.52
+   "dur": 4.58
   },
   {
    "id": "vki4lqtcboy0_s_005",
-   "start": 18.84,
+   "start": 18.52,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_005.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_005.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.84
+   "dur": 4.14
   },
   {
    "id": "ov_highlightsweep_19",
-   "start": 18.84,
+   "start": 18.52,
    "dur": 5.800000000000001,
    "kind": "premium",
    "overlay": true,
@@ -77,50 +74,49 @@
   },
   {
    "id": "vki4lqtcboy0_s_006",
-   "start": 22.38,
+   "start": 22.36,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_006c.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 4.03
   },
   {
    "id": "vki4lqtcboy0_s_007",
-   "start": 26.48,
+   "start": 26.09,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_007.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_007.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.26
+   "dur": 5.49
   },
   {
    "id": "vki4lqtcboy0_s_008",
-   "start": 31.44,
+   "start": 31.28,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_008.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.18
+   "dur": 3.26
   },
   {
    "id": "vki4lqtcboy0_s_009",
-   "start": 34.32,
+   "start": 34.24,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_009.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.04
+   "dur": 2.88
   },
   {
    "id": "vki4lqtcboy0_s_010",
-   "start": 37.06,
+   "start": 36.82,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_010.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.6
+   "dur": 2.76
   },
   {
    "id": "ov_pullquote_37",
@@ -135,56 +131,53 @@
   },
   {
    "id": "vki4lqtcboy0_s_011",
-   "start": 39.36,
+   "start": 39.28,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_011.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_011.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.18
+   "dur": 4.27
   },
   {
    "id": "vki4lqtcboy0_s_012",
-   "start": 43.24,
+   "start": 43.25,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_012.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.34
+   "dur": 2.21
   },
   {
    "id": "vki4lqtcboy0_s_013",
-   "start": 45.28,
+   "start": 45.16,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_013.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_013.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.74
+   "dur": 4.85
   },
   {
    "id": "vki4lqtcboy0_s_014",
-   "start": 49.72,
+   "start": 49.71,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_014.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.72
+   "dur": 3.31
   },
   {
    "id": "vki4lqtcboy0_s_015",
-   "start": 53.14,
+   "start": 52.72,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_015.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_015.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.48
+   "dur": 5.12
   },
   {
    "id": "ov_hookcaption_53",
-   "start": 53.14,
+   "start": 52.72,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -211,22 +204,21 @@
   },
   {
    "id": "vki4lqtcboy0_s_016",
-   "start": 57.32,
+   "start": 57.54,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_016.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_016.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.34
+   "dur": 4.13
   },
   {
    "id": "vki4lqtcboy0_s_017",
-   "start": 61.36,
+   "start": 61.37,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_017.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.5
+   "dur": 2.49
   },
   {
    "id": "vki4lqtcboy0_s_018",
@@ -236,31 +228,29 @@
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.86
+   "dur": 2.78
   },
   {
    "id": "vki4lqtcboy0_s_019",
-   "start": 66.12,
+   "start": 66.04,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_019.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_019.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.98
+   "dur": 2.94
   },
   {
    "id": "vki4lqtcboy0_s_020",
-   "start": 68.8,
+   "start": 68.68,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_020.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_020.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.56
+   "dur": 4.62
   },
   {
    "id": "ov_stampbadge_70",
-   "start": 70.26,
+   "start": 70.2,
    "dur": 5.4,
    "kind": "premium",
    "overlay": true,
@@ -274,111 +264,105 @@
   },
   {
    "id": "vki4lqtcboy0_s_021",
-   "start": 73.06,
+   "start": 73,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_021.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_021.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.84
+   "dur": 3.86
   },
   {
    "id": "vki4lqtcboy0_s_022",
-   "start": 76.6,
+   "start": 76.56,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_022.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_022.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.58
+   "dur": 2.54
   },
   {
    "id": "vki4lqtcboy0_s_023",
-   "start": 78.88,
+   "start": 78.8,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_023.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_023.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.18
+   "dur": 4.14
   },
   {
    "id": "vki4lqtcboy0_s_024",
-   "start": 82.76,
+   "start": 82.64,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_024.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.18
+   "dur": 3.03
   },
   {
    "id": "vki4lqtcboy0_s_025",
-   "start": 85.64,
+   "start": 85.37,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_025.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.78
+   "dur": 4.01
   },
   {
    "id": "vki4lqtcboy0_s_026",
-   "start": 89.12,
+   "start": 89.08,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_026.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_026.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.08
+   "dur": 1.98
   },
   {
    "id": "vki4lqtcboy0_s_027",
-   "start": 90.9,
+   "start": 90.76,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_027.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.38
+   "dur": 4.66
   },
   {
    "id": "vki4lqtcboy0_s_028",
-   "start": 94.98,
+   "start": 95.12,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_028.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_028.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.44
+   "dur": 3.22
   },
   {
    "id": "vki4lqtcboy0_s_029",
-   "start": 98.12,
+   "start": 98.04,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_029.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.36
+   "dur": 3.38
   },
   {
    "id": "vki4lqtcboy0_s_030",
-   "start": 101.18,
+   "start": 101.12,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_030.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_030.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.4
+   "dur": 3.3
   },
   {
    "id": "vki4lqtcboy0_s_031",
-   "start": 104.28,
+   "start": 104.12,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_031.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.32
+   "dur": 4.48
   },
   {
    "id": "ov_bigstatreveal_105",
@@ -403,66 +387,66 @@
    "src": "img/vki4lqtcboy0_s_032.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.54
+   "dur": 2.7
   },
   {
    "id": "vki4lqtcboy0_s_033",
-   "start": 110.54,
+   "start": 110.7,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_033.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.74
+   "dur": 2.86
   },
   {
    "id": "vki4lqtcboy0_s_034",
-   "start": 112.98,
+   "start": 113.26,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_034.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.96
+   "dur": 2.6
   },
   {
    "id": "vki4lqtcboy0_s_035",
-   "start": 115.64,
+   "start": 115.56,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_035.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.16
+   "dur": 2.49
   },
   {
    "id": "vki4lqtcboy0_s_036",
-   "start": 117.5,
+   "start": 117.75,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_036.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.38
+   "dur": 2.07
   },
   {
    "id": "vki4lqtcboy0_s_037",
-   "start": 119.58,
+   "start": 119.52,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_037.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 5.14
+   "dur": 5.02
   },
   {
    "id": "vki4lqtcboy0_s_038",
-   "start": 124.42,
+   "start": 124.24,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_038.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 1.92
+   "dur": 2.1
   },
   {
    "id": "vki4lqtcboy0_s_039",
@@ -477,11 +461,10 @@
    "id": "vki4lqtcboy0_s_040",
    "start": 129.32,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_040.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_040.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.08
+   "dur": 1.94
   },
   {
    "id": "ov_chaptertitle_129",
@@ -498,75 +481,74 @@
   },
   {
    "id": "vki4lqtcboy0_s_041",
-   "start": 131.1,
+   "start": 130.96,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_041.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_041.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.92
+   "dur": 2.94
   },
   {
    "id": "vki4lqtcboy0_s_042",
-   "start": 133.72,
+   "start": 133.6,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_042.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 4.4
   },
   {
    "id": "vki4lqtcboy0_s_043",
-   "start": 137.68,
+   "start": 137.7,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_043.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.62
+   "dur": 3.36
   },
   {
    "id": "vki4lqtcboy0_s_044",
-   "start": 141,
+   "start": 140.76,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_044.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 1.8
+   "dur": 2.38
   },
   {
    "id": "vki4lqtcboy0_s_045",
-   "start": 142.5,
+   "start": 142.84,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_045.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.64
+   "dur": 1.91
   },
   {
    "id": "vki4lqtcboy0_s_046",
-   "start": 144.84,
+   "start": 144.45,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_046.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.22
+   "dur": 3.53
   },
   {
    "id": "vki4lqtcboy0_s_047",
-   "start": 147.76,
+   "start": 147.68,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_047.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.54
+   "dur": 4.63
   },
   {
    "id": "ov_layerstack_149",
-   "start": 149.26,
+   "start": 149.08,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -594,45 +576,44 @@
   },
   {
    "id": "vki4lqtcboy0_s_048",
-   "start": 152,
+   "start": 152.01,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_048.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_048.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.21
   },
   {
    "id": "vki4lqtcboy0_s_049",
-   "start": 155.94,
+   "start": 155.92,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_049.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.2
+   "dur": 4.08
   },
   {
    "id": "vki4lqtcboy0_s_050",
-   "start": 159.84,
+   "start": 159.7,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_050.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 2.28
   },
   {
    "id": "vki4lqtcboy0_s_051",
-   "start": 161.74,
+   "start": 161.68,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_051.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.82
+   "dur": 3.78
   },
   {
    "id": "ov_pullquote_163",
-   "start": 162.62,
+   "start": 162.72,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -643,76 +624,73 @@
   },
   {
    "id": "vki4lqtcboy0_s_052",
-   "start": 165.26,
+   "start": 165.16,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_052.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.1
+   "dur": 3.95
   },
   {
    "id": "vki4lqtcboy0_s_053",
-   "start": 169.06,
+   "start": 168.81,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_053.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 1.8
+   "dur": 2.33
   },
   {
    "id": "vki4lqtcboy0_s_054",
-   "start": 170.56,
+   "start": 170.84,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_054.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 4.02
   },
   {
    "id": "vki4lqtcboy0_s_055",
-   "start": 174.66,
+   "start": 174.56,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_055.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_055.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.4
+   "dur": 3.42
   },
   {
    "id": "vki4lqtcboy0_s_056",
-   "start": 177.76,
+   "start": 177.68,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_056.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
    "dur": 3.34
   },
   {
    "id": "vki4lqtcboy0_s_057",
-   "start": 180.8,
+   "start": 180.72,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_057.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_057.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.26
+   "dur": 2.38
   },
   {
    "id": "vki4lqtcboy0_s_058",
-   "start": 182.76,
+   "start": 182.8,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_058.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.86
+   "dur": 2.7
   },
   {
    "id": "ov_vsduel_183",
-   "start": 182.76,
+   "start": 182.8,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -734,87 +712,82 @@
   },
   {
    "id": "vki4lqtcboy0_s_059",
-   "start": 185.32,
+   "start": 185.2,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_059.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_059.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.16
+   "dur": 4.34
   },
   {
    "id": "vki4lqtcboy0_s_060",
-   "start": 189.18,
+   "start": 189.24,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_060.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_060.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.6
+   "dur": 2.46
   },
   {
    "id": "vki4lqtcboy0_s_061",
-   "start": 191.48,
+   "start": 191.4,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_061.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_061.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.08
+   "dur": 3.23
   },
   {
    "id": "vki4lqtcboy0_s_062",
-   "start": 194.26,
+   "start": 194.33,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_062.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.38
+   "dur": 4.1
   },
   {
    "id": "vki4lqtcboy0_s_063",
-   "start": 198.34,
+   "start": 198.13,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_063.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 5.1
+   "dur": 5.25
   },
   {
    "id": "vki4lqtcboy0_s_064",
-   "start": 203.14,
+   "start": 203.08,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_064.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.16
+   "dur": 4.35
   },
   {
    "id": "vki4lqtcboy0_s_065",
-   "start": 207,
+   "start": 207.13,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_065.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_065.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 4.28
   },
   {
    "id": "vki4lqtcboy0_s_066",
-   "start": 210.96,
+   "start": 211.11,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_066.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_066.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.46
+   "dur": 3.15
   },
   {
    "id": "ov_numberedsteps_213",
-   "start": 212.54,
+   "start": 212.6,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -844,90 +817,88 @@
   },
   {
    "id": "vki4lqtcboy0_s_067",
-   "start": 214.12,
+   "start": 213.96,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_067.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.38
+   "dur": 3.34
   },
   {
    "id": "vki4lqtcboy0_s_068",
-   "start": 217.2,
+   "start": 217,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_068.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.32
+   "dur": 3.55
   },
   {
    "id": "vki4lqtcboy0_s_069",
-   "start": 220.22,
+   "start": 220.25,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_069.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 4.42
   },
   {
    "id": "vki4lqtcboy0_s_070",
-   "start": 224.18,
+   "start": 224.37,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_070.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.3
+   "dur": 4.06
   },
   {
    "id": "vki4lqtcboy0_s_071",
-   "start": 228.18,
+   "start": 228.13,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_071.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.28
+   "dur": 4.1
   },
   {
    "id": "vki4lqtcboy0_s_072",
-   "start": 232.16,
+   "start": 231.93,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_072.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.72
+   "dur": 2.81
   },
   {
    "id": "vki4lqtcboy0_s_073",
-   "start": 234.58,
+   "start": 234.44,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_073.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_073.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.6
+   "dur": 3.66
   },
   {
    "id": "vki4lqtcboy0_s_074",
-   "start": 237.88,
+   "start": 237.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_074.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.86
+   "dur": 3.94
   },
   {
    "id": "vki4lqtcboy0_s_075",
    "start": 241.44,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_075.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_075.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.84
+   "dur": 3.74
   },
   {
    "id": "ov_highlightsweep_241",
@@ -945,162 +916,148 @@
   },
   {
    "id": "vki4lqtcboy0_s_076",
-   "start": 244.98,
+   "start": 244.88,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_076.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.35
   },
   {
    "id": "vki4lqtcboy0_s_077",
-   "start": 248.92,
+   "start": 248.93,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_077.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.7
+   "dur": 4.25
   },
   {
    "id": "vki4lqtcboy0_s_078",
-   "start": 252.32,
+   "start": 252.88,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_078.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 3.66
   },
   {
    "id": "vki4lqtcboy0_s_079",
-   "start": 256.42,
+   "start": 256.24,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_079.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.33
   },
   {
    "id": "vki4lqtcboy0_s_080",
-   "start": 260.36,
+   "start": 260.27,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_080.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.28
+   "dur": 2.35
   },
   {
    "id": "vki4lqtcboy0_s_081",
-   "start": 262.34,
+   "start": 262.32,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_081.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_081.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.7
+   "dur": 2.66
   },
   {
    "id": "vki4lqtcboy0_s_082",
-   "start": 264.74,
+   "start": 264.68,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_082.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_082.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.88
+   "dur": 2.86
   },
   {
    "id": "ov_chaptertitle_265",
-   "start": 264.74,
-   "dur": 5,
+   "start": 264.68,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
    "zone": "topLeft",
-   "number": "3",
+   "number": "III",
    "title": "El locro",
-   "sub": "la olla que salía dos veces al año"
+   "sub": "el guiso de los días de fiesta"
   },
   {
    "id": "vki4lqtcboy0_s_083",
-   "start": 267.32,
+   "start": 267.24,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_083.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.48
+   "dur": 3.49
   },
   {
    "id": "vki4lqtcboy0_s_084",
-   "start": 270.5,
+   "start": 270.43,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_084.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_084.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.62
+   "dur": 5.76
   },
   {
    "id": "vki4lqtcboy0_s_085",
-   "start": 275.82,
+   "start": 275.89,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_085.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_085.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.76
+   "dur": 3.01
   },
   {
    "id": "vki4lqtcboy0_s_086",
-   "start": 278.28,
+   "start": 278.6,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_086.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.3
+   "dur": 2.66
   },
   {
    "id": "vki4lqtcboy0_s_087",
-   "start": 281.28,
+   "start": 280.96,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_087.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.08
+   "dur": 3.26
   },
   {
    "id": "vki4lqtcboy0_s_088",
-   "start": 284.06,
+   "start": 283.92,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_088.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.14
+   "dur": 3.97
   },
   {
    "id": "vki4lqtcboy0_s_089",
-   "start": 287.9,
+   "start": 287.59,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_089.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
-  },
-  {
-   "id": "vki4lqtcboy0_s_090",
-   "start": 292,
-   "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_090.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.48
+   "dur": 5.11
   },
   {
    "id": "ov_bigstatreveal_292",
@@ -1119,37 +1076,46 @@
    "support": "tan pesada que entre dos la subían al fuego"
   },
   {
+   "id": "vki4lqtcboy0_s_090",
+   "start": 292.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_090.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
    "id": "vki4lqtcboy0_s_091",
-   "start": 296.18,
+   "start": 296.16,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_091.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.44
+   "dur": 4.72
   },
   {
    "id": "vki4lqtcboy0_s_092",
-   "start": 300.32,
+   "start": 300.58,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_092.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.82
+   "dur": 4.4
   },
   {
    "id": "vki4lqtcboy0_s_093",
-   "start": 304.84,
+   "start": 304.68,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_093.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.22
+   "dur": 4.46
   },
   {
    "id": "ov_cycleloop_307",
-   "start": 307.02,
+   "start": 306.8,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -1179,123 +1145,121 @@
   },
   {
    "id": "vki4lqtcboy0_s_094",
-   "start": 308.76,
+   "start": 308.84,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_094.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.2
+   "dur": 4.09
   },
   {
    "id": "vki4lqtcboy0_s_095",
-   "start": 312.66,
+   "start": 312.63,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_095.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.2
+   "dur": 4.37
   },
   {
    "id": "vki4lqtcboy0_s_096",
-   "start": 316.56,
+   "start": 316.7,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_096.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 3.96
   },
   {
    "id": "vki4lqtcboy0_s_097",
-   "start": 320.52,
+   "start": 320.36,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_097.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.84
+   "dur": 5.04
   },
   {
    "id": "vki4lqtcboy0_s_098",
-   "start": 325.06,
+   "start": 325.1,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_098.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.18
+   "dur": 3.22
   },
   {
    "id": "vki4lqtcboy0_s_099",
-   "start": 327.94,
+   "start": 328.02,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_099.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_099.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.24
+   "dur": 2.88
   },
   {
    "id": "vki4lqtcboy0_s_100",
-   "start": 330.88,
+   "start": 330.6,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_100.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.14
+   "dur": 4.35
   },
   {
    "id": "vki4lqtcboy0_s_101",
-   "start": 334.72,
+   "start": 334.65,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_101.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.58
+   "dur": 2.57
   },
   {
    "id": "vki4lqtcboy0_s_102",
-   "start": 337,
+   "start": 336.92,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_102.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.62
-  },
-  {
-   "id": "vki4lqtcboy0_s_103",
-   "start": 341.32,
-   "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_103.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
    "dur": 4.3
   },
   {
+   "id": "vki4lqtcboy0_s_103",
+   "start": 340.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_103.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
    "id": "vki4lqtcboy0_s_104",
-   "start": 345.32,
+   "start": 345.44,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_104.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.26
+   "dur": 2.18
   },
   {
    "id": "vki4lqtcboy0_s_105",
-   "start": 347.28,
+   "start": 347.32,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_105.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 3.98
   },
   {
    "id": "ov_pullquote_347",
-   "start": 347.28,
+   "start": 347.32,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -1306,43 +1270,31 @@
   },
   {
    "id": "vki4lqtcboy0_s_106",
-   "start": 351.24,
+   "start": 351,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_106.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 5.2
   },
   {
    "id": "vki4lqtcboy0_s_107",
-   "start": 355.34,
+   "start": 355.9,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_107.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_107.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.62
+   "dur": 3
   },
   {
    "id": "vki4lqtcboy0_s_108",
-   "start": 358.66,
+   "start": 358.6,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_108.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.38
-  },
-  {
-   "id": "vki4lqtcboy0_s_109",
-   "start": 362.74,
-   "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_109.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.36
+   "dur": 5.22
   },
   {
    "id": "ov_chaptertitle_363",
@@ -1358,36 +1310,46 @@
    "sub": "una vez por semana, sí o sí"
   },
   {
+   "id": "vki4lqtcboy0_s_109",
+   "start": 363.52,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_109.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.57
+  },
+  {
    "id": "vki4lqtcboy0_s_110",
-   "start": 366.8,
+   "start": 366.79,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_110.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.12
+   "dur": 4.03
   },
   {
    "id": "vki4lqtcboy0_s_111",
-   "start": 370.62,
+   "start": 370.52,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_111.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.34
+   "dur": 4.42
   },
   {
    "id": "vki4lqtcboy0_s_112",
-   "start": 374.66,
+   "start": 374.64,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_112.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.54
+   "dur": 4.3
   },
   {
    "id": "ov_mythtruth_377",
-   "start": 376.92,
+   "start": 376.84,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -1399,70 +1361,60 @@
   },
   {
    "id": "vki4lqtcboy0_s_113",
-   "start": 378.9,
+   "start": 378.64,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_113.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.76
+   "dur": 4.08
   },
   {
    "id": "vki4lqtcboy0_s_114",
-   "start": 382.36,
+   "start": 382.42,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_114.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.36
+   "dur": 4.34
   },
   {
    "id": "vki4lqtcboy0_s_115",
-   "start": 386.42,
+   "start": 386.46,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_115.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.76
+   "dur": 4.83
   },
   {
    "id": "vki4lqtcboy0_s_116",
-   "start": 390.88,
+   "start": 390.99,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_116.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.38
+   "dur": 4.19
   },
   {
    "id": "vki4lqtcboy0_s_117",
-   "start": 394.96,
+   "start": 394.88,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_117.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.3
   },
   {
    "id": "vki4lqtcboy0_s_118",
-   "start": 398.9,
+   "start": 398.88,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_118.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.16
-  },
-  {
-   "id": "vki4lqtcboy0_s_119",
-   "start": 401.76,
-   "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_119.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 3.74
+   "dur": 3.22
   },
   {
    "id": "ov_highlightsweep_402",
@@ -1479,57 +1431,65 @@
    "note": "cositas que ya nadie te enseña"
   },
   {
-   "id": "vki4lqtcboy0_s_120",
-   "start": 405.2,
+   "id": "vki4lqtcboy0_s_119",
+   "start": 401.8,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_120.mp4",
+   "src": "broll/vki4lqtcboy0_s_119.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 3.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_120",
+   "start": 405.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_120.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44
   },
   {
    "id": "vki4lqtcboy0_s_121",
-   "start": 407.1,
+   "start": 407.22,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_121.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.84
+   "dur": 2.82
   },
   {
    "id": "vki4lqtcboy0_s_122",
-   "start": 409.64,
+   "start": 409.74,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_122.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_122.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 4.04
   },
   {
    "id": "vki4lqtcboy0_s_123",
-   "start": 413.74,
+   "start": 413.48,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_123.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.48
-  },
-  {
-   "id": "vki4lqtcboy0_s_124",
-   "start": 417.92,
-   "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_124.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
    "dur": 5.06
   },
   {
+   "id": "vki4lqtcboy0_s_124",
+   "start": 418.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_124.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.62
+  },
+  {
    "id": "ov_numberedsteps_418",
-   "start": 417.92,
+   "start": 418.24,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -1559,40 +1519,30 @@
   },
   {
    "id": "vki4lqtcboy0_s_125",
-   "start": 422.68,
+   "start": 422.56,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_125.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.1
+   "dur": 5.18
   },
   {
    "id": "vki4lqtcboy0_s_126",
-   "start": 427.48,
+   "start": 427.44,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_126.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_126.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.92
+   "dur": 5.18
   },
   {
    "id": "vki4lqtcboy0_s_127",
-   "start": 432.1,
+   "start": 432.32,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_127.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.66
-  },
-  {
-   "id": "vki4lqtcboy0_s_128",
-   "start": 436.46,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_128.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 3.78
+   "dur": 4.51
   },
   {
    "id": "ov_pullquote_436",
@@ -1606,135 +1556,139 @@
    "quote": "Tenía gusto a algo antiguo. A algo que venía de nuestros abuelos, y de los abuelos de ellos."
   },
   {
-   "id": "vki4lqtcboy0_s_129",
-   "start": 439.94,
+   "id": "vki4lqtcboy0_s_128",
+   "start": 436.53,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_129.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_128.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.24
+   "dur": 3.65
+  },
+  {
+   "id": "vki4lqtcboy0_s_129",
+   "start": 439.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_129.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
   },
   {
    "id": "vki4lqtcboy0_s_130",
-   "start": 442.88,
+   "start": 442.68,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_130.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_130.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.28
+   "dur": 4.1
   },
   {
    "id": "vki4lqtcboy0_s_131",
-   "start": 445.86,
+   "start": 446.48,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_131.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_131.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.14
+   "dur": 3.5
   },
   {
    "id": "vki4lqtcboy0_s_132",
-   "start": 449.7,
+   "start": 449.68,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_132.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_132.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.58
   },
   {
    "id": "vki4lqtcboy0_s_133",
-   "start": 452.98,
+   "start": 452.96,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_133.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.52
+   "dur": 3.42
   },
   {
    "id": "vki4lqtcboy0_s_134",
-   "start": 456.2,
+   "start": 456.08,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_134.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_134.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.82
+   "dur": 3.9
   },
   {
    "id": "vki4lqtcboy0_s_135",
-   "start": 459.72,
+   "start": 459.68,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_135.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 5.06
+   "dur": 5.08
   },
   {
-   "id": "ov_chaptertitle_460",
-   "start": 459.72,
-   "dur": 5,
+   "id": "ov_cornereyebrow_460",
+   "start": 459.68,
+   "dur": 5.4,
    "kind": "premium",
    "overlay": true,
-   "comp": "ChapterTitle",
+   "comp": "CornerEyebrow",
    "theme": "earth",
    "zone": "topLeft",
-   "number": "6",
-   "title": "Arroz con leche",
-   "sub": "media hora de cuchara, sin parar"
+   "eyebrow": "PLATO SEIS",
+   "text": "Arroz con leche",
+   "corner": "tl"
   },
   {
    "id": "vki4lqtcboy0_s_136",
-   "start": 464.48,
+   "start": 464.46,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_136.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.46
+   "dur": 2.32
   },
   {
    "id": "vki4lqtcboy0_s_137",
-   "start": 466.64,
+   "start": 466.48,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_137.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.18
+   "dur": 3.14
   },
   {
    "id": "vki4lqtcboy0_s_138",
-   "start": 469.52,
+   "start": 469.32,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_138.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.72
+   "dur": 3.46
   },
   {
    "id": "vki4lqtcboy0_s_139",
-   "start": 471.94,
+   "start": 472.48,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_139.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.68
+   "dur": 2.7
   },
   {
    "id": "vki4lqtcboy0_s_140",
-   "start": 475.32,
+   "start": 474.88,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_140.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.34
+   "dur": 4.69
   },
   {
    "id": "ov_bigstatreveal_475",
@@ -1754,46 +1708,45 @@
   },
   {
    "id": "vki4lqtcboy0_s_141",
-   "start": 479.36,
+   "start": 479.27,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_141.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.94
+   "dur": 4.71
   },
   {
    "id": "vki4lqtcboy0_s_142",
-   "start": 484,
+   "start": 483.68,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_142.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.16
+   "dur": 4.58
   },
   {
    "id": "vki4lqtcboy0_s_143",
-   "start": 487.86,
+   "start": 487.96,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_143.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 4.34
   },
   {
    "id": "vki4lqtcboy0_s_144",
-   "start": 491.96,
+   "start": 492,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_144.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.27
   },
   {
    "id": "ov_cycleloop_493",
-   "start": 492.94,
+   "start": 493.06,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -1823,73 +1776,72 @@
   },
   {
    "id": "vki4lqtcboy0_s_145",
-   "start": 495.9,
+   "start": 495.97,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_145.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.36
+   "dur": 4.49
   },
   {
    "id": "vki4lqtcboy0_s_146",
-   "start": 499.96,
+   "start": 500.16,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_146.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.52
+   "dur": 4.63
   },
   {
    "id": "vki4lqtcboy0_s_147",
-   "start": 504.18,
+   "start": 504.49,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_147.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.34
+   "dur": 3.77
   },
   {
    "id": "vki4lqtcboy0_s_148",
-   "start": 508.22,
+   "start": 507.96,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_148.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 4.5
   },
   {
    "id": "vki4lqtcboy0_s_149",
-   "start": 512.18,
+   "start": 512.16,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_149.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.68
+   "dur": 3.74
   },
   {
    "id": "vki4lqtcboy0_s_150",
-   "start": 515.56,
+   "start": 515.6,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_150.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_150.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.66
+   "dur": 2.54
   },
   {
    "id": "vki4lqtcboy0_s_151",
-   "start": 517.92,
+   "start": 517.84,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_151.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.18
+   "dur": 4.27
   },
   {
-   "id": "ov_stampbadge_521",
-   "start": 520.52,
+   "id": "ov_stampbadge_520",
+   "start": 520.04,
    "dur": 5.4,
    "kind": "premium",
    "overlay": true,
@@ -1903,109 +1855,108 @@
   },
   {
    "id": "vki4lqtcboy0_s_152",
-   "start": 521.8,
+   "start": 521.81,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_152.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.3
+   "dur": 3.18
   },
   {
    "id": "vki4lqtcboy0_s_153",
-   "start": 524.8,
+   "start": 524.69,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_153.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.28
+   "dur": 4.66
   },
   {
    "id": "vki4lqtcboy0_s_154",
-   "start": 528.78,
+   "start": 529.05,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_154.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.04
+   "dur": 4.65
   },
   {
    "id": "vki4lqtcboy0_s_155",
-   "start": 533.52,
+   "start": 533.4,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_155.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.44
+   "dur": 4.32
   },
   {
    "id": "vki4lqtcboy0_s_156",
-   "start": 537.66,
+   "start": 537.42,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_156.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.14
+   "dur": 3.28
   },
   {
    "id": "vki4lqtcboy0_s_157",
-   "start": 540.5,
+   "start": 540.4,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_157.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.58
+   "dur": 4.73
   },
   {
-   "id": "ov_mythtruth_541",
-   "start": 540.5,
+   "id": "ov_vsduel_540",
+   "start": 540.4,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
-   "comp": "MythTruth",
+   "comp": "VsDuel",
    "theme": "earth",
    "zone": "topLeft",
-   "myth": "Es el mismo postre que el del vasito del supermercado",
-   "truth": "No tiene la canela dibujada con los dedos, ni la posta de la cuchara, ni la pelea por lo quemadito"
+   "eyebrow": "Lo que no se puede envasar",
+   "title": "El vasito y la olla",
+   "left": {
+    "label": "El del vasito",
+    "sub": "plástico, sin alma",
+    "good": false
+   },
+   "right": {
+    "label": "El de la olla",
+    "sub": "canela con los dedos y lo quemadito",
+    "good": true
+   }
   },
   {
    "id": "vki4lqtcboy0_s_158",
-   "start": 544.78,
+   "start": 544.83,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_158.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_158.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.34
+   "dur": 4.28
   },
   {
    "id": "vki4lqtcboy0_s_159",
-   "start": 548.82,
+   "start": 548.81,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_159.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.82
+   "dur": 3.95
   },
   {
    "id": "vki4lqtcboy0_s_160",
-   "start": 552.34,
+   "start": 552.46,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_160.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.56
-  },
-  {
-   "id": "vki4lqtcboy0_s_161",
-   "start": 555.6,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_161.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.28
+   "dur": 4.16
   },
   {
    "id": "ov_chaptertitle_556",
@@ -2021,44 +1972,52 @@
    "sub": "una hora larga de paciencia de santa"
   },
   {
-   "id": "vki4lqtcboy0_s_162",
-   "start": 559.58,
+   "id": "vki4lqtcboy0_s_161",
+   "start": 556.32,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_162.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_161.png",
    "hue": "amber",
    "darken": 0,
    "dur": 3.68
   },
   {
+   "id": "vki4lqtcboy0_s_162",
+   "start": 559.7,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_162.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
    "id": "vki4lqtcboy0_s_163",
-   "start": 562.96,
+   "start": 562.88,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_163.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.54
+   "dur": 3.57
   },
   {
    "id": "vki4lqtcboy0_s_164",
-   "start": 566.2,
+   "start": 566.15,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_164.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 4.15
   },
   {
    "id": "vki4lqtcboy0_s_165",
-   "start": 570.3,
+   "start": 570,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_165.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.16
+   "dur": 4.27
   },
   {
    "id": "ov_bigstatreveal_573",
@@ -2078,213 +2037,199 @@
   },
   {
    "id": "vki4lqtcboy0_s_166",
-   "start": 574.16,
+   "start": 573.97,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_166.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 5.22
+   "dur": 5.51
   },
   {
    "id": "vki4lqtcboy0_s_167",
-   "start": 579.08,
+   "start": 579.18,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_167.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_167.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.74
+   "dur": 4.12
   },
   {
    "id": "vki4lqtcboy0_s_168",
-   "start": 582.52,
+   "start": 583,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_168.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.68
+   "dur": 2.93
   },
   {
    "id": "vki4lqtcboy0_s_169",
-   "start": 585.9,
+   "start": 585.63,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_169.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.5
-  },
-  {
-   "id": "ov_pullquote_586",
-   "start": 585.9,
-   "dur": 5.9,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "PullQuote",
-   "theme": "earth",
-   "zone": "topLeft",
-   "quote": "Ese dedo con dulce de leche caliente pegado en la olla es uno de mis recuerdos más felices."
+   "dur": 4.45
   },
   {
    "id": "vki4lqtcboy0_s_170",
-   "start": 590.1,
+   "start": 589.78,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_170.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_170.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.5
+   "dur": 2.68
   },
   {
    "id": "vki4lqtcboy0_s_171",
-   "start": 592.3,
+   "start": 592.16,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_171.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.27
+  },
+  {
+   "id": "ov_pullquote_592",
+   "start": 592.3,
+   "dur": 5.800000000000001,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Ese dedo con dulce de leche pegado en la olla es uno de mis recuerdos más felices de toda la vida."
   },
   {
    "id": "vki4lqtcboy0_s_172",
-   "start": 596.24,
+   "start": 596.13,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_172.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.2
+   "dur": 4.28
   },
   {
    "id": "vki4lqtcboy0_s_173",
-   "start": 600.14,
+   "start": 600.11,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_173.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.98
+   "dur": 2.99
   },
   {
    "id": "vki4lqtcboy0_s_174",
-   "start": 602.82,
+   "start": 602.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_174.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.36
-  },
-  {
-   "id": "ov_chaptertitle_603",
-   "start": 602.82,
-   "dur": 5,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "ChapterTitle",
-   "theme": "earth",
-   "zone": "topLeft",
-   "number": "8",
-   "title": "Dulce de membrillo",
-   "sub": "un día entero de trabajo, para todo el año"
+   "dur": 4.17
   },
   {
    "id": "vki4lqtcboy0_s_175",
-   "start": 606.88,
+   "start": 606.67,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_175.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4
+   "dur": 4.63
   },
   {
    "id": "vki4lqtcboy0_s_176",
-   "start": 610.58,
+   "start": 611,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_176.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.06
+   "dur": 3.57
   },
   {
    "id": "vki4lqtcboy0_s_177",
-   "start": 614.34,
+   "start": 614.27,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_177.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_177.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.3
+   "dur": 3.19
+  },
+  {
+   "id": "ov_flowsteps_614",
+   "start": 614.27,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Un día entero de trabajo",
+   "nodes": [
+    {
+     "label": "Pelar en ronda",
+     "sub": "kilos y kilos, en el patio"
+    },
+    {
+     "label": "Hervir",
+     "sub": "burbujea como lava"
+    },
+    {
+     "label": "Volcar",
+     "sub": "en cajones de madera"
+    },
+    {
+     "label": "Secar",
+     "sub": "en el estante alto"
+    }
+   ]
   },
   {
    "id": "vki4lqtcboy0_s_178",
-   "start": 617.34,
+   "start": 617.16,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_178.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_178.png",
    "hue": "amber",
    "darken": 0,
    "dur": 4.14
   },
   {
-   "id": "ov_numberedsteps_617",
-   "start": 617.34,
-   "dur": 5.9,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "NumberedSteps",
-   "theme": "earth",
-   "zone": "left",
-   "eyebrow": "El día del dulce",
-   "title": "Kilos y kilos, en ronda",
-   "steps": [
-    {
-     "title": "Pelar en ronda, en el patio",
-     "sub": "las manos manchadas de rojo"
-    },
-    {
-     "title": "Hervir en la olla más grande",
-     "sub": "burbujeando como lava, salpicaba"
-    },
-    {
-     "title": "Volcar en cajones de madera",
-     "sub": "secar en un estante alto"
-    }
-   ]
-  },
-  {
    "id": "vki4lqtcboy0_s_179",
-   "start": 621.18,
+   "start": 621,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_179.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.66
+   "dur": 3.62
   },
   {
    "id": "vki4lqtcboy0_s_180",
-   "start": 624.54,
+   "start": 624.32,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_180.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.18
+   "dur": 4.27
   },
   {
    "id": "vki4lqtcboy0_s_181",
-   "start": 628.42,
+   "start": 628.29,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_181.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.48
+   "dur": 4.44
   },
   {
    "id": "ov_lowerthirdid_630",
-   "start": 630.38,
+   "start": 630.12,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
@@ -2296,85 +2241,84 @@
   },
   {
    "id": "vki4lqtcboy0_s_182",
-   "start": 632.6,
+   "start": 632.43,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_182.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.74
+   "dur": 4.53
   },
   {
    "id": "vki4lqtcboy0_s_183",
-   "start": 637.04,
+   "start": 636.66,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_183.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.74
+   "dur": 3.46
   },
   {
    "id": "vki4lqtcboy0_s_184",
-   "start": 639.48,
+   "start": 639.82,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_184.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.62
+   "dur": 4.41
   },
   {
    "id": "vki4lqtcboy0_s_185",
-   "start": 643.8,
+   "start": 643.93,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_185.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.3
+   "dur": 3.21
   },
   {
    "id": "vki4lqtcboy0_s_186",
-   "start": 646.8,
+   "start": 646.84,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_186.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.46
+   "dur": 4.17
   },
   {
    "id": "vki4lqtcboy0_s_187",
-   "start": 650.96,
+   "start": 650.71,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_187.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_187.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.14
+   "dur": 4.78
   },
   {
    "id": "vki4lqtcboy0_s_188",
-   "start": 654.8,
+   "start": 655.19,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_188.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.16
+   "dur": 3.92
   },
   {
    "id": "vki4lqtcboy0_s_189",
-   "start": 658.66,
+   "start": 658.81,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_189.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.78
+   "dur": 3.35
   },
   {
    "id": "ov_stampbadge_660",
-   "start": 660.34,
+   "start": 660.32,
    "dur": 5.6000000000000005,
    "kind": "premium",
    "overlay": true,
@@ -2388,70 +2332,69 @@
   },
   {
    "id": "vki4lqtcboy0_s_190",
-   "start": 662.14,
+   "start": 661.86,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_190.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.98
+   "dur": 3.38
   },
   {
    "id": "vki4lqtcboy0_s_191",
-   "start": 664.82,
+   "start": 664.94,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_191.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_191.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.88
+   "dur": 2.56
   },
   {
    "id": "vki4lqtcboy0_s_192",
-   "start": 667.4,
+   "start": 667.2,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_192.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.32
+   "dur": 4.28
   },
   {
    "id": "vki4lqtcboy0_s_193",
-   "start": 671.42,
+   "start": 671.18,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_193.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.42
+   "dur": 2.48
   },
   {
    "id": "vki4lqtcboy0_s_194",
-   "start": 673.54,
+   "start": 673.36,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_194.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.2
+   "dur": 4.18
   },
   {
    "id": "vki4lqtcboy0_s_195",
-   "start": 677.44,
+   "start": 677.24,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_195.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.14
+   "dur": 4.22
   },
   {
    "id": "vki4lqtcboy0_s_196",
-   "start": 681.28,
+   "start": 681.16,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_196.png",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.32
+   "dur": 4.3
   },
   {
    "id": "ov_highlightsweep_681",
@@ -2469,165 +2412,176 @@
   },
   {
    "id": "vki4lqtcboy0_s_197",
-   "start": 685.3,
+   "start": 685.16,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_197.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.8
+   "dur": 3.78
   },
   {
    "id": "vki4lqtcboy0_s_198",
-   "start": 688.8,
+   "start": 688.64,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_198.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.52
   },
   {
    "id": "vki4lqtcboy0_s_199",
-   "start": 692.74,
+   "start": 692.86,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_199.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.34
+   "dur": 4.35
   },
   {
    "id": "vki4lqtcboy0_s_200",
-   "start": 696.78,
+   "start": 696.91,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_200.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.3
+   "dur": 4.15
   },
   {
    "id": "vki4lqtcboy0_s_201",
-   "start": 700.78,
+   "start": 700.76,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_201.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.46
+   "dur": 4.51
   },
   {
-   "id": "ov_checklistreveal_701",
-   "start": 700.78,
+   "id": "ov_numberedsteps_701",
+   "start": 700.76,
    "dur": 5.9,
    "kind": "premium",
    "overlay": true,
-   "comp": "ChecklistReveal",
+   "comp": "NumberedSteps",
    "theme": "earth",
    "zone": "topLeft",
-   "title": "Una tarde entera de alegría",
-   "stamp": "3",
-   "items": [
-    "Un poco de harina",
-    "Un huevo",
-    "La fruta o la verdura picada",
-    "Grasa bien caliente",
-    "Azúcar por encima"
+   "eyebrow": "Con casi nada",
+   "title": "Buñuelos de los días de lluvia",
+   "steps": [
+    {
+     "title": "Harina y un huevo",
+     "sub": "nada más"
+    },
+    {
+     "title": "Fruta o verdura",
+     "sub": "bien picada"
+    },
+    {
+     "title": "Grasa bien caliente",
+     "sub": "se inflan solos, como magia"
+    },
+    {
+     "title": "Azúcar encima",
+     "sub": "y derecho a la mesa"
+    }
    ]
   },
   {
    "id": "vki4lqtcboy0_s_202",
-   "start": 704.94,
+   "start": 704.97,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_202.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 5.4
+   "dur": 5.21
   },
   {
    "id": "vki4lqtcboy0_s_203",
-   "start": 710.04,
+   "start": 709.88,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_203.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.66
+   "dur": 4.8
   },
   {
    "id": "vki4lqtcboy0_s_204",
-   "start": 714.4,
+   "start": 714.38,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_204.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.18
   },
   {
    "id": "vki4lqtcboy0_s_205",
-   "start": 718.34,
+   "start": 718.26,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_205.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.2
+   "dur": 4.25
   },
   {
    "id": "vki4lqtcboy0_s_206",
-   "start": 722.24,
+   "start": 722.21,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_206.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.6
+   "dur": 3.05
   },
   {
    "id": "vki4lqtcboy0_s_207",
-   "start": 724.54,
+   "start": 724.96,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_207.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.38
+   "dur": 3.86
   },
   {
    "id": "vki4lqtcboy0_s_208",
-   "start": 728.62,
+   "start": 728.52,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_208.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.68
+   "dur": 3.66
   },
   {
    "id": "vki4lqtcboy0_s_209",
-   "start": 732,
+   "start": 731.88,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_209.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.1
+   "dur": 5.18
   },
   {
    "id": "vki4lqtcboy0_s_210",
-   "start": 736.8,
+   "start": 736.76,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_210.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.28
+   "dur": 4.27
   },
   {
    "id": "vki4lqtcboy0_s_211",
-   "start": 740.78,
+   "start": 740.73,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_211.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.22
+   "dur": 3.88
   },
   {
    "id": "ov_pullquote_742",
@@ -2642,53 +2596,53 @@
   },
   {
    "id": "vki4lqtcboy0_s_212",
-   "start": 744.7,
+   "start": 744.31,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_212.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.8
+   "dur": 4.79
   },
   {
    "id": "vki4lqtcboy0_s_213",
-   "start": 749.2,
+   "start": 748.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_213.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.42
+   "dur": 3.86
   },
   {
    "id": "vki4lqtcboy0_s_214",
-   "start": 752.32,
+   "start": 752.36,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_214.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.6
+   "dur": 4.44
   },
   {
    "id": "vki4lqtcboy0_s_215",
-   "start": 756.62,
+   "start": 756.5,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_215.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.2
+   "dur": 4.43
   },
   {
    "id": "vki4lqtcboy0_s_216",
-   "start": 760.52,
+   "start": 760.63,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_216.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.36
+   "dur": 2.11
   },
   {
    "id": "vki4lqtcboy0_s_217",
-   "start": 762.58,
+   "start": 762.44,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_217.mp4",
    "noSplit": true,
@@ -2726,41 +2680,40 @@
   },
   {
    "id": "vki4lqtcboy0_s_218",
-   "start": 766.46,
+   "start": 766.32,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_218.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.36
+   "dur": 3.42
   },
   {
    "id": "vki4lqtcboy0_s_219",
-   "start": 769.52,
+   "start": 769.44,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_219.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 4.5
   },
   {
    "id": "vki4lqtcboy0_s_220",
-   "start": 773.62,
+   "start": 773.64,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_220.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.4
+   "dur": 4.3
   },
   {
    "id": "vki4lqtcboy0_s_221",
-   "start": 777.72,
+   "start": 777.64,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_221.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_221.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.82
+   "dur": 4.22
   },
   {
    "id": "ov_highlightsweep_778",
@@ -2778,58 +2731,58 @@
   },
   {
    "id": "vki4lqtcboy0_s_222",
-   "start": 781.24,
+   "start": 781.56,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_222.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.24
+   "dur": 1.74
   },
   {
    "id": "vki4lqtcboy0_s_223",
-   "start": 783.18,
+   "start": 783,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_223.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3
+   "dur": 3.1
   },
   {
    "id": "vki4lqtcboy0_s_224",
-   "start": 785.88,
+   "start": 785.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_224.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.26
+   "dur": 3.1
   },
   {
    "id": "vki4lqtcboy0_s_225",
-   "start": 788.84,
+   "start": 788.6,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_225.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.84
+   "dur": 4.9
   },
   {
    "id": "vki4lqtcboy0_s_226",
-   "start": 793.38,
+   "start": 793.2,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_226.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.78
+   "dur": 3.9
   },
   {
    "id": "vki4lqtcboy0_s_227",
-   "start": 796.86,
+   "start": 796.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_227.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.44
+   "dur": 3.42
   },
   {
    "id": "ov_chaptertitle_797",
@@ -2846,189 +2799,186 @@
   },
   {
    "id": "vki4lqtcboy0_s_228",
-   "start": 800,
+   "start": 799.92,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_228.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.32
+   "dur": 4.2
   },
   {
    "id": "vki4lqtcboy0_s_229",
-   "start": 804.02,
+   "start": 803.82,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_229.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.74
+   "dur": 4.32
   },
   {
    "id": "vki4lqtcboy0_s_230",
-   "start": 807.46,
+   "start": 807.84,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_230.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 3.88
   },
   {
    "id": "vki4lqtcboy0_s_231",
-   "start": 811.4,
+   "start": 811.42,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_231.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.66
+   "dur": 4.52
   },
   {
    "id": "vki4lqtcboy0_s_232",
-   "start": 815.76,
+   "start": 815.64,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_232.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.32
+   "dur": 4.53
   },
   {
    "id": "vki4lqtcboy0_s_233",
-   "start": 819.78,
+   "start": 819.87,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_233.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_233.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 4.11
   },
   {
    "id": "vki4lqtcboy0_s_234",
-   "start": 823.74,
+   "start": 823.68,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_234.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.58
+   "dur": 4.97
   },
   {
    "id": "vki4lqtcboy0_s_235",
-   "start": 828.02,
+   "start": 828.35,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_235.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.38
+   "dur": 4.15
   },
   {
    "id": "vki4lqtcboy0_s_236",
-   "start": 832.1,
+   "start": 832.2,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_236.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.34
-  },
-  {
-   "id": "vki4lqtcboy0_s_237",
-   "start": 836.14,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_fx_237.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.26
-  },
-  {
-   "id": "vki4lqtcboy0_s_238",
-   "start": 840.1,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_238.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.1
-  },
-  {
-   "id": "vki4lqtcboy0_s_239",
-   "start": 843.9,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_239.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 3.02
-  },
-  {
-   "id": "vki4lqtcboy0_s_240",
-   "start": 846.62,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_240.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.74
-  },
-  {
-   "id": "vki4lqtcboy0_s_241",
-   "start": 851.06,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_241.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 2.62
-  },
-  {
-   "id": "vki4lqtcboy0_s_242",
-   "start": 853.38,
-   "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_242.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.68
-  },
-  {
-   "id": "vki4lqtcboy0_s_243",
-   "start": 857.76,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_243.png",
    "hue": "amber",
    "darken": 0,
    "dur": 4.22
   },
   {
-   "id": "vki4lqtcboy0_s_244",
-   "start": 861.68,
+   "id": "vki4lqtcboy0_s_237",
+   "start": 836.12,
    "kind": "raw",
-   "src": "img/vki4lqtcboy0_fx_244.png",
+   "src": "img/vki4lqtcboy0_fx_237.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.05
+  },
+  {
+   "id": "vki4lqtcboy0_s_238",
+   "start": 839.87,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_238.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.31
+  },
+  {
+   "id": "vki4lqtcboy0_s_239",
+   "start": 843.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_239.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "vki4lqtcboy0_s_240",
+   "start": 846.48,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_240.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "vki4lqtcboy0_s_241",
+   "start": 851.12,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_241.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_242",
+   "start": 853.28,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_242.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 4.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_243",
+   "start": 857.72,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_243.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.23
+  },
+  {
+   "id": "vki4lqtcboy0_s_244",
+   "start": 861.65,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_fx_244.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.35
   },
   {
    "id": "vki4lqtcboy0_s_245",
-   "start": 865.64,
+   "start": 865.7,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_245.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.16
+   "dur": 2.88
   },
   {
    "id": "vki4lqtcboy0_s_246",
-   "start": 868.5,
+   "start": 868.28,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_246.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.04
+   "dur": 4.22
   },
   {
    "id": "vki4lqtcboy0_s_247",
-   "start": 872.24,
+   "start": 872.2,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_247.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.54
+   "dur": 4.41
   },
   {
    "id": "ov_beforeafter_872",
@@ -3048,134 +2998,130 @@
   },
   {
    "id": "vki4lqtcboy0_s_248",
-   "start": 876.48,
+   "start": 876.31,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_248.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 1.78
+   "dur": 1.95
   },
   {
    "id": "vki4lqtcboy0_s_249",
    "start": 877.96,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_249.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_249.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.3
+   "dur": 4.04
   },
   {
    "id": "vki4lqtcboy0_s_250",
-   "start": 881.96,
+   "start": 881.7,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_250.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.88
+   "dur": 4.16
   },
   {
    "id": "vki4lqtcboy0_s_251",
-   "start": 885.54,
+   "start": 885.56,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_251.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.42
+   "dur": 3.13
   },
   {
    "id": "vki4lqtcboy0_s_252",
-   "start": 888.66,
+   "start": 888.39,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_252.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.41
+  },
+  {
+   "id": "vki4lqtcboy0_s_253",
+   "start": 890.5,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_253.png",
    "hue": "amber",
    "darken": 0,
    "dur": 2.08
   },
   {
-   "id": "vki4lqtcboy0_s_253",
-   "start": 890.44,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_253.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 1.84
-  },
-  {
    "id": "vki4lqtcboy0_s_254",
-   "start": 891.98,
+   "start": 892.28,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_254.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 4.01
   },
   {
    "id": "vki4lqtcboy0_s_255",
-   "start": 895.92,
+   "start": 895.99,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_255.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.24
+   "dur": 3.88
   },
   {
    "id": "vki4lqtcboy0_s_256",
-   "start": 899.86,
+   "start": 899.57,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_256.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.14
+   "dur": 3.21
   },
   {
    "id": "vki4lqtcboy0_s_257",
-   "start": 902.7,
+   "start": 902.48,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_257.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.84
+   "dur": 3.1
   },
   {
    "id": "vki4lqtcboy0_s_258",
-   "start": 905.24,
+   "start": 905.28,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_258.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.92
+   "dur": 3.78
   },
   {
    "id": "vki4lqtcboy0_s_259",
-   "start": 908.86,
+   "start": 908.76,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_259.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.92
+   "dur": 2.83
   },
   {
    "id": "vki4lqtcboy0_s_260",
-   "start": 911.48,
+   "start": 911.29,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_260b.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.36
+   "dur": 3.53
   },
   {
    "id": "vki4lqtcboy0_s_261",
-   "start": 914.54,
+   "start": 914.52,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_261.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_261.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.44
+   "dur": 4.18
   },
   {
    "id": "ov_highlightsweep_915",
@@ -3193,13 +3139,13 @@
   },
   {
    "id": "vki4lqtcboy0_s_262",
-   "start": 918.68,
+   "start": 918.4,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_262.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.5
+   "dur": 4.78
   },
   {
    "id": "vki4lqtcboy0_s_263",
@@ -3209,74 +3155,74 @@
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.52
+   "dur": 3.38
   },
   {
    "id": "vki4lqtcboy0_s_264",
-   "start": 926.1,
+   "start": 925.96,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_264.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.7
+   "dur": 3.73
   },
   {
    "id": "vki4lqtcboy0_s_265",
-   "start": 929.5,
+   "start": 929.39,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_265.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.04
+   "dur": 3.11
   },
   {
    "id": "vki4lqtcboy0_s_266",
-   "start": 932.24,
+   "start": 932.2,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_266.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.7
+   "dur": 4.86
   },
   {
    "id": "vki4lqtcboy0_s_267",
-   "start": 936.64,
+   "start": 936.76,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_267.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.56
+   "dur": 3.13
   },
   {
    "id": "vki4lqtcboy0_s_268",
-   "start": 939.9,
+   "start": 939.59,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_268.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.18
+   "dur": 4.29
   },
   {
    "id": "vki4lqtcboy0_s_269",
-   "start": 943.78,
+   "start": 943.58,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_269.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.22
+   "dur": 4.28
   },
   {
    "id": "vki4lqtcboy0_s_270",
-   "start": 947.7,
+   "start": 947.56,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_270.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 5.44
+   "dur": 5.46
   },
   {
    "id": "ov_highlightsweep_949",
@@ -3294,51 +3240,51 @@
   },
   {
    "id": "vki4lqtcboy0_s_271",
-   "start": 952.84,
+   "start": 952.72,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_271.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.28
+   "dur": 4.18
   },
   {
    "id": "vki4lqtcboy0_s_272",
-   "start": 956.82,
+   "start": 956.6,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_272.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.5
+   "dur": 2.47
   },
   {
    "id": "vki4lqtcboy0_s_273",
-   "start": 959.02,
+   "start": 958.77,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_273.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.36
+   "dur": 3.49
   },
   {
    "id": "vki4lqtcboy0_s_274",
-   "start": 962.08,
+   "start": 961.96,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_274.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.88
+   "dur": 2.86
   },
   {
    "id": "vki4lqtcboy0_s_275",
-   "start": 964.66,
+   "start": 964.52,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_275.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.16
+   "dur": 4.27
   },
   {
    "id": "ov_chaptertitle_965",
@@ -3355,41 +3301,40 @@
   },
   {
    "id": "vki4lqtcboy0_s_276",
-   "start": 968.52,
+   "start": 968.49,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_276.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.1
+   "dur": 4.55
   },
   {
    "id": "vki4lqtcboy0_s_277",
-   "start": 972.32,
+   "start": 972.74,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_277.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.3
+   "dur": 3.64
   },
   {
    "id": "vki4lqtcboy0_s_278",
-   "start": 976.32,
+   "start": 976.08,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_278.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_278.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.08
+   "dur": 2.22
   },
   {
    "id": "vki4lqtcboy0_s_279",
-   "start": 978.1,
+   "start": 978,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_279.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.46
+   "dur": 2.42
   },
   {
    "id": "ov_numberedsteps_978",
@@ -3423,7 +3368,7 @@
   },
   {
    "id": "vki4lqtcboy0_s_280",
-   "start": 980.26,
+   "start": 980.12,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_280.mp4",
    "noSplit": true,
@@ -3433,127 +3378,116 @@
   },
   {
    "id": "vki4lqtcboy0_s_281",
-   "start": 984.66,
+   "start": 984.52,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_281.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.28
+   "dur": 4.27
   },
   {
    "id": "vki4lqtcboy0_s_282",
-   "start": 988.64,
+   "start": 988.49,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_282.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.26
+   "dur": 4.4
   },
   {
    "id": "vki4lqtcboy0_s_283",
-   "start": 992.6,
+   "start": 992.59,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_283.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 4.46
+   "dur": 4.51
   },
   {
    "id": "vki4lqtcboy0_s_284",
-   "start": 996.76,
+   "start": 996.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_284.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.6
+   "dur": 3.84
   },
   {
    "id": "vki4lqtcboy0_s_285",
-   "start": 1000.06,
+   "start": 1000.34,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_285.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 5.12
+   "dur": 4.64
   },
   {
    "id": "vki4lqtcboy0_s_286",
-   "start": 1004.88,
+   "start": 1004.68,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_286.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.06
-  },
-  {
-   "id": "vki4lqtcboy0_s_287",
-   "start": 1008.64,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_fx_287.png",
+   "src": "img/vki4lqtcboy0_s_286.png",
    "hue": "amber",
    "darken": 0,
    "dur": 4.14
   },
   {
+   "id": "vki4lqtcboy0_s_287",
+   "start": 1008.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_fx_287.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
    "id": "vki4lqtcboy0_s_288",
-   "start": 1012.48,
+   "start": 1012.32,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_288.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 2.52
+   "dur": 2.66
   },
   {
    "id": "vki4lqtcboy0_s_289",
-   "start": 1014.7,
+   "start": 1014.68,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_289.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.32
+   "dur": 4.3
   },
   {
    "id": "vki4lqtcboy0_s_290",
-   "start": 1018.72,
+   "start": 1018.68,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_290.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.92
+   "dur": 3.57
   },
   {
    "id": "vki4lqtcboy0_s_291",
-   "start": 1022.34,
+   "start": 1021.95,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_291.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.04
+   "dur": 4.03
   },
   {
    "id": "vki4lqtcboy0_s_292",
-   "start": 1026.08,
+   "start": 1025.68,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_292.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.58
-  },
-  {
-   "id": "vki4lqtcboy0_s_293",
-   "start": 1028.36,
-   "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_293.mp4",
-   "noSplit": true,
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.66
+   "dur": 3.84
   },
   {
    "id": "ov_pullquote_1028",
@@ -3567,26 +3501,36 @@
    "quote": "La comida se hacía juntos, hablando, riéndose. El plato ya te alimentaba antes de comerlo."
   },
   {
+   "id": "vki4lqtcboy0_s_293",
+   "start": 1029.22,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_293.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
    "id": "vki4lqtcboy0_s_294",
-   "start": 1032.72,
+   "start": 1032.68,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_294.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.14
+   "dur": 4.34
   },
   {
    "id": "vki4lqtcboy0_s_295",
-   "start": 1036.56,
+   "start": 1036.72,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_295.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.02
+   "dur": 2.66
   },
   {
    "id": "vki4lqtcboy0_s_296",
-   "start": 1039.28,
+   "start": 1039.08,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_296.png",
    "hue": "amber",
@@ -3595,32 +3539,21 @@
   },
   {
    "id": "vki4lqtcboy0_s_297",
-   "start": 1042.32,
+   "start": 1042.12,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_fx_297.png",
-   "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.34
+   "dur": 3.22
   },
   {
    "id": "vki4lqtcboy0_s_298",
-   "start": 1045.36,
+   "start": 1045.04,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_298.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_298.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.56
-  },
-  {
-   "id": "vki4lqtcboy0_s_299",
-   "start": 1047.62,
-   "kind": "raw",
-   "src": "img/vki4lqtcboy0_s_299.png",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4.1
+   "dur": 2.96
   },
   {
    "id": "ov_chaptertitle_1048",
@@ -3636,51 +3569,59 @@
    "sub": "cada repulgue, una firma"
   },
   {
+   "id": "vki4lqtcboy0_s_299",
+   "start": 1047.7,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_299.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
    "id": "vki4lqtcboy0_s_300",
-   "start": 1051.42,
+   "start": 1051.32,
    "kind": "raw",
    "src": "broll/vki4lqtcboy0_s_300.mp4",
    "noSplit": true,
    "hue": "amber",
    "darken": 0,
-   "dur": 3.32
+   "dur": 3.54
   },
   {
    "id": "vki4lqtcboy0_s_301",
-   "start": 1054.44,
+   "start": 1054.56,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_301.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.62
+   "dur": 4.6
   },
   {
    "id": "vki4lqtcboy0_s_302",
-   "start": 1058.76,
+   "start": 1058.86,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_302.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_302.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.7
+   "dur": 4.8
   },
   {
    "id": "vki4lqtcboy0_s_303",
-   "start": 1063.16,
+   "start": 1063.36,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_303.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.48
+   "dur": 4.12
   },
   {
    "id": "vki4lqtcboy0_s_304",
-   "start": 1067.34,
+   "start": 1067.18,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_304.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.5
+   "dur": 4.6
   },
   {
    "id": "ov_highlightsweep_1069",
@@ -3698,80 +3639,79 @@
   },
   {
    "id": "vki4lqtcboy0_s_305",
-   "start": 1071.54,
+   "start": 1071.48,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_305.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.22
+   "dur": 3.19
   },
   {
    "id": "vki4lqtcboy0_s_306",
-   "start": 1074.46,
+   "start": 1074.37,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_306.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.72
+   "dur": 4.73
   },
   {
    "id": "vki4lqtcboy0_s_307",
-   "start": 1078.88,
+   "start": 1078.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_307.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.34
+   "dur": 3.02
   },
   {
    "id": "vki4lqtcboy0_s_308",
-   "start": 1081.92,
+   "start": 1081.52,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_308.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.44
+   "dur": 3.14
   },
   {
    "id": "vki4lqtcboy0_s_309",
-   "start": 1084.06,
+   "start": 1084.36,
    "kind": "raw",
-   "src": "broll/vki4lqtcboy0_s_309.mp4",
-   "noSplit": true,
+   "src": "img/vki4lqtcboy0_s_309.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.44
+   "dur": 3.16
   },
   {
    "id": "vki4lqtcboy0_s_310",
-   "start": 1087.2,
+   "start": 1087.22,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_310.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.28
+   "dur": 3.96
   },
   {
    "id": "vki4lqtcboy0_s_311",
-   "start": 1091.18,
+   "start": 1090.88,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_311.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.48
+   "dur": 4.82
   },
   {
    "id": "vki4lqtcboy0_s_312",
-   "start": 1095.36,
+   "start": 1095.4,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_312.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.82
+   "dur": 3.7
   },
   {
    "id": "vki4lqtcboy0_s_313",
-   "start": 1098.88,
+   "start": 1098.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_313.png",
    "hue": "amber",
@@ -3791,7 +3731,7 @@
   },
   {
    "id": "vki4lqtcboy0_s_314",
-   "start": 1101.88,
+   "start": 1101.8,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_314.png",
    "hue": "amber",
@@ -3800,21 +3740,3846 @@
   },
   {
    "id": "vki4lqtcboy0_s_315",
-   "start": 1104.56,
+   "start": 1104.48,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_315.png",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.5
+   "dur": 4.25
   },
   {
    "id": "vki4lqtcboy0_s_316",
-   "start": 1108.76,
+   "start": 1108.43,
    "kind": "raw",
    "src": "img/vki4lqtcboy0_s_316.png",
    "hue": "amber",
    "darken": 0,
+   "dur": 2.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_317",
+   "start": 1110.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_317.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_318",
+   "start": 1113.92,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_318.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_319",
+   "start": 1117.12,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_319.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_320",
+   "start": 1120.44,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_320.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_321",
+   "start": 1123.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_321.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.35
+  },
+  {
+   "id": "vki4lqtcboy0_s_322",
+   "start": 1126.61,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_322.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "ov_layerstack_1128",
+   "start": 1128.04,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Todo lo que iba en la carbonada",
+   "layers": [
+    {
+     "label": "Carne"
+    },
+    {
+     "label": "Zapallo y batata"
+    },
+    {
+     "label": "Choclo"
+    },
+    {
+     "label": "Trozos de durazno"
+    },
+    {
+     "label": "O de pera, adentro del guiso"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_323",
+   "start": 1129.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_323.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_324",
+   "start": 1132.36,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_324.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_325",
+   "start": 1135.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_325.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_326",
+   "start": 1138.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_326.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "vki4lqtcboy0_s_327",
+   "start": 1141.31,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_327.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.57
+  },
+  {
+   "id": "ov_stampbadge_1142",
+   "start": 1142.11,
+   "dur": 5.6000000000000005,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "topLeft",
+   "text": "EL ZAPALLO ERA LA OLLA",
+   "sub": "entero, ahuecado, humeante en el centro de la mesa",
+   "x": 0.5,
+   "y": 0.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_328",
+   "start": 1144.58,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_328.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_329",
+   "start": 1147.71,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_329.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "vki4lqtcboy0_s_330",
+   "start": 1151.19,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_330.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_331",
+   "start": 1154.39,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_331.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "vki4lqtcboy0_s_332",
+   "start": 1157.2,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_332.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
    "dur": 3.2
+  },
+  {
+   "id": "ov_chaptertitle_1160",
+   "start": 1159.96,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XVII",
+   "title": "Un alto para ser honesta",
+   "sub": "no quiero venderte un cuento perfecto"
+  },
+  {
+   "id": "vki4lqtcboy0_s_333",
+   "start": 1160.1,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_333.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "vki4lqtcboy0_s_334",
+   "start": 1162.7,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_334.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_335",
+   "start": 1165.44,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_335.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "vki4lqtcboy0_s_336",
+   "start": 1168.29,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_336.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.93
+  },
+  {
+   "id": "vki4lqtcboy0_s_337",
+   "start": 1170.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_337.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "vki4lqtcboy0_s_338",
+   "start": 1173.69,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_338.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "ov_mythtruth_1174",
+   "start": 1173.69,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Todo era lindo en esa cocina",
+   "truth": "Esas horas las ponía casi siempre una mujer sin descanso, muchas veces cansada"
+  },
+  {
+   "id": "vki4lqtcboy0_s_339",
+   "start": 1176.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_339.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_340",
+   "start": 1180.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_340.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_341",
+   "start": 1183.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_341.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.35
+  },
+  {
+   "id": "vki4lqtcboy0_s_342",
+   "start": 1186.29,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_342.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_343",
+   "start": 1189.31,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_343.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "vki4lqtcboy0_s_344",
+   "start": 1192.12,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_344.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.37
+  },
+  {
+   "id": "vki4lqtcboy0_s_345",
+   "start": 1195.19,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_345.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "vki4lqtcboy0_s_346",
+   "start": 1197.84,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_346.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "vki4lqtcboy0_s_347",
+   "start": 1200.32,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_347.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "ov_pullquote_1202",
+   "start": 1201.76,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Cada plato valía porque adentro llevaba trabajo y llevaba amor, y las dos cosas se sienten en la boca."
+  },
+  {
+   "id": "vki4lqtcboy0_s_348",
+   "start": 1203.31,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_348.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_349",
+   "start": 1206.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_349.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_350",
+   "start": 1209.46,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_350.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.77
+  },
+  {
+   "id": "vki4lqtcboy0_s_351",
+   "start": 1211.93,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_351.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_352",
+   "start": 1215.03,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_352.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_chaptertitle_1215",
+   "start": 1215.32,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XVIII",
+   "title": "Los chicharrones",
+   "sub": "el día que se carneaba el chancho"
+  },
+  {
+   "id": "vki4lqtcboy0_s_353",
+   "start": 1218.11,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_353.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.23
+  },
+  {
+   "id": "vki4lqtcboy0_s_354",
+   "start": 1221.04,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_354.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "vki4lqtcboy0_s_355",
+   "start": 1224.19,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_355.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "vki4lqtcboy0_s_356",
+   "start": 1227.1,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_356.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_357",
+   "start": 1230.54,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_357.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_358",
+   "start": 1233.67,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_358.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.55
+  },
+  {
+   "id": "vki4lqtcboy0_s_359",
+   "start": 1236.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_359.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_360",
+   "start": 1240.11,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_360.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_361",
+   "start": 1243.13,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_361.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "ov_numberedsteps_1243",
+   "start": 1243.13,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Así se hacía",
+   "title": "La grasa y los chicharrones",
+   "steps": [
+    {
+     "title": "Fuego lento",
+     "sub": "en un fuentón de hierro enorme"
+    },
+    {
+     "title": "Horas y horas",
+     "sub": "revolviendo con una vara larga"
+    },
+    {
+     "title": "La grasa blanca",
+     "sub": "a las latas, para cocinar todo el año"
+    },
+    {
+     "title": "Los chicharrones",
+     "sub": "los pedacitos dorados que quedan flotando"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_362",
+   "start": 1246.11,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_362.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "vki4lqtcboy0_s_363",
+   "start": 1248.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_363.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "vki4lqtcboy0_s_364",
+   "start": 1252.28,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_364.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "vki4lqtcboy0_s_365",
+   "start": 1255,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_365.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "vki4lqtcboy0_s_366",
+   "start": 1258.02,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_366.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_367",
+   "start": 1261.19,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_367.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.07
+  },
+  {
+   "id": "vki4lqtcboy0_s_368",
+   "start": 1263.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_368.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_369",
+   "start": 1266.9,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_369.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "ov_pullquote_1267",
+   "start": 1266.9,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Los chicos rondábamos como perritos esperando que nos dieran uno recién hecho."
+  },
+  {
+   "id": "vki4lqtcboy0_s_370",
+   "start": 1270.16,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_370.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.83
+  },
+  {
+   "id": "vki4lqtcboy0_s_371",
+   "start": 1272.69,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_371.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_372",
+   "start": 1275.87,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_372.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.37
+  },
+  {
+   "id": "vki4lqtcboy0_s_373",
+   "start": 1278.94,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_373.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_374",
+   "start": 1282,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_374.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "ov_vsduel_1284",
+   "start": 1284.32,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Lo que nos dijeron de la grasa",
+   "title": "La lata y el bidón",
+   "left": {
+    "label": "La grasa de casa",
+    "sub": "derretida a fuego lento, guardada en latas",
+    "good": true
+   },
+   "right": {
+    "label": "El aceite del bidón",
+    "sub": "viene de una fábrica y nadie sabe de qué",
+    "good": false
+   }
+  },
+  {
+   "id": "vki4lqtcboy0_s_375",
+   "start": 1284.72,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_375.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_376",
+   "start": 1287.91,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_376.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_377",
+   "start": 1291.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_377.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.35
+  },
+  {
+   "id": "vki4lqtcboy0_s_378",
+   "start": 1294.13,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_378.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_379",
+   "start": 1296.87,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_379.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "ov_chaptertitle_1299",
+   "start": 1298.97,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XIX",
+   "title": "La leche cuajada",
+   "sub": "el quesillo casero, la cuajada fresca"
+  },
+  {
+   "id": "vki4lqtcboy0_s_380",
+   "start": 1299.41,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_380.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "vki4lqtcboy0_s_381",
+   "start": 1302.22,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_381.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "vki4lqtcboy0_s_382",
+   "start": 1304.95,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_382.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.35
+  },
+  {
+   "id": "vki4lqtcboy0_s_383",
+   "start": 1308,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_383.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_384",
+   "start": 1311.16,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_384.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "vki4lqtcboy0_s_385",
+   "start": 1313.76,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_385.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "ov_flowsteps_1314",
+   "start": 1314.43,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "De la leche que sobraba",
+   "nodes": [
+    {
+     "label": "Leche de más",
+     "sub": "no se tiraba nunca"
+    },
+    {
+     "label": "Se dejaba cuajar",
+     "sub": "sola, sin apuro"
+    },
+    {
+     "label": "Queso fresco y blando",
+     "sub": "tapado con un repasador"
+    },
+    {
+     "label": "Con azúcar o miel",
+     "sub": "o con sal, en el desayuno"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_386",
+   "start": 1316.61,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_386.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "vki4lqtcboy0_s_387",
+   "start": 1319.87,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_387.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_388",
+   "start": 1322.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_388.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_389",
+   "start": 1326.12,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_389.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "vki4lqtcboy0_s_390",
+   "start": 1329.27,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_390.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.77
+  },
+  {
+   "id": "vki4lqtcboy0_s_391",
+   "start": 1332.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_391.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_392",
+   "start": 1335.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_392.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_393",
+   "start": 1339.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_393.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_394",
+   "start": 1342.3,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_394.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "ov_chaptertitle_1344",
+   "start": 1343.53,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XX",
+   "title": "El flan casero",
+   "sub": "con caramelo quemado a mano"
+  },
+  {
+   "id": "vki4lqtcboy0_s_395",
+   "start": 1345.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_395.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "vki4lqtcboy0_s_396",
+   "start": 1348.35,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_396.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_397",
+   "start": 1351.55,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_397.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.17
+  },
+  {
+   "id": "vki4lqtcboy0_s_398",
+   "start": 1354.42,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_398.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.35
+  },
+  {
+   "id": "vki4lqtcboy0_s_399",
+   "start": 1357.47,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_399.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "ov_numberedsteps_1360",
+   "start": 1359.61,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El flan de mi madre",
+   "title": "Así se hacía",
+   "steps": [
+    {
+     "title": "El caramelo en la flanera",
+     "sub": "sobre el fuego, moviéndola en el aire"
+    },
+    {
+     "title": "Ámbar oscuro",
+     "sub": "hasta que el azúcar se vuelve líquido"
+    },
+    {
+     "title": "Huevo y leche",
+     "sub": "y al horno, a baño María"
+    },
+    {
+     "title": "Un golpe seco",
+     "sub": "para desmoldarlo sobre el plato"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_400",
+   "start": 1360.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_400.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.33
+  },
+  {
+   "id": "vki4lqtcboy0_s_401",
+   "start": 1363.63,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_401.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.15
+  },
+  {
+   "id": "vki4lqtcboy0_s_402",
+   "start": 1366.48,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_402.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_403",
+   "start": 1369.57,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_403.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.85
+  },
+  {
+   "id": "vki4lqtcboy0_s_404",
+   "start": 1372.12,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_404.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_405",
+   "start": 1375.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_405.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_406",
+   "start": 1378.18,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_406.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_407",
+   "start": 1380.86,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_407.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "vki4lqtcboy0_s_408",
+   "start": 1384.01,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_408.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_409",
+   "start": 1387.21,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_409.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "vki4lqtcboy0_s_410",
+   "start": 1390.12,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_410.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_411",
+   "start": 1393.28,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_411.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "ov_vsduel_1395",
+   "start": 1394.64,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Lo que no viene en el sobre",
+   "title": "El flan de antes y el de hoy",
+   "left": {
+    "label": "El de la flanera",
+    "sub": "el olor a azúcar quemado y los aplausos",
+    "good": true
+   },
+   "right": {
+    "label": "El del sobre",
+    "sub": "tiembla igual, se ve parecido, y nada más",
+    "good": false
+   }
+  },
+  {
+   "id": "vki4lqtcboy0_s_412",
+   "start": 1396.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_412.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_413",
+   "start": 1399.56,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_413.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_414",
+   "start": 1402.64,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_414.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.77
+  },
+  {
+   "id": "vki4lqtcboy0_s_415",
+   "start": 1405.11,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_415.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "vki4lqtcboy0_s_416",
+   "start": 1408.07,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_416.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.37
+  },
+  {
+   "id": "ov_chaptertitle_1409",
+   "start": 1409.1,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XXI",
+   "title": "Las torrejas",
+   "sub": "o torrijas: otra vez el pan de ayer"
+  },
+  {
+   "id": "vki4lqtcboy0_s_417",
+   "start": 1411.14,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_417.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76
+  },
+  {
+   "id": "vki4lqtcboy0_s_418",
+   "start": 1413.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_418.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_419",
+   "start": 1416.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_419.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_420",
+   "start": 1419.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_420.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "vki4lqtcboy0_s_421",
+   "start": 1422.39,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_421.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "ov_numberedsteps_1423",
+   "start": 1423.24,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Con el pan duro",
+   "title": "Las torrejas",
+   "steps": [
+    {
+     "title": "Pan de ayer",
+     "sub": "el que ya nadie quería"
+    },
+    {
+     "title": "Remojado en leche",
+     "sub": "con azúcar y canela"
+    },
+    {
+     "title": "Por huevo y a la sartén",
+     "sub": "a freír"
+    },
+    {
+     "title": "Más azúcar por encima",
+     "sub": "y a la mesa"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_422",
+   "start": 1425.21,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_422.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "vki4lqtcboy0_s_423",
+   "start": 1428.2,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_423.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "vki4lqtcboy0_s_424",
+   "start": 1431.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_424.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_425",
+   "start": 1434.2,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_425.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "vki4lqtcboy0_s_426",
+   "start": 1436.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_426.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "vki4lqtcboy0_s_427",
+   "start": 1439.5,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_427.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_428",
+   "start": 1442.68,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_428.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "ov_chaptertitle_1445",
+   "start": 1444.66,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XXII",
+   "title": "El budín de pan",
+   "sub": "el pan viejo volviendo a la vida"
+  },
+  {
+   "id": "vki4lqtcboy0_s_429",
+   "start": 1446.04,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_429.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_430",
+   "start": 1449.21,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_430.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_431",
+   "start": 1452.37,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_431.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_432",
+   "start": 1455.57,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_432.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_433",
+   "start": 1458.31,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_433.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "ov_layerstack_1460",
+   "start": 1460.2,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Lo que iba al molde",
+   "layers": [
+    {
+     "label": "El pan duro de toda la semana"
+    },
+    {
+     "label": "Remojado en leche, aplastado con las manos"
+    },
+    {
+     "label": "Huevo y azúcar"
+    },
+    {
+     "label": "Pasas de uva remojadas aparte"
+    },
+    {
+     "label": "Ralladura de limón"
+    },
+    {
+     "label": "Caramelo quemado forrando el molde"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_434",
+   "start": 1461.1,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_434.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_435",
+   "start": 1464.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_435.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "vki4lqtcboy0_s_436",
+   "start": 1466.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_436.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_437",
+   "start": 1470,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_437.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.81
+  },
+  {
+   "id": "vki4lqtcboy0_s_438",
+   "start": 1472.51,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_438.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.55
+  },
+  {
+   "id": "vki4lqtcboy0_s_439",
+   "start": 1475.76,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_439.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "vki4lqtcboy0_s_440",
+   "start": 1478.46,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_440.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "vki4lqtcboy0_s_441",
+   "start": 1481.19,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_441.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.27
+  },
+  {
+   "id": "ov_highlightsweep_1484",
+   "start": 1483.68,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "La casa se llenaba de",
+   "highlight": "olor a pan dulce y caramelo",
+   "post": ".",
+   "note": "y vos dando vueltas por la cocina preguntando cuánto falta"
+  },
+  {
+   "id": "vki4lqtcboy0_s_442",
+   "start": 1484.16,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_442.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "vki4lqtcboy0_s_443",
+   "start": 1486.95,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_443.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_444",
+   "start": 1489.81,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_444.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.87
+  },
+  {
+   "id": "vki4lqtcboy0_s_445",
+   "start": 1493.38,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_445.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.79
+  },
+  {
+   "id": "vki4lqtcboy0_s_446",
+   "start": 1496.87,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_446.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_447",
+   "start": 1500.06,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_447.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_448",
+   "start": 1503.2,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_448.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.27
+  },
+  {
+   "id": "vki4lqtcboy0_s_449",
+   "start": 1506.17,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_449.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.77
+  },
+  {
+   "id": "vki4lqtcboy0_s_450",
+   "start": 1508.64,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_450.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "vki4lqtcboy0_s_451",
+   "start": 1512,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_451.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "ov_mythtruth_1513",
+   "start": 1513.4,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "El pan seco es basura",
+   "truth": "De un canasto de pan seco salía el postre de toda una semana"
+  },
+  {
+   "id": "vki4lqtcboy0_s_452",
+   "start": 1515.16,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_452.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "vki4lqtcboy0_s_453",
+   "start": 1518.17,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_453.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.57
+  },
+  {
+   "id": "vki4lqtcboy0_s_454",
+   "start": 1521.44,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_454.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_455",
+   "start": 1524.63,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_455.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.59
+  },
+  {
+   "id": "vki4lqtcboy0_s_456",
+   "start": 1527.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_456.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "ov_chaptertitle_1528",
+   "start": 1528,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XXIII",
+   "title": "El mate cocido con leche",
+   "sub": "y el pan con grasa del desayuno"
+  },
+  {
+   "id": "vki4lqtcboy0_s_457",
+   "start": 1530.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_457.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_458",
+   "start": 1533.87,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_458.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_459",
+   "start": 1537.61,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_459.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "vki4lqtcboy0_s_460",
+   "start": 1540.42,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_460.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "ov_numberedsteps_1542",
+   "start": 1542.24,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La merienda de los que madrugaban",
+   "title": "El desayuno de antes",
+   "steps": [
+    {
+     "title": "Hervido en una ollita",
+     "sub": "con la yerba adentro"
+    },
+    {
+     "title": "Un carboncito encendido",
+     "sub": "para cortarlo"
+    },
+    {
+     "title": "Un chorro de leche",
+     "sub": "recién sacada"
+    },
+    {
+     "title": "Pan casero con grasa",
+     "sub": "y azúcar, o con dulce"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_461",
+   "start": 1543,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_461.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.53
+  },
+  {
+   "id": "vki4lqtcboy0_s_462",
+   "start": 1546.23,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_462.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "vki4lqtcboy0_s_463",
+   "start": 1549.04,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_463.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "vki4lqtcboy0_s_464",
+   "start": 1551.62,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_464.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_465",
+   "start": 1554.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_465.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.41
+  },
+  {
+   "id": "vki4lqtcboy0_s_466",
+   "start": 1557.91,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_466.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.35
+  },
+  {
+   "id": "vki4lqtcboy0_s_467",
+   "start": 1560.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_467.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_468",
+   "start": 1563.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_468.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "ov_karaokephrase_1564",
+   "start": 1563.96,
+   "dur": 5.800000000000001,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "KaraokePhrase",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Simple y humilde, pero",
+   "phrase": "Con el estómago lleno y el alma contenta"
+  },
+  {
+   "id": "vki4lqtcboy0_s_469",
+   "start": 1566.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_469.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_470",
+   "start": 1569.58,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_470.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "vki4lqtcboy0_s_471",
+   "start": 1573,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_471.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_472",
+   "start": 1575.84,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_472.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "vki4lqtcboy0_s_473",
+   "start": 1579.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_473.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "vki4lqtcboy0_s_474",
+   "start": 1581.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_474.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_475",
+   "start": 1584.48,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_475.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "vki4lqtcboy0_s_476",
+   "start": 1587.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_476.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.58
+  },
+  {
+   "id": "vki4lqtcboy0_s_477",
+   "start": 1590.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_477.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.83
+  },
+  {
+   "id": "vki4lqtcboy0_s_478",
+   "start": 1593.05,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_478.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.05
+  },
+  {
+   "id": "ov_vsduel_1593",
+   "start": 1593.05,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Y no lo cambio",
+   "title": "El tazón y la caja",
+   "left": {
+    "label": "El mate cocido",
+    "sub": "el tazón caliente entre las dos manos frías",
+    "good": true
+   },
+   "right": {
+    "label": "El desayuno moderno",
+    "sub": "viene en caja, con nombre en inglés",
+    "good": false
+   }
+  },
+  {
+   "id": "vki4lqtcboy0_s_479",
+   "start": 1595.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_479.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_480",
+   "start": 1598.99,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_480.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_481",
+   "start": 1602.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_481.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "vki4lqtcboy0_s_482",
+   "start": 1604.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_482.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_483",
+   "start": 1607.86,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_483.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "vki4lqtcboy0_s_484",
+   "start": 1611.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_484.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_485",
+   "start": 1613.82,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_485.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7
+  },
+  {
+   "id": "vki4lqtcboy0_s_486",
+   "start": 1616.22,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_486.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_487",
+   "start": 1618.9,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_487.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_488",
+   "start": 1622.03,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_488.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "vki4lqtcboy0_s_489",
+   "start": 1624.94,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_489.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_490",
+   "start": 1628.07,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_490.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.51
+  },
+  {
+   "id": "ov_layerstack_1630",
+   "start": 1630.3,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Del zapallo salía de todo",
+   "layers": [
+    {
+     "label": "Asado al horno, dulce como un caramelo"
+    },
+    {
+     "label": "En almíbar, en cubos, para el postre"
+    },
+    {
+     "label": "Relleno para las empanadas"
+    },
+    {
+     "label": "Guardado meses en un rincón fresco"
+    },
+    {
+     "label": "El salvavidas de la despensa"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_491",
+   "start": 1631.28,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_491.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "vki4lqtcboy0_s_492",
+   "start": 1634.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_492.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_493",
+   "start": 1637.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_493.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9
+  },
+  {
+   "id": "vki4lqtcboy0_s_494",
+   "start": 1641.56,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_494.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "vki4lqtcboy0_s_495",
+   "start": 1644.06,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_495.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_496",
+   "start": 1646.6,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_496.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "vki4lqtcboy0_s_497",
+   "start": 1649.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_497.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_498",
+   "start": 1652.57,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_498.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_499",
+   "start": 1655.41,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_499.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_500",
+   "start": 1658.03,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_500.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.33
+  },
+  {
+   "id": "ov_chaptertitle_1659",
+   "start": 1659.01,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "XXV",
+   "title": "El pan casero",
+   "sub": "el que dejó de hacerse casi de un día para otro"
+  },
+  {
+   "id": "vki4lqtcboy0_s_501",
+   "start": 1661.06,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_501.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "vki4lqtcboy0_s_502",
+   "start": 1663.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_502.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_503",
+   "start": 1666.94,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_503.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.87
+  },
+  {
+   "id": "vki4lqtcboy0_s_504",
+   "start": 1669.51,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_504.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_505",
+   "start": 1672.45,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_505.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "ov_numberedsteps_1673",
+   "start": 1673.32,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El ritual de todas las semanas",
+   "title": "El pan amasado en casa",
+   "steps": [
+    {
+     "title": "La harina en volcán",
+     "sub": "sobre la mesa enharinada de punta a punta"
+    },
+    {
+     "title": "Agua tibia y levadura",
+     "sub": "la levadura había que despertarla"
+    },
+    {
+     "title": "Amasar y amasar",
+     "sub": "hasta que quedaba lisa y elástica"
+    },
+    {
+     "title": "La bocha a leudar",
+     "sub": "tapada con un repasador y una manta"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_506",
+   "start": 1675.64,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_506.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_507",
+   "start": 1678.78,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_507.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "vki4lqtcboy0_s_508",
+   "start": 1682,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_508.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_509",
+   "start": 1685.18,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_509.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "vki4lqtcboy0_s_510",
+   "start": 1688.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_510.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_511",
+   "start": 1691.24,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_511.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_512",
+   "start": 1693.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_512.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "vki4lqtcboy0_s_513",
+   "start": 1696.65,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_513.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.05
+  },
+  {
+   "id": "vki4lqtcboy0_s_514",
+   "start": 1699.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_514.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "ov_karaokephrase_1702",
+   "start": 1702.44,
+   "dur": 5.800000000000001,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "KaraokePhrase",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Lo que nos decían en la cocina",
+   "phrase": "Se baja el pan"
+  },
+  {
+   "id": "vki4lqtcboy0_s_515",
+   "start": 1702.57,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_515.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "vki4lqtcboy0_s_516",
+   "start": 1705.57,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_516.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_517",
+   "start": 1708.66,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_517.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "vki4lqtcboy0_s_518",
+   "start": 1711.52,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_518.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.37
+  },
+  {
+   "id": "vki4lqtcboy0_s_519",
+   "start": 1714.59,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_519.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.25
+  },
+  {
+   "id": "vki4lqtcboy0_s_520",
+   "start": 1717.54,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_520.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.37
+  },
+  {
+   "id": "ov_highlightsweep_1718",
+   "start": 1718.44,
+   "dur": 5.800000000000001,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "Ese pan",
+   "highlight": "perfumaba la casa entera",
+   "post": " cuando salía del horno.",
+   "note": "dorado, crujiente por fuera, y se comía caliente"
+  },
+  {
+   "id": "vki4lqtcboy0_s_521",
+   "start": 1720.61,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_521.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.25
+  },
+  {
+   "id": "vki4lqtcboy0_s_522",
+   "start": 1723.56,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_522.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "vki4lqtcboy0_s_523",
+   "start": 1726.14,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_523.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_524",
+   "start": 1729.33,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_524.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_525",
+   "start": 1732.17,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_525.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "ov_pullquote_1734",
+   "start": 1733.55,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "El pan caliente se parte, no se corta. Y la punta, el cascarón, se la peleaban todos."
+  },
+  {
+   "id": "vki4lqtcboy0_s_526",
+   "start": 1735.23,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_526.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "vki4lqtcboy0_s_527",
+   "start": 1738.14,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_527.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "vki4lqtcboy0_s_528",
+   "start": 1741.13,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_528.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "vki4lqtcboy0_s_529",
+   "start": 1744.29,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_529.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "vki4lqtcboy0_s_530",
+   "start": 1746.77,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_530.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "ov_beforeafter_1748",
+   "start": 1748.25,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El corazón de la mesa",
+   "beforeLabel": "Antes: se amasaba todas las semanas",
+   "afterLabel": "Y un día se dejó de hacer",
+   "caption": "callado, sin que nadie lo anunciara, en casi todas las casas al mismo tiempo"
+  },
+  {
+   "id": "vki4lqtcboy0_s_531",
+   "start": 1750.21,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_531.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_532",
+   "start": 1753.29,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_532.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "vki4lqtcboy0_s_533",
+   "start": 1755.83,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_533.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_534",
+   "start": 1758.81,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_534.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.23
+  },
+  {
+   "id": "vki4lqtcboy0_s_535",
+   "start": 1761.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_535.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "ov_hookcaption_1762",
+   "start": 1761.74,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "earth",
+   "zone": "topLeft",
+   "words": [
+    {
+     "text": "El motivo"
+    },
+    {
+     "text": "no es",
+     "boxed": true
+    },
+    {
+     "text": "el que"
+    },
+    {
+     "text": "tú crees",
+     "boxed": true
+    }
+   ],
+   "sub": "y es lo único que de verdad importa de todo el video"
+  },
+  {
+   "id": "vki4lqtcboy0_s_536",
+   "start": 1764.84,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_536.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "vki4lqtcboy0_s_537",
+   "start": 1767.99,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_537.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_538",
+   "start": 1770.93,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_538.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "vki4lqtcboy0_s_539",
+   "start": 1773.87,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_539.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "vki4lqtcboy0_s_540",
+   "start": 1776.86,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_540.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_541",
+   "start": 1779.78,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_541.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.89
+  },
+  {
+   "id": "vki4lqtcboy0_s_542",
+   "start": 1782.37,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_542.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "ov_mythtruth_1785",
+   "start": 1784.6,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Estos platos murieron por su sabor",
+   "truth": "Murieron por sus ingredientes: los que aprendimos a tirar a la basura"
+  },
+  {
+   "id": "vki4lqtcboy0_s_543",
+   "start": 1785.56,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_543.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_544",
+   "start": 1788.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_544.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_545",
+   "start": 1791.74,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_545.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.35
+  },
+  {
+   "id": "vki4lqtcboy0_s_546",
+   "start": 1794.79,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_546.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.13
+  },
+  {
+   "id": "vki4lqtcboy0_s_547",
+   "start": 1797.62,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_547.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "vki4lqtcboy0_s_548",
+   "start": 1800.29,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_548.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "ov_checklistreveal_1800",
+   "start": 1800.29,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Con qué se hacía toda esta cocina",
+   "stamp": "NO VALÍA NADA",
+   "items": [
+    "Pan duro: sopa de pan, torrejas, budín",
+    "Chicharrones y grasa: lo que hoy tiramos del animal",
+    "Huesos y cortes baratos: puchero, lentejas, locro",
+    "La fruta que se caía del árbol: el membrillo",
+    "El zapallo, lo más barato de la feria"
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_549",
+   "start": 1803.49,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_549.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.61
+  },
+  {
+   "id": "vki4lqtcboy0_s_550",
+   "start": 1806.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_550.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.33
+  },
+  {
+   "id": "vki4lqtcboy0_s_551",
+   "start": 1809.83,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_551.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "vki4lqtcboy0_s_552",
+   "start": 1812.48,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_552.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_553",
+   "start": 1815.57,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_553.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_554",
+   "start": 1818.7,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_554.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "ov_highlightsweep_1819",
+   "start": 1819.11,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "Toda esta cocina estaba construida",
+   "highlight": "sobre lo que no valía nada",
+   "post": ".",
+   "note": "las sobras, los huesos, el pan de ayer, la fruta golpeada"
+  },
+  {
+   "id": "vki4lqtcboy0_s_555",
+   "start": 1821.83,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_555.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_556",
+   "start": 1824.75,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_556.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_557",
+   "start": 1827.65,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_557.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.73
+  },
+  {
+   "id": "vki4lqtcboy0_s_558",
+   "start": 1831.08,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_558.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94
+  },
+  {
+   "id": "vki4lqtcboy0_s_559",
+   "start": 1833.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_559.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "ov_vsduel_1834",
+   "start": 1834.35,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Nos convencieron de que era comida de pobres",
+   "title": "Lo que llamamos progresar",
+   "left": {
+    "label": "Lo de antes",
+    "sub": "el pan de ayer, el hueso, la fruta golpeada",
+    "good": true
+   },
+   "right": {
+    "label": "«Progresar»",
+    "sub": "el pan en bolsa, la carne sin hueso, la fruta perfecta",
+    "good": false
+   }
+  },
+  {
+   "id": "vki4lqtcboy0_s_560",
+   "start": 1836.38,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_560.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "vki4lqtcboy0_s_561",
+   "start": 1839.56,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_561.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_562",
+   "start": 1842.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_562.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.74
+  },
+  {
+   "id": "vki4lqtcboy0_s_563",
+   "start": 1845.32,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_563.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_564",
+   "start": 1848.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_564.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.33
+  },
+  {
+   "id": "vki4lqtcboy0_s_565",
+   "start": 1851.43,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_565.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "vki4lqtcboy0_s_566",
+   "start": 1854.17,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_566.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_567",
+   "start": 1857.34,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_567.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.17
+  },
+  {
+   "id": "vki4lqtcboy0_s_568",
+   "start": 1860.21,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_568.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "vki4lqtcboy0_s_569",
+   "start": 1862.88,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_569.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.89
+  },
+  {
+   "id": "ov_stampbadge_1864",
+   "start": 1863.81,
+   "dur": 5.6000000000000005,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "topLeft",
+   "text": "NO FUE CASUALIDAD",
+   "sub": "a nadie le conviene que sepas hacer un banquete con huesos y pan viejo",
+   "x": 0.5,
+   "y": 0.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_570",
+   "start": 1865.47,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_570.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_571",
+   "start": 1868.56,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_571.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_572",
+   "start": 1871.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_572.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_573",
+   "start": 1874.54,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_573.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "vki4lqtcboy0_s_574",
+   "start": 1877.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_574.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "ov_vsduel_1877",
+   "start": 1877.24,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Por eso nadie te lo cuenta",
+   "title": "Dónde está el negocio",
+   "left": {
+    "label": "La olla de paciencia",
+    "sub": "no se gana dinero con ella",
+    "good": true
+   },
+   "right": {
+    "label": "La caja, el sobre, el plástico",
+    "sub": "ahí sí se gana dinero",
+    "good": false
+   }
+  },
+  {
+   "id": "vki4lqtcboy0_s_575",
+   "start": 1880.44,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_575.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.33
+  },
+  {
+   "id": "vki4lqtcboy0_s_576",
+   "start": 1883.47,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_576.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "vki4lqtcboy0_s_577",
+   "start": 1886.62,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_577.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "vki4lqtcboy0_s_578",
+   "start": 1889.82,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_578.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "vki4lqtcboy0_s_579",
+   "start": 1892.81,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_579.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "ov_pullquote_1895",
+   "start": 1894.66,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "No idealices tanto el pasado que te amargues el presente. La vida de hoy es otra, y está bien que sea otra."
+  },
+  {
+   "id": "vki4lqtcboy0_s_580",
+   "start": 1895.54,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_580.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "vki4lqtcboy0_s_581",
+   "start": 1898.22,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_581.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "vki4lqtcboy0_s_582",
+   "start": 1901.12,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_582.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_583",
+   "start": 1904.26,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_583.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_584",
+   "start": 1907.43,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_584.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.82
+  },
+  {
+   "id": "ov_checklistreveal_1908",
+   "start": 1908,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Te pido una sola cosa",
+   "stamp": "ANTES DE TIRARLO",
+   "items": [
+    "El pan de ayer",
+    "El hueso del pollo",
+    "Esa fruta que se está poniendo fea"
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_585",
+   "start": 1909.95,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_585.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "vki4lqtcboy0_s_586",
+   "start": 1912.45,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_586.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.47
+  },
+  {
+   "id": "vki4lqtcboy0_s_587",
+   "start": 1915.62,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_587.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_588",
+   "start": 1918.24,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_588.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "vki4lqtcboy0_s_589",
+   "start": 1920.86,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_589.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "vki4lqtcboy0_s_590",
+   "start": 1924,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_590.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.41
+  },
+  {
+   "id": "ov_layerstack_1924",
+   "start": 1924,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Recordemos lo que fuimos hoy",
+   "layers": [
+    {
+     "label": "El puchero de la olla que hervía toda la mañana"
+    },
+    {
+     "label": "La sopa de pan que convertía la nada en abrazo"
+    },
+    {
+     "label": "El locro de las fiestas"
+    },
+    {
+     "label": "La mazamorra del jarrito"
+    },
+    {
+     "label": "El arroz con leche de la costrita peleada"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_591",
+   "start": 1927.11,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_591.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.03
+  },
+  {
+   "id": "vki4lqtcboy0_s_592",
+   "start": 1929.84,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_592.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "vki4lqtcboy0_s_593",
+   "start": 1933.16,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_593.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.57
+  },
+  {
+   "id": "vki4lqtcboy0_s_594",
+   "start": 1936.43,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_594.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_595",
+   "start": 1939.62,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_595.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "ov_flowsteps_1942",
+   "start": 1941.88,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Y seguimos por la mesa",
+   "nodes": [
+    {
+     "label": "Tortas fritas",
+     "sub": "las de los días de lluvia"
+    },
+    {
+     "label": "Fideos amasados",
+     "sub": "los del domingo"
+    },
+    {
+     "label": "Empanadas",
+     "sub": "del horno de barro"
+    },
+    {
+     "label": "Flan",
+     "sub": "con el caramelo quemado a mano"
+    }
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_596",
+   "start": 1942.72,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_596.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_597",
+   "start": 1945.64,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_597.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.91
+  },
+  {
+   "id": "vki4lqtcboy0_s_598",
+   "start": 1948.25,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_598.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "vki4lqtcboy0_s_599",
+   "start": 1951.23,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_599.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "vki4lqtcboy0_s_600",
+   "start": 1954.38,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_600.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_601",
+   "start": 1957.51,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_601.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "vki4lqtcboy0_s_602",
+   "start": 1960.3,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_602.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.23
+  },
+  {
+   "id": "vki4lqtcboy0_s_603",
+   "start": 1963.23,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_603.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6
+  },
+  {
+   "id": "ov_bigstatreveal_1966",
+   "start": 1965.51,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "En este video",
+   "value": 25,
+   "prefix": "",
+   "suffix": "",
+   "source": "",
+   "support": "recuerdos que creías perdidos y estaban ahí, esperando que alguien los nombrara"
+  },
+  {
+   "id": "vki4lqtcboy0_s_604",
+   "start": 1966.53,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_604.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.12
+  },
+  {
+   "id": "vki4lqtcboy0_s_605",
+   "start": 1969.35,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_605.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "vki4lqtcboy0_s_606",
+   "start": 1972.36,
+   "kind": "raw",
+   "src": "broll/vki4lqtcboy0_s_606.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.39
+  },
+  {
+   "id": "vki4lqtcboy0_s_607",
+   "start": 1975.45,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_607.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.63
+  },
+  {
+   "id": "vki4lqtcboy0_s_608",
+   "start": 1978.78,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_608.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.75
+  },
+  {
+   "id": "ov_hookcaption_1979",
+   "start": 1978.78,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "earth",
+   "zone": "topLeft",
+   "words": [
+    {
+     "text": "Escríbeme"
+    },
+    {
+     "text": "en los comentarios",
+     "boxed": true
+    },
+    {
+     "text": "cuál era"
+    },
+    {
+     "text": "el de tu casa",
+     "boxed": true
+    }
+   ],
+   "sub": "y de qué pueblo, de qué barrio, de qué país — los leo todos, uno por uno"
+  },
+  {
+   "id": "vki4lqtcboy0_s_609",
+   "start": 1981.23,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_609.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.37
+  },
+  {
+   "id": "vki4lqtcboy0_s_610",
+   "start": 1984.3,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_610.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.45
+  },
+  {
+   "id": "vki4lqtcboy0_s_611",
+   "start": 1987.45,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_611.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.67
+  },
+  {
+   "id": "vki4lqtcboy0_s_612",
+   "start": 1990.82,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_612.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43
+  },
+  {
+   "id": "vki4lqtcboy0_s_613",
+   "start": 1993.95,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_613.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "vki4lqtcboy0_s_614",
+   "start": 1996.96,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_614.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "vki4lqtcboy0_s_615",
+   "start": 1999.8,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_615.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.42
+  },
+  {
+   "id": "vki4lqtcboy0_s_616",
+   "start": 2002.92,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_616.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "vki4lqtcboy0_s_617",
+   "start": 2006.34,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_617.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.21
+  },
+  {
+   "id": "vki4lqtcboy0_s_618",
+   "start": 2009.25,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_618.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.11
+  },
+  {
+   "id": "ov_cornereyebrow_2011",
+   "start": 2010.52,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CornerEyebrow",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "EN EL PRÓXIMO VIDEO",
+   "text": "La comida de una vez al año",
+   "corner": "tl"
+  },
+  {
+   "id": "vki4lqtcboy0_s_619",
+   "start": 2012.06,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_619.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "vki4lqtcboy0_s_620",
+   "start": 2014.98,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_620.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.23
+  },
+  {
+   "id": "vki4lqtcboy0_s_621",
+   "start": 2017.91,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_621.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.82
+  },
+  {
+   "id": "vki4lqtcboy0_s_622",
+   "start": 2020.43,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_622.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.53
+  },
+  {
+   "id": "vki4lqtcboy0_s_623",
+   "start": 2023.66,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_623.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "ov_checklistreveal_2024",
+   "start": 2023.66,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Lo poquito que te puedo adelantar",
+   "stamp": "UNA VEZ AL AÑO",
+   "items": [
+    "Se hacía una sola vez al año",
+    "En una fecha exacta",
+    "Con un ingrediente escondido que casi nadie recuerda",
+    "Traía suerte para los doce meses que venían"
+   ]
+  },
+  {
+   "id": "vki4lqtcboy0_s_624",
+   "start": 2026.85,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_624.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.77
+  },
+  {
+   "id": "vki4lqtcboy0_s_625",
+   "start": 2029.32,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_625.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.31
+  },
+  {
+   "id": "vki4lqtcboy0_s_626",
+   "start": 2032.33,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_626.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.29
+  },
+  {
+   "id": "vki4lqtcboy0_s_627",
+   "start": 2035.32,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_627.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.89
+  },
+  {
+   "id": "vki4lqtcboy0_s_628",
+   "start": 2037.91,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_628.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "vki4lqtcboy0_s_629",
+   "start": 2040.99,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_629.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "ov_ctacard_2042",
+   "start": 2042.1,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Mi regalo para ti",
+   "title": "Las recetas de esta cocina",
+   "bullet": "te las dejé escritas, con las medidas de casa, ahí abajo en la descripción",
+   "price": 0,
+   "cta": "ESTÁ EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "vki4lqtcboy0_s_630",
+   "start": 2043.93,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_630.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.09
+  },
+  {
+   "id": "vki4lqtcboy0_s_631",
+   "start": 2046.72,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_631.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.27
+  },
+  {
+   "id": "vki4lqtcboy0_s_632",
+   "start": 2049.69,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_632.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.95
+  },
+  {
+   "id": "vki4lqtcboy0_s_633",
+   "start": 2052.34,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_633.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "vki4lqtcboy0_s_634",
+   "start": 2055.38,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_634.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.32
+  },
+  {
+   "id": "ov_pullquote_2058",
+   "start": 2058.2,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Mientras haya alguien que las cuente y alguien que las escuche, esa olla no se apaga del todo."
+  },
+  {
+   "id": "vki4lqtcboy0_s_635",
+   "start": 2058.4,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_635.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "vki4lqtcboy0_s_636",
+   "start": 2061.5,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_636.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.49
+  },
+  {
+   "id": "vki4lqtcboy0_s_637",
+   "start": 2064.69,
+   "kind": "raw",
+   "src": "img/vki4lqtcboy0_s_637.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.73
   }
  ]
 }
