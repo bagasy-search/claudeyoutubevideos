@@ -17,16 +17,16 @@ NUNCA gana "porque era lo que había": cae a la cascada de stock.
 1. node match_v3/1_segment.mjs public/captions_<slug>.json _v3/<slug>_skel.json [starts] [pace]
 2. AUTORÍA (PROMPTS §1, 1 agente por sección) → desc EN + queries ES CON ANCLA + anchor + shot + src
    → guardar como _v3/<slug>_beats.json (array con todos los campos)
-3. node match_v3/2_search_mosaics.mjs _v3/<slug>_beats.json _v3_mosaics 6 2 --anchors "sujeto,sinonimo"
+3. node match_v3/2_search_mosaics.mjs _v3/<slug>_beats.json _v3_<slug>_mosaics 6 2 --anchors "sujeto,sinonimo"
    · fuerza el ancla EN CÓDIGO (query sin sujeto → se le antepone)
    · filtro duro: blocklist persistente, títulos/canales basura (shorts, compilaciones,
      reacciones, vlogs, podcasts...), duración 60s–40min, live
    · geometría REAL por fragmento en el nombre del PNG (int + fs)
    · beats con <2 candidatos → scarce ⚠; >40% scarce → aviso STOCK-FIRST
-4. node match_v3/split_judge.mjs _v3_mosaics 8
-   JUEZ (PROMPTS §2, 1 agente por batch, Haiku) → _v3_mosaics/_judge/picks_NN.json → unir picks.json
+4. node match_v3/split_judge.mjs _v3_<slug>_mosaics 8
+   JUEZ (PROMPTS §2, 1 agente por batch, Haiku) → _v3_<slug>_mosaics/_judge/picks_NN.json → unir _v3_<slug>_picks.json
    El juez devuelve {id, frag, row, col} — NUNCA calcula timestamps.
-5. node match_v3/3_assemble.mjs _v3/<slug>_beats.json picks.json public/broll/clips_<slug>_matched.json _v3_mosaics/_manifest.json
+5. node match_v3/3_assemble.mjs _v3/<slug>_beats.json _v3_<slug>_picks.json public/broll/clips_<slug>_matched.json _v3_<slug>_mosaics/_manifest.json
    · valida pick ∈ candidatos (ids alucinados → stock, no desaparecen)
    · recalcula ts de la geometría, clamp anti-título/end-card
    · baja con +2s de cola (anti-congelado) · _score 0.5 _verified:false

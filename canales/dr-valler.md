@@ -107,6 +107,19 @@
   `npx remotion render` es un ARGUMENTO POSICIONAL (va primero, antes del comp-id) — un flag `--entry=...`
   no existe, se ignora en silencio y cae al entry compartido igual. `render.yml` ya quedó arreglado para
   pasarlo posicional cuando el input `entry` viene seteado.
+- **2026-07-20 (vbb0rdkrfduo, rehecho ~25 min):** si tenés que rehacer un Main_<slug>.tsx que OTRO trabajo
+  puede estar tocando en simultáneo, NO sobreescribas el archivo compartido — creá `Main_<slug>_redo.tsx` +
+  `index_<slug>_redo.tsx` propios (mismo patrón de entry aislado) y dejá el original intacto.
+- **2026-07-20 (vbb0rdkrfduo):** en videos largos (20+ min) con MUCHOS sub-temas dentro de un mismo bloque
+  narrativo (ej. "los 8 pasos de la receta", "las 5 promesas"), una sola `FullVisual` window de 40-50s con
+  2-3 imágenes cíclicas SIEMPRE termina con el título/imagen de un sub-tema sostenido mientras la narración
+  ya pasó al siguiente — el auditor lo marca como "dead"/mismatch cada vez. Cortar esas windows a la
+  duración real del sub-tema (15-30s) en vez de agruparlas por bloque grande.
+- **2026-07-20 (vbb0rdkrfduo):** antes de reusar una imagen ya generada de otro video por su NOMBRE de
+  archivo, mirala — varias `vbb_stock_*.mp4` de un build anterior tenían nombres que ya no correspondían a
+  su contenido real (ej. "vbb_stock_rosemary" era perejil, no romero; "vbb_stock_derm" era una escena
+  social con vino, no un consultorio; "vbb_stock_sunscreen" era una mujer en bikini en la playa, tono
+  impropio para el canal). El nombre del archivo no garantiza el contenido si vino de un fetch de stock.
 - **2026-07-20 (vfh490rruvab):** una ventana `FullVisual` única y larga (>60-90s) que cicla varias imágenes
   sin relación con el sub-tema exacto que se está narrando en cada momento produce mismatches frecuentes
   cuando esa ventana cubre VARIOS métodos/pasos distintos del guion. Mejor partir en una ventana por
@@ -126,3 +139,15 @@
 - **2026-07-20 (dirección creativa):** las referencias y preferencias creativas del creador son un punto de
   partida, no una jaula. El agente debe actuar como director autónomo, proponer y ejecutar soluciones mejores
   cuando las detecte. Las únicas rejas son seguridad médica, precisión, requisitos técnicos duros y auditoría.
+- **2026-07-22:** el largo objetivo de los guiones del canal pasa a ser **más de 20.000 caracteres**; medirlo
+  con un comando antes de entregar y desarrollar con evidencia, porqués y objeciones, nunca con relleno.
+- **2026-07-23:** evitar beneficios enumerados como clase (“beneficio uno, beneficio dos”). Para público mayor,
+  convertirlos en revelaciones dentro de una historia serializada y polémica, con objetos, dinero, familia,
+  edadismo, engaños y detalles sensoriales. Mantener loops sobre qué le ocurre al protagonista. Usar casos
+  publicados o marcar la dramatización como hipotética; nunca inventar un paciente y presentarlo como real.
+- **2026-07-23:** tender puentes a la descripción del video dejando allí fichas imprimibles, medidas completas,
+  listas de compras o rutinas por días. Pagar siempre la promesa. Nunca ocultar de la voz una dilución,
+  contraindicación, prueba de tolerancia o señal de alarma necesaria para usar una receta sin daño.
+- **2026-07-23:** después del cold-open, nombrar inmediatamente el tema principal, el ingrediente, la herida
+  y el resultado que recibirá el espectador. La historia no puede demorar la tesis. Tomar de ejemplos virales
+  la cadencia, polémica, contraste y loops, pero verificar todo y descartar promesas médicas falsas.

@@ -49,12 +49,31 @@ if (!proxyList.length) { try { const px = fs.readFileSync(path.join(cookieDir, "
 const proxyArg = (i) => (proxyList.length ? ["--proxy", proxyList[i % proxyList.length]] : []);
 if (proxyList.length) console.log(`usando ${proxyList.length} proxy(s) (rotando por toma)`);
 
-const [listArg, outArg] = process.argv.slice(2);
+// ⛔⛔ REGLA DURA: NUNCA bajar de YouTube por la IP del creador — mancharía su IP (donde viven sus
+// canales conectados). Si no hay proxy válido, YouTube se APAGA por completo y el pipeline usa
+// stock/web/IA (que no necesitan proxy). Para bajar igual por tu IP a propósito: ALLOW_LOCAL_IP=1.
+if (!proxyList.length && process.env.ALLOW_LOCAL_IP !== "1") {
+  console.error("⛔ SIN PROXY: no bajo de YouTube por tu IP (la mancharía). Fuentes sin YouTube = stock/web/IA.");
+  console.error("   Poné proxies en cookies/proxies.txt, o forzá tu IP con ALLOW_LOCAL_IP=1 (NO recomendado).");
+  process.exit(3);   // 3 = apagado a propósito → el pipeline cae a stock/web/IA, no es un error real
+}
+
+const rawArgs = process.argv.slice(2);
+// slug del video: por --slug <x>, env SLUG, o derivado de clips_<slug>_matched.json / clips_<slug>.json
+let slug = process.env.SLUG || "";
+const si = rawArgs.indexOf("--slug");
+if (si >= 0) { slug = rawArgs[si + 1] || ""; rawArgs.splice(si, 2); }
+const [listArg, outArg] = rawArgs;
 const LIST = listArg || "public/broll/clips_estiercol.json";
-const OUT = outArg || "public/broll";
+if (!slug) { const m = /^clips_(.+?)(?:_matched)?\.json$/i.exec(path.basename(LIST)); if (m) slug = m[1]; }
+// ★ AISLAMIENTO POR VIDEO: cada video baja sus clips a su PROPIA subcarpeta public/broll/<slug>/, así
+// dos videos NUNCA se pisan los clips. Si pasás outDir explícito, se respeta (backward-compatible).
+const OUT = outArg || (slug ? path.join("public/broll", slug) : "public/broll");
 const SUBDIR = path.join(OUT, "_subs");
 fs.mkdirSync(OUT, { recursive: true });
 fs.mkdirSync(SUBDIR, { recursive: true });
+if (slug) console.log(`[aislamiento] clips de este video → ${OUT}/`);
+else console.warn("[aislamiento] ⚠ sin slug: bajando a public/broll/ compartida — pasá --slug <slug> o usá clips_<slug>_matched.json para AISLAR.");
 
 if (!fs.existsSync(YTDLP)) {
   console.error("Falta bin/yt-dlp.exe");
@@ -174,6 +193,13 @@ for (const c of clips) {
   const args = [
     url,
     ...cookieArg(_ci), ...proxyArg(_ci),
+    // ★★★ SOLVER DEL DESAFÍO JS DE YOUTUBE (deno) — SIN ESTO NO BAJA NADA.
+    // YouTube exige resolver un "n challenge" en JS para entregar los formatos de video. Sin el
+    // solver, yt-dlp SOLO ve imágenes y toda descarga falla con "Requested format is not available".
+    // Medido 24-jul-2026: mismo video+cookie → sin el flag ERROR · con el flag OK.
+    // Ese fallo se venía leyendo como "el nicho no tiene clips" y se anotó como regla en la memoria
+    // de un canal (falso). Si vuelve a fallar, revisar ESTO antes de culpar al nicho o a las cookies.
+    "--remote-components", "ejs:github",
     "--download-sections", `*${s}-${e}`,
     "--force-keyframes-at-cuts",
     // piso de resolución: sin fuente ≥480p el download FALLA → el beat cae a stock

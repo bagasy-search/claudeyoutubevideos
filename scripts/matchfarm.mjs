@@ -31,7 +31,11 @@ sh(`gh workflow run match.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM
 
 // 3) esperar y descargar
 execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", shell: true });
-const runId = out(`gh run list --workflow=match.yml --limit 1 --json databaseId --jq ".[0].databaseId"`);
+// AISLAMIENTO: filtrar por la rama PROPIA de este video (molino-<slug>), si no con varios agentes
+// matcheando a la vez agarrábamos "el run más reciente de match.yml" que podía ser el de OTRO video
+// → descargábamos sus clips (mismo bug de cruce que ya arreglamos en el b-roll). Igual que farm.mjs.
+const _mfBranch = process.env.FARM_REF || `molino-${slug}`;
+const runId = out(`gh run list --workflow=match.yml -b ${_mfBranch} --limit 1 --json databaseId --jq ".[0].databaseId"`);
 console.log("corrida:", runId, "— siguiendo ...");
 try { sh(`gh run watch ${runId} --exit-status --interval 15`); } catch { console.error("fallo; revisá: gh run view " + runId); process.exit(1); }
 sh(`gh run download ${runId} -n matched-${slug} -D public/broll`);

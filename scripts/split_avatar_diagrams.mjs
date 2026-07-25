@@ -15,7 +15,7 @@ const bs = JSON.parse(fs.readFileSync(`beatsheet/${slug}.json`, "utf8"));
 const avatar = `public/${bs.avatar}`;
 if (!fs.existsSync(avatar)) { console.error("No existe el avatar:", avatar); process.exit(1); }
 
-const outDir = "public/avatar_clips";
+const outDir = `public/avatar_clips/${slug}`;
 fs.mkdirSync(outDir, { recursive: true });
 
 const diagrams = (bs.beats || []).filter((b) => b.kind === "diagram" || b.kind === "avpizarra");

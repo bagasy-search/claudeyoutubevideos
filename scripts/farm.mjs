@@ -82,37 +82,47 @@ if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la nar
 let items = [`${slug}.wav`];
 if (hasAvatar) items.unshift(`${slug}_opt.mp4`);
 if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
-if (fs.existsSync("public/avatar_clips")) items.push("avatar_clips"); // PiP del avatar en los DiagramBoard (si falta → 404 en el farm)
+if (fs.existsSync(`public/avatar_clips/${slug}`)) items.push(`avatar_clips/${slug}`); // PiP del avatar SOLO de este slug (aislado; tar incluye el dir recursivo). Si falta → 404 en el farm
 if (pref && pref.startsWith("@")) {
   // lista EXPLÍCITA de entradas (rutas relativas a public/), una por línea
   const explicit = fs.readFileSync(pref.slice(1), "utf8").split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
   items = [...new Set([...items, ...explicit])];
 } else if (pref) {
-  // solo lo de este video + diagramas (gpt-image, prefijo dg_)
-  const img = fs.readdirSync("public/img").filter((f) => f.startsWith(pref) || f.startsWith("dg_"));
+  // solo lo de este video + SUS diagramas. Los dg_ se nombran dg_<pref>_* o dg_<slug>_* según
+  // el build; antes se empaquetaban TODOS los dg_ (prefijo compartido → diagramas de otros videos).
+  // OJO: videos con dg_ SIN prefijo de slug (p.ej. dg_molasses_co2, dg_map_world7) NO entran por acá
+  // → esos deben rendearse con la lista EXPLÍCITA "@lista.txt", no con modo prefijo.
+  const img = fs.readdirSync("public/img").filter((f) => f.startsWith(pref) || f.startsWith(`dg_${pref}`) || f.startsWith(`dg_${slug}`));
   const vid = fs.existsSync("public/vid") ? fs.readdirSync("public/vid").filter((f) => f.startsWith(pref)) : [];
   items.push(...img.map((f) => `img/${f}`), ...vid.map((f) => `vid/${f}`));
   // footage REAL: fotos de archivo (public/real/*) + video de stock (public/broll/*)
   if (fs.existsSync("public/real"))
     items.push(...fs.readdirSync("public/real").filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f)).map((f) => `real/${f}`));
-  if (fs.existsSync("public/broll"))
+  if (fs.existsSync("public/broll")) {
+    // clips SUELTOS en public/broll (stockfallback, estilo viejo)
     items.push(...fs.readdirSync("public/broll").filter((f) => /\.(mp4|jpg|jpeg|png)$/i.test(f)).map((f) => `broll/${f}`));
+    // + subcarpeta POR SLUG: fetch_clips ahora baja a public/broll/<slug>/ — sin esto los clips
+    //   matcheados quedaban fuera del tar → 404 en el farm. El dir entra recursivo al tar.
+    if (fs.existsSync(path.join("public/broll", slug))) items.push(`broll/${slug}`);
+  }
 } else {
   items.push("img", "vid");
   if (fs.existsSync("public/real")) items.push("real");
   if (fs.existsSync("public/broll")) items.push("broll");
 }
-fs.writeFileSync("_assets_list.txt", items.join("\n"));
+// nombre PER-SLUG en tmpdir: dos farm.mjs en paralelo NO se pisan la lista (antes era "_assets_list.txt" fijo en el CWD)
+const listFile = path.join(os.tmpdir(), `_assets_${slug}.txt`);
+fs.writeFileSync(listFile, items.join("\n"));
 console.log(`empaquetando ${items.length} entradas → ${tar} ...`);
 // El tar de Windows (bsdtar) maneja rutas D:\ nativamente y NO soporta --force-local
 // (eso es de GNU tar). Detectamos cuál hay: si es bsdtar, sin --force-local.
-let tarArgs = ["-cf", tar, "-C", "public", "-T", "_assets_list.txt"];
+let tarArgs = ["-cf", tar, "-C", "public", "-T", listFile];
 try {
   const help = execSync("tar --version", { encoding: "utf8" });
   if (/GNU tar/i.test(help)) tarArgs = ["--force-local", ...tarArgs]; // solo GNU lo necesita/soporta
 } catch { /* asumimos bsdtar */ }
 execFileSync("tar", tarArgs, { stdio: "inherit" });
-fs.rmSync("_assets_list.txt");
+fs.rmSync(listFile);
 
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
