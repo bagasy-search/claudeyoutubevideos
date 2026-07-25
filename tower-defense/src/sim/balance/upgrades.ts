@@ -313,8 +313,8 @@ function lerp(a: number, b: number, t: number): number {
 export const RARITY_ORDER: readonly Rarity[] = ['common', 'rare', 'epic', 'legendary']
 
 export const RARITY_COLOR: Record<Rarity, string> = {
-  common: '#9aa5b1',
-  rare: '#4aa3ff',
-  epic: '#b06bff',
-  legendary: '#ffb23f',
+  common: '#a8a093',
+  rare: '#4a86c8',
+  epic: '#8b5fd6',
+  legendary: '#d4a017',
 }

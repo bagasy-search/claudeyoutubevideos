@@ -91,7 +91,13 @@ export function planWave(rng: Rng, wave: number): WavePlan {
     const def = ENEMIES[b.defIdx]
     if (b.defIdx !== lastDef && lastDef !== -1) t += 1.1
     lastDef = b.defIdx
-    const gap = def.tags.includes('swarm') ? 0.16 : def.cost >= 4 ? 0.9 : 0.34
+    /*
+     * El hueco se calcula en distancia, no en tiempo: un enemigo lento y gordo
+     * necesita mas segundos que uno rapido y flaco para dejar el mismo espacio.
+     * Con un hueco fijo los peones salen encimados y se leen como una oruga.
+     */
+    const spacing = def.radius * 2.8
+    const gap = Math.min(1.2, Math.max(0.12, spacing / def.speed))
     t += gap * rng.range(0.85, 1.15)
     entries.push({
       defIdx: b.defIdx,

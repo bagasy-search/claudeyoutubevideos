@@ -5,15 +5,39 @@
  */
 :root {
   color-scheme: dark;
-  --bg: #0c0f14;
-  --panel: #161c26;
-  --panel-2: #1e2632;
-  --line: #2a3444;
-  --text: #e6ecf5;
-  --muted: #8b98ab;
-  --gold: #ffc857;
-  --danger: #ff5a5a;
-  --accent: #6fd0ff;
+
+  /* Terreno y paneles: la misma banda desaturada que usa el campo de batalla. */
+  --bg: #0f0d09;
+  --panel: #191510;
+  --panel-2: #221c14;
+  --line: #33291c;
+  --line-soft: #2a2217;
+
+  /* Tinta y pergamino. */
+  --text: #ece3d2;
+  --muted: #9a8d76;
+  --faint: #6b6152;
+
+  /* Banda semántica. Reservada: nunca decorativa. */
+  --gold: #d4c07a;
+  --danger: #e34b3f;
+  --accent: #7fd4e8;
+  --crit: #fff0c2;
+
+  /* Pigmentos de rareza. */
+  --r-common: #a8a093;
+  --r-rare: #4a86c8;
+  --r-epic: #8b5fd6;
+  --r-legendary: #d4a017;
+
+  /*
+   * Serif con carácter para títulos y nombres de carta, sans humanista para
+   * datos. Se usan pilas del sistema en vez de una webfont: el entorno de
+   * publicación bloquea CDNs de fuentes y un enlace fallaría en silencio.
+   */
+  --display: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --ui: ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
 * {
@@ -28,7 +52,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--ui);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +114,7 @@ body {
 }
 
 .seed {
-  font-family: monospace;
+  font-family: var(--mono);
   font-size: 11px;
   color: var(--muted);
 }
@@ -107,8 +131,8 @@ button {
 }
 
 button:hover:not(:disabled) {
-  background: #26303e;
-  border-color: #3a495e;
+  background: #2c2418;
+  border-color: #46381f;
 }
 
 button:active:not(:disabled) {
@@ -121,13 +145,14 @@ button:disabled {
 }
 
 button.primary {
-  background: #2f6fed;
-  border-color: #4b84f5;
+  background: linear-gradient(180deg, #4a3d1f 0%, #362c16 100%);
+  border-color: var(--gold);
+  color: var(--crit);
   font-weight: 600;
 }
 
 button.primary:hover:not(:disabled) {
-  background: #3d7cf7;
+  background: linear-gradient(180deg, #5b4b26 0%, #42351b 100%);
 }
 
 .tower-btn {
@@ -199,7 +224,7 @@ kbd {
   border-bottom-width: 2px;
   border-radius: 5px;
   padding: 1px 5px;
-  font-family: monospace;
+  font-family: var(--mono);
   font-size: 11px;
 }
 
@@ -209,7 +234,7 @@ kbd {
 #gameover {
   position: fixed;
   inset: 0;
-  background: rgba(6, 9, 13, 0.72);
+  background: rgba(10, 8, 5, 0.78);
   backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
@@ -228,8 +253,11 @@ kbd {
 
 .draft-inner h2 {
   margin: 0;
-  font-size: 26px;
-  letter-spacing: -0.01em;
+  font-family: var(--display);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
 }
 
 .draft-sub {
@@ -247,11 +275,13 @@ kbd {
 }
 
 .card {
+  position: relative;
   width: min(232px, 82vw);
-  background: linear-gradient(180deg, var(--panel) 0%, #10151d 100%);
+  background: linear-gradient(180deg, var(--panel) 0%, #120f0a 100%);
   border: 1px solid var(--line);
   border-top: 3px solid var(--rarity, #888);
   border-radius: 14px;
+  overflow: hidden;
   padding: 16px 15px 14px;
   text-align: left;
   cursor: pointer;
@@ -278,8 +308,11 @@ kbd {
 }
 
 .card .name {
-  font-size: 17px;
-  font-weight: 650;
+  font-family: var(--display);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
 }
 
 .card .desc {
@@ -290,7 +323,7 @@ kbd {
 }
 
 .card .delta {
-  font-family: monospace;
+  font-family: var(--mono);
   font-size: 12px;
   border-top: 1px solid var(--line);
   padding-top: 8px;
@@ -299,7 +332,7 @@ kbd {
 }
 
 .card .delta .up {
-  color: #6ee7a0;
+  color: var(--gold);
 }
 
 .card .delta .down {
@@ -308,7 +341,7 @@ kbd {
 
 .card .stacks {
   font-size: 10px;
-  color: #5d6a7d;
+  color: var(--faint);
   /* Altura fija: sin esto, las cartas sin contador desalinean la fila. */
   min-height: 12px;
 }
@@ -317,8 +350,42 @@ kbd {
   margin-top: auto;
 }
 
+.card .delta {
+  font-family: var(--mono);
+  border-top-color: var(--line-soft);
+}
+
+/*
+ * Tratamiento creciente por rareza: la legendaria es la única que se mueve
+ * sola. Si brillaran todas, no brillaría ninguna.
+ */
+.card.epic {
+  box-shadow: 0 0 18px rgba(139, 95, 214, 0.12);
+}
+
 .card.legendary {
-  box-shadow: 0 0 24px rgba(255, 178, 63, 0.16);
+  border-color: rgba(212, 160, 23, 0.45);
+  box-shadow: 0 0 28px rgba(212, 160, 23, 0.18);
+}
+
+.card.legendary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 38%, rgba(255, 236, 170, 0.16) 50%, transparent 62%);
+  transform: translateX(-120%);
+  animation: sheen 2.6s ease-in-out 0.6s infinite;
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%);
+  }
+  55%,
+  100% {
+    transform: translateX(120%);
+  }
 }
 
 @keyframes rise {
@@ -355,5 +422,10 @@ kbd {
 
   .card:hover {
     transform: none;
+  }
+
+  .card.legendary::after {
+    animation: none;
+    opacity: 0;
   }
 }

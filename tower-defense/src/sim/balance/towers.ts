@@ -15,7 +15,7 @@ export const TOWERS: readonly TowerDef[] = [
     name: 'Ballesta',
     cost: 50,
     tags: ['physical', 'single', 'fast'],
-    color: 0x7ddf7d,
+    color: 0x6fbf73,
     shot: 'bolt',
     desc: 'Rápida y barata. Un blanco por disparo.',
     base: stats({
@@ -32,7 +32,7 @@ export const TOWERS: readonly TowerDef[] = [
     name: 'Mortero',
     cost: 110,
     tags: ['physical', 'splash', 'slow'],
-    color: 0xffae5c,
+    color: 0x4f7fa8,
     shot: 'shell',
     desc: 'Lento, pega en área. Rompe grupos.',
     base: stats({
@@ -49,7 +49,7 @@ export const TOWERS: readonly TowerDef[] = [
     name: 'Prisma',
     cost: 80,
     tags: ['elemental', 'frost', 'control'],
-    color: 0x6fd0ff,
+    color: 0x7fd4e8,
     shot: 'shard',
     desc: 'Poco daño, ralentiza al que toca.',
     base: stats({

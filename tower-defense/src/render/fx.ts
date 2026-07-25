@@ -1,15 +1,17 @@
 import { Container, Sprite, Text, Texture } from 'pixi.js'
+import { SEMANTIC } from './palette'
 
 /**
- * Juice: particulas, numeros de dano, ondas de explosion y screen shake.
+ * Juice: partículas, números de daño, ondas de explosión, cadáveres y shake.
  *
- * Todo esta pooleado. Crear/destruir Sprites y Texts por frame es el camino
- * mas corto a que el GC te coma los 60fps.
+ * Todo está pooleado. Crear y destruir Sprites y Texts por frame es el camino
+ * más corto a que el GC te coma los 60fps.
  */
 
-const MAX_PARTICLES = 600
+const MAX_PARTICLES = 700
 const MAX_NUMBERS = 48
-const MAX_RINGS = 32
+const MAX_RINGS = 40
+const MAX_CORPSES = 64
 
 interface Particle {
   sprite: Sprite
@@ -18,35 +20,58 @@ interface Particle {
   life: number
   maxLife: number
   drag: number
+  spin: number
+  grow: number
+}
+
+interface Corpse {
+  sprite: Sprite
+  life: number
+  maxLife: number
+  vx: number
+  vy: number
+  baseScale: number
 }
 
 export class FxLayer {
   readonly container = new Container()
+  /** Los cadáveres van debajo de las unidades vivas. */
+  readonly backContainer = new Container()
+
   private particles: Particle[] = []
   private pFree: number[] = []
   private numbers: { text: Text; vy: number; life: number }[] = []
   private nFree: number[] = []
   private rings: { sprite: Sprite; life: number; maxLife: number; target: number }[] = []
   private rFree: number[] = []
+  private corpses: Corpse[] = []
+  private cFree: number[] = []
 
   shakeAmount = 0
   shakeX = 0
   shakeY = 0
 
-  private t = 0
-
   constructor(
-    private dot: Texture,
+    private soft: Texture,
     private ring: Texture,
   ) {
     this.container.eventMode = 'none'
+    this.backContainer.eventMode = 'none'
 
+    for (let i = 0; i < MAX_CORPSES; i++) {
+      const s = new Sprite()
+      s.anchor.set(0.5)
+      s.visible = false
+      this.backContainer.addChild(s)
+      this.corpses.push({ sprite: s, life: 0, maxLife: 1, vx: 0, vy: 0, baseScale: 1 })
+      this.cFree.push(i)
+    }
     for (let i = 0; i < MAX_PARTICLES; i++) {
-      const s = new Sprite(this.dot)
+      const s = new Sprite(this.soft)
       s.anchor.set(0.5)
       s.visible = false
       this.container.addChild(s)
-      this.particles.push({ sprite: s, vx: 0, vy: 0, life: 0, maxLife: 1, drag: 3 })
+      this.particles.push({ sprite: s, vx: 0, vy: 0, life: 0, maxLife: 1, drag: 3, spin: 0, grow: 0 })
       this.pFree.push(i)
     }
     for (let i = 0; i < MAX_RINGS; i++) {
@@ -60,7 +85,12 @@ export class FxLayer {
     for (let i = 0; i < MAX_NUMBERS; i++) {
       const t = new Text({
         text: '',
-        style: { fontFamily: 'monospace', fontSize: 14, fill: 0xffffff, fontWeight: '700' },
+        style: {
+          fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
+          fontSize: 13,
+          fill: 0xffffff,
+          fontWeight: '700',
+        },
       })
       t.anchor.set(0.5)
       t.visible = false
@@ -70,24 +100,66 @@ export class FxLayer {
     }
   }
 
-  burst(x: number, y: number, color: number, count = 6, power = 90): void {
+  burst(x: number, y: number, color: number, count = 6, power = 90, size = 1): void {
     for (let k = 0; k < count; k++) {
       const i = this.pFree.pop()
       if (i === undefined) return
       const p = this.particles[i]
       const a = Math.random() * Math.PI * 2
-      const sp = power * (0.4 + Math.random() * 0.8)
+      const sp = power * (0.35 + Math.random() * 0.9)
       p.vx = Math.cos(a) * sp
       p.vy = Math.sin(a) * sp
-      p.maxLife = 0.25 + Math.random() * 0.3
+      p.maxLife = 0.24 + Math.random() * 0.34
       p.life = p.maxLife
-      p.drag = 4
+      p.drag = 4.5
+      p.spin = 0
+      p.grow = -0.7
       p.sprite.visible = true
       p.sprite.position.set(x, y)
       p.sprite.tint = color
-      p.sprite.scale.set(0.5 + Math.random() * 0.5)
+      p.sprite.scale.set((size * (0.22 + Math.random() * 0.28)))
       p.sprite.alpha = 1
     }
+  }
+
+  /** Humo lento, para muertes y explosiones. Crece en vez de encogerse. */
+  smoke(x: number, y: number, color: number, count = 5): void {
+    for (let k = 0; k < count; k++) {
+      const i = this.pFree.pop()
+      if (i === undefined) return
+      const p = this.particles[i]
+      const a = Math.random() * Math.PI * 2
+      const sp = 18 + Math.random() * 26
+      p.vx = Math.cos(a) * sp
+      p.vy = Math.sin(a) * sp - 12
+      p.maxLife = 0.5 + Math.random() * 0.5
+      p.life = p.maxLife
+      p.drag = 2.2
+      p.spin = 0
+      p.grow = 0.9
+      p.sprite.visible = true
+      p.sprite.position.set(x, y)
+      p.sprite.tint = color
+      p.sprite.scale.set(0.25 + Math.random() * 0.2)
+      p.sprite.alpha = 0.55
+    }
+  }
+
+  corpse(texture: Texture, x: number, y: number, rotation: number, scale: number, tint: number): void {
+    const i = this.cFree.pop()
+    if (i === undefined) return
+    const c = this.corpses[i]
+    c.sprite.texture = texture
+    c.sprite.visible = true
+    c.sprite.position.set(x, y)
+    c.sprite.rotation = rotation
+    c.sprite.tint = tint
+    c.sprite.alpha = 1
+    c.baseScale = scale
+    c.maxLife = 0.55
+    c.life = c.maxLife
+    c.vx = (Math.random() - 0.5) * 26
+    c.vy = (Math.random() - 0.5) * 26
   }
 
   ringAt(x: number, y: number, radius: number, color: number): void {
@@ -110,7 +182,7 @@ export class FxLayer {
     const n = this.numbers[i]
     n.text.text = crit ? `${Math.round(value)}!` : `${Math.round(value)}`
     n.text.style.fontSize = crit ? 19 : 13
-    n.text.style.fill = crit ? 0xffd166 : 0xffffff
+    n.text.style.fill = crit ? SEMANTIC.crit : 0xe8e0cc
     n.text.visible = true
     n.text.alpha = 1
     n.text.position.set(x + (Math.random() - 0.5) * 10, y - 8)
@@ -123,8 +195,6 @@ export class FxLayer {
   }
 
   update(dt: number): void {
-    this.t += dt
-
     for (let i = 0; i < this.particles.length; i++) {
       const p = this.particles[i]
       if (p.life <= 0) continue
@@ -136,10 +206,34 @@ export class FxLayer {
       }
       const k = 1 - p.drag * dt
       p.vx *= k
-      p.vy = p.vy * k + 160 * dt
+      p.vy = p.vy * k + 120 * dt
       p.sprite.x += p.vx * dt
       p.sprite.y += p.vy * dt
-      p.sprite.alpha = p.life / p.maxLife
+      const t = p.life / p.maxLife
+      p.sprite.alpha = t * (p.grow > 0 ? 0.55 : 1)
+      if (p.grow !== 0) {
+        const s = p.sprite.scale.x * (1 + p.grow * dt)
+        p.sprite.scale.set(Math.max(0.02, s))
+      }
+    }
+
+    for (let i = 0; i < this.corpses.length; i++) {
+      const c = this.corpses[i]
+      if (c.life <= 0) continue
+      c.life -= dt
+      if (c.life <= 0) {
+        c.sprite.visible = false
+        this.cFree.push(i)
+        continue
+      }
+      const t = 1 - c.life / c.maxLife
+      c.vx *= 1 - 3 * dt
+      c.vy *= 1 - 3 * dt
+      c.sprite.x += c.vx * dt
+      c.sprite.y += c.vy * dt
+      // Se aplasta contra el suelo y se desvanece.
+      c.sprite.scale.set(c.baseScale * (1 + t * 0.35), c.baseScale * (1 - t * 0.75))
+      c.sprite.alpha = 1 - t
     }
 
     for (let i = 0; i < this.rings.length; i++) {
