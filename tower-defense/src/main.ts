@@ -22,7 +22,7 @@ ui.onRestart = () => {
 
 // ------------------------------------------------------------------ input
 
-const canvas = renderer.app.canvas
+const canvas = renderer.canvas
 let mouseX = -999
 let mouseY = -999
 
@@ -86,7 +86,7 @@ window.addEventListener('keydown', (ev) => {
 
 const loop = new FixedLoop()
 
-renderer.app.ticker.add((ticker) => {
+renderer.ticker.add((ticker) => {
   const dtMs = ticker.deltaMS
   // La sim avanza SIEMPRE en tics de 1/60s; alpha interpola el sobrante.
   const alpha = loop.update(dtMs, () => game.tick())

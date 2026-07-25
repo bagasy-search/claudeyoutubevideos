@@ -1,4 +1,8 @@
-import { Application, Container, Graphics, Sprite, Texture } from 'pixi.js'
+// Registra las extensiones del entorno browser de forma estatica. Junto con
+// `skipExtensionImports` en init(), evita que Pixi las cargue con import()
+// dinamico — necesario para poder empaquetar todo en un solo archivo.
+import 'pixi.js/browser'
+import { Container, Graphics, Sprite, Texture, Ticker, WebGLRenderer } from 'pixi.js'
 import type { Game } from '../sim/game'
 import { FIELD_H, FIELD_W } from '../sim/game'
 import { MAX_ENEMIES, MAX_PROJECTILES } from '../sim/world'
@@ -12,7 +16,16 @@ import { FxLayer } from './fx'
  * sin que se vea a saltos.
  */
 export class Renderer {
-  app = new Application()
+  /**
+   * Se instancia WebGLRenderer a mano en vez de usar Application. La
+   * autodeteccion de Pixi carga los renderers con import() dinamico, y al
+   * aplanar todo en un unico archivo esos modulos quedan en orden incorrecto y
+   * revientan con un TDZ ("Cannot access X before initialization").
+   */
+  renderer = new WebGLRenderer()
+  readonly stage = new Container()
+  readonly ticker = new Ticker()
+  canvas!: HTMLCanvasElement
   fx!: FxLayer
 
   private world = new Container()
@@ -38,30 +51,37 @@ export class Renderer {
   private time = 0
 
   async init(game: Game, parent: HTMLElement): Promise<void> {
-    await this.app.init({
+    await this.renderer.init({
       width: FIELD_W,
       height: FIELD_H,
       background: 0x11151c,
       antialias: true,
       resolution: Math.min(2, window.devicePixelRatio || 1),
       autoDensity: true,
+      skipExtensionImports: true,
     })
-    parent.appendChild(this.app.canvas)
+    this.canvas = this.renderer.canvas
+    parent.appendChild(this.canvas)
 
     this.buildTextures()
     this.fx = new FxLayer(this.dotTex, this.ringTex)
 
     this.world.addChild(this.bg, this.rangeLayer, this.enemyLayer, this.towerLayer, this.projLayer, this.fx.container)
     this.world.addChild(this.rangePreview, this.ghost)
-    this.app.stage.addChild(this.world)
+    this.stage.addChild(this.world)
 
     this.drawBackground(game)
     this.allocPools()
     this.wireEvents(game)
+
+    // Prioridad baja: el dibujado corre despues de que la logica del frame
+    // actualizo posiciones e interpolacion.
+    this.ticker.add(() => this.renderer.render(this.stage), null, -100)
+    this.ticker.start()
   }
 
   private buildTextures(): void {
-    const r = this.app.renderer
+    const r = this.renderer
 
     const dot = new Graphics().circle(0, 0, 16).fill(0xffffff)
     this.dotTex = r.generateTexture({ target: dot, resolution: 2 })

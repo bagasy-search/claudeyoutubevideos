@@ -1,4 +1,10 @@
+/*
+ * Tema unico a proposito: es la pantalla de un juego, no un documento. El campo
+ * de batalla necesita fondo oscuro para que el HP, los criticos y las
+ * explosiones tengan contraste, asi que no sigue el tema del sistema.
+ */
 :root {
+  color-scheme: dark;
   --bg: #0c0f14;
   --panel: #161c26;
   --panel-2: #1e2632;
@@ -12,6 +18,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
 }
 
 body {
@@ -30,6 +40,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: min(960px, 100%);
+  padding: 12px;
 }
 
 #hud {
@@ -37,6 +49,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -150,11 +163,21 @@ button.primary:hover:not(:disabled) {
   box-shadow: inset 0 0 0 1px var(--accent);
 }
 
+/*
+ * Pixi escribe el tamano del canvas como estilo inline (autoDensity), asi que
+ * hace falta !important para que escale con el contenedor. La logica de input
+ * ya convierte de pixeles de pantalla a coordenadas de campo con
+ * getBoundingClientRect, asi que escalar no rompe el click.
+ */
 #stage canvas {
   display: block;
   border-radius: 12px;
   border: 1px solid var(--line);
   cursor: crosshair;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 960 / 600;
+  touch-action: none;
 }
 
 #tips {
@@ -219,10 +242,12 @@ kbd {
   gap: 16px;
   justify-content: center;
   margin-bottom: 18px;
+  flex-wrap: wrap;
+  padding: 0 12px;
 }
 
 .card {
-  width: 232px;
+  width: min(232px, 82vw);
   background: linear-gradient(180deg, var(--panel) 0%, #10151d 100%);
   border: 1px solid var(--line);
   border-top: 3px solid var(--rarity, #888);
@@ -313,5 +338,22 @@ kbd {
   }
   to {
     opacity: 1;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  #draft,
+  #gameover {
+    animation: none;
+  }
+
+  .card:hover {
+    transform: none;
   }
 }
