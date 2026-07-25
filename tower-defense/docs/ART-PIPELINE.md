@@ -71,6 +71,32 @@ aparta del blanco puro y sigue siendo fondo; `-1` si el PNG ya viene con alfa),
   solo los inclina.
 - **Cantidad de frames libre**: el ciclo se recorre sobre los que haya.
 
+## Desde un modelo 3D (Meshy, Tripo, lo que sea)
+
+`tools/render_sprites.py` convierte un GLB o FBX animado en los frames PNG.
+Corre dentro de Blender, o con el modulo `bpy` si no lo tenes instalado:
+
+```bash
+pip install bpy
+python3 tools/render_sprites.py modelo.glb --out frames/ --frames 12
+python3 tools/prep_sprite.py frames/*.png --radius 40 --out-dir public/art/coloso --tolerance -1
+```
+
+(`--tolerance -1` porque el render ya sale con alfa: no hay fondo blanco que quitar.)
+
+Esta es la ruta que resuelve la consistencia de raiz: los frames son renders del
+**mismo** modelo, asi que calzan por construccion. Una IA de imagenes no puede
+garantizar eso.
+
+El script pone camara ortografica al frente (sin perspectiva, para que el
+personaje no cambie de proporcion segun donde este parado), luz pareja y fondo
+transparente. **El contorno no lo hace el render**: se probo con casco invertido
+en 3D y es fragil — el grosor queda en unidades de mundo en vez de pixeles, en
+mallas poco densas la tinta asoma como una rejilla entre vertices, y Cycles
+ignora el culling de caras en el que el truco se apoya. El contorno del estilo
+chibi es una propiedad de pantalla, asi que lo agrega `prep_sprite.py` con
+`--outline`, donde ademas sirve igual para arte 2D.
+
 ## El camino gratis, de punta a punta
 
 Para lograr el registro chibi ilustrado sin pagar nada:

@@ -34,7 +34,7 @@ import os
 import sys
 
 try:
-    from PIL import Image
+    from PIL import Image, ImageFilter
 except ImportError:
     sys.exit("Falta Pillow.  pip install Pillow")
 
@@ -59,6 +59,28 @@ def white_to_alpha(img: Image.Image, tolerance: int) -> Image.Image:
             if a > 0 and r >= limit and g >= limit and b >= limit:
                 px[x, y] = (r, g, b, 0)
     return img
+
+
+def add_outline(img: Image.Image, width: int, color: tuple[int, int, int]) -> Image.Image:
+    """
+    Contorno por dilatacion del alfa.
+
+    Se hace en 2D y no en el render 3D a proposito: el contorno del estilo chibi
+    es una propiedad de PANTALLA — tantos pixeles, siempre los mismos, sin
+    importar si el personaje es grande o chico. Un casco invertido en 3D da un
+    grosor en unidades de mundo, que cambia con la escala del modelo y se rompe
+    en mallas poco densas. Ademas asi sirve igual para arte 2D que nunca paso
+    por un render.
+    """
+    if width <= 0:
+        return img
+    alpha = img.getchannel("A")
+    # MaxFilter dilata: cada pixel toma el maximo de su vecindario.
+    grown = alpha.filter(ImageFilter.MaxFilter(width * 2 + 1))
+    ink = Image.new("RGBA", img.size, color + (255,))
+    ink.putalpha(grown)
+    ink.alpha_composite(img)
+    return ink
 
 
 def _median(values: list[float]) -> float:
@@ -93,7 +115,15 @@ def feet_center_x(img: Image.Image, band: float) -> float:
     return _median(centers)
 
 
-def prep(path: str, radius: int, pixel_ratio: int, tolerance: int, band: float) -> Image.Image:
+def prep(
+    path: str,
+    radius: int,
+    pixel_ratio: int,
+    tolerance: int,
+    band: float,
+    outline: int,
+    ink: tuple[int, int, int],
+) -> Image.Image:
     img = Image.open(path).convert("RGBA")
 
     if tolerance >= 0:
@@ -122,7 +152,10 @@ def prep(path: str, radius: int, pixel_ratio: int, tolerance: int, band: float) 
     left = round(cx - anchor_x)
     top = round(cy + FEET_OFFSET * radius * pixel_ratio - content.height)
     canvas.alpha_composite(content, (left, top))
-    return canvas
+
+    # El contorno va al final, sobre el lienzo ya escalado: asi su grosor esta
+    # en pixeles de juego y sale igual en todos los personajes.
+    return add_outline(canvas, outline * pixel_ratio, ink)
 
 
 def main() -> None:
@@ -139,6 +172,8 @@ def main() -> None:
         help="cuanto se aparta del blanco puro y sigue siendo fondo. -1 para no tocar el alfa.",
     )
     ap.add_argument("--band", type=float, default=0.12, help="franja inferior usada como pies")
+    ap.add_argument("--outline", type=int, default=2, help="grosor del contorno en pixeles de juego (0 lo desactiva)")
+    ap.add_argument("--ink", default="2b1a12", help="color del contorno en hex")
     args = ap.parse_args()
 
     if args.out and len(args.inputs) > 1:
@@ -148,7 +183,8 @@ def main() -> None:
 
     outputs = []
     for i, path in enumerate(sorted(args.inputs)):
-        img = prep(path, args.radius, args.pixel_ratio, args.tolerance, args.band)
+        ink = tuple(int(args.ink[i : i + 2], 16) for i in (0, 2, 4))
+        img = prep(path, args.radius, args.pixel_ratio, args.tolerance, args.band, args.outline, ink)
         if args.out:
             dest = args.out
         else:
