@@ -13,17 +13,24 @@ import type { Atlas } from './sprites'
  * Nada de esto toca la simulacion. Cambia de donde salen las texturas y ya.
  */
 
+/**
+ * Una entrada puede ser la ruta pelada o llevar `pixelRatio` cuando el PNG se
+ * exportó a mayor densidad. Un PNG de 336 px con pixelRatio 2 mide 168 px de
+ * juego y se ve nítido en pantallas densas.
+ */
+export type ArtEntry = string | { path: string; pixelRatio?: number }
+
 export interface ArtManifest {
   /**
    * Frames del ciclo de caminata por enemigo, en orden.
    * La cantidad puede ser distinta de WALK_FRAMES: el render cicla sobre lo que haya.
    */
-  enemies?: Record<string, string[]>
-  towerBase?: Record<string, string>
-  towerTurret?: Record<string, string>
-  projectiles?: string[]
-  portal?: string
-  core?: string
+  enemies?: Record<string, ArtEntry[]>
+  towerBase?: Record<string, ArtEntry>
+  towerTurret?: Record<string, ArtEntry>
+  projectiles?: ArtEntry[]
+  portal?: ArtEntry
+  core?: ArtEntry
 }
 
 export interface LoadReport {
@@ -51,9 +58,21 @@ export async function applyExternalArt(atlas: Atlas, manifestUrl: string): Promi
   const base = new URL(manifestUrl, location.href)
   const resolve = (p: string) => new URL(p, base).href
 
-  const load = async (path: string): Promise<Texture | null> => {
+  const load = async (entry: ArtEntry): Promise<Texture | null> => {
+    const path = typeof entry === 'string' ? entry : entry.path
+    const pixelRatio = typeof entry === 'string' ? 1 : (entry.pixelRatio ?? 1)
     try {
-      return await Assets.load<Texture>(resolve(path))
+      /*
+       * La resolucion va como opcion de CARGA, no asignada despues. Mutar
+       * `source.resolution` sobre una textura ya creada deja el frame calculado
+       * con el tamaño viejo: la textura queda descuadrada y el sprite no dibuja
+       * nada. Pasandola al loader, el frame se calcula bien de entrada.
+       */
+      const tex = await Assets.load<Texture>({
+        src: resolve(path),
+        data: { resolution: pixelRatio },
+      })
+      return tex
     } catch {
       report.missing.push(path)
       return null

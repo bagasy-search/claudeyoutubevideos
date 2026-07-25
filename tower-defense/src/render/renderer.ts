@@ -10,7 +10,7 @@ import { MAX_ENEMIES, MAX_PROJECTILES } from '../sim/world'
 import { applyExternalArt } from './externalArt'
 import { FxLayer } from './fx'
 import { GROUND, SEMANTIC, darken, ink, lighten, mix } from './palette'
-import { TOWER_R, WALK_FRAMES, buildAtlas, type Atlas } from './sprites'
+import { TOWER_R, buildAtlas, type Atlas } from './sprites'
 
 /**
  * Capa de render. Solo LEE el estado de la simulacion — no lo modifica nunca.
@@ -324,12 +324,16 @@ export class Renderer {
       // van al ritmo del suelo y un enemigo ralentizado camina mas lento gratis.
       const stride = Math.max(10, def.radius * 1.6)
       const dist = e.prevDist[i] + (e.dist[i] - e.prevDist[i]) * alpha
-      const frame = Math.floor((dist / stride) * WALK_FRAMES) % WALK_FRAMES
+      // Se cicla sobre los frames que HAYA, no sobre WALK_FRAMES: el arte
+      // externo puede traer otra cantidad, y pedir un indice inexistente deja
+      // la textura en undefined y el sprite no dibuja nada.
+      const count = frames.length
+      const frame = Math.floor((dist / stride) * count) % count
       const angle = path.angleAt(e.dist[i])
       const scale = e.elite[i] ? 1.35 : 1
 
       v.body.visible = true
-      v.body.texture = frames[(frame + WALK_FRAMES) % WALK_FRAMES]
+      v.body.texture = frames[(frame + count) % count]
       v.body.position.set(x, y)
       // Vista frontal: el sprite NO rota con el camino. Solo se inclina hacia
       // donde va, que es suficiente para comunicar direccion sin acostar al

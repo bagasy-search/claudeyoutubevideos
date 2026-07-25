@@ -10,6 +10,12 @@ const game = new Game({ seed })
 const renderer = new Renderer()
 await renderer.init(game, document.getElementById('stage')!)
 
+// Solo en dev: engancha el juego a window para poder inspeccionarlo desde la
+// consola o desde un script de pruebas. No entra en el build de produccion.
+if (import.meta.env.DEV) {
+  ;(window as unknown as { game: Game }).game = game
+}
+
 const ui = new Ui(game)
 ui.onStartWave = () => game.startWave()
 ui.onPick = (id) => game.pickUpgrade(id)
