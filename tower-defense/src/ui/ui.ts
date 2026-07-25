@@ -14,6 +14,7 @@ export class Ui {
   onPick: (id: string) => void = () => {}
   onReroll: () => void = () => {}
   onRestart: () => void = () => {}
+  onToggleSound: () => boolean = () => true
 
   private el = {
     wave: byId('hud-wave'),
@@ -31,6 +32,7 @@ export class Ui {
     gameover: byId('gameover'),
     goSummary: byId('go-summary'),
     restart: byId('btn-restart') as HTMLButtonElement,
+    sound: byId('btn-sound') as HTMLButtonElement,
     tip: byId('tip-msg'),
   }
 
@@ -42,6 +44,7 @@ export class Ui {
     this.el.start.addEventListener('click', () => this.onStartWave())
     this.el.reroll.addEventListener('click', () => this.onReroll())
     this.el.restart.addEventListener('click', () => this.onRestart())
+    this.el.sound.addEventListener('click', () => this.toggleSound())
     this.el.seed.textContent = `seed ${game.seed}`
 
     game.events.on('draft', ({ options }) => this.showDraft(options))
@@ -73,6 +76,14 @@ export class Ui {
       this.el.towerBar.appendChild(btn)
       this.towerButtons.set(def.id, btn)
     })
+  }
+
+  /** Devuelve el estado nuevo, para que quien llame no tenga que adivinarlo. */
+  toggleSound(): boolean {
+    const on = this.onToggleSound()
+    this.el.sound.textContent = on ? '🔊' : '🔇'
+    this.el.sound.title = on ? 'Silenciar (M)' : 'Activar sonido (M)'
+    return on
   }
 
   selectTower(id: string | null): void {

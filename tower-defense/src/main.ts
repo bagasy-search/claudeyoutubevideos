@@ -1,3 +1,4 @@
+import { sfx } from './audio/sfx'
 import { FixedLoop } from './core/loop'
 import { Renderer } from './render/renderer'
 import { Game } from './sim/game'
@@ -18,13 +19,36 @@ if (import.meta.env.DEV) {
 
 const ui = new Ui(game)
 ui.onStartWave = () => game.startWave()
-ui.onPick = (id) => game.pickUpgrade(id)
+ui.onPick = (id) => {
+  sfx.cardPick()
+  game.pickUpgrade(id)
+}
+ui.onToggleSound = () => {
+  const on = !sfx.enabled
+  sfx.setEnabled(on)
+  return on
+}
 ui.onReroll = () => game.reroll()
 ui.onRestart = () => {
   const url = new URL(location.href)
   url.searchParams.set('seed', String((Math.random() * 1e9) | 0))
   location.href = url.toString()
 }
+
+// ------------------------------------------------------------------ audio
+
+// El sonido escucha los mismos eventos que el render. La simulacion no sabe que
+// existe, igual que no sabe que existe Pixi.
+game.events.on('fire', ({ tower }) => sfx.shoot(tower.shot))
+game.events.on('hit', ({ crit }) => sfx.hit(crit))
+game.events.on('kill', ({ elite }) => sfx.death(elite))
+game.events.on('splash', () => sfx.splash())
+game.events.on('leak', () => sfx.leak())
+game.events.on('phase', ({ phase }) => {
+  if (phase === 'combat') sfx.waveStart()
+  else if (phase === 'draft') sfx.waveClear()
+  else if (phase === 'gameover') sfx.gameOver()
+})
 
 // ------------------------------------------------------------------ input
 
@@ -62,16 +86,21 @@ canvas.addEventListener('pointerdown', (ev) => {
   const check = game.canPlace(p.x, p.y, ui.selectedTower)
   if (!check.ok) {
     ui.tip(check.reason ?? 'no se puede construir ahi')
+    sfx.denied()
     return
   }
   game.placeTower(p.x, p.y, ui.selectedTower)
+  sfx.build()
 })
 
 canvas.addEventListener('contextmenu', (ev) => {
   ev.preventDefault()
   const p = toField(ev)
   const t = towerAt(p.x, p.y)
-  if (t) game.sellTower(t.id)
+  if (t) {
+    game.sellTower(t.id)
+    sfx.sell()
+  }
 })
 
 window.addEventListener('keydown', (ev) => {
@@ -81,6 +110,7 @@ window.addEventListener('keydown', (ev) => {
     return
   }
   if (ev.key === 'Escape') ui.selectTower(null)
+  if (ev.key === 'm' || ev.key === 'M') ui.toggleSound()
   if (ev.key === 'r' || ev.key === 'R') {
     if (game.phase === 'draft') game.reroll()
   }

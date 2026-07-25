@@ -39,12 +39,23 @@ export class EnemyPool {
   readonly elite = new Uint8Array(MAX_ENEMIES)
   /** 0..1, para el flash blanco al recibir dano (solo render). */
   readonly flash = new Float32Array(MAX_ENEMIES)
+  /**
+   * Semilla estable por instancia, en 0..1. La usa SOLO el render para variar
+   * tono, tamaño y fase de animacion entre individuos del mismo tipo. Sin esto
+   * una oleada es un ejercito de clones sincronizados, que es la marca mas
+   * obvia de arte generado a maquina.
+   *
+   * Vive en la sim y no en el render porque tiene que sobrevivir a que el
+   * sprite se recicle, y porque sale del RNG semillado: dos runs con la misma
+   * seed tienen que verse identicas.
+   */
+  readonly variant = new Float32Array(MAX_ENEMIES)
 
   private free: number[] = []
   private cursor = 0
   count = 0
 
-  spawn(defIdx: number, hpMul: number, isElite: boolean): number {
+  spawn(defIdx: number, hpMul: number, isElite: boolean, variant = 0): number {
     let i: number
     if (this.free.length > 0) i = this.free.pop()!
     else if (this.cursor < MAX_ENEMIES) i = this.cursor++
@@ -67,6 +78,7 @@ export class EnemyPool {
     this.burnDps[i] = 0
     this.elite[i] = isElite ? 1 : 0
     this.flash[i] = 0
+    this.variant[i] = variant
     this.count++
     return i
   }

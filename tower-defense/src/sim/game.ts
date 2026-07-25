@@ -157,7 +157,8 @@ export class Game {
     if (plan) {
       while (this.spawnCursor < plan.entries.length && plan.entries[this.spawnCursor].time <= this.waveTime) {
         const entry = plan.entries[this.spawnCursor++]
-        this.world.enemies.spawn(entry.defIdx, entry.hpMul, entry.elite)
+        // La variacion sale del RNG de la sim para que sea reproducible.
+        this.world.enemies.spawn(entry.defIdx, entry.hpMul, entry.elite, this.simRng.next())
       }
     }
 
