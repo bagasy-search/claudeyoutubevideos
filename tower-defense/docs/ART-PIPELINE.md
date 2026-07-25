@@ -97,6 +97,28 @@ ignora el culling de caras en el que el truco se apoya. El contorno del estilo
 chibi es una propiedad de pantalla, asi que lo agrega `prep_sprite.py` con
 `--outline`, donde ademas sirve igual para arte 2D.
 
+## Desde un video de preview
+
+`tools/video_to_frames.py` saca frames con alfa de un video (el preview que
+muestra Meshy al lado de la animacion, por ejemplo).
+
+```bash
+pip install imageio imageio-ffmpeg Pillow
+python3 tools/video_to_frames.py preview.mp4 --out frames/ --frames 8
+python3 tools/prep_sprite.py frames/*.png --radius 20 --out-dir public/art/bicho --tolerance -1
+```
+
+**Es un plan B.** Si tenes el modelo, exporta el GLB y usa `render_sprites.py`:
+sale con alfa real, a la resolucion que quieras y con la camara que elijas. El
+video ya viene aplastado por el codec y con el personaje chico dentro del cuadro.
+
+El recorte no va por color plano, que es lo obvio y falla por dos lados: la
+sombra proyectada no es del color del fondo y queda pegada, y filtrar "todo lo
+gris" borra los ojos, que son blancos y negros. Lo que se hace es marcar los
+pixeles poco saturados y **rellenar desde los bordes**: solo se borra el gris
+conectado con el borde del cuadro, asi que los ojos sobreviven porque estan
+rodeados de personaje.
+
 ## El camino gratis, de punta a punta
 
 Para lograr el registro chibi ilustrado sin pagar nada:
