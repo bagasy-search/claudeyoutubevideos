@@ -58,7 +58,10 @@ const beats = [...rawBeats];
 let nOv = 0;
 const compCount = {};
 const OPEN_CLEAR = 3.5;  // los primeros ~3.5s: avatar full SIN cartel (regla dura de apertura)
-const MIN_GAP = 7;       // nunca dos componentes encimados/pegados: mínimo 7s entre overlays
+const MIN_GAP = 13;      // nunca dos componentes encimados/pegados: mínimo 13s entre overlays.
+// (auditoría cuadrícula jul 2026: con 7s quedaban 59 carteles = 32% del video tapado por tarjetas
+//  crema; el b-roll es la identidad del canal. Con 13s bajan a ~40 y respira.)
+const ZONE_FIX = { top: "topLeft" }; // la franja "top" (1824px) tapa casi todo el ancho → achicar
 // resolver el ms de cada componente (por frase o pre-resuelto) y ordenar antes de filtrar
 const resolved = [];
 for (const p of PREMIUM) {
@@ -76,12 +79,14 @@ for (const p of resolved) {
   beats.push({
     id: `ov_${p.comp.toLowerCase()}_${Math.round(s)}`,
     start: +s.toFixed(2),
-    dur: p.dur || 6,
+    // ≤5.5s en pantalla: la tarjeta se lee en 2s, más tiempo es tapar b-roll.
+    // +0.4s de colchón para que el spring de entrada nunca se coma la mitad del plano.
+    dur: Math.min(p.dur || 5.5, 5.5) + 0.4,
     kind: "premium",
     overlay: true,
     comp: p.comp,
     theme: "earth",
-    zone: p.zone || "topLeft",
+    zone: ZONE_FIX[p.zone] || p.zone || "topLeft",
     ...(p.props || {}),
   });
   nOv++;

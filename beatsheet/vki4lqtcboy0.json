@@ -65,12 +65,12 @@
   {
    "id": "ov_highlightsweep_19",
    "start": 18.84,
-   "dur": 5.4,
+   "dur": 5.800000000000001,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "Hoy esa olla",
    "highlight": "no hierve en ninguna casa",
    "post": ".",
@@ -128,7 +128,7 @@
   {
    "id": "ov_pullquote_37",
    "start": 37.06,
-   "dur": 5.4,
+   "dur": 5.800000000000001,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
@@ -189,12 +189,12 @@
   {
    "id": "ov_hookcaption_53",
    "start": 53.14,
-   "dur": 6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "HookCaption",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "words": [
     {
      "text": "Veinticinco"
@@ -265,12 +265,12 @@
   {
    "id": "ov_stampbadge_70",
    "start": 70.26,
-   "dur": 5,
+   "dur": 5.4,
    "kind": "premium",
    "overlay": true,
    "comp": "StampBadge",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "text": "UNO SOLO",
    "sub": "dejó de hacerse de un día para otro",
    "x": 0.5,
@@ -388,7 +388,7 @@
   {
    "id": "ov_bigstatreveal_105",
    "start": 104.64,
-   "dur": 5.6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "BigStatReveal",
@@ -493,12 +493,12 @@
   {
    "id": "ov_chaptertitle_129",
    "start": 129.32,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "1",
    "title": "El puchero",
    "sub": "la olla que hervía toda la mañana"
@@ -532,25 +532,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.62
-  },
-  {
-   "id": "ov_checklistreveal_139",
-   "start": 139.2,
-   "dur": 6.4,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "ChecklistReveal",
-   "theme": "earth",
-   "zone": "left",
-   "title": "Lo que iba en la olla",
-   "stamp": "OLLA",
-   "items": [
-    "Carne dura, de la más barata",
-    "Huesos con tuétano",
-    "Una mazorca de maíz",
-    "Papa, zapallo y batata",
-    "Una zanahoria entera"
-   ]
   },
   {
    "id": "vki4lqtcboy0_s_044",
@@ -595,7 +576,7 @@
   {
    "id": "ov_layerstack_149",
    "start": 149.26,
-   "dur": 6.6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "LayerStack",
@@ -663,7 +644,7 @@
   {
    "id": "ov_pullquote_163",
    "start": 162.62,
-   "dur": 5.8,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
@@ -743,12 +724,12 @@
   {
    "id": "ov_vsduel_183",
    "start": 182.76,
-   "dur": 6.2,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "VsDuel",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "eyebrow": "Por qué se dejó de hacer",
    "title": "Cuatro horas contra tres minutos",
    "left": {
@@ -791,19 +772,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.08
-  },
-  {
-   "id": "ov_chaptertitle_191",
-   "start": 191.48,
-   "dur": 4.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "ChapterTitle",
-   "theme": "earth",
-   "zone": "top",
-   "number": "2",
-   "title": "La sopa de pan",
-   "sub": "el arte de convertir la nada en algo"
   },
   {
    "id": "vki4lqtcboy0_s_062",
@@ -858,7 +826,7 @@
   {
    "id": "ov_numberedsteps_213",
    "start": 212.54,
-   "dur": 6.6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "NumberedSteps",
@@ -977,12 +945,12 @@
   {
    "id": "ov_highlightsweep_241",
    "start": 241.44,
-   "dur": 5.2,
+   "dur": 5.6000000000000005,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "Muchas noches esa sopa era toda la cena.",
    "highlight": "Y nadie se sintió pobre",
    "post": ".",
@@ -1016,17 +984,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.4
-  },
-  {
-   "id": "ov_pullquote_252",
-   "start": 252.32,
-   "dur": 5.4,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "PullQuote",
-   "theme": "earth",
-   "zone": "topLeft",
-   "quote": "El que come caliente duerme tranquilo."
   },
   {
    "id": "vki4lqtcboy0_s_079",
@@ -1071,12 +1028,12 @@
   {
    "id": "ov_chaptertitle_265",
    "start": 264.74,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "3",
    "title": "El locro",
    "sub": "la olla que salía dos veces al año"
@@ -1110,24 +1067,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 2.76
-  },
-  {
-   "id": "ov_checklistreveal_276",
-   "start": 275.82,
-   "dur": 6.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "ChecklistReveal",
-   "theme": "earth",
-   "zone": "topLeft",
-   "title": "Cuándo se hacía el locro",
-   "stamp": "DÍA GRANDE",
-   "items": [
-    "De fiesta",
-    "De frío",
-    "Cuando venía toda la familia",
-    "Dos o tres veces al año"
-   ]
   },
   {
    "id": "vki4lqtcboy0_s_086",
@@ -1181,7 +1120,7 @@
   {
    "id": "ov_bigstatreveal_292",
    "start": 292,
-   "dur": 5.4,
+   "dur": 5.800000000000001,
    "kind": "premium",
    "overlay": true,
    "comp": "BigStatReveal",
@@ -1226,12 +1165,12 @@
   {
    "id": "ov_cycleloop_307",
    "start": 307.02,
-   "dur": 6.6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "CycleLoop",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "title": "Revolver sin parar, por turnos",
    "center": "REVOLVER",
    "nodes": [
@@ -1373,7 +1312,7 @@
   {
    "id": "ov_pullquote_347",
    "start": 347.28,
-   "dur": 6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
@@ -1402,17 +1341,6 @@
    "dur": 3.62
   },
   {
-   "id": "ov_pullquote_357",
-   "start": 356.84,
-   "dur": 5.2,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "PullQuote",
-   "theme": "earth",
-   "zone": "topLeft",
-   "quote": "Esa primera cucharada de locro caliente en un día helado. Eso no se compra."
-  },
-  {
    "id": "vki4lqtcboy0_s_108",
    "start": 358.66,
    "kind": "raw",
@@ -1431,6 +1359,19 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.36
+  },
+  {
+   "id": "ov_chaptertitle_363",
+   "start": 362.74,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "4",
+   "title": "Lentejas con hueso",
+   "sub": "una vez por semana, sí o sí"
   },
   {
    "id": "vki4lqtcboy0_s_110",
@@ -1463,12 +1404,12 @@
   {
    "id": "ov_mythtruth_377",
    "start": 376.92,
-   "dur": 6.2,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "MythTruth",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "myth": "Las lentejas son lentejas y agua",
    "truth": "Sin hueso no hay sabor: grasa, panceta y hueso con su carnecita"
   },
@@ -1499,28 +1440,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.76
-  },
-  {
-   "id": "ov_vsduel_388",
-   "start": 387.7,
-   "dur": 6.2,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "VsDuel",
-   "theme": "earth",
-   "zone": "top",
-   "eyebrow": "La misma olla, otro plato",
-   "title": "La lenteja de hoy y la de antes",
-   "left": {
-    "label": "Las de hoy",
-    "sub": "agua y una lenteja triste flotando",
-    "good": false
-   },
-   "right": {
-    "label": "Las de antes",
-    "sub": "grasa, panceta y hueso con carne",
-    "good": true
-   }
   },
   {
    "id": "vki4lqtcboy0_s_116",
@@ -1564,12 +1483,12 @@
   {
    "id": "ov_highlightsweep_402",
    "start": 401.76,
-   "dur": 5,
+   "dur": 5.4,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "La cuchara tenía que quedar parada sola.",
    "highlight": "Si se caía, faltaba fuego",
    "post": ".",
@@ -1615,31 +1534,6 @@
    "dur": 4.48
   },
   {
-   "id": "ov_flowsteps_414",
-   "start": 413.74,
-   "dur": 6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "FlowSteps",
-   "theme": "earth",
-   "zone": "top",
-   "title": "Cómo se hacía",
-   "nodes": [
-    {
-     "label": "Maíz blanco",
-     "sub": "hervido horas hasta reventar"
-    },
-    {
-     "label": "Leche",
-     "sub": "y azúcar, o miel"
-    },
-    {
-     "label": "Tibia",
-     "sub": "en plato hondo, con cuchara"
-    }
-   ]
-  },
-  {
    "id": "vki4lqtcboy0_s_124",
    "start": 417.92,
    "kind": "raw",
@@ -1648,6 +1542,36 @@
    "hue": "amber",
    "darken": 0,
    "dur": 5.06
+  },
+  {
+   "id": "ov_numberedsteps_418",
+   "start": 417.92,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Así se hacía",
+   "title": "La mazamorra",
+   "steps": [
+    {
+     "title": "Maíz blanco",
+     "sub": "del que se pone en remojo"
+    },
+    {
+     "title": "Hervir horas",
+     "sub": "hasta que revienta"
+    },
+    {
+     "title": "Leche y azúcar",
+     "sub": "o un poco de miel"
+    },
+    {
+     "title": "Servir tibia",
+     "sub": "en plato hondo, con cuchara"
+    }
+   ]
   },
   {
    "id": "vki4lqtcboy0_s_125",
@@ -1689,7 +1613,7 @@
   {
    "id": "ov_pullquote_436",
    "start": 436.46,
-   "dur": 5.4,
+   "dur": 5.800000000000001,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
@@ -1726,20 +1650,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.14
-  },
-  {
-   "id": "ov_beforeafter_446",
-   "start": 445.86,
-   "dur": 6.4,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "BeforeAfter",
-   "theme": "earth",
-   "zone": "top",
-   "eyebrow": "Dos generaciones",
-   "beforeLabel": "Antes: todos con el jarrito",
-   "afterLabel": "Hoy: te mira raro",
-   "caption": "y es de lo más antiguo que se comió en esta tierra"
   },
   {
    "id": "vki4lqtcboy0_s_132",
@@ -1784,12 +1694,12 @@
   {
    "id": "ov_chaptertitle_460",
    "start": 459.72,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "6",
    "title": "Arroz con leche",
    "sub": "media hora de cuchara, sin parar"
@@ -1833,32 +1743,6 @@
    "dur": 3.68
   },
   {
-   "id": "ov_numberedsteps_472",
-   "start": 471.94,
-   "dur": 6.4,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "NumberedSteps",
-   "theme": "earth",
-   "zone": "left",
-   "eyebrow": "El de antes",
-   "title": "Por qué quedaba cremoso",
-   "steps": [
-    {
-     "title": "Fuego lento",
-     "sub": "nunca hervor fuerte"
-    },
-    {
-     "title": "Cáscara de limón y canela en rama",
-     "sub": "flotando adentro"
-    },
-    {
-     "title": "Revolver sin parar",
-     "sub": "si parabas, se agarraba abajo"
-    }
-   ]
-  },
-  {
    "id": "vki4lqtcboy0_s_140",
    "start": 475.32,
    "kind": "raw",
@@ -1867,6 +1751,22 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.34
+  },
+  {
+   "id": "ov_bigstatreveal_475",
+   "start": 475.32,
+   "dur": 5.800000000000001,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Arroz con leche de verdad",
+   "value": 30,
+   "prefix": "",
+   "suffix": " min",
+   "source": "",
+   "support": "revolviendo sin parar, con cáscara de limón y canela en rama"
   },
   {
    "id": "vki4lqtcboy0_s_141",
@@ -1910,12 +1810,12 @@
   {
    "id": "ov_cycleloop_493",
    "start": 492.94,
-   "dur": 6.4,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "CycleLoop",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "title": "La posta de la cuchara",
    "center": "SIN PARAR",
    "nodes": [
@@ -2007,12 +1907,12 @@
   {
    "id": "ov_stampbadge_521",
    "start": 520.52,
-   "dur": 5,
+   "dur": 5.4,
    "kind": "premium",
    "overlay": true,
    "comp": "StampBadge",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "text": "LO QUEMADITO",
    "sub": "la parte que nos peleábamos",
    "x": 0.5,
@@ -2078,12 +1978,12 @@
   {
    "id": "ov_mythtruth_541",
    "start": 540.5,
-   "dur": 6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "MythTruth",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "myth": "Es el mismo postre que el del vasito del supermercado",
    "truth": "No tiene la canela dibujada con los dedos, ni la posta de la cuchara, ni la pelea por lo quemadito"
   },
@@ -2128,12 +2028,12 @@
   {
    "id": "ov_chaptertitle_556",
    "start": 555.6,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "7",
    "title": "Dulce de leche casero",
    "sub": "una hora larga de paciencia de santa"
@@ -2159,36 +2059,6 @@
    "dur": 3.54
   },
   {
-   "id": "ov_numberedsteps_563",
-   "start": 562.96,
-   "dur": 6.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "NumberedSteps",
-   "theme": "earth",
-   "zone": "topLeft",
-   "eyebrow": "Con paciencia de santa",
-   "title": "Dulce de leche en la olla",
-   "steps": [
-    {
-     "title": "Leche recién ordeñada",
-     "sub": "con azúcar"
-    },
-    {
-     "title": "Fuego bajísimo",
-     "sub": "nunca a hervor"
-    },
-    {
-     "title": "Una hora larga",
-     "sub": "revolviendo sin parar"
-    },
-    {
-     "title": "Marrón dorado",
-     "sub": "y olor a caramelo en toda la casa"
-    }
-   ]
-  },
-  {
    "id": "vki4lqtcboy0_s_164",
    "start": 566.2,
    "kind": "raw",
@@ -2211,7 +2081,7 @@
   {
    "id": "ov_bigstatreveal_573",
    "start": 572.84,
-   "dur": 5.2,
+   "dur": 5.6000000000000005,
    "kind": "premium",
    "overlay": true,
    "comp": "BigStatReveal",
@@ -2267,7 +2137,7 @@
   {
    "id": "ov_pullquote_586",
    "start": 585.9,
-   "dur": 6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
@@ -2325,12 +2195,12 @@
   {
    "id": "ov_chaptertitle_603",
    "start": 602.82,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "8",
    "title": "Dulce de membrillo",
    "sub": "un día entero de trabajo, para todo el año"
@@ -2366,35 +2236,6 @@
    "dur": 3.3
   },
   {
-   "id": "ov_flowsteps_614",
-   "start": 614.34,
-   "dur": 6.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "FlowSteps",
-   "theme": "earth",
-   "zone": "top",
-   "title": "Un día entero de trabajo",
-   "nodes": [
-    {
-     "label": "Pelar en ronda",
-     "sub": "kilos y kilos, en el patio"
-    },
-    {
-     "label": "Hervir",
-     "sub": "burbujea como lava"
-    },
-    {
-     "label": "Volcar",
-     "sub": "en cajones de madera"
-    },
-    {
-     "label": "Secar",
-     "sub": "en el estante alto"
-    }
-   ]
-  },
-  {
    "id": "vki4lqtcboy0_s_178",
    "start": 617.34,
    "kind": "raw",
@@ -2403,6 +2244,32 @@
    "hue": "amber",
    "darken": 0,
    "dur": 4.14
+  },
+  {
+   "id": "ov_numberedsteps_617",
+   "start": 617.34,
+   "dur": 5.9,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "El día del dulce",
+   "title": "Kilos y kilos, en ronda",
+   "steps": [
+    {
+     "title": "Pelar en ronda, en el patio",
+     "sub": "las manos manchadas de rojo"
+    },
+    {
+     "title": "Hervir en la olla más grande",
+     "sub": "burbujeando como lava, salpicaba"
+    },
+    {
+     "title": "Volcar en cajones de madera",
+     "sub": "secar en un estante alto"
+    }
+   ]
   },
   {
    "id": "vki4lqtcboy0_s_179",
@@ -2436,7 +2303,7 @@
   {
    "id": "ov_lowerthirdid_630",
    "start": 630.38,
-   "dur": 5.6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "LowerThirdId",
@@ -2526,12 +2393,12 @@
   {
    "id": "ov_stampbadge_660",
    "start": 660.34,
-   "dur": 5.2,
+   "dur": 5.6000000000000005,
    "kind": "premium",
    "overlay": true,
    "comp": "StampBadge",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "text": "VIGILANTE",
    "sub": "queso y dulce de membrillo",
    "x": 0.5,
@@ -2607,12 +2474,12 @@
   {
    "id": "ov_highlightsweep_681",
    "start": 681.28,
-   "dur": 5.2,
+   "dur": 5.6000000000000005,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "Hoy el membrillo se cae al suelo y nadie lo junta.",
    "highlight": "Nadie sabe ya qué hacer con él",
    "post": ".",
@@ -2648,19 +2515,6 @@
    "dur": 4.34
   },
   {
-   "id": "ov_chaptertitle_693",
-   "start": 692.74,
-   "dur": 4.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "ChapterTitle",
-   "theme": "earth",
-   "zone": "top",
-   "number": "9",
-   "title": "Los buñuelos",
-   "sub": "de acelga o de manzana, según la temporada"
-  },
-  {
    "id": "vki4lqtcboy0_s_200",
    "start": 696.78,
    "kind": "raw",
@@ -2683,7 +2537,7 @@
   {
    "id": "ov_checklistreveal_701",
    "start": 700.78,
-   "dur": 5.8,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "ChecklistReveal",
@@ -2799,7 +2653,7 @@
   {
    "id": "ov_pullquote_742",
    "start": 742.24,
-   "dur": 5.2,
+   "dur": 5.6000000000000005,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
@@ -2868,12 +2722,12 @@
   {
    "id": "ov_bulletcascade_763",
    "start": 762.58,
-   "dur": 6.4,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "BulletCascade",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "eyebrow": "Diez platos, una sola verdad",
    "bullets": [
     {
@@ -2935,12 +2789,12 @@
   {
    "id": "ov_highlightsweep_778",
    "start": 777.72,
-   "dur": 6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "Las recetas están.",
    "highlight": "Lo que perdimos fue el tiempo",
    "post": " — y la costumbre de darle valor a lo humilde.",
@@ -3008,12 +2862,12 @@
   {
    "id": "ov_chaptertitle_797",
    "start": 796.86,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "11",
    "title": "Las tortas fritas",
    "sub": "el plato de los días de lluvia"
@@ -3037,35 +2891,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.74
-  },
-  {
-   "id": "ov_flowsteps_804",
-   "start": 804.02,
-   "dur": 6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "FlowSteps",
-   "theme": "earth",
-   "zone": "top",
-   "title": "El ritual de la lluvia",
-   "nodes": [
-    {
-     "label": "Masa",
-     "sub": "harina, grasa, agua y sal"
-    },
-    {
-     "label": "El agujerito",
-     "sub": "con el dedo, para que no se infle"
-    },
-    {
-     "label": "A la grasa",
-     "sub": "bien caliente"
-    },
-    {
-     "label": "Azúcar",
-     "sub": "que se derrite encima"
-    }
-   ]
   },
   {
    "id": "vki4lqtcboy0_s_230",
@@ -3242,12 +3067,12 @@
   {
    "id": "ov_beforeafter_872",
    "start": 872.24,
-   "dur": 6.4,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "BeforeAfter",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "eyebrow": "El mismo día de lluvia, cincuenta años después",
    "beforeLabel": "Antes: todos alrededor de la fuente, el mate y las historias",
    "afterLabel": "Hoy: cada uno en un cuarto, mirando su teléfono",
@@ -3281,19 +3106,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.88
-  },
-  {
-   "id": "ov_chaptertitle_883",
-   "start": 883.3,
-   "dur": 4.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "ChapterTitle",
-   "theme": "earth",
-   "zone": "top",
-   "number": "12",
-   "title": "La polenta",
-   "sub": "servida en la tabla, todos del mismo montón"
   },
   {
    "id": "vki4lqtcboy0_s_251",
@@ -3402,12 +3214,12 @@
   {
    "id": "ov_highlightsweep_915",
    "start": 914.54,
-   "dur": 5.4,
+   "dur": 5.800000000000001,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "Nos criamos peleando por la costra del fondo.",
    "highlight": "Y en esas peleas había más amor",
    "post": " que en muchas mesas elegantes de ahora.",
@@ -3432,19 +3244,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.52
-  },
-  {
-   "id": "ov_chaptertitle_923",
-   "start": 922.88,
-   "dur": 4.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "ChapterTitle",
-   "theme": "earth",
-   "zone": "top",
-   "number": "13",
-   "title": "Los fideos caseros",
-   "sub": "amasados sobre la mesa de la cocina"
   },
   {
    "id": "vki4lqtcboy0_s_264",
@@ -3517,12 +3316,12 @@
   {
    "id": "ov_highlightsweep_949",
    "start": 948.82,
-   "dur": 5,
+   "dur": 5.4,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "Salían tallarines de verdad.",
    "highlight": "Disparejos, hermosos en su imperfección",
    "post": ".",
@@ -3580,12 +3379,12 @@
   {
    "id": "ov_chaptertitle_965",
    "start": 964.66,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "14",
    "title": "Los ravioles caseros",
    "sub": "un trabajo de horas y de muchas manos"
@@ -3631,7 +3430,7 @@
   {
    "id": "ov_numberedsteps_978",
    "start": 978.1,
-   "dur": 7,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "NumberedSteps",
@@ -3798,7 +3597,7 @@
   {
    "id": "ov_pullquote_1028",
    "start": 1028.36,
-   "dur": 5.6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
@@ -3867,12 +3666,12 @@
   {
    "id": "ov_chaptertitle_1048",
    "start": 1047.62,
-   "dur": 4.6,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "ChapterTitle",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "number": "15",
    "title": "Empanadas de horno de barro",
    "sub": "cada repulgue, una firma"
@@ -3927,12 +3726,12 @@
   {
    "id": "ov_highlightsweep_1069",
    "start": 1068.54,
-   "dur": 5.2,
+   "dur": 5.6000000000000005,
    "kind": "premium",
    "overlay": true,
    "comp": "HighlightSweep",
    "theme": "earth",
-   "zone": "top",
+   "zone": "topLeft",
    "pre": "Cada mujer cerraba distinto.",
    "highlight": "Era como una firma en la masa",
    "post": " — sabías quién había hecho cuál.",
@@ -3965,21 +3764,6 @@
    "hue": "amber",
    "darken": 0,
    "dur": 3.34
-  },
-  {
-   "id": "ov_ctacard_1079",
-   "start": 1078.88,
-   "dur": 6.6,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "CtaCard",
-   "theme": "earth",
-   "zone": "topLeft",
-   "eyebrow": "Las medidas exactas de estos platos",
-   "title": "La Guía de la Abuela Rosa",
-   "bullet": "las recetas de olla con sus cantidades, tal como se hacían en casa",
-   "price": 0,
-   "cta": "TE LA DEJO EN LA DESCRIPCIÓN"
   },
   {
    "id": "vki4lqtcboy0_s_308",
@@ -4041,7 +3825,7 @@
   {
    "id": "ov_pullquote_1099",
    "start": 1098.88,
-   "dur": 6,
+   "dur": 5.9,
    "kind": "premium",
    "overlay": true,
    "comp": "PullQuote",
