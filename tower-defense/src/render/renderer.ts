@@ -159,9 +159,25 @@ export class Renderer {
   // ------------------------------------------------------------- escenario
 
   private drawBackground(game: Game): void {
-    const g = new Graphics()
     const p = game.world.path
 
+    /*
+     * Tablero pintado. Cuando esta, el fondo procedural no se dibuja NADA: no
+     * se superponen. El camino, el pasto, los props y las plataformas ya vienen
+     * en la imagen, y la sim solo necesita que su polilinea caiga encima del
+     * camino dibujado — de eso se encarga tools/fit_map.py, que mide la imagen
+     * y escupe los waypoints.
+     */
+    if (this.atlas.background) {
+      const bg = new Sprite(this.atlas.background)
+      bg.width = FIELD_W
+      bg.height = FIELD_H
+      this.bg.addChild(bg)
+      this.addEndpoints(p)
+      return
+    }
+
+    const g = new Graphics()
     g.rect(0, 0, FIELD_W, FIELD_H).fill(GROUND.base)
 
     /*
@@ -244,14 +260,23 @@ export class Renderer {
     // `multiply`, montado al final de init().
 
     this.bg.addChild(g)
+    this.addEndpoints(p)
+  }
 
-    // Portal de entrada y núcleo: sin esto los enemigos nacen y mueren en la nada.
+  /**
+   * Portal de entrada y nucleo. Sin esto los enemigos nacen y mueren en la nada.
+   * Se recortan al campo: el camino ENTRA desde fuera de pantalla, asi que su
+   * primer sample esta en y negativa y el portal quedaria invisible.
+   */
+  private addEndpoints(p: Game['world']['path']): void {
+    const last = p.xs.length - 1
+    const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v))
     const portal = new Sprite(this.atlas.portal)
     portal.anchor.set(0.5)
-    portal.position.set(p.xs[0], p.ys[0])
+    portal.position.set(clamp(p.xs[0], 30, FIELD_W - 30), clamp(p.ys[0], 24, FIELD_H - 24))
     const core = new Sprite(this.atlas.core)
     core.anchor.set(0.5)
-    core.position.set(p.xs[p.xs.length - 1], p.ys[p.ys.length - 1])
+    core.position.set(clamp(p.xs[last], 34, FIELD_W - 34), clamp(p.ys[last], 34, FIELD_H - 34))
     this.bg.addChild(portal, core)
     this.portalSprite = portal
     this.coreSprite = core
@@ -266,8 +291,11 @@ export class Renderer {
    * una torre elegida y esta buscando donde ponerla.
    */
   private drawSlots(): void {
+    // Con tablero pintado las plataformas ya estan en la imagen: encima solo va
+    // la señal de estado.
+    const tex = this.atlas.background ? this.atlas.slotRing : this.atlas.slot
     for (const s of BUILD_SLOTS) {
-      const sp = new Sprite(this.atlas.slot)
+      const sp = new Sprite(tex)
       sp.anchor.set(0.5)
       sp.position.set(s.x, s.y)
       this.slotLayer.addChild(sp)

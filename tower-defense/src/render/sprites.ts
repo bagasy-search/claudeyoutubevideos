@@ -617,6 +617,26 @@ function drawSlot(g: Graphics, r: number): void {
 }
 
 /**
+ * Señal de plataforma libre, SIN la piedra.
+ *
+ * Se usa cuando el tablero viene pintado: la plataforma ya esta en la imagen y
+ * volver a dibujarla encima solo la ensucia. Lo unico que falta ahi es el
+ * estado — libre u ocupada — y eso es el aro.
+ */
+function drawSlotRing(g: Graphics, r: number): void {
+  // Halo suave, para que el aro no flote sobre la piedra pintada.
+  for (let i = 5; i >= 1; i--) {
+    const k = i / 5
+    g.ellipse(0, 0, r * 0.92 * k, r * 0.92 * k * 0.64).fill({ color: 0xffe9b0, alpha: 0.055 })
+  }
+  for (let i = 0; i < 12; i++) {
+    const a = (i / 12) * Math.PI * 2
+    g.circle(Math.cos(a) * r * 0.6, Math.sin(a) * r * 0.6 * 0.64, Math.max(1.6, r * 0.08))
+      .fill({ color: 0xfff3d0, alpha: 0.9 })
+  }
+}
+
+/**
  * Viñeta: el pase de color global, hecho con una sola textura y sin shader.
  *
  * Se dibuja sobre todo el campo en modo `multiply`, asi que lo blanco no toca
@@ -678,6 +698,14 @@ export interface Atlas {
   vignette: Texture
   /** Plataforma de construccion vacia. */
   slot: Texture
+  /** Solo la señal de "libre", para cuando la plataforma ya viene pintada. */
+  slotRing: Texture
+  /**
+   * Tablero pintado, si lo hay. Null significa "usá el fondo procedural".
+   * Es la unica entrada del atlas que puede faltar: todo lo demas tiene un
+   * reemplazo generado por codigo, el tablero no.
+   */
+  background: Texture | null
 }
 
 export function buildAtlas(renderer: PixiRenderer): Atlas {
@@ -769,6 +797,9 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
   const slotG = new Graphics()
   drawSlot(slotG, SLOT_ART_R)
 
+  const slotRingG = new Graphics()
+  drawSlotRing(slotRingG, SLOT_ART_R)
+
   const auraG = new Graphics()
   for (let i = 6; i >= 1; i--) {
     auraG.circle(0, 0, (i / 6) * 30).fill({ color: 0xffffff, alpha: 0.07 })
@@ -789,5 +820,7 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
     aura: bake(renderer, auraG, 32, 2, false),
     vignette: bake(renderer, vignetteG, VIGNETTE_R, 1, false),
     slot: bake(renderer, slotG, SLOT_ART_R * 1.15, 3),
+    slotRing: bake(renderer, slotRingG, SLOT_ART_R * 1.15, 3, false),
+    background: null,
   }
 }

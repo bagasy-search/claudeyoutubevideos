@@ -32,6 +32,12 @@ export interface ArtManifest {
   projectiles?: ArtEntry[]
   portal?: ArtEntry
   core?: ArtEntry
+  /**
+   * Tablero completo: camino, pasto, props y plataformas, todo pintado en una
+   * sola imagen que cubre el campo. Cuando esta, el fondo procedural NO se
+   * dibuja — no se superponen, se reemplaza.
+   */
+  background?: ArtEntry
 }
 
 /**
@@ -48,7 +54,11 @@ async function textureFromDataUri(uri: string, resolution: number): Promise<Text
   const binary = atob(base64)
   const bytes = new Uint8Array(binary.length)
   for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i)
-  const bitmap = await createImageBitmap(new Blob([bytes], { type: 'image/png' }))
+  // El tipo MIME sale del propio URI: el fondo del tablero viaja en WebP, que
+  // pesa un quinto que el PNG equivalente, y declararlo como image/png hace que
+  // createImageBitmap lo rechace.
+  const mime = uri.slice(5, uri.indexOf(';')) || 'image/png'
+  const bitmap = await createImageBitmap(new Blob([bytes], { type: mime }))
   return new Texture({ source: new ImageSource({ resource: bitmap, resolution }) })
 }
 
@@ -149,6 +159,14 @@ export async function applyManifest(
         report.replaced.push(`projectile:${i}`)
       }
     })
+  }
+
+  if (manifest.background) {
+    const tex = await load(manifest.background)
+    if (tex) {
+      atlas.background = tex
+      report.replaced.push('background')
+    }
   }
 
   for (const key of ['portal', 'core'] as const) {
