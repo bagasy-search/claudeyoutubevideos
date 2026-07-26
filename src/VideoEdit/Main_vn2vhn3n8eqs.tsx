@@ -38,6 +38,8 @@ import {
   FedOilCarousel,
   type FedCarouselCard,
 } from '../FedererKit';
+import {FedCohort} from '../FedCohort_vn2vhn3n8eqs';
+import {FedPaper} from '../FedPaper_vn2vhn3n8eqs';
 import {FedBrickWall} from '../FedBrickWall_vn2vhn3n8eqs';
 import {FedRivet} from '../FedRivet_vn2vhn3n8eqs';
 import {FedTrial} from '../FedTrial_vn2vhn3n8eqs';
@@ -657,11 +659,11 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 20.9s · Año 2013, revista Pediatric Dermatology. */}
       <Sequence from={627} durationInFrames={108} name="FedChapter b007">
-        <FedChapter {...P[7]} totalF={108} accent={ACCENT} />
+        <FedPaper journal={"Pediatric Dermatology"} year={"2013"} meta={"Vol. 30 · Nº 1 · pp. 42–50"} paperTitle={"Effect of olive and sunflower seed oil on the adult skin barrier"} authors={"Danby SG, AlEnezi T, Sultan A, Chittock J, Brown K, Cork MJ · University of Sheffield"} lines={["Diecinueve adultos, seis gotas de aceite por antebrazo.","Dos veces por día durante cuatro semanas.","El aceite de oliva aumentó significativamente la pérdida de agua.","El aceite de girasol conservó la barrera."]} highlight={2} note={"también en piel sana"} side={"left"} totalF={108} accent={ACCENT} />
       </Sequence>
       {/* 24.1s · El equipo del Dr. Simon Danby, Universidad de Sheffield, 19 ad */}
       <Sequence from={723} durationInFrames={162} name="FedStat b008">
-        <FedTrial journal={"Pediatric Dermatology"} year={"2013"} n={19} design={"aleatorizado · dos antebrazos · 4 semanas"} title={"El equipo del Dr. Simon Danby"} sub={"Universidad de Sheffield"} groupA={{"label":"Aceite de oliva","value":19,"suffix":"","tone":"bad"}} groupB={{"label":"Aceite de girasol","value":19,"suffix":"","tone":"good"}} unit={"adultos por brazo"} totalF={162} accent={ACCENT} />
+        <FedCohort n={19} kicker={"Universidad de Sheffield · 2013"} title={"Diecinueve adultos, un brazo cada uno"} sub={"seis gotas, dos veces por día, cuatro semanas"} unit={"adultos"} groups={[{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":10,"result":"perdió más agua"},{"label":"Aceite de girasol","image":staticFile("img/vn2_prod_girasol.png"),"tone":"good","count":9,"result":"conservó la barrera"}]} totalF={162} accent={ACCENT} />
       </Sequence>
       {/* 29.2s · 6 gotas de aceite en un antebrazo, 2 veces por día, 4 semanas. */}
       <Sequence from={876} durationInFrames={141} name="FedChecklist b009">
@@ -849,7 +851,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 310.5s · Se publicó en The Lancet, un aceite de cocina untado en la pie */}
       <Sequence from={9315} durationInFrames={99} name="FedQuote b082">
-        <FedQuote {...P[82]} totalF={99} accent={ACCENT} />
+        <FedPaper journal={"The Lancet"} year={""} meta={"Terapia de barrera en prematuros · Dhaka Shishu Hospital"} paperTitle={"Skin barrier therapy with sunflower seed oil in preterm infants"} authors={"Ensayo hospitalario · Bangladesh"} lines={["Aceite de girasol aplicado sobre la piel de bebés prematuros.","Reducción de alrededor del 26% en la mortalidad.","La barrera de la piel no es cosmética: es defensa."]} highlight={1} note={"un aceite de cocina"} side={"right"} totalF={99} accent={ACCENT} />
       </Sequence>
       {/* 316.6s · Porque la barrera de la piel no es cosmética, es un órgano de  */}
       <Sequence from={9498} durationInFrames={126} name="FedMolecule b084">
@@ -921,7 +923,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 396.3s · Había 20 pacientes con la piel colonizada por estafilococo dor */}
       <Sequence from={11889} durationInFrames={126} name="FedStat b110">
-        <FedStat {...P[110]} totalF={126} accent={ACCENT} />
+        <FedCohort n={20} kicker={"Cabeza a cabeza · coco contra oliva"} title={"Veinte pacientes con estafilococo dorado"} sub={"la piel colonizada antes de empezar"} unit={"pacientes"} groups={[{"label":"Coco virgen","image":staticFile("img/vn2_prod_coco.png"),"tone":"good","count":8,"result":"quedó 1"},{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":12,"result":"quedaron 6"}]} totalF={126} accent={ACCENT} />
       </Sequence>
       {/* 400.3s · En el grupo del coco, al final quedaba uno. */}
       <Sequence from={12009} durationInFrames={81} name="FedStat b111">
@@ -981,7 +983,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 465.8s · Lo mejor que tiene es un estudio piloto de 27 personas. */}
       <Sequence from={13974} durationInFrames={120} name="FedStat b132">
-        <FedStat {...P[132]} totalF={120} accent={ACCENT} />
+        <FedCohort n={27} kicker={"Rosa mosqueta · estudio piloto"} title={"Veintisiete personas, sin grupo control"} sub={"sin placebo y sin ciego: es una señal, no una prueba"} unit={"voluntarios"} groups={[{"label":"Rosa mosqueta","image":staticFile("img/vn2_prod_argan.png"),"tone":"neutral","count":27,"result":"sin comparador"}]} totalF={120} accent={ACCENT} />
       </Sequence>
       {/* 469.5s · Sin grupo control, sin placebo y sin ciego. */}
       <Sequence from={14085} durationInFrames={99} name="FedChecklist b133">
@@ -1021,7 +1023,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 524.3s · En 2012, el New England Journal of Medicine, una de las revist */}
       <Sequence from={15729} durationInFrames={111} name="FedQuote b152">
-        <FedQuote {...P[152]} totalF={111} accent={ACCENT} />
+        <FedPaper journal={"New England Journal of Medicine"} year={"2012"} meta={"Images in Clinical Medicine · 366(16):e25"} paperTitle={"Unilateral dermatoheliosis"} authors={"Gordon JRS, Brieva JC · Northwestern University"} lines={["Hombre de 69 años, camionero de reparto.","Veinticinco años con el lado izquierdo contra la ventanilla.","Engrosamiento y arrugamiento gradual de ese lado de la cara."]} highlight={1} note={"con la ventana cerrada"} side={"left"} totalF={111} accent={ACCENT} />
       </Sequence>
       {/* 527.6s · ...publicó la fotografía de un hombre... */}
       <Sequence from={15828} durationInFrames={111} name="FedFullShot b153">
@@ -1061,7 +1063,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 576.3s · En 2013, el grupo de Frederick Flament calculó qué parte de lo */}
       <Sequence from={17289} durationInFrames={132} name="FedQuote b167">
-        <FedQuote {...P[167]} totalF={132} accent={ACCENT} />
+        <FedPaper journal={"Clinical, Cosmetic and Investigational Dermatology"} year={"2013"} meta={"Vol. 6 · pp. 221–232"} paperTitle={"Effect of the sun on visible clinical signs of aging in Caucasian skin"} authors={"Flament F, Bazin R, Laquieze S, Rubert V, Simonpietri E, Piot B"} lines={["Se midieron los signos visibles del envejecimiento facial.","La exposición solar explica el 80,3% de esos signos.","No es el calendario: es el sol."]} highlight={1} note={"80%"} side={"right"} totalF={132} accent={ACCENT} />
       </Sequence>
       {/* 580.3s · ...del envejecimiento facial se explica por el sol. */}
       <Sequence from={17409} durationInFrames={132} name="FedFullShot b168">
@@ -1081,7 +1083,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 603.6s · 60 mujeres posmenopáusicas de 49 a 61 años. */}
       <Sequence from={18108} durationInFrames={144} name="FedStat b173">
-        <FedTrial journal={"Clinical Interventions in Aging"} year={"2015"} n={60} design={"mujeres posmenopáusicas de 49 a 61 años · 60 días"} title={"Medido con cutómetro"} sub={"el aparato que succiona la piel y mide cuánto tarda en volver"} groupA={{"label":"Argán","value":15,"suffix":"%","tone":"good"}} groupB={{"label":"Oliva","value":0,"suffix":"%","tone":"bad"}} unit={"elasticidad"} totalF={144} accent={ACCENT} />
+        <FedCohort n={60} kicker={"Clinical Interventions in Aging · 2015"} title={"Sesenta mujeres, sesenta días"} sub={"de cuarenta y nueve a sesenta y un años"} unit={"mujeres"} groups={[{"label":"Argán","image":staticFile("img/vn2_prod_argan.png"),"tone":"good","count":30,"value":15,"suffix":"%","result":"más elasticidad"},{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":30,"value":0,"suffix":"%","result":"no mejoró"}]} totalF={144} accent={ACCENT} />
       </Sequence>
       {/* 608.3s · 60 días. Se midió con cutómetro. */}
       <Sequence from={18249} durationInFrames={81} name="FedStat b174">
@@ -1217,7 +1219,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 784.8s · publicado en el New England Journal of Medicine, */}
       <Sequence from={23544} durationInFrames={108} name="FedStat b228">
-        <FedStat {...P[228]} totalF={108} accent={ACCENT} />
+        <FedPaper journal={"New England Journal of Medicine"} year={"2003"} meta={"Cohorte de ~14.000 niños seguidos desde el embarazo"} paperTitle={"Factors associated with the development of peanut allergy in childhood"} authors={"Lack G, Fox D, Northstone K, Golding J"} lines={["El 84% de los que terminaron alérgicos al maní","había estado expuesto a cremas con aceite de maní de bebé.","La piel dañada es una puerta de entrada."]} highlight={2} note={"ojo con los frutos secos"} side={"left"} totalF={108} accent={ACCENT} />
       </Sequence>
       {/* 788s · el 84% de los que terminaron alérgicos al maní */}
       <Sequence from={23640} durationInFrames={108} name="FedStat b229">
@@ -1253,7 +1255,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 827s · 15 pacientes operados de cáncer de piel. */}
       <Sequence from={24810} durationInFrames={75} name="FedStat b242">
-        <FedStat {...P[242]} totalF={75} accent={ACCENT} />
+        <FedCohort n={15} kicker={"Dermatologic Surgery · 1999"} title={"Quince pacientes operados"} sub={"cada cicatriz partida en dos mitades"} unit={"pacientes"} groups={[{"label":"Crema sola","image":staticFile("img/vn2_prod_nada.png"),"tone":"neutral","count":8,"result":"mitad A"},{"label":"Crema + vitamina E","image":staticFile("img/vn2_prod_vitE.png"),"tone":"bad","count":7,"value":90,"suffix":"%","result":"sin efecto o peor"}]} totalF={75} accent={ACCENT} />
       </Sequence>
       {/* 829.1s · Cada cicatriz dividida en dos mitades. Una con crema sola. */}
       <Sequence from={24873} durationInFrames={132} name="FedBeforeAfter b243">
@@ -1369,11 +1371,11 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 975.5s · En 2013, en Annals of Internal Medicine, el único ensayo aleat */}
       <Sequence from={29265} durationInFrames={165} name="FedQuote b287">
-        <FedTrial journal={"Annals of Internal Medicine"} year={"2013"} n={903} design={"el único ensayo aleatorizado de prevención que existe · Australia"} title={"Protector solar todos los días"} sub={"contra usarlo cuando uno quiere"} groupA={{"label":"Uso diario","value":24,"suffix":"%","tone":"good"}} groupB={{"label":"Discrecional","value":0,"suffix":"%","tone":"bad"}} unit={"menos envejecimiento"} verdict={"24% menos"} totalF={165} accent={ACCENT} />
+        <FedPaper journal={"Annals of Internal Medicine"} year={"2013"} meta={"158(11):781–790 · Nambour, Australia"} paperTitle={"Sunscreen and prevention of skin aging: a randomized trial"} authors={"Hughes MCB, Williams GM, Baker P, Green AC"} lines={["Novecientos tres adultos, asignados al azar.","Unos con protector solar todos los días, otros cuando querían.","El envejecimiento de la piel fue un 24% menor con el uso diario."]} highlight={2} note={"el único ensayo que existe"} side={"right"} totalF={165} accent={ACCENT} />
       </Sequence>
       {/* 981s · 903 adultos en Australia. */}
       <Sequence from={29430} durationInFrames={72} name="FedStat b288">
-        <FedStat {...P[288]} totalF={72} accent={ACCENT} />
+        <FedCohort n={903} maxFigures={36} kicker={"Nambour, Australia"} title={"Novecientos tres adultos"} sub={"repartidos al azar durante cuatro años y medio"} unit={"adultos"} groups={[{"label":"Protector todos los días","image":staticFile("img/vn2_prod_solar.png"),"tone":"good","count":18,"value":24,"suffix":"%","result":"menos envejecimiento"},{"label":"Cuando querían","image":staticFile("img/vn2_prod_nada.png"),"tone":"bad","count":18,"result":"sin cambio"}]} totalF={72} accent={ACCENT} />
       </Sequence>
       {/* 983s · Unos con protector todos los días y otros cuando querían. */}
       <Sequence from={29490} durationInFrames={111} name="FedFullShot b289">
@@ -1385,7 +1387,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 993.2s · En el New England Journal of Medicine, la tretinoína. */}
       <Sequence from={29796} durationInFrames={126} name="FedStep b292">
-        <FedStep {...P[292]} totalF={126} accent={ACCENT} />
+        <FedPaper journal={"New England Journal of Medicine"} year={"1993"} meta={"329(8):530–535 · 29 pacientes, 10 a 12 meses"} paperTitle={"Restoration of collagen formation in photodamaged human skin by tretinoin"} authors={"Griffiths CE, Russman AN, Majmudar G, Singer RS, Hamilton TA, Voorhees JJ"} lines={["Tretinoína tópica contra vehículo, medido en biopsia.","La formación de colágeno tipo uno aumentó un 80%.","Con el vehículo, bajó un 14%."]} highlight={1} note={"esto sí toca el colágeno"} side={"left"} totalF={126} accent={ACCENT} />
       </Sequence>
       {/* 997s · Aumentó la formación de colágeno tipo 1, un 80%. */}
       <Sequence from={29910} durationInFrames={96} name="FedStat b293">

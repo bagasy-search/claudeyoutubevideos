@@ -3,7 +3,8 @@
 import fs from 'fs';
 
 const s = fs.readFileSync('src/VideoEdit/Main_vn2vhn3n8eqs.tsx', 'utf8');
-const refs = [...s.matchAll(/staticFile\('([^']+)'\)/g)].map((m) => m[1]);
+// acepta comillas simples y dobles: los props inyectados salen de JSON.stringify
+const refs = [...s.matchAll(/staticFile\(\s*['"]([^'"]+)['"]\s*\)/g)].map((m) => m[1]);
 const uniq = [...new Set(refs)];
 const missing = uniq.filter((r) => !fs.existsSync('public/' + r));
 const zero = uniq.filter((r) => {
