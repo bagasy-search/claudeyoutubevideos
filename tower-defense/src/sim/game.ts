@@ -18,8 +18,8 @@ import { EnemyPool, ProjectilePool, SpatialGrid, type Tower, type World } from '
 export type Phase = 'build' | 'combat' | 'draft' | 'gameover'
 
 export interface GameEvents {
-  hit: { x: number; y: number; damage: number; crit: boolean }
-  kill: { x: number; y: number; bounty: number; elite: boolean }
+  hit: { enemyIdx: number; x: number; y: number; damage: number; crit: boolean }
+  kill: { enemyIdx: number; x: number; y: number; bounty: number; elite: boolean; color: number }
   leak: { x: number; y: number; lives: number }
   splash: { x: number; y: number; radius: number; color: number }
   fire: { tower: Tower }
@@ -107,12 +107,13 @@ export class Game {
     }
 
     this.hooks = {
-      onKill: (_i, bounty, x, y, elite) => {
+      onKill: (enemyIdx, bounty, x, y, elite) => {
         const g = Math.round(bounty * (1 + this.goldMult))
         this.gold += g
         this.stats.kills++
         this.stats.goldEarned += g
-        this.events.emit('kill', { x, y, bounty: g, elite })
+        const color = ENEMIES[this.world.enemies.defIdx[enemyIdx]]?.color ?? 0xffffff
+        this.events.emit('kill', { enemyIdx, x, y, bounty: g, elite, color })
       },
       onLeak: (_i, leak, x, y) => {
         this.lives -= leak
@@ -123,7 +124,7 @@ export class Game {
           this.setPhase('gameover')
         }
       },
-      onHit: (x, y, damage, crit) => this.events.emit('hit', { x, y, damage, crit }),
+      onHit: (enemyIdx, x, y, damage, crit) => this.events.emit('hit', { enemyIdx, x, y, damage, crit }),
       onSplash: (x, y, radius, color) => this.events.emit('splash', { x, y, radius, color }),
       onFire: (tower) => this.events.emit('fire', { tower }),
     }

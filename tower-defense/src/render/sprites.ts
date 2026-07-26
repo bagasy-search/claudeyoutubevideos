@@ -1,7 +1,7 @@
 import { Graphics, Rectangle, Texture, type Renderer as PixiRenderer } from 'pixi.js'
 import { ENEMIES } from '../sim/balance/enemies'
 import { TOWERS } from '../sim/balance/towers'
-import { GROUND, SEMANTIC, darken, ink, lighten } from './palette'
+import { GROUND, SEMANTIC, darken, ink, lighten, shade, tint } from './palette'
 
 /**
  * Fabrica de sprites procedural.
@@ -13,8 +13,9 @@ import { GROUND, SEMANTIC, darken, ink, lighten } from './palette'
  * vectorial por frame, pero cambiar `Texture` sobre un sprite pooleado es
  * gratis.
  *
- * Las criaturas se dibujan mirando a +x y el sprite se rota segun el angulo del
- * camino, asi alcanza con hornear una sola direccion en vez de ocho.
+ * Las criaturas se dibujan de FRENTE a camara y simetricas. El sprite no rota
+ * con el camino: solo se inclina un poco hacia donde va. Por eso alcanza con
+ * hornear un unico ciclo por criatura.
  */
 
 export const WALK_FRAMES = 12
@@ -93,47 +94,88 @@ const INK = 0x2b1a12
 const SCLERA = 0xfff6e6
 
 /**
+ * Un paso de verdad, no un pataleo.
+ *
+ * Devuelve el desplazamiento horizontal y la altura del pie para una fase.
+ * Durante el APOYO el pie retrocede pegado al suelo mientras el cuerpo avanza;
+ * durante el VUELO despega y va hacia adelante. Sin la componente horizontal
+ * las piernas suben y bajan en el lugar y el personaje hace moonwalk — que es
+ * exactamente como se veia antes.
+ *
+ * El apoyo ocupa mas del ciclo que el vuelo (60/40), como en una caminata real.
+ */
+const STANCE = 0.6
+
+function footCycle(phase: number, reach: number, lift: number): { x: number; y: number } {
+  const t = (((phase / (Math.PI * 2)) % 1) + 1) % 1
+  if (t < STANCE) {
+    // Apoyo: de adelante hacia atras, a ras del suelo.
+    const u = t / STANCE
+    return { x: reach * (1 - 2 * u), y: 0 }
+  }
+  // Vuelo: vuelve adelante describiendo un arco.
+  const u = (t - STANCE) / (1 - STANCE)
+  const eased = u * u * (3 - 2 * u)
+  return { x: reach * (-1 + 2 * eased), y: -Math.sin(Math.PI * u) * lift }
+}
+
+/**
  * Reglas del registro chibi:
  *  - Contorno uniforme y grueso en TODO. Es lo que sostiene la lectura.
- *  - La cara es el rasgo principal: ojos grandes, ceja que da carácter.
+ *  - La cara es el rasgo principal: ojos grandes, ceja que da caracter.
  *  - Un accesorio de silueta por criatura (orejas, hombreras, corona).
  *  - Vista frontal: el sprite no rota con el camino, solo se inclina.
+ *  - Volumen constante: lo que se aplasta a lo alto se ensancha a lo ancho.
  */
 function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): void {
   const lw = Math.max(1.6, r * 0.13)
   const outline = { width: lw, color: INK } as const
   const body = s.color
-  const limb = darken(s.color, 0.2)
-  const face = lighten(s.color, 0.16)
+  const leg = shade(s.color, 0.34)
+  // Los brazos NO pueden ser del mismo valor que las piernas: si lo son, los
+  // cuatro miembros se funden en un solo bloque en la silueta.
+  const arm = shade(s.color, 0.16)
+  const face = tint(s.color, 0.2)
 
   const swing = Math.sin(phase)
-  // El cuerpo sube dos veces por ciclo, una por pisada.
-  const bob = -Math.abs(Math.cos(phase)) * r * 0.09
-  const sway = swing * r * 0.04
+  // El cuerpo baja en cada pisada: dos veces por ciclo.
+  const bobNorm = -Math.abs(Math.cos(phase))
+  const bob = bobNorm * r * 0.09
+  const sway = swing * r * 0.045
+
+  // Squash y stretch a volumen constante: al caer se achata y se ensancha.
+  const squash = 1 + bobNorm * 0.07
+  const stretch = 1 / squash
 
   const feetY = r * 1.02
   const bodyY = r * 0.3 + bob
-  const headY = -r * 0.52 + bob * 1.25
+  // La cabeza arrastra: llega un poco despues que el cuerpo. Es la diferencia
+  // entre un muñeco rigido y algo con peso.
+  const headBob = -Math.abs(Math.cos(phase - 0.55)) * r * 0.11
+  const headY = -r * 0.52 + headBob
 
-  // Piernas: alternan, con el pie que despega levantándose.
+  const reach = r * 0.2
+  const lift = r * 0.19
+
+  // Piernas.
   for (const side of [-1, 1]) {
     const ph = side > 0 ? phase : phase + Math.PI
-    const lift = Math.max(0, Math.sin(ph)) * r * 0.16
+    const step = footCycle(ph, reach, lift)
     g.roundRect(
-      side * r * 0.3 - (r * s.legW) / 2 + sway,
-      feetY - r * s.legH - lift,
+      side * r * s.bodyW * 0.34 + step.x - (r * s.legW) / 2 + sway,
+      feetY - r * s.legH + step.y,
       r * s.legW,
       r * s.legH,
       r * s.legW * 0.45,
     )
-      .fill({ color: limb })
+      .fill({ color: leg })
       .stroke(outline)
   }
 
-  // Brazos, detrás del cuerpo, balanceando al revés que las piernas.
+  // Brazos, en contrafase con las piernas.
   if (s.arms) {
     for (const side of [-1, 1]) {
-      const sw = -swing * side * r * 0.12
+      const sw = -swing * side * r * 0.16
       g.roundRect(
         side * (r * s.bodyW * 0.5) - (r * s.armW) / 2 + sway,
         bodyY - r * 0.16 + sw,
@@ -141,39 +183,46 @@ function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): v
         r * 0.5,
         r * s.armW * 0.5,
       )
-        .fill({ color: limb })
+        .fill({ color: arm })
         .stroke(outline)
     }
   }
 
-  // Cuerpo.
-  g.roundRect(-r * s.bodyW * 0.5 + sway, bodyY - r * s.bodyH * 0.5, r * s.bodyW, r * s.bodyH, r * 0.3)
+  // Cuerpo, con el squash aplicado.
+  const bw = r * s.bodyW * stretch
+  const bh = r * s.bodyH * squash
+  g.roundRect(-bw * 0.5 + sway, bodyY - bh * 0.5, bw, bh, r * 0.3)
     .fill({ color: body })
     .stroke(outline)
+
+  // Oclusion bajo la cabeza: pega las dos formas en vez de dejarlas apiladas.
+  g.ellipse(sway, bodyY - bh * 0.42, bw * 0.36, bh * 0.16)
+    .fill({ color: shade(s.color, 0.45), alpha: 0.55 })
 
   // Hombreras: como se lee "blindado" de un vistazo.
   if (s.shoulders > 0) {
     for (const side of [-1, 1]) {
-      g.ellipse(side * r * s.bodyW * 0.46 + sway, bodyY - r * s.bodyH * 0.26, r * s.shoulders * 0.42, r * s.shoulders * 0.34)
-        .fill({ color: lighten(s.color, 0.3) })
+      g.ellipse(side * bw * 0.46 + sway, bodyY - bh * 0.26, r * s.shoulders * 0.42, r * s.shoulders * 0.34)
+        .fill({ color: tint(s.color, 0.34) })
         .stroke(outline)
     }
   }
 
-  // Orejas barridas: el rasgo de velocidad. Van detrás de la cabeza.
+  // Orejas barridas: el rasgo de velocidad. Van detras de la cabeza y arrastran.
   if (s.ears > 0) {
+    const lag = Math.sin(phase - 1.1) * r * 0.1
     for (const side of [-1, 1]) {
       g.poly([
         sway, headY,
-        sway - side * r * s.ears * 1.05, headY - r * s.ears * 0.62,
+        sway - side * r * s.ears * 1.05 + lag, headY - r * s.ears * 0.62,
         sway - side * r * s.ears * 0.34, headY + r * 0.28,
       ])
-        .fill({ color: limb })
+        .fill({ color: leg })
         .stroke(outline)
     }
   }
 
-  // Corona de cuernos: el rasgo del boss.
+  // Corona de cuernos: el rasgo del boss. Las puntas se aclaran.
   if (s.crown > 0) {
     for (const t of [-1, 0, 1]) {
       const cx = sway + t * r * s.headR * 0.62
@@ -181,31 +230,52 @@ function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): v
       g.poly([cx - r * 0.15, headY - r * s.headR * 0.75, cx, headY - r * s.headR * 0.75 - h, cx + r * 0.15, headY - r * s.headR * 0.75])
         .fill({ color: 0xf0e2c0 })
         .stroke(outline)
+      g.poly([cx - r * 0.05, headY - r * s.headR * 0.75 - h * 0.55, cx, headY - r * s.headR * 0.75 - h, cx + r * 0.05, headY - r * s.headR * 0.75 - h * 0.55])
+        .fill({ color: 0xfff8e0, alpha: 0.55 })
     }
   }
 
-  // Cabeza: lo más grande del personaje.
-  g.circle(sway, headY, r * s.headR).fill({ color: face }).stroke(outline)
+  // Cabeza: lo mas grande del personaje.
+  const hr = r * s.headR
+  g.circle(sway, headY, hr).fill({ color: face }).stroke(outline)
+  // Sombra de la mitad inferior: da volumen sin degradado.
+  g.ellipse(sway, headY + hr * 0.42, hr * 0.82, hr * 0.42)
+    .fill({ color: shade(s.color, 0.22), alpha: 0.35 })
+  // Luz de borde arriba: separa la cabeza del fondo.
+  g.ellipse(sway - hr * 0.26, headY - hr * 0.5, hr * 0.38, hr * 0.14)
+    .fill({ color: tint(s.color, 0.5), alpha: 0.38 })
 
   // Cara. Los ojos son el 60% de la lectura del personaje.
-  const eyeX = r * s.headR * 0.42
-  const eyeY = headY + r * s.headR * 0.12
+  const eyeX = hr * 0.42
+  const eyeY = headY + hr * 0.12
+  const eyeR = r * s.eyeR
   for (const side of [-1, 1]) {
-    g.ellipse(sway + side * eyeX, eyeY, r * s.eyeR * 0.78, r * s.eyeR)
+    g.ellipse(sway + side * eyeX, eyeY, eyeR * 0.78, eyeR)
       .fill({ color: SCLERA })
       .stroke({ width: lw * 0.7, color: INK })
-    g.circle(sway + side * eyeX + side * r * s.eyeR * 0.16, eyeY + r * s.eyeR * 0.16, r * s.eyeR * 0.46).fill({ color: INK })
-    g.circle(sway + side * eyeX - side * r * s.eyeR * 0.2, eyeY - r * s.eyeR * 0.3, r * s.eyeR * 0.2).fill({ color: 0xffffff, alpha: 0.9 })
+    g.circle(sway + side * eyeX + side * eyeR * 0.16, eyeY + eyeR * 0.16, eyeR * 0.46).fill({ color: INK })
+    g.circle(sway + side * eyeX - side * eyeR * 0.24, eyeY - eyeR * 0.34, eyeR * 0.26).fill({ color: 0xffffff, alpha: 0.95 })
   }
 
-  // Cejas: con dos trazos el bicho pasa de tierno a hostil.
+  /*
+   * Cejas. Antes eran dos trazos con un desnivel de ~2px sobre una linea de
+   * 2.5px de grosor: el rango entero de neutro a furioso no llegaba a
+   * distinguirse. Ahora son poligonos solidos, mas largos y con mas caida, que
+   * es lo unico que sobrevive a 20 px de alto.
+   */
   if (s.brow > 0) {
+    const bl = eyeR * 1.25
+    const bt = Math.max(1.6, eyeR * 0.5)
+    const drop = eyeR * s.brow * 1.15
     for (const side of [-1, 1]) {
       const bx = sway + side * eyeX
-      const by = eyeY - r * s.eyeR * 1.25
-      g.moveTo(bx - side * r * s.eyeR * 0.85, by + r * s.brow * s.eyeR * 0.6)
-      g.lineTo(bx + side * r * s.eyeR * 0.8, by - r * s.brow * s.eyeR * 0.45)
-      g.stroke({ width: lw * 1.15, color: INK, cap: 'round' })
+      const by = eyeY - eyeR * 1.15
+      g.poly([
+        bx - side * bl, by + drop,
+        bx + side * bl, by - drop * 0.5,
+        bx + side * bl, by - drop * 0.5 + bt,
+        bx - side * bl, by + drop + bt,
+      ]).fill({ color: INK })
     }
   }
 }
@@ -379,7 +449,7 @@ export interface Atlas {
 export function buildAtlas(renderer: PixiRenderer): Atlas {
   const enemy: Texture[][] = ENEMIES.map((def) => {
     const spec = specFor(def.id, def.color)
-    const half = def.radius * 2.1
+    const half = def.radius * 2.3
     const frames: Texture[] = []
     for (let f = 0; f < WALK_FRAMES; f++) {
       const g = new Graphics()

@@ -114,7 +114,7 @@ export function applyDamage(
   const dmg = Math.max(1, raw - armor)
   e.hp[ei] -= dmg
   e.flash[ei] = 1
-  hooks.onHit(e.x[ei], e.y[ei], dmg, crit)
+  hooks.onHit(ei, e.x[ei], e.y[ei], dmg, crit)
   if (e.hp[ei] <= 0) {
     hooks.onKill(ei, e.bounty[ei], e.x[ei], e.y[ei], e.elite[ei] === 1)
     e.kill(ei)

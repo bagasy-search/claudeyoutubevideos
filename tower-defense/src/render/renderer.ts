@@ -2,7 +2,7 @@
 // `skipExtensionImports` en init(), evita que Pixi las cargue con import()
 // dinamico — necesario para poder empaquetar todo en un solo archivo.
 import 'pixi.js/browser'
-import { Container, Graphics, Sprite, Ticker, WebGLRenderer } from 'pixi.js'
+import { Container, Graphics, Sprite, Texture, Ticker, WebGLRenderer } from 'pixi.js'
 import { Rng } from '../core/rng'
 import type { Game } from '../sim/game'
 import { FIELD_H, FIELD_W } from '../sim/game'
@@ -10,7 +10,7 @@ import { MAX_ENEMIES, MAX_PROJECTILES } from '../sim/world'
 import { INLINE_ART } from '../generated/inlineArt'
 import { applyExternalArt, applyManifest } from './externalArt'
 import { FxLayer } from './fx'
-import { GROUND, SEMANTIC, darken, ink, lighten, mix } from './palette'
+import { GROUND, SEMANTIC, ink, jitterHue, lighten, mix, shade } from './palette'
 import { IDLE_FRAMES, TOWER_R, buildAtlas, type Atlas } from './sprites'
 
 /**
@@ -23,8 +23,16 @@ import { IDLE_FRAMES, TOWER_R, buildAtlas, type Atlas } from './sprites'
 
 /** Sprites por enemigo. Se crean al vuelo: la mayoria de las runs no llena el pool. */
 interface EnemyView {
+  /** Agrupa lo que se ordena en profundidad junto. */
+  group: Container
   shadow: Sprite
   body: Sprite
+  /**
+   * Copia del cuerpo en modo aditivo. El tinte de Pixi es MULTIPLICATIVO: solo
+   * puede oscurecer. Un "flash de impacto" hecho con tinte oscurece el sprite,
+   * que es lo contrario de lo que se busca. Iluminar de verdad necesita sumar.
+   */
+  flash: Sprite
   aura: Sprite
   hpBg: Sprite
   hpFg: Sprite
@@ -51,6 +59,8 @@ export class Renderer {
   private enemyLayer = new Container()
   private towerLayer = new Container()
   private projLayer = new Container()
+  /** Las barras de vida van sobre todo: nunca deben quedar tapadas. */
+  private hpLayer = new Container()
   private overlay = new Container()
 
   private views: (EnemyView | null)[] = new Array(MAX_ENEMIES).fill(null)
@@ -93,7 +103,7 @@ export class Renderer {
       if (art.missing.length > 0) console.warn('[arte] faltan:', art.missing.join(', '))
     }
 
-    this.fx = new FxLayer(this.atlas.soft, this.atlas.ring)
+    this.fx = new FxLayer(this.atlas.soft)
 
     this.world.addChild(
       this.bg,
@@ -104,8 +114,13 @@ export class Renderer {
       this.towerLayer,
       this.projLayer,
       this.fx.container,
+      this.fx.addContainer,
+      this.hpLayer,
       this.overlay,
     )
+    // Con camara frontal, quien esta mas abajo esta mas cerca y va delante.
+    // Sin esto los sprites se dibujan en orden de pool y la profundidad se rompe.
+    this.enemyLayer.sortableChildren = true
     this.overlay.addChild(this.rangePreview, this.ghost)
     this.stage.addChild(this.world)
 
@@ -127,17 +142,22 @@ export class Renderer {
 
     g.rect(0, 0, FIELD_W, FIELD_H).fill(GROUND.base)
 
-    // Manchas de terreno iluminado: rompen la planicie sin competir con nada.
+    /*
+     * Manchas de terreno. Con la paleta vieja eran invisibles; con la nueva se
+     * pasaban al otro extremo y el suelo quedaba a lunares. Van en dos capas
+     * suaves y con poco alfa: la idea es romper la planicie, no dibujar nubes.
+     */
     const rng = new Rng(0xa11ce)
-    for (let i = 0; i < 26; i++) {
+    for (let i = 0; i < 30; i++) {
       const x = rng.range(0, FIELD_W)
       const y = rng.range(0, FIELD_H)
-      g.ellipse(x, y, rng.range(50, 140), rng.range(40, 100)).fill({ color: GROUND.lit, alpha: 0.35 })
+      const rx = rng.range(60, 170)
+      const warm = rng.chance(0.6)
+      g.ellipse(x, y, rx, rx * rng.range(0.55, 0.8)).fill({
+        color: warm ? GROUND.lit : shade(GROUND.base, 0.25),
+        alpha: 0.13,
+      })
     }
-
-    for (let x = 0; x <= FIELD_W; x += 40) g.moveTo(x, 0).lineTo(x, FIELD_H)
-    for (let y = 0; y <= FIELD_H; y += 40) g.moveTo(0, y).lineTo(FIELD_W, y)
-    g.stroke({ width: 1, color: GROUND.grid, alpha: 0.55 })
 
     // El camino: borde, calzada y una guía central tenue.
     const trace = () => {
@@ -149,7 +169,7 @@ export class Renderer {
     trace()
     g.stroke({ width: 50, color: GROUND.path, cap: 'round', join: 'round' })
     trace()
-    g.stroke({ width: 2, color: GROUND.pathInner, alpha: 0.6, cap: 'round', join: 'round' })
+    g.stroke({ width: 3, color: GROUND.pathInner, alpha: 0.85, cap: 'round', join: 'round' })
 
     // Piedras al borde del camino, cada tantos samples.
     for (let i = 6; i < p.xs.length - 6; i += 9) {
@@ -158,7 +178,11 @@ export class Renderer {
         const d = 27 + rng.range(0, 4)
         const x = p.xs[i] + Math.cos(ang) * d * side
         const y = p.ys[i] + Math.sin(ang) * d * side
-        g.ellipse(x, y, rng.range(2.5, 5), rng.range(2, 4)).fill({ color: GROUND.pathEdge, alpha: 0.9 })
+        // Piedra clara con su propia sombra. Antes eran del mismo color que el
+        // borde sobre el que se apoyaban: contraste cero.
+        const rx = rng.range(3, 6)
+        g.ellipse(x, y + rx * 0.35, rx, rx * 0.6).fill({ color: shade(GROUND.pathEdge, 0.5), alpha: 0.7 })
+        g.ellipse(x, y, rx, rx * 0.7).fill({ color: lighten(GROUND.pathEdge, 0.3) })
       }
     }
 
@@ -220,60 +244,82 @@ export class Renderer {
     aura.visible = false
     const body = new Sprite(this.atlas.enemy[0][0])
     body.anchor.set(0.5)
+    const flash = new Sprite(this.atlas.enemy[0][0])
+    flash.anchor.set(0.5)
+    flash.blendMode = 'add'
+    flash.visible = false
+    const group = new Container()
+    group.addChild(aura, body, flash)
     const hpBg = new Sprite(this.atlas.bar)
     hpBg.anchor.set(0.5)
     hpBg.tint = SEMANTIC.ink
-    hpBg.alpha = 0.75
+    hpBg.alpha = 0.8
     const hpFg = new Sprite(this.atlas.bar)
     hpFg.anchor.set(0, 0.5)
     this.shadowLayer.addChild(shadow)
-    this.enemyLayer.addChild(aura, body, hpBg, hpFg)
-    v = { shadow, body, aura, hpBg, hpFg }
+    this.enemyLayer.addChild(group)
+    this.hpLayer.addChild(hpBg, hpFg)
+    v = { group, shadow, body, flash, aura, hpBg, hpFg }
     this.views[i] = v
     return v
   }
 
   private wireEvents(game: Game): void {
-    game.events.on('hit', ({ x, y, damage, crit }) => {
-      this.fx.number(x, y, damage, crit)
-      if (crit) {
-        this.fx.burst(x, y, SEMANTIC.crit, 7, 150)
-        this.fx.shake(2)
-      }
+    /*
+     * Un impacto normal NO sacude la camara. En un tower defense con treinta
+     * disparos por segundo, sacudir en cada uno deja un temblor constante que
+     * se lee como un fallo, no como fuerza. El golpe chico se comunica con
+     * destello, particulas y sonido; la camara se guarda para lo que importa.
+     */
+    game.events.on('hit', ({ enemyIdx, x, y, damage, crit }) => {
+      this.fx.damage(enemyIdx, x, y, damage, crit)
+      if (crit) this.fx.burst(x, y, SEMANTIC.crit, 7, 150)
     })
 
-    game.events.on('kill', ({ x, y, elite }) => {
-      const def = this.lastKilled
-      if (def) {
-        this.fx.corpse(def.texture, x, y, def.rotation, def.scale, darken(def.tint, 0.35))
+    game.events.on('kill', ({ enemyIdx, x, y, elite, color }) => {
+      // Lo acumulado sale ya: el enemigo no va a estar para mostrarlo despues.
+      this.fx.flushDamage(enemyIdx)
+      const pose = this.poses[enemyIdx]
+      if (pose) {
+        // Sin rotacion: el vivo se dibuja siempre derecho, asi que un cadaver
+        // inclinado contradice la camara. Se cae aplastandose, no girando.
+        this.fx.corpse(pose.texture, x, y, pose.scale)
+        this.poses[enemyIdx] = null
       }
-      this.fx.burst(x, y, elite ? SEMANTIC.crit : 0xc8442f, elite ? 24 : 9, elite ? 210 : 120)
+      this.fx.burst(x, y, shade(color, 0.15), elite ? 24 : 10, elite ? 210 : 130)
       this.fx.smoke(x, y, GROUND.prop, elite ? 8 : 3)
-      if (elite) this.fx.shake(5)
+      if (elite) this.fx.shake(3.5)
     })
 
     game.events.on('splash', ({ x, y, radius, color }) => {
       this.fx.ringAt(x, y, radius, color)
       this.fx.smoke(x, y, lighten(color, 0.3), 6)
-      this.fx.shake(1.5)
     })
 
     game.events.on('leak', ({ x, y }) => {
       this.fx.burst(x, y, SEMANTIC.leak, 22, 190, 1.6)
       this.fx.ringAt(x, y, 70, SEMANTIC.leak)
-      this.fx.shake(9)
+      // Desde el nucleo hacia afuera: la camara dice de donde vino el golpe.
+      this.fx.shakeFrom(x - FIELD_W / 2, y - FIELD_H / 2, 6)
       this.coreFlash = 1
     })
 
     game.events.on('fire', ({ tower }) => {
       const mx = tower.x + Math.cos(tower.angle) * 17
       const my = tower.y + Math.sin(tower.angle) * 17
-      this.fx.burst(mx, my, lighten(tower.color, 0.45), 3, 70, 0.8)
+      // Cono estrecho hacia adelante, no una explosion radial: un fogonazo sale
+      // por la boca del arma.
+      this.fx.cone(mx, my, tower.angle, 0.5, lighten(tower.color, 0.5), 4, 120, 0.7)
+      this.fx.flashAt(mx, my, lighten(tower.color, 0.6), 14)
     })
   }
 
-  /** Datos del último enemigo dibujado, para poder dejar un cadáver al morir. */
-  private lastKilled: { texture: import('pixi.js').Texture; rotation: number; scale: number; tint: number } | null = null
+  /**
+   * Pose dibujada de cada enemigo, indexada por su slot del pool. El evento de
+   * muerte llega sin saber como se estaba dibujando el bicho, asi que se guarda
+   * aca para dejar el cadaver en la pose correcta.
+   */
+  private poses: ({ texture: Texture; scale: number } | null)[] = new Array(MAX_ENEMIES).fill(null)
   private coreFlash = 0
 
   // ---------------------------------------------------------------- dibujo
@@ -310,8 +356,9 @@ export class Renderer {
     for (let i = 0; i < MAX_ENEMIES; i++) {
       const existing = this.views[i]
       if (!e.alive[i]) {
-        if (existing && existing.body.visible) {
-          existing.body.visible = false
+        if (existing && existing.group.visible) {
+          existing.group.visible = false
+          existing.flash.visible = false
           existing.shadow.visible = false
           existing.aura.visible = false
           existing.hpBg.visible = false
@@ -331,38 +378,65 @@ export class Renderer {
       // El frame se elige por distancia recorrida, no por tiempo: asi los pasos
       // van al ritmo del suelo y un enemigo ralentizado camina mas lento gratis.
       const stride = Math.max(10, def.radius * 1.6)
-      const dist = e.prevDist[i] + (e.dist[i] - e.prevDist[i]) * alpha
+      // La fase arranca desplazada por instancia. Sin esto, dos peones que
+      // salen juntos comparten `dist` y por lo tanto el frame: caminan en
+      // lockstep para siempre, que es el delator mas fuerte de un ejercito de
+      // clones.
+      const phaseOffset = e.variant[i] * stride
+      const dist = e.prevDist[i] + (e.dist[i] - e.prevDist[i]) * alpha + phaseOffset
       // Se cicla sobre los frames que HAYA, no sobre WALK_FRAMES: el arte
       // externo puede traer otra cantidad, y pedir un indice inexistente deja
       // la textura en undefined y el sprite no dibuja nada.
       const count = frames.length
       const frame = Math.floor((dist / stride) * count) % count
       const angle = path.angleAt(e.dist[i])
-      const scale = e.elite[i] ? 1.35 : 1
+      // Variacion de tamaño por instancia, sutil pero suficiente para romper
+      // la sensacion de tropa fotocopiada.
+      const jitter = 0.93 + e.variant[i] * 0.14
+      const scale = (e.elite[i] ? 1.35 : 1) * jitter
 
-      v.body.visible = true
+      v.group.visible = true
+      v.group.position.set(x, y)
+      // Quien esta mas abajo va delante.
+      v.group.zIndex = y
       v.body.texture = frames[(frame + count) % count]
-      v.body.position.set(x, y)
+      v.body.position.set(0, 0)
       // Vista frontal: el sprite NO rota con el camino. Solo se inclina hacia
       // donde va, que es suficiente para comunicar direccion sin acostar al
       // personaje cuando el camino baja.
       v.body.rotation = Math.cos(angle) * 0.07
       v.body.scale.set(scale)
 
-      // Estados, por orden de prioridad de lectura: golpe > quemadura > frío.
-      let tint = 0xffffff
-      if (e.flash[i] > 0) tint = mix(0xffffff, SEMANTIC.crit, e.flash[i] * 0.9)
-      else if (e.burnT[i] > 0) tint = mix(0xffffff, SEMANTIC.burn, 0.4 + Math.sin(this.time * 14) * 0.14)
-      else if (e.slowT[i] > 0) tint = mix(0xffffff, SEMANTIC.slow, 0.45)
-      v.body.tint = tint
+      // Quemadura y frio SI funcionan como tinte, porque son oscurecimientos
+      // con color. El golpe no: tiene que aclarar, y para eso esta la capa
+      // aditiva de arriba.
+      // Variacion de tono por instancia: la investigacion de multitudes dice
+      // que el clon de APARIENCIA se detecta mucho antes que el de movimiento.
+      let bodyTint = jitterHue(0xffffff, e.variant[i], 7)
+      if (e.burnT[i] > 0) bodyTint = mix(0xffffff, SEMANTIC.burn, 0.42 + Math.sin(this.time * 14 + e.variant[i] * 6) * 0.14)
+      else if (e.slowT[i] > 0) bodyTint = mix(0xffffff, SEMANTIC.slow, 0.45)
+      v.body.tint = bodyTint
+
+      const hit = e.flash[i]
+      v.flash.visible = hit > 0.01
+      if (v.flash.visible) {
+        v.flash.texture = v.body.texture
+        v.flash.position.set(0, 0)
+        v.flash.rotation = v.body.rotation
+        v.flash.scale.set(scale)
+        v.flash.tint = SEMANTIC.crit
+        v.flash.alpha = hit * 0.85
+      }
 
       v.shadow.visible = true
       v.shadow.position.set(x, y + r * 0.98)
-      v.shadow.scale.set((r * 1.25) / 16, (r * 0.9) / 16)
+      v.shadow.scale.set((r * 1.25 * jitter) / 16, (r * 0.9 * jitter) / 16)
+      // Cuanto mas grande el bicho, mas dura la sombra: masa se lee por peso.
+      v.shadow.alpha = 0.42 + Math.min(0.22, r / 200)
 
       if (e.elite[i]) {
         v.aura.visible = true
-        v.aura.position.set(x, y)
+        v.aura.position.set(0, 0)
         v.aura.tint = SEMANTIC.crit
         v.aura.alpha = 0.3 + Math.sin(this.time * 3.4) * 0.1
         v.aura.scale.set((r * 2.1) / 30)
@@ -390,9 +464,10 @@ export class Renderer {
 
       // El evento de muerte llega sin saber como se estaba dibujando el bicho:
       // se guarda acá para poder dejar el cadáver en la pose correcta.
-      if (hpRatio < 0.35 || e.hp[i] <= 0) {
-        this.lastKilled = { texture: v.body.texture, rotation: angle, scale, tint: def.color }
-      }
+      // Guardar la pose de ESTE enemigo, indexada por su slot. Antes habia un
+      // solo campo compartido que pisaba cualquier enemigo herido del bucle, y
+      // el cadaver terminaba siendo el de otro bicho.
+      this.poses[i] = { texture: v.body.texture, scale }
     }
   }
 

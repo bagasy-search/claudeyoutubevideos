@@ -1,4 +1,5 @@
 import { sfx } from './audio/sfx'
+import { HITSTOP, Hitstop } from './core/hitstop'
 import { FixedLoop } from './core/loop'
 import { Renderer } from './render/renderer'
 import { Game } from './sim/game'
@@ -44,6 +45,15 @@ game.events.on('hit', ({ crit }) => sfx.hit(crit))
 game.events.on('kill', ({ elite }) => sfx.death(elite))
 game.events.on('splash', () => sfx.splash())
 game.events.on('leak', () => sfx.leak())
+
+// Hit-stop. Solo en sucesos que importan: si cada impacto congelase el juego,
+// con veinte torres disparando quedaria en camara lenta permanente.
+const hitstop = new Hitstop()
+game.events.on('hit', ({ crit }) => {
+  if (crit) hitstop.request(HITSTOP.crit)
+})
+game.events.on('kill', ({ elite }) => hitstop.request(elite ? HITSTOP.elite : HITSTOP.death))
+game.events.on('leak', () => hitstop.request(HITSTOP.leak))
 game.events.on('phase', ({ phase }) => {
   if (phase === 'combat') sfx.waveStart()
   else if (phase === 'draft') sfx.waveClear()
@@ -124,8 +134,12 @@ const loop = new FixedLoop()
 
 renderer.ticker.add((ticker) => {
   const dtMs = ticker.deltaMS
-  // La sim avanza SIEMPRE en tics de 1/60s; alpha interpola el sobrante.
-  const alpha = loop.update(dtMs, () => game.tick())
+  /*
+   * El hit-stop escala el tiempo de la SIMULACION, nunca el del render ni el de
+   * la entrada. El juego se frena; la interfaz y el mouse siguen respondiendo.
+   */
+  const scale = hitstop.update(dtMs / 1000)
+  const alpha = loop.update(dtMs * scale, () => game.tick())
   renderer.draw(game, alpha, dtMs)
 
   if (mouseX > -900) {

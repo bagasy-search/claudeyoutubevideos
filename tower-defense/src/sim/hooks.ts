@@ -7,7 +7,7 @@ import type { Tower } from './world'
 export interface SimHooks {
   onKill(enemyIdx: number, bounty: number, x: number, y: number, elite: boolean): void
   onLeak(enemyIdx: number, leak: number, x: number, y: number): void
-  onHit(x: number, y: number, damage: number, crit: boolean): void
+  onHit(enemyIdx: number, x: number, y: number, damage: number, crit: boolean): void
   onSplash(x: number, y: number, radius: number, color: number): void
   onFire(tower: Tower): void
 }
