@@ -18,7 +18,9 @@ export const Endcard: React.FC<{ durationInFrames: number }> = ({ durationInFram
   const { fps } = useVideoConfig();
   const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
   const enter = spring({ frame, fps, config: { damping: 18, mass: 0.9, stiffness: 110 } });
-  const outO = interpolate(frame, [D - 10, D], [1, 0], cl);
+  // SALIDA = CORTE LIMPIO (antes: disolvía en 10f). Es una placa sobre el avatar, mismo caso que
+  // DocNameCard: al disolverse se transparentaba encima del presentador.
+  const outO = 1;
   const op = Math.min(enter, outO);
   const pulse = 1 + 0.03 * Math.sin(frame / 7);
 

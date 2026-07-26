@@ -26,7 +26,11 @@ export const LowerThird: React.FC<{
 
   // entrada: slide desde la izquierda + la barra del título "crece"
   const inS = spring({ frame, fps, config: { damping: 20, mass: 0.8, stiffness: 120 } });
-  const out = interpolate(frame, [durationInFrames - 12, durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // SALIDA = CORTE LIMPIO. Antes se disolvía en 12f, y sobre un gráfico de bordes duros como este
+  // el cross-fade se ve como un fantasma: el banner entra con movimiento (slide + la barra que
+  // crece) y salía derritiéndose en el lugar. Esa asimetría es lo que quedaba mal. Un banner de
+  // noticiero no se disuelve: está o no está. (Regla del creador: corte limpio, cero fades.)
+  const out = 1;
   const x = interpolate(inS, [0, 1], [-620, 0]);
   const barGrow = interpolate(frame, [6, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const subOp = interpolate(frame, [16, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) * out;

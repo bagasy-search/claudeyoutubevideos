@@ -37,10 +37,10 @@ export const DocNameCard: React.FC<{
   const { fps } = useVideoConfig();
 
   const enter = spring({ frame, fps, config: { damping: 18, mass: 0.9, stiffness: 130 } });
-  const out = interpolate(frame, [durationInFrames - 12, durationInFrames], [1, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+  // SALIDA = CORTE LIMPIO (antes: disolvía en 12f). Es una placa que va ENCIMA del avatar vivo:
+  // al disolverse se veía el avatar "a través" de la tarjeta durante medio segundo. Entra con
+  // spring + slide, así que sale cortando.
+  const out = 1;
   const op = Math.min(enter, out);
   const dx = interpolate(enter, [0, 1], [side === "left" ? -70 : 70, 0]);
 

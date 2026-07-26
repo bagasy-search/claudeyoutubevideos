@@ -39,11 +39,18 @@ export const GuardaEsto: React.FC<{
             const p = spring({ frame: frame - 10 - i * 5, fps, config: { damping: 20, stiffness: 130 } });
             return (
               <div key={i} style={{ display: "flex", alignItems: "center", gap: 24, padding: "14px 0", borderTop: i ? "1px solid rgba(255,255,255,0.08)" : "none", opacity: p, transform: `translateX(${(1 - p) * 16}px)` }}>
-                {/* miniatura con badge de número */}
-                <div style={{ position: "relative", flex: "0 0 auto", width: 118, height: 86, borderRadius: 16, overflow: "hidden", border: "2px solid rgba(255,255,255,0.14)", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", background: "rgba(255,255,255,0.05)" }}>
-                  {it.image && <Media src={it.image} style={{ width: "100%", height: "100%", objectFit: "cover" }} />}
-                  <div style={{ position: "absolute", left: 8, top: 8, width: 34, height: 34, borderRadius: 18, background: TEAL, color: "#fff", fontSize: 18, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 8px rgba(0,0,0,0.4)" }}>{i + 1}</div>
-                </div>
+                {/* Miniatura con badge de número. SIN imagen se dibujaba igual el marco de 118×86
+                    vacío con el numerito arrimado a la esquina: una caja hueca al lado de cada
+                    paso. Si no hay imagen no hay miniatura — va sólo el número, centrado y del
+                    tamaño que corresponde. */}
+                {it.image ? (
+                  <div style={{ position: "relative", flex: "0 0 auto", width: 118, height: 86, borderRadius: 16, overflow: "hidden", border: "2px solid rgba(255,255,255,0.14)", boxShadow: "0 10px 26px rgba(0,0,0,0.4)", background: "rgba(255,255,255,0.05)" }}>
+                    <Media src={it.image} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <div style={{ position: "absolute", left: 8, top: 8, width: 34, height: 34, borderRadius: 18, background: TEAL, color: "#fff", fontSize: 18, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 2px 8px rgba(0,0,0,0.4)" }}>{i + 1}</div>
+                  </div>
+                ) : (
+                  <div style={{ flex: "0 0 auto", width: 56, height: 56, borderRadius: 28, background: TEAL, color: "#fff", fontSize: 28, fontWeight: 900, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 6px 18px rgba(0,0,0,0.4)" }}>{i + 1}</div>
+                )}
                 <div style={{ fontSize: 38, fontWeight: 700, color: CREAM, lineHeight: 1.2 }}>{it.text}</div>
               </div>
             );

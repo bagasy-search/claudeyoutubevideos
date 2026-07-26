@@ -125,6 +125,14 @@ const ThemeCtx = React.createContext<Theme>(THEME_WHITE);
 const BOARD = {left: 0.02, top: 0.028, w: 0.96, h: 0.945};
 const FRAME_PAD = 13;
 const PIP = {w: 0.15, marginR: 0.022, marginB: 0.032}; // esquina inf. der., recorte 3:4
+// Encuadre del avatar DENTRO del recuadro: el cover a 3:4 dejaba ver todo el set con la cara chica.
+// PIP_ZOOM acerca a CABEZA/HOMBROS; PIP_FOCUS = origen del zoom (arriba-centro, donde está la cara).
+// Subí PIP_ZOOM si el presentador queda chico; bajalo si le corta la cabeza.
+// Encuadre del avatar en el recuadro. OJO: si el clip del avatar es un PLANO ABIERTO (presentador al
+// costado de un set/pizarra grande), ningún valor lo vuelve un primer plano limpio → para el PiP más
+// prolijo, alimentá la pizarra con un clip del avatar en plano CERRADO (cabeza y hombros).
+const PIP_ZOOM = 1.7;
+const PIP_FOCUS = '19% 24%'; // el presentador suele estar a la IZQUIERDA-ARRIBA del cuadro (no al centro)
 
 const BoardCtx = React.createContext<{w: number; h: number}>({w: 1, h: 1});
 
@@ -456,13 +464,20 @@ const BoardNote: React.FC<{el: Extract<BoardEl, {t: 'note'}>}> = ({el}) => {
   const fillP = interpolate(fillSp, [0, 1], [0, 1], CLAMP);
   const bulletO = el.bullet ? interpolate(frame, [startF + 2, startF + 8], [0, 1], CLAMP) : 0;
 
+  // El elemento se ANCLA POR SU CENTRO (translate -50%), pero la data se escribe como si `x` fuera
+  // el borde izquierdo: una nota con {x:6, w:34} termina yendo de -11% a 23%, o sea arrancando
+  // FUERA de la pizarra, y en pantalla se lee cortada por la mitad ("...já que le llega a tus
+  // arterias"). Clampeo el centro para que la caja entre entera. No cambia nada de lo que ya
+  // estaba bien colocado: sólo corrige lo que se salía.
+  const wPct = el.w ?? 24;
+  const cx = Math.min(Math.max(el.x, wPct / 2), 100 - wPct / 2);
   return (
     <div
       style={{
         position: 'absolute',
-        left: `${el.x}%`,
+        left: `${cx}%`,
         top: `${el.y}%`,
-        width: `${el.w ?? 24}%`,
+        width: `${wPct}%`,
         transform: 'translate(-50%, -50%) rotate(-0.8deg)',
         opacity: appear,
         display: 'flex',
@@ -778,7 +793,8 @@ const AvatarPip: React.FC<{src: string; muted?: boolean}> = ({src, muted}) => {
     <div style={{position: 'absolute', left, top, width: w, height: h, opacity: o, transform: `translateY(${yIn}px)`}}>
       <div style={{position: 'relative', width: '100%', height: '100%', borderRadius: 14, padding: 6, background: 'linear-gradient(150deg,#2a2e34,#0b0e12 60%,#05070a)', boxShadow: '0 22px 50px rgba(0,0,0,0.5)'}}>
         <div style={{position: 'relative', width: '100%', height: '100%', borderRadius: 9, overflow: 'hidden', border: `2px solid ${rgba(theme.accent, 0.55)}`}}>
-          <AbsoluteFill style={{transform: `scale(${push})`}}>
+          {/* zoom base + foco arriba-centro → encuadra cabeza/hombros del presentador, no todo el set */}
+          <AbsoluteFill style={{transform: `scale(${PIP_ZOOM * push})`, transformOrigin: PIP_FOCUS}}>
             <OffthreadVideo src={src} muted={muted} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
           </AbsoluteFill>
           <AbsoluteFill style={{pointerEvents: 'none', background: 'linear-gradient(122deg, rgba(255,255,255,0.1) 0%, transparent 22%), linear-gradient(to bottom, transparent 60%, rgba(2,5,11,0.7))'}} />
