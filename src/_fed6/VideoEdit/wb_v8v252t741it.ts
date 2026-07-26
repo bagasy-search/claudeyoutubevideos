@@ -26,7 +26,7 @@ export const SCENE_V8: any = {
     { t: "note", x: 6, y: 36, text: 'la orden de "aflojá" que le llega a tus arterias', start: 4.6, w: 34 },
     { t: "note", x: 6, y: 46, text: "tu cuerpo abre los caños desde adentro", start: 7.2, w: 32, bullet: true },
 
-    { t: "image", x: 40, y: 30, w: 24, src: staticFile("img/dg_v8v252t741it_cascada_remolacha_oxido_nitrico.png"), start: 9.4, caption: "la pared de la arteria se relaja" },
+    { t: "image", x: 40, y: 30, w: 24, src: staticFile("img/dg_v8v252t741it_cascada_remolacha_oxido_nitrico.jpg"), start: 9.4, caption: "la pared de la arteria se relaja" },
     { t: "arrow", from: [26, 42], to: [39, 40], start: 10.6, curve: 0.3 },
     { t: "note", x: 40, y: 62, text: "el diámetro se agranda un poquito", start: 12.0, w: 26, highlight: true },
     { t: "note", x: 40, y: 71, text: "la sangre pasa con menos esfuerzo", start: 13.8, w: 26 },
