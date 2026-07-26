@@ -3076,11 +3076,12 @@ const CarouselCard: React.FC<{
   const blur = focused
     ? 18 * (1 - p)
     : anyFocus
-    ? 3 + 4 * (1 - front01) + 9 * p
+    ? 3 + 4 * (1 - front01) + 6 * p
     : 1.4 + 5.2 * (1 - front01);
 
-  const bright = focused ? 0.6 + 0.55 * p : anyFocus ? 0.95 - 0.62 * p : 0.62 + 0.38 * front01;
-  const sat = focused ? 0.65 + 0.45 * p : anyFocus ? 1 - 0.55 * p : 0.85;
+  // las vecinas se apagan, pero NO desaparecen: si no, deja de leerse como carrusel
+  const bright = focused ? 0.6 + 0.55 * p : anyFocus ? 0.95 - 0.38 * p : 0.62 + 0.38 * front01;
+  const sat = focused ? 0.65 + 0.45 * p : anyFocus ? 1 - 0.34 * p : 0.85;
 
   const backFade = interpolate(front, [-1, -0.25], [0.18, 1], CLAMP);
   const opacity = s * backFade * (anyFocus && !focused ? 1 - 0.25 * p : 1);

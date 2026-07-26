@@ -124,6 +124,7 @@ const PHOTO_TAIL =
 
 const arr = (v) => (v == null ? undefined : Array.isArray(v) ? v : [String(v)]);
 
+let chapterN = 1;
 const beats = [];
 for (const m of moments) {
   let comp = (m.comp || '').trim();
@@ -196,6 +197,74 @@ for (const m of moments) {
   if (comp === 'FedOilCarousel') {
     props.cards = 'CARDS';
     props.bg = 'img/vn2_bg_kitchen.png';
+  }
+
+  // ⛔ SIN DEFAULTS DEL KIT: los valores por defecto de FedererKit son del video de ROMERO
+  // ("Ácido carnósico", centerLabel "Romero", "Semana 12 · Ritual de romero"...). Si un prop
+  // queda undefined, ESE texto sale al aire en un video de aceites. Se rellenan TODOS.
+  const short = (n) => {
+    const s = (m.says || '').replace(/^[\s,.;:]+/, '').trim();
+    if (!s) return '';
+    const cut = s.slice(0, n);
+    return (cut.length < s.length ? cut.replace(/[\s,;:]+\S*$/, '') : cut).replace(/[.,;:]$/, '');
+  };
+  const need = (k, v) => {
+    if (props[k] === undefined || props[k] === null) props[k] = v;
+  };
+  if (comp === 'FedChapter') {
+    need('kicker', '');
+    need('index', String(chapterN++).padStart(2, '0'));
+    need('title', short(40) || 'Aceites para la piel madura');
+    need('sub', '');
+  } else if (comp === 'FedHero') {
+    need('kicker', '');
+    need('title', short(52) || 'Aceites para la piel madura');
+    need('sub', '');
+    need('hot', []);
+  } else if (comp === 'FedStat') {
+    need('kicker', '');
+    need('label', short(40));
+    need('sub', '');
+    need('suffix', '');
+    need('prefix', '');
+    need('decimals', 0);
+  } else if (comp === 'FedQuote') {
+    need('kicker', '');
+    need('quote', short(120) || 'La barrera de la piel no es cosmética.');
+    need('author', 'Dr. Valler');
+    need('role', 'Medicina de la piel');
+  } else if (comp === 'FedMolecule') {
+    need('kicker', '');
+    need('title', short(44) || 'La barrera de la piel');
+    need('sub', '');
+    need('centerLabel', String(props.title).slice(0, 18));
+    need('hot', []);
+  } else if (comp === 'FedStep') {
+    need('title', short(46) || 'Cómo se hace bien');
+    need('sub', '');
+    need('step', 1);
+    need('total', 5);
+    need('hot', []);
+  } else if (comp === 'FedBeforeAfter') {
+    need('kicker', '');
+    need('title', short(46) || 'La diferencia');
+    need('labelA', 'Antes');
+    need('labelB', 'Después');
+    need('hot', []);
+  } else if (comp === 'FedLowerThird') {
+    need('name', 'Dr. Valler');
+    need('role', 'Medicina de la piel');
+    need('topic', 'Siete aceites para la piel madura');
+  } else if (comp === 'FedChecklist') {
+    need('kicker', '');
+    need('title', short(44) || 'Para tener en cuenta');
+    need('hot', []);
+  } else if (comp === 'FedCta') {
+    need('kicker', '');
+    need('title', short(46) || 'La ficha completa');
+    need('sub', '');
+    need('buttonLabel', 'Mire la descripción');
+    need('hot', []);
   }
 
   beats.push({
