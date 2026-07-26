@@ -278,13 +278,12 @@ export const TransitionShell: React.FC<{
   if (variant === 'lift') {
     transform = `translateY(${(push * height * DNA_WHIP).toFixed(1)}px) scale(${scale.toFixed(4)})`;
   } else if (variant === 'fold') {
-    // gira sobre el eje vertical y arrastra un poco el whip lateral
-    transform = `perspective(1800px) rotateY(${(push * 9).toFixed(2)}deg) translateX(${(
-      push *
-      width *
-      DNA_WHIP *
-      0.45
-    ).toFixed(1)}px) scale(${scale.toFixed(4)})`;
+    // Bisagra en el canto: la hoja gira sobre su eje. SIN translate lateral — con el
+    // translate los stills mostraban 'fold' y 'whip' IGUALES, y entonces no eran dos
+    // variantes. Acá el movimiento ES la rotación, y se reconoce en un solo frame.
+    transform = `perspective(1150px) rotateY(${(push * 27).toFixed(2)}deg) scale(${scale.toFixed(
+      4
+    )})`;
   } else if (variant === 'iris') {
     // sin desplazamiento: resuelve desde el centro con una máscara blanda
     const r = interpolate(Math.min(en, 1 - ex), [0, 1], [18, 165], CLAMP);
@@ -360,7 +359,7 @@ export const TransitionShell: React.FC<{
         opacity,
         filter: `blur(${blur.toFixed(2)}px)`,
         transform,
-        transformOrigin: variant === 'fold' ? '18% 50%' : '50% 50%',
+        transformOrigin: variant === 'fold' ? '0% 50%' : '50% 50%',
         maskImage: mask,
         WebkitMaskImage: mask,
         willChange: 'transform, filter, opacity',
