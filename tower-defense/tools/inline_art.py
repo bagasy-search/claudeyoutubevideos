@@ -34,10 +34,20 @@ import type { ArtManifest } from '../render/externalArt'
 export const INLINE_ART: ArtManifest | null = """
 
 
+# El tipo sale de la extension y no se asume PNG: el tablero viaja en WebP, que
+# para una imagen pintada de 1080x1920 pesa un quinto que el PNG. Declararlo
+# como PNG hace que `createImageBitmap` lo rechace en el navegador y el fondo
+# queda sin cargar, sin mas sintoma que un tablero procedural.
+MIME = {".png": "image/png", ".webp": "image/webp", ".jpg": "image/jpeg", ".jpeg": "image/jpeg"}
+
+
 def encode(path: str) -> str:
+    mime = MIME.get(os.path.splitext(path)[1].lower())
+    if mime is None:
+        sys.exit(f"no se que tipo MIME tiene {path}")
     with open(path, "rb") as fh:
         data = base64.b64encode(fh.read()).decode("ascii")
-    return f"data:image/png;base64,{data}"
+    return f"data:{mime};base64,{data}"
 
 
 def walk(node, base: str):

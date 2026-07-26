@@ -37,26 +37,26 @@ export const FIELD_W = 540
 export const FIELD_H = 960
 
 /**
- * El camino entra por arriba y sale por abajo, serpenteando. En vertical no
- * entran los zigzags anchos del formato apaisado: lo que rinde es una S larga
- * con cuatro barridos, que deja pasto a los dos lados en todo el recorrido.
+ * El camino entra por arriba y sale por abajo, serpenteando.
+ *
+ * Estos numeros NO estan escritos a mano: salen de medir el tablero pintado con
+ * `tools/fit_map.py`, que traza el eje de la calzada dibujada. Si se cambia la
+ * imagen del mapa hay que volver a correrlo — si no, los enemigos caminan por
+ * el pasto al lado de la ruta.
  */
 const DEFAULT_PATH: PathPoint[] = [
-  { x: 270, y: -40 },
-  { x: 270, y: 110 },
-  { x: 140, y: 190 },
-  { x: 105, y: 320 },
-  { x: 250, y: 395 },
-  { x: 425, y: 350 },
-  { x: 455, y: 495 },
-  { x: 300, y: 585 },
-  { x: 125, y: 650 },
-  { x: 112, y: 785 },
-  { x: 258, y: 842 },
-  // El camino TERMINA dentro del campo, no se va por el borde. En vertical el
-  // nucleo tiene que verse: es lo que el jugador defiende, y si queda fuera de
-  // pantalla las vidas bajan sin que se entienda de donde.
-  { x: 430, y: 888 },
+  { x: 270, y: -43 },
+  { x: 244, y: 139 },
+  { x: 122, y: 232 },
+  { x: 157, y: 369 },
+  { x: 310, y: 380 },
+  { x: 438, y: 407 },
+  { x: 380, y: 537 },
+  { x: 231, y: 580 },
+  { x: 114, y: 667 },
+  { x: 168, y: 802 },
+  { x: 321, y: 835 },
+  { x: 390, y: 957 },
 ]
 
 /**
@@ -70,24 +70,24 @@ const DEFAULT_PATH: PathPoint[] = [
  * principio. Y de paso el fondo puede tener las plataformas PINTADAS, que es lo
  * que hace que el tablero se lea como un lugar y no como una grilla.
  *
- * Estan a 66 px del eje del camino (la calzada tiene 30 de semiancho, asi que
- * quedan justo al borde) y separadas 142 px entre si.
+ * Igual que el camino, estas posiciones estan MEDIDAS sobre la imagen: son los
+ * centroides de las catorce losas pintadas, detectadas por area y redondez.
  */
 export const BUILD_SLOTS: readonly PathPoint[] = [
-  { x: 346, y: 52 },
-  { x: 161, y: 99 },
-  { x: 276, y: 192 },
-  { x: 166, y: 283 },
-  { x: 460, y: 294 },
-  { x: 111, y: 414 },
-  { x: 391, y: 420 },
-  { x: 249, y: 461 },
-  { x: 467, y: 576 },
-  { x: 326, y: 646 },
-  { x: 185, y: 690 },
-  { x: 298, y: 785 },
-  { x: 61, y: 827 },
-  { x: 200, y: 894 },
+  { x: 174, y: 89 },
+  { x: 375, y: 94 },
+  { x: 292, y: 203 },
+  { x: 190, y: 280 },
+  { x: 441, y: 289 },
+  { x: 111, y: 427 },
+  { x: 365, y: 436 },
+  { x: 239, y: 467 },
+  { x: 438, y: 593 },
+  { x: 325, y: 635 },
+  { x: 209, y: 669 },
+  { x: 297, y: 752 },
+  { x: 73, y: 825 },
+  { x: 188, y: 885 },
 ]
 
 /** Radio de captura del toque. Generoso: es un juego para dedos, no para mouse. */

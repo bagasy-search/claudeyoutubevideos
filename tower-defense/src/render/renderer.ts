@@ -318,7 +318,9 @@ export class Renderer {
       sp.visible = true
       // En reposo la plataforma esta ahi pero callada; con una torre en la mano
       // late. Es la diferencia entre "hay huecos" y "poné algo acá".
-      const pulse = armed ? 0.72 + Math.sin(this.time * 4.5 + i * 0.7) * 0.2 : 0.4
+      // En reposo bien discreto: sobre el tablero pintado la losa ya se ve sola,
+      // y un aro fuerte encima la convierte en un adorno que compite.
+      const pulse = armed ? 0.72 + Math.sin(this.time * 4.5 + i * 0.7) * 0.2 : 0.22
       sp.alpha = i === hovered ? 1 : pulse
       sp.scale.set(i === hovered ? 1.1 : 1)
     }

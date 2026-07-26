@@ -11,8 +11,9 @@ Se puede arreglar a ojo, moviendo numeros y mirando capturas. Es lento y nunca
 queda exacto. Esto lo MIDE:
 
   1. Separa "piedra clara" (camino + losas) del pasto por color.
-  2. La componente conexa mas grande es el camino; el resto, si son redondas y
-     del tamaño esperado, son las plataformas.
+  2. Erosiona para despegar lo que se toca, etiqueta, y toma la pieza mas
+     grande como camino; el resto, si son redondas y del tamaño esperado, son
+     las plataformas.
   3. Recorre el eje del camino con Dijkstra sobre el mapa de distancias al
      borde, de la entrada a la salida. Buscar el maximo de distancia al borde
      es lo que lo mantiene CENTRADO: un camino minimo pelado se pega a la curva
@@ -52,34 +53,54 @@ def parse_args() -> argparse.Namespace:
         # area es el unico discriminante que los separa de forma limpia.
         help="area de una plataforma como fraccion de la imagen, min:max",
     )
+    ap.add_argument(
+        "--separate",
+        type=float,
+        default=1 / 38,
+        help="erosion para despegar losas del camino, en fraccion del ancho",
+    )
     ap.add_argument("--out", default=None, help="png de verificacion")
     return ap.parse_args()
 
 
 def stone_mask(rgb: np.ndarray) -> np.ndarray:
     """
-    Piedra clara contra pasto.
+    Piedra clara contra pasto, con el umbral sacado de la propia imagen.
 
-    El discriminante NO es el brillo: hay pasto iluminado mas claro que piedra
-    en sombra. Es que el pasto tiene el verde por encima del rojo y la piedra
-    no. `g - r` separa los dos limpiamente en cualquier iluminacion, que es
-    justamente lo que un umbral de luminancia no consigue.
+    Dos decisiones:
+
+    1. **El discriminante no es el brillo.** Hay pasto al sol mas claro que
+       piedra en sombra, asi que un umbral de luminancia se equivoca. Lo que no
+       falla es que el pasto tiene el verde por encima del rojo y la piedra al
+       reves. Medido sobre el tablero pintado: calzada y losas dan r-g de +30,
+       el pasto iluminado +19 y el del medio -7. El brillo si aporta como
+       desempate, pero pesa poco — de ahi el `/ 8`.
+
+    2. **El corte lo elige Otsu, no yo.** Un umbral fijo funciona en la imagen
+       con la que se lo calibro y falla en la siguiente: el pasto de un mapa
+       mas soleado se cuela en la mascara, conecta todas las losas con la
+       calzada, y la deteccion devuelve una sola pieza gigante. Otsu busca el
+       corte que separa mejor los dos modos del histograma, sea cual sea la
+       iluminacion del dibujo.
     """
-    r = rgb[:, :, 0].astype(np.int16)
-    g = rgb[:, :, 1].astype(np.int16)
-    b = rgb[:, :, 2].astype(np.int16)
-    warm = (r - g) > -12
-    bright = (r.astype(np.int32) + g + b) > 330
-    return warm & bright
+    r = rgb[:, :, 0].astype(np.float32)
+    g = rgb[:, :, 1].astype(np.float32)
+    b = rgb[:, :, 2].astype(np.float32)
+    score = (r - g) + (r + g + b) / 8.0
 
-
-def largest_component(mask: np.ndarray) -> tuple[np.ndarray, np.ndarray, int]:
-    labels, n = ndimage.label(mask)
-    if n == 0:
-        raise SystemExit("no se encontro ninguna zona de piedra clara")
-    sizes = ndimage.sum(mask, labels, range(1, n + 1))
-    biggest = int(np.argmax(sizes)) + 1
-    return labels == biggest, labels, biggest
+    lo, hi = float(score.min()), float(score.max())
+    hist, edges = np.histogram(score, bins=256, range=(lo, hi))
+    total = hist.sum()
+    centers = (edges[:-1] + edges[1:]) / 2
+    w0 = np.cumsum(hist)
+    w1 = total - w0
+    valid = (w0 > 0) & (w1 > 0)
+    m0 = np.cumsum(hist * centers) / np.maximum(w0, 1)
+    grand = (hist * centers).sum()
+    m1 = (grand - np.cumsum(hist * centers)) / np.maximum(w1, 1)
+    variance = np.where(valid, w0 * w1 * (m0 - m1) ** 2, -1.0)
+    cut = centers[int(np.argmax(variance))]
+    return score > cut
 
 
 def trace_centerline(road: np.ndarray, start: tuple[int, int], goal: tuple[int, int]) -> list[tuple[int, int]]:
@@ -167,19 +188,37 @@ def main() -> None:
     rgb = np.asarray(img)
 
     stone = stone_mask(rgb)
-    # Cerrar primero: el camino de tierra tiene manchas de pasto adentro y sin
-    # esto la componente conexa se parte en pedazos.
+    # Cerrar primero: la calzada de tierra tiene matas de pasto adentro y sin
+    # esto la componente conexa del camino se parte en pedazos.
     stone = ndimage.binary_closing(stone, np.ones((5, 5)))
-    # Y abrir despues. Las losas que quedan al borde de la calzada estan a pocos
-    # pixeles de ella, y con el desenfoque del pintado el puente se cierra: sin
-    # esta apertura se funden con el camino y desaparecen de la deteccion. El
-    # elemento va escalado al ancho de la imagen — tiene que romper puentes de
-    # unos pocos pixeles sin comerse el borde de una losa, que mide diez veces
-    # mas.
-    bridge = max(3, iw // 80)
-    stone = ndimage.binary_opening(stone, np.ones((bridge, bridge)))
-    road, labels, road_label = largest_component(stone)
 
+    # Separar lo que se toca.
+    #
+    # Aca estaba el error que costo dos vueltas: una APERTURA (erosion seguida
+    # de dilatacion) no sirve, porque la dilatacion vuelve a pegar lo que la
+    # erosion habia despegado. Hay que ETIQUETAR SOBRE LA MASCARA EROSIONADA:
+    # ahi las losas que rozan la calzada ya son piezas aparte. Varias del mapa
+    # pintado estan a diez o quince pixeles del borde del camino y con la
+    # apertura se perdian, absorbidas por la componente del camino.
+    #
+    # Despues el camino se reconstruye a ancho completo con una propagacion
+    # dentro de la mascara original — el trazado del eje necesita la calzada
+    # entera, no la erosionada.
+    # Cuanto se erosiona, en fraccion del ancho de la imagen. Es EL parametro a
+    # tocar si la deteccion falla: si faltan losas, subilo (separa mas); si
+    # aparecen de mas, bajalo. El png de verificacion esta justamente para eso.
+    bridge = max(3, int(iw * args.separate))
+    core = ndimage.binary_erosion(stone, np.ones((bridge, bridge)))
+    labels, n_labels = ndimage.label(core)
+    if n_labels == 0:
+        raise SystemExit("no se encontro ninguna zona de piedra clara")
+    sizes = ndimage.sum(core, labels, range(1, n_labels + 1))
+    road_label = int(np.argmax(sizes)) + 1
+    road = ndimage.binary_propagation(labels == road_label, mask=stone)
+
+    # La erosion encogio todo, asi que el area medida es menor que la real.
+    # Se compensa el umbral en vez de dilatar cada losa por separado.
+    shrink = (1 - bridge / (iw * 0.14)) ** 2
     # --------------------------------------------------------- plataformas
     area_px = iw * ih
     slots: list[tuple[float, float]] = []
@@ -188,7 +227,7 @@ def main() -> None:
             continue
         blob = labels == lbl
         area = int(blob.sum())
-        if not (area_px * amin <= area <= area_px * amax):
+        if not (area_px * amin * shrink <= area <= area_px * amax):
             continue
         ys, xs = np.nonzero(blob)
         h_ = ys.max() - ys.min() + 1
