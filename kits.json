@@ -79,7 +79,14 @@
         "FraseCinetica",
         "GuardaEsto"
       ],
-      "verified_at": "2026-07-20"
+      "verified_at": "2026-07-20",
+      "vara": {
+        "archivo": "src/_fed6/VideoEdit/scenes/RecalRich.tsx",
+        "componente": "HighlightData",
+        "por_que": "No es un cartel con una cifra: es una ESCENA en capas con tiempos propios. El resaltador amarillo BARRE de izquierda a derecha (scaleX 0→1 con transformOrigin left + rotate(-1.4deg) para que sea trazo de marcador y no un rectangulo), y llega ANTES de que el texto resaltado aparezca (sweep en f22-46, texto en f18-30) — el orden imita la mano que subraya, no el frame 0 con todo puesto. La tarjeta entra con spring y sale con su propio fade, sobre un Stage con degrade y glow radial que le da profundidad. Y es reusable: props tipados (pre/highlight/post/source), cero datos del video adentro, 100% determinista desde frame.",
+        "aprobada_por_el_creador": false,
+        "nota": "Elegida por codigo (es el componente del kit con mas senales de oficio: capas, spring+interpolate, camara, props tipados). Reemplazala por la que vos apruebes cuando un video de este kit produzca algo mejor."
+      }
     },
     {
       "id": "constructor",

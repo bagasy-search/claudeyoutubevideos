@@ -109,6 +109,19 @@ const BLOQUE_S = +(process.env.BLOQUE_S || 300);       // bloques de 5 min
 // Calibración jul 2026 sobre videos reales: 25 Platos = 86%, sellador/techo7/dulcesv3 ≈ 85-90%.
 // 78% obliga a ~+40% de componentes (alcanzable). Bajalo a 70 cuando el flujo lo aguante.
 const MAX_RAWSHOT_PCT = +(process.env.MAX_RAWSHOT_PCT || 78);
+// ── PISO DE DENSIDAD: usos de componente POR MINUTO ───────────────────────────────────────────
+// Por qué existe: los topes de arriba miran PROPORCIONES, y una proporción se cumple igual de bien
+// con mucho material que con poco. Un video de 34 min pasó con 74% de crudo (legal, bajo el 78) y
+// aun así se veía pobre, porque tenía 5.3 usos/min: el mismo kit estirado sobre el doble de metraje.
+// La proporción estaba bien y la densidad partida al medio, y ninguna compuerta se quejó.
+//
+// Calibración jul 2026 sobre los 15 videos terminados con reporte (usos ÷ minutos):
+//   15.8 · 13.1 │ 5.5 · 5.3 · 4.6 · 4.5 · 3.8 · 3.1 · 2.5 · 2.4 · 2.4 · 2.3 · 1.8 · 1.3 · 0.0
+//   mediana 3.8. Los DOS de arriba son los únicos que el creador marcó como "de pura calidad".
+// 9 deja pasar a esos dos con margen y frena al resto. OJO: eso es 13 de 15 históricos bloqueados
+// — es a propósito (la mediana es el problema, no la referencia), pero significa que el agente va a
+// tener que iterar más antes de rendear. Si aprieta demasiado, aflojalo por env sin tocar código.
+const MIN_COMP_MIN = +(process.env.MIN_COMP_MIN || 9);
 
 // La DENSIDAD no cambia: las tomas planas siguen contando como visual (esto NO toca VIS_EVERY_S).
 const visuals = imgs.length + clips.length + compUses + shotUses;
@@ -117,6 +130,7 @@ const visuals = imgs.length + clips.length + compUses + shotUses;
 //   · estilo nuevo → los assets son rutas sueltas y no hay wrapper
 const momentos = Math.max(shotUses, imgs.length + clips.length);
 const rawPct = (momentos + compUses) ? Math.round((100 * momentos) / (momentos + compUses)) : 0;
+const compPorMin = seconds ? +(compUses / (seconds / 60)).toFixed(1) : 0;
 const needVisuals = Math.floor(seconds / VIS_EVERY_S);
 const needClips = Math.floor(seconds / CLIP_EVERY_S);
 
@@ -170,7 +184,7 @@ let tramos = null, tramoReal = false;
 console.log(`── DENSIDAD · ${slug} · ${seconds}s (${(seconds / 60).toFixed(1)} min) ──`);
 console.log(`  imágenes IA distintas : ${imgs.length}`);
 console.log(`  clips de stock/b-roll : ${clips.length}`);
-console.log(`  usos de componentes   : ${compUses}`);
+console.log(`  usos de componentes   : ${compUses}   → ${compPorMin}/min (mínimo: ${MIN_COMP_MIN}/min)`);
 console.log(`  momentos CRUDOS       : ${momentos}   → ${rawPct}% de la pantalla sin nada del kit encima (máximo: ${MAX_RAWSHOT_PCT}%)`);
 console.log(`  componentes DISTINTOS : ${compDistinct.length}   (mínimo exigido: ${MIN_COMP})${compDistinct.length ? "  → " + compDistinct.slice(0, 12).join(", ") : ""}`);
 if (tramos) {
@@ -223,6 +237,14 @@ if (visuals < needVisuals) fallos.push(`FALTAN VISUALES: tenés ${visuals}, nece
 if (rawPct > MAX_RAWSHOT_PCT) {
   const sug = sugerirComponentes(compDistinct);
   fallos.push(`DEMASIADA TOMA CRUDA: ${rawPct}% de los ${momentos} momentos visuales no tienen NADA del kit encima (máximo ${MAX_RAWSHOT_PCT}%). Así el video es una sucesión de fotos, no una edición. Reemplazá tomas planas por componentes REALES del kit del nicho${sug ? ` — sin usar todavía tenés: ${sug}` : ""}.`);
+}
+// ── DENSIDAD POR MINUTO: el kit estirado sobre demasiado metraje ──────────────────────────────
+// Distinto de "DEMASIADA TOMA CRUDA": aquel mide la PROPORCIÓN, éste mide la CANTIDAD por minuto.
+// Se puede fallar éste con proporción perfecta (poco de todo) y fallar aquél con densidad alta.
+if (compPorMin < MIN_COMP_MIN) {
+  const faltan = Math.ceil((MIN_COMP_MIN - compPorMin) * (seconds / 60));
+  const sug = sugerirComponentes(compDistinct);
+  fallos.push(`KIT ESTIRADO: ${compUses} usos de componente en ${(seconds / 60).toFixed(1)} min = ${compPorMin}/min (mínimo ${MIN_COMP_MIN}/min). Te faltan ~${faltan} usos más. OJO: esto NO es lo mismo que la variedad — podés tener 20 componentes distintos y aun así un video pelado si cada uno aparece dos veces en 35 minutos. Lo que falta es CANTIDAD: más beats de componente repartidos por todo el metraje, sobre todo en los tramos flojos${sug ? `. Sin usar todavía tenés: ${sug}` : ""}.`);
 }
 // ── VARIEDAD POR TRAMO: que no haya un tercio del video en fotos seguidas ─────────────────────
 if (tramos) {
