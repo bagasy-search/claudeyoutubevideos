@@ -134,6 +134,32 @@ const compPorMin = seconds ? +(compUses / (seconds / 60)).toFixed(1) : 0;
 const needVisuals = Math.floor(seconds / VIS_EVERY_S);
 const needClips = Math.floor(seconds / CLIP_EVERY_S);
 
+// ── COMPONENTES PROPIOS DE ESTE VIDEO (medición, NO una regla más) ────────────────────────────
+// El video que el creador marcó como "de pura calidad" trajo 11 componentes diseñados a medida
+// (un subagente Opus por cada uno). El que no le gustó trajo 0 y sólo colocó los que ya existían,
+// con el modo subagentes activado igual en los dos. Ese número es el que separa un video del otro,
+// así que se MIDE y se muestra. A propósito no bloquea: forzar "creá N componentes" produciría
+// componentes de relleno hechos para pasar el gate, que es peor que no tenerlos.
+const propios = (() => {
+  try {
+    const base = process.env.WORKTREE_BASE || "wt-base";
+    const q = (c) => execSync(c, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+    // cambiados respecto de la base (incluye el working tree) + los todavía sin trackear
+    const tocados = [
+      ...q(`git diff --name-only ${base} -- "*.tsx"`).split("\n"),
+      ...q(`git ls-files --others --exclude-standard -- "*.tsx"`).split("\n"),
+    ].filter(Boolean);
+    if (!tocados.length) return null;
+    const defs = new Set();
+    for (const f of tocados) {
+      if (!existsSync(f)) continue;
+      for (const m of readFileSync(f, "utf8").matchAll(/export const ([A-Z]\w*)\s*:\s*React\.FC/g)) defs.add(m[1]);
+    }
+    // sólo cuentan los que además SE USAN en el build
+    return [...defs].filter((n) => compDistinct.includes(n));
+  } catch { return null; } // sin git utilizable no invento un 0
+})();
+
 // ── VARIEDAD POR TRAMO ────────────────────────────────────────────────────────────────────────
 // El promedio del video ENGAÑA: se cumple el mínimo global metiendo todo al principio y después
 // van 10 minutos de fotos seguidas. Hay TRES estilos de build y hay que medir en los tres:
@@ -187,6 +213,9 @@ console.log(`  clips de stock/b-roll : ${clips.length}`);
 console.log(`  usos de componentes   : ${compUses}   → ${compPorMin}/min (mínimo: ${MIN_COMP_MIN}/min)`);
 console.log(`  momentos CRUDOS       : ${momentos}   → ${rawPct}% de la pantalla sin nada del kit encima (máximo: ${MAX_RAWSHOT_PCT}%)`);
 console.log(`  componentes DISTINTOS : ${compDistinct.length}   (mínimo exigido: ${MIN_COMP})${compDistinct.length ? "  → " + compDistinct.slice(0, 12).join(", ") : ""}`);
+if (propios !== null) {
+  console.log(`  componentes PROPIOS   : ${propios.length}   (diseñados para ESTE video${propios.length ? ": " + propios.join(", ") : " — ninguno, sólo reusaste el kit"})`);
+}
 if (tramos) {
   console.log(`  variedad por tramo    : ${tramos.map((b) => b.size).join(" · ")}   (mínimo ${MIN_COMP_BLOQUE} por tramo${tramoReal ? "" : ", medido por POSICIÓN — sin tiempos en el build"})`);
 }
@@ -244,7 +273,10 @@ if (rawPct > MAX_RAWSHOT_PCT) {
 if (compPorMin < MIN_COMP_MIN) {
   const faltan = Math.ceil((MIN_COMP_MIN - compPorMin) * (seconds / 60));
   const sug = sugerirComponentes(compDistinct);
-  fallos.push(`KIT ESTIRADO: ${compUses} usos de componente en ${(seconds / 60).toFixed(1)} min = ${compPorMin}/min (mínimo ${MIN_COMP_MIN}/min). Te faltan ~${faltan} usos más. OJO: esto NO es lo mismo que la variedad — podés tener 20 componentes distintos y aun así un video pelado si cada uno aparece dos veces en 35 minutos. Lo que falta es CANTIDAD: más beats de componente repartidos por todo el metraje, sobre todo en los tramos flojos${sug ? `. Sin usar todavía tenés: ${sug}` : ""}.`);
+  const pista = propios !== null && propios.length === 0
+    ? " Dato medido, por si sirve: este video no trajo NINGÚN componente propio. El que el creador marcó como de máxima calidad trajo 11, diseñados de a uno."
+    : "";
+  fallos.push(`KIT ESTIRADO: ${compUses} usos de componente en ${(seconds / 60).toFixed(1)} min = ${compPorMin}/min (mínimo ${MIN_COMP_MIN}/min). Te faltan ~${faltan} usos más. OJO: esto NO es lo mismo que la variedad — podés tener 20 componentes distintos y aun así un video pelado si cada uno aparece dos veces en 35 minutos. Lo que falta es CANTIDAD: más beats de componente repartidos por todo el metraje, sobre todo en los tramos flojos${sug ? `. Sin usar todavía tenés: ${sug}` : ""}.${pista}`);
 }
 // ── VARIEDAD POR TRAMO: que no haya un tercio del video en fotos seguidas ─────────────────────
 if (tramos) {
