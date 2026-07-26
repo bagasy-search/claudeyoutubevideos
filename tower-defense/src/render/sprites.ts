@@ -1,6 +1,7 @@
-import { Graphics, Rectangle, Texture, type Renderer as PixiRenderer } from 'pixi.js'
+import { Graphics, Rectangle, Sprite, Texture, type Renderer as PixiRenderer } from 'pixi.js'
 import { ENEMIES } from '../sim/balance/enemies'
 import { TOWERS } from '../sim/balance/towers'
+import { makeGrainFilter } from './grain'
 import { GROUND, SEMANTIC, darken, ink, lighten, shade, tint } from './palette'
 
 /**
@@ -23,15 +24,38 @@ export const WALK_FRAMES = 12
 /** Radio de dibujo de las torres. Lo usa el render para colocar el cañón. */
 export const TOWER_R = 24
 
-/** Bounding box fijo por frame: sin esto el recorte varia y el sprite tiembla. */
-function bake(renderer: PixiRenderer, g: Graphics, half: number, resolution = 3): Texture {
-  const tex = renderer.generateTexture({
-    target: g,
-    resolution,
-    frame: new Rectangle(-half, -half, half * 2, half * 2),
-  })
+/**
+ * El grano se instancia una vez y se comparte: crear un filtro por sprite seria
+ * absurdo, y ademas el horneado es secuencial.
+ */
+const grain = makeGrainFilter()
+
+/**
+ * Bounding box fijo por frame: sin esto el recorte varia y el sprite tiembla.
+ *
+ * @param textured aplica el ruido de superficie. Se apaga para las utilidades
+ * (barra de vida, punto suave, sombra), donde el grano solo ensuciaria.
+ */
+function bake(renderer: PixiRenderer, g: Graphics, half: number, resolution = 3, textured = true): Texture {
+  const frame = new Rectangle(-half, -half, half * 2, half * 2)
+  const base = renderer.generateTexture({ target: g, resolution, frame })
   g.destroy()
-  return tex
+  if (!textured) return base
+
+  /*
+   * El grano va en una SEGUNDA pasada, sobre la textura ya recortada.
+   *
+   * Aplicar el filtro directamente en el generateTexture con `frame` devuelve
+   * texturas vacias: el recorte explicito y el area del filtro no se llevan
+   * bien. Horneando primero la forma y filtrando ese resultado, el segundo
+   * pase no necesita recorte — los limites del sprite ya son los correctos.
+   */
+  const sprite = new Sprite(base)
+  sprite.filters = [grain]
+  const out = renderer.generateTexture({ target: sprite, resolution })
+  sprite.destroy()
+  base.destroy(true)
+  return out
 }
 
 // --------------------------------------------------------------- criaturas
@@ -67,7 +91,7 @@ const CREATURES: Record<string, Partial<CreatureSpec>> = {
   runner: { headR: 0.62, bodyW: 0.7, bodyH: 0.6, legW: 0.2, legH: 0.62, ears: 0.9, eyeR: 0.2, brow: 0.6 },
   swarm: { headR: 0.82, bodyW: 0.6, bodyH: 0.42, legW: 0.2, legH: 0.34, arms: false, eyeR: 0.3, brow: 0 },
   brute: { headR: 0.66, bodyW: 1.12, bodyH: 0.82, legW: 0.34, armW: 0.3, shoulders: 0.5, eyeR: 0.19, brow: 0.8 },
-  juggernaut: { headR: 0.6, bodyW: 1.2, bodyH: 0.9, legW: 0.36, armW: 0.32, shoulders: 0.58, crown: 0.45, eyeR: 0.16, brow: 1 },
+  juggernaut: { headR: 0.6, bodyW: 1.2, bodyH: 0.9, legW: 0.36, armW: 0.32, shoulders: 0.58, crown: 0.3, eyeR: 0.16, brow: 1 },
 }
 
 function specFor(id: string, color: number): CreatureSpec {
@@ -226,7 +250,7 @@ function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): v
   if (s.crown > 0) {
     for (const t of [-1, 0, 1]) {
       const cx = sway + t * r * s.headR * 0.62
-      const h = r * s.crown * (t === 0 ? 1 : 0.72)
+      const h = r * s.crown * (t === 0 ? 1 : 0.66)
       g.poly([cx - r * 0.15, headY - r * s.headR * 0.75, cx, headY - r * s.headR * 0.75 - h, cx + r * 0.15, headY - r * s.headR * 0.75])
         .fill({ color: 0xf0e2c0 })
         .stroke(outline)
@@ -487,7 +511,7 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
   const projectile: Texture[] = [0, 1, 2].map((kind) => {
     const g = new Graphics()
     drawProjectile(g, kind)
-    return bake(renderer, g, 10, 4)
+    return bake(renderer, g, 10, 4, false)
   })
 
   const shadowG = new Graphics()
@@ -539,13 +563,13 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
     towerBase,
     towerTurret,
     projectile,
-    shadow: bake(renderer, shadowG, 18, 2),
-    dot: bake(renderer, dotG, 17, 2),
-    soft: bake(renderer, softG, 17, 2),
-    ring: bake(renderer, ringG, 68, 2),
+    shadow: bake(renderer, shadowG, 18, 2, false),
+    dot: bake(renderer, dotG, 17, 2, false),
+    soft: bake(renderer, softG, 17, 2, false),
+    ring: bake(renderer, ringG, 68, 2, false),
     bar: renderer.generateTexture({ target: barG, resolution: 2 }),
     portal: bake(renderer, portalG, 34, 2),
     core: bake(renderer, coreG, 34, 2),
-    aura: bake(renderer, auraG, 32, 2),
+    aura: bake(renderer, auraG, 32, 2, false),
   }
 }

@@ -1,18 +1,23 @@
 /**
  * Paleta y modelo de color.
  *
- * Dos decisiones que separan esto de "oscurecer y aclarar":
+ * Tres decisiones que separan esto de "oscurecer y aclarar":
  *
  * 1. **Las mezclas van en luz lineal, no en sRGB.** Interpolar bytes sRGB
- *    directamente atraviesa la curva gamma y ensucia los medios tonos: un rojo
- *    saturado oscurecido asi se va a marron en vez de quedarse rojo. Se
- *    convierte a lineal, se mezcla, y se vuelve.
+ *    atraviesa la curva gamma y ensucia los medios tonos: un rojo saturado
+ *    oscurecido asi se va a marron en vez de quedarse rojo.
  *
- * 2. **Las sombras cambian de tono, no solo de valor.** Una sombra real recibe
- *    luz ambiente del cielo, asi que se enfria y gana saturacion; una luz
- *    directa se acerca al color de la fuente y pierde un poco de croma. Bajar
- *    el brillo sin mover el tono es la causa numero uno de que un dibujo se vea
- *    plano y de plastico.
+ * 2. **El sombreado se calcula en OKLCH**, que es perceptualmente uniforme. La
+ *    L de HSL no lo es: un paso del 10% parece enorme en un color oscuro y casi
+ *    nada en uno claro, y un amarillo con L=50 se ve muchisimo mas claro que un
+ *    azul con L=50. Por eso las rampas hechas en HSL salen una embarrada y otra
+ *    quemada. OKLCH ademas no arrastra los azules hacia el violeta al cambiar
+ *    la luminosidad.
+ *
+ * 3. **Las sombras cambian de tono, no solo de valor.** Una sombra real recibe
+ *    luz ambiente del cielo, asi que se enfria; una luz directa se acerca al
+ *    color de la fuente. Bajar el brillo sin mover el tono es la causa numero
+ *    uno de que un dibujo se vea plano y de plastico.
  */
 
 // ------------------------------------------------------------ conversiones
@@ -35,55 +40,50 @@ function pack(r: number, g: number, b: number): number {
   return (r << 16) | (g << 8) | b
 }
 
-export interface Hsl {
-  h: number
-  s: number
+/** Luminosidad, croma y tono. L en 0..1, C en 0..~0.4 dentro de sRGB, H en grados. */
+export interface Oklch {
   l: number
+  c: number
+  h: number
 }
 
-export function toHsl(color: number): Hsl {
+function linearToOklab(r: number, g: number, b: number): [number, number, number] {
+  const l = Math.cbrt(0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b)
+  const m = Math.cbrt(0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b)
+  const s = Math.cbrt(0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b)
+  return [
+    0.2104542553 * l + 0.793617785 * m - 0.0040720468 * s,
+    1.9779984951 * l - 2.428592205 * m + 0.4505937099 * s,
+    0.0259040371 * l + 0.7827717662 * m - 0.808675766 * s,
+  ]
+}
+
+function oklabToLinear(L: number, A: number, B: number): [number, number, number] {
+  const l = (L + 0.3963377774 * A + 0.2158037573 * B) ** 3
+  const m = (L - 0.1055613458 * A - 0.0638541728 * B) ** 3
+  const s = (L - 0.0894841775 * A - 1.291485548 * B) ** 3
+  return [
+    4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s,
+    -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s,
+    -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s,
+  ]
+}
+
+export function toOklch(color: number): Oklch {
   const [r8, g8, b8] = unpack(color)
-  const r = r8 / 255
-  const g = g8 / 255
-  const b = b8 / 255
-  const max = Math.max(r, g, b)
-  const min = Math.min(r, g, b)
-  const l = (max + min) / 2
-  if (max === min) return { h: 0, s: 0, l }
-  const d = max - min
-  const s = l > 0.5 ? d / (2 - max - min) : d / (max + min)
-  let h: number
-  if (max === r) h = ((g - b) / d + (g < b ? 6 : 0)) * 60
-  else if (max === g) h = ((b - r) / d + 2) * 60
-  else h = ((r - g) / d + 4) * 60
-  return { h, s, l }
+  const [L, A, B] = linearToOklab(srgbToLinear(r8), srgbToLinear(g8), srgbToLinear(b8))
+  return { l: L, c: Math.hypot(A, B), h: (Math.atan2(B, A) * 180) / Math.PI }
 }
 
-export function fromHsl({ h, s, l }: Hsl): number {
-  const hue = ((h % 360) + 360) % 360
-  const sat = Math.min(1, Math.max(0, s))
-  const lit = Math.min(1, Math.max(0, l))
-  if (sat === 0) {
-    const v = Math.round(lit * 255)
-    return pack(v, v, v)
-  }
-  const q = lit < 0.5 ? lit * (1 + sat) : lit + sat - lit * sat
-  const p = 2 * lit - q
-  const channel = (t: number): number => {
-    let x = t
-    if (x < 0) x += 1
-    if (x > 1) x -= 1
-    if (x < 1 / 6) return p + (q - p) * 6 * x
-    if (x < 1 / 2) return q
-    if (x < 2 / 3) return p + (q - p) * (2 / 3 - x) * 6
-    return p
-  }
-  const hk = hue / 360
-  return pack(
-    Math.round(channel(hk + 1 / 3) * 255),
-    Math.round(channel(hk) * 255),
-    Math.round(channel(hk - 1 / 3) * 255),
+export function fromOklch({ l, c, h }: Oklch): number {
+  const rad = (h * Math.PI) / 180
+  const chroma = Math.max(0, c)
+  const [r, g, b] = oklabToLinear(
+    Math.min(1, Math.max(0, l)),
+    chroma * Math.cos(rad),
+    chroma * Math.sin(rad),
   )
+  return pack(linearToSrgb(r), linearToSrgb(g), linearToSrgb(b))
 }
 
 // ------------------------------------------------------------------ mezcla
@@ -100,47 +100,53 @@ export function mix(a: number, b: number, t: number): number {
   )
 }
 
-/** Tono de la luz ambiente que cae en las sombras. Azul frio de cielo. */
-const AMBIENT_HUE = 235
+// --------------------------------------------------------------- sombreado
+
+/** Tono de la luz ambiente que cae en las sombras, en OKLCH. Azul de cielo. */
+const AMBIENT_HUE = 264
 /** Tono de la luz directa. Calido. */
-const KEY_HUE = 45
+const KEY_HUE = 95
+/** Rotacion maxima de tono, en grados. Las fuentes coinciden en 15-25. */
+const MAX_ROTATION = 22
 
 function rotateToward(hue: number, target: number, amount: number): number {
-  let diff = ((target - hue + 540) % 360) - 180
-  return hue + diff * amount
+  const diff = ((target - hue + 540) % 360) - 180
+  return hue + Math.sign(diff) * Math.min(Math.abs(diff), MAX_ROTATION * amount)
 }
 
 /**
- * Sombra: mas oscura, MAS FRIA y MAS saturada.
+ * Sombra: mas oscura, MAS FRIA y con el croma en curva.
  *
- * Lo de la saturacion es contraintuitivo pero es lo que hace que un personaje
- * se vea pintado y no apagado: en los medios tonos la sombra gana croma, y solo
- * la pierde muy abajo, donde ya domina el ambiente.
+ * Lo del croma es lo contraintuitivo y es lo que hace que se vea pintado en vez
+ * de apagado. En el medio tono la sombra GANA saturacion — es el "terminador",
+ * el borde entre luz y sombra, donde el color es mas intenso — y solo la pierde
+ * muy abajo, donde ya domina la luz ambiente. Una curva, no una recta.
  */
 export function shade(color: number, amount: number): number {
   const t = Math.min(1, Math.max(0, amount))
-  const hsl = toHsl(color)
-  return fromHsl({
-    h: rotateToward(hsl.h, AMBIENT_HUE, t * 0.16),
-    s: Math.min(1, hsl.s * (1 + t * 0.35)),
-    l: hsl.l * (1 - t * 0.8),
+  const o = toOklch(color)
+  const chroma = o.c * (1 + Math.sin(Math.min(1, t / 0.45) * Math.PI * 0.5) * 0.18 - t * t * 0.42)
+  return fromOklch({
+    l: o.l * (1 - t * 0.72),
+    c: Math.max(0, chroma),
+    h: rotateToward(o.h, AMBIENT_HUE, t),
   })
 }
 
 /**
- * Luz: mas clara, mas CALIDA y algo menos saturada.
+ * Luz: mas clara, mas CALIDA y con algo menos de croma.
  *
- * Mezclar hacia blanco puro —que es lo que hacia la version anterior— desatura
- * de golpe y deja ese aspecto de plastico lavado. Subir la luminosidad
- * conservando croma mantiene el color vivo.
+ * Mezclar hacia blanco puro desatura de golpe y deja el aspecto de plastico
+ * lavado. Subir L en OKLCH conservando la mayor parte del croma mantiene el
+ * color vivo.
  */
 export function tint(color: number, amount: number): number {
   const t = Math.min(1, Math.max(0, amount))
-  const hsl = toHsl(color)
-  return fromHsl({
-    h: rotateToward(hsl.h, KEY_HUE, t * 0.22),
-    s: hsl.s * (1 - t * 0.28),
-    l: hsl.l + (1 - hsl.l) * t * 0.75,
+  const o = toOklch(color)
+  return fromOklch({
+    l: o.l + (1 - o.l) * t * 0.7,
+    c: o.c * (1 - t * 0.22),
+    h: rotateToward(o.h, KEY_HUE, t * 0.8),
   })
 }
 
@@ -149,36 +155,41 @@ export const darken = shade
 export const lighten = tint
 
 /**
- * Contorno de tinta: muy oscuro y frio, pero conservando algo del tono del
- * objeto para que no se vea como un agujero negro recortado.
+ * Contorno de tinta: muy oscuro y frio, pero conservando algo del croma del
+ * objeto para que no se lea como un agujero negro recortado.
  */
 export function ink(color: number, amount = 0.62): number {
-  const hsl = toHsl(color)
-  return fromHsl({
-    h: rotateToward(hsl.h, AMBIENT_HUE, 0.25),
-    s: Math.min(1, hsl.s * 0.75 + 0.1),
-    l: hsl.l * (1 - amount) * 0.35,
+  const o = toOklch(color)
+  return fromOklch({
+    l: o.l * (1 - amount) * 0.42,
+    c: o.c * 0.55,
+    h: rotateToward(o.h, AMBIENT_HUE, 0.9),
   })
 }
 
-/** Varia el tono de una instancia sin sacarla de su familia de color. */
+/**
+ * Varia una instancia sin sacarla de su familia de color.
+ *
+ * El tono y el croma se mueven con holgura; la LUMINOSIDAD casi nada. Es la que
+ * cuesta legibilidad: variar el valor arruina el contraste contra el fondo, que
+ * es lo unico que no se puede negociar.
+ */
 export function jitterHue(color: number, variant: number, degrees = 10): number {
-  const hsl = toHsl(color)
-  return fromHsl({
-    h: hsl.h + (variant * 2 - 1) * degrees,
-    s: Math.min(1, hsl.s * (0.92 + variant * 0.16)),
-    l: Math.min(1, hsl.l * (0.94 + variant * 0.12)),
+  const o = toOklch(color)
+  return fromOklch({
+    l: o.l * (0.97 + variant * 0.06),
+    c: o.c * (0.9 + variant * 0.2),
+    h: o.h + (variant * 2 - 1) * degrees,
   })
 }
 
 // ----------------------------------------------------------------- tokens
 
 /**
- * Terreno. La version anterior tenia 4.6 grados de rango de tono en todo el
+ * Terreno. La primera version tenia 4.6 grados de rango de tono en todo el
  * campo: no eran nueve colores, era uno con nueve luminosidades. Ahora los
  * valores oscuros se van a frio (sombra ambiente) y los claros a calido (sol),
- * que es lo que le da temperatura al tablero y contraste contra las torres
- * frias.
+ * que es lo que le da temperatura al tablero y contraste contra las torres.
  */
 export const GROUND = {
   deep: 0x17141b,
