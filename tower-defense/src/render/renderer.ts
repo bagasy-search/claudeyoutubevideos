@@ -5,13 +5,13 @@ import 'pixi.js/browser'
 import { Container, Graphics, Sprite, Texture, Ticker, WebGLRenderer } from 'pixi.js'
 import { Rng } from '../core/rng'
 import type { Game } from '../sim/game'
-import { FIELD_H, FIELD_W } from '../sim/game'
+import { BUILD_SLOTS, FIELD_H, FIELD_W } from '../sim/game'
 import { MAX_ENEMIES, MAX_PROJECTILES } from '../sim/world'
 import { INLINE_ART } from '../generated/inlineArt'
 import { applyExternalArt, applyManifest } from './externalArt'
 import { FxLayer } from './fx'
 import { GROUND, SEMANTIC, ink, jitterHue, lighten, mix, shade } from './palette'
-import { IDLE_FRAMES, TOWER_R, buildAtlas, type Atlas } from './sprites'
+import { IDLE_FRAMES, SLOT_ART_R, TOWER_R, buildAtlas, type Atlas } from './sprites'
 
 /**
  * Capa de render. Solo LEE el estado de la simulacion — no lo modifica nunca.
@@ -55,6 +55,9 @@ export class Renderer {
   private world = new Container()
   private bg = new Container()
   private rangeLayer = new Container()
+  /** Plataformas de construccion. Van sobre el suelo y debajo de todo lo vivo. */
+  private slotLayer = new Container()
+  private slotSprites: Sprite[] = []
   private shadowLayer = new Container()
   private enemyLayer = new Container()
   private towerLayer = new Container()
@@ -107,6 +110,7 @@ export class Renderer {
 
     this.world.addChild(
       this.bg,
+      this.slotLayer,
       this.rangeLayer,
       this.fx.backContainer,
       this.shadowLayer,
@@ -142,6 +146,7 @@ export class Renderer {
     this.stage.addChild(vignette)
 
     this.drawBackground(game)
+    this.drawSlots()
     this.allocProjectiles()
     this.wireEvents(game)
 
@@ -172,7 +177,7 @@ export class Renderer {
     // suelo queda con anillos concentricos, que es peor que no tener la luz.
     for (let i = 60; i >= 1; i--) {
       const k = i / 60
-      g.ellipse(FIELD_W * 0.3, FIELD_H * 0.2, FIELD_W * 0.66 * k, FIELD_H * 0.78 * k)
+      g.ellipse(FIELD_W * 0.28, FIELD_H * 0.18, FIELD_W * 1.05 * k, FIELD_H * 0.72 * k)
         .fill({ color: GROUND.lit, alpha: 0.009 })
     }
 
@@ -182,10 +187,10 @@ export class Renderer {
      * suaves y con poco alfa: la idea es romper la planicie, no dibujar nubes.
      */
     const rng = new Rng(0xa11ce)
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 34; i++) {
       const x = rng.range(0, FIELD_W)
       const y = rng.range(0, FIELD_H)
-      const rx = rng.range(60, 170)
+      const rx = rng.range(55, 140)
       const warm = rng.chance(0.6)
       g.ellipse(x, y, rx, rx * rng.range(0.55, 0.8)).fill({
         color: warm ? GROUND.lit : shade(GROUND.base, 0.25),
@@ -225,6 +230,9 @@ export class Renderer {
       const x = rng.range(20, FIELD_W - 20)
       const y = rng.range(20, FIELD_H - 20)
       if (p.distanceToPoint(x, y) < 46) continue
+      // Tampoco encima de una plataforma: ahi va a haber una torre y el prop
+      // asomando por debajo se lee como basura.
+      if (BUILD_SLOTS.some((s) => Math.hypot(s.x - x, s.y - y) < SLOT_ART_R + 10)) continue
       const r = rng.range(2, 6)
       g.ellipse(x, y, r, r * 0.75).fill({ color: GROUND.prop, alpha: 0.85 })
       g.ellipse(x - r * 0.25, y - r * 0.25, r * 0.5, r * 0.35).fill({ color: lighten(GROUND.prop, 0.14), alpha: 0.7 })
@@ -251,6 +259,42 @@ export class Renderer {
 
   private portalSprite!: Sprite
   private coreSprite!: Sprite
+
+  /**
+   * Plataformas de construccion. Son estaticas, asi que se crean una vez; lo
+   * unico que cambia por frame es la opacidad, que late cuando el jugador tiene
+   * una torre elegida y esta buscando donde ponerla.
+   */
+  private drawSlots(): void {
+    for (const s of BUILD_SLOTS) {
+      const sp = new Sprite(this.atlas.slot)
+      sp.anchor.set(0.5)
+      sp.position.set(s.x, s.y)
+      this.slotLayer.addChild(sp)
+      this.slotSprites.push(sp)
+    }
+  }
+
+  /**
+   * @param armed el jugador tiene una torre seleccionada
+   * @param hovered plataforma bajo el dedo, o -1
+   */
+  private updateSlots(game: Game, armed: boolean, hovered: number): void {
+    for (let i = 0; i < this.slotSprites.length; i++) {
+      const sp = this.slotSprites[i]
+      // Ocupada: la torre la tapa entera, no hace falta dibujarla.
+      if (game.towerOnSlot(i)) {
+        sp.visible = false
+        continue
+      }
+      sp.visible = true
+      // En reposo la plataforma esta ahi pero callada; con una torre en la mano
+      // late. Es la diferencia entre "hay huecos" y "poné algo acá".
+      const pulse = armed ? 0.72 + Math.sin(this.time * 4.5 + i * 0.7) * 0.2 : 0.4
+      sp.alpha = i === hovered ? 1 : pulse
+      sp.scale.set(i === hovered ? 1.1 : 1)
+    }
+  }
 
   private allocProjectiles(): void {
     for (let i = 0; i < MAX_PROJECTILES; i++) {
@@ -572,29 +616,53 @@ export class Renderer {
 
   // -------------------------------------------------------------- overlays
 
-  /** Fantasma de construccion: torre translucida + circulo de alcance. */
+  /**
+   * Fantasma de construccion.
+   *
+   * Se PEGA a la plataforma mas cercana en vez de seguir al dedo. Ese enganche
+   * es la mitad de por que el sistema de plataformas se siente bien en un
+   * telefono: el dedo tapa el punto exacto donde toca, asi que apuntar con
+   * precision es imposible; el juego tiene que adivinar la intencion.
+   */
   showGhost(game: Game, x: number, y: number, type: string | null): void {
     this.ghost.clear()
     this.rangePreview.clear()
-    if (!type) return
+    if (!type) {
+      this.updateSlots(game, false, -1)
+      return
+    }
     const def = game.towerDefs.find((d) => d.id === type)
     if (!def) return
-    const check = game.canPlace(x, y, type)
+
+    const slot = game.slotAt(x, y)
+    this.updateSlots(game, true, slot)
+    if (slot < 0) return
+
+    const at = BUILD_SLOTS[slot]
+    const check = game.canPlace(at.x, at.y, type)
     const color = check.ok ? def.color : SEMANTIC.leak
 
-    this.rangePreview.circle(x, y, def.base.range).fill({ color, alpha: 0.06 })
-    this.rangePreview.circle(x, y, def.base.range).stroke({ width: 1.5, color, alpha: 0.45 })
-    this.ghost.circle(x, y, TOWER_R * 0.8).fill({ color, alpha: 0.35 }).stroke({ width: 2, color: ink(color, 0.3), alpha: 0.7 })
+    this.rangePreview.circle(at.x, at.y, def.base.range).fill({ color, alpha: 0.06 })
+    this.rangePreview.circle(at.x, at.y, def.base.range).stroke({ width: 1.5, color, alpha: 0.45 })
+    this.ghost
+      .circle(at.x, at.y, SLOT_ART_R * 0.9)
+      .stroke({ width: 3, color, alpha: 0.85 })
+    this.ghost
+      .circle(at.x, at.y - TOWER_R * 0.3, TOWER_R * 0.8)
+      .fill({ color, alpha: 0.35 })
+      .stroke({ width: 2, color: ink(color, 0.3), alpha: 0.7 })
   }
 
-  hoverRange(x: number, y: number, radius: number, color: number): void {
+  hoverRange(game: Game, x: number, y: number, radius: number, color: number): void {
     this.rangePreview.clear()
     this.rangePreview.circle(x, y, radius).fill({ color, alpha: 0.05 })
     this.rangePreview.circle(x, y, radius).stroke({ width: 1.5, color, alpha: 0.4 })
+    this.updateSlots(game, false, -1)
   }
 
-  clearOverlays(): void {
+  clearOverlays(game: Game): void {
     this.ghost.clear()
     this.rangePreview.clear()
+    this.updateSlots(game, false, -1)
   }
 }

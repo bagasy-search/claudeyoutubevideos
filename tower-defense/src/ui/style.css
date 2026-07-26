@@ -64,7 +64,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: min(960px, 100%);
+  /* 9:16: el ancho lo manda la altura disponible, no la ventana. */
+  width: min(calc(100vh * 0.5), 100%, 560px);
   padding: 12px;
 }
 
@@ -201,7 +202,7 @@ button.primary:hover:not(:disabled) {
   cursor: crosshair;
   width: 100% !important;
   height: auto !important;
-  aspect-ratio: 960 / 600;
+  aspect-ratio: 540 / 960;
   touch-action: none;
 }
 

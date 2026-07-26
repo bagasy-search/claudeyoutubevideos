@@ -1,20 +1,18 @@
 import { describe, expect, it } from 'vitest'
-import { Game } from '../src/sim/game'
+import { BUILD_SLOTS, Game } from '../src/sim/game'
 
 /**
- * Busca posiciones validas cerca del camino, en vez de hardcodear coordenadas
- * que se rompen apenas se toca el trazado del mapa.
+ * Plataformas libres, en orden. Antes esto barria una grilla buscando huecos
+ * validos; con plataformas fijas la lista ES la respuesta, y ademas no puede
+ * devolver dos puntos que caigan en la misma plataforma — que es como se
+ * rompia el barrido, porque el radio de captura es mas grande que el paso.
  */
 function findSpots(game: Game, n: number, type = 'arrow'): [number, number][] {
   const out: [number, number][] = []
-  for (let y = 30; y < game.world.height - 30 && out.length < n; y += 20) {
-    for (let x = 30; x < game.world.width - 30 && out.length < n; x += 20) {
-      const d = game.world.path.distanceToPoint(x, y)
-      if (d < 46 || d > 120) continue
-      if (!game.canPlace(x, y, type).ok) continue
-      if (out.some(([ox, oy]) => Math.hypot(ox - x, oy - y) < 54)) continue
-      out.push([x, y])
-    }
+  for (let i = 0; i < BUILD_SLOTS.length && out.length < n; i++) {
+    const s = BUILD_SLOTS[i]
+    if (!game.canPlace(s.x, s.y, type).ok) continue
+    out.push([s.x, s.y])
   }
   return out
 }
@@ -100,22 +98,33 @@ describe('ciclo de juego', () => {
     expect(g.reroll()).toBe(false)
   })
 
-  it('no deja construir sobre el camino ni sin oro', () => {
+  it('solo deja construir en plataformas y con oro suficiente', () => {
     const g = new Game({ seed: 'test', startGold: 60 })
     const onPath = g.canPlace(g.world.path.xs[10], g.world.path.ys[10], 'arrow')
     expect(onPath.ok).toBe(false)
-    expect(onPath.reason).toBe('sobre el camino')
+    expect(onPath.reason).toBe('no hay plataforma acá')
 
     const [spot] = findSpots(g, 1)
     expect(g.canPlace(spot[0], spot[1], 'cannon').ok).toBe(false) // cuesta 110
     expect(g.canPlace(spot[0], spot[1], 'arrow').ok).toBe(true)
   })
 
-  it('no deja apilar torres en el mismo lugar', () => {
+  it('no deja apilar torres en la misma plataforma', () => {
     const g = new Game({ seed: 'test', startGold: 5000 })
     const [spot] = findSpots(g, 1)
     g.placeTower(spot[0], spot[1], 'arrow')
-    expect(g.canPlace(spot[0] + 5, spot[1] + 2, 'arrow').ok).toBe(false)
+    const again = g.canPlace(spot[0] + 5, spot[1] + 2, 'arrow')
+    expect(again.ok).toBe(false)
+    expect(again.reason).toBe('plataforma ocupada')
+  })
+
+  it('vender libera la plataforma', () => {
+    const g = new Game({ seed: 'test', startGold: 5000 })
+    const [spot] = findSpots(g, 1)
+    const t = g.placeTower(spot[0], spot[1], 'arrow')!
+    expect(g.canPlace(spot[0], spot[1], 'arrow').ok).toBe(false)
+    g.sellTower(t.id)
+    expect(g.canPlace(spot[0], spot[1], 'arrow').ok).toBe(true)
   })
 
   it('la simulacion es determinista con la misma seed', () => {

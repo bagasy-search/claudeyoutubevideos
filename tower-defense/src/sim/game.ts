@@ -28,22 +28,70 @@ export interface GameEvents {
   changed: undefined
 }
 
-export const FIELD_W = 960
-export const FIELD_H = 600
+/**
+ * Campo en 9:16. El juego es para telefono: en vertical el pulgar llega a todo
+ * y no hay que rotar nada. La imagen de fondo va a 1080x1920, o sea exactamente
+ * el doble — que es el devicePixelRatio de casi cualquier telefono actual.
+ */
+export const FIELD_W = 540
+export const FIELD_H = 960
 
+/**
+ * El camino entra por arriba y sale por abajo, serpenteando. En vertical no
+ * entran los zigzags anchos del formato apaisado: lo que rinde es una S larga
+ * con cuatro barridos, que deja pasto a los dos lados en todo el recorrido.
+ */
 const DEFAULT_PATH: PathPoint[] = [
-  { x: -30, y: 120 },
-  { x: 180, y: 120 },
-  { x: 300, y: 250 },
-  { x: 170, y: 400 },
-  { x: 330, y: 520 },
-  { x: 560, y: 470 },
-  { x: 620, y: 260 },
-  { x: 790, y: 180 },
-  { x: 860, y: 380 },
-  { x: 700, y: 545 },
-  { x: 990, y: 560 },
+  { x: 270, y: -40 },
+  { x: 270, y: 110 },
+  { x: 140, y: 190 },
+  { x: 105, y: 320 },
+  { x: 250, y: 395 },
+  { x: 425, y: 350 },
+  { x: 455, y: 495 },
+  { x: 300, y: 585 },
+  { x: 125, y: 650 },
+  { x: 112, y: 785 },
+  { x: 258, y: 842 },
+  // El camino TERMINA dentro del campo, no se va por el borde. En vertical el
+  // nucleo tiene que verse: es lo que el jugador defiende, y si queda fuera de
+  // pantalla las vidas bajan sin que se entienda de donde.
+  { x: 430, y: 888 },
 ]
+
+/**
+ * Plataformas de construccion, al estilo Kingdom Rush.
+ *
+ * La decision de fondo: el jugador elige QUE poner, no DONDE. Con colocacion
+ * libre la partida se gana amontonando torres en el codo mas cerrado del
+ * camino, y a partir de ahi el mapa deja de importar — cualquier trazado se
+ * juega igual. Con plataformas fijas el mapa ES el problema a resolver: esta
+ * cubre dos tramos pero llega tarde, aquella solo uno pero pega desde el
+ * principio. Y de paso el fondo puede tener las plataformas PINTADAS, que es lo
+ * que hace que el tablero se lea como un lugar y no como una grilla.
+ *
+ * Estan a 66 px del eje del camino (la calzada tiene 30 de semiancho, asi que
+ * quedan justo al borde) y separadas 142 px entre si.
+ */
+export const BUILD_SLOTS: readonly PathPoint[] = [
+  { x: 346, y: 52 },
+  { x: 161, y: 99 },
+  { x: 276, y: 192 },
+  { x: 166, y: 283 },
+  { x: 460, y: 294 },
+  { x: 111, y: 414 },
+  { x: 391, y: 420 },
+  { x: 249, y: 461 },
+  { x: 467, y: 576 },
+  { x: 326, y: 646 },
+  { x: 185, y: 690 },
+  { x: 298, y: 785 },
+  { x: 61, y: 827 },
+  { x: 200, y: 894 },
+]
+
+/** Radio de captura del toque. Generoso: es un juego para dedos, no para mouse. */
+export const SLOT_R = 38
 
 export interface GameOptions {
   seed?: string | number
@@ -265,29 +313,52 @@ export class Game {
 
   // --------------------------------------------------------------- torres
 
-  canPlace(x: number, y: number, type: string): { ok: boolean; reason?: string } {
+  /** Indice de la plataforma bajo el punto, o -1. La mas cercana gana. */
+  slotAt(x: number, y: number): number {
+    let best = -1
+    let bestD = SLOT_R
+    for (let i = 0; i < BUILD_SLOTS.length; i++) {
+      const d = Math.hypot(BUILD_SLOTS[i].x - x, BUILD_SLOTS[i].y - y)
+      if (d < bestD) {
+        bestD = d
+        best = i
+      }
+    }
+    return best
+  }
+
+  /** La torre que ocupa una plataforma, si hay. */
+  towerOnSlot(slot: number): Tower | undefined {
+    return this.world.towers.find((t) => t.slot === slot)
+  }
+
+  canPlace(x: number, y: number, type: string): { ok: boolean; reason?: string; slot?: number } {
     const def = TOWER_BY_ID.get(type)
     if (!def) return { ok: false, reason: 'tipo desconocido' }
-    if (this.gold < def.cost) return { ok: false, reason: 'sin oro' }
-    if (x < 18 || y < 18 || x > FIELD_W - 18 || y > FIELD_H - 18) return { ok: false, reason: 'fuera del mapa' }
-    if (this.world.path.distanceToPoint(x, y) < 44) return { ok: false, reason: 'sobre el camino' }
-    for (const t of this.world.towers) {
-      if (Math.hypot(t.x - x, t.y - y) < 48) return { ok: false, reason: 'muy cerca de otra torre' }
-    }
-    return { ok: true }
+    const slot = this.slotAt(x, y)
+    if (slot < 0) return { ok: false, reason: 'no hay plataforma acá' }
+    if (this.towerOnSlot(slot)) return { ok: false, reason: 'plataforma ocupada' }
+    // El oro se chequea AL FINAL a proposito: si el jugador toca una plataforma
+    // libre pero no le alcanza, el mensaje util es "sin oro", no "no hay
+    // plataforma". El motivo mas especifico primero.
+    if (this.gold < def.cost) return { ok: false, reason: 'sin oro', slot }
+    return { ok: true, slot }
   }
 
   placeTower(x: number, y: number, type: string): Tower | null {
     const check = this.canPlace(x, y, type)
-    if (!check.ok) return null
+    if (!check.ok || check.slot === undefined) return null
     const def = TOWER_BY_ID.get(type)!
     this.gold -= def.cost
+    // La torre se planta en el centro de la plataforma, no donde cayo el dedo.
+    const at = BUILD_SLOTS[check.slot]
     const tower: Tower = {
       id: this.nextTowerId++,
       type: def.id,
       tags: def.tags,
-      x,
-      y,
+      slot: check.slot,
+      x: at.x,
+      y: at.y,
       cooldown: 0,
       angle: 0,
       prevAngle: 0,

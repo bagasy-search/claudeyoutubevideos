@@ -92,6 +92,10 @@ canvas.addEventListener('pointerleave', () => {
 canvas.addEventListener('pointerdown', (ev) => {
   if (ev.button !== 0) return
   const p = toField(ev)
+  // En un telefono no hay `pointermove` antes del toque: sin esto, el primer
+  // tap no tiene posicion y no resalta ninguna plataforma.
+  mouseX = p.x
+  mouseY = p.y
   if (!ui.selectedTower) return
   const check = game.canPlace(p.x, p.y, ui.selectedTower)
   if (!check.ok) {
@@ -147,11 +151,11 @@ renderer.ticker.add((ticker) => {
       renderer.showGhost(game, mouseX, mouseY, ui.selectedTower)
     } else {
       const t = towerAt(mouseX, mouseY)
-      if (t) renderer.hoverRange(t.x, t.y, t.stats.range, t.color)
-      else renderer.clearOverlays()
+      if (t) renderer.hoverRange(game, t.x, t.y, t.stats.range, t.color)
+      else renderer.clearOverlays(game)
     }
   } else {
-    renderer.clearOverlays()
+    renderer.clearOverlays(game)
   }
 
   ui.sync(dtMs / 1000)

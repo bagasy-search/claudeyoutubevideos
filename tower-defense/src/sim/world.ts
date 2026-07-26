@@ -167,6 +167,8 @@ export interface Tower {
   id: number
   type: string
   tags: readonly string[]
+  /** Plataforma que ocupa. Es la que se libera al vender. */
+  slot: number
   x: number
   y: number
   cooldown: number

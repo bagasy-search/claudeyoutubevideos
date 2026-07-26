@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { Game } from '../src/sim/game'
+import { BUILD_SLOTS, Game } from '../src/sim/game'
 
 /**
  * Sonda de balance: juega runs enteras headless con una estrategia fija y mide
@@ -16,14 +16,9 @@ const TOWER_CAP = 8
 
 function freeSpots(g: Game, type: string, limit: number): [number, number][] {
   const out: [number, number][] = []
-  for (let y = 30; y < g.world.height - 30 && out.length < limit; y += 20) {
-    for (let x = 30; x < g.world.width - 30 && out.length < limit; x += 20) {
-      const d = g.world.path.distanceToPoint(x, y)
-      if (d < 46 || d > 120) continue
-      if (!g.canPlace(x, y, type).ok) continue
-      if (out.some(([a, b]) => Math.hypot(a - x, b - y) < 54)) continue
-      out.push([x, y])
-    }
+  for (const s of BUILD_SLOTS) {
+    if (out.length >= limit) break
+    if (g.canPlace(s.x, s.y, type).ok) out.push([s.x, s.y])
   }
   return out
 }

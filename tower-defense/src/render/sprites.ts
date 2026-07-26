@@ -24,6 +24,9 @@ export const WALK_FRAMES = 12
 /** Radio de dibujo de las torres. Lo usa el render para colocar el cañón. */
 export const TOWER_R = 24
 
+/** Radio de la plataforma de construccion vacia. */
+export const SLOT_ART_R = 30
+
 /**
  * El grano se instancia una vez y se comparte: crear un filtro por sprite seria
  * absurdo, y ademas el horneado es secuencial.
@@ -575,6 +578,45 @@ function drawProjectile(g: Graphics, kind: number): void {
 }
 
 /**
+ * Plataforma de construccion vacia.
+ *
+ * Tiene que gritar "acá va algo" sin competir con nada. La forma es un octogono
+ * de piedra hundido en el suelo: hundido y no apoyado, porque una plataforma que
+ * sobresale se lee como un obstaculo y una hundida se lee como un hueco a
+ * llenar. El aro punteado de adentro es la señal de "vacio" — cuando entra la
+ * torre lo tapa entero y la lectura cambia sola.
+ */
+function drawSlot(g: Graphics, r: number): void {
+  const stone = 0x6a5c48
+  const lw = Math.max(1.6, r * 0.1)
+
+  const oct = (rad: number, squash: number): number[] => {
+    const p: number[] = []
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2 + Math.PI / 8
+      p.push(Math.cos(a) * rad, Math.sin(a) * rad * squash)
+    }
+    return p
+  }
+
+  // Hueco: el borde exterior es mas oscuro que el suelo, el interior mas claro.
+  // Ese orden — oscuro afuera, claro adentro — es lo que lee como hundido. Al
+  // reves seria un pedestal.
+  g.poly(oct(r, 0.62)).fill({ color: shade(stone, 0.55) })
+  g.poly(oct(r * 0.9, 0.62)).fill({ color: stone }).stroke({ width: lw, color: ink(stone, 0.5) })
+  g.poly(oct(r * 0.78, 0.62)).fill({ color: tint(stone, 0.16) })
+  // Luz en el canto de arriba, del lado de la fuente.
+  rimArc(g, 0, 0, r * 0.86, lw, inkLit(stone, 0.5))
+
+  // Aro punteado: la señal de plataforma libre.
+  for (let i = 0; i < 12; i++) {
+    const a = (i / 12) * Math.PI * 2
+    g.circle(Math.cos(a) * r * 0.5, Math.sin(a) * r * 0.5 * 0.62, lw * 0.75)
+      .fill({ color: tint(stone, 0.55), alpha: 0.75 })
+  }
+}
+
+/**
  * Viñeta: el pase de color global, hecho con una sola textura y sin shader.
  *
  * Se dibuja sobre todo el campo en modo `multiply`, asi que lo blanco no toca
@@ -634,6 +676,8 @@ export interface Atlas {
   aura: Texture
   /** Pase de color global. Va en `multiply` sobre todo el campo. */
   vignette: Texture
+  /** Plataforma de construccion vacia. */
+  slot: Texture
 }
 
 export function buildAtlas(renderer: PixiRenderer): Atlas {
@@ -722,6 +766,9 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
   const vignetteG = new Graphics()
   drawVignette(vignetteG)
 
+  const slotG = new Graphics()
+  drawSlot(slotG, SLOT_ART_R)
+
   const auraG = new Graphics()
   for (let i = 6; i >= 1; i--) {
     auraG.circle(0, 0, (i / 6) * 30).fill({ color: 0xffffff, alpha: 0.07 })
@@ -741,5 +788,6 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
     core: bake(renderer, coreG, 34, 2),
     aura: bake(renderer, auraG, 32, 2, false),
     vignette: bake(renderer, vignetteG, VIGNETTE_R, 1, false),
+    slot: bake(renderer, slotG, SLOT_ART_R * 1.15, 3),
   }
 }
