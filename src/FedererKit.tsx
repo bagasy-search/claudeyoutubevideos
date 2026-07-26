@@ -2361,32 +2361,34 @@ export const FedLowerThird: React.FC<FedLowerThirdProps> = ({
   return (
     <AbsoluteFill>
       <TransitionShell accent={accent} totalF={totalF}>
-        <AbsoluteFill style={{background: '#0a0805', overflow: 'hidden'}}>
-          {/* avatar o fallback cálido */}
-          <AbsoluteFill
-            style={{
-              transform: `translate(${handX}px, ${handY}px) scale(${push})`,
-              willChange: 'transform',
-            }}
-          >
-            {avatarSrc ? (
+        {/* avatarSrc={null} = MODO OVERLAY: el avatar ya está montado abajo por el build
+            (un solo OffthreadVideo persistente). Acá NO se pinta fondo ni se monta un
+            segundo video, o taparíamos la cara y el audio glitchearía en cada corte. */}
+        <AbsoluteFill
+          style={{background: avatarSrc ? '#0a0805' : 'transparent', overflow: 'hidden'}}
+        >
+          {avatarSrc ? (
+            <AbsoluteFill
+              style={{
+                transform: `translate(${handX}px, ${handY}px) scale(${push})`,
+                willChange: 'transform',
+              }}
+            >
               <OffthreadVideo
                 src={avatarSrc}
                 style={{width: '100%', height: '100%', objectFit: 'cover'}}
               />
-            ) : (
-              <AbsoluteFill style={{background: moodBg('warmdark', accent)}} />
-            )}
-            <AbsoluteFill
-              style={{
-                pointerEvents: 'none',
-                background: `linear-gradient(160deg, ${rgba(
-                  accent,
-                  0.05
-                )}, transparent 38%, transparent 68%, rgba(2, 6, 14, 0.28))`,
-              }}
-            />
-          </AbsoluteFill>
+              <AbsoluteFill
+                style={{
+                  pointerEvents: 'none',
+                  background: `linear-gradient(160deg, ${rgba(
+                    accent,
+                    0.05
+                  )}, transparent 38%, transparent 68%, rgba(2, 6, 14, 0.28))`,
+                }}
+              />
+            </AbsoluteFill>
+          ) : null}
 
           <MotesLayer motes={dust} blur={1.2} scale={height / 1080} tint="235, 205, 150" />
 

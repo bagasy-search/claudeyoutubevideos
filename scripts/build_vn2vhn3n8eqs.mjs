@@ -146,6 +146,26 @@ for (const m of moments) {
   if (comp === 'FedChecklist' && (!props.items || !props.items.length)) comp = 'FedHero';
   if (comp === 'FedStat' && typeof props.value !== 'number') comp = 'FedHero';
 
+  // ⛔ NADA DE TEXTO DE RELLENO: si el componente no trae su texto propio y la frase de ese
+  // instante no entra entera, se degrada (a visual full si hay material, si no a avatar).
+  // Antes esto producía titulares cortados a la mitad en pantalla.
+  {
+    const saysFits = (n) => {
+      const s = (m.says || '').replace(/^[\s,.;:¿¡]+/, '').replace(/[.,;:]+$/, '').trim();
+      return !!s && s.length <= n;
+    };
+    const needsText =
+      (['FedChapter', 'FedHero', 'FedMolecule', 'FedStep', 'FedBeforeAfter', 'FedChecklist', 'FedCta'].includes(comp) &&
+        !props.title) ||
+      (comp === 'FedStat' && !props.label) ||
+      (comp === 'FedQuote' && !props.quote);
+    const limit = comp === 'FedQuote' ? 120 : comp === 'FedStat' ? 40 : 52;
+    if (needsText && !saysFits(limit)) {
+      comp = (m.asset && m.asset.type === 'img') || (m.asset && m.asset.type === 'clip') ? 'FedFullShot' : '';
+      if (!comp) m.kind = 'avatar';
+    }
+  }
+
   // ---- resolución del asset
   let file = null;
   const id = asset.id || `vn2_x${beats.length}`;
@@ -202,11 +222,16 @@ for (const m of moments) {
   // ⛔ SIN DEFAULTS DEL KIT: los valores por defecto de FedererKit son del video de ROMERO
   // ("Ácido carnósico", centerLabel "Romero", "Semana 12 · Ritual de romero"...). Si un prop
   // queda undefined, ESE texto sale al aire en un video de aceites. Se rellenan TODOS.
+  // La frase ENTERA o nada: cortarla a n caracteres producía fragmentos sin sentido en
+  // pantalla ("Y cuando entra, la", "69% DE"). Si no entra, el beat pierde el componente
+  // y queda como avatar full, que siempre se lee bien.
   const short = (n) => {
-    const s = (m.says || '').replace(/^[\s,.;:]+/, '').trim();
-    if (!s) return '';
-    const cut = s.slice(0, n);
-    return (cut.length < s.length ? cut.replace(/[\s,;:]+\S*$/, '') : cut).replace(/[.,;:]$/, '');
+    const s = (m.says || '')
+      .replace(/^[\s,.;:¿¡]+/, '')
+      .replace(/[.,;:]+$/, '')
+      .trim();
+    if (!s || s.length > n) return '';
+    return s.charAt(0).toUpperCase() + s.slice(1);
   };
   const need = (k, v) => {
     if (props[k] === undefined || props[k] === null) props[k] = v;

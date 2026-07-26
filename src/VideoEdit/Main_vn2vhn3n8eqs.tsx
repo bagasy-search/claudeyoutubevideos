@@ -10,7 +10,7 @@
  *   L1 · lower-thirds sutiles sobre los beats de avatar.
  *   L2 · escenas de profundidad (avatar oculto) = componentes de FedererKit,
  *        cada una con SOLAPE de whip → sin cortes duros.
- * 377 beats · 251 escenas de profundidad · media 3.35s
+ * 377 beats · 245 escenas de profundidad · media 3.35s
  * ============================================================================
  */
 import React from 'react';
@@ -132,8 +132,8 @@ const P: any[] = [
   /* b037 136.4s */ {"kicker":"LA CAPA DE ARRIBA","title":"Deshidratada refleja mal la luz","hot":["refleja mal la luz"],"sub":"y le apaga la cara entera","image":staticFile('img/vn2_a15.png'),"mood":"warmdark","side":"right"},
   /* b038 140.8s */ {"src":staticFile('broll/vn2vhn3n8eqs/vn2_a16.mp4'),"video":true,"mood":"warmdark","ken":"left"},
   /* b039 143.6s */ {"name":"Dr. Valler","role":"Medicina interna","topic":"El principio","avatarSrc":null},
-  /* b040 148.1s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":32,"fy":14,"z":1.15},{"time":2.4,"fx":24,"fy":44,"z":1.5},{"time":4.4,"fx":60,"fy":44,"z":1.5}],"elements":[{"t":"title","x":5,"y":8,"text":"Su barrera = una pared de ladrillos","start":0.3},{"t":"note","x":24,"y":44,"w":24,"text":"Ladrillos = células muertas","start":2.7,"box":true,"align":"center"},{"t":"arrow","from":[38,46],"to":[48,46],"start":4.3,"curve":-0.25},{"t":"note","x":60,"y":44,"w":24,"text":"Entre ellos: un cemento de grasa","start":4.8,"highlight":true,"align":"center"}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}],"image":staticFile('img/vn2_fb_warm.png'),"mood":"warmdark","kicker":"","title":"Su barrera funciona como una pared de","sub":"","centerLabel":"Su barrera funcion","hot":[]},
-  /* b041 153.9s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":30,"fy":14,"z":1.15},{"time":1.2,"fx":26,"fy":46,"z":1.55},{"time":2.6,"fx":52,"fy":46,"z":1.55},{"time":3.4,"fx":50,"fy":40,"z":1.05}],"elements":[{"t":"title","x":5,"y":8,"text":"De qué está hecho ese cemento","start":0.2},{"t":"note","x":22,"y":46,"w":20,"text":"1/2 ceramidas","start":1.4,"highlight":true,"align":"center"},{"t":"note","x":50,"y":46,"w":20,"text":"1/4 colesterol","start":2.5,"box":true,"align":"center"},{"t":"note","x":78,"y":46,"w":20,"text":"el resto: ácidos grasos","start":3.2,"box":true,"align":"center"}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}],"image":staticFile('img/vn2_fb_warm.png'),"mood":"warmdark","kicker":"","title":"Entre ladrillo y ladrillo hay un cemento de","sub":"","centerLabel":"Entre ladrillo y l","hot":[]},
+  /* b040 148.1s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":32,"fy":14,"z":1.15},{"time":2.4,"fx":24,"fy":44,"z":1.5},{"time":4.4,"fx":60,"fy":44,"z":1.5}],"elements":[{"t":"title","x":5,"y":8,"text":"Su barrera = una pared de ladrillos","start":0.3},{"t":"note","x":24,"y":44,"w":24,"text":"Ladrillos = células muertas","start":2.7,"box":true,"align":"center"},{"t":"arrow","from":[38,46],"to":[48,46],"start":4.3,"curve":-0.25},{"t":"note","x":60,"y":44,"w":24,"text":"Entre ellos: un cemento de grasa","start":4.8,"highlight":true,"align":"center"}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}]},
+  /* b041 153.9s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":30,"fy":14,"z":1.15},{"time":1.2,"fx":26,"fy":46,"z":1.55},{"time":2.6,"fx":52,"fy":46,"z":1.55},{"time":3.4,"fx":50,"fy":40,"z":1.05}],"elements":[{"t":"title","x":5,"y":8,"text":"De qué está hecho ese cemento","start":0.2},{"t":"note","x":22,"y":46,"w":20,"text":"1/2 ceramidas","start":1.4,"highlight":true,"align":"center"},{"t":"note","x":50,"y":46,"w":20,"text":"1/4 colesterol","start":2.5,"box":true,"align":"center"},{"t":"note","x":78,"y":46,"w":20,"text":"el resto: ácidos grasos","start":3.2,"box":true,"align":"center"}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}]},
   /* b042 157.8s */ {"kicker":"EL CEMENTO DE SU PIEL","title":"Tres grasas, una sola pared","hot":["una sola pared"],"sub":"si falta una, la pared filtra","centerLabel":"CEMENTO","nodes":[{"label":"50% ceramidas"},{"label":"25% colesterol"},{"label":"25% ácidos grasos"}],"mood":"science","image":staticFile('img/vn2_fb_science.png')},
   /* b043 161.4s */ {"src":staticFile('broll/vn2vhn3n8eqs/vn2_a17.mp4'),"video":true,"mood":"warmdark","ken":"right"},
   /* b044 165s */ {"kicker":"CEMENTO DESARMADO","title":"Así se siente","hot":["se siente"],"items":["Picazón","Tirantez","La crema se le fue en dos horas"],"mood":"warmdark"},
@@ -143,7 +143,7 @@ const P: any[] = [
   /* b048 178.9s */ {"kicker":"LO QUE SÍ LO DECIDE","title":"La proporción entre dos grasas","hot":["dos grasas"],"sub":"todo el video se juega acá","centerLabel":"PROPORCIÓN","nodes":[{"label":"Ácido linoleico"},{"label":"Ácido oleico"}],"mood":"science","image":staticFile('img/vn2_fb_science.png')},
   /* b049 183.5s */ {},
   /* b050 185.2s */ {"kicker":"ESENCIAL","title":"Su cuerpo no lo fabrica","hot":["no lo fabrica"],"sub":"tiene que entrar de afuera","image":staticFile('img/vn2_a19.png'),"mood":"gold","side":"left"},
-  /* b051 188s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":28,"fy":13,"z":1.15},{"time":1.2,"fx":20,"fy":46,"z":1.55},{"time":3,"fx":50,"fy":46,"z":1.55},{"time":4.8,"fx":78,"fy":46,"z":1.55},{"time":5.8,"fx":50,"fy":40,"z":1.02}],"elements":[{"t":"title","x":5,"y":8,"text":"Cómo el linoleico remacha la pared","start":0.2},{"t":"note","x":20,"y":46,"w":20,"text":"Entra el linoleico","start":1.4,"box":true,"align":"center"},{"t":"arrow","from":[32,48],"to":[40,48],"start":2.8,"curve":-0.25},{"t":"note","x":50,"y":46,"w":22,"text":"La piel lo engancha a una ceramida gigante","start":3.2,"box":true,"align":"center"},{"t":"arrow","from":[63,48],"to":[70,48],"start":4.6,"curve":-0.25},{"t":"note","x":80,"y":46,"w":20,"text":"Se forma el REMACHE","start":4.9,"highlight":true,"align":"center"},{"t":"lasso","x":80,"y":46,"w":26,"h":22,"start":5.6,"rot":-3}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}],"image":staticFile('img/vn2_fb_warm.png'),"mood":"warmdark","kicker":"","title":"Y cuando entra, la piel lo engancha en el","sub":"","centerLabel":"Y cuando entra, la","hot":[]},
+  /* b051 188s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":28,"fy":13,"z":1.15},{"time":1.2,"fx":20,"fy":46,"z":1.55},{"time":3,"fx":50,"fy":46,"z":1.55},{"time":4.8,"fx":78,"fy":46,"z":1.55},{"time":5.8,"fx":50,"fy":40,"z":1.02}],"elements":[{"t":"title","x":5,"y":8,"text":"Cómo el linoleico remacha la pared","start":0.2},{"t":"note","x":20,"y":46,"w":20,"text":"Entra el linoleico","start":1.4,"box":true,"align":"center"},{"t":"arrow","from":[32,48],"to":[40,48],"start":2.8,"curve":-0.25},{"t":"note","x":50,"y":46,"w":22,"text":"La piel lo engancha a una ceramida gigante","start":3.2,"box":true,"align":"center"},{"t":"arrow","from":[63,48],"to":[70,48],"start":4.6,"curve":-0.25},{"t":"note","x":80,"y":46,"w":20,"text":"Se forma el REMACHE","start":4.9,"highlight":true,"align":"center"},{"t":"lasso","x":80,"y":46,"w":26,"h":22,"start":5.6,"rot":-3}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}]},
   /* b052 194.5s */ {"kicker":"SIN REMACHE","title":"La pared filtra","hot":["filtra"],"sub":"sin linoleico no hay remache","image":staticFile('img/vn2_a20.png'),"mood":"warmdark","side":"right"},
   /* b053 198.3s */ {},
   /* b054 199.4s */ {"src":staticFile('broll/vn2vhn3n8eqs/vn2_a21.mp4'),"video":true,"mood":"warmdark","ken":"left"},
@@ -151,7 +151,7 @@ const P: any[] = [
   /* b056 207s */ {"name":"Dr. Valler","role":"Medicina interna","topic":"El plazo real: 4 semanas","avatarSrc":null},
   /* b057 211.8s */ {"kicker":"EL OTRO LADO","index":"03","title":"Ácido oleico","sub":"hace exactamente lo contrario","mood":"warmdark"},
   /* b058 213.9s */ {"name":"Dr. Valler","role":"Medicina interna","topic":"Potenciador de penetración","avatarSrc":null},
-  /* b059 217.2s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":28,"fy":13,"z":1.15},{"time":0.9,"fx":24,"fy":48,"z":1.55},{"time":2,"fx":52,"fy":48,"z":1.55},{"time":3,"fx":78,"fy":48,"z":1.55}],"elements":[{"t":"title","x":5,"y":8,"text":"Qué le hace el oleico a la pared","start":0.2},{"t":"note","x":24,"y":48,"w":20,"text":"Desordena las láminas de grasa","start":1,"box":true,"align":"center"},{"t":"arrow","from":[36,50],"to":[43,50],"start":1.9,"curve":-0.25},{"t":"note","x":52,"y":48,"w":18,"text":"Las separa","start":2.1,"box":true,"align":"center"},{"t":"arrow","from":[62,50],"to":[69,50],"start":2.9,"curve":-0.25},{"t":"note","x":79,"y":48,"w":18,"text":"Abre huecos","start":3.1,"fill":true,"align":"center"}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}],"image":staticFile('img/vn2_fb_warm.png'),"mood":"warmdark","kicker":"","title":"Desordena las láminas de grasa, la separa","sub":"","centerLabel":"Desordena las lámi","hot":[]},
+  /* b059 217.2s */ {"theme":"dark","scene":{"cameras":[{"time":0,"fx":28,"fy":13,"z":1.15},{"time":0.9,"fx":24,"fy":48,"z":1.55},{"time":2,"fx":52,"fy":48,"z":1.55},{"time":3,"fx":78,"fy":48,"z":1.55}],"elements":[{"t":"title","x":5,"y":8,"text":"Qué le hace el oleico a la pared","start":0.2},{"t":"note","x":24,"y":48,"w":20,"text":"Desordena las láminas de grasa","start":1,"box":true,"align":"center"},{"t":"arrow","from":[36,50],"to":[43,50],"start":1.9,"curve":-0.25},{"t":"note","x":52,"y":48,"w":18,"text":"Las separa","start":2.1,"box":true,"align":"center"},{"t":"arrow","from":[62,50],"to":[69,50],"start":2.9,"curve":-0.25},{"t":"note","x":79,"y":48,"w":18,"text":"Abre huecos","start":3.1,"fill":true,"align":"center"}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}]},
   /* b060 221.1s */ {"src":staticFile('broll/vn2vhn3n8eqs/vn2_a23.mp4'),"video":true,"mood":"warmdark","ken":"in"},
   /* b061 225.9s */ {},
   /* b062 229.1s */ {"src":staticFile('img/vn2_a24.png'),"video":false,"mood":"warmdark","ken":"left"},
@@ -255,7 +255,7 @@ const P: any[] = [
   /* b160 549.5s */ {"kicker":"Lado izquierdo · el de la ventanilla","title":"Lo que le hizo el sol","hot":["el sol"],"items":["Piel engrosada y colgada","Surcos profundos","Poros dilatados","20 años más de un solo lado"],"mood":"warmdark"},
   /* b161 554.7s */ {"name":"Dr. Valler","role":"Medicina · piel","topic":"Grábese este detalle","avatarSrc":null},
   /* b162 557.2s */ {"mood":"warmdark","src":staticFile('broll/vn2vhn3n8eqs/vn2_c37.mp4'),"video":true,"ken":"left"},
-  /* b163 560s */ {"theme":"dark","scene":{"avatarSrc":null,"muted":true,"cameras":[{"time":0,"fx":50,"fy":14,"z":1.15},{"time":0.9,"fx":26,"fy":42,"z":1.42},{"time":3.4,"fx":72,"fy":42,"z":1.42},{"time":5.8,"fx":50,"fy":46,"z":1}],"elements":[{"t":"title","x":4,"y":7,"text":"El vidrio no lo protege","start":0.2},{"t":"note","x":16,"y":26,"w":24,"text":"UVB · los que queman","start":0.8,"align":"center"},{"t":"arrow","from":[26,34],"to":[26,43],"start":1.4,"curve":-0.2},{"t":"note","x":16,"y":49,"w":24,"text":"El vidrio los detiene","start":1.9,"box":true,"align":"center"},{"t":"note","x":70,"y":26,"w":26,"text":"UVA · los que envejecen","start":3.4,"align":"center"},{"t":"arrow","from":[76,34],"to":[76,43],"start":4,"curve":-0.2},{"t":"note","x":70,"y":49,"w":26,"text":"Atraviesan el vidrio","start":4.3,"fill":true,"align":"center"},{"t":"note","x":70,"y":68,"w":26,"text":"Y también las nubes","start":5.8,"highlight":true,"align":"center"},{"t":"lasso","x":73,"y":47,"w":34,"h":54,"start":6.3,"rot":-2}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}],"image":staticFile('img/vn2_fb_warm.png'),"mood":"warmdark","kicker":"","title":"El vidrio detiene los rayos que queman, los","sub":"","centerLabel":"El vidrio detiene ","hot":[]},
+  /* b163 560s */ {"theme":"dark","scene":{"avatarSrc":null,"muted":true,"cameras":[{"time":0,"fx":50,"fy":14,"z":1.15},{"time":0.9,"fx":26,"fy":42,"z":1.42},{"time":3.4,"fx":72,"fy":42,"z":1.42},{"time":5.8,"fx":50,"fy":46,"z":1}],"elements":[{"t":"title","x":4,"y":7,"text":"El vidrio no lo protege","start":0.2},{"t":"note","x":16,"y":26,"w":24,"text":"UVB · los que queman","start":0.8,"align":"center"},{"t":"arrow","from":[26,34],"to":[26,43],"start":1.4,"curve":-0.2},{"t":"note","x":16,"y":49,"w":24,"text":"El vidrio los detiene","start":1.9,"box":true,"align":"center"},{"t":"note","x":70,"y":26,"w":26,"text":"UVA · los que envejecen","start":3.4,"align":"center"},{"t":"arrow","from":[76,34],"to":[76,43],"start":4,"curve":-0.2},{"t":"note","x":70,"y":49,"w":26,"text":"Atraviesan el vidrio","start":4.3,"fill":true,"align":"center"},{"t":"note","x":70,"y":68,"w":26,"text":"Y también las nubes","start":5.8,"highlight":true,"align":"center"},{"t":"lasso","x":73,"y":47,"w":34,"h":54,"start":6.3,"rot":-2}]},"nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}]},
   /* b164 567.5s */ {"mood":"cool","src":staticFile('broll/vn2vhn3n8eqs/vn2_c39.mp4'),"video":true,"ken":"in"},
   /* b165 571.2s */ {},
   /* b166 574s */ {"name":"Dr. Valler","role":"Medicina · piel","topic":"La proporción real","avatarSrc":null},
@@ -399,7 +399,7 @@ const P: any[] = [
   /* b304 1027.2s */ {"src":staticFile('broll/vn2vhn3n8eqs/vn2_f09.mp4'),"video":true,"mood":"warmdark","ken":"in"},
   /* b305 1031.3s */ {},
   /* b306 1033.6s */ {},
-  /* b307 1037.9s */ {"theme":"dark","scene":{"avatarSrc":"","muted":true,"cameras":[{"time":0,"fx":24,"fy":30,"z":1.22},{"time":2,"fx":62,"fy":28,"z":1.28},{"time":3.3,"fx":62,"fy":54,"z":1.3}],"elements":[{"t":"title","x":4,"y":8,"text":"El aceite es la TAPA, no el contenido","start":0.2},{"t":"note","x":8,"y":30,"w":22,"text":"Aceite = TAPA","start":0.6,"box":true,"align":"center"},{"t":"note","x":8,"y":48,"w":22,"text":"Agua = CONTENIDO","start":1.3,"highlight":true,"align":"center"},{"t":"arrow","from":[32,34],"to":[47,32],"start":1.9,"curve":-0.25},{"t":"note","x":52,"y":26,"w":26,"text":"Piel SECA + aceite = sella la nada","start":2.2,"fill":true,"align":"center"},{"t":"note","x":52,"y":52,"w":26,"text":"Piel HÚMEDA + aceite = sella el agua","start":3.2,"highlight":true,"align":"center"},{"t":"lasso","x":64,"y":54,"w":32,"h":18,"start":4,"rot":-2}]},"mood":"warmdark","nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}],"image":staticFile('img/vn2_fb_warm.png'),"kicker":"","title":"O sea, el aceite es la tapa del frasco, no","sub":"","centerLabel":"O sea, el aceite e","hot":[]},
+  /* b307 1037.9s */ {"theme":"dark","scene":{"avatarSrc":"","muted":true,"cameras":[{"time":0,"fx":24,"fy":30,"z":1.22},{"time":2,"fx":62,"fy":28,"z":1.28},{"time":3.3,"fx":62,"fy":54,"z":1.3}],"elements":[{"t":"title","x":4,"y":8,"text":"El aceite es la TAPA, no el contenido","start":0.2},{"t":"note","x":8,"y":30,"w":22,"text":"Aceite = TAPA","start":0.6,"box":true,"align":"center"},{"t":"note","x":8,"y":48,"w":22,"text":"Agua = CONTENIDO","start":1.3,"highlight":true,"align":"center"},{"t":"arrow","from":[32,34],"to":[47,32],"start":1.9,"curve":-0.25},{"t":"note","x":52,"y":26,"w":26,"text":"Piel SECA + aceite = sella la nada","start":2.2,"fill":true,"align":"center"},{"t":"note","x":52,"y":52,"w":26,"text":"Piel HÚMEDA + aceite = sella el agua","start":3.2,"highlight":true,"align":"center"},{"t":"lasso","x":64,"y":54,"w":32,"h":18,"start":4,"rot":-2}]},"mood":"warmdark","nodes":[{"label":"Barrera"},{"label":"Ceramidas"},{"label":"Linoleico"},{"label":"Agua"}]},
   /* b308 1042.7s */ {"src":staticFile('img/vn2_f13.png'),"video":false,"mood":"warmdark","ken":"in"},
   /* b309 1045s */ {"kicker":"EL ORDEN LO ES TODO","title":"Sobre piel seca usted sella la nada","hot":["la nada"],"imageA":staticFile('img/vn2_f14_a.png'),"imageB":staticFile('img/vn2_f14_b.png'),"labelA":"Piel seca + aceite","labelB":"Piel húmeda + aceite","mood":"cool"},
   /* b310 1048.6s */ {},
@@ -472,7 +472,7 @@ const P: any[] = [
 ];
 
 /* ---------------------- L0 · avatar persistente (audio) ------------------- */
-const CUTS: number[] = [2.6, 5.4, 11.4, 14.4, 20.9, 24.1, 29.2, 33.8, 36.5, 39, 45, 51.1, 57.9, 62.1, 65.3, 74.4, 77.5, 84.3, 93, 102.6, 112.1, 121.1, 126.5, 136.4, 140.8, 148.1, 153.9, 157.8, 161.4, 165, 170.9, 174.6, 178.9, 185.2, 188, 194.5, 199.4, 203.5, 211.8, 217.2, 221.1, 229.1, 230.7, 238.7, 242, 246.4, 250.6, 257.7, 261.9, 271, 276.5, 285.8, 296.7, 299.7, 302.7, 306.4, 310.5, 316.6, 323.3, 328.6, 334.9, 337.5, 339.9, 344.8, 347.9, 353.1, 358.4, 365, 369.9, 374.6, 380.4, 384.1, 387.8, 391, 396.3, 400.3, 402.9, 406.1, 412.4, 415.3, 421.8, 426.7, 430.2, 434.7, 439.5, 443.9, 450, 454.8, 458.5, 465.8, 469.5, 474.5, 485.7, 490.6, 493.9, 499.2, 504.9, 510.3, 518.6, 524.3, 527.6, 530.9, 534.9, 537, 539.5, 545.9, 549.5, 557.2, 560, 567.5, 576.3, 580.3, 584.7, 589, 595.8, 603.6, 608.3, 610.9, 615, 624.9, 629.4, 631.8, 640.8, 653.2, 656.4, 659.5, 662.9, 668.3, 674.6, 676.4, 681.2, 685.1, 692.6, 696.9, 702.8, 709.9, 719.3, 721.9, 724.5, 730.9, 734.6, 741.4, 747.7, 751.3, 759.3, 765, 766.9, 772.9, 778.8, 784.8, 788, 791.2, 794.1, 798.1, 803.2, 810.3, 814.3, 816.9, 827, 829.1, 835.3, 841.2, 847.6, 854.5, 856.8, 863.2, 865.1, 869.9, 876.5, 879, 885.1, 889.6, 894.5, 900.4, 907.6, 911.2, 918.4, 921.3, 928.1, 931.9, 939, 945.7, 951.2, 957.1, 964.5, 966.3, 971.9, 975.5, 981, 983, 986.3, 993.2, 997, 1002, 1004.5, 1008.2, 1012.9, 1018.2, 1021.7, 1024.7, 1027.2, 1037.9, 1042.7, 1045, 1050.9, 1053.7, 1058, 1063.9, 1069.7, 1072.9, 1080, 1085.1, 1088.9, 1096, 1100.4, 1103.5, 1108.1, 1113.7, 1117, 1119.1, 1123.3, 1126.4, 1129.6, 1136.8, 1140.8, 1144.6, 1147.3, 1150.8, 1155.4, 1159.4, 1162.9, 1166.5, 1169.4, 1171.6, 1177, 1183.7, 1187.2, 1191.9, 1197, 1203.3, 1208, 1211.1, 1213.7, 1220.4, 1222.9, 1227.7, 1231.5, 1234.5, 1238.7, 1244.5, 1247.7];
+const CUTS: number[] = [2.6, 5.4, 11.4, 14.4, 20.9, 24.1, 29.2, 33.8, 36.5, 39, 45, 51.1, 57.9, 62.1, 65.3, 74.4, 77.5, 84.3, 93, 102.6, 112.1, 121.1, 126.5, 136.4, 140.8, 157.8, 161.4, 165, 170.9, 174.6, 178.9, 185.2, 194.5, 199.4, 203.5, 211.8, 221.1, 229.1, 230.7, 238.7, 242, 246.4, 250.6, 257.7, 261.9, 271, 276.5, 285.8, 296.7, 299.7, 302.7, 306.4, 310.5, 316.6, 323.3, 328.6, 334.9, 337.5, 339.9, 344.8, 347.9, 353.1, 358.4, 365, 369.9, 374.6, 380.4, 384.1, 387.8, 391, 396.3, 400.3, 402.9, 406.1, 412.4, 415.3, 421.8, 426.7, 430.2, 434.7, 439.5, 443.9, 450, 454.8, 458.5, 465.8, 469.5, 474.5, 485.7, 490.6, 493.9, 499.2, 504.9, 510.3, 518.6, 524.3, 527.6, 530.9, 534.9, 537, 539.5, 545.9, 549.5, 557.2, 567.5, 576.3, 580.3, 584.7, 589, 595.8, 603.6, 608.3, 610.9, 615, 624.9, 629.4, 631.8, 640.8, 653.2, 656.4, 659.5, 662.9, 668.3, 674.6, 676.4, 681.2, 685.1, 692.6, 696.9, 702.8, 709.9, 719.3, 721.9, 724.5, 730.9, 734.6, 741.4, 747.7, 751.3, 759.3, 765, 766.9, 772.9, 778.8, 784.8, 788, 791.2, 794.1, 798.1, 803.2, 810.3, 814.3, 816.9, 827, 829.1, 835.3, 841.2, 847.6, 854.5, 856.8, 863.2, 865.1, 869.9, 876.5, 879, 885.1, 889.6, 894.5, 900.4, 907.6, 911.2, 918.4, 921.3, 928.1, 931.9, 939, 945.7, 951.2, 957.1, 964.5, 966.3, 971.9, 975.5, 981, 983, 986.3, 993.2, 997, 1002, 1004.5, 1008.2, 1012.9, 1018.2, 1021.7, 1024.7, 1027.2, 1042.7, 1045, 1050.9, 1053.7, 1058, 1063.9, 1069.7, 1072.9, 1080, 1085.1, 1088.9, 1096, 1100.4, 1103.5, 1108.1, 1113.7, 1117, 1119.1, 1123.3, 1126.4, 1129.6, 1136.8, 1140.8, 1144.6, 1147.3, 1150.8, 1155.4, 1159.4, 1162.9, 1166.5, 1169.4, 1171.6, 1177, 1183.7, 1187.2, 1191.9, 1197, 1203.3, 1208, 1211.1, 1213.7, 1220.4, 1222.9, 1227.7, 1231.5, 1234.5, 1238.7, 1244.5, 1247.7];
 
 const AvatarLayer: React.FC = () => {
   const frame = useCurrentFrame();
@@ -730,14 +730,6 @@ export const MainVn2: React.FC = () => {
       <Sequence from={4224} durationInFrames={93} name="FedFullShot b038">
         <FedFullShot {...P[38]} totalF={93} accent={ACCENT} />
       </Sequence>
-      {/* 148.1s · Su barrera funciona como una pared de ladrillos. Los ladrillos */}
-      <Sequence from={4443} durationInFrames={186} name="FedMolecule b040">
-        <FedMolecule {...P[40]} totalF={186} accent={ACCENT} />
-      </Sequence>
-      {/* 153.9s · Entre ladrillo y ladrillo hay un cemento de grasa, mitad ceram */}
-      <Sequence from={4617} durationInFrames={129} name="FedMolecule b041">
-        <FedMolecule {...P[41]} totalF={129} accent={ACCENT} />
-      </Sequence>
       {/* 157.8s · un cuarto colesterol, el resto ácidos grasos. */}
       <Sequence from={4734} durationInFrames={120} name="FedMolecule b042">
         <FedMolecule {...P[42]} totalF={120} accent={ACCENT} />
@@ -766,10 +758,6 @@ export const MainVn2: React.FC = () => {
       <Sequence from={5556} durationInFrames={96} name="FedHero b050">
         <FedHero {...P[50]} totalF={96} accent={ACCENT} />
       </Sequence>
-      {/* 188s · Y cuando entra, la piel lo engancha en el extremo de una ceram */}
-      <Sequence from={5640} durationInFrames={201} name="FedMolecule b051">
-        <FedMolecule {...P[51]} totalF={201} accent={ACCENT} />
-      </Sequence>
       {/* 194.5s · Sin linoleico no hay remache, sin remache la pared filtra. */}
       <Sequence from={5835} durationInFrames={126} name="FedHero b052">
         <FedHero {...P[52]} totalF={126} accent={ACCENT} />
@@ -785,10 +773,6 @@ export const MainVn2: React.FC = () => {
       {/* 211.8s · El ácido oleico hace lo contrario. */}
       <Sequence from={6354} durationInFrames={72} name="FedChapter b057">
         <FedChapter {...P[57]} totalF={72} accent={ACCENT} />
-      </Sequence>
-      {/* 217.2s · Desordena las láminas de grasa, la separa, abre huecos. */}
-      <Sequence from={6516} durationInFrames={126} name="FedMolecule b059">
-        <FedMolecule {...P[59]} totalF={126} accent={ACCENT} />
       </Sequence>
       {/* 221.1s · La industria lo usa a propósito cuando quiere que un medicamen */}
       <Sequence from={6633} durationInFrames={150} name="FedFullShot b060">
@@ -1061,10 +1045,6 @@ export const MainVn2: React.FC = () => {
       {/* 557.2s · Él iba adentro del camión, con la ventana cerrada. */}
       <Sequence from={16716} durationInFrames={90} name="FedFullShot b162">
         <FedFullShot {...P[162]} totalF={90} accent={ACCENT} />
-      </Sequence>
-      {/* 560s · El vidrio detiene los rayos que queman, los UVB. No detiene lo */}
-      <Sequence from={16800} durationInFrames={228} name="FedMolecule b163">
-        <FedMolecule {...P[163]} totalF={228} accent={ACCENT} />
       </Sequence>
       {/* 567.5s · Los UVA atraviesan el vidrio y atraviesan las nubes. */}
       <Sequence from={17025} durationInFrames={120} name="FedFullShot b164">
@@ -1433,10 +1413,6 @@ export const MainVn2: React.FC = () => {
       {/* 1027.2s · Es imposible que le aporte agua a la piel porque no tiene agua */}
       <Sequence from={30816} durationInFrames={132} name="FedFullShot b304">
         <FedFullShot {...P[304]} totalF={132} accent={ACCENT} />
-      </Sequence>
-      {/* 1037.9s · O sea, el aceite es la tapa del frasco, no el contenido. */}
-      <Sequence from={31137} durationInFrames={153} name="FedMolecule b307">
-        <FedMolecule {...P[307]} totalF={153} accent={ACCENT} />
       </Sequence>
       {/* 1042.7s · Si abajo hay agua, la tapa la retiene y usted gana. */}
       <Sequence from={31281} durationInFrames={78} name="FedFullShot b308">
