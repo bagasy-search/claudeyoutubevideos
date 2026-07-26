@@ -34,7 +34,9 @@ const CLAMP = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const ACCENT = '#E9B44C';
 // _opt.mp4 = la copia comprimida que viaja en el tarball del farm (el master pesa 887 MB)
 export const AVATAR_SRC = 'vucm3bvd869j_opt.mp4';
-export const TOTAL_FRAMES_VUCM = Math.round(TOTAL_VUCM3BVD869J * 30);
+// El mp4 del avatar dura 1655.658s; la última palabra cierra en TOTAL_VUCM3BVD869J.
+// Se rendea la duración COMPLETA del avatar para no cortarle la cola a la frase final.
+export const TOTAL_FRAMES_VUCM = Math.max(Math.round(TOTAL_VUCM3BVD869J * 30), Math.round(1655.65 * 30));
 
 /* ───────────────────────── avatar persistente (L0) ─────────────────────── */
 
