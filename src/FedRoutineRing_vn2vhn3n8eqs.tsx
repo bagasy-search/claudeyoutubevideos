@@ -43,9 +43,12 @@ import {
   FED_SCENE_F,
   FED_WHIP_F,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 export type FedRoutineRingProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string; // '#E9B44C'
   mood?: FedMood; // 'gold'
@@ -282,6 +285,7 @@ const RingNode: React.FC<{
 /* ------------------------------ el componente ------------------------------ */
 
 export const FedRoutineRing: React.FC<FedRoutineRingProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'gold',
@@ -379,7 +383,7 @@ export const FedRoutineRing: React.FC<FedRoutineRingProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         {/* ============ L0 · fondo por mood + wash + viñeta ============ */}
         <AbsoluteFill
           style={{

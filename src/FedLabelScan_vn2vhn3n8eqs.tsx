@@ -48,11 +48,14 @@ import {
   rgba,
   shade,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* =============================== CONTRATO ================================ */
 
 export type FedLabelScanProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string; // '#E9B44C'
   mood?: FedMood; // 'warmdark'
@@ -292,6 +295,7 @@ const VerdictMark: React.FC<{ok: boolean; draw: number; color: string}> = ({ok, 
 /* ================================ ESCENA ================================= */
 
 export const FedLabelScan: React.FC<FedLabelScanProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'warmdark',
@@ -431,7 +435,7 @@ export const FedLabelScan: React.FC<FedLabelScanProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         {/* L0 · fondo por mood + wash + viñeta ---------------------------- */}
         <AbsoluteFill style={{background: moodBg(mood, accent)}} />
         <AbsoluteFill

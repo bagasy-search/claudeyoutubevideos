@@ -48,6 +48,8 @@ import {
   moodBg,
   FED_SCENE_F,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 export type FedOilBarRow = {
@@ -58,6 +60,7 @@ export type FedOilBarRow = {
 };
 
 export type FedOilBarsProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string;
   mood?: FedMood;
@@ -556,6 +559,7 @@ const Counter: React.FC<{
 /* ============================ COMPONENTE PRINCIPAL ======================== */
 
 export const FedOilBars: React.FC<FedOilBarsProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'science',
@@ -638,7 +642,7 @@ export const FedOilBars: React.FC<FedOilBarsProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#04070d', overflow: 'hidden'}}>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         {/* ===================== L0 · fondo + wash + viñeta ===================== */}
         <AbsoluteFill style={{background: '#04070d', overflow: 'hidden'}}>
         <AbsoluteFill

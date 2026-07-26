@@ -60,6 +60,8 @@ import {
   rgba,
   shade,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ------------------------------------------------------------------ tipos */
@@ -72,6 +74,7 @@ export type FedTrialGroup = {
 };
 
 export type FedTrialProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string;
   mood?: FedMood;
@@ -240,6 +243,7 @@ const dotAt = (
 /* ================================ COMPONENTE ============================== */
 
 export const FedTrial: React.FC<FedTrialProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'science',
@@ -741,7 +745,7 @@ export const FedTrial: React.FC<FedTrialProps> = ({
 
   return (
     <>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
           {/* ---------- L0 · fondo + wash + viñeta ---------- */}
           <AbsoluteFill style={{background: moodBg(mood, accent)}} />

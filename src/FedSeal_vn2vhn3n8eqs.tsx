@@ -57,11 +57,14 @@ import {
   rgba,
   shade,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ============================== CONTRATO ================================= */
 
 export type FedSealProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string;
   mood?: FedMood;
@@ -967,6 +970,7 @@ const cxInsetLeft = (): number => (960 - PANEL_W) / 2;
 /* ============================== COMPONENTE =============================== */
 
 export const FedSeal: React.FC<FedSealProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'warmdark',
@@ -1038,7 +1042,7 @@ export const FedSeal: React.FC<FedSealProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#03020a', overflow: 'hidden'}}>
-      <TransitionShell accent={accent} totalF={totalF} whipF={FED_WHIP_F}>
+      <TransitionShell accent={accent} totalF={totalF} whipF={FED_WHIP_F} variant={variant}>
         {/* ================= L0 · fondo por mood + viñeta ================= */}
         <AbsoluteFill style={{background: moodBg(mood, accent)}} />
         <AbsoluteFill

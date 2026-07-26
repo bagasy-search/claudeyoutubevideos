@@ -52,11 +52,14 @@ import {
   rgba,
   shade,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ============================== CONTRATO ================================= */
 
 export type FedBrickWallProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string;
   mood?: FedMood;
@@ -714,6 +717,7 @@ const DEFAULT_LEGEND: {label: string; pct: string}[] = [
 ];
 
 export const FedBrickWall: React.FC<FedBrickWallProps> = ({
+  variant,
   totalF,
   accent = DEFAULT_ACCENT,
   mood = 'warmdark',
@@ -832,7 +836,7 @@ export const FedBrickWall: React.FC<FedBrickWallProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         {/* ---------- L0 · fondo por mood + wash + viñeta ------------------ */}
         <AbsoluteFill style={{background: moodBg(mood, accent)}} />
         <AbsoluteFill

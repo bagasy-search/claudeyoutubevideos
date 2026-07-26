@@ -55,11 +55,14 @@ import {
   FED_SCENE_F,
   FED_WHIP_F,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ------------------------------- contrato -------------------------------- */
 
 export type FedSplitFaceProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string; // '#E9B44C'
   mood?: FedMood; // 'warmdark'
@@ -389,6 +392,7 @@ const MicroTag: React.FC<{
 /* ================================ ESCENA ================================== */
 
 export const FedSplitFace: React.FC<FedSplitFaceProps> = ({
+  variant,
   totalF = FED_SCENE_F * 2,
   accent = DEFAULT_ACCENT,
   mood = 'warmdark',
@@ -466,7 +470,7 @@ export const FedSplitFace: React.FC<FedSplitFaceProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         {/* ============ L0 · fondo por mood + wash + viñeta doble ============ */}
         <AbsoluteFill
           style={{

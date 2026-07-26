@@ -60,6 +60,8 @@ import {
   TransitionShell,
   makeMotes,
   rgba,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ------------------------------------------------------------------ tipos */
@@ -75,6 +77,7 @@ export type FedCohortGroup = {
 };
 
 export type FedCohortProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string;
   n?: number;
@@ -345,6 +348,7 @@ const Flask: React.FC<{accentHex: string; liquid: string}> = ({accentHex, liquid
 /* ================================ COMPONENTE ============================== */
 
 export const FedCohort: React.FC<FedCohortProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   n = 19,
@@ -905,7 +909,7 @@ export const FedCohort: React.FC<FedCohortProps> = ({
   /* ============================== RENDER ================================= */
 
   return (
-    <TransitionShell accent={accent} totalF={totalF}>
+    <TransitionShell accent={accent} totalF={totalF} variant={variant}>
       <AbsoluteFill style={{background: PAPER, overflow: 'hidden'}}>
         {/* =============== L0 · PAPEL: base + luz + profundidad =============== */}
         <AbsoluteFill

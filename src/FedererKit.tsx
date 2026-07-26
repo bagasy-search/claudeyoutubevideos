@@ -224,14 +224,33 @@ export const GrainOverlay: React.FC = () => (
  * Encadenado: Sequence(from = i * (SCENE_F - WHIP_F), durationInFrames = SCENE_F).
  * ======================================================================= */
 
+/* ------------------------------------------------------------------------ *
+ * ADN DE TRANSICIÓN DEL CANAL — NO SE TOCA.
+ * Estas cinco constantes son la marca. Toda variante las usa igual; lo único
+ * que cambia entre variantes es el GESTO (por dónde entra), nunca el ADN.
+ * ------------------------------------------------------------------------ */
+const DNA_BLUR = 18; // px que resuelven
+const DNA_WHIP = 0.05; // desplazamiento = 5% del ancho
+const DNA_SCALE_IN = 0.1; // entra en 1.10 → 1
+const DNA_SCALE_OUT = 0.06; // sale a 0.94
+const DNA_SWEEP = 42; // % que ocupa el barrido de luz
+
+/** Las 4 variantes comparten el ADN y cambian el gesto:
+ *  whip · lateral, el corte neutro del kit
+ *  lift · el mismo gesto girado 90°: abre algo nuevo desde abajo
+ *  iris · resuelve desde el centro hacia afuera: aterriza un dato
+ *  fold · gira sobre su eje como una página: cambia de capítulo */
+export type FedTransitionVariant = 'whip' | 'lift' | 'iris' | 'fold';
+
 export const TransitionShell: React.FC<{
   accent: string;
   totalF?: number;
   whipF?: number;
+  variant?: FedTransitionVariant;
   children: React.ReactNode;
-}> = ({accent, totalF = FED_SCENE_F, whipF = FED_WHIP_F, children}) => {
+}> = ({accent, totalF = FED_SCENE_F, whipF = FED_WHIP_F, variant = 'whip', children}) => {
   const frame = useCurrentFrame();
-  const {width} = useVideoConfig();
+  const {width, height} = useVideoConfig();
 
   const en = interpolate(frame, [0, whipF], [0, 1], {
     ...CLAMP,
@@ -243,60 +262,112 @@ export const TransitionShell: React.FC<{
     easing: Easing.in(Easing.cubic),
   });
 
+  // — ADN, idéntico en las 4 variantes —
   const opacity = Math.min(en, 1 - ex);
-  const blur = (1 - en) * 18 + ex * 18;
-  const x = (1 - en) * width * 0.05 - ex * width * 0.05;
-  const scale = 1 + (1 - en) * 0.08 - ex * 0.05;
-
+  const blur = (1 - en) * DNA_BLUR + ex * DNA_BLUR;
+  const scale = 1 + (1 - en) * DNA_SCALE_IN - ex * DNA_SCALE_OUT;
+  const push = (1 - en) - ex; // +1 entrando, -1 saliendo, 0 en reposo
   const flashIn = Math.sin(Math.min(1, en) * Math.PI);
   const flashOut = Math.sin(ex * Math.PI);
-  const flashX = interpolate(en, [0, 1], [125, -65], CLAMP);
-  const flashX2 = interpolate(ex, [0, 1], [125, -65], CLAMP);
+  const sweep = Math.max(flashIn * 0.85, flashOut * 0.65);
+  const sweepT = flashOut > flashIn ? ex : en; // 0→1 en el tramo activo
+
+  // — GESTO, lo único que cambia —
+  let transform: string;
+  let mask: string | undefined;
+  if (variant === 'lift') {
+    transform = `translateY(${(push * height * DNA_WHIP).toFixed(1)}px) scale(${scale.toFixed(4)})`;
+  } else if (variant === 'fold') {
+    // gira sobre el eje vertical y arrastra un poco el whip lateral
+    transform = `perspective(1800px) rotateY(${(push * 9).toFixed(2)}deg) translateX(${(
+      push *
+      width *
+      DNA_WHIP *
+      0.45
+    ).toFixed(1)}px) scale(${scale.toFixed(4)})`;
+  } else if (variant === 'iris') {
+    // sin desplazamiento: resuelve desde el centro con una máscara blanda
+    const r = interpolate(Math.min(en, 1 - ex), [0, 1], [18, 165], CLAMP);
+    mask = `radial-gradient(circle at 50% 50%, #000 ${(r * 0.62).toFixed(1)}%, transparent ${r.toFixed(1)}%)`;
+    transform = `scale(${scale.toFixed(4)})`;
+  } else {
+    transform = `translateX(${(push * width * DNA_WHIP).toFixed(1)}px) scale(${scale.toFixed(4)})`;
+  }
+
+  // — BARRIDO DE LUZ: mismo 42%, orientado según el gesto —
+  const sweepPos = interpolate(sweepT, [0, 1], [125, -65], CLAMP);
+  const sweepNode =
+    variant === 'iris' ? (
+      // el barrido se vuelve un anillo que sale del centro
+      <div
+        style={{
+          position: 'absolute',
+          inset: '-20%',
+          background: `radial-gradient(circle at 50% 50%, transparent ${(
+            interpolate(sweepT, [0, 1], [0, 58], CLAMP)
+          ).toFixed(1)}%, ${rgba(accent, 0.3)} ${(
+            interpolate(sweepT, [0, 1], [6, 71], CLAMP)
+          ).toFixed(1)}%, transparent ${(
+            interpolate(sweepT, [0, 1], [14, 84], CLAMP)
+          ).toFixed(1)}%)`,
+          mixBlendMode: 'screen',
+          opacity: sweep,
+          pointerEvents: 'none',
+        }}
+      />
+    ) : variant === 'lift' ? (
+      // la misma banda del 42%, girada: cruza de abajo hacia arriba
+      <div
+        style={{
+          position: 'absolute',
+          left: '-12%',
+          right: '-12%',
+          height: `${DNA_SWEEP}%`,
+          top: 0,
+          transform: `translateY(${sweepPos}%) skewY(-9deg)`,
+          background: `linear-gradient(190deg, transparent 22%, ${rgba(
+            accent,
+            0.3
+          )} 50%, transparent 78%)`,
+          mixBlendMode: 'screen',
+          opacity: sweep,
+          pointerEvents: 'none',
+        }}
+      />
+    ) : (
+      <div
+        style={{
+          position: 'absolute',
+          top: '-12%',
+          bottom: '-12%',
+          width: `${DNA_SWEEP}%`,
+          left: 0,
+          transform: `translateX(${sweepPos}%) skewX(${variant === 'fold' ? -26 : -16}deg)`,
+          background: `linear-gradient(100deg, transparent 22%, ${rgba(
+            accent,
+            0.3
+          )} 50%, transparent 78%)`,
+          mixBlendMode: 'screen',
+          opacity: sweep,
+          pointerEvents: 'none',
+        }}
+      />
+    );
 
   return (
     <AbsoluteFill
       style={{
         opacity,
         filter: `blur(${blur.toFixed(2)}px)`,
-        transform: `translateX(${x.toFixed(1)}px) scale(${scale.toFixed(4)})`,
+        transform,
+        transformOrigin: variant === 'fold' ? '18% 50%' : '50% 50%',
+        maskImage: mask,
+        WebkitMaskImage: mask,
         willChange: 'transform, filter, opacity',
       }}
     >
       {children}
-      <div
-        style={{
-          position: 'absolute',
-          top: '-12%',
-          bottom: '-12%',
-          width: '42%',
-          left: 0,
-          transform: `translateX(${flashX}%) skewX(-16deg)`,
-          background: `linear-gradient(100deg, transparent 22%, ${rgba(
-            accent,
-            0.3
-          )} 50%, transparent 78%)`,
-          mixBlendMode: 'screen',
-          opacity: flashIn * 0.85,
-          pointerEvents: 'none',
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          top: '-12%',
-          bottom: '-12%',
-          width: '42%',
-          left: 0,
-          transform: `translateX(${flashX2}%) skewX(-16deg)`,
-          background: `linear-gradient(100deg, transparent 22%, ${rgba(
-            accent,
-            0.26
-          )} 50%, transparent 78%)`,
-          mixBlendMode: 'screen',
-          opacity: flashOut * 0.65,
-          pointerEvents: 'none',
-        }}
-      />
+      {sweepNode}
     </AbsoluteFill>
   );
 };
@@ -983,6 +1054,7 @@ const LiveDrift: React.FC<{
  * ########################################################################## */
 
 export type FedChapterProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   index?: string;
@@ -993,6 +1065,7 @@ export type FedChapterProps = {
 };
 
 export const FedChapter: React.FC<FedChapterProps> = ({
+  variant,
   totalF,
   kicker = 'Capítulo',
   index = '01',
@@ -1031,7 +1104,7 @@ export const FedChapter: React.FC<FedChapterProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-chapter" kickF={Math.round(0.7 * fps)} sprigs panDir={1}>
           {(cam) => (
             <>
@@ -1163,6 +1236,7 @@ export const FedChapter: React.FC<FedChapterProps> = ({
  * ########################################################################## */
 
 export type FedHeroProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   title?: string;
@@ -1176,6 +1250,7 @@ export type FedHeroProps = {
 };
 
 export const FedHero: React.FC<FedHeroProps> = ({
+  variant,
   totalF,
   kicker = 'Dermocosmética natural',
   title = 'El secreto ya crece en su jardín',
@@ -1193,7 +1268,7 @@ export const FedHero: React.FC<FedHeroProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-hero" sprigs panDir={isLeft ? 1 : -1}>
           {(cam) => (
             <>
@@ -1262,6 +1337,7 @@ export const FedHero: React.FC<FedHeroProps> = ({
  * ########################################################################## */
 
 export type FedStatProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   value?: number;
@@ -1276,6 +1352,7 @@ export type FedStatProps = {
 };
 
 export const FedStat: React.FC<FedStatProps> = ({
+  variant,
   totalF,
   kicker = 'Estudio clínico · 12 semanas',
   value = 87,
@@ -1312,7 +1389,7 @@ export const FedStat: React.FC<FedStatProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-stat" kickF={endF} panDir={-1}>
           {(cam) => (
             <>
@@ -1460,6 +1537,7 @@ export const FedStat: React.FC<FedStatProps> = ({
  * ########################################################################## */
 
 export type FedQuoteProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   quote?: string;
@@ -1471,6 +1549,7 @@ export type FedQuoteProps = {
 };
 
 export const FedQuote: React.FC<FedQuoteProps> = ({
+  variant,
   totalF,
   kicker = 'Nuestra filosofía',
   quote = 'La piel no necesita más química. Necesita menos.',
@@ -1498,7 +1577,7 @@ export const FedQuote: React.FC<FedQuoteProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-quote" panDir={1} pushTo={1.035}>
           {(cam) => (
             <>
@@ -1620,6 +1699,7 @@ export const FedQuote: React.FC<FedQuoteProps> = ({
 export type FedMoleculeNode = {label: string};
 
 export type FedMoleculeProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   title?: string;
@@ -1633,6 +1713,7 @@ export type FedMoleculeProps = {
 };
 
 export const FedMolecule: React.FC<FedMoleculeProps> = ({
+  variant,
   totalF,
   kicker = 'Activo estrella',
   title = 'Ácido carnósico',
@@ -1666,7 +1747,7 @@ export const FedMolecule: React.FC<FedMoleculeProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-molecule" panDir={-1}>
           {(cam) => (
             <>
@@ -1890,6 +1971,7 @@ export const FedMolecule: React.FC<FedMoleculeProps> = ({
  * ########################################################################## */
 
 export type FedStepProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   step?: number;
   total?: number;
@@ -1902,6 +1984,7 @@ export type FedStepProps = {
 };
 
 export const FedStep: React.FC<FedStepProps> = ({
+  variant,
   totalF,
   step = 1,
   total = 3,
@@ -1932,7 +2015,7 @@ export const FedStep: React.FC<FedStepProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-step" panDir={1} sprigs>
           {(cam) => (
             <>
@@ -2066,6 +2149,7 @@ export const FedStep: React.FC<FedStepProps> = ({
  * ########################################################################## */
 
 export type FedBeforeAfterProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   title?: string;
@@ -2079,6 +2163,7 @@ export type FedBeforeAfterProps = {
 };
 
 export const FedBeforeAfter: React.FC<FedBeforeAfterProps> = ({
+  variant,
   totalF,
   kicker = 'Semana 12 · Ritual de romero',
   title = 'Los resultados hablan',
@@ -2138,7 +2223,7 @@ export const FedBeforeAfter: React.FC<FedBeforeAfterProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-ba" panDir={-1} kickF={pEnd} kickAmt={0.012}>
           {(cam) => (
             <>
@@ -2311,6 +2396,7 @@ export const FedBeforeAfter: React.FC<FedBeforeAfterProps> = ({
  * ########################################################################## */
 
 export type FedLowerThirdProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   name?: string;
   role?: string;
@@ -2320,6 +2406,7 @@ export type FedLowerThirdProps = {
 };
 
 export const FedLowerThird: React.FC<FedLowerThirdProps> = ({
+  variant,
   totalF,
   name = 'Dr. Federer',
   role = 'Dermocosmética natural',
@@ -2360,7 +2447,7 @@ export const FedLowerThird: React.FC<FedLowerThirdProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         {/* avatarSrc={null} = MODO OVERLAY: el avatar ya está montado abajo por el build
             (un solo OffthreadVideo persistente). Acá NO se pinta fondo ni se monta un
             segundo video, o taparíamos la cara y el audio glitchearía en cada corte. */}
@@ -2523,6 +2610,7 @@ export const FedLowerThird: React.FC<FedLowerThirdProps> = ({
  * ########################################################################## */
 
 export type FedChecklistProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   title?: string;
@@ -2533,6 +2621,7 @@ export type FedChecklistProps = {
 };
 
 export const FedChecklist: React.FC<FedChecklistProps> = ({
+  variant,
   totalF,
   kicker = 'Ritual nocturno',
   title = 'Antes de dormir',
@@ -2555,7 +2644,7 @@ export const FedChecklist: React.FC<FedChecklistProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-check" panDir={1} sprigs>
           {(cam) => (
             <>
@@ -2684,6 +2773,7 @@ export const FedChecklist: React.FC<FedChecklistProps> = ({
  * ########################################################################## */
 
 export type FedCtaProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   kicker?: string;
   title?: string;
@@ -2696,6 +2786,7 @@ export type FedCtaProps = {
 };
 
 export const FedCta: React.FC<FedCtaProps> = ({
+  variant,
   totalF,
   kicker = 'Empiece hoy',
   title = 'Su piel se lo va a agradecer',
@@ -2728,7 +2819,7 @@ export const FedCta: React.FC<FedCtaProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <Stage mood={mood} accent={accent} seed="fed-cta" kickF={btnStart + 8} sprigs panDir={-1}>
           {(cam) => (
             <>
@@ -2854,6 +2945,7 @@ export const FedCta: React.FC<FedCtaProps> = ({
  * ########################################################################## */
 
 export type FedFullShotProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   src?: string;
   video?: boolean;
@@ -2866,6 +2958,7 @@ export type FedFullShotProps = {
 };
 
 export const FedFullShot: React.FC<FedFullShotProps> = ({
+  variant,
   totalF,
   src = FED_ASSETS.aceite,
   video = false,
@@ -2901,7 +2994,7 @@ export const FedFullShot: React.FC<FedFullShotProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
-      <TransitionShell accent={accent} totalF={totalF}>
+      <TransitionShell accent={accent} totalF={totalF} variant={variant}>
         <AbsoluteFill
           style={{
             transform: `translate(${(tx + hx).toFixed(1)}px, ${(ty + hy).toFixed(

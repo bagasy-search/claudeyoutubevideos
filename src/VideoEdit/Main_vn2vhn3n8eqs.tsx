@@ -545,1081 +545,1081 @@ export const MainVn2: React.FC = () => {
       <AvatarLayer />
 
       <Sequence from={252} durationInFrames={90} name="LT b003">
-        <FedLowerThird {...P[3]} totalF={90} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[3]} totalF={90} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={1668} durationInFrames={63} name="LT b016">
-        <FedLowerThird {...P[16]} totalF={63} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[16]} totalF={63} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={2139} durationInFrames={90} name="LT b020">
-        <FedLowerThird {...P[20]} totalF={90} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[20]} totalF={90} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={2685} durationInFrames={99} name="LT b025">
-        <FedLowerThird {...P[25]} totalF={99} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[25]} totalF={99} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={3291} durationInFrames={72} name="LT b030">
-        <FedLowerThird {...P[30]} totalF={72} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[30]} totalF={72} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={3729} durationInFrames={63} name="LT b034">
-        <FedLowerThird {...P[34]} totalF={63} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[34]} totalF={63} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={4308} durationInFrames={129} name="LT b039">
-        <FedLowerThird {...P[39]} totalF={129} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[39]} totalF={129} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={6210} durationInFrames={135} name="LT b056">
-        <FedLowerThird {...P[56]} totalF={135} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[56]} totalF={135} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={6417} durationInFrames={99} name="LT b058">
-        <FedLowerThird {...P[58]} totalF={99} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[58]} totalF={99} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={7338} durationInFrames={54} name="LT b067">
-        <FedLowerThird {...P[67]} totalF={54} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[67]} totalF={54} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={8709} durationInFrames={102} name="LT b076">
-        <FedLowerThird {...P[76]} totalF={102} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[76]} totalF={102} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={9402} durationInFrames={87} name="LT b083">
-        <FedLowerThird {...P[83]} totalF={87} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[83]} totalF={87} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={9972} durationInFrames={75} name="LT b089">
-        <FedLowerThird {...P[89]} totalF={75} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[89]} totalF={75} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={11325} durationInFrames={84} name="LT b104">
-        <FedLowerThird {...P[104]} totalF={84} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[104]} totalF={84} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={12321} durationInFrames={51} name="LT b115">
-        <FedLowerThird {...P[115]} totalF={51} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[115]} totalF={51} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={13578} durationInFrames={60} name="LT b127">
-        <FedLowerThird {...P[127]} totalF={60} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[127]} totalF={60} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={13839} durationInFrames={57} name="LT b130">
-        <FedLowerThird {...P[130]} totalF={57} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[130]} totalF={57} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={14379} durationInFrames={84} name="LT b137">
-        <FedLowerThird {...P[137]} totalF={84} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[137]} totalF={84} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={15495} durationInFrames={57} name="LT b149">
-        <FedLowerThird {...P[149]} totalF={57} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[149]} totalF={57} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={15642} durationInFrames={87} name="LT b151">
-        <FedLowerThird {...P[151]} totalF={87} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[151]} totalF={87} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={16641} durationInFrames={69} name="LT b161">
-        <FedLowerThird {...P[161]} totalF={69} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[161]} totalF={69} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={17220} durationInFrames={69} name="LT b166">
-        <FedLowerThird {...P[166]} totalF={69} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[166]} totalF={69} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={18537} durationInFrames={105} name="LT b177">
-        <FedLowerThird {...P[177]} totalF={105} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[177]} totalF={105} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={19017} durationInFrames={120} name="LT b182">
-        <FedLowerThird {...P[182]} totalF={120} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[182]} totalF={120} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={19413} durationInFrames={81} name="LT b186">
-        <FedLowerThird {...P[186]} totalF={81} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[186]} totalF={81} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={20973} durationInFrames={111} name="LT b200">
-        <FedLowerThird {...P[200]} totalF={111} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[200]} totalF={111} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={21474} durationInFrames={105} name="LT b204">
-        <FedLowerThird {...P[204]} totalF={105} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[204]} totalF={105} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={22131} durationInFrames={111} name="LT b212">
-        <FedLowerThird {...P[212]} totalF={111} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[212]} totalF={111} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={23076} durationInFrames={108} name="LT b222">
-        <FedLowerThird {...P[222]} totalF={108} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[222]} totalF={108} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={24234} durationInFrames={75} name="LT b235">
-        <FedLowerThird {...P[235]} totalF={75} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[235]} totalF={75} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={32478} durationInFrames={72} name="LT b321">
-        <FedLowerThird {...P[321]} totalF={72} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[321]} totalF={72} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
       <Sequence from={37659} durationInFrames={93} name="LT b375">
-        <FedLowerThird {...P[375]} totalF={93} accent={ACCENT} avatarSrc={null} />
+        <FedLowerThird {...P[375]} totalF={93} accent={ACCENT} variant="whip" avatarSrc={null} />
       </Sequence>
 
       {/* 2.6s · y uno de ellos le repara la barrera de la piel */}
       <Sequence from={78} durationInFrames={96} name="FedFullShot b001">
-        <FedFullShot {...P[1]} totalF={96} accent={ACCENT} />
+        <FedFullShot {...P[1]} totalF={96} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 5.4s · mejor que la crema más cara de la farmacia. */}
       <Sequence from={162} durationInFrames={99} name="FedHero b002">
-        <FedHero {...P[2]} totalF={99} accent={ACCENT} />
+        <FedHero {...P[2]} totalF={99} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 11.4s · porque le dijeron que era el más sano del mundo, */}
       <Sequence from={342} durationInFrames={102} name="FedFullShot b004">
-        <FedFullShot {...P[4]} totalF={102} accent={ACCENT} />
+        <FedFullShot {...P[4]} totalF={102} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 14.4s · que se la está rompiendo mientras usted cree que se la está cu */}
       <Sequence from={432} durationInFrames={105} name="FedHero b005">
-        <FedHero {...P[5]} totalF={105} accent={ACCENT} />
+        <FedHero {...P[5]} totalF={105} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 20.9s · Año 2013, revista Pediatric Dermatology. */}
       <Sequence from={627} durationInFrames={108} name="FedChapter b007">
-        <FedPaper journal={"Pediatric Dermatology"} year={"2013"} meta={"Vol. 30 · Nº 1 · pp. 42–50"} paperTitle={"Effect of olive and sunflower seed oil on the adult skin barrier"} authors={"Danby SG, AlEnezi T, Sultan A, Chittock J, Brown K, Cork MJ · University of Sheffield"} lines={["Diecinueve adultos, seis gotas de aceite por antebrazo.","Dos veces por día durante cuatro semanas.","El aceite de oliva aumentó significativamente la pérdida de agua.","El aceite de girasol conservó la barrera."]} highlight={2} note={"también en piel sana"} side={"left"} totalF={108} accent={ACCENT} />
+        <FedPaper journal={"Pediatric Dermatology"} year={"2013"} meta={"Vol. 30 · Nº 1 · pp. 42–50"} paperTitle={"Effect of olive and sunflower seed oil on the adult skin barrier"} authors={"Danby SG, AlEnezi T, Sultan A, Chittock J, Brown K, Cork MJ · University of Sheffield"} lines={["Diecinueve adultos, seis gotas de aceite por antebrazo.","Dos veces por día durante cuatro semanas.","El aceite de oliva aumentó significativamente la pérdida de agua.","El aceite de girasol conservó la barrera."]} highlight={2} note={"también en piel sana"} side={"left"} totalF={108} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 24.1s · El equipo del Dr. Simon Danby, Universidad de Sheffield, 19 ad */}
       <Sequence from={723} durationInFrames={162} name="FedStat b008">
-        <FedCohort n={19} kicker={"Universidad de Sheffield · 2013"} title={"Diecinueve adultos, un brazo cada uno"} sub={"seis gotas, dos veces por día, cuatro semanas"} unit={"adultos"} groups={[{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":10,"result":"perdió más agua"},{"label":"Aceite de girasol","image":staticFile("img/vn2_prod_girasol.png"),"tone":"good","count":9,"result":"conservó la barrera"}]} totalF={162} accent={ACCENT} />
+        <FedCohort n={19} kicker={"Universidad de Sheffield · 2013"} title={"Diecinueve adultos, un brazo cada uno"} sub={"seis gotas, dos veces por día, cuatro semanas"} unit={"adultos"} groups={[{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":10,"result":"perdió más agua"},{"label":"Aceite de girasol","image":staticFile("img/vn2_prod_girasol.png"),"tone":"good","count":9,"result":"conservó la barrera"}]} totalF={162} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 29.2s · 6 gotas de aceite en un antebrazo, 2 veces por día, 4 semanas. */}
       <Sequence from={876} durationInFrames={141} name="FedChecklist b009">
-        <FedChecklist {...P[9]} totalF={141} accent={ACCENT} />
+        <FedChecklist {...P[9]} totalF={141} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 33.8s · En un brazo, aceite de oliva extravirgen. */}
       <Sequence from={1014} durationInFrames={87} name="FedFullShot b010">
-        <FedFullShot {...P[10]} totalF={87} accent={ACCENT} />
+        <FedFullShot {...P[10]} totalF={87} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 36.5s · En el otro, aceite de girasol común. */}
       <Sequence from={1095} durationInFrames={78} name="FedFullShot b011">
-        <FedFullShot {...P[11]} totalF={78} accent={ACCENT} />
+        <FedFullShot {...P[11]} totalF={78} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 39s · El brazo del aceite de oliva terminó perdiendo más agua que an */}
       <Sequence from={1170} durationInFrames={186} name="FedHero b012">
-        <FedTrial journal={"Pediatric Dermatology"} year={"2013"} n={19} design={"pérdida de agua medida a las 4 semanas"} title={"El brazo del oliva perdió MÁS agua"} sub={"que antes de empezar"} groupA={{"label":"Oliva","value":24,"suffix":"%","tone":"bad"}} groupB={{"label":"Girasol","value":7,"suffix":"%","tone":"good"}} unit={"pérdida de agua"} verdict={"El oliva desarma la barrera"} totalF={186} accent={ACCENT} />
+        <FedTrial journal={"Pediatric Dermatology"} year={"2013"} n={19} design={"pérdida de agua medida a las 4 semanas"} title={"El brazo del oliva perdió MÁS agua"} sub={"que antes de empezar"} groupA={{"label":"Oliva","value":24,"suffix":"%","tone":"bad"}} groupB={{"label":"Girasol","value":7,"suffix":"%","tone":"good"}} unit={"pérdida de agua"} verdict={"El oliva desarma la barrera"} totalF={186} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 45s · Y no solo en los de piel delicada, también en los que tenían l */}
       <Sequence from={1350} durationInFrames={138} name="FedChecklist b013">
-        <FedChecklist {...P[13]} totalF={138} accent={ACCENT} />
+        <FedChecklist {...P[13]} totalF={138} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 51.1s · Ese conservó la barrera, no enrojeció, y encima mejoró la hidr */}
       <Sequence from={1533} durationInFrames={141} name="FedChecklist b015">
-        <FedChecklist {...P[15]} totalF={141} accent={ACCENT} />
+        <FedChecklist {...P[15]} totalF={141} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 57.9s · El aceite de oliva. El mismo que le hace bien al corazón cuand */}
       <Sequence from={1737} durationInFrames={132} name="FedFullShot b017">
-        <FedFullShot {...P[17]} totalF={132} accent={ACCENT} />
+        <FedFullShot {...P[17]} totalF={132} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 62.1s · Cuando se lo unta en la piel seca, le desarma la barrera. */}
       <Sequence from={1863} durationInFrames={105} name="FedHero b018">
-        <FedHero {...P[18]} totalF={105} accent={ACCENT} />
+        <FedHero {...P[18]} totalF={105} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 65.3s · Y el girasol, el más barato de la góndola, el que ninguna marc */}
       <Sequence from={1959} durationInFrames={189} name="FedHero b019">
-        <FedHero {...P[19]} totalF={189} accent={ACCENT} />
+        <FedHero {...P[19]} totalF={189} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 74.4s · ¿Cuál sirve para qué? ¿Cuántas gotas y en qué orden? */}
       <Sequence from={2232} durationInFrames={105} name="FedStat b021">
-        <FedStat {...P[21]} totalF={105} accent={ACCENT} />
+        <FedStat {...P[21]} totalF={105} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 77.5s · Y quédese hasta el final, porque hay un error que arruina el 9 */}
       <Sequence from={2325} durationInFrames={156} name="FedStat b022">
-        <FedStat {...P[22]} totalF={156} accent={ACCENT} />
+        <FedStat {...P[22]} totalF={156} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 84.3s · Es otra cosa, mucho más simple, que la mayoría hace todas las  */}
       <Sequence from={2529} durationInFrames={159} name="FedFullShot b024">
-        <FedFullShot {...P[24]} totalF={159} accent={ACCENT} />
+        <FedFullShot {...P[24]} totalF={159} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 93s · Incluso gente que vende cremas. En su cara están pasando dos c */}
       <Sequence from={2790} durationInFrames={168} name="FedChapter b026">
-        <FedChapter {...P[26]} totalF={168} accent={ACCENT} />
+        <FedChapter {...P[26]} totalF={168} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 102.6s · Y es la que se ve opaca, áspera, apagada. Con esas líneas fina */}
       <Sequence from={3078} durationInFrames={183} name="FedChecklist b028">
-        <FedChecklist {...P[28]} totalF={183} accent={ACCENT} />
+        <FedChecklist {...P[28]} totalF={183} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 112.1s · Pasa abajo, en tejido vivo, y se pierde alrededor de un 1% por */}
       <Sequence from={3363} durationInFrames={189} name="FedStat b031">
-        <FedStat {...P[31]} totalF={189} accent={ACCENT} />
+        <FedStat {...P[31]} totalF={189} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 121.1s · Y eso ningún aceite del mundo lo toca, ninguno. */}
       <Sequence from={3633} durationInFrames={105} name="FedFullShot b033">
-        <FedFullShot {...P[33]} totalF={105} accent={ACCENT} />
+        <FedFullShot {...P[33]} totalF={105} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 126.5s · Así que cuando le digo que un aceite le puede cambiar la cara  */}
       <Sequence from={3795} durationInFrames={180} name="FedStat b035">
-        <FedStat {...P[35]} totalF={180} accent={ACCENT} />
+        <FedStat {...P[35]} totalF={180} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 136.4s · es una capa de arriba deshidratada, que refleja mal la luz y l */}
       <Sequence from={4092} durationInFrames={141} name="FedHero b037">
-        <FedHero {...P[37]} totalF={141} accent={ACCENT} />
+        <FedHero {...P[37]} totalF={141} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 140.8s · Eso sí se arregla, con lo que ya tiene en la alacena. */}
       <Sequence from={4224} durationInFrames={93} name="FedFullShot b038">
-        <FedFullShot {...P[38]} totalF={93} accent={ACCENT} />
+        <FedFullShot {...P[38]} totalF={93} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 157.8s · un cuarto colesterol, el resto ácidos grasos. */}
       <Sequence from={4734} durationInFrames={120} name="FedMolecule b042">
-        <FedBrickWall state={"build"} title={"La pared de su piel"} sub={"ladrillos de células muertas, cemento de grasa"} legend={[{"label":"Ceramidas","pct":"50%"},{"label":"Colesterol","pct":"25%"},{"label":"Ácidos grasos","pct":"25%"}]} brickLabel={"Células muertas"} cementLabel={"Cemento de grasa"} totalF={120} accent={ACCENT} />
+        <FedBrickWall state={"build"} title={"La pared de su piel"} sub={"ladrillos de células muertas, cemento de grasa"} legend={[{"label":"Ceramidas","pct":"50%"},{"label":"Colesterol","pct":"25%"},{"label":"Ácidos grasos","pct":"25%"}]} brickLabel={"Células muertas"} cementLabel={"Cemento de grasa"} totalF={120} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 161.4s · Cuando ese cemento se desarma, usted tiene picazón, tirantez */}
       <Sequence from={4842} durationInFrames={120} name="FedFullShot b043">
-        <FedBrickWall state={"leaking"} title={"Cuando el cemento se desarma"} sub={"picazón, tirantez, y la crema que se va en dos horas"} legend={[{"label":"Juntas vacías","pct":"—"}]} brickLabel={"Células muertas"} cementLabel={"Cemento faltante"} totalF={120} accent={ACCENT} />
+        <FedBrickWall state={"leaking"} title={"Cuando el cemento se desarma"} sub={"picazón, tirantez, y la crema que se va en dos horas"} legend={[{"label":"Juntas vacías","pct":"—"}]} brickLabel={"Células muertas"} cementLabel={"Cemento faltante"} totalF={120} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 165s · y esa sensación de que la crema se le fue en dos horas. */}
       <Sequence from={4950} durationInFrames={120} name="FedChecklist b044">
-        <FedChecklist {...P[44]} totalF={120} accent={ACCENT} />
+        <FedChecklist {...P[44]} totalF={120} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 170.9s · Lo que decide si un aceite repara ese cemento o lo rompe, */}
       <Sequence from={5127} durationInFrames={123} name="FedFullShot b046">
-        <FedFullShot {...P[46]} totalF={123} accent={ACCENT} />
+        <FedFullShot {...P[46]} totalF={123} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 174.6s · no es el precio, no es la marca, no es el aroma ni si dice org */}
       <Sequence from={5238} durationInFrames={135} name="FedChecklist b047">
-        <FedChecklist {...P[47]} totalF={135} accent={ACCENT} />
+        <FedChecklist {...P[47]} totalF={135} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 178.9s · Es la proporción entre dos grasas, el ácido linoleico y el áci */}
       <Sequence from={5367} durationInFrames={150} name="FedMolecule b048">
-        <FedMolecule {...P[48]} totalF={150} accent={ACCENT} />
+        <FedMolecule {...P[48]} totalF={150} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 185.2s · Su cuerpo no lo fabrica, tiene que entrar de afuera. */}
       <Sequence from={5556} durationInFrames={96} name="FedHero b050">
-        <FedHero {...P[50]} totalF={96} accent={ACCENT} />
+        <FedHero {...P[50]} totalF={96} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 194.5s · Sin linoleico no hay remache, sin remache la pared filtra. */}
       <Sequence from={5835} durationInFrames={126} name="FedHero b052">
-        <FedRivet mode={"rivet"} title={"Sin linoleico no hay remache"} sub={"y sin remache, la pared filtra"} chainLabel={"Ácido linoleico"} targetLabel={"Ceramida"} resultLabel={"Acilceramida · el remache"} totalF={126} accent={ACCENT} />
+        <FedRivet mode={"rivet"} title={"Sin linoleico no hay remache"} sub={"y sin remache, la pared filtra"} chainLabel={"Ácido linoleico"} targetLabel={"Ceramida"} resultLabel={"Acilceramida · el remache"} totalF={126} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 199.4s · Los niveles de esa ceramida bajan en invierno */}
       <Sequence from={5982} durationInFrames={135} name="FedFullShot b054">
-        <FedFullShot {...P[54]} totalF={135} accent={ACCENT} />
+        <FedFullShot {...P[54]} totalF={135} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 203.5s · y se normalizan aplicando grasas ricas en linoleico durante cu */}
       <Sequence from={6105} durationInFrames={117} name="FedStat b055">
-        <FedStat {...P[55]} totalF={117} accent={ACCENT} />
+        <FedStat {...P[55]} totalF={117} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 211.8s · El ácido oleico hace lo contrario. */}
       <Sequence from={6354} durationInFrames={72} name="FedChapter b057">
-        <FedChapter {...P[57]} totalF={72} accent={ACCENT} />
+        <FedChapter {...P[57]} totalF={72} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 221.1s · La industria lo usa a propósito cuando quiere que un medicamen */}
       <Sequence from={6633} durationInFrames={150} name="FedFullShot b060">
-        <FedRivet mode={"disorder"} title={"El oleico abre la puerta"} sub={"la industria lo usa para que un medicamento atraviese la piel"} chainLabel={"Ácido oleico"} targetLabel={"Láminas de grasa"} resultLabel={"La pared filtra"} totalF={150} accent={ACCENT} />
+        <FedRivet mode={"disorder"} title={"El oleico abre la puerta"} sub={"la industria lo usa para que un medicamento atraviese la piel"} chainLabel={"Ácido oleico"} targetLabel={"Láminas de grasa"} resultLabel={"La pared filtra"} totalF={150} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 229.1s · Ahora haga la cuenta. */}
       <Sequence from={6873} durationInFrames={54} name="FedFullShot b062">
-        <FedFullShot {...P[62]} totalF={54} accent={ACCENT} />
+        <FedFullShot {...P[62]} totalF={54} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 230.7s · El aceite de oliva tiene hasta un 83% de oleico y muy poco lin */}
       <Sequence from={6921} durationInFrames={183} name="FedStat b063">
-        <FedOilBars title={"La proporción decide"} sub={"no el precio, no la marca, no el aroma"} highlight={"Oliva"} cutoff={40} cutoffLabel={"mínimo útil"} foot={"El oliva tiene la peor relación de la lista."} totalF={183} accent={ACCENT} />
+        <FedOilBars title={"La proporción decide"} sub={"no el precio, no la marca, no el aroma"} highlight={"Oliva"} cutoff={40} cutoffLabel={"mínimo útil"} foot={"El oliva tiene la peor relación de la lista."} totalF={183} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 238.7s · No es que el oliva sea malo, */}
       <Sequence from={7161} durationInFrames={111} name="FedFullShot b065">
-        <FedFullShot {...P[65]} totalF={111} accent={ACCENT} />
+        <FedFullShot {...P[65]} totalF={111} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 242s · es que usted le está pidiendo que haga exactamente lo contrari */}
       <Sequence from={7260} durationInFrames={87} name="FedHero b066">
-        <FedHero {...P[66]} totalF={87} accent={ACCENT} />
+        <FedHero {...P[66]} totalF={87} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 246.4s · Si el aceite con mejor evidencia de reparación de barrera en h */}
       <Sequence from={7392} durationInFrames={138} name="FedFullShot b068">
-        <FedFullShot {...P[68]} totalF={138} accent={ACCENT} />
+        <FedFullShot {...P[68]} totalF={138} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 250.6s · ¿por qué usted nunca vio una publicidad de aceite de girasol p */}
       <Sequence from={7518} durationInFrames={180} name="FedQuote b069">
-        <FedQuote {...P[69]} totalF={180} accent={ACCENT} />
+        <FedQuote {...P[69]} totalF={180} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 257.7s · Nadie construye una marca sobre algo que usted ya tiene en la  */}
       <Sequence from={7731} durationInFrames={135} name="FedHero b071">
-        <FedHero {...P[71]} totalF={135} accent={ACCENT} />
+        <FedHero {...P[71]} totalF={135} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 261.9s · La industria necesita una historia exótica, una semilla de un  */}
       <Sequence from={7857} durationInFrames={177} name="FedHero b072">
-        <FedHero {...P[72]} totalF={177} accent={ACCENT} />
+        <FedHero {...P[72]} totalF={177} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 271s · Vamos a los siete */}
       <Sequence from={8130} durationInFrames={177} name="FedOilCarousel b073">
-        <FedOilCarousel {...P[73]} totalF={177} accent={ACCENT} />
+        <FedOilCarousel {...P[73]} totalF={177} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 276.5s · Número 1 */}
       <Sequence from={8295} durationInFrames={183} name="FedOilCarousel b074">
-        <FedOilCarousel {...P[74]} totalF={183} accent={ACCENT} />
+        <FedOilCarousel {...P[74]} totalF={183} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 285.8s · Es el aceite con más linoleico que usted puede comprar sin sal */}
       <Sequence from={8574} durationInFrames={141} name="FedHero b075">
-        <FedHero {...P[75]} totalF={141} accent={ACCENT} />
+        <FedHero {...P[75]} totalF={141} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 296.7s · En Bangladesh, en el hospital Dhaka Shishu... */}
       <Sequence from={8901} durationInFrames={102} name="FedFullShot b078">
-        <FedFullShot {...P[78]} totalF={102} accent={ACCENT} />
+        <FedFullShot {...P[78]} totalF={102} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 299.7s · ...se aplicó aceite de girasol en la piel de bebés prematuros. */}
       <Sequence from={8991} durationInFrames={96} name="FedFullShot b079">
-        <FedFullShot {...P[79]} totalF={96} accent={ACCENT} />
+        <FedFullShot {...P[79]} totalF={96} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 302.7s · La terapia de barrera con girasol se asoció a una reducción... */}
       <Sequence from={9081} durationInFrames={123} name="FedFullShot b080">
-        <FedFullShot {...P[80]} totalF={123} accent={ACCENT} />
+        <FedFullShot {...P[80]} totalF={123} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 306.4s · ...de alrededor del 26% en la mortalidad de esos prematuros. */}
       <Sequence from={9192} durationInFrames={126} name="FedStat b081">
-        <FedStat {...P[81]} totalF={126} accent={ACCENT} />
+        <FedStat {...P[81]} totalF={126} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 310.5s · Se publicó en The Lancet, un aceite de cocina untado en la pie */}
       <Sequence from={9315} durationInFrames={99} name="FedQuote b082">
-        <FedPaper journal={"The Lancet"} year={""} meta={"Terapia de barrera en prematuros · Dhaka Shishu Hospital"} paperTitle={"Skin barrier therapy with sunflower seed oil in preterm infants"} authors={"Ensayo hospitalario · Bangladesh"} lines={["Aceite de girasol aplicado sobre la piel de bebés prematuros.","Reducción de alrededor del 26% en la mortalidad.","La barrera de la piel no es cosmética: es defensa."]} highlight={1} note={"un aceite de cocina"} side={"right"} totalF={99} accent={ACCENT} />
+        <FedPaper journal={"The Lancet"} year={""} meta={"Terapia de barrera en prematuros · Dhaka Shishu Hospital"} paperTitle={"Skin barrier therapy with sunflower seed oil in preterm infants"} authors={"Ensayo hospitalario · Bangladesh"} lines={["Aceite de girasol aplicado sobre la piel de bebés prematuros.","Reducción de alrededor del 26% en la mortalidad.","La barrera de la piel no es cosmética: es defensa."]} highlight={1} note={"un aceite de cocina"} side={"right"} totalF={99} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 316.6s · Porque la barrera de la piel no es cosmética, es un órgano de  */}
       <Sequence from={9498} durationInFrames={126} name="FedMolecule b084">
-        <FedMolecule {...P[84]} totalF={126} accent={ACCENT} />
+        <FedMolecule {...P[84]} totalF={126} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 323.3s · Hay dos aceites de girasol distintos... */}
       <Sequence from={9699} durationInFrames={87} name="FedFullShot b086">
-        <FedFullShot {...P[86]} totalF={87} accent={ACCENT} />
+        <FedFullShot {...P[86]} totalF={87} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 328.6s · Está el común alto linoleico que es el que le sirve. */}
       <Sequence from={9858} durationInFrames={126} name="FedHero b088">
-        <FedLabelScan title={"El girasol común"} sub={"este es el que le sirve"} labelName={"ACEITE DE GIRASOL"} labelSub={"alto linoleico"} verdict={"ok"} verdictLabel={"PARA LA PIEL"} liquid={"#D8A33C"} bars={[{"label":"Linoleico","pct":60,"tone":"good"},{"label":"Oleico","pct":25,"tone":"bad"}]} totalF={126} accent={ACCENT} />
+        <FedLabelScan title={"El girasol común"} sub={"este es el que le sirve"} labelName={"ACEITE DE GIRASOL"} labelSub={"alto linoleico"} verdict={"ok"} verdictLabel={"PARA LA PIEL"} liquid={"#D8A33C"} bars={[{"label":"Linoleico","pct":60,"tone":"good"},{"label":"Oleico","pct":25,"tone":"bad"}]} totalF={126} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 334.9s · ...porque aguanta mejor la fritura. */}
       <Sequence from={10047} durationInFrames={81} name="FedHero b090">
-        <FedHero {...P[90]} totalF={81} accent={ACCENT} />
+        <FedHero {...P[90]} totalF={81} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 337.5s · Hasta un 90% de oleico... */}
       <Sequence from={10125} durationInFrames={84} name="FedStat b091">
-        <FedStat {...P[91]} totalF={84} accent={ACCENT} />
+        <FedStat {...P[91]} totalF={84} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 339.9s · ...y apenas 2 a 10% del linoleico. */}
       <Sequence from={10197} durationInFrames={81} name="FedStat b092">
-        <FedStat {...P[92]} totalF={81} accent={ACCENT} />
+        <FedStat {...P[92]} totalF={81} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 344.8s · Uno es el mejor reparador de barrera de su alacena. */}
       <Sequence from={10344} durationInFrames={99} name="FedBeforeAfter b094">
-        <FedBeforeAfter {...P[94]} totalF={99} accent={ACCENT} />
+        <FedBeforeAfter {...P[94]} totalF={99} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 347.9s · El otro se parece bioquímicamente al aceite de oliva. */}
       <Sequence from={10437} durationInFrames={108} name="FedFullShot b095">
-        <FedFullShot {...P[95]} totalF={108} accent={ACCENT} />
+        <FedFullShot {...P[95]} totalF={108} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 353.1s · Si dice alto oleico, esa es para la sartén. Si no lo dice, esa */}
       <Sequence from={10593} durationInFrames={171} name="FedChecklist b097">
-        <FedLabelScan title={"Si dice ALTO OLEICO"} sub={"esa es para la sartén"} labelName={"ACEITE DE GIRASOL"} labelSub={"alto oleico"} verdict={"bad"} verdictLabel={"PARA LA SARTÉN"} liquid={"#C9932F"} bars={[{"label":"Oleico","pct":90,"tone":"bad"},{"label":"Linoleico","pct":8,"tone":"good"}]} totalF={171} accent={ACCENT} />
+        <FedLabelScan title={"Si dice ALTO OLEICO"} sub={"esa es para la sartén"} labelName={"ACEITE DE GIRASOL"} labelSub={"alto oleico"} verdict={"bad"} verdictLabel={"PARA LA SARTÉN"} liquid={"#C9932F"} bars={[{"label":"Oleico","pct":90,"tone":"bad"},{"label":"Linoleico","pct":8,"tone":"good"}]} totalF={171} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 358.4s · Número 2 */}
       <Sequence from={10752} durationInFrames={168} name="FedOilCarousel b098">
-        <FedOilCarousel {...P[98]} totalF={168} accent={ACCENT} />
+        <FedOilCarousel {...P[98]} totalF={168} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 365s · Casi todos los estudios de aceites en piel se hicieron en bebé */}
       <Sequence from={10950} durationInFrames={87} name="FedFullShot b099">
-        <FedFullShot {...P[99]} totalF={87} accent={ACCENT} />
+        <FedFullShot {...P[99]} totalF={87} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 369.9s · Piel de 60 o 70 años casi no hay. */}
       <Sequence from={11097} durationInFrames={96} name="FedFullShot b101">
-        <FedFullShot {...P[101]} totalF={96} accent={ACCENT} />
+        <FedFullShot {...P[101]} totalF={96} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 374.6s · Ensayo aleatorizado con evaluador ciego. */}
       <Sequence from={11238} durationInFrames={96} name="FedStep b103">
-        <FedStep {...P[103]} totalF={96} accent={ACCENT} />
+        <FedStep {...P[103]} totalF={96} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 380.4s · 148 personas, edad promedio 68 años. */}
       <Sequence from={11412} durationInFrames={117} name="FedStat b105">
-        <FedTrial journal={"Acta Medica Philippina"} year={"2023"} n={148} design={"aleatorizado · evaluador ciego · piel madura"} title={"148 personas, 68 años de promedio"} sub={"coco virgen contra aceite mineral"} groupA={{"label":"Coco virgen","value":68,"suffix":"%","tone":"good"}} groupB={{"label":"Aceite mineral","value":38,"suffix":"%","tone":"bad"}} unit={"mejoría"} verdict={"Ganó el coco"} totalF={117} accent={ACCENT} />
+        <FedTrial journal={"Acta Medica Philippina"} year={"2023"} n={148} design={"aleatorizado · evaluador ciego · piel madura"} title={"148 personas, 68 años de promedio"} sub={"coco virgen contra aceite mineral"} groupA={{"label":"Coco virgen","value":68,"suffix":"%","tone":"good"}} groupB={{"label":"Aceite mineral","value":38,"suffix":"%","tone":"bad"}} unit={"mejoría"} verdict={"Ganó el coco"} totalF={117} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 384.1s · Con esa piel de la pierna que se descama como escamas de pesca */}
       <Sequence from={11523} durationInFrames={114} name="FedFullShot b106">
-        <FedFullShot {...P[106]} totalF={114} accent={ACCENT} />
+        <FedFullShot {...P[106]} totalF={114} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 387.8s · Coco virgen contra aceite mineral. El coco ganó. */}
       <Sequence from={11634} durationInFrames={105} name="FedHero b107">
-        <FedHero {...P[107]} totalF={105} accent={ACCENT} />
+        <FedHero {...P[107]} totalF={105} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 391s · Y en otro ensayo, cabeza a cabeza contra el oliva. */}
       <Sequence from={11730} durationInFrames={99} name="FedFullShot b108">
-        <FedFullShot {...P[108]} totalF={99} accent={ACCENT} />
+        <FedFullShot {...P[108]} totalF={99} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 396.3s · Había 20 pacientes con la piel colonizada por estafilococo dor */}
       <Sequence from={11889} durationInFrames={126} name="FedStat b110">
-        <FedCohort n={20} kicker={"Cabeza a cabeza · coco contra oliva"} title={"Veinte pacientes con estafilococo dorado"} sub={"la piel colonizada antes de empezar"} unit={"pacientes"} groups={[{"label":"Coco virgen","image":staticFile("img/vn2_prod_coco.png"),"tone":"good","count":8,"result":"quedó 1"},{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":12,"result":"quedaron 6"}]} totalF={126} accent={ACCENT} />
+        <FedCohort n={20} kicker={"Cabeza a cabeza · coco contra oliva"} title={"Veinte pacientes con estafilococo dorado"} sub={"la piel colonizada antes de empezar"} unit={"pacientes"} groups={[{"label":"Coco virgen","image":staticFile("img/vn2_prod_coco.png"),"tone":"good","count":8,"result":"quedó 1"},{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":12,"result":"quedaron 6"}]} totalF={126} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 400.3s · En el grupo del coco, al final quedaba uno. */}
       <Sequence from={12009} durationInFrames={81} name="FedStat b111">
-        <FedStat {...P[111]} totalF={81} accent={ACCENT} />
+        <FedStat {...P[111]} totalF={81} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 402.9s · En el del oliva, de 12 colonizados, quedaban 6. */}
       <Sequence from={12087} durationInFrames={102} name="FedStat b112">
-        <FedStat {...P[112]} totalF={102} accent={ACCENT} />
+        <FedStat {...P[112]} totalF={102} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 406.1s · Eso es el ácido láurico, que es casi la mitad del coco. */}
       <Sequence from={12183} durationInFrames={105} name="FedMolecule b113">
-        <FedMolecule {...P[113]} totalF={105} accent={ACCENT} />
+        <FedMolecule {...P[113]} totalF={105} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 412.4s · ...cero, ni de elasticidad. */}
       <Sequence from={12372} durationInFrames={93} name="FedChecklist b116">
-        <FedChecklist {...P[116]} totalF={93} accent={ACCENT} />
+        <FedChecklist {...P[116]} totalF={93} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 415.3s · Es un reparador de barrera con efecto antibacteriano. */}
       <Sequence from={12459} durationInFrames={90} name="FedHero b117">
-        <FedHero {...P[117]} totalF={90} accent={ACCENT} />
+        <FedHero {...P[117]} totalF={90} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 421.8s · Y lo de los poros. Usted escuchó que el coco es comedogénico g */}
       <Sequence from={12654} durationInFrames={150} name="FedFullShot b119">
-        <FedFullShot {...P[119]} totalF={150} accent={ACCENT} />
+        <FedFullShot {...P[119]} totalF={150} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 426.7s · Ese número sale de un test de 1972. */}
       <Sequence from={12801} durationInFrames={117} name="FedStat b120">
-        <FedStat {...P[120]} totalF={117} accent={ACCENT} />
+        <FedStat {...P[120]} totalF={117} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 430.2s · Poner el ingrediente puro en la oreja de un conejo y contar pu */}
       <Sequence from={12906} durationInFrames={144} name="FedFullShot b121">
-        <FedFullShot {...P[121]} totalF={144} accent={ACCENT} />
+        <FedFullShot {...P[121]} totalF={144} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 434.7s · Hoy se considera que eso no predice lo que pasa en piel humana */}
       <Sequence from={13041} durationInFrames={111} name="FedChecklist b122">
-        <FedChecklist {...P[122]} totalF={111} accent={ACCENT} />
+        <FedChecklist {...P[122]} totalF={111} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 439.5s · Pero si su piel hace granitos, no se lo ponga en la cara. */}
       <Sequence from={13185} durationInFrames={102} name="FedFullShot b124">
-        <FedFullShot {...P[124]} totalF={102} accent={ACCENT} />
+        <FedFullShot {...P[124]} totalF={102} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 443.9s · Número 3 */}
       <Sequence from={13317} durationInFrames={171} name="FedOilCarousel b125">
-        <FedOilCarousel {...P[125]} totalF={171} accent={ACCENT} />
+        <FedOilCarousel {...P[125]} totalF={171} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 450s · (entrada) Rosa mosqueta */}
       <Sequence from={13500} durationInFrames={90} name="FedFullShot b126">
-        <FedFullShot {...P[126]} totalF={90} accent={ACCENT} />
+        <FedFullShot {...P[126]} totalF={90} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 454.8s · Entre 36 y 55% de linoleico. */}
       <Sequence from={13644} durationInFrames={117} name="FedStat b128">
-        <FedStat {...P[128]} totalF={117} accent={ACCENT} />
+        <FedStat {...P[128]} totalF={117} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 458.5s · Mucho omega 3 y poquísimo oleico. */}
       <Sequence from={13755} durationInFrames={90} name="FedMolecule b129">
-        <FedMolecule {...P[129]} totalF={90} accent={ACCENT} />
+        <FedMolecule {...P[129]} totalF={90} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 465.8s · Lo mejor que tiene es un estudio piloto de 27 personas. */}
       <Sequence from={13974} durationInFrames={120} name="FedStat b132">
-        <FedCohort n={27} kicker={"Rosa mosqueta · estudio piloto"} title={"Veintisiete personas, sin grupo control"} sub={"sin placebo y sin ciego: es una señal, no una prueba"} unit={"voluntarios"} groups={[{"label":"Rosa mosqueta","image":staticFile("img/vn2_prod_argan.png"),"tone":"neutral","count":27,"result":"sin comparador"}]} totalF={120} accent={ACCENT} />
+        <FedCohort n={27} kicker={"Rosa mosqueta · estudio piloto"} title={"Veintisiete personas, sin grupo control"} sub={"sin placebo y sin ciego: es una señal, no una prueba"} unit={"voluntarios"} groups={[{"label":"Rosa mosqueta","image":staticFile("img/vn2_prod_argan.png"),"tone":"neutral","count":27,"result":"sin comparador"}]} totalF={120} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 469.5s · Sin grupo control, sin placebo y sin ciego. */}
       <Sequence from={14085} durationInFrames={99} name="FedChecklist b133">
-        <FedChecklist {...P[133]} totalF={99} accent={ACCENT} />
+        <FedChecklist {...P[133]} totalF={99} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 474.5s · Y hay un ensayo aleatorizado donde la rosa mosqueta directamen */}
       <Sequence from={14235} durationInFrames={87} name="FedHero b135">
-        <FedHero {...P[135]} totalF={87} accent={ACCENT} />
+        <FedHero {...P[135]} totalF={87} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 485.7s · Le van a decir que la rosa mosqueta es el retinol natural. */}
       <Sequence from={14571} durationInFrames={108} name="FedFullShot b139">
-        <FedFullShot {...P[139]} totalF={108} accent={ACCENT} />
+        <FedFullShot {...P[139]} totalF={108} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 490.6s · El retinol lo fabrican los animales, no las plantas. */}
       <Sequence from={14718} durationInFrames={108} name="FedHero b141">
-        <FedHero {...P[141]} totalF={108} accent={ACCENT} />
+        <FedHero {...P[141]} totalF={108} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 493.9s · Lo que tiene es betacaroteno, que es otra cosa. */}
       <Sequence from={14817} durationInFrames={96} name="FedMolecule b142">
-        <FedMolecule {...P[142]} totalF={96} accent={ACCENT} />
+        <FedMolecule {...P[142]} totalF={96} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 499.2s · Pero cientos de veces por debajo de la crema de retinol de méd */}
       <Sequence from={14976} durationInFrames={162} name="FedBeforeAfter b144">
-        <FedBeforeAfter {...P[144]} totalF={162} accent={ACCENT} />
+        <FedBeforeAfter {...P[144]} totalF={162} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 504.9s · Comparar una con la otra es comparar una vela con un reflector */}
       <Sequence from={15147} durationInFrames={138} name="FedFullShot b145">
-        <FedFullShot {...P[145]} totalF={138} accent={ACCENT} />
+        <FedFullShot {...P[145]} totalF={138} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 510.3s · Sí, pero por lo que es un aceite riquísimo en linoleico que le */}
       <Sequence from={15309} durationInFrames={153} name="FedChecklist b147">
-        <FedChecklist {...P[147]} totalF={153} accent={ACCENT} />
+        <FedChecklist {...P[147]} totalF={153} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 518.6s · Botella oscura y heladera después de abierta. */}
       <Sequence from={15558} durationInFrames={90} name="FedChecklist b150">
-        <FedChecklist {...P[150]} totalF={90} accent={ACCENT} />
+        <FedChecklist {...P[150]} totalF={90} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 524.3s · En 2012, el New England Journal of Medicine, una de las revist */}
       <Sequence from={15729} durationInFrames={111} name="FedQuote b152">
-        <FedPaper journal={"New England Journal of Medicine"} year={"2012"} meta={"Images in Clinical Medicine · 366(16):e25"} paperTitle={"Unilateral dermatoheliosis"} authors={"Gordon JRS, Brieva JC · Northwestern University"} lines={["Hombre de 69 años, camionero de reparto.","Veinticinco años con el lado izquierdo contra la ventanilla.","Engrosamiento y arrugamiento gradual de ese lado de la cara."]} highlight={1} note={"con la ventana cerrada"} side={"left"} totalF={111} accent={ACCENT} />
+        <FedPaper journal={"New England Journal of Medicine"} year={"2012"} meta={"Images in Clinical Medicine · 366(16):e25"} paperTitle={"Unilateral dermatoheliosis"} authors={"Gordon JRS, Brieva JC · Northwestern University"} lines={["Hombre de 69 años, camionero de reparto.","Veinticinco años con el lado izquierdo contra la ventanilla.","Engrosamiento y arrugamiento gradual de ese lado de la cara."]} highlight={1} note={"con la ventana cerrada"} side={"left"} totalF={111} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 527.6s · ...publicó la fotografía de un hombre... */}
       <Sequence from={15828} durationInFrames={111} name="FedFullShot b153">
-        <FedFullShot {...P[153]} totalF={111} accent={ACCENT} />
+        <FedFullShot {...P[153]} totalF={111} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 530.9s · ...publicó la fotografía de un hombre de 69 años, camionero de */}
       <Sequence from={15927} durationInFrames={126} name="FedStat b154">
-        <FedStat {...P[154]} totalF={126} accent={ACCENT} />
+        <FedStat {...P[154]} totalF={126} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 534.9s · Durante 25 años manejó... */}
       <Sequence from={16047} durationInFrames={75} name="FedStat b155">
-        <FedStat {...P[155]} totalF={75} accent={ACCENT} />
+        <FedStat {...P[155]} totalF={75} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 537s · ...con el lado izquierdo de la cara pegado a la ventanilla. */}
       <Sequence from={16110} durationInFrames={78} name="FedFullShot b156">
-        <FedFullShot {...P[156]} totalF={78} accent={ACCENT} />
+        <FedFullShot {...P[156]} totalF={78} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 539.5s · Las dos mitades de su cara no parecen de la misma persona. */}
       <Sequence from={16185} durationInFrames={99} name="FedBeforeAfter b157">
-        <FedBeforeAfter {...P[157]} totalF={99} accent={ACCENT} />
+        <FedBeforeAfter {...P[157]} totalF={99} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 545.9s · El izquierdo tiene la piel engrosada, colgada, con surcos prof */}
       <Sequence from={16377} durationInFrames={120} name="FedFullShot b159">
-        <FedFullShot {...P[159]} totalF={120} accent={ACCENT} />
+        <FedFullShot {...P[159]} totalF={120} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 549.5s · ...como si le hubieran puesto 20 años más de un solo lado. */}
       <Sequence from={16485} durationInFrames={159} name="FedChecklist b160">
-        <FedSplitFace image={staticFile("img/vn2_c32.png")} title={"La misma cara, dos edades"} sub={"veinte años más de un solo lado"} leftLabel={"25 años contra la ventanilla"} rightLabel={"el otro lado, 69 años"} callouts={["Piel engrosada y colgada","Surcos profundos","Poros dilatados y tapados"]} journal={"New England Journal of Medicine"} year={"2012"} totalF={159} accent={ACCENT} />
+        <FedSplitFace image={staticFile("img/vn2_c32.png")} title={"La misma cara, dos edades"} sub={"veinte años más de un solo lado"} leftLabel={"25 años contra la ventanilla"} rightLabel={"el otro lado, 69 años"} callouts={["Piel engrosada y colgada","Surcos profundos","Poros dilatados y tapados"]} journal={"New England Journal of Medicine"} year={"2012"} totalF={159} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 557.2s · Él iba adentro del camión, con la ventana cerrada. */}
       <Sequence from={16716} durationInFrames={90} name="FedFullShot b162">
-        <FedFullShot {...P[162]} totalF={90} accent={ACCENT} />
+        <FedFullShot {...P[162]} totalF={90} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 567.5s · Los UVA atraviesan el vidrio y atraviesan las nubes. */}
       <Sequence from={17025} durationInFrames={120} name="FedFullShot b164">
-        <FedFullShot {...P[164]} totalF={120} accent={ACCENT} />
+        <FedFullShot {...P[164]} totalF={120} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 576.3s · En 2013, el grupo de Frederick Flament calculó qué parte de lo */}
       <Sequence from={17289} durationInFrames={132} name="FedQuote b167">
-        <FedPaper journal={"Clinical, Cosmetic and Investigational Dermatology"} year={"2013"} meta={"Vol. 6 · pp. 221–232"} paperTitle={"Effect of the sun on visible clinical signs of aging in Caucasian skin"} authors={"Flament F, Bazin R, Laquieze S, Rubert V, Simonpietri E, Piot B"} lines={["Se midieron los signos visibles del envejecimiento facial.","La exposición solar explica el 80,3% de esos signos.","No es el calendario: es el sol."]} highlight={1} note={"80%"} side={"right"} totalF={132} accent={ACCENT} />
+        <FedPaper journal={"Clinical, Cosmetic and Investigational Dermatology"} year={"2013"} meta={"Vol. 6 · pp. 221–232"} paperTitle={"Effect of the sun on visible clinical signs of aging in Caucasian skin"} authors={"Flament F, Bazin R, Laquieze S, Rubert V, Simonpietri E, Piot B"} lines={["Se midieron los signos visibles del envejecimiento facial.","La exposición solar explica el 80,3% de esos signos.","No es el calendario: es el sol."]} highlight={1} note={"80%"} side={"right"} totalF={132} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 580.3s · ...del envejecimiento facial se explica por el sol. */}
       <Sequence from={17409} durationInFrames={132} name="FedFullShot b168">
-        <FedFullShot {...P[168]} totalF={132} accent={ACCENT} />
+        <FedFullShot {...P[168]} totalF={132} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 584.7s · La cifra fue 80,3%. 80%. */}
       <Sequence from={17541} durationInFrames={141} name="FedStat b169">
-        <FedStat {...P[169]} totalF={141} accent={ACCENT} />
+        <FedStat {...P[169]} totalF={141} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 589s · La mayor parte de lo que usted ve en el espejo y le achaca a l */}
       <Sequence from={17670} durationInFrames={153} name="FedHero b170">
-        <FedHero {...P[170]} totalF={153} accent={ACCENT} />
+        <FedHero {...P[170]} totalF={153} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 595.8s · Número 4 */}
       <Sequence from={17874} durationInFrames={168} name="FedOilCarousel b172">
-        <FedOilCarousel {...P[172]} totalF={168} accent={ACCENT} />
+        <FedOilCarousel {...P[172]} totalF={168} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 603.6s · 60 mujeres posmenopáusicas de 49 a 61 años. */}
       <Sequence from={18108} durationInFrames={144} name="FedStat b173">
-        <FedCohort n={60} kicker={"Clinical Interventions in Aging · 2015"} title={"Sesenta mujeres, sesenta días"} sub={"de cuarenta y nueve a sesenta y un años"} unit={"mujeres"} groups={[{"label":"Argán","image":staticFile("img/vn2_prod_argan.png"),"tone":"good","count":30,"value":15,"suffix":"%","result":"más elasticidad"},{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":30,"value":0,"suffix":"%","result":"no mejoró"}]} totalF={144} accent={ACCENT} />
+        <FedCohort n={60} kicker={"Clinical Interventions in Aging · 2015"} title={"Sesenta mujeres, sesenta días"} sub={"de cuarenta y nueve a sesenta y un años"} unit={"mujeres"} groups={[{"label":"Argán","image":staticFile("img/vn2_prod_argan.png"),"tone":"good","count":30,"value":15,"suffix":"%","result":"más elasticidad"},{"label":"Aceite de oliva","image":staticFile("img/vn2_prod_oliva.png"),"tone":"bad","count":30,"value":0,"suffix":"%","result":"no mejoró"}]} totalF={144} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 608.3s · 60 días. Se midió con cutómetro. */}
       <Sequence from={18249} durationInFrames={81} name="FedStat b174">
-        <FedStat {...P[174]} totalF={81} accent={ACCENT} />
+        <FedStat {...P[174]} totalF={81} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 610.9s · Un aparato que succiona un pedacito de piel y mide cuánto tard */}
       <Sequence from={18327} durationInFrames={126} name="FedFullShot b175">
-        <FedFullShot {...P[175]} totalF={126} accent={ACCENT} />
+        <FedFullShot {...P[175]} totalF={126} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 615s · La elasticidad biológica subió un 15%. */}
       <Sequence from={18450} durationInFrames={99} name="FedStat b176">
-        <FedStat {...P[176]} totalF={99} accent={ACCENT} />
+        <FedStat {...P[176]} totalF={99} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 624.9s · Ese grupo además tomaba 25 gramos de aceite de argán por día. */}
       <Sequence from={18747} durationInFrames={138} name="FedStat b179">
-        <FedStat {...P[179]} totalF={138} accent={ACCENT} />
+        <FedStat {...P[179]} totalF={138} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 629.4s · Comido. Dos cucharadas soperas. */}
       <Sequence from={18882} durationInFrames={81} name="FedFullShot b180">
-        <FedFullShot {...P[180]} totalF={81} accent={ACCENT} />
+        <FedFullShot {...P[180]} totalF={81} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 631.8s · Todos los días. Dos meses. */}
       <Sequence from={18954} durationInFrames={75} name="FedChecklist b181">
-        <FedChecklist {...P[181]} totalF={75} accent={ACCENT} />
+        <FedChecklist {...P[181]} totalF={75} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 640.8s · Yo no le puedo prometer 15% de elasticidad untándose argán en  */}
       <Sequence from={19224} durationInFrames={144} name="FedBeforeAfter b184">
-        <FedBeforeAfter {...P[184]} totalF={144} accent={ACCENT} />
+        <FedBeforeAfter {...P[184]} totalF={144} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 653.2s · Anafilaxia por contacto con la piel. No solo por comerlo. */}
       <Sequence from={19596} durationInFrames={102} name="FedChecklist b188">
-        <FedChecklist {...P[188]} totalF={102} accent={ACCENT} />
+        <FedChecklist {...P[188]} totalF={102} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 656.4s · Si usted es alérgico al durazno... */}
       <Sequence from={19692} durationInFrames={105} name="FedFullShot b189">
-        <FedFullShot {...P[189]} totalF={105} accent={ACCENT} />
+        <FedFullShot {...P[189]} totalF={105} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 659.5s · ...a la mostaza o a los frutos secos, hable con su médico ante */}
       <Sequence from={19785} durationInFrames={108} name="FedChecklist b190">
-        <FedChecklist {...P[190]} totalF={108} accent={ACCENT} />
+        <FedChecklist {...P[190]} totalF={108} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 662.9s · Y si no lo es, igual hágase la prueba del parche que le explic */}
       <Sequence from={19887} durationInFrames={132} name="FedStep b191">
-        <FedStep {...P[191]} totalF={132} accent={ACCENT} />
+        <FedStep {...P[191]} totalF={132} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 668.3s · Número 5 */}
       <Sequence from={20049} durationInFrames={159} name="FedOilCarousel b192">
-        <FedOilCarousel {...P[192]} totalF={159} accent={ACCENT} />
+        <FedOilCarousel {...P[192]} totalF={159} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 674.6s · Es una cera líquida. */}
       <Sequence from={20238} durationInFrames={66} name="FedFullShot b193">
-        <FedFullShot {...P[193]} totalF={66} accent={ACCENT} />
+        <FedFullShot {...P[193]} totalF={66} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 676.4s · Y el sebo que su propia piel fabrica tiene alrededor de un 25% */}
       <Sequence from={20292} durationInFrames={150} name="FedStat b194">
-        <FedStat {...P[194]} totalF={150} accent={ACCENT} />
+        <FedStat {...P[194]} totalF={150} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 681.2s · Es el ingrediente vegetal más parecido al sebo humano que se c */}
       <Sequence from={20436} durationInFrames={123} name="FedMolecule b195">
-        <FedMolecule {...P[195]} totalF={123} accent={ACCENT} />
+        <FedMolecule {...P[195]} totalF={123} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 685.1s · Para una piel que dejó de producir sebo, es reponer lo que la  */}
       <Sequence from={20553} durationInFrames={141} name="FedHero b196">
-        <FedHero {...P[196]} totalF={141} accent={ACCENT} />
+        <FedHero {...P[196]} totalF={141} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 692.6s · La jojoba tiene la mejor química de las 7 y la peor evidencia  */}
       <Sequence from={20778} durationInFrames={135} name="FedBeforeAfter b198">
-        <FedBeforeAfter {...P[198]} totalF={135} accent={ACCENT} />
+        <FedBeforeAfter {...P[198]} totalF={135} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 696.9s · No hay un solo ensayo controlado en humanos. */}
       <Sequence from={20907} durationInFrames={75} name="FedStat b199">
-        <FedStat {...P[199]} totalF={75} accent={ACCENT} />
+        <FedStat {...P[199]} totalF={75} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 702.8s · Para la piel sensible que reacciona a todo. Es el más seguro d */}
       <Sequence from={21084} durationInFrames={129} name="FedChecklist b201">
-        <FedChecklist {...P[201]} totalF={129} accent={ACCENT} />
+        <FedChecklist {...P[201]} totalF={129} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 709.9s · Número 6 */}
       <Sequence from={21297} durationInFrames={153} name="FedOilCarousel b203">
-        <FedOilCarousel {...P[203]} totalF={153} accent={ACCENT} />
+        <FedOilCarousel {...P[203]} totalF={153} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 719.3s · las estrías aparecieron en... */}
       <Sequence from={21579} durationInFrames={90} name="FedFullShot b205">
-        <FedFullShot {...P[205]} totalF={90} accent={ACCENT} />
+        <FedFullShot {...P[205]} totalF={90} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 721.9s · el 16% de las que usaron sésamo, */}
       <Sequence from={21657} durationInFrames={90} name="FedStat b206">
-        <FedStat {...P[206]} totalF={90} accent={ACCENT} />
+        <FedStat {...P[206]} totalF={90} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 724.5s · contra el 82% del grupo sin tratamiento. */}
       <Sequence from={21735} durationInFrames={96} name="FedStat b207">
-        <FedStat {...P[207]} totalF={96} accent={ACCENT} />
+        <FedStat {...P[207]} totalF={96} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 730.9s · Y el masaje solo ya mejora la circulación. */}
       <Sequence from={21927} durationInFrames={87} name="FedHero b209">
-        <FedHero {...P[209]} totalF={87} accent={ACCENT} />
+        <FedHero {...P[209]} totalF={87} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 734.6s · Un buen aceite de cuerpo, de piernas y de manos. */}
       <Sequence from={22038} durationInFrames={102} name="FedChecklist b211">
-        <FedChecklist {...P[211]} totalF={102} accent={ACCENT} />
+        <FedChecklist {...P[211]} totalF={102} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 741.4s · declaró al sésamo el noveno alérgeno alimentario mayor. */}
       <Sequence from={22242} durationInFrames={147} name="FedStat b213">
-        <FedStat {...P[213]} totalF={147} accent={ACCENT} />
+        <FedStat {...P[213]} totalF={147} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 747.7s · Si usted es alérgico al sésamo, ni se le ocurra ponérselo en l */}
       <Sequence from={22431} durationInFrames={120} name="FedChecklist b215">
-        <FedChecklist {...P[215]} totalF={120} accent={ACCENT} />
+        <FedChecklist {...P[215]} totalF={120} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 751.3s · Número 7 */}
       <Sequence from={22539} durationInFrames={159} name="FedOilCarousel b216">
-        <FedOilCarousel {...P[216]} totalF={159} accent={ACCENT} />
+        <FedOilCarousel {...P[216]} totalF={159} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 759.3s · Da tacto de seda. Ideal para manos, codos y talones. */}
       <Sequence from={22779} durationInFrames={117} name="FedChecklist b218">
-        <FedChecklist {...P[218]} totalF={117} accent={ACCENT} />
+        <FedChecklist {...P[218]} totalF={117} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 765s · Hasta un 86%. */}
       <Sequence from={22950} durationInFrames={69} name="FedStat b220">
-        <FedStat {...P[220]} totalF={69} accent={ACCENT} />
+        <FedStat {...P[220]} totalF={69} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 766.9s · O sea, se parece al aceite de oliva. */}
       <Sequence from={23007} durationInFrames={78} name="FedBeforeAfter b221">
-        <FedBeforeAfter {...P[221]} totalF={78} accent={ACCENT} />
+        <FedBeforeAfter {...P[221]} totalF={78} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 772.9s · Así que es una sospecha por mecanismo, no un dato. */}
       <Sequence from={23187} durationInFrames={99} name="FedQuote b223">
-        <FedQuote {...P[223]} totalF={99} accent={ACCENT} />
+        <FedQuote {...P[223]} totalF={99} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 778.8s · La piel dañada es puerta de entrada para sensibilizarse a un a */}
       <Sequence from={23364} durationInFrames={120} name="FedStep b226">
-        <FedStep {...P[226]} totalF={120} accent={ACCENT} />
+        <FedStep {...P[226]} totalF={120} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 784.8s · publicado en el New England Journal of Medicine, */}
       <Sequence from={23544} durationInFrames={108} name="FedStat b228">
-        <FedPaper journal={"New England Journal of Medicine"} year={"2003"} meta={"Cohorte de ~14.000 niños seguidos desde el embarazo"} paperTitle={"Factors associated with the development of peanut allergy in childhood"} authors={"Lack G, Fox D, Northstone K, Golding J"} lines={["El 84% de los que terminaron alérgicos al maní","había estado expuesto a cremas con aceite de maní de bebé.","La piel dañada es una puerta de entrada."]} highlight={2} note={"ojo con los frutos secos"} side={"left"} totalF={108} accent={ACCENT} />
+        <FedPaper journal={"New England Journal of Medicine"} year={"2003"} meta={"Cohorte de ~14.000 niños seguidos desde el embarazo"} paperTitle={"Factors associated with the development of peanut allergy in childhood"} authors={"Lack G, Fox D, Northstone K, Golding J"} lines={["El 84% de los que terminaron alérgicos al maní","había estado expuesto a cremas con aceite de maní de bebé.","La piel dañada es una puerta de entrada."]} highlight={2} note={"ojo con los frutos secos"} side={"left"} totalF={108} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 788s · el 84% de los que terminaron alérgicos al maní */}
       <Sequence from={23640} durationInFrames={108} name="FedStat b229">
-        <FedStat {...P[229]} totalF={108} accent={ACCENT} />
+        <FedStat {...P[229]} totalF={108} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 791.2s · habían estado expuestos a cremas con aceite de maní de bebés. */}
       <Sequence from={23736} durationInFrames={93} name="FedFullShot b230">
-        <FedFullShot {...P[230]} totalF={93} accent={ACCENT} />
+        <FedFullShot {...P[230]} totalF={93} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 794.1s · Frutos secos sobre piel con eczema. Con cuidado. */}
       <Sequence from={23823} durationInFrames={72} name="FedHero b231">
-        <FedHero {...P[231]} totalF={72} accent={ACCENT} />
+        <FedHero {...P[231]} totalF={72} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 798.1s · Ahora la lista negra. Que es igual de importante. */}
       <Sequence from={23943} durationInFrames={90} name="FedChapter b233">
-        <FedChapter {...P[233]} totalF={90} accent={ACCENT} />
+        <FedChapter {...P[233]} totalF={90} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 803.2s · Danby 2013. Aumentó significativamente la pérdida de agua por  */}
       <Sequence from={24096} durationInFrames={147} name="FedHero b234">
-        <FedBlacklist index={"01 / 03"} name={"Aceite de oliva"} reason={"Aumentó significativamente la pérdida de agua por la piel — también en piel perfectamente sana."} evidence={"Danby · Pediatric Dermatology · 2013"} stamp={"NO SE PONE"} totalF={147} accent={ACCENT} />
+        <FedBlacklist index={"01 / 03"} name={"Aceite de oliva"} reason={"Aumentó significativamente la pérdida de agua por la piel — también en piel perfectamente sana."} evidence={"Danby · Pediatric Dermatology · 2013"} stamp={"NO SE PONE"} totalF={147} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 810.3s · Cómalo. Es maravilloso para comer. */}
       <Sequence from={24309} durationInFrames={75} name="FedFullShot b236">
-        <FedFullShot {...P[236]} totalF={75} accent={ACCENT} />
+        <FedFullShot {...P[236]} totalF={75} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 814.3s · Segundo. La vitamina E aplicada en la piel. */}
       <Sequence from={24429} durationInFrames={90} name="FedChapter b238">
-        <FedChapter {...P[238]} totalF={90} accent={ACCENT} />
+        <FedChapter {...P[238]} totalF={90} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 816.9s · Y el aceite de germen de trigo que la lleva. */}
       <Sequence from={24507} durationInFrames={84} name="FedFullShot b239">
-        <FedFullShot {...P[239]} totalF={84} accent={ACCENT} />
+        <FedFullShot {...P[239]} totalF={84} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 827s · 15 pacientes operados de cáncer de piel. */}
       <Sequence from={24810} durationInFrames={75} name="FedStat b242">
-        <FedCohort n={15} kicker={"Dermatologic Surgery · 1999"} title={"Quince pacientes operados"} sub={"cada cicatriz partida en dos mitades"} unit={"pacientes"} groups={[{"label":"Crema sola","image":staticFile("img/vn2_prod_nada.png"),"tone":"neutral","count":8,"result":"mitad A"},{"label":"Crema + vitamina E","image":staticFile("img/vn2_prod_vitE.png"),"tone":"bad","count":7,"value":90,"suffix":"%","result":"sin efecto o peor"}]} totalF={75} accent={ACCENT} />
+        <FedCohort n={15} kicker={"Dermatologic Surgery · 1999"} title={"Quince pacientes operados"} sub={"cada cicatriz partida en dos mitades"} unit={"pacientes"} groups={[{"label":"Crema sola","image":staticFile("img/vn2_prod_nada.png"),"tone":"neutral","count":8,"result":"mitad A"},{"label":"Crema + vitamina E","image":staticFile("img/vn2_prod_vitE.png"),"tone":"bad","count":7,"value":90,"suffix":"%","result":"sin efecto o peor"}]} totalF={75} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 829.1s · Cada cicatriz dividida en dos mitades. Una con crema sola. */}
       <Sequence from={24873} durationInFrames={132} name="FedBeforeAfter b243">
-        <FedBeforeAfter {...P[243]} totalF={132} accent={ACCENT} />
+        <FedBeforeAfter {...P[243]} totalF={132} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 835.3s · En el 90% de los casos la vitamina E no tuvo ningún efecto o e */}
       <Sequence from={25059} durationInFrames={189} name="FedStat b245">
-        <FedBlacklist index={"02 / 03"} name={"Vitamina E y germen de trigo"} reason={"En el 90% de los casos no tuvo ningún efecto o empeoró la cicatriz. Un tercio de los pacientes hizo dermatitis de contacto."} evidence={"Dermatologic Surgery · 1999 · 15 pacientes operados"} stamp={"NO SE PONE"} totalF={189} accent={ACCENT} />
+        <FedBlacklist index={"02 / 03"} name={"Vitamina E y germen de trigo"} reason={"En el 90% de los casos no tuvo ningún efecto o empeoró la cicatriz. Un tercio de los pacientes hizo dermatitis de contacto."} evidence={"Dermatologic Surgery · 1999 · 15 pacientes operados"} stamp={"NO SE PONE"} totalF={189} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 841.2s · Y un tercio de los pacientes desarrolló dermatitis de contacto */}
       <Sequence from={25236} durationInFrames={126} name="FedStat b246">
-        <FedStat {...P[246]} totalF={126} accent={ACCENT} />
+        <FedStat {...P[246]} totalF={126} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 847.6s · Fíjese dónde saltó a un tercio. En piel con la barrera rota. */}
       <Sequence from={25428} durationInFrames={123} name="FedHero b248">
-        <FedHero {...P[248]} totalF={123} accent={ACCENT} />
+        <FedHero {...P[248]} totalF={123} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 854.5s · Sobre la cicatriz. Sobre lo que le arde. */}
       <Sequence from={25635} durationInFrames={81} name="FedFullShot b250">
-        <FedFullShot {...P[250]} totalF={81} accent={ACCENT} />
+        <FedFullShot {...P[250]} totalF={81} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 856.8s · Y tercero. El que es directamente peligroso. */}
       <Sequence from={25704} durationInFrames={111} name="FedChapter b251">
-        <FedChapter {...P[251]} totalF={111} accent={ACCENT} />
+        <FedChapter {...P[251]} totalF={111} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 863.2s · Bergamota, lima, limón. */}
       <Sequence from={25896} durationInFrames={69} name="FedFullShot b253">
-        <FedFullShot {...P[253]} totalF={69} accent={ACCENT} />
+        <FedFullShot {...P[253]} totalF={69} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 865.1s · Traen unas sustancias que se llaman furocumarinas. Con la luz  */}
       <Sequence from={25953} durationInFrames={156} name="FedMolecule b254">
-        <FedBlacklist index={"03 / 03"} name={"Cítricos prensados en frío"} reason={"Las furocumarinas se activan con la luz, se pegan al ADN y dejan una mancha que a veces no se va nunca."} evidence={"Bergamota, lima, limón · tope de la industria: 0,4%"} stamp={"PELIGRO"} totalF={156} accent={ACCENT} />
+        <FedBlacklist index={"03 / 03"} name={"Cítricos prensados en frío"} reason={"Las furocumarinas se activan con la luz, se pegan al ADN y dejan una mancha que a veces no se va nunca."} evidence={"Bergamota, lima, limón · tope de la industria: 0,4%"} stamp={"PELIGRO"} totalF={156} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 869.9s · Entran en el núcleo de la célula. Se pegan al ADN y producen m */}
       <Sequence from={26097} durationInFrames={159} name="FedMolecule b255">
-        <FedMolecule {...P[255]} totalF={159} accent={ACCENT} />
+        <FedMolecule {...P[255]} totalF={159} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 876.5s · Ampollas a las 24 o 72. */}
       <Sequence from={26295} durationInFrames={87} name="FedStep b257">
-        <FedStep {...P[257]} totalF={87} accent={ACCENT} />
+        <FedStep {...P[257]} totalF={87} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 879s · Y después una mancha oscura con forma de chorreado. */}
       <Sequence from={26370} durationInFrames={114} name="FedStep b258">
-        <FedStep {...P[258]} totalF={114} accent={ACCENT} />
+        <FedStep {...P[258]} totalF={114} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 885.1s · La Asociación Internacional de Fragancias le pone un tope del  */}
       <Sequence from={26553} durationInFrames={147} name="FedStat b260">
-        <FedStat {...P[260]} totalF={147} accent={ACCENT} />
+        <FedStat {...P[260]} totalF={147} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 889.6s · En un producto que queda sobre la piel expuesta al sol. */}
       <Sequence from={26688} durationInFrames={159} name="FedFullShot b261">
-        <FedFullShot {...P[261]} totalF={159} accent={ACCENT} />
+        <FedFullShot {...P[261]} totalF={159} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 894.5s · Y hay reportes de fototoxicidad con 0,03. */}
       <Sequence from={26835} durationInFrames={123} name="FedStat b262">
-        <FedStat {...P[262]} totalF={123} accent={ACCENT} />
+        <FedStat {...P[262]} totalF={123} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 900.4s · Si el frasco no aclara que es destilado al vapor, no se lo pon */}
       <Sequence from={27012} durationInFrames={147} name="FedChecklist b264">
-        <FedChecklist {...P[264]} totalF={147} accent={ACCENT} />
+        <FedChecklist {...P[264]} totalF={147} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 907.6s · Este es el tramo que menos me conviene y el que más necesita e */}
       <Sequence from={27228} durationInFrames={120} name="FedChapter b266">
-        <FedChapter {...P[266]} totalF={120} accent={ACCENT} />
+        <FedChapter {...P[266]} totalF={120} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 911.2s · Ningún aceite vegetal le va a fabricar colágeno. Ninguno. */}
       <Sequence from={27336} durationInFrames={114} name="FedHero b267">
-        <FedHero {...P[267]} totalF={114} accent={ACCENT} />
+        <FedHero {...P[267]} totalF={114} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 918.4s · Sube el procolágeno un 85%. */}
       <Sequence from={27552} durationInFrames={99} name="FedStat b269">
-        <FedStat {...P[269]} totalF={99} accent={ACCENT} />
+        <FedStat {...P[269]} totalF={99} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 921.3s · O baja las arrugas un 43%. No existen. */}
       <Sequence from={27639} durationInFrames={90} name="FedStat b270">
-        <FedStat {...P[270]} totalF={90} accent={ACCENT} />
+        <FedStat {...P[270]} totalF={90} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 928.1s · Y este es el más peligroso. Los aceites no protegen del sol. */}
       <Sequence from={27843} durationInFrames={126} name="FedHero b272">
-        <FedHero {...P[272]} totalF={126} accent={ACCENT} />
+        <FedHero {...P[272]} totalF={126} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 931.9s · En 2021 se midieron en laboratorio y en piel humana los cinco  */}
       <Sequence from={27957} durationInFrames={135} name="FedStat b273">
-        <FedStat {...P[273]} totalF={135} accent={ACCENT} />
+        <FedStat {...P[273]} totalF={135} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 939s · El aceite de coco dio un factor de protección de entre 0 y 1,2 */}
       <Sequence from={28170} durationInFrames={141} name="FedStat b275">
-        <FedStat {...P[275]} totalF={141} accent={ACCENT} />
+        <FedStat {...P[275]} totalF={141} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 945.7s · Factor 30 bloquea el 97%. */}
       <Sequence from={28371} durationInFrames={93} name="FedStat b277">
-        <FedStat {...P[277]} totalF={93} accent={ACCENT} />
+        <FedStat {...P[277]} totalF={93} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 951.2s · El aceite vuelve más transparente la capa de arriba de la piel */}
       <Sequence from={28536} durationInFrames={114} name="FedFullShot b279">
-        <FedFullShot {...P[279]} totalF={114} accent={ACCENT} />
+        <FedFullShot {...P[279]} totalF={114} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 957.1s · Le saca la señal de alarma mientras la radiación sigue entrand */}
       <Sequence from={28713} durationInFrames={120} name="FedHero b281">
-        <FedHero {...P[281]} totalF={120} accent={ACCENT} />
+        <FedHero {...P[281]} totalF={120} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 964.5s · Los aceites de noche. */}
       <Sequence from={28935} durationInFrames={66} name="FedFullShot b283">
-        <FedFullShot {...P[283]} totalF={66} accent={ACCENT} />
+        <FedFullShot {...P[283]} totalF={66} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 966.3s · ¿Y qué sí funciona para el colágeno? Dos cosas. */}
       <Sequence from={28989} durationInFrames={102} name="FedChecklist b284">
-        <FedChecklist {...P[284]} totalF={102} accent={ACCENT} />
+        <FedChecklist {...P[284]} totalF={102} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 971.9s · El protector solar. */}
       <Sequence from={29157} durationInFrames={120} name="FedStep b286">
-        <FedStep {...P[286]} totalF={120} accent={ACCENT} />
+        <FedStep {...P[286]} totalF={120} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 975.5s · En 2013, en Annals of Internal Medicine, el único ensayo aleat */}
       <Sequence from={29265} durationInFrames={165} name="FedQuote b287">
-        <FedPaper journal={"Annals of Internal Medicine"} year={"2013"} meta={"158(11):781–790 · Nambour, Australia"} paperTitle={"Sunscreen and prevention of skin aging: a randomized trial"} authors={"Hughes MCB, Williams GM, Baker P, Green AC"} lines={["Novecientos tres adultos, asignados al azar.","Unos con protector solar todos los días, otros cuando querían.","El envejecimiento de la piel fue un 24% menor con el uso diario."]} highlight={2} note={"el único ensayo que existe"} side={"right"} totalF={165} accent={ACCENT} />
+        <FedPaper journal={"Annals of Internal Medicine"} year={"2013"} meta={"158(11):781–790 · Nambour, Australia"} paperTitle={"Sunscreen and prevention of skin aging: a randomized trial"} authors={"Hughes MCB, Williams GM, Baker P, Green AC"} lines={["Novecientos tres adultos, asignados al azar.","Unos con protector solar todos los días, otros cuando querían.","El envejecimiento de la piel fue un 24% menor con el uso diario."]} highlight={2} note={"el único ensayo que existe"} side={"right"} totalF={165} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 981s · 903 adultos en Australia. */}
       <Sequence from={29430} durationInFrames={72} name="FedStat b288">
-        <FedCohort n={903} maxFigures={36} kicker={"Nambour, Australia"} title={"Novecientos tres adultos"} sub={"repartidos al azar durante cuatro años y medio"} unit={"adultos"} groups={[{"label":"Protector todos los días","image":staticFile("img/vn2_prod_solar.png"),"tone":"good","count":18,"value":24,"suffix":"%","result":"menos envejecimiento"},{"label":"Cuando querían","image":staticFile("img/vn2_prod_nada.png"),"tone":"bad","count":18,"result":"sin cambio"}]} totalF={72} accent={ACCENT} />
+        <FedCohort n={903} maxFigures={36} kicker={"Nambour, Australia"} title={"Novecientos tres adultos"} sub={"repartidos al azar durante cuatro años y medio"} unit={"adultos"} groups={[{"label":"Protector todos los días","image":staticFile("img/vn2_prod_solar.png"),"tone":"good","count":18,"value":24,"suffix":"%","result":"menos envejecimiento"},{"label":"Cuando querían","image":staticFile("img/vn2_prod_nada.png"),"tone":"bad","count":18,"result":"sin cambio"}]} totalF={72} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 983s · Unos con protector todos los días y otros cuando querían. */}
       <Sequence from={29490} durationInFrames={111} name="FedFullShot b289">
-        <FedFullShot {...P[289]} totalF={111} accent={ACCENT} />
+        <FedFullShot {...P[289]} totalF={111} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 986.3s · El envejecimiento de la piel fue un 24% menor en el grupo del  */}
       <Sequence from={29589} durationInFrames={159} name="FedStat b290">
-        <FedStat {...P[290]} totalF={159} accent={ACCENT} />
+        <FedStat {...P[290]} totalF={159} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 993.2s · En el New England Journal of Medicine, la tretinoína. */}
       <Sequence from={29796} durationInFrames={126} name="FedStep b292">
-        <FedPaper journal={"New England Journal of Medicine"} year={"1993"} meta={"329(8):530–535 · 29 pacientes, 10 a 12 meses"} paperTitle={"Restoration of collagen formation in photodamaged human skin by tretinoin"} authors={"Griffiths CE, Russman AN, Majmudar G, Singer RS, Hamilton TA, Voorhees JJ"} lines={["Tretinoína tópica contra vehículo, medido en biopsia.","La formación de colágeno tipo uno aumentó un 80%.","Con el vehículo, bajó un 14%."]} highlight={1} note={"esto sí toca el colágeno"} side={"left"} totalF={126} accent={ACCENT} />
+        <FedPaper journal={"New England Journal of Medicine"} year={"1993"} meta={"329(8):530–535 · 29 pacientes, 10 a 12 meses"} paperTitle={"Restoration of collagen formation in photodamaged human skin by tretinoin"} authors={"Griffiths CE, Russman AN, Majmudar G, Singer RS, Hamilton TA, Voorhees JJ"} lines={["Tretinoína tópica contra vehículo, medido en biopsia.","La formación de colágeno tipo uno aumentó un 80%.","Con el vehículo, bajó un 14%."]} highlight={1} note={"esto sí toca el colágeno"} side={"left"} totalF={126} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 997s · Aumentó la formación de colágeno tipo 1, un 80%. */}
       <Sequence from={29910} durationInFrames={96} name="FedStat b293">
-        <FedStat {...P[293]} totalF={96} accent={ACCENT} />
+        <FedStat {...P[293]} totalF={96} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1002s · Con personas de 87 años de promedio. */}
       <Sequence from={30060} durationInFrames={78} name="FedStat b295">
-        <FedStat {...P[295]} totalF={78} accent={ACCENT} />
+        <FedStat {...P[295]} totalF={78} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1004.5s · Mostró mejoría en las arrugas finas con retinol tres veces por */}
       <Sequence from={30135} durationInFrames={117} name="FedStat b296">
-        <FedStat {...P[296]} totalF={117} accent={ACCENT} />
+        <FedStat {...P[296]} totalF={117} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1008.2s · 87 años de promedio. */}
       <Sequence from={30246} durationInFrames={72} name="FedStat b297">
-        <FedStat {...P[297]} totalF={72} accent={ACCENT} />
+        <FedStat {...P[297]} totalF={72} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1012.9s · Y ahora sí, el error. El que le prometí al principio. */}
       <Sequence from={30387} durationInFrames={105} name="FedChapter b299">
-        <FedChapter {...P[299]} totalF={105} accent={ACCENT} />
+        <FedChapter {...P[299]} totalF={105} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 1018.2s · El error es que usted se está poniendo el aceite sobre la piel */}
       <Sequence from={30546} durationInFrames={114} name="FedHero b301">
-        <FedHero {...P[301]} totalF={114} accent={ACCENT} />
+        <FedHero {...P[301]} totalF={114} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1021.7s · Un aceite vegetal puro es anhidro. */}
       <Sequence from={30651} durationInFrames={99} name="FedFullShot b302">
-        <FedFullShot {...P[302]} totalF={99} accent={ACCENT} />
+        <FedFullShot {...P[302]} totalF={99} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1024.7s · Tiene 0% de agua. Cero. */}
       <Sequence from={30741} durationInFrames={84} name="FedStat b303">
-        <FedStat {...P[303]} totalF={84} accent={ACCENT} />
+        <FedStat {...P[303]} totalF={84} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1027.2s · Es imposible que le aporte agua a la piel porque no tiene agua */}
       <Sequence from={30816} durationInFrames={132} name="FedFullShot b304">
-        <FedFullShot {...P[304]} totalF={132} accent={ACCENT} />
+        <FedFullShot {...P[304]} totalF={132} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1042.7s · Si abajo hay agua, la tapa la retiene y usted gana. */}
       <Sequence from={31281} durationInFrames={78} name="FedFullShot b308">
-        <FedFullShot {...P[308]} totalF={78} accent={ACCENT} />
+        <FedFullShot {...P[308]} totalF={78} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1045s · Si abajo no hay agua, usted acaba de sellar una piel seca. */}
       <Sequence from={31350} durationInFrames={117} name="FedBeforeAfter b309">
-        <FedSeal title={"El aceite es la tapa, no el contenido"} sub={"un aceite vegetal puro es anhidro"} leftLabel={"Aceite sobre piel SECA"} rightLabel={"Aceite sobre piel HÚMEDA"} leftNote={"sella la nada"} rightNote={"sella el agua"} dropLabel={"0% de agua"} totalF={117} accent={ACCENT} />
+        <FedSeal title={"El aceite es la tapa, no el contenido"} sub={"un aceite vegetal puro es anhidro"} leftLabel={"Aceite sobre piel SECA"} rightLabel={"Aceite sobre piel HÚMEDA"} leftNote={"sella la nada"} rightNote={"sella el agua"} dropLabel={"0% de agua"} totalF={117} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1050.9s · Y el contenido real de agua no subió ni un punto. */}
       <Sequence from={31527} durationInFrames={93} name="FedHero b311">
-        <FedHero {...P[311]} totalF={93} accent={ACCENT} />
+        <FedHero {...P[311]} totalF={93} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1053.7s · Por eso millones de personas se untan aceite todas las noches  */}
       <Sequence from={31611} durationInFrames={138} name="FedFullShot b312">
-        <FedFullShot {...P[312]} totalF={138} accent={ACCENT} />
+        <FedFullShot {...P[312]} totalF={138} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1058s · No ven nada y concluyen que los aceites no sirven. */}
       <Sequence from={31740} durationInFrames={108} name="FedFullShot b313">
-        <FedFullShot {...P[313]} totalF={108} accent={ACCENT} />
+        <FedFullShot {...P[313]} totalF={108} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1063.9s · Agua primero. Aceite después. */}
       <Sequence from={31917} durationInFrames={75} name="FedHero b315">
-        <FedHero {...P[315]} totalF={75} accent={ACCENT} />
+        <FedHero {...P[315]} totalF={75} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1069.7s · Bañarse y no ponerse absolutamente nada después. */}
       <Sequence from={32091} durationInFrames={102} name="FedFullShot b317">
-        <FedFullShot {...P[317]} totalF={102} accent={ACCENT} />
+        <FedFullShot {...P[317]} totalF={102} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1072.9s · Dejó la piel en el 91% de como estaba antes de bañarse. */}
       <Sequence from={32187} durationInFrames={141} name="FedStat b318">
-        <FedStat {...P[318]} totalF={141} accent={ACCENT} />
+        <FedStat {...P[318]} totalF={141} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1080s · Bañarse y no ponerse nada la deja peor que antes de bañarse. */}
       <Sequence from={32400} durationInFrames={87} name="FedHero b320">
-        <FedHero {...P[320]} totalF={87} accent={ACCENT} />
+        <FedHero {...P[320]} totalF={87} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1085.1s · Entonces, ¿cómo se hace bien? Esto es lo que quiero que haga e */}
       <Sequence from={32553} durationInFrames={123} name="FedChapter b322">
-        <FedChapter {...P[322]} totalF={123} accent={ACCENT} />
+        <FedChapter {...P[322]} totalF={123} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 1088.9s · Uno. El agua caliente le disuelve el mismo cemento de grasa qu */}
       <Sequence from={32667} durationInFrames={141} name="FedStep b323">
-        <FedRoutineRing step={1} kicker={"Esta noche"} totalF={141} accent={ACCENT} />
+        <FedRoutineRing step={1} kicker={"Esta noche"} totalF={141} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1096s · Séquese a toques y deje la piel apenas húmeda. */}
       <Sequence from={32880} durationInFrames={141} name="FedStep b325">
-        <FedRoutineRing step={2} kicker={"Esta noche"} totalF={141} accent={ACCENT} />
+        <FedRoutineRing step={2} kicker={"Esta noche"} totalF={141} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1100.4s · Que brille de agua. Esa agua es el contenido. */}
       <Sequence from={33012} durationInFrames={102} name="FedFullShot b326">
-        <FedFullShot {...P[326]} totalF={102} accent={ACCENT} />
+        <FedFullShot {...P[326]} totalF={102} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1103.5s · Si tiene una crema o un gel con glicerina, ácido hialurónico o */}
       <Sequence from={33105} durationInFrames={147} name="FedStep b327">
-        <FedRoutineRing step={3} kicker={"Esta noche"} totalF={147} accent={ACCENT} />
+        <FedRoutineRing step={3} kicker={"Esta noche"} totalF={147} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1108.1s · Ese es el que aporta. */}
       <Sequence from={33243} durationInFrames={108} name="FedFullShot b328">
-        <FedFullShot {...P[328]} totalF={108} accent={ACCENT} />
+        <FedFullShot {...P[328]} totalF={108} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1113.7s · Cuatro. Ahora sí el aceite. Y menos de lo que usted cree. */}
       <Sequence from={33411} durationInFrames={108} name="FedStep b330">
-        <FedRoutineRing step={4} kicker={"Esta noche"} totalF={108} accent={ACCENT} />
+        <FedRoutineRing step={4} kicker={"Esta noche"} totalF={108} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1117s · Tres a cinco gotas para toda la cara. */}
       <Sequence from={33510} durationInFrames={72} name="FedStat b331">
-        <FedStat {...P[331]} totalF={72} accent={ACCENT} />
+        <FedStat {...P[331]} totalF={72} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1119.1s · Diez para un antebrazo entero, que es la dosis exacta del estu */}
       <Sequence from={33573} durationInFrames={135} name="FedStat b332">
-        <FedStat {...P[332]} totalF={135} accent={ACCENT} />
+        <FedStat {...P[332]} totalF={135} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1123.3s · Caliéntelas entre las palmas y presione. No frote. */}
       <Sequence from={33699} durationInFrames={102} name="FedFullShot b333">
-        <FedFullShot {...P[333]} totalF={102} accent={ACCENT} />
+        <FedFullShot {...P[333]} totalF={102} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1126.4s · Presionar y soltar. Frotar en piel madura la irrita. */}
       <Sequence from={33792} durationInFrames={105} name="FedHero b334">
-        <FedHero {...P[334]} totalF={105} accent={ACCENT} />
+        <FedHero {...P[334]} totalF={105} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1129.6s · Cinco. Cuatro semanas. Ese es el plazo real. No tres días. */}
       <Sequence from={33888} durationInFrames={126} name="FedStep b335">
-        <FedRoutineRing step={5} kicker={"Esta noche"} totalF={126} accent={ACCENT} />
+        <FedRoutineRing step={5} kicker={"Esta noche"} totalF={126} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1136.8s · Una gota en la cara interna del antebrazo, tapada con una curi */}
       <Sequence from={34104} durationInFrames={126} name="FedFullShot b337">
-        <FedFullShot {...P[337]} totalF={126} accent={ACCENT} />
+        <FedFullShot {...P[337]} totalF={126} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1140.8s · Cuarenta y ocho horas. */}
       <Sequence from={34224} durationInFrames={123} name="FedStat b338">
-        <FedStat {...P[338]} totalF={123} accent={ACCENT} />
+        <FedStat {...P[338]} totalF={123} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1144.6s · Si pica, si se pone rojo, si aparece un sarpullido, ese aceite */}
       <Sequence from={34338} durationInFrames={90} name="FedFullShot b339">
-        <FedFullShot {...P[339]} totalF={90} accent={ACCENT} />
+        <FedFullShot {...P[339]} totalF={90} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1147.3s · Con el argán y con los de frutos secos, no es opcional. */}
       <Sequence from={34419} durationInFrames={114} name="FedHero b340">
-        <FedHero {...P[340]} totalF={114} accent={ACCENT} />
+        <FedHero {...P[340]} totalF={114} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1150.8s · Y huela la botella antes de usarla. */}
       <Sequence from={34524} durationInFrames={78} name="FedFullShot b341">
-        <FedFullShot {...P[341]} totalF={78} accent={ACCENT} />
+        <FedFullShot {...P[341]} totalF={78} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1155.4s · Si tiene olor a pintura vieja, a crayón, a rancio, tírelo. */}
       <Sequence from={34662} durationInFrames={129} name="FedChecklist b343">
-        <FedChecklist {...P[343]} totalF={129} accent={ACCENT} />
+        <FedChecklist {...P[343]} totalF={129} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1159.4s · Un aceite oxidado sobre la piel es un pro-oxidante. Le hace lo */}
       <Sequence from={34782} durationInFrames={114} name="FedMolecule b344">
-        <FedMolecule {...P[344]} totalF={114} accent={ACCENT} />
+        <FedMolecule {...P[344]} totalF={114} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1162.9s · Y jamás use un aceite con el que ya frió. */}
       <Sequence from={34887} durationInFrames={117} name="FedFullShot b345">
-        <FedFullShot {...P[345]} totalF={117} accent={ACCENT} />
+        <FedFullShot {...P[345]} totalF={117} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1166.5s · Le hago el resumen. Esta noche, tres cosas. */}
       <Sequence from={34995} durationInFrames={96} name="FedChecklist b346">
-        <FedChecklist {...P[346]} totalF={96} accent={ACCENT} />
+        <FedChecklist {...P[346]} totalF={96} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1169.4s · Uno. Revise la etiqueta del girasol. */}
       <Sequence from={35082} durationInFrames={75} name="FedFullShot b347">
-        <FedFullShot {...P[347]} totalF={75} accent={ACCENT} />
+        <FedFullShot {...P[347]} totalF={75} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1171.6s · Alto linoleico es su reparador de barrera número uno. */}
       <Sequence from={35148} durationInFrames={114} name="FedHero b348">
-        <FedHero {...P[348]} totalF={114} accent={ACCENT} />
+        <FedHero {...P[348]} totalF={114} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1177s · Dos. Cambie el orden. Piel húmeda primero, aceite después. Sie */}
       <Sequence from={35310} durationInFrames={129} name="FedHero b350">
-        <FedHero {...P[350]} totalF={129} accent={ACCENT} />
+        <FedHero {...P[350]} totalF={129} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1183.7s · Tres. Aceites de noche. De día, protector solar. */}
       <Sequence from={35511} durationInFrames={114} name="FedHero b352">
-        <FedHero {...P[352]} totalF={114} accent={ACCENT} />
+        <FedHero {...P[352]} totalF={114} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1187.2s · Porque el 80% de lo que ve en el espejo se lo hizo el sol, no  */}
       <Sequence from={35616} durationInFrames={150} name="FedStat b353">
-        <FedStat {...P[353]} totalF={150} accent={ACCENT} />
+        <FedStat {...P[353]} totalF={150} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1191.9s · En la descripción le dejé la ficha completa. */}
       <Sequence from={35757} durationInFrames={102} name="FedCta b354">
-        <FedCta {...P[354]} totalF={102} accent={ACCENT} />
+        <FedCta {...P[354]} totalF={102} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1197s · Los siete aceites. El linoleico y el oleico de cada uno. */}
       <Sequence from={35910} durationInFrames={120} name="FedFullShot b356">
-        <FedOilBars title={"Los siete, de un vistazo"} sub={"el linoleico y el oleico de cada uno"} cutoff={40} cutoffLabel={"mínimo útil"} foot={"La ficha completa está en la descripción."} totalF={120} accent={ACCENT} />
+        <FedOilBars title={"Los siete, de un vistazo"} sub={"el linoleico y el oleico de cada uno"} cutoff={40} cutoffLabel={"mínimo útil"} foot={"La ficha completa está en la descripción."} totalF={120} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1203.3s · La dosis en gotas y la lista de los que no se ponen nunca. */}
       <Sequence from={36099} durationInFrames={93} name="FedFullShot b358">
-        <FedFullShot {...P[358]} totalF={93} accent={ACCENT} />
+        <FedFullShot {...P[358]} totalF={93} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1208s · Y cuénteme algo en los comentarios, que los leo todos. */}
       <Sequence from={36240} durationInFrames={102} name="FedFullShot b360">
-        <FedFullShot {...P[360]} totalF={102} accent={ACCENT} />
+        <FedFullShot {...P[360]} totalF={102} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1211.1s · ¿Qué aceite tiene en la cocina en este momento? */}
       <Sequence from={36333} durationInFrames={87} name="FedHero b361">
-        <FedHero {...P[361]} totalF={87} accent={ACCENT} />
+        <FedHero {...P[361]} totalF={87} accent={ACCENT} variant="whip" />
       </Sequence>
       {/* 1213.7s · Escríbame cuál es y si la etiqueta dice alto oleico o no. */}
       <Sequence from={36411} durationInFrames={129} name="FedFullShot b362">
-        <FedFullShot {...P[362]} totalF={129} accent={ACCENT} />
+        <FedFullShot {...P[362]} totalF={129} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1220.4s · …estuvo usando el equivocado sin tener la menor idea. */}
       <Sequence from={36612} durationInFrames={84} name="FedFullShot b364">
-        <FedFullShot {...P[364]} totalF={84} accent={ACCENT} />
+        <FedFullShot {...P[364]} totalF={84} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1222.9s · En el próximo video le voy a mostrar algo que discute con la m */}
       <Sequence from={36687} durationInFrames={153} name="FedChapter b365">
-        <FedChapter {...P[365]} totalF={153} accent={ACCENT} />
+        <FedChapter {...P[365]} totalF={153} accent={ACCENT} variant="fold" />
       </Sequence>
       {/* 1227.7s · Hay un producto de tres pesos en cualquier farmacia… */}
       <Sequence from={36831} durationInFrames={123} name="FedFullShot b366">
-        <FedFullShot {...P[366]} totalF={123} accent={ACCENT} />
+        <FedFullShot {...P[366]} totalF={123} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1231.5s · …que se usa desde 1872. */}
       <Sequence from={36945} durationInFrames={99} name="FedStat b367">
-        <FedStat {...P[367]} totalF={99} accent={ACCENT} />
+        <FedStat {...P[367]} totalF={99} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1234.5s · Y que baja la pérdida de agua de la piel casi un 99%. */}
       <Sequence from={37035} durationInFrames={87} name="FedStat b368">
-        <FedStat {...P[368]} totalF={87} accent={ACCENT} />
+        <FedStat {...P[368]} totalF={87} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1238.7s · Ningún aceite de este video pasa del 30. */}
       <Sequence from={37161} durationInFrames={93} name="FedStat b370">
-        <FedStat {...P[370]} totalF={93} accent={ACCENT} />
+        <FedStat {...P[370]} totalF={93} accent={ACCENT} variant="iris" />
       </Sequence>
       {/* 1244.5s · …y por qué eso de que tapa los poros es falso. */}
       <Sequence from={37335} durationInFrames={105} name="FedFullShot b372">
-        <FedFullShot {...P[372]} totalF={105} accent={ACCENT} />
+        <FedFullShot {...P[372]} totalF={105} accent={ACCENT} variant="lift" />
       </Sequence>
       {/* 1247.7s · Hay un estudio de 1992 que lo demuestra. */}
       <Sequence from={37431} durationInFrames={93} name="FedStat b373">
-        <FedStat {...P[373]} totalF={93} accent={ACCENT} />
+        <FedStat {...P[373]} totalF={93} accent={ACCENT} variant="iris" />
       </Sequence>
 
       <AbsoluteFill

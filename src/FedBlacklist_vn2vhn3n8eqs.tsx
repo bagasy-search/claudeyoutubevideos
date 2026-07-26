@@ -26,6 +26,8 @@ import {
   FED_SCENE_F,
   FED_WHIP_F,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ############################################################################
@@ -49,6 +51,7 @@ import {
  * ########################################################################## */
 
 export type FedBlacklistProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string; // '#E9B44C'
   mood?: FedMood; // 'warmdark'
@@ -122,6 +125,7 @@ const BottleSilhouette: React.FC<{accent: string; p: number}> = ({accent, p}) =>
 /* ================================================================ COMPONENT */
 
 export const FedBlacklist: React.FC<FedBlacklistProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'warmdark',
@@ -236,7 +240,7 @@ export const FedBlacklist: React.FC<FedBlacklistProps> = ({
   const stampFs = Math.min(84, (STAMP_W - 96) / Math.max(6, stamp.length) * 1.62);
 
   return (
-    <TransitionShell accent={accent} totalF={totalF}>
+    <TransitionShell accent={accent} totalF={totalF} variant={variant}>
       <AbsoluteFill style={{background: '#04030a', overflow: 'hidden'}}>
         {/* ============================ L0 · fondo por mood + wash + viñeta */}
         <AbsoluteFill style={{background: moodBg(mood, accent)}} />

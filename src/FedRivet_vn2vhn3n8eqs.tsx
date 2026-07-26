@@ -62,11 +62,14 @@ import {
   rgba,
   shade,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ============================== CONTRATO ================================= */
 
 export type FedRivetProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string; // '#E9B44C'
   mood?: FedMood; // 'science'
@@ -436,6 +439,7 @@ const Lamella: React.FC<{
 const N_LAM = 4;
 
 export const FedRivet: React.FC<FedRivetProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'science',
@@ -623,7 +627,7 @@ export const FedRivet: React.FC<FedRivetProps> = ({
 
   return (
     <AbsoluteFill style={{background: '#03060b', overflow: 'hidden'}}>
-      <TransitionShell accent={tone} totalF={totalF}>
+      <TransitionShell accent={tone} totalF={totalF} variant={variant}>
         {/* L0 · fondo por mood + wash + viñeta ---------------------------- */}
         <AbsoluteFill style={{background: moodBg(mood, tone)}} />
         <AbsoluteFill

@@ -23,6 +23,8 @@ import {
   moodBg,
   FED_SCENE_F,
   type FedMood,
+
+  type FedTransitionVariant,
 } from './FedererKit';
 
 /* ############################################################################
@@ -50,6 +52,7 @@ import {
  * ########################################################################## */
 
 export type FedPaperProps = {
+  variant?: FedTransitionVariant;
   totalF?: number;
   accent?: string; // '#E9B44C'
   mood?: FedMood; // 'warmdark' (el fondo detrás de la hoja)
@@ -236,6 +239,7 @@ const Highlighter: React.FC<{p: number}> = ({p}) => {
 
 /* ================================================================ ESCENA === */
 export const FedPaper: React.FC<FedPaperProps> = ({
+  variant,
   totalF = FED_SCENE_F,
   accent = DEFAULT_ACCENT,
   mood = 'warmdark',
@@ -391,7 +395,7 @@ export const FedPaper: React.FC<FedPaperProps> = ({
     );
 
   return (
-    <TransitionShell accent={accent} totalF={totalF}>
+    <TransitionShell accent={accent} totalF={totalF} variant={variant}>
       <AbsoluteFill style={{background: '#04030a', overflow: 'hidden'}}>
         {/* =========================== L0 · fondo por mood + wash + viñeta */}
         <AbsoluteFill style={{background: moodBg(mood, accent)}} />
