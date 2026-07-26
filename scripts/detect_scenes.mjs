@@ -41,6 +41,22 @@ if (cur) frases.push(cur);
 const texto = (f) => f.w.join(" ");
 const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
 
+// ── ¿está en español? ────────────────────────────────────────────────────────────────────────
+// TODA la taxonomía son regex en castellano, así que con un guion en inglés el detector devuelve
+// cero — y un cero se lee como "este video no tiene momentos para diseñar", que es una conclusión
+// distinta y falsa. Prefiero que lo diga. (De 45 captions del corpus, 2 estaban en inglés y eran
+// justo los dos que daban 0 candidatos: parecía un agujero de la taxonomía y era el idioma.)
+{
+  const muestra = norm(frases.map(texto).join(" ")).slice(0, 6000);
+  const es = (muestra.match(/\b(que|de|la|el|los|para|con|una|pero|porque)\b/g) || []).length;
+  const en = (muestra.match(/\b(the|and|you|that|with|this|from|your|because)\b/g) || []).length;
+  if (en > es) {
+    console.error(`⚠ ${slug}: el guion NO parece estar en español (marcadores en/es: ${en}/${es}).`);
+    console.error(`  La taxonomía de formas es toda en castellano, así que esto va a devolver 0 o casi 0.`);
+    console.error(`  No es que el video no tenga momentos diseñables: es que este detector no lo puede leer.`);
+  }
+}
+
 // ── TAXONOMÍA: qué forma tiene la frase → qué tratamiento visual pide ────────────────────────
 // `peso` = cuánto rinde visualmente (para rankear cuando hay más candidatos que presupuesto).
 const NUMERO = "(\\d{1,4}|un|una|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|once|doce|veinte|treinta|cuarenta|cincuenta|cien|mil)";
@@ -72,12 +88,48 @@ const FORMAS = [
   { id: "antes_despues", peso: 8,
     re: /\b(antes|solia|hace \d+ anos)\b.{0,80}\b(ahora|hoy|actualmente)\b|\b(ahora|hoy)\b.{0,80}\b(antes|solia)\b/i,
     trata: "Wipe/cortina entre dos estados sobre el MISMO encuadre. La transición va anclada a la palabra bisagra." },
+  // Pedía DÍGITOS (\d) y los guiones son para TTS: la mitad de los números va escrita en palabras
+  // ("sesenta por ciento"). Medido sobre 6 videos: 144 números en dígitos y 145 en palabras. Con
+  // el regex viejo esta forma no disparó NUNCA, en ningún video del corpus.
   { id: "cifra_shock", peso: 9,
-    re: /\b\d{1,3}\s*(%|por ciento)\b|\b(\d{1,3}[.,]\d+|\d{2,})\s*(veces|millones|mil)\b/i,
+    re: new RegExp(`\\b${NUMERO}\\s*(%|por ciento|veces|de cada (diez|cien))\\b|\\b(\\d{1,3}[.,]\\d+|\\d{2,})\\s*(veces|millones|mil)\\b`, "i"),
     trata: "La cifra ENTRA grande con conteo animado y el resto de la pantalla se atenúa. Un solo dato, dominante." },
   { id: "anatomia", peso: 6,
     re: /\b(piel|barrera|celulas|colageno|arterias|circulacion|higado|rinones|intestino|estrato corneo|ceramidas)\b/i,
     trata: "Diagrama por CAPAS que se construye mientras se explica (cada capa entra cuando se la nombra). No una foto de stock." },
+
+  // ── FORMAS DE CUALQUIER NICHO ───────────────────────────────────────────────────────────────
+  // Las de arriba nacieron con el canal médico y se nota: medido sobre 16 videos, los médicos daban
+  // 32.8 momentos y el resto 6.2 (5.3× menos). `anatomia` sola era el 82% de lo médico, y
+  // `cantidad`/`estudio` no dispararon NUNCA fuera de ese nicho — su vocabulario es de ensayo
+  // clínico. Con 6 candidatos por video no hay de dónde elegir, así que en construcción, cocina,
+  // jardín o fauna el detector no servía para nada.
+  // Estas salen del vocabulario REAL de esos videos (1.569 frases de techo/madera/jardín/fauna/
+  // cocina), no de lo que a uno le parece. Cada una calibrada para no pasar del ~4% del corpus:
+  // una forma que dispara en 1 de cada 6 frases no selecciona, inunda.
+  { id: "precio", peso: 9,
+    re: /\b(\$|dolares?|pesos?|centavos)\b|\bcuesta\b|\bte ahorr\w+/i,
+    trata: "Duelo de precios: la cifra barata entra primero y sola; al nombrar la cara, ENTRA al lado y la diferencia se marca. Cada lado su capa, el foco sigue a la locución." },
+  { id: "medida", peso: 8,
+    re: new RegExp(`\\b${NUMERO}\\s*(pulgadas?|centimetros?|metros?|litros?|galones?|kilos?|gramos?|grados?|milimetros?|onzas?|tazas?|cucharadas?|cucharaditas?)\\b`, "i"),
+    trata: "Ficha de medidas tipo plano/receta: cada número entra con su unidad al ser nombrado, con la línea de cota dibujándose. Nunca todos juntos en el frame 0." },
+  { id: "causa_efecto", peso: 8,
+    re: /\b(por eso|lo que pasa es|hace que|provoca|el resultado es|de ahi que)\b/i,
+    trata: "Cadena causal A → B: primero entra la causa, después se traza la flecha, y recién ahí aparece el efecto. El orden de entrada ES la explicación." },
+  { id: "peligro", peso: 8, minSeg: 4,
+    re: /\b(cuidado|nunca|jamas|el error|un error|peligro|ojo con|no hagas|arruina|se arruina|no cometas)\b/i,
+    trata: "Marca de advertencia sobre el elemento en cuestión: trazo rojo que se dibuja encima de lo que NO hay que hacer, mientras el resto se desatura." },
+  { id: "tiempo", peso: 7, minSeg: 4,
+    // Sin "un/una" a propósito: "en UN día de verano" es una ambientación, no una duración.
+    re: /\b(en|durante|cada|tras|despues de)\s+(\d{1,4}|dos|tres|cuatro|cinco|seis|siete|ocho|nueve|diez|quince|veinte|treinta)\s*(segundos?|minutos?|horas?|dias?|semanas?|meses|anos?)\b/i,
+    trata: "El tiempo se comprime en pantalla: contador o barra que corre mientras el material cambia de estado. La espera se VE, no se cuenta." },
+  { id: "lugar", peso: 7,
+    re: /\b(kilometros|hectareas|el parque|el valle|la region|el bosque|la reserva|el rio)\b/i,
+    trata: "Mapa que hace zoom hasta el lugar nombrado y ahí se queda; el recorrido del zoom va anclado a la frase." },
+  // NO está `demo_fisica` (agarrá/mezclá/lijá) aunque el vocabulario está presente: en español el
+  // imperativo y el sustantivo se escriben igual y el regex no los distingue. "nuestra MEZCLA
+  // lisita" y "el punto CLAVE" se colaban como si fueran instrucciones. Era una forma que disparaba
+  // mal más veces de las que acertaba, y un detector con ruido es peor que uno que no detecta.
 ];
 
 // ── barrido ──────────────────────────────────────────────────────────────────────────────────
