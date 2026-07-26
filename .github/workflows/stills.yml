@@ -14,6 +14,10 @@ on:
       total_frames: { description: "frames totales", required: true }
       entry:        { description: "entry propio (ej src/index_<slug>.tsx). vacio = Root.tsx", required: false, default: "" }
       count:        { description: "cuantos frames muestrear", required: false, default: "12" }
+      # Rango opcional: para auditar UNA escena de cerca en vez del video entero. Sin esto sólo se
+      # podia muestrear los 20 min completos, y una escena de 8s no se veia en la cuadricula.
+      from:         { description: "frame inicial (opcional, para auditar una escena)", required: false, default: "" }
+      to:           { description: "frame final (opcional)", required: false, default: "" }
 
 jobs:
   stills:
@@ -61,13 +65,18 @@ jobs:
           mkdir -p stills
           TOTAL=${{ github.event.inputs.total_frames }}
           N=${{ github.event.inputs.count }}
-          # 15 y 45 SIEMPRE: son los frames que verifican que el video abra con el avatar hablando (regla dura)
+          FROM="${{ github.event.inputs.from }}"
+          TO="${{ github.event.inputs.to }}"
+          # Con rango: N frames DENTRO de la escena (y sin forzar 15/45, que son de la apertura).
+          # Sin rango: barrido del video entero + 15 y 45 SIEMPRE (regla dura de apertura con avatar).
           FRAMES=$(node -e "
             const total=+process.argv[1], n=+process.argv[2];
-            const s=new Set([15,45]);
-            for(let i=0;i<n;i++) s.add(Math.min(total-2, Math.round(total*i/n)));
-            console.log([...s].filter(f=>f>=0&&f<total).sort((a,b)=>a-b).join(' '));
-          " "$TOTAL" "$N")
+            const a=process.argv[3]===''?null:+process.argv[3], b=process.argv[4]===''?null:+process.argv[4];
+            const s=new Set();
+            if(a!==null&&b!==null&&b>a){ for(let i=0;i<n;i++) s.add(Math.round(a+(b-a)*i/Math.max(1,n-1))); }
+            else { s.add(15); s.add(45); for(let i=0;i<n;i++) s.add(Math.min(total-2, Math.round(total*i/n))); }
+            console.log([...s].filter(f=>f>=0&&f<total).sort((x,y)=>x-y).join(' '));
+          " "$TOTAL" "$N" "$FROM" "$TO")
           echo "frames: $FRAMES"
           i=0
           for f in $FRAMES; do
