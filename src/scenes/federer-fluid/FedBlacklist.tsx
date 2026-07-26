@@ -28,7 +28,7 @@ import {
   type FedMood,
 
   type FedTransitionVariant,
-} from '../FedererKit';
+} from '../../FedererKit';
 
 /* ############################################################################
  * FED_BLACKLIST — "LA LISTA NEGRA": una ficha de expediente que se SELLA.

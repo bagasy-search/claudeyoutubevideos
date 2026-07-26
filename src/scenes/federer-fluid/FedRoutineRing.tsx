@@ -45,7 +45,7 @@ import {
   type FedMood,
 
   type FedTransitionVariant,
-} from '../FedererKit';
+} from '../../FedererKit';
 
 export type FedRoutineRingProps = {
   variant?: FedTransitionVariant;

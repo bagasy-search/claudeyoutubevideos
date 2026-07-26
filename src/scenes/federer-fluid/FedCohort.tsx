@@ -62,7 +62,7 @@ import {
   rgba,
 
   type FedTransitionVariant,
-} from '../FedererKit';
+} from '../../FedererKit';
 
 /* ------------------------------------------------------------------ tipos */
 

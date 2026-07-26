@@ -41,7 +41,13 @@
         "FedQuote",
         "FedCta"
       ],
-      "verified_at": "2026-07-20"
+      "verified_at": "2026-07-20",
+      "vara": {
+        "archivo": "src/FedererKit.tsx",
+        "componente": "FedOilCarousel",
+        "por_que": "No es un cartel con texto: es una ESCENA con cámara (push-in 1→1.055 en 240f + micro-handheld con seno/coseno desfasados). REACCIONA a la narración: el anillo gira libre y ATERRIZA en la tarjeta que el avatar nombra (easing cubic, vuelta entera antes de frenar) — el foco es un prop, no un hardcode. Está en CAPAS con tiempos propios, no todo junto en el frame 0. Y es reusable: props tipados, sin datos del video adentro.",
+        "aprobada_por_el_creador": true
+      }
     },
     {
       "id": "federer-video",

@@ -25,7 +25,7 @@ import {
   type FedMood,
 
   type FedTransitionVariant,
-} from '../FedererKit';
+} from '../../FedererKit';
 
 /* ############################################################################
  * FED_PAPER — "ACÁ ESTÁ EL ESTUDIO": una página de publicación científica que

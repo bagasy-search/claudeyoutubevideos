@@ -17,7 +17,8 @@ import { readFileSync, existsSync, writeFileSync } from "fs";
 const slug = process.argv[2];
 if (!slug) { console.error("Uso: node scripts/scene_briefs.mjs <slug> [--kit X] [--comp Y] [--total N]"); process.exit(2); }
 const arg = (n, d) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : d; };
-const KIT = arg("--kit", "FedererKit");
+const KIT_ID = arg("--kit", "");          // id del kit en kits.json (ej: federer-fluid, abuela-rosa)
+const KIT = arg("--kitfile", "") || "FedererKit";  // archivo del kit, para el contrato de imports
 const COMP = arg("--comp", "");
 const TOTAL = arg("--total", "");
 const FPS = 30;
@@ -33,20 +34,38 @@ if (!jf) { console.error(`✗ falta _escenas_${slug}.json — corré primero:\n 
 const { elegidos = [] } = JSON.parse(readFileSync(jf, "utf8"));
 if (!elegidos.length) { console.error("✗ el detector no eligió ningún momento"); process.exit(1); }
 
-// La VARA. No es un adjetivo ("que quede lindo"): es un componente real que el creador aprobó,
-// con lo que lo hace bueno explicitado. El subagente lo abre y lo mira antes de escribir.
-const VARA = `
-VARA DE CALIDAD — abrila y miralas ANTES de escribir una línea:
-  src/FedererKit.tsx → FedOilCarousel  (el creador lo aprobó textualmente; es el piso, no el techo)
+// La VARA. No es un adjetivo ("que quede lindo"): es un componente REAL que el creador aprobó, con
+// lo que lo hace bueno explicitado. Sale del kit (kits.json → vara), no está hardcodeada: cada canal
+// tiene la suya, porque la de Federer es médica y oscura y no sirve de referencia para, digamos, una
+// cocina nostálgica.
+//
+// CANAL NUEVO: todavía no tiene ejemplar aprobado (problema del huevo y la gallina). En ese caso se
+// usa el mejor que haya en cualquier kit, pero declarado como referencia de OFICIO, no de LOOK — las
+// mecánicas (capas, cámara, easing, reaccionar a la narración) se transfieren entre estéticas; la
+// paleta y el tono salen de la memoria del canal y de su kit.
+function leerVara(kitId) {
+  try {
+    const reg = JSON.parse(readFileSync("kits.json", "utf8")).kits || [];
+    const mio = reg.find((k) => k.id === kitId);
+    if (mio?.vara) return { v: mio.vara, propia: true };
+    const prestada = reg.find((k) => k.vara?.aprobada_por_el_creador);
+    if (prestada) return { v: prestada.vara, propia: false, de: prestada.label || prestada.id };
+  } catch {}
+  return null;
+}
+const varaInfo = leerVara(KIT_ID);
+const VARA = !varaInfo ? `
+VARA DE CALIDAD: este kit todavía no tiene un ejemplar aprobado. El piso entonces lo ponés vos:
+  una ESCENA con capas y tiempos propios, con cámara (un push-in sutil, nada estático), que REACCIONE
+  a lo que dice el avatar en ese momento, y con props tipados para que sirva en el próximo video.
+  Un cartel con texto encima de una foto NO cumple.` : `
+VARA DE CALIDAD — abrilo y miralo ANTES de escribir una línea:
+  ${varaInfo.v.archivo} → ${varaInfo.v.componente}${varaInfo.propia ? "  (aprobado por el creador para ESTE canal)" : `  ⚠ es de otro canal (${varaInfo.de})`}
   Qué lo hace bueno, y es lo que se te pide igualar:
-   · No es un cartel con texto: es una ESCENA con cámara. Push-in lento (1 → 1.055 en 240 frames)
-     y micro-handheld con seno/coseno desfasados, para que respire.
-   · Reacciona a la NARRACIÓN: el anillo gira libre y ATERRIZA en la tarjeta que el avatar nombra
-     (easing cubic, una vuelta entera antes de frenar). El foco es un prop, no un hardcode.
-   · Está en CAPAS con tiempos propios: fondo, anillo, tarjetas, foco, viñeta — cada una entra
-     cuando le toca, no todo junto en el frame 0.
-   · Es reusable: props tipados (cards, focus, kicker, accent, spinSec, landF), sin nada del video
-     de aquel entonces adentro.`;
+  ${varaInfo.v.por_que}${varaInfo.propia ? "" : `
+  ⛔ COPIÁ EL OFICIO, NO EL LOOK. Ese componente es de otro canal: su paleta, tipografía y clima NO
+     van acá. Lo que se transfiere son las MECÁNICAS (capas con tiempos propios, cámara viva, animar
+     en respuesta a la narración, props tipados). El look sale de la memoria de ESTE canal y su kit.`}`;
 
 const REGLAS = `
 REGLAS DURAS (no negociables):

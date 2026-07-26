@@ -64,7 +64,7 @@ import {
   type FedMood,
 
   type FedTransitionVariant,
-} from '../FedererKit';
+} from '../../FedererKit';
 
 /* ============================== CONTRATO ================================= */
 
