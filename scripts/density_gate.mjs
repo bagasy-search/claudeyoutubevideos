@@ -66,7 +66,7 @@ const seconds = Math.round(totalFrames / FPS);
 // 3) contar visuales DISTINTOS
 const uniq = (re) => [...new Set([...src.matchAll(re)].map((m) => m[1]))];
 const imgs = uniq(/["'`]\/?(?:public\/)?img\/([a-z0-9_\-]+)\.(?:png|jpg|jpeg|webp)/gi);
-const clips = uniq(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/([a-z0-9_\-]+)\.(?:mp4|webm|mov|jpg|png)/gi);
+const clips = uniq(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/(?:[a-z0-9_\-]+\/)?([a-z0-9_\-]+)\.(?:mp4|webm|mov|jpg|png)/gi);
 // Componentes del kit instanciados. GENÉRICO (antes la lista era casi toda de Federer → los otros
 // nichos contaban 0 y el gate los dejaba pasar peladísimos). Ahora: todo <Componente> del JSX menos
 // los primitivos de Remotion y los estructurales (fondo/marco/avatar, que no son "componentes").
@@ -177,7 +177,7 @@ if (wavSec) {
 }
 
 // ── ASSETS REPETIDOS (aviso, no bloqueo: repetir un plano se nota) ─────────────────────────────
-const clipsAll = [...src.matchAll(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/([a-z0-9_\-]+)\.(?:mp4|webm|mov)/gi)].map((m) => m[1]);
+const clipsAll = [...src.matchAll(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/(?:[a-z0-9_\-]+\/)?([a-z0-9_\-]+)\.(?:mp4|webm|mov)/gi)].map((m) => m[1]);
 const rep = Object.entries(clipsAll.reduce((a, c) => ((a[c] = (a[c] || 0) + 1), a), {})).filter(([, n]) => n > 1);
 if (rep.length) console.log(`  ⚠ clips REPETIDOS      : ${rep.length} (${rep.slice(0, 6).map(([c, n]) => `${c}×${n}`).join(", ")}) — bajá más en vez de reciclar`);
 

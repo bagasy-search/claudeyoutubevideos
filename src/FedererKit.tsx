@@ -983,6 +983,7 @@ const LiveDrift: React.FC<{
  * ########################################################################## */
 
 export type FedChapterProps = {
+  totalF?: number;
   kicker?: string;
   index?: string;
   title?: string;
@@ -992,6 +993,7 @@ export type FedChapterProps = {
 };
 
 export const FedChapter: React.FC<FedChapterProps> = ({
+  totalF,
   kicker = 'Capítulo',
   index = '01',
   title = 'El Romero',
@@ -1029,7 +1031,7 @@ export const FedChapter: React.FC<FedChapterProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-chapter" kickF={Math.round(0.7 * fps)} sprigs panDir={1}>
           {(cam) => (
             <>
@@ -1161,6 +1163,7 @@ export const FedChapter: React.FC<FedChapterProps> = ({
  * ########################################################################## */
 
 export type FedHeroProps = {
+  totalF?: number;
   kicker?: string;
   title?: string;
   hot?: string[];
@@ -1173,6 +1176,7 @@ export type FedHeroProps = {
 };
 
 export const FedHero: React.FC<FedHeroProps> = ({
+  totalF,
   kicker = 'Dermocosmética natural',
   title = 'El secreto ya crece en su jardín',
   hot = ['crece'],
@@ -1189,7 +1193,7 @@ export const FedHero: React.FC<FedHeroProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-hero" sprigs panDir={isLeft ? 1 : -1}>
           {(cam) => (
             <>
@@ -1258,6 +1262,7 @@ export const FedHero: React.FC<FedHeroProps> = ({
  * ########################################################################## */
 
 export type FedStatProps = {
+  totalF?: number;
   kicker?: string;
   value?: number;
   suffix?: string;
@@ -1271,6 +1276,7 @@ export type FedStatProps = {
 };
 
 export const FedStat: React.FC<FedStatProps> = ({
+  totalF,
   kicker = 'Estudio clínico · 12 semanas',
   value = 87,
   suffix = '%',
@@ -1306,7 +1312,7 @@ export const FedStat: React.FC<FedStatProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-stat" kickF={endF} panDir={-1}>
           {(cam) => (
             <>
@@ -1454,6 +1460,7 @@ export const FedStat: React.FC<FedStatProps> = ({
  * ########################################################################## */
 
 export type FedQuoteProps = {
+  totalF?: number;
   kicker?: string;
   quote?: string;
   author?: string;
@@ -1464,6 +1471,7 @@ export type FedQuoteProps = {
 };
 
 export const FedQuote: React.FC<FedQuoteProps> = ({
+  totalF,
   kicker = 'Nuestra filosofía',
   quote = 'La piel no necesita más química. Necesita menos.',
   author = 'Dr. Federer',
@@ -1490,7 +1498,7 @@ export const FedQuote: React.FC<FedQuoteProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-quote" panDir={1} pushTo={1.035}>
           {(cam) => (
             <>
@@ -1612,6 +1620,7 @@ export const FedQuote: React.FC<FedQuoteProps> = ({
 export type FedMoleculeNode = {label: string};
 
 export type FedMoleculeProps = {
+  totalF?: number;
   kicker?: string;
   title?: string;
   hot?: string[];
@@ -1624,6 +1633,7 @@ export type FedMoleculeProps = {
 };
 
 export const FedMolecule: React.FC<FedMoleculeProps> = ({
+  totalF,
   kicker = 'Activo estrella',
   title = 'Ácido carnósico',
   hot = ['carnósico'],
@@ -1656,7 +1666,7 @@ export const FedMolecule: React.FC<FedMoleculeProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-molecule" panDir={-1}>
           {(cam) => (
             <>
@@ -1880,6 +1890,7 @@ export const FedMolecule: React.FC<FedMoleculeProps> = ({
  * ########################################################################## */
 
 export type FedStepProps = {
+  totalF?: number;
   step?: number;
   total?: number;
   title?: string;
@@ -1891,6 +1902,7 @@ export type FedStepProps = {
 };
 
 export const FedStep: React.FC<FedStepProps> = ({
+  totalF,
   step = 1,
   total = 3,
   title = 'Infusioná en aceite',
@@ -1920,7 +1932,7 @@ export const FedStep: React.FC<FedStepProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-step" panDir={1} sprigs>
           {(cam) => (
             <>
@@ -2054,6 +2066,7 @@ export const FedStep: React.FC<FedStepProps> = ({
  * ########################################################################## */
 
 export type FedBeforeAfterProps = {
+  totalF?: number;
   kicker?: string;
   title?: string;
   hot?: string[];
@@ -2066,6 +2079,7 @@ export type FedBeforeAfterProps = {
 };
 
 export const FedBeforeAfter: React.FC<FedBeforeAfterProps> = ({
+  totalF,
   kicker = 'Semana 12 · Ritual de romero',
   title = 'Los resultados hablan',
   hot = ['hablan'],
@@ -2124,7 +2138,7 @@ export const FedBeforeAfter: React.FC<FedBeforeAfterProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-ba" panDir={-1} kickF={pEnd} kickAmt={0.012}>
           {(cam) => (
             <>
@@ -2297,6 +2311,7 @@ export const FedBeforeAfter: React.FC<FedBeforeAfterProps> = ({
  * ########################################################################## */
 
 export type FedLowerThirdProps = {
+  totalF?: number;
   name?: string;
   role?: string;
   topic?: string;
@@ -2305,6 +2320,7 @@ export type FedLowerThirdProps = {
 };
 
 export const FedLowerThird: React.FC<FedLowerThirdProps> = ({
+  totalF,
   name = 'Dr. Federer',
   role = 'Dermocosmética natural',
   topic = 'Romero · Ep. 01',
@@ -2344,7 +2360,7 @@ export const FedLowerThird: React.FC<FedLowerThirdProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <AbsoluteFill style={{background: '#0a0805', overflow: 'hidden'}}>
           {/* avatar o fallback cálido */}
           <AbsoluteFill
@@ -2505,6 +2521,7 @@ export const FedLowerThird: React.FC<FedLowerThirdProps> = ({
  * ########################################################################## */
 
 export type FedChecklistProps = {
+  totalF?: number;
   kicker?: string;
   title?: string;
   hot?: string[];
@@ -2514,6 +2531,7 @@ export type FedChecklistProps = {
 };
 
 export const FedChecklist: React.FC<FedChecklistProps> = ({
+  totalF,
   kicker = 'Ritual nocturno',
   title = 'Antes de dormir',
   hot = ['dormir'],
@@ -2535,7 +2553,7 @@ export const FedChecklist: React.FC<FedChecklistProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-check" panDir={1} sprigs>
           {(cam) => (
             <>
@@ -2664,6 +2682,7 @@ export const FedChecklist: React.FC<FedChecklistProps> = ({
  * ########################################################################## */
 
 export type FedCtaProps = {
+  totalF?: number;
   kicker?: string;
   title?: string;
   hot?: string[];
@@ -2675,6 +2694,7 @@ export type FedCtaProps = {
 };
 
 export const FedCta: React.FC<FedCtaProps> = ({
+  totalF,
   kicker = 'Empiece hoy',
   title = 'Su piel se lo va a agradecer',
   hot = ['agradecer'],
@@ -2706,7 +2726,7 @@ export const FedCta: React.FC<FedCtaProps> = ({
 
   return (
     <AbsoluteFill>
-      <TransitionShell accent={accent}>
+      <TransitionShell accent={accent} totalF={totalF}>
         <Stage mood={mood} accent={accent} seed="fed-cta" kickF={btnStart + 8} sprigs panDir={-1}>
           {(cam) => (
             <>
@@ -2820,6 +2840,589 @@ export const FedCta: React.FC<FedCtaProps> = ({
           )}
         </Stage>
       </TransitionShell>
+      <GrainOverlay />
+    </AbsoluteFill>
+  );
+};
+
+/* ############################################################################
+ * FED_FULLSHOT — variante del kit: visual a PANTALLA COMPLETA (foto o clip) con
+ *   Ken-Burns, grade por mood, viñeta y grano. Es el "visual full" del contrato
+ *   avatar-full ↔ visual-full (nunca PiP). Acepta un pie de foto opcional.
+ * ########################################################################## */
+
+export type FedFullShotProps = {
+  totalF?: number;
+  src?: string;
+  video?: boolean;
+  caption?: string;
+  kicker?: string;
+  accent?: string;
+  mood?: FedMood;
+  ken?: 'in' | 'out' | 'left' | 'right';
+  startFrom?: number;
+};
+
+export const FedFullShot: React.FC<FedFullShotProps> = ({
+  totalF,
+  src = FED_ASSETS.aceite,
+  video = false,
+  caption,
+  kicker,
+  accent = DEFAULT_ACCENT,
+  mood = 'warmdark',
+  ken = 'in',
+  startFrom = 0,
+}) => {
+  const frame = useCurrentFrame();
+  const {fps, width, height} = useVideoConfig();
+  const dur = totalF ?? FED_SCENE_F;
+
+  const p = interpolate(frame, [0, dur], [0, 1], CLAMP);
+  const zoom = ken === 'out' ? 1.14 - 0.1 * p : 1.04 + 0.1 * p;
+  const tx =
+    ken === 'left' ? -width * 0.022 * p : ken === 'right' ? width * 0.022 * p : 0;
+  const ty = ken === 'in' || ken === 'out' ? -height * 0.012 * p : 0;
+  const hx = Math.sin(frame * 0.041) * width * 0.0012;
+  const hy = Math.cos(frame * 0.034) * height * 0.0011;
+
+  const dust = React.useMemo(
+    () => makeMotes(9, 'fullshot-dust', 2, 6, 0.01, 0.026, 0.05, 0.14),
+    []
+  );
+
+  const capIn = spring({
+    frame: frame - Math.round(0.35 * fps),
+    fps,
+    config: {damping: 18, stiffness: 110, mass: 0.8},
+  });
+
+  return (
+    <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
+      <TransitionShell accent={accent} totalF={totalF}>
+        <AbsoluteFill
+          style={{
+            transform: `translate(${(tx + hx).toFixed(1)}px, ${(ty + hy).toFixed(
+              1
+            )}px) scale(${zoom.toFixed(4)})`,
+            willChange: 'transform',
+          }}
+        >
+          {video ? (
+            <OffthreadVideo
+              src={src}
+              startFrom={startFrom}
+              muted
+              style={{width: '100%', height: '100%', objectFit: 'cover'}}
+            />
+          ) : (
+            <Img src={src} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+          )}
+        </AbsoluteFill>
+
+        {/* grade por mood + viñeta */}
+        <AbsoluteFill
+          style={{
+            pointerEvents: 'none',
+            background: [
+              mood === 'cool'
+                ? `linear-gradient(160deg, ${rgba(COOL_BLUE, 0.16)}, transparent 46%)`
+                : mood === 'science'
+                ? `linear-gradient(160deg, ${rgba(TEAL, 0.14)}, transparent 46%)`
+                : `linear-gradient(160deg, ${rgba(accent, 0.14)}, transparent 46%)`,
+              'radial-gradient(118% 96% at 50% 45%, transparent 52%, rgba(1,3,9,0.62) 100%)',
+              'linear-gradient(to bottom, rgba(2,4,10,0.34), transparent 20%, transparent 74%, rgba(2,4,10,0.6))',
+            ].join(', '),
+          }}
+        />
+        <MotesLayer motes={dust} blur={1.3} scale={height / 1080} tint="238, 212, 165" />
+
+        {kicker && (
+          <div
+            style={{
+              position: 'absolute',
+              top: height * 0.1,
+              left: width * 0.07,
+              fontFamily: FONT_SANS,
+              fontSize: 16,
+              letterSpacing: 8,
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              color: rgba(accent, 0.92),
+              textShadow: '0 2px 14px rgba(0,0,0,0.8)',
+              opacity: interpolate(frame, [3, 16], [0, 1], CLAMP),
+            }}
+          >
+            {kicker}
+          </div>
+        )}
+
+        {caption && (
+          <div
+            style={{
+              position: 'absolute',
+              left: width * 0.07,
+              right: width * 0.07,
+              bottom: height * 0.11,
+              opacity: interpolate(capIn, [0, 0.35], [0, 1], CLAMP),
+              transform: `translateY(${interpolate(capIn, [0, 1], [26, 0], CLAMP).toFixed(1)}px)`,
+            }}
+          >
+            <div
+              style={{
+                width: 58,
+                height: 3,
+                background: accent,
+                marginBottom: 16,
+                borderRadius: 2,
+                boxShadow: `0 0 14px ${rgba(accent, 0.6)}`,
+              }}
+            />
+            <div
+              style={{
+                fontFamily: FONT_SANS,
+                fontSize: 44,
+                fontWeight: 700,
+                letterSpacing: -0.4,
+                color: '#F4EFE6',
+                lineHeight: 1.12,
+                textShadow: '0 4px 26px rgba(0,0,0,0.82)',
+                maxWidth: '70%',
+              }}
+            >
+              {caption}
+            </div>
+          </div>
+        )}
+      </TransitionShell>
+      <GrainOverlay />
+    </AbsoluteFill>
+  );
+};
+
+/* ############################################################################
+ * FED_OILCAROUSEL — carrusel 3D de tarjetas 3:4 flotantes sobre fondo borroso
+ *   Variante del kit (NO es un kit aparte). Multicapa, estilo After Effects:
+ *     L0 fondo fotográfico desenfocado con deriva lenta
+ *     L1 wash de color + viñeta
+ *     L2 bokeh grande de fondo
+ *     L3 motas de polvo
+ *     L4 anillo 3D con N tarjetas (cilindro, billboard parcial)
+ *     L5 halo detrás de la tarjeta enfocada
+ *     L6 bokeh de primer plano (fuera de foco)
+ *     L7 placa de título de la tarjeta enfocada (reveal por máscara)
+ *     L8 barrido de luz dorada + grano
+ *   focus = -1 → giro libre, todas suaves.  focus = i → el anillo gira una
+ *   vuelta y ATERRIZA con la tarjeta i al frente: esa sale de foco a foco
+ *   (blur 18→0), sube de brillo y saturación, se cuadra a cámara y las demás
+ *   se van a blur alto y penumbra.
+ * ########################################################################## */
+
+export type FedCarouselCard = {
+  image: string;
+  index: string;
+  name: string;
+  tag?: string;
+};
+
+export type FedOilCarouselProps = {
+  cards: FedCarouselCard[];
+  focus?: number;
+  kicker?: string;
+  bg?: string;
+  accent?: string;
+  intro?: boolean;
+  spinSec?: number;
+  landF?: number;
+};
+
+const CARD_W = 400;
+const CARD_H = 533; // 3:4 exacto
+const RING_R = 640;
+
+const CarouselCard: React.FC<{
+  card: FedCarouselCard;
+  i: number;
+  localAngle: number; // posición fija en el anillo (el anillo ya rota por fuera)
+  worldAngle: number; // ángulo real frente a cámara = rot + localAngle
+  accent: string;
+  focused: boolean;
+  anyFocus: boolean;
+  p: number;
+  intro: boolean;
+}> = ({card, i, localAngle, worldAngle, accent, focused, anyFocus, p, intro}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+
+  const rad = (worldAngle * Math.PI) / 180;
+  const front = Math.cos(rad); // 1 = al frente, -1 = atrás
+  const front01 = (front + 1) / 2;
+
+  // entrada escalonada (ensamblado del anillo)
+  const s = intro
+    ? spring({frame: frame - i * 4, fps, config: {damping: 15, mass: 0.7}})
+    : 1;
+
+  // flotación propia de cada tarjeta
+  const bobY = Math.sin(frame * 0.031 + i * 1.7) * 9;
+  const bobR = Math.sin(frame * 0.024 + i * 2.3) * 1.6;
+
+  // la enfocada se cuadra a cámara; el resto queda tangente al cilindro
+  const bill = focused ? 0.25 + 0.75 * p : 0.28;
+
+  const depthScale = 0.8 + 0.2 * front01;
+  const scale = depthScale * (focused ? 1 + 0.24 * p : anyFocus ? 1 - 0.08 * p : 1) * s;
+
+  const blur = focused
+    ? 18 * (1 - p)
+    : anyFocus
+    ? 3 + 4 * (1 - front01) + 9 * p
+    : 1.4 + 5.2 * (1 - front01);
+
+  const bright = focused ? 0.6 + 0.55 * p : anyFocus ? 0.95 - 0.62 * p : 0.62 + 0.38 * front01;
+  const sat = focused ? 0.65 + 0.45 * p : anyFocus ? 1 - 0.55 * p : 0.85;
+
+  const backFade = interpolate(front, [-1, -0.25], [0.18, 1], CLAMP);
+  const opacity = s * backFade * (anyFocus && !focused ? 1 - 0.25 * p : 1);
+
+  // barrido dorado que cruza la tarjeta justo cuando entra en foco
+  const sweep = focused ? Math.sin(interpolate(p, [0.3, 0.95], [0, 1], CLAMP) * Math.PI) : 0;
+  const sweepX = interpolate(p, [0.3, 0.95], [-130, 130], CLAMP);
+
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: '50%',
+        top: '50%',
+        width: CARD_W,
+        height: CARD_H,
+        marginLeft: -CARD_W / 2,
+        marginTop: -CARD_H / 2,
+        transformStyle: 'preserve-3d',
+        transform: [
+          `rotateY(${localAngle}deg)`,
+          `translateZ(${RING_R}px)`,
+          `rotateY(${(-worldAngle * bill).toFixed(2)}deg)`,
+          `translateY(${(bobY + (1 - s) * 480).toFixed(1)}px)`,
+          `rotateX(${(bobR + (1 - s) * 34).toFixed(2)}deg)`,
+          `scale(${scale.toFixed(4)})`,
+        ].join(' '),
+        opacity,
+        zIndex: Math.round(front * 100) + 200,
+        willChange: 'transform, opacity, filter',
+      }}
+    >
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          borderRadius: 18,
+          overflow: 'hidden',
+          filter: `blur(${blur.toFixed(2)}px) brightness(${bright.toFixed(2)}) saturate(${sat.toFixed(2)})`,
+          boxShadow: focused
+            ? `0 42px 90px rgba(0,0,0,0.72), 0 0 0 2px ${rgba(accent, 0.34 + 0.36 * p)}, 0 0 ${(
+                40 * p
+              ).toFixed(0)}px ${rgba(accent, 0.3 * p)}`
+            : '0 26px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.07)',
+          background: '#0a0d14',
+        }}
+      >
+        <Img
+          src={card.image}
+          style={{width: '100%', height: '100%', objectFit: 'cover', display: 'block'}}
+        />
+        {/* grade interno: sombra abajo + luz arriba-izq */}
+        <AbsoluteFill
+          style={{
+            background: [
+              'linear-gradient(to bottom, rgba(0,0,0,0) 46%, rgba(2,4,9,0.82) 100%)',
+              `linear-gradient(142deg, ${rgba(accent, 0.14)} 0%, transparent 44%)`,
+            ].join(', '),
+            pointerEvents: 'none',
+          }}
+        />
+        {/* reflejo de vidrio permanente */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '-20%',
+            bottom: '-20%',
+            left: 0,
+            width: '38%',
+            transform: `translateX(${(-40 + front01 * 150).toFixed(0)}%) skewX(-14deg)`,
+            background:
+              'linear-gradient(100deg, transparent 18%, rgba(255,255,255,0.11) 50%, transparent 82%)',
+            mixBlendMode: 'screen',
+            pointerEvents: 'none',
+          }}
+        />
+        {/* barrido dorado del enfoque */}
+        {sweep > 0.01 && (
+          <div
+            style={{
+              position: 'absolute',
+              top: '-24%',
+              bottom: '-24%',
+              left: 0,
+              width: '46%',
+              transform: `translateX(${sweepX}%) skewX(-16deg)`,
+              background: `linear-gradient(100deg, transparent 20%, ${rgba(
+                accent,
+                0.55
+              )} 50%, transparent 80%)`,
+              mixBlendMode: 'screen',
+              opacity: sweep,
+              pointerEvents: 'none',
+            }}
+          />
+        )}
+      </div>
+      {/* número al pie de cada tarjeta (chiquito, siempre) */}
+      <div
+        style={{
+          position: 'absolute',
+          left: 0,
+          right: 0,
+          bottom: 16,
+          textAlign: 'center',
+          fontFamily: FONT_SANS,
+          fontSize: 15,
+          letterSpacing: 4,
+          fontWeight: 700,
+          color: focused ? accent : 'rgba(255,255,255,0.42)',
+          textShadow: '0 2px 10px rgba(0,0,0,0.8)',
+          filter: focused ? 'none' : `blur(${(blur * 0.5).toFixed(1)}px)`,
+          opacity: opacity,
+        }}
+      >
+        {card.index}
+      </div>
+    </div>
+  );
+};
+
+export const FedOilCarousel: React.FC<FedOilCarouselProps> = ({
+  cards,
+  focus = -1,
+  kicker,
+  bg,
+  accent = DEFAULT_ACCENT,
+  intro = false,
+  spinSec = 26,
+  landF = 34,
+}) => {
+  const frame = useCurrentFrame();
+  const {fps, width, height} = useVideoConfig();
+
+  const n = Math.max(1, cards.length);
+  const step = 360 / n;
+  const anyFocus = focus >= 0 && focus < n;
+
+  const degPerFrame = 360 / (spinSec * fps);
+  const rotFree = -frame * degPerFrame;
+
+  const p = anyFocus
+    ? interpolate(frame, [0, landF], [0, 1], {...CLAMP, easing: Easing.out(Easing.cubic)})
+    : 0;
+
+  const target = -focus * step - 360; // una vuelta entera + aterrizaje
+  const rot = anyFocus
+    ? interpolate(p, [0, 1], [0, target], CLAMP) + Math.sin(frame * 0.021) * 1.4
+    : rotFree;
+
+  // cámara: push-in lento + micro handheld
+  const push = interpolate(frame, [0, 240], [1, 1.055], CLAMP);
+  const hx = Math.sin(frame * 0.019) * width * 0.0018;
+  const hy = Math.cos(frame * 0.026) * height * 0.0015;
+
+  const farMotes = React.useMemo(
+    () => makeMotes(16, 'oilcar-far', 3, 9, 0.05, 0.1, 0.12, 0.32),
+    []
+  );
+  const nearBokeh = React.useMemo(
+    () => makeMotes(5, 'oilcar-bok', 110, 240, 0.01, 0.026, 0.05, 0.12),
+    []
+  );
+
+  const focusedCard = anyFocus ? cards[focus] : null;
+  const plate = anyFocus ? interpolate(p, [0.42, 0.92], [0, 1], CLAMP) : 0;
+
+  return (
+    <AbsoluteFill style={{background: '#04060c', overflow: 'hidden'}}>
+      {/* L0 · fondo fotográfico desenfocado con deriva */}
+      {bg ? (
+        <AbsoluteFill
+          style={{
+            transform: `scale(${(1.24 * push).toFixed(4)}) translate(${(hx * 2).toFixed(
+              1
+            )}px, ${(hy * 2).toFixed(1)}px)`,
+            filter: 'blur(26px) saturate(0.8) brightness(0.44)',
+          }}
+        >
+          <Img src={bg} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        </AbsoluteFill>
+      ) : null}
+
+      {/* L1 · wash + viñeta */}
+      <AbsoluteFill
+        style={{
+          background: [
+            `radial-gradient(90% 80% at 50% 40%, ${rgba(accent, 0.1)} 0%, transparent 62%)`,
+            'radial-gradient(120% 100% at 50% 46%, transparent 44%, rgba(1,3,8,0.88) 100%)',
+            'linear-gradient(to bottom, rgba(2,4,10,0.5), transparent 26%, transparent 68%, rgba(2,4,10,0.72))',
+          ].join(', '),
+        }}
+      />
+
+      {/* L2 · bokeh de fondo */}
+      <MotesLayer motes={nearBokeh} blur={14} scale={height / 1080} tint="240, 208, 150" />
+
+      {/* L3 · polvo */}
+      <MotesLayer motes={farMotes} blur={1.4} scale={height / 1080} tint="235, 210, 160" />
+
+      {/* L5 · halo detrás de la tarjeta enfocada */}
+      {anyFocus && (
+        <AbsoluteFill
+          style={{
+            background: `radial-gradient(38% 46% at 50% 48%, ${rgba(
+              accent,
+              0.3 * p
+            )} 0%, transparent 70%)`,
+            pointerEvents: 'none',
+          }}
+        />
+      )}
+
+      {/* L4 · anillo 3D */}
+      <AbsoluteFill
+        style={{
+          perspective: 1500,
+          perspectiveOrigin: '50% 48%',
+          transform: `translate(${hx.toFixed(1)}px, ${hy.toFixed(1)}px) scale(${push.toFixed(4)})`,
+        }}
+      >
+        <AbsoluteFill
+          style={{
+            transformStyle: 'preserve-3d',
+            transform: `translateY(-14px) rotateX(-7deg) rotateY(${rot.toFixed(3)}deg)`,
+          }}
+        >
+          {cards.map((c, i) => (
+            <CarouselCard
+              key={c.index + i}
+              card={c}
+              i={i}
+              localAngle={i * step}
+              worldAngle={rot + i * step}
+              accent={accent}
+              focused={anyFocus && i === focus}
+              anyFocus={anyFocus}
+              p={p}
+              intro={intro}
+            />
+          ))}
+        </AbsoluteFill>
+      </AbsoluteFill>
+
+      {/* L6 · bokeh de primer plano fuera de foco */}
+      <AbsoluteFill style={{filter: 'blur(16px)', opacity: 0.5, pointerEvents: 'none'}}>
+        <MotesLayer motes={nearBokeh} blur={0} scale={height / 1080} tint="245, 216, 165" />
+      </AbsoluteFill>
+
+      {/* L7 · placa de la tarjeta enfocada */}
+      {focusedCard && plate > 0.01 && (
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            bottom: height * 0.085,
+            textAlign: 'center',
+            clipPath: `inset(0 ${((1 - plate) * 50).toFixed(1)}% 0 ${((1 - plate) * 50).toFixed(
+              1
+            )}%)`,
+            opacity: plate,
+          }}
+        >
+          <div
+            style={{
+              display: 'inline-block',
+              padding: '18px 46px 20px',
+              background:
+                'linear-gradient(180deg, rgba(8,12,20,0.62), rgba(4,7,13,0.86))',
+              border: `1px solid ${rgba(accent, 0.32)}`,
+              borderRadius: 6,
+              backdropFilter: 'blur(6px)',
+              boxShadow: '0 22px 60px rgba(0,0,0,0.6)',
+            }}
+          >
+            <div
+              style={{
+                fontFamily: FONT_SANS,
+                fontSize: 15,
+                letterSpacing: 7,
+                fontWeight: 700,
+                color: accent,
+                marginBottom: 8,
+              }}
+            >
+              {focusedCard.index}
+            </div>
+            <div
+              style={{
+                fontFamily: FONT_SANS,
+                fontSize: 52,
+                fontWeight: 700,
+                letterSpacing: -0.6,
+                color: '#F4EFE6',
+                lineHeight: 1.05,
+                textShadow: '0 4px 24px rgba(0,0,0,0.7)',
+                transform: `translateY(${((1 - plate) * 14).toFixed(1)}px)`,
+              }}
+            >
+              {focusedCard.name}
+            </div>
+            {focusedCard.tag && (
+              <div
+                style={{
+                  fontFamily: FONT_SERIF,
+                  fontStyle: 'italic',
+                  fontSize: 25,
+                  color: 'rgba(232,224,210,0.72)',
+                  marginTop: 8,
+                }}
+              >
+                {focusedCard.tag}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* kicker */}
+      {kicker && (
+        <div
+          style={{
+            position: 'absolute',
+            top: height * 0.085,
+            left: 0,
+            right: 0,
+            textAlign: 'center',
+            fontFamily: FONT_SANS,
+            fontSize: 17,
+            letterSpacing: 9,
+            fontWeight: 700,
+            textTransform: 'uppercase',
+            color: rgba(accent, 0.9),
+            textShadow: '0 2px 16px rgba(0,0,0,0.8)',
+            opacity: interpolate(frame, [4, 20], [0, 1], CLAMP),
+          }}
+        >
+          {kicker}
+        </div>
+      )}
+
       <GrainOverlay />
     </AbsoluteFill>
   );
