@@ -82,22 +82,40 @@ R.momentos_crudos_pct = momentos + comps.length ? Math.round((100 * momentos) / 
 R.top_componentes = Object.entries(comps.reduce((a, c) => ((a[c] = (a[c] || 0) + 1), a), {}))
   .sort((a, b) => b[1] - a[1]).slice(0, 5).map(([k, v]) => `${k}:${v}`);
 
-// variedad por bloque de 5 min
-if (hayCues && R.duracion_s > 300) {
-  const cs = readFileSync(cuesPath, "utf8");
-  const starts = [...cs.matchAll(/start:\s*([\d.]+)/g)].map((m) => ({ i: m.index, t: +m[1] }));
-  const nb = Math.ceil(R.duracion_s / 300);
-  const b = Array.from({ length: nb }, () => new Set());
-  let k = 0;
-  for (const m of cs.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)) {
-    const n = m[1];
-    if (FRAMEWORK.has(n) || ESTRUCTURA.has(n) || TOMAS.has(n)) continue;
-    while (k + 1 < starts.length && starts[k + 1].i < m.index) k++;
-    while (k > 0 && starts[k].i > m.index) k--;
-    b[Math.min(nb - 1, Math.floor(starts[k].t / 300))].add(n);
+// ── VARIEDAD POR TRAMO (5 tramos iguales) ─────────────────────────────────────────────────────
+// Mismo criterio que density_gate, y por la misma razón: el promedio del video tapa que los
+// componentes estén todos al principio. Sirve en los tres estilos de build — con tiempos reales
+// (cues / BEATS) o, si el build es un manifiesto plano, por POSICIÓN en la secuencia.
+const NB = 5;
+{
+  let tr = null;
+  for (const { f, re } of [{ f: cuesPath, re: /start:\s*([\d.]+)/g }, { f: mainPath, re: /startSec:\s*([\d.]+)/g }]) {
+    if (!f || !existsSync(f)) continue;
+    const cs = readFileSync(f, "utf8");
+    const marcas = [...cs.matchAll(re)].map((m) => ({ i: m.index, t: +m[1] }));
+    if (marcas.length < NB) continue;
+    const fin = Math.max(R.duracion_s || 0, ...marcas.map((x) => x.t)) || 1;
+    tr = Array.from({ length: NB }, () => new Set());
+    let k = 0;
+    for (const m of cs.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)) {
+      const n = m[1];
+      if (FRAMEWORK.has(n) || ESTRUCTURA.has(n) || TOMAS.has(n)) continue;
+      while (k + 1 < marcas.length && marcas[k + 1].i < m.index) k++;
+      while (k > 0 && marcas[k].i > m.index) k--;
+      tr[Math.min(NB - 1, Math.floor((marcas[k].t / fin) * NB))].add(n);
+    }
+    R.variedad_medida = "tiempo";
+    break;
   }
-  R.variedad_por_bloque = b.map((x) => x.size);
-  R.bloque_mas_pobre = Math.min(...R.variedad_por_bloque);
+  if (!tr) {
+    const orden = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1]).filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
+    if (orden.length >= NB * 4) {
+      tr = Array.from({ length: NB }, () => new Set());
+      orden.forEach((n, i) => { if (!TOMAS.has(n)) tr[Math.min(NB - 1, Math.floor((i / orden.length) * NB))].add(n); });
+      R.variedad_medida = "posicion";
+    }
+  }
+  if (tr) { R.variedad_por_tramo = tr.map((x) => x.size); R.tramo_mas_pobre = Math.min(...R.variedad_por_tramo); }
 }
 
 // ── APERTURA: la regla dura es avatar full ≥2s y nada antes ───────────────────────────────────
@@ -133,6 +151,8 @@ const puntos = [];
 if (R.pct_mayor_3s != null) puntos.push(clamp(100 - R.pct_mayor_3s));                      // pacing
 if (R.momentos_crudos_pct != null) puntos.push(clamp(160 - 1.6 * R.momentos_crudos_pct));  // variedad
 if (R.componentes_distintos != null) puntos.push(clamp(R.componentes_distintos * 5));
+// el tramo MÁS POBRE pesa: un video con 20 componentes todos en el primer tercio no es variado
+if (R.tramo_mas_pobre != null) puntos.push(clamp(R.tramo_mas_pobre * 20));
 if (R.cobertura_pct != null) puntos.push(clamp(R.cobertura_pct));
 if (R.abre_avatar_full != null) puntos.push(R.abre_avatar_full ? 100 : 0);
 // con menos de 3 señales la nota no dice nada (builds viejos sin cues, sin avatar.gen, etc.)

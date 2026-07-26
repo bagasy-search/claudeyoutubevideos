@@ -108,25 +108,49 @@ const rawPct = (momentos + compUses) ? Math.round((100 * momentos) / (momentos +
 const needVisuals = Math.floor(seconds / VIS_EVERY_S);
 const needClips = Math.floor(seconds / CLIP_EVERY_S);
 
-// ── VARIEDAD POR BLOQUE ───────────────────────────────────────────────────────────────────────
-// El Main_ solo mapea los cues; los componentes CON SU TIEMPO viven en cues_<slug>.gen.tsx.
-// Para cada componente busco el `start:` inmediatamente anterior → lo ubico en su bloque de 5 min.
-let bloques = null;
-const cuesFile = `src/VideoEdit/cues_${slug}.gen.tsx`;
-if (existsSync(cuesFile) && seconds > BLOQUE_S) {
-  const cs = readFileSync(cuesFile, "utf8");
-  const starts = [...cs.matchAll(/start:\s*([\d.]+)/g)].map((m) => ({ i: m.index, t: +m[1] }));
-  if (starts.length) {
-    const nb = Math.ceil(seconds / BLOQUE_S);
-    bloques = Array.from({ length: nb }, () => new Set());
+// ── VARIEDAD POR TRAMO ────────────────────────────────────────────────────────────────────────
+// El promedio del video ENGAÑA: se cumple el mínimo global metiendo todo al principio y después
+// van 10 minutos de fotos seguidas. Hay TRES estilos de build y hay que medir en los tres:
+//   · cues_<slug>.gen.tsx  → `start:` en segundos           (tiempo real)
+//   · BEATS (FedererFluid) → `startSec:` en segundos        (tiempo real)
+//   · Main_ manifiesto     → lista plana de tags, SIN tiempo (se usa la POSICIÓN en la secuencia)
+// Con tiempo real el fallo BLOQUEA. Sin tiempo sólo AVISA: la posición es un proxy razonable
+// (el orden de los tags suele ser el del video) pero no está verificado, y un gate que bloquea
+// por una suposición hace que lo terminen apagando.
+const NB = 5;                                   // el video se parte en 5 tramos iguales
+let tramos = null, tramoReal = false;
+{
+  const fuentes = [
+    { f: `src/VideoEdit/cues_${slug}.gen.tsx`, re: /start:\s*([\d.]+)/g },
+    { f: build, re: /startSec:\s*([\d.]+)/g },
+  ];
+  for (const { f, re } of fuentes) {
+    if (!existsSync(f)) continue;
+    const cs = readFileSync(f, "utf8");
+    const marcas = [...cs.matchAll(re)].map((m) => ({ i: m.index, t: +m[1] }));
+    if (marcas.length < NB) continue;
+    const fin = Math.max(seconds, ...marcas.map((x) => x.t)) || seconds;
+    tramos = Array.from({ length: NB }, () => new Set());
     let k = 0;
     for (const m of cs.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)) {
-      const name = m[1];
-      if (FRAMEWORK.has(name) || ESTRUCTURA.has(name) || TOMAS.has(name)) continue;
-      while (k + 1 < starts.length && starts[k + 1].i < m.index) k++;
-      while (k > 0 && starts[k].i > m.index) k--;
-      const b = Math.min(nb - 1, Math.floor(starts[k].t / BLOQUE_S));
-      bloques[b].add(name);
+      const n = m[1];
+      if (FRAMEWORK.has(n) || ESTRUCTURA.has(n) || TOMAS.has(n)) continue;
+      while (k + 1 < marcas.length && marcas[k + 1].i < m.index) k++;
+      while (k > 0 && marcas[k].i > m.index) k--;
+      tramos[Math.min(NB - 1, Math.floor((marcas[k].t / fin) * NB))].add(n);
+    }
+    tramoReal = true;
+    break;
+  }
+  if (!tramos) {                                 // sin tiempos: reparto por POSICIÓN en la secuencia
+    const orden = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1])
+      .filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
+    if (orden.length >= NB * 4) {
+      tramos = Array.from({ length: NB }, () => new Set());
+      orden.forEach((n, idx) => {
+        if (TOMAS.has(n)) return;
+        tramos[Math.min(NB - 1, Math.floor((idx / orden.length) * NB))].add(n);
+      });
     }
   }
 }
@@ -137,8 +161,8 @@ console.log(`  clips de stock/b-roll : ${clips.length}`);
 console.log(`  usos de componentes   : ${compUses}`);
 console.log(`  momentos CRUDOS       : ${momentos}   → ${rawPct}% de la pantalla sin nada del kit encima (máximo: ${MAX_RAWSHOT_PCT}%)`);
 console.log(`  componentes DISTINTOS : ${compDistinct.length}   (mínimo exigido: ${MIN_COMP})${compDistinct.length ? "  → " + compDistinct.slice(0, 12).join(", ") : ""}`);
-if (bloques) {
-  console.log(`  variedad por bloque   : ${bloques.map((b) => b.size).join(" · ")}   (mínimo ${MIN_COMP_BLOQUE} por bloque de ${BLOQUE_S / 60} min)`);
+if (tramos) {
+  console.log(`  variedad por tramo    : ${tramos.map((b) => b.size).join(" · ")}   (mínimo ${MIN_COMP_BLOQUE} por tramo${tramoReal ? "" : ", medido por POSICIÓN — sin tiempos en el build"})`);
 }
 console.log(`  TOTAL visuales        : ${visuals}   (mínimo exigido: ${needVisuals})`);
 console.log(`  clips de stock        : ${clips.length}   (mínimo exigido: ${needClips})`);
@@ -188,15 +212,15 @@ if (rawPct > MAX_RAWSHOT_PCT) {
   const sug = sugerirComponentes(compDistinct);
   fallos.push(`DEMASIADA TOMA CRUDA: ${rawPct}% de los ${momentos} momentos visuales no tienen NADA del kit encima (máximo ${MAX_RAWSHOT_PCT}%). Así el video es una sucesión de fotos, no una edición. Reemplazá tomas planas por componentes REALES del kit del nicho${sug ? ` — sin usar todavía tenés: ${sug}` : ""}.`);
 }
-// ── VARIEDAD POR BLOQUE: que no haya 5 min seguidos de fotos ──────────────────────────────────
-if (bloques) {
-  const pobres = bloques.map((b, i) => ({ i, n: b.size }))
-    .filter((x) => x.n < MIN_COMP_BLOQUE)
-    // el último bloque puede ser un resto corto: solo cuenta si tiene ≥60s de video
-    .filter((x) => (x.i + 1) * BLOQUE_S - seconds < BLOQUE_S - 60);
+// ── VARIEDAD POR TRAMO: que no haya un tercio del video en fotos seguidas ─────────────────────
+if (tramos) {
+  const pobres = tramos.map((b, i) => ({ i, n: b.size })).filter((x) => x.n < MIN_COMP_BLOQUE);
   if (pobres.length) {
-    const det = pobres.map((x) => `${Math.floor((x.i * BLOQUE_S) / 60)}-${Math.floor(Math.min(seconds, (x.i + 1) * BLOQUE_S) / 60)}min (${x.n})`).join(", ");
-    fallos.push(`TRAMOS PELADOS: ${pobres.length} bloque(s) con menos de ${MIN_COMP_BLOQUE} componentes distintos → ${det}. El promedio del video engaña: ahí el espectador ve fotos seguidas. Meté componentes en ESOS minutos, no al principio.`);
+    const min = (i) => Math.round((i * seconds) / (NB * 60));
+    const det = pobres.map((x) => `${min(x.i)}-${min(x.i + 1)}min (${x.n} distintos)`).join(", ");
+    const msg = `TRAMOS PELADOS: ${pobres.length} de ${NB} tramos con menos de ${MIN_COMP_BLOQUE} componentes distintos → ${det}. El promedio del video engaña: ahí el espectador ve tomas seguidas sin nada encima. Meté componentes en ESOS minutos, no al principio.`;
+    if (tramoReal) fallos.push(msg);
+    else console.log(`\n  ⚠ ${msg}\n    (medido por POSICIÓN en la secuencia porque el build no tiene tiempos — no bloquea, pero miralo)`);
   }
 }
 if (clips.length < needClips) fallos.push(`FALTA B-ROLL REAL: tenés ${clips.length} clips de stock, necesitás ≥${needClips}. Corré el match_v3 / clips-first para bajar clips reales — hoy lo estás salteando.`);
