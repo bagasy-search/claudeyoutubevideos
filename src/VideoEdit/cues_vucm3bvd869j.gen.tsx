@@ -88,7 +88,7 @@ export const CUES: Cue[] = [
     <FedChecklist totalF={304} kicker="Lo que te llevás de este video" title="Cinco causas y un error" hot={['error']} items={['5 causas con nombre y número','Un test de 10 segundos, en tu cama','Un remedio de cocina con su mecanismo','Una advertencia que te puede salvar el pie']} accent={ACC} mood="science" />
   )},
   {start: 134.68, dur: 6.36, node: (
-    <FedStat totalF={191} kicker="El error del final" value={9} suffix=" de cada 10" label="lo están haciendo" sub="Se compra sin receta. Te lo cuento al final." accent={ACC} mood="warmdark" />
+    <FedStat totalF={191} kicker="El error del final" value={9} suffix=" de cada 10" label="lo están haciendo" sub="Se compra sin receta. Te lo cuento al final." image={staticFile('img/vucm3bvd869j/er_gondola_suplementos.jpg')} accent={ACC} mood="warmdark" />
   )},
   {start: 141.18, dur: 3.86, node: (
     <FedFullShot totalF={116} src={staticFile('broll/vucm3bvd869j/_720/d035.mp4')} video ken="in" accent={ACC} mood="warmdark" />
@@ -352,7 +352,7 @@ export const CUES: Cue[] = [
     <FedFullShot totalF={89} src={staticFile('broll/vucm3bvd869j/_720/d086.mp4')} video ken="out" accent={ACC} mood="science" />
   )},
   {start: 653.80, dur: 6.32, node: (
-    <FedStat totalF={190} kicker="Enfermedad arterial periférica" value={3} suffix=" cuadras" label="siempre la misma distancia" sub="Camina, arde, para, se va. Como un reloj." accent={ACC} mood="warmdark" />
+    <FedStat totalF={190} kicker="Enfermedad arterial periférica" value={3} suffix=" cuadras" label="siempre la misma distancia" sub="Camina, arde, para, se va. Como un reloj." image={staticFile('img/vucm3bvd869j/ci_vereda_cuadras.jpg')} accent={ACC} mood="warmdark" />
   )},
   {start: 660.32, dur: 11.54, node: (
     <FedTwoPaths totalF={346} accent={ACC} mood="science" kicker="La pregunta que parte el diagnóstico" question="¿Cuándo te alivia?" left={{answer:'Cuando me muevo',verdict:'NERVIO',sub:'Empeora en reposo, mejora al mover',tone:'cool'}} right={{answer:'Cuando me quedo quieto',verdict:'CIRCULACIÓN',sub:'Aparece caminando, calma al parar',tone:'warm'}} footer="La misma pregunta, dos caminos distintos." />
@@ -604,7 +604,7 @@ export const CUES: Cue[] = [
     <Whiteboard scene={SCENE_AJO_VUCM} theme="white" />
   )},
   {start: 1173.25, dur: 7.72, node: (
-    <FedStat totalF={232} kicker="Revisiones en personas con presión alta" value={8} prefix="−" suffix=" mmHg" label="en la máxima" sub="Y unos 5 en la mínima. Para una cabeza de ajo, es un montón." accent={ACC} mood="gold" />
+    <FedStat totalF={232} kicker="Revisiones en personas con presión alta" value={8} prefix="−" suffix=" mmHg" label="en la máxima" sub="Y unos 5 en la mínima. Para una cabeza de ajo, es un montón." image={staticFile('img/vucm3bvd869j/ci_tensiometro_brazo.jpg')} accent={ACC} mood="gold" />
   )},
   {start: 1180.97, dur: 3.76, node: (
     <FedFullShot totalF={113} src={staticFile('broll/vucm3bvd869j/_720/d075.mp4')} video ken="in" accent={ACC} mood="warmdark" />
