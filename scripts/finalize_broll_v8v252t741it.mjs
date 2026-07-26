@@ -13,9 +13,19 @@ const thin = JSON.parse(fs.readFileSync(`public/broll/dense_thinned_${SLUG}.json
 const caps = JSON.parse(fs.readFileSync(`public/captions_${SLUG}.json`, "utf8"));
 const VEND = Math.min(((caps.words || caps).slice(-1)[0].startMs / 1000) + 1.6, AVATAR_END);
 
-let nVid = 0, nImg = 0, nDrop = 0;
+// Overrides manuales del AUDITOR: cuando Pexels devuelve algo off-topic en un momento importante,
+// se fuerza el asset correcto acá en vez de tocar el track generado (que se reescribe).
+let OVR = {};
+try { OVR = JSON.parse(fs.readFileSync(`_src_overrides_${SLUG}.json`, "utf8")); } catch {}
+
+let nVid = 0, nImg = 0, nDrop = 0, nOvr = 0;
 const kept = [];
 for (const k of thin) {
+  if (OVR[k.name]) {
+    const src = OVR[k.name];
+    if (fs.existsSync(`public/${src}`)) { kept.push({ ...k, src, kind: /\.mp4$/.test(src) ? "vid" : "img" }); nOvr++; continue; }
+    console.warn(`⚠ override de ${k.name} apunta a ${src} y no existe — se ignora`);
+  }
   const mp4 = `public/broll/${SLUG}/${k.name}.mp4`;
   // las imágenes de relleno se convierten a JPG (png2jpg) para que el tar entre en 2 GB
   // el relleno se nombra reemplazando el prefijo: bd_<slug>_NNN → bx_<slug>_NNN (no anteponiendo bx_)
@@ -43,7 +53,7 @@ fs.writeFileSync(`src/_fed6/VideoEdit/federer_${SLUG}_broll.ts`,
 const NB = 12;
 const bins = Array.from({ length: NB }, () => 0);
 for (const b of broll) bins[Math.min(NB - 1, Math.floor(b.start / VEND * NB))]++;
-console.log(`track final: ${broll.length} momentos · ${nVid} video · ${nImg} foto IA · ${nDrop} descartados`);
+console.log(`track final: ${broll.length} momentos · ${nVid} video · ${nImg} foto IA · ${nOvr} override del auditor · ${nDrop} descartados`);
 console.log("por tramo:", bins.join(" "));
 const flojo = bins.map((n, i) => (n < 12 ? `${Math.round(i * VEND / NB)}s` : null)).filter(Boolean);
 if (flojo.length) console.log("⚠ tramos flojos:", flojo.join(" "));
