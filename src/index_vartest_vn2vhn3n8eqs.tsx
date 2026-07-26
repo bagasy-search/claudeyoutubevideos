@@ -3,7 +3,7 @@
 // 100/200/300/400 cae EXACTAMENTE en el mismo instante del whip de entrada de cada una
 // (frame 4 de 12) y las cuatro se comparan en igualdad de condiciones.
 import React from 'react';
-import {AbsoluteFill, Composition, registerRoot, Sequence} from 'remotion';
+import {AbsoluteFill, Composition, registerRoot, Sequence, staticFile} from 'remotion';
 import {FedStat, type FedTransitionVariant} from './FedererKit';
 
 const VARIANTS: FedTransitionVariant[] = ['whip', 'lift', 'iris', 'fold'];
@@ -19,7 +19,7 @@ const VarTest: React.FC = () => (
           suffix="%"
           label="del envejecimiento lo hace el sol"
           sub="mismo contenido en las cuatro, para comparar el gesto"
-          image="/img/vn2_fb_science.png"
+          image={staticFile('img/vn2_fb_science.png')}
           mood="science"
           totalF={DUR}
           accent="#E9B44C"
