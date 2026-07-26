@@ -59,7 +59,9 @@ const AvatarLayer: React.FC<{src: string; cuts: number[]}> = ({src, cuts}) => {
     Math.sin(frame * 0.0071) * width * 0.0016;
   const handY = Math.cos(frame * 0.018) * height * 0.0012;
 
-  const fadeIn = interpolate(frame, [0, Math.round(0.5 * fps)], [1, 0], CLAMP);
+  // SIN fade-in: el video abre con la cara hablando, no con negro (regla del canal;
+  // además un frame 0 negro lo caza el blackdetect del chequeo técnico del farm).
+  const fadeIn = 0;
   const foS = Math.max(0, durationInFrames - Math.round(0.8 * fps));
   const fadeOut = interpolate(frame, [foS, durationInFrames - 1], [0, 1], CLAMP);
 
