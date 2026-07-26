@@ -295,49 +295,49 @@ export const FedTrial: React.FC<FedTrialProps> = ({
   );
 
   /* ---- ventanas de tiempo (fracciones de T) ----------------------------- */
-  const bornA = at(0.05);
-  const bornB = at(0.26);
-  const flyA = at(0.24);
-  const flyB = at(0.56);
+  const bornA = at(0.04);
+  const bornB = at(0.22);
+  const flyA = at(0.2);
+  const flyB = at(0.48);
 
   const plate = interpolate(frame, [at(0.03), at(0.17)], [0, 1], {
     ...CLAMP,
     easing: Easing.out(Easing.cubic),
   });
   const plateSweep = interpolate(frame, [at(0.04), at(0.28)], [0, 1], CLAMP);
-  const railP = interpolate(frame, [at(0.1), at(0.3)], [0, 1], {
+  const railP = interpolate(frame, [at(0.08), at(0.28)], [0, 1], {
     ...CLAMP,
     easing: Easing.out(Easing.cubic),
   });
-  const axisP = interpolate(frame, [at(0.38), at(0.56)], [0, 1], {
+  const axisP = interpolate(frame, [at(0.32), at(0.5)], [0, 1], {
     ...CLAMP,
     easing: Easing.out(Easing.cubic),
   });
 
-  const fillA = interpolate(frame, [at(0.44), at(0.74)], [0, 1], {
+  const fillA = interpolate(frame, [at(0.36), at(0.62)], [0, 1], {
     ...CLAMP,
     easing: EASE_FILL,
   });
-  const fillB = interpolate(frame, [at(0.48), at(0.78)], [0, 1], {
+  const fillB = interpolate(frame, [at(0.4), at(0.66)], [0, 1], {
     ...CLAMP,
     easing: EASE_FILL,
   });
 
-  const deltaP = interpolate(frame, [at(0.76), at(0.88)], [0, 1], {
+  const deltaP = interpolate(frame, [at(0.64), at(0.76)], [0, 1], {
     ...CLAMP,
     easing: Easing.out(Easing.cubic),
   });
 
-  const titleP = interpolate(frame, [at(0.3), at(0.46)], [0, 1], {
+  const titleP = interpolate(frame, [at(0.26), at(0.42)], [0, 1], {
     ...CLAMP,
     easing: Easing.out(Easing.cubic),
   });
-  const subP = interpolate(frame, [at(0.4), at(0.56)], [0, 1], {
+  const subP = interpolate(frame, [at(0.36), at(0.52)], [0, 1], {
     ...CLAMP,
     easing: Easing.out(Easing.cubic),
   });
 
-  const vStart = at(0.72);
+  const vStart = at(0.7);
   const vSpring = spring({
     frame: frame - vStart,
     fps,
@@ -529,12 +529,12 @@ export const FedTrial: React.FC<FedTrialProps> = ({
               position: 'absolute',
               inset: 0,
               clipPath: `inset(${((1 - h / BAR_H) * 100).toFixed(3)}% 0 0 0)`,
-              background: `linear-gradient(180deg, ${css(c, glow ? 1 : 0.78)} 0%, ${css(
+              background: `linear-gradient(180deg, ${css(c, glow ? 1 : 0.88)} 0%, ${css(
                 c,
-                glow ? 0.72 : 0.44
-              )} 44%, ${shade(hex, glow ? 0.36 : 0.2)} 100%)`,
-              boxShadow: glow ? `0 0 44px ${css(c, 0.5)}` : `0 0 12px ${css(c, 0.12)}`,
-              filter: dim ? 'saturate(0.6) brightness(0.78)' : 'none',
+                glow ? 0.84 : 0.66
+              )} 46%, ${shade(hex, glow ? 0.52 : 0.4)} 100%)`,
+              boxShadow: glow ? `0 0 48px ${css(c, 0.52)}` : `0 0 16px ${css(c, 0.18)}`,
+              filter: dim ? 'saturate(0.66) brightness(0.9)' : 'none',
             }}
           >
             {/* trama diagonal en el grupo descartado */}
@@ -544,7 +544,7 @@ export const FedTrial: React.FC<FedTrialProps> = ({
                   position: 'absolute',
                   inset: 0,
                   backgroundImage:
-                    'repeating-linear-gradient(48deg, rgba(0,0,0,0.3) 0px, rgba(0,0,0,0.3) 5px, transparent 5px, transparent 14px)',
+                    'repeating-linear-gradient(48deg, rgba(0,0,0,0.17) 0px, rgba(0,0,0,0.17) 7px, transparent 7px, transparent 20px)',
                 }}
               />
             )}
@@ -1355,9 +1355,9 @@ export const FedTrial: React.FC<FedTrialProps> = ({
                 <div
                   style={{
                     position: 'absolute',
-                    left: 1216,
-                    bottom: 56,
-                    width: 620,
+                    left: 1372,
+                    bottom: 54,
+                    width: 476,
                     display: 'flex',
                     justifyContent: 'flex-end',
                     opacity: Math.min(vIn, 1) * Math.min(1, (holdEnd + 6 - frame) / 6),
@@ -1376,7 +1376,7 @@ export const FedTrial: React.FC<FedTrialProps> = ({
                   <div
                     style={{
                       position: 'relative',
-                      padding: '24px 34px 26px',
+                      padding: '20px 28px 22px',
                       borderRadius: 7,
                       border: `2px solid ${rgba(accent, 0.66)}`,
                       background:
@@ -1405,8 +1405,8 @@ export const FedTrial: React.FC<FedTrialProps> = ({
                       style={{
                         fontFamily: FONT_SANS,
                         fontWeight: 800,
-                        fontSize: 38,
-                        lineHeight: 1.14,
+                        fontSize: 34,
+                        lineHeight: 1.15,
                         letterSpacing: '-0.015em',
                         color: '#F9F3E8',
                         textShadow: '0 4px 22px rgba(0,0,0,0.8)',
