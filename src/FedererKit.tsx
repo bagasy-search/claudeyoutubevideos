@@ -3073,7 +3073,7 @@ const CarouselCard: React.FC<{
   const bill = focused ? 0.25 + 0.75 * p : 0.28;
 
   const depthScale = 0.8 + 0.2 * front01;
-  const scale = depthScale * (focused ? 1 + 0.24 * p : anyFocus ? 1 - 0.08 * p : 1) * s;
+  const scale = depthScale * (focused ? 1 + 0.14 * p : anyFocus ? 1 - 0.08 * p : 1) * s;
 
   const blur = focused
     ? 18 * (1 - p)
