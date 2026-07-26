@@ -21,6 +21,12 @@ const KIT = arg("--kit", "FedererKit");
 const COMP = arg("--comp", "");
 const TOTAL = arg("--total", "");
 const FPS = 30;
+// EXPERIMENTO: N de los encargos salen SIN tratamiento prescrito (sólo la frase, la ventana y la
+// vara). Por qué: la taxonomía del detector está hecha con las ideas que el creador ya usó, así que
+// por construcción no puede superarlo — devuelve sus mismas movidas, mejor colocadas. Los encargos
+// LIBRES son el único lugar donde puede aparecer algo que no se le ocurrió a nadie. Se reparten
+// intercalados para que no queden todos en la parte aburrida del video y la comparación sea justa.
+const LIBRES = +arg("--libres", "0") || 0;
 
 const jf = [`_escenas_${slug}.json`, `public/_escenas_${slug}.json`].find((p) => existsSync(p));
 if (!jf) { console.error(`✗ falta _escenas_${slug}.json — corré primero:\n   node scripts/detect_scenes.mjs ${slug} --top 12 --json > _escenas_${slug}.json`); process.exit(1); }
@@ -52,22 +58,38 @@ REGLAS DURAS (no negociables):
   · Remotion: usá useCurrentFrame/useVideoConfig/interpolate/spring. Nada de setTimeout ni CSS anim.
   · Si necesitás un PNG sin fondo (un frasco, una hoja), pedílo como prop \`src\` — no lo generes vos.`;
 
+// cuáles van libres: intercalados a lo largo de la lista, no todos juntos
+const idxLibres = new Set();
+if (LIBRES > 0) {
+  const paso = elegidos.length / Math.min(LIBRES, elegidos.length);
+  for (let k = 0; k < Math.min(LIBRES, elegidos.length); k++) idxLibres.add(Math.floor(k * paso + paso / 2));
+}
+
 const briefs = elegidos.map((m, i) => {
   const fa = Math.round((m.ms / 1000) * FPS), fb = Math.round((m.fin / 1000) * FPS);
-  const nombre = `Scene${String(i + 1).padStart(2, "0")}${m.forma.replace(/(^|_)(\w)/g, (_, __, c) => c.toUpperCase())}`;
+  const libre = idxLibres.has(i);
+  const nombre = `Scene${String(i + 1).padStart(2, "0")}${libre ? "Libre" : m.forma.replace(/(^|_)(\w)/g, (_, __, c) => c.toUpperCase())}`;
+  const bloqueTrat = libre
+    ? `SIN TRATAMIENTO PRESCRITO — a propósito.
+  No te vamos a decir qué hacer con este momento. Leé la frase, entendé qué está pasando ahí
+  dramáticamente, y diseñá la escena que ESA frase pide. Puede ser cualquier cosa mientras esté
+  a la altura de la vara: una metáfora visual, una construcción por capas, un cambio de escala,
+  lo que se te ocurra. Si tu idea es mejor que "poner una tarjeta con el texto", vas bien.
+  (Este encargo es parte de una prueba: la mitad va dirigida y la mitad libre, para ver de dónde
+  salen las mejores escenas. Jugátela.)`
+    : `TRATAMIENTO PEDIDO:
+  ${m.trata}
+  Esto es un PISO, no un molde. Si se te ocurre algo mejor para ESTA frase, hacelo — pero que sea
+  más rico, nunca más pobre.`;
   return {
-    n: i + 1, nombre, forma: m.forma, tc: m.tc, ms: m.ms, fin: m.fin, frameA: fa, frameB: fb,
+    n: i + 1, nombre, forma: libre ? "libre" : m.forma, libre, tc: m.tc, ms: m.ms, fin: m.fin, frameA: fa, frameB: fb,
     texto: `ENCARGO ${i + 1}/${elegidos.length} — UNA escena, la tuya. No toques el resto del video.
 
 MOMENTO  ${m.tc}  ·  ${m.dur}s  ·  frames ${fa}–${fb}  (ms ${m.ms}–${m.fin})
 EL AVATAR DICE, TEXTUAL:
   "${m.frase}"
 
-FORMA DETECTADA: ${m.forma}${m.formas.length > 1 ? `  (+ ${m.formas.filter((x) => x !== m.forma).join(", ")})` : ""}
-TRATAMIENTO PEDIDO:
-  ${m.trata}
-  Esto es un PISO, no un molde. Si se te ocurre algo mejor para ESTA frase, hacelo — pero que sea
-  más rico, nunca más pobre.
+${libre ? "" : `FORMA DETECTADA: ${m.forma}${m.formas.length > 1 ? `  (+ ${m.formas.filter((x) => x !== m.forma).join(", ")})` : ""}\n`}${bloqueTrat}
 ${VARA}
 ${REGLAS}
 
@@ -99,7 +121,7 @@ const out = `_briefs_${slug}.json`;
 writeFileSync(out, JSON.stringify({ slug, kit: KIT, briefs }, null, 2), "utf8");
 
 console.log(`── ENCARGOS · ${slug} · ${briefs.length} escenas ──\n`);
-briefs.forEach((b) => console.log(`  ${String(b.n).padStart(2)}. ${b.nombre.padEnd(26)} ${b.tc}  frames ${b.frameA}–${b.frameB}`));
+briefs.forEach((b) => console.log(`  ${String(b.n).padStart(2)}. ${b.nombre.padEnd(26)} ${b.tc}  frames ${b.frameA}–${b.frameB}${b.libre ? "   ← LIBRE" : ""}`));
 console.log(`\n  → ${out}`);
 console.log(`\nFAN-OUT: un subagente por encargo, TODOS en paralelo, con Opus. Pasale el campo .texto TAL CUAL.`);
 console.log(`Cuando vuelvan, integrá los ${briefs.length} en el build y recién ahí corré density_gate.`);
