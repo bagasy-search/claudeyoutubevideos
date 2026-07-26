@@ -118,6 +118,12 @@ jobs:
 
   stitch:
     needs: render
+    # Mismo motivo que el paso "persistir chunks": con fail-fast:false, si UN chunk falla los otros
+    # 19 se rendean y suben igual, pero stitch quedaba SKIPPED por depender de render — y se perdian
+    # los 19 buenos. Corriendo igual, alcanza a persistirlos y despues el concat falla ruidosamente
+    # por el que falta. La corrida sale en rojo de todas formas; la diferencia es que el reintento
+    # rendea 1 chunk en vez de 20.
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     # contents:write es OBLIGATORIO: los permisos por defecto del repo son READ, así que sin esto el
     # release chunks-<slug> NO se puede crear. Era la causa de que la persistencia de chunks nunca
@@ -134,6 +140,21 @@ jobs:
           # -R explícito: este job NO hace checkout, así que gh no puede inferir el repo del .git
           gh release download "chunks-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" --dir prev --pattern "*.mp4" || true
           if [ -d prev ]; then cp -n prev/*.mp4 chunks/ 2>/dev/null || true; fi
+      # ── PERSISTIR ANTES DE UNIR (no despues) ───────────────────────────────────────────────
+      # Este paso estaba AL FINAL, despues del concat. O sea: los chunks se guardaban solo si la
+      # union salia bien — justo el caso en que NO hacen falta. Cuando el concat fallaba (p.ej. una
+      # imagen .png que la compresion paso a .jpg) se perdian los 20 chunks ya rendeados y el
+      # re-render parcial de 1 chunk quedaba imposible: "no puede unir porque la corrida original
+      # fallo y no dejo los otros chunks". Guardando ANTES, un fallo de union cuesta 1 chunk, no 20.
+      - name: persistir chunks (para re-render parcial)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          cd chunks
+          R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
+          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
+            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
       - name: install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: concat (todos los N en orden)
@@ -180,15 +201,6 @@ jobs:
           gh release create "$S" "$S.mp4" -R "$R" --title "$S" --notes "MP4 final — publicado por el farm" \
             || gh release upload "$S" "$S.mp4" -R "$R" --clobber
           echo "RELEASE_URL: https://github.com/$R/releases/download/$S/$S.mp4"
-      - name: persistir chunks (para re-render parcial)
-        continue-on-error: true
-        env: { GH_TOKEN: "${{ github.token }}" }
-        run: |
-          cd chunks
-          R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
-          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
-            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
       - name: progreso 100 (Bagasy)
         continue-on-error: true
         run: |
