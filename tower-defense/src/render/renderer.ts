@@ -124,6 +124,23 @@ export class Renderer {
     this.overlay.addChild(this.rangePreview, this.ghost)
     this.stage.addChild(this.world)
 
+    /*
+     * Pase de color global. Va en el `stage` y NO en el `world` a proposito: si
+     * colgara del mundo se moveria con el temblor de camara y en cada sacudida
+     * asomaria un borde sin viñetear. Lo que se mueve es la escena; la lente,
+     * no.
+     */
+    const vignette = new Sprite(this.atlas.vignette)
+    vignette.anchor.set(0.5)
+    vignette.position.set(FIELD_W / 2, FIELD_H / 2)
+    // Se estira mas alla del campo para que las esquinas queden cubiertas aun
+    // con el desplazamiento maximo del temblor.
+    vignette.width = FIELD_W * 1.06
+    vignette.height = FIELD_H * 1.06
+    vignette.blendMode = 'multiply'
+    vignette.eventMode = 'none'
+    this.stage.addChild(vignette)
+
     this.drawBackground(game)
     this.allocProjectiles()
     this.wireEvents(game)
@@ -141,6 +158,23 @@ export class Renderer {
     const p = game.world.path
 
     g.rect(0, 0, FIELD_W, FIELD_H).fill(GROUND.base)
+
+    /*
+     * Mancha de sol, arriba a la izquierda.
+     *
+     * Es la misma direccion de luz que usan los sprites (`LIGHT` en sprites.ts)
+     * y la misma que asume `shade()`. Un suelo de valor plano bajo personajes
+     * iluminados desde un lado los delata como calcomanias: la luz tiene que
+     * caer sobre TODO o sobre nada. Va horneado en el fondo, asi que no cuesta
+     * nada en ejecucion.
+     */
+    // Muchas capas con muy poco alfa: con dos docenas se ven los escalones y el
+    // suelo queda con anillos concentricos, que es peor que no tener la luz.
+    for (let i = 60; i >= 1; i--) {
+      const k = i / 60
+      g.ellipse(FIELD_W * 0.3, FIELD_H * 0.2, FIELD_W * 0.66 * k, FIELD_H * 0.78 * k)
+        .fill({ color: GROUND.lit, alpha: 0.009 })
+    }
 
     /*
      * Manchas de terreno. Con la paleta vieja eran invisibles; con la nueva se
@@ -196,15 +230,10 @@ export class Renderer {
       g.ellipse(x - r * 0.25, y - r * 0.25, r * 0.5, r * 0.35).fill({ color: lighten(GROUND.prop, 0.14), alpha: 0.7 })
     }
 
-    // Viñeta: empuja la mirada al centro del campo.
-    for (let i = 0; i < 5; i++) {
-      const inset = i * 8
-      g.rect(inset, inset, FIELD_W - inset * 2, FIELD_H - inset * 2).stroke({
-        width: 9,
-        color: GROUND.deep,
-        alpha: 0.07,
-      })
-    }
+    // La viñeta ya no se dibuja aca: era un marco de rectangulos concentricos
+    // que solo apagaba el fondo y dejaba a los personajes del borde iluminados
+    // igual que a los del centro. Ahora es un pase sobre TODA la escena, en
+    // `multiply`, montado al final de init().
 
     this.bg.addChild(g)
 

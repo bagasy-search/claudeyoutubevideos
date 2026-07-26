@@ -2,7 +2,7 @@ import { Graphics, Rectangle, Sprite, Texture, type Renderer as PixiRenderer } f
 import { ENEMIES } from '../sim/balance/enemies'
 import { TOWERS } from '../sim/balance/towers'
 import { makeGrainFilter } from './grain'
-import { GROUND, SEMANTIC, darken, ink, lighten, shade, tint } from './palette'
+import { GROUND, SEMANTIC, darken, ink, inkLit, lighten, shade, tint } from './palette'
 
 /**
  * Fabrica de sprites procedural.
@@ -113,9 +113,63 @@ function specFor(id: string, color: number): CreatureSpec {
   }
 }
 
-/** Contorno uniforme y oscuro para todo, como en el estilo de referencia. */
+/** Contorno base: el lado que se aleja de la luz. */
 const INK = 0x2b1a12
 const SCLERA = 0xfff6e6
+
+// -------------------------------------------------- luz, contorno y oclusion
+
+/**
+ * Direccion de la luz, en radianes de pantalla (la Y crece hacia abajo).
+ * -135° = arriba a la izquierda. Es la misma direccion que asumen `shade()` y
+ * `tint()` en la paleta, y la misma que usa la sombra de contacto. Que las tres
+ * coincidan es lo que hace que el conjunto se lea como una escena y no como un
+ * monton de sprites con efectos.
+ */
+const LIGHT = -Math.PI * 0.75
+/** Semiapertura del tramo de contorno iluminado, en radianes. */
+const RIM_SPAN = 1.2
+
+/**
+ * Tramo iluminado del contorno de un circulo.
+ *
+ * Va POR DENTRO del trazo de tinta (de ahi el `- lw * 0.3`): sobrescribe la
+ * mitad interior de la linea oscura y deja la mitad exterior intacta. Asi la
+ * silueta contra el fondo sigue siendo negra — que es lo que sostiene la
+ * legibilidad a 30 px — y lo que cambia es la lectura de volumen.
+ */
+function rimArc(g: Graphics, cx: number, cy: number, r: number, lw: number, color: number): void {
+  const a0 = LIGHT - RIM_SPAN
+  const rr = r - lw * 0.3
+  g.moveTo(cx + Math.cos(a0) * rr, cy + Math.sin(a0) * rr)
+    .arc(cx, cy, rr, a0, LIGHT + RIM_SPAN)
+    .stroke({ width: lw * 0.75, color, cap: 'round' })
+}
+
+/** Lo mismo para un borde recto: el canto superior de una forma con esquinas. */
+function rimEdge(g: Graphics, x0: number, x1: number, y: number, lw: number, color: number): void {
+  g.moveTo(x0, y).lineTo(x1, y).stroke({ width: lw * 0.7, color, cap: 'round' })
+}
+
+/**
+ * Oclusion ambiental: la banda oscura que aparece donde dos formas se juntan.
+ *
+ * Sin esto las partes se leen apiladas — un muñeco de recortes — porque nada
+ * indica que una este metida dentro de la otra. Es probablemente el detalle mas
+ * barato de todos los que separan "formas juntas" de "un cuerpo".
+ *
+ * Graphics no tiene degradados, asi que la caida se aproxima con elipses
+ * concentricas de alfa baja: se acumulan hacia el centro, que es exactamente el
+ * perfil que se busca (mas oscuro en el contacto). El coste es de horneado, no
+ * de ejecucion.
+ */
+function ao(g: Graphics, x: number, y: number, rx: number, ry: number, color: number, alpha = 0.5): void {
+  const steps = 3
+  for (let i = steps; i >= 1; i--) {
+    const k = i / steps
+    g.ellipse(x, y, rx * k, ry * k).fill({ color, alpha: alpha / steps })
+  }
+}
 
 /**
  * Un paso de verdad, no un pataleo.
@@ -160,6 +214,15 @@ function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): v
   // cuatro miembros se funden en un solo bloque en la silueta.
   const arm = shade(s.color, 0.16)
   const face = tint(s.color, 0.2)
+  // Contorno del lado iluminado, uno por material: el contorno de una pierna en
+  // sombra no puede aclararse tanto como el de la cara.
+  const rimBody = inkLit(body)
+  const rimLeg = inkLit(leg, 0.62)
+  const rimArm = inkLit(arm, 0.58)
+  const rimFace = inkLit(face, 0.44)
+  // La oclusion se tiñe con el color del objeto, no con negro: el negro plano
+  // en las juntas se lee como suciedad.
+  const occ = shade(s.color, 0.62)
 
   const swing = Math.sin(phase)
   // El cuerpo baja en cada pisada: dos veces por ciclo.
@@ -182,33 +245,31 @@ function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): v
   const lift = r * 0.19
 
   // Piernas.
+  const legX: number[] = []
   for (const side of [-1, 1]) {
     const ph = side > 0 ? phase : phase + Math.PI
     const step = footCycle(ph, reach, lift)
-    g.roundRect(
-      side * r * s.bodyW * 0.34 + step.x - (r * s.legW) / 2 + sway,
-      feetY - r * s.legH + step.y,
-      r * s.legW,
-      r * s.legH,
-      r * s.legW * 0.45,
-    )
+    const lx = side * r * s.bodyW * 0.34 + step.x + sway
+    const ly = feetY - r * s.legH + step.y
+    legX.push(lx)
+    g.roundRect(lx - (r * s.legW) / 2, ly, r * s.legW, r * s.legH, r * s.legW * 0.45)
       .fill({ color: leg })
       .stroke(outline)
+    rimEdge(g, lx - r * s.legW * 0.3, lx + r * s.legW * 0.2, ly + lw * 0.35, lw, rimLeg)
   }
 
   // Brazos, en contrafase con las piernas.
+  const armAnchor: { x: number; y: number }[] = []
   if (s.arms) {
     for (const side of [-1, 1]) {
       const sw = -swing * side * r * 0.16
-      g.roundRect(
-        side * (r * s.bodyW * 0.5) - (r * s.armW) / 2 + sway,
-        bodyY - r * 0.16 + sw,
-        r * s.armW,
-        r * 0.5,
-        r * s.armW * 0.5,
-      )
+      const ax = side * (r * s.bodyW * 0.5) + sway
+      const ay = bodyY - r * 0.16 + sw
+      armAnchor.push({ x: ax, y: ay })
+      g.roundRect(ax - (r * s.armW) / 2, ay, r * s.armW, r * 0.5, r * s.armW * 0.5)
         .fill({ color: arm })
         .stroke(outline)
+      rimEdge(g, ax - r * s.armW * 0.28, ax + r * s.armW * 0.2, ay + lw * 0.35, lw, rimArm)
     }
   }
 
@@ -218,17 +279,36 @@ function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): v
   g.roundRect(-bw * 0.5 + sway, bodyY - bh * 0.5, bw, bh, r * 0.3)
     .fill({ color: body })
     .stroke(outline)
+  rimEdge(g, sway - bw * 0.28, sway + bw * 0.3, bodyY - bh * 0.5 + lw * 0.4, lw, rimBody)
 
-  // Oclusion bajo la cabeza: pega las dos formas en vez de dejarlas apiladas.
-  g.ellipse(sway, bodyY - bh * 0.42, bw * 0.36, bh * 0.16)
-    .fill({ color: shade(s.color, 0.45), alpha: 0.55 })
+  /*
+   * Oclusion en cada junta. El cuerpo se dibuja DESPUES de los miembros, asi
+   * que la sombra que los miembros proyectan sobre el torso hay que ponerla
+   * aca: si se pusiera antes, el relleno del cuerpo la taparia.
+   */
+  // Cuello.
+  ao(g, sway, bodyY - bh * 0.42, bw * 0.34, bh * 0.2, occ, 0.6)
+  // Donde salen los brazos.
+  for (const a of armAnchor) {
+    ao(g, a.x - Math.sign(a.x - sway || 1) * bw * 0.06, a.y + r * 0.06, r * s.armW * 0.6, r * 0.2, occ, 0.5)
+  }
+  // Donde salen las piernas: banda a lo ancho de la base del torso.
+  for (const lx of legX) {
+    ao(g, lx * 0.72 + sway * 0.28, bodyY + bh * 0.44, r * s.legW * 0.85, bh * 0.16, occ, 0.45)
+  }
 
   // Hombreras: como se lee "blindado" de un vistazo.
   if (s.shoulders > 0) {
     for (const side of [-1, 1]) {
-      g.ellipse(side * bw * 0.46 + sway, bodyY - bh * 0.26, r * s.shoulders * 0.42, r * s.shoulders * 0.34)
-        .fill({ color: tint(s.color, 0.34) })
-        .stroke(outline)
+      const sx = side * bw * 0.46 + sway
+      const sy = bodyY - bh * 0.26
+      const srx = r * s.shoulders * 0.42
+      const sry = r * s.shoulders * 0.34
+      // La sombra que la hombrera tira sobre el torso, antes de dibujarla.
+      ao(g, sx - side * srx * 0.25, sy + sry * 0.7, srx * 0.9, sry * 0.55, occ, 0.55)
+      const plate = tint(s.color, 0.34)
+      g.ellipse(sx, sy, srx, sry).fill({ color: plate }).stroke(outline)
+      rimArc(g, sx, sy, Math.min(srx, sry), lw, inkLit(plate, 0.42))
     }
   }
 
@@ -268,12 +348,34 @@ function drawCreature(g: Graphics, r: number, s: CreatureSpec, phase: number): v
   // Luz de borde arriba: separa la cabeza del fondo.
   g.ellipse(sway - hr * 0.26, headY - hr * 0.5, hr * 0.38, hr * 0.14)
     .fill({ color: tint(s.color, 0.5), alpha: 0.38 })
+  // Contorno iluminado: el tramo de arriba a la izquierda deja de ser tinta.
+  rimArc(g, sway, headY, hr, lw, rimFace)
+  // Y la oclusion de lo que se apoya sobre la cabeza, que se dibujo antes que
+  // ella y por lo tanto quedo tapado.
+  if (s.crown > 0) {
+    for (const t of [-1, 0, 1]) {
+      ao(g, sway + t * r * s.headR * 0.62, headY - hr * 0.7, r * 0.2, r * 0.12, occ, 0.5)
+    }
+  }
+  if (s.ears > 0) {
+    for (const side of [-1, 1]) {
+      ao(g, sway - side * hr * 0.82, headY - hr * 0.1, hr * 0.3, hr * 0.4, occ, 0.45)
+    }
+  }
 
   // Cara. Los ojos son el 60% de la lectura del personaje.
   const eyeX = hr * 0.42
   const eyeY = headY + hr * 0.12
   const eyeR = r * s.eyeR
   for (const side of [-1, 1]) {
+    /*
+     * La cuenca: los ojos estan HUNDIDOS en el craneo, no pegados encima.
+     *
+     * Tiene que quedar mas chica que la separacion entre los ojos. Con el radio
+     * generoso que probe primero las dos cuencas se tocaban en el puente de la
+     * nariz y el conjunto se leia como un antifaz, no como dos hoyos.
+     */
+    ao(g, sway + side * eyeX, eyeY - eyeR * 0.3, eyeR * 0.95, eyeR * 1.15, occ, 0.22)
     g.ellipse(sway + side * eyeX, eyeY, eyeR * 0.78, eyeR)
       .fill({ color: SCLERA })
       .stroke({ width: lw * 0.7, color: INK })
@@ -323,21 +425,33 @@ function drawTowerBase(g: Graphics, r: number, color: number): void {
   g.poly([-r * 0.86, r * 1.02, -r * 0.62, r * 0.42, r * 0.62, r * 0.42, r * 0.86, r * 1.02])
     .fill({ color: stone })
     .stroke(outline)
+  rimEdge(g, -r * 0.7, -r * 0.2, r * 0.46, lw, inkLit(stone, 0.5))
   g.ellipse(0, r * 0.42, r * 0.62, r * 0.2).fill({ color: lighten(stone, 0.2) }).stroke(outline)
+
+  const occ = shade(color, 0.6)
 
   // Cuerpo de la torre.
   g.roundRect(-r * 0.5, -r * 0.55, r, r * 1.02, r * 0.22)
     .fill({ color })
     .stroke(outline)
+  // Donde el cuerpo se mete en el pedestal.
+  ao(g, 0, r * 0.44, r * 0.5, r * 0.13, occ, 0.55)
+  rimEdge(g, -r * 0.32, r * 0.06, -r * 0.52, lw, inkLit(color, 0.46))
+  // Tronera: hundida, con su propia oclusion arriba.
   g.roundRect(-r * 0.32, -r * 0.34, r * 0.64, r * 0.42, r * 0.16)
     .fill({ color: darken(color, 0.28) })
     .stroke({ width: lw * 0.7, color: INK })
+  ao(g, 0, -r * 0.3, r * 0.3, r * 0.12, occ, 0.5)
 
   // Almenas.
   for (const t of [-1, 0, 1]) {
+    // La sombra que cada almena tira sobre la coronacion del cuerpo.
+    ao(g, t * r * 0.34 + r * 0.06, -r * 0.46, r * 0.16, r * 0.07, occ, 0.5)
+    const cap = lighten(color, 0.18)
     g.roundRect(t * r * 0.34 - r * 0.14, -r * 0.8, r * 0.28, r * 0.32, r * 0.07)
-      .fill({ color: lighten(color, 0.18) })
+      .fill({ color: cap })
       .stroke(outline)
+    rimEdge(g, t * r * 0.34 - r * 0.1, t * r * 0.34 + r * 0.04, -r * 0.77, lw, inkLit(cap, 0.42))
   }
 }
 
@@ -358,23 +472,34 @@ function drawCharacterTower(g: Graphics, r: number, color: number, phase: number
   const limb = darken(color, 0.2)
   const metal = 0x8a7a5e
 
+  const occ = shade(color, 0.6)
+
   g.ellipse(0, r * 0.95, r * 0.7, r * 0.2).fill({ color: INK, alpha: 0.22 })
 
   for (const side of [-1, 1]) {
     g.roundRect(side * r * 0.26 - r * 0.13, r * 0.5, r * 0.26, r * 0.42, r * 0.12)
       .fill({ color: limb })
       .stroke(outline)
+    rimEdge(g, side * r * 0.26 - r * 0.1, side * r * 0.26 + r * 0.02, r * 0.53, lw, inkLit(limb, 0.6))
   }
 
   // Cuerpo.
   g.roundRect(-r * 0.42, r * 0.02 + breathe, r * 0.84, r * 0.6, r * 0.22)
     .fill({ color })
     .stroke(outline)
+  rimEdge(g, -r * 0.26, r * 0.06, r * 0.05 + breathe, lw, inkLit(color, 0.46))
+  // Donde salen las piernas.
+  for (const side of [-1, 1]) {
+    ao(g, side * r * 0.26, r * 0.55 + breathe, r * 0.15, r * 0.1, occ, 0.5)
+  }
 
   // Arma cruzada al frente: es lo que dice "esto dispara".
+  // Primero la sombra que tira sobre el pecho, despues el arma.
+  ao(g, r * 0.1, r * 0.26 + breathe, r * 0.32, r * 0.09, occ, 0.5)
   g.roundRect(-r * 0.1, r * 0.28 + breathe, r * 1.05, r * 0.24, r * 0.1)
     .fill({ color: metal })
     .stroke(outline)
+  rimEdge(g, r * 0.0, r * 0.72, r * 0.31 + breathe, lw, inkLit(metal, 0.5))
   g.ellipse(r * 0.95, r * 0.4 + breathe, r * 0.1, r * 0.16)
     .fill({ color: darken(metal, 0.5) })
     .stroke(outline)
@@ -382,7 +507,13 @@ function drawCharacterTower(g: Graphics, r: number, color: number, phase: number
   // Cabeza y cara.
   const hy = -r * 0.42 + breathe
   g.circle(0, hy, r * 0.46).fill({ color: face }).stroke(outline)
+  rimArc(g, 0, hy, r * 0.46, lw, inkLit(face, 0.44))
+  // Sombra de la cresta sobre el craneo, que se dibuja despues.
+  for (const t of [-1, 0, 1]) {
+    ao(g, t * r * 0.2 + r * 0.03, hy - r * 0.33, r * 0.1, r * 0.06, occ, 0.45)
+  }
   for (const side of [-1, 1]) {
+    ao(g, side * r * 0.18, hy + r * 0.02, r * 0.16, r * 0.19, occ, 0.4)
     g.ellipse(side * r * 0.18, hy + r * 0.04, r * 0.11, r * 0.14)
       .fill({ color: SCLERA })
       .stroke({ width: lw * 0.7, color: INK })
@@ -443,6 +574,39 @@ function drawProjectile(g: Graphics, kind: number): void {
   }
 }
 
+/**
+ * Viñeta: el pase de color global, hecho con una sola textura y sin shader.
+ *
+ * Se dibuja sobre todo el campo en modo `multiply`, asi que lo blanco no toca
+ * nada y lo oscuro apaga. Dos razones para que sea una textura y no un filtro:
+ * un filtro de pantalla completa obliga a un cambio de framebuffer por frame, y
+ * esto se hornea una vez y despues es un sprite mas.
+ *
+ * El color de las esquinas no es gris: es un violeta frio. Apagar con gris
+ * neutro solo baja el brillo; apagar con el tono de la sombra ambiente hace que
+ * los bordes se lean como distancia y deja el centro del tablero — que es donde
+ * pasa el juego — mas calido por contraste.
+ */
+const VIGNETTE_R = 160
+
+function drawVignette(g: Graphics): void {
+  const corner = 0x6d6478
+  g.rect(-VIGNETTE_R, -VIGNETTE_R, VIGNETTE_R * 2, VIGNETTE_R * 2).fill({ color: corner })
+  /*
+   * Discos de blanco a alfa baja, de afuera hacia adentro. El alfa se acumula,
+   * asi que la caida sale exponencial y suave.
+   *
+   * Muchos pasos con poco alfa, no pocos con mucho: con 30 discos al 11% cada
+   * salto es visible y la viñeta se lee como una diana. El coste de subir a 64
+   * es de horneado, o sea ninguno.
+   */
+  const steps = 64
+  for (let i = 0; i < steps; i++) {
+    const k = i / steps
+    g.circle(0, 0, VIGNETTE_R * 1.34 * (1 - k * 0.72)).fill({ color: 0xffffff, alpha: 0.055 })
+  }
+}
+
 /** Punto suave para partículas: un disco con caída de alfa hacia el borde. */
 function drawSoft(g: Graphics): void {
   for (let i = 10; i >= 1; i--) {
@@ -468,6 +632,8 @@ export interface Atlas {
   portal: Texture
   core: Texture
   aura: Texture
+  /** Pase de color global. Va en `multiply` sobre todo el campo. */
+  vignette: Texture
 }
 
 export function buildAtlas(renderer: PixiRenderer): Atlas {
@@ -553,6 +719,9 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
     .stroke({ width: 2.5, color: ink(SEMANTIC.hpFull, 0.5) })
   coreG.poly([0, -11, 8, 0, 0, 11, -8, 0]).fill({ color: SEMANTIC.crit, alpha: 0.9 })
 
+  const vignetteG = new Graphics()
+  drawVignette(vignetteG)
+
   const auraG = new Graphics()
   for (let i = 6; i >= 1; i--) {
     auraG.circle(0, 0, (i / 6) * 30).fill({ color: 0xffffff, alpha: 0.07 })
@@ -571,5 +740,6 @@ export function buildAtlas(renderer: PixiRenderer): Atlas {
     portal: bake(renderer, portalG, 34, 2),
     core: bake(renderer, coreG, 34, 2),
     aura: bake(renderer, auraG, 32, 2, false),
+    vignette: bake(renderer, vignetteG, VIGNETTE_R, 1, false),
   }
 }

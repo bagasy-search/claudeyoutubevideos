@@ -168,6 +168,28 @@ export function ink(color: number, amount = 0.62): number {
 }
 
 /**
+ * Contorno del lado ILUMINADO.
+ *
+ * Un contorno de un solo color es lo que delata al dibujo hecho por programa.
+ * En el arte de personajes el contorno no es una linea: es la parte de la forma
+ * que se curva y se aleja de la camara, asi que RECIBE LUZ igual que el resto.
+ * Donde la superficie mira a la fuente, el contorno se aclara y se calienta;
+ * donde se aleja, se hunde en `ink()`.
+ *
+ * El limite duro en 0.72 de luminosidad no es decorativo: si el contorno del
+ * lado iluminado se acerca demasiado al blanco, la silueta se abre y la figura
+ * deja de recortarse contra el fondo, que es lo unico que no se puede perder.
+ */
+export function inkLit(color: number, amount = 0.5): number {
+  const o = toOklch(color)
+  return fromOklch({
+    l: Math.min(0.72, o.l * (1 - amount) + 0.2),
+    c: o.c * 0.72,
+    h: rotateToward(o.h, KEY_HUE, 0.7),
+  })
+}
+
+/**
  * Varia una instancia sin sacarla de su familia de color.
  *
  * El tono y el croma se mueven con holgura; la LUMINOSIDAD casi nada. Es la que
