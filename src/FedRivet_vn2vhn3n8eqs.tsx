@@ -120,22 +120,30 @@ const DoubleBond: React.FC<{
   const L = Math.hypot(dx, dy) || 1;
   const nx = (-dy / L) * off;
   const ny = (dx / L) * off;
+  // el par se acorta hacia el centro del enlace: lectura química correcta
+  const mx = (a.x + b.x) / 2;
+  const my = (a.y + b.y) / 2;
+  const k = 0.74;
+  const ax = mx - (dx / 2) * k;
+  const ay = my - (dy / 2) * k;
+  const bx = mx + (dx / 2) * k;
+  const by = my + (dy / 2) * k;
   return (
     <g opacity={opacity}>
       <line
-        x1={a.x + nx}
-        y1={a.y + ny}
-        x2={b.x + nx}
-        y2={b.y + ny}
+        x1={ax + nx}
+        y1={ay + ny}
+        x2={bx + nx}
+        y2={by + ny}
         stroke={color}
         strokeWidth={w}
         strokeLinecap="round"
       />
       <line
-        x1={a.x - nx}
-        y1={a.y - ny}
-        x2={b.x - nx}
-        y2={b.y - ny}
+        x1={ax - nx}
+        y1={ay - ny}
+        x2={bx - nx}
+        y2={by - ny}
         stroke={color}
         strokeWidth={w}
         strokeLinecap="round"
@@ -196,7 +204,7 @@ const Molecule: React.FC<{
             b={pts[k + 1]}
             color={hot}
             w={strokeW * 0.72}
-            off={strokeW * 1.5}
+            off={strokeW * 1.02}
             opacity={interpolate(reveal, [k / pts.length, (k + 1.4) / pts.length], [0, 1], CLAMP)}
           />
         ) : null
@@ -323,12 +331,12 @@ const Lamella: React.FC<{
   const par = 0.35 + (i / Math.max(1, n - 1)) * 0.95;
 
   const order = 1 - Math.max(0, Math.min(1, dis));
-  const bright = 0.5 + 0.62 * order;
-  const blur = 0.4 + 3.4 * (1 - order) + (1 - i / n) * 0.9;
-  const sat = cold ? 0.55 + 0.25 * order : 0.72 + 0.5 * order;
+  const bright = 0.68 + 0.5 * order;
+  const blur = 0.3 + 2.1 * (1 - order) + (1 - i / n) * 0.7;
+  const sat = cold ? 0.6 + 0.25 * order : 0.75 + 0.45 * order;
 
-  const edge = 0.1 + 0.62 * order;
-  const base = shade(tone, 0.34);
+  const edge = 0.22 + 0.55 * order;
+  const base = shade(tone, 0.42);
 
   return (
     <div
@@ -354,10 +362,10 @@ const Lamella: React.FC<{
           `0 0 ${(34 * order).toFixed(0)}px ${rgba(tone, 0.26 * order)}`,
         ].join(', '),
         background: [
-          `linear-gradient(180deg, ${rgba(tone, 0.3 + 0.2 * order)} 0%, ${rgba(base, 0.86)} 38%, ${rgba(
+          `linear-gradient(180deg, ${rgba(tone, 0.44 + 0.2 * order)} 0%, ${rgba(base, 0.95)} 38%, ${rgba(
             base,
-            0.92
-          )} 62%, ${rgba(tone, 0.24 + 0.18 * order)} 100%)`,
+            0.98
+          )} 62%, ${rgba(tone, 0.36 + 0.18 * order)} 100%)`,
           'linear-gradient(90deg, rgba(2,5,10,0.9) 0%, transparent 12%, transparent 88%, rgba(2,5,10,0.9) 100%)',
         ].join(', '),
         overflow: 'hidden',
@@ -493,8 +501,8 @@ export const FedRivet: React.FC<FedRivetProps> = ({
   const shock = kick * (isRivet ? 1 : 1.5);
 
   /* ---- separación de las láminas ---- */
-  const gapBase = 66 * S;
-  const gapExtra = (isRivet ? 10 * disC : 46 * disC) * S;
+  const gapBase = 76 * S;
+  const gapExtra = (isRivet ? 12 * disC : 52 * disC) * S;
 
   /* ---- geometría de las moléculas ---- */
   const cer = React.useMemo(() => buildChain(22, 25, 10, -9), []);
@@ -506,8 +514,8 @@ export const FedRivet: React.FC<FedRivetProps> = ({
   const flyDoubles = isRivet ? [8, 11] : [8];
 
   /* ---- punto de acople ---- */
-  const dockX = isRivet ? 985 : 905;
-  const dockY = isRivet ? 320 : 596;
+  const dockX = isRivet ? 985 : 900;
+  const dockY = isRivet ? 398 : 636;
 
   /* ---- trayectoria de la cadena viajera (3 tiempos: vuela · apunta · clava) ---- */
   const posAt = React.useCallback(
@@ -626,7 +634,7 @@ export const FedRivet: React.FC<FedRivetProps> = ({
                 100
               ).toFixed(1)}%, ${rgba(tone, 0.12 + 0.16 * flash)} 0%, transparent 66%)`,
               'radial-gradient(122% 100% at 50% 46%, transparent 40%, rgba(1,3,8,0.9) 100%)',
-              'linear-gradient(to bottom, rgba(2,4,10,0.55), transparent 24%, transparent 66%, rgba(2,4,10,0.78))',
+              'linear-gradient(to bottom, rgba(2,4,10,0.55), transparent 24%, transparent 74%, rgba(2,4,10,0.6))',
             ].join(', '),
           }}
         />
@@ -656,10 +664,10 @@ export const FedRivet: React.FC<FedRivetProps> = ({
           <div
             style={{
               position: 'absolute',
-              left: X(280),
-              top: Y(760),
-              width: 1380 * S,
-              height: 300 * S,
+              left: X(290),
+              top: Y(700),
+              width: 1360 * S,
+              height: 290 * S,
               background: `radial-gradient(50% 50% at 50% 50%, ${rgba(
                 tone,
                 0.1 + 0.26 * (1 - Math.min(1, disC))
@@ -673,21 +681,21 @@ export const FedRivet: React.FC<FedRivetProps> = ({
         <AbsoluteFill
           style={{
             ...camStyle,
-            perspective: 1500 * S,
-            perspectiveOrigin: '50% 38%',
+            perspective: 2300 * S,
+            perspectiveOrigin: '50% 50%',
           }}
         >
           <div
             style={{
               position: 'absolute',
               left: cx,
-              top: Y(742),
+              top: Y(716),
               width: 0,
               height: 0,
               transformStyle: 'preserve-3d',
               transform: [
-                `rotateX(${(56 - 5 * (1 - Math.min(1, disC)) + shock * 1.6).toFixed(2)}deg)`,
-                `rotateZ(${(-2.4 + Math.sin(frame * 0.017) * 0.5 + disC * 1.1).toFixed(2)}deg)`,
+                `rotateX(${(50 - 4 * (1 - Math.min(1, disC)) + shock * 1.6).toFixed(2)}deg)`,
+                `rotateZ(${(-1.2 + Math.sin(frame * 0.017) * 0.4 + disC * 0.9).toFixed(2)}deg)`,
               ].join(' '),
             }}
           >
@@ -696,8 +704,8 @@ export const FedRivet: React.FC<FedRivetProps> = ({
                 key={`lam-${i}`}
                 i={i}
                 n={N_LAM}
-                w={1440 * S}
-                h={54 * S}
+                w={1400 * S}
+                h={66 * S}
                 z={(i - (N_LAM - 1) / 2) * (gapBase + gapExtra)}
                 dis={disC}
                 tone={tone}
@@ -716,7 +724,7 @@ export const FedRivet: React.FC<FedRivetProps> = ({
             style={{
               position: 'absolute',
               left: X(985),
-              top: Y(320),
+              top: Y(398),
               overflow: 'visible',
               transform: `scale(${molScale.toFixed(3)}) translateY(${(
                 Math.sin(frame * 0.028) * 4
@@ -941,7 +949,7 @@ export const FedRivet: React.FC<FedRivetProps> = ({
                 {...CLAMP, easing: Easing.out(Easing.quad)}
               );
               if (t <= 0 || t >= 1) return null;
-              const baseY = 640 + (lk.gap - (N_LAM - 1) / 2) * 42;
+              const baseY = 706 + (lk.gap - (N_LAM - 1) / 2) * 48;
               const op = Math.sin(t * Math.PI) * 0.85;
               return (
                 <div
@@ -971,9 +979,9 @@ export const FedRivet: React.FC<FedRivetProps> = ({
               style={{
                 position: 'absolute',
                 left: 0,
-                top: Y(520),
+                top: Y(560),
                 width: '46%',
-                height: 400 * S,
+                height: 340 * S,
                 transform: `translateX(${interpolate(sweepP, [0, 1], [-50, 195], CLAMP).toFixed(
                   1
                 )}%) skewX(-19deg)`,
@@ -1058,7 +1066,7 @@ export const FedRivet: React.FC<FedRivetProps> = ({
           style={{
             position: 'absolute',
             left: X(1290) + hx * 0.7,
-            top: Y(212) + hy * 0.7,
+            top: Y(288) + hy * 0.7,
             opacity: tgP * (isRivet ? 1 : 0.6),
             clipPath: `inset(0 ${((1 - tgP) * 100).toFixed(1)}% 0 0)`,
           }}
@@ -1091,7 +1099,7 @@ export const FedRivet: React.FC<FedRivetProps> = ({
             style={{
               position: 'absolute',
               left: X(now.x) - 300 * S,
-              top: Y(now.y) + 58 * S,
+              top: Y(now.y) + (isRivet ? 58 : -104) * S,
               opacity: chP,
               clipPath: `inset(0 ${((1 - chP) * 100).toFixed(1)}% 0 0)`,
               filter: `blur(${(mBlur * 0.35).toFixed(2)}px)`,

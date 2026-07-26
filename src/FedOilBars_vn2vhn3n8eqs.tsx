@@ -147,7 +147,7 @@ const BarRow: React.FC<{
   const spd = 0.86 + random(`fedoilbars-spd-${row.name}`) * 0.4;
 
   /* --- entrada escalonada desde la izquierda, blur → foco --- */
-  const stag = Math.min(0.036, 0.25 / Math.max(1, n));
+  const stag = Math.min(0.032, 0.22 / Math.max(1, n));
   const inStart = F(0.1 + i * stag);
   const s = spring({
     frame: frame - inStart,
@@ -163,7 +163,7 @@ const BarRow: React.FC<{
   const growStart = inStart + F(0.035);
   const grow = interpolate(
     frame,
-    [growStart, growStart + Math.max(14, F(0.24))],
+    [growStart, growStart + Math.max(14, F(0.22))],
     [0, 1],
     {...CLAMP, easing: Easing.out(Easing.cubic)}
   );
@@ -220,10 +220,10 @@ const BarRow: React.FC<{
   const sweepA = isHi ? Math.sin(sweepP * Math.PI) : 0;
   const sweepX = interpolate(sweepP, [0, 1], [-32, 108], CLAMP);
 
-  const nameCol = row.bad
+  const nameCol = isHi
+    ? '#FBF6EC'
+    : row.bad
     ? `rgba(206, 198, 188, ${0.5 + 0.12 * enter})`
-    : isHi
-    ? '#F9F4EA'
     : 'rgba(238, 232, 222, 0.9)';
 
   const accHi = tone(accent, 1.28);
@@ -605,12 +605,12 @@ export const FedOilBars: React.FC<FedOilBarsProps> = ({
     easing: Easing.out(Easing.cubic),
   });
   const hl = anyHi
-    ? interpolate(frame, [F(0.54), F(0.74)], [0, 1], {
+    ? interpolate(frame, [F(0.58), F(0.76)], [0, 1], {
         ...CLAMP,
         easing: Easing.inOut(Easing.cubic),
       })
     : 0;
-  const footP = interpolate(frame, [F(0.72), F(0.86)], [0, 1], {
+  const footP = interpolate(frame, [F(0.76), F(0.88)], [0, 1], {
     ...CLAMP,
     easing: Easing.out(Easing.cubic),
   });
