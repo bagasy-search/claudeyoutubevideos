@@ -9,7 +9,7 @@
 //
 // Esto NO bloquea nada (para eso está density_gate). Solo mide y devuelve JSON, para guardarlo en
 // video_jobs.quality_report y poder mirar la tendencia por canal.
-import { readFileSync, existsSync, readdirSync } from "fs";
+import { readFileSync, existsSync, readdirSync, statSync } from "fs";
 import { execFileSync } from "node:child_process";
 
 const slug = process.argv[2];
@@ -21,22 +21,67 @@ const R = { slug };
 const num = (x, d = 1) => (Number.isFinite(x) ? +x.toFixed(d) : null);
 
 // ── fuentes ───────────────────────────────────────────────────────────────────────────────────
-const mainPath = [`src/VideoEdit/Main_${slug}.tsx`, `src/VideoEdit/Main_${slug}_redo.tsx`]
-  .find((p) => existsSync(p))
-  || (readdirSync("src/VideoEdit").filter((f) => f.includes(slug) && /^Main_.*\.tsx$/.test(f)).map((f) => `src/VideoEdit/${f}`)[0]);
+// Se busca en LOS DOS namespaces. El kit federer-video vive aislado en src/_fed6/ y ahí tiene su
+// propio Main; en src/VideoEdit/ queda un archivo homónimo mucho más chico. Como sólo se miraba
+// src/VideoEdit/, ese kit se medía sobre el archivo equivocado y salía con 3 señales de 6.
+// Ante dos candidatos gana el MÁS GRANDE: el build real siempre pesa más que el stub.
+const mainPath = (() => {
+  const cand = [];
+  for (const dir of ["src/VideoEdit", "src/_fed6/VideoEdit"]) {
+    if (!existsSync(dir)) continue;
+    for (const n of [`Main_${slug}.tsx`, `Main_${slug}_redo.tsx`]) {
+      const p = `${dir}/${n}`; if (existsSync(p)) cand.push(p);
+    }
+    try {
+      for (const f of readdirSync(dir)) {
+        if (f.includes(slug) && /^Main_.*\.tsx$/.test(f)) cand.push(`${dir}/${f}`);
+      }
+    } catch {}
+  }
+  if (!cand.length) return undefined;
+  return [...new Set(cand)].sort((a, b) => statSync(b).size - statSync(a).size)[0];
+})();
+// Los builds data-driven (fed6) tienen los beats en un .ts aparte: sin él, el Main solo no alcanza.
+const extraFuentes = ["src/_fed6/VideoEdit", "src/VideoEdit"].flatMap((dir) => {
+  try { return readdirSync(dir).filter((f) => f.includes(slug) && /_(beats|broll|hooks)\.ts$/.test(f)).map((f) => `${dir}/${f}`); }
+  catch { return []; }
+});
 const cuesPath = `src/VideoEdit/cues_${slug}.gen.tsx`;
 const hayCues = existsSync(cuesPath);
 const sinComentarios = (s) => s.replace(/\/\*[\s\S]*?\*\//g, "");
 const src = [
   mainPath && existsSync(mainPath) ? (hayCues ? sinComentarios(readFileSync(mainPath, "utf8")) : readFileSync(mainPath, "utf8")) : "",
   hayCues ? readFileSync(cuesPath, "utf8") : "",
+  ...extraFuentes.map((p) => { try { return readFileSync(p, "utf8"); } catch { return ""; } }),
 ].join("\n");
 if (!src.trim()) { console.error(`✗ no encontré el build de ${slug}`); process.exit(1); }
 
 // ── PACING: duración de cada toma ─────────────────────────────────────────────────────────────
-const cues = hayCues
-  ? [...readFileSync(cuesPath, "utf8").matchAll(/start:\s*([\d.]+),\s*dur:\s*([\d.]+)/g)].map((m) => ({ s: +m[1], d: +m[2] }))
-  : [];
+// DOS formatos, porque hay dos estilos de build y antes sólo se leía uno:
+//   · cues_<slug>.gen.tsx → objetos {start, dur} en SEGUNDOS
+//   · Main_<slug>.tsx     → JSX literal <Sequence from={252} durationInFrames={90}> en FRAMES
+// El segundo es el del kit fluid, justo el del video que el creador marcó como de máxima calidad.
+// Como no se leía, ese video salía con 2 señales y `nota: null` — o sea, el mejor video del canal
+// era el único que no se podía puntuar. Cualquier medición que no cubra el estilo bueno miente.
+const FPS_Q = 30;
+// Las claves pueden venir con o sin comillas: los cues las escriben sueltas (start: 12.4) y los
+// beats auto-generados del kit fed6 las escriben como JSON ("start":12.4). Con el regex viejo, que
+// exigía la forma sin comillas, ese kit entero quedaba sin pacing pese a tener 324 pares start/dur.
+const RE_START_DUR = /["']?start["']?\s*:\s*([\d.]+)\s*,\s*["']?dur["']?\s*:\s*([\d.]+)/g;
+const cues = (() => {
+  // Se busca en TODAS las fuentes (cues + main + beats), no solo en el archivo de cues.
+  const c0 = [...src.matchAll(RE_START_DUR)].map((m) => ({ s: +m[1], d: +m[2] }));
+  if (c0.length) return c0;
+  // <Sequence from={N} ... durationInFrames={M}> — el orden de los dos atributos puede venir al
+  // revés, así que se buscan dentro del mismo tag en vez de asumir una secuencia fija.
+  const tags = mainPath && existsSync(mainPath) ? readFileSync(mainPath, "utf8").match(/<Sequence\b[^>]*>/g) || [] : [];
+  const c = [];
+  for (const t of tags) {
+    const f = t.match(/\bfrom=\{(-?\d+)\}/), d = t.match(/\bdurationInFrames=\{(\d+)\}/);
+    if (f && d) c.push({ s: Math.max(0, +f[1]) / FPS_Q, d: +d[1] / FPS_Q });
+  }
+  return c;
+})();
 if (cues.length) {
   const d = cues.map((c) => c.d).sort((a, b) => a - b);
   const p = (q) => d[Math.floor(d.length * q)];
@@ -45,6 +90,7 @@ if (cues.length) {
   R.dur_p90 = num(p(0.9), 2);
   R.dur_max = num(d[d.length - 1], 2);
   R.pct_mayor_3s = Math.round((100 * d.filter((x) => x > 3.001).length) / d.length);
+  R.pct_mayor_5s = Math.round((100 * d.filter((x) => x > 5.001).length) / d.length); // el umbral que se exige de verdad
   const fin = Math.max(...cues.map((c) => c.s + c.d));
   R.duracion_s = num(fin, 0);
   // cobertura: cuánto del video tiene ALGO en pantalla (sin huecos)
@@ -70,8 +116,19 @@ const FRAMEWORK = new Set(["Sequence","AbsoluteFill","Video","OffthreadVideo","I
 const ESTRUCTURA = new Set(["AvatarLayer","AvatarWindow","TechBackground","CinematicWrap","HalfLeft","AvatarScrimText","GrainOverlay","MotesLayer","ParallaxLayer"]);
 const TOMAS = new Set(["RawShot","HalfShot","ReframedVideo","PhotoScene"]);
 const jsx = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1]).filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
-const comps = jsx.filter((n) => !TOMAS.has(n));
-const shots = jsx.filter((n) => TOMAS.has(n)).length;
+// En los builds DATA-DRIVEN (kit fed6) los componentes no son tags JSX: el Main hace un .map sobre
+// los beats y cada beat declara su tipo como {"kind":"lowerthird"}. Contando solo tags, un video de
+// 183 usos daba 12 — y la densidad salía 0.3/min en vez de 5.3. Los `kind` son la MISMA lista que
+// los tags en el otro estilo, así que se suman al mismo conteo.
+const KIND_TOMAS = new Set(["raw", "talk", "shot", "photo", "video"]); // material crudo, no componente
+const kinds = [...src.matchAll(/["']kind["']\s*:\s*["']([a-z_][a-z0-9_]*)["']/gi)].map((m) => m[1].toLowerCase());
+// Si el build declara `kind`, ESE es el conteo real y los tags JSX del Main NO se suman: ahí el
+// Main es un switch que nombra cada componente una vez para despacharlo, no una lista de usos.
+// Sumando los dos, un video de 183 usos / 21 distintos daba 195 / 33 — inflado por la tabla de
+// despacho. Con kinds presentes: kinds mandan. Sin kinds (build JSX clásico): tags.
+const dataDriven = kinds.length > 0;
+const comps = dataDriven ? kinds.filter((k) => !KIND_TOMAS.has(k)) : jsx.filter((n) => !TOMAS.has(n));
+const shots = dataDriven ? kinds.filter((k) => KIND_TOMAS.has(k)).length : jsx.filter((n) => TOMAS.has(n)).length;
 const uniqRe = (re) => new Set([...src.matchAll(re)].map((m) => m[1])).size;
 // OJO con estas rutas — acá se midió mal y se reportó "0 clips" en un video que tenía 54:
 //   · Capa 2 aisló el b-roll por video, y hay DOS estilos válidos: subcarpeta broll/<slug>/x.mp4
@@ -106,10 +163,16 @@ R.top_componentes = Object.entries(comps.reduce((a, c) => ((a[c] = (a[c] || 0) +
 const NB = 5;
 {
   let tr = null;
-  for (const { f, re } of [{ f: cuesPath, re: /start:\s*([\d.]+)/g }, { f: mainPath, re: /startSec:\s*([\d.]+)/g }]) {
+  // Tercera fuente: `from={N}` en FRAMES (kit fluid). Va con divisor porque las otras dos vienen
+  // en segundos; sin esto el kit fluid caía al reparto por posición y perdía la señal de tramo.
+  for (const { f, re, div } of [
+    { f: cuesPath, re: /start:\s*([\d.]+)/g, div: 1 },
+    { f: mainPath, re: /startSec:\s*([\d.]+)/g, div: 1 },
+    { f: mainPath, re: /\bfrom=\{(\d+)\}/g, div: FPS_Q },
+  ]) {
     if (!f || !existsSync(f)) continue;
     const cs = readFileSync(f, "utf8");
-    const marcas = [...cs.matchAll(re)].map((m) => ({ i: m.index, t: +m[1] }));
+    const marcas = [...cs.matchAll(re)].map((m) => ({ i: m.index, t: +m[1] / div }));
     if (marcas.length < NB) continue;
     const fin = Math.max(R.duracion_s || 0, ...marcas.map((x) => x.t)) || 1;
     tr = Array.from({ length: NB }, () => new Set());
@@ -165,11 +228,24 @@ for (const w of [`public/${slug}.wav`, `public/${slug}_16k.wav`]) {
 // No es ciencia; es un semáforo comparable entre videos del mismo canal.
 const clamp = (x) => Math.max(0, Math.min(100, x));
 const puntos = [];
-if (R.pct_mayor_3s != null) puntos.push(clamp(100 - R.pct_mayor_3s));                      // pacing
+// DENSIDAD: usos de componente por minuto. Es la señal que MÁS separa un video de otro según el
+// juicio del creador (el que marcó como de máxima calidad iba en 13.2/min; el que no le gustó, en
+// 5.3/min) y hasta ahora no se medía. x7 pone el rango útil 0-14 sobre la escala completa.
+if (R.componentes_usos != null && R.duracion_s) {
+  R.comp_por_min = num(R.componentes_usos / (R.duracion_s / 60));
+  puntos.push(clamp(R.comp_por_min * 7));
+}
+// PACING contra el umbral que el sistema REALMENTE exige (5s del density_gate), no contra los 3s
+// que son aspiracionales. Medido contra 3s, el video que el creador eligió como el mejor sacaba 27
+// de 100 en esta señal: estaba castigando justo lo que había que premiar. `pct_mayor_3s` se sigue
+// reportando como dato, pero no puntúa.
+if (R.pct_mayor_5s != null) puntos.push(clamp(100 - R.pct_mayor_5s));
 if (R.momentos_crudos_pct != null) puntos.push(clamp(160 - 1.6 * R.momentos_crudos_pct));  // variedad
-if (R.componentes_distintos != null) puntos.push(clamp(R.componentes_distintos * 5));
-// el tramo MÁS POBRE pesa: un video con 20 componentes todos en el primer tercio no es variado
-if (R.tramo_mas_pobre != null) puntos.push(clamp(R.tramo_mas_pobre * 20));
+// Las dos de abajo estaban calibradas contra el PISO (20 componentes, 5 por tramo) y por eso daban
+// 100 clavado en cualquier video decente — dos señales que no distinguían nada. Reescaladas al
+// rango que ocupan los videos reales (distintos 0-32, tramo más pobre 0-17).
+if (R.componentes_distintos != null) puntos.push(clamp(R.componentes_distintos * 3.2));
+if (R.tramo_mas_pobre != null) puntos.push(clamp(R.tramo_mas_pobre * 6));
 if (R.cobertura_pct != null) puntos.push(clamp(R.cobertura_pct));
 if (R.abre_avatar_full != null) puntos.push(R.abre_avatar_full ? 100 : 0);
 // con menos de 3 señales la nota no dice nada (builds viejos sin cues, sin avatar.gen, etc.)
