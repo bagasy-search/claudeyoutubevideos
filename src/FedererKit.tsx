@@ -3038,9 +3038,9 @@ export type FedOilCarouselProps = {
   landF?: number;
 };
 
-const CARD_W = 400;
-const CARD_H = 533; // 3:4 exacto
-const RING_R = 640;
+const CARD_W = 430;
+const CARD_H = 573; // 3:4 exacto
+const RING_R = 545; // más chico = las tarjetas se tocan y se lee como carrusel
 
 const CarouselCard: React.FC<{
   card: FedCarouselCard;
@@ -3082,7 +3082,7 @@ const CarouselCard: React.FC<{
     : 1.4 + 5.2 * (1 - front01);
 
   // las vecinas se apagan, pero NO desaparecen: si no, deja de leerse como carrusel
-  const bright = focused ? 0.6 + 0.55 * p : anyFocus ? 0.95 - 0.38 * p : 0.62 + 0.38 * front01;
+  const bright = focused ? 0.6 + 0.55 * p : anyFocus ? 0.95 - 0.38 * p : 0.74 + 0.26 * front01;
   const sat = focused ? 0.65 + 0.45 * p : anyFocus ? 1 - 0.34 * p : 0.85;
 
   const backFade = interpolate(front, [-1, -0.25], [0.18, 1], CLAMP);
@@ -3260,7 +3260,7 @@ export const FedOilCarousel: React.FC<FedOilCarouselProps> = ({
             transform: `scale(${(1.24 * push).toFixed(4)}) translate(${(hx * 2).toFixed(
               1
             )}px, ${(hy * 2).toFixed(1)}px)`,
-            filter: 'blur(26px) saturate(0.8) brightness(0.44)',
+            filter: 'blur(22px) saturate(0.85) brightness(0.6)',
           }}
         >
           <Img src={bg} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
