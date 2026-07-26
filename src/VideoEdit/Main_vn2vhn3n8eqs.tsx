@@ -38,6 +38,15 @@ import {
   FedOilCarousel,
   type FedCarouselCard,
 } from '../FedererKit';
+import {FedBrickWall} from '../FedBrickWall_vn2vhn3n8eqs';
+import {FedRivet} from '../FedRivet_vn2vhn3n8eqs';
+import {FedTrial} from '../FedTrial_vn2vhn3n8eqs';
+import {FedLabelScan} from '../FedLabelScan_vn2vhn3n8eqs';
+import {FedSplitFace} from '../FedSplitFace_vn2vhn3n8eqs';
+import {FedSeal} from '../FedSeal_vn2vhn3n8eqs';
+import {FedOilBars} from '../FedOilBars_vn2vhn3n8eqs';
+import {FedBlacklist} from '../FedBlacklist_vn2vhn3n8eqs';
+import {FedRoutineRing} from '../FedRoutineRing_vn2vhn3n8eqs';
 
 export const TOTAL_FRAMES_VN2 = 37908;
 const ACCENT = '#E9B44C';
@@ -652,7 +661,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 24.1s · El equipo del Dr. Simon Danby, Universidad de Sheffield, 19 ad */}
       <Sequence from={723} durationInFrames={162} name="FedStat b008">
-        <FedStat {...P[8]} totalF={162} accent={ACCENT} />
+        <FedTrial journal={"Pediatric Dermatology"} year={"2013"} n={19} design={"aleatorizado · dos antebrazos · 4 semanas"} title={"El equipo del Dr. Simon Danby"} sub={"Universidad de Sheffield"} groupA={{"label":"Aceite de oliva","value":19,"suffix":"","tone":"bad"}} groupB={{"label":"Aceite de girasol","value":19,"suffix":"","tone":"good"}} unit={"adultos por brazo"} totalF={162} accent={ACCENT} />
       </Sequence>
       {/* 29.2s · 6 gotas de aceite en un antebrazo, 2 veces por día, 4 semanas. */}
       <Sequence from={876} durationInFrames={141} name="FedChecklist b009">
@@ -668,7 +677,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 39s · El brazo del aceite de oliva terminó perdiendo más agua que an */}
       <Sequence from={1170} durationInFrames={186} name="FedHero b012">
-        <FedHero {...P[12]} totalF={186} accent={ACCENT} />
+        <FedTrial journal={"Pediatric Dermatology"} year={"2013"} n={19} design={"pérdida de agua medida a las 4 semanas"} title={"El brazo del oliva perdió MÁS agua"} sub={"que antes de empezar"} groupA={{"label":"Oliva","value":24,"suffix":"%","tone":"bad"}} groupB={{"label":"Girasol","value":7,"suffix":"%","tone":"good"}} unit={"pérdida de agua"} verdict={"El oliva desarma la barrera"} totalF={186} accent={ACCENT} />
       </Sequence>
       {/* 45s · Y no solo en los de piel delicada, también en los que tenían l */}
       <Sequence from={1350} durationInFrames={138} name="FedChecklist b013">
@@ -732,11 +741,11 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 157.8s · un cuarto colesterol, el resto ácidos grasos. */}
       <Sequence from={4734} durationInFrames={120} name="FedMolecule b042">
-        <FedMolecule {...P[42]} totalF={120} accent={ACCENT} />
+        <FedBrickWall state={"build"} title={"La pared de su piel"} sub={"ladrillos de células muertas, cemento de grasa"} legend={[{"label":"Ceramidas","pct":"50%"},{"label":"Colesterol","pct":"25%"},{"label":"Ácidos grasos","pct":"25%"}]} brickLabel={"Células muertas"} cementLabel={"Cemento de grasa"} totalF={120} accent={ACCENT} />
       </Sequence>
       {/* 161.4s · Cuando ese cemento se desarma, usted tiene picazón, tirantez */}
       <Sequence from={4842} durationInFrames={120} name="FedFullShot b043">
-        <FedFullShot {...P[43]} totalF={120} accent={ACCENT} />
+        <FedBrickWall state={"leaking"} title={"Cuando el cemento se desarma"} sub={"picazón, tirantez, y la crema que se va en dos horas"} legend={[{"label":"Juntas vacías","pct":"—"}]} brickLabel={"Células muertas"} cementLabel={"Cemento faltante"} totalF={120} accent={ACCENT} />
       </Sequence>
       {/* 165s · y esa sensación de que la crema se le fue en dos horas. */}
       <Sequence from={4950} durationInFrames={120} name="FedChecklist b044">
@@ -760,7 +769,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 194.5s · Sin linoleico no hay remache, sin remache la pared filtra. */}
       <Sequence from={5835} durationInFrames={126} name="FedHero b052">
-        <FedHero {...P[52]} totalF={126} accent={ACCENT} />
+        <FedRivet mode={"rivet"} title={"Sin linoleico no hay remache"} sub={"y sin remache, la pared filtra"} chainLabel={"Ácido linoleico"} targetLabel={"Ceramida"} resultLabel={"Acilceramida · el remache"} totalF={126} accent={ACCENT} />
       </Sequence>
       {/* 199.4s · Los niveles de esa ceramida bajan en invierno */}
       <Sequence from={5982} durationInFrames={135} name="FedFullShot b054">
@@ -776,7 +785,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 221.1s · La industria lo usa a propósito cuando quiere que un medicamen */}
       <Sequence from={6633} durationInFrames={150} name="FedFullShot b060">
-        <FedFullShot {...P[60]} totalF={150} accent={ACCENT} />
+        <FedRivet mode={"disorder"} title={"El oleico abre la puerta"} sub={"la industria lo usa para que un medicamento atraviese la piel"} chainLabel={"Ácido oleico"} targetLabel={"Láminas de grasa"} resultLabel={"La pared filtra"} totalF={150} accent={ACCENT} />
       </Sequence>
       {/* 229.1s · Ahora haga la cuenta. */}
       <Sequence from={6873} durationInFrames={54} name="FedFullShot b062">
@@ -784,7 +793,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 230.7s · El aceite de oliva tiene hasta un 83% de oleico y muy poco lin */}
       <Sequence from={6921} durationInFrames={183} name="FedStat b063">
-        <FedStat {...P[63]} totalF={183} accent={ACCENT} />
+        <FedOilBars title={"La proporción decide"} sub={"no el precio, no la marca, no el aroma"} highlight={"Oliva"} cutoff={40} cutoffLabel={"mínimo útil"} foot={"El oliva tiene la peor relación de la lista."} totalF={183} accent={ACCENT} />
       </Sequence>
       {/* 238.7s · No es que el oliva sea malo, */}
       <Sequence from={7161} durationInFrames={111} name="FedFullShot b065">
@@ -852,7 +861,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 328.6s · Está el común alto linoleico que es el que le sirve. */}
       <Sequence from={9858} durationInFrames={126} name="FedHero b088">
-        <FedHero {...P[88]} totalF={126} accent={ACCENT} />
+        <FedLabelScan title={"El girasol común"} sub={"este es el que le sirve"} labelName={"ACEITE DE GIRASOL"} labelSub={"alto linoleico"} verdict={"ok"} verdictLabel={"PARA LA PIEL"} liquid={"#D8A33C"} bars={[{"label":"Linoleico","pct":60,"tone":"good"},{"label":"Oleico","pct":25,"tone":"bad"}]} totalF={126} accent={ACCENT} />
       </Sequence>
       {/* 334.9s · ...porque aguanta mejor la fritura. */}
       <Sequence from={10047} durationInFrames={81} name="FedHero b090">
@@ -876,7 +885,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 353.1s · Si dice alto oleico, esa es para la sartén. Si no lo dice, esa */}
       <Sequence from={10593} durationInFrames={171} name="FedChecklist b097">
-        <FedChecklist {...P[97]} totalF={171} accent={ACCENT} />
+        <FedLabelScan title={"Si dice ALTO OLEICO"} sub={"esa es para la sartén"} labelName={"ACEITE DE GIRASOL"} labelSub={"alto oleico"} verdict={"bad"} verdictLabel={"PARA LA SARTÉN"} liquid={"#C9932F"} bars={[{"label":"Oleico","pct":90,"tone":"bad"},{"label":"Linoleico","pct":8,"tone":"good"}]} totalF={171} accent={ACCENT} />
       </Sequence>
       {/* 358.4s · Número 2 */}
       <Sequence from={10752} durationInFrames={168} name="FedOilCarousel b098">
@@ -896,7 +905,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 380.4s · 148 personas, edad promedio 68 años. */}
       <Sequence from={11412} durationInFrames={117} name="FedStat b105">
-        <FedStat {...P[105]} totalF={117} accent={ACCENT} />
+        <FedTrial journal={"Acta Medica Philippina"} year={"2023"} n={148} design={"aleatorizado · evaluador ciego · piel madura"} title={"148 personas, 68 años de promedio"} sub={"coco virgen contra aceite mineral"} groupA={{"label":"Coco virgen","value":68,"suffix":"%","tone":"good"}} groupB={{"label":"Aceite mineral","value":38,"suffix":"%","tone":"bad"}} unit={"mejoría"} verdict={"Ganó el coco"} totalF={117} accent={ACCENT} />
       </Sequence>
       {/* 384.1s · Con esa piel de la pierna que se descama como escamas de pesca */}
       <Sequence from={11523} durationInFrames={114} name="FedFullShot b106">
@@ -1040,7 +1049,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 549.5s · ...como si le hubieran puesto 20 años más de un solo lado. */}
       <Sequence from={16485} durationInFrames={159} name="FedChecklist b160">
-        <FedChecklist {...P[160]} totalF={159} accent={ACCENT} />
+        <FedSplitFace image={staticFile("img/vn2_c32.png")} title={"La misma cara, dos edades"} sub={"veinte años más de un solo lado"} leftLabel={"25 años contra la ventanilla"} rightLabel={"el otro lado, 69 años"} callouts={["Piel engrosada y colgada","Surcos profundos","Poros dilatados y tapados"]} journal={"New England Journal of Medicine"} year={"2012"} totalF={159} accent={ACCENT} />
       </Sequence>
       {/* 557.2s · Él iba adentro del camión, con la ventana cerrada. */}
       <Sequence from={16716} durationInFrames={90} name="FedFullShot b162">
@@ -1072,7 +1081,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 603.6s · 60 mujeres posmenopáusicas de 49 a 61 años. */}
       <Sequence from={18108} durationInFrames={144} name="FedStat b173">
-        <FedStat {...P[173]} totalF={144} accent={ACCENT} />
+        <FedTrial journal={"Clinical Interventions in Aging"} year={"2015"} n={60} design={"mujeres posmenopáusicas de 49 a 61 años · 60 días"} title={"Medido con cutómetro"} sub={"el aparato que succiona la piel y mide cuánto tarda en volver"} groupA={{"label":"Argán","value":15,"suffix":"%","tone":"good"}} groupB={{"label":"Oliva","value":0,"suffix":"%","tone":"bad"}} unit={"elasticidad"} totalF={144} accent={ACCENT} />
       </Sequence>
       {/* 608.3s · 60 días. Se midió con cutómetro. */}
       <Sequence from={18249} durationInFrames={81} name="FedStat b174">
@@ -1228,7 +1237,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 803.2s · Danby 2013. Aumentó significativamente la pérdida de agua por  */}
       <Sequence from={24096} durationInFrames={147} name="FedHero b234">
-        <FedHero {...P[234]} totalF={147} accent={ACCENT} />
+        <FedBlacklist index={"01 / 03"} name={"Aceite de oliva"} reason={"Aumentó significativamente la pérdida de agua por la piel — también en piel perfectamente sana."} evidence={"Danby · Pediatric Dermatology · 2013"} stamp={"NO SE PONE"} totalF={147} accent={ACCENT} />
       </Sequence>
       {/* 810.3s · Cómalo. Es maravilloso para comer. */}
       <Sequence from={24309} durationInFrames={75} name="FedFullShot b236">
@@ -1252,7 +1261,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 835.3s · En el 90% de los casos la vitamina E no tuvo ningún efecto o e */}
       <Sequence from={25059} durationInFrames={189} name="FedStat b245">
-        <FedStat {...P[245]} totalF={189} accent={ACCENT} />
+        <FedBlacklist index={"02 / 03"} name={"Vitamina E y germen de trigo"} reason={"En el 90% de los casos no tuvo ningún efecto o empeoró la cicatriz. Un tercio de los pacientes hizo dermatitis de contacto."} evidence={"Dermatologic Surgery · 1999 · 15 pacientes operados"} stamp={"NO SE PONE"} totalF={189} accent={ACCENT} />
       </Sequence>
       {/* 841.2s · Y un tercio de los pacientes desarrolló dermatitis de contacto */}
       <Sequence from={25236} durationInFrames={126} name="FedStat b246">
@@ -1276,7 +1285,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 865.1s · Traen unas sustancias que se llaman furocumarinas. Con la luz  */}
       <Sequence from={25953} durationInFrames={156} name="FedMolecule b254">
-        <FedMolecule {...P[254]} totalF={156} accent={ACCENT} />
+        <FedBlacklist index={"03 / 03"} name={"Cítricos prensados en frío"} reason={"Las furocumarinas se activan con la luz, se pegan al ADN y dejan una mancha que a veces no se va nunca."} evidence={"Bergamota, lima, limón · tope de la industria: 0,4%"} stamp={"PELIGRO"} totalF={156} accent={ACCENT} />
       </Sequence>
       {/* 869.9s · Entran en el núcleo de la célula. Se pegan al ADN y producen m */}
       <Sequence from={26097} durationInFrames={159} name="FedMolecule b255">
@@ -1360,7 +1369,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 975.5s · En 2013, en Annals of Internal Medicine, el único ensayo aleat */}
       <Sequence from={29265} durationInFrames={165} name="FedQuote b287">
-        <FedQuote {...P[287]} totalF={165} accent={ACCENT} />
+        <FedTrial journal={"Annals of Internal Medicine"} year={"2013"} n={903} design={"el único ensayo aleatorizado de prevención que existe · Australia"} title={"Protector solar todos los días"} sub={"contra usarlo cuando uno quiere"} groupA={{"label":"Uso diario","value":24,"suffix":"%","tone":"good"}} groupB={{"label":"Discrecional","value":0,"suffix":"%","tone":"bad"}} unit={"menos envejecimiento"} verdict={"24% menos"} totalF={165} accent={ACCENT} />
       </Sequence>
       {/* 981s · 903 adultos en Australia. */}
       <Sequence from={29430} durationInFrames={72} name="FedStat b288">
@@ -1420,7 +1429,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 1045s · Si abajo no hay agua, usted acaba de sellar una piel seca. */}
       <Sequence from={31350} durationInFrames={117} name="FedBeforeAfter b309">
-        <FedBeforeAfter {...P[309]} totalF={117} accent={ACCENT} />
+        <FedSeal title={"El aceite es la tapa, no el contenido"} sub={"un aceite vegetal puro es anhidro"} leftLabel={"Aceite sobre piel SECA"} rightLabel={"Aceite sobre piel HÚMEDA"} leftNote={"sella la nada"} rightNote={"sella el agua"} dropLabel={"0% de agua"} totalF={117} accent={ACCENT} />
       </Sequence>
       {/* 1050.9s · Y el contenido real de agua no subió ni un punto. */}
       <Sequence from={31527} durationInFrames={93} name="FedHero b311">
@@ -1456,11 +1465,11 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 1088.9s · Uno. El agua caliente le disuelve el mismo cemento de grasa qu */}
       <Sequence from={32667} durationInFrames={141} name="FedStep b323">
-        <FedStep {...P[323]} totalF={141} accent={ACCENT} />
+        <FedRoutineRing step={1} kicker={"Esta noche"} totalF={141} accent={ACCENT} />
       </Sequence>
       {/* 1096s · Séquese a toques y deje la piel apenas húmeda. */}
       <Sequence from={32880} durationInFrames={141} name="FedStep b325">
-        <FedStep {...P[325]} totalF={141} accent={ACCENT} />
+        <FedRoutineRing step={2} kicker={"Esta noche"} totalF={141} accent={ACCENT} />
       </Sequence>
       {/* 1100.4s · Que brille de agua. Esa agua es el contenido. */}
       <Sequence from={33012} durationInFrames={102} name="FedFullShot b326">
@@ -1468,7 +1477,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 1103.5s · Si tiene una crema o un gel con glicerina, ácido hialurónico o */}
       <Sequence from={33105} durationInFrames={147} name="FedStep b327">
-        <FedStep {...P[327]} totalF={147} accent={ACCENT} />
+        <FedRoutineRing step={3} kicker={"Esta noche"} totalF={147} accent={ACCENT} />
       </Sequence>
       {/* 1108.1s · Ese es el que aporta. */}
       <Sequence from={33243} durationInFrames={108} name="FedFullShot b328">
@@ -1476,7 +1485,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 1113.7s · Cuatro. Ahora sí el aceite. Y menos de lo que usted cree. */}
       <Sequence from={33411} durationInFrames={108} name="FedStep b330">
-        <FedStep {...P[330]} totalF={108} accent={ACCENT} />
+        <FedRoutineRing step={4} kicker={"Esta noche"} totalF={108} accent={ACCENT} />
       </Sequence>
       {/* 1117s · Tres a cinco gotas para toda la cara. */}
       <Sequence from={33510} durationInFrames={72} name="FedStat b331">
@@ -1496,7 +1505,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 1129.6s · Cinco. Cuatro semanas. Ese es el plazo real. No tres días. */}
       <Sequence from={33888} durationInFrames={126} name="FedStep b335">
-        <FedStep {...P[335]} totalF={126} accent={ACCENT} />
+        <FedRoutineRing step={5} kicker={"Esta noche"} totalF={126} accent={ACCENT} />
       </Sequence>
       {/* 1136.8s · Una gota en la cara interna del antebrazo, tapada con una curi */}
       <Sequence from={34104} durationInFrames={126} name="FedFullShot b337">
@@ -1560,7 +1569,7 @@ export const MainVn2: React.FC = () => {
       </Sequence>
       {/* 1197s · Los siete aceites. El linoleico y el oleico de cada uno. */}
       <Sequence from={35910} durationInFrames={120} name="FedFullShot b356">
-        <FedFullShot {...P[356]} totalF={120} accent={ACCENT} />
+        <FedOilBars title={"Los siete, de un vistazo"} sub={"el linoleico y el oleico de cada uno"} cutoff={40} cutoffLabel={"mínimo útil"} foot={"La ficha completa está en la descripción."} totalF={120} accent={ACCENT} />
       </Sequence>
       {/* 1203.3s · La dosis en gotas y la lista de los que no se ponen nunca. */}
       <Sequence from={36099} durationInFrames={93} name="FedFullShot b358">

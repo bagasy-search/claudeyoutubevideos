@@ -149,6 +149,37 @@ jobs:
           name: final-${{ github.event.inputs.slug }}
           path: ${{ github.event.inputs.slug }}.mp4
           retention-days: 7
+      # ── CHEQUEO TECNICO EN LA NUBE (etapa 2 del auditor) ────────────────────────────────────
+      # ffmpeg ya esta instalado acá. Haciendolo aca el agente NO necesita bajarse 700 MB para
+      # verificar duracion/audio/negros: lee esta salida del log de la corrida.
+      - name: chequeo tecnico del MP4
+        continue-on-error: true
+        run: |
+          F="${{ github.event.inputs.slug }}.mp4"
+          echo "=== CHEQUEO_TECNICO ==="
+          echo "bytes: $(stat -c%s "$F")"
+          echo "duracion_s: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$F")"
+          echo "streams: $(ffprobe -v error -show_entries stream=codec_type -of csv=p=0 "$F" | tr '\n' ' ')"
+          echo "audio_ok: $(ffprobe -v error -select_streams a -show_entries stream=codec_name -of csv=p=0 "$F" | head -1)"
+          # negros de mas de 2s (un fundido normal no llega)
+          echo "--- negros >2s ---"
+          ffmpeg -hide_banner -nostats -i "$F" -vf blackdetect=d=2:pic_th=0.98 -an -f null - 2>&1 | grep blackdetect || echo "ninguno"
+          echo "=== FIN_CHEQUEO ==="
+      # ── ENTREGA: publicar el MP4 como release ACA MISMO ────────────────────────────────────
+      # El archivo ya esta armado y ya vive en GitHub. Antes se bajaba a la PC (~700 MB) para
+      # volver a subirlo a otro release (~700 MB): ida y vuelta por la conexion del creador para
+      # mover un archivo de GitHub a GitHub. Peor: lo que se publicaba salia del disco local, y
+      # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
+      # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
+      - name: publicar el MP4 final como release
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          S="${{ github.event.inputs.slug }}"
+          R="${{ github.repository }}"
+          gh release create "$S" "$S.mp4" -R "$R" --title "$S" --notes "MP4 final — publicado por el farm" \
+            || gh release upload "$S" "$S.mp4" -R "$R" --clobber
+          echo "RELEASE_URL: https://github.com/$R/releases/download/$S/$S.mp4"
       - name: persistir chunks (para re-render parcial)
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }

@@ -2,7 +2,7 @@
 // Un solo asset faltante hace 404 en el farm y se cae el chunk entero.
 import fs from 'fs';
 
-const s = fs.readFileSync('src/beats_vn2vhn3n8eqs.ts', 'utf8');
+const s = fs.readFileSync('src/VideoEdit/Main_vn2vhn3n8eqs.tsx', 'utf8');
 const refs = [...s.matchAll(/staticFile\('([^']+)'\)/g)].map((m) => m[1]);
 const uniq = [...new Set(refs)];
 const missing = uniq.filter((r) => !fs.existsSync('public/' + r));

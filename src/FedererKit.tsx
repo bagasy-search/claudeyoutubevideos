@@ -50,14 +50,14 @@ export const FED_WHIP_F = 12; // 0.4s — solape de entrada/salida (CONTRATO)
 export const FED_STEP_F = FED_SCENE_F - FED_WHIP_F; // 138 — distancia entre cortes
 export const FED_REEL_F = FED_SCENE_F + 9 * FED_STEP_F; // 1392 — 10 escenas
 
-const CLAMP = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+export const CLAMP = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
-const FONT_SANS = "'Archivo', 'Inter', 'Helvetica Neue', Arial, sans-serif";
-const FONT_SERIF = "Georgia, 'Times New Roman', serif";
+export const FONT_SANS = "'Archivo', 'Inter', 'Helvetica Neue', Arial, sans-serif";
+export const FONT_SERIF = "Georgia, 'Times New Roman', serif";
 
-const DEFAULT_ACCENT = '#E9B44C';
-const TEAL = '#8FD0C8';
-const COOL_BLUE = '#8FB4E8';
+export const DEFAULT_ACCENT = '#E9B44C';
+export const TEAL = '#8FD0C8';
+export const COOL_BLUE = '#8FB4E8';
 
 export const FED_ASSETS = {
   romero: staticFile('med/romero.png'),
@@ -76,7 +76,7 @@ export type FedMood = 'cool' | 'gold' | 'warmdark' | 'science';
 
 const mod = (n: number, m: number) => ((n % m) + m) % m;
 
-const rgba = (hex: string, alpha: number): string => {
+export const rgba = (hex: string, alpha: number): string => {
   const h = hex.replace('#', '');
   const full = h.length === 3 ? h.split('').map((c) => c + c).join('') : h;
   const n = Number.parseInt(full.length === 6 ? full : '000000', 16);
@@ -86,7 +86,7 @@ const rgba = (hex: string, alpha: number): string => {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 };
 
-const shade = (hex: string, f: number): string => {
+export const shade = (hex: string, f: number): string => {
   const h = hex.replace('#', '');
   const n = Number.parseInt(h.length === 6 ? h : '000000', 16);
   const r = Math.round(((n >> 16) & 255) * f);
@@ -107,7 +107,7 @@ const wordStagger = (n: number, max = 0.26): number =>
 
 /* ------------------------------ partículas ------------------------------ */
 
-type Mote = {
+export type Mote = {
   x: number;
   y0: number;
   size: number;
@@ -116,7 +116,7 @@ type Mote = {
   opacity: number;
 };
 
-const makeMotes = (
+export const makeMotes = (
   count: number,
   seed: string,
   sizeMin: number,
@@ -135,7 +135,7 @@ const makeMotes = (
     opacity: oMin + random(`${seed}-o-${i}`) * (oMax - oMin),
   }));
 
-const MotesLayer: React.FC<{
+export const MotesLayer: React.FC<{
   motes: Mote[];
   blur: number;
   scale: number;
@@ -192,7 +192,7 @@ const ParallaxLayer: React.FC<{
   </div>
 );
 
-const GrainOverlay: React.FC = () => (
+export const GrainOverlay: React.FC = () => (
   <svg
     style={{
       position: 'absolute',
@@ -224,7 +224,7 @@ const GrainOverlay: React.FC = () => (
  * Encadenado: Sequence(from = i * (SCENE_F - WHIP_F), durationInFrames = SCENE_F).
  * ======================================================================= */
 
-const TransitionShell: React.FC<{
+export const TransitionShell: React.FC<{
   accent: string;
   totalF?: number;
   whipF?: number;
@@ -303,7 +303,7 @@ const TransitionShell: React.FC<{
 
 /* ============================ PIEZAS DE TEXTO ============================ */
 
-const Kicker: React.FC<{text: string; accent: string; startSec: number}> = ({
+export const Kicker: React.FC<{text: string; accent: string; startSec: number}> = ({
   text,
   accent,
   startSec,
@@ -346,7 +346,7 @@ const Kicker: React.FC<{text: string; accent: string; startSec: number}> = ({
   );
 };
 
-const KickerCenter: React.FC<{text: string; accent: string; startSec: number}> = ({
+export const KickerCenter: React.FC<{text: string; accent: string; startSec: number}> = ({
   text,
   accent,
   startSec,
@@ -401,7 +401,7 @@ const KickerCenter: React.FC<{text: string; accent: string; startSec: number}> =
   );
 };
 
-const Words: React.FC<{
+export const Words: React.FC<{
   text: string;
   hot?: string[];
   accent: string;
@@ -796,7 +796,7 @@ const ForegroundSprigs: React.FC<{seed: string; color: string}> = ({seed, color}
 
 /* ============================ FONDOS POR MOOD ============================ */
 
-const moodBg = (mood: FedMood, accent: string): string => {
+export const moodBg = (mood: FedMood, accent: string): string => {
   switch (mood) {
     case 'cool':
       return [
@@ -839,7 +839,7 @@ const sprigColor = (mood: FedMood): string =>
 
 type CamVec = {px: number; py: number};
 
-const Stage: React.FC<{
+export const Stage: React.FC<{
   mood: FedMood;
   accent: string;
   seed: string;
