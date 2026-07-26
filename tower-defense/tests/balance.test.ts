@@ -7,8 +7,12 @@ import { BUILD_SLOTS, Game } from '../src/sim/game'
  * que un cambio de economia o de escalado de oleadas no rompa la curva sin que
  * nadie se entere.
  *
- * Medido al escribir esto: con 8 torres y eligiendo siempre la primera carta, la
- * run muere entre la oleada 30 y 40.
+ * La estrategia de la sonda es deliberadamente MALA: ocho torres rotando tipos
+ * sin criterio, siempre la primera carta, nunca vender. Es un piso, no una
+ * referencia de lo que puede hacer alguien jugando bien.
+ *
+ * Medido al escribir esto: muere entre la oleada 20 y 21, con las 20 vidas
+ * intactas hasta la oleada 5 y el primer mordisco en el jefe de la 10.
  */
 
 const MAX_WAVE = 40
@@ -54,10 +58,12 @@ describe('curva de dificultad', () => {
     for (const seed of ['a', 'b']) {
       const g = playRun(seed)
       // Piso: si esto baja, se rompio la economia o el escalado de mejoras.
-      expect(g.wave).toBeGreaterThanOrEqual(12)
-      // Techo implicito: la run tiene que terminar o llegar al limite del test.
-      expect(g.wave).toBeLessThanOrEqual(MAX_WAVE)
-      expect(g.stats.kills).toBeGreaterThan(500)
+      expect(g.wave).toBeGreaterThanOrEqual(14)
+      // Techo REAL, no el limite del test: con una estrategia mala la run tiene
+      // que morir. Si llega a 40 es que el juego dejo de tener dificultad, que
+      // es exactamente el agujero que este numero vigila.
+      expect(g.wave).toBeLessThan(32)
+      expect(g.stats.kills).toBeGreaterThan(300)
     }
   }, 120000)
 

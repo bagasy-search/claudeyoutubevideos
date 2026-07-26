@@ -40,13 +40,13 @@ export interface WavePlan {
 export const MAX_SPAWNS = 26
 
 export function waveBudget(wave: number): number {
-  return 10 * Math.pow(1.13, wave - 1)
+  return 12 * Math.pow(1.17, wave - 1)
 }
 
 /** HP superlineal: al principio suave, despues empieza a doler. */
 export function waveHpMul(wave: number): number {
   const w = wave - 1
-  return 1 + 0.09 * w + 0.004 * w * w
+  return 1 + 0.14 * w + 0.011 * w * w
 }
 
 export function planWave(rng: Rng, wave: number): WavePlan {

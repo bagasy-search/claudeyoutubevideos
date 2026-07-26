@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { BUILD_SLOTS, Game } from '../src/sim/game'
+import { BUILD_SLOTS, BUILD_TIME, FIRST_BUILD_TIME, Game } from '../src/sim/game'
 
 /**
  * Plataformas libres, en orden. Antes esto barria una grilla buscando huecos
@@ -116,6 +116,41 @@ describe('ciclo de juego', () => {
     const again = g.canPlace(spot[0] + 5, spot[1] + 2, 'arrow')
     expect(again.ok).toBe(false)
     expect(again.reason).toBe('plataforma ocupada')
+  })
+
+  it('la oleada arranca sola cuando se acaba el reloj', () => {
+    const g = new Game({ seed: 'reloj' })
+    expect(g.phase).toBe('build')
+    // Faltando dos tics sigue en construccion...
+    for (let i = 0; i < 60 * FIRST_BUILD_TIME - 2; i++) g.tick()
+    expect(g.phase).toBe('build')
+    // ...y unos pocos tics despues arranca sola. El margen no es pereza: restar
+    // 1/60 mil quinientas veces no da cero exacto en punto flotante, y clavar
+    // el tic exacto seria un test que falla por el redondeo y no por el juego.
+    for (let i = 0; i < 4; i++) g.tick()
+    expect(g.phase).toBe('combat')
+    expect(g.wave).toBe(1)
+  })
+
+  it('adelantar la oleada paga el tiempo que sobraba', () => {
+    const g = new Game({ seed: 'reloj' })
+    const before = g.gold
+    g.startWave(true)
+    expect(g.phase).toBe('combat')
+    expect(g.gold).toBe(before + Math.round(FIRST_BUILD_TIME * 2))
+  })
+
+  it('entre oleadas el reloj es mas corto que el de la primera', () => {
+    const g = new Game({ seed: 'reloj', startGold: 5000 })
+    for (const [x, y] of findSpots(g, 6)) g.placeTower(x, y, 'arrow')
+    g.startWave()
+    let guard = 0
+    while (g.phase === 'combat' && guard++ < 60 * 300) g.tick()
+    expect(g.phase).toBe('draft')
+    g.pickUpgrade(g.offer[0].id)
+    expect(g.phase).toBe('build')
+    expect(g.buildTimer).toBe(BUILD_TIME)
+    expect(BUILD_TIME).toBeLessThan(FIRST_BUILD_TIME)
   })
 
   it('vender libera la plataforma', () => {

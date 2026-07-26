@@ -17,7 +17,11 @@
         </div>
         <div class="hud-group" id="tower-bar"></div>
         <div class="hud-group">
-          <button id="btn-start" class="primary">Iniciar oleada <kbd>Espacio</kbd></button>
+          <button id="btn-start" class="primary">
+            <span id="start-label">Adelantar</span>
+            <span id="start-countdown"></span>
+            <kbd>Espacio</kbd>
+          </button>
           <button id="btn-sound" title="Silenciar (M)">🔊</button>
           <span id="hud-seed" class="seed"></span>
         </div>
@@ -27,7 +31,7 @@
 
       <footer id="tips">
         <span><kbd>1</kbd>–<kbd>4</kbd> elegir torre</span>
-        <span><kbd>click</kbd> construir</span>
+        <span><kbd>click</kbd> construir en una plataforma</span>
         <span><kbd>click derecho</kbd> vender</span>
         <span><kbd>Esc</kbd> cancelar</span>
         <span><kbd>R</kbd> reroll en el draft</span>

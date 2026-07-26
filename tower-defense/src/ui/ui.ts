@@ -24,6 +24,8 @@ export class Ui {
     seed: byId('hud-seed'),
     towerBar: byId('tower-bar'),
     start: byId('btn-start') as HTMLButtonElement,
+    startLabel: byId('start-label'),
+    countdown: byId('start-countdown'),
     draft: byId('draft'),
     draftWave: byId('draft-wave'),
     cards: byId('draft-cards'),
@@ -110,7 +112,24 @@ export class Ui {
     setText(this.el.gold, String(Math.floor(g.gold)))
     setText(this.el.lives, String(g.lives))
     setText(this.el.enemies, String(g.world.enemies.count))
-    this.el.start.disabled = g.phase !== 'build'
+    /*
+     * El boton dejo de ser "iniciar" y paso a ser "adelantar". La oleada viene
+     * igual; lo que ofrece el boton es cobrar el tiempo que no usaste. Por eso
+     * muestra el reloj: el numero que baja es la informacion, el boton es la
+     * opcion.
+     */
+    if (g.phase === 'build') {
+      this.el.start.disabled = false
+      const left = Math.max(0, Math.ceil(g.buildTimer))
+      setText(this.el.startLabel, `Adelantar · +${Math.round(g.buildTimer * 2)} oro`)
+      setText(this.el.countdown, `${left}s`)
+      this.el.countdown.classList.toggle('urgent', left <= 3)
+    } else {
+      this.el.start.disabled = true
+      setText(this.el.startLabel, g.phase === 'combat' ? 'Oleada en curso' : 'Elegí una mejora')
+      setText(this.el.countdown, '')
+      this.el.countdown.classList.remove('urgent')
+    }
     setText(this.el.rerollCount, String(g.rerolls))
     this.el.reroll.disabled = g.rerolls <= 0
 

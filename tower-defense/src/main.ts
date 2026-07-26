@@ -19,7 +19,7 @@ if (import.meta.env.DEV) {
 }
 
 const ui = new Ui(game)
-ui.onStartWave = () => game.startWave()
+ui.onStartWave = () => game.startWave(true)
 ui.onPick = (id) => {
   sfx.cardPick()
   game.pickUpgrade(id)
@@ -120,7 +120,7 @@ canvas.addEventListener('contextmenu', (ev) => {
 window.addEventListener('keydown', (ev) => {
   if (ev.code === 'Space') {
     ev.preventDefault()
-    if (game.phase === 'build') game.startWave()
+    if (game.phase === 'build') game.startWave(true)
     return
   }
   if (ev.key === 'Escape') ui.selectTower(null)

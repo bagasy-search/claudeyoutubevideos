@@ -93,6 +93,19 @@ export const BUILD_SLOTS: readonly PathPoint[] = [
 /** Radio de captura del toque. Generoso: es un juego para dedos, no para mouse. */
 export const SLOT_R = 38
 
+/**
+ * Segundos entre oleadas. No hay boton de "iniciar": la oleada llega sola.
+ *
+ * Es la diferencia entre un juego de turnos y uno de tiempo real. Con boton, el
+ * jugador se toma los minutos que quiera para optimizar y la unica tension esta
+ * dentro de la oleada; con reloj, decidir rapido es parte de jugar y una oleada
+ * te puede agarrar a medio armar.
+ *
+ * La primera es mas larga porque es la unica que se juega sin nada construido.
+ */
+export const BUILD_TIME = 12
+export const FIRST_BUILD_TIME = 25
+
 export interface GameOptions {
   seed?: string | number
   startGold?: number
@@ -122,6 +135,9 @@ export class Game {
   plan: WavePlan | null = null
   waveTime = 0
   spawnCursor = 0
+
+  /** Segundos hasta que arranque la proxima oleada sola. */
+  buildTimer = FIRST_BUILD_TIME
 
   draftMemory: DraftMemory = newDraftMemory()
   offer: UpgradeDef[] = []
@@ -187,8 +203,19 @@ export class Game {
     this.events.emit('changed', undefined)
   }
 
-  startWave(): void {
+  /**
+   * @param called true si la llamo el jugador antes de tiempo. Adelantar paga:
+   * es el bucle de riesgo/recompensa que hace que el reloj sea una decision y
+   * no solo una espera.
+   */
+  startWave(called = false): void {
     if (this.phase !== 'build') return
+    if (called && this.buildTimer > 0) {
+      const bonus = Math.round(this.buildTimer * 2)
+      this.gold += bonus
+      this.stats.goldEarned += bonus
+    }
+    this.buildTimer = 0
     this.wave++
     this.plan = planWave(this.simRng, this.wave)
     this.waveTime = 0
@@ -198,6 +225,14 @@ export class Game {
 
   /** Un tic de simulacion. dt siempre es TICK_S — nunca el dt del frame. */
   tick(): void {
+    if (this.phase === 'build') {
+      // La cuenta atras corre en la sim y no en el render: asi la pausa por
+      // hit-stop la afecta igual que a todo lo demas, y una run con la misma
+      // seed sigue siendo reproducible tic a tic.
+      this.buildTimer -= TICK_S
+      if (this.buildTimer <= 0) this.startWave()
+      return
+    }
     if (this.phase !== 'combat') return
     const dt = TICK_S
     this.waveTime += dt
@@ -223,7 +258,7 @@ export class Game {
   }
 
   private endWave(): void {
-    const clearBonus = 20 + this.wave * 6
+    const clearBonus = 15 + this.wave * 4
     const interestGold = Math.floor(this.gold * this.interest)
     const total = clearBonus + this.goldPerWave + interestGold
     this.gold += total
@@ -240,6 +275,7 @@ export class Game {
     this.offer = res.options
     if (this.offer.length === 0) {
       // Pool agotado: saltear el draft en vez de trabarse.
+      this.buildTimer = BUILD_TIME
       this.setPhase('build')
       return
     }
@@ -277,6 +313,7 @@ export class Game {
     commitOffer(this.draftMemory, this.offer, def)
     this.offer = []
     this.recomputeAllStats()
+    this.buildTimer = BUILD_TIME
     this.setPhase('build')
     return true
   }

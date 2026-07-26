@@ -206,6 +206,45 @@ button.primary:hover:not(:disabled) {
   touch-action: none;
 }
 
+/*
+ * La barra de torres envuelve en vez de desbordar. Con cuatro torres en un
+ * telefono de 360 px la cuarta quedaba cortada por el borde — o sea que existia
+ * una torre que el jugador no podia ni ver ni comprar.
+ */
+#tower-bar {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#btn-start {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/*
+ * El reloj en tabular-nums y con ancho fijo: sin eso el boton cambia de tamaño
+ * cada vez que la cuenta pasa de 10 a 9, y un boton que se mueve solo se lee
+ * como un error.
+ */
+#start-countdown {
+  font-variant-numeric: tabular-nums;
+  min-width: 3ch;
+  text-align: right;
+  opacity: 0.75;
+}
+
+#start-countdown.urgent {
+  color: #ffd66b;
+  opacity: 1;
+  animation: pulse-clock 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-clock {
+  from { transform: scale(1); }
+  to { transform: scale(1.15); }
+}
+
 #tips {
   display: flex;
   gap: 14px;
