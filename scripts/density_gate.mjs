@@ -65,8 +65,20 @@ const seconds = Math.round(totalFrames / FPS);
 
 // 3) contar visuales DISTINTOS
 const uniq = (re) => [...new Set([...src.matchAll(re)].map((m) => m[1]))];
-const imgs = uniq(/["'`]\/?(?:public\/)?img\/([a-z0-9_\-]+)\.(?:png|jpg|jpeg|webp)/gi);
-const clips = uniq(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/([a-z0-9_\-]+)\.(?:mp4|webm|mov|jpg|png)/gi);
+// Las rutas de b-roll tienen DOS estilos válidos desde Capa 2 (subcarpeta broll/<slug>/x.mp4 y
+// prefijo broll/<slug>_x.mp4) y algunos builds las arman dinámicamente. El regex viejo sólo veía
+// el prefijo → un video con 54 clips en disco se contaba como 0 y el gate pedía b-roll que YA estaba.
+const imgs = uniq(/["'`]\/?(?:public\/)?img\/(?:[a-z0-9_\-]+\/)*([a-z0-9_\-]+)\.(?:png|jpg|jpeg|webp)/gi);
+const clipsFuente = uniq(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/(?:[a-z0-9_\-]+\/)*([a-z0-9_\-]+)\.(?:mp4|webm|mov|jpg|png)/gi);
+const clipsDisco = (() => {
+  const s = new Set();
+  for (const d of [`public/broll/${slug}`, `public/broll/shots_${slug}`]) {
+    try { for (const f of readdirSync(d)) if (/\.(mp4|webm|mov)$/i.test(f)) s.add(f); } catch {}
+  }
+  try { for (const f of readdirSync("public/broll")) if (f.startsWith(slug) && /\.(mp4|webm|mov)$/i.test(f)) s.add(f); } catch {}
+  return [...s];
+})();
+const clips = clipsDisco.length > clipsFuente.length ? clipsDisco : clipsFuente;
 // Componentes del kit instanciados. GENÉRICO (antes la lista era casi toda de Federer → los otros
 // nichos contaban 0 y el gate los dejaba pasar peladísimos). Ahora: todo <Componente> del JSX menos
 // los primitivos de Remotion y los estructurales (fondo/marco/avatar, que no son "componentes").

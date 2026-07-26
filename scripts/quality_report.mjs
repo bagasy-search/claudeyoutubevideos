@@ -73,8 +73,25 @@ const jsx = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1]).filter
 const comps = jsx.filter((n) => !TOMAS.has(n));
 const shots = jsx.filter((n) => TOMAS.has(n)).length;
 const uniqRe = (re) => new Set([...src.matchAll(re)].map((m) => m[1])).size;
-R.imagenes = uniqRe(/["'`]\/?(?:public\/)?img\/([a-z0-9_\-]+)\.(?:png|jpg|jpeg|webp)/gi);
-R.clips_reales = uniqRe(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/([a-z0-9_\-]+)\.(?:mp4|webm|mov)/gi);
+// OJO con estas rutas — acá se midió mal y se reportó "0 clips" en un video que tenía 54:
+//   · Capa 2 aisló el b-roll por video, y hay DOS estilos válidos: subcarpeta broll/<slug>/x.mp4
+//     y prefijo broll/<slug>_x.mp4. El regex viejo sólo veía el segundo (no cruzaba subcarpetas).
+//   · Y varios builds arman la ruta DINÁMICAMENTE (`broll/shots_${SLUG}/${n}`), así que ningún
+//     regex sobre el fuente las puede ver.
+// Por eso el conteo cruza el fuente con el DISCO, que es la única fuente de verdad.
+R.imagenes = uniqRe(/["'`]\/?(?:public\/)?img\/(?:[a-z0-9_\-]+\/)*([a-z0-9_\-]+)\.(?:png|jpg|jpeg|webp)/gi);
+const clipsEnFuente = uniqRe(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/(?:[a-z0-9_\-]+\/)*([a-z0-9_\-]+)\.(?:mp4|webm|mov)/gi);
+const clipsEnDisco = (() => {
+  let n = 0;
+  for (const d of [`public/broll/${slug}`, `public/broll/shots_${slug}`]) {
+    try { n += readdirSync(d).filter((f) => /\.(mp4|webm|mov)$/i.test(f)).length; } catch {}
+  }
+  try { n += readdirSync("public/broll").filter((f) => f.startsWith(slug) && /\.(mp4|webm|mov)$/i.test(f)).length; } catch {}
+  return n;
+})();
+R.clips_reales = Math.max(clipsEnFuente, clipsEnDisco);
+R.clips_fuente = clipsEnFuente;
+R.clips_disco = clipsEnDisco;
 R.componentes_usos = comps.length;
 R.componentes_distintos = new Set(comps).size;
 const momentos = Math.max(shots, R.imagenes + R.clips_reales);
