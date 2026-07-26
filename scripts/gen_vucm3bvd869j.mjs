@@ -75,10 +75,29 @@ const nextClip = (sec) => {
   const c = CLIPS.find((n) => !usedClip.has(n)); if (c) { usedClip.add(c); return c; } return null;
 };
 
+
+/* ── tratamiento del corte ─────────────────────────────────────────────────
+ * El creador: "usás siempre la misma transición y cansa; a veces simplemente
+ * es sin transición". Entonces:
+ *   · CORTE LIMPIO (sin transición) = el default de las tomas rápidas
+ *   · y cuando hay transición, se ROTA entre las 4 variantes del kit
+ *     (whip / lift / iris / fold), nunca dos iguales seguidas.
+ * El corte limpio se logra en el Main: la escena se monta con su shell YA
+ * asentado (Sequence from={-WHIP} + totalF más largo), así no entra ni sale
+ * con whip: entra y sale seca.
+ * ---------------------------------------------------------------------- */
+const WHIP = 12;
+const VARIANTES = ["whip", "lift", "iris", "fold"];
+// patrón de 7: 4 cortes secos + 3 con transición → el ritmo no se vuelve sistemático
+const PATRON_TOMA = [null, null, 0, null, 1, null, 2];
+let vi = 0;
+const nextVar = () => VARIANTES[(vi = (vi + 1) % VARIANTES.length)];
+
 /* ─────────────────────── anclas: componentes del kit ───────────────────── */
 const F = (d) => Math.round(d * FPS);
 const A = [];
 const anc = (phrase, dur, node) => A.push({ phrase: norm(phrase), dur, node });
+// (el 2º argumento del node es la variante de transición que le toca, o null = corte seco)
 
 anc("y te lo digo asi de fuerte porque a ramon", 5.6, (d) => `<FedLowerThird totalF={${F(d)}} name="Ramón, 72" role="Ex colectivero de la línea 60" topic="Cuatro años escuchando «es la edad»" accent={ACC} avatarSrc={null} />`);
 anc("los anos no hormiguean", 4.2, (d) => `<FedQuote totalF={${F(d)}} kicker="Escuchame una cosa" quote="Los años no hormiguean. Los nervios hormiguean." author="Dr. Federer" role="Federer Archivos" accent={ACC} mood="warmdark" />`);
@@ -193,6 +212,15 @@ const AVATAR_OPEN = 3.6;   // el video ABRE con avatar full (frames 0-108)
 const RUN_TARGET = 20;     // seg de visual entre ventana y ventana de avatar
 const WIN_MIN = 6.5;       // largo mínimo de cada ventana de avatar
 
+
+// aplica el tratamiento al JSX ya armado: variante distinta, o corte SECO
+// (totalF más largo + el Main lo monta con from={-WHIP} → shell asentado, sin whip)
+const vestir = (nodeStr, treat) => {
+  if (!/totalF=\{/.test(nodeStr)) return { node: nodeStr, cut: false };   // p.ej. la pizarra
+  if (treat === null) return { node: nodeStr.replace(/totalF=\{(\d+)\}/, (_m, n) => `totalF={${+n + 2 * WHIP}}`), cut: true };
+  return { node: nodeStr.replace(/^<([A-Za-z0-9]+)/, (_m, c) => `<${c} variant="${treat}"`), cut: false };
+};
+
 const raw = [];
 let i = 0;
 while (i < SENTS.length && SENTS[i].s < AVATAR_OPEN) i++;
@@ -205,7 +233,9 @@ while (i < SENTS.length) {
     let j = i, acc = 0;
     while (j < SENTS.length && acc < a.dur) { acc = SENTS[j].e - start; j++; }
     const dur = Math.max(a.dur, Math.min(acc, a.dur * 1.3));
-    raw.push({ start, dur, node: a.node(dur), tag: "comp" });
+    const treatC = (raw.filter((x) => x.tag === "comp").length % 4 === 3) ? null : nextVar();
+    const vc = vestir(a.node(dur), treatC);
+    raw.push({ start, dur, node: vc.node, cut: vc.cut, tag: "comp" });
     i = j; continue;
   }
   const stop = nextAnchorIdx(i);
@@ -244,7 +274,9 @@ for (const c of keep) {
     if (im) node = `<FedFullShot totalF={${F(c.dur)}} src={${img(im)}} ken="${["in", "out", "left", "in"][k % 4]}" accent={ACC} mood="${["warmdark", "gold", "cool", "science"][k % 4]}" />`;
     else { const cl2 = nextClip(c.sec); if (!cl2) { avatarSec += c.dur; continue; } node = `<FedFullShot totalF={${F(c.dur)}} src={${clip(cl2)}} video ken="in" accent={ACC} mood="warmdark" />`; }
   }
-  cues.push({ ...c, node });
+  const pt = PATRON_TOMA[k % PATRON_TOMA.length];
+  const v = vestir(node, pt === null ? null : VARIANTES[pt]);
+  cues.push({ ...c, node: v.node, cut: v.cut });
 }
 
 /* ───────────────────────────── salida .tsx ─────────────────────────────── */
@@ -266,7 +298,7 @@ const TEALC = TEAL;
 const COOLC = COOL_BLUE;
 const ALERT = '#D9705B';
 
-export type Cue = {start: number; dur: number; node: React.ReactNode};
+export type Cue = {start: number; dur: number; cut?: boolean; node: React.ReactNode};
 
 export const CUES: Cue[] = [
 ${body}
@@ -282,3 +314,4 @@ console.log(`cues: ${cues.length}  ·  componentes: ${cues.filter((c) => c.tag =
 console.log(`imgs usadas ${usedImg.size}/${IMGS.length} · clips usados ${usedClip.size}/${CLIPS.length}`);
 console.log(`visual ${visual.toFixed(0)}s / ${END.toFixed(0)}s  →  avatar full ${(100 - (100 * visual) / END).toFixed(0)}%`);
 console.log(`toma promedio: ${(visual / cues.length).toFixed(2)}s`);
+console.log(`cortes SECOS: ${cues.filter((c) => c.cut).length}/${cues.length}  ·  con transición: ${cues.filter((c) => !c.cut).length}`);

@@ -32,6 +32,7 @@ import {CUES, TOTAL_VUCM3BVD869J} from './cues_vucm3bvd869j.gen';
 
 const CLAMP = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const ACCENT = '#E9B44C';
+const WHIP_F = 12; // FED_WHIP_F del kit: el solape del whip
 // _opt.mp4 = la copia comprimida que viaja en el tarball del farm (el master pesa 887 MB)
 export const AVATAR_SRC = 'vucm3bvd869j_opt.mp4';
 // El mp4 del avatar dura 1655.658s; la última palabra cierra en TOTAL_VUCM3BVD869J.
@@ -119,9 +120,25 @@ export const Main_vucm3bvd869j: React.FC = () => {
       {CUES.map((c, k) => {
         const from = Math.round(c.start * fps);
         const dur = Math.max(2, Math.round(c.dur * fps));
-        return (
-          <Sequence key={k} from={from} durationInFrames={dur} name={`cue ${k} · ${c.start.toFixed(1)}s`}>
+        // CORTE SECO (c.cut): la escena se monta con su TransitionShell YA asentado —
+        // el <Sequence from={-WHIP}> interno le adelanta el reloj los 12 frames del whip,
+        // y como su totalF viene 2·WHIP más largo, tampoco llega a la salida. Entra y sale
+        // seca. Sin esto todo el video usaba el mismo whip y cansaba (creador, 2026-07-26).
+        const inner = c.cut ? (
+          <Sequence from={-WHIP_F} name="corte seco">
             {c.node}
+          </Sequence>
+        ) : (
+          c.node
+        );
+        return (
+          <Sequence
+            key={k}
+            from={from}
+            durationInFrames={dur}
+            name={`cue ${k} · ${c.start.toFixed(1)}s${c.cut ? ' · seco' : ''}`}
+          >
+            {inner}
           </Sequence>
         );
       })}
