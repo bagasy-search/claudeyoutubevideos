@@ -212,6 +212,7 @@ if (pref && pref.startsWith("@")) {
   console.log(`pre-vuelo compartidas ✓ (${COMPARTIDAS.filter((d) => fs.existsSync(`public/${d}`)).join(", ") || "ninguna"})`);
 }
 
+
 // nombre PER-SLUG en tmpdir: dos farm.mjs en paralelo NO se pisan la lista (antes era "_assets_list.txt" fijo en el CWD)
 const listFile = path.join(os.tmpdir(), `_assets_${slug}.txt`);
 fs.writeFileSync(listFile, items.join("\n"));
@@ -231,6 +232,36 @@ const relTag = `assets-${slug}`;
 try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --cleanup-tag`); } catch { /* no existe */ }
 sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del render"`);
 fs.rmSync(tar);
+}
+
+// ── EL MISMO CHEQUEO DE ASSETS, PERO PARA RE-RENDER PARCIAL ───────────────────────────────────
+// Va acá AFUERA a propósito. Todo el pre-vuelo de arriba vive adentro de `if (!only)` —que cierra
+// recién en esta línea, no donde parece—, así que en un parcial no corre nada: justo cuando más
+// falta, porque no se re-empaqueta y un asset ausente en disco va a estar ausente en el render.
+// (Escribí este bloque una vez adentro del `if (!only)` sin darme cuenta: era código muerto y las
+// 2 imágenes .png inexistentes del GUANTE se colaron igual.)
+// En parcial no se puede comparar contra la lista del tar (no se arma), pero sí contra el disco,
+// que es lo que caza el caso real: el build pide un archivo que nunca se generó.
+if (only) {
+  const dirs = ["src/_fed6/VideoEdit", "src/VideoEdit"].filter((d) => fs.existsSync(d));
+  const datos = dirs.flatMap((d) => fs.readdirSync(d).map((f) => `${d}/${f}`))
+    .filter((f) => f.includes(slug) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f));
+  const refs = new Set();
+  for (const f of datos) {
+    for (const m of fs.readFileSync(f, "utf8").matchAll(/"(?:src|image|poster|clip|video|thumb|bg)":\s*"([^"]+)"/g)) {
+      const r = m[1].replace(/^\/?(?:public\/)?/, "");
+      if (/\.(png|jpe?g|webp|mp4|webm|mov)$/i.test(r)) refs.add(r);
+    }
+  }
+  const faltan = [...refs].filter((r) => !fs.existsSync(path.join("public", r)));
+  if (faltan.length) {
+    console.error(`✗ PRE-VUELO ASSETS (parcial): el build pide ${faltan.length} archivo(s) que no existen en public/. Van a dar 404 o "undefined was passed to staticFile()" adentro del render:`);
+    for (const r of faltan.slice(0, 12)) console.error(`    ${r}`);
+    if (faltan.length > 12) console.error(`    … y ${faltan.length - 12} más`);
+    console.error(`  Generalos y volvé a lanzar. OJO: al ser parcial NO se re-sube el tar, así que si el asset es nuevo necesitás un render COMPLETO para que viaje.`);
+    process.exit(1);
+  }
+  if (refs.size) console.log(`pre-vuelo assets ✓ (parcial: ${refs.size} assets del build, todos en disco)`);
 }
 
 // 2.5) CANDADO DE RENDER — la cuenta tiene 20 jobs concurrentes en total. Si dos videos rendean a la
