@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Sequence, OffthreadVideo, Audio, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import { AbsoluteFill, Sequence, OffthreadVideo, Audio, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { F_INTER, F_OSWALD } from "./premium/theme";
 import { PremiumBackdrop } from "./federer_premium";
 import { LowerThirdFederer } from "./federer_broadcast";
@@ -125,7 +125,7 @@ const Letterbox: React.FC<{ h?: number }> = ({ h = 74 }) => (
 
 export const ColdOpenRevelation: React.FC = () => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  // (fps no se usa en esta escena; se deja el hook fuera para no romper el orden)
   // flash a negro en cada impacto (inicio de cada fragmento) + en el título
   const impacts = [...FRAGS.map((f) => f.at), TITLE_AT];
   const black = impacts.reduce((m, b) => Math.max(m, interpolate(frame, [b - 2, b, b + 4], [0, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })), 0);
