@@ -209,6 +209,27 @@ if (convertidos && !/import \{ KeyPhrase \}/.test(out5.join("\n"))) {
 }
 console.log(`DepthText (props de ruta con texto) convertidos a KeyPhrase: ${convertidos}`);
 
+// 17) JourneyCanvas necesita ~2,4 s de "dwell" POR waypoint para armar su recorrido. Con un beat de
+//     5 s y 3 paradas, las ventanas se cruzan y el inputRange sale desordenado:
+//     "inputRange must be strictly monotonically increasing but got [360,372,127,139]" → el chunk
+//     entero se cae (frame 31519). Es un solo uso, así que se pasa a RevealCards, que dice lo mismo
+//     (pasos numerados con su nota) y no depende de la duración.
+let journeys = 0;
+for (let i = 0; i < out5.length; i++) {
+  if (!/<JourneyCanvas\b/.test(out5[i])) continue;
+  const wps = (out5[i].match(/waypoints=\{(\[[\s\S]*?\])\}/) || [])[1];
+  const eyebrow = (out5[i].match(/\beyebrow="([^"]*)"/) || [])[1] || "";
+  const title = (out5[i].match(/\btitle="([^"]*)"/) || [])[1] || "";
+  let items = [];
+  try { items = JSON.parse(wps).slice(0, 3).map((w) => ({ title: w.label || "", note: w.sub || "" })); } catch { continue; }
+  if (!items.length) continue;
+  out5[i] = out5[i]
+    .replace(/<JourneyCanvas\b[\s\S]*?\/>/, `<RevealCards durationInFrames={d} items={${JSON.stringify(items)}} eyebrow=${JSON.stringify(eyebrow)} title=${JSON.stringify(title)} numbered />`)
+    .replace(/kind: "journey"/, 'kind: "revealcards"');
+  journeys++;
+}
+console.log(`JourneyCanvas (rango de tiempo invalido con beats cortos) convertidos a RevealCards: ${journeys}`);
+
 // ─────────────────────────────────────────────────────────────────────────────
 // 11 a 15: SANEAMIENTO DE TIPOS. Los props los escribieron subagentes que no
 // tenían a la vista la firma del componente, así que el cues salía con 194
