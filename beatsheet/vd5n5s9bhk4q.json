@@ -1,0 +1,4230 @@
+{
+ "video": "vd5n5s9bhk4q",
+ "avatar": "vd5n5s9bhk4q_opt.mp4",
+ "theme": "medico",
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "hook_0_0",
+   "start": 0.4,
+   "dur": 1.49,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_0_1",
+   "start": 1.89,
+   "dur": 2.09,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_rama_romero_asado_brasas.jpg",
+   "kicker": "La rama que casi todos tiran"
+  },
+  {
+   "id": "hook_0_2",
+   "start": 3.98,
+   "dur": 4.14,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_guante_algodon_viejo_mesa.jpg"
+  },
+  {
+   "id": "hook_0_3",
+   "start": 8.12,
+   "dur": 3.82,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_frasco_crema_caro_ochenta.jpg"
+  },
+  {
+   "id": "hook_0_4",
+   "start": 11.94,
+   "dur": 4.2,
+   "key": "hook",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Trabaja"
+    },
+    {
+     "t": "8"
+    },
+    {
+     "t": "horas"
+    },
+    {
+     "t": "mientras"
+    },
+    {
+     "t": "vos"
+    },
+    {
+     "t": "dormís",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "hook_0_5",
+   "start": 14.56,
+   "dur": 2.8,
+   "key": "hook",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ROMERO",
+     "sub": "No es una crema. Es una rama.",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "hook_0_6",
+   "start": 23.29,
+   "dur": 7.39,
+   "key": "hook",
+   "kind": "mitoverdad",
+   "myth": "Suena a cuento de abuela",
+   "truth": "Tiene nombre, tiene mecanismo y tiene número",
+   "flipAt": 42
+  },
+  {
+   "id": "amanda_1_0",
+   "start": 30.68,
+   "dur": 2.06,
+   "key": "amanda",
+   "kind": "talk"
+  },
+  {
+   "id": "amanda_1_1",
+   "start": 32.74,
+   "dur": 7.96,
+   "key": "amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_consultorio_tensiometro.jpg"
+  },
+  {
+   "id": "amanda_1_2",
+   "start": 40.7,
+   "dur": 8.33,
+   "key": "amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_sube_manga_costado.jpg",
+   "kicker": "Tapándose con la otra mano"
+  },
+  {
+   "id": "amanda_1_3",
+   "start": 49.03,
+   "dur": 6.55,
+   "key": "amanda",
+   "kind": "quote",
+   "image": "img/p_vd5n5s9bhk4q_amanda_sube_manga_costado.jpg",
+   "text": "Doctor, hace cuatro años que *no me saco el saquito*. Ni en enero, ni con cuarenta grados."
+  },
+  {
+   "id": "amanda_1_4",
+   "start": 55.58,
+   "dur": 4.46,
+   "key": "amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_saquito_hilo_verano_calor.jpg",
+   "hold": true
+  },
+  {
+   "id": "boda_2_0",
+   "start": 60.04,
+   "dur": 8.14,
+   "key": "boda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_vestido_sin_mangas_percha.jpg",
+   "kicker": "Y el vestido no tenía mangas",
+   "hold": true
+  },
+  {
+   "id": "boda_2_1",
+   "start": 68.18,
+   "dur": 4.9,
+   "key": "boda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_ojos_llorosos_consultorio.jpg"
+  },
+  {
+   "id": "boda_2_2",
+   "start": 73.08,
+   "dur": 4.2,
+   "key": "boda",
+   "kind": "lowerthird",
+   "title": "Una mujer de 68 años llorando por la piel de sus brazos",
+   "tone": "warn",
+   "kicker": "Seis nietos",
+   "desc": "No es vanidad. Es dejar de esconderse."
+  },
+  {
+   "id": "espejo_3_0",
+   "start": 77.04,
+   "dur": 3.6,
+   "key": "espejo",
+   "kind": "talk"
+  },
+  {
+   "id": "espejo_3_1",
+   "start": 80.64,
+   "dur": 2.7,
+   "key": "espejo",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_piel_crepe_macro.jpg"
+  },
+  {
+   "id": "espejo_3_2",
+   "start": 83.34,
+   "dur": 5.06,
+   "key": "espejo",
+   "kind": "freezezoom",
+   "image": "img/p_vd5n5s9bhk4q_brazo_piel_crepe_macro.jpg",
+   "x": 0.5,
+   "y": 0.55,
+   "label": "Se arruga como papel de seda",
+   "zoom": 1.7,
+   "tone": "warn"
+  },
+  {
+   "id": "espejo_3_3",
+   "start": 88.4,
+   "dur": 7.12,
+   "key": "espejo",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_cara_inferior_crepe.jpg",
+   "kicker": "Textura crepé"
+  },
+  {
+   "id": "espejo_3_4",
+   "start": 95.52,
+   "dur": 5.6,
+   "key": "espejo",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_vd5n5s9bhk4q_brazo_cara_inferior_crepe.jpg",
+   "imageDarken": 0.62,
+   "title": "Lo que te llevás de este video",
+   "chips": [
+    "Lo que usó doña Amanda",
+    "El mecanismo completo",
+    "Y no comprás nada"
+   ]
+  },
+  {
+   "id": "espejo_3_5",
+   "start": 101.12,
+   "dur": 2.38,
+   "key": "espejo",
+   "kind": "looplock",
+   "title": "El error del 90%",
+   "sub": "no se comete de noche — te lo digo al final"
+  },
+  {
+   "id": "colageno_4_0",
+   "start": 103.5,
+   "dur": 3.38,
+   "key": "colageno",
+   "kind": "stat",
+   "big": "1%",
+   "unit": "por año",
+   "label": "Colágeno que perdés desde los 20",
+   "tone": "teal"
+  },
+  {
+   "id": "colageno_4_1",
+   "start": 106.88,
+   "dur": 7.74,
+   "key": "colageno",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_colageno_perdida_anual.jpg"
+    }
+   ]
+  },
+  {
+   "id": "colageno_4_2",
+   "start": 114.62,
+   "dur": 2.8,
+   "key": "colageno",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "48 AÑOS",
+     "sub": "de ese 1% acumulándose en silencio",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "colageno_4_3",
+   "start": 124.76,
+   "dur": 2.8,
+   "key": "colageno",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "30%",
+     "sub": "del colágeno de la piel en los 5 años tras la menopausia",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "colageno_4_4",
+   "start": 130.03,
+   "dur": 4.87,
+   "key": "colageno",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_menopausia_caida_colageno.jpg"
+    }
+   ]
+  },
+  {
+   "id": "colageno_4_5",
+   "start": 134.9,
+   "dur": 5.78,
+   "key": "colageno",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "edad"
+    },
+    {
+     "t": "parejo"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "derrumbe",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "camionero_5_0",
+   "start": 140.68,
+   "dur": 6.18,
+   "key": "camionero",
+   "kind": "talk"
+  },
+  {
+   "id": "camionero_5_1",
+   "start": 146.86,
+   "dur": 6.26,
+   "key": "camionero",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_camionero_cara_asimetrica.jpg",
+   "kicker": "Caso publicado en 2012",
+   "hold": true
+  },
+  {
+   "id": "camionero_5_2",
+   "start": 153.12,
+   "dur": 6.8,
+   "key": "camionero",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_camion_ventanilla_sol_lateral.jpg"
+  },
+  {
+   "id": "camionero_5_3",
+   "start": 159.92,
+   "dur": 5.61,
+   "key": "camionero",
+   "kind": "freezezoom",
+   "image": "img/p_vd5n5s9bhk4q_camionero_cara_asimetrica.jpg",
+   "x": 0.32,
+   "y": 0.45,
+   "label": "El lado de la ventanilla",
+   "zoom": 1.8,
+   "tone": "warn"
+  },
+  {
+   "id": "camionero_5_4",
+   "start": 165.53,
+   "dur": 3.85,
+   "key": "camionero",
+   "kind": "splitlist",
+   "title": "Misma persona, misma edad",
+   "items": [
+    "Misma sangre",
+    "Mismos genes",
+    "Distinto lado del vidrio"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "camionero_5_5",
+   "start": 169.38,
+   "dur": 3.86,
+   "key": "camionero",
+   "kind": "callout",
+   "image": "img/p_vd5n5s9bhk4q_camionero_cara_asimetrica.jpg",
+   "figure": "28 años al volante",
+   "caption": "Media cara de 69. Media cara de 90."
+  },
+  {
+   "id": "camionero_5_6",
+   "start": 173.24,
+   "dur": 4.2,
+   "key": "camionero",
+   "kind": "lowerthird",
+   "title": "La única diferencia era de qué lado le pegaba la luz",
+   "tone": "warn",
+   "kicker": "Mismo hombre",
+   "desc": "El vidrio deja pasar el UVA que rompe el colágeno."
+  },
+  {
+   "id": "loop_error_6_0",
+   "start": 174.74,
+   "dur": 2.8,
+   "key": "loop_error",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL ERROR",
+     "sub": "por eso el 90% no ve nada",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "loop_error_6_1",
+   "start": 194.94,
+   "dur": 1.82,
+   "key": "loop_error",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "noche"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "mañana",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "loop_error_6_2",
+   "start": 196.76,
+   "dur": 4.2,
+   "key": "loop_error",
+   "kind": "lowerthird",
+   "title": "Antes de las nueve de la mañana",
+   "tone": "warn",
+   "kicker": "El error",
+   "desc": "Ahí se arruina todo lo que hiciste de noche."
+  },
+  {
+   "id": "presenta_7_0",
+   "start": 199.98,
+   "dur": 5.94,
+   "key": "presenta",
+   "kind": "talk"
+  },
+  {
+   "id": "presenta_7_1",
+   "start": 205.92,
+   "dur": 9.3,
+   "key": "presenta",
+   "kind": "lowerthird",
+   "title": "Dr. Federer · Federer Archivos",
+   "tone": "teal",
+   "kicker": "Más de 10 años de consultorio",
+   "desc": "Lo que en el consultorio nunca me dan el tiempo de explicar."
+  },
+  {
+   "id": "presenta_7_2",
+   "start": 215.22,
+   "dur": 2.8,
+   "key": "presenta",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "12 MINUTOS",
+     "sub": "lo que dura un turno. Esto necesita veinte.",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "presenta_7_3",
+   "start": 220.18,
+   "dur": 4.1,
+   "key": "presenta",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_federer_consultorio_reloj.jpg"
+  },
+  {
+   "id": "nocompres_8_0",
+   "start": 224.28,
+   "dur": 3.35,
+   "key": "nocompres",
+   "kind": "mitoverdad",
+   "myth": "Para la piel del brazo hay que gastar en cremas caras",
+   "truth": "Todo lo que necesitás ya está en tu cocina",
+   "flipAt": 42
+  },
+  {
+   "id": "nocompres_8_1",
+   "start": 227.63,
+   "dur": 4.2,
+   "key": "nocompres",
+   "kind": "checklist",
+   "title": "Lo que NO vas a necesitar",
+   "items": [
+    {
+     "text": "El frasco de ochenta dólares",
+     "state": "warn"
+    },
+    {
+     "text": "La crema antiedad de farmacia",
+     "state": "warn"
+    },
+    {
+     "text": "Romero y un guante de algodón",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "nocompres_8_2",
+   "start": 229.46,
+   "dur": 1.76,
+   "key": "nocompres",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_cocina_romero_pan_mesa.jpg"
+  },
+  {
+   "id": "circulacion_9_0",
+   "start": 231.22,
+   "dur": 4.56,
+   "key": "circulacion",
+   "kind": "talk"
+  },
+  {
+   "id": "circulacion_9_1",
+   "start": 235.78,
+   "dur": 2.8,
+   "key": "circulacion",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CIRCULACIÓN",
+     "sub": "después de los 60, casi todo empieza ahí",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "circulacion_9_2",
+   "start": 238.76,
+   "dur": 4.2,
+   "key": "circulacion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "sangre"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "camión"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "reparto",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "circulacion_9_3",
+   "start": 242.08,
+   "dur": 4.24,
+   "key": "circulacion",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_camion_reparto_barrio_calle.jpg"
+  },
+  {
+   "id": "circulacion_9_4",
+   "start": 246.32,
+   "dur": 8.87,
+   "key": "circulacion",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "El último barrio",
+     "sub": "a la piel el camión llega último. Siempre.",
+     "at": 0
+    },
+    {
+     "card": "Y peor todavía",
+     "sub": "la cara de abajo del brazo, entre el codo y la axila",
+     "at": 140
+    }
+   ]
+  },
+  {
+   "id": "circulacion_9_5",
+   "start": 252.56,
+   "dur": 4.4,
+   "key": "circulacion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_circulacion_barrio_piel.jpg"
+    }
+   ]
+  },
+  {
+   "id": "circulacion_9_6",
+   "start": 256.96,
+   "dur": 4.32,
+   "key": "circulacion",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_cara_inferior_saludo.jpg",
+   "kicker": "Esa parte que se mueve cuando saludás"
+  },
+  {
+   "id": "mecanismo_10_0",
+   "start": 261.28,
+   "dur": 8.14,
+   "key": "mecanismo",
+   "kind": "mitoverdad",
+   "myth": "Tenés el brazo arrugado porque te falta crema",
+   "truth": "Te faltan tres cosas, y ninguna es crema",
+   "flipAt": 173
+  },
+  {
+   "id": "mecanismo_10_1",
+   "start": 269.42,
+   "dur": 2.8,
+   "key": "mecanismo",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TRES COSAS",
+     "sub": "y ninguna es crema",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "falta1_agua_11_0",
+   "start": 273.06,
+   "dur": 2.86,
+   "key": "falta1_agua",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Te falta agua en la capa de arriba",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "falta1_agua_11_1",
+   "start": 275.92,
+   "dur": 5.6,
+   "key": "falta1_agua",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "agua"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "tomar"
+    },
+    {
+     "t": "agua"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "barrera",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "falta1_agua_11_2",
+   "start": 281.52,
+   "dur": 2.8,
+   "key": "falta1_agua",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ESTRATO CÓRNEO",
+     "sub": "la capa de células muertas que forma la barrera",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "falta1_agua_11_3",
+   "start": 284.36,
+   "dur": 6.33,
+   "key": "falta1_agua",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_pared_ladrillos_sin_cemento.jpg",
+   "hold": true
+  },
+  {
+   "id": "falta1_agua_11_4",
+   "start": 290.69,
+   "dur": 6.39,
+   "key": "falta1_agua",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_estrato_corneo_ladrillos.jpg"
+    }
+   ]
+  },
+  {
+   "id": "falta1_agua_11_5",
+   "start": 297.08,
+   "dur": 3.45,
+   "key": "falta1_agua",
+   "kind": "annotated",
+   "image": "img/p_vd5n5s9bhk4q_pared_ladrillos_sin_cemento.jpg",
+   "eyebrow": "Estrato córneo",
+   "caption": "Ladrillos = células. Cemento = grasas. Con los años, el cuerpo fabrica menos cemento."
+  },
+  {
+   "id": "falta1_agua_11_6",
+   "start": 300.53,
+   "dur": 2.93,
+   "key": "falta1_agua",
+   "kind": "splitlist",
+   "title": "El cemento que dejás de fabricar",
+   "items": [
+    "Menos ceramidas",
+    "Menos colesterol",
+    "Menos ácidos grasos"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "falta1_agua_11_7",
+   "start": 303.46,
+   "dur": 2.59,
+   "key": "falta1_agua",
+   "kind": "lowerthird",
+   "title": "Pérdida de agua transepidérmica",
+   "tone": "warn",
+   "kicker": "Tiene nombre en dermatología",
+   "desc": "Una pared sin cemento pierde agua todo el día. Todos los días."
+  },
+  {
+   "id": "falta1_agua_11_8",
+   "start": 306.05,
+   "dur": 3.89,
+   "key": "falta1_agua",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_perdida_agua_transepidermica.jpg"
+    }
+   ]
+  },
+  {
+   "id": "falta1_agua_11_9",
+   "start": 309.94,
+   "dur": 6.18,
+   "key": "falta1_agua",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "ve"
+    },
+    {
+     "t": "seca"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "ve"
+    },
+    {
+     "t": "arrugada",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "falta1_agua_11_10",
+   "start": 316.12,
+   "dur": 4.78,
+   "key": "falta1_agua",
+   "kind": "freezezoom",
+   "image": "img/p_vd5n5s9bhk4q_brazo_piel_papel_seda_dedos.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "label": "Finita. De papel.",
+   "zoom": 1.8,
+   "tone": "warn"
+  },
+  {
+   "id": "falta2_glandulas_12_0",
+   "start": 320.9,
+   "dur": 4.2,
+   "key": "falta2_glandulas",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Te faltan glándulas",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "falta2_glandulas_12_1",
+   "start": 324.36,
+   "dur": 2.8,
+   "key": "falta2_glandulas",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SEBÁCEAS",
+     "sub": "la cara tiene una cantidad enorme. El brazo, casi ninguna.",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "falta2_glandulas_12_2",
+   "start": 326.56,
+   "dur": 0.89,
+   "key": "falta2_glandulas",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_nariz_brilla_piel_cara.jpg"
+  },
+  {
+   "id": "falta2_glandulas_12_3",
+   "start": 327.45,
+   "dur": 1.53,
+   "key": "falta2_glandulas",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_glandulas_cara_vs_brazo.jpg"
+    }
+   ]
+  },
+  {
+   "id": "falta2_glandulas_12_4",
+   "start": 328.98,
+   "dur": 0.76,
+   "key": "falta2_glandulas",
+   "kind": "bars",
+   "title": "Glándulas sebáceas por zona",
+   "unit": "",
+   "items": [
+    {
+     "label": "Cara y frente",
+     "value": 100
+    },
+    {
+     "label": "Espalda",
+     "value": 55
+    },
+    {
+     "label": "Cara de abajo del brazo",
+     "value": 8
+    }
+   ]
+  },
+  {
+   "id": "falta2_glandulas_12_5",
+   "start": 329.74,
+   "dur": 4.2,
+   "key": "falta2_glandulas",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "brazo"
+    },
+    {
+     "t": "nunca"
+    },
+    {
+     "t": "tuvo"
+    },
+    {
+     "t": "su"
+    },
+    {
+     "t": "propia"
+    },
+    {
+     "t": "crema",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "glandulas2_13_0",
+   "start": 330.76,
+   "dur": 4.3,
+   "key": "glandulas2",
+   "kind": "talk"
+  },
+  {
+   "id": "glandulas2_13_1",
+   "start": 335.06,
+   "dur": 2.8,
+   "key": "glandulas2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SIN GLÁNDULAS",
+     "sub": "el brazo casi no fabrica su propia grasa",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "glandulas2_13_2",
+   "start": 340.98,
+   "dur": 8.42,
+   "key": "glandulas2",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_piel_papel_luz_ventana.jpg",
+   "kicker": "A los 20 el cemento todavía estaba"
+  },
+  {
+   "id": "riego_14_0",
+   "start": 349.4,
+   "dur": 1.19,
+   "key": "riego",
+   "kind": "talk"
+  },
+  {
+   "id": "riego_14_1",
+   "start": 350.59,
+   "dur": 2.87,
+   "key": "riego",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_capilares_dermis_cierre.jpg"
+    }
+   ]
+  },
+  {
+   "id": "riego_14_2",
+   "start": 353.46,
+   "dur": 4.2,
+   "key": "riego",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Oxígeno"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "aminoácidos"
+    },
+    {
+     "t": "para"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "colágeno",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "riego_14_3",
+   "start": 356.62,
+   "dur": 2.8,
+   "key": "riego",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "FIBROBLASTOS",
+     "sub": "las células que levantan la pared",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "riego_14_4",
+   "start": 363.96,
+   "dur": 12.48,
+   "key": "riego",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_albanil_manos_vacias_pared.jpg",
+   "kicker": "Va a trabajar. No tiene con qué."
+  },
+  {
+   "id": "pared_gotea_15_0",
+   "start": 376.44,
+   "dur": 6.52,
+   "key": "pared_gotea",
+   "kind": "talk"
+  },
+  {
+   "id": "pared_gotea_15_1",
+   "start": 382.96,
+   "dur": 4.2,
+   "key": "pared_gotea",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Sin cemento",
+     "sub": "la barrera está rota",
+     "at": 0
+    },
+    {
+     "card": "Sin glándulas",
+     "sub": "nada que la selle",
+     "at": 0
+    },
+    {
+     "card": "Sin riego",
+     "sub": "nadie trae materiales",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "pared_gotea_15_2",
+   "start": 387.86,
+   "dur": 4.22,
+   "key": "pared_gotea",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_crema_cara_mesa_luz_manana.jpg",
+   "kicker": "Tres horas. Y a la mañana, igual."
+  },
+  {
+   "id": "pared_gotea_15_3",
+   "start": 392.08,
+   "dur": 3.21,
+   "key": "pared_gotea",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_pared_humeda_pintura_rodillo.jpg"
+  },
+  {
+   "id": "pared_gotea_15_4",
+   "start": 395.29,
+   "dur": 5.05,
+   "key": "pared_gotea",
+   "kind": "mitoverdad",
+   "myth": "La crema que compraste es mala",
+   "truth": "Es pintura sobre una pared que gotea",
+   "flipAt": 8
+  },
+  {
+   "id": "tres_a_la_vez_16_0",
+   "start": 400.34,
+   "dur": 1.85,
+   "key": "tres_a_la_vez",
+   "kind": "talk"
+  },
+  {
+   "id": "tres_a_la_vez_16_1",
+   "start": 402.19,
+   "dur": 2.44,
+   "key": "tres_a_la_vez",
+   "kind": "checklist",
+   "title": "Romero + guante: las tres a la vez",
+   "items": [
+    {
+     "text": "Repone el cemento de la barrera",
+     "state": "done"
+    },
+    {
+     "text": "Tapa y frena la fuga de agua",
+     "state": "done"
+    },
+    {
+     "text": "Llama sangre a la zona",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "la_planta_17_0",
+   "start": 404.4,
+   "dur": 0.33,
+   "key": "la_planta",
+   "kind": "talk"
+  },
+  {
+   "id": "la_planta_17_1",
+   "start": 404.73,
+   "dur": 4.2,
+   "key": "la_planta",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "La planta",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "la_planta_17_2",
+   "start": 406.28,
+   "dur": 1.88,
+   "key": "la_planta",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_romero_rama_manos_mesa.jpg",
+   "kicker": "Romero. No es perejil."
+  },
+  {
+   "id": "la_planta_17_3",
+   "start": 408.16,
+   "dur": 4.2,
+   "key": "la_planta",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Ácido carnósico",
+     "sub": "antioxidante",
+     "at": 0
+    },
+    {
+     "card": "Ácido rosmarínico",
+     "sub": "antiinflamatorio",
+     "at": 0
+    },
+    {
+     "card": "Ácido ursólico",
+     "sub": "espesor",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "carnosico_18_0",
+   "start": 415.26,
+   "dur": 2,
+   "key": "carnosico",
+   "kind": "talk"
+  },
+  {
+   "id": "carnosico_18_1",
+   "start": 417.26,
+   "dur": 2.8,
+   "key": "carnosico",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CARNÓSICO",
+     "sub": "de los antioxidantes vegetales más potentes que se conocen",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "carnosico_18_2",
+   "start": 424.14,
+   "dur": 5.05,
+   "key": "carnosico",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_aceite_cocina_botella_conservante.jpg",
+   "kicker": "Conservante natural en la industria"
+  },
+  {
+   "id": "carnosico_18_3",
+   "start": 429.19,
+   "dur": 8.65,
+   "key": "carnosico",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_oxidacion_piel_mecanismo.jpg"
+    }
+   ]
+  },
+  {
+   "id": "carnosico_18_4",
+   "start": 437.84,
+   "dur": 9.92,
+   "key": "carnosico",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_manzana_cortada_marron_tabla.jpg",
+   "kicker": "El mismo proceso"
+  },
+  {
+   "id": "rosmarinico_19_0",
+   "start": 447.76,
+   "dur": 9.82,
+   "key": "rosmarinico",
+   "kind": "talk"
+  },
+  {
+   "id": "rosmarinico_19_1",
+   "start": 457.58,
+   "dur": 2.8,
+   "key": "rosmarinico",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "GLICACIÓN",
+     "sub": "el azúcar de la sangre se pega al colágeno y lo endurece",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "rosmarinico_19_2",
+   "start": 463.39,
+   "dur": 5.37,
+   "key": "rosmarinico",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_glicacion_colageno_rigido.jpg"
+    }
+   ]
+  },
+  {
+   "id": "rosmarinico_19_3",
+   "start": 468.76,
+   "dur": 4.2,
+   "key": "rosmarinico",
+   "kind": "lowerthird",
+   "title": "La prueba casera",
+   "tone": "teal",
+   "kicker": "Treinta segundos, ahora mismo",
+   "desc": "Pellizcá el dorso de la mano, soltá y contá."
+  },
+  {
+   "id": "rosmarinico_19_4",
+   "start": 471.46,
+   "dur": 3.26,
+   "key": "rosmarinico",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_pellizco_dorso_mano_mayor.jpg"
+  },
+  {
+   "id": "rosmarinico_19_5",
+   "start": 474.72,
+   "dur": 4.26,
+   "key": "rosmarinico",
+   "kind": "freezezoom",
+   "image": "img/p_vd5n5s9bhk4q_pellizco_dorso_mano_mayor.jpg",
+   "x": 0.52,
+   "y": 0.55,
+   "label": "Si tarda en volver, ahí tenés la respuesta",
+   "zoom": 1.6,
+   "tone": "warn"
+  },
+  {
+   "id": "ursolico_20_0",
+   "start": 478.98,
+   "dur": 4.94,
+   "key": "ursolico",
+   "kind": "talk"
+  },
+  {
+   "id": "ursolico_20_1",
+   "start": 483.92,
+   "dur": 2.8,
+   "key": "ursolico",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "URSÓLICO",
+     "sub": "vive en la cerita que cubre la hoja",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "ursolico_20_2",
+   "start": 489.92,
+   "dur": 5.54,
+   "key": "ursolico",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_espesor_epidermis_ursolico.jpg"
+    }
+   ]
+  },
+  {
+   "id": "ursolico_20_3",
+   "start": 495.46,
+   "dur": 6.94,
+   "key": "ursolico",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Espesor"
+    },
+    {
+     "t": "justo"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "perdiste",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "ensayo_ocho_21_0",
+   "start": 502.4,
+   "dur": 1.92,
+   "key": "ensayo_ocho",
+   "kind": "talk"
+  },
+  {
+   "id": "ensayo_ocho_21_1",
+   "start": 504.32,
+   "dur": 4.56,
+   "key": "ensayo_ocho",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_frasco_extracto_romero_citrico_mesa.jpg",
+   "kicker": "Tomado por vía oral"
+  },
+  {
+   "id": "ensayo_ocho_21_2",
+   "start": 508.88,
+   "dur": 6.32,
+   "key": "ensayo_ocho",
+   "kind": "lowerthird",
+   "title": "Ensayo clínico publicado",
+   "tone": "teal",
+   "kicker": "Mejora medida, no prometida",
+   "desc": "Menos profundidad de arrugas a las ocho semanas."
+  },
+  {
+   "id": "ensayo_ocho_21_3",
+   "start": 515.2,
+   "dur": 4.2,
+   "key": "ensayo_ocho",
+   "kind": "stat",
+   "big": "8",
+   "unit": "semanas",
+   "label": "No tres días. Anotate ese número.",
+   "tone": "teal"
+  },
+  {
+   "id": "ensayo_ocho_21_4",
+   "start": 519.34,
+   "dur": 2.8,
+   "key": "ensayo_ocho",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PACIENCIA",
+     "sub": "te voy a pedir ocho semanas, y ya sabés de dónde sale",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "circulacion2_22_0",
+   "start": 523.54,
+   "dur": 4.73,
+   "key": "circulacion2",
+   "kind": "talk"
+  },
+  {
+   "id": "circulacion2_22_1",
+   "start": 528.27,
+   "dur": 5.67,
+   "key": "circulacion2",
+   "kind": "bars",
+   "title": "Aceite de romero contra minoxidil",
+   "unit": "seis meses",
+   "items": [
+    {
+     "label": "Aceite de romero",
+     "value": 10
+    },
+    {
+     "label": "Minoxidil al dos por ciento",
+     "value": 10
+    }
+   ]
+  },
+  {
+   "id": "circulacion2_22_2",
+   "start": 533.94,
+   "dur": 5.92,
+   "key": "circulacion2",
+   "kind": "lowerthird",
+   "title": "El romero no perdió",
+   "tone": "teal",
+   "kicker": "Ensayo de 2015, cuero cabelludo",
+   "desc": "Seis meses de aplicación diaria."
+  },
+  {
+   "id": "circulacion2_22_3",
+   "start": 539.86,
+   "dur": 2.8,
+   "key": "circulacion2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "RUBEFACIENTE",
+     "sub": "llama sangre a la zona donde se aplica",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "circulacion2_22_4",
+   "start": 545.2,
+   "dur": 4.92,
+   "key": "circulacion2",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_rubefaciente_capilares_abiertos.jpg"
+    }
+   ]
+  },
+  {
+   "id": "circulacion2_22_5",
+   "start": 550.12,
+   "dur": 7.7,
+   "key": "circulacion2",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Riego"
+    },
+    {
+     "t": "capilares"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "camión"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "reparto",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "circulacion2_22_6",
+   "start": 557.82,
+   "dur": 4.2,
+   "key": "circulacion2",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "El material",
+     "sub": "los ladrillos para la pared",
+     "at": 0
+    },
+    {
+     "card": "El camión",
+     "sub": "la sangre que los lleva hasta ahí",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "guia_cantidades_23_0",
+   "start": 565.58,
+   "dur": 4.64,
+   "key": "guia_cantidades",
+   "kind": "talk"
+  },
+  {
+   "id": "guia_cantidades_23_1",
+   "start": 570.22,
+   "dur": 4.07,
+   "key": "guia_cantidades",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_frasco_ambar_romero_macerado_cocina.jpg",
+   "kicker": "Todo esto, ordenado por escrito"
+  },
+  {
+   "id": "guia_cantidades_23_2",
+   "start": 574.29,
+   "dur": 7.55,
+   "key": "guia_cantidades",
+   "kind": "process",
+   "title": "El paso a paso completo",
+   "eyebrow": "Guía, sección piel",
+   "steps": [
+    {
+     "title": "El aceite",
+     "desc": "romero y aceite portador, cantidades exactas"
+    },
+    {
+     "title": "El macerado",
+     "desc": "cuántos días y a qué temperatura"
+    },
+    {
+     "title": "El colado",
+     "desc": "cuándo filtrarlo y en qué frasco guardarlo"
+    },
+    {
+     "title": "La aplicación",
+     "desc": "brazo, guante de algodón, toda la noche"
+    }
+   ]
+  },
+  {
+   "id": "guia_cantidades_23_3",
+   "start": 581.84,
+   "dur": 5.86,
+   "key": "guia_cantidades",
+   "kind": "lowerthird",
+   "title": "Las cantidades, escritas",
+   "tone": "teal",
+   "kicker": "Nadie las anota mirando un video",
+   "desc": "Están en la descripción. Abrila cuando termines."
+  },
+  {
+   "id": "el_guante0_24_0",
+   "start": 587.7,
+   "dur": 0.9,
+   "key": "el_guante0",
+   "kind": "talk"
+  },
+  {
+   "id": "el_guante0_24_1",
+   "start": 588.6,
+   "dur": 4.24,
+   "key": "el_guante0",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "El guante",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "el_guante0_24_2",
+   "start": 592.84,
+   "dur": 3.86,
+   "key": "el_guante0",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_aceite_romero_frotado_brazo_noche.jpg",
+   "kicker": "Aceite, frotado, a dormir"
+  },
+  {
+   "id": "el_guante0_24_3",
+   "start": 596.7,
+   "dur": 5.02,
+   "key": "el_guante0",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_sabana_acolchado_mancha_aceite.jpg",
+   "kicker": "Te lo llevás puesto la sábana"
+  },
+  {
+   "id": "oclusion_25_0",
+   "start": 601.72,
+   "dur": 3.71,
+   "key": "oclusion",
+   "kind": "talk"
+  },
+  {
+   "id": "oclusion_25_1",
+   "start": 605.43,
+   "dur": 2.8,
+   "key": "oclusion",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "OCLUSIÓN",
+     "sub": "tapar la piel cambia el juego entero",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "oclusion_25_2",
+   "start": 615.06,
+   "dur": 8.89,
+   "key": "oclusion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_perdida_agua_ocluida.jpg"
+    }
+   ]
+  },
+  {
+   "id": "oclusion_25_3",
+   "start": 623.95,
+   "dur": 3.89,
+   "key": "oclusion",
+   "kind": "stat",
+   "big": "95%",
+   "unit": "menos fuga",
+   "label": "El mejor oclusivo que se conoce: la vaselina",
+   "tone": "teal"
+  },
+  {
+   "id": "oclusion_25_4",
+   "start": 627.84,
+   "dur": 4.2,
+   "key": "oclusion",
+   "kind": "splitlist",
+   "title": "La piel tapada se hidrata sola",
+   "items": [
+    "No hace falta que le pongas agua",
+    "Hace falta que dejes de perderla"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "absorcion_26_0",
+   "start": 631.92,
+   "dur": 8.04,
+   "key": "absorcion",
+   "kind": "talk"
+  },
+  {
+   "id": "absorcion_26_1",
+   "start": 639.96,
+   "dur": 2.8,
+   "key": "absorcion",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ABSORBE",
+     "sub": "piel tapada, tibia y húmeda: entra muchísimo más",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "absorcion_26_2",
+   "start": 643.17,
+   "dur": 1.73,
+   "key": "absorcion",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_guante_algodon_viejo_brazo_cama.jpg",
+   "kicker": "Un truco viejo de dermatología"
+  },
+  {
+   "id": "absorcion_26_3",
+   "start": 644.9,
+   "dur": 15.38,
+   "key": "absorcion",
+   "kind": "lowerthird",
+   "title": "Terapia oclusiva",
+   "tone": "teal",
+   "kicker": "Se usa hace décadas con cremas medicadas",
+   "desc": "Tapás, y el activo entra en serio en vez de quedarse arriba."
+  },
+  {
+   "id": "noche_ventana_27_0",
+   "start": 660.28,
+   "dur": 3.19,
+   "key": "noche_ventana",
+   "kind": "talk"
+  },
+  {
+   "id": "noche_ventana_27_1",
+   "start": 663.47,
+   "dur": 7.65,
+   "key": "noche_ventana",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_reloj_piel_noche.jpg"
+    }
+   ]
+  },
+  {
+   "id": "noche_ventana_27_2",
+   "start": 671.12,
+   "dur": 2.8,
+   "key": "noche_ventana",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TU VENTANA",
+     "sub": "de noche la barrera está más permeable: lo que pongas, entra",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "noche_ventana_27_3",
+   "start": 675.8,
+   "dur": 4.82,
+   "key": "noche_ventana",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "piel"
+    },
+    {
+     "t": "abre"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "puerta",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "noche_ventana_27_4",
+   "start": 680.62,
+   "dur": 4.88,
+   "key": "noche_ventana",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_habitacion_aire_seco_noche.jpg",
+   "kicker": "¿Qué la está esperando del otro lado?"
+  },
+  {
+   "id": "noche_ventana_27_5",
+   "start": 685.5,
+   "dur": 5.15,
+   "key": "noche_ventana",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_guante_algodon_brazo_cama.jpg",
+   "kicker": "Aceite atrapado contra la piel"
+  },
+  {
+   "id": "noche_ventana_27_6",
+   "start": 690.65,
+   "dur": 3.87,
+   "key": "noche_ventana",
+   "kind": "stat",
+   "big": "8 h",
+   "unit": "por noche",
+   "label": "Trabajando mientras vos dormís, sin hacer nada",
+   "tone": "teal"
+  },
+  {
+   "id": "paso1_aceite_28_0",
+   "start": 694.52,
+   "dur": 4.96,
+   "key": "paso1_aceite",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "El aceite portador",
+   "tone": "teal",
+   "w": 3.6
+  },
+  {
+   "id": "paso1_aceite_28_1",
+   "start": 699.48,
+   "dur": 1.48,
+   "key": "paso1_aceite",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_aceite_oliva_extravirgen_botella.jpg",
+   "kicker": "Si tenés la piel muy seca"
+  },
+  {
+   "id": "paso1_aceite_28_2",
+   "start": 700.96,
+   "dur": 4.96,
+   "key": "paso1_aceite",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_aceite_girasol_alto_oleico.jpg",
+   "kicker": "Más liviano · sin olor a ensalada"
+  },
+  {
+   "id": "paso1_aceite_28_3",
+   "start": 705.92,
+   "dur": 3.9,
+   "key": "paso1_aceite",
+   "kind": "splitlist",
+   "title": "Cuál usar de base",
+   "items": [
+    "Oliva extra virgen — piel muy seca",
+    "Girasol alto oleico — más liviano",
+    "Sésamo o almendras — mejor todavía",
+    "El de tu cocina ya sirve"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "paso1_aceite_28_4",
+   "start": 709.82,
+   "dur": 5.88,
+   "key": "paso1_aceite",
+   "kind": "lowerthird",
+   "title": "El de oliva de tu cocina sirve",
+   "tone": "teal",
+   "kicker": "No compres nada raro",
+   "desc": "No hace falta salir a buscar nada especial."
+  },
+  {
+   "id": "error_hervir_29_0",
+   "start": 715.7,
+   "dur": 3.34,
+   "key": "error_hervir",
+   "kind": "talk"
+  },
+  {
+   "id": "error_hervir_29_1",
+   "start": 719.04,
+   "dur": 2.8,
+   "key": "error_hervir",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NUNCA HIERVE",
+     "sub": "el romero se macera a fuego mínimo — nunca, nunca hierve",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "error_hervir_29_2",
+   "start": 726.36,
+   "dur": 6.76,
+   "key": "error_hervir",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_acido_carnosico_calor.jpg"
+    }
+   ]
+  },
+  {
+   "id": "error_hervir_29_3",
+   "start": 733.12,
+   "dur": 3.19,
+   "key": "error_hervir",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Estás"
+    },
+    {
+     "t": "cocinando"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "fuiste"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "buscar",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "error_hervir_29_4",
+   "start": 736.31,
+   "dur": 4.39,
+   "key": "error_hervir",
+   "kind": "mitoverdad",
+   "myth": "Si huele bárbaro, quedó bien",
+   "truth": "Te queda un aceite que huele bárbaro y no sirve para nada",
+   "flipAt": 53
+  },
+  {
+   "id": "error_hervir_29_5",
+   "start": 740.7,
+   "dur": 2.6,
+   "key": "error_hervir",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_bano_maria_frasco_romero.jpg",
+   "kicker": "Baño María · un par de horas"
+  },
+  {
+   "id": "error_hervir_29_6",
+   "start": 743.3,
+   "dur": 4.82,
+   "key": "error_hervir",
+   "kind": "process",
+   "title": "El macerado con fuego",
+   "eyebrow": "Paso a paso",
+   "steps": [
+    {
+     "title": "Romero",
+     "desc": "un buen manojo, bien seco",
+     "image": "img/p_vd5n5s9bhk4q_rama_romero_manojo_mesa.png"
+    },
+    {
+     "title": "Baño María",
+     "desc": "el fuego más bajo de la hornalla",
+     "image": "img/p_vd5n5s9bhk4q_bano_maria_frasco_romero.jpg"
+    },
+    {
+     "title": "Dos horas",
+     "desc": "sin que burbujee nunca",
+     "image": "img/p_vd5n5s9bhk4q_hornalla_fuego_minimo_olla.png"
+    }
+   ]
+  },
+  {
+   "id": "error_hervir_29_7",
+   "start": 748.12,
+   "dur": 4.2,
+   "key": "error_hervir",
+   "kind": "checklist",
+   "title": "Control de temperatura",
+   "items": [
+    {
+     "text": "Aceite quieto, apenas tibio",
+     "state": "done"
+    },
+    {
+     "text": "Un par de horas, sin apuro",
+     "state": "done"
+    },
+    {
+     "text": "Si burbujea, apagalo YA",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "sin_fuego_30_0",
+   "start": 750.34,
+   "dur": 5.42,
+   "key": "sin_fuego",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_frasco_romero_ventana_tibia.jpg",
+   "kicker": "Dos o tres semanas en un lugar tibio"
+  },
+  {
+   "id": "sin_fuego_30_1",
+   "start": 755.76,
+   "dur": 4.2,
+   "key": "sin_fuego",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Sacudirlo una vez por día",
+     "sub": "todos los días, sin falta",
+     "at": 0
+    },
+    {
+     "card": "Dos o tres semanas",
+     "sub": "cero calor, cero degradación",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "sin_fuego_30_2",
+   "start": 757.66,
+   "dur": 4.2,
+   "key": "sin_fuego",
+   "kind": "lowerthird",
+   "title": "La que yo prefiero",
+   "tone": "teal",
+   "kicker": "Sin fuego",
+   "desc": "Más lenta, pero no perdés nada de lo bueno."
+  },
+  {
+   "id": "colar_frasco_31_0",
+   "start": 758.92,
+   "dur": 5.1,
+   "key": "colar_frasco",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NI UNA HOJITA",
+     "sub": "vegetal húmedo dentro del aceite = ahí crecen los bichos",
+     "tone": "warn",
+     "at": 69
+    }
+   ]
+  },
+  {
+   "id": "colar_frasco_31_1",
+   "start": 766.48,
+   "dur": 3.33,
+   "key": "colar_frasco",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_colar_lienzo_aceite_romero.jpg",
+   "kicker": "Colar con lienzo y exprimir"
+  },
+  {
+   "id": "colar_frasco_31_2",
+   "start": 769.81,
+   "dur": 3.33,
+   "key": "colar_frasco",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_frasco_vidrio_oscuro_armario.jpg",
+   "kicker": "Vidrio oscuro, nunca transparente"
+  },
+  {
+   "id": "colar_frasco_31_3",
+   "start": 773.14,
+   "dur": 5.2,
+   "key": "colar_frasco",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "La"
+    },
+    {
+     "t": "luz"
+    },
+    {
+     "t": "oxida"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "aceite",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "colar_frasco_31_4",
+   "start": 778.34,
+   "dur": 3.42,
+   "key": "colar_frasco",
+   "kind": "stat",
+   "big": "3 meses",
+   "unit": "de duración",
+   "label": "Guardado en un armario, lejos de la luz",
+   "tone": "teal"
+  },
+  {
+   "id": "colar_frasco_31_5",
+   "start": 781.76,
+   "dur": 4.2,
+   "key": "colar_frasco",
+   "kind": "lowerthird",
+   "title": "Si huele a rancio, lo tirás",
+   "tone": "warn",
+   "kicker": "Sin discusión",
+   "desc": "Olor a crayón o a pintura vieja = se oxidó. No se usa."
+  },
+  {
+   "id": "aplicacion_32_0",
+   "start": 785.64,
+   "dur": 9.23,
+   "key": "aplicacion",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PIEL HÚMEDA",
+     "sub": "húmeda, no mojada. Y nunca seca.",
+     "tone": "teal",
+     "at": 193
+    }
+   ]
+  },
+  {
+   "id": "aplicacion_32_1",
+   "start": 795.46,
+   "dur": 4.22,
+   "key": "aplicacion",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_humedo_toalla_bano.jpg",
+   "kicker": "Secarte a medias"
+  },
+  {
+   "id": "aplicacion_32_2",
+   "start": 799.68,
+   "dur": 3.36,
+   "key": "aplicacion",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_aceite_romero_gotas_antebrazo.jpg",
+   "kicker": "Tenés unos tres minutos de ventana"
+  },
+  {
+   "id": "aplicacion_32_3",
+   "start": 803.04,
+   "dur": 5.75,
+   "key": "aplicacion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_sellar_agua_ducha.jpg"
+    }
+   ]
+  },
+  {
+   "id": "aplicacion_32_4",
+   "start": 808.79,
+   "dur": 5.27,
+   "key": "aplicacion",
+   "kind": "mitoverdad",
+   "myth": "El aceite hidrata la piel",
+   "truth": "El aceite no hidrata: sella adentro el agua de la ducha",
+   "flipAt": 66
+  },
+  {
+   "id": "aplicacion_32_5",
+   "start": 814.06,
+   "dur": 1.03,
+   "key": "aplicacion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Con"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "brazo"
+    },
+    {
+     "t": "seco"
+    },
+    {
+     "t": "sellás"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "desierto",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "aplicacion_32_6",
+   "start": 815.09,
+   "dur": 4.2,
+   "key": "aplicacion",
+   "kind": "annotated",
+   "image": "img/p_vd5n5s9bhk4q_aceite_romero_gotas_antebrazo.jpg",
+   "eyebrow": "La ventana de 3 minutos",
+   "caption": "Salís de la ducha, te secás a medias y ahí va el aceite."
+  },
+  {
+   "id": "el_guante_33_0",
+   "start": 815.92,
+   "dur": 6.92,
+   "key": "el_guante",
+   "kind": "talk"
+  },
+  {
+   "id": "el_guante_33_1",
+   "start": 822.84,
+   "dur": 5.3,
+   "key": "el_guante",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_media_algodon_punta_cortada.jpg",
+   "kicker": "Con la punta cortada = manga perfecta"
+  },
+  {
+   "id": "el_guante_33_2",
+   "start": 828.14,
+   "dur": 2.94,
+   "key": "el_guante",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_manga_algodon_sol_brazo.jpg",
+   "kicker": "De las que se venden para el sol"
+  },
+  {
+   "id": "el_guante_33_3",
+   "start": 831.08,
+   "dur": 6.64,
+   "key": "el_guante",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_remera_vieja_manga_larga_dormir.jpg",
+   "kicker": "Una que uses solo para dormir"
+  },
+  {
+   "id": "el_guante_33_4",
+   "start": 837.72,
+   "dur": 2.8,
+   "key": "el_guante",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ALGODÓN",
+     "sub": "no sintético, no plástico, no film de cocina",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "el_guante_33_5",
+   "start": 841.56,
+   "dur": 2.05,
+   "key": "el_guante",
+   "kind": "lowerthird",
+   "title": "El plástico no respira",
+   "tone": "warn",
+   "kicker": "Ojo con esto",
+   "desc": "Te macera la piel de mal modo. Algodón o nada."
+  },
+  {
+   "id": "el_guante_33_6",
+   "start": 843.61,
+   "dur": 4.2,
+   "key": "el_guante",
+   "kind": "guardaesto",
+   "title": "Guardá esto",
+   "items": [
+    "Aceite base: oliva o girasol alto oleico",
+    "Macerado tibio: nunca hierve",
+    "Piel húmeda: recién salido de la ducha",
+    "Manga de algodón: toda la noche"
+   ]
+  },
+  {
+   "id": "cuanto_tiempo_34_0",
+   "start": 847.46,
+   "dur": 7.36,
+   "key": "cuanto_tiempo",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_manga_algodon_durmiendo.jpg",
+   "kicker": "Si te lo sacás dormida, no pasa nada"
+  },
+  {
+   "id": "cuanto_tiempo_34_1",
+   "start": 854.82,
+   "dur": 4.2,
+   "key": "cuanto_tiempo",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Veinte minutos",
+     "sub": "ya empieza a servir",
+     "at": 0
+    },
+    {
+     "card": "La noche entera",
+     "sub": "servís bastante mejor",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "cuanto_tiempo_34_2",
+   "start": 858.46,
+   "dur": 2.8,
+   "key": "cuanto_tiempo",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TODAS LAS NOCHES",
+     "sub": "esto es lo más importante de todo lo que te digo hoy",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "constancia_35_0",
+   "start": 865.54,
+   "dur": 5.44,
+   "key": "constancia",
+   "kind": "mitoverdad",
+   "myth": "Lo probé y no pasó nada",
+   "truth": "Lo dejaste antes de que la piel llegara a renovarse",
+   "flipAt": 69
+  },
+  {
+   "id": "constancia_35_1",
+   "start": 870.98,
+   "dur": 5.93,
+   "key": "constancia",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_renovacion_capa_arriba.jpg"
+    }
+   ]
+  },
+  {
+   "id": "constancia_35_2",
+   "start": 876.91,
+   "dur": 2.97,
+   "key": "constancia",
+   "kind": "bars",
+   "title": "Cuánto tarda en verse",
+   "unit": "días",
+   "items": [
+    {
+     "label": "Lo que la gente aguanta",
+     "value": 4
+    },
+    {
+     "label": "Lo que tarda la piel",
+     "value": 30
+    }
+   ]
+  },
+  {
+   "id": "constancia_35_3",
+   "start": 879.88,
+   "dur": 4.16,
+   "key": "constancia",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "juzgues"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "cuatro"
+    },
+    {
+     "t": "noches"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "mes",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "don_julio_36_0",
+   "start": 881.66,
+   "dur": 2.48,
+   "key": "don_julio",
+   "kind": "talk"
+  },
+  {
+   "id": "don_julio_36_1",
+   "start": 884.14,
+   "dur": 5.04,
+   "key": "don_julio",
+   "kind": "lowerthird",
+   "title": "Don Julio",
+   "tone": "teal",
+   "kicker": "El paciente que me rompió el esquema",
+   "desc": "76 años. Jardinero municipal durante 42."
+  },
+  {
+   "id": "don_julio_36_2",
+   "start": 889.18,
+   "dur": 5.86,
+   "key": "don_julio",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_julio_jardinero_manga_larga.jpg",
+   "kicker": "42 años a la intemperie"
+  },
+  {
+   "id": "don_julio_36_3",
+   "start": 895.04,
+   "dur": 2.99,
+   "key": "don_julio",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_julio_intemperie_frio_viento.jpg",
+   "kicker": "Frío, calor, viento, lluvia"
+  },
+  {
+   "id": "don_julio_36_4",
+   "start": 898.03,
+   "dur": 4.69,
+   "key": "don_julio",
+   "kind": "mitoverdad",
+   "myth": "Toda una vida al sol arruina los brazos",
+   "truth": "Julio tiene mejores brazos que Amanda, que vivió bajo techo",
+   "flipAt": 19
+  },
+  {
+   "id": "don_julio_36_5",
+   "start": 902.72,
+   "dur": 4.88,
+   "key": "don_julio",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_oficina_escritorio_techo.jpg",
+   "kicker": "Empleada administrativa · siempre bajo techo"
+  },
+  {
+   "id": "manga_larga_37_0",
+   "start": 907.6,
+   "dur": 9.28,
+   "key": "manga_larga",
+   "kind": "quote",
+   "image": "img/p_vd5n5s9bhk4q_julio_jardinero_manga_larga.jpg",
+   "text": "Doctor, yo nunca usé nada. Yo trabajé *siempre de manga larga*."
+  },
+  {
+   "id": "manga_larga_37_1",
+   "start": 916.88,
+   "dur": 5.1,
+   "key": "manga_larga",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_padre_ensena_camisa_sol_campo.jpg",
+   "kicker": "Mi viejo me enseñó"
+  },
+  {
+   "id": "manga_larga_37_2",
+   "start": 921.98,
+   "dur": 2.8,
+   "key": "manga_larga",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "MANGA LARGA",
+     "sub": "cuarenta y dos años tapado, sin saber lo que estaba haciendo",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "manga_larga_37_3",
+   "start": 930,
+   "dur": 3.24,
+   "key": "manga_larga",
+   "kind": "stat",
+   "big": "80%",
+   "unit": "del trabajo",
+   "label": "Hecho solo por taparse los brazos",
+   "tone": "teal"
+  },
+  {
+   "id": "manga_larga_37_4",
+   "start": 933.24,
+   "dur": 5.8,
+   "key": "manga_larga",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Algo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "ve"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "quema",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "aviso_limon_38_0",
+   "start": 939.04,
+   "dur": 3.49,
+   "key": "aviso_limon",
+   "kind": "talk"
+  },
+  {
+   "id": "aviso_limon_38_1",
+   "start": 942.53,
+   "dur": 2.8,
+   "key": "aviso_limon",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL LIMÓN",
+     "sub": "la peor idea que le podés meter a esta preparación",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "aviso_limon_38_2",
+   "start": 951.62,
+   "dur": 2.22,
+   "key": "aviso_limon",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_limon_exprimido_sol_brazo.jpg",
+   "kicker": "Limón en la piel: JAMÁS"
+  },
+  {
+   "id": "aviso_limon_38_3",
+   "start": 953.84,
+   "dur": 4.2,
+   "key": "aviso_limon",
+   "kind": "mitoverdad",
+   "myth": "El limón es buenísimo para la piel, lo leí",
+   "truth": "Limón en la piel jamás — y menos si después te da el sol",
+   "flipAt": 44
+  },
+  {
+   "id": "aviso_limon_38_4",
+   "start": 957.34,
+   "dur": 2.83,
+   "key": "aviso_limon",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_limon_lima_apio_bergamota_mesa.jpg",
+   "kicker": "Todos traen lo mismo"
+  },
+  {
+   "id": "aviso_limon_38_5",
+   "start": 960.17,
+   "dur": 2.23,
+   "key": "aviso_limon",
+   "kind": "splitlist",
+   "title": "Los que traen furocumarinas",
+   "items": [
+    "Limón",
+    "Lima",
+    "Apio",
+    "Bergamota",
+    "Ruda",
+    "Higuera"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "furocumarinas_39_0",
+   "start": 962.4,
+   "dur": 5.18,
+   "key": "furocumarinas",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_furocumarinas_esperan_sol.jpg"
+    }
+   ]
+  },
+  {
+   "id": "furocumarinas_39_1",
+   "start": 967.58,
+   "dur": 2.8,
+   "key": "furocumarinas",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO QUEMAN SOLAS",
+     "sub": "esperan quietas a que aparezca la luz del sol",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "furocumarinas_39_2",
+   "start": 973.36,
+   "dur": 9.79,
+   "key": "furocumarinas",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_mancha_marron_brazo_ampollas.jpg",
+   "kicker": "Ampollas primero, mancha después"
+  },
+  {
+   "id": "furocumarinas_39_3",
+   "start": 983.15,
+   "dur": 7.69,
+   "key": "furocumarinas",
+   "kind": "callout",
+   "image": "img/p_vd5n5s9bhk4q_mancha_marron_brazo_ampollas.jpg",
+   "figure": "Fitofotodermatitis",
+   "caption": "Quemadura con ampollas y una mancha marrón que puede tardar meses en irse."
+  },
+  {
+   "id": "furocumarinas_39_4",
+   "start": 990.84,
+   "dur": 1.84,
+   "key": "furocumarinas",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_barman_exprime_limas_sol.jpg",
+   "kicker": "La quemadura del margarita"
+  },
+  {
+   "id": "furocumarinas_39_5",
+   "start": 992.68,
+   "dur": 4.34,
+   "key": "furocumarinas",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Limón"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "ensalada"
+    },
+    {
+     "t": "nunca"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "brazo",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "esencial_no_40_0",
+   "start": 997.02,
+   "dur": 5.58,
+   "key": "esencial_no",
+   "kind": "talk"
+  },
+  {
+   "id": "esencial_no_40_1",
+   "start": 1002.6,
+   "dur": 2.98,
+   "key": "esencial_no",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_frasquito_esencial_gotero.jpg",
+   "kicker": "El frasquito chiquito"
+  },
+  {
+   "id": "esencial_no_40_2",
+   "start": 1005.58,
+   "dur": 2.8,
+   "key": "esencial_no",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PURO NO",
+     "sub": "sobre la piel irrita, y en algunas personas quema",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "esencial_no_40_3",
+   "start": 1012.01,
+   "dur": 5.44,
+   "key": "esencial_no",
+   "kind": "mitoverdad",
+   "myth": "Aceite esencial y macerado son lo mismo",
+   "truth": "El esencial es concentrado; el macerado es hoja en aceite común",
+   "flipAt": 56
+  },
+  {
+   "id": "esencial_no_40_4",
+   "start": 1017.45,
+   "dur": 5.93,
+   "key": "esencial_no",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_esencial_vs_macerado.jpg"
+    }
+   ]
+  },
+  {
+   "id": "esencial_no_40_5",
+   "start": 1023.38,
+   "dur": 3.4,
+   "key": "esencial_no",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_macerado_hoja_aceite_frasco.jpg",
+   "kicker": "Pocas gotas en mucho aceite base"
+  },
+  {
+   "id": "esencial_no_40_6",
+   "start": 1026.78,
+   "dur": 6.82,
+   "key": "esencial_no",
+   "kind": "lowerthird",
+   "title": "La proporción exacta está en la descripción",
+   "tone": "teal",
+   "kicker": "Importante",
+   "desc": "Abrila y anotá las gotas por cantidad de aceite base."
+  },
+  {
+   "id": "brazo_no_vende_41_0",
+   "start": 1033.6,
+   "dur": 1.96,
+   "key": "brazo_no_vende",
+   "kind": "talk"
+  },
+  {
+   "id": "brazo_no_vende_41_1",
+   "start": 1035.56,
+   "dur": 2.8,
+   "key": "brazo_no_vende",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL BRAZO NO VENDE",
+     "sub": "por eso la industria no lo mira",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "brazo_no_vende_41_2",
+   "start": 1041.98,
+   "dur": 6.17,
+   "key": "brazo_no_vende",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_mostrador_cremas_cara_farmacia.jpg",
+   "kicker": "Casi todo el dinero va a la cara"
+  },
+  {
+   "id": "brazo_no_vende_41_3",
+   "start": 1048.15,
+   "dur": 4.85,
+   "key": "brazo_no_vende",
+   "kind": "splitlist",
+   "title": "La cara se muestra · el brazo se tapa",
+   "items": [
+    "La cara se fotografía",
+    "La cara en la videollamada",
+    "En el espejo y en el documento",
+    "El brazo se tapa"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "brazo_no_vende_41_4",
+   "start": 1053,
+   "dur": 6.6,
+   "key": "brazo_no_vende",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_saco_tapa_brazo_percha.jpg"
+  },
+  {
+   "id": "brazo_no_vende_41_5",
+   "start": 1059.6,
+   "dur": 8.38,
+   "key": "brazo_no_vende",
+   "kind": "lowerthird",
+   "title": "Le pusieron un nombre en inglés: crepey skin",
+   "tone": "warn",
+   "kicker": "Cuando inventaron el mercado",
+   "desc": "Un nombre nuevo para poder cobrarte."
+  },
+  {
+   "id": "brazo_no_vende_41_6",
+   "start": 1067.98,
+   "dur": 10.62,
+   "key": "brazo_no_vende",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_pote_crema_lujo_precio.jpg",
+   "kicker": "Dura entre tres y cinco semanas"
+  },
+  {
+   "id": "brazo_no_vende_41_7",
+   "start": 1078.6,
+   "dur": 2.8,
+   "key": "brazo_no_vende",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LA RECOMPRA",
+     "sub": "el negocio no es la crema: es que vuelvas a comprarla",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "brazo_no_vende_41_8",
+   "start": 1084.1,
+   "dur": 9.74,
+   "key": "brazo_no_vende",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Te"
+    },
+    {
+     "t": "venden"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "suscripción",
+     "hl": true
+    },
+    {
+     "t": "disfrazada"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "frasco"
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "brazo_no_vende_41_9",
+   "start": 1093.84,
+   "dur": 11.38,
+   "key": "brazo_no_vende",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_atado_romero_mesa_humilde.jpg",
+   "kicker": "No hay a quién cobrarle"
+  },
+  {
+   "id": "es_la_edad_42_0",
+   "start": 1105.22,
+   "dur": 5.84,
+   "key": "es_la_edad",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_medico_pantalla_sin_mirar.jpg",
+   "kicker": "Sin despegar la vista de la computadora"
+  },
+  {
+   "id": "es_la_edad_42_1",
+   "start": 1111.06,
+   "dur": 6.44,
+   "key": "es_la_edad",
+   "kind": "quote",
+   "image": "img/p_vd5n5s9bhk4q_medico_pantalla_sin_mirar.jpg",
+   "text": "Y bueno, señora. *Es la edad.*"
+  },
+  {
+   "id": "es_la_edad_42_2",
+   "start": 1117.5,
+   "dur": 2.8,
+   "key": "es_la_edad",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ES LA EDAD",
+     "sub": "la forma elegante de decir: no tengo tiempo para esto",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "es_la_edad_42_3",
+   "start": 1125.68,
+   "dur": 8.78,
+   "key": "es_la_edad",
+   "kind": "stat",
+   "big": "12 min",
+   "unit": "",
+   "label": "El turno que da el sistema",
+   "tone": "warn"
+  },
+  {
+   "id": "es_la_edad_42_4",
+   "start": 1134.46,
+   "dur": 6.6,
+   "key": "es_la_edad",
+   "kind": "checklist",
+   "title": "Lo que entra en un turno de doce minutos",
+   "items": [
+    {
+     "text": "Revisar una presión",
+     "state": "done"
+    },
+    {
+     "text": "Mirar un análisis",
+     "state": "done"
+    },
+    {
+     "text": "Firmar una receta",
+     "state": "done"
+    },
+    {
+     "text": "Explicarte la barrera cutánea",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "es_la_edad_42_5",
+   "start": 1141.06,
+   "dur": 4.14,
+   "key": "es_la_edad",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Y"
+    },
+    {
+     "t": "sí"
+    },
+    {
+     "t": "hay"
+    },
+    {
+     "t": "algo"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "hacer",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "honesto_43_0",
+   "start": 1143.98,
+   "dur": 1.32,
+   "key": "honesto",
+   "kind": "talk"
+  },
+  {
+   "id": "honesto_43_1",
+   "start": 1145.3,
+   "dur": 4.2,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "Lo que esto NO hace",
+   "tone": "warn",
+   "kicker": "La parte honesta",
+   "desc": "Si no te digo esto, todo lo anterior no vale nada."
+  },
+  {
+   "id": "honesto_43_2",
+   "start": 1148.9,
+   "dur": 2.8,
+   "key": "honesto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO BORRA MANCHAS",
+     "sub": "el pigmento del sol está acumulado en la profundidad",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "honesto_43_3",
+   "start": 1151.62,
+   "dur": 5.21,
+   "key": "honesto",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_manchas_solares_dorso_mano.jpg",
+   "kicker": "Antebrazo y dorso de la mano"
+  },
+  {
+   "id": "honesto_43_4",
+   "start": 1156.83,
+   "dur": 8.93,
+   "key": "honesto",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_pigmento_profundidad.jpg"
+    }
+   ]
+  },
+  {
+   "id": "honesto_43_5",
+   "start": 1165.76,
+   "dur": 6.3,
+   "key": "honesto",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_piel_colgada_brazo_triceps.jpg"
+  },
+  {
+   "id": "honesto_43_6",
+   "start": 1172.06,
+   "dur": 8.47,
+   "key": "honesto",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Eso es volumen, no piel",
+     "sub": "bajaste muchos kilos o perdiste masa muscular",
+     "at": 0
+    },
+    {
+     "card": "Proteína y pesas livianas",
+     "sub": "así se trabaja — y eso es otro video",
+     "at": 128
+    }
+   ]
+  },
+  {
+   "id": "honesto_43_7",
+   "start": 1181.56,
+   "dur": 5.24,
+   "key": "honesto",
+   "kind": "checklist",
+   "title": "Lo que este aceite NO hace",
+   "items": [
+    {
+     "text": "Borrar las manchas del sol",
+     "state": "warn"
+    },
+    {
+     "text": "Levantar la piel colgada",
+     "state": "warn"
+    },
+    {
+     "text": "Borrar estrías ni cicatrices",
+     "state": "warn"
+    },
+    {
+     "text": "Reemplazar al médico",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "alerta_medico_44_0",
+   "start": 1186.8,
+   "dur": 7.82,
+   "key": "alerta_medico",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_piel_fina_moreton_antebrazo.jpg",
+   "kicker": "Moretones con solo apoyarte"
+  },
+  {
+   "id": "alerta_medico_44_1",
+   "start": 1194.62,
+   "dur": 2.8,
+   "key": "alerta_medico",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PIEL DE PAPEL",
+     "sub": "se rompe con un roce y sangra",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "alerta_medico_44_2",
+   "start": 1199.18,
+   "dur": 9.02,
+   "key": "alerta_medico",
+   "kind": "checklist",
+   "title": "Puede ser…",
+   "items": [
+    {
+     "text": "Corticoides usados mucho tiempo",
+     "state": "warn"
+    },
+    {
+     "text": "Un tema de plaquetas",
+     "state": "warn"
+    },
+    {
+     "text": "Un tema de coagulación",
+     "state": "warn"
+    },
+    {
+     "text": "Puede ser otra cosa",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "alerta_medico_44_3",
+   "start": 1208.2,
+   "dur": 4.2,
+   "key": "alerta_medico",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Eso"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "cosmética"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "análisis",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "alerta_medico_44_4",
+   "start": 1211.12,
+   "dur": 2.8,
+   "key": "alerta_medico",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PICAZÓN SIN NADA",
+     "sub": "sin ronchas, sin sarpullido, y no se calma con nada",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "alerta_medico_44_5",
+   "start": 1219.58,
+   "dur": 3.42,
+   "key": "alerta_medico",
+   "kind": "splitlist",
+   "title": "Esa picazón a veces habla de…",
+   "items": [
+    "El hígado",
+    "La tiroides",
+    "El riñón"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "alerta_medico_44_6",
+   "start": 1223,
+   "dur": 3.64,
+   "key": "alerta_medico",
+   "kind": "lowerthird",
+   "title": "Pedí turno. En serio.",
+   "tone": "warn",
+   "kicker": "Si esa es tu situación",
+   "desc": "Eso no se arregla con un aceite."
+  },
+  {
+   "id": "contraindicaciones_45_0",
+   "start": 1226.64,
+   "dur": 4.2,
+   "key": "contraindicaciones",
+   "kind": "lowerthird",
+   "title": "Contraindicaciones: reales y cortas",
+   "tone": "warn",
+   "kicker": "Anotá esto",
+   "desc": "Son pocas, pero van en serio."
+  },
+  {
+   "id": "contraindicaciones_45_1",
+   "start": 1230.26,
+   "dur": 12.97,
+   "key": "contraindicaciones",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Embarazo o lactancia",
+     "sub": "aceite esencial de romero, no. El macerado suave, consultá igual",
+     "at": 0
+    },
+    {
+     "card": "Epilepsia o convulsiones",
+     "sub": "el aceite esencial está desaconsejado: no lo uses",
+     "at": 263
+    }
+   ]
+  },
+  {
+   "id": "contraindicaciones_45_2",
+   "start": 1250.48,
+   "dur": 2.8,
+   "key": "contraindicaciones",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ANTICOAGULANTES",
+     "sub": "warfarina o similares: avisale a tu médico antes",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "contraindicaciones_45_3",
+   "start": 1252.4,
+   "dur": 8.66,
+   "key": "contraindicaciones",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_menta_salvia_oregano_manojo.jpg",
+   "kicker": "La familia de las labiadas"
+  },
+  {
+   "id": "contraindicaciones_45_4",
+   "start": 1261.06,
+   "dur": 2.8,
+   "key": "contraindicaciones",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PRUEBA DE PARCHE",
+     "sub": "para todo el mundo, sin excepción",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "contraindicaciones_45_5",
+   "start": 1264.68,
+   "dur": 4.73,
+   "key": "contraindicaciones",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_parche_antebrazo_prueba.jpg",
+   "kicker": "Cara interna del antebrazo"
+  },
+  {
+   "id": "contraindicaciones_45_6",
+   "start": 1269.41,
+   "dur": 3.55,
+   "key": "contraindicaciones",
+   "kind": "stat",
+   "big": "48 h",
+   "unit": "",
+   "label": "Esperás cuarenta y ocho horas. No cuarenta y ocho minutos.",
+   "tone": "warn"
+  },
+  {
+   "id": "contraindicaciones_45_7",
+   "start": 1272.96,
+   "dur": 5.68,
+   "key": "contraindicaciones",
+   "kind": "checklist",
+   "title": "Si en esas 48 horas…",
+   "items": [
+    {
+     "text": "Pica",
+     "state": "warn"
+    },
+    {
+     "text": "Se pone rojo",
+     "state": "warn"
+    },
+    {
+     "text": "Arde",
+     "state": "warn"
+    },
+    {
+     "text": "No es para vos, y no pasa nada",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "urea_46_0",
+   "start": 1278.64,
+   "dur": 3.92,
+   "key": "urea",
+   "kind": "talk"
+  },
+  {
+   "id": "urea_46_1",
+   "start": 1282.56,
+   "dur": 2.8,
+   "key": "urea",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UREA AL 10%",
+     "sub": "la versión de farmacia: existe y funciona",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "urea_46_2",
+   "start": 1289.66,
+   "dur": 4.88,
+   "key": "urea",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_pomo_urea_farmacia_mostrador.jpg",
+   "kicker": "Cuando la piel está muy áspera"
+  },
+  {
+   "id": "urea_46_3",
+   "start": 1294.54,
+   "dur": 4.18,
+   "key": "urea",
+   "kind": "checklist",
+   "title": "Urea al diez por ciento",
+   "items": [
+    {
+     "text": "No es cara",
+     "state": "done"
+    },
+    {
+     "text": "Está estudiada",
+     "state": "done"
+    },
+    {
+     "text": "Y funciona",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "urea_46_4",
+   "start": 1298.72,
+   "dur": 4.24,
+   "key": "urea",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Prefiero"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "mejores"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "me"
+    },
+    {
+     "t": "creas",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "el_error_47_0",
+   "start": 1302.96,
+   "dur": 6.24,
+   "key": "el_error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "El error que arruina todo lo demás",
+   "tone": "warn",
+   "w": 3.8
+  },
+  {
+   "id": "el_error_47_1",
+   "start": 1309.2,
+   "dur": 4.94,
+   "key": "el_error",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_camionero_ventanilla_perfil.jpg",
+   "kicker": "28 años manejando"
+  },
+  {
+   "id": "el_error_47_2",
+   "start": 1314.14,
+   "dur": 8.16,
+   "key": "el_error",
+   "kind": "callout",
+   "image": "img/p_vd5n5s9bhk4q_camionero_ventanilla_perfil.jpg",
+   "figure": "Media cara de 90",
+   "caption": "La otra mitad, intacta. Y nunca se quemó."
+  },
+  {
+   "id": "el_error_47_3",
+   "start": 1322.3,
+   "dur": 2.8,
+   "key": "el_error",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NUNCA SINTIÓ NADA",
+     "sub": "ni colorado, ni ardor, ni aviso",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "error_uva_48_0",
+   "start": 1332.58,
+   "dur": 0.76,
+   "key": "error_uva",
+   "kind": "talk"
+  },
+  {
+   "id": "error_uva_48_1",
+   "start": 1333.34,
+   "dur": 2.8,
+   "key": "error_uva",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UVB",
+     "sub": "el que te pone colorado y te quema",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "error_uva_48_2",
+   "start": 1335.32,
+   "dur": 3.52,
+   "key": "error_uva",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_ventanilla_vidrio_rayos_uva.jpg",
+   "kicker": "El vidrio frena uno y deja pasar el otro"
+  },
+  {
+   "id": "error_uva_48_3",
+   "start": 1338.84,
+   "dur": 6.98,
+   "key": "error_uva",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "UVA"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "traicionero",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "error_dermis_49_0",
+   "start": 1345.82,
+   "dur": 6,
+   "key": "error_dermis",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_uva_profundidad_dermis.jpg"
+    }
+   ]
+  },
+  {
+   "id": "error_dermis_49_1",
+   "start": 1351.82,
+   "dur": 3.01,
+   "key": "error_dermis",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_fibras_colageno_tijera.jpg",
+   "kicker": "Enzimas que cortan como una tijera"
+  },
+  {
+   "id": "error_dermis_49_2",
+   "start": 1354.83,
+   "dur": 4.73,
+   "key": "error_dermis",
+   "kind": "mitoverdad",
+   "myth": "Si no me quemo, no me hago daño",
+   "truth": "El UVA rompe el colágeno sin dolor y sin aviso",
+   "flipAt": 57
+  },
+  {
+   "id": "error_dermis_49_3",
+   "start": 1359.56,
+   "dur": 4.2,
+   "key": "error_dermis",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "dolor"
+    },
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "señal"
+    },
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "aviso",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "error_cotidiano_50_0",
+   "start": 1362.48,
+   "dur": 2.72,
+   "key": "error_cotidiano",
+   "kind": "talk"
+  },
+  {
+   "id": "error_cotidiano_50_1",
+   "start": 1365.2,
+   "dur": 3.4,
+   "key": "error_cotidiano",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_apoyado_ventanilla_auto.jpg",
+   "kicker": "Camino al trabajo"
+  },
+  {
+   "id": "error_cotidiano_50_2",
+   "start": 1368.6,
+   "dur": 3.18,
+   "key": "error_cotidiano",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_marco_ventanilla_colectivo.jpg"
+  },
+  {
+   "id": "error_cotidiano_50_3",
+   "start": 1371.78,
+   "dur": 1.88,
+   "key": "error_cotidiano",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_brazo_sol_mediodia_patio.jpg"
+  },
+  {
+   "id": "error_cotidiano_50_4",
+   "start": 1373.66,
+   "dur": 6.84,
+   "key": "error_cotidiano",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_colgando_ropa_patio_sol.jpg",
+   "kicker": "Los ocho minutos que no cuentan"
+  },
+  {
+   "id": "error_cotidiano_50_5",
+   "start": 1380.5,
+   "dur": 3.03,
+   "key": "error_cotidiano",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_mate_mesa_ventana_manana.jpg",
+   "kicker": "El mate de todas las mañanas"
+  },
+  {
+   "id": "error_cotidiano_50_6",
+   "start": 1383.53,
+   "dur": 4.2,
+   "key": "error_cotidiano",
+   "kind": "lowerthird",
+   "title": "El UVA entra por el vidrio de tu casa",
+   "tone": "warn",
+   "kicker": "Adentro",
+   "desc": "Auto, colectivo, ventana de la cocina. Todos los días."
+  },
+  {
+   "id": "error_amanda_51_0",
+   "start": 1387,
+   "dur": 4.56,
+   "key": "error_amanda",
+   "kind": "talk"
+  },
+  {
+   "id": "error_amanda_51_1",
+   "start": 1391.56,
+   "dur": 3.35,
+   "key": "error_amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_joven_auto_ventanilla.jpg",
+   "kicker": "40 años del mismo lado"
+  },
+  {
+   "id": "error_amanda_51_2",
+   "start": 1394.91,
+   "dur": 5.73,
+   "key": "error_amanda",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_amanda_dos_brazos_uva.jpg"
+    }
+   ]
+  },
+  {
+   "id": "error_amanda_51_3",
+   "start": 1400.64,
+   "dur": 5.06,
+   "key": "error_amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_dos_brazos_espejo.jpg",
+   "hold": true
+  },
+  {
+   "id": "error_amanda_51_4",
+   "start": 1405.7,
+   "dur": 5.9,
+   "key": "error_amanda",
+   "kind": "splitlist",
+   "title": "Reparás de noche, rompés de mañana",
+   "items": [
+    "Ocho horas reparando mientras dormís",
+    "Cuarenta minutos de viaje al trabajo",
+    "Y volvés al punto de partida"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "error_amanda_51_5",
+   "start": 1411.6,
+   "dur": 2.8,
+   "key": "error_amanda",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NUNCA TE QUEMASTE",
+     "sub": "por eso jamás sospechaste de esto",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "error_solucion_52_0",
+   "start": 1418.14,
+   "dur": 2,
+   "key": "error_solucion",
+   "kind": "talk"
+  },
+  {
+   "id": "error_solucion_52_1",
+   "start": 1420.14,
+   "dur": 2.86,
+   "key": "error_solucion",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_manga_algodon_brazo_manejando.jpg",
+   "kicker": "Manga liviana cuando manejás"
+  },
+  {
+   "id": "error_solucion_52_2",
+   "start": 1423,
+   "dur": 2.6,
+   "key": "error_solucion",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_protector_solar_brazos_manana.jpg",
+   "kicker": "En los BRAZOS, a la mañana"
+  },
+  {
+   "id": "error_solucion_52_3",
+   "start": 1425.6,
+   "dur": 3.98,
+   "key": "error_solucion",
+   "kind": "checklist",
+   "title": "La solución de treinta segundos",
+   "items": [
+    {
+     "text": "Manga de algodón liviana al manejar",
+     "state": "done"
+    },
+    {
+     "text": "O protector solar en los brazos, a la mañana",
+     "state": "done"
+    },
+    {
+     "text": "Todos los días, aunque esté nublado",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "error_solucion_52_4",
+   "start": 1429.58,
+   "dur": 7.96,
+   "key": "error_solucion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vd5n5s9bhk4q_uva_atraviesa_nubes.jpg"
+    }
+   ]
+  },
+  {
+   "id": "error_solucion_52_5",
+   "start": 1437.54,
+   "dur": 4.2,
+   "key": "error_solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Reparar"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "mismo"
+    },
+    {
+     "t": "agujero",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "recap_53_0",
+   "start": 1439.36,
+   "dur": 4.68,
+   "key": "recap",
+   "kind": "talk"
+  },
+  {
+   "id": "recap_53_1",
+   "start": 1444.04,
+   "dur": 44.13,
+   "key": "recap",
+   "kind": "focuscards",
+   "title": "Las 5 cosas de esta noche",
+   "items": [
+    {
+     "image": "img/p_vd5n5s9bhk4q_recap_macera_romero.jpg",
+     "label": "1 · Macerá el romero en aceite",
+     "at": 0
+    },
+    {
+     "image": "img/p_vd5n5s9bhk4q_recap_piel_humeda.jpg",
+     "label": "2 · Sobre piel húmeda",
+     "at": 433
+    },
+    {
+     "image": "img/p_vd5n5s9bhk4q_recap_envuelve_algodon.jpg",
+     "label": "3 · Envolvé el brazo con algodón",
+     "at": 646
+    },
+    {
+     "image": "img/p_vd5n5s9bhk4q_recap_prueba_parche.jpg",
+     "label": "4 · Prueba de parche · nada de limón",
+     "at": 1022
+    },
+    {
+     "image": "img/p_vd5n5s9bhk4q_recap_tapate_brazos.jpg",
+     "label": "5 · Tapate los brazos a la mañana",
+     "at": 1189
+    }
+   ]
+  },
+  {
+   "id": "recap_53_2",
+   "start": 1488.36,
+   "dur": 6.96,
+   "key": "recap",
+   "kind": "lowerthird",
+   "title": "De nada sirve reparar de noche lo que rompés al mediodía",
+   "tone": "warn",
+   "kicker": "El paso 5 es el que decide",
+   "desc": "Manga o protector. Todos los días."
+  },
+  {
+   "id": "recap_tiempos_54_0",
+   "start": 1495.32,
+   "dur": 4.2,
+   "key": "recap_tiempos",
+   "kind": "splitlist",
+   "title": "Cuánto tarda de verdad",
+   "items": [
+    "3 semanas → la textura",
+    "8 a 12 semanas → el resto",
+    "No cuatro noches"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "guia_55_0",
+   "start": 1498.06,
+   "dur": 6.98,
+   "key": "guia",
+   "kind": "talk"
+  },
+  {
+   "id": "guia_55_1",
+   "start": 1505.04,
+   "dur": 8.98,
+   "key": "guia",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_guia_libro_mesa_consultorio.jpg",
+   "hold": true
+  },
+  {
+   "id": "guia_55_2",
+   "start": 1514.02,
+   "dur": 6.72,
+   "key": "guia",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_vd5n5s9bhk4q_guia_celular.jpg",
+   "imageDarken": 0.62,
+   "title": "La Guía Completa de la Salud +60",
+   "chips": [
+    "150 remedios con cantidades exactas",
+    "El error que casi todos cometen",
+    "archivos-federer.vercel.app"
+   ]
+  },
+  {
+   "id": "guia_55_3",
+   "start": 1520.74,
+   "dur": 7.42,
+   "key": "guia",
+   "kind": "splitlist",
+   "title": "Ordenada por lo que te duele",
+   "items": [
+    "Circulación",
+    "Huesos",
+    "Sueño",
+    "Piel"
+   ],
+   "palette": "T"
+  },
+  {
+   "id": "guia_55_4",
+   "start": 1528.16,
+   "dur": 5.2,
+   "key": "guia",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_guia_manual_senales_alerta.jpg",
+   "kicker": "Manual de señales de alerta"
+  },
+  {
+   "id": "guia_55_5",
+   "start": 1533.36,
+   "dur": 4.2,
+   "key": "guia",
+   "kind": "lowerthird",
+   "title": "El hermano de los moretones sin golpe",
+   "tone": "warn",
+   "kicker": "Va incluido",
+   "desc": "Cuándo una señal del cuerpo hay que mostrarla sí o sí."
+  },
+  {
+   "id": "guia_honesto_56_0",
+   "start": 1537.42,
+   "dur": 2.66,
+   "key": "guia_honesto",
+   "kind": "talk"
+  },
+  {
+   "id": "guia_honesto_56_1",
+   "start": 1540.08,
+   "dur": 2.8,
+   "key": "guia_honesto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO LA COMPRES",
+     "sub": "si estás buscando una pastilla mágica",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "guia_honesto_56_2",
+   "start": 1547.48,
+   "dur": 6.58,
+   "key": "guia_honesto",
+   "kind": "callout",
+   "image": "img/p_vd5n5s9bhk4q_cocina_constancia.jpg",
+   "figure": "Ahí no hay milagros",
+   "caption": "Hay trabajo de cocina y de constancia."
+  },
+  {
+   "id": "guia_honesto_56_3",
+   "start": 1554.06,
+   "dur": 6.42,
+   "key": "guia_honesto",
+   "kind": "checklist",
+   "title": "El riesgo lo pongo yo, no vos",
+   "items": [
+    {
+     "text": "Siete días para pedir la plata de vuelta",
+     "state": "done"
+    },
+    {
+     "text": "Sin explicarme nada",
+     "state": "done"
+    },
+    {
+     "text": "Si no te convence cuando la abras, la devolvés",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "guia_honesto_56_4",
+   "start": 1560.48,
+   "dur": 4.56,
+   "key": "guia_honesto",
+   "kind": "lowerthird",
+   "title": "Está arriba de todo en la descripción",
+   "tone": "teal",
+   "kicker": "Junto con las cantidades de hoy",
+   "desc": "archivos-federer.vercel.app"
+  },
+  {
+   "id": "comentarios_57_0",
+   "start": 1565.04,
+   "dur": 2.8,
+   "key": "comentarios",
+   "kind": "talk"
+  },
+  {
+   "id": "comentarios_57_1",
+   "start": 1567.84,
+   "dur": 2.8,
+   "key": "comentarios",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "¿QUÉ BRAZO TENÉS PEOR?",
+     "sub": "contame en los comentarios, los leo yo",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "comentarios_57_2",
+   "start": 1569.72,
+   "dur": 6.03,
+   "key": "comentarios",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Izquierdo",
+     "sub": "el de la ventanilla del conductor",
+     "at": 0
+    },
+    {
+     "card": "Derecho",
+     "sub": "y decime si manejás o no",
+     "at": 55
+    }
+   ]
+  },
+  {
+   "id": "comentarios_57_3",
+   "start": 1573.12,
+   "dur": 8.04,
+   "key": "comentarios",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_camionero_media_cara_envejecida.jpg",
+   "kicker": "El camionero de la revista"
+  },
+  {
+   "id": "teaser_58_0",
+   "start": 1581.16,
+   "dur": 2.3,
+   "key": "teaser",
+   "kind": "talk"
+  },
+  {
+   "id": "teaser_58_1",
+   "start": 1583.46,
+   "dur": 2.66,
+   "key": "teaser",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_mancha_marron_dorso_mano.jpg",
+   "kicker": "La mancha de la edad"
+  },
+  {
+   "id": "teaser_58_2",
+   "start": 1586.12,
+   "dur": 2.8,
+   "key": "teaser",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SON DOS",
+     "sub": "se parecen muchísimo, y no son lo mismo",
+     "tone": "warn",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "teaser_58_3",
+   "start": 1590.73,
+   "dur": 3.91,
+   "key": "teaser",
+   "kind": "mitoverdad",
+   "myth": "Toda mancha marrón es de la edad",
+   "truth": "Una se aclara con algo de la heladera. La otra hay que mostrarla",
+   "flipAt": 36
+  },
+  {
+   "id": "teaser_58_4",
+   "start": 1594.64,
+   "dur": 6.66,
+   "key": "teaser",
+   "kind": "lowerthird",
+   "title": "El detalle exacto del borde que las distingue",
+   "tone": "teal",
+   "kicker": "En el próximo video",
+   "desc": "Te lo voy a enseñar con lupa."
+  },
+  {
+   "id": "cierre_amanda_59_0",
+   "start": 1601.3,
+   "dur": 3.46,
+   "key": "cierre_amanda",
+   "kind": "talk"
+  },
+  {
+   "id": "cierre_amanda_59_1",
+   "start": 1604.76,
+   "dur": 5.18,
+   "key": "cierre_amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_casamiento_vestido_sin_mangas.jpg",
+   "kicker": "Marzo · el casamiento de la nieta",
+   "hold": true
+  },
+  {
+   "id": "cierre_amanda_59_2",
+   "start": 1609.94,
+   "dur": 3.24,
+   "key": "cierre_amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_brazos_descubiertos_fiesta.jpg"
+  },
+  {
+   "id": "cierre_amanda_59_3",
+   "start": 1613.18,
+   "dur": 2.8,
+   "key": "cierre_amanda",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ES MAGIA",
+     "sub": "no volvió a tener brazos de 30 años, y no los va a tener",
+     "tone": "teal",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "cierre_amanda_59_4",
+   "start": 1616.58,
+   "dur": 2.48,
+   "key": "cierre_amanda",
+   "kind": "raw",
+   "src": "img/p_vd5n5s9bhk4q_amanda_espejo_piel_brazo_dedos.jpg"
+  },
+  {
+   "id": "cierre_amanda_59_5",
+   "start": 1619.06,
+   "dur": 5.3,
+   "key": "cierre_amanda",
+   "kind": "freezezoom",
+   "image": "img/p_vd5n5s9bhk4q_amanda_piel_vuelve_a_su_lugar.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "label": "Y esa piel volvió a su lugar",
+   "zoom": 1.7,
+   "tone": "teal"
+  },
+  {
+   "id": "cierre_amanda_59_6",
+   "start": 1624.36,
+   "dur": 4.76,
+   "key": "cierre_amanda",
+   "kind": "quote",
+   "image": "img/p_vd5n5s9bhk4q_mensaje_celular_noche.jpg",
+   "text": "Doctor… *me puse el vestido sin mangas.*"
+  },
+  {
+   "id": "cierre_amanda_59_7",
+   "start": 1629.12,
+   "dur": 5.24,
+   "key": "cierre_amanda",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Que"
+    },
+    {
+     "t": "vuelvas"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "levantar"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "brazo",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "close_60_0",
+   "start": 1634.36,
+   "dur": 2.84,
+   "key": "close",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Federer Archivos — salud real después de los 60",
+   "image": "img/p_vd5n5s9bhk4q_federer_despide.jpg"
+  }
+ ]
+}
