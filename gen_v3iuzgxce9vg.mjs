@@ -54,6 +54,13 @@ const IMG = (n) => `img/fe_${SLUG}_${String(n).replace(/[^a-z0-9_]/gi, "_").toLo
 const imgNames = new Set();
 const regImg = (n) => { if (!n) return null; const p = IMG(n); imgNames.add(p); return p; };
 
+// b-roll ya anclado (lo usamos para darle fondo a los componentes que necesitan un clip)
+let BROLL = [];
+try {
+  const bs = fs.readFileSync(`src/_fed6/VideoEdit/federer_${SLUG}_broll.ts`, "utf8");
+  BROLL = JSON.parse(bs.slice(bs.indexOf("= [") + 2, bs.lastIndexOf("]") + 1));
+} catch { console.warn("(sin track de b-roll todavía)"); }
+
 // ── 1) leer el mapa de dirección y aplanar ────────────────────────────────────────────────────
 const MAP = JSON.parse(fs.readFileSync(`_beatmap_${SLUG}.json`, "utf8"));
 const missing = [];
@@ -119,6 +126,14 @@ flat.forEach((b, i) => {
       o[k] = v;
     }
     if (b.image) o.image = regImg(b.image);
+    // BlurExplainer necesita DOS medios: `clip` (fondo que se desenfoca) e `image` (el inset).
+    // Los directores sólo dan `image`; sin `clip`, Media hace staticFile(undefined) y MATA el chunk
+    // ("undefined was passed to staticFile()" — tiró 5 de 20 chunks en la 1ª corrida).
+    // Se lo damos con el b-roll REAL que cubre ese instante; si no hay, la misma imagen de fondo.
+    if (b.kind === "blurexplainer" && !b.clip) {
+      const bajo = BROLL.find((c) => c.start <= start && start < c.start + c.dur);
+      o.clip = bajo ? bajo.src : o.image;
+    }
     if (b.tokens) o.tokens = b.tokens;
     if (b.chips) o.chips = b.chips;
     if (b.words) o.words = b.words;
