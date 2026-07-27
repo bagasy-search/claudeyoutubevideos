@@ -34,11 +34,20 @@ export const BigStatReveal: React.FC<{
 }> = ({
   durationInFrames,
   theme,
-  eyebrow = "El dato que nadie mira",
-  value = 12400,
+  // ⚠ DEFAULTS VACÍOS A PROPÓSITO — no los vuelvas a llenar con texto de ejemplo.
+  // Antes decían: eyebrow="El dato que nadie mira", value=12400, support="se va por
+  // año en calefacción mal aislada", y en otra copia prefix="$" y source="Fuente:
+  // ENARGAS 2025". Como son valores POR DEFECTO, quien llamaba al componente sólo
+  // pasaba `value` y `suffix` y el resto se colaba al video sin que nadie lo
+  // escribiera: salió al aire un "$3 costumbres" (el $ era de la plantilla) citando
+  // al ente del gas argentino en un video de SALUD. O sea, el componente FABRICABA
+  // una cita que nadie hizo. Un default vacío se ve como un hueco y se arregla;
+  // un default plausible se publica. (Este arreglo vivía sólo en la copia _fed6.)
+  eyebrow = "",
+  value = 0,
   prefix = "",
   suffix = "",
-  support = "se va por año en calefacción mal aislada",
+  support = "",
   source = "",
 }) => {
   const t = useTheme(theme);
@@ -52,9 +61,11 @@ export const BigStatReveal: React.FC<{
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={70}>
         <Motas theme={t} count={14} opacity={0.4} />
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 8 }}>
-          <div style={{ opacity: eyeS, transform: `translateY(${(1 - eyeS) * -14}px)`, marginBottom: 18 }}>
-            <Eyebrow theme={t} size={30}>{eyebrow}</Eyebrow>
-          </div>
+          {eyebrow && (
+            <div style={{ opacity: eyeS, transform: `translateY(${(1 - eyeS) * -14}px)`, marginBottom: 18 }}>
+              <Eyebrow theme={t} size={30}>{eyebrow}</Eyebrow>
+            </div>
+          )}
           <div style={{ position: "relative", filter: `drop-shadow(0 18px 34px ${t.color.shadow})` }}>
             <Odo theme={t} value={value} prefix={prefix} suffix={suffix} size={210} at={8} dur={58} />
             {/* subrayado marcador que barre bajo la cifra */}
@@ -71,9 +82,11 @@ export const BigStatReveal: React.FC<{
               }}
             />
           </div>
-          <div style={{ opacity: supS, transform: `translateY(${(1 - supS) * 18}px)`, marginTop: 52, maxWidth: 1100, textAlign: "center" }}>
-            <Support theme={t} size={42}>{support}</Support>
-          </div>
+          {support && (
+            <div style={{ opacity: supS, transform: `translateY(${(1 - supS) * 18}px)`, marginTop: 52, maxWidth: 1100, textAlign: "center" }}>
+              <Support theme={t} size={42}>{support}</Support>
+            </div>
+          )}
           {source && (
             <div style={{ opacity: srcS, marginTop: 22 }}>
               <Support theme={t} size={22}>{source}</Support>

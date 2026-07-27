@@ -14,6 +14,7 @@ import {
   spread,
   useBeat,
 } from "./core";
+import { Cinema, Column, Headline, Kicker, OnPaper, autoSize, mblur, slabShadow, tilt3d, useDrift, useInk, useKeyLight, useRack } from "./stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // FAMILIA: LISTAS — NumberedSteps · ChecklistReveal · BulletCascade
@@ -42,6 +43,8 @@ export const NumberedSteps: React.FC<{
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const rowH = 148;
+  const light = useKeyLight("left");
+  const rack = useRack(steps.length, durationInFrames, { blur: 2.0, dim: 0.24, shrink: 0.018 });
   return (
     <Stage theme={t} style={{ opacity: op }}>
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={82}>
@@ -52,20 +55,35 @@ export const NumberedSteps: React.FC<{
         <div style={{ position: "absolute", top: 224, left: 130, right: 130 }}>
           {/* espina de tinta que baja conectando los pasos */}
           <svg viewBox={`0 0 20 ${steps.length * rowH}`} width={20} height={steps.length * rowH} style={{ position: "absolute", left: 48, top: 10 }}>
-            <Stroke d={`M 10 6 L 10 ${steps.length * rowH - rowH + 40}`} at={10} dur={46} color={t.color.accent} width={5} length={steps.length * rowH} />
+            <Stroke d={`M 10 6 L 10 ${steps.length * rowH - rowH + 40}`} at={10} dur={46} color={t.color.gold} width={5} length={steps.length * rowH} shadow />
           </svg>
           {steps.map((st, i) => {
             const at = spread(durationInFrames, steps.length, i);
             const s = kick(frame, fps, at, SPR.settle);
+            const f = rack(i);
+            const mb = mblur(s, 7);
             return (
-              <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, height: rowH, opacity: s, transform: `translateX(${(1 - s) * -36}px)` }}>
+              <div
+                key={i}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 30,
+                  height: rowH,
+                  opacity: s * f.opacity,
+                  filter: [mb, f.blur > 0.2 ? `blur(${f.blur.toFixed(2)}px)` : ""].filter(Boolean).join(" ") || undefined,
+                  transform: `translateX(${(1 - s) * -36}px) scale(${f.scale.toFixed(4)})`,
+                  transformOrigin: "left center",
+                }}
+              >
                 <div
                   style={{
                     position: "relative",
                     width: 104,
                     height: 104,
                     borderRadius: "50%",
-                    background: `radial-gradient(circle at 34% 28%, ${t.color.gold}, ${t.color.accent} 82%)`,
+                    background: `radial-gradient(circle at 36% 26%, #FFFFFF55 0%, rgba(255,255,255,0) 44%), radial-gradient(circle at 34% 28%, ${t.color.gold}, ${t.color.accent} 82%)`,
+                    border: `3px solid ${t.color.ink}`,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -74,20 +92,21 @@ export const NumberedSteps: React.FC<{
                     fontSize: 48,
                     color: t.color.onAccent,
                     flexShrink: 0,
-                    boxShadow: `0 16px 30px ${t.color.shadow}, inset 0 -6px 12px rgba(0,0,0,0.25)`,
-                    textShadow: "0 2px 6px rgba(0,0,0,0.3)",
+                    boxShadow: `${slabShadow(light, { lift: 1.4, edge: "rgba(0,0,0,0.55)" })}, inset 0 -7px 14px rgba(0,0,0,0.34), inset 0 5px 10px rgba(255,255,255,0.28)`,
+                    textShadow: "0 2px 6px rgba(0,0,0,0.45)",
+                    transform: tilt3d({ amount: 1.2, seed: i * 1.9, frame }),
                     zIndex: 1,
                   }}
                 >
-                  <div style={{ position: "absolute", inset: -7, borderRadius: "50%", border: `2px solid ${t.color.accent}`, opacity: 0.4 }} />
+                  <div style={{ position: "absolute", inset: -9, borderRadius: "50%", border: `2px solid ${t.color.gold}`, opacity: 0.5 }} />
                   {i + 1}
                 </div>
                 {st.image && (
                   <PhotoBlock theme={t} src={st.image} seed={i + 40} width={170} height={116} radius={t.radius * 0.6} style={{ flexShrink: 0 }} />
                 )}
-                <Card theme={t} style={{ flex: 1, padding: "18px 32px", display: "flex", alignItems: "baseline", gap: 22 }}>
+                <Card theme={t} seed={i * 3 + 1} style={{ flex: 1, padding: "18px 32px", display: "flex", alignItems: "baseline", gap: 22 }}>
                   <Display theme={t} size={40}>{st.title}</Display>
-                  {st.sub && <Support theme={t} size={28} color={t.color.textDim}>{st.sub}</Support>}
+                  {st.sub && <Support theme={t} size={28}>{st.sub}</Support>}
                 </Card>
               </div>
             );
@@ -114,55 +133,122 @@ export const ChecklistReveal: React.FC<{
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
+  // ★ REESCRITO (jul 2026). Antes: tarjeta crema centrada sobre panel crema
+  // (misma luminancia → no se leía como capa), y el sello a `right:-60/top:-46`
+  // le CAÍA ENCIMA AL TÍTULO. Ahora: columna de papel, ítems grandes con su
+  // propia fila, y el sello vive en su lugar reservado abajo — nunca pisa texto.
+  const COL_W = 1290;
   const stampAt = spread(durationInFrames, items.length, items.length) + 8;
   const stampS = kick(frame, fps, stampAt, SPR.slam);
+  const titleSize = autoSize(title, 74, 30, 48);
+  const itemSize = items.length >= 5 ? 38 : 46;
+  // RACK FOCUS: el ítem que se está contando queda nítido y adelante; los otros
+  // se van de foco. Cuando terminó de revelarse la lista, todo vuelve a foco.
+  const rack = useRack(items.length, durationInFrames, { blur: 1.8, dim: 0.22, shrink: 0.016 });
+  const drift = useDrift(0.25, 6);
+
   return (
     <Stage theme={t} style={{ opacity: op }}>
-      <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={74}>
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <div style={{ position: "relative" }}>
-            <Card theme={t} strong style={{ width: 1000, padding: "50px 64px" }}>
-              <Display theme={t} size={52} style={{ marginBottom: 34 }}>{title}</Display>
-              <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
-                {items.map((it, i) => {
-                  const at = spread(durationInFrames, items.length, i);
-                  const s = kick(frame, fps, at, SPR.snappy);
-                  return (
-                    <div key={i} style={{ display: "flex", alignItems: "center", gap: 24, opacity: s, transform: `translateX(${(1 - s) * -26}px)` }}>
-                      <Tick at={at + 6} color={t.color.good} size={58} />
-                      <Display theme={t} size={40} style={{ fontWeight: 600 }}>{it}</Display>
-                      <div style={{ flex: 1, borderBottom: `2px dotted ${t.color.line}`, marginLeft: 8, transform: "translateY(10px)" }} />
-                    </div>
-                  );
-                })}
-              </div>
-            </Card>
-            {/* sello diagonal al completar */}
+      <Cinema theme={t} durationInFrames={durationInFrames} side="left" paper={0} grade={1} blur={26} shaftsX={78}>
+        <Column theme={t} width={COL_W} at={2} />
+
+        <OnPaper>
+        {/* bloque centrado en vertical: antes arrancaba en top:118 fijo y
+            dejaba media columna vacía abajo en listas cortas */}
+        <div
+          style={{
+            position: "absolute",
+            left: 122,
+            top: 0,
+            bottom: 190,
+            width: COL_W - 250,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          <Kicker theme={t} at={2} size={28}>Cómo darte cuenta</Kicker>
+          <Headline theme={t} at={8} size={titleSize} style={{ marginTop: 18 }}>
+            {title}
+          </Headline>
+          {/* regla bajo el título: separa cabecera de lista */}
+          <div style={{ height: 3, marginTop: 26, background: `linear-gradient(90deg, ${t.color.gold}, ${t.color.gold}22)`, width: `${Math.min(100, 30 + frame * 4)}%` }} />
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 22, marginTop: 40 }}>
+            {items.map((it, i) => {
+              const at = spread(durationInFrames, items.length, i);
+              const s = kick(frame, fps, at, SPR.snappy);
+              const f = rack(i);
+              const mb = mblur(s, 6);
+              return (
+                <div
+                  key={i}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 26,
+                    opacity: s * f.opacity,
+                    // el desenfoque de entrada y el de foco se suman en un filter
+                    filter: [mb, f.blur > 0.2 ? `blur(${f.blur.toFixed(2)}px)` : ""].filter(Boolean).join(" ") || undefined,
+                    transform: `translateX(${(1 - s) * -32}px) scale(${f.scale.toFixed(4)})`,
+                    transformOrigin: "left center",
+                  }}
+                >
+                  <div style={{ position: "relative", flexShrink: 0 }}>
+                    <div
+                      style={{
+                        position: "absolute",
+                        inset: -6,
+                        borderRadius: "50%",
+                        background: t.color.good,
+                        opacity: 0.14 * s,
+                        transform: `scale(${0.6 + s * 0.4})`,
+                      }}
+                    />
+                    <Tick at={at + 6} color={t.color.good} size={62} />
+                  </div>
+                  <Display theme={t} size={autoSize(it, itemSize, 46, 32)} style={{ fontWeight: 600, lineHeight: 1.2 }}>
+                    {it}
+                  </Display>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        </OnPaper>
+
+        {/* L7 — sello: lugar RESERVADO abajo del papel, jamás sobre el texto */}
+        {stamp && (
+          <div
+            style={{
+              position: "absolute",
+              left: COL_W - 470,
+              top: 858,
+              transform: `rotate(-9deg) scale(${1.5 - stampS * 0.5}) translate(${drift.x * 0.6}px, 0)`,
+              opacity: Math.min(1, stampS * 2.2),
+            }}
+          >
             <div
               style={{
-                position: "absolute",
-                right: -60,
-                top: -46,
-                transform: `rotate(-14deg) scale(${stampS})`,
-                opacity: Math.min(1, stampS * 1.6),
-                border: `6px solid ${t.color.good}`,
-                borderRadius: 14,
-                padding: "10px 30px",
+                border: `7px solid ${t.color.good}`,
+                borderRadius: 16,
+                padding: "14px 40px",
                 fontFamily: t.fontLabel,
                 fontWeight: 900,
-                fontSize: 44,
-                letterSpacing: 4,
+                fontSize: 50,
+                letterSpacing: 5,
                 textTransform: "uppercase",
                 color: t.color.good,
-                background: t.color.surface,
-                boxShadow: `0 18px 40px ${t.color.shadow}`,
+                background: t.color.surfaceStrong,
+                boxShadow: `0 22px 46px ${t.color.shadow}, inset 0 0 0 3px ${t.color.surfaceStrong}, inset 0 0 26px ${t.color.good}22`,
               }}
             >
               {stamp}
             </div>
           </div>
-        </div>
-      </Panel>
+        )}
+      </Cinema>
     </Stage>
   );
 };
@@ -185,6 +271,7 @@ export const BulletCascade: React.FC<{
   ],
 }) => {
   const t = useTheme(theme);
+  const ink = useInk(t);
   const { frame, fps, op } = useBeat(durationInFrames);
   return (
     <Stage theme={t} style={{ opacity: op }}>
@@ -209,8 +296,8 @@ export const BulletCascade: React.FC<{
                     flexShrink: 0,
                   }}
                 />
-                <div style={{ fontFamily: t.fontDisplay, fontWeight: t.displayWeight, fontSize: 66, lineHeight: 1.15, color: t.color.text }}>
-                  {b.pre && <span style={{ color: t.color.textSoft, fontWeight: 500 }}>{b.pre} </span>}
+                <div style={{ fontFamily: t.fontDisplay, fontWeight: t.displayWeight, fontSize: 66, lineHeight: 1.15, color: ink.text, textShadow: ink.shadowStrong }}>
+                  {b.pre && <span style={{ color: ink.soft, fontWeight: 500 }}>{b.pre} </span>}
                   <span style={{ position: "relative", whiteSpace: "nowrap" }}>
                     <span
                       style={{
@@ -226,9 +313,9 @@ export const BulletCascade: React.FC<{
                         transformOrigin: "left center",
                       }}
                     />
-                    <span style={{ position: "relative", color: t.color.text }}>{b.key}</span>
+                    <span style={{ position: "relative", color: ink.text }}>{b.key}</span>
                   </span>
-                  {b.post && <span style={{ color: t.color.textSoft, fontWeight: 500 }}> {b.post}</span>}
+                  {b.post && <span style={{ color: ink.soft, fontWeight: 500 }}> {b.post}</span>}
                 </div>
               </div>
             );
