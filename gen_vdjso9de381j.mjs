@@ -123,6 +123,17 @@ for (const b of beats) {
       const { atPhrase, ...rest } = it; return { ...rest, at: atF };
     });
     if (!b.items.length) { b.kind = "talk"; continue; }
+    // ⛔ AvatarPizarra y AvatarKeyword NO comparten forma de item, aunque los directores les pasen
+    // lo mismo. Keyword usa {word, sub}; Pizarra usa {card, sub} (tarjeta) o {image, caption}.
+    // Con {word} la Pizarra cae en la rama de IMAGEN y llama staticFile(undefined) → mata el chunk
+    // entero, y sólo se ve DESPUÉS de rendear (3 chunks perdidos). Se normaliza acá.
+    if (b.kind === "avatarpizarra") {
+      b.items = b.items.map((it) => {
+        if (it.image || it.card) return it;
+        const { word, ...rest } = it;
+        return { ...rest, card: word ?? it.title ?? "" };
+      });
+    }
     if (last > 300) { b.items = b.items.map((it, i) => ({ ...it, at: i * 90 })); last = (b.items.length - 1) * 90; }
     const hold = b.kind === "avatarpizarra" ? 4.2 : 2.8;
     b.dur = +(last / FPS + hold).toFixed(2);

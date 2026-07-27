@@ -308,14 +308,14 @@
    "kind": "avatarpizarra",
    "items": [
     {
-     "word": "ABAJO",
      "sub": "tobillos hinchados",
-     "at": 0
+     "at": 0,
+     "card": "ABAJO"
     },
     {
-     "word": "ARRIBA",
      "sub": "la papada",
-     "at": 38
+     "at": 38,
+     "card": "ARRIBA"
     }
    ],
    "clip": "avatar_clips/vdjso9de381j/m028.mp4"
@@ -874,14 +874,14 @@
    "kind": "avatarpizarra",
    "items": [
     {
-     "word": "CANOS",
      "sub": "Finitos, finisimos",
-     "at": 0
+     "at": 0,
+     "card": "CANOS"
     },
     {
-     "word": "JUSTO ABAJO",
      "sub": "Pegados a la piel",
-     "at": 86
+     "at": 86,
+     "card": "JUSTO ABAJO"
     }
    ],
    "clip": "avatar_clips/vdjso9de381j/m066.mp4"
@@ -1244,19 +1244,19 @@
    "kind": "avatarpizarra",
    "items": [
     {
-     "word": "SE MANEJA",
      "sub": "No es un destino",
-     "at": 0
+     "at": 0,
+     "card": "SE MANEJA"
     },
     {
-     "word": "SE MUEVE",
      "sub": "Con la mano, hacia abajo",
-     "at": 58
+     "at": 58,
+     "card": "SE MUEVE"
     },
     {
-     "word": "GRATIS",
      "sub": "No cuesta un peso",
-     "at": 101
+     "at": 101,
+     "card": "GRATIS"
     }
    ],
    "clip": "avatar_clips/vdjso9de381j/m099.mp4"
