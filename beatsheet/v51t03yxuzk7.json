@@ -1049,8 +1049,7 @@
    "chips": [
     "Elegante",
     "Bien hecho",
-    "Material comprado",
-    "Trabajo de fin de semana"
+    "Material comprado"
    ]
   },
   {
@@ -1516,8 +1515,7 @@
    "chips": [
     "Olor a tierra mojada",
     "Mancha que sube",
-    "Moho negro en la esquina",
-    "Cartón hinchado"
+    "Moho negro en la esquina"
    ]
   },
   {
@@ -1893,10 +1891,6 @@
     {
      "text": "Dijo las dos palabras",
      "state": "done"
-    },
-    {
-     "text": "Pegar un pedazo de plástico",
-     "state": "todo"
     }
    ]
   },
@@ -2768,10 +2762,6 @@
     },
     {
      "text": "Los dos costados",
-     "state": "done"
-    },
-    {
-     "text": "Sin aire por ningun borde",
      "state": "done"
     }
    ]
@@ -6376,8 +6366,7 @@
    "chips": [
     "Respirar",
     "Cocinar",
-    "Bañarse",
-    "Lavar ropa"
+    "Bañarse"
    ]
   },
   {
@@ -8463,8 +8452,7 @@
    "chips": [
     "Grieta horizontal a media altura",
     "Grieta en escalón",
-    "Muro pandeado hacia adentro",
-    "Puerta que ya no cierra"
+    "Muro pandeado hacia adentro"
    ]
   },
   {
@@ -9593,8 +9581,7 @@
    "chips": [
     "Madera",
     "Panel de yeso",
-    "Celulosa",
-    "Comida"
+    "Celulosa"
    ]
   },
   {
