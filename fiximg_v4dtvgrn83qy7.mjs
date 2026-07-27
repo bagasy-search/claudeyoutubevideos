@@ -170,6 +170,23 @@ const out5 = out4.map((ln) => {
 });
 console.log(`listas envueltas en objetos: ${envueltos} · componentes que se quedaban sin foto de fondo: ${fotos}`);
 
+// 9) TEXTO DEL GOLPE demasiado largo. ImpactReveal lo pone gigante y lo entra con un barrido:
+//    arriba de ~20 caracteres se desborda por la derecha y el barrido todavía le tapa el arranque.
+//    Se acorta al primer tramo con sentido (quedó a la vista en la cuadrícula).
+const CORTES = {
+  "Un roce de cola y se va al suelo": "Y se va al suelo",
+  "Una chimenea de un centímetro": "Una chimenea",
+  "A la media hora una explota": "Una explota",
+  "El eléctrico es un adorno": "Un adorno",
+};
+let acortados = 0;
+for (let i = 0; i < out5.length; i++) {
+  for (const [largo, corto] of Object.entries(CORTES)) {
+    if (out5[i].includes(`impact="${largo}"`)) { out5[i] = out5[i].replace(`impact="${largo}"`, `impact="${corto}"`); acortados++; }
+  }
+}
+console.log(`textos de golpe acortados: ${acortados}`);
+
 fs.writeFileSync(CUES, out5.join("\n"));
 console.log(`image auto-rellenada con la toma más cercana: ${rellenados} · props borrados por no haber imagen cerca: ${borrados} · props numéricos enllavados: ${enllavados}`);
 
