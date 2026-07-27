@@ -137,7 +137,40 @@ for (let a = 0; a < filas.length; a++) {
 }
 console.log(`solapes de componentes grandes recortados: ${recortes}`);
 
-fs.writeFileSync(CUES, out4.join("\n"));
+// 7) LISTAS DE STRINGS donde el componente espera OBJETOS. Checklist declara
+//    `items: CheckItem[]` con `{text}` y SignaturePhrase `lines: {text, gold?}[]`; los directores
+//    mandaron strings sueltos, así que dibujaba las casillas VACÍAS. Se vio en la cuadrícula.
+const FORMA = { Checklist: ["items", "text"], SignaturePhrase: ["lines", "text"] };
+let envueltos = 0;
+// 8) IMAGEN DE FONDO en los componentes que la tienen OPCIONAL: sin ella caen a un lavado sepia
+//    plano (CalloutMark) o a un degradado gris, y en pantalla se lee como caja sin terminar.
+//    Se les pasa la toma más cercana en el tiempo, que por construcción habla de lo mismo.
+const CON_FOTO = new Set(["CalloutMark", "KineticQuote", "NumberCard", "AgedDoc", "MistakeCard",
+  "ProtectionTool", "RedactedReveal", "ImpossibleStamp", "LieList", "Checklist"]);
+let fotos = 0;
+const out5 = out4.map((ln) => {
+  if (!/^\s*\{ key: "/.test(ln)) return ln;
+  let l = ln;
+  for (const [comp, [prop, clave]] of Object.entries(FORMA)) {
+    if (!l.includes(`<${comp} `)) continue;
+    l = l.replace(new RegExp(`\\b${prop}=\\{(\\[[^\\]]*\\])\\}`), (all, arr) => {
+      let v; try { v = JSON.parse(arr); } catch { return all; }
+      if (!Array.isArray(v) || !v.length || typeof v[0] !== "string") return all;
+      envueltos++;
+      return `${prop}={${JSON.stringify(v.map((t) => ({ [clave]: t })))}}`;
+    });
+  }
+  const mc = l.match(/<([A-Z][A-Za-z0-9]*) /);
+  if (mc && CON_FOTO.has(mc[1]) && !/\bimage=/.test(l)) {
+    const mt = l.match(/start: ([\d.]+)/);
+    const src = cercana(mt ? +mt[1] : 0);
+    if (src) { fotos++; l = l.replace(/\s*\/>/, ` image="${src}" />`); }
+  }
+  return l;
+});
+console.log(`listas envueltas en objetos: ${envueltos} · componentes que se quedaban sin foto de fondo: ${fotos}`);
+
+fs.writeFileSync(CUES, out5.join("\n"));
 console.log(`image auto-rellenada con la toma más cercana: ${rellenados} · props borrados por no haber imagen cerca: ${borrados} · props numéricos enllavados: ${enllavados}`);
 
 const final = out4.join("\n");
