@@ -19,6 +19,49 @@ export {
 } from "./theme";
 export type { Theme, ThemeColors } from "./theme";
 
+// Stagecraft — el modelo de 9 capas (usalo para componer planos bespoke)
+export {
+  Cinema,
+  Grade,
+  DepthBlur,
+  Shafts,
+  Scrim,
+  Plate,
+  Band,
+  Column,
+  Grain,
+  Halation,
+  Sweep,
+  Dust,
+  LensVignette,
+  Slab,
+  useKeyLight,
+  tilt3d,
+  slabShadow,
+  specular,
+  useRack,
+  Reflection,
+  Bokeh,
+  mblur,
+  useEntrance,
+  OnPaper,
+  OnFootage,
+  useInk,
+  Backdrop,
+  Plinth,
+  Kicker,
+  Headline,
+  Underline,
+  StageCtx,
+  useStage,
+  useDrift,
+  usePush,
+  autoSize,
+  typeShadow,
+  ZONE_INFO,
+} from "./stagecraft";
+export type { StageZone, StageInfo } from "./stagecraft";
+
 // Primitivas core (para componer bespoke encima del kit)
 export {
   Panel,

@@ -7,6 +7,7 @@ import {
   ContactShadow,
   Display,
   Eyebrow,
+  ImgOr,
   Motas,
   Panel,
   PhotoBlock,
@@ -16,6 +17,7 @@ import {
   spread,
   useBeat,
 } from "./core";
+import { Band, Cinema, Headline, Kicker, OnPaper, Plinth, Reflection, autoSize, mblur, tilt3d, useDrift, useKeyLight, usePush, useRack, slabShadow } from "./stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // FAMILIA: DIAGRAMAS — CutawayCallouts · FlowSteps · CycleLoop · LayerStack
@@ -134,83 +136,166 @@ export const FlowSteps: React.FC<{
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const n = Math.min(nodes.length, 5);
-  const W = 1720;
-  const cellW = W / n;
-  const CY = 560;
+  // ★ REESCRITO (jul 2026). Antes: 3 circulitos de 220px flotando en el medio de
+  // una tarjeta crema, con el título chico arriba y ~30% del alto vacío. Ahora
+  // el proceso vive en una BANDA de papel con canto vivo (contraste real contra
+  // el b-roll oscurecido arriba y abajo), medallones grandes, y las flechas
+  // llevan un pulso que viaja: se lee el SENTIDO del proceso, no tres fotos.
+  const BAND_TOP = 322;
+  const BAND_H = 486;
+  const CY = BAND_TOP + 214;
+  const R = n <= 3 ? 132 : n === 4 ? 112 : 96;
+  const cellW = 1920 / n;
+  const drift = useDrift(0.5, 2);
+  const push = usePush(durationInFrames, 0.02);
+  const titleSize = autoSize(title, 82, 26, 54);
+  const light = useKeyLight("top");
+  // el foco viaja de un paso al siguiente, como lo va contando el avatar
+  const rack = useRack(nodes.length, durationInFrames, { blur: 2.3, dim: 0.26, shrink: 0.035 });
+
   return (
     <Stage theme={t} style={{ opacity: op }}>
-      <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={16}>
-        <div style={{ position: "absolute", top: 62, left: 0, right: 0, textAlign: "center" }}>
-          <Display theme={t} size={58}>{title}</Display>
+      <Cinema theme={t} durationInFrames={durationInFrames} side="top" paper={0} grade={1.05} blur={20} shaftsX={22}>
+        <Band theme={t} top={BAND_TOP} height={BAND_H} at={4} />
+
+        {/* scrim local del titular: el grade general es parejo, pero el título va
+            centrado justo donde el b-roll suele tener su zona más clara. Sin
+            esto la tinta clara pelea contra el fondo. */}
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            right: 0,
+            top: -60,
+            height: 460,
+            background: "radial-gradient(58% 100% at 50% 62%, rgba(18,13,8,0.66) 0%, rgba(18,13,8,0) 72%)",
+            pointerEvents: "none",
+          }}
+        />
+        {/* L8 — título sobre el b-roll graduado, arriba de la banda */}
+        <div style={{ position: "absolute", top: 118, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
+          <Kicker theme={t} at={2} size={30}>Paso a paso</Kicker>
+          <Headline theme={t} at={8} size={titleSize} style={{ textAlign: "center", maxWidth: 1500 }}>
+            {title}
+          </Headline>
         </div>
-        <svg viewBox="0 0 1800 960" width="100%" height="100%" style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
+
+        {/* L7b — flechas de tinta con pulso viajero */}
+        <svg viewBox="0 0 1920 1080" width="100%" height="100%" style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
           {Array.from({ length: n - 1 }, (_, i) => {
-            const x0 = 40 + cellW * (i + 0.5) + 128;
-            const x1 = 40 + cellW * (i + 1.5) - 128;
-            return <Arrow key={i} x1={x0} y1={CY - 90} x2={x1} y2={CY - 90} curve={-44} at={20 + i * 12} dur={16} color={t.color.accent} width={8} />;
+            const x0 = cellW * (i + 0.5) + R + 34;
+            const x1 = cellW * (i + 1.5) - R - 34;
+            const at = spread(durationInFrames, nodes.length, i) + 12;
+            const pulse = ((frame - at) % 46) / 46;
+            const px = x0 + (x1 - x0) * pulse;
+            const alive = frame > at + 16 && pulse < 0.94;
+            return (
+              <g key={i}>
+                <Arrow x1={x0} y1={CY} x2={x1} y2={CY} curve={-26} at={at} dur={16} color={t.color.accent} width={9} />
+                {alive && (
+                  <circle
+                    cx={px}
+                    cy={CY - 13 * Math.sin(pulse * Math.PI)}
+                    r={9}
+                    fill={t.color.gold}
+                    opacity={Math.sin(pulse * Math.PI) * 0.95}
+                    style={{ filter: `drop-shadow(0 0 12px ${t.color.gold})` }}
+                  />
+                )}
+              </g>
+            );
           })}
         </svg>
+
+        {/* L7 — medallones */}
         {nodes.slice(0, n).map((node, i) => {
           const at = spread(durationInFrames, nodes.length, i);
           const s = kick(frame, fps, at, SPR.settle);
-          const cx = 40 + cellW * (i + 0.5);
+          const cx = cellW * (i + 0.5);
+          const dy = Math.sin(frame / 78 + i * 1.4) * 4; // vida propia por nodo
+          const labelS = kick(frame, fps, at + 8, SPR.snappy);
+          const f = rack(i);
           return (
-            <div key={i} style={{ position: "absolute", left: cx - 150, top: CY - 240, width: 300, textAlign: "center", opacity: s, transform: `translateY(${(1 - s) * 44}px)` }}>
-              <div style={{ position: "relative", width: 220, height: 220, margin: "0 auto" }}>
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: cx - cellW / 2,
+                top: CY - R - 34,
+                width: cellW,
+                textAlign: "center",
+                opacity: s * f.opacity,
+                filter: [mblur(s, 9), f.blur > 0.2 ? `blur(${f.blur.toFixed(2)}px)` : ""].filter(Boolean).join(" ") || undefined,
+                transform: `translateY(${(1 - s) * 52 + dy}px) translateX(${drift.x * (0.3 + i * 0.12)}px) scale(${(push * f.scale).toFixed(4)})`,
+              }}
+            >
+              <div style={{ position: "relative", width: R * 2, height: R * 2, margin: "0 auto" }}>
+                <Plinth theme={t} width={R * 1.9} y={R * 2 - 6} opacity={0.6} />
+                <Reflection theme={t} width={R * 1.5} height={R * 0.7} y={R * 2 + 4} opacity={0.16} />
+                {/* anillo exterior de tinta + halo de acento */}
+                <div style={{ position: "absolute", inset: -14, borderRadius: "50%", border: `2px solid ${t.color.gold}`, opacity: 0.45 }} />
                 <div
                   style={{
                     position: "absolute",
                     inset: 0,
                     borderRadius: "50%",
                     overflow: "hidden",
-                    border: `${t.strokeW}px solid ${t.color.ink}`,
-                    boxShadow: `0 22px 40px ${t.color.shadow}`,
+                    border: `${t.strokeW + 2}px solid ${t.color.ink}`,
+                    boxShadow: `${slabShadow(light, { lift: 1.6, edge: "rgba(0,0,0,0.5)" })}, inset 0 0 34px rgba(0,0,0,0.34)`,
                     background: t.color.surfaceStrong,
+                    transform: tilt3d({ amount: 1.1, seed: i * 2.4, frame, z: f.focus * 26 }),
                   }}
                 >
-                  <div style={{ position: "absolute", inset: 0 }}>
-                    {node.image ? (
-                      <PhotoBlock theme={t} src={node.image} width={220} height={220} radius={0} style={{ filter: "none" }} />
-                    ) : (
-                      <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: `radial-gradient(circle at 34% 28%, ${t.color.bg1}, ${t.color.bg0})`, fontFamily: t.fontDisplay, fontSize: 92, fontWeight: 900, color: t.color.accent }}>
-                        {i + 1}
-                      </div>
-                    )}
-                  </div>
+                  {node.image ? (
+                    <ImgOr src={node.image} seed={i + 12} theme={t} />
+                  ) : (
+                    <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: `radial-gradient(circle at 34% 28%, ${t.color.bg1}, ${t.color.bg2})`, fontFamily: t.fontDisplay, fontSize: R * 0.95, fontWeight: 900, color: t.color.accent }}>
+                      {i + 1}
+                    </div>
+                  )}
+                  {/* rim light del medallón */}
+                  <div style={{ position: "absolute", inset: 0, borderRadius: "50%", background: "linear-gradient(150deg, rgba(255,255,255,0.34), rgba(255,255,255,0) 46%)" }} />
                 </div>
-                {/* insignia de paso — solo si hay imagen (sin imagen el número YA es el centro) */}
                 {node.image && (
-                <div
-                  style={{
-                    position: "absolute",
-                    top: -8,
-                    right: -8,
-                    width: 62,
-                    height: 62,
-                    borderRadius: "50%",
-                    background: `radial-gradient(circle at 36% 30%, ${t.color.gold}, ${t.color.accent})`,
-                    border: `3px solid ${t.color.surfaceStrong}`,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: t.color.onAccent,
-                    fontWeight: 900,
-                    fontSize: 30,
-                    fontFamily: t.fontLabel,
-                    boxShadow: `0 10px 20px ${t.color.shadow}`,
-                  }}
-                >
-                  {i + 1}
-                </div>
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: -6,
+                      right: -6,
+                      width: 74,
+                      height: 74,
+                      borderRadius: "50%",
+                      background: `radial-gradient(circle at 36% 30%, ${t.color.gold}, ${t.color.accent})`,
+                      border: `4px solid ${t.color.surfaceStrong}`,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      color: t.color.onAccent,
+                      fontWeight: 900,
+                      fontSize: 36,
+                      fontFamily: t.fontLabel,
+                      boxShadow: `0 12px 24px ${t.color.shadow}`,
+                      transform: `scale(${kick(frame, fps, at + 6, SPR.pop)})`,
+                    }}
+                  >
+                    {i + 1}
+                  </div>
                 )}
               </div>
-              <ContactShadow theme={t} width={190} style={{ margin: "8px auto 0" }} />
-              <Display theme={t} size={40} style={{ marginTop: 6 }}>{node.label}</Display>
-              {node.sub && <Support theme={t} size={26} style={{ marginTop: 4 }}>{node.sub}</Support>}
+              <OnPaper>
+                <div style={{ opacity: labelS, transform: `translateY(${(1 - labelS) * 14}px)`, marginTop: 26, padding: "0 24px" }}>
+                  <Display theme={t} size={autoSize(node.label, 48, 18, 34)}>{node.label}</Display>
+                  {node.sub && (
+                    <Support theme={t} size={30} style={{ marginTop: 6 }}>
+                      {node.sub}
+                    </Support>
+                  )}
+                </div>
+              </OnPaper>
             </div>
           );
         })}
-      </Panel>
+      </Cinema>
     </Stage>
   );
 };
@@ -366,7 +451,7 @@ export const LayerStack: React.FC<{
                 </svg>
                 <div>
                   <Display theme={t} size={38}>{ly.label}</Display>
-                  <Support theme={t} size={23} color={t.color.textDim}>capa {n - i} de {n}</Support>
+                  <Support theme={t} size={23}>capa {n - i} de {n}</Support>
                 </div>
               </div>
             </React.Fragment>

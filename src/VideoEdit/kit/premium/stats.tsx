@@ -56,7 +56,7 @@ export const BigStatReveal: React.FC<{
             <Eyebrow theme={t} size={30}>{eyebrow}</Eyebrow>
           </div>
           <div style={{ position: "relative", filter: `drop-shadow(0 18px 34px ${t.color.shadow})` }}>
-            <Odo theme={t} value={value} prefix={prefix} suffix={suffix} size={210} color={t.color.text} at={8} dur={58} />
+            <Odo theme={t} value={value} prefix={prefix} suffix={suffix} size={210} at={8} dur={58} />
             {/* subrayado marcador que barre bajo la cifra */}
             <div
               style={{
@@ -72,11 +72,11 @@ export const BigStatReveal: React.FC<{
             />
           </div>
           <div style={{ opacity: supS, transform: `translateY(${(1 - supS) * 18}px)`, marginTop: 52, maxWidth: 1100, textAlign: "center" }}>
-            <Support theme={t} size={42} color={t.color.textSoft}>{support}</Support>
+            <Support theme={t} size={42}>{support}</Support>
           </div>
           {source && (
             <div style={{ opacity: srcS, marginTop: 22 }}>
-              <Support theme={t} size={22} color={t.color.textDim}>{source}</Support>
+              <Support theme={t} size={22}>{source}</Support>
             </div>
           )}
         </div>
@@ -352,7 +352,7 @@ export const DonutPercent: React.FC<{
               />
             </svg>
             <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <Odo theme={t} value={value} suffix="%" size={128} color={t.color.text} at={12} dur={50} grouped={false} />
+              <Odo theme={t} value={value} suffix="%" size={128} at={12} dur={50} grouped={false} />
             </div>
           </div>
           <div style={{ maxWidth: 560 }}>

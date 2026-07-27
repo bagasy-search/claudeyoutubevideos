@@ -18,6 +18,7 @@ import {
   kick,
   useBeat,
 } from "./core";
+import { Grain, Kicker, LensVignette, autoSize, usePush } from "./stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // FAMILIA: COMPARACIÓN — VsDuel · BeforeAfter · DuelColumns · TierRanking
@@ -155,33 +156,40 @@ export const BeforeAfter: React.FC<{
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
-  const W = 1460;
-  const H = 700;
-  // el divisor barre de derecha a izquierda y se asienta al 50%
+  // ★ REESCRITO (jul 2026). Antes: la comparación vivía en una cajita de
+  // 1460x700 DENTRO de una tarjeta crema dentro de otra tarjeta crema, y a
+  // escala 0.61 el divisor quedaba en 4px. Ahora sangra a todo el frame: la
+  // comparación ES el plano, con el divisor como pieza real (manija, luz que
+  // corre, sombra a los costados) y las etiquetas como chips grandes.
+  const W = 1920;
+  const H = 1080;
   const sweep = interpolate(frame, [14, 58], [0.985, 0.5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const wipe = sweep * W;
-  const tagB = kick(frame, fps, 20, SPR.snappy);
-  const tagA = kick(frame, fps, 46, SPR.snappy);
+  const tagB = kick(frame, fps, 22, SPR.snappy);
+  const tagA = kick(frame, fps, 48, SPR.snappy);
   const capS = kick(frame, fps, 58, SPR.settle);
+  const push = usePush(durationInFrames, 0.04);
+  const glow = 0.7 + 0.3 * Math.sin(frame / 18);
 
   const Tag: React.FC<{ label: string; accent: string; s: number; right?: boolean }> = ({ label, accent, s, right }) => (
     <div
       style={{
         position: "absolute",
-        top: 26,
-        ...(right ? { right: 26 } : { left: 26 }),
+        top: 74,
+        ...(right ? { right: 78 } : { left: 78 }),
         opacity: s,
-        transform: `translateY(${(1 - s) * -14}px)`,
+        transform: `translateY(${(1 - s) * -20}px)`,
         background: accent,
         color: t.color.onAccent,
         fontFamily: t.fontLabel,
         fontWeight: 800,
-        fontSize: 30,
-        letterSpacing: t.labelSpacing,
+        fontSize: 40,
+        letterSpacing: t.labelSpacing + 1,
         textTransform: t.upperLabels ? "uppercase" : "none",
-        padding: "10px 26px",
+        padding: "16px 40px",
         borderRadius: t.radius * 0.6,
-        boxShadow: `0 12px 26px ${t.color.shadow}`,
+        boxShadow: `0 18px 40px rgba(0,0,0,0.45), inset 0 2px 0 rgba(255,255,255,0.28)`,
+        textShadow: "0 2px 6px rgba(0,0,0,0.35)",
       }}
     >
       {label}
@@ -190,78 +198,95 @@ export const BeforeAfter: React.FC<{
 
   return (
     <Stage theme={t} style={{ opacity: op }}>
-      <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={78}>
-        <div style={{ position: "absolute", top: 48, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
-          <Eyebrow theme={t}>{eyebrow}</Eyebrow>
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            left: "50%",
-            top: 118,
-            transform: "translateX(-50%)",
-            width: W,
-            height: H,
-            borderRadius: t.radius + 6,
-            overflow: "hidden",
-            border: `${t.strokeW}px solid ${t.color.ink}`,
-            boxShadow: `0 34px 70px ${t.color.shadow}`,
-          }}
-        >
-          {/* capa DESPUÉS de base (se descubre a la derecha del divisor) */}
+      <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
+        {/* L1/L7 — las dos imágenes a sangre, con push de cámara compartido */}
+        <div style={{ position: "absolute", inset: 0, transform: `scale(${push})` }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <ImgOr src={afterImage} seed={31} theme={t} />
           </div>
-          {/* capa ANTES clipeada hasta el divisor, con grade apagado */}
           <div style={{ position: "absolute", inset: 0, clipPath: `inset(0 ${W - wipe}px 0 0)` }}>
-            <div style={{ position: "absolute", inset: 0, filter: "saturate(0.45) brightness(0.82) sepia(0.22)" }}>
+            <div style={{ position: "absolute", inset: 0, filter: "saturate(0.42) brightness(0.78) sepia(0.24)" }}>
               <ImgOr src={beforeImage} seed={12} theme={t} />
             </div>
           </div>
-          {/* divisor con manija */}
+        </div>
+
+        {/* L2 — grade: viñeta y caída arriba/abajo para que el texto viva */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(180deg, rgba(24,18,12,0.72) 0%, rgba(24,18,12,0.12) 26%, rgba(24,18,12,0.12) 66%, rgba(24,18,12,0.8) 100%)",
+          }}
+        />
+
+        {/* L7b — el divisor como objeto físico */}
+        <div style={{ position: "absolute", top: 0, bottom: 0, left: wipe - 90, width: 180, background: `linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0.45) 46%, rgba(0,0,0,0) 100%)` }} />
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            left: wipe - 4,
+            width: 8,
+            background: `linear-gradient(180deg, ${t.color.gold}44, ${t.color.gold}, ${t.color.gold}44)`,
+            boxShadow: `0 0 ${28 * glow}px ${t.color.glow}, 0 0 ${70 * glow}px ${t.color.glow}`,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: `${H / 2}px`,
+            left: wipe,
+            transform: "translate(-50%, -50%)",
+            width: 104,
+            height: 104,
+            borderRadius: "50%",
+            background: `radial-gradient(circle at 36% 30%, ${t.color.gold}, ${t.color.accent})`,
+            border: `5px solid ${t.color.surfaceStrong}`,
+            boxShadow: `0 20px 44px rgba(0,0,0,0.55), 0 0 ${40 * glow}px ${t.color.glow}`,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: t.color.onAccent,
+            fontWeight: 900,
+            fontSize: 44,
+            fontFamily: t.fontLabel,
+          }}
+        >
+          ⇄
+        </div>
+
+        <Tag label={beforeLabel} accent={t.color.danger} s={tagB} />
+        <Tag label={afterLabel} accent={t.color.good} s={tagA} right />
+
+        {/* L8 — kicker arriba, caption abajo, ambos sobre el grade */}
+        <div style={{ position: "absolute", top: 76, left: 0, right: 0, display: "flex", justifyContent: "center" }}>
+          <Kicker theme={t} at={2} size={32} color={t.color.gold}>{eyebrow}</Kicker>
+        </div>
+        {caption && (
           <div
             style={{
               position: "absolute",
-              top: 0,
-              bottom: 0,
-              left: wipe - 3,
-              width: 6,
-              background: t.color.gold,
-              boxShadow: `0 0 26px ${t.color.glow}`,
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: wipe,
-              transform: "translate(-50%, -50%)",
-              width: 74,
-              height: 74,
-              borderRadius: "50%",
-              background: `radial-gradient(circle at 36% 30%, ${t.color.gold}, ${t.color.accent})`,
-              border: `4px solid ${t.color.surfaceStrong}`,
-              boxShadow: `0 14px 30px ${t.color.shadow}`,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              color: t.color.onAccent,
-              fontWeight: 900,
-              fontSize: 30,
-              fontFamily: t.fontLabel,
+              bottom: 78,
+              left: 0,
+              right: 0,
+              textAlign: "center",
+              opacity: capS,
+              transform: `translateY(${(1 - capS) * 20}px)`,
+              padding: "0 160px",
             }}
           >
-            ⇄
+            <div style={{ fontFamily: t.fontDisplay, fontWeight: t.displayWeight, fontSize: autoSize(caption, 54, 44, 36), color: "#F7F1DF", lineHeight: 1.16, textShadow: "0 3px 12px rgba(0,0,0,0.7), 0 18px 44px rgba(0,0,0,0.6)" }}>
+              {caption}
+            </div>
           </div>
-          <Tag label={beforeLabel} accent={t.color.danger} s={tagB} />
-          <Tag label={afterLabel} accent={t.color.good} s={tagA} right />
-        </div>
-        <div style={{ position: "absolute", bottom: 44, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: capS, transform: `translateY(${(1 - capS) * 16}px)` }}>
-          <Card theme={t} style={{ padding: "16px 42px" }}>
-            <Support theme={t} size={30} color={t.color.text}>{caption}</Support>
-          </Card>
-        </div>
-      </Panel>
+        )}
+
+        <Grain theme={t} />
+        <LensVignette theme={t} strength={1.15} />
+      </div>
     </Stage>
   );
 };
