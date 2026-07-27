@@ -269,6 +269,34 @@ if (!process.env.FARM_NO_LOCK) {
 console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
 // ENTRY=src/index_<slug>.tsx → cada video rendea con SU entry y no comparte Root.tsx con los otros agentes
 const entry = process.env.ENTRY || "";
+// ── EL TARBALL TIENE QUE ESTAR DESCARGABLE ANTES DE ENCENDER UN RUNNER ───────────────────────
+// `gh release create` con un asset grande crea el release como DRAFT, sube, y recién ahí lo
+// publica. Si la subida falla o va lenta, queda un release sin assets —o todavía en draft— y los
+// runners mueren con "release not found". Un re-render PARCIAL es peor todavía: no re-empaqueta
+// nada (línea ~77), da por sentado que el release de una corrida anterior sigue ahí, y si no está
+// se caen los 20 chunks sin excepción. Pasó hoy con el GUANTE: run 30274215774, 20 de 20 caídos,
+// release publicado 4 minutos DESPUÉS de que arrancara el render y con 0 assets adentro.
+// Chequear cuesta una llamada a la API; no chequear cuesta 20 runners.
+{
+  const relTag = `assets-${slug}`;
+  let ok = false, motivo = "";
+  try {
+    const j = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
+    const tarAsset = (j.assets || []).find((a) => /\.tar$/i.test(a.name));
+    if (j.isDraft) motivo = "el release quedó en DRAFT (la subida no terminó) — los runners no pueden bajarlo";
+    else if (!tarAsset) motivo = `el release existe pero NO tiene el .tar adentro (${(j.assets || []).length} assets)`;
+    else if (!tarAsset.size) motivo = "el .tar está en el release pero pesa 0";
+    else ok = true;
+  } catch { motivo = "no existe el release de assets"; }
+  if (!ok) {
+    console.error(`✗ PRE-VUELO RELEASE: ${motivo}.`);
+    console.error(`  Los ${chunks} chunks morirían con "release not found" o 404 al bajar los assets.`);
+    console.error(only
+      ? `  Estás en re-render PARCIAL (ONLY_CHUNKS=${only}), que NO re-sube assets. Corré un render COMPLETO (sin ONLY_CHUNKS) para regenerar el tarball.`
+      : `  Reintentá el empaquetado: la subida del release falló.`);
+    process.exit(1);
+  }
+}
 sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}`);
 
 // 4) esperar y descargar el mp4 final
