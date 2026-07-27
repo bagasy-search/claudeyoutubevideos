@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, Img, Sequence, staticFile, interpolate, useCurrentFrame } from "remotion";
-import { THEME_EARTH } from "./theme";
+import { THEME_ALARM, THEME_AMISH, THEME_EARTH, THEME_MEDICO, THEME_NATURE, type Theme } from "./theme";
 import { PremiumOverlay } from "../../scenes/PremiumOverlay";
 import { CtaCard, MythTruth, StampBadge } from "./frame";
 import { HighlightSweep, PullQuote } from "./text";
@@ -8,6 +8,15 @@ import { FlowSteps } from "./diagrams";
 import { BeforeAfter, VsDuel } from "./compare";
 import { ChecklistReveal, NumberedSteps } from "./lists";
 import { BigStatReveal } from "./stats";
+import {
+  BigNumber,
+  ChecklistCard,
+  CornerLabel,
+  PaperChart,
+  ParchmentCard,
+  QuoteCard,
+  SectionDiagram,
+} from "../../amish/AmishKit";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // StageProof — BANCO DE PRUEBAS de los componentes EN USO REAL.
@@ -189,7 +198,80 @@ export const CASES: Case[] = [
   },
 ];
 
-export const PROOF_FRAMES = CASES.length * PAGE;
+// ── Cobertura de THEMES y del camino STANDALONE ─────────────────────────────
+// El banco corría sólo THEME_EARTH y sólo con PremiumOverlay. Los otros nichos
+// (fauna, Amish, finanzas, Federer) usan el MISMO kit con otro theme, y la copia
+// `_fed6` lo monta SIN overlay. Esos dos ejes son donde se esconden los errores
+// de contraste: un theme oscuro invierte qué tinta se lee, y sin overlay nadie
+// declara la superficie.
+// ── KIT AMISH (modo faceless) — se monta SIN PremiumOverlay: cada componente
+//    trae su propio FilmWear y su pergamino, que es la firma del canal.
+const AMISH_CASES: { name: string; el: (d: number) => React.ReactNode }[] = [
+  {
+    name: "ParchmentCard",
+    el: (d) => (
+      <ParchmentCard
+        durationInFrames={d}
+        title="La bodega de raíces"
+        body="Cuatro metros bajo tierra la temperatura no se mueve: 12 grados todo el año, sin electricidad y sin una sola pieza móvil."
+        image={P1}
+      />
+    ),
+  },
+  { name: "BigNumber", el: (d) => <BigNumber durationInFrames={d} label="Temperatura del suelo" value="12°" sub="constante los doce meses, a cuatro metros de profundidad" /> },
+  {
+    name: "PaperChart",
+    el: (d) => (
+      <PaperChart
+        durationInFrames={d}
+        title="Cuánto dura cada cosa allá abajo"
+        unit=" meses"
+        rows={[
+          { label: "Papa", value: 8 },
+          { label: "Manzana", value: 6 },
+          { label: "Zanahoria", value: 5 },
+          { label: "Repollo", value: 3 },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "SectionDiagram",
+    el: (d) => (
+      <SectionDiagram
+        durationInFrames={d}
+        title="El corte, capa por capa"
+        image={P2}
+        steps={[
+          { text: "Tierra vegetal, 40 cm", tx: 0.24, ty: 0.22 },
+          { text: "Piedra suelta para drenar", tx: 0.74, ty: 0.44 },
+          { text: "Piso de tierra apisonada", tx: 0.3, ty: 0.78 },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "ChecklistCard",
+    el: (d) => (
+      <ChecklistCard
+        durationInFrames={d}
+        title="Antes de cavar"
+        items={["Buscá la napa: si está a menos de 3 m, cambiá de lugar", "Orientá la puerta al norte", "Dejá un respiradero arriba y otro abajo"]}
+      />
+    ),
+  },
+  { name: "CornerLabel", el: (d) => <CornerLabel durationInFrames={d} text="12 °C" sub="temperatura del suelo" corner="bl" /> },
+  { name: "QuoteCard", el: (d) => <QuoteCard durationInFrames={d} quote="Nadie construía una bodega para un invierno. Se construía para el invierno de los nietos." source="Manual de granja, 1904" /> },
+];
+
+const THEME_CASES: { name: string; theme: Theme; zone: Case["zone"]; standalone?: boolean }[] = [
+  { name: "NATURE (fauna)", theme: THEME_NATURE, zone: "topLeft" },
+  { name: "AMISH", theme: THEME_AMISH, zone: "top" },
+  { name: "ALARM (finanzas)", theme: THEME_ALARM, zone: "left" },
+  { name: "MEDICO · SIN overlay", theme: THEME_MEDICO, zone: "topLeft", standalone: true },
+];
+
+export const PROOF_FRAMES = (CASES.length + THEME_CASES.length + AMISH_CASES.length) * PAGE;
 
 /** plate de b-roll con un push lento, como el beat real de video */
 const Plate: React.FC<{ src: string }> = ({ src }) => {
@@ -205,33 +287,83 @@ const Plate: React.FC<{ src: string }> = ({ src }) => {
   );
 };
 
+const Label: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <div
+    style={{
+      position: "absolute",
+      left: 16,
+      bottom: 14,
+      background: "rgba(0,0,0,0.8)",
+      color: "#fff",
+      fontFamily: "Arial, sans-serif",
+      fontWeight: 700,
+      fontSize: 22,
+      padding: "6px 16px",
+      borderRadius: 7,
+    }}
+  >
+    {children}
+  </div>
+);
+
+/** el mismo componente en los 4 themes, para comparar contraste de una pasada */
+const ThemeCase: React.FC<{ tc: (typeof THEME_CASES)[number] }> = ({ tc }) => {
+  const el = (
+    <ChecklistReveal
+      durationInFrames={PAGE}
+      theme={tc.theme}
+      title="Encima o adentro: así lo sabés"
+      items={["Comprobá el tiempo completo", "Aclaró y se siente firme", "No cambió: está adentro"]}
+      stamp="Sin adivinar"
+    />
+  );
+  return (
+    <>
+      <Plate src={PLATE} />
+      {tc.standalone ? (
+        // SIN PremiumOverlay: es como lo monta la copia _fed6 (canal Federer).
+        // Acá nadie declara la superficie ni trata el fondo → lo tiene que
+        // resolver el propio Panel.
+        el
+      ) : (
+        <PremiumOverlay durationInFrames={PAGE} zone={tc.zone} theme={tc.theme}>
+          {el}
+        </PremiumOverlay>
+      )}
+      <Label>{tc.name}</Label>
+    </>
+  );
+};
+
 export const StageProof: React.FC = () => {
   const frame = useCurrentFrame();
-  const page = Math.min(CASES.length - 1, Math.floor(frame / PAGE));
-  const c = CASES[page];
+  const total = CASES.length + THEME_CASES.length + AMISH_CASES.length;
+  const page = Math.min(total - 1, Math.floor(frame / PAGE));
+  const isTheme = page >= CASES.length && page < CASES.length + THEME_CASES.length;
+  const isAmish = page >= CASES.length + THEME_CASES.length;
+  const c = CASES[Math.min(page, CASES.length - 1)];
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       <Sequence key={page} from={page * PAGE} durationInFrames={PAGE}>
-        <Plate src={PLATE} />
-        <PremiumOverlay durationInFrames={PAGE} zone={c.zone} theme={THEME_EARTH}>
-          {c.el(PAGE)}
-        </PremiumOverlay>
-        <div
-          style={{
-            position: "absolute",
-            left: 16,
-            bottom: 14,
-            background: "rgba(0,0,0,0.8)",
-            color: "#fff",
-            fontFamily: "Arial, sans-serif",
-            fontWeight: 700,
-            fontSize: 22,
-            padding: "6px 16px",
-            borderRadius: 7,
-          }}
-        >
-          {c.name} · zone={c.zone}
-        </div>
+        {isAmish ? (
+          <>
+            <Plate src={PLATE} />
+            {AMISH_CASES[page - CASES.length - THEME_CASES.length].el(PAGE)}
+            <Label>AMISH · {AMISH_CASES[page - CASES.length - THEME_CASES.length].name}</Label>
+          </>
+        ) : isTheme ? (
+          <ThemeCase tc={THEME_CASES[page - CASES.length]} />
+        ) : (
+          <>
+            <Plate src={PLATE} />
+            <PremiumOverlay durationInFrames={PAGE} zone={c.zone} theme={THEME_EARTH}>
+              {c.el(PAGE)}
+            </PremiumOverlay>
+            <Label>
+              {c.name} · zone={c.zone}
+            </Label>
+          </>
+        )}
       </Sequence>
     </AbsoluteFill>
   );

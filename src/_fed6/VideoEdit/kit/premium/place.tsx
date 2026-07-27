@@ -197,7 +197,7 @@ export const MapPinPoint: React.FC<{
             <Display theme={t} size={46}>{place}</Display>
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 6 }}>
               <div style={{ width: 26, height: 3, background: t.color.gold }} />
-              <Support theme={t} size={26} color={t.color.textDim}>{region}</Support>
+              <Support theme={t} size={26}>{region}</Support>
             </div>
           </Card>
         </div>
@@ -313,7 +313,7 @@ export const DateStampCorner: React.FC<{
             </div>
           </div>
           <div style={{ opacity: placeS, transform: `translateX(${(1 - placeS) * -12}px)`, marginTop: 6, marginLeft: 30 }}>
-            <Support theme={t} size={28} color={t.color.textSoft}>{place}</Support>
+            <Support theme={t} size={28}>{place}</Support>
           </div>
         </Card>
       </div>

@@ -13,7 +13,7 @@ import {
 const asset = (s: string) =>
   /^(https?:|data:|blob:|\/)/.test(s) ? s : staticFile(s);
 import { SPR, Theme, useTheme } from "./theme";
-import { Cinema, OnPaper, slabShadow, specular, tilt3d, useInk, useKeyLight, useStage } from "./stagecraft";
+import { Cinema, OnFootage, OnPaper, slabShadow, specular, tilt3d, useInk, useKeyLight, useStage } from "./stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // PREMIUM KIT — CORE: primitivas compartidas por todas las familias.
@@ -251,7 +251,15 @@ export const Panel: React.FC<{
           />
         </div>
       )}
-      <div style={{ position: "absolute", inset: 0 }}>{children}</div>
+      {/* El Panel YA NO pinta papel en ningún modo → todo lo que cuelga de él
+          está apoyado sobre el b-roll graduado. Hay que declararlo: sin esto,
+          el camino STANDALONE (componentes usados sin PremiumOverlay, p.ej. la
+          copia _fed6 del canal Federer y la Gallery) hereda el default "paper"
+          y renderiza tinta casi negra sobre fondo oscuro. Cada Card vuelve a
+          "paper" para su interior. */}
+      <div style={{ position: "absolute", inset: 0 }}>
+        <OnFootage>{children}</OnFootage>
+      </div>
     </div>
   );
 };

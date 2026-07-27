@@ -15,6 +15,7 @@ import {
   spread,
   useBeat,
 } from "./core";
+import { Cinema, Column, OnPaper, autoSize, useDrift, useInk } from "./stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // FAMILIA: TEXTO / ÉNFASIS — HookCaption · PullQuote · KaraokePhrase ·
@@ -80,7 +81,7 @@ export const HookCaption: React.FC<{
           </div>
           {sub && (
             <div style={{ marginTop: 46, opacity: subS, transform: `translateY(${(1 - subS) * 16}px)` }}>
-              <Support theme={t} size={40} color={t.color.textSoft}>{sub}</Support>
+              <Support theme={t} size={40}>{sub}</Support>
             </div>
           )}
         </div>
@@ -100,72 +101,117 @@ export const PullQuote: React.FC<{
 }> = ({
   durationInFrames,
   theme,
-  quote = "Los viejos no tiraban nada porque sabían exactamente cuánto costaba reponerlo.",
+  quote = "",
   author,
   role,
   image,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
-  const qS = kick(frame, fps, 6, SPR.settle);
-  const portS = kick(frame, fps, 14, SPR.settle);
-  const authS = kick(frame, fps, 30, SPR.snappy);
-  const markS = kick(frame, fps, 2, SPR.pop);
+  // ★ REESCRITO (jul 2026). Antes: cita de 58px centrada dentro de una tarjeta
+  // crema, con el retrato al lado y el b-roll tapado — un slide de PowerPoint.
+  // Ahora: COLUMNA de papel a la izquierda con canto vivo, la cita en grande,
+  // y el retrato CRUZANDO ese canto (mitad sobre el papel, mitad sobre el
+  // b-roll). Ese cruce de capas es lo que da sensación de plano compuesto.
+  const COL_W = image ? 1180 : 1260;
+  const qS = kick(frame, fps, 10, SPR.settle);
+  const portS = kick(frame, fps, 18, SPR.settle);
+  const authS = kick(frame, fps, 34, SPR.snappy);
+  const markS = kick(frame, fps, 4, SPR.pop);
+  const drift = useDrift(0.35, 4);
+  const qSize = autoSize(quote, 74, 96, 46);
+  const PR = 210; // radio del retrato
+
   return (
     <Stage theme={t} style={{ opacity: op }}>
-      <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={20}>
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", gap: 90, padding: "0 130px" }}>
-          {/* retrato con doble anillo + rim */}
-          <div style={{ position: "relative", flexShrink: 0, opacity: portS, transform: `scale(${0.85 + portS * 0.15})` }}>
-            <div
-              style={{
-                width: 380,
-                height: 380,
-                borderRadius: "50%",
-                overflow: "hidden",
-                border: `7px solid ${t.color.gold}`,
-                boxShadow: `0 30px 60px ${t.color.shadow}, 0 0 60px ${t.color.glow}`,
-              }}
-            >
-              <ImgOr src={image} seed={77} theme={t} />
-            </div>
-            <div style={{ position: "absolute", inset: -18, borderRadius: "50%", border: `2px dashed ${t.color.line}` }} />
+      <Cinema theme={t} durationInFrames={durationInFrames} side="left" paper={0} grade={1} blur={26} shaftsX={74}>
+        <Column theme={t} width={COL_W} at={2} />
+
+        <OnPaper>
+        {/* L8 — la cita. El ancho RESERVA el hueco del retrato: si el texto
+            llegara hasta el canto del papel, el círculo le caería encima
+            (pasaba con "…contra el moho" tapado por el retrato). */}
+        <div
+          style={{
+            position: "absolute",
+            left: 128,
+            top: 0,
+            bottom: 0,
+            width: image ? COL_W - PR - 120 : COL_W - 240,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
+          {/* comilla gigante = capa profunda detrás del texto */}
+          <div
+            style={{
+              position: "absolute",
+              top: -128,
+              left: -30,
+              fontFamily: t.fontDisplay,
+              fontSize: 300,
+              lineHeight: 1,
+              color: t.color.gold,
+              opacity: 0.3 * markS,
+              transform: `scale(${markS}) translate(${drift.x * 0.5}px, ${drift.y * 0.5}px)`,
+              pointerEvents: "none",
+            }}
+          >
+            &ldquo;
           </div>
-          <div style={{ position: "relative", maxWidth: 900 }}>
-            {/* comilla gigante de fondo */}
-            <div
-              style={{
-                position: "absolute",
-                top: -130,
-                left: -60,
-                fontFamily: t.fontDisplay,
-                fontSize: 300,
-                lineHeight: 1,
-                color: t.color.accent,
-                opacity: 0.22 * markS,
-                transform: `scale(${markS})`,
-                pointerEvents: "none",
-              }}
+          <div style={{ opacity: qS, transform: `translateY(${(1 - qS) * 28}px)` }}>
+            <Display
+              theme={t}
+              size={qSize}
+              style={{ fontStyle: t.name === "alarm" ? "normal" : "italic", fontWeight: 600, lineHeight: 1.24 }}
             >
-              &ldquo;
-            </div>
-            <div style={{ opacity: qS, transform: `translateY(${(1 - qS) * 24}px)` }}>
-              <Display theme={t} size={58} style={{ fontStyle: t.name === "alarm" ? "normal" : "italic", fontWeight: 600, lineHeight: 1.25 }}>
-                {quote}
-              </Display>
-            </div>
-            {author && (
-              <div style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 36, opacity: authS, transform: `translateX(${(1 - authS) * -20}px)` }}>
-                <div style={{ width: 64, height: 4, background: t.color.gold, borderRadius: 2 }} />
-                <div>
-                  <Display theme={t} size={36} color={t.color.gold}>{author}</Display>
-                  {role && <Support theme={t} size={25} color={t.color.textDim}>{role}</Support>}
-                </div>
+              {quote}
+            </Display>
+          </div>
+          {author && (
+            <div style={{ display: "flex", alignItems: "center", gap: 24, marginTop: 52, opacity: authS, transform: `translateX(${(1 - authS) * -24}px)` }}>
+              <div style={{ width: 84, height: 5, background: t.color.gold, borderRadius: 3, boxShadow: `0 0 20px ${t.color.gold}77` }} />
+              <div>
+                <Display theme={t} size={46} color={t.color.gold}>{author}</Display>
+                {role && <Support theme={t} size={30} style={{ marginTop: 2 }}>{role}</Support>}
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
-      </Panel>
+
+        </OnPaper>
+
+        {/* L7 — retrato pisando el canto del papel (mitad papel / mitad b-roll) */}
+        {image && (
+          <div
+            style={{
+              position: "absolute",
+              left: COL_W - PR,
+              top: 540 - PR,
+              opacity: portS,
+              transform: `scale(${0.86 + portS * 0.14}) translate(${drift.x}px, ${drift.y}px)`,
+            }}
+          >
+            <div style={{ position: "relative", width: PR * 2, height: PR * 2 }}>
+              <div style={{ position: "absolute", inset: -26, borderRadius: "50%", border: `2px dashed ${t.color.gold}`, opacity: 0.42 }} />
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  border: `8px solid ${t.color.gold}`,
+                  boxShadow: `0 40px 80px ${t.color.shadow}, 0 12px 26px ${t.color.shadow}, 0 0 70px ${t.color.glow}`,
+                }}
+              >
+                <ImgOr src={image} seed={77} theme={t} />
+                <div style={{ position: "absolute", inset: 0, borderRadius: "50%", background: "linear-gradient(150deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 44%)" }} />
+              </div>
+            </div>
+          </div>
+        )}
+      </Cinema>
     </Stage>
   );
 };
@@ -243,6 +289,7 @@ export const HighlightSweep: React.FC<{
   note = "cláusula 14, letra chica",
 }) => {
   const t = useTheme(theme);
+  const ink = useInk(t);
   const { frame, fps, op } = useBeat(durationInFrames);
   const enterS = kick(frame, fps, 4, SPR.settle);
   const sweep = interpolate(frame, [22, 44], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -251,8 +298,8 @@ export const HighlightSweep: React.FC<{
     <Stage theme={t} style={{ opacity: op }}>
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={70}>
         <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "0 150px", textAlign: "center" }}>
-          <div style={{ opacity: enterS, transform: `translateY(${(1 - enterS) * 26}px)`, fontFamily: t.fontDisplay, fontWeight: t.displayWeight, fontSize: 84, lineHeight: 1.28, color: t.color.text }}>
-            <span style={{ color: t.color.textSoft, fontWeight: 500 }}>{pre} </span>
+          <div style={{ opacity: enterS, transform: `translateY(${(1 - enterS) * 26}px)`, fontFamily: t.fontDisplay, fontWeight: t.displayWeight, fontSize: 84, lineHeight: 1.28, color: ink.text, textShadow: ink.shadowStrong }}>
+            <span style={{ color: ink.soft, fontWeight: 500 }}>{pre} </span>
             <span style={{ position: "relative", display: "inline-block" }}>
               {/* trazo marcador con borde irregular (skew + radius asimétrico) */}
               <span
@@ -271,12 +318,12 @@ export const HighlightSweep: React.FC<{
               />
               <span style={{ position: "relative", color: sweep > 0.4 ? t.color.onAccent : t.color.text }}>{highlight}</span>
             </span>
-            <span style={{ color: t.color.textSoft, fontWeight: 500 }}>{post}</span>
+            <span style={{ color: ink.soft, fontWeight: 500 }}>{post}</span>
           </div>
           {note && (
             <div style={{ marginTop: 56, opacity: noteS, transform: `translateY(${(1 - noteS) * 14}px)` }}>
               <Card theme={t} style={{ padding: "12px 34px", display: "inline-block" }}>
-                <Support theme={t} size={27} color={t.color.textDim}>{note}</Support>
+                <Support theme={t} size={27}>{note}</Support>
               </Card>
             </div>
           )}

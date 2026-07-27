@@ -18,6 +18,7 @@ import {
   kick,
   useBeat,
 } from "./core";
+import { Cinema, autoSize, useDrift } from "./stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // FAMILIA: MARCO / IDENTIDAD — CornerEyebrow · ChapterTitle · LowerThirdId ·
@@ -102,7 +103,7 @@ export const ChapterTitle: React.FC<{
           </div>
           {sub && (
             <div style={{ opacity: subS, transform: `translateY(${(1 - subS) * 18}px)`, marginTop: 26 }}>
-              <Support theme={t} size={38} color={t.color.textSoft}>{sub}</Support>
+              <Support theme={t} size={38}>{sub}</Support>
             </div>
           )}
         </div>
@@ -154,7 +155,7 @@ export const LowerThirdId: React.FC<{
             <div style={{ overflow: "hidden", marginTop: 4 }}>
               <div style={{ opacity: roleS, transform: `translateY(${(1 - roleS) * 40}px)` }}>
                 <Card theme={t} style={{ display: "inline-block", padding: "8px 22px" }}>
-                  <Support theme={t} size={26} color={t.color.textSoft}>{role}</Support>
+                  <Support theme={t} size={26}>{role}</Support>
                 </Card>
               </div>
             </div>
@@ -226,7 +227,7 @@ export const CtaCard: React.FC<{
               </div>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 44, marginTop: 40 }}>
-              <Odo theme={t} value={price} prefix="$" size={110} color={t.color.gold} at={22} dur={40} grouped={false} />
+              {price > 0 && <Odo theme={t} value={price} prefix="$" size={110} color={t.color.gold} at={22} dur={40} grouped={false} />}
               <div
                 style={{
                   opacity: ctaS,
@@ -266,62 +267,124 @@ export const StampBadge: React.FC<{
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const col = color ?? t.color.danger;
+  // ★ REESCRITO (jul 2026). Antes: el sello caía sobre la tarjeta crema del
+  // overlay (a 0.69 de escala → chico y sin peso), el <Burst> estaba anclado
+  // con inset:0 y tamaño fijo, así que el polvo salía del ÁNGULO del sello en
+  // vez del centro, y la textura de gastado se estiraba a un viewBox 100x100.
+  // Ahora golpea SOBRE el b-roll: onda expansiva, oscurecimiento de impacto,
+  // polvo centrado y punch de escala (sin temblor de cámara — regla del canal).
   const AT = 8;
   const s = kick(frame, fps, AT, SPR.slam);
-  const scale = 1.8 - s * 0.8; // cae desde grande
+  const hit = interpolate(frame - AT, [0, 4, 16], [0, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const ring = interpolate(frame - AT, [2, 30], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const settle = 1 + Math.sin(Math.max(0, frame - AT) / 26) * 0.006; // respira, no queda clavado
+  const scale = (1.75 - s * 0.75) * settle;
+  const drift = useDrift(0.3, 8);
+  const tSize = autoSize(text, 132, 10, 74);
+
   return (
     <Stage theme={t} style={{ opacity: op }}>
-      <div
-        style={{
-          position: "absolute",
-          left: `${x * 100}%`,
-          top: `${y * 100}%`,
-          transform: `translate(-50%, -50%) rotate(-11deg) scale(${scale})`,
-          opacity: Math.min(1, s * 2.4),
-        }}
-      >
-        <div style={{ position: "relative" }}>
-          <Burst at={AT + 4} color={col} size={420} count={18} />
-          <div
-            style={{
-              border: `9px solid ${col}`,
-              borderRadius: 22,
-              padding: "22px 54px",
-              textAlign: "center",
-              background: `${t.color.surface}`,
-              boxShadow: `0 24px 50px ${t.color.shadow}, inset 0 0 0 3px ${t.color.surfaceStrong}, inset 0 0 30px ${col}22`,
-            }}
-          >
+      <Cinema theme={t} durationInFrames={durationInFrames} side="center" paper={0} grade={0.72} blur={18} shaftsX={30} dust={26}>
+        {/* L2b — oscurecimiento de impacto: el frame "acusa" el golpe */}
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: `radial-gradient(60% 60% at ${x * 100}% ${y * 100}%, rgba(0,0,0,0) 30%, rgba(0,0,0,${0.42 * hit}) 100%)`,
+            pointerEvents: "none",
+          }}
+        />
+        {/* L7b — onda expansiva sobre el b-roll */}
+        <div
+          style={{
+            position: "absolute",
+            left: `${x * 100}%`,
+            top: `${y * 100}%`,
+            width: 300 + ring * 1500,
+            height: 300 + ring * 1500,
+            marginLeft: -(150 + ring * 750),
+            marginTop: -(150 + ring * 750),
+            borderRadius: "50%",
+            border: `${Math.max(0, 10 - ring * 9)}px solid ${col}`,
+            opacity: (1 - ring) * 0.5,
+            pointerEvents: "none",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            left: `${x * 100}%`,
+            top: `${y * 100}%`,
+            transform: `translate(-50%, -50%) rotate(-9deg) scale(${scale}) translate(${drift.x * 0.5}px, ${drift.y * 0.5}px)`,
+            opacity: Math.min(1, s * 2.4),
+          }}
+        >
+          <div style={{ position: "relative", padding: 60 }}>
+            {/* polvo CENTRADO en el sello (antes salía del ángulo) */}
+            <div style={{ position: "absolute", left: "50%", top: "50%", width: 620, height: 620, marginLeft: -310, marginTop: -310 }}>
+              <Burst at={AT + 3} color={col} size={620} count={24} />
+            </div>
             <div
               style={{
-                fontFamily: t.fontLabel,
-                fontWeight: 900,
-                fontSize: 92,
-                letterSpacing: 6,
-                textTransform: "uppercase",
-                color: col,
-                lineHeight: 1,
-                textShadow: `0 2px 0 ${col}44`,
+                position: "relative",
+                border: `11px solid ${col}`,
+                borderRadius: 26,
+                padding: "30px 68px",
+                textAlign: "center",
+                background: t.color.surfaceStrong,
+                boxShadow: `0 40px 90px ${t.color.shadow}, 0 14px 30px ${t.color.shadow}, inset 0 0 0 4px ${t.color.surfaceStrong}, inset 0 0 40px ${col}2A`,
+                overflow: "hidden",
               }}
             >
-              {text}
-            </div>
-            {sub && (
-              <div style={{ fontFamily: t.fontLabel, fontWeight: 700, fontSize: 34, letterSpacing: 3, textTransform: "uppercase", color: t.color.textSoft, marginTop: 8 }}>
-                {sub}
+              {/* tinta gastada del sello, DENTRO del box y a escala real */}
+              <svg
+                width="100%"
+                height="100%"
+                style={{ position: "absolute", inset: 0, mixBlendMode: t.mode === "dark" ? "multiply" : "screen", opacity: 0.42, pointerEvents: "none" }}
+              >
+                <filter id="pxstampwear">
+                  <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves={3} seed={11} stitchTiles="stitch" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.7 0" />
+                </filter>
+                <rect width="100%" height="100%" filter="url(#pxstampwear)" />
+              </svg>
+              <div
+                style={{
+                  position: "relative",
+                  fontFamily: t.fontLabel,
+                  fontWeight: 900,
+                  fontSize: tSize,
+                  letterSpacing: 7,
+                  textTransform: "uppercase",
+                  color: col,
+                  lineHeight: 1,
+                  textShadow: `0 3px 0 ${col}3A`,
+                }}
+              >
+                {text}
               </div>
-            )}
+              {sub && (
+                <div
+                  style={{
+                    position: "relative",
+                    fontFamily: t.fontLabel,
+                    fontWeight: 700,
+                    fontSize: Math.max(30, tSize * 0.31),
+                    letterSpacing: 4,
+                    textTransform: "uppercase",
+                    color: t.color.textSoft,
+                    marginTop: 12,
+                    borderTop: `2px solid ${col}44`,
+                    paddingTop: 12,
+                  }}
+                >
+                  {sub}
+                </div>
+              )}
+            </div>
           </div>
-          {/* muescas de sello gastado */}
-          <svg viewBox="0 0 100 100" width="100%" height="100%" style={{ position: "absolute", inset: 0, mixBlendMode: t.mode === "dark" ? "multiply" : "screen", opacity: 0.5, pointerEvents: "none" }}>
-            <filter id="stampwear">
-              <feTurbulence type="fractalNoise" baseFrequency="0.55" numOctaves={2} seed={11} />
-              <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.55 0" />
-            </filter>
-            <rect width={100} height={100} filter="url(#stampwear)" />
-          </svg>
         </div>
-      </div>
+      </Cinema>
     </Stage>
   );
 };
@@ -337,7 +400,9 @@ export const MythTruth: React.FC<{
   const { frame, fps, op } = useBeat(durationInFrames);
   const mythS = kick(frame, fps, 6, SPR.settle);
   const strikeAt = 26;
-  const dim = interpolate(frame, [strikeAt + 6, strikeAt + 22], [1, 0.45], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // piso 0.66: con la Card de vidrio sobre fondo oscuro, 0.45 dejaba el mito
+  // ilegible (hay que poder LEER lo que se tacha).
+  const dim = interpolate(frame, [strikeAt + 6, strikeAt + 22], [1, 0.66], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const truthS = kick(frame, fps, strikeAt + 18, SPR.slam);
   return (
     <Stage theme={t} style={{ opacity: op }}>
