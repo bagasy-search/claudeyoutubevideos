@@ -24,6 +24,18 @@ for (let k = 0; k < 8; k++) {
 }
 console.log(`plan: ${plan.size}/${moments.length} momentos dirigidos`);
 
+// ── clips RECHAZADOS por el auditor visual → pasan a imagen generada a medida ──
+const rechazados = fs.existsSync(`_v3/${SLUG}_clips_rechazados.json`)
+  ? new Set(JSON.parse(fs.readFileSync(`_v3/${SLUG}_clips_rechazados.json`, "utf8").replace(/^﻿/, ""))) : new Set();
+const promptsFix = fs.existsSync("_v3/dir/prompts_reemplazo.json")
+  ? Object.fromEntries(JSON.parse(fs.readFileSync("_v3/dir/prompts_reemplazo.json", "utf8").replace(/^﻿/, "")).map((p) => [p.name, p.prompt])) : {};
+let nFix = 0;
+for (const [idx, e] of plan) {
+  const nm = e.name || `${SLUG}_s_${String(idx).padStart(3, "0")}`;
+  if (e.kind === "clip" && rechazados.has(nm)) { e.kind = "img"; e.prompt = promptsFix[nm] || e.prompt; e.ref = false; nFix++; }
+}
+if (nFix) console.log(`clips off-topic reemplazados por imagen: ${nFix}`);
+
 // ── alias comp → kind de beatsheet.mjs ────────────────────────────────────────
 const KIND = {
   stat: "stat", statbig: "stat",
@@ -192,6 +204,8 @@ for (const b of rawBeats) b.dur = +Math.max(1.0, nextMark(b.start) - b.start + 0
 for (const b of compBeats) {
   if (b.overlay) b.dur = +Math.min(6.5, Math.max(2.6, nextMark(b.start - 0.25) - b.start + 0.2)).toFixed(2);
   else b.dur = +Math.max(2.2, nextMark(b.start) - b.start + 0.3).toFixed(2);
+  // AlertWipe es un BARRIDO, no una placa: estirado queda una banda roja quieta.
+  if (b.kind === "alertwipe") b.dur = +Math.min(2.6, Math.max(1.8, b.dur)).toFixed(2);
 }
 
 // autorrelleno de imagen para los componentes que la necesitan (la del momento MAS CERCANO)

@@ -24,10 +24,9 @@
    "id": "vxsag2ipph2js_s_004",
    "start": 23.48,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_004.mp4",
+   "src": "img/vxsag2ipph2js_s_004.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.94
   },
   {
@@ -301,10 +300,9 @@
    "id": "vxsag2ipph2js_s_021",
    "start": 100.62,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_021.mp4",
+   "src": "img/vxsag2ipph2js_s_021.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 6.72
   },
   {
@@ -341,7 +339,7 @@
    "start": 113.3,
    "kind": "alertwipe",
    "text": "Adentro hay algo que sigue vivo",
-   "dur": 6.76
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_024",
@@ -511,10 +509,9 @@
    "id": "vxsag2ipph2js_s_033",
    "start": 158.5,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_033.mp4",
+   "src": "img/vxsag2ipph2js_s_033.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.24
   },
   {
@@ -728,10 +725,9 @@
    "id": "vxsag2ipph2js_s_046",
    "start": 214.02,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_046.mp4",
+   "src": "img/vxsag2ipph2js_s_046.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.32
   },
   {
@@ -783,10 +779,9 @@
    "id": "vxsag2ipph2js_s_049",
    "start": 222.58,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_049.mp4",
+   "src": "img/vxsag2ipph2js_s_049.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 5.12
   },
   {
@@ -881,7 +876,7 @@
    "start": 243.7,
    "kind": "alertwipe",
    "text": "Alta tensión: eso no lo abres tú",
-   "dur": 3.78
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_055",
@@ -1302,7 +1297,7 @@
    "start": 372.7,
    "kind": "alertwipe",
    "text": "Salmonela y hantavirus",
-   "dur": 6.8
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_082",
@@ -1560,7 +1555,7 @@
    "kind": "alertwipe",
    "overlay": true,
    "text": "Solo con el aparato desconectado",
-   "dur": 4.51
+   "dur": 2.6
   },
   {
    "id": "c_rule_96",
@@ -1690,10 +1685,9 @@
    "id": "vxsag2ipph2js_s_104",
    "start": 469,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_104.mp4",
+   "src": "img/vxsag2ipph2js_s_104.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 5.9
   },
   {
@@ -1772,10 +1766,9 @@
    "id": "vxsag2ipph2js_s_110",
    "start": 495.3,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_110.mp4",
+   "src": "img/vxsag2ipph2js_s_110.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 5.16
   },
   {
@@ -1889,10 +1882,9 @@
    "id": "vxsag2ipph2js_s_117",
    "start": 526.78,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_117.mp4",
+   "src": "img/vxsag2ipph2js_s_117.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.4
   },
   {
@@ -1980,10 +1972,9 @@
    "id": "vxsag2ipph2js_s_122",
    "start": 551.02,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_122.mp4",
+   "src": "img/vxsag2ipph2js_s_122.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 5.22
   },
   {
@@ -2058,7 +2049,7 @@
    "start": 579.62,
    "kind": "alertwipe",
    "text": "Quitar la carcasa no es un juego",
-   "dur": 6.9
+   "dur": 2.6
   },
   {
    "id": "c_numcard_130",
@@ -2083,10 +2074,9 @@
    "id": "vxsag2ipph2js_s_132",
    "start": 596.72,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_132.mp4",
+   "src": "img/vxsag2ipph2js_s_132.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.28
   },
   {
@@ -2137,10 +2127,9 @@
    "id": "vxsag2ipph2js_s_135",
    "start": 609.26,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_135.mp4",
+   "src": "img/vxsag2ipph2js_s_135.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.82
   },
   {
@@ -2429,7 +2418,7 @@
    "start": 691.42,
    "kind": "alertwipe",
    "text": "Tu llave grita su señal todo el tiempo",
-   "dur": 3.14
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_155",
@@ -2455,10 +2444,9 @@
    "id": "vxsag2ipph2js_s_156",
    "start": 700.42,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_156.mp4",
+   "src": "img/vxsag2ipph2js_s_156.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.98
   },
   {
@@ -2602,7 +2590,7 @@
    "kind": "alertwipe",
    "overlay": true,
    "text": "Solo con el microondas muerto y desconectado",
-   "dur": 4.63
+   "dur": 2.6
   },
   {
    "id": "c_splitlist_165",
@@ -2621,10 +2609,9 @@
    "id": "vxsag2ipph2js_s_167",
    "start": 752.84,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_167.mp4",
+   "src": "img/vxsag2ipph2js_s_167.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.26
   },
   {
@@ -2733,10 +2720,9 @@
    "id": "vxsag2ipph2js_s_174",
    "start": 787.02,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_174.mp4",
+   "src": "img/vxsag2ipph2js_s_174.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 6.78
   },
   {
@@ -2753,10 +2739,9 @@
    "id": "vxsag2ipph2js_s_175",
    "start": 793.5,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_175.mp4",
+   "src": "img/vxsag2ipph2js_s_175.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.8
   },
   {
@@ -2975,10 +2960,9 @@
    "id": "vxsag2ipph2js_s_188",
    "start": 849.34,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_188.mp4",
+   "src": "img/vxsag2ipph2js_s_188.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.42
   },
   {
@@ -3036,10 +3020,9 @@
    "id": "vxsag2ipph2js_s_191",
    "start": 864.34,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_191.mp4",
+   "src": "img/vxsag2ipph2js_s_191.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.46
   },
   {
@@ -3254,7 +3237,7 @@
    "start": 918.58,
    "kind": "alertwipe",
    "text": "Esa carga mata. No es un toque.",
-   "dur": 3.92
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_204",
@@ -3318,10 +3301,9 @@
    "id": "vxsag2ipph2js_s_209",
    "start": 943.36,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_209.mp4",
+   "src": "img/vxsag2ipph2js_s_209.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.6
   },
   {
@@ -3435,7 +3417,7 @@
    "start": 976.8,
    "kind": "alertwipe",
    "text": "Molida y respirada, es tóxica",
-   "dur": 3.92
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_218",
@@ -3553,7 +3535,7 @@
    "kind": "alertwipe",
    "overlay": true,
    "text": "No es a prueba de fuego",
-   "dur": 3.93
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_225",
@@ -3682,7 +3664,7 @@
    "kind": "alertwipe",
    "overlay": true,
    "text": "Oxidado en el piso: ese ya no",
-   "dur": 3.11
+   "dur": 2.6
   },
   {
    "id": "c_quote_231",
@@ -3707,16 +3689,15 @@
    "kind": "alertwipe",
    "overlay": true,
    "text": "Ese olor no se quita",
-   "dur": 6.09
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_234",
    "start": 1052.8,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_234.mp4",
+   "src": "img/vxsag2ipph2js_s_234.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.02
   },
   {
@@ -3985,7 +3966,7 @@
    "start": 1127.98,
    "kind": "alertwipe",
    "text": "Sellaste el agua adentro",
-   "dur": 5.26
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_251",
@@ -4143,10 +4124,9 @@
    "id": "vxsag2ipph2js_s_259",
    "start": 1164.38,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_259.mp4",
+   "src": "img/vxsag2ipph2js_s_259.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.32
   },
   {
@@ -4243,10 +4223,9 @@
    "id": "vxsag2ipph2js_s_267",
    "start": 1200.42,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_267.mp4",
+   "src": "img/vxsag2ipph2js_s_267.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 3.84
   },
   {
@@ -4321,7 +4300,7 @@
    "kind": "alertwipe",
    "overlay": true,
    "text": "Sin carcasa dan directo al mundo",
-   "dur": 6.39
+   "dur": 2.6
   },
   {
    "id": "vxsag2ipph2js_s_272",
@@ -4347,10 +4326,9 @@
    "id": "vxsag2ipph2js_s_274",
    "start": 1235.32,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_274.mp4",
+   "src": "img/vxsag2ipph2js_s_274.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 4.18
   },
   {
@@ -4396,10 +4374,9 @@
    "id": "vxsag2ipph2js_s_276",
    "start": 1242.24,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_276.mp4",
+   "src": "img/vxsag2ipph2js_s_276.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 5.1
   },
   {
@@ -4764,7 +4741,7 @@
    "start": 1313,
    "kind": "alertwipe",
    "text": "Si lo vas a abrir, no lo abras",
-   "dur": 4.78
+   "dur": 2.6
   },
   {
    "id": "c_blurreveal_296",
