@@ -91,6 +91,20 @@ if (cues.length) {
   R.dur_max = num(d[d.length - 1], 2);
   R.pct_mayor_3s = Math.round((100 * d.filter((x) => x > 3.001).length) / d.length);
   R.pct_mayor_5s = Math.round((100 * d.filter((x) => x > 5.001).length) / d.length); // el umbral que se exige de verdad
+  // ── RITMO: ¿varía o es un metrónomo? ────────────────────────────────────────────────────────
+  // El creador miró un video entregado y dijo "pone una imagen por segundo casi, cansa — a veces
+  // está bueno que la imagen dure un poco". Medido: mediana 3,00s y p90 4,22s, o sea que el 90% de
+  // los planos duraba lo mismo. El promedio no lo mostraba; la DISPERSIÓN sí.
+  // ritmo_iqr = p75/p25. Cerca de 1 = todos los planos iguales (metrónomo).
+  // OJO, sin umbral validado: el video que el creador eligió como el mejor da 1,47 y otro que le
+  // gustó menos da 1,77 — más dispersión NO es automáticamente mejor. Lo que sí separa al video del
+  // que se quejó es la MEDIANA (3,00 contra 3,60). Se reporta para mirar la tendencia, no para
+  // aprobar o rechazar: si alguna vez esto se convierte en compuerta, calibralo con más videos.
+  const q = (x) => d[Math.min(d.length - 1, Math.floor(d.length * x))];
+  R.dur_p25 = num(q(0.25), 2);
+  R.dur_p75 = num(q(0.75), 2);
+  R.ritmo_iqr = num(q(0.25) ? q(0.75) / q(0.25) : null, 2);
+  R.pct_respira = R.pct_mayor_5s; // planos que duran ≥5s: la regla pide ~20%
   const fin = Math.max(...cues.map((c) => c.s + c.d));
   R.duracion_s = num(fin, 0);
   // cobertura: cuánto del video tiene ALGO en pantalla (sin huecos)
