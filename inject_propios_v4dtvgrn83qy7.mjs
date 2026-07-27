@@ -10,6 +10,26 @@ let s = fs.readFileSync(CUES, "utf8");
 const MARK = "/* ── COMPONENTES PROPIOS v4dtvgrn83qy7 ── */";
 if (s.includes(MARK)) { console.log("ya inyectado — nada que hacer"); process.exit(0); }
 
+// 0) SWAP a las variantes en ESPAÑOL. Cinco componentes del kit traen texto hardcodeado en inglés
+//    (vienen de un video sobre hielo): "FROM ONE JANUARY CUT", "Ice that lasts into the fall",
+//    "Heat escapes to the cold sky", "JAN FEB MAR", "Why it barely melts", "Fierce fire"…
+//    En un documental en español eso es inusable, y salió en la cuadrícula de auditoría.
+//    Se cambia el import, no el componente compartido — los otros videos lo siguen usando igual.
+const SWAP = [
+  ["ColdRadiationSky", "RadSkyV4dt", "RadSky_v4dtvgrn83qy7"],
+  ["ColdCalendar", "ColdCalV4dt", "ColdCal_v4dtvgrn83qy7"],
+  ["WinterBank", "WinterBankV4dt", "WinterBank_v4dtvgrn83qy7"],
+  ["HeatSlowDiagram", "HeatSlowV4dt", "HeatSlow_v4dtvgrn83qy7"],
+  ["MassHeaterDiagram", "MassHeaterV4dt", "MassHeater_v4dtvgrn83qy7"],
+];
+let swaps = 0;
+for (const [viejo, nuevo, archivo] of SWAP) {
+  if (!s.includes(`<${viejo}`)) continue;
+  s = s.replace(new RegExp(`import \\{ ${viejo} \\} from "\\./scenes/${viejo}";`), `import { ${nuevo} } from "./scenes/${archivo}";`);
+  s = s.replace(new RegExp(`<${viejo}\\b`, "g"), () => { swaps++; return `<${nuevo}`; });
+}
+console.log(`componentes cambiados por su variante en español: ${swaps} usos`);
+
 // 1) imports
 const imports = `import { PotBurstV4dt } from "./scenes/PotBurst_v4dtvgrn83qy7";
 import { PotCutawayV4dt } from "./scenes/PotCutaway_v4dtvgrn83qy7";

@@ -81,10 +81,66 @@ const out3 = out2.map((ln) => {
 });
 console.log(`tallas traducidas: ${tallas} · identificadores entrecomillados: ${comillas} · accent booleanos quitados: ${quitados}`);
 
-fs.writeFileSync(CUES, out3.join("\n"));
+// 5) VALORES FUERA DE RANGO y listas demasiado largas — todo esto lo cazó la cuadrícula de auditoría:
+//    · hitAt es el instante del golpe DENTRO del beat (0.5-2.5 s). Un director puso 45 → el impacto
+//      nunca llega y en pantalla queda una barra naranja a medio dibujar.
+//    · una lista de 4 ítems no alcanza a revelarse entera en un beat de 5 s: se ven las casillas
+//      vacías. Se recorta a 3 (misma lección que ya dejó el video del sótano).
+let clamps = 0, podados = 0;
+const out4 = out3.map((ln) => {
+  if (!/^\s*\{ key: "/.test(ln)) return ln;
+  const durM = ln.match(/dur: ([\d.]+)/);
+  const dur = durM ? +durM[1] : 5;
+  return ln
+    .replace(/\bhitAt=\{([\d.]+)\}/g, (all, v) => {
+      const n = +v;
+      if (n >= 0.3 && n <= Math.max(1, dur - 1.5)) return all;
+      clamps++;
+      return `hitAt={${Math.min(1.6, Math.max(0.6, dur * 0.28)).toFixed(1)}}`;
+    })
+    .replace(/\b(items|chips|pills|tiles|cards|steps|bars)=\{(\[[^\]]*\])\}/g, (all, prop, arr) => {
+      let v; try { v = JSON.parse(arr); } catch { return all; }
+      if (!Array.isArray(v) || v.length <= 3) return all;
+      podados++;
+      return `${prop}={${JSON.stringify(v.slice(0, 3))}}`;
+    });
+});
+console.log(`hitAt fuera de rango corregidos: ${clamps} · listas podadas a 3 ítems: ${podados}`);
+
+// 6) DOS COMPONENTES GRANDES ENCIMA — se tapan y el cuadro queda ilegible. Los chicos (etiquetas de
+//    esquina, sellos, barridos) sí pueden convivir con uno grande, así que sólo se recorta cuando
+//    los DOS ocupan pantalla. Al primero se le acorta la duración hasta el arranque del segundo.
+const CHICOS = new Set(["phrasetag", "stattag", "metertag", "chapter", "verified", "steptrack",
+  "impstamp", "loctag", "nametag", "alertwipe", "callout", "float", "presenter"]);
+const idxOv = out4.findIndex((l) => l.includes("export const OVERLAYS"));
+const finOv = out4.findIndex((l, i) => i > idxOv && /^\];/.test(l));
+const filas = [];
+for (let i = idxOv + 1; i < finOv; i++) {
+  const m = out4[i].match(/\{ key: "([^"]+)", start: ([\d.]+), dur: ([\d.]+), kind: "([^"]+)"/);
+  if (m) filas.push({ i, t: +m[2], d: +m[3], kind: m[4] });
+}
+filas.sort((a, b) => a.t - b.t);
+let recortes = 0;
+for (let a = 0; a < filas.length; a++) {
+  if (CHICOS.has(filas[a].kind)) continue;
+  for (let b = a + 1; b < filas.length; b++) {
+    if (filas[b].t >= filas[a].t + filas[a].d) break;
+    if (CHICOS.has(filas[b].kind)) continue;
+    const nueva = +(filas[b].t - filas[a].t - 0.15).toFixed(2);
+    if (nueva >= 1.8 && nueva < filas[a].d) {
+      out4[filas[a].i] = out4[filas[a].i].replace(/dur: [\d.]+/, `dur: ${nueva}`);
+      filas[a].d = nueva;
+      recortes++;
+    }
+    break;
+  }
+}
+console.log(`solapes de componentes grandes recortados: ${recortes}`);
+
+fs.writeFileSync(CUES, out4.join("\n"));
 console.log(`image auto-rellenada con la toma más cercana: ${rellenados} · props borrados por no haber imagen cerca: ${borrados} · props numéricos enllavados: ${enllavados}`);
 
-const final = out2.join("\n");
+const final = out4.join("\n");
 const quedan = final.match(/=undefined/g);
 if (quedan) { console.error(`✖ quedaron ${quedan.length} =undefined`); process.exit(1); }
 // verificación real: que esbuild lo parsee (tsc NO ve este archivo y por eso el bug llegó al farm)
