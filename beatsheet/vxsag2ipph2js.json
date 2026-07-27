@@ -1,0 +1,5065 @@
+{
+ "video": "vxsag2ipph2js",
+ "avatar": "vxsag2ipph2js_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "vxsag2ipph2js_s_003",
+   "start": 16.96,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_003.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.82
+  },
+  {
+   "id": "o_keyphrase_3",
+   "start": 17.21,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Entraron por la esquina de abajo",
+   "dur": 6.47
+  },
+  {
+   "id": "vxsag2ipph2js_s_004",
+   "start": 23.48,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_004.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.94
+  },
+  {
+   "id": "o_stat_4",
+   "start": 23.73,
+   "kind": "stat",
+   "overlay": true,
+   "value": 40,
+   "suffix": " dólares",
+   "label": "Ese costal se tira completo",
+   "dur": 3.59
+  },
+  {
+   "id": "vxsag2ipph2js_s_005",
+   "start": 27.12,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_005.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.82
+  },
+  {
+   "id": "c_headline_6",
+   "start": 33.64,
+   "kind": "headline",
+   "eyebrow": "A metro y medio del costal",
+   "tokens": [
+    {
+     "t": "Ocho",
+     "hl": true
+    },
+    {
+     "t": "meses"
+    },
+    {
+     "t": "ahí"
+    },
+    {
+     "t": "parado"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "servía",
+     "hl": true
+    }
+   ],
+   "dur": 3.88
+  },
+  {
+   "id": "vxsag2ipph2js_s_007",
+   "start": 37.22,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_007.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.06
+  },
+  {
+   "id": "o_chips_7",
+   "start": 37.47,
+   "kind": "chips",
+   "overlay": true,
+   "chips": [
+    "Cerrado",
+    "Sin ratones",
+    "Sin un agujero"
+   ],
+   "dur": 3.71
+  },
+  {
+   "id": "vxsag2ipph2js_s_008",
+   "start": 40.98,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_008.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.5
+  },
+  {
+   "id": "c_blurreveal_9",
+   "start": 47.18,
+   "kind": "blurreveal",
+   "eyebrow": "Lo que te llevas de aquí",
+   "title": "Seis usos reales",
+   "dur": 4.06
+  },
+  {
+   "id": "vxsag2ipph2js_s_010",
+   "start": 50.94,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_010.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.36
+  },
+  {
+   "id": "o_splitlist_10",
+   "start": 51.19,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Lo que no vas a ver aquí",
+   "items": [
+    "Macetas pintadas",
+    "Trucos de foto",
+    "Cosas que juntan polvo"
+   ],
+   "cross": true,
+   "dur": 6.01
+  },
+  {
+   "id": "c_stat_12",
+   "start": 60.14,
+   "kind": "stat",
+   "eyebrow": "Entre 20 y 34",
+   "value": 34,
+   "suffix": " litros",
+   "label": "La cavidad de un microondas doméstico",
+   "dur": 5.58
+  },
+  {
+   "id": "vxsag2ipph2js_s_013",
+   "start": 65.42,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_013.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.42
+  },
+  {
+   "id": "vxsag2ipph2js_s_014",
+   "start": 71.54,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_014.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.88
+  },
+  {
+   "id": "o_callout_14",
+   "start": 71.79,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "Por ahí se mete",
+   "figure": "6 mm",
+   "caption": "El grosor de un lápiz",
+   "dur": 4.53
+  },
+  {
+   "id": "vxsag2ipph2js_s_015",
+   "start": 76.12,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_015.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.16
+  },
+  {
+   "id": "c_chips_16",
+   "start": 79.98,
+   "kind": "chips",
+   "title": "Sus dientes atraviesan",
+   "chips": [
+    "Madera",
+    "Plástico",
+    "Tabla roca",
+    "Aluminio"
+   ],
+   "dur": 4.32
+  },
+  {
+   "id": "vxsag2ipph2js_s_017",
+   "start": 84,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_017.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "o_keyphrase_17",
+   "start": 84.25,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Esa caja no la atraviesan",
+   "dur": 4.11
+  },
+  {
+   "id": "c_bars_18",
+   "start": 88.16,
+   "kind": "bars",
+   "title": "Una caja estanca del mismo volumen",
+   "eyebrow": "Comprada en la tienda",
+   "bars": [
+    {
+     "label": "Genérica",
+     "value": 40,
+     "display": "40 dls"
+    },
+    {
+     "label": "De marca",
+     "value": 120,
+     "display": "120 dls"
+    },
+    {
+     "label": "Tu microondas",
+     "value": 0,
+     "display": "0 dls"
+    }
+   ],
+   "dur": 5
+  },
+  {
+   "id": "vxsag2ipph2js_s_019",
+   "start": 92.86,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_019.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.56
+  },
+  {
+   "id": "o_headline_19",
+   "start": 93.11,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "En tu cochera",
+   "tokens": [
+    {
+     "t": "Ya"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "tienes",
+     "hl": true
+    }
+   ],
+   "dur": 3.21
+  },
+  {
+   "id": "c_checklist_20",
+   "start": 96.12,
+   "kind": "checklist",
+   "title": "Tres partes que casi nadie te dice",
+   "items": [
+    {
+     "text": "Los 30 segundos que lo cambian todo",
+     "state": "doing"
+    },
+    {
+     "text": "La pieza que te manda al hospital",
+     "state": "todo"
+    },
+    {
+     "text": "El error que arruina el 90 %",
+     "state": "todo"
+    }
+   ],
+   "dur": 4.8
+  },
+  {
+   "id": "vxsag2ipph2js_s_021",
+   "start": 100.62,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_021.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.72
+  },
+  {
+   "id": "o_stat_21",
+   "start": 100.87,
+   "kind": "stat",
+   "overlay": true,
+   "value": 30,
+   "suffix": " segundos",
+   "label": "Para saber si de verdad está muerto",
+   "dur": 6.37
+  },
+  {
+   "id": "vxsag2ipph2js_s_022",
+   "start": 107.04,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_022.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.56
+  },
+  {
+   "id": "o_callout_22",
+   "start": 107.29,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "Menos de",
+   "figure": "3 dls",
+   "caption": "A veces eso es todo lo que murió",
+   "dur": 6.21
+  },
+  {
+   "id": "c_alertwipe_23",
+   "start": 113.3,
+   "kind": "alertwipe",
+   "text": "Adentro hay algo que sigue vivo",
+   "dur": 6.76
+  },
+  {
+   "id": "vxsag2ipph2js_s_024",
+   "start": 119.76,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_024.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.94
+  },
+  {
+   "id": "o_keyphrase_24",
+   "start": 120.01,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Dos años desconectado",
+   "dur": 3.59
+  },
+  {
+   "id": "c_quote_25",
+   "start": 123.4,
+   "kind": "quote",
+   "eyebrow": "Tranquilo",
+   "text": "No vas a tener que *tocarla* si lo haces bien.",
+   "dur": 3.76
+  },
+  {
+   "id": "vxsag2ipph2js_s_026",
+   "start": 126.86,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_026.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.2
+  },
+  {
+   "id": "o_stat_26",
+   "start": 127.11,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "El error se lleva el",
+   "value": 90,
+   "suffix": " %",
+   "label": "De estas cajas terminan arruinadas",
+   "dur": 6.5
+  },
+  {
+   "id": "vxsag2ipph2js_s_027",
+   "start": 133.76,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_027.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.22
+  },
+  {
+   "id": "vxsag2ipph2js_s_028",
+   "start": 137.68,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_028.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.12
+  },
+  {
+   "id": "o_headline_28",
+   "start": 137.93,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Una"
+    },
+    {
+     "t": "máquina"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "oxidar",
+     "hl": true
+    }
+   ],
+   "dur": 4.77
+  },
+  {
+   "id": "vxsag2ipph2js_s_029",
+   "start": 142.5,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_029.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.68
+  },
+  {
+   "id": "o_keyphrase_29",
+   "start": 142.75,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Primero, el principio",
+   "dur": 4.33
+  },
+  {
+   "id": "c_chapter_30",
+   "start": 146.88,
+   "kind": "chapter",
+   "num": "1",
+   "title": "Lo que casi todos entienden mal",
+   "dur": 4.88
+  },
+  {
+   "id": "vxsag2ipph2js_s_031",
+   "start": 151.46,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_031.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "o_headline_31",
+   "start": 151.71,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "¿Un"
+    },
+    {
+     "t": "solo"
+    },
+    {
+     "t": "aparato?",
+     "hl": true
+    }
+   ],
+   "dur": 2.75
+  },
+  {
+   "id": "c_cross_32",
+   "start": 154.26,
+   "kind": "cross",
+   "eyebrow": "El principio",
+   "title": "Son dos cosas, una dentro de la otra",
+   "marker": "La carcasa es la que muere",
+   "layers": [
+    {
+     "label": "Carcasa: electrónica y ventilador",
+     "color": "#8a6b46"
+    },
+    {
+     "label": "Aire, tornillos y cables",
+     "color": "#b9a882"
+    },
+    {
+     "label": "Cavidad de acero soldado",
+     "color": "#cfd3d6"
+    }
+   ],
+   "dur": 4.54
+  },
+  {
+   "id": "vxsag2ipph2js_s_033",
+   "start": 158.5,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_033.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.24
+  },
+  {
+   "id": "vxsag2ipph2js_s_034",
+   "start": 162.44,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_034.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "o_splitlist_34",
+   "start": 162.69,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Esto es lo que muere",
+   "items": [
+    "La electrónica",
+    "El ventilador",
+    "El transformador"
+   ],
+   "cross": true,
+   "dur": 3.37
+  },
+  {
+   "id": "vxsag2ipph2js_s_035",
+   "start": 165.86,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_035.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "vxsag2ipph2js_s_036",
+   "start": 169.32,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_036.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "o_chips_36",
+   "start": 169.57,
+   "kind": "chips",
+   "overlay": true,
+   "title": "La cavidad",
+   "chips": [
+    "Lámina de acero",
+    "Doblada",
+    "Soldada"
+   ],
+   "dur": 4.03
+  },
+  {
+   "id": "vxsag2ipph2js_s_037",
+   "start": 173.4,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_037.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.58
+  },
+  {
+   "id": "o_headline_37",
+   "start": 173.65,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Que"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "escape"
+    },
+    {
+     "t": "nada",
+     "hl": true
+    }
+   ],
+   "dur": 5.23
+  },
+  {
+   "id": "vxsag2ipph2js_s_038",
+   "start": 178.68,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_038.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.62
+  },
+  {
+   "id": "o_keyphrase_38",
+   "start": 178.93,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Se construyó para contener energía",
+   "dur": 5.27
+  },
+  {
+   "id": "vxsag2ipph2js_s_039",
+   "start": 184,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_039.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.54
+  },
+  {
+   "id": "o_quote_39",
+   "start": 184.25,
+   "kind": "quote",
+   "overlay": true,
+   "eyebrow": "La puerta",
+   "text": "Esa presión rara que hace *clac*.",
+   "dur": 5.19
+  },
+  {
+   "id": "vxsag2ipph2js_s_040",
+   "start": 189.24,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_040.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "o_callout_40",
+   "start": 189.49,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "LA PUERTA",
+   "figure": "Malla",
+   "caption": "Aquí se detiene la onda",
+   "dur": 3.33
+  },
+  {
+   "id": "c_headline_41",
+   "start": 192.62,
+   "kind": "headline",
+   "eyebrow": "ENTIÉNDELO ASÍ",
+   "tokens": [
+    {
+     "t": "La",
+     "hl": false
+    },
+    {
+     "t": "caja",
+     "hl": true
+    },
+    {
+     "t": "no",
+     "hl": false
+    },
+    {
+     "t": "muere",
+     "hl": true
+    }
+   ],
+   "dur": 4.1
+  },
+  {
+   "id": "vxsag2ipph2js_s_042",
+   "start": 196.42,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_042.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.46
+  },
+  {
+   "id": "vxsag2ipph2js_s_043",
+   "start": 199.58,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_043.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.7
+  },
+  {
+   "id": "o_stat_43",
+   "start": 199.83,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "Y LA VAS A TIRAR",
+   "value": 100,
+   "suffix": " dólares",
+   "label": "lo que te cobran por esa caja en la tienda",
+   "dur": 6.35
+  },
+  {
+   "id": "c_chapter_45",
+   "start": 209.82,
+   "kind": "chapter",
+   "title": "Los 30 segundos antes de tirarlo",
+   "dur": 4.5
+  },
+  {
+   "id": "vxsag2ipph2js_s_046",
+   "start": 214.02,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_046.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.32
+  },
+  {
+   "id": "o_chips_46",
+   "start": 214.27,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Fíjate en tres cosas",
+   "chips": [
+    "¿Prende?",
+    "¿Calienta?",
+    "¿Zumba?"
+   ],
+   "dur": 2.97
+  },
+  {
+   "id": "vxsag2ipph2js_s_047",
+   "start": 217.04,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_047.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "o_countrail_47",
+   "start": 217.29,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 1,
+   "name": "No prende nada",
+   "total": 3,
+   "dur": 2.91
+  },
+  {
+   "id": "c_splitlist_48",
+   "start": 220,
+   "kind": "splitlist",
+   "title": "No prende nada",
+   "cross": true,
+   "items": [
+    "El reloj",
+    "La luz de adentro",
+    "El ventilador"
+   ],
+   "dur": 2.88
+  },
+  {
+   "id": "vxsag2ipph2js_s_049",
+   "start": 222.58,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_049.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.12
+  },
+  {
+   "id": "o_keyphrase_49",
+   "start": 222.83,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Fusible cerámico de la línea",
+   "dur": 4.77
+  },
+  {
+   "id": "vxsag2ipph2js_s_050",
+   "start": 227.4,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_050.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08
+  },
+  {
+   "id": "o_stat_50",
+   "start": 227.65,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "LO QUE MÁS FALLA",
+   "value": 3,
+   "suffix": " dólares",
+   "label": "un fusible cerámico nuevo",
+   "dur": 3.73
+  },
+  {
+   "id": "c_bars_51",
+   "start": 231.18,
+   "kind": "bars",
+   "eyebrow": "LO QUE CUESTA ARREGLARLO",
+   "title": "Las dos piezas que más fallan",
+   "bars": [
+    {
+     "label": "Fusible cerámico",
+     "value": 3,
+     "display": "3 dólares"
+    },
+    {
+     "label": "Microinterruptor de la puerta",
+     "value": 5,
+     "display": "5 dólares"
+    }
+   ],
+   "dur": 5.8
+  },
+  {
+   "id": "vxsag2ipph2js_s_052",
+   "start": 236.68,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_052.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.26
+  },
+  {
+   "id": "o_countrail_52",
+   "start": 236.93,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 2,
+   "name": "Prende pero sale fría",
+   "total": 3,
+   "dur": 3.91
+  },
+  {
+   "id": "vxsag2ipph2js_s_053",
+   "start": 240.64,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_053.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "o_callout_53",
+   "start": 240.89,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "SÍNTOMA 2",
+   "figure": "Fría",
+   "caption": "gira, se ilumina, y sale fría",
+   "dur": 3.01
+  },
+  {
+   "id": "c_alertwipe_54",
+   "start": 243.7,
+   "kind": "alertwipe",
+   "text": "Alta tensión: eso no lo abres tú",
+   "dur": 3.78
+  },
+  {
+   "id": "vxsag2ipph2js_s_055",
+   "start": 247.18,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_055.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.82
+  },
+  {
+   "id": "o_keyphrase_55",
+   "start": 247.43,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Pregunta antes de gastar",
+   "dur": 6.47
+  },
+  {
+   "id": "vxsag2ipph2js_s_056",
+   "start": 253.7,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_056.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.34
+  },
+  {
+   "id": "o_countrail_56",
+   "start": 253.95,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 3,
+   "name": "Zumba o huele a quemado",
+   "total": 3,
+   "dur": 4.99
+  },
+  {
+   "id": "c_rule_57",
+   "start": 258.74,
+   "kind": "rule",
+   "label": "REGLA",
+   "number": "01",
+   "title": "Si huele a quemado, ese ya no se abre",
+   "dur": 3.78
+  },
+  {
+   "id": "c_process_59",
+   "start": 267,
+   "kind": "process",
+   "eyebrow": "30 SEGUNDOS",
+   "title": "Los tres casos",
+   "steps": [
+    {
+     "title": "No prende nada",
+     "desc": "Casi siempre fusible o microinterruptor. Barato."
+    },
+    {
+     "title": "Prende y sale fría",
+     "desc": "Se fue algo del lado de alta tensión. Pregunta antes."
+    },
+    {
+     "title": "Zumba o huele a quemado",
+     "desc": "Ese ya no se abre. Se convierte en caja."
+    }
+   ],
+   "dur": 5.7
+  },
+  {
+   "id": "vxsag2ipph2js_s_060",
+   "start": 272.4,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_060.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.14
+  },
+  {
+   "id": "o_headline_60",
+   "start": 272.65,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "LO QUE TE DIJERON",
+   "tokens": [
+    {
+     "t": "No",
+     "hl": false
+    },
+    {
+     "t": "tiene",
+     "hl": false
+    },
+    {
+     "t": "arreglo",
+     "hl": true
+    }
+   ],
+   "dur": 5.79
+  },
+  {
+   "id": "c_quote_61",
+   "start": 278.24,
+   "kind": "quote",
+   "eyebrow": "TRADUCCIÓN",
+   "text": "«No tiene arreglo» es una frase de *vendedor*, no un diagnóstico.",
+   "dur": 4.02
+  },
+  {
+   "id": "c_blurreveal_62",
+   "start": 281.96,
+   "kind": "blurreveal",
+   "eyebrow": "EL ENEMIGO DE ESTE VIDEO",
+   "title": "Que «viejo» signifique «basura»",
+   "dur": 6.54
+  },
+  {
+   "id": "vxsag2ipph2js_s_063",
+   "start": 288.2,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_063.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "o_keyphrase_63",
+   "start": 288.45,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Viejo significa acero bueno",
+   "dur": 3.75
+  },
+  {
+   "id": "vxsag2ipph2js_s_064",
+   "start": 292,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_064.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.78
+  },
+  {
+   "id": "c_aged_65",
+   "start": 295.48,
+   "kind": "aged",
+   "eyebrow": "LO QUE TRAE EL MANUAL",
+   "heading": "El manual de tu microondas",
+   "lines": [
+    {
+     "text": "Cómo calentar palomitas"
+    },
+    {
+     "text": "No abrir la carcasa",
+     "mark": true
+    },
+    {
+     "text": "Llévelo a servicio autorizado",
+     "mark": true
+    },
+    {
+     "text": "Ni un solo diagrama",
+     "mark": true
+    }
+   ],
+   "dur": 5.9
+  },
+  {
+   "id": "vxsag2ipph2js_s_066",
+   "start": 301.08,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_066.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.38
+  },
+  {
+   "id": "o_keyphrase_66",
+   "start": 301.33,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Siempre la misma recomendación",
+   "dur": 5.03
+  },
+  {
+   "id": "vxsag2ipph2js_s_068",
+   "start": 310.28,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_068.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.38
+  },
+  {
+   "id": "vxsag2ipph2js_s_069",
+   "start": 314.36,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_069.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.5
+  },
+  {
+   "id": "o_stat_69",
+   "start": 314.61,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "EN EL MISMO PASILLO",
+   "value": 80,
+   "suffix": " dólares",
+   "label": "por una caja de plástico",
+   "dur": 6.15
+  },
+  {
+   "id": "vxsag2ipph2js_s_070",
+   "start": 320.56,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_070.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.66
+  },
+  {
+   "id": "o_chips_70",
+   "start": 320.81,
+   "kind": "chips",
+   "overlay": true,
+   "title": "El mismo pasillo",
+   "chips": [
+    "Caja: 80 dólares",
+    "Bolsita: 25 dólares",
+    "La tuya: gratis"
+   ],
+   "dur": 6.31
+  },
+  {
+   "id": "vxsag2ipph2js_s_071",
+   "start": 326.92,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_071.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.46
+  },
+  {
+   "id": "o_checklist_71",
+   "start": 327.17,
+   "kind": "checklist",
+   "overlay": true,
+   "eyebrow": "TE LOS DEJO ANOTADOS",
+   "title": "Los tres síntomas",
+   "items": [
+    {
+     "text": "No prende nada",
+     "state": "done"
+    },
+    {
+     "text": "Prende y sale fría",
+     "state": "done"
+    },
+    {
+     "text": "Zumba o huele a quemado",
+     "state": "done"
+    }
+   ],
+   "dur": 5.11
+  },
+  {
+   "id": "vxsag2ipph2js_s_072",
+   "start": 332.08,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_072.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "vxsag2ipph2js_s_074",
+   "start": 341.06,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_074.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "o_numcard_74",
+   "start": 341.31,
+   "kind": "numcard",
+   "overlay": true,
+   "eyebrow": "USO",
+   "number": "1",
+   "name": "La alacena a prueba de roedores",
+   "total": "6",
+   "dur": 3.53
+  },
+  {
+   "id": "vxsag2ipph2js_s_075",
+   "start": 344.64,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_075.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.38
+  },
+  {
+   "id": "vxsag2ipph2js_s_076",
+   "start": 349.72,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_076.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.24
+  },
+  {
+   "id": "o_chips_76",
+   "start": 349.97,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Lo primero que se pierde",
+   "chips": [
+    "Croquetas",
+    "Arroz",
+    "Frijol",
+    "Harina"
+   ],
+   "dur": 2.89
+  },
+  {
+   "id": "vxsag2ipph2js_s_077",
+   "start": 352.66,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_077.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.12
+  },
+  {
+   "id": "o_headline_77",
+   "start": 352.91,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "BOLSA DE PAPEL O PLÁSTICO DELGADO",
+   "tokens": [
+    {
+     "t": "Una",
+     "hl": false
+    },
+    {
+     "t": "invitación",
+     "hl": false
+    },
+    {
+     "t": "abierta",
+     "hl": true
+    }
+   ],
+   "dur": 4.77
+  },
+  {
+   "id": "vxsag2ipph2js_s_078",
+   "start": 357.48,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_078.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.96
+  },
+  {
+   "id": "o_callout_78",
+   "start": 357.73,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "EL RATÓN",
+   "figure": "No come",
+   "caption": "muerde para desgastarse los dientes",
+   "dur": 4.61
+  },
+  {
+   "id": "vxsag2ipph2js_s_079",
+   "start": 362.14,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_079.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "vxsag2ipph2js_s_080",
+   "start": 366.36,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_080.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.64
+  },
+  {
+   "id": "o_keyphrase_80",
+   "start": 366.61,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "El daño no es lo que se comió",
+   "dur": 6.29
+  },
+  {
+   "id": "c_alertwipe_81",
+   "start": 372.7,
+   "kind": "alertwipe",
+   "text": "Salmonela y hantavirus",
+   "dur": 6.8
+  },
+  {
+   "id": "vxsag2ipph2js_s_082",
+   "start": 379.2,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_082.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.6
+  },
+  {
+   "id": "o_headline_82",
+   "start": 379.45,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "lava."
+    },
+    {
+     "t": "Se"
+    },
+    {
+     "t": "tira",
+     "hl": true
+    },
+    {
+     "t": "completo."
+    }
+   ],
+   "dur": 4.25
+  },
+  {
+   "id": "vxsag2ipph2js_s_083",
+   "start": 383.5,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_083.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.82
+  },
+  {
+   "id": "c_chips_84",
+   "start": 389.02,
+   "kind": "chips",
+   "title": "Por qué no pasa",
+   "chips": [
+    "Acero",
+    "Marco",
+    "Seguro de 3 puntos"
+   ],
+   "dur": 2.92
+  },
+  {
+   "id": "vxsag2ipph2js_s_085",
+   "start": 391.64,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_085.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.94
+  },
+  {
+   "id": "c_process_86",
+   "start": 395.28,
+   "kind": "process",
+   "title": "En este orden",
+   "eyebrow": "USO 1",
+   "steps": [
+    {
+     "title": "Desconéctalo",
+     "desc": "Y déjalo así un día completo"
+    },
+    {
+     "title": "Vacíalo",
+     "desc": "Fuera el plato de vidrio y el aro"
+    },
+    {
+     "title": "Lávalo",
+     "desc": "Agua tibia y jabón neutro"
+    },
+    {
+     "title": "Sécalo al sol",
+     "desc": "Puerta abierta, un par de horas"
+    }
+   ],
+   "dur": 3.74
+  },
+  {
+   "id": "vxsag2ipph2js_s_087",
+   "start": 398.72,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_087.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.4
+  },
+  {
+   "id": "o_stat_87",
+   "start": 398.97,
+   "kind": "stat",
+   "overlay": true,
+   "value": 1,
+   "suffix": " día",
+   "label": "desconectado antes de tocarlo",
+   "dur": 3.05
+  },
+  {
+   "id": "vxsag2ipph2js_s_088",
+   "start": 401.82,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_088.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.28
+  },
+  {
+   "id": "vxsag2ipph2js_s_089",
+   "start": 405.8,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_089.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.94
+  },
+  {
+   "id": "o_checklist_89",
+   "start": 406.05,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "Con qué se lava",
+   "items": [
+    {
+     "text": "Agua tibia",
+     "state": "done"
+    },
+    {
+     "text": "Jabón neutro",
+     "state": "done"
+    },
+    {
+     "text": "Esponja suave",
+     "state": "done"
+    }
+   ],
+   "dur": 4.59
+  },
+  {
+   "id": "vxsag2ipph2js_s_090",
+   "start": 410.44,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_090.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "o_splitlist_90",
+   "start": 410.69,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Nunca uses",
+   "cross": true,
+   "items": [
+    "Fibra verde",
+    "Cepillo de alambre",
+    "Polvo abrasivo"
+   ],
+   "dur": 3.41
+  },
+  {
+   "id": "c_cross_91",
+   "start": 413.9,
+   "kind": "cross",
+   "title": "La pared de la cavidad",
+   "eyebrow": "POR ESO NO SE TALLA",
+   "marker": "Si rompes esta capa",
+   "layers": [
+    {
+     "label": "Esmalte",
+     "color": "#e8e2d4"
+    },
+    {
+     "label": "Pintura base",
+     "color": "#c2a878"
+    },
+    {
+     "label": "Acero desnudo",
+     "color": "#8a6b46"
+    }
+   ],
+   "dur": 6.52
+  },
+  {
+   "id": "vxsag2ipph2js_s_092",
+   "start": 420.12,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_092.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8
+  },
+  {
+   "id": "o_callout_92",
+   "start": 420.37,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "Óxido",
+   "caption": "donde se rompió el esmalte",
+   "eyebrow": "ACERO DESNUDO",
+   "dur": 3.45
+  },
+  {
+   "id": "vxsag2ipph2js_s_093",
+   "start": 423.62,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_093.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "o_keyphrase_93",
+   "start": 423.87,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Abierto al sol, dos horas",
+   "dur": 3.21
+  },
+  {
+   "id": "vxsag2ipph2js_s_095",
+   "start": 429.86,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_095.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.86
+  },
+  {
+   "id": "o_alertwipe_95",
+   "start": 430.11,
+   "kind": "alertwipe",
+   "overlay": true,
+   "text": "Solo con el aparato desconectado",
+   "dur": 4.51
+  },
+  {
+   "id": "c_rule_96",
+   "start": 434.42,
+   "kind": "rule",
+   "number": "01",
+   "title": "Corta el cable a ras",
+   "label": "REGLA",
+   "dur": 4.58
+  },
+  {
+   "id": "vxsag2ipph2js_s_097",
+   "start": 438.7,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_097.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.16
+  },
+  {
+   "id": "o_headline_97",
+   "start": 438.95,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Un"
+    },
+    {
+     "t": "cable"
+    },
+    {
+     "t": "colgando"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "invitación",
+     "hl": true
+    }
+   ],
+   "dur": 3.81
+  },
+  {
+   "id": "c_numcard_99",
+   "start": 448.66,
+   "kind": "numcard",
+   "number": "01",
+   "name": "Alacena antirratones",
+   "eyebrow": "USO",
+   "total": 6,
+   "dur": 4.92
+  },
+  {
+   "id": "vxsag2ipph2js_s_100",
+   "start": 453.28,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_100.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "o_checklist_100",
+   "start": 453.53,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "Uso 1 terminado",
+   "items": [
+    {
+     "text": "Cero herramientas",
+     "state": "done"
+    },
+    {
+     "text": "Cero riesgo",
+     "state": "done"
+    },
+    {
+     "text": "No abres nada",
+     "state": "done"
+    }
+   ],
+   "dur": 3.91
+  },
+  {
+   "id": "c_chapter_101",
+   "start": 457.24,
+   "kind": "chapter",
+   "title": "El gabinete seco",
+   "num": "02",
+   "dur": 4.52
+  },
+  {
+   "id": "vxsag2ipph2js_s_102",
+   "start": 461.46,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_102.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.52
+  },
+  {
+   "id": "o_countrail_102",
+   "start": 461.71,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 2,
+   "name": "El gabinete seco",
+   "total": 6,
+   "dur": 4.17
+  },
+  {
+   "id": "c_quote_103",
+   "start": 465.68,
+   "kind": "quote",
+   "text": "Todo lo que se oxida en tu casa se oxida por lo mismo: la *humedad del aire*",
+   "eyebrow": "EL ENEMIGO",
+   "dur": 3.62
+  },
+  {
+   "id": "vxsag2ipph2js_s_104",
+   "start": 469,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_104.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.9
+  },
+  {
+   "id": "o_stat_104",
+   "start": 469.25,
+   "kind": "stat",
+   "overlay": true,
+   "value": 30,
+   "prefix": "$",
+   "label": "en brocas, picadas en un verano",
+   "eyebrow": "UN CAJÓN DE LA COCHERA",
+   "dur": 5.55
+  },
+  {
+   "id": "vxsag2ipph2js_s_105",
+   "start": 474.6,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_105.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.06
+  },
+  {
+   "id": "o_chips_105",
+   "start": 474.85,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Lo que se te arruina",
+   "chips": [
+    "Tornillería",
+    "Calibrador",
+    "Brocas"
+   ],
+   "dur": 3.71
+  },
+  {
+   "id": "vxsag2ipph2js_s_106",
+   "start": 478.36,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_106.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.38
+  },
+  {
+   "id": "vxsag2ipph2js_s_108",
+   "start": 488.18,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_108.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9
+  },
+  {
+   "id": "vxsag2ipph2js_s_109",
+   "start": 491.78,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_109.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.82
+  },
+  {
+   "id": "o_callout_109",
+   "start": 492.03,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "El más flojo",
+   "caption": "arroz crudo",
+   "eyebrow": "DESECANTE",
+   "dur": 3.47
+  },
+  {
+   "id": "vxsag2ipph2js_s_110",
+   "start": 495.3,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_110.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.16
+  },
+  {
+   "id": "o_keyphrase_110",
+   "start": 495.55,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Sílica gel: el más común",
+   "dur": 4.81
+  },
+  {
+   "id": "vxsag2ipph2js_s_111",
+   "start": 500.16,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_111.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.46
+  },
+  {
+   "id": "o_headline_111",
+   "start": 500.41,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Chupa"
+    },
+    {
+     "t": "agua"
+    },
+    {
+     "t": "hasta"
+    },
+    {
+     "t": "volverse"
+    },
+    {
+     "t": "líquido",
+     "hl": true
+    }
+   ],
+   "dur": 6.11
+  },
+  {
+   "id": "c_bars_112",
+   "start": 506.32,
+   "kind": "bars",
+   "title": "Qué tanto jala agua",
+   "eyebrow": "LOS TRES DESECANTES",
+   "bars": [
+    {
+     "label": "Arroz crudo",
+     "value": 25,
+     "display": "flojo"
+    },
+    {
+     "label": "Sílica gel",
+     "value": 60,
+     "display": "medio"
+    },
+    {
+     "label": "Cloruro de calcio",
+     "value": 100,
+     "display": "agresivo"
+    }
+   ],
+   "dur": 3.64
+  },
+  {
+   "id": "vxsag2ipph2js_s_113",
+   "start": 509.66,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_113.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.82
+  },
+  {
+   "id": "o_splitlist_113",
+   "start": 509.91,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Así no",
+   "cross": true,
+   "items": [
+    "Suelto sobre el acero",
+    "Sin tapa",
+    "En bolsa de papel"
+   ],
+   "dur": 6.47
+  },
+  {
+   "id": "c_action_114",
+   "start": 516.18,
+   "kind": "action",
+   "step": "Baja la lista de la descripción",
+   "question": "¿Cuántos litros mide tu caja?",
+   "eyebrow": "HAZLO AHORA",
+   "dur": 4.72
+  },
+  {
+   "id": "c_blurreveal_116",
+   "start": 523.76,
+   "kind": "blurreveal",
+   "title": "La demostración",
+   "eyebrow": "NO ME CREAS A MÍ",
+   "dur": 3.32
+  },
+  {
+   "id": "vxsag2ipph2js_s_117",
+   "start": 526.78,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_117.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.4
+  },
+  {
+   "id": "o_chips_117",
+   "start": 527.03,
+   "kind": "chips",
+   "overlay": true,
+   "title": "La prueba",
+   "chips": [
+    "Misma sal",
+    "Misma cantidad"
+   ],
+   "dur": 3.05
+  },
+  {
+   "id": "vxsag2ipph2js_s_118",
+   "start": 529.88,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_118.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.92
+  },
+  {
+   "id": "vxsag2ipph2js_s_119",
+   "start": 535.5,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_119.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.52
+  },
+  {
+   "id": "o_stat_119",
+   "start": 535.75,
+   "kind": "stat",
+   "overlay": true,
+   "value": 3,
+   "suffix": " días",
+   "label": "y los comparas",
+   "dur": 5.17
+  },
+  {
+   "id": "vxsag2ipph2js_s_120",
+   "start": 540.72,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_120.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.14
+  },
+  {
+   "id": "o_headline_120",
+   "start": 540.97,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "TRES DÍAS DESPUÉS",
+   "tokens": [
+    {
+     "t": "Afuera:"
+    },
+    {
+     "t": "ladrillo",
+     "hl": true
+    },
+    {
+     "t": "adentro:"
+    },
+    {
+     "t": "suelta",
+     "hl": true
+    }
+   ],
+   "dur": 4.79
+  },
+  {
+   "id": "c_quote_121",
+   "start": 545.56,
+   "kind": "quote",
+   "eyebrow": "LA PRUEBA",
+   "text": "La sal es un *higrómetro* que cuesta dos pesos y no miente.",
+   "dur": 5.76
+  },
+  {
+   "id": "vxsag2ipph2js_s_122",
+   "start": 551.02,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_122.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.22
+  },
+  {
+   "id": "o_callout_122",
+   "start": 551.27,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "Óxido",
+   "caption": "esto se las comió",
+   "eyebrow": "TUS BROCAS",
+   "dur": 4.87
+  },
+  {
+   "id": "vxsag2ipph2js_s_124",
+   "start": 559.3,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_124.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.02
+  },
+  {
+   "id": "o_keyphrase_124",
+   "start": 559.55,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Sí, se ve feo",
+   "dur": 5.67
+  },
+  {
+   "id": "c_chips_125",
+   "start": 565.02,
+   "kind": "chips",
+   "title": "Dónde sí vive",
+   "chips": [
+    "Cochera",
+    "Bodega",
+    "Cuarto de lavado",
+    "Cajuela"
+   ],
+   "dur": 4.12
+  },
+  {
+   "id": "vxsag2ipph2js_s_126",
+   "start": 568.84,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_126.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.08
+  },
+  {
+   "id": "vxsag2ipph2js_s_127",
+   "start": 572.62,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_127.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "c_blurreveal_128",
+   "start": 576.38,
+   "kind": "blurreveal",
+   "eyebrow": "SOLO LA CAVIDAD",
+   "title": "Mueble industrial",
+   "dur": 3.54
+  },
+  {
+   "id": "c_alertwipe_129",
+   "start": 579.62,
+   "kind": "alertwipe",
+   "text": "Quitar la carcasa no es un juego",
+   "dur": 6.9
+  },
+  {
+   "id": "c_numcard_130",
+   "start": 586.22,
+   "kind": "numcard",
+   "eyebrow": "USO",
+   "number": "3",
+   "name": "La caja de lo que no se puede mojar",
+   "total": "6",
+   "dur": 4.2
+  },
+  {
+   "id": "vxsag2ipph2js_s_131",
+   "start": 590.12,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_131.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.9
+  },
+  {
+   "id": "vxsag2ipph2js_s_132",
+   "start": 596.72,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_132.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.28
+  },
+  {
+   "id": "o_splitlist_132",
+   "start": 596.97,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "No se arruinan rápido",
+   "items": [
+    "Se arruinan despacio",
+    "Y en silencio"
+   ],
+   "dur": 3.93
+  },
+  {
+   "id": "vxsag2ipph2js_s_133",
+   "start": 600.7,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_133.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.52
+  },
+  {
+   "id": "vxsag2ipph2js_s_134",
+   "start": 604.92,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_134.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "o_chips_134",
+   "start": 605.17,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Los papeles",
+   "chips": [
+    "Escrituras",
+    "Actas",
+    "Pólizas"
+   ],
+   "dur": 4.29
+  },
+  {
+   "id": "vxsag2ipph2js_s_135",
+   "start": 609.26,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_135.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.82
+  },
+  {
+   "id": "vxsag2ipph2js_s_136",
+   "start": 612.78,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_136.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.08
+  },
+  {
+   "id": "o_headline_136",
+   "start": 613.03,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "EL CERILLO HÚMEDO",
+   "tokens": [
+    {
+     "t": "Te avisa"
+    },
+    {
+     "t": "la noche"
+    },
+    {
+     "t": "del apagón",
+     "hl": true
+    }
+   ],
+   "dur": 4.73
+  },
+  {
+   "id": "c_checklist_138",
+   "start": 623.8,
+   "kind": "checklist",
+   "title": "Lo que una semilla necesita",
+   "items": [
+    {
+     "text": "Aire seco",
+     "state": "done"
+    },
+    {
+     "text": "Oscuridad",
+     "state": "done"
+    },
+    {
+     "text": "Temperatura pareja",
+     "state": "done"
+    }
+   ],
+   "dur": 4.18
+  },
+  {
+   "id": "vxsag2ipph2js_s_139",
+   "start": 627.68,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_139.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.18
+  },
+  {
+   "id": "o_keyphrase_139",
+   "start": 627.93,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Y además es oscura",
+   "dur": 4.83
+  },
+  {
+   "id": "vxsag2ipph2js_s_140",
+   "start": 632.56,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_140.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.42
+  },
+  {
+   "id": "o_countrail_140",
+   "start": 632.81,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 3,
+   "name": "Lo que no se puede mojar",
+   "total": 6,
+   "dur": 3.07
+  },
+  {
+   "id": "vxsag2ipph2js_s_141",
+   "start": 635.68,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_141.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.84
+  },
+  {
+   "id": "o_callout_141",
+   "start": 635.93,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "El apagón",
+   "caption": "el día que sí las necesitas",
+   "eyebrow": "HOY EN UN CAJÓN",
+   "dur": 6.49
+  },
+  {
+   "id": "c_process_142",
+   "start": 642.22,
+   "kind": "process",
+   "eyebrow": "USO 3",
+   "title": "Así queda listo",
+   "steps": [
+    {
+     "title": "Mete lo seco",
+     "desc": "Papeles, cerillos, semillas, pilas"
+    },
+    {
+     "title": "Pon el desecante",
+     "desc": "En un traste abierto"
+    },
+    {
+     "title": "Cierra la puerta",
+     "desc": "Y se acabó"
+    }
+   ],
+   "dur": 4.06
+  },
+  {
+   "id": "vxsag2ipph2js_s_144",
+   "start": 648.8,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_144.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.7
+  },
+  {
+   "id": "vxsag2ipph2js_s_145",
+   "start": 652.2,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_145.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.94
+  },
+  {
+   "id": "o_keyphrase_145",
+   "start": 652.45,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "No está ahí para que veas",
+   "dur": 3.59
+  },
+  {
+   "id": "vxsag2ipph2js_s_146",
+   "start": 655.84,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_146.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "o_impact_146",
+   "start": 656.09,
+   "kind": "impact",
+   "overlay": true,
+   "setup": "Por eso trae esa malla",
+   "impact": "Jaula de Faraday",
+   "dur": 4.21,
+   "image": "img/vxsag2ipph2js_s_146.png"
+  },
+  {
+   "id": "vxsag2ipph2js_s_148",
+   "start": 663.08,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_148.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.66
+  },
+  {
+   "id": "o_stat_148",
+   "start": 663.33,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "LA ONDA",
+   "value": 2450,
+   "suffix": " MHz",
+   "label": "a esa frecuencia trabaja",
+   "dur": 4.31
+  },
+  {
+   "id": "c_bars_149",
+   "start": 667.44,
+   "kind": "bars",
+   "eyebrow": "LA MALLA",
+   "title": "La onda contra el agujero",
+   "bars": [
+    {
+     "label": "La onda",
+     "value": 100,
+     "display": "12 cm"
+    },
+    {
+     "label": "El agujero",
+     "value": 2,
+     "display": "1 a 2 mm"
+    }
+   ],
+   "dur": 6.32
+  },
+  {
+   "id": "vxsag2ipph2js_s_150",
+   "start": 673.46,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_150.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "o_headline_150",
+   "start": 673.71,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "LA ESCALA",
+   "tokens": [
+    {
+     "t": "Cientos"
+    },
+    {
+     "t": "de veces",
+     "hl": true
+    },
+    {
+     "t": "más chicos"
+    }
+   ],
+   "dur": 3.53
+  },
+  {
+   "id": "c_quote_151",
+   "start": 677.04,
+   "kind": "quote",
+   "eyebrow": "POR QUÉ FUNCIONA",
+   "text": "Toda la caja es *metal*: la señal no entra ni sale.",
+   "dur": 6.72
+  },
+  {
+   "id": "vxsag2ipph2js_s_152",
+   "start": 683.46,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_152.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.98
+  },
+  {
+   "id": "vxsag2ipph2js_s_153",
+   "start": 687.14,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_153.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.58
+  },
+  {
+   "id": "o_keyphrase_153",
+   "start": 687.39,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Llave inteligente",
+   "dur": 4.23
+  },
+  {
+   "id": "c_alertwipe_154",
+   "start": 691.42,
+   "kind": "alertwipe",
+   "text": "Tu llave grita su señal todo el tiempo",
+   "dur": 3.14
+  },
+  {
+   "id": "vxsag2ipph2js_s_155",
+   "start": 694.26,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_155.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.46
+  },
+  {
+   "id": "o_callout_155",
+   "start": 694.51,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "2",
+   "caption": "personas amplifican la señal",
+   "eyebrow": "EL ROBO",
+   "dur": 6.11
+  },
+  {
+   "id": "vxsag2ipph2js_s_156",
+   "start": 700.42,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_156.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.98
+  },
+  {
+   "id": "vxsag2ipph2js_s_157",
+   "start": 704.1,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_157.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.3
+  },
+  {
+   "id": "c_process_158",
+   "start": 708.1,
+   "kind": "process",
+   "eyebrow": "EN LA BANQUETA",
+   "title": "El robo, en tres pasos",
+   "steps": [
+    {
+     "title": "Abre",
+     "desc": "El coche cree que la llave está en la manija"
+    },
+    {
+     "title": "Enciende",
+     "desc": "Sin forzar nada"
+    },
+    {
+     "title": "Se van",
+     "desc": "En menos de un minuto"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "vxsag2ipph2js_s_159",
+   "start": 714.5,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_159.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.9
+  },
+  {
+   "id": "o_stat_159",
+   "start": 714.75,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "O GRATIS",
+   "value": 25,
+   "prefix": "$",
+   "suffix": " dls",
+   "label": "cuesta la bolsita que venden",
+   "dur": 5.55
+  },
+  {
+   "id": "c_bars_160",
+   "start": 720.1,
+   "kind": "bars",
+   "eyebrow": "BOLSITA CONTRA CAJA MUERTA",
+   "title": "Lo mismo, por cero",
+   "bars": [
+    {
+     "label": "Bolsita metalizada",
+     "value": 25,
+     "display": "25 dls"
+    },
+    {
+     "label": "Microondas muerto",
+     "value": 0,
+     "display": "Gratis"
+    }
+   ],
+   "dur": 5.36
+  },
+  {
+   "id": "vxsag2ipph2js_s_161",
+   "start": 725.16,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_161.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "o_keyphrase_161",
+   "start": 725.41,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Mete el teléfono y cierra",
+   "dur": 3.21
+  },
+  {
+   "id": "vxsag2ipph2js_s_162",
+   "start": 728.42,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_162.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.32
+  },
+  {
+   "id": "o_headline_162",
+   "start": 728.67,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "MÁRCALE DESDE OTRO",
+   "tokens": [
+    {
+     "t": "No",
+     "hl": true
+    },
+    {
+     "t": "entra",
+     "hl": true
+    },
+    {
+     "t": "la",
+     "hl": false
+    },
+    {
+     "t": "llamada",
+     "hl": false
+    }
+   ],
+   "dur": 4.97
+  },
+  {
+   "id": "vxsag2ipph2js_s_164",
+   "start": 738.62,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_164.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.98
+  },
+  {
+   "id": "o_alertwipe_164",
+   "start": 738.87,
+   "kind": "alertwipe",
+   "overlay": true,
+   "text": "Solo con el microondas muerto y desconectado",
+   "dur": 4.63
+  },
+  {
+   "id": "c_splitlist_165",
+   "start": 743.3,
+   "kind": "splitlist",
+   "title": "Nunca hagas esto",
+   "cross": true,
+   "items": [
+    "Con un microondas que funcione",
+    "Con el aparato enchufado",
+    "Encenderlo con algo adentro"
+   ],
+   "dur": 6.5
+  },
+  {
+   "id": "vxsag2ipph2js_s_167",
+   "start": 752.84,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_167.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.26
+  },
+  {
+   "id": "vxsag2ipph2js_s_168",
+   "start": 756.8,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_168.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.18
+  },
+  {
+   "id": "o_chips_168",
+   "start": 757.05,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Si sí entró la llamada",
+   "chips": [
+    "Sello imperfecto",
+    "Otras bandas"
+   ],
+   "dur": 5.83
+  },
+  {
+   "id": "vxsag2ipph2js_s_169",
+   "start": 762.68,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_169.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.72
+  },
+  {
+   "id": "o_checklist_169",
+   "start": 762.93,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "Antes de confiarle la llave",
+   "items": [
+    {
+     "text": "Pruébalo con tu llave",
+     "state": "doing"
+    },
+    {
+     "text": "Pruébalo con tu coche",
+     "state": "todo"
+    },
+    {
+     "text": "Repítelo dos veces",
+     "state": "todo"
+    }
+   ],
+   "dur": 6.37
+  },
+  {
+   "id": "c_numcard_170",
+   "start": 769.1,
+   "kind": "numcard",
+   "eyebrow": "USO",
+   "number": "5",
+   "name": "La cámara templada",
+   "total": 6,
+   "dur": 4.4
+  },
+  {
+   "id": "vxsag2ipph2js_s_171",
+   "start": 773.2,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_171.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "vxsag2ipph2js_s_172",
+   "start": 777.24,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_172.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.88
+  },
+  {
+   "id": "o_stat_172",
+   "start": 777.49,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "ADENTRO DE LA CAJA",
+   "value": 5,
+   "prefix": "+",
+   "suffix": " °C",
+   "label": "sobre la temperatura del cuarto",
+   "dur": 6.5
+  },
+  {
+   "id": "c_quote_173",
+   "start": 783.82,
+   "kind": "quote",
+   "eyebrow": "POR QUÉ FUNCIONA",
+   "text": "Se queda ahí, *pareja*, sin corrientes de aire.",
+   "dur": 3.5
+  },
+  {
+   "id": "vxsag2ipph2js_s_174",
+   "start": 787.02,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_174.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.78
+  },
+  {
+   "id": "o_callout_174",
+   "start": 787.27,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "LA FUENTE DE CALOR",
+   "figure": "15 a 25 W",
+   "caption": "un foco de filamento de los viejos",
+   "dur": 6.43
+  },
+  {
+   "id": "vxsag2ipph2js_s_175",
+   "start": 793.5,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_175.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.8
+  },
+  {
+   "id": "vxsag2ipph2js_s_176",
+   "start": 798,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_176.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.96
+  },
+  {
+   "id": "o_keyphrase_176",
+   "start": 798.25,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Horas a temperatura pareja",
+   "dur": 5.61
+  },
+  {
+   "id": "vxsag2ipph2js_s_177",
+   "start": 803.66,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_177.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.14
+  },
+  {
+   "id": "o_chips_177",
+   "start": 803.91,
+   "kind": "chips",
+   "overlay": true,
+   "title": "La cámara templada sirve para",
+   "chips": [
+    "Masa",
+    "Yogur",
+    "Semillas",
+    "Hierbas",
+    "Chiles"
+   ],
+   "dur": 5.79
+  },
+  {
+   "id": "c_rule_179",
+   "start": 813.34,
+   "kind": "rule",
+   "label": "LÍMITE",
+   "number": "01",
+   "title": "Esto no es un horno",
+   "dur": 6
+  },
+  {
+   "id": "vxsag2ipph2js_s_180",
+   "start": 819.04,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_180.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "vxsag2ipph2js_s_181",
+   "start": 822.9,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_181.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.44
+  },
+  {
+   "id": "o_keyphrase_181",
+   "start": 823.15,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "La primera vez, termómetro adentro",
+   "dur": 3.09
+  },
+  {
+   "id": "c_aged_182",
+   "start": 826.04,
+   "kind": "aged",
+   "eyebrow": "LA REGLA DE LA LÁMPARA",
+   "heading": "Nada tocando el foco",
+   "lines": [
+    {
+     "text": "Ningún trapo",
+     "mark": true
+    },
+    {
+     "text": "Ningún papel",
+     "mark": true
+    },
+    {
+     "text": "Ningún plástico",
+     "mark": true
+    }
+   ],
+   "dur": 3.82
+  },
+  {
+   "id": "vxsag2ipph2js_s_183",
+   "start": 829.56,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_183.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.94
+  },
+  {
+   "id": "vxsag2ipph2js_s_184",
+   "start": 833.2,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_184.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.74
+  },
+  {
+   "id": "o_headline_184",
+   "start": 833.45,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Si",
+     "hl": false
+    },
+    {
+     "t": "sigue",
+     "hl": false
+    },
+    {
+     "t": "armado",
+     "hl": true
+    },
+    {
+     "t": "no",
+     "hl": true
+    },
+    {
+     "t": "lo",
+     "hl": false
+    },
+    {
+     "t": "hagas",
+     "hl": true
+    }
+   ],
+   "dur": 3.39
+  },
+  {
+   "id": "vxsag2ipph2js_s_185",
+   "start": 836.64,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_185.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "o_checklist_185",
+   "start": 836.89,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "Solo en una cavidad así",
+   "items": [
+    {
+     "text": "Limpia",
+     "state": "done"
+    },
+    {
+     "text": "Vacía",
+     "state": "done"
+    },
+    {
+     "text": "Porta lámparas nuevo",
+     "state": "done"
+    }
+   ],
+   "dur": 3.21
+  },
+  {
+   "id": "vxsag2ipph2js_s_186",
+   "start": 839.9,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_186.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.68
+  },
+  {
+   "id": "o_callout_186",
+   "start": 840.15,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "JAMÁS",
+   "figure": "Nunca una vela",
+   "caption": "la llama se ahoga y todo se llena de hollín",
+   "dur": 6.33
+  },
+  {
+   "id": "c_chapter_187",
+   "start": 846.28,
+   "kind": "chapter",
+   "num": "6",
+   "title": "Tres cortitos",
+   "dur": 3.36
+  },
+  {
+   "id": "vxsag2ipph2js_s_188",
+   "start": 849.34,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_188.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.42
+  },
+  {
+   "id": "o_countrail_188",
+   "start": 849.59,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 1,
+   "name": "El plato de vidrio",
+   "total": 3,
+   "dur": 4.07
+  },
+  {
+   "id": "vxsag2ipph2js_s_189",
+   "start": 853.46,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_189.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "o_chips_189",
+   "start": 853.71,
+   "kind": "chips",
+   "overlay": true,
+   "title": "El plato sirve de",
+   "chips": [
+    "Base de maceta",
+    "Charola",
+    "Plato de servir"
+   ],
+   "dur": 4.13
+  },
+  {
+   "id": "vxsag2ipph2js_s_190",
+   "start": 857.64,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_190.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7
+  },
+  {
+   "id": "o_countrail_190",
+   "start": 857.89,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 2,
+   "name": "Gabinete en la pared",
+   "total": 3,
+   "dur": 6.5
+  },
+  {
+   "id": "vxsag2ipph2js_s_191",
+   "start": 864.34,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_191.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.46
+  },
+  {
+   "id": "o_keyphrase_191",
+   "start": 864.59,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Lejos de los niños",
+   "dur": 3.11
+  },
+  {
+   "id": "vxsag2ipph2js_s_192",
+   "start": 867.5,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_192.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.44
+  },
+  {
+   "id": "o_countrail_192",
+   "start": 867.75,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 3,
+   "name": "En la cajuela",
+   "total": 3,
+   "dur": 6.09
+  },
+  {
+   "id": "c_blurreveal_193",
+   "start": 873.64,
+   "kind": "blurreveal",
+   "eyebrow": "LO MÁS IMPORTANTE DE HOY",
+   "title": "La pieza de la que te hablé",
+   "dur": 3.7
+  },
+  {
+   "id": "vxsag2ipph2js_s_195",
+   "start": 882.02,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_195.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "o_impact_195",
+   "start": 882.27,
+   "kind": "impact",
+   "overlay": true,
+   "setup": "Adentro de todo microondas hay",
+   "impact": "Un capacitor de alto voltaje",
+   "dur": 4.21,
+   "image": "img/vxsag2ipph2js_s_195.png"
+  },
+  {
+   "id": "c_stat_196",
+   "start": 886.28,
+   "kind": "stat",
+   "eyebrow": "DEL TAMAÑO DE UNA LATA CHICA",
+   "value": 2500,
+   "suffix": " voltios",
+   "label": "con eso trabaja el cilindro de adentro",
+   "dur": 6.38
+  },
+  {
+   "id": "vxsag2ipph2js_s_197",
+   "start": 892.36,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_197.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.26
+  },
+  {
+   "id": "o_keyphrase_197",
+   "start": 892.61,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Desconectado no es descargado",
+   "dur": 5.91
+  },
+  {
+   "id": "c_process_198",
+   "start": 898.32,
+   "kind": "process",
+   "eyebrow": "EN TEORÍA",
+   "title": "Cómo debería descargarse",
+   "steps": [
+    {
+     "title": "Desconectas",
+     "desc": "Le cortas la corriente al aparato"
+    },
+    {
+     "title": "La resistencia trabaja",
+     "desc": "Una resistencia interna lo descarga sola"
+    }
+   ],
+   "dur": 3.42
+  },
+  {
+   "id": "vxsag2ipph2js_s_199",
+   "start": 901.44,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_199.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "o_headline_199",
+   "start": 901.69,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Pero",
+     "hl": false
+    },
+    {
+     "t": "esa",
+     "hl": false
+    },
+    {
+     "t": "resistencia",
+     "hl": true
+    },
+    {
+     "t": "se",
+     "hl": false
+    },
+    {
+     "t": "quema",
+     "hl": true
+    }
+   ],
+   "dur": 3.27
+  },
+  {
+   "id": "vxsag2ipph2js_s_200",
+   "start": 904.76,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_200.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "o_keyphrase_200",
+   "start": 905.01,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Y se queda cargado",
+   "dur": 3.41
+  },
+  {
+   "id": "c_chips_201",
+   "start": 908.22,
+   "kind": "chips",
+   "title": "El capacitor no avisa",
+   "chips": [
+    "No zumba",
+    "No se calienta",
+    "No se ve"
+   ],
+   "dur": 4.14
+  },
+  {
+   "id": "vxsag2ipph2js_s_202",
+   "start": 912.06,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_202.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.82
+  },
+  {
+   "id": "o_headline_202",
+   "start": 912.31,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "IMPOSIBLE SABERLO",
+   "tokens": [
+    {
+     "t": "Cargado"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "descargado"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "ven"
+    },
+    {
+     "t": "igual",
+     "hl": true
+    }
+   ],
+   "dur": 6.47
+  },
+  {
+   "id": "c_alertwipe_203",
+   "start": 918.58,
+   "kind": "alertwipe",
+   "text": "Esa carga mata. No es un toque.",
+   "dur": 3.92
+  },
+  {
+   "id": "vxsag2ipph2js_s_204",
+   "start": 922.2,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_204.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.78
+  },
+  {
+   "id": "o_callout_204",
+   "start": 922.45,
+   "kind": "callout",
+   "overlay": true,
+   "eyebrow": "ASÍ TRABAJAN LOS TÉCNICOS",
+   "figure": "1 mano",
+   "caption": "la otra siempre en la bolsa",
+   "dur": 6.43
+  },
+  {
+   "id": "vxsag2ipph2js_s_206",
+   "start": 933.08,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_206.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.58
+  },
+  {
+   "id": "c_rule_207",
+   "start": 936.36,
+   "kind": "rule",
+   "number": "01",
+   "label": "LA ÚNICA REGLA",
+   "title": "Si no sabes descargarlo, no lo abras",
+   "dur": 3.62
+  },
+  {
+   "id": "vxsag2ipph2js_s_208",
+   "start": 939.68,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_208.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.98
+  },
+  {
+   "id": "o_countrail_208",
+   "start": 939.93,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 5,
+   "name": "usos sin abrir nada",
+   "total": 6,
+   "dur": 3.63
+  },
+  {
+   "id": "vxsag2ipph2js_s_209",
+   "start": 943.36,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_209.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.6
+  },
+  {
+   "id": "o_stat_209",
+   "start": 943.61,
+   "kind": "stat",
+   "overlay": true,
+   "eyebrow": "LA BUENA NOTICIA",
+   "value": 5,
+   "suffix": " de 6",
+   "label": "se hacen sin abrir nada",
+   "dur": 3.25
+  },
+  {
+   "id": "vxsag2ipph2js_s_210",
+   "start": 946.66,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_210.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.4
+  },
+  {
+   "id": "o_checklist_210",
+   "start": 946.91,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "Todo lo que hay que hacer",
+   "items": [
+    {
+     "text": "Cortar el cable",
+     "state": "done"
+    },
+    {
+     "text": "Lavar la cavidad",
+     "state": "done"
+    },
+    {
+     "text": "Cerrar la puerta",
+     "state": "done"
+    }
+   ],
+   "dur": 3.05
+  },
+  {
+   "id": "vxsag2ipph2js_s_211",
+   "start": 949.76,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_211.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "o_keyphrase_211",
+   "start": 950.01,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Abrirlo es solo por estética",
+   "dur": 3.39
+  },
+  {
+   "id": "c_stat_212",
+   "start": 953.2,
+   "kind": "stat",
+   "eyebrow": "LO QUE GUARDA ESE CILINDRO",
+   "value": 2500,
+   "suffix": " voltios",
+   "label": "La estética no vale eso",
+   "dur": 5.68
+  },
+  {
+   "id": "vxsag2ipph2js_s_214",
+   "start": 963.56,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_214.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.78
+  },
+  {
+   "id": "o_callout_214",
+   "start": 963.81,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "Magnetrón",
+   "caption": "aletas y dos imanes redondos",
+   "dur": 4.43
+  },
+  {
+   "id": "c_blurreveal_215",
+   "start": 968.04,
+   "kind": "blurreveal",
+   "eyebrow": "ESA CERÁMICA CLARA",
+   "title": "Óxido de berilio",
+   "dur": 6.06
+  },
+  {
+   "id": "vxsag2ipph2js_s_216",
+   "start": 973.8,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_216.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.3
+  },
+  {
+   "id": "c_alertwipe_217",
+   "start": 976.8,
+   "kind": "alertwipe",
+   "text": "Molida y respirada, es tóxica",
+   "dur": 3.92
+  },
+  {
+   "id": "vxsag2ipph2js_s_218",
+   "start": 980.42,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_218.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.6
+  },
+  {
+   "id": "o_splitlist_218",
+   "start": 980.67,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Con el magnetrón",
+   "cross": true,
+   "items": [
+    "No se rompe",
+    "No se golpea",
+    "No se lija",
+    "No se tira al fuego"
+   ],
+   "dur": 5.25
+  },
+  {
+   "id": "vxsag2ipph2js_s_219",
+   "start": 985.72,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_219.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.52
+  },
+  {
+   "id": "o_headline_219",
+   "start": 985.97,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Se"
+    },
+    {
+     "t": "saca"
+    },
+    {
+     "t": "completo",
+     "hl": true
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "se"
+    },
+    {
+     "t": "recicla",
+     "hl": true
+    }
+   ],
+   "dur": 4.17
+  },
+  {
+   "id": "c_chips_220",
+   "start": 989.94,
+   "kind": "chips",
+   "title": "Estas tres van al reciclaje",
+   "chips": [
+    "Magnetrón",
+    "Capacitor",
+    "Transformador"
+   ],
+   "dur": 4.62
+  },
+  {
+   "id": "vxsag2ipph2js_s_221",
+   "start": 994.26,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_221.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.42
+  },
+  {
+   "id": "o_keyphrase_221",
+   "start": 994.51,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "La caja te la quedas",
+   "dur": 5.07
+  },
+  {
+   "id": "c_chapter_223",
+   "start": 1002.74,
+   "kind": "chapter",
+   "title": "Los límites honestos",
+   "dur": 5.56
+  },
+  {
+   "id": "vxsag2ipph2js_s_224",
+   "start": 1008,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_224.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.28
+  },
+  {
+   "id": "o_alertwipe_224",
+   "start": 1008.25,
+   "kind": "alertwipe",
+   "overlay": true,
+   "text": "No es a prueba de fuego",
+   "dur": 3.93
+  },
+  {
+   "id": "vxsag2ipph2js_s_225",
+   "start": 1011.98,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_225.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "o_callout_225",
+   "start": 1012.23,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "Ordenados",
+   "caption": "y lejos de los niños",
+   "dur": 4.47
+  },
+  {
+   "id": "c_splitlist_226",
+   "start": 1016.5,
+   "kind": "splitlist",
+   "title": "Lo que esta caja NO es",
+   "cross": true,
+   "items": [
+    "No es refrigerador",
+    "No es a prueba de fuego",
+    "No guarda comida cocinada",
+    "Nada que traiga agua"
+   ],
+   "dur": 4.84
+  },
+  {
+   "id": "vxsag2ipph2js_s_227",
+   "start": 1021.04,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_227.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.7
+  },
+  {
+   "id": "o_headline_227",
+   "start": 1021.29,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Aquí"
+    },
+    {
+     "t": "solo"
+    },
+    {
+     "t": "va"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "seco",
+     "hl": true
+    }
+   ],
+   "dur": 5.35
+  },
+  {
+   "id": "vxsag2ipph2js_s_228",
+   "start": 1026.44,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_228.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "o_keyphrase_228",
+   "start": 1026.69,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Inoxidable: los mejores",
+   "dur": 2.95
+  },
+  {
+   "id": "vxsag2ipph2js_s_229",
+   "start": 1029.44,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_229.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "o_checklist_229",
+   "start": 1029.69,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "Cavidad pintada",
+   "items": [
+    {
+     "text": "Pintura entera",
+     "state": "done"
+    },
+    {
+     "text": "Rayón hasta el metal",
+     "state": "todo"
+    }
+   ],
+   "dur": 4.19
+  },
+  {
+   "id": "vxsag2ipph2js_s_230",
+   "start": 1033.68,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_230.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.46
+  },
+  {
+   "id": "o_alertwipe_230",
+   "start": 1033.93,
+   "kind": "alertwipe",
+   "overlay": true,
+   "text": "Oxidado en el piso: ese ya no",
+   "dur": 3.11
+  },
+  {
+   "id": "c_quote_231",
+   "start": 1036.84,
+   "kind": "quote",
+   "eyebrow": "TE LO DIGO DERECHO",
+   "text": "Ese óxido *sigue trabajando* y te va a manchar todo lo que metas.",
+   "dur": 4.04
+  },
+  {
+   "id": "vxsag2ipph2js_s_232",
+   "start": 1040.58,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_232.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.44
+  },
+  {
+   "id": "o_alertwipe_232",
+   "start": 1040.83,
+   "kind": "alertwipe",
+   "overlay": true,
+   "text": "Ese olor no se quita",
+   "dur": 6.09
+  },
+  {
+   "id": "vxsag2ipph2js_s_234",
+   "start": 1052.8,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_234.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.02
+  },
+  {
+   "id": "o_keyphrase_234",
+   "start": 1053.05,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Y aún así se te pican",
+   "dur": 3.67
+  },
+  {
+   "id": "vxsag2ipph2js_s_235",
+   "start": 1056.52,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_235.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.88
+  },
+  {
+   "id": "o_chips_235",
+   "start": 1056.77,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Si ves estas señales",
+   "chips": [
+    "Sal apelmazada",
+    "Pared fría",
+    "Fierro picado"
+   ],
+   "dur": 5.53
+  },
+  {
+   "id": "vxsag2ipph2js_s_236",
+   "start": 1062.1,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_236.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.22
+  },
+  {
+   "id": "o_impact_236",
+   "start": 1062.35,
+   "kind": "impact",
+   "overlay": true,
+   "setup": "Tu problema no es el guardado",
+   "impact": "La casa está metiendo agua",
+   "dur": 5.87,
+   "image": "img/vxsag2ipph2js_s_236.png"
+  },
+  {
+   "id": "vxsag2ipph2js_s_237",
+   "start": 1068.02,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_237.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.5
+  },
+  {
+   "id": "o_keyphrase_237",
+   "start": 1068.27,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "El agua encuentra todo",
+   "dur": 4.15
+  },
+  {
+   "id": "c_process_238",
+   "start": 1072.22,
+   "kind": "process",
+   "eyebrow": "LO QUE ARMÉ EN EL MANUAL",
+   "title": "Contra la humedad",
+   "steps": [
+    {
+     "title": "Encontrar la entrada",
+     "desc": "De dónde entra el agua"
+    },
+    {
+     "title": "Cortarla desde abajo",
+     "desc": "Antes de que suba"
+    },
+    {
+     "title": "Tratar el moho",
+     "desc": "Para que no regrese"
+    }
+   ],
+   "dur": 4.86
+  },
+  {
+   "id": "vxsag2ipph2js_s_239",
+   "start": 1076.78,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_239.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.42
+  },
+  {
+   "id": "o_callout_239",
+   "start": 1077.03,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "3 meses",
+   "caption": "lo que tarda en regresar",
+   "dur": 3.07
+  },
+  {
+   "id": "vxsag2ipph2js_s_240",
+   "start": 1079.9,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_240.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.62
+  },
+  {
+   "id": "o_stat_240",
+   "start": 1080.15,
+   "kind": "stat",
+   "overlay": true,
+   "value": 40,
+   "label": "Arreglos numerados",
+   "eyebrow": "LO QUE ARMÉ",
+   "dur": 6.27
+  },
+  {
+   "id": "vxsag2ipph2js_s_241",
+   "start": 1086.22,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_241.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.44
+  },
+  {
+   "id": "o_keyphrase_241",
+   "start": 1086.47,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Ya te cansaste de tapar síntomas",
+   "dur": 5.09
+  },
+  {
+   "id": "c_aged_242",
+   "start": 1091.36,
+   "kind": "aged",
+   "eyebrow": "TE LO DEJO EN LA DESCRIPCIÓN",
+   "heading": "El manual de la humedad",
+   "lines": [
+    {
+     "text": "De dónde entra el agua",
+     "mark": true
+    },
+    {
+     "text": "Cómo cortarla desde abajo"
+    },
+    {
+     "text": "Moho que no regresa en tres meses"
+    },
+    {
+     "text": "Cuarenta arreglos numerados",
+     "mark": true
+    }
+   ],
+   "dur": 6.18
+  },
+  {
+   "id": "c_mistake_244",
+   "start": 1100.36,
+   "kind": "mistake",
+   "eyebrow": "EL ERROR DEL 90%",
+   "number": "01",
+   "title": "La caja no seca nada",
+   "desc": "La caja aísla. Nada más.",
+   "dur": 4.66
+  },
+  {
+   "id": "vxsag2ipph2js_s_245",
+   "start": 1104.72,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_245.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.78
+  },
+  {
+   "id": "o_callout_245",
+   "start": 1104.97,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "AÍSLA",
+   "caption": "No seca. Aísla.",
+   "eyebrow": "LA CAVIDAD",
+   "dur": 6.43
+  },
+  {
+   "id": "vxsag2ipph2js_s_246",
+   "start": 1111.2,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_246.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "vxsag2ipph2js_s_247",
+   "start": 1114.72,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_247.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.36
+  },
+  {
+   "id": "o_keyphrase_247",
+   "start": 1114.97,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "¿Y si cierras un día de lluvia?",
+   "dur": 3.01
+  },
+  {
+   "id": "vxsag2ipph2js_s_248",
+   "start": 1117.78,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_248.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.62
+  },
+  {
+   "id": "vxsag2ipph2js_s_249",
+   "start": 1124.1,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_249.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.18
+  },
+  {
+   "id": "o_splitlist_249",
+   "start": 1124.35,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Cuándo la arruinas",
+   "items": [
+    "Un día de lluvia",
+    "Agosto con la cochera húmeda",
+    "Recién lavada y sin secar",
+    "Con una herramienta tibia"
+   ],
+   "cross": true,
+   "dur": 3.83
+  },
+  {
+   "id": "c_alertwipe_250",
+   "start": 1127.98,
+   "kind": "alertwipe",
+   "text": "Sellaste el agua adentro",
+   "dur": 5.26
+  },
+  {
+   "id": "vxsag2ipph2js_s_251",
+   "start": 1132.94,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_251.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.22
+  },
+  {
+   "id": "vxsag2ipph2js_s_252",
+   "start": 1136.86,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_252.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.6
+  },
+  {
+   "id": "o_keyphrase_252",
+   "start": 1137.11,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "De noche baja la temperatura",
+   "dur": 5.25
+  },
+  {
+   "id": "c_cross_253",
+   "start": 1142.16,
+   "kind": "cross",
+   "eyebrow": "POR QUÉ CONDENSA",
+   "title": "La noche adentro de la caja",
+   "marker": "La superficie más fría",
+   "layers": [
+    {
+     "label": "Aire húmedo encerrado",
+     "color": "#8fa6b8"
+    },
+    {
+     "label": "Pared de acero fría",
+     "color": "#5d6b73"
+    },
+    {
+     "label": "Gotas sobre el metal",
+     "color": "#3f4a52"
+    }
+   ],
+   "dur": 3.74
+  },
+  {
+   "id": "vxsag2ipph2js_s_254",
+   "start": 1145.6,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_254.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "o_impact_254",
+   "start": 1145.85,
+   "kind": "impact",
+   "overlay": true,
+   "setup": "El vapor busca la pared de acero",
+   "impact": "Y se condensa.",
+   "dur": 2.89,
+   "image": "img/vxsag2ipph2js_s_254.png"
+  },
+  {
+   "id": "vxsag2ipph2js_s_255",
+   "start": 1148.54,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_255.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.14
+  },
+  {
+   "id": "o_headline_255",
+   "start": 1148.79,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "GOTAS SOBRE TUS BROCAS",
+   "tokens": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "mismo"
+    },
+    {
+     "t": "sello"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "salva",
+     "hl": true
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "que"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "oxida",
+     "hl": true
+    }
+   ],
+   "dur": 4.79
+  },
+  {
+   "id": "c_rule_256",
+   "start": 1153.38,
+   "kind": "rule",
+   "number": "02",
+   "title": "El desecante no es opcional",
+   "label": "REGLA",
+   "dur": 3.38
+  },
+  {
+   "id": "vxsag2ipph2js_s_258",
+   "start": 1159.6,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_258.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.08
+  },
+  {
+   "id": "o_callout_258",
+   "start": 1159.85,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "SECA",
+   "caption": "Cerrada no es lo mismo que seca",
+   "eyebrow": "EL DESECANTE",
+   "dur": 4.73
+  },
+  {
+   "id": "vxsag2ipph2js_s_259",
+   "start": 1164.38,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_259.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.32
+  },
+  {
+   "id": "c_blurreveal_260",
+   "start": 1168.4,
+   "kind": "blurreveal",
+   "eyebrow": "SIN DESECANTE, ESTO ARMASTE",
+   "title": "Cámara de condensación",
+   "dur": 3.96
+  },
+  {
+   "id": "vxsag2ipph2js_s_262",
+   "start": 1175.8,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_262.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.18
+  },
+  {
+   "id": "o_keyphrase_262",
+   "start": 1176.05,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Suena a sellada",
+   "dur": 3.83
+  },
+  {
+   "id": "c_stat_263",
+   "start": 1179.68,
+   "kind": "stat",
+   "value": 3,
+   "label": "agujeros en la cavidad",
+   "eyebrow": "NO ESTÁ SELLADA",
+   "dur": 3.48
+  },
+  {
+   "id": "vxsag2ipph2js_s_264",
+   "start": 1182.86,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_264.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.38
+  },
+  {
+   "id": "o_callout_264",
+   "start": 1183.11,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "1",
+   "caption": "La placa de mica, pared derecha",
+   "eyebrow": "AGUJERO",
+   "dur": 6.03
+  },
+  {
+   "id": "vxsag2ipph2js_s_265",
+   "start": 1188.94,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_265.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.28
+  },
+  {
+   "id": "o_keyphrase_265",
+   "start": 1189.19,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Atrás hay un hueco abierto",
+   "dur": 5.93
+  },
+  {
+   "id": "vxsag2ipph2js_s_266",
+   "start": 1194.92,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_266.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.8
+  },
+  {
+   "id": "o_callout_266",
+   "start": 1195.17,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "2",
+   "caption": "El agujero de la lámpara",
+   "eyebrow": "AGUJERO",
+   "dur": 5.45
+  },
+  {
+   "id": "vxsag2ipph2js_s_267",
+   "start": 1200.42,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_267.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.84
+  },
+  {
+   "id": "o_chips_267",
+   "start": 1200.67,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Adónde da",
+   "chips": [
+    "A la carcasa",
+    "Al aire de la cochera"
+   ],
+   "dur": 3.49
+  },
+  {
+   "id": "vxsag2ipph2js_s_268",
+   "start": 1203.96,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_268.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.8
+  },
+  {
+   "id": "o_callout_268",
+   "start": 1204.21,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "3",
+   "caption": "Las perforaciones de ventilación",
+   "eyebrow": "AGUJERO",
+   "dur": 5.45
+  },
+  {
+   "id": "vxsag2ipph2js_s_269",
+   "start": 1209.46,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_269.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.94
+  },
+  {
+   "id": "o_keyphrase_269",
+   "start": 1209.71,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Existían para sacar el vapor",
+   "dur": 3.59
+  },
+  {
+   "id": "c_quote_270",
+   "start": 1213.1,
+   "kind": "quote",
+   "eyebrow": "TODO EL DÍA",
+   "text": "La caja que creías cerrada está *respirando* el aire de la cochera",
+   "dur": 6.64
+  },
+  {
+   "id": "vxsag2ipph2js_s_271",
+   "start": 1219.44,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_271.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.74
+  },
+  {
+   "id": "o_alertwipe_271",
+   "start": 1219.69,
+   "kind": "alertwipe",
+   "overlay": true,
+   "text": "Sin carcasa dan directo al mundo",
+   "dur": 6.39
+  },
+  {
+   "id": "vxsag2ipph2js_s_272",
+   "start": 1225.88,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_272.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.54
+  },
+  {
+   "id": "o_callout_272",
+   "start": 1226.13,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "6 mm",
+   "caption": "Por el más grande entra un ratón",
+   "eyebrow": "OJO",
+   "dur": 6.19
+  },
+  {
+   "id": "vxsag2ipph2js_s_274",
+   "start": 1235.32,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_274.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.18
+  },
+  {
+   "id": "o_checklist_274",
+   "start": 1235.57,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "Los tres, por dentro",
+   "items": [
+    {
+     "text": "Guía de onda",
+     "state": "done"
+    },
+    {
+     "text": "Lámpara",
+     "state": "doing"
+    },
+    {
+     "text": "Ventilas",
+     "state": "todo"
+    }
+   ],
+   "dur": 3.83
+  },
+  {
+   "id": "vxsag2ipph2js_s_275",
+   "start": 1239.2,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_275.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.34
+  },
+  {
+   "id": "o_keyphrase_275",
+   "start": 1239.45,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Aluminio sí. Tela gris no.",
+   "dur": 2.99
+  },
+  {
+   "id": "vxsag2ipph2js_s_276",
+   "start": 1242.24,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_276.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.1
+  },
+  {
+   "id": "o_splitlist_276",
+   "start": 1242.49,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "La cinta gris de tela",
+   "items": [
+    "Se despega con el calor",
+    "Se despega con los años"
+   ],
+   "cross": true,
+   "dur": 4.75
+  },
+  {
+   "id": "vxsag2ipph2js_s_277",
+   "start": 1247.04,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_277.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.82
+  },
+  {
+   "id": "o_callout_277",
+   "start": 1247.29,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "SELLADA",
+   "caption": "Ahora sí el desecante trabaja",
+   "eyebrow": "SILICÓN",
+   "dur": 5.47
+  },
+  {
+   "id": "c_process_278",
+   "start": 1252.56,
+   "kind": "process",
+   "eyebrow": "SE ARREGLA HOY",
+   "title": "Diez minutos",
+   "steps": [
+    {
+     "title": "Tapa la guía de onda",
+     "desc": "La placa clarita de la pared derecha"
+    },
+    {
+     "title": "Tapa la lámpara",
+     "desc": "El agujero del techo o la pared"
+    },
+    {
+     "title": "Tapa las ventilas",
+     "desc": "Las perforaciones del techo o el fondo"
+    },
+    {
+     "title": "Silicón en lo grande",
+     "desc": "Si te quedó un hueco de más"
+    }
+   ],
+   "dur": 3.66
+  },
+  {
+   "id": "c_action_279",
+   "start": 1255.92,
+   "kind": "action",
+   "eyebrow": "ESTE FIN DE SEMANA",
+   "step": "Ciérrala un día seco",
+   "question": "¿Todo adentro está a temperatura ambiente?",
+   "dur": 4.66
+  },
+  {
+   "id": "vxsag2ipph2js_s_280",
+   "start": 1260.28,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_280.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86
+  },
+  {
+   "id": "o_keyphrase_280",
+   "start": 1260.53,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "Desecante puesto, agujeros tapados",
+   "dur": 3.51
+  },
+  {
+   "id": "vxsag2ipph2js_s_281",
+   "start": 1263.84,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_281.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "o_stat_281",
+   "start": 1264.09,
+   "kind": "stat",
+   "overlay": true,
+   "value": 6,
+   "label": "pasos para este fin de semana",
+   "eyebrow": "TU PLAN",
+   "dur": 4.55
+  },
+  {
+   "id": "c_numcard_282",
+   "start": 1268.44,
+   "kind": "numcard",
+   "number": "1",
+   "name": "Checa los tres síntomas",
+   "eyebrow": "ANTES DE TIRARLO",
+   "total": "6",
+   "dur": 3.56
+  },
+  {
+   "id": "vxsag2ipph2js_s_283",
+   "start": 1271.7,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_283.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.96
+  },
+  {
+   "id": "o_callout_283",
+   "start": 1271.95,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "3 dls",
+   "caption": "la pieza que se le fue",
+   "eyebrow": "O DE VERDAD ESTÁ MUERTO",
+   "dur": 4.61
+  },
+  {
+   "id": "vxsag2ipph2js_s_284",
+   "start": 1276.36,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_284.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "o_countrail_284",
+   "start": 1276.61,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 2,
+   "total": 6,
+   "name": "Córtale el cable a ras",
+   "dur": 3.41
+  },
+  {
+   "id": "c_rule_285",
+   "start": 1279.82,
+   "kind": "rule",
+   "number": "02",
+   "title": "Sin cable no hay accidente",
+   "label": "REGLA",
+   "dur": 5.9
+  },
+  {
+   "id": "vxsag2ipph2js_s_286",
+   "start": 1285.42,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_286.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.16
+  },
+  {
+   "id": "o_splitlist_286",
+   "start": 1285.67,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Paso 3: nada de esto",
+   "items": [
+    "Fibra verde",
+    "Cloro",
+    "Chorro de manguera"
+   ],
+   "cross": true,
+   "dur": 2.81
+  },
+  {
+   "id": "vxsag2ipph2js_s_287",
+   "start": 1288.28,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_287.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16
+  },
+  {
+   "id": "o_callout_287",
+   "start": 1288.53,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "0 gotas",
+   "caption": "abierto, hasta que quede seco",
+   "dur": 2.81
+  },
+  {
+   "id": "vxsag2ipph2js_s_288",
+   "start": 1291.14,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_288.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.18
+  },
+  {
+   "id": "o_countrail_288",
+   "start": 1291.39,
+   "kind": "countrail",
+   "overlay": true,
+   "rank": 4,
+   "total": 6,
+   "name": "Tapa los tres agujeros",
+   "dur": 3.83
+  },
+  {
+   "id": "vxsag2ipph2js_s_289",
+   "start": 1295.02,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_289.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "o_splitlist_289",
+   "start": 1295.27,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Los tres agujeros",
+   "items": [
+    "La guía de onda",
+    "La lámpara",
+    "Las ventilas"
+   ],
+   "dur": 3.05
+  },
+  {
+   "id": "vxsag2ipph2js_s_290",
+   "start": 1298.12,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_290.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.24
+  },
+  {
+   "id": "o_chips_290",
+   "start": 1298.37,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Paso 5",
+   "chips": [
+    "Desecante",
+    "Traste abierto",
+    "Sin tapa"
+   ],
+   "dur": 2.89
+  },
+  {
+   "id": "c_process_291",
+   "start": 1301.06,
+   "kind": "process",
+   "eyebrow": "PARA CERRARLO",
+   "title": "Los dos últimos pasos",
+   "steps": [
+    {
+     "title": "5. Métele el desecante",
+     "desc": "En un traste abierto y cierra un día seco"
+    },
+    {
+     "title": "6. Haz la prueba de la sal",
+     "desc": "Dos platitos, tres días, sin abrir"
+    }
+   ],
+   "dur": 4.12
+  },
+  {
+   "id": "vxsag2ipph2js_s_292",
+   "start": 1304.88,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_292.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "o_checklist_292",
+   "start": 1305.13,
+   "kind": "checklist",
+   "overlay": true,
+   "title": "La prueba de la sal",
+   "eyebrow": "PASO 6",
+   "items": [
+    {
+     "text": "Dos platitos con sal",
+     "state": "done"
+    },
+    {
+     "text": "Uno adentro y uno afuera",
+     "state": "doing"
+    },
+    {
+     "text": "Tres días sin abrir",
+     "state": "todo"
+    }
+   ],
+   "dur": 3.79
+  },
+  {
+   "id": "vxsag2ipph2js_s_293",
+   "start": 1308.72,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_293.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "o_headline_293",
+   "start": 1308.97,
+   "kind": "headline",
+   "overlay": true,
+   "eyebrow": "CUANDO LOS VEAS JUNTOS",
+   "tokens": [
+    {
+     "t": "Nunca"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "suelto",
+     "hl": true
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "cajón"
+    }
+   ],
+   "dur": 4.23
+  },
+  {
+   "id": "c_alertwipe_294",
+   "start": 1313,
+   "kind": "alertwipe",
+   "text": "Si lo vas a abrir, no lo abras",
+   "dur": 4.78
+  },
+  {
+   "id": "c_blurreveal_296",
+   "start": 1321.74,
+   "kind": "blurreveal",
+   "title": "¿En qué lo vas a usar tú?",
+   "eyebrow": "ESCRÍBEME AQUÍ ABAJO",
+   "dur": 2.82
+  },
+  {
+   "id": "vxsag2ipph2js_s_297",
+   "start": 1324.26,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_297.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.4
+  },
+  {
+   "id": "o_chips_297",
+   "start": 1324.51,
+   "kind": "chips",
+   "overlay": true,
+   "title": "Cuéntame abajo",
+   "chips": [
+    "Croquetas",
+    "Herramienta",
+    "Semillas",
+    "Papeles"
+   ],
+   "dur": 3.05
+  },
+  {
+   "id": "vxsag2ipph2js_s_298",
+   "start": 1327.36,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_298.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3
+  },
+  {
+   "id": "vxsag2ipph2js_s_299",
+   "start": 1330.06,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_299.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "o_keyphrase_299",
+   "start": 1330.31,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "De aquí salen la mitad de los videos",
+   "dur": 4.21
+  },
+  {
+   "id": "vxsag2ipph2js_s_300",
+   "start": 1334.32,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_300.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.98
+  },
+  {
+   "id": "o_callout_300",
+   "start": 1334.57,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "Meses",
+   "caption": "ahí guardado, sin tirarlo",
+   "dur": 4.63
+  },
+  {
+   "id": "c_quote_301",
+   "start": 1339,
+   "kind": "quote",
+   "text": "Resulta que *tenías razón* en no tirarlo",
+   "eyebrow": "DILO EN LOS COMENTARIOS",
+   "dur": 3.68
+  },
+  {
+   "id": "vxsag2ipph2js_s_302",
+   "start": 1342.38,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_302.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4
+  },
+  {
+   "id": "c_nextvideo_303",
+   "start": 1346.08,
+   "kind": "nextvideo",
+   "kicker": "EL PRÓXIMO",
+   "title": "El refrigerador que ya no enfría",
+   "sub": "Trae adentro algo que el microondas no tiene",
+   "dur": 5.56
+  },
+  {
+   "id": "vxsag2ipph2js_s_304",
+   "start": 1351.34,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_304.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.62
+  },
+  {
+   "id": "o_stat_304",
+   "start": 1351.59,
+   "kind": "stat",
+   "overlay": true,
+   "value": 200,
+   "prefix": "$",
+   "label": "lo que cuesta una hielera nueva",
+   "dur": 3.27
+  },
+  {
+   "id": "c_bars_305",
+   "start": 1354.66,
+   "kind": "bars",
+   "eyebrow": "COMPARA",
+   "title": "Lo que cuesta cada una",
+   "bars": [
+    {
+     "label": "Hielera de tienda",
+     "value": 200,
+     "display": "200 dls"
+    },
+    {
+     "label": "La puerta que ya tienes",
+     "value": 12,
+     "display": "Gratis"
+    }
+   ],
+   "dur": 3.38
+  },
+  {
+   "id": "vxsag2ipph2js_s_306",
+   "start": 1357.74,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_306.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "o_callout_306",
+   "start": 1357.99,
+   "kind": "callout",
+   "overlay": true,
+   "figure": "2 cm",
+   "caption": "lo que hay que quitarle sí o sí",
+   "dur": 3.97
+  },
+  {
+   "id": "vxsag2ipph2js_s_307",
+   "start": 1361.76,
+   "kind": "raw",
+   "src": "img/vxsag2ipph2js_s_307.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.36
+  },
+  {
+   "id": "o_headline_307",
+   "start": 1362.01,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Nadie"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "iba"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "vender"
+    },
+    {
+     "t": "esto",
+     "hl": true
+    }
+   ],
+   "dur": 5.01
+  },
+  {
+   "id": "vxsag2ipph2js_s_308",
+   "start": 1366.82,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_308.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "o_keyphrase_308",
+   "start": 1367.07,
+   "kind": "keyphrase",
+   "overlay": true,
+   "text": "En un video, no en una tienda",
+   "dur": 3.19
+  },
+  {
+   "id": "vxsag2ipph2js_s_309",
+   "start": 1370.06,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_309.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.46
+  },
+  {
+   "id": "o_splitlist_309",
+   "start": 1370.31,
+   "kind": "splitlist",
+   "overlay": true,
+   "title": "Lo que no dura",
+   "items": [
+    "Cajas de plástico",
+    "Bolsas",
+    "Cartón"
+   ],
+   "cross": true,
+   "dur": 3.11
+  },
+  {
+   "id": "c_aged_310",
+   "start": 1373.22,
+   "kind": "aged",
+   "eyebrow": "LO DE ANTES",
+   "heading": "Cómo guardaba tu abuelo",
+   "lines": [
+    {
+     "text": "En latas"
+    },
+    {
+     "text": "En frascos"
+    },
+    {
+     "text": "En cajas de acero",
+     "mark": true
+    }
+   ],
+   "dur": 3.74
+  },
+  {
+   "id": "vxsag2ipph2js_s_311",
+   "start": 1376.66,
+   "kind": "raw",
+   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_311.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.02
+  },
+  {
+   "id": "o_headline_311",
+   "start": 1376.91,
+   "kind": "headline",
+   "overlay": true,
+   "tokens": [
+    {
+     "t": "Duraron"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "que",
+     "hl": true
+    },
+    {
+     "t": "él",
+     "hl": true
+    }
+   ],
+   "dur": 2.67
+  }
+ ]
+}
