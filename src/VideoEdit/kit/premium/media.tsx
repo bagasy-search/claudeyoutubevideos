@@ -66,7 +66,7 @@ export const FramedPhoto: React.FC<{
             <div style={{ position: "absolute", bottom: -34, left: 60, opacity: plateS, transform: `translateY(${(1 - plateS) * 16}px)` }}>
               <Card theme={t} strong accent={t.color.gold} style={{ padding: "16px 36px" }}>
                 <Display theme={t} size={38}>{caption}</Display>
-                {sub && <Support theme={t} size={23} color={t.color.textDim}>{sub}</Support>}
+                {sub && <Support theme={t} size={23}>{sub}</Support>}
               </Card>
             </div>
           </div>
@@ -250,7 +250,7 @@ export const SplitPanel: React.FC<{
                 return (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 22, opacity: s, transform: `translateX(${(1 - s) * 34}px)` }}>
                     <Tick at={at + 5} color={t.color.accent} size={54} />
-                    <Support theme={t} size={36} color={t.color.text}>{b}</Support>
+                    <Support theme={t} size={36}>{b}</Support>
                   </div>
                 );
               })}

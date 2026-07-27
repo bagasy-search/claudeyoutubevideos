@@ -13,6 +13,7 @@ import {
 const asset = (s: string) =>
   /^(https?:|data:|blob:|\/)/.test(s) ? s : staticFile(s);
 import { SPR, Theme, useTheme } from "./theme";
+import { Cinema, OnPaper, slabShadow, specular, tilt3d, useInk, useKeyLight, useStage } from "./stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // PREMIUM KIT — CORE: primitivas compartidas por todas las familias.
@@ -51,7 +52,9 @@ export const useBeat = (
 ) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const outLen = opts?.outLen ?? 12;
+  // 8 frames, no 12: el canal manda CORTE LIMPIO (feedback_video_clean_cuts) y
+  // medio segundo de disolvencia deja el gráfico fantasma sobre el b-roll.
+  const outLen = opts?.outLen ?? 8;
   const enter = spring({ frame, fps, config: opts?.enterCfg ?? SPR.soft });
   const exit = interpolate(
     frame,
@@ -196,77 +199,125 @@ export const Vignette: React.FC<{ theme?: Theme; strength?: number }> = ({
   );
 };
 
-// ── Panel — el ESCENARIO de cada componente (capa fondo del LAYER MODEL): ────
-//    gradiente profundo + rayos + textura + viñeta + hairline. Todo lo demás
-//    (midground/foreground) vive encima de esto.
+// ── Panel — el ESCENARIO de cada componente. ★ REESCRITO (jul 2026).
+//    Antes: un rectángulo crema OPACO con borde y radio que tapaba el b-roll y
+//    dejaba el plano en 2 capas planas (fondo + texto). Encima, el
+//    PremiumOverlay pintaba OTRA tarjeta crema igual → crema sobre crema, sin
+//    figura/fondo, y el video de atrás invisible.
+//    Ahora: delega en `Cinema` (stagecraft) el stack de 9 capas y SANGRA hasta
+//    el borde del frame, así el b-roll vivo sigue siendo la capa 1 del plano.
+//    El box de layout (inset:60 = 1800x960) NO cambia: las coordenadas de todos
+//    los componentes existentes siguen valiendo.
 export const Panel: React.FC<{
   theme?: Theme;
   style?: React.CSSProperties;
   radius?: number;
   raysX?: number;
   children?: React.ReactNode;
-  /** true = sin fondo (overlay puro sobre footage) */
+  /** true = sin tratamiento (overlay puro sobre footage) */
   transparent?: boolean;
-}> = ({ theme, style, radius, raysX = 66, children, transparent = false }) => {
+  /** de qué lado se apoya el papel; por defecto lo decide la zona del cue */
+  side?: "left" | "top" | "center" | "full";
+  /** solidez del papel (0.94 = casi opaco, 0.6 = se ve el b-roll a través) */
+  paper?: number;
+}> = ({ theme, style, radius, raysX, children, transparent = false, side, paper }) => {
   const t = useTheme(theme);
-  const r = radius ?? t.radius + 10;
+  const stage = useStage();
+  void radius;
+  // Sin `side` explícito: los componentes que aún reparten contenido por TODO
+  // el box necesitan papel centrado (si fuera direccional, media composición
+  // caería sobre b-roll pelado). Los reescritos sí piden su lado.
+  const s = side ?? (stage.zone === "full" ? "full" : "center");
+  // ★ NADA DE PLACA/MARCO. La versión anterior pintaba un rectángulo crema
+  //   redondeado dentro del box, con el b-roll asomando alrededor: se leía como
+  //   un marco blanco pegado encima del video. Ahora el fondo se DESENFOCA
+  //   (lo hace el `Backdrop` del overlay) y las piezas del componente flotan
+  //   directamente sobre él. Sin papel detrás, el texto queda sobre footage →
+  //   la tinta la resuelve `useInk` vía SurfaceCtx (el overlay ya puso
+  //   "footage"; cada `Card` la vuelve a "paper" para su interior).
   return (
-    <div
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        borderRadius: r,
-        ...(transparent
-          ? {}
-          : {
-              background: `radial-gradient(85% 70% at 42% 28%, ${t.color.bg1} 0%, ${t.color.bg0} 62%, ${t.mode === "dark" ? "#000" : t.color.bg2} 130%)`,
-              border: `1.5px solid ${t.color.line}`,
-              boxShadow: `inset 0 0 110px ${t.color.shadow}, 0 30px 70px ${t.color.shadow}`,
-            }),
-        ...style,
-      }}
-    >
-      {!transparent && (
-        <>
-          <Rays theme={t} x={raysX} />
-          <Texture theme={t} />
-          <Vignette theme={t} />
-        </>
+    <div style={{ position: "relative", ...style }}>
+      {/* Sólo si NADIE montó el tratamiento (uso directo del componente fuera
+          del PremiumOverlay, p.ej. la Gallery): lo pinta el Panel. */}
+      {!transparent && !stage.managed && (
+        <div style={{ position: "absolute", inset: -64, pointerEvents: "none" }}>
+          <Cinema
+            theme={t}
+            side={s}
+            paper={0}
+            edge={0.62}
+            shaftsX={raysX ?? (s === "left" ? 68 : 58)}
+            dust={14}
+          />
+        </div>
       )}
       <div style={{ position: "absolute", inset: 0 }}>{children}</div>
     </div>
   );
 };
 
-// ── Card — superficie glass del theme, con sombra multicapa real ─────────────
+// ── Card — ★ REESCRITO (jul 2026). Antes era `surface` (crema translúcido)
+//    apoyado sobre el `bg0` del Panel (crema): ~2% de diferencia de luminancia,
+//    o sea la tarjeta NO SE VEÍA como capa aparte. Ahora tiene separación de
+//    valor real (cara con degradé propio), rim light arriba, canto oscuro abajo
+//    y sombra en 3 distancias — que es lo que hace que "flote" de verdad.
 export const Card: React.FC<{
   theme?: Theme;
   style?: React.CSSProperties;
   accent?: string;
   strong?: boolean;
+  /** semilla del cabeceo 3D: dos tarjetas seguidas no deben inclinarse igual */
+  seed?: number;
+  /** 0 = plana, 1 = volumen completo (canto + inclinación + specular) */
+  dimension?: number;
   children?: React.ReactNode;
-}> = ({ theme, style, accent, strong = false, children }) => {
+}> = ({ theme, style, accent, strong = false, seed = 0, dimension = 1, children }) => {
   const t = useTheme(theme);
-  const layers = Array.from({ length: 4 }, (_, i) => {
-    const k = (i + 1) / 4;
-    return `0 ${Math.round(k * 26)}px ${Math.round(k * 40)}px ${t.color.shadow}`;
-  }).join(", ");
+  const stage = useStage();
+  const frame = useCurrentFrame();
+  const light = useKeyLight(stage.zone);
+  const dark = t.mode === "dark";
+  // OJO: `strong` se expresa SÓLO con el degradé de la cara. No agregar un div
+  // de brillo encima ni envolver a los children: varios componentes le pasan
+  // `display:flex` a la Card por `style`, y cualquier wrapper convierte esa fila
+  // en un solo item (MythTruth apilaba el chip "MITO" ENCIMA del texto).
+  // Vidrio: cara translúcida + desenfoque de lo que hay detrás. Sobre un fondo
+  // ya desenfocado por el `Backdrop`, esto da la doble profundidad que se lee
+  // como plano compuesto. La cara igual es sólida al ~93%: si el
+  // `backdrop-filter` se desactiva (ancestro con opacity<1), el texto se sigue
+  // leyendo — la legibilidad nunca depende del efecto.
+  const face = dark
+    ? `linear-gradient(168deg, ${t.color.bg2}F0, ${t.color.bg1}${strong ? "FA" : "EC"})`
+    : strong
+      ? `linear-gradient(168deg, #FFFFFFFC, #FFFBEFF8 46%, ${t.color.surfaceStrong}F4)`
+      : `linear-gradient(168deg, #FFFEF9F8, ${t.color.surfaceStrong}F0)`;
+  // VOLUMEN: el brillo especular va como PRIMERA capa de `background` (CSS
+  // admite varias) en vez de un div extra — un wrapper rompería los
+  // `display:flex` que varias tarjetas pasan por `style`. El canto sólido sale
+  // de la primera sombra de `slabShadow` (offset 0 blur = espesor de la placa),
+  // y la inclinación usa `perspective()` dentro del propio transform: poner
+  // `transform-style: preserve-3d` en un ancestro crearía un backdrop root y
+  // mataría el vidrio.
+  const edge = dark ? "rgba(0,0,0,0.55)" : "rgba(96,74,48,0.42)";
   return (
     <div
       style={{
         position: "relative",
-        background: strong ? t.color.surfaceStrong : t.color.surface,
-        border: accent
-          ? `2.5px solid ${accent}`
-          : `1.5px solid ${t.color.line}`,
+        background: dimension > 0 ? `${specular(light, 0.24 * dimension)}, ${face}` : face,
+        backdropFilter: "blur(18px) saturate(1.05)",
+        WebkitBackdropFilter: "blur(18px) saturate(1.05)",
+        border: accent ? `3px solid ${accent}` : `1px solid ${dark ? "rgba(255,255,255,0.14)" : "rgba(255,255,255,0.55)"}`,
         borderRadius: t.radius,
-        boxShadow: `${layers}, inset 0 1px 0 ${t.mode === "dark" ? "rgba(255,255,255,0.09)" : "rgba(255,255,255,0.5)"}`,
-        backdropFilter: "blur(14px) saturate(120%)",
-        WebkitBackdropFilter: "blur(14px) saturate(120%)",
+        transform: dimension > 0 ? tilt3d({ amount: 0.32 * dimension, seed, frame }) : undefined,
+        boxShadow: [
+          `inset 0 2px 0 ${dark ? "rgba(255,255,255,0.10)" : "rgba(255,255,255,0.95)"}`,
+          `inset 0 -2px 0 ${dark ? "rgba(0,0,0,0.45)" : "rgba(42,38,32,0.10)"}`,
+          slabShadow(light, { lift: 1 + dimension * 0.4, edge }),
+        ].join(", "),
         ...style,
       }}
     >
-      {children}
+      <OnPaper>{children}</OnPaper>
     </div>
   );
 };
@@ -278,30 +329,35 @@ export const Eyebrow: React.FC<{
   size?: number;
   style?: React.CSSProperties;
   children: React.ReactNode;
-}> = ({ theme, color, size = 24, style, children }) => {
+}> = ({ theme, color, size = 28, style, children }) => {
   const t = useTheme(theme);
+  const ink = useInk(t);
+  const col = color ?? ink.accent;
   return (
     <div
       style={{
         fontFamily: t.fontLabel,
         fontSize: size,
         fontWeight: 700,
-        letterSpacing: t.labelSpacing,
+        letterSpacing: t.labelSpacing + 2,
         textTransform: t.upperLabels ? "uppercase" : "none",
-        color: color ?? t.color.accent,
+        color: col,
+        textShadow: ink.shadow,
         display: "flex",
         alignItems: "center",
-        gap: 14,
+        gap: 16,
         ...style,
       }}
     >
       <span
         style={{
           display: "inline-block",
-          width: 34,
-          height: 3,
-          background: color ?? t.color.accent,
+          width: 44,
+          height: 4,
+          background: col,
           borderRadius: 2,
+          boxShadow: `0 0 16px ${col}66`,
+          flexShrink: 0,
         }}
       />
       {children}
@@ -315,16 +371,19 @@ export const Display: React.FC<{
   color?: string;
   style?: React.CSSProperties;
   children: React.ReactNode;
-}> = ({ theme, size = 58, color, style, children }) => {
+}> = ({ theme, size = 64, color, style, children }) => {
   const t = useTheme(theme);
+  const ink = useInk(t);
   return (
     <div
       style={{
         fontFamily: t.fontDisplay,
         fontSize: size,
         fontWeight: t.displayWeight,
-        color: color ?? t.color.text,
-        lineHeight: 1.06,
+        color: color ?? ink.text,
+        lineHeight: 1.08,
+        letterSpacing: -0.5,
+        textShadow: size >= 56 ? ink.shadowStrong : ink.shadow,
         textTransform: t.name === "alarm" ? "uppercase" : "none",
         ...style,
       }}
@@ -340,16 +399,20 @@ export const Support: React.FC<{
   color?: string;
   style?: React.CSSProperties;
   children: React.ReactNode;
-}> = ({ theme, size = 28, color, style, children }) => {
+}> = ({ theme, size = 32, color, style, children }) => {
   const t = useTheme(theme);
+  const ink = useInk(t);
+  // piso duro de legibilidad: por debajo de 26px sobre 1080p no se lee en celular
+  const s = Math.max(26, size);
   return (
     <div
       style={{
         fontFamily: t.fontBody,
-        fontSize: size,
+        fontSize: s,
         fontWeight: 500,
-        color: color ?? t.color.textSoft,
-        lineHeight: 1.3,
+        color: color ?? ink.soft,
+        lineHeight: 1.34,
+        textShadow: ink.shadow,
         ...style,
       }}
     >
@@ -619,6 +682,7 @@ export const Odo: React.FC<{
   grouped?: boolean; // separador de miles
 }> = ({ value, theme, size = 96, color, prefix = "", suffix = "", at = 0, dur = 55, grouped = true }) => {
   const t = useTheme(theme);
+  const ink = useInk(t);
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = spring({ frame: frame - at, fps, config: { damping: 200, mass: 1, stiffness: 55 }, durationInFrames: dur });
@@ -627,7 +691,7 @@ export const Odo: React.FC<{
   // salta el ancho ni se desalinean los separadores durante la animación.
   const padded = grouped ? fmt(value) : Math.round(value).toString();
   const cellH = size * 1.14;
-  const col = color ?? t.color.text;
+  const col = color ?? ink.text;
   return (
     <div
       style={{
@@ -639,6 +703,7 @@ export const Odo: React.FC<{
         fontWeight: Math.max(t.displayWeight, 700),
         lineHeight: 1,
         fontVariantNumeric: "tabular-nums",
+        textShadow: ink.shadowStrong,
       }}
     >
       {prefix && <span style={{ marginRight: size * 0.06 }}>{prefix}</span>}

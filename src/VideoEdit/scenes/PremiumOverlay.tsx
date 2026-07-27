@@ -1,83 +1,62 @@
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
 import type { Theme } from "../kit/premium/theme";
+import { Backdrop, OnFootage, StageCtx, ZONE_INFO, type StageZone } from "../kit/premium/stagecraft";
 
-// ── PREMIUM OVERLAY — encaja cualquier componente del kit premium (que internamente
-// es un AbsoluteFill/Stage a pantalla completa) dentro de una TARJETA en la ZONA
-// SEGURA del frame, dejando el b-roll visible alrededor y el avatar PiP abajo-derecha
-// libre. El kit premium fue diseñado full-bleed (inset:60) → acá lo escalamos con
-// CSS `transform: scale()` dentro de un contenedor recortado del tamaño de destino,
-// así el componente se ve GRANDE y legible pero no tapa el resto del frame.
-// `zone`:
-//   · "topLeft"  (default) — cuadrante superior-izquierdo grande, deja abajo-derecha
-//     libre para el avatar cornerBR y se ve b-roll en los bordes.
-//   · "left"     — franja izquierda alta (2/3 ancho), para diagramas anchos.
-//   · "top"      — franja superior ancha, para comparaciones/listas horizontales.
-//   · "full"     — casi toda la pantalla (para el HOOK inicial / CTA final, sin avatar
-//     compitiendo esos instantes).
-const ZONES: Record<string, { left: number; top: number; w: number; h: number }> = {
-  topLeft: { left: 48, top: 48, w: 1330, h: 760 },
-  left: { left: 48, top: 48, w: 1260, h: 984 },
-  top: { left: 48, top: 48, w: 1824, h: 660 },
-  full: { left: 24, top: 24, w: 1872, h: 1032 },
-};
-
-// tamaño "de diseño" de los componentes premium (piensan en 1920x1080 full-bleed)
-const DESIGN_W = 1920, DESIGN_H = 1080;
+// ═══════════════════════════════════════════════════════════════════════════
+// PREMIUM OVERLAY — monta un componente del kit premium sobre el b-roll.
+//
+// ★ REESCRITO (jul 2026). La versión vieja hacía DOS cosas que arruinaban todos
+//   los componentes del canal:
+//
+//   1) ESCALABA el componente a 0.61–0.69 para dejar la esquina inferior-derecha
+//      libre "para el avatar cornerBR". Ese PiP ya NO EXISTE: la regla del canal
+//      es avatar FULL o HIDDEN (feedback_video_avatar_full_or_fullvisual), así
+//      que se estaba encogiendo todo para esquivar algo que no está. Resultado:
+//      títulos de 58px que aterrizaban a 36px y subtítulos a 16px (ilegibles en
+//      celular), más letterbox: hasta 650px de crema vacío por fitear un diseño
+//      16:9 dentro de una zona que no lo es.
+//   2) PINTABA SU PROPIA TARJETA crema, encima de la que ya pinta el Panel del
+//      componente → dos rectángulos casi del mismo color, uno adentro del otro,
+//      y el b-roll TAPADO. Cero compositing: se leía como diapositiva pegada.
+//
+//   Ahora: escala 1:1, SIN fondo propio. El componente compone sobre el b-roll
+//   vivo (el Cinema del kit lo hunde, lo desenfoca y le apoya el papel encima).
+//   `zone` sobrevive como PISTA DE COMPOSICIÓN — de qué lado se apoya el texto
+//   y por dónde respira la imagen — y viaja por contexto a los componentes.
+// ═══════════════════════════════════════════════════════════════════════════
 
 export const PremiumOverlay: React.FC<{
   durationInFrames: number;
-  zone?: keyof typeof ZONES;
+  zone?: StageZone;
   theme?: Theme;
   children: React.ReactNode;
 }> = ({ durationInFrames, zone = "topLeft", theme, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const z = ZONES[zone] || ZONES.topLeft;
-  const scale = Math.min(z.w / DESIGN_W, z.h / DESIGN_H);
-  const enter = spring({ frame, fps, config: { damping: 20, mass: 0.8, stiffness: 130 } });
-  const out = interpolate(frame, [durationInFrames - 12, durationInFrames], [1, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-  const op = Math.min(enter * 1.15, 1) * out;
-  const slide = (1 - enter) * -26;
-  const bg = theme?.color.surface || "rgba(245,238,220,0.92)";
-  const line = theme?.color.line || "rgba(42,38,32,0.16)";
-  const shadow = theme?.color.shadow || "rgba(42,38,32,0.2)";
-  const radius = theme?.radius ?? 26;
+  const info = ZONE_INFO[zone] ?? ZONE_INFO.topLeft;
+  // ★ El overlay NO toca la opacidad. Todos los componentes del kit ya hacen su
+  //   entrada y salida con `useBeat` (spring de entrada + fade de 12 frames al
+  //   final). Cuando el overlay ADEMÁS fundía, los dos fades se multiplicaban y
+  //   el último medio segundo del plano quedaba fantasma (se veía el b-roll a
+  //   través del texto). Acá sólo queda un asentamiento de escala imperceptible.
+  const enter = spring({ frame, fps, config: { damping: 22, mass: 0.85, stiffness: 120 } });
+  const scale = 1.012 - enter * 0.012;
+  void interpolate;
 
+  // ★ El TRATAMIENTO DEL FONDO lo monta ACÁ el overlay, no el componente: el
+  //   `backdrop-filter` se anula si algún ancestro tiene `opacity < 1`, y los
+  //   componentes se funden con `useBeat`. Montado acá (opacidad siempre 1) el
+  //   desenfoque puede ANIMARSE: el fondo se va de foco, aparecen las piezas
+  //   encima, y al final el fondo vuelve. `managed:true` le avisa al `Panel`
+  //   que no lo pinte de nuevo.
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <div
-        style={{
-          position: "absolute",
-          left: z.left,
-          top: z.top,
-          width: z.w,
-          height: z.h,
-          opacity: op,
-          transform: `translateY(${slide}px)`,
-          borderRadius: radius + 10,
-          overflow: "hidden",
-          background: bg,
-          border: `1.5px solid ${line}`,
-          boxShadow: `0 30px 70px ${shadow}`,
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            left: (z.w - DESIGN_W * scale) / 2,
-            top: (z.h - DESIGN_H * scale) / 2,
-            width: DESIGN_W,
-            height: DESIGN_H,
-            transform: `scale(${scale})`,
-            transformOrigin: "top left",
-          }}
-        >
-          {children}
-        </div>
-      </div>
+      <Backdrop theme={theme} durationInFrames={durationInFrames} zone={zone} />
+      <AbsoluteFill style={{ transform: `scale(${scale})` }}>
+        <StageCtx.Provider value={{ ...info, managed: true }}>
+          <OnFootage>{children}</OnFootage>
+        </StageCtx.Provider>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };

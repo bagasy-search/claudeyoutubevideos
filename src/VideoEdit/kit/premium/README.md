@@ -15,10 +15,155 @@ import { VsDuel, ThemeProvider, THEME_NATURE } from "./kit/premium";
 ```
 
 **Contrato:** todo componente recibe `durationInFrames` (entra con spring, sale
-con fade en los últimos ~12 frames) + `theme?` opcional + props de contenido.
+con fade en los últimos ~8 frames) + `theme?` opcional + props de contenido.
 Render-safe: determinista, clampeado, sin assets obligatorios (toda prop `image`
 es opcional — sin imagen dibuja un placeholder digno; en producción pasá
 `staticFile(...)`).
+
+---
+
+## ★★★ MODELO DE CAPAS (`stagecraft.tsx`) — leer ANTES de tocar un componente
+
+Julio 2026: los componentes se veían **flojos** en los videos y la causa NO estaba
+en los componentes, estaba en cómo se montaban. Diagnóstico medido sobre stills
+reales (`scripts/proofshots.mjs`), no de memoria:
+
+1. **`PremiumOverlay` escalaba todo a 0.61–0.69×.** Encajaba un diseño de 1920x1080
+   dentro de una "zona" para dejar libre la esquina del **avatar PiP… que ya no
+   existe** (la regla del canal es avatar FULL o HIDDEN — `avatar_*.gen.ts` tiene
+   0 ventanas PiP). Un título de 58px aterrizaba en 36px y un `sub` de 26px en
+   16px: ilegible en celular.
+2. **Doble tarjeta crema.** El overlay pintaba su propio fondo `surface` y adentro
+   el `Panel` del componente pintaba otro casi idéntico → dos rectángulos crema,
+   uno dentro del otro, con el b-roll TAPADO. Cero compositing.
+3. **Letterbox**: fitear 16:9 en zonas que no lo son dejaba hasta ~650px de crema
+   vacío (por eso las composiciones se veían chicas y perdidas).
+4. **Sin separación de valor**: `Card` (`rgba(245,238,220,.92)`) sobre `Panel`
+   (`#EFE7D3`) = ~2% de diferencia de luminancia. Las tarjetas no se leían.
+5. **Capas nominales**: `Rays`/`Texture`/`Vignette` a 0.09–0.16 de opacidad sobre
+   crema son invisibles. En la práctica eran 2 capas, no 6-9.
+6. **Motion muerto**: los springs asentaban en ~1s y el plano quedaba clavado los
+   4-6s restantes.
+7. **Colisiones**: el sello de `ChecklistReveal` (`right:-60/top:-46`) caía sobre
+   el título; el `Burst` de `StampBadge` salía del ángulo y no del centro.
+8. **Doble fade de salida**: el `useBeat` del componente y el `out` del overlay se
+   multiplicaban → el final del plano quedaba fantasma.
+
+**La arquitectura ahora** — el MONTAJE trata el fondo, el componente pone L5/L7/L8:
+
+| | capa | quién |
+|---|---|---|
+| L1 | PLATE — el b-roll vivo | el Main, DEBAJO. Nunca se tapa entero |
+| L2 | GRADE — hunde y tiñe el plate | `Backdrop` (en `PremiumOverlay`) |
+| L3 | DEPTH — desenfoque real de lo de atrás (`backdrop-filter`), **animado** | `Backdrop` |
+| L4 | SHAFTS — haces de luz que respiran | `Backdrop` |
+| L5 | PAPEL — región con canto vivo, **translúcida** | el componente: `Band` / `Column` |
+| L6 | GRAIN + halación + aberración de lente | `Backdrop` (`Grain`, `Halation`, `ChromaEdge`) |
+| L7 | MID — fotos, medallones, tarjetas de vidrio | el componente (`Card`, `Slab`, `Plinth`) |
+| L8 | FORE — tipografía | el componente (`Headline`, `Kicker`, `Underline`) |
+| L9 | ATMOS — polvo, barrido, viñeta | `Backdrop` (`Dust`, `Sweep`, `LensVignette`) |
+
+### Por qué el tratamiento vive en el OVERLAY y no en el componente
+`backdrop-filter` (el desenfoque real) **se anula si algún ancestro tiene
+`opacity < 1`** — crea un *backdrop root*. Y todos los componentes se funden con
+`useBeat`. Con el tratamiento adentro, el desenfoque se apagaba justo durante la
+entrada y la salida. Montado en `PremiumOverlay` (opacidad siempre 1) el blur
+puede **animarse**: el fondo se va de foco en ~14 frames, las piezas llegan
+encima, y al final el fondo vuelve al foco. `StageCtx.managed` le avisa al
+`Panel`/`Cinema` que no lo pinten de nuevo.
+
+### ★ NADA DE MARCO / PLACA
+La primera versión del arreglo ponía una placa crema redondeada dentro del box,
+con el b-roll asomando alrededor: se lee como **un marco blanco pegado encima del
+video** y es exactamente lo que el usuario rechazó. La regla es: el fondo se
+DESENFOCA y las piezas FLOTAN sobre él. Papel sólo como región a sangre
+(`Band`/`Column`, translúcidas con `backdrop-filter`), nunca como recuadro.
+
+### Sistema de TINTA (`useInk` + `SurfaceCtx`)
+Sin papel detrás, el texto cae sobre b-roll oscurecido y la tinta casi negra del
+theme desaparece. `useInk()` devuelve color y stack de sombras según la
+superficie: `PremiumOverlay` declara `footage`; `Card`/`Slab` vuelven a `paper`
+para su interior; los componentes con `Band`/`Column` envuelven su texto en
+`<OnPaper>`. **`OnPaper`/`OnFootage` son Providers puros: no crean nodo DOM, así
+que son seguros dentro de contenedores flex.**
+Todo color de texto tiene que salir de ahí — `Display`, `Support`, `Eyebrow`,
+`Headline`, `Kicker` y `Odo` ya lo hacen. Si escribís un `color:` a mano en un
+style, lo estás rompiendo.
+
+### ★ PROFUNDIDAD — los 3 sistemas que hacen que sea un espacio y no una pila
+
+**1 · UNA luz para toda la escena — `useKeyLight(zone)`**
+Los haces, el brillo especular de cada tarjeta y la dirección de CADA sombra
+salen de la misma fuente, y respira despacio. Es lo que hace que el conjunto se
+lea como un espacio iluminado en vez de piezas con `box-shadow` genérica.
+- `slabShadow(light, {lift, edge})` — sombra de objeto SÓLIDO: canto duro (offset
+  con blur 0 = el espesor de la placa) + contacto + dos difusas lejanas, todas
+  cayendo del lado contrario a la luz.
+- `specular(light, strength)` — brillo que sigue a la luz. Va como **primera capa
+  de `background`** (CSS admite varias), nunca como div extra: un wrapper rompería
+  los `display:flex` de las tarjetas.
+- `tilt3d({amount, seed, frame})` — perspectiva real por elemento. **Usa
+  `perspective()` dentro del propio transform y NO `transform-style: preserve-3d`**:
+  preserve-3d crea un *backdrop root* y mataría el vidrio de las tarjetas.
+  ⚠️ Calibración: en una tarjeta ANCHA (1400 px) 1,3° de `rotateY` ya la deja
+  trapezoidal. El volumen viene del canto y la sombra; la inclinación es sólo el
+  toque que rompe la planitud (`amount` ~0.3 en tarjetas, ~1.2 en medallones).
+
+**2 · RACK FOCUS — el foco sigue lo que se está contando — `useRack(n, dur)`**
+Mientras se revela el ítem *i*, ese ítem está nítido y adelante; los demás se van
+de foco y retroceden. Cuando terminó de revelarse todo, **TODO vuelve a foco** —
+el espectador tiene que poder leer la lista completa. Es el equivalente a que el
+camarógrafo mueva el foco al sujeto del que se habla, y es lo que convierte
+"capas apiladas" en profundidad.
+```tsx
+const rack = useRack(items.length, durationInFrames, { blur: 1.8, dim: 0.22 });
+const f = rack(i);   // → {focus, blur, opacity, scale, style}
+```
+⚠️ **Calibración: el foco SUGIERE, no esconde.** Con `blur: 4.2 / dim: 0.5` el
+ítem fuera de foco quedaba ilegible. Valores sanos: listas `blur 1.8-2.0`,
+diagramas `blur 2.3`, `dim` ≤ 0.26.
+
+**3 · Capas de fondo con distancia real**
+`Bokeh` (discos desenfocados muy al fondo, con parallax propio) + `Reflection`
+(reflejo bajo objetos flotantes: los apoya en algo en vez de pegarlos al frame)
++ `Plinth` (sombra de contacto). El `Backdrop` ya monta el bokeh.
+
+### Movimiento
+- `mblur(s, px)` — desenfoque de movimiento que decae con el spring. **Nada
+  aparece nítido de una**: llega movido y se resuelve en ~4 frames. Es el tell
+  nº1 de un plano hecho en AE. Devuelve `undefined` al asentar (no deja un
+  filter activo todo el plano).
+- `useEntrance(at)` — la versión completa (opacidad + rise + overshoot + mblur).
+- `useDrift(depth)` / `usePush()` — parallax por capa y push de cámara: ningún
+  plano queda clavado después de la entrada.
+
+### Reglas duras al escribir/tocar un componente
+- **Escala 1:1 SIEMPRE.** Nada de encoger para "dejar lugar". No hay PiP.
+- **Cero marcos.** Fondo desenfocado + piezas flotando. Papel sólo a sangre.
+- **Ningún color de texto a mano**: todo por `useInk()`. Y declarar la superficie
+  con `<OnPaper>` cuando el texto se apoya en un `Band`/`Column`.
+- **Pisos de tipografía @1080p:** display ≥ 48 (título de plano 74-96), ítem ≥ 32,
+  `Support` ≥ 26 (ya está clampeado en `core.tsx`). Pasá los strings largos por
+  `autoSize()` en vez de dejar que rompan el layout.
+- **El b-roll respira.** Nunca un rectángulo opaco de borde a borde: región de
+  papel con canto + footage graduado alrededor.
+- **Nada de scrim global lechoso.** Si el contenido se reparte por todo el box, va
+  `Plate` (placa con canto), no un degradé translúcido.
+- **Los sellos y badges tienen lugar RESERVADO**, jamás `top/right` negativos
+  sobre un bloque de texto.
+- **`Card` no envuelve a sus children.** Varios componentes le pasan
+  `display:flex` por `style`; cualquier wrapper convierte la fila en un solo item.
+- **Un solo fade de salida** (el de `useBeat`). El overlay no toca opacidad.
+
+### Compuerta de verificación (obligatoria si tocaste el kit)
+```
+node scripts/proofshots.mjs _proof/after
+```
+Rinde los componentes **en uso real** (plate de b-roll + `PremiumOverlay`) a
+1920x1080, 2 muestras por beat (frame 70 y 150 de 180): la segunda es la que caza
+lo que aparece tarde (sellos, ticks finales). La `PremiumGallery` NO sirve para
+esto: los muestra a 0.49 sobre fondo liso y **miente**. Los casos viven en
+`StageProof.tsx` — agregá ahí el componente que toques.
 
 ## Themes (`theme.ts`)
 
