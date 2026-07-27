@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill, OffthreadVideo, Img, staticFile, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { F_INTER } from "./premium/theme";
+import { slabShadow, specular } from "./premium/stagecraft";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // DR. FEDERER · LÍNEA PREMIUM — componentes de estatus para elevar la marca.
@@ -8,7 +9,7 @@ import { F_INTER } from "./premium/theme";
 // marca (línea EKG viva, monograma, anillos de progreso) · tipografía fina ·
 // hairline de ORO que da autoridad. RENDER-SAFE (todo determinista).
 // ═══════════════════════════════════════════════════════════════════════════
-const INK0 = "#040d10", INK1 = "#0a1c21";
+const INK0 = "#040d10";
 const TEAL = "#19CDC6", TEALd = "#0B8681", TEALhi = "#8BF6EF";
 const GOLD = "#E7C27D", GOLDd = "#C99A4E";
 const W = "#F4FBFB", WSOFT = "rgba(226,244,243,0.64)", WDIM = "rgba(226,244,243,0.34)";
@@ -21,23 +22,115 @@ const useIn = (delay = 0, cfg = easeOut) => {
   return spring({ frame: f - delay, fps, config: cfg });
 };
 
+// ── LUZ DE ESCENA FIJA ──────────────────────────────────────────────────────
+// El canal tiene una key desde arriba-izquierda (el propio backdrop la declara
+// en `at 25% 15%`). Se fija como constante en vez de hook para que `glass()`
+// siga siendo una función PURA: varios componentes la esparcen dentro de un
+// `.map()` y un hook ahí sería violación de reglas de hooks. Que sea la MISMA
+// para todo el kit es justamente lo que hace que se lea como una escena.
+const FED_LIGHT = { x: 0.25, y: 0.12, sx: 0.549, sy: 0.835, angle: 56.6 };
+
+// ── glass — ★ AHORA CON VOLUMEN. Antes: un degradé plano + una sombra genérica.
+//    Ahora suma brillo especular que sigue a la key (primera capa de
+//    `background`, sin div extra para no romper los `display:flex`) y sombra de
+//    objeto sólido: canto duro = espesor de la placa, más tres difusas.
 const glass = (r = 24): React.CSSProperties => ({
-  background: "linear-gradient(180deg, rgba(20,46,52,0.82), rgba(5,15,19,0.88))",
+  background: `${specular(FED_LIGHT, 0.22)}, linear-gradient(180deg, rgba(20,46,52,0.84), rgba(5,15,19,0.9))`,
   borderRadius: r,
   border: `1px solid ${HAIR}`,
-  boxShadow: "0 34px 90px rgba(0,0,0,0.58), inset 0 1px 0 rgba(255,255,255,0.16), inset 0 0 46px rgba(25,205,198,0.06)",
-  backdropFilter: "blur(16px)",
-  WebkitBackdropFilter: "blur(16px)",
+  boxShadow: `${slabShadow(FED_LIGHT, { lift: 1.5, edge: "rgba(0,0,0,0.62)", tint: "rgba(0,0,0,0.5)" })}, inset 0 1px 0 rgba(255,255,255,0.18), inset 0 -1px 0 rgba(0,0,0,0.5), inset 0 0 46px rgba(25,205,198,0.07)`,
+  backdropFilter: "blur(18px) saturate(1.06)",
+  WebkitBackdropFilter: "blur(18px) saturate(1.06)",
 });
 
-// fondo clínico profundo — para que los takeover premium se vean limpios sobre el b-roll
-export const PremiumBackdrop: React.FC = () => (
-  <AbsoluteFill>
-    <AbsoluteFill style={{ background: "radial-gradient(130% 100% at 25% 15%, #123b42, #040d10 72%)" }} />
-    <AbsoluteFill style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)", backgroundSize: "54px 54px" }} />
-    <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0.45))" }} />
-  </AbsoluteFill>
-);
+// ── grano de película en la paleta del canal (no el del theme terroso) ───────
+const FedGrain: React.FC<{ amount?: number }> = ({ amount = 0.1 }) => {
+  const f = useCurrentFrame();
+  const dx = Math.round((((f * 37 + 13) * 9301 + 49297) % 233280) / 233280 * 60) - 30;
+  const dy = Math.round((((f * 61 + 7) * 9301 + 49297) % 233280) / 233280 * 60) - 30;
+  return (
+    <svg width="120%" height="120%" style={{ position: "absolute", left: -60, top: -60, opacity: amount, mixBlendMode: "screen", pointerEvents: "none", transform: `translate(${dx}px, ${dy}px)` }}>
+      <filter id="fedgrain">
+        <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves={3} seed={11} stitchTiles="stitch" />
+        <feColorMatrix type="matrix" values="0 0 0 0 0.72  0 0 0 0 0.86  0 0 0 0 0.86  0 0 0 0.6 0" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#fedgrain)" />
+    </svg>
+  );
+};
+
+// ── PremiumBackdrop — ★ REESCRITO. Antes eran 3 degradés planos + una grilla:
+//    el fondo de los takeover no tenía NINGUNA distancia, así que las tarjetas
+//    de vidrio flotaban sobre una pared lisa. Ahora es un espacio: bokeh muy al
+//    fondo, haces de luz que respiran, deriva lenta por capa, grano y viñeta de
+//    lente. Sigue siendo sobrio — el canal manda "menos es más".
+export const PremiumBackdrop: React.FC = () => {
+  const f = useCurrentFrame();
+  const drift = Math.sin(f / 210) * 10;
+  const breathe = 0.72 + 0.28 * Math.sin(f / 150);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <AbsoluteFill style={{ background: `radial-gradient(130% 100% at ${25 + drift * 0.3}% 15%, #123b42, ${INK0} 72%)` }} />
+      {/* bokeh profundo: la capa que convence al ojo de que hay distancia */}
+      <AbsoluteFill style={{ mixBlendMode: "screen", transform: `translateX(${drift}px)` }}>
+        {Array.from({ length: 7 }, (_, i) => {
+          const r = ((i * 37 + 13) % 9) / 9;
+          const size = 180 + r * 340;
+          const col = i % 3 === 0 ? GOLD : TEAL;
+          return (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: `${(((i * 53 + 11) % 97) / 97) * 100}%`,
+                top: `${(((i * 71 + 29) % 89) / 89) * 100}%`,
+                width: size,
+                height: size,
+                marginLeft: -size / 2,
+                marginTop: -size / 2,
+                borderRadius: "50%",
+                background: `radial-gradient(circle at 42% 38%, ${col}1E 0%, ${col}0C 56%, rgba(0,0,0,0) 72%)`,
+                filter: `blur(${16 + r * 22}px)`,
+                opacity: 0.5 + 0.5 * Math.sin(f / (120 + i * 21) + i),
+              }}
+            />
+          );
+        })}
+      </AbsoluteFill>
+      {/* haces: entran por la key, con volumen y respiración */}
+      <AbsoluteFill style={{ mixBlendMode: "screen", opacity: breathe }}>
+        {Array.from({ length: 4 }, (_, i) => (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: `${12 + i * 9 + Math.sin(f / 190 + i) * 1.4}%`,
+              top: "-20%",
+              width: `${4 + ((i * 29) % 7)}%`,
+              height: "175%",
+              background: `linear-gradient(90deg, rgba(0,0,0,0), ${TEALhi}12 45%, rgba(0,0,0,0))`,
+              transform: `rotate(${16 + i * 2}deg)`,
+              transformOrigin: "top center",
+              filter: `blur(${22 + i * 8}px)`,
+            }}
+          />
+        ))}
+      </AbsoluteFill>
+      {/* la grilla clínica queda, pero al fondo y con deriva propia */}
+      <AbsoluteFill
+        style={{
+          backgroundImage: "linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px)",
+          backgroundSize: "54px 54px",
+          transform: `translate(${drift * 0.5}px, ${drift * 0.2}px)`,
+        }}
+      />
+      <FedGrain amount={0.09} />
+      {/* viñeta de lente: cierra el plano y empuja el foco al centro */}
+      <AbsoluteFill style={{ background: `radial-gradient(118% 88% at 50% 46%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.34) 76%, rgba(0,0,0,0.62) 100%)` }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.4))" }} />
+    </AbsoluteFill>
+  );
+};
 
 // hairline dorado (detalle de estatus)
 const GoldLine: React.FC<{ w: number; delay?: number }> = ({ w, delay = 4 }) => {
@@ -273,16 +366,28 @@ export const PremiumProtocol: React.FC<{ title?: string; steps: { title: string;
           const op = appear * (1 - 0.5 * passed);
           const cardScale = 1 + 0.05 * focus;
           const left = startX + i * (cardW + gap);
+          // ★ RACK FOCUS — lo que faltaba y lo que la propia skill del canal pide
+          //   ("escenas de profundidad con blur/glow/parallax/rack-focus"). La
+          //   cámara ya recorría las tarjetas, pero TODAS quedaban nítidas: el
+          //   recorrido se sentía un carrusel, no una lente. Ahora la que no está
+          //   en foco se va de foco de verdad.
+          const off = 1 - focus;
+          const rackBlur = off * 4.2 + (1 - appear) * 8; // desenfoque de foco + de entrada
+          // giro sutil HACIA la cámara: la fila deja de ser plana y se lee como
+          // un arco físico. perspective() por elemento (nunca preserve-3d: crea
+          // un backdrop root y mataría el vidrio).
+          const yaw = Math.max(-9, Math.min(9, (i - pos) * -5.5));
           return (
             <div key={i} style={{
               position: "absolute", left, top, width: cardW, height: cardH, boxSizing: "border-box",
               ...glass(24), padding: "28px 26px",
               opacity: op,
-              transform: `translateY(${(1 - appear) * 34}px) scale(${cardScale})`,
+              filter: rackBlur > 0.2 ? `blur(${rackBlur.toFixed(2)}px)` : undefined,
+              transform: `perspective(1500px) translateY(${(1 - appear) * 34}px) rotateY(${yaw.toFixed(2)}deg) scale(${cardScale})`,
               borderColor: focus > 0.6 ? `${TEAL}66` : HAIR,
-              boxShadow: focus > 0.6
-                ? `0 40px 100px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.18), 0 0 60px rgba(25,205,198,${0.10 + 0.14 * focus})`
-                : "0 30px 80px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.14)",
+              // la sombra de objeto sólido de glass() se CONSERVA y se le suma el
+              // glow de foco (antes se pisaba entera y se perdía el canto).
+              boxShadow: `${slabShadow(FED_LIGHT, { lift: 1.4 + focus, edge: "rgba(0,0,0,0.62)", tint: "rgba(0,0,0,0.52)" })}, inset 0 1px 0 rgba(255,255,255,0.18), inset 0 -1px 0 rgba(0,0,0,0.5)${focus > 0.5 ? `, 0 0 ${Math.round(40 + 40 * focus)}px rgba(25,205,198,${(0.08 + 0.16 * focus).toFixed(3)})` : ""}`,
             }}>
               <div style={{ width: 64, height: 64, borderRadius: "50%", background: `radial-gradient(circle at 35% 30%, ${GOLD}, ${GOLDd})`, display: "flex", alignItems: "center", justifyContent: "center", color: INK0, fontWeight: 900, fontSize: 32, marginBottom: 20, boxShadow: `0 8px 20px rgba(0,0,0,0.4), inset 0 2px 6px rgba(255,255,255,0.35)` }}>{i + 1}</div>
               <div style={{ color: W, fontWeight: 800, fontSize: 29, lineHeight: 1.1 }}>{s.title}</div>

@@ -17,6 +17,22 @@ import {
   QuoteCard,
   SectionDiagram,
 } from "../../amish/AmishKit";
+import {
+  PremiumAuthorityQuote,
+  PremiumChapter,
+  PremiumLowerThird,
+  PremiumProtocol,
+  PremiumStatRing,
+} from "../federer_premium";
+import {
+  AlertaCorner,
+  AntesDespues,
+  CalloutFlecha,
+  DatoClaveBadge,
+  LowerThirdFederer,
+  MitoVsRealidad,
+  TickerAlerta,
+} from "../federer_broadcast";
 
 // ═══════════════════════════════════════════════════════════════════════════
 // StageProof — BANCO DE PRUEBAS de los componentes EN USO REAL.
@@ -264,6 +280,23 @@ const AMISH_CASES: { name: string; el: (d: number) => React.ReactNode }[] = [
   { name: "QuoteCard", el: (d) => <QuoteCard durationInFrames={d} quote="Nadie construía una bodega para un invierno. Se construía para el invierno de los nietos." source="Manual de granja, 1904" /> },
 ];
 
+// ── KIT PROPIO DEL DR. FEDERER (dark cinematic). No pasa por PremiumOverlay:
+//    cada takeover trae su propio PremiumBackdrop.
+const FED_CASES: { name: string; el: () => React.ReactNode }[] = [
+  { name: "PremiumLowerThird", el: () => <PremiumLowerThird title="Por qué la piel madura pierde firmeza" /> },
+  { name: "PremiumStatRing", el: () => <PremiumStatRing value={78} suffix="%" eyebrow="Dato clave" support="de la firmeza depende del colágeno que todavía conserva" pct={78} /> },
+  { name: "PremiumAuthorityQuote", el: () => <PremiumAuthorityQuote quote="La piel no envejece por el paso del tiempo: envejece por la oxidación que nadie frena." /> },
+  { name: "PremiumChapter", el: () => <PremiumChapter index={2} kicker="El método" title="El aceite que sí penetra" /> },
+  { name: "LowerThirdFederer", el: () => <LowerThirdFederer kicker="DR. FEDERER" title="El aceite que sí penetra la piel" subtitle="Medicina · Salud natural" /> },
+  { name: "AlertaCorner", el: () => <AlertaCorner tag="Atención" headline="No todos los aceites llegan a la dermis" desc="el tamaño de la molécula decide si entra o se queda arriba" /> },
+  { name: "TickerAlerta", el: () => <TickerAlerta tag="Salud" items={["El colágeno cae 1% por año desde los 25", "La oxidación acelera con el sol", "Romero: ácido carnósico y rosmarínico"]} /> },
+  { name: "AntesDespues", el: () => <AntesDespues before={P1} after={P2} labelA="Antes" labelB="A las 8 semanas" /> },
+  { name: "MitoVsRealidad", el: () => <MitoVsRealidad myth="Cuanto más caro el frasco, mejor penetra" fact="Lo que decide es el tamaño de la molécula, no el precio" /> },
+  { name: "DatoClaveBadge", el: () => <DatoClaveBadge value={78} suffix="%" label="de la firmeza depende del colágeno" corner="tr" /> },
+  { name: "CalloutFlecha", el: () => <CalloutFlecha text="Acá se abre el poro" tx={0.62} ty={0.44} from="bl" /> },
+  { name: "PremiumProtocol", el: () => <PremiumProtocol title="Protocolo nocturno" steps={[{ title: "Limpiar", sub: "agua tibia, sin jabón" }, { title: "Aplicar", sub: "tres gotas, en círculos" }, { title: "Esperar", sub: "diez minutos" }]} /> },
+];
+
 const THEME_CASES: { name: string; theme: Theme; zone: Case["zone"]; standalone?: boolean }[] = [
   { name: "NATURE (fauna)", theme: THEME_NATURE, zone: "topLeft" },
   { name: "AMISH", theme: THEME_AMISH, zone: "top" },
@@ -271,7 +304,7 @@ const THEME_CASES: { name: string; theme: Theme; zone: Case["zone"]; standalone?
   { name: "MEDICO · SIN overlay", theme: THEME_MEDICO, zone: "topLeft", standalone: true },
 ];
 
-export const PROOF_FRAMES = (CASES.length + THEME_CASES.length + AMISH_CASES.length) * PAGE;
+export const PROOF_FRAMES = (CASES.length + THEME_CASES.length + AMISH_CASES.length + FED_CASES.length) * PAGE;
 
 /** plate de b-roll con un push lento, como el beat real de video */
 const Plate: React.FC<{ src: string }> = ({ src }) => {
@@ -337,19 +370,28 @@ const ThemeCase: React.FC<{ tc: (typeof THEME_CASES)[number] }> = ({ tc }) => {
 
 export const StageProof: React.FC = () => {
   const frame = useCurrentFrame();
-  const total = CASES.length + THEME_CASES.length + AMISH_CASES.length;
+  const total = CASES.length + THEME_CASES.length + AMISH_CASES.length + FED_CASES.length;
   const page = Math.min(total - 1, Math.floor(frame / PAGE));
   const isTheme = page >= CASES.length && page < CASES.length + THEME_CASES.length;
-  const isAmish = page >= CASES.length + THEME_CASES.length;
+  const amishStart = CASES.length + THEME_CASES.length;
+  const fedStart = amishStart + AMISH_CASES.length;
+  const isAmish = page >= amishStart && page < fedStart;
+  const isFed = page >= fedStart;
   const c = CASES[Math.min(page, CASES.length - 1)];
   return (
     <AbsoluteFill style={{ background: "#000" }}>
       <Sequence key={page} from={page * PAGE} durationInFrames={PAGE}>
-        {isAmish ? (
+        {isFed ? (
           <>
             <Plate src={PLATE} />
-            {AMISH_CASES[page - CASES.length - THEME_CASES.length].el(PAGE)}
-            <Label>AMISH · {AMISH_CASES[page - CASES.length - THEME_CASES.length].name}</Label>
+            {FED_CASES[page - fedStart].el()}
+            <Label>FEDERER · {FED_CASES[page - fedStart].name}</Label>
+          </>
+        ) : isAmish ? (
+          <>
+            <Plate src={PLATE} />
+            {AMISH_CASES[page - amishStart].el(PAGE)}
+            <Label>AMISH · {AMISH_CASES[page - amishStart].name}</Label>
           </>
         ) : isTheme ? (
           <ThemeCase tc={THEME_CASES[page - CASES.length]} />
