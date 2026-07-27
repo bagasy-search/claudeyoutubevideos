@@ -166,7 +166,50 @@ if (pref && pref.startsWith("@")) {
     process.exit(1);
   }
   for (const d of COMPARTIDAS) if (fs.existsSync(`public/${d}`) && !items.includes(d)) items.push(d);
-  console.log(`pre-vuelo assets ✓ (compartidas en el tar: ${COMPARTIDAS.filter((d) => fs.existsSync(`public/${d}`)).join(", ") || "ninguna"})`);
+
+  // ── ASSETS DEL VIDEO, desde los DATOS del build ─────────────────────────────────────────────
+  // Escanear el Main_ no sirve (no nombra assets) y el manifiesto Main_ de src/VideoEdit miente
+  // (lista lo PLANIFICADO, no lo que se rendea). Los assets de verdad viven en el archivo de beats
+  // que consume el build: {"kind":"raw","src":"img/…"}, {"kind":"quote","image":"img/…"}. Eso sí es
+  // la fuente de la verdad. Un `src`/`image` que apunta a un archivo inexistente da, adentro del
+  // render, "404 downloading …" o "undefined was passed to staticFile()" — la falla que tiró 5
+  // chunks del urólogo. Encontrado con esto en el GUANTE: 2 imágenes .png que nunca se generaron,
+  // entre 121 referencias, cuando las otras 85 eran .jpg.
+  const datos = fs.existsSync("src/_fed6/VideoEdit") || fs.existsSync("src/VideoEdit")
+    ? [...(fs.existsSync("src/_fed6/VideoEdit") ? fs.readdirSync("src/_fed6/VideoEdit").map((f) => `src/_fed6/VideoEdit/${f}`) : []),
+       ...(fs.existsSync("src/VideoEdit") ? fs.readdirSync("src/VideoEdit").map((f) => `src/VideoEdit/${f}`) : [])]
+        .filter((f) => f.includes(slug) && /(beats|cues)[^/]*\.(ts|tsx)$/.test(f))
+    : [];
+  if (datos.length) {
+    const refs = new Set();
+    let sinSrc = 0;
+    for (const f of datos) {
+      const txt = fs.readFileSync(f, "utf8");
+      for (const m of txt.matchAll(/"(?:src|image|poster|clip|video|thumb|bg)":\s*"([^"]+)"/g)) {
+        const r = m[1].replace(/^\/?(?:public\/)?/, "");
+        if (/\.(png|jpe?g|webp|mp4|webm|mov)$/i.test(r)) refs.add(r);
+      }
+      // un beat que necesita asset y no lo trae → staticFile(undefined) a mitad del render
+      sinSrc += [...txt.matchAll(/\{[^{}]*"kind":\s*"raw"[^{}]*\}/g)].filter((m) => !/"src":\s*"[^"]+"/.test(m[0])).length;
+    }
+    const cubre = (r) => items.some((it) => r === it || r.startsWith(it.replace(/\/*$/, "") + "/"));
+    const faltan = [...refs].filter((r) => !fs.existsSync(path.join("public", r)));
+    const fueraDelTar = [...refs].filter((r) => fs.existsSync(path.join("public", r)) && !cubre(r));
+    if (sinSrc) {
+      console.error(`✗ PRE-VUELO ASSETS: ${sinSrc} beat(s) de tipo "raw" sin campo src. Adentro del render eso es "undefined was passed to staticFile()" y mata el chunk a mitad de camino.`);
+      process.exit(1);
+    }
+    if (faltan.length || fueraDelTar.length) {
+      console.error(`✗ PRE-VUELO ASSETS: de ${refs.size} assets que pide el build, ${faltan.length + fueraDelTar.length} no van a estar en el render:`);
+      for (const r of faltan.slice(0, 10)) console.error(`    ${r}   (NO existe en public/ — hay que generarlo)`);
+      for (const r of fueraDelTar.slice(0, 10)) console.error(`    ${r}   (existe, pero queda FUERA de la lista del tar)`);
+      const n = faltan.length + fueraDelTar.length;
+      if (n > 20) console.error(`    … y ${n - 20} más`);
+      process.exit(1);
+    }
+    console.log(`pre-vuelo assets ✓ (${refs.size} assets del build, todos presentes y en el tar)`);
+  }
+  console.log(`pre-vuelo compartidas ✓ (${COMPARTIDAS.filter((d) => fs.existsSync(`public/${d}`)).join(", ") || "ninguna"})`);
 }
 
 // nombre PER-SLUG en tmpdir: dos farm.mjs en paralelo NO se pisan la lista (antes era "_assets_list.txt" fijo en el CWD)
