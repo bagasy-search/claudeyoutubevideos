@@ -153,9 +153,14 @@ const imgAt = []; // [startSec, ruta] para autorrelleno de imagen
 let nClip = 0, nImg = 0, nComp = 0, nAvatar = 0, nOverlay = 0, nDrop = 0;
 const compCount = {};
 
-for (const m of moments) {
+for (let mi = 0; mi < moments.length; mi++) {
+  const m = moments[mi];
   const p = plan.get(m.idx) || { kind: "avatar" };
   const start = +(m.startMs / 1000).toFixed(2);
+  // ⛔ los momentos NO son contiguos: entre el final de uno y el arranque del
+  // siguiente hay el silencio de la respiración. Si una ventana de avatar termina
+  // en su última palabra, ese silencio queda SIN NADA en pantalla (negro).
+  const hasta = +(mi + 1 < moments.length ? moments[mi + 1].startMs / 1000 : TOTAL).toFixed(2);
   const kind = String(p.kind || "avatar").toLowerCase();
 
   if (kind === "clip") {
@@ -177,9 +182,9 @@ for (const m of moments) {
       compBeats.push({ id: `c_${k}_${m.idx}`, start, kind: k, __needs: NEEDS_IMG[k], ...props });
       compCount[k] = (compCount[k] || 0) + 1;
       nComp++;
-    } else { nDrop++; avatarFull.push([start, m.endMs / 1000]); nAvatar++; }
+    } else { nDrop++; avatarFull.push([start, hasta]); nAvatar++; }
   } else {
-    avatarFull.push([start, +(m.endMs / 1000).toFixed(2)]);
+    avatarFull.push([start, hasta]);
     nAvatar++;
   }
 
@@ -223,8 +228,6 @@ const beforeImgDrop = compBeats.length;
 const compOk = compBeats.filter((b) => !(NEEDS_IMG[b.kind] && !b[NEEDS_IMG[b.kind]]));
 
 const beats = [...rawBeats, ...compOk].sort((a, b) => a.start - b.start);
-fs.mkdirSync("beatsheet", { recursive: true });
-fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, tutorial: true, beats }, null, 1));
 
 // ── ventanas del avatar: full en los momentos dirigidos como "avatar" ─────────
 avatarFull.sort((a, b) => a[0] - b[0]);
@@ -239,6 +242,32 @@ if (!fulls.length || fulls[0][0] > 0.01) fulls.unshift([0, Math.max(2.5, fulls[0
 else fulls[0][0] = 0;
 if (fulls[0][1] < 2.5) fulls[0][1] = 2.5;
 
+// ⛔ COMPUERTA ANTI-NEGRO: ningún instante puede quedar sin beat Y sin avatar full.
+// Los huecos salían de los silencios entre momentos; los cierro estirando lo anterior.
+{
+  const cover = [
+    ...beats.filter((b) => !b.overlay).map((b) => ({ a: b.start, b: b.start + b.dur, o: b })),
+    ...fulls.map(([a, b]) => ({ a, b, o: null })),
+  ].sort((x, y) => x.a - y.a);
+  let cursor = 0, cerrados = 0;
+  for (const c of cover) {
+    if (c.a > cursor + 0.05) {
+      // estiro el último que cubría hasta acá
+      const prev = cover.filter((x) => x.b <= c.a + 0.01).sort((x, y) => y.b - x.b)[0];
+      if (prev && prev.o) { prev.o.dur = +(c.a + 0.25 - prev.o.start).toFixed(2); cerrados++; }
+      else if (prev) { const f = fulls.find(([a, b]) => b === prev.b); if (f) { f[1] = +(c.a + 0.05).toFixed(2); cerrados++; } }
+    }
+    cursor = Math.max(cursor, c.b);
+  }
+  if (cursor < TOTAL - 0.05) {
+    const last = cover[cover.length - 1];
+    if (last && last.o) last.o.dur = +(TOTAL - last.o.start).toFixed(2);
+    else if (fulls.length) fulls[fulls.length - 1][1] = TOTAL;
+    cerrados++;
+  }
+  console.log(`huecos de pantalla cerrados: ${cerrados}`);
+}
+
 const windows = [];
 let cursor = 0;
 for (const [s, e] of fulls) {
@@ -249,6 +278,9 @@ for (const [s, e] of fulls) {
 if (cursor < TOTAL - 0.1) windows.push({ start: +cursor.toFixed(2), mode: "hidden" });
 if (windows[0].start !== 0) windows.unshift({ start: 0, mode: "full" });
 windows.push({ start: TOTAL, mode: "hidden" });
+
+fs.mkdirSync("beatsheet", { recursive: true });
+fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, tutorial: true, beats }, null, 1));
 
 fs.writeFileSync(`src/VideoEdit/avatar_${SLUG}.gen.ts`,
   `// avatar_${SLUG}.gen.ts — GENERADO. NO editar a mano.\nimport type { AvatarWindow } from "./scenes/AvatarLayer";\n` +

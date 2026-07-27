@@ -20,7 +20,6 @@ broll/vxsag2ipph2js/vxsag2ipph2js_s_066.mp4
 broll/vxsag2ipph2js/vxsag2ipph2js_s_068.mp4
 broll/vxsag2ipph2js/vxsag2ipph2js_s_070.mp4
 broll/vxsag2ipph2js/vxsag2ipph2js_s_071.mp4
-broll/vxsag2ipph2js/vxsag2ipph2js_s_075.mp4
 broll/vxsag2ipph2js/vxsag2ipph2js_s_076.mp4
 broll/vxsag2ipph2js/vxsag2ipph2js_s_078.mp4
 broll/vxsag2ipph2js/vxsag2ipph2js_s_080.mp4
@@ -140,6 +139,8 @@ img/vxsag2ipph2js_s_072.png
 img/vxsag2ipph2js_s_072_blur.jpg
 img/vxsag2ipph2js_s_074.png
 img/vxsag2ipph2js_s_074_blur.jpg
+img/vxsag2ipph2js_s_075.png
+img/vxsag2ipph2js_s_075_blur.jpg
 img/vxsag2ipph2js_s_077.png
 img/vxsag2ipph2js_s_077_blur.jpg
 img/vxsag2ipph2js_s_079.png

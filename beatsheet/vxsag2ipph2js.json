@@ -339,7 +339,7 @@
    "start": 113.3,
    "kind": "alertwipe",
    "text": "Adentro hay algo que sigue vivo",
-   "dur": 2.6
+   "dur": 6.71
   },
   {
    "id": "vxsag2ipph2js_s_024",
@@ -876,7 +876,7 @@
    "start": 243.7,
    "kind": "alertwipe",
    "text": "Alta tensión: eso no lo abres tú",
-   "dur": 2.6
+   "dur": 3.73
   },
   {
    "id": "vxsag2ipph2js_s_055",
@@ -1184,10 +1184,9 @@
    "id": "vxsag2ipph2js_s_075",
    "start": 344.64,
    "kind": "raw",
-   "src": "broll/vxsag2ipph2js/vxsag2ipph2js_s_075.mp4",
+   "src": "img/vxsag2ipph2js_s_075.png",
    "hue": "amber",
    "darken": 0,
-   "noSplit": true,
    "dur": 5.38
   },
   {
@@ -1297,7 +1296,7 @@
    "start": 372.7,
    "kind": "alertwipe",
    "text": "Salmonela y hantavirus",
-   "dur": 2.6
+   "dur": 6.75
   },
   {
    "id": "vxsag2ipph2js_s_082",
@@ -2049,7 +2048,7 @@
    "start": 579.62,
    "kind": "alertwipe",
    "text": "Quitar la carcasa no es un juego",
-   "dur": 2.6
+   "dur": 6.85
   },
   {
    "id": "c_numcard_130",
@@ -2418,7 +2417,7 @@
    "start": 691.42,
    "kind": "alertwipe",
    "text": "Tu llave grita su señal todo el tiempo",
-   "dur": 2.6
+   "dur": 3.09
   },
   {
    "id": "vxsag2ipph2js_s_155",
@@ -3237,7 +3236,7 @@
    "start": 918.58,
    "kind": "alertwipe",
    "text": "Esa carga mata. No es un toque.",
-   "dur": 2.6
+   "dur": 3.87
   },
   {
    "id": "vxsag2ipph2js_s_204",
@@ -3417,7 +3416,7 @@
    "start": 976.8,
    "kind": "alertwipe",
    "text": "Molida y respirada, es tóxica",
-   "dur": 2.6
+   "dur": 3.87
   },
   {
    "id": "vxsag2ipph2js_s_218",
@@ -3966,7 +3965,7 @@
    "start": 1127.98,
    "kind": "alertwipe",
    "text": "Sellaste el agua adentro",
-   "dur": 2.6
+   "dur": 5.21
   },
   {
    "id": "vxsag2ipph2js_s_251",
@@ -4741,7 +4740,7 @@
    "start": 1313,
    "kind": "alertwipe",
    "text": "Si lo vas a abrir, no lo abras",
-   "dur": 2.6
+   "dur": 4.73
   },
   {
    "id": "c_blurreveal_296",
