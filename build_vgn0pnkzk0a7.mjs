@@ -66,6 +66,37 @@ for (let i = 0; i < rawBeats.length; i++) {
 
 // ── 2) COMPONENTES PREMIUM ──
 const PREMIUM = JSON.parse(fs.readFileSync(`_v3/${SLUG}_components.json`, "utf8").replace(/^﻿/, ""));
+
+// ── 2b) AUTO-RELLENO DE IMÁGENES ──────────────────────────────────────────────────────────
+// Los componentes del kit con prop `image` opcional dibujan un PLACEHOLDER (un degradado con
+// un círculo) cuando no la reciben. En la cuadrícula de auditoría eso se ve como una caja vacía
+// y da sensación de inacabado. Tenemos 774 imágenes on-topic ancladas al ms: le pasamos a cada
+// componente la imagen del MOMENTO MÁS CERCANO en el tiempo, que por construcción habla de lo
+// mismo que el cartel. Cada imagen puede repetirse acá (el chequeo de "1 uso por asset" es solo
+// para los beats raw; como overlay es una foto de apoyo, no una toma).
+const imgPool = rawBeats.filter((b) => /^img\//.test(b.src)).map((b) => ({ t: b.start, src: b.src }));
+const nearestImg = (t, k = 0) => {
+  if (!imgPool.length) return undefined;
+  let bi = 0, bd = Infinity;
+  for (let i = 0; i < imgPool.length; i++) { const d = Math.abs(imgPool[i].t - t); if (d < bd) { bd = d; bi = i; } }
+  return imgPool[Math.min(imgPool.length - 1, bi + k)].src;
+};
+const fillImages = (comp, props, t) => {
+  const p = { ...props };
+  const set = (o, key, k) => { if (o && typeof o === "object" && !o[key]) o[key] = nearestImg(t, k); };
+  switch (comp) {
+    case "VsDuel": set(p.left, "image", 0); set(p.right, "image", 1); break;
+    case "BeforeAfter": if (!p.beforeImage) p.beforeImage = nearestImg(t, 0); if (!p.afterImage) p.afterImage = nearestImg(t, 1); break;
+    case "FramedPhoto": case "FloatingCutout": case "SplitPanel": case "CutawayCallouts":
+    case "PullQuote": case "LowerThirdId": case "CtaCard":
+      set(p, "image", 0); break;
+    case "PhotoCarousel": if (Array.isArray(p.items)) p.items.forEach((it, i) => set(it, "image", i)); break;
+    case "NumberedSteps": if (Array.isArray(p.steps)) p.steps.forEach((it, i) => set(it, "image", i)); break;
+    case "FlowSteps": if (Array.isArray(p.nodes)) p.nodes.forEach((it, i) => set(it, "image", i)); break;
+    default: break;
+  }
+  return p;
+};
 const beats = [...rawBeats];
 let nOv = 0;
 const compCount = {};
@@ -83,7 +114,7 @@ for (const p of PREMIUM) {
     comp: p.comp,
     theme: "earth",
     zone: p.zone || "topLeft",
-    ...(p.props || {}),
+    ...fillImages(p.comp, p.props || {}, s),
   });
   nOv++;
   compCount[p.comp] = (compCount[p.comp] || 0) + 1;
