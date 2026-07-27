@@ -264,6 +264,37 @@ if (only) {
   if (refs.size) console.log(`pre-vuelo assets ✓ (parcial: ${refs.size} assets del build, todos en disco)`);
 }
 
+// ── DERIVADOS HORNEADOS: los hermanos _blur.jpg ───────────────────────────────────────────────
+// Tercera clase de asset faltante, y la que ningún escaneo de los datos puede ver: la ruta NO está
+// en los beats, la construye un componente en tiempo de ejecución
+// (Backdrops.tsx: `src.replace(/\.(png|jpe?g)$/i, "_blur.jpg")`). Los hornea `node preblur.mjs`,
+// que es un paso estándar del flujo —"run after generating all images, before render"—, sin
+// argumentos e idempotente. Si no se corrió, el render pide un archivo que nadie escribió.
+// Pasó hoy con el GUANTE: 98 imágenes, 0 hermanos _blur, y CADA corrida perdía los mismos chunks
+// (18 de 20 buenos, tres veces seguidas, tirando los 18 cada vez).
+// Se aplican las mismas exclusiones que preblur.mjs: los dg_ (diagramas, van nítidos) y _avatar_ref.
+{
+  const dirs = ["src/_fed6/VideoEdit", "src/VideoEdit"].filter((d) => fs.existsSync(d));
+  const usaBlur = dirs.some((d) => fs.readdirSync(d).some((f) => {
+    try { return /_blur\.jpg/.test(fs.readFileSync(`${d}/${f}`, "utf8")); } catch { return false; }
+  })) || ["src/_fed6/VideoEdit/components", "src/VideoEdit/components"].some((d) => {
+    try { return fs.readdirSync(d).some((f) => /_blur\.jpg/.test(fs.readFileSync(`${d}/${f}`, "utf8"))); } catch { return false; }
+  });
+  if (usaBlur && fs.existsSync("public/img")) {
+    const fotos = fs.readdirSync("public/img").filter((f) =>
+      /\.(png|jpe?g)$/i.test(f) && !/_blur\.jpg$/i.test(f) && !/^dg_/.test(f) && !/_avatar_ref/.test(f) && f.includes(slug));
+    const sin = fotos.filter((f) => !fs.existsSync(`public/img/${f.replace(/\.(png|jpe?g)$/i, "_blur.jpg")}`));
+    if (sin.length) {
+      console.error(`✗ PRE-VUELO BLUR: ${sin.length} de ${fotos.length} imágenes no tienen su hermano _blur.jpg.`);
+      console.error(`  El kit lo pide en tiempo de ejecución (Backdrops/FocusCards le pegan "_blur" al nombre), así que`);
+      console.error(`  no aparece en los beats y el render muere con 404 en los chunks que usan fondo desenfocado.`);
+      console.error(`  Corré el paso que falta y volvé a lanzar:   node preblur.mjs`);
+      process.exit(1);
+    }
+    console.log(`pre-vuelo blur ✓ (${fotos.length} imágenes con su _blur.jpg)`);
+  }
+}
+
 // 2.5) CANDADO DE RENDER — la cuenta tiene 20 jobs concurrentes en total. Si dos videos rendean a la
 // vez se reparten los slots y los DOS tardan el doble. Serializando, cada render usa los 20 a pleno y
 // el throughput total es mayor. El resto del pipeline (guion, Modal, b-roll) sigue en paralelo: esto
