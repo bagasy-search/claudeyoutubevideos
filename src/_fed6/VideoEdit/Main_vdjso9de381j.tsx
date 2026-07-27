@@ -13,6 +13,7 @@ import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
 import { FocusCardsVdj } from "./FocusCards_vdjso9de381j";
+import { HeadlineVdj } from "./Headline_vdjso9de381j";
 import { F_INTER } from "./kit/premium/theme";
 import { FEDZ_BEATS } from "./federer_vdjso9de381j_beats";
 import { FEDZ_BROLL } from "./federer_vdjso9de381j_broll";
@@ -150,6 +151,9 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
   : b.kind === "focuscards" ? <FocusCardsVdj durationInFrames={d} items={b.items} title={b.title} />
+  // el `headline` del kit pinta las palabras no resaltadas con la tinta OSCURA del tema sobre un
+  // panel oscuro → ilegibles (lo cazó la cuadrícula). Variante propia con contraste garantizado.
+  : b.kind === "headline" ? <HeadlineVdj durationInFrames={d} tokens={b.tokens} eyebrow={b.eyebrow} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainVdj: React.FC = () => {

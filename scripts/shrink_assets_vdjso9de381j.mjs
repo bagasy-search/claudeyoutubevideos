@@ -59,7 +59,7 @@ for (const f of files) {
 
 // ── lista explícita de assets para el tarball (@_assets_<slug>.txt) ─────────
 const beats = JSON.parse(fs.readFileSync(`beatsheet/${SLUG}.json`, "utf8")).beats;
-const need = new Set([`${SLUG}_opt.mp4`]);
+const need = new Set([`${SLUG}_opt.mp4`, `${SLUG}.wav`]);  // el .wav lo pide AvatarLayer (borde audio-reactive) → sin él, 404 y muere el chunk
 const add = (p) => { if (typeof p === "string" && p) need.add(p.replace(/^\/?public\//, "")); };
 for (const b of beats) {
   add(b.src); add(b.image); add(b.clip);
