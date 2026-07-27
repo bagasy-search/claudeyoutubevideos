@@ -114,6 +114,16 @@ const clean = (kind, raw = {}) => {
   if (kind === "numcard" && o.number != null) o.number = String(o.number);
   if (kind === "rule" && o.number != null) o.number = String(o.number);
   if (kind === "mistake" && o.number != null) o.number = String(o.number);
+  // ⛔ beatsheet.mjs emite los props de TEXTO como  prop={JSON.stringify(v)}  SIN llaves:
+  // si le pasás un número queda `total=6` → JSX inválido → se cae el bundle entero.
+  // Los únicos props que van entre llaves (numéricos de verdad) son estos:
+  const NUM = { stat: ["value", "decimals"], headline: ["size"], quote: ["fontSize"], keyphrase: ["fontSize"],
+    countrail: ["rank", "total"], impact: ["hitAt", "boom", "darken"] }[kind] || [];
+  for (const [k, v] of Object.entries(o)) {
+    if (NUM.includes(k) || Array.isArray(v) || (v && typeof v === "object")) continue;
+    if (typeof v === "number" || typeof v === "boolean") o[k] = String(v);
+  }
+
   // obligatorias
   const req = { quote: ["text"], chips: ["chips"], checklist: ["title", "items"], splitlist: ["title", "items"],
     process: ["steps"], bars: ["bars"], cross: ["layers"], rule: ["number", "title"], chapter: ["title"],

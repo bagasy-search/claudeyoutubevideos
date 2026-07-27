@@ -139,7 +139,7 @@
     "Trucos de foto",
     "Cosas que juntan polvo"
    ],
-   "cross": true,
+   "cross": "true",
    "dur": 6.01
   },
   {
@@ -537,7 +537,7 @@
     "El ventilador",
     "El transformador"
    ],
-   "cross": true,
+   "cross": "true",
    "dur": 3.37
   },
   {
@@ -771,7 +771,7 @@
    "start": 220,
    "kind": "splitlist",
    "title": "No prende nada",
-   "cross": true,
+   "cross": "true",
    "items": [
     "El reloj",
     "La luz de adentro",
@@ -1477,7 +1477,7 @@
    "kind": "splitlist",
    "overlay": true,
    "title": "Nunca uses",
-   "cross": true,
+   "cross": "true",
    "items": [
     "Fibra verde",
     "Cepillo de alambre",
@@ -1616,7 +1616,7 @@
    "number": "01",
    "name": "Alacena antirratones",
    "eyebrow": "USO",
-   "total": 6,
+   "total": "6",
    "dur": 4.92
   },
   {
@@ -1860,7 +1860,7 @@
    "kind": "splitlist",
    "overlay": true,
    "title": "Así no",
-   "cross": true,
+   "cross": "true",
    "items": [
     "Suelto sobre el acero",
     "Sin tapa",
@@ -2609,7 +2609,7 @@
    "start": 743.3,
    "kind": "splitlist",
    "title": "Nunca hagas esto",
-   "cross": true,
+   "cross": "true",
    "items": [
     "Con un microondas que funcione",
     "Con el aparato enchufado",
@@ -2688,7 +2688,7 @@
    "eyebrow": "USO",
    "number": "5",
    "name": "La cámara templada",
-   "total": 6,
+   "total": "6",
    "dur": 4.4
   },
   {
@@ -3453,7 +3453,7 @@
    "kind": "splitlist",
    "overlay": true,
    "title": "Con el magnetrón",
-   "cross": true,
+   "cross": "true",
    "items": [
     "No se rompe",
     "No se golpea",
@@ -3578,7 +3578,7 @@
    "start": 1016.5,
    "kind": "splitlist",
    "title": "Lo que esta caja NO es",
-   "cross": true,
+   "cross": "true",
    "items": [
     "No es refrigerador",
     "No es a prueba de fuego",
@@ -3977,7 +3977,7 @@
     "Recién lavada y sin secar",
     "Con una herramienta tibia"
    ],
-   "cross": true,
+   "cross": "true",
    "dur": 3.83
   },
   {
@@ -4412,7 +4412,7 @@
     "Se despega con el calor",
     "Se despega con los años"
    ],
-   "cross": true,
+   "cross": "true",
    "dur": 4.75
   },
   {
@@ -4585,7 +4585,7 @@
     "Cloro",
     "Chorro de manguera"
    ],
-   "cross": true,
+   "cross": "true",
    "dur": 2.81
   },
   {
@@ -5005,7 +5005,7 @@
     "Bolsas",
     "Cartón"
    ],
-   "cross": true,
+   "cross": "true",
    "dur": 3.11
   },
   {
