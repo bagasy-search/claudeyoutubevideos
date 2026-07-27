@@ -41,7 +41,17 @@ const avatarWindows = [];
 const assets = new Set();
 let prevAvatar = null;
 
-const push = (key, start, dur, el) => cues.push({ key, start: +start.toFixed(2), dur: +dur.toFixed(2), el });
+// Los componentes del kit tienen una animación de entrada de ~1s. En un cue de 3.2s eso
+// deja un tercio del tiempo con la tarjeta a medio formar (se ve el texto cortado, o un
+// contador en 0). Se les da PREROLL: entran antes de que se diga la frase, así para
+// cuando llega la palabra ya están armados. Las tomas crudas no lo necesitan.
+const PREROLL = 0.6;
+const push = (key, start, dur, el, kit = false) => {
+  const s = kit ? Math.max(0, start - PREROLL) : start;
+  const d = kit ? dur + (start - s) : dur;
+  cues.push({ key, start: +s.toFixed(2), dur: +d.toFixed(2), el });
+};
+const pushKit = (key, start, dur, el) => push(key, start, dur, el, true);
 
 const useImg = (name) => {
   const p = img(name, FALLBACK);
@@ -122,37 +132,37 @@ plan.forEach((cue, i) => {
     case "impact": {
       const p = useImg(cue.img);
       if (!p) break;
-      push(key, start, dur, `<ImpactReveal durationInFrames={${D}} image=${q(p)} impact=${q(cue.impact || "")}${cue.setup ? ` setup=${q(cue.setup)}` : ""} impactAccent=${q(pick(["danger", "accent", "amber"], i))} hitAt={0.5} />`);
+      pushKit(key, start, dur, `<ImpactReveal durationInFrames={${D}} image=${q(p)} impact=${q(cue.impact || "")}${cue.setup ? ` setup=${q(cue.setup)}` : ""} impactAccent=${q(pick(["danger", "accent", "amber"], i))} hitAt={0.5} />`);
       break;
     }
     case "callout": {
       const p = useImg(cue.img);
       if (!p) break;
-      push(key, start, dur, `<CalloutMark durationInFrames={${D}} image=${q(p)} figure=${q(cue.figure || "")}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} accent=${q(tone)} hue=${q(hue)} />`);
+      pushKit(key, start, dur, `<CalloutMark durationInFrames={${D}} image=${q(p)} figure=${q(cue.figure || "")}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} accent=${q(tone)} hue=${q(hue)} />`);
       break;
     }
     case "annot": {
       const p = useImg(cue.img);
       const an = (cue.annotations || []).slice(0, 3).map((a) => ({ kind: a.kind || "circle", x: +a.x || 50, y: +a.y || 50, label: a.label || undefined }));
       if (!p || !an.length) break;
-      push(key, start, dur, `<AnnotatedImage durationInFrames={${D}} image=${q(p)} annotations={${j(an)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} hue=${q(hue)} />`);
+      pushKit(key, start, dur, `<AnnotatedImage durationInFrames={${D}} image=${q(p)} annotations={${j(an)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} hue=${q(hue)} />`);
       break;
     }
     case "stat":
-      push(key, start, dur, `<StatBig durationInFrames={${D}} value={${+cue.value || 0}} ${cue.prefix ? `prefix=${q(cue.prefix)} ` : ""}${cue.suffix ? `suffix=${q(cue.suffix)} ` : ""}${cue.decimals ? `decimals={${+cue.decimals}} ` : ""}label=${q(cue.label || "")}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} accent=${q(tone)} hue=${q(hue)} />`);
+      pushKit(key, start, dur, `<StatBig durationInFrames={${D}} value={${+cue.value || 0}} ${cue.prefix ? `prefix=${q(cue.prefix)} ` : ""}${cue.suffix ? `suffix=${q(cue.suffix)} ` : ""}${cue.decimals ? `decimals={${+cue.decimals}} ` : ""}label=${q(cue.label || "")}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} accent=${q(tone)} hue=${q(hue)} countFrames={38} ticks={0} />`);
       break;
     case "kinetic": {
       const tk = (cue.tokens || []).map((t) => ({ t: t.t || "", ...(t.hl ? { hl: true } : {}), ...(t.danger ? { danger: true } : {}), ...(t.good ? { good: true } : {}) }));
       if (!tk.length) break;
       const bg = cue.img && haveImg.has(cue.img) ? ` bg="image" image=${q(useImg(cue.img))} imageBlur={6} imageDarken={0.55}` : "";
-      push(key, start, dur, `<KineticHeadline durationInFrames={${D}} tokens={${j(tk)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} hue=${q(pick(["amber", "red", "blue"], i))}${bg} />`);
+      pushKit(key, start, dur, `<KineticHeadline durationInFrames={${D}} tokens={${j(tk)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} hue=${q(pick(["amber", "red", "blue"], i))}${bg} />`);
       break;
     }
     case "quote": {
       const ws = (cue.words || []).map((w) => ({ text: w.text || "", ...(w.em ? { em: true } : {}) }));
       if (!ws.length) break;
       const im = cue.img && haveImg.has(cue.img) ? ` image=${q(useImg(cue.img))} imageBlur={8} imageDarken={0.6}` : "";
-      push(key, start, dur, `<KineticQuote durationInFrames={${D}} words={${j(ws)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.cite ? ` cite=${q(cue.cite)}` : ""} accent=${q(tone)} hue=${q(hue)}${im} />`);
+      pushKit(key, start, dur, `<KineticQuote durationInFrames={${D}} words={${j(ws)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.cite ? ` cite=${q(cue.cite)}` : ""} perWord={2} accent=${q(tone)} hue=${q(hue)}${im} />`);
       break;
     }
     case "check":
@@ -160,26 +170,26 @@ plan.forEach((cue, i) => {
       const items = (cue.items || []).slice(0, 5).map((x) => ({ text: x.text || String(x), state: x.state || "done", ...(x.note ? { note: x.note } : {}) }));
       if (!items.length) break;
       const im = cue.img && haveImg.has(cue.img) ? ` image=${q(useImg(cue.img))} imageBlur={4} imageDarken={0.6}${cue.pin ? ` pin=${q(cue.pin)}` : ""}` : "";
-      push(key, start, dur, `<PhotoChecklist durationInFrames={${D}} title=${q(cue.title || "")} items={${j(items)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} accent=${q(pick(["good", "accent", "amber"], i))} hue=${q(hue)}${im} />`);
+      pushKit(key, start, dur, `<PhotoChecklist durationInFrames={${D}} title=${q(cue.title || "")} items={${j(items)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} stagger={3} accent=${q(pick(["good", "accent", "amber"], i))} hue=${q(hue)}${im} />`);
       break;
     }
     case "split": {
       const items = (cue.items || []).slice(0, 5).map(String);
       if (!items.length) break;
-      push(key, start, dur, `<SplitList durationInFrames={${D}} title=${q(cue.title || "")} items={${j(items)}}${cue.cross ? " cross" : ""} />`);
+      pushKit(key, start, dur, `<SplitList durationInFrames={${D}} title=${q(cue.title || "")} items={${j(items)}}${cue.cross ? " cross" : ""} />`);
       break;
     }
     case "reflist": {
       const items = (cue.items || []).slice(0, 5).map((x) => ({ text: x.text || String(x), ...(x.cross ? { cross: true } : {}) }));
       if (!items.length) break;
-      push(key, start, dur, `<ReframeList durationInFrames={${D}} title=${q(cue.title || "")} items={${j(items)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
+      pushKit(key, start, dur, `<ReframeList durationInFrames={${D}} title=${q(cue.title || "")} items={${j(items)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
       break;
     }
     case "chips": {
       const chips = (cue.chips || []).slice(0, 7).map(String);
       if (!chips.length) break;
       const bg = cue.img && haveImg.has(cue.img) ? ` bg="image" image=${q(useImg(cue.img))} imageBlur={7} imageDarken={0.55}` : "";
-      push(key, start, dur, `<ChipsCluster durationInFrames={${D}} chips={${j(chips)}}${cue.title ? ` title=${q(cue.title)}` : ""} hue=${q(pick(["amber", "red", "blue"], i))}${bg} />`);
+      pushKit(key, start, dur, `<ChipsCluster durationInFrames={${D}} chips={${j(chips)}}${cue.title ? ` title=${q(cue.title)}` : ""} hue=${q(pick(["amber", "red", "blue"], i))}${bg} />`);
       break;
     }
     case "bars": {
@@ -188,7 +198,7 @@ plan.forEach((cue, i) => {
         ...(b.sub ? { sub: b.sub } : {}), tone: TONES.includes(b.tone) ? b.tone : k === 0 ? "danger" : "good", ...(b.winner ? { winner: true } : {}),
       }));
       if (!bars.length) break;
-      push(key, start, dur, `<BarCompare durationInFrames={${D}} bars={${j(bars)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.unit ? ` unit=${q(cue.unit)}` : ""} hue=${q(hue)} />`);
+      pushKit(key, start, dur, `<BarCompare durationInFrames={${D}} bars={${j(bars)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.unit ? ` unit=${q(cue.unit)}` : ""} hue=${q(hue)} stagger={3} />`);
       break;
     }
     case "steps": {
@@ -197,42 +207,42 @@ plan.forEach((cue, i) => {
         return { title: s.title || "", ...(s.desc ? { desc: s.desc } : {}), ...(im ? { image: im } : {}) };
       });
       if (!st.length) break;
-      push(key, start, dur, `<ProcessSteps durationInFrames={${D}} steps={${j(st)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} accent=${q(tone)} hue=${q(hue)} />`);
+      pushKit(key, start, dur, `<ProcessSteps durationInFrames={${D}} steps={${j(st)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} accent=${q(tone)} hue=${q(hue)} />`);
       break;
     }
     case "cards": {
       const lines = (cue.lines || []).slice(0, 4).map(String);
       if (!lines.length) break;
-      push(key, start, dur, `<TextCardReveal durationInFrames={${D}} lines={${j(lines)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
+      pushKit(key, start, dur, `<TextCardReveal durationInFrames={${D}} lines={${j(lines)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
       break;
     }
     case "rule":
-      push(key, start, dur, `<RuleNumberScene durationInFrames={${D}} number=${q(String(cue.number ?? ""))} title=${q(cue.title || "")}${cue.label ? ` label=${q(cue.label)}` : ""} hue=${q(pick(["amber", "red", "blue"], i))} />`);
+      pushKit(key, start, dur, `<RuleNumberScene durationInFrames={${D}} number=${q(String(cue.number ?? ""))} title=${q(cue.title || "")}${cue.label ? ` label=${q(cue.label)}` : ""} hue=${q(pick(["amber", "red", "blue"], i))} />`);
       break;
     case "cross": {
       const layers = (cue.layers || []).slice(0, 5).map((l) => ({ label: l.label || "", color: /^#/.test(l.color || "") ? l.color : "#8a6a3f", ...(l.depth ? { depth: String(l.depth) } : {}) }));
       if (!layers.length) break;
       const mk = cue.marker ? `{{label:${q(cue.marker.label || "")},atDepth:${+cue.marker.atDepth || 0.5}}}` : "null";
-      push(key, start, dur, `<CrossSection durationInFrames={${D}} layers={${j(layers)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} marker={${mk === "null" ? "null" : mk.slice(1, -1)}} hue=${q(hue)} />`);
+      pushKit(key, start, dur, `<CrossSection durationInFrames={${D}} layers={${j(layers)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} marker={${mk === "null" ? "null" : mk.slice(1, -1)}} hue=${q(hue)} />`);
       break;
     }
     case "value": {
       const nodes = (cue.nodes || []).slice(0, 5).map((n) => ({ label: n.label || "", ...(n.sub ? { sub: n.sub } : {}), level: Math.max(0, Math.min(1, +n.level || 0.5)) }));
       if (!nodes.length) break;
-      push(key, start, dur, `<ValueJourney durationInFrames={${D}} nodes={${j(nodes)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.startValue ? ` startValue=${q(cue.startValue)}` : ""}${cue.startLabel ? ` startLabel=${q(cue.startLabel)}` : ""}${cue.endValue ? ` endValue=${q(cue.endValue)}` : ""}${cue.endLabel ? ` endLabel=${q(cue.endLabel)}` : ""} accent=${q(tone)} hue=${q(hue)} />`);
+      pushKit(key, start, dur, `<ValueJourney durationInFrames={${D}} nodes={${j(nodes)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.startValue ? ` startValue=${q(cue.startValue)}` : ""}${cue.startLabel ? ` startLabel=${q(cue.startLabel)}` : ""}${cue.endValue ? ` endValue=${q(cue.endValue)}` : ""}${cue.endLabel ? ` endLabel=${q(cue.endLabel)}` : ""} accent=${q(tone)} hue=${q(hue)} />`);
       break;
     }
     case "doc": {
       const lines = (cue.lines || []).slice(0, 5).map((l) => ({ text: l.text || String(l), ...(l.mark ? { mark: true } : {}) }));
       if (!lines.length) break;
       const im = cue.img && haveImg.has(cue.img) ? ` image=${q(useImg(cue.img))}` : "";
-      push(key, start, dur, `<AgedDoc durationInFrames={${D}} heading=${q(cue.heading || "")} lines={${j(lines)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} accent=${q(tone)} hue=${q(hue)}${im} />`);
+      pushKit(key, start, dur, `<AgedDoc durationInFrames={${D}} heading=${q(cue.heading || "")} lines={${j(lines)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} perLine={4} accent=${q(tone)} hue=${q(hue)}${im} />`);
       break;
     }
     case "opt": {
       const L = cue.left || {}, R = cue.right || {};
       const mk = (o, ac) => `{tag:${q(o.tag || "")},title:${q(o.title || "")},sub:${q(o.sub || "")},note:${q(o.note || "")},icon:"check",accent:${q(ac)}}`;
-      push(key, start, dur, `<OptionCompare durationInFrames={${D}} left={${mk(L, "danger")}} right={${mk(R, "good")}} />`);
+      pushKit(key, start, dur, `<OptionCompare durationInFrames={${D}} left={${mk(L, "danger")}} right={${mk(R, "good")}} />`);
       break;
     }
     case "journey": {
@@ -241,40 +251,40 @@ plan.forEach((cue, i) => {
         return { x: +w.x || 20 + k * 20, y: +w.y || 50, ...(im ? { image: im } : {}), ...(w.label ? { label: w.label } : {}), ...(w.sub ? { sub: w.sub } : {}), ...(w.num ? { num: String(w.num) } : {}) };
       });
       if (!wps.length) break;
-      push(key, start, dur, `<JourneyCanvas durationInFrames={${D}} waypoints={${j(wps)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} dark />`);
+      pushKit(key, start, dur, `<JourneyCanvas durationInFrames={${D}} waypoints={${j(wps)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} dark />`);
       break;
     }
     // ── variantes propias del video (HumedadKit) ──
     case "three": {
       const ms = (cue.methods || []).slice(0, 3).map((x) => ({ title: x.title || "", sub: x.sub || "", note: x.note || "" }));
       if (ms.length !== 3) break;
-      push(key, start, dur, `<ThreeMethodsH durationInFrames={${D}} methods={${j(ms)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
+      pushKit(key, start, dur, `<ThreeMethodsH durationInFrames={${D}} methods={${j(ms)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
       break;
     }
     case "safety": {
       const items = (cue.items || []).slice(0, 4).map((x) => ({ text: x.text || String(x), ok: !!x.ok }));
       if (!items.length) break;
-      push(key, start, dur, `<SafetyGridH durationInFrames={${D}} items={${j(items)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
+      pushKit(key, start, dur, `<SafetyGridH durationInFrames={${D}} items={${j(items)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
       break;
     }
     case "selcomp": {
       const g = cue.good || {}, b = cue.bad || {};
-      push(key, start, dur, `<SelectiveCompareH durationInFrames={${D}} good={${j({ title: g.title || "", sub: g.sub || "" })}} bad={${j({ title: b.title || "", sub: b.sub || "" })}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
+      pushKit(key, start, dur, `<SelectiveCompareH durationInFrames={${D}} good={${j({ title: g.title || "", sub: g.sub || "" })}} bad={${j({ title: b.title || "", sub: b.sub || "" })}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
       break;
     }
     case "cost":
-      push(key, start, dur, `<CostCumulativeH durationInFrames={${D}} years={${+cue.years || 5}} aLabel=${q(cue.aLabel || "")} aPerYear={${+cue.aPerYear || 0}} bLabel=${q(cue.bLabel || "")} bOnce={${+cue.bOnce || 0}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
+      pushKit(key, start, dur, `<CostCumulativeH durationInFrames={${D}} years={${+cue.years || 5}} aLabel=${q(cue.aLabel || "")} aPerYear={${+cue.aPerYear || 0}} bLabel=${q(cue.bLabel || "")} bOnce={${+cue.bOnce || 0}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} />`);
       break;
     case "house": {
       const zs = (cue.zones || []).slice(0, 5).map((z, k) => ({ label: z.label || "", x: +z.x || 20 + k * 18, y: +z.y || 50, hot: !!z.hot }));
       if (!zs.length) break;
-      push(key, start, dur, `<HouseInspectionH durationInFrames={${D}} zones={${j(zs)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} />`);
+      pushKit(key, start, dur, `<HouseInspectionH durationInFrames={${D}} zones={${j(zs)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} />`);
       break;
     }
     case "map": {
       const pins = (cue.pins || []).slice(0, 4).map((p, k) => ({ label: p.label || "", sub: p.sub || "", x: +p.x || 25 + k * 20, y: +p.y || 45 }));
       if (!pins.length) break;
-      push(key, start, dur, `<WorldMapPinsH durationInFrames={${D}} pins={${j(pins)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} />`);
+      pushKit(key, start, dur, `<WorldMapPinsH durationInFrames={${D}} pins={${j(pins)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.caption ? ` caption=${q(cue.caption)}` : ""} />`);
       break;
     }
     default:
