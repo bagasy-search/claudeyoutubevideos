@@ -144,8 +144,11 @@ for (let target = HOOK_END + PERIOD; target < TOTAL - 14; target += PERIOD) {
     if (e - s >= 4 && e - s <= 9 && !overlapsComp(s, e)) { fulls.push([s, e]); break; }
   }
 }
-const csw = snapWord(TOTAL - 9);
-if (!overlapsComp(csw, TOTAL)) fulls.push([csw, TOTAL - 0.05]);
+// CIERRE: el final SIEMPRE es el presentador a cámara (es el cierre de identidad del canal).
+// No se chequea solape con componentes acá a propósito: los OVERLAYS se dibujan DESPUÉS del
+// AvatarLayer, así que un cartel sobre el avatar se ve bien. Sin esto el video cerraba con 14s
+// de b-roll y sin cara — se veía en la cuadrícula de auditoría.
+fulls.push([snapWord(TOTAL - 11), TOTAL - 0.05]);
 fulls.sort((a, b) => a[0] - b[0]);
 const windows = [];
 let cursor = 0;
