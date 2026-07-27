@@ -160,6 +160,15 @@ flat.forEach((b, i) => {
       } else o.items = b.items;
     }
   }
+  // ⚠️ VA AL FINAL, después del copiado genérico de props (si va antes, el copiado lo pisa).
+  // FreezeZoom usa x/y como FRACCIÓN 0..1 (transformOrigin + posición del retículo), pero
+  // `annotated` los usa en 0..100 y los directores escribieron todo en 0..100. Con x=50 el
+  // transformOrigin daba 5000%: la foto se iba FUERA DE CUADRO y quedaba el fondo oscuro con el
+  // rótulo flotando. Eso produjo los 9 tramos "negros >2s" del chequeo técnico del farm.
+  if (o.kind === "freezezoom") {
+    if (typeof o.x === "number" && o.x > 1) o.x = +(o.x / 100).toFixed(3);
+    if (typeof o.y === "number" && o.y > 1) o.y = +(o.y / 100).toFixed(3);
+  }
   beats.push(o);
 });
 

@@ -47,6 +47,20 @@ for (const b of BEATS) {
 }
 for (const c of BROLL) reg(c.src, c.name);
 
+// ESCALAS: freezezoom usa x/y como fracción 0..1 (transformOrigin); annotated los usa en 0..100.
+// Mezclarlos no rompe el render — es PEOR: renderiza un frame oscuro con el rótulo flotando y pasa
+// como si nada. Fueron los 9 "negros >2s" de la 1ª corrida.
+for (const b of BEATS) {
+  if (b.kind === "freezezoom") {
+    for (const k of ["x", "y"]) if (typeof b[k] === "number" && b[k] > 1)
+      fallos.push(`${b.id} (freezezoom) @${b.start}s: ${k}=${b[k]} está en escala 0..100; el componente lo quiere en 0..1 → la foto se va de cuadro y queda NEGRO`);
+  }
+  if (b.kind === "annotated") {
+    for (const a of b.annotations || []) if ((a.x <= 1 && a.y <= 1))
+      fallos.push(`${b.id} (annotated) @${b.start}s: annotation x=${a.x} y=${a.y} parece 0..1; acá la escala es 0..100`);
+  }
+}
+
 const enDisco = [...rutas].filter((p) => !fs.existsSync("public/" + p));
 for (const p of enDisco) fallos.push(`asset faltante en disco: public/${p}`);
 
