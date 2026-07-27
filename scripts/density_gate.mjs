@@ -88,7 +88,7 @@ const ESTRUCTURA = new Set(["AvatarLayer","AvatarWindow","TechBackground","Cinem
 // (jul 2026): RawShot solo era el 84% de TODOS los usos de componentes — el gate lo contaba como
 // componente y por eso daba por buena una sucesión de fotos. Ahora se cuentan APARTE: suman a la
 // DENSIDAD (siguen siendo un visual), pero no a la VARIEDAD.
-const TOMAS = new Set((process.env.TOMAS_PLANAS || "RawShot,HalfShot,ReframedVideo,PhotoScene")
+const TOMAS = new Set((process.env.TOMAS_PLANAS || "RawShot,HalfShot,ReframedVideo,PhotoScene,FedFullShot")
   .split(",").map((s) => s.trim()).filter(Boolean));
 const jsxAll = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1])
   .filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
@@ -109,6 +109,25 @@ const BLOQUE_S = +(process.env.BLOQUE_S || 300);       // bloques de 5 min
 // Calibración jul 2026 sobre videos reales: 25 Platos = 86%, sellador/techo7/dulcesv3 ≈ 85-90%.
 // 78% obliga a ~+40% de componentes (alcanzable). Bajalo a 70 cuando el flujo lo aguante.
 const MAX_RAWSHOT_PCT = +(process.env.MAX_RAWSHOT_PCT || 78);
+// ── PISO DE DENSIDAD: usos de componente POR MINUTO ───────────────────────────────────────────
+// Por qué existe: los topes de arriba miran PROPORCIONES, y una proporción se cumple igual de bien
+// con mucho material que con poco. Un video de 34 min pasó con 74% de crudo (legal, bajo el 78) y
+// aun así se veía pobre, porque tenía 5.3 usos/min: el mismo kit estirado sobre el doble de metraje.
+// La proporción estaba bien y la densidad partida al medio, y ninguna compuerta se quejó.
+//
+// Calibración jul 2026 sobre los 15 videos terminados con reporte (usos ÷ minutos):
+//   15.8 · 13.1 │ 5.5 · 5.3 · 4.6 · 4.5 · 3.8 · 3.1 · 2.5 · 2.4 · 2.4 · 2.3 · 1.8 · 1.3 · 0.0
+//   mediana 3.8. Los DOS de arriba son los únicos que el creador marcó como "de pura calidad".
+// CORRECCIÓN (importante): esos 13,2 y 5,3 estaban MAL MEDIDOS. Los props de este kit se pasan por
+// spread (`<FedStat {...P[21]} />`) y el contenido vive en un array aparte, así que hubo que
+// resolverlo para saber qué lleva datos encima y qué no. Resultado sobre el video de máxima calidad:
+//   · 244 usos con spread = 11,6/min
+//   · de esos, FedFullShot: 68 usos, 0 con contenido → es una TOMA a pantalla completa, no un
+//     componente. Ya está movido al set TOMAS de arriba.
+//   · componentes REALES: 176 usos = 8,4/min
+// O sea que un piso de 9 le exigía MÁS que al video que el creador llamó "de pura calidad". El piso
+// va en 7: ~17% por debajo de esa referencia, y bien por encima del 5,3 del video que no le gustó.
+const MIN_COMP_MIN = +(process.env.MIN_COMP_MIN || 7);
 
 // La DENSIDAD no cambia: las tomas planas siguen contando como visual (esto NO toca VIS_EVERY_S).
 const visuals = imgs.length + clips.length + compUses + shotUses;
@@ -117,8 +136,75 @@ const visuals = imgs.length + clips.length + compUses + shotUses;
 //   · estilo nuevo → los assets son rutas sueltas y no hay wrapper
 const momentos = Math.max(shotUses, imgs.length + clips.length);
 const rawPct = (momentos + compUses) ? Math.round((100 * momentos) / (momentos + compUses)) : 0;
-const needVisuals = Math.floor(seconds / VIS_EVERY_S);
-const needClips = Math.floor(seconds / CLIP_EVERY_S);
+// ── LA BATA EN PANTALLA ───────────────────────────────────────────────────────────────────────
+// Hasta jul 2026 esta compuerta trataba el avatar como si no existiera: AvatarLayer/AvatarWindow
+// están en ESTRUCTURA (no cuentan como componente) y los mínimos se medían contra la duración
+// TOTAL. O sea que cada segundo de bata a pantalla completa le empeoraba al agente los dos números
+// que sí se le exigen — pedía un visual cada 5s y 7 comp/min sobre tiempo en el que, a propósito,
+// no hay nada más que la cara. El sistema converge al gate, así que el gate escondía al presentador.
+// Medición sobre 56 videos: mediana 11,2% de avatar full (mínimo 0%, máximo 62,7%).
+// Arreglo: los mínimos se miden contra el tiempo VISIBLE (total − avatar full). Sostener la cara
+// deja de costar densidad, y la densidad pasa a medir lo que quiere medir — qué tan trabajada está
+// la pista visual cuando la hay, no cuánta pista visual hay.
+const avatarWins = (() => {
+  for (const p of [`src/VideoEdit/avatar_${slug}.gen.ts`, `src/_fed6/VideoEdit/avatar_${slug}.gen.ts`]) {
+    if (!existsSync(p)) continue;
+    const w = [...readFileSync(p, "utf8").matchAll(/"start":\s*([\d.]+),\s*"mode":\s*"(\w+)"/g)]
+      .map((m) => ({ t: +m[1], mode: m[2] })).sort((a, b) => a.t - b.t);
+    if (w.length >= 2) return w;
+  }
+  return null; // video faceless: no hay bata que medir, las comprobaciones de avatar se saltean
+})();
+const tramosFull = [];
+if (avatarWins) {
+  for (let i = 0; i < avatarWins.length; i++) {
+    if (avatarWins[i].mode !== "full") continue;
+    const fin = i + 1 < avatarWins.length ? avatarWins[i + 1].t : seconds;
+    if (fin > avatarWins[i].t) tramosFull.push(fin - avatarWins[i].t);
+  }
+}
+const avatarFullS = Math.round(tramosFull.reduce((a, b) => a + b, 0));
+const avatarPct = seconds ? Math.round((100 * avatarFullS) / seconds) : 0;
+// Piso: por debajo de esto el canal pierde la cara que lo identifica. Techo: por arriba deja de ser
+// un documental y se vuelve una cabeza parlante — el creador pidió explícitamente NO llegar a eso.
+const MIN_AVATAR_PCT = +(process.env.MIN_AVATAR_PCT || 18);
+const MAX_AVATAR_PCT = +(process.env.MAX_AVATAR_PCT || 40);
+// Un regreso a la cara de 2s es un parpadeo, no presencia. Medido: los videos con más avatar tienen
+// tramos de mediana 6-13s; los que "no se siente la bata" cortan de vuelta cada 2,5s.
+const MIN_TRAMO_FULL_S = +(process.env.MIN_TRAMO_FULL_S || 4);
+const medTramoFull = tramosFull.length
+  ? [...tramosFull].sort((a, b) => a - b)[Math.floor(tramosFull.length / 2)] : 0;
+
+const visibleS = Math.max(1, seconds - avatarFullS);
+const compPorMin = visibleS ? +(compUses / (visibleS / 60)).toFixed(1) : 0;
+const needVisuals = Math.floor(visibleS / VIS_EVERY_S);
+const needClips = Math.floor(visibleS / CLIP_EVERY_S);
+
+// ── COMPONENTES PROPIOS DE ESTE VIDEO (medición, NO una regla más) ────────────────────────────
+// El video que el creador marcó como "de pura calidad" trajo 11 componentes diseñados a medida
+// (un subagente Opus por cada uno). El que no le gustó trajo 0 y sólo colocó los que ya existían,
+// con el modo subagentes activado igual en los dos. Ese número es el que separa un video del otro,
+// así que se MIDE y se muestra. A propósito no bloquea: forzar "creá N componentes" produciría
+// componentes de relleno hechos para pasar el gate, que es peor que no tenerlos.
+const propios = (() => {
+  try {
+    const base = process.env.WORKTREE_BASE || "wt-base";
+    const q = (c) => execSync(c, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+    // cambiados respecto de la base (incluye el working tree) + los todavía sin trackear
+    const tocados = [
+      ...q(`git diff --name-only ${base} -- "*.tsx"`).split("\n"),
+      ...q(`git ls-files --others --exclude-standard -- "*.tsx"`).split("\n"),
+    ].filter(Boolean);
+    if (!tocados.length) return null;
+    const defs = new Set();
+    for (const f of tocados) {
+      if (!existsSync(f)) continue;
+      for (const m of readFileSync(f, "utf8").matchAll(/export const ([A-Z]\w*)\s*:\s*React\.FC/g)) defs.add(m[1]);
+    }
+    // sólo cuentan los que además SE USAN en el build
+    return [...defs].filter((n) => compDistinct.includes(n));
+  } catch { return null; } // sin git utilizable no invento un 0
+})();
 
 // ── VARIEDAD POR TRAMO ────────────────────────────────────────────────────────────────────────
 // El promedio del video ENGAÑA: se cumple el mínimo global metiendo todo al principio y después
@@ -170,14 +256,21 @@ let tramos = null, tramoReal = false;
 console.log(`── DENSIDAD · ${slug} · ${seconds}s (${(seconds / 60).toFixed(1)} min) ──`);
 console.log(`  imágenes IA distintas : ${imgs.length}`);
 console.log(`  clips de stock/b-roll : ${clips.length}`);
-console.log(`  usos de componentes   : ${compUses}`);
+console.log(`  usos de componentes   : ${compUses}   → ${compPorMin}/min (mínimo: ${MIN_COMP_MIN}/min)`);
 console.log(`  momentos CRUDOS       : ${momentos}   → ${rawPct}% de la pantalla sin nada del kit encima (máximo: ${MAX_RAWSHOT_PCT}%)`);
 console.log(`  componentes DISTINTOS : ${compDistinct.length}   (mínimo exigido: ${MIN_COMP})${compDistinct.length ? "  → " + compDistinct.slice(0, 12).join(", ") : ""}`);
+if (propios !== null) {
+  console.log(`  componentes PROPIOS   : ${propios.length}   (diseñados para ESTE video${propios.length ? ": " + propios.join(", ") : " — ninguno, sólo reusaste el kit"})`);
+}
 if (tramos) {
   console.log(`  variedad por tramo    : ${tramos.map((b) => b.size).join(" · ")}   (mínimo ${MIN_COMP_BLOQUE} por tramo${tramoReal ? "" : ", medido por POSICIÓN — sin tiempos en el build"})`);
 }
 console.log(`  TOTAL visuales        : ${visuals}   (mínimo exigido: ${needVisuals})`);
 console.log(`  clips de stock        : ${clips.length}   (mínimo exigido: ${needClips})`);
+if (avatarWins) {
+  console.log(`  BATA a pantalla llena : ${avatarPct}%  (${avatarFullS}s de ${seconds}s, ${tramosFull.length} vueltas de mediana ${medTramoFull.toFixed(1)}s)   banda: ${MIN_AVATAR_PCT}-${MAX_AVATAR_PCT}%`);
+  console.log(`  · los mínimos de arriba se miden sobre ${visibleS}s VISIBLES (total − bata), no sobre ${seconds}s`);
+}
 
 // Cuando el gate te frena por monotonía, no sirve decir "usá más componentes": te dice CUÁLES.
 // Sale del kit del nicho en disco menos los que este build ya usa (medido: 30% no se usó nunca).
@@ -224,6 +317,17 @@ if (rawPct > MAX_RAWSHOT_PCT) {
   const sug = sugerirComponentes(compDistinct);
   fallos.push(`DEMASIADA TOMA CRUDA: ${rawPct}% de los ${momentos} momentos visuales no tienen NADA del kit encima (máximo ${MAX_RAWSHOT_PCT}%). Así el video es una sucesión de fotos, no una edición. Reemplazá tomas planas por componentes REALES del kit del nicho${sug ? ` — sin usar todavía tenés: ${sug}` : ""}.`);
 }
+// ── DENSIDAD POR MINUTO: el kit estirado sobre demasiado metraje ──────────────────────────────
+// Distinto de "DEMASIADA TOMA CRUDA": aquel mide la PROPORCIÓN, éste mide la CANTIDAD por minuto.
+// Se puede fallar éste con proporción perfecta (poco de todo) y fallar aquél con densidad alta.
+if (compPorMin < MIN_COMP_MIN) {
+  const faltan = Math.ceil((MIN_COMP_MIN - compPorMin) * (seconds / 60));
+  const sug = sugerirComponentes(compDistinct);
+  const pista = propios !== null && propios.length === 0
+    ? " Dato medido, por si sirve: este video no trajo NINGÚN componente propio. El que el creador marcó como de máxima calidad trajo 11, diseñados de a uno."
+    : "";
+  fallos.push(`KIT ESTIRADO: ${compUses} usos de componente en ${(seconds / 60).toFixed(1)} min = ${compPorMin}/min (mínimo ${MIN_COMP_MIN}/min). Te faltan ~${faltan} usos más. OJO: esto NO es lo mismo que la variedad — podés tener 20 componentes distintos y aun así un video pelado si cada uno aparece dos veces en 35 minutos. Lo que falta es CANTIDAD: más beats de componente repartidos por todo el metraje, sobre todo en los tramos flojos${sug ? `. Sin usar todavía tenés: ${sug}` : ""}.${pista}`);
+}
 // ── VARIEDAD POR TRAMO: que no haya un tercio del video en fotos seguidas ─────────────────────
 if (tramos) {
   const pobres = tramos.map((b, i) => ({ i, n: b.size })).filter((x) => x.n < MIN_COMP_BLOQUE);
@@ -236,6 +340,22 @@ if (tramos) {
   }
 }
 if (clips.length < needClips) fallos.push(`FALTA B-ROLL REAL: tenés ${clips.length} clips de stock, necesitás ≥${needClips}. Corré el match_v3 / clips-first para bajar clips reales — hoy lo estás salteando.`);
+
+// ── LA BATA ───────────────────────────────────────────────────────────────────────────────────
+// El piso BLOQUEA: sin la cara del presentador el video puede estar impecable y no parecer del
+// canal. El techo sólo AVISA — pasarse es un problema de criterio, no un defecto, y frenar un
+// render por eso costaría más de lo que arregla.
+if (avatarWins) {
+  if (avatarPct < MIN_AVATAR_PCT) {
+    fallos.push(`FALTA LA BATA: el presentador está a pantalla completa sólo el ${avatarPct}% del video (${avatarFullS}s de ${seconds}s), el piso es ${MIN_AVATAR_PCT}%. Es la identidad del canal: un documental impecable sin su cara no parece de este canal. Te faltan ~${Math.ceil((MIN_AVATAR_PCT / 100) * seconds - avatarFullS)}s más de avatar full. NO los repartas como relleno — dáselos a los momentos donde habla ÉL y no el material: la promesa del hook, cada vez que hace una afirmación fuerte o pone un límite honesto, el remate de cada bloque, la CTA y el cierre. Ahí la cara ES el contenido.`);
+  }
+  if (avatarPct > MAX_AVATAR_PCT) {
+    console.log(`\n⚠️  BATA DE MÁS: ${avatarPct}% a pantalla completa (referencia: no pasar de ${MAX_AVATAR_PCT}%). Revisá si no se volvió una cabeza parlante — si un tramo largo de cara no está diciendo algo que necesite la cara, ese es material para visual.`);
+  }
+  if (tramosFull.length >= 4 && medTramoFull < MIN_TRAMO_FULL_S) {
+    console.log(`\n⚠️  LA BATA PARPADEA: ${tramosFull.length} vueltas a pantalla completa pero de mediana ${medTramoFull.toFixed(1)}s (referencia ≥${MIN_TRAMO_FULL_S}s). Volver a la cara medio segundo no deja presencia, deja un corte más. Mejor menos vueltas y más largas.`);
+  }
+}
 
 if (fallos.length) {
   console.log(`\n⛔ DENSIDAD INSUFICIENTE — NO RENDEES TODAVÍA:`);

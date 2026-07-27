@@ -11,7 +11,7 @@
 //   - estar parado en la raíz del repo
 //
 // Uso:
-//   node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks=20] [prefijoAssets]
+//   node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks=60] [prefijoAssets]
 //   ej:  node scripts/farm.mjs fly Fly 43380 20 fl
 // (prefijoAssets opcional:
 //   - "@archivo.txt"  → lista EXPLÍCITA de entradas (rutas relativas a public/, una por línea)
@@ -22,11 +22,16 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 
-// chunks por defecto = 20 (NO 24): el tope de jobs concurrentes de la cuenta free son 20. Con 24 chunks
-// entran 20 en la 1ª tanda y quedan 4 para una 2ª tanda con 16 slots ociosos → pagás el doble de tiempo
-// por 4 pedazos. Con 20 va todo en UNA tanda (~40% más rápido, misma calidad).
-// Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ techo_de_slots / videos_en_curso.
-const [slug, comp, total, chunks = "20", pref] = process.argv.slice(2);
+// CHUNKS por defecto = 60. Era 20 porque ese es el tope de jobs concurrentes de una cuenta free, y
+// pasarse significaba una 2ª tanda con casi todos los slots ociosos. Desde jul 2026 el repo vive en
+// la organización bagasy-search con plan Team → el tope es 60 y entra TODO en una sola tanda.
+// Por qué conviene partir más chico: los chunks salen MUY desparejos. En una corrida real duraron
+// 1, 5, 7, 1, 8 y 6 minutos, y el reloj lo marca el MÁS LENTO — dividir en 60 achica esa cola.
+// Lo que NO es gratis: cada job baja el tarball de assets entero (618 MB en un video medido) y paga
+// su propio checkout + install. 60 chunks son ~37 GB de transferencia contra ~12 GB con 20. Más
+// arriba de 60 el arranque pesaría más que el render, así que es el techo útil, no sólo el del plan.
+// Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ 60 / videos_en_curso.
+const [slug, comp, total, chunks = "60", pref] = process.argv.slice(2);
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
   process.exit(1);
@@ -81,7 +86,25 @@ if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la nar
 // rutas relativas a public/ (el workflow extrae con -C public)
 let items = [`${slug}.wav`];
 if (hasAvatar) items.unshift(`${slug}_opt.mp4`);
-if (fs.existsSync("public/sfx")) items.push("sfx"); // camas ambientales + efectos (siempre)
+// SFX: `public/` está en .gitignore, así que un worktree nuevo nace SIN public/sfx. Este `if` se
+// escribió como defensa, pero la rama defensiva ES el caso roto: el tar salía sin sfx, en silencio,
+// y cada chunk que usaba un whoosh moría con "404 downloading /public/sfx/…". Costó 13 de 20 chunks
+// en el render del GUANTE de ROMERO. Si el build los pide y no están, se frena ACÁ —en 1 segundo y
+// gratis— en vez de descubrirlo 20 runners y 8 minutos más tarde.
+if (fs.existsSync("public/sfx")) {
+  items.push("sfx"); // camas ambientales + efectos (siempre)
+} else {
+  // Acá NO se intenta adivinar si ESTE build usa sfx. El build no los nombra: los pide un componente
+  // del kit (scenes/RawShot, AvatarKeyword, Endcard…) varios imports más abajo, así que mirar el
+  // Main_ da 0 coincidencias y deja pasar el tarball roto — que es justo lo que pasó. Rastrear la
+  // cadena de imports sería frágil, y los costos son asimétricos: un bloqueo de más cuesta copiar
+  // una carpeta; un OK de más cuesta 13 chunks y 8 minutos de 20 runners. Así que si falta, se frena.
+  console.error(`✗ FALTA public/sfx/ — el kit la referencia desde sus componentes y los chunks van a morir con "404 downloading /public/sfx/…".`);
+  console.error(`  (public/ está en .gitignore, así que un worktree nuevo nace sin ella.)`);
+  console.error(`  Copiala del repo base y volvé a lanzar:`);
+  console.error(`    cp -r "${(process.env.VIDEO2_BASE || "C:/Users/bauti/Downloads/video2").replace(/\\/g, "/")}/public/sfx" public/sfx`);
+  process.exit(1);
+}
 if (fs.existsSync(`public/avatar_clips/${slug}`)) items.push(`avatar_clips/${slug}`); // PiP del avatar SOLO de este slug (aislado; tar incluye el dir recursivo). Si falta → 404 en el farm
 if (pref && pref.startsWith("@")) {
   // lista EXPLÍCITA de entradas (rutas relativas a public/), una por línea
@@ -110,6 +133,42 @@ if (pref && pref.startsWith("@")) {
   if (fs.existsSync("public/real")) items.push("real");
   if (fs.existsSync("public/broll")) items.push("broll");
 }
+// ── PRE-VUELO DE ASSETS ───────────────────────────────────────────────────────────────────────
+// El pre-vuelo de arriba valida ref/entry/composición, pero de los ASSETS no miraba nada, y ahí
+// está el error que más tiempo costó. El tar se arma con una lista permitida (prefijo o @lista);
+// todo lo que el build referencia y queda FUERA de esa lista no da error acá — da 404 adentro del
+// render, con 20 runners encendidos. Auditoría de los 5 últimos videos: 6 corridas fallidas,
+// 76 min de reloj tirados, y 4 de las 6 fueron exactamente esto:
+//   · v8v252t7cjxe → 15 chunks por public/sfx/sfx_whoosh_soft.mp3
+//   · vd5n5s9bhk4q → 13 chunks por el MISMO archivo
+//   · vucm3bvd4u3k →  1 chunk  por public/med/avatar.mp4
+//   · v3iuzgxce9vg →  5 chunks por "undefined was passed to staticFile()"
+// Ahora se resuelve local, en menos de un segundo. La lista `items` ya está armada acá, así que
+// se compara contra ella: existe en disco Y entra al tar. Si no, no se sube nada.
+{
+  // No sirve escanear el build: los assets compartidos NO se nombran ahí. Los pide el KIT, varios
+  // imports más abajo (scenes/RawShot, components/Sfx, Endcard…), así que el Main_ da 0 referencias
+  // y el chequeo pasaría de largo justo el error que más caro salió. Se cuentan en src/ y son dos:
+  // sfx (292 referencias) y med (21). Las dos rompieron renders. Se exigen enteras, siempre.
+  const COMPARTIDAS = (process.env.ASSETS_COMPARTIDOS || "sfx,med").split(",").map((s) => s.trim()).filter(Boolean);
+  const usa = (dir) => {
+    try {
+      return execSync(`git grep -lE "/?(public/)?${dir}/[^\\"'\`]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
+        { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().length > 0;
+    } catch { return true; } // sin git no adivino: la doy por usada (falso bloqueo < falso OK)
+  };
+  const rotas = COMPARTIDAS.filter((d) => usa(d) && !fs.existsSync(`public/${d}`));
+  if (rotas.length) {
+    const base = (process.env.VIDEO2_BASE || "C:/Users/bauti/Downloads/video2").replace(/\\/g, "/");
+    console.error(`✗ PRE-VUELO ASSETS: falta${rotas.length > 1 ? "n" : ""} public/${rotas.join(", public/")} y el kit ${rotas.length > 1 ? "las referencia" : "la referencia"} → los chunks mueren con "404 downloading /public/…", con todos los runners ya encendidos.`);
+    console.error(`  (public/ está en .gitignore: un worktree nuevo nace sin estas carpetas.)`);
+    for (const d of rotas) console.error(`    cp -r "${base}/public/${d}" public/${d}`);
+    process.exit(1);
+  }
+  for (const d of COMPARTIDAS) if (fs.existsSync(`public/${d}`) && !items.includes(d)) items.push(d);
+  console.log(`pre-vuelo assets ✓ (compartidas en el tar: ${COMPARTIDAS.filter((d) => fs.existsSync(`public/${d}`)).join(", ") || "ninguna"})`);
+}
+
 // nombre PER-SLUG en tmpdir: dos farm.mjs en paralelo NO se pisan la lista (antes era "_assets_list.txt" fijo en el CWD)
 const listFile = path.join(os.tmpdir(), `_assets_${slug}.txt`);
 fs.writeFileSync(listFile, items.join("\n"));
