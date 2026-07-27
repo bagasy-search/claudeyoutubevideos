@@ -162,11 +162,35 @@ jobs:
       - name: concat (todos los N en orden)
         run: |
           ls chunks
+          # ⛔ FALTA ALGÚN PEDAZO = NO SE CONCATENA. El demuxer `concat` de ffmpeg, cuando un archivo
+          # de la lista no existe, escribe el error, CORTA ahí y devuelve exit 0. O sea que un chunk
+          # caído no rompe el paso: produce un MP4 truncado en el primer hueco y el workflow sigue
+          # como si nada, lo publica como release y lo entrega. Pasó el 2026-07-27 con el Botox
+          # Verde: 57 de 60 chunks bien, faltaba el 3, y el "video final" salió de 91 SEGUNDOS
+          # (chunks 0,1,2) en vez de ~27 minutos. Un video truncado entregado como bueno es MUCHO
+          # peor que un render fallado: el fallado se ve.
+          FALTAN=""
           for i in $(seq 0 $(( ${{ github.event.inputs.chunks }} - 1 ))); do
+            [ -s "chunks/chunk_$i.mp4" ] || FALTAN="$FALTAN $i"
             echo "file '$PWD/chunks/chunk_$i.mp4'" >> list.txt
           done
+          if [ -n "$FALTAN" ]; then
+            echo "::error::faltan chunks:$FALTAN — NO concateno: saldría un MP4 truncado en el primer hueco."
+            echo "Los chunks que SÍ salieron quedaron persistidos en el release chunks-${{ github.event.inputs.slug }}."
+            echo "Re-rendeá solo los que faltan:  ONLY_CHUNKS=$(echo $FALTAN | tr ' ' ',')"
+            exit 1
+          fi
           cat list.txt
           ffmpeg -y -f concat -safe 0 -i list.txt -c copy "${{ github.event.inputs.slug }}.mp4"
+          # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
+          # esperado algo se truncó igual. total_frames/30 es la duración teórica.
+          ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")
+          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "${{ github.event.inputs.slug }}.mp4" | cut -d. -f1)
+          echo "duración: real ${REAL}s · esperada ${ESPERADO}s"
+          if [ "$REAL" -lt $(( ESPERADO * 90 / 100 )) ]; then
+            echo "::error::el MP4 dura ${REAL}s pero se esperaban ~${ESPERADO}s (menos del 90%). Está truncado — no lo publico."
+            exit 1
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: final-${{ github.event.inputs.slug }}
