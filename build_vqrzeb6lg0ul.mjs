@@ -404,8 +404,12 @@ registerRoot(RootVqr);
 `;
 fs.writeFileSync(`src/index_${SLUG}.tsx`, entry);
 
-// lista de assets para el farm (rutas relativas a public/)
-fs.writeFileSync(`_${SLUG}_assets.txt`, [...assets].sort().join("\n") + "\n");
+// lista de assets para el farm (rutas relativas a public/).
+// `assets` va SIEMPRE: components/Icon.tsx arma la ruta en runtime con
+// staticFile(`assets/ic_${name}.svg`), así que ningún escaneo del JSX la encuentra.
+// Sin esto el render muere con "Error loading image with src .../assets/ic_x.svg".
+const extra = fs.existsSync("public/assets") ? ["assets"] : [];
+fs.writeFileSync(`_${SLUG}_assets.txt`, [...extra, ...[...assets].sort()].join("\n") + "\n");
 
 const byKind = {};
 plan.forEach((c) => (byKind[c.kind] = (byKind[c.kind] || 0) + 1));
