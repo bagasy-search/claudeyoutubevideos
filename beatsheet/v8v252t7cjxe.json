@@ -1,0 +1,3727 @@
+{
+ "video": "v8v252t7cjxe",
+ "avatar": "v8v252t7cjxe_opt.mp4",
+ "theme": "medico",
+ "clipsfirst": true,
+ "beats": [
+  {
+   "id": "hook_0_0",
+   "start": 2.2,
+   "dur": 1.7,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_0_1",
+   "start": 3.9,
+   "dur": 2.38,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_despertador_415.jpg",
+   "kicker": "Los primeros 10 segundos"
+  },
+  {
+   "id": "hook_0_2",
+   "start": 6.28,
+   "dur": 12.16,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_levantarse_golpe.jpg",
+   "hold": true
+  },
+  {
+   "id": "hook_1_0",
+   "start": 18.44,
+   "dur": 2.8,
+   "key": "hook",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UN SOLO MOVIMIENTO",
+     "sub": "entre que suena el despertador y tus pies tocan el piso",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/hook_1_0.mp4"
+  },
+  {
+   "id": "hook_1_1",
+   "start": 24.38,
+   "dur": 19.9,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_pies_piso_frio.jpg"
+  },
+  {
+   "id": "hook_2_0",
+   "start": 44.28,
+   "dur": 3.98,
+   "key": "hook",
+   "kind": "looplock",
+   "title": "Y hay un error PEOR",
+   "sub": "el que hacen justo los que se cuidan — te lo digo al final"
+  },
+  {
+   "id": "hook_3_0",
+   "start": 48.26,
+   "dur": 26.8,
+   "key": "hook",
+   "kind": "relojriesgo",
+   "title": "Cuándo ocurren los infartos",
+   "stat": "3×",
+   "statUnit": "más entre las 6 y las 12",
+   "note": "El pico matutino",
+   "source": "NEJM 1985 · estudio MILIS",
+   "tone": "warn"
+  },
+  {
+   "id": "hook_4_0",
+   "start": 75.06,
+   "dur": 13.83,
+   "key": "hook",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_ventana_riesgo.jpg"
+    }
+   ]
+  },
+  {
+   "id": "hook_4_1",
+   "start": 88.89,
+   "dur": 6.05,
+   "key": "hook",
+   "kind": "stat",
+   "big": "49%",
+   "unit": "más ACV",
+   "label": "entre las 6 de la mañana y el mediodía · metaanálisis en Stroke, 1998, 11.800 casos",
+   "tone": "warn"
+  },
+  {
+   "id": "hook_5_0",
+   "start": 94.94,
+   "dur": 4.54,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_5_1",
+   "start": 99.48,
+   "dur": 9.98,
+   "key": "hook",
+   "kind": "mitoverdad",
+   "myth": "Al corazón hay que cuidarlo de noche",
+   "truth": "El momento más exigente del día es levantarse",
+   "flipAt": 239
+  },
+  {
+   "id": "hook_6_0",
+   "start": 109.46,
+   "dur": 61.38,
+   "key": "hook",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_v8v252t7cjxe_despertador_415.jpg",
+   "imageDarken": 0.62,
+   "title": "Lo que pasa en tus primeros 10 segundos",
+   "chips": [
+    "Por qué tu sangre a las 7 no es la misma",
+    "Qué es ese ESTO que hacen millones",
+    "Y los 90 segundos que lo arreglan"
+   ]
+  },
+  {
+   "id": "hook_7_0",
+   "start": 170.84,
+   "dur": 18.04,
+   "key": "hook",
+   "kind": "lowerthird",
+   "title": "90 segundos nuevos, mañana a la mañana",
+   "tone": "teal",
+   "kicker": "Lo que te llevás",
+   "desc": "No cuestan un peso. No te sacan tiempo. Sin comprar nada, sin pedir turno."
+  },
+  {
+   "id": "story_8_0",
+   "start": 188.88,
+   "dur": 5.3,
+   "key": "story",
+   "kind": "talk"
+  },
+  {
+   "id": "story_8_1",
+   "start": 194.18,
+   "dur": 5.48,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_hector_retrato.jpg",
+   "kicker": "Don Héctor, 73"
+  },
+  {
+   "id": "story_9_0",
+   "start": 199.66,
+   "dur": 6.52,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_hector_volante.jpg",
+   "kicker": "31 años al volante"
+  },
+  {
+   "id": "story_9_1",
+   "start": 206.18,
+   "dur": 6.76,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_persiana_amanecer.jpg"
+  },
+  {
+   "id": "story_10_0",
+   "start": 212.94,
+   "dur": 7.66,
+   "key": "story",
+   "kind": "quote",
+   "image": "img/p_v8v252t7cjxe_hector_retrato.jpg",
+   "text": "Decía que la música era *para los que dudan*."
+  },
+  {
+   "id": "story_10_1",
+   "start": 220.6,
+   "dur": 16.5,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_despertador_415.jpg"
+  },
+  {
+   "id": "story_11_0",
+   "start": 237.1,
+   "dur": 7.41,
+   "key": "story",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "El 14 de junio",
+   "tone": "warn",
+   "w": 3.4
+  },
+  {
+   "id": "story_11_1",
+   "start": 244.51,
+   "dur": 2.35,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_mano_marco_puerta.jpg"
+  },
+  {
+   "id": "story_12_0",
+   "start": 246.86,
+   "dur": 8.56,
+   "key": "story",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Se"
+    },
+    {
+     "t": "me"
+    },
+    {
+     "t": "fue"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "mundo",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "story_12_1",
+   "start": 255.42,
+   "dur": 11.74,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_hector_piso_pasillo.jpg",
+   "hold": true
+  },
+  {
+   "id": "story_13_0",
+   "start": 267.16,
+   "dur": 6.22,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_pareja_dormida.jpg"
+  },
+  {
+   "id": "story_13_1",
+   "start": 273.38,
+   "dur": 2.8,
+   "key": "story",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LE DIO VERGÜENZA",
+     "sub": "73 años, y no llamó a nadie",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/story_13_1.mp4"
+  },
+  {
+   "id": "story_14_0",
+   "start": 284.94,
+   "dur": 8.82,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_comoda_golpe.jpg"
+  },
+  {
+   "id": "story_14_1",
+   "start": 293.76,
+   "dur": 8.82,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_mate_madrugada.jpg"
+  },
+  {
+   "id": "story_15_0",
+   "start": 302.58,
+   "dur": 8.86,
+   "key": "story",
+   "kind": "talk"
+  },
+  {
+   "id": "story_15_1",
+   "start": 311.44,
+   "dur": 8.44,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_medico_apurado.jpg",
+   "kicker": "«Y bueno, es la edad»"
+  },
+  {
+   "id": "story_15_2",
+   "start": 319.88,
+   "dur": 9.64,
+   "key": "story",
+   "kind": "lowerthird",
+   "title": "«Es la edad» no es un diagnóstico",
+   "tone": "warn",
+   "kicker": "El enemigo",
+   "desc": "Es la manera elegante de decir: no tengo doce minutos para vos."
+  },
+  {
+   "id": "story_16_0",
+   "start": 329.52,
+   "dur": 2.5,
+   "key": "story",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_turno_papel.jpg"
+  },
+  {
+   "id": "story_16_1",
+   "start": 332.02,
+   "dur": 2.8,
+   "key": "story",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ERA LA EDAD",
+     "sub": "era física común — la que estudiaste y te olvidaste",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/story_16_1.mp4"
+  },
+  {
+   "id": "principio_17_0",
+   "start": 347.88,
+   "dur": 3.62,
+   "key": "principio",
+   "kind": "talk"
+  },
+  {
+   "id": "principio_17_1",
+   "start": 351.5,
+   "dur": 5.78,
+   "key": "principio",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Tu"
+    },
+    {
+     "t": "sangre"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "siete",
+     "hl": true
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "otra"
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "principio_18_0",
+   "start": 357.28,
+   "dur": 5.79,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_vidrio_vaho.jpg"
+  },
+  {
+   "id": "principio_18_1",
+   "start": 363.07,
+   "dur": 9.93,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_perdida_agua.jpg"
+    }
+   ]
+  },
+  {
+   "id": "principio_19_0",
+   "start": 373,
+   "dur": 11.48,
+   "key": "principio",
+   "kind": "stat",
+   "big": "500 ml",
+   "unit": "de agua por noche",
+   "label": "respirando y transpirando, sin que nadie los reponga. Te despertás con menos agua que cuando te acostaste.",
+   "tone": "teal"
+  },
+  {
+   "id": "principio_19_1",
+   "start": 384.48,
+   "dur": 12.96,
+   "key": "principio",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_sabana_arrugada.jpg"
+  },
+  {
+   "id": "principio_20_0",
+   "start": 397.44,
+   "dur": 4.2,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_sangre_espesa.jpg"
+    }
+   ]
+  },
+  {
+   "id": "principio_20_1",
+   "start": 400.28,
+   "dur": 2.8,
+   "key": "principio",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SANGRE MÁS ESPESA",
+     "sub": "el corazón tiene que empujar más fuerte para mover lo mismo",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/principio_20_1.mp4"
+  },
+  {
+   "id": "principio_21_0",
+   "start": 418.94,
+   "dur": 5.27,
+   "key": "principio",
+   "kind": "talk"
+  },
+  {
+   "id": "principio_21_1",
+   "start": 424.21,
+   "dur": 23.29,
+   "key": "principio",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Las plaquetas",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "principio_21_2",
+   "start": 447.5,
+   "dur": 5.8,
+   "key": "principio",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_manos_frias_frazada.jpg",
+   "figure": "Segunda capa",
+   "caption": "Las plaquetas son las que forman los coágulos. Su momento de mayor tendencia a agruparse es la mañana."
+  },
+  {
+   "id": "principio_22_0",
+   "start": 453.3,
+   "dur": 2.02,
+   "key": "principio",
+   "kind": "talk"
+  },
+  {
+   "id": "principio_22_1",
+   "start": 455.32,
+   "dur": 8.9,
+   "key": "principio",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "El cortisol",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "principio_22_2",
+   "start": 464.22,
+   "dur": 4.84,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_cortisol_curva.jpg"
+    }
+   ]
+  },
+  {
+   "id": "principio_23_0",
+   "start": 469.06,
+   "dur": 2.91,
+   "key": "principio",
+   "kind": "stat",
+   "big": "+50%",
+   "unit": "en media hora",
+   "label": "la respuesta de despertar del cortisol: sube la presión y va con adrenalina, que acelera el pulso.",
+   "tone": "warn"
+  },
+  {
+   "id": "principio_23_1",
+   "start": 471.97,
+   "dur": 6.65,
+   "key": "principio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_tres_capas.jpg"
+    }
+   ]
+  },
+  {
+   "id": "principio_23_2",
+   "start": 478.62,
+   "dur": 8.77,
+   "key": "principio",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "Sangre más espesa",
+     "at": 0
+    },
+    {
+     "card": "Plaquetas más pegajosas",
+     "at": 66
+    },
+    {
+     "card": "Cortisol y adrenalina",
+     "sub": "presión arriba, pulso acelerado",
+     "at": 137
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/principio_23_2.mp4"
+  },
+  {
+   "id": "principio_24_0",
+   "start": 485.68,
+   "dur": 12.7,
+   "key": "principio",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "1 · Sangre más espesa",
+     "sub": "perdiste medio litro durmiendo",
+     "at": 71
+    },
+    {
+     "card": "2 · Plaquetas más pegajosas",
+     "sub": "su momento de mayor tendencia a agruparse",
+     "at": 176
+    },
+    {
+     "card": "3 · Cortisol y adrenalina",
+     "sub": "presión arriba, pulso acelerado",
+     "at": 255
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/principio_24_0.mp4"
+  },
+  {
+   "id": "principio_24_1",
+   "start": 496.79,
+   "dur": 9.81,
+   "key": "principio",
+   "kind": "board",
+   "eyebrow": "Las tres capas",
+   "title": "El pico matutino",
+   "items": [
+    {
+     "title": "Caen en la MISMA media hora"
+    },
+    {
+     "title": "Todos los días de tu vida"
+    },
+    {
+     "title": "Le pasa a todo el mundo",
+     "sub": "a vos, a mí, al de 20 y al de 80"
+    },
+    {
+     "title": "La diferencia es qué le hacés vos arriba"
+    }
+   ]
+  },
+  {
+   "id": "principio_25_0",
+   "start": 506.6,
+   "dur": 2.8,
+   "key": "principio",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL PICO MATUTINO",
+     "sub": "le pasa a todo el mundo — la diferencia es qué le hacés vos arriba",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/principio_25_0.mp4"
+  },
+  {
+   "id": "eleto_26_0",
+   "start": 517.5,
+   "dur": 1.1,
+   "key": "eleto",
+   "kind": "talk"
+  },
+  {
+   "id": "eleto_26_1",
+   "start": 518.6,
+   "dur": 5.72,
+   "key": "eleto",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Levantarte de golpe",
+   "tone": "warn",
+   "w": 4
+  },
+  {
+   "id": "eleto_27_0",
+   "start": 524.32,
+   "dur": 4.6,
+   "key": "eleto",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_levantarse_golpe.jpg",
+   "hold": true
+  },
+  {
+   "id": "eleto_27_1",
+   "start": 528.92,
+   "dur": 3.1,
+   "key": "eleto",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Menos"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "tres"
+    },
+    {
+     "t": "segundos",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "eleto_28_0",
+   "start": 532.02,
+   "dur": 4.48,
+   "key": "eleto",
+   "kind": "mitoverdad",
+   "myth": "Levantarse rápido es energía",
+   "truth": "Es la cosa más exigente que le pedís al corazón en todo el día",
+   "flipAt": 103
+  },
+  {
+   "id": "eleto_29_0",
+   "start": 536.5,
+   "dur": 8.02,
+   "key": "eleto",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_gravedad_piernas.jpg"
+    }
+   ]
+  },
+  {
+   "id": "eleto_30_0",
+   "start": 544.52,
+   "dur": 10.88,
+   "key": "eleto",
+   "kind": "stat",
+   "big": "800 ml",
+   "unit": "a las piernas",
+   "label": "entre 500 y 800 ml de sangre se te van a las piernas y al abdomen en los primeros segundos de estar parado.",
+   "tone": "warn"
+  },
+  {
+   "id": "eleto_30_1",
+   "start": 555.4,
+   "dur": 4.68,
+   "key": "eleto",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_pantorrilla_musculo.jpg"
+  },
+  {
+   "id": "eleto_31_0",
+   "start": 560.08,
+   "dur": 5.43,
+   "key": "eleto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ESTÁ EN EL CORAZÓN",
+     "sub": "y si no está en el corazón, no está subiendo al cerebro",
+     "tone": "warn",
+     "at": 79
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/eleto_31_0.mp4"
+  },
+  {
+   "id": "eleto_32_0",
+   "start": 571.56,
+   "dur": 10.1,
+   "key": "eleto",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_barorreceptores.jpg"
+    }
+   ]
+  },
+  {
+   "id": "eleto_32_1",
+   "start": 581.66,
+   "dur": 12.62,
+   "key": "eleto",
+   "kind": "board",
+   "title": "Qué hacen en menos de un segundo",
+   "items": [
+    {
+     "title": "Detectan la caída de presión"
+    },
+    {
+     "title": "Contraen las arterias de las piernas"
+    },
+    {
+     "title": "Aceleran el pulso"
+    }
+   ]
+  },
+  {
+   "id": "eleto_33_0",
+   "start": 594.28,
+   "dur": 8.12,
+   "key": "eleto",
+   "kind": "talk"
+  },
+  {
+   "id": "eleto_33_1",
+   "start": 602.4,
+   "dur": 12.98,
+   "key": "eleto",
+   "kind": "cross",
+   "title": "El mismo sistema, veinte años después",
+   "left": {
+    "title": "A los 30",
+    "items": [
+     "Responde en menos de un latido",
+     "No lo notás jamás"
+    ]
+   },
+   "right": {
+    "title": "Después de los 70",
+    "items": [
+     "Sensores más lentos",
+     "Arterias más rígidas",
+     "El corazón no acelera igual"
+    ]
+   }
+  },
+  {
+   "id": "eleto_34_0",
+   "start": 615.38,
+   "dur": 2.8,
+   "key": "eleto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "HIPOTENSIÓN ORTOSTÁTICA",
+     "sub": "el nombre de eso que te pasa al pararte",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/eleto_34_0.mp4"
+  },
+  {
+   "id": "eleto_34_1",
+   "start": 627.76,
+   "dur": 5,
+   "key": "eleto",
+   "kind": "stat",
+   "big": "1 de 5",
+   "unit": "mayores de 65",
+   "label": "la tiene, según los estudios de población grandes. Contá cinco cabezas canosas en una mesa de domingo.",
+   "tone": "warn"
+  },
+  {
+   "id": "eleto_34_2",
+   "start": 632.76,
+   "dur": 5.38,
+   "key": "eleto",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_mesa_familiar.jpg"
+  },
+  {
+   "id": "eleto_35_0",
+   "start": 638.14,
+   "dur": 8.22,
+   "key": "eleto",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_vision_oscura.jpg",
+   "hold": true
+  },
+  {
+   "id": "eleto_35_1",
+   "start": 646.36,
+   "dur": 6.48,
+   "key": "eleto",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_rodillas_flojas.jpg"
+  },
+  {
+   "id": "eleto_36_0",
+   "start": 652.84,
+   "dur": 15.28,
+   "key": "eleto",
+   "kind": "lowerthird",
+   "title": "Y muchas veces no se siente NADA",
+   "tone": "warn",
+   "kicker": "El problema grande",
+   "desc": "Podés caer 20 o 25 milímetros al pararte y solo sentirte «medio ido». Se lo achacás al sueño."
+  },
+  {
+   "id": "eleto_37_0",
+   "start": 668.12,
+   "dur": 11.84,
+   "key": "eleto",
+   "kind": "board",
+   "eyebrow": "Todo junto, en la misma escena",
+   "title": "Lo que le pedís al cuerpo",
+   "items": [
+    {
+     "title": "Sangre espesa"
+    },
+    {
+     "title": "Plaquetas pegajosas"
+    },
+    {
+     "title": "Cortisol y adrenalina disparados"
+    },
+    {
+     "title": "Medio litro contra la gravedad",
+     "sub": "en un segundo y medio"
+    },
+    {
+     "title": "Con sensores que ya no son los de antes"
+    }
+   ]
+  },
+  {
+   "id": "eleto_38_0",
+   "start": 679.96,
+   "dur": 1.72,
+   "key": "eleto",
+   "kind": "lowerthird",
+   "title": "Un segundo y medio",
+   "tone": "warn",
+   "kicker": "Lo que le pedís al cuerpo",
+   "desc": "Ese es todo el tiempo que le das al sistema circulatorio para resolverlo. Y se lo pedís todas las mañanas."
+  },
+  {
+   "id": "eleto_38_1",
+   "start": 681.68,
+   "dur": 4.2,
+   "key": "eleto",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Medio"
+    },
+    {
+     "t": "litro"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "segundo"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "medio",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "eleto_38_2",
+   "start": 684.52,
+   "dur": 2.8,
+   "key": "eleto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CON SENSORES DE OTRA ÉPOCA",
+     "sub": "y esto lo hacés todas las mañanas, sin enterarte",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/eleto_38_2.mp4"
+  },
+  {
+   "id": "solucion_39_0",
+   "start": 689.86,
+   "dur": 3.66,
+   "key": "solucion",
+   "kind": "talk"
+  },
+  {
+   "id": "solucion_39_1",
+   "start": 693.52,
+   "dur": 2.16,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_federer_explica_escritorio.jpg"
+  },
+  {
+   "id": "solucion_40_0",
+   "start": 695.68,
+   "dur": 9.83,
+   "key": "solucion",
+   "kind": "escalones",
+   "title": "La regla de los 90 segundos",
+   "items": [
+    {
+     "n": "1",
+     "title": "Acostado, ojos abiertos",
+     "secs": "30 s",
+     "at": 0
+    },
+    {
+     "n": "2",
+     "title": "Sentado al borde de la cama",
+     "secs": "60 s",
+     "at": 80
+    },
+    {
+     "n": "3",
+     "title": "Recién ahí te parás",
+     "secs": "agarrado de algo",
+     "at": 160
+    }
+   ]
+  },
+  {
+   "id": "solucion_41_0",
+   "start": 703.72,
+   "dur": 3.02,
+   "key": "solucion",
+   "kind": "lowerthird",
+   "title": "Levantada escalonada",
+   "tone": "teal",
+   "kicker": "Así se llama en la jerga",
+   "desc": "Yo le digo la regla de los 90 segundos. Se la enseño a mis pacientes desde hace años."
+  },
+  {
+   "id": "solucion_41_1",
+   "start": 706.74,
+   "dur": 2.62,
+   "key": "solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "técnica"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "orden",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "solucion_41_2",
+   "start": 709.36,
+   "dur": 4.92,
+   "key": "solucion",
+   "kind": "board",
+   "title": "Lo que NO es",
+   "items": [
+    {
+     "title": "No es una técnica rara"
+    },
+    {
+     "title": "No es un ejercicio"
+    },
+    {
+     "title": "No hay que comprar nada"
+    }
+   ]
+  },
+  {
+   "id": "solucion_42_0",
+   "start": 714.28,
+   "dur": 12.1,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_sabana_arrugada.jpg"
+  },
+  {
+   "id": "solucion_43_0",
+   "start": 726.38,
+   "dur": 2.87,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_sentado_borde_cama.jpg",
+   "hold": true
+  },
+  {
+   "id": "solucion_43_1",
+   "start": 729.25,
+   "dur": 1.69,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_reloj_60seg.jpg"
+  },
+  {
+   "id": "solucion_44_0",
+   "start": 730.94,
+   "dur": 3.66,
+   "key": "solucion",
+   "kind": "lowerthird",
+   "title": "60 segundos. Contalos.",
+   "tone": "teal",
+   "kicker": "Escalón 2",
+   "desc": "Sentado en el borde de la cama. Mirá el reloj de la mesa de luz, no lo calcules de cabeza."
+  },
+  {
+   "id": "solucion_44_1",
+   "start": 734.6,
+   "dur": 2.4,
+   "key": "solucion",
+   "kind": "stat",
+   "big": "60 s",
+   "unit": "sentado en el borde",
+   "label": "Es el escalón que más se saltea. Sin contar, casi nadie llega ni a veinte.",
+   "tone": "teal"
+  },
+  {
+   "id": "solucion_44_2",
+   "start": 737,
+   "dur": 3.12,
+   "key": "solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Sin"
+    },
+    {
+     "t": "contar"
+    },
+    {
+     "t": "vas"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "hacer"
+    },
+    {
+     "t": "diez",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "solucion_45_0",
+   "start": 740.12,
+   "dur": 12.5,
+   "key": "solucion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_noventa_segundos.jpg"
+    }
+   ]
+  },
+  {
+   "id": "solucion_46_0",
+   "start": 752.62,
+   "dur": 10.04,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_agarrado_mueble.jpg",
+   "hold": true
+  },
+  {
+   "id": "solucion_46_1",
+   "start": 762.66,
+   "dur": 1.48,
+   "key": "solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "porque"
+    },
+    {
+     "t": "seas"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "inválido"
+    },
+    {
+     "t": "porque"
+    },
+    {
+     "t": "sos"
+    },
+    {
+     "t": "inteligente",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "solucion_47_0",
+   "start": 764.14,
+   "dur": 3.31,
+   "key": "solucion",
+   "kind": "lowerthird",
+   "title": "Eso es todo: 90 segundos",
+   "tone": "teal",
+   "kicker": "Los tres escalones",
+   "desc": "Treinta acostado, sesenta sentado, y el primer paso agarrado de algo."
+  },
+  {
+   "id": "solucion_47_1",
+   "start": 767.45,
+   "dur": 2.49,
+   "key": "solucion",
+   "kind": "checklist",
+   "title": "Mientras estás sentado, dos cosas",
+   "items": [
+    {
+     "text": "Los tobillos: 20 bombeos, despacio",
+     "state": "done"
+    },
+    {
+     "text": "El vaso de agua, antes de apoyar los pies",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "solucion_47_2",
+   "start": 769.94,
+   "dur": 4.52,
+   "key": "solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Las"
+    },
+    {
+     "t": "dos"
+    },
+    {
+     "t": "multiplican"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "efecto",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "solucion_48_0",
+   "start": 774.46,
+   "dur": 0.77,
+   "key": "solucion",
+   "kind": "talk"
+  },
+  {
+   "id": "solucion_48_1",
+   "start": 775.23,
+   "dur": 4.2,
+   "key": "solucion",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Los tobillos",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "solucion_48_2",
+   "start": 778.64,
+   "dur": 9.9,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_tobillos_bombeo.jpg",
+   "hold": true
+  },
+  {
+   "id": "solucion_49_0",
+   "start": 788.54,
+   "dur": 6.56,
+   "key": "solucion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_bomba_pantorrilla.jpg"
+    }
+   ]
+  },
+  {
+   "id": "solucion_49_1",
+   "start": 795.1,
+   "dur": 2.8,
+   "key": "solucion",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL SEGUNDO CORAZÓN",
+     "sub": "el gemelo aprieta las venas y empuja la sangre hacia arriba",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/solucion_49_1.mp4"
+  },
+  {
+   "id": "solucion_50_0",
+   "start": 800.38,
+   "dur": 4.48,
+   "key": "solucion",
+   "kind": "lowerthird",
+   "title": "Válvulas de una sola dirección",
+   "tone": "teal",
+   "kicker": "Por qué funciona",
+   "desc": "Las venas de las piernas solo dejan pasar la sangre para arriba. El gemelo es el que aprieta."
+  },
+  {
+   "id": "solucion_50_1",
+   "start": 804.86,
+   "dur": 3.08,
+   "key": "solucion",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_pantorrilla_musculo.jpg",
+   "figure": "El gemelo",
+   "caption": "Cuando se contrae, aprieta esas venas y empuja la sangre contra la gravedad, hacia el corazón."
+  },
+  {
+   "id": "solucion_50_2",
+   "start": 807.94,
+   "dur": 1.86,
+   "key": "solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Aprieta"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "empuja"
+    },
+    {
+     "t": "hacia"
+    },
+    {
+     "t": "arriba",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "solucion_50_3",
+   "start": 809.8,
+   "dur": 3.5,
+   "key": "solucion",
+   "kind": "board",
+   "title": "No es una metáfora poética",
+   "items": [
+    {
+     "title": "Válvulas de una sola dirección"
+    },
+    {
+     "title": "El músculo hace de bomba"
+    },
+    {
+     "title": "La sangre sube contra la gravedad"
+    }
+   ]
+  },
+  {
+   "id": "solucion_51_0",
+   "start": 813.3,
+   "dur": 5.72,
+   "key": "solucion",
+   "kind": "board",
+   "title": "Veinte bombeos, 15 segundos",
+   "items": [
+    {
+     "title": "Llegás a la vertical con las piernas cebadas"
+    },
+    {
+     "title": "La sangre subiendo, no esperando"
+    },
+    {
+     "title": "No cuesta nada"
+    }
+   ]
+  },
+  {
+   "id": "solucion_52_0",
+   "start": 819.02,
+   "dur": 2.8,
+   "key": "solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Subiendo"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "esperando",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "solucion_52_1",
+   "start": 821.82,
+   "dur": 4.98,
+   "key": "solucion",
+   "kind": "lowerthird",
+   "title": "Quince segundos, y no te cuesta nada",
+   "tone": "teal",
+   "kicker": "Lo que rinde",
+   "desc": "Llegás a la vertical con las piernas ya cebadas. De lo más efectivo que conozco."
+  },
+  {
+   "id": "solucion_53_0",
+   "start": 826.8,
+   "dur": 1.75,
+   "key": "solucion",
+   "kind": "talk"
+  },
+  {
+   "id": "solucion_53_1",
+   "start": 828.55,
+   "dur": 7.71,
+   "key": "solucion",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "El vaso de agua",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "solucion_53_2",
+   "start": 836.26,
+   "dur": 3.82,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_federer_vaso_agua.jpg"
+  },
+  {
+   "id": "solucion_54_0",
+   "start": 840.08,
+   "dur": 10.78,
+   "key": "solucion",
+   "kind": "mitoverdad",
+   "myth": "El vaso de agua lo tomo en la cocina",
+   "truth": "Para llegar a la cocina te tenés que parar — y pararte es lo que estamos protegiendo",
+   "flipAt": 178
+  },
+  {
+   "id": "solucion_55_0",
+   "start": 850.86,
+   "dur": 4.68,
+   "key": "solucion",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_vaso_mesaluz.jpg",
+   "hold": true
+  },
+  {
+   "id": "solucion_55_1",
+   "start": 855.54,
+   "dur": 5.9,
+   "key": "solucion",
+   "kind": "guardaesto",
+   "title": "Guardá esto",
+   "items": [
+    {
+     "text": "El vaso servido en la mesa de luz, la noche anterior",
+     "image": "img/p_v8v252t7cjxe_vaso_mesaluz.jpg"
+    },
+    {
+     "text": "Te lo tomás sentado, antes de apoyar los pies",
+     "image": "img/p_v8v252t7cjxe_sentado_borde_cama.jpg"
+    },
+    {
+     "text": "Agua primero. Café después.",
+     "image": "img/p_v8v252t7cjxe_cafe_manana.jpg"
+    }
+   ],
+   "tag": "90 segundos"
+  },
+  {
+   "id": "solucion_56_0",
+   "start": 861.44,
+   "dur": 4.62,
+   "key": "solucion",
+   "kind": "stat",
+   "big": "250 ml",
+   "unit": "sentado",
+   "label": "no te rehidrata entero, pero le da volumen al sistema justo cuando más lo necesita.",
+   "tone": "teal"
+  },
+  {
+   "id": "solucion_57_0",
+   "start": 866.06,
+   "dur": 2.05,
+   "key": "solucion",
+   "kind": "lowerthird",
+   "title": "No es magia",
+   "tone": "teal",
+   "kicker": "Seamos claros",
+   "desc": "Un vaso no te rehidrata entero. Le da al sistema un poco más de volumen justo cuando más lo necesita."
+  },
+  {
+   "id": "solucion_57_1",
+   "start": 868.11,
+   "dur": 2.81,
+   "key": "solucion",
+   "kind": "mitoverdad",
+   "myth": "Un vaso de agua no cambia nada",
+   "truth": "No te rehidrata entero, pero le da volumen al sistema justo en el peor momento del día",
+   "flipAt": 35
+  },
+  {
+   "id": "solucion_57_2",
+   "start": 870.92,
+   "dur": 4.3,
+   "key": "solucion",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Volumen"
+    },
+    {
+     "t": "cuando"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "lo"
+    },
+    {
+     "t": "necesita",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "solucion_58_0",
+   "start": 875.22,
+   "dur": 5.17,
+   "key": "solucion",
+   "kind": "lowerthird",
+   "title": "El agua fría dispara un reflejo",
+   "tone": "teal",
+   "kicker": "Y hay algo más",
+   "desc": "Sube un poquito la presión. En hipotensión ortostática ese efecto está medido y se usa a propósito."
+  },
+  {
+   "id": "solucion_58_1",
+   "start": 880.39,
+   "dur": 4.2,
+   "key": "solucion",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_v8v252t7cjxe_vaso_mesaluz.jpg",
+   "imageDarken": 0.62,
+   "title": "El vaso, bien usado",
+   "chips": [
+    "Servido la noche anterior, en la mesa de luz",
+    "Fría, no tibia",
+    "Sentado, antes de apoyar los pies"
+   ]
+  },
+  {
+   "id": "solucion_58_2",
+   "start": 883.94,
+   "dur": 2.8,
+   "key": "solucion",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ESTÁ MEDIDO",
+     "sub": "no es una creencia: se usa a propósito en gente con hipotensión ortostática",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/solucion_58_2.mp4"
+  },
+  {
+   "id": "nelida_59_0",
+   "start": 888.86,
+   "dur": 5.38,
+   "key": "nelida",
+   "kind": "talk"
+  },
+  {
+   "id": "nelida_59_1",
+   "start": 894.24,
+   "dur": 4.2,
+   "key": "nelida",
+   "kind": "quote",
+   "image": "img/p_v8v252t7cjxe_nelida_retrato.jpg",
+   "text": "Doctor, *yo no me mareo nunca*. Yo me levanto y salgo disparando."
+  },
+  {
+   "id": "nelida_60_0",
+   "start": 896.24,
+   "dur": 11.8,
+   "key": "nelida",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_nelida_jardin.jpg",
+   "kicker": "Doña Nélida, 79"
+  },
+  {
+   "id": "nelida_60_1",
+   "start": 908.04,
+   "dur": 5.38,
+   "key": "nelida",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_nelida_retrato.jpg"
+  },
+  {
+   "id": "nelida_61_0",
+   "start": 913.42,
+   "dur": 1.31,
+   "key": "nelida",
+   "kind": "lowerthird",
+   "title": "Una prueba que podés hacer hoy, en tu casa",
+   "tone": "teal",
+   "kicker": "Doña Nélida, 79",
+   "desc": "Con un tensiómetro de brazo. Si no tenés, más adelante te digo cómo darte cuenta igual."
+  },
+  {
+   "id": "nelida_61_1",
+   "start": 914.73,
+   "dur": 3.41,
+   "key": "nelida",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "El test casero de presión",
+   "tone": "teal",
+   "w": 3.2
+  },
+  {
+   "id": "nelida_61_2",
+   "start": 918.14,
+   "dur": 5.34,
+   "key": "nelida",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_tensiometro_brazo.jpg",
+   "figure": "De brazo",
+   "caption": "Los de muñeca son menos confiables para esto. Si no tenés uno, hay señales que te lo dicen igual."
+  },
+  {
+   "id": "nelida_62_0",
+   "start": 923.48,
+   "dur": 8.1,
+   "key": "nelida",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_test_ortostatico.jpg"
+    }
+   ]
+  },
+  {
+   "id": "nelida_62_1",
+   "start": 931.58,
+   "dur": 4.72,
+   "key": "nelida",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_tensiometro_brazo.jpg"
+  },
+  {
+   "id": "nelida_63_0",
+   "start": 936.3,
+   "dur": 4.2,
+   "key": "nelida",
+   "kind": "bars",
+   "title": "Cuánto tiene que bajar para que cuente",
+   "unit": "mmHg",
+   "items": [
+    {
+     "label": "La de arriba (sistólica)",
+     "value": 20
+    },
+    {
+     "label": "La de abajo (diastólica)",
+     "value": 10
+    },
+    {
+     "label": "Doña Nélida bajó",
+     "value": 28
+    }
+   ]
+  },
+  {
+   "id": "nelida_63_1",
+   "start": 939.66,
+   "dur": 3.92,
+   "key": "nelida",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_anotar_cuaderno.jpg"
+  },
+  {
+   "id": "nelida_64_0",
+   "start": 943.58,
+   "dur": 1.68,
+   "key": "nelida",
+   "kind": "lowerthird",
+   "title": "20 arriba, o 10 abajo",
+   "tone": "warn",
+   "kicker": "Los números del test",
+   "desc": "Si al minuto exacto de pararte te bajó eso, tiene nombre y apellido: hipotensión ortostática."
+  },
+  {
+   "id": "nelida_64_1",
+   "start": 945.26,
+   "dur": 3.14,
+   "key": "nelida",
+   "kind": "board",
+   "title": "Cómo se toma",
+   "items": [
+    {
+     "title": "Acostado 5 minutos, tranquilo y sin hablar"
+    },
+    {
+     "title": "Parado, al minuto exacto"
+    },
+    {
+     "title": "Anotás las dos y mirás la diferencia"
+    }
+   ]
+  },
+  {
+   "id": "nelida_64_2",
+   "start": 948.4,
+   "dur": 4.36,
+   "key": "nelida",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Aunque"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "sientas"
+    },
+    {
+     "t": "nada",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "nelida_65_0",
+   "start": 952.76,
+   "dur": 6.9,
+   "key": "nelida",
+   "kind": "freezezoom",
+   "image": "img/p_v8v252t7cjxe_tensiometro_brazo.jpg",
+   "x": 0.5,
+   "y": 0.45,
+   "label": "28 puntos abajo — y no sentía nada",
+   "zoom": 1.5,
+   "tone": "warn"
+  },
+  {
+   "id": "nelida_66_0",
+   "start": 959.66,
+   "dur": 12.28,
+   "key": "nelida",
+   "kind": "checklist",
+   "title": "Las señales, sin aparato",
+   "items": [
+    {
+     "text": "Se te oscurece un instante la visión desde los costados",
+     "state": "warn"
+    },
+    {
+     "text": "Un zumbido corto en los oídos",
+     "state": "warn"
+    },
+    {
+     "text": "Dolor en nuca y hombros «como una percha», parado",
+     "state": "warn"
+    },
+    {
+     "text": "Piernas flojas los primeros pasos, y después andás bien",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "nelida_67_0",
+   "start": 971.94,
+   "dur": 6.72,
+   "key": "nelida",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Como"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "percha"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "los"
+    },
+    {
+     "t": "hombros",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "nelida_67_1",
+   "start": 978.66,
+   "dur": 4.2,
+   "key": "nelida",
+   "kind": "lowerthird",
+   "title": "Parado duele, sentado se va",
+   "tone": "teal",
+   "kicker": "El que casi nadie relaciona",
+   "desc": "Ese dolor de nuca y hombros aparece de pie y se afloja apenas te sentás. Es de los más ignorados."
+  },
+  {
+   "id": "nelida_67_2",
+   "start": 982.56,
+   "dur": 2.8,
+   "key": "nelida",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "Y DESPUÉS ANDÁS PERFECTO",
+     "sub": "por eso lo dejás pasar: dura los primeros pasos y se acomoda solo",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/nelida_67_2.mp4"
+  },
+  {
+   "id": "nelida_68_0",
+   "start": 987.34,
+   "dur": 6.26,
+   "key": "nelida",
+   "kind": "lowerthird",
+   "title": "Si dijiste que sí a una sola, es para vos",
+   "tone": "teal",
+   "kicker": "Y es para hoy",
+   "desc": "La regla de los 90 segundos no le hace mal a nadie y a vos te saca un pico diario."
+  },
+  {
+   "id": "trampas_69_0",
+   "start": 993.6,
+   "dur": 3.22,
+   "key": "trampas",
+   "kind": "lowerthird",
+   "title": "Ahora vienen los 10 minutos siguientes",
+   "tone": "teal",
+   "kicker": "Lo que sigue",
+   "desc": "Tres trampas más. Todas de la mañana. Todas evitables sin comprar nada."
+  },
+  {
+   "id": "trampas_69_1",
+   "start": 996.82,
+   "dur": 5.28,
+   "key": "trampas",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_v8v252t7cjxe_cafe_manana.jpg",
+   "imageDarken": 0.62,
+   "title": "Las tres trampas que vienen",
+   "chips": [
+    "La ducha caliente de entrada",
+    "El baño y el pujo",
+    "El café en ayunas"
+   ]
+  },
+  {
+   "id": "trampa1_70_0",
+   "start": 1002.1,
+   "dur": 0.36,
+   "key": "trampa1",
+   "kind": "talk"
+  },
+  {
+   "id": "trampa1_70_1",
+   "start": 1002.46,
+   "dur": 2.48,
+   "key": "trampa1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "La ducha caliente de entrada",
+   "tone": "warn",
+   "w": 3.6
+  },
+  {
+   "id": "trampa1_70_2",
+   "start": 1004.17,
+   "dur": 0.87,
+   "key": "trampa1",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_ducha_vapor.jpg",
+   "hold": true
+  },
+  {
+   "id": "trampa1_71_0",
+   "start": 1005.04,
+   "dur": 4.2,
+   "key": "trampa1",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_ducha_caliente.jpg"
+    }
+   ]
+  },
+  {
+   "id": "trampa1_71_1",
+   "start": 1008.67,
+   "dur": 2.11,
+   "key": "trampa1",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_azulejos_mojados.jpg"
+  },
+  {
+   "id": "trampa1_72_0",
+   "start": 1010.78,
+   "dur": 5.08,
+   "key": "trampa1",
+   "kind": "lowerthird",
+   "title": "Salís colorado porque la sangre se fue a la piel",
+   "tone": "warn",
+   "kicker": "Lo que hace el agua caliente",
+   "desc": "El calor dilata las arterias de la piel. La sangre se va a la superficie y la presión general baja."
+  },
+  {
+   "id": "trampa1_72_1",
+   "start": 1015.86,
+   "dur": 9.42,
+   "key": "trampa1",
+   "kind": "mitoverdad",
+   "myth": "Una ducha bien caliente te termina de despertar",
+   "truth": "A esa hora te apila una caída de presión arriba de la otra",
+   "flipAt": 182
+  },
+  {
+   "id": "trampa1_72_2",
+   "start": 1025.28,
+   "dur": 6.42,
+   "key": "trampa1",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Parado"
+    },
+    {
+     "t": "sobre"
+    },
+    {
+     "t": "azulejos"
+    },
+    {
+     "t": "mojados"
+    },
+    {
+     "t": "solo",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "trampa1_73_0",
+   "start": 1031.7,
+   "dur": 4.66,
+   "key": "trampa1",
+   "kind": "process",
+   "title": "La ducha, bien hecha",
+   "eyebrow": "Tres cosas, ninguna cuesta nada",
+   "steps": [
+    {
+     "title": "No primero",
+     "desc": "que no sea lo primero al levantarte",
+     "image": "img/p_v8v252t7cjxe_ducha_vapor.jpg"
+    },
+    {
+     "title": "Tibia",
+     "desc": "no hirviendo",
+     "image": "img/p_v8v252t7cjxe_azulejos_mojados.jpg"
+    },
+    {
+     "title": "Sentate",
+     "desc": "en el borde, antes de que decida el cuerpo",
+     "image": "img/p_v8v252t7cjxe_borde_banera.jpg"
+    }
+   ]
+  },
+  {
+   "id": "trampa1_74_0",
+   "start": 1036.36,
+   "dur": 2.38,
+   "key": "trampa1",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Tibia"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "hirviendo",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "trampa1_74_1",
+   "start": 1038.74,
+   "dur": 5.78,
+   "key": "trampa1",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_borde_banera.jpg",
+   "figure": "Si te sentís raro",
+   "caption": "Sentate en el borde de la bañera antes de que el cuerpo decida por vos. Sentarse a tiempo es lo que evita la caída."
+  },
+  {
+   "id": "trampa2_75_0",
+   "start": 1044.52,
+   "dur": 0.43,
+   "key": "trampa2",
+   "kind": "talk"
+  },
+  {
+   "id": "trampa2_75_1",
+   "start": 1044.95,
+   "dur": 4.2,
+   "key": "trampa2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "El baño",
+   "tone": "warn",
+   "w": 3.6
+  },
+  {
+   "id": "trampa2_75_2",
+   "start": 1046.94,
+   "dur": 2.4,
+   "key": "trampa2",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_bano_puerta.jpg"
+  },
+  {
+   "id": "trampa2_76_0",
+   "start": 1049.34,
+   "dur": 4.2,
+   "key": "trampa2",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_valsalva.jpg"
+    }
+   ]
+  },
+  {
+   "id": "trampa2_76_1",
+   "start": 1052.14,
+   "dur": 2.8,
+   "key": "trampa2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO PUJES",
+     "sub": "el rebote de presión, a esa hora, es de los grandes",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/trampa2_76_1.mp4"
+  },
+  {
+   "id": "trampa2_77_0",
+   "start": 1055.18,
+   "dur": 2.1,
+   "key": "trampa2",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Cerrás"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "glotis"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "apretás",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "trampa2_77_1",
+   "start": 1057.28,
+   "dur": 9.1,
+   "key": "trampa2",
+   "kind": "lowerthird",
+   "title": "La presión del pecho se dispara y el retorno se frena",
+   "tone": "warn",
+   "kicker": "Maniobra de Valsalva",
+   "desc": "Mientras pujás, al corazón le llega menos sangre. Y cuando por fin soltás el aire, la presión rebota de golpe."
+  },
+  {
+   "id": "trampa2_77_2",
+   "start": 1066.38,
+   "dur": 2.8,
+   "key": "trampa2",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UN PICO DE LOS GRANDES",
+     "sub": "a esa hora, en alguien de más de 60, ese rebote no es un detalle",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/trampa2_77_2.mp4"
+  },
+  {
+   "id": "trampa2_78_0",
+   "start": 1079.56,
+   "dur": 7.84,
+   "key": "trampa2",
+   "kind": "checklist",
+   "title": "Sin nada heroico",
+   "items": [
+    {
+     "text": "Tomá el agua y moveté un poco antes",
+     "state": "done"
+    },
+    {
+     "text": "No vayas al baño a los dos minutos de despertarte",
+     "state": "done"
+    },
+    {
+     "text": "Si no sale, esperá. No pujes.",
+     "state": "done"
+    },
+    {
+     "text": "Si estás constipado siempre, eso se trata",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "trampa2_79_0",
+   "start": 1087.4,
+   "dur": 4.48,
+   "key": "trampa2",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Si"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "sale"
+    },
+    {
+     "t": "esperá",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "trampa2_79_1",
+   "start": 1091.88,
+   "dur": 4.5,
+   "key": "trampa2",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "La constipación crónica se trata",
+   "tone": "teal",
+   "w": 3.4
+  },
+  {
+   "id": "trampa3_80_0",
+   "start": 1096.38,
+   "dur": 0.99,
+   "key": "trampa3",
+   "kind": "talk"
+  },
+  {
+   "id": "trampa3_80_1",
+   "start": 1097.37,
+   "dur": 4.63,
+   "key": "trampa3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "El café en ayunas",
+   "tone": "warn",
+   "w": 3.6
+  },
+  {
+   "id": "trampa3_80_2",
+   "start": 1102,
+   "dur": 1.38,
+   "key": "trampa3",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_cafe_manana.jpg"
+  },
+  {
+   "id": "trampa3_81_0",
+   "start": 1103.38,
+   "dur": 1.17,
+   "key": "trampa3",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_mate_madrugada.jpg"
+  },
+  {
+   "id": "trampa3_81_1",
+   "start": 1104.55,
+   "dur": 1.85,
+   "key": "trampa3",
+   "kind": "mitoverdad",
+   "myth": "El café de la mañana es el problema",
+   "truth": "El problema no es el café: es CUÁNDO",
+   "flipAt": 23
+  },
+  {
+   "id": "trampa3_82_0",
+   "start": 1106.4,
+   "dur": 4.86,
+   "key": "trampa3",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_cafeina_presion.jpg"
+    }
+   ]
+  },
+  {
+   "id": "trampa3_82_1",
+   "start": 1111.26,
+   "dur": 2.12,
+   "key": "trampa3",
+   "kind": "stat",
+   "big": "5 mmHg",
+   "unit": "hasta 3 horas",
+   "label": "poco… salvo que se los sumes al pico de cortisol que ya te subió la presión sin permiso.",
+   "tone": "warn"
+  },
+  {
+   "id": "trampa3_83_0",
+   "start": 1113.38,
+   "dur": 2.8,
+   "key": "trampa3",
+   "kind": "board",
+   "title": "Cuánto te sube la cafeína",
+   "items": [
+    {
+     "title": "5 mmHg la de arriba"
+    },
+    {
+     "title": "3 mmHg la de abajo"
+    },
+    {
+     "title": "Y el efecto dura hasta 3 horas"
+    }
+   ]
+  },
+  {
+   "id": "trampa3_83_1",
+   "start": 1116.18,
+   "dur": 6.56,
+   "key": "trampa3",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Si"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "tomás"
+    },
+    {
+     "t": "todos"
+    },
+    {
+     "t": "los"
+    },
+    {
+     "t": "días",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "trampa3_83_2",
+   "start": 1122.74,
+   "dur": 7.24,
+   "key": "trampa3",
+   "kind": "lowerthird",
+   "title": "Solos no son nada; encima del cortisol sí",
+   "tone": "warn",
+   "kicker": "Por eso importa la hora",
+   "desc": "Cinco milímetros no mueven la aguja. Salvo que se los sumes a una presión que ya subió sola."
+  },
+  {
+   "id": "trampa3_84_0",
+   "start": 1129.98,
+   "dur": 3.53,
+   "key": "trampa3",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "AGUA PRIMERO, CAFÉ DESPUÉS",
+     "sub": "diez o quince minutos de diferencia y ya cambia la escena",
+     "tone": "teal",
+     "at": 22
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/trampa3_84_0.mp4"
+  },
+  {
+   "id": "trampa3_85_0",
+   "start": 1138.5,
+   "dur": 6.51,
+   "key": "trampa3",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_fiambre_pan.jpg"
+  },
+  {
+   "id": "trampa3_85_1",
+   "start": 1145.01,
+   "dur": 5.11,
+   "key": "trampa3",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_fiambre_pan.jpg",
+   "figure": "El que nadie sospecha",
+   "caption": "El pan de panadería: en muchas casas es la principal fuente de sal del día."
+  },
+  {
+   "id": "guia_86_0",
+   "start": 1150.12,
+   "dur": 13.73,
+   "key": "guia",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_guia_celular.jpg",
+   "hold": true
+  },
+  {
+   "id": "guia_86_1",
+   "start": 1163.85,
+   "dur": 6.35,
+   "key": "guia",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_v8v252t7cjxe_guia_celular.jpg",
+   "imageDarken": 0.62,
+   "title": "Te lo dejé anotado en la descripción",
+   "chips": [
+    "El paso a paso de los 90 segundos",
+    "La planilla de presión acostado y parado",
+    "Abrí la descripción, está arriba de todo"
+   ]
+  },
+  {
+   "id": "honesto_87_0",
+   "start": 1170.2,
+   "dur": 2.81,
+   "key": "honesto",
+   "kind": "talk"
+  },
+  {
+   "id": "honesto_87_1",
+   "start": 1173.01,
+   "dur": 3.37,
+   "key": "honesto",
+   "kind": "checklist",
+   "title": "Con toda honestidad",
+   "items": [
+    {
+     "text": "Esto NO cura la hipertensión",
+     "state": "done"
+    },
+    {
+     "text": "Si tomás medicación, la seguís tomando igual",
+     "state": "done"
+    },
+    {
+     "text": "90 segundos no te arreglan una arteria",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "honesto_88_0",
+   "start": 1176.38,
+   "dur": 3,
+   "key": "honesto",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Esto"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "cura"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "hipertensión",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "honesto_88_1",
+   "start": 1179.38,
+   "dur": 4.86,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "La medicación se sigue tomando igual",
+   "tone": "warn",
+   "kicker": "Sin vueltas",
+   "desc": "Exactamente como te la indicaron. Y de esto se habla con tu médico, no con un video."
+  },
+  {
+   "id": "honesto_88_2",
+   "start": 1184.24,
+   "dur": 2.8,
+   "key": "honesto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "HABLALO CON TU MÉDICO",
+     "sub": "nunca sumes ni saques nada por tu cuenta, ni por lo que diga un video",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/honesto_88_2.mp4"
+  },
+  {
+   "id": "honesto_89_0",
+   "start": 1188.94,
+   "dur": 2.8,
+   "key": "honesto",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "PREVENCIÓN DE LA ABURRIDA",
+     "sub": "te saca un pico de exigencia innecesario, todos los días, durante años",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/honesto_89_0.mp4"
+  },
+  {
+   "id": "honesto_90_0",
+   "start": 1199.08,
+   "dur": 2.22,
+   "key": "honesto",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Un"
+    },
+    {
+     "t": "pico"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "exigencia"
+    },
+    {
+     "t": "menos",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "honesto_90_1",
+   "start": 1201.3,
+   "dur": 7.6,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "Todos los días, durante años",
+   "tone": "teal",
+   "kicker": "Eso es lo que hace",
+   "desc": "No te arregla una arteria. Te saca una exigencia innecesaria, todas las mañanas, sin que lo notes."
+  },
+  {
+   "id": "honesto_91_0",
+   "start": 1208.9,
+   "dur": 6.42,
+   "key": "honesto",
+   "kind": "board",
+   "title": "No todo mareo es del corazón",
+   "items": [
+    {
+     "title": "Vértigo del oído: lo arregla un kinesiólogo en 10 minutos"
+    },
+    {
+     "title": "Azúcar baja"
+    },
+    {
+     "title": "Anemia"
+    }
+   ]
+  },
+  {
+   "id": "honesto_91_1",
+   "start": 1215.32,
+   "dur": 3.42,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "Miralo, no lo adivines",
+   "tone": "warn",
+   "kicker": "El consejo",
+   "desc": "Nunca sumes ni saques medicación por tu cuenta. Eso pasa por tu médico."
+  },
+  {
+   "id": "honesto_92_0",
+   "start": 1218.74,
+   "dur": 1.84,
+   "key": "honesto",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "todo"
+    },
+    {
+     "t": "mareo"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "del"
+    },
+    {
+     "t": "corazón",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "honesto_92_1",
+   "start": 1220.58,
+   "dur": 5.06,
+   "key": "honesto",
+   "kind": "lowerthird",
+   "title": "Oído, azúcar baja, anemia",
+   "tone": "teal",
+   "kicker": "Las otras causas",
+   "desc": "El vértigo posicional lo resuelve un kinesiólogo en diez minutos. Por eso se mira, no se adivina."
+  },
+  {
+   "id": "alarma_93_0",
+   "start": 1225.64,
+   "dur": 1.76,
+   "key": "alarma",
+   "kind": "talk"
+  },
+  {
+   "id": "alarma_93_1",
+   "start": 1227.4,
+   "dur": 9.15,
+   "key": "alarma",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "Esto es una emergencia",
+   "tone": "warn",
+   "w": 4
+  },
+  {
+   "id": "alarma_93_2",
+   "start": 1236.55,
+   "dur": 4.23,
+   "key": "alarma",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_senales_alarma.jpg"
+    }
+   ]
+  },
+  {
+   "id": "alarma_94_0",
+   "start": 1240.78,
+   "dur": 5.84,
+   "key": "alarma",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_dolor_pecho.jpg",
+   "hold": true
+  },
+  {
+   "id": "alarma_94_1",
+   "start": 1246.62,
+   "dur": 2.94,
+   "key": "alarma",
+   "kind": "checklist",
+   "title": "Llamá al 107 AHORA",
+   "items": [
+    {
+     "text": "Dolor u opresión en el medio del pecho, más de unos minutos",
+     "state": "warn"
+    },
+    {
+     "text": "Se va al brazo izquierdo, mandíbula, cuello o espalda",
+     "state": "warn"
+    },
+    {
+     "text": "Falta de aire que no tenías · sudor frío sin motivo",
+     "state": "warn"
+    },
+    {
+     "text": "Se afloja media cara, un brazo o una pierna · se traba el habla",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "alarma_95_0",
+   "start": 1249.56,
+   "dur": 3.8,
+   "key": "alarma",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_sudor_frio.jpg",
+   "figure": "Sudor frío sin motivo",
+   "caption": "Junto con falta de aire que antes no tenías. No es calor, no es nervios: es una señal."
+  },
+  {
+   "id": "alarma_95_1",
+   "start": 1253.36,
+   "dur": 8.26,
+   "key": "alarma",
+   "kind": "lowerthird",
+   "title": "Media cara, un brazo o una pierna de un lado",
+   "tone": "warn",
+   "kicker": "Señal de ACV",
+   "desc": "Se afloja o se duerme. Se traba el habla o no entendés lo que te dicen. Es ahora."
+  },
+  {
+   "id": "alarma_96_0",
+   "start": 1261.62,
+   "dur": 4.36,
+   "key": "alarma",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Eso"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "edad"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "emergencia",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "alarma_96_1",
+   "start": 1265.98,
+   "dur": 2.3,
+   "key": "alarma",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_telefono_emergencia.jpg"
+  },
+  {
+   "id": "alarma_97_0",
+   "start": 1268.28,
+   "dur": 2.58,
+   "key": "alarma",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Ahora"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "rato",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "alarma_97_1",
+   "start": 1270.86,
+   "dur": 4.2,
+   "key": "alarma",
+   "kind": "checklist",
+   "title": "Llamar y que no sea nada es el mejor final",
+   "items": [
+    {
+     "text": "Ahora. No en un rato.",
+     "state": "warn"
+    },
+    {
+     "text": "No «cuando termine el video»",
+     "state": "warn"
+    },
+    {
+     "text": "No «esperá que me baño»",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "alarma_98_0",
+   "start": 1274.84,
+   "dur": 12.96,
+   "key": "alarma",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_mujer_cansancio.jpg",
+   "hold": true
+  },
+  {
+   "id": "alarma_98_1",
+   "start": 1287.8,
+   "dur": 3.89,
+   "key": "alarma",
+   "kind": "lowerthird",
+   "title": "En las mujeres casi nunca es el dolor de película",
+   "tone": "warn",
+   "kicker": "Si sos mujer, anotá esto",
+   "desc": "Cansancio extremo y raro, náuseas, dolor de mandíbula o de espalda alta. Se subdiagnostica muchísimo."
+  },
+  {
+   "id": "error_99_0",
+   "start": 1290.3,
+   "dur": 1.49,
+   "key": "error",
+   "kind": "talk"
+  },
+  {
+   "id": "error_99_1",
+   "start": 1291.79,
+   "dur": 8.13,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "El error del que SÍ se cuida",
+   "tone": "warn",
+   "w": 4.2
+  },
+  {
+   "id": "error_100_0",
+   "start": 1299.92,
+   "dur": 3.9,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_federer_toma_presion.jpg"
+  },
+  {
+   "id": "error_100_1",
+   "start": 1303.82,
+   "dur": 3.9,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_zapatillas_puerta.jpg"
+  },
+  {
+   "id": "error_101_0",
+   "start": 1307.72,
+   "dur": 3.06,
+   "key": "error",
+   "kind": "lowerthird",
+   "title": "Le pasa a la gente que hace todo bien",
+   "tone": "teal",
+   "kicker": "El error del que se cuida",
+   "desc": "Le dieron el diagnóstico, le dieron la indicación clara, y la cumplió sin fallar un día."
+  },
+  {
+   "id": "error_101_1",
+   "start": 1310.78,
+   "dur": 4.3,
+   "key": "error",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Y"
+    },
+    {
+     "t": "vos"
+    },
+    {
+     "t": "dijiste"
+    },
+    {
+     "t": "listo",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "error_101_2",
+   "start": 1315.08,
+   "dur": 10.92,
+   "key": "error",
+   "kind": "stat",
+   "big": "6:30",
+   "unit": "de la mañana, en ayunas",
+   "label": "lo pusiste primero, antes que todo, como se pone lo importante. Zapatillas y a la calle, justo en la franja de más riesgo.",
+   "tone": "warn"
+  },
+  {
+   "id": "error_102_0",
+   "start": 1326,
+   "dur": 8.1,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_caminata_frio_amanecer.jpg",
+   "hold": true
+  },
+  {
+   "id": "error_102_1",
+   "start": 1334.1,
+   "dur": 2.8,
+   "key": "error",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CAMINAR EN AYUNAS ANTES DE LAS 8",
+     "sub": "el esfuerzo más grande del día, dentro de la ventana del triple de infartos",
+     "tone": "warn",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/error_102_1.mp4"
+  },
+  {
+   "id": "error_103_0",
+   "start": 1336.96,
+   "dur": 9.36,
+   "key": "error",
+   "kind": "board",
+   "eyebrow": "Antes de las 8, en ayunas",
+   "title": "Todo lo que apilás en esa caminata",
+   "items": [
+    {
+     "title": "Sangre espesa",
+     "sub": "no tomaste agua"
+    },
+    {
+     "title": "Plaquetas en su punto más pegajoso"
+    },
+    {
+     "title": "Cortisol y adrenalina en el pico"
+    },
+    {
+     "title": "El estómago vacío"
+    },
+    {
+     "title": "Y el frío, que contrae más las arterias"
+    }
+   ]
+  },
+  {
+   "id": "error_104_0",
+   "start": 1346.32,
+   "dur": 2.14,
+   "key": "error",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Cuarenta"
+    },
+    {
+     "t": "minutos"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "paso"
+    },
+    {
+     "t": "rápido",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "error_104_1",
+   "start": 1348.46,
+   "dur": 3.22,
+   "key": "error",
+   "kind": "stat",
+   "big": "40 min",
+   "unit": "de trabajo, en ayunas",
+   "label": "el esfuerzo más grande del día, con el estómago vacío y adentro de la franja de las 6 a las 12.",
+   "tone": "warn"
+  },
+  {
+   "id": "error_104_2",
+   "start": 1351.68,
+   "dur": 4.2,
+   "key": "error",
+   "kind": "lowerthird",
+   "title": "Y encima, con frío",
+   "tone": "warn",
+   "kicker": "La última capa",
+   "desc": "El frío contrae las arterias todavía más. Es el peor combo del día, repetido todas las mañanas."
+  },
+  {
+   "id": "error_105_0",
+   "start": 1355.86,
+   "dur": 4.28,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_pastillero_semanal.jpg"
+  },
+  {
+   "id": "error_105_1",
+   "start": 1360.14,
+   "dur": 3.36,
+   "key": "error",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_pastilla_agua.jpg",
+   "figure": "La vuelta de tuerca",
+   "caption": "Salen a caminar ANTES de tomarla, «para tomarla con el desayuno cuando vuelvo». Caminan con la del día anterior ya gastada."
+  },
+  {
+   "id": "error_106_0",
+   "start": 1363.5,
+   "dur": 3.92,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "Y encima, sin la pastilla",
+   "tone": "warn",
+   "w": 3.4
+  },
+  {
+   "id": "error_106_1",
+   "start": 1367.42,
+   "dur": 5.98,
+   "key": "error",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_pastillero_semanal.jpg",
+   "figure": "«La tomo cuando vuelvo»",
+   "caption": "La mayoría de las pastillas de la presión se toman a la mañana. Muchos salen a caminar ANTES, para tomarla con el desayuno."
+  },
+  {
+   "id": "error_106_2",
+   "start": 1373.4,
+   "dur": 4.66,
+   "key": "error",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "momento"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "expuesto"
+    },
+    {
+     "t": "del"
+    },
+    {
+     "t": "día",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "error_106_3",
+   "start": 1378.06,
+   "dur": 6.38,
+   "key": "error",
+   "kind": "lowerthird",
+   "title": "Con la protección de ayer ya gastada",
+   "tone": "warn",
+   "kicker": "Cuando menos cubierto estás",
+   "desc": "La hora de mayor exigencia del día, justo cuando la pastilla anterior terminó de hacer efecto."
+  },
+  {
+   "id": "error_107_0",
+   "start": 1384.44,
+   "dur": 11.02,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_caminata_frio_amanecer.jpg"
+  },
+  {
+   "id": "error_108_0",
+   "start": 1395.46,
+   "dur": 2.31,
+   "key": "error",
+   "kind": "talk"
+  },
+  {
+   "id": "error_108_1",
+   "start": 1397.77,
+   "dur": 5.07,
+   "key": "error",
+   "kind": "mitoverdad",
+   "myth": "Entonces no camines a la mañana",
+   "truth": "Caminar es de lo mejor que podés hacer: lo que hay que correr es el HORARIO",
+   "flipAt": 64
+  },
+  {
+   "id": "error_109_0",
+   "start": 1402.84,
+   "dur": 4.2,
+   "key": "error",
+   "kind": "lowerthird",
+   "title": "Nadie te dijo que dejes de caminar",
+   "tone": "teal",
+   "kicker": "Que quede clarísimo",
+   "desc": "Caminar es de las mejores cosas que podés hacer por tu corazón. Punto. No hay discusión."
+  },
+  {
+   "id": "error_109_1",
+   "start": 1404.98,
+   "dur": 2.8,
+   "key": "error",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CAMINAR ES DE LO MEJOR",
+     "sub": "el problema nunca fue caminar — es la hora",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/error_109_1.mp4"
+  },
+  {
+   "id": "error_109_2",
+   "start": 1408.58,
+   "dur": 5.6,
+   "key": "error",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "El"
+    },
+    {
+     "t": "sedentarismo"
+    },
+    {
+     "t": "hace"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "daño",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "error_110_0",
+   "start": 1414.18,
+   "dur": 4.2,
+   "key": "error",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_v8v252t7cjxe_horario_caminata.jpg"
+    }
+   ]
+  },
+  {
+   "id": "error_110_1",
+   "start": 1417.99,
+   "dur": 3.77,
+   "key": "error",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_caminata_sol_9am.jpg",
+   "hold": true
+  },
+  {
+   "id": "error_111_0",
+   "start": 1421.76,
+   "dur": 4.9,
+   "key": "error",
+   "kind": "checklist",
+   "title": "A media mañana ya tenés todo a favor",
+   "items": [
+    {
+     "text": "Ya desayunaste",
+     "state": "done"
+    },
+    {
+     "text": "Ya tomaste agua",
+     "state": "done"
+    },
+    {
+     "text": "Ya tomaste la medicación, si la tomás",
+     "state": "done"
+    },
+    {
+     "text": "Y el pico hormonal ya pasó",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "error_111_1",
+   "start": 1426.66,
+   "dur": 3.5,
+   "key": "error",
+   "kind": "lowerthird",
+   "title": "Después de las 9, o a la tarde",
+   "tone": "teal",
+   "kicker": "Corré el horario, no el hábito",
+   "desc": "El pico de cortisol y adrenalina ya pasó. El cuerpo llega a la caminata despierto y cargado."
+  },
+  {
+   "id": "error_111_2",
+   "start": 1430.16,
+   "dur": 3.16,
+   "key": "error",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Mismo"
+    },
+    {
+     "t": "ejercicio"
+    },
+    {
+     "t": "mismo"
+    },
+    {
+     "t": "beneficio"
+    },
+    {
+     "t": "sin"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "ventana",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "error_112_0",
+   "start": 1433.32,
+   "dur": 11.9,
+   "key": "error",
+   "kind": "guardaesto",
+   "title": "Si tiene que ser temprano",
+   "items": [
+    {
+     "text": "Los 90 segundos para levantarte",
+     "image": "img/p_v8v252t7cjxe_sentado_borde_cama.jpg"
+    },
+    {
+     "text": "El vaso de agua sentado, y la pastilla si te toca",
+     "image": "img/p_v8v252t7cjxe_pastilla_agua.jpg"
+    },
+    {
+     "text": "Los primeros 10 minutos de caminata, de paseo",
+     "image": "img/p_v8v252t7cjxe_caminata_sol_9am.jpg"
+    }
+   ],
+   "tag": "Sin arrancar en cuarta"
+  },
+  {
+   "id": "error_113_0",
+   "start": 1445.22,
+   "dur": 2.52,
+   "key": "error",
+   "kind": "lowerthird",
+   "title": "Si tu vida es a las 7, hacelo así",
+   "tone": "teal",
+   "kicker": "Sin arrancar en cuarta",
+   "desc": "Los 90 segundos para levantarte, el vaso de agua sentado, la pastilla si te toca y algo chiquito en el estómago."
+  },
+  {
+   "id": "error_113_1",
+   "start": 1447.74,
+   "dur": 11.42,
+   "key": "error",
+   "kind": "board",
+   "title": "Los primeros 10 minutos, de paseo",
+   "items": [
+    {
+     "title": "Bien lentos, como mirando vidrieras"
+    },
+    {
+     "title": "Que el cuerpo entre en temperatura"
+    },
+    {
+     "title": "Recién después apurás el paso"
+    }
+   ]
+  },
+  {
+   "id": "error_113_2",
+   "start": 1459.16,
+   "dur": 2.8,
+   "key": "error",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ARRANQUES EN CUARTA",
+     "sub": "con el motor frío no anda bien ni un auto",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/error_113_2.mp4"
+  },
+  {
+   "id": "cierre_114_0",
+   "start": 1463.82,
+   "dur": 3.4,
+   "key": "cierre",
+   "kind": "talk"
+  },
+  {
+   "id": "cierre_114_1",
+   "start": 1467.22,
+   "dur": 11,
+   "key": "cierre",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_hector_bien_cocina.jpg",
+   "kicker": "Don Héctor, hoy"
+  },
+  {
+   "id": "cierre_114_2",
+   "start": 1478.22,
+   "dur": 1.22,
+   "key": "cierre",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_caminata_sol_9am.jpg"
+  },
+  {
+   "id": "cierre_115_0",
+   "start": 1479.44,
+   "dur": 13.8,
+   "key": "cierre",
+   "kind": "quote",
+   "image": "img/p_v8v252t7cjxe_hector_bien_cocina.jpg",
+   "text": "Yo pensé que se me estaba terminando la cuerda. *Y era que me levantaba mal.*"
+  },
+  {
+   "id": "recap_116_0",
+   "start": 1493.24,
+   "dur": 4.68,
+   "key": "recap",
+   "kind": "talk"
+  },
+  {
+   "id": "recap_116_1",
+   "start": 1497.92,
+   "dur": 15.17,
+   "key": "recap",
+   "kind": "focuscards",
+   "title": "Las 5 cosas, mañana a la mañana",
+   "items": [
+    {
+     "image": "img/p_v8v252t7cjxe_sentado_borde_cama.jpg",
+     "label": "1 · 90 segundos",
+     "at": 0
+    },
+    {
+     "image": "img/p_v8v252t7cjxe_vaso_mesaluz.jpg",
+     "label": "2 · El vaso de agua",
+     "at": 80
+    },
+    {
+     "image": "img/p_v8v252t7cjxe_tobillos_bombeo.jpg",
+     "label": "3 · Los tobillos",
+     "at": 160
+    },
+    {
+     "image": "img/p_v8v252t7cjxe_ducha_vapor.jpg",
+     "label": "4 · Ducha tibia",
+     "at": 240
+    },
+    {
+     "image": "img/p_v8v252t7cjxe_caminata_sol_9am.jpg",
+     "label": "5 · Caminata 9 am",
+     "at": 320
+    }
+   ]
+  },
+  {
+   "id": "recap_117_0",
+   "start": 1511.96,
+   "dur": 4.52,
+   "key": "recap",
+   "kind": "callout",
+   "image": "img/p_v8v252t7cjxe_vaso_mesaluz.jpg",
+   "figure": "2 · El vaso de agua",
+   "caption": "Servido en la mesa de luz la noche anterior. Te lo tomás sentado, antes de apoyar los pies en el piso."
+  },
+  {
+   "id": "recap_117_1",
+   "start": 1516.48,
+   "dur": 5.48,
+   "key": "recap",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Agua"
+    },
+    {
+     "t": "primero"
+    },
+    {
+     "t": "café"
+    },
+    {
+     "t": "después",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "recap_117_2",
+   "start": 1521.96,
+   "dur": 7.08,
+   "key": "recap",
+   "kind": "lowerthird",
+   "title": "Veinte bombeos con las puntas de los pies",
+   "tone": "teal",
+   "kicker": "3 · Los tobillos",
+   "desc": "Sentado en el borde de la cama, antes de pararte. Es tu segundo corazón: usalo."
+  },
+  {
+   "id": "recap_118_0",
+   "start": 1529.04,
+   "dur": 6.58,
+   "key": "recap",
+   "kind": "checklist",
+   "title": "4 · La ducha y el baño",
+   "items": [
+    {
+     "text": "Tibia, nunca hirviendo",
+     "state": "done"
+    },
+    {
+     "text": "Y nunca lo primero al levantarte",
+     "state": "done"
+    },
+    {
+     "text": "En el baño, no pujes. Si no sale, esperá.",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "recap_118_1",
+   "start": 1535.62,
+   "dur": 2.8,
+   "key": "recap",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "DESPUÉS DE LAS 9, NUNCA ANTES DE LAS 8",
+     "sub": "y si tiene que ser temprano, los primeros 10 minutos de paseo",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/v8v252t7cjxe/recap_118_1.mp4"
+  },
+  {
+   "id": "recap_119_0",
+   "start": 1543.12,
+   "dur": 7.24,
+   "key": "recap",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Ninguna"
+    },
+    {
+     "t": "cuesta"
+    },
+    {
+     "t": "plata",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "recap_120_0",
+   "start": 1550.36,
+   "dur": 2.04,
+   "key": "recap",
+   "kind": "talk"
+  },
+  {
+   "id": "recap_120_1",
+   "start": 1552.4,
+   "dur": 3.26,
+   "key": "recap",
+   "kind": "lowerthird",
+   "title": "Escribime a qué hora te levantás",
+   "tone": "teal",
+   "kicker": "En los comentarios",
+   "desc": "Nada más que la hora. Si alguna vez se te oscureció la vista al pararte, agregale un sí."
+  },
+  {
+   "id": "recap_121_0",
+   "start": 1555.66,
+   "dur": 5.24,
+   "key": "recap",
+   "kind": "lowerthird",
+   "title": "Escribime nada más que la hora",
+   "tone": "teal",
+   "kicker": "En los comentarios",
+   "desc": "A qué hora te levantás. Nada más. Los leo todos los días, uno por uno."
+  },
+  {
+   "id": "recap_121_1",
+   "start": 1560.9,
+   "dur": 7.16,
+   "key": "recap",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "¿Ese"
+    },
+    {
+     "t": "segundito"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "vista"
+    },
+    {
+     "t": "oscura?"
+    },
+    {
+     "t": "agregale"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "sí",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "recap_122_0",
+   "start": 1568.06,
+   "dur": 5.38,
+   "key": "recap",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_vaso_mesaluz.jpg",
+   "hold": true
+  },
+  {
+   "id": "recap_123_0",
+   "start": 1573.44,
+   "dur": 1.96,
+   "key": "recap",
+   "kind": "lowerthird",
+   "title": "No se lo mandes para que aprenda",
+   "tone": "teal",
+   "kicker": "Si conocés a alguien que vive solo",
+   "desc": "Mandáselo para que esta noche deje el vaso servido en la mesa de luz. Con eso alcanza."
+  },
+  {
+   "id": "recap_123_1",
+   "start": 1575.4,
+   "dur": 4.1,
+   "key": "recap",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Esta"
+    },
+    {
+     "t": "noche"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "vaso"
+    },
+    {
+     "t": "servido",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "recap_124_0",
+   "start": 1579.5,
+   "dur": 14.68,
+   "key": "recap",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_v8v252t7cjxe_guia_celular.jpg",
+   "imageDarken": 0.62,
+   "title": "Todo esto, en la descripción",
+   "chips": [
+    "El paso a paso de los 90 segundos",
+    "La planilla de presión de una semana",
+    "Abrila: está arriba de todo"
+   ]
+  },
+  {
+   "id": "teaser_125_0",
+   "start": 1594.18,
+   "dur": 11.2,
+   "key": "teaser",
+   "kind": "raw",
+   "src": "img/p_v8v252t7cjxe_pastilla_agua.jpg"
+  },
+  {
+   "id": "teaser_125_1",
+   "start": 1605.38,
+   "dur": 4.04,
+   "key": "teaser",
+   "kind": "lowerthird",
+   "title": "Próximo: ¿la pastilla de la presión, de mañana o de noche?",
+   "tone": "teal",
+   "kicker": "No te lo pierdas",
+   "desc": "Hay un debate abierto con estudios grandes en las dos veredas. Te cuento qué dice cada lado."
+  },
+  {
+   "id": "teaser_126_0",
+   "start": 1609.42,
+   "dur": 3.5,
+   "key": "teaser",
+   "kind": "lowerthird",
+   "title": "Hay estudios grandes en las dos veredas",
+   "tone": "teal",
+   "kicker": "El debate abierto",
+   "desc": "A mucha gente le funciona mejor de noche que a la mañana. Te voy a contar qué dice cada lado."
+  },
+  {
+   "id": "teaser_126_1",
+   "start": 1612.92,
+   "dur": 2.78,
+   "key": "teaser",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "¿De"
+    },
+    {
+     "t": "mañana"
+    },
+    {
+     "t": "o"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "noche?",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "teaser_126_2",
+   "start": 1615.7,
+   "dur": 6.24,
+   "key": "teaser",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/p_v8v252t7cjxe_federer_despide.jpg",
+   "imageDarken": 0.62,
+   "title": "Si tomás una pastilla para la presión, ese video es para vos",
+   "chips": [
+    "Qué dice cada lado del debate",
+    "Qué le pregunto yo a mis pacientes",
+    "Cómo decidimos el horario"
+   ]
+  },
+  {
+   "id": "close_127_0",
+   "start": 1621.94,
+   "dur": 2.26,
+   "key": "close",
+   "kind": "talk"
+  },
+  {
+   "id": "close_127_1",
+   "start": 1624.2,
+   "dur": 3.21,
+   "key": "close",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "A"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "mañana"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "cuando"
+    },
+    {
+     "t": "está"
+    },
+    {
+     "t": "más"
+    },
+    {
+     "t": "solo",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "close_127_2",
+   "start": 1627.41,
+   "dur": 2.61,
+   "key": "close",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Federer Archivos — salud real después de los 60",
+   "image": "img/p_v8v252t7cjxe_federer_despide.jpg"
+  }
+ ]
+}
