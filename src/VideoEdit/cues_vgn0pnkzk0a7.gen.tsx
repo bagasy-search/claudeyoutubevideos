@@ -143,7 +143,7 @@ export const CUES: Cue[] = [
   { key: "vgn0pnkzk0a7_s_0133", start: 496.76, dur: 3.95, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/vgn0pnkzk0a7_s_0133.jpg" hue="amber" darken={0} /> },
   { key: "vgn0pnkzk0a7_s_0134", start: 500.46, dur: 3.91, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/vgn0pnkzk0a7_s_0134.jpg" hue="amber" darken={0} /> },
   { key: "vgn0pnkzk0a7_s_0135", start: 504.12, dur: 3.85, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/vgn0pnkzk0a7_s_0135.jpg" hue="amber" darken={0} /> },
-  { key: "vgn0pnkzk0a7_s_0136", start: 507.72, dur: 3.87, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vgn0pnkzk0a7_cut/vgn0pnkzk0a7_s_0136.mp4" hue="amber" darken={0} clipDur={4.21} /> },
+  { key: "vgn0pnkzk0a7_s_0136", start: 507.72, dur: 3.87, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/vgn0pnkzk0a7_s_0136.jpg" hue="amber" darken={0} /> },
   { key: "vgn0pnkzk0a7_s_0137", start: 511.34, dur: 4.03, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vgn0pnkzk0a7_cut/vgn0pnkzk0a7_s_0137.mp4" hue="amber" darken={0} clipDur={4.12} /> },
   { key: "vgn0pnkzk0a7_s_0138", start: 515.12, dur: 3.65, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vgn0pnkzk0a7_cut/vgn0pnkzk0a7_s_0138.mp4" hue="amber" darken={0} clipDur={4.21} /> },
   { key: "vgn0pnkzk0a7_s_0139", start: 518.52, dur: 3.67, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vgn0pnkzk0a7_cut/vgn0pnkzk0a7_s_0139.mp4" hue="amber" darken={0} clipDur={4.2} /> },
