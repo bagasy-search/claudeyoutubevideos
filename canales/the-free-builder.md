@@ -2,7 +2,7 @@
 
 > ⚠️ El creador confirmó que ESTE canal ES **El Constructor Libre** (narrador **Tomás**, Patagonia, voseo argentino).
 > Nicho: autosuficiencia / construcción / hogar, estilo "sabiduría vieja que te ocultan". Enemigo típico: ferreterías/marcas.
-> Guía que se vende: **Manual de Reparaciones Caseras** — link SIN https `manual-reparaciones-caseras.vercel.app`
+> Guía que se vende: **Manual de Reparaciones Caseras** — link CON https `https://manual-reparaciones-caseras.vercel.app`
 > (CTA arriba de la descripción, receta numerada abajo; en el video se manda a la descripción, SIN precio en pantalla).
 > Identidad completa y pipeline: memoria `project_constructor_libre` + `project_constructor_libre_subnicho_madera` + skill `constructor-video`.
 
@@ -70,14 +70,15 @@
 
 ## 5. GLOSARIO — elementos recurrentes
 
-- **Guía "Manual de Reparaciones Caseras"** (= "El Manual del Constructor Libre"): PDF, pago único **$47 → $27** (43% OFF lanzamiento), garantía 7 días, acceso inmediato. **40 arreglos numerados, 97 páginas ilustradas, 4 módulos.** Link SIN https en descripción: `manual-reparaciones-caseras.vercel.app`. En el video: SIN precio, "link abajo en la descripción".
+- **Guía "Manual de Reparaciones Caseras"** (= "El Manual del Constructor Libre"): PDF, pago único **$47 → $27** (43% OFF lanzamiento), garantía 7 días, acceso inmediato. **40 arreglos numerados, 97 páginas ilustradas, 4 módulos.** Link en la descripción **CON `https://`** (si no, YouTube no lo hace clickeable): `https://manual-reparaciones-caseras.vercel.app` — va en la PRIMERA LÍNEA. En el video: SIN precio, "link abajo en la descripción".
   - Mód I Madera y Metal · Mód II Plagas · **Mód III Goteras, Humedad y Moho** (deshumidificar un cuarto por $4 sin electricidad, cortar la humedad que sube, peróxido mata moho de raíz, tapar gotera para siempre) · Mód IV Hogar y Auto (caños, faros $1, rayones). Extras: "Los números a recordar", "El error que arruina el 90%".
   - Autor = **Tomás** ("crecí mirando a mi abuelo arreglar todo con lo que tenía y un cuaderno de tapas gastadas"). Ángulo de venta: "lo que se arregla con $1, las empresas te lo cobran una fortuna" (cuenta $2.380/año en servicios vs $109 haciéndolo vos).
   - Este video (humedad $2) = tema del **Módulo III** → el CTA de cierre conecta con lo que el truco NO resuelve (humedad de cimiento/gotera/moho de raíz) = está en el Manual.
 
 ## 6. APRENDIZAJES — correcciones del creador (append-only)
 
-- 2026-07-27 — 🔴 CORRECCIÓN DEL CREADOR (aplica a TODOS los videos del canal): **el link de la guía va SOLO, en la PRIMERA LÍNEA de la descripción, arriba de todo.** Lo había puesto al final del primer párrafo y ahí queda tapado por el "…ver más" de YouTube: en la práctica es como no ponerlo. Formato correcto: línea 1 = `MANUAL DE REPARACIONES CASERAS - 40 arreglos numerados, 97 paginas ilustradas:` · línea 2 = el link SIN https · línea 3 = una frase de qué hay adentro · recién ahí arranca el gancho. El precio sigue sin ir en ningún lado. (Precisa la nota de §5: "CTA arriba de la descripción" significa PRIMERA LÍNEA, no "en el primer párrafo".)
+- 2026-07-27 — 🔴 CORRECCIÓN DEL CREADOR — **el link del Manual va CON `https://` adelante: `https://manual-reparaciones-caseras.vercel.app`. Sin el `https://`, YouTube lo muestra como texto plano y no lo convierte en link clickeable.** ESTO REEMPLAZA la regla "link SIN https" del 2026-07-21, que estaba en la cabecera, en §5 y repetida en cada guion: las tres quedaron actualizadas. La regla que SIGUE en pie es la del PRECIO: el precio no va ni en la descripción ni en pantalla ni en voz.
+- 2026-07-27 — 🔴 CORRECCIÓN DEL CREADOR (aplica a TODOS los videos del canal): **el link de la guía va SOLO, en la PRIMERA LÍNEA de la descripción, arriba de todo.** Lo había puesto al final del primer párrafo y ahí queda tapado por el "…ver más" de YouTube: en la práctica es como no ponerlo. Formato correcto: línea 1 = `MANUAL DE REPARACIONES CASERAS - 40 arreglos numerados, 97 paginas ilustradas:` · línea 2 = el link (ver la correccion de mas abajo: CON https) · línea 3 = una frase de qué hay adentro · recién ahí arranca el gancho. El precio sigue sin ir en ningún lado. (Precisa la nota de §5: "CTA arriba de la descripción" significa PRIMERA LÍNEA, no "en el primer párrafo".)
 - 2026-07-27 — ⚠️ INCIDENTE que conviene conocer: al cerrar el video, `public/` del worktree, `D:\videosdeclaude` **y hasta el working tree de git** aparecieron reseteados por un proceso externo (apareció un `fix_p2_prompts.json` de otro video en `public/img` = otro agente sobre las mismas carpetas). **No hubo que rehacer NADA**: los commits estaban en `origin/molino-<slug>` y el farm publica todo como release (`vqrzeb6lg0ul` = MP4 final, `assets-vqrzeb6lg0ul` = assets). Se recuperó con `git checkout -B <rama> origin/<rama>` (NO `reset --hard`: con `-B` git se niega si hay algo sin commitear) + `gh release download`. LECCIÓN: **pushear seguido**, y ante una pérdida mirar origin y los releases ANTES de dar nada por perdido.
 
 - 2026-07-21 — Canal creado en blanco. Falta confirmar: presentador (nombre/voz/historia), trato (tú/vos), largo objetivo y skill definitiva. Guion #1 escrito SIN nombre ni biografía inventada.
