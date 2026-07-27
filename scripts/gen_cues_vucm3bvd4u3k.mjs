@@ -188,9 +188,15 @@ plan.forEach((p, i) => {
       }
     }
     const a = attrs(comp, props);
-    // FedLowerThird es el único del kit que NO acepta `mood` (no tiene paleta de escena)
-    const moodAttr = comp === "FedLowerThird" ? "" : ` mood=${jsxStr(props.mood || "science")}`;
-    const inner = `<${comp} ${variant ? `variant='${variant}'` : "variant='whip'"} totalF={${variant ? durF : durF + 24}} ${a} accent={A}${moodAttr} />`;
+    // FedLowerThird: NO acepta `mood`, y su `avatarSrc` cae por default a
+    // staticFile('med/avatar.mp4') — un archivo que no existe acá → 404 y el CHUNK MUERE
+    // (pasó en el chunk 1 del primer render). El propio kit documenta que
+    // `avatarSrc={null}` es el MODO OVERLAY: el avatar ya está montado abajo por el
+    // build, que es exactamente nuestra arquitectura.
+    const extra = comp === "FedLowerThird"
+      ? " avatarSrc={null}"
+      : ` mood=${jsxStr(props.mood || "science")}`;
+    const inner = `<${comp} ${variant ? `variant='${variant}'` : "variant='whip'"} totalF={${variant ? durF : durF + 24}} ${a} accent={A}${extra} />`;
     cues.push({ id, start: p.sec, dur: p.dur, avatar: false,
       node: variant ? inner : `<Sequence from={-12} layout='none'>${inner}</Sequence>` });
     return;

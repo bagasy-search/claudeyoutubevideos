@@ -103,7 +103,7 @@ export const CUES: Cue[] = [
     <FedStat variant='fold' totalF={151} kicker='LA INJUSTICIA' value={12} suffix='minutos' decimals={0} label='Lo que dura la consulta' sub='No es que no haya respuesta: es que la respuesta no cabe ahí.' accent={A} mood='cool' />
   )},
   {id: 'b023', start: 117.28, dur: 4.68, avatar: false, node: (
-    <FedLowerThird variant='lift' totalF={140} name='Dr. Federer' role='Médico · +10 años de consultorio' topic='Federer Archivos' accent={A} />
+    <FedLowerThird variant='lift' totalF={140} name='Dr. Federer' role='Médico · +10 años de consultorio' topic='Federer Archivos' accent={A} avatarSrc={null} />
   )},
   {id: 'b024', start: 121.96, dur: 7.48, avatar: true, node: (
     <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: '9%'}}>
