@@ -88,7 +88,7 @@ const ESTRUCTURA = new Set(["AvatarLayer","AvatarWindow","TechBackground","Cinem
 // (jul 2026): RawShot solo era el 84% de TODOS los usos de componentes — el gate lo contaba como
 // componente y por eso daba por buena una sucesión de fotos. Ahora se cuentan APARTE: suman a la
 // DENSIDAD (siguen siendo un visual), pero no a la VARIEDAD.
-const TOMAS = new Set((process.env.TOMAS_PLANAS || "RawShot,HalfShot,ReframedVideo,PhotoScene")
+const TOMAS = new Set((process.env.TOMAS_PLANAS || "RawShot,HalfShot,ReframedVideo,PhotoScene,FedFullShot")
   .split(",").map((s) => s.trim()).filter(Boolean));
 const jsxAll = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1])
   .filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
@@ -118,10 +118,16 @@ const MAX_RAWSHOT_PCT = +(process.env.MAX_RAWSHOT_PCT || 78);
 // Calibración jul 2026 sobre los 15 videos terminados con reporte (usos ÷ minutos):
 //   15.8 · 13.1 │ 5.5 · 5.3 · 4.6 · 4.5 · 3.8 · 3.1 · 2.5 · 2.4 · 2.4 · 2.3 · 1.8 · 1.3 · 0.0
 //   mediana 3.8. Los DOS de arriba son los únicos que el creador marcó como "de pura calidad".
-// 9 deja pasar a esos dos con margen y frena al resto. OJO: eso es 13 de 15 históricos bloqueados
-// — es a propósito (la mediana es el problema, no la referencia), pero significa que el agente va a
-// tener que iterar más antes de rendear. Si aprieta demasiado, aflojalo por env sin tocar código.
-const MIN_COMP_MIN = +(process.env.MIN_COMP_MIN || 9);
+// CORRECCIÓN (importante): esos 13,2 y 5,3 estaban MAL MEDIDOS. Los props de este kit se pasan por
+// spread (`<FedStat {...P[21]} />`) y el contenido vive en un array aparte, así que hubo que
+// resolverlo para saber qué lleva datos encima y qué no. Resultado sobre el video de máxima calidad:
+//   · 244 usos con spread = 11,6/min
+//   · de esos, FedFullShot: 68 usos, 0 con contenido → es una TOMA a pantalla completa, no un
+//     componente. Ya está movido al set TOMAS de arriba.
+//   · componentes REALES: 176 usos = 8,4/min
+// O sea que un piso de 9 le exigía MÁS que al video que el creador llamó "de pura calidad". El piso
+// va en 7: ~17% por debajo de esa referencia, y bien por encima del 5,3 del video que no le gustó.
+const MIN_COMP_MIN = +(process.env.MIN_COMP_MIN || 7);
 
 // La DENSIDAD no cambia: las tomas planas siguen contando como visual (esto NO toca VIS_EVERY_S).
 const visuals = imgs.length + clips.length + compUses + shotUses;

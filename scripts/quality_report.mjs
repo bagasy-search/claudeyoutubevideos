@@ -114,7 +114,7 @@ if (!R.duracion_s) {
 // ── VARIEDAD: componentes vs material crudo ───────────────────────────────────────────────────
 const FRAMEWORK = new Set(["Sequence","AbsoluteFill","Video","OffthreadVideo","Img","Audio","Series","Loop","Freeze","TransitionSeries","AnimatePresence","Fragment","Composition","Still","Suspense"]);
 const ESTRUCTURA = new Set(["AvatarLayer","AvatarWindow","TechBackground","CinematicWrap","HalfLeft","AvatarScrimText","GrainOverlay","MotesLayer","ParallaxLayer"]);
-const TOMAS = new Set(["RawShot","HalfShot","ReframedVideo","PhotoScene"]);
+const TOMAS = new Set(["RawShot","HalfShot","ReframedVideo","PhotoScene","FedFullShot"]);
 const jsx = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1]).filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
 // En los builds DATA-DRIVEN (kit fed6) los componentes no son tags JSX: el Main hace un .map sobre
 // los beats y cada beat declara su tipo como {"kind":"lowerthird"}. Contando solo tags, un video de
