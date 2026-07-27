@@ -1,0 +1,3276 @@
+[
+ {
+  "key": "hook",
+  "phrase": "El agua que te levanta",
+  "beats": [
+   {
+    "kind": "raw",
+    "image": "vaso_agua_mesita_noche_reloj_tres",
+    "at": "El agua que te levanta",
+    "kicker": "Las 3 de la mañana"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "El agua de ayer",
+    "tokens": [
+     {
+      "t": "La"
+     },
+     {
+      "t": "tomaste"
+     },
+     {
+      "t": "ayer"
+     },
+     {
+      "t": "a"
+     },
+     {
+      "t": "las"
+     },
+     {
+      "t": "4"
+     },
+     {
+      "t": "y"
+     },
+     {
+      "t": "se"
+     },
+     {
+      "t": "quedó"
+     },
+     {
+      "t": "guardada",
+      "hl": true
+     },
+     {
+      "t": "en"
+     },
+     {
+      "t": "las"
+     },
+     {
+      "t": "piernas",
+      "hl": true
+     }
+    ],
+    "at": "se te quedó guardada"
+   },
+   {
+    "kind": "mitoverdad",
+    "myth": "De noche la vejiga se te llena",
+    "truth": "De noche se vacía lo que juntaste de día",
+    "at": "Tu vejiga no se llena"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "ANTES",
+     "DE",
+     "APAGAR",
+     "LA",
+     "LUZ"
+    ],
+    "tone": "teal",
+    "at": "antes de que apagues la luz"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "story",
+  "phrase": "Ramón tiene 72 años",
+  "beats": [
+   {
+    "kind": "raw",
+    "image": "ramon_retrato_taller_tornero_manos",
+    "at": "Ramón tiene 72 años",
+    "kicker": "72 años. Tornero, 40 años."
+   },
+   {
+    "kind": "chips",
+    "title": "Don Ramón",
+    "image": "ramon_lava_manos_jabon_blanco_cepillo",
+    "chips": [
+     "72 años",
+     "Tornero durante 40 años",
+     "Vino por la presión"
+    ],
+    "at": "vino por la presión"
+   },
+   {
+    "kind": "raw",
+    "image": "ramon_sentado_frente_carpeta_cerrada",
+    "at": "escuché cientos de veces",
+    "kicker": "La frase que escucho siempre"
+   },
+   {
+    "kind": "quote",
+    "text": "Doctor, yo ya no duermo, yo descanso a los pedazos.",
+    "image": "ramon_cansado_consultorio_ojeras",
+    "at": "yo descanso a los pedazos"
+   },
+   {
+    "kind": "stat",
+    "eyebrow": "Don Ramón, cada noche",
+    "value": 4,
+    "prefix": "",
+    "suffix": "",
+    "label": "levantadas por noche: la primera 12 y media, la última 5 y 4",
+    "at": "La primera a las 12 y media"
+   },
+   {
+    "kind": "raw",
+    "image": "pasillo_casa_luz_prendida_madrugada",
+    "at": "dormía con la luz del pasillo",
+    "kicker": "Tres semanas con la luz prendida"
+   },
+   {
+    "kind": "freezezoom",
+    "image": "ramon_sentado_piso_frio_pasillo_caida",
+    "x": 50,
+    "y": 66,
+    "label": "En el piso, con la vejiga llena",
+    "zoom": 1.7,
+    "tone": "warn",
+    "at": "Quedó sentado en el piso frío"
+   },
+   {
+    "kind": "raw",
+    "image": "elvira_levanta_ramon_pasillo_dos_madrugada",
+    "at": "Elvira lo levantó, 70 años",
+    "kicker": "Los dos en el pasillo"
+   },
+   {
+    "kind": "errorstinger",
+    "number": 1,
+    "title": "\"TOMÁ MENOS AGUA\"",
+    "tone": "warn",
+    "at": "el peor consejo del mundo"
+   },
+   {
+    "kind": "raw",
+    "image": "vaso_vacio_boca_seca_ocho_dias",
+    "at": "dejó de tomar agua, 8 días",
+    "kicker": "8 días sin tomar agua"
+   },
+   {
+    "kind": "bars",
+    "title": "Cortar el agua no cambió nada",
+    "eyebrow": "Don Ramón, 8 días sin tomar agua",
+    "unit": "levantadas/noche",
+    "bars": [
+     {
+      "label": "Antes",
+      "value": 4,
+      "tone": "warn"
+     },
+     {
+      "label": "Después de 8 días",
+      "value": 4,
+      "tone": "warn"
+     }
+    ],
+    "at": "levantándose exactamente igual"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "numeros",
+  "phrase": "Te tiro 3 números",
+  "beats": [
+   {
+    "kind": "rule",
+    "number": 3,
+    "title": "TRES NÚMEROS",
+    "at": "Te tiro 3 números"
+   },
+   {
+    "kind": "stat",
+    "eyebrow": "Después de los 65 años",
+    "value": 1,
+    "prefix": "",
+    "suffix": " de cada 2",
+    "label": "se levanta 2 veces o más por noche. No es raro: es la mayoría",
+    "at": "1 de cada 2 adultos"
+   },
+   {
+    "kind": "raw",
+    "image": "papel_informe_continencia_escritorio_lupa",
+    "at": "Sociedad Internacional de Continencia",
+    "kicker": "Definición oficial"
+   },
+   {
+    "kind": "stat",
+    "eyebrow": "Sociedad Internacional de Continencia",
+    "value": 33,
+    "prefix": "más del ",
+    "suffix": "%",
+    "label": "de la orina del día producida durante el sueño: poliuria nocturna",
+    "at": "de toda la orina del día"
+   },
+   {
+    "kind": "raw",
+    "image": "bano_madrugada_baldosa_oscura_pies_descalzos",
+    "at": "de madrugada camino al baño",
+    "kicker": "Causa frecuente de fractura de cadera"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "promesa",
+  "phrase": "hoy te doy 3 cosas",
+  "beats": [
+   {
+    "kind": "focuscards",
+    "title": "Hoy te doy 3 cosas",
+    "items": [
+     {
+      "image": "reloj_pared_vaso_agua_horario",
+      "label": "Uno. El reloj exacto del agua, hora por hora",
+      "atPhrase": "agua, hora por hora"
+     },
+     {
+      "image": "marca_media_pantorrilla_dedo_presiona",
+      "label": "Dos. Una pregunta de 2 segundos: ¿vejiga o circulación?",
+      "atPhrase": "pregunta de 2 segundos"
+     },
+     {
+      "image": "candado_cerrado_sobre_vaso_agua",
+      "label": "Tres. El error que arruina todo",
+      "atPhrase": "más te va a doler"
+     }
+    ],
+    "at": "hoy te doy 3 cosas"
+   },
+   {
+    "kind": "raw",
+    "image": "hombre_mayor_aparta_vaso_reloj_seis_tarde",
+    "at": "cortó el agua a las 6",
+    "kicker": "Hizo todo bien y se levanta igual"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "loop",
+  "phrase": "Te lo digo al final",
+  "beats": [
+   {
+    "kind": "looplock",
+    "title": "TE LO DIGO AL FINAL",
+    "sub": "el error que arruina todo esto",
+    "at": "Te lo digo al final"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "presenta",
+  "phrase": "Soy el Dr. Federer",
+  "beats": [
+   {
+    "kind": "nametag",
+    "name": "Dr. Federer",
+    "role": "Federer Archivos",
+    "image": "dr_federer_consultorio_retrato_teal",
+    "at": "Soy el Dr. Federer"
+   },
+   {
+    "kind": "diagram",
+    "slides": [
+     {
+      "image": "lamina_camion_reparto_sangre_cuerpo",
+      "eyebrow": "La sangre es el camión de reparto del cuerpo"
+     },
+     {
+      "image": "lamina_camion_tarde_cabeza_piernas_rinones_sueno",
+      "eyebrow": "Si el camión llega tarde, todo llega tarde"
+     }
+    ],
+    "at": "el camión de reparto del cuerpo"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "principio",
+  "phrase": "casi todo el mundo entiende mal",
+  "beats": [
+   {
+    "kind": "mitoverdad",
+    "myth": "La vejiga es un balde que gotea de noche",
+    "truth": "El líquido ya estaba adentro tuyo, guardado en las piernas",
+    "at": "casi todo el mundo entiende mal"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "mecanismo",
+  "phrase": "vos estás parado, sentado, caminando",
+  "beats": [
+   {
+    "kind": "diagram",
+    "slides": [
+     {
+      "image": "lamina_gravedad_empuja_liquido_hacia_abajo",
+      "eyebrow": "De día la gravedad tira el líquido hacia abajo"
+     },
+     {
+      "image": "lamina_liquido_estacionado_tobillos_pantorrillas",
+      "eyebrow": "Una parte queda estacionada en los tejidos"
+     }
+    ],
+    "at": "vos estás parado, sentado, caminando"
+   },
+   {
+    "kind": "freezezoom",
+    "image": "marca_elastico_media_pierna_tarde",
+    "x": 50,
+    "y": 58,
+    "label": "Esa marca es una pista",
+    "zoom": 1.9,
+    "tone": "teal",
+    "at": "la marca del elástico"
+   },
+   {
+    "kind": "diagram",
+    "slides": [
+     {
+      "image": "lamina_acostado_piernas_nivel_corazon",
+      "eyebrow": "Te acostás: se acabó la gravedad"
+     },
+     {
+      "image": "lamina_liquido_vuelve_golpe_circulacion",
+      "eyebrow": "Todo lo guardado abajo entra de golpe"
+     },
+     {
+      "image": "lamina_rinon_recibe_mas_sangre_filtra",
+      "eyebrow": "El riñón recibe más de lo que esperaba"
+     }
+    ],
+    "at": "entra de golpe a la circulación"
+   },
+   {
+    "kind": "raw",
+    "image": "reloj_velador_dos_de_la_madrugada",
+    "at": "A las dos de la mañana",
+    "kicker": "No tomás agua: la devolvés"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "vasopresina",
+  "phrase": "se llama vasopresina",
+  "beats": [
+   {
+    "kind": "diagram",
+    "slides": [
+     {
+      "image": "lamina_vasopresina_pico_nocturno_joven",
+      "eyebrow": "De joven, un pico grande de noche"
+     },
+     {
+      "image": "lamina_vasopresina_pico_aplanado_con_los_anos",
+      "eyebrow": "Con los años ese pico se aplana"
+     }
+    ],
+    "at": "se llama vasopresina"
+   },
+   {
+    "kind": "board",
+    "eyebrow": "La orden que el riñón ya no escucha",
+    "title": "Guardá el agua. Dejalo dormir.",
+    "items": [
+     "De joven: la vasopresina concentra la orina de noche",
+     "Con los años el pico se aplana",
+     "El riñón sigue trabajando como si fueran las 11 de la mañana"
+    ],
+    "side": "right",
+    "at": "Guarda el agua. Déjalo dormir"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "hookb",
+  "phrase": "es lo más importante",
+  "beats": [
+   {
+    "kind": "lowerthird",
+    "kicker": "Escuchame esto",
+    "title": "Lo más importante que vas a oír hoy",
+    "desc": "No es cuánta agua tomás. Es cuándo se te va del cuerpo.",
+    "tone": "teal",
+    "at": "es lo más importante"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "DE",
+     "NOCHE",
+     "SE",
+     "VACÍA"
+    ],
+    "tone": "teal",
+    "at": "se vacía lo que juntaste"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "La misma cantidad de agua",
+    "tokens": [
+     {
+      "t": "Ni"
+     },
+     {
+      "t": "una"
+     },
+     {
+      "t": "gota"
+     },
+     {
+      "t": "menos",
+      "hl": true
+     },
+     {
+      "t": "."
+     },
+     {
+      "t": "Solo"
+     },
+     {
+      "t": "que"
+     },
+     {
+      "t": "se"
+     },
+     {
+      "t": "vaya"
+     },
+     {
+      "t": "antes",
+      "hl": true
+     }
+    ],
+    "at": "ni una gota menos"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "storyb",
+  "phrase": "contó el detalle que me hizo",
+  "beats": [
+   {
+    "kind": "blurexplainer",
+    "image": "lapicera_apoyada_escritorio_carpeta_consultorio",
+    "eyebrow": "El detalle de la consulta",
+    "title": "Me hizo dejar la lapicera",
+    "body": "No fueron las 4 levantadas. Fue lo que Ramón contó después: hacía 3 semanas que dormía con la luz del pasillo prendida.",
+    "side": "right",
+    "at": "contó el detalle que me hizo"
+   },
+   {
+    "kind": "callout",
+    "figure": "2 AM",
+    "eyebrow": "Los dos en el pasillo",
+    "caption": "Lo que más bronca me dio no fue la caída. Fue lo que Ramón hizo para arreglarlo.",
+    "image": "pasillo_penumbra_dos_ancianos_madrugada_reloj",
+    "at": "no fue la caída"
+   },
+   {
+    "kind": "checklist",
+    "title": "8 días sin tomar agua: qué cambió",
+    "items": [
+     "Orina del color del té cargado",
+     "Boca pastosa",
+     "Estreñido",
+     "Se seguía levantando 4 veces"
+    ],
+    "at": "con la boca pastosa, estreñido"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "numerosb",
+  "phrase": "Ahí está el problema",
+  "beats": [
+   {
+    "kind": "board",
+    "eyebrow": "Ahí está el problema y ahí está la solución",
+    "title": "No es tomar menos. Es tomar distinto.",
+    "items": [
+     "Cortar el agua no le cambió nada a Ramón",
+     "El agua que lo levantaba ya estaba adentro",
+     "Lo que cambia es el HORARIO, no la cantidad"
+    ],
+    "side": "left",
+    "at": "Ahí está el problema"
+   },
+   {
+    "kind": "bars",
+    "title": "Después de los 65",
+    "eyebrow": "Primer número",
+    "unit": "de cada 2 adultos",
+    "bars": [
+     {
+      "label": "Se levanta 2 veces o más",
+      "value": 1,
+      "tone": "warn"
+     },
+     {
+      "label": "Duerme de corrido",
+      "value": 1,
+      "tone": "teal",
+      "winner": true
+     }
+    ],
+    "at": "No es raro, es la mayoría"
+   },
+   {
+    "kind": "lowerthird",
+    "kicker": "Tiene nombre propio",
+    "title": "POLIURIA NOCTURNA",
+    "desc": "Más del 33% de la orina del día, producida durante las horas de sueño",
+    "tone": "teal",
+    "at": "Se llama poliuria nocturna"
+   },
+   {
+    "kind": "callout",
+    "figure": "70+",
+    "eyebrow": "Tercer número",
+    "caption": "Las caídas de madrugada camino al baño son una de las causas más frecuentes de fractura de cadera.",
+    "image": "adulto_mayor_pasillo_oscuro_camino_bano_pantufla",
+    "at": "En los mayores de 70"
+   },
+   {
+    "kind": "mitoverdad",
+    "myth": "Una fractura de cadera se arregla con un yeso",
+    "truth": "A los 75 es un antes y un después",
+    "at": "no es un yeso"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "Esto no es un video sobre comodidad",
+    "tokens": [
+     {
+      "t": "Es"
+     },
+     {
+      "t": "sobre"
+     },
+     {
+      "t": "no"
+     },
+     {
+      "t": "romperte",
+      "hl": true
+     }
+    ],
+    "at": "Es sobre no romperte"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "promesab",
+  "phrase": "se te vaya del cuerpo",
+  "beats": [
+   {
+    "kind": "blurexplainer",
+    "image": "reloj_pared_madera_vaso_agua_manana_cocina",
+    "eyebrow": "Herramienta 1",
+    "title": "El reloj exacto del agua",
+    "body": "Hora por hora, para que el agua se te vaya del cuerpo antes de acostarte.",
+    "side": "left",
+    "at": "se te vaya del cuerpo"
+   },
+   {
+    "kind": "splitlist",
+    "title": "¿Vejiga o circulación?",
+    "items": [
+     "Son dos animales completamente distintos",
+     "Y se tratan al revés",
+     "Una pregunta de 2 segundos te lo dice esta misma noche"
+    ],
+    "at": "dos animales completamente distintos"
+   },
+   {
+    "kind": "errorstinger",
+    "number": 3,
+    "title": "EL ERROR QUE ARRUINA TODO",
+    "tone": "warn",
+    "at": "que arruina todo esto"
+   },
+   {
+    "kind": "chips",
+    "title": "Ese error no lo comete el que toma agua de más",
+    "image": "hombre_mayor_prolijo_agenda_vaso_medido_cocina",
+    "chips": [
+     "Lo comete el que ya se está cuidando",
+     "El que hizo todo bien",
+     "El que cortó el agua a las 6 de la tarde"
+    ],
+    "at": "el que ya se está cuidando"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "presentab",
+  "phrase": "me convencí de una sola cosa",
+  "beats": [
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "UNA",
+     "SOLA",
+     "COSA"
+    ],
+    "tone": "teal",
+    "at": "me convencí de una sola cosa"
+   },
+   {
+    "kind": "pizarra",
+    "title": "Después de los 60",
+    "slides": [
+     {
+      "kind": "phrase",
+      "heading": "Casi todo lo que sentimos empieza en la circulación"
+     },
+     {
+      "kind": "bullets",
+      "items": [
+       "Más de 10 años de consultorio",
+       "La misma raíz una y otra vez",
+       "El sueño también entra ahí"
+      ]
+     }
+    ],
+    "at": "empieza en la circulación"
+   },
+   {
+    "kind": "avatarkeyword",
+    "items": [
+     {
+      "at": 0,
+      "word": "CABEZA",
+      "sub": "llega tarde",
+      "image": "cabeza_niebla_mental_adulto_mayor_manana",
+      "tone": "teal"
+     },
+     {
+      "at": 40,
+      "word": "PIERNAS",
+      "sub": "llegan tarde",
+      "image": "piernas_pesadas_tobillos_hinchados_sillon",
+      "tone": "teal"
+     },
+     {
+      "at": 80,
+      "word": "RIÑONES",
+      "sub": "llegan tarde",
+      "image": "rinones_lamina_anatomica_teal_fondo_crema",
+      "tone": "teal"
+     },
+     {
+      "at": 120,
+      "word": "SUEÑO",
+      "sub": "llega tarde",
+      "image": "dormitorio_madrugada_cama_deshecha_velador",
+      "tone": "teal"
+     }
+    ],
+    "at": "La cabeza, las piernas, los riñones"
+   },
+   {
+    "kind": "lowerthird",
+    "kicker": "Federer Archivos",
+    "title": "Acá no se vende ningún frasco",
+    "desc": "Te explico lo que pasa adentro tuyo, con nombre y apellido. Vos hacés lo que quieras con eso.",
+    "tone": "teal",
+    "at": "Nunca lo hice"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "principiob",
+  "phrase": "la vejiga es un balde",
+  "beats": [
+   {
+    "kind": "annotated",
+    "eyebrow": "Lo que casi todo el mundo se imagina",
+    "caption": "La vejiga como un balde que de noche gotea",
+    "image": "balde_metal_agua_goteando_ilustracion_crema",
+    "annotations": [
+     {
+      "label": "El balde: la vejiga",
+      "x": 50,
+      "y": 42
+     },
+     {
+      "label": "La gota de la madrugada",
+      "x": 54,
+      "y": 84
+     }
+    ],
+    "at": "la vejiga es un balde"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "Si tomo menos, el balde se llena más despacio",
+    "tokens": [
+     {
+      "t": "Lógico"
+     },
+     {
+      "t": "y"
+     },
+     {
+      "t": "equivocado",
+      "hl": true
+     }
+    ],
+    "at": "Lógico y equivocado"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "mecanismob",
+  "phrase": "en lugar de circular tranquila",
+  "beats": [
+   {
+    "kind": "process",
+    "eyebrow": "De día, mientras estás de pie",
+    "title": "Adónde se va el agua que tomaste",
+    "steps": [
+     {
+      "title": "La gravedad tira",
+      "desc": "Parado, sentado, caminando: el líquido va hacia abajo",
+      "image": "lamina_gravedad_flecha_abajo_cuerpo_parado"
+     },
+     {
+      "title": "Se estaciona",
+      "desc": "En lugar de circular tranquila, una parte queda en tobillos y pantorrillas",
+      "image": "lamina_liquido_estacionado_tobillo_pantorrilla"
+     },
+     {
+      "title": "Queda en los tejidos",
+      "desc": "No es agua suelta dando vueltas: está metida en el tejido",
+      "image": "lamina_corte_pierna_liquido_en_tejidos"
+     }
+    ],
+    "at": "en lugar de circular tranquila"
+   },
+   {
+    "kind": "freezezoom",
+    "image": "pantorrilla_dedo_deja_hoyuelo_edema_tarde",
+    "x": 50,
+    "y": 62,
+    "label": "No es agua suelta: es líquido en los tejidos",
+    "zoom": 1.8,
+    "tone": "teal",
+    "at": "No es agua suelta"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "SE",
+     "ACABÓ",
+     "LA",
+     "GRAVEDAD"
+    ],
+    "tone": "teal",
+    "at": "Se acabó la gravedad"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "vasopresinab",
+  "phrase": "un segundo mecanismo puramente de edad",
+  "beats": [
+   {
+    "kind": "rule",
+    "number": 2,
+    "title": "EL SEGUNDO MECANISMO",
+    "at": "un segundo mecanismo puramente de edad"
+   },
+   {
+    "kind": "callout",
+    "figure": "11 AM",
+    "eyebrow": "Sin la orden clara",
+    "caption": "El riñón sigue trabajando de noche como si fueran las once de la mañana.",
+    "image": "reloj_cocina_once_manana_ventana_noche",
+    "at": "sigue trabajando de noche"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "enemigo",
+  "phrase": "acá aparece el enemigo",
+  "beats": [
+   {
+    "kind": "headline",
+    "at": "acá aparece el enemigo",
+    "eyebrow": "El tema donde todos opinan",
+    "tokens": [
+     {
+      "t": "Acá"
+     },
+     {
+      "t": "aparece"
+     },
+     {
+      "t": "el"
+     },
+     {
+      "t": "ENEMIGO",
+      "hl": true
+     }
+    ]
+   },
+   {
+    "kind": "raw",
+    "at": "si vos sos hombre",
+    "image": "hombre_60_pasillo_noche",
+    "kicker": "Más de 60 y te levantás"
+   },
+   {
+    "kind": "splitlist",
+    "at": "la palabra próstata en menos",
+    "title": "Te dicen «próstata» en menos de 30 segundos",
+    "items": [
+     "El vecino",
+     "El yerno",
+     "El que atiende la farmacia"
+    ]
+   },
+   {
+    "kind": "raw",
+    "at": "un yuyo con nombre en inglés",
+    "image": "frasco_yuyo_ingles_mano",
+    "kicker": "Y sale lo que sale"
+   },
+   {
+    "kind": "frasecinetica",
+    "at": "no está en la próstata",
+    "tone": "warn",
+    "words": [
+     "TU",
+     "PROBLEMA",
+     "NO ESTÁ",
+     "EN LA",
+     "PRÓSTATA"
+    ]
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "marta",
+  "phrase": "68 años. Bibliotecaria jubilada",
+  "beats": [
+   {
+    "kind": "raw",
+    "at": "68 años. Bibliotecaria jubilada",
+    "image": "marta_biblioteca_tarde",
+    "kicker": "Doña Marta, 68 años"
+   },
+   {
+    "kind": "mitoverdad",
+    "at": "Doña Marta no tiene próstata",
+    "myth": "Te levantás de noche = es la próstata",
+    "truth": "Doña Marta se levanta 3 veces y no tiene próstata"
+   },
+   {
+    "kind": "board",
+    "at": "En las mismas proporciones",
+    "eyebrow": "La prueba de que el enemigo miente",
+    "title": "Mujeres y varones, igual",
+    "side": "right",
+    "items": [
+     "Las mujeres se levantan de noche igual que los hombres",
+     "En las mismas proporciones, después de los 60",
+     "Si fuera la próstata, sería una enfermedad de varones. Y no lo es"
+    ]
+   },
+   {
+    "kind": "diagram",
+    "at": "la circulación y del reloj",
+    "slides": [
+     {
+      "image": "lamina_liquido_guardado_piernas",
+      "eyebrow": "Un cuerpo que aprendió a guardar líquido abajo"
+     },
+     {
+      "image": "lamina_marea_vuelve_al_acostarse",
+      "eyebrow": "Y a soltarlo cuando vos te acostás"
+     }
+    ]
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "novende",
+  "phrase": "por qué nadie te lo vende",
+  "beats": [
+   {
+    "kind": "chips",
+    "at": "porque no se puede envasar",
+    "title": "Nada de esto se puede envasar",
+    "image": "gondola_farmacia_frascos_suplementos",
+    "chips": [
+     "El horario del agua no viene en cápsulas",
+     "Las piernas en alto no tienen código de barras",
+     "La sal que no le ponés a la sopa no genera facturación"
+    ]
+   },
+   {
+    "kind": "stat",
+    "at": "una consulta de 12 minutos",
+    "eyebrow": "La consulta real",
+    "value": 12,
+    "suffix": " min",
+    "label": "No hay tiempo material para explicarte una marea adentro de tu cuerpo"
+   },
+   {
+    "kind": "raw",
+    "at": "Entonces te dicen, es la edad",
+    "image": "medico_apurado_reloj_consultorio",
+    "kicker": "«Es la edad» y te mandan a casa"
+   },
+   {
+    "kind": "blurexplainer",
+    "at": "la marea de las piernas",
+    "image": "guia_salud_seccion_circulacion",
+    "eyebrow": "Guía de salud del canal",
+    "title": "La marea de las piernas, dibujada",
+    "body": "Está en la sección de circulación, con un esquema simple. Por si lo querés ver con los ojos y no con el oído.",
+    "side": "left"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "pregunta",
+  "phrase": "la pregunta de 2 segundos",
+  "beats": [
+   {
+    "kind": "rule",
+    "at": "la pregunta de 2 segundos",
+    "number": 2,
+    "title": "LA PREGUNTA DE 2 SEGUNDOS"
+   },
+   {
+    "kind": "freezezoom",
+    "at": "la de las 12 y media",
+    "image": "reloj_mesita_doce_y_media",
+    "x": 50,
+    "y": 45,
+    "zoom": 1.8,
+    "tone": "teal",
+    "label": "La primera levantada"
+   },
+   {
+    "kind": "splitlist",
+    "at": "Nada más que eso, volumen",
+    "title": "¿Hacés mucho o hacés poco?",
+    "items": [
+     "MUCHO · chorro largo · sin urgencia → es LÍQUIDO: circulación",
+     "POCO · urgencia enorme · chorrito corto → VEJIGA o PRÓSTATA",
+     "Nada más que eso: volumen"
+    ]
+   },
+   {
+    "kind": "raw",
+    "at": "es un chorro largo",
+    "image": "bano_noche_luz_calida_chorro_largo",
+    "kicker": "¿De dónde salió todo esto?"
+   },
+   {
+    "kind": "lowerthird",
+    "at": "Es poliuria nocturna",
+    "title": "Poliuria nocturna",
+    "desc": "El riñón filtrando de más. La sal. El horario del agua. Es circulación.",
+    "kicker": "Si hacés MUCHO",
+    "tone": "teal"
+   },
+   {
+    "kind": "raw",
+    "at": "Si te levantas con una urgencia",
+    "image": "urgencia_pasillo_madrugada_bano",
+    "kicker": "Corrés al baño y sale un chorrito"
+   },
+   {
+    "kind": "board",
+    "at": "De vejiga o de próstata",
+    "eyebrow": "Si hacés POCO",
+    "title": "Vejiga o próstata",
+    "side": "left",
+    "items": [
+     "La vejiga irritada avisa antes de tiempo",
+     "La próstata agrandada deja orina adentro",
+     "Esa orina sobrante te vuelve a despertar en dos horas"
+    ]
+   },
+   {
+    "kind": "guardaesto",
+    "at": "en un papel esta noche",
+    "title": "GUARDÁ ESTO",
+    "tag": "La pregunta de 2 segundos",
+    "items": [
+     "Anotá esta noche en un papel: ¿mucho o poco?",
+     "Es la información más útil que le podés llevar a tu médico",
+     "Se pueden tener las dos cosas juntas: importa cuál pesa más"
+    ]
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "reloj",
+  "phrase": "Ahora sí, el reloj del agua",
+  "beats": [
+   {
+    "kind": "rule",
+    "at": "Ahora sí, el reloj del agua",
+    "number": 3,
+    "title": "EL RELOJ DEL AGUA"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "regla1",
+  "phrase": "El grueso del agua va antes",
+  "beats": [
+   {
+    "kind": "process",
+    "at": "El grueso del agua va antes",
+    "eyebrow": "Regla número uno",
+    "title": "Dos tercios del agua, antes de las 4 de la tarde",
+    "steps": [
+     {
+      "title": "Desayuno",
+      "desc": "Ahí arranca el grueso del día",
+      "image": "desayuno_manana_vaso_agua"
+     },
+     {
+      "title": "Media mañana",
+      "desc": "Lo que entra a las 10 lo orinás a las 12, parado y despierto",
+      "image": "vaso_agua_media_manana_cocina"
+     },
+     {
+      "title": "Almuerzo y media tarde",
+      "desc": "Hasta las 4: dos tercios o incluso el 80% del total del día",
+      "image": "almuerzo_mesa_jarra_agua"
+     }
+    ]
+   },
+   {
+    "kind": "raw",
+    "at": "a las 10 de la mañana",
+    "image": "senor_toma_agua_ventana_manana",
+    "kicker": "La orinás a las 12, despierto"
+   },
+   {
+    "kind": "callout",
+    "at": "a las 2 de la mañana",
+    "figure": "2 AM",
+    "eyebrow": "Es el mismo vaso, cambia sólo la hora",
+    "caption": "El agua que entra a las 9 de la noche la vas a orinar a las 2 de la mañana",
+    "image": "vaso_agua_mesita_noche"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "regla2",
+  "phrase": "tres horas antes de acostarte",
+  "beats": [
+   {
+    "kind": "checklist",
+    "at": "tres horas antes de acostarte",
+    "title": "Regla dos: tres horas de corte",
+    "items": [
+     "Desde 3 horas antes de acostarte: líquido, casi nada",
+     "Un sorbo si tenés sed",
+     "Mojarse la boca",
+     "Tragar la pastilla. Punto"
+    ]
+   },
+   {
+    "kind": "raw",
+    "at": "mojarse la boca",
+    "image": "sorbo_agua_pastilla_mesita",
+    "kicker": "Un sorbo, nada más"
+   },
+   {
+    "kind": "headline",
+    "at": "acostás a las 11",
+    "eyebrow": "Hacé la cuenta",
+    "tokens": [
+     {
+      "t": "Te"
+     },
+     {
+      "t": "acostás"
+     },
+     {
+      "t": "a las 11"
+     },
+     {
+      "t": "→"
+     },
+     {
+      "t": "último líquido"
+     },
+     {
+      "t": "a las 8",
+      "hl": true
+     }
+    ]
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "mate",
+  "phrase": "El mate de las 7",
+  "beats": [
+   {
+    "kind": "raw",
+    "at": "El mate de las 7",
+    "image": "termo_mate_tarde_noticiero",
+    "kicker": "La parte argentina"
+   },
+   {
+    "kind": "stat",
+    "at": "es medio litro de agua",
+    "eyebrow": "El mate de las 7 de la tarde",
+    "value": 500,
+    "suffix": " ml",
+    "label": "Medio litro como mínimo. Muchas veces, un litro. Y la cafeína irrita la vejiga."
+   },
+   {
+    "kind": "process",
+    "at": "Te digo que lo corras",
+    "eyebrow": "No te digo que dejes el mate",
+    "title": "Corré el mate, no lo dejes",
+    "steps": [
+     {
+      "title": "Mate hasta las 5 o 6",
+      "desc": "Ahí termina el termo de la tarde",
+      "image": "mate_patio_tarde_temprano"
+     },
+     {
+      "title": "Después, sin cafeína",
+      "desc": "Una infusión en taza, no en termo",
+      "image": "taza_infusion_sin_cafeina_manos"
+     }
+    ]
+   },
+   {
+    "kind": "raw",
+    "at": "con más razón con el alcohol",
+    "image": "copita_vino_cena_mesa",
+    "kicker": "Aporta líquido y frena la vasopresina"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "enemigob",
+  "phrase": "el que atiende la farmacia",
+  "beats": [
+   {
+    "kind": "quote",
+    "at": "el que atiende la farmacia",
+    "text": "«Y eso es la próstata, seguro»",
+    "image": "mostrador_farmacia_consejo_vecino"
+   },
+   {
+    "kind": "lowerthird",
+    "at": "servir para algunos síntomas",
+    "title": "El frasco caro",
+    "desc": "En el mejor de los casos te sirve para algunos síntomas. En el peor, para nada.",
+    "kicker": "Un yuyo con nombre en inglés",
+    "tone": "warn"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "martab",
+  "phrase": "que todavía se enoja",
+  "beats": [
+   {
+    "kind": "annotated",
+    "at": "que todavía se enoja",
+    "eyebrow": "Doña Marta, bibliotecaria jubilada",
+    "caption": "De las que todavía se enojan si alguien dobla la punta de una hoja",
+    "image": "libro_abierto_punta_hoja_doblada",
+    "annotations": [
+     {
+      "label": "La punta doblada",
+      "x": 66,
+      "y": 42
+     }
+    ]
+   },
+   {
+    "kind": "frasecinetica",
+    "at": "esto sería una enfermedad de varones",
+    "tone": "teal",
+    "words": [
+     "SERÍA",
+     "UNA ENFERMEDAD",
+     "DE VARONES",
+     "Y NO LO ES"
+    ]
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "novendeb",
+  "phrase": "te lo vende, te preguntarás",
+  "beats": [
+   {
+    "kind": "headline",
+    "at": "te lo vende, te preguntarás",
+    "eyebrow": "La pregunta incómoda",
+    "tokens": [
+     {
+      "t": "¿Y por qué"
+     },
+     {
+      "t": "nadie"
+     },
+     {
+      "t": "te lo"
+     },
+     {
+      "t": "VENDE?",
+      "hl": true
+     }
+    ]
+   },
+   {
+    "kind": "freezezoom",
+    "at": "no tiene código de barras",
+    "image": "codigo_barras_etiqueta_producto_farmacia",
+    "x": 50,
+    "y": 52,
+    "zoom": 1.8,
+    "tone": "warn",
+    "label": "Poner las piernas en alto no tiene código de barras"
+   },
+   {
+    "kind": "mitoverdad",
+    "at": "el sistema tapa lo que",
+    "myth": "«Es la edad»",
+    "truth": "Es la frase con la que el sistema tapa lo que no tiene tiempo de explicar"
+   },
+   {
+    "kind": "lowerthird",
+    "at": "acá tenemos tiempo, sentate",
+    "title": "Acá tenemos tiempo",
+    "desc": "Sentate.",
+    "kicker": "Federer Archivos",
+    "tone": "teal"
+   },
+   {
+    "kind": "board",
+    "at": "de la guía de salud",
+    "eyebrow": "Guía de salud del canal",
+    "title": "Sección circulación",
+    "side": "right",
+    "items": [
+     "La marea de las piernas, dibujada con un esquema simple",
+     "Por si lo querés ver con los ojos y no con el oído"
+    ]
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "preguntab",
+  "phrase": "te la vas a poder hacer",
+  "beats": [
+   {
+    "kind": "checklist",
+    "at": "te la vas a poder hacer",
+    "title": "La pregunta de 2 segundos",
+    "items": [
+     "Te la hago yo en el consultorio",
+     "Te la vas a poder hacer solo",
+     "Esta misma noche"
+    ]
+   },
+   {
+    "kind": "splitlist",
+    "at": "El riñón filtrando de más",
+    "title": "Si hacés mucho: el problema es de líquido",
+    "items": [
+     "El riñón filtrando de más",
+     "La sal",
+     "El horario del agua",
+     "Es circulación"
+    ]
+   },
+   {
+    "kind": "stat",
+    "at": "la causa más común",
+    "eyebrow": "Poliuria nocturna",
+    "value": 65,
+    "prefix": "+",
+    "suffix": " años",
+    "label": "De lejos, la causa más común de levantarse de noche después de los 65"
+   },
+   {
+    "kind": "callout",
+    "at": "sale un chorrito corto",
+    "figure": "POCO",
+    "eyebrow": "Urgencia enorme, corrés al baño",
+    "caption": "Sale un chorrito corto y encima quedás con la sensación de que no terminaste",
+    "image": "bano_madrugada_chorrito_corto_azulejo"
+   },
+   {
+    "kind": "diagram",
+    "at": "La próstata agrandada deja orina",
+    "slides": [
+     {
+      "image": "lamina_prostata_agrandada_orina_residual",
+      "eyebrow": "La próstata agrandada deja orina adentro"
+     },
+     {
+      "image": "lamina_orina_sobrante_despierta_dos_horas",
+      "eyebrow": "Esa orina sobrante te vuelve a despertar en dos horas"
+     }
+    ]
+   },
+   {
+    "kind": "pizarra",
+    "at": "la información más útil",
+    "title": "Mucho o poco",
+    "slides": [
+     {
+      "kind": "phrase",
+      "heading": "Es la información más útil que le podés llevar a tu médico"
+     },
+     {
+      "kind": "bullets",
+      "items": [
+       "Y casi nadie se la lleva",
+       "Anotalo en un papel esta noche"
+      ]
+     }
+    ]
+   },
+   {
+    "kind": "headline",
+    "at": "se pueden tener las dos",
+    "eyebrow": "Y ojo",
+    "tokens": [
+     {
+      "t": "Se pueden tener"
+     },
+     {
+      "t": "las dos"
+     },
+     {
+      "t": "cosas juntas"
+     },
+     {
+      "t": "saber"
+     },
+     {
+      "t": "CUÁL PESA MÁS",
+      "hl": true
+     }
+    ]
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "relojb",
+  "phrase": "Imagínate el día partido",
+  "beats": [
+   {
+    "kind": "splitlist",
+    "at": "Imagínate el día partido",
+    "title": "El día partido en dos",
+    "items": [
+     "De que te levantás hasta las 4 de la tarde",
+     "De las 4 en adelante"
+    ]
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "regla1b",
+  "phrase": "dos tercios o incluso el",
+  "beats": [
+   {
+    "kind": "stat",
+    "at": "dos tercios o incluso el",
+    "eyebrow": "Del total del día",
+    "value": 80,
+    "suffix": "%",
+    "label": "Que dos tercios o incluso el 80% entren en la primera mitad del día"
+   },
+   {
+    "kind": "checklist",
+    "at": "Con el desayuno a media mañana",
+    "title": "Dónde entra el grueso del agua",
+    "items": [
+     "Con el desayuno",
+     "A media mañana",
+     "Con el almuerzo",
+     "A media tarde"
+    ]
+   },
+   {
+    "kind": "chips",
+    "at": "sin que te cueste nada",
+    "title": "El agua de las 10 la orinás a las 12",
+    "image": "senor_mayor_bano_mediodia_luz_natural",
+    "chips": [
+     "Parado",
+     "Despierto",
+     "Sin que te cueste nada"
+    ]
+   },
+   {
+    "kind": "frasecinetica",
+    "at": "Es el mismo vaso, cambia",
+    "tone": "teal",
+    "words": [
+     "ES EL MISMO",
+     "VASO",
+     "CAMBIA",
+     "LA HORA"
+    ]
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "regla2b",
+  "phrase": "tu último líquido de verdad",
+  "beats": [
+   {
+    "kind": "freezezoom",
+    "at": "tu último líquido de verdad",
+    "image": "reloj_pared_cocina_ocho_noche",
+    "x": 50,
+    "y": 45,
+    "zoom": 1.7,
+    "tone": "teal",
+    "label": "Último líquido de verdad: las 8"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "mateb",
+  "phrase": "cafeína, que es diurética",
+  "beats": [
+   {
+    "kind": "board",
+    "at": "cafeína, que es diurética",
+    "eyebrow": "El termo de la tarde",
+    "title": "La cafeína hace dos cosas",
+    "side": "left",
+    "items": [
+     "Es diurética",
+     "Irrita directamente la pared de la vejiga"
+    ]
+   },
+   {
+    "kind": "mitoverdad",
+    "at": "hacer todo perfecto durante el día",
+    "myth": "Hice todo perfecto durante el día",
+    "truth": "Y lo arruinás con el termo de la tarde mientras mirás el noticiero"
+   },
+   {
+    "kind": "chips",
+    "at": "si quieres algo caliente",
+    "title": "Después de las 5 o 6",
+    "image": "manos_taza_infusion_sillon_tardecita",
+    "chips": [
+     "Algo caliente en la mano, sí",
+     "Una infusión sin cafeína",
+     "En taza, no en termo"
+    ]
+   },
+   {
+    "kind": "quote",
+    "at": "En taza, no en termo",
+    "text": "En taza, no en termo",
+    "image": "taza_al_lado_del_termo_mesa"
+   },
+   {
+    "kind": "splitlist",
+    "at": "hace dos cosas a la vez",
+    "title": "La copita de vino de la cena",
+    "items": [
+     "Aporta líquido",
+     "Frena la vasopresina"
+    ]
+   },
+   {
+    "kind": "diagram",
+    "at": "que guarde agua de noche",
+    "slides": [
+     {
+      "image": "lamina_vasopresina_rinon_guarda_agua",
+      "eyebrow": "La vasopresina le pide al riñón que guarde agua de noche"
+     },
+     {
+      "image": "lamina_alcohol_apaga_el_freno_nocturno",
+      "eyebrow": "El alcohol frena esa hormona"
+     }
+    ]
+   },
+   {
+    "kind": "frasecinetica",
+    "at": "te apaga el freno",
+    "tone": "warn",
+    "words": [
+     "NO SOLO",
+     "TE LLENA",
+     "TE APAGA",
+     "EL FRENO"
+    ]
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "medias",
+  "phrase": "agrega medias de compresión suave",
+  "beats": [
+   {
+    "kind": "raw",
+    "image": "medias_compresion_pierna_manana",
+    "at": "agrega medias de compresión suave",
+    "kicker": "compresión suave, durante el día"
+   },
+   {
+    "kind": "checklist",
+    "title": "LAS MEDIAS, BIEN USADAS",
+    "items": [
+     "Puestas temprano, antes de que el pie se hinche",
+     "Compresión suave, durante el día",
+     "Sacadas antes de acostarte"
+    ],
+    "at": "Y sacadas antes de acostarte"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "regla3",
+  "phrase": "Combinadas con las piernas en",
+  "beats": [
+   {
+    "kind": "process",
+    "eyebrow": "REGLA 3",
+    "title": "LA DESCARGA PROGRAMADA",
+    "steps": [
+     {
+      "title": "Piernas más arriba del corazón",
+      "desc": "Acostado en el sillón, con almohadones abajo de los tobillos",
+      "image": "piernas_almohadones_sillon_tarde"
+     },
+     {
+      "title": "20 a 30 minutos",
+      "desc": "Entre las 4 y las 6 de la tarde, no a la noche",
+      "image": "reloj_cocina_cinco_tarde"
+     },
+     {
+      "title": "Adelantás la marea",
+      "desc": "Esa agua se va antes de dormir, no a la madrugada",
+      "image": "bano_luz_tenue_atardecer"
+     }
+    ],
+    "at": "esto solo baja una levantada"
+   },
+   {
+    "kind": "stat",
+    "eyebrow": "EL SUEÑO REPARADOR",
+    "value": 3,
+    "prefix": "",
+    "suffix": " horas",
+    "label": "Las primeras 3 horas se llevan casi todo el sueño profundo",
+    "at": "está casi todo en las primeras"
+   },
+   {
+    "kind": "raw",
+    "image": "tablita_guia_heladera_iman",
+    "at": "Todo esto, el reloj, las horas",
+    "kicker": "el reloj, las horas, las medias"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "LA GUÍA DE SALUD DEL CANAL",
+    "desc": "El reloj, las horas y las medias, dibujados como una tablita",
+    "kicker": "Para colgarla en la heladera",
+    "tone": "teal",
+    "at": "una tablita en la guía"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "regla4",
+  "phrase": "Regla número 4, el doble",
+  "beats": [
+   {
+    "kind": "rule",
+    "number": 4,
+    "title": "EL DOBLE VACIADO",
+    "at": "Regla número 4, el doble"
+   },
+   {
+    "kind": "process",
+    "eyebrow": "Y ES GRATIS",
+    "title": "CÓMO SE HACE EL DOBLE VACIADO",
+    "steps": [
+     {
+      "title": "Antes de acostarte, orinás",
+      "desc": "Sentado, tomándote tu tiempo, sin apuro y sin pujar",
+      "image": "hombre_bano_sentado_noche"
+     },
+     {
+      "title": "Esperá 5 minutos",
+      "desc": "Lavate los dientes, ponete el pijama, dejá la ropa preparada",
+      "image": "cepillo_dientes_espejo_bano"
+     },
+     {
+      "title": "Volvés y orinás de nuevo",
+      "desc": "Casi siempre sale más, y eso es lo que no te despierta",
+      "image": "regreso_bano_luz_tenue_madrugada"
+     }
+    ],
+    "at": "anda al baño, orinas, salís"
+   },
+   {
+    "kind": "raw",
+    "image": "pijama_doblado_cama_lampara",
+    "at": "dejar la ropa preparada",
+    "kicker": "pasan los 5 minutos"
+   },
+   {
+    "kind": "callout",
+    "figure": "5 min",
+    "caption": "La segunda vez casi siempre sale más. Esa orina era la que te iba a despertar a la una y media",
+    "image": "reloj_mesa_luz_cinco_minutos",
+    "eyebrow": "LA TÉCNICA MÁS TONTA Y MÁS EFECTIVA",
+    "at": "Va a salir más, casi siempre"
+   },
+   {
+    "kind": "board",
+    "eyebrow": "UN DETALLE PARA LOS HOMBRES",
+    "title": "SENTATE PARA LA ÚLTIMA DEL DÍA",
+    "items": [
+     "Sentado se vacía mejor",
+     "Tomándote tu tiempo, sin apuro",
+     "Sin pujar"
+    ],
+    "side": "right",
+    "at": "Y un detalle para los hombres"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "semillas",
+  "phrase": "Regla número 5, y acá",
+  "beats": [
+   {
+    "kind": "rule",
+    "number": 5,
+    "title": "EL REMEDIO DE LA CASA",
+    "at": "Regla número 5, y acá"
+   },
+   {
+    "kind": "raw",
+    "image": "semillas_zapallo_verdes_cuenco",
+    "at": "Semillas de zapallo, las verdes",
+    "kicker": "crudas o tostadas sin sal"
+   },
+   {
+    "kind": "chips",
+    "title": "QUÉ TIENEN LAS SEMILLAS",
+    "image": "semillas_zapallo_punado_mano",
+    "chips": [
+     "Fitoesteroles",
+     "Zinc",
+     "Magnesio",
+     "Verdes, crudas o tostadas sin sal"
+    ],
+    "at": "Tienen fitoesteroles, zinc y magnesio"
+   },
+   {
+    "kind": "blurexplainer",
+    "image": "estudio_papel_extracto_semilla",
+    "eyebrow": "HAY ESTUDIOS PEQUEÑOS",
+    "title": "Japoneses y coreanos",
+    "body": "Con extracto de semilla de zapallo, mostraron mejoras en los puntajes de síntomas urinarios en hombres con próstata agrandada",
+    "side": "left",
+    "at": "Japoneses y coreanos con extracto"
+   },
+   {
+    "kind": "splitlist",
+    "title": "SEAMOS HONESTOS: NO ES MAGIA",
+    "items": [
+     "Mejoras moderadas en algunos pacientes",
+     "Después de varios meses",
+     "No en todos",
+     "No achican la próstata"
+    ],
+    "at": "moderadas en algunos pacientes después"
+   },
+   {
+    "kind": "focuscards",
+    "title": "ENTONCES, ¿POR QUÉ TE LAS NOMBRO?",
+    "items": [
+     {
+      "image": "lamina_musculo_vejiga_irritable",
+      "label": "Uno. El magnesio ayuda al músculo de la vejiga",
+      "atPhrase": "El magnesio ayuda al músculo"
+     },
+     {
+      "image": "punado_semillas_cocina_tarde",
+      "label": "Dos. Es comida, no es un frasco",
+      "atPhrase": "es comida, no es un frasco"
+     }
+    ],
+    "at": "por qué te las nombro"
+   },
+   {
+    "kind": "diagram",
+    "slides": [
+     {
+      "image": "lamina_vejiga_musculo_irritable_edad",
+      "eyebrow": "Con la edad, el músculo de la vejiga se pone irritable"
+     },
+     {
+      "image": "lamina_urgencia_vejiga_poco_liquido",
+      "eyebrow": "Ese músculo te manda al baño con urgencia, habiendo poquito adentro"
+     }
+    ],
+    "at": "te manda al baño con urgencia"
+   },
+   {
+    "kind": "ingredients",
+    "title": "ES COMIDA, NO ES UN FRASCO",
+    "items": [
+     {
+      "name": "Semillas de zapallo verdes",
+      "amount": "un puñado a media tarde",
+      "image": "punado_semillas_plato_merienda"
+     },
+     {
+      "name": "En lugar de la galletita",
+      "amount": "que viene con sal",
+      "image": "galletitas_saladas_paquete_mesa"
+     }
+    ],
+    "at": "que viene con sal"
+   },
+   {
+    "kind": "raw",
+    "image": "celular_descripcion_video_abajo",
+    "at": "las dejé anotadas en la descripción",
+    "kicker": "las cantidades van acá abajo"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "honesto",
+  "phrase": "lo que esto no hace",
+  "beats": [
+   {
+    "kind": "checklist",
+    "title": "LO QUE ESTO NO HACE",
+    "items": [
+     "No cura una próstata agrandada",
+     "No reemplaza a ningún análisis",
+     "No arregla un corazón cansado",
+     "No arregla la apnea del sueño"
+    ],
+    "at": "lo que esto no hace"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "ESTO ES PRÓSTATA, VA AL URÓLOGO",
+    "desc": "Chorro débil, esperar parado a que arranque, gotear al final, sensación de nunca terminar de vaciar",
+    "kicker": "Eso se estudia y se trata",
+    "tone": "warn",
+    "at": "Si tu chorro es débil"
+   },
+   {
+    "kind": "raw",
+    "image": "consultorio_urologo_escritorio_teal",
+    "at": "se trata con un urólogo",
+    "kicker": "el reloj del agua ayuda, no resuelve eso"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "ESTO NO ES LA VEJIGA",
+    "desc": "Sed rara de las que no se calman y estás bajando de peso sin proponértelo",
+    "kicker": "Análisis de sangre esta semana",
+    "tone": "warn",
+    "at": "tienes una sed rara de las"
+   },
+   {
+    "kind": "raw",
+    "image": "tubos_analisis_sangre_laboratorio",
+    "at": "análisis de sangre esta semana",
+    "kicker": "puede ser un azúcar alta que nadie midió"
+   },
+   {
+    "kind": "splitlist",
+    "title": "ESTO ES CORAZÓN, VA AL MÉDICO",
+    "items": [
+     "Tobillos hinchados que dejan pozo cuando apretás con el dedo",
+     "Te falta el aire al subir la escalera",
+     "Necesitás dos almohadas porque acostado del todo te ahogás"
+    ],
+    "at": "tobillos hinchados que dejan pozo"
+   },
+   {
+    "kind": "raw",
+    "image": "dos_almohadas_cama_noche",
+    "at": "necesitas dos almohadas porque acostado",
+    "kicker": "eso es corazón, no la cocina"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "apnea",
+  "phrase": "esto no arregla la apnea",
+  "beats": [
+   {
+    "kind": "lowerthird",
+    "title": "LA CAUSA MÁS IGNORADA DE TODAS",
+    "desc": "Ronquido fuerte, alguien te dijo que dejás de respirar dormido, dolor de cabeza al despertar",
+    "kicker": "La apnea te hace orinar de noche",
+    "tone": "warn",
+    "at": "Si roncas fuerte, si alguien"
+   },
+   {
+    "kind": "raw",
+    "image": "hombre_dormido_sillon_tele_tarde",
+    "at": "mirando la tele a las 3",
+    "kicker": "te dormís a las 3 de la tarde"
+   },
+   {
+    "kind": "diagram",
+    "slides": [
+     {
+      "image": "lamina_respiracion_trabada_apnea",
+      "eyebrow": "Cuando la respiración se traba mientras dormís"
+     },
+     {
+      "image": "lamina_corazon_estira_peptido",
+      "eyebrow": "El corazón se estira y libera péptido natriurético auricular"
+     },
+     {
+      "image": "lamina_rinon_fabrica_orina_noche",
+      "eyebrow": "Esa sustancia le ordena al riñón fabricar orina"
+     }
+    ],
+    "at": "Cuando la respiración se traba"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "DEJÁS",
+     "DE",
+     "RESPIRAR",
+     "Y",
+     "TE",
+     "DESPERTÁS"
+    ],
+    "tone": "warn",
+    "at": "Sí, tal cual como suena"
+   },
+   {
+    "kind": "raw",
+    "image": "mascara_cpap_mesita_noche",
+    "at": "bájalas levantadas solo, sin tocar",
+    "kicker": "tratar la apnea, sin tocar el agua"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "mediasb",
+  "phrase": "de verdad en los tobillos",
+  "beats": [
+   {
+    "kind": "freezezoom",
+    "image": "tobillo_hinchado_marca_media",
+    "x": 52,
+    "y": 62,
+    "label": "Hinchazón de verdad en los tobillos",
+    "zoom": 1.8,
+    "tone": "teal",
+    "at": "de verdad en los tobillos"
+   },
+   {
+    "kind": "annotated",
+    "eyebrow": "MEDIAS DE COMPRESIÓN SUAVE",
+    "caption": "Puestas temprano, antes de que el pie se hinche",
+    "image": "pierna_media_compresion_manana",
+    "annotations": [
+     {
+      "label": "Temprano, recién levantado",
+      "x": 32,
+      "y": 28
+     },
+     {
+      "label": "Antes de que el pie se hinche",
+      "x": 62,
+      "y": 72
+     }
+    ],
+    "at": "Puestas temprano, antes"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "regla3b",
+  "phrase": "en muchos pacientes",
+  "beats": [
+   {
+    "kind": "stat",
+    "eyebrow": "MEDIAS + PIERNAS EN ALTO",
+    "value": 1,
+    "prefix": "−",
+    "suffix": " levantada",
+    "label": "En muchos pacientes, esto solo baja una levantada por noche",
+    "at": "en muchos pacientes"
+   },
+   {
+    "kind": "blurexplainer",
+    "image": "hombre_dormido_profundo_primeras_horas",
+    "eyebrow": "EL SUEÑO PROFUNDO",
+    "title": "El reparador",
+    "body": "Está casi todo en las primeras 3 horas de la noche. Lo que pasa después no repara igual",
+    "side": "right",
+    "at": "el sueño profundo, el reparador"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "TE",
+     "ROBARON",
+     "LA",
+     "MEJOR",
+     "HORA"
+    ],
+    "tone": "warn",
+    "at": "no te robaron una hora"
+   },
+   {
+    "kind": "guardaesto",
+    "title": "GUARDÁ ESTO",
+    "items": [
+     "El reloj del agua",
+     "Las horas de la descarga programada",
+     "Las medias: temprano sí, de noche no"
+    ],
+    "tag": "PARA LA HELADERA",
+    "at": "para colgarla en la heladera"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "regla4b",
+  "phrase": "Y es gratis",
+  "beats": [
+   {
+    "kind": "callout",
+    "figure": "$0",
+    "caption": "El doble vaciado no se compra en ningún lado: es gratis",
+    "image": "bano_casa_noche_puerta_abierta",
+    "eyebrow": "REGLA 4",
+    "at": "Y es gratis"
+   },
+   {
+    "kind": "chips",
+    "title": "LOS 5 MINUTOS DE ESPERA",
+    "image": "reloj_pulsera_cinco_minutos_pijama",
+    "chips": [
+     "Te lavás los dientes",
+     "Te ponés el pijama",
+     "Dejás la ropa preparada",
+     "Y volvés al baño"
+    ],
+    "at": "Y a los 5 minutos"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "ESA ORINA ERA LA DE LA UNA Y MEDIA",
+    "desc": "La que ibas a dejar adentro es la que te iba a despertar",
+    "kicker": "Por eso volvés a los 5 minutos",
+    "tone": "teal",
+    "at": "te iba a despertar"
+   },
+   {
+    "kind": "mitoverdad",
+    "myth": "El hombre orina parado, y listo",
+    "truth": "Sentado se vacía mejor: para la última del día, sentate",
+    "at": "sentate para la última del día"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "semillasb",
+  "phrase": "No es magia",
+  "beats": [
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "NO",
+     "ES",
+     "MAGIA"
+    ],
+    "tone": "warn",
+    "at": "No es magia"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "ESTUDIOS PEQUEÑOS, JAPONESES Y COREANOS",
+    "tokens": [
+     {
+      "t": "Hombres con"
+     },
+     {
+      "t": "próstata agrandada",
+      "hl": true
+     },
+     {
+      "t": "mejoraron sus"
+     },
+     {
+      "t": "síntomas urinarios",
+      "hl": true
+     }
+    ],
+    "at": "en hombres con próstata agrandada"
+   },
+   {
+    "kind": "mitoverdad",
+    "myth": "Las semillas de zapallo achican la próstata",
+    "truth": "No la achican: mejoran algunos síntomas, en algunos, después de varios meses",
+    "at": "no achican la próstata"
+   },
+   {
+    "kind": "freezezoom",
+    "image": "lamina_vejiga_pared_muscular_zoom",
+    "x": 50,
+    "y": 55,
+    "label": "Con la edad, el músculo se pone irritable",
+    "zoom": 1.9,
+    "tone": "teal",
+    "at": "con la edad se pone irritable"
+   },
+   {
+    "kind": "splitlist",
+    "title": "REEMPLAZA LA GALLETITA DE LA TARDE",
+    "items": [
+     "Es comida, no es un frasco",
+     "A media tarde, en lugar de la galletita",
+     "La galletita viene con sal"
+    ],
+    "at": "Un puñado a media tarde"
+   },
+   {
+    "kind": "checklist",
+    "title": "LO QUE TE DEJÉ ANOTADO ABAJO",
+    "items": [
+     "Cuántos gramos",
+     "Cómo tostarlas para que no pierdan el aceite",
+     "A qué hora del día conviene comerlas"
+    ],
+    "at": "Las cantidades exactas, cuántos gramos"
+   },
+   {
+    "kind": "quote",
+    "text": "No te las digo acá porque las cantidades importan. Quiero que las tengas escritas, no que las memorices mal",
+    "image": "cuaderno_anotado_semillas_cocina",
+    "at": "No te las digo acá"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "honestob",
+  "phrase": "Porque si no te lo digo",
+  "beats": [
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "TE",
+     "ESTOY",
+     "VENDIENDO",
+     "HUMO"
+    ],
+    "tone": "warn",
+    "at": "Porque si no te lo digo"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "SEÑALES DE PRÓSTATA",
+    "desc": "Chorro débil · esperar parado un rato a que arranque · gotear al final · sensación de nunca terminar de vaciar",
+    "kicker": "Eso se estudia y se trata con un urólogo",
+    "tone": "warn",
+    "at": "si gotea al final"
+   },
+   {
+    "kind": "checklist",
+    "title": "ESTO NO REEMPLAZA A NINGÚN ANÁLISIS",
+    "items": [
+     "Levantarse de noche puede ser el primer aviso",
+     "De un azúcar alta que nadie te midió"
+    ],
+    "at": "Esto no reemplaza a ningún análisis"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "ESO NO ES LA VEJIGA",
+    "desc": "Sed rara de las que no se calman + bajar de peso sin proponértelo",
+    "kicker": "Análisis de sangre esta semana",
+    "tone": "warn",
+    "at": "bajando de peso sin proponértelo"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "TOBILLOS QUE DEJAN POZO",
+    "desc": "Apretás con el dedo y queda el hoyito · te falta el aire al subir la escalera · dos almohadas para no ahogarte",
+    "kicker": "Eso es corazón: va al médico, no a la cocina",
+    "tone": "warn",
+    "at": "cuando apretas con el dedo"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "apneab",
+  "phrase": "la causa más ignorada de",
+  "beats": [
+   {
+    "kind": "callout",
+    "figure": "#1",
+    "caption": "La apnea del sueño es la causa más ignorada de todas",
+    "image": "hombre_ronca_boca_abierta_noche",
+    "eyebrow": "ESTO NO ARREGLA LA APNEA",
+    "at": "la causa más ignorada de"
+   },
+   {
+    "kind": "splitlist",
+    "title": "SEÑALES DE APNEA",
+    "items": [
+     "Roncás fuerte",
+     "Alguien te dijo que dejás de respirar mientras dormís",
+     "Te levantás con dolor de cabeza",
+     "Te dormís mirando la tele a las 3 de la tarde"
+    ],
+    "at": "dejas de respirar mientras dormís"
+   },
+   {
+    "kind": "annotated",
+    "eyebrow": "CUANDO LA RESPIRACIÓN SE TRABA",
+    "caption": "El corazón se estira y libera una sustancia: el péptido natriurético auricular",
+    "image": "lamina_corazon_estirado_libera_peptido",
+    "annotations": [
+     {
+      "label": "El corazón se estira",
+      "x": 42,
+      "y": 38
+     },
+     {
+      "label": "Libera la sustancia",
+      "x": 66,
+      "y": 60
+     }
+    ],
+    "at": "y libera una sustancia"
+   },
+   {
+    "kind": "process",
+    "eyebrow": "TAL CUAL COMO SUENA",
+    "title": "DEJÁS DE RESPIRAR Y TU CORAZÓN MANDA A ORINAR",
+    "steps": [
+     {
+      "title": "Se traba la respiración",
+      "desc": "Dejás de respirar unos segundos mientras dormís",
+      "image": "lamina_via_aerea_trabada_dormido"
+     },
+     {
+      "title": "El corazón se estira",
+      "desc": "Y libera el péptido natriurético auricular",
+      "image": "lamina_corazon_estira_camara_derecha"
+     },
+     {
+      "title": "El riñón fabrica orina",
+      "desc": "Esa sustancia le ordena al riñón fabricar orina de madrugada",
+      "image": "lamina_rinon_orina_madrugada"
+     }
+    ],
+    "at": "ordena al riñón fabricar orina"
+   },
+   {
+    "kind": "guardaesto",
+    "title": "GUARDÁ ESTO",
+    "items": [
+     "Tratar la apnea baja las levantadas solo",
+     "Sin tocar el agua",
+     "Si roncás fuerte, consultalo"
+    ],
+    "tag": "APNEA DEL SUEÑO",
+    "at": "Tratar la apnea"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "sal",
+  "phrase": "si vos cenas con sal",
+  "beats": [
+   {
+    "kind": "raw",
+    "image": "cena_noche_salero_mesa_plato",
+    "at": "si vos cenas con sal",
+    "kicker": "No importa el corte de las 6"
+   },
+   {
+    "kind": "diagram",
+    "slides": [
+     {
+      "image": "lamina_rinon_saca_sal_noche",
+      "eyebrow": "La sal que entra tiene que salir"
+     },
+     {
+      "image": "lamina_sal_necesita_agua_orina",
+      "eyebrow": "Para sacar sal, el riñón necesita agua"
+     }
+    ],
+    "at": "sacar esa sal durante la noche"
+   },
+   {
+    "kind": "raw",
+    "image": "piernas_hinchadas_borde_cama_noche",
+    "at": "el agua de las piernas",
+    "kicker": "Te saca el agua de adentro"
+   },
+   {
+    "kind": "errorstinger",
+    "number": 1,
+    "title": "LA SAL DE LA CENA",
+    "tone": "warn",
+    "at": "La sal de la cena"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "nagasaki",
+  "phrase": "Hay un trabajo japonés",
+  "beats": [
+   {
+    "kind": "lowerthird",
+    "title": "Trabajo japonés de Nagasaki",
+    "desc": "Presentado en el congreso europeo de urología",
+    "kicker": "No es una teoría mía",
+    "tone": "teal",
+    "at": "Hay un trabajo japonés"
+   },
+   {
+    "kind": "raw",
+    "image": "sala_congreso_medicos_japoneses_ponencia",
+    "at": "tomaron pacientes que se levantaban",
+    "kicker": "Pacientes que se levantaban de noche"
+   },
+   {
+    "kind": "checklist",
+    "title": "Lo único que cambiaron",
+    "items": [
+     "Bajaron la sal de la dieta",
+     "No les tocaron el agua",
+     "No les dieron ningún remedio"
+    ],
+    "at": "No les tocaron el agua"
+   },
+   {
+    "kind": "bars",
+    "title": "Levantadas nocturnas",
+    "eyebrow": "Nagasaki: solo bajaron la sal, nada más",
+    "unit": "levantadas por noche",
+    "bars": [
+     {
+      "label": "Antes",
+      "value": 2.3,
+      "tone": "warn"
+     },
+     {
+      "label": "Después",
+      "value": 1.4,
+      "tone": "teal",
+      "winner": true
+     }
+    ],
+    "at": "Las levantadas nocturnas bajaron"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "trampa",
+  "phrase": "ahora fíjate la trampa",
+  "beats": [
+   {
+    "kind": "headline",
+    "eyebrow": "La cena del que se cuida",
+    "tokens": [
+     {
+      "t": "Liviano"
+     },
+     {
+      "t": "en"
+     },
+     {
+      "t": "calorías."
+     },
+     {
+      "t": "Bomba"
+     },
+     {
+      "t": "de"
+     },
+     {
+      "t": "sodio",
+      "hl": true
+     }
+    ],
+    "at": "ahora fíjate la trampa"
+   },
+   {
+    "kind": "chips",
+    "title": "La cena que parece sana",
+    "image": "sopa_sobre_cubito_caldo_mesada",
+    "chips": [
+     "Sopa de sobre",
+     "Caldito en cubito",
+     "Feta de jamón cocido con pan",
+     "Un pedacito de queso",
+     "Galletitas de agua"
+    ],
+    "at": "Caldito en cubito"
+   },
+   {
+    "kind": "raw",
+    "image": "galletitas_agua_paquete_plato_mesa",
+    "at": "Galletitas de agua",
+    "kicker": "Que se llaman de agua"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "ES",
+     "UNA",
+     "BOMBA",
+     "DE",
+     "SODIO"
+    ],
+    "tone": "warn",
+    "at": "es una bomba de sodio"
+   },
+   {
+    "kind": "raw",
+    "image": "cubito_caldo_mano_primer_plano",
+    "at": "que todo lo que le pusiste",
+    "kicker": "Más sal que todo el día"
+   },
+   {
+    "kind": "blurexplainer",
+    "image": "pan_frances_tabla_migas_cocina",
+    "eyebrow": "El pan",
+    "title": "No te sabe salado y es de las principales fuentes",
+    "body": "El fiambre es sal con carne adentro. El queso es sal con leche adentro. Y el pan, que no sabe salado, es una de las principales fuentes de sodio de la dieta, porque comés mucho.",
+    "side": "right",
+    "at": "que no te sabe salado"
+   },
+   {
+    "kind": "mitoverdad",
+    "myth": "Cené liviano: sopa y una feta de queso",
+    "truth": "Cenaste un despertador de sal programado a 4 horas",
+    "at": "creíste que estaba cenando liviano"
+   },
+   {
+    "kind": "raw",
+    "image": "reloj_mesita_luz_tres_madrugada",
+    "at": "a las 3 de la mañana",
+    "kicker": "El ataque de las 3"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "ramonfinal",
+  "phrase": "Le saqué a Ramón la sopa",
+  "beats": [
+   {
+    "kind": "ingredients",
+    "title": "La cena nueva de Ramón",
+    "items": [
+     {
+      "name": "Verdura",
+      "amount": "a voluntad",
+      "image": "verdura_hervida_plato_blanco"
+     },
+     {
+      "name": "Una papa",
+      "amount": "1 mediana",
+      "image": "papa_hervida_plato_blanco"
+     },
+     {
+      "name": "Huevo",
+      "amount": "1 o 2",
+      "image": "huevo_hervido_plato_blanco"
+     },
+     {
+      "name": "Pescado",
+      "amount": "1 porción",
+      "image": "pescado_al_horno_fuente"
+     },
+     {
+      "name": "Aceite de oliva",
+      "amount": "1 cucharada",
+      "image": "aceite_oliva_chorro_ensalada"
+     }
+    ],
+    "at": "Cena sin sal agregada"
+   },
+   {
+    "kind": "raw",
+    "image": "mesa_cena_simple_casera_ramon",
+    "at": "Nada exótico, nada caro",
+    "kicker": "Potasio de verdad"
+   },
+   {
+    "kind": "quote",
+    "text": "Doctor, apagué la luz del pasillo.",
+    "image": "pasillo_casa_luz_apagada_noche",
+    "at": "apagué la luz del pasillo"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "recap",
+  "phrase": "Vamos al repaso",
+  "beats": [
+   {
+    "kind": "focuscards",
+    "title": "Cinco cosas, esta noche",
+    "items": [
+     {
+      "image": "vaso_agua_manana_ventana_cocina",
+      "label": "Uno. El agua temprano",
+      "atPhrase": "Uno, el agua"
+     },
+     {
+      "image": "mate_termo_galeria_tarde",
+      "label": "Dos. El mate hasta las cinco",
+      "atPhrase": "Dos, el mate hasta"
+     },
+     {
+      "image": "piernas_almohadones_sillon_tarde",
+      "label": "Tres. Piernas arriba del corazón",
+      "atPhrase": "Tres. Piernas arriba del corazón"
+     },
+     {
+      "image": "bano_puerta_luz_baja_noche",
+      "label": "Cuatro. Doble vaciado",
+      "atPhrase": "Cuatro. Doble vaciado antes de"
+     },
+     {
+      "image": "salero_tachado_mesa_cena",
+      "label": "Cinco. La cena sin sal",
+      "atPhrase": "Y cinco. El que más pesa"
+     }
+    ],
+    "at": "Cinco cosas, esta noche"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "cierre",
+  "phrase": "la pregunta de dos segundos",
+  "beats": [
+   {
+    "kind": "board",
+    "eyebrow": "La pregunta de dos segundos",
+    "title": "La primera levantada: ¿mucho o poco?",
+    "items": [
+     "Mucho: circulación y agua",
+     "Poco y con urgencia: vejiga y próstata"
+    ],
+    "side": "right",
+    "at": "la pregunta de dos segundos"
+   },
+   {
+    "kind": "raw",
+    "image": "tobillo_marca_elastico_media_noche",
+    "at": "Mucho es circulación y agua",
+    "kicker": "Mucho: circulación y agua"
+   },
+   {
+    "kind": "guardaesto",
+    "title": "GUARDÁ ESTO",
+    "items": [
+     "14 noches haciendo las cinco",
+     "Un papel al lado de la cama",
+     "Anotá cuántas veces te levantaste",
+     "No confíes en la memoria de la mañana"
+    ],
+    "tag": "Dos semanas honestas",
+    "at": "anota en un papel"
+   },
+   {
+    "kind": "raw",
+    "image": "papel_lapiz_mesita_luz_noche",
+    "at": "Anota el número",
+    "kicker": "Anotá el número"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "No estamos buscando cero",
+    "tokens": [
+     {
+      "t": "Una"
+     },
+     {
+      "t": "levantada"
+     },
+     {
+      "t": "a"
+     },
+     {
+      "t": "los"
+     },
+     {
+      "t": "70"
+     },
+     {
+      "t": "es"
+     },
+     {
+      "t": "normal",
+      "hl": true
+     }
+    ],
+    "at": "puede ser perfectamente normal"
+   },
+   {
+    "kind": "raw",
+    "image": "hombre_mayor_dormido_madrugada_calma",
+    "at": "de sueño queden enteras",
+    "kicker": "Las primeras tres horas enteras"
+   },
+   {
+    "kind": "pizarra",
+    "title": "Todo lo que te conté hoy",
+    "slides": [
+     {
+      "kind": "bullets",
+      "items": [
+       "El reloj del agua",
+       "La tablita para anotar las levantadas",
+       "Las cantidades del remedio"
+      ]
+     }
+    ],
+    "at": "Todo lo que te conté hoy"
+   },
+   {
+    "kind": "freezezoom",
+    "image": "consultorio_escritorio_recetario_lapicera",
+    "x": 48,
+    "y": 55,
+    "label": "Lo que uso en el consultorio",
+    "zoom": 1.6,
+    "tone": "teal",
+    "at": "Que armé con lo que uso"
+   },
+   {
+    "kind": "raw",
+    "image": "pastilla_blanca_palma_mano_luz",
+    "at": "es una pastilla mágica",
+    "kicker": "No hay pastilla mágica"
+   },
+   {
+    "kind": "process",
+    "eyebrow": "Para el que está dispuesto",
+    "title": "Tres cosas, catorce noches",
+    "steps": [
+     {
+      "title": "Mover una hora",
+      "desc": "El agua temprano y corte tres horas antes",
+      "image": "reloj_pared_cocina_manecillas"
+     },
+     {
+      "title": "Sacar un cubito de caldo",
+      "desc": "La cena sin sal agregada",
+      "image": "cubito_caldo_mano_sobre_tacho"
+     },
+     {
+      "title": "Poner las piernas arriba",
+      "desc": "20 a 30 minutos, entre las 4 y las 6",
+      "image": "hombre_mayor_piernas_arriba_sillon"
+     }
+    ],
+    "at": "dispuesto a mover una hora"
+   },
+   {
+    "kind": "avatarkeyword",
+    "items": [
+     {
+      "at": 0,
+      "word": "UN NÚMERO",
+      "sub": "en los comentarios",
+      "image": "mano_mayor_celular_comentario",
+      "tone": "teal"
+     },
+     {
+      "at": 150,
+      "word": "CUÁNTAS VECES",
+      "sub": "te levantás por noche",
+      "image": "cama_matrimonial_luz_pasillo",
+      "tone": "teal"
+     }
+    ],
+    "at": "quiero que hagas algo por mí"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "teaser",
+  "phrase": "el próximo lo tengo casi",
+  "beats": [
+   {
+    "kind": "headline",
+    "eyebrow": "Ya lo tengo casi listo",
+    "tokens": [
+     {
+      "t": "El"
+     },
+     {
+      "t": "hermano"
+     },
+     {
+      "t": "de"
+     },
+     {
+      "t": "este"
+     },
+     {
+      "t": "video",
+      "hl": true
+     }
+    ],
+    "at": "el próximo lo tengo casi"
+   },
+   {
+    "kind": "raw",
+    "image": "pantorrilla_calambre_mano_pierna_noche",
+    "at": "Los calambres de pantorrilla",
+    "kicker": "A las 4 de la mañana"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "close",
+  "phrase": "soy el Dr. Federer",
+  "beats": [
+   {
+    "kind": "nametag",
+    "name": "Dr. Federer",
+    "role": "Federer Archivos",
+    "image": "federer_retrato_consultorio_cierre",
+    "at": "soy el Dr. Federer"
+   },
+   {
+    "kind": "raw",
+    "image": "dormitorio_noche_persiana_calma_amanecer",
+    "at": "Que duermas de un tirón",
+    "kicker": "El enemigo es el horario"
+   }
+  ],
+  "wave": 1
+ },
+ {
+  "key": "salb",
+  "phrase": "no importa que hayas cortado",
+  "beats": [
+   {
+    "kind": "mitoverdad",
+    "myth": "Corté el agua a las 6, ya está",
+    "truth": "Si la cena tiene sal, el riñón trabaja igual toda la noche",
+    "at": "no importa que hayas cortado"
+   },
+   {
+    "kind": "annotated",
+    "eyebrow": "De dónde saca el agua",
+    "caption": "Te saca el agua de las piernas, de la sangre, de donde sea",
+    "image": "silueta_cuerpo_reservas_agua_interna",
+    "annotations": [
+     {
+      "label": "De la sangre",
+      "x": 47,
+      "y": 42
+     },
+     {
+      "label": "De las piernas",
+      "x": 52,
+      "y": 79
+     }
+    ],
+    "at": "va a usar el agua"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "errorb",
+  "phrase": "es un despertador biológico",
+  "beats": [
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "UN",
+     "DESPERTADOR",
+     "A",
+     "4",
+     "HORAS"
+    ],
+    "tone": "warn",
+    "at": "es un despertador biológico"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "nagasakib",
+  "phrase": "en el Congreso Europeo de",
+  "beats": [
+   {
+    "kind": "rule",
+    "number": 4,
+    "title": "LA PRUEBA JAPONESA",
+    "at": "en el Congreso Europeo de"
+   },
+   {
+    "kind": "callout",
+    "figure": "−1",
+    "caption": "Casi una levantada menos por noche, sin tomar nada",
+    "image": "cama_matrimonial_noche_luz_tenue",
+    "eyebrow": "Nagasaki: solo les bajaron la sal",
+    "at": "Casi una levantada menos"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "trampab",
+  "phrase": "El fiambre es sal con carne",
+  "beats": [
+   {
+    "kind": "quote",
+    "text": "El fiambre es sal con carne adentro. El queso es sal con leche adentro.",
+    "image": "fiambre_jamon_fetas_plato_blanco",
+    "at": "El fiambre es sal con carne"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "El pan",
+    "desc": "Una de las principales fuentes de sodio de la dieta, porque comés mucho",
+    "kicker": "Y no te sabe salado",
+    "tone": "warn",
+    "at": "de sodio de la dieta"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "ramonfinalb",
+  "phrase": "Le saqué a Ramón la sopa",
+  "beats": [
+   {
+    "kind": "checklist",
+    "title": "Lo que le saqué a Ramón de la noche",
+    "items": [
+     "La sopa de sobre",
+     "El fiambre",
+     "La sal agregada"
+    ],
+    "at": "Le saqué a Ramón la sopa"
+   },
+   {
+    "kind": "stat",
+    "eyebrow": "Ramón, después del cambio",
+    "value": 1,
+    "prefix": "",
+    "suffix": "",
+    "label": "levantada por noche. Una.",
+    "at": "Ramón se levanta una vez"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "recapb",
+  "phrase": "Dos tercios del día",
+  "beats": [
+   {
+    "kind": "bars",
+    "title": "Cómo repartir el agua del día",
+    "eyebrow": "Uno. El agua temprano",
+    "unit": "% del total del día",
+    "bars": [
+     {
+      "label": "Antes de las 4 de la tarde",
+      "value": 66,
+      "tone": "teal",
+      "winner": true
+     },
+     {
+      "label": "Después de las 4",
+      "value": 33,
+      "tone": "warn"
+     }
+    ],
+    "at": "Dos tercios del día"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "Uno. El agua temprano",
+    "tokens": [
+     {
+      "t": "Misma"
+     },
+     {
+      "t": "cantidad."
+     },
+     {
+      "t": "Otra"
+     },
+     {
+      "t": "hora",
+      "hl": true
+     }
+    ],
+    "at": "Misma cantidad, otra hora"
+   },
+   {
+    "kind": "chips",
+    "title": "Dos. El mate hasta las cinco",
+    "image": "mate_termo_taza_chica_galeria",
+    "chips": [
+     "El mate, hasta las 5",
+     "Después, taza chica",
+     "Y sin cafeína"
+    ],
+    "at": "taza chica y sin cafeína"
+   },
+   {
+    "kind": "callout",
+    "figure": "1 copa",
+    "caption": "Te llena y además te apaga el freno hormonal",
+    "image": "copa_vino_tinto_mesa_cena_noche",
+    "eyebrow": "La copita de vino de la cena",
+    "at": "si podés, sacala"
+   },
+   {
+    "kind": "process",
+    "eyebrow": "Tres. Piernas arriba del corazón",
+    "title": "Cómo se hace",
+    "steps": [
+     {
+      "title": "Piernas por arriba del corazón",
+      "desc": "Acostado, con almohadones abajo de las piernas",
+      "image": "piernas_arriba_almohadones_sillon_tarde"
+     },
+     {
+      "title": "20 a 30 minutos",
+      "desc": "Entre las 4 y las 6 de la tarde",
+      "image": "reloj_pared_living_tarde_cuatro"
+     }
+    ],
+    "at": "20 a 30 minutos"
+   },
+   {
+    "kind": "annotated",
+    "eyebrow": "Si te queda marcado el elástico",
+    "caption": "Medias de compresión durante el día",
+    "image": "tobillo_elastico_marcado_primer_plano_dia",
+    "annotations": [
+     {
+      "label": "La marca del elástico",
+      "x": 54,
+      "y": 56
+     }
+    ],
+    "at": "Y medias de compresión"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "ADELANTÁS",
+     "LA",
+     "MAREA"
+    ],
+    "tone": "teal",
+    "at": "Adelantas la marea"
+   },
+   {
+    "kind": "board",
+    "eyebrow": "Cuatro. Doble vaciado",
+    "title": "Antes de dormir",
+    "items": [
+     "Orinás",
+     "Esperás 5 minutos",
+     "Volvés a orinar",
+     "Sentado y sin apuro"
+    ],
+    "side": "left",
+    "at": "esperas 5 minutos"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "Cinco. La cena sin sal",
+    "desc": "El que más pesa y el que nadie hace",
+    "kicker": "Esta noche",
+    "tone": "warn",
+    "at": "el que nadie hace"
+   },
+   {
+    "kind": "splitlist",
+    "title": "La cena sin sal",
+    "items": [
+     "Ni sopa de sobre",
+     "Ni cubito de caldo",
+     "Ni fiambre",
+     "Ni queso duro de noche"
+    ],
+    "at": "ni fiambre, ni queso duro"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "LO",
+     "ESTABAS",
+     "PONIENDO",
+     "VOS"
+    ],
+    "tone": "warn",
+    "at": "lo estabas poniendo vos"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "cierreb",
+  "phrase": "Poco y con urgencia",
+  "beats": [
+   {
+    "kind": "mitoverdad",
+    "myth": "Me levanto de noche: es la próstata y listo",
+    "truth": "Mucho es circulación y agua. Poco y con urgencia es vejiga y próstata",
+    "at": "Poco y con urgencia"
+   },
+   {
+    "kind": "stat",
+    "eyebrow": "El trato",
+    "value": 14,
+    "prefix": "",
+    "suffix": "",
+    "label": "noches honestas haciendo las cinco cosas",
+    "at": "Dame dos semanas honestas"
+   },
+   {
+    "kind": "bars",
+    "title": "El objetivo real",
+    "eyebrow": "No estamos buscando cero",
+    "unit": "levantadas por noche",
+    "bars": [
+     {
+      "label": "Hoy",
+      "value": 3,
+      "tone": "warn"
+     },
+     {
+      "label": "Meta",
+      "value": 1,
+      "tone": "teal",
+      "winner": true
+     }
+    ],
+    "at": "Buscamos que no sean tres"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "UNA",
+     "LEVANTADA",
+     "MENOS",
+     "GANASTE",
+     "LA",
+     "NOCHE"
+    ],
+    "tone": "teal",
+    "at": "una sola levantada menos"
+   },
+   {
+    "kind": "stat",
+    "eyebrow": "Adentro de la guía",
+    "value": 150,
+    "prefix": "",
+    "suffix": "",
+    "label": "remedios caseros con las cantidades exactas",
+    "at": "remedios caseros con las cantidades"
+   },
+   {
+    "kind": "checklist",
+    "title": "Ordenados por lo que te duele",
+    "items": [
+     "No por nombres raros",
+     "Por el síntoma que tenés",
+     "Con las cantidades exactas"
+    ],
+    "at": "y no por nombres raros"
+   },
+   {
+    "kind": "lowerthird",
+    "title": "Manual aparte: señales de alerta después de los 60",
+    "desc": "Los avisos que se confunden con cansancio y no lo son",
+    "kicker": "Va adentro",
+    "tone": "warn",
+    "at": "Los avisos que se confunden"
+   },
+   {
+    "kind": "headline",
+    "eyebrow": "Te lo digo de frente",
+    "tokens": [
+     {
+      "t": "Si"
+     },
+     {
+      "t": "buscás"
+     },
+     {
+      "t": "una"
+     },
+     {
+      "t": "pastilla"
+     },
+     {
+      "t": "mágica"
+     },
+     {
+      "t": "no"
+     },
+     {
+      "t": "es"
+     },
+     {
+      "t": "para"
+     },
+     {
+      "t": "vos",
+      "hl": true
+     }
+    ],
+    "at": "Esa guía no es para vos"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "teaserb",
+  "phrase": "Los leo todos",
+  "beats": [
+   {
+    "kind": "board",
+    "eyebrow": "En los comentarios",
+    "title": "Un solo número",
+    "items": [
+     "Cuántas veces te levantás por noche",
+     "Nada más el número",
+     "Los leo todos"
+    ],
+    "side": "right",
+    "at": "Los leo todos"
+   },
+   {
+    "kind": "mitoverdad",
+    "myth": "Los estudios dicen una cosa",
+    "truth": "Y ustedes me dicen otra",
+    "at": "los estudios dicen una cosa"
+   },
+   {
+    "kind": "freezezoom",
+    "image": "pantorrilla_dura_mano_aprieta_madrugada",
+    "x": 55,
+    "y": 62,
+    "label": "La pierna dura a las 4 de la mañana",
+    "zoom": 1.7,
+    "tone": "warn",
+    "at": "te dejan la pierna dura"
+   },
+   {
+    "kind": "frasecinetica",
+    "words": [
+     "EL",
+     "ENEMIGO",
+     "ES",
+     "EL",
+     "HORARIO"
+    ],
+    "tone": "teal",
+    "at": "El enemigo es el horario"
+   }
+  ],
+  "wave": 2
+ },
+ {
+  "key": "pizarra",
+  "wave": 3,
+  "phrase": "Ahora te acostás",
+  "beats": [
+   {
+    "kind": "whiteboard",
+    "at": "Ahora te acostás",
+    "scene": {
+     "avatarSrc": "v3iuzgxce9vg_opt.mp4",
+     "muted": true,
+     "elements": [
+      {
+       "kind": "title",
+       "x": 8,
+       "y": 9,
+       "text": "Por qué te levantás a las 3",
+       "start": 0,
+       "size": 64
+      },
+      {
+       "kind": "note",
+       "x": 8,
+       "y": 20,
+       "text": "De día la gravedad te estaciona líquido en las piernas.",
+       "start": 14,
+       "w": 38,
+       "size": 30
+      },
+      {
+       "kind": "image",
+       "x": 8,
+       "y": 30,
+       "w": 30,
+       "src": "img/fe_v3iuzgxce9vg_lamina_gravedad_empuja_liquido_hacia_abajo.png",
+       "start": 22,
+       "caption": "De pie: el líquido baja"
+      },
+      {
+       "kind": "arrow",
+       "from": [
+        40,
+        45
+       ],
+       "to": [
+        56,
+        45
+       ],
+       "start": 52,
+       "curve": 0.2
+      },
+      {
+       "kind": "image",
+       "x": 58,
+       "y": 30,
+       "w": 30,
+       "src": "img/fe_v3iuzgxce9vg_lamina_marea_vuelve_al_acostarse.png",
+       "start": 60,
+       "caption": "Acostado: vuelve de golpe"
+      },
+      {
+       "kind": "note",
+       "x": 58,
+       "y": 20,
+       "text": "Al acostarte se acaba la gravedad y esa marea vuelve entera.",
+       "start": 66,
+       "w": 38,
+       "size": 30
+      },
+      {
+       "kind": "image",
+       "x": 33,
+       "y": 64,
+       "w": 32,
+       "src": "img/fe_v3iuzgxce9vg_lamina_rinon_recibe_mas_sangre_filtra.png",
+       "start": 96,
+       "caption": "Al riñón le llega de más"
+      },
+      {
+       "kind": "note",
+       "x": 8,
+       "y": 70,
+       "text": "El riñón hace lo que sabe: filtra. Y fabrica orina a las dos de la mañana.",
+       "start": 104,
+       "w": 22,
+       "size": 28,
+       "accent": true
+      },
+      {
+       "kind": "lasso",
+       "x": 31,
+       "y": 62,
+       "w": 36,
+       "h": 30,
+       "start": 126
+      }
+     ]
+    }
+   }
+  ]
+ }
+]
