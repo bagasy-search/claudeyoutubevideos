@@ -34,9 +34,9 @@ const findMs = (phrase, after = 0) => {
 };
 
 // ── juntar los 7 directores ──────────────────────────────────────────────────
-const RANGES = [[0, 240], [240, 480], [480, 720], [720, 960], [960, 1200], [1200, 1420], [1420, 1e9], [0, 550], [550, 1100], [1100, 1e9]];
+const RANGES = [[0, 240], [240, 480], [480, 720], [720, 960], [960, 1200], [1200, 1420], [1420, 1600], [0, 550], [550, 1100], [1100, 1600], [1594, 1e9], [1594, 1e9]];
 let raw = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 12; i++) {
   const f = `_dir_${i}_${SLUG}.json`;
   if (!fs.existsSync(f)) { console.log(`⚠ falta ${f}`); continue; }
   let txt = fs.readFileSync(f, "utf8").trim();
@@ -194,6 +194,22 @@ for (const b of beats) {
   }
 }
 console.log(`rutas corregidas: ${fixed}`);
+
+// ── RESOLVER LA EXTENSIÓN REAL ───────────────────────────────────────────────
+// fixPath deja la ruta SIN extensión y `staticFile("img/x")` da 404 → mata el chunk entero.
+// Se resuelve contra disco prefiriendo .jpg (los PNG se convierten para bajar el tarball).
+const resolveExt = (p) => {
+  if (typeof p !== "string" || !p) return p;
+  if (/\.(png|jpg|jpeg|webp|mp4|webm|mov)$/i.test(p)) return p;
+  for (const e of ["jpg", "png", "jpeg", "webp", "mp4"]) if (fs.existsSync(`public/${p}.${e}`)) return `${p}.${e}`;
+  return `${p}.png`;
+};
+for (const b of beats) {
+  if (b.src) b.src = resolveExt(b.src);
+  if (b.image) b.image = resolveExt(b.image);
+  if (Array.isArray(b.slides)) b.slides = b.slides.map((s) => ({ ...s, image: resolveExt(s.image) }));
+  if (Array.isArray(b.items)) b.items = b.items.map((it) => (it && typeof it === "object" && it.image ? { ...it, image: resolveExt(it.image) } : it));
+}
 
 // ── piso de duración para componentes ────────────────────────────────────────
 const COMPK = new Set(["headline", "stat", "quote", "chips", "splitlist", "checklist", "callout", "bars", "diagram", "rule", "nametag", "board", "annotated", "cross", "process", "ingredients", "pizarra", "blurexplainer", "lowerthird", "guardaesto", "errorstinger", "mitoverdad", "frasecinetica", "freezezoom"]);

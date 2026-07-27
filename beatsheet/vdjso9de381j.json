@@ -16,7 +16,7 @@
    "start": 2.1,
    "dur": 3.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_hoja_zanja",
+   "src": "img/p_vdjso9de381j_hoja_zanja.jpg",
    "kicker": "Una zanja cualquiera"
   },
   {
@@ -69,7 +69,7 @@
    "start": 19.06,
    "dur": 2.74,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_aloe_corte",
+   "src": "img/p_vdjso9de381j_aloe_corte.jpg",
    "kicker": "No es el aloe"
   },
   {
@@ -88,7 +88,7 @@
    "start": 27.4,
    "dur": 3.2,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_gondola",
+   "src": "img/p_vdjso9de381j_gondola.jpg",
    "kicker": "Ya la usan hace 20 anos"
   },
   {
@@ -106,7 +106,7 @@
    "start": 36.82,
    "dur": 5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_peluqueria",
+   "src": "img/p_vdjso9de381j_beatriz_peluqueria.jpg",
    "kicker": "Dona Beatriz, 71 anos"
   },
   {
@@ -115,7 +115,7 @@
    "start": 42.02,
    "dur": 2.56,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_manos_tijera"
+   "src": "img/p_vdjso9de381j_beatriz_manos_tijera.jpg"
   },
   {
    "id": "m010",
@@ -123,7 +123,7 @@
    "start": 44.58,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_espejo",
+   "src": "img/p_vdjso9de381j_beatriz_espejo.jpg",
    "kicker": "42 anos mirando caras"
   },
   {
@@ -132,7 +132,7 @@
    "start": 48.82,
    "dur": 3.22,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_federer_explica"
+   "src": "img/p_vdjso9de381j_federer_explica.jpg"
   },
   {
    "id": "m012",
@@ -140,7 +140,7 @@
    "start": 54.84,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_camilla"
+   "src": "img/p_vdjso9de381j_beatriz_camilla.jpg"
   },
   {
    "id": "m013",
@@ -148,7 +148,7 @@
    "start": 60.04,
    "dur": 3.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_tobillos",
+   "src": "img/p_vdjso9de381j_beatriz_tobillos.jpg",
    "kicker": "Eso venia a contarme"
   },
   {
@@ -157,7 +157,7 @@
    "start": 65.24,
    "dur": 2.24,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_tapa_papada"
+   "src": "img/p_vdjso9de381j_beatriz_tapa_papada.jpg"
   },
   {
    "id": "m015",
@@ -165,7 +165,7 @@
    "start": 67.48,
    "dur": 4.2,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_beatriz_tapa_papada",
+   "image": "img/p_vdjso9de381j_beatriz_tapa_papada.jpg",
    "x": 0.52,
    "y": 0.62,
    "zoom": 1.8,
@@ -177,7 +177,7 @@
    "start": 69.86,
    "dur": 2.9,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_camilla"
+   "src": "img/p_vdjso9de381j_beatriz_camilla.jpg"
   },
   {
    "id": "m017",
@@ -185,7 +185,7 @@
    "start": 72.76,
    "dur": 2.84,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_llanto"
+   "src": "img/p_vdjso9de381j_beatriz_llanto.jpg"
   },
   {
    "id": "m018",
@@ -193,7 +193,7 @@
    "start": 75.6,
    "dur": 3.2,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_cumple"
+   "src": "img/p_vdjso9de381j_beatriz_cumple.jpg"
   },
   {
    "id": "m019",
@@ -233,7 +233,7 @@
    "start": 81.96,
    "dur": 4.2,
    "kind": "annotated",
-   "image": "img/p_vdjso9de381j_beatriz_espejo",
+   "image": "img/p_vdjso9de381j_beatriz_espejo.jpg",
    "caption": "La linea que ya no estaba",
    "annotations": [
     {
@@ -249,7 +249,7 @@
    "start": 85.24,
    "dur": 3.3,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_tijera_mandibula"
+   "src": "img/p_vdjso9de381j_tijera_mandibula.jpg"
   },
   {
    "id": "m022",
@@ -257,7 +257,7 @@
    "start": 88.54,
    "dur": 2.48,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_espejo_mano"
+   "src": "img/p_vdjso9de381j_beatriz_espejo_mano.jpg"
   },
   {
    "id": "m023",
@@ -274,7 +274,7 @@
    "dur": 4.4,
    "kind": "quote",
    "text": "Ya nadie la miraba *a los ojos* cuando hablaba.",
-   "image": "img/p_vdjso9de381j_nieto_abuela"
+   "image": "img/p_vdjso9de381j_nieto_abuela.jpg"
   },
   {
    "id": "m025",
@@ -282,7 +282,7 @@
    "start": 99.12,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_final"
+   "src": "img/p_vdjso9de381j_beatriz_final.jpg"
   },
   {
    "id": "m026",
@@ -328,7 +328,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_gravedad"
+     "image": "img/dg_vdjso9de381j_gravedad.jpg"
     }
    ]
   },
@@ -396,7 +396,7 @@
    "start": 139.66,
    "dur": 3.6,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_reloj_consultorio"
+   "src": "img/p_vdjso9de381j_reloj_consultorio.jpg"
   },
   {
    "id": "m035",
@@ -499,7 +499,7 @@
    "start": 167.16,
    "dur": 2.8,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_frasco_vuelta",
+   "src": "img/p_vdjso9de381j_frasco_vuelta.jpg",
    "kicker": "Plata tirada"
   },
   {
@@ -661,7 +661,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_tres_pisos"
+     "image": "img/dg_vdjso9de381j_tres_pisos.jpg"
     }
    ]
   },
@@ -686,7 +686,7 @@
    "start": 237.78,
    "dur": 4.2,
    "kind": "annotated",
-   "image": "img/p_vdjso9de381j_tijera_mandibula",
+   "image": "img/p_vdjso9de381j_tijera_mandibula.jpg",
    "caption": "El angulo se abre",
    "annotations": [
     {
@@ -731,7 +731,7 @@
    "start": 256.46,
    "dur": 3.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_pellizco_papada",
+   "src": "img/p_vdjso9de381j_pellizco_papada.jpg",
    "kicker": "Las bolsas bajan"
   },
   {
@@ -790,7 +790,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_linfa_cara"
+     "image": "img/dg_vdjso9de381j_linfa_cara.jpg"
     }
    ]
   },
@@ -862,7 +862,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_desague_cuello"
+     "image": "img/dg_vdjso9de381j_desague_cuello.jpg"
     }
    ]
   },
@@ -900,7 +900,7 @@
    "start": 301.66,
    "dur": 1.9,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_medico_escucha"
+   "src": "img/p_vdjso9de381j_medico_escucha.jpg"
   },
   {
    "id": "m070",
@@ -908,7 +908,7 @@
    "start": 306,
    "dur": 2.76,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_caminata_vereda",
+   "src": "img/p_vdjso9de381j_caminata_vereda.jpg",
    "kicker": "El musculo aprieta"
   },
   {
@@ -917,7 +917,7 @@
    "start": 309.3,
    "dur": 2.76,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_respiracion_panza",
+   "src": "img/p_vdjso9de381j_respiracion_panza.jpg",
    "kicker": "El pecho hace vacio"
   },
   {
@@ -1035,7 +1035,7 @@
    "dur": 5,
    "kind": "quote",
    "text": "Una piel que ya no tiene *con que sostenerlos*",
-   "image": "img/p_vdjso9de381j_cara_abajo"
+   "image": "img/p_vdjso9de381j_cara_abajo.jpg"
   },
   {
    "id": "m079",
@@ -1043,7 +1043,7 @@
    "start": 346.82,
    "dur": 3.06,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_bolsa_mandado",
+   "src": "img/p_vdjso9de381j_bolsa_mandado.jpg",
    "kicker": "Colgada de un clavo flojo"
   },
   {
@@ -1059,7 +1059,7 @@
    "start": 353.52,
    "dur": 2.74,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_espejo_mano_prueba",
+   "src": "img/p_vdjso9de381j_espejo_mano_prueba.jpg",
    "kicker": "Hoy, en tu casa"
   },
   {
@@ -1068,7 +1068,7 @@
    "start": 356.26,
    "dur": 2.48,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_peluqueria",
+   "src": "img/p_vdjso9de381j_beatriz_peluqueria.jpg",
    "kicker": "Dona Beatriz, 71, peluquera"
   },
   {
@@ -1077,7 +1077,7 @@
    "start": 359.28,
    "dur": 3.52,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_cumple",
+   "src": "img/p_vdjso9de381j_beatriz_cumple.jpg",
    "kicker": "La foto del cumpleanos"
   },
   {
@@ -1086,7 +1086,7 @@
    "start": 362.8,
    "dur": 2.16,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_camilla"
+   "src": "img/p_vdjso9de381j_beatriz_camilla.jpg"
   },
   {
    "id": "m085",
@@ -1094,7 +1094,7 @@
    "start": 364.96,
    "dur": 2.42,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_reloj_consultorio",
+   "src": "img/p_vdjso9de381j_reloj_consultorio.jpg",
    "kicker": "Quince minutos, nada mas"
   },
   {
@@ -1103,7 +1103,7 @@
    "start": 369.58,
    "dur": 1.6,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_reloj_15min"
+   "src": "img/p_vdjso9de381j_reloj_15min.jpg"
   },
   {
    "id": "m087",
@@ -1111,7 +1111,7 @@
    "start": 374.9,
    "dur": 1.6,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_llanto"
+   "src": "img/p_vdjso9de381j_beatriz_llanto.jpg"
   },
   {
    "id": "m088",
@@ -1146,7 +1146,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_gravedad"
+     "image": "img/dg_vdjso9de381j_gravedad.jpg"
     }
    ]
   },
@@ -1171,7 +1171,7 @@
    "start": 404.2,
    "dur": 4.22,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_piernas_hinchadas",
+   "src": "img/p_vdjso9de381j_piernas_hinchadas.jpg",
    "kicker": "Segun donde estes parado"
   },
   {
@@ -1269,7 +1269,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_tres_pisos"
+     "image": "img/dg_vdjso9de381j_tres_pisos.jpg"
     }
    ]
   },
@@ -1286,7 +1286,7 @@
    "start": 449.16,
    "dur": 4.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_hoja_mano",
+   "src": "img/p_vdjso9de381j_hoja_mano.jpg",
    "kicker": "Centella asiatica"
   },
   {
@@ -1305,7 +1305,7 @@
    "start": 456.66,
    "dur": 2.76,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_hoja_mata"
+   "src": "img/p_vdjso9de381j_hoja_mata.jpg"
   },
   {
    "id": "m105",
@@ -1313,7 +1313,7 @@
    "start": 462.58,
    "dur": 4.2,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_hoja_zanja",
+   "src": "img/p_vdjso9de381j_hoja_zanja.jpg",
    "kicker": "Siempre cerca del agua"
   },
   {
@@ -1322,7 +1322,7 @@
    "start": 466.78,
    "dur": 3.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_centella_arrozal",
+   "src": "img/p_vdjso9de381j_centella_arrozal.jpg",
    "kicker": "Mas de 2000 anos"
   },
   {
@@ -1339,7 +1339,7 @@
    "start": 474.06,
    "dur": 2.06,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_estudio_papel",
+   "src": "img/p_vdjso9de381j_estudio_papel.jpg",
    "kicker": "Connective Tissue Research, 1990"
   },
   {
@@ -1360,7 +1360,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_colageno"
+     "image": "img/dg_vdjso9de381j_colageno.jpg"
     }
    ]
   },
@@ -1370,7 +1370,7 @@
    "start": 487.82,
    "dur": 2.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_microscopio"
+   "src": "img/p_vdjso9de381j_microscopio.jpg"
   },
   {
    "id": "m112",
@@ -1449,7 +1449,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_colageno_curva"
+     "image": "img/dg_vdjso9de381j_colageno_curva.jpg"
     }
    ]
   },
@@ -1521,7 +1521,7 @@
    "start": 536.44,
    "dur": 2.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_centella_seca"
+   "src": "img/p_vdjso9de381j_centella_seca.jpg"
   },
   {
    "id": "m123",
@@ -1576,7 +1576,7 @@
    "dur": 4.2,
    "kind": "quote",
    "text": "No fue *las senoras dijeron que se sentian mejor*",
-   "image": "img/p_vdjso9de381j_beatriz_camilla"
+   "image": "img/p_vdjso9de381j_beatriz_camilla.jpg"
   },
   {
    "id": "m126",
@@ -1623,7 +1623,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_vena_tono"
+     "image": "img/dg_vdjso9de381j_vena_tono.jpg"
     }
    ]
   },
@@ -1633,7 +1633,7 @@
    "start": 584.38,
    "dur": 2.98,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_tobillos",
+   "src": "img/p_vdjso9de381j_beatriz_tobillos.jpg",
    "kicker": "Los tobillos de dona Beatriz"
   },
   {
@@ -1694,7 +1694,7 @@
    "start": 603.8,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_federer_explica",
+   "src": "img/p_vdjso9de381j_federer_explica.jpg",
    "kicker": "Por eso la elegi"
   },
   {
@@ -1719,7 +1719,7 @@
    "start": 618.66,
    "dur": 3.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_frasco_caro",
+   "src": "img/p_vdjso9de381j_frasco_caro.jpg",
    "kicker": "La cremita que compraste"
   },
   {
@@ -1728,7 +1728,7 @@
    "start": 622.36,
    "dur": 3.8,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_bano_estante",
+   "src": "img/p_vdjso9de381j_bano_estante.jpg",
    "kicker": "Anda a buscarlo, en serio"
   },
   {
@@ -1737,7 +1737,7 @@
    "start": 626.18,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_frasco_vuelta"
+   "src": "img/p_vdjso9de381j_frasco_vuelta.jpg"
   },
   {
    "id": "m140",
@@ -1745,7 +1745,7 @@
    "start": 630.4,
    "dur": 2.68,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_etiqueta_lupa",
+   "image": "img/p_vdjso9de381j_etiqueta_lupa.jpg",
    "x": 0.5,
    "y": 0.62,
    "zoom": 1.8,
@@ -1798,7 +1798,7 @@
    "dur": 4.7,
    "kind": "quote",
    "text": "Le pusieron *el minimo indispensable* para poder escribirlo grande en el frente",
-   "image": "img/p_vdjso9de381j_gondola"
+   "image": "img/p_vdjso9de381j_gondola.jpg"
   },
   {
    "id": "m145",
@@ -1866,7 +1866,7 @@
    "dur": 5,
    "kind": "quote",
    "text": "Te venden el *nombre del ingrediente*, no el ingrediente",
-   "image": "img/p_vdjso9de381j_frasco_caro"
+   "image": "img/p_vdjso9de381j_frasco_caro.jpg"
   },
   {
    "id": "m149",
@@ -1881,7 +1881,7 @@
    "start": 686.3,
    "dur": 2.26,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_respiracion_panza",
+   "src": "img/p_vdjso9de381j_respiracion_panza.jpg",
    "kicker": "La respiracion"
   },
   {
@@ -1890,7 +1890,7 @@
    "start": 688.56,
    "dur": 2.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_cuello_abierto",
+   "src": "img/p_vdjso9de381j_cuello_abierto.jpg",
    "kicker": "El cuello"
   },
   {
@@ -1899,7 +1899,7 @@
    "start": 691.54,
    "dur": 2.58,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_centella_dietetica",
+   "src": "img/p_vdjso9de381j_centella_dietetica.jpg",
    "kicker": "Bolsa de hoja seca"
   },
   {
@@ -1918,7 +1918,7 @@
    "start": 699.22,
    "dur": 2.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_mujer_frustrada"
+   "src": "img/p_vdjso9de381j_mujer_frustrada.jpg"
   },
   {
    "id": "m155",
@@ -1936,7 +1936,7 @@
    "start": 708.94,
    "dur": 2.2,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_receta_apurada"
+   "src": "img/p_vdjso9de381j_receta_apurada.jpg"
   },
   {
    "id": "m157",
@@ -1945,7 +1945,7 @@
    "dur": 4.2,
    "kind": "quote",
    "text": "*Y bueno... son los anos*",
-   "image": "img/p_vdjso9de381j_medico_escucha"
+   "image": "img/p_vdjso9de381j_medico_escucha.jpg"
   },
   {
    "id": "m158",
@@ -1978,7 +1978,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_tres_pisos"
+     "image": "img/dg_vdjso9de381j_tres_pisos.jpg"
     }
    ]
   },
@@ -2043,7 +2043,7 @@
    "start": 748.44,
    "dur": 4.62,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_aurelio_carnicero",
+   "src": "img/p_vdjso9de381j_aurelio_carnicero.jpg",
    "kicker": "Don Aurelio, 77 - carnicero jubilado"
   },
   {
@@ -2052,7 +2052,7 @@
    "start": 753.06,
    "dur": 2.9,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_aurelio_perfil"
+   "src": "img/p_vdjso9de381j_aurelio_perfil.jpg"
   },
   {
    "id": "m165",
@@ -2060,7 +2060,7 @@
    "start": 756.36,
    "dur": 2.56,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_aurelio_perfil",
+   "image": "img/p_vdjso9de381j_aurelio_perfil.jpg",
    "x": 0.5,
    "y": 0.45,
    "zoom": 1.6,
@@ -2072,7 +2072,7 @@
    "start": 758.92,
    "dur": 4.2,
    "kind": "annotated",
-   "image": "img/p_vdjso9de381j_aurelio_perfil",
+   "image": "img/p_vdjso9de381j_aurelio_perfil.jpg",
    "caption": "Dos caras en el mismo hombre",
    "annotations": [
     {
@@ -2115,7 +2115,7 @@
    "start": 767.8,
    "dur": 4.2,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_aurelio_perfil",
+   "image": "img/p_vdjso9de381j_aurelio_perfil.jpg",
    "x": 0.62,
    "y": 0.6,
    "zoom": 2,
@@ -2127,7 +2127,7 @@
    "start": 772.84,
    "dur": 3.6,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_aurelio_durmiendo"
+   "src": "img/p_vdjso9de381j_aurelio_durmiendo.jpg"
   },
   {
    "id": "m170",
@@ -2135,7 +2135,7 @@
    "start": 779.06,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_funda_arrugada"
+   "src": "img/p_vdjso9de381j_funda_arrugada.jpg"
   },
   {
    "id": "m171",
@@ -2153,7 +2153,7 @@
    "start": 790.38,
    "dur": 3.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_estudio_papel",
+   "src": "img/p_vdjso9de381j_estudio_papel.jpg",
    "kicker": "Anson, Kane y Lambros"
   },
   {
@@ -2162,7 +2162,7 @@
    "start": 793.88,
    "dur": 3.74,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_estudio_papel",
+   "image": "img/p_vdjso9de381j_estudio_papel.jpg",
    "x": 0.5,
    "y": 0.38,
    "zoom": 1.7,
@@ -2186,7 +2186,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_piel_noche"
+     "image": "img/dg_vdjso9de381j_piel_noche.jpg"
     }
    ]
   },
@@ -2214,7 +2214,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_linfa_cara"
+     "image": "img/dg_vdjso9de381j_linfa_cara.jpg"
     }
    ]
   },
@@ -2224,7 +2224,7 @@
    "start": 813.64,
    "dur": 2.6,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_cara_abajo"
+   "src": "img/p_vdjso9de381j_cara_abajo.jpg"
   },
   {
    "id": "m179",
@@ -2234,7 +2234,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_gravedad"
+     "image": "img/dg_vdjso9de381j_gravedad.jpg"
     }
    ]
   },
@@ -2244,7 +2244,7 @@
    "start": 820.98,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_cara_hinchada_manana",
+   "src": "img/p_vdjso9de381j_cara_hinchada_manana.jpg",
    "kicker": "Al levantarte"
   },
   {
@@ -2253,7 +2253,7 @@
    "start": 824.94,
    "dur": 2.82,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_parpados_hinchados"
+   "src": "img/p_vdjso9de381j_parpados_hinchados.jpg"
   },
   {
    "id": "m182",
@@ -2301,7 +2301,7 @@
    "start": 835.58,
    "dur": 2.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_recap_cama",
+   "src": "img/p_vdjso9de381j_recap_cama.jpg",
    "kicker": "Y si no podes, alterna"
   },
   {
@@ -2319,7 +2319,7 @@
    "start": 848.48,
    "dur": 2.54,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_almohadas_apiladas",
+   "src": "img/p_vdjso9de381j_almohadas_apiladas.jpg",
    "kicker": "Asi NO"
   },
   {
@@ -2330,7 +2330,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_carga_cervical"
+     "image": "img/dg_vdjso9de381j_carga_cervical.jpg"
     }
    ]
   },
@@ -2353,7 +2353,7 @@
    "start": 860.82,
    "dur": 2.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_cama_pendiente"
+   "src": "img/p_vdjso9de381j_cama_pendiente.jpg"
   },
   {
    "id": "m190",
@@ -2363,7 +2363,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_cama_angulo"
+     "image": "img/dg_vdjso9de381j_cama_angulo.jpg"
     }
    ]
   },
@@ -2373,7 +2373,7 @@
    "start": 865.98,
    "dur": 2.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_funda_saten",
+   "src": "img/p_vdjso9de381j_funda_saten.jpg",
    "kicker": "Algodon liso o saten"
   },
   {
@@ -2382,7 +2382,7 @@
    "start": 879.62,
    "dur": 2.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_telefono"
+   "src": "img/p_vdjso9de381j_beatriz_telefono.jpg"
   },
   {
    "id": "m193",
@@ -2414,7 +2414,7 @@
    "start": 895.72,
    "dur": 2.24,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_centella_dietetica",
+   "image": "img/p_vdjso9de381j_centella_dietetica.jpg",
    "x": 0.5,
    "y": 0.5,
    "zoom": 1.5,
@@ -2454,7 +2454,7 @@
    "start": 904.76,
    "dur": 2.6,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_compresa_cuello",
+   "src": "img/p_vdjso9de381j_compresa_cuello.jpg",
    "kicker": "Cara y cuello"
   },
   {
@@ -2497,7 +2497,7 @@
    "start": 920.56,
    "dur": 2.5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_heladera_frasco",
+   "src": "img/p_vdjso9de381j_heladera_frasco.jpg",
    "kicker": "Cuanto dura"
   },
   {
@@ -2565,7 +2565,7 @@
    "start": 944.14,
    "dur": 4.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_compresa_mandibula",
+   "src": "img/p_vdjso9de381j_compresa_mandibula.jpg",
    "kicker": "5 minutos, apoyada"
   },
   {
@@ -2576,7 +2576,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_capilar"
+     "image": "img/dg_vdjso9de381j_capilar.jpg"
     }
    ]
   },
@@ -2588,7 +2588,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_vena_tono"
+     "image": "img/dg_vdjso9de381j_vena_tono.jpg"
     }
    ]
   },
@@ -2598,7 +2598,7 @@
    "start": 959.3,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_aceite_gotas",
+   "src": "img/p_vdjso9de381j_aceite_gotas.jpg",
    "kicker": "Con la piel todavia humeda"
   },
   {
@@ -2648,7 +2648,7 @@
    "dur": 4.2,
    "kind": "quote",
    "text": "Sin el aceite arriba se evapora en dos minutos y *perdiste el tiempo*",
-   "image": "img/p_vdjso9de381j_bano_estante"
+   "image": "img/p_vdjso9de381j_bano_estante.jpg"
   },
   {
    "id": "m214",
@@ -2658,7 +2658,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_ladrillos"
+     "image": "img/dg_vdjso9de381j_ladrillos.jpg"
     }
    ]
   },
@@ -2704,7 +2704,7 @@
    "start": 1013.74,
    "dur": 2.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_prueba_antebrazo",
+   "src": "img/p_vdjso9de381j_prueba_antebrazo.jpg",
    "kicker": "Dos dias seguidos"
   },
   {
@@ -2765,7 +2765,7 @@
    "start": 1032.72,
    "dur": 2.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_estudio_papel",
+   "src": "img/p_vdjso9de381j_estudio_papel.jpg",
    "kicker": "Reportes en la literatura"
   },
   {
@@ -2774,7 +2774,7 @@
    "start": 1035.12,
    "dur": 3.3,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_frasco_caro",
+   "src": "img/p_vdjso9de381j_frasco_caro.jpg",
    "kicker": "Capsulas concentradas"
   },
   {
@@ -2805,7 +2805,7 @@
    "start": 1047.32,
    "dur": 2.1,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_analisis_sangre",
+   "src": "img/p_vdjso9de381j_analisis_sangre.jpg",
    "kicker": "Higado"
   },
   {
@@ -2909,7 +2909,7 @@
    "start": 1074.4,
    "dur": 4.2,
    "kind": "annotated",
-   "image": "img/p_vdjso9de381j_mancha_brazo",
+   "image": "img/p_vdjso9de381j_mancha_brazo.jpg",
    "caption": "Manchas marrones que tardan meses en irse",
    "annotations": [
     {
@@ -2932,7 +2932,7 @@
    "start": 1084.26,
    "dur": 3.84,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_guia_tablet",
+   "src": "img/p_vdjso9de381j_guia_tablet.jpg",
    "kicker": "La guia de medidas"
   },
   {
@@ -2973,7 +2973,7 @@
    "start": 1096.24,
    "dur": 2.18,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_federer_explica"
+   "src": "img/p_vdjso9de381j_federer_explica.jpg"
   },
   {
    "id": "m239",
@@ -3000,7 +3000,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_carga_cervical"
+     "image": "img/dg_vdjso9de381j_carga_cervical.jpg"
     }
    ]
   },
@@ -3040,7 +3040,7 @@
    "start": 1128,
    "dur": 4.2,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_videollamada_falda",
+   "image": "img/p_vdjso9de381j_videollamada_falda.jpg",
    "x": 0.5,
    "y": 0.68,
    "zoom": 1.6,
@@ -3088,7 +3088,7 @@
    "start": 1136.86,
    "dur": 2.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_cuello_mano_plana",
+   "src": "img/p_vdjso9de381j_cuello_mano_plana.jpg",
    "kicker": "Adelante de ese cuello"
   },
   {
@@ -3099,7 +3099,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_platisma"
+     "image": "img/dg_vdjso9de381j_platisma.jpg"
     }
    ]
   },
@@ -3111,7 +3111,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_platisma"
+     "image": "img/dg_vdjso9de381j_platisma.jpg"
     }
    ]
   },
@@ -3121,7 +3121,7 @@
    "start": 1152.56,
    "dur": 4.5,
    "kind": "annotated",
-   "image": "img/p_vdjso9de381j_cara_abajo",
+   "image": "img/p_vdjso9de381j_cara_abajo.jpg",
    "caption": "El musculo acortado tira todo para abajo",
    "annotations": [
     {
@@ -3150,7 +3150,7 @@
    "start": 1160.7,
    "dur": 3.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_ganglios_cuello",
+   "src": "img/p_vdjso9de381j_ganglios_cuello.jpg",
    "kicker": "Ahi descarga toda la cara"
   },
   {
@@ -3161,7 +3161,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_desague_cuello"
+     "image": "img/dg_vdjso9de381j_desague_cuello.jpg"
     }
    ]
   },
@@ -3173,7 +3173,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_carga_cervical"
+     "image": "img/dg_vdjso9de381j_carga_cervical.jpg"
     }
    ]
   },
@@ -3183,7 +3183,7 @@
    "start": 1171.22,
    "dur": 3.6,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_nieto_abuela",
+   "src": "img/p_vdjso9de381j_nieto_abuela.jpg",
    "kicker": "Dos horas por dia"
   },
   {
@@ -3192,7 +3192,7 @@
    "start": 1175.2,
    "dur": 5.32,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_videollamada_falda",
+   "src": "img/p_vdjso9de381j_videollamada_falda.jpg",
    "kicker": "El telefono en las piernas"
   },
   {
@@ -3201,7 +3201,7 @@
    "start": 1180.52,
    "dur": 2.42,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_telefono_ojos",
+   "src": "img/p_vdjso9de381j_telefono_ojos.jpg",
    "kicker": "A la altura de los ojos"
   },
   {
@@ -3248,7 +3248,7 @@
    "start": 1187.54,
    "dur": 3.24,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_menton_atras",
+   "src": "img/p_vdjso9de381j_menton_atras.jpg",
    "kicker": "Menton para atras"
   },
   {
@@ -3289,7 +3289,7 @@
    "start": 1194,
    "dur": 2.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_cuello_abierto",
+   "src": "img/p_vdjso9de381j_cuello_abierto.jpg",
    "kicker": "Se abre el frente del cuello"
   },
   {
@@ -3336,7 +3336,7 @@
    "start": 1210.52,
    "dur": 3.9,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_respiracion_panza",
+   "src": "img/p_vdjso9de381j_respiracion_panza.jpg",
    "kicker": "Por la nariz, hasta la panza"
   },
   {
@@ -3392,7 +3392,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_colageno_curva"
+     "image": "img/dg_vdjso9de381j_colageno_curva.jpg"
     }
    ]
   },
@@ -3431,7 +3431,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_colageno"
+     "image": "img/dg_vdjso9de381j_colageno.jpg"
     }
    ]
   },
@@ -3482,7 +3482,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_ladrillos"
+     "image": "img/dg_vdjso9de381j_ladrillos.jpg"
     }
    ]
   },
@@ -3500,7 +3500,7 @@
    "start": 1291.28,
    "dur": 2.42,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_elastico_gastado",
+   "src": "img/p_vdjso9de381j_elastico_gastado.jpg",
    "kicker": "Fibra floja"
   },
   {
@@ -3509,7 +3509,7 @@
    "start": 1293.7,
    "dur": 4.4,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_marineros",
+   "src": "img/p_vdjso9de381j_marineros.jpg",
    "kicker": "Escorbuto: se abrian las cicatrices viejas"
   },
   {
@@ -3518,7 +3518,7 @@
    "start": 1298.34,
    "dur": 2.18,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_proteina_plato",
+   "src": "img/p_vdjso9de381j_proteina_plato.jpg",
    "kicker": "Proteina en las 3 comidas"
   },
   {
@@ -3535,7 +3535,7 @@
    "start": 1307.9,
    "dur": 4.9,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_vitc_crudo",
+   "src": "img/p_vdjso9de381j_vitc_crudo.jpg",
    "kicker": "Crudo: el calor la rompe"
   },
   {
@@ -3557,7 +3557,7 @@
    "start": 1316.68,
    "dur": 3.3,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_caminata_vereda",
+   "src": "img/p_vdjso9de381j_caminata_vereda.jpg",
    "kicker": "10 minutos despues de cada comida"
   },
   {
@@ -3585,7 +3585,7 @@
    "start": 1335.24,
    "dur": 2,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_botox_aguja",
+   "src": "img/p_vdjso9de381j_botox_aguja.jpg",
    "kicker": "Esto NO es botox"
   },
   {
@@ -3626,7 +3626,7 @@
    "start": 1353.56,
    "dur": 2.22,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_pellizco_papada",
+   "image": "img/p_vdjso9de381j_pellizco_papada.jpg",
    "x": 0.5,
    "y": 0.66,
    "zoom": 1.6,
@@ -3692,10 +3692,10 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_hueso"
+     "image": "img/dg_vdjso9de381j_hueso.jpg"
     },
     {
-     "image": "img/dg_vdjso9de381j_grasa_mudada"
+     "image": "img/dg_vdjso9de381j_grasa_mudada.jpg"
     }
    ]
   },
@@ -3721,7 +3721,7 @@
    "start": 1373,
    "dur": 4.96,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_frasco_caro",
+   "src": "img/p_vdjso9de381j_frasco_caro.jpg",
    "kicker": "Te esta mintiendo en la cara"
   },
   {
@@ -3742,7 +3742,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_colageno_curva"
+     "image": "img/dg_vdjso9de381j_colageno_curva.jpg"
     }
    ]
   },
@@ -3752,7 +3752,7 @@
    "start": 1389.56,
    "dur": 3.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_estudio_papel",
+   "src": "img/p_vdjso9de381j_estudio_papel.jpg",
    "kicker": "Seis meses de seguimiento"
   },
   {
@@ -3761,7 +3761,7 @@
    "start": 1393.28,
    "dur": 4.58,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_reloj_15min",
+   "src": "img/p_vdjso9de381j_reloj_15min.jpg",
    "kicker": "Dia 15: todavia no pasa nada"
   },
   {
@@ -3821,7 +3821,7 @@
    "start": 1414.48,
    "dur": 2.8,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_piernas_hinchadas",
+   "src": "img/p_vdjso9de381j_piernas_hinchadas.jpg",
    "kicker": "Cara Y piernas"
   },
   {
@@ -3830,7 +3830,7 @@
    "start": 1421.58,
    "dur": 5,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_parpados_hinchados",
+   "src": "img/p_vdjso9de381j_parpados_hinchados.jpg",
    "kicker": "Todas las mananas igual"
   },
   {
@@ -3864,7 +3864,7 @@
    "start": 1436.9,
    "dur": 3.9,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_hoja_mano",
+   "src": "img/p_vdjso9de381j_hoja_mano.jpg",
    "kicker": "Ninguna de las tres"
   },
   {
@@ -3873,7 +3873,7 @@
    "start": 1440.8,
    "dur": 2.3,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_medico_escucha"
+   "src": "img/p_vdjso9de381j_medico_escucha.jpg"
   },
   {
    "id": "m311",
@@ -3881,7 +3881,7 @@
    "start": 1443.16,
    "dur": 3,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_analisis_sangre",
+   "src": "img/p_vdjso9de381j_analisis_sangre.jpg",
    "kicker": "Esta semana, no la que viene"
   },
   {
@@ -3914,7 +3914,7 @@
    "start": 1459.46,
    "dur": 2.7,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_espejo_mano"
+   "src": "img/p_vdjso9de381j_beatriz_espejo_mano.jpg"
   },
   {
    "id": "m316",
@@ -3933,7 +3933,7 @@
    "dur": 4.2,
    "kind": "quote",
    "text": "Lo hago *todas las noches* desde hace quince anos.",
-   "image": "img/p_vdjso9de381j_beatriz_espejo"
+   "image": "img/p_vdjso9de381j_beatriz_espejo.jpg"
   },
   {
    "id": "m318",
@@ -3941,7 +3941,7 @@
    "start": 1472.14,
    "dur": 3.86,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_masaje_arriba",
+   "src": "img/p_vdjso9de381j_masaje_arriba.jpg",
    "kicker": "Masajeando hacia arriba"
   },
   {
@@ -3952,7 +3952,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_direccion"
+     "image": "img/dg_vdjso9de381j_direccion.jpg"
     }
    ]
   },
@@ -3962,7 +3962,7 @@
    "start": 1481.58,
    "dur": 2.06,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_manos_tijera",
+   "src": "img/p_vdjso9de381j_beatriz_manos_tijera.jpg",
    "kicker": "Curso de estetica, ano 78"
   },
   {
@@ -3971,7 +3971,7 @@
    "start": 1488.52,
    "dur": 4.36,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_etiqueta_lupa",
+   "src": "img/p_vdjso9de381j_etiqueta_lupa.jpg",
    "kicker": "Aplique con movimientos ascendentes"
   },
   {
@@ -4006,7 +4006,7 @@
    "start": 1503.78,
    "dur": 4.5,
    "kind": "annotated",
-   "image": "img/p_vdjso9de381j_ganglios_cuello",
+   "image": "img/p_vdjso9de381j_ganglios_cuello.jpg",
    "caption": "Donde descarga la cara",
    "annotations": [
     {
@@ -4029,7 +4029,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_desague_cuello"
+     "image": "img/dg_vdjso9de381j_desague_cuello.jpg"
     }
    ]
   },
@@ -4039,7 +4039,7 @@
    "start": 1510.98,
    "dur": 4.1,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_clavicula_dedos",
+   "src": "img/p_vdjso9de381j_clavicula_dedos.jpg",
    "kicker": "Ahi recien descarga en la vena"
   },
   {
@@ -4057,7 +4057,7 @@
    "start": 1520.6,
    "dur": 4.48,
    "kind": "freezezoom",
-   "image": "img/p_vdjso9de381j_cara_hinchada_manana",
+   "image": "img/p_vdjso9de381j_cara_hinchada_manana.jpg",
    "x": 0.5,
    "y": 0.45,
    "zoom": 1.5,
@@ -4080,7 +4080,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_capilar"
+     "image": "img/dg_vdjso9de381j_capilar.jpg"
     }
    ]
   },
@@ -4104,7 +4104,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_oclusion"
+     "image": "img/dg_vdjso9de381j_oclusion.jpg"
     }
    ]
   },
@@ -4116,7 +4116,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_presion"
+     "image": "img/dg_vdjso9de381j_presion.jpg"
     }
    ]
   },
@@ -4126,7 +4126,7 @@
    "start": 1545.9,
    "dur": 2.54,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_rodillo_piedra",
+   "src": "img/p_vdjso9de381j_rodillo_piedra.jpg",
    "kicker": "Crema, rodillo de piedra, cuchara"
   },
   {
@@ -4153,7 +4153,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_vdjso9de381j_platisma"
+     "image": "img/dg_vdjso9de381j_platisma.jpg"
     }
    ]
   },
@@ -4170,7 +4170,7 @@
    "start": 1562.22,
    "dur": 3.1,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_elastico_gastado",
+   "src": "img/p_vdjso9de381j_elastico_gastado.jpg",
    "kicker": "Y cuando soltas, vuelve"
   },
   {
@@ -4187,7 +4187,7 @@
    "start": 1568.5,
    "dur": 4.96,
    "kind": "raw",
-   "src": "img/p_vdjso9de381j_beatriz_espejo",
+   "src": "img/p_vdjso9de381j_beatriz_espejo.jpg",
    "kicker": "La que mas se cuida"
   },
   {
@@ -4210,7 +4210,7 @@
    "id": "m342",
    "key": "w6",
    "start": 1575.64,
-   "dur": 4.48,
+   "dur": 4.5,
    "kind": "splitlist",
    "title": "Las dos, cada noche",
    "items": [
@@ -4220,51 +4220,569 @@
   },
   {
    "id": "m343",
-   "key": "w6",
-   "start": 1580.12,
-   "dur": 8.93,
-   "kind": "focuscards",
-   "title": "Las 5 cosas",
-   "items": [
-    {
-     "image": "img/p_vdjso9de381j_recap_compresa",
-     "label": "Compresa fria de centella de noche",
-     "at": 0
-    },
-    {
-     "image": "img/p_vdjso9de381j_recap_cama",
-     "label": "La cabecera de la cama levantada",
-     "at": 47
-    },
-    {
-     "image": "img/p_vdjso9de381j_recap_plato",
-     "label": "Proteina y vitamina C todos los dias",
-     "at": 74
-    },
-    {
-     "image": "img/p_vdjso9de381j_recap_telefono",
-     "label": "El telefono a la altura de los ojos",
-     "at": 102
-    },
-    {
-     "image": "img/p_vdjso9de381j_recap_masaje",
-     "label": "El masaje va hacia abajo y suave",
-     "at": 166
-    }
+   "key": "w10",
+   "start": 1594.18,
+   "dur": 6.08,
+   "kind": "process",
+   "title": "El masaje correcto: 3 pasos",
+   "steps": [
+    "Abrir la salida en el hueco de la clavicula",
+    "Los costados del cuello, de la oreja hacia abajo",
+    "Recien ahi la cara: del centro hacia afuera y hacia abajo"
    ]
   },
   {
    "id": "m344",
-   "key": "w6",
-   "start": 1589.2,
-   "dur": 4.2,
-   "kind": "process",
-   "title": "Tres pasos, tres minutos",
-   "steps": [
-    "Abri el desague: dedos planos en el hueco de la clavicula",
-    "Costados del cuello: mano plana, siempre hacia abajo",
-    "Recien ahi la cara: del pomulo hacia la mandibula, suave"
+   "key": "w10",
+   "start": 1600.26,
+   "dur": 2.2,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_clavicula_dedos.jpg",
+   "kicker": "Paso 1 - tres dedos en el hueco de la clavicula"
+  },
+  {
+   "id": "m345",
+   "key": "w10",
+   "start": 1602.8,
+   "dur": 2.48,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_ganglios_cuello.jpg",
+   "kicker": "Diez movimientos suaves hacia el centro"
+  },
+  {
+   "id": "m346",
+   "key": "w10",
+   "start": 1605.28,
+   "dur": 3.36,
+   "kind": "rule",
+   "text": "Primero se abre la salida. Recien despues se empuja."
+  },
+  {
+   "id": "m347",
+   "key": "w10",
+   "start": 1608.64,
+   "dur": 4.7,
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vdjso9de381j_desague_cuello.jpg"
+    },
+    {
+     "image": "img/dg_vdjso9de381j_tres_pasos.jpg"
+    }
    ]
+  },
+  {
+   "id": "m348",
+   "key": "w10",
+   "start": 1613.34,
+   "dur": 3.76,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Nadie"
+    },
+    {
+     "t": "hace"
+    },
+    {
+     "t": "este"
+    },
+    {
+     "t": "paso"
+    },
+    {
+     "t": "y",
+     "hl": false
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "mas"
+    },
+    {
+     "t": "importante",
+     "hl": true
+    }
+   ],
+   "perWord": 10
+  },
+  {
+   "id": "m349",
+   "key": "w10",
+   "start": 1617.1,
+   "dur": 4.2,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Paso 2"
+    },
+    {
+     "t": "los costados del cuello"
+    }
+   ]
+  },
+  {
+   "id": "m350",
+   "key": "w10",
+   "start": 1619.34,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_cuello_mano_plana.jpg",
+   "kicker": "De abajo de la oreja hacia la clavicula"
+  },
+  {
+   "id": "m351",
+   "key": "w10",
+   "start": 1622.72,
+   "dur": 5.9,
+   "kind": "checklist",
+   "items": [
+    {
+     "text": "Mano abierta y plana",
+     "state": "done"
+    },
+    {
+     "text": "Piel apenas humeda, sin crema espesa",
+     "state": "done"
+    },
+    {
+     "text": "Apretar fuerte",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "m352",
+   "key": "w10",
+   "start": 1628.64,
+   "dur": 2.04,
+   "kind": "stat",
+   "big": "10",
+   "unit": "veces",
+   "label": "Cada lado, sin apretar"
+  },
+  {
+   "id": "m353",
+   "key": "w10",
+   "start": 1630.68,
+   "dur": 2.36,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Paso 3"
+    },
+    {
+     "t": "recien ahora la cara"
+    }
+   ]
+  },
+  {
+   "id": "m354",
+   "key": "w10",
+   "start": 1633.04,
+   "dur": 4.2,
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_vdjso9de381j_direccion.jpg"
+    }
+   ]
+  },
+  {
+   "id": "m355",
+   "key": "w10",
+   "start": 1635.54,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_cara_abajo.jpg",
+   "kicker": "Del menton al angulo de la mandibula, y baja"
+  },
+  {
+   "id": "m356",
+   "key": "w10",
+   "start": 1643.3,
+   "dur": 5.4,
+   "kind": "rule",
+   "text": "Todo recorrido termina en el cuello. Siempre."
+  },
+  {
+   "id": "m357",
+   "key": "w10",
+   "start": 1648.7,
+   "dur": 2.68,
+   "kind": "stat",
+   "big": "1",
+   "unit": "minuto",
+   "label": "Entero. No 15 segundos"
+  },
+  {
+   "id": "m358",
+   "key": "w10",
+   "start": 1651.38,
+   "dur": 6.2,
+   "kind": "mitoverdad",
+   "myth": "La cara se levanta empujando fuerte con el dedo",
+   "truth": "La levantan la almohada y la postura, que trabajan 12 horas seguidas",
+   "flipAt": 115
+  },
+  {
+   "id": "m359",
+   "key": "w10",
+   "start": 1657.58,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_elastico_gastado.jpg",
+   "kicker": "El elastico no se estira a la fuerza"
+  },
+  {
+   "id": "m360",
+   "key": "w10",
+   "start": 1660.86,
+   "dur": 2.06,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_beatriz_peluqueria.jpg"
+  },
+  {
+   "id": "m361",
+   "key": "w10",
+   "start": 1662.92,
+   "dur": 2.86,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_beatriz_espejo.jpg",
+   "kicker": "Nada mas que eso, sumado a lo demas"
+  },
+  {
+   "id": "m362",
+   "key": "w10",
+   "start": 1665.78,
+   "dur": 4.38,
+   "kind": "talk"
+  },
+  {
+   "id": "m363",
+   "key": "w10",
+   "start": 1670.16,
+   "dur": 2.06,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_beatriz_cumple.jpg"
+  },
+  {
+   "id": "m364",
+   "key": "w10",
+   "start": 1672.22,
+   "dur": 4.2,
+   "kind": "freezezoom",
+   "image": "img/p_vdjso9de381j_beatriz_cumple.jpg",
+   "x": 0.5,
+   "y": 0.45,
+   "zoom": 1.6,
+   "label": "De costado. A proposito."
+  },
+  {
+   "id": "m365",
+   "key": "w10",
+   "start": 1675.18,
+   "dur": 3.3,
+   "kind": "talk"
+  },
+  {
+   "id": "m366",
+   "key": "w10",
+   "start": 1679.2,
+   "dur": 4.2,
+   "kind": "quote",
+   "text": "*No me quedo la cara de los 40*, doctor. Me quedo *mi cara*.",
+   "image": "img/p_vdjso9de381j_beatriz_final.jpg"
+  },
+  {
+   "id": "m367",
+   "key": "w10",
+   "start": 1683.08,
+   "dur": 2.6,
+   "kind": "talk"
+  },
+  {
+   "id": "m368",
+   "key": "w10",
+   "start": 1685.7,
+   "dur": 3.1,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Tu"
+    },
+    {
+     "t": "cara"
+    },
+    {
+     "t": "sin"
+    },
+    {
+     "t": "el"
+    },
+    {
+     "t": "litro"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "agua",
+     "hl": true
+    },
+    {
+     "t": "encima"
+    }
+   ],
+   "perWord": 10
+  },
+  {
+   "id": "m369",
+   "key": "w10",
+   "start": 1688.8,
+   "dur": 4.2,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Vamos al"
+    },
+    {
+     "t": "resumen"
+    },
+    {
+     "t": "cinco cosas"
+    }
+   ]
+  },
+  {
+   "id": "m370",
+   "key": "w10",
+   "start": 1691.28,
+   "dur": 54.83,
+   "kind": "focuscards",
+   "title": "Las 5 cosas",
+   "items": [
+    {
+     "image": "img/p_vdjso9de381j_recap_cama.jpg",
+     "label": "La cabecera de la cama levantada",
+     "at": 103
+    },
+    {
+     "image": "img/p_vdjso9de381j_recap_compresa.jpg",
+     "label": "Compresa fria de centella de noche",
+     "at": 425
+    },
+    {
+     "image": "img/p_vdjso9de381j_recap_telefono.jpg",
+     "label": "El telefono a la altura de los ojos",
+     "at": 883
+    },
+    {
+     "image": "img/p_vdjso9de381j_recap_plato.jpg",
+     "label": "Proteina y vitamina C todos los dias",
+     "at": 1216
+    },
+    {
+     "image": "img/p_vdjso9de381j_recap_masaje.jpg",
+     "label": "El masaje va hacia abajo y suave",
+     "at": 1543
+    }
+   ]
+  },
+  {
+   "id": "m371",
+   "key": "w10",
+   "start": 1749.44,
+   "dur": 2.16,
+   "kind": "talk"
+  },
+  {
+   "id": "m372",
+   "key": "w10",
+   "start": 1756.24,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_comentarios.jpg"
+  },
+  {
+   "id": "m373",
+   "key": "w10",
+   "start": 1758.74,
+   "dur": 3.36,
+   "kind": "splitlist",
+   "title": "Escribime una sola palabra",
+   "items": [
+    "volvio",
+    "igual"
+   ]
+  },
+  {
+   "id": "m374",
+   "key": "w10",
+   "start": 1762.1,
+   "dur": 4.6,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Escribi"
+    },
+    {
+     "t": "volvio",
+     "hl": true
+    },
+    {
+     "t": "o"
+    },
+    {
+     "t": "igual",
+     "hl": true
+    },
+    {
+     "t": "nada"
+    },
+    {
+     "t": "mas"
+    }
+   ],
+   "perWord": 10
+  },
+  {
+   "id": "m375",
+   "key": "w10",
+   "start": 1766.74,
+   "dur": 5.9,
+   "kind": "talk"
+  },
+  {
+   "id": "m376",
+   "key": "w10",
+   "start": 1772.7,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_guia_tablet.jpg",
+   "kicker": "Todo ordenado por lo que te duele"
+  },
+  {
+   "id": "m377",
+   "key": "w10",
+   "start": 1776.08,
+   "dur": 3.56,
+   "kind": "board",
+   "title": "Que hay adentro de la guia",
+   "items": [
+    {
+     "title": "Las cantidades escritas",
+     "sub": "Cuanto, cada cuanto y por cuantos dias"
+    },
+    {
+     "title": "Los errores de cada preparado",
+     "sub": "Lo que arruina la centella en casa"
+    }
+   ]
+  },
+  {
+   "id": "m378",
+   "key": "w10",
+   "start": 1779.74,
+   "dur": 4.2,
+   "kind": "callout",
+   "title": "Esta en la descripcion, arriba de todo",
+   "text": "No te pido nada mas que eso: que la mires si te sirve."
+  },
+  {
+   "id": "m379",
+   "key": "w10",
+   "start": 1783.98,
+   "dur": 4,
+   "kind": "talk"
+  },
+  {
+   "id": "m380",
+   "key": "w10",
+   "start": 1787.98,
+   "dur": 4.2,
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "El proximo"
+    },
+    {
+     "t": "ya esta escrito"
+    }
+   ]
+  },
+  {
+   "id": "m381",
+   "key": "w10",
+   "start": 1790.4,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_federer_explica.jpg"
+  },
+  {
+   "id": "m382",
+   "key": "w10",
+   "start": 1793,
+   "dur": 2.78,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_parpados_hinchados.jpg"
+  },
+  {
+   "id": "m383",
+   "key": "w10",
+   "start": 1795.78,
+   "dur": 3.46,
+   "kind": "freezezoom",
+   "image": "img/p_vdjso9de381j_ojo_bolsa.jpg",
+   "x": 0.5,
+   "y": 0.55,
+   "zoom": 1.7,
+   "label": "La bolsa de abajo del ojo"
+  },
+  {
+   "id": "m384",
+   "key": "w10",
+   "start": 1799.24,
+   "dur": 4.3,
+   "kind": "splitlist",
+   "title": "Son dos bolsas distintas",
+   "items": [
+    "Una se va sola en 20 minutos",
+    "La otra no se va nunca"
+   ]
+  },
+  {
+   "id": "m385",
+   "key": "w10",
+   "start": 1805.16,
+   "dur": 4.6,
+   "kind": "stat",
+   "big": "20",
+   "unit": "min",
+   "label": "Una se va sola. La otra no se va nunca."
+  },
+  {
+   "id": "m386",
+   "key": "w10",
+   "start": 1809.78,
+   "dur": 5.06,
+   "kind": "callout",
+   "title": "Con el dedo, en tres segundos",
+   "text": "Hay una manera de saber cual tenes vos hoy. Te la muestro en el proximo."
+  },
+  {
+   "id": "m387",
+   "key": "w10",
+   "start": 1814.84,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "img/p_vdjso9de381j_ventilador_cama.jpg",
+   "kicker": "El ventilador apuntando a la cama"
   }
  ]
 }
