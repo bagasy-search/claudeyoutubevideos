@@ -3206,7 +3206,7 @@
        "x": 8,
        "y": 30,
        "w": 30,
-       "src": "img/fe_v3iuzgxce9vg_lamina_gravedad_empuja_liquido_hacia_abajo.png",
+       "src": "img/fe_v3iuzgxce9vg_lamina_gravedad_empuja_liquido_hacia_abajo.jpg",
        "start": 22,
        "caption": "De pie: el líquido baja"
       },
@@ -3228,7 +3228,7 @@
        "x": 58,
        "y": 30,
        "w": 30,
-       "src": "img/fe_v3iuzgxce9vg_lamina_marea_vuelve_al_acostarse.png",
+       "src": "img/fe_v3iuzgxce9vg_lamina_marea_vuelve_al_acostarse.jpg",
        "start": 60,
        "caption": "Acostado: vuelve de golpe"
       },
@@ -3246,7 +3246,7 @@
        "x": 33,
        "y": 64,
        "w": 32,
-       "src": "img/fe_v3iuzgxce9vg_lamina_rinon_recibe_mas_sangre_filtra.png",
+       "src": "img/fe_v3iuzgxce9vg_lamina_rinon_recibe_mas_sangre_filtra.jpg",
        "start": 96,
        "caption": "Al riñón le llega de más"
       },

@@ -50,7 +50,7 @@ const COMPNAME = { headline: "HookCaption", stat: "BigStatReveal", quote: "PullQ
   guardaesto: "GuardaEsto", freezezoom: "FreezeZoom", focuscards: "FocusCardsUro",
   looplock: "LoopLockUro", avatarkeyword: "AvatarKeyword", whiteboard: "FedWhiteboardUro" };
 
-const IMG = (n) => `img/fe_${SLUG}_${String(n).replace(/[^a-z0-9_]/gi, "_").toLowerCase()}.png`;
+const IMG = (n) => `img/fe_${SLUG}_${String(n).replace(/[^a-z0-9_]/gi, "_").toLowerCase()}.jpg`;
 const imgNames = new Set();
 const regImg = (n) => { if (!n) return null; const p = IMG(n); imgNames.add(p); return p; };
 

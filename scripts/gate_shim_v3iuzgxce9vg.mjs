@@ -34,7 +34,7 @@ const lineas = eventos.map((e) => e.line);
 
 const assets = [
   ...new Set([
-    ...BEATS.flatMap((b) => JSON.stringify(b).match(/img\/[a-z0-9_\-]+\.png/gi) || []),
+    ...BEATS.flatMap((b) => JSON.stringify(b).match(/img\/[a-z0-9_\-]+\.(?:png|jpg)/gi) || []),
     ...clips.map((c) => c.src),
   ]),
 ];
