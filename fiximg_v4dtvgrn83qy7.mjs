@@ -60,7 +60,28 @@ const out2 = out.map((ln) => {
   });
 });
 
-fs.writeFileSync(CUES, out2.join("\n"));
+// 4) IDENTIFICADORES sueltos donde va un valor. beatsheet emite `size={${b.size}}` asumiendo que
+//    `size` es numérico; los directores mandaron "lg"/"xl" y quedó `size={lg}` → ReferenceError en
+//    runtime (bundle OK, el frame explota). Traducimos los tamaños y entrecomillamos el resto.
+//    `{d}` es la duración y `{A}` es COLORS.accent: esos SÍ existen en el archivo.
+const TALLAS = { xs: 56, sm: 72, md: 92, lg: 110, xl: 130, xxl: 150 };
+const DEFINIDOS = new Set(["d", "A"]);
+let tallas = 0, comillas = 0, quitados = 0;
+const out3 = out2.map((ln) => {
+  if (!/^\s*\{ key: "/.test(ln)) return ln;
+  return ln
+    .replace(/\bsize=\{([a-z]+)\}/g, (all, v) => (TALLAS[v] ? (tallas++, `size={${TALLAS[v]}}`) : all))
+    .replace(/\baccent=\{(?:true|false)\}/g, () => (quitados++, ""))
+    .replace(/\b([a-zA-Z][a-zA-Z0-9]*)=\{([A-Za-z_][A-Za-z0-9_]*)\}/g, (all, prop, val) => {
+      if (DEFINIDOS.has(val) || val === "true" || val === "false") return all;
+      comillas++;
+      return `${prop}="${val}"`;
+    })
+    .replace(/\s{2,}/g, " ");
+});
+console.log(`tallas traducidas: ${tallas} · identificadores entrecomillados: ${comillas} · accent booleanos quitados: ${quitados}`);
+
+fs.writeFileSync(CUES, out3.join("\n"));
 console.log(`image auto-rellenada con la toma más cercana: ${rellenados} · props borrados por no haber imagen cerca: ${borrados} · props numéricos enllavados: ${enllavados}`);
 
 const final = out2.join("\n");
