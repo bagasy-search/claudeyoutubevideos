@@ -251,7 +251,19 @@ plan.forEach((cue, i) => {
         return { x: +w.x || 20 + k * 20, y: +w.y || 50, ...(im ? { image: im } : {}), ...(w.label ? { label: w.label } : {}), ...(w.sub ? { sub: w.sub } : {}), ...(w.num ? { num: String(w.num) } : {}) };
       });
       if (!wps.length) break;
-      pushKit(key, start, dur, `<JourneyCanvas durationInFrames={${D}} waypoints={${j(wps)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} dark />`);
+      // JourneyCanvas recorre los waypoints con un dwell de 2.4s cada uno y calcula la
+      // ventana del último como [inicio, finDelCue]. Si el cue no dura lo suficiente esa
+      // ventana queda invertida y el interpolate revienta el render entero
+      // (JourneyCanvas.tsx:159, "inputRange must be monotonically increasing").
+      // Con menos tiempo del que necesita se degrada a HouseInspectionH, que dice lo mismo
+      // — zonas marcadas de la casa — y sí resuelve en 3 segundos.
+      const needed = wps.length * 2.4 + 1.2;
+      if (dur + PREROLL >= needed) {
+        pushKit(key, start, dur, `<JourneyCanvas durationInFrames={${D}} waypoints={${j(wps)}}${cue.title ? ` title=${q(cue.title)}` : ""}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""} dark />`);
+      } else {
+        const zs = wps.map((w, k) => ({ label: w.label || w.sub || `Punto ${k + 1}`, x: w.x, y: w.y, hot: k < 2 }));
+        pushKit(key, start, dur, `<HouseInspectionH durationInFrames={${D}} zones={${j(zs)}}${cue.eyebrow ? ` eyebrow=${q(cue.eyebrow)}` : ""}${cue.title ? ` caption=${q(cue.title)}` : ""} />`);
+      }
       break;
     }
     // ── variantes propias del video (HumedadKit) ──
@@ -388,7 +400,21 @@ export const MainVqr: React.FC = () => {
 };
 `;
 
-fs.writeFileSync(`src/VideoEdit/Main_${SLUG}.tsx`, tsx);
+// Los cues pueden degradarse en tiempo de build (p.ej. journey→HouseInspectionH), así que
+// la lista de imports se recorta a lo que realmente quedó en el JSX; si no, queda un import
+// huérfano y tsc lo marca (TS6133).
+const used = (name) => new RegExp(`<${name}[\\s/>]`).test(cueLines);
+const KNOWN = ["RuleNumberScene", "StatBig", "ReframeList", "ChipsCluster", "AnnotatedImage", "KineticQuote",
+  "KineticHeadline", "CalloutMark", "TextCardReveal", "SplitList", "BarCompare", "OptionCompare", "ValueJourney",
+  "CrossSection", "ProcessSteps", "AgedDoc", "ImpactReveal", "JourneyCanvas", "PhotoChecklist", "RawShot",
+  "ThreeMethodsH", "SafetyGridH", "SelectiveCompareH", "CostCumulativeH", "HouseInspectionH", "WorldMapPinsH"];
+const dropped = KNOWN.filter((n) => !used(n));
+const tsxClean = tsx.split("\n").filter((line) => {
+  if (!line.startsWith("import") && !/^\s{2}[A-Z]\w+,$/.test(line)) return true;
+  return !dropped.some((n) => new RegExp(`\\b${n}\\b`).test(line) && !new RegExp(`\\b(${KNOWN.filter((k) => used(k)).join("|")})\\b`).test(line));
+}).join("\n");
+fs.writeFileSync(`src/VideoEdit/Main_${SLUG}.tsx`, tsxClean);
+if (dropped.length) console.log(`imports recortados (componentes no usados): ${dropped.join(", ")}`);
 
 const entry = `import "./index.css";
 import { registerRoot, Composition } from "remotion";

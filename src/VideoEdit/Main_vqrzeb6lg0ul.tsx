@@ -17,7 +17,6 @@ import { CrossSection } from "./scenes/CrossSection";
 import { ProcessSteps } from "./scenes/ProcessSteps";
 import { AgedDoc } from "./scenes/AgedDoc";
 import { ImpactReveal } from "./scenes/ImpactReveal";
-import { JourneyCanvas } from "./scenes/JourneyCanvas";
 import { Checklist as PhotoChecklist } from "./scenes/Checklist";
 import { RawShot } from "./scenes/RawShot";
 import { AvatarLayer } from "./scenes/AvatarLayer";
@@ -299,7 +298,7 @@ const CUES: Cue[] = [
   { key: "m230a", start: 759.66, dur: 1.79, el: (d: number) => <RawShot durationInFrames={d} src="img/dg_vqrzeb6lg0ul_cuatro_cajas_fotos.jpg" hue="red" kicker="Cuatro cajas de fotos familiares" kbPhase={0} kbBoost={1.15} /> },
   { key: "m230b", start: 761.45, dur: 1.79, el: (d: number) => <RawShot durationInFrames={d} src="img/dg_vqrzeb6lg0ul_cuatro_cajas_fotos_b.jpg" hue="red" kbPhase={1} /> },
   { key: "m231", start: 762.78, dur: 4.1, el: (d: number) => <ImpactReveal durationInFrames={d} image="img/dg_vqrzeb6lg0ul_fotos_bloque_ladrillo.jpg" impact="40 ANOS DE FOTOS. UN LADRILLO." setup="Se le pegaron entre si" impactAccent="danger" hitAt={0.5} /> },
-  { key: "m233", start: 769, dur: 4.16, el: (d: number) => <JourneyCanvas durationInFrames={d} waypoints={[{"x":14,"y":20,"label":"Rincon 1","sub":"Al piso","num":"1"},{"x":84,"y":20,"label":"Rincon 2","sub":"Al piso","num":"2"},{"x":14,"y":80,"label":"Rincon 3","sub":"Al piso","num":"3"},{"x":84,"y":80,"label":"Rincon 4","sub":"Al piso","num":"4"},{"x":50,"y":48,"label":"Repisa y centro","sub":"Dos mas","num":"5"}]} title="Ahi no puse un bote. Puse seis." eyebrow="Bodega de tres por tres" dark /> },
+  { key: "m233", start: 769, dur: 4.16, el: (d: number) => <HouseInspectionH durationInFrames={d} zones={[{"label":"Rincon 1","x":14,"y":20,"hot":true},{"label":"Rincon 2","x":84,"y":20,"hot":true},{"label":"Rincon 3","x":14,"y":80,"hot":false},{"label":"Rincon 4","x":84,"y":80,"hot":false},{"label":"Repisa y centro","x":50,"y":48,"hot":false}]} eyebrow="Bodega de tres por tres" caption="Ahi no puse un bote. Puse seis." /> },
   { key: "m234a", start: 773.16, dur: 1.62, el: (d: number) => <RawShot durationInFrames={d} src="img/dg_vqrzeb6lg0ul_seis_botes_bodega.jpg" hue="red" kicker="Uno en cada rincon, uno en la repisa y uno en el centro" kbPhase={0} kbBoost={1.15} /> },
   { key: "m234b", start: 774.78, dur: 1.62, el: (d: number) => <RawShot durationInFrames={d} src="img/dg_vqrzeb6lg0ul_seis_botes_bodega_b.jpg" hue="red" kbPhase={1} /> },
   { key: "m236", start: 779.7, dur: 2.36, el: (d: number) => <RawShot durationInFrames={d} src="img/dg_vqrzeb6lg0ul_closet_dos_metros_un_bote.jpg" hue="amber" kicker="Closet de dos metros cubicos: un bote" /> },
