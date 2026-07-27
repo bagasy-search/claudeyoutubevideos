@@ -35,13 +35,14 @@ export const BigStatReveal: React.FC<{
   durationInFrames,
   theme,
   // ⚠ DEFAULTS VACÍOS A PROPÓSITO — no los vuelvas a llenar con texto de ejemplo.
-  // Antes decían: eyebrow="El dato que nadie mira", prefix="$", support="se va por año en
-  // calefacción mal aislada", source="Fuente: ENARGAS 2025". Como son valores por defecto, el que
-  // llamaba al componente sólo pasaba `value` y `suffix` y el resto se colaba al video sin que
-  // nadie lo escribiera: salió al aire un "$3 costumbres" (el $ era de la plantilla) citando
-  // "Fuente: ENARGAS 2025" — el ente del gas argentino — en un video de salud. O sea, el
-  // componente FABRICABA una cita que nadie hizo. Un default vacío se ve como un hueco y se
-  // arregla; un default plausible se publica.
+  // Antes decían: eyebrow="El dato que nadie mira", value=12400, support="se va por
+  // año en calefacción mal aislada", y en otra copia prefix="$" y source="Fuente:
+  // ENARGAS 2025". Como son valores POR DEFECTO, quien llamaba al componente sólo
+  // pasaba `value` y `suffix` y el resto se colaba al video sin que nadie lo
+  // escribiera: salió al aire un "$3 costumbres" (el $ era de la plantilla) citando
+  // al ente del gas argentino en un video de SALUD. O sea, el componente FABRICABA
+  // una cita que nadie hizo. Un default vacío se ve como un hueco y se arregla;
+  // un default plausible se publica. (Este arreglo vivía sólo en la copia _fed6.)
   eyebrow = "",
   value = 0,
   prefix = "",
@@ -66,7 +67,7 @@ export const BigStatReveal: React.FC<{
             </div>
           )}
           <div style={{ position: "relative", filter: `drop-shadow(0 18px 34px ${t.color.shadow})` }}>
-            <Odo theme={t} value={value} prefix={prefix} suffix={suffix} size={210} color={t.color.text} at={8} dur={58} />
+            <Odo theme={t} value={value} prefix={prefix} suffix={suffix} size={210} at={8} dur={58} />
             {/* subrayado marcador que barre bajo la cifra */}
             <div
               style={{
@@ -83,12 +84,12 @@ export const BigStatReveal: React.FC<{
           </div>
           {support && (
             <div style={{ opacity: supS, transform: `translateY(${(1 - supS) * 18}px)`, marginTop: 52, maxWidth: 1100, textAlign: "center" }}>
-              <Support theme={t} size={42} color={t.color.textSoft}>{support}</Support>
+              <Support theme={t} size={42}>{support}</Support>
             </div>
           )}
           {source && (
             <div style={{ opacity: srcS, marginTop: 22 }}>
-              <Support theme={t} size={22} color={t.color.textDim}>{source}</Support>
+              <Support theme={t} size={22}>{source}</Support>
             </div>
           )}
         </div>
@@ -364,7 +365,7 @@ export const DonutPercent: React.FC<{
               />
             </svg>
             <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <Odo theme={t} value={value} suffix="%" size={128} color={t.color.text} at={12} dur={50} grouped={false} />
+              <Odo theme={t} value={value} suffix="%" size={128} at={12} dur={50} grouped={false} />
             </div>
           </div>
           <div style={{ maxWidth: 560 }}>
