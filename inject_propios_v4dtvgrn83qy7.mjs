@@ -44,8 +44,13 @@ s = out.join("\n");
 const bloque = MARK + "\n" + PROPIOS.map((p) =>
   `  { key: ${JSON.stringify(p.key)}, start: ${p.start}, dur: ${p.dur}, kind: "propio", el: (d) => ${p.el} },`
 ).join("\n") + "\n";
-// OVERLAYS termina con "];" — insertar antes del cierre del array
-const idx = s.lastIndexOf("];");
+// Insertar antes del cierre DEL ARRAY OVERLAYS. Con `lastIndexOf("];")` caía en el cierre de
+// SFX_CUES (que va después) y los 3 componentes quedaban FUERA del array → el bundle no compila.
+const ini = s.indexOf("export const OVERLAYS");
+if (ini < 0) { console.error("✖ no encontré el array OVERLAYS"); process.exit(1); }
+const rel = s.slice(ini).indexOf("\n];");
+if (rel < 0) { console.error("✖ no encontré el cierre de OVERLAYS"); process.exit(1); }
+const idx = ini + rel + 1; // justo antes del "];"
 s = s.slice(0, idx) + bloque + s.slice(idx);
 
 fs.writeFileSync(CUES, s);
