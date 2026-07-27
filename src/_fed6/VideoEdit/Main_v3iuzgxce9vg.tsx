@@ -47,7 +47,12 @@ const compDur = (b: any): number => {
   if (NOCAP.has(b.kind)) return Math.max(2, b.dur);
   const next = compBeats.filter((x: any) => x.start > b.start && !OVERLAY.has(x.kind)).sort((a: any, c: any) => a.start - c.start)[0];
   const room = next ? next.start - b.start - 0.1 : b.dur;
-  return Math.max(2, Math.min(b.dur, capOf(b.kind), room));
+  const d = Math.min(b.dur, capOf(b.kind), room);
+  // Si recortar por el tope deja un HUECO CHICO hasta el componente siguiente, ese hueco queda con
+  // la pantalla vacía = fondo teal pelado, que en el MP4 se ve NEGRO (lo cazó la cuadrícula en el
+  // frame 14184: sobraban 0.3s). El GAP-FILL de abajo sólo rellena huecos >0.2s, así que los
+  // micro-huecos hay que cerrarlos acá: el componente se queda hasta que entra el que sigue.
+  return Math.max(2, room - d > 0 && room - d < 1.2 ? room : d);
 };
 
 const FULL_AT: number[] = [];
@@ -102,8 +107,8 @@ function buildWindows(): AvatarWindow[] {
   for (const [s, e] of cov) { const l = merged[merged.length - 1]; if (l && s <= l[1] + 0.2) l[1] = Math.max(l[1], e); else merged.push([s, e]); }
   const gaps: [number, number][] = [];
   let prev = 0;
-  for (const [s, e] of merged) { if (s - prev > 0.6) gaps.push([prev, s]); prev = Math.max(prev, e); }
-  if (VIDEO_END - prev > 0.6) gaps.push([prev, VIDEO_END]);
+  for (const [s, e] of merged) { if (s - prev > 0.2) gaps.push([prev, s]); prev = Math.max(prev, e); }
+  if (VIDEO_END - prev > 0.2) gaps.push([prev, VIDEO_END]);
   const modeAt = (t: number): AvatarWindow["mode"] => { let m = out[0].mode; for (const w of out) { if (w.start <= t + 1e-6) m = w.mode; else break; } return m; };
   const inGap = (t: number) => t >= 7.6 && gaps.some(([s, e]) => t >= Math.max(s, 7.6) - 1e-6 && t < e - 1e-6);
   const bounds = new Set<number>(out.map((w) => w.start));
