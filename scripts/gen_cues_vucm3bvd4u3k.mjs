@@ -162,6 +162,15 @@ plan.forEach((p, i) => {
     }
     // inyectar imagen on-topic donde el kit tiraría a los defaults de public/med
     const props = { ...(p.props || {}) };
+    // ⛔ Los directores a veces escriben image/imageA/imageB como DESCRIPCIÓN de la
+    // foto ("real phone photo of an older man walking…") en vez de una ruta. Eso
+    // termina en <Img src="real phone photo…"> → asset roto y el frame NO renderiza
+    // (lo cazó la cuadrícula del auditor en b158). Todo lo que no parezca ruta de
+    // asset se descarta y se reemplaza por una imagen real de la biblioteca.
+    const esRuta = (v) => typeof v === "string" && /^(IMG:|img\/|broll\/|med\/|real\/)/.test(v);
+    for (const k of ["image", "imageA", "imageB"]) {
+      if (props[k] !== undefined && !esRuta(props[k])) delete props[k];
+    }
     if (CON_IMAGEN.has(comp) && !props.image) {
       const nm = imgCercana(p.sec);
       const e = nm && imgExt(nm);

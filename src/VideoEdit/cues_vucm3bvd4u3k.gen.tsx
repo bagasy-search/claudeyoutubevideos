@@ -599,7 +599,7 @@ export const CUES: Cue[] = [
       </AbsoluteFill>
   )},
   {id: 'b158', start: 747.22, dur: 3.44, avatar: false, node: (
-    <FedBeforeAfter variant='fold' totalF={103} kicker='El hormigueo por poca sangre' title='Empeora al moverte, calma al parar' hot={['Empeora al moverte']} labelA='Caminando: arde' labelB='Quieto: calma' imageA='real phone photo of an older man walking on a barrio sidewalk, mid stride, grimacing slightly, overcast light, grainy' imageB='real phone photo of the same older man standing still on the same sidewalk, shoulders dropped, relieved, overcast light, grainy' accent={A} mood='cool' />
+    <FedBeforeAfter variant='fold' totalF={103} kicker='El hormigueo por poca sangre' title='Empeora al moverte, calma al parar' hot={['Empeora al moverte']} labelA='Caminando: arde' labelB='Quieto: calma' imageA={staticFile('img/vucm3bvd4u3k_b150.jpg')} imageB={staticFile('img/vucm3bvd4u3k_b159.jpg')} accent={A} mood='cool' />
   )},
   {id: 'b159', start: 750.66, dur: 4.74, avatar: false, node: (
     <Sequence from={-12} layout='none'><FedFullShot variant='whip' totalF={166} src={staticFile('img/vucm3bvd4u3k_b159.jpg')} ken='in' accent={A} mood='warmdark' /></Sequence>
