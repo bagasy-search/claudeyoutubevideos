@@ -328,7 +328,8 @@ if (!process.env.FARM_NO_LOCK) {
 }
 
 // 3) disparar el workflow
-console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
+// El aviso de "disparando" va DESPUÉS de los guards de abajo: anunciarlo y después negarse deja un
+// log que se contradice, y quien lo lea (agente o vos) se queda con la primera línea.
 // ENTRY=src/index_<slug>.tsx → cada video rendea con SU entry y no comparte Root.tsx con los otros agentes
 const entry = process.env.ENTRY || "";
 // ── EL TARBALL TIENE QUE ESTAR DESCARGABLE ANTES DE ENCENDER UN RUNNER ───────────────────────
@@ -359,6 +360,28 @@ const entry = process.env.ENTRY || "";
     process.exit(1);
   }
 }
+// ── ¿YA HAY UN RENDER DE ESTE VIDEO CORRIENDO? ────────────────────────────────────────────────
+// El candado de más arriba NO alcanza: lo tiene el PROCESO farm.mjs, que termina apenas dispara
+// (más todavía con FARM_NOWAIT=1). Al morir el proceso, lockOwner() lo da por huérfano y el
+// siguiente lanzamiento pasa de largo — serializa el script, no el render. Por eso hoy el GUANTE
+// llegó a tener TRES corridas simultáneas del mismo video: 35 runners repitiendo el mismo trabajo,
+// y una de ellas partida en 10 chunks contra 20, o sea con pedazos de distinto tamaño que ni
+// siquiera se pueden combinar. La única fuente que sabe la verdad es GitHub.
+if (!process.env.FARM_ALLOW_DUP) {
+  try {
+    const vivas = JSON.parse(out(`gh run list --workflow=render.yml -L 20 --json databaseId,status,headBranch`))
+      .filter((r) => r.status !== "completed" && r.headBranch === `molino-${slug}`);
+    if (vivas.length) {
+      console.error(`✗ YA HAY ${vivas.length} RENDER(S) DE ESTE VIDEO CORRIENDO: ${vivas.map((r) => r.databaseId).join(", ")}`);
+      console.error(`  Lanzar otro no acelera nada: duplica el trabajo, se reparten los runners y los chunks de una`);
+      console.error(`  corrida no sirven para la otra si cambia el número de pedazos.`);
+      console.error(`  Esperá a que termine (gh run watch ${vivas[0].databaseId} --exit-status) o cancelala primero`);
+      console.error(`  (gh run cancel ${vivas[0].databaseId}). Si de verdad querés dos a la vez: FARM_ALLOW_DUP=1.`);
+      process.exit(1);
+    }
+  } catch { /* sin gh o sin red: no bloqueo el render por no poder consultar */ }
+}
+console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
 sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}`);
 
 // 4) esperar y descargar el mp4 final
