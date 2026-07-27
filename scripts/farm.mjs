@@ -11,7 +11,7 @@
 //   - estar parado en la raíz del repo
 //
 // Uso:
-//   node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks=20] [prefijoAssets]
+//   node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks=60] [prefijoAssets]
 //   ej:  node scripts/farm.mjs fly Fly 43380 20 fl
 // (prefijoAssets opcional:
 //   - "@archivo.txt"  → lista EXPLÍCITA de entradas (rutas relativas a public/, una por línea)
@@ -22,11 +22,16 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 
-// chunks por defecto = 20 (NO 24): el tope de jobs concurrentes de la cuenta free son 20. Con 24 chunks
-// entran 20 en la 1ª tanda y quedan 4 para una 2ª tanda con 16 slots ociosos → pagás el doble de tiempo
-// por 4 pedazos. Con 20 va todo en UNA tanda (~40% más rápido, misma calidad).
-// Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ techo_de_slots / videos_en_curso.
-const [slug, comp, total, chunks = "20", pref] = process.argv.slice(2);
+// CHUNKS por defecto = 60. Era 20 porque ese es el tope de jobs concurrentes de una cuenta free, y
+// pasarse significaba una 2ª tanda con casi todos los slots ociosos. Desde jul 2026 el repo vive en
+// la organización bagasy-search con plan Team → el tope es 60 y entra TODO en una sola tanda.
+// Por qué conviene partir más chico: los chunks salen MUY desparejos. En una corrida real duraron
+// 1, 5, 7, 1, 8 y 6 minutos, y el reloj lo marca el MÁS LENTO — dividir en 60 achica esa cola.
+// Lo que NO es gratis: cada job baja el tarball de assets entero (618 MB en un video medido) y paga
+// su propio checkout + install. 60 chunks son ~37 GB de transferencia contra ~12 GB con 20. Más
+// arriba de 60 el arranque pesaría más que el render, así que es el techo útil, no sólo el del plan.
+// Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ 60 / videos_en_curso.
+const [slug, comp, total, chunks = "60", pref] = process.argv.slice(2);
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
   process.exit(1);
