@@ -1,0 +1,6277 @@
+{
+ "video": "v4dtvgrn83qy7",
+ "avatar": "avatar_v4dtvgrn83qy7.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "v4dtvgrn83qy7_s_000",
+   "start": 0,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_000.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.04
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_001",
+   "start": 7.04,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_001.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.98
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_002",
+   "start": 13.02,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_002.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "ov_headline_2",
+   "start": 13.02,
+   "dur": 4.5,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Lo que nadie te dice",
+   "size": "lg",
+   "tokens": [
+    {
+     "t": "El truco no está"
+    },
+    {
+     "t": "en la vela,"
+    },
+    {
+     "t": "está en el"
+    },
+    {
+     "t": "BARRO",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_003",
+   "start": 16.42,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_003.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.22
+  },
+  {
+   "id": "ov_alertwipe_3",
+   "start": 16.42,
+   "dur": 4.5,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Cada invierno, la misma nota"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_004",
+   "start": 23.64,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_004.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.06
+  },
+  {
+   "id": "ov_riskclock_4",
+   "start": 23.64,
+   "dur": 6,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La cadena",
+   "title": "Cuarto cerrado por dentro",
+   "steps": [
+    {
+     "label": "Anafre encendido",
+     "note": "Se va acabando el oxígeno"
+    },
+    {
+     "label": "Llama sin aire",
+     "note": "Empieza el monóxido"
+    },
+    {
+     "label": "No huele, no se ve",
+     "note": "Nadie despierta"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_005",
+   "start": 30.7,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_005.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.86
+  },
+  {
+   "id": "ov_keyphrase_5",
+   "start": 30.7,
+   "dur": 5,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No los mató el fuego. Los mató no tener otra opción.",
+   "accent": "warm",
+   "fontSize": 66
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_006",
+   "start": 37.56,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_006.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.06
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_007",
+   "start": 44.62,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_007.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.62
+  },
+  {
+   "id": "ov_checklist_7",
+   "start": 44.62,
+   "dur": 5.5,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La otra manera",
+   "title": "Existe y nadie la cuenta",
+   "items": [
+    "No quema carbón",
+    "No cuesta casi nada",
+    "No calienta el aire del cuarto"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_008",
+   "start": 52.24,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_008.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_009",
+   "start": 59.24,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_009.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.66
+  },
+  {
+   "id": "ov_statslam_9",
+   "start": 59.24,
+   "dur": 4.5,
+   "kind": "statslam",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "80 W",
+   "caption": "Todo lo que da una vela",
+   "eyebrow": "El número real"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_010",
+   "start": 61.9,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_010.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "ov_phrasetag_10",
+   "start": 61.9,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Un foco de los de antes",
+   "pos": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_011",
+   "start": 65.12,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_011.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.98
+  },
+  {
+   "id": "ov_stat_11",
+   "start": 65.12,
+   "dur": 4.5,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 1500,
+   "suffix": " W",
+   "label": "Un calefactor eléctrico",
+   "eyebrow": "Lo que jala del enchufe"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_012",
+   "start": 71.1,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_012.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.14
+  },
+  {
+   "id": "ov_bars_12",
+   "start": 71.1,
+   "dur": 5.5,
+   "kind": "bars",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Casi 20 veces más",
+   "title": "Watts de calor",
+   "unit": " W",
+   "bars": [
+    {
+     "label": "Una vela",
+     "value": 80
+    },
+    {
+     "label": "Calefactor eléctrico",
+     "value": 1500
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_013",
+   "start": 78.24,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_013.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08
+  },
+  {
+   "id": "ov_headline_13",
+   "start": 78.24,
+   "dur": 4,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "El aire caliente",
+   "size": "xl",
+   "tokens": [
+    {
+     "t": "Hace una"
+    },
+    {
+     "t": "sola cosa:"
+    },
+    {
+     "t": "SUBE",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_014",
+   "start": 82.32,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_014.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.18
+  },
+  {
+   "id": "ov_callout_14",
+   "start": 82.32,
+   "dur": 5,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "2.5 m",
+   "eyebrow": "La capa tibia",
+   "caption": "Justo donde no vive nadie"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_015",
+   "start": 89.5,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_015.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_016",
+   "start": 93.94,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_016.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.58
+  },
+  {
+   "id": "ov_impact_16",
+   "start": 93.94,
+   "dur": 5,
+   "kind": "impact",
+   "overlay": true,
+   "hue": "amber",
+   "setup": "La vela sola manda todo hacia arriba",
+   "impact": "Una chimenea de un centímetro",
+   "hitAt": 1.2
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_017",
+   "start": 100.52,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_017.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.56
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_018",
+   "start": 103.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_018.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.42
+  },
+  {
+   "id": "ov_massheater_18",
+   "start": 103.08,
+   "dur": 6,
+   "kind": "massheater",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "El principio",
+   "title": "Fuego, masa, calor",
+   "mode": "radiant",
+   "fire": "Vela 80 W",
+   "mass": "Barro",
+   "out": "Infrarrojo",
+   "coolTag": "Sigue soltando 30-45 min",
+   "effTag": "Nada se multiplica"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_019",
+   "start": 109.5,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_019.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.04
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_020",
+   "start": 114.54,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_020.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.92
+  },
+  {
+   "id": "ov_keyphrase_20",
+   "start": 114.54,
+   "dur": 4.5,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El infrarrojo no sube ni baja",
+   "accent": "warm",
+   "fontSize": 72
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_021",
+   "start": 120.46,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_021.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_022",
+   "start": 124.32,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_022.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72
+  },
+  {
+   "id": "ov_vs_22",
+   "start": 124.32,
+   "dur": 6,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Dos maneras de calentar",
+   "title": "Aire contra radiación",
+   "left": {
+    "label": "Convección",
+    "note": "Calienta el aire y se va al techo"
+   },
+   "right": {
+    "label": "Radiación",
+    "note": "Viaja recto y te pega en la piel"
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_023",
+   "start": 127.04,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_023.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.68
+  },
+  {
+   "id": "ov_radsky_23",
+   "start": 127.04,
+   "dur": 6,
+   "kind": "radsky",
+   "overlay": true,
+   "hue": "amber",
+   "airTemp": 5
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_024",
+   "start": 134.72,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_024.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.76
+  },
+  {
+   "id": "ov_twomoments_24",
+   "start": 134.72,
+   "dur": 5.5,
+   "kind": "twomoments",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Lo mismo que hace el sol",
+   "leftLabel": "5° afuera",
+   "leftSub": "El aire no cambió ni un grado",
+   "rightLabel": "Calor en la cara",
+   "rightSub": "Lo que llegó fue radiación"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_025",
+   "start": 140.48,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_025.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "ov_depthtext_25",
+   "start": 140.48,
+   "dur": 5,
+   "kind": "depthtext",
+   "overlay": true,
+   "hue": "amber",
+   "back": "SOL",
+   "fore": "Un pedacito de sol",
+   "title": "Arriba de tu mesa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_026",
+   "start": 144.96,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_026.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "ov_keyphrase_26",
+   "start": 144.96,
+   "dur": 5,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El aire caliente se va. La radiación llega.",
+   "accent": "warm",
+   "fontSize": 64
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_027",
+   "start": 147.74,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_027.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76
+  },
+  {
+   "id": "ov_lielist_27",
+   "start": 147.74,
+   "dur": 5.5,
+   "kind": "lielist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que la maceta NO hace",
+   "items": [
+    "Multiplicar el calor de la vela",
+    "Sacar watts de la nada",
+    "Calentar el cuarto entero"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_028",
+   "start": 150.5,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_028.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "ov_metertag_28",
+   "start": 150.5,
+   "dur": 5,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Calor que sí te llega",
+   "fromPct": 15,
+   "toPct": 85,
+   "eyebrow": "No multiplica: deja de desperdiciar",
+   "corner": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_029",
+   "start": 155.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_029.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.4
+  },
+  {
+   "id": "ov_rollnum_29",
+   "start": 155.08,
+   "dur": 5,
+   "kind": "rollnum",
+   "overlay": true,
+   "hue": "amber",
+   "value": 80,
+   "suffix": " W",
+   "label": "Los mismos 80 W, ahora en tu pecho",
+   "eyebrow": "Nada se inventa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_030",
+   "start": 160.48,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_030.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.74
+  },
+  {
+   "id": "ov_verified_30",
+   "start": 160.48,
+   "dur": 4.5,
+   "kind": "verified",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Medido tres noches seguidas",
+   "angle": -8
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_031",
+   "start": 167.22,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_031.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "ov_splitlist_31",
+   "start": 167.22,
+   "dur": 4.5,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que NO lleva",
+   "items": [
+    "Ni un cable",
+    "Ni pilas",
+    "Ni instalación"
+   ],
+   "cross": true
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_032",
+   "start": 171.32,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_032.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.38
+  },
+  {
+   "id": "ov_twomoments_32",
+   "start": 171.32,
+   "dur": 6,
+   "kind": "twomoments",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Dos versiones",
+   "leftLabel": "Con llama",
+   "leftSub": "Para cuando estás despierto",
+   "rightLabel": "Sin llama",
+   "rightSub": "Esa sí se queda mientras duermes"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_033",
+   "start": 178.7,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_033.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_034",
+   "start": 182.44,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_034.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.74
+  },
+  {
+   "id": "ov_alertwipe_34",
+   "start": 182.44,
+   "dur": 4.5,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El error que casi todos cometen la primera vez"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_035",
+   "start": 188.18,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_035.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_036",
+   "start": 192.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_036.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.7
+  },
+  {
+   "id": "ov_impstamp_36",
+   "start": 192.08,
+   "dur": 4,
+   "kind": "impstamp",
+   "overlay": true,
+   "hue": "amber",
+   "word": "REVIENTA"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_037",
+   "start": 196.78,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_037.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9
+  },
+  {
+   "id": "ov_callout_37",
+   "start": 196.78,
+   "dur": 5,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "8 h",
+   "eyebrow": "Todos los días",
+   "caption": "Sentado en esa silla con los pies helados"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_038",
+   "start": 200.68,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_038.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_039",
+   "start": 205.88,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_039.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.82
+  },
+  {
+   "id": "ov_chapter_39",
+   "start": 205.88,
+   "dur": 4.5,
+   "kind": "chapter",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Vamos a armarlo",
+   "num": "2"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_040",
+   "start": 208.7,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_040.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "ov_tool_40",
+   "start": 208.7,
+   "dur": 5.5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "nameEs": "Dos macetas de barro",
+   "how": "Una grande y una mediana, de distinto diámetro",
+   "number": 1,
+   "eyebrow": "Materiales"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_041",
+   "start": 213.24,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_041.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7
+  },
+  {
+   "id": "ov_stattag_41",
+   "start": 213.24,
+   "dur": 4.5,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 1,
+   "prefix": "≈ ",
+   "suffix": " café",
+   "label": "Lo que cuesta la maceta de vivero",
+   "eyebrow": "Barro común",
+   "corner": "tr"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_042",
+   "start": 220.24,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_042.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.02
+  },
+  {
+   "id": "ov_tool_42",
+   "start": 220.24,
+   "dur": 5.5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "nameEs": "Varilla roscada",
+   "how": "Con sus tuercas y sus rondanas. Un tornillo largo hace el mismo trabajo",
+   "number": 2,
+   "eyebrow": "Materiales"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_043",
+   "start": 227.26,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_043.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7
+  },
+  {
+   "id": "ov_checklist_43",
+   "start": 227.26,
+   "dur": 6,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Una base que no se queme",
+   "items": [
+    "Plato de barro",
+    "Dos ladrillos parados",
+    "Charola de metal"
+   ],
+   "eyebrow": "Escoge una"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_044",
+   "start": 234.26,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_044.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "ov_tool_44",
+   "start": 234.26,
+   "dur": 5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "nameEs": "Las velas",
+   "how": "De las chicas, en su vasito de metal",
+   "number": 3,
+   "eyebrow": "Materiales"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_045",
+   "start": 237.3,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_045.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.16
+  },
+  {
+   "id": "ov_phrasetag_45",
+   "start": 237.3,
+   "dur": 5,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Diámetros y largo exactos: abajo en la descripción",
+   "pos": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_046",
+   "start": 244.46,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_046.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76
+  },
+  {
+   "id": "ov_steptrack_46",
+   "start": 244.46,
+   "dur": 4.5,
+   "kind": "steptrack",
+   "overlay": true,
+   "hue": "amber",
+   "step": 1,
+   "total": 5,
+   "label": "Empezamos por abajo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_047",
+   "start": 247.22,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_047.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "ov_annotated_47",
+   "start": 247.22,
+   "dur": 6,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "annotations": [
+    {
+     "x": 50,
+     "y": 58,
+     "label": "El hoyo del fondo"
+    },
+    {
+     "x": 52,
+     "y": 22,
+     "label": "Por aquí entra la varilla"
+    }
+   ],
+   "eyebrow": "Paso 1",
+   "caption": "La varilla atraviesa el fondo de la maceta grande"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_048",
+   "start": 251.62,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_048.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.6
+  },
+  {
+   "id": "ov_process_48",
+   "start": 251.62,
+   "dur": 6.5,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Rondana arriba",
+     "note": "Apoyada en el fondo"
+    },
+    {
+     "title": "Tuerca arriba",
+     "note": "Aprieta a mano"
+    },
+    {
+     "title": "Rondana y tuerca abajo",
+     "note": "Del lado de afuera"
+    }
+   ],
+   "eyebrow": "Paso 2",
+   "title": "El sándwich de tuercas"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_049",
+   "start": 257.22,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_049.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.38
+  },
+  {
+   "id": "ov_keyphrase_49",
+   "start": 257.22,
+   "dur": 5,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No sostienen nada. Tapan el hoyo."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_050",
+   "start": 262.6,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_050.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "ov_mistake_50",
+   "start": 262.6,
+   "dur": 6,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": 1,
+   "title": "Dejar el hoyo del fondo abierto",
+   "desc": "Es el paso que casi todo el mundo se salta",
+   "eyebrow": "Ojo aquí"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_051",
+   "start": 265.52,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_051.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.28
+  },
+  {
+   "id": "ov_riskclock_51",
+   "start": 265.52,
+   "dur": 6.5,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "steps": [
+    {
+     "label": "Hoyo abierto",
+     "note": "El aire caliente se va derecho por el centro"
+    },
+    {
+     "label": "Chorro hacia arriba",
+     "note": "Ni toca las paredes de barro"
+    },
+    {
+     "label": "Todo al techo",
+     "note": "Y tú sigues con frío abajo"
+    }
+   ],
+   "eyebrow": "Lo que pasa",
+   "title": "Si dejas el hoyo destapado"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_052",
+   "start": 272.8,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_052.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.26
+  },
+  {
+   "id": "ov_vs_52",
+   "start": 272.8,
+   "dur": 6.5,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Hoyo abierto",
+    "note": "Chimenea: el calor se va al techo"
+   },
+   "right": {
+    "label": "Hoyo tapado",
+    "note": "Radiador: el barro te lo devuelve a ti"
+   },
+   "eyebrow": "Misma maceta",
+   "title": "Chimenea o radiador"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_053",
+   "start": 279.06,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_053.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_054",
+   "start": 282.2,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_054.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.48
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_055",
+   "start": 289.68,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_055.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.98
+  },
+  {
+   "id": "ov_annotated_55",
+   "start": 289.68,
+   "dur": 6,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "annotations": [
+    {
+     "x": 50,
+     "y": 48,
+     "label": "Las tuercas hacen el escalón"
+    },
+    {
+     "x": 24,
+     "y": 34,
+     "label": "Maceta de afuera"
+    },
+    {
+     "x": 62,
+     "y": 66,
+     "label": "Maceta de adentro"
+    }
+   ],
+   "eyebrow": "Paso 4",
+   "caption": "Adentro, pero no pegada"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_056",
+   "start": 294.66,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_056.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "ov_cross_56",
+   "start": 294.66,
+   "dur": 7,
+   "kind": "cross",
+   "overlay": true,
+   "hue": "amber",
+   "layers": [
+    {
+     "label": "Maceta de afuera",
+     "note": "La que te irradia a ti"
+    },
+    {
+     "label": "Un dedo de aire",
+     "note": "La cámara entre pared y pared"
+    },
+    {
+     "label": "Maceta de adentro",
+     "note": "La que recibe la llama"
+    },
+    {
+     "label": "La vela",
+     "note": "Abajo, 70-85 W de calor"
+    }
+   ],
+   "eyebrow": "Corte",
+   "title": "Cómo queda por dentro",
+   "marker": "Un dedo de aire"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_057",
+   "start": 299.3,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_057.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "ov_massheater_57",
+   "start": 299.3,
+   "dur": 6.5,
+   "kind": "massheater",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Cómo funciona",
+   "title": "Una recibe, la otra te irradia",
+   "mode": "radiate",
+   "fire": "La vela",
+   "mass": "El barro",
+   "out": "Calor directo a tu piel",
+   "coolTag": "Sigue soltando 30-45 min",
+   "effTag": "70-85 W por vela"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_058",
+   "start": 303.44,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_058.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_059",
+   "start": 306.88,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_059.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "ov_rule_59",
+   "start": 306.88,
+   "dur": 5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 1,
+   "title": "La punta de la llama no toca el barro",
+   "label": "Regla de armado"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_060",
+   "start": 310.18,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_060.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "ov_vs_60",
+   "start": 310.18,
+   "dur": 5.5,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la llama",
+   "title": "Cómo debe verse el fuego",
+   "left": {
+    "label": "Llama sana",
+    "note": "Punta libre, azul abajo, sin humo"
+   },
+   "right": {
+    "label": "Llama ahogada",
+    "note": "Aplastada, humeante, deja tizne negro"
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_061",
+   "start": 312.72,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_061.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "ov_cross_61",
+   "start": 312.72,
+   "dur": 6.5,
+   "kind": "cross",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "el corte",
+   "title": "Así va armado por dentro",
+   "marker": "Un dedo de aire",
+   "layers": [
+    {
+     "label": "Maceta de afuera",
+     "note": "La que te devuelve el calor a la piel"
+    },
+    {
+     "label": "Cámara de aire",
+     "note": "El hueco entre las dos paredes"
+    },
+    {
+     "label": "Maceta de adentro",
+     "note": "Recibe el golpe de la llama"
+    },
+    {
+     "label": "Punta de la llama",
+     "note": "Un dedo abajo del barro"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_062",
+   "start": 316.4,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_062.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "ov_annotated_62",
+   "start": 316.4,
+   "dur": 5.5,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la medida",
+   "caption": "Ni pegada ni a media cuadra",
+   "annotations": [
+    {
+     "x": 50,
+     "y": 26,
+     "label": "Fondo del barro"
+    },
+    {
+     "x": 50,
+     "y": 46,
+     "label": "Un dedo de aire"
+    },
+    {
+     "x": 50,
+     "y": 66,
+     "label": "Punta de la llama"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_063",
+   "start": 319.2,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_063.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.88
+  },
+  {
+   "id": "ov_statpills_63",
+   "start": 319.2,
+   "dur": 5.5,
+   "kind": "statpills",
+   "overlay": true,
+   "hue": "amber",
+   "slider": true,
+   "pills": [
+    {
+     "k": "Velas",
+     "v": "3 o 4"
+    },
+    {
+     "k": "Van paradas en",
+     "v": "Charola de metal"
+    },
+    {
+     "k": "Calor real",
+     "v": "240 a 320 W"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_064",
+   "start": 324.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_064.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "ov_heatslow_64",
+   "start": 324.08,
+   "dur": 5,
+   "kind": "heatslow",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El barro se carga despacio y suelta despacio"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_065",
+   "start": 328.98,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_065.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "ov_stattag_65",
+   "start": 328.98,
+   "dur": 4.5,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 100,
+   "prefix": "+",
+   "suffix": " °C",
+   "label": "en la superficie del barro",
+   "eyebrow": "ojo con esto",
+   "corner": "tr"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_066",
+   "start": 332.74,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_066.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "ov_alertwipe_66",
+   "start": 332.74,
+   "dur": 4,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "NUNCA directo sobre madera"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_067",
+   "start": 335.66,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_067.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "ov_splitlist_67",
+   "start": 335.66,
+   "dur": 5.5,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que NO va abajo",
+   "cross": true,
+   "items": [
+    "Mesa de madera pelada",
+    "Mantel de tela",
+    "Cualquier plástico",
+    "Periódico o cartón"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_068",
+   "start": 339.84,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_068.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.92
+  },
+  {
+   "id": "ov_checklist_68",
+   "start": 339.84,
+   "dur": 6,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la base",
+   "title": "Bases que sí aguantan",
+   "items": [
+    "Un plato de barro",
+    "Dos ladrillos",
+    "Una parrilla de horno con aire por debajo",
+    "Una loseta o piedra"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_069",
+   "start": 344.76,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_069.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "ov_tool_69",
+   "start": 344.76,
+   "dur": 5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "number": 6,
+   "nameEs": "Charola de metal",
+   "how": "Junta la cera derretida y detiene la vela que se cae",
+   "eyebrow": "material"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_070",
+   "start": 348.06,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_070.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
+   "id": "ov_mistake_70",
+   "start": 348.06,
+   "dur": 5,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": 5,
+   "eyebrow": "el error",
+   "title": "Velas sueltas en la mesa",
+   "desc": "La cera se escurre y una vela sola se cae de lado"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_071",
+   "start": 351.98,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_071.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "ov_phrasetag_71",
+   "start": 351.98,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Todo el fuego, sobre metal",
+   "pos": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_072",
+   "start": 354.88,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_072.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96
+  },
+  {
+   "id": "ov_steptrack_72",
+   "start": 354.88,
+   "dur": 4.5,
+   "kind": "steptrack",
+   "overlay": true,
+   "hue": "amber",
+   "step": 1,
+   "total": 2,
+   "label": "Una vela sola, desnuda"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_073",
+   "start": 358.84,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_073.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_074",
+   "start": 363.18,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_074.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "ov_callout_74",
+   "start": 363.18,
+   "dur": 5,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Casi nada",
+   "eyebrow": "mano de costado",
+   "caption": "El calor de la vela sola se va derechito al techo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_075",
+   "start": 367.68,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_075.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.48
+  },
+  {
+   "id": "ov_twomoments_75",
+   "start": 367.68,
+   "dur": 6,
+   "kind": "twomoments",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la prueba de la mano",
+   "leftLabel": "Vela sola",
+   "leftSub": "De costado no sientes nada",
+   "rightLabel": "Con la maceta cargada",
+   "rightSub": "Te pega en la piel al instante"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_076",
+   "start": 373.16,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_076.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "ov_radsky_76",
+   "start": 373.16,
+   "dur": 5,
+   "kind": "radsky",
+   "overlay": true,
+   "hue": "amber",
+   "airTemp": 8
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_077",
+   "start": 376.66,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_077.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_078",
+   "start": 379.76,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_078.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "ov_keyphrase_78",
+   "start": 379.76,
+   "dur": 5,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Misma vela. Otro reparto del calor.",
+   "accent": "#c9702f"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_079",
+   "start": 384,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_079.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.36
+  },
+  {
+   "id": "ov_massheater_79",
+   "start": 384,
+   "dur": 6.5,
+   "kind": "massheater",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "lo que pasa adentro",
+   "title": "Fuego, barro y tú",
+   "mode": "radiant",
+   "fire": "3 velas",
+   "mass": "Barro grueso",
+   "out": "Calor que te llega a la piel",
+   "coolTag": "Sigue soltando 30 a 45 min",
+   "effTag": "No multiplica nada, lo reparte"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_080",
+   "start": 391.36,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_080.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.54
+  },
+  {
+   "id": "ov_bars_80",
+   "start": 391.36,
+   "dur": 5.5,
+   "kind": "bars",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "masa térmica",
+   "title": "Cuánto calor siguen soltando ya apagado",
+   "unit": "minutos",
+   "bars": [
+    {
+     "label": "Lata de metal",
+     "value": 3
+    },
+    {
+     "label": "Barro grueso",
+     "value": 40
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_081",
+   "start": 396.9,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_081.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "ov_metertag_81",
+   "start": 396.9,
+   "dur": 5,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "El barro llegando a régimen",
+   "fromPct": 0,
+   "toPct": 100,
+   "eyebrow": "20 a 30 minutos",
+   "corner": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_082",
+   "start": 400.34,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_082.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76
+  },
+  {
+   "id": "ov_odometer_82",
+   "start": 400.34,
+   "dur": 4.5,
+   "kind": "odometer",
+   "overlay": true,
+   "hue": "amber",
+   "to": 10,
+   "suffix": " min",
+   "eyebrow": "paciencia",
+   "label": "Antes de eso vas a creer que no jala"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_083",
+   "start": 403.1,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_083.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.64
+  },
+  {
+   "id": "ov_rule_83",
+   "start": 403.1,
+   "dur": 5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 5,
+   "title": "Préndelo antes de sentarte",
+   "label": "Media hora antes, no cuando ya tienes frío"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_084",
+   "start": 405.74,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_084.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_085",
+   "start": 409.42,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_085.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "ov_chapter_85",
+   "start": 409.42,
+   "dur": 4.5,
+   "kind": "chapter",
+   "overlay": true,
+   "hue": "amber",
+   "num": 4,
+   "title": "El enemigo no es el frío"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_086",
+   "start": 412.26,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_086.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.82
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_087",
+   "start": 415.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_087.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26
+  },
+  {
+   "id": "ov_lielist_87",
+   "start": 415.08,
+   "dur": 6,
+   "kind": "lielist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que prometían esos videos",
+   "items": [
+    "Calienta toda la casa",
+    "Con cuatro velas basta",
+    "Adiós al recibo de la luz",
+    "Reemplaza al calefactor"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_088",
+   "start": 419.34,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_088.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_089",
+   "start": 422.74,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_089.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "ov_impstamp_89",
+   "start": 422.74,
+   "dur": 4,
+   "kind": "impstamp",
+   "overlay": true,
+   "hue": "amber",
+   "word": "IMPOSIBLE"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_090",
+   "start": 425.66,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_090.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "ov_impstamp_90",
+   "start": 425.66,
+   "dur": 4,
+   "kind": "impstamp",
+   "overlay": true,
+   "hue": "amber",
+   "word": "FRAUDE"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_091",
+   "start": 429.8,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_091.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "ov_keyphrase_91",
+   "start": 429.8,
+   "dur": 4,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Nada crea energía de la nada",
+   "accent": "energía",
+   "fontSize": 76
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_092",
+   "start": 433.96,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_092.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "ov_lielist_92",
+   "start": 433.96,
+   "dur": 5,
+   "kind": "lielist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que este cacharro NO hace",
+   "items": [
+    "Multiplicar el calor",
+    "Crear energía",
+    "Calentar la casa entera"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_093",
+   "start": 437.7,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_093.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.78
+  },
+  {
+   "id": "ov_callout_93",
+   "start": 437.7,
+   "dur": 4.5,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Al techo",
+   "eyebrow": "la vela sola",
+   "caption": "El aire caliente sube y ahí se queda"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_094",
+   "start": 442.48,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_094.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "ov_radsky_94",
+   "start": 442.48,
+   "dur": 5,
+   "kind": "radsky",
+   "overlay": true,
+   "hue": "amber",
+   "airTemp": 12
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_095",
+   "start": 446.98,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_095.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.12
+  },
+  {
+   "id": "ov_chapter_95",
+   "start": 446.98,
+   "dur": 4,
+   "kind": "chapter",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El segundo enemigo",
+   "num": 2
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_096",
+   "start": 451.1,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_096.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.94
+  },
+  {
+   "id": "ov_stat_96",
+   "start": 451.1,
+   "dur": 4.5,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 1500,
+   "suffix": " W",
+   "label": "lo que jala un calefactor eléctrico común",
+   "eyebrow": "el número de verdad"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_097",
+   "start": 455.04,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_097.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_098",
+   "start": 457.66,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_098.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "ov_bars_98",
+   "start": 457.66,
+   "dur": 6,
+   "kind": "bars",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Cuánto jala cada cosa",
+   "eyebrow": "la misma liga",
+   "unit": " W",
+   "bars": [
+    {
+     "label": "Una vela",
+     "value": 80
+    },
+    {
+     "label": "Plancha",
+     "value": 1200
+    },
+    {
+     "label": "Horno eléctrico",
+     "value": 1500
+    },
+    {
+     "label": "Calefactor",
+     "value": 1500
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_099",
+   "start": 460.86,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_099.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.48
+  },
+  {
+   "id": "ov_twomoments_99",
+   "start": 460.86,
+   "dur": 5,
+   "kind": "twomoments",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "el mismo consumo",
+   "leftLabel": "20 minutos",
+   "leftSub": "lo que dura la plancha",
+   "rightLabel": "Toda la noche",
+   "rightSub": "lo que dura el calefactor"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_100",
+   "start": 466.34,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_100.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.74
+  },
+  {
+   "id": "ov_doorcold_100",
+   "start": 466.34,
+   "dur": 5,
+   "kind": "doorcold",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Se va por abajo de la puerta"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_101",
+   "start": 471.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_101.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.56
+  },
+  {
+   "id": "ov_alertwipe_101",
+   "start": 471.08,
+   "dur": 4,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Estás pagando por calentar la calle"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_102",
+   "start": 473.64,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_102.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_103",
+   "start": 476.26,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_103.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7
+  },
+  {
+   "id": "ov_headline_103",
+   "start": 476.26,
+   "dur": 4.5,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la pregunta que más me hacen",
+   "size": 82,
+   "tokens": [
+    {
+     "t": "¿Por qué "
+    },
+    {
+     "t": "nadie",
+     "hl": true
+    },
+    {
+     "t": " te lo vende?"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_104",
+   "start": 478.96,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_104.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "ov_phrasetag_104",
+   "start": 478.96,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No hay nada que patentar",
+   "pos": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_105",
+   "start": 481.5,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_105.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "ov_struckcards_105",
+   "start": 481.5,
+   "dur": 5.5,
+   "kind": "struckcards",
+   "overlay": true,
+   "hue": "amber",
+   "items": [
+    {
+     "title": "Patente",
+     "note": "Son dos macetas de barro"
+    },
+    {
+     "title": "Refacciones",
+     "note": "No hay nada que pedir"
+    },
+    {
+     "title": "Consumo",
+     "note": "Ni un watt de la red"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_106",
+   "start": 485.88,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_106.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_107",
+   "start": 488.64,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_107.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "ov_quote_107",
+   "start": 488.64,
+   "dur": 5,
+   "kind": "quote",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Nadie te vende lo que se paga una sola vez.",
+   "eyebrow": "el negocio del calor"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_108",
+   "start": 492.84,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_108.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8
+  },
+  {
+   "id": "ov_vs_108",
+   "start": 492.84,
+   "dur": 6,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la comparación honesta",
+   "title": "Cada quien gana en lo suyo",
+   "left": {
+    "label": "Calefactor eléctrico",
+    "note": "1000 a 1500 watts, calienta rápido"
+   },
+   "right": {
+    "label": "Dos macetas de barro",
+    "note": "70 a 85 watts de una vela"
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_109",
+   "start": 496.64,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_109.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3
+  },
+  {
+   "id": "ov_metertag_109",
+   "start": 496.64,
+   "dur": 4,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Potencia bruta",
+   "fromPct": 8,
+   "toPct": 96,
+   "eyebrow": "aquí gana el eléctrico",
+   "corner": "tr"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_110",
+   "start": 498.94,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_110.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_111",
+   "start": 501.72,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_111.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.76
+  },
+  {
+   "id": "ov_statpills_111",
+   "start": 501.72,
+   "dur": 5,
+   "kind": "statpills",
+   "overlay": true,
+   "hue": "amber",
+   "slider": true,
+   "pills": [
+    {
+     "k": "Costo",
+     "v": "Casi cero"
+    },
+    {
+     "k": "Calienta",
+     "v": "A la persona"
+    },
+    {
+     "k": "No calienta",
+     "v": "El aire del cuarto"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_112",
+   "start": 507.48,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_112.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84
+  },
+  {
+   "id": "ov_impact_112",
+   "start": 507.48,
+   "dur": 4.5,
+   "kind": "impact",
+   "overlay": true,
+   "hue": "amber",
+   "setup": "Se va la luz en la noche más fría",
+   "impact": "El eléctrico es un adorno",
+   "hitAt": 1.8
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_113",
+   "start": 512.32,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_113.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "ov_heatslow_113",
+   "start": 512.32,
+   "dur": 5.5,
+   "kind": "heatslow",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El barro sigue soltando calor 30 a 45 minutos"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_114",
+   "start": 515.5,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_114.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_depthtext_114",
+   "start": 515.5,
+   "dur": 4.5,
+   "kind": "depthtext",
+   "overlay": true,
+   "hue": "amber",
+   "back": "CASA",
+   "fore": "ZONA",
+   "title": "No calientas la casa. Calientas tu zona."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_115",
+   "start": 518.88,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_115.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_rule_115",
+   "start": 518.88,
+   "dur": 4.5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 1,
+   "title": "A la altura de tu cuerpo",
+   "label": "dónde ponerlo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_116",
+   "start": 522.26,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_116.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "ov_annotated_116",
+   "start": 522.26,
+   "dur": 4.5,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "sobre la mesa",
+   "caption": "Del lado donde estás tú",
+   "annotations": [
+    {
+     "x": 32,
+     "y": 58,
+     "label": "Aquí va el calefactor"
+    },
+    {
+     "x": 72,
+     "y": 62,
+     "label": "Aquí estás tú"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_117",
+   "start": 525.16,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_117.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.02
+  },
+  {
+   "id": "ov_checklist_117",
+   "start": 525.16,
+   "dur": 6,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "te lo dejo anotado abajo",
+   "title": "En la descripción",
+   "items": [
+    "La distancia exacta",
+    "La altura al cuerpo",
+    "De qué lado ponerlo"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_118",
+   "start": 532.18,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_118.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84
+  },
+  {
+   "id": "ov_floatcards_118",
+   "start": 532.18,
+   "dur": 5,
+   "kind": "floatcards",
+   "overlay": true,
+   "hue": "amber",
+   "cards": [
+    {
+     "title": "Sí sirve",
+     "note": "El sillón donde ves la tele"
+    },
+    {
+     "title": "No sirve",
+     "note": "Calentar la casa entera"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_119",
+   "start": 537.02,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_119.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "ov_signature_119",
+   "start": 537.02,
+   "dur": 5,
+   "kind": "signature",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la clave",
+   "lines": [
+    "Deja de pedirle la casa.",
+    "Pídele tu zona.",
+    "Ahí empieza a funcionarte."
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_120",
+   "start": 540.42,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_120.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_coldcal_120",
+   "start": 540.42,
+   "dur": 4.5,
+   "kind": "coldcal",
+   "overlay": true,
+   "hue": "amber"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_121",
+   "start": 543.8,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_121.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.2
+  },
+  {
+   "id": "ov_phrasetag_121",
+   "start": 543.8,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Pruebalo de dia, sin apuro",
+   "pos": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_122",
+   "start": 550,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_122.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_123",
+   "start": 553.26,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_123.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48
+  },
+  {
+   "id": "ov_metertag_123",
+   "start": 553.26,
+   "dur": 4.5,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Macetas de barro en la tlapaleria",
+   "fromPct": 85,
+   "toPct": 12,
+   "eyebrow": "Cuando entra el frio",
+   "corner": "tr"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_124",
+   "start": 556.74,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_124.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.48
+  },
+  {
+   "id": "ov_struckcards_124",
+   "start": 556.74,
+   "dur": 5,
+   "kind": "struckcards",
+   "overlay": true,
+   "hue": "amber",
+   "items": [
+    {
+     "title": "Brasero adentro del cuarto",
+     "note": "Se come el oxigeno del aire"
+    },
+    {
+     "title": "Anafre para dormir",
+     "note": "Llama abierta toda la noche"
+    },
+    {
+     "title": "Cuarto bien sellado",
+     "note": "Sin una sola salida de aire"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_125",
+   "start": 562.22,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_125.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "ov_headline_125",
+   "start": 562.22,
+   "dur": 4.5,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "tokens": [
+    {
+     "t": "Casi nunca los mata el"
+    },
+    {
+     "t": "fuego",
+     "hl": true
+    },
+    {
+     "t": "los mata el"
+    },
+    {
+     "t": "aire",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Cada invierno",
+   "size": "lg"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_126",
+   "start": 565.42,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_126.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_127",
+   "start": 569.7,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_127.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6
+  },
+  {
+   "id": "ov_impact_127",
+   "start": 569.7,
+   "dur": 4,
+   "kind": "impact",
+   "overlay": true,
+   "hue": "amber",
+   "setup": "A la manana siguiente",
+   "impact": "No despiertan",
+   "hitAt": 1.2
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_128",
+   "start": 572.3,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_128.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_129",
+   "start": 576.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_129.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.84
+  },
+  {
+   "id": "ov_riskclock_129",
+   "start": 576.08,
+   "dur": 5.5,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Como pasa",
+   "title": "La cadena del monoxido",
+   "steps": [
+    {
+     "label": "Cuarto sellado",
+     "note": "No entra aire nuevo"
+    },
+    {
+     "label": "La llama se queda sin oxigeno",
+     "note": "Deja de quemar limpio"
+    },
+    {
+     "label": "Combustion incompleta",
+     "note": "Aparece el monoxido"
+    },
+    {
+     "label": "No huele, no se ve",
+     "note": "Nadie se entera"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_130",
+   "start": 581.92,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_130.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.24
+  },
+  {
+   "id": "ov_splitlist_130",
+   "start": 581.92,
+   "dur": 6.5,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Por eso no lo cachas",
+   "cross": true,
+   "items": [
+    "No huele a nada",
+    "No se ve",
+    "Solo te da sueno",
+    "Dolor de cabeza medio sordo"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_131",
+   "start": 589.16,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_131.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "ov_lielist_131",
+   "start": 589.16,
+   "dur": 4,
+   "kind": "lielist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que te dices a ti mismo",
+   "items": [
+    "Es el frio",
+    "Es el cansancio del dia",
+    "Ayer dormi mal"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_132",
+   "start": 593.7,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_132.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.5
+  },
+  {
+   "id": "ov_quote_132",
+   "start": 593.7,
+   "dur": 5,
+   "kind": "quote",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Te acuestas. Y ahi se acabo.",
+   "eyebrow": "Lo que de verdad pasa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_133",
+   "start": 599.2,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_133.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_134",
+   "start": 601.3,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_134.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.3
+  },
+  {
+   "id": "ov_statslam_134",
+   "start": 601.3,
+   "dur": 5,
+   "kind": "statslam",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Gratis",
+   "caption": "Ya tienes el detector en la mesa",
+   "eyebrow": "Y lo estas viendo todo el tiempo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_135",
+   "start": 606.6,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_135.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "ov_callout_135",
+   "start": 606.6,
+   "dur": 4,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Alta y quieta",
+   "eyebrow": "Llama sana",
+   "caption": "Asi se ve cuando respira bien"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_136",
+   "start": 610.82,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_136.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08
+  },
+  {
+   "id": "ov_verified_136",
+   "start": 610.82,
+   "dur": 4,
+   "kind": "verified",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Esta respirando bien",
+   "angle": -7
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_137",
+   "start": 614.9,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_137.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.08
+  },
+  {
+   "id": "ov_twomoments_137",
+   "start": 614.9,
+   "dur": 4.7,
+   "kind": "twomoments",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La misma vela",
+   "leftLabel": "Hace rato",
+   "leftSub": "Alta y quieta",
+   "rightLabel": "Ahora",
+   "rightSub": "Chaparra y bailando sola"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_138",
+   "start": 619.98,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_138.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "ov_annotated_138",
+   "start": 619.98,
+   "dur": 4.5,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La senal",
+   "caption": "El barro te lo esta avisando",
+   "annotations": [
+    {
+     "x": 48,
+     "y": 26,
+     "label": "Hilitos de humo negro"
+    },
+    {
+     "x": 62,
+     "y": 68,
+     "label": "Tizne por dentro"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_139",
+   "start": 624.92,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_139.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "ov_alertwipe_139",
+   "start": 624.92,
+   "dur": 4,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Si se tizna de negro, eso no es calor"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_140",
+   "start": 628.58,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_140.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "ov_process_140",
+   "start": 628.58,
+   "dur": 4,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "En cuanto veas tizne",
+   "title": "Hazlo en este orden",
+   "steps": [
+    {
+     "title": "Apagalo",
+     "note": "Sopla la vela ya"
+    },
+    {
+     "title": "Abre la ventana",
+     "note": "De par en par"
+    },
+    {
+     "title": "Deja ventilar",
+     "note": "Sal del cuarto un rato"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_141",
+   "start": 632.74,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_141.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_142",
+   "start": 635.34,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_142.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "ov_vs_142",
+   "start": 635.34,
+   "dur": 4,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Lee la llama",
+   "title": "Dos llamas, dos decisiones",
+   "left": {
+    "label": "Alta y quieta",
+    "note": "Todo bien, sigue"
+   },
+   "right": {
+    "label": "Chaparra y bailando",
+    "note": "Ventana abierta ya"
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_143",
+   "start": 638.58,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_143.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.04
+  },
+  {
+   "id": "ov_numcard_143",
+   "start": 638.58,
+   "dur": 4,
+   "kind": "numcard",
+   "overlay": true,
+   "hue": "amber",
+   "number": 6,
+   "total": 6,
+   "name": "Reglas de seguridad",
+   "eyebrow": "Cortitas y sin rodeos"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_144",
+   "start": 641.62,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_144.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_145",
+   "start": 643.72,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_145.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.8
+  },
+  {
+   "id": "ov_doorcold_145",
+   "start": 643.72,
+   "dur": 5,
+   "kind": "doorcold",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Siempre una rendija abierta"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_146",
+   "start": 650.52,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_146.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.12
+  },
+  {
+   "id": "ov_radsky_146",
+   "start": 650.52,
+   "dur": 5,
+   "kind": "radsky",
+   "overlay": true,
+   "hue": "amber",
+   "airTemp": 12
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_147",
+   "start": 655.64,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_147.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.36
+  },
+  {
+   "id": "ov_keyphrase_147",
+   "start": 655.64,
+   "dur": 4.2,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Te calienta a ti, no al cuarto",
+   "accent": "#c86a3a",
+   "fontSize": 74
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_148",
+   "start": 660,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_148.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "ov_costtally_148",
+   "start": 660,
+   "dur": 4,
+   "kind": "costtally",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "El cambio",
+   "title": "Dejar la rendija abierta",
+   "left": {
+    "label": "Lo que pierdes",
+    "items": [
+     {
+      "k": "Un poco de calor",
+      "v": "Poquito"
+     }
+    ]
+   },
+   "right": {
+    "label": "Lo que compras",
+    "items": [
+     {
+      "k": "Aire limpio",
+      "v": "Siempre"
+     },
+     {
+      "k": "Dormir tranquilo",
+      "v": "Completo"
+     }
+    ]
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_149",
+   "start": 663.02,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_149.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "ov_rule_149",
+   "start": 663.02,
+   "dur": 4,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 2,
+   "title": "Sin una sola excepcion",
+   "label": "Regla 2"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_150",
+   "start": 666.86,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_150.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_rule_150",
+   "start": 666.86,
+   "dur": 4,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 2,
+   "title": "Nunca dormido",
+   "label": "Si te vas a dormir, se apaga"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_151",
+   "start": 670.24,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_151.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.16
+  },
+  {
+   "id": "ov_keyphrase_151",
+   "start": 670.24,
+   "dur": 5,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "La noche entera se resuelve sin llama",
+   "accent": "sin llama"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_152",
+   "start": 677.4,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_152.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "ov_twomoments_152",
+   "start": 677.4,
+   "dur": 5,
+   "kind": "twomoments",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Dos maneras",
+   "leftLabel": "Con llama",
+   "leftSub": "Solo despierto, se apaga al dormir",
+   "rightLabel": "Sin llama",
+   "rightSub": "Esa sí aguanta hasta la mañana"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_153",
+   "start": 680.92,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_153.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "ov_rule_153",
+   "start": 680.92,
+   "dur": 4,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 3,
+   "title": "Nunca en el cuarto de un bebé",
+   "label": "Ahí no entra, ni apagado"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_154",
+   "start": 683.84,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_154.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.04
+  },
+  {
+   "id": "ov_splitlist_154",
+   "start": 683.84,
+   "dur": 5.5,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Nunca cerca de",
+   "items": [
+    "Un bebé dormido",
+    "Alguien que no se levanta solo",
+    "Quien no puede abrir una ventana"
+   ],
+   "cross": true
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_155",
+   "start": 689.88,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_155.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "ov_alertwipe_155",
+   "start": 689.88,
+   "dur": 4.5,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El monóxido no huele y no se ve"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_156",
+   "start": 692.84,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_156.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.02
+  },
+  {
+   "id": "ov_riskclock_156",
+   "start": 692.84,
+   "dur": 6.5,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Cuarto cerrado",
+   "title": "Así trabaja el monóxido",
+   "steps": [
+    {
+     "label": "La llama se queda sin aire",
+     "note": "Cuarto sellado, sin oxígeno suficiente"
+    },
+    {
+     "label": "Nace el monóxido de carbono",
+     "note": "No huele, no se ve, no sabe a nada"
+    },
+    {
+     "label": "Se disfraza de sueño",
+     "note": "Dolor de cabeza y unas ganas raras de dormir"
+    },
+    {
+     "label": "Ya no te levantas",
+     "note": "Por eso el detector no es opcional"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_157",
+   "start": 699.86,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_157.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "ov_phrasetag_157",
+   "start": 699.86,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Uno por cada cuarto donde haya llama",
+   "pos": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_158",
+   "start": 703.56,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_158.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "ov_rule_158",
+   "start": 703.56,
+   "dur": 4.5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 5,
+   "title": "La superficie quema",
+   "label": "El barro cargado te marca la piel"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_159",
+   "start": 708.2,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_159.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72
+  },
+  {
+   "id": "ov_callout_159",
+   "start": 708.2,
+   "dur": 4,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Guante grueso",
+   "eyebrow": "Para moverlo",
+   "caption": "O de plano esperas a que enfríe"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_160",
+   "start": 710.92,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_160.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.44
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_161",
+   "start": 713.36,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_161.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "ov_impact_161",
+   "start": 713.36,
+   "dur": 4.5,
+   "kind": "impact",
+   "overlay": true,
+   "hue": "amber",
+   "setup": "Un gato cruza la mesa",
+   "impact": "Un roce de cola y se va al suelo",
+   "hitAt": 1.4
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_162",
+   "start": 717.06,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_162.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_163",
+   "start": 719.68,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_163.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "ov_annotated_163",
+   "start": 719.68,
+   "dur": 5.5,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "El espacio libre",
+   "caption": "Nada inflamable arriba ni a los lados",
+   "annotations": [
+    {
+     "x": 50,
+     "y": 18,
+     "label": "Arriba, libre"
+    },
+    {
+     "x": 16,
+     "y": 58,
+     "label": "Cortinas lejos"
+    },
+    {
+     "x": 84,
+     "y": 58,
+     "label": "Nada de papel"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_164",
+   "start": 722.7,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_164.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "ov_headline_164",
+   "start": 722.7,
+   "dur": 4,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Pon atención",
+   "tokens": [
+    {
+     "t": "Esto"
+    },
+    {
+     "t": "casi"
+    },
+    {
+     "t": "nadie"
+    },
+    {
+     "t": "lo sabe",
+     "hl": true
+    }
+   ],
+   "size": "lg"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_165",
+   "start": 725.8,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_165.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "ov_alertwipe_165",
+   "start": 725.8,
+   "dur": 4.5,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Cera prendida: nunca le eches agua"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_166",
+   "start": 729.02,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_166.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "ov_mistake_166",
+   "start": 729.02,
+   "dur": 5,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": 1,
+   "eyebrow": "El reflejo que quema casas",
+   "title": "Echarle agua",
+   "desc": "El agua salpica la cera hirviendo y riega el fuego en lugar de apagarlo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_167",
+   "start": 734.46,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_167.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "ov_checklist_167",
+   "start": 734.46,
+   "dur": 5,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Se ahoga, no se moja",
+   "title": "Con qué la tapas",
+   "items": [
+    "Una tapa de metal",
+    "Un traste hondo",
+    "Algo que no se queme"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_168",
+   "start": 739.28,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_168.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.56
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_169",
+   "start": 741.84,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_169.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.36
+  },
+  {
+   "id": "ov_rule_169",
+   "start": 741.84,
+   "dur": 5.5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 7,
+   "title": "Apagada de verdad",
+   "label": "No está apagada hasta que deja de humear"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_170",
+   "start": 748.2,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_170.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.56
+  },
+  {
+   "id": "ov_depthtext_170",
+   "start": 748.2,
+   "dur": 4.5,
+   "kind": "depthtext",
+   "overlay": true,
+   "hue": "amber",
+   "back": "HUMO",
+   "fore": "Combustible",
+   "title": "Ese hilito todavía prende"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_171",
+   "start": 751.76,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_171.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.28
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_172",
+   "start": 755.04,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_172.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.88
+  },
+  {
+   "id": "ov_chapter_172",
+   "start": 755.04,
+   "dur": 5,
+   "kind": "chapter",
+   "overlay": true,
+   "hue": "amber",
+   "num": 4,
+   "title": "Que el calor no se te escape"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_173",
+   "start": 761.92,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_173.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "ov_steptrack_173",
+   "start": 761.92,
+   "dur": 4,
+   "kind": "steptrack",
+   "overlay": true,
+   "hue": "amber",
+   "step": 1,
+   "total": 4,
+   "label": "El reflector"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_174",
+   "start": 766.26,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_174.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96
+  },
+  {
+   "id": "ov_tool_174",
+   "start": 766.26,
+   "dur": 4.5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "number": 1,
+   "eyebrow": "Material",
+   "nameEs": "Cartón de caja vieja",
+   "how": "Un pedazo del alto del calefactor"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_175",
+   "start": 770.22,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_175.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "ov_process_175",
+   "start": 770.22,
+   "dur": 6,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "El reflector",
+   "title": "Tres movimientos",
+   "steps": [
+    {
+     "title": "Corta el cartón",
+     "note": "Del alto de las macetas"
+    },
+    {
+     "title": "Pega el aluminio",
+     "note": "El lado brillante hacia afuera"
+    },
+    {
+     "title": "Párala atrás",
+     "note": "Entre el calefactor y la pared"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_176",
+   "start": 774.76,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_176.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_177",
+   "start": 778.12,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_177.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_178",
+   "start": 781.38,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_178.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "ov_radsky_178",
+   "start": 781.38,
+   "dur": 5,
+   "kind": "radsky",
+   "overlay": true,
+   "hue": "amber",
+   "airTemp": 12
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_179",
+   "start": 785.62,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_179.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.88
+  },
+  {
+   "id": "ov_statslam_179",
+   "start": 785.62,
+   "dur": 4.5,
+   "kind": "statslam",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "50%",
+   "eyebrow": "Sin reflector",
+   "caption": "Se va derechito a la pared de atrás"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_180",
+   "start": 790.5,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_180.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "ov_callout_180",
+   "start": 790.5,
+   "dur": 4.5,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Espejo",
+   "eyebrow": "El aluminio",
+   "caption": "Rebota el infrarrojo de vuelta a ti"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_181",
+   "start": 794.12,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_181.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "ov_rule_181",
+   "start": 794.12,
+   "dur": 5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 2,
+   "title": "Cierra la zona",
+   "label": "Segunda capa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_182",
+   "start": 798.16,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_182.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_183",
+   "start": 801.54,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_183.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "ov_phrasetag_183",
+   "start": 801.54,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Sin puerta: cortina en el marco",
+   "pos": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_184",
+   "start": 805.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_184.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.24
+  },
+  {
+   "id": "ov_sizescale_184",
+   "start": 805.08,
+   "dur": 6,
+   "kind": "sizescale",
+   "overlay": true,
+   "hue": "amber",
+   "items": [
+    {
+     "label": "Un cuarto cerrado",
+     "value": 25
+    },
+    {
+     "label": "Cuarto y pasillo",
+     "value": 60
+    },
+    {
+     "label": "La casa entera",
+     "value": 100
+    }
+   ],
+   "eyebrow": "Aire que tienes que calentar",
+   "title": "Cada metro cúbico te cuesta"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_185",
+   "start": 811.32,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_185.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.32
+  },
+  {
+   "id": "ov_rule_185",
+   "start": 811.32,
+   "dur": 4.5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 3,
+   "title": "La ventana de noche",
+   "label": "Tercera capa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_186",
+   "start": 813.64,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_186.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "ov_keyphrase_186",
+   "start": 813.64,
+   "dur": 4,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "El vidrio es el agujero más grande que tienes",
+   "fontSize": 62
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_187",
+   "start": 816.9,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_187.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.44
+  },
+  {
+   "id": "ov_riskclock_187",
+   "start": 816.9,
+   "dur": 6.5,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "steps": [
+    {
+     "label": "El vidrio se hiela",
+     "note": "De noche baja de golpe"
+    },
+    {
+     "label": "Te jala por radiación",
+     "note": "En línea recta, sin tocarte"
+    },
+    {
+     "label": "Sientes frío igual",
+     "note": "Aunque el aire marque bien"
+    }
+   ],
+   "eyebrow": "Junto a la ventana",
+   "title": "Por qué te chupa el calor"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_188",
+   "start": 823.34,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_188.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.22
+  },
+  {
+   "id": "ov_tool_188",
+   "start": 823.34,
+   "dur": 4.5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "nameEs": "Plástico de burbujas",
+   "how": "El que viene en los paquetes. Sale gratis.",
+   "number": 1,
+   "eyebrow": "Lo que necesitas"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_189",
+   "start": 828.56,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_189.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "ov_process_189",
+   "start": 828.56,
+   "dur": 5.5,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Rocía el vidrio",
+     "note": "Agua con jabón"
+    },
+    {
+     "title": "Pega el plástico",
+     "note": "Del lado de las burbujas"
+    },
+    {
+     "title": "Alisa con la mano",
+     "note": "Saca el aire de sobra"
+    }
+   ],
+   "eyebrow": "Ventana aislada",
+   "title": "Tres movimientos"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_190",
+   "start": 833.36,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_190.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.96
+  },
+  {
+   "id": "ov_verified_190",
+   "start": 833.36,
+   "dur": 4,
+   "kind": "verified",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Se pega solo",
+   "angle": -8
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_191",
+   "start": 836.32,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_191.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.28
+  },
+  {
+   "id": "ov_checklist_191",
+   "start": 836.32,
+   "dur": 5.5,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "La cortina bien puesta",
+   "items": [
+    "Toca el piso",
+    "Pegada al muro por arriba",
+    "Sin huecos a los lados"
+   ],
+   "eyebrow": "Tercera capa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_192",
+   "start": 841.6,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_192.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.22
+  },
+  {
+   "id": "ov_splitlist_192",
+   "start": 841.6,
+   "dur": 5,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que arruina la cortina",
+   "items": [
+    "Hueco arriba",
+    "Hueco abajo",
+    "Tela que no llega al piso"
+   ],
+   "cross": true
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_193",
+   "start": 846.82,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_193.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "ov_doorcold_193",
+   "start": 846.82,
+   "dur": 4.5,
+   "kind": "doorcold",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El aire frío cae y te barre los pies"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_194",
+   "start": 849.8,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_194.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.56
+  },
+  {
+   "id": "ov_rule_194",
+   "start": 849.8,
+   "dur": 4.5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 4,
+   "title": "Las rendijas",
+   "label": "Cuarta capa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_195",
+   "start": 852.36,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_195.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "ov_statslam_195",
+   "start": 852.36,
+   "dur": 4.5,
+   "kind": "statslam",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Una ventana abierta",
+   "caption": "Eso suman todas juntas",
+   "eyebrow": "Chiquitas y aburridas"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_196",
+   "start": 856.6,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_196.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.14
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_197",
+   "start": 859.74,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_197.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.28
+  },
+  {
+   "id": "ov_tool_197",
+   "start": 859.74,
+   "dur": 5.5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "nameEs": "Serpiente de tela",
+   "how": "Un tubo de trapo relleno de arroz, apoyado contra la base de la puerta",
+   "number": 2,
+   "eyebrow": "Lo que necesitas"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_198",
+   "start": 866.02,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_198.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "ov_alertwipe_198",
+   "start": 866.02,
+   "dur": 4,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Los que nadie revisa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_199",
+   "start": 870.22,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_199.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "ov_annotated_199",
+   "start": 870.22,
+   "dur": 5,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "annotations": [
+    {
+     "x": 24,
+     "y": 26,
+     "label": "El marco de arriba"
+    },
+    {
+     "x": 78,
+     "y": 50,
+     "label": "Los lados"
+    },
+    {
+     "x": 48,
+     "y": 84,
+     "label": "El umbral"
+    }
+   ],
+   "eyebrow": "Por dónde entra el chiflón fino",
+   "caption": "Revisa el marco completo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_200",
+   "start": 873.94,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_200.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.02
+  },
+  {
+   "id": "ov_depthtext_200",
+   "start": 873.94,
+   "dur": 5,
+   "kind": "depthtext",
+   "overlay": true,
+   "hue": "amber",
+   "back": "RENDIJAS",
+   "fore": "La ventana invisible",
+   "title": "Abierta todas las noches"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_201",
+   "start": 878.96,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_201.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_202",
+   "start": 881.46,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_202.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.54
+  },
+  {
+   "id": "ov_vs_202",
+   "start": 881.46,
+   "dur": 5.5,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Incienso",
+    "note": "Hilo de humo parejo y largo"
+   },
+   "right": {
+    "label": "Vela apagada",
+    "note": "Sirve igual, dura menos"
+   },
+   "eyebrow": "Cualquiera de los dos",
+   "title": "Con qué buscar la fuga"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_203",
+   "start": 887,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_203.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_204",
+   "start": 890.92,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_204.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "ov_revealcards_204",
+   "start": 890.92,
+   "dur": 6,
+   "kind": "revealcards",
+   "overlay": true,
+   "hue": "amber",
+   "items": [
+    {
+     "title": "El marco de la puerta",
+     "note": "Arriba, los lados y abajo"
+    },
+    {
+     "title": "Contacto y apagador",
+     "note": "El muro está hueco atrás"
+    },
+    {
+     "title": "El marco de la ventana",
+     "note": "Ahí vive el chiflón fino"
+    }
+   ],
+   "eyebrow": "Recorrido del humo",
+   "title": "Dónde pasarlo",
+   "numbered": true
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_205",
+   "start": 894.36,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_205.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.86
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_206",
+   "start": 897.22,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_206.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_207",
+   "start": 899.76,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_207.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.36
+  },
+  {
+   "id": "ov_gridreveal_207",
+   "start": 899.76,
+   "dur": 6,
+   "kind": "gridreveal",
+   "overlay": true,
+   "hue": "amber",
+   "tiles": [
+    {
+     "label": "Se dobla"
+    },
+    {
+     "label": "Se corta"
+    },
+    {
+     "label": "Se acuesta"
+    }
+   ],
+   "title": "Ahí tienes una fuga",
+   "subtitle": "No le quites el ojo al humo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_208",
+   "start": 907.12,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_208.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "ov_twomoments_208",
+   "start": 907.12,
+   "dur": 5,
+   "kind": "twomoments",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Cuándo hacer la prueba",
+   "leftLabel": "De día",
+   "leftSub": "El humo casi no se mueve",
+   "rightLabel": "De noche",
+   "rightSub": "El frío empuja y delata todo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_209",
+   "start": 910.3,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_209.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7
+  },
+  {
+   "id": "ov_quote_209",
+   "start": 910.3,
+   "dur": 4.5,
+   "kind": "quote",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Vas a encontrar cosas que llevan años ahí.",
+   "eyebrow": "La prueba del humo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_210",
+   "start": 913,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_210.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "ov_steptrack_210",
+   "start": 913,
+   "dur": 4,
+   "kind": "steptrack",
+   "overlay": true,
+   "hue": "amber",
+   "step": 1,
+   "total": 3,
+   "label": "Tapar los agujeros del fondo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_211",
+   "start": 916.68,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_211.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.7
+  },
+  {
+   "id": "ov_headline_211",
+   "start": 916.68,
+   "dur": 5.5,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Lo que te prometí",
+   "size": "lg",
+   "tokens": [
+    {
+     "t": "Hay una versión"
+    },
+    {
+     "t": "SIN",
+     "hl": true
+    },
+    {
+     "t": "llama"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_212",
+   "start": 924.38,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_212.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "ov_chapter_212",
+   "start": 924.38,
+   "dur": 4,
+   "kind": "chapter",
+   "overlay": true,
+   "hue": "amber",
+   "num": "2",
+   "title": "La versión sin llama"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_213",
+   "start": 927.18,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_213.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.64
+  },
+  {
+   "id": "ov_massheater_213",
+   "start": 927.18,
+   "dur": 6,
+   "kind": "massheater",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "El mismo principio",
+   "title": "Calor guardado, calor devuelto",
+   "mode": "storage",
+   "fire": "El horno de la cena",
+   "mass": "El ladrillo de barro",
+   "out": "Radiación a la piel",
+   "coolTag": "Horas después sigue tibio",
+   "effTag": "Cero llama"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_214",
+   "start": 930.82,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_214.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.98
+  },
+  {
+   "id": "ov_radsky_214",
+   "start": 930.82,
+   "dur": 5,
+   "kind": "radsky",
+   "overlay": true,
+   "hue": "amber",
+   "airTemp": 10
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_215",
+   "start": 934.8,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_215.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_216",
+   "start": 937.68,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_216.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "ov_keyphrase_216",
+   "start": 937.68,
+   "dur": 4.5,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Calor que ya pagaste",
+   "accent": true,
+   "fontSize": 92
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_217",
+   "start": 940.88,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_217.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
+   "id": "ov_stattag_217",
+   "start": 940.88,
+   "dur": 4,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 0,
+   "label": "Llamas encendidas",
+   "eyebrow": "Nada que vigilar",
+   "corner": "tr"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_218",
+   "start": 944.8,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_218.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.36
+  },
+  {
+   "id": "ov_tool_218",
+   "start": 944.8,
+   "dur": 5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "number": 1,
+   "eyebrow": "El material",
+   "nameEs": "Ladrillo de barro común",
+   "how": "El de construcción, sin esmaltar. Limpio y seco."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_219",
+   "start": 948.16,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_219.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "ov_process_219",
+   "start": 948.16,
+   "dur": 6.5,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La rutina completa",
+   "title": "Cuatro pasos y ya",
+   "steps": [
+    {
+     "title": "Al horno con la cena",
+     "note": "Aprovechas el calor que de todos modos ibas a gastar"
+    },
+    {
+     "title": "Lo sacas al terminar",
+     "note": "Con guante grueso, nunca con un trapo mojado"
+    },
+    {
+     "title": "Lo envuelves en toalla",
+     "note": "Tela gruesa, doble vuelta"
+    },
+    {
+     "title": "A los pies de la cama",
+     "note": "Unos 20 minutos antes de acostarte"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_220",
+   "start": 952.96,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_220.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.42
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_221",
+   "start": 955.38,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_221.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.84
+  },
+  {
+   "id": "ov_rollnum_221",
+   "start": 955.38,
+   "dur": 4.5,
+   "kind": "rollnum",
+   "overlay": true,
+   "hue": "amber",
+   "value": 20,
+   "suffix": " min",
+   "label": "Antes de acostarte",
+   "eyebrow": "El tiempo justo"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_222",
+   "start": 962.22,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_222.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_223",
+   "start": 965.22,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_223.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.62
+  },
+  {
+   "id": "ov_heatslow_223",
+   "start": 965.22,
+   "dur": 5.5,
+   "kind": "heatslow",
+   "overlay": true,
+   "hue": "amber",
+   "title": "La masa suelta el calor despacio"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_224",
+   "start": 969.84,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_224.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "ov_callout_224",
+   "start": 969.84,
+   "dur": 5,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "La toalla",
+   "eyebrow": "No es adorno",
+   "caption": "Es el regulador: sin ella te quema, con ella te dura"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_225",
+   "start": 973.04,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_225.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_226",
+   "start": 974.64,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_226.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.32
+  },
+  {
+   "id": "ov_checklist_226",
+   "start": 974.64,
+   "dur": 5.5,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Te lo dejo anotado abajo",
+   "title": "Los números exactos",
+   "items": [
+    "Temperatura del horno",
+    "Cuánto tiempo adentro",
+    "Cuánto tiempo aguanta tibio",
+    "Grosor de la tela"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_227",
+   "start": 979.96,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_227.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_228",
+   "start": 983.48,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_228.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.38
+  },
+  {
+   "id": "ov_alertwipe_228",
+   "start": 983.48,
+   "dur": 4,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Seco. Siempre seco."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_229",
+   "start": 985.86,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_229.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.6
+  },
+  {
+   "id": "ov_splitlist_229",
+   "start": 985.86,
+   "dur": 5.5,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Nunca al horno ni al fuego",
+   "cross": true,
+   "items": [
+    "Un ladrillo mojado",
+    "Una piedra sacada del río",
+    "Material que dormió a la intemperie",
+    "Cualquier cosa con humedad adentro"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_230",
+   "start": 992.46,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_230.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96
+  },
+  {
+   "id": "ov_riskclock_230",
+   "start": 992.46,
+   "dur": 6.5,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Lo que pasa adentro",
+   "title": "El agua que no tiene salida",
+   "steps": [
+    {
+     "label": "Trae agua adentro",
+     "note": "El barro y la piedra son porosos"
+    },
+    {
+     "label": "El calor la hierve",
+     "note": "Dentro del material, no afuera"
+    },
+    {
+     "label": "El vapor empuja",
+     "note": "Y no encuentra por dónde salir"
+    },
+    {
+     "label": "Revienta",
+     "note": "Y salen pedazos calientes disparados"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_231",
+   "start": 996.42,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_231.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_232",
+   "start": 999.26,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_232.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.3
+  },
+  {
+   "id": "ov_rule_232",
+   "start": 999.26,
+   "dur": 5,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": 5,
+   "title": "Jamás directo sobre la sábana",
+   "label": "Ni sobre plástico. Siempre envuelto en tela gruesa."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_233",
+   "start": 1004.56,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_233.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38
+  },
+  {
+   "id": "ov_phrasetag_233",
+   "start": 1004.56,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Lo que tu abuela ya sabía",
+   "pos": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_234",
+   "start": 1008.94,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_234.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "ov_tool_234",
+   "start": 1008.94,
+   "dur": 5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "number": 2,
+   "eyebrow": "La opción de toda la vida",
+   "nameEs": "Bolsa de agua caliente",
+   "how": "Agua muy caliente, del grifo o de la olla antes del hervor"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_235",
+   "start": 1013.22,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_235.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.04
+  },
+  {
+   "id": "ov_mistake_235",
+   "start": 1013.22,
+   "dur": 6,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": 6,
+   "eyebrow": "El error de la bolsa",
+   "title": "Llenarla hirviendo",
+   "desc": "El hervor deforma el plástico, y una bolsa deformada es la que se te abre en la cama a las 3 de la mañana."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_236",
+   "start": 1020.26,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_236.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.46
+  },
+  {
+   "id": "ov_metertag_236",
+   "start": 1020.26,
+   "dur": 4.5,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Un poco más de la mitad",
+   "fromPct": 0,
+   "toPct": 60,
+   "eyebrow": "Cuánto llenar",
+   "corner": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_237",
+   "start": 1023.72,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_237.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.52
+  },
+  {
+   "id": "ov_numcard_237",
+   "start": 1023.72,
+   "dur": 4.5,
+   "kind": "numcard",
+   "overlay": true,
+   "hue": "amber",
+   "number": 3,
+   "total": 4,
+   "eyebrow": "Antes de tapar",
+   "name": "Sacarle el aire"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_238",
+   "start": 1027.24,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_238.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "ov_cutaway_238",
+   "start": 1027.24,
+   "dur": 5,
+   "kind": "cutaway",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El aire de adentro se expande y empuja la tapa"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_239",
+   "start": 1031.12,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_239.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "ov_vs_239",
+   "start": 1031.12,
+   "dur": 5.5,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Agua contra barro",
+   "title": "Dos masas, dos duraciones",
+   "left": {
+    "label": "El agua",
+    "note": "Guarda mucho calor, pero se enfría parejo y se acaba"
+   },
+   "right": {
+    "label": "El barro",
+    "note": "Suelta más despacio y sigue radiando cuando ya se enfrió el agua"
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_240",
+   "start": 1034.84,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_240.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62
+  },
+  {
+   "id": "ov_phrasetag_240",
+   "start": 1034.84,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Barro cocido: emisor de primera",
+   "pos": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_241",
+   "start": 1037.46,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_241.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.92
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_242",
+   "start": 1040.38,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_242.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "ov_headline_242",
+   "start": 1040.38,
+   "dur": 4.5,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La regla que te llevas",
+   "size": "xl",
+   "tokens": [
+    {
+     "t": "El metal"
+    },
+    {
+     "t": "refleja,"
+    },
+    {
+     "t": "el barro"
+    },
+    {
+     "t": "IRRADIA",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_243",
+   "start": 1044.48,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_243.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "ov_vs_243",
+   "start": 1044.48,
+   "dur": 6.5,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Sirve para todo lo demás",
+   "title": "Emitir o rebotar",
+   "left": {
+    "label": "Barro",
+    "note": "Para EMITIR calor hacia ti"
+   },
+   "right": {
+    "label": "Metal brillante",
+    "note": "Para REBOTAR el calor a otro lado"
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_244",
+   "start": 1048.22,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_244.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.4
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_245",
+   "start": 1050.62,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_245.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.22
+  },
+  {
+   "id": "ov_journey_245",
+   "start": 1050.62,
+   "dur": 6.5,
+   "kind": "journey",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La rutina de la noche",
+   "title": "Cuando ya nadie está vigilando",
+   "waypoints": [
+    {
+     "label": "Prendes las velas",
+     "note": "El barro empieza a cargarse"
+    },
+    {
+     "label": "20-30 minutos",
+     "note": "La maceta ya está caliente"
+    },
+    {
+     "label": "Apagas la llama",
+     "note": "Antes de irte a dormir"
+    },
+    {
+     "label": "30-45 minutos más",
+     "note": "El barro sigue soltando calor solo"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_246",
+   "start": 1055.84,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_246.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "ov_heatslow_246",
+   "start": 1055.84,
+   "dur": 5,
+   "kind": "heatslow",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El fuego se apaga contigo. El calor se queda."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_247",
+   "start": 1058.62,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_247.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "ov_splitlist_247",
+   "start": 1058.62,
+   "dur": 6,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que esto NO hace",
+   "cross": true,
+   "items": [
+    "No calienta tu casa",
+    "No es instantáneo",
+    "No reemplaza tu calefacción"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_248",
+   "start": 1061.68,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_248.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "ov_metertag_248",
+   "start": 1061.68,
+   "dur": 5,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Carga del barro",
+   "fromPct": 0,
+   "toPct": 100,
+   "eyebrow": "20 a 30 minutos",
+   "corner": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_249",
+   "start": 1066.24,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_249.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_250",
+   "start": 1068.96,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_250.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.32
+  },
+  {
+   "id": "ov_stat_250",
+   "start": 1068.96,
+   "dur": 5,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 2,
+   "suffix": " grados",
+   "label": "Lo que le puedes bajar al termostato",
+   "eyebrow": "Bien usado, la acompaña"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_251",
+   "start": 1075.28,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_251.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "ov_alertwipe_251",
+   "start": 1075.28,
+   "dur": 4.5,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "De una vela no sale nada más CO₂"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_252",
+   "start": 1079.38,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_252.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_253",
+   "start": 1082.64,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_253.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "ov_stat_253",
+   "start": 1082.64,
+   "dur": 5.5,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 100,
+   "suffix": " g de agua",
+   "label": "Por cada 100 g de cera que quemas",
+   "eyebrow": "Y hasta un poco más"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_254",
+   "start": 1086.98,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_254.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.98
+  },
+  {
+   "id": "ov_callout_254",
+   "start": 1086.98,
+   "dur": 4.5,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "Cero",
+   "eyebrow": "Cuarto ventilado",
+   "caption": "El vapor se va y no pasa nada"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_255",
+   "start": 1092.96,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_255.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.36
+  },
+  {
+   "id": "ov_coldcal_255",
+   "start": 1092.96,
+   "dur": 4.5,
+   "kind": "coldcal",
+   "overlay": true,
+   "hue": "amber"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_256",
+   "start": 1099.32,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_256.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72
+  },
+  {
+   "id": "ov_frostwipe_256",
+   "start": 1099.32,
+   "dur": 4,
+   "kind": "frostwipe",
+   "overlay": true,
+   "hue": "amber"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_257",
+   "start": 1103.04,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_257.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.02
+  },
+  {
+   "id": "ov_riskclock_257",
+   "start": 1103.04,
+   "dur": 7,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La cadena",
+   "title": "De la vela a la mancha negra",
+   "steps": [
+    {
+     "label": "Se quema la cera",
+     "note": "Sale vapor de agua, siempre"
+    },
+    {
+     "label": "Cuarto cerrado",
+     "note": "El vapor no tiene por dónde salir"
+    },
+    {
+     "label": "Se condensa",
+     "note": "En el vidrio y en la esquina más fría"
+    },
+    {
+     "label": "Dos o tres semanas",
+     "note": "Ahí aparece el moho"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_258",
+   "start": 1109.06,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_258.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.14
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_259",
+   "start": 1114.2,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_259.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.16
+  },
+  {
+   "id": "ov_timeline_259",
+   "start": 1114.2,
+   "dur": 6.5,
+   "kind": "timeline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Cómo avanza",
+   "title": "De la gota al moho",
+   "events": [
+    {
+     "year": "Noche 1",
+     "label": "Gotas en el vidrio"
+    },
+    {
+     "year": "Semana 1",
+     "label": "Olor a húmedo que no se va"
+    },
+    {
+     "year": "Semana 2-3",
+     "label": "Mancha negra en la esquina"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_260",
+   "start": 1121.36,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_260.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.16
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_261",
+   "start": 1128.52,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_261.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "ov_lielist_261",
+   "start": 1128.52,
+   "dur": 5.5,
+   "kind": "lielist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que NO arregla la humedad",
+   "items": [
+    "Otra vela más",
+    "Un bote de pintura anti humedad",
+    "Volver a limpiar la mancha"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_262",
+   "start": 1131.82,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_262.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_263",
+   "start": 1134.82,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_263.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.8
+  },
+  {
+   "id": "ov_stattag_263",
+   "start": 1134.82,
+   "dur": 4.5,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 1,
+   "prefix": "$",
+   "label": "Lo que cuestan los materiales",
+   "eyebrow": "Farmacia y tlapalería",
+   "corner": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_264",
+   "start": 1140.62,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_264.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86
+  },
+  {
+   "id": "ov_struckcards_264",
+   "start": 1140.62,
+   "dur": 5.5,
+   "kind": "struckcards",
+   "overlay": true,
+   "hue": "amber",
+   "items": [
+    {
+     "title": "Mira la pared",
+     "note": "Diez segundos de vistazo"
+    },
+    {
+     "title": "Dice una palabra técnica",
+     "note": "Que nadie te explica"
+    },
+    {
+     "title": "Te cotiza miles",
+     "note": "Y el problema sigue ahí"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_265",
+   "start": 1144.48,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_265.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.22
+  },
+  {
+   "id": "ov_checklist_265",
+   "start": 1144.48,
+   "dur": 5.5,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "Lo junté todo",
+   "title": "Los arreglos, uno por uno",
+   "items": [
+    "Numerados y en orden",
+    "Con las cantidades exactas",
+    "Con los tiempos exactos"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_266",
+   "start": 1150.7,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_266.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "ov_keyphrase_266",
+   "start": 1150.7,
+   "dur": 4,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "La guía está en la descripción",
+   "accent": "warm",
+   "fontSize": 62
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_267",
+   "start": 1153.8,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_267.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "ov_chapter_267",
+   "start": 1153.8,
+   "dur": 4.5,
+   "kind": "chapter",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El error que te revienta la maceta",
+   "num": 6
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_268",
+   "start": 1156.34,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_268.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.84
+  },
+  {
+   "id": "ov_curediagram_268",
+   "start": 1156.34,
+   "dur": 6,
+   "kind": "curediagram",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "El agua que trae adentro",
+   "title": "Curar la maceta antes de prenderla",
+   "saltTag": "Barro poroso, poro abierto",
+   "waterTag": "Agua guardada en la pared",
+   "keepTag": "Una semana adentro, en seco"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_269",
+   "start": 1163.18,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_269.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.1
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_270",
+   "start": 1170.28,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_270.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7
+  },
+  {
+   "id": "ov_sizescale_270",
+   "start": 1170.28,
+   "dur": 6,
+   "kind": "sizescale",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "lo que pasa adentro",
+   "title": "El agua se vuelve vapor",
+   "items": [
+    {
+     "label": "Agua líquida en el poro",
+     "value": 1
+    },
+    {
+     "label": "La misma agua hecha vapor",
+     "value": 1000
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_271",
+   "start": 1177.28,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_271.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.86
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_272",
+   "start": 1180.14,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_272.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.32
+  },
+  {
+   "id": "ov_mistake_272",
+   "start": 1180.14,
+   "dur": 6,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": 7,
+   "eyebrow": "el error final",
+   "title": "Encenderla con la maceta húmeda",
+   "desc": "El vapor no encuentra salida y arranca un pedazo de la pared"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_273",
+   "start": 1185.46,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_273.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.3
+  },
+  {
+   "id": "ov_riskclock_273",
+   "start": 1185.46,
+   "dur": 6,
+   "kind": "riskclock",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "la cadena",
+   "title": "De la humedad al estallido",
+   "steps": [
+    {
+     "label": "El barro trae agua adentro",
+     "note": "Es poroso, la chupa del patio"
+    },
+    {
+     "label": "La llama lo calienta",
+     "note": "El agua se vuelve vapor"
+    },
+    {
+     "label": "El vapor busca salida",
+     "note": "Ocupa mil veces más lugar"
+    },
+    {
+     "label": "Revienta un pedazo",
+     "note": "Y lo escupe hacia afuera"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_274",
+   "start": 1191.76,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_274.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "ov_impact_274",
+   "start": 1191.76,
+   "dur": 5,
+   "kind": "impact",
+   "overlay": true,
+   "hue": "amber",
+   "setup": "Piedras de río en la fogata",
+   "impact": "A la media hora una explota",
+   "hitAt": 45
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_275",
+   "start": 1195.5,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_275.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "ov_alertwipe_275",
+   "start": 1195.5,
+   "dur": 4.5,
+   "kind": "alertwipe",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No cruje. No humea. No avisa."
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_276",
+   "start": 1199.34,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_276.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.04
+  },
+  {
+   "id": "ov_curediagram_276",
+   "start": 1199.34,
+   "dur": 6.5,
+   "kind": "curediagram",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "cómo se evita",
+   "title": "Curar la maceta antes de usarla",
+   "saltTag": "Adentro, en seco",
+   "waterTag": "El agua se va sola",
+   "keepTag": "Mínimo una semana"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_277",
+   "start": 1206.38,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_277.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.38
+  },
+  {
+   "id": "ov_stattag_277",
+   "start": 1206.38,
+   "dur": 4,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 1,
+   "suffix": " semana",
+   "label": "adentro, antes de encenderla",
+   "eyebrow": "paso uno",
+   "corner": "br"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_278",
+   "start": 1209.76,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_278.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.8
+  },
+  {
+   "id": "ov_process_278",
+   "start": 1209.76,
+   "dur": 6,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "los dos pasos",
+   "title": "La primera encendida",
+   "steps": [
+    {
+     "title": "Una semana adentro",
+     "note": "Lugar seco y templado"
+    },
+    {
+     "title": "Una sola vela chica",
+     "note": "Media hora larga y nada más"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_279",
+   "start": 1217.56,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_279.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.98
+  },
+  {
+   "id": "ov_headline_279",
+   "start": 1217.56,
+   "dur": 5,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "el hermano del error",
+   "tokens": [
+    {
+     "t": "La maceta"
+    },
+    {
+     "t": "bonita"
+    },
+    {
+     "t": "es la"
+    },
+    {
+     "t": "peligrosa",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_280",
+   "start": 1224.54,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_280.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_281",
+   "start": 1227.72,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_281.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.52
+  },
+  {
+   "id": "ov_cross_281",
+   "start": 1227.72,
+   "dur": 6,
+   "kind": "cross",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "por qué sella",
+   "title": "El esmalte por dentro",
+   "marker": "La salida tapada",
+   "layers": [
+    {
+     "label": "Esmalte",
+     "note": "Vidrio derretido, cero poros"
+    },
+    {
+     "label": "Barro poroso",
+     "note": "Ahí vive el agua"
+    },
+    {
+     "label": "Vapor atrapado",
+     "note": "Sin salida lenta"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_282",
+   "start": 1234.24,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_282.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84
+  },
+  {
+   "id": "ov_vs_282",
+   "start": 1234.24,
+   "dur": 5.5,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "cuál comprar",
+   "title": "Fea contra bonita",
+   "left": {
+    "label": "Barro puro",
+    "note": "Deja respirar al vapor"
+   },
+   "right": {
+    "label": "Esmaltada",
+    "note": "Le tapa la única salida"
+   }
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_283",
+   "start": 1239.08,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_283.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.38
+  },
+  {
+   "id": "ov_keyphrase_283",
+   "start": 1239.08,
+   "dur": 4,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "En esto, lo feo es lo que funciona",
+   "fontSize": 88
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_284",
+   "start": 1241.46,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_284.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "ov_chapter_284",
+   "start": 1241.46,
+   "dur": 4.5,
+   "kind": "chapter",
+   "overlay": true,
+   "hue": "amber",
+   "num": "5",
+   "title": "Lo que haces esta semana"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_285",
+   "start": 1245.22,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_285.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.66
+  },
+  {
+   "id": "ov_revealcards_285",
+   "start": 1245.22,
+   "dur": 7,
+   "kind": "revealcards",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "en este orden",
+   "title": "El plan de la semana",
+   "numbered": true,
+   "items": [
+    {
+     "title": "Mete las macetas",
+     "note": "Adentro y en seco, hoy mismo"
+    },
+    {
+     "title": "Caza las fugas",
+     "note": "Con el hilo de humo, y tápalas"
+    },
+    {
+     "title": "Arma el reflector",
+     "note": "Cartón y papel aluminio"
+    },
+    {
+     "title": "Arma el calefactor",
+     "note": "Recién cuando el barro esté seco"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_286",
+   "start": 1250.88,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_286.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5
+  },
+  {
+   "id": "ov_phrasetag_286",
+   "start": 1250.88,
+   "dur": 4,
+   "kind": "phrasetag",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Hilo de humo, fuga encontrada",
+   "pos": "bl"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_287",
+   "start": 1255.88,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_287.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86
+  },
+  {
+   "id": "ov_tool_287",
+   "start": 1255.88,
+   "dur": 4.5,
+   "kind": "tool",
+   "overlay": true,
+   "hue": "amber",
+   "number": "3",
+   "eyebrow": "el paso tres",
+   "nameEs": "Reflector de cartón",
+   "how": "Cartón forrado con aluminio, atrás del calefactor"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_288",
+   "start": 1259.74,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_288.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.44
+  },
+  {
+   "id": "ov_checklist_288",
+   "start": 1259.74,
+   "dur": 6.5,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "paso cinco",
+   "title": "La noche que lo estrenes",
+   "items": [
+    "Puerta cerrada",
+    "Rendija abierta",
+    "El calefactor de tu lado",
+    "Nunca encendido si te duermes"
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_289",
+   "start": 1267.18,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_289.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.38
+  },
+  {
+   "id": "ov_impstamp_289",
+   "start": 1267.18,
+   "dur": 4,
+   "kind": "impstamp",
+   "overlay": true,
+   "hue": "amber",
+   "word": "NUNCA DORMIDO"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_290",
+   "start": 1269.56,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_290.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.22
+  },
+  {
+   "id": "ov_depthtext_290",
+   "start": 1269.56,
+   "dur": 5,
+   "kind": "depthtext",
+   "overlay": true,
+   "hue": "amber",
+   "back": "Tu ciudad",
+   "fore": "En los comentarios",
+   "title": "¿Qué tan frío se te pone de madrugada?"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_291",
+   "start": 1274.78,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_291.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_292",
+   "start": 1279.3,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_292.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.92
+  },
+  {
+   "id": "ov_nextvideo_292",
+   "start": 1279.3,
+   "dur": 6,
+   "kind": "nextvideo",
+   "overlay": true,
+   "hue": "amber",
+   "kicker": "En el próximo",
+   "title": "El calefactor solar de latas",
+   "sub": "Un vidrio, una tabla vieja y 30 latas pintadas de negro"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_293",
+   "start": 1286.22,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_293.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.02
+  },
+  {
+   "id": "ov_floatcards_293",
+   "start": 1286.22,
+   "dur": 5.5,
+   "kind": "floatcards",
+   "overlay": true,
+   "hue": "amber",
+   "cards": [
+    {
+     "title": "Un ladrillo del horno",
+     "note": "Calor que dura toda la noche"
+    },
+    {
+     "title": "Un brasero de barro",
+     "note": "Masa que devuelve el calor"
+    },
+    {
+     "title": "Una cobija de lana",
+     "note": "El calor que ya tienes, guardado"
+    }
+   ]
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_294",
+   "start": 1293.24,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_294.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.86
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_295",
+   "start": 1296.1,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_295.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "ov_quote_295",
+   "start": 1296.1,
+   "dur": 5,
+   "kind": "quote",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "lo que cambiamos",
+   "text": "Sabían algo que nosotros cambiamos por un enchufe"
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_296",
+   "start": 1299.16,
+   "kind": "raw",
+   "src": "broll/v4dtvgrn83qy7/v4dtvgrn83qy7_s_296.mp4",
+   "noSplit": true,
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.48
+  },
+  {
+   "id": "v4dtvgrn83qy7_s_297",
+   "start": 1301.64,
+   "kind": "raw",
+   "src": "img/v4dtvgrn83qy7_s_297.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.02
+  },
+  {
+   "id": "ov_signature_297",
+   "start": 1301.64,
+   "dur": 5,
+   "kind": "signature",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "The Free Builder",
+   "lines": [
+    "No se perdió.",
+    "Nada más lo dejamos de usar."
+   ]
+  }
+ ]
+}
