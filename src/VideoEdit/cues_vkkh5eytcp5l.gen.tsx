@@ -532,7 +532,7 @@ export const OVERLAYS: Cue[] = [
   { key: "c177", start: 1349.86, dur: 3.52, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Contame* *en* *los* *comentarios*" accent="good" /> },
   { key: "c178", start: 1357.78, dur: 5.34, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Lo* *de* *antes* *de* *la* *caja* *con* *instrucciones*" accent="amber" /> },
   { key: "c105", start: 1365.32, dur: 5.79, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} words={parseQuote("Piedras apiladas. Sin una gota de agua. Y amanecen *mojadas*.")} accent="cold" hue="cold" /> },
-  { key: "c106", start: 1396.4, dur: 4.88, kind: "signature", el: (d) => <SignaturePhrase durationInFrames={d} lines={["Eran cosas de cinco dólares"]} eyebrow="Levi Lapp" /> },
+  { key: "c106", start: 1396.4, dur: 4.88, kind: "signature", el: (d) => <SignaturePhrase durationInFrames={d} lines={[{"text":"Eran cosas de","gold":false},{"text":"cinco dólares","gold":true}]} eyebrow="Levi Lapp" /> },
 ];
 
 // cama de música (AudioBed) — null si el beatsheet no define "music"

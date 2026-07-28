@@ -378,7 +378,9 @@ add("siete en otono la vacias", { kind: "numcard", number: "7", name: "Guárdala
 add("eso es todo cinco dolares y una tarde", { kind: "headline", tokens: [{ t: "Cinco" }, { t: "dólares" }, { t: "y" }, { t: "una" }, { t: "tarde", hl: true }], eyebrow: "Eso es todo", hue: "amber" });
 add("cuentame una cosa en los comentarios", { kind: "chips", title: "Dime cómo es tu tierra", chips: ["Arenosa", "Arcilla pesada", "Tierra negra"], hue: "amber" });
 add("un monton de piedras", { kind: "quote", text: "Piedras apiladas. Sin una gota de agua. Y amanecen *mojadas*.", accent: "cold", hue: "cold" });
-add("eran cosas de cinco dolares", { kind: "signature", lines: ["Eran cosas de cinco dólares"], eyebrow: "Levi Lapp" });
+// OJO: SignaturePhrase pide lines como OBJETOS {text, gold?}, no strings sueltos.
+// Con strings, l.text queda undefined y revienta el render con "reading 'split'".
+add("eran cosas de cinco dolares", { kind: "signature", lines: [{ text: "Eran cosas de", gold: false }, { text: "cinco dólares", gold: true }], eyebrow: "Levi Lapp" });
 
 // ── relleno de componentes: frases cinéticas ancladas al ms (KineticLine) ────
 const KPH = [

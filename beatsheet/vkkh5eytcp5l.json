@@ -7050,7 +7050,14 @@
   {
    "kind": "signature",
    "lines": [
-    "Eran cosas de cinco dólares"
+    {
+     "text": "Eran cosas de",
+     "gold": false
+    },
+    {
+     "text": "cinco dólares",
+     "gold": true
+    }
    ],
    "eyebrow": "Levi Lapp",
    "id": "c106",
