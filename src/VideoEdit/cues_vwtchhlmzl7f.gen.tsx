@@ -8,6 +8,7 @@ import { ReframeList, ChipsCluster } from "./scenes/ReframeContent";
 import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
 import { KineticHeadline } from "./scenes/KineticHeadline";
 import { CalloutMark } from "./scenes/CalloutMark";
+import { AnnotatedImage } from "./scenes/AnnotatedImage";
 import { TextCardReveal } from "./scenes/TextCardReveal";
 import { SplitList } from "./scenes/SplitList";
 import { BarCompare } from "./scenes/BarCompare";

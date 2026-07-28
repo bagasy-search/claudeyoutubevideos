@@ -699,6 +699,7 @@ import { ReframeList, ChipsCluster } from "./scenes/ReframeContent";
 import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
 import { KineticHeadline } from "./scenes/KineticHeadline";
 import { CalloutMark } from "./scenes/CalloutMark";
+import { AnnotatedImage } from "./scenes/AnnotatedImage";
 import { TextCardReveal } from "./scenes/TextCardReveal";
 import { SplitList } from "./scenes/SplitList";
 import { BarCompare } from "./scenes/BarCompare";
@@ -733,6 +734,15 @@ export const AVATAR_WINDOWS = ${J(
   })()
 )} as const;
 `;
+{
+  // COMPUERTA: el JSX se genera como STRING, así que tsc NO ve los componentes usados.
+  // Un import faltante sólo aparece adentro del render ("X is not defined") con los runners
+  // ya encendidos. Ya costó dos jobs del farm: se verifica acá, gratis.
+  const usados = [...new Set([...cuesTsx.matchAll(/<([A-Z][A-Za-z0-9]*)/g)].map((m) => m[1]))];
+  const imp = new Set([...cuesTsx.matchAll(/import\s*\{([^}]+)\}/g)].flatMap((m) => m[1].split(",").map((x) => x.trim().split(/\s+as\s+/).pop())));
+  const faltan = usados.filter((u) => !imp.has(u));
+  if (faltan.length) { console.error(`✗ IMPORTS FALTANTES en cues: ${faltan.join(", ")}`); process.exit(1); }
+}
 fs.writeFileSync(`src/VideoEdit/cues_${SLUG}.gen.tsx`, cuesTsx);
 
 const mainTsx = `import { AbsoluteFill, Sequence } from "remotion";
