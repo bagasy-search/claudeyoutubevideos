@@ -97,7 +97,7 @@ function buildWindows(): AvatarWindow[] {
   // GAP-FILL anti-negro: donde NO hay contenido, el avatar va FULL, nunca fondo pelado. Umbral 0.2s.
   const cov: [number, number][] = [];
   for (const b of FEDZ_BROLL as any[]) cov.push([b.start, b.start + b.dur + 0.2]);
-  for (const b of rawTop as any[]) cov.push([b.start, b.start + Math.min(b.dur, HERO_CAP) + 0.2]);
+  for (const b of rawTop as any[]) cov.push([b.start, b.start + Math.max(1.7, Math.min(b.dur, HERO_CAP)) + 0.2]);
   for (const b of compBeats as any[]) if (!OVERLAY.has(b.kind)) cov.push([b.start, b.start + compDur(b) + 0.2]);
   cov.sort((a, c) => a[0] - c[0]);
   const merged: [number, number][] = [];
@@ -192,7 +192,9 @@ export const MainV89: React.FC = () => {
 
       {/* CAPA 2 — FOTOS p_*.png TOPEADAS (~3.6s) */}
       {rawTop.map((b: any) => {
-        const d = Math.max(1, sec(Math.min(b.dur, HERO_CAP)));
+        // piso de 51 frames: RawShot interpola en [6,20,d-16,d] y con d<=36 el rango deja de ser
+        // creciente → Remotion aborta el frame (asi murieron 4 chunks). 1.7s es el minimo seguro.
+        const d = Math.max(51, sec(Math.min(b.dur, HERO_CAP)));
         return (
           <Sequence key={b.id} from={sec(b.start)} durationInFrames={d} premountFor={20}>
             <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />
