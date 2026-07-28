@@ -4,7 +4,7 @@ import {Main_vsdjytp30ogs, TOTAL_FRAMES} from './VideoEdit/Main_vsdjytp30ogs';
 
 export const RemotionRoot: React.FC = () => (
   <Composition
-    id="Manos_vsdjytp30ogs"
+    id="Manos-vsdjytp30ogs"
     component={Main_vsdjytp30ogs}
     durationInFrames={TOTAL_FRAMES}
     fps={30}
