@@ -167,18 +167,14 @@ const avatarFullS = Math.round(tramosFull.reduce((a, b) => a + b, 0));
 const avatarPct = seconds ? Math.round((100 * avatarFullS) / seconds) : 0;
 // Piso: por debajo de esto el canal pierde la cara que lo identifica. Techo: por arriba deja de ser
 // un documental y se vuelve una cabeza parlante — el creador pidió explícitamente NO llegar a eso.
-const MIN_AVATAR_PCT = +(process.env.MIN_AVATAR_PCT || 18);
-const MAX_AVATAR_PCT = +(process.env.MAX_AVATAR_PCT || 40);
 // Un regreso a la cara de 2s es un parpadeo, no presencia. Medido: los videos con más avatar tienen
 // tramos de mediana 6-13s; los que "no se siente la bata" cortan de vuelta cada 2,5s.
-const MIN_TRAMO_FULL_S = +(process.env.MIN_TRAMO_FULL_S || 4);
 const medTramoFull = tramosFull.length
   ? [...tramosFull].sort((a, b) => a - b)[Math.floor(tramosFull.length / 2)] : 0;
 
-const visibleS = Math.max(1, seconds - avatarFullS);
-const compPorMin = visibleS ? +(compUses / (visibleS / 60)).toFixed(1) : 0;
-const needVisuals = Math.floor(visibleS / VIS_EVERY_S);
-const needClips = Math.floor(visibleS / CLIP_EVERY_S);
+const compPorMin = seconds ? +(compUses / (seconds / 60)).toFixed(1) : 0;
+const needVisuals = Math.floor(seconds / VIS_EVERY_S);
+const needClips = Math.floor(seconds / CLIP_EVERY_S);
 
 // ── COMPONENTES PROPIOS DE ESTE VIDEO (medición, NO una regla más) ────────────────────────────
 // El video que el creador marcó como "de pura calidad" trajo 11 componentes diseñados a medida
@@ -282,8 +278,7 @@ if (tramos) {
 console.log(`  TOTAL visuales        : ${visuals}   (mínimo exigido: ${needVisuals})`);
 console.log(`  clips de stock        : ${clips.length}   (mínimo exigido: ${needClips})`);
 if (avatarWins) {
-  console.log(`  BATA a pantalla llena : ${avatarPct}%  (${avatarFullS}s de ${seconds}s, ${tramosFull.length} vueltas de mediana ${medTramoFull.toFixed(1)}s)   banda: ${MIN_AVATAR_PCT}-${MAX_AVATAR_PCT}%`);
-  console.log(`  · los mínimos de arriba se miden sobre ${visibleS}s VISIBLES (total − bata), no sobre ${seconds}s`);
+  console.log(`  BATA a pantalla llena : ${avatarPct}%  (${avatarFullS}s de ${seconds}s, ${tramosFull.length} vueltas de mediana ${medTramoFull.toFixed(1)}s)   solo medición, sin umbral`);
 }
 
 // Cuando el gate te frena por monotonía, no sirve decir "usá más componentes": te dice CUÁLES.
@@ -355,36 +350,19 @@ if (tramos) {
 }
 if (clips.length < needClips) fallos.push(`FALTA B-ROLL REAL: tenés ${clips.length} clips de stock, necesitás ≥${needClips}. Corré el match_v3 / clips-first para bajar clips reales — hoy lo estás salteando.`);
 
-// ── LA BATA ───────────────────────────────────────────────────────────────────────────────────
-// El piso BLOQUEA: sin la cara del presentador el video puede estar impecable y no parecer del
-// canal. El techo sólo AVISA — pasarse es un problema de criterio, no un defecto, y frenar un
-// render por eso costaría más de lo que arregla.
-if (avatarWins) {
-  if (avatarPct < MIN_AVATAR_PCT) {
-    fallos.push(`FALTA LA BATA: el presentador está a pantalla completa sólo el ${avatarPct}% del video (${avatarFullS}s de ${seconds}s), el piso es ${MIN_AVATAR_PCT}%. Es la identidad del canal: un documental impecable sin su cara no parece de este canal. Te faltan ~${Math.ceil((MIN_AVATAR_PCT / 100) * seconds - avatarFullS)}s más de avatar full. NO los repartas como relleno — dáselos a los momentos donde habla ÉL y no el material: la promesa del hook, cada vez que hace una afirmación fuerte o pone un límite honesto, el remate de cada bloque, la CTA y el cierre. Ahí la cara ES el contenido.`);
-  }
-  if (avatarPct > MAX_AVATAR_PCT) {
-    console.log(`\n⚠️  BATA DE MÁS: ${avatarPct}% a pantalla completa (referencia: no pasar de ${MAX_AVATAR_PCT}%). Revisá si no se volvió una cabeza parlante — si un tramo largo de cara no está diciendo algo que necesite la cara, ese es material para visual.`);
-  }
-  if (tramosFull.length >= 4 && medTramoFull < MIN_TRAMO_FULL_S) {
-    console.log(`\n⚠️  LA BATA PARPADEA: ${tramosFull.length} vueltas a pantalla completa pero de mediana ${medTramoFull.toFixed(1)}s (referencia ≥${MIN_TRAMO_FULL_S}s). Volver a la cara medio segundo no deja presencia, deja un corte más. Mejor menos vueltas y más largas.`);
-  }
-}
-
 // ── AIRE: cuántos planos son largos ───────────────────────────────────────────────────────────
 // La densidad mide CUÁNTO hay en pantalla; esto mide si el video RESPIRA. Son cosas distintas y un
 // video puede aprobar densidad y aun así sentirse picado. Medido el 2026-07-27 sobre 4 videos:
 //   Cardiólogo 43% de planos ≥5s (p75 7,2s) · Urólogo 38% (5,3s) · GUANTE 36% (5,8s)
 //   Botox 15% (p75 4,2s = igual a la mediana) ← este es el que el creador sintió peor
-// El Botox salió con una regla de prosa MAL escrita ("~1 de cada 5 planos ≥5s" = 20%): el sistema
+// El Botox salió con una regla de prosa mal escrita ("~1 de cada 5 planos ≥5s" = 20%): el sistema
 // convergió al número nombrado y lo perforó. Por eso el número vive acá también y no solo en el
-// prompt. AVISA, no bloquea: forzar planos largos produciría tomas estiradas de relleno, que es
-// justo el problema opuesto.
+// prompt. AVISA, no bloquea: forzar planos largos produciría tomas estiradas de relleno.
 {
-  const bt = [`src/_fed6/VideoEdit`, `src/VideoEdit`]
+  const bt = ["src/_fed6/VideoEdit", "src/VideoEdit"]
     .filter((d) => existsSync(d))
     .flatMap((d) => readdirSync(d).map((f) => `${d}/${f}`))
-    .find((f) => f.includes(slug) && /(beats)[^/]*\.(ts|tsx)$/.test(f));
+    .find((f) => f.includes(slug) && /beats[^/]*\.(ts|tsx)$/.test(f));
   if (bt) {
     const durs = [...readFileSync(bt, "utf8").matchAll(/"dur":\s*([\d.]+)/g)].map((m) => +m[1]).sort((a, b) => a - b);
     if (durs.length >= 20) {
@@ -392,7 +370,8 @@ if (avatarWins) {
       const largos = Math.round((100 * durs.filter((x) => x >= 5).length) / durs.length);
       console.log(`  AIRE (planos largos)  : ${largos}% de los ${durs.length} planos duran ≥5s · mediana ${p(0.5).toFixed(1)}s · p75 ${p(0.75).toFixed(1)}s   (referencia: 36-43% y p75 ≥5s)`);
       if (largos < 28 || p(0.75) < 4.8) {
-        console.log(`\n⚠️  VIDEO PICADO: solo ${largos}% de planos ≥5s (los que salieron bien tienen 36-43%) y p75 de ${p(0.75).toFixed(1)}s.`);
+        console.log(`
+⚠️  VIDEO PICADO: solo ${largos}% de planos ≥5s (los que salieron bien tienen 36-43%) y p75 de ${p(0.75).toFixed(1)}s.`);
         console.log(`   Con el p75 pegado a la mediana no hay planos largos: son todos parecidos y el video no respira.`);
         console.log(`   No cortes por cumplir densidad — si una toma pide durar, que dure.`);
       }
