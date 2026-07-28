@@ -16,10 +16,12 @@ const ARRANQUE = 0.8;   // seg hasta que el ojo va al cartel
 const MIN = 2.5, MAX = 8;
 const requerido = (pal) => Math.min(MAX, Math.max(MIN, ARRANQUE + pal / PAL_SEG));
 
-// ⛔ EL ARREGLO ES RECORTAR EL TEXTO, NO ALARGAR LA TOMA. Medido el 28/07 sobre 5 videos: los
-// componentes ya duran 5-6,5s (bien), pero llevan 16-33 palabras y eso pide 7-8s. Un cartel de 8s
-// mata el ritmo. Con <=12 palabras se lee comodo en los 5,5s que ya tiene.
-const PAL_MAX = 12;
+// Esto VERIFICA una decision que toma el DIRECTOR, no la reemplaza. Para cada cartel el director
+// elige a conciencia: recortar el texto (lo normal) o darle el tiempo que pide y compensar el ritmo
+// alrededor (solo si es el dato clave del tramo). Lo que salte aca es un cartel que quedo sin
+// resolver — NO se arregla subiendo todo a 8s, que aplanaria el video.
+// Referencia para escribir titulares: 12 palabras entran comodas en los ~5,5s que ya suele durar.
+const PAL_REF = 12;
 
 // Piso de avatar a pantalla completa. 30% no es un numero inventado: el video que el creador marco
 // como el mejor del canal (vki4lqtcboy0) tiene 32,8%, y los que le parecieron flojos 12-21%.
@@ -74,13 +76,13 @@ if (conTexto.length) {
   const d = conTexto.map((t) => t.dur).sort((a, b) => a - b);
   console.log(`  duración de las de texto: mediana ${d[Math.floor(d.length / 2)].toFixed(1)}s · mín ${d[0].toFixed(1)}s · máx ${d[d.length - 1].toFixed(1)}s`);
   console.log(`  ⛔ ILEGIBLES (más cortas de lo que tardan en leerse): ${cortas.length}/${conTexto.length} (${Math.round(100 * cortas.length / conTexto.length)}%)`);
-  for (const t of cortas.slice(0, 6)) console.log(`     · ${t.key.padEnd(26)} ${t.pal} palabras en ${t.dur.toFixed(1)}s → recortá a ${PAL_MAX} palabras (o dale ${requerido(t.pal).toFixed(1)}s)`);
+  for (const t of cortas.slice(0, 6)) console.log(`     · ${t.key.padEnd(26)} ${t.pal} palabras en ${t.dur.toFixed(1)}s → recortá el texto (~${PAL_REF} palabras) o dale ${requerido(t.pal).toFixed(1)}s`);
   if (cortas.length > 6) console.log(`     … y ${cortas.length - 6} más`);
-  const gordas = conTexto.filter((t) => t.pal > PAL_MAX);
+  const gordas = conTexto.filter((t) => t.pal > PAL_REF);
   if (gordas.length) {
     const med = gordas.map((t) => t.pal).sort((a, b) => a - b)[Math.floor(gordas.length / 2)];
-    console.log(`  → ${gordas.length} pasan de ${PAL_MAX} palabras (mediana ${med}). EL ARREGLO ES RECORTAR EL TEXTO, no alargar la toma:`);
-    console.log(`     un cartel de 8s mata el ritmo; con ≤${PAL_MAX} palabras entra cómodo en los ~5,5s que ya tiene.`);
+    console.log(`  → ${gordas.length} pasan de ${PAL_REF} palabras (mediana ${med}). decisión del DIRECTOR para cada uno: recortar el texto, o darle el tiempo y compensar el ritmo alrededor.`);
+    console.log(`     un cartel de 8s mata el ritmo; con ~${PAL_REF} palabras entra cómodo en los ~5,5s que ya tiene.`);
   }
 }
 let avatarBajo = false;
@@ -94,7 +96,7 @@ if (avatar) {
 
 if (gate && (cortas.length || avatarBajo)) {
   console.log("");
-  if (cortas.length) console.log(`⛔ BLOQUEADO: ${cortas.length} componentes no se alcanzan a leer — recortá el texto a ≤${PAL_MAX} palabras.`);
+  if (cortas.length) console.log(`⛔ BLOQUEADO: ${cortas.length} componentes no se alcanzan a leer — recortá el texto o dales el tiempo que piden.`);
   if (avatarBajo) console.log(`⛔ BLOQUEADO: solo ${avatar.pct.toFixed(1)}% de avatar full (piso ${AVATAR_MIN_PCT}%).`);
   process.exit(1);
 }
