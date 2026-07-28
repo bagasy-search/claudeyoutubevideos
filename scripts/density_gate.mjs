@@ -202,7 +202,21 @@ const propios = (() => {
       for (const m of readFileSync(f, "utf8").matchAll(/export const ([A-Z]\w*)\s*:\s*React\.FC/g)) defs.add(m[1]);
     }
     // sólo cuentan los que además SE USAN en el build
-    return [...defs].filter((n) => compDistinct.includes(n));
+    // "Usado" hay que buscarlo en el BUILD REAL, no solo en `src` de arriba. En los kits con
+    // manifiesto (_fed6), `src/VideoEdit/Main_<slug>.tsx` es una LISTA para contar visuales y el
+    // build que se rendea vive en `src/_fed6/VideoEdit/`. Mirando solo el manifiesto, un componente
+    // hecho a medida y usado de verdad no aparecía: el Botox Verde tenía CUATRO (FocusCardsVdj,
+    // HeadlineVdj, CalloutVdj, BoardVdj) y esto reportaba 1. Ese número se usa para juzgar calidad,
+    // así que medirlo mal manda a corregir lo que no estaba roto.
+    const otros = ["src/_fed6/VideoEdit", "src/VideoEdit"]
+      .filter((d) => existsSync(d))
+      .flatMap((d) => readdirSync(d).map((f) => `${d}/${f}`))
+      .filter((f) => f.includes(slug) && /^Main_/.test(f.split("/").pop()) && f !== build);
+    const usadoAparte = new Set();
+    for (const f of otros) {
+      try { for (const m of readFileSync(f, "utf8").matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)) usadoAparte.add(m[1]); } catch { /* ignorar */ }
+    }
+    return [...defs].filter((n) => compDistinct.includes(n) || usadoAparte.has(n));
   } catch { return null; } // sin git utilizable no invento un 0
 })();
 
@@ -354,6 +368,35 @@ if (avatarWins) {
   }
   if (tramosFull.length >= 4 && medTramoFull < MIN_TRAMO_FULL_S) {
     console.log(`\n⚠️  LA BATA PARPADEA: ${tramosFull.length} vueltas a pantalla completa pero de mediana ${medTramoFull.toFixed(1)}s (referencia ≥${MIN_TRAMO_FULL_S}s). Volver a la cara medio segundo no deja presencia, deja un corte más. Mejor menos vueltas y más largas.`);
+  }
+}
+
+// ── AIRE: cuántos planos son largos ───────────────────────────────────────────────────────────
+// La densidad mide CUÁNTO hay en pantalla; esto mide si el video RESPIRA. Son cosas distintas y un
+// video puede aprobar densidad y aun así sentirse picado. Medido el 2026-07-27 sobre 4 videos:
+//   Cardiólogo 43% de planos ≥5s (p75 7,2s) · Urólogo 38% (5,3s) · GUANTE 36% (5,8s)
+//   Botox 15% (p75 4,2s = igual a la mediana) ← este es el que el creador sintió peor
+// El Botox salió con una regla de prosa MAL escrita ("~1 de cada 5 planos ≥5s" = 20%): el sistema
+// convergió al número nombrado y lo perforó. Por eso el número vive acá también y no solo en el
+// prompt. AVISA, no bloquea: forzar planos largos produciría tomas estiradas de relleno, que es
+// justo el problema opuesto.
+{
+  const bt = [`src/_fed6/VideoEdit`, `src/VideoEdit`]
+    .filter((d) => existsSync(d))
+    .flatMap((d) => readdirSync(d).map((f) => `${d}/${f}`))
+    .find((f) => f.includes(slug) && /(beats)[^/]*\.(ts|tsx)$/.test(f));
+  if (bt) {
+    const durs = [...readFileSync(bt, "utf8").matchAll(/"dur":\s*([\d.]+)/g)].map((m) => +m[1]).sort((a, b) => a - b);
+    if (durs.length >= 20) {
+      const p = (q) => durs[Math.floor(durs.length * q)];
+      const largos = Math.round((100 * durs.filter((x) => x >= 5).length) / durs.length);
+      console.log(`  AIRE (planos largos)  : ${largos}% de los ${durs.length} planos duran ≥5s · mediana ${p(0.5).toFixed(1)}s · p75 ${p(0.75).toFixed(1)}s   (referencia: 36-43% y p75 ≥5s)`);
+      if (largos < 28 || p(0.75) < 4.8) {
+        console.log(`\n⚠️  VIDEO PICADO: solo ${largos}% de planos ≥5s (los que salieron bien tienen 36-43%) y p75 de ${p(0.75).toFixed(1)}s.`);
+        console.log(`   Con el p75 pegado a la mediana no hay planos largos: son todos parecidos y el video no respira.`);
+        console.log(`   No cortes por cumplir densidad — si una toma pide durar, que dure.`);
+      }
+    }
   }
 }
 
