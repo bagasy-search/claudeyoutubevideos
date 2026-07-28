@@ -213,16 +213,16 @@ const EXTRA = [
   { ancla: "El vivero te vende un veneno que se queda en la tierra", kind: "vs", title: "Nosotros y ellos", left: { tag: "El vivero", title: "Veneno", sub: "se queda en la tierra", note: "Te obliga a volver" }, right: { tag: "La lluvia", title: "Oxidante", sub: "se convierte en agua", note: "Te deja en paz" }, dur: 7.4 },
   { ancla: "Primero. No es un fertilizante", kind: "checklist", title: "Lo que NO hace", items: ["No es fertilizante", "No mata bichos con caparazón", "No cura heridas", "No se bebe. Nunca."], dur: 8.4 },
   { ancla: "esa espuma NO es la infección muriéndose", kind: "quote", eyebrow: "El mito grande", q: "La espuma es la *catalasa* de tu piel", dur: 5.8 },
-  { ancla: "El peróxido llamado grado alimenticio", kind: "callout", figure: "35%", eyebrow: "Grado alimenticio", caption: "Quema boca, esófago y estómago", accent: "danger", dur: 5.6 },
+  { ancla: "El peróxido llamado grado alimenticio", kind: "callout", figure: "35%", eyebrow: "Grado alimenticio", caption: "Quema boca, esófago y estómago", accent: "danger", dur: 5.6, bg: "px_warning_label" },
   { ancla: "Nunca lo mezcles con vinagre", kind: "splitlist", title: "Nunca mezclar con", items: ["Vinagre", "Cloro", "Amoníaco"], cross: true, dur: 6.4 },
-  { ancla: "Eso es biofilm", kind: "callout", figure: "2 días", eyebrow: "El limo del bebedero", caption: "Biofilm: bacterias con techo propio", dur: 5.6 },
+  { ancla: "Eso es biofilm", kind: "callout", figure: "2 días", eyebrow: "El limo del bebedero", caption: "Biofilm: bacterias con techo propio", dur: 5.6, bg: "px_chicken_waterer" },
   { ancla: "Este es el uso que me hizo tirar tres frascos", kind: "splitlist", title: "Tres frascos que tiré", items: ["Antimoho", "Desinfectante", "Blanqueador de juntas"], cross: true, dur: 6.6 },
   { ancla: "El cloro blanquea la superficie", kind: "vs", title: "Sobre algo poroso", left: { tag: "Cloro", title: "Blanquea", sub: "no entra en el poro", note: "Vuelve en 3 semanas" }, right: { tag: "Agua oxigenada", title: "Entra", sub: "molécula más chica", note: "Vuelve mucho más tarde" }, dur: 7.6 },
   { ancla: "Casi todo el que dice que el agua oxigenada no funciona", kind: "quote", eyebrow: "El error", q: "Está usando *agua*. Literalmente agua.", dur: 6.0 },
   { ancla: "Un frasco cerrado, en un lugar oscuro y fresco", kind: "bars", title: "Cuánto le queda de vida", bars: [["Cerrado y oscuro", 12, "un año", "good"], ["Abierto, de a poco", 2, "1 o 2 meses", "danger"], ["Diluido en el rociador", 0.02, "horas", "danger"]], dur: 8.2 },
   { ancla: "La mezcla se prepara y se usa el mismo día", kind: "quote", eyebrow: "Lo que sobra", q: "Se tira. Es de un *dólar*.", dur: 5.2 },
-  { ancla: "Corta una papa cruda", kind: "process", title: "La prueba de los 4 segundos", steps: [["Papa cruda", "un pedacito"], ["Un chorrito", "encima"], ["¿Espuma?", "está vivo"]], dur: 7.4 },
-  { ancla: "Si no pasa nada, o si hace tres burbujitas tristes", kind: "callout", figure: "MUERTO", eyebrow: "Si no hace espuma", caption: "Tiralo por el desagüe y comprá otro", accent: "danger", dur: 5.8 },
+  { ancla: "Corta una papa cruda", kind: "process", title: "La prueba de los 4 segundos", steps: [["Papa cruda", "un pedacito"], ["Un chorrito", "encima"], ["¿Espuma?", "está vivo"]], dur: 7.4, bg: "px_potato_raw" },
+  { ancla: "Si no pasa nada, o si hace tres burbujitas tristes", kind: "callout", figure: "MUERTO", eyebrow: "Si no hace espuma", caption: "Tiralo por el desagüe y comprá otro", accent: "danger", dur: 5.8, bg: "px_potato_cut" },
   { ancla: "Si no hace ruido, no está trabajando", kind: "quote", eyebrow: "Mi vecino Jonás, 81 años", q: "Si no hace ruido, no está *trabajando*", dur: 6.4 },
   { ancla: "Haz esto esta semana", kind: "reframe", title: "Esta semana", items: ["Prueba de la papa", "Frasco chico + fecha", "Un solo uso para arrancar", "Frasquito con las tijeras"], dur: 9.6 },
   { ancla: "en tu casa el frasco marrón está en el baño", kind: "chips", title: "Contame en los comentarios", chips: ["¿Baño, cocina", "o galpón?"], dur: 6.2 },
@@ -253,9 +253,9 @@ const EXTRA = [
   { ancla: "El pulgón tiene una capa cerosa", kind: "quote", eyebrow: "Por qué sola no alcanza", q: "La cera lo *repele*. El jabón la rompe.", dur: 6.0 },
   { ancla: "Es más limpio que un veneno", kind: "vs", title: "Hormigas: dos caminos", left: { tag: "Veneno", title: "6 meses", sub: "en esa tierra", note: "Y vas a sembrar ahí" }, right: { tag: "1 en 5", title: "Se mudan", sub: "sin residuo", note: "El suelo queda limpio" }, dur: 7.6 },
   { ancla: "No tiene nitrógeno", kind: "splitlist", title: "Lo que NO tiene", items: ["Nitrógeno", "Fósforo", "Potasio"], cross: true, dur: 6.2 },
-  { ancla: "Olvídate del escarabajo", kind: "chips", title: "Contra caparazón, rebota", chips: ["Escarabajo", "Gorgojo", "Chinche"], dur: 5.6 },
-  { ancla: "también daña el tejido nuevo", kind: "callout", figure: "AGUA Y JABÓN", eyebrow: "Para una herida abierta", caption: "El peróxido daña el tejido que cierra", accent: "danger", dur: 6.2 },
-  { ancla: "Juntos forman ácido peracético", kind: "quote", eyebrow: "Peróxido + vinagre", q: "Forman ácido *peracético*. Corrosivo.", dur: 5.8 },
+  { ancla: "Olvídate del escarabajo", kind: "chips", title: "Contra caparazón, rebota", chips: ["Escarabajo", "Gorgojo", "Chinche"], dur: 5.6, bg: "px_beetle_leaf" },
+  { ancla: "también daña el tejido nuevo", kind: "callout", figure: "AGUA Y JABÓN", eyebrow: "Para una herida abierta", caption: "El peróxido daña el tejido que cierra", accent: "danger", dur: 6.2, bg: "px_washing_hands" },
+  { ancla: "Juntos forman ácido peracético", kind: "quote", eyebrow: "Peróxido + vinagre", q: "Forman ácido *peracético*. Corrosivo.", dur: 5.8, bg: "px_vinegar_bottle" },
   { ancla: "Cajas de nido, comederos, perchas", kind: "checklist", title: "El gallinero, punto por punto", items: ["Cajas de nido", "Comederos", "Perchas", "Secar con sol y viento"], dur: 7.4 },
   { ancla: "La esponja de la cocina es el objeto más sucio", kind: "stat", v: 1, lab: "El objeto más sucio de tu casa", sub: "más que el baño", dur: 5.2 },
   { ancla: "Las fresas, en vez de tres días", kind: "bars", title: "Cuánto te duran las fresas", bars: [["Sin remojo", 3, "3 días", "danger"], ["Con remojo 1 en 30", 7, "6 o 7 días", "good"]], dur: 6.8 },
@@ -321,9 +321,9 @@ const EXTRA = [
   { ancla: "Las macetas de plástico del año pasado", kind: "callout", figure: "1 EN 5", eyebrow: "Macetas usadas", caption: "Trapo y secar al sol", dur: 4.8 },
   { ancla: "Cada siete días mientras dure la humedad", kind: "callout", figure: "CADA 7 DÍAS", eyebrow: "Mildiu", caption: "Mientras dure la humedad", dur: 4.8 },
   { ancla: "Misma mezcla, uno en nueve", kind: "chips", title: "Tizón del tomate", chips: ["1 en 9", "y al suelo"], dur: 4.6 },
-  { ancla: "Una parte por cinco de agua, un chorro directo al nido", kind: "callout", figure: "1 EN 5", eyebrow: "Al nido de hormigas", caption: "Un chorro directo", dur: 4.8 },
+  { ancla: "Una parte por cinco de agua, un chorro directo al nido", kind: "callout", figure: "1 EN 5", eyebrow: "Al nido de hormigas", caption: "Un chorro directo", dur: 4.8, bg: "px_ants_marching" },
   { ancla: "Uno en cinco, pulverizador", kind: "callout", figure: "1 EN 5", eyebrow: "El gallinero", caption: "Y secar con sol y viento", dur: 4.8 },
-  { ancla: "Empapas. Lo dejas quince minutos", kind: "callout", figure: "15 MIN", eyebrow: "Moho negro", caption: "Puro, sin diluir. Después cepillo.", dur: 5.2 },
+  { ancla: "Empapas. Lo dejas quince minutos", kind: "callout", figure: "15 MIN", eyebrow: "Moho negro", caption: "Puro, sin diluir. Después cepillo.", dur: 5.2, bg: "px_bathroom_tile" },
   { ancla: "Remojo de diez minutos", kind: "callout", figure: "10 MIN", eyebrow: "La esponja", caption: "Una vez por semana", dur: 4.6 },
   { ancla: "una parte por treinta", kind: "callout", figure: "1 EN 30", eyebrow: "Lechuga y fresas", caption: "Dos minutos y secar bien", dur: 5.0 },
   { ancla: "La dejas cinco minutos y lavas normal", kind: "chips", title: "Sobre la mancha", chips: ["Puro", "cinco minutos"], dur: 4.6 },
@@ -472,10 +472,14 @@ const bgIdx = {};
 // Los carteles NO van sobre fondo plano: se apoyan en un frame REAL del b-roll de su
 // propia sección. Así el componente y el material on-topic son el MISMO plano y el
 // video no se convierte en una sucesión de placas de texto.
-const bgOf = (sid) => {
+const OSCUROS = new Set(["px_damp_basement", "px_black_mold_wall", "px_hospital_corridor", "px_shed_door", "px_ant_nest", "px_storm_sky"]);
+const bgOf = (sid, fijo) => {
+  if (fijo) return `img/${SLUG}_bg_${fijo}.jpg`;
   const sec = SECCIONES.find((x) => x.id === sid) || SECCIONES[0];
+  const claros = sec.pool.filter((n) => !OSCUROS.has(n));
+  const pool = claros.length ? claros : sec.pool;
   bgIdx[sid] = (bgIdx[sid] || 0) + 1;
-  return `img/${SLUG}_bg_${sec.pool[bgIdx[sid] % sec.pool.length]}.jpg`;
+  return `img/${SLUG}_bg_${pool[bgIdx[sid] % pool.length]}.jpg`;
 };
 const hueOf = (sid) => (["limites", "plagas"].includes(sid) ? "red" : ["error", "enemigo"].includes(sid) ? "cold" : "amber");
 
@@ -516,11 +520,11 @@ const mkExtra = (e, sid) => {
   const hue = J(hueOf(sid));
   switch (e.kind) {
     case "headline": return { kind: "KineticHeadline", jsx: `<KineticHeadline durationInFrames={d} eyebrow=${J(e.eyebrow)} hue=${hue} tokens={${J(e.tokens.map(([t, hi]) => ({ text: t, accent: !!hi })))}} />` };
-    case "chips": return { kind: "ChipsCluster", jsx: `<ChipsCluster durationInFrames={d} bg="image" image=${J(bgOf(sid))} title=${J(e.title)} chips={${J(e.chips)}} hue=${hue} />` };
+    case "chips": return { kind: "ChipsCluster", jsx: `<ChipsCluster durationInFrames={d} bg="image" image=${J(bgOf(sid, e.bg))} title=${J(e.title)} chips={${J(e.chips)}} hue=${hue} />` };
     case "process": return { kind: "ProcessSteps", jsx: `<ProcessSteps durationInFrames={d} title=${J(e.title)} accent="accent" hue=${hue} steps={${J(e.steps.map(([t, dsc]) => ({ title: t, desc: dsc })))}} />` };
     case "checklist": return { kind: "Checklist", jsx: `<Checklist durationInFrames={d} title=${J(e.title)} accent="good" hue=${hue} items={${J(e.items.map((t) => ({ text: t, state: "done" })))}} />` };
     case "aged": return { kind: "AgedDoc", jsx: `<AgedDoc durationInFrames={d} eyebrow=${J(e.eyebrow)} heading=${J(e.heading)} accent="accent" hue=${hue} lines={${J(e.lines.map(([text, mark]) => ({ text, mark })))}} />` };
-    case "quote": return { kind: "KineticQuote", jsx: `<KineticQuote durationInFrames={d} image=${J(bgOf(sid))} eyebrow=${J(e.eyebrow)} words={parseQuote(${J(e.q)})} accent="accent" hue="cold" />` };
+    case "quote": return { kind: "KineticQuote", jsx: `<KineticQuote durationInFrames={d} image=${J(bgOf(sid, e.bg))} eyebrow=${J(e.eyebrow)} words={parseQuote(${J(e.q)})} accent="accent" hue="cold" />` };
     case "splitlist": return { kind: "SplitList", jsx: `<SplitList durationInFrames={d} title=${J(e.title)} items={${J(e.items)}} accent={D}${e.cross ? " cross" : ""} />` };
     case "vs": return { kind: "OptionCompare", jsx: `<OptionCompare durationInFrames={d} left={${J({ ...e.left, icon: "warn", accent: "#8a949e" })}} right={${J({ ...e.right, icon: "check", accent: "#e0a33a" })}} />` };
     case "stat": return { kind: "StatBig", jsx: `<StatBig durationInFrames={d} to={${e.v}} label=${J(e.lab)} caption=${J(e.sub || "")} icon="warn" accent="danger" hue="red" />` };
@@ -530,7 +534,7 @@ const mkExtra = (e, sid) => {
     case "split": return { kind: "PeroxideSplit", jsx: `<PeroxideSplit durationInFrames={d} eyebrow=${J(e.eyebrow)} title=${J(e.title)} phase=${J(e.phase)}${e.target ? ` targetLabel=${J(e.target)}` : ""} />` };
     case "annot": return { kind: "AnnotatedImage", jsx: `<AnnotatedImage durationInFrames={d} image=${J(`img/${SLUG}_${e.img}.jpg`)} eyebrow=${J(e.eyebrow)} caption=${J(e.caption)} hue=${hue} annotations={${J(e.ann || [])}} />` };
     case "annotatedlite": return { kind: "ReframeList", jsx: `<ReframeList durationInFrames={d} title=${J(e.title)} accent={A} items={${J(e.items.map((t) => ({ text: t, icon: "check" })))}} />` };
-    case "callout": return { kind: "CalloutMark", jsx: `<CalloutMark durationInFrames={d} figure=${J(e.figure)} image=${J(bgOf(sid))} eyebrow=${J(e.eyebrow)} caption=${J(e.caption)} accent=${J(e.accent || "accent")} hue=${hue} />` };
+    case "callout": return { kind: "CalloutMark", jsx: `<CalloutMark durationInFrames={d} figure=${J(e.figure)} image=${J(bgOf(sid, e.bg))} eyebrow=${J(e.eyebrow)} caption=${J(e.caption)} accent=${J(e.accent || "accent")} hue=${hue} />` };
     default: return null;
   }
 };
@@ -592,8 +596,8 @@ const palabrasDe = (jsx) => {
 for (const c of comps) {
   if (c.kind === "PhotoScene" || c.kind === "PeroxideSplit") continue; // manda el visual, no el texto
   const w = palabrasDe(c.jsx);
-  const leg = 0.8 + w / 2.5;
-  c.dur = +Math.max(2.6, Math.min(8.4, leg)).toFixed(2);
+  const leg = 1.3 + w / 2.5; // 0,9s de animación de entrada + 0,8s de notarlo + lectura
+  c.dur = +Math.max(3.0, Math.min(8.6, leg)).toFixed(2);
 }
 
 // ── 9. TEJIDO FINAL: componentes en su ancla, avatar en sus ventanas, b-roll el resto
