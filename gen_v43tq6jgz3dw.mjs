@@ -431,6 +431,24 @@ for (const b of beats.sort((a, c) => a.start - c.start)) {
 beats.length = 0; beats.push(...keep);
 console.log(`des-solape: -${dropped} beats que pisaban a otro · quedan ${beats.length}`);
 
+// ── `avatarpizarra`: sus items van con `card`, NO con `word` ─────────────────────────────────
+// PizItem = { image?, caption?, eyebrow?, card?, sub?, at? }. El de `word` es AvatarKeyword
+// (KwItem). Si un item de pizarra no trae ni `image` ni `card`, el componente cae en la rama
+// de imagen y hace `staticFile(item.image!)` con undefined → el chunk MUERE con
+// "undefined was passed to staticFile()". Tiró 4 de 30 chunks del primer render, y el error
+// no se ve en la cuadrícula porque los stills caen en otros frames.
+let pizFix = 0;
+for (const b of beats) {
+  if (b.kind !== "avatarpizarra" || !Array.isArray(b.items)) continue;
+  b.items = b.items.map((it) => {
+    if (it.image || it.card) return it;
+    const { word, ...rest } = it;
+    pizFix++;
+    return { ...rest, card: word || it.card || it.sub || "" };
+  });
+}
+if (pizFix) console.log(`avatarpizarra: ${pizFix} items word→card (evita staticFile(undefined))`);
+
 // ── POST-PASS MILIMÉTRICO ───────
 const KIT_CLIPS = [];
 for (const beat of beats) {
@@ -440,7 +458,19 @@ for (const beat of beats) {
       let atF = 0;
       if (it.atPhrase) { const ms = findMs(it.atPhrase, beat.start - 1); if (ms != null) atF = Math.max(0, Math.round((ms - beat.start) * 30)); }
       last = Math.max(last, atF);
-      const { atPhrase, ...rest } = it; return { ...rest, at: atF };
+      const { atPhrase, ...rest } = it;
+      // AvatarPizarra y AvatarKeyword NO comparten el shape del ítem:
+      //   KwItem  (keyword) = { word, sub, image?, tone }
+      //   PizItem (pizarra) = { image | card, caption, eyebrow, sub }
+      // Pasarle `word` a la pizarra la deja sin `image` Y sin `card`, y entonces cae en la rama
+      // de imagen y hace staticFile(undefined) → el render MUERE ahí ("undefined was passed to
+      // staticFile()"). Costó 4 chunks. Se traduce acá y se garantiza que el ítem tenga algo.
+      if (beat.kind === "avatarpizarra") {
+        if (rest.word && !rest.card) { rest.card = rest.word; delete rest.word; }
+        if (!rest.image && !rest.card) rest.card = rest.caption || rest.sub || "•";
+        delete rest.tone; // la pizarra no lo usa
+      }
+      return { ...rest, at: atF };
     });
     const GAP = 90;
     if (last > 300) { beat.items = beat.items.map((it, i) => ({ ...it, at: i * GAP })); last = (beat.items.length - 1) * GAP; }
