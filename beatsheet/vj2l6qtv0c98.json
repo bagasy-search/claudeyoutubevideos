@@ -1,0 +1,2425 @@
+{
+ "video": "vj2l6qtv0c98",
+ "avatar": "avatar_vj2l6qtv0c98.mp4",
+ "captions": "public/captions_vj2l6qtv0c98.json",
+ "beats": [
+  {
+   "id": "hook_c0",
+   "start": 3.92,
+   "kind": "headline",
+   "eyebrow": "Agosto",
+   "tokens": [
+    "5",
+    "semillas.",
+    "Comida",
+    "hasta",
+    "marzo."
+   ],
+   "hue": "amber",
+   "size": 120,
+   "dur": 3
+  },
+  {
+   "id": "hook_c1",
+   "start": 32.06,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_13.png",
+   "text": "La huerta *no* se acaba en septiembre",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 3.9
+  },
+  {
+   "id": "hook_c2",
+   "start": 35.9,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "En enero el súper te cobra",
+   "chips": [
+    "el doble",
+    "por menos"
+   ],
+   "hue": "red",
+   "dur": 5.1
+  },
+  {
+   "id": "hook_r3",
+   "start": 40.96,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/vj2_supermarket_produce.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "hook_c4",
+   "start": 43.42,
+   "kind": "callout",
+   "figure": "6 meses",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 3
+  },
+  {
+   "id": "hook_c5",
+   "start": 46.16,
+   "kind": "aged",
+   "heading": "Plantaba en agosto",
+   "lines": [
+    {
+     "text": "Los vecinos se reían"
+    },
+    {
+     "text": "En enero comía de su huerta",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 6.3
+  },
+  {
+   "id": "hook_c6",
+   "start": 52.34,
+   "kind": "splitlist",
+   "title": "Antes no había",
+   "items": [
+    "Nevera",
+    "Góndola",
+    "Camión frigorífico"
+   ],
+   "palette": "D",
+   "cross": true,
+   "dur": 3.9
+  },
+  {
+   "id": "hook_r7",
+   "start": 56.76,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/vj2_empty_shelves.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "hook_c8",
+   "start": 59.62,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_10.png",
+   "eyebrow": "Al final del video",
+   "text": "El *error* que arruina el 90%",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 5.1
+  },
+  {
+   "id": "hook_c9",
+   "start": 64.54,
+   "kind": "headline",
+   "eyebrow": "Agosto",
+   "tokens": [
+    "5",
+    "semillas.",
+    "Comida",
+    "hasta",
+    "marzo."
+   ],
+   "hue": "amber",
+   "size": 120,
+   "dur": 3
+  },
+  {
+   "id": "hook_c10",
+   "start": 67.66,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_13.png",
+   "text": "La huerta *no* se acaba en septiembre",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 3.9
+  },
+  {
+   "id": "hook_r11",
+   "start": 71.5,
+   "dur": 4,
+   "kind": "raw",
+   "src": "img/vj2l6qtv0c98_p_13.png",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "hook_c12",
+   "start": 75.54,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "En enero el súper te cobra",
+   "chips": [
+    "el doble",
+    "por menos"
+   ],
+   "hue": "red",
+   "dur": 5.1
+  },
+  {
+   "id": "hook_c13",
+   "start": 80.54,
+   "kind": "callout",
+   "figure": "6 meses",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 3
+  },
+  {
+   "id": "hook_c14",
+   "start": 83.5,
+   "kind": "aged",
+   "heading": "Plantaba en agosto",
+   "lines": [
+    {
+     "text": "Los vecinos se reían"
+    },
+    {
+     "text": "En enero comía de su huerta",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 6.3
+  },
+  {
+   "id": "hook_r15",
+   "start": 89.74,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/vj2_carrots_soil.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "hook_c16",
+   "start": 92.24,
+   "kind": "splitlist",
+   "title": "Antes no había",
+   "items": [
+    "Nevera",
+    "Góndola",
+    "Camión frigorífico"
+   ],
+   "palette": "D",
+   "cross": true,
+   "dur": 3.9
+  },
+  {
+   "id": "hook_c17",
+   "start": 96.12,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_10.png",
+   "eyebrow": "Al final del video",
+   "text": "El *error* que arruina el 90%",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 5.1
+  },
+  {
+   "id": "hook_c18",
+   "start": 123.9,
+   "kind": "headline",
+   "eyebrow": "Agosto",
+   "tokens": [
+    "5",
+    "semillas.",
+    "Comida",
+    "hasta",
+    "marzo."
+   ],
+   "hue": "amber",
+   "size": 120,
+   "dur": 3
+  },
+  {
+   "id": "hook_r19",
+   "start": 127.1,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/vj2_snow_garden.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "hook_c20",
+   "start": 130.74,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_13.png",
+   "text": "La huerta *no* se acaba en septiembre",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 3.9
+  },
+  {
+   "id": "hook_c21",
+   "start": 134.7,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "En enero el súper te cobra",
+   "chips": [
+    "el doble",
+    "por menos"
+   ],
+   "hue": "red",
+   "dur": 5.1
+  },
+  {
+   "id": "hook_c22",
+   "start": 139.78,
+   "kind": "callout",
+   "figure": "6 meses",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 3
+  },
+  {
+   "id": "hook_r23",
+   "start": 142.68,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "img/vj2l6qtv0c98_p_10.png",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "hook_c24",
+   "start": 147.5,
+   "kind": "aged",
+   "heading": "Plantaba en agosto",
+   "lines": [
+    {
+     "text": "Los vecinos se reían"
+    },
+    {
+     "text": "En enero comía de su huerta",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 6.3
+  },
+  {
+   "id": "hook_c25",
+   "start": 153.72,
+   "kind": "splitlist",
+   "title": "Antes no había",
+   "items": [
+    "Nevera",
+    "Góndola",
+    "Camión frigorífico"
+   ],
+   "palette": "D",
+   "cross": true,
+   "dur": 3.9
+  },
+  {
+   "id": "hook_c26",
+   "start": 157.28,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_10.png",
+   "eyebrow": "Al final del video",
+   "text": "El *error* que arruina el 90%",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 5.1
+  },
+  {
+   "id": "hook_r27",
+   "start": 162.44,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "broll/vj2_compost_soil_dark.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "hook_c28",
+   "start": 165.06,
+   "kind": "headline",
+   "eyebrow": "Agosto",
+   "tokens": [
+    "5",
+    "semillas.",
+    "Comida",
+    "hasta",
+    "marzo."
+   ],
+   "hue": "amber",
+   "size": 120,
+   "dur": 2.94
+  },
+  {
+   "id": "espinaca_rule",
+   "start": 168.08,
+   "dur": 4.6,
+   "kind": "rule",
+   "number": "01",
+   "title": "La espinaca",
+   "label": "CULTIVO",
+   "hue": "amber"
+  },
+  {
+   "id": "espinaca_c1",
+   "start": 194.52,
+   "kind": "process",
+   "title": "El anticongelante de la planta",
+   "accent": "good",
+   "hue": "cold",
+   "steps": [
+    {
+     "title": "Baja la temperatura"
+    },
+    {
+     "title": "Bombea azúcar"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "espinaca_c2",
+   "start": 199.8,
+   "kind": "journey",
+   "title": "Hojas hasta marzo",
+   "accent": "good",
+   "waypoints": [
+    {
+     "label": "Agosto"
+    },
+    {
+     "label": "Nov"
+    },
+    {
+     "label": "Enero"
+    },
+    {
+     "label": "Marzo"
+    }
+   ],
+   "dur": 3.9
+  },
+  {
+   "id": "espinaca_r3",
+   "start": 203.48,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/vj2_spinach_leaves.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "espinaca_c4",
+   "start": 206.84,
+   "kind": "stat",
+   "value": 8,
+   "prefix": "−",
+   "suffix": " °C",
+   "label": "Aguanta sin manta",
+   "eyebrow": "Con 4 o 5 hojas",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "espinaca_c5",
+   "start": 211.24,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "La de enero es",
+   "chips": [
+    "más dulce",
+    "más gruesa"
+   ],
+   "hue": "amber",
+   "dur": 4.3
+  },
+  {
+   "id": "espinaca_c6",
+   "start": 215.36,
+   "kind": "checklist",
+   "title": "Hoja a hoja, todo el invierno",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Quitá las hojas de fuera",
+     "state": "done"
+    },
+    {
+     "text": "Deja el centro",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "espinaca_r7",
+   "start": 222.18,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/vj2_spinach_frost.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "espinaca_c8",
+   "start": 225.24,
+   "kind": "callout",
+   "figure": "El charco",
+   "caption": "En invierno regá poco: pudre las raíces",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 4.8
+  },
+  {
+   "id": "espinaca_c9",
+   "start": 229.54,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "El secreto de todo",
+   "text": "En invierno no cultivás: *conservás*",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 4.8
+  },
+  {
+   "id": "espinaca_c10",
+   "start": 234.14,
+   "kind": "process",
+   "title": "El anticongelante de la planta",
+   "accent": "good",
+   "hue": "cold",
+   "steps": [
+    {
+     "title": "Baja la temperatura"
+    },
+    {
+     "title": "Bombea azúcar"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "espinaca_r11",
+   "start": 239.22,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "img/vj2l6qtv0c98_p_01.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "espinaca_c12",
+   "start": 243.66,
+   "kind": "journey",
+   "title": "Hojas hasta marzo",
+   "accent": "good",
+   "waypoints": [
+    {
+     "label": "Agosto"
+    },
+    {
+     "label": "Nov"
+    },
+    {
+     "label": "Enero"
+    },
+    {
+     "label": "Marzo"
+    }
+   ],
+   "dur": 3.9
+  },
+  {
+   "id": "espinaca_c13",
+   "start": 247.3,
+   "kind": "stat",
+   "value": 8,
+   "prefix": "−",
+   "suffix": " °C",
+   "label": "Aguanta sin manta",
+   "eyebrow": "Con 4 o 5 hojas",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "espinaca_c14",
+   "start": 251.78,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "La de enero es",
+   "chips": [
+    "más dulce",
+    "más gruesa"
+   ],
+   "hue": "amber",
+   "dur": 4.3
+  },
+  {
+   "id": "espinaca_r15",
+   "start": 256.06,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "broll/vj2_spinach_seedbed.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "espinaca_c16",
+   "start": 258.82,
+   "kind": "checklist",
+   "title": "Hoja a hoja, todo el invierno",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Quitá las hojas de fuera",
+     "state": "done"
+    },
+    {
+     "text": "Deja el centro",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "espinaca_c17",
+   "start": 290.94,
+   "kind": "callout",
+   "figure": "El charco",
+   "caption": "En invierno regá poco: pudre las raíces",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 4.8
+  },
+  {
+   "id": "espinaca_c18",
+   "start": 295.9,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "El secreto de todo",
+   "text": "En invierno no cultivás: *conservás*",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 4.8
+  },
+  {
+   "id": "espinaca_r19",
+   "start": 300.66,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/vj2_spinach_harvest_hand.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "espinaca_c20",
+   "start": 303.6,
+   "kind": "process",
+   "title": "El anticongelante de la planta",
+   "accent": "good",
+   "hue": "cold",
+   "steps": [
+    {
+     "title": "Baja la temperatura"
+    },
+    {
+     "title": "Bombea azúcar"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "espinaca_c21",
+   "start": 308.9,
+   "kind": "journey",
+   "title": "Hojas hasta marzo",
+   "accent": "good",
+   "waypoints": [
+    {
+     "label": "Agosto"
+    },
+    {
+     "label": "Nov"
+    },
+    {
+     "label": "Enero"
+    },
+    {
+     "label": "Marzo"
+    }
+   ],
+   "dur": 3.9
+  },
+  {
+   "id": "espinaca_c22",
+   "start": 312.72,
+   "kind": "stat",
+   "value": 8,
+   "prefix": "−",
+   "suffix": " °C",
+   "label": "Aguanta sin manta",
+   "eyebrow": "Con 4 o 5 hojas",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "espinaca_r23",
+   "start": 317.22,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "img/vj2l6qtv0c98_p_00.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "espinaca_c24",
+   "start": 319.66,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "La de enero es",
+   "chips": [
+    "más dulce",
+    "más gruesa"
+   ],
+   "hue": "amber",
+   "dur": 4.3
+  },
+  {
+   "id": "espinaca_c25",
+   "start": 324.14,
+   "kind": "checklist",
+   "title": "Hoja a hoja, todo el invierno",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Quitá las hojas de fuera",
+     "state": "done"
+    },
+    {
+     "text": "Deja el centro",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "espinaca_rc26",
+   "start": 330.84,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/vj2_fleece_row_cover.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "zanahoria_rule",
+   "start": 334.82,
+   "dur": 4.6,
+   "kind": "rule",
+   "number": "02",
+   "title": "La zanahoria",
+   "label": "CULTIVO",
+   "hue": "amber"
+  },
+  {
+   "id": "zanahoria_c1",
+   "start": 350.38,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "El suelo es tu",
+   "chips": [
+    "despensa",
+    "viva"
+   ],
+   "hue": "amber",
+   "dur": 3.6
+  },
+  {
+   "id": "zanahoria_c2",
+   "start": 353.8,
+   "kind": "checklist",
+   "title": "Ni nevera ni frascos",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Se queda enterrada",
+     "state": "done"
+    },
+    {
+     "text": "La sacás el día que la usás",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "zanahoria_r3",
+   "start": 360.26,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/vj2_frost_grass_macro.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "zanahoria_c4",
+   "start": 363.4,
+   "kind": "callout",
+   "figure": "1 o 2 heladas",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 3
+  },
+  {
+   "id": "zanahoria_c5",
+   "start": 366.48,
+   "kind": "process",
+   "title": "Directa, nunca de plantín",
+   "accent": "accent",
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Surco poco profundo"
+    },
+    {
+     "title": "Riego fino"
+    }
+   ],
+   "dur": 4.8
+  },
+  {
+   "id": "zanahoria_c6",
+   "start": 371.26,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "$",
+   "suffix": "",
+   "label": "Un manto de paja",
+   "eyebrow": "La mejor nevera",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 3.9
+  },
+  {
+   "id": "zanahoria_r7",
+   "start": 374.96,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/vj2_carrot_harvest.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "zanahoria_c8",
+   "start": 378.92,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "El suelo es tu",
+   "chips": [
+    "despensa",
+    "viva"
+   ],
+   "hue": "amber",
+   "dur": 3.6
+  },
+  {
+   "id": "zanahoria_c9",
+   "start": 382.6,
+   "kind": "checklist",
+   "title": "Ni nevera ni frascos",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Se queda enterrada",
+     "state": "done"
+    },
+    {
+     "text": "La sacás el día que la usás",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "zanahoria_c10",
+   "start": 389.2,
+   "kind": "callout",
+   "figure": "1 o 2 heladas",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 3
+  },
+  {
+   "id": "zanahoria_r11",
+   "start": 404.88,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "img/vj2l6qtv0c98_p_03.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "zanahoria_c12",
+   "start": 407.46,
+   "kind": "process",
+   "title": "Directa, nunca de plantín",
+   "accent": "accent",
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Surco poco profundo"
+    },
+    {
+     "title": "Riego fino"
+    }
+   ],
+   "dur": 4.8
+  },
+  {
+   "id": "zanahoria_c13",
+   "start": 412.3,
+   "kind": "stat",
+   "value": 0,
+   "prefix": "$",
+   "suffix": "",
+   "label": "Un manto de paja",
+   "eyebrow": "La mejor nevera",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 3.9
+  },
+  {
+   "id": "zanahoria_c14",
+   "start": 416.18,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "El suelo es tu",
+   "chips": [
+    "despensa",
+    "viva"
+   ],
+   "hue": "amber",
+   "dur": 3.6
+  },
+  {
+   "id": "zanahoria_r15",
+   "start": 420.08,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/vj2_carrot_bunch.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "zanahoria_rc16",
+   "start": 423.86,
+   "dur": 6.14,
+   "kind": "raw",
+   "src": "broll/vj2_carrot_seeds_sowing.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "col_rule",
+   "start": 429.92,
+   "dur": 4.6,
+   "kind": "rule",
+   "number": "03",
+   "title": "La col rizada",
+   "label": "CULTIVO",
+   "hue": "amber"
+  },
+  {
+   "id": "col_c1",
+   "start": 445.1,
+   "kind": "stat",
+   "value": 15,
+   "prefix": "−",
+   "suffix": " °C",
+   "label": "Sigue de pie, verde",
+   "eyebrow": "El rey del invierno",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "col_c2",
+   "start": 449.08,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "El frío no la castiga",
+   "text": "La *endulza*",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 3.9
+  },
+  {
+   "id": "col_r3",
+   "start": 453,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/vj2_kale_garden.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "col_c4",
+   "start": 457.96,
+   "kind": "vs",
+   "title": "El kale que probaste estaba mal",
+   "left": {
+    "tag": "Primavera",
+    "title": "Amargo",
+    "sub": "el del súper"
+   },
+   "right": {
+    "tag": "Enero",
+    "title": "Dulce",
+    "sub": "tras tres heladas"
+   },
+   "hue": "amber",
+   "dur": 7.5
+  },
+  {
+   "id": "col_c5",
+   "start": 465.6,
+   "kind": "callout",
+   "figure": "6 meses",
+   "caption": "Da hojas hasta que florece en primavera",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 4.8
+  },
+  {
+   "id": "col_c6",
+   "start": 470.46,
+   "kind": "checklist",
+   "title": "Dale su espacio",
+   "accent": "accent",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Palmo y medio entre plantas",
+     "state": "done"
+    },
+    {
+     "text": "Cosechá las de abajo",
+     "state": "done"
+    }
+   ],
+   "dur": 5.9
+  },
+  {
+   "id": "col_r7",
+   "start": 476.32,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "broll/vj2_kale_frost.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "col_c8",
+   "start": 478.86,
+   "kind": "stat",
+   "value": 15,
+   "prefix": "−",
+   "suffix": " °C",
+   "label": "Sigue de pie, verde",
+   "eyebrow": "El rey del invierno",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "col_c9",
+   "start": 483.36,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "El frío no la castiga",
+   "text": "La *endulza*",
+   "accent": "good",
+   "hue": "cold",
+   "dur": 3.9
+  },
+  {
+   "id": "col_c10",
+   "start": 499.86,
+   "kind": "vs",
+   "title": "El kale que probaste estaba mal",
+   "left": {
+    "tag": "Primavera",
+    "title": "Amargo",
+    "sub": "el del súper"
+   },
+   "right": {
+    "tag": "Enero",
+    "title": "Dulce",
+    "sub": "tras tres heladas"
+   },
+   "hue": "amber",
+   "dur": 7.5
+  },
+  {
+   "id": "col_r11",
+   "start": 507.64,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "img/vj2l6qtv0c98_p_02.png",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "col_c12",
+   "start": 511.02,
+   "kind": "callout",
+   "figure": "6 meses",
+   "caption": "Da hojas hasta que florece en primavera",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 4.8
+  },
+  {
+   "id": "col_c13",
+   "start": 515.82,
+   "kind": "checklist",
+   "title": "Dale su espacio",
+   "accent": "accent",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Palmo y medio entre plantas",
+     "state": "done"
+    },
+    {
+     "text": "Cosechá las de abajo",
+     "state": "done"
+    }
+   ],
+   "dur": 5.9
+  },
+  {
+   "id": "col_rc14",
+   "start": 521.66,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "broll/vj2_kale_curly_macro.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "puerro_rule",
+   "start": 524.9,
+   "dur": 4.6,
+   "kind": "rule",
+   "number": "04",
+   "title": "El puerro",
+   "label": "CULTIVO",
+   "hue": "amber"
+  },
+  {
+   "id": "puerro_c1",
+   "start": 543.24,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "El soldado del",
+   "chips": [
+    "huerto",
+    "frío"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "puerro_c2",
+   "start": 546.28,
+   "kind": "checklist",
+   "title": "No hay que guardarlo",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Se queda plantado",
+     "state": "done"
+    },
+    {
+     "text": "No se pudre",
+     "state": "done"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "puerro_r3",
+   "start": 551.24,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/vj2_leek_field.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "puerro_c4",
+   "start": 554.06,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "No hay caldo sin un *puerro* dentro",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 3.9
+  },
+  {
+   "id": "puerro_c5",
+   "start": 558.04,
+   "kind": "process",
+   "title": "Cuanto más hondo, más blanco",
+   "accent": "accent",
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Un agujero hondo"
+    },
+    {
+     "title": "Dejá caer el plantín"
+    }
+   ],
+   "dur": 5.9
+  },
+  {
+   "id": "puerro_c6",
+   "start": 563.92,
+   "kind": "callout",
+   "figure": "Lento",
+   "caption": "El puerro pide tiempo: es el último tren",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 4.8
+  },
+  {
+   "id": "puerro_r7",
+   "start": 568.7,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/vj2_leek_harvest.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "puerro_c8",
+   "start": 573.16,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "El soldado del",
+   "chips": [
+    "huerto",
+    "frío"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "puerro_c9",
+   "start": 575.94,
+   "kind": "checklist",
+   "title": "No hay que guardarlo",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Se queda plantado",
+     "state": "done"
+    },
+    {
+     "text": "No se pudre",
+     "state": "done"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "puerro_c10",
+   "start": 581.4,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "No hay caldo sin un *puerro* dentro",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 3.9
+  },
+  {
+   "id": "puerro_r11",
+   "start": 585.8,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/vj2l6qtv0c98_p_05.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "puerro_c12",
+   "start": 588.36,
+   "kind": "process",
+   "title": "Cuanto más hondo, más blanco",
+   "accent": "accent",
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Un agujero hondo"
+    },
+    {
+     "title": "Dejá caer el plantín"
+    }
+   ],
+   "dur": 5.9
+  },
+  {
+   "id": "puerro_c13",
+   "start": 609.42,
+   "kind": "callout",
+   "figure": "Lento",
+   "caption": "El puerro pide tiempo: es el último tren",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 4.8
+  },
+  {
+   "id": "puerro_c14",
+   "start": 613.8,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "El soldado del",
+   "chips": [
+    "huerto",
+    "frío"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "puerro_r15",
+   "start": 616.86,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/vj2_leek_rows.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "puerro_c16",
+   "start": 619.92,
+   "kind": "checklist",
+   "title": "No hay que guardarlo",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Se queda plantado",
+     "state": "done"
+    },
+    {
+     "text": "No se pudre",
+     "state": "done"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "puerro_c17",
+   "start": 624.8,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "No hay caldo sin un *puerro* dentro",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 3.9
+  },
+  {
+   "id": "puerro_c18",
+   "start": 628.6,
+   "kind": "process",
+   "title": "Cuanto más hondo, más blanco",
+   "accent": "accent",
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Un agujero hondo"
+    },
+    {
+     "title": "Dejá caer el plantín"
+    }
+   ],
+   "dur": 5.9
+  },
+  {
+   "id": "puerro_r19",
+   "start": 634.44,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/vj2_leek_soup.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "puerro_rc20",
+   "start": 636.86,
+   "dur": 3.14,
+   "kind": "raw",
+   "src": "broll/vj2_leek_cutting.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "acelga_rule",
+   "start": 640.08,
+   "dur": 4.6,
+   "kind": "rule",
+   "number": "05",
+   "title": "La acelga",
+   "label": "CULTIVO",
+   "hue": "amber"
+  },
+  {
+   "id": "acelga_c1",
+   "start": 658.92,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "La más",
+   "chips": [
+    "generosa",
+    "de todas"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "acelga_c2",
+   "start": 661.98,
+   "kind": "checklist",
+   "title": "Da y da durante meses",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Quitá las hojas de fuera",
+     "state": "done"
+    },
+    {
+     "text": "Vuelven en el centro",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "acelga_r3",
+   "start": 668.68,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/vj2_chard_rainbow.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "acelga_c4",
+   "start": 671.68,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "Penca",
+   "chips": [
+    "blanca",
+    "roja",
+    "amarilla"
+   ],
+   "hue": "amber",
+   "dur": 3
+  },
+  {
+   "id": "acelga_c5",
+   "start": 674.76,
+   "kind": "splitlist",
+   "title": "«Yo solo tengo balcón»",
+   "items": [
+    "Espinaca en jardinera",
+    "Acelga contra la pared"
+   ],
+   "palette": "G",
+   "dur": 5.5
+  },
+  {
+   "id": "acelga_c6",
+   "start": 680.26,
+   "kind": "callout",
+   "figure": "4 macetas",
+   "caption": "Agosto y un puñado de tierra. Punto.",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 4.8
+  },
+  {
+   "id": "acelga_r7",
+   "start": 685.08,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/vj2_chard_leaves.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "acelga_c8",
+   "start": 689.08,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "La más",
+   "chips": [
+    "generosa",
+    "de todas"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "acelga_c9",
+   "start": 692.44,
+   "kind": "checklist",
+   "title": "Da y da durante meses",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Quitá las hojas de fuera",
+     "state": "done"
+    },
+    {
+     "text": "Vuelven en el centro",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "acelga_c10",
+   "start": 699.1,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "Penca",
+   "chips": [
+    "blanca",
+    "roja",
+    "amarilla"
+   ],
+   "hue": "amber",
+   "dur": 3
+  },
+  {
+   "id": "acelga_r11",
+   "start": 702.1,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/vj2_soil_closeup.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "acelga_c12",
+   "start": 704.66,
+   "kind": "splitlist",
+   "title": "«Yo solo tengo balcón»",
+   "items": [
+    "Espinaca en jardinera",
+    "Acelga contra la pared"
+   ],
+   "palette": "G",
+   "dur": 5.5
+  },
+  {
+   "id": "acelga_c13",
+   "start": 726.08,
+   "kind": "callout",
+   "figure": "4 macetas",
+   "caption": "Agosto y un puñado de tierra. Punto.",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 4.8
+  },
+  {
+   "id": "acelga_c14",
+   "start": 730.78,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "La más",
+   "chips": [
+    "generosa",
+    "de todas"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "acelga_r15",
+   "start": 733.94,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/vj2_chard_garden_row.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "acelga_c16",
+   "start": 737.52,
+   "kind": "checklist",
+   "title": "Da y da durante meses",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Quitá las hojas de fuera",
+     "state": "done"
+    },
+    {
+     "text": "Vuelven en el centro",
+     "state": "done"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "acelga_c17",
+   "start": 744.18,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "Penca",
+   "chips": [
+    "blanca",
+    "roja",
+    "amarilla"
+   ],
+   "hue": "amber",
+   "dur": 3
+  },
+  {
+   "id": "acelga_c18",
+   "start": 747.12,
+   "kind": "splitlist",
+   "title": "«Yo solo tengo balcón»",
+   "items": [
+    "Espinaca en jardinera",
+    "Acelga contra la pared"
+   ],
+   "palette": "G",
+   "dur": 5.5
+  },
+  {
+   "id": "acelga_r19",
+   "start": 752.62,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/vj2_frost_plants.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "limites_c0",
+   "start": 756.98,
+   "kind": "splitlist",
+   "title": "Lo que esto NO hace",
+   "items": [
+    "Sin tomate",
+    "Sin pimiento"
+   ],
+   "palette": "D",
+   "cross": true,
+   "dur": 4.8
+  },
+  {
+   "id": "limites_c1",
+   "start": 770.72,
+   "kind": "aged",
+   "heading": "Hoja, raíz y caldo",
+   "lines": [
+    {
+     "text": "La de siempre"
+    },
+    {
+     "text": "Sin avión ni fresas de enero",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 6.3
+  },
+  {
+   "id": "limites_c2",
+   "start": 777.22,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "Guardate esta frase",
+   "text": "En enero no cultivás: *cosechás*",
+   "accent": "accent",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "limites_r3",
+   "start": 781.3,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "broll/vj2_greenhouse_tunnel.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "limites_c4",
+   "start": 783.8,
+   "kind": "callout",
+   "figure": "¡Ventilá!",
+   "accent": "danger",
+   "hue": "red",
+   "dur": 3
+  },
+  {
+   "id": "limites_c5",
+   "start": 787.04,
+   "kind": "splitlist",
+   "title": "Lo que esto NO hace",
+   "items": [
+    "Sin tomate",
+    "Sin pimiento"
+   ],
+   "palette": "D",
+   "cross": true,
+   "dur": 4.8
+  },
+  {
+   "id": "limites_c6",
+   "start": 792.12,
+   "kind": "aged",
+   "heading": "Hoja, raíz y caldo",
+   "lines": [
+    {
+     "text": "La de siempre"
+    },
+    {
+     "text": "Sin avión ni fresas de enero",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 6.3
+  },
+  {
+   "id": "limites_r7",
+   "start": 798.44,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/vj2_greenhouse_interior.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "limites_c8",
+   "start": 801.94,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "Guardate esta frase",
+   "text": "En enero no cultivás: *cosechás*",
+   "accent": "accent",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "limites_c9",
+   "start": 818.18,
+   "kind": "callout",
+   "figure": "¡Ventilá!",
+   "accent": "danger",
+   "hue": "red",
+   "dur": 3
+  },
+  {
+   "id": "limites_c10",
+   "start": 821.26,
+   "kind": "splitlist",
+   "title": "Lo que esto NO hace",
+   "items": [
+    "Sin tomate",
+    "Sin pimiento"
+   ],
+   "palette": "D",
+   "cross": true,
+   "dur": 4.8
+  },
+  {
+   "id": "limites_r11",
+   "start": 826.38,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/vj2_snowy_garden_beds.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "limites_c12",
+   "start": 829.22,
+   "kind": "aged",
+   "heading": "Hoja, raíz y caldo",
+   "lines": [
+    {
+     "text": "La de siempre"
+    },
+    {
+     "text": "Sin avión ni fresas de enero",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 6.3
+  },
+  {
+   "id": "limites_c13",
+   "start": 835.46,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "Guardate esta frase",
+   "text": "En enero no cultivás: *cosechás*",
+   "accent": "accent",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "limites_rc14",
+   "start": 839.52,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/vj2_garden_bed_rows.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "error_c0",
+   "start": 840.26,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "No depende del frío. Depende de la *luz*",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "error_c1",
+   "start": 867.7,
+   "kind": "stat",
+   "value": 10,
+   "prefix": "<",
+   "suffix": " h",
+   "label": "Horas de luz al día",
+   "eyebrow": "Y la planta se para",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 5.1
+  },
+  {
+   "id": "error_c2",
+   "start": 872.88,
+   "kind": "aged",
+   "heading": "El periodo de Perséfone",
+   "lines": [
+    {
+     "text": "Menos de 10 h de luz"
+    },
+    {
+     "text": "No crece nada. Nada.",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "cold",
+   "dur": 6.7
+  },
+  {
+   "id": "error_r3",
+   "start": 879.52,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/vj2_low_sun_field.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "error_c4",
+   "start": 884.16,
+   "kind": "process",
+   "title": "Tiene que llegar ya crecida",
+   "accent": "danger",
+   "hue": "cold",
+   "steps": [
+    {
+     "title": "Sembrás en agosto"
+    },
+    {
+     "title": "Crece grande"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "error_c5",
+   "start": 889.5,
+   "kind": "vs",
+   "title": "El mismo cultivo, dos siembras",
+   "left": {
+    "tag": "Septiembre",
+    "title": "Enano parado",
+    "sub": "pasás hambre"
+   },
+   "right": {
+    "tag": "Agosto",
+    "title": "Ya hecha",
+    "sub": "comés en enero"
+   },
+   "hue": "amber",
+   "dur": 7.5
+  },
+  {
+   "id": "error_c6",
+   "start": 896.62,
+   "kind": "callout",
+   "figure": "Vacío",
+   "caption": "En agosto el vivero ya vendió lo del año",
+   "accent": "danger",
+   "hue": "red",
+   "image": "img/vj2l6qtv0c98_p_13.png",
+   "dur": 5.1
+  },
+  {
+   "id": "error_r7",
+   "start": 901.8,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "broll/vj2_hands_planting_soil.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "error_c8",
+   "start": 904.58,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "Cosechás lo que guardaste *vivo* en la tierra",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 4.3
+  },
+  {
+   "id": "error_c9",
+   "start": 908.78,
+   "kind": "cross",
+   "title": "La planta se para, no se muere",
+   "hue": "cold",
+   "layers": [
+    {
+     "label": "Luz de invierno",
+     "depth": "escasa",
+     "color": "rgba(150,160,170,0.4)",
+     "weight": 0.7
+    },
+    {
+     "label": "La planta",
+     "depth": "viva, parada",
+     "color": "rgba(120,170,90,0.55)",
+     "weight": 1
+    },
+    {
+     "label": "La tierra",
+     "color": "rgba(90,70,50,0.8)",
+     "weight": 1.1
+    }
+   ],
+   "marker": {
+    "label": "sin crecer",
+    "atDepth": 0.5,
+    "color": "danger"
+   },
+   "dur": 8
+  },
+  {
+   "id": "error_c10",
+   "start": 916.92,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "No depende del frío. Depende de la *luz*",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "error_r11",
+   "start": 921.5,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/vj2_seed_packet_hand.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "error_c12",
+   "start": 924.48,
+   "kind": "stat",
+   "value": 10,
+   "prefix": "<",
+   "suffix": " h",
+   "label": "Horas de luz al día",
+   "eyebrow": "Y la planta se para",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 5.1
+  },
+  {
+   "id": "error_c13",
+   "start": 929.68,
+   "kind": "aged",
+   "heading": "El periodo de Perséfone",
+   "lines": [
+    {
+     "text": "Menos de 10 h de luz"
+    },
+    {
+     "text": "No crece nada. Nada.",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "cold",
+   "dur": 6.7
+  },
+  {
+   "id": "error_c14",
+   "start": 936.48,
+   "kind": "process",
+   "title": "Tiene que llegar ya crecida",
+   "accent": "danger",
+   "hue": "cold",
+   "steps": [
+    {
+     "title": "Sembrás en agosto"
+    },
+    {
+     "title": "Crece grande"
+    }
+   ],
+   "dur": 5.1
+  },
+  {
+   "id": "error_r15",
+   "start": 969.04,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/vj2_hands_sowing_seeds.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "error_c16",
+   "start": 971.48,
+   "kind": "vs",
+   "title": "El mismo cultivo, dos siembras",
+   "left": {
+    "tag": "Septiembre",
+    "title": "Enano parado",
+    "sub": "pasás hambre"
+   },
+   "right": {
+    "tag": "Agosto",
+    "title": "Ya hecha",
+    "sub": "comés en enero"
+   },
+   "hue": "amber",
+   "dur": 7.5
+  },
+  {
+   "id": "error_c17",
+   "start": 979.04,
+   "kind": "callout",
+   "figure": "Vacío",
+   "caption": "En agosto el vivero ya vendió lo del año",
+   "accent": "danger",
+   "hue": "red",
+   "image": "img/vj2l6qtv0c98_p_13.png",
+   "dur": 5.1
+  },
+  {
+   "id": "error_c18",
+   "start": 984.16,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "Cosechás lo que guardaste *vivo* en la tierra",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 4.3
+  },
+  {
+   "id": "error_r19",
+   "start": 988.44,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/vj2_seedling_growing.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "error_c20",
+   "start": 991.56,
+   "kind": "cross",
+   "title": "La planta se para, no se muere",
+   "hue": "cold",
+   "layers": [
+    {
+     "label": "Luz de invierno",
+     "depth": "escasa",
+     "color": "rgba(150,160,170,0.4)",
+     "weight": 0.7
+    },
+    {
+     "label": "La planta",
+     "depth": "viva, parada",
+     "color": "rgba(120,170,90,0.55)",
+     "weight": 1
+    },
+    {
+     "label": "La tierra",
+     "color": "rgba(90,70,50,0.8)",
+     "weight": 1.1
+    }
+   ],
+   "marker": {
+    "label": "sin crecer",
+    "atDepth": 0.5,
+    "color": "danger"
+   },
+   "dur": 8
+  },
+  {
+   "id": "error_c21",
+   "start": 999.38,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "text": "No depende del frío. Depende de la *luz*",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 4.3
+  },
+  {
+   "id": "error_c22",
+   "start": 1003.86,
+   "kind": "stat",
+   "value": 10,
+   "prefix": "<",
+   "suffix": " h",
+   "label": "Horas de luz al día",
+   "eyebrow": "Y la planta se para",
+   "accent": "danger",
+   "hue": "cold",
+   "dur": 5.1
+  },
+  {
+   "id": "error_r23",
+   "start": 1008.88,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/vj2_root_cellar_crates.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "error_rc24",
+   "start": 1012.94,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/vj2_hand_soil_seed.mp4",
+   "hue": "cold",
+   "darken": 0
+  },
+  {
+   "id": "cierre_c0",
+   "start": 1015.12,
+   "kind": "checklist",
+   "title": "Los 5, en orden",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Espinaca directa",
+     "state": "done"
+    },
+    {
+     "text": "Zanahoria bajo paja",
+     "state": "done"
+    }
+   ],
+   "dur": 4.8
+  },
+  {
+   "id": "cierre_c1",
+   "start": 1034.82,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "La regla de oro",
+   "text": "Sembrá en agosto, no en *octubre*",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 5.1
+  },
+  {
+   "id": "cierre_c2",
+   "start": 1039.86,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "Contame",
+   "chips": [
+    "dónde vivís",
+    "cuándo hiela"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "cierre_r3",
+   "start": 1042.68,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/vj2_hands_harvest_basket.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "cierre_c4",
+   "start": 1045.2,
+   "kind": "aged",
+   "heading": "Una caja, arena y hojas secas",
+   "lines": [
+    {
+     "text": "Zanahorias crujientes en marzo"
+    },
+    {
+     "text": "Sin nevera, sin electricidad",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "image": "img/vj2l6qtv0c98_p_14.png",
+   "dur": 6.7
+  },
+  {
+   "id": "cierre_c5",
+   "start": 1052.06,
+   "kind": "callout",
+   "figure": "Agosto",
+   "caption": "Todavía estás a tiempo, por unas semanas",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 4.3
+  },
+  {
+   "id": "cierre_c6",
+   "start": 1056.7,
+   "kind": "bars",
+   "title": "Tu huerta vs el súper",
+   "orientation": "horizontal",
+   "hue": "amber",
+   "bars": [
+    {
+     "label": "Tu tierra",
+     "value": 100,
+     "display": "6 meses",
+     "tone": "good",
+     "winner": true
+    },
+    {
+     "label": "El súper",
+     "value": 35,
+     "display": "el doble caro",
+     "tone": "danger"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "cierre_r7",
+   "start": 1063.56,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/vj2_harvest_basket.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "cierre_c8",
+   "start": 1067.1,
+   "kind": "checklist",
+   "title": "Los 5, en orden",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Espinaca directa",
+     "state": "done"
+    },
+    {
+     "text": "Zanahoria bajo paja",
+     "state": "done"
+    }
+   ],
+   "dur": 4.8
+  },
+  {
+   "id": "cierre_c9",
+   "start": 1071.94,
+   "kind": "quote",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "eyebrow": "La regla de oro",
+   "text": "Sembrá en agosto, no en *octubre*",
+   "accent": "accent",
+   "hue": "amber",
+   "dur": 5.1
+  },
+  {
+   "id": "cierre_c10",
+   "start": 1077.14,
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/vj2l6qtv0c98_p_00.png",
+   "title": "Contame",
+   "chips": [
+    "dónde vivís",
+    "cuándo hiela"
+   ],
+   "hue": "amber",
+   "dur": 3.1
+  },
+  {
+   "id": "cierre_r11",
+   "start": 1080.14,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/vj2_rain_garden_soil.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "cierre_c12",
+   "start": 1084.94,
+   "kind": "aged",
+   "heading": "Una caja, arena y hojas secas",
+   "lines": [
+    {
+     "text": "Zanahorias crujientes en marzo"
+    },
+    {
+     "text": "Sin nevera, sin electricidad",
+     "mark": true
+    }
+   ],
+   "accent": "accent",
+   "hue": "amber",
+   "image": "img/vj2l6qtv0c98_p_14.png",
+   "dur": 6.7
+  },
+  {
+   "id": "cierre_c13",
+   "start": 1104.66,
+   "kind": "callout",
+   "figure": "Agosto",
+   "caption": "Todavía estás a tiempo, por unas semanas",
+   "accent": "good",
+   "hue": "amber",
+   "dur": 4.3
+  },
+  {
+   "id": "cierre_c14",
+   "start": 1109.32,
+   "kind": "bars",
+   "title": "Tu huerta vs el súper",
+   "orientation": "horizontal",
+   "hue": "amber",
+   "bars": [
+    {
+     "label": "Tu tierra",
+     "value": 100,
+     "display": "6 meses",
+     "tone": "good",
+     "winner": true
+    },
+    {
+     "label": "El súper",
+     "value": 35,
+     "display": "el doble caro",
+     "tone": "danger"
+    }
+   ],
+   "dur": 6.7
+  },
+  {
+   "id": "cierre_r15",
+   "start": 1115.88,
+   "dur": 2.5,
+   "kind": "raw",
+   "src": "broll/vj2_kale_winter_garden.mp4",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "cierre_c16",
+   "start": 1118.74,
+   "kind": "checklist",
+   "title": "Los 5, en orden",
+   "accent": "good",
+   "hue": "amber",
+   "items": [
+    {
+     "text": "Espinaca directa",
+     "state": "done"
+    },
+    {
+     "text": "Zanahoria bajo paja",
+     "state": "done"
+    }
+   ],
+   "dur": 4.8
+  }
+ ]
+}
