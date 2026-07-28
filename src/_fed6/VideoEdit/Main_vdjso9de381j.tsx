@@ -16,6 +16,7 @@ import { FocusCardsVdj } from "./FocusCards_vdjso9de381j";
 import { HeadlineVdj } from "./Headline_vdjso9de381j";
 import { CalloutVdj } from "./Callout_vdjso9de381j";
 import { BoardVdj } from "./Board_vdjso9de381j";
+import { RuleVdj } from "./Rule_vdjso9de381j";
 import { F_INTER } from "./kit/premium/theme";
 import { FEDZ_BEATS } from "./federer_vdjso9de381j_beats";
 import { FEDZ_BROLL } from "./federer_vdjso9de381j_broll";
@@ -140,6 +141,9 @@ function buildWindows(): AvatarWindow[] {
 }
 const AVATAR_WINDOWS = buildWindows();
 
+const ruleIx = new Map<string, number>();
+compBeats.filter((b: any) => b.kind === "rule").forEach((b: any, i: number) => ruleIx.set(b.id, i));
+
 const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag");
 const CTA_AT = ctaBeat ? ctaBeat.start : VIDEO_END - 12;
 
@@ -158,6 +162,11 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "headline" ? <HeadlineVdj durationInFrames={d} tokens={b.tokens} eyebrow={b.eyebrow} />
   // `callout` del kit = CalloutMark, que espera {figure, caption, image}. Los directores mandan
   // {title, text} → tarjeta VACÍA (el creador la vio en 0:34). Variante propia con título+cuerpo.
+  // `rule` del kit = ChapterTitle, que trae number/title/sub HARDCODEADOS como defaults de
+  // parámetro ("III · El error que arruina todo"). Sin `title` los 22 rule del video salían
+  // IDÉNTICOS (el creador los vio repetidos en 21:30). Acá `rule` es una FRASE-ANCLA, no un
+  // capítulo: variante propia sin numerar, con la frase sola y la alineación rotando.
+  : b.kind === "rule" ? <RuleVdj durationInFrames={d} title={b.title} eyebrow={b.eyebrow} variant={ruleIx.get(b.id) ?? 0} />
   : b.kind === "callout" ? <CalloutVdj durationInFrames={d} title={b.title} text={b.text} eyebrow={b.eyebrow} />
   // `board` del kit = PizarraExplica, pensada para convivir con el avatar al costado: acá quedaba
   // encajonada, con el número TAPANDO el título y 2/3 de tarjeta vacía (el creador la vio en 4:12).
@@ -168,7 +177,16 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "splitlist" || b.kind === "chips"
     ? <BoardVdj durationInFrames={d} title={b.title} eyebrow={b.eyebrow}
         items={(b.items || b.chips || []).map((it: any) => (typeof it === "string" ? { title: it } : { title: it.text ?? it.title, sub: it.sub }))} />
-  : renderFederer2Comp(b, d, { medico: true });
+  // ⛔ El kit tiene textos HARDCODEADOS como default de parámetro, varios de OTROS canales
+  // ("Paso a paso", "Por dentro", "Antes de empezar, tené esto", "Tomás Herrera"…). En JS el
+  // default salta con `undefined`, así que un prop que el director no escribió imprime el texto
+  // de otro video. Pasando "" se suprime. Esto es lo mismo que hizo aparecer 22 veces
+  // "III · El error que arruina todo".
+  : renderFederer2Comp(
+      { ...b, eyebrow: b.eyebrow ?? "", title: b.title ?? (b.kind === "checklist" ? "" : b.title) },
+      d,
+      { medico: true }
+    );
 
 export const MainVdj: React.FC = () => {
   const hookStart = 2.4;
