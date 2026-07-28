@@ -1,41 +1,33 @@
-// PUENTE DE AUDITORIA de v43tq6jgz3dw — NO se renderiza. Build real: src/_fed6/VideoEdit/Main_v43tq6jgz3dw.tsx
+// PUENTE DE AUDITORIA — build real: src/_fed6/VideoEdit/Main_v43tq6jgz3dw.tsx
 export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw";
 /* ASSET_MANIFEST
  * 1.20s  <LowerThird />
  * 9.06s  <FraseCinetica />
- * 10.98s  <FraseCinetica />
  * 21.47s  <LoopLockV43 />
  * 30.00s  <AvatarKeyword />
- * 31.36s  <ErrorStinger />
  * 34.30s  <FraseCinetica />
  * 41.70s  <LowerThird />
  * 58.34s  <LowerThird />
  * 62.44s  <ErrorStinger />
  * 66.30s  <RawShot src="img/p_v43tq6jgz3dw_lee_paper.png" />
  * 70.90s  <AvatarPizarra />
- * 70.90s  <LowerThird />
  * 86.12s  <LowerThird />
  * 89.98s  <FraseCinetica />
  * 98.82s  <BigStatReveal />
  * 107.67s  <CalloutMark />  "img/p_v43tq6jgz3dw_lee_paper.png"
- * 109.38s  <ChecklistReveal />
  * 119.56s  <FraseCinetica />
  * 120.54s  <ErrorStinger />
  * 129.88s  <CalloutMark />
- * 129.88s  <FraseCinetica />
- * 132.02s  <ErrorStinger />
  * 140.84s  <BulletCascade />
  * 143.94s  <FraseCinetica />
  * 149.54s  <MitoVerdad />
  * 154.56s  <ErrorStinger />
- * 156.78s  <ChecklistReveal />
  * 159.16s  <BarCompare />
  * 164.50s  <BigStatReveal />
  * 174.28s  <FraseCinetica />
+ * 174.28s  <LowerThird />
  * 180.89s  <LowerThird />
- * 183.02s  <LowerThird />
  * 183.05s  <PullQuote />  "img/p_v43tq6jgz3dw_consulta_elsa.png"
- * 184.54s  <ChecklistReveal />
  * 194.42s  <LowerThird />
  * 202.68s  <BigStatReveal />
  * 218.54s  <ErrorStinger />
@@ -44,51 +36,46 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 248.20s  <FraseCinetica />
  * 262.26s  <RawShot src="img/p_v43tq6jgz3dw_mira_analisis.png" />
  * 262.26s  <FraseCinetica />
+ * 262.26s  <LowerThird />
  * 263.92s  <BarCompare />
- * 263.92s  <BigStatReveal />
  * 283.96s  <BulletCascade />
  * 292.30s  <BulletCascade />
  * 299.22s  <ErrorStinger />
- * 299.22s  <ErrorStinger />
  * 306.82s  <ErrorStinger />
  * 308.74s  <FraseCinetica />
+ * 311.28s  <ErrorStinger />
  * 320.46s  <RawShot src="img/p_v43tq6jgz3dw_escribe_lista.png" />
  * 320.46s  <LowerThird />
  * 322.86s  <BigStatReveal />
  * 325.02s  <RawShot src="img/p_v43tq6jgz3dw_revisa_coronilla.png" />
  * 328.62s  <LowerThird />
  * 354.02s  <ErrorStinger />
+ * 359.10s  <LowerThird />
  * 363.52s  <AvatarPizarra />
- * 363.52s  <LowerThird />
- * 364.34s  <LowerThird />
  * 371.54s  <LowerThird />
  * 382.64s  <FraseCinetica />
- * 383.12s  <FraseCinetica />
  * 388.01s  <RawShot src="img/p_v43tq6jgz3dw_seis_alimentos_mesa.png" />
  * 388.08s  <BulletCascade />
  * 395.28s  <ChapterTitle />
- * 395.28s  <LowerThird />
  * 402.22s  <ErrorStinger />
  * 408.28s  <BigStatReveal />
  * 420.84s  <BigStatReveal />
  * 421.92s  <RawShot src="img/p_v43tq6jgz3dw_muele_sesamo.png" />
- * 423.22s  <BigStatReveal />
  * 429.74s  <BigStatReveal />
  * 440.12s  <ErrorStinger />
- * 440.12s  <ErrorStinger />
  * 442.66s  <LowerThird />
+ * 444.08s  <ErrorStinger />
  * 452.88s  <NumberedSteps />
  *        "img/p_v43tq6jgz3dw_muele_sesamo.png"
  *        "img/p_v43tq6jgz3dw_muele_sesamo.png"
  *        "img/p_v43tq6jgz3dw_dos_frascos_sesamo.png"
- * 455.50s  <BulletCascade />
  * 470.71s  <RawShot src="img/p_v43tq6jgz3dw_dos_frascos_sesamo.png" />
  * 476.02s  <FraseCinetica />
  * 486.10s  <FraseCinetica />
  * 487.04s  <ChapterTitle />
- * 487.04s  <LowerThird />
  * 497.96s  <FraseCinetica />
  * 506.47s  <BarCompare />
+ * 516.02s  <LowerThird />
  * 516.20s  <CalloutMark />
  * 522.42s  <BigStatReveal />
  * 529.78s  <BigStatReveal />
@@ -96,6 +83,7 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 546.62s  <BulletCascade />
  * 548.16s  <LowerThird />
  * 564.26s  <FraseCinetica />
+ * 564.64s  <LowerThird />
  * 580.46s  <LowerThird />
  * 588.32s  <ChecklistReveal />
  * 601.66s  <ErrorStinger />
@@ -105,13 +93,11 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 630.54s  <LowerThird />
  * 642.76s  <LowerThird />
  * 648.94s  <PullQuote />  "img/p_v43tq6jgz3dw_consulta_elsa.png"
- * 648.94s  <FraseCinetica />
  * 651.36s  <LowerThird />
  * 662.57s  <MitoVerdad />
  * 674.66s  <ErrorStinger />
  * 677.46s  <FraseCinetica />
  * 689.84s  <BarCompare />
- * 689.84s  <BigStatReveal />
  * 705.58s  <FraseCinetica />
  * 708.14s  <MitoVerdad />
  * 712.04s  <RawShot src="img/p_v43tq6jgz3dw_mito_romero_cebolla.png" />
@@ -120,7 +106,6 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 740.02s  <ChapterTitle />
  * 742.74s  <LowerThird />
  * 752.26s  <AvatarPizarra />
- * 752.52s  <FraseCinetica />
  * 761.50s  <LowerThird />
  * 774.80s  <LowerThird />
  * 777.62s  <ErrorStinger />
@@ -135,37 +120,30 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 824.48s  <ChecklistReveal />
  * 832.40s  <FraseCinetica />
  * 842.96s  <ChapterTitle />
- * 842.96s  <LowerThird />
  * 844.78s  <LowerThird />
  * 850.88s  <MitoVerdad />
- * 852.08s  <ErrorStinger />
  * 868.30s  <RawShot src="img/p_v43tq6jgz3dw_separa_yema.png" />
  * 868.30s  <BulletCascade />
+ * 869.24s  <LowerThird />
  * 871.88s  <AvatarKeyword />
  * 878.00s  <FraseCinetica />
  * 896.70s  <LowerThird />
  * 903.14s  <LowerThird />
  * 912.66s  <CalloutMark />  "img/p_v43tq6jgz3dw_separa_yema.png"
- * 912.66s  <BigStatReveal />
  * 929.38s  <ChapterTitle />
  * 931.04s  <LowerThird />
  * 939.34s  <LowerThird />
  * 940.66s  <BigStatReveal />
  * 944.02s  <BigStatReveal />
  * 953.02s  <BarCompare />
- * 953.02s  <FraseCinetica />
  * 977.20s  <BigStatReveal />
  * 981.32s  <RawShot src="img/p_v43tq6jgz3dw_exprime_limon_lentejas.png" />
  * 987.96s  <ErrorStinger />
- * 987.96s  <ErrorStinger />
- * 990.08s  <ErrorStinger />
  * 994.98s  <BulletCascade />
  * 1000.72s  <LowerThird />
  * 1007.82s  <BigStatReveal />
  * 1016.54s  <LowerThird />
  * 1017.72s  <ChapterTitle />
- * 1020.16s  <BigStatReveal />
- * 1020.50s  <BigStatReveal />
  * 1021.70s  <LowerThird />
  * 1022.72s  <AvatarPizarra />
  * 1055.46s  <LowerThird />
@@ -173,52 +151,49 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 1070.34s  <LowerThird />
  * 1084.62s  <LowerThird />
  * 1086.88s  <FraseCinetica />
- * 1088.50s  <FraseCinetica />
  * 1090.20s  <RawShot src="img/p_v43tq6jgz3dw_parte_chocolate.png" />
  * 1090.20s  <BigStatReveal />
  * 1095.48s  <ErrorStinger />
- * 1096.18s  <ErrorStinger />
  * 1104.96s  <LowerThird />
  * 1116.76s  <FraseCinetica />
  * 1118.98s  <ErrorStinger />
  * 1134.70s  <BigStatReveal />
- * 1137.54s  <CalloutMark />  "img/p_v43tq6jgz3dw_revisa_coronilla.png"
  * 1151.80s  <BigStatReveal />
- * 1154.36s  <BarCompare />
  * 1156.84s  <LowerThird />
  * 1166.38s  <BigStatReveal />
+ * 1176.94s  <LowerThird />
  * 1180.46s  <RawShot src="img/p_v43tq6jgz3dw_orden_analisis.png" />
  * 1182.80s  <LowerThird />
  * 1195.94s  <ChecklistReveal />
  * 1203.28s  <ErrorStinger />
  * 1206.38s  <FraseCinetica />
+ * 1209.52s  <LowerThird />
  * 1213.88s  <ErrorStinger />
- * 1216.28s  <ChecklistReveal />
- * 1216.28s  <ErrorStinger />
  * 1231.40s  <LowerThird />
+ * 1237.66s  <ErrorStinger />
  * 1247.54s  <ErrorStinger />
+ * 1249.48s  <LowerThird />
  * 1252.24s  <ErrorStinger />
- * 1252.24s  <FraseCinetica />
  * 1255.60s  <BarCompare />
- * 1255.60s  <LowerThird />
  * 1267.58s  <BigStatReveal />
  * 1269.90s  <LowerThird />
  * 1271.44s  <BigStatReveal />
- * 1274.22s  <BulletCascade />
  * 1278.78s  <BulletCascade />
  * 1286.14s  <LowerThird />
  * 1296.30s  <RawShot src="img/p_v43tq6jgz3dw_mate_y_reloj.png" />
  * 1296.30s  <LowerThird />
  * 1298.74s  <GuardaEsto />
+ * 1309.24s  <FraseCinetica />
  * 1314.00s  <FraseCinetica />
  * 1322.80s  <LowerThird />
- * 1338.04s  <ErrorStinger />
+ * 1329.08s  <ErrorStinger />
  * 1338.04s  <ErrorStinger />
  * 1342.02s  <BigStatReveal />
  * 1351.42s  <AvatarKeyword />
  * 1352.64s  <FraseCinetica />
  * 1356.44s  <LowerThird />
  * 1364.76s  <LowerThird />
+ * 1379.98s  <LowerThird />
  * 1383.28s  <RawShot src="img/p_v43tq6jgz3dw_frasco_zinc.png" />
  * 1387.74s  <FraseCinetica />
  * 1396.16s  <BulletCascade />
@@ -230,10 +205,9 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  *        "img/p_v43tq6jgz3dw_card_lentejas.png"
  *        "img/p_v43tq6jgz3dw_card_cacao.png"
  * 1439.30s  <GuardaEsto />
- * 1439.30s  <FraseCinetica />
  * 1447.42s  <DocNameCard />  "img/p_v43tq6jgz3dw_orden_analisis.png"
  * 1455.72s  <SplitPanel />  "img/p_v43tq6jgz3dw_escribe_lista.png"
- * 1455.72s  <LowerThird />
+ * 1462.84s  <LowerThird />
  * 1467.90s  <LowerThird />
  * 1470.58s  <LowerThird />
  * 1476.96s  <LowerThird />
@@ -241,7 +215,6 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 1488.12s  <RawShot src="img/p_v43tq6jgz3dw_cierre_elsa.png" />
  * 1514.32s  <FraseCinetica />
  * 1521.94s  <FraseCinetica />
- * 1525.90s  <FraseCinetica />
  * 1525.90s  <FraseCinetica />
  * 6.80s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_001.mp4"
  * 10.98s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_002.mp4"

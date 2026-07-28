@@ -400,6 +400,37 @@ for (const b of beats) {
 }
 console.log(`stats: ${statNum} numéricos · ${statCallout} pasados a callout (valor no numérico)`);
 
+// ── DES-SOLAPAR COMPONENTES A PANTALLA COMPLETA ──────────────────────────────────────────────
+// Con 144 beats extra inyectados por frase, dos componentes FULL pueden caer casi en el mismo
+// instante y se dibujan uno encima del otro (se vio en la cuadrícula: dos `stat` superpuestos,
+// ilegibles). Los OVERLAY (lowerthird/frasecinetica) sí pueden convivir con lo de atrás —van
+// diseñados para eso— pero no entre ellos ni con un FULL.
+// Se separa POR ZONA DE PANTALLA, no por "es overlay o no": LowerThird vive en la banda
+// inferior y FraseCinetica en el centro, así que esos dos NO se estorban entre sí — solo
+// choca cada uno consigo mismo. Los componentes a pantalla completa sí compiten todos contra
+// todos, y además no pueden arrancar justo encima de un overlay.
+const ZONA = (k) => (k === "lowerthird" ? "banda" : k === "frasecinetica" ? "centro" : "full");
+const FULLC = new Set(["stat", "callout", "bars", "checklist", "splitlist", "chips", "process",
+  "quote", "headline", "rule", "nametag", "board", "diagram", "guardaesto", "mitoverdad",
+  "errorstinger", "focuscards", "looplock", "freezezoom", "avatarpizarra", "avatarkeyword"]);
+const MIN_SEP = { full: 3.0, banda: 2.2, centro: 2.2 };
+let dropped = 0;
+const keep = [];
+const last = { full: -99, banda: -99, centro: -99 };
+for (const b of beats.sort((a, c) => a.start - c.start)) {
+  // `talk` (avatar) y `raw` (foto a pantalla completa) NO son componentes del kit: no compiten
+  // por la misma capa y no deben desplazar a nadie. Pasan derecho.
+  if (b.kind === "talk" || b.kind === "raw") { keep.push(b); continue; }
+  const z = ZONA(b.kind);
+  if (b.start - last[z] < MIN_SEP[z]) { dropped++; continue; }
+  // un overlay no arranca pegado a un componente full (el full tapa todo y no se lee)
+  if (z !== "full" && Math.abs(b.start - last.full) < 0.9) { dropped++; continue; }
+  last[z] = b.start;
+  keep.push(b);
+}
+beats.length = 0; beats.push(...keep);
+console.log(`des-solape: -${dropped} beats que pisaban a otro · quedan ${beats.length}`);
+
 // ── POST-PASS MILIMÉTRICO ───────
 const KIT_CLIPS = [];
 for (const beat of beats) {
