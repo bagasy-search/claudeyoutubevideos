@@ -56,8 +56,12 @@ informativo y se vuelve una persona.
 ⛔ **Error que arruina el audio:** escribir `suspiro` o `chasquido de dedos` en el texto. El TTS
 lee esa palabra en voz alta y el video queda ridículo.
 
-Los sonidos que v3 SÍ sabe hacer van entre corchetes:
-`[sighs]` `[clears throat]` `[chuckles]` `[whispers]` `[laughs]` `[exhales]`
+⛔ **Y OJO: no todos los tags funcionan.** Medido el 28/07 sobre tres videos reales: `[clears
+throat]` la voz lo EJECUTA, pero **`[chuckles]` y `[whispers]` los LEE EN VOZ ALTA** como palabras
+—salió *"estaba mi abuelo con su asada, Chuckles"*— con el crédito ya gastado.
+
+**Tags permitidos: SOLO `[clears throat]` y `[sighs]`.** Para reír o susurrar, decilo en el TEXTO
+("y me río, posta", "te lo digo bajito") en vez de pedírselo al tag.
 
 Los que NO son tags se escriben **fonéticamente**, para que la voz los pronuncie de verdad:
 `mm` · `mhm` · `ehh` · `este...` · `tsck` · `aj` · `bah` · `uf`
@@ -66,7 +70,7 @@ Los que NO son tags se escriben **fonéticamente**, para que la voz los pronunci
 |---|---|
 | suspiro | `[sighs]` |
 | cof cof | `[clears throat]` |
-| jha jha | `[chuckles]` |
+| jha jha | se escribe en el texto ("y me río") — el tag lo lee en voz alta |
 | chasquido de dedos | se saca, o se reemplaza por `este...` |
 | mm / mhm / ehh / tsck | tal cual, se pronuncian |
 
