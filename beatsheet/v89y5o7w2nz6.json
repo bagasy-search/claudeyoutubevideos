@@ -2300,14 +2300,11 @@
    "start": 654.96,
    "dur": 4.6,
    "key": "medidas_descripcion",
-   "kind": "guardaesto",
+   "kind": "lowerthird",
    "title": "Antes de seguir",
-   "items": [
-    {
-     "text": "Abrí la descripción y anotá las medidas",
-     "image": "img/p_v89y5o7w2nz6_guia_impresa.jpg"
-    }
-   ]
+   "desc": "Abrí la descripción y anotá las medidas",
+   "kicker": "Antes de seguir",
+   "tone": "teal"
   },
   {
    "id": "medidas_descripcion_2",
@@ -2879,14 +2876,11 @@
    "start": 820.84,
    "dur": 4.6,
    "key": "rinon_cansado",
-   "kind": "checklist",
+   "kind": "lowerthird",
    "title": "Riñón cansado",
-   "items": [
-    {
-     "text": "El potasio también hay que hablarlo con el médico",
-     "state": "warn"
-    }
-   ]
+   "desc": "El potasio también hay que hablarlo con el médico",
+   "kicker": "Riñón cansado",
+   "tone": "teal"
   },
   {
    "id": "rinon_cansado_1",

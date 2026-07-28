@@ -161,6 +161,25 @@ for (const beat of beats) {
     beat.chips = beat.items.map((i) => (i.sub ? i.title + ": " + i.sub : i.title));
     delete beat.items; delete beat.side; beat.kind = 'chips';
   }
+  // Una lista de UN SOLO ítem revienta el render: con count=1, `spreadAt` del kit devuelve
+  // siempre el paso mínimo de 9 frames, y `useRack` interpola en [at-6, at+8, next-2, next+14]
+  // → next-2 (19) cae ANTES que at+8 (20), el inputRange deja de ser creciente y Remotion aborta
+  // ese frame. No hay duración que lo arregle. Esos van como zócalo, que no usa rack-focus.
+  {
+    const LIST = ["checklist", "splitlist", "process", "guardaesto", "chips", "bars", "board", "ingredients"];
+    const arr = beat.items || beat.steps || beat.chips || beat.bars;
+    if (LIST.includes(beat.kind) && Array.isArray(arr) && arr.length === 1) {
+      const it = arr[0];
+      const txt = typeof it === "string" ? it : (it.text || it.title || it.label || "");
+      const sub = typeof it === "object" ? (it.sub || it.desc || it.note || "") : "";
+      beat.desc = sub || txt;
+      beat.kicker = beat.eyebrow || beat.title || "";
+      beat.title = beat.title && txt !== beat.title ? beat.title : txt;
+      beat.tone = beat.tone || "teal";
+      delete beat.items; delete beat.steps; delete beat.chips; delete beat.bars; delete beat.side; delete beat.unit;
+      beat.kind = "lowerthird";
+    }
+  }
   if (beat.at) delete beat.at;
   if (beat.name) delete beat.name;
 }
