@@ -134,10 +134,12 @@ const renderComp = (b: any, d: number) =>
   // barra y se encima con el título (se vio en la cuadrícula: "12 mg" pisando "EL CAMPEÓN ABSOLUTO").
   // En horizontal el valor va al costado de la barra, así que nunca choca con el encabezado.
   // Se resuelve acá y no en scenes/BarCompare.tsx porque ese archivo es COMPARTIDO con otros videos.
-  // Sin `eyebrow`: el header (eyebrow + title) se dibuja desde top:0 y el área del gráfico
-  // arranca en 190px fijos, así que con las dos líneas la primera barra queda encimada.
-  // Con solo el título entra holgado.
-  : b.kind === "bars" ? <BarCompare durationInFrames={d} title={b.title} unit={b.unit}
+  // Sin `title` ni `eyebrow`: el header se dibuja desde top:0 pero las barras horizontales
+  // se reparten en TODO el alto del panel, así que el encabezado termina cruzando la primera
+  // fila (se vio dos veces en la cuadrícula: "Cobre cada 100 g" encima de "Sésamo 4 mg").
+  // Las etiquetas de cada barra + la unidad ya dicen todo, y el contexto lo da la narración.
+  // No se arregla en scenes/BarCompare.tsx porque ese archivo es COMPARTIDO con otros videos.
+  : b.kind === "bars" ? <BarCompare durationInFrames={d} unit={b.unit}
       accent="accent" medico orientation="horizontal"
       bars={(b.bars || []).map((x: any) => ({ label: x.label, value: x.value, tone: x.tone, winner: x.winner, note: x.note }))} />
   : renderFederer2Comp(b, d, { medico: true });
