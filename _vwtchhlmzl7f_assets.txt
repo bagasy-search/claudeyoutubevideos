@@ -117,6 +117,8 @@ img/vwtchhlmzl7f_bg_px_glass_jar_lid.jpg
 img/vwtchhlmzl7f_cascaras_frasco_vinagre.jpg
 img/vwtchhlmzl7f_bg_px_berries_bowl.jpg
 broll/vwtchhlmzl7f/px_eggshells.mp4
+img/vwtchhlmzl7f_lancaster_campo.jpg
+img/vwtchhlmzl7f_frasco_marron_estante.jpg
 img/vwtchhlmzl7f_bg_px_brown_bottle_blur.jpg
 img/vwtchhlmzl7f_bg_px_hand_bottle_blur.jpg
 img/vwtchhlmzl7f_bg_px_oxygen_bubbles_blur.jpg
@@ -197,3 +199,5 @@ img/vwtchhlmzl7f_bg_px_eggshells_blur.jpg
 img/vwtchhlmzl7f_bg_px_glass_jar_lid_blur.jpg
 img/vwtchhlmzl7f_cascaras_frasco_vinagre_blur.jpg
 img/vwtchhlmzl7f_bg_px_berries_bowl_blur.jpg
+img/vwtchhlmzl7f_lancaster_campo_blur.jpg
+img/vwtchhlmzl7f_frasco_marron_estante_blur.jpg
