@@ -119,6 +119,16 @@ const AVATAR_WINDOWS = buildWindows();
 const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag");
 const CTA_AT = ctaBeat ? ctaBeat.start : VIDEO_END - 12;
 
+// Deja como mucho 2 barras: la ganadora (o la de mayor valor) y su rival más alto.
+const pickTwoBars = (bars: any[]) => {
+  const norm = bars.map((x: any) => ({ label: x.label, value: x.value, tone: x.tone, winner: x.winner, note: x.note }));
+  if (norm.length <= 2) return norm;
+  const win = norm.find((x) => x.winner) || [...norm].sort((a, b) => b.value - a.value)[0];
+  const rival = [...norm].filter((x) => x !== win).sort((a, b) => b.value - a.value)[0];
+  // se respeta el orden original para que el ganador no salte de lugar
+  return norm.filter((x) => x === win || x === rival);
+};
+
 const renderComp = (b: any, d: number) =>
   b.kind === "avatarpizarra" ? <AvatarPizarra durationInFrames={d} items={b.items} avatar={b.clip || AVA} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} />
   : b.kind === "avatarkeyword" ? <AvatarKeyword durationInFrames={d} items={b.items} avatar={b.clip || AVA} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} />
@@ -139,9 +149,12 @@ const renderComp = (b: any, d: number) =>
   // fila (se vio dos veces en la cuadrícula: "Cobre cada 100 g" encima de "Sésamo 4 mg").
   // Las etiquetas de cada barra + la unidad ya dicen todo, y el contexto lo da la narración.
   // No se arregla en scenes/BarCompare.tsx porque ese archivo es COMPARTIDO con otros videos.
+  // Máximo DOS barras: con tres, la primera fila se corta contra el borde del panel
+  // (visto en la cuadrícula). Se queda la ganadora y su contrincante más fuerte, que es
+  // donde está la comparación que importa.
   : b.kind === "bars" ? <BarCompare durationInFrames={d} unit={b.unit}
       accent="accent" medico orientation="horizontal"
-      bars={(b.bars || []).map((x: any) => ({ label: x.label, value: x.value, tone: x.tone, winner: x.winner, note: x.note }))} />
+      bars={pickTwoBars(b.bars || [])} />
   : renderFederer2Comp(b, d, { medico: true });
 
 // ── Endcard ES (inline, aislado — no toca el Endcard compartido) ──────────────────────────
