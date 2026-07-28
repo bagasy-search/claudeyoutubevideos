@@ -1666,12 +1666,15 @@
       "id": "cmp_aviso_tanaceto_s04_muro",
       "start": 543.9,
       "dur": 7.1,
-      "kind": "mistake",
-      "number": "!",
+      "kind": "impact",
       "eyebrow": "AVISO",
-      "title": "El tanaceto es perenne",
-      "desc": "Vuelve cada año y se expande solo.",
-      "image": "img/still_vh_s04_tansy.jpg"
+      "setup": "El tanaceto es perenne",
+      "impact": "Se expande solo.",
+      "impactAccent": "amber",
+      "hitAt": 1.1,
+      "boom": 0,
+      "darken": 0.45,
+      "image": "broll/vah3z2zzciut/vh_s04_tansy.mp4"
     },
     {
       "id": "b104",

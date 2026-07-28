@@ -131,6 +131,17 @@
   9:05, lo cazó el `blackdetect` del chequeo técnico del farm, no la cuadrícula). Solución: para
   esos kinds sacar UN fotograma del clip con ffmpeg y pasar el jpg. Los demás (callout, chips,
   numcard, aged, impact, growthtimeline, tool, lielist, keyphrase, quote) sí aceptan video de fondo.
+- 2026-07-28 — ⛔ **`MistakeCard` RENDERIZA NEGRO. NO USARLO hasta que se arregle.** (Corrige mi
+  diagnóstico anterior: no era que recibiera un mp4.) `src/VideoEdit/scenes/MistakeCard.tsx:27`
+  pinta el fondo con un `<img src={image}>` CRUDO, sin envolver la ruta en `staticFile()`, así que
+  la imagen nunca carga; queda el `COLORS.bg0` casi negro con un texto chico y el frame da >98%
+  negro. Le pasa con jpg y con mp4 por igual. En este video se reemplazó por `impact`
+  (ImpactReveal), que sí funciona con fondo de clip. Es el mismo gotcha del wrapper `staticFile()`
+  que CLAUDE.md documenta para `ImgOr`/`sf()`. Arreglarlo es tocar un archivo COMPARTIDO del kit.
+- 2026-07-28 — LECCIÓN DE MÉTODO: cuando el chequeo técnico marca negro, NO adivinar la causa. Medir
+  la luminancia real (`ffmpeg -vf scale=1:1 -pix_fmt gray`) frame por frame, ver QUÉ cue está en ese
+  segundo en el `.gen.tsx` (no en el beatsheet) y recién ahí abrir el componente. Adiviné dos veces
+  y gasté dos renders.
 - 2026-07-28 — Truco para re-render PARCIAL: `ONLY_CHUNKS` reusa el release ya subido, así que el
   arreglo tiene que apoyarse en un asset que YA esté empaquetado. Si generás un archivo nuevo hay
   que re-subir 1,2 GB y rendear todo de nuevo.
