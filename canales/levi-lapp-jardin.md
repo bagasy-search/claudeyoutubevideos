@@ -73,3 +73,16 @@
 
 - 2026-07-28 · Archivo creado por la corrida headless del job `vvct6o98iqgr`. La identidad se
   consolidó a partir de lo ya publicado en ESTE canal (`replantar`, `abono`, `secretos`), no de otro canal.
+- 2026-07-28 · ⚠️ EL AVATAR TRAE UNA PIZARRA QUEMADA EN EL FONDO. El look de HeyGen configurado
+  para este canal (`626aa96d83c744e99fb0d34e1b992631`) tiene detrás una pizarra escrita, legible y
+  grande, que dice "ABONO NATURAL DE $3 · Melaza + compost + agua · Hojas amarillas = falta de
+  nitrógeno · Hongos = exceso de humedad". Está en pantalla en TODO el metraje de avatar full
+  (~34% del video) y CONTRADICE cualquier tema que no sea ese abono — en el video de la sal de
+  Epsom (magnesio) dice literalmente que las hojas amarillas son falta de nitrógeno, que es lo
+  contrario de lo que explica el guion. No se puede arreglar en edición: viene quemado en el mp4
+  de HeyGen. Para futuros videos: o se cambia el look del avatar por uno de fondo neutro, o se
+  asume que la pizarra manda y se eligen temas compatibles.
+- 2026-07-28 · Los tags de ElevenLabs v3 `[clears throat]`, `[whispers]` y `[warmly]` los LEYÓ EN
+  VOZ ALTA la voz `860058db00984ff6944ed4d75fa3d988` (sí interpretó bien `[chuckles]` y `[sighs]`).
+  En este canal usar SOLO `[chuckles]` y `[sighs]`. Si igual se cuelan, se cortan con ffmpeg y se
+  re-transcribe — sale más barato que regenerar el avatar (1 crédito + 20 min).

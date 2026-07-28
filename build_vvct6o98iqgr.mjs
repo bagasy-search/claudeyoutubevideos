@@ -266,6 +266,16 @@ for (const b of [...beats, ...overlays]) {
   if (palabras(b) > cupo) trim(b, cupo);
 }
 
+// los overlays no pueden pisarse entre sí (dos líneas encimadas se leen como un borrón)
+// solo entre SÍ: las etiquetas de esquina (doclabel) conviven con la línea cinética del centro
+{
+  const kl = overlays.filter((o) => o.kind === "kineticline").sort((a, b) => a.start - b.start);
+  for (let i = 0; i < kl.length - 1; i++) {
+    const gap = kl[i + 1].start - 0.25 - kl[i].start;
+    if (kl[i].dur > gap) kl[i].dur = +Math.max(1.8, gap).toFixed(2);
+  }
+}
+
 const all = [...beats, ...overlays].sort((a, b) => a.start - b.start);
 
 fs.mkdirSync("beatsheet", { recursive: true });

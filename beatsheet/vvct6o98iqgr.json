@@ -98,7 +98,7 @@
     {
       "id": "kl_2",
       "start": 38.04,
-      "dur": 4.18,
+      "dur": 2.43,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -128,7 +128,7 @@
     {
       "id": "kl_3",
       "start": 40.72,
-      "dur": 4.08,
+      "dur": 3.01,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -260,7 +260,7 @@
     {
       "id": "kl_5",
       "start": 75.58,
-      "dur": 3.88,
+      "dur": 3.49,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -286,7 +286,7 @@
     {
       "id": "kl_6",
       "start": 79.32,
-      "dur": 4.14,
+      "dur": 3.47,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -312,7 +312,7 @@
     {
       "id": "kl_7",
       "start": 83.04,
-      "dur": 4.88,
+      "dur": 3.35,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -439,7 +439,7 @@
     {
       "id": "kl_9",
       "start": 117.12,
-      "dur": 3.56,
+      "dur": 3.09,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -473,7 +473,7 @@
     {
       "id": "kl_10",
       "start": 120.46,
-      "dur": 3.48,
+      "dur": 2.99,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -495,7 +495,7 @@
     {
       "id": "kl_11",
       "start": 123.7,
-      "dur": 4.26,
+      "dur": 3.49,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -656,7 +656,7 @@
     {
       "id": "kl_14",
       "start": 163.68,
-      "dur": 4.06,
+      "dur": 3.31,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -690,7 +690,7 @@
     {
       "id": "kl_15",
       "start": 167.24,
-      "dur": 4.48,
+      "dur": 3.23,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -854,7 +854,7 @@
     {
       "id": "kl_18",
       "start": 205.02,
-      "dur": 4.82,
+      "dur": 3.69,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1150,7 +1150,7 @@
     {
       "id": "kl_23",
       "start": 279.18,
-      "dur": 4.14,
+      "dur": 3.27,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1180,7 +1180,7 @@
     {
       "id": "kl_24",
       "start": 282.7,
-      "dur": 3.88,
+      "dur": 3.29,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1214,7 +1214,7 @@
     {
       "id": "kl_25",
       "start": 286.24,
-      "dur": 4.64,
+      "dur": 2.89,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1353,7 +1353,7 @@
       "start": 307.9,
       "dur": 5.3,
       "kind": "raw",
-      "src": "broll/vvct6o98iqgr/vvct6o98iqgr_calendar_kitchen.mp4",
+      "src": "broll/vvct6o98iqgr/vvct6o98iqgr_garden_vegetable_beds.mp4",
       "darken": 0,
       "kbPhase": 2
     },
@@ -1370,7 +1370,7 @@
     {
       "id": "kl_27",
       "start": 318.36,
-      "dur": 5.44,
+      "dur": 2.67,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1409,7 +1409,7 @@
     {
       "id": "kl_28",
       "start": 321.28,
-      "dur": 3.6,
+      "dur": 3.53,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1705,7 +1705,7 @@
     {
       "id": "kl_33",
       "start": 396.14,
-      "dur": 5.04,
+      "dur": 3.29,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1765,7 +1765,7 @@
     {
       "id": "kl_35",
       "start": 403.52,
-      "dur": 4.72,
+      "dur": 4.39,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1931,7 +1931,7 @@
     {
       "id": "kl_38",
       "start": 443.12,
-      "dur": 4.26,
+      "dur": 3.23,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -1961,7 +1961,7 @@
     {
       "id": "kl_39",
       "start": 446.6,
-      "dur": 4.52,
+      "dur": 3.81,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2095,7 +2095,7 @@
     {
       "id": "kl_41",
       "start": 483.38,
-      "dur": 5.42,
+      "dur": 3.29,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2134,7 +2134,7 @@
     {
       "id": "kl_42",
       "start": 486.92,
-      "dur": 4.42,
+      "dur": 3.07,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2173,7 +2173,7 @@
     {
       "id": "kl_43",
       "start": 490.24,
-      "dur": 4.24,
+      "dur": 3.45,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2448,7 +2448,7 @@
     {
       "id": "kl_48",
       "start": 560.76,
-      "dur": 4.74,
+      "dur": 4.31,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2487,7 +2487,7 @@
     {
       "id": "kl_49",
       "start": 565.32,
-      "dur": 3.7,
+      "dur": 3.33,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2608,7 +2608,7 @@
     {
       "id": "kl_51",
       "start": 600.74,
-      "dur": 3.38,
+      "dur": 3.19,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2645,7 +2645,7 @@
     {
       "id": "kl_52",
       "start": 604.18,
-      "dur": 4.18,
+      "dur": 3.71,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2679,7 +2679,7 @@
     {
       "id": "kl_53",
       "start": 608.14,
-      "dur": 4.14,
+      "dur": 3.17,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2761,8 +2761,8 @@
       "dur": 5.6,
       "kind": "stat",
       "value": 30,
-      "suffix": " regaderas",
-      "label": "de 4 litros con una bolsa",
+      "suffix": "",
+      "label": "regaderas de 4 litros por bolsa",
       "eyebrow": "Lo que rinde",
       "accent": "good"
     },
@@ -2811,7 +2811,7 @@
     {
       "id": "kl_55",
       "start": 643.74,
-      "dur": 6.44,
+      "dur": 3.79,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2850,7 +2850,7 @@
     {
       "id": "kl_56",
       "start": 647.78,
-      "dur": 4.04,
+      "dur": 3.69,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2969,7 +2969,7 @@
     {
       "id": "kl_58",
       "start": 682.44,
-      "dur": 3.92,
+      "dur": 2.17,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -2999,7 +2999,7 @@
     {
       "id": "kl_59",
       "start": 684.86,
-      "dur": 4.9,
+      "dur": 3.27,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3038,7 +3038,7 @@
     {
       "id": "kl_60",
       "start": 688.38,
-      "dur": 3.88,
+      "dur": 2.73,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3160,7 +3160,7 @@
     {
       "id": "kl_62",
       "start": 721.2,
-      "dur": 4.32,
+      "dur": 2.97,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3190,7 +3190,7 @@
     {
       "id": "kl_63",
       "start": 724.42,
-      "dur": 4.28,
+      "dur": 3.21,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3347,7 +3347,7 @@
     {
       "id": "kl_66",
       "start": 762,
-      "dur": 4.22,
+      "dur": 3.43,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3465,7 +3465,7 @@
     {
       "id": "kl_68",
       "start": 803.18,
-      "dur": 5.18,
+      "dur": 2.93,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3504,7 +3504,7 @@
     {
       "id": "kl_69",
       "start": 806.36,
-      "dur": 4.38,
+      "dur": 3.47,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3543,7 +3543,7 @@
     {
       "id": "kl_70",
       "start": 810.08,
-      "dur": 3.68,
+      "dur": 2.91,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3835,7 +3835,7 @@
     {
       "id": "kl_75",
       "start": 885.8,
-      "dur": 3.24,
+      "dur": 3.07,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3865,7 +3865,7 @@
     {
       "id": "kl_76",
       "start": 889.12,
-      "dur": 3.84,
+      "dur": 3.39,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -3899,7 +3899,7 @@
     {
       "id": "kl_77",
       "start": 892.76,
-      "dur": 4.16,
+      "dur": 3.11,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4018,7 +4018,7 @@
     {
       "id": "kl_79",
       "start": 926.81,
-      "dur": 3.72,
+      "dur": 3.13,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4052,7 +4052,7 @@
     {
       "id": "kl_80",
       "start": 930.19,
-      "dur": 4.96,
+      "dur": 3.49,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4122,7 +4122,7 @@
       "start": 937.7,
       "dur": 5.3,
       "kind": "raw",
-      "src": "broll/vvct6o98iqgr/vvct6o98iqgr_ash_shovel_bucket.mp4",
+      "src": "broll/vvct6o98iqgr/vvct6o98iqgr_wood_ash_fireplace.mp4",
       "darken": 0,
       "kbPhase": 1
     },
@@ -4225,7 +4225,7 @@
     {
       "id": "kl_82",
       "start": 976.73,
-      "dur": 3.74,
+      "dur": 3.39,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4251,7 +4251,7 @@
     {
       "id": "kl_83",
       "start": 980.37,
-      "dur": 4,
+      "dur": 3.25,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4386,7 +4386,7 @@
     {
       "id": "kl_85",
       "start": 1015.31,
-      "dur": 3.86,
+      "dur": 3.49,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4420,7 +4420,7 @@
     {
       "id": "kl_86",
       "start": 1019.05,
-      "dur": 3.64,
+      "dur": 3.19,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4510,11 +4510,13 @@
       "id": "m_158",
       "start": 1040.4,
       "dur": 5.6,
-      "kind": "statslam",
+      "kind": "callout",
       "figure": "×2",
-      "caption": "Lo que ya producía",
-      "eyebrow": "SI DE VERDAD FALTA",
-      "accent": "good"
+      "eyebrow": "Si de verdad falta",
+      "caption": "lo que ya producía",
+      "accent": "good",
+      "hue": "amber",
+      "image": "broll/vvct6o98iqgr/vvct6o98iqgr_green_healthy_tomato_plant.mp4"
     },
     {
       "id": "m_159",
@@ -4537,7 +4539,7 @@
     {
       "id": "kl_88",
       "start": 1054.79,
-      "dur": 3.62,
+      "dur": 3.37,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4597,7 +4599,7 @@
     {
       "id": "kl_90",
       "start": 1062.05,
-      "dur": 3.84,
+      "dur": 3.01,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4718,7 +4720,7 @@
     {
       "id": "kl_92",
       "start": 1097.61,
-      "dur": 4.92,
+      "dur": 3.73,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4757,7 +4759,7 @@
     {
       "id": "kl_93",
       "start": 1101.59,
-      "dur": 4.18,
+      "dur": 3.47,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -4933,7 +4935,7 @@
     {
       "id": "kl_96",
       "start": 1147.64,
-      "dur": 4.9,
+      "dur": 3.39,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -5099,7 +5101,7 @@
     {
       "id": "kl_99",
       "start": 1189.96,
-      "dur": 3.46,
+      "dur": 3.39,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -5245,7 +5247,7 @@
     {
       "id": "kl_101",
       "start": 1236.7,
-      "dur": 3.92,
+      "dur": 3.03,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -5275,7 +5277,7 @@
     {
       "id": "kl_102",
       "start": 1239.98,
-      "dur": 3.32,
+      "dur": 3.27,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
@@ -5305,7 +5307,7 @@
     {
       "id": "kl_103",
       "start": 1243.5,
-      "dur": 4.14,
+      "dur": 2.87,
       "kind": "kineticline",
       "overlay": true,
       "accent": "amber",
