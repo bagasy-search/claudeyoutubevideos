@@ -1,0 +1,7028 @@
+{
+ "video": "vkkh5eytcp5l",
+ "avatar": "vkkh5eytcp5l_opt.mp4",
+ "beats": [
+  {
+   "kind": "callout",
+   "figure": "5$",
+   "eyebrow": "Una maceta de barro",
+   "caption": "riega sola una semana",
+   "accent": "good",
+   "hue": "amber",
+   "id": "c1",
+   "start": 4.46,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m001_manguera_riego",
+   "start": 9.9,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manguera_riego.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf48",
+   "start": 11.16,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "sin",
+     "at": 0
+    },
+    {
+     "t": "batería,",
+     "at": 0.12
+    },
+    {
+     "t": "sin",
+     "at": 1.02
+    },
+    {
+     "t": "temporizador,",
+     "at": 1.18,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m002_riego_goteo",
+   "start": 13.32,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/riego_goteo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "La planta pide. El barro da.",
+   "accent": "good",
+   "id": "c3",
+   "start": 15.08,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m003_olla_barro_manos",
+   "start": 17.36,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf63",
+   "start": 20.3,
+   "dur": 3.54,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "la",
+     "at": 0
+    },
+    {
+     "t": "necesita",
+     "at": 0.32,
+     "hl": true
+    },
+    {
+     "t": "Eso",
+     "at": 0.76
+    },
+    {
+     "t": "último",
+     "at": 1.38
+    },
+    {
+     "t": "es",
+     "at": 1.94
+    }
+   ]
+  },
+  {
+   "id": "m004_abono_manos",
+   "start": 21.06,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/abono_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf64",
+   "start": 24.3,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "y",
+     "at": 0
+    },
+    {
+     "t": "es",
+     "at": 0.12
+    },
+    {
+     "t": "lo",
+     "at": 0.2
+    },
+    {
+     "t": "que",
+     "at": 0.36
+    },
+    {
+     "t": "lo",
+     "at": 0.42
+    },
+    {
+     "t": "cambia",
+     "at": 0.62,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m005_maceta_barro_vacia",
+   "start": 25.52,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Se"
+    },
+    {
+     "t": "llama"
+    },
+    {
+     "t": "olla",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El nombre viejo",
+   "hue": "amber",
+   "id": "c4",
+   "start": 28.16,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m006_macetas_terracota_pila",
+   "start": 29.42,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m007_b_maceta_barro_mano2",
+   "start": 35.92,
+   "dur": 5.33,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl3",
+   "start": 35.92,
+   "dur": 3.5,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Barro",
+     "at": 0
+    },
+    {
+     "t": "poroso",
+     "at": 0.68,
+     "hl": true
+    },
+    {
+     "t": "y",
+     "at": 1.3
+    },
+    {
+     "t": "nada",
+     "at": 1.62
+    },
+    {
+     "t": "más",
+     "at": 1.9
+    }
+   ]
+  },
+  {
+   "id": "klf95",
+   "start": 39.74,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "tus",
+     "at": 0
+    },
+    {
+     "t": "plantas",
+     "at": 0.18,
+     "hl": true
+    },
+    {
+     "t": "dejando",
+     "at": 0.68
+    },
+    {
+     "t": "el",
+     "at": 1.14
+    }
+   ]
+  },
+  {
+   "id": "m008_b_macetas_fila",
+   "start": 40.95,
+   "dur": 5.33,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf96",
+   "start": 43.24,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Le",
+     "at": 0
+    },
+    {
+     "t": "pones",
+     "at": 0.48
+    },
+    {
+     "t": "una",
+     "at": 0.82
+    },
+    {
+     "t": "tapa",
+     "at": 1.08
+    },
+    {
+     "t": "encima",
+     "at": 1.3,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m009_b_barro_textura",
+   "start": 45.98,
+   "dur": 4.78,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "olla",
+   "mode": "anatomy",
+   "eyebrow": "Corte de la olla",
+   "title": "Barro poroso, agua adentro",
+   "dur": 7.5,
+   "id": "c6",
+   "start": 47.2,
+   "overlay": true
+  },
+  {
+   "id": "m010_vk_poros_barro_macro",
+   "start": 50.46,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "img/vk_poros_barro_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m011_tierra_seca_grietas",
+   "start": 54.88,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tierra_seca_grietas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "La tierra seca tira del agua",
+   "accent": "amber",
+   "id": "c7",
+   "start": 55.66,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m012_agricultor_caminando",
+   "start": 58.52,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agricultor_caminando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf132",
+   "start": 60.82,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "que",
+     "at": 0
+    },
+    {
+     "t": "la",
+     "at": 0.3
+    },
+    {
+     "t": "gente",
+     "at": 0.46,
+     "hl": true
+    },
+    {
+     "t": "no",
+     "at": 0.7
+    },
+    {
+     "t": "cree",
+     "at": 1.02
+    },
+    {
+     "t": "Si",
+     "at": 1.16
+    }
+   ]
+  },
+  {
+   "id": "m013_b_ceramica_secando",
+   "start": 61.98,
+   "dur": 5.24,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "rule",
+   "number": "1",
+   "label": "REGLA",
+   "title": "Tierra húmeda, olla quieta",
+   "hue": "amber",
+   "id": "c8",
+   "start": 65.26,
+   "dur": 3.97,
+   "overlay": true
+  },
+  {
+   "id": "m014_mosquito_macro",
+   "start": 66.92,
+   "dur": 2.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/mosquito_macro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m015_vk_levi_olla_mano",
+   "start": 69.56,
+   "dur": 6.64,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_mano.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "klf145",
+   "start": 69.56,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "y",
+     "at": 0
+    },
+    {
+     "t": "en",
+     "at": 0.16
+    },
+    {
+     "t": "el",
+     "at": 0.3
+    },
+    {
+     "t": "momento",
+     "at": 0.44,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "kind": "metertag",
+   "label": "La tierra chupa el agua",
+   "fromPct": 15,
+   "toPct": 85,
+   "eyebrow": "A través del barro",
+   "corner": "tr",
+   "id": "c138",
+   "start": 73.18,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m016_tierra_seca_desierto",
+   "start": 75.9,
+   "dur": 3.26,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tierra_seca_desierto.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m017_vk_olla_tapada_plato",
+   "start": 78.86,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "img/vk_olla_tapada_plato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "stattag",
+   "value": 0,
+   "prefix": "",
+   "suffix": "",
+   "label": "Llueve: se frena sola",
+   "eyebrow": "Sin tocar nada",
+   "accent": "cold",
+   "id": "c10",
+   "start": 78.86,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m018_agricultor_mayor_manos",
+   "start": 81.36,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agricultor_mayor_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m019_vk_levi_dos_macetas",
+   "start": 85.12,
+   "dur": 2.88,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_macetas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "kl5",
+   "start": 85.12,
+   "dur": 3.38,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "La",
+     "at": 0
+    },
+    {
+     "t": "tierra",
+     "at": 0.24
+    },
+    {
+     "t": "pide,",
+     "at": 0.56
+    },
+    {
+     "t": "el",
+     "at": 1.18
+    },
+    {
+     "t": "barro",
+     "at": 1.42
+    },
+    {
+     "t": "entrega",
+     "at": 1.78,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m020_sol_calor_campo",
+   "start": 87.7,
+   "dur": 3.36,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/sol_calor_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf186",
+   "start": 88.88,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "pieza",
+     "at": 0
+    },
+    {
+     "t": "que",
+     "at": 0.44
+    },
+    {
+     "t": "se",
+     "at": 0.62
+    },
+    {
+     "t": "pueda",
+     "at": 0.86
+    },
+    {
+     "t": "romper",
+     "at": 1.06,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m021_manos_viejas_jovenes",
+   "start": 90.76,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manos_viejas_jovenes.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m022_libro_antiguo_paginas",
+   "start": 94.18,
+   "dur": 3.24,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/libro_antiguo_paginas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "stat",
+   "value": 2000,
+   "suffix": " años",
+   "label": "y las instrucciones no cambiaron",
+   "eyebrow": "Está escrito",
+   "accent": "amber",
+   "hue": "amber",
+   "id": "c12",
+   "start": 94.18,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m023_manuscrito_viejo",
+   "start": 97.12,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manuscrito_viejo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "aged",
+   "heading": "FAN SHENGZHI",
+   "lines": [
+    {
+     "text": "Manual chino, siglo I a.C."
+    },
+    {
+     "text": "Entierra la vasija. Llénala. Tápala.",
+     "mark": true
+    }
+   ],
+   "eyebrow": "La fuente más vieja",
+   "hue": "amber",
+   "id": "c13",
+   "start": 99.62,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m024_biblioteca_libros",
+   "start": 101.1,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/biblioteca_libros.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m025_vk_olla_corte_tierra",
+   "start": 105.08,
+   "dur": 4.74,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m026_agua_absorbida_tierra",
+   "start": 109.52,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agua_absorbida_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "No cambió ni un paso",
+   "accent": "good",
+   "id": "c141",
+   "start": 110.52,
+   "dur": 3.97,
+   "overlay": true
+  },
+  {
+   "id": "m027_campo_arroz_china",
+   "start": 113.64,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/campo_arroz_china.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m028_aldea_desierto",
+   "start": 116.86,
+   "dur": 2.82,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/aldea_desierto.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "chips",
+   "title": "El mismo truco, sin conocerse",
+   "chips": [
+    "China",
+    "Norte de África",
+    "India"
+   ],
+   "hue": "amber",
+   "id": "c14",
+   "start": 116.86,
+   "dur": 6.25,
+   "overlay": true
+  },
+  {
+   "id": "m029_vk_olla_corte_tierra",
+   "start": 119.38,
+   "dur": 3.92,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m030_oasis_palmeras",
+   "start": 123,
+   "dur": 3.93,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/oasis_palmeras.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf265",
+   "start": 123.56,
+   "dur": 3,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "que",
+     "at": 0
+    },
+    {
+     "t": "no",
+     "at": 0.14
+    },
+    {
+     "t": "se",
+     "at": 0.3
+    },
+    {
+     "t": "conocían",
+     "at": 0.56,
+     "hl": true
+    },
+    {
+     "t": "entre",
+     "at": 0.98
+    },
+    {
+     "t": "sí,",
+     "at": 1.4
+    }
+   ]
+  },
+  {
+   "id": "m031_vasijas_mercado",
+   "start": 126.63,
+   "dur": 3.93,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/vasijas_mercado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf266",
+   "start": 126.98,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "sin",
+     "at": 0
+    },
+    {
+     "t": "manera",
+     "at": 0.08
+    },
+    {
+     "t": "de",
+     "at": 0.4
+    },
+    {
+     "t": "copiarse",
+     "at": 0.64,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m032_agua_estancada",
+   "start": 130.26,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agua_estancada.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl7",
+   "start": 131.82,
+   "dur": 3.48,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Eso",
+     "at": 0
+    },
+    {
+     "t": "pasa",
+     "at": 0.3
+    },
+    {
+     "t": "cuando",
+     "at": 0.62
+    },
+    {
+     "t": "algo",
+     "at": 0.94
+    },
+    {
+     "t": "funciona",
+     "at": 1.24,
+     "hl": true
+    },
+    {
+     "t": "de",
+     "at": 1.66
+    },
+    {
+     "t": "verdad",
+     "at": 1.88
+    }
+   ]
+  },
+  {
+   "id": "m033_agua_macro_gotas",
+   "start": 134.02,
+   "dur": 5.58,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agua_macro_gotas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf280",
+   "start": 136.02,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "si",
+     "at": 0
+    },
+    {
+     "t": "es",
+     "at": 0.06
+    },
+    {
+     "t": "tan",
+     "at": 0.28
+    },
+    {
+     "t": "bueno",
+     "at": 0.46
+    },
+    {
+     "t": "porque",
+     "at": 0.68,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m034_manguera_chorro",
+   "start": 139.3,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manguera_chorro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "¿Por"
+    },
+    {
+     "t": "qué"
+    },
+    {
+     "t": "nadie"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "usa",
+     "hl": true
+    },
+    {
+     "t": "hoy?"
+    }
+   ],
+   "eyebrow": "La pregunta obvia",
+   "hue": "red",
+   "id": "c142",
+   "start": 139.3,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m035_manguera_plastico",
+   "start": 143.6,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manguera_plastico.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf296",
+   "start": 145.6,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "por",
+     "at": 0
+    },
+    {
+     "t": "primera",
+     "at": 0.3
+    },
+    {
+     "t": "vez",
+     "at": 0.54
+    },
+    {
+     "t": "en",
+     "at": 0.84
+    },
+    {
+     "t": "la",
+     "at": 1.02
+    },
+    {
+     "t": "historia",
+     "at": 1.28,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m036_b_manguera_enrollada",
+   "start": 148.7,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_manguera_enrollada.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf297",
+   "start": 148.9,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "y",
+     "at": 0
+    },
+    {
+     "t": "tan",
+     "at": 0.14
+    },
+    {
+     "t": "fácil",
+     "at": 0.34,
+     "hl": true
+    },
+    {
+     "t": "de",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "id": "m037_b_grifo_agua",
+   "start": 153.8,
+   "dur": 7.44,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_grifo_agua.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl8",
+   "start": 153.8,
+   "dur": 3.18,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Abres",
+     "at": 0
+    },
+    {
+     "t": "una",
+     "at": 0.56
+    },
+    {
+     "t": "llave",
+     "at": 0.8,
+     "hl": true
+    },
+    {
+     "t": "y",
+     "at": 1.2
+    },
+    {
+     "t": "sale",
+     "at": 1.58
+    }
+   ]
+  },
+  {
+   "kind": "stat",
+   "value": 1,
+   "suffix": " generación",
+   "label": "es lo que tarda en perderse un saber",
+   "eyebrow": "Nadie preguntó",
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c17",
+   "start": 159.06,
+   "dur": 6.7,
+   "overlay": true
+  },
+  {
+   "id": "m038_plantas_marchitas_sol",
+   "start": 160.94,
+   "dur": 5.08,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/plantas_marchitas_sol.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m039_agua_vertida_maceta",
+   "start": 165.72,
+   "dur": 2.72,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agua_vertida_maceta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m040_huerta_bancal",
+   "start": 168.14,
+   "dur": 6.96,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/huerta_bancal.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "nametag",
+   "name": "Amos",
+   "sub": "el abuelo",
+   "accent": "#c8a24a",
+   "id": "c18",
+   "start": 168.14,
+   "dur": 3.06,
+   "overlay": true
+  },
+  {
+   "id": "klf347",
+   "start": 171.9,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "en",
+     "at": 0
+    },
+    {
+     "t": "que",
+     "at": 0.26
+    },
+    {
+     "t": "a",
+     "at": 0.32
+    },
+    {
+     "t": "mi",
+     "at": 0.44
+    },
+    {
+     "t": "abuelo",
+     "at": 0.56,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m041_tomates_planta",
+   "start": 174.8,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tomates_planta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf348",
+   "start": 175.58,
+   "dur": 3.04,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "se",
+     "at": 0
+    },
+    {
+     "t": "había",
+     "at": 0.28
+    },
+    {
+     "t": "ido",
+     "at": 0.44
+    },
+    {
+     "t": "tres",
+     "at": 0.68
+    },
+    {
+     "t": "semanas",
+     "at": 0.98,
+     "hl": true
+    },
+    {
+     "t": "a",
+     "at": 1.44
+    }
+   ]
+  },
+  {
+   "id": "klf349",
+   "start": 179.2,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "dejó",
+     "at": 0
+    },
+    {
+     "t": "dicho",
+     "at": 0.28,
+     "hl": true
+    },
+    {
+     "t": "que",
+     "at": 0.54
+    },
+    {
+     "t": "si",
+     "at": 1
+    }
+   ]
+  },
+  {
+   "id": "m042_tomate_maduro_rama",
+   "start": 180.06,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tomate_maduro_rama.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf350",
+   "start": 182.8,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "no",
+     "at": 0
+    },
+    {
+     "t": "le",
+     "at": 0.18
+    },
+    {
+     "t": "hablaba",
+     "at": 0.38,
+     "hl": true
+    },
+    {
+     "t": "a",
+     "at": 0.74
+    },
+    {
+     "t": "nadie",
+     "at": 0.92
+    }
+   ]
+  },
+  {
+   "id": "m043_hojas_amarillas",
+   "start": 185.32,
+   "dur": 2.72,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/hojas_amarillas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf351",
+   "start": 186.62,
+   "dur": 3.12,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "pero",
+     "at": 0
+    },
+    {
+     "t": "solo",
+     "at": 0.1
+    },
+    {
+     "t": "a",
+     "at": 0.32
+    },
+    {
+     "t": "medias",
+     "at": 0.52,
+     "hl": true
+    },
+    {
+     "t": "Ese",
+     "at": 1.12
+    },
+    {
+     "t": "julio",
+     "at": 1.52
+    }
+   ]
+  },
+  {
+   "id": "m044_huerta_general",
+   "start": 187.74,
+   "dur": 5.76,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/huerta_general.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf352",
+   "start": 190.34,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "de",
+     "at": 0
+    },
+    {
+     "t": "mis",
+     "at": 0.14
+    },
+    {
+     "t": "zapatos",
+     "at": 0.34,
+     "hl": true
+    },
+    {
+     "t": "en",
+     "at": 0.8
+    }
+   ]
+  },
+  {
+   "id": "m045_olla_barro_manos",
+   "start": 193.2,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf353",
+   "start": 193.98,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "y",
+     "at": 0
+    },
+    {
+     "t": "Amos",
+     "at": 0.24
+    },
+    {
+     "t": "no",
+     "at": 0.58
+    },
+    {
+     "t": "regaba",
+     "at": 0.8,
+     "hl": true
+    },
+    {
+     "t": "Yo",
+     "at": 1.16
+    }
+   ]
+  },
+  {
+   "id": "klf354",
+   "start": 197.4,
+   "dur": 3.38,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "barro",
+     "at": 0
+    },
+    {
+     "t": "que",
+     "at": 0.34
+    },
+    {
+     "t": "tenía",
+     "at": 0.5
+    },
+    {
+     "t": "enterradas",
+     "at": 0.8,
+     "hl": true
+    },
+    {
+     "t": "entre",
+     "at": 1.5
+    },
+    {
+     "t": "las",
+     "at": 1.78
+    }
+   ]
+  },
+  {
+   "id": "m046_maceta_barro_vacia",
+   "start": 198.82,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf355",
+   "start": 201.42,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "piedra",
+     "at": 0
+    },
+    {
+     "t": "plana",
+     "at": 0.38
+    },
+    {
+     "t": "y",
+     "at": 0.7
+    },
+    {
+     "t": "decirme",
+     "at": 0.98,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m047_tomate_cosecha_cesta",
+   "start": 204.44,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tomate_cosecha_cesta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf356",
+   "start": 204.74,
+   "dur": 3.96,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "yo",
+     "at": 0
+    },
+    {
+     "t": "estaba",
+     "at": 0.3
+    },
+    {
+     "t": "seguro,",
+     "at": 0.72
+    },
+    {
+     "t": "completamente",
+     "at": 1.82,
+     "hl": true
+    },
+    {
+     "t": "seguro,",
+     "at": 2.36
+    }
+   ]
+  },
+  {
+   "id": "m048_b_tomate_planta2",
+   "start": 208.62,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tomate_planta2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf357",
+   "start": 209.08,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "le",
+     "at": 0
+    },
+    {
+     "t": "iban",
+     "at": 0.14
+    },
+    {
+     "t": "a",
+     "at": 0.36
+    },
+    {
+     "t": "morir",
+     "at": 0.48
+    },
+    {
+     "t": "los",
+     "at": 0.84
+    },
+    {
+     "t": "tomates",
+     "at": 1.12,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m049_b_tomate_verde",
+   "start": 212.8,
+   "dur": 7.06,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tomate_verde.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf358",
+   "start": 212.8,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Volvió",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "mi",
+     "at": 0.48
+    },
+    {
+     "t": "madre",
+     "at": 0.68
+    },
+    {
+     "t": "a",
+     "at": 1.12
+    }
+   ]
+  },
+  {
+   "kind": "stattag",
+   "value": 3,
+   "suffix": " semanas",
+   "label": "sin regar una vez",
+   "eyebrow": "La huerta de Rebeca",
+   "accent": "good",
+   "corner": "tr",
+   "id": "c145",
+   "start": 218.04,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m050_b_grifo_goteando",
+   "start": 219.56,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_grifo_goteando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m051_b_bomba_agua",
+   "start": 223.73,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_bomba_agua.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m052_lechuga_huerta",
+   "start": 227.9,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/lechuga_huerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "splitlist",
+   "title": "La parte regada a mano",
+   "items": [
+    "Amarilla abajo",
+    "Hojas caídas al mediodía"
+   ],
+   "palette": "D",
+   "cross": true,
+   "id": "c146",
+   "start": 227.9,
+   "dur": 6.25,
+   "overlay": true
+  },
+  {
+   "id": "m053_manos_tierra_punado",
+   "start": 231.76,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manos_tierra_punado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m054_nino_huerta",
+   "start": 234.26,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/nino_huerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf405",
+   "start": 234.6,
+   "dur": 3.06,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "julio",
+     "at": 0
+    },
+    {
+     "t": "Y",
+     "at": 0.54
+    },
+    {
+     "t": "mi",
+     "at": 0.76
+    },
+    {
+     "t": "abuelo,",
+     "at": 0.92,
+     "hl": true
+    },
+    {
+     "t": "que",
+     "at": 1.46
+    }
+   ]
+  },
+  {
+   "id": "m055_b_manos_arrugadas",
+   "start": 238.34,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_manos_arrugadas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf406",
+   "start": 238.34,
+   "dur": 3.24,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "dijo",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "una",
+     "at": 0.24
+    },
+    {
+     "t": "sola",
+     "at": 0.68
+    },
+    {
+     "t": "cosa",
+     "at": 0.94
+    },
+    {
+     "t": "que",
+     "at": 1.4
+    },
+    {
+     "t": "me",
+     "at": 1.64
+    }
+   ]
+  },
+  {
+   "id": "m056_macetas_terracota_pila",
+   "start": 242.42,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "quote",
+   "text": "La manguera moja la *tierra*. La olla riega la *planta*.",
+   "accent": "good",
+   "hue": "amber",
+   "fontSize": 84,
+   "id": "c20",
+   "start": 242.42,
+   "dur": 6.25,
+   "overlay": true
+  },
+  {
+   "id": "m057_alfareria_taller",
+   "start": 245.6,
+   "dur": 7.21,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/alfareria_taller.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf424",
+   "start": 249,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Porque",
+     "at": 0
+    },
+    {
+     "t": "yo",
+     "at": 0.42
+    },
+    {
+     "t": "también",
+     "at": 0.7
+    },
+    {
+     "t": "necesito",
+     "at": 0.96,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "klf425",
+   "start": 252.42,
+   "dur": 3.14,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "así",
+     "at": 0
+    },
+    {
+     "t": "En",
+     "at": 0.32
+    },
+    {
+     "t": "el",
+     "at": 0.88
+    },
+    {
+     "t": "año",
+     "at": 1.04
+    },
+    {
+     "t": "2001",
+     "at": 1.54,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m058_alfarero_torno",
+   "start": 252.51,
+   "dur": 7.21,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/alfarero_torno.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "aged",
+   "heading": "BAINBRIDGE, 2001",
+   "lines": [
+    {
+     "text": "Agricultural Water Management"
+    },
+    {
+     "text": "Vasijas enterradas, medido en desierto",
+     "mark": true
+    }
+   ],
+   "eyebrow": "El dato",
+   "hue": "cold",
+   "id": "c21",
+   "start": 258.5,
+   "dur": 7.15,
+   "overlay": true
+  },
+  {
+   "id": "m059_amanecer_campo",
+   "start": 259.43,
+   "dur": 7.21,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/amanecer_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m060_palo_madera_mano",
+   "start": 266.34,
+   "dur": 2.74,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/palo_madera_mano.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "chapter",
+   "title": "El dato medido",
+   "num": "★",
+   "accent": "#7aa2c8",
+   "id": "c147",
+   "start": 266.34,
+   "dur": 3.06,
+   "overlay": true
+  },
+  {
+   "id": "m061_b_tierra_desmoronando",
+   "start": 268.78,
+   "dur": 5.03,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tierra_desmoronando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "bars",
+   "eyebrow": "Agua usada",
+   "title": "Olla contra superficie",
+   "bars": [
+    {
+     "label": "Superficie",
+     "value": 100,
+     "display": "100%",
+     "tone": "danger"
+    },
+    {
+     "label": "Olla enterrada",
+     "value": 35,
+     "display": "-70%",
+     "winner": true
+    }
+   ],
+   "id": "c22",
+   "start": 271.62,
+   "dur": 6.25,
+   "overlay": true
+  },
+  {
+   "id": "m062_vk_tierra_agrietada_zapato",
+   "start": 273.51,
+   "dur": 5.03,
+   "kind": "raw",
+   "src": "img/vk_tierra_agrietada_zapato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m063_b_desierto_dunas",
+   "start": 278.25,
+   "dur": 5.03,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_desierto_dunas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl10",
+   "start": 280.3,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "10",
+     "at": 0
+    },
+    {
+     "t": "veces",
+     "at": 0.26
+    }
+   ]
+  },
+  {
+   "id": "m064_b_maceta_barro_mano2",
+   "start": 282.98,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf495",
+   "start": 283.68,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "de",
+     "at": 0
+    },
+    {
+     "t": "barro",
+     "at": 0.18,
+     "hl": true
+    },
+    {
+     "t": "Y",
+     "at": 0.46
+    },
+    {
+     "t": "hay",
+     "at": 0.62
+    },
+    {
+     "t": "una",
+     "at": 0.78
+    },
+    {
+     "t": "razón",
+     "at": 0.96
+    }
+   ]
+  },
+  {
+   "id": "m065_raices_planta_tierra",
+   "start": 287.06,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/raices_planta_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf496",
+   "start": 287.06,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Cuando",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "riegas",
+     "at": 0.46
+    },
+    {
+     "t": "por",
+     "at": 0.9
+    },
+    {
+     "t": "arriba,",
+     "at": 1.24
+    }
+   ]
+  },
+  {
+   "id": "m066_tierra_negra_rica",
+   "start": 291.9,
+   "dur": 5.06,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tierra_negra_rica.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "cross",
+   "eyebrow": "Dónde va el agua",
+   "title": "Por arriba se pierde",
+   "layers": [
+    {
+     "label": "Se evapora",
+     "depth": "sol de la tarde",
+     "color": "#c94f4f"
+    },
+    {
+     "label": "Se va de lado",
+     "depth": "tierra desnuda",
+     "color": "#b5703f"
+    },
+    {
+     "label": "Llega a la raíz",
+     "depth": "poco",
+     "color": "#6a9a6a"
+    }
+   ],
+   "id": "c24",
+   "start": 291.9,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m067_b_macetas_fila",
+   "start": 296.66,
+   "dur": 7.22,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m068_b_sol_abrasador",
+   "start": 303.58,
+   "dur": 6.78,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_sol_abrasador.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "20 cm abajo, el sol no la ve",
+   "accent": "good",
+   "id": "c25",
+   "start": 303.58,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "klf544",
+   "start": 309.44,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "5",
+     "at": 0
+    },
+    {
+     "t": "dólares",
+     "at": 0.36,
+     "hl": true
+    },
+    {
+     "t": "y",
+     "at": 0.84
+    },
+    {
+     "t": "cómo",
+     "at": 1.02
+    },
+    {
+     "t": "saber",
+     "at": 1.26
+    }
+   ]
+  },
+  {
+   "id": "m069_b_termometro_calor",
+   "start": 310.06,
+   "dur": 6.78,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_termometro_calor.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf545",
+   "start": 312.78,
+   "dur": 3.2,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "ferretería",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "si",
+     "at": 0.66
+    },
+    {
+     "t": "la",
+     "at": 0.92
+    },
+    {
+     "t": "maceta",
+     "at": 1.1
+    },
+    {
+     "t": "que",
+     "at": 1.4
+    },
+    {
+     "t": "tienes",
+     "at": 1.6
+    }
+   ]
+  },
+  {
+   "id": "m070_manos_cavando",
+   "start": 316.54,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manos_cavando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf546",
+   "start": 316.54,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "¿Cómo",
+     "at": 0
+    },
+    {
+     "t": "enterrarla?",
+     "at": 0.2,
+     "hl": true
+    },
+    {
+     "t": "¿Y",
+     "at": 1
+    },
+    {
+     "t": "el",
+     "at": 1.08
+    }
+   ]
+  },
+  {
+   "id": "klf547",
+   "start": 319.94,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "hace",
+     "at": 0
+    },
+    {
+     "t": "mal?",
+     "at": 0.3
+    },
+    {
+     "t": "¿Qué",
+     "at": 0.78
+    },
+    {
+     "t": "se",
+     "at": 0.96
+    },
+    {
+     "t": "planta",
+     "at": 1.22,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m071_raices_transplante",
+   "start": 320.72,
+   "dur": 2.98,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/raices_transplante.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m072_b_barro_textura",
+   "start": 323.4,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf548",
+   "start": 323.4,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "¿Y",
+     "at": 0
+    },
+    {
+     "t": "las",
+     "at": 0.1
+    },
+    {
+     "t": "dos",
+     "at": 0.26
+    },
+    {
+     "t": "hortalizas",
+     "at": 0.4,
+     "hl": true
+    },
+    {
+     "t": "que",
+     "at": 0.98
+    },
+    {
+     "t": "te",
+     "at": 1.1
+    }
+   ]
+  },
+  {
+   "id": "klf549",
+   "start": 326.78,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "un",
+     "at": 0
+    },
+    {
+     "t": "solo",
+     "at": 0.16,
+     "hl": true
+    },
+    {
+     "t": "año",
+     "at": 0.38
+    },
+    {
+     "t": "que",
+     "at": 0.66
+    }
+   ]
+  },
+  {
+   "id": "m073_arcilla_tierra",
+   "start": 328.72,
+   "dur": 6.66,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/arcilla_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "stattag",
+   "value": 90,
+   "suffix": "%",
+   "label": "de las ollas del mundo",
+   "eyebrow": "El error",
+   "accent": "danger",
+   "corner": "tr",
+   "id": "c27",
+   "start": 330.48,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m074_b_tierra_removida",
+   "start": 335.08,
+   "dur": 4.73,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tierra_removida.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf564",
+   "start": 335.78,
+   "dur": 3.02,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "un",
+     "at": 0
+    },
+    {
+     "t": "error",
+     "at": 0.14
+    },
+    {
+     "t": "de",
+     "at": 0.48
+    },
+    {
+     "t": "instalación",
+     "at": 0.9,
+     "hl": true
+    },
+    {
+     "t": "Lo",
+     "at": 1.42
+    }
+   ]
+  },
+  {
+   "id": "klf565",
+   "start": 339.46,
+   "dur": 3.66,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "más",
+     "at": 0
+    },
+    {
+     "t": "responsables,",
+     "at": 0.44,
+     "hl": true
+    },
+    {
+     "t": "las",
+     "at": 1.36
+    },
+    {
+     "t": "que",
+     "at": 1.6
+    },
+    {
+     "t": "más",
+     "at": 1.78
+    },
+    {
+     "t": "quieren",
+     "at": 2.06
+    }
+   ]
+  },
+  {
+   "id": "m075_b_rastrillo_tierra",
+   "start": 339.51,
+   "dur": 4.73,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_rastrillo_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m076_b_ceramica_secando",
+   "start": 343.94,
+   "dur": 7.36,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf566",
+   "start": 343.94,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Es",
+     "at": 0
+    },
+    {
+     "t": "lo",
+     "at": 0.34
+    },
+    {
+     "t": "contrario",
+     "at": 0.68,
+     "hl": true
+    },
+    {
+     "t": "de",
+     "at": 0.92
+    }
+   ]
+  },
+  {
+   "id": "klf567",
+   "start": 347.38,
+   "dur": 3.22,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "bien",
+     "at": 0
+    },
+    {
+     "t": "y",
+     "at": 0.22
+    },
+    {
+     "t": "cometes",
+     "at": 0.56,
+     "hl": true
+    },
+    {
+     "t": "ese,",
+     "at": 1.04
+    },
+    {
+     "t": "la",
+     "at": 1.62
+    }
+   ]
+  },
+  {
+   "id": "m077_arena_cayendo_mano",
+   "start": 351,
+   "dur": 4.06,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/arena_cayendo_mano.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m078_b_campo_arado",
+   "start": 354.76,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_campo_arado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Se"
+    },
+    {
+     "t": "muere"
+    },
+    {
+     "t": "en"
+    },
+    {
+     "t": "esa"
+    },
+    {
+     "t": "semana",
+     "hl": true
+    }
+   ],
+   "eyebrow": "El hueco real",
+   "hue": "red",
+   "id": "c28",
+   "start": 354.76,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m079_b_hoja_marchita",
+   "start": 358.28,
+   "dur": 6.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_hoja_marchita.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "chips",
+   "title": "La semana que se pierde",
+   "chips": [
+    "Un funeral",
+    "Un niño enfermo",
+    "Un viaje",
+    "40 grados"
+   ],
+   "hue": "red",
+   "id": "c149",
+   "start": 362.86,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m080_vk_plantas_mediodia_caidas",
+   "start": 364.16,
+   "dur": 6.18,
+   "kind": "raw",
+   "src": "img/vk_plantas_mediodia_caidas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m081_invernadero_plantas",
+   "start": 370.04,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/invernadero_plantas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl12",
+   "start": 372.04,
+   "dur": 2.96,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "La",
+     "at": 0
+    },
+    {
+     "t": "pierde",
+     "at": 0.32
+    },
+    {
+     "t": "por",
+     "at": 0.82
+    },
+    {
+     "t": "no",
+     "at": 1.04
+    },
+    {
+     "t": "estar",
+     "at": 1.36,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m082_b_tomate_regando",
+   "start": 373.68,
+   "dur": 6.28,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tomate_regando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "process",
+   "eyebrow": "El daño del vaivén",
+   "title": "Qué pasa cuando falta y sobra",
+   "steps": [
+    {
+     "title": "Falta agua"
+    },
+    {
+     "title": "Llega de golpe"
+    },
+    {
+     "title": "Se raja la piel"
+    }
+   ],
+   "id": "c30",
+   "start": 375.34,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m083_pimiento_planta",
+   "start": 379.66,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/pimiento_planta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m084_berenjena_planta",
+   "start": 383.62,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/berenjena_planta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf650",
+   "start": 384.24,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "que",
+     "at": 0
+    },
+    {
+     "t": "todo",
+     "at": 0.34
+    },
+    {
+     "t": "el",
+     "at": 0.64
+    },
+    {
+     "t": "mundo",
+     "at": 0.8,
+     "hl": true
+    },
+    {
+     "t": "cree",
+     "at": 1.04
+    },
+    {
+     "t": "que",
+     "at": 1.3
+    }
+   ]
+  },
+  {
+   "id": "m085_huerta_bancal",
+   "start": 387.58,
+   "dur": 5.64,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/huerta_bancal.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf651",
+   "start": 387.58,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "es",
+     "at": 0
+    },
+    {
+     "t": "la",
+     "at": 0.02
+    },
+    {
+     "t": "planta",
+     "at": 0.2,
+     "hl": true
+    },
+    {
+     "t": "que",
+     "at": 0.64
+    }
+   ]
+  },
+  {
+   "id": "klf652",
+   "start": 391.04,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Porque",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "no",
+     "at": 0.32
+    },
+    {
+     "t": "tenía",
+     "at": 0.58
+    },
+    {
+     "t": "agua",
+     "at": 0.84
+    },
+    {
+     "t": "para",
+     "at": 1.12
+    }
+   ]
+  },
+  {
+   "id": "m086_lechuga_marchita",
+   "start": 392.92,
+   "dur": 3.02,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/lechuga_marchita.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m087_b_agua_vaso_verter",
+   "start": 395.64,
+   "dur": 3.92,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_agua_vaso_verter.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Sube y baja. Empapa y seca.",
+   "accent": "danger",
+   "id": "c32",
+   "start": 397.66,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m088_vk_levi_olla_mano",
+   "start": 399.26,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_mano.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m089_vk_olla_tapada_plato",
+   "start": 403.4,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "img/vk_olla_tapada_plato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "metertag",
+   "label": "Humedad constante",
+   "fromPct": 20,
+   "toPct": 62,
+   "eyebrow": "Con olla",
+   "corner": "tl",
+   "id": "c33",
+   "start": 403.4,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m090_vk_levi_dos_macetas",
+   "start": 409,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_macetas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Humedad aburrida y constante",
+   "accent": "good",
+   "id": "c150",
+   "start": 409.68,
+   "dur": 3.06,
+   "overlay": true
+  },
+  {
+   "id": "klf699",
+   "start": 413.08,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "a",
+     "at": 0
+    },
+    {
+     "t": "una",
+     "at": 0.28
+    },
+    {
+     "t": "planta",
+     "at": 0.42,
+     "hl": true
+    },
+    {
+     "t": "que",
+     "at": 0.78
+    },
+    {
+     "t": "da",
+     "at": 0.9
+    },
+    {
+     "t": "fruto",
+     "at": 1.02
+    }
+   ]
+  },
+  {
+   "id": "m091_b_abuelo_nieto",
+   "start": 414.6,
+   "dur": 5.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_abuelo_nieto.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf700",
+   "start": 416.84,
+   "dur": 2.96,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "si",
+     "at": 0
+    },
+    {
+     "t": "entiendes",
+     "at": 0.28,
+     "hl": true
+    },
+    {
+     "t": "esto,",
+     "at": 0.7
+    },
+    {
+     "t": "el",
+     "at": 1.36
+    }
+   ]
+  },
+  {
+   "id": "m092_aspersor_jardin",
+   "start": 419.82,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/aspersor_jardin.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m093_vk_poros_barro_macro",
+   "start": 423.54,
+   "dur": 2.78,
+   "kind": "raw",
+   "src": "img/vk_poros_barro_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "lielist",
+   "title": "El mito",
+   "items": [
+    "Que gotea sin parar",
+    "Que se vacía la primera noche",
+    "Que ahoga la raíz"
+   ],
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c34",
+   "start": 423.54,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m094_vk_plantas_mediodia_erguidas",
+   "start": 426.02,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "img/vk_plantas_mediodia_erguidas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m095_atardecer_huerta",
+   "start": 430.52,
+   "dur": 3.06,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/atardecer_huerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m096_b_raiz_desnuda",
+   "start": 433.28,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_raiz_desnuda.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "callout",
+   "figure": "✕",
+   "eyebrow": "Si goteara de verdad",
+   "caption": "se vaciaría la primera noche",
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c151",
+   "start": 433.28,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m097_vk_mancha_humeda_barro",
+   "start": 436.68,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "img/vk_mancha_humeda_barro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m098_vk_olla_corte_tierra",
+   "start": 439.58,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "olla",
+   "mode": "flow",
+   "eyebrow": "Cómo sale el agua",
+   "title": "La tierra seca tira, el barro suelta",
+   "dur": 7.5,
+   "id": "c36",
+   "start": 442.2,
+   "overlay": true
+  },
+  {
+   "id": "m099_olla_barro_manos",
+   "start": 443.68,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m100_balde_agua",
+   "start": 447.78,
+   "dur": 4.86,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/balde_agua.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf776",
+   "start": 450.22,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "de",
+     "at": 0
+    },
+    {
+     "t": "ella",
+     "at": 0.26
+    },
+    {
+     "t": "desde",
+     "at": 0.44
+    },
+    {
+     "t": "afuera",
+     "at": 0.76,
+     "hl": true
+    },
+    {
+     "t": "con",
+     "at": 1.26
+    }
+   ]
+  },
+  {
+   "id": "m101_b_desierto_planta",
+   "start": 452.34,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_desierto_planta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "stattag",
+   "value": 0,
+   "label": "La tierra seca tira más fuerte",
+   "eyebrow": "Succión",
+   "accent": "amber",
+   "corner": "tl",
+   "id": "c152",
+   "start": 455.32,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m102_tierra_seca_grietas",
+   "start": 456.08,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tierra_seca_grietas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m103_maceta_barro_vacia",
+   "start": 459.82,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf795",
+   "start": 460.86,
+   "dur": 3.08,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "al",
+     "at": 0
+    },
+    {
+     "t": "lado",
+     "at": 0.2
+    },
+    {
+     "t": "del",
+     "at": 0.38
+    },
+    {
+     "t": "barro,",
+     "at": 0.64,
+     "hl": true
+    },
+    {
+     "t": "el",
+     "at": 1.34
+    },
+    {
+     "t": "agua",
+     "at": 1.48
+    }
+   ]
+  },
+  {
+   "id": "m104_huerta_general",
+   "start": 462.9,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/huerta_general.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m105_vk_manguera_rajada_sol",
+   "start": 466.36,
+   "dur": 6.46,
+   "kind": "raw",
+   "src": "img/vk_manguera_rajada_sol.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Un grifo que abre la tierra",
+   "accent": "good",
+   "id": "c38",
+   "start": 466.36,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m106_b_raices_maceta",
+   "start": 472.52,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_raices_maceta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "rule",
+   "number": "2",
+   "label": "REGLA",
+   "title": "La raíz va hacia la humedad",
+   "hue": "amber",
+   "id": "c39",
+   "start": 472.52,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m107_macetas_terracota_pila",
+   "start": 475.54,
+   "dur": 5.96,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf829",
+   "start": 477.96,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "una",
+     "at": 0
+    },
+    {
+     "t": "olla",
+     "at": 0.32
+    },
+    {
+     "t": "Las",
+     "at": 0.6
+    },
+    {
+     "t": "raíces",
+     "at": 1.08,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m108_b_maceta_barro_mano2",
+   "start": 481.2,
+   "dur": 5.31,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "metertag",
+   "label": "Raíces pegadas al barro",
+   "fromPct": 5,
+   "toPct": 95,
+   "eyebrow": "Un año después",
+   "corner": "tr",
+   "id": "c154",
+   "start": 481.2,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m109_b_macetas_fila",
+   "start": 486.21,
+   "dur": 5.31,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "annotated",
+   "image": "img/vk_raices_abrazando_olla.png",
+   "eyebrow": "Un año",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 0.5,
+     "y": 0.52,
+     "w": 0.3,
+     "label": "Raíces al barro",
+     "color": "good"
+    }
+   ],
+   "hue": "amber",
+   "dur": 5.6,
+   "id": "c40",
+   "start": 486.84,
+   "overlay": true
+  },
+  {
+   "id": "m110_maleta_viaje_puerta",
+   "start": 491.22,
+   "dur": 3.02,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maleta_viaje_puerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m111_b_mujer_huerta",
+   "start": 493.94,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_mujer_huerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "La planta tiene su propio pozo",
+   "accent": "good",
+   "id": "c41",
+   "start": 493.94,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m112_regadera_metal",
+   "start": 497.3,
+   "dur": 4.64,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/regadera_metal.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf874",
+   "start": 499.12,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "a",
+     "at": 0
+    },
+    {
+     "t": "la",
+     "at": 0.1
+    },
+    {
+     "t": "planta",
+     "at": 0.28,
+     "hl": true
+    },
+    {
+     "t": "que",
+     "at": 0.6
+    },
+    {
+     "t": "el",
+     "at": 0.76
+    }
+   ]
+  },
+  {
+   "id": "m113_plantin_manos",
+   "start": 501.64,
+   "dur": 7.26,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/plantin_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "cross",
+   "eyebrow": "Riego por arriba",
+   "title": "La raíz se queda arriba",
+   "layers": [
+    {
+     "label": "Raíces finas",
+     "depth": "primeros 5 cm",
+     "color": "#c94f4f"
+    },
+    {
+     "label": "Tierra vacía",
+     "depth": "abajo",
+     "color": "#7a5a36"
+    }
+   ],
+   "id": "c42",
+   "start": 503.3,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m114_billetes_dinero_mano",
+   "start": 508.6,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/billetes_dinero_mano.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf897",
+   "start": 511.66,
+   "dur": 2.98,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "todos",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "los",
+     "at": 0.4
+    },
+    {
+     "t": "días",
+     "at": 0.64
+    },
+    {
+     "t": "Y",
+     "at": 0.94
+    },
+    {
+     "t": "el",
+     "at": 1.24
+    },
+    {
+     "t": "día",
+     "at": 1.38
+    }
+   ]
+  },
+  {
+   "id": "m115_tierra_seca_desierto",
+   "start": 512.6,
+   "dur": 6.9,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tierra_seca_desierto.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf898",
+   "start": 515.16,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "al",
+     "at": 0
+    },
+    {
+     "t": "mediodía",
+     "at": 0.22,
+     "hl": true
+    },
+    {
+     "t": "Porque",
+     "at": 0.8
+    },
+    {
+     "t": "toda",
+     "at": 1.14
+    }
+   ]
+  },
+  {
+   "id": "m116_b_barro_textura",
+   "start": 519.2,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Le"
+    },
+    {
+     "t": "enseña"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "bajar",
+     "hl": true
+    }
+   ],
+   "eyebrow": "La olla",
+   "hue": "amber",
+   "id": "c43",
+   "start": 519.2,
+   "dur": 3.97,
+   "overlay": true
+  },
+  {
+   "id": "klf911",
+   "start": 523.56,
+   "dur": 4,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "dólares",
+     "at": 0
+    },
+    {
+     "t": "¿Qué",
+     "at": 0.5
+    },
+    {
+     "t": "compras",
+     "at": 0.9
+    },
+    {
+     "t": "exactamente?",
+     "at": 1.34,
+     "hl": true
+    },
+    {
+     "t": "Vas",
+     "at": 2.4
+    }
+   ]
+  },
+  {
+   "id": "m117_b_ceramica_secando",
+   "start": 524.06,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m118_vk_levi_olla_mano",
+   "start": 529.32,
+   "dur": 3.48,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_mano.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "checklist",
+   "title": "La maceta correcta",
+   "items": [
+    {
+     "text": "Barro terracota",
+     "state": "done"
+    },
+    {
+     "text": "Sin esmaltar",
+     "state": "done"
+    },
+    {
+     "text": "Rugosa al tacto",
+     "state": "done"
+    },
+    {
+     "text": "Con su plato",
+     "state": "done"
+    }
+   ],
+   "eyebrow": "3 a 6 dólares",
+   "accent": "good",
+   "hue": "amber",
+   "id": "c45",
+   "start": 529.32,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m119_vk_gota_perla_esmalte",
+   "start": 532.5,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "img/vk_gota_perla_esmalte.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m120_piedra_plana",
+   "start": 536.58,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/piedra_plana.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf936",
+   "start": 537.74,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "en",
+     "at": 0
+    },
+    {
+     "t": "la",
+     "at": 0.14
+    },
+    {
+     "t": "mano",
+     "at": 0.32
+    },
+    {
+     "t": "y",
+     "at": 0.6
+    },
+    {
+     "t": "te",
+     "at": 0.82
+    },
+    {
+     "t": "llevas",
+     "at": 1.04,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m121_vk_olla_tapada_plato",
+   "start": 540.02,
+   "dur": 6.56,
+   "kind": "raw",
+   "src": "img/vk_olla_tapada_plato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "klf937",
+   "start": 541.26,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "el",
+     "at": 0
+    },
+    {
+     "t": "plato",
+     "at": 0.2,
+     "hl": true
+    },
+    {
+     "t": "que",
+     "at": 0.44
+    },
+    {
+     "t": "va",
+     "at": 0.6
+    }
+   ]
+  },
+  {
+   "id": "klf938",
+   "start": 544.62,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "entre",
+     "at": 0
+    },
+    {
+     "t": "3",
+     "at": 0.34
+    },
+    {
+     "t": "y",
+     "at": 0.74
+    },
+    {
+     "t": "6",
+     "at": 0.84
+    },
+    {
+     "t": "dólares",
+     "at": 1.14,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m122_manos_tierra_punado",
+   "start": 546.28,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manos_tierra_punado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "bars",
+   "eyebrow": "Qué tamaño",
+   "title": "Según lo que riegues",
+   "bars": [
+    {
+     "label": "Lechugas",
+     "value": 40,
+     "display": "15 cm"
+    },
+    {
+     "label": "Huerta de casa",
+     "value": 70,
+     "display": "20 cm",
+     "winner": true
+    },
+    {
+     "label": "Plantas grandes",
+     "value": 100,
+     "display": "30 cm"
+    }
+   ],
+   "id": "c46",
+   "start": 549.16,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m123_tierra_negra_rica",
+   "start": 550.4,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tierra_negra_rica.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m124_barro_manos_amasando",
+   "start": 554.52,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/barro_manos_amasando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m125_b_maleta_puerta",
+   "start": 557.54,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maleta_puerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf963",
+   "start": 557.54,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Si",
+     "at": 0
+    },
+    {
+     "t": "la",
+     "at": 0.38
+    },
+    {
+     "t": "vas",
+     "at": 0.52
+    },
+    {
+     "t": "a",
+     "at": 0.68
+    },
+    {
+     "t": "poner",
+     "at": 0.84,
+     "hl": true
+    },
+    {
+     "t": "entre",
+     "at": 1.02
+    }
+   ]
+  },
+  {
+   "id": "klf964",
+   "start": 561.08,
+   "dur": 3.12,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "centímetros",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "Para",
+     "at": 0.68
+    },
+    {
+     "t": "un",
+     "at": 1.36
+    },
+    {
+     "t": "cantero",
+     "at": 1.52
+    }
+   ]
+  },
+  {
+   "id": "m126_b_lechuga_cortando",
+   "start": 561.76,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_lechuga_cortando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m127_brote_creciendo",
+   "start": 565.4,
+   "dur": 3.88,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/brote_creciendo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "rule",
+   "number": "30",
+   "label": "SEGUNDOS",
+   "title": "La prueba en la tienda",
+   "hue": "amber",
+   "id": "c48",
+   "start": 566.98,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m128_vk_levi_dos_macetas",
+   "start": 568.98,
+   "dur": 5.32,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_macetas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "klf984",
+   "start": 572.34,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "la",
+     "at": 0
+    },
+    {
+     "t": "pared",
+     "at": 0.24
+    },
+    {
+     "t": "de",
+     "at": 0.42
+    },
+    {
+     "t": "afuera",
+     "at": 0.68,
+     "hl": true
+    },
+    {
+     "t": "de",
+     "at": 0.9
+    }
+   ]
+  },
+  {
+   "id": "m129_rocio_manana",
+   "start": 574,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/rocio_manana.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf985",
+   "start": 575.76,
+   "dur": 3.22,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "agua",
+     "at": 0
+    },
+    {
+     "t": "y",
+     "at": 0.24
+    },
+    {
+     "t": "déjale",
+     "at": 0.6,
+     "hl": true
+    },
+    {
+     "t": "caer",
+     "at": 0.88
+    },
+    {
+     "t": "unas",
+     "at": 1.34
+    },
+    {
+     "t": "gotas",
+     "at": 1.62
+    }
+   ]
+  },
+  {
+   "id": "m130_vk_poros_barro_macro",
+   "start": 577.92,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "img/vk_poros_barro_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "klf986",
+   "start": 579.42,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Si",
+     "at": 0
+    },
+    {
+     "t": "el",
+     "at": 0.48
+    },
+    {
+     "t": "agua",
+     "at": 0.74,
+     "hl": true
+    },
+    {
+     "t": "se",
+     "at": 0.98
+    }
+   ]
+  },
+  {
+   "id": "m131_vk_olla_corte_tierra",
+   "start": 582.67,
+   "dur": 5.05,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "klf987",
+   "start": 583.36,
+   "dur": 2.94,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "echa",
+     "at": 0
+    },
+    {
+     "t": "una",
+     "at": 0.12
+    },
+    {
+     "t": "perla",
+     "at": 0.48
+    },
+    {
+     "t": "encima",
+     "at": 0.94,
+     "hl": true
+    },
+    {
+     "t": "del",
+     "at": 1.34
+    }
+   ]
+  },
+  {
+   "id": "m132_vk_levi_prueba_agua",
+   "start": 587.42,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "img/vk_levi_prueba_agua.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "klf988",
+   "start": 587.42,
+   "dur": 3.28,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "tiene",
+     "at": 0
+    },
+    {
+     "t": "esmalte",
+     "at": 0.12
+    },
+    {
+     "t": "o",
+     "at": 0.78
+    },
+    {
+     "t": "un",
+     "at": 1.16
+    },
+    {
+     "t": "barniz",
+     "at": 1.36
+    },
+    {
+     "t": "transparente",
+     "at": 1.68,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m133_pala_cavando_huerta",
+   "start": 591.7,
+   "dur": 4.12,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/pala_cavando_huerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf989",
+   "start": 591.7,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "va",
+     "at": 0
+    },
+    {
+     "t": "a",
+     "at": 0.22
+    },
+    {
+     "t": "ser",
+     "at": 0.36,
+     "hl": true
+    },
+    {
+     "t": "un",
+     "at": 0.46
+    }
+   ]
+  },
+  {
+   "id": "m134_olla_barro_manos",
+   "start": 595.52,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf990",
+   "start": 595.52,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Si",
+     "at": 0
+    },
+    {
+     "t": "el",
+     "at": 0.2
+    },
+    {
+     "t": "agua",
+     "at": 0.4
+    },
+    {
+     "t": "se",
+     "at": 0.54
+    },
+    {
+     "t": "oscurece",
+     "at": 0.8,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "kind": "splitlist",
+   "title": "Llévatela",
+   "items": [
+    "El agua se mete en el barro",
+    "Deja mancha húmeda",
+    "Ese barro respira"
+   ],
+   "palette": "G",
+   "id": "c50",
+   "start": 599.64,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m135_maceta_barro_vacia",
+   "start": 599.74,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m136_macetas_terracota_pila",
+   "start": 603.96,
+   "dur": 6.04,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m137_b_agua_absorber_tela",
+   "start": 609.7,
+   "dur": 7.2,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_agua_absorber_tela.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "chapter",
+   "title": "Cómo enterrarla",
+   "num": "2",
+   "accent": "#c8a24a",
+   "id": "c51",
+   "start": 609.7,
+   "dur": 2.9,
+   "overlay": true
+  },
+  {
+   "id": "klf1027",
+   "start": 613.2,
+   "dur": 3.02,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "paso",
+     "at": 0
+    },
+    {
+     "t": "porque",
+     "at": 0.34,
+     "hl": true
+    },
+    {
+     "t": "ahí",
+     "at": 0.66
+    },
+    {
+     "t": "es",
+     "at": 1.06
+    },
+    {
+     "t": "donde",
+     "at": 1.22
+    },
+    {
+     "t": "se",
+     "at": 1.42
+    }
+   ]
+  },
+  {
+   "id": "m138_b_piedra_mano",
+   "start": 616.6,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_piedra_mano.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "process",
+   "eyebrow": "Paso a paso",
+   "title": "Los cuatro pasos",
+   "steps": [
+    {
+     "title": "Tapar el fondo"
+    },
+    {
+     "title": "Cavar"
+    },
+    {
+     "title": "Enterrar y apretar"
+    },
+    {
+     "title": "Llenar y tapar"
+    }
+   ],
+   "id": "c52",
+   "start": 616.6,
+   "dur": 7.61,
+   "overlay": true
+  },
+  {
+   "id": "m139_corcho_botella",
+   "start": 619.1,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/corcho_botella.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m140_b_corcho_botella2",
+   "start": 621.8,
+   "dur": 2.96,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_corcho_botella2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m141_b_maceta_barro_mano2",
+   "start": 624.46,
+   "dur": 7.08,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf1047",
+   "start": 624.46,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Mi",
+     "at": 0
+    },
+    {
+     "t": "abuelo",
+     "at": 0.3,
+     "hl": true
+    },
+    {
+     "t": "lo",
+     "at": 0.66
+    },
+    {
+     "t": "hacía",
+     "at": 1
+    }
+   ]
+  },
+  {
+   "id": "klf1048",
+   "start": 627.88,
+   "dur": 3.12,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "barro",
+     "at": 0
+    },
+    {
+     "t": "amasado",
+     "at": 0.26
+    },
+    {
+     "t": "encima",
+     "at": 0.74
+    },
+    {
+     "t": "Y",
+     "at": 1.18
+    },
+    {
+     "t": "aguantaba",
+     "at": 1.52,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m142_hoja_gota_macro",
+   "start": 631.24,
+   "dur": 2.8,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/hoja_gota_macro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf1049",
+   "start": 631.6,
+   "dur": 3.16,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "pierde",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "una",
+     "at": 0.36
+    },
+    {
+     "t": "gota",
+     "at": 0.62
+    },
+    {
+     "t": "lenta,",
+     "at": 0.92
+    },
+    {
+     "t": "no",
+     "at": 1.34
+    },
+    {
+     "t": "es",
+     "at": 1.56
+    }
+   ]
+  },
+  {
+   "id": "m143_manguera_riego",
+   "start": 633.74,
+   "dur": 5.58,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manguera_riego.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "klf1050",
+   "start": 635.6,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "se",
+     "at": 0
+    },
+    {
+     "t": "te",
+     "at": 0.18
+    },
+    {
+     "t": "vacía",
+     "at": 0.38,
+     "hl": true
+    },
+    {
+     "t": "en",
+     "at": 0.72
+    }
+   ]
+  },
+  {
+   "id": "m144_b_macetas_fila",
+   "start": 639.02,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m145_b_barro_textura",
+   "start": 642.36,
+   "dur": 4.23,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m146_b_ceramica_secando",
+   "start": 646.29,
+   "dur": 4.23,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Nunca sobre una piedra puntiaguda",
+   "accent": "danger",
+   "id": "c159",
+   "start": 647.64,
+   "dur": 3.97,
+   "overlay": true
+  },
+  {
+   "id": "m147_b_piedras_rio",
+   "start": 650.22,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_piedras_rio.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m148_vk_levi_olla_mano",
+   "start": 654.44,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_mano.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "numcard",
+   "number": "3",
+   "name": "Aprieta la tierra",
+   "eyebrow": "Sin bolsas de aire",
+   "total": "4",
+   "accent": "amber",
+   "id": "c54",
+   "start": 654.44,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m149_vk_olla_tapada_plato",
+   "start": 659.12,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "img/vk_olla_tapada_plato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m150_b_agua_gota_lenta",
+   "start": 663.8,
+   "dur": 6.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_agua_gota_lenta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl20",
+   "start": 663.8,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "tres",
+     "at": 0,
+     "hl": true
+    },
+    {
+     "t": "dedos",
+     "at": 0.38
+    }
+   ]
+  },
+  {
+   "id": "m151_b_agua_superficie",
+   "start": 669.68,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_agua_superficie.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "lielist",
+   "title": "Si la dejas a ras",
+   "items": [
+    "Se llena de barro y hojas",
+    "El sedimento tapa los poros",
+    "Un día la partes con la pala"
+   ],
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c56",
+   "start": 673.14,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m152_b_albahaca_planta",
+   "start": 675.38,
+   "dur": 6,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_albahaca_planta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m153_vk_levi_dos_macetas",
+   "start": 681.08,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_macetas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m154_vk_poros_barro_macro",
+   "start": 684.95,
+   "dur": 4.17,
+   "kind": "raw",
+   "src": "img/vk_poros_barro_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m155_b_alfarero_manos2",
+   "start": 688.82,
+   "dur": 3.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_alfarero_manos2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m156_vk_olla_corte_tierra",
+   "start": 691.7,
+   "dur": 6.56,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "phrasetag",
+   "text": "El agua no salta huecos",
+   "accent": "danger",
+   "id": "c57",
+   "start": 696.62,
+   "dur": 3.97,
+   "overlay": true
+  },
+  {
+   "id": "m157_b_raiz_creciendo",
+   "start": 697.96,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_raiz_creciendo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m158_b_teja_barro",
+   "start": 701.64,
+   "dur": 2.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_teja_barro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "numcard",
+   "number": "4",
+   "name": "Llena y tapa",
+   "eyebrow": "Siempre tapada",
+   "total": "4",
+   "accent": "amber",
+   "id": "c58",
+   "start": 701.64,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m159_vk_levi_tapando_piedra",
+   "start": 704.28,
+   "dur": 3.1,
+   "kind": "raw",
+   "src": "img/vk_levi_tapando_piedra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m160_olla_barro_manos",
+   "start": 707.08,
+   "dur": 2.98,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "impact",
+   "image": "img/vk_larvas_agua_quieta.png",
+   "setup": "Agua quieta al aire libre...",
+   "impact": "se tapan. Siempre.",
+   "impactAccent": "danger",
+   "hitAt": 1,
+   "boom": 0,
+   "darken": 0.5,
+   "id": "c59",
+   "start": 707.08,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m161_larvas_agua",
+   "start": 709.76,
+   "dur": 5.53,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/larvas_agua.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m162_b_mosquito_agua",
+   "start": 714.99,
+   "dur": 5.53,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_mosquito_agua.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m163_b_insecto_hoja",
+   "start": 720.21,
+   "dur": 5.53,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_insecto_hoja.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl21",
+   "start": 723.2,
+   "dur": 3.28,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "se",
+     "at": 0
+    },
+    {
+     "t": "tapan",
+     "at": 0.2
+    },
+    {
+     "t": "Todas",
+     "at": 0.92
+    },
+    {
+     "t": "Siempre",
+     "at": 1.68,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m164_canal_riego_campo",
+   "start": 725.44,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/canal_riego_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m165_maceta_barro_vacia",
+   "start": 728.46,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "chips",
+   "title": "Sirve de tapa",
+   "chips": [
+    "El plato boca abajo",
+    "Una piedra plana",
+    "Una teja"
+   ],
+   "hue": "amber",
+   "id": "c60",
+   "start": 728.46,
+   "dur": 7.15,
+   "overlay": true
+  },
+  {
+   "id": "m166_piedra_plana",
+   "start": 733.18,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/piedra_plana.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m167_vk_levi_prueba_agua",
+   "start": 736.86,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "img/vk_levi_prueba_agua.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "callout",
+   "figure": "✕",
+   "eyebrow": "Nada hermético",
+   "caption": "tiene que entrar algo de aire",
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c61",
+   "start": 737.76,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m168_campo_inundado",
+   "start": 741.26,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/campo_inundado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m169_b_piedra_mano",
+   "start": 745.3,
+   "dur": 6.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_piedra_mano.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m170_vk_levi_llenando_olla",
+   "start": 751.18,
+   "dur": 3.08,
+   "kind": "raw",
+   "src": "img/vk_levi_llenando_olla.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "checklist",
+   "title": "La tapa tiene que",
+   "items": [
+    {
+     "text": "Dejar pasar aire",
+     "state": "done"
+    },
+    {
+     "text": "No dejar pasar bichos",
+     "state": "done"
+    },
+    {
+     "text": "No dejar pasar luz",
+     "state": "done"
+    }
+   ],
+   "eyebrow": "Por eso la piedra",
+   "accent": "good",
+   "hue": "amber",
+   "id": "c161",
+   "start": 751.18,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m171_vk_raices_abrazando_olla",
+   "start": 753.96,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "img/vk_raices_abrazando_olla.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m172_vk_levi_olla_raices",
+   "start": 758.11,
+   "dur": 4.45,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_raices.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m173_b_arena_punado",
+   "start": 762.26,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_arena_punado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "bars",
+   "eyebrow": "Según tu tierra",
+   "title": "Cuánto moja",
+   "bars": [
+    {
+     "label": "Arenosa",
+     "value": 55,
+     "display": "menos",
+     "tone": "cold"
+    },
+    {
+     "label": "Normal",
+     "value": 80,
+     "display": "45 cm",
+     "winner": true
+    },
+    {
+     "label": "Arcilla",
+     "value": 100,
+     "display": "más, lento"
+    }
+   ],
+   "id": "c64",
+   "start": 762.26,
+   "dur": 7.61,
+   "overlay": true
+  },
+  {
+   "id": "m174_b_tierra_mojada",
+   "start": 767.12,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tierra_mojada.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m175_macetas_terracota_pila",
+   "start": 771.16,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "stat",
+   "value": 4,
+   "suffix": " plantas",
+   "label": "una por lado, a 25-30 cm del barro",
+   "eyebrow": "Por cada olla",
+   "accent": "good",
+   "hue": "amber",
+   "id": "c65",
+   "start": 772.14,
+   "dur": 6.7,
+   "overlay": true
+  },
+  {
+   "id": "m176_b_maceta_barro_mano2",
+   "start": 775.04,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m177_b_macetas_fila",
+   "start": 778.92,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "stattag",
+   "value": 30,
+   "suffix": " cm",
+   "label": "de la olla a cada planta",
+   "eyebrow": "No las pegues",
+   "accent": "good",
+   "corner": "tr",
+   "id": "c162",
+   "start": 780.54,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m178_vk_raices_superficiales",
+   "start": 783.54,
+   "dur": 2.86,
+   "kind": "raw",
+   "src": "img/vk_raices_superficiales.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m179_vk_tomate_rajado_macro",
+   "start": 786.1,
+   "dur": 6.52,
+   "kind": "raw",
+   "src": "img/vk_tomate_rajado_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m180_cosecha_verduras_cesta",
+   "start": 792.32,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/cosecha_verduras_cesta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m181_b_barro_textura",
+   "start": 795.34,
+   "dur": 5.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m182_raices_planta_tierra",
+   "start": 800.36,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/raices_planta_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "splitlist",
+   "title": "No le saca partido",
+   "items": [
+    "El césped",
+    "Siembras densas de hoja"
+   ],
+   "palette": "D",
+   "cross": true,
+   "id": "c68",
+   "start": 800.36,
+   "dur": 6.25,
+   "overlay": true
+  },
+  {
+   "id": "m183_raices_transplante",
+   "start": 804.9,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/raices_transplante.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m184_b_ceramica_secando",
+   "start": 809.44,
+   "dur": 5.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "lielist",
+   "title": "Las dos que la rajan",
+   "items": [
+    "La menta: la estrangula",
+    "La calabaza: hace de cuña"
+   ],
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c69",
+   "start": 811.6,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m185_menta_planta",
+   "start": 814.46,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/menta_planta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m186_vk_levi_olla_mano",
+   "start": 818.96,
+   "dur": 6.59,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_mano.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m187_vk_olla_tapada_plato",
+   "start": 825.25,
+   "dur": 6.59,
+   "kind": "raw",
+   "src": "img/vk_olla_tapada_plato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "metertag",
+   "label": "La menta la estrangula",
+   "fromPct": 10,
+   "toPct": 95,
+   "eyebrow": "En un año",
+   "corner": "tl",
+   "id": "c163",
+   "start": 826.82,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m188_vk_levi_dos_macetas",
+   "start": 831.54,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_macetas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m189_calabaza_campo",
+   "start": 835.76,
+   "dur": 3.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/calabaza_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m190_b_raiz_desnuda",
+   "start": 838.64,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_raiz_desnuda.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m191_vk_poros_barro_macro",
+   "start": 842.44,
+   "dur": 3.99,
+   "kind": "raw",
+   "src": "img/vk_poros_barro_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m192_vk_olla_corte_tierra",
+   "start": 846.13,
+   "dur": 3.99,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m193_olla_barro_manos",
+   "start": 849.82,
+   "dur": 5.21,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "callout",
+   "figure": "2",
+   "eyebrow": "Partida por una calabaza",
+   "caption": "la raíz gorda hace de cuña",
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c164",
+   "start": 849.82,
+   "dur": 6.25,
+   "overlay": true
+  },
+  {
+   "id": "m194_maceta_barro_vacia",
+   "start": 854.73,
+   "dur": 5.21,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m195_vinagre_botella",
+   "start": 859.64,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/vinagre_botella.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "chapter",
+   "title": "Cada cuánto se llena",
+   "num": "4",
+   "accent": "#c8a24a",
+   "id": "c71",
+   "start": 859.64,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m196_macetas_terracota_pila",
+   "start": 863.16,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "bars",
+   "eyebrow": "Olla de 3-4 litros",
+   "title": "Cada cuánto la llenas",
+   "bars": [
+    {
+     "label": "Primavera",
+     "value": 60,
+     "display": "6-7 días"
+    },
+    {
+     "label": "Pleno verano",
+     "value": 100,
+     "display": "3-4 días",
+     "tone": "danger"
+    },
+    {
+     "label": "Otoño",
+     "value": 35,
+     "display": "10 días",
+     "tone": "cold"
+    }
+   ],
+   "id": "c72",
+   "start": 865.4,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m197_sol_calor_campo",
+   "start": 868.76,
+   "dur": 5.9,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/sol_calor_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m198_b_tierra_removida",
+   "start": 874.36,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tierra_removida.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m199_b_rastrillo_tierra",
+   "start": 878,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_rastrillo_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m200_cal_deposito_blanco",
+   "start": 881.64,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/cal_deposito_blanco.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "rule",
+   "number": "!",
+   "label": "TRUCO",
+   "title": "Una varita te lo dice",
+   "hue": "amber",
+   "id": "c73",
+   "start": 883.48,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m201_b_maceta_barro_mano2",
+   "start": 884.66,
+   "dur": 6.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m202_b_campo_arado",
+   "start": 891.3,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_campo_arado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m203_invernadero_plantas",
+   "start": 895.21,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/invernadero_plantas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m204_huerta_bancal",
+   "start": 899.12,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/huerta_bancal.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Tu huerta te lo dice sola",
+   "accent": "good",
+   "id": "c165",
+   "start": 899.12,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m205_regadera_llenando",
+   "start": 903.8,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/regadera_llenando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "stattag",
+   "value": 4,
+   "suffix": " min",
+   "label": "toda la huerta, media semana",
+   "eyebrow": "Domingo",
+   "accent": "good",
+   "corner": "tr",
+   "id": "c74",
+   "start": 903.8,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m206_manos_regando_base",
+   "start": 908.66,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manos_regando_base.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m207_huerta_general",
+   "start": 913.52,
+   "dur": 6.38,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/huerta_general.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "El trabajo más agradable de la huerta",
+   "accent": "good",
+   "id": "c166",
+   "start": 916.64,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m208_microscopio_muestra",
+   "start": 919.6,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/microscopio_muestra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m209_b_microscopio_lente",
+   "start": 923.71,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_microscopio_lente.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "process",
+   "eyebrow": "Una vez al año",
+   "title": "Si tu agua es dura",
+   "steps": [
+    {
+     "title": "Desenterrar"
+    },
+    {
+     "title": "Balde con vinagre"
+    },
+    {
+     "title": "Enjuagar"
+    }
+   ],
+   "id": "c75",
+   "start": 926.12,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m210_b_macetas_fila",
+   "start": 927.82,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m211_manguera_chorro",
+   "start": 931.84,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manguera_chorro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m212_b_barro_textura",
+   "start": 937.76,
+   "dur": 5.04,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "El vinagre se come la cal",
+   "accent": "good",
+   "id": "c167",
+   "start": 940.46,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m213_microscopio_muestra",
+   "start": 942.5,
+   "dur": 4.03,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/microscopio_muestra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m214_b_microscopio_lente",
+   "start": 946.23,
+   "dur": 4.03,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_microscopio_lente.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m215_b_ceramica_secando",
+   "start": 949.96,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "stattag",
+   "value": 20,
+   "suffix": " años",
+   "label": "y una helada te la parte",
+   "eyebrow": "Sácala en otoño",
+   "accent": "danger",
+   "corner": "tr",
+   "id": "c168",
+   "start": 951.98,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m216_b_tierra_desmoronando",
+   "start": 953.36,
+   "dur": 6.38,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tierra_desmoronando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m217_b_amanecer_niebla",
+   "start": 959.44,
+   "dur": 3.24,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_amanecer_niebla.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "chapter",
+   "title": "Lo que NO hace",
+   "num": "5",
+   "accent": "#8d8378",
+   "id": "c77",
+   "start": 960.1,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m218_vk_levi_olla_mano",
+   "start": 962.38,
+   "dur": 2.98,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_mano.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m219_vk_olla_tapada_plato",
+   "start": 965.06,
+   "dur": 4.49,
+   "kind": "raw",
+   "src": "img/vk_olla_tapada_plato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Regada no es lo mismo que nutrida",
+   "accent": "amber",
+   "id": "c169",
+   "start": 968.58,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m220_vk_levi_dos_macetas",
+   "start": 969.25,
+   "dur": 4.49,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_macetas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m221_compost_pila",
+   "start": 973.44,
+   "dur": 5.22,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/compost_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m222_b_aspersor_campo",
+   "start": 978.36,
+   "dur": 6.48,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_aspersor_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m223_b_atardecer_dorado",
+   "start": 984.54,
+   "dur": 6.48,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_atardecer_dorado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m224_vk_poros_barro_macro",
+   "start": 990.72,
+   "dur": 4.95,
+   "kind": "raw",
+   "src": "img/vk_poros_barro_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "callout",
+   "figure": "2-3",
+   "eyebrow": "Semanas de arranque",
+   "caption": "todavía riegas cerca del tallo",
+   "accent": "amber",
+   "hue": "amber",
+   "id": "c80",
+   "start": 992.38,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m225_vk_olla_corte_tierra",
+   "start": 995.37,
+   "dur": 4.95,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m226_b_riego_manual",
+   "start": 1000.02,
+   "dur": 5.03,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_riego_manual.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m227_vk_levi_dos_regaderas",
+   "start": 1004.75,
+   "dur": 5.03,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_regaderas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m228_olla_barro_manos",
+   "start": 1009.48,
+   "dur": 5.98,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "callout",
+   "figure": "30",
+   "eyebrow": "Si te vas un mes",
+   "caption": "no hay olla que te salve",
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c170",
+   "start": 1013.42,
+   "dur": 7.15,
+   "overlay": true
+  },
+  {
+   "id": "m229_manos_tierra_punado",
+   "start": 1015.16,
+   "dur": 7.2,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manos_tierra_punado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m230_b_auto_ruta",
+   "start": 1022.06,
+   "dur": 3.46,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_auto_ruta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl24",
+   "start": 1022.06,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Pero",
+     "at": 0
+    },
+    {
+     "t": "no",
+     "at": 0.34
+    },
+    {
+     "t": "es",
+     "at": 0.6
+    },
+    {
+     "t": "magia",
+     "at": 0.84,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m231_maceta_barro_vacia",
+   "start": 1025.22,
+   "dur": 4.88,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m232_goteo_emisor_macro",
+   "start": 1029.8,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/goteo_emisor_macro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "bars",
+   "eyebrow": "Un bancal de 3×1 m",
+   "title": "Lo que cuesta de verdad",
+   "bars": [
+    {
+     "label": "3-4 ollas",
+     "value": 20,
+     "display": "$20",
+     "winner": true
+    },
+    {
+     "label": "Kit de goteo",
+     "value": 100,
+     "display": "$60-120",
+     "tone": "danger"
+    }
+   ],
+   "id": "c82",
+   "start": 1029.8,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m233_piezas_plastico",
+   "start": 1035.42,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/piezas_plastico.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m234_vk_levi_abuelo_recuerdo",
+   "start": 1041.04,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "img/vk_levi_abuelo_recuerdo.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m235_pilas_bateria",
+   "start": 1045.04,
+   "dur": 6.96,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/pilas_bateria.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "lielist",
+   "title": "Por qué vuelves cada primavera",
+   "items": [
+    "Los goteros se tapan",
+    "La manguera se raja al sol",
+    "El programador se queda sin pila"
+   ],
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c83",
+   "start": 1045.04,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m236_manguera_plastico",
+   "start": 1051.7,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/manguera_plastico.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m237_b_azada_huerta",
+   "start": 1055.9,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_azada_huerta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m238_temporizador_grifo",
+   "start": 1059.36,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/temporizador_grifo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m239_b_manguera_enrollada",
+   "start": 1062.46,
+   "dur": 5.04,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_manguera_enrollada.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m240_b_goteo_manguera",
+   "start": 1067.2,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_goteo_manguera.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m241_vivero_estantes",
+   "start": 1071.18,
+   "dur": 3.9,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/vivero_estantes.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "metertag",
+   "label": "Vuelves cada primavera",
+   "fromPct": 20,
+   "toPct": 100,
+   "eyebrow": "El negocio",
+   "corner": "tl",
+   "id": "c171",
+   "start": 1071.18,
+   "dur": 3.97,
+   "overlay": true
+  },
+  {
+   "id": "m242_b_balde_llenando",
+   "start": 1074.78,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_balde_llenando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "kl25",
+   "start": 1076.72,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "Eso",
+     "at": 0
+    },
+    {
+     "t": "es",
+     "at": 0.38
+    },
+    {
+     "t": "el",
+     "at": 0.64
+    },
+    {
+     "t": "modelo",
+     "at": 0.8,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m243_macetas_terracota_pila",
+   "start": 1077.88,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m244_b_plastico_tubos",
+   "start": 1081.62,
+   "dur": 6.48,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_plastico_tubos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "bars",
+   "eyebrow": "Cuánto dura",
+   "title": "Una compra contra una suscripción",
+   "bars": [
+    {
+     "label": "Olla de barro",
+     "value": 100,
+     "display": "décadas",
+     "winner": true
+    },
+    {
+     "label": "Kit de goteo",
+     "value": 28,
+     "display": "2-3 años",
+     "tone": "danger"
+    }
+   ],
+   "id": "c172",
+   "start": 1081.62,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m245_b_maceta_barro_mano2",
+   "start": 1087.8,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m246_b_banco_taller",
+   "start": 1091.76,
+   "dur": 3.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_banco_taller.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m247_moneda_monedas",
+   "start": 1094.98,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/moneda_monedas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Nadie gana dinero contándotelo",
+   "accent": "danger",
+   "id": "c86",
+   "start": 1096.8,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m248_vivero_pasillo",
+   "start": 1098.72,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/vivero_pasillo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m249_b_berenjena_morada",
+   "start": 1102.56,
+   "dur": 5.54,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_berenjena_morada.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m250_b_caballo_carro",
+   "start": 1107.8,
+   "dur": 5.54,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_caballo_carro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m251_b_calabacin_flor",
+   "start": 1113.04,
+   "dur": 2.86,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_calabacin_flor.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "impact",
+   "image": "img/vk_plantas_mediodia_caidas.png",
+   "setup": "El error del 90% es...",
+   "impact": "seguir regando por encima.",
+   "impactAccent": "danger",
+   "hitAt": 1,
+   "boom": 0,
+   "darken": 0.5,
+   "id": "c87",
+   "start": 1113.04,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m252_b_calabaza_hoja",
+   "start": 1115.6,
+   "dur": 6.24,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_calabaza_hoja.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m253_b_calendario_hojas",
+   "start": 1121.54,
+   "dur": 3.72,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_calendario_hojas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m254_b_cal_grifo",
+   "start": 1124.96,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_cal_grifo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m255_b_macetas_fila",
+   "start": 1128.52,
+   "dur": 5.28,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m256_b_aspersor_campo",
+   "start": 1133.5,
+   "dur": 5.52,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_aspersor_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "process",
+   "eyebrow": "Primera capa",
+   "title": "La apagaste tú",
+   "steps": [
+    {
+     "title": "Riegas arriba"
+    },
+    {
+     "title": "La tierra no se seca"
+    },
+    {
+     "title": "La olla no suelta"
+    }
+   ],
+   "id": "c88",
+   "start": 1136.24,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m257_b_barro_textura",
+   "start": 1138.72,
+   "dur": 4.12,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m258_b_piedras_rio",
+   "start": 1142.54,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_piedras_rio.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m259_b_teja_barro",
+   "start": 1147.35,
+   "dur": 5.11,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_teja_barro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m260_b_carrito_tienda",
+   "start": 1152.16,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_carrito_tienda.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Está"
+    },
+    {
+     "t": "apagada",
+     "hl": true
+    }
+   ],
+   "eyebrow": "No es que no gaste",
+   "hue": "red",
+   "id": "c89",
+   "start": 1153.42,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m261_b_dinero_contando",
+   "start": 1155.54,
+   "dur": 6.68,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_dinero_contando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m262_b_raices_maceta",
+   "start": 1161.92,
+   "dur": 2.9,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_raices_maceta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "rule",
+   "number": "3",
+   "label": "REGLA",
+   "title": "La raíz elige lo fácil",
+   "hue": "red",
+   "id": "c90",
+   "start": 1161.92,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m263_b_raiz_creciendo",
+   "start": 1164.52,
+   "dur": 5.18,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_raiz_creciendo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m264_vk_raices_abrazando_olla",
+   "start": 1169.4,
+   "dur": 3.98,
+   "kind": "raw",
+   "src": "img/vk_raices_abrazando_olla.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "kl27",
+   "start": 1169.4,
+   "dur": 2.9,
+   "kind": "kineticline",
+   "overlay": true,
+   "accent": "amber",
+   "words": [
+    {
+     "t": "No",
+     "at": 0
+    },
+    {
+     "t": "baja",
+     "at": 0.3,
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "m265_b_ceramica_secando",
+   "start": 1173.08,
+   "dur": 7.32,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "callout",
+   "figure": "3 L",
+   "eyebrow": "A 20 cm",
+   "caption": "y la planta no lo sabe",
+   "accent": "danger",
+   "hue": "amber",
+   "dur": 6.6,
+   "id": "c174",
+   "start": 1178.46,
+   "overlay": true
+  },
+  {
+   "id": "m266_vk_tierra_agrietada_zapato",
+   "start": 1180.1,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "img/vk_tierra_agrietada_zapato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m267_b_desierto_dunas",
+   "start": 1184.94,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_desierto_dunas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m268_b_cepillo_fregando",
+   "start": 1189.78,
+   "dur": 2.82,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_cepillo_fregando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "quote",
+   "text": "Tenía tres litros a sus pies. Nunca aprendió a *bajar*.",
+   "accent": "danger",
+   "hue": "amber",
+   "id": "c91",
+   "start": 1189.78,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m269_b_cesta_verduras",
+   "start": 1192.3,
+   "dur": 3.16,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_cesta_verduras.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m270_b_grifo_agua",
+   "start": 1195.16,
+   "dur": 4.65,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_grifo_agua.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m271_b_grifo_goteando",
+   "start": 1199.51,
+   "dur": 4.65,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_grifo_goteando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m272_b_agua_gota_lenta",
+   "start": 1203.86,
+   "dur": 3.46,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_agua_gota_lenta.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m273_b_charco_barro",
+   "start": 1207.02,
+   "dur": 3.22,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_charco_barro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m274_vk_levi_olla_raices",
+   "start": 1209.94,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_raices.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "checklist",
+   "title": "La regla, corta",
+   "items": [
+    {
+     "text": "2-3 semanas: riegas arriba",
+     "state": "doing"
+    },
+    {
+     "text": "Después: solo la olla",
+     "state": "done"
+    }
+   ],
+   "eyebrow": "El error se arregla así",
+   "accent": "good",
+   "hue": "amber",
+   "id": "c93",
+   "start": 1209.94,
+   "dur": 8,
+   "overlay": true
+  },
+  {
+   "id": "m275_vk_raices_superficiales",
+   "start": 1213.66,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "img/vk_raices_superficiales.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m276_b_bomba_agua",
+   "start": 1217.38,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_bomba_agua.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m277_vk_levi_olla_mano",
+   "start": 1221.28,
+   "dur": 5.32,
+   "kind": "raw",
+   "src": "img/vk_levi_olla_mano.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m278_raices_planta_tierra",
+   "start": 1226.3,
+   "dur": 6.54,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/raices_planta_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "rule",
+   "number": "10",
+   "label": "DÍAS",
+   "title": "Ahí es cuando la raíz baja",
+   "hue": "amber",
+   "id": "c175",
+   "start": 1226.3,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m279_raices_transplante",
+   "start": 1232.54,
+   "dur": 5.24,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/raices_transplante.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "No las salves. Están bajando.",
+   "accent": "amber",
+   "id": "c94",
+   "start": 1232.54,
+   "dur": 3.97,
+   "overlay": true
+  },
+  {
+   "id": "m280_plantas_marchitas_sol",
+   "start": 1237.48,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/plantas_marchitas_sol.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m281_hojas_amarillas",
+   "start": 1241.12,
+   "dur": 3.94,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/hojas_amarillas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "splitlist",
+   "title": "Diez días después",
+   "items": [
+    "Las tuyas: de pie al mediodía",
+    "Las del vecino: dobladas"
+   ],
+   "palette": "G",
+   "id": "c176",
+   "start": 1242.48,
+   "dur": 7.61,
+   "overlay": true
+  },
+  {
+   "id": "m282_tierra_negra_rica",
+   "start": 1244.76,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/tierra_negra_rica.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m283_vk_abuelo_piedra_tapa",
+   "start": 1251.16,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "img/vk_abuelo_piedra_tapa.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "chapter",
+   "title": "Este fin de semana",
+   "num": "6",
+   "accent": "#c8a24a",
+   "id": "c96",
+   "start": 1251.16,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m284_vk_olla_tapada_plato",
+   "start": 1255.28,
+   "dur": 5.72,
+   "kind": "raw",
+   "src": "img/vk_olla_tapada_plato.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m285_ferreteria_estante",
+   "start": 1260.7,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/ferreteria_estante.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m286_vk_levi_dos_macetas",
+   "start": 1264.48,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_macetas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m287_vk_mancha_humeda_barro",
+   "start": 1267.68,
+   "dur": 5.74,
+   "kind": "raw",
+   "src": "img/vk_mancha_humeda_barro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "splitlist",
+   "title": "Devuélvela",
+   "items": [
+    "El agua queda en perla",
+    "Está esmaltada",
+    "Será un balde enterrado"
+   ],
+   "palette": "D",
+   "cross": true,
+   "id": "c49",
+   "start": 1268.6,
+   "dur": 7.15,
+   "overlay": true
+  },
+  {
+   "id": "m288_vk_poros_barro_macro",
+   "start": 1273.12,
+   "dur": 5.99,
+   "kind": "raw",
+   "src": "img/vk_poros_barro_macro.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m289_vk_olla_corte_tierra",
+   "start": 1278.81,
+   "dur": 5.99,
+   "kind": "raw",
+   "src": "img/vk_olla_corte_tierra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m290_olla_barro_manos",
+   "start": 1284.51,
+   "dur": 5.99,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "numcard",
+   "number": "4",
+   "name": "Llena y tapa",
+   "eyebrow": "Siempre, por los mosquitos",
+   "total": "7",
+   "accent": "amber",
+   "id": "c99",
+   "start": 1289.44,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m291_vk_levi_tapando_piedra",
+   "start": 1290.2,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "img/vk_levi_tapando_piedra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m292_vk_levi_tapando_piedra",
+   "start": 1294.1,
+   "dur": 7.44,
+   "kind": "raw",
+   "src": "img/vk_levi_tapando_piedra.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "kind": "numcard",
+   "number": "5",
+   "name": "Cuatro plantas",
+   "eyebrow": "Ni menta ni calabaza",
+   "total": "7",
+   "accent": "amber",
+   "id": "c100",
+   "start": 1296.18,
+   "dur": 4.43,
+   "overlay": true
+  },
+  {
+   "id": "m293_b_menta_hojas",
+   "start": 1301.24,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_menta_hojas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "numcard",
+   "number": "6",
+   "name": "Corta el riego de arriba",
+   "eyebrow": "Solo llenas la olla",
+   "total": "7",
+   "accent": "amber",
+   "id": "c101",
+   "start": 1303.16,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m294_vk_levi_llenando_olla",
+   "start": 1304.48,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "img/vk_levi_llenando_olla.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m295_vk_levi_dos_regaderas",
+   "start": 1308.48,
+   "dur": 2.98,
+   "kind": "raw",
+   "src": "img/vk_levi_dos_regaderas.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m296_maceta_barro_vacia",
+   "start": 1311.16,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m297_b_sol_abrasador",
+   "start": 1315.22,
+   "dur": 6.02,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_sol_abrasador.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "numcard",
+   "number": "7",
+   "name": "Guárdala en otoño",
+   "eyebrow": "Antes de la primera helada",
+   "total": "7",
+   "accent": "amber",
+   "id": "c102",
+   "start": 1320.28,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m298_b_hoyo_cavado",
+   "start": 1320.94,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_hoyo_cavado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m299_b_pala_metal",
+   "start": 1325.11,
+   "dur": 4.47,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_pala_metal.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m300_caja_registradora",
+   "start": 1329.28,
+   "dur": 3.06,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/caja_registradora.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "Cinco"
+    },
+    {
+     "t": "dólares"
+    },
+    {
+     "t": "y"
+    },
+    {
+     "t": "una"
+    },
+    {
+     "t": "tarde",
+     "hl": true
+    }
+   ],
+   "eyebrow": "Eso es todo",
+   "hue": "amber",
+   "id": "c103",
+   "start": 1329.28,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m301_vk_menta_invadiendo",
+   "start": 1332.04,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "img/vk_menta_invadiendo.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m302_b_tierra_removida",
+   "start": 1335.14,
+   "dur": 6.8,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_tierra_removida.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m303_macetas_terracota_pila",
+   "start": 1341.64,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m304_b_maceta_barro_mano2",
+   "start": 1345.75,
+   "dur": 4.41,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m305_cepillo_limpiando",
+   "start": 1349.86,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/cepillo_limpiando.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Contame en los comentarios",
+   "accent": "good",
+   "id": "c177",
+   "start": 1349.86,
+   "dur": 3.52,
+   "overlay": true
+  },
+  {
+   "id": "m306_agua_absorbida_tierra",
+   "start": 1353.78,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agua_absorbida_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m307_b_china_campo",
+   "start": 1357.78,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_china_campo.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "phrasetag",
+   "text": "Lo de antes de la caja con instrucciones",
+   "accent": "amber",
+   "id": "c178",
+   "start": 1357.78,
+   "dur": 5.34,
+   "overlay": true
+  },
+  {
+   "id": "m308_b_cocina_rustica",
+   "start": 1362.62,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_cocina_rustica.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m309_b_temporizador_digital",
+   "start": 1365.32,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_temporizador_digital.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "quote",
+   "text": "Piedras apiladas. Sin una gota de agua. Y amanecen *mojadas*.",
+   "accent": "cold",
+   "hue": "cold",
+   "id": "c105",
+   "start": 1365.32,
+   "dur": 5.79,
+   "overlay": true
+  },
+  {
+   "id": "m310_vk_kit_goteo_caja",
+   "start": 1370.16,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "img/vk_kit_goteo_caja.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m311_vk_abuelo_piedra_tapa",
+   "start": 1375,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "img/vk_abuelo_piedra_tapa.png",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "m312_agricultor_mayor_manos",
+   "start": 1380.92,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/agricultor_mayor_manos.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m313_b_rastrillo_tierra",
+   "start": 1386.84,
+   "dur": 3.93,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_rastrillo_tierra.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m314_b_campo_arado",
+   "start": 1390.47,
+   "dur": 3.93,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/b_campo_arado.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "m315_calendario_pared",
+   "start": 1394.1,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/calendario_pared.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "kind": "signature",
+   "lines": [
+    "Eran cosas de cinco dólares"
+   ],
+   "eyebrow": "Levi Lapp",
+   "id": "c106",
+   "start": 1396.4,
+   "dur": 4.88,
+   "overlay": true
+  },
+  {
+   "id": "m316_invernadero_plantas",
+   "start": 1398.5,
+   "dur": 2.92,
+   "kind": "raw",
+   "src": "broll/vkkh5eytcp5l/invernadero_plantas.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  }
+ ]
+}
