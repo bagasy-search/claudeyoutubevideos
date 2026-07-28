@@ -11,7 +11,7 @@ const beats = JSON.parse(fs.readFileSync(`beatsheet/${SLUG}.json`, "utf8")).beat
 // ── 1) b-roll real ───────────────────────────────────────────────────────────
 const have = plan.filter((b) => {
   const p = "public/" + b.src;
-  return fs.existsSync(p) && fs.statSync(p).size > 20000;
+  return fs.existsSync(p) && fs.statSync(p).size > 4000;
 });
 for (let i = 0; i < have.length; i++) {
   const next = have[i + 1];

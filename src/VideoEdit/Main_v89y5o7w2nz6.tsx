@@ -47,7 +47,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <RawShot />
 <RawShot />
-<PizarraExplica />
+<ChipsPanel />
 <DiagramaLamina />
 <RawShot />
 <RawShot />
@@ -85,7 +85,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <LowerThird />
 <RawShot />
 <BarsCompare />
-<PizarraExplica />
+<ChipsPanel />
 <RawShot />
 <CheckList />
 <RawShot />
@@ -125,7 +125,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <RawShot />
 <FraseCinetica />
-<PizarraExplica />
+<ChipsPanel />
 <RawShot />
 <RawShot />
 <RawShot />
@@ -195,7 +195,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <FraseCinetica />
 <RawShot />
-<PizarraExplica />
+<ChipsPanel />
 <RawShot />
 <DiagramaLamina />
 <RawShot />
@@ -216,7 +216,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <DiagramaLamina />
 <RawShot />
-<PizarraExplica />
+<ChipsPanel />
 <RawShot />
 <RawShot />
 <FraseCinetica />
@@ -332,7 +332,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <ErrorStinger />
 <CheckList />
-<PizarraExplica />
+<ChipsPanel />
 <RawShot />
 <LowerThird />
 <RawShot />
@@ -358,7 +358,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <FreezeZoom />
 <FraseCinetica />
-<PizarraExplica />
+<ChipsPanel />
 <AvatarKeyword />
 <RawShot />
 <RawShot />
@@ -409,7 +409,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <CalloutFoto />
 <RawShot />
-<PizarraExplica />
+<ChipsPanel />
 <ErrorStinger />
 <RawShot />
 <BarsCompare />
@@ -496,7 +496,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <FraseCinetica />
 <AvatarKeyword />
 <FraseCinetica />
-<PizarraExplica />
+<ChipsPanel />
 <RawShot />
 <ErrorStinger />
 <RawShot />
@@ -537,7 +537,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <AvatarKeyword />
 <DiagramaLamina />
 <RawShot />
-<PizarraExplica />
+<ChipsPanel />
 <FraseCinetica />
 <RawShot />
 <RawShot />
@@ -561,7 +561,7 @@ export const CLIPS = ["broll/bd_v89y5o7w2nz6_000.mp4","broll/bd_v89y5o7w2nz6_001
 <RawShot />
 <RawShot />
 <RawShot />
-<PizarraExplica />
+<ChipsPanel />
 <RawShot />
 <LowerThird />
 <RawShot />

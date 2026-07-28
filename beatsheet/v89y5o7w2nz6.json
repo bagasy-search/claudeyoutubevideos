@@ -387,19 +387,12 @@
    "start": 91.72,
    "dur": 3.72,
    "key": "la_malla",
-   "kind": "board",
+   "kind": "chips",
    "title": "Qué sostiene el agua de tu piel",
-   "items": [
-    {
-     "title": "La malla de colágeno",
-     "sub": "la estructura, el andamio"
-    },
-    {
-     "title": "Las moléculas que abrazan",
-     "sub": "agarran el agua y no la sueltan"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "La malla de colágeno: la estructura, el andamio",
+    "Las moléculas que abrazan: agarran el agua y no la sueltan"
+   ]
   },
   {
    "id": "malla_entera_o_gastada_0",
@@ -773,19 +766,12 @@
    "start": 197.78,
    "dur": 4.5,
    "key": "las_dos_dosis",
-   "kind": "board",
+   "kind": "chips",
    "title": "Lo que midieron",
-   "items": [
-    {
-     "title": "15 gramos",
-     "sub": "de una cosa"
-    },
-    {
-     "title": "50 miligramos",
-     "sub": "de la otra"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "15 gramos: de una cosa",
+    "50 miligramos: de la otra"
+   ]
   },
   {
    "id": "las_dos_dosis_1",
@@ -1220,19 +1206,12 @@
    "start": 317.12,
    "dur": 4.48,
    "key": "de_donde_sale_glicina",
-   "kind": "board",
+   "kind": "chips",
    "title": "¿Dónde está la glicina?",
-   "items": [
-    {
-     "title": "Cartílago y hueso",
-     "sub": "lo que se hervía cuatro horas"
-    },
-    {
-     "title": "Piel y pata de pollo",
-     "sub": "lo que hoy va a la basura"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "Cartílago y hueso: lo que se hervía cuatro horas",
+    "Piel y pata de pollo: lo que hoy va a la basura"
+   ]
   },
   {
    "id": "cartilago_hueso_pata_0",
@@ -1799,19 +1778,12 @@
    "start": 493.06,
    "dur": 6.25,
    "key": "dos_razones_materia_prima",
-   "kind": "board",
+   "kind": "chips",
    "title": "Por qué serviría igual",
-   "items": [
-    {
-     "title": "1. Materia prima",
-     "sub": "Glicina y prolina de golpe, juntas"
-    },
-    {
-     "title": "2. La orden de trabajo",
-     "sub": "Los pedacitos avisan que hay que reparar"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "1. Materia prima: Glicina y prolina de golpe, juntas",
+    "2. La orden de trabajo: Los pedacitos avisan que hay que reparar"
+   ]
   },
   {
    "id": "dos_razones_materia_prima_1",
@@ -2047,19 +2019,12 @@
    "start": 576.12,
    "dur": 6.84,
    "key": "cinco_cosas",
-   "kind": "board",
+   "kind": "chips",
    "title": "Las 5 cosas del agua",
-   "items": [
-    {
-     "title": "Van en orden",
-     "sub": "de la que más se nota a la que menos"
-    },
-    {
-     "title": "Cada una con su porqué",
-     "sub": "su número y su trampa"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "Van en orden: de la que más se nota a la que menos",
+    "Cada una con su porqué: su número y su trampa"
+   ]
   },
   {
    "id": "orden_lista_0",
@@ -3175,19 +3140,12 @@
    "start": 890.02,
    "dur": 2.9,
    "key": "advertencia_tragar",
-   "kind": "board",
+   "kind": "chips",
    "title": "Consultá antes si tenés",
-   "items": [
-    {
-     "title": "Problemas para tragar",
-     "sub": "Hablalo con tu médico primero"
-    },
-    {
-     "title": "Divertículos",
-     "sub": "No arranques por tu cuenta"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "Problemas para tragar: Hablalo con tu médico primero",
+    "Divertículos: No arranques por tu cuenta"
+   ]
   },
   {
    "id": "te_verde_quinta_0",
@@ -3454,19 +3412,12 @@
    "start": 946.82,
    "dur": 4.6,
    "key": "mitad_y_mitad",
-   "kind": "board",
+   "kind": "chips",
    "title": "El trabajo, en dos mitades",
-   "items": [
-    {
-     "title": "Construir",
-     "sub": "Gelatina, vitamina C, descanso"
-    },
-    {
-     "title": "Que no te demuelan",
-     "sub": "Sol, humo, inflamación"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "Construir: Gelatina, vitamina C, descanso",
+    "Que no te demuelan: Sol, humo, inflamación"
+   ]
   },
   {
    "id": "topadora_numero_uno_0",
@@ -3942,19 +3893,12 @@
    "start": 1102.27,
    "dur": 4.89,
    "key": "dalos_vuelta",
-   "kind": "board",
+   "kind": "chips",
    "title": "Lo que vas a encontrar",
-   "items": [
-    {
-     "title": "Mucha menos cantidad",
-     "sub": "Bastante menos de la que hace falta"
-    },
-    {
-     "title": "Azúcar o jarabe",
-     "sub": "A veces, el segundo ingrediente"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "Mucha menos cantidad: Bastante menos de la que hace falta",
+    "Azúcar o jarabe: A veces, el segundo ingrediente"
+   ]
   },
   {
    "id": "azucar_el_segundo_0",
@@ -4839,19 +4783,12 @@
    "start": 1321.58,
    "dur": 4.6,
    "key": "por_reloj",
-   "kind": "board",
+   "kind": "chips",
    "title": "El vaso a esta edad",
-   "items": [
-    {
-     "title": "Por reloj",
-     "sub": "no por sed"
-    },
-    {
-     "title": "Con material adentro",
-     "sub": "no agua sola"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "Por reloj: no por sed",
+    "Con material adentro: no agua sola"
+   ]
   },
   {
    "id": "por_reloj_2",
@@ -5288,19 +5225,12 @@
    "start": 1446.28,
    "dur": 3.92,
    "key": "no_se_recicla",
-   "kind": "board",
+   "kind": "chips",
    "title": "Colágeno glicado",
-   "items": [
-    {
-     "title": "Se queda ahí",
-     "sub": "viejo y duro"
-    },
-    {
-     "title": "Ocupa el lugar",
-     "sub": "impide que entre uno nuevo"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "Se queda ahí: viejo y duro",
+    "Ocupa el lugar: impide que entre uno nuevo"
+   ]
   },
   {
    "id": "no_se_recicla_3",
@@ -5526,19 +5456,12 @@
    "start": 1503.3,
    "dur": 4.6,
    "key": "por_que_nadie_lo_vende",
-   "kind": "board",
+   "kind": "chips",
    "title": "Por qué nadie te lo vende",
-   "items": [
-    {
-     "title": "No se factura",
-     "sub": "Nadie cobra por lo que dejás de comprar"
-    },
-    {
-     "title": "No hay publicidad",
-     "sub": "Dejá de tomar cosas dulces no vende"
-    }
-   ],
-   "side": "left"
+   "chips": [
+    "No se factura: Nadie cobra por lo que dejás de comprar",
+    "No hay publicidad: Dejá de tomar cosas dulces no vende"
+   ]
   },
   {
    "id": "por_que_nadie_lo_vende_2",

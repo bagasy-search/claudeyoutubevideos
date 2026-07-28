@@ -143,6 +143,12 @@ for (const beat of beats) {
     if (beat.x > 1) beat.x = beat.x / 100;
     if (beat.y > 1) beat.y = beat.y / 100;
   }
+  // un board de 2 renglones deja una tarjeta enorme medio vacía (lo cazó la cuadrícula):
+  // esos van como chips, que es un formato compacto y se lee.
+  if (beat.kind === 'board' && Array.isArray(beat.items) && beat.items.length < 3) {
+    beat.chips = beat.items.map((i) => (i.sub ? i.title + ": " + i.sub : i.title));
+    delete beat.items; delete beat.side; beat.kind = 'chips';
+  }
   if (beat.at) delete beat.at;
   if (beat.name) delete beat.name;
 }
