@@ -129,6 +129,18 @@ for (const beat of beats) {
     });
     const GAP = 90;
     if (last > 420) { beat.items = beat.items.map((it, i) => ({ ...it, at: i * GAP })); last = (beat.items.length - 1) * GAP; }
+    // El componente interpola con [6, 20, at, at+16]: un `at` entre 1 y 23 frames deja ese rango
+    // NO monotónico y Remotion tira "inputRange must be strictly monotonically increasing"
+    // (mató 4 chunks del primer render). at=0 tiene camino propio y funciona; el resto se corre a 24.
+    // Además dos items no pueden compartir el mismo `at`, por lo mismo.
+    let prevAt = -1;
+    beat.items = beat.items.map((it) => {
+      let a = it.at > 0 && it.at < 24 ? 24 : it.at;
+      if (a <= prevAt) a = prevAt + 12;
+      prevAt = a;
+      return { ...it, at: a };
+    });
+    last = Math.max(last, ...beat.items.map((i) => i.at));
     const hold = beat.kind === "avatarpizarra" ? 4.2 : beat.kind === "focuscards" ? 4.5 : 2.8;
     beat.dur = +(last / 30 + hold).toFixed(2);
   }
