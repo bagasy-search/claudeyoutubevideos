@@ -107,6 +107,22 @@
   personal de una línea, memoria imperfecta).
 - 2026-07-28 — Este archivo `canales/levi-lapp-jardin.md` no existía y ningún worktree lo tenía.
   Creado desde la memoria del agente. Todo lo que no estaba confirmado quedó en ⬜.
+- 2026-07-28 — ⚠️ EL LOOK DEL AVATAR (`626aa96d83c744e99fb0d34e1b992631`) TIENE UNA PIZARRA DE OTRO
+  VIDEO detrás: dice "ABONO NATURAL DE $3 · GUÍA EN LA DESCRIPCIÓN". Sale en pantalla cada vez que
+  el avatar va a full, así que en este video (plaguicidas) contradice el tema y promete una guía que
+  no existe. Para los próximos: pedir un look sin texto en la pizarra, o uno por tema.
+- 2026-07-28 — Con `eleven_v3`, HeyGen leyó EN VOZ ALTA dos de los cuatro tags: `[chuckles]` salió
+  como "Chuckles" y `[clears throat]` como "Clear throat" (`[sighs]` y `[whispers]` sí los interpretó).
+  Fix sin gastar otro crédito: ubicar el ms en las captions y silenciar ese span con
+  `ffmpeg -af volume=enable='between(t,A,B)':volume=0 -c:v copy` — no re-encodea el video, la duración
+  no se mueve y las anclas de Whisper siguen valiendo. Para el próximo: usar sólo `[sighs]`/`[whispers]`.
+- 2026-07-28 — Whisper transcribe los números como DÍGITOS ("20 listas" donde el guion dice "veinte
+  listas"), así que anclar por frase literal falla en la mitad de los casos. El build usa matcheo
+  DIFUSO por solapamiento de tokens (umbral 0,62) y reporta las anclas dudosas.
+- 2026-07-28 — La compuerta de densidad pide 7 usos de componente por minuto, pero llenarla con
+  carteles a pantalla completa mata el b-roll y el look sparse del nicho. La forma correcta es
+  tipografía sincronizada al ms ENCIMA del clip vivo (kineticline/phrasetag como overlay): cuenta
+  para la compuerta y no tapa el material real. Aire mínimo de 5s entre carteles full.
 - 2026-07-28 — Video "Dile Adiós a los Plaguicidas Caros": el creador pidió MODO STOCK
   (b-roll 100% real de Pexels, IA solo para momentos personales con la cara de Levi como ref),
   fotos reales de la web habilitadas, y gpt-image-2 como motor de imagen para este video.
