@@ -120,4 +120,49 @@
 - 2026-07-22 — CREADOR (transcripción): el sync milimétrico depende de la calidad de la transcripción. `modal_whisper.py` con modelo **`medium`** SE COME/COMPRIME palabras en habla rápida (dropea "uno/dos/tres" del recap, secciones enteras) → las anclas caen en fallback y "no encaja al ritmo". FIX: transcribir SIEMPRE con **`--model large-v3`** en este canal (captura +140 palabras, no dropea). El anclaje ya es al ms exacto de la palabra (findMs → startMs), el cuello era el modelo. Mejora futura: alineación forzada (WhisperX/wav2vec) para ms por palabra aun en habla muy rápida.
 - 2026-07-22 — CREADOR (encuadre, refuerza halfR): confirmado en el video de creatinina — cuando hay muchas imágenes/clips el avatar en SPLIT queda mal encuadrado. Aplicado: `buildWindows` emite solo full/hidden (cero halfR). El recap enumerado ("uno… cinco") ahora va con FocusCards (5 tarjetas, la que toca se enfoca al decir su número, ancladas al ms). Ambos ya son estándar del canal.
 - 2026-07-22 — PRODUCCIÓN (gotcha resuelto): si Pexels throttlea (429) y el b-roll queda RALO en un tramo (típico: el último tercio), el avatar en modo `hidden` sin clip detrás muestra el FONDO teal pelado → sale como NEGRO en el MP4 (blackdetect lo caza). FIX baked en `Main`: `buildWindows` ahora tiene un GAP-FILL — calcula cobertura (broll+fotos+comps) y donde NO hay contenido pone el avatar FULL (nunca fondo pelado). Aplicarlo a TODO Main de este kit. Además: auditar SIEMPRE el MP4 con `ffmpeg blackdetect` antes de dar por bueno el render; si hay negros, es b-roll ralo → gap-fill o bajar más clips y re-render PARCIAL de esos chunks.
+- 2026-07-28 — AVATAR (HeyGen): el motor `avatar_iii` (digital twin) de ESTE avatar **NO deja costuras
+  visibles** entre escenas de una misma llamada `create_video_from_studio`. Verificado en el video de
+  las canas (8 escenas, 25:30): `ffmpeg select='gt(scene,0.06)'` no detectó nada, y bajando el umbral
+  hasta 0.015 tampoco. O sea que el paso de "marcar las costuras como cortes obligados a visual
+  full-screen" **no hace falta en este canal** — no hay salto de pose que tapar. Igual conviene
+  correr la detección una vez por video por si cambia el avatar.
+- 2026-07-28 — KIT (bug que MATA el render, no lo repitas): `AvatarPizarra` y `AvatarKeyword` NO
+  comparten el shape del ítem. `KwItem` (keyword) = `{word, sub, image?, tone}`; `PizItem` (pizarra)
+  = `{image | card, caption, eyebrow, sub}`. Si a la PIZARRA le pasás `word`, el ítem queda sin
+  `image` y sin `card`, cae en la rama de imagen y ejecuta `staticFile(undefined)` → el chunk muere
+  con "undefined was passed to staticFile()". Costó 4 chunks de 30. En la pizarra el título grande va
+  en **`card`**, no en `word`.
+- 2026-07-28 — KIT: `BigStatReveal` (kind `stat`) recibe `value` como **NUMBER** y lo dibuja con un
+  odómetro. Si le pasás un string ("3,5 mg", "H₂O₂", "x3 o x4") NO falla: renderiza **`000`** en
+  pantalla, que es peor porque parece un dato roto y no se ve hasta mirar el render. Hay que partir
+  el string en `prefix` + número + `suffix`; y si no tiene número, usar `callout` (su `figure` sí es
+  texto libre).
+- 2026-07-28 — KIT: `BarCompare` en VERTICAL dibuja el valor arriba de la barra y la más alta pisa el
+  título. En HORIZONTAL el valor va al costado y no choca, pero el encabezado igual cruza la primera
+  fila y con 3+ barras la de arriba se corta. Receta que quedó bien: `orientation="horizontal"`, SIN
+  `title` ni `eyebrow` (las etiquetas + `unit` alcanzan) y **máximo 2 barras** (la ganadora y su rival
+  más alto). Resolverlo en el `Main_<slug>.tsx`, NUNCA en `scenes/BarCompare.tsx` (es compartido).
+- 2026-07-28 — EDICIÓN: al inyectar muchos beats de componente anclados por frase (acá 167), dos caen
+  casi en el mismo instante y se dibujan encimados. Hace falta un **des-solape por ZONA DE PANTALLA**,
+  no por tipo: `lowerthird` vive en la banda inferior y `frasecinetica` en el centro (esos dos SÍ
+  pueden convivir), y todo lo demás compite por la pantalla completa. Separación que funcionó: 3,0 s
+  entre full, 2,2 s entre overlays de la misma zona. Ojo: `talk` y `raw` NO son componentes y no
+  deben desplazar a nadie.
+- 2026-07-28 — FARM: el tarball de assets topa en **2 GB** (límite de GitHub por asset de release; da
+  HTTP 422 "size must be less than 2147483648"). Un video de 25 min con 340 clips daba 4,4 GB. Fix:
+  recomprimir el b-roll a 720p CRF 28 recortado a 12 s (2,7 GB → 376 MB) y el avatar `_opt` a CRF 27
+  (479 → 326 MB). Total ~860 MB. Los clips se ven ~4 s en pantalla: 720p no se nota.
+- 2026-07-28 — FARM: el argumento de PREFIJO de `farm.mjs` tiene que ser **`p_<slug>`**, no `<slug>`.
+  Las imágenes se llaman `p_<slug>_*.png` y el filtro es `startsWith(pref)`, así que con `<slug>`
+  pelado el pre-vuelo dice "24 assets quedan FUERA de la lista del tar".
+- 2026-07-28 — PIPELINE (falla silenciosa): `dense_prep_<slug>.mjs` NO debe sobreescribir
+  `shots_dense_<slug>.json`, que es la lista COMPLETA de descarga. Si la pisa con los clips ya
+  anclados, el fetcher deja de pedir el resto y **la descarga se estanca sin error** (acá: 5 tandas
+  seguidas diciendo "155/155 bajados" cuando faltaban 290). El anclado va a `shots_used_<slug>.json`.
+  Relacionado: el nombre del clip debe salir de un mapa persistente query→archivo
+  (`qmap_<slug>.json`), no del índice, o reordenar el mapa desalinea todo lo ya bajado.
+- 2026-07-28 — PIPELINE: `density_gate.mjs` y `broll_isolation_gate.mjs` solo miran `src/VideoEdit/`,
+  y el kit de este canal vive en `src/_fed6/`. Para que midan, crear un **puente**
+  `src/VideoEdit/Main_<slug>.tsx` que re-exporte el Main real y lleve el `ASSET_MANIFEST` en un
+  comentario `/* */` con todos los visuales (el gate lo conserva cuando no hay `cues_<slug>.gen.tsx`).
 - 2026-07-22 — CREADOR (ESTRUCTURA DE GUION, importante): el cuerpo NO va como lista fría ("señal uno, señal dos, beneficio tres") → aburre. Escribir el cuerpo como UNA SOLA HISTORIA tipo NOVELA: un paciente concreto con nombre/edad, detalles ultra reales (diálogos, la cocina, el mate frío, las manos heladas bajo la frazada, el turno que le dieron para dentro de 3 meses), y POLÉMICA que engancha al mayor ("te tratan de viejo y no te miran", "te venden el frasco caro en vez de revisarte", "es la edad" como desprecio del sistema). Cada beneficio/causa/señal se va REVELANDO como un capítulo de esa historia, no anunciando "número tal". El recap final SÍ queda numerado (para FocusCards en pantalla). Objetivo: "los ancianos te van a amar como Dr. Federer". Aplicar a TODOS los guiones de este canal de acá en más.
