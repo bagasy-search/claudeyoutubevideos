@@ -126,6 +126,26 @@ const fixProps = (kind, p) => {
     if (!p.figure && p.title) p.figure = p.title;
     if (!p.caption && p.text) p.caption = p.text;
   }
+  // ── LARGO DE TEXTO: BoardCard no reflowea. Un `title` largo se ENCABALGA con el primer
+  // ítem y queda ilegible (visto en la cuadrícula: "El borde: 1,5 a 2 cm de transición"
+  // pisado por "Se ve rarísimo"). Se recorta en palabra, sin cortar al medio.
+  const corta = (s, n) => {
+    s = String(s || "").trim();
+    if (s.length <= n) return s;
+    const c = s.slice(0, n);
+    const i = c.lastIndexOf(" ");
+    return (i > n * 0.6 ? c.slice(0, i) : c).replace(/[,;:.\s]+$/, "");
+  };
+  if (kind === "board" || kind === "chips" || kind === "checklist" || kind === "guardaesto" || kind === "splitlist") {
+    if (p.title) p.title = corta(p.title, 30);
+    if (p.eyebrow) p.eyebrow = corta(p.eyebrow, 38);
+    if (Array.isArray(p.items)) p.items = p.items.map((it) =>
+      typeof it === "string" ? corta(it, 62)
+        : { ...it, ...(it.title ? { title: corta(it.title, 26) } : {}), ...(it.sub ? { sub: corta(it.sub, 46) } : {}), ...(it.text ? { text: corta(it.text, 62) } : {}) });
+    if (Array.isArray(p.chips)) p.chips = p.chips.map((c) => corta(c, 42));
+  }
+  if (kind === "lowerthird") { if (p.title) p.title = corta(p.title, 44); if (p.desc) p.desc = corta(p.desc, 96); }
+  if (kind === "stat" && p.label) p.label = corta(p.label, 104);
   return p;
 };
 

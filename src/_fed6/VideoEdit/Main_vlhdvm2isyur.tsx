@@ -21,6 +21,8 @@ import { TALKSZ } from "./federer_vlhdvm2isyur_hooks";
 import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
 
 
+
+
 /* COMPONENT_MANIFEST — usos REALES que monta renderComp() desde FEDZ_BEATS (build data-driven).
   7.56s <LowerThird />
   16.32s <FraseCinetica />
@@ -184,6 +186,7 @@ import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
   1167.28s <LowerThird />
   1179.32s <PullQuote />
   1186.5s <FraseCinetica />
+  1193.72s <FocusCardsVlh />
   1193.72s <FocusCardsVlh />
   1203.36s <FraseCinetica />
   1211.1s <LowerThird />
