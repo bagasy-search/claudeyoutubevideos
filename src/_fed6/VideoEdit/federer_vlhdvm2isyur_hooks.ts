@@ -1,0 +1,2 @@
+// AUTO-GENERADO por scripts/gen_vlhdvm2isyur.mjs — rangos talk (avatar FULL).
+export const TALKSZ: { start: number; dur: number }[] = [{"start":0,"dur":2.2},{"start":30.96,"dur":2.8},{"start":265.54,"dur":2.8},{"start":397.46,"dur":2.8},{"start":450.58,"dur":2.8},{"start":565.64,"dur":2.8},{"start":644.08,"dur":2.8},{"start":743.92,"dur":2.8},{"start":778.68,"dur":2.8},{"start":868.22,"dur":2.8},{"start":965.38,"dur":2.8},{"start":1082.14,"dur":2.8},{"start":1193.72,"dur":2.8},{"start":1287.04,"dur":2.8}];
