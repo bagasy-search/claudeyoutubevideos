@@ -113,7 +113,9 @@ export const BEATS: VBeat[] = [
    "sub": "y ahí se te vuelven las manchas",
    "decimals": 0,
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_002.jpg"
+   "image": "img/vsdjytp30ogs_002.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -129,7 +131,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_002.jpg"
+   "image": "img/vsdjytp30ogs_002.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -151,7 +154,9 @@ export const BEATS: VBeat[] = [
    "labelB": "La palma",
    "mood": "gold",
    "imageA": "img/vsdjytp30ogs_006.jpg",
-   "imageB": "img/vsdjytp30ogs_002.jpg"
+   "imageB": "img/vsdjytp30ogs_002.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -164,7 +169,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_005.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Misma edad, misma sangre",
    "hot": [],
    "sub": "",
@@ -235,7 +240,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_008.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Manos siempre a la vista",
    "hot": [],
    "sub": "",
@@ -365,7 +370,9 @@ export const BEATS: VBeat[] = [
    "sub": "las contó ella",
    "decimals": 0,
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_014.jpg"
+   "image": "img/vsdjytp30ogs_014.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -381,7 +388,8 @@ export const BEATS: VBeat[] = [
    "author": "Doña Nilda",
    "role": "74 años, cajera de panadería",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_014.jpg"
+   "image": "img/vsdjytp30ogs_014.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -442,7 +450,8 @@ export const BEATS: VBeat[] = [
    "sub": "lo que en el consultorio no entra en el turno",
    "decimals": 0,
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_014.jpg"
+   "image": "img/vsdjytp30ogs_014.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -476,7 +485,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_017.jpg"
+   "image": "img/vsdjytp30ogs_017.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -516,7 +528,9 @@ export const BEATS: VBeat[] = [
    "sub": "el dorso, con la misma edad",
    "decimals": 0,
    "mood": "science",
-   "image": "img/vsdjytp30ogs_017.jpg"
+   "image": "img/vsdjytp30ogs_017.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -533,7 +547,9 @@ export const BEATS: VBeat[] = [
     "Qué se hace de noche, y con qué",
     "El error del que sí se cuida"
    ],
-   "mood": "gold"
+   "mood": "gold",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -653,7 +669,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Federer Archivos",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_020.jpg"
+   "image": "img/vsdjytp30ogs_020.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -693,7 +710,8 @@ export const BEATS: VBeat[] = [
    "sub": "la piel del dorso, en la liga del párpado",
    "decimals": 0,
    "mood": "science",
-   "image": "img/vsdjytp30ogs_023.jpg"
+   "image": "img/vsdjytp30ogs_023.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -724,7 +742,9 @@ export const BEATS: VBeat[] = [
    "labelB": "Mano: piel y hueso",
    "mood": "science",
    "imageA": "img/vsdjytp30ogs_023.jpg",
-   "imageB": "img/vsdjytp30ogs_024.jpg"
+   "imageB": "img/vsdjytp30ogs_024.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -742,7 +762,9 @@ export const BEATS: VBeat[] = [
    "sub": "queda tendón, vena y hueso",
    "decimals": 0,
    "mood": "science",
-   "image": "img/vsdjytp30ogs_023.jpg"
+   "image": "img/vsdjytp30ogs_023.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -780,7 +802,9 @@ export const BEATS: VBeat[] = [
    "labelB": "VOLUMEN · piel de papel",
    "mood": "science",
    "imageA": "img/vsdjytp30ogs_024.jpg",
-   "imageB": "img/vsdjytp30ogs_023.jpg"
+   "imageB": "img/vsdjytp30ogs_023.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -818,7 +842,9 @@ export const BEATS: VBeat[] = [
     "COLOR: se pelea muy bien",
     "VOLUMEN: se pelea a medias"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -831,7 +857,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_025.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Cuando mirás la foto",
    "hot": [],
    "sub": "",
@@ -894,7 +920,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_026.jpg"
+   "image": "img/vsdjytp30ogs_026.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -919,7 +946,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_029.jpg"
+   "image": "img/vsdjytp30ogs_029.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -951,7 +981,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Después de décadas",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_029.jpg"
+   "image": "img/vsdjytp30ogs_029.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -996,7 +1027,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "broll/vsdjytp30ogs/d030.mp4",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "No se hizo en la playa",
    "hot": [],
    "sub": "",
@@ -1020,7 +1051,8 @@ export const BEATS: VBeat[] = [
    "label": "del daño",
    "sub": "pasa lejos de la playa",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_029.jpg"
+   "image": "img/vsdjytp30ogs_029.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -1080,7 +1112,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "broll/vsdjytp30ogs/d034.mp4",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Todas las mañanas, todos los años",
    "hot": [],
    "sub": "",
@@ -1168,7 +1200,9 @@ export const BEATS: VBeat[] = [
    "labelB": "Lado sombra",
    "mood": "science",
    "imageA": "img/vsdjytp30ogs_038.jpg",
-   "imageB": "img/vsdjytp30ogs_037.jpg"
+   "imageB": "img/vsdjytp30ogs_037.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -1203,7 +1237,8 @@ export const BEATS: VBeat[] = [
    "label": "de diferencia",
    "sub": "entre un cachete y el otro",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_038.jpg"
+   "image": "img/vsdjytp30ogs_038.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -1242,7 +1277,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "broll/vsdjytp30ogs/d039.mp4",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "El vidrio lo frena casi todo",
    "hot": [],
    "sub": "",
@@ -1327,7 +1362,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_044.jpg"
+   "image": "img/vsdjytp30ogs_044.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -1340,7 +1378,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_042.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Don Rubén, 76",
    "hot": [],
    "sub": "",
@@ -1402,7 +1440,8 @@ export const BEATS: VBeat[] = [
    "label": "manchas grandes",
    "sub": "mano izquierda · el codo en la ventanilla",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_044.jpg"
+   "image": "img/vsdjytp30ogs_044.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -1415,7 +1454,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_045.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Derecha: la del cambio de marchas",
    "hot": [],
    "sub": "",
@@ -1455,7 +1494,8 @@ export const BEATS: VBeat[] = [
    "label": "manchitas chicas",
    "sub": "mano derecha · siempre en sombra",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_044.jpg"
+   "image": "img/vsdjytp30ogs_044.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -1473,7 +1513,9 @@ export const BEATS: VBeat[] = [
     "Mismos genes",
     "Misma edad"
    ],
-   "mood": "warmdark"
+   "mood": "warmdark",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -1492,7 +1534,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_047.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "La palma nunca mira al cielo",
    "hot": [],
    "sub": "",
@@ -1519,7 +1561,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_050.jpg"
+   "image": "img/vsdjytp30ogs_050.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -1544,7 +1587,8 @@ export const BEATS: VBeat[] = [
    "label": "de consulta",
    "sub": "«son los años» cierra el tema y libera la silla",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_050.jpg"
+   "image": "img/vsdjytp30ogs_050.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -1557,7 +1601,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "broll/vsdjytp30ogs/d048.mp4",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "La sala llena",
    "hot": [],
    "sub": "",
@@ -1617,7 +1661,9 @@ export const BEATS: VBeat[] = [
     "Glicerina",
     "Perfume"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -1630,7 +1676,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_051.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Suave por 20 minutos",
    "hot": [],
    "sub": "",
@@ -1653,7 +1699,9 @@ export const BEATS: VBeat[] = [
    "label": "de mano suave",
    "sub": "y ni un miligramo de pigmento tocado",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_050.jpg"
+   "image": "img/vsdjytp30ogs_050.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -1707,7 +1755,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "lo que dice arriba de la hoja del láser",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_053.jpg"
+   "image": "img/vsdjytp30ogs_053.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -1847,7 +1896,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_056.jpg"
+   "image": "img/vsdjytp30ogs_056.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -1860,7 +1912,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_058.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "De noche llega más sangre",
    "hot": [],
    "sub": "",
@@ -1926,7 +1978,8 @@ export const BEATS: VBeat[] = [
    "label": "el pico de pérdida de agua",
    "sub": "de madrugada está en lo más alto",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_059.jpg"
+   "image": "img/vsdjytp30ogs_059.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -1949,7 +2002,9 @@ export const BEATS: VBeat[] = [
     "Absorbe más",
     "Se seca más"
    ],
-   "mood": "science"
+   "mood": "science",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -1967,7 +2022,9 @@ export const BEATS: VBeat[] = [
    "label": "seguidas de trabajo",
    "sub": "la única ventana del día sin que nadie moleste",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_060.jpg"
+   "image": "img/vsdjytp30ogs_060.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -1999,7 +2056,9 @@ export const BEATS: VBeat[] = [
    "labelB": "De noche se repara",
    "mood": "warmdark",
    "imageA": "img/vsdjytp30ogs_060.jpg",
-   "imageB": "img/vsdjytp30ogs_062.jpg"
+   "imageB": "img/vsdjytp30ogs_062.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -2098,7 +2157,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_062.jpg"
+   "image": "img/vsdjytp30ogs_062.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -2120,7 +2182,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "el mecanismo, en una línea",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_067.jpg"
+   "image": "img/vsdjytp30ogs_067.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -2165,7 +2228,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_066.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "A vos te sale el precio de un té",
    "hot": [],
    "sub": "",
@@ -2241,7 +2304,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_069.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Se lleva la mancha vieja puesta",
    "hot": [],
    "sub": "",
@@ -2286,7 +2349,9 @@ export const BEATS: VBeat[] = [
    "label": "del trabajo se te va",
    "sub": "si no lo tapás",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_070.jpg"
+   "image": "img/vsdjytp30ogs_070.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -2319,7 +2384,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "broll/vsdjytp30ogs/d071.mp4",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Taparlo",
    "hot": [],
    "sub": "",
@@ -2379,7 +2444,9 @@ export const BEATS: VBeat[] = [
     "Retiene el activo en la mano",
     "Sube calor y humedad"
    ],
-   "mood": "science"
+   "mood": "science",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -2392,7 +2459,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_074.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Guante de algodón",
    "hot": [],
    "sub": "",
@@ -2445,7 +2512,10 @@ export const BEATS: VBeat[] = [
    "label": "por semana",
    "sub": "no todas las noches",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_076.jpg"
+   "image": "img/vsdjytp30ogs_076.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -2478,7 +2548,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "broll/vsdjytp30ogs/d077.mp4",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Cuánta raíz",
    "hot": [],
    "sub": "",
@@ -2521,7 +2591,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_078.jpg"
+   "image": "img/vsdjytp30ogs_078.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -2538,7 +2609,10 @@ export const BEATS: VBeat[] = [
    "label": "y todavía nada",
    "sub": "quiero que sepas qué esperar",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_078.jpg"
+   "image": "img/vsdjytp30ogs_078.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -2575,7 +2649,9 @@ export const BEATS: VBeat[] = [
    "labelB": "Semana 9",
    "mood": "gold",
    "imageA": "img/vsdjytp30ogs_080.jpg",
-   "imageB": "img/vsdjytp30ogs_078.jpg"
+   "imageB": "img/vsdjytp30ogs_078.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -2610,7 +2686,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_081.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Papel de seda",
    "hot": [],
    "sub": "",
@@ -2638,7 +2714,10 @@ export const BEATS: VBeat[] = [
    "label": "de oclusión por noche",
    "sub": "la piel se hincha un poquito y las líneas finas se disimulan",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_080.jpg"
+   "image": "img/vsdjytp30ogs_080.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -2654,7 +2733,9 @@ export const BEATS: VBeat[] = [
     "Líneas finas: sí",
     "Pliegues gruesos: no"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -2733,7 +2814,10 @@ export const BEATS: VBeat[] = [
    "label": "de niacinamida",
    "sub": "British Journal of Dermatology, 2002",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_080.jpg"
+   "image": "img/vsdjytp30ogs_080.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -2764,7 +2848,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_090.jpg"
+   "image": "img/vsdjytp30ogs_090.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -2814,7 +2901,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_086.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Manos tipo lija",
    "hot": [],
    "sub": "",
@@ -2836,7 +2923,10 @@ export const BEATS: VBeat[] = [
    "label": "de urea",
    "sub": "ablanda la piel engrosada por años de trabajo",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_090.jpg"
+   "image": "img/vsdjytp30ogs_090.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -2867,7 +2957,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_090.jpg"
+   "image": "img/vsdjytp30ogs_090.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -2964,7 +3055,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_090.jpg"
+   "image": "img/vsdjytp30ogs_090.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -3045,7 +3139,10 @@ export const BEATS: VBeat[] = [
    "label": "cada 15 días",
    "sub": "acumulación en el mismo punto exacto",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_092.jpg"
+   "image": "img/vsdjytp30ogs_092.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -3104,9 +3201,7 @@ export const BEATS: VBeat[] = [
    "step": 1,
    "total": 2,
    "title": "Protector en el dorso",
-   "hot": [
-    "10 minutos antes"
-   ],
+   "hot": [],
    "sub": "Antes de salir para la manicura",
    "mood": "gold",
    "image": "img/vsdjytp30ogs_096.jpg"
@@ -3213,7 +3308,8 @@ export const BEATS: VBeat[] = [
    "label": "tarda en recambiarse la piel de arriba",
    "sub": "A los 70 años",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_099.jpg"
+   "image": "img/vsdjytp30ogs_099.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -3279,7 +3375,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_102.jpg"
+   "image": "img/vsdjytp30ogs_102.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -3317,7 +3414,9 @@ export const BEATS: VBeat[] = [
    "labelB": "Clarita, mezclada",
    "mood": "gold",
    "imageA": "img/vsdjytp30ogs_102.jpg",
-   "imageB": "img/vsdjytp30ogs_103.jpg"
+   "imageB": "img/vsdjytp30ogs_103.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -3440,7 +3539,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_106.jpg"
+   "image": "img/vsdjytp30ogs_106.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -3501,7 +3603,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_110.jpg"
+   "image": "img/vsdjytp30ogs_110.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -3549,7 +3652,9 @@ export const BEATS: VBeat[] = [
     "Anticoagulantes",
     "Aspirina"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -3633,7 +3738,9 @@ export const BEATS: VBeat[] = [
    "label": "es todo lo que mejora el volumen",
    "sub": "Con hidratación y oclusión sostenida",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_114.jpg"
+   "image": "img/vsdjytp30ogs_114.jpg",
+   "kicker": "El dato",
+   "prefix": ""
   }
  },
  {
@@ -3702,7 +3809,9 @@ export const BEATS: VBeat[] = [
     "Nada de perejil",
     "Y menos aún al sol"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -3730,7 +3839,10 @@ export const BEATS: VBeat[] = [
     }
    ],
    "mood": "science",
-   "image": "img/vsdjytp30ogs_120.jpg"
+   "image": "img/vsdjytp30ogs_120.jpg",
+   "kicker": "Cómo funciona",
+   "title": "El mecanismo",
+   "sub": ""
   }
  },
  {
@@ -3777,7 +3889,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_121.jpg"
+   "image": "img/vsdjytp30ogs_121.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -3826,7 +3939,9 @@ export const BEATS: VBeat[] = [
     "Nada de agua oxigenada",
     "Nada de pasta de dientes"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -3845,7 +3960,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_123.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Prueba de parche",
    "hot": [],
    "sub": "",
@@ -3867,7 +3982,10 @@ export const BEATS: VBeat[] = [
    "label": "antes de usarla en serio",
    "sub": "una noche en el antebrazo, del lado de adentro",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_124.jpg"
+   "image": "img/vsdjytp30ogs_124.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -3881,9 +3999,10 @@ export const BEATS: VBeat[] = [
   "props": {
    "quote": "Si pica, arde o se pone colorado: se suspende.",
    "author": "Dr. Federer",
-   "role": "Medico general",
+   "role": "Médico general",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_124.jpg"
+   "image": "img/vsdjytp30ogs_124.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -3921,9 +4040,11 @@ export const BEATS: VBeat[] = [
     "Plana",
     "Un solo color marron",
     "Bordes bien dibujados",
-    "Hace anios que esta igual"
+    "Hace años que está igual"
    ],
-   "mood": "gold"
+   "mood": "gold",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -3958,10 +4079,12 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "labelA": "La aburrida",
-   "labelB": "La que va al medico",
+   "labelB": "La que va al médico",
    "mood": "cool",
    "imageA": "img/vsdjytp30ogs_126.jpg",
-   "imageB": "img/vsdjytp30ogs_124.jpg"
+   "imageB": "img/vsdjytp30ogs_124.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -3990,7 +4113,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "broll/vsdjytp30ogs/d127.mp4",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "Pica, sangra o se levanta",
    "hot": [],
    "sub": "",
@@ -4035,11 +4158,12 @@ export const BEATS: VBeat[] = [
   "variant": "lift",
   "cut": false,
   "props": {
-   "quote": "Prefiero veinte consultas de mas, a una que se quede tranquila con la que no era.",
+   "quote": "Prefiero veinte consultas de más, a una que se quede tranquila con la que no era.",
    "author": "Dr. Federer",
-   "role": "Medico general",
+   "role": "Médico general",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_129.jpg"
+   "image": "img/vsdjytp30ogs_129.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -4125,7 +4249,10 @@ export const BEATS: VBeat[] = [
    "label": "duro el protector",
    "sub": "8:00 te lo ponias, 8:10 te lavaste las manos",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_129.jpg"
+   "image": "img/vsdjytp30ogs_129.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -4159,12 +4286,14 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "items": [
-    "Despues del banio",
+    "Después del baño",
     "Antes de cocinar",
     "Cuando volves de la calle",
     "Antes de comer"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -4196,7 +4325,10 @@ export const BEATS: VBeat[] = [
    "label": "por dia",
    "sub": "con agua caliente y jabon",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_135.jpg"
+   "image": "img/vsdjytp30ogs_135.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -4228,7 +4360,9 @@ export const BEATS: VBeat[] = [
    "labelB": "Te lo sacas 15",
    "mood": "cool",
    "imageA": "img/vsdjytp30ogs_135.jpg",
-   "imageB": "img/vsdjytp30ogs_139.jpg"
+   "imageB": "img/vsdjytp30ogs_139.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -4272,7 +4406,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_137.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "La mano desnuda",
    "hot": [],
    "sub": "",
@@ -4292,9 +4426,12 @@ export const BEATS: VBeat[] = [
    "value": 8,
    "suffix": " horas",
    "label": "de luz por delante",
-   "sub": "todos los dias, durante veinte anios",
+   "sub": "todos los días, durante veinte años",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_139.jpg"
+   "image": "img/vsdjytp30ogs_139.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -4324,7 +4461,7 @@ export const BEATS: VBeat[] = [
   "props": {
    "src": "img/vsdjytp30ogs_139.jpg",
    "video": false,
-   "caption": "Cuatro anios de frascos",
+   "caption": "Cuatro años de frascos",
    "ken": "in",
    "mood": "gold"
   }
@@ -4339,11 +4476,14 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "value": 4,
-   "suffix": " anios",
+   "suffix": " años",
    "label": "probando frascos",
    "sub": "dona Nilda, sin mover la aguja",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_139.jpg"
+   "image": "img/vsdjytp30ogs_139.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -4356,7 +4496,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_140.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "El balde agujereado",
    "hot": [],
    "sub": "",
@@ -4457,7 +4597,10 @@ export const BEATS: VBeat[] = [
    "label": "y lo haces sin pensar",
    "sub": "igual que te secas las manos",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_144.jpg"
+   "image": "img/vsdjytp30ogs_144.jpg",
+   "kicker": "El dato",
+   "prefix": "",
+   "decimals": 0
   }
  },
  {
@@ -4501,8 +4644,8 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_146.jpg",
-   "kicker": "",
-   "title": "Don Ruben, 40 anios",
+   "kicker": "Manos después de los 60",
+   "title": "Don Rubén, 40 años",
    "hot": [],
    "sub": "",
    "side": "left",
@@ -4548,7 +4691,9 @@ export const BEATS: VBeat[] = [
    "labelB": "Palma",
    "mood": "gold",
    "imageA": "img/vsdjytp30ogs_144.jpg",
-   "imageB": "img/vsdjytp30ogs_141.jpg"
+   "imageB": "img/vsdjytp30ogs_141.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -4667,7 +4812,8 @@ export const BEATS: VBeat[] = [
    "label": "El plazo real",
    "sub": "No tres. Ocho.",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_148.jpg"
+   "image": "img/vsdjytp30ogs_148.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -4689,7 +4835,9 @@ export const BEATS: VBeat[] = [
    "labelB": "Mano derecha",
    "mood": "gold",
    "imageA": "img/vsdjytp30ogs_148.jpg",
-   "imageB": "img/vsdjytp30ogs_149.jpg"
+   "imageB": "img/vsdjytp30ogs_149.jpg",
+   "kicker": "La comparación",
+   "title": "Mirá la diferencia"
   }
  },
  {
@@ -4727,7 +4875,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_148.jpg"
+   "image": "img/vsdjytp30ogs_148.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -4820,7 +4969,8 @@ export const BEATS: VBeat[] = [
    "label": "remedios caseros",
    "sub": "En 160 páginas",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_149.jpg"
+   "image": "img/vsdjytp30ogs_149.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -4838,7 +4988,9 @@ export const BEATS: VBeat[] = [
     "Cantidades exactas",
     "Cuándo ir al médico"
    ],
-   "mood": "science"
+   "mood": "science",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -4883,7 +5035,9 @@ export const BEATS: VBeat[] = [
     "Memoria y sueño",
     "Huesos, vista y piel"
    ],
-   "mood": "cool"
+   "mood": "cool",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -4944,7 +5098,8 @@ export const BEATS: VBeat[] = [
    "label": "para reconocer un ACV",
    "sub": "Está en el anexo",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_152.jpg"
+   "image": "img/vsdjytp30ogs_152.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -4997,7 +5152,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "cool",
-   "image": "img/vsdjytp30ogs_154.jpg"
+   "image": "img/vsdjytp30ogs_154.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
@@ -5016,7 +5172,8 @@ export const BEATS: VBeat[] = [
    "label": "para pedir la devolución",
    "sub": "Sin explicarme nada",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_154.jpg"
+   "image": "img/vsdjytp30ogs_154.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -5030,7 +5187,10 @@ export const BEATS: VBeat[] = [
   "props": {
    "buttonLabel": "Está en la descripción",
    "mood": "gold",
-   "image": "img/vsdjytp30ogs_155.jpg"
+   "image": "img/vsdjytp30ogs_155.jpg",
+   "kicker": "Empezá hoy",
+   "title": "Tus manos te lo van a agradecer",
+   "sub": "Las cantidades exactas, en la descripción."
   }
  },
  {
@@ -5071,7 +5231,8 @@ export const BEATS: VBeat[] = [
    "label": "la prueba del puño",
    "sub": "En el próximo video",
    "mood": "science",
-   "image": "img/vsdjytp30ogs_155.jpg"
+   "image": "img/vsdjytp30ogs_155.jpg",
+   "kicker": "El dato"
   }
  },
  {
@@ -5100,7 +5261,7 @@ export const BEATS: VBeat[] = [
   "cut": false,
   "props": {
    "image": "img/vsdjytp30ogs_157.jpg",
-   "kicker": "",
+   "kicker": "Manos después de los 60",
    "title": "El color con el que vuelve",
    "hot": [],
    "sub": "",
@@ -5122,7 +5283,9 @@ export const BEATS: VBeat[] = [
     "Tiroides",
     "Solamente frío"
    ],
-   "mood": "science"
+   "mood": "science",
+   "kicker": "Para tener a mano",
+   "title": "Lo importante"
   }
  },
  {
@@ -5207,7 +5370,8 @@ export const BEATS: VBeat[] = [
    "author": "Dr. Federer",
    "role": "Médico general",
    "mood": "warmdark",
-   "image": "img/vsdjytp30ogs_161.jpg"
+   "image": "img/vsdjytp30ogs_161.jpg",
+   "kicker": "Dr. Federer"
   }
  },
  {
