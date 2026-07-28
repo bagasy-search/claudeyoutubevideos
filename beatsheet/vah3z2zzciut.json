@@ -157,7 +157,8 @@
       "desc": "La flor amarilla de",
       "imageSide": "right",
       "accent": "amber",
-      "image": "broll/vah3z2zzciut/vh_s04_tansy.mp4"
+      "image": "broll/vah3z2zzciut/vh_s04_tansy.mp4",
+      "bg": "broll/vah3z2zzciut/vh_s04_tansy.mp4"
     },
     {
       "id": "b15",
@@ -202,6 +203,7 @@
       "definition": "Margarita de montaña, seca y molida.",
       "accent": "amber",
       "image": "img/cmp_polvopersa_s01_hook_bg.png",
+      "bg": "img/cmp_polvopersa_s01_hook_bg.png",
       "gen": {
         "type": "image",
         "name": "cmp_polvopersa_s01_hook_bg",
@@ -1996,7 +1998,8 @@
       "desc": "Flor naranja, hoja redonda, trepa.",
       "imageSide": "right",
       "accent": "good",
-      "image": "broll/vah3z2zzciut/vh_t01_nasturtium.mp4"
+      "image": "broll/vah3z2zzciut/vh_t01_nasturtium.mp4",
+      "bg": "broll/vah3z2zzciut/vh_t01_nasturtium.mp4"
     },
     {
       "id": "b123",
@@ -2695,6 +2698,7 @@
       "definition": "Envenenar químicamente",
       "accent": "amber",
       "image": "img/cmp_term_alelopatia_s07_ajenjo_bg.png",
+      "bg": "img/cmp_term_alelopatia_s07_ajenjo_bg.png",
       "gen": {
         "type": "image",
         "name": "cmp_term_alelopatia_s07_ajenjo_bg",
