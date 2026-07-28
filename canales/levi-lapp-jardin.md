@@ -121,3 +121,16 @@
   parece: para 23 min son ~164. El orden del ensamblado importa: primero los carteles AUTORADOS
   (los que llevan un dato) y recién después el relleno de tipografía sincronizada en los huecos.
   Al revés, el relleno ocupa el lugar y desplaza a los que sí tenían algo que contar.
+- 2026-07-28 — ⚠️ **DOS componentes del kit compartido están hechos para FONDO CLARO y sobre b-roll
+  no se leen**: `SplitList` pinta en `COLORS.text` (tinta oscura) y no trae tarjeta propia, y
+  `PhraseTag` pinta las palabras NO resaltadas en `COLORS.bg0` (el color de fondo). Oscurecer
+  detrás los empeora. Solución sin tocar el kit: usar `Checklist` en vez de `SplitList`, y en
+  `PhraseTag` marcar TODAS las palabras con \*asterisco\* para que salgan en color de acento.
+  Además: la toma debajo de un cartel SIN tarjeta necesita `darken` ~0,72; con tarjeta alcanza 0,42.
+- 2026-07-28 — ⛔ `SignaturePhrase` pide `lines` como **objetos** `{text, gold?}`, NO strings. Con
+  strings, `l.text` queda `undefined` y el render **muere** con "Cannot read properties of undefined
+  (reading 'split')" — tumbó el chunk 29 y con él la concatenación entera. Antes de rendear conviene
+  chequear la forma de los props de cada componente nuevo contra su fuente, no contra la intuición.
+- 2026-07-28 — Al auditar frames del cierre: los componentes de tipografía cinética entran
+  ESCALONADOS, así que muestrear en `start + 1,5s` los muestra vacíos y parecen rotos. Muestrear en
+  `start + 4s` o más.
