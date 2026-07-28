@@ -120,6 +120,19 @@ const KIT: Record<string, React.FC<any>> = {
   FedFullShot,
 };
 
+// Los componentes del kit meten su `image`/`src` DIRECTO en <Img>/<Media>: esperan una ruta ya
+// resuelta (sus propios defaults son staticFile('med/…')). Pasarles "img/x.jpg" crudo funciona en
+// el preview pero en el BUNDLE se resuelve relativo y da 404 → el chunk muere. Se envuelve acá.
+const ASSET_PROPS = ['src', 'image', 'imageA', 'imageB', 'clip', 'video', 'bg', 'poster'] as const;
+const resolveAssets = (props: Record<string, any> = {}): Record<string, any> => {
+  const out: Record<string, any> = {...props};
+  for (const k of ASSET_PROPS) {
+    const v = out[k];
+    if (typeof v === 'string' && /^(img|broll|real|med|vid|sfx)\//.test(v)) out[k] = staticFile(v);
+  }
+  return out;
+};
+
 export const Main_vsdjytp30ogs: React.FC = () => {
   const {fps} = useVideoConfig();
 
@@ -149,7 +162,7 @@ export const Main_vsdjytp30ogs: React.FC = () => {
           >
             <Sequence from={-pad} durationInFrames={b.dur + pad * 2}>
               <Comp
-                {...(b.props ?? {})}
+                {...resolveAssets(b.props)}
                 totalF={b.dur + pad * 2}
                 variant={b.variant ?? 'whip'}
                 accent={b.props?.accent ?? ACCENT}
