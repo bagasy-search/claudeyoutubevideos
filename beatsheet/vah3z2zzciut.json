@@ -1,0 +1,3728 @@
+{
+  "video": "vah3z2zzciut",
+  "avatar": "vah3z2zzciut_opt.mp4",
+  "clipsfirst": true,
+  "beats": [
+    {
+      "id": "b1",
+      "start": 3.66,
+      "dur": 3.27,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a01_wormwood_bush.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_frasco18_s01_hook",
+      "start": 6.48,
+      "dur": 10.18,
+      "kind": "callout",
+      "figure": "$18",
+      "eyebrow": "Cada primavera",
+      "caption": "el frasco que vuelves a comprar",
+      "hue": "cold",
+      "image": "broll/vah3z2zzciut/vh_h09_store_shelf.mp4"
+    },
+    {
+      "id": "b4",
+      "start": 16.66,
+      "dur": 4.39,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m07_wooden_board.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_cero_s01_hook",
+      "start": 20.6,
+      "dur": 4.36,
+      "kind": "statslam",
+      "figure": "$0",
+      "caption": "Once años sin",
+      "eyebrow": "El balde",
+      "accent": "good"
+    },
+    {
+      "id": "b6",
+      "start": 24.96,
+      "dur": 4.61,
+      "kind": "raw",
+      "src": "img/vh_ia_21_levi_huerta_wide.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "ak2",
+      "start": 24.96,
+      "dur": 3.54,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Y",
+          "at": 0
+        },
+        {
+          "t": "desde",
+          "at": 0.42
+        },
+        {
+          "t": "hace",
+          "at": 0.78
+        },
+        {
+          "t": "11",
+          "at": 1.12
+        },
+        {
+          "t": "años",
+          "at": 1.42
+        },
+        {
+          "t": "no",
+          "at": 1.84
+        }
+      ]
+    },
+    {
+      "id": "b7",
+      "start": 29.12,
+      "dur": 4.97,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s01_nettle_field.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_chips_hoja_s01_hook",
+      "start": 33.64,
+      "dur": 8.94,
+      "kind": "chips",
+      "title": "Lo que trae la hoja",
+      "chips": [
+        "Sílice",
+        "Ácido fórmico",
+        "Nitrógeno"
+      ],
+      "hue": "amber",
+      "image": "broll/vah3z2zzciut/vh_s02_nettle_macro.mp4"
+    },
+    {
+      "id": "b10",
+      "start": 42.58,
+      "dur": 3.37,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s03_leaves_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b11",
+      "start": 45.5,
+      "dur": 3.45,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x01_aphids.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b12",
+      "start": 48.5,
+      "dur": 3.67,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s08_roadside_flowers.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_cuatro_mas_s01_hook",
+      "start": 49.58,
+      "dur": 4.65,
+      "kind": "blurreveal",
+      "overlay": true,
+      "eyebrow": "A veinte pasos de ti",
+      "title": "Hay otras cuatro",
+      "accent": "amber"
+    },
+    {
+      "id": "b13",
+      "start": 51.72,
+      "dur": 4.15,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_h11_veg_garden.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_tanaceto_s01_hook",
+      "start": 55.42,
+      "dur": 5.12,
+      "kind": "focuscard",
+      "eyebrow": "Aliada n.º 1",
+      "title": "Tanaceto",
+      "desc": "La flor amarilla de",
+      "imageSide": "right",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_s04_tansy.mp4"
+    },
+    {
+      "id": "b15",
+      "start": 60.54,
+      "dur": 1,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s06_rosemary.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b16",
+      "start": 61.34,
+      "dur": 4.05,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s07_thyme.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak5",
+      "start": 64.94,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Esto no lo inventé yo",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b17",
+      "start": 69.68,
+      "dur": 4.41,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p06_spice_market.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_polvopersa_s01_hook",
+      "start": 73.64,
+      "dur": 8.7,
+      "kind": "termcard",
+      "term": "Polvo persa",
+      "definition": "Margarita de montaña, seca y molida.",
+      "accent": "amber",
+      "image": "img/cmp_polvopersa_s01_hook_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_polvopersa_s01_hook_bg",
+        "prompt": "a small white mountain daisy in bloom, soft warm light, shallow depth of field, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b20",
+      "start": 82.34,
+      "dur": 6.03,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_t07_flea_beetle.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak7",
+      "start": 83.68,
+      "dur": 3.9,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Los",
+          "at": 0
+        },
+        {
+          "t": "mercaderes",
+          "at": 0.54
+        },
+        {
+          "t": "escondían",
+          "at": 1.14
+        },
+        {
+          "t": "la",
+          "at": 1.58
+        },
+        {
+          "t": "receta",
+          "at": 1.84
+        },
+        {
+          "t": "como",
+          "at": 2.2
+        }
+      ]
+    },
+    {
+      "id": "ak8",
+      "start": 89.2,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "se llama piretro",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b21",
+      "start": 92.78,
+      "dur": 3.63,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p08_scientist.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_nopatenta_s01_hook",
+      "start": 95.96,
+      "dur": 10.42,
+      "kind": "statslam",
+      "figure": "No se patenta",
+      "caption": "Una flor no deja ganancia.",
+      "eyebrow": "La industria",
+      "accent": "danger"
+    },
+    {
+      "id": "b24",
+      "start": 106.38,
+      "dur": 6.07,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a03_rain_on_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak10",
+      "start": 106.38,
+      "dur": 3.84,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "en Rothamsted y fabricaron una copia",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_copia_s01_hook",
+      "start": 112,
+      "dur": 5.68,
+      "kind": "chips",
+      "title": "La copia sintética",
+      "chips": [
+        "Más estable",
+        "Más agresiva",
+        "Patentable"
+      ],
+      "hue": "cold",
+      "image": "broll/vah3z2zzciut/vh_p09_molecule.mp4"
+    },
+    {
+      "id": "b26",
+      "start": 117.68,
+      "dur": 2.81,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p11_factory.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak12",
+      "start": 121.66,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Hoy le das vuelta al frasco",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak13",
+      "start": 129.76,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Todas son primas de la misma",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b27",
+      "start": 131.8,
+      "dur": 3.73,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p12_money_counting.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b28",
+      "start": 135.08,
+      "dur": 4.85,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s10_old_hands_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak14",
+      "start": 139.48,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y así se perdió",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak15",
+      "start": 148,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "en algún momento probaste el frasco",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak16",
+      "start": 152.8,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Porque me costó una cosecha entera",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak17",
+      "start": 160.14,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "12 metros de tomates que había",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b29",
+      "start": 163.8,
+      "dur": 3.93,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x01_aphids.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_perlas_s01_hook",
+      "start": 167.28,
+      "dur": 4.26,
+      "kind": "half",
+      "side": "right",
+      "kicker": "Pulgones.\nEn la punta\nde cada brote.",
+      "hue": "amber",
+      "src": "broll/vah3z2zzciut/vh_x01_aphids.mp4"
+    },
+    {
+      "id": "b31",
+      "start": 171.54,
+      "dur": 3.11,
+      "kind": "raw",
+      "src": "img/vh_ia_06_frasco_comprado.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "ak18",
+      "start": 171.54,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Fui al pueblo",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b32",
+      "start": 174.2,
+      "dur": 4.01,
+      "kind": "raw",
+      "src": "img/vh_ia_07_rociando_todo.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "cmp_nibicho_s01_hook",
+      "start": 177.76,
+      "dur": 5.9,
+      "kind": "callout",
+      "figure": "0 vivos",
+      "eyebrow": "Rocié planta por planta",
+      "caption": "creí que lo había",
+      "hue": "cold",
+      "image": "broll/vah3z2zzciut/vh_x03_spraying.mp4"
+    },
+    {
+      "id": "b35",
+      "start": 183.66,
+      "dur": 4.21,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e06_aphid_colony.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak20",
+      "start": 187.22,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y me quedé mirando ese cantero",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b36",
+      "start": 187.42,
+      "dur": 3.19,
+      "kind": "raw",
+      "src": "img/vh_ia_08_cantero_perdido.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "b37",
+      "start": 190.16,
+      "dur": 4.95,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x05_dead_garden.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak21",
+      "start": 192.7,
+      "dur": 3.04,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Había",
+          "at": 0
+        },
+        {
+          "t": "matado",
+          "at": 0.22
+        },
+        {
+          "t": "hasta",
+          "at": 0.66
+        },
+        {
+          "t": "el",
+          "at": 0.9
+        },
+        {
+          "t": "último",
+          "at": 1.08
+        },
+        {
+          "t": "pulgón.",
+          "at": 1.34
+        }
+      ]
+    },
+    {
+      "id": "ak22",
+      "start": 199.28,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Porque es el error que arruina",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak23",
+      "start": 204.38,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "No lo adivinas",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_roadmap_s02",
+      "start": 212.8,
+      "dur": 10.1,
+      "kind": "checklist",
+      "hue": "amber",
+      "accent": "good",
+      "eyebrow": "EL SISTEMA",
+      "title": "Lo que viene",
+      "items": [
+        {
+          "text": "El balde",
+          "state": "done"
+        },
+        {
+          "text": "Las 5 hierbas",
+          "state": "done"
+        },
+        {
+          "text": "La planta trampa",
+          "state": "done"
+        },
+        {
+          "text": "El rociado",
+          "state": "done"
+        },
+        {
+          "text": "El calendario",
+          "state": "done"
+        }
+      ],
+      "image": "img/cmp_roadmap_s02_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_roadmap_s02_bg",
+        "prompt": "a rustic wooden table with a bucket, cut herbs and a hand written garden calendar, warm daylight, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b41",
+      "start": 222.9,
+      "dur": 4.21,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_t01_nasturtium.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak25",
+      "start": 222.9,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "La planta trampa que se sacrifica",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_num4_s06_rociado",
+      "start": 226.66,
+      "dur": 8.36,
+      "kind": "numcard",
+      "number": "4",
+      "name": "El rociado de contacto",
+      "eyebrow": "MÉTODO",
+      "total": "5",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_r08_sprayer.mp4"
+    },
+    {
+      "id": "b44",
+      "start": 235.02,
+      "dur": 4.95,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a05_empty_soil_row.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak27",
+      "start": 235.02,
+      "dur": 2.66,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "También",
+          "at": 0
+        },
+        {
+          "t": "te",
+          "at": 0.16
+        },
+        {
+          "t": "voy",
+          "at": 0.36
+        },
+        {
+          "t": "a",
+          "at": 0.5
+        },
+        {
+          "t": "decir",
+          "at": 0.68
+        },
+        {
+          "t": "cuál",
+          "at": 0.96
+        }
+      ]
+    },
+    {
+      "id": "b45",
+      "start": 239.52,
+      "dur": 3.67,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a01_wormwood_bush.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_zanahoria_s02",
+      "start": 242.74,
+      "dur": 3.76,
+      "kind": "impact",
+      "hitAt": 1.1,
+      "boom": 0,
+      "darken": 0.45,
+      "setup": "En internet",
+      "impact": "Te borra",
+      "impactAccent": "danger",
+      "image": "img/cmp_zanahoria_s02_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_zanahoria_s02_bg",
+        "prompt": "a bare empty soil row where carrot seedlings failed to grow, next to a thriving row, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b48",
+      "start": 246.5,
+      "dur": 5.55,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_h08_pesticide_bottle.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak29",
+      "start": 251.6,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Pero antes hay algo que tenemos",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_noteve_s02",
+      "start": 256.48,
+      "dur": 7,
+      "kind": "statslam",
+      "figure": "NO TE VE",
+      "eyebrow": "EL MECANISMO",
+      "caption": "te HUELE",
+      "accent": "danger"
+    },
+    {
+      "id": "b51",
+      "start": 263.48,
+      "dur": 6.49,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o03_wind_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_leeaire_s02",
+      "start": 264.66,
+      "dur": 3.05,
+      "kind": "keyphrase",
+      "overlay": true,
+      "text": "Van leyendo el aire",
+      "accent": "amber",
+      "position": "bottom"
+    },
+    {
+      "id": "cmp_cartel_s02",
+      "start": 269.52,
+      "dur": 4.26,
+      "kind": "impact",
+      "hitAt": 1.2,
+      "boom": 0,
+      "darken": 0.4,
+      "setup": "Ese olor",
+      "impact": "Es un",
+      "impactAccent": "amber",
+      "image": "img/cmp_cartel_s02_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_cartel_s02_bg",
+        "prompt": "invisible scent trails drifting up from cabbage leaves in a vegetable garden, golden light, painterly, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b53",
+      "start": 273.78,
+      "dur": 3.21,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o04_cabbage.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak31",
+      "start": 273.78,
+      "dur": 2.75,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Tu",
+          "at": 0
+        },
+        {
+          "t": "col",
+          "at": 0.16
+        },
+        {
+          "t": "grita",
+          "at": 0.32
+        },
+        {
+          "t": "col.",
+          "at": 0.66
+        }
+      ]
+    },
+    {
+      "id": "b54",
+      "start": 276.54,
+      "dur": 4.61,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o07_bee_flight.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak32",
+      "start": 280.7,
+      "dur": 2.62,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Cuando entiendes eso",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b55",
+      "start": 285.02,
+      "dur": 4.03,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o08_herb_rubbing.mp4",
+      "darken": 0
+    },
+    {
+      "id": "kl1",
+      "start": 285.02,
+      "dur": 2.92,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Tienes",
+          "at": 0
+        },
+        {
+          "t": "que",
+          "at": 0.36
+        },
+        {
+          "t": "borrarle",
+          "at": 0.52
+        },
+        {
+          "t": "el",
+          "at": 1
+        },
+        {
+          "t": "cartel.",
+          "at": 1.12,
+          "hl": true
+        }
+      ]
+    },
+    {
+      "id": "b56",
+      "start": 288.6,
+      "dur": 3.85,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s07_thyme.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak33",
+      "start": 288.6,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "No son veneno",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_scent_s02",
+      "start": 292,
+      "dur": 6.78,
+      "kind": "scent",
+      "hue": "amber",
+      "eyebrow": "EL MECANISMO",
+      "title": "Tapas su olor con otro más fuerte"
+    },
+    {
+      "id": "b59",
+      "start": 298.78,
+      "dur": 5.45,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w06_broccoli.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak34",
+      "start": 298.78,
+      "dur": 2.76,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "No",
+          "at": 0
+        },
+        {
+          "t": "encuentra",
+          "at": 0.24
+        },
+        {
+          "t": "tu",
+          "at": 0.74
+        },
+        {
+          "t": "col.",
+          "at": 1.06
+        }
+      ]
+    },
+    {
+      "id": "b60",
+      "start": 303.78,
+      "dur": 4.69,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x04_wilted_tomato.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak35",
+      "start": 305.52,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y esto no es folclore",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b61",
+      "start": 308.02,
+      "dur": 4.29,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p07_lab.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_icipe_s02",
+      "start": 311.86,
+      "dur": 5.74,
+      "kind": "aged",
+      "hue": "amber",
+      "accent": "amber",
+      "eyebrow": "AVAL CIENTÍFICO",
+      "heading": "ICIPE ·",
+      "lines": [
+        "Zeyaur Khan, entomólogo"
+      ],
+      "image": "img/cmp_icipe_s02_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_icipe_s02_bg",
+        "prompt": "an old typed research report page from an african agricultural institute, stamped, warm paper, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b63",
+      "start": 317.6,
+      "dur": 5.23,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o09_field_maize.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak36",
+      "start": 320.2,
+      "dur": 2.92,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Le",
+          "at": 0
+        },
+        {
+          "t": "puso",
+          "at": 0.2
+        },
+        {
+          "t": "a",
+          "at": 0.44
+        },
+        {
+          "t": "empujar",
+          "at": 0.62
+        },
+        {
+          "t": "y",
+          "at": 1.08
+        },
+        {
+          "t": "a",
+          "at": 1.22
+        }
+      ]
+    },
+    {
+      "id": "b64",
+      "start": 322.38,
+      "dur": 3.17,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s05_wormwood.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b65",
+      "start": 325.1,
+      "dur": 3.37,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o11_grass_border.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak37",
+      "start": 325.1,
+      "dur": 3.82,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Plantas",
+          "at": 0
+        },
+        {
+          "t": "que",
+          "at": 0.6
+        },
+        {
+          "t": "atraen",
+          "at": 1.18
+        },
+        {
+          "t": "en",
+          "at": 1.64
+        },
+        {
+          "t": "el",
+          "at": 1.92
+        },
+        {
+          "t": "borde.",
+          "at": 2.12
+        }
+      ]
+    },
+    {
+      "id": "b66",
+      "start": 328.02,
+      "dur": 3.93,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_h09_store_shelf.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_100mil_s02",
+      "start": 331.5,
+      "dur": 4.6,
+      "kind": "stat",
+      "value": 100000,
+      "decimals": 0,
+      "eyebrow": "ÁFRICA ORIENTAL",
+      "label": "familias lo usan hoy",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "b68",
+      "start": 336.1,
+      "dur": 3.91,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p07_lab.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak38",
+      "start": 336.1,
+      "dur": 4.34,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Un instituto científico con presupuesto llegó",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b69",
+      "start": 339.56,
+      "dur": 5.15,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o12_hoe_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak39",
+      "start": 344.26,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Él lo dijo mejor",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_quote_abuelo_s02",
+      "start": 349.28,
+      "dur": 6.42,
+      "kind": "quote",
+      "hue": "amber",
+      "accent": "amber",
+      "fontSize": 80,
+      "text": "A la",
+      "image": "img/cmp_quote_abuelo_s02_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_quote_abuelo_s02_bg",
+        "prompt": "an old amish farmer leaning on a hoe at the edge of a vegetable bed, evening light, calm, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b72",
+      "start": 355.7,
+      "dur": 6.47,
+      "kind": "raw",
+      "src": "img/vh_ia_02_cortando_ortiga.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "ak41",
+      "start": 359.02,
+      "dur": 3.56,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Necesitas",
+          "at": 0
+        },
+        {
+          "t": "un",
+          "at": 0.52
+        },
+        {
+          "t": "kilo",
+          "at": 0.84
+        },
+        {
+          "t": "de",
+          "at": 1.14
+        },
+        {
+          "t": "ortiga",
+          "at": 1.48
+        },
+        {
+          "t": "fresca,",
+          "at": 1.86
+        }
+      ]
+    },
+    {
+      "id": "b73",
+      "start": 361.72,
+      "dur": 3.79,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m01_cut_nettle.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_vs_agua_s03_macerado",
+      "start": 365.06,
+      "dur": 9.08,
+      "kind": "vs",
+      "eyebrow": "El detalle que nadie cuenta",
+      "title": "Qué agua usar",
+      "left": {
+        "label": "De la canilla",
+        "value": "Trae cloro"
+      },
+      "right": {
+        "label": "De lluvia",
+        "value": "Limpia",
+        "good": true
+      },
+      "hue": "amber"
+    },
+    {
+      "id": "b75",
+      "start": 374.14,
+      "dur": 5.11,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_h04_bucket.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak43",
+      "start": 376.92,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El agua de la canilla trae",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b76",
+      "start": 378.8,
+      "dur": 3.33,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m05_tap_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak44",
+      "start": 381.68,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Cortas la ortiga en pedazos de",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b77",
+      "start": 387.42,
+      "dur": 5.65,
+      "kind": "raw",
+      "src": "img/vh_ia_04_tabla_encima.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "ak45",
+      "start": 387.42,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "le pones una tabla arriba",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_key_respirar_s03_macerado",
+      "start": 390.86,
+      "dur": 3.5,
+      "kind": "keyphrase",
+      "overlay": true,
+      "text": "Tiene que *respirar*",
+      "accent": "amber",
+      "position": "lower"
+    },
+    {
+      "id": "cmp_vs_dosbaldes_s03_macerado",
+      "start": 398.72,
+      "dur": 8.46,
+      "kind": "vs",
+      "eyebrow": "Un balde, dos productos",
+      "title": "No son intercambiables",
+      "left": {
+        "label": "24-72 horas",
+        "value": "Repelente → hoja"
+      },
+      "right": {
+        "label": "10-14 días",
+        "value": "Fertilizante → pie",
+        "good": true
+      },
+      "hue": "amber"
+    },
+    {
+      "id": "b80",
+      "start": 407.18,
+      "dur": 4.25,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s03_leaves_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak47",
+      "start": 407.18,
+      "dur": 2.1,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "tienes",
+          "at": 0
+        },
+        {
+          "t": "un",
+          "at": 0.1
+        },
+        {
+          "t": "macerado.",
+          "at": 0.4
+        }
+      ]
+    },
+    {
+      "id": "b81",
+      "start": 410.98,
+      "dur": 4.75,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m12_spray_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_num2_purin_s03_macerado",
+      "start": 415.28,
+      "dur": 6.9,
+      "kind": "numcard",
+      "number": "2",
+      "name": "Purín · 10 a 14 días",
+      "eyebrow": "Preparado 2 de 2",
+      "total": "2",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_m11_dark_liquid.mp4"
+    },
+    {
+      "id": "b83",
+      "start": 422.18,
+      "dur": 5.95,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m15_calendar.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak48",
+      "start": 422.18,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "ya no es lo mismo",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b84",
+      "start": 427.68,
+      "dur": 4.89,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_s10_old_hands_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak49",
+      "start": 429.5,
+      "dur": 2.75,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Huele",
+          "at": 0
+        },
+        {
+          "t": "a",
+          "at": 0.26
+        },
+        {
+          "t": "muerto.",
+          "at": 0.46
+        }
+      ]
+    },
+    {
+      "id": "b85",
+      "start": 432.12,
+      "dur": 1.65,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m13_watering_base.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_bars_diluciones_s03_macerado",
+      "start": 433.44,
+      "dur": 7.1,
+      "kind": "bars",
+      "eyebrow": "No las mezcles",
+      "title": "Las dos diluciones",
+      "unit": "",
+      "bars": [
+        {
+          "label": "Macerado · a la hoja",
+          "value": 10,
+          "display": "1:10"
+        }
+      ],
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "ak51",
+      "start": 444.02,
+      "dur": 4.92,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "O rocías fertilizante concentrado sobre las",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak53",
+      "start": 454.16,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "quema unas hojas y decide que",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak54",
+      "start": 459.8,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Es que nadie le explicó que",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_stat_7dias_s03_macerado",
+      "start": 463.8,
+      "dur": 8.64,
+      "kind": "stat",
+      "value": 7,
+      "suffix": " días",
+      "label": "Cada cuánto rociar",
+      "eyebrow": "Mientras haya plaga",
+      "accent": "amber",
+      "hue": "amber"
+    },
+    {
+      "id": "b89",
+      "start": 472.44,
+      "dur": 5.89,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a09_pointing_hand.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak56",
+      "start": 473.68,
+      "dur": 3.26,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "El",
+          "at": 0
+        },
+        {
+          "t": "macerado",
+          "at": 0.16
+        },
+        {
+          "t": "dura",
+          "at": 0.78
+        },
+        {
+          "t": "como",
+          "at": 1.04
+        },
+        {
+          "t": "mucho",
+          "at": 1.34
+        },
+        {
+          "t": "una",
+          "at": 1.56
+        }
+      ]
+    },
+    {
+      "id": "b90",
+      "start": 477.88,
+      "dur": 3.13,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m11_dark_liquid.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak57",
+      "start": 479.44,
+      "dur": 2.75,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "No",
+          "at": 0
+        },
+        {
+          "t": "lo",
+          "at": 0.1
+        },
+        {
+          "t": "guardes.",
+          "at": 0.36
+        }
+      ]
+    },
+    {
+      "id": "cmp_aged_decreto_s03_macerado",
+      "start": 483.04,
+      "dur": 7.3,
+      "kind": "aged",
+      "heading": "Francia, 2006",
+      "lines": [
+        "Prohibido difundir preparados sin homologar"
+      ],
+      "eyebrow": "Decreto",
+      "accent": "amber",
+      "hue": "amber",
+      "image": "broll/vah3z2zzciut/vh_f01_old_document.mp4"
+    },
+    {
+      "id": "b93",
+      "start": 490.34,
+      "dur": 7.71,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m11_dark_liquid.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak58",
+      "start": 490.34,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El purín de ortiga quedó adentro",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b94",
+      "start": 497.6,
+      "dur": 5.17,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_f03_protest.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak59",
+      "start": 498.76,
+      "dur": 2.75,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Se",
+          "at": 0
+        },
+        {
+          "t": "juntaron",
+          "at": 0.16
+        },
+        {
+          "t": "firmas.",
+          "at": 0.58
+        }
+      ]
+    },
+    {
+      "id": "b95",
+      "start": 502.32,
+      "dur": 5.07,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_f06_courthouse.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_tag_receta_s03_macerado",
+      "start": 504.06,
+      "dur": 4.25,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Por una receta de *ortiga y agua*",
+      "accent": "amber",
+      "pos": "center"
+    },
+    {
+      "id": "ak60",
+      "start": 508.22,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Pero el mensaje ya estaba dado",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_vs_permanente_s04_muro",
+      "start": 517.46,
+      "dur": 7.84,
+      "kind": "vs",
+      "title": "Dos cosas distintas",
+      "left": {
+        "label": "El macerado",
+        "value": "Cuando hay plaga"
+      },
+      "right": {
+        "label": "El muro",
+        "value": "Todo el año",
+        "good": true
+      },
+      "hue": "amber"
+    },
+    {
+      "id": "b98",
+      "start": 525.3,
+      "dur": 1.55,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w05_rosemary_bush.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_num1_tanaceto_s04_muro",
+      "start": 529.6,
+      "dur": 5.48,
+      "kind": "numcard",
+      "number": "1",
+      "name": "Tanaceto · las esquinas",
+      "eyebrow": "El muro de olor",
+      "total": "5",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_w01_tansy_bed.mp4"
+    },
+    {
+      "id": "b100",
+      "start": 535.08,
+      "dur": 6.53,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w01_tansy_bed.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak62",
+      "start": 539.86,
+      "dur": 2.38,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "moscas",
+          "at": 0
+        },
+        {
+          "t": "de",
+          "at": 0.32
+        },
+        {
+          "t": "la",
+          "at": 0.48
+        },
+        {
+          "t": "fruta.",
+          "at": 0.68
+        }
+      ]
+    },
+    {
+      "id": "b101",
+      "start": 541.16,
+      "dur": 3.19,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w01_tansy_bed.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_aviso_tanaceto_s04_muro",
+      "start": 543.9,
+      "dur": 7.1,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "AVISO",
+      "title": "El tanaceto es perenne",
+      "desc": "Vuelve cada año y se expande solo.",
+      "image": "broll/vah3z2zzciut/vh_w01_tansy_bed.mp4"
+    },
+    {
+      "id": "b104",
+      "start": 551,
+      "dur": 4.45,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w06_broccoli.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak64",
+      "start": 553.3,
+      "dur": 3.4,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "La",
+          "at": 0
+        },
+        {
+          "t": "mariposa",
+          "at": 0.14
+        },
+        {
+          "t": "blanca",
+          "at": 0.64
+        },
+        {
+          "t": "del",
+          "at": 1.02
+        },
+        {
+          "t": "acol",
+          "at": 1.26
+        },
+        {
+          "t": "viene",
+          "at": 1.7
+        }
+      ]
+    },
+    {
+      "id": "b105",
+      "start": 555,
+      "dur": 4.79,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w07_cabbage_rows.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b106",
+      "start": 559.34,
+      "dur": 5.75,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_c03_planting_seedling.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_tag_confunde_s04_muro",
+      "start": 559.34,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Se confunde y *sigue de largo*",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_num3_tomillo_s04_muro",
+      "start": 564.64,
+      "dur": 5.74,
+      "kind": "numcard",
+      "number": "3",
+      "name": "Tomillo · borde del viento",
+      "eyebrow": "El muro de olor",
+      "total": "5",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_w09_thyme_border.mp4"
+    },
+    {
+      "id": "b108",
+      "start": 570.38,
+      "dur": 4.69,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_o03_wind_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak65",
+      "start": 572.34,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El tomillo es rastrero y hace",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b109",
+      "start": 574.62,
+      "dur": 7.97,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w09_thyme_border.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_impact_menta_s04_muro",
+      "start": 582.14,
+      "dur": 6.66,
+      "kind": "impact",
+      "setup": "Menta directo en la tierra...",
+      "impact": "Se come el cantero.",
+      "impactAccent": "danger",
+      "hitAt": 1.1,
+      "boom": 0,
+      "darken": 0.5,
+      "image": "broll/vah3z2zzciut/vh_w11_mint_spread.mp4"
+    },
+    {
+      "id": "b111",
+      "start": 588.8,
+      "dur": 8.15,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w12_roots_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak66",
+      "start": 592.56,
+      "dur": 3.86,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Menta",
+          "at": 0
+        },
+        {
+          "t": "en",
+          "at": 0.46
+        },
+        {
+          "t": "maceta",
+          "at": 0.68
+        },
+        {
+          "t": "hundida",
+          "at": 1.14
+        },
+        {
+          "t": "hasta",
+          "at": 1.82
+        },
+        {
+          "t": "el",
+          "at": 2.16
+        }
+      ]
+    },
+    {
+      "id": "cmp_num5_calendula_s04_muro",
+      "start": 596.5,
+      "dur": 5.42,
+      "kind": "numcard",
+      "number": "5",
+      "name": "Caléndula · entre los tomates",
+      "eyebrow": "El muro de olor",
+      "total": "5",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_w14_marigold_bed.mp4"
+    },
+    {
+      "id": "b113",
+      "start": 601.92,
+      "dur": 4.09,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w13_marigold.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b114",
+      "start": 605.56,
+      "dur": 3.63,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w13_marigold.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak68",
+      "start": 605.56,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Esta no trabaja arriba",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b115",
+      "start": 608.74,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w12_roots_soil.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_callout_nema_s04_muro",
+      "start": 613.8,
+      "dur": 5.82,
+      "kind": "callout",
+      "figure": "Nemátodos",
+      "eyebrow": "Bolitas en la raíz",
+      "caption": "te dejan la planta enana",
+      "accent": "danger",
+      "hue": "amber",
+      "image": "broll/vah3z2zzciut/vh_w15_tomato_roots.mp4"
+    },
+    {
+      "id": "b117",
+      "start": 619.62,
+      "dur": 6.79,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w16_stunted_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak69",
+      "start": 622.56,
+      "dur": 3.72,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Esto",
+          "at": 0
+        },
+        {
+          "t": "está",
+          "at": 0.22
+        },
+        {
+          "t": "documentado",
+          "at": 0.62
+        },
+        {
+          "t": "en",
+          "at": 1.28
+        },
+        {
+          "t": "Agronomía",
+          "at": 1.42
+        },
+        {
+          "t": "desde",
+          "at": 2.02
+        }
+      ]
+    },
+    {
+      "id": "b118",
+      "start": 625.96,
+      "dur": 3.35,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_z06_microscope.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_growth_calendula_s04_muro",
+      "start": 628.86,
+      "dur": 6.8,
+      "kind": "growthtimeline",
+      "title": "Necesita tiempo",
+      "stages": [
+        {
+          "label": "Mes 1",
+          "sub": "no ves nada"
+        },
+        {
+          "label": "Temporada",
+          "sub": "la raíz trabaja"
+        }
+      ],
+      "image": "broll/vah3z2zzciut/vh_w13_marigold.mp4"
+    },
+    {
+      "id": "b121",
+      "start": 635.66,
+      "dur": 5.55,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_t12_inspecting_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak70",
+      "start": 635.68,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Método número 3",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak71",
+      "start": 640.76,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Esto suena mal la primera vez",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_focus_capuchina_s05_trampa",
+      "start": 646.44,
+      "dur": 5.78,
+      "kind": "focuscard",
+      "eyebrow": "La trampa",
+      "title": "La capuchina",
+      "desc": "Flor naranja, hoja redonda, trepa.",
+      "imageSide": "right",
+      "accent": "good",
+      "image": "broll/vah3z2zzciut/vh_t01_nasturtium.mp4"
+    },
+    {
+      "id": "b123",
+      "start": 652.22,
+      "dur": 4.47,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_c05_sowing_row.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b124",
+      "start": 656.24,
+      "dur": 9.03,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x02_aphids2.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak73",
+      "start": 656.24,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "el pulgón se le tira encima",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_anno_metro_s05_trampa",
+      "start": 664.82,
+      "dur": 9.06,
+      "kind": "annotated",
+      "eyebrow": "La distancia",
+      "caption": "Un metro. Pegada no sirve.",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.22,
+          "y": 0.6,
+          "w": 0.14,
+          "label": "Capuchina",
+          "color": "amber"
+        },
+        {
+          "kind": "underline",
+          "x": 0.5,
+          "y": 0.78,
+          "w": 0.2,
+          "label": "1 metro",
+          "color": "good"
+        },
+        {
+          "kind": "arrow",
+          "x": 0.8,
+          "y": 0.55,
+          "fromX": 0.95,
+          "fromY": 0.2,
+          "label": "Tus habas",
+          "color": "good"
+        }
+      ],
+      "image": "broll/vah3z2zzciut/vh_t11_row_flowers.mp4"
+    },
+    {
+      "id": "b127",
+      "start": 673.88,
+      "dur": 5.55,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_t06_holed_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak75",
+      "start": 674.82,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "La pulguilla le agujerea las hojas",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak76",
+      "start": 682,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Si está negra de bichos",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_stat_mil_s05_trampa",
+      "start": 688.58,
+      "dur": 4.8,
+      "kind": "stat",
+      "value": 1000,
+      "label": "pulgones fuera de",
+      "eyebrow": "De un solo corte",
+      "accent": "good",
+      "hue": "amber"
+    },
+    {
+      "id": "ak77",
+      "start": 693.38,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Mi abuelo Amoz plantaba una fila",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak78",
+      "start": 699.76,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Cuando yo era chico pensaba que",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b129",
+      "start": 703.22,
+      "dur": 4.81,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_l10_healthy_garden.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_blur_tarde_s05_trampa",
+      "start": 705.14,
+      "dur": 4.25,
+      "kind": "blurreveal",
+      "overlay": true,
+      "eyebrow": "Hasta aquí, prevención",
+      "title": "A veces llegas tarde",
+      "accent": "amber"
+    },
+    {
+      "id": "b130",
+      "start": 707.58,
+      "dur": 3.65,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x06_young_farmer.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b131",
+      "start": 710.78,
+      "dur": 4.29,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m11_dark_liquid.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_receta_s06_rociado",
+      "start": 714.62,
+      "dur": 7.78,
+      "kind": "process",
+      "title": "La receta",
+      "eyebrow": "AJO",
+      "hue": "amber",
+      "accent": "good",
+      "steps": [
+        {
+          "title": "Cabeza de ajo machacada"
+        },
+        {
+          "title": "Un litro de agua caliente"
+        },
+        {
+          "title": "Reposa toda la noche"
+        }
+      ]
+    },
+    {
+      "id": "b134",
+      "start": 722.4,
+      "dur": 5.43,
+      "kind": "raw",
+      "src": "img/vh_ia_15_colando.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "cmp_colar_s06_rociado",
+      "start": 724.6,
+      "dur": 2.75,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Colar MUY fino",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b135",
+      "start": 727.38,
+      "dur": 3.41,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_r05_fine_strainer.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_vs_jabon_s06_rociado",
+      "start": 730.34,
+      "dur": 7.12,
+      "kind": "vs",
+      "title": "El jabón correcto",
+      "hue": "amber",
+      "left": {
+        "label": "Jabón puro rallado",
+        "value": "Sí",
+        "good": true
+      },
+      "right": {
+        "label": "Detergente de cocina",
+        "value": "Quema la hoja"
+      }
+    },
+    {
+      "id": "b137",
+      "start": 737.46,
+      "dur": 3.15,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m14_burnt_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak81",
+      "start": 740.16,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El jabón no está ahí para",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak82",
+      "start": 748.1,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Con jabón se queda y el",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_espiraculos_s06_rociado",
+      "start": 753.46,
+      "dur": 6.62,
+      "kind": "annotated",
+      "eyebrow": "El pulgón",
+      "caption": "respira por los costados del cuerpo",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.4,
+          "y": 0.52,
+          "w": 0.13,
+          "label": "Espiráculos",
+          "color": "amber"
+        }
+      ],
+      "image": "broll/vah3z2zzciut/vh_r11_whitefly.mp4"
+    },
+    {
+      "id": "b139",
+      "start": 760.08,
+      "dur": 4.41,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_r09_droplet_leaf.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak83",
+      "start": 760.08,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El jabón rompe la atención del",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b140",
+      "start": 764.04,
+      "dur": 6.83,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x08_leaf_underside.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_rule_atardecer_s06_rociado",
+      "start": 770.42,
+      "dur": 10.24,
+      "kind": "rule",
+      "number": "1",
+      "title": "Solo al atardecer",
+      "label": "Nunca con sol",
+      "hue": "amber"
+    },
+    {
+      "id": "b143",
+      "start": 780.66,
+      "dur": 5.17,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m14_burnt_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak85",
+      "start": 783,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y la segunda es más importante",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b144",
+      "start": 785.38,
+      "dur": 3.71,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_r14_bees_working.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b145",
+      "start": 788.64,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_g03_bee_closeup.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak86",
+      "start": 790.18,
+      "dur": 3.6,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Al",
+          "at": 0
+        },
+        {
+          "t": "atardecer",
+          "at": 0.3
+        },
+        {
+          "t": "ya",
+          "at": 1.12
+        },
+        {
+          "t": "se",
+          "at": 1.64
+        },
+        {
+          "t": "fueron.",
+          "at": 1.9
+        }
+      ]
+    },
+    {
+      "id": "b146",
+      "start": 793.68,
+      "dur": 2.63,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_c06_spray_evening.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak87",
+      "start": 795.86,
+      "dur": 2.78,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Método número 5",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_tool_piretro_s06_rociado",
+      "start": 803.8,
+      "dur": 9.34,
+      "kind": "tool",
+      "number": "5",
+      "nameEs": "El piretro",
+      "nameEn": "Pyrethrum",
+      "eyebrow": "MÉTODO 5",
+      "how": "flor persa seca y molida",
+      "image": "broll/vah3z2zzciut/vh_p02_chrysanthemum.mp4"
+    },
+    {
+      "id": "b149",
+      "start": 813.14,
+      "dur": 4.39,
+      "kind": "raw",
+      "src": "img/vh_ia_17_mortero_piretro.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "ak89",
+      "start": 814.64,
+      "dur": 3.52,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Ese",
+          "at": 0
+        },
+        {
+          "t": "polvo",
+          "at": 0.34
+        },
+        {
+          "t": "es",
+          "at": 0.78
+        },
+        {
+          "t": "un",
+          "at": 1
+        },
+        {
+          "t": "insecticida",
+          "at": 1.16
+        },
+        {
+          "t": "real,",
+          "at": 1.82
+        }
+      ]
+    },
+    {
+      "id": "b150",
+      "start": 817.08,
+      "dur": 3.73,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p04_dried_flowers.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_lie_victimas_s06_rociado",
+      "start": 820.36,
+      "dur": 6.7,
+      "kind": "lielist",
+      "title": "El piretro no distingue",
+      "items": [
+        "La abeja",
+        "La mariquita",
+        "El abejorro"
+      ],
+      "accent": "danger",
+      "hue": "red",
+      "image": "broll/vah3z2zzciut/vh_g01_ladybug.mp4"
+    },
+    {
+      "id": "b153",
+      "start": 827.06,
+      "dur": 6.39,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_g02_ladybug_eating.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak91",
+      "start": 828.68,
+      "dur": 3.2,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Es",
+          "at": 0
+        },
+        {
+          "t": "tóxico",
+          "at": 0.22
+        },
+        {
+          "t": "para",
+          "at": 0.7
+        },
+        {
+          "t": "los",
+          "at": 0.94
+        },
+        {
+          "t": "gatos",
+          "at": 1.16
+        },
+        {
+          "t": "y",
+          "at": 1.5
+        }
+      ]
+    },
+    {
+      "id": "b154",
+      "start": 833,
+      "dur": 3.67,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_c09_board_ground.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_call_peces_s06_rociado",
+      "start": 836.22,
+      "dur": 7.06,
+      "kind": "callout",
+      "figure": "PECES",
+      "eyebrow": "Muy tóxico",
+      "caption": "si hay estanque cerca, ni se te ocurra",
+      "accent": "danger",
+      "hue": "red",
+      "image": "broll/vah3z2zzciut/vh_g05_fish_pond.mp4"
+    },
+    {
+      "id": "b157",
+      "start": 843.28,
+      "dur": 3.55,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_r15_dusk_field.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b158",
+      "start": 846.38,
+      "dur": 4.29,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_h11_veg_garden.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak93",
+      "start": 846.38,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Nunca en toda la huerta",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b159",
+      "start": 850.22,
+      "dur": 5.19,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_c10_bran.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak94",
+      "start": 852.56,
+      "dur": 3.1,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Y",
+          "at": 0
+        },
+        {
+          "t": "solo",
+          "at": 0.22
+        },
+        {
+          "t": "cuando",
+          "at": 0.48
+        },
+        {
+          "t": "lo",
+          "at": 0.82
+        },
+        {
+          "t": "demás",
+          "at": 1.02
+        },
+        {
+          "t": "ya",
+          "at": 1.4
+        }
+      ]
+    },
+    {
+      "id": "ak95",
+      "start": 857.62,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "A veces ninguna",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b160",
+      "start": 859.1,
+      "dur": 5.93,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_c11_hedgehog.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_reveal_ajenjo_s07_ajenjo",
+      "start": 861.28,
+      "dur": 4.25,
+      "kind": "blurreveal",
+      "overlay": true,
+      "eyebrow": "LA QUE NO DEBES PLANTAR",
+      "title": "EL AJENJO",
+      "accent": "amber"
+    },
+    {
+      "id": "ak97",
+      "start": 871.12,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y es cierto",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_segunda_arma_s07_ajenjo",
+      "start": 876.22,
+      "dur": 8.62,
+      "kind": "impact",
+      "setup": "Repele. Eso es cierto.",
+      "impact": "Pero tiene una segunda arma.",
+      "impactAccent": "danger",
+      "hitAt": 1.2,
+      "boom": 0,
+      "darken": 0.45,
+      "image": "broll/vah3z2zzciut/vh_a02_wormwood_macro.mp4"
+    },
+    {
+      "id": "b163",
+      "start": 884.84,
+      "dur": 6.29,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a07_seed_packet.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak99",
+      "start": 886.64,
+      "dur": 2.9,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "No",
+          "at": 0
+        },
+        {
+          "t": "es",
+          "at": 0.22
+        },
+        {
+          "t": "que",
+          "at": 0.48
+        },
+        {
+          "t": "compita",
+          "at": 0.62
+        },
+        {
+          "t": "por",
+          "at": 0.98
+        },
+        {
+          "t": "el",
+          "at": 1.2
+        }
+      ]
+    },
+    {
+      "id": "cmp_term_alelopatia_s07_ajenjo",
+      "start": 890.68,
+      "dur": 5.66,
+      "kind": "termcard",
+      "term": "Alelopatía",
+      "definition": "Envenenar químicamente",
+      "accent": "amber",
+      "image": "img/cmp_term_alelopatia_s07_ajenjo_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_term_alelopatia_s07_ajenjo_bg",
+        "prompt": "silver grey wormwood plant growing beside a bare vegetable seed bed, overcast light, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b165",
+      "start": 896.34,
+      "dur": 4.43,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a03_rain_on_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b166",
+      "start": 900.32,
+      "dur": 3.17,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a04_carrot_seedlings.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak101",
+      "start": 901.64,
+      "dur": 3.58,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "lechuga",
+          "at": 0
+        },
+        {
+          "t": "o",
+          "at": 0.6
+        },
+        {
+          "t": "rúcula",
+          "at": 0.86
+        },
+        {
+          "t": "cerca",
+          "at": 1.4
+        },
+        {
+          "t": "de",
+          "at": 1.7
+        },
+        {
+          "t": "un",
+          "at": 1.88
+        }
+      ]
+    },
+    {
+      "id": "b167",
+      "start": 903.04,
+      "dur": 3.43,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a05_empty_soil_row.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_culpa_s07_ajenjo",
+      "start": 906.02,
+      "dur": 5.6,
+      "kind": "lielist",
+      "title": "A quién culpas",
+      "items": [
+        "A la semilla",
+        "Al frío"
+      ],
+      "accent": "danger",
+      "hue": "amber",
+      "image": "broll/vah3z2zzciut/vh_a07_seed_packet.mp4"
+    },
+    {
+      "id": "ak103",
+      "start": 915.18,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Hasta que mi vecino",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak104",
+      "start": 919.86,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "me miró el cantero",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_donde_va_s07_ajenjo",
+      "start": 924.68,
+      "dur": 5.78,
+      "kind": "annotated",
+      "eyebrow": "DÓNDE VA",
+      "caption": "5 metros, cuesta abajo",
+      "hue": "amber",
+      "annotations": [
+        {
+          "kind": "circle",
+          "x": 0.28,
+          "y": 0.3,
+          "w": 0.22,
+          "label": "Tu cantero",
+          "color": "good"
+        }
+      ],
+      "image": "broll/vah3z2zzciut/vh_a10_slope_garden.mp4"
+    },
+    {
+      "id": "b171",
+      "start": 930.46,
+      "dur": 6.55,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_a03_rain_on_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_nunca_arriba_s07_ajenjo",
+      "start": 931.46,
+      "dur": 3,
+      "kind": "keyphrase",
+      "overlay": true,
+      "text": "Cuesta ABAJO. Nunca arriba.",
+      "accent": "danger",
+      "src": "broll/vah3z2zzciut/vh_a03_rain_on_plant.mp4"
+    },
+    {
+      "id": "ak105",
+      "start": 936.56,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y ya que estamos siendo honestos",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_tres_limites_s08_limites",
+      "start": 946.16,
+      "dur": 8.24,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "Lo que NO resuelve",
+      "items": [
+        "Hongos",
+        "Caracoles y babosas",
+        "Plagas ya instaladas"
+      ]
+    },
+    {
+      "id": "b174",
+      "start": 954.4,
+      "dur": 5.83,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e05_empty_bed.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_verano_quote_s08_limites",
+      "start": 959.78,
+      "dur": 4.9,
+      "kind": "quote",
+      "text": "Ninguna hierba te salva de un verano *húmedo*.",
+      "hue": "amber",
+      "accent": "amber",
+      "fontSize": 84,
+      "image": "broll/vah3z2zzciut/vh_a03_rain_on_plant.mp4"
+    },
+    {
+      "id": "b176",
+      "start": 964.68,
+      "dur": 4.75,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_l01_mildew.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b177",
+      "start": 968.98,
+      "dur": 2.45,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e07_branch_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak108",
+      "start": 968.98,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Esos no vienen por el olor",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b178",
+      "start": 970.98,
+      "dur": 6.75,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_l07_humid_ground.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_teaser_final_s08_limites",
+      "start": 975.42,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Eso, al final del *video*",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak109",
+      "start": 980.8,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Si tienes la planta cubierta de",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak110",
+      "start": 987.9,
+      "dur": 3.82,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Estas hierbas previenen y controlan poblaciones",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak111",
+      "start": 992.7,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y hay algo de tiempo que",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak112",
+      "start": 998.7,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El sistema completo tarda dos o",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak113",
+      "start": 1004.72,
+      "dur": 3,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Estás construyendo un equilibrio",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak114",
+      "start": 1011.3,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El tercer año la huerta se",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_vs_dos_horas_s08_limites",
+      "start": 1015.98,
+      "dur": 10.12,
+      "kind": "vs",
+      "hue": "amber",
+      "title": "Rápido no es resuelto",
+      "left": {
+        "label": "El frasco",
+        "value": "2 horas",
+        "sub": "vuelve en marzo",
+        "good": false
+      },
+      "right": {
+        "label": "Las hierbas",
+        "value": "2-3 temporadas",
+        "sub": "se queda",
+        "good": true
+      }
+    },
+    {
+      "id": "b181",
+      "start": 1026.1,
+      "dur": 3.03,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e08_hands_soil_old.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak116",
+      "start": 1026.96,
+      "dur": 2.7,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "en",
+          "at": 0
+        },
+        {
+          "t": "mayo",
+          "at": 0.16
+        },
+        {
+          "t": "y",
+          "at": 0.44
+        },
+        {
+          "t": "en",
+          "at": 0.78
+        },
+        {
+          "t": "junio.",
+          "at": 1
+        }
+      ]
+    },
+    {
+      "id": "b182",
+      "start": 1036.02,
+      "dur": 5.25,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e09_pruning_shears.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_tag_martes_s09",
+      "start": 1036.02,
+      "dur": 3,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Ese *martes* de julio",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_slam_triple_s09",
+      "start": 1040.82,
+      "dur": 6.06,
+      "kind": "statslam",
+      "figure": "×3",
+      "eyebrow": "Tres semanas después",
+      "caption": "Volvieron el triple",
+      "accent": "danger"
+    },
+    {
+      "id": "ak118",
+      "start": 1051.48,
+      "dur": 2.9,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Había larvas de círfido",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak119",
+      "start": 1061.18,
+      "dur": 4.24,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Había avispitas diminutas que ponen su",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_impact_murieron_s09",
+      "start": 1066.34,
+      "dur": 4.62,
+      "kind": "impact",
+      "setup": "El frasco no distingue.",
+      "impact": "Mató a tus aliados.",
+      "impactAccent": "danger",
+      "hitAt": 1.2,
+      "boom": 0,
+      "darken": 0.5,
+      "image": "broll/vah3z2zzciut/vh_x03_spraying.mp4"
+    },
+    {
+      "id": "ak120",
+      "start": 1070.96,
+      "dur": 3.7,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El pulgón se reproduce en días",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak121",
+      "start": 1075.86,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "sin macho y una sola te",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b185",
+      "start": 1079.64,
+      "dur": 5.35,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_g01_ladybug.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak122",
+      "start": 1083.18,
+      "dur": 2.58,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "aparearse",
+          "at": 0
+        },
+        {
+          "t": "y",
+          "at": 0.6
+        },
+        {
+          "t": "poner.",
+          "at": 0.88
+        }
+      ]
+    },
+    {
+      "id": "b186",
+      "start": 1084.54,
+      "dur": 4.95,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_f02_stamp_paper.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_tag_vacia_s09",
+      "start": 1086.62,
+      "dur": 3.5,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Una huerta *vacía* de enemigos",
+      "accent": "danger",
+      "pos": "lower"
+    },
+    {
+      "id": "b187",
+      "start": 1089.04,
+      "dur": 1.13,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_x02_aphids2.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak124",
+      "start": 1098.32,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Yo no lo sabía",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b188",
+      "start": 1102.44,
+      "dur": 3.85,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_f04_petition.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b189",
+      "start": 1105.84,
+      "dur": 2.17,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e05_empty_bed.mp4",
+      "darken": 0
+    },
+    {
+      "id": "kl6",
+      "start": 1105.84,
+      "dur": 3.08,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Querer",
+          "at": 0
+        },
+        {
+          "t": "dejar",
+          "at": 0.26
+        },
+        {
+          "t": "la",
+          "at": 0.62
+        },
+        {
+          "t": "huerta",
+          "at": 0.8
+        },
+        {
+          "t": "en",
+          "at": 1.04
+        },
+        {
+          "t": "cero.",
+          "at": 1.28,
+          "hl": true
+        }
+      ]
+    },
+    {
+      "id": "ak125",
+      "start": 1110.48,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Para que esto funcione",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_proc_comedero_s09",
+      "start": 1115.02,
+      "dur": 9.3,
+      "kind": "process",
+      "title": "El comedero de tus mariquitas",
+      "hue": "amber",
+      "accent": "good",
+      "steps": [
+        {
+          "title": "Un rincón con pulgón"
+        },
+        {
+          "title": "La capuchina de sacrificio"
+        },
+        {
+          "title": "Las mariquitas se quedan"
+        }
+      ]
+    },
+    {
+      "id": "b192",
+      "start": 1124.32,
+      "dur": 4.83,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_f07_old_book.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak127",
+      "start": 1126.86,
+      "dur": 2.66,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Si",
+          "at": 0
+        },
+        {
+          "t": "les",
+          "at": 0.14
+        },
+        {
+          "t": "quitas",
+          "at": 0.38
+        },
+        {
+          "t": "la",
+          "at": 0.74
+        },
+        {
+          "t": "comida,",
+          "at": 0.96
+        }
+      ]
+    },
+    {
+      "id": "b193",
+      "start": 1128.7,
+      "dur": 3.23,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e05_empty_bed.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b194",
+      "start": 1131.48,
+      "dur": 2.1,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_e06_aphid_colony.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak128",
+      "start": 1133.16,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Mi abuelo me lo dijo con",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak129",
+      "start": 1138.2,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Me dijo que dejara esa rama",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "cmp_chips_sistema_s09",
+      "start": 1149.26,
+      "dur": 9.82,
+      "kind": "chips",
+      "title": "Las cuatro piezas",
+      "chips": [
+        "Trampa",
+        "Muro de olor",
+        "Macerado",
+        "Depredadores"
+      ],
+      "hue": "amber",
+      "image": "img/cmp_chips_sistema_s09_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "cmp_chips_sistema_s09_bg",
+        "prompt": "a rustic vegetable garden with nasturtiums, tansy and marigolds planted between the beds, golden hour, realistic color photograph, natural soft daylight, sharp focus, shallow depth of field, rustic amish farm garden, no text, no captions, no watermark, no logo"
+      }
+    },
+    {
+      "id": "b197",
+      "start": 1159.08,
+      "dur": 5.27,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m12_spray_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b198",
+      "start": 1163.9,
+      "dur": 2.37,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_g02_ladybug_eating.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak132",
+      "start": 1165.82,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "El frasco hace lo contrario",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "cmp_paso1_num_s10_recap",
+      "start": 1179.82,
+      "dur": 8,
+      "kind": "numcard",
+      "number": "1",
+      "name": "Corta la ortiga",
+      "eyebrow": "EL RESUMEN",
+      "total": "6",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_c01_gloves_cutting.mp4"
+    },
+    {
+      "id": "b201",
+      "start": 1187.82,
+      "dur": 3.13,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_m04_rain_water.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_rociado_proc_s10_recap",
+      "start": 1190.5,
+      "dur": 7.06,
+      "kind": "process",
+      "eyebrow": "Rociado",
+      "title": "El repelente",
+      "hue": "amber",
+      "accent": "good",
+      "steps": [
+        {
+          "title": "Uno a diez"
+        },
+        {
+          "title": "Abajo de la hoja"
+        },
+        {
+          "title": "Al atardecer"
+        }
+      ]
+    },
+    {
+      "id": "b204",
+      "start": 1197.56,
+      "dur": 3.81,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_h03_garden_edge.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak135",
+      "start": 1199.2,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Tanaceto en las esquinas",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "b205",
+      "start": 1200.92,
+      "dur": 7.17,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_w05_rosemary_bush.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_paso3_track_s10_recap",
+      "start": 1207.64,
+      "dur": 5.16,
+      "kind": "steptrack",
+      "step": 3,
+      "total": 6,
+      "label": "Siembra la trampa",
+      "accent": "amber"
+    },
+    {
+      "id": "b207",
+      "start": 1212.8,
+      "dur": 5.77,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_h05_rain_barrel.mp4",
+      "darken": 0
+    },
+    {
+      "id": "b208",
+      "start": 1218.12,
+      "dur": 3.95,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_t12_inspecting_plant.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_paso4_num_s10_recap",
+      "start": 1221.62,
+      "dur": 6.26,
+      "kind": "numcard",
+      "number": "4",
+      "name": "El ajo con jabon",
+      "eyebrow": "SOLO EMERGENCIAS",
+      "total": "6",
+      "accent": "amber",
+      "image": "broll/vah3z2zzciut/vh_r01_garlic_bulb.mp4"
+    },
+    {
+      "id": "b211",
+      "start": 1227.88,
+      "dur": 8.39,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_r05_fine_strainer.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_paso5_track_s10_recap",
+      "start": 1235.82,
+      "dur": 3.32,
+      "kind": "steptrack",
+      "step": 5,
+      "total": 6,
+      "label": "Ajenjo y piretro",
+      "accent": "amber"
+    },
+    {
+      "id": "b213",
+      "start": 1239.14,
+      "dur": 5.23,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_p02_chrysanthemum.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak138",
+      "start": 1239.14,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y el piretro si lo cultivas",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b214",
+      "start": 1243.92,
+      "dur": 2.95,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_g04_cat_garden.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak139",
+      "start": 1243.92,
+      "dur": 3.1,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Jamás",
+          "at": 0
+        },
+        {
+          "t": "cerca",
+          "at": 0.44
+        },
+        {
+          "t": "de",
+          "at": 0.72
+        },
+        {
+          "t": "gatos",
+          "at": 0.9
+        },
+        {
+          "t": "ni",
+          "at": 1.2
+        },
+        {
+          "t": "de",
+          "at": 1.4
+        }
+      ]
+    },
+    {
+      "id": "ak140",
+      "start": 1248.78,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Dejas un rincón sucio",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak141",
+      "start": 1253.52,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Un cantero que no tocas",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak142",
+      "start": 1258.54,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Cuéntame una cosa en los comentarios",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak143",
+      "start": 1265.6,
+      "dur": 3.45,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "¿La que vuelve sin falta?",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak144",
+      "start": 1274.42,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y quiero armar la lista de",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "b215",
+      "start": 1277.7,
+      "dur": 4.51,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_l03_wet_leaves.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_teaser_prox_s10_recap",
+      "start": 1281.76,
+      "dur": 10.86,
+      "kind": "teasecards",
+      "eyebrow": "EN EL PROXIMO",
+      "title": "Babosas y caracoles",
+      "cards": [
+        {
+          "src": "broll/vah3z2zzciut/vh_c09_board_ground.mp4",
+          "label": "Tabla vieja"
+        },
+        {
+          "src": "broll/vah3z2zzciut/vh_c10_bran.mp4",
+          "label": "Salvado"
+        },
+        {
+          "src": "broll/vah3z2zzciut/vh_p06_spice_market.mp4",
+          "label": "Algo de la cocina"
+        }
+      ]
+    },
+    {
+      "id": "b218",
+      "start": 1292.62,
+      "dur": 4.45,
+      "kind": "raw",
+      "src": "img/vh_ia_20_tabla_babosas.png",
+      "darken": 0,
+      "personal": true
+    },
+    {
+      "id": "b219",
+      "start": 1296.62,
+      "dur": 4.95,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_l05_slug.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak147",
+      "start": 1296.62,
+      "dur": 2.75,
+      "kind": "kineticline",
+      "overlay": true,
+      "accent": "amber",
+      "words": [
+        {
+          "t": "Ni",
+          "at": 0
+        },
+        {
+          "t": "un",
+          "at": 0.16
+        },
+        {
+          "t": "veneno.",
+          "at": 0.36
+        }
+      ]
+    },
+    {
+      "id": "b220",
+      "start": 1301.12,
+      "dur": 4.23,
+      "kind": "raw",
+      "src": "broll/vah3z2zzciut/vh_z05_walking_garden.mp4",
+      "darken": 0
+    },
+    {
+      "id": "ak148",
+      "start": 1304.9,
+      "dur": 2.6,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Antes de irme",
+      "accent": "amber",
+      "pos": "bottom"
+    },
+    {
+      "id": "ak149",
+      "start": 1312.1,
+      "dur": 3.05,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Eran gente que observaba",
+      "accent": "amber",
+      "pos": "lower"
+    },
+    {
+      "id": "ak150",
+      "start": 1318.1,
+      "dur": 3.85,
+      "kind": "phrasetag",
+      "overlay": true,
+      "text": "Y llegaron a lo mismo que",
+      "accent": "amber",
+      "pos": "bottom"
+    }
+  ]
+}
