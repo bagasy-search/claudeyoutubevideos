@@ -17,7 +17,7 @@
    "dur": 2.3,
    "key": "cold_open_polvo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_cuchara_gelatina.png",
+   "src": "img/p_v89y5o7w2nz6_cuchara_gelatina.jpg",
    "kicker": "Una cucharada",
    "hold": true
   },
@@ -27,7 +27,7 @@
    "dur": 3.94,
    "key": "cold_open_polvo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_mesada.png"
+   "src": "img/p_v89y5o7w2nz6_vaso_mesada.jpg"
   },
   {
    "id": "cold_open_polvo_3",
@@ -106,7 +106,7 @@
    "dur": 2.88,
    "key": "filtra_inodoro",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_agua_desagote.png"
+   "src": "img/p_v89y5o7w2nz6_agua_desagote.jpg"
   },
   {
    "id": "filtra_inodoro_1",
@@ -116,7 +116,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_agua_sale.png"
+     "image": "img/dg_v89y5o7w2nz6_agua_sale.jpg"
     }
    ]
   },
@@ -126,7 +126,7 @@
    "dur": 2.14,
    "key": "filtra_inodoro",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_inodoro.png",
+   "src": "img/p_v89y5o7w2nz6_inodoro.jpg",
    "kicker": "Directo al inodoro"
   },
   {
@@ -146,7 +146,7 @@
    "dur": 1.56,
    "key": "tres_litros_papel",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_piel_macro.png",
+   "src": "img/p_v89y5o7w2nz6_piel_macro.jpg",
    "kicker": "Papel de seda",
    "hold": true
   },
@@ -181,7 +181,7 @@
    "dur": 1.32,
    "key": "olga_presenta",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olga_consultorio.png",
+   "src": "img/p_v89y5o7w2nz6_olga_consultorio.jpg",
    "hold": true
   },
   {
@@ -190,7 +190,7 @@
    "dur": 4.12,
    "key": "botella_horarios",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_botella_marcas.png",
+   "src": "img/p_v89y5o7w2nz6_botella_marcas.jpg",
    "kicker": "Botella con horarios"
   },
   {
@@ -221,7 +221,7 @@
    "dur": 2.76,
    "key": "botella_horarios",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_calendario.png"
+   "src": "img/p_v89y5o7w2nz6_calendario.jpg"
   },
   {
    "id": "dos_anos_sin_fallar_0",
@@ -236,7 +236,7 @@
    "dur": 5.88,
    "key": "dos_anos_sin_fallar",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_dr_consultorio.png"
+   "src": "img/p_v89y5o7w2nz6_dr_consultorio.jpg"
   },
   {
    "id": "dos_anos_sin_fallar_2",
@@ -245,7 +245,7 @@
    "key": "dos_anos_sin_fallar",
    "kind": "quote",
    "text": "Doctor, yo tomo más agua que nadie en esta casa",
-   "image": "img/p_v89y5o7w2nz6_olga_muestra_manos.png"
+   "image": "img/p_v89y5o7w2nz6_olga_muestra_manos.jpg"
   },
   {
    "id": "manos_de_olga_0",
@@ -253,7 +253,7 @@
    "dur": 3.55,
    "key": "manos_de_olga",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olga_muestra_manos.png",
+   "src": "img/p_v89y5o7w2nz6_olga_muestra_manos.jpg",
    "hold": true
   },
   {
@@ -262,7 +262,7 @@
    "dur": 4.6,
    "key": "manos_de_olga",
    "kind": "annotated",
-   "image": "img/p_v89y5o7w2nz6_piel_macro.png",
+   "image": "img/p_v89y5o7w2nz6_piel_macro.jpg",
    "caption": "La piel de los nudillos se levanta sola",
    "annotations": [
     {
@@ -283,7 +283,7 @@
    "dur": 5.62,
    "key": "test_del_pliegue",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_test_pliegue.png",
+   "src": "img/p_v89y5o7w2nz6_test_pliegue.jpg",
    "kicker": "El test del pliegue",
    "hold": true
   },
@@ -293,7 +293,7 @@
    "dur": 4.6,
    "key": "test_del_pliegue",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_test_pliegue.png",
+   "image": "img/p_v89y5o7w2nz6_test_pliegue.jpg",
    "x": 0.5,
    "y": 0.45,
    "zoom": 1.6,
@@ -320,7 +320,7 @@
    "dur": 0.48,
    "key": "falta_de_estructura",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_papel_arrugado.png"
+   "src": "img/p_v89y5o7w2nz6_papel_arrugado.jpg"
   },
   {
    "id": "falta_de_estructura_2",
@@ -368,7 +368,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_malla_colageno.png"
+     "image": "img/dg_v89y5o7w2nz6_malla_colageno.jpg"
     }
    ]
   },
@@ -378,7 +378,7 @@
    "dur": 2.42,
    "key": "la_malla",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_malla_tensa.png",
+   "src": "img/p_v89y5o7w2nz6_malla_tensa.jpg",
    "kicker": "La malla que sostiene el agua",
    "hold": true
   },
@@ -402,7 +402,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_agua_malla.png"
+     "image": "img/dg_v89y5o7w2nz6_agua_malla.jpg"
     }
    ]
   },
@@ -412,7 +412,7 @@
    "dur": 1.94,
    "key": "malla_entera_o_gastada",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_malla_rota.png",
+   "src": "img/p_v89y5o7w2nz6_malla_rota.jpg",
    "kicker": "Malla gastada"
   },
   {
@@ -421,7 +421,7 @@
    "dur": 2.64,
    "key": "malla_entera_o_gastada",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_jarra_agua.png"
+   "src": "img/p_v89y5o7w2nz6_jarra_agua.jpg"
   },
   {
    "id": "malla_entera_o_gastada_3",
@@ -485,7 +485,7 @@
    "dur": 3.16,
    "key": "no_es_opinion",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_soga_trenzada.png"
+   "src": "img/p_v89y5o7w2nz6_soga_trenzada.jpg"
   },
   {
    "id": "no_es_opinion_3",
@@ -515,7 +515,7 @@
    "dur": 2.96,
    "key": "menopausia_30",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_soga_deshilachada.png",
+   "src": "img/p_v89y5o7w2nz6_soga_deshilachada.jpg",
    "kicker": "En apenas 5 años",
    "hold": true
   },
@@ -580,7 +580,7 @@
    "dur": 3.36,
    "key": "presentacion_federer",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_dr_cocina.png"
+   "src": "img/p_v89y5o7w2nz6_dr_cocina.jpg"
   },
   {
    "id": "circulacion_0",
@@ -595,7 +595,7 @@
    "dur": 2.05,
    "key": "circulacion",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_dr_consultorio.png"
+   "src": "img/p_v89y5o7w2nz6_dr_consultorio.jpg"
   },
   {
    "id": "circulacion_2",
@@ -618,7 +618,7 @@
    "dur": 4.4,
    "key": "camion_de_reparto",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_camion_reparto.png",
+   "src": "img/p_v89y5o7w2nz6_camion_reparto.jpg",
    "kicker": "El camión de reparto"
   },
   {
@@ -627,7 +627,7 @@
    "dur": 1.22,
    "key": "camion_de_reparto",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_camion_vacio.png",
+   "src": "img/p_v89y5o7w2nz6_camion_vacio.jpg",
    "kicker": "Camión vacío",
    "hold": true
   },
@@ -695,7 +695,7 @@
    "dur": 1.51,
    "key": "el_cargamento",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_gondola_suplementos.png",
+   "src": "img/p_v89y5o7w2nz6_gondola_suplementos.jpg",
    "kicker": "No vengo a venderte esto"
   },
   {
@@ -711,7 +711,7 @@
    "dur": 1.72,
    "key": "cuesta_un_boleto",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.png",
+   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.jpg",
    "kicker": "Menos que un boleto"
   },
   {
@@ -720,7 +720,7 @@
    "dur": 2.44,
    "key": "cuesta_un_boleto",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_verter_polvo.png"
+   "src": "img/p_v89y5o7w2nz6_verter_polvo.jpg"
   },
   {
    "id": "estudio_ajcn_0",
@@ -808,7 +808,7 @@
    "dur": 2.09,
    "key": "lo_que_viene",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_5min.png",
+   "src": "img/p_v89y5o7w2nz6_vaso_5min.jpg",
    "kicker": "La hora cambia el resultado"
   },
   {
@@ -850,7 +850,7 @@
    "dur": 2.54,
    "key": "looplock_error",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_crema_espejo.png"
+   "src": "img/p_v89y5o7w2nz6_crema_espejo.jpg"
   },
   {
    "id": "primero_el_mecanismo_0",
@@ -912,7 +912,7 @@
    "dur": 4.56,
    "key": "ocho_vasos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_manos_vaso.png",
+   "src": "img/p_v89y5o7w2nz6_manos_vaso.jpg",
    "kicker": "La frase más repetida de la salud"
   },
   {
@@ -951,7 +951,7 @@
    "dur": 3.66,
    "key": "agua_imprescindible",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_jarra_agua.png"
+   "src": "img/p_v89y5o7w2nz6_jarra_agua.jpg"
   },
   {
    "id": "solvente_no_ladrillo_0",
@@ -969,7 +969,7 @@
    "dur": 3.54,
    "key": "solvente_no_ladrillo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_ladrillos_cemento.png",
+   "src": "img/p_v89y5o7w2nz6_ladrillos_cemento.jpg",
    "kicker": "Ladrillos, cemento y agua"
   },
   {
@@ -980,7 +980,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.png"
+     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.jpg"
     }
    ]
   },
@@ -990,7 +990,7 @@
    "dur": 1.86,
    "key": "ejemplo_albanil",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_pared_cuchara.png",
+   "src": "img/p_v89y5o7w2nz6_pared_cuchara.jpg",
    "kicker": "El agua hace andar la mezcla",
    "hold": true
   },
@@ -1007,7 +1007,7 @@
    "dur": 4.34,
    "key": "charco_sin_ladrillos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_balde_arena.png",
+   "src": "img/p_v89y5o7w2nz6_balde_arena.jpg",
    "kicker": "Agua sin ladrillos"
   },
   {
@@ -1016,7 +1016,7 @@
    "dur": 1.26,
    "key": "charco_sin_ladrillos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_ladrillos_cemento.png"
+   "src": "img/p_v89y5o7w2nz6_ladrillos_cemento.jpg"
   },
   {
    "id": "charco_sin_ladrillos_2",
@@ -1080,7 +1080,7 @@
    "dur": 1.93,
    "key": "glicina_y_prolina",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_huesos_tabla.png",
+   "src": "img/p_v89y5o7w2nz6_huesos_tabla.jpg",
    "kicker": "Los dos que mandan"
   },
   {
@@ -1120,7 +1120,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_triple_helice.png"
+     "image": "img/dg_v89y5o7w2nz6_triple_helice.jpg"
     }
    ]
   },
@@ -1143,7 +1143,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_malla_colageno.png"
+     "image": "img/dg_v89y5o7w2nz6_malla_colageno.jpg"
     }
    ]
   },
@@ -1153,7 +1153,7 @@
    "dur": 3.94,
    "key": "soga_de_tres_hebras",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_soga_trenzada.png",
+   "src": "img/p_v89y5o7w2nz6_soga_trenzada.jpg",
    "kicker": "Tres hebras, una soga",
    "hold": true
   },
@@ -1219,7 +1219,7 @@
    "dur": 3.02,
    "key": "cartilago_hueso_pata",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_piel_pollo.png"
+   "src": "img/p_v89y5o7w2nz6_piel_pollo.jpg"
   },
   {
    "id": "cartilago_hueso_pata_1",
@@ -1241,7 +1241,7 @@
    "dur": 1.69,
    "key": "abuela_hervia",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_caldo_hueso.png",
+   "src": "img/p_v89y5o7w2nz6_caldo_hueso.jpg",
    "kicker": "Cuatro horas de hervor",
    "hold": true
   },
@@ -1262,7 +1262,7 @@
    "dur": 4,
    "key": "carne_magra",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_bife_crudo.png"
+   "src": "img/p_v89y5o7w2nz6_bife_crudo.jpg"
   },
   {
    "id": "carne_magra_1",
@@ -1336,7 +1336,7 @@
    "dur": 3.44,
    "key": "frase_del_vaso",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_mesada.png",
+   "src": "img/p_v89y5o7w2nz6_vaso_mesada.jpg",
    "kicker": "La proteína hace el vaso",
    "hold": true
   },
@@ -1356,7 +1356,7 @@
    "dur": 3.92,
    "key": "ladrillos_solos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_soga_deshilachada.png"
+   "src": "img/p_v89y5o7w2nz6_soga_deshilachada.jpg"
   },
   {
    "id": "vitamina_c_obligatoria_0",
@@ -1386,7 +1386,7 @@
    "dur": 1.58,
    "key": "vitamina_c_obligatoria",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_citricos_tabla.png"
+   "src": "img/p_v89y5o7w2nz6_citricos_tabla.jpg"
   },
   {
    "id": "prolil_hidroxilasa_0",
@@ -1396,7 +1396,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_llave_cerradura.png"
+     "image": "img/dg_v89y5o7w2nz6_llave_cerradura.jpg"
     }
    ]
   },
@@ -1424,7 +1424,7 @@
    "dur": 1.34,
    "key": "colageno_defectuoso",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_malla_rota.png"
+   "src": "img/p_v89y5o7w2nz6_malla_rota.jpg"
   },
   {
    "id": "colageno_defectuoso_2",
@@ -1434,7 +1434,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_demolicion.png"
+     "image": "img/dg_v89y5o7w2nz6_demolicion.jpg"
     }
    ]
   },
@@ -1444,7 +1444,7 @@
    "dur": 1.7,
    "key": "dona_olga",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olga_consultorio.png",
+   "src": "img/p_v89y5o7w2nz6_olga_consultorio.jpg",
    "hold": true
   },
   {
@@ -1460,7 +1460,7 @@
    "dur": 4.26,
    "key": "dieta_de_olga",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olga_desayuno.png"
+   "src": "img/p_v89y5o7w2nz6_olga_desayuno.jpg"
   },
   {
    "id": "dieta_de_olga_1",
@@ -1495,7 +1495,7 @@
    "key": "dieta_de_olga",
    "kind": "quote",
    "text": "Carne, cuando puedo, doctor. Está cara.",
-   "image": "img/p_v89y5o7w2nz6_olga_consultorio.png"
+   "image": "img/p_v89y5o7w2nz6_olga_consultorio.jpg"
   },
   {
    "id": "treinta_y_un_anios_0",
@@ -1514,7 +1514,7 @@
    "dur": 2.11,
    "key": "treinta_y_un_anios",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_comedor_escolar.png",
+   "src": "img/p_v89y5o7w2nz6_comedor_escolar.jpg",
    "hold": true
   },
   {
@@ -1531,7 +1531,7 @@
    "key": "confesion_gelatina",
    "kind": "quote",
    "text": "Yo hice el postre de gelatina para esos chicos durante treinta y un años.",
-   "image": "img/p_v89y5o7w2nz6_olga_consultorio.png"
+   "image": "img/p_v89y5o7w2nz6_olga_consultorio.jpg"
   },
   {
    "id": "confesion_gelatina_2",
@@ -1539,7 +1539,7 @@
    "dur": 5.7,
    "key": "confesion_gelatina",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_bandeja_gelatina.png",
+   "src": "img/p_v89y5o7w2nz6_bandeja_gelatina.jpg",
    "kicker": "Dos veces por semana",
    "hold": true
   },
@@ -1549,7 +1549,7 @@
    "dur": 8.48,
    "key": "confesion_gelatina",
    "kind": "callout",
-   "image": "img/p_v89y5o7w2nz6_cuchara_gelatina.png",
+   "image": "img/p_v89y5o7w2nz6_cuchara_gelatina.jpg",
    "figure": "Ni una cucharada",
    "caption": "La respuesta le pasó por las manos 31 años"
   },
@@ -1559,7 +1559,7 @@
    "dur": 4.02,
    "key": "el_polvo_es_colageno",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.png"
+   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.jpg"
   },
   {
    "id": "el_polvo_es_colageno_1",
@@ -1577,7 +1577,7 @@
    "dur": 1.48,
    "key": "el_polvo_es_colageno",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_gondola_suplementos.png"
+   "src": "img/p_v89y5o7w2nz6_gondola_suplementos.jpg"
   },
   {
    "id": "soga_desarmada_0",
@@ -1609,7 +1609,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_triple_helice.png"
+     "image": "img/dg_v89y5o7w2nz6_triple_helice.jpg"
     }
    ]
   },
@@ -1632,17 +1632,17 @@
     {
      "title": "Dos dedos de agua fría",
      "desc": "Un vaso común, nada más",
-     "image": "img/p_v89y5o7w2nz6_vaso_mesada.png"
+     "image": "img/p_v89y5o7w2nz6_vaso_mesada.jpg"
     },
     {
      "title": "Una cucharada de polvo",
      "desc": "Gelatina sin sabor",
-     "image": "img/p_v89y5o7w2nz6_verter_polvo.png"
+     "image": "img/p_v89y5o7w2nz6_verter_polvo.jpg"
     },
     {
      "title": "No revuelvas",
      "desc": "Esperá cinco minutos",
-     "image": "img/p_v89y5o7w2nz6_vaso_5min.png"
+     "image": "img/p_v89y5o7w2nz6_vaso_5min.jpg"
     }
    ]
   },
@@ -1652,7 +1652,7 @@
    "dur": 3.38,
    "key": "demo_del_vaso",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_verter_polvo.png"
+   "src": "img/p_v89y5o7w2nz6_verter_polvo.jpg"
   },
   {
    "id": "cinco_minutos_0",
@@ -1660,7 +1660,7 @@
    "dur": 3.78,
    "key": "cinco_minutos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_5min.png",
+   "src": "img/p_v89y5o7w2nz6_vaso_5min.jpg",
    "kicker": "Cinco minutos después",
    "hold": true
   },
@@ -1670,7 +1670,7 @@
    "dur": 4.6,
    "key": "cinco_minutos",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_vaso_5min.png",
+   "image": "img/p_v89y5o7w2nz6_vaso_5min.jpg",
    "x": 0.5,
    "y": 0.6,
    "zoom": 1.6,
@@ -1683,7 +1683,7 @@
    "dur": 2.74,
    "key": "cinco_minutos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_cuchara_gelatina.png"
+   "src": "img/p_v89y5o7w2nz6_cuchara_gelatina.jpg"
   },
   {
    "id": "agarra_el_agua_0",
@@ -1700,7 +1700,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_agua_malla.png"
+     "image": "img/dg_v89y5o7w2nz6_agua_malla.jpg"
     }
    ]
   },
@@ -1710,7 +1710,7 @@
    "dur": 4.68,
    "key": "agarra_el_agua",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_piel_macro.png",
+   "src": "img/p_v89y5o7w2nz6_piel_macro.jpg",
    "hold": true
   },
   {
@@ -1748,7 +1748,7 @@
    "dur": 4.78,
    "key": "honestidad_estomago",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_manos_vaso.png"
+   "src": "img/p_v89y5o7w2nz6_manos_vaso.jpg"
   },
   {
    "id": "honestidad_estomago_3",
@@ -1800,7 +1800,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.png"
+     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.jpg"
     }
    ]
   },
@@ -1810,7 +1810,7 @@
    "dur": 10.96,
    "key": "dos_razones_materia_prima",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_albanil_pared.png"
+   "src": "img/p_v89y5o7w2nz6_albanil_pared.jpg"
   },
   {
    "id": "fibroblasto_orden_trabajo_0",
@@ -1996,7 +1996,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_malla_colageno.png"
+     "image": "img/dg_v89y5o7w2nz6_malla_colageno.jpg"
     }
    ]
   },
@@ -2089,7 +2089,7 @@
    "dur": 3.04,
    "key": "primera_gelatina",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.png",
+   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.jpg",
    "kicker": "El sobrecito",
    "hold": true
   },
@@ -2099,7 +2099,7 @@
    "dur": 1.66,
    "key": "primera_gelatina",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_verter_polvo.png"
+   "src": "img/p_v89y5o7w2nz6_verter_polvo.jpg"
   },
   {
    "id": "no_hirviendo_0",
@@ -2122,7 +2122,7 @@
    "dur": 3.88,
    "key": "no_hirviendo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_pava_hirviendo.png",
+   "src": "img/p_v89y5o7w2nz6_pava_hirviendo.jpg",
    "kicker": "Así no"
   },
   {
@@ -2167,7 +2167,7 @@
    "dur": 2.78,
    "key": "agua_tibia",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_agua_tibia.png",
+   "src": "img/p_v89y5o7w2nz6_agua_tibia.jpg",
    "kicker": "Apenas tibia",
    "hold": true
   },
@@ -2177,7 +2177,7 @@
    "dur": 1.48,
    "key": "agua_tibia",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_dedo_temperatura.png",
+   "src": "img/p_v89y5o7w2nz6_dedo_temperatura.jpg",
    "kicker": "El dedo aguanta"
   },
   {
@@ -2186,7 +2186,7 @@
    "dur": 3.12,
    "key": "sin_grumos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_grumos_polvo.png",
+   "src": "img/p_v89y5o7w2nz6_grumos_polvo.jpg",
    "kicker": "Cero grumos"
   },
   {
@@ -2195,7 +2195,7 @@
    "dur": 1.42,
    "key": "sin_grumos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_5min.png"
+   "src": "img/p_v89y5o7w2nz6_vaso_5min.jpg"
   },
   {
    "id": "sin_grumos_2",
@@ -2210,7 +2210,7 @@
    "dur": 1.15,
    "key": "impresion_sabor",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_gelatina_plato.png",
+   "src": "img/p_v89y5o7w2nz6_gelatina_plato.jpg",
    "kicker": "Antes de que se ponga gomosa"
   },
   {
@@ -2226,7 +2226,7 @@
    "dur": 1.68,
    "key": "caldo_casero",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olla_caldo_casero.png",
+   "src": "img/p_v89y5o7w2nz6_olla_caldo_casero.jpg",
    "kicker": "Caldo de verdad"
   },
   {
@@ -2245,7 +2245,7 @@
    "dur": 1.64,
    "key": "caldo_casero",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_cubito_caldo.png"
+   "src": "img/p_v89y5o7w2nz6_cubito_caldo.jpg"
   },
   {
    "id": "cuanto_media_cucharadita_0",
@@ -2260,7 +2260,7 @@
    "dur": 4.5,
    "key": "cuanto_media_cucharadita",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_media_vs_colmada.png",
+   "src": "img/p_v89y5o7w2nz6_media_vs_colmada.jpg",
    "kicker": "Media cucharadita no alcanza"
   },
   {
@@ -2305,7 +2305,7 @@
    "items": [
     {
      "text": "Abrí la descripción y anotá las medidas",
-     "image": "img/p_v89y5o7w2nz6_guia_impresa.png"
+     "image": "img/p_v89y5o7w2nz6_guia_impresa.jpg"
     }
    ]
   },
@@ -2322,7 +2322,7 @@
    "dur": 2.07,
    "key": "anotalos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_cuaderno_recetas.png",
+   "src": "img/p_v89y5o7w2nz6_cuaderno_recetas.jpg",
    "kicker": "Anotalos bien"
   },
   {
@@ -2364,7 +2364,7 @@
    "dur": 1.63,
    "key": "segunda_vitc",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_pastillas_vitc.png"
+   "src": "img/p_v89y5o7w2nz6_pastillas_vitc.jpg"
   },
   {
    "id": "segunda_vitc_3",
@@ -2401,7 +2401,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_agua_sale.png"
+     "image": "img/dg_v89y5o7w2nz6_agua_sale.jpg"
     }
    ]
   },
@@ -2433,7 +2433,7 @@
    "dur": 8.78,
    "key": "soldador",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_soldador_chispas.png",
+   "src": "img/p_v89y5o7w2nz6_soldador_chispas.jpg",
    "kicker": "El soldador parado ahí",
    "hold": true
   },
@@ -2445,7 +2445,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.png"
+     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.jpg"
     }
    ]
   },
@@ -2472,7 +2472,7 @@
    "dur": 2.66,
    "key": "error_limon",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_limon_taza_caliente.png",
+   "src": "img/p_v89y5o7w2nz6_limon_taza_caliente.jpg",
    "kicker": "El error de todos",
    "hold": true
   },
@@ -2482,7 +2482,7 @@
    "dur": 2.5,
    "key": "error_limon",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_limon_partido_te.png"
+   "src": "img/p_v89y5o7w2nz6_limon_partido_te.jpg"
   },
   {
    "id": "error_limon_3",
@@ -2541,7 +2541,7 @@
    "dur": 2.45,
    "key": "taza_90_grados",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_limon_taza_caliente.png",
+   "image": "img/p_v89y5o7w2nz6_limon_taza_caliente.jpg",
    "x": 0.5,
    "y": 0.45,
    "zoom": 1.6,
@@ -2591,7 +2591,7 @@
    "dur": 3.44,
    "key": "citrico_al_final",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_limon_agua_fria.png",
+   "src": "img/p_v89y5o7w2nz6_limon_agua_fria.jpg",
    "kicker": "Recién servido"
   },
   {
@@ -2606,17 +2606,17 @@
     {
      "title": "Servís el vaso",
      "desc": "agua apenas tibia",
-     "image": "img/p_v89y5o7w2nz6_vaso_mesada.png"
+     "image": "img/p_v89y5o7w2nz6_vaso_mesada.jpg"
     },
     {
      "title": "Exprimís al final",
      "desc": "con el vaso ya servido",
-     "image": "img/p_v89y5o7w2nz6_limon_agua_fria.png"
+     "image": "img/p_v89y5o7w2nz6_limon_agua_fria.jpg"
     },
     {
      "title": "Tomás enseguida",
      "desc": "enseguida es enseguida",
-     "image": "img/p_v89y5o7w2nz6_vaso_5min.png"
+     "image": "img/p_v89y5o7w2nz6_vaso_5min.jpg"
     }
    ]
   },
@@ -2663,7 +2663,7 @@
    "dur": 1.26,
    "key": "tercera_sal",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_pizca_sal.png",
+   "src": "img/p_v89y5o7w2nz6_pizca_sal.jpg",
    "kicker": "Una pizca chiquita"
   },
   {
@@ -2683,7 +2683,7 @@
    "dur": 3.78,
    "key": "tercera_sal",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_salero_antiguo.png"
+   "src": "img/p_v89y5o7w2nz6_salero_antiguo.jpg"
   },
   {
    "id": "minerales_arrastran_0",
@@ -2722,7 +2722,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_minerales_arrastran.png"
+     "image": "img/dg_v89y5o7w2nz6_minerales_arrastran.jpg"
     }
    ]
   },
@@ -2732,7 +2732,7 @@
    "dur": 3.23,
    "key": "minerales_arrastran",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_jarra_agua.png",
+   "src": "img/p_v89y5o7w2nz6_jarra_agua.jpg",
    "kicker": "Agua sola, sin nada"
   },
   {
@@ -2759,7 +2759,7 @@
    "dur": 3.92,
    "key": "bano_20_min",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_bano_de_noche.png"
+   "src": "img/p_v89y5o7w2nz6_bano_de_noche.jpg"
   },
   {
    "id": "bano_20_min_2",
@@ -2821,7 +2821,7 @@
    "dur": 4.36,
    "key": "advertencia_presion",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_tensiometro.png",
+   "src": "img/p_v89y5o7w2nz6_tensiometro.jpg",
    "kicker": "Hablalo con tu médico",
    "hold": true
   },
@@ -2842,7 +2842,7 @@
    "dur": 5.46,
    "key": "advertencia_presion",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_fiambre_abierto.png",
+   "src": "img/p_v89y5o7w2nz6_fiambre_abierto.jpg",
    "kicker": "El problema real"
   },
   {
@@ -2872,7 +2872,7 @@
    "dur": 3.54,
    "key": "potasio_comida",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_papas_zapallo.png"
+   "src": "img/p_v89y5o7w2nz6_papas_zapallo.jpg"
   },
   {
    "id": "rinon_cansado_0",
@@ -2923,7 +2923,7 @@
    "dur": 1.24,
    "key": "cuarta_chia",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_chia_seca.png",
+   "src": "img/p_v89y5o7w2nz6_chia_seca.jpg",
    "kicker": "La cuarta"
   },
   {
@@ -2954,7 +2954,7 @@
    "dur": 2.9,
    "key": "chia_remojada",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_chia_seca.png",
+   "src": "img/p_v89y5o7w2nz6_chia_seca.jpg",
    "kicker": "Seca no sirve"
   },
   {
@@ -2963,7 +2963,7 @@
    "dur": 10.32,
    "key": "el_gel",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_chia_gel.png",
+   "src": "img/p_v89y5o7w2nz6_chia_gel.jpg",
    "kicker": "Se forma el gel",
    "hold": true
   },
@@ -2975,7 +2975,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_gel_chia.png"
+     "image": "img/dg_v89y5o7w2nz6_gel_chia.jpg"
     }
    ]
   },
@@ -3061,7 +3061,7 @@
    "dur": 2.36,
    "key": "balde_a_la_planta",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_maceta_seca.png",
+   "src": "img/p_v89y5o7w2nz6_maceta_seca.jpg",
    "kicker": "El balde se escurre",
    "hold": true
   },
@@ -3071,7 +3071,7 @@
    "dur": 3.9,
    "key": "regarla_despacio",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_maceta_regada.png",
+   "src": "img/p_v89y5o7w2nz6_maceta_regada.jpg",
    "kicker": "Despacito: entra"
   },
   {
@@ -3171,7 +3171,7 @@
    "dur": 3.68,
    "key": "te_verde_quinta",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_te_verde_frio.png",
+   "src": "img/p_v89y5o7w2nz6_te_verde_frio.jpg",
    "kicker": "Frío o tibio",
    "hold": true
   },
@@ -3198,7 +3198,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_demolicion.png"
+     "image": "img/dg_v89y5o7w2nz6_demolicion.jpg"
     }
    ]
   },
@@ -3208,7 +3208,7 @@
    "dur": 1.96,
    "key": "equipo_demolicion",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_topadora_pared.png",
+   "src": "img/p_v89y5o7w2nz6_topadora_pared.jpg",
    "kicker": "Cortar lo viejo"
   },
   {
@@ -3279,7 +3279,7 @@
    "dur": 1.2,
    "key": "horas_extra",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_albanil_pared.png",
+   "src": "img/p_v89y5o7w2nz6_albanil_pared.jpg",
    "kicker": "El albañil no da abasto"
   },
   {
@@ -3308,7 +3308,7 @@
    "dur": 2.12,
    "key": "polifenoles",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_hojas_te_verde.png",
+   "src": "img/p_v89y5o7w2nz6_hojas_te_verde.jpg",
    "kicker": "Polifenoles",
    "hold": true
   },
@@ -3360,7 +3360,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.png"
+     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.jpg"
     }
    ]
   },
@@ -3370,7 +3370,7 @@
    "dur": 3.68,
    "key": "albanil_y_topadora",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_topadora_pared.png",
+   "image": "img/p_v89y5o7w2nz6_topadora_pared.jpg",
    "x": 0.55,
    "y": 0.5,
    "zoom": 1.6,
@@ -3440,7 +3440,7 @@
    "dur": 1.1,
    "key": "topadora_numero_uno",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_sol_patio.png",
+   "src": "img/p_v89y5o7w2nz6_sol_patio.jpg",
    "kicker": "Mediodía",
    "hold": true
   },
@@ -3482,7 +3482,7 @@
    "dur": 1.6,
    "key": "topadora_numero_uno",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_sombrero_sombra.png",
+   "src": "img/p_v89y5o7w2nz6_sombrero_sombra.jpg",
    "kicker": "Sombra: no la vende nadie"
   },
   {
@@ -3509,7 +3509,7 @@
    "dur": 2.72,
    "key": "don_elpidio",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_elpidio_taller.png",
+   "src": "img/p_v89y5o7w2nz6_elpidio_taller.jpg",
    "kicker": "Nunca leyó un estudio"
   },
   {
@@ -3529,7 +3529,7 @@
    "dur": 6.5,
    "key": "las_manos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_dr_consultorio.png",
+   "src": "img/p_v89y5o7w2nz6_dr_consultorio.jpg",
    "kicker": "Venía por la rodilla"
   },
   {
@@ -3538,7 +3538,7 @@
    "dur": 2.74,
    "key": "las_manos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_elpidio_manos.png",
+   "src": "img/p_v89y5o7w2nz6_elpidio_manos.jpg",
    "kicker": "Los antebrazos",
    "hold": true
   },
@@ -3548,7 +3548,7 @@
    "dur": 4.06,
    "key": "las_manos",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_elpidio_manos.png",
+   "image": "img/p_v89y5o7w2nz6_elpidio_manos.jpg",
    "x": 0.5,
    "y": 0.5,
    "zoom": 1.7,
@@ -3583,7 +3583,7 @@
    "dur": 0.39,
    "key": "sin_crema",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_piel_macro.png",
+   "src": "img/p_v89y5o7w2nz6_piel_macro.jpg",
    "kicker": "Firme, sin acartonar"
   },
   {
@@ -3616,7 +3616,7 @@
    "dur": 1.36,
    "key": "los_raspones",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_raspon_dia1.png",
+   "src": "img/p_v89y5o7w2nz6_raspon_dia1.jpg",
    "kicker": "Día 1"
   },
   {
@@ -3625,7 +3625,7 @@
    "dur": 2.18,
    "key": "los_raspones",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_raspon_dia5.png",
+   "src": "img/p_v89y5o7w2nz6_raspon_dia5.jpg",
    "kicker": "Día 4: cerrado"
   },
   {
@@ -3653,7 +3653,7 @@
    "key": "puchero_del_domingo",
    "kind": "quote",
    "text": "Y bueno doctor, lo de siempre",
-   "image": "img/p_v89y5o7w2nz6_elpidio_caldo.png"
+   "image": "img/p_v89y5o7w2nz6_elpidio_caldo.jpg"
   },
   {
    "id": "puchero_del_domingo_2",
@@ -3661,7 +3661,7 @@
    "dur": 1.44,
    "key": "puchero_del_domingo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_puchero_domingo.png",
+   "src": "img/p_v89y5o7w2nz6_puchero_domingo.jpg",
    "kicker": "Hueso y garrón",
    "hold": true
   },
@@ -3671,7 +3671,7 @@
    "dur": 1.92,
    "key": "puchero_del_domingo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_mesa_domingo.png"
+   "src": "img/p_v89y5o7w2nz6_mesa_domingo.jpg"
   },
   {
    "id": "caldo_frio_0",
@@ -3679,7 +3679,7 @@
    "dur": 5.36,
    "key": "caldo_frio",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_caldo_cuajado.png",
+   "src": "img/p_v89y5o7w2nz6_caldo_cuajado.jpg",
    "kicker": "Al otro día, tiembla",
    "hold": true
   },
@@ -3689,7 +3689,7 @@
    "dur": 1.02,
    "key": "caldo_frio",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_elpidio_caldo.png",
+   "src": "img/p_v89y5o7w2nz6_elpidio_caldo.jpg",
    "kicker": "Frío, con una cucharada"
   },
   {
@@ -3716,7 +3716,7 @@
    "dur": 4.6,
    "key": "cuarenta_dolares",
    "kind": "callout",
-   "image": "img/p_v89y5o7w2nz6_frasco_premium.png",
+   "image": "img/p_v89y5o7w2nz6_frasco_premium.jpg",
    "figure": "USD 40",
    "caption": "Lo mismo, pero en frasco de farmacia"
   },
@@ -3726,7 +3726,7 @@
    "dur": 1.89,
    "key": "cuarenta_dolares",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_caldo_hueso.png",
+   "src": "img/p_v89y5o7w2nz6_caldo_hueso.jpg",
    "kicker": "Eso es colágeno"
   },
   {
@@ -3800,11 +3800,11 @@
    "items": [
     {
      "text": "Cronometrá un raspón tuyo",
-     "image": "img/p_v89y5o7w2nz6_raspon_dia1.png"
+     "image": "img/p_v89y5o7w2nz6_raspon_dia1.jpg"
     },
     {
      "text": "Mirá el pliegue del dorso",
-     "image": "img/p_v89y5o7w2nz6_test_pliegue.png"
+     "image": "img/p_v89y5o7w2nz6_test_pliegue.jpg"
     }
    ]
   },
@@ -3832,7 +3832,7 @@
    "dur": 6.21,
    "key": "medilo_en_casa",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_test_pliegue.png",
+   "src": "img/p_v89y5o7w2nz6_test_pliegue.jpg",
    "kicker": "En casa, sin aparatos"
   },
   {
@@ -3865,7 +3865,7 @@
    "dur": 1.88,
    "key": "el_frasco_no_miente",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_gondola_suplementos.png",
+   "src": "img/p_v89y5o7w2nz6_gondola_suplementos.jpg",
    "kicker": "Andá y miralo"
   },
   {
@@ -3874,7 +3874,7 @@
    "dur": 6.5,
    "key": "dalos_vuelta",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_colageno_bebible.png",
+   "src": "img/p_v89y5o7w2nz6_colageno_bebible.jpg",
    "kicker": "Botellitas con sabor",
    "hold": true
   },
@@ -3884,7 +3884,7 @@
    "dur": 1.35,
    "key": "dalos_vuelta",
    "kind": "callout",
-   "image": "img/p_v89y5o7w2nz6_leer_etiqueta.png",
+   "image": "img/p_v89y5o7w2nz6_leer_etiqueta.jpg",
    "figure": "Etiqueta de atrás",
    "caption": "Dalos vuelta: ahí está todo"
   },
@@ -3998,7 +3998,7 @@
    "dur": 11.58,
    "key": "sobre_de_gelatina",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_billete_arrugado.png",
+   "src": "img/p_v89y5o7w2nz6_billete_arrugado.jpg",
    "kicker": "Monedas"
   },
   {
@@ -4099,7 +4099,7 @@
    "dur": 2.82,
    "key": "no_saca_arrugas",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_surco_boca.png",
+   "src": "img/p_v89y5o7w2nz6_surco_boca.jpg",
    "kicker": "El surco del costado",
    "hold": true
   },
@@ -4119,7 +4119,7 @@
    "dur": 3.52,
    "key": "no_saca_arrugas",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_papel_arrugado.png"
+   "src": "img/p_v89y5o7w2nz6_papel_arrugado.jpg"
   },
   {
    "id": "las_tres_frases_0",
@@ -4172,7 +4172,7 @@
    "dur": 3.67,
    "key": "se_marca_menos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_marca_media.png",
+   "src": "img/p_v89y5o7w2nz6_marca_media.jpg",
    "kicker": "La marca que queda",
    "hold": true
   },
@@ -4197,7 +4197,7 @@
    "dur": 1.38,
    "key": "se_marca_menos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_pierna_mapa.png"
+   "src": "img/p_v89y5o7w2nz6_pierna_mapa.jpg"
   },
   {
    "id": "se_marca_menos_3",
@@ -4234,7 +4234,7 @@
    "dur": 5.4,
    "key": "cicatriza_el_raspon",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_raspon_dia1.png",
+   "src": "img/p_v89y5o7w2nz6_raspon_dia1.jpg",
    "kicker": "Día 1"
   },
   {
@@ -4243,7 +4243,7 @@
    "dur": 1.23,
    "key": "cicatriza_el_raspon",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_raspon_dia5.png",
+   "src": "img/p_v89y5o7w2nz6_raspon_dia5.jpg",
    "kicker": "Día 5",
    "hold": true
   },
@@ -4288,7 +4288,7 @@
    "dur": 6.64,
    "key": "los_tiempos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_almanaque.png",
+   "src": "img/p_v89y5o7w2nz6_almanaque.jpg",
    "hold": true
   },
   {
@@ -4299,7 +4299,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_malla_colageno.png"
+     "image": "img/dg_v89y5o7w2nz6_malla_colageno.jpg"
     }
    ]
   },
@@ -4320,7 +4320,7 @@
    "dur": 1.67,
    "key": "ocho_semanas",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_pastillero.png",
+   "src": "img/p_v89y5o7w2nz6_vaso_pastillero.jpg",
    "hold": true
   },
   {
@@ -4336,7 +4336,7 @@
    "dur": 4.84,
    "key": "cinco_dias_espejo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_test_pliegue.png"
+   "src": "img/p_v89y5o7w2nz6_test_pliegue.jpg"
   },
   {
    "id": "cinco_dias_espejo_1",
@@ -4369,7 +4369,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.png"
+     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.jpg"
     }
    ]
   },
@@ -4419,7 +4419,7 @@
    "dur": 4.46,
    "key": "seguridad_rinon",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_analisis_orden.png",
+   "src": "img/p_v89y5o7w2nz6_analisis_orden.jpg",
    "kicker": "Creatinina alta"
   },
   {
@@ -4469,7 +4469,7 @@
    "dur": 2.34,
    "key": "proteina_rinon_cansado",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_dr_consultorio.png",
+   "src": "img/p_v89y5o7w2nz6_dr_consultorio.jpg",
    "hold": true
   },
   {
@@ -4503,7 +4503,7 @@
    "dur": 0.57,
    "key": "anticoagulantes_te",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_blister.png",
+   "src": "img/p_v89y5o7w2nz6_vaso_blister.jpg",
    "kicker": "Interacciones reales"
   },
   {
@@ -4530,7 +4530,7 @@
    "dur": 3.58,
    "key": "diabeticos_sin_azucar",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_azucarero.png",
+   "src": "img/p_v89y5o7w2nz6_azucarero.jpg",
    "hold": true
   },
   {
@@ -4568,7 +4568,7 @@
    "dur": 1.96,
    "key": "no_te_pases_agua",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_jarra_agua.png"
+   "src": "img/p_v89y5o7w2nz6_jarra_agua.jpg"
   },
   {
    "id": "rinon_despues_60_0",
@@ -4589,7 +4589,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_agua_sale.png"
+     "image": "img/dg_v89y5o7w2nz6_agua_sale.jpg"
     }
    ]
   },
@@ -4628,7 +4628,7 @@
    "dur": 1.94,
    "key": "mujeres_diureticos",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_bano_de_noche.png"
+   "src": "img/p_v89y5o7w2nz6_bano_de_noche.jpg"
   },
   {
    "id": "mujeres_diureticos_2",
@@ -4636,7 +4636,7 @@
    "dur": 4.6,
    "key": "mujeres_diureticos",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_jarra_agua.png",
+   "image": "img/p_v89y5o7w2nz6_jarra_agua.jpg",
    "x": 0.5,
    "y": 0.45,
    "zoom": 1.6,
@@ -4697,7 +4697,7 @@
    "dur": 5.87,
    "key": "internada",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olga_cama.png",
+   "src": "img/p_v89y5o7w2nz6_olga_cama.jpg",
    "kicker": "Internada por tomar de más",
    "hold": true
   },
@@ -4813,7 +4813,7 @@
    "dur": 1,
    "key": "llegamos_al_error",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_federer_serio.png",
+   "src": "img/p_v89y5o7w2nz6_federer_serio.jpg",
    "hold": true
   },
   {
@@ -4893,7 +4893,7 @@
    "dur": 2.3,
    "key": "es_con_azucar",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_te_azucar.png",
+   "src": "img/p_v89y5o7w2nz6_te_azucar.jpg",
    "kicker": "Un poquito no hace mal",
    "hold": true
   },
@@ -4937,7 +4937,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_glicacion.png"
+     "image": "img/dg_v89y5o7w2nz6_glicacion.jpg"
     }
    ]
   },
@@ -4954,7 +4954,7 @@
    "dur": 9.2,
    "key": "cocina_miel",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_carne_miel.png",
+   "src": "img/p_v89y5o7w2nz6_carne_miel.jpg",
    "kicker": "Miel encima de la carne",
    "hold": true
   },
@@ -4964,7 +4964,7 @@
    "dur": 3.1,
    "key": "cocina_miel",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_caramelo_sarten.png"
+   "src": "img/p_v89y5o7w2nz6_caramelo_sarten.jpg"
   },
   {
    "id": "cocina_miel_2",
@@ -5016,7 +5016,7 @@
    "dur": 1.8,
    "key": "reaccion_maillard",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_caramelo_sarten.png",
+   "image": "img/p_v89y5o7w2nz6_caramelo_sarten.jpg",
    "x": 0.5,
    "y": 0.5,
    "zoom": 1.6,
@@ -5047,7 +5047,7 @@
    "dur": 1.3,
    "key": "adentro_tuyo_36",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_jugo_caja.png",
+   "src": "img/p_v89y5o7w2nz6_jugo_caja.jpg",
    "kicker": "Azúcar dando vueltas"
   },
   {
@@ -5065,7 +5065,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_triple_helice.png"
+     "image": "img/dg_v89y5o7w2nz6_triple_helice.jpg"
     }
    ]
   },
@@ -5129,7 +5129,7 @@
    "dur": 4.84,
    "key": "lo_suelda",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_malla_metalica.png",
+   "src": "img/p_v89y5o7w2nz6_malla_metalica.jpg",
    "kicker": "Fibra soldada con fibra"
   },
   {
@@ -5138,7 +5138,7 @@
    "dur": 1.44,
    "key": "lo_suelda",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_elastico_roto.png"
+   "src": "img/p_v89y5o7w2nz6_elastico_roto.jpg"
   },
   {
    "id": "malla_rigida_se_quiebra_0",
@@ -5169,7 +5169,7 @@
    "dur": 4.6,
    "key": "malla_rigida_se_quiebra",
    "kind": "freezezoom",
-   "image": "img/p_v89y5o7w2nz6_malla_metalica.png",
+   "image": "img/p_v89y5o7w2nz6_malla_metalica.jpg",
    "x": 0.5,
    "y": 0.45,
    "zoom": 1.7,
@@ -5182,7 +5182,7 @@
    "dur": 5.39,
    "key": "malla_rigida_se_quiebra",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_piel_macro.png",
+   "src": "img/p_v89y5o7w2nz6_piel_macro.jpg",
    "kicker": "Arruga fina y color apagado",
    "hold": true
   },
@@ -5216,7 +5216,7 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_demolicion.png"
+     "image": "img/dg_v89y5o7w2nz6_demolicion.jpg"
     }
    ]
   },
@@ -5275,7 +5275,7 @@
    "dur": 2.92,
    "key": "colageno_con_azucar",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_azucarero.png",
+   "src": "img/p_v89y5o7w2nz6_azucarero.jpg",
    "kicker": "El anulador",
    "hold": true
   },
@@ -5285,7 +5285,7 @@
    "dur": 1.04,
    "key": "colageno_con_azucar",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_jugo_caja.png"
+   "src": "img/p_v89y5o7w2nz6_jugo_caja.jpg"
   },
   {
    "id": "colageno_con_azucar_3",
@@ -5293,7 +5293,7 @@
    "dur": 4.14,
    "key": "colageno_con_azucar",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_colageno_bebible.png",
+   "src": "img/p_v89y5o7w2nz6_colageno_bebible.jpg",
    "kicker": "Azúcar, segundo ingrediente"
   },
   {
@@ -5304,10 +5304,10 @@
    "kind": "diagram",
    "slides": [
     {
-     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.png"
+     "image": "img/dg_v89y5o7w2nz6_ladrillos_albanil.jpg"
     },
     {
-     "image": "img/dg_v89y5o7w2nz6_glicacion.png"
+     "image": "img/dg_v89y5o7w2nz6_glicacion.jpg"
     }
    ]
   },
@@ -5317,7 +5317,7 @@
    "dur": 2.68,
    "key": "ladrillos_y_nafta",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_pared_fuego.png",
+   "src": "img/p_v89y5o7w2nz6_pared_fuego.jpg",
    "kicker": "Nafta al fuego",
    "hold": true
   },
@@ -5370,7 +5370,7 @@
    "dur": 5.02,
    "key": "va_sin_nada",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_caramelo_sarten.png",
+   "src": "img/p_v89y5o7w2nz6_caramelo_sarten.jpg",
    "kicker": "El que anula todo"
   },
   {
@@ -5449,7 +5449,7 @@
    "dur": 3.98,
    "key": "por_que_nadie_lo_vende",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_blister.png"
+   "src": "img/p_v89y5o7w2nz6_vaso_blister.jpg"
   },
   {
    "id": "por_que_nadie_lo_vende_1",
@@ -5519,27 +5519,27 @@
    "title": "Los 5 pasos, desde mañana",
    "items": [
     {
-     "image": "img/p_v89y5o7w2nz6_agua_tibia.png",
+     "image": "img/p_v89y5o7w2nz6_agua_tibia.jpg",
      "label": "1 · Agua tibia con gelatina sin sabor",
      "at": 0
     },
     {
-     "image": "img/p_v89y5o7w2nz6_limon_agua_fria.png",
+     "image": "img/p_v89y5o7w2nz6_limon_agua_fria.jpg",
      "label": "2 · Cítrico exprimido, en frío",
      "at": 90
     },
     {
-     "image": "img/p_v89y5o7w2nz6_azucarero.png",
+     "image": "img/p_v89y5o7w2nz6_azucarero.jpg",
      "label": "3 · Cero azúcar en esa toma",
      "at": 180
     },
     {
-     "image": "img/p_v89y5o7w2nz6_chia_gel.png",
+     "image": "img/p_v89y5o7w2nz6_chia_gel.jpg",
      "label": "4 · Chía remojada o caldo de hueso",
      "at": 270
     },
     {
-     "image": "img/p_v89y5o7w2nz6_sombrero_sombra.png",
+     "image": "img/p_v89y5o7w2nz6_sombrero_sombra.jpg",
      "label": "5 · Sombra y té verde de la tarde",
      "at": 360
     }
@@ -5614,7 +5614,7 @@
    "dur": 2.57,
    "key": "ocho_semanas_almanaque",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_almanaque.png",
+   "src": "img/p_v89y5o7w2nz6_almanaque.jpg",
    "kicker": "Ocho cruces",
    "hold": true
   },
@@ -5631,7 +5631,7 @@
    "dur": 2,
    "key": "vuelve_dona_olga",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olga_sonrie.png",
+   "src": "img/p_v89y5o7w2nz6_olga_sonrie.jpg",
    "kicker": "Dos meses después"
   },
   {
@@ -5647,7 +5647,7 @@
    "dur": 2.6,
    "key": "vuelve_dona_olga",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_test_pliegue2.png"
+   "src": "img/p_v89y5o7w2nz6_test_pliegue2.jpg"
   },
   {
    "id": "el_pliegue_bajo_solo_0",
@@ -5655,7 +5655,7 @@
    "dur": 6.34,
    "key": "el_pliegue_bajo_solo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_olga_pliegue.png",
+   "src": "img/p_v89y5o7w2nz6_olga_pliegue.jpg",
    "hold": true
   },
   {
@@ -5680,7 +5680,7 @@
    "key": "el_pliegue_bajo_solo",
    "kind": "quote",
    "text": "¿Usted sabe lo que es no tener que darse crema tres veces por día?",
-   "image": "img/p_v89y5o7w2nz6_crema_manos.png"
+   "image": "img/p_v89y5o7w2nz6_crema_manos.jpg"
   },
   {
    "id": "la_frase_de_olga_0",
@@ -5759,7 +5759,7 @@
    "dur": 2.68,
    "key": "te_pido_un_favor",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_test_pliegue.png"
+   "src": "img/p_v89y5o7w2nz6_test_pliegue.jpg"
   },
   {
    "id": "conta_los_segundos_0",
@@ -5824,7 +5824,7 @@
    "dur": 13.56,
    "key": "la_guia",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_guia_impresa.png",
+   "src": "img/p_v89y5o7w2nz6_guia_impresa.jpg",
    "kicker": "Letra grande, cantidades calculadas",
    "hold": true
   },
@@ -5883,7 +5883,7 @@
    "dur": 2.3,
    "key": "descripcion_arriba_de_todo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_elpidio_caldo.png",
+   "src": "img/p_v89y5o7w2nz6_elpidio_caldo.jpg",
    "kicker": "El caldo, paso a paso"
   },
   {
@@ -5927,7 +5927,7 @@
    "dur": 4.58,
    "key": "teaser_proximo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_despertador.png"
+   "src": "img/p_v89y5o7w2nz6_despertador.jpg"
   },
   {
    "id": "teaser_proximo_2",
@@ -5935,7 +5935,7 @@
    "dur": 2.1,
    "key": "teaser_proximo",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_manos_vaso.png",
+   "src": "img/p_v89y5o7w2nz6_manos_vaso.jpg",
    "kicker": "El primero del día"
   },
   {
@@ -5944,7 +5944,7 @@
    "dur": 4.88,
    "key": "pastilla_de_la_presion",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_vaso_blister.png",
+   "src": "img/p_v89y5o7w2nz6_vaso_blister.jpg",
    "hold": true
   },
   {
@@ -6035,7 +6035,7 @@
    "dur": 2.04,
    "key": "cierre_identidad",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_caldo_cuajado.png",
+   "src": "img/p_v89y5o7w2nz6_caldo_cuajado.jpg",
    "kicker": "El hueso de tu abuela"
   },
   {
@@ -6044,7 +6044,7 @@
    "dur": 2.72,
    "key": "despedida",
    "kind": "raw",
-   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.png",
+   "src": "img/p_v89y5o7w2nz6_sobre_gelatina.jpg",
    "kicker": "Cuesta monedas"
   },
   {
@@ -6080,7 +6080,7 @@
    "key": "despedida",
    "kind": "nametag",
    "role": "Cuidate mucho — nos vemos la semana que viene",
-   "image": "img/p_v89y5o7w2nz6_federer_despedida.png"
+   "image": "img/p_v89y5o7w2nz6_federer_despedida.jpg"
   }
  ]
 }

@@ -6,7 +6,7 @@ import fs from "fs";
 const SLUG = "v89y5o7w2nz6";
 
 const plan = JSON.parse(fs.readFileSync(`_broll_plan_${SLUG}.json`, "utf8"));
-const beats = JSON.parse(fs.readFileSync(`beatsheet/${SLUG}.json`, "utf8")).beats;
+let beats = JSON.parse(fs.readFileSync(`beatsheet/${SLUG}.json`, "utf8")).beats;
 
 // ── 1) b-roll real ───────────────────────────────────────────────────────────
 const have = plan.filter((b) => {
@@ -22,6 +22,24 @@ fs.writeFileSync(`src/_fed6/VideoEdit/federer_${SLUG}_broll.ts`,
   `// AUTO-GENERADO por scripts/finalize_${SLUG}.mjs\n` +
   `export const FEDZ_BROLL: { name: string; src: string; start: number; dur: number; query: string }[] = ` +
   JSON.stringify(have.map((b) => ({ name: b.name, src: b.src, start: b.start, dur: b.dur, query: b.query }))) + ";\n");
+
+// ── 1.b) REAPUNTAR .png → .jpg ───────────────────────────────────────────────
+// El tarball del farm lleva los JPG (los PNG pesan 4x). shrink_ ya reescribió las rutas una vez,
+// pero cada corrida de gen_ las vuelve a emitir en .png y el chunk muere con 404 en el frame que
+// las usa. Así que el reapuntado vive ACÁ, que es lo que se corre siempre después de gen_.
+{
+  let cambios = 0;
+  for (const f of [`src/_fed6/VideoEdit/federer_${SLUG}_beats.ts`, `beatsheet/${SLUG}.json`]) {
+    if (!fs.existsSync(f)) continue;
+    const s = fs.readFileSync(f, "utf8");
+    const t = s.replace(new RegExp(`(img/[a-z0-9_]*${SLUG}[a-z0-9_]*)\\.png`, "gi"), (m, p1) =>
+      fs.existsSync(`public/${p1}.jpg`) ? `${p1}.jpg` : m);
+    if (t !== s) { fs.writeFileSync(f, t); cambios++; }
+  }
+  if (cambios) console.log(`rutas .png → .jpg reapuntadas en ${cambios} archivo(s)`);
+}
+const beatsJ = JSON.parse(fs.readFileSync(`beatsheet/${SLUG}.json`, "utf8")).beats;
+beats.length = 0; beats.push(...beatsJ);
 
 // ── 2) shim para density_gate ────────────────────────────────────────────────
 const COMPMAP = {
