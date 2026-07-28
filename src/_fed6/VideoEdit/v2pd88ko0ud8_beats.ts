@@ -1,4 +1,4 @@
-// GENERADO por gen_v2pd88ko0ud8.mjs + scripts/aire_v2pd88ko0ud8.mjs — no editar a mano
+// GENERADO
 export const FED_BEATS: any[] = [
  {
   "id": "r1",
@@ -748,7 +748,7 @@ export const FED_BEATS: any[] = [
   "dur": 5.6,
   "cut": false,
   "eyebrow": "Pico de renovacion",
-  "figure": "00:00 - 04:00",
+  "figure": "00 a 04 h",
   "caption": "Tu cara se renueva mas rapido que a las 3 de la tarde"
  },
  {

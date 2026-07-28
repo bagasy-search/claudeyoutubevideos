@@ -1,4 +1,4 @@
-// GENERADO por gen_v2pd88ko0ud8.mjs + scripts/aire_v2pd88ko0ud8.mjs — no editar a mano
+// GENERADO
 export const FED_BROLL: any[] = [
  {
   "name": "d002",
@@ -17,18 +17,6 @@ export const FED_BROLL: any[] = [
   "start": 86,
   "dur": 7.4,
   "src": "broll/v2pd88ko0ud8/d005.mp4"
- },
- {
-  "name": "d006",
-  "start": 117.9,
-  "dur": 7.4,
-  "src": "broll/v2pd88ko0ud8/d006.mp4"
- },
- {
-  "name": "d008",
-  "start": 133.6,
-  "dur": 3.3,
-  "src": "broll/v2pd88ko0ud8/d008.mp4"
  },
  {
   "name": "d009",

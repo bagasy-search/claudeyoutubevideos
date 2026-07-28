@@ -24,7 +24,12 @@ const BG = "#0E1D23";
 const AVATAR_SRC = "avatar_v2pd88ko0ud8.mp4";
 
 const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "focuscards"]);
-const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
+// OVERLAY = componentes SIN fondo propio: si la capa del avatar se esconde debajo,
+// el texto queda flotando sobre el BG teal pelado y en el MP4 se lee como NEGRO.
+// (Lo cazó la cuadrícula: el stat "pico de renovación" y una frase cinética salieron
+// sobre negro.) Al marcarlos overlay, buildWindows los deja como hueco → avatar FULL
+// detrás y el texto se apoya sobre la cara, que es como tiene que verse.
+const OVERLAY = new Set(["lowerthird", "frasecinetica", "stat", "quote", "callout", "chips", "rule"]);
 // estos traen su PROPIO avatar montado → no hay que esconder la capa por debajo
 const OWNAVATAR = new Set(["avatarpizarra", "avatarkeyword"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
