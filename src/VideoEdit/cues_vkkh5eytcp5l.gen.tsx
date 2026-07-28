@@ -1,11 +1,9 @@
 // cues_vkkh5eytcp5l.gen.tsx — GENERADO por beatsheet.mjs desde vkkh5eytcp5l.json.
 // NO editar a mano: cambiá el beatsheet y re-corré  node beatsheet.mjs beatsheet/vkkh5eytcp5l.json
 import { ReactNode } from "react";
-import { COLORS } from "./theme";
 import { RawShot } from "./scenes/RawShot";
 import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
 import { ChipsCluster } from "./scenes/ReframeContent";
-import { SplitList } from "./scenes/SplitList";
 import { StatBig } from "./scenes/StatBig";
 import { ImpactReveal } from "./scenes/ImpactReveal";
 import { StatTag } from "./scenes/StatTag";
@@ -27,8 +25,6 @@ import { LieList } from "./scenes/LieList";
 import { NumberCard } from "./scenes/NumberCard";
 import { KineticLine } from "./scenes/KineticLine";
 import { OllaDiagram } from "./scenes/OllaDiagram";
-
-const D = COLORS.danger, G = COLORS.good;
 
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
@@ -356,7 +352,7 @@ export const REFRAME: { start: number; end: number }[] = [];
 export const OVERLAYS: Cue[] = [
   { key: "c1", start: 4.46, dur: 5.79, kind: "callout", el: (d) => <CalloutMark durationInFrames={d} figure="5$" eyebrow="Una maceta de barro" caption="riega sola una semana" accent="good" hue="amber" /> },
   { key: "klf48", start: 11.16, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"sin","at":0},{"t":"batería,","at":0.12},{"t":"sin","at":1.02},{"t":"temporizador,","at":1.18,"hl":true}]} accent="amber" /> },
-  { key: "c3", start: 15.08, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="La planta pide. El barro da." accent="good" /> },
+  { key: "c3", start: 15.08, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*La* *planta* *pide.* *El* *barro* *da.*" accent="good" /> },
   { key: "klf63", start: 20.3, dur: 3.54, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"la","at":0},{"t":"necesita","at":0.32,"hl":true},{"t":"Eso","at":0.76},{"t":"último","at":1.38},{"t":"es","at":1.94}]} accent="amber" /> },
   { key: "klf64", start: 24.3, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"y","at":0},{"t":"es","at":0.12},{"t":"lo","at":0.2},{"t":"que","at":0.36},{"t":"lo","at":0.42},{"t":"cambia","at":0.62,"hl":true}]} accent="amber" /> },
   { key: "c4", start: 28.16, dur: 4.43, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Se"},{"t":"llama"},{"t":"olla","hl":true}]} eyebrow="El nombre viejo" hue="amber" /> },
@@ -364,7 +360,7 @@ export const OVERLAYS: Cue[] = [
   { key: "klf95", start: 39.74, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"tus","at":0},{"t":"plantas","at":0.18,"hl":true},{"t":"dejando","at":0.68},{"t":"el","at":1.14}]} accent="amber" /> },
   { key: "klf96", start: 43.24, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"Le","at":0},{"t":"pones","at":0.48},{"t":"una","at":0.82},{"t":"tapa","at":1.08},{"t":"encima","at":1.3,"hl":true}]} accent="amber" /> },
   { key: "c6", start: 47.2, dur: 7.5, kind: "olla", el: (d) => <OllaDiagram durationInFrames={d} mode="anatomy" eyebrow="Corte de la olla" title="Barro poroso, agua adentro" /> },
-  { key: "c7", start: 55.66, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="La tierra seca tira del agua" accent="amber" /> },
+  { key: "c7", start: 55.66, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*La* *tierra* *seca* *tira* *del* *agua*" accent="amber" /> },
   { key: "klf132", start: 60.82, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"que","at":0},{"t":"la","at":0.3},{"t":"gente","at":0.46,"hl":true},{"t":"no","at":0.7},{"t":"cree","at":1.02},{"t":"Si","at":1.16}]} accent="amber" /> },
   { key: "c8", start: 65.26, dur: 3.97, kind: "rule", el: (d) => <RuleNumberScene durationInFrames={d} number="1" title="Tierra húmeda, olla quieta" label="REGLA" hue="amber" /> },
   { key: "klf145", start: 69.56, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"y","at":0},{"t":"en","at":0.16},{"t":"el","at":0.3},{"t":"momento","at":0.44,"hl":true}]} accent="amber" /> },
@@ -374,7 +370,7 @@ export const OVERLAYS: Cue[] = [
   { key: "klf186", start: 88.88, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"pieza","at":0},{"t":"que","at":0.44},{"t":"se","at":0.62},{"t":"pueda","at":0.86},{"t":"romper","at":1.06,"hl":true}]} accent="amber" /> },
   { key: "c12", start: 94.18, dur: 4.88, kind: "stat", el: (d) => <StatBig durationInFrames={d} value={2000} suffix=" años" label="y las instrucciones no cambiaron" eyebrow="Está escrito" accent="amber" hue="amber" /> },
   { key: "c13", start: 99.62, dur: 8, kind: "aged", el: (d) => <AgedDoc durationInFrames={d} heading="FAN SHENGZHI" lines={[{"text":"Manual chino, siglo I a.C."},{"text":"Entierra la vasija. Llénala. Tápala.","mark":true}]} eyebrow="La fuente más vieja" hue="amber" /> },
-  { key: "c141", start: 110.52, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="No cambió ni un paso" accent="good" /> },
+  { key: "c141", start: 110.52, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*No* *cambió* *ni* *un* *paso*" accent="good" /> },
   { key: "c14", start: 116.86, dur: 6.25, kind: "chips", el: (d) => <ChipsCluster durationInFrames={d} title="El mismo truco, sin conocerse" chips={["China","Norte de África","India"]} hue="amber" /> },
   { key: "klf265", start: 123.56, dur: 3, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"que","at":0},{"t":"no","at":0.14},{"t":"se","at":0.3},{"t":"conocían","at":0.56,"hl":true},{"t":"entre","at":0.98},{"t":"sí,","at":1.4}]} accent="amber" /> },
   { key: "klf266", start: 126.98, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"sin","at":0},{"t":"manera","at":0.08},{"t":"de","at":0.4},{"t":"copiarse","at":0.64,"hl":true}]} accent="amber" /> },
@@ -399,7 +395,7 @@ export const OVERLAYS: Cue[] = [
   { key: "klf357", start: 209.08, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"le","at":0},{"t":"iban","at":0.14},{"t":"a","at":0.36},{"t":"morir","at":0.48},{"t":"los","at":0.84},{"t":"tomates","at":1.12,"hl":true}]} accent="amber" /> },
   { key: "klf358", start: 212.8, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"Volvió","at":0,"hl":true},{"t":"mi","at":0.48},{"t":"madre","at":0.68},{"t":"a","at":1.12}]} accent="amber" /> },
   { key: "c145", start: 218.04, dur: 5.79, kind: "stattag", el: (d) => <StatTag durationInFrames={d} value={3} suffix=" semanas" label="sin regar una vez" eyebrow="La huerta de Rebeca" corner="tr" accent="good" /> },
-  { key: "c146", start: 227.9, dur: 6.25, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="La parte regada a mano" items={["Amarilla abajo","Hojas caídas al mediodía"]} accent={D} cross /> },
+  { key: "c146", start: 227.9, dur: 6.25, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="La parte regada a mano" items={[{"text":"Amarilla abajo","state":"todo"},{"text":"Hojas caídas al mediodía","state":"todo"}]} accent="danger" hue="amber" /> },
   { key: "klf405", start: 234.6, dur: 3.06, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"julio","at":0},{"t":"Y","at":0.54},{"t":"mi","at":0.76},{"t":"abuelo,","at":0.92,"hl":true},{"t":"que","at":1.46}]} accent="amber" /> },
   { key: "klf406", start: 238.34, dur: 3.24, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"dijo","at":0,"hl":true},{"t":"una","at":0.24},{"t":"sola","at":0.68},{"t":"cosa","at":0.94},{"t":"que","at":1.4},{"t":"me","at":1.64}]} accent="amber" /> },
   { key: "c20", start: 242.42, dur: 6.25, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} words={parseQuote("La manguera moja la *tierra*. La olla riega la *planta*.")} accent="good" hue="amber" fontSize={84} /> },
@@ -412,7 +408,7 @@ export const OVERLAYS: Cue[] = [
   { key: "klf495", start: 283.68, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"de","at":0},{"t":"barro","at":0.18,"hl":true},{"t":"Y","at":0.46},{"t":"hay","at":0.62},{"t":"una","at":0.78},{"t":"razón","at":0.96}]} accent="amber" /> },
   { key: "klf496", start: 287.06, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"Cuando","at":0,"hl":true},{"t":"riegas","at":0.46},{"t":"por","at":0.9},{"t":"arriba,","at":1.24}]} accent="amber" /> },
   { key: "c24", start: 291.9, dur: 8, kind: "cross", el: (d) => <CrossSection durationInFrames={d} layers={[{"label":"Se evapora","depth":"sol de la tarde","color":"#c94f4f"},{"label":"Se va de lado","depth":"tierra desnuda","color":"#b5703f"},{"label":"Llega a la raíz","depth":"poco","color":"#6a9a6a"}]} eyebrow="Dónde va el agua" title="Por arriba se pierde" /> },
-  { key: "c25", start: 303.58, dur: 5.34, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="20 cm abajo, el sol no la ve" accent="good" /> },
+  { key: "c25", start: 303.58, dur: 5.34, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*20* *cm* *abajo,* *el* *sol* *no* *la* *ve*" accent="good" /> },
   { key: "klf544", start: 309.44, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"5","at":0},{"t":"dólares","at":0.36,"hl":true},{"t":"y","at":0.84},{"t":"cómo","at":1.02},{"t":"saber","at":1.26}]} accent="amber" /> },
   { key: "klf545", start: 312.78, dur: 3.2, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"ferretería","at":0,"hl":true},{"t":"si","at":0.66},{"t":"la","at":0.92},{"t":"maceta","at":1.1},{"t":"que","at":1.4},{"t":"tienes","at":1.6}]} accent="amber" /> },
   { key: "klf546", start: 316.54, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"¿Cómo","at":0},{"t":"enterrarla?","at":0.2,"hl":true},{"t":"¿Y","at":1},{"t":"el","at":1.08}]} accent="amber" /> },
@@ -431,9 +427,9 @@ export const OVERLAYS: Cue[] = [
   { key: "klf650", start: 384.24, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"que","at":0},{"t":"todo","at":0.34},{"t":"el","at":0.64},{"t":"mundo","at":0.8,"hl":true},{"t":"cree","at":1.04},{"t":"que","at":1.3}]} accent="amber" /> },
   { key: "klf651", start: 387.58, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"es","at":0},{"t":"la","at":0.02},{"t":"planta","at":0.2,"hl":true},{"t":"que","at":0.64}]} accent="amber" /> },
   { key: "klf652", start: 391.04, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"Porque","at":0,"hl":true},{"t":"no","at":0.32},{"t":"tenía","at":0.58},{"t":"agua","at":0.84},{"t":"para","at":1.12}]} accent="amber" /> },
-  { key: "c32", start: 397.66, dur: 3.52, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Sube y baja. Empapa y seca." accent="danger" /> },
+  { key: "c32", start: 397.66, dur: 3.52, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Sube* *y* *baja.* *Empapa* *y* *seca.*" accent="danger" /> },
   { key: "c33", start: 403.4, dur: 3.52, kind: "metertag", el: (d) => <MeterTag durationInFrames={d} label="Humedad constante" fromPct={20} toPct={62} eyebrow="Con olla" corner="tl" /> },
-  { key: "c150", start: 409.68, dur: 3.06, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Humedad aburrida y constante" accent="good" /> },
+  { key: "c150", start: 409.68, dur: 3.06, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Humedad* *aburrida* *y* *constante*" accent="good" /> },
   { key: "klf699", start: 413.08, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"a","at":0},{"t":"una","at":0.28},{"t":"planta","at":0.42,"hl":true},{"t":"que","at":0.78},{"t":"da","at":0.9},{"t":"fruto","at":1.02}]} accent="amber" /> },
   { key: "klf700", start: 416.84, dur: 2.96, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"si","at":0},{"t":"entiendes","at":0.28,"hl":true},{"t":"esto,","at":0.7},{"t":"el","at":1.36}]} accent="amber" /> },
   { key: "c34", start: 423.54, dur: 8, kind: "lielist", el: (d) => <LieList durationInFrames={d} title="El mito" items={["Que gotea sin parar","Que se vacía la primera noche","Que ahoga la raíz"]} accent="danger" hue="amber" /> },
@@ -442,12 +438,12 @@ export const OVERLAYS: Cue[] = [
   { key: "klf776", start: 450.22, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"de","at":0},{"t":"ella","at":0.26},{"t":"desde","at":0.44},{"t":"afuera","at":0.76,"hl":true},{"t":"con","at":1.26}]} accent="amber" /> },
   { key: "c152", start: 455.32, dur: 4.88, kind: "stattag", el: (d) => <StatTag durationInFrames={d} value={0} label="La tierra seca tira más fuerte" eyebrow="Succión" corner="tl" accent="amber" /> },
   { key: "klf795", start: 460.86, dur: 3.08, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"al","at":0},{"t":"lado","at":0.2},{"t":"del","at":0.38},{"t":"barro,","at":0.64,"hl":true},{"t":"el","at":1.34},{"t":"agua","at":1.48}]} accent="amber" /> },
-  { key: "c38", start: 466.36, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Un grifo que abre la tierra" accent="good" /> },
+  { key: "c38", start: 466.36, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Un* *grifo* *que* *abre* *la* *tierra*" accent="good" /> },
   { key: "c39", start: 472.52, dur: 4.88, kind: "rule", el: (d) => <RuleNumberScene durationInFrames={d} number="2" title="La raíz va hacia la humedad" label="REGLA" hue="amber" /> },
   { key: "klf829", start: 477.96, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"una","at":0},{"t":"olla","at":0.32},{"t":"Las","at":0.6},{"t":"raíces","at":1.08,"hl":true}]} accent="amber" /> },
   { key: "c154", start: 481.2, dur: 4.88, kind: "metertag", el: (d) => <MeterTag durationInFrames={d} label="Raíces pegadas al barro" fromPct={5} toPct={95} eyebrow="Un año después" corner="tr" /> },
   { key: "c40", start: 486.84, dur: 5.6, kind: "annotated", el: (d) => <AnnotatedImage durationInFrames={d} image="img/vk_raices_abrazando_olla.png" annotations={[{"kind":"circle","x":0.5,"y":0.52,"w":0.3,"label":"Raíces al barro","color":"good"}]} eyebrow="Un año" hue="amber" /> },
-  { key: "c41", start: 493.94, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="La planta tiene su propio pozo" accent="good" /> },
+  { key: "c41", start: 493.94, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*La* *planta* *tiene* *su* *propio* *pozo*" accent="good" /> },
   { key: "klf874", start: 499.12, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"a","at":0},{"t":"la","at":0.1},{"t":"planta","at":0.28,"hl":true},{"t":"que","at":0.6},{"t":"el","at":0.76}]} accent="amber" /> },
   { key: "c42", start: 503.3, dur: 8, kind: "cross", el: (d) => <CrossSection durationInFrames={d} layers={[{"label":"Raíces finas","depth":"primeros 5 cm","color":"#c94f4f"},{"label":"Tierra vacía","depth":"abajo","color":"#7a5a36"}]} eyebrow="Riego por arriba" title="La raíz se queda arriba" /> },
   { key: "klf897", start: 511.66, dur: 2.98, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"todos","at":0,"hl":true},{"t":"los","at":0.4},{"t":"días","at":0.64},{"t":"Y","at":0.94},{"t":"el","at":1.24},{"t":"día","at":1.38}]} accent="amber" /> },
@@ -469,7 +465,7 @@ export const OVERLAYS: Cue[] = [
   { key: "klf988", start: 587.42, dur: 3.28, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"tiene","at":0},{"t":"esmalte","at":0.12},{"t":"o","at":0.78},{"t":"un","at":1.16},{"t":"barniz","at":1.36},{"t":"transparente","at":1.68,"hl":true}]} accent="amber" /> },
   { key: "klf989", start: 591.7, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"va","at":0},{"t":"a","at":0.22},{"t":"ser","at":0.36,"hl":true},{"t":"un","at":0.46}]} accent="amber" /> },
   { key: "klf990", start: 595.52, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"Si","at":0},{"t":"el","at":0.2},{"t":"agua","at":0.4},{"t":"se","at":0.54},{"t":"oscurece","at":0.8,"hl":true}]} accent="amber" /> },
-  { key: "c50", start: 599.64, dur: 8, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Llévatela" items={["El agua se mete en el barro","Deja mancha húmeda","Ese barro respira"]} accent={G} /> },
+  { key: "c50", start: 599.64, dur: 8, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Llévatela" items={[{"text":"El agua se mete en el barro","state":"done"},{"text":"Deja mancha húmeda","state":"done"},{"text":"Ese barro respira","state":"done"}]} accent="good" hue="amber" /> },
   { key: "c51", start: 609.7, dur: 2.9, kind: "chapter", el: (d) => <ChapterTag durationInFrames={d} title="Cómo enterrarla" num="2" accent="#c8a24a" /> },
   { key: "klf1027", start: 613.2, dur: 3.02, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"paso","at":0},{"t":"porque","at":0.34,"hl":true},{"t":"ahí","at":0.66},{"t":"es","at":1.06},{"t":"donde","at":1.22},{"t":"se","at":1.42}]} accent="amber" /> },
   { key: "c52", start: 616.6, dur: 7.61, kind: "process", el: (d) => <ProcessSteps durationInFrames={d} steps={[{"title":"Tapar el fondo"},{"title":"Cavar"},{"title":"Enterrar y apretar"},{"title":"Llenar y tapar"}]} eyebrow="Paso a paso" title="Los cuatro pasos" /> },
@@ -477,11 +473,11 @@ export const OVERLAYS: Cue[] = [
   { key: "klf1048", start: 627.88, dur: 3.12, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"barro","at":0},{"t":"amasado","at":0.26},{"t":"encima","at":0.74},{"t":"Y","at":1.18},{"t":"aguantaba","at":1.52,"hl":true}]} accent="amber" /> },
   { key: "klf1049", start: 631.6, dur: 3.16, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"pierde","at":0,"hl":true},{"t":"una","at":0.36},{"t":"gota","at":0.62},{"t":"lenta,","at":0.92},{"t":"no","at":1.34},{"t":"es","at":1.56}]} accent="amber" /> },
   { key: "klf1050", start: 635.6, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"se","at":0},{"t":"te","at":0.18},{"t":"vacía","at":0.38,"hl":true},{"t":"en","at":0.72}]} accent="amber" /> },
-  { key: "c159", start: 647.64, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Nunca sobre una piedra puntiaguda" accent="danger" /> },
+  { key: "c159", start: 647.64, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Nunca* *sobre* *una* *piedra* *puntiaguda*" accent="danger" /> },
   { key: "c54", start: 654.44, dur: 4.88, kind: "numcard", el: (d) => <NumberCard durationInFrames={d} number="3" name="Aprieta la tierra" eyebrow="Sin bolsas de aire" total="4" accent="amber" /> },
   { key: "kl20", start: 663.8, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"tres","at":0,"hl":true},{"t":"dedos","at":0.38}]} accent="amber" /> },
   { key: "c56", start: 673.14, dur: 8, kind: "lielist", el: (d) => <LieList durationInFrames={d} title="Si la dejas a ras" items={["Se llena de barro y hojas","El sedimento tapa los poros","Un día la partes con la pala"]} accent="danger" hue="amber" /> },
-  { key: "c57", start: 696.62, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="El agua no salta huecos" accent="danger" /> },
+  { key: "c57", start: 696.62, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*El* *agua* *no* *salta* *huecos*" accent="danger" /> },
   { key: "c58", start: 701.64, dur: 3.52, kind: "numcard", el: (d) => <NumberCard durationInFrames={d} number="4" name="Llena y tapa" eyebrow="Siempre tapada" total="4" accent="amber" /> },
   { key: "c59", start: 707.08, dur: 5.34, kind: "impact", el: (d) => <ImpactReveal durationInFrames={d} image="img/vk_larvas_agua_quieta.png" impact="se tapan. Siempre." setup="Agua quieta al aire libre..." impactAccent="danger" hitAt={1} boom={0} darken={0.5} /> },
   { key: "kl21", start: 723.2, dur: 3.28, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"se","at":0},{"t":"tapan","at":0.2},{"t":"Todas","at":0.92},{"t":"Siempre","at":1.68,"hl":true}]} accent="amber" /> },
@@ -491,21 +487,21 @@ export const OVERLAYS: Cue[] = [
   { key: "c64", start: 762.26, dur: 7.61, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Arenosa","value":55,"display":"menos","tone":"cold"},{"label":"Normal","value":80,"display":"45 cm","winner":true},{"label":"Arcilla","value":100,"display":"más, lento"}]} eyebrow="Según tu tierra" title="Cuánto moja" /> },
   { key: "c65", start: 772.14, dur: 6.7, kind: "stat", el: (d) => <StatBig durationInFrames={d} value={4} suffix=" plantas" label="una por lado, a 25-30 cm del barro" eyebrow="Por cada olla" accent="good" hue="amber" /> },
   { key: "c162", start: 780.54, dur: 5.79, kind: "stattag", el: (d) => <StatTag durationInFrames={d} value={30} suffix=" cm" label="de la olla a cada planta" eyebrow="No las pegues" corner="tr" accent="good" /> },
-  { key: "c68", start: 800.36, dur: 6.25, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="No le saca partido" items={["El césped","Siembras densas de hoja"]} accent={D} cross /> },
+  { key: "c68", start: 800.36, dur: 6.25, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="No le saca partido" items={[{"text":"El césped","state":"todo"},{"text":"Siembras densas de hoja","state":"todo"}]} accent="danger" hue="amber" /> },
   { key: "c69", start: 811.6, dur: 8, kind: "lielist", el: (d) => <LieList durationInFrames={d} title="Las dos que la rajan" items={["La menta: la estrangula","La calabaza: hace de cuña"]} accent="danger" hue="amber" /> },
   { key: "c163", start: 826.82, dur: 4.88, kind: "metertag", el: (d) => <MeterTag durationInFrames={d} label="La menta la estrangula" fromPct={10} toPct={95} eyebrow="En un año" corner="tl" /> },
   { key: "c164", start: 849.82, dur: 6.25, kind: "callout", el: (d) => <CalloutMark durationInFrames={d} figure="2" eyebrow="Partida por una calabaza" caption="la raíz gorda hace de cuña" accent="danger" hue="amber" /> },
   { key: "c71", start: 859.64, dur: 3.52, kind: "chapter", el: (d) => <ChapterTag durationInFrames={d} title="Cada cuánto se llena" num="4" accent="#c8a24a" /> },
   { key: "c72", start: 865.4, dur: 8, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Primavera","value":60,"display":"6-7 días"},{"label":"Pleno verano","value":100,"display":"3-4 días","tone":"danger"},{"label":"Otoño","value":35,"display":"10 días","tone":"cold"}]} eyebrow="Olla de 3-4 litros" title="Cada cuánto la llenas" /> },
   { key: "c73", start: 883.48, dur: 4.43, kind: "rule", el: (d) => <RuleNumberScene durationInFrames={d} number="!" title="Una varita te lo dice" label="TRUCO" hue="amber" /> },
-  { key: "c165", start: 899.12, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Tu huerta te lo dice sola" accent="good" /> },
+  { key: "c165", start: 899.12, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Tu* *huerta* *te* *lo* *dice* *sola*" accent="good" /> },
   { key: "c74", start: 903.8, dur: 4.88, kind: "stattag", el: (d) => <StatTag durationInFrames={d} value={4} suffix=" min" label="toda la huerta, media semana" eyebrow="Domingo" corner="tr" accent="good" /> },
-  { key: "c166", start: 916.64, dur: 4.88, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="El trabajo más agradable de la huerta" accent="good" /> },
+  { key: "c166", start: 916.64, dur: 4.88, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*El* *trabajo* *más* *agradable* *de* *la* *huerta*" accent="good" /> },
   { key: "c75", start: 926.12, dur: 8, kind: "process", el: (d) => <ProcessSteps durationInFrames={d} steps={[{"title":"Desenterrar"},{"title":"Balde con vinagre"},{"title":"Enjuagar"}]} eyebrow="Una vez al año" title="Si tu agua es dura" /> },
-  { key: "c167", start: 940.46, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="El vinagre se come la cal" accent="good" /> },
+  { key: "c167", start: 940.46, dur: 4.43, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*El* *vinagre* *se* *come* *la* *cal*" accent="good" /> },
   { key: "c168", start: 951.98, dur: 5.79, kind: "stattag", el: (d) => <StatTag durationInFrames={d} value={20} suffix=" años" label="y una helada te la parte" eyebrow="Sácala en otoño" corner="tr" accent="danger" /> },
   { key: "c77", start: 960.1, dur: 3.52, kind: "chapter", el: (d) => <ChapterTag durationInFrames={d} title="Lo que NO hace" num="5" accent="#8d8378" /> },
-  { key: "c169", start: 968.58, dur: 4.88, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Regada no es lo mismo que nutrida" accent="amber" /> },
+  { key: "c169", start: 968.58, dur: 4.88, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Regada* *no* *es* *lo* *mismo* *que* *nutrida*" accent="amber" /> },
   { key: "c80", start: 992.38, dur: 5.79, kind: "callout", el: (d) => <CalloutMark durationInFrames={d} figure="2-3" eyebrow="Semanas de arranque" caption="todavía riegas cerca del tallo" accent="amber" hue="amber" /> },
   { key: "c170", start: 1013.42, dur: 7.15, kind: "callout", el: (d) => <CalloutMark durationInFrames={d} figure="30" eyebrow="Si te vas un mes" caption="no hay olla que te salve" accent="danger" hue="amber" /> },
   { key: "kl24", start: 1022.06, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"Pero","at":0},{"t":"no","at":0.34},{"t":"es","at":0.6},{"t":"magia","at":0.84,"hl":true}]} accent="amber" /> },
@@ -514,7 +510,7 @@ export const OVERLAYS: Cue[] = [
   { key: "c171", start: 1071.18, dur: 3.97, kind: "metertag", el: (d) => <MeterTag durationInFrames={d} label="Vuelves cada primavera" fromPct={20} toPct={100} eyebrow="El negocio" corner="tl" /> },
   { key: "kl25", start: 1076.72, dur: 2.9, kind: "kineticline", el: (d) => <KineticLine durationInFrames={d} words={[{"t":"Eso","at":0},{"t":"es","at":0.38},{"t":"el","at":0.64},{"t":"modelo","at":0.8,"hl":true}]} accent="amber" /> },
   { key: "c172", start: 1081.62, dur: 8, kind: "bars", el: (d) => <BarCompare durationInFrames={d} bars={[{"label":"Olla de barro","value":100,"display":"décadas","winner":true},{"label":"Kit de goteo","value":28,"display":"2-3 años","tone":"danger"}]} eyebrow="Cuánto dura" title="Una compra contra una suscripción" /> },
-  { key: "c86", start: 1096.8, dur: 3.52, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Nadie gana dinero contándotelo" accent="danger" /> },
+  { key: "c86", start: 1096.8, dur: 3.52, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Nadie* *gana* *dinero* *contándotelo*" accent="danger" /> },
   { key: "c87", start: 1113.04, dur: 5.79, kind: "impact", el: (d) => <ImpactReveal durationInFrames={d} image="img/vk_plantas_mediodia_caidas.png" impact="seguir regando por encima." setup="El error del 90% es..." impactAccent="danger" hitAt={1} boom={0} darken={0.5} /> },
   { key: "c88", start: 1136.24, dur: 8, kind: "process", el: (d) => <ProcessSteps durationInFrames={d} steps={[{"title":"Riegas arriba"},{"title":"La tierra no se seca"},{"title":"La olla no suelta"}]} eyebrow="Primera capa" title="La apagaste tú" /> },
   { key: "c89", start: 1153.42, dur: 4.88, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Está"},{"t":"apagada","hl":true}]} eyebrow="No es que no gaste" hue="red" /> },
@@ -524,17 +520,17 @@ export const OVERLAYS: Cue[] = [
   { key: "c91", start: 1189.78, dur: 5.34, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} words={parseQuote("Tenía tres litros a sus pies. Nunca aprendió a *bajar*.")} accent="danger" hue="amber" /> },
   { key: "c93", start: 1209.94, dur: 8, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="La regla, corta" items={[{"text":"2-3 semanas: riegas arriba","state":"doing"},{"text":"Después: solo la olla","state":"done"}]} eyebrow="El error se arregla así" accent="good" hue="amber" /> },
   { key: "c175", start: 1226.3, dur: 5.34, kind: "rule", el: (d) => <RuleNumberScene durationInFrames={d} number="10" title="Ahí es cuando la raíz baja" label="DÍAS" hue="amber" /> },
-  { key: "c94", start: 1232.54, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="No las salves. Están bajando." accent="amber" /> },
-  { key: "c176", start: 1242.48, dur: 7.61, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Diez días después" items={["Las tuyas: de pie al mediodía","Las del vecino: dobladas"]} accent={G} /> },
+  { key: "c94", start: 1232.54, dur: 3.97, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*No* *las* *salves.* *Están* *bajando.*" accent="amber" /> },
+  { key: "c176", start: 1242.48, dur: 7.61, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Diez días después" items={[{"text":"Las tuyas: de pie al mediodía","state":"done"},{"text":"Las del vecino: dobladas","state":"done"}]} accent="good" hue="amber" /> },
   { key: "c96", start: 1251.16, dur: 3.52, kind: "chapter", el: (d) => <ChapterTag durationInFrames={d} title="Este fin de semana" num="6" accent="#c8a24a" /> },
-  { key: "c49", start: 1268.6, dur: 7.15, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="Devuélvela" items={["El agua queda en perla","Está esmaltada","Será un balde enterrado"]} accent={D} cross /> },
+  { key: "c49", start: 1268.6, dur: 7.15, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="Devuélvela" items={[{"text":"El agua queda en perla","state":"todo"},{"text":"Está esmaltada","state":"todo"},{"text":"Será un balde enterrado","state":"todo"}]} accent="danger" hue="amber" /> },
   { key: "c99", start: 1289.44, dur: 4.43, kind: "numcard", el: (d) => <NumberCard durationInFrames={d} number="4" name="Llena y tapa" eyebrow="Siempre, por los mosquitos" total="7" accent="amber" /> },
   { key: "c100", start: 1296.18, dur: 4.43, kind: "numcard", el: (d) => <NumberCard durationInFrames={d} number="5" name="Cuatro plantas" eyebrow="Ni menta ni calabaza" total="7" accent="amber" /> },
   { key: "c101", start: 1303.16, dur: 5.79, kind: "numcard", el: (d) => <NumberCard durationInFrames={d} number="6" name="Corta el riego de arriba" eyebrow="Solo llenas la olla" total="7" accent="amber" /> },
   { key: "c102", start: 1320.28, dur: 5.34, kind: "numcard", el: (d) => <NumberCard durationInFrames={d} number="7" name="Guárdala en otoño" eyebrow="Antes de la primera helada" total="7" accent="amber" /> },
   { key: "c103", start: 1329.28, dur: 4.88, kind: "headline", el: (d) => <KineticHeadline durationInFrames={d} tokens={[{"t":"Cinco"},{"t":"dólares"},{"t":"y"},{"t":"una"},{"t":"tarde","hl":true}]} eyebrow="Eso es todo" hue="amber" /> },
-  { key: "c177", start: 1349.86, dur: 3.52, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Contame en los comentarios" accent="good" /> },
-  { key: "c178", start: 1357.78, dur: 5.34, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="Lo de antes de la caja con instrucciones" accent="amber" /> },
+  { key: "c177", start: 1349.86, dur: 3.52, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Contame* *en* *los* *comentarios*" accent="good" /> },
+  { key: "c178", start: 1357.78, dur: 5.34, kind: "phrasetag", el: (d) => <PhraseTag durationInFrames={d} text="*Lo* *de* *antes* *de* *la* *caja* *con* *instrucciones*" accent="amber" /> },
   { key: "c105", start: 1365.32, dur: 5.79, kind: "quote", el: (d) => <KineticQuote durationInFrames={d} words={parseQuote("Piedras apiladas. Sin una gota de agua. Y amanecen *mojadas*.")} accent="cold" hue="cold" /> },
   { key: "c106", start: 1396.4, dur: 4.88, kind: "signature", el: (d) => <SignaturePhrase durationInFrames={d} lines={["Eran cosas de cinco dólares"]} eyebrow="Levi Lapp" /> },
 ];

@@ -488,6 +488,27 @@ for (const c of C) {
   console.log(`kineticline de relleno: +${añadidos} → ${comps.length} usos (objetivo ${MIN_USOS})`);
 }
 
+// ── ARREGLOS DE CONTRASTE QUE VINIERON DEL AUDITOR ─────────────────────────
+// Leyendo el fuente de los componentes compartidos aparecieron dos que están
+// hechos para FONDO CLARO, así que oscurecer detrás los volvía ilegibles:
+//   · PhraseTag  → pinta en COLORS.bg0 (el color de fondo) las palabras que NO
+//     están resaltadas. Marcando TODAS con *asterisco* pasan a usar el color de
+//     acento, que es claro, y se leen sobre cualquier cosa.
+//   · SplitList  → pinta en COLORS.text (tinta oscura) y no trae tarjeta propia:
+//     no hay prop que lo aclare. Se cambia por Checklist, que sí trae tarjeta.
+for (const c of comps) {
+  if (c.kind === "phrasetag" && typeof c.text === "string") {
+    c.text = c.text.split(/\s+/).map((w) => (/^\*.*\*$/.test(w) ? w : `*${w}*`)).join(" ");
+  } else if (c.kind === "splitlist") {
+    const tachado = !!c.cross;
+    c.kind = "checklist";
+    c.items = (c.items || []).map((t) => ({ text: t, state: tachado ? "todo" : "done" }));
+    c.accent = tachado ? "danger" : "good";
+    c.hue = "amber";
+    delete c.palette; delete c.cross;
+  }
+}
+
 // ── CONTRASTE DEBAJO DE LOS CARTELES ───────────────────────────────────────
 // El auditor de la cuadrícula marcó texto marrón sobre b-roll marrón: ilegible.
 // Los componentes son del kit COMPARTIDO (no se tocan), así que la solución va

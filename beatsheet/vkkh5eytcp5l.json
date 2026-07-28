@@ -63,7 +63,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "La planta pide. El barro da.",
+   "text": "*La* *planta* *pide.* *El* *barro* *da.*",
    "accent": "good",
    "id": "c3",
    "start": 15.08,
@@ -347,7 +347,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "La tierra seca tira del agua",
+   "text": "*La* *tierra* *seca* *tira* *del* *agua*",
    "accent": "amber",
    "id": "c7",
    "start": 55.66,
@@ -698,7 +698,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "No cambió ni un paso",
+   "text": "*No* *cambió* *ni* *un* *paso*",
    "accent": "good",
    "id": "c141",
    "start": 110.52,
@@ -1642,18 +1642,24 @@
    "noSplit": true
   },
   {
-   "kind": "splitlist",
+   "kind": "checklist",
    "title": "La parte regada a mano",
    "items": [
-    "Amarilla abajo",
-    "Hojas caídas al mediodía"
+    {
+     "text": "Amarilla abajo",
+     "state": "todo"
+    },
+    {
+     "text": "Hojas caídas al mediodía",
+     "state": "todo"
+    }
    ],
-   "palette": "D",
-   "cross": true,
    "id": "c146",
    "start": 227.9,
    "dur": 6.25,
-   "overlay": true
+   "overlay": true,
+   "accent": "danger",
+   "hue": "amber"
   },
   {
    "id": "m053_manos_tierra_punado",
@@ -2109,7 +2115,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "20 cm abajo, el sol no la ve",
+   "text": "*20* *cm* *abajo,* *el* *sol* *no* *la* *ve*",
    "accent": "good",
    "id": "c25",
    "start": 303.58,
@@ -2816,7 +2822,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Sube y baja. Empapa y seca.",
+   "text": "*Sube* *y* *baja.* *Empapa* *y* *seca.*",
    "accent": "danger",
    "id": "c32",
    "start": 397.66,
@@ -2864,7 +2870,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Humedad aburrida y constante",
+   "text": "*Humedad* *aburrida* *y* *constante*",
    "accent": "good",
    "id": "c150",
    "start": 409.68,
@@ -3195,7 +3201,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Un grifo que abre la tierra",
+   "text": "*Un* *grifo* *que* *abre* *la* *tierra*",
    "accent": "good",
    "id": "c38",
    "start": 466.36,
@@ -3333,7 +3339,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "La planta tiene su propio pozo",
+   "text": "*La* *planta* *tiene* *su* *propio* *pozo*",
    "accent": "good",
    "id": "c41",
    "start": 493.94,
@@ -4172,18 +4178,28 @@
    ]
   },
   {
-   "kind": "splitlist",
+   "kind": "checklist",
    "title": "Llévatela",
    "items": [
-    "El agua se mete en el barro",
-    "Deja mancha húmeda",
-    "Ese barro respira"
+    {
+     "text": "El agua se mete en el barro",
+     "state": "done"
+    },
+    {
+     "text": "Deja mancha húmeda",
+     "state": "done"
+    },
+    {
+     "text": "Ese barro respira",
+     "state": "done"
+    }
    ],
-   "palette": "G",
    "id": "c50",
    "start": 599.64,
    "dur": 8,
-   "overlay": true
+   "overlay": true,
+   "accent": "good",
+   "hue": "amber"
   },
   {
    "id": "m135_maceta_barro_vacia",
@@ -4495,7 +4511,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Nunca sobre una piedra puntiaguda",
+   "text": "*Nunca* *sobre* *una* *piedra* *puntiaguda*",
    "accent": "danger",
    "id": "c159",
    "start": 647.64,
@@ -4645,7 +4661,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "El agua no salta huecos",
+   "text": "*El* *agua* *no* *salta* *huecos*",
    "accent": "danger",
    "id": "c57",
    "start": 696.62,
@@ -5064,18 +5080,24 @@
    "noSplit": true
   },
   {
-   "kind": "splitlist",
+   "kind": "checklist",
    "title": "No le saca partido",
    "items": [
-    "El césped",
-    "Siembras densas de hoja"
+    {
+     "text": "El césped",
+     "state": "todo"
+    },
+    {
+     "text": "Siembras densas de hoja",
+     "state": "todo"
+    }
    ],
-   "palette": "D",
-   "cross": true,
    "id": "c68",
    "start": 800.36,
    "dur": 6.25,
-   "overlay": true
+   "overlay": true,
+   "accent": "danger",
+   "hue": "amber"
   },
   {
    "id": "m183_raices_transplante",
@@ -5381,7 +5403,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Tu huerta te lo dice sola",
+   "text": "*Tu* *huerta* *te* *lo* *dice* *sola*",
    "accent": "good",
    "id": "c165",
    "start": 899.12,
@@ -5433,7 +5455,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "El trabajo más agradable de la huerta",
+   "text": "*El* *trabajo* *más* *agradable* *de* *la* *huerta*",
    "accent": "good",
    "id": "c166",
    "start": 916.64,
@@ -5512,7 +5534,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "El vinagre se come la cal",
+   "text": "*El* *vinagre* *se* *come* *la* *cal*",
    "accent": "good",
    "id": "c167",
    "start": 940.46,
@@ -5612,7 +5634,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Regada no es lo mismo que nutrida",
+   "text": "*Regada* *no* *es* *lo* *mismo* *que* *nutrida*",
    "accent": "amber",
    "id": "c169",
    "start": 968.58,
@@ -6047,7 +6069,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Nadie gana dinero contándotelo",
+   "text": "*Nadie* *gana* *dinero* *contándotelo*",
    "accent": "danger",
    "id": "c86",
    "start": 1096.8,
@@ -6507,7 +6529,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "No las salves. Están bajando.",
+   "text": "*No* *las* *salves.* *Están* *bajando.*",
    "accent": "amber",
    "id": "c94",
    "start": 1232.54,
@@ -6535,17 +6557,24 @@
    "noSplit": true
   },
   {
-   "kind": "splitlist",
+   "kind": "checklist",
    "title": "Diez días después",
    "items": [
-    "Las tuyas: de pie al mediodía",
-    "Las del vecino: dobladas"
+    {
+     "text": "Las tuyas: de pie al mediodía",
+     "state": "done"
+    },
+    {
+     "text": "Las del vecino: dobladas",
+     "state": "done"
+    }
    ],
-   "palette": "G",
    "id": "c176",
    "start": 1242.48,
    "dur": 7.61,
-   "overlay": true
+   "overlay": true,
+   "accent": "good",
+   "hue": "amber"
   },
   {
    "id": "m282_tierra_negra_rica",
@@ -6614,19 +6643,28 @@
    "darken": 0.42
   },
   {
-   "kind": "splitlist",
+   "kind": "checklist",
    "title": "Devuélvela",
    "items": [
-    "El agua queda en perla",
-    "Está esmaltada",
-    "Será un balde enterrado"
+    {
+     "text": "El agua queda en perla",
+     "state": "todo"
+    },
+    {
+     "text": "Está esmaltada",
+     "state": "todo"
+    },
+    {
+     "text": "Será un balde enterrado",
+     "state": "todo"
+    }
    ],
-   "palette": "D",
-   "cross": true,
    "id": "c49",
    "start": 1268.6,
    "dur": 7.15,
-   "overlay": true
+   "overlay": true,
+   "accent": "danger",
+   "hue": "amber"
   },
   {
    "id": "m288_vk_poros_barro_macro",
@@ -6878,7 +6916,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Contame en los comentarios",
+   "text": "*Contame* *en* *los* *comentarios*",
    "accent": "good",
    "id": "c177",
    "start": 1349.86,
@@ -6907,7 +6945,7 @@
   },
   {
    "kind": "phrasetag",
-   "text": "Lo de antes de la caja con instrucciones",
+   "text": "*Lo* *de* *antes* *de* *la* *caja* *con* *instrucciones*",
    "accent": "amber",
    "id": "c178",
    "start": 1357.78,
