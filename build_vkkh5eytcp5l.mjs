@@ -148,7 +148,7 @@ const TOPICS = [
   { k: (s) => has(s, "china", "chino", "fan", "shengzhi", "manual", "escrito", "libro"), a: ["libro_antiguo_paginas", "manuscrito_viejo", "biblioteca_libros", "campo_arroz_china", "b_libro_hojeando", "b_pergamino_escrito", "b_china_campo", "vk_manuscrito_chino"] },
   { k: (s) => has(s, "africa", "india", "oceano", "cultura", "palabra"), a: ["aldea_desierto", "oasis_palmeras", "vasijas_mercado", "b_pueblo_adobe", "b_india_calle", "b_mapa_antiguo", "vk_vasijas_africa", "vk_vasijas_india"] },
   { k: (s) => has(s, "bainbridge", "revista", "investig", "midi", "cientif", "eficiencia"), a: ["cientifico_campo", "desierto_investigacion", "microscopio_muestra", "b_laboratorio_muestras", "b_cuaderno_notas", "b_regla_medir", "vk_desierto_medicion"] },
-  { k: (s) => has(s, "abuelo", "amos", "madre", "rebeca", "nueve"), a: ["agricultor_mayor_manos", "manos_viejas_jovenes", "nino_huerta", "b_manos_arrugadas", "b_abuelo_nieto", "b_mujer_huerta", "vk_levi_abuelo_recuerdo", "vk_abuelo_piedra_tapa"] },
+  { k: (s) => has(s, "abuelo", "amos", "madre", "rebeca", "nueve"), a: ["agricultor_mayor_manos", "manos_viejas_jovenes", "nino_huerta", "b_manos_arrugadas", "b_abuelo_nieto", "vk_levi_abuelo_recuerdo", "vk_abuelo_piedra_tapa"] },
   { k: (s) => has(s, "granero", "cobertizo", "techo", "guarda", "herramient"), a: ["granero_madera", "cobertizo_herramientas", "b_granero_interior", "b_herramientas_pared", "b_banco_taller", "b_farol_viejo"] },
   { k: (s) => has(s, "lluvia", "llueve", "nube"), a: ["lluvia_jardin", "lluvia_charco", "b_lluvia_hojas", "b_tormenta_nubes", "b_charco_barro"] },
   { k: (s) => has(s, "sol", "calor", "grados", "mediodia", "julio", "agosto", "verano"), a: ["sol_calor_campo", "plantas_marchitas_sol", "hojas_amarillas", "b_sol_abrasador", "b_termometro_calor", "b_hoja_marchita", "vk_plantas_mediodia_caidas", "vk_plantas_mediodia_erguidas"] },
@@ -486,6 +486,16 @@ for (const c of C) {
   }
   comps.sort((a, b) => a.start - b.start);
   console.log(`kineticline de relleno: +${añadidos} → ${comps.length} usos (objetivo ${MIN_USOS})`);
+}
+
+// ── CONTRASTE DEBAJO DE LOS CARTELES ───────────────────────────────────────
+// El auditor de la cuadrícula marcó texto marrón sobre b-roll marrón: ilegible.
+// Los componentes son del kit COMPARTIDO (no se tocan), así que la solución va
+// del lado de la toma: la que queda debajo de un cartel se oscurece, y el texto
+// serif claro salta. Sólo las que están tapadas — el resto queda con su color.
+for (const b of rawBeats) {
+  const fin = b.start + b.dur;
+  if (comps.some((c) => b.start < c.start + c.dur && fin > c.start)) b.darken = 0.42;
 }
 
 const beats = [...rawBeats, ...comps].sort((a, b) => a.start - b.start);
