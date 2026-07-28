@@ -126,6 +126,10 @@ const fixProps = (kind, p) => {
     if (!p.figure && p.title) p.figure = p.title;
     if (!p.caption && p.text) p.caption = p.text;
   }
+  // `nametag` → DocNameCard tiene un default HARDCODEADO a img/fe2_federer_cafe.png, que es de
+  // otro video y no existe en ningún disco: el chunk final moría con 404 + EncodingError.
+  // Siempre le pasamos una imagen NUESTRA, que además viaja en el tarball.
+  if (kind === "nametag" && !p.image) p.image = "img/fe_vlh_guia_mano.png";
   // ── LARGO DE TEXTO: BoardCard no reflowea. Un `title` largo se ENCABALGA con el primer
   // ítem y queda ilegible (visto en la cuadrícula: "El borde: 1,5 a 2 cm de transición"
   // pisado por "Se ve rarísimo"). Se recorta en palabra, sin cortar al medio.

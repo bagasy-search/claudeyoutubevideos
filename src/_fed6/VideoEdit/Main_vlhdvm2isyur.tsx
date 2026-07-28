@@ -23,6 +23,7 @@ import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
 
 
 
+
 /* COMPONENT_MANIFEST — usos REALES que monta renderComp() desde FEDZ_BEATS (build data-driven).
   7.56s <LowerThird />
   16.32s <FraseCinetica />
