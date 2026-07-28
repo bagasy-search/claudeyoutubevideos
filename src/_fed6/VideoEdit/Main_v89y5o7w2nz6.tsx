@@ -208,9 +208,17 @@ export const MainV89: React.FC = () => {
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {
         const d = Math.max(1, sec(compDur(b)));
+        // `useRack` (el rack-focus de las listas del kit) interpola en
+        // [at-6, at+8, next-2, next+14] con `at`/`next` repartidos entre los ítems.
+        // Si dos ítems caen a menos de 10 frames, ese rango deja de ser creciente y
+        // Remotion aborta el frame: así murieron los chunks 8, 16, 17 y 18 tres veces.
+        // La Sequence sigue durando lo que le toca; lo que se estira es el reloj de la
+        // ANIMACIÓN, así que los ítems se separan y el corte sigue cayendo donde debe.
+        const listLen = (b.items?.length || b.steps?.length || b.chips?.length || b.bars?.length || b.slides?.length || 0);
+        const dAnim = listLen ? Math.max(d, 40 + listLen * 26) : d;
         return (
           <Sequence key={`comp_${b.id}`} from={sec(b.start)} durationInFrames={d} layout="none">
-            {renderComp(b, d)}
+            {renderComp(b, dAnim)}
           </Sequence>
         );
       })}
