@@ -499,6 +499,10 @@ for (const c of C) {
 for (const c of comps) {
   if (c.kind === "phrasetag" && typeof c.text === "string") {
     c.text = c.text.split(/\s+/).map((w) => (/^\*.*\*$/.test(w) ? w : `*${w}*`)).join(" ");
+  } else if (c.kind === "aged") {
+    // AgedDoc tarda 1,1s en mostrar la primera línea (papel 0,7s + startAt 0,5s):
+    // cae un tramo de página crema VACÍA a pantalla completa. Se adelanta el texto.
+    c.startAt = 2; c.perLine = 10; c.markDelay = 22;
   } else if (c.kind === "splitlist") {
     const tachado = !!c.cross;
     c.kind = "checklist";
@@ -514,9 +518,15 @@ for (const c of comps) {
 // Los componentes son del kit COMPARTIDO (no se tocan), así que la solución va
 // del lado de la toma: la que queda debajo de un cartel se oscurece, y el texto
 // serif claro salta. Sólo las que están tapadas — el resto queda con su color.
+// Los carteles de TEXTO SUELTO (sin tarjeta propia) van sobre la toma pelada, así
+// que necesitan mucho más fondo negro que los que traen tarjeta: con 0,42 el ámbar
+// caía sobre barro ocre del mismo tono y no se leía.
+const SIN_TARJETA = new Set(["phrasetag", "kineticline", "headline", "quote", "stattag", "metertag"]);
 for (const b of rawBeats) {
   const fin = b.start + b.dur;
-  if (comps.some((c) => b.start < c.start + c.dur && fin > c.start)) b.darken = 0.42;
+  const encima = comps.filter((c) => b.start < c.start + c.dur && fin > c.start);
+  if (!encima.length) continue;
+  b.darken = encima.some((c) => SIN_TARJETA.has(c.kind)) ? 0.72 : 0.42;
 }
 
 const beats = [...rawBeats, ...comps].sort((a, b) => a.start - b.start);

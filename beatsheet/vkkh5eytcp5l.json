@@ -21,7 +21,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manguera_riego.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -58,7 +58,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/riego_goteo.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -77,7 +77,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -118,7 +118,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/abono_manos.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -163,7 +163,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -194,7 +194,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -204,7 +204,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -272,7 +272,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -313,7 +313,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -342,7 +342,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/tierra_seca_grietas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -361,7 +361,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/agricultor_caminando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -406,7 +406,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -427,7 +427,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/mosquito_macro.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -437,7 +437,7 @@
    "kind": "raw",
    "src": "img/vk_levi_olla_mano.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "klf145",
@@ -485,7 +485,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/tierra_seca_desierto.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -495,7 +495,7 @@
    "kind": "raw",
    "src": "img/vk_olla_tapada_plato.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "stattag",
@@ -517,7 +517,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/agricultor_mayor_manos.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -527,7 +527,7 @@
    "kind": "raw",
    "src": "img/vk_levi_dos_macetas.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "kl5",
@@ -571,7 +571,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/sol_calor_campo.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -612,7 +612,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manos_viejas_jovenes.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -665,7 +665,10 @@
    "id": "c13",
    "start": 99.62,
    "dur": 8,
-   "overlay": true
+   "overlay": true,
+   "startAt": 2,
+   "perLine": 10,
+   "markDelay": 22
   },
   {
    "id": "m024_biblioteca_libros",
@@ -693,7 +696,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/agua_absorbida_tierra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -712,7 +715,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/campo_arroz_china.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -755,7 +758,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/oasis_palmeras.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -800,7 +803,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/vasijas_mercado.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -837,7 +840,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/agua_estancada.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -886,7 +889,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/agua_macro_gotas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -927,7 +930,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manguera_chorro.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -967,7 +970,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manguera_plastico.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1012,7 +1015,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_manguera_enrollada.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1049,7 +1052,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_grifo_agua.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1123,7 +1126,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/huerta_bancal.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1174,7 +1177,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/tomates_planta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1246,7 +1249,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/tomate_maduro_rama.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1287,7 +1290,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/hojas_amarillas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1332,7 +1335,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/huerta_general.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1369,7 +1372,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1445,7 +1448,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1482,7 +1485,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/tomate_cosecha_cesta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1523,7 +1526,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_tomate_planta2.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1568,7 +1571,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_tomate_verde.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1618,7 +1621,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_grifo_goteando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1628,7 +1631,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_bomba_agua.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1678,7 +1681,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/nino_huerta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1719,7 +1722,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_manos_arrugadas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1764,7 +1767,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1785,7 +1788,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/alfareria_taller.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1853,7 +1856,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/alfarero_torno.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1873,7 +1876,10 @@
    "id": "c21",
    "start": 258.5,
    "dur": 7.15,
-   "overlay": true
+   "overlay": true,
+   "startAt": 2,
+   "perLine": 10,
+   "markDelay": 22
   },
   {
    "id": "m059_amanecer_campo",
@@ -1954,7 +1960,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_desierto_dunas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -1982,7 +1988,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2027,7 +2033,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/raices_planta_tierra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2100,7 +2106,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2110,7 +2116,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_sol_abrasador.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2160,7 +2166,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_termometro_calor.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2205,7 +2211,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manos_cavando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2273,7 +2279,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/raices_transplante.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2283,7 +2289,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2355,7 +2361,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/arcilla_tierra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2378,7 +2384,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_tierra_removida.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2454,7 +2460,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_rastrillo_tierra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2464,7 +2470,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2532,7 +2538,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/arena_cayendo_mano.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2542,7 +2548,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_campo_arado.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2579,7 +2585,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_hoja_marchita.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2613,7 +2619,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/invernadero_plantas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2654,7 +2660,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_tomate_regando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2694,7 +2700,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/berenjena_planta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2739,7 +2745,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/huerta_bancal.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2807,7 +2813,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/lechuga_marchita.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2817,7 +2823,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_agua_vaso_verter.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -2836,7 +2842,7 @@
    "kind": "raw",
    "src": "img/vk_levi_olla_mano.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m089_vk_olla_tapada_plato",
@@ -2845,7 +2851,7 @@
    "kind": "raw",
    "src": "img/vk_olla_tapada_plato.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "metertag",
@@ -2866,7 +2872,7 @@
    "kind": "raw",
    "src": "img/vk_levi_dos_macetas.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "phrasetag",
@@ -2919,7 +2925,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_abuelo_nieto.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3069,7 +3075,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/balde_agua.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3110,7 +3116,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_desierto_planta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3132,7 +3138,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/tierra_seca_grietas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3142,7 +3148,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/maceta_barro_vacia.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3187,7 +3193,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/huerta_general.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3197,7 +3203,7 @@
    "kind": "raw",
    "src": "img/vk_manguera_rajada_sol.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "phrasetag",
@@ -3236,7 +3242,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3273,7 +3279,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3325,7 +3331,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/maleta_viaje_puerta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3335,7 +3341,7 @@
    "kind": "raw",
    "src": "img/vk_levi_abuelo_recuerdo.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "phrasetag",
@@ -3353,7 +3359,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/regadera_metal.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3394,7 +3400,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/plantin_manos.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3425,7 +3431,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/billetes_dinero_mano.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3470,7 +3476,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/tierra_seca_desierto.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3507,7 +3513,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3572,7 +3578,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3629,7 +3635,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/piedra_plana.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3674,7 +3680,7 @@
    "kind": "raw",
    "src": "img/vk_olla_tapada_plato.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "klf937",
@@ -3741,7 +3747,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manos_tierra_punado.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3788,7 +3794,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/barro_manos_amasando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3798,7 +3804,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_maleta_puerta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3870,7 +3876,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_lechuga_cortando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3901,7 +3907,7 @@
    "kind": "raw",
    "src": "img/vk_levi_dos_macetas.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "klf984",
@@ -3941,7 +3947,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/rocio_manana.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -3986,7 +3992,7 @@
    "kind": "raw",
    "src": "img/vk_poros_barro_macro.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "klf986",
@@ -4022,7 +4028,7 @@
    "kind": "raw",
    "src": "img/vk_olla_corte_tierra.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "klf987",
@@ -4062,7 +4068,7 @@
    "kind": "raw",
    "src": "img/vk_levi_prueba_agua.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "klf988",
@@ -4106,7 +4112,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/pala_cavando_huerta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4143,7 +4149,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/olla_barro_manos.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4228,7 +4234,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_agua_absorber_tela.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4326,7 +4332,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_corcho_botella2.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4336,7 +4342,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4404,7 +4410,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/hoja_gota_macro.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4449,7 +4455,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manguera_riego.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4506,7 +4512,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4525,7 +4531,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_piedras_rio.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4556,7 +4562,7 @@
    "kind": "raw",
    "src": "img/vk_olla_tapada_plato.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m150_b_agua_gota_lenta",
@@ -4565,7 +4571,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_agua_gota_lenta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4657,7 +4663,7 @@
    "kind": "raw",
    "src": "img/vk_olla_corte_tierra.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "phrasetag",
@@ -4675,7 +4681,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_raiz_creciendo.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4760,7 +4766,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_insecto_hoja.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -4797,7 +4803,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/canal_riego_campo.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5015,7 +5021,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_macetas_fila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5038,7 +5044,7 @@
    "kind": "raw",
    "src": "img/vk_raices_superficiales.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m179_vk_tomate_rajado_macro",
@@ -5047,7 +5053,7 @@
    "kind": "raw",
    "src": "img/vk_tomate_rajado_macro.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m180_cosecha_verduras_cesta",
@@ -5159,7 +5165,7 @@
    "kind": "raw",
    "src": "img/vk_olla_tapada_plato.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "metertag",
@@ -5180,7 +5186,7 @@
    "kind": "raw",
    "src": "img/vk_levi_dos_macetas.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m189_calabaza_campo",
@@ -5388,7 +5394,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/invernadero_plantas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5398,7 +5404,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/huerta_bancal.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5417,7 +5423,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/regadera_llenando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5440,7 +5446,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manos_regando_base.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5450,7 +5456,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/huerta_general.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5469,7 +5475,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/microscopio_muestra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5529,7 +5535,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_barro_textura.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5548,7 +5554,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/microscopio_muestra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5568,7 +5574,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_ceramica_secando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5591,7 +5597,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_tierra_desmoronando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5630,7 +5636,7 @@
    "kind": "raw",
    "src": "img/vk_olla_tapada_plato.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "kind": "phrasetag",
@@ -5648,7 +5654,7 @@
    "kind": "raw",
    "src": "img/vk_levi_dos_macetas.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m221_compost_pila",
@@ -5657,7 +5663,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/compost_pila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5758,7 +5764,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/manos_tierra_punado.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5768,7 +5774,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_auto_ruta.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5932,7 +5938,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_goteo_manguera.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5942,7 +5948,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/vivero_estantes.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -5964,7 +5970,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_balde_llenando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6001,7 +6007,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/macetas_terracota_pila.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6064,7 +6070,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/moneda_monedas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6083,7 +6089,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/vivero_pasillo.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6237,7 +6243,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_carrito_tienda.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6265,7 +6271,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_dinero_contando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6296,7 +6302,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_raiz_creciendo.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6306,7 +6312,7 @@
    "kind": "raw",
    "src": "img/vk_raices_abrazando_olla.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "kl27",
@@ -6365,7 +6371,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_desierto_dunas.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6375,7 +6381,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_cepillo_fregando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6395,7 +6401,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_cesta_verduras.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6503,7 +6509,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/raices_planta_tierra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6524,7 +6530,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/raices_transplante.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6825,7 +6831,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_pala_metal.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6835,7 +6841,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/caja_registradora.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6872,7 +6878,7 @@
    "kind": "raw",
    "src": "img/vk_menta_invadiendo.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m302_b_tierra_removida",
@@ -6901,7 +6907,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_maceta_barro_mano2.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6911,7 +6917,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/cepillo_limpiando.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6930,7 +6936,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/agua_absorbida_tierra.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6940,7 +6946,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_china_campo.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6959,7 +6965,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_cocina_rustica.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6969,7 +6975,7 @@
    "kind": "raw",
    "src": "broll/vkkh5eytcp5l/b_temporizador_digital.mp4",
    "hue": "amber",
-   "darken": 0.42,
+   "darken": 0.72,
    "noSplit": true
   },
   {
@@ -6989,7 +6995,7 @@
    "kind": "raw",
    "src": "img/vk_kit_goteo_caja.png",
    "hue": "amber",
-   "darken": 0.42
+   "darken": 0.72
   },
   {
    "id": "m311_agricultor_mayor_manos",
