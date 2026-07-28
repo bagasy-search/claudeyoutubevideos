@@ -157,8 +157,8 @@
       "desc": "La flor amarilla de",
       "imageSide": "right",
       "accent": "amber",
-      "image": "broll/vah3z2zzciut/vh_s04_tansy.mp4",
-      "bg": "broll/vah3z2zzciut/vh_s04_tansy.mp4"
+      "image": "img/still_vh_s04_tansy.jpg",
+      "bg": "img/still_vh_s04_tansy.jpg"
     },
     {
       "id": "b15",
@@ -412,7 +412,7 @@
       "side": "right",
       "kicker": "Pulgones.\nEn la punta\nde cada brote.",
       "hue": "amber",
-      "src": "broll/vah3z2zzciut/vh_x01_aphids.mp4"
+      "src": "img/still_vh_x01_aphids.jpg"
     },
     {
       "id": "b31",
@@ -1998,8 +1998,8 @@
       "desc": "Flor naranja, hoja redonda, trepa.",
       "imageSide": "right",
       "accent": "good",
-      "image": "broll/vah3z2zzciut/vh_t01_nasturtium.mp4",
-      "bg": "broll/vah3z2zzciut/vh_t01_nasturtium.mp4"
+      "image": "img/still_vh_t01_nasturtium.jpg",
+      "bg": "img/still_vh_t01_nasturtium.jpg"
     },
     {
       "id": "b123",
@@ -2062,7 +2062,7 @@
           "color": "good"
         }
       ],
-      "image": "broll/vah3z2zzciut/vh_t11_row_flowers.mp4"
+      "image": "img/still_vh_t11_row_flowers.jpg"
     },
     {
       "id": "b127",
@@ -2268,7 +2268,7 @@
           "color": "amber"
         }
       ],
-      "image": "broll/vah3z2zzciut/vh_r11_whitefly.mp4"
+      "image": "img/still_vh_r11_whitefly.jpg"
     },
     {
       "id": "b139",
@@ -2815,7 +2815,7 @@
           "color": "good"
         }
       ],
-      "image": "broll/vah3z2zzciut/vh_a10_slope_garden.mp4"
+      "image": "img/still_vh_a10_slope_garden.jpg"
     },
     {
       "id": "b171",
