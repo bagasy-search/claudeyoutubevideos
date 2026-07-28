@@ -123,6 +123,17 @@
   carteles a pantalla completa mata el b-roll y el look sparse del nicho. La forma correcta es
   tipografía sincronizada al ms ENCIMA del clip vivo (kineticline/phrasetag como overlay): cuenta
   para la compuerta y no tapa el material real. Aire mínimo de 5s entre carteles full.
+- 2026-07-28 — ⛔ HAY COMPONENTES DEL KIT QUE PINTAN SU FONDO CON `<Img>`, NO CON `<Video>`:
+  FocusCard, TermCard, Loupe, Annotated, Half, SplitExplain, LowerThird y **MistakeCard**. Si el
+  build les pasa un `.mp4` como `image`/`clipBg` pasa una de dos cosas, las dos silenciosas:
+  el chunk muere con `EncodingError: The source image cannot be decoded`, o —peor— el componente
+  renderiza NEGRO y el render sale "success" con un agujero adentro (acá fueron 6,5s en el minuto
+  9:05, lo cazó el `blackdetect` del chequeo técnico del farm, no la cuadrícula). Solución: para
+  esos kinds sacar UN fotograma del clip con ffmpeg y pasar el jpg. Los demás (callout, chips,
+  numcard, aged, impact, growthtimeline, tool, lielist, keyphrase, quote) sí aceptan video de fondo.
+- 2026-07-28 — Truco para re-render PARCIAL: `ONLY_CHUNKS` reusa el release ya subido, así que el
+  arreglo tiene que apoyarse en un asset que YA esté empaquetado. Si generás un archivo nuevo hay
+  que re-subir 1,2 GB y rendear todo de nuevo.
 - 2026-07-28 — Video "Dile Adiós a los Plaguicidas Caros": el creador pidió MODO STOCK
   (b-roll 100% real de Pexels, IA solo para momentos personales con la cara de Levi como ref),
   fotos reales de la web habilitadas, y gpt-image-2 como motor de imagen para este video.
