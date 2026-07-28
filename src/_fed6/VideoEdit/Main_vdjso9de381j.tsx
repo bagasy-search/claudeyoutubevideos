@@ -187,7 +187,11 @@ export const MainVdj: React.FC = () => {
 
       {/* CAPA 2 — FOTOS TOPEADAS (~3.6s) */}
       {rawTop.map((b: any) => {
-        const d = Math.max(1, sec(Math.min(b.dur, HERO_CAP)));
+        // +9f de COLA: sin esto, entre la foto que termina y el avatar que vuelve queda un
+        // micro-hueco de 2-3 frames con el fondo teal pelado (se ve como un destello negro).
+        // Lo cazó la cuadrícula en 63.7s. La foto siguiente se dibuja encima, así que solapar
+        // no cambia nada de lo que se ve; sólo tapa el agujero.
+        const d = Math.max(1, sec(Math.min(b.dur, HERO_CAP)) + 9);
         return (
           <Sequence key={b.id} from={sec(b.start)} durationInFrames={d} premountFor={20}>
             <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />
@@ -200,7 +204,7 @@ export const MainVdj: React.FC = () => {
 
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {
-        const d = Math.max(1, sec(compDur(b)));
+        const d = Math.max(1, sec(compDur(b)) + 6); // +6f de cola, misma razón que la capa 2
         return (
           <Sequence key={`comp_${b.id}`} from={sec(b.start)} durationInFrames={d} layout="none">
             {renderComp(b, d)}
