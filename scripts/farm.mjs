@@ -165,7 +165,33 @@ if (pref && pref.startsWith("@")) {
     for (const d of rotas) console.error(`    cp -r "${base}/public/${d}" public/${d}`);
     process.exit(1);
   }
-  for (const d of COMPARTIDAS) if (fs.existsSync(`public/${d}`) && !items.includes(d)) items.push(d);
+  // ⛔ NO empaquetar la carpeta ENTERA. public/med pesa 882 MB y public/sfx 33 MB, y el kit
+  // referencia ~21 archivos de med: metíamos ~915 MB en CADA tarball. Con eso el release se pasaba
+  // del tope de 2 GiB por archivo de GitHub (había que andar comprimiendo a mano) y, peor, cada
+  // chunk se bajaba esos 915 MB — con 40 chunks son 36 GB de transferencia para nada.
+  // Se incluyen SOLO los archivos que src referencia de verdad. Si no puedo extraerlos (grep sin
+  // resultados, referencia armada dinámicamente), caigo a la carpeta entera: un tarball gordo es
+  // molesto, pero un asset faltante mata el render con todos los runners ya encendidos.
+  for (const d of COMPARTIDAS) {
+    if (!fs.existsSync(`public/${d}`) || items.includes(d)) continue;
+    let usados = [];
+    try {
+      const re = new RegExp(`(?:public/)?${d}/[A-Za-z0-9_./-]+\\.(?:png|jpe?g|webp|mp4|webm|mov|mp3|wav)`, "g");
+      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
+        { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], maxBuffer: 32 * 1024 * 1024 });
+      usados = [...new Set((salida.match(re) || []).map((r) => r.replace(/^public\//, "")))]
+        .filter((r) => fs.existsSync(`public/${r}`));
+    } catch { usados = []; }
+    if (usados.length) {
+      const mb = usados.reduce((a, r) => a + (fs.statSync(`public/${r}`).size || 0), 0) / 1048576;
+      const totalMb = execSync(`du -sm "public/${d}" 2>/dev/null || echo 0`, { encoding: "utf8", shell: "/bin/bash" }).trim().split(/\s/)[0];
+      console.log(`  ${d}: ${usados.length} archivo(s) usados (${mb.toFixed(0)} MB) en vez de la carpeta entera (${totalMb} MB)`);
+      items.push(...usados);
+    } else {
+      console.log(`  ${d}: no pude listar los usados → empaqueto la carpeta entera (seguro pero pesado)`);
+      items.push(d);
+    }
+  }
 
   // ── ASSETS DEL VIDEO, desde los DATOS del build ─────────────────────────────────────────────
   // Escanear el Main_ no sirve (no nombra assets) y el manifiesto Main_ de src/VideoEdit miente
