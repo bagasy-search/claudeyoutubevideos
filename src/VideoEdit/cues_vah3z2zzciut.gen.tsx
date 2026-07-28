@@ -122,7 +122,7 @@ export const CUES: Cue[] = [
   { key: "cmp_num1_tanaceto_s04_muro", start: 529.6, dur: 5.48, kind: "numcard", el: (d) => <NumberCard durationInFrames={d} number="1" name="Tanaceto · las esquinas" bg="broll/vah3z2zzciut/vh_w01_tansy_bed.mp4" eyebrow="El muro de olor" total="5" accent="amber" /> },
   { key: "b100", start: 535.08, dur: 6.53, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vah3z2zzciut/vh_w01_tansy_bed.mp4" darken={0} clipDur={10.08} /> },
   { key: "b101", start: 541.16, dur: 3.19, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vah3z2zzciut/vh_w01_tansy_bed.mp4" darken={0} clipDur={10.08} /> },
-  { key: "cmp_aviso_tanaceto_s04_muro", start: 543.9, dur: 7.1, kind: "impact", el: (d) => <ImpactReveal durationInFrames={d} image="broll/vah3z2zzciut/vh_s04_tansy.mp4" impact="Se expande solo." setup="El tanaceto es perenne" impactAccent="amber" hitAt={1.1} boom={0} darken={0.45} /> },
+  { key: "cmp_aviso_tanaceto_s04_muro", start: 543.9, dur: 7.1, kind: "impact", el: (d) => <ImpactReveal durationInFrames={d} image="broll/vah3z2zzciut/vh_w01_tansy_bed.mp4" impact="Se expande solo." setup="El tanaceto es perenne" impactAccent="amber" hitAt={1.1} boom={0} darken={0.45} /> },
   { key: "b104", start: 551, dur: 4.45, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vah3z2zzciut/vh_w06_broccoli.mp4" darken={0} clipDur={22.52} /> },
   { key: "b105", start: 555, dur: 4.79, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vah3z2zzciut/vh_w07_cabbage_rows.mp4" darken={0} clipDur={10.07} /> },
   { key: "b106", start: 559.34, dur: 5.75, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/vah3z2zzciut/vh_c03_planting_seedling.mp4" darken={0} clipDur={10.08} /> },

@@ -142,6 +142,11 @@
   la luminancia real (`ffmpeg -vf scale=1:1 -pix_fmt gray`) frame por frame, ver QUÉ cue está en ese
   segundo en el `.gen.tsx` (no en el beatsheet) y recién ahí abrir el componente. Adiviné dos veces
   y gasté dos renders.
+- 2026-07-28 — ⛔ EN UN RE-RENDER PARCIAL, EL ASSET NUEVO TIENE QUE ESTAR EN EL RELEASE YA SUBIDO.
+  `_<slug>_assets.txt` se genera a partir de lo que los cues referencian EN ESE MOMENTO, así que un
+  clip que existe en `public/` pero que ningún cue usaba NO viajó en el tarball: el chunk muere con
+  `404 while downloading file ...`. Antes de disparar un `ONLY_CHUNKS`, cruzar los assets que
+  referencian los cues nuevos contra `_<slug>_assets.txt` y exigir 0 fuera de la lista.
 - 2026-07-28 — Truco para re-render PARCIAL: `ONLY_CHUNKS` reusa el release ya subido, así que el
   arreglo tiene que apoyarse en un asset que YA esté empaquetado. Si generás un archivo nuevo hay
   que re-subir 1,2 GB y rendear todo de nuevo.
