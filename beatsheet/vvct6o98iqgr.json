@@ -4895,8 +4895,8 @@
       "start": 1138.4,
       "dur": 4,
       "kind": "numcard",
-      "number": 5,
-      "total": 5,
+      "number": "5",
+      "total": "5",
       "eyebrow": "Paso",
       "name": "No repitas en 3 semanas"
     },

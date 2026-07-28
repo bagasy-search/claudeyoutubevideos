@@ -133,6 +133,11 @@ visibles.forEach((m, i) => {
       else delete props.image;
     }
     if (props.image && /^real\//.test(props.image) && !haveReal(props.image.slice(5))) delete props.image;
+    // beatsheet serializa los números como JSX pelado (number=5 → error de sintaxis).
+    // Los props que son ETIQUETA y no magnitud van SIEMPRE como string.
+    for (const k of ["number", "total", "num", "rank", "step", "figure", "display", "unit"]) {
+      if (typeof props[k] === "number") props[k] = String(props[k]);
+    }
     beats.push({ id, start, dur, kind: m.kind, ...props });
     lastKind = m.kind;
     return;
