@@ -6,7 +6,7 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 10.98s  <FraseCinetica />
  * 21.47s  <LoopLockV43 />
  * 30.00s  <AvatarKeyword />
- * 30.86s  <ErrorStinger />
+ * 31.36s  <ErrorStinger />
  * 34.30s  <FraseCinetica />
  * 41.70s  <LowerThird />
  * 58.34s  <LowerThird />
@@ -21,7 +21,7 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 109.38s  <ChecklistReveal />
  * 119.56s  <FraseCinetica />
  * 120.54s  <ErrorStinger />
- * 129.88s  <BigStatReveal />
+ * 129.88s  <CalloutMark />
  * 129.88s  <FraseCinetica />
  * 132.02s  <ErrorStinger />
  * 140.84s  <BulletCascade />
@@ -38,7 +38,7 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 184.54s  <ChecklistReveal />
  * 194.42s  <LowerThird />
  * 202.68s  <BigStatReveal />
- * 218.12s  <ErrorStinger />
+ * 218.54s  <ErrorStinger />
  * 222.62s  <ErrorStinger />
  * 243.20s  <FraseCinetica />
  * 248.20s  <FraseCinetica />
@@ -50,16 +50,17 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 292.30s  <BulletCascade />
  * 299.22s  <ErrorStinger />
  * 299.22s  <ErrorStinger />
- * 305.86s  <ErrorStinger />
+ * 306.82s  <ErrorStinger />
  * 308.74s  <FraseCinetica />
  * 320.46s  <RawShot src="img/p_v43tq6jgz3dw_escribe_lista.png" />
  * 320.46s  <LowerThird />
  * 322.86s  <BigStatReveal />
  * 325.02s  <RawShot src="img/p_v43tq6jgz3dw_revisa_coronilla.png" />
- * 327.66s  <LowerThird />
+ * 328.62s  <LowerThird />
  * 354.02s  <ErrorStinger />
  * 363.52s  <AvatarPizarra />
  * 363.52s  <LowerThird />
+ * 364.34s  <LowerThird />
  * 371.54s  <LowerThird />
  * 382.64s  <FraseCinetica />
  * 383.12s  <FraseCinetica />
@@ -86,9 +87,9 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 486.10s  <FraseCinetica />
  * 487.04s  <ChapterTitle />
  * 487.04s  <LowerThird />
- * 496.90s  <FraseCinetica />
+ * 497.96s  <FraseCinetica />
  * 506.47s  <BarCompare />
- * 516.20s  <BigStatReveal />
+ * 516.20s  <CalloutMark />
  * 522.42s  <BigStatReveal />
  * 529.78s  <BigStatReveal />
  * 542.28s  <ChecklistReveal />
@@ -106,7 +107,6 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 648.94s  <PullQuote />  "img/p_v43tq6jgz3dw_consulta_elsa.png"
  * 648.94s  <FraseCinetica />
  * 651.36s  <LowerThird />
- * 659.72s  <LowerThird />
  * 662.57s  <MitoVerdad />
  * 674.66s  <ErrorStinger />
  * 677.46s  <FraseCinetica />
@@ -116,7 +116,7 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 708.14s  <MitoVerdad />
  * 712.04s  <RawShot src="img/p_v43tq6jgz3dw_mito_romero_cebolla.png" />
  * 712.04s  <ErrorStinger />
- * 726.72s  <ErrorStinger />
+ * 727.96s  <ErrorStinger />
  * 740.02s  <ChapterTitle />
  * 742.74s  <LowerThird />
  * 752.26s  <AvatarPizarra />
@@ -236,11 +236,11 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 1455.72s  <LowerThird />
  * 1467.90s  <LowerThird />
  * 1470.58s  <LowerThird />
- * 1475.40s  <LowerThird />
+ * 1476.96s  <LowerThird />
  * 1486.00s  <HookCaption />
  * 1488.12s  <RawShot src="img/p_v43tq6jgz3dw_cierre_elsa.png" />
  * 1514.32s  <FraseCinetica />
- * 1521.06s  <FraseCinetica />
+ * 1521.94s  <FraseCinetica />
  * 1525.90s  <FraseCinetica />
  * 1525.90s  <FraseCinetica />
  * 6.80s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_001.mp4"
@@ -249,7 +249,6 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 23.50s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_004.mp4"
  * 27.16s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_005.mp4"
  * 34.30s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_006.mp4"
- * 39.94s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_244.mp4"
  * 45.50s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_008.mp4"
  * 50.88s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_246.mp4"
  * 60.00s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_248.mp4"
@@ -316,7 +315,6 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 349.50s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_297.mp4"
  * 351.94s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_052.mp4"
  * 357.88s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_300.mp4"
- * 368.38s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_301.mp4"
  * 371.54s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_302.mp4"
  * 388.08s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_053.mp4"
  * 392.42s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_304.mp4"
@@ -398,12 +396,9 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 744.32s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_362.mp4"
  * 747.54s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_363.mp4"
  * 750.28s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_115.mp4"
- * 752.52s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_116.mp4"
  * 757.70s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_117.mp4"
- * 761.06s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_365.mp4"
  * 764.28s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_366.mp4"
  * 768.50s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_367.mp4"
- * 776.36s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_368.mp4"
  * 780.76s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_119.mp4"
  * 783.04s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_369.mp4"
  * 787.88s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_370.mp4"
@@ -467,7 +462,6 @@ export { MainV43, TOTAL_FRAMES_V43 } from "../_fed6/VideoEdit/Main_v43tq6jgz3dw"
  * 1325.70s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_214.mp4"
  * 1329.08s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_215.mp4"
  * 1343.98s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_218.mp4"
- * 1352.64s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_475.mp4"
  * 1366.32s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_219.mp4"
  * 1400.40s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_486.mp4"
  * 1423.30s  "broll/v43tq6jgz3dw/bd_v43tq6jgz3dw_491.mp4"

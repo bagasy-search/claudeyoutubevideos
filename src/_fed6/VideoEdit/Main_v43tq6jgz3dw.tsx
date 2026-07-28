@@ -11,6 +11,7 @@ import { FraseCinetica } from "./scenes/FraseCinetica";
 import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
+import { BarCompare } from "./scenes/BarCompare";
 import { FocusCardsV43 } from "./FocusCards_v43tq6jgz3dw";
 import { LoopLockV43 } from "./LoopLock_v43tq6jgz3dw";
 import { F_INTER } from "./kit/premium/theme";
@@ -129,6 +130,13 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
   : b.kind === "focuscards" ? <FocusCardsV43 durationInFrames={d} items={b.items} title={b.title} />
   : b.kind === "looplock" ? <LoopLockV43 durationInFrames={d} title={b.title} sub={b.sub} />
+  // BarCompare en HORIZONTAL: en vertical el valor de la barra más alta se dibuja arriba de la
+  // barra y se encima con el título (se vio en la cuadrícula: "12 mg" pisando "EL CAMPEÓN ABSOLUTO").
+  // En horizontal el valor va al costado de la barra, así que nunca choca con el encabezado.
+  // Se resuelve acá y no en scenes/BarCompare.tsx porque ese archivo es COMPARTIDO con otros videos.
+  : b.kind === "bars" ? <BarCompare durationInFrames={d} title={b.title} eyebrow={b.eyebrow} unit={b.unit}
+      accent="accent" medico orientation="horizontal"
+      bars={(b.bars || []).map((x: any) => ({ label: x.label, value: x.value, tone: x.tone, winner: x.winner, note: x.note }))} />
   : renderFederer2Comp(b, d, { medico: true });
 
 // ── Endcard ES (inline, aislado — no toca el Endcard compartido) ──────────────────────────

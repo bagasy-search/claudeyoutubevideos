@@ -373,6 +373,33 @@ for (const f of fs.readdirSync("public").filter((x) => /^extra_beats_.*\.json$/.
 beats.sort((a, b) => a.start - b.start);
 if (extraOK || extraMiss) console.log(`beats extra: +${extraOK} anclados · ${extraMiss} sin ancla`);
 
+// ── NORMALIZAR `stat`: BigStatReveal usa un ODÓMETRO y su `value` es NUMBER ──────────────────
+// Pasarle un string ("3,5 mg", "H₂O₂", "x3 o x4") no falla: renderiza "000" en pantalla, que es
+// peor que fallar porque se ve como un dato roto y nadie se entera hasta mirar el render.
+// Acá se parte el string en prefix + número + suffix; y si NO hay número, el beat se convierte
+// en `callout`, que sí muestra texto libre.
+let statNum = 0, statCallout = 0;
+for (const b of beats) {
+  if (b.kind !== "stat") continue;
+  if (b.label && !b.support) { b.support = b.label; delete b.label; }
+  if (typeof b.value === "number") { statNum++; continue; }
+  const raw = String(b.value ?? "").trim();
+  const m = raw.match(/^([^\d]*?)\s*([\d]+(?:[.,][\d]+)?)\s*(.*)$/);
+  if (m) {
+    b.prefix = m[1] || "";
+    b.value = parseFloat(m[2].replace(",", "."));
+    b.suffix = m[3] ? (m[3].startsWith("%") ? m[3] : " " + m[3]) : "";
+    statNum++;
+  } else {
+    b.kind = "callout";
+    b.figure = raw;
+    b.caption = b.support || b.label || "";
+    delete b.value; delete b.support; delete b.label; delete b.prefix; delete b.suffix;
+    statCallout++;
+  }
+}
+console.log(`stats: ${statNum} numéricos · ${statCallout} pasados a callout (valor no numérico)`);
+
 // ── POST-PASS MILIMÉTRICO ───────
 const KIT_CLIPS = [];
 for (const beat of beats) {
