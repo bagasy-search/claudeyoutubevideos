@@ -86,7 +86,14 @@ function buildWindows(): AvatarWindow[] {
   const HOOK_FULL = 2.2;
   const HOOK_END = 7.6;
   const post = coll.filter((wnd) => wnd.start < HOOK_FULL || wnd.start >= HOOK_END);
-  post.push({ start: 0, mode: "full" }, { start: HOOK_FULL, mode: "hidden" });
+  // El avatar se queda FULL durante TODO el hook, no solo los primeros HOOK_FULL segundos.
+  // Antes pasaba a `hidden` a los 2,2 s y, como el primer b-roll recién entra a los 6,8 s y el
+  // GAP-FILL de más abajo sólo empieza en HOOK_END, quedaban ~5 s de FONDO NEGRO PELADO detrás
+  // del scrim — justo en el tramo que decide la retención. `blackdetect` no lo caza porque el
+  // texto del scrim impide que el frame sea negro puro, así que el chequeo técnico daba OK.
+  // `AvatarScrimText` está hecho para ir ENCIMA del avatar (trae su propio velo oscuro): con el
+  // avatar detrás el texto se lee igual y además se ve a la persona hablando.
+  post.push({ start: 0, mode: "full" });
   const resume = coll.filter((wnd) => wnd.start < HOOK_END).pop();
   post.push({ start: HOOK_END, mode: resume && resume.start >= HOOK_FULL ? "hidden" : (resume?.mode ?? "hidden") });
   post.sort((a, b) => a.start - b.start);
