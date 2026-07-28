@@ -1026,7 +1026,7 @@ export const BEATS: VBeat[] = [
   "variant": "lift",
   "cut": false,
   "props": {
-   "image": "broll/vsdjytp30ogs/d030.mp4",
+   "image": "img/vsdjytp30ogs_029.jpg",
    "kicker": "Manos después de los 60",
    "title": "No se hizo en la playa",
    "hot": [],
@@ -1111,7 +1111,7 @@ export const BEATS: VBeat[] = [
   "variant": "iris",
   "cut": false,
   "props": {
-   "image": "broll/vsdjytp30ogs/d034.mp4",
+   "image": "img/vsdjytp30ogs_033.jpg",
    "kicker": "Manos después de los 60",
    "title": "Todas las mañanas, todos los años",
    "hot": [],
@@ -1276,7 +1276,7 @@ export const BEATS: VBeat[] = [
   "variant": "whip",
   "cut": false,
   "props": {
-   "image": "broll/vsdjytp30ogs/d039.mp4",
+   "image": "img/vsdjytp30ogs_038.jpg",
    "kicker": "Manos después de los 60",
    "title": "El vidrio lo frena casi todo",
    "hot": [],
@@ -1600,7 +1600,7 @@ export const BEATS: VBeat[] = [
   "variant": "whip",
   "cut": false,
   "props": {
-   "image": "broll/vsdjytp30ogs/d048.mp4",
+   "image": "img/vsdjytp30ogs_050.jpg",
    "kicker": "Manos después de los 60",
    "title": "La sala llena",
    "hot": [],
@@ -2383,7 +2383,7 @@ export const BEATS: VBeat[] = [
   "variant": "iris",
   "cut": false,
   "props": {
-   "image": "broll/vsdjytp30ogs/d071.mp4",
+   "image": "img/vsdjytp30ogs_070.jpg",
    "kicker": "Manos después de los 60",
    "title": "Taparlo",
    "hot": [],
@@ -2547,7 +2547,7 @@ export const BEATS: VBeat[] = [
   "variant": "whip",
   "cut": false,
   "props": {
-   "image": "broll/vsdjytp30ogs/d077.mp4",
+   "image": "img/vsdjytp30ogs_078.jpg",
    "kicker": "Manos después de los 60",
    "title": "Cuánta raíz",
    "hot": [],
@@ -4112,7 +4112,7 @@ export const BEATS: VBeat[] = [
   "variant": "lift",
   "cut": false,
   "props": {
-   "image": "broll/vsdjytp30ogs/d127.mp4",
+   "image": "img/vsdjytp30ogs_126.jpg",
    "kicker": "Manos después de los 60",
    "title": "Pica, sangra o se levanta",
    "hot": [],

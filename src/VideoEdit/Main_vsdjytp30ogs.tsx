@@ -255,12 +255,12 @@ export {TOTAL_FRAMES};
   <FedQuote/> "img/vsdjytp30ogs_029.jpg"
   <FedFullShot/> "broll/vsdjytp30ogs_s/d028.mp4"
   <FedFullShot/> "img/vsdjytp30ogs_029.jpg"
-  <FedHero/> "broll/vsdjytp30ogs/d030.mp4"
+  <FedHero/> "img/vsdjytp30ogs_029.jpg"
   <FedStat/> "img/vsdjytp30ogs_029.jpg"
   <FedFullShot/> "broll/vsdjytp30ogs_s/d031.mp4"
   <FedFullShot/> "broll/vsdjytp30ogs_s/d032.mp4"
   <FedFullShot/> "img/vsdjytp30ogs_033.jpg"
-  <FedHero/> "broll/vsdjytp30ogs/d034.mp4"
+  <FedHero/> "img/vsdjytp30ogs_033.jpg"
   <FedHero/> "img/vsdjytp30ogs_033.jpg"
   <FedFullShot/> "broll/vsdjytp30ogs_s/d035.mp4"
   <FedFullShot/> "img/vsdjytp30ogs_036.jpg"
@@ -270,7 +270,7 @@ export {TOTAL_FRAMES};
   <FedStat/> "img/vsdjytp30ogs_038.jpg"
   <FedAvatarFull/>
   <FedStep/> "img/vsdjytp30ogs_038.jpg"
-  <FedHero/> "broll/vsdjytp30ogs/d039.mp4"
+  <FedHero/> "img/vsdjytp30ogs_038.jpg"
   <FedStep/> "img/vsdjytp30ogs_038.jpg"
   <FedFullShot/> "broll/vsdjytp30ogs_s/d040.mp4"
   <FedFullShot/> "broll/vsdjytp30ogs_s/d041.mp4"
@@ -290,7 +290,7 @@ export {TOTAL_FRAMES};
   <FedQuote/> "img/vsdjytp30ogs_050.jpg"
   <FedAvatarFull/>
   <FedStat/> "img/vsdjytp30ogs_050.jpg"
-  <FedHero/> "broll/vsdjytp30ogs/d048.mp4"
+  <FedHero/> "img/vsdjytp30ogs_050.jpg"
   <FedAvatarFull/>
   <FedFullShot/> "broll/vsdjytp30ogs_s/d049.mp4"
   <FedFullShot/> "img/vsdjytp30ogs_050.jpg"
@@ -340,7 +340,7 @@ export {TOTAL_FRAMES};
   <FedFullShot/> "img/vsdjytp30ogs_070.jpg"
   <FedStat/> "img/vsdjytp30ogs_070.jpg"
   <FedStep/> "img/vsdjytp30ogs_070.jpg"
-  <FedHero/> "broll/vsdjytp30ogs/d071.mp4"
+  <FedHero/> "img/vsdjytp30ogs_070.jpg"
   <FedFullShot/> "img/vsdjytp30ogs_070.jpg"
   <FedFullShot/> "broll/vsdjytp30ogs_s/d073.mp4"
   <FedAvatarFull/>
@@ -350,7 +350,7 @@ export {TOTAL_FRAMES};
   <FedFullShot/> "img/vsdjytp30ogs_076.jpg"
   <FedStat/> "img/vsdjytp30ogs_076.jpg"
   <FedStep/> "img/vsdjytp30ogs_076.jpg"
-  <FedHero/> "broll/vsdjytp30ogs/d077.mp4"
+  <FedHero/> "img/vsdjytp30ogs_078.jpg"
   <FedFullShot/> "img/vsdjytp30ogs_078.jpg"
   <FedAvatarFull/>
   <FedQuote/> "img/vsdjytp30ogs_078.jpg"
@@ -455,7 +455,7 @@ export {TOTAL_FRAMES};
   <FedAvatarFull/>
   <FedBeforeAfter/> "img/vsdjytp30ogs_126.jpg"
   <FedFullShot/> "img/vsdjytp30ogs_126.jpg"
-  <FedHero/> "broll/vsdjytp30ogs/d127.mp4"
+  <FedHero/> "img/vsdjytp30ogs_126.jpg"
   <FedAvatarFull/>
   <FedFullShot/> "broll/vsdjytp30ogs_s/d128.mp4"
   <FedAvatarFull/>

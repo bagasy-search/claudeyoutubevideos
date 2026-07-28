@@ -77,6 +77,47 @@ for (const b of beats) {
   }
 }
 
+/* ------------- 1.5 · un .mp4 NUNCA puede ir en un prop de IMAGEN -------- */
+// `image`/`imageA`/`imageB` los pinta <Img>: un .mp4 ahí da "EncodingError: The source image
+// cannot be decoded" y mata el chunk entero. Pasaba con los beats de b-roll montados con tarjeta
+// (FedHero) y con los componentes a los que se les inyectó el asset vecino. Sólo `src` de
+// FedFullShot con video:true admite un .mp4.
+const imgPool = beats
+  .map((b) => b.props?.src)
+  .filter((p) => typeof p === 'string' && /^img\/.+\.(jpg|png)$/.test(p));
+const cercana = (start) => {
+  let best = imgPool[0] || null;
+  let bd = Infinity;
+  for (const b of beats) {
+    const p = b.props?.src;
+    if (typeof p !== 'string' || !/^img\/.+\.(jpg|png)$/.test(p)) continue;
+    const d = Math.abs(b.start - start);
+    if (d < bd) {
+      bd = d;
+      best = p;
+    }
+  }
+  return best;
+};
+let mp4EnImagen = 0;
+for (const b of beats) {
+  if (!b.props) continue;
+  for (const f of ['image', 'imageA', 'imageB', 'bg', 'poster']) {
+    const v = b.props[f];
+    if (typeof v === 'string' && /\.(mp4|webm|mov)$/i.test(v)) {
+      const n = cercana(b.start);
+      if (n) b.props[f] = n;
+      else delete b.props[f];
+      mp4EnImagen++;
+    }
+  }
+  // y al revés: un FedFullShot con src de video tiene que declarar video:true
+  if (b.comp === 'FedFullShot' && typeof b.props.src === 'string') {
+    b.props.video = /\.(mp4|webm|mov)$/i.test(b.props.src);
+  }
+}
+console.log(`.mp4 sacados de props de imagen: ${mp4EnImagen}`);
+
 /* ---------------------------- 2 · tildes y eñes ------------------------- */
 const FIX = [
   [/\banios\b/g, 'años'], [/\bAnios\b/g, 'Años'], [/\banio\b/g, 'año'], [/\bAnio\b/g, 'Año'],

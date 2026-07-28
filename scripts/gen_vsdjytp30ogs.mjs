@@ -116,7 +116,7 @@ for (let i = 0; i < beats.length; i++) {
 
     // ~40% de las tomas se montan con un componente CON TARJETA (FedHero/FedQuote) en vez de
     // toma pelada: sube la densidad de kit y da variedad de lectura.
-    const conTarjeta = b.caption && i % 5 === 0;
+    const conTarjeta = b.caption && b.kind === 'img' && i % 5 === 0; // NUNCA con broll: FedHero pinta image con <Img> y un .mp4 ahi mata el chunk
     if (conTarjeta && prevComp !== 'FedHero') {
       out.push({
         id,
