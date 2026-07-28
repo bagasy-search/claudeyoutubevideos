@@ -252,6 +252,7 @@ export const FED_BEATS: any[] = [
   "cut": true,
   "items": [
    {
+    "at": 0,
     "word": "CIRCULACION",
     "sub": "casi todo lo que sentimos despues de los 60 empieza aca"
    }
@@ -2339,15 +2340,15 @@ export const FED_BEATS: any[] = [
   "cut": true,
   "items": [
    {
-    "title": "En que trabajas",
+    "card": "En que trabajas",
     "sub": "El horno, la plancha, la parrilla"
    },
    {
-    "title": "Cuando empezo",
+    "card": "Cuando empezo",
     "sub": "Embarazo, pastillas, mudanza"
    },
    {
-    "title": "A que distancia tenes la cara",
+    "card": "A que distancia tenes la cara",
     "sub": "Del fuego, todos los dias"
    }
   ]
@@ -2431,6 +2432,7 @@ export const FED_BEATS: any[] = [
   "cut": false,
   "items": [
    {
+    "at": 0,
     "word": "MECANISMO",
     "sub": "Aunque cueste dos pesos"
    }
@@ -2898,6 +2900,7 @@ export const FED_BEATS: any[] = [
   "cut": true,
   "items": [
    {
+    "at": 0,
     "word": "Niacinamida",
     "sub": "Una forma de vitamina B3"
    }
@@ -2912,11 +2915,11 @@ export const FED_BEATS: any[] = [
   "cut": false,
   "items": [
    {
-    "title": "El romero",
+    "card": "El romero",
     "sub": "Frena la fabrica de pigmento"
    },
    {
-    "title": "La niacinamida",
+    "card": "La niacinamida",
     "sub": "Frena el reparto a las vecinas"
    }
   ]
