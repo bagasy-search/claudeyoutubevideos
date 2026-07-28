@@ -12,6 +12,7 @@ import { FraseCinetica } from "./scenes/FraseCinetica";
 import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
+import { PizarraExplicaVlh } from "./scenes/PizarraExplica_vlhdvm2isyur";
 import { FocusCardsVlh } from "./FocusCards_vlhdvm2isyur";
 import { LoopLockVlh } from "./LoopLock_vlhdvm2isyur";
 import { F_INTER } from "./kit/premium/theme";
@@ -316,6 +317,10 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "errorstinger" ? <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} />
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  // `board` va por la variante PROPIA del slug: la del kit deja el badge numerado (absolute,
+  // a la izquierda) encima de la primera letra del `sub` cuando el ítem NO trae imagen.
+  // Visto en la auditoría del MP4: "Hablalo…" salía como "ablalo…". Fix = marginLeft 74.
+  : b.kind === "board" ? <PizarraExplicaVlh durationInFrames={d} eyebrow={b.eyebrow} title={b.title} items={b.items || []} side={b.side || "left"} />
   : b.kind === "focuscards" ? <FocusCardsVlh durationInFrames={d} items={b.items} title={b.title} />
   : b.kind === "looplock" ? <LoopLockVlh durationInFrames={d} title={b.title} sub={b.sub} />
   : renderFederer2Comp(b, d, { medico: true });
