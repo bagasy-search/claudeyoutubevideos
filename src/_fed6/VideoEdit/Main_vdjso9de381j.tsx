@@ -14,6 +14,8 @@ import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
 import { FocusCardsVdj } from "./FocusCards_vdjso9de381j";
 import { HeadlineVdj } from "./Headline_vdjso9de381j";
+import { CalloutVdj } from "./Callout_vdjso9de381j";
+import { BoardVdj } from "./Board_vdjso9de381j";
 import { F_INTER } from "./kit/premium/theme";
 import { FEDZ_BEATS } from "./federer_vdjso9de381j_beats";
 import { FEDZ_BROLL } from "./federer_vdjso9de381j_broll";
@@ -154,6 +156,18 @@ const renderComp = (b: any, d: number) =>
   // el `headline` del kit pinta las palabras no resaltadas con la tinta OSCURA del tema sobre un
   // panel oscuro → ilegibles (lo cazó la cuadrícula). Variante propia con contraste garantizado.
   : b.kind === "headline" ? <HeadlineVdj durationInFrames={d} tokens={b.tokens} eyebrow={b.eyebrow} />
+  // `callout` del kit = CalloutMark, que espera {figure, caption, image}. Los directores mandan
+  // {title, text} → tarjeta VACÍA (el creador la vio en 0:34). Variante propia con título+cuerpo.
+  : b.kind === "callout" ? <CalloutVdj durationInFrames={d} title={b.title} text={b.text} eyebrow={b.eyebrow} />
+  // `board` del kit = PizarraExplica, pensada para convivir con el avatar al costado: acá quedaba
+  // encajonada, con el número TAPANDO el título y 2/3 de tarjeta vacía (el creador la vio en 4:12).
+  : b.kind === "board" ? <BoardVdj durationInFrames={d} title={b.title} eyebrow={b.eyebrow} items={b.items} />
+  // `splitlist` (BulletCascade) NO trae panel: el texto teal cae directo sobre el b-roll y sobre una
+  // toma clara queda ILEGIBLE. `chips` (SplitPanel) sin imagen queda media pantalla vacía. Las dos
+  // listas van a la misma tarjeta propia — el kind NO cambia, así que las duraciones no se mueven.
+  : b.kind === "splitlist" || b.kind === "chips"
+    ? <BoardVdj durationInFrames={d} title={b.title} eyebrow={b.eyebrow}
+        items={(b.items || b.chips || []).map((it: any) => (typeof it === "string" ? { title: it } : { title: it.text ?? it.title, sub: it.sub }))} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainVdj: React.FC = () => {

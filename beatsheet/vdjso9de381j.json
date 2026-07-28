@@ -25,7 +25,8 @@
    "start": 11.28,
    "dur": 2.94,
    "kind": "rule",
-   "text": "La etiqueta lo promete. El frasco no lo cumple."
+   "text": "La etiqueta lo promete. El frasco no lo cumple.",
+   "title": "La etiqueta lo promete. El frasco no lo cumple."
   },
   {
    "id": "m003",
@@ -265,7 +266,8 @@
    "start": 91.02,
    "dur": 2.72,
    "kind": "rule",
-   "text": "Lo peor no era la cara."
+   "text": "Lo peor no era la cara.",
+   "title": "Lo peor no era la cara."
   },
   {
    "id": "m024",
@@ -404,7 +406,8 @@
    "start": 145.38,
    "dur": 2.58,
    "kind": "rule",
-   "text": "Te la voy a repetir hasta que te canses."
+   "text": "Te la voy a repetir hasta que te canses.",
+   "title": "Te la voy a repetir hasta que te canses."
   },
   {
    "id": "m036",
@@ -484,6 +487,12 @@
     "La memoria",
     "La piel",
     "La cara"
+   ],
+   "chips": [
+    "Las piernas",
+    "La memoria",
+    "La piel",
+    "La cara"
    ]
   },
   {
@@ -537,7 +546,8 @@
    "start": 182.14,
    "dur": 2.26,
    "kind": "rule",
-   "text": "Porque no es algo que falta. Es algo que sobra."
+   "text": "Porque no es algo que falta. Es algo que sobra.",
+   "title": "Porque no es algo que falta. Es algo que sobra."
   },
   {
    "id": "m045",
@@ -590,7 +600,8 @@
    "start": 194.8,
    "dur": 4.2,
    "kind": "rule",
-   "text": "Sin esto, el resto no sirve de nada"
+   "text": "Sin esto, el resto no sirve de nada",
+   "title": "Sin esto, el resto no sirve de nada"
   },
   {
    "id": "m048",
@@ -892,7 +903,8 @@
    "start": 299.32,
    "dur": 4.2,
    "kind": "rule",
-   "text": "Esos canos no tienen bomba"
+   "text": "Esos canos no tienen bomba",
+   "title": "Esos canos no tienen bomba"
   },
   {
    "id": "m069",
@@ -1026,7 +1038,9 @@
    "kind": "stat",
    "big": "300",
    "unit": "gramos",
-   "label": "De liquido tirando para abajo, todo el dia"
+   "label": "De liquido tirando para abajo, todo el dia",
+   "value": "300",
+   "suffix": "gramos"
   },
   {
    "id": "m078",
@@ -1119,7 +1133,8 @@
    "start": 379.66,
    "dur": 2.06,
    "kind": "rule",
-   "text": "La linea estaba ahi"
+   "text": "La linea estaba ahi",
+   "title": "La linea estaba ahi"
   },
   {
    "id": "m089",
@@ -1129,7 +1144,9 @@
    "kind": "stat",
    "big": "50",
    "unit": "%",
-   "label": "Menos papada, acostada"
+   "label": "Menos papada, acostada",
+   "value": "50",
+   "suffix": "%"
   },
   {
    "id": "m090",
@@ -1163,7 +1180,8 @@
    "start": 396.38,
    "dur": 4.2,
    "kind": "rule",
-   "text": "Buena parte era agua"
+   "text": "Buena parte era agua",
+   "title": "Buena parte era agua"
   },
   {
    "id": "m094",
@@ -1331,7 +1349,8 @@
    "start": 470.98,
    "dur": 4.2,
    "kind": "rule",
-   "text": "Nada de leyendas: lo que hay escrito"
+   "text": "Nada de leyendas: lo que hay escrito",
+   "title": "Nada de leyendas: lo que hay escrito"
   },
   {
    "id": "m108",
@@ -1429,6 +1448,11 @@
     "Asiaticosido",
     "Madecasosido",
     "Acido asiatico"
+   ],
+   "chips": [
+    "Asiaticosido",
+    "Madecasosido",
+    "Acido asiatico"
    ]
   },
   {
@@ -1439,7 +1463,9 @@
    "kind": "stat",
    "big": "3",
    "unit": "tipo",
-   "label": "El colageno joven, el del rebote"
+   "label": "El colageno joven, el del rebote",
+   "value": "3",
+   "suffix": "tipo"
   },
   {
    "id": "m116",
@@ -1567,6 +1593,18 @@
      "value": 64,
      "tone": "teal"
     }
+   ],
+   "bars": [
+    {
+     "label": "Arrugas profundas",
+     "value": 78,
+     "tone": "teal"
+    },
+    {
+     "label": "Tejido elastico de la dermis",
+     "value": 64,
+     "tone": "teal"
+    }
    ]
   },
   {
@@ -1613,7 +1651,9 @@
    "kind": "stat",
    "big": "94",
    "unit": "pacientes",
-   "label": "Con insuficiencia venosa de piernas"
+   "label": "Con insuficiencia venosa de piernas",
+   "value": "94",
+   "suffix": "pacientes"
   },
   {
    "id": "m130",
@@ -1779,7 +1819,8 @@
    "start": 643.22,
    "dur": 2.3,
    "kind": "rule",
-   "text": "Despues del perfume: menos del 1%"
+   "text": "Despues del perfume: menos del 1%",
+   "title": "Despues del perfume: menos del 1%"
   },
   {
    "id": "m143",
@@ -1789,7 +1830,9 @@
    "kind": "stat",
    "big": "1",
    "unit": "%",
-   "label": "Lo que suele traer la cremita"
+   "label": "Lo que suele traer la cremita",
+   "value": "1",
+   "suffix": "%"
   },
   {
    "id": "m144",
@@ -1910,7 +1953,9 @@
    "kind": "stat",
    "big": "1",
    "unit": "cafe",
-   "label": "Lo que sale la bolsa de hojas"
+   "label": "Lo que sale la bolsa de hojas",
+   "value": "1",
+   "suffix": "cafe"
   },
   {
    "id": "m154",
@@ -1928,7 +1973,9 @@
    "kind": "stat",
    "big": "12",
    "unit": "minutos",
-   "label": "Todo el turno, para todo"
+   "label": "Todo el turno, para todo",
+   "value": "12",
+   "suffix": "minutos"
   },
   {
    "id": "m156",
@@ -2145,7 +2192,9 @@
    "kind": "stat",
    "big": "8",
    "unit": "horas",
-   "label": "Cada noche, siempre el mismo lado"
+   "label": "Cada noche, siempre el mismo lado",
+   "value": "8",
+   "suffix": "horas"
   },
   {
    "id": "m172",
@@ -2293,7 +2342,8 @@
    "start": 830.82,
    "dur": 4.2,
    "kind": "rule",
-   "text": "Esta noche, gratis: dormi para arriba"
+   "text": "Esta noche, gratis: dormi para arriba",
+   "title": "Esta noche, gratis: dormi para arriba"
   },
   {
    "id": "m184",
@@ -2342,9 +2392,15 @@
    "kind": "process",
    "title": "Como se levanta bien",
    "steps": [
-    "Algo firme abajo de las dos patas de la cabecera",
-    "La cabeza y el pecho suben juntos, en linea",
-    "Toda la cama en una pendiente muy suave"
+    {
+     "title": "Algo firme abajo de las dos patas de la cabecera"
+    },
+    {
+     "title": "La cabeza y el pecho suben juntos, en linea"
+    },
+    {
+     "title": "Toda la cama en una pendiente muy suave"
+    }
    ]
   },
   {
@@ -2390,7 +2446,8 @@
    "start": 884.78,
    "dur": 2.28,
    "kind": "rule",
-   "text": "La cara de la tarde, al despertar"
+   "text": "La cara de la tarde, al despertar",
+   "title": "La cara de la tarde, al despertar"
   },
   {
    "id": "m194",
@@ -2513,7 +2570,8 @@
    "start": 931.16,
    "dur": 2.3,
    "kind": "rule",
-   "text": "Aca la cantidad importa de verdad"
+   "text": "Aca la cantidad importa de verdad",
+   "title": "Aca la cantidad importa de verdad"
   },
   {
    "id": "m204",
@@ -2639,7 +2697,9 @@
    "kind": "stat",
    "big": "90",
    "unit": "%",
-   "label": "menos perdida de agua por la piel"
+   "label": "menos perdida de agua por la piel",
+   "value": "90",
+   "suffix": "%"
   },
   {
    "id": "m213",
@@ -2670,6 +2730,18 @@
    "kind": "bars",
    "title": "La misma cosa, distinta hora",
    "items": [
+    {
+     "label": "9 de la manana",
+     "value": 40,
+     "tone": "warn"
+    },
+    {
+     "label": "11 de la noche",
+     "value": 100,
+     "tone": "teal"
+    }
+   ],
+   "bars": [
     {
      "label": "9 de la manana",
      "value": 40,
@@ -2713,7 +2785,8 @@
    "start": 1019.86,
    "dur": 2.7,
    "kind": "rule",
-   "text": "Son pocos casos. Pero existen"
+   "text": "Son pocos casos. Pero existen",
+   "title": "Son pocos casos. Pero existen"
   },
   {
    "id": "m220",
@@ -2754,6 +2827,11 @@
    "kind": "chips",
    "title": "Si la tomas",
    "items": [
+    "Con moderacion",
+    "Tiempos cortos",
+    "Infusion suave"
+   ],
+   "chips": [
     "Con moderacion",
     "Tiempos cortos",
     "Infusion suave"
@@ -3012,7 +3090,9 @@
    "kind": "stat",
    "big": "5",
    "unit": "kilos",
-   "label": "con la cabeza derecha"
+   "label": "con la cabeza derecha",
+   "value": "5",
+   "suffix": "kilos"
   },
   {
    "id": "m243",
@@ -3022,7 +3102,9 @@
    "kind": "stat",
    "big": "12",
    "unit": "kilos",
-   "label": "inclinada 15 grados"
+   "label": "inclinada 15 grados",
+   "value": "12",
+   "suffix": "kilos"
   },
   {
    "id": "m244",
@@ -3032,7 +3114,9 @@
    "kind": "stat",
    "big": "27",
    "unit": "kilos",
-   "label": "inclinada 60 grados"
+   "label": "inclinada 60 grados",
+   "value": "27",
+   "suffix": "kilos"
   },
   {
    "id": "m245",
@@ -3142,7 +3226,8 @@
    "start": 1158.4,
    "dur": 4.2,
    "kind": "rule",
-   "text": "Y encima le tapas el desague"
+   "text": "Y encima le tapas el desague",
+   "title": "Y encima le tapas el desague"
   },
   {
    "id": "m252",
@@ -3300,9 +3385,15 @@
    "kind": "process",
    "title": "El gesto, paso a paso",
    "steps": [
-    "Sentado derecho, menton para atras",
-    "Mirada lenta hacia arriba",
-    "Dientes suaves y comisura para abajo"
+    {
+     "title": "Sentado derecho, menton para atras"
+    },
+    {
+     "title": "Mirada lenta hacia arriba"
+    },
+    {
+     "title": "Dientes suaves y comisura para abajo"
+    }
    ]
   },
   {
@@ -3328,7 +3419,9 @@
    "kind": "stat",
    "big": "10",
    "unit": "veces",
-   "label": "tres veces por dia"
+   "label": "tres veces por dia",
+   "value": "10",
+   "suffix": "veces"
   },
   {
    "id": "m266",
@@ -3364,6 +3457,18 @@
      "value": 100,
      "tone": "teal"
     }
+   ],
+   "bars": [
+    {
+     "label": "Respiracion corta, de arriba",
+     "value": 38,
+     "tone": "warn"
+    },
+    {
+     "label": "Respiracion honda, a la panza",
+     "value": 100,
+     "tone": "teal"
+    }
    ]
   },
   {
@@ -3382,7 +3487,8 @@
    "start": 1232.36,
    "dur": 2.8,
    "kind": "rule",
-   "text": "Sin material no hay obra"
+   "text": "Sin material no hay obra",
+   "title": "Sin material no hay obra"
   },
   {
    "id": "m271",
@@ -3404,7 +3510,9 @@
    "kind": "stat",
    "big": "1",
    "unit": "% por ano",
-   "label": "de colageno, desde los 20"
+   "label": "de colageno, desde los 20",
+   "value": "1",
+   "suffix": "% por ano"
   },
   {
    "id": "m273",
@@ -3414,7 +3522,9 @@
    "kind": "stat",
    "big": "30",
    "unit": "%",
-   "label": "del colageno en solo 5 anos"
+   "label": "del colageno en solo 5 anos",
+   "value": "30",
+   "suffix": "%"
   },
   {
    "id": "m274",
@@ -3472,6 +3582,18 @@
      "value": 100,
      "tone": "teal"
     }
+   ],
+   "bars": [
+    {
+     "label": "Lo que come",
+     "value": 42,
+     "tone": "warn"
+    },
+    {
+     "label": "Lo que necesita",
+     "value": 100,
+     "tone": "teal"
+    }
    ]
   },
   {
@@ -3492,7 +3614,8 @@
    "start": 1284.8,
    "dur": 4.2,
    "kind": "rule",
-   "text": "La vitamina C no es un lujo"
+   "text": "La vitamina C no es un lujo",
+   "title": "La vitamina C no es un lujo"
   },
   {
    "id": "m281",
@@ -3527,7 +3650,8 @@
    "start": 1300.52,
    "dur": 4.2,
    "kind": "rule",
-   "text": "No toda junta a la noche"
+   "text": "No toda junta a la noche",
+   "title": "No toda junta a la noche"
   },
   {
    "id": "m285",
@@ -3732,7 +3856,9 @@
    "kind": "stat",
    "big": "7 a 10",
    "unit": "dias",
-   "label": "Lo del liquido es lo primero que vas a ver"
+   "label": "Lo del liquido es lo primero que vas a ver",
+   "value": "7 a 10",
+   "suffix": "dias"
   },
   {
    "id": "m300",
@@ -3890,7 +4016,8 @@
    "start": 1446.2,
    "dur": 4.2,
    "kind": "rule",
-   "text": "El remedio casero es para lo que es benigno"
+   "text": "El remedio casero es para lo que es benigno",
+   "title": "El remedio casero es para lo que es benigno"
   },
   {
    "id": "m313",
@@ -3924,7 +4051,9 @@
    "kind": "stat",
    "big": "15",
    "unit": "anos",
-   "label": "Todas las noches, sin fallar una"
+   "label": "Todas las noches, sin fallar una",
+   "value": "15",
+   "suffix": "anos"
   },
   {
    "id": "m317",
@@ -4179,7 +4308,8 @@
    "start": 1565.34,
    "dur": 4.2,
    "kind": "rule",
-   "text": "Y cada vez vuelve un poquito peor"
+   "text": "Y cada vez vuelve un poquito peor",
+   "title": "Y cada vez vuelve un poquito peor"
   },
   {
    "id": "m340",
@@ -4226,9 +4356,15 @@
    "kind": "process",
    "title": "El masaje correcto: 3 pasos",
    "steps": [
-    "Abrir la salida en el hueco de la clavicula",
-    "Los costados del cuello, de la oreja hacia abajo",
-    "Recien ahi la cara: del centro hacia afuera y hacia abajo"
+    {
+     "title": "Abrir la salida en el hueco de la clavicula"
+    },
+    {
+     "title": "Los costados del cuello, de la oreja hacia abajo"
+    },
+    {
+     "title": "Recien ahi la cara: del centro hacia afuera y hacia abajo"
+    }
    ]
   },
   {
@@ -4255,7 +4391,8 @@
    "start": 1605.28,
    "dur": 3.36,
    "kind": "rule",
-   "text": "Primero se abre la salida. Recien despues se empuja."
+   "text": "Primero se abre la salida. Recien despues se empuja.",
+   "title": "Primero se abre la salida. Recien despues se empuja."
   },
   {
    "id": "m347",
@@ -4364,7 +4501,9 @@
    "kind": "stat",
    "big": "10",
    "unit": "veces",
-   "label": "Cada lado, sin apretar"
+   "label": "Cada lado, sin apretar",
+   "value": "10",
+   "suffix": "veces"
   },
   {
    "id": "m353",
@@ -4408,7 +4547,8 @@
    "start": 1643.3,
    "dur": 5.4,
    "kind": "rule",
-   "text": "Todo recorrido termina en el cuello. Siempre."
+   "text": "Todo recorrido termina en el cuello. Siempre.",
+   "title": "Todo recorrido termina en el cuello. Siempre."
   },
   {
    "id": "m357",
@@ -4418,7 +4558,9 @@
    "kind": "stat",
    "big": "1",
    "unit": "minuto",
-   "label": "Entero. No 15 segundos"
+   "label": "Entero. No 15 segundos",
+   "value": "1",
+   "suffix": "minuto"
   },
   {
    "id": "m358",
@@ -4764,7 +4906,9 @@
    "kind": "stat",
    "big": "20",
    "unit": "min",
-   "label": "Una se va sola. La otra no se va nunca."
+   "label": "Una se va sola. La otra no se va nunca.",
+   "value": "20",
+   "suffix": "min"
   },
   {
    "id": "m386",
