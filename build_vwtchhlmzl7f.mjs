@@ -88,7 +88,7 @@ const SECCIONES = [
     ancla: "Te dije que te iba a decir lo que el agua oxigenada NO hace",
     pool: ["px_fertilizer_hand","px_fertilizer_bag","px_beetle_leaf","px_stink_bug","px_weevil_macro","px_cut_finger","px_first_aid","px_washing_hands","px_hospital_corridor","px_vinegar_bottle","px_bleach_cleaning","px_warning_label","px_gloves_mask","px_foam_close"] },
   { id: "animales", objetivo: "Usos 15-19: gallinero, galpón y el moho negro (el que reemplaza 3 productos).",
-    ancla: "Los animales y el galpón",
+    ancla: "El bebedero de las gallinas",
     pool: ["px_chickens_yard","px_chicken_drinking","px_chicken_waterer","px_slimy_container","px_chicken_coop","px_nesting_box_eggs","px_hen_closeup","px_bird_bath","px_ducks_pond","px_green_pond","px_rubber_boots","px_boots_walking","px_shed_door","px_black_mold_wall","px_bathroom_tile","px_damp_basement","px_scrubbing_tile","px_spray_bottle"] },
   { id: "casa", objetivo: "Usos 20-25: cocina, heladera, ropa y baño. Universal — engancha al que no tiene huerta.",
     ancla: "Ahora entramos a la casa",
@@ -472,7 +472,13 @@ const bgIdx = {};
 // Los carteles NO van sobre fondo plano: se apoyan en un frame REAL del b-roll de su
 // propia sección. Así el componente y el material on-topic son el MISMO plano y el
 // video no se convierte en una sucesión de placas de texto.
-const OSCUROS = new Set(["px_damp_basement", "px_black_mold_wall", "px_hospital_corridor", "px_shed_door", "px_ant_nest", "px_storm_sky"]);
+// Clips demasiado oscuros o desenfocados para llevar un cartel encima: el texto se lee
+// pero la imagen no aporta NADA (el auditor los marcó dos veces). Fuera del pool de fondos;
+// siguen sirviendo como RawShot a pantalla completa, que es donde sí funcionan.
+const OSCUROS = new Set(["px_damp_basement", "px_black_mold_wall", "px_hospital_corridor", "px_shed_door",
+  "px_ant_nest", "px_storm_sky", "px_dusty_shelf", "px_opening_cap", "px_bleach_cleaning", "px_boots_walking",
+  "px_green_pond", "px_ducks_pond", "px_moldy_fruit", "px_gnats_plant", "px_spider_mite_web", "px_first_aid",
+  "px_washing_dishes", "px_kitchen_sponge", "px_thunder_field", "px_murky_water", "px_slimy_container"]);
 const bgOf = (sid, fijo) => {
   if (fijo) return `img/${SLUG}_bg_${fijo}.jpg`;
   const sec = SECCIONES.find((x) => x.id === sid) || SECCIONES[0];
