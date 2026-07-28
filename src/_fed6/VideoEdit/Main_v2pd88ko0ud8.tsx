@@ -29,7 +29,7 @@ const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errors
 // (Lo cazó la cuadrícula: el stat "pico de renovación" y una frase cinética salieron
 // sobre negro.) Al marcarlos overlay, buildWindows los deja como hueco → avatar FULL
 // detrás y el texto se apoya sobre la cara, que es como tiene que verse.
-const OVERLAY = new Set(["lowerthird", "frasecinetica", "stat", "quote", "callout", "chips", "rule"]);
+const OVERLAY = new Set(["lowerthird", "frasecinetica", "stat", "quote", "callout", "chips", "rule", "headline", "splitlist"]);
 // estos traen su PROPIO avatar montado → no hay que esconder la capa por debajo
 const OWNAVATAR = new Set(["avatarpizarra", "avatarkeyword"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);

@@ -748,7 +748,7 @@ export const FED_BEATS: any[] = [
   "dur": 5.6,
   "cut": false,
   "eyebrow": "Pico de renovacion",
-  "figure": "00 a 04 h",
+  "figure": "4 AM",
   "caption": "Tu cara se renueva mas rapido que a las 3 de la tarde"
  },
  {
