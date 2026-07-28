@@ -166,3 +166,34 @@
   `src/VideoEdit/Main_<slug>.tsx` que re-exporte el Main real y lleve el `ASSET_MANIFEST` en un
   comentario `/* */` con todos los visuales (el gate lo conserva cuando no hay `cues_<slug>.gen.tsx`).
 - 2026-07-22 — CREADOR (ESTRUCTURA DE GUION, importante): el cuerpo NO va como lista fría ("señal uno, señal dos, beneficio tres") → aburre. Escribir el cuerpo como UNA SOLA HISTORIA tipo NOVELA: un paciente concreto con nombre/edad, detalles ultra reales (diálogos, la cocina, el mate frío, las manos heladas bajo la frazada, el turno que le dieron para dentro de 3 meses), y POLÉMICA que engancha al mayor ("te tratan de viejo y no te miran", "te venden el frasco caro en vez de revisarte", "es la edad" como desprecio del sistema). Cada beneficio/causa/señal se va REVELANDO como un capítulo de esa historia, no anunciando "número tal". El recap final SÍ queda numerado (para FocusCards en pantalla). Objetivo: "los ancianos te van a amar como Dr. Federer". Aplicar a TODOS los guiones de este canal de acá en más.
+- 2026-07-28 — KIT (bug que NO se ve en la cuadrícula): los items de `avatarpizarra` van con
+  **`card`**, no con `word` (`PizItem = {image?, caption?, eyebrow?, card?, sub?, at?}`; el de
+  `word` es `AvatarKeyword`/`KwItem`). Si un item no trae ni `image` ni `card`, el componente cae
+  en la rama de imagen y hace `staticFile(item.image!)` con undefined → **el chunk MUERE** con
+  "undefined was passed to staticFile()". Tiró 4 de 30 chunks y no se detecta antes porque los
+  stills de la cuadrícula caen en otros frames. Chequear siempre, por script, que todo item de
+  pizarra tenga `card` o `image` antes de rendear.
+- 2026-07-28 — KIT (hook): el override del hook en `buildWindows` mandaba el avatar a `hidden` a
+  los 2,2 s, pero el primer b-roll entra recién a los ~6,8 s y el GAP-FILL anti-negro sólo empieza
+  en `HOOK_END` (7,6 s) → quedaban **~5 s de fondo NEGRO PELADO detrás del scrim**, justo en el
+  tramo que decide la retención. `blackdetect` NO lo caza (el texto del scrim impide el negro puro)
+  así que el chequeo técnico del farm daba OK. FIX: el avatar se queda **FULL durante todo el
+  hook** — `AvatarScrimText` trae su propio velo oscuro y está hecho para ir ENCIMA del avatar.
+  Auditar siempre el arranque con `stills.yml -f from=0 -f to=200`, no solo los frames 15 y 45.
+- 2026-07-28 — KIT (legibilidad): `BigStatReveal.value` es un **NUMBER** (usa un odómetro). Pasarle
+  un string ("3,5 mg", "H₂O₂") no falla: renderiza **"000"** en pantalla. Parsear a prefix+número+
+  suffix, y si no hay número mandar el beat a `callout` (que sí muestra texto libre).
+  `BarCompare` en vertical dibuja el valor ARRIBA de la barra y se encima con el título: usarlo
+  **horizontal, sin title/eyebrow y con máximo 2 barras** (con 3 se corta la primera fila).
+- 2026-07-28 — KIT (des-solape): al inyectar muchos beats anclados por frase, dos componentes caen
+  casi en el mismo instante y se dibujan encimados. Separar **por zona de pantalla**: `lowerthird`
+  (banda inferior) y `frasecinetica` (centro) no compiten entre sí, sólo cada uno consigo mismo;
+  los de pantalla completa compiten todos contra todos. Y `talk`/`raw` NO son componentes: no deben
+  desplazar a nadie.
+- 2026-07-28 — HEYGEN: este avatar (`avatar_iii`, digital twin) entrega video **continuo**: no hay
+  costura visible entre escenas. Busqué con umbral 0.06 y bajando hasta 0.015 y no aparece ni un
+  salto de pose, así que no hace falta reservar cortes a visual full para taparlas.
+- 2026-07-28 — FARM: el tarball de assets **no puede pasar los 2 GB** (límite de GitHub por asset);
+  con b-roll crudo de Pexels dio 4,4 GB y el release falla con HTTP 422. Recomprimir los clips a
+  720p/CRF 28 (2,7 GB → 376 MB) y el avatar a CRF 27. Y el prefijo del tar es el de los ARCHIVOS
+  (`p_<slug>`), no el slug pelado: con `<slug>` a secas las imágenes `p_<slug>_*.png` quedan fuera.
