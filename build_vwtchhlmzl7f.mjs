@@ -772,7 +772,7 @@ fs.writeFileSync(`src/VideoEdit/Main_${SLUG}.tsx`, mainTsx);
 
 const entry = `import { Composition, registerRoot } from "remotion";
 import { Main${SLUG}, TOTAL_FRAMES_${SLUG.toUpperCase()} } from "./VideoEdit/Main_${SLUG}";
-import "./style.css";
+import "./index.css";
 
 const Root: React.FC = () => (
   <Composition
