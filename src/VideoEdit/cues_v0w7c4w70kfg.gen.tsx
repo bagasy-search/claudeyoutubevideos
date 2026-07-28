@@ -4,7 +4,7 @@
 import React from 'react';
 import {staticFile} from 'remotion';
 import {FedBeforeAfter, FedChapter, FedChecklist, FedCta, FedFullShot, FedHero, FedLowerThird, FedMolecule, FedQuote, FedStat, FedStep, TEAL, COOL_BLUE} from '../FedererKit';
-import {FedBlacklist, FedBrickWall, FedCohort, FedLabelScan, FedOilBars, FedPaper, FedRivet, FedRoutineRing, FedSeal, FedSplitFace, FedTrial} from '../scenes/federer-fluid';
+import {FedBlacklist, FedBrickWall, FedCohort, FedLabelScan, FedOilBars, FedPaper, FedRivet, FedRoutineRing, FedSeal, FedSplitFace} from '../scenes/federer-fluid';
 import {FedFocusCards, FedLabRange, FedTwoPaths} from '../scenes/vucm3bvd869j';
 
 
@@ -460,7 +460,7 @@ export const CUES: Cue[] = [
     <FedFullShot totalF={177} src={staticFile('broll/v0w7c4w70kfg/delivery_truck_street.mp4')} video ken="in" accent={ACC} mood="warmdark" />
   )},
   {start: 721.92, dur: 9.28, cut: true, node: (
-    <FedTrial totalF={302} journal="SKINmed" year="2015" n={100} design="6 meses · caída de pelo · aceite de romero vs minoxidil 2%" groupA={{label:'Aceite de romero',value:6,suffix:' meses',tone:'good'}} groupB={{label:'Minoxidil 2%',value:6,suffix:' meses',tone:'good'}} title="Resultados comparables a los seis meses" sub="Y la vía por la que se cree que trabaja el romero es la irrigación." verdict="EMPATE" accent={TEALC} mood="science" />
+    <FedPaper totalF={302} journal="SKINmed" year="2015" meta="Ensayo a 6 meses · caída de pelo · 100 participantes, 50 por grupo" paperTitle="Aceite de romero comparado con minoxidil al 2%" authors="Panahi y col." lines={['Compararon aceite de romero contra minoxidil al 2% durante seis meses.','A los seis meses los resultados fueron comparables entre los dos grupos.','La vía por la que se cree que trabaja el romero es la irrigación.']} highlight={1} note="Comparables" side="right" accent={TEALC} mood="science" />
   )},
   {start: 737.30, dur: 5.86, node: (
     <FedChapter variant="fold" totalF={176} kicker="Tercer ingrediente" index="04" title="El pigmento suave" sub="Deposita un poquito de color. Y es acumulativo." accent={ACC} mood="gold" />
