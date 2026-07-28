@@ -161,6 +161,11 @@ for (const c of comps) {
   if (t == null) continue;
   let { at: _a, kind, dur = 6, ...props } = c;
   if (kind === "rule") { props = ruleToHeadline(props); kind = "headline"; }
+  // ⛔ `focuscards` NO se toma de los planes: los planes lo escriben con `atPhrase` (sin resolver)
+  // y FocusCards hace interpolate(frame, [it.at - 6, ...]) → con `at` undefined explota el chunk
+  // entero con "must contain only finite numbers". El recap lo arma el bloque de abajo, que sí
+  // resuelve cada paso al ms del caption y lo pasa en FRAMES.
+  if (kind === "focuscards") continue;
   // un diagram sin su lámina en disco mata el chunk con 404
   if (kind === "diagram") {
     const img = (props.slides || [])[0]?.image;

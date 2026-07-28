@@ -121,3 +121,26 @@
 - 2026-07-22 — CREADOR (encuadre, refuerza halfR): confirmado en el video de creatinina — cuando hay muchas imágenes/clips el avatar en SPLIT queda mal encuadrado. Aplicado: `buildWindows` emite solo full/hidden (cero halfR). El recap enumerado ("uno… cinco") ahora va con FocusCards (5 tarjetas, la que toca se enfoca al decir su número, ancladas al ms). Ambos ya son estándar del canal.
 - 2026-07-22 — PRODUCCIÓN (gotcha resuelto): si Pexels throttlea (429) y el b-roll queda RALO en un tramo (típico: el último tercio), el avatar en modo `hidden` sin clip detrás muestra el FONDO teal pelado → sale como NEGRO en el MP4 (blackdetect lo caza). FIX baked en `Main`: `buildWindows` ahora tiene un GAP-FILL — calcula cobertura (broll+fotos+comps) y donde NO hay contenido pone el avatar FULL (nunca fondo pelado). Aplicarlo a TODO Main de este kit. Además: auditar SIEMPRE el MP4 con `ffmpeg blackdetect` antes de dar por bueno el render; si hay negros, es b-roll ralo → gap-fill o bajar más clips y re-render PARCIAL de esos chunks.
 - 2026-07-22 — CREADOR (ESTRUCTURA DE GUION, importante): el cuerpo NO va como lista fría ("señal uno, señal dos, beneficio tres") → aburre. Escribir el cuerpo como UNA SOLA HISTORIA tipo NOVELA: un paciente concreto con nombre/edad, detalles ultra reales (diálogos, la cocina, el mate frío, las manos heladas bajo la frazada, el turno que le dieron para dentro de 3 meses), y POLÉMICA que engancha al mayor ("te tratan de viejo y no te miran", "te venden el frasco caro en vez de revisarte", "es la edad" como desprecio del sistema). Cada beneficio/causa/señal se va REVELANDO como un capítulo de esa historia, no anunciando "número tal". El recap final SÍ queda numerado (para FocusCards en pantalla). Objetivo: "los ancianos te van a amar como Dr. Federer". Aplicar a TODOS los guiones de este canal de acá en más.
+- 2026-07-28 — PRODUCCIÓN (gotcha caro, costó 2 renders enteros): el **pre-vuelo de `farm.mjs` miente**
+  cuando estás PARADO en la rama del farm. Compara `git rev-parse <FARM_REF>` contra `git rev-parse HEAD`,
+  y si `FARM_REF` es la rama LOCAL en la que estás, se compara consigo misma → imprime
+  "✓ ref sincronizado" aunque el REMOTO esté 3 commits atrás. El farm entonces rendea código VIEJO
+  (síntoma: la cuadrícula y el MP4 muestran otro video del mismo slug, con IDs de composición que no
+  existen en tu disco). FIX: antes de CADA render, `git push -f origin HEAD:molino-<slug>` y verificar
+  a mano que `git ls-remote origin molino-<slug>` == `git rev-parse HEAD`. No confíes en el pre-vuelo.
+- 2026-07-28 — PRODUCCIÓN: el tarball de assets tiene tope DURO de 2 GB (GitHub rechaza con 422
+  "size must be less than 2147483648"). Un video de 22 min con avatar 1080p llega solo: el avatar
+  `_opt.mp4` a CRF 23 pesaba 828 MB y el original de HeyGen otros 695 MB. FIX: el `_opt` va a CRF 26
+  (queda en ~420 MB, sin pérdida visible en full-screen), el `avatar_<slug>.mp4` original NO se
+  empaqueta (archivalo fuera de `public/`), y los clips de Pexels se recomprimen a 720p / máx 12 s
+  (`-preset ultrafast -crf 28 -an`) → 300 clips pasan de 900 MB a 716 MB. Total final: ~1,0 GB.
+- 2026-07-28 — KIT (bug real, tumbaba el ÚLTIMO chunk de todo render): el kind `nametag` mapea a
+  `DocNameCard` con un default HARDCODEADO `img/fe2_federer_cafe.png` que NO existe en ningún disco
+  → 404 + "EncodingError: The source image cannot be decoded" y el chunk final muere. SIEMPRE pasarle
+  `image` propia al beat `nametag`. Mismo cuidado con `rule` (`ChapterTitle` trae un `sub` de plantilla
+  "y cómo esquivarlo en 30 segundos" que se imprime en pantalla si no lo pisás) y con `stat`, que lee
+  `value/prefix/suffix/label` y NO `big/unit` (con `big` la cifra sale en CERO).
+- 2026-07-28 — KIT: `BoardCard` no reflowea. Un `title` de más de ~30 caracteres se ENCABALGA con el
+  primer ítem y queda ilegible (visto en la cuadrícula: "El borde: 1,5 a 2 cm de transición" pisado por
+  "Se ve rarísimo"). Topes que entran bien: board/chips/checklist title ≤30, item.title ≤26, item.sub ≤46,
+  chips ≤42, lowerthird title ≤44 y desc ≤96, stat.label ≤104.

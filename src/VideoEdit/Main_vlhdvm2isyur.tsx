@@ -398,11 +398,6 @@ export const Manifestvlhdvm2isyur = () => (
     <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc3.jpg" />
     <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc4.jpg" />
     <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc5.jpg" />
-    <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc1.jpg" />
-    <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc2.jpg" />
-    <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc3.jpg" />
-    <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc4.jpg" />
-    <FocusCardsVlh startSec={1193.72} image="img/rec_vlh_rc5.jpg" />
     <RawShot startSec={1197.28} src="broll/vlhdvm2isyur/bd_vlhdvm2isyur_297.mp4" />
     <FraseCinetica startSec={1203.36} />
     <RawShot startSec={1206.1} src="broll/vlhdvm2isyur/bd_vlhdvm2isyur_299.mp4" />
