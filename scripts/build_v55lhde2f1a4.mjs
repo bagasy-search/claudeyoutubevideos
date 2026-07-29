@@ -462,7 +462,7 @@ registerRoot(V55lhde2f1a4Root);
 `;
 fs.writeFileSync(`src/index_${slug}.tsx`, indexSource, "utf8");
 
-const assetList = [...assets].sort();
+const assetList = [`${slug}.wav`, "sfx", ...assets].sort();
 fs.writeFileSync(
   `public/_assets_${slug}.txt`,
   assetList.join("\n") + "\n",
