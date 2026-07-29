@@ -684,10 +684,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "El riego que parece más cuidadoso puede dejar tus tomates",
-    "headline": "El riego que parece más cuidadoso",
+    "headline": "Fruto sano",
     "items": [
-      "El riego que",
-      "parece más cuidadoso"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": true,
@@ -704,11 +705,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d001.mp4",
     "supportImage": "",
     "dice": "verdes por fuera, débiles por debajo y negros justo cuando llega la cosecha",
-    "headline": "Verdes por fuera, débiles por debajo y negros",
+    "headline": "Fruto sano",
     "items": [
-      "verdes por fuera, débiles",
-      "por debajo y negros",
-      "justo cuando llega"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": false,
@@ -725,10 +726,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "Hablo de ese pequeño vaso de agua que alguien echa cada tarde con",
-    "headline": "Hablo de ese pequeño vaso de",
+    "headline": "Riego profundo",
     "items": [
-      "Hablo de ese",
-      "pequeño vaso de"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 1,
     "avatarFull": false,
@@ -745,11 +747,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "la mejor intención. La superficie queda oscura, la planta parece atendida, pero 5 centímetros más",
-    "headline": "La mejor intención. La superficie queda oscura, la",
+    "headline": "Agua medida",
     "items": [
-      "la mejor intención. La",
-      "superficie queda oscura, la",
-      "planta parece atendida, pero"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -766,10 +768,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "abajo, la tierra puede seguir seca. Y si repites eso todos",
-    "headline": "Abajo, la tierra puede seguir seca. Y",
+    "headline": "Mira suelo",
     "items": [
-      "abajo, la tierra puede",
-      "seguir seca. Y"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": true,
@@ -786,10 +789,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "los días, las raíces aprenden a quedarse arriba, donde el calor roba el agua primero",
-    "headline": "Los días, las raíces aprenden a quedarse arriba,",
+    "headline": "Pierde agua",
     "items": [
-      "los días, las raíces aprenden",
-      "a quedarse arriba, donde el"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 3,
     "avatarFull": false,
@@ -806,10 +810,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d003.mp4",
     "supportImage": "",
     "dice": "Una tomatera necesita humedad estable, no necesita vivir",
-    "headline": "Una tomatera necesita humedad estable, no necesita",
+    "headline": "Mira suelo",
     "items": [
-      "Una tomatera necesita humedad",
-      "estable, no necesita"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 4,
     "avatarFull": false,
@@ -826,11 +831,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "empapada, tampoco quiere pasar sed y después recibir una inundación. Esa alternancia silenciosa puede terminar",
-    "headline": "Empapada, tampoco quiere pasar sed y después recibir",
+    "headline": "Regla práctica",
     "items": [
-      "empapada, tampoco quiere pasar",
-      "sed y después recibir",
-      "una inundación. Esa alternancia"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": false,
@@ -847,10 +852,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "en frutos rajados, crecimiento débil y esa mancha negra en la",
-    "headline": "En frutos rajados, crecimiento débil y esa",
+    "headline": "Fruto sano",
     "items": [
-      "en frutos rajados, crecimiento",
-      "débil y esa"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 5,
     "avatarFull": true,
@@ -867,10 +873,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d005.mp4",
     "supportImage": "",
     "dice": "base del tomate que tantos confunden con una enfermedad",
-    "headline": "Base del tomate que tantos confunden con",
+    "headline": "Límite honesto",
     "items": [
-      "base del tomate que",
-      "tantos confunden con"
+      "No cura",
+      "Diagnóstico primero",
+      "Observa cambios"
     ],
     "number": 5,
     "avatarFull": false,
@@ -887,10 +894,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "Tres números cambian todo. 5 centímetros para comprobar",
-    "headline": "Tres números cambian todo. 5 centímetros para comprobar",
+    "headline": "Agua medida",
     "items": [
-      "Tres números cambian todo.",
-      "5 centímetros para comprobar"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -907,11 +915,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "15 a 20 centímetros para mojar de verdad, y como referencia general unos 25 litros por",
-    "headline": "15 a 20 centímetros para mojar de verdad,",
+    "headline": "Agua medida",
     "items": [
-      "15 a 20 centímetros",
-      "para mojar de verdad,",
-      "y como referencia general"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 15,
     "avatarFull": false,
@@ -928,10 +936,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "metro cuadrado a la semana. Contando también lo que cae del cielo",
-    "headline": "Metro cuadrado a la semana. Contando también",
+    "headline": "Regla práctica",
     "items": [
-      "metro cuadrado a la",
-      "semana. Contando también"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 7,
     "avatarFull": false,
@@ -948,11 +957,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "No le hace bien mojar apenas la piel de la tierra, no le hace bien ahogar las raíces, no le hace bien regar",
-    "headline": "No le hace bien mojar apenas la piel",
+    "headline": "Mira suelo",
     "items": [
-      "No le hace bien",
-      "mojar apenas la piel",
-      "de la tierra, no"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": true,
@@ -969,10 +978,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d007.mp4",
     "supportImage": "",
     "dice": "las hojas como si fueran el lugar por donde bebe. El tomate toma el",
-    "headline": "Las hojas como si fueran el lugar",
+    "headline": "Riega abajo",
     "items": [
-      "las hojas como si",
-      "fueran el lugar"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 8,
     "avatarFull": false,
@@ -989,11 +999,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "agua desde abajo, y hay una parte más extraña, la peor decisión de riego suele tomarse mirando",
-    "headline": "Agua desde abajo, y hay una parte más",
+    "headline": "Riego profundo",
     "items": [
-      "agua desde abajo, y",
-      "hay una parte más",
-      "extraña, la peor decisión"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 8,
     "avatarFull": true,
@@ -1010,10 +1020,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d009.mp4",
     "supportImage": "",
     "dice": "la parte equivocada de la planta, casi todo el mundo lo hace alguna vez",
-    "headline": "La parte equivocada de la planta, casi todo",
+    "headline": "Regla práctica",
     "items": [
-      "la parte equivocada de",
-      "la planta, casi todo"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -1030,11 +1041,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "yo también entiendo por qué, parece lógico, pero cuando veas la prueba nunca volverás a regar igual",
-    "headline": "Yo también entiendo por qué, parece lógico, pero",
+    "headline": "Riego profundo",
     "items": [
-      "yo también entiendo por",
-      "qué, parece lógico, pero",
-      "cuando veas la prueba"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 8,
     "avatarFull": false,
@@ -1051,10 +1062,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "img/v7ior5j7vkw9_personal_00.png",
     "supportImage": "",
     "dice": "Quédate conmigo, voy a mostrarte cómo saber si tu tomatera necesita",
-    "headline": "Quédate conmigo, voy a mostrarte cómo saber",
+    "headline": "Fruto sano",
     "items": [
-      "Quédate conmigo, voy a",
-      "mostrarte cómo saber"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": false,
@@ -1071,10 +1083,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "agua sin adivinar. Vas a aprender cuánto dar, a qué hora, cómo cambia",
-    "headline": "Agua sin adivinar. Vas a aprender cuánto dar,",
+    "headline": "Riego profundo",
     "items": [
-      "agua sin adivinar. Vas",
-      "a aprender cuánto dar,"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 1,
     "avatarFull": true,
@@ -1091,10 +1104,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d011.mp4",
     "supportImage": "",
     "dice": "en arena, arcilla, bancal y maceta, y al",
-    "headline": "En arena, arcilla, bancal y maceta,",
+    "headline": "Maceta vigilada",
     "items": [
-      "en arena, arcilla,",
-      "bancal y maceta,"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 1,
     "avatarFull": false,
@@ -1111,11 +1125,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "final voy a pagarte la promesa, el error exacto que arruina la cosecha mientras tú crees que la estás salvando",
-    "headline": "Final voy a pagarte la promesa, el error",
+    "headline": "Fruto sano",
     "items": [
-      "final voy a pagarte",
-      "la promesa, el error",
-      "exacto que arruina la"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": true,
@@ -1132,10 +1146,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "Empecemos por el resultado, un tomate bien regado no es el que",
-    "headline": "Empecemos por el resultado, un tomate",
+    "headline": "Fruto sano",
     "items": [
-      "Empecemos por el",
-      "resultado, un tomate"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": false,
@@ -1152,11 +1167,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d013.mp4",
     "supportImage": "",
     "dice": "recibe agua todos los días, es el que encuentra una humedad bastante pareja en la zona donde trabajan sus raíces",
-    "headline": "Recibe agua todos los días, es el que",
+    "headline": "Mira suelo",
     "items": [
-      "recibe agua todos los",
-      "días, es el que",
-      "encuentra una humedad bastante"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": false,
@@ -1173,10 +1188,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "esa diferencia parece pequeña, en la huerta es enorme",
-    "headline": "Esa diferencia parece pequeña, en la huerta",
+    "headline": "Regla práctica",
     "items": [
-      "esa diferencia parece pequeña,",
-      "en la huerta"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 2,
     "avatarFull": true,
@@ -1193,11 +1209,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d015.mp4",
     "supportImage": "",
     "dice": "Cuando el agua llega profundo, la raíz la sigue, se extiende hacia abajo, la planta queda mejor",
-    "headline": "Cuando el agua llega profundo, la raíz la",
+    "headline": "Raíz profunda",
     "items": [
-      "Cuando el agua llega",
-      "profundo, la raíz la",
-      "sigue, se extiende hacia"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 2,
     "avatarFull": false,
@@ -1214,10 +1230,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "preparada para una tarde calurosa, cuando el agua moja solo 1 o",
-    "headline": "Preparada para una tarde calurosa, cuando el",
+    "headline": "Riego profundo",
     "items": [
-      "preparada para una tarde",
-      "calurosa, cuando el"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 1,
     "avatarFull": true,
@@ -1234,11 +1251,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "2 centímetros, la raíz se concentra cerca de la superficie, allí el sol, el viento y la temperatura cambian",
-    "headline": "2 centímetros, la raíz se concentra cerca de",
+    "headline": "Raíz profunda",
     "items": [
-      "2 centímetros, la raíz",
-      "se concentra cerca de",
-      "la superficie, allí el"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 2,
     "avatarFull": false,
@@ -1255,10 +1272,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d017.mp4",
     "supportImage": "",
     "dice": "todo en pocas horas, por eso una planta acostumbrada a sorbos puede",
-    "headline": "Todo en pocas horas, por eso una planta",
+    "headline": "Regla práctica",
     "items": [
-      "todo en pocas horas,",
-      "por eso una planta"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -1275,10 +1293,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "marchitarse con rapidez aunque la hayas regado ayer, no siempre le falta",
-    "headline": "Marchitarse con rapidez aunque la hayas regado ayer,",
+    "headline": "Límite honesto",
     "items": [
-      "marchitarse con rapidez aunque",
-      "la hayas regado ayer,"
+      "No cura",
+      "Diagnóstico primero",
+      "Observa cambios"
     ],
     "number": 3,
     "avatarFull": false,
@@ -1295,10 +1314,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "una gran cantidad de agua, le falta una reserva",
-    "headline": "Una gran cantidad de agua, le",
+    "headline": "Agua medida",
     "items": [
-      "una gran cantidad",
-      "de agua, le"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 4,
     "avatarFull": true,
@@ -1315,11 +1335,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d019.mp4",
     "supportImage": "",
     "dice": "profunda. Este es el primer principio que quiero que recuerdes, no riegues para oscurecer la tierra, riega para",
-    "headline": "Profunda. Este es el primer principio que quiero",
+    "headline": "Mira suelo",
     "items": [
-      "profunda. Este es el",
-      "primer principio que quiero",
-      "que recuerdes, no riegues"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 4,
     "avatarFull": false,
@@ -1336,10 +1356,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "cargar el perfil del suelo, oscurecer la tierra lleva un minuto",
-    "headline": "Cargar el perfil del suelo, oscurecer la",
+    "headline": "Mira suelo",
     "items": [
-      "cargar el perfil del",
-      "suelo, oscurecer la"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 4,
     "avatarFull": false,
@@ -1356,11 +1377,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "cargar el suelo lleva paciencia, haz una prueba física, no necesitas un medidor costoso, espera unos minutos",
-    "headline": "Cargar el suelo lleva paciencia, haz una prueba",
+    "headline": "Mira suelo",
     "items": [
-      "cargar el suelo lleva",
-      "paciencia, haz una prueba",
-      "física, no necesitas un"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 5,
     "avatarFull": true,
@@ -1377,10 +1398,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d021.mp4",
     "supportImage": "",
     "dice": "después de regar, toma una palita, abre un corte angosto a unos 15",
-    "headline": "Después de regar, toma una palita, abre un",
+    "headline": "Riego profundo",
     "items": [
-      "después de regar, toma",
-      "una palita, abre un"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 15,
     "avatarFull": false,
@@ -1397,11 +1419,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "centímetros del tallo, sin lastimar las raíces principales, mira el perfil, si solo están húmedos los",
-    "headline": "Centímetros del tallo, sin lastimar las raíces principales,",
+    "headline": "Agua medida",
     "items": [
-      "centímetros del tallo, sin",
-      "lastimar las raíces principales,",
-      "mira el perfil, si"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -1418,10 +1440,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "primeros 2 centímetros, no terminaste, si la humedad llega entre",
-    "headline": "Primeros 2 centímetros, no terminaste, si la",
+    "headline": "Agua medida",
     "items": [
-      "primeros 2 centímetros, no",
-      "terminaste, si la"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 2,
     "avatarFull": false,
@@ -1438,11 +1461,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "15 y 20 centímetros, ya estás trabajando en la zona correcta para una planta establecida, no busques barro, busca",
-    "headline": "15 y 20 centímetros, ya estás trabajando en",
+    "headline": "Agua medida",
     "items": [
-      "15 y 20 centímetros,",
-      "ya estás trabajando en",
-      "la zona correcta para"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 15,
     "avatarFull": false,
@@ -1459,10 +1482,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tierra fresca que se mantenga unida al apretarla y se desarme con facilidad",
-    "headline": "Tierra fresca que se mantenga unida al apretarla",
+    "headline": "Mira suelo",
     "items": [
-      "tierra fresca que se",
-      "mantenga unida al apretarla"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": true,
@@ -1479,10 +1503,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d023.mp4",
     "supportImage": "",
     "dice": "al tocarla, esa demostración vale más que cualquier calendario pegado en",
-    "headline": "Al tocarla, esa demostración vale más que cualquier",
+    "headline": "Sin calendario",
     "items": [
-      "al tocarla, esa demostración",
-      "vale más que cualquier"
+      "Mide suelo",
+      "Observa clima",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": false,
@@ -1499,10 +1524,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d023.mp4",
     "dice": "la pared, porque dos huertas separadas por una cerca pueden",
-    "headline": "La pared, porque dos huertas separadas",
+    "headline": "Regla práctica",
     "items": [
-      "la pared, porque",
-      "dos huertas separadas"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -1519,11 +1545,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "necesitar ritmos distintos, una tiene arena, la otra tiene arcilla, una recibe viento toda",
-    "headline": "Necesitar ritmos distintos, una tiene arena, la otra",
+    "headline": "Pierde agua",
     "items": [
-      "necesitar ritmos distintos, una",
-      "tiene arena, la otra",
-      "tiene arcilla, una recibe"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 1,
     "avatarFull": true,
@@ -1540,10 +1566,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d024.mp4",
     "dice": "la tarde, la otra está protegida por el galpón, una tiene",
-    "headline": "La tarde, la otra está protegida por",
+    "headline": "Regla práctica",
     "items": [
-      "la tarde, la otra",
-      "está protegida por"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 1,
     "avatarFull": false,
@@ -1560,11 +1587,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d025.mp4",
     "supportImage": "",
     "dice": "acolchado, la otra deja el suelo desnudo, la arena deja pasar el agua rápido, también se seca rápido",
-    "headline": "Acolchado, la otra deja el suelo desnudo, la",
+    "headline": "Suelo cubierto",
     "items": [
-      "acolchado, la otra deja",
-      "el suelo desnudo, la",
-      "arena deja pasar el"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 2,
     "avatarFull": false,
@@ -1581,10 +1608,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "la arcilla retiene más, pero si las aturas, expulsa el aire que",
-    "headline": "La arcilla retiene más, pero si las",
+    "headline": "Regla práctica",
     "items": [
-      "la arcilla retiene más,",
-      "pero si las"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 2,
     "avatarFull": true,
@@ -1601,11 +1629,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d027.mp4",
     "supportImage": "",
     "dice": "las raíces necesitan, el mismo tiempo de manguera puede ser insuficiente en una y excesivo en la",
-    "headline": "Las raíces necesitan, el mismo tiempo de manguera",
+    "headline": "Riego profundo",
     "items": [
-      "las raíces necesitan, el",
-      "mismo tiempo de manguera",
-      "puede ser insuficiente en"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 2,
     "avatarFull": false,
@@ -1622,10 +1650,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "otra, por eso no existe una respuesta honesta a la pregunta, ¿Cada cuántos",
-    "headline": "Otra, por eso no existe una respuesta honesta",
+    "headline": "Regla práctica",
     "items": [
-      "otra, por eso no",
-      "existe una respuesta honesta"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 2,
     "avatarFull": true,
@@ -1642,11 +1671,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "días riego mis tomates sin mirar el suelo? La referencia general de una pulgada semanal sirve para empezar, una",
-    "headline": "Días riego mis tomates sin mirar el suelo?",
+    "headline": "Mira suelo",
     "items": [
-      "días riego mis tomates",
-      "sin mirar el suelo?",
-      "La referencia general de"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": false,
@@ -1663,10 +1692,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "pulgada equivale aproximadamente a 25 litros sobre",
-    "headline": "Pulgada equivale aproximadamente a 25 litros sobre",
+    "headline": "Agua medida",
     "items": [
-      "pulgada equivale aproximadamente a",
-      "25 litros sobre"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 25,
     "avatarFull": false,
@@ -1683,10 +1713,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d029.mp4",
     "supportImage": "",
     "dice": "cada metro cuadrado, pero no es una receta ciega, es el total de lluvia",
-    "headline": "Cada metro cuadrado, pero no es una receta",
+    "headline": "Agua medida",
     "items": [
-      "cada metro cuadrado, pero",
-      "no es una receta"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 4,
     "avatarFull": false,
@@ -1703,10 +1734,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "más riego durante una semana",
-    "headline": "Más riego durante",
+    "headline": "Riego profundo",
     "items": [
-      "más riego",
-      "durante una"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 4,
     "avatarFull": true,
@@ -1723,11 +1755,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "normal, con calor extremo, viento o suelo muy arenoso puede hacer falta más frecuencia, con",
-    "headline": "Normal, con calor extremo, viento o suelo muy",
+    "headline": "Sin calendario",
     "items": [
-      "normal, con calor extremo,",
-      "viento o suelo muy",
-      "arenoso puede hacer falta"
+      "Mide suelo",
+      "Observa clima",
+      "Decide después"
     ],
     "number": 4,
     "avatarFull": false,
@@ -1744,10 +1776,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "img/v7ior5j7vkw9_personal_01.png",
     "supportImage": "",
     "dice": "lluvia o arcilla pesada puede hacer falta menos, quiero traducirlo",
-    "headline": "Lluvia o arcilla pesada puede hacer falta menos,",
+    "headline": "Agua medida",
     "items": [
-      "lluvia o arcilla pesada",
-      "puede hacer falta menos,"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -1764,11 +1797,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d031.mp4",
     "supportImage": "",
     "dice": "a algo que puedas usar, imagina un bancal de 1 metro por 2, son 2 metros cuadrados, la referencia semanal",
-    "headline": "A algo que puedas usar, imagina un bancal",
+    "headline": "Regla práctica",
     "items": [
-      "a algo que puedas",
-      "usar, imagina un bancal",
-      "de 1 metro por"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 1,
     "avatarFull": false,
@@ -1785,10 +1818,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "ronda 50 litros en total, si llovió la mitad, tú completas",
-    "headline": "Ronda 50 litros en total, si llovió",
+    "headline": "Agua medida",
     "items": [
-      "ronda 50 litros en",
-      "total, si llovió"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 50,
     "avatarFull": false,
@@ -1805,11 +1839,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "lo que falta, si una tormenta ya dejó el suelo húmedo a buena profundidad, no vuelves a regar solo",
-    "headline": "Lo que falta, si una tormenta ya dejó",
+    "headline": "Mira suelo",
     "items": [
-      "lo que falta, si",
-      "una tormenta ya dejó",
-      "el suelo húmedo a"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 6,
     "avatarFull": true,
@@ -1826,10 +1860,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d033.mp4",
     "supportImage": "",
     "dice": "porque el martes decía riego en tu libreta, la planta no sabe",
-    "headline": "Porque el martes decía riego en tu",
+    "headline": "Sin calendario",
     "items": [
-      "porque el martes decía",
-      "riego en tu"
+      "Mide suelo",
+      "Observa clima",
+      "Decide después"
     ],
     "number": 6,
     "avatarFull": false,
@@ -1846,11 +1881,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "qué día es, el suelo sí sabe cuánta agua guarda, ahora viene el segundo principio, es mejor un riego lento",
-    "headline": "Qué día es, el suelo sí sabe cuánta",
+    "headline": "Mira suelo",
     "items": [
-      "qué día es, el",
-      "suelo sí sabe cuánta",
-      "agua guarda, ahora viene"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 6,
     "avatarFull": false,
@@ -1867,10 +1902,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "y profundo que muchos sorbos rápidos, lento importa porque un",
-    "headline": "Y profundo que muchos sorbos rápidos, lento importa",
+    "headline": "Regla práctica",
     "items": [
-      "y profundo que muchos",
-      "sorbos rápidos, lento importa"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 7,
     "avatarFull": true,
@@ -1887,10 +1923,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d035.mp4",
     "supportImage": "",
     "dice": "suelo seco puede rechazar parte del agua, la ves correr por la",
-    "headline": "Suelo seco puede rechazar parte del agua, la",
+    "headline": "Mira suelo",
     "items": [
-      "suelo seco puede rechazar",
-      "parte del agua, la"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 7,
     "avatarFull": false,
@@ -1907,10 +1944,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "superficie, se va hacia el sendero, forma un charco en",
-    "headline": "Superficie, se va hacia el sendero,",
+    "headline": "Regla práctica",
     "items": [
-      "superficie, se va",
-      "hacia el sendero,"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 7,
     "avatarFull": true,
@@ -1927,11 +1965,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d037.mp4",
     "supportImage": "",
     "dice": "un lado, tú cuentas todo lo que salió de la manguera, pero una parte nunca llegó a las raíces, si",
-    "headline": "Un lado, tú cuentas todo lo que salió",
+    "headline": "Riego profundo",
     "items": [
-      "un lado, tú cuentas",
-      "todo lo que salió",
-      "de la manguera, pero"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 7,
     "avatarFull": false,
@@ -1948,10 +1986,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "eso ocurre, riega en dos pasadas, da una primera cantidad",
-    "headline": "Eso ocurre, riega en dos pasadas, da",
+    "headline": "Agua medida",
     "items": [
-      "eso ocurre, riega en",
-      "dos pasadas, da"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 7,
     "avatarFull": false,
@@ -1968,11 +2007,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "moderada, espera unos minutos, deja que la superficie se hidrate, luego vuelve y completa, en",
-    "headline": "Moderada, espera unos minutos, deja que la superficie",
+    "headline": "Regla práctica",
     "items": [
-      "moderada, espera unos minutos,",
-      "deja que la superficie",
-      "se hidrate, luego vuelve"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": true,
@@ -1989,10 +2028,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d039.mp4",
     "supportImage": "",
     "dice": "una pendiente, forma una pequeña cuenca alrededor de la zona de raíces",
-    "headline": "Una pendiente, forma una pequeña cuenca alrededor de",
+    "headline": "Mira suelo",
     "items": [
-      "una pendiente, forma una",
-      "pequeña cuenca alrededor de"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": false,
@@ -2009,11 +2049,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "no pegada al tallo, alrededor de la planta, no apuntes un chorro fuerte contra la base, puede",
-    "headline": "No pegada al tallo, alrededor de la planta,",
+    "headline": "Mira suelo",
     "items": [
-      "no pegada al tallo,",
-      "alrededor de la planta,",
-      "no apuntes un chorro"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": true,
@@ -2030,10 +2070,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d041.mp4",
     "supportImage": "",
     "dice": "descubrir raíces, puede compactar en suelo, también salpica",
-    "headline": "Descubrir raíces, puede compactar en suelo, también",
+    "headline": "Riega abajo",
     "items": [
-      "descubrir raíces, puede compactar",
-      "en suelo, también"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 8,
     "avatarFull": false,
@@ -2050,11 +2091,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tierra sobre las hojas bajas, lo más sencillo es una manguera de goteo, una línea de riego lento o un",
-    "headline": "Tierra sobre las hojas bajas, lo más sencillo",
+    "headline": "Riega abajo",
     "items": [
-      "tierra sobre las hojas",
-      "bajas, lo más sencillo",
-      "es una manguera de"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 8,
     "avatarFull": false,
@@ -2071,10 +2112,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "chorro suave apoyado en el suelo, el agua entra donde se necesita, las",
-    "headline": "Chorro suave apoyado en el suelo, el agua",
+    "headline": "Mira suelo",
     "items": [
-      "chorro suave apoyado en",
-      "el suelo, el agua"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 1,
     "avatarFull": true,
@@ -2091,10 +2133,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d043.mp4",
     "supportImage": "",
     "dice": "hojas quedan secas y las partículas de tierra que pueden llevar esporas",
-    "headline": "Hojas quedan secas y las partículas de tierra",
+    "headline": "Riega abajo",
     "items": [
-      "hojas quedan secas y las",
-      "partículas de tierra que"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 1,
     "avatarFull": false,
@@ -2111,10 +2154,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "no saltan hacia el follaje, no confundas esto con una",
-    "headline": "No saltan hacia el follaje,",
+    "headline": "Riega abajo",
     "items": [
-      "no saltan hacia",
-      "el follaje,"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 1,
     "avatarFull": true,
@@ -2131,11 +2175,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d045.mp4",
     "supportImage": "",
     "dice": "prohibición absoluta, si solo tienes una regadera, úsala, pero quita la flor si reparte el agua sobre",
-    "headline": "Prohibición absoluta, si solo tienes una regadera, úsala,",
+    "headline": "Fruto sano",
     "items": [
-      "prohibición absoluta, si solo",
-      "tienes una regadera, úsala,",
-      "pero quita la flor"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": false,
@@ -2152,10 +2196,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d045.mp4",
     "dice": "toda la planta y dirige el flujo al suelo, si debes regar",
-    "headline": "Toda la planta y dirige el",
+    "headline": "Mira suelo",
     "items": [
-      "toda la planta",
-      "y dirige el"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 1,
     "avatarFull": false,
@@ -2172,11 +2217,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "desde arriba, hazlo temprano para que las hojas tengan tiempo de secarse, la hora ayuda, no reemplaza la",
-    "headline": "Desde arriba, hazlo temprano para que las hojas",
+    "headline": "Riega abajo",
     "items": [
-      "desde arriba, hazlo temprano",
-      "para que las hojas",
-      "tengan tiempo de secarse,"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 2,
     "avatarFull": false,
@@ -2193,10 +2238,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "prueba del suelo, entre las 5 y las 9 de la mañana suele ser una",
-    "headline": "Prueba del suelo, entre las 5 y",
+    "headline": "Mira suelo",
     "items": [
-      "prueba del suelo, entre",
-      "las 5 y"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 5,
     "avatarFull": true,
@@ -2213,11 +2259,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d047.mp4",
     "supportImage": "",
     "dice": "buena ventana, el viento acostumbra a ser menor, la evaporación todavía no está en su punto alto, la",
-    "headline": "Buena ventana, el viento acostumbra a ser menor,",
+    "headline": "Pierde agua",
     "items": [
-      "buena ventana, el viento",
-      "acostumbra a ser menor,",
-      "la evaporación todavía no"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 3,
     "avatarFull": false,
@@ -2234,10 +2280,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "planta empieza el día con agua disponible y cualquier hoja que se haya mojado",
-    "headline": "Planta empieza el día con agua disponible y",
+    "headline": "Riega abajo",
     "items": [
-      "planta empieza el día",
-      "con agua disponible y"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 3,
     "avatarFull": true,
@@ -2254,11 +2301,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "puede secarse con la luz, regar al mediodía no quema mágicamente las hojas por el simple hecho de que una gota",
-    "headline": "Puede secarse con la luz, regar al mediodía",
+    "headline": "Riega abajo",
     "items": [
-      "puede secarse con la",
-      "luz, regar al mediodía",
-      "no quema mágicamente las"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 3,
     "avatarFull": false,
@@ -2275,10 +2322,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d049.mp4",
     "supportImage": "",
     "dice": "actúe como lupa, ese mito distrae del problema real, en pleno calor",
-    "headline": "Actúe como lupa, ese mito distrae del problema",
+    "headline": "Pierde agua",
     "items": [
-      "actúe como lupa, ese",
-      "mito distrae del problema"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 4,
     "avatarFull": false,
@@ -2295,10 +2343,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "pierdes más agua por evaporación, tú también trabajas peor y es fácil",
-    "headline": "Pierdes más agua por evaporación, tú también trabajas",
+    "headline": "Pierde agua",
     "items": [
-      "pierdes más agua por",
-      "evaporación, tú también trabajas"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 4,
     "avatarFull": true,
@@ -2315,10 +2364,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d051.mp4",
     "supportImage": "",
     "dice": "reaccionar con apuro a una planta que está doblando sus",
-    "headline": "Reaccionar con apuro a una",
+    "headline": "Regla práctica",
     "items": [
-      "reaccionar con apuro",
-      "a una"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": false,
@@ -2335,11 +2385,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "hojas para soportar la temperatura, pregar de noche tampoco es un pecado automático, en una ola de calor un",
-    "headline": "Hojas para soportar la temperatura, pregar de noche",
+    "headline": "Riega abajo",
     "items": [
-      "hojas para soportar la",
-      "temperatura, pregar de noche",
-      "tampoco es un pecado"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 4,
     "avatarFull": true,
@@ -2356,10 +2406,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "suelo realmente seco no debe esperar hasta el día siguiente por una regla",
-    "headline": "Suelo realmente seco no debe esperar hasta",
+    "headline": "Mira suelo",
     "items": [
-      "suelo realmente seco no",
-      "debe esperar hasta"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 4,
     "avatarFull": false,
@@ -2376,11 +2427,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d053.mp4",
     "supportImage": "",
     "dice": "rígida, pero si mojas todo el follaje y dejas la planta húmeda durante muchas horas, favoreces un ambiente que varias",
-    "headline": "Rígida, pero si mojas todo el follaje y",
+    "headline": "Riega abajo",
     "items": [
-      "rígida, pero si mojas",
-      "todo el follaje y",
-      "dejas la planta húmeda"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 5,
     "avatarFull": false,
@@ -2397,10 +2448,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "enfermedades aprovechan, la regla sencilla es esta, temprano es",
-    "headline": "Enfermedades aprovechan, la regla sencilla es esta,",
+    "headline": "Límite honesto",
     "items": [
-      "enfermedades aprovechan, la regla",
-      "sencilla es esta,"
+      "No cura",
+      "Diagnóstico primero",
+      "Observa cambios"
     ],
     "number": 5,
     "avatarFull": false,
@@ -2417,11 +2469,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "preferible, la raíz es el objetivo y una necesidad real manda más que el reloj, ahora hablemos de la",
-    "headline": "Preferible, la raíz es el objetivo y una",
+    "headline": "Raíz profunda",
     "items": [
-      "preferible, la raíz es",
-      "el objetivo y una",
-      "necesidad real manda"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 6,
     "avatarFull": true,
@@ -2438,10 +2490,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d055.mp4",
     "supportImage": "",
     "dice": "mancha negra, ves un tomate creciendo, parece sano, días después",
-    "headline": "Mancha negra, ves un tomate creciendo, parece",
+    "headline": "Fruto sano",
     "items": [
-      "mancha negra, ves un",
-      "tomate creciendo, parece"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 6,
     "avatarFull": false,
@@ -2458,11 +2511,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "aparece una zona oscura y hundida en el extremo opuesto al tallo, muchos corren al vivero por calcio, compran un aerosol",
-    "headline": "Aparece una zona oscura y hundida en el",
+    "headline": "Calcio disponible",
     "items": [
-      "aparece una zona oscura",
-      "y hundida en el",
-      "extremo opuesto al tallo,"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 6,
     "avatarFull": false,
@@ -2479,10 +2532,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "rocían las hojas, esperan, pero la podredumbre apical no es una infección",
-    "headline": "Rocían las hojas, esperan, pero la podredumbre apical",
+    "headline": "Calcio disponible",
     "items": [
-      "rocían las hojas, esperan,",
-      "pero la podredumbre apical"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 7,
     "avatarFull": true,
@@ -2499,10 +2553,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d057.mp4",
     "supportImage": "",
     "dice": "que ese aerosol pueda curar, es un trastorno fisiológico, el fruto en desarrollo",
-    "headline": "Que ese aerosol pueda curar, es un trastorno",
+    "headline": "Límite honesto",
     "items": [
-      "que ese aerosol pueda curar,",
-      "es un trastorno fisiológico,"
+      "No cura",
+      "Diagnóstico primero",
+      "Observa cambios"
     ],
     "number": 7,
     "avatarFull": false,
@@ -2519,10 +2574,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "no recibió el calcio de manera adecuada en el momento en que estaba",
-    "headline": "No recibió el calcio de manera",
+    "headline": "Calcio disponible",
     "items": [
-      "no recibió el",
-      "calcio de manera"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 7,
     "avatarFull": false,
@@ -2539,11 +2595,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "formando sus tejidos y aquí el agua es decisiva, el calcio se mueve con el agua que absorben las raíces",
-    "headline": "Formando sus tejidos y aquí el agua es",
+    "headline": "Calcio disponible",
     "items": [
-      "formando sus tejidos y",
-      "aquí el agua es",
-      "decisiva, el calcio se"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 8,
     "avatarFull": false,
@@ -2560,10 +2616,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "si el suelo pasa de seco a empapado y vuelve a secarse, ese",
-    "headline": "Si el suelo pasa de seco a",
+    "headline": "Mira suelo",
     "items": [
-      "si el suelo pasa",
-      "de seco a"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 1,
     "avatarFull": false,
@@ -2580,11 +2637,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "transporte pierde regularidad, puede haber calcio en",
-    "headline": "Transporte pierde regularidad, puede haber calcio en",
+    "headline": "Calcio disponible",
     "items": [
-      "transporte pierde regularidad,",
-      "puede haber calcio",
-      "en"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 2,
     "avatarFull": false,
@@ -2601,10 +2658,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "la calcio sin analizar el suelo, puede no resolver nada y rociar",
-    "headline": "La calcio sin analizar el suelo, puede",
+    "headline": "Calcio disponible",
     "items": [
-      "la calcio sin analizar",
-      "el suelo, puede"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 3,
     "avatarFull": false,
@@ -2621,11 +2679,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
     "dice": "un fruto que ya tiene la mancha no reconstruye el tejido muerto, te lo digo sin vueltas, un producto",
-    "headline": "Un fruto que ya tiene la mancha no",
+    "headline": "Fruto sano",
     "items": [
-      "un fruto que ya",
-      "tiene la mancha no",
-      "reconstruye el tejido muerto,"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 4,
     "avatarFull": false,
@@ -2642,10 +2700,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "no puede devolverle a ese tomate la parte que ya se dañó, retira",
-    "headline": "No puede devolverle a ese tomate la",
+    "headline": "Fruto sano",
     "items": [
-      "no puede devolverle a",
-      "ese tomate la"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 5,
     "avatarFull": true,
@@ -2662,11 +2721,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "el fruto muy afectado para que la planta concentre energía en los que vienen, luego corrige la humedad, revisa el drenaje",
-    "headline": "El fruto muy afectado para que la planta",
+    "headline": "Drenaje libre",
     "items": [
-      "el fruto muy afectado",
-      "para que la planta",
-      "concentre energía en los"
+      "Salida abierta",
+      "Sin charcos",
+      "Raíz sana"
     ],
     "number": 5,
     "avatarFull": false,
@@ -2683,10 +2742,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d059.mp4",
     "supportImage": "",
     "dice": "evita lastimar raíces al cultivar y no empujes un crecimiento exagerado",
-    "headline": "Evita lastimar raíces al cultivar y no empujes",
+    "headline": "Regla práctica",
     "items": [
-      "evita lastimar raíces al",
-      "cultivar y no empujes"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 6,
     "avatarFull": false,
@@ -2703,10 +2763,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "con demasiado nitrógeno, esto nos lleva al enemigo silencioso, el estante del",
-    "headline": "Con demasiado nitrógeno, esto nos lleva al enemigo",
+    "headline": "Regla práctica",
     "items": [
-      "con demasiado nitrógeno, esto",
-      "nos lleva al enemigo"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 6,
     "avatarFull": true,
@@ -2723,10 +2784,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d061.mp4",
     "supportImage": "",
     "dice": "vivero está lleno de soluciones",
-    "headline": "Vivero está lleno",
+    "headline": "Regla práctica",
     "items": [
-      "vivero está",
-      "lleno de"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 6,
     "avatarFull": false,
@@ -2743,11 +2805,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "para el síntoma, una botella para la mancha, otra para el vigor, otra para las hojas, otra",
-    "headline": "Para el síntoma, una botella para la mancha,",
+    "headline": "Riega abajo",
     "items": [
-      "para el síntoma, una",
-      "botella para la mancha,",
-      "otra para el vigor,"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 6,
     "avatarFull": true,
@@ -2764,10 +2826,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "para estimular raíces, algunas tienen un uso real",
-    "headline": "Para estimular raíces, algunas tienen un",
+    "headline": "Regla práctica",
     "items": [
-      "para estimular raíces,",
-      "algunas tienen un"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 6,
     "avatarFull": false,
@@ -2784,11 +2847,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "pero ninguna conoce la humedad a 15 centímetros bajo tu tomatera, nadie puede venderte en un frasco",
-    "headline": "Pero ninguna conoce la humedad a 15 centímetros",
+    "headline": "Agua medida",
     "items": [
-      "pero ninguna conoce la",
-      "humedad a 15 centímetros",
-      "bajo tu tomatera, nadie"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 15,
     "avatarFull": false,
@@ -2805,10 +2868,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d063.mp4",
     "supportImage": "",
     "dice": "el hábito de meter un dedo o una palita en la tierra y ese hábito",
-    "headline": "El hábito de meter un dedo o una",
+    "headline": "Mira suelo",
     "items": [
-      "el hábito de meter",
-      "un dedo o una"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": false,
@@ -2825,11 +2889,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "suele resolver más que una compra impulsiva, si quieres una guía sencilla de abono natural deje",
-    "headline": "Suele resolver más que una compra impulsiva, si",
+    "headline": "Regla práctica",
     "items": [
-      "suele resolver más que",
-      "una compra impulsiva, si",
-      "quieres una guía sencilla"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": true,
@@ -2846,10 +2910,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "img/v7ior5j7vkw9_personal_02b.png",
     "supportImage": "",
     "dice": "la del galpón en la descripción pero incluso el mejor abono falla",
-    "headline": "La del galpón en la descripción pero",
+    "headline": "Regla práctica",
     "items": [
-      "la del galpón en",
-      "la descripción pero"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -2866,11 +2931,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "cuando la raíz alterna entre sed y asfixia, primero agua estable después alimento, fíjate",
-    "headline": "Cuando la raíz alterna entre sed y asfixia,",
+    "headline": "Raíz profunda",
     "items": [
-      "cuando la raíz alterna",
-      "entre sed y asfixia,",
-      "primero agua estable después"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 8,
     "avatarFull": false,
@@ -2887,10 +2952,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d065.mp4",
     "supportImage": "",
     "dice": "ahora en otro daño, una planta pasa varios días seca, el fruto sigue",
-    "headline": "Ahora en otro daño, una planta pasa varios",
+    "headline": "Fruto sano",
     "items": [
-      "ahora en otro daño,",
-      "una planta pasa varios"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": false,
@@ -2907,10 +2973,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "creciendo con lo poco que recibe, de pronto llega una tormenta o una",
-    "headline": "Creciendo con lo poco que recibe, de pronto",
+    "headline": "Regla práctica",
     "items": [
-      "creciendo con lo poco",
-      "que recibe, de pronto"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 1,
     "avatarFull": true,
@@ -2927,10 +2994,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d067.mp4",
     "supportImage": "",
     "dice": "inundación con la manguera, el interior del tomate toma agua",
-    "headline": "Inundación con la manguera, el interior",
+    "headline": "Fruto sano",
     "items": [
-      "inundación con la",
-      "manguera, el interior"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": false,
@@ -2947,11 +3015,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "y se expande más rápido de lo que la piel puede acompañar, aparecen grietas, no todas las grietas",
-    "headline": "Y se expande más rápido de lo que",
+    "headline": "Evita grietas",
     "items": [
-      "y se expande más",
-      "rápido de lo que",
-      "la piel puede acompañar,"
+      "Humedad pareja",
+      "Cambio lento",
+      "Fruto firme"
     ],
     "number": 1,
     "avatarFull": true,
@@ -2968,10 +3036,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tienen una sola causa, la variedad y el estado de madurez también",
-    "headline": "Tienen una sola causa, la variedad y",
+    "headline": "Regla práctica",
     "items": [
-      "tienen una sola causa,",
-      "la variedad y"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 1,
     "avatarFull": false,
@@ -2988,11 +3057,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d069.mp4",
     "supportImage": "",
     "dice": "influyen, pero la variación brusca de humedad es una causa muy común, el error no fue darle agua a una",
-    "headline": "Influyen, pero la variación brusca de humedad es",
+    "headline": "Mira suelo",
     "items": [
-      "influyen, pero la variación",
-      "brusca de humedad es",
-      "una causa muy común,"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": false,
@@ -3009,10 +3078,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "planta sedienta, había que dársela, el error ocurrió antes",
-    "headline": "Planta sedienta, había que dársela, el error ocurrió",
+    "headline": "Regla práctica",
     "items": [
-      "planta sedienta, había que",
-      "dársela, el error ocurrió"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 2,
     "avatarFull": true,
@@ -3029,11 +3099,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d071.mp4",
     "supportImage": "",
     "dice": "fue dejar que el suelo pasara de una condición estable a una sequedad profunda, la prevención empieza",
-    "headline": "Fue dejar que el suelo pasara de una",
+    "headline": "Mira suelo",
     "items": [
-      "fue dejar que el",
-      "suelo pasara de una",
-      "condición estable a una"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": false,
@@ -3050,10 +3120,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "varios días antes de que veas la grieta, eso es lo incómodo del riego, la",
-    "headline": "Varios días antes de que veas la grieta,",
+    "headline": "Evita grietas",
     "items": [
-      "varios días antes de",
-      "que veas la grieta,"
+      "Humedad pareja",
+      "Cambio lento",
+      "Fruto firme"
     ],
     "number": 2,
     "avatarFull": true,
@@ -3070,11 +3141,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "cosecha de hoy revela decisiones que tomaste cuando el fruto era pequeño, durante la floración y el desarrollo temprano",
-    "headline": "Cosecha de hoy revela decisiones que tomaste cuando",
+    "headline": "Fruto sano",
     "items": [
-      "cosecha de hoy revela",
-      "decisiones que tomaste cuando",
-      "el fruto era pequeño,"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 2,
     "avatarFull": false,
@@ -3091,10 +3162,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d073.mp4",
     "supportImage": "",
     "dice": "del tomate, la constancia importa mucho, no esperes a que los primeros",
-    "headline": "Del tomate, la constancia importa mucho, no",
+    "headline": "Fruto sano",
     "items": [
-      "del tomate, la constancia",
-      "importa mucho, no"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 3,
     "avatarFull": false,
@@ -3111,10 +3183,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "frutos engorden para empezar a observar, desde que cuajan, revisa el suelo con",
-    "headline": "Frutos engorden para empezar a observar, desde que",
+    "headline": "Mira suelo",
     "items": [
-      "frutos engorden para empezar",
-      "a observar, desde que"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": true,
@@ -3131,10 +3204,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d075.mp4",
     "supportImage": "",
     "dice": "más atención, no significa mantenerlo saturado, una",
-    "headline": "Más atención, no significa mantenerlo saturado,",
+    "headline": "Regla práctica",
     "items": [
-      "más atención, no",
-      "significa mantenerlo saturado,"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -3151,11 +3225,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "raíz necesita agua y oxígeno, si cada espacio del suelo está lleno de agua durante demasiado",
-    "headline": "Raíz necesita agua y oxígeno, si cada espacio",
+    "headline": "Raíz profunda",
     "items": [
-      "raíz necesita agua y",
-      "oxígeno, si cada espacio",
-      "del suelo está lleno"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 3,
     "avatarFull": false,
@@ -3172,10 +3246,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tiempo, falta aire, la raíz pierde función, las",
-    "headline": "Tiempo, falta aire, la raíz pierde función,",
+    "headline": "Raíz profunda",
     "items": [
-      "tiempo, falta aire, la",
-      "raíz pierde función,"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 4,
     "avatarFull": false,
@@ -3192,11 +3267,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "hojas pueden amarillar, la planta puede marchitarse aunque esté rodeada de humedad y alguien que solo mira las hojas",
-    "headline": "Hojas pueden amarillar, la planta puede marchitarse aunque",
+    "headline": "Límite honesto",
     "items": [
-      "hojas pueden amarillar, la",
-      "planta puede marchitarse aunque",
-      "esté rodeada de humedad"
+      "No cura",
+      "Diagnóstico primero",
+      "Observa cambios"
     ],
     "number": 5,
     "avatarFull": true,
@@ -3213,10 +3288,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d077.mp4",
     "supportImage": "",
     "dice": "responde con más agua, ahí nace un círculo muy malo, la",
-    "headline": "Responde con más agua, ahí nace un",
+    "headline": "Riego profundo",
     "items": [
-      "responde con más agua,",
-      "ahí nace un"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 5,
     "avatarFull": false,
@@ -3233,11 +3309,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "planta se ve caída, la persona riega, la raíz ya asfixiada funciona peor, la",
-    "headline": "Planta se ve caída, la persona riega, la",
+    "headline": "Raíz profunda",
     "items": [
-      "planta se ve caída,",
-      "la persona riega, la",
-      "raíz ya asfixiada funciona"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 5,
     "avatarFull": true,
@@ -3254,10 +3330,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d079.mp4",
     "supportImage": "",
     "dice": "planta se cae más, la persona riega otra vez, para romper ese",
-    "headline": "Planta se cae más, la persona riega",
+    "headline": "Regla práctica",
     "items": [
-      "planta se cae más,",
-      "la persona riega"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 5,
     "avatarFull": false,
@@ -3274,11 +3351,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "círculo toca el suelo, introduce el dedo unos 5 centímetros, mejor aún, usa una palita y revisa un",
-    "headline": "Círculo toca el suelo, introduce el dedo unos",
+    "headline": "Agua medida",
     "items": [
-      "círculo toca el suelo,",
-      "introduce el dedo unos",
-      "5 centímetros, mejor aún,"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -3295,10 +3372,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "poco más si arriba parece seco pero abajo está fresco, espera",
-    "headline": "Poco más si arriba parece seco pero abajo",
+    "headline": "Regla práctica",
     "items": [
-      "poco más si arriba parece",
-      "seco pero abajo está"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 6,
     "avatarFull": false,
@@ -3315,10 +3393,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "si está seco a esa profundidad y la planta está en crecimiento activo",
-    "headline": "Si está seco a esa profundidad y la",
+    "headline": "Regla práctica",
     "items": [
-      "si está seco a esa",
-      "profundidad y la planta"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 7,
     "avatarFull": true,
@@ -3335,10 +3414,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d081.mp4",
     "supportImage": "",
     "dice": "riega despacio, ahora cambia la escena, tu tomate no está",
-    "headline": "Riega despacio, ahora cambia la escena,",
+    "headline": "Fruto sano",
     "items": [
-      "riega despacio, ahora",
-      "cambia la escena,"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 7,
     "avatarFull": false,
@@ -3355,11 +3435,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "en un bancal, está en una maceta, entonces varias reglas de frecuencia cambian, una maceta tiene poco",
-    "headline": "En un bancal, está en una maceta, entonces",
+    "headline": "Maceta vigilada",
     "items": [
-      "en un bancal, está",
-      "en una maceta, entonces",
-      "varias reglas de frecuencia"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 7,
     "avatarFull": true,
@@ -3376,10 +3456,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "volumen, sus paredes reciben calor, el agua drena",
-    "headline": "Volumen, sus paredes reciben calor, el agua",
+    "headline": "Pierde agua",
     "items": [
-      "volumen, sus paredes reciben",
-      "calor, el agua"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 7,
     "avatarFull": false,
@@ -3396,11 +3477,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d083.mp4",
     "supportImage": "",
     "dice": "por abajo, una planta grande puede consumir la reserva con rapidez, durante una ola de calor un tomate en",
-    "headline": "Por abajo, una planta grande puede consumir la",
+    "headline": "Pierde agua",
     "items": [
-      "por abajo, una planta",
-      "grande puede consumir la",
-      "reserva con rapidez, durante"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 8,
     "avatarFull": false,
@@ -3417,10 +3498,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "contenedor puede necesitar riego diario, a veces en un",
-    "headline": "Contenedor puede necesitar riego diario, a veces",
+    "headline": "Maceta vigilada",
     "items": [
-      "contenedor puede necesitar riego",
-      "diario, a veces"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 8,
     "avatarFull": true,
@@ -3437,11 +3519,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d085.mp4",
     "supportImage": "",
     "dice": "recipiente pequeño y expuesto incluso dos revisiones al día, eso no contradice el riego profundo",
-    "headline": "Recipiente pequeño y expuesto incluso dos revisiones al",
+    "headline": "Riego profundo",
     "items": [
-      "recipiente pequeño y expuesto",
-      "incluso dos revisiones al",
-      "día, eso no contradice"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 8,
     "avatarFull": false,
@@ -3458,10 +3540,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "en maceta riega hasta que una pequeña cantidad salga por los agujeros",
-    "headline": "En maceta riega hasta que una pequeña",
+    "headline": "Maceta vigilada",
     "items": [
-      "en maceta riega hasta",
-      "que una pequeña"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 8,
     "avatarFull": true,
@@ -3478,11 +3561,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "inferiores, luego deja drenar, no permitas que el recipiente quede sentado durante horas en un plato lleno",
-    "headline": "Inferiores, luego deja drenar, no permitas que el",
+    "headline": "Regla práctica",
     "items": [
-      "inferiores, luego deja drenar,",
-      "no permitas que el",
-      "recipiente quede sentado durante"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -3499,10 +3582,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d087.mp4",
     "supportImage": "",
     "dice": "de agua, húmedo no significa pantano, el tamaño del recipiente importa",
-    "headline": "De agua, húmedo no significa pantano, el tamaño",
+    "headline": "Riego profundo",
     "items": [
-      "de agua, húmedo no significa",
-      "pantano, el tamaño del"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 1,
     "avatarFull": false,
@@ -3519,10 +3603,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "un plantín pequeño en una maceta enorme conserva agua durante más tiempo",
-    "headline": "Un plantín pequeño en una maceta enorme conserva",
+    "headline": "Maceta vigilada",
     "items": [
-      "un plantín pequeño en una",
-      "maceta enorme conserva agua durante"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 1,
     "avatarFull": false,
@@ -3539,10 +3624,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "una tomatera adulta cargada de frutos en un balde pequeño",
-    "headline": "Una tomatera adulta cargada de frutos",
+    "headline": "Fruto sano",
     "items": [
-      "una tomatera adulta",
-      "cargada de frutos"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 2,
     "avatarFull": true,
@@ -3559,11 +3645,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d089.jpg",
     "supportImage": "",
     "dice": "puede secarse antes del atardecer, por eso tampoco copies el calendario de otra persona sin copiar",
-    "headline": "Puede secarse antes del atardecer, por eso tampoco",
+    "headline": "Sin calendario",
     "items": [
-      "puede secarse antes del",
-      "atardecer, por eso tampoco",
-      "copies el calendario de"
+      "Mide suelo",
+      "Observa clima",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": false,
@@ -3580,10 +3666,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "su recipiente, su mezcla, su clima y el tamaño de",
-    "headline": "Su recipiente, su mezcla, su clima",
+    "headline": "Regla práctica",
     "items": [
-      "su recipiente, su",
-      "mezcla, su clima"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 2,
     "avatarFull": false,
@@ -3600,11 +3687,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "su planta, haz una marca simple en una varilla de madera, introduce la varilla cerca del borde sin cortar",
-    "headline": "Su planta, haz una marca simple en una",
+    "headline": "Regla práctica",
     "items": [
-      "su planta, haz una",
-      "marca simple en una",
-      "varilla de madera, introduce"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": true,
@@ -3621,10 +3708,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d091.jpg",
     "supportImage": "",
     "dice": "raíces, déjala unos segundos, al sacarla la parte",
-    "headline": "Raíces, déjala unos segundos, al sacarla la",
+    "headline": "Regla práctica",
     "items": [
-      "raíces, déjala unos segundos,",
-      "al sacarla la"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -3641,11 +3729,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "oscura te muestra hasta donde llegó la humedad, es una forma barata de aprender cómo se comporta tu",
-    "headline": "Oscura te muestra hasta donde llegó la humedad,",
+    "headline": "Mira suelo",
     "items": [
-      "oscura te muestra hasta",
-      "donde llegó la humedad,",
-      "es una forma barata"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": true,
@@ -3662,10 +3750,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d093.mp4",
     "supportImage": "",
     "dice": "maceta, en suelo abierto puedes hacer algo parecido con una",
-    "headline": "Maceta, en suelo abierto puedes hacer algo",
+    "headline": "Maceta vigilada",
     "items": [
-      "maceta, en suelo abierto",
-      "puedes hacer algo"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 3,
     "avatarFull": false,
@@ -3682,11 +3771,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "palita, riega, espera, abre un pequeño corte, mide la profundidad húmeda, la primera vez quizá",
-    "headline": "Palita, riega, espera, abre un pequeño corte, mide",
+    "headline": "Regla práctica",
     "items": [
-      "palita, riega, espera, abre",
-      "un pequeño corte, mide",
-      "la profundidad húmeda, la"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -3703,10 +3792,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "descubras que 10 minutos de manguera mojaron menos de lo que creías, o",
-    "headline": "Descubras que 10 minutos de manguera mojaron menos",
+    "headline": "Riego profundo",
     "items": [
-      "descubras que 10 minutos",
-      "de manguera mojaron menos"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 10,
     "avatarFull": true,
@@ -3723,10 +3813,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d095.mp4",
     "supportImage": "",
     "dice": "quizá veas lo contrario, el agua bajó muy bien y tu rutina estaba dando",
-    "headline": "Quizá veas lo contrario, el agua bajó muy",
+    "headline": "Riego profundo",
     "items": [
-      "quizá veas lo contrario,",
-      "el agua bajó muy"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 4,
     "avatarFull": false,
@@ -3743,10 +3834,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "de más, no",
-    "headline": "De más, no",
+    "headline": "Regla práctica",
     "items": [
-      "de más,",
-      "no"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": false,
@@ -3763,11 +3855,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "adivines el tiempo del grifo, calíbralo una vez con un recipiente de volumen conocido y confirma el resultado",
-    "headline": "Adivines el tiempo del grifo, calíbralo una vez",
+    "headline": "Regla práctica",
     "items": [
-      "adivines el tiempo del",
-      "grifo, calíbralo una vez",
-      "con un recipiente de"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 5,
     "avatarFull": true,
@@ -3784,10 +3876,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d096.jpg",
     "dice": "abriendo la tierra, la cuenta te dice cuánto salió",
-    "headline": "Abriendo la tierra, la cuenta te dice",
+    "headline": "Mira suelo",
     "items": [
-      "abriendo la tierra, la",
-      "cuenta te dice"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 5,
     "avatarFull": false,
@@ -3804,11 +3897,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d097.mp4",
     "supportImage": "",
     "dice": "el suelo te dice cuánto aprovechó, ahora te doy una herramienta que reduce la cantidad de decisiones, acolchado",
-    "headline": "El suelo te dice cuánto aprovechó, ahora te",
+    "headline": "Suelo cubierto",
     "items": [
-      "el suelo te dice",
-      "cuánto aprovechó, ahora te",
-      "doy una herramienta que"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 6,
     "avatarFull": false,
@@ -3825,10 +3918,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "pon entre 5 y 8 centímetros de paja limpia, hojas secas trituradas",
-    "headline": "Pon entre 5 y 8 centímetros de paja",
+    "headline": "Suelo cubierto",
     "items": [
-      "pon entre 5 y",
-      "8 centímetros de paja"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 5,
     "avatarFull": false,
@@ -3845,11 +3939,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "u otro material orgánico alrededor de la tomatera, deja un pequeño espacio libre junto al tallo",
-    "headline": "U otro material orgánico alrededor de la tomatera,",
+    "headline": "Mira suelo",
     "items": [
-      "u otro material orgánico",
-      "alrededor de la tomatera,",
-      "deja un pequeño espacio"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 7,
     "avatarFull": true,
@@ -3866,10 +3960,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d099.mp4",
     "supportImage": "",
     "dice": "el acolchado frena la evaporación, modera la temperatura de la",
-    "headline": "El acolchado frena la evaporación, modera la",
+    "headline": "Suelo cubierto",
     "items": [
-      "el acolchado frena la",
-      "evaporación, modera la"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 7,
     "avatarFull": false,
@@ -3886,11 +3981,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "superficie, reduce el de las gotas, también dificulta que la tierra salpique las hojas, lo importante no",
-    "headline": "Superficie, reduce el de las gotas, también dificulta",
+    "headline": "Riega abajo",
     "items": [
-      "superficie, reduce el de",
-      "las gotas, también dificulta",
-      "que la tierra salpique"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 7,
     "avatarFull": false,
@@ -3907,10 +4002,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "es usar un material exótico, es cubrir el suelo sin apretarlo contra el",
-    "headline": "Es usar un material exótico, es cubrir el",
+    "headline": "Mira suelo",
     "items": [
-      "es usar un material",
-      "exótico, es cubrir el"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": true,
@@ -3927,10 +4023,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d101.mp4",
     "supportImage": "",
     "dice": "tallo, una huerta desnuda puede pasar de húmeda a seca con rapidez, una",
-    "headline": "Tallo, una huerta desnuda puede pasar de húmeda",
+    "headline": "Regla práctica",
     "items": [
-      "tallo, una huerta desnuda puede",
-      "pasar de húmeda a"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -3947,10 +4044,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "huerta acolchada cambia más de espacio y la estabilidad",
-    "headline": "Huerta acolchada cambia más de espacio",
+    "headline": "Regla práctica",
     "items": [
-      "huerta acolchada cambia",
-      "más de espacio"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": true,
@@ -3967,11 +4065,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "otra vez es el verdadero premio, pero cuidado, no pongas acolchado sobre una tierra completamente",
-    "headline": "Otra vez es el verdadero premio, pero cuidado,",
+    "headline": "Suelo cubierto",
     "items": [
-      "otra vez es el",
-      "verdadero premio, pero cuidado,",
-      "no pongas acolchado sobre"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 8,
     "avatarFull": false,
@@ -3988,10 +4086,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "seca y supongas que el problema desapareció, primero carga",
-    "headline": "Seca y supongas que el problema",
+    "headline": "Regla práctica",
     "items": [
-      "seca y supongas",
-      "que el problema"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 1,
     "avatarFull": false,
@@ -4008,11 +4107,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d103.mp4",
     "supportImage": "",
     "dice": "el perfil con un riego profundo, después el acolchado conserva lo que existe, no crea",
-    "headline": "El perfil con un riego profundo, después el",
+    "headline": "Suelo cubierto",
     "items": [
-      "el perfil con un",
-      "riego profundo, después el",
-      "acolchado conserva lo que"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 2,
     "avatarFull": false,
@@ -4029,10 +4128,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "agua, tampoco dejes que una capa gruesa esconde un suelo saturado",
-    "headline": "Agua, tampoco dejes que una capa gruesa esconde",
+    "headline": "Mira suelo",
     "items": [
-      "agua, tampoco dejes que",
-      "una capa gruesa esconde"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": true,
@@ -4049,11 +4149,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d105.mp4",
     "supportImage": "",
     "dice": "aparta un poco, revisa debajo, el acolchado reduce la frecuencia pero no elimina la observación",
-    "headline": "Aparta un poco, revisa debajo, el acolchado reduce",
+    "headline": "Suelo cubierto",
     "items": [
-      "aparta un poco, revisa",
-      "debajo, el acolchado reduce",
-      "la frecuencia pero no"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 2,
     "avatarFull": false,
@@ -4070,10 +4170,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "img/v7ior5j7vkw9_personal_03.png",
     "supportImage": "",
     "dice": "aquí aparece una objeción muy común, le vi yo riego poco todos",
-    "headline": "Aquí aparece una objeción muy común, le",
+    "headline": "Riego profundo",
     "items": [
-      "aquí aparece una objeción",
-      "muy común, le"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 2,
     "avatarFull": false,
@@ -4090,11 +4191,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "los días y mis tomates se ven bien, puede ocurrir, sobre todo en suelo muy arenoso, con plantas jóvenes o",
-    "headline": "Los días y mis tomates se ven bien,",
+    "headline": "Mira suelo",
     "items": [
-      "los días y mis",
-      "tomates se ven bien,",
-      "puede ocurrir, sobre todo"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": false,
@@ -4111,10 +4212,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "en tenedores, la respuesta honesta es que la frecuencia por sí sola",
-    "headline": "En tenedores, la respuesta honesta es que la",
+    "headline": "Sin calendario",
     "items": [
-      "en tenedores, la respuesta",
-      "honesta es que la"
+      "Mide suelo",
+      "Observa clima",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": true,
@@ -4131,10 +4233,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d107.jpg",
     "supportImage": "",
     "dice": "no condena una planta, lo que importa es qué humedad produce esa frecuencia",
-    "headline": "No condena una planta, lo que importa es",
+    "headline": "Sin calendario",
     "items": [
-      "no condena una planta, lo",
-      "que importa es qué"
+      "Mide suelo",
+      "Observa clima",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": false,
@@ -4151,10 +4254,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "en la zona de raíces, si tu riego diario moja profundamente",
-    "headline": "En la zona de raíces, si tu riego",
+    "headline": "Riego profundo",
     "items": [
-      "en la zona de",
-      "raíces, si tu riego"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 3,
     "avatarFull": true,
@@ -4171,11 +4275,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d109.jpg",
     "supportImage": "",
     "dice": "y el exceso drena, no es el mismo sorbito superficial del que estamos hablando, si el clima evapora",
-    "headline": "Y el exceso drena, no es el mismo",
+    "headline": "Pierde agua",
     "items": [
-      "y el exceso drena,",
-      "no es el mismo",
-      "sorbito superficial del que"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 3,
     "avatarFull": false,
@@ -4192,10 +4296,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "una gran cantidad cada día, tu manejo debe responder a",
-    "headline": "Una gran cantidad cada día, tu",
+    "headline": "Sin calendario",
     "items": [
-      "una gran cantidad",
-      "cada día, tu"
+      "Mide suelo",
+      "Observa clima",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": false,
@@ -4212,11 +4317,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "esa realidad, no conviertas un consejo útil en una religión, mide la profundidad, mira el drenaje",
-    "headline": "Esa realidad, no conviertas un consejo útil en",
+    "headline": "Drenaje libre",
     "items": [
-      "esa realidad, no conviertas",
-      "un consejo útil en",
-      "una religión, mide la"
+      "Salida abierta",
+      "Sin charcos",
+      "Raíz sana"
     ],
     "number": 4,
     "avatarFull": true,
@@ -4233,10 +4338,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d111.mp4",
     "supportImage": "",
     "dice": "ajusta, lo mismo vale para una vez por semana, en arcilla",
-    "headline": "Ajusta, lo mismo vale para una vez",
+    "headline": "Regla práctica",
     "items": [
-      "ajusta, lo mismo vale",
-      "para una vez"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": false,
@@ -4253,11 +4359,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "fresca y con acolchado puede funcionar, en arena durante una ola de calor puede ser insuficiente",
-    "headline": "Fresca y con acolchado puede funcionar, en arena",
+    "headline": "Suelo cubierto",
     "items": [
-      "fresca y con acolchado",
-      "puede funcionar, en arena",
-      "durante una ola de"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 4,
     "avatarFull": true,
@@ -4274,10 +4380,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d113.jpg",
     "supportImage": "",
     "dice": "un número sin contexto se transforma en una trampa, ahora los",
-    "headline": "Un número sin contexto se transforma en",
+    "headline": "Regla práctica",
     "items": [
-      "un número sin contexto",
-      "se transforma en"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": false,
@@ -4294,11 +4401,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "límites son estos, un riego correcto no cura una enfermedad vascular, si una planta se marchita todos los días, amarillea",
-    "headline": "Límites son estos, un riego correcto no cura",
+    "headline": "Límite honesto",
     "items": [
-      "límites son estos, un",
-      "riego correcto no cura",
-      "una enfermedad vascular, si"
+      "No cura",
+      "Diagnóstico primero",
+      "Observa cambios"
     ],
     "number": 4,
     "avatarFull": false,
@@ -4315,10 +4422,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "de un solo lado y no se recupera bien, investiga fusarium, verticilium",
-    "headline": "De un solo lado y no se recupera",
+    "headline": "Regla práctica",
     "items": [
-      "de un solo lado y",
-      "no se recupera bien, investiga"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 5,
     "avatarFull": false,
@@ -4335,10 +4443,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "daño de raíces u otros problemas, no sigas agregando agua por reflejo",
-    "headline": "Daño de raíces u otros problemas, no sigas",
+    "headline": "Riego profundo",
     "items": [
-      "daño de raíces u otros",
-      "problemas, no sigas agregando"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 6,
     "avatarFull": true,
@@ -4355,10 +4464,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d115.mp4",
     "supportImage": "",
     "dice": "un riego correcto tampoco repara un fruto con podredumbre apical",
-    "headline": "Un riego correcto tampoco repara un",
+    "headline": "Calcio disponible",
     "items": [
-      "un riego correcto",
-      "tampoco repara un"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 6,
     "avatarFull": false,
@@ -4375,11 +4485,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "avanzada, protege los frutos siguientes, el afectado no vuelve a formar tejido sano, no puede compensar",
-    "headline": "Avanzada, protege los frutos siguientes, el afectado no",
+    "headline": "Fruto sano",
     "items": [
-      "avanzada, protege los frutos",
-      "siguientes, el afectado no",
-      "vuelve a formar tejido"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 6,
     "avatarFull": true,
@@ -4396,10 +4506,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "un recipiente sin agujeros, si el agua no sale, mejora",
-    "headline": "Un recipiente sin agujeros, si el",
+    "headline": "Drenaje libre",
     "items": [
-      "un recipiente sin",
-      "agujeros, si el"
+      "Salida abierta",
+      "Sin charcos",
+      "Raíz sana"
     ],
     "number": 6,
     "avatarFull": false,
@@ -4416,11 +4527,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "el drenaje, no puede detener una ola de calor extrema, cuando las temperaturas suben mucho, el tomate puede perder",
-    "headline": "El drenaje, no puede detener una ola de",
+    "headline": "Drenaje libre",
     "items": [
-      "el drenaje, no puede",
-      "detener una ola de",
-      "calor extrema, cuando las"
+      "Salida abierta",
+      "Sin charcos",
+      "Raíz sana"
     ],
     "number": 7,
     "avatarFull": false,
@@ -4437,10 +4548,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d117.mp4",
     "supportImage": "",
     "dice": "flores aunque el suelo tenga humedad, el agua reduce parte del",
-    "headline": "Flores aunque el suelo tenga humedad, el",
+    "headline": "Mira suelo",
     "items": [
-      "flores aunque el suelo",
-      "tenga humedad, el"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": false,
@@ -4457,11 +4569,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "estrés, no controla el aire y no reemplaza un análisis de suelo cuando hay un verdadero desequilibrio",
-    "headline": "Estrés, no controla el aire y no reemplaza",
+    "headline": "Mira suelo",
     "items": [
-      "estrés, no controla el",
-      "aire y no reemplaza",
-      "un análisis de suelo"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": true,
@@ -4478,10 +4590,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "de calcio, pH o sales, la humedad estable es fundamental",
-    "headline": "De calcio, pH o sales, la humedad estable",
+    "headline": "Calcio disponible",
     "items": [
-      "de calcio, pH o sales,",
-      "la humedad estable es"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 8,
     "avatarFull": false,
@@ -4498,11 +4611,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "no es magia, esa es la diferencia entre cuidar y prometer, yo prefiero decirte lo que una práctica puede hacer y también",
-    "headline": "No es magia, esa es la diferencia entre",
+    "headline": "Regla práctica",
     "items": [
-      "no es magia, esa",
-      "es la diferencia entre",
-      "cuidar y prometer, yo"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 1,
     "avatarFull": true,
@@ -4519,10 +4632,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "lo que no puede hacer, ahora vamos al mito del calcio, la mancha negra",
-    "headline": "Lo que no puede hacer, ahora vamos al",
+    "headline": "Calcio disponible",
     "items": [
-      "lo que no puede",
-      "hacer, ahora vamos al"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 2,
     "avatarFull": false,
@@ -4539,10 +4653,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d119.jpg",
     "supportImage": "",
     "dice": "aparece, alguien recomienda cáscaras de huevo, otro recomienda leche, otro",
-    "headline": "Aparece, alguien recomienda cáscaras de huevo, otro recomienda",
+    "headline": "Regla práctica",
     "items": [
-      "aparece, alguien recomienda cáscaras de",
-      "huevo, otro recomienda leche,"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -4559,10 +4674,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "vende sales de Epson, las cáscaras tardan en descomponerse",
-    "headline": "Vende sales de Epson, las cáscaras tardan",
+    "headline": "Regla práctica",
     "items": [
-      "vende sales de Epson,",
-      "las cáscaras tardan"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -4579,11 +4695,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "la leche no es una solución de para la huerta y las sales de Epson aportan magnesio, no calcio, si",
-    "headline": "La leche no es una solución de para",
+    "headline": "Calcio disponible",
     "items": [
-      "la leche no es",
-      "una solución de para",
-      "la huerta y las"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 4,
     "avatarFull": false,
@@ -4600,10 +4716,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "agregas magnesio sin necesitarlo, puedes empeorar el equilibrio de",
-    "headline": "Agregas magnesio sin necesitarlo, puedes empeorar el",
+    "headline": "Regla práctica",
     "items": [
-      "agregas magnesio sin necesitarlo,",
-      "puedes empeorar el"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 5,
     "avatarFull": false,
@@ -4620,10 +4737,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "nutrientes que compiten",
-    "headline": "Nutrientes que compiten",
+    "headline": "Regla práctica",
     "items": [
-      "nutrientes que",
-      "compiten"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 6,
     "avatarFull": true,
@@ -4640,10 +4758,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "por entrar en la planta, la ruta responsable es distinta, primero",
-    "headline": "Por entrar en la planta, la ruta",
+    "headline": "Regla práctica",
     "items": [
-      "por entrar en la",
-      "planta, la ruta"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 6,
     "avatarFull": false,
@@ -4660,11 +4779,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d121.mp4",
     "supportImage": "",
     "dice": "identifica bien la lesión, la podredumbre apical empieza en el extremo de la flor, el lado opuesto al",
-    "headline": "Identifica bien la lesión, la podredumbre apical empieza",
+    "headline": "Calcio disponible",
     "items": [
-      "identifica bien la lesión,",
-      "la podredumbre apical empieza",
-      "en el extremo"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 7,
     "avatarFull": false,
@@ -4681,10 +4800,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tallo, suele ser oscura, hundida y firme al principio, después",
-    "headline": "Tallo, suele ser oscura, hundida y firme",
+    "headline": "Regla práctica",
     "items": [
-      "tallo, suele ser oscura,",
-      "hundida y firme"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 7,
     "avatarFull": true,
@@ -4701,11 +4821,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "revisa la historia de humedad, hubo sequía y luego mucha agua, la maceta se secó completo, las raíces fueron dañadas",
-    "headline": "Revisa la historia de humedad, hubo sequía y",
+    "headline": "Maceta vigilada",
     "items": [
-      "revisa la historia de",
-      "humedad, hubo sequía y",
-      "luego mucha agua, la"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 7,
     "avatarFull": false,
@@ -4722,10 +4842,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d123.jpg",
     "supportImage": "",
     "dice": "con la asada, el bancal queda encharcado, luego si el problema se repite",
-    "headline": "Con la asada, el bancal queda encharcado, luego",
+    "headline": "Regla práctica",
     "items": [
-      "con la asada, el bancal",
-      "queda encharcado, luego si"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -4742,10 +4863,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "analiza el suelo, corrige el pH y el calcio según el resultado, no según",
-    "headline": "Analiza el suelo, corrige el pH y el",
+    "headline": "Calcio disponible",
     "items": [
-      "analiza el suelo, corrige",
-      "el pH y el"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 8,
     "avatarFull": false,
@@ -4762,10 +4884,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "el miedo, el vendedor quiere empezar por la botella, la planta",
-    "headline": "El miedo, el vendedor quiere empezar",
+    "headline": "Mira suelo",
     "items": [
-      "el miedo, el",
-      "vendedor quiere empezar"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 1,
     "avatarFull": true,
@@ -4782,11 +4905,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d125.mp4",
     "supportImage": "",
     "dice": "quiere que empieces por la raíz, esto no es manía, es diagnóstico, quiero que hagamos ahora un diagnóstico",
-    "headline": "Quiere que empieces por la raíz, esto no",
+    "headline": "Raíz profunda",
     "items": [
-      "quiere que empieces por",
-      "la raíz, esto no",
-      "es manía, es diagnóstico,"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 1,
     "avatarFull": false,
@@ -4803,10 +4926,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d125.mp4",
     "dice": "completo con una planta imaginaria, son las 3 de la",
-    "headline": "Completo con una planta imaginaria, son las",
+    "headline": "Regla práctica",
     "items": [
-      "completo con una planta",
-      "imaginaria, son las"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -4823,11 +4947,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tarde, hace calor, las hojas están caídas, la superficie del bancal se ve seca, la reacción",
-    "headline": "Tarde, hace calor, las hojas están caídas, la",
+    "headline": "Riega abajo",
     "items": [
-      "tarde, hace calor, las",
-      "hojas están caídas, la",
-      "superficie del bancal se"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 2,
     "avatarFull": true,
@@ -4844,10 +4968,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d127.mp4",
     "supportImage": "",
     "dice": "automática es abrir la manguera, pero tú ya sabes que",
-    "headline": "Automática es abrir la manguera, pero tú",
+    "headline": "Riego profundo",
     "items": [
-      "automática es abrir la",
-      "manguera, pero tú"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 2,
     "avatarFull": false,
@@ -4864,11 +4989,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "todavía faltan datos, apartas el acolchado, metes un dedo 5 centímetros, encuentras",
-    "headline": "Todavía faltan datos, apartas el acolchado, metes un",
+    "headline": "Suelo cubierto",
     "items": [
-      "todavía faltan datos, apartas",
-      "el acolchado, metes un",
-      "dedo 5 centímetros, encuentras"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 5,
     "avatarFull": false,
@@ -4885,10 +5010,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "humedad, abres con cuidado un pequeño corte y ves tierra",
-    "headline": "Humedad, abres con cuidado un pequeño corte",
+    "headline": "Mira suelo",
     "items": [
-      "humedad, abres con cuidado",
-      "un pequeño corte"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": true,
@@ -4905,11 +5031,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "fresca más abajo, la planta no está pidiendo una inundación, está reduciendo temporalmente la pérdida",
-    "headline": "Fresca más abajo, la planta no está pidiendo",
+    "headline": "Regla práctica",
     "items": [
-      "fresca más abajo, la",
-      "planta no está pidiendo",
-      "una inundación, está reduciendo"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -4926,10 +5052,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d129.mp4",
     "supportImage": "",
     "dice": "de agua durante la parte más dura del día, esperas hasta la",
-    "headline": "De agua durante la parte más dura",
+    "headline": "Riego profundo",
     "items": [
-      "de agua durante la",
-      "parte más dura"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 4,
     "avatarFull": false,
@@ -4946,10 +5073,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "mañana, si recuperó firmeza era estrés térmico transitorio",
-    "headline": "Mañana, si recuperó firmeza era estrés térmico transitorio",
+    "headline": "Regla práctica",
     "items": [
-      "mañana, si recuperó firmeza",
-      "era estrés térmico transitorio"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": true,
@@ -4966,10 +5094,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d131.mp4",
     "supportImage": "",
     "dice": "si sigue caída y el suelo está seco, riegas profundo",
-    "headline": "Si sigue caída y el suelo está",
+    "headline": "Mira suelo",
     "items": [
-      "si sigue caída y",
-      "el suelo está"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 4,
     "avatarFull": false,
@@ -4986,11 +5115,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "si sigue caída con suelo húmedo, buscas daño de raíces, drenaje o enfermedad, tres",
-    "headline": "Si sigue caída con suelo húmedo, buscas daño",
+    "headline": "Drenaje libre",
     "items": [
-      "si sigue caída con",
-      "suelo húmedo, buscas daño",
-      "de raíces, drenaje o"
+      "Salida abierta",
+      "Sin charcos",
+      "Raíz sana"
     ],
     "number": 4,
     "avatarFull": true,
@@ -5007,10 +5136,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "resultados distintos, una sola hoja caída, aquí se",
-    "headline": "Resultados distintos, una sola hoja caída,",
+    "headline": "Riega abajo",
     "items": [
-      "resultados distintos, una",
-      "sola hoja caída,"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 4,
     "avatarFull": false,
@@ -5027,11 +5157,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "paga el gran loop, el error que arruina tantos tomates no es simplemente regar mucho, tampoco es",
-    "headline": "Paga el gran loop, el error que arruina",
+    "headline": "Fruto sano",
     "items": [
-      "paga el gran loop,",
-      "el error que arruina",
-      "tantos tomates no es"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 5,
     "avatarFull": true,
@@ -5048,10 +5178,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "simplemente regar poco, es preguntarle a las hojas de la tarde",
-    "headline": "Simplemente regar poco, es preguntarle a las",
+    "headline": "Riega abajo",
     "items": [
-      "simplemente regar poco, es",
-      "preguntarle a las"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 5,
     "avatarFull": true,
@@ -5068,11 +5199,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d135.mp4",
     "supportImage": "",
     "dice": "cuando regar, en vez de preguntarle al suelo de la mañana cuánta agua queda, las hojas reaccionan",
-    "headline": "Cuando regar, en vez de preguntarle al suelo",
+    "headline": "Riega abajo",
     "items": [
-      "cuando regar, en vez",
-      "de preguntarle al suelo",
-      "de la mañana cuánta"
+      "Hoja seca",
+      "Suelo húmedo",
+      "Menos hongos"
     ],
     "number": 5,
     "avatarFull": false,
@@ -5089,10 +5220,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d135.mp4",
     "dice": "al calor, al viento, a raíces enfermas, al exceso",
-    "headline": "Al calor, al viento, a raíces enfermas,",
+    "headline": "Pierde agua",
     "items": [
-      "al calor, al viento,",
-      "a raíces enfermas,"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 5,
     "avatarFull": false,
@@ -5109,11 +5241,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "de agua y a la falta de agua, pueden verse caídas en todos esos casos, la tierra a la profundidad correcta",
-    "headline": "De agua y a la falta de agua,",
+    "headline": "Mira suelo",
     "items": [
-      "de agua y a",
-      "la falta de agua,",
-      "pueden verse caídas en"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 6,
     "avatarFull": false,
@@ -5130,10 +5262,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "te da la información que falta, cuando riegas cada vez que la planta se inclina",
-    "headline": "Te da la información que falta, cuando riegas",
+    "headline": "Regla práctica",
     "items": [
-      "te da la información",
-      "que falta, cuando riegas"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 7,
     "avatarFull": true,
@@ -5150,10 +5283,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d137.mp4",
     "supportImage": "",
     "dice": "bajo el sol, puedes inundar una raíz que todavía tiene agua, cuando esperas",
-    "headline": "Bajo el sol, puedes inundar una raíz que",
+    "headline": "Raíz profunda",
     "items": [
-      "bajo el sol, puedes",
-      "inundar una raíz que"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 7,
     "avatarFull": false,
@@ -5170,10 +5304,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "a que toda la amanezca marchita llegaste demasiado tarde",
-    "headline": "A que toda la amanezca marchita llegaste",
+    "headline": "Límite honesto",
     "items": [
-      "a que toda la",
-      "amanezca marchita llegaste"
+      "No cura",
+      "Diagnóstico primero",
+      "Observa cambios"
     ],
     "number": 7,
     "avatarFull": true,
@@ -5190,11 +5325,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "el punto correcto está entre esos extremos, comprueba por la mañana, comprueba a 5 centímetros y",
-    "headline": "El punto correcto está entre esos extremos, comprueba",
+    "headline": "Agua medida",
     "items": [
-      "el punto correcto está",
-      "entre esos extremos, comprueba",
-      "por la mañana, comprueba"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -5211,10 +5346,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "calibra una vez hasta donde llega tu riego, eso convierte una",
-    "headline": "Calibra una vez hasta donde llega tu",
+    "headline": "Riego profundo",
     "items": [
-      "calibra una vez hasta",
-      "donde llega tu"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 8,
     "avatarFull": false,
@@ -5231,11 +5367,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "sospecha en un método, te prometí un protocolo que puedas usar desde mañana, aquí está, primero revisa",
-    "headline": "Sospecha en un método, te prometí un protocolo",
+    "headline": "Regla práctica",
     "items": [
-      "sospecha en un método,",
-      "te prometí un protocolo",
-      "que puedas usar desde"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 1,
     "avatarFull": false,
@@ -5252,10 +5388,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d139.mp4",
     "supportImage": "",
     "dice": "la tierra por la mañana, mete el dedo o una palita a unos 5",
-    "headline": "La tierra por la mañana, mete el",
+    "headline": "Mira suelo",
     "items": [
-      "la tierra por la",
-      "mañana, mete el"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 5,
     "avatarFull": false,
@@ -5272,11 +5409,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "centímetros, no mires solo la costra superior, segundo, si estás seca a esa profundidad",
-    "headline": "Centímetros, no mires solo la costra superior, segundo,",
+    "headline": "Agua medida",
     "items": [
-      "centímetros, no mires solo",
-      "la costra superior, segundo,",
-      "si estás seca a"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 2,
     "avatarFull": false,
@@ -5293,10 +5430,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "riega lento en la base, haz dos pasadas si el agua corre por la superficie",
-    "headline": "Riega lento en la base, haz dos pasadas",
+    "headline": "Riego profundo",
     "items": [
-      "riega lento en la",
-      "base, haz dos pasadas"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 3,
     "avatarFull": true,
@@ -5313,11 +5451,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tercero, verifica que la humedad haya llegado entre 15 y 20 centímetros en el suelo, haz esta prueba varias veces",
-    "headline": "Tercero, verifica que la humedad haya llegado entre",
+    "headline": "Agua medida",
     "items": [
-      "tercero, verifica que la",
-      "humedad haya llegado entre",
-      "15 y 20 centímetros"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 15,
     "avatarFull": false,
@@ -5334,10 +5472,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "al principio, después conocerás el tiempo de tu sistema, cuarto, usa",
-    "headline": "Al principio, después conocerás el tiempo de tu",
+    "headline": "Regla práctica",
     "items": [
-      "al principio, después conocerás",
-      "el tiempo de tu"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": false,
@@ -5354,10 +5493,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "como punto de partida unos 25 litros por metro cuadrado a la",
-    "headline": "Como punto de partida unos 25 litros por",
+    "headline": "Evita grietas",
     "items": [
-      "como punto de partida",
-      "unos 25 litros por"
+      "Humedad pareja",
+      "Cambio lento",
+      "Fruto firme"
     ],
     "number": 25,
     "avatarFull": false,
@@ -5374,10 +5514,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d141.mp4",
     "supportImage": "",
     "dice": "semana, contando la lluvia, ajusta por arena, arcilla",
-    "headline": "Semana, contando la lluvia, ajusta por arena, arcilla",
+    "headline": "Agua medida",
     "items": [
-      "semana, contando la lluvia,",
-      "ajusta por arena, arcilla"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 6,
     "avatarFull": false,
@@ -5394,11 +5535,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "viento, temperatura y acolchado, quinto, mantén entre 5 y 8 centímetros de cobertura orgánica",
-    "headline": "Viento, temperatura y acolchado, quinto, mantén entre 5",
+    "headline": "Suelo cubierto",
     "items": [
-      "viento, temperatura y acolchado,",
-      "quinto, mantén entre 5",
-      "y 8 centímetros de"
+      "Menos calor",
+      "Más reserva",
+      "Raíz fresca"
     ],
     "number": 5,
     "avatarFull": false,
@@ -5415,10 +5556,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "deja libre el cuello de la planta, sexto, trata las macetas",
-    "headline": "Deja libre el cuello de la",
+    "headline": "Maceta vigilada",
     "items": [
-      "deja libre el",
-      "cuello de la"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 7,
     "avatarFull": false,
@@ -5435,10 +5577,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "como un mundo aparte",
-    "headline": "Como un mundo",
+    "headline": "Regla práctica",
     "items": [
-      "como un",
-      "mundo aparte"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": true,
@@ -5455,10 +5598,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d143.mp4",
     "supportImage": "",
     "dice": "revísalas a diario cuando hace calor, riega hasta que drenen, vacía",
-    "headline": "Revísalas a diario cuando hace calor, riega",
+    "headline": "Pierde agua",
     "items": [
-      "revísalas a diario cuando",
-      "hace calor, riega"
+      "Calor alto",
+      "Viento seco",
+      "Revisa suelo"
     ],
     "number": 8,
     "avatarFull": false,
@@ -5475,11 +5619,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "los platos que queden llenos, séptimo, si una planta se cae con el suelo húmedo, no agregues agua",
-    "headline": "Los platos que queden llenos, séptimo, si una",
+    "headline": "Mira suelo",
     "items": [
-      "los platos que queden",
-      "llenos, séptimo, si una",
-      "planta se cae con"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 8,
     "avatarFull": false,
@@ -5496,10 +5640,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "por reflejo, investiga y octavo, durante floración y formación",
-    "headline": "Por reflejo, investiga y octavo, durante floración y",
+    "headline": "Fruto sano",
     "items": [
-      "por reflejo, investiga y",
-      "octavo, durante floración y"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 1,
     "avatarFull": false,
@@ -5516,11 +5661,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "del fruto, evita los grandes saltos entre seco y empapado, allí estás protegiendo la cosecha que verás semanas después",
-    "headline": "Del fruto, evita los grandes saltos entre seco",
+    "headline": "Fruto sano",
     "items": [
-      "del fruto, evita los",
-      "grandes saltos entre seco",
-      "y empapado, allí estás"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 2,
     "avatarFull": false,
@@ -5537,10 +5682,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "no necesitas memorizarlo todo, quédate con esta frase, riega la",
-    "headline": "No necesitas memorizarlo todo, quédate con esta frase,",
+    "headline": "Regla práctica",
     "items": [
-      "no necesitas memorizarlo todo,",
-      "quédate con esta frase,"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -5557,10 +5703,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "raíz, mide la profundidad, decide por el suelo, si quieres dejar",
-    "headline": "Raíz, mide la profundidad, decide por el suelo,",
+    "headline": "Raíz profunda",
     "items": [
-      "raíz, mide la profundidad, decide",
-      "por el suelo, si"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 4,
     "avatarFull": true,
@@ -5577,10 +5724,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d145.jpg",
     "supportImage": "",
     "dice": "tu huerta más estable, en la descripción tienes la guía de",
-    "headline": "Tu huerta más estable, en",
+    "headline": "Regla práctica",
     "items": [
-      "tu huerta más",
-      "estable, en"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": false,
@@ -5597,11 +5745,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "abono natural del galpón, úsala después de ordenar el riego, no antes, y ahora te propongo una prueba",
-    "headline": "Abono natural del galpón, úsala después de ordenar",
+    "headline": "Riego profundo",
     "items": [
-      "abono natural del galpón,",
-      "úsala después de ordenar",
-      "el riego, no antes,"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 4,
     "avatarFull": true,
@@ -5618,10 +5766,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "de 7 días, no cambies todas tus plantas, elige",
-    "headline": "De 7 días, no cambies todas",
+    "headline": "Regla práctica",
     "items": [
-      "de 7 días,",
-      "no cambies todas"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 7,
     "avatarFull": false,
@@ -5638,11 +5787,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "dos tomateras parecidas, en una mantén tu rutina habitual, en la otra comprueba la dada 5 centímetros",
-    "headline": "Dos tomateras parecidas, en una mantén tu rutina",
+    "headline": "Agua medida",
     "items": [
-      "dos tomateras parecidas, en",
-      "una mantén tu rutina",
-      "habitual, en la otra"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -5659,10 +5808,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d147.mp4",
     "supportImage": "",
     "dice": "riega profundo sólo cuando corresponda y cubre el suelo, anota",
-    "headline": "Riega profundo sólo cuando corresponda y cubre",
+    "headline": "Mira suelo",
     "items": [
-      "riega profundo sólo cuando",
-      "corresponda y cubre"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 6,
     "avatarFull": false,
@@ -5679,11 +5829,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "tres cosas, cuánto tarda en secarse, cómo amanece la planta y hasta dónde llega el agua, no",
-    "headline": "Tres cosas, cuánto tarda en secarse, cómo amanece",
+    "headline": "Riego profundo",
     "items": [
-      "tres cosas, cuánto tarda",
-      "en secarse, cómo amanece",
-      "la planta y hasta"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 6,
     "avatarFull": true,
@@ -5700,10 +5850,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d149.mp4",
     "supportImage": "",
     "dice": "necesitas inventar resultados, deja que tu propio suelo te enseñe",
-    "headline": "Necesitas inventar resultados, deja que tu propio suelo",
+    "headline": "Mira suelo",
     "items": [
-      "necesitas inventar resultados, deja",
-      "que tu propio suelo"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 6,
     "avatarFull": false,
@@ -5720,11 +5871,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "al final de la semana conocerás más sobre tu huerta que después de leer 20 etiquetas del vivero, y si ya tienes tomates",
-    "headline": "Al final de la semana conocerás más sobre",
+    "headline": "Fruto sano",
     "items": [
-      "al final de la",
-      "semana conocerás más sobre",
-      "tu huerta que después"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 20,
     "avatarFull": false,
@@ -5741,10 +5892,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "con grietas o con la base negra, no te castigues, retira los más",
-    "headline": "Con grietas o con la base negra, no",
+    "headline": "Evita grietas",
     "items": [
-      "con grietas o con",
-      "la base negra, no"
+      "Humedad pareja",
+      "Cambio lento",
+      "Fruto firme"
     ],
     "number": 7,
     "avatarFull": true,
@@ -5761,10 +5913,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "dañados, corrige la constancia, los frutos que recién están empezando",
-    "headline": "Dañados, corrige la constancia, los frutos que recién",
+    "headline": "Fruto sano",
     "items": [
-      "dañados, corrige la constancia,",
-      "los frutos que recién"
+      "Riego parejo",
+      "Raíz activa",
+      "Cosecha firme"
     ],
     "number": 7,
     "avatarFull": false,
@@ -5781,10 +5934,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d151.jpg",
     "supportImage": "",
     "dice": "todavía pueden desarrollarse mejor, la huerta siempre",
-    "headline": "Todavía pueden desarrollarse mejor, la huerta",
+    "headline": "Regla práctica",
     "items": [
-      "todavía pueden desarrollarse",
-      "mejor, la huerta"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -5801,11 +5955,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "deja otra oportunidad en la misma planta, para recordar hagamos el repaso final, uno",
-    "headline": "Deja otra oportunidad en la misma planta, para",
+    "headline": "Regla práctica",
     "items": [
-      "deja otra oportunidad en",
-      "la misma planta, para",
-      "recordar hagamos el repaso"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": true,
@@ -5822,10 +5976,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "no desorbo superficiales, moja la zona de raíces",
-    "headline": "No desorbo superficiales, moja la zona de",
+    "headline": "Regla práctica",
     "items": [
-      "no desorbo superficiales, moja",
-      "la zona de"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 8,
     "avatarFull": false,
@@ -5842,11 +5997,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "dos, comprueba a 5 centímetros y verifica una profundidad de 15 a 20, tres, cuenta",
-    "headline": "Dos, comprueba a 5 centímetros y verifica una",
+    "headline": "Agua medida",
     "items": [
-      "dos, comprueba a 5",
-      "centímetros y verifica una",
-      "profundidad de 15 a"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 5,
     "avatarFull": false,
@@ -5863,10 +6018,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d153.mp4",
     "supportImage": "",
     "dice": "la lluvia dentro del total semanal, cuatro, riega temprano",
-    "headline": "La lluvia dentro del total semanal, cuatro, riega",
+    "headline": "Agua medida",
     "items": [
-      "la lluvia dentro del",
-      "total semanal, cuatro, riega"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
     "number": 2,
     "avatarFull": false,
@@ -5883,11 +6039,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "y al suelo, cinco, usa colchado para que la humedad cambie de espacio, seis, no",
-    "headline": "Y al suelo, cinco, usa colchado para que",
+    "headline": "Mira suelo",
     "items": [
-      "y al suelo, cinco,",
-      "usa colchado para que",
-      "la humedad cambie de"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 2,
     "avatarFull": true,
@@ -5904,10 +6060,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "broll/v7ior5j7vkw9/d155.jpg",
     "supportImage": "",
     "dice": "confundas el decaimiento de la tarde con una orden automática de regar",
-    "headline": "Confundas el decaimiento de la tarde con una",
+    "headline": "Riego profundo",
     "items": [
-      "confundas el decaimiento de la",
-      "tarde con una orden"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 2,
     "avatarFull": false,
@@ -5924,11 +6081,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "siete, no compres calcio antes de revisar humedad, drenaje y suelo, y ocho, en maceta",
-    "headline": "Siete, no compres calcio antes de revisar humedad,",
+    "headline": "Calcio disponible",
     "items": [
-      "siete, no compres calcio",
-      "antes de revisar humedad,",
-      "drenaje y suelo, y"
+      "Riego estable",
+      "Raíz activa",
+      "Fruto firme"
     ],
     "number": 2,
     "avatarFull": false,
@@ -5945,10 +6102,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "observa más seguido, el recipiente pierde agua mucho más rápido que un bancal",
-    "headline": "Observa más seguido, el recipiente pierde agua mucho",
+    "headline": "Riego profundo",
     "items": [
-      "observa más seguido, el recipiente",
-      "pierde agua mucho más"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 3,
     "avatarFull": true,
@@ -5965,10 +6123,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "cuéntame en los comentarios en qué clima cultivas y qué tipo de suelo tienes",
-    "headline": "Cuéntame en los comentarios en qué clima cultivas",
+    "headline": "Mira suelo",
     "items": [
-      "cuéntame en los comentarios en",
-      "qué clima cultivas y qué"
+      "Cinco centímetros",
+      "Tacto fresco",
+      "Decide después"
     ],
     "number": 3,
     "avatarFull": true,
@@ -5985,10 +6144,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "img/v7ior5j7vkw9_personal_04.png",
     "supportImage": "",
     "dice": "arena, arcilla, bancal o maceta, quiero",
-    "headline": "Arena, arcilla, bancal o maceta, quiero",
+    "headline": "Maceta vigilada",
     "items": [
-      "arena, arcilla, bancal",
-      "o maceta, quiero"
+      "Control diario",
+      "Drenaje libre",
+      "Riego lento"
     ],
     "number": 3,
     "avatarFull": false,
@@ -6005,11 +6165,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "saber cuál es el problema que más se repite en tu huerta, también deje la guía de abono natural en la descripción",
-    "headline": "Saber cuál es el problema que más se",
+    "headline": "Regla práctica",
     "items": [
-      "saber cuál es el",
-      "problema que más se",
-      "repite en tu huerta,"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": true,
@@ -6026,10 +6186,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "para quien quiera completar este sistema sin gastar de más, en el",
-    "headline": "Para quien quiera completar este sistema",
+    "headline": "Regla práctica",
     "items": [
-      "para quien quiera",
-      "completar este sistema"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 3,
     "avatarFull": false,
@@ -6046,11 +6207,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "próximo vídeo voy a mostrarte cómo una vasija de barro sin esmaltar, enterrada junto a las raíces, puede soltar",
-    "headline": "Próximo vídeo voy a mostrarte cómo una vasija",
+    "headline": "Regla práctica",
     "items": [
-      "próximo vídeo voy a",
-      "mostrarte cómo una vasija",
-      "de barro sin esmaltar,"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": true,
@@ -6067,10 +6228,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "agua lentamente durante días, también te voy a decir cuándo esa",
-    "headline": "Agua lentamente durante días, también te voy",
+    "headline": "Riego profundo",
     "items": [
-      "agua lentamente durante días,",
-      "también te voy"
+      "Flujo lento",
+      "Agua abajo",
+      "Pausa útil"
     ],
     "number": 4,
     "avatarFull": true,
@@ -6087,11 +6249,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "técnica funciona y cuándo puede pudrir una planta, la gente sencilla sabía cosas que recién estamos",
-    "headline": "Técnica funciona y cuándo puede pudrir una planta,",
+    "headline": "Regla práctica",
     "items": [
-      "técnica funciona y cuándo",
-      "puede pudrir una planta,",
-      "la gente sencilla sabía"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": true,
@@ -6108,10 +6270,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "recordando, observa el suelo, cuida la raíz, la cosecha",
-    "headline": "Recordando, observa el suelo, cuida la raíz,",
+    "headline": "Raíz profunda",
     "items": [
-      "recordando, observa el suelo,",
-      "cuida la raíz,"
+      "Agua abajo",
+      "Reserva estable",
+      "Planta fuerte"
     ],
     "number": 4,
     "avatarFull": true,
@@ -6128,10 +6291,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "src": "",
     "supportImage": "",
     "dice": "te lo devuelve, nos vemos en el galpón",
-    "headline": "Te lo devuelve,",
+    "headline": "Regla práctica",
     "items": [
-      "te lo",
-      "devuelve, nos"
+      "Mide primero",
+      "Cambia poco",
+      "Observa respuesta"
     ],
     "number": 4,
     "avatarFull": true,

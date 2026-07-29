@@ -34,6 +34,53 @@ const itemsFor = (phrase, dur) => {
   ).filter(Boolean);
 };
 
+const copyFor = (phrase) => {
+  const p = String(phrase || "").toLowerCase();
+  if (/pudrici[oó]n|apical|calcio/.test(p)) {
+    return { title: "Calcio disponible", items: ["Riego estable", "Raíz activa", "Fruto firme"] };
+  }
+  if (/griet|rajadur|partid/.test(p)) {
+    return { title: "Evita grietas", items: ["Humedad pareja", "Cambio lento", "Fruto firme"] };
+  }
+  if (/maceta|contenedor/.test(p)) {
+    return { title: "Maceta vigilada", items: ["Control diario", "Drenaje libre", "Riego lento"] };
+  }
+  if (/acolchado|paja|mulch|cobertura/.test(p)) {
+    return { title: "Suelo cubierto", items: ["Menos calor", "Más reserva", "Raíz fresca"] };
+  }
+  if (/drenaje|agujero|escurr/.test(p)) {
+    return { title: "Drenaje libre", items: ["Salida abierta", "Sin charcos", "Raíz sana"] };
+  }
+  if (/marchit|amarill|enfermedad|no cura|trastorno|l[ií]mite|aerosol/.test(p)) {
+    return { title: "Límite honesto", items: ["No cura", "Diagnóstico primero", "Observa cambios"] };
+  }
+  if (/hoja|follaje|salpic|hongo/.test(p)) {
+    return { title: "Riega abajo", items: ["Hoja seca", "Suelo húmedo", "Menos hongos"] };
+  }
+  if (/ra[ií]z/.test(p)) {
+    return { title: "Raíz profunda", items: ["Agua abajo", "Reserva estable", "Planta fuerte"] };
+  }
+  if (/calendario|martes|jueves|cada d[ií]a|frecuencia/.test(p)) {
+    return { title: "Sin calendario", items: ["Mide suelo", "Observa clima", "Decide después"] };
+  }
+  if (/lluvia|mil[ií]metro|litro|cantidad|cent[ií]metro/.test(p)) {
+    return { title: "Agua medida", items: ["Cuenta lluvia", "Mide volumen", "Ajusta despacio"] };
+  }
+  if (/calor|viento|evapora|sequ[ií]a/.test(p)) {
+    return { title: "Pierde agua", items: ["Calor alto", "Viento seco", "Revisa suelo"] };
+  }
+  if (/suelo|tierra|dedo|humedad/.test(p)) {
+    return { title: "Mira suelo", items: ["Cinco centímetros", "Tacto fresco", "Decide después"] };
+  }
+  if (/fruto|tomate|cosecha|flor/.test(p)) {
+    return { title: "Fruto sano", items: ["Riego parejo", "Raíz activa", "Cosecha firme"] };
+  }
+  if (/riego|regar|agua|manguera|goteo/.test(p)) {
+    return { title: "Riego profundo", items: ["Flujo lento", "Agua abajo", "Pausa útil"] };
+  }
+  return { title: "Regla práctica", items: ["Mide primero", "Cambia poco", "Observa respuesta"] };
+};
+
 const numFor = (phrase, fallback) => {
   const m = String(phrase).match(/\b(\d+(?:[.,]\d+)?)\b/);
   return m ? Number(m[1].replace(",", ".")) : fallback;
@@ -82,8 +129,9 @@ for (let i = 0; i < rawMoments.length; i++) {
   if (m.ms / 1000 >= 1260 && m.tipo !== "imagen") avatarFull = true;
 
   const dur = +m.seg;
-  const headline = headlineFor(m.dice, dur);
-  const items = itemsFor(m.dice, dur);
+  const semanticCopy = copyFor(m.dice);
+  const headline = semanticCopy.title || headlineFor(m.dice, dur);
+  const items = semanticCopy.items || itemsFor(m.dice, dur);
   const number = numFor(m.dice, (componentOrdinal % 8) + 1);
   if (m.tipo === "componente") componentOrdinal++;
   const needsSupportImage = new Set([
@@ -273,7 +321,7 @@ for (const m of moments.filter((x) => !x.avatarFull)) {
                       title,
                       items: m.items
                         .slice(0, 2)
-                        .map((x) => wordTake(x, 1)),
+                        .map((x) => wordTake(x, m.dur >= 4 ? 2 : 1)),
                     };
   gateLines.push(
     `  { key: "cue", start: ${m.start}, dur: ${m.dur}, kind: "${actual.toLowerCase()}", props: ${JSON.stringify(props)} }, // <${actual} />`,

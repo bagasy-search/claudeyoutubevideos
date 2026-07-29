@@ -48,7 +48,7 @@ const ComponentMoment: React.FC<{ moment: V7Moment; frames: number }> = ({
   const title = takeWords(moment.headline, 2);
   const items = compact(moment.items, title)
     .slice(0, 2)
-    .map((item) => takeWords(item, 1));
+    .map((item) => takeWords(item, moment.dur >= 4 ? 2 : 1));
   const complex = new Set([
     "CrossSection",
     "BarCompare",
