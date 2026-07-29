@@ -1388,7 +1388,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null

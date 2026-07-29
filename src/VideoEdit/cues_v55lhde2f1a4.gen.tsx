@@ -67,7 +67,7 @@ export const CUES_V55LHDE2F1A4: V55Cue[] = [
   { key:"s_75", start:374.64, dur:3.18, kind:"clip", el:(d) => <RawShot durationInFrames={d} src="broll/v55lhde2f1a4/u065.mp4" hue="amber" clipDur={30} kbPhase={1} /> },
   { key:"s_77", start:381.96, dur:2.7, kind:"textcardreveal", el:(d) => <TextCardReveal durationInFrames={d} lines={["En","un esqueje"]} /> },
   { key:"s_79", start:390.34, dur:3.58, kind:"kineticheadline", el:(d) => <KineticHeadline durationInFrames={d} eyebrow="CLAVE" hue="amber" size={82} tokens={[{t:"AQUÍ"},{t:"HACEMOS"},{t:"LA"},{t:"DEMOSTRACIÓN",hl:true}]} /> },
-  { key:"s_80", start:393.92, dur:3.64, kind:"optioncompare", el:(d) => <OptionCompare durationInFrames={d} left={{tag:"control",title:"Agua sola",sub:"  ",note:"  ",icon:"warn",accent:"orange"}} right={{tag:"prueba",title:"Con sauce",sub:"  ",note:"  ",icon:"check",accent:"green"}} /> },
+  { key:"s_80", start:393.92, dur:3.64, kind:"checklist", el:(d) => <Checklist durationInFrames={d} title="DOS FRASCOS" hue="amber" items={[{text:"Control agua",state:"done"},{text:"Prueba sauce",state:"doing"}]} /> },
   { key:"s_81", start:397.56, dur:4.7, kind:"splitlist", el:(d) => <SplitList durationInFrames={d} title="PUNTOS CLAVE" items={["En","el","segundo pon"]} accent="tan" /> },
   { key:"s_83", start:405, dur:5.04, kind:"checklist", el:(d) => <Checklist durationInFrames={d} title="CONTROL" hue="amber" items={[{text:"Del",state:"done"},{text:"mismo",state:"done"},{text:"grosor",state:"done"}]} /> },
   { key:"s_84", start:410.04, dur:3.38, kind:"rulenumberscene", el:(d) => <RuleNumberScene durationInFrames={d} number="07" label="REGLA" title="Marca" hue="amber" /> },

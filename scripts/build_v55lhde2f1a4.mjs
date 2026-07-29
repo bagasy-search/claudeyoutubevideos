@@ -127,6 +127,7 @@ for (const section of plan.secciones) {
       if (m.id === "s_186" || m.id === "s_205") kind = "Checklist";
       if (m.id === "s_05") kind = "StatBig";
       if (m.id === "s_33") kind = "KineticQuote";
+      if (m.id === "s_80") kind = "Checklist";
       m.kind = kind;
       componentIndex++;
     }
@@ -320,6 +321,9 @@ const componentJsx = (m, ordinal) => {
         .map(qSafe)
         .join(",")}]} accent="tan" />`;
     case "Checklist":
+      if (m.id === "s_80") {
+        return `<Checklist durationInFrames={d} title="DOS FRASCOS" hue="amber" items={[{text:"Control agua",state:"done"},{text:"Prueba sauce",state:"doing"}]} />`;
+      }
       if (m.id === "s_186") {
         return `<Checklist durationInFrames={d} title="CONTROL" hue="amber" items={[{text:"No invasoras",state:"done"},{text:"No protegidas",state:"done"},{text:"Propaga legal",state:"done"}]} />`;
       }
