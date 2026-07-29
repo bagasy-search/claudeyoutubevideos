@@ -23,7 +23,7 @@ export const MainVj2l6qtv0c98: React.FC = () => {
               {cue.el(sec(cue.dur))}
             </Sequence>
           ))}
-          <AvatarLayer src="avatar_vj2l6qtv0c98.mp4" wav="vj2l6qtv0c98.wav" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
+          <AvatarLayer src="vj2l6qtv0c98_opt.mp4" wav="vj2l6qtv0c98.wav" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
           {OVERLAYS.map((cue) => (
             <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
               {cue.el(sec(cue.dur))}
