@@ -117,7 +117,11 @@ for (let i = 0; i < rawMoments.length; i++) {
 // Reparte envoltorios del kit de forma uniforme en el metraje real.
 // Son 34 planos existentes: no agrega cortes ni inventa material.
 const visibleRaw = moments.filter(
-  (m) => !m.avatarFull && m.dur >= 2.5 && (m.tipo === "clip" || m.tipo === "imagen"),
+  (m) =>
+    !m.avatarFull &&
+    m.dur >= 2.5 &&
+    Math.abs(m.start - 106.84) > 0.01 &&
+    (m.tipo === "clip" || m.tipo === "imagen"),
 );
 const overlayKinds = ["annotated", "callout", "impact"];
 const overlayCount = Math.min(34, visibleRaw.length);
@@ -186,6 +190,9 @@ const assetEntries = [
       .filter(Boolean),
   ),
   "sfx",
+  "assets",
+  "bed",
+  "logos",
 ];
 fs.writeFileSync(
   `public/_assets_${slug}.txt`,

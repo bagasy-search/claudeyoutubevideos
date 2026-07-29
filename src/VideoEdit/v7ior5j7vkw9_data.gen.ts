@@ -1161,7 +1161,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": ""
   },
   {
     "key": "principio_raiz_015",
@@ -1202,7 +1202,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "annotated"
   },
   {
     "key": "principio_raiz_017",
@@ -1324,7 +1324,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 4,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": "callout"
+    "kitOverlay": ""
   },
   {
     "key": "principio_raiz_023",
@@ -1385,7 +1385,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 15,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "callout"
   },
   {
     "key": "principio_raiz_026",
@@ -1487,7 +1487,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 8,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": ""
   },
   {
     "key": "principio_raiz_031",
@@ -1569,7 +1569,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "impact"
   },
   {
     "key": "principio_raiz_035",
@@ -1773,7 +1773,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": ""
   },
   {
     "key": "cantidad_profundidad_004",
@@ -1834,7 +1834,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 6,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "callout"
   },
   {
     "key": "cantidad_profundidad_007",
@@ -1895,7 +1895,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 7,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": ""
   },
   {
     "key": "cantidad_profundidad_010",
@@ -1936,7 +1936,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 7,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "impact"
   },
   {
     "key": "cantidad_profundidad_012",
@@ -2038,7 +2038,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 8,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": ""
   },
   {
     "key": "cantidad_profundidad_017",
@@ -2099,7 +2099,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "annotated"
   },
   {
     "key": "cantidad_profundidad_020",
@@ -2140,7 +2140,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": ""
   },
   {
     "key": "cantidad_profundidad_022",
@@ -2222,7 +2222,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 3,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "callout"
   },
   {
     "key": "cantidad_profundidad_026",
@@ -2446,7 +2446,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 6,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": ""
   },
   {
     "key": "cantidad_profundidad_037",
@@ -2507,7 +2507,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 7,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "annotated"
   },
   {
     "key": "cantidad_profundidad_040",
@@ -2895,7 +2895,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": ""
   },
   {
     "key": "calcio_y_fruto_009",
@@ -2935,7 +2935,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "impact"
   },
   {
     "key": "calcio_y_fruto_011",
@@ -2997,7 +2997,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": ""
   },
   {
     "key": "calcio_y_fruto_014",
@@ -3038,7 +3038,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "annotated"
   },
   {
     "key": "calcio_y_fruto_016",
@@ -3262,7 +3262,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": ""
   },
   {
     "key": "calcio_y_fruto_027",
@@ -3343,7 +3343,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 7,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "impact"
   },
   {
     "key": "calcio_y_fruto_031",
@@ -3670,7 +3670,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 3,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": ""
   },
   {
     "key": "calcio_y_fruto_047",
@@ -3731,7 +3731,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 4,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "impact"
   },
   {
     "key": "calcio_y_fruto_050",
@@ -4017,7 +4017,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": ""
   },
   {
     "key": "macetas_y_acolchado_014",
@@ -4058,7 +4058,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "callout"
   },
   {
     "key": "macetas_y_acolchado_016",
@@ -4791,7 +4791,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": "annotated"
+    "kitOverlay": ""
   },
   {
     "key": "limites_y_error_009",
@@ -4852,7 +4852,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "annotated"
   },
   {
     "key": "limites_y_error_012",
