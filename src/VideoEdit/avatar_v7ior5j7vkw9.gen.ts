@@ -442,7 +442,7 @@ export const AVATAR_V7IOR5J7VKW9 = [
     "mode": "hidden"
   },
   {
-    "start": 807.14,
+    "start": 800.42,
     "mode": "full"
   },
   {

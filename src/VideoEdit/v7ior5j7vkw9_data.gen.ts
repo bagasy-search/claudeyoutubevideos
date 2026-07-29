@@ -464,7 +464,7 @@ export const AVATAR_WINDOWS_V7IOR5J7VKW9 = [
     "mode": "hidden"
   },
   {
-    "start": 807.14,
+    "start": 800.42,
     "mode": "full"
   },
   {
@@ -4885,7 +4885,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Decide después"
     ],
     "number": 0,
-    "avatarFull": false,
+    "avatarFull": true,
     "personal": true,
     "kitOverlay": "",
     "title": "Mira suelo",

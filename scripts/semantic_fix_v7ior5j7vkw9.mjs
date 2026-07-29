@@ -16,6 +16,7 @@ const FORCE_AVATAR_KEYS = new Set([
   "cantidad_profundidad_033",
   "calcio_y_fruto_017",
   "limites_y_error_024",
+  "macetas_y_acolchado_017",
   "recap_y_cierre_001",
 ]);
 

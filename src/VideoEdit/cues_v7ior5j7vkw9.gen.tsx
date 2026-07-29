@@ -110,7 +110,6 @@ export const CUES_GATE_V7IOR5J7VKW9 = [
   { key:"cue", start:779.88, dur:6.36, kind:"raw", src:"broll/v7ior5j7vkw9/d103.mp4" }, // <RawShot />
   { key:"cue", start:790.28, dur:6.32, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d105.mp4", props:{"eyebrow":"Prueba","caption":"Suelo cubierto","label":"ACOLCHADO"} }, // <AnnotatedImage />
   { key:"cue", start:796.6, dur:3.82, kind:"raw", src:"img/v7ior5j7vkw9_personal_03.png" }, // <RawShot />
-  { key:"cue", start:800.42, dur:6.72, kind:"textcardreveal", props:{"title":"Mira suelo","items":["Cinco centímetros","Tacto fresco"]} }, // <TextCardReveal />
   { key:"cue", start:811.36, dur:4.64, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d107.jpg", props:{"eyebrow":"Prueba","caption":"Sin calendario","label":"CALENDARIO"} }, // <AnnotatedImage />
   { key:"cue", start:820, dur:5.98, kind:"raw", src:"broll/v7ior5j7vkw9/d109.jpg" }, // <RawShot />
   { key:"cue", start:825.98, dur:3.46, kind:"textcardreveal", props:{"eyebrow":"Riego","lines":["Sin calendario"]} }, // <TextCardReveal />
