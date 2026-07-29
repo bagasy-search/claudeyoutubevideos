@@ -15,6 +15,9 @@ export type V7Moment = {
   avatarFull: boolean;
   personal: boolean;
   kitOverlay: string;
+  topic: string;
+  setup: string;
+  figure: string;
 };
 
 export const TOTAL_SECONDS_V7IOR5J7VKW9 = 1283.135;
@@ -690,10 +693,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "hook_002",
@@ -711,10 +718,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "hook_003",
@@ -722,7 +733,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 8.58,
     "dur": 3.52,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "Hablo de ese pequeño vaso de agua que alguien echa cada tarde con",
@@ -732,10 +743,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "hook_004",
@@ -756,7 +771,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "5 centímetros"
   },
   {
     "key": "hook_005",
@@ -774,10 +793,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "hook_006",
@@ -785,7 +808,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 22.42,
     "dur": 5.06,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "ProcessSteps",
     "src": "",
     "supportImage": "",
     "dice": "los días, las raíces aprenden a quedarse arriba, donde el calor roba el agua primero",
@@ -795,10 +818,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "hook_007",
@@ -816,10 +843,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "hook_008",
@@ -827,7 +858,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 31.36,
     "dur": 6.98,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "Checklist",
     "src": "",
     "supportImage": "",
     "dice": "empapada, tampoco quiere pasar sed y después recibir una inundación. Esa alternancia silenciosa puede terminar",
@@ -837,10 +868,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "hook_009",
@@ -858,10 +893,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "hook_010",
@@ -879,10 +918,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Diagnóstico primero",
       "Observa cambios"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "impact",
+    "title": "Límite honesto",
+    "topic": "LÍMITE",
+    "setup": "No todo es riego",
+    "figure": "LÍMITE"
   },
   {
     "key": "principio_raiz_001",
@@ -903,7 +946,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "5 centímetros"
   },
   {
     "key": "principio_raiz_002",
@@ -924,7 +971,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 15,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "15"
   },
   {
     "key": "principio_raiz_003",
@@ -932,7 +983,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 56.14,
     "dur": 3.84,
     "tipo": "componente",
-    "kind": "StatBig",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "metro cuadrado a la semana. Contando también lo que cae del cielo",
@@ -942,10 +993,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_004",
@@ -963,10 +1018,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "principio_raiz_005",
@@ -984,10 +1043,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "principio_raiz_006",
@@ -1005,10 +1068,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_007",
@@ -1026,10 +1093,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_008",
@@ -1047,10 +1118,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_009",
@@ -1068,10 +1143,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "principio_raiz_010",
@@ -1089,10 +1168,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_011",
@@ -1110,10 +1193,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "principio_raiz_012",
@@ -1131,10 +1218,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "principio_raiz_013",
@@ -1142,7 +1233,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 103.36,
     "dur": 3.48,
     "tipo": "componente",
-    "kind": "ReframeList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "Empecemos por el resultado, un tomate bien regado no es el que",
@@ -1152,10 +1243,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "principio_raiz_014",
@@ -1173,10 +1268,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "principio_raiz_015",
@@ -1194,10 +1293,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_016",
@@ -1215,10 +1318,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "principio_raiz_017",
@@ -1239,7 +1346,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "1"
   },
   {
     "key": "principio_raiz_018",
@@ -1260,7 +1371,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "2 centímetros"
   },
   {
     "key": "principio_raiz_019",
@@ -1278,10 +1393,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_020",
@@ -1299,10 +1418,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Diagnóstico primero",
       "Observa cambios"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Límite honesto",
+    "topic": "LÍMITE",
+    "setup": "No todo es riego",
+    "figure": "LÍMITE"
   },
   {
     "key": "principio_raiz_021",
@@ -1320,10 +1443,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "principio_raiz_022",
@@ -1341,10 +1468,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "principio_raiz_023",
@@ -1352,7 +1483,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 151.04,
     "dur": 3.8,
     "tipo": "componente",
-    "kind": "CrossSection",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "cargar el perfil del suelo, oscurecer la tierra lleva un minuto",
@@ -1362,10 +1493,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "principio_raiz_024",
@@ -1383,10 +1518,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "principio_raiz_025",
@@ -1407,7 +1546,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 15,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "callout",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "15"
   },
   {
     "key": "principio_raiz_026",
@@ -1415,7 +1558,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 165.54,
     "dur": 5.68,
     "tipo": "componente",
-    "kind": "CrossSection",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "centímetros del tallo, sin lastimar las raíces principales, mira el perfil, si solo están húmedos los",
@@ -1425,10 +1568,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "principio_raiz_027",
@@ -1449,7 +1596,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 2,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "2 centímetros"
   },
   {
     "key": "principio_raiz_028",
@@ -1470,7 +1621,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 15,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "15"
   },
   {
     "key": "principio_raiz_029",
@@ -1488,10 +1643,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "principio_raiz_030",
@@ -1509,10 +1668,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Observa clima",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Sin calendario",
+    "topic": "CALENDARIO",
+    "setup": "Rutina ciega",
+    "figure": "CALENDARIO"
   },
   {
     "key": "principio_raiz_031",
@@ -1520,7 +1683,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 190.3,
     "dur": 3.3,
     "tipo": "componente",
-    "kind": "PhotoChecklist",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d023.mp4",
     "dice": "la pared, porque dos huertas separadas por una cerca pueden",
@@ -1530,10 +1693,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_032",
@@ -1551,10 +1718,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "principio_raiz_033",
@@ -1562,7 +1733,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 199.5,
     "dur": 3.6,
     "tipo": "componente",
-    "kind": "ImpactReveal",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d024.mp4",
     "dice": "la tarde, la otra está protegida por el galpón, una tiene",
@@ -1572,10 +1743,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_034",
@@ -1593,10 +1768,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Más reserva",
       "Raíz fresca"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "ACOLCHADO"
   },
   {
     "key": "principio_raiz_035",
@@ -1614,10 +1793,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_036",
@@ -1635,10 +1818,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_037",
@@ -1656,10 +1843,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "principio_raiz_038",
@@ -1667,7 +1858,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 223.16,
     "dur": 6.64,
     "tipo": "componente",
-    "kind": "StatBig",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "días riego mis tomates sin mirar el suelo? La referencia general de una pulgada semanal sirve para empezar, una",
@@ -1677,10 +1868,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "principio_raiz_039",
@@ -1701,7 +1896,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 25,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "25 litros"
   },
   {
     "key": "principio_raiz_040",
@@ -1719,10 +1918,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "principio_raiz_041",
@@ -1740,10 +1943,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_001",
@@ -1751,7 +1958,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 240.16,
     "dur": 6.06,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "normal, con calor extremo, viento o suelo muy arenoso puede hacer falta más frecuencia, con",
@@ -1761,10 +1968,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Observa clima",
       "Decide después"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Sin calendario",
+    "topic": "CALENDARIO",
+    "setup": "Rutina ciega",
+    "figure": "CALENDARIO"
   },
   {
     "key": "cantidad_profundidad_002",
@@ -1782,10 +1993,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "cantidad_profundidad_003",
@@ -1806,7 +2021,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 1,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "1 metro"
   },
   {
     "key": "cantidad_profundidad_004",
@@ -1827,7 +2046,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 50,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "50 litros"
   },
   {
     "key": "cantidad_profundidad_005",
@@ -1845,10 +2068,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_006",
@@ -1866,10 +2093,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Observa clima",
       "Decide después"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Sin calendario",
+    "topic": "CALENDARIO",
+    "setup": "Rutina ciega",
+    "figure": "CALENDARIO"
   },
   {
     "key": "cantidad_profundidad_007",
@@ -1877,7 +2108,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 270.8,
     "dur": 6.56,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "qué día es, el suelo sí sabe cuánta agua guarda, ahora viene el segundo principio, es mejor un riego lento",
@@ -1887,10 +2118,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_008",
@@ -1908,10 +2143,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_009",
@@ -1929,10 +2168,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_010",
@@ -1950,10 +2193,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_011",
@@ -1971,10 +2218,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_012",
@@ -1982,7 +2233,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 294.8,
     "dur": 3.62,
     "tipo": "componente",
-    "kind": "ChipsCluster",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "eso ocurre, riega en dos pasadas, da una primera cantidad",
@@ -1992,10 +2243,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "cantidad_profundidad_013",
@@ -2013,10 +2268,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_014",
@@ -2034,10 +2293,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_015",
@@ -2055,10 +2318,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_016",
@@ -2076,10 +2343,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_017",
@@ -2087,7 +2358,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 318.82,
     "dur": 6.6,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "tierra sobre las hojas bajas, lo más sencillo es una manguera de goteo, una línea de riego lento o un",
@@ -2097,10 +2368,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_018",
@@ -2118,10 +2393,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_019",
@@ -2139,10 +2418,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_020",
@@ -2160,10 +2443,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_021",
@@ -2181,10 +2468,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "cantidad_profundidad_022",
@@ -2192,7 +2483,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 343.48,
     "dur": 3.56,
     "tipo": "componente",
-    "kind": "PhotoChecklist",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d045.mp4",
     "dice": "toda la planta y dirige el flujo al suelo, si debes regar",
@@ -2202,10 +2493,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_023",
@@ -2213,7 +2508,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 347.04,
     "dur": 6.28,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "desde arriba, hazlo temprano para que las hojas tengan tiempo de secarse, la hora ayuda, no reemplaza la",
@@ -2223,10 +2518,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_024",
@@ -2247,7 +2546,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "5"
   },
   {
     "key": "cantidad_profundidad_025",
@@ -2265,10 +2568,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "cantidad_profundidad_026",
@@ -2286,10 +2593,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_027",
@@ -2297,7 +2608,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 367.14,
     "dur": 6.72,
     "tipo": "componente",
-    "kind": "SplitList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "puede secarse con la luz, regar al mediodía no quema mágicamente las hojas por el simple hecho de que una gota",
@@ -2307,10 +2618,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_028",
@@ -2328,10 +2643,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "cantidad_profundidad_029",
@@ -2349,10 +2668,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "cantidad_profundidad_030",
@@ -2370,10 +2693,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_031",
@@ -2391,10 +2718,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_032",
@@ -2402,7 +2733,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 391.6,
     "dur": 3.66,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "KineticQuote",
     "src": "",
     "supportImage": "",
     "dice": "suelo realmente seco no debe esperar hasta el día siguiente por una regla",
@@ -2412,10 +2743,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_033",
@@ -2433,10 +2768,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "cantidad_profundidad_034",
@@ -2454,10 +2793,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Diagnóstico primero",
       "Observa cambios"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Límite honesto",
+    "topic": "LÍMITE",
+    "setup": "No todo es riego",
+    "figure": "LÍMITE"
   },
   {
     "key": "cantidad_profundidad_035",
@@ -2475,10 +2818,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "cantidad_profundidad_036",
@@ -2496,10 +2843,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "cantidad_profundidad_037",
@@ -2507,7 +2858,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 414.94,
     "dur": 6.76,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "aparece una zona oscura y hundida en el extremo opuesto al tallo, muchos corren al vivero por calcio, compran un aerosol",
@@ -2517,10 +2868,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "cantidad_profundidad_038",
@@ -2538,10 +2893,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "cantidad_profundidad_039",
@@ -2559,10 +2918,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Diagnóstico primero",
       "Observa cambios"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Límite honesto",
+    "topic": "LÍMITE",
+    "setup": "No todo es riego",
+    "figure": "LÍMITE"
   },
   {
     "key": "cantidad_profundidad_040",
@@ -2570,7 +2933,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 430.14,
     "dur": 3.26,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "no recibió el calcio de manera adecuada en el momento en que estaba",
@@ -2580,10 +2943,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "cantidad_profundidad_041",
@@ -2591,7 +2958,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 433.4,
     "dur": 6.06,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "formando sus tejidos y aquí el agua es decisiva, el calcio se mueve con el agua que absorben las raíces",
@@ -2601,10 +2968,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "cantidad_profundidad_042",
@@ -2612,7 +2983,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 439.46,
     "dur": 3.8,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "si el suelo pasa de seco a empapado y vuelve a secarse, ese",
@@ -2622,10 +2993,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "cantidad_profundidad_043",
@@ -2633,7 +3008,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 443.26,
     "dur": 6.32,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "KineticQuote",
     "src": "",
     "supportImage": "",
     "dice": "transporte pierde regularidad, puede haber calcio en",
@@ -2643,10 +3018,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "cantidad_profundidad_044",
@@ -2654,7 +3033,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 449.58,
     "dur": 3.7,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "la calcio sin analizar el suelo, puede no resolver nada y rociar",
@@ -2664,10 +3043,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "cantidad_profundidad_045",
@@ -2675,7 +3058,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 453.28,
     "dur": 5.84,
     "tipo": "componente",
-    "kind": "CalloutMark",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
     "dice": "un fruto que ya tiene la mancha no reconstruye el tejido muerto, te lo digo sin vueltas, un producto",
@@ -2685,10 +3068,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "cantidad_profundidad_046",
@@ -2706,10 +3093,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "cantidad_profundidad_047",
@@ -2727,10 +3118,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Sin charcos",
       "Raíz sana"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Drenaje libre",
+    "topic": "DRENAJE",
+    "setup": "Agua estancada",
+    "figure": "DRENAJE"
   },
   {
     "key": "cantidad_profundidad_048",
@@ -2748,10 +3143,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_049",
@@ -2769,10 +3168,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "cantidad_profundidad_050",
@@ -2790,10 +3193,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_001",
@@ -2811,10 +3218,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "calcio_y_fruto_002",
@@ -2822,7 +3233,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 486.08,
     "dur": 3.58,
     "tipo": "componente",
-    "kind": "ReframeList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "para estimular raíces, algunas tienen un uso real",
@@ -2832,10 +3243,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_003",
@@ -2856,7 +3271,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 15,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "15 centímetros"
   },
   {
     "key": "calcio_y_fruto_004",
@@ -2874,10 +3293,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "calcio_y_fruto_005",
@@ -2895,10 +3318,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_006",
@@ -2916,10 +3343,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_007",
@@ -2937,10 +3368,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "calcio_y_fruto_008",
@@ -2958,10 +3393,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "calcio_y_fruto_009",
@@ -2979,10 +3418,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_010",
@@ -3000,10 +3443,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "calcio_y_fruto_011",
@@ -3021,10 +3468,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambio lento",
       "Fruto firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Evita grietas",
+    "topic": "GRIETAS",
+    "setup": "Cambios bruscos",
+    "figure": "GRIETAS"
   },
   {
     "key": "calcio_y_fruto_012",
@@ -3032,7 +3483,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 534.66,
     "dur": 3.76,
     "tipo": "componente",
-    "kind": "CrossSection",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "tienen una sola causa, la variedad y el estado de madurez también",
@@ -3042,10 +3493,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_013",
@@ -3063,10 +3518,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "calcio_y_fruto_014",
@@ -3084,10 +3543,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_015",
@@ -3105,10 +3568,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "calcio_y_fruto_016",
@@ -3126,10 +3593,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambio lento",
       "Fruto firme"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Evita grietas",
+    "topic": "GRIETAS",
+    "setup": "Cambios bruscos",
+    "figure": "GRIETAS"
   },
   {
     "key": "calcio_y_fruto_017",
@@ -3137,7 +3608,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 558.52,
     "dur": 6.76,
     "tipo": "componente",
-    "kind": "BarCompare",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "cosecha de hoy revela decisiones que tomaste cuando el fruto era pequeño, durante la floración y el desarrollo temprano",
@@ -3147,10 +3618,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "calcio_y_fruto_018",
@@ -3168,10 +3643,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "calcio_y_fruto_019",
@@ -3189,10 +3668,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "calcio_y_fruto_020",
@@ -3210,10 +3693,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_021",
@@ -3231,10 +3718,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "calcio_y_fruto_022",
@@ -3252,10 +3743,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "calcio_y_fruto_023",
@@ -3273,10 +3768,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Diagnóstico primero",
       "Observa cambios"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Límite honesto",
+    "topic": "LÍMITE",
+    "setup": "No todo es riego",
+    "figure": "LÍMITE"
   },
   {
     "key": "calcio_y_fruto_024",
@@ -3294,10 +3793,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_025",
@@ -3315,10 +3818,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "calcio_y_fruto_026",
@@ -3336,10 +3843,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_027",
@@ -3360,7 +3871,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "5 centímetros"
   },
   {
     "key": "calcio_y_fruto_028",
@@ -3368,7 +3883,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 612.94,
     "dur": 4.7,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "SplitList",
     "src": "",
     "supportImage": "",
     "dice": "poco más si arriba parece seco pero abajo está fresco, espera",
@@ -3378,10 +3893,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_029",
@@ -3399,10 +3918,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_030",
@@ -3420,10 +3943,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "calcio_y_fruto_031",
@@ -3441,10 +3968,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "calcio_y_fruto_032",
@@ -3452,7 +3983,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 631.38,
     "dur": 3.72,
     "tipo": "componente",
-    "kind": "Checklist",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "volumen, sus paredes reciben calor, el agua drena",
@@ -3462,10 +3993,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "calcio_y_fruto_033",
@@ -3483,10 +4018,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "calcio_y_fruto_034",
@@ -3504,10 +4043,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "calcio_y_fruto_035",
@@ -3525,10 +4068,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_036",
@@ -3546,10 +4093,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "calcio_y_fruto_037",
@@ -3557,7 +4108,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 655.2,
     "dur": 6.56,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "Checklist",
     "src": "",
     "supportImage": "",
     "dice": "inferiores, luego deja drenar, no permitas que el recipiente quede sentado durante horas en un plato lleno",
@@ -3567,10 +4118,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_038",
@@ -3588,10 +4143,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_039",
@@ -3599,7 +4158,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 666.42,
     "dur": 4.86,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "un plantín pequeño en una maceta enorme conserva agua durante más tiempo",
@@ -3609,10 +4168,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "calcio_y_fruto_040",
@@ -3630,10 +4193,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "calcio_y_fruto_041",
@@ -3651,10 +4218,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Observa clima",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Sin calendario",
+    "topic": "CALENDARIO",
+    "setup": "Rutina ciega",
+    "figure": "CALENDARIO"
   },
   {
     "key": "calcio_y_fruto_042",
@@ -3662,7 +4233,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 680.7,
     "dur": 3.54,
     "tipo": "componente",
-    "kind": "ChipsCluster",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "su recipiente, su mezcla, su clima y el tamaño de",
@@ -3672,10 +4243,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_043",
@@ -3693,10 +4268,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_044",
@@ -3714,10 +4293,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_045",
@@ -3735,10 +4318,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "calcio_y_fruto_046",
@@ -3756,10 +4343,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "calcio_y_fruto_047",
@@ -3777,10 +4368,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_048",
@@ -3801,7 +4396,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 10,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "10"
   },
   {
     "key": "calcio_y_fruto_049",
@@ -3819,10 +4418,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "calcio_y_fruto_050",
@@ -3830,7 +4433,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 719.2,
     "dur": 1.02,
     "tipo": "componente",
-    "kind": "ReframeList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "de más, no",
@@ -3840,10 +4443,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_001",
@@ -3861,10 +4468,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_002",
@@ -3872,7 +4483,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 726.52,
     "dur": 3.7,
     "tipo": "componente",
-    "kind": "PhotoChecklist",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d096.jpg",
     "dice": "abriendo la tierra, la cuenta te dice cuánto salió",
@@ -3882,10 +4493,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "macetas_y_acolchado_003",
@@ -3903,10 +4518,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Más reserva",
       "Raíz fresca"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "ACOLCHADO"
   },
   {
     "key": "macetas_y_acolchado_004",
@@ -3914,9 +4533,9 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 737.56,
     "dur": 4.26,
     "tipo": "componente",
-    "kind": "CrossSection",
+    "kind": "CalloutMark",
     "src": "",
-    "supportImage": "",
+    "supportImage": "broll/v7ior5j7vkw9/d097.mp4",
     "dice": "pon entre 5 y 8 centímetros de paja limpia, hojas secas trituradas",
     "headline": "Suelo cubierto",
     "items": [
@@ -3927,7 +4546,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "5"
   },
   {
     "key": "macetas_y_acolchado_005",
@@ -3945,10 +4568,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "macetas_y_acolchado_006",
@@ -3966,10 +4593,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Más reserva",
       "Raíz fresca"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "ACOLCHADO"
   },
   {
     "key": "macetas_y_acolchado_007",
@@ -3977,7 +4608,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 751.7,
     "dur": 6.6,
     "tipo": "componente",
-    "kind": "SplitList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "superficie, reduce el de las gotas, también dificulta que la tierra salpique las hojas, lo importante no",
@@ -3987,10 +4618,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "macetas_y_acolchado_008",
@@ -4008,10 +4643,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "macetas_y_acolchado_009",
@@ -4029,10 +4668,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_010",
@@ -4050,10 +4693,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_011",
@@ -4061,7 +4708,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 770.34,
     "dur": 6,
     "tipo": "componente",
-    "kind": "StatBig",
+    "kind": "SplitList",
     "src": "",
     "supportImage": "",
     "dice": "otra vez es el verdadero premio, pero cuidado, no pongas acolchado sobre una tierra completamente",
@@ -4071,10 +4718,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Más reserva",
       "Raíz fresca"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "ACOLCHADO"
   },
   {
     "key": "macetas_y_acolchado_012",
@@ -4082,7 +4733,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 776.34,
     "dur": 3.54,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "ProcessSteps",
     "src": "",
     "supportImage": "",
     "dice": "seca y supongas que el problema desapareció, primero carga",
@@ -4092,10 +4743,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_013",
@@ -4113,10 +4768,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Más reserva",
       "Raíz fresca"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "ACOLCHADO"
   },
   {
     "key": "macetas_y_acolchado_014",
@@ -4134,10 +4793,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "macetas_y_acolchado_015",
@@ -4155,10 +4818,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Más reserva",
       "Raíz fresca"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "ACOLCHADO"
   },
   {
     "key": "macetas_y_acolchado_016",
@@ -4176,10 +4843,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_017",
@@ -4197,10 +4868,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "macetas_y_acolchado_018",
@@ -4218,10 +4893,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Observa clima",
       "Decide después"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Sin calendario",
+    "topic": "CALENDARIO",
+    "setup": "Rutina ciega",
+    "figure": "CALENDARIO"
   },
   {
     "key": "macetas_y_acolchado_019",
@@ -4239,10 +4918,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Observa clima",
       "Decide después"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Sin calendario",
+    "topic": "CALENDARIO",
+    "setup": "Rutina ciega",
+    "figure": "CALENDARIO"
   },
   {
     "key": "macetas_y_acolchado_020",
@@ -4260,10 +4943,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_021",
@@ -4281,10 +4968,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "macetas_y_acolchado_022",
@@ -4292,20 +4983,24 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 825.98,
     "dur": 3.46,
     "tipo": "componente",
-    "kind": "AgedDoc",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "una gran cantidad cada día, tu manejo debe responder a",
     "headline": "Sin calendario",
     "items": [
-      "Mide suelo",
-      "Observa clima",
-      "Decide después"
+      "Cuenta lluvia",
+      "Mide volumen",
+      "Ajusta despacio"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "macetas_y_acolchado_023",
@@ -4323,10 +5018,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Sin charcos",
       "Raíz sana"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Drenaje libre",
+    "topic": "DRENAJE",
+    "setup": "Agua estancada",
+    "figure": "DRENAJE"
   },
   {
     "key": "macetas_y_acolchado_024",
@@ -4344,10 +5043,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_025",
@@ -4365,10 +5068,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Más reserva",
       "Raíz fresca"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "ACOLCHADO"
   },
   {
     "key": "macetas_y_acolchado_026",
@@ -4386,10 +5093,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_027",
@@ -4407,10 +5118,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Diagnóstico primero",
       "Observa cambios"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Límite honesto",
+    "topic": "LÍMITE",
+    "setup": "No todo es riego",
+    "figure": "LÍMITE"
   },
   {
     "key": "macetas_y_acolchado_028",
@@ -4418,7 +5133,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 857.06,
     "dur": 4.8,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "de un solo lado y no se recupera bien, investiga fusarium, verticilium",
@@ -4428,10 +5143,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_029",
@@ -4449,10 +5168,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_030",
@@ -4470,10 +5193,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "macetas_y_acolchado_031",
@@ -4491,10 +5218,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "macetas_y_acolchado_032",
@@ -4502,7 +5233,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 876.04,
     "dur": 3.46,
     "tipo": "componente",
-    "kind": "ReframeList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "un recipiente sin agujeros, si el agua no sale, mejora",
@@ -4512,10 +5243,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Sin charcos",
       "Raíz sana"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Drenaje libre",
+    "topic": "DRENAJE",
+    "setup": "Agua estancada",
+    "figure": "DRENAJE"
   },
   {
     "key": "macetas_y_acolchado_033",
@@ -4523,7 +5258,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 879.5,
     "dur": 6.32,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "el drenaje, no puede detener una ola de calor extrema, cuando las temperaturas suben mucho, el tomate puede perder",
@@ -4533,10 +5268,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Sin charcos",
       "Raíz sana"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Drenaje libre",
+    "topic": "DRENAJE",
+    "setup": "Agua estancada",
+    "figure": "DRENAJE"
   },
   {
     "key": "macetas_y_acolchado_034",
@@ -4554,10 +5293,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "macetas_y_acolchado_035",
@@ -4575,10 +5318,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "macetas_y_acolchado_036",
@@ -4586,7 +5333,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 895.42,
     "dur": 4.66,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "de calcio, pH o sales, la humedad estable es fundamental",
@@ -4596,10 +5343,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "macetas_y_acolchado_037",
@@ -4617,10 +5368,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_038",
@@ -4628,7 +5383,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 906.72,
     "dur": 4.14,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "AgedDoc",
     "src": "",
     "supportImage": "",
     "dice": "lo que no puede hacer, ahora vamos al mito del calcio, la mancha negra",
@@ -4638,10 +5393,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "macetas_y_acolchado_039",
@@ -4659,10 +5418,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_040",
@@ -4670,7 +5433,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 915.5,
     "dur": 3.72,
     "tipo": "componente",
-    "kind": "ChipsCluster",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "vende sales de Epson, las cáscaras tardan en descomponerse",
@@ -4680,10 +5443,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_041",
@@ -4691,7 +5458,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 919.22,
     "dur": 5.92,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "la leche no es una solución de para la huerta y las sales de Epson aportan magnesio, no calcio, si",
@@ -4701,10 +5468,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "macetas_y_acolchado_042",
@@ -4712,7 +5483,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 925.14,
     "dur": 3.7,
     "tipo": "componente",
-    "kind": "CrossSection",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "agregas magnesio sin necesitarlo, puedes empeorar el equilibrio de",
@@ -4722,10 +5493,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "macetas_y_acolchado_043",
@@ -4743,10 +5518,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_001",
@@ -4754,7 +5533,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 930.12,
     "dur": 3.7,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "Checklist",
     "src": "",
     "supportImage": "",
     "dice": "por entrar en la planta, la ruta responsable es distinta, primero",
@@ -4764,10 +5543,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_002",
@@ -4785,10 +5568,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "limites_y_error_003",
@@ -4806,10 +5593,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_004",
@@ -4817,7 +5608,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 943.26,
     "dur": 6.82,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "ProcessSteps",
     "src": "",
     "supportImage": "",
     "dice": "revisa la historia de humedad, hubo sequía y luego mucha agua, la maceta se secó completo, las raíces fueron dañadas",
@@ -4827,10 +5618,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "limites_y_error_005",
@@ -4848,10 +5643,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_006",
@@ -4859,7 +5658,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 954.64,
     "dur": 4.36,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "analiza el suelo, corrige el pH y el calcio según el resultado, no según",
@@ -4869,10 +5668,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "limites_y_error_007",
@@ -4890,10 +5693,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "limites_y_error_008",
@@ -4911,10 +5718,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "limites_y_error_009",
@@ -4922,7 +5733,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 968.36,
     "dur": 3.6,
     "tipo": "componente",
-    "kind": "ImpactReveal",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d125.mp4",
     "dice": "completo con una planta imaginaria, son las 3 de la",
@@ -4935,7 +5746,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 3,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "3"
   },
   {
     "key": "limites_y_error_010",
@@ -4953,10 +5768,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "limites_y_error_011",
@@ -4974,10 +5793,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_012",
@@ -4998,7 +5821,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "5 centímetros"
   },
   {
     "key": "limites_y_error_013",
@@ -5016,10 +5843,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "limites_y_error_014",
@@ -5027,7 +5858,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 991.9,
     "dur": 6.88,
     "tipo": "componente",
-    "kind": "ReframeList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "fresca más abajo, la planta no está pidiendo una inundación, está reduciendo temporalmente la pérdida",
@@ -5037,10 +5868,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_015",
@@ -5058,10 +5893,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_016",
@@ -5079,10 +5918,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_017",
@@ -5100,10 +5943,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "limites_y_error_018",
@@ -5121,10 +5968,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Sin charcos",
       "Raíz sana"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Drenaje libre",
+    "topic": "DRENAJE",
+    "setup": "Agua estancada",
+    "figure": "DRENAJE"
   },
   {
     "key": "limites_y_error_019",
@@ -5132,7 +5983,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1017.36,
     "dur": 3.5,
     "tipo": "componente",
-    "kind": "Checklist",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "resultados distintos, una sola hoja caída, aquí se",
@@ -5142,10 +5993,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "limites_y_error_020",
@@ -5163,10 +6018,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "limites_y_error_021",
@@ -5184,10 +6043,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "limites_y_error_022",
@@ -5205,10 +6068,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Suelo húmedo",
       "Menos hongos"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riega abajo",
+    "topic": "HOJAS",
+    "setup": "Agua en hojas",
+    "figure": "HOJAS"
   },
   {
     "key": "limites_y_error_023",
@@ -5216,7 +6083,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1036.6,
     "dur": 3.8,
     "tipo": "componente",
-    "kind": "PhotoChecklist",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "broll/v7ior5j7vkw9/d135.mp4",
     "dice": "al calor, al viento, a raíces enfermas, al exceso",
@@ -5226,10 +6093,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 5,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "limites_y_error_024",
@@ -5247,10 +6118,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "limites_y_error_025",
@@ -5268,10 +6143,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_026",
@@ -5289,10 +6168,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "limites_y_error_027",
@@ -5310,10 +6193,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Diagnóstico primero",
       "Observa cambios"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Límite honesto",
+    "topic": "LÍMITE",
+    "setup": "No todo es riego",
+    "figure": "LÍMITE"
   },
   {
     "key": "limites_y_error_028",
@@ -5334,7 +6221,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "5 centímetros"
   },
   {
     "key": "limites_y_error_029",
@@ -5342,7 +6233,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1065.35,
     "dur": 3.7,
     "tipo": "componente",
-    "kind": "ChipsCluster",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "calibra una vez hasta donde llega tu riego, eso convierte una",
@@ -5352,10 +6243,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_030",
@@ -5363,7 +6258,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1069.05,
     "dur": 6.44,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "ProcessSteps",
     "src": "",
     "supportImage": "",
     "dice": "sospecha en un método, te prometí un protocolo que puedas usar desde mañana, aquí está, primero revisa",
@@ -5373,10 +6268,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_031",
@@ -5397,7 +6296,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "5"
   },
   {
     "key": "limites_y_error_032",
@@ -5415,10 +6318,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "limites_y_error_033",
@@ -5436,10 +6343,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_034",
@@ -5460,7 +6371,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 15,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "15"
   },
   {
     "key": "limites_y_error_035",
@@ -5468,7 +6383,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1095.97,
     "dur": 4.32,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "Checklist",
     "src": "",
     "supportImage": "",
     "dice": "al principio, después conocerás el tiempo de tu sistema, cuarto, usa",
@@ -5478,10 +6393,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "limites_y_error_036",
@@ -5502,7 +6421,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 25,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Evita grietas",
+    "topic": "GRIETAS",
+    "setup": "Cambios bruscos",
+    "figure": "25 litros"
   },
   {
     "key": "limites_y_error_037",
@@ -5520,10 +6443,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "limites_y_error_038",
@@ -5531,9 +6458,9 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1108.47,
     "dur": 6.64,
     "tipo": "componente",
-    "kind": "CrossSection",
+    "kind": "CalloutMark",
     "src": "",
-    "supportImage": "",
+    "supportImage": "broll/v7ior5j7vkw9/d141.mp4",
     "dice": "viento, temperatura y acolchado, quinto, mantén entre 5 y 8 centímetros de cobertura orgánica",
     "headline": "Suelo cubierto",
     "items": [
@@ -5544,7 +6471,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Suelo cubierto",
+    "topic": "ACOLCHADO",
+    "setup": "Suelo desnudo",
+    "figure": "5"
   },
   {
     "key": "limites_y_error_039",
@@ -5552,7 +6483,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1115.11,
     "dur": 3.52,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "deja libre el cuello de la planta, sexto, trata las macetas",
@@ -5562,10 +6493,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "limites_y_error_040",
@@ -5583,10 +6518,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_001",
@@ -5604,10 +6543,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Viento seco",
       "Revisa suelo"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Pierde agua",
+    "topic": "CLIMA",
+    "setup": "Pérdida rápida",
+    "figure": "CLIMA"
   },
   {
     "key": "recap_y_cierre_002",
@@ -5615,7 +6558,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1124.05,
     "dur": 5.6,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "los platos que queden llenos, séptimo, si una planta se cae con el suelo húmedo, no agregues agua",
@@ -5625,10 +6568,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "recap_y_cierre_003",
@@ -5636,7 +6583,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1129.65,
     "dur": 4.04,
     "tipo": "componente",
-    "kind": "RuleNumberScene",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "por reflejo, investiga y octavo, durante floración y formación",
@@ -5646,10 +6593,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 1,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "recap_y_cierre_004",
@@ -5657,7 +6608,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1133.69,
     "dur": 7.3,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "Checklist",
     "src": "",
     "supportImage": "",
     "dice": "del fruto, evita los grandes saltos entre seco y empapado, allí estás protegiendo la cosecha que verás semanas después",
@@ -5667,10 +6618,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "recap_y_cierre_005",
@@ -5678,7 +6633,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1140.99,
     "dur": 4.1,
     "tipo": "componente",
-    "kind": "ChipsCluster",
+    "kind": "KineticQuote",
     "src": "",
     "supportImage": "",
     "dice": "no necesitas memorizarlo todo, quédate con esta frase, riega la",
@@ -5688,10 +6643,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_006",
@@ -5709,10 +6668,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "recap_y_cierre_007",
@@ -5730,10 +6693,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_008",
@@ -5751,10 +6718,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_009",
@@ -5762,9 +6733,9 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1158.59,
     "dur": 3.46,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "CalloutMark",
     "src": "",
-    "supportImage": "",
+    "supportImage": "broll/v7ior5j7vkw9/d145.jpg",
     "dice": "de 7 días, no cambies todas tus plantas, elige",
     "headline": "Regla práctica",
     "items": [
@@ -5775,7 +6746,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 7,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "7 días"
   },
   {
     "key": "recap_y_cierre_010",
@@ -5796,7 +6771,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "5 centímetros"
   },
   {
     "key": "recap_y_cierre_011",
@@ -5814,10 +6793,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "callout"
+    "kitOverlay": "annotated",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "recap_y_cierre_012",
@@ -5835,10 +6818,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_013",
@@ -5856,10 +6843,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 6,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "recap_y_cierre_014",
@@ -5867,7 +6858,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1182.31,
     "dur": 6.62,
     "tipo": "componente",
-    "kind": "TextCardReveal",
+    "kind": "Checklist",
     "src": "",
     "supportImage": "",
     "dice": "al final de la semana conocerás más sobre tu huerta que después de leer 20 etiquetas del vivero, y si ya tienes tomates",
@@ -5880,7 +6871,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 20,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "20"
   },
   {
     "key": "recap_y_cierre_015",
@@ -5898,10 +6893,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambio lento",
       "Fruto firme"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Evita grietas",
+    "topic": "GRIETAS",
+    "setup": "Cambios bruscos",
+    "figure": "GRIETAS"
   },
   {
     "key": "recap_y_cierre_016",
@@ -5909,7 +6908,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1193.09,
     "dur": 4.2,
     "tipo": "componente",
-    "kind": "OptionCompare",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "dañados, corrige la constancia, los frutos que recién están empezando",
@@ -5919,10 +6918,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Cosecha firme"
     ],
-    "number": 7,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Fruto sano",
+    "topic": "FRUTO",
+    "setup": "Estrés hídrico",
+    "figure": "FRUTO"
   },
   {
     "key": "recap_y_cierre_017",
@@ -5940,10 +6943,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_018",
@@ -5961,10 +6968,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_019",
@@ -5972,7 +6983,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1206.75,
     "dur": 3.78,
     "tipo": "componente",
-    "kind": "AgedDoc",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "no desorbo superficiales, moja la zona de raíces",
@@ -5982,10 +6993,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 8,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_020",
@@ -6006,7 +7021,11 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "number": 5,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "5 centímetros"
   },
   {
     "key": "recap_y_cierre_021",
@@ -6024,10 +7043,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Mide volumen",
       "Ajusta despacio"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": "impact"
+    "kitOverlay": "annotated",
+    "title": "Agua medida",
+    "topic": "AGUA",
+    "setup": "Cantidad medida",
+    "figure": "AGUA"
   },
   {
     "key": "recap_y_cierre_022",
@@ -6045,10 +7068,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "recap_y_cierre_023",
@@ -6066,10 +7093,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_024",
@@ -6077,7 +7108,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1231.37,
     "dur": 7.14,
     "tipo": "componente",
-    "kind": "ProcessSteps",
+    "kind": "ChipsCluster",
     "src": "",
     "supportImage": "",
     "dice": "siete, no compres calcio antes de revisar humedad, drenaje y suelo, y ocho, en maceta",
@@ -6087,10 +7118,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Raíz activa",
       "Fruto firme"
     ],
-    "number": 2,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Calcio disponible",
+    "topic": "CALCIO",
+    "setup": "Riego inestable",
+    "figure": "CALCIO"
   },
   {
     "key": "recap_y_cierre_025",
@@ -6108,10 +7143,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_026",
@@ -6129,10 +7168,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Tacto fresco",
       "Decide después"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Mira suelo",
+    "topic": "SUELO",
+    "setup": "Humedad real",
+    "figure": "SUELO"
   },
   {
     "key": "recap_y_cierre_027",
@@ -6150,10 +7193,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Drenaje libre",
       "Riego lento"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": true,
-    "kitOverlay": "annotated"
+    "kitOverlay": "annotated",
+    "title": "Maceta vigilada",
+    "topic": "MACETA",
+    "setup": "Poca reserva",
+    "figure": "MACETA"
   },
   {
     "key": "recap_y_cierre_028",
@@ -6171,10 +7218,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_029",
@@ -6182,7 +7233,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1257.45,
     "dur": 3.52,
     "tipo": "componente",
-    "kind": "ReframeList",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "para quien quiera completar este sistema sin gastar de más, en el",
@@ -6192,10 +7243,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 3,
+    "number": 0,
     "avatarFull": false,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_030",
@@ -6213,10 +7268,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_031",
@@ -6234,10 +7293,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Agua abajo",
       "Pausa útil"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Riego profundo",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_032",
@@ -6255,10 +7318,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   },
   {
     "key": "recap_y_cierre_033",
@@ -6276,10 +7343,14 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Reserva estable",
       "Planta fuerte"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": false,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Raíz profunda",
+    "topic": "RAÍZ",
+    "setup": "Riego superficial",
+    "figure": "RAÍZ"
   },
   {
     "key": "recap_y_cierre_034",
@@ -6287,7 +7358,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "start": 1280.87,
     "dur": 2.13,
     "tipo": "componente",
-    "kind": "KineticQuote",
+    "kind": "TextCardReveal",
     "src": "",
     "supportImage": "",
     "dice": "te lo devuelve, nos vemos en el galpón",
@@ -6297,9 +7368,13 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
       "Cambia poco",
       "Observa respuesta"
     ],
-    "number": 4,
+    "number": 0,
     "avatarFull": true,
     "personal": true,
-    "kitOverlay": ""
+    "kitOverlay": "",
+    "title": "Regla práctica",
+    "topic": "RIEGO",
+    "setup": "Riego irregular",
+    "figure": "RIEGO"
   }
 ];

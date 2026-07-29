@@ -56,6 +56,16 @@ const ComponentMoment: React.FC<{ moment: V7Moment; frames: number }> = ({
     "PhotoChecklist",
   ]);
 
+  if (moment.dur < 2.5) {
+    return (
+      <TextCardReveal
+        durationInFrames={frames}
+        lines={[moment.topic]}
+        accent={PAPER}
+      />
+    );
+  }
+
   if ((complex.has(moment.kind) && moment.dur < 5.35) || moment.dur < 3.65) {
     return (
       <TextCardReveal
@@ -251,7 +261,7 @@ const ComponentMoment: React.FC<{ moment: V7Moment; frames: number }> = ({
         <ImpactReveal
           durationInFrames={frames}
           image={moment.supportImage}
-          setup="Daño silencioso"
+          setup={moment.setup}
           impact={title}
           impactAccent="danger"
           hitAt={Math.min(0.8, Math.max(0.35, moment.dur * 0.2))}
@@ -312,7 +322,8 @@ const ComponentMoment: React.FC<{ moment: V7Moment; frames: number }> = ({
       return (
         <CalloutMark
           durationInFrames={frames}
-          figure={/centímetr/i.test(moment.dice) ? `${moment.number} cm` : String(moment.number)}
+          image={moment.supportImage}
+          figure={moment.figure}
           eyebrow="Cifra"
           caption={title}
           accent="good"
@@ -355,7 +366,7 @@ const VisualMoment: React.FC<{ moment: V7Moment; frames: number }> = ({
             x: 0.52,
             y: 0.56,
             w: 0.22,
-            label: "Zona clave",
+            label: moment.topic,
             color: "good",
           },
         ]}
@@ -367,8 +378,8 @@ const VisualMoment: React.FC<{ moment: V7Moment; frames: number }> = ({
       <CalloutMark
         durationInFrames={frames}
         image={moment.src}
-        eyebrow="Observa"
-        figure="SUELO"
+        eyebrow="Dato"
+        figure={moment.figure}
         caption={takeWords(moment.headline, 2)}
         accent="good"
         hue="amber"
@@ -381,7 +392,7 @@ const VisualMoment: React.FC<{ moment: V7Moment; frames: number }> = ({
       <ImpactReveal
         durationInFrames={frames}
         image={moment.src}
-        setup="Mira el suelo"
+        setup={moment.setup}
         impact={takeWords(moment.headline, 2)}
         impactAccent="good"
         hitAt={0.42}

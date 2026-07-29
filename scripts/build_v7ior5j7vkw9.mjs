@@ -81,6 +81,119 @@ const copyFor = (phrase) => {
   return { title: "Regla práctica", items: ["Mide primero", "Cambia poco", "Observa respuesta"] };
 };
 
+const visualMeaningFor = (phrase, copy) => {
+  const p = String(phrase || "").toLowerCase();
+  const measurement = String(phrase || "").match(
+    /\b(\d+(?:[.,]\d+)?)\s*(litros?|l\b|milímetros?|mm\b|centímetros?|cm\b|metros?|m²|por ciento|%|días?|horas?|veces?)?/i,
+  );
+  let topic = "RIEGO";
+  let setup = "Riego irregular";
+  if (/pudrici|apical|calcio/.test(p)) {
+    topic = "CALCIO";
+    setup = "Riego inestable";
+  } else if (/griet|rajadur|partid/.test(p)) {
+    topic = "GRIETAS";
+    setup = "Cambios bruscos";
+  } else if (/maceta|contenedor/.test(p)) {
+    topic = "MACETA";
+    setup = "Poca reserva";
+  } else if (/acolchado|paja|mulch|cobertura/.test(p)) {
+    topic = "ACOLCHADO";
+    setup = "Suelo desnudo";
+  } else if (/drenaje|agujero|escurr/.test(p)) {
+    topic = "DRENAJE";
+    setup = "Agua estancada";
+  } else if (/marchit|amarill|enfermedad|no cura|trastorno|l[ií]mite|aerosol/.test(p)) {
+    topic = "LÍMITE";
+    setup = "No todo es riego";
+  } else if (/hoja|follaje|salpic|hongo/.test(p)) {
+    topic = "HOJAS";
+    setup = "Agua en hojas";
+  } else if (/ra[ií]z/.test(p)) {
+    topic = "RAÍZ";
+    setup = "Riego superficial";
+  } else if (/calendario|martes|jueves|frecuencia/.test(p)) {
+    topic = "CALENDARIO";
+    setup = "Rutina ciega";
+  } else if (/lluvia|mil[ií]metro|litro|cantidad|cent[ií]metro/.test(p)) {
+    topic = "AGUA";
+    setup = "Cantidad medida";
+  } else if (/calor|viento|evapora|sequ[ií]a/.test(p)) {
+    topic = "CLIMA";
+    setup = "Pérdida rápida";
+  } else if (/suelo|tierra|dedo|humedad/.test(p)) {
+    topic = "SUELO";
+    setup = "Humedad real";
+  } else if (/fruto|tomate|cosecha|flor/.test(p)) {
+    topic = "FRUTO";
+    setup = "Estrés hídrico";
+  }
+  const figure = measurement
+    ? `${measurement[1]}${measurement[2] ? ` ${measurement[2]}` : ""}`.trim()
+    : topic;
+  return { ...copy, topic, setup, figure, hasMeasurement: !!measurement };
+};
+
+const contextualKindFor = (phrase, planned, ordinal) => {
+  const p = String(phrase || "").toLowerCase();
+  const hasMeasurement =
+    /\b\d+(?:[.,]\d+)?\s*(?:litros?|l\b|milímetros?|mm\b|centímetros?|cm\b|metros?|m²|por ciento|%|días?|horas?|veces?)/i.test(
+      phrase,
+    );
+  const choose = (allowed, fallback) =>
+    allowed.includes(planned) ? planned : fallback;
+
+  if (/abuelo|amos|cuaderno|antes se hac[ií]a|generaciones/.test(p)) {
+    return choose(["AgedDoc", "KineticQuote"], "AgedDoc");
+  }
+  if (/calendario|martes|jueves/.test(p)) {
+    return choose(["OptionCompare", "SplitList", "ReframeList"], "OptionCompare");
+  }
+  if (/(?:15|20|5|2)\s*(?:cent[ií]metros?|cm)|profundidad/.test(p)) {
+    return choose(["CrossSection", "BarCompare", "CalloutMark"], ordinal % 2 ? "BarCompare" : "CrossSection");
+  }
+  if (/ra[ií]z|capa superficial|debajo del suelo/.test(p)) {
+    return choose(["CrossSection", "BarCompare"], "CrossSection");
+  }
+  if (hasMeasurement) {
+    return choose(["StatBig", "CalloutMark", "RuleNumberScene"], ordinal % 2 ? "CalloutMark" : "StatBig");
+  }
+  if (/l[ií]mite|no cura|enfermedad|trastorno|marchita|amarillea/.test(p)) {
+    return choose(["ReframeList", "SplitList", "ImpactReveal"], "ReframeList");
+  }
+  if (/primero|despu[eé]s|luego|paso|protocolo|haz esto|prueba/.test(p)) {
+    return choose(
+      ["ProcessSteps", "Checklist", "PhotoChecklist"],
+      ordinal % 3 === 0 ? "PhotoChecklist" : ordinal % 2 ? "Checklist" : "ProcessSteps",
+    );
+  }
+  if (/señal|observa|revisa|comprueba|toca|dedo/.test(p)) {
+    return choose(["Checklist", "PhotoChecklist", "ChipsCluster"], ordinal % 2 ? "PhotoChecklist" : "Checklist");
+  }
+  if (/en cambio|mientras|pero|no .* sino|diferencia|compar/.test(p)) {
+    return choose(["SplitList", "ReframeList", "OptionCompare"], "SplitList");
+  }
+  if (/arruina|daño|pudrici|griet|pierde|fracasa|problema/.test(p)) {
+    return choose(["ImpactReveal", "KineticQuote", "TextCardReveal"], "ImpactReveal");
+  }
+  if (/recuerda|quédate|regla|nunca|siempre/.test(p)) {
+    return choose(["KineticQuote", "TextCardReveal"], "KineticQuote");
+  }
+  if (/tres|cuatro|cinco|opciones|factores/.test(p)) {
+    return choose(["ChipsCluster", "Checklist", "ProcessSteps"], "ChipsCluster");
+  }
+  return "TextCardReveal";
+};
+
+const overlayKindFor = (moment) => {
+  const p = String(moment.dice || "").toLowerCase();
+  if (moment.figure !== moment.topic) return "callout";
+  if (/arruina|daño|pudrici|griet|pierde|marchit|enfermedad|problema/.test(p)) {
+    return "impact";
+  }
+  return "annotated";
+};
+
 const numFor = (phrase, fallback) => {
   const m = String(phrase).match(/\b(\d+(?:[.,]\d+)?)\b/);
   return m ? Number(m[1].replace(",", ".")) : fallback;
@@ -129,16 +242,20 @@ for (let i = 0; i < rawMoments.length; i++) {
   if (m.ms / 1000 >= 1260 && m.tipo !== "imagen") avatarFull = true;
 
   const dur = +m.seg;
-  const semanticCopy = copyFor(m.dice);
+  const semanticCopy = visualMeaningFor(m.dice, copyFor(m.dice));
   const headline = semanticCopy.title || headlineFor(m.dice, dur);
   const items = semanticCopy.items || itemsFor(m.dice, dur);
-  const number = numFor(m.dice, (componentOrdinal % 8) + 1);
+  const resolvedKind =
+    m.tipo === "componente"
+      ? contextualKindFor(m.dice, m.kind || "", componentOrdinal)
+      : m.kind || "";
+  const number = numFor(m.dice, 0);
   if (m.tipo === "componente") componentOrdinal++;
   const needsSupportImage = new Set([
     "PhotoChecklist",
     "ImpactReveal",
     "CalloutMark",
-  ]).has(m.kind || "");
+  ]).has(resolvedKind);
 
   moments.push({
     key: m.name,
@@ -146,7 +263,7 @@ for (let i = 0; i < rawMoments.length; i++) {
     start: +(m.ms / 1000).toFixed(3),
     dur,
     tipo: m.tipo,
-    kind: m.kind || "",
+    kind: resolvedKind,
     src: avatarFull ? "" : src,
     supportImage:
       !avatarFull && m.tipo === "componente" && needsSupportImage
@@ -159,6 +276,9 @@ for (let i = 0; i < rawMoments.length; i++) {
     avatarFull,
     personal: !!m.personal,
     kitOverlay: "",
+    topic: semanticCopy.topic,
+    setup: semanticCopy.setup,
+    figure: semanticCopy.figure,
   });
 }
 
@@ -171,13 +291,12 @@ const visibleRaw = moments.filter(
     Math.abs(m.start - 106.84) > 0.01 &&
     (m.tipo === "clip" || m.tipo === "imagen"),
 );
-const overlayKinds = ["annotated", "callout", "impact"];
 const overlayCount = Math.min(34, visibleRaw.length);
 for (let k = 0; k < overlayCount; k++) {
   const idx = overlayCount === 1
     ? 0
     : Math.round((k * (visibleRaw.length - 1)) / (overlayCount - 1));
-  visibleRaw[idx].kitOverlay = overlayKinds[k % overlayKinds.length];
+  visibleRaw[idx].kitOverlay = overlayKindFor(visibleRaw[idx]);
 }
 
 const windows = [];
@@ -218,6 +337,9 @@ export type V7Moment = {
   avatarFull: boolean;
   personal: boolean;
   kitOverlay: string;
+  topic: string;
+  setup: string;
+  figure: string;
 };
 
 export const TOTAL_SECONDS_V7IOR5J7VKW9 = ${totalSeconds};
@@ -278,15 +400,15 @@ for (const m of moments.filter((x) => !x.avatarFull)) {
   if (m.tipo === "clip" || m.tipo === "imagen") {
     if (m.kitOverlay === "annotated") {
       gateLines.push(
-        `  { key: "cue", start: ${m.start}, dur: ${m.dur}, kind: "annotatedimage", src: ${JSON.stringify(m.src)}, props: {"eyebrow":"Prueba","caption":${JSON.stringify(wordTake(m.headline, 2))},"label":"Zona clave"} }, // <AnnotatedImage />`,
+        `  { key: "cue", start: ${m.start}, dur: ${m.dur}, kind: "annotatedimage", src: ${JSON.stringify(m.src)}, props: {"eyebrow":"Prueba","caption":${JSON.stringify(wordTake(m.headline, 2))},"label":${JSON.stringify(m.topic)}} }, // <AnnotatedImage />`,
       );
     } else if (m.kitOverlay === "callout") {
       gateLines.push(
-        `  { key: "cue", start: ${m.start}, dur: ${m.dur}, kind: "calloutmark", src: ${JSON.stringify(m.src)}, props: {"eyebrow":"Observa","figure":"SUELO","caption":${JSON.stringify(wordTake(m.headline, 2))}} }, // <CalloutMark />`,
+        `  { key: "cue", start: ${m.start}, dur: ${m.dur}, kind: "calloutmark", src: ${JSON.stringify(m.src)}, props: {"eyebrow":"Dato","figure":${JSON.stringify(m.figure)},"caption":${JSON.stringify(wordTake(m.headline, 2))}} }, // <CalloutMark />`,
       );
     } else if (m.kitOverlay === "impact") {
       gateLines.push(
-        `  { key: "cue", start: ${m.start}, dur: ${m.dur}, kind: "impactreveal", src: ${JSON.stringify(m.src)}, props: {"setup":"Mira el suelo","impact":${JSON.stringify(wordTake(m.headline, 2))}} }, // <ImpactReveal />`,
+        `  { key: "cue", start: ${m.start}, dur: ${m.dur}, kind: "impactreveal", src: ${JSON.stringify(m.src)}, props: {"setup":${JSON.stringify(m.setup)},"impact":${JSON.stringify(wordTake(m.headline, 2))}} }, // <ImpactReveal />`,
       );
     } else {
       gateLines.push(
@@ -314,9 +436,9 @@ for (const m of moments.filter((x) => !x.avatarFull)) {
             : actual === "BarCompare"
               ? { eyebrow: "Profundidad", title, bars: ["Superficial 2 cm débil", "Profundo 20 cm estable"] }
               : actual === "ImpactReveal"
-                ? { setup: "Daño silencioso", impact: title }
+                ? { setup: m.setup, impact: title }
                 : actual === "CalloutMark"
-                  ? { figure: String(m.number), eyebrow: "Cifra", caption: title }
+                  ? { figure: m.figure, eyebrow: "Cifra", caption: title }
                   : {
                       title,
                       items: m.items
