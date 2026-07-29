@@ -3,12 +3,21 @@ import fs from "node:fs";
 const slug = "v7ior5j7vkw9";
 const dataPath = `src/VideoEdit/${slug}_data.gen.ts`;
 const cuesPath = `src/VideoEdit/cues_${slug}.gen.tsx`;
+const avatarPath = `src/VideoEdit/avatar_${slug}.gen.ts`;
 let source = fs.readFileSync(dataPath, "utf8");
 const marker = "export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = ";
 const jsonStart = source.indexOf(marker) + marker.length;
 const jsonEnd = source.indexOf(";", jsonStart);
 if (jsonStart < marker.length || jsonEnd < 0) throw new Error("no pude leer MOMENTS");
 const moments = JSON.parse(source.slice(jsonStart, jsonEnd));
+const FORCE_AVATAR_KEYS = new Set([
+  "principio_raiz_008",
+  "cantidad_profundidad_001",
+  "cantidad_profundidad_033",
+  "calcio_y_fruto_017",
+  "limites_y_error_024",
+  "recap_y_cierre_001",
+]);
 
 const meaningFor = (phrase) => {
   const p = String(phrase || "").toLowerCase();
@@ -103,6 +112,10 @@ for (const m of moments) {
   }
 }
 
+for (const m of moments) {
+  if (FORCE_AVATAR_KEYS.has(m.key)) m.avatarFull = true;
+}
+
 const visibleRaw = moments.filter((m) => !m.avatarFull && m.kitOverlay);
 for (const m of visibleRaw) {
   const p = String(m.dice || "").toLowerCase();
@@ -114,6 +127,19 @@ for (const m of visibleRaw) {
 }
 
 source = source.slice(0, jsonStart) + JSON.stringify(moments, null, 2) + source.slice(jsonEnd);
+const avatarWindows = [];
+for (const m of moments) {
+  const mode = m.avatarFull ? "full" : "hidden";
+  if (avatarWindows.at(-1)?.mode !== mode) avatarWindows.push({ start: m.start, mode });
+}
+const avatarMarker = "export const AVATAR_WINDOWS_V7IOR5J7VKW9 = ";
+const avatarStart = source.indexOf(avatarMarker) + avatarMarker.length;
+const avatarEnd = source.indexOf(" as const;", avatarStart);
+if (avatarStart < avatarMarker.length || avatarEnd < 0) throw new Error("no pude leer AVATAR_WINDOWS");
+source =
+  source.slice(0, avatarStart) +
+  JSON.stringify(avatarWindows, null, 2) +
+  source.slice(avatarEnd);
 if (!source.includes("  topic: string;")) {
   source = source.replace(
     /  kitOverlay: string;\r?\n/,
@@ -121,6 +147,10 @@ if (!source.includes("  topic: string;")) {
   );
 }
 fs.writeFileSync(dataPath, source);
+fs.writeFileSync(
+  avatarPath,
+  `// AUTO-GENERADO: ventanas full/hidden del avatar.\nexport const TOTAL_V7IOR5J7VKW9 = 1283.135;\nexport const AVATAR_V7IOR5J7VKW9 = ${JSON.stringify(avatarWindows, null, 2)} as const;\n`,
+);
 
 const wordTake = (text, max) => String(text || "").split(/\s+/).filter(Boolean).slice(0, max).join(" ");
 const tags = new Set(["CrossSection", "StatBig", "ProcessSteps", "RuleNumberScene", "Checklist", "BarCompare", "ReframeList", "TextCardReveal", "OptionCompare", "ImpactReveal", "KineticQuote", "AgedDoc", "SplitList", "ChipsCluster", "CalloutMark"]);

@@ -42,6 +42,14 @@ export const AVATAR_V7IOR5J7VKW9 = [
     "mode": "hidden"
   },
   {
+    "start": 80.06,
+    "mode": "full"
+  },
+  {
+    "start": 85.66,
+    "mode": "hidden"
+  },
+  {
     "start": 89.64,
     "mode": "full"
   },
@@ -126,7 +134,7 @@ export const AVATAR_V7IOR5J7VKW9 = [
     "mode": "full"
   },
   {
-    "start": 240.16,
+    "start": 246.22,
     "mode": "hidden"
   },
   {
@@ -218,6 +226,14 @@ export const AVATAR_V7IOR5J7VKW9 = [
     "mode": "hidden"
   },
   {
+    "start": 395.26,
+    "mode": "full"
+  },
+  {
+    "start": 401.56,
+    "mode": "hidden"
+  },
+  {
     "start": 405.4,
     "mode": "full"
   },
@@ -294,7 +310,7 @@ export const AVATAR_V7IOR5J7VKW9 = [
     "mode": "full"
   },
   {
-    "start": 558.52,
+    "start": 565.28,
     "mode": "hidden"
   },
   {
@@ -554,7 +570,7 @@ export const AVATAR_V7IOR5J7VKW9 = [
     "mode": "hidden"
   },
   {
-    "start": 1047,
+    "start": 1040.4,
     "mode": "full"
   },
   {
@@ -582,7 +598,7 @@ export const AVATAR_V7IOR5J7VKW9 = [
     "mode": "full"
   },
   {
-    "start": 1120.25,
+    "start": 1124.05,
     "mode": "hidden"
   },
   {

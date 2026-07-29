@@ -12,7 +12,6 @@ export const CUES_GATE_V7IOR5J7VKW9 = [
   { key:"cue", start:56.14, dur:3.84, kind:"textcardreveal", props:{"title":"Regla práctica","items":["Mide","Cambia"]} }, // <TextCardReveal />
   { key:"cue", start:66.56, dur:3.82, kind:"raw", src:"broll/v7ior5j7vkw9/d007.mp4" }, // <RawShot />
   { key:"cue", start:76.04, dur:4.02, kind:"raw", src:"broll/v7ior5j7vkw9/d009.mp4" }, // <RawShot />
-  { key:"cue", start:80.06, dur:5.6, kind:"processsteps", props:{"title":"Riego profundo","items":["Flujo lento","Agua abajo"]} }, // <ProcessSteps />
   { key:"cue", start:85.66, dur:3.98, kind:"annotatedimage", src:"img/v7ior5j7vkw9_personal_00.png", props:{"eyebrow":"Prueba","caption":"Fruto sano","label":"FRUTO"} }, // <AnnotatedImage />
   { key:"cue", start:94, dur:3.26, kind:"raw", src:"broll/v7ior5j7vkw9/d011.mp4" }, // <RawShot />
   { key:"cue", start:103.36, dur:3.48, kind:"textcardreveal", props:{"eyebrow":"Riego","lines":["Fruto sano"]} }, // <TextCardReveal />
@@ -35,7 +34,6 @@ export const CUES_GATE_V7IOR5J7VKW9 = [
   { key:"cue", start:223.16, dur:6.64, kind:"textcardreveal", props:{"title":"Mira suelo","items":["Cinco centímetros","Tacto fresco"]} }, // <TextCardReveal />
   { key:"cue", start:229.8, dur:4.08, kind:"statbig", props:{"value":"25","label":"Agua medida","caption":"Agua medida"} }, // <StatBig />
   { key:"cue", start:233.88, dur:4.3, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d029.mp4", props:{"eyebrow":"Prueba","caption":"Agua medida","label":"AGUA"} }, // <AnnotatedImage />
-  { key:"cue", start:240.16, dur:6.06, kind:"textcardreveal", props:{"title":"Sin calendario","items":["Mide suelo","Observa clima"]} }, // <TextCardReveal />
   { key:"cue", start:246.22, dur:4.22, kind:"raw", src:"img/v7ior5j7vkw9_personal_01.png" }, // <RawShot />
   { key:"cue", start:250.44, dur:6.82, kind:"raw", src:"broll/v7ior5j7vkw9/d031.mp4" }, // <RawShot />
   { key:"cue", start:257.26, dur:3.96, kind:"statbig", props:{"value":"50","label":"Agua medida","caption":"Agua medida"} }, // <StatBig />
@@ -56,7 +54,6 @@ export const CUES_GATE_V7IOR5J7VKW9 = [
   { key:"cue", start:373.86, dur:4.28, kind:"raw", src:"broll/v7ior5j7vkw9/d049.mp4" }, // <RawShot />
   { key:"cue", start:382.38, dur:3.16, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d051.mp4", props:{"eyebrow":"Prueba","caption":"Regla práctica","label":"RIEGO"} }, // <AnnotatedImage />
   { key:"cue", start:391.6, dur:3.66, kind:"kineticquote", props:{"title":"Mira suelo","items":["Cinco","Tacto"]} }, // <KineticQuote />
-  { key:"cue", start:395.26, dur:6.3, kind:"raw", src:"broll/v7ior5j7vkw9/d053.mp4" }, // <RawShot />
   { key:"cue", start:401.56, dur:3.84, kind:"reframelist", props:{"title":"Límite honesto","items":["No","Diagnóstico"]} }, // <ReframeList />
   { key:"cue", start:410.98, dur:3.96, kind:"raw", src:"broll/v7ior5j7vkw9/d055.mp4" }, // <RawShot />
   { key:"cue", start:414.94, dur:6.76, kind:"textcardreveal", props:{"title":"Calcio disponible","items":["Riego estable","Raíz activa"]} }, // <TextCardReveal />
@@ -80,7 +77,6 @@ export const CUES_GATE_V7IOR5J7VKW9 = [
   { key:"cue", start:534.66, dur:3.76, kind:"textcardreveal", props:{"title":"Regla práctica","items":["Mide","Cambia"]} }, // <TextCardReveal />
   { key:"cue", start:538.42, dur:6.3, kind:"raw", src:"broll/v7ior5j7vkw9/d069.mp4" }, // <RawShot />
   { key:"cue", start:548.72, dur:5.6, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d071.mp4", props:{"eyebrow":"Prueba","caption":"Mira suelo","label":"SUELO"} }, // <AnnotatedImage />
-  { key:"cue", start:558.52, dur:6.76, kind:"textcardreveal", props:{"title":"Fruto sano","items":["Riego parejo","Raíz activa"]} }, // <TextCardReveal />
   { key:"cue", start:565.28, dur:3.98, kind:"raw", src:"broll/v7ior5j7vkw9/d073.mp4" }, // <RawShot />
   { key:"cue", start:573.52, dur:3.2, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d075.mp4", props:{"eyebrow":"Prueba","caption":"Regla práctica","label":"RIEGO"} }, // <AnnotatedImage />
   { key:"cue", start:576.72, dur:5.86, kind:"crosssection", props:{"title":"Raíz profunda","labels":["Seco","Raíz","Drenaje","Reserva"]} }, // <CrossSection />
@@ -147,7 +143,6 @@ export const CUES_GATE_V7IOR5J7VKW9 = [
   { key:"cue", start:1017.36, dur:3.5, kind:"textcardreveal", props:{"eyebrow":"Riego","lines":["Riega abajo"]} }, // <TextCardReveal />
   { key:"cue", start:1030.86, dur:5.74, kind:"raw", src:"broll/v7ior5j7vkw9/d135.mp4" }, // <RawShot />
   { key:"cue", start:1036.6, dur:3.8, kind:"textcardreveal", props:{"title":"Pierde agua","items":["Calor","Viento"]} }, // <TextCardReveal />
-  { key:"cue", start:1040.4, dur:6.6, kind:"crosssection", props:{"title":"Mira suelo","labels":["Seco","Raíz","Drenaje","Reserva"]} }, // <CrossSection />
   { key:"cue", start:1051, dur:4.36, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d137.mp4", props:{"eyebrow":"Prueba","caption":"Raíz profunda","label":"RAÍZ"} }, // <AnnotatedImage />
   { key:"cue", start:1059.05, dur:6.3, kind:"crosssection", props:{"title":"Agua medida","labels":["Seco","Raíz","Drenaje","Reserva"]} }, // <CrossSection />
   { key:"cue", start:1065.35, dur:3.7, kind:"textcardreveal", props:{"title":"Riego profundo","items":["Flujo","Agua"]} }, // <TextCardReveal />
@@ -160,7 +155,6 @@ export const CUES_GATE_V7IOR5J7VKW9 = [
   { key:"cue", start:1104.47, dur:4, kind:"raw", src:"broll/v7ior5j7vkw9/d141.mp4" }, // <RawShot />
   { key:"cue", start:1108.47, dur:6.64, kind:"calloutmark", props:{"figure":"5","eyebrow":"Cifra","caption":"Suelo cubierto"} }, // <CalloutMark />
   { key:"cue", start:1115.11, dur:3.52, kind:"textcardreveal", props:{"eyebrow":"Riego","lines":["Maceta vigilada"]} }, // <TextCardReveal />
-  { key:"cue", start:1120.25, dur:3.8, kind:"annotatedimage", src:"broll/v7ior5j7vkw9/d143.mp4", props:{"eyebrow":"Prueba","caption":"Pierde agua","label":"CLIMA"} }, // <AnnotatedImage />
   { key:"cue", start:1124.05, dur:5.6, kind:"textcardreveal", props:{"title":"Mira suelo","items":["Cinco centímetros","Tacto fresco"]} }, // <TextCardReveal />
   { key:"cue", start:1129.65, dur:4.04, kind:"textcardreveal", props:{"title":"Fruto sano","items":["Riego parejo","Raíz activa"]} }, // <TextCardReveal />
   { key:"cue", start:1133.69, dur:7.3, kind:"checklist", props:{"title":"Fruto sano","items":["Riego parejo","Raíz activa"]} }, // <Checklist />
