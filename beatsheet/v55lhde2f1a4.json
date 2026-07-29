@@ -91,7 +91,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticQuote",
+      "kind": "StatBig",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -475,7 +475,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": true,
       "asset": null
@@ -683,7 +683,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -819,7 +819,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "BarCompare",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -853,7 +853,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -1025,7 +1025,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -1182,7 +1182,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -1507,7 +1507,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -1713,7 +1713,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -1868,7 +1868,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "BarCompare",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": true,
       "asset": null
@@ -1885,7 +1885,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -2074,7 +2074,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -2210,7 +2210,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -2348,7 +2348,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -2469,7 +2469,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "BarCompare",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -2503,7 +2503,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -2675,7 +2675,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3019,7 +3019,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3174,7 +3174,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "BarCompare",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3202,18 +3202,16 @@
       "ms": 887480,
       "phrase": "No propades especies invasoras y recuerda que algunas variedades nuevas están protegidas.",
       "dur": 5.48,
-      "desc": "Stock real auditado u067: jar",
-      "queries": [
-        "jar"
-      ],
+      "desc": "Checklist: no propagar invasoras ni variedades protegidas",
+      "queries": [],
       "shot": "full",
-      "src": "stock",
-      "query": "jar",
+      "src": null,
+      "query": null,
       "anchor": "plant cuttings",
-      "kind": null,
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
-      "asset": "broll/v55lhde2f1a4/u067.mp4"
+      "asset": null
     },
     {
       "name": "s_187",
@@ -3227,7 +3225,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3261,7 +3259,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "CalloutMark",
+      "kind": "KineticHeadline",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3278,7 +3276,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticHeadline",
+      "kind": "KineticQuote",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3329,7 +3327,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticQuote",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3346,7 +3344,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "TextCardReveal",
+      "kind": "ProcessSteps",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3380,7 +3378,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "ProcessSteps",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3397,7 +3395,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "SplitList",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3414,7 +3412,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "SplitList",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3448,7 +3446,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "Checklist",
+      "kind": "RuleNumberScene",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3484,7 +3482,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "RuleNumberScene",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3518,7 +3516,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "CrossSection",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3535,7 +3533,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "BarCompare",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3586,7 +3584,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3603,7 +3601,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "CalloutMark",
+      "kind": "KineticHeadline",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3620,7 +3618,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticHeadline",
+      "kind": "KineticQuote",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3654,7 +3652,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticQuote",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3688,7 +3686,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "TextCardReveal",
+      "kind": "KineticHeadline",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3741,7 +3739,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticHeadline",
+      "kind": "OptionCompare",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3758,7 +3756,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "SplitList",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3809,7 +3807,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "SplitList",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3843,7 +3841,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "Checklist",
+      "kind": "RuleNumberScene",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3860,7 +3858,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "RuleNumberScene",
+      "kind": "CrossSection",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3877,7 +3875,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "CalloutMark",
+      "kind": "KineticHeadline",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3894,7 +3892,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticHeadline",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3911,7 +3909,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "StatBig",
+      "kind": "CalloutMark",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -3962,7 +3960,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "CalloutMark",
+      "kind": "KineticHeadline",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4015,7 +4013,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticHeadline",
+      "kind": "KineticQuote",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4032,7 +4030,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticQuote",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4049,7 +4047,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "TextCardReveal",
+      "kind": "KineticHeadline",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4102,7 +4100,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "KineticHeadline",
+      "kind": "TextCardReveal",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4119,7 +4117,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "OptionCompare",
+      "kind": "SplitList",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4170,7 +4168,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "SplitList",
+      "kind": "Checklist",
       "avatarFull": false,
       "personal": true,
       "asset": null
@@ -4221,7 +4219,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "Checklist",
+      "kind": "RuleNumberScene",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4238,7 +4236,7 @@
       "src": "component",
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "RuleNumberScene",
+      "kind": "CrossSection",
       "avatarFull": false,
       "personal": false,
       "asset": null
@@ -4255,7 +4253,7 @@
       "src": null,
       "query": null,
       "anchor": "plant cuttings",
-      "kind": "CalloutMark",
+      "kind": "KineticHeadline",
       "avatarFull": false,
       "personal": false,
       "asset": null

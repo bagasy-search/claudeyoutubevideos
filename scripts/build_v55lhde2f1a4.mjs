@@ -88,6 +88,17 @@ for (const section of plan.secciones) {
       m.porque =
         "El modo sin imágenes IA exige resolver este concepto con el kit real y texto breve.";
     }
+    if (m.id === "s_186") {
+      m.tipo = "componente";
+      m.src = null;
+      m.asset = null;
+      m.query = null;
+      m.avatarFull = false;
+      m.kind = "Checklist";
+      m.muestra = "Checklist: no propagar invasoras ni variedades protegidas";
+      m.porque =
+        "La toma de frasco no correspondía a la advertencia legal y ecológica; un checklist literal sí.";
+    }
     if (m.tipo === "componente") {
       let kind = componentCycle[componentIndex % componentCycle.length];
       if (
@@ -96,6 +107,26 @@ for (const section of plan.secciones) {
       ) {
         kind = componentIndex % 2 ? "KineticHeadline" : "CalloutMark";
       }
+      if (
+        kind === "OptionCompare" &&
+        !/\b(no|pero|frascos|control|mitad|otra|compar|versus)\b|agua (sola|de sauce)/i.test(
+          m.dice,
+        )
+      ) {
+        kind = "TextCardReveal";
+      }
+      if (
+        kind === "BarCompare" &&
+        !/\d|\b(más|menos|doble|mitad|control|compar|frascos|antes|después)\b|agua (sola|de sauce)/i.test(
+          m.dice,
+        )
+      ) {
+        kind = "Checklist";
+      }
+      if (kind === "StatBig" && !/\d/.test(m.dice)) kind = "CalloutMark";
+      if (m.id === "s_186" || m.id === "s_205") kind = "Checklist";
+      if (m.id === "s_05") kind = "StatBig";
+      if (m.id === "s_33") kind = "KineticQuote";
       m.kind = kind;
       componentIndex++;
     }
@@ -271,12 +302,15 @@ const componentJsx = (m, ordinal) => {
         .map((x) => `{title:${qSafe(x)}}`)
         .join(",")}]} />`;
     case "OptionCompare": {
+      if (m.id === "s_80") {
+        return `<OptionCompare durationInFrames={d} left={{tag:"control",title:"Agua sola",sub:"  ",note:"  ",icon:"warn",accent:"orange"}} right={{tag:"prueba",title:"Con sauce",sub:"  ",note:"  ",icon:"check",accent:"green"}} />`;
+      }
       const halves = chunks(headline(m, 6), 2);
-      return `<OptionCompare durationInFrames={d} left={{tag:"evita",title:${qSafe(
+      return `<OptionCompare durationInFrames={d} left={{tag:"EVITA",title:${qSafe(
         halves[0] || "Agua sola",
-      )},sub:"agua",note:"sola",icon:"warn",accent:"orange"}} right={{tag:"mejor",title:${qSafe(
+      )},sub:"  ",note:"  ",icon:"warn",accent:"orange"}} right={{tag:"MEJOR",title:${qSafe(
         halves[1] || "Agua de sauce",
-      )},sub:"agua",note:"sauce",icon:"check",accent:"green"}} />`;
+      )},sub:"  ",note:"  ",icon:"check",accent:"green"}} />`;
     }
     case "SplitList":
       return `<SplitList durationInFrames={d} title="PUNTOS CLAVE" items={[${chunks(
@@ -286,6 +320,12 @@ const componentJsx = (m, ordinal) => {
         .map(qSafe)
         .join(",")}]} accent="tan" />`;
     case "Checklist":
+      if (m.id === "s_186") {
+        return `<Checklist durationInFrames={d} title="CONTROL" hue="amber" items={[{text:"No invasoras",state:"done"},{text:"No protegidas",state:"done"},{text:"Propaga legal",state:"done"}]} />`;
+      }
+      if (m.id === "s_205") {
+        return `<Checklist durationInFrames={d} title="CONTROL" hue="amber" items={[{text:"Tallo húmedo",state:"done"},{text:"Corte rápido",state:"done"},{text:"Agua lista",state:"done"}]} />`;
+      }
       return `<Checklist durationInFrames={d} title="CONTROL" hue="amber" items={[${chunks(
         headline(m, 4).slice(0, 3),
         3,
@@ -305,7 +345,7 @@ const componentJsx = (m, ordinal) => {
     case "BarCompare":
       return `<BarCompare durationInFrames={d} eyebrow="COMPARA" title=${q(
         headline(m, 8).slice(0, 2).join(" "),
-      )} hue="amber" orientation="horizontal" bars={[{label:"Agua",value:1,display:"1×"},{label:"Sauce",value:3,display:"3×",winner:true}]} />`;
+      )} hue="amber" orientation="horizontal" bars={[{label:"Agua",value:1,display:"1×",tone:"cold"},{label:"Sauce",value:3,display:"3×",tone:"amber",winner:true}]} />`;
     case "StatBig":
       return `<StatBig durationInFrames={d} value={${numeric(m.dice)}}${
         unit(m.dice) ? ` suffix=${q(unit(m.dice))}` : ""
