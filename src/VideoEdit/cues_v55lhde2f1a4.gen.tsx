@@ -5,6 +5,7 @@ import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
 import { TextCardReveal } from "./scenes/TextCardReveal";
 import { ProcessSteps } from "./scenes/ProcessSteps";
 import { OptionCompare } from "./scenes/OptionCompare";
+import { WillowBiologyReveal_v55lhde2f1a4 } from "./scenes/WillowBiologyReveal_v55lhde2f1a4";
 import { SplitList } from "./scenes/SplitList";
 import { Checklist } from "./scenes/Checklist";
 import { RuleNumberScene } from "./scenes/RuleNumberScene";
@@ -23,7 +24,7 @@ export const CUES_V55LHDE2F1A4: V55Cue[] = [
   { key:"s_08", start:41.84, dur:6.02, kind:"textcardreveal", el:(d) => <TextCardReveal durationInFrames={d} lines={["Y.","si llenas"]} /> },
   { key:"s_11", start:59.7, dur:5.04, kind:"processsteps", el:(d) => <ProcessSteps durationInFrames={d} title="MÉTODO" hue="amber" steps={[{title:"antes"},{title:"de"},{title:"que toquen"}]} /> },
   { key:"s_12", start:64.74, dur:3.32, kind:"clip", el:(d) => <RawShot durationInFrames={d} src="broll/v55lhde2f1a4/u001.mp4" hue="amber" clipDur={30} kbPhase={3} /> },
-  { key:"s_15", start:81.44, dur:6.3, kind:"optioncompare", el:(d) => <OptionCompare durationInFrames={d} left={{tag:"EVITA",title:"No es",sub:"  ",note:"  ",icon:"warn",accent:"orange"}} right={{tag:"MEJOR",title:"magia amish",sub:"  ",note:"  ",icon:"check",accent:"green"}} /> },
+  { key:"s_15", start:81.44, dur:6.3, kind:"optioncompare", el:(d) => <WillowBiologyReveal_v55lhde2f1a4 durationInFrames={d} /> },
   { key:"s_17", start:94.08, dur:6.02, kind:"clip", el:(d) => <RawShot durationInFrames={d} src="broll/v55lhde2f1a4/u006.mp4" hue="amber" clipDur={12} kbPhase={1} /> },
   { key:"s_18", start:100.1, dur:4.76, kind:"splitlist", el:(d) => <SplitList durationInFrames={d} title="PUNTOS CLAVE" items={["Durante","generaciones"]} accent="tan" /> },
   { key:"s_19", start:104.86, dur:6.22, kind:"checklist", el:(d) => <Checklist durationInFrames={d} title="CONTROL" hue="amber" items={[{text:"Si",state:"done"},{text:"el",state:"done"},{text:"sauce",state:"done"}]} /> },

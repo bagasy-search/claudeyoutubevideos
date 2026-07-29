@@ -303,6 +303,9 @@ const componentJsx = (m, ordinal) => {
         .map((x) => `{title:${qSafe(x)}}`)
         .join(",")}]} />`;
     case "OptionCompare": {
+      if (m.id === "s_15") {
+        return `<WillowBiologyReveal_v55lhde2f1a4 durationInFrames={d} />`;
+      }
       if (m.id === "s_80") {
         return `<OptionCompare durationInFrames={d} left={{tag:"control",title:"Agua sola",sub:"  ",note:"  ",icon:"warn",accent:"orange"}} right={{tag:"prueba",title:"Con sauce",sub:"  ",note:"  ",icon:"check",accent:"green"}} />`;
       }
@@ -405,6 +408,7 @@ import { KineticQuote, parseQuote } from "./scenes/KineticQuote";
 import { TextCardReveal } from "./scenes/TextCardReveal";
 import { ProcessSteps } from "./scenes/ProcessSteps";
 import { OptionCompare } from "./scenes/OptionCompare";
+import { WillowBiologyReveal_v55lhde2f1a4 } from "./scenes/WillowBiologyReveal_v55lhde2f1a4";
 import { SplitList } from "./scenes/SplitList";
 import { Checklist } from "./scenes/Checklist";
 import { RuleNumberScene } from "./scenes/RuleNumberScene";
