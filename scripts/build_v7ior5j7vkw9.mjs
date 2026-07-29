@@ -86,6 +86,11 @@ for (let i = 0; i < rawMoments.length; i++) {
   const items = itemsFor(m.dice, dur);
   const number = numFor(m.dice, (componentOrdinal % 8) + 1);
   if (m.tipo === "componente") componentOrdinal++;
+  const needsSupportImage = new Set([
+    "PhotoChecklist",
+    "ImpactReveal",
+    "CalloutMark",
+  ]).has(m.kind || "");
 
   moments.push({
     key: m.name,
@@ -94,8 +99,11 @@ for (let i = 0; i < rawMoments.length; i++) {
     dur,
     tipo: m.tipo,
     kind: m.kind || "",
-    src,
-    supportImage: lastVisualAsset,
+    src: avatarFull ? "" : src,
+    supportImage:
+      !avatarFull && m.tipo === "componente" && needsSupportImage
+        ? lastVisualAsset
+        : "",
     dice: clean(m.dice),
     headline,
     items,
@@ -167,6 +175,22 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = ${JSON.stringify(moments, null, 
 `;
 
 fs.writeFileSync(`src/VideoEdit/v7ior5j7vkw9_data.gen.ts`, out);
+
+const assetEntries = [
+  `avatar_${slug}.mp4`,
+  `${slug}.wav`,
+  ...new Set(
+    moments
+      .filter((m) => !m.avatarFull)
+      .flatMap((m) => [m.src, m.supportImage])
+      .filter(Boolean),
+  ),
+  "sfx",
+];
+fs.writeFileSync(
+  `public/_assets_${slug}.txt`,
+  `${assetEntries.join("\n")}\n`,
+);
 
 const wordTake = (text, max) =>
   clean(text).split(/\s+/).filter(Boolean).slice(0, max).join(" ");

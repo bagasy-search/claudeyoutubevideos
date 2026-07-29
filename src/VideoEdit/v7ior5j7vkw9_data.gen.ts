@@ -681,8 +681,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.22,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d000.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d000.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "El riego que parece más cuidadoso puede dejar tus tomates",
     "headline": "El riego que parece más cuidadoso",
     "items": [
@@ -702,7 +702,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d001.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d001.mp4",
+    "supportImage": "",
     "dice": "verdes por fuera, débiles por debajo y negros justo cuando llega la cosecha",
     "headline": "Verdes por fuera, débiles por debajo y negros",
     "items": [
@@ -723,7 +723,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d001.mp4",
+    "supportImage": "",
     "dice": "Hablo de ese pequeño vaso de agua que alguien echa cada tarde con",
     "headline": "Hablo de ese pequeño vaso de",
     "items": [
@@ -743,7 +743,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d001.mp4",
+    "supportImage": "",
     "dice": "la mejor intención. La superficie queda oscura, la planta parece atendida, pero 5 centímetros más",
     "headline": "La mejor intención. La superficie queda oscura, la",
     "items": [
@@ -763,8 +763,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.9,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d002.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d002.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "abajo, la tierra puede seguir seca. Y si repites eso todos",
     "headline": "Abajo, la tierra puede seguir seca. Y",
     "items": [
@@ -784,7 +784,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d002.mp4",
+    "supportImage": "",
     "dice": "los días, las raíces aprenden a quedarse arriba, donde el calor roba el agua primero",
     "headline": "Los días, las raíces aprenden a quedarse arriba,",
     "items": [
@@ -804,7 +804,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d003.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d003.mp4",
+    "supportImage": "",
     "dice": "Una tomatera necesita humedad estable, no necesita vivir",
     "headline": "Una tomatera necesita humedad estable, no necesita",
     "items": [
@@ -824,7 +824,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d003.mp4",
+    "supportImage": "",
     "dice": "empapada, tampoco quiere pasar sed y después recibir una inundación. Esa alternancia silenciosa puede terminar",
     "headline": "Empapada, tampoco quiere pasar sed y después recibir",
     "items": [
@@ -844,8 +844,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.98,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d004.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d004.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "en frutos rajados, crecimiento débil y esa mancha negra en la",
     "headline": "En frutos rajados, crecimiento débil y esa",
     "items": [
@@ -865,7 +865,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d005.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d005.mp4",
+    "supportImage": "",
     "dice": "base del tomate que tantos confunden con una enfermedad",
     "headline": "Base del tomate que tantos confunden con",
     "items": [
@@ -885,7 +885,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d005.mp4",
+    "supportImage": "",
     "dice": "Tres números cambian todo. 5 centímetros para comprobar",
     "headline": "Tres números cambian todo. 5 centímetros para comprobar",
     "items": [
@@ -905,7 +905,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d005.mp4",
+    "supportImage": "",
     "dice": "15 a 20 centímetros para mojar de verdad, y como referencia general unos 25 litros por",
     "headline": "15 a 20 centímetros para mojar de verdad,",
     "items": [
@@ -926,7 +926,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "StatBig",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d005.mp4",
+    "supportImage": "",
     "dice": "metro cuadrado a la semana. Contando también lo que cae del cielo",
     "headline": "Metro cuadrado a la semana. Contando también",
     "items": [
@@ -945,8 +945,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.58,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d006.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d006.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "No le hace bien mojar apenas la piel de la tierra, no le hace bien ahogar las raíces, no le hace bien regar",
     "headline": "No le hace bien mojar apenas la piel",
     "items": [
@@ -967,7 +967,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d007.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d007.mp4",
+    "supportImage": "",
     "dice": "las hojas como si fueran el lugar por donde bebe. El tomate toma el",
     "headline": "Las hojas como si fueran el lugar",
     "items": [
@@ -986,8 +986,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.66,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d008.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d008.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "agua desde abajo, y hay una parte más extraña, la peor decisión de riego suele tomarse mirando",
     "headline": "Agua desde abajo, y hay una parte más",
     "items": [
@@ -1008,7 +1008,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d009.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d009.mp4",
+    "supportImage": "",
     "dice": "la parte equivocada de la planta, casi todo el mundo lo hace alguna vez",
     "headline": "La parte equivocada de la planta, casi todo",
     "items": [
@@ -1028,7 +1028,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d009.mp4",
+    "supportImage": "",
     "dice": "yo también entiendo por qué, parece lógico, pero cuando veas la prueba nunca volverás a regar igual",
     "headline": "Yo también entiendo por qué, parece lógico, pero",
     "items": [
@@ -1049,7 +1049,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "imagen",
     "kind": "",
     "src": "img/v7ior5j7vkw9_personal_00.png",
-    "supportImage": "img/v7ior5j7vkw9_personal_00.png",
+    "supportImage": "",
     "dice": "Quédate conmigo, voy a mostrarte cómo saber si tu tomatera necesita",
     "headline": "Quédate conmigo, voy a mostrarte cómo saber",
     "items": [
@@ -1068,8 +1068,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.36,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d010.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d010.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "agua sin adivinar. Vas a aprender cuánto dar, a qué hora, cómo cambia",
     "headline": "Agua sin adivinar. Vas a aprender cuánto dar,",
     "items": [
@@ -1089,7 +1089,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d011.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d011.mp4",
+    "supportImage": "",
     "dice": "en arena, arcilla, bancal y maceta, y al",
     "headline": "En arena, arcilla, bancal y maceta,",
     "items": [
@@ -1108,8 +1108,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.1,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d012.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d012.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "final voy a pagarte la promesa, el error exacto que arruina la cosecha mientras tú crees que la estás salvando",
     "headline": "Final voy a pagarte la promesa, el error",
     "items": [
@@ -1130,7 +1130,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d012.mp4",
+    "supportImage": "",
     "dice": "Empecemos por el resultado, un tomate bien regado no es el que",
     "headline": "Empecemos por el resultado, un tomate",
     "items": [
@@ -1150,7 +1150,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d013.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d013.mp4",
+    "supportImage": "",
     "dice": "recibe agua todos los días, es el que encuentra una humedad bastante pareja en la zona donde trabajan sus raíces",
     "headline": "Recibe agua todos los días, es el que",
     "items": [
@@ -1170,8 +1170,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.64,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d014.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d014.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "esa diferencia parece pequeña, en la huerta es enorme",
     "headline": "Esa diferencia parece pequeña, en la huerta",
     "items": [
@@ -1191,7 +1191,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d015.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d015.mp4",
+    "supportImage": "",
     "dice": "Cuando el agua llega profundo, la raíz la sigue, se extiende hacia abajo, la planta queda mejor",
     "headline": "Cuando el agua llega profundo, la raíz la",
     "items": [
@@ -1211,8 +1211,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.88,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d016.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d016.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "preparada para una tarde calurosa, cuando el agua moja solo 1 o",
     "headline": "Preparada para una tarde calurosa, cuando el",
     "items": [
@@ -1232,7 +1232,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d016.mp4",
+    "supportImage": "",
     "dice": "2 centímetros, la raíz se concentra cerca de la superficie, allí el sol, el viento y la temperatura cambian",
     "headline": "2 centímetros, la raíz se concentra cerca de",
     "items": [
@@ -1253,7 +1253,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d017.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d017.mp4",
+    "supportImage": "",
     "dice": "todo en pocas horas, por eso una planta acostumbrada a sorbos puede",
     "headline": "Todo en pocas horas, por eso una planta",
     "items": [
@@ -1273,7 +1273,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "SplitList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d017.mp4",
+    "supportImage": "",
     "dice": "marchitarse con rapidez aunque la hayas regado ayer, no siempre le falta",
     "headline": "Marchitarse con rapidez aunque la hayas regado ayer,",
     "items": [
@@ -1292,8 +1292,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.22,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d018.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d018.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "una gran cantidad de agua, le falta una reserva",
     "headline": "Una gran cantidad de agua, le",
     "items": [
@@ -1313,7 +1313,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d019.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d019.mp4",
+    "supportImage": "",
     "dice": "profunda. Este es el primer principio que quiero que recuerdes, no riegues para oscurecer la tierra, riega para",
     "headline": "Profunda. Este es el primer principio que quiero",
     "items": [
@@ -1334,7 +1334,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d019.mp4",
+    "supportImage": "",
     "dice": "cargar el perfil del suelo, oscurecer la tierra lleva un minuto",
     "headline": "Cargar el perfil del suelo, oscurecer la",
     "items": [
@@ -1353,8 +1353,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.7,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d020.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d020.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "cargar el suelo lleva paciencia, haz una prueba física, no necesitas un medidor costoso, espera unos minutos",
     "headline": "Cargar el suelo lleva paciencia, haz una prueba",
     "items": [
@@ -1375,7 +1375,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d021.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d021.mp4",
+    "supportImage": "",
     "dice": "después de regar, toma una palita, abre un corte angosto a unos 15",
     "headline": "Después de regar, toma una palita, abre un",
     "items": [
@@ -1395,7 +1395,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d021.mp4",
+    "supportImage": "",
     "dice": "centímetros del tallo, sin lastimar las raíces principales, mira el perfil, si solo están húmedos los",
     "headline": "Centímetros del tallo, sin lastimar las raíces principales,",
     "items": [
@@ -1416,7 +1416,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d021.mp4",
+    "supportImage": "",
     "dice": "primeros 2 centímetros, no terminaste, si la humedad llega entre",
     "headline": "Primeros 2 centímetros, no terminaste, si la",
     "items": [
@@ -1436,7 +1436,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d021.mp4",
+    "supportImage": "",
     "dice": "15 y 20 centímetros, ya estás trabajando en la zona correcta para una planta establecida, no busques barro, busca",
     "headline": "15 y 20 centímetros, ya estás trabajando en",
     "items": [
@@ -1456,8 +1456,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.38,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d022.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d022.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "tierra fresca que se mantenga unida al apretarla y se desarme con facilidad",
     "headline": "Tierra fresca que se mantenga unida al apretarla",
     "items": [
@@ -1477,7 +1477,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d023.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d023.mp4",
+    "supportImage": "",
     "dice": "al tocarla, esa demostración vale más que cualquier calendario pegado en",
     "headline": "Al tocarla, esa demostración vale más que cualquier",
     "items": [
@@ -1516,8 +1516,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.9,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d024.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d024.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "necesitar ritmos distintos, una tiene arena, la otra tiene arcilla, una recibe viento toda",
     "headline": "Necesitar ritmos distintos, una tiene arena, la otra",
     "items": [
@@ -1558,7 +1558,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d025.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d025.mp4",
+    "supportImage": "",
     "dice": "acolchado, la otra deja el suelo desnudo, la arena deja pasar el agua rápido, también se seca rápido",
     "headline": "Acolchado, la otra deja el suelo desnudo, la",
     "items": [
@@ -1578,8 +1578,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.76,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d026.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d026.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "la arcilla retiene más, pero si las aturas, expulsa el aire que",
     "headline": "La arcilla retiene más, pero si las",
     "items": [
@@ -1599,7 +1599,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d027.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d027.mp4",
+    "supportImage": "",
     "dice": "las raíces necesitan, el mismo tiempo de manguera puede ser insuficiente en una y excesivo en la",
     "headline": "Las raíces necesitan, el mismo tiempo de manguera",
     "items": [
@@ -1619,8 +1619,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.04,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d028.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d028.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "otra, por eso no existe una respuesta honesta a la pregunta, ¿Cada cuántos",
     "headline": "Otra, por eso no existe una respuesta honesta",
     "items": [
@@ -1640,7 +1640,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "StatBig",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d028.mp4",
+    "supportImage": "",
     "dice": "días riego mis tomates sin mirar el suelo? La referencia general de una pulgada semanal sirve para empezar, una",
     "headline": "Días riego mis tomates sin mirar el suelo?",
     "items": [
@@ -1661,7 +1661,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "StatBig",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d028.mp4",
+    "supportImage": "",
     "dice": "pulgada equivale aproximadamente a 25 litros sobre",
     "headline": "Pulgada equivale aproximadamente a 25 litros sobre",
     "items": [
@@ -1681,7 +1681,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d029.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d029.mp4",
+    "supportImage": "",
     "dice": "cada metro cuadrado, pero no es una receta ciega, es el total de lluvia",
     "headline": "Cada metro cuadrado, pero no es una receta",
     "items": [
@@ -1700,8 +1700,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 1.98,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d030.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d030.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "más riego durante una semana",
     "headline": "Más riego durante",
     "items": [
@@ -1721,7 +1721,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d030.mp4",
+    "supportImage": "",
     "dice": "normal, con calor extremo, viento o suelo muy arenoso puede hacer falta más frecuencia, con",
     "headline": "Normal, con calor extremo, viento o suelo muy",
     "items": [
@@ -1742,7 +1742,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "imagen",
     "kind": "",
     "src": "img/v7ior5j7vkw9_personal_01.png",
-    "supportImage": "img/v7ior5j7vkw9_personal_01.png",
+    "supportImage": "",
     "dice": "lluvia o arcilla pesada puede hacer falta menos, quiero traducirlo",
     "headline": "Lluvia o arcilla pesada puede hacer falta menos,",
     "items": [
@@ -1762,7 +1762,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d031.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d031.mp4",
+    "supportImage": "",
     "dice": "a algo que puedas usar, imagina un bancal de 1 metro por 2, son 2 metros cuadrados, la referencia semanal",
     "headline": "A algo que puedas usar, imagina un bancal",
     "items": [
@@ -1783,7 +1783,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "StatBig",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d031.mp4",
+    "supportImage": "",
     "dice": "ronda 50 litros en total, si llovió la mitad, tú completas",
     "headline": "Ronda 50 litros en total, si llovió",
     "items": [
@@ -1802,8 +1802,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.78,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d032.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d032.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "lo que falta, si una tormenta ya dejó el suelo húmedo a buena profundidad, no vuelves a regar solo",
     "headline": "Lo que falta, si una tormenta ya dejó",
     "items": [
@@ -1824,7 +1824,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d033.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d033.mp4",
+    "supportImage": "",
     "dice": "porque el martes decía riego en tu libreta, la planta no sabe",
     "headline": "Porque el martes decía riego en tu",
     "items": [
@@ -1844,7 +1844,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d033.mp4",
+    "supportImage": "",
     "dice": "qué día es, el suelo sí sabe cuánta agua guarda, ahora viene el segundo principio, es mejor un riego lento",
     "headline": "Qué día es, el suelo sí sabe cuánta",
     "items": [
@@ -1864,8 +1864,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.16,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d034.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d034.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "y profundo que muchos sorbos rápidos, lento importa porque un",
     "headline": "Y profundo que muchos sorbos rápidos, lento importa",
     "items": [
@@ -1885,7 +1885,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d035.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d035.mp4",
+    "supportImage": "",
     "dice": "suelo seco puede rechazar parte del agua, la ves correr por la",
     "headline": "Suelo seco puede rechazar parte del agua, la",
     "items": [
@@ -1904,8 +1904,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.26,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d036.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d036.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "superficie, se va hacia el sendero, forma un charco en",
     "headline": "Superficie, se va hacia el sendero,",
     "items": [
@@ -1925,7 +1925,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d037.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d037.mp4",
+    "supportImage": "",
     "dice": "un lado, tú cuentas todo lo que salió de la manguera, pero una parte nunca llegó a las raíces, si",
     "headline": "Un lado, tú cuentas todo lo que salió",
     "items": [
@@ -1946,7 +1946,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ChipsCluster",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d037.mp4",
+    "supportImage": "",
     "dice": "eso ocurre, riega en dos pasadas, da una primera cantidad",
     "headline": "Eso ocurre, riega en dos pasadas, da",
     "items": [
@@ -1965,8 +1965,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.58,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d038.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d038.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "moderada, espera unos minutos, deja que la superficie se hidrate, luego vuelve y completa, en",
     "headline": "Moderada, espera unos minutos, deja que la superficie",
     "items": [
@@ -1987,7 +1987,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d039.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d039.mp4",
+    "supportImage": "",
     "dice": "una pendiente, forma una pequeña cuenca alrededor de la zona de raíces",
     "headline": "Una pendiente, forma una pequeña cuenca alrededor de",
     "items": [
@@ -2006,8 +2006,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.94,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d040.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d040.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "no pegada al tallo, alrededor de la planta, no apuntes un chorro fuerte contra la base, puede",
     "headline": "No pegada al tallo, alrededor de la planta,",
     "items": [
@@ -2028,7 +2028,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d041.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d041.mp4",
+    "supportImage": "",
     "dice": "descubrir raíces, puede compactar en suelo, también salpica",
     "headline": "Descubrir raíces, puede compactar en suelo, también",
     "items": [
@@ -2048,7 +2048,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d041.mp4",
+    "supportImage": "",
     "dice": "tierra sobre las hojas bajas, lo más sencillo es una manguera de goteo, una línea de riego lento o un",
     "headline": "Tierra sobre las hojas bajas, lo más sencillo",
     "items": [
@@ -2068,8 +2068,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.32,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d042.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d042.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "chorro suave apoyado en el suelo, el agua entra donde se necesita, las",
     "headline": "Chorro suave apoyado en el suelo, el agua",
     "items": [
@@ -2089,7 +2089,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d043.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d043.mp4",
+    "supportImage": "",
     "dice": "hojas quedan secas y las partículas de tierra que pueden llevar esporas",
     "headline": "Hojas quedan secas y las partículas de tierra",
     "items": [
@@ -2108,8 +2108,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.16,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d044.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d044.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "no saltan hacia el follaje, no confundas esto con una",
     "headline": "No saltan hacia el follaje,",
     "items": [
@@ -2129,7 +2129,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d045.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d045.mp4",
+    "supportImage": "",
     "dice": "prohibición absoluta, si solo tienes una regadera, úsala, pero quita la flor si reparte el agua sobre",
     "headline": "Prohibición absoluta, si solo tienes una regadera, úsala,",
     "items": [
@@ -2170,7 +2170,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d045.mp4",
+    "supportImage": "",
     "dice": "desde arriba, hazlo temprano para que las hojas tengan tiempo de secarse, la hora ayuda, no reemplaza la",
     "headline": "Desde arriba, hazlo temprano para que las hojas",
     "items": [
@@ -2190,8 +2190,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.88,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d046.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d046.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "prueba del suelo, entre las 5 y las 9 de la mañana suele ser una",
     "headline": "Prueba del suelo, entre las 5 y",
     "items": [
@@ -2211,7 +2211,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d047.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d047.mp4",
+    "supportImage": "",
     "dice": "buena ventana, el viento acostumbra a ser menor, la evaporación todavía no está en su punto alto, la",
     "headline": "Buena ventana, el viento acostumbra a ser menor,",
     "items": [
@@ -2231,8 +2231,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.12,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d048.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d048.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "planta empieza el día con agua disponible y cualquier hoja que se haya mojado",
     "headline": "Planta empieza el día con agua disponible y",
     "items": [
@@ -2252,7 +2252,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "SplitList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d048.mp4",
+    "supportImage": "",
     "dice": "puede secarse con la luz, regar al mediodía no quema mágicamente las hojas por el simple hecho de que una gota",
     "headline": "Puede secarse con la luz, regar al mediodía",
     "items": [
@@ -2273,7 +2273,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d049.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d049.mp4",
+    "supportImage": "",
     "dice": "actúe como lupa, ese mito distrae del problema real, en pleno calor",
     "headline": "Actúe como lupa, ese mito distrae del problema",
     "items": [
@@ -2292,8 +2292,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.24,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d050.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d050.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "pierdes más agua por evaporación, tú también trabajas peor y es fácil",
     "headline": "Pierdes más agua por evaporación, tú también trabajas",
     "items": [
@@ -2313,7 +2313,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d051.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d051.mp4",
+    "supportImage": "",
     "dice": "reaccionar con apuro a una planta que está doblando sus",
     "headline": "Reaccionar con apuro a una",
     "items": [
@@ -2332,8 +2332,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.06,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d052.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d052.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "hojas para soportar la temperatura, pregar de noche tampoco es un pecado automático, en una ola de calor un",
     "headline": "Hojas para soportar la temperatura, pregar de noche",
     "items": [
@@ -2354,7 +2354,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d052.mp4",
+    "supportImage": "",
     "dice": "suelo realmente seco no debe esperar hasta el día siguiente por una regla",
     "headline": "Suelo realmente seco no debe esperar hasta",
     "items": [
@@ -2374,7 +2374,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d053.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d053.mp4",
+    "supportImage": "",
     "dice": "rígida, pero si mojas todo el follaje y dejas la planta húmeda durante muchas horas, favoreces un ambiente que varias",
     "headline": "Rígida, pero si mojas todo el follaje y",
     "items": [
@@ -2395,7 +2395,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d053.mp4",
+    "supportImage": "",
     "dice": "enfermedades aprovechan, la regla sencilla es esta, temprano es",
     "headline": "Enfermedades aprovechan, la regla sencilla es esta,",
     "items": [
@@ -2414,8 +2414,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.58,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d054.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d054.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "preferible, la raíz es el objetivo y una necesidad real manda más que el reloj, ahora hablemos de la",
     "headline": "Preferible, la raíz es el objetivo y una",
     "items": [
@@ -2436,7 +2436,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d055.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d055.mp4",
+    "supportImage": "",
     "dice": "mancha negra, ves un tomate creciendo, parece sano, días después",
     "headline": "Mancha negra, ves un tomate creciendo, parece",
     "items": [
@@ -2456,7 +2456,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d055.mp4",
+    "supportImage": "",
     "dice": "aparece una zona oscura y hundida en el extremo opuesto al tallo, muchos corren al vivero por calcio, compran un aerosol",
     "headline": "Aparece una zona oscura y hundida en el",
     "items": [
@@ -2476,8 +2476,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.02,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d056.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d056.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "rocían las hojas, esperan, pero la podredumbre apical no es una infección",
     "headline": "Rocían las hojas, esperan, pero la podredumbre apical",
     "items": [
@@ -2497,7 +2497,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d057.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
+    "supportImage": "",
     "dice": "que ese aerosol pueda curar, es un trastorno fisiológico, el fruto en desarrollo",
     "headline": "Que ese aerosol pueda curar, es un trastorno",
     "items": [
@@ -2517,7 +2517,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
+    "supportImage": "",
     "dice": "no recibió el calcio de manera adecuada en el momento en que estaba",
     "headline": "No recibió el calcio de manera",
     "items": [
@@ -2537,7 +2537,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
+    "supportImage": "",
     "dice": "formando sus tejidos y aquí el agua es decisiva, el calcio se mueve con el agua que absorben las raíces",
     "headline": "Formando sus tejidos y aquí el agua es",
     "items": [
@@ -2558,7 +2558,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
+    "supportImage": "",
     "dice": "si el suelo pasa de seco a empapado y vuelve a secarse, ese",
     "headline": "Si el suelo pasa de seco a",
     "items": [
@@ -2578,7 +2578,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
+    "supportImage": "",
     "dice": "transporte pierde regularidad, puede haber calcio en",
     "headline": "Transporte pierde regularidad, puede haber calcio en",
     "items": [
@@ -2599,7 +2599,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d057.mp4",
+    "supportImage": "",
     "dice": "la calcio sin analizar el suelo, puede no resolver nada y rociar",
     "headline": "La calcio sin analizar el suelo, puede",
     "items": [
@@ -2639,8 +2639,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.92,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d058.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d058.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "no puede devolverle a ese tomate la parte que ya se dañó, retira",
     "headline": "No puede devolverle a ese tomate la",
     "items": [
@@ -2660,7 +2660,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d058.jpg",
+    "supportImage": "",
     "dice": "el fruto muy afectado para que la planta concentre energía en los que vienen, luego corrige la humedad, revisa el drenaje",
     "headline": "El fruto muy afectado para que la planta",
     "items": [
@@ -2681,7 +2681,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d059.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d059.mp4",
+    "supportImage": "",
     "dice": "evita lastimar raíces al cultivar y no empujes un crecimiento exagerado",
     "headline": "Evita lastimar raíces al cultivar y no empujes",
     "items": [
@@ -2700,8 +2700,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.3,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d060.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d060.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "con demasiado nitrógeno, esto nos lleva al enemigo silencioso, el estante del",
     "headline": "Con demasiado nitrógeno, esto nos lleva al enemigo",
     "items": [
@@ -2721,7 +2721,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d061.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d061.mp4",
+    "supportImage": "",
     "dice": "vivero está lleno de soluciones",
     "headline": "Vivero está lleno",
     "items": [
@@ -2740,8 +2740,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.04,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d062.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d062.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "para el síntoma, una botella para la mancha, otra para el vigor, otra para las hojas, otra",
     "headline": "Para el síntoma, una botella para la mancha,",
     "items": [
@@ -2762,7 +2762,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d062.mp4",
+    "supportImage": "",
     "dice": "para estimular raíces, algunas tienen un uso real",
     "headline": "Para estimular raíces, algunas tienen un",
     "items": [
@@ -2782,7 +2782,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d062.mp4",
+    "supportImage": "",
     "dice": "pero ninguna conoce la humedad a 15 centímetros bajo tu tomatera, nadie puede venderte en un frasco",
     "headline": "Pero ninguna conoce la humedad a 15 centímetros",
     "items": [
@@ -2803,7 +2803,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d063.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d063.mp4",
+    "supportImage": "",
     "dice": "el hábito de meter un dedo o una palita en la tierra y ese hábito",
     "headline": "El hábito de meter un dedo o una",
     "items": [
@@ -2822,8 +2822,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.78,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d064.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d064.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "suele resolver más que una compra impulsiva, si quieres una guía sencilla de abono natural deje",
     "headline": "Suele resolver más que una compra impulsiva, si",
     "items": [
@@ -2844,7 +2844,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "imagen",
     "kind": "",
     "src": "img/v7ior5j7vkw9_personal_02b.png",
-    "supportImage": "img/v7ior5j7vkw9_personal_02b.png",
+    "supportImage": "",
     "dice": "la del galpón en la descripción pero incluso el mejor abono falla",
     "headline": "La del galpón en la descripción pero",
     "items": [
@@ -2864,7 +2864,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "img/v7ior5j7vkw9_personal_02b.png",
+    "supportImage": "",
     "dice": "cuando la raíz alterna entre sed y asfixia, primero agua estable después alimento, fíjate",
     "headline": "Cuando la raíz alterna entre sed y asfixia,",
     "items": [
@@ -2885,7 +2885,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d065.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d065.mp4",
+    "supportImage": "",
     "dice": "ahora en otro daño, una planta pasa varios días seca, el fruto sigue",
     "headline": "Ahora en otro daño, una planta pasa varios",
     "items": [
@@ -2904,8 +2904,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.16,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d066.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d066.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "creciendo con lo poco que recibe, de pronto llega una tormenta o una",
     "headline": "Creciendo con lo poco que recibe, de pronto",
     "items": [
@@ -2925,7 +2925,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d067.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d067.mp4",
+    "supportImage": "",
     "dice": "inundación con la manguera, el interior del tomate toma agua",
     "headline": "Inundación con la manguera, el interior",
     "items": [
@@ -2944,8 +2944,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.98,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d068.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d068.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "y se expande más rápido de lo que la piel puede acompañar, aparecen grietas, no todas las grietas",
     "headline": "Y se expande más rápido de lo que",
     "items": [
@@ -2966,7 +2966,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d068.mp4",
+    "supportImage": "",
     "dice": "tienen una sola causa, la variedad y el estado de madurez también",
     "headline": "Tienen una sola causa, la variedad y",
     "items": [
@@ -2986,7 +2986,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d069.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d069.mp4",
+    "supportImage": "",
     "dice": "influyen, pero la variación brusca de humedad es una causa muy común, el error no fue darle agua a una",
     "headline": "Influyen, pero la variación brusca de humedad es",
     "items": [
@@ -3006,8 +3006,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d070.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d070.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "planta sedienta, había que dársela, el error ocurrió antes",
     "headline": "Planta sedienta, había que dársela, el error ocurrió",
     "items": [
@@ -3027,7 +3027,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d071.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d071.mp4",
+    "supportImage": "",
     "dice": "fue dejar que el suelo pasara de una condición estable a una sequedad profunda, la prevención empieza",
     "headline": "Fue dejar que el suelo pasara de una",
     "items": [
@@ -3047,8 +3047,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.2,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d072.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d072.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "varios días antes de que veas la grieta, eso es lo incómodo del riego, la",
     "headline": "Varios días antes de que veas la grieta,",
     "items": [
@@ -3068,7 +3068,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "BarCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d072.mp4",
+    "supportImage": "",
     "dice": "cosecha de hoy revela decisiones que tomaste cuando el fruto era pequeño, durante la floración y el desarrollo temprano",
     "headline": "Cosecha de hoy revela decisiones que tomaste cuando",
     "items": [
@@ -3089,7 +3089,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d073.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d073.mp4",
+    "supportImage": "",
     "dice": "del tomate, la constancia importa mucho, no esperes a que los primeros",
     "headline": "Del tomate, la constancia importa mucho, no",
     "items": [
@@ -3108,8 +3108,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.26,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d074.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d074.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "frutos engorden para empezar a observar, desde que cuajan, revisa el suelo con",
     "headline": "Frutos engorden para empezar a observar, desde que",
     "items": [
@@ -3129,7 +3129,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d075.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d075.mp4",
+    "supportImage": "",
     "dice": "más atención, no significa mantenerlo saturado, una",
     "headline": "Más atención, no significa mantenerlo saturado,",
     "items": [
@@ -3149,7 +3149,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d075.mp4",
+    "supportImage": "",
     "dice": "raíz necesita agua y oxígeno, si cada espacio del suelo está lleno de agua durante demasiado",
     "headline": "Raíz necesita agua y oxígeno, si cada espacio",
     "items": [
@@ -3170,7 +3170,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d075.mp4",
+    "supportImage": "",
     "dice": "tiempo, falta aire, la raíz pierde función, las",
     "headline": "Tiempo, falta aire, la raíz pierde función,",
     "items": [
@@ -3189,8 +3189,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.76,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d076.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d076.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "hojas pueden amarillar, la planta puede marchitarse aunque esté rodeada de humedad y alguien que solo mira las hojas",
     "headline": "Hojas pueden amarillar, la planta puede marchitarse aunque",
     "items": [
@@ -3211,7 +3211,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d077.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d077.mp4",
+    "supportImage": "",
     "dice": "responde con más agua, ahí nace un círculo muy malo, la",
     "headline": "Responde con más agua, ahí nace un",
     "items": [
@@ -3230,8 +3230,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.64,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d078.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d078.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "planta se ve caída, la persona riega, la raíz ya asfixiada funciona peor, la",
     "headline": "Planta se ve caída, la persona riega, la",
     "items": [
@@ -3252,7 +3252,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d079.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d079.mp4",
+    "supportImage": "",
     "dice": "planta se cae más, la persona riega otra vez, para romper ese",
     "headline": "Planta se cae más, la persona riega",
     "items": [
@@ -3272,7 +3272,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d079.mp4",
+    "supportImage": "",
     "dice": "círculo toca el suelo, introduce el dedo unos 5 centímetros, mejor aún, usa una palita y revisa un",
     "headline": "Círculo toca el suelo, introduce el dedo unos",
     "items": [
@@ -3293,7 +3293,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d079.mp4",
+    "supportImage": "",
     "dice": "poco más si arriba parece seco pero abajo está fresco, espera",
     "headline": "Poco más si arriba parece seco pero abajo",
     "items": [
@@ -3312,8 +3312,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.4,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d080.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d080.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "si está seco a esa profundidad y la planta está en crecimiento activo",
     "headline": "Si está seco a esa profundidad y la",
     "items": [
@@ -3333,7 +3333,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d081.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d081.mp4",
+    "supportImage": "",
     "dice": "riega despacio, ahora cambia la escena, tu tomate no está",
     "headline": "Riega despacio, ahora cambia la escena,",
     "items": [
@@ -3352,8 +3352,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d082.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d082.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "en un bancal, está en una maceta, entonces varias reglas de frecuencia cambian, una maceta tiene poco",
     "headline": "En un bancal, está en una maceta, entonces",
     "items": [
@@ -3374,7 +3374,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "Checklist",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d082.jpg",
+    "supportImage": "",
     "dice": "volumen, sus paredes reciben calor, el agua drena",
     "headline": "Volumen, sus paredes reciben calor, el agua",
     "items": [
@@ -3394,7 +3394,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d083.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d083.mp4",
+    "supportImage": "",
     "dice": "por abajo, una planta grande puede consumir la reserva con rapidez, durante una ola de calor un tomate en",
     "headline": "Por abajo, una planta grande puede consumir la",
     "items": [
@@ -3414,8 +3414,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.68,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d084.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d084.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "contenedor puede necesitar riego diario, a veces en un",
     "headline": "Contenedor puede necesitar riego diario, a veces",
     "items": [
@@ -3435,7 +3435,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d085.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d085.mp4",
+    "supportImage": "",
     "dice": "recipiente pequeño y expuesto incluso dos revisiones al día, eso no contradice el riego profundo",
     "headline": "Recipiente pequeño y expuesto incluso dos revisiones al",
     "items": [
@@ -3455,8 +3455,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.86,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d086.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d086.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "en maceta riega hasta que una pequeña cantidad salga por los agujeros",
     "headline": "En maceta riega hasta que una pequeña",
     "items": [
@@ -3476,7 +3476,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d086.mp4",
+    "supportImage": "",
     "dice": "inferiores, luego deja drenar, no permitas que el recipiente quede sentado durante horas en un plato lleno",
     "headline": "Inferiores, luego deja drenar, no permitas que el",
     "items": [
@@ -3497,7 +3497,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d087.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d087.mp4",
+    "supportImage": "",
     "dice": "de agua, húmedo no significa pantano, el tamaño del recipiente importa",
     "headline": "De agua, húmedo no significa pantano, el tamaño",
     "items": [
@@ -3517,7 +3517,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d087.mp4",
+    "supportImage": "",
     "dice": "un plantín pequeño en una maceta enorme conserva agua durante más tiempo",
     "headline": "Un plantín pequeño en una maceta enorme conserva",
     "items": [
@@ -3536,8 +3536,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.4,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d088.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d088.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "una tomatera adulta cargada de frutos en un balde pequeño",
     "headline": "Una tomatera adulta cargada de frutos",
     "items": [
@@ -3557,7 +3557,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d089.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d089.jpg",
+    "supportImage": "",
     "dice": "puede secarse antes del atardecer, por eso tampoco copies el calendario de otra persona sin copiar",
     "headline": "Puede secarse antes del atardecer, por eso tampoco",
     "items": [
@@ -3578,7 +3578,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ChipsCluster",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d089.jpg",
+    "supportImage": "",
     "dice": "su recipiente, su mezcla, su clima y el tamaño de",
     "headline": "Su recipiente, su mezcla, su clima",
     "items": [
@@ -3597,8 +3597,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.58,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d090.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d090.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "su planta, haz una marca simple en una varilla de madera, introduce la varilla cerca del borde sin cortar",
     "headline": "Su planta, haz una marca simple en una",
     "items": [
@@ -3619,7 +3619,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d091.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d091.jpg",
+    "supportImage": "",
     "dice": "raíces, déjala unos segundos, al sacarla la parte",
     "headline": "Raíces, déjala unos segundos, al sacarla la",
     "items": [
@@ -3638,8 +3638,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.68,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d092.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d092.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "oscura te muestra hasta donde llegó la humedad, es una forma barata de aprender cómo se comporta tu",
     "headline": "Oscura te muestra hasta donde llegó la humedad,",
     "items": [
@@ -3660,7 +3660,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d093.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d093.mp4",
+    "supportImage": "",
     "dice": "maceta, en suelo abierto puedes hacer algo parecido con una",
     "headline": "Maceta, en suelo abierto puedes hacer algo",
     "items": [
@@ -3680,7 +3680,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d093.mp4",
+    "supportImage": "",
     "dice": "palita, riega, espera, abre un pequeño corte, mide la profundidad húmeda, la primera vez quizá",
     "headline": "Palita, riega, espera, abre un pequeño corte, mide",
     "items": [
@@ -3700,8 +3700,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.34,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d094.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d094.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "descubras que 10 minutos de manguera mojaron menos de lo que creías, o",
     "headline": "Descubras que 10 minutos de manguera mojaron menos",
     "items": [
@@ -3721,7 +3721,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d095.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d095.mp4",
+    "supportImage": "",
     "dice": "quizá veas lo contrario, el agua bajó muy bien y tu rutina estaba dando",
     "headline": "Quizá veas lo contrario, el agua bajó muy",
     "items": [
@@ -3741,7 +3741,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d095.mp4",
+    "supportImage": "",
     "dice": "de más, no",
     "headline": "De más, no",
     "items": [
@@ -3760,8 +3760,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.3,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d096.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d096.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "adivines el tiempo del grifo, calíbralo una vez con un recipiente de volumen conocido y confirma el resultado",
     "headline": "Adivines el tiempo del grifo, calíbralo una vez",
     "items": [
@@ -3802,7 +3802,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d097.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d097.mp4",
+    "supportImage": "",
     "dice": "el suelo te dice cuánto aprovechó, ahora te doy una herramienta que reduce la cantidad de decisiones, acolchado",
     "headline": "El suelo te dice cuánto aprovechó, ahora te",
     "items": [
@@ -3823,7 +3823,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d097.mp4",
+    "supportImage": "",
     "dice": "pon entre 5 y 8 centímetros de paja limpia, hojas secas trituradas",
     "headline": "Pon entre 5 y 8 centímetros de paja",
     "items": [
@@ -3842,8 +3842,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.06,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d098.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d098.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "u otro material orgánico alrededor de la tomatera, deja un pequeño espacio libre junto al tallo",
     "headline": "U otro material orgánico alrededor de la tomatera,",
     "items": [
@@ -3864,7 +3864,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d099.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d099.mp4",
+    "supportImage": "",
     "dice": "el acolchado frena la evaporación, modera la temperatura de la",
     "headline": "El acolchado frena la evaporación, modera la",
     "items": [
@@ -3884,7 +3884,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "SplitList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d099.mp4",
+    "supportImage": "",
     "dice": "superficie, reduce el de las gotas, también dificulta que la tierra salpique las hojas, lo importante no",
     "headline": "Superficie, reduce el de las gotas, también dificulta",
     "items": [
@@ -3904,8 +3904,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.1,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d100.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d100.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "es usar un material exótico, es cubrir el suelo sin apretarlo contra el",
     "headline": "Es usar un material exótico, es cubrir el",
     "items": [
@@ -3925,7 +3925,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d101.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d101.mp4",
+    "supportImage": "",
     "dice": "tallo, una huerta desnuda puede pasar de húmeda a seca con rapidez, una",
     "headline": "Tallo, una huerta desnuda puede pasar de húmeda",
     "items": [
@@ -3944,8 +3944,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.32,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d102.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d102.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "huerta acolchada cambia más de espacio y la estabilidad",
     "headline": "Huerta acolchada cambia más de espacio",
     "items": [
@@ -3965,7 +3965,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "StatBig",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d102.jpg",
+    "supportImage": "",
     "dice": "otra vez es el verdadero premio, pero cuidado, no pongas acolchado sobre una tierra completamente",
     "headline": "Otra vez es el verdadero premio, pero cuidado,",
     "items": [
@@ -3986,7 +3986,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d102.jpg",
+    "supportImage": "",
     "dice": "seca y supongas que el problema desapareció, primero carga",
     "headline": "Seca y supongas que el problema",
     "items": [
@@ -4006,7 +4006,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d103.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d103.mp4",
+    "supportImage": "",
     "dice": "el perfil con un riego profundo, después el acolchado conserva lo que existe, no crea",
     "headline": "El perfil con un riego profundo, después el",
     "items": [
@@ -4026,8 +4026,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.04,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d104.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d104.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "agua, tampoco dejes que una capa gruesa esconde un suelo saturado",
     "headline": "Agua, tampoco dejes que una capa gruesa esconde",
     "items": [
@@ -4047,7 +4047,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d105.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d105.mp4",
+    "supportImage": "",
     "dice": "aparta un poco, revisa debajo, el acolchado reduce la frecuencia pero no elimina la observación",
     "headline": "Aparta un poco, revisa debajo, el acolchado reduce",
     "items": [
@@ -4068,7 +4068,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "imagen",
     "kind": "",
     "src": "img/v7ior5j7vkw9_personal_03.png",
-    "supportImage": "img/v7ior5j7vkw9_personal_03.png",
+    "supportImage": "",
     "dice": "aquí aparece una objeción muy común, le vi yo riego poco todos",
     "headline": "Aquí aparece una objeción muy común, le",
     "items": [
@@ -4088,7 +4088,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "TextCardReveal",
     "src": "",
-    "supportImage": "img/v7ior5j7vkw9_personal_03.png",
+    "supportImage": "",
     "dice": "los días y mis tomates se ven bien, puede ocurrir, sobre todo en suelo muy arenoso, con plantas jóvenes o",
     "headline": "Los días y mis tomates se ven bien,",
     "items": [
@@ -4108,8 +4108,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.22,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d106.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d106.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "en tenedores, la respuesta honesta es que la frecuencia por sí sola",
     "headline": "En tenedores, la respuesta honesta es que la",
     "items": [
@@ -4129,7 +4129,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d107.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d107.jpg",
+    "supportImage": "",
     "dice": "no condena una planta, lo que importa es qué humedad produce esa frecuencia",
     "headline": "No condena una planta, lo que importa es",
     "items": [
@@ -4148,8 +4148,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d108.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d108.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "en la zona de raíces, si tu riego diario moja profundamente",
     "headline": "En la zona de raíces, si tu riego",
     "items": [
@@ -4169,7 +4169,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d109.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d109.jpg",
+    "supportImage": "",
     "dice": "y el exceso drena, no es el mismo sorbito superficial del que estamos hablando, si el clima evapora",
     "headline": "Y el exceso drena, no es el mismo",
     "items": [
@@ -4190,7 +4190,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "AgedDoc",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d109.jpg",
+    "supportImage": "",
     "dice": "una gran cantidad cada día, tu manejo debe responder a",
     "headline": "Una gran cantidad cada día, tu",
     "items": [
@@ -4209,8 +4209,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.52,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d110.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d110.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "esa realidad, no conviertas un consejo útil en una religión, mide la profundidad, mira el drenaje",
     "headline": "Esa realidad, no conviertas un consejo útil en",
     "items": [
@@ -4231,7 +4231,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d111.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d111.mp4",
+    "supportImage": "",
     "dice": "ajusta, lo mismo vale para una vez por semana, en arcilla",
     "headline": "Ajusta, lo mismo vale para una vez",
     "items": [
@@ -4250,8 +4250,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.04,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d112.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d112.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "fresca y con acolchado puede funcionar, en arena durante una ola de calor puede ser insuficiente",
     "headline": "Fresca y con acolchado puede funcionar, en arena",
     "items": [
@@ -4272,7 +4272,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d113.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d113.jpg",
+    "supportImage": "",
     "dice": "un número sin contexto se transforma en una trampa, ahora los",
     "headline": "Un número sin contexto se transforma en",
     "items": [
@@ -4292,7 +4292,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d113.jpg",
+    "supportImage": "",
     "dice": "límites son estos, un riego correcto no cura una enfermedad vascular, si una planta se marchita todos los días, amarillea",
     "headline": "Límites son estos, un riego correcto no cura",
     "items": [
@@ -4313,7 +4313,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d113.jpg",
+    "supportImage": "",
     "dice": "de un solo lado y no se recupera bien, investiga fusarium, verticilium",
     "headline": "De un solo lado y no se recupera",
     "items": [
@@ -4332,8 +4332,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.54,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d114.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d114.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "daño de raíces u otros problemas, no sigas agregando agua por reflejo",
     "headline": "Daño de raíces u otros problemas, no sigas",
     "items": [
@@ -4353,7 +4353,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d115.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d115.mp4",
+    "supportImage": "",
     "dice": "un riego correcto tampoco repara un fruto con podredumbre apical",
     "headline": "Un riego correcto tampoco repara un",
     "items": [
@@ -4372,8 +4372,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.14,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d116.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d116.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "avanzada, protege los frutos siguientes, el afectado no vuelve a formar tejido sano, no puede compensar",
     "headline": "Avanzada, protege los frutos siguientes, el afectado no",
     "items": [
@@ -4394,7 +4394,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d116.mp4",
+    "supportImage": "",
     "dice": "un recipiente sin agujeros, si el agua no sale, mejora",
     "headline": "Un recipiente sin agujeros, si el",
     "items": [
@@ -4414,7 +4414,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d116.mp4",
+    "supportImage": "",
     "dice": "el drenaje, no puede detener una ola de calor extrema, cuando las temperaturas suben mucho, el tomate puede perder",
     "headline": "El drenaje, no puede detener una ola de",
     "items": [
@@ -4435,7 +4435,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d117.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d117.mp4",
+    "supportImage": "",
     "dice": "flores aunque el suelo tenga humedad, el agua reduce parte del",
     "headline": "Flores aunque el suelo tenga humedad, el",
     "items": [
@@ -4454,8 +4454,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.72,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d118.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d118.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "estrés, no controla el aire y no reemplaza un análisis de suelo cuando hay un verdadero desequilibrio",
     "headline": "Estrés, no controla el aire y no reemplaza",
     "items": [
@@ -4476,7 +4476,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d118.mp4",
+    "supportImage": "",
     "dice": "de calcio, pH o sales, la humedad estable es fundamental",
     "headline": "De calcio, pH o sales, la humedad estable",
     "items": [
@@ -4496,7 +4496,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d118.mp4",
+    "supportImage": "",
     "dice": "no es magia, esa es la diferencia entre cuidar y prometer, yo prefiero decirte lo que una práctica puede hacer y también",
     "headline": "No es magia, esa es la diferencia entre",
     "items": [
@@ -4517,7 +4517,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d118.mp4",
+    "supportImage": "",
     "dice": "lo que no puede hacer, ahora vamos al mito del calcio, la mancha negra",
     "headline": "Lo que no puede hacer, ahora vamos al",
     "items": [
@@ -4537,7 +4537,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d119.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d119.jpg",
+    "supportImage": "",
     "dice": "aparece, alguien recomienda cáscaras de huevo, otro recomienda leche, otro",
     "headline": "Aparece, alguien recomienda cáscaras de huevo, otro recomienda",
     "items": [
@@ -4557,7 +4557,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ChipsCluster",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d119.jpg",
+    "supportImage": "",
     "dice": "vende sales de Epson, las cáscaras tardan en descomponerse",
     "headline": "Vende sales de Epson, las cáscaras tardan",
     "items": [
@@ -4577,7 +4577,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d119.jpg",
+    "supportImage": "",
     "dice": "la leche no es una solución de para la huerta y las sales de Epson aportan magnesio, no calcio, si",
     "headline": "La leche no es una solución de para",
     "items": [
@@ -4598,7 +4598,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d119.jpg",
+    "supportImage": "",
     "dice": "agregas magnesio sin necesitarlo, puedes empeorar el equilibrio de",
     "headline": "Agregas magnesio sin necesitarlo, puedes empeorar el",
     "items": [
@@ -4617,8 +4617,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 1.28,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d120.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d120.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "nutrientes que compiten",
     "headline": "Nutrientes que compiten",
     "items": [
@@ -4638,7 +4638,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d120.jpg",
+    "supportImage": "",
     "dice": "por entrar en la planta, la ruta responsable es distinta, primero",
     "headline": "Por entrar en la planta, la ruta",
     "items": [
@@ -4658,7 +4658,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d121.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d121.mp4",
+    "supportImage": "",
     "dice": "identifica bien la lesión, la podredumbre apical empieza en el extremo de la flor, el lado opuesto al",
     "headline": "Identifica bien la lesión, la podredumbre apical empieza",
     "items": [
@@ -4678,8 +4678,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.86,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d122.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d122.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "tallo, suele ser oscura, hundida y firme al principio, después",
     "headline": "Tallo, suele ser oscura, hundida y firme",
     "items": [
@@ -4699,7 +4699,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d122.jpg",
+    "supportImage": "",
     "dice": "revisa la historia de humedad, hubo sequía y luego mucha agua, la maceta se secó completo, las raíces fueron dañadas",
     "headline": "Revisa la historia de humedad, hubo sequía y",
     "items": [
@@ -4720,7 +4720,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d123.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d123.jpg",
+    "supportImage": "",
     "dice": "con la asada, el bancal queda encharcado, luego si el problema se repite",
     "headline": "Con la asada, el bancal queda encharcado, luego",
     "items": [
@@ -4740,7 +4740,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d123.jpg",
+    "supportImage": "",
     "dice": "analiza el suelo, corrige el pH y el calcio según el resultado, no según",
     "headline": "Analiza el suelo, corrige el pH y el",
     "items": [
@@ -4759,8 +4759,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.44,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d124.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d124.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "el miedo, el vendedor quiere empezar por la botella, la planta",
     "headline": "El miedo, el vendedor quiere empezar",
     "items": [
@@ -4780,7 +4780,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d125.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d125.mp4",
+    "supportImage": "",
     "dice": "quiere que empieces por la raíz, esto no es manía, es diagnóstico, quiero que hagamos ahora un diagnóstico",
     "headline": "Quiere que empieces por la raíz, esto no",
     "items": [
@@ -4820,8 +4820,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.44,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d126.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d126.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "tarde, hace calor, las hojas están caídas, la superficie del bancal se ve seca, la reacción",
     "headline": "Tarde, hace calor, las hojas están caídas, la",
     "items": [
@@ -4842,7 +4842,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d127.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d127.mp4",
+    "supportImage": "",
     "dice": "automática es abrir la manguera, pero tú ya sabes que",
     "headline": "Automática es abrir la manguera, pero tú",
     "items": [
@@ -4862,7 +4862,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d127.mp4",
+    "supportImage": "",
     "dice": "todavía faltan datos, apartas el acolchado, metes un dedo 5 centímetros, encuentras",
     "headline": "Todavía faltan datos, apartas el acolchado, metes un",
     "items": [
@@ -4882,8 +4882,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.82,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d128.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d128.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "humedad, abres con cuidado un pequeño corte y ves tierra",
     "headline": "Humedad, abres con cuidado un pequeño corte",
     "items": [
@@ -4903,7 +4903,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d128.mp4",
+    "supportImage": "",
     "dice": "fresca más abajo, la planta no está pidiendo una inundación, está reduciendo temporalmente la pérdida",
     "headline": "Fresca más abajo, la planta no está pidiendo",
     "items": [
@@ -4924,7 +4924,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d129.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d129.mp4",
+    "supportImage": "",
     "dice": "de agua durante la parte más dura del día, esperas hasta la",
     "headline": "De agua durante la parte más dura",
     "items": [
@@ -4943,8 +4943,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.54,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d130.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d130.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "mañana, si recuperó firmeza era estrés térmico transitorio",
     "headline": "Mañana, si recuperó firmeza era estrés térmico transitorio",
     "items": [
@@ -4964,7 +4964,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d131.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d131.mp4",
+    "supportImage": "",
     "dice": "si sigue caída y el suelo está seco, riegas profundo",
     "headline": "Si sigue caída y el suelo está",
     "items": [
@@ -4983,8 +4983,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.12,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d132.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d132.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "si sigue caída con suelo húmedo, buscas daño de raíces, drenaje o enfermedad, tres",
     "headline": "Si sigue caída con suelo húmedo, buscas daño",
     "items": [
@@ -5005,7 +5005,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "Checklist",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d132.jpg",
+    "supportImage": "",
     "dice": "resultados distintos, una sola hoja caída, aquí se",
     "headline": "Resultados distintos, una sola hoja caída,",
     "items": [
@@ -5024,8 +5024,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.32,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d133.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d133.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "paga el gran loop, el error que arruina tantos tomates no es simplemente regar mucho, tampoco es",
     "headline": "Paga el gran loop, el error que arruina",
     "items": [
@@ -5045,8 +5045,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.68,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d134.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d134.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "simplemente regar poco, es preguntarle a las hojas de la tarde",
     "headline": "Simplemente regar poco, es preguntarle a las",
     "items": [
@@ -5066,7 +5066,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d135.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d135.mp4",
+    "supportImage": "",
     "dice": "cuando regar, en vez de preguntarle al suelo de la mañana cuánta agua queda, las hojas reaccionan",
     "headline": "Cuando regar, en vez de preguntarle al suelo",
     "items": [
@@ -5107,7 +5107,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d135.mp4",
+    "supportImage": "",
     "dice": "de agua y a la falta de agua, pueden verse caídas en todos esos casos, la tierra a la profundidad correcta",
     "headline": "De agua y a la falta de agua,",
     "items": [
@@ -5127,8 +5127,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d136.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d136.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "te da la información que falta, cuando riegas cada vez que la planta se inclina",
     "headline": "Te da la información que falta, cuando riegas",
     "items": [
@@ -5148,7 +5148,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d137.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d137.mp4",
+    "supportImage": "",
     "dice": "bajo el sol, puedes inundar una raíz que todavía tiene agua, cuando esperas",
     "headline": "Bajo el sol, puedes inundar una raíz que",
     "items": [
@@ -5167,8 +5167,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.69,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d138.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d138.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "a que toda la amanezca marchita llegaste demasiado tarde",
     "headline": "A que toda la amanezca marchita llegaste",
     "items": [
@@ -5188,7 +5188,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d138.jpg",
+    "supportImage": "",
     "dice": "el punto correcto está entre esos extremos, comprueba por la mañana, comprueba a 5 centímetros y",
     "headline": "El punto correcto está entre esos extremos, comprueba",
     "items": [
@@ -5209,7 +5209,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ChipsCluster",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d138.jpg",
+    "supportImage": "",
     "dice": "calibra una vez hasta donde llega tu riego, eso convierte una",
     "headline": "Calibra una vez hasta donde llega tu",
     "items": [
@@ -5229,7 +5229,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d138.jpg",
+    "supportImage": "",
     "dice": "sospecha en un método, te prometí un protocolo que puedas usar desde mañana, aquí está, primero revisa",
     "headline": "Sospecha en un método, te prometí un protocolo",
     "items": [
@@ -5250,7 +5250,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d139.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d139.mp4",
+    "supportImage": "",
     "dice": "la tierra por la mañana, mete el dedo o una palita a unos 5",
     "headline": "La tierra por la mañana, mete el",
     "items": [
@@ -5270,7 +5270,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d139.mp4",
+    "supportImage": "",
     "dice": "centímetros, no mires solo la costra superior, segundo, si estás seca a esa profundidad",
     "headline": "Centímetros, no mires solo la costra superior, segundo,",
     "items": [
@@ -5290,8 +5290,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.26,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d140.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d140.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "riega lento en la base, haz dos pasadas si el agua corre por la superficie",
     "headline": "Riega lento en la base, haz dos pasadas",
     "items": [
@@ -5311,7 +5311,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d140.mp4",
+    "supportImage": "",
     "dice": "tercero, verifica que la humedad haya llegado entre 15 y 20 centímetros en el suelo, haz esta prueba varias veces",
     "headline": "Tercero, verifica que la humedad haya llegado entre",
     "items": [
@@ -5332,7 +5332,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d140.mp4",
+    "supportImage": "",
     "dice": "al principio, después conocerás el tiempo de tu sistema, cuarto, usa",
     "headline": "Al principio, después conocerás el tiempo de tu",
     "items": [
@@ -5352,7 +5352,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "StatBig",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d140.mp4",
+    "supportImage": "",
     "dice": "como punto de partida unos 25 litros por metro cuadrado a la",
     "headline": "Como punto de partida unos 25 litros por",
     "items": [
@@ -5372,7 +5372,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d141.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d141.mp4",
+    "supportImage": "",
     "dice": "semana, contando la lluvia, ajusta por arena, arcilla",
     "headline": "Semana, contando la lluvia, ajusta por arena, arcilla",
     "items": [
@@ -5392,7 +5392,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d141.mp4",
+    "supportImage": "",
     "dice": "viento, temperatura y acolchado, quinto, mantén entre 5 y 8 centímetros de cobertura orgánica",
     "headline": "Viento, temperatura y acolchado, quinto, mantén entre 5",
     "items": [
@@ -5413,7 +5413,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d141.mp4",
+    "supportImage": "",
     "dice": "deja libre el cuello de la planta, sexto, trata las macetas",
     "headline": "Deja libre el cuello de la",
     "items": [
@@ -5432,8 +5432,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 1.62,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d142.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d142.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "como un mundo aparte",
     "headline": "Como un mundo",
     "items": [
@@ -5453,7 +5453,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d143.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d143.mp4",
+    "supportImage": "",
     "dice": "revísalas a diario cuando hace calor, riega hasta que drenen, vacía",
     "headline": "Revísalas a diario cuando hace calor, riega",
     "items": [
@@ -5473,7 +5473,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d143.mp4",
+    "supportImage": "",
     "dice": "los platos que queden llenos, séptimo, si una planta se cae con el suelo húmedo, no agregues agua",
     "headline": "Los platos que queden llenos, séptimo, si una",
     "items": [
@@ -5494,7 +5494,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "RuleNumberScene",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d143.mp4",
+    "supportImage": "",
     "dice": "por reflejo, investiga y octavo, durante floración y formación",
     "headline": "Por reflejo, investiga y octavo, durante floración y",
     "items": [
@@ -5514,7 +5514,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d143.mp4",
+    "supportImage": "",
     "dice": "del fruto, evita los grandes saltos entre seco y empapado, allí estás protegiendo la cosecha que verás semanas después",
     "headline": "Del fruto, evita los grandes saltos entre seco",
     "items": [
@@ -5535,7 +5535,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ChipsCluster",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d143.mp4",
+    "supportImage": "",
     "dice": "no necesitas memorizarlo todo, quédate con esta frase, riega la",
     "headline": "No necesitas memorizarlo todo, quédate con esta frase,",
     "items": [
@@ -5554,8 +5554,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.46,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d144.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d144.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "raíz, mide la profundidad, decide por el suelo, si quieres dejar",
     "headline": "Raíz, mide la profundidad, decide por el suelo,",
     "items": [
@@ -5575,7 +5575,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d145.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d145.jpg",
+    "supportImage": "",
     "dice": "tu huerta más estable, en la descripción tienes la guía de",
     "headline": "Tu huerta más estable, en",
     "items": [
@@ -5594,8 +5594,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.86,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d146.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d146.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "abono natural del galpón, úsala después de ordenar el riego, no antes, y ahora te propongo una prueba",
     "headline": "Abono natural del galpón, úsala después de ordenar",
     "items": [
@@ -5616,7 +5616,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d146.jpg",
+    "supportImage": "",
     "dice": "de 7 días, no cambies todas tus plantas, elige",
     "headline": "De 7 días, no cambies todas",
     "items": [
@@ -5636,7 +5636,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d146.jpg",
+    "supportImage": "",
     "dice": "dos tomateras parecidas, en una mantén tu rutina habitual, en la otra comprueba la dada 5 centímetros",
     "headline": "Dos tomateras parecidas, en una mantén tu rutina",
     "items": [
@@ -5657,7 +5657,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d147.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d147.mp4",
+    "supportImage": "",
     "dice": "riega profundo sólo cuando corresponda y cubre el suelo, anota",
     "headline": "Riega profundo sólo cuando corresponda y cubre",
     "items": [
@@ -5676,8 +5676,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.7,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d148.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d148.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "tres cosas, cuánto tarda en secarse, cómo amanece la planta y hasta dónde llega el agua, no",
     "headline": "Tres cosas, cuánto tarda en secarse, cómo amanece",
     "items": [
@@ -5698,7 +5698,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d149.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d149.mp4",
+    "supportImage": "",
     "dice": "necesitas inventar resultados, deja que tu propio suelo te enseñe",
     "headline": "Necesitas inventar resultados, deja que tu propio suelo",
     "items": [
@@ -5718,7 +5718,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "TextCardReveal",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d149.mp4",
+    "supportImage": "",
     "dice": "al final de la semana conocerás más sobre tu huerta que después de leer 20 etiquetas del vivero, y si ya tienes tomates",
     "headline": "Al final de la semana conocerás más sobre",
     "items": [
@@ -5738,8 +5738,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.16,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d150.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d150.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "con grietas o con la base negra, no te castigues, retira los más",
     "headline": "Con grietas o con la base negra, no",
     "items": [
@@ -5759,7 +5759,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "OptionCompare",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d150.jpg",
+    "supportImage": "",
     "dice": "dañados, corrige la constancia, los frutos que recién están empezando",
     "headline": "Dañados, corrige la constancia, los frutos que recién",
     "items": [
@@ -5779,7 +5779,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d151.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d151.jpg",
+    "supportImage": "",
     "dice": "todavía pueden desarrollarse mejor, la huerta siempre",
     "headline": "Todavía pueden desarrollarse mejor, la huerta",
     "items": [
@@ -5798,8 +5798,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.26,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d152.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d152.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "deja otra oportunidad en la misma planta, para recordar hagamos el repaso final, uno",
     "headline": "Deja otra oportunidad en la misma planta, para",
     "items": [
@@ -5820,7 +5820,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "AgedDoc",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d152.jpg",
+    "supportImage": "",
     "dice": "no desorbo superficiales, moja la zona de raíces",
     "headline": "No desorbo superficiales, moja la zona de",
     "items": [
@@ -5840,7 +5840,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "CrossSection",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d152.jpg",
+    "supportImage": "",
     "dice": "dos, comprueba a 5 centímetros y verifica una profundidad de 15 a 20, tres, cuenta",
     "headline": "Dos, comprueba a 5 centímetros y verifica una",
     "items": [
@@ -5861,7 +5861,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d153.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d153.mp4",
+    "supportImage": "",
     "dice": "la lluvia dentro del total semanal, cuatro, riega temprano",
     "headline": "La lluvia dentro del total semanal, cuatro, riega",
     "items": [
@@ -5880,8 +5880,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.76,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d154.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d154.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "y al suelo, cinco, usa colchado para que la humedad cambie de espacio, seis, no",
     "headline": "Y al suelo, cinco, usa colchado para que",
     "items": [
@@ -5902,7 +5902,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "clip",
     "kind": "",
     "src": "broll/v7ior5j7vkw9/d155.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d155.jpg",
+    "supportImage": "",
     "dice": "confundas el decaimiento de la tarde con una orden automática de regar",
     "headline": "Confundas el decaimiento de la tarde con una",
     "items": [
@@ -5922,7 +5922,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ProcessSteps",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d155.jpg",
+    "supportImage": "",
     "dice": "siete, no compres calcio antes de revisar humedad, drenaje y suelo, y ocho, en maceta",
     "headline": "Siete, no compres calcio antes de revisar humedad,",
     "items": [
@@ -5942,8 +5942,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.68,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d156.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d156.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "observa más seguido, el recipiente pierde agua mucho más rápido que un bancal",
     "headline": "Observa más seguido, el recipiente pierde agua mucho",
     "items": [
@@ -5962,8 +5962,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 4.82,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d157.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d157.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "cuéntame en los comentarios en qué clima cultivas y qué tipo de suelo tienes",
     "headline": "Cuéntame en los comentarios en qué clima cultivas",
     "items": [
@@ -5983,7 +5983,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "imagen",
     "kind": "",
     "src": "img/v7ior5j7vkw9_personal_04.png",
-    "supportImage": "img/v7ior5j7vkw9_personal_04.png",
+    "supportImage": "",
     "dice": "arena, arcilla, bancal o maceta, quiero",
     "headline": "Arena, arcilla, bancal o maceta, quiero",
     "items": [
@@ -6002,8 +6002,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.22,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d158.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d158.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "saber cuál es el problema que más se repite en tu huerta, también deje la guía de abono natural en la descripción",
     "headline": "Saber cuál es el problema que más se",
     "items": [
@@ -6024,7 +6024,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "ReframeList",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d158.jpg",
+    "supportImage": "",
     "dice": "para quien quiera completar este sistema sin gastar de más, en el",
     "headline": "Para quien quiera completar este sistema",
     "items": [
@@ -6043,8 +6043,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 6.56,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d159.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d159.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "próximo vídeo voy a mostrarte cómo una vasija de barro sin esmaltar, enterrada junto a las raíces, puede soltar",
     "headline": "Próximo vídeo voy a mostrarte cómo una vasija",
     "items": [
@@ -6064,8 +6064,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.66,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d160.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d160.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "agua lentamente durante días, también te voy a decir cuándo esa",
     "headline": "Agua lentamente durante días, también te voy",
     "items": [
@@ -6084,8 +6084,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 5.78,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d161.jpg",
-    "supportImage": "broll/v7ior5j7vkw9/d161.jpg",
+    "src": "",
+    "supportImage": "",
     "dice": "técnica funciona y cuándo puede pudrir una planta, la gente sencilla sabía cosas que recién estamos",
     "headline": "Técnica funciona y cuándo puede pudrir una planta,",
     "items": [
@@ -6105,8 +6105,8 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "dur": 3.9,
     "tipo": "clip",
     "kind": "",
-    "src": "broll/v7ior5j7vkw9/d162.mp4",
-    "supportImage": "broll/v7ior5j7vkw9/d162.mp4",
+    "src": "",
+    "supportImage": "",
     "dice": "recordando, observa el suelo, cuida la raíz, la cosecha",
     "headline": "Recordando, observa el suelo, cuida la raíz,",
     "items": [
@@ -6126,7 +6126,7 @@ export const MOMENTS_V7IOR5J7VKW9: V7Moment[] = [
     "tipo": "componente",
     "kind": "KineticQuote",
     "src": "",
-    "supportImage": "broll/v7ior5j7vkw9/d162.mp4",
+    "supportImage": "",
     "dice": "te lo devuelve, nos vemos en el galpón",
     "headline": "Te lo devuelve,",
     "items": [
