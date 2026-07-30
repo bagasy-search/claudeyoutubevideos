@@ -5,7 +5,7 @@
   "fps": 30,
   "width": 1920,
   "height": 1080,
-  "duration_in_frames": 36478,
+  "duration_in_frames": 41394,
   "audio_src": "avatar_vq27dyf4z18ko.mp4",
   "captions_src": "captions_vq27dyf4z18ko.json",
   "scenes": [
@@ -13,7 +13,7 @@
       "id": "hook_m001",
       "section_id": "hook",
       "from": 0,
-      "duration": 60,
+      "duration": 54,
       "narration": "This plain white salt can",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -26,8 +26,8 @@
     {
       "id": "hook_m002",
       "section_id": "hook",
-      "from": 59,
-      "duration": 68,
+      "from": 54,
+      "duration": 74,
       "narration": "swallow more than twice the heat the same",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -41,8 +41,8 @@
     {
       "id": "hook_m003",
       "section_id": "hook",
-      "from": 127,
-      "duration": 96,
+      "from": 128,
+      "duration": 111,
       "narration": "weight of water absorbs while warming twenty-five degrees,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -57,8 +57,8 @@
     {
       "id": "hook_m004",
       "section_id": "hook",
-      "from": 223,
-      "duration": 77,
+      "from": 239,
+      "duration": 83,
       "narration": "without a battery, and buy you precious time",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -72,8 +72,8 @@
     {
       "id": "hook_m005",
       "section_id": "hook",
-      "from": 300,
-      "duration": 84,
+      "from": 322,
+      "duration": 121,
       "narration": "before a brutal summer day overwhelms your body.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -88,8 +88,8 @@
     {
       "id": "hook_m006",
       "section_id": "hook",
-      "from": 394,
-      "duration": 65,
+      "from": 443,
+      "duration": 64,
       "narration": "It is not table salt. It is not",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -103,8 +103,8 @@
     {
       "id": "hook_m007",
       "section_id": "hook",
-      "from": 458,
-      "duration": 78,
+      "from": 507,
+      "duration": 80,
       "narration": "ice melt. It is a crystal called sodium",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -119,8 +119,8 @@
     {
       "id": "hook_m008",
       "section_id": "hook",
-      "from": 536,
-      "duration": 102,
+      "from": 587,
+      "duration": 118,
       "narration": "sulfate decahydrate, also known as Glauber’s salt. At",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -134,8 +134,8 @@
     {
       "id": "hook_m009",
       "section_id": "hook",
-      "from": 638,
-      "duration": 101,
+      "from": 705,
+      "duration": 94,
       "narration": "about ninety degrees Fahrenheit, or thirty-two point four",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -148,8 +148,8 @@
     {
       "id": "hook_m010",
       "section_id": "hook",
-      "from": 739,
-      "duration": 76,
+      "from": 799,
+      "duration": 88,
       "narration": "degrees Celsius, those dry-looking crystals begin",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -164,8 +164,8 @@
     {
       "id": "heat_problem_m001",
       "section_id": "heat_problem",
-      "from": 814,
-      "duration": 67,
+      "from": 887,
+      "duration": 73,
       "narration": "to melt. While they melt, they absorb",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -179,8 +179,8 @@
     {
       "id": "heat_problem_m002",
       "section_id": "heat_problem",
-      "from": 880,
-      "duration": 71,
+      "from": 960,
+      "duration": 82,
       "narration": "a remarkable amount of heat without getting much",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -195,8 +195,8 @@
     {
       "id": "heat_problem_m003",
       "section_id": "heat_problem",
-      "from": 951,
-      "duration": 95,
+      "from": 1042,
+      "duration": 156,
       "narration": "hotter. One kilogram can absorb roughly two hundred to",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -210,8 +210,8 @@
     {
       "id": "heat_problem_m004",
       "section_id": "heat_problem",
-      "from": 1046,
-      "duration": 74,
+      "from": 1198,
+      "duration": 40,
       "narration": "two hundred fifty kilojoules during that change.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -226,8 +226,8 @@
     {
       "id": "heat_problem_m005",
       "section_id": "heat_problem",
-      "from": 1120,
-      "duration": 73,
+      "from": 1238,
+      "duration": 123,
       "narration": "Put that beside one kilogram of water. Warming",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -241,8 +241,8 @@
     {
       "id": "heat_problem_m006",
       "section_id": "heat_problem",
-      "from": 1193,
-      "duration": 105,
+      "from": 1361,
+      "duration": 199,
       "narration": "the water by twenty-five degrees Celsius absorbs only about",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -257,8 +257,8 @@
     {
       "id": "heat_problem_m007",
       "section_id": "heat_problem",
-      "from": 1298,
-      "duration": 73,
+      "from": 1560,
+      "duration": 8,
       "narration": "one hundred five kilojoules. The salt can",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -272,8 +272,8 @@
     {
       "id": "heat_problem_m008",
       "section_id": "heat_problem",
-      "from": 1371,
-      "duration": 72,
+      "from": 1568,
+      "duration": 77,
       "narration": "take roughly twice that amount in a narrow",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -288,8 +288,8 @@
     {
       "id": "heat_problem_m009",
       "section_id": "heat_problem",
-      "from": 1442,
-      "duration": 90,
+      "from": 1645,
+      "duration": 106,
       "narration": "temperature band, before we even count the ordinary heat",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -303,8 +303,8 @@
     {
       "id": "heat_problem_m010",
       "section_id": "heat_problem",
-      "from": 1531,
-      "duration": 49,
+      "from": 1751,
+      "duration": 76,
       "narration": "it absorbs on the way there. No",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -319,8 +319,8 @@
     {
       "id": "heat_problem_m011",
       "section_id": "heat_problem",
-      "from": 1579,
-      "duration": 102,
+      "from": 1827,
+      "duration": 112,
       "narration": "compressor. No fan. No electric cord. Just a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -334,8 +334,8 @@
     {
       "id": "heat_problem_m012",
       "section_id": "heat_problem",
-      "from": 1680,
-      "duration": 104,
+      "from": 1939,
+      "duration": 120,
       "narration": "sealed pouch of crystals changing their internal structure. That",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -350,8 +350,8 @@
     {
       "id": "heat_problem_m013",
       "section_id": "heat_problem",
-      "from": 1783,
-      "duration": 61,
+      "from": 2059,
+      "duration": 64,
       "narration": "is why materials like this are called",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -365,8 +365,8 @@
     {
       "id": "heat_problem_m014",
       "section_id": "heat_problem",
-      "from": 1844,
-      "duration": 113,
+      "from": 2123,
+      "duration": 122,
       "narration": "phase-change materials, or P C M. Engineers put",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -381,8 +381,8 @@
     {
       "id": "heat_problem_m015",
       "section_id": "heat_problem",
-      "from": 1957,
-      "duration": 121,
+      "from": 2245,
+      "duration": 141,
       "narration": "them in buildings, shipping containers, electronics, and cooling garments.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -396,8 +396,8 @@
     {
       "id": "heat_problem_m016",
       "section_id": "heat_problem",
-      "from": 2082,
-      "duration": 70,
+      "from": 2386,
+      "duration": 60,
       "narration": "But the principle is simple enough to",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -412,8 +412,8 @@
     {
       "id": "heat_problem_m017",
       "section_id": "heat_problem",
-      "from": 2151,
-      "duration": 77,
+      "from": 2446,
+      "duration": 96,
       "narration": "demonstrate in a farm workshop. The important word",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -427,8 +427,8 @@
     {
       "id": "heat_problem_m018",
       "section_id": "heat_problem",
-      "from": 2227,
-      "duration": 127,
+      "from": 2542,
+      "duration": 99,
       "narration": "is demonstrate. This is not a miracle vest. It",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -443,8 +443,8 @@
     {
       "id": "heat_problem_m019",
       "section_id": "heat_problem",
-      "from": 2353,
-      "duration": 82,
+      "from": 2641,
+      "duration": 84,
       "narration": "does not make dangerous heat safe. It",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -457,8 +457,8 @@
     {
       "id": "heat_problem_m020",
       "section_id": "heat_problem",
-      "from": 2434,
-      "duration": 122,
+      "from": 2725,
+      "duration": 156,
       "narration": "does not replace water, shade, rest, acclimatization, or",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -473,8 +473,8 @@
     {
       "id": "heat_problem_m021",
       "section_id": "heat_problem",
-      "from": 2556,
-      "duration": 81,
+      "from": 2881,
+      "duration": 102,
       "narration": "an emergency cooling plan. And if a person becomes",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -488,8 +488,8 @@
     {
       "id": "heat_problem_m022",
       "section_id": "heat_problem",
-      "from": 2637,
-      "duration": 117,
+      "from": 2983,
+      "duration": 133,
       "narration": "confused, starts speaking unclearly, collapses, or loses",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -504,8 +504,8 @@
     {
       "id": "heat_problem_m023",
       "section_id": "heat_problem",
-      "from": 2753,
-      "duration": 85,
+      "from": 3116,
+      "duration": 90,
       "narration": "consciousness in the heat, do not stand there",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -519,8 +519,8 @@
     {
       "id": "heat_problem_m024",
       "section_id": "heat_problem",
-      "from": 2837,
-      "duration": 112,
+      "from": 3206,
+      "duration": 125,
       "narration": "admiring a salt pack. Call emergency services. Move the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -535,8 +535,8 @@
     {
       "id": "heat_problem_m025",
       "section_id": "heat_problem",
-      "from": 2948,
-      "duration": 67,
+      "from": 3331,
+      "duration": 77,
       "narration": "person to a cooler place. Begin rapid",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -550,8 +550,8 @@
     {
       "id": "heat_problem_m026",
       "section_id": "heat_problem",
-      "from": 3014,
-      "duration": 87,
+      "from": 3408,
+      "duration": 71,
       "narration": "active cooling with cold water or ice while",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -566,8 +566,8 @@
     {
       "id": "heat_problem_m027",
       "section_id": "heat_problem",
-      "from": 3100,
-      "duration": 77,
+      "from": 3479,
+      "duration": 101,
       "narration": "help is coming. Keep that warning in your mind,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -581,8 +581,8 @@
     {
       "id": "heat_problem_m028",
       "section_id": "heat_problem",
-      "from": 3179,
-      "duration": 49,
+      "from": 3580,
+      "duration": 59,
       "narration": "because later I will show you the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -597,8 +597,8 @@
     {
       "id": "heat_problem_m029",
       "section_id": "heat_problem",
-      "from": 3227,
-      "duration": 69,
+      "from": 3639,
+      "duration": 85,
       "narration": "exact mistake that can turn a useful cooling",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -612,8 +612,8 @@
     {
       "id": "heat_problem_m030",
       "section_id": "heat_problem",
-      "from": 3295,
-      "duration": 85,
+      "from": 3724,
+      "duration": 127,
       "narration": "pack into a warm layer strapped against your chest.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -628,8 +628,8 @@
     {
       "id": "heat_problem_m031",
       "section_id": "heat_problem",
-      "from": 3388,
-      "duration": 62,
+      "from": 3851,
+      "duration": 90,
       "narration": "First, let us understand why the salt",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -643,8 +643,8 @@
     {
       "id": "heat_problem_m032",
       "section_id": "heat_problem",
-      "from": 3450,
-      "duration": 74,
+      "from": 3941,
+      "duration": 105,
       "narration": "works. When you heat a stone, nearly every",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -659,8 +659,8 @@
     {
       "id": "heat_problem_m033",
       "section_id": "heat_problem",
-      "from": 3523,
-      "duration": 87,
+      "from": 4046,
+      "duration": 111,
       "narration": "bit of energy raises its temperature. Heat it more,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -674,8 +674,8 @@
     {
       "id": "heat_problem_m034",
       "section_id": "heat_problem",
-      "from": 3609,
-      "duration": 69,
+      "from": 4157,
+      "duration": 84,
       "narration": "and it gets hotter. Water behaves the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -690,8 +690,8 @@
     {
       "id": "heat_problem_m035",
       "section_id": "heat_problem",
-      "from": 3677,
-      "duration": 65,
+      "from": 4241,
+      "duration": 100,
       "narration": "same way until it reaches a phase change.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -705,8 +705,8 @@
     {
       "id": "heat_problem_m036",
       "section_id": "heat_problem",
-      "from": 3750,
-      "duration": 96,
+      "from": 4341,
+      "duration": 115,
       "narration": "At a phase change, something different happens. The energy",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -721,8 +721,8 @@
     {
       "id": "heat_problem_m037",
       "section_id": "heat_problem",
-      "from": 3845,
-      "duration": 75,
+      "from": 4456,
+      "duration": 92,
       "narration": "is being used to rearrange molecules instead",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -735,8 +735,8 @@
     {
       "id": "heat_problem_m038",
       "section_id": "heat_problem",
-      "from": 3919,
-      "duration": 82,
+      "from": 4548,
+      "duration": 85,
       "narration": "of simply making them move faster. You use",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -751,8 +751,8 @@
     {
       "id": "heat_problem_m039",
       "section_id": "heat_problem",
-      "from": 4000,
-      "duration": 68,
+      "from": 4633,
+      "duration": 93,
       "narration": "this trick every time ice melts in a drink.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -766,8 +766,8 @@
     {
       "id": "heat_problem_m040",
       "section_id": "heat_problem",
-      "from": 4068,
-      "duration": 67,
+      "from": 4726,
+      "duration": 70,
       "narration": "The ice stays near its melting point",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -782,8 +782,8 @@
     {
       "id": "heat_problem_m041",
       "section_id": "heat_problem",
-      "from": 4134,
-      "duration": 76,
+      "from": 4796,
+      "duration": 87,
       "narration": "while it absorbs heat and changes from solid",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -797,8 +797,8 @@
     {
       "id": "heat_problem_m042",
       "section_id": "heat_problem",
-      "from": 4209,
-      "duration": 93,
+      "from": 4883,
+      "duration": 117,
       "narration": "water to liquid water. That hidden absorption is called",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -813,8 +813,8 @@
     {
       "id": "heat_problem_m043",
       "section_id": "heat_problem",
-      "from": 4302,
-      "duration": 23,
+      "from": 5000,
+      "duration": 24,
       "narration": "latent heat.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -828,8 +828,8 @@
     {
       "id": "pcm_physics_m001",
       "section_id": "pcm_physics",
-      "from": 4332,
-      "duration": 59,
+      "from": 5024,
+      "duration": 78,
       "narration": "The thermometer does not show the full",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -843,8 +843,8 @@
     {
       "id": "pcm_physics_m002",
       "section_id": "pcm_physics",
-      "from": 4391,
-      "duration": 107,
+      "from": 5102,
+      "duration": 111,
       "narration": "amount of energy going in. Glauber’s salt performs",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -859,8 +859,8 @@
     {
       "id": "pcm_physics_m003",
       "section_id": "pcm_physics",
-      "from": 4498,
-      "duration": 81,
+      "from": 5213,
+      "duration": 84,
       "narration": "a similar trick at a much warmer temperature than",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -874,8 +874,8 @@
     {
       "id": "pcm_physics_m004",
       "section_id": "pcm_physics",
-      "from": 4579,
-      "duration": 78,
+      "from": 5297,
+      "duration": 224,
       "narration": "ice. Its chemical formula is N A",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -890,8 +890,8 @@
     {
       "id": "pcm_physics_m005",
       "section_id": "pcm_physics",
-      "from": 4657,
-      "duration": 89,
+      "from": 5521,
+      "duration": 11,
       "narration": "two S O four, ten H two O.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -905,8 +905,8 @@
     {
       "id": "pcm_physics_m006",
       "section_id": "pcm_physics",
-      "from": 4746,
-      "duration": 90,
+      "from": 5532,
+      "duration": 241,
       "narration": "Those ten water molecules are held inside the crystal",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -921,8 +921,8 @@
     {
       "id": "pcm_physics_m007",
       "section_id": "pcm_physics",
-      "from": 4836,
-      "duration": 96,
+      "from": 5773,
+      "duration": 12,
       "narration": "structure. Near thirty-two point four Celsius, the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -936,8 +936,8 @@
     {
       "id": "pcm_physics_m008",
       "section_id": "pcm_physics",
-      "from": 4932,
-      "duration": 84,
+      "from": 5785,
+      "duration": 32,
       "narration": "structure changes and the material becomes a watery",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -952,8 +952,8 @@
     {
       "id": "pcm_physics_m009",
       "section_id": "pcm_physics",
-      "from": 5016,
-      "duration": 97,
+      "from": 5817,
+      "duration": 112,
       "narration": "salt mixture. That temperature is the reason this particular",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -967,8 +967,8 @@
     {
       "id": "pcm_physics_m010",
       "section_id": "pcm_physics",
-      "from": 5112,
-      "duration": 84,
+      "from": 5929,
+      "duration": 92,
       "narration": "salt is interesting. Ice at zero Celsius",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -983,8 +983,8 @@
     {
       "id": "pcm_physics_m011",
       "section_id": "pcm_physics",
-      "from": 5195,
-      "duration": 85,
+      "from": 6021,
+      "duration": 262,
       "narration": "can be painfully cold against skin. A phase-change",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -998,8 +998,8 @@
     {
       "id": "pcm_physics_m012",
       "section_id": "pcm_physics",
-      "from": 5280,
-      "duration": 91,
+      "from": 6283,
+      "duration": 10,
       "narration": "pack near thirty-two Celsius is gentle by comparison. It",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1014,8 +1014,8 @@
     {
       "id": "pcm_physics_m013",
       "section_id": "pcm_physics",
-      "from": 5371,
-      "duration": 55,
+      "from": 6293,
+      "duration": 47,
       "narration": "can absorb heat when skin and the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1029,8 +1029,8 @@
     {
       "id": "pcm_physics_m014",
       "section_id": "pcm_physics",
-      "from": 5425,
-      "duration": 72,
+      "from": 6340,
+      "duration": 79,
       "narration": "surrounding air are warmer than the pack, yet",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1045,8 +1045,8 @@
     {
       "id": "pcm_physics_m015",
       "section_id": "pcm_physics",
-      "from": 5496,
-      "duration": 79,
+      "from": 6419,
+      "duration": 83,
       "narration": "it does not begin as a frozen brick. But",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1060,8 +1060,8 @@
     {
       "id": "pcm_physics_m016",
       "section_id": "pcm_physics",
-      "from": 5574,
-      "duration": 77,
+      "from": 6502,
+      "duration": 83,
       "narration": "gentle has a cost. Heat only flows",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1076,8 +1076,8 @@
     {
       "id": "pcm_physics_m017",
       "section_id": "pcm_physics",
-      "from": 5651,
-      "duration": 85,
+      "from": 6585,
+      "duration": 97,
       "narration": "when there is a temperature difference. A thirty-two-degree",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1091,8 +1091,8 @@
     {
       "id": "pcm_physics_m018",
       "section_id": "pcm_physics",
-      "from": 5736,
-      "duration": 78,
+      "from": 6682,
+      "duration": 121,
       "narration": "pack has a small temperature difference from warm skin.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1107,8 +1107,8 @@
     {
       "id": "pcm_physics_m019",
       "section_id": "pcm_physics",
-      "from": 5814,
-      "duration": 62,
+      "from": 6803,
+      "duration": 252,
       "narration": "It cannot pull heat as aggressively as",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1121,8 +1121,8 @@
     {
       "id": "pcm_physics_m020",
       "section_id": "pcm_physics",
-      "from": 5876,
-      "duration": 76,
+      "from": 7055,
+      "duration": 18,
       "narration": "a twenty-degree commercial P C M pack, cold",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1137,8 +1137,8 @@
     {
       "id": "pcm_physics_m021",
       "section_id": "pcm_physics",
-      "from": 5952,
-      "duration": 104,
+      "from": 7073,
+      "duration": 60,
       "narration": "water, or ice. Researchers testing cooling garments often choose",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1152,8 +1152,8 @@
     {
       "id": "pcm_physics_m022",
       "section_id": "pcm_physics",
-      "from": 6056,
-      "duration": 90,
+      "from": 7133,
+      "duration": 111,
       "narration": "phase-change temperatures around twenty to twenty-eight Celsius",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1168,8 +1168,8 @@
     {
       "id": "pcm_physics_m023",
       "section_id": "pcm_physics",
-      "from": 6146,
-      "duration": 70,
+      "from": 7244,
+      "duration": 92,
       "narration": "for exactly that reason. So why bother with",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1183,8 +1183,8 @@
     {
       "id": "pcm_physics_m024",
       "section_id": "pcm_physics",
-      "from": 6216,
-      "duration": 108,
+      "from": 7336,
+      "duration": 161,
       "narration": "Glauber’s salt? Because it is inexpensive. It is nonflammable.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1199,8 +1199,8 @@
     {
       "id": "pcm_physics_m025",
       "section_id": "pcm_physics",
-      "from": 6324,
-      "duration": 75,
+      "from": 7497,
+      "duration": 96,
       "narration": "Its phase-change temperature is useful for hot",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1214,8 +1214,8 @@
     {
       "id": "pcm_physics_m026",
       "section_id": "pcm_physics",
-      "from": 6399,
-      "duration": 132,
+      "from": 7593,
+      "duration": 141,
       "narration": "rooms, shaded recovery stations, insulated boxes, and gentle",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1230,8 +1230,8 @@
     {
       "id": "pcm_physics_m027",
       "section_id": "pcm_physics",
-      "from": 6531,
-      "duration": 98,
+      "from": 7734,
+      "duration": 101,
       "narration": "personal cooling. It can become solid again in a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1245,8 +1245,8 @@
     {
       "id": "pcm_physics_m028",
       "section_id": "pcm_physics",
-      "from": 6628,
-      "duration": 59,
+      "from": 7835,
+      "duration": 75,
       "narration": "cool room or cellar. You do not",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1261,8 +1261,8 @@
     {
       "id": "pcm_physics_m029",
       "section_id": "pcm_physics",
-      "from": 6686,
-      "duration": 76,
+      "from": 7910,
+      "duration": 72,
       "narration": "always need a freezer. Think of it as",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1276,8 +1276,8 @@
     {
       "id": "pcm_physics_m030",
       "section_id": "pcm_physics",
-      "from": 6762,
-      "duration": 85,
+      "from": 7982,
+      "duration": 94,
       "narration": "a thermal battery. You charge the battery by leaving",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1292,8 +1292,8 @@
     {
       "id": "pcm_physics_m031",
       "section_id": "pcm_physics",
-      "from": 6846,
-      "duration": 78,
+      "from": 8076,
+      "duration": 91,
       "narration": "the pack somewhere clearly below its phase-change",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1307,8 +1307,8 @@
     {
       "id": "pcm_physics_m032",
       "section_id": "pcm_physics",
-      "from": 6923,
-      "duration": 95,
+      "from": 8167,
+      "duration": 97,
       "narration": "temperature until it becomes solid. You spend the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1323,8 +1323,8 @@
     {
       "id": "pcm_physics_m033",
       "section_id": "pcm_physics",
-      "from": 7017,
-      "duration": 95,
+      "from": 8264,
+      "duration": 97,
       "narration": "battery when heat melts it. The electricity is replaced",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1338,8 +1338,8 @@
     {
       "id": "pcm_physics_m034",
       "section_id": "pcm_physics",
-      "from": 7111,
-      "duration": 49,
+      "from": 8361,
+      "duration": 61,
       "narration": "by a flow of heat. Here is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1354,8 +1354,8 @@
     {
       "id": "pcm_physics_m035",
       "section_id": "pcm_physics",
-      "from": 7159,
-      "duration": 62,
+      "from": 8422,
+      "duration": 59,
       "narration": "the first number that tells you whether a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1369,8 +1369,8 @@
     {
       "id": "pcm_physics_m036",
       "section_id": "pcm_physics",
-      "from": 7221,
-      "duration": 108,
+      "from": 8481,
+      "duration": 261,
       "narration": "thermal battery is honest or advertising. Imagine a pack",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1385,8 +1385,8 @@
     {
       "id": "pcm_physics_m037",
       "section_id": "pcm_physics",
-      "from": 7329,
-      "duration": 69,
+      "from": 8742,
+      "duration": 84,
       "narration": "containing five hundred grams of the salt.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1399,8 +1399,8 @@
     {
       "id": "pcm_physics_m038",
       "section_id": "pcm_physics",
-      "from": 7398,
-      "duration": 78,
+      "from": 8826,
+      "duration": 10,
       "narration": "If it stores two hundred fifty kilojoules per",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1415,8 +1415,8 @@
     {
       "id": "pcm_physics_m039",
       "section_id": "pcm_physics",
-      "from": 7476,
-      "duration": 119,
+      "from": 8836,
+      "duration": 199,
       "narration": "kilogram during melting, that half-kilogram pack can absorb about",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1430,8 +1430,8 @@
     {
       "id": "pcm_physics_m040",
       "section_id": "pcm_physics",
-      "from": 7595,
-      "duration": 84,
+      "from": 9035,
+      "duration": 10,
       "narration": "one hundred twenty-five kilojoules. If heat enters",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1446,8 +1446,8 @@
     {
       "id": "pcm_physics_m041",
       "section_id": "pcm_physics",
-      "from": 7679,
-      "duration": 61,
+      "from": 9045,
+      "duration": 237,
       "narration": "the pack at an average rate of fifty",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1461,8 +1461,8 @@
     {
       "id": "pcm_physics_m042",
       "section_id": "pcm_physics",
-      "from": 7740,
-      "duration": 109,
+      "from": 9282,
+      "duration": 8,
       "narration": "watts, divide one hundred twenty-five thousand joules by fifty",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1477,8 +1477,8 @@
     {
       "id": "pcm_physics_m043",
       "section_id": "pcm_physics",
-      "from": 7849,
-      "duration": 84,
+      "from": 9290,
+      "duration": 178,
       "narration": "joules per second. The theoretical result is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1492,8 +1492,8 @@
     {
       "id": "pcm_physics_m044",
       "section_id": "pcm_physics",
-      "from": 7933,
-      "duration": 74,
+      "from": 9468,
+      "duration": 17,
       "narration": "two thousand five hundred seconds, or about forty-two",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1508,8 +1508,8 @@
     {
       "id": "pcm_physics_m045",
       "section_id": "pcm_physics",
-      "from": 8007,
-      "duration": 82,
+      "from": 9485,
+      "duration": 21,
       "narration": "minutes. That is not a promise of forty-two minutes",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1523,8 +1523,8 @@
     {
       "id": "pcm_physics_m046",
       "section_id": "pcm_physics",
-      "from": 8089,
-      "duration": 80,
+      "from": 9506,
+      "duration": 53,
       "narration": "on your body. Air, sunlight, fabric, sweat,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1539,8 +1539,8 @@
     {
       "id": "pcm_physics_m047",
       "section_id": "pcm_physics",
-      "from": 8175,
-      "duration": 66,
+      "from": 9559,
+      "duration": 89,
       "narration": "pack thickness, and movement all change the rate.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1554,8 +1554,8 @@
     {
       "id": "pcm_physics_m048",
       "section_id": "pcm_physics",
-      "from": 8249,
-      "duration": 73,
+      "from": 9648,
+      "duration": 81,
       "narration": "The calculation gives you a ceiling and a way",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1570,8 +1570,8 @@
     {
       "id": "pcm_physics_m049",
       "section_id": "pcm_physics",
-      "from": 8322,
-      "duration": 88,
+      "from": 9729,
+      "duration": 307,
       "narration": "to expose nonsense. If a seller tells",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1585,8 +1585,8 @@
     {
       "id": "pcm_physics_m050",
       "section_id": "pcm_physics",
-      "from": 8410,
-      "duration": 88,
+      "from": 10036,
+      "duration": 6,
       "narration": "you a tiny two-hundred-gram insert will cool a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1601,8 +1601,8 @@
     {
       "id": "pcm_physics_m051",
       "section_id": "pcm_physics",
-      "from": 8498,
-      "duration": 92,
+      "from": 10042,
+      "duration": 10,
       "narration": "laboring adult for eight hours, ask for two numbers.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1616,8 +1616,8 @@
     {
       "id": "pcm_physics_m052",
       "section_id": "pcm_physics",
-      "from": 8598,
-      "duration": 71,
+      "from": 10052,
+      "duration": 58,
       "narration": "What is the phase-change temperature? What is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1632,8 +1632,8 @@
     {
       "id": "pcm_physics_m053",
       "section_id": "pcm_physics",
-      "from": 8668,
-      "duration": 92,
+      "from": 10110,
+      "duration": 110,
       "narration": "the latent heat in kilojoules per kilogram? If",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1647,8 +1647,8 @@
     {
       "id": "pcm_physics_m054",
       "section_id": "pcm_physics",
-      "from": 8760,
-      "duration": 86,
+      "from": 10220,
+      "duration": 95,
       "narration": "neither number appears, the color of the gel tells",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1663,8 +1663,8 @@
     {
       "id": "pcm_physics_m055",
       "section_id": "pcm_physics",
-      "from": 8845,
-      "duration": 55,
+      "from": 10315,
+      "duration": 64,
       "narration": "you nothing. Now let us build a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1677,8 +1677,8 @@
     {
       "id": "pcm_physics_m056",
       "section_id": "pcm_physics",
-      "from": 8899,
-      "duration": 86,
+      "from": 10379,
+      "duration": 101,
       "narration": "test pack, not a medical device. Buy material",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1693,8 +1693,8 @@
     {
       "id": "pcm_physics_m057",
       "section_id": "pcm_physics",
-      "from": 8984,
-      "duration": 23,
+      "from": 10480,
+      "duration": 24,
       "narration": "from a supplier",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1708,8 +1708,8 @@
     {
       "id": "prototype_build_m001",
       "section_id": "prototype_build",
-      "from": 9006,
-      "duration": 96,
+      "from": 10504,
+      "duration": 507,
       "narration": "that labels the compound exactly: sodium sulfate",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -1723,8 +1723,8 @@
     {
       "id": "prototype_build_m002",
       "section_id": "prototype_build",
-      "from": 9102,
-      "duration": 87,
+      "from": 11011,
+      "duration": 103,
       "narration": "decahydrate, N A two S O four, ten",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1739,8 +1739,8 @@
     {
       "id": "prototype_build_m003",
       "section_id": "prototype_build",
-      "from": 9189,
-      "duration": 98,
+      "from": 11114,
+      "duration": 12,
       "narration": "H two O. The word decahydrate matters. Do not",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1754,8 +1754,8 @@
     {
       "id": "prototype_build_m004",
       "section_id": "prototype_build",
-      "from": 9287,
-      "duration": 87,
+      "from": 11126,
+      "duration": 14,
       "narration": "substitute table salt. Sodium chloride melts at",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1770,8 +1770,8 @@
     {
       "id": "prototype_build_m005",
       "section_id": "prototype_build",
-      "from": 9373,
-      "duration": 82,
+      "from": 11140,
+      "duration": 9,
       "narration": "hundreds of degrees, not near body temperature. Do",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1785,8 +1785,8 @@
     {
       "id": "prototype_build_m006",
       "section_id": "prototype_build",
-      "from": 9454,
-      "duration": 85,
+      "from": 11149,
+      "duration": 49,
       "narration": "not substitute Epsom salt because the name sounds similar.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1801,8 +1801,8 @@
     {
       "id": "prototype_build_m007",
       "section_id": "prototype_build",
-      "from": 9547,
-      "duration": 58,
+      "from": 11198,
+      "duration": 70,
       "narration": "Do not use an unknown laundry powder.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1816,8 +1816,8 @@
     {
       "id": "prototype_build_m008",
       "section_id": "prototype_build",
-      "from": 9609,
-      "duration": 98,
+      "from": 11268,
+      "duration": 121,
       "narration": "And never improvise with calcium chloride driveway ice",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1832,8 +1832,8 @@
     {
       "id": "prototype_build_m009",
       "section_id": "prototype_build",
-      "from": 9706,
-      "duration": 102,
+      "from": 11389,
+      "duration": 105,
       "narration": "melt. Calcium chloride can become very hot when mixed",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1847,8 +1847,8 @@
     {
       "id": "prototype_build_m010",
       "section_id": "prototype_build",
-      "from": 9807,
-      "duration": 85,
+      "from": 11494,
+      "duration": 394,
       "narration": "with water, may contain impurities, and is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1863,8 +1863,8 @@
     {
       "id": "prototype_build_m011",
       "section_id": "prototype_build",
-      "from": 9892,
-      "duration": 149,
+      "from": 11888,
+      "duration": 8,
       "narration": "not the beginner’s version of this experiment. Use",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1878,8 +1878,8 @@
     {
       "id": "prototype_build_m012",
       "section_id": "prototype_build",
-      "from": 10041,
-      "duration": 104,
+      "from": 11896,
+      "duration": 13,
       "narration": "safety glasses and gloves. Work where children and animals",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1894,8 +1894,8 @@
     {
       "id": "prototype_build_m013",
       "section_id": "prototype_build",
-      "from": 10144,
-      "duration": 84,
+      "from": 11909,
+      "duration": 6,
       "narration": "cannot reach the material. Use dedicated tools",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1909,8 +1909,8 @@
     {
       "id": "prototype_build_m014",
       "section_id": "prototype_build",
-      "from": 10227,
-      "duration": 95,
+      "from": 11915,
+      "duration": 53,
       "narration": "that will never return to food preparation. Sodium",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1925,8 +1925,8 @@
     {
       "id": "prototype_build_m015",
       "section_id": "prototype_build",
-      "from": 10321,
-      "duration": 107,
+      "from": 11968,
+      "duration": 143,
       "narration": "sulfate decahydrate is commonly described as a low-hazard and",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1940,8 +1940,8 @@
     {
       "id": "prototype_build_m016",
       "section_id": "prototype_build",
-      "from": 10435,
-      "duration": 71,
+      "from": 12111,
+      "duration": 83,
       "narration": "nonflammable salt, but low hazard does not",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1956,8 +1956,8 @@
     {
       "id": "prototype_build_m017",
       "section_id": "prototype_build",
-      "from": 10505,
-      "duration": 78,
+      "from": 12194,
+      "duration": 107,
       "narration": "mean food, medicine, or skin cream. Borax, which",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1971,8 +1971,8 @@
     {
       "id": "prototype_build_m018",
       "section_id": "prototype_build",
-      "from": 10582,
-      "duration": 64,
+      "from": 12301,
+      "duration": 66,
       "narration": "we will discuss in a moment, must not be",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -1987,8 +1987,8 @@
     {
       "id": "prototype_build_m019",
       "section_id": "prototype_build",
-      "from": 10645,
-      "duration": 110,
+      "from": 12367,
+      "duration": 94,
       "narration": "swallowed either. For a one-cycle demonstration, weigh",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2001,8 +2001,8 @@
     {
       "id": "prototype_build_m020",
       "section_id": "prototype_build",
-      "from": 10752,
-      "duration": 126,
+      "from": 12461,
+      "duration": 141,
       "narration": "five hundred grams into a compatible leak-resistant container.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2017,8 +2017,8 @@
     {
       "id": "prototype_build_m021",
       "section_id": "prototype_build",
-      "from": 10878,
-      "duration": 121,
+      "from": 12602,
+      "duration": 100,
       "narration": "A wide, flat shape transfers heat better than a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2032,8 +2032,8 @@
     {
       "id": "prototype_build_m022",
       "section_id": "prototype_build",
-      "from": 10998,
-      "duration": 81,
+      "from": 12702,
+      "duration": 80,
       "narration": "thick bottle. A flimsy zipper bag is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2048,8 +2048,8 @@
     {
       "id": "prototype_build_m023",
       "section_id": "prototype_build",
-      "from": 11078,
-      "duration": 120,
+      "from": 12782,
+      "duration": 113,
       "narration": "not reliable. Salt solution will find weak seams.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2063,8 +2063,8 @@
     {
       "id": "prototype_build_m024",
       "section_id": "prototype_build",
-      "from": 11220,
-      "duration": 112,
+      "from": 12895,
+      "duration": 109,
       "narration": "For a workshop test, use a small high-density polyethylene",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2079,8 +2079,8 @@
     {
       "id": "prototype_build_m025",
       "section_id": "prototype_build",
-      "from": 11331,
-      "duration": 108,
+      "from": 13004,
+      "duration": 97,
       "narration": "bottle or a purpose-made heat-sealable pouch rated",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2094,8 +2094,8 @@
     {
       "id": "prototype_build_m026",
       "section_id": "prototype_build",
-      "from": 11438,
-      "duration": 106,
+      "from": 13101,
+      "duration": 102,
       "narration": "for salt solutions. Leave a little expansion space.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2110,8 +2110,8 @@
     {
       "id": "prototype_build_m027",
       "section_id": "prototype_build",
-      "from": 11561,
-      "duration": 88,
+      "from": 13203,
+      "duration": 412,
       "narration": "Never heat a closed test container. Never use thin",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2125,8 +2125,8 @@
     {
       "id": "prototype_build_m028",
       "section_id": "prototype_build",
-      "from": 11649,
-      "duration": 92,
+      "from": 13615,
+      "duration": 12,
       "narration": "glass. Pure Glauber’s salt reveals two problems",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2141,8 +2141,8 @@
     {
       "id": "prototype_build_m029",
       "section_id": "prototype_build",
-      "from": 11741,
-      "duration": 83,
+      "from": 13627,
+      "duration": 12,
       "narration": "after a few cycles. The first is supercooling.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2156,8 +2156,8 @@
     {
       "id": "prototype_build_m030",
       "section_id": "prototype_build",
-      "from": 11827,
-      "duration": 85,
+      "from": 13639,
+      "duration": 13,
       "narration": "The melted pack may cool below its normal freezing",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2172,8 +2172,8 @@
     {
       "id": "prototype_build_m031",
       "section_id": "prototype_build",
-      "from": 11911,
-      "duration": 69,
+      "from": 13652,
+      "duration": 75,
       "narration": "point and remain liquid because no crystal",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2187,8 +2187,8 @@
     {
       "id": "prototype_build_m032",
       "section_id": "prototype_build",
-      "from": 11979,
-      "duration": 82,
+      "from": 13727,
+      "duration": 114,
       "narration": "has started the change. The second is separation.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2203,8 +2203,8 @@
     {
       "id": "prototype_build_m033",
       "section_id": "prototype_build",
-      "from": 12065,
-      "duration": 63,
+      "from": 13841,
+      "duration": 71,
       "narration": "Part of the salt can settle away from the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2218,8 +2218,8 @@
     {
       "id": "prototype_build_m034",
       "section_id": "prototype_build",
-      "from": 12127,
-      "duration": 59,
+      "from": 13912,
+      "duration": 88,
       "narration": "water. Then the pack may lose useful",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2234,8 +2234,8 @@
     {
       "id": "prototype_build_m035",
       "section_id": "prototype_build",
-      "from": 12185,
-      "duration": 78,
+      "from": 14000,
+      "duration": 132,
       "narration": "capacity from one cycle to the next. Researchers",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2249,8 +2249,8 @@
     {
       "id": "prototype_build_m036",
       "section_id": "prototype_build",
-      "from": 12262,
-      "duration": 106,
+      "from": 14132,
+      "duration": 125,
       "narration": "solve supercooling by adding a nucleating agent. Borax has",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2265,8 +2265,8 @@
     {
       "id": "prototype_build_m037",
       "section_id": "prototype_build",
-      "from": 12367,
-      "duration": 62,
+      "from": 14257,
+      "duration": 76,
       "narration": "a crystal structure that helps the sodium",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2279,8 +2279,8 @@
     {
       "id": "prototype_build_m038",
       "section_id": "prototype_build",
-      "from": 12428,
-      "duration": 121,
+      "from": 14333,
+      "duration": 140,
       "narration": "sulfate hydrate begin crystallizing. A commonly studied amount",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2295,8 +2295,8 @@
     {
       "id": "prototype_build_m039",
       "section_id": "prototype_build",
-      "from": 12548,
-      "duration": 102,
+      "from": 14473,
+      "duration": 148,
       "narration": "is about three percent by mass. Researchers solve separation",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2310,8 +2310,8 @@
     {
       "id": "prototype_build_m040",
       "section_id": "prototype_build",
-      "from": 12649,
-      "duration": 61,
+      "from": 14621,
+      "duration": 71,
       "narration": "with a thickener that keeps the phases",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2326,8 +2326,8 @@
     {
       "id": "prototype_build_m041",
       "section_id": "prototype_build",
-      "from": 12709,
-      "duration": 150,
+      "from": 14692,
+      "duration": 174,
       "narration": "from drifting apart. Studies have tested carboxymethyl cellulose,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2341,8 +2341,8 @@
     {
       "id": "prototype_build_m042",
       "section_id": "prototype_build",
-      "from": 12859,
-      "duration": 123,
+      "from": 14866,
+      "duration": 121,
       "narration": "xanthan gum, and sodium polyacrylate. One to two percent",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2357,8 +2357,8 @@
     {
       "id": "prototype_build_m043",
       "section_id": "prototype_build",
-      "from": 12982,
-      "duration": 88,
+      "from": 14987,
+      "duration": 97,
       "narration": "sodium polyacrylate has performed well, but the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2372,8 +2372,8 @@
     {
       "id": "prototype_build_m044",
       "section_id": "prototype_build",
-      "from": 13069,
-      "duration": 83,
+      "from": 15084,
+      "duration": 77,
       "narration": "grade and mixing method matter. Do not cut",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2388,8 +2388,8 @@
     {
       "id": "prototype_build_m045",
       "section_id": "prototype_build",
-      "from": 13152,
-      "duration": 112,
+      "from": 15161,
+      "duration": 114,
       "narration": "open a diaper for unknown absorbent or substitute wallpaper",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2403,8 +2403,8 @@
     {
       "id": "prototype_build_m046",
       "section_id": "prototype_build",
-      "from": 13263,
-      "duration": 93,
+      "from": 15275,
+      "duration": 100,
       "narration": "paste. Fillers and contamination change the result.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2419,8 +2419,8 @@
     {
       "id": "prototype_build_m047",
       "section_id": "prototype_build",
-      "from": 13356,
-      "duration": 113,
+      "from": 15375,
+      "duration": 114,
       "narration": "Without a labeled technical-grade thickener, make the plain-salt",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2434,8 +2434,8 @@
     {
       "id": "prototype_build_m048",
       "section_id": "prototype_build",
-      "from": 13468,
-      "duration": 105,
+      "from": 15489,
+      "duration": 116,
       "narration": "demonstration, expect degradation, and do not call it a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2450,8 +2450,8 @@
     {
       "id": "prototype_build_m049",
       "section_id": "prototype_build",
-      "from": 13572,
-      "duration": 80,
+      "from": 15605,
+      "duration": 90,
       "narration": "durable wearable. For a small experimental batch",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2465,8 +2465,8 @@
     {
       "id": "prototype_build_m050",
       "section_id": "prototype_build",
-      "from": 13651,
-      "duration": 88,
+      "from": 15695,
+      "duration": 95,
       "narration": "with measured materials, the percentages are based on",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2481,8 +2481,8 @@
     {
       "id": "prototype_build_m051",
       "section_id": "prototype_build",
-      "from": 13739,
-      "duration": 98,
+      "from": 15790,
+      "duration": 127,
       "narration": "the finished mixture. A five-hundred-gram batch using three percent",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2496,8 +2496,8 @@
     {
       "id": "prototype_build_m052",
       "section_id": "prototype_build",
-      "from": 13837,
-      "duration": 96,
+      "from": 15917,
+      "duration": 119,
       "narration": "borax contains fifteen grams of borax. If",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2512,8 +2512,8 @@
     {
       "id": "prototype_build_m053",
       "section_id": "prototype_build",
-      "from": 13932,
-      "duration": 105,
+      "from": 16036,
+      "duration": 115,
       "narration": "you also use one percent suitable sodium polyacrylate,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2527,8 +2527,8 @@
     {
       "id": "prototype_build_m054",
       "section_id": "prototype_build",
-      "from": 14037,
-      "duration": 91,
+      "from": 16151,
+      "duration": 89,
       "narration": "that is five grams. The remaining four hundred eighty",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2543,8 +2543,8 @@
     {
       "id": "prototype_build_m055",
       "section_id": "prototype_build",
-      "from": 14128,
-      "duration": 108,
+      "from": 16240,
+      "duration": 123,
       "narration": "grams is sodium sulfate decahydrate. This is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2557,8 +2557,8 @@
     {
       "id": "prototype_build_m056",
       "section_id": "prototype_build",
-      "from": 14235,
-      "duration": 94,
+      "from": 16363,
+      "duration": 114,
       "narration": "a prototype, not a universal formula. Some published",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2573,8 +2573,8 @@
     {
       "id": "prototype_build_m057",
       "section_id": "prototype_build",
-      "from": 14329,
-      "duration": 95,
+      "from": 16477,
+      "duration": 112,
       "narration": "recipes begin with anhydrous salt and water or use",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2588,8 +2588,8 @@
     {
       "id": "prototype_build_m058",
       "section_id": "prototype_build",
-      "from": 14424,
-      "duration": 71,
+      "from": 16589,
+      "duration": 80,
       "narration": "chlorides to lower the melting point. We",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2604,8 +2604,8 @@
     {
       "id": "prototype_build_m059",
       "section_id": "prototype_build",
-      "from": 14494,
-      "duration": 101,
+      "from": 16669,
+      "duration": 107,
       "narration": "avoid them because one wrong concentration changes the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2619,8 +2619,8 @@
     {
       "id": "prototype_build_m060",
       "section_id": "prototype_build",
-      "from": 14594,
-      "duration": 106,
+      "from": 16776,
+      "duration": 113,
       "narration": "transition temperature. Place the open inner container in a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2635,8 +2635,8 @@
     {
       "id": "prototype_build_m061",
       "section_id": "prototype_build",
-      "from": 14699,
-      "duration": 72,
+      "from": 16889,
+      "duration": 279,
       "narration": "warm-water bath. Keep flame and boiling water",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2650,8 +2650,8 @@
     {
       "id": "prototype_build_m062",
       "section_id": "prototype_build",
-      "from": 14771,
-      "duration": 101,
+      "from": 17168,
+      "duration": 11,
       "narration": "away. Thirty-five to forty Celsius is enough to",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2666,8 +2666,8 @@
     {
       "id": "prototype_build_m063",
       "section_id": "prototype_build",
-      "from": 14872,
-      "duration": 88,
+      "from": 17179,
+      "duration": 10,
       "narration": "soften and melt much of the salt. Stir slowly",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2681,8 +2681,8 @@
     {
       "id": "prototype_build_m064",
       "section_id": "prototype_build",
-      "from": 14959,
-      "duration": 80,
+      "from": 17189,
+      "duration": 66,
       "narration": "until the additives are dispersed. Do not",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2697,8 +2697,8 @@
     {
       "id": "prototype_build_m065",
       "section_id": "prototype_build",
-      "from": 15038,
-      "duration": 91,
+      "from": 17255,
+      "duration": 103,
       "narration": "inhale dust or splash. Seal only after the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2712,8 +2712,8 @@
     {
       "id": "prototype_build_m066",
       "section_id": "prototype_build",
-      "from": 15128,
-      "duration": 100,
+      "from": 17358,
+      "duration": 338,
       "narration": "mixture returns to a safe handling temperature, following the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2728,8 +2728,8 @@
     {
       "id": "prototype_build_m067",
       "section_id": "prototype_build",
-      "from": 15228,
-      "duration": 130,
+      "from": 17696,
+      "duration": 12,
       "narration": "pouch maker’s instructions. Then use two barriers.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2743,8 +2743,8 @@
     {
       "id": "prototype_build_m068",
       "section_id": "prototype_build",
-      "from": 15358,
-      "duration": 73,
+      "from": 17708,
+      "duration": 9,
       "narration": "The inner pouch contains the material. The outer",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2759,8 +2759,8 @@
     {
       "id": "prototype_build_m069",
       "section_id": "prototype_build",
-      "from": 15430,
-      "duration": 95,
+      "from": 17717,
+      "duration": 70,
       "narration": "pouch contains any leak from the first. A washable",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2774,8 +2774,8 @@
     {
       "id": "prototype_build_m070",
       "section_id": "prototype_build",
-      "from": 15525,
-      "duration": 82,
+      "from": 17787,
+      "duration": 103,
       "narration": "fabric sleeve protects both from abrasion. If",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2790,8 +2790,8 @@
     {
       "id": "prototype_build_m071",
       "section_id": "prototype_build",
-      "from": 15606,
-      "duration": 22,
+      "from": 17890,
+      "duration": 24,
       "narration": "this is ever",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2805,8 +2805,8 @@
     {
       "id": "testing_m001",
       "section_id": "testing",
-      "from": 15627,
-      "duration": 60,
+      "from": 17914,
+      "duration": 75,
       "narration": "placed near a person, the fabric sleeve",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -2820,8 +2820,8 @@
     {
       "id": "testing_m002",
       "section_id": "testing",
-      "from": 15686,
-      "duration": 97,
+      "from": 17989,
+      "duration": 114,
       "narration": "also prevents direct skin contact and spreads pressure",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2836,8 +2836,8 @@
     {
       "id": "testing_m003",
       "section_id": "testing",
-      "from": 15783,
-      "duration": 99,
+      "from": 18103,
+      "duration": 119,
       "narration": "from the seams. Write the contents, total mass, and",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2851,8 +2851,8 @@
     {
       "id": "testing_m004",
       "section_id": "testing",
-      "from": 15881,
-      "duration": 62,
+      "from": 18222,
+      "duration": 59,
       "narration": "date on the outer sleeve. Add the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2867,8 +2867,8 @@
     {
       "id": "testing_m005",
       "section_id": "testing",
-      "from": 15943,
-      "duration": 88,
+      "from": 18281,
+      "duration": 116,
       "narration": "words, “Not food. Do not open.” Before you",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2882,8 +2882,8 @@
     {
       "id": "testing_m006",
       "section_id": "testing",
-      "from": 16031,
-      "duration": 99,
+      "from": 18397,
+      "duration": 75,
       "narration": "trust the pack near clothing, weigh it to the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2898,8 +2898,8 @@
     {
       "id": "testing_m007",
       "section_id": "testing",
-      "from": 16130,
-      "duration": 63,
+      "from": 18472,
+      "duration": 76,
       "narration": "nearest gram. Put it on absorbent paper",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2913,8 +2913,8 @@
     {
       "id": "testing_m008",
       "section_id": "testing",
-      "from": 16193,
-      "duration": 81,
+      "from": 18548,
+      "duration": 101,
       "narration": "inside a tray for twenty-four hours. Flex it.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2929,8 +2929,8 @@
     {
       "id": "testing_m009",
       "section_id": "testing",
-      "from": 16274,
-      "duration": 85,
+      "from": 18649,
+      "duration": 119,
       "narration": "Press every seam. Weigh it again. Any mass loss,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2944,8 +2944,8 @@
     {
       "id": "testing_m010",
       "section_id": "testing",
-      "from": 16367,
-      "duration": 85,
+      "from": 18768,
+      "duration": 98,
       "narration": "dampness, crystal trail, swelling, or seam change",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2960,8 +2960,8 @@
     {
       "id": "testing_m011",
       "section_id": "testing",
-      "from": 16451,
-      "duration": 82,
+      "from": 18866,
+      "duration": 98,
       "narration": "means failure. Now perform the demonstration that should",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2975,8 +2975,8 @@
     {
       "id": "testing_m012",
       "section_id": "testing",
-      "from": 16533,
-      "duration": 74,
+      "from": 18964,
+      "duration": 92,
       "narration": "be in every honest P C M video. Prepare",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -2991,8 +2991,8 @@
     {
       "id": "testing_m013",
       "section_id": "testing",
-      "from": 16607,
-      "duration": 90,
+      "from": 19056,
+      "duration": 103,
       "narration": "two identical insulated boxes. Put the same",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3006,8 +3006,8 @@
     {
       "id": "testing_m014",
       "section_id": "testing",
-      "from": 16696,
-      "duration": 74,
+      "from": 19159,
+      "duration": 263,
       "narration": "sealed bottle of warm water in each one,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3022,8 +3022,8 @@
     {
       "id": "testing_m015",
       "section_id": "testing",
-      "from": 16770,
-      "duration": 92,
+      "from": 19422,
+      "duration": 7,
       "narration": "perhaps at thirty-eight Celsius. Place the solid P C",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3037,8 +3037,8 @@
     {
       "id": "testing_m016",
       "section_id": "testing",
-      "from": 16862,
-      "duration": 79,
+      "from": 19429,
+      "duration": 13,
       "narration": "M pack beside the bottle in one",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3053,8 +3053,8 @@
     {
       "id": "testing_m017",
       "section_id": "testing",
-      "from": 16941,
-      "duration": 89,
+      "from": 19442,
+      "duration": 33,
       "narration": "box. Put an equal-size inert object in the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3068,7 +3068,7 @@
     {
       "id": "testing_m018",
       "section_id": "testing",
-      "from": 17029,
+      "from": 19475,
       "duration": 118,
       "narration": "other. Put one temperature probe beside each bottle. Close",
       "transition": "motivated cut on narration phrase boundary",
@@ -3084,8 +3084,8 @@
     {
       "id": "testing_m019",
       "section_id": "testing",
-      "from": 17146,
-      "duration": 98,
+      "from": 19593,
+      "duration": 327,
       "narration": "both boxes. Record the temperature every five",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3098,8 +3098,8 @@
     {
       "id": "testing_m020",
       "section_id": "testing",
-      "from": 17244,
-      "duration": 90,
+      "from": 19920,
+      "duration": 8,
       "narration": "minutes. The P C M box should warm",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3114,8 +3114,8 @@
     {
       "id": "testing_m021",
       "section_id": "testing",
-      "from": 17334,
-      "duration": 104,
+      "from": 19928,
+      "duration": 5,
       "narration": "more slowly near the transition region. Do not expect",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3129,8 +3129,8 @@
     {
       "id": "testing_m022",
       "section_id": "testing",
-      "from": 17437,
-      "duration": 76,
+      "from": 19933,
+      "duration": 9,
       "narration": "a magical plunge. Look for a shoulder",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3145,8 +3145,8 @@
     {
       "id": "testing_m023",
       "section_id": "testing",
-      "from": 17512,
-      "duration": 88,
+      "from": 19942,
+      "duration": 327,
       "narration": "in the curve. The control keeps climbing. The",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3160,8 +3160,8 @@
     {
       "id": "testing_m024",
       "section_id": "testing",
-      "from": 17600,
-      "duration": 80,
+      "from": 20269,
+      "duration": 9,
       "narration": "P C M box lingers. After the test, the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3176,8 +3176,8 @@
     {
       "id": "testing_m025",
       "section_id": "testing",
-      "from": 17680,
-      "duration": 60,
+      "from": 20278,
+      "duration": 6,
       "narration": "pack should be partly or fully liquid.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3191,8 +3191,8 @@
     {
       "id": "testing_m026",
       "section_id": "testing",
-      "from": 17752,
-      "duration": 69,
+      "from": 20284,
+      "duration": 247,
       "narration": "That is your fuel gauge. Cool it well",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3207,8 +3207,8 @@
     {
       "id": "testing_m027",
       "section_id": "testing",
-      "from": 17821,
-      "duration": 108,
+      "from": 20531,
+      "duration": 15,
       "narration": "below thirty-two Celsius until solid. A room at thirty-one",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3222,8 +3222,8 @@
     {
       "id": "testing_m028",
       "section_id": "testing",
-      "from": 17929,
-      "duration": 67,
+      "from": 20546,
+      "duration": 189,
       "narration": "is too slow. A cellar around twenty",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3238,8 +3238,8 @@
     {
       "id": "testing_m029",
       "section_id": "testing",
-      "from": 17996,
-      "duration": 89,
+      "from": 20735,
+      "duration": 10,
       "narration": "to twenty-five is better. A refrigerator is faster.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3253,8 +3253,8 @@
     {
       "id": "testing_m030",
       "section_id": "testing",
-      "from": 18085,
-      "duration": 86,
+      "from": 20745,
+      "duration": 6,
       "narration": "Cycle the prototype at least ten times before depending",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3269,8 +3269,8 @@
     {
       "id": "testing_m031",
       "section_id": "testing",
-      "from": 18170,
-      "duration": 65,
+      "from": 20751,
+      "duration": 11,
       "narration": "on it for comfort. Inspect and weigh",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3284,8 +3284,8 @@
     {
       "id": "testing_m032",
       "section_id": "testing",
-      "from": 18234,
-      "duration": 74,
+      "from": 20762,
+      "duration": 70,
       "narration": "it after every cycle. If it develops a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3300,8 +3300,8 @@
     {
       "id": "testing_m033",
       "section_id": "testing",
-      "from": 18307,
-      "duration": 91,
+      "from": 20832,
+      "duration": 112,
       "narration": "hard layer, stays liquid after deep cooling, or loses",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3315,8 +3315,8 @@
     {
       "id": "testing_m034",
       "section_id": "testing",
-      "from": 18397,
-      "duration": 131,
+      "from": 20944,
+      "duration": 122,
       "narration": "its temperature plateau, phase separation or supercooling",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3331,8 +3331,8 @@
     {
       "id": "testing_m035",
       "section_id": "testing",
-      "from": 18527,
-      "duration": 78,
+      "from": 21066,
+      "duration": 400,
       "narration": "is defeating you. This is why a commercial",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3346,8 +3346,8 @@
     {
       "id": "testing_m036",
       "section_id": "testing",
-      "from": 18605,
-      "duration": 95,
+      "from": 21466,
+      "duration": 28,
       "narration": "P C M insert costs more than raw salt.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3362,8 +3362,8 @@
     {
       "id": "testing_m037",
       "section_id": "testing",
-      "from": 18700,
-      "duration": 118,
+      "from": 21494,
+      "duration": 6,
       "narration": "Reliable encapsulation, cycling tests, leak resistance, and",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3376,8 +3376,8 @@
     {
       "id": "testing_m038",
       "section_id": "testing",
-      "from": 18817,
-      "duration": 77,
+      "from": 21500,
+      "duration": 11,
       "narration": "a verified transition temperature are the real product.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3392,8 +3392,8 @@
     {
       "id": "testing_m039",
       "section_id": "testing",
-      "from": 18900,
-      "duration": 75,
+      "from": 21511,
+      "duration": 57,
       "narration": "Now suppose your test packs work. Where do they",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3407,8 +3407,8 @@
     {
       "id": "testing_m040",
       "section_id": "testing",
-      "from": 18974,
-      "duration": 69,
+      "from": 21568,
+      "duration": 79,
       "narration": "help most? The smartest first use is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3423,8 +3423,8 @@
     {
       "id": "testing_m041",
       "section_id": "testing",
-      "from": 19042,
-      "duration": 57,
+      "from": 21647,
+      "duration": 72,
       "narration": "not wearing them all day under the sun.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3438,8 +3438,8 @@
     {
       "id": "testing_m042",
       "section_id": "testing",
-      "from": 19105,
-      "duration": 103,
+      "from": 21719,
+      "duration": 109,
       "narration": "It is building a shaded recovery station. Make several",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3454,8 +3454,8 @@
     {
       "id": "testing_m043",
       "section_id": "testing",
-      "from": 19207,
-      "duration": 65,
+      "from": 21828,
+      "duration": 98,
       "narration": "flat packs rather than one giant brick.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3469,8 +3469,8 @@
     {
       "id": "testing_m044",
       "section_id": "testing",
-      "from": 19271,
-      "duration": 101,
+      "from": 21926,
+      "duration": 110,
       "narration": "More surface area means faster heat transfer. Store",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3485,8 +3485,8 @@
     {
       "id": "testing_m045",
       "section_id": "testing",
-      "from": 19371,
-      "duration": 101,
+      "from": 22036,
+      "duration": 94,
       "narration": "them in an insulated chest in the coolest available",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3500,8 +3500,8 @@
     {
       "id": "testing_m046",
       "section_id": "testing",
-      "from": 19471,
-      "duration": 81,
+      "from": 22130,
+      "duration": 104,
       "narration": "place. During a scheduled break, place them",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3516,8 +3516,8 @@
     {
       "id": "testing_m047",
       "section_id": "testing",
-      "from": 19551,
-      "duration": 77,
+      "from": 22234,
+      "duration": 83,
       "narration": "in a ventilated seat back, over a towel",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3531,8 +3531,8 @@
     {
       "id": "testing_m048",
       "section_id": "testing",
-      "from": 19627,
-      "duration": 85,
+      "from": 22317,
+      "duration": 79,
       "narration": "on the upper chest, or in a loose recovery",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3547,8 +3547,8 @@
     {
       "id": "testing_m049",
       "section_id": "testing",
-      "from": 19711,
-      "duration": 74,
+      "from": 22396,
+      "duration": 71,
       "narration": "vest. Keep them out of direct sun.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3562,8 +3562,8 @@
     {
       "id": "testing_m050",
       "section_id": "testing",
-      "from": 19796,
-      "duration": 104,
+      "from": 22467,
+      "duration": 101,
       "narration": "Exchange melted packs for solid ones. Now the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3578,8 +3578,8 @@
     {
       "id": "testing_m051",
       "section_id": "testing",
-      "from": 19899,
-      "duration": 137,
+      "from": 22568,
+      "duration": 149,
       "narration": "worker produces less metabolic heat. Shade removes solar load.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3593,8 +3593,8 @@
     {
       "id": "testing_m052",
       "section_id": "testing",
-      "from": 20044,
-      "duration": 102,
+      "from": 22717,
+      "duration": 77,
       "narration": "Air movement lets sweat evaporate. The P",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3609,8 +3609,8 @@
     {
       "id": "testing_m053",
       "section_id": "testing",
-      "from": 20110,
-      "duration": 109,
+      "from": 22794,
+      "duration": 101,
       "narration": "C M absorbs some remaining heat. Cool water",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3624,8 +3624,8 @@
     {
       "id": "testing_m054",
       "section_id": "testing",
-      "from": 20218,
-      "duration": 100,
+      "from": 22895,
+      "duration": 96,
       "narration": "supports hydration. The pack is one layer in the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3640,8 +3640,8 @@
     {
       "id": "testing_m055",
       "section_id": "testing",
-      "from": 20317,
-      "duration": 86,
+      "from": 22991,
+      "duration": 95,
       "narration": "plan. The break is the foundation. OSHA’s",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3654,8 +3654,8 @@
     {
       "id": "testing_m056",
       "section_id": "testing",
-      "from": 20394,
-      "duration": 83,
+      "from": 23086,
+      "duration": 105,
       "narration": "message is shorter than any chemistry lesson: water,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3670,8 +3670,8 @@
     {
       "id": "testing_m057",
       "section_id": "testing",
-      "from": 20483,
-      "duration": 102,
+      "from": 23191,
+      "duration": 135,
       "narration": "rest, shade. Drink regularly, not only when thirst arrives.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3685,8 +3685,8 @@
     {
       "id": "testing_m058",
       "section_id": "testing",
-      "from": 20591,
-      "duration": 63,
+      "from": 23326,
+      "duration": 88,
       "narration": "Work beyond two hours may also require",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3701,8 +3701,8 @@
     {
       "id": "testing_m059",
       "section_id": "testing",
-      "from": 20653,
-      "duration": 103,
+      "from": 23414,
+      "duration": 396,
       "narration": "electrolyte-containing fluids. Do not solve that by swallowing",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3716,8 +3716,8 @@
     {
       "id": "testing_m060",
       "section_id": "testing",
-      "from": 20756,
-      "duration": 60,
+      "from": 23810,
+      "duration": 5,
       "narration": "the P C M salt. The contents of the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3732,8 +3732,8 @@
     {
       "id": "testing_m061",
       "section_id": "testing",
-      "from": 20816,
-      "duration": 103,
+      "from": 23815,
+      "duration": 144,
       "narration": "pack are never a drink. Acclimatization matters",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3747,8 +3747,8 @@
     {
       "id": "testing_m062",
       "section_id": "testing",
-      "from": 20919,
-      "duration": 17,
+      "from": 23959,
+      "duration": 6,
       "narration": "just",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3763,8 +3763,8 @@
     {
       "id": "safe_use_m001",
       "section_id": "safe_use",
-      "from": 20935,
-      "duration": 73,
+      "from": 23965,
+      "duration": 6,
       "narration": "as much. NIOSH recommends that a new",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -3778,8 +3778,8 @@
     {
       "id": "safe_use_m002",
       "section_id": "safe_use",
-      "from": 21007,
-      "duration": 76,
+      "from": 23971,
+      "duration": 8,
       "narration": "worker begin with no more than about twenty",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3794,8 +3794,8 @@
     {
       "id": "safe_use_m003",
       "section_id": "safe_use",
-      "from": 21082,
-      "duration": 69,
+      "from": 23979,
+      "duration": 17,
       "narration": "percent of the normal heat exposure on the first",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3809,8 +3809,8 @@
     {
       "id": "safe_use_m004",
       "section_id": "safe_use",
-      "from": 21150,
-      "duration": 71,
+      "from": 23996,
+      "duration": 54,
       "narration": "day, then increase by no more than",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3825,8 +3825,8 @@
     {
       "id": "safe_use_m005",
       "section_id": "safe_use",
-      "from": 21220,
-      "duration": 72,
+      "from": 24050,
+      "duration": 111,
       "narration": "twenty percent on each additional day. A strong",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3840,8 +3840,8 @@
     {
       "id": "safe_use_m006",
       "section_id": "safe_use",
-      "from": 21291,
-      "duration": 119,
+      "from": 24161,
+      "duration": 144,
       "narration": "person is not automatically heat-acclimatized. The first days of",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3856,8 +3856,8 @@
     {
       "id": "safe_use_m007",
       "section_id": "safe_use",
-      "from": 21409,
-      "duration": 55,
+      "from": 24305,
+      "duration": 60,
       "narration": "a heat wave, a new job, or",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3871,8 +3871,8 @@
     {
       "id": "safe_use_m008",
       "section_id": "safe_use",
-      "from": 21463,
-      "duration": 69,
+      "from": 24365,
+      "duration": 71,
       "narration": "a return after time away are the days",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3887,8 +3887,8 @@
     {
       "id": "safe_use_m009",
       "section_id": "safe_use",
-      "from": 21531,
-      "duration": 103,
+      "from": 24436,
+      "duration": 107,
       "narration": "that punish confidence. The next useful design is a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3902,8 +3902,8 @@
     {
       "id": "safe_use_m010",
       "section_id": "safe_use",
-      "from": 21633,
-      "duration": 93,
+      "from": 24543,
+      "duration": 115,
       "narration": "recovery vest with removable pockets. Distribute small",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3918,8 +3918,8 @@
     {
       "id": "safe_use_m011",
       "section_id": "safe_use",
-      "from": 21725,
-      "duration": 79,
+      "from": 24658,
+      "duration": 87,
       "narration": "packs across the torso instead of hanging one",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3933,8 +3933,8 @@
     {
       "id": "safe_use_m012",
       "section_id": "safe_use",
-      "from": 21803,
-      "duration": 71,
+      "from": 24745,
+      "duration": 83,
       "narration": "heavy pouch from the neck. Keep the garment loose",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3949,8 +3949,8 @@
     {
       "id": "safe_use_m013",
       "section_id": "safe_use",
-      "from": 21873,
-      "duration": 71,
+      "from": 24828,
+      "duration": 89,
       "narration": "and the armpits free. Never constrict the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3964,8 +3964,8 @@
     {
       "id": "safe_use_m014",
       "section_id": "safe_use",
-      "from": 21943,
-      "duration": 80,
+      "from": 24917,
+      "duration": 105,
       "narration": "neck or cover the torso in impermeable plastic.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3980,8 +3980,8 @@
     {
       "id": "safe_use_m015",
       "section_id": "safe_use",
-      "from": 22027,
-      "duration": 111,
+      "from": 25022,
+      "duration": 163,
       "narration": "Blocking sweat evaporation creates another problem. A practical prototype",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -3995,8 +3995,8 @@
     {
       "id": "safe_use_m016",
       "section_id": "safe_use",
-      "from": 22138,
-      "duration": 48,
+      "from": 25185,
+      "duration": 59,
       "narration": "might carry six packs of two hundred",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4011,8 +4011,8 @@
     {
       "id": "safe_use_m017",
       "section_id": "safe_use",
-      "from": 22186,
-      "duration": 77,
+      "from": 25244,
+      "duration": 404,
       "narration": "fifty grams each. That is one and a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4026,8 +4026,8 @@
     {
       "id": "safe_use_m018",
       "section_id": "safe_use",
-      "from": 22263,
-      "duration": 123,
+      "from": 25648,
+      "duration": 117,
       "narration": "half kilograms of P C M, with a theoretical",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4042,8 +4042,8 @@
     {
       "id": "safe_use_m019",
       "section_id": "safe_use",
-      "from": 22386,
-      "duration": 109,
+      "from": 25765,
+      "duration": 10,
       "narration": "latent capacity near three hundred seventy-five kilojoules.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4056,8 +4056,8 @@
     {
       "id": "safe_use_m020",
       "section_id": "safe_use",
-      "from": 22495,
-      "duration": 65,
+      "from": 25775,
+      "duration": 11,
       "narration": "That is not the amount removed from the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4072,8 +4072,8 @@
     {
       "id": "safe_use_m021",
       "section_id": "safe_use",
-      "from": 22560,
-      "duration": 104,
+      "from": 25786,
+      "duration": 20,
       "narration": "body. It is ideal material capacity. But now you",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4087,8 +4087,8 @@
     {
       "id": "safe_use_m022",
       "section_id": "safe_use",
-      "from": 22663,
-      "duration": 91,
+      "from": 25806,
+      "duration": 51,
       "narration": "can compare designs. Double the active mass",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4103,8 +4103,8 @@
     {
       "id": "safe_use_m023",
       "section_id": "safe_use",
-      "from": 22753,
-      "duration": 101,
+      "from": 25857,
+      "duration": 116,
       "narration": "and you roughly double capacity. Thinner packs transfer",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4118,8 +4118,8 @@
     {
       "id": "safe_use_m024",
       "section_id": "safe_use",
-      "from": 22854,
-      "duration": 122,
+      "from": 25973,
+      "duration": 132,
       "narration": "heat faster. Too much insulation slows cooling. Full sun",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4134,7 +4134,7 @@
     {
       "id": "safe_use_m025",
       "section_id": "safe_use",
-      "from": 22975,
+      "from": 26105,
       "duration": 91,
       "narration": "wastes capacity on solar heat. Use the",
       "transition": "motivated cut on narration phrase boundary",
@@ -4149,8 +4149,8 @@
     {
       "id": "safe_use_m026",
       "section_id": "safe_use",
-      "from": 23065,
-      "duration": 85,
+      "from": 26196,
+      "duration": 94,
       "narration": "vest during planned recovery, not as permission to",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4165,8 +4165,8 @@
     {
       "id": "safe_use_m027",
       "section_id": "safe_use",
-      "from": 23149,
-      "duration": 94,
+      "from": 26290,
+      "duration": 114,
       "narration": "extend a dangerous work period. People with reduced skin",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4180,8 +4180,8 @@
     {
       "id": "safe_use_m028",
       "section_id": "safe_use",
-      "from": 23242,
-      "duration": 101,
+      "from": 26404,
+      "duration": 106,
       "narration": "sensation, poor circulation, certain heart or kidney",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4196,7 +4196,7 @@
     {
       "id": "safe_use_m029",
       "section_id": "safe_use",
-      "from": 23342,
+      "from": 26510,
       "duration": 148,
       "narration": "conditions, or heat-sensitive medications need medical advice. Never",
       "transition": "motivated cut on narration phrase boundary",
@@ -4211,8 +4211,8 @@
     {
       "id": "safe_use_m030",
       "section_id": "safe_use",
-      "from": 23490,
-      "duration": 150,
+      "from": 26658,
+      "duration": 151,
       "narration": "cool broken skin. Stop for pain, numbness, unusual color,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4227,8 +4227,8 @@
     {
       "id": "safe_use_m031",
       "section_id": "safe_use",
-      "from": 23653,
-      "duration": 81,
+      "from": 26809,
+      "duration": 82,
       "narration": "shivering, or discomfort. There is also a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4242,8 +4242,8 @@
     {
       "id": "safe_use_m032",
       "section_id": "safe_use",
-      "from": 23733,
-      "duration": 100,
+      "from": 26891,
+      "duration": 102,
       "narration": "better temperature question. If you want strong personal",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4258,8 +4258,8 @@
     {
       "id": "safe_use_m033",
       "section_id": "safe_use",
-      "from": 23832,
-      "duration": 99,
+      "from": 26993,
+      "duration": 449,
       "narration": "cooling, a professionally made insert that changes phase around",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4273,8 +4273,8 @@
     {
       "id": "safe_use_m034",
       "section_id": "safe_use",
-      "from": 23931,
-      "duration": 70,
+      "from": 27442,
+      "duration": 117,
       "narration": "twenty to twenty-eight Celsius may outperform plain",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4289,8 +4289,8 @@
     {
       "id": "safe_use_m035",
       "section_id": "safe_use",
-      "from": 24001,
-      "duration": 88,
+      "from": 27559,
+      "duration": 8,
       "narration": "Glauber’s salt at thirty-two point four. The lower",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4304,8 +4304,8 @@
     {
       "id": "safe_use_m036",
       "section_id": "safe_use",
-      "from": 24089,
-      "duration": 102,
+      "from": 27567,
+      "duration": 251,
       "narration": "transition temperature creates a larger gradient from warm skin.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4320,8 +4320,8 @@
     {
       "id": "safe_use_m037",
       "section_id": "safe_use",
-      "from": 24191,
-      "duration": 56,
+      "from": 27818,
+      "duration": 12,
       "narration": "Human studies of P C M vests",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4334,8 +4334,8 @@
     {
       "id": "safe_use_m038",
       "section_id": "safe_use",
-      "from": 24247,
-      "duration": 91,
+      "from": 27830,
+      "duration": 26,
       "narration": "have found improvements in skin temperature, thermal sensation,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4350,8 +4350,8 @@
     {
       "id": "safe_use_m039",
       "section_id": "safe_use",
-      "from": 24344,
-      "duration": 84,
+      "from": 27856,
+      "duration": 27,
       "narration": "or heat strain in some conditions. Results are not",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4365,8 +4365,8 @@
     {
       "id": "safe_use_m040",
       "section_id": "safe_use",
-      "from": 24427,
-      "duration": 114,
+      "from": 27883,
+      "duration": 9,
       "narration": "universal. Some studies find physiological benefit. Others",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4381,8 +4381,8 @@
     {
       "id": "safe_use_m041",
       "section_id": "safe_use",
-      "from": 24540,
-      "duration": 119,
+      "from": 27892,
+      "duration": 152,
       "narration": "find comfort without a meaningful core-temperature reduction. Coverage,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4396,8 +4396,8 @@
     {
       "id": "safe_use_m042",
       "section_id": "safe_use",
-      "from": 24663,
-      "duration": 106,
+      "from": 28044,
+      "duration": 126,
       "narration": "pack temperature, work, humidity, and air movement matter. That",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4412,8 +4412,8 @@
     {
       "id": "safe_use_m043",
       "section_id": "safe_use",
-      "from": 24768,
-      "duration": 61,
+      "from": 28170,
+      "duration": 77,
       "narration": "is why the honest claim is “can",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4427,8 +4427,8 @@
     {
       "id": "safe_use_m044",
       "section_id": "safe_use",
-      "from": 24829,
-      "duration": 152,
+      "from": 28247,
+      "duration": 125,
       "narration": "reduce heat load,” not “prevents heatstroke.” Hard labor",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4443,8 +4443,8 @@
     {
       "id": "safe_use_m045",
       "section_id": "safe_use",
-      "from": 24981,
-      "duration": 99,
+      "from": 28372,
+      "duration": 113,
       "narration": "can generate several hundred watts of metabolic heat. A",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4458,8 +4458,8 @@
     {
       "id": "safe_use_m046",
       "section_id": "safe_use",
-      "from": 25080,
-      "duration": 65,
+      "from": 28485,
+      "duration": 86,
       "narration": "passive vest has a finite battery. When",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4474,8 +4474,8 @@
     {
       "id": "safe_use_m047",
       "section_id": "safe_use",
-      "from": 25144,
-      "duration": 71,
+      "from": 28571,
+      "duration": 90,
       "narration": "the environment is hotter than the pack, outside",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4489,8 +4489,8 @@
     {
       "id": "safe_use_m048",
       "section_id": "safe_use",
-      "from": 25215,
-      "duration": 72,
+      "from": 28661,
+      "duration": 96,
       "narration": "heat spends that battery too. And now we reach",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4505,8 +4505,8 @@
     {
       "id": "safe_use_m049",
       "section_id": "safe_use",
-      "from": 25287,
-      "duration": 59,
+      "from": 28757,
+      "duration": 78,
       "narration": "the error I promised at the beginning.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4520,8 +4520,8 @@
     {
       "id": "safe_use_m050",
       "section_id": "safe_use",
-      "from": 25355,
-      "duration": 76,
+      "from": 28835,
+      "duration": 89,
       "narration": "The worst mistake is leaving a fully melted",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4536,8 +4536,8 @@
     {
       "id": "safe_use_m051",
       "section_id": "safe_use",
-      "from": 25430,
-      "duration": 85,
+      "from": 28924,
+      "duration": 97,
       "narration": "pack on your body because it still feels like",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4551,8 +4551,8 @@
     {
       "id": "safe_use_m052",
       "section_id": "safe_use",
-      "from": 25514,
-      "duration": 73,
+      "from": 29021,
+      "duration": 98,
       "narration": "protective equipment. Once the phase change is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4567,8 +4567,8 @@
     {
       "id": "safe_use_m053",
       "section_id": "safe_use",
-      "from": 25587,
-      "duration": 96,
+      "from": 29119,
+      "duration": 112,
       "narration": "finished, the large reservoir of latent capacity is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4582,8 +4582,8 @@
     {
       "id": "safe_use_m054",
       "section_id": "safe_use",
-      "from": 25683,
-      "duration": 95,
+      "from": 29231,
+      "duration": 109,
       "narration": "gone. The pack is warm liquid. Its pouch may",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4598,8 +4598,8 @@
     {
       "id": "safe_use_m055",
       "section_id": "safe_use",
-      "from": 25777,
-      "duration": 84,
+      "from": 29340,
+      "duration": 112,
       "narration": "block air, reduce sweat evaporation, add weight,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4612,8 +4612,8 @@
     {
       "id": "safe_use_m056",
       "section_id": "safe_use",
-      "from": 25867,
-      "duration": 77,
+      "from": 29452,
+      "duration": 93,
       "narration": "and absorb sunlight. What began as cooling can",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4628,8 +4628,8 @@
     {
       "id": "safe_use_m057",
       "section_id": "safe_use",
-      "from": 25943,
-      "duration": 82,
+      "from": 29545,
+      "duration": 125,
       "narration": "become insulation. The fuel gauge is not the clock.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4643,8 +4643,8 @@
     {
       "id": "safe_use_m058",
       "section_id": "safe_use",
-      "from": 26032,
-      "duration": 44,
+      "from": 29670,
+      "duration": 64,
       "narration": "It is the state of the material.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4659,8 +4659,8 @@
     {
       "id": "safe_use_m059",
       "section_id": "safe_use",
-      "from": 26075,
-      "duration": 74,
+      "from": 29734,
+      "duration": 67,
       "narration": "If the pack is no longer partly solid,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4674,8 +4674,8 @@
     {
       "id": "safe_use_m060",
       "section_id": "safe_use",
-      "from": 26154,
-      "duration": 79,
+      "from": 29801,
+      "duration": 82,
       "narration": "remove it. Replace it with a charged pack or",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4690,8 +4690,8 @@
     {
       "id": "safe_use_m061",
       "section_id": "safe_use",
-      "from": 26232,
-      "duration": 65,
+      "from": 29883,
+      "duration": 72,
       "narration": "end the exposure. Never use a promised",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4705,8 +4705,8 @@
     {
       "id": "limits_emergency_m001",
       "section_id": "limits_emergency",
-      "from": 26296,
-      "duration": 55,
+      "from": 29955,
+      "duration": 77,
       "narration": "number of hours as your only guide.",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -4720,8 +4720,8 @@
     {
       "id": "limits_emergency_m002",
       "section_id": "limits_emergency",
-      "from": 26357,
-      "duration": 87,
+      "from": 30032,
+      "duration": 92,
       "narration": "The second mistake is recharging by feel. A",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4736,8 +4736,8 @@
     {
       "id": "limits_emergency_m003",
       "section_id": "limits_emergency",
-      "from": 26443,
-      "duration": 82,
+      "from": 30124,
+      "duration": 95,
       "narration": "pack can feel cool outside while liquid remains in",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4751,8 +4751,8 @@
     {
       "id": "limits_emergency_m004",
       "section_id": "limits_emergency",
-      "from": 26524,
-      "duration": 56,
+      "from": 30219,
+      "duration": 61,
       "narration": "the center. Give it enough time below",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4767,8 +4767,8 @@
     {
       "id": "limits_emergency_m005",
       "section_id": "limits_emergency",
-      "from": 26579,
-      "duration": 111,
+      "from": 30280,
+      "duration": 141,
       "narration": "the transition temperature to solidify throughout. If your",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4782,8 +4782,8 @@
     {
       "id": "limits_emergency_m006",
       "section_id": "limits_emergency",
-      "from": 26704,
-      "duration": 82,
+      "from": 30421,
+      "duration": 90,
       "narration": "formulation supercools, a liquid pack may be colder than",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4798,8 +4798,8 @@
     {
       "id": "limits_emergency_m007",
       "section_id": "limits_emergency",
-      "from": 26785,
-      "duration": 75,
+      "from": 30511,
+      "duration": 95,
       "narration": "expected and still not be charged. The",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4813,8 +4813,8 @@
     {
       "id": "limits_emergency_m008",
       "section_id": "limits_emergency",
-      "from": 26859,
-      "duration": 98,
+      "from": 30606,
+      "duration": 101,
       "narration": "stored cooling capacity returns only when the material",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4829,8 +4829,8 @@
     {
       "id": "limits_emergency_m009",
       "section_id": "limits_emergency",
-      "from": 26956,
-      "duration": 111,
+      "from": 30707,
+      "duration": 125,
       "narration": "crystallizes. The third mistake is trapping sweat inside a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4844,8 +4844,8 @@
     {
       "id": "limits_emergency_m010",
       "section_id": "limits_emergency",
-      "from": 27066,
-      "duration": 69,
+      "from": 30832,
+      "duration": 96,
       "narration": "plastic vest. In dry moving air, wet",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4860,8 +4860,8 @@
     {
       "id": "limits_emergency_m011",
       "section_id": "limits_emergency",
-      "from": 27134,
-      "duration": 63,
+      "from": 30928,
+      "duration": 324,
       "narration": "cloth and a fan may beat a warm",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4875,8 +4875,8 @@
     {
       "id": "limits_emergency_m012",
       "section_id": "limits_emergency",
-      "from": 27197,
-      "duration": 101,
+      "from": 31252,
+      "duration": 6,
       "narration": "P C M pack. In humid still air, evaporation",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4891,8 +4891,8 @@
     {
       "id": "limits_emergency_m013",
       "section_id": "limits_emergency",
-      "from": 27298,
-      "duration": 161,
+      "from": 31258,
+      "duration": 29,
       "narration": "weakens and conductive cooling matters more. Match",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4906,8 +4906,8 @@
     {
       "id": "limits_emergency_m014",
       "section_id": "limits_emergency",
-      "from": 27459,
-      "duration": 25,
+      "from": 31287,
+      "duration": 28,
       "narration": "the system to the day. The fourth mistake",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4922,8 +4922,8 @@
     {
       "id": "limits_emergency_m015",
       "section_id": "limits_emergency",
-      "from": 27484,
-      "duration": 118,
+      "from": 31315,
+      "duration": 131,
       "narration": "is ignoring the person because the thermometer looks ordinary.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4937,8 +4937,8 @@
     {
       "id": "limits_emergency_m016",
       "section_id": "limits_emergency",
-      "from": 27601,
-      "duration": 121,
+      "from": 31446,
+      "duration": 166,
       "narration": "Air temperature, humidity, sun, wind, clothing, workload,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4953,8 +4953,8 @@
     {
       "id": "limits_emergency_m017",
       "section_id": "limits_emergency",
-      "from": 27736,
-      "duration": 140,
+      "from": 31612,
+      "duration": 138,
       "narration": "medications, age, and acclimatization all change risk. A",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4968,7 +4968,7 @@
     {
       "id": "limits_emergency_m018",
       "section_id": "limits_emergency",
-      "from": 27875,
+      "from": 31750,
       "duration": 114,
       "narration": "shaded thermometer misses radiant heat on a worker in",
       "transition": "motivated cut on narration phrase boundary",
@@ -4984,8 +4984,8 @@
     {
       "id": "limits_emergency_m019",
       "section_id": "limits_emergency",
-      "from": 27994,
-      "duration": 106,
+      "from": 31864,
+      "duration": 123,
       "narration": "full sun. Workplaces use wet-bulb globe temperature",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -4998,8 +4998,8 @@
     {
       "id": "limits_emergency_m020",
       "section_id": "limits_emergency",
-      "from": 28099,
-      "duration": 80,
+      "from": 31987,
+      "duration": 98,
       "narration": "because it captures more of that stress. Watch",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5014,8 +5014,8 @@
     {
       "id": "limits_emergency_m021",
       "section_id": "limits_emergency",
-      "from": 28179,
-      "duration": 139,
+      "from": 32085,
+      "duration": 191,
       "narration": "people, not just numbers. Heavy sweating, weakness, headache, dizziness,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5029,8 +5029,8 @@
     {
       "id": "limits_emergency_m022",
       "section_id": "limits_emergency",
-      "from": 28325,
-      "duration": 106,
+      "from": 32276,
+      "duration": 109,
       "narration": "nausea, irritability, thirst, and a fast heartbeat",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5045,8 +5045,8 @@
     {
       "id": "limits_emergency_m023",
       "section_id": "limits_emergency",
-      "from": 28430,
-      "duration": 112,
+      "from": 32385,
+      "duration": 114,
       "narration": "can signal heat exhaustion. Stop work. Move to",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5060,8 +5060,8 @@
     {
       "id": "limits_emergency_m024",
       "section_id": "limits_emergency",
-      "from": 28541,
-      "duration": 105,
+      "from": 32499,
+      "duration": 122,
       "narration": "a cool place. Loosen clothing. Use wet cloths, cold",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5076,8 +5076,8 @@
     {
       "id": "limits_emergency_m025",
       "section_id": "limits_emergency",
-      "from": 28645,
-      "duration": 85,
+      "from": 32621,
+      "duration": 106,
       "narration": "water, air movement, and appropriate cold packs.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5091,8 +5091,8 @@
     {
       "id": "limits_emergency_m026",
       "section_id": "limits_emergency",
-      "from": 28753,
-      "duration": 50,
+      "from": 32727,
+      "duration": 71,
       "narration": "Do not send that person back because ten",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5107,8 +5107,8 @@
     {
       "id": "limits_emergency_m027",
       "section_id": "limits_emergency",
-      "from": 28803,
-      "duration": 156,
+      "from": 32798,
+      "duration": 146,
       "narration": "minutes in shade quieted the headache. Confusion changes everything.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5122,8 +5122,8 @@
     {
       "id": "limits_emergency_m028",
       "section_id": "limits_emergency",
-      "from": 28968,
-      "duration": 105,
+      "from": 32944,
+      "duration": 130,
       "narration": "Confusion, slurred speech, loss of coordination, seizures,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5138,8 +5138,8 @@
     {
       "id": "limits_emergency_m029",
       "section_id": "limits_emergency",
-      "from": 29073,
-      "duration": 126,
+      "from": 33074,
+      "duration": 131,
       "narration": "fainting, or unconsciousness can signal heatstroke. Call emergency",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5153,8 +5153,8 @@
     {
       "id": "limits_emergency_m030",
       "section_id": "limits_emergency",
-      "from": 29199,
-      "duration": 120,
+      "from": 33205,
+      "duration": 132,
       "narration": "services. Begin rapid cooling. Use safe cold-water immersion when",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5169,8 +5169,8 @@
     {
       "id": "limits_emergency_m031",
       "section_id": "limits_emergency",
-      "from": 29319,
-      "duration": 84,
+      "from": 33337,
+      "duration": 112,
       "narration": "possible. Otherwise use cold water, wet cloths,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5184,8 +5184,8 @@
     {
       "id": "limits_emergency_m032",
       "section_id": "limits_emergency",
-      "from": 29508,
-      "duration": 69,
+      "from": 33449,
+      "duration": 89,
       "narration": "ice, and vigorous air movement while help is",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5200,8 +5200,8 @@
     {
       "id": "limits_emergency_m033",
       "section_id": "limits_emergency",
-      "from": 29576,
-      "duration": 94,
+      "from": 33538,
+      "duration": 101,
       "narration": "coming. Do not force a confused or unconscious person",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5215,8 +5215,8 @@
     {
       "id": "limits_emergency_m034",
       "section_id": "limits_emergency",
-      "from": 29670,
-      "duration": 78,
+      "from": 33639,
+      "duration": 68,
       "narration": "to drink. They may choke. And do",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5231,8 +5231,8 @@
     {
       "id": "limits_emergency_m035",
       "section_id": "limits_emergency",
-      "from": 29747,
-      "duration": 63,
+      "from": 33707,
+      "duration": 232,
       "narration": "not wait for skin to become dry. A",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5246,8 +5246,8 @@
     {
       "id": "limits_emergency_m036",
       "section_id": "limits_emergency",
-      "from": 29810,
-      "duration": 97,
+      "from": 33939,
+      "duration": 7,
       "narration": "person with heatstroke may still be sweating. A thirty-two-degree",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5262,8 +5262,8 @@
     {
       "id": "limits_emergency_m037",
       "section_id": "limits_emergency",
-      "from": 29907,
-      "duration": 80,
+      "from": 33946,
+      "duration": 40,
       "narration": "Glauber’s salt pack is not the best",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5276,8 +5276,8 @@
     {
       "id": "limits_emergency_m038",
       "section_id": "limits_emergency",
-      "from": 29986,
-      "duration": 92,
+      "from": 33986,
+      "duration": 104,
       "narration": "emergency tool. Ice and cold water can create",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5292,8 +5292,8 @@
     {
       "id": "limits_emergency_m039",
       "section_id": "limits_emergency",
-      "from": 30077,
-      "duration": 109,
+      "from": 34090,
+      "duration": 81,
       "narration": "a much stronger cooling gradient. Use the P C",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5307,8 +5307,8 @@
     {
       "id": "limits_emergency_m040",
       "section_id": "limits_emergency",
-      "from": 30156,
-      "duration": 88,
+      "from": 34171,
+      "duration": 124,
       "narration": "M early, during prevention and recovery. If",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5323,8 +5323,8 @@
     {
       "id": "limits_emergency_m041",
       "section_id": "limits_emergency",
-      "from": 30252,
-      "duration": 88,
+      "from": 34295,
+      "duration": 91,
       "narration": "heatstroke is suspected, move to the emergency plan.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5338,8 +5338,8 @@
     {
       "id": "limits_emergency_m042",
       "section_id": "limits_emergency",
-      "from": 30344,
-      "duration": 85,
+      "from": 34386,
+      "duration": 88,
       "narration": "There is one more honest limit. This material stores",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5354,8 +5354,8 @@
     {
       "id": "limits_emergency_m043",
       "section_id": "limits_emergency",
-      "from": 30428,
-      "duration": 70,
+      "from": 34474,
+      "duration": 88,
       "narration": "heat. It does not destroy heat. Every",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5369,8 +5369,8 @@
     {
       "id": "limits_emergency_m044",
       "section_id": "limits_emergency",
-      "from": 30497,
-      "duration": 71,
+      "from": 34562,
+      "duration": 82,
       "narration": "pack must release its heat somewhere cooler. If",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5385,8 +5385,8 @@
     {
       "id": "limits_emergency_m045",
       "section_id": "limits_emergency",
-      "from": 30568,
-      "duration": 82,
+      "from": 34644,
+      "duration": 101,
       "narration": "the house stays above thirty-two degrees all night, the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5400,8 +5400,8 @@
     {
       "id": "limits_emergency_m046",
       "section_id": "limits_emergency",
-      "from": 30650,
-      "duration": 74,
+      "from": 34745,
+      "duration": 95,
       "narration": "salt may never recharge. Charged and melted",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5416,8 +5416,8 @@
     {
       "id": "limits_emergency_m047",
       "section_id": "limits_emergency",
-      "from": 30723,
-      "duration": 97,
+      "from": 34840,
+      "duration": 94,
       "narration": "packs stored together share heat and waste capacity.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5431,8 +5431,8 @@
     {
       "id": "limits_emergency_m048",
       "section_id": "limits_emergency",
-      "from": 30820,
-      "duration": 143,
+      "from": 34934,
+      "duration": 140,
       "narration": "Separate them. A basement, springhouse, refrigerator, or air-conditioned room",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5447,8 +5447,8 @@
     {
       "id": "limits_emergency_m049",
       "section_id": "limits_emergency",
-      "from": 30963,
-      "duration": 68,
+      "from": 35074,
+      "duration": 79,
       "narration": "can recharge them. If none falls below",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5462,8 +5462,8 @@
     {
       "id": "limits_emergency_m050",
       "section_id": "limits_emergency",
-      "from": 31030,
-      "duration": 79,
+      "from": 35153,
+      "duration": 89,
       "narration": "the transition temperature, you need a colder heat",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5478,8 +5478,8 @@
     {
       "id": "limits_emergency_m051",
       "section_id": "limits_emergency",
-      "from": 31108,
-      "duration": 95,
+      "from": 35242,
+      "duration": 109,
       "narration": "sink or a different strategy. Building panels work best",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5493,8 +5493,8 @@
     {
       "id": "limits_emergency_m052",
       "section_id": "limits_emergency",
-      "from": 31202,
-      "duration": 64,
+      "from": 35351,
+      "duration": 78,
       "narration": "where nights cool down. They melt and",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5509,8 +5509,8 @@
     {
       "id": "limits_emergency_m053",
       "section_id": "limits_emergency",
-      "from": 31265,
-      "duration": 91,
+      "from": 35429,
+      "duration": 115,
       "narration": "slow the afternoon temperature rise. At night, ventilation",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5524,8 +5524,8 @@
     {
       "id": "limits_emergency_m054",
       "section_id": "limits_emergency",
-      "from": 31356,
-      "duration": 97,
+      "from": 35544,
+      "duration": 130,
       "narration": "carries the stored heat outside and the material solidifies.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5540,8 +5540,8 @@
     {
       "id": "limits_emergency_m055",
       "section_id": "limits_emergency",
-      "from": 31461,
-      "duration": 69,
+      "from": 35674,
+      "duration": 76,
       "narration": "Hot nights leave the battery empty. Nobody",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5554,8 +5554,8 @@
     {
       "id": "limits_emergency_m056",
       "section_id": "limits_emergency",
-      "from": 31530,
-      "duration": 86,
+      "from": 35750,
+      "duration": 101,
       "narration": "has broken the laws of thermodynamics. The useful",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5570,8 +5570,8 @@
     {
       "id": "limits_emergency_m057",
       "section_id": "limits_emergency",
-      "from": 31615,
-      "duration": 78,
+      "from": 35851,
+      "duration": 101,
       "narration": "trick is moving heat in time. Store coolness when",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5585,8 +5585,8 @@
     {
       "id": "limits_emergency_m058",
       "section_id": "limits_emergency",
-      "from": 31692,
-      "duration": 58,
+      "from": 35952,
+      "duration": 61,
       "narration": "it is available. Spend it when it",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5601,8 +5601,8 @@
     {
       "id": "limits_emergency_m059",
       "section_id": "limits_emergency",
-      "from": 31749,
-      "duration": 87,
+      "from": 36013,
+      "duration": 81,
       "narration": "matters. You can also put panels behind a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5616,8 +5616,8 @@
     {
       "id": "limits_emergency_m060",
       "section_id": "limits_emergency",
-      "from": 31836,
-      "duration": 44,
+      "from": 36094,
+      "duration": 51,
       "narration": "ventilated tractor seat, in",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5632,8 +5632,8 @@
     {
       "id": "recap_teaser_m001",
       "section_id": "recap_teaser",
-      "from": 31879,
-      "duration": 70,
+      "from": 36145,
+      "duration": 73,
       "narration": "a shaded recovery pad, or inside a",
       "transition": "full-screen chapter seam cover",
       "layers": [
@@ -5647,8 +5647,8 @@
     {
       "id": "recap_teaser_m002",
       "section_id": "recap_teaser",
-      "from": 31948,
-      "duration": 100,
+      "from": 36218,
+      "duration": 106,
       "narration": "rest-shelter wall, provided they are protected from puncture",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5663,8 +5663,8 @@
     {
       "id": "recap_teaser_m003",
       "section_id": "recap_teaser",
-      "from": 32047,
-      "duration": 86,
+      "from": 36324,
+      "duration": 94,
       "narration": "and can reset at night. Do not place homemade",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5678,8 +5678,8 @@
     {
       "id": "recap_teaser_m004",
       "section_id": "recap_teaser",
-      "from": 32132,
-      "duration": 69,
+      "from": 36418,
+      "duration": 93,
       "narration": "packs in direct contact with food, drinking",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5694,8 +5694,8 @@
     {
       "id": "recap_teaser_m005",
       "section_id": "recap_teaser",
-      "from": 32200,
-      "duration": 99,
+      "from": 36511,
+      "duration": 123,
       "narration": "water, livestock water, medicines, or an infant. Do",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5709,8 +5709,8 @@
     {
       "id": "recap_teaser_m006",
       "section_id": "recap_teaser",
-      "from": 32298,
-      "duration": 56,
+      "from": 36634,
+      "duration": 72,
       "narration": "not use them where a leak can enter an",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5725,8 +5725,8 @@
     {
       "id": "recap_teaser_m007",
       "section_id": "recap_teaser",
-      "from": 32353,
-      "duration": 61,
+      "from": 36706,
+      "duration": 94,
       "narration": "electrical panel. Do not throw a damaged",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5740,8 +5740,8 @@
     {
       "id": "recap_teaser_m008",
       "section_id": "recap_teaser",
-      "from": 32413,
-      "duration": 100,
+      "from": 36800,
+      "duration": 98,
       "narration": "salt pouch into soil or a stream. Contain",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5756,8 +5756,8 @@
     {
       "id": "recap_teaser_m009",
       "section_id": "recap_teaser",
-      "from": 32513,
-      "duration": 127,
+      "from": 36898,
+      "duration": 109,
       "narration": "the leak, follow the supplier’s safety sheet, and use",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5771,8 +5771,8 @@
     {
       "id": "recap_teaser_m010",
       "section_id": "recap_teaser",
-      "from": 32640,
-      "duration": 81,
+      "from": 37007,
+      "duration": 92,
       "narration": "local disposal guidance. Here is the entire",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5787,8 +5787,8 @@
     {
       "id": "recap_teaser_m011",
       "section_id": "recap_teaser",
-      "from": 32720,
-      "duration": 64,
+      "from": 37099,
+      "duration": 102,
       "narration": "plan for this weekend. First, do not begin",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5802,8 +5802,8 @@
     {
       "id": "recap_teaser_m012",
       "section_id": "recap_teaser",
-      "from": 32783,
-      "duration": 114,
+      "from": 37201,
+      "duration": 147,
       "narration": "with a vest. Buy correctly labeled sodium sulfate decahydrate.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5818,8 +5818,8 @@
     {
       "id": "recap_teaser_m013",
       "section_id": "recap_teaser",
-      "from": 32908,
-      "duration": 83,
+      "from": 37348,
+      "duration": 104,
       "narration": "Make one small, double-contained test pack. Label",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5833,8 +5833,8 @@
     {
       "id": "recap_teaser_m014",
       "section_id": "recap_teaser",
-      "from": 32990,
-      "duration": 94,
+      "from": 37452,
+      "duration": 98,
       "narration": "it. Weigh it. Leak-test it. Second, put the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5849,7 +5849,7 @@
     {
       "id": "recap_teaser_m015",
       "section_id": "recap_teaser",
-      "from": 33083,
+      "from": 37550,
       "duration": 87,
       "narration": "solid pack and a warm-water bottle in one insulated",
       "transition": "motivated cut on narration phrase boundary",
@@ -5864,8 +5864,8 @@
     {
       "id": "recap_teaser_m016",
       "section_id": "recap_teaser",
-      "from": 33169,
-      "duration": 76,
+      "from": 37637,
+      "duration": 99,
       "narration": "box. Build an identical control. Record both",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5880,8 +5880,8 @@
     {
       "id": "recap_teaser_m017",
       "section_id": "recap_teaser",
-      "from": 33244,
-      "duration": 74,
+      "from": 37736,
+      "duration": 90,
       "narration": "temperatures every five minutes. Watch for the plateau",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5895,8 +5895,8 @@
     {
       "id": "recap_teaser_m018",
       "section_id": "recap_teaser",
-      "from": 33317,
-      "duration": 98,
+      "from": 37826,
+      "duration": 125,
       "narration": "instead of expecting instant cold. Third, recharge the pack",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5911,8 +5911,8 @@
     {
       "id": "recap_teaser_m019",
       "section_id": "recap_teaser",
-      "from": 33414,
-      "duration": 79,
+      "from": 37951,
+      "duration": 92,
       "narration": "completely. Repeat the test for ten cycles.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5925,8 +5925,8 @@
     {
       "id": "recap_teaser_m020",
       "section_id": "recap_teaser",
-      "from": 33498,
-      "duration": 103,
+      "from": 38043,
+      "duration": 130,
       "narration": "Track its mass, texture, crystallization, and performance. If",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5941,8 +5941,8 @@
     {
       "id": "recap_teaser_m021",
       "section_id": "recap_teaser",
-      "from": 33600,
-      "duration": 98,
+      "from": 38173,
+      "duration": 100,
       "narration": "it separates or refuses to solidify, you have learned",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5956,8 +5956,8 @@
     {
       "id": "recap_teaser_m022",
       "section_id": "recap_teaser",
-      "from": 33697,
-      "duration": 122,
+      "from": 38273,
+      "duration": 116,
       "narration": "why nucleators and thickeners matter. Fourth, if",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5972,8 +5972,8 @@
     {
       "id": "recap_teaser_m023",
       "section_id": "recap_teaser",
-      "from": 33819,
-      "duration": 89,
+      "from": 38389,
+      "duration": 94,
       "narration": "the pack remains stable, build a shaded recovery",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -5987,8 +5987,8 @@
     {
       "id": "recap_teaser_m024",
       "section_id": "recap_teaser",
-      "from": 33907,
-      "duration": 118,
+      "from": 38483,
+      "duration": 156,
       "narration": "station with multiple small removable packs. Add cool water.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6003,8 +6003,8 @@
     {
       "id": "recap_teaser_m025",
       "section_id": "recap_teaser",
-      "from": 34036,
-      "duration": 86,
+      "from": 38639,
+      "duration": 99,
       "narration": "Add airflow. Add scheduled breaks. Keep melted",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6018,8 +6018,8 @@
     {
       "id": "recap_teaser_m026",
       "section_id": "recap_teaser",
-      "from": 34121,
-      "duration": 111,
+      "from": 38738,
+      "duration": 106,
       "narration": "packs separate from charged ones. Fifth, write the",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6034,8 +6034,8 @@
     {
       "id": "recap_teaser_m027",
       "section_id": "recap_teaser",
-      "from": 34231,
-      "duration": 110,
+      "from": 38844,
+      "duration": 119,
       "narration": "emergency plan where everyone can see it. Confusion, slurred",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6049,8 +6049,8 @@
     {
       "id": "recap_teaser_m028",
       "section_id": "recap_teaser",
-      "from": 34340,
-      "duration": 118,
+      "from": 38963,
+      "duration": 110,
       "narration": "speech, collapse, or unconsciousness means call emergency",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6065,8 +6065,8 @@
     {
       "id": "recap_teaser_m029",
       "section_id": "recap_teaser",
-      "from": 34457,
-      "duration": 109,
+      "from": 39073,
+      "duration": 122,
       "narration": "services and cool immediately. No experiment outranks that",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6080,8 +6080,8 @@
     {
       "id": "recap_teaser_m030",
       "section_id": "recap_teaser",
-      "from": 34565,
-      "duration": 84,
+      "from": 39195,
+      "duration": 100,
       "narration": "rule. The salt is not the hero. The plan",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6096,8 +6096,8 @@
     {
       "id": "recap_teaser_m031",
       "section_id": "recap_teaser",
-      "from": 34648,
-      "duration": 85,
+      "from": 39295,
+      "duration": 80,
       "narration": "is. The salt gives the plan a",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6111,8 +6111,8 @@
     {
       "id": "recap_teaser_m032",
       "section_id": "recap_teaser",
-      "from": 34732,
-      "duration": 100,
+      "from": 39375,
+      "duration": 107,
       "narration": "cheap, silent thermal battery. Its change from solid",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6127,8 +6127,8 @@
     {
       "id": "recap_teaser_m033",
       "section_id": "recap_teaser",
-      "from": 34831,
-      "duration": 105,
+      "from": 39482,
+      "duration": 98,
       "narration": "to liquid tells you when capacity is gone. Tell",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6142,8 +6142,8 @@
     {
       "id": "recap_teaser_m034",
       "section_id": "recap_teaser",
-      "from": 34935,
-      "duration": 44,
+      "from": 39580,
+      "duration": 55,
       "narration": "me in the comments where the hottest",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6158,8 +6158,8 @@
     {
       "id": "recap_teaser_m035",
       "section_id": "recap_teaser",
-      "from": 34978,
-      "duration": 79,
+      "from": 39635,
+      "duration": 93,
       "narration": "part of your day happens: a workshop, tractor,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6173,8 +6173,8 @@
     {
       "id": "recap_teaser_m036",
       "section_id": "recap_teaser",
-      "from": 35065,
-      "duration": 103,
+      "from": 39728,
+      "duration": 131,
       "narration": "kitchen, warehouse, or field. Add the usual temperature and",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6189,8 +6189,8 @@
     {
       "id": "recap_teaser_m037",
       "section_id": "recap_teaser",
-      "from": 35167,
-      "duration": 58,
+      "from": 39859,
+      "duration": 70,
       "narration": "humidity if you know them. That tells",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6203,8 +6203,8 @@
     {
       "id": "recap_teaser_m038",
       "section_id": "recap_teaser",
-      "from": 35224,
-      "duration": 95,
+      "from": 39929,
+      "duration": 65,
       "narration": "us whether this material, a colder P C",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6219,8 +6219,8 @@
     {
       "id": "recap_teaser_m039",
       "section_id": "recap_teaser",
-      "from": 35283,
-      "duration": 93,
+      "from": 39994,
+      "duration": 136,
       "narration": "M, evaporation, or airflow is the right tool. Share",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6234,8 +6234,8 @@
     {
       "id": "recap_teaser_m040",
       "section_id": "recap_teaser",
-      "from": 35376,
-      "duration": 48,
+      "from": 40130,
+      "duration": 65,
       "narration": "this with the person who always says,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6250,8 +6250,8 @@
     {
       "id": "recap_teaser_m041",
       "section_id": "recap_teaser",
-      "from": 35424,
-      "duration": 89,
+      "from": 40195,
+      "duration": 78,
       "narration": "“I am fine,” while skipping the water break.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6265,8 +6265,8 @@
     {
       "id": "recap_teaser_m042",
       "section_id": "recap_teaser",
-      "from": 35513,
-      "duration": 72,
+      "from": 40273,
+      "duration": 76,
       "narration": "Save the five-step test before you buy a pile",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6281,8 +6281,8 @@
     {
       "id": "recap_teaser_m043",
       "section_id": "recap_teaser",
-      "from": 35584,
-      "duration": 68,
+      "from": 40349,
+      "duration": 69,
       "narration": "of salt. And put the emergency signs",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6296,8 +6296,8 @@
     {
       "id": "recap_teaser_m044",
       "section_id": "recap_teaser",
-      "from": 35652,
-      "duration": 67,
+      "from": 40418,
+      "duration": 81,
       "narration": "somewhere your family or crew can read them",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6312,8 +6312,8 @@
     {
       "id": "recap_teaser_m045",
       "section_id": "recap_teaser",
-      "from": 35718,
-      "duration": 63,
+      "from": 40499,
+      "duration": 90,
       "narration": "before the next hot day. In the next video,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6327,8 +6327,8 @@
     {
       "id": "recap_teaser_m046",
       "section_id": "recap_teaser",
-      "from": 35785,
-      "duration": 47,
+      "from": 40589,
+      "duration": 54,
       "narration": "I will show you a cooling wall",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6343,8 +6343,8 @@
     {
       "id": "recap_teaser_m047",
       "section_id": "recap_teaser",
-      "from": 35832,
-      "duration": 86,
+      "from": 40643,
+      "duration": 84,
       "narration": "that uses a white exterior, a dark solar",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6358,8 +6358,8 @@
     {
       "id": "recap_teaser_m048",
       "section_id": "recap_teaser",
-      "from": 35917,
-      "duration": 97,
+      "from": 40727,
+      "duration": 92,
       "narration": "chimney, and one carefully placed opening to move hot",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6374,8 +6374,8 @@
     {
       "id": "recap_teaser_m049",
       "section_id": "recap_teaser",
-      "from": 36013,
-      "duration": 62,
+      "from": 40819,
+      "duration": 77,
       "narration": "air without a motor. One wrong opening",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6389,8 +6389,8 @@
     {
       "id": "recap_teaser_m050",
       "section_id": "recap_teaser",
-      "from": 36075,
-      "duration": 63,
+      "from": 40896,
+      "duration": 82,
       "narration": "can reverse the flow and pull attic heat",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6405,8 +6405,8 @@
     {
       "id": "recap_teaser_m051",
       "section_id": "recap_teaser",
-      "from": 36138,
-      "duration": 66,
+      "from": 40978,
+      "duration": 94,
       "narration": "into the room. The old way was never to",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6420,8 +6420,8 @@
     {
       "id": "recap_teaser_m052",
       "section_id": "recap_teaser",
-      "from": 36203,
-      "duration": 70,
+      "from": 41072,
+      "duration": 84,
       "narration": "overpower nature with a bigger machine. It",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6436,8 +6436,8 @@
     {
       "id": "recap_teaser_m053",
       "section_id": "recap_teaser",
-      "from": 36272,
-      "duration": 54,
+      "from": 41156,
+      "duration": 80,
       "narration": "was to learn where heat wanted to go,",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6451,8 +6451,8 @@
     {
       "id": "recap_teaser_m054",
       "section_id": "recap_teaser",
-      "from": 36331,
-      "duration": 73,
+      "from": 41236,
+      "duration": 77,
       "narration": "give it a path, and store a little coolness",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6467,8 +6467,8 @@
     {
       "id": "recap_teaser_m055",
       "section_id": "recap_teaser",
-      "from": 36403,
-      "duration": 50,
+      "from": 41313,
+      "duration": 61,
       "narration": "for the hour when your body needed",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6481,8 +6481,8 @@
     {
       "id": "recap_teaser_m056",
       "section_id": "recap_teaser",
-      "from": 36453,
-      "duration": 18,
+      "from": 41374,
+      "duration": 20,
       "narration": "it most.",
       "transition": "motivated cut on narration phrase boundary",
       "layers": [
@@ -6501,8 +6501,11 @@
     "clip_scenes": 143,
     "image_scenes": 48,
     "component_scenes": 207,
-    "duration_seconds": 1222.88,
-    "unresolved_assets": 0
+    "duration_seconds": 1379.78,
+    "unresolved_assets": 0,
+    "voice_correction_video_id": "25e13b4cdd0f42ccb4116f37b5c909ad",
+    "retimed_at": "2026-07-30T19:17:21.807Z",
+    "exact_scene_anchor_matches": 386
   },
   "alignment": {
     "source": "public/captions_vq27dyf4z18ko.json",
