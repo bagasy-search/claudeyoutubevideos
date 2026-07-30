@@ -53,6 +53,11 @@ for (const scene of timeline.scenes) {
 
 const assets = new Set([timeline.audio_src]);
 for (const scene of selected) assets.add(semanticOverride(scene));
+for (const asset of [...assets]) {
+  if (!/^img\/.+\.(?:png|jpe?g)$/i.test(asset)) continue;
+  const blurred = asset.replace(/\.(?:png|jpe?g)$/i, "_blur.jpg");
+  if (existsSync(resolve("public", blurred))) assets.add(blurred);
+}
 
 const missing = [...assets].filter((asset) => !existsSync(resolve("public", asset)));
 if (missing.length) {
