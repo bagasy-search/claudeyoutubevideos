@@ -714,7 +714,7 @@ const headlineSets = {
   ],
   secret_08_diversification_succession: [
     "Confirm The Buyer",
-    "Diversify After The Math",
+    "Diversify After Demand",
     "Train The Next Decision",
     "One Buyer, One Risk",
   ],
@@ -789,7 +789,10 @@ const makeStockExpression = (asset, moment, dur, trim = 0) => {
     : "RawShot";
   const headlines =
     headlineSets[moment.section] || ["Evidence In The Field"];
-  const maxHeadlineWords = dur < 3.65 ? 3 : 4;
+  // Every curated headline is four words or fewer; four words still fit the
+  // 2.5-second floor and avoids visibly chopped phrases such as
+  // "Diversify After The".
+  const maxHeadlineWords = 4;
   const label = compactWords(
     headlines[ordinal % headlines.length],
     maxHeadlineWords,
