@@ -1,41 +1,54 @@
 import React from "react";
-import { AbsoluteFill, Sequence, interpolate, useCurrentFrame } from "remotion";
-import { COLORS, sec } from "./theme";
-import { TechBackground } from "./components/TechBackground";
-import { AvatarLayer } from "./scenes/AvatarLayer";
-import { SfxCue, POPS } from "./components/Sfx";
-import { AVATAR_V0TOHHE3CVS6 } from "./avatar_v0tohhe3cvs6.gen";
-import { CUES_V0TOHHE3CVS6 } from "./cues_v0tohhe3cvs6.gen";
+import {AbsoluteFill, Sequence, interpolate, staticFile, useCurrentFrame} from "remotion";
+import {Video} from "@remotion/media";
+import {sec} from "./theme";
+import {PREMIUM_CUES_V0TOHHE3CVS6} from "./cues_v0tohhe3cvs6.gen";
 
-export const TOTAL_FRAMES_V0TOHHE3CVS6 = 42989;
+export const TOTAL_FRAMES_V0TOHHE3CVS6 = 41814;
 
-const AvatarCameraV0TOHHE3CVS6: React.FC = () => {
+const AvatarBase_v0tohhe3cvs6: React.FC = () => {
   const frame = useCurrentFrame();
-  const camera = interpolate(frame, [90, 180], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const driftX = Math.sin(frame / 520) * 7 * camera;
-  const driftY = Math.cos(frame / 690) * 4 * camera;
+  const scale = interpolate(frame, [0, TOTAL_FRAMES_V0TOHHE3CVS6 - 1], [1.012, 1.042], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const driftX = Math.sin(frame / 690) * 5;
+  const driftY = Math.cos(frame / 820) * 3;
   return (
-    <AbsoluteFill style={{ overflow: "hidden" }}>
-      <AbsoluteFill style={{ transformOrigin: "72% 18%", transform: `translate(${driftX}px, ${driftY}px) scale(${1 + camera * 0.045})` }}>
-        <AvatarLayer src="v0tohhe3cvs6_opt.mp4" wav="v0tohhe3cvs6.wav" windows={AVATAR_V0TOHHE3CVS6} accent="#C2A56B" />
-      </AbsoluteFill>
+    <AbsoluteFill style={{overflow: "hidden", backgroundColor: "#171912"}}>
+      <Video
+        src={staticFile("avatar_v0tohhe3cvs6.mp4")}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "50% 50%",
+          transform: `translate(${driftX}px, ${driftY}px) scale(${scale})`,
+          filter: "saturate(0.94) contrast(1.025)",
+        }}
+      />
+      <AbsoluteFill
+        style={{
+          pointerEvents: "none",
+          boxShadow: "inset 0 0 110px rgba(13,12,7,0.2)",
+        }}
+      />
     </AbsoluteFill>
   );
 };
 
 export const MainV0TOHHE3CVS6: React.FC = () => (
-  <AbsoluteFill style={{ backgroundColor: COLORS.bg0 }}>
-    <TechBackground glowX={48} glowY={42} hue="cold" drift={0.35} />
-    <AvatarCameraV0TOHHE3CVS6 />
-    {CUES_V0TOHHE3CVS6.map((cue) => (
-      <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)} premountFor={30}>
+  <AbsoluteFill style={{backgroundColor: "#171912"}}>
+    <AvatarBase_v0tohhe3cvs6 />
+    {PREMIUM_CUES_V0TOHHE3CVS6.map((cue) => (
+      <Sequence
+        key={cue.key}
+        from={sec(cue.start)}
+        durationInFrames={sec(cue.dur)}
+        premountFor={30}
+      >
         {cue.el(sec(cue.dur))}
       </Sequence>
     ))}
-    {CUES_V0TOHHE3CVS6.map((cue, index) =>
-      cue.kind !== "raw" && index % 6 === 0 ? (
-        <SfxCue key={"sfx-" + cue.key} at={sec(cue.start)} src={POPS[index % POPS.length]} volume={0.08} />
-      ) : null,
-    )}
   </AbsoluteFill>
 );
