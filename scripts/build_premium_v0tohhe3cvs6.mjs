@@ -472,6 +472,8 @@ const forcedMomentAsset = (moment) => {
   const forcedName =
     /miracle seed, no secret chemical/i.test(phrase)
       ? "v0tohhe3cvs6_stock_001"
+      : /checked these claims against USDA research/i.test(phrase)
+        ? `${slug}_web_soil_aggregate_hand.jpg`
       : /conservation guidance, and published farm studies/i.test(phrase)
         ? `${slug}_web_soil_health_inspection.jpg`
         : /not copying a costume/i.test(phrase)
