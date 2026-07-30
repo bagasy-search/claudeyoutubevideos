@@ -18,7 +18,8 @@ export type PlainAlmanacQuietCTA_v0tohhe3cvs6Props = {
 
 const OFFER_LINES = [
   "90 ILLUSTRATED METHODS",
-  "$47 • PAY ONCE",
+  "13 PRACTICAL SECTIONS",
+  "$47 · PAY ONCE",
   "7-DAY REFUND PERIOD",
 ] as const;
 
@@ -109,7 +110,9 @@ export const PlainAlmanacQuietCTA_v0tohhe3cvs6: React.FC<
     clamp,
   );
 
-  const hasCover = Boolean(coverImage);
+  // A designed in-component cover keeps the product visible even when the
+  // creator has not supplied a separate cover bitmap.
+  const hasCover = true;
 
   return (
     <AbsoluteFill
@@ -159,8 +162,8 @@ export const PlainAlmanacQuietCTA_v0tohhe3cvs6: React.FC<
           gap: hasCover ? 58 : 0,
         }}
       >
-        {coverImage
-          ? (
+        {
+          (
             <div
               style={{
                 width: 366,
@@ -191,18 +194,91 @@ export const PlainAlmanacQuietCTA_v0tohhe3cvs6: React.FC<
                   backgroundColor: COLORS.bg1,
                 }}
               >
-                <Media
-                  src={coverImage}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
+                {coverImage ? (
+                  <Media
+                    src={coverImage}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      position: "relative",
+                      width: "100%",
+                      height: "100%",
+                      boxSizing: "border-box",
+                      padding: "48px 38px",
+                      color: "#2e3327",
+                      background:
+                        "linear-gradient(160deg, #eee3c7 0%, #d8c89f 100%)",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "absolute",
+                        inset: 18,
+                        border: "2px solid rgba(77,83,59,.5)",
+                        borderRadius: 11,
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "relative",
+                        color: "#7d4e27",
+                        fontSize: 17,
+                        fontWeight: 800,
+                        letterSpacing: 4.4,
+                      }}
+                    >
+                      LANCASTER COUNTY · NO. I
+                    </div>
+                    <div
+                      style={{
+                        position: "relative",
+                        marginTop: 76,
+                        fontFamily: 'Georgia, "Times New Roman", serif',
+                        fontSize: 52,
+                        lineHeight: 0.94,
+                        fontWeight: 700,
+                        letterSpacing: -1.8,
+                      }}
+                    >
+                      THE PLAIN
+                      <br />
+                      ALMANAC
+                    </div>
+                    <div
+                      style={{
+                        position: "relative",
+                        width: 74,
+                        height: 4,
+                        marginTop: 34,
+                        borderRadius: 99,
+                        background: "#7d4e27",
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: "absolute",
+                        left: 38,
+                        right: 38,
+                        bottom: 64,
+                        fontSize: 27,
+                        fontWeight: 850,
+                        letterSpacing: 1.8,
+                      }}
+                    >
+                      90 NUMBERED METHODS
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           )
-          : null}
+        }
 
         <div
           style={{
@@ -264,8 +340,8 @@ export const PlainAlmanacQuietCTA_v0tohhe3cvs6: React.FC<
               style={{
                 display: "grid",
                 gridTemplateColumns: hasCover
-                  ? "1fr"
-                  : "repeat(3, minmax(0, 1fr))",
+                  ? "repeat(2, minmax(0, 1fr))"
+                  : "repeat(4, minmax(0, 1fr))",
                 gap: 16,
               }}
             >

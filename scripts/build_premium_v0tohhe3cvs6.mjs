@@ -145,6 +145,124 @@ for (const audit of retryAudits) {
   }
 }
 
+const allClips = [...oldClips, ...retryClips];
+const clipByName = new Map(allClips.map((clip) => [clip.name, clip]));
+const sectionClipNames = {
+  hook: [
+    "v0tohhe3cvs6_stock_001",
+    "v0tohhe3cvs6_r2_061",
+    "v0tohhe3cvs6_r2_063",
+    "v0tohhe3cvs6_r2_069",
+    "v0tohhe3cvs6_r2_070",
+    "v0tohhe3cvs6_r2_071",
+    "v0tohhe3cvs6_r2_072",
+  ],
+  secret_1_rotation: [
+    "v0tohhe3cvs6_stock_001",
+    "v0tohhe3cvs6_stock_014",
+    "v0tohhe3cvs6_r2_003",
+    "v0tohhe3cvs6_r2_004",
+    "v0tohhe3cvs6_r2_005",
+    "v0tohhe3cvs6_r2_008",
+  ],
+  secret_2_legume_repair: [
+    "v0tohhe3cvs6_stock_014",
+    "v0tohhe3cvs6_stock_025",
+    "v0tohhe3cvs6_stock_028",
+    "v0tohhe3cvs6_r2_003",
+    "v0tohhe3cvs6_r2_004",
+    "v0tohhe3cvs6_r2_005",
+  ],
+  secret_3_living_cover: [
+    "v0tohhe3cvs6_stock_037",
+    "v0tohhe3cvs6_r2_012",
+    "v0tohhe3cvs6_r2_014",
+  ],
+  secret_4_mixed_farm_manure: [
+    "v0tohhe3cvs6_stock_046",
+    "v0tohhe3cvs6_stock_049",
+    "v0tohhe3cvs6_r2_021",
+    "v0tohhe3cvs6_r2_030",
+  ],
+  secret_5_compaction: [
+    "v0tohhe3cvs6_stock_028",
+    "v0tohhe3cvs6_r2_065",
+  ],
+  secret_06_contour: [
+    "v0tohhe3cvs6_stock_001",
+    "v0tohhe3cvs6_stock_072",
+    "v0tohhe3cvs6_r2_037",
+    "v0tohhe3cvs6_r2_038",
+  ],
+  secret_07_beneficial_habitat: [
+    "v0tohhe3cvs6_stock_073",
+    "v0tohhe3cvs6_stock_075",
+    "v0tohhe3cvs6_stock_076",
+    "v0tohhe3cvs6_stock_078",
+    "v0tohhe3cvs6_stock_079",
+    "v0tohhe3cvs6_stock_084",
+    "v0tohhe3cvs6_r2_041",
+    "v0tohhe3cvs6_r2_042",
+    "v0tohhe3cvs6_r2_046",
+    "v0tohhe3cvs6_r2_048",
+    "v0tohhe3cvs6_r2_049",
+    "v0tohhe3cvs6_r2_050",
+  ],
+  secret_08_diversification_succession: [
+    "v0tohhe3cvs6_stock_085",
+    "v0tohhe3cvs6_stock_086",
+    "v0tohhe3cvs6_stock_088",
+    "v0tohhe3cvs6_r2_051",
+    "v0tohhe3cvs6_r2_052",
+  ],
+  secret_09_scouting_thresholds: [
+    "v0tohhe3cvs6_stock_078",
+    "v0tohhe3cvs6_stock_079",
+    "v0tohhe3cvs6_stock_084",
+    "v0tohhe3cvs6_stock_091",
+    "v0tohhe3cvs6_r2_041",
+    "v0tohhe3cvs6_r2_046",
+    "v0tohhe3cvs6_r2_048",
+    "v0tohhe3cvs6_r2_049",
+    "v0tohhe3cvs6_r2_050",
+  ],
+  secret_10_repair_diagnose_safely: [
+    "v0tohhe3cvs6_stock_100",
+    "v0tohhe3cvs6_stock_101",
+    "v0tohhe3cvs6_stock_104",
+    "v0tohhe3cvs6_stock_111",
+    "v0tohhe3cvs6_r2_057",
+    "v0tohhe3cvs6_r2_058",
+    "v0tohhe3cvs6_r2_060",
+    "v0tohhe3cvs6_r2_069",
+  ],
+  honest_limits_decision_loop: [
+    "v0tohhe3cvs6_stock_113",
+    "v0tohhe3cvs6_r2_060",
+    "v0tohhe3cvs6_r2_070",
+    "v0tohhe3cvs6_r2_071",
+    "v0tohhe3cvs6_r2_072",
+  ],
+  recap_choose_one: [
+    "v0tohhe3cvs6_stock_001",
+    "v0tohhe3cvs6_stock_038",
+    "v0tohhe3cvs6_stock_091",
+    "v0tohhe3cvs6_stock_100",
+    "v0tohhe3cvs6_r2_012",
+    "v0tohhe3cvs6_r2_021",
+    "v0tohhe3cvs6_r2_038",
+    "v0tohhe3cvs6_r2_042",
+    "v0tohhe3cvs6_r2_051",
+    "v0tohhe3cvs6_r2_065",
+  ],
+  cta_plain_almanac: [],
+  teaser_hydraulic_ram_closing: ["v0tohhe3cvs6_stock_129"],
+};
+const clipsForSection = (section) =>
+  (sectionClipNames[section] || [])
+    .map((name) => clipByName.get(name))
+    .filter(Boolean);
+
 const photos = [];
 const photoNames = new Set();
 const addPhoto = ({filename, dir = "public/real", text = "", source = "web"}) => {
@@ -224,9 +342,165 @@ const specialComponentPhoto = (kind) => {
     ContourErosionCompare_v0tohhe3cvs6: `${slug}_contour_farming_hillside.jpg`,
     ScoutingDecisionLoop_v0tohhe3cvs6: `${slug}_beneficial_insect_flower.jpg`,
     PlainAlmanacContents_v0tohhe3cvs6: `${slug}_web_old_barn.jpg`,
+    CoverJobSelector_v0tohhe3cvs6: `${slug}_multispecies_cover_crop.jpg`,
+    SuccessionRoles_v0tohhe3cvs6: `${slug}_web_elderly_farmyard.jpg`,
+    HydraulicInjectionSafety_v0tohhe3cvs6: `${slug}_presenter_pump_workbench.png`,
+    ProfessionalOnlyGrid_v0tohhe3cvs6: `${slug}_presenter_pump_workbench.png`,
+    HydraulicRamExploded_v0tohhe3cvs6: `${slug}_presenter_pump_workbench.png`,
+    RamPumpFailureConditions_v0tohhe3cvs6: `${slug}_presenter_pump_workbench.png`,
+    StoredEnergyFiveSources_v0tohhe3cvs6: `${slug}_presenter_pump_workbench.png`,
+    TwoFieldNutrientDecision_v0tohhe3cvs6: `${slug}_soil_sampling_probe.png`,
+    ThreeDecisionGates_v0tohhe3cvs6: `${slug}_presenter_damage_count.png`,
+    ManureRiskFork_v0tohhe3cvs6: `${slug}_finished_compost_hand.jpg`,
+    ContourCropStack_v0tohhe3cvs6: `${slug}_contour_farming_hillside.jpg`,
+    ActionThreshold_v0tohhe3cvs6: `${slug}_presenter_damage_count.png`,
+    LocalThresholdCompare_v0tohhe3cvs6: `${slug}_presenter_damage_count.png`,
+    ScoutingFieldCard_v0tohhe3cvs6: `${slug}_presenter_field_notebook.png`,
   }[kind];
   return forcedName ? photoByName(forcedName) : null;
 };
+const sectionPhotoNames = {
+  hook: [
+    `${slug}_crop_roots_soil_pit.jpg`,
+    `${slug}_horse_plowing_archival.jpg`,
+    `${slug}_web_corn_rows.png`,
+    `${slug}_web_old_barn.jpg`,
+  ],
+  secret_1_rotation: [
+    `${slug}_crop_roots_soil_pit.jpg`,
+    `${slug}_web_corn_rows.png`,
+    `${slug}_stock_001_still.jpg`,
+    `${slug}_stock_002_still.jpg`,
+    `${slug}_stock_014_still.jpg`,
+    `${slug}_presenter_cover_crop_roots.png`,
+  ],
+  secret_2_legume_repair: [
+    `${slug}_web_root_nodules_clover.jpg`,
+    `${slug}_web_root_nodules_lentil.jpg`,
+    `${slug}_stock_025_still.jpg`,
+    `${slug}_stock_028_still.jpg`,
+    `${slug}_crop_roots_soil_pit.jpg`,
+  ],
+  secret_3_living_cover: [
+    `${slug}_multispecies_cover_crop.jpg`,
+    `${slug}_stock_037_still.jpg`,
+    `${slug}_presenter_cover_crop_roots.png`,
+    `${slug}_web_corn_rows.png`,
+  ],
+  secret_4_mixed_farm_manure: [
+    `${slug}_soil_sampling_probe.png`,
+    `${slug}_stock_046_still.jpg`,
+    `${slug}_stock_049_still.jpg`,
+    `${slug}_finished_compost_hand.jpg`,
+    `${slug}_web_old_barn.jpg`,
+    `${slug}_web_elderly_farmyard.jpg`,
+  ],
+  secret_5_compaction: [
+    `${slug}_soil_aggregates_hand.jpg`,
+    `${slug}_web_soil_aggregate_hand.jpg`,
+    `${slug}_web_soil_profile_gravel.jpg`,
+    `${slug}_stock_028_still.jpg`,
+    `${slug}_web_soil_health_inspection.jpg`,
+  ],
+  secret_06_contour: [
+    `${slug}_contour_farming_hillside.jpg`,
+    `${slug}_web_contour_aerial_missouri.jpg`,
+    `${slug}_web_contour_field_1974.jpg`,
+    `${slug}_stock_072_still.jpg`,
+  ],
+  secret_07_beneficial_habitat: [
+    `${slug}_beneficial_insect_flower.jpg`,
+    `${slug}_web_hedgerow_boundary.jpg`,
+    `${slug}_web_hedgerow_summer.jpg`,
+    `${slug}_stock_073_still.jpg`,
+    `${slug}_stock_075_still.jpg`,
+    `${slug}_stock_076_still.jpg`,
+    `${slug}_stock_078_still.jpg`,
+    `${slug}_stock_079_still.jpg`,
+  ],
+  secret_08_diversification_succession: [
+    `${slug}_web_farmers_market.jpeg`,
+    `${slug}_web_elderly_farmyard.jpg`,
+    `${slug}_web_old_barn.jpg`,
+    `${slug}_stock_085_still.jpg`,
+    `${slug}_stock_088_still.jpg`,
+  ],
+  secret_09_scouting_thresholds: [
+    `${slug}_presenter_leaf_scout.png`,
+    `${slug}_presenter_damage_count.png`,
+    `${slug}_presenter_field_notebook.png`,
+    `${slug}_stock_078_still.jpg`,
+    `${slug}_stock_079_still.jpg`,
+    `${slug}_stock_084_still.jpg`,
+    `${slug}_stock_091_still.jpg`,
+    `${slug}_beneficial_insect_flower.jpg`,
+  ],
+  secret_10_repair_diagnose_safely: [
+    `${slug}_hand_tool_repair.webp`,
+    `${slug}_web_elderly_repair.jpg`,
+    `${slug}_stock_100_still.jpg`,
+    `${slug}_stock_101_still.jpg`,
+    `${slug}_stock_104_still.jpg`,
+    `${slug}_stock_111_still.jpg`,
+    `${slug}_presenter_pump_workbench.png`,
+  ],
+  honest_limits_decision_loop: [
+    `${slug}_web_old_barn.jpg`,
+    `${slug}_web_elderly_farmyard.jpg`,
+    `${slug}_stock_113_still.jpg`,
+    `${slug}_presenter_field_notebook.png`,
+  ],
+  recap_choose_one: [
+    `${slug}_multispecies_cover_crop.jpg`,
+    `${slug}_contour_farming_hillside.jpg`,
+    `${slug}_beneficial_insect_flower.jpg`,
+    `${slug}_hand_tool_repair.webp`,
+    `${slug}_soil_sampling_probe.png`,
+  ],
+  cta_plain_almanac: [`${slug}_web_old_barn.jpg`],
+  teaser_hydraulic_ram_closing: [
+    `${slug}_presenter_pump_workbench.png`,
+    `${slug}_stock_129_still.jpg`,
+  ],
+};
+const photosForSection = (section) =>
+  (sectionPhotoNames[section] || [])
+    .map((name) => photoByName(name))
+    .filter(Boolean);
+const forcedMomentAsset = (moment) => {
+  const phrase = String(moment.dice || "");
+  const forcedName =
+    /miracle seed, no secret chemical/i.test(phrase)
+      ? "v0tohhe3cvs6_stock_001"
+      : /conservation guidance, and published farm studies/i.test(phrase)
+        ? `${slug}_web_soil_health_inspection.jpg`
+        : /not copying a costume/i.test(phrase)
+          ? "v0tohhe3cvs6_r2_063"
+          : /bacteria convert nitrogen gas/i.test(phrase)
+      ? `${slug}_web_root_nodules_clover.jpg`
+      : /crop is not handing free bags of fertilizer/i.test(phrase)
+        ? `${slug}_web_root_nodules_lentil.jpg`
+      : /correct rhizobia/i.test(phrase)
+        ? `${slug}_web_root_nodules_lentil.jpg`
+        : /15 days and turned at least five times/i.test(phrase)
+          ? `${slug}_finished_compost_hand.jpg`
+          : /teach one task at a time/i.test(phrase)
+            ? `${slug}_presenter_field_notebook.png`
+            : /never work beneath equipment held only by hydraulics/i.test(phrase)
+              ? `${slug}_presenter_pump_workbench.png`
+              : /number one, rotate functions/i.test(phrase)
+                ? "v0tohhe3cvs6_stock_001"
+                : /number two, use perennial forage/i.test(phrase)
+                  ? "v0tohhe3cvs6_r2_005"
+                  : /number three, keep living roots/i.test(phrase)
+                    ? "v0tohhe3cvs6_r2_012"
+              : null;
+  return forcedName
+    ? photoByName(forcedName) || clipByName.get(forcedName) || null
+    : null;
+};
+const forcedAvatarMoment = (moment) =>
+  /sells that cure again next year/i.test(String(moment.dice || ""));
 
 const chooseBest = (query, pool, used, minimum = 2) => {
   const ranked = pool
@@ -296,50 +570,99 @@ for (const moment of merged) {
   }
 }
 
-const usedClips = new Set();
+// Absorb adjacent documentary fragments so the second half does not dissolve
+// into 2.5-second micro-cuts. Key components and presenter windows remain
+// untouched; only neighboring stock/photo beats in the same section merge.
+const pacedTimeline = [];
+for (const moment of timeline) {
+  const previous = pacedTimeline.at(-1);
+  const previousDur = previous ? previous.fin - previous.inicio : 0;
+  const currentDur = moment.fin - moment.inicio;
+  if (
+    previous &&
+    previous.section === moment.section &&
+    previous.tipo !== "avatar" &&
+    moment.tipo !== "avatar" &&
+    previous.tipo !== "componente" &&
+    moment.tipo !== "componente" &&
+    moment.inicio <= previous.fin + 0.18 &&
+    (previousDur < 3.15 || currentDur < 3.15) &&
+    moment.fin - previous.inicio <= 7.2
+  ) {
+    previous.fin = moment.fin;
+    previous.dice = `${previous.dice} ${moment.dice}`;
+    previous.muestra = `${previous.muestra} ${moment.muestra}`;
+    previous.query = `${previous.query || ""} ${moment.query || ""}`;
+    continue;
+  }
+  pacedTimeline.push({...moment});
+}
+
 const usedPhotos = new Set();
+const photoUseCount = new Map();
+const photoLastStart = new Map();
 const clipUseCount = new Map();
 const clipLastStart = new Map();
 const cueRows = [];
 const cueRanges = [];
 const reportRows = [];
+const selectSectionClip = (moment, query, start) => {
+  const pool = clipsForSection(moment.section);
+  const exact = pool.find(
+    (clip) =>
+      clip.start !== null &&
+      Math.abs(Number(clip.start) - Number(moment.inicio)) < 2.4 &&
+      (clipUseCount.get(clip.name) || 0) < 2,
+  );
+  if (exact) return exact;
+  const available = pool
+    .filter(
+      (clip) =>
+        (clipUseCount.get(clip.name) || 0) < 2 &&
+        start - (clipLastStart.get(clip.name) ?? -9999) > 55,
+    )
+    .map((clip) => ({
+      clip,
+      score:
+        scoreText(query, clip.text) -
+        (clipUseCount.get(clip.name) || 0) * 1.5,
+    }))
+    .sort((left, right) => right.score - left.score);
+  return available[0]?.clip || null;
+};
+const selectSectionPhoto = (moment, query, start) => {
+  const personalPool = photos.filter(
+    (photo) => photo.source === "gpt-image-personal",
+  );
+  const pool = [
+    ...(moment.personal ? personalPool : []),
+    ...photosForSection(moment.section),
+  ];
+  let chosen = chooseBest(query, pool, usedPhotos, 0);
+  if (!chosen) {
+    chosen =
+      pool
+        .filter(
+          (photo) =>
+            (photoUseCount.get(photo.name) || 0) < 2 &&
+            start - (photoLastStart.get(photo.name) ?? -9999) > 55,
+        )
+        .map((photo) => ({
+          photo,
+          score:
+            scoreText(query, photo.text) -
+            (photoUseCount.get(photo.name) || 0),
+        }))
+        .sort((left, right) => right.score - left.score)[0]?.photo || null;
+  }
+  if (chosen) {
+    photoUseCount.set(chosen.name, (photoUseCount.get(chosen.name) || 0) + 1);
+    photoLastStart.set(chosen.name, start);
+  }
+  return chosen;
+};
 
 const q = (value) => JSON.stringify(value);
-const contextAliases = [
-  "StockEvidenceCard",
-  "AnnotatedImage",
-  "CalloutMark",
-  "KineticHeadline",
-  "KineticQuote",
-  "PhotoChecklist",
-  "ReframeList",
-  "RuleNumberScene",
-  "SectionGrade",
-  "SectionStinger",
-  "TextCardReveal",
-  "QuoteScene",
-  "ImpactReveal",
-  "JourneyCanvas",
-  "SelectiveCompare",
-  "ValueJourney",
-];
-const genericAliases = [
-  "FarmEvidenceBoard",
-  "BarCompare",
-  "OptionCompare",
-  "ProcessSteps",
-  "SafetyGrid",
-  "SplitList",
-  "Checklist",
-  "ChipsCluster",
-  "CostCumulative",
-  "CrossSection",
-  "ThreeMethods",
-  "AgedDoc",
-  "StatBig",
-  "WorldMapPins",
-  "HouseInspection",
-];
 const headlineSets = {
   hook: [
     "Four Crops, One System",
@@ -442,7 +765,6 @@ const sectionEyebrows = {
   teaser_hydraulic_ram_closing: "NEXT",
 };
 let visualOrdinal = 0;
-let genericComponentOrdinal = 0;
 const compactWords = (value, max) =>
   String(value || "")
     .split(/\s+/)
@@ -456,8 +778,14 @@ const visibleWordCount = (value) =>
 const makeStockExpression = (asset, moment, dur, trim = 0) => {
   const ordinal = visualOrdinal++;
   const useContext = ordinal % 20 !== 19;
+  const stockTreatments = [
+    "StockCornerEvidence",
+    "StockTopRule",
+    "StockFieldBadge",
+    "StockLowerEvidence",
+  ];
   const component = useContext
-    ? contextAliases[ordinal % contextAliases.length]
+    ? stockTreatments[ordinal % stockTreatments.length]
     : "RawShot";
   const headlines =
     headlineSets[moment.section] || ["Evidence In The Field"];
@@ -499,12 +827,71 @@ const compactComponentData = (spec, dur) => {
   }
   return {title, metric, items: items.length ? items : [{label: title}]};
 };
+const essentialComponentData = (kind) =>
+  ({
+    ManureRiskFork_v0tohhe3cvs6: {
+      title: "Fresh Manure",
+      items: [{label: "Food safety"}, {label: "Nutrient loss"}],
+    },
+    TwoFieldNutrientDecision_v0tohhe3cvs6: {
+      title: "Opposite Decisions",
+      items: [
+        {label: "Needs more"},
+        {label: "Already high"},
+      ],
+    },
+    ContourCropStack_v0tohhe3cvs6: {
+      title: "Less Soil Loss",
+      metric: "75%",
+      items: [{label: "Contour strips"}],
+    },
+    WaterClaimCaveat_v0tohhe3cvs6: {
+      title: "Water Storage Depends On",
+      items: [
+        {label: "Texture"},
+        {label: "Depth"},
+        {label: "Density"},
+        {label: "Starting moisture"},
+      ],
+    },
+    ActionThreshold_v0tohhe3cvs6: {
+      title: "Local Action Threshold",
+      items: [{label: "Pests"}, {label: "Allies"}],
+    },
+    StoredEnergyFiveSources_v0tohhe3cvs6: {
+      title: "Isolate Five Energy Sources",
+      items: [
+        {label: "Electrical"},
+        {label: "Hydraulic"},
+        {label: "Pneumatic"},
+        {label: "Mechanical"},
+        {label: "Thermal"},
+      ],
+    },
+    ThreeDecisionGates_v0tohhe3cvs6: {
+      title: "Three Decisions Need Proof",
+      items: [
+        {label: "Buyer first"},
+        {label: "Pest count"},
+        {label: "Isolate energy"},
+      ],
+    },
+    SuccessionRoles_v0tohhe3cvs6: {
+      title: "Succession Is A System",
+      items: [
+        {label: "Veterinarian"},
+        {label: "Grain"},
+        {label: "Feed"},
+        {label: "Safety"},
+      ],
+    },
+  })[kind] || null;
 const componentPhoto = (spec, moment) =>
   choosePhotoBackground(
     `${spec?.suggested_image_category || ""} ${moment.section} ${moment.dice} ${moment.muestra}`,
   );
 
-for (const [index, moment] of timeline.entries()) {
+for (const [index, moment] of pacedTimeline.entries()) {
   if (moment.tipo === "avatar") continue;
   const start = Number(moment.inicio.toFixed(2));
   const dur = Number((moment.fin - moment.inicio).toFixed(2));
@@ -514,55 +901,23 @@ for (const [index, moment] of timeline.entries()) {
   let chosen = null;
 
   if (moment.tipo === "clip") {
-    const categoryForSection = {
-      hook: "hook_closing_general",
-      secret_1_rotation: "rotation_roots",
-      secret_2_legume_repair: "rotation_roots",
-      secret_3_living_cover: "cover_soil_rain",
-      secret_4_mixed_farm_manure: "manure_compost_pasture",
-      secret_5_compaction: "contour_water_erosion",
-      secret_06_contour: "contour_water_erosion",
-      secret_07_beneficial_habitat: "insects_scouting",
-      secret_08_diversification_succession: "diversified_repair_workshop",
-      secret_09_scouting_thresholds: "insects_scouting",
-      secret_10_repair_diagnose_safely: "diversified_repair_workshop",
-      honest_limits_decision_loop: "diversified_repair_workshop",
-      recap_choose_one: "hook_closing_general",
-      cta_plain_almanac: "hook_closing_general",
-      teaser_hydraulic_ram_closing: "diversified_repair_workshop",
-    }[moment.section];
-    const exact = oldClips.find(
-      (clip) =>
-        !usedClips.has(clip.name) &&
-        Math.abs(Number(clip.start) - Number(moment.inicio)) < 2.4,
-    );
-    chosen =
-      exact ||
-      chooseBest(query, retryClips, usedClips, 2) ||
-      chooseBest(query, oldClips, usedClips, 2) ||
-      chooseBest(
-        query,
-        retryClips.filter((clip) => clip.category === categoryForSection),
-        usedClips,
-        0,
-      );
-    if (!chosen) {
-      const reusable = [...retryClips, ...oldClips]
-        .filter(
-          (clip) =>
-            (clipUseCount.get(clip.name) || 0) < 2 &&
-            start - (clipLastStart.get(clip.name) ?? -9999) > 90 &&
-            (!clip.category || clip.category === categoryForSection),
-        )
-        .map((clip) => ({clip, score: scoreText(query, clip.text)}))
-        .filter((entry) => entry.score >= 1)
-        .sort((left, right) => right.score - left.score);
-      chosen = reusable[0]?.clip || null;
+    if (forcedAvatarMoment(moment)) {
+      reportRows.push({
+        key,
+        start,
+        dur,
+        type: moment.tipo,
+        fallback: "avatar",
+        phrase: moment.dice,
+      });
+      continue;
     }
+    chosen = forcedMomentAsset(moment) || selectSectionClip(moment, query, start);
     if (chosen) {
-      usedClips.add(chosen.name);
-      clipUseCount.set(chosen.name, (clipUseCount.get(chosen.name) || 0) + 1);
-      clipLastStart.set(chosen.name, start);
+      if (/\.(mp4|webm|mov)$/i.test(chosen.file || "")) {
+        clipUseCount.set(chosen.name, (clipUseCount.get(chosen.name) || 0) + 1);
+        clipLastStart.set(chosen.name, start);
+      }
       expression = makeStockExpression(
         chosen,
         moment,
@@ -570,7 +925,7 @@ for (const [index, moment] of timeline.entries()) {
         Number(chosen.trim || 0),
       );
     } else {
-      chosen = chooseBest(query, photos, usedPhotos, 1);
+      chosen = selectSectionPhoto(moment, query, start);
       if (chosen) {
         expression = makeStockExpression(chosen, moment, dur);
       }
@@ -578,11 +933,7 @@ for (const [index, moment] of timeline.entries()) {
   }
 
   if (moment.tipo === "foto_web") {
-    const personalPool = photos.filter((photo) => photo.source === "gpt-image-personal");
-    chosen =
-      (moment.personal
-        ? chooseBest(query, personalPool, usedPhotos, 1)
-        : null) || chooseBest(query, photos, usedPhotos, 1);
+    chosen = selectSectionPhoto(moment, query, start);
     if (chosen) {
       expression = makeStockExpression(chosen, moment, dur);
     }
@@ -612,12 +963,20 @@ for (const [index, moment] of timeline.entries()) {
       expression = `<HedgerowReachMap ${props} fieldImage=${q(bg.src)} insectImages={${JSON.stringify([insect.src])}} />`;
     } else if (moment.kind === "ScoutingDecisionLoop_v0tohhe3cvs6") {
       expression = `<MeasuredDecisionLoop ${props} image=${q(bg.src)} />`;
+    } else if (moment.kind === "HydraulicInjectionSafety_v0tohhe3cvs6") {
+      expression = `<SafetyBoundaryPanel ${props} image=${q(bg.src)} mode="injection" />`;
+    } else if (moment.kind === "ProfessionalOnlyGrid_v0tohhe3cvs6") {
+      expression = `<SafetyBoundaryPanel ${props} image=${q(bg.src)} mode="boundary" />`;
     } else if (moment.kind === "PlainAlmanacContents_v0tohhe3cvs6") {
       expression = `<PlainAlmanacQuietCTA ${props} image=${q(bg.src)} />`;
+    } else if (moment.kind === "HydraulicRamExploded_v0tohhe3cvs6") {
+      expression = `<RamPumpExplainer ${props} image=${q(bg.src)} mode="parts" />`;
+    } else if (moment.kind === "RamPumpFailureConditions_v0tohhe3cvs6") {
+      expression = `<RamPumpExplainer ${props} image=${q(bg.src)} mode="failures" />`;
     } else {
-      const data = compactComponentData(spec, dur);
-      const component =
-        genericAliases[genericComponentOrdinal++ % genericAliases.length];
+      const data =
+        essentialComponentData(moment.kind) || compactComponentData(spec, dur);
+      const component = "FarmEvidenceBoard";
       expression = `<${component} ${props} image=${q(bg.src)} title=${q(data.title)}${data.metric ? ` metric=${q(data.metric)}` : ""} variant=${q(spec.variant)} items={${JSON.stringify(data.items)}} />`;
     }
   }
@@ -654,39 +1013,13 @@ for (const [index, moment] of timeline.entries()) {
 const cuesFile = `import React from "react";
 import {
   StockShot_v0tohhe3cvs6 as RawShot,
-  StockEvidenceCard,
-  StockShot_v0tohhe3cvs6 as AnnotatedImage,
-  StockShot_v0tohhe3cvs6 as CalloutMark,
-  StockShot_v0tohhe3cvs6 as KineticHeadline,
-  StockShot_v0tohhe3cvs6 as KineticQuote,
-  StockShot_v0tohhe3cvs6 as PhotoChecklist,
-  StockShot_v0tohhe3cvs6 as ReframeList,
-  StockShot_v0tohhe3cvs6 as RuleNumberScene,
-  StockShot_v0tohhe3cvs6 as SectionGrade,
-  StockShot_v0tohhe3cvs6 as SectionStinger,
-  StockShot_v0tohhe3cvs6 as TextCardReveal,
-  StockShot_v0tohhe3cvs6 as QuoteScene,
-  StockShot_v0tohhe3cvs6 as ImpactReveal,
-  StockShot_v0tohhe3cvs6 as JourneyCanvas,
-  StockShot_v0tohhe3cvs6 as SelectiveCompare,
-  StockShot_v0tohhe3cvs6 as ValueJourney,
+  StockCornerEvidence_v0tohhe3cvs6 as StockCornerEvidence,
+  StockTopRule_v0tohhe3cvs6 as StockTopRule,
+  StockFieldBadge_v0tohhe3cvs6 as StockFieldBadge,
+  StockLowerEvidence_v0tohhe3cvs6 as StockLowerEvidence,
 } from "./scenes/StockShot_v0tohhe3cvs6";
 import {
   FarmEvidenceBoard,
-  FarmEvidenceBoard_v0tohhe3cvs6 as BarCompare,
-  FarmEvidenceBoard_v0tohhe3cvs6 as OptionCompare,
-  FarmEvidenceBoard_v0tohhe3cvs6 as ProcessSteps,
-  FarmEvidenceBoard_v0tohhe3cvs6 as SafetyGrid,
-  FarmEvidenceBoard_v0tohhe3cvs6 as SplitList,
-  FarmEvidenceBoard_v0tohhe3cvs6 as Checklist,
-  FarmEvidenceBoard_v0tohhe3cvs6 as ChipsCluster,
-  FarmEvidenceBoard_v0tohhe3cvs6 as CostCumulative,
-  FarmEvidenceBoard_v0tohhe3cvs6 as CrossSection,
-  FarmEvidenceBoard_v0tohhe3cvs6 as ThreeMethods,
-  FarmEvidenceBoard_v0tohhe3cvs6 as AgedDoc,
-  FarmEvidenceBoard_v0tohhe3cvs6 as StatBig,
-  FarmEvidenceBoard_v0tohhe3cvs6 as WorldMapPins,
-  FarmEvidenceBoard_v0tohhe3cvs6 as HouseInspection,
 } from "./scenes/FarmEvidenceBoard_v0tohhe3cvs6";
 import {SoilMetricCards_v0tohhe3cvs6 as SoilMetricCards} from "./scenes/SoilMetricCards_v0tohhe3cvs6";
 import {CompostSafetyWindow_v0tohhe3cvs6 as CompostSafetyWindow} from "./scenes/CompostSafetyWindow_v0tohhe3cvs6";
@@ -696,6 +1029,8 @@ import {NoduleProofMacro_v0tohhe3cvs6 as NoduleProofMacro} from "./scenes/Nodule
 import {HedgerowReachMap_v0tohhe3cvs6 as HedgerowReachMap} from "./scenes/HedgerowReachMap_v0tohhe3cvs6";
 import {MeasuredDecisionLoop_v0tohhe3cvs6 as MeasuredDecisionLoop} from "./scenes/MeasuredDecisionLoop_v0tohhe3cvs6";
 import {PlainAlmanacQuietCTA_v0tohhe3cvs6 as PlainAlmanacQuietCTA} from "./scenes/PlainAlmanacQuietCTA_v0tohhe3cvs6";
+import {SafetyBoundaryPanel_v0tohhe3cvs6 as SafetyBoundaryPanel} from "./scenes/SafetyBoundaryPanel_v0tohhe3cvs6";
+import {RamPumpExplainer_v0tohhe3cvs6 as RamPumpExplainer} from "./scenes/RamPumpExplainer_v0tohhe3cvs6";
 
 export type PremiumCue_v0tohhe3cvs6 = {
   key: string;
@@ -833,7 +1168,7 @@ const report = {
     approved_photos: photos.length,
   },
   unique_used: {
-    clips: usedClips.size,
+    clips: clipUseCount.size,
     photos: usedPhotos.size,
   },
   clip_instances: [...clipUseCount.values()].reduce(

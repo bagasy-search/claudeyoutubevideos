@@ -181,3 +181,22 @@ export const StockShot_v0tohhe3cvs6: React.FC<
 
 export const StockEvidenceCard: React.FC<StockShot_v0tohhe3cvs6Props> =
   StockShot_v0tohhe3cvs6;
+
+// Deliberate documentary treatments. These are not naming aliases: each
+// wrapper locks a different composition so neighboring evidence shots do not
+// repeat the same card placement.
+export const StockCornerEvidence_v0tohhe3cvs6: React.FC<
+  StockShot_v0tohhe3cvs6Props
+> = (props) => <StockShot_v0tohhe3cvs6 {...props} layout="corner" />;
+
+export const StockTopRule_v0tohhe3cvs6: React.FC<
+  StockShot_v0tohhe3cvs6Props
+> = (props) => <StockShot_v0tohhe3cvs6 {...props} layout="rule" />;
+
+export const StockFieldBadge_v0tohhe3cvs6: React.FC<
+  StockShot_v0tohhe3cvs6Props
+> = (props) => <StockShot_v0tohhe3cvs6 {...props} layout="badge" />;
+
+export const StockLowerEvidence_v0tohhe3cvs6: React.FC<
+  StockShot_v0tohhe3cvs6Props
+> = (props) => <StockShot_v0tohhe3cvs6 {...props} layout="lower" />;
