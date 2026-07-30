@@ -72,7 +72,11 @@ const ComponentScene: React.FC<{scene:any}> = ({scene}) => {
 const VisualScene: React.FC<{scene:any}> = ({scene}) => {
   const frame = useCurrentFrame();
   const layer = scene.layers[0];
-  const fade = interpolate(frame, [0, 8, Math.max(9, scene.duration-8), scene.duration], [0,1,1,0], clamp);
+  const fadeFrames = Math.min(8, Math.max(1, Math.floor((scene.duration - 1) / 3)));
+  const fadeOutStart = Math.max(fadeFrames + 1, scene.duration - fadeFrames);
+  const fade = scene.duration <= 2
+    ? 1
+    : interpolate(frame, [0, fadeFrames, fadeOutStart, scene.duration], [0,1,1,0], clamp);
   const zoom = interpolate(frame, [0, Math.max(1, scene.duration)], [1.01, 1.09], clamp);
   if (layer.type === "component") return <ComponentScene scene={scene}/>;
   if (layer.type === "image") return <AbsoluteFill style={{background:"#111",opacity:fade}}>
