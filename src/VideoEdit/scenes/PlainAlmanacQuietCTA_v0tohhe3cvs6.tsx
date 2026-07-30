@@ -19,7 +19,7 @@ export type PlainAlmanacQuietCTA_v0tohhe3cvs6Props = {
 const OFFER_LINES = [
   "90 ILLUSTRATED METHODS",
   "13 PRACTICAL SECTIONS",
-  "$47 · PAY ONCE",
+  "$47 / PAY ONCE",
   "7-DAY REFUND PERIOD",
 ] as const;
 
