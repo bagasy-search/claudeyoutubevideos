@@ -1,0 +1,60 @@
+export const STOCK = [
+  "blue-molecules.mp4",
+  "clear-water.mp4",
+  "copper-wire.mp4",
+  "engine-bay.mp4",
+  "factory-energy.mp4",
+  "factory-pipes.mp4",
+  "gas-cloud.mp4",
+  "glass-jar.mp4",
+  "graphite.mp4",
+  "grocery-aisle.mp4",
+  "industrial-lab.mp4",
+  "lab-notebook.mp4",
+  "laboratory-bubbles.mp4",
+  "laboratory-hands.mp4",
+  "membrane.mp4",
+  "meter-reading.mp4",
+  "paper-capillary.mp4",
+  "power-supply.mp4",
+  "rust-metal.mp4",
+  "safety-glasses.mp4",
+  "salt-pour.mp4",
+  "solar-panels.mp4",
+  "steel-metal.mp4",
+  "temperature-probe.mp4",
+  "two-glasses.mp4",
+  "underwater-bubbles.mp4",
+  "water-ripples.mp4",
+  "white-powder.mp4",
+  "wind-turbines.mp4",
+  "workshop-air.mp4"
+];
+
+export const SECTIONS = [
+  {start: 0, end: 30, label: "GROCERY-STORE ELECTROLYSIS", accent: "#69e7ff", visual: "hook"},
+  {start: 30, end: 125, label: "SAFETY FIRST", accent: "#ffb54a", visual: "safety"},
+  {start: 125, end: 200, label: "HOW ELECTROLYSIS WORKS", accent: "#10d7c4", visual: "molecules"},
+  {start: 200, end: 380, label: "THE OPEN HHO CELL", accent: "#69e7ff", visual: "cell"},
+  {start: 380, end: 490, label: "POWER, HEAT & SCALE", accent: "#ffb54a", visual: "energy"},
+  {start: 490, end: 670, label: "THE SPLIT CELL", accent: "#10d7c4", visual: "split"},
+  {start: 670, end: 815, label: "MEASURE—DON'T IGNITE", accent: "#69e7ff", visual: "measure"},
+  {start: 815, end: 955, label: "EFFICIENCY & THE WATER-FUEL MYTH", accent: "#ffb54a", visual: "energy"},
+  {start: 955, end: 1045, label: "FAILURE SIGNS & SHUTDOWN", accent: "#ff735c", visual: "safety"},
+  {start: 1045, end: 1125, label: "REAL ENGINEERING", accent: "#10d7c4", visual: "split"},
+  {start: 1125, end: 1148.46, label: "MAKE THE MEASUREMENT BETTER", accent: "#69e7ff", visual: "final"}
+] as const;
+
+export const KEYWORDS = [
+  ["HYDROGEN", "OXYGEN", "REAL CHEMISTRY"],
+  ["OPEN AIR", "NO FLAME", "NO PRESSURE"],
+  ["ELECTRONS", "IONS", "BUBBLES"],
+  ["HHO ≠ FREE ENERGY", "OPEN JAR", "CURRENT LIMIT"],
+  ["V × A = POWER", "HEAT RISES", "RISK SCALES"],
+  ["TWO CHAMBERS", "ION BRIDGE", "LESS CROSSOVER"],
+  ["CURRENT", "TEMPERATURE", "TIME"],
+  ["ENERGY CARRIER", "NOT AN ENERGY SOURCE", "LOSSES MATTER"],
+  ["ODOR", "COLOR", "HEAT"],
+  ["MEMBRANES", "CATALYSTS", "CONTROL"],
+  ["SMALLER CELL", "BETTER DATA", "SAFER SCIENCE"]
+] as const;
