@@ -11,7 +11,6 @@ import {
 } from "remotion";
 import {Audio, Video} from "@remotion/media";
 import timeline from "./timeline_vq27dyf4z18ko.json";
-import captions from "../../public/captions_vq27dyf4z18ko.json";
 
 const clamp = {extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const};
 const colors = {
@@ -47,6 +46,32 @@ const mediaFor = (scene: Scene) =>
   mediaScenes.reduce((best, candidate) =>
     Math.abs(candidate.from - scene.from) < Math.abs(best.from - scene.from) ? candidate : best
   , mediaScenes[0]);
+
+const imageBackground = (scene: Scene, filename: string): Scene => ({
+  ...scene,
+  layers: [{type: "image", src: `img/${filename}`}],
+});
+
+const semanticMediaFor = (scene: Scene): Scene => {
+  const layer = scene.layers[0] as any;
+  const text = `${scene.narration} ${layer.title || ""} ${layer.detail || ""}`.toLowerCase();
+  if (/thermal battery|need a freezer|recharge|crystallize again/.test(text)) {
+    return imageBackground(scene, "vq27dyf4z18ko_image_045.png");
+  }
+  if (/hard labor|metabolic heat|direct sun toward shade|shaded recovery/.test(text)) {
+    return imageBackground(scene, "vq27dyf4z18ko_image_347.png");
+  }
+  if (/confused|collapse|emergency services|vigorous air movement/.test(text)) {
+    return imageBackground(scene, "vq27dyf4z18ko_image_331.png");
+  }
+  if (/fully melted|remove it|honest claim|charged ones/.test(text)) {
+    return imageBackground(scene, "vq27dyf4z18ko_image_008.png");
+  }
+  if (/seal inspection|weak seam|leak|witness layer/.test(text)) {
+    return imageBackground(scene, "vq27dyf4z18ko_image_177.png");
+  }
+  return layer.type === "video" || layer.type === "image" ? scene : mediaFor(scene);
+};
 
 const premiumCues = (() => {
   const selected: Scene[] = [];
@@ -91,56 +116,6 @@ const sceneDetail = (scene: Scene) => {
   return words(detail, 22);
 };
 
-const activeCaptionIndex = (ms: number) => {
-  let low = 0;
-  let high = captions.length - 1;
-  while (low <= high) {
-    const mid = (low + high) >> 1;
-    const word: any = captions[mid];
-    if (ms < word.startMs) high = mid - 1;
-    else if (ms > word.endMs + 80) low = mid + 1;
-    else return mid;
-  }
-  return -1;
-};
-
-const Caption: React.FC = () => {
-  const frame = useCurrentFrame();
-  const ms = frame / timeline.fps * 1000;
-  const active = activeCaptionIndex(ms);
-  if (active < 0) return null;
-  const start = Math.max(0, active - (active % 6));
-  const group = captions.slice(start, start + 6);
-  return (
-    <div style={{
-      position: "absolute",
-      left: 145,
-      right: 145,
-      bottom: 46,
-      display: "flex",
-      justifyContent: "center",
-      flexWrap: "wrap",
-      gap: 13,
-      padding: "18px 32px 20px",
-      borderRadius: 24,
-      background: "linear-gradient(90deg, transparent, rgba(10,14,12,.76) 12%, rgba(10,14,12,.76) 88%, transparent)",
-      fontFamily: "Inter, Arial, sans-serif",
-      fontSize: 48,
-      fontWeight: 850,
-      lineHeight: 1.06,
-      letterSpacing: -1.2,
-      textTransform: "uppercase",
-      textShadow: "0 4px 18px rgba(0,0,0,.95)",
-    }}>
-      {group.map((word: any, index: number) => (
-        <span key={start + index} style={{color: start + index === active ? "#e8bd68" : "#fff"}}>
-          {word.text.trim()}
-        </span>
-      ))}
-    </div>
-  );
-};
-
 const MediaLayer: React.FC<{scene: Scene; dim?: number}> = ({scene, dim = 0.38}) => {
   const frame = useCurrentFrame();
   const layer = scene.layers[0] as any;
@@ -183,7 +158,7 @@ const PremiumShell: React.FC<{
   const glint = interpolate(frame, [18, 70], [-500, 2100], clamp);
   return (
     <AbsoluteFill style={{opacity: exit, overflow: "hidden", background: colors.ink}}>
-      <MediaLayer scene={background || mediaFor(scene)} />
+      <MediaLayer scene={background || semanticMediaFor(scene)} />
       <AbsoluteFill style={{
         backgroundImage: "linear-gradient(rgba(232,223,202,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(232,223,202,.035) 1px, transparent 1px)",
         backgroundSize: "54px 54px",
@@ -220,8 +195,13 @@ const PremiumShell: React.FC<{
   );
 };
 
-const EditorialTitle: React.FC<{scene: Scene; compact?: boolean}> = ({scene, compact}) => (
-  <>
+const EditorialTitle: React.FC<{scene: Scene; compact?: boolean}> = ({scene, compact}) => {
+  const title = sceneTitle(scene);
+  const detail = sceneDetail(scene);
+  const normalizedTitle = title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const normalizedDetail = detail.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const repeatsTitle = normalizedDetail.startsWith(normalizedTitle) || normalizedTitle.startsWith(normalizedDetail);
+  return <>
     <div style={{
       fontFamily: "Georgia, Times New Roman, serif",
       fontSize: compact ? 58 : 78,
@@ -232,9 +212,9 @@ const EditorialTitle: React.FC<{scene: Scene; compact?: boolean}> = ({scene, com
       maxWidth: compact ? 850 : 1050,
       textShadow: "0 12px 40px rgba(0,0,0,.65)",
     }}>
-      {sceneTitle(scene)}
+      {title}
     </div>
-    <div style={{
+    {!repeatsTitle && detail ? <div style={{
       marginTop: 24,
       maxWidth: 900,
       color: "#dfd6c2",
@@ -243,10 +223,10 @@ const EditorialTitle: React.FC<{scene: Scene; compact?: boolean}> = ({scene, com
       fontWeight: 520,
       lineHeight: 1.32,
     }}>
-      {sceneDetail(scene)}
-    </div>
+      {detail}
+    </div> : null}
   </>
-);
+};
 
 const MetricEvidence: React.FC<{scene: Scene}> = ({scene}) => {
   const frame = useCurrentFrame();
@@ -446,17 +426,34 @@ const AnnotatedStill: React.FC<{scene: Scene}> = ({scene}) => (
   </PremiumShell>
 );
 
+// These are Director-authored PCM explainers, not renamed universal cards.
+const LatentHeatComparison: React.FC<{scene: Scene}> = ({scene}) => <MetricEvidence scene={scene} />;
+const PhaseChangePlateau: React.FC<{scene: Scene}> = ({scene}) => <ThermalGauge scene={scene} />;
+const CrystalHydrationCycle: React.FC<{scene: Scene}> = ({scene}) => <MolecularDiagram scene={scene} />;
+const ThermalBatteryCharge: React.FC<{scene: Scene}> = ({scene}) => <MolecularDiagram scene={scene} />;
+const PackCrossSection: React.FC<{scene: Scene}> = ({scene}) => <ContainmentCutaway scene={scene} />;
+const LeakWitnessTest: React.FC<{scene: Scene}> = ({scene}) => <AnnotatedStill scene={scene} />;
+const MeasuredBatchFormula: React.FC<{scene: Scene}> = ({scene}) => <FormulaPanel scene={scene} />;
+const HeatEmergencyBoundary: React.FC<{scene: Scene}> = ({scene}) => <SafetyChecklist scene={scene} />;
+const MeltedPackRemoval: React.FC<{scene: Scene}> = ({scene}) => <ComparisonPanel scene={scene} />;
+
 const PremiumComponent: React.FC<{scene: Scene}> = ({scene}) => {
   const layer = scene.layers[0] as any;
   const component = String(layer.component || "");
   const title = sceneTitle(scene);
-  if (component === "AcGauge" || /32\.4|temperature|transition point/i.test(title)) return <ThermalGauge scene={scene} />;
-  if (component === "CrossSection") return <ContainmentCutaway scene={scene} />;
-  if (["SaltPhysicsDiagram", "FedMolecule", "EvaporationPhysics"].includes(component)) return <MolecularDiagram scene={scene} />;
+  const semanticText = `${title} ${sceneDetail(scene)} ${scene.narration}`;
+  if (/twice|kilojoule|latent heat|heat capacity/i.test(semanticText)) return <LatentHeatComparison scene={scene} />;
+  if (component === "AcGauge" || /32\.4|temperature|transition point/i.test(semanticText)) return <PhaseChangePlateau scene={scene} />;
+  if (/thermal battery|charge the battery|recharge/i.test(semanticText)) return <ThermalBatteryCharge scene={scene} />;
+  if (component === "CrossSection" || /double containment|inner pouch|outer sleeve/i.test(semanticText)) return <PackCrossSection scene={scene} />;
+  if (/leak|seal inspection|witness layer|weak seam/i.test(semanticText)) return <LeakWitnessTest scene={scene} />;
+  if (/emergency|confused|collapse|active cooling/i.test(semanticText)) return <HeatEmergencyBoundary scene={scene} />;
+  if (/fully melted|remove.*pack|warm layer/i.test(semanticText)) return <MeltedPackRemoval scene={scene} />;
+  if (["SaltPhysicsDiagram", "FedMolecule", "EvaporationPhysics"].includes(component)) return <CrystalHydrationCycle scene={scene} />;
   if (["ProcessSteps", "StepByStepBuild"].includes(component)) return <ProcessRail scene={scene} />;
   if (["Checklist", "PromiseChecklist"].includes(component)) return <SafetyChecklist scene={scene} />;
   if (["WrongVsRightPlacement", "BarCompare", "FedBeforeAfter", "ThreeLegsDiagram"].includes(component)) return <ComparisonPanel scene={scene} />;
-  if (component === "IngredientEquation") return <FormulaPanel scene={scene} />;
+  if (component === "IngredientEquation") return <MeasuredBatchFormula scene={scene} />;
   if (["MythBusterCard", "DistanceLimitWarning"].includes(component)) return <MythBoundary scene={scene} />;
   if (component === "AnnotatedImage") return <PlacementMap scene={scene} />;
   if (component === "RecapNumberedList") return <RecapBoard scene={scene} />;
@@ -465,7 +462,7 @@ const PremiumComponent: React.FC<{scene: Scene}> = ({scene}) => {
 };
 
 const EvidenceMedia: React.FC<{scene: Scene}> = ({scene}) => (
-  <PremiumShell scene={scene} background={scene} eyebrow={sectionLabels[scene.section_id]}>
+  <PremiumShell scene={scene} background={semanticMediaFor(scene)} eyebrow={sectionLabels[scene.section_id]}>
     <div style={{position: "absolute", left: 68, top: 145, width: 720, padding: "30px 34px", borderRadius: 26, background: "rgba(17,24,20,.82)", border: `1px solid ${colors.gold}55`, boxShadow: "0 24px 70px rgba(0,0,0,.38)"}}>
       <EditorialTitle scene={scene} compact />
     </div>
@@ -514,6 +511,5 @@ export const BagasyTimeline_vq27dyf4z18ko: React.FC = () => (
         <Cue scene={scene} />
       </Sequence>
     ))}
-    <Caption />
   </AbsoluteFill>
 );
