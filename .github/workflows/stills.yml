@@ -47,10 +47,13 @@ jobs:
         run: |
           n=0
           until gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" \
-                  --pattern "assets-${{ github.event.inputs.slug }}.tar" --dir . --clobber; do
+                  --pattern "assets-${{ github.event.inputs.slug }}.tar*" --dir . --clobber; do
             n=$((n+1)); [ "$n" -ge 4 ] && { echo "no pude bajar los assets tras $n intentos"; exit 1; }
             echo "reintento $n"; sleep $((10 * n))
           done
+          if ls "assets-${{ github.event.inputs.slug }}.tar.part-"* >/dev/null 2>&1; then
+            cat "assets-${{ github.event.inputs.slug }}.tar.part-"* > "assets-${{ github.event.inputs.slug }}.tar"
+          fi
           mkdir -p public
           tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
       - name: bundle UNA vez
