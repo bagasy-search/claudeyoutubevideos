@@ -1,0 +1,2900 @@
+{
+  "version": 1,
+  "slug": "v48vr0jexdrms",
+  "composition_id": "Bagasy-v48vr0jexdrms",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 42909,
+  "audio_src": "avatar_v48vr0jexdrms.mp4",
+  "captions_src": "captions_v48vr0jexdrms.json",
+  "scenes": [
+    {
+      "id": "s00_hook_m01",
+      "section_id": "s00_hook",
+      "from": 0,
+      "duration": 220,
+      "narration": "A plain roof, a buried tank, and gravity",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v48vr0jexdrms.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m02",
+      "section_id": "s00_hook",
+      "from": 220,
+      "duration": 224,
+      "narration": "thousands of gallons without a power bill",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RawShot",
+          "title": "WATER IN · POWER: 0",
+          "detail": "Close real footage of rain sheeting from an Amish-style metal barn roof; a small corner ledger shows water gained and energy spent."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m03",
+      "section_id": "s00_hook",
+      "from": 444,
+      "duration": 309,
+      "narration": "one inch of rain on one thousand square feet",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RoofYieldEquation",
+          "title": "1,000 ft² · 1 in",
+          "detail": "Measured roof-footprint diagram draws a 1,000 ft² rectangle and a one-inch rain layer."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m04",
+      "section_id": "s00_hook",
+      "from": 753,
+      "duration": 163,
+      "narration": "yields about six hundred twenty-three gallons",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "StatBig",
+          "title": "≈623 gal",
+          "detail": "The roof diagram resolves into a calibrated tank gauge stopping at 623 gallons."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m05",
+      "section_id": "s00_hook",
+      "from": 916,
+      "duration": 292,
+      "narration": "more water in one storm than many families could carry",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "ONE STORM · A MONTH OF CARRYING",
+          "detail": "Split visual compares one storm-fed barn tank with a month-long chain of hand-carried buckets."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m06",
+      "section_id": "s00_hook",
+      "from": 1208,
+      "duration": 225,
+      "narration": "free water is not automatically safe water",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/FreeVsSafeSplit",
+          "title": "FREE ≠ SAFE",
+          "detail": "Avatar-centered safety split: clean-looking water on one side, invisible hazard particles and a test vial on the other."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m07",
+      "section_id": "s00_hook",
+      "from": 1433,
+      "duration": 106,
+      "narration": "pressure, storage, contamination",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "DiagramBoard",
+          "title": "PRESSURE · STORAGE · CONTAMINATION",
+          "detail": "Three-part risk triangle pulses one corner at a time around a household water line."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m08",
+      "section_id": "s00_hook",
+      "from": 1539,
+      "duration": 143,
+      "narration": "there are eleven systems here",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ElevenSystemMap",
+          "title": "COLLECT · MOVE · STORE · PROTECT",
+          "detail": "A property map reveals eleven numbered nodes grouped as collect, move, store, and protect."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m09",
+      "section_id": "s00_hook",
+      "from": 1682,
+      "duration": 240,
+      "narration": "the last one exposes the innocent-looking plumbing mistake",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/HiddenCrossConnectionTease",
+          "title": "THE HIDDEN LINK",
+          "detail": "Two pipes approach a hidden junction; the final connection stays masked with a warning ring."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m10",
+      "section_id": "s00_hook",
+      "from": 1922,
+      "duration": 200,
+      "narration": "roof, slope, spring, well, or pond",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SourceChoiceMap",
+          "title": "ROOF · SLOPE · SPRING · WELL · POND",
+          "detail": "Five source icons pin onto a topographic homestead map around the full-frame avatar."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m11",
+      "section_id": "s00_hook",
+      "from": 2122,
+      "duration": 160,
+      "narration": "no machine creates free water forever",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "SplitList",
+          "title": "NO POWER BILL · NOT ZERO COST",
+          "detail": "A clean myth-versus-reality balance shows free energy inputs against tanks, pipe, filters, and maintenance."
+        }
+      ]
+    },
+    {
+      "id": "s00_hook_m12",
+      "section_id": "s00_hook",
+      "from": 2282,
+      "duration": 326,
+      "narration": "never spend energy where height can do the job",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/GravityThesis",
+          "title": "LET HEIGHT WORK",
+          "detail": "A single blue gallon climbs with a pump, then takes the gravity route downhill as the pump icon fades."
+        }
+      ]
+    },
+    {
+      "id": "s01_principle_m01",
+      "section_id": "s01_principle",
+      "from": 2608,
+      "duration": 280,
+      "narration": "tanks cost money, pipes break, filters need service",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RawShot",
+          "title": "BUILD · MAINTAIN · TEST",
+          "detail": "Four real maintenance details—tank fitting, cracked pipe, filter cartridge, well-test bottle—appear as a quiet evidence strip."
+        }
+      ]
+    },
+    {
+      "id": "s01_principle_m02",
+      "section_id": "s01_principle",
+      "from": 2888,
+      "duration": 123,
+      "narration": "communities differ by district",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "AnnotatedImage",
+          "title": "NO SINGLE BLUEPRINT",
+          "detail": "Regional map uses several unlabeled community clusters rather than implying one universal Amish blueprint."
+        }
+      ]
+    },
+    {
+      "id": "s01_principle_m03",
+      "section_id": "s01_principle",
+      "from": 3011,
+      "duration": 231,
+      "narration": "collect locally, let gravity work, keep it simple",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "Checklist",
+          "title": "COLLECT LOCAL · USE HEIGHT · KEEP IT SIMPLE · PROTECT THE SOURCE",
+          "detail": "Four compact principle seals assemble around the avatar."
+        }
+      ]
+    },
+    {
+      "id": "s01_principle_m04",
+      "section_id": "s01_principle",
+      "from": 3242,
+      "duration": 158,
+      "narration": "height can do the job",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "JourneyCanvas",
+          "title": "HEIGHT → PRESSURE",
+          "detail": "Topographic line animates from a high tank to a lower tap, leaving a deliberate clean avatar hold at the end."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m01",
+      "section_id": "s02_roof_catchment",
+      "from": 3400,
+      "duration": 198,
+      "narration": "the first system is roof catchment",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 1 · ROOF CATCHMENT",
+          "detail": "Editorial system marker sits beside the avatar while real rain begins behind a narrow masked window."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m02",
+      "section_id": "s02_roof_catchment",
+      "from": 3598,
+      "duration": 130,
+      "narration": "a thirty-by-forty-foot barn",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "AnnotatedImage",
+          "title": "30 ft · 40 ft · 1,200 ft²",
+          "detail": "Overhead barn footprint draws dimension arrows across the horizontal roof projection."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m03",
+      "section_id": "s02_roof_catchment",
+      "from": 3728,
+      "duration": 127,
+      "narration": "one inch of rain",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RoofYieldEquation",
+          "title": "1 in × 1,200 ft²",
+          "detail": "A one-inch depth marker rises over the 1,200 ft² footprint."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m04",
+      "section_id": "s02_roof_catchment",
+      "from": 3855,
+      "duration": 293,
+      "narration": "the theoretical yield is about seven hundred forty-eight gallons",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "StatBig",
+          "title": "≈748 gal · THEORETICAL",
+          "detail": "Formula resolves into a 748-gallon tank silhouette with an explicit theoretical tag."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m05",
+      "section_id": "s02_roof_catchment",
+      "from": 4148,
+      "duration": 305,
+      "narration": "allow for splash, dirty initial runoff, and incomplete collection",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/CatchmentLossGauge",
+          "title": "SPLASH · FIRST FLUSH · MISSED FLOW",
+          "detail": "Three measured loss wedges peel away from the ideal tank volume."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m06",
+      "section_id": "s02_roof_catchment",
+      "from": 4453,
+      "duration": 172,
+      "narration": "rain hits a suitable roof",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RawShot",
+          "title": "FREE Water Forever! 11 Off-Grid Systems The Amish Have Used for 200 Years",
+          "detail": "Macro footage follows drops striking a clean metal roof."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m07",
+      "section_id": "s02_roof_catchment",
+      "from": 4625,
+      "duration": 315,
+      "narration": "gutters carry it to a downspout; a screen stops leaves",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ProcessSteps",
+          "title": "ROOF · GUTTER · SCREEN · DOWNSPOUT",
+          "detail": "Animated path traces roof to gutter to leaf screen to downspout."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m08",
+      "section_id": "s02_roof_catchment",
+      "from": 4940,
+      "duration": 309,
+      "narration": "a first-flush diverter sends the dirtiest opening flow away",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/FirstFlushPath",
+          "title": "FIRST RUNOFF · TO DIVERSION",
+          "detail": "Custom pipe cutaway shows the first dark runoff filling the diversion chamber before clean flow changes route."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m09",
+      "section_id": "s02_roof_catchment",
+      "from": 5249,
+      "duration": 185,
+      "narration": "dust, pollen, bird droppings, insects",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "DUST · POLLEN · DROPPINGS · INSECTS",
+          "detail": "Roof debris appears as four evidence callouts over a close roof texture."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m10",
+      "section_id": "s02_roof_catchment",
+      "from": 5434,
+      "duration": 187,
+      "narration": "it does not sterilize the water",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/TreatmentBoundary",
+          "title": "REDUCES DEBRIS · DOES NOT DISINFECT",
+          "detail": "A red boundary line separates debris reduction from disinfection."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m11",
+      "section_id": "s02_roof_catchment",
+      "from": 5621,
+      "duration": 219,
+      "narration": "metal roofing is often easier to keep clean",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "EASIER TO CLEAN · CHECK COATINGS & METALS",
+          "detail": "Side-by-side closeups compare smooth metal with rough porous roofing; caution chips flag coatings and lead."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m12",
+      "section_id": "s02_roof_catchment",
+      "from": 5840,
+      "duration": 132,
+      "narration": "measure the horizontal footprint",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/HorizontalFootprint",
+          "title": "USE THE FOOTPRINT",
+          "detail": "Sloped-roof geometry rotates to a flat plan view; the footprint remains highlighted while slope area fades."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m13",
+      "section_id": "s02_roof_catchment",
+      "from": 5972,
+      "duration": 277,
+      "narration": "place a clean five-gallon bucket beneath one short downspout",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RawShot",
+          "title": "5-GAL TEST",
+          "detail": "Real demonstration shot frames bucket, downspout, stopwatch, and safe footing."
+        }
+      ]
+    },
+    {
+      "id": "s02_roof_catchment_m14",
+      "section_id": "s02_roof_catchment",
+      "from": 6249,
+      "duration": 347,
+      "narration": "the roof stops looking like shelter and starts looking like a watershed",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ImpactReveal",
+          "title": "YOUR ROOF IS A WATERSHED",
+          "detail": "Aerial barn roof morphs into a blue watershed map flowing toward storage."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m01",
+      "section_id": "s03_cistern",
+      "from": 6596,
+      "duration": 190,
+      "narration": "the second system, the buried cistern",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 2 · BURIED CISTERN",
+          "detail": "System marker reveals a buried tank beneath a barnyard while the avatar remains full frame."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m02",
+      "section_id": "s03_cistern",
+      "from": 6786,
+      "duration": 439,
+      "narration": "a cistern turns a short storm into a long supply",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/StormToDryTimeline",
+          "title": "SHORT STORM · LONG SUPPLY",
+          "detail": "Storm timeline deposits water into storage, then stretches into a dry-period calendar."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m03",
+      "section_id": "s03_cistern",
+      "from": 7225,
+      "duration": 361,
+      "narration": "above-ground tanks are convenient, but buried storage remains dark",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CrossSection",
+          "title": "ABOVE GROUND · BURIED",
+          "detail": "Split cutaway compares sun-exposed tank and earth-shielded cistern."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m04",
+      "section_id": "s03_cistern",
+      "from": 7586,
+      "duration": 116,
+      "narration": "darkness discourages algae; cooler conditions",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/CisternEnvironment",
+          "title": "LESS LIGHT · SMALLER TEMPERATURE SWINGS",
+          "detail": "Light and temperature gauges diminish below grade beside an algae-growth indicator."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m05",
+      "section_id": "s03_cistern",
+      "from": 7702,
+      "duration": 216,
+      "narration": "stone, brick, masonry, concrete, purpose-built plastic",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "AgedDoc",
+          "title": "HISTORIC · MODERN",
+          "detail": "Material timeline pairs historic masonry details with modern rated tanks."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m06",
+      "section_id": "s03_cistern",
+      "from": 7918,
+      "duration": 210,
+      "narration": "it must be rated for burial",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/BurialLoadCutaway",
+          "title": "BURIAL-RATED",
+          "detail": "Soil-pressure arrows press against a correctly ribbed underground tank."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m07",
+      "section_id": "s03_cistern",
+      "from": 8128,
+      "duration": 189,
+      "narration": "secure cover, screened ventilation and overflow",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "SECURE COVER · SCREENED VENT · SCREENED OVERFLOW",
+          "detail": "Three callouts land on the lid, screened vent, and screened overflow."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m08",
+      "section_id": "s03_cistern",
+      "from": 8317,
+      "duration": 175,
+      "narration": "grade must carry surface runoff away",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/CisternGradeSection",
+          "title": "DRAIN AWAY",
+          "detail": "Ground-section arrows show rain moving around, not toward, the cistern opening."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m09",
+      "section_id": "s03_cistern",
+      "from": 8492,
+      "duration": 228,
+      "narration": "do not bury an ordinary above-ground tank",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "WRONG TANK · BURIAL-RATED TANK",
+          "detail": "Incorrect tank visibly buckles under soil load beside a correctly rated tank."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m10",
+      "section_id": "s03_cistern",
+      "from": 8720,
+      "duration": 191,
+      "narration": "never climb into a cistern",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "MistakeCard",
+          "title": "CONFINED SPACE · DO NOT ENTER",
+          "detail": "Avatar holds center while a confined-space danger boundary locks over the access opening."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m11",
+      "section_id": "s03_cistern",
+      "from": 8911,
+      "duration": 283,
+      "narration": "fifty gallons a day; one thousand gallons; twenty days",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DemandReserveGauge",
+          "title": "1,000 gal ÷ 50 gal/day · 20 DAYS",
+          "detail": "Demand gauge performs 1,000 ÷ 50 and lands on a twenty-day reserve."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m12",
+      "section_id": "s03_cistern",
+      "from": 9194,
+      "duration": 201,
+      "narration": "livestock, laundry, and a July garden",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "HOUSE · ANIMALS · LAUNDRY · GARDEN",
+          "detail": "Stacked demand bars add household, animals, laundry, and irrigation."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m13",
+      "section_id": "s03_cistern",
+      "from": 9395,
+      "duration": 158,
+      "narration": "sized around the longest likely gap",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DryGapSizer",
+          "title": "DRY GAP · RESERVE",
+          "detail": "Dry-spell timeline expands while the tank gauge declines toward a protected reserve band."
+        }
+      ]
+    },
+    {
+      "id": "s03_cistern_m14",
+      "section_id": "s03_cistern",
+      "from": 9553,
+      "duration": 407,
+      "narration": "a powerful pump attached to an empty tank is still an empty tank",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ImpactReveal",
+          "title": "SOURCE → STORAGE → PUMP",
+          "detail": "Shiny pump is foregrounded, then the empty-source indicator takes priority and the pump dims."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m01",
+      "section_id": "s04_spring_box",
+      "from": 9960,
+      "duration": 137,
+      "narration": "the protected spring box",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 3 · PROTECTED SPRING BOX",
+          "detail": "System marker overlays a real hillside spring emergence without hiding the avatar."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m02",
+      "section_id": "s04_spring_box",
+      "from": 10097,
+      "duration": 306,
+      "narration": "one gallon per minute totals fourteen hundred forty gallons",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ContinuousFlowCounter",
+          "title": "1 gal/min · 1,440 gal/day",
+          "detail": "A one-gallon pulse repeats into a 24-hour counter ending at 1,440 gallons."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m03",
+      "section_id": "s04_spring_box",
+      "from": 10403,
+      "duration": 83,
+      "narration": "groundwater reaching the surface",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CrossSection",
+          "title": "GROUNDWATER · EMERGENCE",
+          "detail": "Hillside cross-section shows groundwater meeting the land surface."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m04",
+      "section_id": "s04_spring_box",
+      "from": 10486,
+      "duration": 219,
+      "narration": "intercepts water close to its emergence point",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SpringCapturePosition",
+          "title": "CAPTURE HERE · NOT DOWNSTREAM",
+          "detail": "Collection zone slides uphill from a muddy puddle to the clean emergence point."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m05",
+      "section_id": "s04_spring_box",
+      "from": 10705,
+      "duration": 195,
+      "narration": "collection material, sealed chamber, outlet",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SpringBoxCrossSection",
+          "title": "COLLECTION · CHAMBER · OUTLET",
+          "detail": "Custom spring-box cross-section reveals graded collection stone, inlet, chamber, and outlet in sequence."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m06",
+      "section_id": "s04_spring_box",
+      "from": 10900,
+      "duration": 202,
+      "narration": "overflow prevents water from backing up",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SpringOverflowPath",
+          "title": "OUTLET · OVERFLOW",
+          "detail": "Flow arrows split cleanly between outlet and overflow while the spring face stays unpressurized."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m07",
+      "section_id": "s04_spring_box",
+      "from": 11102,
+      "duration": 249,
+      "narration": "a secure cover excludes animals, insects, and debris",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "SECURE COVER · SCREEN OPENINGS",
+          "detail": "Real spring-box lid receives three exclusion callouts."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m08",
+      "section_id": "s04_spring_box",
+      "from": 11351,
+      "duration": 143,
+      "narration": "the critical word is protected",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "SplitList",
+          "title": "DECORATIVE · PROTECTED",
+          "detail": "A muddy decorative box and a protected emergence are contrasted side by side."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m09",
+      "section_id": "s04_spring_box",
+      "from": 11494,
+      "duration": 280,
+      "narration": "septic systems, livestock lots, flooding, fuel spills",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/UphillContaminationMap",
+          "title": "SEPTIC · LIVESTOCK · FLOODING · FUEL",
+          "detail": "Uphill hazard map sends dotted contamination routes toward the spring below."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m10",
+      "section_id": "s04_spring_box",
+      "from": 11774,
+      "duration": 138,
+      "narration": "crystal-clear water can still carry",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ClearIsNotTested",
+          "title": "CLEAR ≠ TESTED",
+          "detail": "Clear glass of spring water is paired with lab icons for microbes, nitrates, and chemicals."
+        }
+      ]
+    },
+    {
+      "id": "s04_spring_box_m11",
+      "section_id": "s04_spring_box",
+      "from": 11912,
+      "duration": 314,
+      "narration": "test through a qualified laboratory; retest after changes",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "Checklist",
+          "title": "BASELINE · AFTER FLOODS · AFTER CHANGES",
+          "detail": "Testing timeline marks baseline, floods, construction, odor, and local schedule."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m01",
+      "section_id": "s05_gravity_line",
+      "from": 12226,
+      "duration": 318,
+      "narration": "the fourth system moves its water without electricity",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 4 · GRAVITY LINE",
+          "detail": "System marker traces a blue line from high spring to low destination."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m02",
+      "section_id": "s05_gravity_line",
+      "from": 12544,
+      "duration": 231,
+      "narration": "put the spring higher than the destination",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/HeadPressureColumn",
+          "title": "SOURCE · DESTINATION · VERTICAL DROP",
+          "detail": "Topographic profile pins source and outlet with a vertical height bracket."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m03",
+      "section_id": "s05_gravity_line",
+      "from": 12775,
+      "duration": 389,
+      "narration": "every vertical foot produces about zero point four three PSI",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/HeadPressureColumn",
+          "title": "1 ft ≈ 0.43 PSI",
+          "detail": "Pressure column increments one foot and resolves to 0.43 PSI."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m04",
+      "section_id": "s05_gravity_line",
+      "from": 13164,
+      "duration": 301,
+      "narration": "ten feet gives roughly four point three PSI",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "StatBig",
+          "title": "10 ft · ≈4.3 PSI",
+          "detail": "First calibration point lands on a vertical pressure ruler."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m05",
+      "section_id": "s05_gravity_line",
+      "from": 13465,
+      "duration": 309,
+      "narration": "fifty feet gives about twenty-one and a half PSI",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/HeadPressureColumn",
+          "title": "50 ft · ≈21.5 PSI",
+          "detail": "Second calibration point rises to a usable midrange band."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m06",
+      "section_id": "s05_gravity_line",
+      "from": 13774,
+      "duration": 280,
+      "narration": "one hundred feet gives about forty-three PSI",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PressureRatingBoundary",
+          "title": "100 ft · ≈43 PSI · CHECK RATINGS",
+          "detail": "Third calibration point enters a caution zone and highlights component ratings."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m07",
+      "section_id": "s05_gravity_line",
+      "from": 14054,
+      "duration": 242,
+      "narration": "the winding length does not create static pressure",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "SAME ELEVATION · SAME STATIC HEAD",
+          "detail": "A winding pipe and a straight pipe share the same end elevations and static gauge."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m08",
+      "section_id": "s05_gravity_line",
+      "from": 14296,
+      "duration": 205,
+      "narration": "length, diameter, bends, valves, and flow",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/FrictionLossPipe",
+          "title": "LENGTH · DIAMETER · BENDS · VALVES · FLOW",
+          "detail": "Friction-loss pipe accumulates five labeled resistance points as flow increases."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m09",
+      "section_id": "s05_gravity_line",
+      "from": 14501,
+      "duration": 224,
+      "narration": "a skinny pipe can disappoint you",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "NARROW · LARGER",
+          "detail": "Equal head feeds narrow and wide pipes; delivery bars diverge as demand rises."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m10",
+      "section_id": "s05_gravity_line",
+      "from": 14725,
+      "duration": 275,
+      "narration": "bury it below frost depth; protect crossings; add shutoffs",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "AnnotatedImage",
+          "title": "LOCAL FROST DEPTH · PROTECTED CROSSING · ACCESSIBLE SHUTOFF",
+          "detail": "Ground section labels frost line, protected crossing, and accessible shutoff."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m11",
+      "section_id": "s05_gravity_line",
+      "from": 15000,
+      "duration": 257,
+      "narration": "add pressure regulation when elevation produces more pressure",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PressureRegulatorPath",
+          "title": "HIGH HEAD · REGULATED",
+          "detail": "Regulator sits between red high-head zone and green fixture zone."
+        }
+      ]
+    },
+    {
+      "id": "s05_gravity_line_m12",
+      "section_id": "s05_gravity_line",
+      "from": 15257,
+      "duration": 187,
+      "narration": "release trapped air at high points",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/AirLockCrest",
+          "title": "AIR POCKET · RELEASE POINT",
+          "detail": "Tiny air pocket stops a large water line at a crest; an air-release point clears it."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m01",
+      "section_id": "s06_springhouse",
+      "from": 15444,
+      "duration": 229,
+      "narration": "the fifth system uses a spring twice",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 5 · SPRINGHOUSE",
+          "detail": "System marker shows the same stream entering a springhouse and leaving downhill."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m02",
+      "section_id": "s06_springhouse",
+      "from": 15673,
+      "duration": 227,
+      "narration": "a shaded structure around flowing spring water",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RawShot",
+          "title": "FREE Water Forever! 11 Off-Grid Systems The Amish Have Used for 200 Years",
+          "detail": "Historic-style springhouse footage reveals water channel and shaded masonry."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m03",
+      "section_id": "s06_springhouse",
+      "from": 15900,
+      "duration": 218,
+      "narration": "containers sat in or beside a channel",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SpringhouseHeatPath",
+          "title": "HEAT OUT · FLOW THROUGH",
+          "detail": "Cutaway tracks heat leaving milk cans into moving cold water."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m04",
+      "section_id": "s06_springhouse",
+      "from": 16118,
+      "duration": 229,
+      "narration": "thick masonry, shade, ventilation, and earth contact",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "DiagramBoard",
+          "title": "MASONRY · SHADE · VENTILATION · EARTH",
+          "detail": "Four environmental buffers appear around a springhouse cross-section."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m05",
+      "section_id": "s06_springhouse",
+      "from": 16347,
+      "duration": 208,
+      "narration": "this is not a freezer",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ColdStorageBoundary",
+          "title": "COOL STORAGE · NOT A FREEZER",
+          "detail": "Temperature scale places springhouse conditions above freezing and outside guaranteed refrigeration."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m06",
+      "section_id": "s06_springhouse",
+      "from": 16555,
+      "duration": 294,
+      "narration": "perishable food generally needs around forty degrees Fahrenheit",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "StatBig",
+          "title": "≤40°F · ≤4°C",
+          "detail": "Thermometer highlights 40°F / 4°C as a verification boundary."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m07",
+      "section_id": "s06_springhouse",
+      "from": 16849,
+      "duration": 105,
+      "narration": "verify the temperature continuously",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "Checklist",
+          "title": "MEASURE · LOG · VERIFY",
+          "detail": "Probe thermometer and daily log appear beside stored containers."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m08",
+      "section_id": "s06_springhouse",
+      "from": 16954,
+      "duration": 237,
+      "narration": "springhouse, livestock trough, and irrigate trees",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/CascadeUsePath",
+          "title": "COOLING · TROUGH · ORCHARD",
+          "detail": "Cascading-use diagram routes one gallon through cooling, trough, and orchard."
+        }
+      ]
+    },
+    {
+      "id": "s06_springhouse_m09",
+      "section_id": "s06_springhouse",
+      "from": 17191,
+      "duration": 172,
+      "narration": "arranging useful work along its path",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "JourneyCanvas",
+          "title": "ONE FLOW · THREE JOBS",
+          "detail": "Blue flow exits the final orchard node while the avatar gets a clean breathing hold."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m01",
+      "section_id": "s07_dug_well",
+      "from": 17363,
+      "duration": 230,
+      "narration": "the sixth system is a dug well",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 6 · COVERED DUG WELL",
+          "detail": "System marker overlays a safe wide-well exterior with a secured cover."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m02",
+      "section_id": "s07_dug_well",
+      "from": 17593,
+      "duration": 280,
+      "narration": "wide wells lined with stone, brick, or masonry",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DugWellRiskSection",
+          "title": "LINING · SHALLOW WATER TABLE",
+          "detail": "Dug-well cross-section shows lining, shallow water table, and ground surface."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m03",
+      "section_id": "s07_dug_well",
+      "from": 17873,
+      "duration": 317,
+      "narration": "a rope and bucket contains almost no complicated hardware",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ProcessSteps",
+          "title": "LOWER · FILL · LIFT",
+          "detail": "Simple clean bucket, rope, and covered opening form a minimal mechanism diagram."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m04",
+      "section_id": "s07_dug_well",
+      "from": 18190,
+      "duration": 126,
+      "narration": "dug wells are normally shallow",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DugWellRiskSection",
+          "title": "SHORT PATH TO GROUNDWATER",
+          "detail": "Surface contaminants sit close above a shallow aquifer in cross-section."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m05",
+      "section_id": "s07_dug_well",
+      "from": 18316,
+      "duration": 267,
+      "narration": "loose covers invite insects, rodents, debris, and accidents",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "INSECTS · RODENTS · DEBRIS · FALL",
+          "detail": "Four hazard callouts converge on an unsecured opening."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m06",
+      "section_id": "s07_dug_well",
+      "from": 18583,
+      "duration": 261,
+      "narration": "cracked lining admits dirty runoff",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WellRunoffPath",
+          "title": "SURFACE RUNOFF",
+          "detail": "Rainwater follows a crack through masonry into the well."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m07",
+      "section_id": "s07_dug_well",
+      "from": 18844,
+      "duration": 237,
+      "narration": "never lean into or enter an unknown well",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "MistakeCard",
+          "title": "DO NOT ENTER",
+          "detail": "Avatar-centered danger boundary blocks access to unstable masonry and confined air."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m08",
+      "section_id": "s07_dug_well",
+      "from": 19081,
+      "duration": 238,
+      "narration": "qualified assessment, sanitary cover, grade away",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "AnnotatedImage",
+          "title": "SANITARY COVER · GRADE AWAY",
+          "detail": "Before-and-after wellhead comparison marks cover, sound lining, and outward grade."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m09",
+      "section_id": "s07_dug_well",
+      "from": 19319,
+      "duration": 230,
+      "narration": "separation from septic systems; then test",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WellSetbackMap",
+          "title": "LOCAL SETBACK · LAB TEST",
+          "detail": "Property plan measures a protected setback and ends at a lab vial."
+        }
+      ]
+    },
+    {
+      "id": "s07_dug_well_m10",
+      "section_id": "s07_dug_well",
+      "from": 19549,
+      "duration": 286,
+      "narration": "a dedicated clean bucket; never a dirty pail",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "SplitList",
+          "title": "DEDICATED CLEAN BUCKET · NO DIRTY PAILS",
+          "detail": "Clean dedicated bucket and farm pail are isolated into green and red lanes."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m01",
+      "section_id": "s08_hand_pump",
+      "from": 19835,
+      "duration": 258,
+      "narration": "the seventh system is the hand pump",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 7 · HAND PUMP",
+          "detail": "System marker pairs the avatar with a real hand-pump stroke."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m02",
+      "section_id": "s08_hand_pump",
+      "from": 20093,
+      "duration": 214,
+      "narration": "a pitcher pump works by suction",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SuctionLimitColumn",
+          "title": "LOWER PRESSURE · ATMOSPHERE PUSHES",
+          "detail": "Pump cutaway lowers pipe pressure while atmospheric arrows push water upward."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m03",
+      "section_id": "s08_hand_pump",
+      "from": 20307,
+      "duration": 275,
+      "narration": "practical suction lift is roughly twenty to twenty-five feet",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "StatBig",
+          "title": "≈20–25 ft",
+          "detail": "Vertical well ruler highlights a 20–25 ft practical band."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m04",
+      "section_id": "s08_hand_pump",
+      "from": 20582,
+      "duration": 317,
+      "narration": "elevation, temperature, losses, and design can reduce that",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "DiagramBoard",
+          "title": "ELEVATION · TEMPERATURE · LOSSES · DESIGN",
+          "detail": "Four small loss factors press the practical lift band downward."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m05",
+      "section_id": "s08_hand_pump",
+      "from": 20899,
+      "duration": 282,
+      "narration": "a stronger arm will not defeat physics",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ImpactReveal",
+          "title": "MUSCLE ≠ MORE SUCTION",
+          "detail": "Handle effort meter rises while water remains below the suction boundary."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m06",
+      "section_id": "s08_hand_pump",
+      "from": 21181,
+      "duration": 300,
+      "narration": "for deeper water, the cylinder goes down inside the well",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DeepWellPumpCutaway",
+          "title": "CYLINDER BELOW WATER",
+          "detail": "Deep-well cutaway places the cylinder below the pumping water level."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m07",
+      "section_id": "s08_hand_pump",
+      "from": 21481,
+      "duration": 193,
+      "narration": "rods from the handle operate that cylinder",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ProcessSteps",
+          "title": "HANDLE · RODS · CYLINDER",
+          "detail": "Stroke animation traces handle to rods to downhole piston."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m08",
+      "section_id": "s08_hand_pump",
+      "from": 21674,
+      "duration": 171,
+      "narration": "pitcher pump versus deep-well hand pump",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "SHALLOW SUCTION · DEEP-WELL CYLINDER",
+          "detail": "Side-by-side comparison locks suction pump above and cylinder pump below the water line."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m09",
+      "section_id": "s08_hand_pump",
+      "from": 21845,
+      "duration": 299,
+      "narration": "water in a seventy-foot well does not answer the question",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WellMeasurementStack",
+          "title": "WELL DEPTH ≠ LIFT",
+          "detail": "Seventy-foot casing appears while the actual water levels move independently."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m10",
+      "section_id": "s08_hand_pump",
+      "from": 22144,
+      "duration": 246,
+      "narration": "static level, pumping level, recovery rate, total lift",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WellMeasurementStack",
+          "title": "STATIC LEVEL · PUMPING LEVEL · RECOVERY · TOTAL LIFT",
+          "detail": "Four measurement rails populate around a well profile."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m11",
+      "section_id": "s08_hand_pump",
+      "from": 22390,
+      "duration": 197,
+      "narration": "primary or backup beside an electric pump",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DualPumpWellhead",
+          "title": "PRIMARY · MANUAL BACKUP",
+          "detail": "One wellhead diagram branches to electric and manual paths without compromising the sanitary cap."
+        }
+      ]
+    },
+    {
+      "id": "s08_hand_pump_m12",
+      "section_id": "s08_hand_pump",
+      "from": 22587,
+      "duration": 217,
+      "narration": "food-safe parts, frost-resistant design, practice before emergency",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "Checklist",
+          "title": "POTABLE PARTS · FREEZE READY · PRACTICE",
+          "detail": "Inspection checklist lands on potable parts, protected cap, drain-down zone, and a test stroke."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m01",
+      "section_id": "s09_windmill",
+      "from": 22804,
+      "duration": 211,
+      "narration": "system number eight: the windmill pump",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 8 · WINDMILL PUMP",
+          "detail": "System marker overlays an unobstructed working farm windmill."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m02",
+      "section_id": "s09_windmill",
+      "from": 23015,
+      "duration": 224,
+      "narration": "wind turns the wheel; gearing converts rotation",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WindPumpMotion",
+          "title": "ROTATION · UP–DOWN STROKE",
+          "detail": "Mechanical overlay traces wheel rotation into reciprocating pump-rod motion."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m03",
+      "section_id": "s09_windmill",
+      "from": 23239,
+      "duration": 325,
+      "narration": "a cylinder deep in the well lifts a small amount",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CrossSection",
+          "title": "SMALL LIFT · EVERY STROKE",
+          "detail": "Well cutaway syncs each rod stroke with a small rising water pulse."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m04",
+      "section_id": "s09_windmill",
+      "from": 23564,
+      "duration": 143,
+      "narration": "the storage tank is the battery",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WindTankBattery",
+          "title": "TANK = BATTERY",
+          "detail": "Wind pulses enter a high tank that smooths them into steady household flow."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m05",
+      "section_id": "s09_windmill",
+      "from": 23707,
+      "duration": 157,
+      "narration": "wind and household demand are inconsistent",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "VARIABLE WIND · VARIABLE DEMAND",
+          "detail": "Two irregular timelines fail to match minute by minute."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m06",
+      "section_id": "s09_windmill",
+      "from": 23864,
+      "duration": 214,
+      "narration": "pump slowly whenever wind is available",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WindStorageTimeline",
+          "title": "ACCUMULATE · USE LATER",
+          "detail": "Tank level accumulates across intermittent wind windows, then supplies gravity pressure."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m07",
+      "section_id": "s09_windmill",
+      "from": 24078,
+      "duration": 187,
+      "narration": "bearings, seals, rods, towers, storms",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "BEARINGS · SEALS · RODS · TOWER",
+          "detail": "Maintenance orbit highlights five service points on real windmill footage."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m08",
+      "section_id": "s09_windmill",
+      "from": 24265,
+      "duration": 153,
+      "narration": "hidden behind trees or buildings",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/WindExposureMap",
+          "title": "OBSTRUCTED · OPEN FETCH",
+          "detail": "Wind exposure map compares obstructed turbulence with clean open fetch."
+        }
+      ]
+    },
+    {
+      "id": "s09_windmill_m09",
+      "section_id": "s09_windmill",
+      "from": 24418,
+      "duration": 168,
+      "narration": "open land; livestock storage",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RawShot",
+          "title": "BEST FIT: STEADY STORAGE",
+          "detail": "Wide ranch shot connects windmill, covered tank, and trough with a slow flow line."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m01",
+      "section_id": "s10_ram_pump",
+      "from": 24586,
+      "duration": 394,
+      "narration": "it sends water uphill with no electricity, gasoline, wind, or animal power",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 9 · HYDRAULIC RAM",
+          "detail": "System marker shows a blue delivery line climbing above a stream while four power icons remain at zero."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m02",
+      "section_id": "s10_ram_pump",
+      "from": 24980,
+      "duration": 176,
+      "narration": "dates to the late eighteenth century",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "AgedDoc",
+          "title": "LATE 1700s",
+          "detail": "Compact aged technical sketch marks the historical origin without implying a specific unverifiable patent claim."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m03",
+      "section_id": "s10_ram_pump",
+      "from": 25156,
+      "duration": 275,
+      "narration": "water runs downhill through a rigid drive pipe",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamPumpCycle",
+          "title": "SOURCE · DRIVE PIPE",
+          "detail": "Custom ram diagram begins with source flow and drive head."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m04",
+      "section_id": "s10_ram_pump",
+      "from": 25431,
+      "duration": 178,
+      "narration": "a waste valve suddenly closes",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamPumpCycle",
+          "title": "SNAP",
+          "detail": "Waste valve snaps shut at the end of a visible moving water column."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m05",
+      "section_id": "s10_ram_pump",
+      "from": 25609,
+      "duration": 222,
+      "narration": "the moving column creates a pressure surge",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamPumpCycle",
+          "title": "PRESSURE SURGE",
+          "detail": "A pressure pulse compresses through the pump body with a brief gauge spike."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m06",
+      "section_id": "s10_ram_pump",
+      "from": 25831,
+      "duration": 255,
+      "narration": "pushes a small portion through a check valve",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamPumpCycle",
+          "title": "DELIVERED FRACTION",
+          "detail": "A smaller blue branch crosses the delivery check valve."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m07",
+      "section_id": "s10_ram_pump",
+      "from": 26086,
+      "duration": 287,
+      "narration": "into an air chamber and up the delivery pipe",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamPumpCycle",
+          "title": "AIR CHAMBER · DELIVERY",
+          "detail": "Air chamber cushions the pulse and the delivery column rises."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m08",
+      "section_id": "s10_ram_pump",
+      "from": 26373,
+      "duration": 103,
+      "narration": "flow, snap, pulse, lift",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ProcessSteps",
+          "title": "FLOW · SNAP · PULSE · LIFT",
+          "detail": "Four-step loop repeats twice with minimal labels and no narration transcript."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m09",
+      "section_id": "s10_ram_pump",
+      "from": 26476,
+      "duration": 207,
+      "narration": "much of it leaves through the waste valve",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamFlowSplit",
+          "title": "RETURN FLOW · DELIVERY FLOW",
+          "detail": "Measured flow split shows a large return stream and a smaller uphill stream without inventing a ratio."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m10",
+      "section_id": "s10_ram_pump",
+      "from": 26683,
+      "duration": 210,
+      "narration": "dependable flowing water and vertical fall",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamSiteFit",
+          "title": "FLOWING SOURCE · USABLE FALL",
+          "detail": "Site checklist pins continuous flow and drive head onto a stream profile."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m11",
+      "section_id": "s10_ram_pump",
+      "from": 26893,
+      "duration": 277,
+      "narration": "wastewater must not erode the bank; permits may apply",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "AnnotatedImage",
+          "title": "CONTROL EROSION · CHECK LOCAL RULES",
+          "detail": "Bank section shows protected return path beside permit and water-rights boundary chips."
+        }
+      ]
+    },
+    {
+      "id": "s10_ram_pump_m12",
+      "section_id": "s10_ram_pump",
+      "from": 27170,
+      "duration": 399,
+      "narration": "source flow, drive head, lift height, pipe dimensions, tuning, losses",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RamPerformanceMatrix",
+          "title": "MEASURE THE SITE",
+          "detail": "Six-variable decision board feeds a site-specific output range labeled measure first."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m01",
+      "section_id": "s11_pond",
+      "from": 27569,
+      "duration": 329,
+      "narration": "the tenth system is a properly planned farm pond",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 10 · PLANNED FARM POND",
+          "detail": "System marker overlays a maintained pond, dam, and visible spillway."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m02",
+      "section_id": "s11_pond",
+      "from": 27898,
+      "duration": 85,
+      "narration": "converts runoff into reserve",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PondWatershedMap",
+          "title": "RUNOFF · RESERVE",
+          "detail": "Watershed arrows gather into a pond-level reserve gauge."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m03",
+      "section_id": "s11_pond",
+      "from": 27983,
+      "duration": 142,
+      "narration": "irrigation, animals, approved firefighting access",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "SplitList",
+          "title": "IRRIGATION · LIVESTOCK · APPROVED FIRE ACCESS",
+          "detail": "Three use lanes branch from storage with an approval boundary on fire access."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m04",
+      "section_id": "s11_pond",
+      "from": 28125,
+      "duration": 286,
+      "narration": "not simply a hole dug at the lowest point",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "A HOLE · AN ENGINEERED SYSTEM",
+          "detail": "Random low spot is contrasted with a surveyed pond and controlled outlet."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m05",
+      "section_id": "s11_pond",
+      "from": 28411,
+      "duration": 253,
+      "narration": "soil must retain water or receive a suitable liner",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PondSoilSection",
+          "title": "SOIL TEST · LINER IF NEEDED",
+          "detail": "Soil profile compares permeable leakage with compacted or lined retention."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m06",
+      "section_id": "s11_pond",
+      "from": 28664,
+      "duration": 99,
+      "narration": "watershed, dam, and spillway",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PondSpillwaySection",
+          "title": "WATERSHED · DAM · SPILLWAY",
+          "detail": "Three-part pond cross-section reveals inflow area, embankment core, and emergency path."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m07",
+      "section_id": "s11_pond",
+      "from": 28763,
+      "duration": 240,
+      "narration": "trees, burrowing animals, erosion, neglected outlets",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "ROOTS · BURROWS · EROSION · BLOCKED OUTLET",
+          "detail": "Failure tree places four weakening mechanisms on the embankment."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m08",
+      "section_id": "s11_pond",
+      "from": 29003,
+      "duration": 234,
+      "narration": "failed embankment can injure people downstream",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DownstreamRiskMap",
+          "title": "DOWNSTREAM RISK",
+          "detail": "Downstream consequence map extends beyond the property boundary."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m09",
+      "section_id": "s11_pond",
+      "from": 29237,
+      "duration": 365,
+      "narration": "pond water is nonpotable unless treatment and testing establish otherwise",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PotableBoundary",
+          "title": "NONPOTABLE BY DEFAULT",
+          "detail": "Red potable boundary surrounds a pond-to-house pipe while animal and algae icons remain outside."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m10",
+      "section_id": "s11_pond",
+      "from": 29602,
+      "duration": 356,
+      "narration": "algal toxins are not made safe by ordinary boiling",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "MistakeCard",
+          "title": "BOILING IS NOT A UNIVERSAL FIX",
+          "detail": "Boiling pot icon fails to clear an algae-toxin warning; cloth filter also fails."
+        }
+      ]
+    },
+    {
+      "id": "s11_pond_m11",
+      "section_id": "s11_pond",
+      "from": 29958,
+      "duration": 199,
+      "narration": "the overflow becomes the whole system",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PondSpillwaySection",
+          "title": "DESIGN THE WATER'S PATH",
+          "detail": "Major-storm animation routes rising water through the designed spillway; an undesigned path breaches the comparison dam."
+        }
+      ]
+    },
+    {
+      "id": "s12_resilience_m01",
+      "section_id": "s12_resilience",
+      "from": 30157,
+      "duration": 374,
+      "narration": "a resilient plan is rarely one source attached to one pipe",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ResilienceStack",
+          "title": "SOURCE · STORAGE · LIFT · TREATMENT · USE",
+          "detail": "Property-wide system stack reveals source, storage, lift, treatment, and use as separate layers."
+        }
+      ]
+    },
+    {
+      "id": "s12_resilience_m02",
+      "section_id": "s12_resilience",
+      "from": 30531,
+      "duration": 209,
+      "narration": "rainwater can serve gardens, cleaning, or animals",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PotableLaneMap",
+          "title": "NONPOTABLE USES",
+          "detail": "Nonpotable blue lane routes rainwater only to appropriate uses."
+        }
+      ]
+    },
+    {
+      "id": "s12_resilience_m03",
+      "section_id": "s12_resilience",
+      "from": 30740,
+      "duration": 266,
+      "narration": "a tested well can protect the drinking supply",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PotableLaneMap",
+          "title": "TESTED POTABLE LANE",
+          "detail": "Separate green potable lane runs from tested well through treatment to kitchen tap."
+        }
+      ]
+    },
+    {
+      "id": "s12_resilience_m04",
+      "section_id": "s12_resilience",
+      "from": 31006,
+      "duration": 239,
+      "narration": "hand pump, high tank, spring or pond",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "DiagramBoard",
+          "title": "MANUAL · PRESSURE · RESERVE",
+          "detail": "Backup nodes appear around the primary system with distinct manual, pressure, and reserve roles."
+        }
+      ]
+    },
+    {
+      "id": "s12_resilience_m05",
+      "section_id": "s12_resilience",
+      "from": 31245,
+      "duration": 356,
+      "narration": "when one layer fails, the family changes how water is used",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/FailureModeRouter",
+          "title": "PRIORITIZE ESSENTIAL USE",
+          "detail": "Failure simulation removes one node and reroutes priority use to the remaining clean lane."
+        }
+      ]
+    },
+    {
+      "id": "s12_resilience_m06",
+      "section_id": "s12_resilience",
+      "from": 31601,
+      "duration": 126,
+      "narration": "the enemy is single-point dependence",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "SINGLE POINT · REDUNDANT PATHS",
+          "detail": "One source–one pump–one switch chain breaks at a single red node beside a layered green system."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m01",
+      "section_id": "s13_treatment",
+      "from": 31727,
+      "duration": 203,
+      "narration": "the eleventh system: the treatment train",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RuleNumberScene",
+          "title": "SYSTEM 11 · TREATMENT TRAIN",
+          "detail": "System marker assembles several barriers in sequence while leaving the avatar full frame."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m02",
+      "section_id": "s13_treatment",
+      "from": 31930,
+      "duration": 132,
+      "narration": "protect the source first",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/TreatmentTrain",
+          "title": "1 · PROTECT SOURCE",
+          "detail": "Treatment train begins upstream at roof, spring, or well protection rather than at a cartridge."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m03",
+      "section_id": "s13_treatment",
+      "from": 32062,
+      "duration": 151,
+      "narration": "settle or pre-filter heavy sediment",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/TreatmentTrain",
+          "title": "2 · SEDIMENT CONTROL",
+          "detail": "Large sediment particles settle and are intercepted before fine treatment."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m04",
+      "section_id": "s13_treatment",
+      "from": 32213,
+      "duration": 193,
+      "narration": "treatment selected for contaminants actually present",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ContaminantTreatmentMatrix",
+          "title": "TEST → SELECT",
+          "detail": "Lab-result card branches toward microbial, particle, and chemical treatment lanes."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m05",
+      "section_id": "s13_treatment",
+      "from": 32406,
+      "duration": 326,
+      "narration": "disinfect; store in a clean covered vessel; separate tools",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/TreatmentTrain",
+          "title": "DISINFECT · COVER · KEEP CLEAN",
+          "detail": "Final train stages show disinfection, covered storage, and isolated clean tools."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m06",
+      "section_id": "s13_treatment",
+      "from": 32732,
+      "duration": 234,
+      "narration": "a correctly designed and matured slow-sand filter",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SlowSandFilterSection",
+          "title": "MATURED SYSTEM",
+          "detail": "Slow-sand cross-section reveals inlet, supernatant water, biological layer, sand bed, and outlet."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m07",
+      "section_id": "s13_treatment",
+      "from": 32966,
+      "duration": 232,
+      "narration": "living biological layer near the surface",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SlowSandFilterSection",
+          "title": "BIOLOGICAL LAYER · PHYSICAL FILTRATION",
+          "detail": "Magnified surface layer pulses above the deeper physical filtration path."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m08",
+      "section_id": "s13_treatment",
+      "from": 33198,
+      "duration": 206,
+      "narration": "sand thrown into a bucket this afternoon",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "BarCompare",
+          "title": "FRESH BUCKET · MATURED FILTER",
+          "detail": "Improvised fresh bucket is contrasted with a designed, matured slow-sand unit."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m09",
+      "section_id": "s13_treatment",
+      "from": 33404,
+      "duration": 328,
+      "narration": "activated carbon may improve certain tastes and odors",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/TreatmentCapabilityMatrix",
+          "title": "ACTIVATED CARBON · SELECTIVE",
+          "detail": "Carbon capability card lights only taste, odor, and selected chemical lanes."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m10",
+      "section_id": "s13_treatment",
+      "from": 33732,
+      "duration": 478,
+      "narration": "does not reliably remove every pathogen, salt, nitrate, metal",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/TreatmentCapabilityMatrix",
+          "title": "NOT UNIVERSAL",
+          "detail": "Unlit capability cells remain visibly outside carbon's universal reach."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m11",
+      "section_id": "s13_treatment",
+      "from": 34210,
+      "duration": 142,
+      "narration": "sediment cartridges remove particles",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/TreatmentCapabilityMatrix",
+          "title": "PARTICLES · NOT PROOF OF SAFETY",
+          "detail": "Cartridge traps visible particles while a microbe warning passes to the next stage."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m12",
+      "section_id": "s13_treatment",
+      "from": 34352,
+      "duration": 347,
+      "narration": "ultraviolet needs power, exposure, a clean sleeve, clear water",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "POWER · EXPOSURE · CLEAN SLEEVE · CLEAR WATER",
+          "detail": "UV chamber receives four operating-condition callouts."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m13",
+      "section_id": "s13_treatment",
+      "from": 34699,
+      "duration": 258,
+      "narration": "chlorination depends on strength, dose, contact time, conditions",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ChlorinationVariables",
+          "title": "STRENGTH · DOSE · CONTACT TIME · WATER CONDITIONS",
+          "detail": "Four-variable chlorination equation remains parameterized, with no dose supplied."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m14",
+      "section_id": "s13_treatment",
+      "from": 34957,
+      "duration": 372,
+      "narration": "rolling boil for one minute; three minutes above about 6,500 feet",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/EmergencyBoilDecision",
+          "title": "1 MIN · >6,500 ft: 3 MIN",
+          "detail": "Emergency boiling card uses a two-altitude decision split and covered-cooling icon."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m15",
+      "section_id": "s13_treatment",
+      "from": 35329,
+      "duration": 235,
+      "narration": "if cloudy, settle and pre-filter first",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ProcessSteps",
+          "title": "SETTLE · PRE-FILTER · BOIL · COVER",
+          "detail": "Cloudy water moves through settle, pre-filter, boil, and covered-cool steps."
+        }
+      ]
+    },
+    {
+      "id": "s13_treatment_m16",
+      "section_id": "s13_treatment",
+      "from": 35564,
+      "duration": 402,
+      "narration": "boiling does not remove fuel, pesticides, heavy metals, or salts",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ChemicalHazardBoundary",
+          "title": "CHEMICAL SUSPECTED? · DO NOT DRINK · GET QUALIFIED GUIDANCE",
+          "detail": "Chemical hazard lane stays red after a boil icon; authority and lab route becomes the only green path."
+        }
+      ]
+    },
+    {
+      "id": "s14_cross_connection_m01",
+      "section_id": "s14_cross_connection",
+      "from": 35966,
+      "duration": 112,
+      "narration": "the promised mistake",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/HiddenCrossConnectionTease",
+          "title": "THE HIDDEN LINK",
+          "detail": "The masked pipe junction from the hook returns beside the avatar and is finally revealed."
+        }
+      ]
+    },
+    {
+      "id": "s14_cross_connection_m02",
+      "section_id": "s14_cross_connection",
+      "from": 36078,
+      "duration": 244,
+      "narration": "connecting backup water to household plumbing",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/BackflowRoute",
+          "title": "NONPOTABLE · POTABLE",
+          "detail": "Rain tank, pond, and untreated spring lines approach a green household potable lane."
+        }
+      ]
+    },
+    {
+      "id": "s14_cross_connection_m03",
+      "section_id": "s14_cross_connection",
+      "from": 36322,
+      "duration": 220,
+      "narration": "even a hose hanging in a trough",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "SUBMERGED HOSE",
+          "detail": "Real trough hose receives a submerged-outlet warning callout."
+        }
+      ]
+    },
+    {
+      "id": "s14_cross_connection_m04",
+      "section_id": "s14_cross_connection",
+      "from": 36542,
+      "duration": 117,
+      "narration": "when pressure reverses",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/BackflowRoute",
+          "title": "PRESSURE REVERSAL · BACKFLOW",
+          "detail": "Pressure gauges flip and contaminated water animates backward through the junction."
+        }
+      ]
+    },
+    {
+      "id": "s14_cross_connection_m05",
+      "section_id": "s14_cross_connection",
+      "from": 36659,
+      "duration": 387,
+      "narration": "everybody fears the dirty pond; the hidden threat is the pipe",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ImpactReveal",
+          "title": "VISIBLE RISK · HIDDEN ROUTE",
+          "detail": "Visible dirty pond and visually clean connector are compared; risk emphasis moves to the connector."
+        }
+      ]
+    },
+    {
+      "id": "s14_cross_connection_m06",
+      "section_id": "s14_cross_connection",
+      "from": 37046,
+      "duration": 214,
+      "narration": "air gaps, backflow protection, labels, approved valves",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/BackflowProtectionStack",
+          "title": "AIR GAP · BACKFLOW PROTECTION · LABELS · APPROVED VALVES",
+          "detail": "Protection stack isolates the two lanes with an air gap and certified devices."
+        }
+      ]
+    },
+    {
+      "id": "s14_cross_connection_m07",
+      "section_id": "s14_cross_connection",
+      "from": 37260,
+      "duration": 245,
+      "narration": "follow local codes; qualified plumber or water professional",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "Checklist",
+          "title": "LOCAL CODE · QUALIFIED DESIGN",
+          "detail": "Code boundary and professional-review seal close over the junction while the avatar receives a clean hold."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m01",
+      "section_id": "s15_recap",
+      "from": 37505,
+      "duration": 133,
+      "narration": "here is the actionable recap",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "Checklist",
+          "title": "7 DECISIONS",
+          "detail": "Seven-node decision rail appears beside the avatar with no sentence-by-sentence copy."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m02",
+      "section_id": "s15_recap",
+      "from": 37638,
+      "duration": 346,
+      "narration": "roof area times rainfall times zero point six two three",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/RoofYieldEquation",
+          "title": "AREA × RAIN × 0.623 · ≈ GALLONS",
+          "detail": "Catchment formula returns with three input slots and an approximate-gallons output."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m03",
+      "section_id": "s15_recap",
+      "from": 37984,
+      "duration": 67,
+      "narration": "record daily demand",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DemandReserveGauge",
+          "title": "DAILY DEMAND",
+          "detail": "Demand ledger separates essential baseline from variable uses."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m04",
+      "section_id": "s15_recap",
+      "from": 38051,
+      "duration": 241,
+      "narration": "drinking and cooking from washing, animals, irrigation",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PotableLaneMap",
+          "title": "POTABLE · NONPOTABLE",
+          "detail": "Potable and nonpotable demand columns remain visually separated."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m05",
+      "section_id": "s15_recap",
+      "from": 38292,
+      "duration": 225,
+      "narration": "never size storage from hope",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/DryGapSizer",
+          "title": "DEMAND × DRY GAP + RESERVE",
+          "detail": "Tank-size dial is driven by daily demand and dry-gap inputs, not a wishful target."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m06",
+      "section_id": "s15_recap",
+      "from": 38517,
+      "duration": 460,
+      "narration": "every foot of vertical drop creates about zero point four three PSI",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/HeadPressureColumn",
+          "title": "1 ft ≈ 0.43 PSI",
+          "detail": "Head-pressure ruler returns over the viewer's property profile."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m07",
+      "section_id": "s15_recap",
+      "from": 38977,
+      "duration": 214,
+      "narration": "excess height may require pressure control",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PressureRegulatorPath",
+          "title": "CONTROL EXCESS PRESSURE",
+          "detail": "High head passes through a regulator before fixtures."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m08",
+      "section_id": "s15_recap",
+      "from": 39191,
+      "duration": 419,
+      "narration": "seal the well, shield the spring, screen the tank, divert roof runoff",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SourceProtectionMap",
+          "title": "SEAL · SHIELD · SCREEN · DIVERT",
+          "detail": "Four source-protection actions land on a single property map."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m09",
+      "section_id": "s15_recap",
+      "from": 39610,
+      "duration": 244,
+      "narration": "pair electric with manual; intermittent collection with storage",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/ResilienceStack",
+          "title": "PRIMARY + BACKUP",
+          "detail": "Redundancy pairs snap together as primary and backup modules."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m10",
+      "section_id": "s15_recap",
+      "from": 39854,
+      "duration": 405,
+      "narration": "test after floods, repairs, land-use changes, unusual taste or odor",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "Checklist",
+          "title": "FLOOD · REPAIR · LAND-USE CHANGE · ODOR/TASTE",
+          "detail": "Retest triggers populate a compact event timeline."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m11",
+      "section_id": "s15_recap",
+      "from": 40259,
+      "duration": 182,
+      "narration": "separate potable and nonpotable plumbing",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PotableLaneMap",
+          "title": "LABEL BOTH · PREVENT BACKFLOW",
+          "detail": "Two colored lanes receive permanent labels and a backflow block."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m12",
+      "section_id": "s15_recap",
+      "from": 40441,
+      "duration": 260,
+      "narration": "measure the roof; find the highest and lowest points",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/PropertyWalkMap",
+          "title": "MEASURE ROOF · MARK HIGH & LOW",
+          "detail": "Weekend property walk overlays roof dimensions and elevation pins on a handheld map."
+        }
+      ]
+    },
+    {
+      "id": "s15_recap_m13",
+      "section_id": "s15_recap",
+      "from": 40701,
+      "duration": 206,
+      "narration": "trace every gallon from source to overflow",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SourceToOverflowMatrix",
+          "title": "SOURCE · STORAGE · LIFT · TREATMENT · USE · OVERFLOW",
+          "detail": "Final decision matrix maps each source through storage, lift, treatment, use, overflow, and backup."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m01",
+      "section_id": "s16_close",
+      "from": 40907,
+      "duration": 243,
+      "narration": "save this video so the numbers are available",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "CalloutMark",
+          "title": "KEEP THE NUMBERS HANDY",
+          "detail": "Avatar-only emphasis with a small property-walk bookmark icon and no transcript text."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m02",
+      "section_id": "s16_close",
+      "from": 41150,
+      "duration": 136,
+      "narration": "practical, low-energy homestead systems",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "RawShot",
+          "title": "FREE Water Forever! 11 Off-Grid Systems The Amish Have Used for 200 Years",
+          "detail": "Quiet montage strip shows roof, hand pump, spring, and high tank working without spectacle."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m03",
+      "section_id": "s16_close",
+      "from": 41286,
+      "duration": 295,
+      "narration": "the person who believes every water problem requires a larger pump",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "ImpactReveal",
+          "title": "MEASURE BEFORE YOU PUMP",
+          "detail": "Oversized pump icon is gently replaced by source, storage, and height measurements."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m04",
+      "section_id": "s16_close",
+      "from": 41581,
+      "duration": 245,
+      "narration": "where you live and what source you have",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/SourceChoiceMap",
+          "title": "ROOF · SPRING · WELL · CREEK · POND",
+          "detail": "Five source pins—roof, spring, well, creek, pond—open around a climate map."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m05",
+      "section_id": "s16_close",
+      "from": 41826,
+      "duration": 211,
+      "narration": "a high storage tank creates household pressure",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/NextPressureTease",
+          "title": "NEXT: HEIGHT → PRESSURE",
+          "detail": "Next-episode tease raises a tank above a home and starts a pressure gauge."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m06",
+      "section_id": "s16_close",
+      "from": 42037,
+      "duration": 230,
+      "narration": "one narrow pipe can steal most of it",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/NextPressureTease",
+          "title": "THE NARROW-PIPE LOSS",
+          "detail": "Narrow-pipe friction visualization interrupts the pressure gauge before the answer is revealed."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m07",
+      "section_id": "s16_close",
+      "from": 42267,
+      "duration": 293,
+      "narration": "build a home that still functions when one tool stops",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/FailureModeRouter",
+          "title": "FUNCTION THROUGH FAILURE",
+          "detail": "Layered homestead system remains active after one tool node fades out."
+        }
+      ]
+    },
+    {
+      "id": "s16_close_m08",
+      "section_id": "s16_close",
+      "from": 42560,
+      "duration": 349,
+      "narration": "catch, protect, store high, preserve a manual path; gravity moves it",
+      "transition": "motivated cut",
+      "layers": [
+        {
+          "type": "component",
+          "component": "WaterSystems/GravityEndFrame",
+          "title": "CATCH · PROTECT · STORE HIGH · MANUAL PATH",
+          "detail": "Final four-icon end frame orbits the full-frame avatar, then clears to avatar-only for the last line."
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 180,
+    "avatar_scenes": 1,
+    "clip_scenes": 0,
+    "image_scenes": 0,
+    "component_scenes": 179,
+    "duration_seconds": 1430.3,
+    "unresolved_assets": 0
+  }
+}
