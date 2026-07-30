@@ -696,7 +696,7 @@ const headlineSets = {
   ],
   secret_5_compaction: [
     "Wet Soil Says Wait",
-    "Every Pass Has A Cost",
+    "Every Pass Must Pay",
     "Protect Soil Pores",
     "Use Permanent Lanes",
   ],
@@ -849,7 +849,7 @@ const essentialComponentData = (kind) =>
       items: [{label: "Contour strips"}],
     },
     WaterClaimCaveat_v0tohhe3cvs6: {
-      title: "Water Storage Depends On",
+      title: "Soil Controls Water Storage",
       items: [
         {label: "Texture"},
         {label: "Depth"},
@@ -887,6 +887,15 @@ const essentialComponentData = (kind) =>
         {label: "Feed"},
         {label: "Safety"},
       ],
+    },
+    RhizosphereLens_v0tohhe3cvs6: {
+      title: "Life Around Roots",
+      metric: "Rhizosphere",
+      items: [{label: "Root hairs"}],
+    },
+    SinglePointRisk_v0tohhe3cvs6: {
+      title: "One Weak Link Stops",
+      items: [{label: "One crop"}, {label: "One buyer"}],
     },
   })[kind] || null;
 const componentPhoto = (spec, moment) =>
