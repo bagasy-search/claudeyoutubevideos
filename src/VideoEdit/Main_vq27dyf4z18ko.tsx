@@ -99,22 +99,55 @@ const words = (value: string | undefined, max: number) =>
     .slice(0, max)
     .join(" ");
 
-const sceneTitle = (scene: Scene) => {
-  const layer = scene.layers[0] as any;
-  const title = String(layer.title || "");
-  return !title || title.toLowerCase() === "general"
-    ? words(scene.narration, 10)
-    : words(title, 11);
+const componentEditorialTitles: Record<string, string> = {
+  NumberCard: "MEASURED, NOT ASSUMED",
+  DiagramBoard: "CAUSE → EFFECT",
+  CalloutMark: "FIELD EVIDENCE",
+  SaltPhysicsDiagram: "HEAT IN → PHASE CHANGE",
+  ProcessSteps: "MEASURE • SEAL • CYCLE • INSPECT",
+  Checklist: "THE SAFETY BOUNDARY",
+  FedMolecule: "THE CRYSTAL CYCLE",
+  CrossSection: "DOUBLE CONTAINMENT",
+  FedHero: "FIELD EVIDENCE",
+  StepByStepBuild: "ONE CONTROLLED TEST PACK",
+  FedStat: "MEASURED, NOT ASSUMED",
+  StatBig: "MEASURED, NOT ASSUMED",
+  AcGauge: "THE PHASE-CHANGE WINDOW",
+  IngredientEquation: "KNOWN MATERIALS • KNOWN MASS",
+  ThreeLegsDiagram: "SHADE • WATER • ACTIVE COOLING",
+  RuleNumberScene: "THE FIELD RULE",
+  PromiseChecklist: "BUILD • TEST • USE • REMOVE",
+  AnnotatedImage: "PLACEMENT MATTERS",
+  BarCompare: "COMPARE UNDER THE SAME CONDITIONS",
+  WrongVsRightPlacement: "WRONG VS RIGHT",
+  DistanceLimitWarning: "COOLING AID — NOT A SHIELD",
+  MythBusterCard: "WHAT THIS CANNOT PROMISE",
+  FedBeforeAfter: "BEFORE VS AFTER",
+  EvaporationPhysics: "DO NOT BLOCK EVAPORATION",
+  RecapNumberedList: "THE FOUR FIELD RULES",
 };
 
-const sceneDetail = (scene: Scene) => {
-  const layer = scene.layers[0] as any;
-  const detail = String(layer.detail || "");
-  if (!detail || /literal full-screen|current narration fragment/i.test(detail)) {
-    return words(scene.narration, 18);
-  }
-  return words(detail, 22);
+const sectionEditorialTitles: Record<string, string> = {
+  hook: "THE THERMAL BATTERY",
+  heat_problem: "HEAT LOAD IN THE FIELD",
+  pcm_physics: "THE CRYSTAL AT WORK",
+  prototype_build: "CONTROLLED PROTOTYPE",
+  testing: "MEASURED FIELD TEST",
+  safe_use: "SAFE PLACEMENT",
+  limits_emergency: "KNOW THE EMERGENCY LINE",
+  recap_teaser: "THE FIELD RULES",
 };
+
+const sceneTitle = (scene: Scene) => {
+  const layer = scene.layers[0] as any;
+  const title = String(layer.title || "").trim();
+  if (title && title.toLowerCase() !== "general") return words(title, 11);
+  const component = String(layer.component || "");
+  return componentEditorialTitles[component] || sectionEditorialTitles[scene.section_id] || "FIELD EVIDENCE";
+};
+
+// Narration remains audio-only: no transcript fragments, karaoke, or subtitles.
+const sceneDetail = (_scene: Scene) => "";
 
 const MediaLayer: React.FC<{scene: Scene; dim?: number}> = ({scene, dim = 0.38}) => {
   const frame = useCurrentFrame();
@@ -231,7 +264,8 @@ const EditorialTitle: React.FC<{scene: Scene; compact?: boolean}> = ({scene, com
 const MetricEvidence: React.FC<{scene: Scene}> = ({scene}) => {
   const frame = useCurrentFrame();
   const title = sceneTitle(scene);
-  const metric = title.match(/[≈~]?\d+(?:\.\d+)?\s*[%°]?[CF]?/i)?.[0] || "2×";
+  const metricSource = `${title} ${scene.narration}`;
+  const metric = metricSource.match(/[≈~]?\d+(?:\.\d+)?\s*(?:%|°[CF]|kJ|g|×)?/i)?.[0] || "PROOF";
   const fill = interpolate(frame, [12, 100], [0, 82], clamp);
   return (
     <PremiumShell scene={scene} eyebrow="MEASURED THERMAL CAPACITY">
