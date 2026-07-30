@@ -3,7 +3,7 @@ import {Composition} from "remotion";
 import {DIYHydrogenOxygen} from "./Video";
 
 export const FPS = 30;
-export const DURATION_SECONDS = 1288.791;
+export const DURATION_SECONDS = 1290.4;
 
 export const Root: React.FC = () => {
   return (

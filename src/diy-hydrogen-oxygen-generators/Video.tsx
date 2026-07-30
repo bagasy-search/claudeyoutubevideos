@@ -21,7 +21,7 @@ const BG = "#061017";
 const INK = "#f2f7f8";
 const MUTED = "#a8bbc1";
 const BEAT_SECONDS = 5.2;
-const TOTAL_SECONDS = 1288.791;
+const TOTAL_SECONDS = 1290.4;
 const clamp = {extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const};
 const easeOut = Easing.bezier(0.16, 1, 0.3, 1);
 

@@ -42,7 +42,7 @@ export const SECTIONS = [
   {start: 914.6, end: 1072.7, label: "EFFICIENCY & THE WATER-FUEL MYTH", accent: "#ffb54a", visual: "energy"},
   {start: 1072.7, end: 1172.7, label: "FAILURE SIGNS & SHUTDOWN", accent: "#ff735c", visual: "safety"},
   {start: 1172.7, end: 1262.4, label: "REAL ENGINEERING", accent: "#10d7c4", visual: "split"},
-  {start: 1262.4, end: 1288.791, label: "MAKE THE MEASUREMENT BETTER", accent: "#69e7ff", visual: "final"},
+  {start: 1262.4, end: 1290.4, label: "MAKE THE MEASUREMENT BETTER", accent: "#69e7ff", visual: "final"},
 ] as const;
 
 export const KEYWORDS = [
