@@ -28,21 +28,21 @@ export const STOCK = [
   "water-ripples.mp4",
   "white-powder.mp4",
   "wind-turbines.mp4",
-  "workshop-air.mp4"
-];
+  "workshop-air.mp4",
+] as const;
 
 export const SECTIONS = [
-  {start: 0, end: 30, label: "GROCERY-STORE ELECTROLYSIS", accent: "#69e7ff", visual: "hook"},
-  {start: 30, end: 125, label: "SAFETY FIRST", accent: "#ffb54a", visual: "safety"},
-  {start: 125, end: 200, label: "HOW ELECTROLYSIS WORKS", accent: "#10d7c4", visual: "molecules"},
-  {start: 200, end: 380, label: "THE OPEN HHO CELL", accent: "#69e7ff", visual: "cell"},
-  {start: 380, end: 490, label: "POWER, HEAT & SCALE", accent: "#ffb54a", visual: "energy"},
-  {start: 490, end: 670, label: "THE SPLIT CELL", accent: "#10d7c4", visual: "split"},
-  {start: 670, end: 815, label: "MEASURE—DON'T IGNITE", accent: "#69e7ff", visual: "measure"},
-  {start: 815, end: 955, label: "EFFICIENCY & THE WATER-FUEL MYTH", accent: "#ffb54a", visual: "energy"},
-  {start: 955, end: 1045, label: "FAILURE SIGNS & SHUTDOWN", accent: "#ff735c", visual: "safety"},
-  {start: 1045, end: 1125, label: "REAL ENGINEERING", accent: "#10d7c4", visual: "split"},
-  {start: 1125, end: 1148.46, label: "MAKE THE MEASUREMENT BETTER", accent: "#69e7ff", visual: "final"}
+  {start: 0, end: 33.7, label: "GROCERY-STORE ELECTROLYSIS", accent: "#69e7ff", visual: "hook"},
+  {start: 33.7, end: 140.3, label: "SAFETY FIRST", accent: "#ffb54a", visual: "safety"},
+  {start: 140.3, end: 224.4, label: "HOW ELECTROLYSIS WORKS", accent: "#10d7c4", visual: "molecules"},
+  {start: 224.4, end: 426.4, label: "THE OPEN HHO CELL", accent: "#69e7ff", visual: "cell"},
+  {start: 426.4, end: 549.9, label: "POWER, HEAT & SCALE", accent: "#ffb54a", visual: "energy"},
+  {start: 549.9, end: 751.9, label: "THE SPLIT CELL", accent: "#10d7c4", visual: "split"},
+  {start: 751.9, end: 914.6, label: "MEASURE—DON'T IGNITE", accent: "#69e7ff", visual: "measure"},
+  {start: 914.6, end: 1072.7, label: "EFFICIENCY & THE WATER-FUEL MYTH", accent: "#ffb54a", visual: "energy"},
+  {start: 1072.7, end: 1172.7, label: "FAILURE SIGNS & SHUTDOWN", accent: "#ff735c", visual: "safety"},
+  {start: 1172.7, end: 1262.4, label: "REAL ENGINEERING", accent: "#10d7c4", visual: "split"},
+  {start: 1262.4, end: 1288.791, label: "MAKE THE MEASUREMENT BETTER", accent: "#69e7ff", visual: "final"},
 ] as const;
 
 export const KEYWORDS = [
@@ -56,5 +56,5 @@ export const KEYWORDS = [
   ["ENERGY CARRIER", "NOT AN ENERGY SOURCE", "LOSSES MATTER"],
   ["ODOR", "COLOR", "HEAT"],
   ["MEMBRANES", "CATALYSTS", "CONTROL"],
-  ["SMALLER CELL", "BETTER DATA", "SAFER SCIENCE"]
+  ["SMALLER CELL", "BETTER DATA", "SAFER SCIENCE"],
 ] as const;
