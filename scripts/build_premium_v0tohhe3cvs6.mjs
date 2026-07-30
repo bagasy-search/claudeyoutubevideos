@@ -476,6 +476,8 @@ const forcedMomentAsset = (moment) => {
         ? `${slug}_web_soil_health_inspection.jpg`
         : /not copying a costume/i.test(phrase)
           ? "v0tohhe3cvs6_r2_063"
+          : /different roots, manure used in the system/i.test(phrase)
+            ? "v0tohhe3cvs6_r2_061"
           : /bacteria convert nitrogen gas/i.test(phrase)
       ? `${slug}_web_root_nodules_clover.jpg`
       : /crop is not handing free bags of fertilizer/i.test(phrase)

@@ -7,7 +7,6 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import {CountUp} from "../components/CountUp";
 import {Media} from "../components/Media";
 
 type SoilMetricCardsProps = {
@@ -65,21 +64,11 @@ const MetricCard: React.FC<{
   image: string;
 }> = ({metric, index, image}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
   const delay = 12 + index * 8;
-  const entrance = spring({
-    frame: frame - delay,
-    fps,
-    config: {damping: 18, stiffness: 125, mass: 0.8},
-  });
-  const opacity = interpolate(entrance, [0, 0.16, 1], [0, 1, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
   const glint = interpolate(
     frame,
-    [delay + 18, delay + 42],
-    [-140, 760],
+    [delay + 22, delay + 48],
+    [-120, 700],
     {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
@@ -88,17 +77,13 @@ const MetricCard: React.FC<{
   );
   const glintOpacity = interpolate(
     frame,
-    [delay + 17, delay + 22, delay + 36, delay + 43],
-    [0, 0.42, 0.28, 0],
+    [delay + 21, delay + 27, delay + 41, delay + 49],
+    [0, 0.16, 0.1, 0],
     {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     },
   );
-  const thumbnailScale = interpolate(entrance, [0, 1], [1.12, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
 
   return (
     <div
@@ -119,8 +104,8 @@ const MetricCard: React.FC<{
         border: "1px solid rgba(234,217,174,0.78)",
         boxShadow:
           "0 22px 55px rgba(14,24,17,0.28), inset 0 1px 0 rgba(255,255,255,0.92)",
-        opacity,
-        transform: `translateY(${(1 - entrance) * 42}px) scale(${0.94 + entrance * 0.06})`,
+        opacity: 1,
+        transform: "none",
       }}
     >
       <div
@@ -142,7 +127,7 @@ const MetricCard: React.FC<{
             height: "100%",
             objectFit: "cover",
             objectPosition: metric.imagePosition,
-            transform: `scale(${thumbnailScale})`,
+            transform: "scale(1)",
             filter: "saturate(0.92) contrast(1.05) brightness(0.88)",
           }}
         />
@@ -204,13 +189,7 @@ const MetricCard: React.FC<{
               textShadow: "0 2px 0 rgba(255,255,255,0.75)",
             }}
           >
-            <CountUp
-              from={0}
-              to={metric.value}
-              duration={34}
-              delay={delay + 5}
-              suffix="%"
-            />
+              {metric.value}%
           </div>
           <div
             style={{
@@ -250,8 +229,9 @@ const MetricCard: React.FC<{
           transform: "rotate(17deg)",
           opacity: glintOpacity,
           background:
-            "linear-gradient(90deg, transparent, rgba(255,255,255,0.78), transparent)",
+            "linear-gradient(90deg, transparent, rgba(255,255,255,0.46), transparent)",
           pointerEvents: "none",
+          mixBlendMode: "screen",
         }}
       />
     </div>
