@@ -256,8 +256,38 @@ fs.rmSync(listFile);
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
 try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --cleanup-tag`); } catch { /* no existe */ }
-sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del render"`);
-fs.rmSync(tar);
+const MAX_RELEASE_ASSET_BYTES = 1_800_000_000;
+const splitTar = (file) => {
+  const size = fs.statSync(file).size;
+  if (size <= MAX_RELEASE_ASSET_BYTES) return [file];
+  const input = fs.openSync(file, "r");
+  const buffer = Buffer.allocUnsafe(8 * 1024 * 1024);
+  const parts = [];
+  let position = 0;
+  try {
+    for (let index = 0; position < size; index++) {
+      const part = `${file}.part-${String(index).padStart(3, "0")}`;
+      const output = fs.openSync(part, "w");
+      let written = 0;
+      try {
+        while (written < MAX_RELEASE_ASSET_BYTES && position < size) {
+          const wanted = Math.min(buffer.length, MAX_RELEASE_ASSET_BYTES - written, size - position);
+          const bytes = fs.readSync(input, buffer, 0, wanted, position);
+          if (!bytes) break;
+          fs.writeSync(output, buffer, 0, bytes);
+          written += bytes;
+          position += bytes;
+        }
+      } finally { fs.closeSync(output); }
+      parts.push(part);
+    }
+  } finally { fs.closeSync(input); }
+  console.log(`tar multipart OK (${parts.length} parts, no recompression)`);
+  return parts;
+};
+const releaseAssets = splitTar(tar);
+sh(`gh release create ${relTag} ${releaseAssets.map((file) => `"${file}"`).join(" ")} --title ${relTag} --notes "assets del render"`);
+for (const file of new Set([tar, ...releaseAssets])) fs.rmSync(file, { force: true });
 }
 
 // ── EL MISMO CHEQUEO DE ASSETS, PERO PARA RE-RENDER PARCIAL ───────────────────────────────────
@@ -371,10 +401,10 @@ const entry = process.env.ENTRY || "";
   let ok = false, motivo = "";
   try {
     const j = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
-    const tarAsset = (j.assets || []).find((a) => /\.tar$/i.test(a.name));
+    const tarAssets = (j.assets || []).filter((a) => /\.tar(?:\.part-\d+)?$/i.test(a.name));
     if (j.isDraft) motivo = "el release quedó en DRAFT (la subida no terminó) — los runners no pueden bajarlo";
-    else if (!tarAsset) motivo = `el release existe pero NO tiene el .tar adentro (${(j.assets || []).length} assets)`;
-    else if (!tarAsset.size) motivo = "el .tar está en el release pero pesa 0";
+    else if (!tarAssets.length) motivo = `el release existe pero NO tiene el tar o sus partes adentro (${(j.assets || []).length} assets)`;
+    else if (tarAssets.some((asset) => !asset.size)) motivo = "una parte del tar está en el release pero pesa 0";
     else ok = true;
   } catch { motivo = "no existe el release de assets"; }
   if (!ok) {
