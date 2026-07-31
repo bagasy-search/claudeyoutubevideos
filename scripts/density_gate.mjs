@@ -90,7 +90,7 @@ const ESTRUCTURA = new Set(["AvatarLayer","AvatarWindow","TechBackground","Cinem
 // DENSIDAD (siguen siendo un visual), pero no a la VARIEDAD.
 const TOMAS = new Set((process.env.TOMAS_PLANAS || "RawShot,HalfShot,ReframedVideo,PhotoScene,FedFullShot")
   .split(",").map((s) => s.trim()).filter(Boolean));
-const jsxAll = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1])
+const jsxAll = [...src.matchAll(/<([A-Z][A-Za-z0-9_]*)\b/g)].map((m) => m[1])
   .filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
 const shotAll = jsxAll.filter((n) => TOMAS.has(n));
 const compAll = jsxAll.filter((n) => !TOMAS.has(n));
@@ -210,7 +210,7 @@ const propios = (() => {
       .filter((f) => f.includes(slug) && /^Main_/.test(f.split("/").pop()) && f !== build);
     const usadoAparte = new Set();
     for (const f of otros) {
-      try { for (const m of readFileSync(f, "utf8").matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)) usadoAparte.add(m[1]); } catch { /* ignorar */ }
+      try { for (const m of readFileSync(f, "utf8").matchAll(/<([A-Z][A-Za-z0-9_]*)\b/g)) usadoAparte.add(m[1]); } catch { /* ignorar */ }
     }
     return [...defs].filter((n) => compDistinct.includes(n) || usadoAparte.has(n));
   } catch { return null; } // sin git utilizable no invento un 0
@@ -240,7 +240,7 @@ let tramos = null, tramoReal = false;
     const fin = Math.max(seconds, ...marcas.map((x) => x.t)) || seconds;
     tramos = Array.from({ length: NB }, () => new Set());
     let k = 0;
-    for (const m of cs.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)) {
+    for (const m of cs.matchAll(/<([A-Z][A-Za-z0-9_]*)\b/g)) {
       const n = m[1];
       if (FRAMEWORK.has(n) || ESTRUCTURA.has(n) || TOMAS.has(n)) continue;
       while (k + 1 < marcas.length && marcas[k + 1].i < m.index) k++;
@@ -251,7 +251,7 @@ let tramos = null, tramoReal = false;
     break;
   }
   if (!tramos) {                                 // sin tiempos: reparto por POSICIÓN en la secuencia
-    const orden = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1])
+    const orden = [...src.matchAll(/<([A-Z][A-Za-z0-9_]*)\b/g)].map((m) => m[1])
       .filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
     if (orden.length >= NB * 4) {
       tramos = Array.from({ length: NB }, () => new Set());
