@@ -91,27 +91,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro fotográfico de una tira de algodón húmeda junto a romero culinario y una taza transparente; mesa real, luz de amanecer, sin rótulos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_001.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_001.jpg",
+          "asset_id": "v89mlm0ixyno:hook_0_30_004:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -231,27 +215,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Detalle de superficie cutánea seca y luego humectada bajo la misma iluminación lateral, sin texto y sin prometer rejuvenecimiento",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_001.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_001.mp4",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_001:stock_clip"
         }
       ]
     },
@@ -336,27 +302,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Romero real de cocina en macro botánico correcto, con hojas reconocibles y fondo neutro",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_002.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_002.mp4",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_005:stock_clip"
         }
       ]
     },
@@ -406,27 +354,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Romero real de cocina en macro botánico correcto, con hojas reconocibles y fondo neutro",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_002.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_002.jpg",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_008:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -476,27 +408,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Detalle de superficie cutánea seca y luego humectada bajo la misma iluminación lateral, sin texto y sin prometer rejuvenecimiento",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_003.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_003.jpg",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_010:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -546,27 +462,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Detalle de superficie cutánea seca y luego humectada bajo la misma iluminación lateral, sin texto y sin prometer rejuvenecimiento",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_003.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_003.mp4",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_013:stock_clip"
         }
       ]
     },
@@ -597,27 +495,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sencilla junto a una compresa ya retirada sobre una bandeja, fotografía editorial limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_004.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_004.mp4",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_015:stock_clip"
         }
       ]
     },
@@ -702,27 +582,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Detalle de superficie cutánea seca y luego humectada bajo la misma iluminación lateral, sin texto y sin prometer rejuvenecimiento",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_005.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_005.mp4",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_019:stock_clip"
         }
       ]
     },
@@ -788,27 +650,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Detalle de superficie cutánea seca y luego humectada bajo la misma iluminación lateral, sin texto y sin prometer rejuvenecimiento",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_004.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_004.jpg",
+          "asset_id": "v89mlm0ixyno:promesa_honesta_022:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -931,27 +777,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro anatómico de pliegue horizontal del cuello con luz rasante, textura digna y sin retoque",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_006.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_006.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_005:stock_clip"
         }
       ]
     },
@@ -982,27 +810,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor junto a una ventana mirando hacia abajo y luego al horizonte; plano documental sin overlays",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_007.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_007.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_007:stock_clip"
         }
       ]
     },
@@ -1052,27 +862,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor junto a una ventana mirando hacia abajo y luego al horizonte; plano documental sin overlays",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_005.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_005.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_010:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -1138,27 +932,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor junto a una ventana mirando hacia abajo y luego al horizonte; plano documental sin overlays",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_008.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_008.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_013:stock_clip"
         }
       ]
     },
@@ -1192,27 +968,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Compresa blanda apoyada sólo en frente y costados del cuello, extremos sueltos sobre clavículas, sin nudo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_009.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_009.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_015:stock_clip"
         }
       ]
     },
@@ -1243,27 +1001,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro anatómico de pliegue horizontal del cuello con luz rasante, textura digna y sin retoque",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_010.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_010.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_017:stock_clip"
         }
       ]
     },
@@ -1348,27 +1088,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Compresa blanda apoyada sólo en frente y costados del cuello, extremos sueltos sobre clavículas, sin nudo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_011.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_011.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_021:stock_clip"
         }
       ]
     },
@@ -1399,27 +1121,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro anatómico de pliegue horizontal del cuello con luz rasante, textura digna y sin retoque",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_012.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_012.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_023:stock_clip"
         }
       ]
     },
@@ -1488,27 +1192,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro anatómico de pliegue horizontal del cuello con luz rasante, textura digna y sin retoque",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_006.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_006.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_026:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -1539,27 +1227,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor junto a una ventana mirando hacia abajo y luego al horizonte; plano documental sin overlays",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_007.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_007.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_028:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -1609,27 +1281,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor junto a una ventana mirando hacia abajo y luego al horizonte; plano documental sin overlays",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_013.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_013.mp4",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_031:stock_clip"
         }
       ]
     },
@@ -1695,27 +1349,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor junto a una ventana mirando hacia abajo y luego al horizonte; plano documental sin overlays",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_008.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_008.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_034:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -1749,27 +1387,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Compresa blanda apoyada sólo en frente y costados del cuello, extremos sueltos sobre clavículas, sin nudo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_009.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_009.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_036:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -1800,27 +1422,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro anatómico de pliegue horizontal del cuello con luz rasante, textura digna y sin retoque",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_010.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_010.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_038:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -1905,27 +1511,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Compresa blanda apoyada sólo en frente y costados del cuello, extremos sueltos sobre clavículas, sin nudo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_011.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_011.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_042:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -1956,27 +1546,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro anatómico de pliegue horizontal del cuello con luz rasante, textura digna y sin retoque",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_012.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_012.jpg",
+          "asset_id": "v89mlm0ixyno:cuello_y_barrera_044:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2115,27 +1689,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sin perfume aplicada con pequeños toques sobre piel ligeramente húmeda, sin estirar el cuello",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_013.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_013.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_004:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2185,27 +1743,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_014.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_014.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_006:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2255,27 +1797,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Gota de infusión detrás de la oreja en una demostración prudente, piel intacta y manos protegidas del recorte",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_014.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_014.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_009:stock_clip"
         }
       ]
     },
@@ -2341,27 +1865,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sin perfume aplicada con pequeños toques sobre piel ligeramente húmeda, sin estirar el cuello",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_015.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_015.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_012:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2411,27 +1919,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño exprimido sobre el fregadero: húmedo, sin goteo; manos maduras completas y textura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_015.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_015.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_015:stock_clip"
         }
       ]
     },
@@ -2446,27 +1936,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sin perfume aplicada con pequeños toques sobre piel ligeramente húmeda, sin estirar el cuello",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_016.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_016.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_016:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2551,27 +2025,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sin perfume aplicada con pequeños toques sobre piel ligeramente húmeda, sin estirar el cuello",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_017.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_017.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_020:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2602,27 +2060,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_018.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_018.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_022:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2672,27 +2114,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Gota de infusión detrás de la oreja en una demostración prudente, piel intacta y manos protegidas del recorte",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_016.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_016.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_025:stock_clip"
         }
       ]
     },
@@ -2742,27 +2166,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño exprimido sobre el fregadero: húmedo, sin goteo; manos maduras completas y textura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_017.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_017.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_027:stock_clip"
         }
       ]
     },
@@ -2812,27 +2218,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_019.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_019.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_030:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -2898,27 +2288,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Gota de infusión detrás de la oreja en una demostración prudente, piel intacta y manos protegidas del recorte",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_018.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_018.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_033:stock_clip"
         }
       ]
     },
@@ -2968,27 +2340,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sin perfume aplicada con pequeños toques sobre piel ligeramente húmeda, sin estirar el cuello",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_020.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_020.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_036:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -3019,27 +2375,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_021.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_021.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_038:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -3108,27 +2448,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Gota de infusión detrás de la oreja en una demostración prudente, piel intacta y manos protegidas del recorte",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_019.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_019.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_041:stock_clip"
         }
       ]
     },
@@ -3159,27 +2481,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño exprimido sobre el fregadero: húmedo, sin goteo; manos maduras completas y textura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_020.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_020.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_043:stock_clip"
         }
       ]
     },
@@ -3229,27 +2533,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_022.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_022.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_046:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -3315,27 +2603,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Gota de infusión detrás de la oreja en una demostración prudente, piel intacta y manos protegidas del recorte",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_021.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_021.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_049:stock_clip"
         }
       ]
     },
@@ -3369,27 +2639,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño exprimido sobre el fregadero: húmedo, sin goteo; manos maduras completas y textura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_022.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_022.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_051:stock_clip"
         }
       ]
     },
@@ -3455,27 +2707,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_023.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_023.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_054:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -3525,27 +2761,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Gota de infusión detrás de la oreja en una demostración prudente, piel intacta y manos protegidas del recorte",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_023.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_023.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_057:stock_clip"
         }
       ]
     },
@@ -3576,27 +2794,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño exprimido sobre el fregadero: húmedo, sin goteo; manos maduras completas y textura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_024.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_024.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_059:stock_clip"
         }
       ]
     },
@@ -3665,27 +2865,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_024.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_024.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_062:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -3716,27 +2900,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sin perfume aplicada con pequeños toques sobre piel ligeramente húmeda, sin estirar el cuello",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_025.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_025.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_064:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -3786,27 +2954,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño exprimido sobre el fregadero: húmedo, sin goteo; manos maduras completas y textura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_025.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_025.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_067:stock_clip"
         }
       ]
     },
@@ -3872,27 +3022,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_026.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_026.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_070:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -3926,27 +3060,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Crema sin perfume aplicada con pequeños toques sobre piel ligeramente húmeda, sin estirar el cuello",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_027.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_027.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_072:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -4012,27 +3130,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño exprimido sobre el fregadero: húmedo, sin goteo; manos maduras completas y textura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_026.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_026.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_075:stock_clip"
         }
       ]
     },
@@ -4082,27 +3182,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Agua retirada del fuego antes de añadir una cucharadita rasa de romero; plano cenital culinario sin vapor excesivo",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_028.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_028.jpg",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_078:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -4168,27 +3252,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Gota de infusión detrás de la oreja en una demostración prudente, piel intacta y manos protegidas del recorte",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_027.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_027.mp4",
+          "asset_id": "v89mlm0ixyno:prueba_y_preparacion_081:stock_clip"
         }
       ]
     },
@@ -4311,27 +3377,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Dos vasos idénticos, uno con infusión clara y otro con agua, fotografiados con la misma luz y sin etiquetas comerciales",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_028.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_028.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_005:stock_clip"
         }
       ]
     },
@@ -4362,27 +3410,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_029.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_029.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_007:stock_clip"
         }
       ]
     },
@@ -4432,27 +3462,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_029.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_029.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_010:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -4518,27 +3532,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_030.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_030.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_013:stock_clip"
         }
       ]
     },
@@ -4588,27 +3584,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_030.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_030.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_016:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -4658,27 +3638,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Secuencia documental de fotografías del cuello en posición y luz idénticas, sin retoque ni resultado fabricado",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_031.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_031.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_018:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -4728,27 +3692,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Secuencia documental de fotografías del cuello en posición y luz idénticas, sin retoque ni resultado fabricado",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_031.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_031.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_021:stock_clip"
         }
       ]
     },
@@ -4779,27 +3725,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Dos vasos idénticos, uno con infusión clara y otro con agua, fotografiados con la misma luz y sin etiquetas comerciales",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_032.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_032.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_023:stock_clip"
         }
       ]
     },
@@ -4849,27 +3777,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Dos vasos idénticos, uno con infusión clara y otro con agua, fotografiados con la misma luz y sin etiquetas comerciales",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_032.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_032.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_026:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -4919,27 +3831,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_033.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_033.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_028:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -4989,27 +3885,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_033.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_033.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_031:stock_clip"
         }
       ]
     },
@@ -5075,27 +3953,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_034.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_034.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_034:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -5145,27 +4007,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_034.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_034.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_037:stock_clip"
         }
       ]
     },
@@ -5196,27 +4040,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Secuencia documental de fotografías del cuello en posición y luz idénticas, sin retoque ni resultado fabricado",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_035.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_035.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_039:stock_clip"
         }
       ]
     },
@@ -5285,27 +4111,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Secuencia documental de fotografías del cuello en posición y luz idénticas, sin retoque ni resultado fabricado",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_035.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_035.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_042:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -5336,27 +4146,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Dos vasos idénticos, uno con infusión clara y otro con agua, fotografiados con la misma luz y sin etiquetas comerciales",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_036.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_036.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_044:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -5406,27 +4200,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Dos vasos idénticos, uno con infusión clara y otro con agua, fotografiados con la misma luz y sin etiquetas comerciales",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_036.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_036.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_047:stock_clip"
         }
       ]
     },
@@ -5492,27 +4268,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Dos vasos idénticos, uno con infusión clara y otro con agua, fotografiados con la misma luz y sin etiquetas comerciales",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_037.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_037.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_050:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -5546,27 +4306,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_038.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_038.jpg",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_052:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -5632,27 +4376,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado sobre una bandeja y crema permaneciendo en el cuello antes de acostarse, foto nocturna limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_037.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_037.mp4",
+          "asset_id": "v89mlm0ixyno:mecanismo_y_control_055:stock_clip"
         }
       ]
     },
@@ -5737,27 +4463,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Bandeja con limón, alcohol, bicarbonato y vinagre apartados de la taza de romero; fotografía limpia sin gesto sensacionalista",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_038.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_038.mp4",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_001:stock_clip"
         }
       ]
     },
@@ -5842,27 +4550,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño recién lavado secándose al aire y sobrante de infusión vertido al desagüe tras un solo uso",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_039.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_039.mp4",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_005:stock_clip"
         }
       ]
     },
@@ -5931,27 +4621,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño recién lavado secándose al aire y sobrante de infusión vertido al desagüe tras un solo uso",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_039.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_039.jpg",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_008:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -5982,27 +4656,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Bandeja con limón, alcohol, bicarbonato y vinagre apartados de la taza de romero; fotografía limpia sin gesto sensacionalista",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_040.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_040.jpg",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_010:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -6052,27 +4710,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Bandeja con limón, alcohol, bicarbonato y vinagre apartados de la taza de romero; fotografía limpia sin gesto sensacionalista",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_040.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_040.mp4",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_013:stock_clip"
         }
       ]
     },
@@ -6138,27 +4778,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Bandeja con limón, alcohol, bicarbonato y vinagre apartados de la taza de romero; fotografía limpia sin gesto sensacionalista",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_041.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_041.jpg",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_016:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -6192,27 +4816,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Consulta dermatológica tranquila con paciente mayor, sin mostrar lesiones identificables ni diagnósticos inventados",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_042.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_042.jpg",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_018:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -6278,27 +4886,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Consulta dermatológica tranquila con paciente mayor, sin mostrar lesiones identificables ni diagnósticos inventados",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_041.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_041.mp4",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_021:stock_clip"
         }
       ]
     },
@@ -6348,27 +4938,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Consulta dermatológica tranquila con paciente mayor, sin mostrar lesiones identificables ni diagnósticos inventados",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_043.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_043.jpg",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_024:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -6399,27 +4973,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño recién lavado secándose al aire y sobrante de infusión vertido al desagüe tras un solo uso",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_044.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_044.jpg",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_026:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -6488,27 +5046,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño recién lavado secándose al aire y sobrante de infusión vertido al desagüe tras un solo uso",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_042.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_042.mp4",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_029:stock_clip"
         }
       ]
     },
@@ -6539,27 +5079,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Bandeja con limón, alcohol, bicarbonato y vinagre apartados de la taza de romero; fotografía limpia sin gesto sensacionalista",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_043.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_043.mp4",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_031:stock_clip"
         }
       ]
     },
@@ -6609,27 +5131,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Bandeja con limón, alcohol, bicarbonato y vinagre apartados de la taza de romero; fotografía limpia sin gesto sensacionalista",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_045.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_045.jpg",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_034:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -6695,27 +5201,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Bandeja con limón, alcohol, bicarbonato y vinagre apartados de la taza de romero; fotografía limpia sin gesto sensacionalista",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_044.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_044.mp4",
+          "asset_id": "v89mlm0ixyno:limites_y_mezclas_037:stock_clip"
         }
       ]
     },
@@ -6800,27 +5288,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Protector solar aplicado en rostro, cuello, orejas y escote por una mujer mayor antes de salir, plano limpio",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_045.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_045.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_001:stock_clip"
         }
       ]
     },
@@ -6924,27 +5394,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Protector solar aplicado en rostro, cuello, orejas y escote por una mujer mayor antes de salir, plano limpio",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_046.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_046.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_005:stock_clip"
         }
       ]
     },
@@ -6994,27 +5446,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Envases neutros de hidratante frente a crema de cuello lujosa, comparación de packaging sin marcas ni texto superpuesto",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_046.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_046.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_008:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7045,27 +5481,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_047.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_047.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_010:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7150,27 +5570,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_048.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_048.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_014:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7185,27 +5589,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Perfume aplicado en la ropa y no directamente sobre el cuello, manos y atomizador completos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_047.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_047.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_015:stock_clip"
         }
       ]
     },
@@ -7255,27 +5641,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_049.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_049.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_018:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7341,27 +5711,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Protector solar aplicado en rostro, cuello, orejas y escote por una mujer mayor antes de salir, plano limpio",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_048.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_048.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_021:stock_clip"
         }
       ]
     },
@@ -7411,27 +5763,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Envases neutros de hidratante frente a crema de cuello lujosa, comparación de packaging sin marcas ni texto superpuesto",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_050.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_050.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_024:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7481,27 +5817,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_051.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_051.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_026:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7551,27 +5871,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Protector solar aplicado en rostro, cuello, orejas y escote por una mujer mayor antes de salir, plano limpio",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_049.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_049.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_029:stock_clip"
         }
       ]
     },
@@ -7602,27 +5904,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Perfume aplicado en la ropa y no directamente sobre el cuello, manos y atomizador completos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_050.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_050.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_031:stock_clip"
         }
       ]
     },
@@ -7672,27 +5956,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_052.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_052.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_034:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7758,27 +6026,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Protector solar aplicado en rostro, cuello, orejas y escote por una mujer mayor antes de salir, plano limpio",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_051.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_051.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_037:stock_clip"
         }
       ]
     },
@@ -7812,27 +6062,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Perfume aplicado en la ropa y no directamente sobre el cuello, manos y atomizador completos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_052.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_052.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_039:stock_clip"
         }
       ]
     },
@@ -7898,27 +6130,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_053.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_053.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_042:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -7968,27 +6184,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Protector solar aplicado en rostro, cuello, orejas y escote por una mujer mayor antes de salir, plano limpio",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_053.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_053.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_045:stock_clip"
         }
       ]
     },
@@ -8019,27 +6217,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Perfume aplicado en la ropa y no directamente sobre el cuello, manos y atomizador completos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_054.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_054.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_047:stock_clip"
         }
       ]
     },
@@ -8108,27 +6288,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_054.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_054.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_050:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -8159,27 +6323,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Envases neutros de hidratante frente a crema de cuello lujosa, comparación de packaging sin marcas ni texto superpuesto",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_055.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_055.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_052:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -8229,27 +6377,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Perfume aplicado en la ropa y no directamente sobre el cuello, manos y atomizador completos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_055.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_055.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_055:stock_clip"
         }
       ]
     },
@@ -8315,27 +6445,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Teléfono elevado a la altura de los ojos y cambio de postura durante una lectura, escena cotidiana sin promesa estética",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_056.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_056.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_058:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -8369,27 +6483,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Envases neutros de hidratante frente a crema de cuello lujosa, comparación de packaging sin marcas ni texto superpuesto",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_057.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_057.jpg",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_060:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -8455,27 +6553,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Perfume aplicado en la ropa y no directamente sobre el cuello, manos y atomizador completos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_056.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_056.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_063:stock_clip"
         }
       ]
     },
@@ -8560,27 +6640,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Perfume aplicado en la ropa y no directamente sobre el cuello, manos y atomizador completos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_057.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_057.mp4",
+          "asset_id": "v89mlm0ixyno:frecuencia_y_prevencion_067:stock_clip"
         }
       ]
     },
@@ -8665,27 +6727,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Yema presionando suavemente un pequeño sector de cuello sano y soltando, sin pellizcar",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_058.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_058.jpg",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_004:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -8754,27 +6800,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Yema presionando suavemente un pequeño sector de cuello sano y soltando, sin pellizcar",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_058.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_058.mp4",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_007:stock_clip"
         }
       ]
     },
@@ -8805,27 +6833,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Cinta adhesiva y film plástico alejados de un cuello libre; fotografía de seguridad, sin envoltura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_059.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_059.mp4",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_009:stock_clip"
         }
       ]
     },
@@ -8875,27 +6885,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Cinta adhesiva y film plástico alejados de un cuello libre; fotografía de seguridad, sin envoltura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_059.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_059.jpg",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_012:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -8961,27 +6955,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Cinta adhesiva y film plástico alejados de un cuello libre; fotografía de seguridad, sin envoltura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_060.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_060.mp4",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_015:stock_clip"
         }
       ]
     },
@@ -9031,27 +7007,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Cinta adhesiva y film plástico alejados de un cuello libre; fotografía de seguridad, sin envoltura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_060.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_060.jpg",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_018:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9101,27 +7061,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Pantalla dividida editorial entre hidratación suave y gesto de frotar descartado, sin simular resultados clínicos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_061.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_061.jpg",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_020:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9206,27 +7150,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Cinta adhesiva y film plástico alejados de un cuello libre; fotografía de seguridad, sin envoltura real",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_062.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_062.jpg",
+          "asset_id": "v89mlm0ixyno:senales_y_mitos_024:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9311,27 +7239,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro médico sobrio de fibras húmedas rozando una superficie cutánea simulada, sin herida gráfica",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_063.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_063.jpg",
+          "asset_id": "v89mlm0ixyno:error_prometido_004:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9416,27 +7328,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Persona mayor girando en la almohada con cuello completamente libre, sábana y pijama suaves",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_064.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_064.jpg",
+          "asset_id": "v89mlm0ixyno:error_prometido_008:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9451,27 +7347,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado en la mesa de noche y crema sobre la piel antes de apagar la lámpara",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_061.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_061.mp4",
+          "asset_id": "v89mlm0ixyno:error_prometido_009:stock_clip"
         }
       ]
     },
@@ -9521,27 +7399,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado en la mesa de noche y crema sobre la piel antes de apagar la lámpara",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_065.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_065.jpg",
+          "asset_id": "v89mlm0ixyno:error_prometido_012:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9607,27 +7469,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado en la mesa de noche y crema sobre la piel antes de apagar la lámpara",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_062.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_062.mp4",
+          "asset_id": "v89mlm0ixyno:error_prometido_015:stock_clip"
         }
       ]
     },
@@ -9677,27 +7521,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Paño retirado en la mesa de noche y crema sobre la piel antes de apagar la lámpara",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_066.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_066.jpg",
+          "asset_id": "v89mlm0ixyno:error_prometido_018:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9747,27 +7575,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Persona mayor girando en la almohada con cuello completamente libre, sábana y pijama suaves",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_067.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_067.jpg",
+          "asset_id": "v89mlm0ixyno:error_prometido_020:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -9817,27 +7629,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Persona mayor girando en la almohada con cuello completamente libre, sábana y pijama suaves",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_063.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_063.mp4",
+          "asset_id": "v89mlm0ixyno:error_prometido_023:stock_clip"
         }
       ]
     },
@@ -9868,27 +7662,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Macro médico sobrio de fibras húmedas rozando una superficie cutánea simulada, sin herida gráfica",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_064.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_064.mp4",
+          "asset_id": "v89mlm0ixyno:error_prometido_025:stock_clip"
         }
       ]
     },
@@ -10008,27 +7784,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Trípode y marca discreta en el suelo para repetir fotografía bajo la misma luz, sin mostrar falsos antes/después",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_065.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_065.mp4",
+          "asset_id": "v89mlm0ixyno:evaluacion_realista_001:stock_clip"
         }
       ]
     },
@@ -10113,27 +7871,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Calendario de varias semanas junto a notas de comodidad, descamación y picazón; fotografía cenital limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_066.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_066.mp4",
+          "asset_id": "v89mlm0ixyno:evaluacion_realista_005:stock_clip"
         }
       ]
     },
@@ -10167,27 +7907,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Trípode y marca discreta en el suelo para repetir fotografía bajo la misma luz, sin mostrar falsos antes/después",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_067.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_067.mp4",
+          "asset_id": "v89mlm0ixyno:evaluacion_realista_007:stock_clip"
         }
       ]
     },
@@ -10253,27 +7975,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Trípode y marca discreta en el suelo para repetir fotografía bajo la misma luz, sin mostrar falsos antes/después",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_068.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_068.jpg",
+          "asset_id": "v89mlm0ixyno:evaluacion_realista_010:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -10323,27 +8029,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Trípode y marca discreta en el suelo para repetir fotografía bajo la misma luz, sin mostrar falsos antes/después",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_068.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_068.mp4",
+          "asset_id": "v89mlm0ixyno:evaluacion_realista_013:stock_clip"
         }
       ]
     },
@@ -10444,27 +8132,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Calendario de varias semanas junto a notas de comodidad, descamación y picazón; fotografía cenital limpia",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_069.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_069.mp4",
+          "asset_id": "v89mlm0ixyno:evaluacion_realista_017:stock_clip"
         }
       ]
     },
@@ -10552,27 +8222,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Siete objetos del ritual ordenados en línea: parche, taza, paño, crema, cesto, protector y dos vasos; sin títulos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_069.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_069.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_004:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -10603,27 +8257,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Avena y paño frío sobre una bandeja como teaser visual, separados de cualquier ingrediente irritante",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_070.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_070.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_006:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -10708,27 +8346,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Siete objetos del ritual ordenados en línea: parche, taza, paño, crema, cesto, protector y dos vasos; sin títulos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_071.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_071.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_010:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -10759,27 +8381,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Avena y paño frío sobre una bandeja como teaser visual, separados de cualquier ingrediente irritante",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_072.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_072.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_012:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -10813,27 +8419,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor guarda un pequeño kit limpio en un cajón y deja el cuello libre al acostarse",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_073.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_073.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_014:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -10899,27 +8489,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor guarda un pequeño kit limpio en un cajón y deja el cuello libre al acostarse",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_070.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_070.mp4",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_017:stock_clip"
         }
       ]
     },
@@ -10969,27 +8541,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor guarda un pequeño kit limpio en un cajón y deja el cuello libre al acostarse",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_074.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_074.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_020:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -11020,27 +8576,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Siete objetos del ritual ordenados en línea: parche, taza, paño, crema, cesto, protector y dos vasos; sin títulos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_075.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_075.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_022:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -11109,27 +8649,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Siete objetos del ritual ordenados en línea: parche, taza, paño, crema, cesto, protector y dos vasos; sin títulos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_071.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_071.mp4",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_025:stock_clip"
         }
       ]
     },
@@ -11160,27 +8682,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Avena y paño frío sobre una bandeja como teaser visual, separados de cualquier ingrediente irritante",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_072.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_072.mp4",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_027:stock_clip"
         }
       ]
     },
@@ -11265,27 +8769,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Siete objetos del ritual ordenados en línea: parche, taza, paño, crema, cesto, protector y dos vasos; sin títulos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_073.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_073.mp4",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_031:stock_clip"
         }
       ]
     },
@@ -11316,27 +8802,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Avena y paño frío sobre una bandeja como teaser visual, separados de cualquier ingrediente irritante",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_074.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_074.mp4",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_033:stock_clip"
         }
       ]
     },
@@ -11386,27 +8854,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Avena y paño frío sobre una bandeja como teaser visual, separados de cualquier ingrediente irritante",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_076.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_076.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_036:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -11456,27 +8908,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor guarda un pequeño kit limpio en un cajón y deja el cuello libre al acostarse",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_077.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_077.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_038:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     },
@@ -11526,27 +8962,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Mujer mayor guarda un pequeño kit limpio en un cajón y deja el cuello libre al acostarse",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_075.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_075.mp4",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_041:stock_clip"
         }
       ]
     },
@@ -11577,27 +8995,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Siete objetos del ritual ordenados en línea: parche, taza, paño, crema, cesto, protector y dos vasos; sin títulos",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "broll/v89_stock_076.mp4",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "video",
+          "src": "broll/v89_stock_076.mp4",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_043:stock_clip"
         }
       ]
     },
@@ -11717,27 +9117,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "title": "El COLLAR de ROMERO: Borra las Arrugas del CUELLO Mientras Duermes",
-          "detail": "Avena y paño frío sobre una bandeja como teaser visual, separados de cualquier ingrediente irritante",
-          "kicker": "",
-          "family": "FedFullShot",
-          "value": "",
-          "suffix": "",
-          "icon": "",
-          "image": "img/editorial_v89_078.jpg",
-          "image_b": null,
-          "items": [],
-          "nodes": [],
-          "cards": [],
-          "step": null,
-          "total": null,
-          "attributed": false,
-          "author": "",
-          "role": "",
-          "depth_layers": 7
+          "type": "image",
+          "src": "img/editorial_v89_078.jpg",
+          "asset_id": "v89mlm0ixyno:recap_y_cierre_048:editorial_image",
+          "role": "clean_image",
+          "overlay_policy": "none"
         }
       ]
     }
@@ -11745,9 +9129,9 @@
   "metrics": {
     "scenes": 440,
     "avatar_scenes": 119,
-    "clip_scenes": 0,
-    "image_scenes": 88,
-    "component_scenes": 233,
+    "clip_scenes": 76,
+    "image_scenes": 166,
+    "component_scenes": 79,
     "distinct_render_components": 8,
     "duration_seconds": 1630.04,
     "unresolved_assets": 0,
