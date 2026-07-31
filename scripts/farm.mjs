@@ -78,14 +78,15 @@ if (!only) { // en re-render parcial NO re-empaquetamos ni re-subimos assets (el
 // 1) tarball de assets (TAR_DIR redirige el .tar a otro disco — C: se llena con ~1GB)
 const tarDir = process.env.TAR_DIR || ".";
 const tar = `${tarDir}/assets-${slug}.tar`;
-const avatar = `public/${slug}_opt.mp4`;
+const avatarCandidates = [`public/avatar_${slug}.mp4`, `public/${slug}_opt.mp4`];
+const avatar = avatarCandidates.find((candidate) => fs.existsSync(candidate)) || avatarCandidates[0];
 const wav = `public/${slug}.wav`;
 if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
-const hasAvatar = fs.existsSync(avatar); // videos FACELESS (sin avatar) no tienen _opt.mp4
+const hasAvatar = fs.existsSync(avatar); // videos FACELESS do not have either canonical avatar path
 if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la narración`);
 // rutas relativas a public/ (el workflow extrae con -C public)
 let items = [`${slug}.wav`];
-if (hasAvatar) items.unshift(`${slug}_opt.mp4`);
+if (hasAvatar) items.unshift(avatar.replace(/^public[\\/]/, ""));
 // SFX: `public/` está en .gitignore, así que un worktree nuevo nace SIN public/sfx. Este `if` se
 // escribió como defensa, pero la rama defensiva ES el caso roto: el tar salía sin sfx, en silencio,
 // y cada chunk que usaba un whoosh moría con "404 downloading /public/sfx/…". Costó 13 de 20 chunks
