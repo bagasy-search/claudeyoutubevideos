@@ -37,9 +37,8 @@ const AvatarBase_v48vr0jexdrms: React.FC = () => {
   );
 };
 
-export const BagasyTimeline_v48vr0jexdrms: React.FC = () => (
+export const BagasyVisualTimeline_v48vr0jexdrms: React.FC = () => (
   <AbsoluteFill style={{background: "#111914"}}>
-    <Audio src={staticFile("v48vr0jexdrms.wav")} />
     <AvatarBase_v48vr0jexdrms />
     {PREMIUM_CUES_V48VR0JEXDRMS.map((cue) => (
       <Sequence
@@ -51,5 +50,12 @@ export const BagasyTimeline_v48vr0jexdrms: React.FC = () => (
         {cue.el(cue.duration)}
       </Sequence>
     ))}
+  </AbsoluteFill>
+);
+
+export const BagasyTimeline_v48vr0jexdrms: React.FC = () => (
+  <AbsoluteFill style={{background: "#111914"}}>
+    <Audio src={staticFile("v48vr0jexdrms.wav")} />
+    <BagasyVisualTimeline_v48vr0jexdrms />
   </AbsoluteFill>
 );

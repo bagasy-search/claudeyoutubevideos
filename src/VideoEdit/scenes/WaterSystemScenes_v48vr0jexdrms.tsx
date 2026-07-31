@@ -2,13 +2,13 @@ import React from "react";
 import {
   AbsoluteFill,
   Easing,
-  OffthreadVideo,
   interpolate,
   spring,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import {Video} from "@remotion/media";
 
 type WaterMode =
   | "roof"
@@ -781,19 +781,35 @@ const WaterSceneCore: React.FC<
     [1.025, 1.075],
     {...clamp, easing: Easing.inOut(Easing.quad)},
   );
+  const modes: WaterMode[] = [
+    "roof", "cistern", "spring", "gravity", "springhouse", "well", "handpump",
+    "windmill", "rampump", "pond", "treatment", "backflow", "property", "safety",
+  ];
+  const family = Math.max(0, modes.indexOf(mode)) % 5;
+  const diagramOnLeft = family === 1 || family === 4;
+  const wideDiagram = family === 2 || family === 4;
+  const highExposure = mode === "springhouse" || mode === "pond";
+  const orbit = interpolate(
+    frame,
+    [0, Math.max(1, durationInFrames - 1)],
+    [-16, 18],
+    {...clamp, easing: Easing.inOut(Easing.sin)},
+  );
 
   return (
     <AbsoluteFill
       style={{
         overflow: "hidden",
         background:
-          "radial-gradient(circle at 72% 42%,#27564f,#101b18 56%,#09110f)",
+          highExposure
+            ? "radial-gradient(circle at 66% 38%,#6a8f7c,#29463d 58%,#13231e)"
+            : "radial-gradient(circle at 72% 42%,#346b61,#172d28 58%,#0c1714)",
         color: palette.cream,
         opacity: end,
       }}
     >
       {src ? (
-        <OffthreadVideo
+        <Video
           src={staticFile(src)}
           muted
           loop
@@ -802,42 +818,88 @@ const WaterSceneCore: React.FC<
             height: "100%",
             objectFit: "cover",
             transform: `scale(${camera})`,
-            filter: "saturate(.66) contrast(1.08) brightness(.46)",
-            opacity: 0.72,
+            filter: highExposure
+              ? "saturate(.9) contrast(1.04) brightness(.92)"
+              : "saturate(.82) contrast(1.06) brightness(.72)",
+            opacity: highExposure ? 0.9 : 0.78,
           }}
         />
       ) : null}
       <AbsoluteFill
         style={{
-          background:
-            "linear-gradient(90deg,rgba(9,17,15,.96),rgba(10,20,18,.74) 44%,rgba(7,14,13,.38)),radial-gradient(circle at 75% 52%,rgba(79,177,170,.17),transparent 36%)",
-          backdropFilter: "blur(3px)",
+          background: diagramOnLeft
+            ? "linear-gradient(90deg,rgba(7,16,14,.18),rgba(8,18,16,.28) 54%,rgba(7,14,12,.80)),radial-gradient(circle at 28% 50%,rgba(98,209,195,.17),transparent 38%)"
+            : "linear-gradient(90deg,rgba(7,14,12,.82),rgba(8,18,16,.30) 46%,rgba(7,16,14,.12)),radial-gradient(circle at 72% 50%,rgba(98,209,195,.17),transparent 38%)",
         }}
       />
       <div
         style={{
           position: "absolute",
-          inset: "70px 82px 66px",
+          width: wideDiagram ? 780 : 620,
+          height: wideDiagram ? 780 : 620,
+          left: diagramOnLeft ? 120 + orbit : "auto",
+          right: diagramOnLeft ? "auto" : 120 - orbit,
+          top: wideDiagram ? 125 : 205,
+          border: "1px solid rgba(164,232,220,.22)",
+          borderRadius: "50%",
+          boxShadow: "0 0 0 70px rgba(91,194,179,.035),0 0 0 160px rgba(91,194,179,.02)",
+          opacity: intro * 0.85,
+          transform: `scale(${0.88 + intro * 0.12})`,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: 64,
+          right: 64,
+          top: family % 2 ? 62 : "auto",
+          bottom: family % 2 ? "auto" : 58,
+          height: 2,
+          background: "linear-gradient(90deg,transparent,#e1bd76 22%,#7dd7d1 66%,transparent)",
+          opacity: intro * 0.62,
+          transform: `scaleX(${intro})`,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          inset: "58px 72px 58px",
           display: "grid",
-          gridTemplateColumns: "0.74fr 1.26fr",
-          gap: 44,
+          gridTemplateColumns: wideDiagram
+            ? "1fr"
+            : diagramOnLeft
+              ? "1.32fr .68fr"
+              : ".68fr 1.32fr",
+          gap: 34,
           alignItems: "center",
         }}
       >
         <div
           style={{
+            position: wideDiagram ? "absolute" : "relative",
+            left: wideDiagram && !diagramOnLeft ? 0 : "auto",
+            right: wideDiagram && diagramOnLeft ? 0 : "auto",
+            top: wideDiagram ? 285 : "auto",
+            order: diagramOnLeft ? 2 : 1,
+            zIndex: 3,
+            alignSelf: wideDiagram ? (family === 2 ? "start" : "center") : "center",
+            justifySelf: diagramOnLeft ? "end" : "start",
+            maxWidth: wideDiagram ? 690 : 590,
+            paddingTop: wideDiagram && family === 2 ? 30 : 0,
+            paddingBottom: wideDiagram && family === 4 ? 30 : 0,
             opacity: intro,
-            transform: `translateY(${(1 - intro) * 28}px)`,
+            transform: `translate3d(${(1 - intro) * (diagramOnLeft ? 38 : -38)}px,${(1 - intro) * 18}px,0)`,
           }}
         >
           <div
             style={{
               color: palette.water,
               fontFamily: "Arial, sans-serif",
-              fontSize: 20,
+              fontSize: 18,
               fontWeight: 900,
               letterSpacing: 5,
-              marginBottom: 24,
+              marginBottom: 19,
+              textShadow: "0 3px 15px rgba(0,0,0,.82)",
             }}
           >
             {eyebrow}
@@ -847,11 +909,12 @@ const WaterSceneCore: React.FC<
               style={{
                 color: palette.amber,
                 fontFamily: "Arial, sans-serif",
-                fontSize: metric.length > 8 ? 72 : 110,
+                fontSize: metric.length > 8 ? 64 : 96,
                 lineHeight: 0.88,
                 fontWeight: 900,
                 letterSpacing: -5,
-                marginBottom: 24,
+                marginBottom: 18,
+                textShadow: "0 5px 22px rgba(0,0,0,.72)",
               }}
             >
               {metric}
@@ -860,11 +923,11 @@ const WaterSceneCore: React.FC<
           <div
             style={{
               fontFamily: "Georgia, serif",
-              fontSize: title.length > 34 ? 54 : 66,
+              fontSize: title.length > 34 ? 46 : 60,
               lineHeight: 1.01,
               fontWeight: 700,
               letterSpacing: -2,
-              textShadow: "0 9px 32px rgba(0,0,0,.48)",
+              textShadow: "0 7px 28px rgba(0,0,0,.86)",
             }}
           >
             {title}
@@ -872,23 +935,23 @@ const WaterSceneCore: React.FC<
         </div>
         <div
           style={{
-            position: "relative",
-            height: 720,
-            borderRadius: 42,
-            overflow: "hidden",
-            background:
-              "linear-gradient(145deg,rgba(22,50,45,.84),rgba(8,19,17,.72))",
-            border: "1px solid rgba(125,215,209,.32)",
-            boxShadow:
-              "0 32px 100px rgba(2,8,6,.44),inset 0 1px rgba(255,255,255,.12)",
-            backdropFilter: "blur(15px)",
+            position: wideDiagram ? "absolute" : "relative",
+            left: wideDiagram && diagramOnLeft ? 0 : "auto",
+            right: wideDiagram && !diagramOnLeft ? 0 : "auto",
+            top: wideDiagram ? 70 : "auto",
+            order: diagramOnLeft ? 1 : 2,
+            justifySelf: diagramOnLeft ? "start" : "end",
+            width: wideDiagram ? "78%" : "100%",
+            height: wideDiagram ? 820 : 780,
+            overflow: "visible",
             opacity: intro,
-            transform: `scale(${0.95 + intro * 0.05})`,
+            transform: `translate3d(${diagramOnLeft ? orbit : -orbit}px,${family === 3 ? orbit * 0.35 : 0}px,0) scale(${0.91 + intro * 0.09})`,
+            filter: "drop-shadow(0 25px 36px rgba(0,0,0,.34))",
           }}
         >
           <svg
             viewBox="0 0 960 720"
-            style={{width: "100%", height: "100%"}}
+            style={{width: "100%", height: "100%", overflow: "visible"}}
           >
             <Diagram mode={mode} />
           </svg>
@@ -897,8 +960,8 @@ const WaterSceneCore: React.FC<
       <AbsoluteFill
         style={{
           pointerEvents: "none",
-          boxShadow: "inset 0 0 150px rgba(3,8,6,.48)",
-          opacity: 0.35,
+          boxShadow: "inset 0 0 120px rgba(3,8,6,.24)",
+          opacity: 0.2,
           backgroundImage:
             "radial-gradient(rgba(255,255,255,.1) .6px,transparent .6px)",
           backgroundSize: "5px 5px",
@@ -961,7 +1024,7 @@ export const EvidencePulse_v48vr0jexdrms: React.FC<{
     fps,
     config: {damping: 18, stiffness: 115, mass: 0.72},
   });
-  const breathe = 1 + Math.sin(frame / 13) * 0.045;
+  const breathe = 0.76 + Math.sin(frame / 13) * 0.24;
   const exit = interpolate(
     frame,
     [Math.max(1, durationInFrames - 10), Math.max(2, durationInFrames - 1)],
@@ -972,36 +1035,17 @@ export const EvidencePulse_v48vr0jexdrms: React.FC<{
     <div
       style={{
         position: "absolute",
-        right: 70,
-        bottom: 70,
-        width: 72,
-        height: 72,
-        borderRadius: 999,
-        display: "grid",
-        placeItems: "center",
+        right: 0,
+        bottom: 30,
+        width: 150,
+        height: 2,
         opacity: entrance * exit,
-        transform: `scale(${entrance * breathe})`,
+        transform: `scaleX(${entrance * breathe})`,
+        transformOrigin: "right center",
         background:
-          "radial-gradient(circle at 35% 28%,rgba(153,233,226,.95),rgba(42,133,142,.9) 58%,rgba(14,50,51,.96))",
-        border: "1px solid rgba(224,255,250,.58)",
-        boxShadow:
-          "0 12px 34px rgba(2,18,20,.38),0 0 0 7px rgba(125,215,209,.10)",
+          "linear-gradient(90deg,transparent,rgba(125,215,209,.68))",
       }}
-    >
-      <svg width="36" height="43" viewBox="0 0 36 43" aria-hidden="true">
-        <path
-          d="M18 2C14 10 5 18 5 27c0 8 5.8 14 13 14s13-6 13-14C31 18 22 10 18 2Z"
-          fill="rgba(255,255,255,.92)"
-        />
-        <path
-          d="M12 29c1.4 3.4 3.7 5.1 7.1 5.1"
-          fill="none"
-          stroke="rgba(46,132,142,.82)"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-        />
-      </svg>
-    </div>
+    />
   );
 };
 
@@ -1021,31 +1065,41 @@ export const AvatarFieldNote_v48vr0jexdrms: React.FC<
     [1, 0],
     clamp,
   );
+  let seed = 0;
+  for (let index = 0; index < title.length; index++) {
+    seed = (seed * 31 + title.charCodeAt(index)) >>> 0;
+  }
+  const alignRight = seed % 2 === 0;
   return (
     <AbsoluteFill style={{opacity: exit, pointerEvents: "none"}}>
+      <AbsoluteFill
+        style={{
+          background: alignRight
+            ? "linear-gradient(90deg,transparent 52%,rgba(6,12,10,.46))"
+            : "linear-gradient(90deg,rgba(6,12,10,.46),transparent 48%)",
+        }}
+      />
       <div
         style={{
           position: "absolute",
-          right: 72,
-          top: 96,
-          width: 650,
-          padding: "34px 40px 38px",
-          borderRadius: 34,
+          right: alignRight ? 76 : "auto",
+          left: alignRight ? "auto" : 76,
+          top: seed % 3 === 0 ? 104 : "auto",
+          bottom: seed % 3 === 0 ? "auto" : 82,
+          width: 610,
+          padding: alignRight ? "0 0 0 28px" : "0 28px 0 0",
           opacity: intro,
-          transform: `translateX(${(1 - intro) * 48}px)`,
-          background:
-            "linear-gradient(145deg,rgba(24,42,37,.88),rgba(10,20,17,.74))",
-          border: "1px solid rgba(125,215,209,.42)",
-          boxShadow:
-            "0 28px 84px rgba(3,8,6,.38),inset 0 1px rgba(255,255,255,.15)",
-          backdropFilter: "blur(18px)",
+          transform: `translateX(${(1 - intro) * (alignRight ? 54 : -54)}px)`,
+          textAlign: alignRight ? "left" : "right",
+          borderLeft: alignRight ? "3px solid rgba(125,215,209,.82)" : "none",
+          borderRight: alignRight ? "none" : "3px solid rgba(125,215,209,.82)",
         }}
       >
         <div
           style={{
             color: palette.water,
             fontFamily: "Arial, sans-serif",
-            fontSize: 18,
+            fontSize: 16,
             fontWeight: 900,
             letterSpacing: 4.6,
             marginBottom: 15,
@@ -1058,7 +1112,7 @@ export const AvatarFieldNote_v48vr0jexdrms: React.FC<
             style={{
               color: palette.amber,
               fontFamily: "Arial, sans-serif",
-              fontSize: 70,
+              fontSize: 62,
               lineHeight: 0.92,
               fontWeight: 900,
               marginBottom: 16,
@@ -1071,9 +1125,10 @@ export const AvatarFieldNote_v48vr0jexdrms: React.FC<
           style={{
             color: palette.cream,
             fontFamily: "Georgia, serif",
-            fontSize: 48,
+              fontSize: title.length > 34 ? 39 : 46,
             lineHeight: 1.03,
-            fontWeight: 700,
+              fontWeight: 700,
+              textShadow: "0 5px 24px rgba(0,0,0,.88)",
           }}
         >
           {title}

@@ -185,6 +185,29 @@ jobs:
           fi
           cat list.txt
           ffmpeg -y -f concat -safe 0 -i list.txt -c copy "${{ github.event.inputs.slug }}.mp4"
+          # The 60 independently encoded AAC streams for this slug accumulate
+          # encoder priming in concat. Normalize both timelines once after stitch:
+          # 42909 video frames at true 30 fps and a 1430.300 s program master.
+          if [ "${{ github.event.inputs.slug }}" = "v48vr0jexdrms" ]; then
+            mv "${{ github.event.inputs.slug }}.mp4" "${{ github.event.inputs.slug }}.drifted.mp4"
+            DRIFTED=$(ffprobe -v error -show_entries format=duration -of csv=p=0 \
+              "${{ github.event.inputs.slug }}.drifted.mp4")
+            TEMPO=$(awk -v d="$DRIFTED" 'BEGIN { printf "%.9f", d/1430.300 }')
+            echo "normalizing v48vr0jexdrms from ${DRIFTED}s with atempo=${TEMPO}"
+            ffmpeg -y -i "${{ github.event.inputs.slug }}.drifted.mp4" \
+              -filter_complex "[0:v]fps=30,setpts=N/(30*TB)[v];[0:a]atempo=${TEMPO},atrim=0:1430.300,asetpts=N/SR/TB[a]" \
+              -map "[v]" -map "[a]" -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p \
+              -c:a aac -b:a 192k -t 1430.300 -movflags +faststart \
+              "${{ github.event.inputs.slug }}.mp4"
+            FRAMES=$(ffprobe -v error -count_frames -select_streams v:0 \
+              -show_entries stream=nb_read_frames -of csv=p=0 "${{ github.event.inputs.slug }}.mp4")
+            DURATION=$(ffprobe -v error -show_entries format=duration -of csv=p=0 \
+              "${{ github.event.inputs.slug }}.mp4")
+            echo "v48vr0jexdrms normalized: ${FRAMES} frames, ${DURATION}s"
+            [ "$FRAMES" = "42909" ] || { echo "::error::expected 42909 frames, got $FRAMES"; exit 1; }
+            awk -v d="$DURATION" 'BEGIN { delta=d-1430.485313; if(delta<0)delta=-delta; exit(delta<0.25 ? 0 : 1) }' \
+              || { echo "::error::final duration ${DURATION}s is outside 0.25s of narration"; exit 1; }
+          fi
           # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
           # esperado algo se truncó igual. total_frames/30 es la duración teórica.
           ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")

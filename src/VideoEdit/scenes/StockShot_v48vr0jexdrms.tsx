@@ -2,11 +2,11 @@ import React from "react";
 import {
   AbsoluteFill,
   Easing,
-  OffthreadVideo,
   interpolate,
   staticFile,
   useCurrentFrame,
 } from "remotion";
+import {Video} from "@remotion/media";
 
 export type StockShotProps_v48vr0jexdrms = {
   durationInFrames: number;
@@ -33,6 +33,9 @@ const StockShot_v48vr0jexdrms: React.FC<StockShotProps_v48vr0jexdrms> = ({
   for (let index = 0; index < src.length; index++) {
     seed = (seed * 31 + src.charCodeAt(index)) >>> 0;
   }
+  // Most stock moments stay completely clean. A sparse editorial rail is
+  // reserved for roughly one shot in four, so footage—not a template—leads.
+  const showEditorialRail = Boolean(label) && seed % 4 === 0;
   const drift = interpolate(
     frame,
     [0, Math.max(1, durationInFrames - 1)],
@@ -60,7 +63,7 @@ const StockShot_v48vr0jexdrms: React.FC<StockShotProps_v48vr0jexdrms> = ({
     <AbsoluteFill
       style={{overflow: "hidden", background: "#10140f", opacity: exit}}
     >
-      <OffthreadVideo
+      <Video
         src={staticFile(src)}
         muted
         loop
@@ -69,46 +72,42 @@ const StockShot_v48vr0jexdrms: React.FC<StockShotProps_v48vr0jexdrms> = ({
           height: "100%",
           objectFit: "cover",
           transform: `translateX(${drift}px) scale(${zoom})`,
-          filter: "saturate(.84) contrast(1.065) brightness(.94)",
+          filter: "saturate(.92) contrast(1.055) brightness(1.02)",
         }}
       />
       <AbsoluteFill
         style={{
           background:
-            "linear-gradient(180deg,rgba(8,12,9,.06),transparent 45%,rgba(8,12,9,.32)),radial-gradient(circle at 50% 45%,transparent 48%,rgba(5,8,6,.27))",
-          boxShadow: "inset 0 0 120px rgba(5,8,6,.35)",
+            "linear-gradient(180deg,rgba(8,12,9,.04),transparent 62%,rgba(8,12,9,.18)),radial-gradient(circle at 50% 45%,transparent 62%,rgba(5,8,6,.12))",
+          boxShadow: "inset 0 0 90px rgba(5,8,6,.18)",
         }}
       />
-      {label ? (
+      {showEditorialRail ? (
         <div
           style={{
             position: "absolute",
-            left: layout === "badge" ? "auto" : 72,
-            right: layout === "badge" ? 72 : "auto",
-            top: layout === "rule" || layout === "badge" ? 64 : "auto",
-            bottom: layout === "corner" || layout === "lower" ? 66 : "auto",
-            maxWidth: layout === "lower" ? 1080 : 760,
-            padding: "20px 28px 23px",
-            borderRadius: layout === "rule" ? 16 : 27,
+            left: layout === "badge" ? "auto" : 70,
+            right: layout === "badge" ? 70 : "auto",
+            top: layout === "rule" || layout === "badge" ? 58 : "auto",
+            bottom: layout === "corner" || layout === "lower" ? 58 : "auto",
+            maxWidth: layout === "lower" ? 960 : 650,
+            padding: "0 0 0 23px",
             opacity: entrance,
-            transform: `translateY(${(1 - entrance) * 24}px)`,
-            background:
-              "linear-gradient(145deg,rgba(28,34,28,.88),rgba(12,17,14,.72))",
-            border: "1px solid rgba(198,223,188,.4)",
-            boxShadow:
-              "0 22px 58px rgba(3,7,5,.34),inset 0 1px rgba(255,255,255,.15)",
-            backdropFilter: "blur(16px) saturate(.82)",
+            transform: `translate3d(${(1 - entrance) * (layout === "badge" ? 32 : -32)}px,0,0)`,
+            filter: `blur(${(1 - entrance) * 7}px)`,
+            textAlign: layout === "badge" ? "right" : "left",
           }}
         >
           {eyebrow ? (
             <div
               style={{
-                color: "#a8d7c0",
+                color: "#b7ead4",
                 fontFamily: "Arial, sans-serif",
                 fontSize: 17,
                 fontWeight: 850,
                 letterSpacing: 4.2,
-                marginBottom: 9,
+                marginBottom: 8,
+                textShadow: "0 2px 14px rgba(0,0,0,.75)",
               }}
             >
               {eyebrow}
@@ -118,11 +117,11 @@ const StockShot_v48vr0jexdrms: React.FC<StockShotProps_v48vr0jexdrms> = ({
             style={{
               color: "#fff8e8",
               fontFamily: "Georgia, serif",
-              fontSize: layout === "badge" ? 35 : 46,
+              fontSize: layout === "badge" ? 30 : 39,
               lineHeight: 1.03,
               fontWeight: 700,
               letterSpacing: -1,
-              textShadow: "0 5px 22px rgba(0,0,0,.42)",
+              textShadow: "0 4px 18px rgba(0,0,0,.78)",
             }}
           >
             {label}
@@ -130,19 +129,19 @@ const StockShot_v48vr0jexdrms: React.FC<StockShotProps_v48vr0jexdrms> = ({
           <div
             style={{
               position: "absolute",
-              left: 0,
-              top: 16,
-              bottom: 16,
-              width: 5,
-              borderRadius: 5,
-              background: "#7fc8ad",
+              left: layout === "badge" ? "auto" : 0,
+              right: layout === "badge" ? 0 : "auto",
+              top: 0,
+              bottom: 0,
+              width: 3,
+              background: "linear-gradient(180deg,#e4c77e,#75cfc4)",
             }}
           />
         </div>
       ) : null}
       <AbsoluteFill
         style={{
-          opacity: 0.11,
+          opacity: 0.055,
           backgroundImage:
             "radial-gradient(rgba(255,255,255,.4) .55px,transparent .55px)",
           backgroundSize: "4px 4px",
