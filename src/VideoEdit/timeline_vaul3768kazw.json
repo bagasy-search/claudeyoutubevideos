@@ -1,0 +1,3639 @@
+{
+  "version": 1,
+  "slug": "vaul3768kazw",
+  "kit": "federer-fluid",
+  "premium_director_enabled": false,
+  "composition_id": "Bagasy-vaul3768kazw",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 46027,
+  "audio_src": "avatar_vaul3768kazw.mp4",
+  "captions_src": "captions_vaul3768kazw.json",
+  "scenes": [
+    {
+      "id": "m001",
+      "section_id": "hook",
+      "from": 0,
+      "duration": 91,
+      "narration": "Una cucharada de linaza puede dejar el párpado",
+      "transition": "avatar_visible_continuous",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m002",
+      "section_id": "hook",
+      "from": 91,
+      "duration": 149,
+      "narration": "más liso mientras usted duerme... pero el secreto es retirar el parche",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_001.mp4",
+          "asset_id": "vaul3768kazw:m002:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m003",
+      "section_id": "hook",
+      "from": 240,
+      "duration": 144,
+      "narration": "antes de cerrar los ojos, porque dormir con él puesto puede hacer que",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_001.png",
+          "asset_id": "vaul3768kazw:m003:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m004",
+      "section_id": "hook",
+      "from": 384,
+      "duration": 191,
+      "narration": "amanezca más irritado y más hinchado. Sí, estamos hablando del famoso parche de",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Mucílago: una película sobre la piel",
+          "sub": "Efecto superficial, no levantamiento muscular",
+          "detail": "Órbita macromolecular: cadenas de mucílago absorben agua y forman una película; el músculo elevador queda separado al fondo.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "molecular_orbit",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m005",
+      "section_id": "hook",
+      "from": 575,
+      "duration": 181,
+      "narration": "linaza para los párpados caídos. Cuando estas semillas se calientan en agua liberan un",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_002.mp4",
+          "asset_id": "vaul3768kazw:m005:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m006",
+      "section_id": "hook",
+      "from": 756,
+      "duration": 196,
+      "narration": "gel transparente llamado mucílago. Al secarse sobre la piel forma una película fina que",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m007",
+      "section_id": "promise",
+      "from": 952,
+      "duration": 222,
+      "narration": "produce tirantez y puede disimular temporalmente algunas líneas. Es un principio físico parecido al",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_003.mp4",
+          "asset_id": "vaul3768kazw:m007:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m008",
+      "section_id": "promise",
+      "from": 1174,
+      "duration": 216,
+      "narration": "de ciertos cosméticos tensores mucho más caros. Parecido, atención. No es la misma fórmula. No tiene",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_002.png",
+          "asset_id": "vaul3768kazw:m008:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m009",
+      "section_id": "promise",
+      "from": 1390,
+      "duration": 224,
+      "narration": "controles de conservación. Y no puede levantar un músculo debilitado ni eliminar piel sobrante. Con una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Tensión visible ≠ párpado levantado",
+          "sub": "",
+          "detail": "Ecuación editorial partida en profundidad: película seca a la izquierda; estructura palpebral intacta a la derecha.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "giant_equation_split",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m010",
+      "section_id": "promise",
+      "from": 1614,
+      "duration": 181,
+      "narration": "cucharada de semillas, ciento cincuenta mililitros de agua y entre cinco y siete minutos",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_004.mp4",
+          "asset_id": "vaul3768kazw:m010:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m011",
+      "section_id": "promise",
+      "from": 1795,
+      "duration": 214,
+      "narration": "de calor se obtiene suficiente gel. Lo difícil no es prepararlo. Lo difícil es usarlo cerca",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_003.png",
+          "asset_id": "vaul3768kazw:m011:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m012",
+      "section_id": "promise",
+      "from": 2009,
+      "duration": 529,
+      "narration": "de los ojos sin contaminarlo, sin irritar la piel más delicada del rostro y sin confundir una mejoría cosmética con el tratamiento de una verdadera caída del párpado. Por eso le mostraré el método completo. Qué",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m013",
+      "section_id": "promise",
+      "from": 2538,
+      "duration": 178,
+      "narration": "puede cambiar de verdad. Cómo prepararlo. Dónde colocarlo. Cuánto tiempo dejarlo. Y qué hacer",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_005.mp4",
+          "asset_id": "vaul3768kazw:m013:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m014",
+      "section_id": "promise",
+      "from": 2716,
+      "duration": 155,
+      "narration": "durante la noche para despertar con la mirada menos hinchada. También haremos una prueba",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_006.mp4",
+          "asset_id": "vaul3768kazw:m014:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m015",
+      "section_id": "promise",
+      "from": 2871,
+      "duration": 145,
+      "narration": "frente al espejo que puede cambiar su decisión, porque no todo lo que parece un párpado",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Superficie lisa / estructura sin cambio",
+          "sub": "",
+          "detail": "Comparador con macro de textura superficial y corte anatómico; el deslizador revela que la apariencia y la estructura no son equivalentes.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "tissue_depth_slider",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": "assets/parpado_estructura_profunda.png",
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m016",
+      "section_id": "promise",
+      "from": 3016,
+      "duration": 439,
+      "narration": "caído tiene la misma causa. Y al final pagaré el gran interrogante: cuál es el error que arruina el supuesto truco nocturno. No es usar poca linaza. Es una costumbre que parece lógica y que muchísimas",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m017",
+      "section_id": "promise",
+      "from": 3455,
+      "duration": 255,
+      "narration": "personas repiten buscando un efecto más intenso. Empecemos por lo que ocurre en la superficie. La",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_004.png",
+          "asset_id": "vaul3768kazw:m017:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m018",
+      "section_id": "promise",
+      "from": 3710,
+      "duration": 233,
+      "narration": "linaza absorbe agua y libera fibras solubles. Estas producen la textura resbaladiza del gel.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_007.mp4",
+          "asset_id": "vaul3768kazw:m018:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m019",
+      "section_id": "promise",
+      "from": 3943,
+      "duration": 451,
+      "narration": "Al aplicarlo, el agua humedece la capa más externa de la piel. Luego parte del agua se evapora y queda una película. Esa película genera sensación de tensión y puede hacer que algunos pliegues finos se",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m020",
+      "section_id": "promise",
+      "from": 4394,
+      "duration": 186,
+      "narration": "vean menos marcados durante un rato. Usted puede comprobarlo sin acercarse todavía a los",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_008.mp4",
+          "asset_id": "vaul3768kazw:m020:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m021",
+      "section_id": "promise",
+      "from": 4580,
+      "duration": 185,
+      "narration": "ojos. Coloque una gota del gel frío sobre el dorso de una mano. Extiéndala en una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Tres causas, tres decisiones",
+          "sub": "",
+          "detail": "Capítulo topográfico con tres relieves independientes: edema, exceso de piel y ptosis; cada relieve toma foco sin convertirse en lista narrada.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "topographic_chapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m022",
+      "section_id": "promise",
+      "from": 4765,
+      "duration": 171,
+      "narration": "capa casi invisible y deje otra zona sin producto. Cuando se seque, mueva los",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_009.mp4",
+          "asset_id": "vaul3768kazw:m022:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m023",
+      "section_id": "promise",
+      "from": 4936,
+      "duration": 218,
+      "narration": "dedos y compare ambos lados bajo la misma luz. Probablemente sentirá más tirantez donde puso el",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_005.png",
+          "asset_id": "vaul3768kazw:m023:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m024",
+      "section_id": "promise",
+      "from": 5154,
+      "duration": 472,
+      "narration": "gel. Esa demostración revela dos cosas. Sí existe un efecto físico. Pero se tensó una película superficial. No se acortó la piel. No se fortaleció ningún músculo. Y entender esa diferencia evita esperar que una semilla",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m025",
+      "section_id": "mechanism",
+      "from": 5626,
+      "duration": 173,
+      "narration": "haga el trabajo de un tratamiento médico. ¿Entonces la linaza no sirve? Tampoco hay",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_010.mp4",
+          "asset_id": "vaul3768kazw:m025:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m026",
+      "section_id": "mechanism",
+      "from": 5799,
+      "duration": 417,
+      "narration": "que irse al otro extremo. Puede acompañar una rutina para piel reseca, apagada o levemente hinchada. Después de retirarla y aplicar una hidratante apropiada, la zona puede sentirse más suave. El conjunto de la rutina puede",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m027",
+      "section_id": "mechanism",
+      "from": 6216,
+      "duration": 191,
+      "narration": "abrir visualmente una mirada cansada. Eso es muy distinto de afirmar que corrige una alteración anatómica.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "Hinchazón: el cambio más reversible",
+          "sub": "",
+          "detail": "Lente macro asimétrica sobre párpado hinchado al despertar; ondas de líquido retroceden mientras la anatomía permanece estable.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "asymmetric_macro_lens",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m028",
+      "section_id": "mechanism",
+      "from": 6407,
+      "duration": 176,
+      "narration": "Hay, por lo menos, tres situaciones que la gente llama párpado caído. La primera",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_011.mp4",
+          "asset_id": "vaul3768kazw:m028:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m029",
+      "section_id": "mechanism",
+      "from": 6583,
+      "duration": 184,
+      "narration": "es la piel superior más floja o abundante, frecuente con el paso de los años. La",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_006.png",
+          "asset_id": "vaul3768kazw:m029:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m030",
+      "section_id": "mechanism",
+      "from": 6767,
+      "duration": 180,
+      "narration": "segunda es el descenso del propio borde del párpado porque su mecanismo elevador no",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_012.mp4",
+          "asset_id": "vaul3768kazw:m030:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m031",
+      "section_id": "mechanism",
+      "from": 6947,
+      "duration": 498,
+      "narration": "trabaja igual. Eso se llama ptosis. La tercera es la hinchazón producida por líquido, alergia, irritación, llanto o falta de descanso. En una fotografía pueden parecer iguales. Frente al espejo cuentan historias diferentes. Mire sus ojos",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m032",
+      "section_id": "mechanism",
+      "from": 7445,
+      "duration": 143,
+      "narration": "con la cabeza recta. Relaje la frente. No levante las cejas ni incline el",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_013.mp4",
+          "asset_id": "vaul3768kazw:m032:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m033",
+      "section_id": "mechanism",
+      "from": 7588,
+      "duration": 165,
+      "narration": "mentón. Observe dónde queda el borde de cada párpado respecto de la pupila. Después note si",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Piel, músculo y tendón: capas distintas",
+          "sub": "",
+          "detail": "Corte anatómico palpebral en capas: piel, orbicular, elevador y tendón. Rack focus causal, sin prometer corrección estructural.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "anatomical_cutaway",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m034",
+      "section_id": "mechanism",
+      "from": 7753,
+      "duration": 316,
+      "narration": "el peso parece venir de la piel que desciende desde arriba o si es el borde del párpado el que está más bajo. Esto no permite hacer un diagnóstico en casa. Solo explica por qué una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m035",
+      "section_id": "mechanism",
+      "from": 8069,
+      "duration": 177,
+      "narration": "película puede mejorar la textura, pero no levantar un borde que ha descendido. Ahora compare cómo",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_007.png",
+          "asset_id": "vaul3768kazw:m035:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m036",
+      "section_id": "mechanism",
+      "from": 8246,
+      "duration": 138,
+      "narration": "se ve al levantarse y al terminar la tarde. Si cambia mucho según el",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_014.mp4",
+          "asset_id": "vaul3768kazw:m036:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m037",
+      "section_id": "mechanism",
+      "from": 8384,
+      "duration": 179,
+      "narration": "descanso, la comida o las alergias, probablemente existe un componente de hinchazón. En ese",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_015.mp4",
+          "asset_id": "vaul3768kazw:m037:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m038",
+      "section_id": "mechanism",
+      "from": 8563,
+      "duration": 429,
+      "narration": "caso, una compresa fresca, evitar irritantes y revisar ciertos hábitos puede influir más que el gel. Si la caída es constante, tapa parte de la pupila o lo obliga a levantar las cejas para ver, el",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m039",
+      "section_id": "mechanism",
+      "from": 8992,
+      "duration": 196,
+      "narration": "parche casero no es la respuesta. Aquí necesito ser muy firme. Si un párpado cae de",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Prueba frente al espejo",
+          "sub": "",
+          "detail": "Espejo central con tres rutas dibujadas a mano: deshinchar, observar piel y consultar por caída persistente.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "mirror_decision_tree",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m040",
+      "section_id": "mechanism",
+      "from": 9188,
+      "duration": 182,
+      "narration": "repente, especialmente de un solo lado, no pruebe ninguna receta. Si además aparece visión",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_016.mp4",
+          "asset_id": "vaul3768kazw:m040:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m041",
+      "section_id": "mechanism",
+      "from": 9370,
+      "duration": 214,
+      "narration": "doble, una pupila diferente de la otra, debilidad facial, dificultad para hablar, dolor de cabeza intenso",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_008.png",
+          "asset_id": "vaul3768kazw:m041:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m042",
+      "section_id": "mechanism",
+      "from": 9584,
+      "duration": 501,
+      "narration": "o pérdida de visión, busque atención urgente. Esos signos no pertenecen a una rutina cosmética. Si el cambio fue gradual, pero reduce su campo visual o progresa, también conviene pedir una evaluación profesional. La linaza no",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m043",
+      "section_id": "mechanism",
+      "from": 10085,
+      "duration": 198,
+      "narration": "reemplaza esa consulta. Dicho eso, preparemos el gel de la manera más prudente posible.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_017.mp4",
+          "asset_id": "vaul3768kazw:m043:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m044",
+      "section_id": "mirror_test",
+      "from": 10283,
+      "duration": 254,
+      "narration": "La industria cosmética utiliza muchas sustancias formadoras de películas. Lo que uno paga en un producto",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_009.png",
+          "asset_id": "vaul3768kazw:m044:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m045",
+      "section_id": "mirror_test",
+      "from": 10537,
+      "duration": 237,
+      "narration": "bien formulado no es solamente un ingrediente atractivo. También paga una concentración controlada, un pH estudiado,",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Observe antes de aplicar",
+          "sub": "",
+          "detail": "Constelación clínica alrededor de un ojo neutro: simetría, hora del día, enrojecimiento y visión; cada punto entra por foco.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "constellation_checklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m046",
+      "section_id": "mirror_test",
+      "from": 10774,
+      "duration": 229,
+      "narration": "estabilidad y un sistema de conservación. La receta doméstica cuesta poco, sí. Pero no",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_018.mp4",
+          "asset_id": "vaul3768kazw:m046:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m047",
+      "section_id": "mirror_test",
+      "from": 11003,
+      "duration": 504,
+      "narration": "está esterilizada. No tiene conservantes calculados. Y cerca de los ojos una contaminación pequeña puede importar mucho. Por eso prepararemos poca cantidad, limpiaremos los utensilios y no guardaremos un frasco durante una semana, aunque todavía huela",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m048",
+      "section_id": "mirror_test",
+      "from": 11507,
+      "duration": 203,
+      "narration": "bien. Si usted guarda consejos sueltos y después no recuerda cuál aplicar ni en qué orden,",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_010.png",
+          "asset_id": "vaul3768kazw:m048:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m049",
+      "section_id": "mirror_test",
+      "from": 11710,
+      "duration": 164,
+      "narration": "en el primer enlace de la descripción encontrará el Método Piel Joven, con rutinas",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_019.mp4",
+          "asset_id": "vaul3768kazw:m049:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m050",
+      "section_id": "mirror_test",
+      "from": 11874,
+      "duration": 496,
+      "narration": "sencillas de mañana y noche organizadas para piel madura. Use semillas de linaza enteras. No aceite. No harina de linaza. Lávese bien las manos. Limpie una olla pequeña, una cuchara, un colador y el recipiente que",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m051",
+      "section_id": "mirror_test",
+      "from": 12370,
+      "duration": 210,
+      "narration": "recibirá el gel. Coloque una cucharada rasa de semillas en ciento cincuenta mililitros de agua. Lleve",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "24–48 h de prueba de parche",
+          "sub": "",
+          "detail": "Reloj anular con ventana 24–48 h, zona de antebrazo protegida y marcador de reacción; cifra como evidencia editorial.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "ring_clock",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m052",
+      "section_id": "mirror_test",
+      "from": 12580,
+      "duration": 169,
+      "narration": "a un hervor suave. Después mantenga el fuego bajo entre cinco y siete minutos,",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_020.mp4",
+          "asset_id": "vaul3768kazw:m052:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m053",
+      "section_id": "mirror_test",
+      "from": 12749,
+      "duration": 185,
+      "narration": "removiendo con una cuchara limpia. No busque una pasta espesa. En el párpado queremos",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_021.mp4",
+          "asset_id": "vaul3768kazw:m053:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m054",
+      "section_id": "mirror_test",
+      "from": 12934,
+      "duration": 189,
+      "narration": "una preparación fluida que pueda extenderse sin arrastrar la piel. Cuando el agua adquiera una textura",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_011.png",
+          "asset_id": "vaul3768kazw:m054:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m055",
+      "section_id": "mirror_test",
+      "from": 13123,
+      "duration": 471,
+      "narration": "ligeramente viscosa, apague el fuego. Cuélela mientras todavía esté tibia, porque al enfriarse se vuelve más difícil separar las semillas. No exprima un paño con las manos sobre el recipiente. Use el colador limpio y deje",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m056",
+      "section_id": "mirror_test",
+      "from": 13594,
+      "duration": 160,
+      "narration": "que el líquido caiga solo. Después cúbralo y espere hasta que se enfríe por",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_022.mp4",
+          "asset_id": "vaul3768kazw:m056:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m057",
+      "section_id": "mirror_test",
+      "from": 13754,
+      "duration": 193,
+      "narration": "completo. No debe estar apenas tibio. Debe estar frío o a temperatura ambiente. El calor puede",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedOilCarousel",
+          "render_component": "FedOilCarousel",
+          "title": "Ingredientes simples, medidas precisas",
+          "sub": "",
+          "detail": "Banco de cocina en perspectiva con ingredientes separados; las tarjetas orbitan y revelan función, no beneficios inventados.",
+          "kicker": "",
+          "family": "FedOilCarousel",
+          "layout_family": "ingredient_carousel_bench",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [
+            {
+              "image": "assets/linaza_entera.png",
+              "index": "1",
+              "name": "Linaza entera",
+              "tag": ""
+            },
+            {
+              "image": "assets/agua_medida.png",
+              "index": "2",
+              "name": "Agua limpia",
+              "tag": ""
+            },
+            {
+              "image": "assets/frasco_limpio.png",
+              "index": "3",
+              "name": "Frasco limpio",
+              "tag": ""
+            }
+          ],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m058",
+      "section_id": "mirror_test",
+      "from": 13947,
+      "duration": 380,
+      "narration": "irritar y aumentar la hinchazón que usted intenta reducir. Prepare únicamente lo necesario para ese día y deseche el sobrante después de la aplicación. Sé que da pena tirar algo que costó tan poco. Pero un",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m059",
+      "section_id": "mirror_test",
+      "from": 14327,
+      "duration": 194,
+      "narration": "gel casero con mucha agua puede contaminarse aunque conserve buen aspecto. El refrigerador retrasa",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_023.mp4",
+          "asset_id": "vaul3768kazw:m059:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m060",
+      "section_id": "mirror_test",
+      "from": 14521,
+      "duration": 189,
+      "narration": "el crecimiento de algunos microorganismos. No vuelve estéril la mezcla. Ahora viene el paso que casi",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_012.png",
+          "asset_id": "vaul3768kazw:m060:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m061",
+      "section_id": "mirror_test",
+      "from": 14710,
+      "duration": 181,
+      "narration": "todos desean saltarse: la prueba de parche. Coloque una cantidad pequeña en la cara",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_024.mp4",
+          "asset_id": "vaul3768kazw:m061:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m062",
+      "section_id": "mirror_test",
+      "from": 14891,
+      "duration": 564,
+      "narration": "interna del antebrazo y espere entre veinticuatro y cuarenta y ocho horas. Si aparece ardor, picor, ronchas, inflamación o enrojecimiento persistente, no lo use en el rostro. Una prueba sin reacción reduce la incertidumbre. No garantiza",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m063",
+      "section_id": "mirror_test",
+      "from": 15455,
+      "duration": 174,
+      "narration": "que el párpado lo tolere, porque esa piel es mucho más fina. No aplique la receta",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Semillas enteras, calor suave",
+          "sub": "",
+          "detail": "Cinta de proceso con semillas, agua y calor suave; el siguiente nodo permanece como silueta hasta ser revelado.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "process_ribbon",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m064",
+      "section_id": "preparation",
+      "from": 15629,
+      "duration": 270,
+      "narration": "si tiene dermatitis activa, eccema, heridas, costras, conjuntivitis, un orzuelo, una infección o una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_025.mp4",
+          "asset_id": "vaul3768kazw:m064:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m065",
+      "section_id": "preparation",
+      "from": 15899,
+      "duration": 183,
+      "narration": "reacción alérgica alrededor de los ojos. Tampoco la use después de una cirugía o",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_026.mp4",
+          "asset_id": "vaul3768kazw:m065:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m066",
+      "section_id": "preparation",
+      "from": 16082,
+      "duration": 485,
+      "narration": "un procedimiento ocular sin autorización del profesional que lo atiende. Si ya sabe que reacciona a la linaza, no la pruebe. Y aquí aparece la primera revelación incómoda. El ensayo inicial cerca del ojo debe hacerse",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m067",
+      "section_id": "preparation",
+      "from": 16567,
+      "duration": 211,
+      "narration": "de día. No antes de dormir. Tiene una razón muy sencilla. Si algo arde mientras usted",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_013.png",
+          "asset_id": "vaul3768kazw:m067:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m068",
+      "section_id": "preparation",
+      "from": 16778,
+      "duration": 225,
+      "narration": "está despierto, puede retirarlo inmediatamente. Mientras duerme puede frotarse, desplazar el producto hacia el",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_027.mp4",
+          "asset_id": "vaul3768kazw:m068:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m069",
+      "section_id": "preparation",
+      "from": 17003,
+      "duration": 230,
+      "narration": "ojo o tolerar una reacción durante horas sin advertirla. Con el rostro limpio y sin maquillaje,",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Agua + linaza → gel superficial",
+          "sub": "",
+          "detail": "Red de polisacáridos hidratándose dentro del agua; partículas conectan semilla y gel con movimiento orgánico.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "hydration_network",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m070",
+      "section_id": "preparation",
+      "from": 17233,
+      "duration": 440,
+      "narration": "cierre el ojo suavemente. No lo apriete. Tome una cantidad mínima con un aplicador limpio y extienda una película muy delgada en una zona pequeña, debajo de la ceja y sobre la piel externa del párpado",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m071",
+      "section_id": "preparation",
+      "from": 17673,
+      "duration": 226,
+      "narration": "superior. Debe mantenerse lejos de las pestañas. Lejos del lagrimal. Lejos del borde del",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_028.mp4",
+          "asset_id": "vaul3768kazw:m071:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m072",
+      "section_id": "preparation",
+      "from": 17899,
+      "duration": 174,
+      "narration": "párpado y del interior del ojo. Si el gel se desplaza o gotea, aplicó",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_029.mp4",
+          "asset_id": "vaul3768kazw:m072:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m073",
+      "section_id": "preparation",
+      "from": 18073,
+      "duration": 208,
+      "narration": "demasiado. En esa primera prueba déjelo solamente cinco minutos. Permanezca cerca de un lavabo. Una ligera",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_014.png",
+          "asset_id": "vaul3768kazw:m073:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m074",
+      "section_id": "preparation",
+      "from": 18281,
+      "duration": 449,
+      "narration": "tirantez cuando se seca puede corresponder a la película. El ardor, el picor, el lagrimeo o la visión borrosa no son señales de que esté funcionando. Son indicaciones para retirarlo de inmediato. Enjuague con abundante agua",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m075",
+      "section_id": "preparation",
+      "from": 18730,
+      "duration": 214,
+      "narration": "fresca. No frote. No estire el párpado. Seque mediante toques suaves con una toalla limpia. Si",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Gel colado / residuos irritantes",
+          "sub": "",
+          "detail": "Corte transversal de colador: gel uniforme pasa, restos quedan arriba; protege dedos, utensilio y borde del recipiente.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "filtration_cross_section",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": "assets/residuos_sin_colar.png",
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m076",
+      "section_id": "preparation",
+      "from": 18944,
+      "duration": 157,
+      "narration": "no apareció ninguna molestia, otro día puede ampliar el contacto hasta un máximo de",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_030.mp4",
+          "asset_id": "vaul3768kazw:m076:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m077",
+      "section_id": "preparation",
+      "from": 19101,
+      "duration": 574,
+      "narration": "diez minutos. Más tiempo no significa mayor levantamiento. Solo significa más oportunidad de resequedad, irritación y desplazamiento hacia el ojo. Si el gel entra en el ojo, enjuague inmediatamente con abundante agua limpia durante varios minutos.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m078",
+      "section_id": "preparation",
+      "from": 19675,
+      "duration": 189,
+      "narration": "Retire los lentes de contacto si puede hacerlo con facilidad. No intente neutralizarlo con",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_031.mp4",
+          "asset_id": "vaul3768kazw:m078:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m079",
+      "section_id": "preparation",
+      "from": 19864,
+      "duration": 282,
+      "narration": "limón, bicarbonato ni otra sustancia. Si persisten dolor, enrojecimiento, secreción, sensación de cuerpo extraño o cambios",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_015.png",
+          "asset_id": "vaul3768kazw:m079:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m080",
+      "section_id": "preparation",
+      "from": 20146,
+      "duration": 208,
+      "narration": "visuales, busque atención profesional. ¿Nota lo extraño? Hasta ahora el famoso parche para dormir",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_032.mp4",
+          "asset_id": "vaul3768kazw:m080:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m081",
+      "section_id": "preparation",
+      "from": 20354,
+      "duration": 182,
+      "narration": "todavía no llegó a la almohada. Y no llegará. La manera prudente de incluirlo es como",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "Capa fina, lejos del ojo",
+          "sub": "",
+          "detail": "Mapa de zona segura alrededor del párpado sobre retrato lateral; retícula marca borde de pestañas y evita el interior del ojo.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "safe_zone_reticle",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m082",
+      "section_id": "preparation",
+      "from": 20536,
+      "duration": 526,
+      "narration": "un contacto corto dentro de la rutina nocturna. Se aplica. Se retira. Se hidrata la zona. Y solamente entonces uno se acuesta. La noche ayuda porque hay menos maquillaje, menos sol y menos manipulación. No porque",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m083",
+      "section_id": "preparation",
+      "from": 21062,
+      "duration": 176,
+      "narration": "el gel permanezca ocho horas levantando tejido. Después del enjuague aplique una cantidad pequeña",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_033.mp4",
+          "asset_id": "vaul3768kazw:m083:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m084",
+      "section_id": "preparation",
+      "from": 21238,
+      "duration": 463,
+      "narration": "de hidratante simple, sin perfume y apta para el contorno de ojos. Esto es importante. Una película seca da sensación de tensión, pero tensión no significa hidratación. A veces significa exactamente lo contrario. El enemigo real",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m085",
+      "section_id": "application",
+      "from": 21701,
+      "duration": 198,
+      "narration": "es la obsesión por sentir el rostro muy apretado. En internet, cuanto más rígida queda una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_016.png",
+          "asset_id": "vaul3768kazw:m085:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m086",
+      "section_id": "application",
+      "from": 21899,
+      "duration": 211,
+      "narration": "mascarilla, más poderosa parece. ¡No, mire! El párpado no necesita quedar duro. Necesita conservar",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_034.mp4",
+          "asset_id": "vaul3768kazw:m086:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m087",
+      "section_id": "application",
+      "from": 22110,
+      "duration": 240,
+      "narration": "una barrera tranquila. Una barrera irritada se enrojece, pica y puede hincharse. El intento de tensar",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Aplicación breve, nunca toda la noche",
+          "sub": "",
+          "detail": "Reloj de arena horizontal: contacto breve iluminado; el tramo de sueño queda bloqueado por una frontera roja, sin cifra no confirmada.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "hourglass_boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m088",
+      "section_id": "application",
+      "from": 22350,
+      "duration": 190,
+      "narration": "termina produciendo una mirada más pesada. Por eso no mezcle este gel con clara",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_035.mp4",
+          "asset_id": "vaul3768kazw:m088:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m089",
+      "section_id": "application",
+      "from": 22540,
+      "duration": 533,
+      "narration": "de huevo. Tampoco con limón. Ni bicarbonato, alcohol o aceites esenciales. La clara cruda agrega riesgo de contaminación. Los ácidos domésticos pueden irritar. El bicarbonato altera el medio ligeramente ácido de la piel. Y los aceites",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m090",
+      "section_id": "application",
+      "from": 23073,
+      "duration": 165,
+      "narration": "esenciales no se vuelven seguros cerca del ojo por llevar la palabra natural. [sighs]",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_036.mp4",
+          "asset_id": "vaul3768kazw:m090:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m091",
+      "section_id": "application",
+      "from": 23238,
+      "duration": 546,
+      "narration": "Me preocupa esa competencia de soportar ardor porque supuestamente demuestra que la receta actúa. El ardor no es firmeza. Es una señal de irritación. Cerca de los ojos no hay ningún premio por aguantarlo. Ahora veamos",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m092",
+      "section_id": "application",
+      "from": 23784,
+      "duration": 188,
+      "narration": "qué sí puede hacer durante la noche para despertar con la mirada más despejada. Primero, antes",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_017.png",
+          "asset_id": "vaul3768kazw:m092:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m093",
+      "section_id": "application",
+      "from": 23972,
+      "duration": 169,
+      "narration": "del gel puede apoyar una compresa limpia y fresca sobre los ojos cerrados durante cinco minutos.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Secuencia nocturna segura",
+          "sub": "",
+          "detail": "Ruta nocturna curva: limpiar, capa fina, esperar, retirar y secar. Solo el paso activo queda nítido.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "night_pathway",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m094",
+      "section_id": "application",
+      "from": 24141,
+      "duration": 234,
+      "narration": "Fresca, no congelada. Nunca aplique hielo directamente ni presione los globos oculares. El frío",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_037.mp4",
+          "asset_id": "vaul3768kazw:m094:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m095",
+      "section_id": "application",
+      "from": 24375,
+      "duration": 217,
+      "narration": "moderado puede ayudar cuando existe una hinchazón leve. Segundo, duerma un tiempo suficiente y",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_038.mp4",
+          "asset_id": "vaul3768kazw:m095:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m096",
+      "section_id": "application",
+      "from": 24592,
+      "duration": 502,
+      "narration": "trate de mantener horarios regulares. No existe una cantidad idéntica para todas las personas. Lo útil es observar si las noches cortas empeoran sus bolsas y su aspecto cansado. Ningún parche compensa de manera estable una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m097",
+      "section_id": "application",
+      "from": 25094,
+      "duration": 200,
+      "narration": "sucesión de malos descansos. Tercero, si suele despertar hinchado, pruebe una elevación leve y",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_039.mp4",
+          "asset_id": "vaul3768kazw:m097:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m098",
+      "section_id": "application",
+      "from": 25294,
+      "duration": 475,
+      "narration": "cómoda de la cabeza. No duerma sentado. No apile almohadas hasta doblar el cuello. Solo busque una postura segura que no le cause dolor. Cuarto, observe la cena. Una comida excepcionalmente salada puede favorecer la retención",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m099",
+      "section_id": "application",
+      "from": 25769,
+      "duration": 275,
+      "narration": "de líquido en algunas personas. No elimine la sal si tiene indicaciones médicas específicas. Simplemente registre durante",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_018.png",
+          "asset_id": "vaul3768kazw:m099:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m100",
+      "section_id": "application",
+      "from": 26044,
+      "duration": 225,
+      "narration": "siete mañanas si amanece peor después de embutidos, sopas instantáneas u otras comidas muy saladas.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Retire el gel antes de dormir",
+          "sub": "",
+          "detail": "Presentador persistente con franja editorial mínima; detrás, ventana nocturna y frasco cerrado. Sin transcribir la narración.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "lower_third_window",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m101",
+      "section_id": "application",
+      "from": 26269,
+      "duration": 216,
+      "narration": "Quinto, revise qué toca la zona. Una crema perfumada, un producto para el cabello",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_040.mp4",
+          "asset_id": "vaul3768kazw:m101:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m102",
+      "section_id": "application",
+      "from": 26485,
+      "duration": 202,
+      "narration": "transferido a la almohada, polvo, detergente o una alergia pueden provocar picor. Si se",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_041.mp4",
+          "asset_id": "vaul3768kazw:m102:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m103",
+      "section_id": "application",
+      "from": 26687,
+      "duration": 504,
+      "narration": "frota los ojos mientras duerme, quizás el problema principal no sea falta de firmeza, sino una irritación que necesita identificarse. La secuencia queda así: limpieza suave, compresa fresca durante cinco minutos si hay hinchazón, gel en",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m104",
+      "section_id": "application",
+      "from": 27191,
+      "duration": 206,
+      "narration": "una capa mínima durante cinco a diez minutos, enjuague, hidratante y descanso. La linaza",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_042.mp4",
+          "asset_id": "vaul3768kazw:m104:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m105",
+      "section_id": "application",
+      "from": 27397,
+      "duration": 384,
+      "narration": "trabaja, si la piel la tolera, antes de acostarse. No sobre la almohada. Si le preocupan al mismo tiempo la firmeza, las manchas, el cuello y las manos, pero no quiere una rutina imposible de diez",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m106",
+      "section_id": "application",
+      "from": 27781,
+      "duration": 202,
+      "narration": "pasos, el primer enlace de la descripción tiene una guía clara para ordenar esos cuidados sin gastar",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_019.png",
+          "asset_id": "vaul3768kazw:m106:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m107",
+      "section_id": "night_routine",
+      "from": 27983,
+      "duration": 170,
+      "narration": "de más. Ahora, mm... hay una palabra que vale la pena conocer. ¿Cómo se llama?...",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Película seca → tirantez superficial",
+          "sub": "",
+          "detail": "Mapa de tensión: la película pierde agua y contrae la superficie; las capas profundas permanecen sin desplazamiento.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "film_stress_map",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m108",
+      "section_id": "night_routine",
+      "from": 28153,
+      "duration": 195,
+      "narration": "dermatochalasis. Es el término utilizado para el exceso o laxitud de piel del párpado.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_043.mp4",
+          "asset_id": "vaul3768kazw:m108:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m109",
+      "section_id": "night_routine",
+      "from": 28348,
+      "duration": 176,
+      "narration": "Es frecuente con los años. Un gel puede cambiar por un rato el aspecto",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_044.mp4",
+          "asset_id": "vaul3768kazw:m109:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m110",
+      "section_id": "night_routine",
+      "from": 28524,
+      "duration": 470,
+      "narration": "de su superficie. No puede retirar esa piel. La ptosis es otra cosa. Es el descenso del propio párpado. Tampoco se corrige fortaleciendo la piel con una mascarilla. Puede tener causas diferentes y necesita valoración si",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m111",
+      "section_id": "night_routine",
+      "from": 28994,
+      "duration": 156,
+      "narration": "aparece de repente, si progresa, si es muy asimétrica o si interfiere con la",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_045.mp4",
+          "asset_id": "vaul3768kazw:m111:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m112",
+      "section_id": "night_routine",
+      "from": 29150,
+      "duration": 491,
+      "narration": "vista. Haga una observación sencilla. Relaje completamente la frente frente al espejo durante treinta segundos. Si enseguida necesita levantar las cejas para ver mejor, anótelo. No pegue cinta adhesiva. No estire la piel. No construya un soporte",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m113",
+      "section_id": "night_routine",
+      "from": 29641,
+      "duration": 241,
+      "narration": "casero. Lleve esa observación a una consulta ocular. También puede comparar fotografías antiguas tomadas de frente.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_020.png",
+          "asset_id": "vaul3768kazw:m113:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m114",
+      "section_id": "night_routine",
+      "from": 29882,
+      "duration": 188,
+      "narration": "Use imágenes con iluminación y expresión parecidas. La cámara frontal puede deformar, así que no",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Tirantez temporal / ptosis sin cambio",
+          "sub": "",
+          "detail": "Comparador clínico sobrio: textura temporalmente tensa frente a posición del borde palpebral sin cambio estructural.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "clinical_comparison_slider",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": "assets/ptosis_estructura.png",
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m115",
+      "section_id": "night_routine",
+      "from": 30070,
+      "duration": 172,
+      "narration": "busque una precisión imposible. Preste atención a la función: si ve igual, si debe",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_046.mp4",
+          "asset_id": "vaul3768kazw:m115:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m116",
+      "section_id": "night_routine",
+      "from": 30242,
+      "duration": 149,
+      "narration": "inclinar la cabeza para leer o si tropieza con objetos que quedan a los",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_047.mp4",
+          "asset_id": "vaul3768kazw:m116:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m117",
+      "section_id": "night_routine",
+      "from": 30391,
+      "duration": 472,
+      "narration": "lados. La publicidad suele tratar cada párpado como si fuera una arruga. Pero aquí intervienen piel, músculo, ceja, bolsas de grasa y líquido. Una sola crema para todos esos problemas es cómoda para quien vende. No",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m118",
+      "section_id": "night_routine",
+      "from": 30863,
+      "duration": 161,
+      "narration": "siempre para quien la usa. La linaza tiene un lugar más modesto. Puede producir una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_048.mp4",
+          "asset_id": "vaul3768kazw:m118:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m119",
+      "section_id": "night_routine",
+      "from": 31024,
+      "duration": 200,
+      "narration": "película superficial. Puede dejar sensación de suavidad. Y si la mirada estaba pesada por resequedad o",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_021.png",
+          "asset_id": "vaul3768kazw:m119:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m120",
+      "section_id": "night_routine",
+      "from": 31224,
+      "duration": 190,
+      "narration": "hinchazón ligera, el conjunto de hábitos puede hacerla parecer más descansada. No espere que",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_049.mp4",
+          "asset_id": "vaul3768kazw:m120:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m121",
+      "section_id": "night_routine",
+      "from": 31414,
+      "duration": 187,
+      "narration": "el resultado dure todo el día. La película desaparece al enjuagar. La hidratación cambia. El",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "Dormir con gel aumenta el riesgo",
+          "sub": "",
+          "detail": "Dormitorio cenital con película agrietada y ruta hacia el ojo marcada solo como advertencia visual; no mostrar lesión gráfica.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "hazard_vignette",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m122",
+      "section_id": "night_routine",
+      "from": 31601,
+      "duration": 470,
+      "narration": "rostro se mueve miles de veces. Si existe ptosis o mucha piel sobrante, el efecto probablemente será pequeño o imperceptible. Decirlo no arruina la receta. La vuelve honesta. Si toleró bien la prueba, una o dos",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m123",
+      "section_id": "night_routine",
+      "from": 32071,
+      "duration": 216,
+      "narration": "aplicaciones semanales bastan para evaluar la respuesta. No empiece usándola cada noche. Tampoco estrene",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_050.mp4",
+          "asset_id": "vaul3768kazw:m123:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m124",
+      "section_id": "night_routine",
+      "from": 32287,
+      "duration": 478,
+      "narration": "varios remedios en la misma semana. Si aparece una reacción, necesita saber qué la causó. Observe la zona al día siguiente, no solo al retirar el gel. Algunas reacciones aparecen horas después. Si nota descamación, picor,",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m125",
+      "section_id": "night_routine",
+      "from": 32765,
+      "duration": 233,
+      "narration": "inflamación o enrojecimiento, suspenda la receta. Si la reacción es intensa, alcanza el ojo o no mejora,",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_022.png",
+          "asset_id": "vaul3768kazw:m125:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m126",
+      "section_id": "night_routine",
+      "from": 32998,
+      "duration": 199,
+      "narration": "consulte. Tome una fotografía antes y otra después de dos semanas. Siempre a la",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_051.mp4",
+          "asset_id": "vaul3768kazw:m126:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m127",
+      "section_id": "night_routine",
+      "from": 33197,
+      "duration": 140,
+      "narration": "misma hora. En el mismo lugar. Bajo la misma luz. Mantenga la frente relajada",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_052.mp4",
+          "asset_id": "vaul3768kazw:m127:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m128",
+      "section_id": "limits",
+      "from": 33337,
+      "duration": 197,
+      "narration": "y no use filtros. Si no existe diferencia o la piel se siente peor, abandone",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Pare ante ardor, dolor o visión borrosa",
+          "sub": "",
+          "detail": "Semáforo clínico radial con tres señales de detención y una salida hacia consulta; iconos claros y no alarmistas.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "stoplight_constellation",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m129",
+      "section_id": "limits",
+      "from": 33534,
+      "duration": 464,
+      "narration": "el experimento. Ser natural y barato no obliga a que su piel lo tolere. No coloque el gel sobre retinoides, exfoliantes ni tratamientos fuertes para manchas. Estos pueden volver la zona más sensible. Si sigue un",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m130",
+      "section_id": "limits",
+      "from": 33998,
+      "duration": 217,
+      "narration": "tratamiento dermatológico u oftalmológico, consulte antes de añadir una preparación casera. Y nunca suspenda",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_053.mp4",
+          "asset_id": "vaul3768kazw:m130:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m131",
+      "section_id": "limits",
+      "from": 34215,
+      "duration": 220,
+      "narration": "un medicamento por sospechar que influye en sus párpados. Lleve la lista a su profesional. ¿Se puede",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_023.png",
+          "asset_id": "vaul3768kazw:m131:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m132",
+      "section_id": "limits",
+      "from": 34435,
+      "duration": 488,
+      "narration": "usar linaza molida? Para esta zona prefiero la semilla entera. Permite obtener y colar el mucílago sin dejar partículas. Los gránulos no ofrecen mayor tensión y podrían entrar en el ojo. El párpado no debe exfoliarse",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m133",
+      "section_id": "limits",
+      "from": 34923,
+      "duration": 196,
+      "narration": "con semillas, azúcar, café, cepillos ni esponjas. ¿Hay que estirar la piel al aplicarlo?",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_054.mp4",
+          "asset_id": "vaul3768kazw:m133:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m134",
+      "section_id": "limits",
+      "from": 35119,
+      "duration": 189,
+      "narration": "No. Cierre el ojo con naturalidad y apoye una capa mínima sin arrastrar. Si",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_055.mp4",
+          "asset_id": "vaul3768kazw:m134:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m135",
+      "section_id": "limits",
+      "from": 35308,
+      "duration": 151,
+      "narration": "estira la piel para que se seque en una posición forzada, tendrá una ilusión momentánea.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Qué sí puede mejorar",
+          "sub": "",
+          "detail": "Apertura circular revela textura e hinchazón; la ptosis queda fuera del círculo como límite honesto.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter_aperture",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m136",
+      "section_id": "limits",
+      "from": 35459,
+      "duration": 444,
+      "narration": "En cuanto parpadee, la película se quebrará. ¿Se puede añadir café para deshinchar? No lo recomiendo en una mezcla doméstica tan cercana al ojo. Cada ingrediente extra aumenta las variables y la posibilidad de reacción. Una",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m137",
+      "section_id": "limits",
+      "from": 35903,
+      "duration": 225,
+      "narration": "compresa fresca ofrece frío sin convertir su cocina en un laboratorio improvisado. ¿Y el aceite de linaza?",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_024.png",
+          "asset_id": "vaul3768kazw:m137:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m138",
+      "section_id": "limits",
+      "from": 36128,
+      "duration": 154,
+      "narration": "No produce el mismo gel. Es una grasa que puede oxidarse y migrar hacia",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_056.mp4",
+          "asset_id": "vaul3768kazw:m138:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m139",
+      "section_id": "limits",
+      "from": 36282,
+      "duration": 497,
+      "narration": "los ojos. No sustituya una preparación por la otra. Aquí hablamos únicamente del mucílago acuoso recién elaborado con semillas enteras. Ahora sí llegamos al error prometido. El error es dormir con el parche seco pegado sobre",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m140",
+      "section_id": "limits",
+      "from": 36779,
+      "duration": 221,
+      "narration": "los párpados. Parece lógico: si diez minutos tensan, ocho horas deberían tensar mucho más.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_057.mp4",
+          "asset_id": "vaul3768kazw:m140:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m141",
+      "section_id": "limits",
+      "from": 37000,
+      "duration": 195,
+      "narration": "Pero la piel no acumula firmeza por cada hora de contacto. Cuando el agua",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_058.mp4",
+          "asset_id": "vaul3768kazw:m141:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m142",
+      "section_id": "limits",
+      "from": 37195,
+      "duration": 182,
+      "narration": "se evapora queda una película seca. Puede cuartearse, tirar de la piel, mezclarse con sudor",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Sesenta segundos de frío protegido",
+          "sub": "",
+          "detail": "Temporizador de 60 s con cucharita envuelta, tela limpia y arco térmico; el metal nunca toca la piel sin protección.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "cold_timer",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m143",
+      "section_id": "limits",
+      "from": 37377,
+      "duration": 191,
+      "narration": "y lágrimas, recoger partículas de la almohada y acercarse al borde del ojo cuando usted se mueve",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_025.png",
+          "asset_id": "vaul3768kazw:m143:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m144",
+      "section_id": "limits",
+      "from": 37568,
+      "duration": 517,
+      "narration": "dormido. Además, la preparación casera no tiene una concentración exacta, un pH comprobado ni conservación validada. Y usted no puede vigilar una reacción mientras duerme. Esta es la información nueva y contraintuitiva: el parche nocturno es",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m145",
+      "section_id": "limits",
+      "from": 38085,
+      "duration": 149,
+      "narration": "más seguro cuando no pasa la noche sobre la piel. Se usa antes de",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_059.mp4",
+          "asset_id": "vaul3768kazw:m145:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m146",
+      "section_id": "limits",
+      "from": 38234,
+      "duration": 476,
+      "narration": "acostarse y se retira. Lo que permanece es una hidratante apropiada. Después trabajan el descanso, la postura, una barrera tranquila y la ausencia de irritantes. El resultado no mejora porque una costra de gel duerma con",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m147",
+      "section_id": "limits",
+      "from": 38710,
+      "duration": 178,
+      "narration": "usted. Puede mejorar porque realizó un contacto breve, hidrató la piel y redujo aquello",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_060.mp4",
+          "asset_id": "vaul3768kazw:m147:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m148",
+      "section_id": "limits",
+      "from": 38888,
+      "duration": 189,
+      "narration": "que favorecía la hinchazón. También seamos honestos con la palabra levantar. Una película puede",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_061.mp4",
+          "asset_id": "vaul3768kazw:m148:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m149",
+      "section_id": "recap",
+      "from": 39077,
+      "duration": 218,
+      "narration": "hacer que la textura parezca más lisa. Reducir la hinchazón puede abrir visualmente la mirada. Pero levantar",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_026.png",
+          "asset_id": "vaul3768kazw:m149:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m150",
+      "section_id": "recap",
+      "from": 39295,
+      "duration": 168,
+      "narration": "un párpado que cubre la pupila es otra cuestión. Si afecta la visión o está",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Frío, descanso y luz suave",
+          "sub": "",
+          "detail": "Espiral de tres decisiones que converge en un ojo descansado: frío protegido, pausa y reevaluación frente al espejo.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "three_step_spiral",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m151",
+      "section_id": "recap",
+      "from": 39463,
+      "duration": 548,
+      "narration": "progresando, una valoración profesional ofrece respuestas que una semilla no puede dar. Después de dos semanas, responda tres preguntas. ¿La piel toleró la receta sin picor ni enrojecimiento? ¿La zona se siente cómoda y parece algo",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m152",
+      "section_id": "recap",
+      "from": 40011,
+      "duration": 158,
+      "narration": "más lisa bajo la misma luz? ¿La hinchazón matinal mejoró al cambiar el conjunto",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_062.mp4",
+          "asset_id": "vaul3768kazw:m152:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m153",
+      "section_id": "recap",
+      "from": 40169,
+      "duration": 405,
+      "narration": "de hábitos? Si todas las respuestas son no, deje la receta. No le debe fidelidad a ningún remedio casero. Si responde que sí, mantenga la frecuencia mínima que funciona. Una o dos veces por semana. Preparación",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m154",
+      "section_id": "recap",
+      "from": 40574,
+      "duration": 200,
+      "narration": "fresca. Contacto corto. Y el resto de las noches, limpieza suave e hidratación. Si",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_063.mp4",
+          "asset_id": "vaul3768kazw:m154:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m155",
+      "section_id": "recap",
+      "from": 40774,
+      "duration": 244,
+      "narration": "quiere tener recetas y precauciones ordenadas por manchas, firmeza, manos, cuello y cabello, puede consultar el Método",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_027.png",
+          "asset_id": "vaul3768kazw:m155:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m156",
+      "section_id": "recap",
+      "from": 41018,
+      "duration": 149,
+      "narration": "Piel Joven en el primer enlace de la descripción y elegir primero lo que",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_064.mp4",
+          "asset_id": "vaul3768kazw:m156:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m157",
+      "section_id": "recap",
+      "from": 41167,
+      "duration": 517,
+      "narration": "de verdad le preocupa. Recapitulemos para que esta noche no quede ninguna duda. Uno: determine si observa textura, hinchazón o un descenso real del borde del párpado. Dos: si la caída fue repentina o se acompaña",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m158",
+      "section_id": "recap",
+      "from": 41684,
+      "duration": 245,
+      "narration": "de visión doble, debilidad, dolor intenso, pupilas diferentes o cambios visuales, no use el parche.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedOilCarousel",
+          "render_component": "FedOilCarousel",
+          "title": "Herramientas de una rutina simple",
+          "sub": "",
+          "detail": "Carrusel 3D de tres herramientas domésticas con foco individual y escala realista.",
+          "kicker": "",
+          "family": "FedOilCarousel",
+          "layout_family": "tools_carousel",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [
+            {
+              "image": "assets/cucharita_fria.png",
+              "index": "1",
+              "name": "Cucharita fría",
+              "tag": ""
+            },
+            {
+              "image": "assets/tela_limpia.png",
+              "index": "2",
+              "name": "Tela limpia",
+              "tag": ""
+            },
+            {
+              "image": "assets/reloj_60s.png",
+              "index": "3",
+              "name": "Reloj",
+              "tag": ""
+            }
+          ],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m159",
+      "section_id": "recap",
+      "from": 41929,
+      "duration": 180,
+      "narration": "Busque atención. Tres: si la piel está sana, haga primero una prueba en el",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_065.mp4",
+          "asset_id": "vaul3768kazw:m159:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m160",
+      "section_id": "recap",
+      "from": 42109,
+      "duration": 531,
+      "narration": "antebrazo y espere entre veinticuatro y cuarenta y ocho horas. Cuatro: prepare una cucharada de semillas enteras con ciento cincuenta mililitros de agua. Mantenga un hervor suave entre cinco y siete minutos. Cuele con utensilios limpios",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m161",
+      "section_id": "recap",
+      "from": 42640,
+      "duration": 252,
+      "narration": "y deje enfriar por completo. Cinco: realice el primer ensayo de día. Aplique una capa mínima debajo",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_028.png",
+          "asset_id": "vaul3768kazw:m161:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m162",
+      "section_id": "recap",
+      "from": 42892,
+      "duration": 202,
+      "narration": "de la ceja, lejos de pestañas, lagrimal y borde del ojo. Déjela cinco minutos.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_066.mp4",
+          "asset_id": "vaul3768kazw:m162:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m163",
+      "section_id": "recap",
+      "from": 43094,
+      "duration": 170,
+      "narration": "En otra ocasión puede llegar hasta diez si no hubo ninguna reacción. Seis: enjuague",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_067.mp4",
+          "asset_id": "vaul3768kazw:m163:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m164",
+      "section_id": "recap",
+      "from": 43264,
+      "duration": 228,
+      "narration": "sin frotar. Seque con toques. Aplique una hidratante sencilla y deseche el gel sobrante. Siete:",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "La constancia vale más que la fuerza",
+          "sub": "",
+          "detail": "Retrato maduro sereno con campo de luz que avanza por días; la presión excesiva queda fuera de foco.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "portrait_lightfield",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m165",
+      "section_id": "recap",
+      "from": 43492,
+      "duration": 466,
+      "narration": "si hay hinchazón leve, use una compresa fresca durante cinco minutos. Revise el descanso, la postura, las cenas muy saladas y los posibles irritantes. Y ocho: nunca duerma con el gel de linaza puesto. Más horas",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m166",
+      "section_id": "recap",
+      "from": 43958,
+      "duration": 211,
+      "narration": "no producen más firmeza. Solo agregan riesgo en una zona que merece delicadeza. Cuénteme en los",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_029.png",
+          "asset_id": "vaul3768kazw:m166:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m167",
+      "section_id": "recap",
+      "from": 44169,
+      "duration": 200,
+      "narration": "comentarios qué nota al despertar: piel floja, un párpado más bajo o hinchazón alrededor de",
+      "transition": "TransitionShell:whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vaul3768kazw/vaul3768kazw_stock_068.mp4",
+          "asset_id": "vaul3768kazw:m167:clean_media"
+        }
+      ]
+    },
+    {
+      "id": "m168",
+      "section_id": "recap",
+      "from": 44369,
+      "duration": 220,
+      "narration": "ambos ojos. Esa diferencia puede orientar los próximos temas hacia problemas reales y no hacia",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Rutina breve, ordenada y sostenible",
+          "sub": "",
+          "detail": "Calendario de hábitos con pocas marcas, mañana y noche claramente separadas, sin promesas de rejuvenecimiento.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "routine_calendar",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m169",
+      "section_id": "recap",
+      "from": 44589,
+      "duration": 451,
+      "narration": "promesas de catálogo. En el próximo video le mostraré qué sucede cuando una cucharita fría, una toalla limpia y sesenta segundos se usan en el orden correcto sobre las bolsas de los ojos... y por qué",
+      "transition": "TransitionShell:whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vaul3768kazw.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m170",
+      "section_id": "recap",
+      "from": 45040,
+      "duration": 172,
+      "narration": "el hielo directo puede dejar esa piel más roja en lugar de más descansada. Con los",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_030.png",
+          "asset_id": "vaul3768kazw:m170:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m171",
+      "section_id": "recap",
+      "from": 45212,
+      "duration": 189,
+      "narration": "años, cuidar la piel no consiste en perseguir un rostro distinto. Consiste en entender qué",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Guía completa en la descripción",
+          "sub": "",
+          "detail": "Presentador persistente sostiene la guía visible; lower third discreto remite al primer enlace sin mostrar URL.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "guide_lower_third",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m172",
+      "section_id": "recap",
+      "from": 45401,
+      "duration": 214,
+      "narration": "cambió, elegir el gesto más suave que realmente ayuda y reconocer cuándo una receta ya no alcanza.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_031.png",
+          "asset_id": "vaul3768kazw:m172:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    },
+    {
+      "id": "m173",
+      "section_id": "recap",
+      "from": 45615,
+      "duration": 199,
+      "narration": "La linaza puede formar una película. Una rutina sensata puede devolver comodidad. Y una mirada",
+      "transition": "TransitionShell:whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_evidence_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedCta",
+          "render_component": "FedCta",
+          "title": "Cuide el párpado sin promesas imposibles",
+          "sub": "",
+          "detail": "Horizonte oscuro con tres objetos del método y botón editorial sobrio; cierre humano, sin urgencia falsa.",
+          "kicker": "",
+          "family": "FedCta",
+          "layout_family": "cta_horizon",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7
+        }
+      ]
+    },
+    {
+      "id": "m174",
+      "section_id": "recap",
+      "from": 45814,
+      "duration": 213,
+      "narration": "atenta puede indicarle cuándo consultar. Cuídese mucho... y, por favor, no sea terco con sus ojos.",
+      "transition": "TransitionShell:whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vaul3768kazw_presenter_032.png",
+          "asset_id": "vaul3768kazw:m174:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 174,
+    "avatar_scenes": 45,
+    "clip_scenes": 68,
+    "image_scenes": 32,
+    "component_scenes": 29,
+    "distinct_render_components": 10,
+    "duration_seconds": 1534.22,
+    "unresolved_assets": 0,
+    "visual_v3": {
+      "moments": 174,
+      "counts": {
+        "avatar_full": 45,
+        "clean_stock": 68,
+        "presenter_action": 32,
+        "hero_component": 29
+      },
+      "ratios": {
+        "avatar_full": 0.2586,
+        "clean_stock": 0.3908,
+        "presenter_action": 0.1839,
+        "hero_component": 0.1667
+      },
+      "clean_media_without_overlay_ratio": 1,
+      "hero_families": 29,
+      "rendered_components": 10,
+      "presenter_section_coverage": 1
+    }
+  }
+}
