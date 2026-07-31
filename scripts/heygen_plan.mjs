@@ -92,6 +92,18 @@ const payloads = tandas.map((tan, i) => ({
   })),
 }));
 
+// Schema gate for the MCP Studio tool. These are nested snake_case fields; using
+// voiceSettings here is silently ignored and makes HeyGen fall back to Auto.
+payloads.forEach((payload, payloadIndex) => payload.scenes.forEach((scene, sceneIndex) => {
+  const input = scene?.input || {};
+  const where = `payload ${payloadIndex + 1}, escena ${sceneIndex + 1}`;
+  if (input.engine?.type !== "avatar_iii") err.push(`${where}: engine debe ser avatar_iii`);
+  if (Object.prototype.hasOwnProperty.call(input, "voiceSettings")) err.push(`${where}: voiceSettings camelCase no es válido dentro de Studio`);
+  if (input.voice_settings?.speed !== 1.0) err.push(`${where}: speed debe ser 1.0`);
+  if (input.voice_settings?.engine_settings?.engine_type !== "elevenlabs") err.push(`${where}: engine_type debe ser elevenlabs`);
+  if (input.voice_settings?.engine_settings?.model !== "eleven_v3") err.push(`${where}: model debe ser eleven_v3`);
+}));
+
 if (json) {
   if (err.length) { console.error("NO SE PUEDE MANDAR:\n" + err.map((e) => " · " + e).join("\n")); process.exit(1); }
   console.log(JSON.stringify({ creditos: payloads.length, payloads }, null, 1));
