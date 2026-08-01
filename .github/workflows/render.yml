@@ -145,6 +145,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with: { path: chunks, pattern: "chunk-*", merge-multiple: true }
       - name: traer chunks persistidos (reusar los no-cambiados)
+        if: ${{ github.event.inputs.only_chunks != '' }}
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
