@@ -19,6 +19,10 @@ import {
 
 const accent = "#E9B44C";
 const publicAsset = (value?: string | null) => value ? staticFile(value) : undefined;
+const transitionVariant = (scene:any): "none"|"whip"|"lift"|"iris"|"fold" => {
+  const value = String(scene.transition || scene.layers?.[0]?.transition_variant || "none").toLowerCase();
+  return (["none","whip","lift","iris","fold"] as const).includes(value as any) ? value as any : "none";
+};
 
 const FedererComponent: React.FC<{scene:any}> = ({scene}) => {
   const layer = scene.layers[0];
@@ -27,8 +31,7 @@ const FedererComponent: React.FC<{scene:any}> = ({scene}) => {
   const sub = layer.sub || "";
   const image = publicAsset(layer.image);
   const imageB = publicAsset(layer.image_b);
-  const variantSeed = [...String(layer.layout_family || scene.id)].reduce((sum,c)=>sum+c.charCodeAt(0),0);
-  const variant = (["whip","lift","iris","fold"] as const)[variantSeed % 4];
+  const variant = transitionVariant(scene);
   const common = {totalF: scene.duration, accent, variant};
   if (/chapter|section|capitulo/.test(key)) return <FedChapter {...common} kicker={layer.kicker || ""} title={title} sub={sub}/>;
   if (/stat|metric|percent|number|evidence|data/.test(key)) {
@@ -50,10 +53,11 @@ const FedererComponent: React.FC<{scene:any}> = ({scene}) => {
 
 const FedererScene: React.FC<{scene:any}> = ({scene}) => {
   const layer = scene.layers[0];
+  const variant = transitionVariant(scene);
   if (layer.type === "avatar") return null;
   if (layer.type === "component") return <FedererComponent scene={scene}/>;
-  if (layer.type === "image") return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video={false} accent={accent}/>;
-  return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video startFrom={0} accent={accent}/>;
+  if (layer.type === "image") return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video={false} accent={accent} variant={variant}/>;
+  return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video startFrom={0} accent={accent} variant={variant}/>;
 };
 
 export const BagasyTimeline_v89mlm0ixyno: React.FC = () => <AbsoluteFill style={{background:"#020409"}}>
