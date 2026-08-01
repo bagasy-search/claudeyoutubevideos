@@ -235,12 +235,13 @@ const DNA_SCALE_IN = 0.1; // entra en 1.10 → 1
 const DNA_SCALE_OUT = 0.06; // sale a 0.94
 const DNA_SWEEP = 42; // % que ocupa el barrido de luz
 
-/** Las 4 variantes comparten el ADN y cambian el gesto:
+/** Las variantes animadas comparten el ADN y cambian el gesto:
  *  whip · lateral, el corte neutro del kit
  *  lift · el mismo gesto girado 90°: abre algo nuevo desde abajo
  *  iris · resuelve desde el centro hacia afuera: aterriza un dato
- *  fold · gira sobre su eje como una página: cambia de capítulo */
-export type FedTransitionVariant = 'whip' | 'lift' | 'iris' | 'fold';
+ *  fold · gira sobre su eje como una página: cambia de capítulo
+ *  none · corte limpio: continuidad, calma o plano con movimiento propio */
+export type FedTransitionVariant = 'none' | 'whip' | 'lift' | 'iris' | 'fold';
 
 export const TransitionShell: React.FC<{
   accent: string;
@@ -251,6 +252,8 @@ export const TransitionShell: React.FC<{
 }> = ({accent, totalF = FED_SCENE_F, whipF = FED_WHIP_F, variant = 'whip', children}) => {
   const frame = useCurrentFrame();
   const {width, height} = useVideoConfig();
+
+  if (variant === 'none') return <AbsoluteFill>{children}</AbsoluteFill>;
 
   const en = interpolate(frame, [0, whipF], [0, 1], {
     ...CLAMP,
