@@ -14,7 +14,7 @@
         "reference_federer_broadcast_premium_kit",
         "reference_fed_whiteboard_component"
       ],
-      "arquitectura": "UN solo <OffthreadVideo> del avatar PERSISTENTE que corre continuo abajo (audio perfecto), y ENCIMA las escenas de profundidad flotando con TransitionShell (whip, sin cortes duros). Data-driven por el array BEATS con kind:'avatar'|'depth'. NO es un slideshow de <Sequence> que se reemplazan: el avatar NUNCA se corta en pedazos.",
+      "arquitectura": "UN solo <OffthreadVideo> del avatar PERSISTENTE que corre continuo abajo (audio perfecto), y ENCIMA escenas de profundidad data-driven. Alternar TransitionShell none|whip|lift|iris|fold según intención; 25-35% deben ser cortes limpios sin transición. El avatar NUNCA se corta en pedazos.",
       "componentes": [
         "FedHero",
         "FedStat",
@@ -28,7 +28,7 @@
         "FedChapter",
         "FedWhiteboard — PIZARRA EXPLICATIVA (escena especial estilo Vox, data-driven, escrita a mano) para explicar un MECANISMO paso a paso. Self-contained en src/FedWhiteboard.tsx: usala tal cual para el beat del 'por qué funciona'. Ver memoria reference_fed_whiteboard_component."
       ],
-      "reglas": "Partí SIEMPRE de src/FedererFluid.tsx como ESQUELETO (copialo y adaptá los BEATS a este guion). PROHIBIDO inventar tu propia taxonomía de escenas (nada de TriptychScene, RecipeScene, MechanismScene, etc.) ni tu propio kit (nada de VallerKit/JamaicaKit): usá los componentes de FedererKit.tsx tal cual, y si falta uno agregá una variante DENTRO de FedererKit.tsx. Look dark-cinematic, whips fluidos, avatar full o visual full alternados.",
+      "reglas": "Partí SIEMPRE de src/FedererFluid.tsx como ESQUELETO. Usá componentes auténticos de FedererKit.tsx: mínimo 8 tipos en video largo, ninguno >25% y máximo 2 seguidos. Cada beat debe guardar narration_match literal y su texto visible debe corresponder exactamente a ese tramo. Look dark-cinematic; alternar none|whip|lift|iris|fold, con 25-35% de cortes limpios.",
       "showcase_url": "https://github.com/bautielcrack4-web/bagasy-videos/releases/download/showcase-fluid/fluidshow.mp4",
       "showcase_components": [
         "FedChapter",
