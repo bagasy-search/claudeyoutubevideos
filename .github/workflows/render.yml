@@ -16,6 +16,7 @@ on:
       chunks:      { description: "en cuantos pedazos partir", required: false, default: "60" }
       only_chunks: { description: "solo estos chunks (ej 3 | 3,4 | 3-5). vacio = todos", required: false, default: "" }
       entry:       { description: "entry propio del video (ej src/index_<slug>.tsx). vacio = Root.tsx compartido", required: false, default: "" }
+      asset_overlay: { description: "aplicar assets-overlay-<slug> despues del paquete base", required: false, default: "false" }
 
 jobs:
   prepare:
@@ -86,6 +87,14 @@ jobs:
           fi
           mkdir -p public
           tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
+          if [ "${{ github.event.inputs.asset_overlay }}" = "true" ]; then
+            gh release download "assets-overlay-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" \
+              --pattern "assets-overlay-${{ github.event.inputs.slug }}.tar*" --dir . --clobber
+            if ls "assets-overlay-${{ github.event.inputs.slug }}.tar.part-"* >/dev/null 2>&1; then
+              cat "assets-overlay-${{ github.event.inputs.slug }}.tar.part-"* > "assets-overlay-${{ github.event.inputs.slug }}.tar"
+            fi
+            tar -xf "assets-overlay-${{ github.event.inputs.slug }}.tar" -C public
+          fi
       - name: frame range
         id: r
         run: node scripts/chunkmath.mjs ${{ github.event.inputs.total_frames }} ${{ github.event.inputs.chunks }} ${{ matrix.idx }} >> "$GITHUB_OUTPUT"
