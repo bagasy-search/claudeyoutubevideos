@@ -155,6 +155,7 @@ const componentFor = (scene) => {
   if (/Boundary|Mistake|Hazard|Safe|Risk|ClearIsNotTested/i.test(id)) {
     return "WaterSafetyBoundary_v48vr0jexdrms";
   }
+  if (scene.section_id === "s01_principle") return "WaterSafetyBoundary_v48vr0jexdrms";
   if (scene.section_id === "s02_roof_catchment") return "RoofYieldScene_v48vr0jexdrms";
   if (scene.section_id === "s03_cistern") return "CisternCutawayScene_v48vr0jexdrms";
   if (scene.section_id === "s04_spring_box") return "SpringBoxScene_v48vr0jexdrms";
@@ -176,6 +177,11 @@ const stockComponents = [
   "StockFieldBadge_v48vr0jexdrms",
   "StockLowerEvidence_v48vr0jexdrms",
 ];
+const stockRailVisible = (src) => {
+  let seed = 0;
+  for (let index = 0; index < src.length; index++) seed = (seed * 31 + src.charCodeAt(index)) >>> 0;
+  return seed % 4 === 0;
+};
 const cues = [];
 const report = [];
 
@@ -189,8 +195,8 @@ for (const [ordinal, scene] of timeline.scenes.entries()) {
   const chapter =
     /RuleNumberScene|Checklist/i.test(String(layer.component ?? "")) ||
     /chapter_marker|cta|endcard/i.test(String(layer.visual_type ?? ""));
-  const avatarMoment = chapter || (!direct && ordinal % 11 === 0);
-  const stockMoment = direct || (!avatarMoment && ordinal % 3 === 1);
+  const avatarMoment = chapter || (!direct && ordinal % 7 === 0);
+  const stockMoment = direct || (!avatarMoment && ordinal % 3 !== 0);
   const asset = chooseAsset(scene, ordinal);
   let expression;
   let kind;
@@ -224,6 +230,8 @@ for (const [ordinal, scene] of timeline.scenes.entries()) {
         : componentFor(scene),
     asset: asset.src,
     title,
+    overlay_policy: kind === "stock" && !stockRailVisible(asset.src) ? "none" : "editorial_evidence_only",
+    transition: scene.transition,
   });
 }
 
@@ -358,6 +366,53 @@ const buildReport = {
   ),
   rows: report,
 };
+
+// Publish an authoritative representation of what this premium renderer actually
+// draws. The legacy materializer describes every planned beat as a generic
+// component, which made quality gates judge a plan placeholder instead of the
+// finished stock/presenter/component mix.
+const sourceScenes = new Map(timeline.scenes.map((scene) => [scene.id, scene]));
+const firstScene = timeline.scenes[0];
+const premiumScenes = [
+  {
+    ...firstScene,
+    visual_type: "avatar_full",
+    overlay_policy: "none",
+    layers: [{type: "avatar", src: "v48vr0jexdrms_opt.mp4"}],
+  },
+  ...report.map((row) => {
+    const source = sourceScenes.get(row.id) || {};
+    const common = {
+      id: row.id,
+      section_id: row.section,
+      from: row.from,
+      duration: row.duration,
+      narration: source.narration || "",
+      transition: row.transition || source.transition || "none",
+      overlay_policy: row.overlay_policy,
+    };
+    if (row.kind === "stock") return {...common, visual_type: "clean_stock", layers: [{type: "video", src: row.asset, overlay_policy: row.overlay_policy}]};
+    if (row.kind === "avatar-note") return {...common, visual_type: "presenter_action", layers: [{type: "avatar", src: "v48vr0jexdrms_opt.mp4", overlay_policy: row.overlay_policy}]};
+    return {...common, visual_type: "hero_component", layers: [{type: "component", render_component: row.component, layout_family: row.component, title: row.title, depth_layers: 7}]};
+  }),
+];
+const premiumTimeline = {
+  ...timeline,
+  premium_director_enabled: true,
+  duration_in_frames: buildReport.total_frames,
+  scenes: premiumScenes,
+  metrics: {
+    ...timeline.metrics,
+    scenes: premiumScenes.length,
+    presenter_scenes: premiumScenes.filter((scene) => ["avatar_full", "presenter_action"].includes(scene.visual_type)).length,
+    stock_scenes: premiumScenes.filter((scene) => scene.visual_type === "clean_stock").length,
+    component_scenes: premiumScenes.filter((scene) => scene.visual_type === "hero_component").length,
+    distinct_render_components: uniqueComponents.size,
+  },
+};
+for (const timelinePath of [path.join("src", "VideoEdit", `timeline_${slug}.json`)]) {
+  fs.writeFileSync(timelinePath, `${JSON.stringify(premiumTimeline, null, 2)}\n`);
+}
 fs.writeFileSync(
   path.join("_v3", `${slug}_premium_build_report.json`),
   `${JSON.stringify(buildReport, null, 2)}\n`,

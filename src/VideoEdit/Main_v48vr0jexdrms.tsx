@@ -9,7 +9,7 @@ import {
 import {Audio, Video} from "@remotion/media";
 import {PREMIUM_CUES_V48VR0JEXDRMS} from "./cues_v48vr0jexdrms.gen";
 
-export const TOTAL_FRAMES_V48VR0JEXDRMS = 42909;
+export const TOTAL_FRAMES_V48VR0JEXDRMS = 40449;
 
 const AvatarBase_v48vr0jexdrms: React.FC = () => {
   const frame = useCurrentFrame();
@@ -37,8 +37,9 @@ const AvatarBase_v48vr0jexdrms: React.FC = () => {
   );
 };
 
-export const BagasyVisualTimeline_v48vr0jexdrms: React.FC = () => (
+export const BagasyTimeline_v48vr0jexdrms: React.FC = () => (
   <AbsoluteFill style={{background: "#111914"}}>
+    <Audio src={staticFile("v48vr0jexdrms.wav")} />
     <AvatarBase_v48vr0jexdrms />
     {PREMIUM_CUES_V48VR0JEXDRMS.map((cue) => (
       <Sequence
@@ -50,12 +51,5 @@ export const BagasyVisualTimeline_v48vr0jexdrms: React.FC = () => (
         {cue.el(cue.duration)}
       </Sequence>
     ))}
-  </AbsoluteFill>
-);
-
-export const BagasyTimeline_v48vr0jexdrms: React.FC = () => (
-  <AbsoluteFill style={{background: "#111914"}}>
-    <Audio src={staticFile("v48vr0jexdrms.wav")} />
-    <BagasyVisualTimeline_v48vr0jexdrms />
   </AbsoluteFill>
 );
