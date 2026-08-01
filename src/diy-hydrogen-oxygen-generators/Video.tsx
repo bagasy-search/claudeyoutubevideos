@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useState} from "react";
+import React, {useMemo} from "react";
 import {
   AbsoluteFill,
   Audio,
@@ -10,18 +10,15 @@ import {
   spring,
   staticFile,
   useCurrentFrame,
-  useDelayRender,
   useVideoConfig,
 } from "remotion";
 import {KEYWORDS, SECTIONS, STOCK} from "./data";
-
-type Caption = {text: string; startMs: number; endMs: number};
 
 const BG = "#061017";
 const INK = "#f2f7f8";
 const MUTED = "#a8bbc1";
 const BEAT_SECONDS = 5.2;
-const TOTAL_SECONDS = 1290.4;
+const TOTAL_SECONDS = 1243.36;
 const clamp = {extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const};
 const easeOut = Easing.bezier(0.16, 1, 0.3, 1);
 
@@ -458,61 +455,8 @@ const StockBeat: React.FC<{beat: number; startFrame: number}> = ({beat, startFra
   );
 };
 
-const Captions: React.FC<{captions: Caption[]}> = ({captions}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const ms = (frame / fps) * 1000;
-  const caption = captions.find((c) => ms >= c.startMs && ms < c.endMs);
-  if (!caption) return null;
-  const words = caption.text.trim().split(/\s+/);
-  const progress = (ms - caption.startMs) / Math.max(1, caption.endMs - caption.startMs);
-  const active = Math.min(words.length - 1, Math.floor(progress * words.length));
-  return (
-    <div style={{position: "absolute", left: 220, right: 220, bottom: 52, display: "flex", justifyContent: "center", zIndex: 50}}>
-      <div
-        style={{
-          maxWidth: 1380,
-          padding: "14px 24px 16px",
-          borderRadius: 12,
-          background: "rgba(2,10,14,.78)",
-          borderBottom: "2px solid rgba(105,231,255,.68)",
-          boxShadow: "0 12px 44px rgba(0,0,0,.42)",
-          textAlign: "center",
-          fontSize: 36,
-          lineHeight: 1.14,
-          fontWeight: 760,
-          color: "white",
-          textShadow: "0 3px 12px #000",
-        }}
-      >
-        {words.map((word, i) => (
-          <span key={`${word}-${i}`} style={{color: i === active ? "#69e7ff" : "white"}}>
-            {word}{i < words.length - 1 ? " " : ""}
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-};
-
 export const DIYHydrogenOxygen: React.FC = () => {
   const {fps, durationInFrames} = useVideoConfig();
-  const {delayRender, continueRender, cancelRender} = useDelayRender();
-  const [handle] = useState(() => delayRender("Loading captions"));
-  const [captions, setCaptions] = useState<Caption[]>([]);
-
-  const load = useCallback(async () => {
-    try {
-      const response = await fetch(staticFile("captions.json"));
-      setCaptions(await response.json());
-      continueRender(handle);
-    } catch (error) {
-      cancelRender(error);
-    }
-  }, [cancelRender, continueRender, handle]);
-
-  useEffect(() => void load(), [load]);
-
   const beats = useMemo(
     () => Array.from({length: Math.ceil(TOTAL_SECONDS / BEAT_SECONDS)}, (_, i) => Math.round(i * BEAT_SECONDS * fps)),
     [fps],
@@ -520,7 +464,7 @@ export const DIYHydrogenOxygen: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: BG, fontFamily: "Arial, Helvetica, sans-serif"}}>
-      <Audio src={staticFile("diy-hydrogen-oxygen-generators-audio.mp3")} volume={1} />
+      <Audio src={staticFile("diy-hydrogen-oxygen-generators-audio.mp3")} volume={1.32} />
       <Audio src={staticFile("audio/background.wav")} volume={0.02} loop />
       {beats.map((from, beat) => {
         const duration = Math.min(Math.ceil(BEAT_SECONDS * fps), durationInFrames - from);
@@ -531,7 +475,6 @@ export const DIYHydrogenOxygen: React.FC = () => {
           </Sequence>
         );
       })}
-      <Captions captions={captions} />
     </AbsoluteFill>
   );
 };
