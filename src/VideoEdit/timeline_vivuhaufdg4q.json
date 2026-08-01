@@ -1,0 +1,4051 @@
+{
+  "version": 1,
+  "slug": "vivuhaufdg4q",
+  "kit": "federer-fluid",
+  "premium_director_enabled": true,
+  "composition_id": "Bagasy-vivuhaufdg4q",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 44721,
+  "audio_src": "avatar_vivuhaufdg4q.mp4",
+  "captions_src": "captions_vivuhaufdg4q.json",
+  "scenes": [
+    {
+      "id": "hook-01",
+      "section_id": "hook",
+      "from": 0,
+      "duration": 200,
+      "narration": "Diez cosas cotidianas, tan normales como una mala noche, una silla y una copa de más",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hook-02",
+      "section_id": "hook",
+      "from": 200,
+      "duration": 162,
+      "narration": "pueden bajar su testosterona sin avisar y dejarlo buscando una inyección cara",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_001.png",
+          "asset_id": "vivuhaufdg4q:hook-02:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "hook-03",
+      "section_id": "hook",
+      "from": 362,
+      "duration": 167,
+      "narration": "para un problema que empezó en el sueño, el abdomen y la rutina",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "Sueño, abdomen y rutina",
+          "sub": "",
+          "detail": "Hero de tres campos semánticos: dormitorio oscuro, cintura medida y agenda diaria, sin tarjeta universal.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "full-bleed-triad",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "hook-04",
+      "section_id": "hook",
+      "from": 529,
+      "duration": 240,
+      "narration": "Y sí, hablamos de testosterona. No de una prueba de hombría",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Testosterona, no hombría",
+          "sub": "",
+          "detail": "Cambio de capítulo con una escala hormonal sobria, no un marcador de virilidad.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hook-05",
+      "section_id": "hook",
+      "from": 769,
+      "duration": 614,
+      "narration": "Es una hormona que participa en la masa muscular, la fuerza, los huesos",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hook-06",
+      "section_id": "hook",
+      "from": 1383,
+      "duration": 232,
+      "narration": "dormir alrededor de cinco horas por noche durante una semana",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Cinco horas durante una semana",
+          "sub": "Durante una semana",
+          "detail": "Régua temporal de siete días con el tramo de cinco horas iluminado, no un número flotante genérico.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "numeric-ruler-sweep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "hook-07",
+      "section_id": "hook",
+      "from": 1615,
+      "duration": 291,
+      "narration": "se relacionó con una reducción aproximada del diez al quince por ciento",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_002.png",
+          "asset_id": "vivuhaufdg4q:hook-07:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hook-08",
+      "section_id": "hook",
+      "from": 1906,
+      "duration": 1492,
+      "narration": "No significa que una sola noche lo deje sin hormona",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hook-09",
+      "section_id": "hook",
+      "from": 3398,
+      "duration": 305,
+      "narration": "El problema es la repetición. Lo cotidiano que se vuelve diario",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Lo cotidiano se vuelve diario",
+          "sub": "",
+          "detail": "Comparación real: una noche aislada frente a un calendario de noches repetidas, divisor que barre de forma horizontal.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "paired-habit-split",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "hook-10",
+      "section_id": "hook",
+      "from": 3703,
+      "duration": 102,
+      "narration": "muchas personas culpan únicamente a la edad",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_001.mp4",
+          "asset_id": "vivuhaufdg4q:hook-10:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hook-11",
+      "section_id": "hook",
+      "from": 3805,
+      "duration": 623,
+      "narration": "cuando todavía hay factores corregibles delante de sus ojos",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_003.png",
+          "asset_id": "vivuhaufdg4q:hook-11:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "hook-12",
+      "section_id": "hook",
+      "from": 4428,
+      "duration": 1,
+      "narration": "Primero hay que saber si el nivel realmente está bajo",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hook-13",
+      "section_id": "hook",
+      "from": 4429,
+      "duration": 575,
+      "narration": "En unos minutos vamos a recorrer las diez cosas",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_002.mp4",
+          "asset_id": "vivuhaufdg4q:hook-13:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hook-14",
+      "section_id": "hook",
+      "from": 5004,
+      "duration": 1080,
+      "narration": "También le voy a decir qué no conviene hacer",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_004.png",
+          "asset_id": "vivuhaufdg4q:hook-14:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "hook-15",
+      "section_id": "hook",
+      "from": 6084,
+      "duration": 65,
+      "narration": "Así que empecemos por el principio",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "circuit-01",
+      "section_id": "circuito",
+      "from": 6149,
+      "duration": 101,
+      "narration": "La testosterona no funciona como una pila independiente",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "circuit-02",
+      "section_id": "circuito",
+      "from": 6250,
+      "duration": 102,
+      "narration": "El cerebro envía señales hacia los testículos",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Cerebro y testículos",
+          "sub": "",
+          "detail": "Diagrama de señal bidireccional entre cerebro y testículos sobre fondo anatómico abstracto.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "circuit-orbit",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "circuit-03",
+      "section_id": "circuito",
+      "from": 6352,
+      "duration": 1,
+      "narration": "Una de ellas se llama LH, hormona luteinizante",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_003.mp4",
+          "asset_id": "vivuhaufdg4q:circuit-03:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "circuit-04",
+      "section_id": "circuito",
+      "from": 6353,
+      "duration": 268,
+      "narration": "La otra es FSH, hormona foliculoestimulante",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_004.mp4",
+          "asset_id": "vivuhaufdg4q:circuit-04:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "circuit-05",
+      "section_id": "circuito",
+      "from": 6621,
+      "duration": 228,
+      "narration": "Si el sueño, la energía disponible, el metabolismo o ciertos medicamentos alteran ese circuito",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Sueño, metabolismo y circuito",
+          "sub": "",
+          "detail": "Pizarra Vox data-driven con cuatro entradas que convergen en el circuito hormonal.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "whiteboard-causal-spine",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "circuit-06",
+      "section_id": "circuito",
+      "from": 6849,
+      "duration": 84,
+      "narration": "los testículos pueden recibir menos señal",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_005.png",
+          "asset_id": "vivuhaufdg4q:circuit-06:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "circuit-07",
+      "section_id": "circuito",
+      "from": 6933,
+      "duration": 1,
+      "narration": "Por eso no existe una única causa y tampoco existe un único remedio",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "circuit-08",
+      "section_id": "circuito",
+      "from": 6934,
+      "duration": 1,
+      "narration": "Porque el enemigo no es un alimento aislado",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_005.mp4",
+          "asset_id": "vivuhaufdg4q:circuit-08:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "circuit-09",
+      "section_id": "circuito",
+      "from": 6935,
+      "duration": 1,
+      "narration": "el atajo sin diagnóstico, el marketing que le vende una solución mensual",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "circuit-10",
+      "section_id": "circuito",
+      "from": 6936,
+      "duration": 167,
+      "narration": "También le voy a decir qué no conviene hacer",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_006.png",
+          "asset_id": "vivuhaufdg4q:circuit-10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "sleep-01",
+      "section_id": "sueno-apnea",
+      "from": 7103,
+      "duration": 141,
+      "narration": "La primera cosa cotidiana es dormir poco o dormir a cualquier hora",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Dormir poco o a cualquier hora",
+          "sub": "",
+          "detail": "Capítulo que nace desde un reloj de madrugada y una cama en penumbra.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "sleep-02",
+      "section_id": "sueno-apnea",
+      "from": 7244,
+      "duration": 1,
+      "narration": "Durante el sueño profundo y continuo se organizan varias señales hormonales",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "sleep-03",
+      "section_id": "sueno-apnea",
+      "from": 7245,
+      "duration": 272,
+      "narration": "Si usted duerme cinco o seis horas durante meses",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_006.mp4",
+          "asset_id": "vivuhaufdg4q:sleep-03:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "sleep-04",
+      "section_id": "sueno-apnea",
+      "from": 7517,
+      "duration": 244,
+      "narration": "se despierta muchas veces o cambia de horario cada noche",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_007.png",
+          "asset_id": "vivuhaufdg4q:sleep-04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "sleep-05",
+      "section_id": "sueno-apnea",
+      "from": 7761,
+      "duration": 1,
+      "narration": "Además, el cansancio reduce el movimiento, empeora el apetito",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_007.mp4",
+          "asset_id": "vivuhaufdg4q:sleep-05:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "sleep-06",
+      "section_id": "sueno-apnea",
+      "from": 7762,
+      "duration": 809,
+      "narration": "La meta general para un adulto suele estar entre siete y nueve horas",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_008.png",
+          "asset_id": "vivuhaufdg4q:sleep-06:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "sleep-07",
+      "section_id": "sueno-apnea",
+      "from": 8571,
+      "duration": 117,
+      "narration": "Una habitación oscura, menos pantalla antes de dormir",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Habitación oscura, menos pantalla",
+          "sub": "",
+          "detail": "Checklist de higiene del sueño con iconos de habitación, pantalla y horario.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "safety-column-reveal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "sleep-08",
+      "section_id": "sueno-apnea",
+      "from": 8688,
+      "duration": 1,
+      "narration": "cafeína más temprano y menos alcohol por la noche",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_008.mp4",
+          "asset_id": "vivuhaufdg4q:sleep-08:clean_media",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "sleep-09",
+      "section_id": "sueno-apnea",
+      "from": 8689,
+      "duration": 395,
+      "narration": "Haga una prueba sencilla durante siete días",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_009.png",
+          "asset_id": "vivuhaufdg4q:sleep-09:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "sleep-10",
+      "section_id": "sueno-apnea",
+      "from": 9084,
+      "duration": 554,
+      "narration": "Anote a qué hora se acuesta, cuántas veces se despierta",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Anote a qué hora se acuesta",
+          "sub": "",
+          "detail": "Rail de tres pasos para hora de acostarse, despertares y levantarse.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "process-rail",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "apnea-01",
+      "section_id": "sueno-apnea",
+      "from": 9638,
+      "duration": 116,
+      "narration": "La segunda cosa es ignorar la apnea del sueño",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "apnea-02",
+      "section_id": "sueno-apnea",
+      "from": 9754,
+      "duration": 167,
+      "narration": "La pista suele ser una respiración ruidosa, ronquidos fuertes",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_009.mp4",
+          "asset_id": "vivuhaufdg4q:apnea-02:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "apnea-03",
+      "section_id": "sueno-apnea",
+      "from": 9921,
+      "duration": 258,
+      "narration": "pausas que otra persona nota, un despertar con sensación de ahogo",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_010.png",
+          "asset_id": "vivuhaufdg4q:apnea-03:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "apnea-04",
+      "section_id": "sueno-apnea",
+      "from": 10179,
+      "duration": 213,
+      "narration": "La garganta se cierra parcialmente mientras usted duerme",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "La garganta se cierra al dormir",
+          "sub": "",
+          "detail": "Pizarra explicativa en corte lateral: vía aérea abierta, estrecha y microdespertar.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "whiteboard-causal-spine",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "apnea-05",
+      "section_id": "sueno-apnea",
+      "from": 10392,
+      "duration": 112,
+      "narration": "Usted quizá no lo recuerda, pero el descanso queda fragmentado",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "apnea-06",
+      "section_id": "sueno-apnea",
+      "from": 10504,
+      "duration": 107,
+      "narration": "La apnea no es solo un problema de ronquidos",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Apnea: no son solo ronquidos",
+          "sub": "",
+          "detail": "Comparación limpia entre sonido exterior del ronquido y descanso fragmentado por microdespertares.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "before-after-slider",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "apnea-07",
+      "section_id": "sueno-apnea",
+      "from": 10611,
+      "duration": 456,
+      "narration": "Puede afectar la presión arterial, el corazón, el estado de ánimo",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_010.mp4",
+          "asset_id": "vivuhaufdg4q:apnea-07:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "apnea-08",
+      "section_id": "sueno-apnea",
+      "from": 11067,
+      "duration": 252,
+      "narration": "tiene poco sentido comprar testosterona antes de hablar con un profesional",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_011.png",
+          "asset_id": "vivuhaufdg4q:apnea-08:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "apnea-09",
+      "section_id": "sueno-apnea",
+      "from": 11319,
+      "duration": 312,
+      "narration": "No se diagnostique mirando un video",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "apnea-10",
+      "section_id": "sueno-apnea",
+      "from": 11631,
+      "duration": 185,
+      "narration": "Si ya usa un dispositivo de presión positiva, no lo abandone",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "apnea-11",
+      "section_id": "sueno-apnea",
+      "from": 11816,
+      "duration": 421,
+      "narration": "El tratamiento de la apnea busca proteger su respiración y su salud general",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-01",
+      "section_id": "abdomen-movimiento",
+      "from": 12237,
+      "duration": 195,
+      "narration": "La tercera cosa es acumular grasa alrededor del abdomen",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Grasa alrededor del abdomen",
+          "sub": "",
+          "detail": "Capítulo con cinta métrica en primer plano y silueta corporal en profundidad.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-02",
+      "section_id": "abdomen-movimiento",
+      "from": 12432,
+      "duration": 168,
+      "narration": "El tejido adiposo no es una bodega inerte",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_011.mp4",
+          "asset_id": "vivuhaufdg4q:abdomen-02:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-03",
+      "section_id": "abdomen-movimiento",
+      "from": 12600,
+      "duration": 217,
+      "narration": "contiene una enzima llamada aromatasa, que puede convertir parte de la testosterona en estradiol",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Aromatasa: testosterona y estradiol",
+          "sub": "",
+          "detail": "Diagrama molecular con testosterona entrando y estradiol saliendo de una aromatasa central.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "circuit-orbit",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-04",
+      "section_id": "abdomen-movimiento",
+      "from": 12817,
+      "duration": 465,
+      "narration": "Cuando además aparecen resistencia a la insulina, hígado graso o diabetes",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-05",
+      "section_id": "abdomen-movimiento",
+      "from": 13282,
+      "duration": 1,
+      "narration": "una reducción gradual de peso, cuando existe sobrepeso",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_012.png",
+          "asset_id": "vivuhaufdg4q:abdomen-05:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-06",
+      "section_id": "abdomen-movimiento",
+      "from": 13283,
+      "duration": 417,
+      "narration": "Perder entre un cinco y un diez por ciento del peso corporal",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Cinco a diez por ciento del peso",
+          "sub": "Peso corporal",
+          "detail": "Escala de tendencia de cinco a diez por ciento junto a una figura de fuerza preservada.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "numeric-ruler-sweep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-07",
+      "section_id": "abdomen-movimiento",
+      "from": 13700,
+      "duration": 228,
+      "narration": "puede ser un objetivo clínico útil para ciertas personas",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_012.mp4",
+          "asset_id": "vivuhaufdg4q:abdomen-07:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-08",
+      "section_id": "abdomen-movimiento",
+      "from": 13928,
+      "duration": 363,
+      "narration": "La trampa es adelgazar perdiendo músculo",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_013.mp4",
+          "asset_id": "vivuhaufdg4q:abdomen-08:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-09",
+      "section_id": "abdomen-movimiento",
+      "from": 14291,
+      "duration": 278,
+      "narration": "Mida la cintura siempre en condiciones parecidas",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_013.png",
+          "asset_id": "vivuhaufdg4q:abdomen-09:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "abdomen-10",
+      "section_id": "abdomen-movimiento",
+      "from": 14569,
+      "duration": 275,
+      "narration": "Si tiene una pérdida de peso involuntaria, hinchazón, mucha sed o debilidad marcada",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "activity-01",
+      "section_id": "abdomen-movimiento",
+      "from": 14844,
+      "duration": 200,
+      "narration": "La cuarta cosa es pasar demasiadas horas sentado",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "activity-02",
+      "section_id": "abdomen-movimiento",
+      "from": 15044,
+      "duration": 241,
+      "narration": "La inactividad prolongada favorece el aumento de grasa, la resistencia a la insulina",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_014.mp4",
+          "asset_id": "vivuhaufdg4q:activity-02:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "activity-03",
+      "section_id": "abdomen-movimiento",
+      "from": 15285,
+      "duration": 1,
+      "narration": "No significa que cada hora en una silla baje automáticamente una cifra de laboratorio",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "activity-04",
+      "section_id": "abdomen-movimiento",
+      "from": 15286,
+      "duration": 891,
+      "narration": "Como referencia general, la Organización Mundial de la Salud recomienda alrededor de ciento cincuenta minutos semanales",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_015.mp4",
+          "asset_id": "vivuhaufdg4q:activity-04:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "activity-05",
+      "section_id": "abdomen-movimiento",
+      "from": 16177,
+      "duration": 475,
+      "narration": "Puede caminar a un ritmo que le acelere un poco la respiración",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_014.png",
+          "asset_id": "vivuhaufdg4q:activity-05:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "activity-06",
+      "section_id": "abdomen-movimiento",
+      "from": 16652,
+      "duration": 194,
+      "narration": "levántese de una silla firme cinco veces, lentamente, sin impulsarse con las manos",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_015.png",
+          "asset_id": "vivuhaufdg4q:activity-06:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "activity-07",
+      "section_id": "abdomen-movimiento",
+      "from": 16846,
+      "duration": 319,
+      "narration": "Después empuje una pared diez veces",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_016.png",
+          "asset_id": "vivuhaufdg4q:activity-07:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "activity-08",
+      "section_id": "abdomen-movimiento",
+      "from": 17165,
+      "duration": 1,
+      "narration": "Si duele el pecho, falta el aire de manera intensa o aparece mareo",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_017.png",
+          "asset_id": "vivuhaufdg4q:activity-08:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "activity-09",
+      "section_id": "abdomen-movimiento",
+      "from": 17166,
+      "duration": 211,
+      "narration": "Está comprobando si puede enviarle al cuerpo una señal de fuerza",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "training-01",
+      "section_id": "recuperacion-estres",
+      "from": 17377,
+      "duration": 421,
+      "narration": "La quinta cosa es entrenar demasiado sin recuperar",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Entrenar demasiado sin recuperar",
+          "sub": "",
+          "detail": "Capítulo con registro de entrenamientos que se superponen sobre un fondo de gimnasio vacío.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "training-02",
+      "section_id": "recuperacion-estres",
+      "from": 17798,
+      "duration": 351,
+      "narration": "Muchas horas de ejercicio intenso, poco alimento, pocas horas de sueño",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_018.png",
+          "asset_id": "vivuhaufdg4q:training-02:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "training-03",
+      "section_id": "recuperacion-estres",
+      "from": 18149,
+      "duration": 177,
+      "narration": "ese estado de estrés físico se acompaña de cambios hormonales temporales",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Estrés físico, cambios hormonales",
+          "sub": "",
+          "detail": "Mecanismo visual de carga, recuperación y respuesta hormonal temporal.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "circuit-orbit",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "training-04",
+      "section_id": "recuperacion-estres",
+      "from": 18326,
+      "duration": 198,
+      "narration": "No confunda una molestia normal después de trabajar con una señal de alarma",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_016.mp4",
+          "asset_id": "vivuhaufdg4q:training-04:clean_media",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "training-05",
+      "section_id": "recuperacion-estres",
+      "from": 18524,
+      "duration": 303,
+      "narration": "durante semanas cae el rendimiento, duerme peor, está irritable",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Rendimiento bajo, duerme peor",
+          "sub": "",
+          "detail": "Checklist de señales sostenidas con una línea temporal de varias semanas.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "safety-column-reveal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "training-06",
+      "section_id": "recuperacion-estres",
+      "from": 18827,
+      "duration": 203,
+      "narration": "El ejercicio es beneficioso. El castigo constante no es obligatorio",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "training-07",
+      "section_id": "recuperacion-estres",
+      "from": 19030,
+      "duration": 464,
+      "narration": "Dos o tres sesiones de fuerza por semana, con descanso entre grupos musculares",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_019.png",
+          "asset_id": "vivuhaufdg4q:training-07:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "training-08",
+      "section_id": "recuperacion-estres",
+      "from": 19494,
+      "duration": 314,
+      "narration": "A los adultos mayores les conviene progresar con supervisión",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_020.png",
+          "asset_id": "vivuhaufdg4q:training-08:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "training-09",
+      "section_id": "recuperacion-estres",
+      "from": 19808,
+      "duration": 160,
+      "narration": "Piense en otra escena hipotética, no en una historia clínica real",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_017.mp4",
+          "asset_id": "vivuhaufdg4q:training-09:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "training-10",
+      "section_id": "recuperacion-estres",
+      "from": 19968,
+      "duration": 332,
+      "narration": "Un hombre de sesenta y tantos empieza a caminar, deja el pan de golpe",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "training-11",
+      "section_id": "recuperacion-estres",
+      "from": 20300,
+      "duration": 194,
+      "narration": "A las tres semanas está más cansado",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Tres semanas: más cansado",
+          "sub": "",
+          "detail": "Comparación editorial entre primera semana activa y tercera semana agotada, sin rostro identificable.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "before-after-slider",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "training-12",
+      "section_id": "recuperacion-estres",
+      "from": 20494,
+      "duration": 265,
+      "narration": "Tal vez le falte descanso, alimento suficiente, fuerza progresiva o una evaluación médica",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "stress-01",
+      "section_id": "recuperacion-estres",
+      "from": 20759,
+      "duration": 159,
+      "narration": "La sexta cosa es vivir bajo estrés durante meses",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "stress-02",
+      "section_id": "recuperacion-estres",
+      "from": 20918,
+      "duration": 308,
+      "narration": "El estrés no es un interruptor simple donde el cortisol entra y la testosterona sale",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "stress-03",
+      "section_id": "recuperacion-estres",
+      "from": 21226,
+      "duration": 575,
+      "narration": "el estrés persistente puede fragmentar el sueño, cambiar el apetito",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_018.mp4",
+          "asset_id": "vivuhaufdg4q:stress-03:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "stress-04",
+      "section_id": "recuperacion-estres",
+      "from": 21801,
+      "duration": 275,
+      "narration": "Diez minutos de respiración lenta. Una caminata después de comer",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_021.png",
+          "asset_id": "vivuhaufdg4q:stress-04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "stress-05",
+      "section_id": "recuperacion-estres",
+      "from": 22076,
+      "duration": 294,
+      "narration": "Si hay tristeza profunda, ataques de pánico, irritabilidad que no puede controlar o insomnio persistente",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Tristeza, pánico o irritabilidad: busque ayuda",
+          "sub": "",
+          "detail": "Checklist de señales de salud mental con límite de consulta y sin estetizar el sufrimiento.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "clinical-boundary-grid",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "stress-06",
+      "section_id": "recuperacion-estres",
+      "from": 22370,
+      "duration": 737,
+      "narration": "Un problema de salud mental no es falta de carácter y tampoco se corrige con testosterona por internet",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_019.mp4",
+          "asset_id": "vivuhaufdg4q:stress-06:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "stress-07",
+      "section_id": "recuperacion-estres",
+      "from": 23107,
+      "duration": 222,
+      "narration": "organizar el descanso, pedir ayuda, tratar el dolor y revisar qué está consumiendo",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-01",
+      "section_id": "alcohol-alimentacion",
+      "from": 23329,
+      "duration": 1,
+      "narration": "La séptima cosa es usar alcohol para dormir, relajarse o celebrar casi todos los días",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Alcohol para dormir casi todos los días",
+          "sub": "",
+          "detail": "Capítulo con copa, reloj y cama en profundidad; la copa queda fuera de foco al principio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-02",
+      "section_id": "alcohol-alimentacion",
+      "from": 23330,
+      "duration": 1,
+      "narration": "Una bebida estándar suele equivaler aproximadamente a una cerveza de trescientos treinta mililitros",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_020.mp4",
+          "asset_id": "vivuhaufdg4q:alcohol-02:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-03",
+      "section_id": "alcohol-alimentacion",
+      "from": 23331,
+      "duration": 754,
+      "narration": "una copa de vino de ciento cincuenta mililitros",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Vino: ciento cincuenta mililitros",
+          "sub": "",
+          "detail": "Medida de vino con vaso transparente y línea de volumen iluminada.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "numeric-ruler-sweep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-04",
+      "section_id": "alcohol-alimentacion",
+      "from": 24085,
+      "duration": 183,
+      "narration": "Una copa no convierte automáticamente a nadie en un paciente hormonal",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_022.png",
+          "asset_id": "vivuhaufdg4q:alcohol-04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-05",
+      "section_id": "alcohol-alimentacion",
+      "from": 24268,
+      "duration": 161,
+      "narration": "El problema aparece con la cantidad, la frecuencia y los atracones",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_021.mp4",
+          "asset_id": "vivuhaufdg4q:alcohol-05:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-06",
+      "section_id": "alcohol-alimentacion",
+      "from": 24429,
+      "duration": 294,
+      "narration": "Tomar cinco o más bebidas en pocas horas, como referencia clínica frecuente para un hombre",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_022.mp4",
+          "asset_id": "vivuhaufdg4q:alcohol-06:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-07",
+      "section_id": "alcohol-alimentacion",
+      "from": 24723,
+      "duration": 194,
+      "narration": "El alcohol también facilita el aumento de grasa, irrita el hígado y puede empeorar la respiración nocturna",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Alcohol, grasa, hígado y respiración",
+          "sub": "",
+          "detail": "Diagrama causal que conecta alcohol con grasa, hígado y respiración nocturna.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "circuit-orbit",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-08",
+      "section_id": "alcohol-alimentacion",
+      "from": 24917,
+      "duration": 171,
+      "narration": "Dormirse rápido no es lo mismo que dormir bien",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-09",
+      "section_id": "alcohol-alimentacion",
+      "from": 25088,
+      "duration": 275,
+      "narration": "Cuente las bebidas durante una semana",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_023.png",
+          "asset_id": "vivuhaufdg4q:alcohol-09:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-10",
+      "section_id": "alcohol-alimentacion",
+      "from": 25363,
+      "duration": 436,
+      "narration": "no lo suspenda de golpe sin orientación: la abstinencia puede ser peligrosa",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "No suspenda alcohol de golpe",
+          "sub": "Abstinencia peligrosa",
+          "detail": "Checklist de seguridad con una línea roja que frena el gesto de cortar abruptamente.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "clinical-boundary-grid",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "alcohol-11",
+      "section_id": "alcohol-alimentacion",
+      "from": 25799,
+      "duration": 161,
+      "narration": "La octava cosa es convertir la alimentación en una montaña rusa",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-02",
+      "section_id": "alcohol-alimentacion",
+      "from": 25960,
+      "duration": 258,
+      "narration": "muchas calorías líquidas y ultraprocesados durante años",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_023.mp4",
+          "asset_id": "vivuhaufdg4q:nutrition-02:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-03",
+      "section_id": "alcohol-alimentacion",
+      "from": 26218,
+      "duration": 160,
+      "narration": "El azúcar de una fruta o de un postre aislado no destruye la testosterona",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-04",
+      "section_id": "alcohol-alimentacion",
+      "from": 26378,
+      "duration": 387,
+      "narration": "El patrón repetido sí puede favorecer aumento de grasa, resistencia a la insulina y diabetes",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_024.mp4",
+          "asset_id": "vivuhaufdg4q:nutrition-04:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-05",
+      "section_id": "alcohol-alimentacion",
+      "from": 26765,
+      "duration": 711,
+      "narration": "En el extremo contrario, ayunos prolongados, dietas de choque y una alimentación demasiado baja en grasa",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_024.png",
+          "asset_id": "vivuhaufdg4q:nutrition-05:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-06",
+      "section_id": "alcohol-alimentacion",
+      "from": 27476,
+      "duration": 734,
+      "narration": "Una base sencilla es incluir una fuente de proteína en las comidas, verduras, legumbres",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_025.mp4",
+          "asset_id": "vivuhaufdg4q:nutrition-06:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "nutrition-07",
+      "section_id": "alcohol-alimentacion",
+      "from": 28210,
+      "duration": 308,
+      "narration": "El cuerpo necesita combustible para producir hormonas, pero también necesita que ese combustible",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "meds-01",
+      "section_id": "medicacion-atajos",
+      "from": 28518,
+      "duration": 1,
+      "narration": "La novena cosa es tomar ciertos medicamentos durante mucho tiempo",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Medicamentos durante mucho tiempo",
+          "sub": "",
+          "detail": "Capítulo con pastillero, lista de dosis y calendario, sin nombres comerciales.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "meds-02",
+      "section_id": "medicacion-atajos",
+      "from": 28519,
+      "duration": 433,
+      "narration": "Los opioides, como morfina, oxicodona o algunos tratamientos con tramadol",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_026.mp4",
+          "asset_id": "vivuhaufdg4q:meds-02:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "meds-03",
+      "section_id": "medicacion-atajos",
+      "from": 28952,
+      "duration": 185,
+      "narration": "pueden afectar las señales que regulan la testosterona, sobre todo con uso prolongado",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Señales que regulan la testosterona",
+          "sub": "",
+          "detail": "Diagrama de señal hormonal modulada por medicación prolongada, con una ruta de consulta al costado.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "circuit-orbit",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "meds-04",
+      "section_id": "medicacion-atajos",
+      "from": 29137,
+      "duration": 541,
+      "narration": "Los corticoides, como la prednisona, también pueden influir cuando se usan en determinados esquemas",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "meds-05",
+      "section_id": "medicacion-atajos",
+      "from": 29678,
+      "duration": 1,
+      "narration": "Lleve a la consulta una lista completa, con dosis, horarios y fecha de inicio",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_025.png",
+          "asset_id": "vivuhaufdg4q:meds-05:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "meds-06",
+      "section_id": "medicacion-atajos",
+      "from": 29679,
+      "duration": 175,
+      "narration": "nunca suspenda un medicamento por este video",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Nunca suspenda un medicamento",
+          "sub": "",
+          "detail": "Checklist con una sola frontera dominante: continuar hasta consultar.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "clinical-boundary-grid",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "meds-07",
+      "section_id": "medicacion-atajos",
+      "from": 29854,
+      "duration": 383,
+      "narration": "Si el cansancio o la disminución del deseo comenzaron después de un cambio",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Cansancio después de un cambio",
+          "sub": "",
+          "detail": "Proceso de tres hitos: inicio del fármaco, cambio percibido y consulta.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "timeline-two-mornings",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "meds-08",
+      "section_id": "medicacion-atajos",
+      "from": 30237,
+      "duration": 152,
+      "narration": "El enemigo aquí no es el medicamento necesario. Es ignorar la revisión",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hormones-01",
+      "section_id": "medicacion-atajos",
+      "from": 30389,
+      "duration": 156,
+      "narration": "La décima cosa es usar esteroides anabólicos, testosterona sin receta",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Esteroides y testosterona sin receta",
+          "sub": "",
+          "detail": "Capítulo con vial neutro fuera de foco y un eje de señales que pierde luz.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "hormones-02",
+      "section_id": "medicacion-atajos",
+      "from": 30545,
+      "duration": 202,
+      "narration": "o suplementos vendidos como potenciadores naturales. Aquí aparece la paradoja más peligrosa",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_027.mp4",
+          "asset_id": "vivuhaufdg4q:hormones-02:clean_media",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "hormones-03",
+      "section_id": "medicacion-atajos",
+      "from": 30747,
+      "duration": 171,
+      "narration": "Una hormona externa puede subir el nivel que aparece en un análisis",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_028.mp4",
+          "asset_id": "vivuhaufdg4q:hormones-03:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hormones-04",
+      "section_id": "medicacion-atajos",
+      "from": 30918,
+      "duration": 202,
+      "narration": "el cerebro detecta que ya hay suficiente y reduce LH y FSH",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "El cerebro reduce LH y FSH",
+          "sub": "",
+          "detail": "Pizarra paso a paso: hormona externa alta, cerebro detecta suficiencia, LH/FSH bajan.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "whiteboard-causal-spine",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "hormones-05",
+      "section_id": "medicacion-atajos",
+      "from": 31120,
+      "duration": 1,
+      "narration": "Los testículos reciben menos señal. La producción propia puede disminuir",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_029.mp4",
+          "asset_id": "vivuhaufdg4q:hormones-05:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "hormones-06",
+      "section_id": "medicacion-atajos",
+      "from": 31121,
+      "duration": 1,
+      "narration": "La producción propia puede disminuir y la fertilidad puede verse afectada",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hormones-07",
+      "section_id": "medicacion-atajos",
+      "from": 31122,
+      "duration": 669,
+      "narration": "También pueden aparecer aumento de glóbulos rojos, acné, cambios en el estado de ánimo",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_030.mp4",
+          "asset_id": "vivuhaufdg4q:hormones-07:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "hormones-08",
+      "section_id": "medicacion-atajos",
+      "from": 31791,
+      "duration": 390,
+      "narration": "La testosterona prescrita por un profesional es una situación distinta",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_026.png",
+          "asset_id": "vivuhaufdg4q:hormones-08:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "hormones-09",
+      "section_id": "medicacion-atajos",
+      "from": 32181,
+      "duration": 405,
+      "narration": "No es una vitamina para tomar cuando uno se siente cansado",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hormones-10",
+      "section_id": "medicacion-atajos",
+      "from": 32586,
+      "duration": 508,
+      "narration": "Un producto natural puede tener interacciones, dosis variables o ingredientes no declarados",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_031.mp4",
+          "asset_id": "vivuhaufdg4q:hormones-10:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "hormones-11",
+      "section_id": "medicacion-atajos",
+      "from": 33094,
+      "duration": 217,
+      "narration": "Natural no significa inocente. Y una etiqueta bonita no equivale a control de calidad",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "myths-01",
+      "section_id": "mitos",
+      "from": 33311,
+      "duration": 237,
+      "narration": "Ahora, unas cosas que no voy a contarle como asesinos de la testosterona",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "No son asesinos de la testosterona",
+          "sub": "",
+          "detail": "Capítulo de desmontaje con objetos cotidianos que permanecen en una mesa iluminada, sin tachones dramáticos.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "myths-02",
+      "section_id": "mitos",
+      "from": 33548,
+      "duration": 264,
+      "narration": "Comer soja como alimento, en cantidades normales, no ha demostrado de forma consistente",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_032.mp4",
+          "asset_id": "vivuhaufdg4q:myths-02:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "myths-03",
+      "section_id": "mitos",
+      "from": 33812,
+      "duration": 174,
+      "narration": "Los fitoestrógenos de una legumbre no funcionan igual que una dosis de estrógeno humano",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Legumbre no es estrógeno humano",
+          "sub": "",
+          "detail": "Comparación visual entre legumbre alimentaria y molécula de estrógeno humano como categorías distintas.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "paired-habit-split",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "myths-04",
+      "section_id": "mitos",
+      "from": 33986,
+      "duration": 222,
+      "narration": "Una porción de arroz, una taza de café o una relación sexual",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_027.png",
+          "asset_id": "vivuhaufdg4q:myths-04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "myths-05",
+      "section_id": "mitos",
+      "from": 34208,
+      "duration": 176,
+      "narration": "El teléfono en el bolsillo y calentar comida en un recipiente plástico",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_033.mp4",
+          "asset_id": "vivuhaufdg4q:myths-05:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "myths-06",
+      "section_id": "mitos",
+      "from": 34384,
+      "duration": 304,
+      "narration": "evitar calentar ciertos plásticos y preferir vidrio cuando sea posible",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Evite plásticos; prefiera vidrio",
+          "sub": "",
+          "detail": "Checklist de seguridad doméstica con recipiente de vidrio en foco y plástico fuera de foco.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "safety-column-reveal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "myths-07",
+      "section_id": "mitos",
+      "from": 34688,
+      "duration": 255,
+      "narration": "No confunda calidad del semen con nivel de testosterona",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "myths-08",
+      "section_id": "mitos",
+      "from": 34943,
+      "duration": 90,
+      "narration": "Y el cigarrillo merece una aclaración",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Cigarrillo: una aclaración",
+          "sub": "",
+          "detail": "Rótulo editorial bajo el avatar persistente con un cigarrillo fuera de foco y línea vascular.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "lower-third-identity-band",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "myths-09",
+      "section_id": "mitos",
+      "from": 35033,
+      "duration": 200,
+      "narration": "Aunque un análisis aislado no siempre muestre una testosterona más baja en un fumador",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_034.mp4",
+          "asset_id": "vivuhaufdg4q:myths-09:clean_media",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "myths-10",
+      "section_id": "mitos",
+      "from": 35233,
+      "duration": 424,
+      "narration": "el tabaco daña las arterias y puede empeorar las erecciones",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_035.mp4",
+          "asset_id": "vivuhaufdg4q:myths-10:clean_media",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "myths-11",
+      "section_id": "mitos",
+      "from": 35657,
+      "duration": 1,
+      "narration": "una persona puede tener testosterona normal y aun así necesitar atención",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_036.mp4",
+          "asset_id": "vivuhaufdg4q:myths-11:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "myths-12",
+      "section_id": "mitos",
+      "from": 35658,
+      "duration": 1,
+      "narration": "necesitar atención por una disfunción eréctil de origen vascular",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_028.png",
+          "asset_id": "vivuhaufdg4q:myths-12:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "myths-13",
+      "section_id": "mitos",
+      "from": 35659,
+      "duration": 244,
+      "narration": "Esta diferencia importa porque una persona puede tener testosterona normal y aun así necesitar atención",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "measure-01",
+      "section_id": "medicion-seguridad",
+      "from": 35903,
+      "duration": 89,
+      "narration": "Aquí se paga el gran error que le prometí",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Aquí se paga el gran error",
+          "sub": "",
+          "detail": "Capítulo de medición con reloj de tarde y tubo de laboratorio que permanece en sombra.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "chapter-gate-diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "measure-02",
+      "section_id": "medicion-seguridad",
+      "from": 35992,
+      "duration": 134,
+      "narration": "No empiece por el resultado; empiece por la calidad de la medición",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_029.png",
+          "asset_id": "vivuhaufdg4q:measure-02:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "measure-03",
+      "section_id": "medicion-seguridad",
+      "from": 36126,
+      "duration": 70,
+      "narration": "La testosterona cambia durante el día",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "La testosterona cambia durante el día",
+          "sub": "",
+          "detail": "Curva circadiana limpia con una ventana luminosa que se mueve de mañana a tarde.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "timeline-two-mornings",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "measure-04",
+      "section_id": "medicion-seguridad",
+      "from": 36196,
+      "duration": 1,
+      "narration": "puede alterarse con falta de sueño, enfermedad aguda, pérdida de peso intensa o ciertos medicamentos",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_037.mp4",
+          "asset_id": "vivuhaufdg4q:measure-04:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "measure-05",
+      "section_id": "medicion-seguridad",
+      "from": 36197,
+      "duration": 329,
+      "narration": "Un análisis tomado a las cinco de la tarde después de una noche en vela",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Cinco de la tarde, noche en vela",
+          "sub": "",
+          "detail": "Comparación entre extracción a las cinco de la tarde tras mala noche y una mañana razonablemente normal.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "paired-habit-split",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "measure-06",
+      "section_id": "medicion-seguridad",
+      "from": 36526,
+      "duration": 76,
+      "narration": "no representa necesariamente su nivel habitual",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "measure-07",
+      "section_id": "medicion-seguridad",
+      "from": 36602,
+      "duration": 225,
+      "narration": "Cuando existen síntomas compatibles, las guías clínicas suelen pedir un valor bajo confirmado",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Valor bajo confirmado",
+          "sub": "",
+          "detail": "Checklist de criterio diagnóstico: síntomas compatibles más valor bajo confirmado.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "clinical-boundary-grid",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "measure-08",
+      "section_id": "medicion-seguridad",
+      "from": 36827,
+      "duration": 1,
+      "narration": "en al menos dos mañanas diferentes",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_030.png",
+          "asset_id": "vivuhaufdg4q:measure-08:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "measure-09",
+      "section_id": "medicion-seguridad",
+      "from": 36828,
+      "duration": 575,
+      "narration": "Muchos profesionales prefieren medir entre las siete y las diez",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_031.png",
+          "asset_id": "vivuhaufdg4q:measure-09:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "measure-10",
+      "section_id": "medicion-seguridad",
+      "from": 37403,
+      "duration": 183,
+      "narration": "En algunos casos también se evalúa la testosterona libre y la SHBG",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Testosterona libre y SHBG",
+          "sub": "",
+          "detail": "Pizarra con testosterona total que se ramifica a libre y SHBG.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "whiteboard-causal-spine",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "measure-11",
+      "section_id": "medicion-seguridad",
+      "from": 37586,
+      "duration": 206,
+      "narration": "porque dos personas con el mismo valor total pueden tener distinta cantidad disponible para los tejidos",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_038.mp4",
+          "asset_id": "vivuhaufdg4q:measure-11:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "measure-12",
+      "section_id": "medicion-seguridad",
+      "from": 37792,
+      "duration": 94,
+      "narration": "¿Y cuáles son los síntomas que merecen una evaluación?",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "measure-13",
+      "section_id": "medicion-seguridad",
+      "from": 37886,
+      "duration": 443,
+      "narration": "Menor deseo sexual, menos erecciones matinales, pérdida de fuerza",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_039.mp4",
+          "asset_id": "vivuhaufdg4q:measure-13:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "measure-14",
+      "section_id": "medicion-seguridad",
+      "from": 38329,
+      "duration": 94,
+      "narration": "Ninguno por sí solo confirma testosterona baja",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_040.mp4",
+          "asset_id": "vivuhaufdg4q:measure-14:clean_media",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "measure-15",
+      "section_id": "medicion-seguridad",
+      "from": 38423,
+      "duration": 670,
+      "narration": "El cansancio también puede venir de anemia, tiroides, diabetes",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_032.png",
+          "asset_id": "vivuhaufdg4q:measure-15:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "measure-16",
+      "section_id": "medicion-seguridad",
+      "from": 39093,
+      "duration": 423,
+      "narration": "La pregunta es si el problema empieza en los testículos o en las señales del cerebro",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Testículos o señales del cerebro",
+          "sub": "",
+          "detail": "Diagrama de bifurcación que separa origen testicular y señal cerebral.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "vascular-cross-section",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "measure-17",
+      "section_id": "medicion-seguridad",
+      "from": 39516,
+      "duration": 121,
+      "narration": "cambiar el tablero del auto sin mirar el motor",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_041.mp4",
+          "asset_id": "vivuhaufdg4q:measure-17:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "measure-18",
+      "section_id": "medicion-seguridad",
+      "from": 39637,
+      "duration": 119,
+      "narration": "El tratamiento, si corresponde, necesita seguimiento",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "measure-19",
+      "section_id": "medicion-seguridad",
+      "from": 39756,
+      "duration": 1,
+      "narration": "La testosterona puede aumentar el hematocrito, afectar la fertilidad",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_042.mp4",
+          "asset_id": "vivuhaufdg4q:measure-19:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "measure-20",
+      "section_id": "medicion-seguridad",
+      "from": 39757,
+      "duration": 704,
+      "narration": "Si ya tiene una receta, no la suspenda ni cambie la dosis solo por un comentario de internet",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_033.png",
+          "asset_id": "vivuhaufdg4q:measure-20:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "measure-21",
+      "section_id": "medicion-seguridad",
+      "from": 40461,
+      "duration": 167,
+      "narration": "Consulte pronto si aparece dolor o aumento de tamaño en un testículo",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Dolor o aumento de tamaño: consulte",
+          "sub": "",
+          "detail": "Lower third editorial sobre avatar persistente con icono médico discreto y fondo limpio.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "lower-third-identity-band",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "measure-22",
+      "section_id": "medicion-seguridad",
+      "from": 40628,
+      "duration": 641,
+      "narration": "un bulto, cambios importantes en las mamas, pérdida de peso sin explicación",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_043.mp4",
+          "asset_id": "vivuhaufdg4q:measure-22:clean_media",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "measure-23",
+      "section_id": "medicion-seguridad",
+      "from": 41269,
+      "duration": 1,
+      "narration": "La testosterona no es la prioridad cuando el cuerpo está dando una señal urgente",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "measure-24",
+      "section_id": "medicion-seguridad",
+      "from": 41270,
+      "duration": 159,
+      "narration": "En una emergencia, llame a los servicios locales",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "recap-01",
+      "section_id": "recap-cierre",
+      "from": 41429,
+      "duration": 152,
+      "narration": "Entonces, este fin de semana haga cinco cosas",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Cinco cosas este fin de semana",
+          "sub": "",
+          "detail": "Capítulo final con cinco puntos materiales sobre una mesa, sin texto narrativo.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "countdown-steps",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "recap-02",
+      "section_id": "recap-cierre",
+      "from": 41581,
+      "duration": 229,
+      "narration": "registre durante siete días su sueño, sus despertares, el alcohol y su energía",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_034.png",
+          "asset_id": "vivuhaufdg4q:recap-02:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "recap-03",
+      "section_id": "recap-cierre",
+      "from": 41810,
+      "duration": 1,
+      "narration": "pregunte a alguien de confianza si ronca o deja de respirar",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Pregunte si ronca o deja de respirar",
+          "sub": "",
+          "detail": "Proceso de consulta de confianza: pregunta, observación nocturna y consulta profesional.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "process-rail",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "recap-04",
+      "section_id": "recap-cierre",
+      "from": 41811,
+      "duration": 368,
+      "narration": "interrumpa la silla cada treinta o sesenta minutos",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_044.mp4",
+          "asset_id": "vivuhaufdg4q:recap-04:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "recap-05",
+      "section_id": "recap-cierre",
+      "from": 42179,
+      "duration": 213,
+      "narration": "acumule movimiento progresivo, con fuerza al menos dos veces por semana si es seguro para usted",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_035.png",
+          "asset_id": "vivuhaufdg4q:recap-05:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "recap-06",
+      "section_id": "recap-cierre",
+      "from": 42392,
+      "duration": 197,
+      "narration": "quite las calorías líquidas diarias, reduzca el alcohol y no haga una dieta de hambre",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_036.png",
+          "asset_id": "vivuhaufdg4q:recap-06:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "recap-07",
+      "section_id": "recap-cierre",
+      "from": 42589,
+      "duration": 341,
+      "narration": "revise todos sus medicamentos y suplementos con un profesional",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_045.mp4",
+          "asset_id": "vivuhaufdg4q:recap-07:clean_media",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "recap-08",
+      "section_id": "recap-cierre",
+      "from": 42930,
+      "duration": 113,
+      "narration": "La meta no es perseguir el número más alto",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "recap-09",
+      "section_id": "recap-cierre",
+      "from": 43043,
+      "duration": 161,
+      "narration": "que su cuerpo funcione bien y que cualquier tratamiento tenga una razón clara",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Tratamiento con una razón clara",
+          "sub": "",
+          "detail": "Balanza visual entre función cotidiana y tratamiento indicado, con el lado de la razón en foco.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "clinical-boundary-grid",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "recap-10",
+      "section_id": "recap-cierre",
+      "from": 43204,
+      "duration": 234,
+      "narration": "Cuénteme en los comentarios en qué país vive",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_037.png",
+          "asset_id": "vivuhaufdg4q:recap-10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "recap-11",
+      "section_id": "recap-cierre",
+      "from": 43438,
+      "duration": 169,
+      "narration": "Suscríbase si quiere explicaciones médicas claras, sin promesas de milagro",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/vivuhaufdg4q/vivuhaufdg4q_stock_046.mp4",
+          "asset_id": "vivuhaufdg4q:recap-11:clean_media",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "recap-12",
+      "section_id": "recap-cierre",
+      "from": 43607,
+      "duration": 179,
+      "narration": "comparta este video con alguien que esté a punto de comprar un potenciador sin leer la etiqueta",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/vivuhaufdg4q_presenter_038.png",
+          "asset_id": "vivuhaufdg4q:recap-12:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "recap-13",
+      "section_id": "recap-cierre",
+      "from": 43786,
+      "duration": 345,
+      "narration": "En el próximo video vamos a abrir un frasco de suplemento",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "Próximo video: suplemento",
+          "sub": "",
+          "detail": "Hero teaser con frasco sellado, lupa y etiqueta aún ilegible en siete capas de profundidad.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "hero-depth-crescent",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "recap-14",
+      "section_id": "recap-cierre",
+      "from": 44131,
+      "duration": 248,
+      "narration": "Los que cuidaron su sueño, su fuerza y su salud metabólica entendían algo",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "recap-15",
+      "section_id": "recap-cierre",
+      "from": 44379,
+      "duration": 192,
+      "narration": "no se trata de parecer joven, sino de conservar capacidad para vivir con independencia",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_vivuhaufdg4q.mp4"
+        }
+      ]
+    },
+    {
+      "id": "recap-16",
+      "section_id": "recap-cierre",
+      "from": 44571,
+      "duration": 150,
+      "narration": "Esto es Federer Building. No se deje estar y no sea cabeza dura",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedCta",
+          "render_component": "FedCta",
+          "title": "Federer Building: no se deje estar",
+          "sub": "",
+          "detail": "Cierre FedCta con avatar persistente, luz cálida y un gesto final de continuidad.",
+          "kicker": "",
+          "family": "FedCta",
+          "layout_family": "chapter-crescendo",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 173,
+    "avatar_scenes": 44,
+    "clip_scenes": 46,
+    "image_scenes": 38,
+    "component_scenes": 45,
+    "distinct_render_components": 9,
+    "duration_seconds": 1490.7,
+    "unresolved_assets": 0,
+    "visual_v3": {
+      "moments": 173,
+      "counts": {
+        "avatar_full": 44,
+        "presenter_action": 38,
+        "hero_component": 45,
+        "clean_stock": 46
+      },
+      "ratios": {
+        "avatar_full": 0.2543,
+        "presenter_action": 0.2197,
+        "hero_component": 0.2601,
+        "clean_stock": 0.2659
+      },
+      "clean_media_without_overlay_ratio": 1,
+      "hero_families": 16,
+      "rendered_components": 9,
+      "dominant_rendered_component_share": 0.2222,
+      "max_consecutive_rendered_component": 1,
+      "transition_modes": 5,
+      "clean_cut_ratio": 0.3353,
+      "max_consecutive_transition": 1,
+      "presenter_section_coverage": 1
+    }
+  }
+}
