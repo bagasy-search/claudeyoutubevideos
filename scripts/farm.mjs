@@ -255,6 +255,40 @@ try {
 execFileSync("tar", tarArgs, { stdio: "inherit" });
 fs.rmSync(listFile);
 
+// GitHub limita cada asset individual de un release a 2 GiB. Los videos con mucho stock superan
+// ese límite aunque el contenido total del release sea válido. Dividimos sólo el transporte; el
+// workflow recompone el mismo tar byte a byte antes de extraerlo.
+const releaseAssetLimit = 1_900_000_000;
+const uploadFiles = [];
+if (fs.statSync(tar).size <= releaseAssetLimit) {
+  uploadFiles.push(tar);
+} else {
+  const sourceFd = fs.openSync(tar, "r");
+  const buffer = Buffer.allocUnsafe(8 * 1024 * 1024);
+  let part = 0;
+  let offset = 0;
+  try {
+    while (offset < fs.statSync(tar).size) {
+      part += 1;
+      const partPath = `${tar}.part${String(part).padStart(3, "0")}`;
+      const targetFd = fs.openSync(partPath, "w");
+      let written = 0;
+      try {
+        while (written < releaseAssetLimit && offset < fs.statSync(tar).size) {
+          const wanted = Math.min(buffer.length, releaseAssetLimit - written, fs.statSync(tar).size - offset);
+          const read = fs.readSync(sourceFd, buffer, 0, wanted, offset);
+          if (!read) break;
+          fs.writeSync(targetFd, buffer, 0, read);
+          written += read;
+          offset += read;
+        }
+      } finally { fs.closeSync(targetFd); }
+      uploadFiles.push(partPath);
+    }
+  } finally { fs.closeSync(sourceFd); }
+  console.log(`tar de ${(fs.statSync(tar).size / 1024 / 1024 / 1024).toFixed(2)} GiB dividido en ${uploadFiles.length} partes aptas para GitHub`);
+}
+
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
 try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --cleanup-tag`); } catch { /* no existe */ }
@@ -269,8 +303,8 @@ try {
   }
 } catch { /* sin draft huérfano o fallo transitorio: create devolverá el diagnóstico real */ }
 try { sh(`gh api -X DELETE repos/{owner}/{repo}/git/refs/tags/${encodeURIComponent(relTag)}`); } catch { /* tag ausente */ }
-sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del render"`);
-fs.rmSync(tar);
+sh(`gh release create ${relTag} ${uploadFiles.map((file) => `"${file}"`).join(" ")} --title ${relTag} --notes "assets del render"`);
+for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, {force:true});
 }
 
 // ── EL MISMO CHEQUEO DE ASSETS, PERO PARA RE-RENDER PARCIAL ───────────────────────────────────
@@ -384,10 +418,11 @@ const entry = process.env.ENTRY || "";
   let ok = false, motivo = "";
   try {
     const j = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
-    const tarAsset = (j.assets || []).find((a) => /\.tar$/i.test(a.name));
+    const tarAssets = (j.assets || []).filter((a) => /\.tar(?:\.part\d+)?$/i.test(a.name));
+    const tarBytes = tarAssets.reduce((sum, asset) => sum + Number(asset.size || 0), 0);
     if (j.isDraft) motivo = "el release quedó en DRAFT (la subida no terminó) — los runners no pueden bajarlo";
-    else if (!tarAsset) motivo = `el release existe pero NO tiene el .tar adentro (${(j.assets || []).length} assets)`;
-    else if (!tarAsset.size) motivo = "el .tar está en el release pero pesa 0";
+    else if (!tarAssets.length) motivo = `el release existe pero NO tiene el .tar ni sus partes (${(j.assets || []).length} assets)`;
+    else if (!tarBytes) motivo = "el paquete está en el release pero pesa 0";
     else ok = true;
   } catch { motivo = "no existe el release de assets"; }
   if (!ok) {
