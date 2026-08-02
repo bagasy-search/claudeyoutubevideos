@@ -1,0 +1,4290 @@
+{
+  "version": 1,
+  "slug": "v4qsqjivet05",
+  "kit": "federer-fluid",
+  "premium_director_enabled": true,
+  "composition_id": "Bagasy-v4qsqjivet05",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 41810,
+  "audio_src": "avatar_v4qsqjivet05.mp4",
+  "captions_src": "captions_v4qsqjivet05.json",
+  "scenes": [
+    {
+      "id": "m001",
+      "section_id": "hook",
+      "from": 0,
+      "duration": 194,
+      "narration": "Seis ejercicios bien elegidos pueden construir prácticamente todo el músculo que un hombre de más de cuarenta",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m002",
+      "section_id": "hook",
+      "from": 194,
+      "duration": 177,
+      "narration": "necesita, sin vivir en el gimnasio, sin saltar como si tuviera veinte y sin pagar por veinte",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_001.png",
+          "asset_id": "v4qsqjivet05:m002:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m003",
+      "section_id": "hook",
+      "from": 371,
+      "duration": 272,
+      "narration": "máquinas que repiten la misma función.\n\nEl cuerpo no cuenta ejercicios. Cuenta tensión. Cuenta esfuerzo. Cuenta recuperación.",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "máquinas + repiten",
+          "sub": "",
+          "detail": "Seis siluetas funcionales orbitan un cuerpo 3D y convergen en una libreta de progreso.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "constelacion_corporal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m004",
+      "section_id": "hook",
+      "from": 643,
+      "duration": 169,
+      "narration": "Y cuenta si esta semana usted pudo hacer un poco más que la anterior. Con seis movimientos,",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "cuenta: semana",
+          "sub": "",
+          "detail": "Seis siluetas funcionales orbitan un cuerpo 3D y convergen en una libreta de progreso.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "medidor_radial",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m005",
+      "section_id": "hook",
+      "from": 812,
+      "duration": 234,
+      "narration": "dos sesiones semanales y unos cuarenta y cinco minutos por sesión, puede entrenar piernas, glúteos, espalda, pecho,",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_001.mp4",
+          "asset_id": "v4qsqjivet05:m005:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m006",
+      "section_id": "contraste",
+      "from": 1046,
+      "duration": 241,
+      "narration": "brazos, hombros, abdomen y hasta la fuerza de las manos.\n\nLas recomendaciones generales indican fortalecer los grandes",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m007",
+      "section_id": "contraste",
+      "from": 1287,
+      "duration": 196,
+      "narration": "grupos musculares al menos dos días por semana. No exigen una rutina diferente cada día. Tampoco una",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_002.png",
+          "asset_id": "v4qsqjivet05:m007:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m008",
+      "section_id": "contraste",
+      "from": 1483,
+      "duration": 202,
+      "narration": "máquina cromada para cada músculo. Ese es el primer contraste incómodo: la industria vende variedad porque puede",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "máquina → cromada",
+          "sub": "",
+          "detail": "Una cinta de máquinas se multiplica mientras dos marcas de calendario permanecen estables y medibles.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "red_causal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m009",
+      "section_id": "contraste",
+      "from": 1685,
+      "duration": 269,
+      "narration": "cobrarla una y otra vez. Una sentadilla bien progresada no necesita una suscripción nueva cada tres meses.",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_003.png",
+          "asset_id": "v4qsqjivet05:m009:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m010",
+      "section_id": "contraste",
+      "from": 1954,
+      "duration": 270,
+      "narration": "Ahora... existe una trampa. Elegir los seis ejercicios correctos no sirve si comete el error que mantiene",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ahora / existe",
+          "sub": "",
+          "detail": "Una cinta de máquinas se multiplica mientras dos marcas de calendario permanecen estables y medibles.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "portal_tipografico",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m011",
+      "section_id": "contraste",
+      "from": 2224,
+      "duration": 322,
+      "narration": "estancados a muchísimos hombres adultos. No es usar poco peso. Parece prudencia. Hasta parece disciplina. Pero puede",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m012",
+      "section_id": "contraste",
+      "from": 2546,
+      "duration": 206,
+      "narration": "dejarlo entrenando durante un año sin mejorar realmente. Al final le mostraré ese error y una regla",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_002.mp4",
+          "asset_id": "v4qsqjivet05:m012:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m013",
+      "section_id": "base",
+      "from": 2752,
+      "duration": 259,
+      "narration": "muy simple para saber cuándo aumentar la carga.\n\nEl método completo necesita seis patrones. Uno para agacharse.",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m014",
+      "section_id": "base",
+      "from": 3011,
+      "duration": 179,
+      "narration": "Uno para mover la cadera. Uno para empujar. Uno para tirar. Uno para subir con una pierna.",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_004.png",
+          "asset_id": "v4qsqjivet05:m014:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m015",
+      "section_id": "base",
+      "from": 3190,
+      "duration": 218,
+      "narration": "Y uno para caminar cargando peso mientras el tronco se resiste a inclinarse. Ninguno es mágico por",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "caminar · cargando",
+          "sub": "",
+          "detail": "Un mapa corporal conecta los seis patrones con piernas, cadera, empuje, tracción, equilibrio y agarre.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "camino_escalonado",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m016",
+      "section_id": "base",
+      "from": 3408,
+      "duration": 247,
+      "narration": "separado. Juntos forman una base extraordinariamente completa.\n\nEsto importa después de los cuarenta, y todavía más después",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "separado vs. Juntos",
+          "sub": "",
+          "detail": "Un mapa corporal conecta los seis patrones con piernas, cadera, empuje, tracción, equilibrio y agarre.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "split_diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m017",
+      "section_id": "base",
+      "from": 3655,
+      "duration": 196,
+      "narration": "de los sesenta. No porque el cuerpo quede roto al cumplir años. Eso es falso. Importa porque",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_003.mp4",
+          "asset_id": "v4qsqjivet05:m017:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m018",
+      "section_id": "base",
+      "from": 3851,
+      "duration": 186,
+      "narration": "el margen para entrenar sin pensar se reduce. Si una sesión lo deja destruido durante cuatro días,",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_005.png",
+          "asset_id": "v4qsqjivet05:m018:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m019",
+      "section_id": "base",
+      "from": 4037,
+      "duration": 207,
+      "narration": "no ganó cuatro días de progreso. Perdió oportunidades de volver a estimular el músculo.\n\nPiense en cada",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "ganó: cuatro",
+          "sub": "",
+          "detail": "Un mapa corporal conecta los seis patrones con piernas, cadera, empuje, tracción, equilibrio y agarre.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "semáforo_vertical",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m020",
+      "section_id": "base",
+      "from": 4244,
+      "duration": 240,
+      "narration": "serie exigente como un depósito pequeño. El sueño, la comida y el descanso permiten consolidarlo. Pero una",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_004.mp4",
+          "asset_id": "v4qsqjivet05:m020:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m021",
+      "section_id": "base",
+      "from": 4484,
+      "duration": 282,
+      "narration": "sesión absurda, con dolor articular y agotamiento innecesario, puede cobrarle intereses. Recuerde esta frase: estimule, recupere y",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m022",
+      "section_id": "base",
+      "from": 4766,
+      "duration": 233,
+      "narration": "progrese. No castigue, desaparezca y vuelva a empezar.\n\nEl primer ejercicio es la sentadilla con una mancuerna",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_006.png",
+          "asset_id": "v4qsqjivet05:m022:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m023",
+      "section_id": "sentadilla",
+      "from": 4999,
+      "duration": 199,
+      "narration": "frente al pecho, bajando hacia un banco o una silla firme. Si recién comienza, hágala solo con",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m024",
+      "section_id": "sentadilla",
+      "from": 5198,
+      "duration": 311,
+      "narration": "el peso corporal. Trabaja cuádriceps, glúteos y tronco mientras practica algo indispensable: sentarse y volver a levantarse",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_007.png",
+          "asset_id": "v4qsqjivet05:m024:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m025",
+      "section_id": "sentadilla",
+      "from": 5509,
+      "duration": 226,
+      "narration": "con control.\n\nColóquese delante del banco. Los pies, aproximadamente al ancho de los hombros. Las puntas pueden",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "control · Colóquese",
+          "sub": "",
+          "detail": "Perfil biomecánico: pie estable, rodilla siguiendo el pie, cadera hacia silla y tensión que no colapsa.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "cinta_profundidad",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m026",
+      "section_id": "sentadilla",
+      "from": 5735,
+      "duration": 219,
+      "narration": "mirar un poco hacia afuera. Lleve la cadera atrás y abajo. Permita que las rodillas avancen siguiendo",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_005.mp4",
+          "asset_id": "v4qsqjivet05:m026:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m027",
+      "section_id": "sentadilla",
+      "from": 5954,
+      "duration": 202,
+      "narration": "la dirección de los pies. Toque el asiento suavemente y vuelva a levantarse empujando el suelo.\n\nMire",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_006.mp4",
+          "asset_id": "v4qsqjivet05:m027:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m028",
+      "section_id": "sentadilla",
+      "from": 6156,
+      "duration": 230,
+      "narration": "este detalle porque cambia el ejercicio: la silla debe recibirlo, no atraparlo. Si se desploma, perdió tensión.",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m029",
+      "section_id": "sentadilla",
+      "from": 6386,
+      "duration": 227,
+      "narration": "Si apenas la toca y sube, los músculos siguen trabajando. Grábese de costado durante tres repeticiones. Debería",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_008.png",
+          "asset_id": "v4qsqjivet05:m029:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m030",
+      "section_id": "sentadilla",
+      "from": 6613,
+      "duration": 197,
+      "narration": "ver los pies apoyados, las rodillas estables y el tronco moviéndose como una unidad.\n\n¿Hasta dónde debe",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_007.mp4",
+          "asset_id": "v4qsqjivet05:m030:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m031",
+      "section_id": "sentadilla",
+      "from": 6810,
+      "duration": 188,
+      "narration": "bajar? Hasta donde pueda controlar sin dolor y sin perder la postura. No hay una medalla por",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "bajar → pueda",
+          "sub": "",
+          "detail": "Perfil biomecánico: pie estable, rodilla siguiendo el pie, cadera hacia silla y tensión que no colapsa.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "pizarra_vox",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m032",
+      "section_id": "sentadilla",
+      "from": 6998,
+      "duration": 196,
+      "narration": "bajar más de lo que su movilidad permite hoy. Comience con un asiento alto. Cuando logre entre",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_008.mp4",
+          "asset_id": "v4qsqjivet05:m032:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m033",
+      "section_id": "sentadilla",
+      "from": 7194,
+      "duration": 212,
+      "narration": "diez y quince repeticiones limpias, reduzca un poco la altura o sostenga una mancuerna ligera.\n\nHaga dos",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_009.png",
+          "asset_id": "v4qsqjivet05:m033:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m034",
+      "section_id": "sentadilla",
+      "from": 7406,
+      "duration": 244,
+      "narration": "series de ocho a quince repeticiones. Termine sintiendo que aún podría completar dos o tres repeticiones buenas.",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m035",
+      "section_id": "sentadilla",
+      "from": 7650,
+      "duration": 239,
+      "narration": "No diez. Tampoco cero. Dos o tres. Esa reserva genera un estímulo serio sin convertir cada sesión",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_009.mp4",
+          "asset_id": "v4qsqjivet05:m035:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m036",
+      "section_id": "sentadilla",
+      "from": 7889,
+      "duration": 195,
+      "narration": "en una prueba de supervivencia.\n\n“Pero a mí me molestan las rodillas”. Bien... esa molestia puede tener",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "prueba + supervivencia",
+          "sub": "",
+          "detail": "Perfil biomecánico: pie estable, rodilla siguiendo el pie, cadera hacia silla y tensión que no colapsa.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "constelacion_corporal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m037",
+      "section_id": "sentadilla",
+      "from": 8084,
+      "duration": 247,
+      "narration": "muchas causas y nadie puede diagnosticarla mediante un video. La sentadilla no debería provocar dolor agudo, bloqueo",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_010.png",
+          "asset_id": "v4qsqjivet05:m037:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m038",
+      "section_id": "sentadilla",
+      "from": 8331,
+      "duration": 262,
+      "narration": "ni inestabilidad repentina. Si aparece alguno de esos signos, deténgase y consulte. Si solo necesita facilitar el",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_010.mp4",
+          "asset_id": "v4qsqjivet05:m038:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m039",
+      "section_id": "sentadilla",
+      "from": 8593,
+      "duration": 216,
+      "narration": "movimiento, use un asiento más alto, menos carga y un descenso lento.\n\nNo acepte la idea de",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m040",
+      "section_id": "sentadilla",
+      "from": 8809,
+      "duration": 232,
+      "narration": "que toda rodilla adulta debe evitar doblarse. La rodilla se dobla para subir escalones, entrar en un",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_011.mp4",
+          "asset_id": "v4qsqjivet05:m040:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m041",
+      "section_id": "sentadilla",
+      "from": 9041,
+      "duration": 314,
+      "narration": "automóvil y levantarse del inodoro. Lo sensato es encontrar una dosis tolerable y desarrollarla gradualmente. Evitar para",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_011.png",
+          "asset_id": "v4qsqjivet05:m041:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m042",
+      "section_id": "sentadilla",
+      "from": 9355,
+      "duration": 264,
+      "narration": "siempre cualquier esfuerzo no fortalece el movimiento que teme.\n\nEl segundo ejercicio parece una simple inclinación, pero",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_012.mp4",
+          "asset_id": "v4qsqjivet05:m042:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m043",
+      "section_id": "bisagra",
+      "from": 9619,
+      "duration": 291,
+      "narration": "construye la parte posterior del cuerpo: el peso muerto rumano con mancuernas. Trabaja glúteos, músculos posteriores del",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m044",
+      "section_id": "bisagra",
+      "from": 9910,
+      "duration": 301,
+      "narration": "muslo, espalda y agarre. Además, enseña a inclinarse desde la cadera sin convertir cada levantamiento en una",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_012.png",
+          "asset_id": "v4qsqjivet05:m044:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m045",
+      "section_id": "bisagra",
+      "from": 10211,
+      "duration": 248,
+      "narration": "flexión desordenada de la espalda.\n\nTome dos mancuernas y manténgalas cerca de los muslos. Flexione apenas las",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "flexión: desordenada",
+          "sub": "",
+          "detail": "Pizarra de bisagra: pelvis y tronco rotan juntos; las mancuernas siguen una guía pegada a las piernas.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "medidor_radial",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m046",
+      "section_id": "bisagra",
+      "from": 10459,
+      "duration": 190,
+      "narration": "rodillas. No se siente hacia abajo. Lleve la cadera hacia atrás, como si quisiera cerrar una puerta",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "rodillas → siente",
+          "sub": "",
+          "detail": "Pizarra de bisagra: pelvis y tronco rotan juntos; las mancuernas siguen una guía pegada a las piernas.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "red_causal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m047",
+      "section_id": "bisagra",
+      "from": 10649,
+      "duration": 222,
+      "narration": "con los glúteos. Las pesas bajan pegadas a las piernas. Deténgase al sentir un estiramiento claro detrás",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_013.mp4",
+          "asset_id": "v4qsqjivet05:m047:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m048",
+      "section_id": "bisagra",
+      "from": 10871,
+      "duration": 183,
+      "narration": "de los muslos y antes de perder una postura cómoda. Apriete los glúteos y vuelva a quedar",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_013.png",
+          "asset_id": "v4qsqjivet05:m048:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m049",
+      "section_id": "bisagra",
+      "from": 11054,
+      "duration": 233,
+      "narration": "erguido.\n\nEl error más común es perseguir el suelo. Las mancuernas no tienen que tocarlo. Sus proporciones",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m050",
+      "section_id": "bisagra",
+      "from": 11287,
+      "duration": 217,
+      "narration": "y su movilidad son personales. La meta es cargar la cadera, no ganar un concurso de profundidad.",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_014.mp4",
+          "asset_id": "v4qsqjivet05:m050:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m051",
+      "section_id": "bisagra",
+      "from": 11504,
+      "duration": 216,
+      "narration": "Si siente solamente la zona lumbar, reduzca el recorrido y practique sin peso.\n\nEhh... ¿cómo se llama",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_014.png",
+          "asset_id": "v4qsqjivet05:m051:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m052",
+      "section_id": "bisagra",
+      "from": 11720,
+      "duration": 223,
+      "narration": "ese gesto? Espera... bisagra de cadera. Suena técnico, pero la imagen es sencilla: el tronco y la",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_015.mp4",
+          "asset_id": "v4qsqjivet05:m052:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m053",
+      "section_id": "bisagra",
+      "from": 11943,
+      "duration": 220,
+      "narration": "pelvis se inclinan juntos alrededor de la cadera. No redondee deliberadamente la espalda. Tampoco la arquee con",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "pelvis / inclinan",
+          "sub": "",
+          "detail": "Pizarra de bisagra: pelvis y tronco rotan juntos; las mancuernas siguen una guía pegada a las piernas.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "portal_tipografico",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m054",
+      "section_id": "bisagra",
+      "from": 12163,
+      "duration": 228,
+      "narration": "violencia. Mantenga una posición fuerte y respirable.\n\nHaga dos series de ocho a doce. Baje durante dos",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m055",
+      "section_id": "bisagra",
+      "from": 12391,
+      "duration": 245,
+      "narration": "o tres segundos. Suba con intención, pero sin tirones. Cuando complete doce repeticiones limpias y todavía conserve",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_016.mp4",
+          "asset_id": "v4qsqjivet05:m055:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m056",
+      "section_id": "bisagra",
+      "from": 12636,
+      "duration": 208,
+      "narration": "tres posibles, podrá aumentar un poco el peso.\n\nNo sostenga la respiración durante demasiado tiempo si eso",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_015.png",
+          "asset_id": "v4qsqjivet05:m056:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m057",
+      "section_id": "bisagra",
+      "from": 12844,
+      "duration": 253,
+      "narration": "le causa mareo. Exhale al superar la parte difícil o respire de manera controlada entre repeticiones. Si",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_017.mp4",
+          "asset_id": "v4qsqjivet05:m057:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m058",
+      "section_id": "bisagra",
+      "from": 13097,
+      "duration": 305,
+      "narration": "tiene presión arterial no controlada, una afección cardiovascular, una hernia sintomática, cirugía reciente o restricciones médicas, consulte",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "tiene · presión",
+          "sub": "",
+          "detail": "Pizarra de bisagra: pelvis y tronco rotan juntos; las mancuernas siguen una guía pegada a las piernas.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "camino_escalonado",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m059",
+      "section_id": "flexion",
+      "from": 13402,
+      "duration": 260,
+      "narration": "antes de usar cargas intensas.\n\nYa entrenamos rodilla y cadera. El tercer ejercicio es la flexión inclinada.",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m060",
+      "section_id": "flexion",
+      "from": 13662,
+      "duration": 166,
+      "narration": "No la desprecie porque no se realiza en el suelo. Apoyar las manos en una pared, una",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_016.png",
+          "asset_id": "v4qsqjivet05:m060:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m061",
+      "section_id": "flexion",
+      "from": 13828,
+      "duration": 220,
+      "narration": "mesa robusta o una barra elevada permite ajustar la resistencia con enorme precisión. Cuanto más vertical",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "mesa vs. robusta",
+          "sub": "",
+          "detail": "Geometría comparativa de pared, mesa y apoyo bajo; el ángulo cambia la fracción de peso empujada.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "split_diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m062",
+      "section_id": "flexion",
+      "from": 14048,
+      "duration": 186,
+      "narration": "quede el cuerpo, más fácil será. Cuanto más bajo esté el apoyo, mayor será la dificultad.",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m063",
+      "section_id": "flexion",
+      "from": 14234,
+      "duration": 191,
+      "narration": "La flexión trabaja pecho, tríceps, hombros y abdomen. Coloque las manos algo más separadas que los",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_018.mp4",
+          "asset_id": "v4qsqjivet05:m063:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m064",
+      "section_id": "flexion",
+      "from": 14425,
+      "duration": 226,
+      "narration": "hombros. Camine hacia atrás hasta formar una línea firme desde la cabeza hasta los talones. Acerque",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_017.png",
+          "asset_id": "v4qsqjivet05:m064:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m065",
+      "section_id": "flexion",
+      "from": 14651,
+      "duration": 194,
+      "narration": "el pecho al apoyo con los codos en una dirección cómoda. Luego empuje.\n\nHaga una prueba",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_019.mp4",
+          "asset_id": "v4qsqjivet05:m065:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m066",
+      "section_id": "flexion",
+      "from": 14845,
+      "duration": 265,
+      "narration": "física. Antes de comenzar, empuje la mesa para confirmar que no puede deslizarse. Filme tres repeticiones.",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_018.png",
+          "asset_id": "v4qsqjivet05:m066:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m067",
+      "section_id": "flexion",
+      "from": 15110,
+      "duration": 150,
+      "narration": "Si la cadera llega antes que el pecho, el apoyo está demasiado bajo o el abdomen",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_020.mp4",
+          "asset_id": "v4qsqjivet05:m067:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m068",
+      "section_id": "flexion",
+      "from": 15260,
+      "duration": 197,
+      "narration": "dejó de participar. Elévelo. La repetición correcta es la que controla, no la que alimenta el",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m069",
+      "section_id": "flexion",
+      "from": 15457,
+      "duration": 197,
+      "narration": "orgullo.\n\nHaga dos series de seis a quince. Cuando alcance quince con margen, baje las manos",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_021.mp4",
+          "asset_id": "v4qsqjivet05:m069:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m070",
+      "section_id": "flexion",
+      "from": 15654,
+      "duration": 184,
+      "narration": "a una superficie un poco más baja. Cambiar el ángulo ya aumenta la parte de su",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_019.png",
+          "asset_id": "v4qsqjivet05:m070:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m071",
+      "section_id": "flexion",
+      "from": 15838,
+      "duration": 211,
+      "narration": "peso corporal que debe empujar.\n\nSi le molestan las muñecas, puede usar asas firmes o mancuernas",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "peso: corporal",
+          "sub": "",
+          "detail": "Geometría comparativa de pared, mesa y apoyo bajo; el ángulo cambia la fracción de peso empujada.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "semáforo_vertical",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m072",
+      "section_id": "flexion",
+      "from": 16049,
+      "duration": 204,
+      "narration": "hexagonales que no rueden. Si aparece dolor en la parte anterior del hombro, eleve el apoyo,",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_022.mp4",
+          "asset_id": "v4qsqjivet05:m072:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m073",
+      "section_id": "flexion",
+      "from": 16253,
+      "duration": 232,
+      "narration": "acorte el recorrido y revise la dirección del codo. Dolor punzante, deformidad o pérdida repentina de",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m074",
+      "section_id": "flexion",
+      "from": 16485,
+      "duration": 252,
+      "narration": "fuerza no significan que deba aguantar. Significan que debe detenerse y buscar evaluación.\n\nY ojo con",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "fuerza · significan",
+          "sub": "",
+          "detail": "Geometría comparativa de pared, mesa y apoyo bajo; el ángulo cambia la fracción de peso empujada.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "cinta_profundidad",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m075",
+      "section_id": "flexion",
+      "from": 16737,
+      "duration": 239,
+      "narration": "una confusión cara. Sentir el músculo trabajar no exige que la articulación duela. El músculo puede",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_023.mp4",
+          "asset_id": "v4qsqjivet05:m075:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m076",
+      "section_id": "flexion",
+      "from": 16976,
+      "duration": 203,
+      "narration": "arder al final de una serie. Puede quedar cansado. La articulación no debería enviar una punzada",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_020.png",
+          "asset_id": "v4qsqjivet05:m076:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m077",
+      "section_id": "flexion",
+      "from": 17179,
+      "duration": 184,
+      "narration": "en cada repetición. Esa cultura de “si duele, funciona” ha hecho abandonar a personas que solo",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_024.mp4",
+          "asset_id": "v4qsqjivet05:m077:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m078",
+      "section_id": "remo",
+      "from": 17363,
+      "duration": 209,
+      "narration": "necesitaban una variante mejor.\n\nEl cuarto ejercicio es el remo con una mano apoyada. Es el",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m079",
+      "section_id": "remo",
+      "from": 17572,
+      "duration": 264,
+      "narration": "contrapeso de tantas horas conduciendo, cocinando, escribiendo o mirando el teléfono. Trabaja espalda, parte posterior del",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_021.png",
+          "asset_id": "v4qsqjivet05:m079:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m080",
+      "section_id": "remo",
+      "from": 17836,
+      "duration": 184,
+      "narration": "hombro, bíceps y agarre. La mano de apoyo permite exigir a la espalda sin pedirle tanto",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "hombro → bíceps",
+          "sub": "",
+          "detail": "Recorrido del codo a las costillas y del omóplato alrededor de la caja torácica, sin lanzar el torso.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "pizarra_vox",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m081",
+      "section_id": "remo",
+      "from": 18020,
+      "duration": 183,
+      "narration": "equilibrio al tronco.\n\nApoye una mano en un banco o una mesa firme. Separe los pies",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_022.png",
+          "asset_id": "v4qsqjivet05:m081:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m082",
+      "section_id": "remo",
+      "from": 18203,
+      "duration": 194,
+      "narration": "e incline el torso desde la cadera. Deje colgar la mancuerna con la otra mano. Llévela",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m083",
+      "section_id": "remo",
+      "from": 18397,
+      "duration": 166,
+      "narration": "hacia las costillas y bájela hasta estirar el brazo con control. No gire todo el cuerpo",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_025.mp4",
+          "asset_id": "v4qsqjivet05:m083:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m084",
+      "section_id": "remo",
+      "from": 18563,
+      "duration": 170,
+      "narration": "para lanzar el peso. Imagine que mueve el codo hacia atrás.\n\nAl bajar, deje que el",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_026.mp4",
+          "asset_id": "v4qsqjivet05:m084:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m085",
+      "section_id": "remo",
+      "from": 18733,
+      "duration": 186,
+      "narration": "omóplato se aleje un poco de la columna. Al tirar, llévelo hacia atrás naturalmente. No lo",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_023.png",
+          "asset_id": "v4qsqjivet05:m085:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m086",
+      "section_id": "remo",
+      "from": 18919,
+      "duration": 172,
+      "narration": "apriete con desesperación ni mantenga el hombro encogido. Haga dos series de ocho a quince por",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m087",
+      "section_id": "remo",
+      "from": 19091,
+      "duration": 164,
+      "narration": "lado. Comience por el brazo débil y repita el mismo número con el fuerte.\n\nUna banda",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_027.mp4",
+          "asset_id": "v4qsqjivet05:m087:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m088",
+      "section_id": "remo",
+      "from": 19255,
+      "duration": 159,
+      "narration": "también puede servir si está anclada de manera segura. Y segura significa que el punto de",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "también + puede",
+          "sub": "",
+          "detail": "Recorrido del codo a las costillas y del omóplato alrededor de la caja torácica, sin lanzar el torso.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "constelacion_corporal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m089",
+      "section_id": "remo",
+      "from": 19414,
+      "duration": 240,
+      "narration": "fijación resiste. No enganche una banda deteriorada en una puerta dudosa y tire hacia su cara.",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "fijación: resiste",
+          "sub": "",
+          "detail": "Recorrido del codo a las costillas y del omóplato alrededor de la caja torácica, sin lanzar el torso.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "medidor_radial",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m090",
+      "section_id": "remo",
+      "from": 19654,
+      "duration": 237,
+      "narration": "Revise cortes y desgaste. Si falla bajo tensión, puede golpear los ojos o la piel.\n\n[sighs]",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_028.mp4",
+          "asset_id": "v4qsqjivet05:m090:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m091",
+      "section_id": "remo",
+      "from": 19891,
+      "duration": 142,
+      "narration": "Me da un poco de bronca que vendan el remo como una cura automática para la",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_024.png",
+          "asset_id": "v4qsqjivet05:m091:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m092",
+      "section_id": "remo",
+      "from": 20033,
+      "duration": 240,
+      "narration": "postura. No lo es. Ningún ejercicio obliga al cuerpo a permanecer derecho todo el día. Sí",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_029.mp4",
+          "asset_id": "v4qsqjivet05:m092:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m093",
+      "section_id": "remo",
+      "from": 20273,
+      "duration": 218,
+      "narration": "aumenta la capacidad de los músculos que tiran y sostienen. Después usted debe usar esa capacidad.",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m094",
+      "section_id": "escalon",
+      "from": 20491,
+      "duration": 184,
+      "narration": "Fuerza no es una pose. Es una reserva.\n\nHasta aquí entrenamos gran parte del cuerpo, pero",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m095",
+      "section_id": "escalon",
+      "from": 20675,
+      "duration": 187,
+      "narration": "falta algo que muchas máquinas esconden: cada pierna debe demostrar qué puede hacer sin que la",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_025.png",
+          "asset_id": "v4qsqjivet05:m095:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m096",
+      "section_id": "escalon",
+      "from": 20862,
+      "duration": 159,
+      "narration": "otra resuelva todo. Por eso el quinto ejercicio es la subida a un escalón bajo.\n\nUse",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "otra → resuelva",
+          "sub": "",
+          "detail": "Diagrama de fuerza unilateral y frenado excéntrico durante el descenso, con pasamanos como límite seguro.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "red_causal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m097",
+      "section_id": "escalon",
+      "from": 21021,
+      "duration": 176,
+      "narration": "el primer escalón de una escalera con pasamanos o una plataforma estable. Apoye el pie completo.",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_026.png",
+          "asset_id": "v4qsqjivet05:m097:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m098",
+      "section_id": "escalon",
+      "from": 21197,
+      "duration": 168,
+      "narration": "Incline apenas el torso. Empuje con la pierna de arriba y suba. La de abajo puede",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_030.mp4",
+          "asset_id": "v4qsqjivet05:m098:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m099",
+      "section_id": "escalon",
+      "from": 21365,
+      "duration": 199,
+      "narration": "ayudar al comienzo, pero no debería impulsarlo con un salto. Baje lentamente y cambie de lado.",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_031.mp4",
+          "asset_id": "v4qsqjivet05:m099:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m100",
+      "section_id": "escalon",
+      "from": 21564,
+      "duration": 235,
+      "narration": "Trabaja cuádriceps y glúteos. También desafía el equilibrio y practica acciones reales: subir escaleras, entrar en",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_027.png",
+          "asset_id": "v4qsqjivet05:m100:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m101",
+      "section_id": "escalon",
+      "from": 21799,
+      "duration": 233,
+      "narration": "un vehículo o caminar por una pendiente. No garantiza evitar caídas. Ningún ejercicio puede prometer eso.",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m102",
+      "section_id": "escalon",
+      "from": 22032,
+      "duration": 208,
+      "narration": "Sí permite entrenar fuerza de una pierna en un entorno controlado.\n\nEmpiece con un escalón bajo",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_032.mp4",
+          "asset_id": "v4qsqjivet05:m102:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m103",
+      "section_id": "escalon",
+      "from": 22240,
+      "duration": 213,
+      "narration": "y una mano cerca del pasamanos. Haga dos series de seis a diez repeticiones por pierna.",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "mano / cerca",
+          "sub": "",
+          "detail": "Diagrama de fuerza unilateral y frenado excéntrico durante el descenso, con pasamanos como límite seguro.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "portal_tipografico",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m104",
+      "section_id": "escalon",
+      "from": 22453,
+      "duration": 216,
+      "narration": "Si necesita sujetarse, hágalo. El objetivo es fortalecer la pierna, no aprobar un examen de circo.",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "necesita · sujetarse",
+          "sub": "",
+          "detail": "Diagrama de fuerza unilateral y frenado excéntrico durante el descenso, con pasamanos como límite seguro.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "camino_escalonado",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m105",
+      "section_id": "escalon",
+      "from": 22669,
+      "duration": 170,
+      "narration": "Con el tiempo podrá usar menos ayuda, un escalón ligeramente más alto o una mancuerna liviana.",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_033.mp4",
+          "asset_id": "v4qsqjivet05:m105:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m106",
+      "section_id": "escalon",
+      "from": 22839,
+      "duration": 210,
+      "narration": "Vigile especialmente el descenso. Mucha gente sube con control y después se deja caer. Sin embargo,",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_028.png",
+          "asset_id": "v4qsqjivet05:m106:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m107",
+      "section_id": "escalon",
+      "from": 23049,
+      "duration": 220,
+      "narration": "bajar escaleras exige precisamente la capacidad de frenar el cuerpo. Si tiene problemas importantes de equilibrio,",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_034.mp4",
+          "asset_id": "v4qsqjivet05:m107:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m108",
+      "section_id": "escalon",
+      "from": 23269,
+      "duration": 220,
+      "narration": "desmayos, vértigo, neuropatía avanzada o caídas recientes sin evaluar, no practique solo junto a un escalón",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m109",
+      "section_id": "escalon",
+      "from": 23489,
+      "duration": 237,
+      "narration": "abierto. Necesita un entorno protegido y orientación profesional.\n\nAhora falta el ejercicio que parece menos musculoso.",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_029.png",
+          "asset_id": "v4qsqjivet05:m109:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m110",
+      "section_id": "transporte",
+      "from": 23726,
+      "duration": 225,
+      "narration": "No tiene un nombre espectacular ni produce fotografías llamativas. Sin embargo, descubre una debilidad que numerosas",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m111",
+      "section_id": "transporte",
+      "from": 23951,
+      "duration": 212,
+      "narration": "rutinas ignoran. Es la caminata con una carga en una sola mano, también llamada transporte de",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_030.png",
+          "asset_id": "v4qsqjivet05:m111:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m112",
+      "section_id": "transporte",
+      "from": 24163,
+      "duration": 210,
+      "narration": "maleta.\n\nTome una mancuerna con una mano. Manténgase alto, sin ponerse rígido. Camine entre veinte y",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "maleta vs. Tome",
+          "sub": "",
+          "detail": "Vectores opuestos muestran la pesa inclinando y el tronco resistiendo sin elevar el hombro.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "split_diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m113",
+      "section_id": "transporte",
+      "from": 24373,
+      "duration": 199,
+      "narration": "cuarenta segundos sin inclinarse hacia el peso. Cambie de mano. Parece fácil hasta que la carga",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_035.mp4",
+          "asset_id": "v4qsqjivet05:m113:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m114",
+      "section_id": "transporte",
+      "from": 24572,
+      "duration": 218,
+      "narration": "intenta doblarlo y el abdomen, la espalda, la cadera, el hombro y la mano deben trabajar",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_036.mp4",
+          "asset_id": "v4qsqjivet05:m114:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m115",
+      "section_id": "transporte",
+      "from": 24790,
+      "duration": 182,
+      "narration": "juntos para impedirlo.\n\n¿Por qué una sola mano? Porque la carga desigual obliga al tronco a",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m116",
+      "section_id": "transporte",
+      "from": 24972,
+      "duration": 206,
+      "narration": "resistir la inclinación lateral. Es una función del abdomen que los encogimientos no entrenan de la",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_031.png",
+          "asset_id": "v4qsqjivet05:m116:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m117",
+      "section_id": "transporte",
+      "from": 25178,
+      "duration": 218,
+      "narration": "misma forma. Además, el agarre suele limitar tareas como cargar bolsas o mover una valija.\n\nHaga",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_037.mp4",
+          "asset_id": "v4qsqjivet05:m117:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m118",
+      "section_id": "transporte",
+      "from": 25396,
+      "duration": 234,
+      "narration": "dos recorridos por lado en una zona despejada. Nada de alfombras sueltas, mascotas cruzándose o giros",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "recorridos: lado",
+          "sub": "",
+          "detail": "Vectores opuestos muestran la pesa inclinando y el tronco resistiendo sin elevar el hombro.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "semáforo_vertical",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m119",
+      "section_id": "transporte",
+      "from": 25630,
+      "duration": 188,
+      "narration": "rápidos. Si no tiene espacio, marche suavemente en el lugar. La pesa no debe golpear la",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "rápidos · tiene",
+          "sub": "",
+          "detail": "Vectores opuestos muestran la pesa inclinando y el tronco resistiendo sin elevar el hombro.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "cinta_profundidad",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m120",
+      "section_id": "transporte",
+      "from": 25818,
+      "duration": 187,
+      "narration": "pierna. El hombro no debe subir hacia la oreja. La respiración debe continuar.\n\nSi la mano",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_038.mp4",
+          "asset_id": "v4qsqjivet05:m120:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m121",
+      "section_id": "transporte",
+      "from": 26005,
+      "duration": 204,
+      "narration": "se abre primero, no oculte esa debilidad usando correas desde el día uno. El agarre también",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_032.png",
+          "asset_id": "v4qsqjivet05:m121:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m122",
+      "section_id": "transporte",
+      "from": 26209,
+      "duration": 238,
+      "narration": "necesita entrenamiento. Pero si tiene artritis dolorosa, una lesión de muñeca o una restricción profesional, adapte",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m123",
+      "section_id": "transporte",
+      "from": 26447,
+      "duration": 171,
+      "narration": "el asa y la carga. El ejercicio sirve a la persona. La persona no sirve al",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_039.mp4",
+          "asset_id": "v4qsqjivet05:m123:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m124",
+      "section_id": "programa",
+      "from": 26618,
+      "duration": 291,
+      "narration": "ejercicio.\n\nYa tiene los seis movimientos: sentadilla al banco, peso muerto rumano, flexión inclinada, remo apoyado,",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m125",
+      "section_id": "programa",
+      "from": 26909,
+      "duration": 253,
+      "narration": "subida al escalón y transporte de maleta. Pero una lista no construye músculo. La organización sí.",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_033.png",
+          "asset_id": "v4qsqjivet05:m125:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m126",
+      "section_id": "programa",
+      "from": 27162,
+      "duration": 265,
+      "narration": "Ahí una rutina sencilla vence a una colección de ocurrencias.\n\nDurante las primeras dos semanas, haga",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "rutina → sencilla",
+          "sub": "",
+          "detail": "Calendario de dos días despliega seis ejercicios, dos series y doce series totales con descansos.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "pizarra_vox",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m127",
+      "section_id": "programa",
+      "from": 27427,
+      "duration": 204,
+      "narration": "los seis ejercicios dos días por semana. Deje al menos un día sin entrenamiento de fuerza",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_034.png",
+          "asset_id": "v4qsqjivet05:m127:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m128",
+      "section_id": "programa",
+      "from": 27631,
+      "duration": 247,
+      "narration": "entre sesiones. Realice una serie liviana de práctica y luego dos series de trabajo por ejercicio.",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_040.mp4",
+          "asset_id": "v4qsqjivet05:m128:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m129",
+      "section_id": "programa",
+      "from": 27878,
+      "duration": 238,
+      "narration": "Son doce series de trabajo en total. Para muchos principiantes, eso cabe en cuarenta o cincuenta",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m130",
+      "section_id": "programa",
+      "from": 28116,
+      "duration": 225,
+      "narration": "minutos sin correr.\n\nDescanse entre uno y dos minutos después de las series moderadas. Si las",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_041.mp4",
+          "asset_id": "v4qsqjivet05:m130:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m131",
+      "section_id": "programa",
+      "from": 28341,
+      "duration": 255,
+      "narration": "sentadillas o el peso muerto aceleran mucho su respiración, espere hasta poder hablar con normalidad y",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_035.png",
+          "asset_id": "v4qsqjivet05:m131:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m132",
+      "section_id": "programa",
+      "from": 28596,
+      "duration": 280,
+      "narration": "repetir con control. El reloj orienta. Su recuperación decide. Acortar demasiado el descanso transforma una sesión",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_042.mp4",
+          "asset_id": "v4qsqjivet05:m132:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m133",
+      "section_id": "programa",
+      "from": 28876,
+      "duration": 171,
+      "narration": "muscular en una prueba de resistencia.\n\nDespués de dos o tres semanas, si se recupera bien,",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "muscular + prueba",
+          "sub": "",
+          "detail": "Calendario de dos días despliega seis ejercicios, dos series y doce series totales con descansos.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "constelacion_corporal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m134",
+      "section_id": "programa",
+      "from": 29047,
+      "duration": 225,
+      "narration": "puede sumar un tercer día. No es obligatorio. Dos sesiones constantes superan a tres que termina",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "puede: sumar",
+          "sub": "",
+          "detail": "Calendario de dos días despliega seis ejercicios, dos series y doce series totales con descansos.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "medidor_radial",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m135",
+      "section_id": "programa",
+      "from": 29272,
+      "duration": 205,
+      "narration": "abandonando. También puede mantener dos días y añadir una tercera serie solo a dos ejercicios prioritarios.",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_043.mp4",
+          "asset_id": "v4qsqjivet05:m135:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m136",
+      "section_id": "programa",
+      "from": 29477,
+      "duration": 238,
+      "narration": "No persiga dolor muscular. Ese dolor no mide crecimiento. Puede aparecer al estrenar un movimiento y",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_036.png",
+          "asset_id": "v4qsqjivet05:m136:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m137",
+      "section_id": "programa",
+      "from": 29715,
+      "duration": 308,
+      "narration": "desaparecer aunque el programa siga funcionando. Observe indicadores mejores: repeticiones, carga, control, recorrido tolerable y recuperación.",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m138",
+      "section_id": "recuperacion",
+      "from": 30023,
+      "duration": 240,
+      "narration": "La comida importa. Para construir tejido necesita suficiente energía y proteína. Pero una cifra general no",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m139",
+      "section_id": "recuperacion",
+      "from": 30263,
+      "duration": 214,
+      "narration": "es una receta médica personal. Las necesidades cambian con el tamaño corporal, la actividad y la",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_037.png",
+          "asset_id": "v4qsqjivet05:m139:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m140",
+      "section_id": "recuperacion",
+      "from": 30477,
+      "duration": 245,
+      "narration": "salud. Si tiene enfermedad renal o hepática, restricciones digestivas o pérdida involuntaria de peso, no aumente",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "salud → tiene",
+          "sub": "",
+          "detail": "Tres depósitos conectan estímulo, proteína distribuida y sueño; el volumen baja cuando la recuperación falla.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "red_causal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m141",
+      "section_id": "recuperacion",
+      "from": 30722,
+      "duration": 207,
+      "narration": "suplementos por su cuenta. Consulte a su médico o nutricionista.\n\nDistribuir alimentos con proteína durante el",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_044.mp4",
+          "asset_id": "v4qsqjivet05:m141:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m142",
+      "section_id": "recuperacion",
+      "from": 30929,
+      "duration": 246,
+      "narration": "día suele ser más práctico que intentar recuperarlo todo en una cena enorme. Huevos, lácteos, pescado,",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_038.png",
+          "asset_id": "v4qsqjivet05:m142:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m143",
+      "section_id": "recuperacion",
+      "from": 31175,
+      "duration": 253,
+      "narration": "carnes, legumbres y soja pueden contribuir según sus preferencias. El polvo de proteína ofrece comodidad. No",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_045.mp4",
+          "asset_id": "v4qsqjivet05:m143:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m144",
+      "section_id": "recuperacion",
+      "from": 31428,
+      "duration": 226,
+      "narration": "magia. Si su alimentación cubre lo necesario, el envase caro no activa ningún mecanismo secreto.\n\nDormir",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "magia / alimentación",
+          "sub": "",
+          "detail": "Tres depósitos conectan estímulo, proteína distribuida y sueño; el volumen baja cuando la recuperación falla.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "portal_tipografico",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m145",
+      "section_id": "recuperacion",
+      "from": 31654,
+      "duration": 229,
+      "narration": "también cuenta. Una noche mala no destruye el progreso. Pero entrenar con dureza mientras acumula semanas",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m146",
+      "section_id": "recuperacion",
+      "from": 31883,
+      "duration": 226,
+      "narration": "de descanso insuficiente reduce el rendimiento y las ganas de continuar. En esos días use menos",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_046.mp4",
+          "asset_id": "v4qsqjivet05:m146:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m147",
+      "section_id": "recuperacion",
+      "from": 32109,
+      "duration": 211,
+      "narration": "series o menos carga. La constancia flexible vence a tres jornadas perfectas seguidas por un mes",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_039.png",
+          "asset_id": "v4qsqjivet05:m147:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m148",
+      "section_id": "progresion",
+      "from": 32320,
+      "duration": 224,
+      "narration": "de abandono.\n\nY ahora sí... el error prometido. Muchísimos hombres cambian la rutina antes de darle",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m149",
+      "section_id": "progresion",
+      "from": 32544,
+      "duration": 228,
+      "narration": "una oportunidad medible de funcionar. Hacen sentadillas una semana. Prensa la siguiente. Luego copian una variante",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_040.png",
+          "asset_id": "v4qsqjivet05:m149:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m150",
+      "section_id": "progresion",
+      "from": 32772,
+      "duration": 212,
+      "narration": "de internet. Como siempre están aprendiendo una prueba nueva, jamás descubren si ganaron fuerza. Confunden novedad",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "internet · Como",
+          "sub": "",
+          "detail": "Escalera 10→11→12→15; sólo después sube la carga y las repeticiones regresan al rango bajo.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "camino_escalonado",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m151",
+      "section_id": "progresion",
+      "from": 32984,
+      "duration": 249,
+      "narration": "con progreso.\n\nEl músculo no necesita quedar sorprendido. Necesita una tensión que aumente gradualmente. Para eso",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_047.mp4",
+          "asset_id": "v4qsqjivet05:m151:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m152",
+      "section_id": "progresion",
+      "from": 33233,
+      "duration": 252,
+      "narration": "sirve la doble progresión. El nombre parece complicado. El método no. Mantenga el mismo peso mientras",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "sirve vs. doble",
+          "sub": "",
+          "detail": "Escalera 10→11→12→15; sólo después sube la carga y las repeticiones regresan al rango bajo.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "split_diagonal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m153",
+      "section_id": "progresion",
+      "from": 33485,
+      "duration": 224,
+      "narration": "aumenta las repeticiones dentro de un rango. Cuando alcance el límite superior con técnica limpia y",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m154",
+      "section_id": "progresion",
+      "from": 33709,
+      "duration": 225,
+      "narration": "conserve unas dos repeticiones posibles, suba un poco la carga y vuelva a la parte baja",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_048.mp4",
+          "asset_id": "v4qsqjivet05:m154:stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m155",
+      "section_id": "progresion",
+      "from": 33934,
+      "duration": 227,
+      "narration": "del rango.\n\nImagine que hace diez sentadillas con una mancuerna. En la próxima sesión logra once.",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_041.png",
+          "asset_id": "v4qsqjivet05:m155:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m156",
+      "section_id": "progresion",
+      "from": 34161,
+      "duration": 181,
+      "narration": "Después, doce. Con el tiempo llega a quince en las dos series sin perder control. Entonces",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_049.mp4",
+          "asset_id": "v4qsqjivet05:m156:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m157",
+      "section_id": "progresion",
+      "from": 34342,
+      "duration": 218,
+      "narration": "aumenta el peso. Quizá vuelva a nueve o diez repeticiones. Perfecto. No retrocedió. Comenzó otra subida.",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_042.png",
+          "asset_id": "v4qsqjivet05:m157:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m158",
+      "section_id": "progresion",
+      "from": 34560,
+      "duration": 212,
+      "narration": "Anótelo. Ejercicio, peso y repeticiones. Nada más. Si no registra, la memoria dirá que hizo “más",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Anótelo: Ejercicio",
+          "sub": "",
+          "detail": "Escalera 10→11→12→15; sólo después sube la carga y las repeticiones regresan al rango bajo.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "semáforo_vertical",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m159",
+      "section_id": "progresion",
+      "from": 34772,
+      "duration": 151,
+      "narration": "o menos” lo mismo. Y ese más o menos puede durar meses. Una libreta barata suele",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_050.mp4",
+          "asset_id": "v4qsqjivet05:m159:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m160",
+      "section_id": "progresion",
+      "from": 34923,
+      "duration": 206,
+      "narration": "aportar más que otro suplemento porque transforma una sensación en evidencia.\n\nTampoco aumente el peso solo",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m161",
+      "section_id": "progresion",
+      "from": 35129,
+      "duration": 282,
+      "narration": "porque empezó otra semana. Primero gane el derecho a subirlo. Técnica estable. Recorrido controlado. Ausencia de",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_051.mp4",
+          "asset_id": "v4qsqjivet05:m161:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m162",
+      "section_id": "progresion",
+      "from": 35411,
+      "duration": 254,
+      "narration": "dolor articular. Buena recuperación. Progresar también puede ser bajar más despacio, ampliar un poco el recorrido",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_043.png",
+          "asset_id": "v4qsqjivet05:m162:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m163",
+      "section_id": "limites",
+      "from": 35665,
+      "duration": 261,
+      "narration": "o necesitar menos ayuda del pasamanos.\n\nSeis ejercicios forman una base excelente, pero tienen límites. No",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m164",
+      "section_id": "limites",
+      "from": 35926,
+      "duration": 214,
+      "narration": "preparan para todos los deportes ni rehabilitan por sí solos una lesión. Un culturista avanzado necesitará",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_044.png",
+          "asset_id": "v4qsqjivet05:m164:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m165",
+      "section_id": "limites",
+      "from": 36140,
+      "duration": 272,
+      "narration": "más volumen y trabajo específico. Quien busque potencia, rehabilitación o rendimiento competitivo necesitará otro diseño. Y",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "volumen · trabajo",
+          "sub": "",
+          "detail": "Árbol de decisión separa molestia tolerable, adaptación, consulta y señales de alarma para detenerse.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "cinta_profundidad",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m166",
+      "section_id": "limites",
+      "from": 36412,
+      "duration": 291,
+      "narration": "esta rutina no sustituye caminar, entrenar la capacidad cardiovascular, practicar equilibrio ni conservar movilidad.\n\nNo existe",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_052.mp4",
+          "asset_id": "v4qsqjivet05:m166:stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m167",
+      "section_id": "limites",
+      "from": 36703,
+      "duration": 246,
+      "narration": "una edad exacta que prohíba un movimiento. Algunas personas de setenta toleran cargas considerables. Otras de",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m168",
+      "section_id": "limites",
+      "from": 36949,
+      "duration": 237,
+      "narration": "cuarenta necesitan empezar contra una pared. Importan más el historial, los síntomas, la experiencia y la",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "cuarenta → necesitan",
+          "sub": "",
+          "detail": "Árbol de decisión separa molestia tolerable, adaptación, consulta y señales de alarma para detenerse.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "pizarra_vox",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m169",
+      "section_id": "limites",
+      "from": 37186,
+      "duration": 167,
+      "narration": "recuperación. Compárese con usted mismo. No con el hombre de la mancuerna enorme que aparece en",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "recuperación + Compárese",
+          "sub": "",
+          "detail": "Árbol de decisión separa molestia tolerable, adaptación, consulta y señales de alarma para detenerse.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "constelacion_corporal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m170",
+      "section_id": "limites",
+      "from": 37353,
+      "duration": 218,
+      "narration": "la pantalla.\n\nSi siente presión o dolor en el pecho, falta de aire desproporcionada, desmayo, confusión,",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_053.mp4",
+          "asset_id": "v4qsqjivet05:m170:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m171",
+      "section_id": "limites",
+      "from": 37571,
+      "duration": 202,
+      "narration": "debilidad repentina o dolor intenso que no cede, deténgase y busque atención médica. Si lleva mucho",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_045.png",
+          "asset_id": "v4qsqjivet05:m171:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m172",
+      "section_id": "limites",
+      "from": 37773,
+      "duration": 287,
+      "narration": "tiempo inactivo o tiene una enfermedad cardiovascular, metabólica, neurológica o musculoesquelética importante, obtenga orientación profesional antes",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_054.mp4",
+          "asset_id": "v4qsqjivet05:m172:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m173",
+      "section_id": "cierre",
+      "from": 38060,
+      "duration": 232,
+      "narration": "de iniciar un programa exigente.\n\nAsí que esta semana haga algo concreto. Elija dos días separados.",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m174",
+      "section_id": "cierre",
+      "from": 38292,
+      "duration": 199,
+      "narration": "Prepare un banco firme, un escalón seguro y una carga controlable. Complete dos series de cada",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_046.png",
+          "asset_id": "v4qsqjivet05:m174:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m175",
+      "section_id": "cierre",
+      "from": 38491,
+      "duration": 250,
+      "narration": "ejercicio dejando dos o tres repeticiones posibles. Anote la carga y las repeticiones. Después repita la",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "ejercicio · dejando",
+          "sub": "",
+          "detail": "El banco, escalón, carga y libreta se ensamblan como un kit de dos días listo para usar.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "camino_escalonado",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m176",
+      "section_id": "cierre",
+      "from": 38741,
+      "duration": 224,
+      "narration": "misma rutina el tiempo suficiente para demostrar una mejora.\n\nRecuerde el orden. Sentadilla al banco para",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_047.png",
+          "asset_id": "v4qsqjivet05:m176:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m177",
+      "section_id": "cierre",
+      "from": 38965,
+      "duration": 224,
+      "narration": "piernas y glúteos. Peso muerto rumano para la parte posterior. Flexión inclinada para empujar. Remo apoyado",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m178",
+      "section_id": "cierre",
+      "from": 39189,
+      "duration": 211,
+      "narration": "para tirar. Subida al escalón para trabajar cada pierna. Transporte de maleta para agarre y tronco.",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_055.mp4",
+          "asset_id": "v4qsqjivet05:m178:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m179",
+      "section_id": "cierre",
+      "from": 39400,
+      "duration": 210,
+      "narration": "Seis movimientos. Dos días al comenzar. Progreso pequeño y verificable.\n\nCuénteme en los comentarios cuál le",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_056.mp4",
+          "asset_id": "v4qsqjivet05:m179:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m180",
+      "section_id": "cierre",
+      "from": 39610,
+      "duration": 190,
+      "narration": "cuesta más y qué equipo tiene en casa. Leo esas respuestas porque ayudan a preparar variantes",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_048.png",
+          "asset_id": "v4qsqjivet05:m180:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m181",
+      "section_id": "cierre",
+      "from": 39800,
+      "duration": 260,
+      "narration": "para personas reales, no rutinas diseñadas únicamente para impresionar frente a una cámara.\n\nSuscríbase a Federer",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m182",
+      "section_id": "cierre",
+      "from": 40060,
+      "duration": 231,
+      "narration": "Building si quiere entrenar con explicaciones claras y sin convertir cada sesión en un espectáculo.\n\nComparta",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_057.mp4",
+          "asset_id": "v4qsqjivet05:m182:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m183",
+      "section_id": "cierre",
+      "from": 40291,
+      "duration": 180,
+      "narration": "este video con ese amigo que sigue esperando la rutina perfecta para empezar.\n\nY guárdelo para",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedCta",
+          "render_component": "FedCta",
+          "title": "video. amigo.",
+          "sub": "",
+          "detail": "El banco, escalón, carga y libreta se ensamblan como un kit de dos días listo para usar.",
+          "kicker": "",
+          "family": "FedCta",
+          "layout_family": "mesa_kit_final",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m184",
+      "section_id": "cierre",
+      "from": 40471,
+      "duration": 146,
+      "narration": "su próxima sesión. Una lista útil solo sirve cuando está a mano en el momento de",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_058.mp4",
+          "asset_id": "v4qsqjivet05:m184:stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "m185",
+      "section_id": "cierre",
+      "from": 40617,
+      "duration": 156,
+      "narration": "entrenar.\n\nEn el próximo video le mostraré cómo elegir el peso inicial en menos de cinco",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedCta",
+          "render_component": "FedCta",
+          "title": "entrenar. próximo.",
+          "sub": "",
+          "detail": "El banco, escalón, carga y libreta se ensamblan como un kit de dos días listo para usar.",
+          "kicker": "",
+          "family": "FedCta",
+          "layout_family": "mesa_kit_final",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "m186",
+      "section_id": "cierre",
+      "from": 40773,
+      "duration": 179,
+      "narration": "minutos con una prueba de repeticiones, sin llegar al fallo y sin adivinar. Esa prueba evita",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_049.png",
+          "asset_id": "v4qsqjivet05:m186:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "m187",
+      "section_id": "cierre",
+      "from": 40952,
+      "duration": 219,
+      "narration": "entrenar tan liviano que nada cambia o comenzar tan pesado que todo termina doliendo.\n\n[sighs] En",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_059.mp4",
+          "asset_id": "v4qsqjivet05:m187:stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "m188",
+      "section_id": "cierre",
+      "from": 41171,
+      "duration": 207,
+      "narration": "fin... después de los cuarenta no necesita entrenar como si todavía tuviera veinte. Necesita entrenar con",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivet05.mp4"
+        }
+      ]
+    },
+    {
+      "id": "m189",
+      "section_id": "cierre",
+      "from": 41378,
+      "duration": 227,
+      "narration": "más intención. Estimule, recupere y progrese. Y che, no sea cabeza dura: comenzar con una variante",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivet05_presenter_050.png",
+          "asset_id": "v4qsqjivet05:m189:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "m190",
+      "section_id": "cierre",
+      "from": 41605,
+      "duration": 205,
+      "narration": "sencilla no es retroceder. Es construir una base que todavía pueda servirle dentro de diez años.",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivet05/v4qsqjivet05_stock_060.mp4",
+          "asset_id": "v4qsqjivet05:m190:stock",
+          "transition_variant": "iris"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 190,
+    "avatar_scenes": 40,
+    "clip_scenes": 60,
+    "image_scenes": 50,
+    "component_scenes": 40,
+    "distinct_render_components": 9,
+    "duration_seconds": 1393.64,
+    "unresolved_assets": 0,
+    "visual_v3": {
+      "moments": 190,
+      "counts": {
+        "avatar_full": 40,
+        "presenter_action": 50,
+        "hero_component": 40,
+        "clean_stock": 60
+      },
+      "ratios": {
+        "avatar_full": 0.2105,
+        "presenter_action": 0.2632,
+        "hero_component": 0.2105,
+        "clean_stock": 0.3158
+      },
+      "clean_media_without_overlay_ratio": 1,
+      "clean_media_mix_ratio": 0.3158,
+      "hero_families": 10,
+      "rendered_components": 9,
+      "dominant_rendered_component_share": 0.225,
+      "max_consecutive_rendered_component": 2,
+      "transition_modes": 5,
+      "clean_cut_ratio": 0.3,
+      "max_consecutive_transition": 1,
+      "presenter_section_coverage": 1
+    }
+  }
+}
