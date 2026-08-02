@@ -196,7 +196,7 @@ jobs:
             TEMPO=$(awk -v d="$DRIFTED" -v t="$TARGET" 'BEGIN { printf "%.9f", d/t }')
             echo "normalizing v48vr0jexdrms from ${DRIFTED}s to ${TARGET}s with atempo=${TEMPO}"
             ffmpeg -y -i "${{ github.event.inputs.slug }}.drifted.mp4" \
-              -filter_complex "[0:v]fps=30,setpts=N/(30*TB)[v];[0:a]atempo=${TEMPO},atrim=0:${TARGET},asetpts=N/SR/TB[a]" \
+              -filter_complex "[0:v]setpts=N/(30*TB)[v];[0:a]atempo=${TEMPO},atrim=0:${TARGET},asetpts=N/SR/TB[a]" \
               -map "[v]" -map "[a]" -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p \
               -c:a aac -b:a 192k -t "${TARGET}" -movflags +faststart \
               "${{ github.event.inputs.slug }}.mp4"
