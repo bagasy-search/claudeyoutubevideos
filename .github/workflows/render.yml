@@ -13,7 +13,7 @@ on:
       slug:        { description: "slug del video", required: true }
       comp_id:     { description: "id de composicion Remotion", required: true }
       total_frames: { description: "frames totales", required: true }
-      chunks:      { description: "en cuantos pedazos partir", required: false, default: "24" }
+      chunks:      { description: "en cuantos pedazos partir", required: false, default: "60" }
       only_chunks: { description: "solo estos chunks (ej 3 | 3,4 | 3-5). vacio = todos", required: false, default: "" }
       entry:       { description: "entry propio del video (ej src/index_<slug>.tsx). vacio = Root.tsx compartido", required: false, default: "" }
 
@@ -77,10 +77,13 @@ jobs:
           # ENTERA después de que los demás chunks ya pagaron minutos de render. Mismo criterio que npm ci.
           n=0
           until gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" \
-                  --pattern "assets-${{ github.event.inputs.slug }}.tar" --dir . --clobber; do
+                  --pattern "assets-${{ github.event.inputs.slug }}.tar*" --dir . --clobber; do
             n=$((n+1)); [ "$n" -ge 4 ] && { echo "no pude bajar los assets tras $n intentos"; exit 1; }
             echo "reintento $n de la descarga de assets"; sleep $((10 * n))
           done
+          if ls "assets-${{ github.event.inputs.slug }}.tar.part-"* >/dev/null 2>&1; then
+            cat "assets-${{ github.event.inputs.slug }}.tar.part-"* > "assets-${{ github.event.inputs.slug }}.tar"
+          fi
           mkdir -p public
           tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
       - name: frame range
@@ -118,6 +121,11 @@ jobs:
 
   stitch:
     needs: render
+    # Sin este `if`, un solo chunk caído saltea el job ENTERO — y con él la persistencia de los que
+    # sí salieron. Medido en el render del GUANTE: 6 chunks buenos, 13 caídos, stitch nunca corrió y
+    # los 6 se perdieron. Con `!cancelled()` el job entra igual: persiste lo que haya y recién ahí
+    # intenta concatenar (el concat fallará si falta alguno, pero eso ya no se lleva puesto el resto).
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     # contents:write es OBLIGATORIO: los permisos por defecto del repo son READ, así que sin esto el
     # release chunks-<slug> NO se puede crear. Era la causa de que la persistencia de chunks nunca
@@ -134,30 +142,125 @@ jobs:
           # -R explícito: este job NO hace checkout, así que gh no puede inferir el repo del .git
           gh release download "chunks-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" --dir prev --pattern "*.mp4" || true
           if [ -d prev ]; then cp -n prev/*.mp4 chunks/ 2>/dev/null || true; fi
+      # ── PERSISTIR PRIMERO, CONCATENAR DESPUÉS ──────────────────────────────────────────────
+      # Este paso estaba al FINAL del job, después del concat. Con eso, cualquier corrida con un
+      # chunk caído moría en el concat y no guardaba NADA — ni siquiera los 19 que sí salieron —,
+      # así que el re-render parcial rehacía los 20 desde cero, siempre. Se veía en los números:
+      # cero releases chunks-* en el repo. Guardar es barato y es lo único que sobrevive a un
+      # concat fallido, así que va primero.
+      - name: persistir chunks (para re-render parcial)
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          cd chunks
+          ls chunk_*.mp4 >/dev/null 2>&1 || { echo "(no hay chunks para persistir)"; exit 0; }
+          echo "persistiendo $(ls chunk_*.mp4 | wc -l) chunks"
+          R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
+          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
+            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
       - name: install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: concat (todos los N en orden)
         run: |
           ls chunks
+          # ⛔ FALTA ALGÚN PEDAZO = NO SE CONCATENA. El demuxer `concat` de ffmpeg, cuando un archivo
+          # de la lista no existe, escribe el error, CORTA ahí y devuelve exit 0. O sea que un chunk
+          # caído no rompe el paso: produce un MP4 truncado en el primer hueco y el workflow sigue
+          # como si nada, lo publica como release y lo entrega. Pasó el 2026-07-27 con el Botox
+          # Verde: 57 de 60 chunks bien, faltaba el 3, y el "video final" salió de 91 SEGUNDOS
+          # (chunks 0,1,2) en vez de ~27 minutos. Un video truncado entregado como bueno es MUCHO
+          # peor que un render fallado: el fallado se ve.
+          FALTAN=""
           for i in $(seq 0 $(( ${{ github.event.inputs.chunks }} - 1 ))); do
+            [ -s "chunks/chunk_$i.mp4" ] || FALTAN="$FALTAN $i"
             echo "file '$PWD/chunks/chunk_$i.mp4'" >> list.txt
           done
+          if [ -n "$FALTAN" ]; then
+            echo "::error::faltan chunks:$FALTAN — NO concateno: saldría un MP4 truncado en el primer hueco."
+            echo "Los chunks que SÍ salieron quedaron persistidos en el release chunks-${{ github.event.inputs.slug }}."
+            echo "Re-rendeá solo los que faltan:  ONLY_CHUNKS=$(echo $FALTAN | tr ' ' ',')"
+            exit 1
+          fi
           cat list.txt
           ffmpeg -y -f concat -safe 0 -i list.txt -c copy "${{ github.event.inputs.slug }}.mp4"
+          # Cada chunk tiene su propio priming AAC. Al concatenar 60 archivos eso agrega segundos
+          # y desplaza imagen/voz aunque todos los frames estén presentes. Se reconstruye SIEMPRE
+          # contra el reloj real de la composición y se normaliza el programa a -16 LUFS.
+          # Es genérico: jamás depende del slug ni de duraciones escritas a mano.
+          S="${{ github.event.inputs.slug }}"
+          mv "$S.mp4" "$S.drifted.mp4"
+          DRIFTED=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$S.drifted.mp4")
+          TARGET=$(awk 'BEGIN { printf "%.9f", ${{ github.event.inputs.total_frames }}/30 }')
+          TEMPO=$(awk -v d="$DRIFTED" -v t="$TARGET" 'BEGIN { printf "%.9f", d/t }')
+          awk -v x="$TEMPO" 'BEGIN { exit(x>=0.5 && x<=2.0 ? 0 : 1) }' \
+            || { echo "::error::deriva anormal: atempo=${TEMPO}"; exit 1; }
+          echo "normalizando ${S}: ${DRIFTED}s -> ${TARGET}s · atempo=${TEMPO} · audio=-16 LUFS"
+          ffmpeg -y -i "$S.drifted.mp4" \
+            -filter_complex "[0:v]setpts=N/(30*TB)[v];[0:a]aresample=async=1:first_pts=0,atempo=${TEMPO},loudnorm=I=-16:TP=-2:LRA=7,apad,atrim=0:${TARGET},asetpts=N/SR/TB[a]" \
+            -map "[v]" -map "[a]" -frames:v "${{ github.event.inputs.total_frames }}" \
+            -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p \
+            -c:a aac -b:a 192k -t "${TARGET}" -movflags +faststart "$S.mp4"
+
+          FRAMES=$(ffprobe -v error -count_frames -select_streams v:0 \
+            -show_entries stream=nb_read_frames -of csv=p=0 "$S.mp4")
+          DURATION=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$S.mp4")
+          echo "normalizado: ${FRAMES} frames · ${DURATION}s"
+          [ "$FRAMES" = "${{ github.event.inputs.total_frames }}" ] \
+            || { echo "::error::se esperaban ${{ github.event.inputs.total_frames }} frames; hay $FRAMES"; exit 1; }
+          awk -v d="$DURATION" -v t="$TARGET" 'BEGIN { delta=d-t; if(delta<0)delta=-delta; exit(delta<0.25 ? 0 : 1) }' \
+            || { echo "::error::duración final ${DURATION}s fuera de ±0.25s del guion"; exit 1; }
+          # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
+          # esperado algo se truncó igual. total_frames/30 es la duración teórica.
+          ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")
+          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "${{ github.event.inputs.slug }}.mp4" | cut -d. -f1)
+          echo "duración: real ${REAL}s · esperada ${ESPERADO}s"
+          if [ "$REAL" -lt $(( ESPERADO * 90 / 100 )) ]; then
+            echo "::error::el MP4 dura ${REAL}s pero se esperaban ~${ESPERADO}s (menos del 90%). Está truncado — no lo publico."
+            exit 1
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: final-${{ github.event.inputs.slug }}
           path: ${{ github.event.inputs.slug }}.mp4
           retention-days: 7
-      - name: persistir chunks (para re-render parcial)
-        continue-on-error: true
+      # ── CHEQUEO TECNICO EN LA NUBE (etapa 2 del auditor) ────────────────────────────────────
+      # ffmpeg ya esta instalado acá. Haciendolo aca el agente NO necesita bajarse 700 MB para
+      # verificar duracion/audio/negros: lee esta salida del log de la corrida.
+      - name: puerta tecnica del MP4
+        run: |
+          F="${{ github.event.inputs.slug }}.mp4"
+          echo "=== CHEQUEO_TECNICO ==="
+          echo "bytes: $(stat -c%s "$F")"
+          echo "duracion_s: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$F")"
+          echo "streams: $(ffprobe -v error -show_entries stream=codec_type -of csv=p=0 "$F" | tr '\n' ' ')"
+          echo "audio_ok: $(ffprobe -v error -select_streams a -show_entries stream=codec_name -of csv=p=0 "$F" | head -1)"
+          REPORT=$(mktemp)
+          ffmpeg -hide_banner -nostats -i "$F" -filter_complex ebur128=peak=true -f null - 2>"$REPORT"
+          LOUDNESS=$(sed -n 's/.*I: *\([-0-9.]*\) LUFS.*/\1/p' "$REPORT" | tail -1)
+          echo "loudness_lufs: ${LOUDNESS}"
+          [ -n "$LOUDNESS" ] || { echo "::error::no pude medir loudness"; exit 1; }
+          awk -v l="$LOUDNESS" 'BEGIN { exit(l>=-16.8 && l<=-15.2 ? 0 : 1) }' \
+            || { echo "::error::audio ${LOUDNESS} LUFS fuera del rango profesional -16±0.8"; exit 1; }
+          # negros de mas de 2s (un fundido normal no llega)
+          echo "--- negros >2s ---"
+          ffmpeg -hide_banner -nostats -i "$F" -vf blackdetect=d=2:pic_th=0.98 -an -f null - 2>&1 | grep blackdetect || echo "ninguno"
+          echo "=== FIN_CHEQUEO ==="
+      # ── ENTREGA: publicar el MP4 como release ACA MISMO ────────────────────────────────────
+      # El archivo ya esta armado y ya vive en GitHub. Antes se bajaba a la PC (~700 MB) para
+      # volver a subirlo a otro release (~700 MB): ida y vuelta por la conexion del creador para
+      # mover un archivo de GitHub a GitHub. Peor: lo que se publicaba salia del disco local, y
+      # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
+      # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
+      - name: publicar el MP4 final como release
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
-          cd chunks
-          R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
-          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
-            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
+          S="${{ github.event.inputs.slug }}"
+          R="${{ github.repository }}"
+          gh release create "$S" "$S.mp4" -R "$R" --title "$S" --notes "MP4 final — publicado por el farm" \
+            || gh release upload "$S" "$S.mp4" -R "$R" --clobber
+          echo "RELEASE_URL: https://github.com/$R/releases/download/$S/$S.mp4"
       - name: progreso 100 (Bagasy)
         continue-on-error: true
         run: |
