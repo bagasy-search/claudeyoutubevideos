@@ -185,6 +185,32 @@ jobs:
           fi
           cat list.txt
           ffmpeg -y -f concat -safe 0 -i list.txt -c copy "${{ github.event.inputs.slug }}.mp4"
+          # Cada chunk tiene su propio priming AAC. Al concatenar 60 archivos eso agrega segundos
+          # y desplaza imagen/voz aunque todos los frames estén presentes. Se reconstruye SIEMPRE
+          # contra el reloj real de la composición y se normaliza el programa a -16 LUFS.
+          # Es genérico: jamás depende del slug ni de duraciones escritas a mano.
+          S="${{ github.event.inputs.slug }}"
+          mv "$S.mp4" "$S.drifted.mp4"
+          DRIFTED=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$S.drifted.mp4")
+          TARGET=$(awk 'BEGIN { printf "%.9f", ${{ github.event.inputs.total_frames }}/30 }')
+          TEMPO=$(awk -v d="$DRIFTED" -v t="$TARGET" 'BEGIN { printf "%.9f", d/t }')
+          awk -v x="$TEMPO" 'BEGIN { exit(x>=0.5 && x<=2.0 ? 0 : 1) }' \
+            || { echo "::error::deriva anormal: atempo=${TEMPO}"; exit 1; }
+          echo "normalizando ${S}: ${DRIFTED}s -> ${TARGET}s · atempo=${TEMPO} · audio=-16 LUFS"
+          ffmpeg -y -i "$S.drifted.mp4" \
+            -filter_complex "[0:v]setpts=N/(30*TB)[v];[0:a]aresample=async=1:first_pts=0,atempo=${TEMPO},loudnorm=I=-16:TP=-2:LRA=7,apad,atrim=0:${TARGET},asetpts=N/SR/TB[a]" \
+            -map "[v]" -map "[a]" -frames:v "${{ github.event.inputs.total_frames }}" \
+            -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p \
+            -c:a aac -b:a 192k -t "${TARGET}" -movflags +faststart "$S.mp4"
+
+          FRAMES=$(ffprobe -v error -count_frames -select_streams v:0 \
+            -show_entries stream=nb_read_frames -of csv=p=0 "$S.mp4")
+          DURATION=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$S.mp4")
+          echo "normalizado: ${FRAMES} frames · ${DURATION}s"
+          [ "$FRAMES" = "${{ github.event.inputs.total_frames }}" ] \
+            || { echo "::error::se esperaban ${{ github.event.inputs.total_frames }} frames; hay $FRAMES"; exit 1; }
+          awk -v d="$DURATION" -v t="$TARGET" 'BEGIN { delta=d-t; if(delta<0)delta=-delta; exit(delta<0.25 ? 0 : 1) }' \
+            || { echo "::error::duración final ${DURATION}s fuera de ±0.25s del guion"; exit 1; }
           # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
           # esperado algo se truncó igual. total_frames/30 es la duración teórica.
           ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")
@@ -202,8 +228,7 @@ jobs:
       # ── CHEQUEO TECNICO EN LA NUBE (etapa 2 del auditor) ────────────────────────────────────
       # ffmpeg ya esta instalado acá. Haciendolo aca el agente NO necesita bajarse 700 MB para
       # verificar duracion/audio/negros: lee esta salida del log de la corrida.
-      - name: chequeo tecnico del MP4
-        continue-on-error: true
+      - name: puerta tecnica del MP4
         run: |
           F="${{ github.event.inputs.slug }}.mp4"
           echo "=== CHEQUEO_TECNICO ==="
@@ -211,6 +236,13 @@ jobs:
           echo "duracion_s: $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$F")"
           echo "streams: $(ffprobe -v error -show_entries stream=codec_type -of csv=p=0 "$F" | tr '\n' ' ')"
           echo "audio_ok: $(ffprobe -v error -select_streams a -show_entries stream=codec_name -of csv=p=0 "$F" | head -1)"
+          REPORT=$(mktemp)
+          ffmpeg -hide_banner -nostats -i "$F" -filter_complex ebur128=peak=true -f null - 2>"$REPORT"
+          LOUDNESS=$(sed -n 's/.*I: *\([-0-9.]*\) LUFS.*/\1/p' "$REPORT" | tail -1)
+          echo "loudness_lufs: ${LOUDNESS}"
+          [ -n "$LOUDNESS" ] || { echo "::error::no pude medir loudness"; exit 1; }
+          awk -v l="$LOUDNESS" 'BEGIN { exit(l>=-16.8 && l<=-15.2 ? 0 : 1) }' \
+            || { echo "::error::audio ${LOUDNESS} LUFS fuera del rango profesional -16±0.8"; exit 1; }
           # negros de mas de 2s (un fundido normal no llega)
           echo "--- negros >2s ---"
           ffmpeg -hide_banner -nostats -i "$F" -vf blackdetect=d=2:pic_th=0.98 -an -f null - 2>&1 | grep blackdetect || echo "ninguno"
@@ -222,7 +254,6 @@ jobs:
       # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
       # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
       - name: publicar el MP4 final como release
-        continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           S="${{ github.event.inputs.slug }}"
