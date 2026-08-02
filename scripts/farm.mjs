@@ -258,6 +258,17 @@ fs.rmSync(listFile);
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
 try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --cleanup-tag`); } catch { /* no existe */ }
+// `gh release create` puede dejar un draft huérfano si la subida grande se corta. Ese draft no
+// siempre aparece en `gh release view <tag>` y el reintento falla para siempre con HTTP 422. La API
+// de releases sí enumera drafts: borramos únicamente los que pertenecen a este slug antes de crear
+// la entrega idempotente de nuevo. No toca releases de otros videos.
+try {
+  const releases = JSON.parse(out(`gh api "repos/{owner}/{repo}/releases?per_page=100"`));
+  for (const release of releases.filter((item) => item?.tag_name === relTag || item?.name === relTag)) {
+    sh(`gh api -X DELETE repos/{owner}/{repo}/releases/${release.id}`);
+  }
+} catch { /* sin draft huérfano o fallo transitorio: create devolverá el diagnóstico real */ }
+try { sh(`gh api -X DELETE repos/{owner}/{repo}/git/refs/tags/${encodeURIComponent(relTag)}`); } catch { /* tag ausente */ }
 sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del render"`);
 fs.rmSync(tar);
 }
