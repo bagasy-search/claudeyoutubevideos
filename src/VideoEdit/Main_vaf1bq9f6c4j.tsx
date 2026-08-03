@@ -1,6 +1,6 @@
 import React from "react";
-import {AbsoluteFill, Sequence, staticFile} from "remotion";
-import {Audio, Video} from "@remotion/media";
+import {AbsoluteFill, OffthreadVideo, Sequence, staticFile} from "remotion";
+import {Audio} from "@remotion/media";
 import timeline from "./timeline_vaf1bq9f6c4j.json";
 import {
   FedBeforeAfter,
@@ -62,7 +62,7 @@ const FedererScene: React.FC<{scene:any}> = ({scene}) => {
 
 export const BagasyTimeline_vaf1bq9f6c4j: React.FC = () => <AbsoluteFill style={{background:"#020409"}}>
   <Audio src={staticFile(timeline.audio_src)}/>
-  <Video src={staticFile(timeline.audio_src)} muted style={{width:"100%",height:"100%",objectFit:"cover"}}/>
+  <OffthreadVideo src={staticFile(timeline.avatar_src)} muted style={{width:"100%",height:"100%",objectFit:"cover"}}/>
   {timeline.scenes.map((scene:any) => <Sequence key={scene.id} from={scene.from} durationInFrames={scene.duration}>
     <FedererScene scene={scene}/>
   </Sequence>)}
