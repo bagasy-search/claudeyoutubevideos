@@ -310,7 +310,11 @@ if (!reusableRelease) {
     }
   } catch { /* sin draft huérfano o fallo transitorio: create devolverá el diagnóstico real */ }
   try { sh(`gh api -X DELETE repos/{owner}/{repo}/git/refs/tags/${encodeURIComponent(relTag)}`); } catch { /* tag ausente */ }
-  sh(`gh release create ${relTag} ${uploadFiles.map((file) => `"${file}"`).join(" ")} --title ${relTag} --notes "assets del render"`);
+  // Target the exact pushed commit instead of relying on a branch/tag ref that
+  // GitHub may not have made visible yet after cleanup. The former race caused
+  // intermittent HTTP 422 "Reference does not exist" before any render run.
+  const releaseTarget = out("git rev-parse HEAD");
+  sh(`gh release create ${relTag} ${uploadFiles.map((file) => `"${file}"`).join(" ")} --target ${releaseTarget} --title ${relTag} --notes "assets del render"`);
 } else {
   console.log(`release ${relTag} ya contiene exactamente las ${uploadFiles.length} parte(s); reutilizo la subida`);
 }
