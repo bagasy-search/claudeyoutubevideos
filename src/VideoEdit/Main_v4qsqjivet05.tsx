@@ -56,8 +56,8 @@ const FedererScene: React.FC<{scene:any}> = ({scene}) => {
   const variant = transitionVariant(scene);
   if (layer.type === "avatar") return null;
   if (layer.type === "component") return <FedererComponent scene={scene}/>;
-  if (layer.type === "image") return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video={false} accent={accent} variant={variant}/>;
-  return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video startFrom={0} accent={accent} variant={variant}/>;
+  const isVideoAsset = /\.(?:mp4|mov|m4v|webm)$/i.test(String(layer.src || ""));
+  return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video={isVideoAsset} startFrom={0} accent={accent} variant={variant}/>;
 };
 
 export const BagasyTimeline_v4qsqjivet05: React.FC = () => <AbsoluteFill style={{background:"#020409"}}>
