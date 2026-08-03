@@ -1,6 +1,6 @@
 import React from "react";
-import {AbsoluteFill, OffthreadVideo, Sequence, staticFile} from "remotion";
-import {Audio} from "@remotion/media";
+import {AbsoluteFill, Sequence, staticFile} from "remotion";
+import {Audio, Video} from "@remotion/media";
 import timeline from "./timeline_v4qsqjivet05.json";
 import {
   FedBeforeAfter,
@@ -18,7 +18,7 @@ import {
 } from "../FedererKit";
 
 const accent = "#E9B44C";
-const publicAsset = (value?: string | null) => value ? staticFile(value) : undefined;
+const publicAsset = (value?: string | null) => value && /\.(?:png|jpe?g|webp|gif|avif)$/i.test(value) ? staticFile(value) : undefined;
 const transitionVariant = (scene:any): "none"|"whip"|"lift"|"iris"|"fold" => {
   const value = String(scene.transition || scene.layers?.[0]?.transition_variant || "none").toLowerCase();
   return (["none","whip","lift","iris","fold"] as const).includes(value as any) ? value as any : "none";
@@ -56,13 +56,13 @@ const FedererScene: React.FC<{scene:any}> = ({scene}) => {
   const variant = transitionVariant(scene);
   if (layer.type === "avatar") return null;
   if (layer.type === "component") return <FedererComponent scene={scene}/>;
-  const isVideoAsset = /\.(?:mp4|mov|m4v|webm)$/i.test(String(layer.src || ""));
+  const isVideoAsset = /.(?:mp4|mov|m4v|webm)$/i.test(String(layer.src || ""));
   return <FedFullShot totalF={scene.duration} src={staticFile(layer.src)} video={isVideoAsset} startFrom={0} accent={accent} variant={variant}/>;
 };
 
 export const BagasyTimeline_v4qsqjivet05: React.FC = () => <AbsoluteFill style={{background:"#020409"}}>
-  <Audio src={staticFile(timeline.audio_src)} volume={1.416} trimAfter={timeline.duration_in_frames}/>
-  <OffthreadVideo src={staticFile(timeline.audio_src)} muted trimAfter={timeline.duration_in_frames} style={{width:"100%",height:"100%",objectFit:"cover"}}/>
+  <Audio src={staticFile(timeline.audio_src)}/>
+  <Video src={staticFile(timeline.audio_src)} muted style={{width:"100%",height:"100%",objectFit:"cover"}}/>
   {timeline.scenes.map((scene:any) => <Sequence key={scene.id} from={scene.from} durationInFrames={scene.duration}>
     <FedererScene scene={scene}/>
   </Sequence>)}
