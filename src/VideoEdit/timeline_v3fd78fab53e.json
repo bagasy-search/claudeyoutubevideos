@@ -1,0 +1,3748 @@
+{
+  "version": 1,
+  "slug": "v3fd78fab53e",
+  "kit": "federer-fluid",
+  "premium_director_enabled": true,
+  "composition_id": "Bagasy-v3fd78fab53e",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 42010,
+  "audio_src": "avatar_v3fd78fab53e.mp4",
+  "captions_src": "captions_v3fd78fab53e.json",
+  "scenes": [
+    {
+      "id": "s01-apertura-m001",
+      "section_id": "s01-apertura",
+      "from": 0,
+      "duration": 210,
+      "narration": "Estos doce alimentos pueden encender la maquinaria que fabrica su testosterona después de los cuarenta pero",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m002",
+      "section_id": "s01-apertura",
+      "from": 210,
+      "duration": 197,
+      "narration": "el más poderoso deja de ayudar en cuanto usted comete un error muy común con la cintura",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_001.mp4",
+          "asset_id": "v3fd78fab53e:s01-apertura-m002:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m003",
+      "section_id": "s01-apertura",
+      "from": 407,
+      "duration": 174,
+      "narration": "No hablo de una cura milagrosa Tampoco de convertir un análisis bajo en uno normal de la noche",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_001.png",
+          "asset_id": "v3fd78fab53e:s01-apertura-m003:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m004",
+      "section_id": "s01-apertura",
+      "from": 581,
+      "duration": 286,
+      "narration": "a la mañana Hablo de huevos pescado azul mariscos semillas legumbres y otros alimentos capaces de aportar las",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m005",
+      "section_id": "s01-apertura",
+      "from": 867,
+      "duration": 288,
+      "narration": "materias primas que el cuerpo necesita para producir hormonas conservar músculo y mantener su metabolismo en mejores condiciones",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_002.mp4",
+          "asset_id": "v3fd78fab53e:s01-apertura-m005:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m006",
+      "section_id": "s01-apertura",
+      "from": 1155,
+      "duration": 474,
+      "narration": "La diferencia importa Ningún alimento dispara la testosterona como un medicamento Sin embargo una carencia de zinc vitamina",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_002.png",
+          "asset_id": "v3fd78fab53e:s01-apertura-m006:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m007",
+      "section_id": "s01-apertura",
+      "from": 1629,
+      "duration": 166,
+      "narration": "producción Corregir esa carencia puede devolverle al organismo algo que estaba perdiendo",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Una carencia de zinc o vitamina D frena la",
+          "sub": "Corregirla devuelve lo que estaba perdiendo",
+          "detail": "Ruta hormonal en tres tramos; el tramo carente se apaga y al reponerse recupera flujo",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "deficit-pathway",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m008",
+      "section_id": "s01-apertura",
+      "from": 1795,
+      "duration": 249,
+      "narration": "perdiendo Y eso después de los cuarenta vale mucho más que una cápsula con un toro dibujado en",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m009",
+      "section_id": "s01-apertura",
+      "from": 2044,
+      "duration": 240,
+      "narration": "Le mostraré doce alimentos qué aportan cuánto conviene comer y quién debe tener cuidado Algunos actúan sobre",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_003.png",
+          "asset_id": "v3fd78fab53e:s01-apertura-m009:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m010",
+      "section_id": "s01-apertura",
+      "from": 2284,
+      "duration": 245,
+      "narration": "doce alimentos qué aportan cuánto conviene comer y quién debe tener cuidado",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Doce alimentos: qué aportan y quién debe tener",
+          "sub": "Qué aportan, cuánto conviene comer y sus límites",
+          "detail": "Apertura de serie: doce placas de comida entran en profundidad y se ordenan en rejilla",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "series-opening",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m011",
+      "section_id": "s01-apertura",
+      "from": 2529,
+      "duration": 207,
+      "narration": "Y hay uno muy popular que puede resultar contraproducente si usted cree que más siempre significa mejor",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_003.mp4",
+          "asset_id": "v3fd78fab53e:s01-apertura-m011:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m012",
+      "section_id": "s01-apertura",
+      "from": 2736,
+      "duration": 161,
+      "narration": "Quédese hasta el final porque voy a pagar dos promesas Primero le diré cómo combinar estos",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m013",
+      "section_id": "s01-apertura",
+      "from": 2897,
+      "duration": 230,
+      "narration": "alimentos en un día real sin preparar doce platos distintos Segundo descubrirá el error incómodo que",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_004.mp4",
+          "asset_id": "v3fd78fab53e:s01-apertura-m013:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s01-apertura-m014",
+      "section_id": "s01-apertura",
+      "from": 3127,
+      "duration": 211,
+      "narration": "transforma una dieta supuestamente hormonal en una dieta que agranda la cintura y termina jugando en contra",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_004.png",
+          "asset_id": "v3fd78fab53e:s01-apertura-m014:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m015",
+      "section_id": "s02-sistema",
+      "from": 3338,
+      "duration": 210,
+      "narration": "Empecemos por lo que casi todos entienden mal La testosterona no depende de un ingrediente secreto Depende de",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m016",
+      "section_id": "s02-sistema",
+      "from": 3548,
+      "duration": 255,
+      "narration": "un sistema El cerebro envía señales Los testículos responden El hígado transporta y procesa hormonas El tejido adiposo",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_005.mp4",
+          "asset_id": "v3fd78fab53e:s02-sistema-m016:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m017",
+      "section_id": "s02-sistema",
+      "from": 3803,
+      "duration": 283,
+      "narration": "también interviene El sueño el entrenamiento ciertos medicamentos el alcohol y algunas enfermedades pueden mover todo ese sistema",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_006.mp4",
+          "asset_id": "v3fd78fab53e:s02-sistema-m017:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m018",
+      "section_id": "s02-sistema",
+      "from": 4086,
+      "duration": 236,
+      "narration": "Por eso una persona puede comer semillas todos los días y continuar con testosterona baja Si",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m019",
+      "section_id": "s02-sistema",
+      "from": 4322,
+      "duration": 147,
+      "narration": "masa muscular consume alcohol en exceso o tiene obesidad abdominal las semillas no pueden borrar el resto",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Las semillas no borran el resto del cuadro",
+          "sub": "Sueño corto, masa muscular perdida, alcohol y obesidad abdominal",
+          "detail": "Cuatro pesos que hunden un plato mientras un puñado de semillas queda pequeño al lado",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "limits-boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Dormir cuatro horas",
+            "Mucha masa muscular perdida",
+            "Alcohol en exceso",
+            "Obesidad abdominal"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m020",
+      "section_id": "s02-sistema",
+      "from": 4469,
+      "duration": 207,
+      "narration": "semillas no pueden borrar el resto del cuadro Sirven como una pieza No como una varita mágica",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_005.png",
+          "asset_id": "v3fd78fab53e:s02-sistema-m020:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m021",
+      "section_id": "s02-sistema",
+      "from": 4676,
+      "duration": 375,
+      "narration": "Y aquí aparece el enemigo No es un alimento Es la idea de que usted",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_007.mp4",
+          "asset_id": "v3fd78fab53e:s02-sistema-m021:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m022",
+      "section_id": "s02-sistema",
+      "from": 5051,
+      "duration": 146,
+      "narration": "diez plantas en dosis poco claras Algunos pueden interactuar con anticoagulantes tratamientos para la presión",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Diez plantas mezcladas en dosis poco claras",
+          "sub": "Pueden interactuar con anticoagulantes y tratamientos para la presión",
+          "detail": "Etiqueta de suplemento que se despliega y muestra ingredientes sin dosis legible",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "supplement-audit",
+          "value": "10",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m023",
+      "section_id": "s02-sistema",
+      "from": 5197,
+      "duration": 261,
+      "narration": "poco claras Algunos pueden interactuar con anticoagulantes tratamientos para la presión o medicamentos para la diabetes",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s02-sistema-m024",
+      "section_id": "s02-sistema",
+      "from": 5458,
+      "duration": 205,
+      "narration": "La comida corriente suele ser menos espectacular También es más fácil de evaluar dosificar y sostener",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_008.mp4",
+          "asset_id": "v3fd78fab53e:s02-sistema-m024:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m025",
+      "section_id": "s03-huevo",
+      "from": 5663,
+      "duration": 306,
+      "narration": "El primer alimento es el huevo Un huevo entero reúne proteína de buena calidad grasa colesterol colina y",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_006.png",
+          "asset_id": "v3fd78fab53e:s03-huevo-m025:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m026",
+      "section_id": "s03-huevo",
+      "from": 5969,
+      "duration": 145,
+      "narration": "materia prima para fabricar hormonas sí Pero atención comer más colesterol no obliga al cuerpo a producir",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "El colesterol es materia prima para fabricar hormonas",
+          "sub": "Comer más colesterol no obliga a producir más testosterona",
+          "detail": "Cadena desde el huevo hacia la materia prima, con una válvula reguladora que limita el paso",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "raw-material-map",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m027",
+      "section_id": "s03-huevo",
+      "from": 6114,
+      "duration": 265,
+      "narration": "más colesterol no obliga al cuerpo a producir más testosterona El organismo regula ese proceso con bastante precisión",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m028",
+      "section_id": "s03-huevo",
+      "from": 6379,
+      "duration": 244,
+      "narration": "El verdadero valor del huevo es otro Resulta fácil de masticar Es accesible Permite repartir proteína desde el",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_009.mp4",
+          "asset_id": "v3fd78fab53e:s03-huevo-m028:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m029",
+      "section_id": "s03-huevo",
+      "from": 6623,
+      "duration": 224,
+      "narration": "desayuno y ayuda a proteger masa muscular Uno o dos huevos dentro de una alimentación equilibrada pueden encajar",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_010.mp4",
+          "asset_id": "v3fd78fab53e:s03-huevo-m029:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m030",
+      "section_id": "s03-huevo",
+      "from": 6847,
+      "duration": 212,
+      "narration": "muchas personas Si además agrega verduras tiene una comida más completa que un desayuno de galletas dulces y",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m031",
+      "section_id": "s03-huevo",
+      "from": 7059,
+      "duration": 404,
+      "narration": "Ahora si su colesterol LDL está muy elevado tiene hipercolesterolemia familiar o su médico le indicó un",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_007.png",
+          "asset_id": "v3fd78fab53e:s03-huevo-m031:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m032",
+      "section_id": "s03-huevo",
+      "from": 7463,
+      "duration": 153,
+      "narration": "colesterol LDL está muy elevado tiene hipercolesterolemia familiar o su médico",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Si su colesterol LDL está muy elevado, manda su",
+          "sub": "El problema suele ser el conjunto, no el huevo solo",
+          "detail": "Ficha clínica que se superpone al plato y reordena las porciones",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "clinical-override",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Hipercolesterolemia familiar",
+            "Límite indicado por su médico",
+            "Salchichas, tocino y manteca",
+            "Exceso de calorías"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s03-huevo-m033",
+      "section_id": "s03-huevo",
+      "from": 7616,
+      "duration": 280,
+      "narration": "huevos con embutidos El problema suele ser el conjunto salchichas tocino manteca pan refinado y exceso de calorías",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_011.mp4",
+          "asset_id": "v3fd78fab53e:s03-huevo-m033:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m034",
+      "section_id": "s04-sardina",
+      "from": 7896,
+      "duration": 249,
+      "narration": "El segundo alimento es la sardina Y esta pequeña lata le gana a muchos productos",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m035",
+      "section_id": "s04-sardina",
+      "from": 8145,
+      "duration": 240,
+      "narration": "que cuestan diez veces más Aporta proteína omega tres y cuando se come con sus",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_012.mp4",
+          "asset_id": "v3fd78fab53e:s04-sardina-m035:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m036",
+      "section_id": "s04-sardina",
+      "from": 8385,
+      "duration": 197,
+      "narration": "espinas blandas calcio También puede aportar vitamina D aunque la cantidad cambia según el producto",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m037",
+      "section_id": "s04-sardina",
+      "from": 8582,
+      "duration": 232,
+      "narration": "Los omega tres no son una inyección de testosterona Su papel más razonable está en la",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_013.mp4",
+          "asset_id": "v3fd78fab53e:s04-sardina-m037:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m038",
+      "section_id": "s04-sardina",
+      "from": 8814,
+      "duration": 256,
+      "narration": "circulación la energía física y la salud metabólica forman parte del mismo terreno donde funcionan las hormonas",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Omega tres actúa en circulación e inflamación",
+          "sub": "Ese terreno metabólico es donde funcionan las hormonas",
+          "detail": "Corte de vaso sanguíneo con flujo que se ordena; la inflamación baja como bruma",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "cardio-terrain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m039",
+      "section_id": "s04-sardina",
+      "from": 9070,
+      "duration": 250,
+      "narration": "la energía física y la salud metabólica forman parte del mismo terreno donde funcionan las hormonas",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_008.png",
+          "asset_id": "v3fd78fab53e:s04-sardina-m039:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m040",
+      "section_id": "s04-sardina",
+      "from": 9320,
+      "duration": 277,
+      "narration": "Una porción dos veces por semana es una referencia práctica para incluir pescado azul Puede alternar",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m041",
+      "section_id": "s04-sardina",
+      "from": 9597,
+      "duration": 284,
+      "narration": "dos veces por semana es una referencia práctica para incluir pescado azul Puede alternar sardina con caballa salmón",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Una porción dos veces por semana de pescado azul",
+          "sub": "Alterne sardina con caballa, salmón o trucha",
+          "detail": "Semana en siete columnas; dos columnas se elevan con una porción cada una",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "weekly-cadence",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 1,
+          "total": 2,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04-sardina-m042",
+      "section_id": "s04-sardina",
+      "from": 9881,
+      "duration": 316,
+      "narration": "cardíaca Si usa sardinas enlatadas escúrralas Y revise la etiqueta porque algunas vienen prácticamente nadando en sal",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_014.mp4",
+          "asset_id": "v3fd78fab53e:s04-sardina-m042:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m043",
+      "section_id": "s05-marisco",
+      "from": 10197,
+      "duration": 232,
+      "narration": "El tercero es el marisco especialmente ostras mejillones y almejas Aquí aparece el zinc Los hombres adultos necesitan",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_009.png",
+          "asset_id": "v3fd78fab53e:s05-marisco-m043:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m044",
+      "section_id": "s05-marisco",
+      "from": 10429,
+      "duration": 193,
+      "narration": "zinc Los hombres adultos necesitan alrededor de once miligramos diarios y las mujeres unos ocho",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Once miligramos diarios de zinc en hombres adultos",
+          "sub": "Las mujeres necesitan alrededor de ocho miligramos",
+          "detail": "Barra de requerimiento con la ostra desbordándola muy por encima",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "daily-requirement",
+          "value": "11 mg",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m045",
+      "section_id": "s05-marisco",
+      "from": 10622,
+      "duration": 264,
+      "narration": "en una sola porción El zinc participa en numerosas enzimas y es necesario para la función reproductiva normal",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m046",
+      "section_id": "s05-marisco",
+      "from": 10886,
+      "duration": 274,
+      "narration": "Pero escuche bien este límite el zinc ayuda sobre todo cuando existe una ingesta insuficiente o",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_010.png",
+          "asset_id": "v3fd78fab53e:s05-marisco-m046:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m047",
+      "section_id": "s05-marisco",
+      "from": 11160,
+      "duration": 264,
+      "narration": "cuarenta miligramos diarios especialmente mediante suplementos puede causar náuseas y favorecer una deficiencia de cobre",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Superar cuarenta miligramos diarios puede causar náuseas",
+          "sub": "Y favorecer una deficiencia de cobre",
+          "detail": "Escala que sube hasta un techo marcado y se detiene con luz de advertencia",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "upper-limit",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "El zinc ayuda si hay ingesta insuficiente",
+            "Más no vuelve extraordinaria una testosterona normal",
+            "Cuarenta miligramos diarios como techo",
+            "Riesgo de deficiencia de cobre"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m048",
+      "section_id": "s05-marisco",
+      "from": 11424,
+      "duration": 266,
+      "narration": "manera habitual cuarenta miligramos diarios especialmente mediante suplementos puede causar náuseas y favorecer una deficiencia de cobre",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_015.mp4",
+          "asset_id": "v3fd78fab53e:s05-marisco-m048:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m049",
+      "section_id": "s05-marisco",
+      "from": 11690,
+      "duration": 273,
+      "narration": "Y jamás coma ostras crudas pensando que así conservan un poder especial Las ostras crudas pueden",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m050",
+      "section_id": "s05-marisco",
+      "from": 11963,
+      "duration": 215,
+      "narration": "jamás coma ostras crudas pensando que así conservan un poder especial Las ostras crudas pueden transmitir infecciones graves",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "Jamás coma ostras crudas: pueden transmitir infecciones",
+          "sub": "Cocínelas por completo; con alergia, este alimento queda fuera",
+          "detail": "Ostra cruda que se aparta del cuadro y entra la misma ostra cocida al vapor",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "hard-contraindication",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s05-marisco-m051",
+      "section_id": "s05-marisco",
+      "from": 12178,
+      "duration": 242,
+      "narration": "edad avanzada Cocínelas por completo Si existe alergia a los mariscos este alimento queda fuera Sin negociación",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_016.mp4",
+          "asset_id": "v3fd78fab53e:s05-marisco-m051:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m052",
+      "section_id": "s06-carne",
+      "from": 12420,
+      "duration": 274,
+      "narration": "El cuarto es la carne roja magra Sé que este punto genera discusiones clears throat A ver una",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_011.png",
+          "asset_id": "v3fd78fab53e:s06-carne-m052:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m053",
+      "section_id": "s06-carne",
+      "from": 12694,
+      "duration": 257,
+      "narration": "porción moderada de carne magra aporta proteína hierro vitamina B doce y zinc Estos nutrientes ayudan a formar",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m054",
+      "section_id": "s06-carne",
+      "from": 12951,
+      "duration": 242,
+      "narration": "sangre sostener energía y conservar tejido muscular Una deficiencia puede causar cansancio pero cansancio no significa automáticamente testosterona",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_017.mp4",
+          "asset_id": "v3fd78fab53e:s06-carne-m054:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m055",
+      "section_id": "s06-carne",
+      "from": 13193,
+      "duration": 325,
+      "narration": "La porción no necesita ocupar medio plato Piense en un trozo cocido aproximadamente del tamaño de la palma",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_018.mp4",
+          "asset_id": "v3fd78fab53e:s06-carne-m055:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m056",
+      "section_id": "s06-carne",
+      "from": 13518,
+      "duration": 252,
+      "narration": "trozo cocido aproximadamente del tamaño de la palma de su mano Elija cortes magros Quite la grasa visible",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Un trozo cocido del tamaño de su palma",
+          "sub": "Elija cortes magros y quite la grasa visible",
+          "detail": "Mano abierta junto al corte cocido; la porción se ajusta a esa escala",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "portion-scale",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 1,
+          "total": 3,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m057",
+      "section_id": "s06-carne",
+      "from": 13770,
+      "duration": 270,
+      "narration": "La carne procesada es otra historia Salchichas tocino chorizos y fiambres no deben convertirse en su",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m058",
+      "section_id": "s06-carne",
+      "from": 14040,
+      "duration": 217,
+      "narration": "Salchichas tocino chorizos y fiambres no deben convertirse en su fuente hormonal Suelen concentrar sodio y grasas",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "La carne procesada no debe ser su fuente hormonal",
+          "sub": "Salchichas, tocino, chorizos y fiambres concentran sodio y grasas",
+          "detail": "Publicidad de desayuno fuerte que se despega y deja ver la etiqueta de sodio",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "processed-meat-warning",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Salchichas",
+            "Tocino",
+            "Chorizos",
+            "Fiambres"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06-carne-m059",
+      "section_id": "s06-carne",
+      "from": 14257,
+      "duration": 241,
+      "narration": "la salud La industria puede venderle un desayuno de hombre fuerte Su corazón no reconoce la publicidad",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_012.png",
+          "asset_id": "v3fd78fab53e:s06-carne-m059:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m060",
+      "section_id": "s07-yogur",
+      "from": 14498,
+      "duration": 252,
+      "narration": "El quinto alimento es el yogur natural alto en proteína como el yogur griego sin azúcar Aquí",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_019.mp4",
+          "asset_id": "v3fd78fab53e:s07-yogur-m060:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m061",
+      "section_id": "s07-yogur",
+      "from": 14750,
+      "duration": 221,
+      "narration": "músculo responde menos al mismo estímulo Por eso repartir proteína durante el día suele resultar más útil",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Con la edad el músculo responde menos al mismo",
+          "sub": "Repartir proteína durante el día suele resultar más útil",
+          "detail": "Fibra muscular que responde débil a un estímulo y mejor cuando llegan tres pulsos repartidos",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "anabolic-resistance",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m062",
+      "section_id": "s07-yogur",
+      "from": 14971,
+      "duration": 259,
+      "narration": "la edad aparece resistencia anabólica cómo se llama de manera sencilla El músculo responde menos al mismo estímulo",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m063",
+      "section_id": "s07-yogur",
+      "from": 15230,
+      "duration": 236,
+      "narration": "Por eso repartir proteína durante el día suele resultar más útil que dejar casi toda para la cena",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_020.mp4",
+          "asset_id": "v3fd78fab53e:s07-yogur-m063:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m064",
+      "section_id": "s07-yogur",
+      "from": 15466,
+      "duration": 275,
+      "narration": "Un recipiente de yogur natural puede convertirse en desayuno o merienda Agregue frutos rojos y una cucharada de",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_013.png",
+          "asset_id": "v3fd78fab53e:s07-yogur-m064:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m065",
+      "section_id": "s07-yogur",
+      "from": 15741,
+      "duration": 302,
+      "narration": "los que parecen postre con jarabes y grandes cantidades de azúcar añadida Si tiene intolerancia a la lactosa",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m066",
+      "section_id": "s07-yogur",
+      "from": 16043,
+      "duration": 288,
+      "narration": "sin lactosa Si padece enfermedad renal avanzada la cantidad de proteína fósforo y potasio debe ajustarse con su",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_021.mp4",
+          "asset_id": "v3fd78fab53e:s07-yogur-m066:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m067",
+      "section_id": "s07-yogur",
+      "from": 16331,
+      "duration": 271,
+      "narration": "Y ahora viene una pista importante Los primeros cinco alimentos aportan materias primas Los siguientes comienzan a resolver",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_022.mp4",
+          "asset_id": "v3fd78fab53e:s07-yogur-m067:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s07-yogur-m068",
+      "section_id": "s07-yogur",
+      "from": 16602,
+      "duration": 101,
+      "narration": "primeros cinco alimentos aportan materias primas Los siguientes",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Los primeros cinco aportan materias primas",
+          "sub": "Los siguientes resuelven fibra, saciedad y cintura",
+          "detail": "La rejilla de doce se parte: cinco quedan atrás iluminados y siete avanzan al frente",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "series-pivot",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s08-semillas-m069",
+      "section_id": "s08-semillas",
+      "from": 16703,
+      "duration": 249,
+      "narration": "El sexto alimento son las semillas de calabaza Aportan magnesio zinc grasas insaturadas y algo de proteína No",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s08-semillas-m070",
+      "section_id": "s08-semillas",
+      "from": 16952,
+      "duration": 238,
+      "narration": "tratamiento hormonal pero una pequeña porción puede mejorar la calidad de una dieta basada en pan fideos y",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_014.png",
+          "asset_id": "v3fd78fab53e:s08-semillas-m070:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s08-semillas-m071",
+      "section_id": "s08-semillas",
+      "from": 17190,
+      "duration": 252,
+      "narration": "Use una o dos cucharadas o un puñado pequeño Sin cubrirlas de sal Puede molerlas si le cuesta",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_023.mp4",
+          "asset_id": "v3fd78fab53e:s08-semillas-m071:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s08-semillas-m072",
+      "section_id": "s08-semillas",
+      "from": 17442,
+      "duration": 249,
+      "narration": "dos cucharadas o un puñado pequeño Sin cubrirlas de sal Puede molerlas si le cuesta masticar",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Una o dos cucharadas, o un puñado pequeño",
+          "sub": "Puede molerlas si le cuesta masticar",
+          "detail": "Cuchara que dosifica sobre yogur, ensalada y crema; la bolsa grande queda fuera de foco",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "dose-spoon",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 2,
+          "total": 3,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s08-semillas-m073",
+      "section_id": "s08-semillas",
+      "from": 17691,
+      "duration": 281,
+      "narration": "verduras El error es comerlas directamente de una bolsa grande frente al televisor Son nutritivas pero concentran muchas",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m074",
+      "section_id": "s09-nuez-brasil",
+      "from": 17972,
+      "duration": 334,
+      "narration": "El séptimo alimento es la nuez de Brasil Este es el alimento popular que exige freno Contiene selenio",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_024.mp4",
+          "asset_id": "v3fd78fab53e:s09-nuez-brasil-m074:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m075",
+      "section_id": "s09-nuez-brasil",
+      "from": 18306,
+      "duration": 201,
+      "narration": "ronda los cincuenta y cinco microgramos El problema es que una sola nuez puede contener mucho selenio",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "El requerimiento diario ronda cincuenta y cinco microgramos",
+          "sub": "Una sola nuez puede contener mucho selenio",
+          "detail": "Escala de microgramos donde una única nuez salta muy por encima de la marca diaria",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "trace-mineral-scale",
+          "value": "55 mcg",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m076",
+      "section_id": "s09-nuez-brasil",
+      "from": 18507,
+      "duration": 238,
+      "narration": "El problema es que una sola nuez puede contener mucho selenio y la cantidad varía enormemente según el",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m077",
+      "section_id": "s09-nuez-brasil",
+      "from": 18745,
+      "duration": 282,
+      "narration": "Por eso no recomiendo comer un puñado diario Una unidad ocasional es más sensata No la combine con",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_025.mp4",
+          "asset_id": "v3fd78fab53e:s09-nuez-brasil-m077:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m078",
+      "section_id": "s09-nuez-brasil",
+      "from": 19027,
+      "duration": 236,
+      "narration": "límite máximo tolerable para adultos es de cuatrocientos microgramos al día Un exceso mantenido",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Límite máximo tolerable: cuatrocientos microgramos al día",
+          "sub": "El exceso mantenido daña cabello, uñas y digestión",
+          "detail": "Techo de dosis que se ilumina y detiene la columna ascendente de nueces",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "toxicity-ceiling",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Caída del cabello",
+            "Uñas frágiles",
+            "Malestar digestivo",
+            "Sabor metálico"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m079",
+      "section_id": "s09-nuez-brasil",
+      "from": 19263,
+      "duration": 330,
+      "narration": "día Un exceso mantenido puede causar caída del cabello uñas frágiles malestar digestivo sabor metálico y problemas neurológicos",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_015.png",
+          "asset_id": "v3fd78fab53e:s09-nuez-brasil-m079:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m080",
+      "section_id": "s09-nuez-brasil",
+      "from": 19593,
+      "duration": 206,
+      "narration": "Ve el contraste Algo natural también puede sobrar Natural no significa automáticamente",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s09-nuez-brasil-m081",
+      "section_id": "s09-nuez-brasil",
+      "from": 19799,
+      "duration": 210,
+      "narration": "también puede sobrar Natural no significa automáticamente seguro",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedQuote",
+          "render_component": "FedQuote",
+          "title": "Natural no significa automáticamente seguro",
+          "sub": "Algo natural también puede sobrar",
+          "detail": "Tarjeta clara sobre fondo desaturado con el presentador asomando detrás del borde",
+          "kicker": "",
+          "family": "FedQuote",
+          "layout_family": "principle-quote",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": true,
+          "author": "Federer Building",
+          "role": "Principio del canal",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m082",
+      "section_id": "s10-legumbres",
+      "from": 20009,
+      "duration": 268,
+      "narration": "El octavo alimento son las legumbres Lentejas garbanzos frijoles y arvejas aportan proteína vegetal fibra magnesio y carbohidratos",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_026.mp4",
+          "asset_id": "v3fd78fab53e:s10-legumbres-m082:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m083",
+      "section_id": "s10-legumbres",
+      "from": 20277,
+      "duration": 291,
+      "narration": "de digestión más lenta No parecen un alimento masculino en los anuncios porque no vienen dentro de una",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_016.png",
+          "asset_id": "v3fd78fab53e:s10-legumbres-m083:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m084",
+      "section_id": "s10-legumbres",
+      "from": 20568,
+      "duration": 274,
+      "narration": "lata negra Sin embargo ayudan en un punto mucho más serio saciedad control glucémico y reemplazo de carnes",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m085",
+      "section_id": "s10-legumbres",
+      "from": 20842,
+      "duration": 242,
+      "narration": "Empiece con media taza cocida si no suele consumirlas Aumente poco a poco para reducir gases Enjuague las",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_017.png",
+          "asset_id": "v3fd78fab53e:s10-legumbres-m085:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m086",
+      "section_id": "s10-legumbres",
+      "from": 21084,
+      "duration": 181,
+      "narration": "Aumente poco a poco para reducir gases Enjuague las de lata para retirar parte del sodio",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Empiece con media taza cocida y aumente poco a",
+          "sub": "Enjuague las de lata para retirar parte del sodio",
+          "detail": "Taza que se llena a la mitad y una rampa suave que sube durante varias semanas",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "legume-ramp",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 1,
+          "total": 4,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m087",
+      "section_id": "s10-legumbres",
+      "from": 21265,
+      "duration": 306,
+      "narration": "a un hombre Comer una cantidad normal de legumbres o alimentos de soja no ha demostrado derrumbar la",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_027.mp4",
+          "asset_id": "v3fd78fab53e:s10-legumbres-m087:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m088",
+      "section_id": "s10-legumbres",
+      "from": 21571,
+      "duration": 211,
+      "narration": "Ese mito vende miedo La realidad es menos dramática Una ensalada de garbanzos con huevo y",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m089",
+      "section_id": "s10-legumbres",
+      "from": 21782,
+      "duration": 242,
+      "narration": "aceite de oliva puede ofrecer proteína fibra y grasas saludables en el mismo plato Es mucho",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_028.mp4",
+          "asset_id": "v3fd78fab53e:s10-legumbres-m089:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s10-legumbres-m090",
+      "section_id": "s10-legumbres",
+      "from": 22024,
+      "duration": 302,
+      "narration": "más útil que discutir si una cucharada de alguna raíz desconocida cambia una hormona durante dos horas",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_018.png",
+          "asset_id": "v3fd78fab53e:s10-legumbres-m090:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m091",
+      "section_id": "s11-aceite-aguacate",
+      "from": 22326,
+      "duration": 224,
+      "narration": "El noveno alimento es el aceite de oliva extra virgen Aporta grasas monoinsaturadas y compuestos fenólicos",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m092",
+      "section_id": "s11-aceite-aguacate",
+      "from": 22550,
+      "duration": 206,
+      "narration": "Puede sustituir manteca margarina dura o salsas muy procesadas Una dieta extremadamente baja en grasa no",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_029.mp4",
+          "asset_id": "v3fd78fab53e:s11-aceite-aguacate-m092:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m093",
+      "section_id": "s11-aceite-aguacate",
+      "from": 22756,
+      "duration": 272,
+      "narration": "suele ser una buena estrategia para la producción hormonal ni para la absorción de vitaminas liposolubles",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_030.mp4",
+          "asset_id": "v3fd78fab53e:s11-aceite-aguacate-m093:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m094",
+      "section_id": "s11-aceite-aguacate",
+      "from": 23028,
+      "duration": 242,
+      "narration": "Pero tampoco hay que beber aceite Una cucharada aporta alrededor de ciento veinte calorías Úselo para",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m095",
+      "section_id": "s11-aceite-aguacate",
+      "from": 23270,
+      "duration": 72,
+      "narration": "cucharada aporta alrededor de ciento veinte calorías",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Una cucharada aporta alrededor de ciento veinte calorías",
+          "sub": "Verterlo sin mirar suma calorías sin saciedad",
+          "detail": "Cuchara medida contra un chorro libre; el segundo acumula tres veces más volumen",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "calorie-density",
+          "value": "120",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m096",
+      "section_id": "s11-aceite-aguacate",
+      "from": 23342,
+      "duration": 324,
+      "narration": "cuatrocientas calorías sin sentir mayor saciedad Guarde este dato porque se conecta directamente con el error final",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_019.png",
+          "asset_id": "v3fd78fab53e:s11-aceite-aguacate-m096:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m097",
+      "section_id": "s11-aceite-aguacate",
+      "from": 23666,
+      "duration": 284,
+      "narration": "El décimo alimento es el aguacate o palta Aporta grasa monoinsaturada fibra y potasio Ayuda a reemplazar mayonesa",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_031.mp4",
+          "asset_id": "v3fd78fab53e:s11-aceite-aguacate-m097:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m098",
+      "section_id": "s11-aceite-aguacate",
+      "from": 23950,
+      "duration": 243,
+      "narration": "crema o productos untables de peor calidad Medio aguacate pequeño puede ser una porción razonable para muchas personas",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m099",
+      "section_id": "s11-aceite-aguacate",
+      "from": 24193,
+      "duration": 265,
+      "narration": "No eleva la testosterona por arte de magia Su valor está en construir un patrón de alimentación que",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_032.mp4",
+          "asset_id": "v3fd78fab53e:s11-aceite-aguacate-m099:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m100",
+      "section_id": "s11-aceite-aguacate",
+      "from": 24458,
+      "duration": 244,
+      "narration": "saciante y cardioprotector Si toma medicamentos que exigen controlar el potasio o tiene enfermedad renal pregunte qué cantidad",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_020.png",
+          "asset_id": "v3fd78fab53e:s11-aceite-aguacate-m100:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s11-aceite-aguacate-m101",
+      "section_id": "s11-aceite-aguacate",
+      "from": 24702,
+      "duration": 283,
+      "narration": "Y si está tratando de perder grasa abdominal mida la porción Saludable y libre de calorías no significan",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m102",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 24985,
+      "duration": 306,
+      "narration": "El undécimo alimento son las verduras crucíferas brócoli coliflor repollo y coles de Bruselas En internet se afirma",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_033.mp4",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m102:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m103",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 25291,
+      "duration": 340,
+      "narration": "que eliminan estrógenos y liberan testosterona Esa frase exagera muchísimo lo que sabemos Estas verduras contienen fibra vitaminas",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_034.mp4",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m103:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m104",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 25631,
+      "duration": 268,
+      "narration": "compuestos bioactivos Ayudan a llenar el plato con pocas calorías y apoyan la salud metabólica Eso sí es",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m105",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 25899,
+      "duration": 283,
+      "narration": "Cocínelas hasta que queden tiernas si le producen gases Si usa warfarina no necesita prohibir",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_021.png",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m105:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m106",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 26182,
+      "duration": 199,
+      "narration": "todas las verduras con vitamina K Necesita mantener una cantidad relativamente constante y coordinarla con quien",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_035.mp4",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m106:clean_stock",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m107",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 26381,
+      "duration": 214,
+      "narration": "controla su anticoagulación Cambiar de cero a un plato enorme cada día puede alterar el tratamiento",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m108",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 26595,
+      "duration": 267,
+      "narration": "Y no tema que el brócoli dañe la tiroides por comer una porción cocida El",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_036.mp4",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m108:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m109",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 26862,
+      "duration": 62,
+      "narration": "dosis y el contexto vuelven a mandar",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "La dosis y el contexto vuelven a mandar",
+          "sub": "Una porción cocida no es un volumen crudo diario",
+          "detail": "Dos platos idénticos separados por escala y frecuencia; solo cambia la cantidad y la forma",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "dose-context",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m110",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 26924,
+      "duration": 318,
+      "narration": "los días teniendo además una deficiencia de yodo La dosis y el contexto vuelven a mandar",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m111",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 27242,
+      "duration": 282,
+      "narration": "El duodécimo alimento son los frutos rojos fresas arándanos moras y frambuesas No son estimulantes hormonales",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_037.mp4",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m111:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m112",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 27524,
+      "duration": 198,
+      "narration": "directos Aportan fibra y polifenoles y pueden reemplazar postres con azúcar añadida Su beneficio es silencioso",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_022.png",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m112:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m113",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 27722,
+      "duration": 191,
+      "narration": "ayudan a que la dieta proteja vasos sanguíneos y resulte compatible con el control del peso",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m114",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 27913,
+      "duration": 207,
+      "narration": "Media taza o una taza frescos o congelados sin azúcar funciona bien con yogur o avena Si vive",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_038.mp4",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m114:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m115",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 28120,
+      "duration": 214,
+      "narration": "con diabetes la fruta puede formar parte de su alimentación pero la porción y el resto de la",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_023.png",
+          "asset_id": "v3fd78fab53e:s12-cruciferas-frutos-m115:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12-cruciferas-frutos-m116",
+      "section_id": "s12-cruciferas-frutos",
+      "from": 28334,
+      "duration": 191,
+      "narration": "comida importan El jugo no equivale a la fruta entera Se bebe rápido aporta menos fibra y sacia",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m117",
+      "section_id": "s13-dia-real",
+      "from": 28525,
+      "duration": 226,
+      "narration": "Hasta aquí ya tiene los doce Pero una lista no sirve si no sabe cómo unirla Imagine y",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_024.png",
+          "asset_id": "v3fd78fab53e:s13-dia-real-m117:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m118",
+      "section_id": "s13-dia-real",
+      "from": 28751,
+      "duration": 149,
+      "narration": "ejemplo no una prescripción personal un día sencillo En el desayuno dos huevos",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Un día sencillo: desayuno con huevos o yogur",
+          "sub": "Ejemplo, no una prescripción personal",
+          "detail": "Mesa que avanza de mañana a noche; tres platos entran desde fuera de cuadro",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "day-plan-opening",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m119",
+      "section_id": "s13-dia-real",
+      "from": 28900,
+      "duration": 285,
+      "narration": "y una rebanada de pan integral O yogur natural con frutos rojos y una cucharada de semillas de",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_039.mp4",
+          "asset_id": "v3fd78fab53e:s13-dia-real-m119:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m120",
+      "section_id": "s13-dia-real",
+      "from": 29185,
+      "duration": 244,
+      "narration": "Al mediodía lentejas con verduras aceite de oliva medido y un huevo En la cena sardinas o",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m121",
+      "section_id": "s13-dia-real",
+      "from": 29429,
+      "duration": 248,
+      "narration": "pescado azul con brócoli y una porción de papa o arroz Otro día puede usar carne magra",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_040.mp4",
+          "asset_id": "v3fd78fab53e:s13-dia-real-m121:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m122",
+      "section_id": "s13-dia-real",
+      "from": 29677,
+      "duration": 243,
+      "narration": "Otro mejillones bien cocidos No necesita comer los doce alimentos en veinticuatro horas Necesita rotarlos durante la semana",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_025.png",
+          "asset_id": "v3fd78fab53e:s13-dia-real-m122:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m123",
+      "section_id": "s13-dia-real",
+      "from": 29920,
+      "duration": 257,
+      "narration": "Y cuánta proteína Depende del peso la actividad y la salud renal Muchos adultos mayores se benefician al",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m124",
+      "section_id": "s13-dia-real",
+      "from": 30177,
+      "duration": 272,
+      "narration": "discutir con su profesional una ingesta superior al mínimo básico distribuida entre las comidas Pero no voy a",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_041.mp4",
+          "asset_id": "v3fd78fab53e:s13-dia-real-m124:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13-dia-real-m125",
+      "section_id": "s13-dia-real",
+      "from": 30449,
+      "duration": 322,
+      "narration": "una cifra personalizada sin conocer su historia Si tiene enfermedad renal hepática o problemas para tragar la estrategia",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_042.mp4",
+          "asset_id": "v3fd78fab53e:s13-dia-real-m125:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m126",
+      "section_id": "s14-fuerza-sueno",
+      "from": 30771,
+      "duration": 266,
+      "narration": "Hay otra verdad que las etiquetas de potenciadores prefieren ocultar Comer proteína sin exigirle nada al músculo",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m127",
+      "section_id": "s14-fuerza-sueno",
+      "from": 31037,
+      "duration": 150,
+      "narration": "músculo necesita una señal Dos o tres sesiones semanales de ejercicios de fuerza",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Dos o tres sesiones semanales de ejercicios de fuerza",
+          "sub": "El músculo necesita una señal, no solo proteína",
+          "detail": "Semana con dos o tres marcas de fuerza y una barra de función que se sostiene",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "strength-dose",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 2,
+          "total": 4,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m128",
+      "section_id": "s14-fuerza-sueno",
+      "from": 31187,
+      "duration": 233,
+      "narration": "fuerza adaptadas a su capacidad suelen ser una herramienta mucho más directa para conservar fuerza y función",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_026.png",
+          "asset_id": "v3fd78fab53e:s14-fuerza-sueno-m128:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m129",
+      "section_id": "s14-fuerza-sueno",
+      "from": 31420,
+      "duration": 261,
+      "narration": "No tiene que levantar una barra olímpica Puede comenzar con levantarse de una silla empujar una pared usar",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_043.mp4",
+          "asset_id": "v3fd78fab53e:s14-fuerza-sueno-m129:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m130",
+      "section_id": "s14-fuerza-sueno",
+      "from": 31681,
+      "duration": 268,
+      "narration": "elásticas o cargar objetos seguros Si ha tenido dolor de pecho desmayos falta de aire fuera de proporción",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m131",
+      "section_id": "s14-fuerza-sueno",
+      "from": 31949,
+      "duration": 222,
+      "narration": "una enfermedad cardíaca inestable consulte antes de iniciar un esfuerzo nuevo Esas son señales para evaluar no para",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_044.mp4",
+          "asset_id": "v3fd78fab53e:s14-fuerza-sueno-m131:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m132",
+      "section_id": "s14-fuerza-sueno",
+      "from": 32171,
+      "duration": 214,
+      "narration": "El sueño también pesa La testosterona sigue un ritmo diario y gran parte de su producción se",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_027.png",
+          "asset_id": "v3fd78fab53e:s14-fuerza-sueno-m132:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m133",
+      "section_id": "s14-fuerza-sueno",
+      "from": 32385,
+      "duration": 247,
+      "narration": "relaciona con el descanso nocturno Si ronca fuerte se despierta ahogado tiene sueño durante el día o alguien",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14-fuerza-sueno-m134",
+      "section_id": "s14-fuerza-sueno",
+      "from": 32632,
+      "duration": 288,
+      "narration": "observa que deja de respirar piense en apnea del sueño No la trate con semillas Pida una evaluación",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_045.mp4",
+          "asset_id": "v3fd78fab53e:s14-fuerza-sueno-m134:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m135",
+      "section_id": "s15-senales",
+      "from": 32920,
+      "duration": 351,
+      "narration": "Y si presenta disminución persistente del deseo sexual pérdida marcada de fuerza menos erecciones espontáneas cambios",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_046.mp4",
+          "asset_id": "v3fd78fab53e:s15-senales-m135:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m136",
+      "section_id": "s15-senales",
+      "from": 33271,
+      "duration": 199,
+      "narration": "muchas causas Anemia alteraciones tiroideas depresión diabetes efectos de medicamentos y problemas del sueño",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Deseo, fuerza, ánimo y cansancio tienen muchas causas",
+          "sub": "Anemia, tiroides, depresión, diabetes o problemas del sueño",
+          "detail": "Un síntoma en el centro con varias rutas causales que se abren hacia atrás",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "differential-signals",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [
+            "Anemia",
+            "Alteraciones tiroideas",
+            "Depresión",
+            "Efectos de medicamentos"
+          ],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m137",
+      "section_id": "s15-senales",
+      "from": 33470,
+      "duration": 261,
+      "narration": "por muchas causas Anemia alteraciones tiroideas depresión diabetes efectos de medicamentos y problemas del sueño pueden parecerse",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m138",
+      "section_id": "s15-senales",
+      "from": 33731,
+      "duration": 259,
+      "narration": "La testosterona baja se confirma con síntomas compatibles y análisis realizados correctamente por lo general en la mañana",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_028.png",
+          "asset_id": "v3fd78fab53e:s15-senales-m138:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m139",
+      "section_id": "s15-senales",
+      "from": 33990,
+      "duration": 296,
+      "narration": "cuando corresponde Un solo resultado aislado no cuenta toda la historia Si ya usa testosterona recetada no modifique",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_047.mp4",
+          "asset_id": "v3fd78fab53e:s15-senales-m139:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m140",
+      "section_id": "s15-senales",
+      "from": 34286,
+      "duration": 238,
+      "narration": "por cambiar la dieta El tratamiento necesita seguimiento porque puede afectar la sangre la fertilidad y otros aspectos",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m141",
+      "section_id": "s15-senales",
+      "from": 34524,
+      "duration": 232,
+      "narration": "sighs Me da cierta bronca cuando se presenta cualquier cansancio como falta de testosterona Un hombre termina",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_048.mp4",
+          "asset_id": "v3fd78fab53e:s15-senales-m141:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m142",
+      "section_id": "s15-senales",
+      "from": 34756,
+      "duration": 125,
+      "narration": "nadie le pregunta si duerme cuánto alcohol toma qué medicamentos usa",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Cualquier cansancio no es falta de testosterona",
+          "sub": "Nadie le pregunta si duerme o qué medicamentos usa",
+          "detail": "Rótulo inferior sobrio sobre el presentador, con frascos vacíos desenfocados detrás",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "editorial-stance",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s15-senales-m143",
+      "section_id": "s15-senales",
+      "from": 34881,
+      "duration": 172,
+      "narration": "si duerme cuánto alcohol toma qué medicamentos usa o por qué perdió fuerza en el último año",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m144",
+      "section_id": "s16-error",
+      "from": 35053,
+      "duration": 151,
+      "narration": "Ahora sí el error prometido No es comer uno de estos",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_049.mp4",
+          "asset_id": "v3fd78fab53e:s16-error-m144:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m145",
+      "section_id": "s16-error",
+      "from": 35204,
+      "duration": 228,
+      "narration": "error prometido No es comer uno de estos alimentos Es sumar los doce encima de todo",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "El error: sumar los doce encima de todo",
+          "sub": "No es comer uno de estos alimentos",
+          "detail": "El plato se apila capa sobre capa hasta desbordar; nada sale para dejar lugar",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "error-reveal",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m146",
+      "section_id": "s16-error",
+      "from": 35432,
+      "duration": 267,
+      "narration": "Agrega huevos pero conserva las galletas Agrega aguacate pero también la mayonesa Agrega nueces semillas y aceite sin",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_029.png",
+          "asset_id": "v3fd78fab53e:s16-error-m146:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m147",
+      "section_id": "s16-error",
+      "from": 35699,
+      "duration": 222,
+      "narration": "batido después de cenar aunque no tenga hambre Cada alimento parece saludable por separado Juntos pueden crear un",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m148",
+      "section_id": "s16-error",
+      "from": 35921,
+      "duration": 299,
+      "narration": "Ese exceso aumenta la grasa abdominal Y la grasa abdominal no es un depósito pasivo Se relaciona con",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_050.mp4",
+          "asset_id": "v3fd78fab53e:s16-error-m148:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m149",
+      "section_id": "s16-error",
+      "from": 36220,
+      "duration": 92,
+      "narration": "testosterona en estrógenos mediante una enzima llamada aromatasa",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "La grasa abdominal convierte testosterona en estrógenos",
+          "sub": "Mediante una enzima llamada aromatasa",
+          "detail": "Tejido abdominal activo con una enzima que transforma la molécula en su camino",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "aromatase-pathway",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m150",
+      "section_id": "s16-error",
+      "from": 36312,
+      "duration": 250,
+      "narration": "Ahí está la paradoja una dieta armada para apoyar la testosterona puede perjudicar el entorno hormonal si agranda",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_030.png",
+          "asset_id": "v3fd78fab53e:s16-error-m150:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m151",
+      "section_id": "s16-error",
+      "from": 36562,
+      "duration": 277,
+      "narration": "La solución no es quitar todas las grasas ni pasar hambre Es reemplazar Sardinas en lugar de salchichas",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m152",
+      "section_id": "s16-error",
+      "from": 36839,
+      "duration": 207,
+      "narration": "natural en lugar de postre azucarado Legumbres en lugar de una parte de la carne procesada Aceite de",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_031.png",
+          "asset_id": "v3fd78fab53e:s16-error-m152:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s16-error-m153",
+      "section_id": "s16-error",
+      "from": 37046,
+      "duration": 228,
+      "narration": "medido en lugar de agregar aceite sobre una comida que ya tenía salsa Fruta entera en lugar de",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_051.mp4",
+          "asset_id": "v3fd78fab53e:s16-error-m153:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m154",
+      "section_id": "s17-resumen",
+      "from": 37274,
+      "duration": 293,
+      "narration": "Y existe otro error más silencioso hacer una dieta extrema para perder peso con rapidez Comer demasiado poco",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m155",
+      "section_id": "s17-resumen",
+      "from": 37567,
+      "duration": 279,
+      "narration": "semanas puede reducir energía fuerza masa muscular y hormonas sexuales Después de los sesenta perder músculo no es",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_052.mp4",
+          "asset_id": "v3fd78fab53e:s17-resumen-m155:clean_stock",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m156",
+      "section_id": "s17-resumen",
+      "from": 37846,
+      "duration": 279,
+      "narration": "El objetivo razonable es reducir grasa cuando sobra mientras se protege músculo con proteína suficiente fuerza y un",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_032.png",
+          "asset_id": "v3fd78fab53e:s17-resumen-m156:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m157",
+      "section_id": "s17-resumen",
+      "from": 38125,
+      "duration": 292,
+      "narration": "Así que hagamos el resumen práctico Primero elija dos fuentes principales de proteína para mañana huevos yogur",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m158",
+      "section_id": "s17-resumen",
+      "from": 38417,
+      "duration": 91,
+      "narration": "elija dos fuentes principales de proteína para mañana",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Elija dos fuentes principales de proteína para mañana",
+          "sub": "Repártalas entre dos o tres comidas",
+          "detail": "Siete tarjetas de acción que se ordenan; la primera avanza al frente",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "action-recap",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": 1,
+          "total": 7,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m159",
+      "section_id": "s17-resumen",
+      "from": 38508,
+      "duration": 245,
+      "narration": "lugar de guardarla toda para la noche Tercero incluya verduras y fruta entera para desplazar productos ultraprocesados",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_053.mp4",
+          "asset_id": "v3fd78fab53e:s17-resumen-m159:clean_stock",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m160",
+      "section_id": "s17-resumen",
+      "from": 38753,
+      "duration": 262,
+      "narration": "Cuarto use semillas aguacate y aceite de oliva en porciones medidas Quinto no coma puñados de nueces de",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_054.mp4",
+          "asset_id": "v3fd78fab53e:s17-resumen-m160:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m161",
+      "section_id": "s17-resumen",
+      "from": 39015,
+      "duration": 290,
+      "narration": "Brasil ni combine alimentos ricos en minerales con suplementos a ciegas Sexto acompañe la comida con ejercicios de",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s17-resumen-m162",
+      "section_id": "s17-resumen",
+      "from": 39305,
+      "duration": 309,
+      "narration": "y sueño suficiente Y séptimo si hay síntomas persistentes pida una evaluación médica en vez de comprar un",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_033.png",
+          "asset_id": "v3fd78fab53e:s17-resumen-m162:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m163",
+      "section_id": "s18-cierre",
+      "from": 39614,
+      "duration": 215,
+      "narration": "De los doce alimentos cuáles ya tiene en casa y cuál le cuesta más incorporar Cuéntemelo en los",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_055.mp4",
+          "asset_id": "v3fd78fab53e:s18-cierre-m163:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m164",
+      "section_id": "s18-cierre",
+      "from": 39829,
+      "duration": 330,
+      "narration": "el país desde donde nos escucha Esa información me ayuda a preparar ejemplos con alimentos que realmente se",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m165",
+      "section_id": "s18-cierre",
+      "from": 40159,
+      "duration": 379,
+      "narration": "Si este tipo de explicación le resulta útil suscríbase a Federer Building Comparta el video con esa persona",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_056.mp4",
+          "asset_id": "v3fd78fab53e:s18-cierre-m165:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m166",
+      "section_id": "s18-cierre",
+      "from": 40538,
+      "duration": 86,
+      "narration": "guarde esta lista para planificar su próxima compra porque una decisión repetida cada semana vale más",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedCta",
+          "render_component": "FedCta",
+          "title": "Guarde esta lista para su próxima compra",
+          "sub": "Una decisión repetida cada semana vale más",
+          "detail": "Lista escrita a mano que se dobla y entra en el bolsillo junto a la bolsa de compras",
+          "kicker": "",
+          "family": "FedCta",
+          "layout_family": "closing-invite",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m167",
+      "section_id": "s18-cierre",
+      "from": 40624,
+      "duration": 259,
+      "narration": "próxima compra porque una decisión repetida cada semana vale más que un alimento perfecto consumido una sola vez",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_034.png",
+          "asset_id": "v3fd78fab53e:s18-cierre-m167:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m168",
+      "section_id": "s18-cierre",
+      "from": 40883,
+      "duration": 304,
+      "narration": "En el próximo video voy a mostrarle algo todavía más concreto las señales que diferencian una posible testosterona",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m169",
+      "section_id": "s18-cierre",
+      "from": 41187,
+      "duration": 263,
+      "narration": "la pérdida normal de condición física y las preguntas exactas que conviene llevar a la consulta antes de",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_057.mp4",
+          "asset_id": "v3fd78fab53e:s18-cierre-m169:clean_stock",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m170",
+      "section_id": "s18-cierre",
+      "from": 41450,
+      "duration": 173,
+      "narration": "Bah al final no se trata de perseguir la juventud en un frasco Se trata",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v3fd78fab53e/v3fd78fab53e_stock_058.mp4",
+          "asset_id": "v3fd78fab53e:s18-cierre-m170:clean_stock",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m171",
+      "section_id": "s18-cierre",
+      "from": 41623,
+      "duration": 220,
+      "narration": "de darle al cuerpo materia prima movimiento y descanso Coma con criterio Mida lo que",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v3fd78fab53e.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18-cierre-m172",
+      "section_id": "s18-cierre",
+      "from": 41843,
+      "duration": 167,
+      "narration": "concentra calorías Proteja el músculo Y por favor no sea terco con las señales de alarma",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v3fd78fab53e_presenter_035.png",
+          "asset_id": "v3fd78fab53e:s18-cierre-m172:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 172,
+    "avatar_scenes": 49,
+    "clip_scenes": 58,
+    "image_scenes": 35,
+    "component_scenes": 30,
+    "distinct_render_components": 9,
+    "duration_seconds": 1400.33,
+    "unresolved_assets": 0,
+    "visual_v3": {
+      "moments": 172,
+      "counts": {
+        "avatar_full": 49,
+        "clean_stock": 58,
+        "presenter_action": 35,
+        "hero_component": 30
+      },
+      "ratios": {
+        "avatar_full": 0.2849,
+        "clean_stock": 0.3372,
+        "presenter_action": 0.2035,
+        "hero_component": 0.1744
+      },
+      "clean_media_without_overlay_ratio": 1,
+      "clean_media_mix_ratio": 0.3372,
+      "hero_families": 30,
+      "rendered_components": 9,
+      "dominant_rendered_component_share": 0.2,
+      "max_consecutive_rendered_component": 1,
+      "transition_modes": 5,
+      "clean_cut_ratio": 0.3023,
+      "max_consecutive_transition": 1,
+      "presenter_section_coverage": 1
+    }
+  }
+}
