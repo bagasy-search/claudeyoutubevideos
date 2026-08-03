@@ -18,7 +18,7 @@ import {
 } from "../FedererKit";
 
 const accent = "#E9B44C";
-const publicAsset = (value?: string | null) => value && /\.(?:png|jpe?g|webp|gif|avif)$/i.test(value) ? staticFile(value) : undefined;
+const publicAsset = (value?: string | null) => value && /.(?:png|jpe?g|webp|gif|avif)$/i.test(value) ? staticFile(value) : undefined;
 const transitionVariant = (scene:any): "none"|"whip"|"lift"|"iris"|"fold" => {
   const value = String(scene.transition || scene.layers?.[0]?.transition_variant || "none").toLowerCase();
   return (["none","whip","lift","iris","fold"] as const).includes(value as any) ? value as any : "none";
