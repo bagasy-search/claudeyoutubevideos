@@ -5,6 +5,7 @@ import { ErrorStinger } from "../_fed6/VideoEdit/scenes/ErrorStinger";
 import { GuardaEsto } from "../_fed6/VideoEdit/scenes/GuardaEsto";
 import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
 import { MitoVerdad } from "../_fed6/VideoEdit/scenes/MitoVerdad";
+import { ChapterTitle, THEME_MEDICO } from "../_fed6/VideoEdit/kit/premium";
 import { renderFederer2Comp } from "../_fed6/VideoEdit/FedererComponents2";
 import timeline from "./timeline_v9uz8m1rssch.json";
 
@@ -16,13 +17,7 @@ const AVATAR_WAV = "v9uz8m1rssch.wav";
 const scenes: any[] = timeline.scenes as any[];
 const secF = (s: number) => Math.round(s * FPS);
 
-// Pool de láminas gpt-image temáticas (agua/hidratación/circulación/libido +60).
-// Rutas CRUDAS (Media/sf resuelve staticFile), round-robin para los explainers con imagen.
-const IMG_POOL: string[] = Array.from({ length: 18 }, (_, i) =>
-  `img/v9uz8m1rssch_image_${String(i + 1).padStart(3, "0")}.png`
-);
-
-// Etiqueta ES del bloque de acento por FAMILIA del director.
+// etiqueta ES del bloque de acento por FAMILIA que emitió el director
 const EYEBROW: Record<string, string> = {
   contrast_split: "EN CONTRASTE",
   body_signal_grid: "SEÑALES DEL CUERPO",
@@ -40,80 +35,77 @@ const EYEBROW: Record<string, string> = {
   checklist_plan: "TU PLAN",
   evidence: "DATO",
 };
-
-// FAMILIA del director -> KIND _fed6 REAL (explainer temático data-driven, NO tarjeta de texto).
-// 10 familias distintas de kind; ninguna >25% de los beats de componente.
-const FAM2KIND: Record<string, string> = {
-  mechanism_diagram: "process",      // NumberedSteps: agua -> volumen -> flujo -> firmeza
-  daily_timeline: "process",         // NumberedSteps con horarios del día
-  cause_chain: "ingredients",        // FlowSteps: deshidratación -> ... -> menos respuesta
-  loop_cycle: "splitlist",           // BulletCascade: el ciclo que se retroalimenta
-  comparison_scale: "chips",         // SplitPanel: deshidratado vs hidratado + lámina
-  contrast_split: "chips",           // SplitPanel: el freno vs el alivio + lámina
-  dose_meter: "stat",                // BigStatReveal: los vasos por día
-  urine_color_scale: "annotated",    // CutawayCallouts sobre lámina de escala de color
-  anatomy_callout: "callout",        // CalloutMark sobre lámina anatómica
-  body_signal_grid: "checklist",     // ChecklistReveal: señales de deshidratación
-  checklist_plan: "checklist",       // ChecklistReveal: el plan diario
-  safety_boundary: "errorstinger",   // ErrorStinger (warn): el límite de seguridad
-  med_interaction_panel: "errorstinger",
-  myth_vs_fact: "mitoverdad",        // MitoVerdad (si el título parte mito:verdad)
+// FAMILIA del director -> LISTA de kinds _fed6 REALES (round-robin por familia → variedad).
+// Cada kind rinde rico SOLO con el título limpio (o datos derivados mínimos); NINGUNO
+// imprime el nombre del tipo ni la instrucción del director. El primer kind de cada lista
+// es el que MEJOR representa el concepto; los siguientes rotan para no colapsar la variedad.
+//   headline=HookCaption · quote=PullQuote · rule=ChapterTitle · frasecinetica=FraseCinetica
+//   errorstinger=ErrorStinger · guardaesto=GuardaEsto · mitoverdad=MitoVerdad
+const FAM_KINDS: Record<string, string[]> = {
+  contrast_split: ["headline", "quote"],
+  comparison_scale: ["quote", "headline", "errorstinger"],
+  mechanism_diagram: ["headline", "frasecinetica"],
+  anatomy_callout: ["headline"],
+  cause_chain: ["frasecinetica", "headline", "errorstinger"],
+  loop_cycle: ["frasecinetica", "errorstinger"],
+  daily_timeline: ["guardaesto", "frasecinetica"],
+  dose_meter: ["errorstinger", "rule"],
+  urine_color_scale: ["guardaesto"],
+  body_signal_grid: ["guardaesto", "errorstinger"],
+  safety_boundary: ["errorstinger", "guardaesto", "rule"],
+  checklist_plan: ["guardaesto"],
+  med_interaction_panel: ["errorstinger"],
+  myth_vs_fact: ["mitoverdad", "headline"],
 };
 const WARN = new Set<string>(["med_interaction_panel", "safety_boundary"]);
-const capSec: Record<string, number> = {
-  process: 6.5, ingredients: 6.5, splitlist: 5, chips: 5.5, stat: 5, annotated: 6,
-  callout: 5, checklist: 6, mitoverdad: 5.5, errorstinger: 4.5, headline: 5,
-};
+const capSec = (kind: string): number =>
+  ({ guardaesto: 8, mitoverdad: 5.5, quote: 5, headline: 5, frasecinetica: 5, rule: 4.5, errorstinger: 4.5 } as Record<string, number>)[kind] ?? 5;
 
-const famOf = (layer: any): string =>
-  String(layer.family || layer.layout_family || layer.render_component || "evidence").toLowerCase();
+const famOf = (layer: any): string => String(layer.family || layer.layout_family || layer.render_component || "evidence").toLowerCase();
 const usableTitle = (layer: any): string => String(layer.title || "").trim();
+
+// mitoverdad SOLO si el título parte limpio en mito:verdad (dos frases). Si no, headline.
 const hasMythSplit = (title: string): boolean => {
   const i = title.indexOf(":");
   return i > 2 && i < title.length - 2;
 };
-const firstNum = (t: string): number => {
-  const m = t.match(/(\d+)/);
-  return m ? Math.min(20, Math.max(1, parseInt(m[1], 10))) : 8;
-};
 
-// Andamiajes HONESTOS y temáticos (agua/hidratación/circulación/libido +60). Cada uno
-// es genérico-pero-verdadero para la familia; el TÍTULO del beat (narration_match) se
-// preserva como encabezado. Se rotan variantes en las familias con muchos beats.
-const MECH_STEPS = [
-  [{ title: "Bebés agua" }, { title: "Sube el volumen de sangre" }, { title: "Mejora la circulación" }, { title: "Respuesta más firme" }],
-  [{ title: "Cuerpo hidratado" }, { title: "Vasos más flexibles" }, { title: "Más óxido nítrico" }, { title: "Mejor erección" }],
-];
-const DAY_STEPS = [
-  [{ title: "Al despertar", desc: "1 vaso" }, { title: "Media mañana", desc: "1 vaso" }, { title: "Tarde", desc: "1–2 vasos" }, { title: "Con la cena", desc: "1 vaso" }],
-];
-const CAUSE_NODES = [
-  [{ name: "Deshidratación" }, { name: "Sangre más espesa" }, { name: "Menos flujo" }, { name: "Menos firmeza" }],
-  [{ name: "Falta de agua" }, { name: "Presión más baja" }, { name: "Vasos estrechos" }, { name: "Menos rigidez" }],
-  [{ name: "Poca agua" }, { name: "Más fatiga" }, { name: "Menos deseo" }, { name: "Menos respuesta" }],
-];
-const SIGNAL_ITEMS = ["Sed frecuente", "Orina oscura", "Fatiga sin causa", "Boca seca"];
-const PLAN_ITEMS = ["Vaso al despertar", "Agua en cada comida", "Menos alcohol", "Cortar cafeína de noche"];
-
-type Comp = { scene: any; fam: string; kind: string; durF: number; idx: number };
+// Componentes a renderizar: SOLO las escenas component con copy editorial. Las genéricas
+// (evidence/FedHero sin título, que solo traen la nota del director) NO se dibujan: el avatar
+// sigue hablando a pantalla completa (nunca se imprime la nota del director en pantalla).
+// La elección de kind ROTA por familia y evita 3 iguales seguidos → cero variedad colapsada.
+type Comp = { scene: any; kind: string; durF: number };
 const comps: Comp[] = [];
-let compIdx = 0;
+const famCount: Record<string, number> = {};
 for (const scene of scenes) {
   const layer = scene.layers[0];
   if (layer.type !== "component") continue;
   const title = usableTitle(layer);
   if (!title) continue;
   const fam = famOf(layer);
-  let kind = FAM2KIND[fam] || "headline";
+  const list = FAM_KINDS[fam] || ["headline"];
+  const n = famCount[fam] = (famCount[fam] || 0);
+  famCount[fam] = n + 1;
+  // round-robin dentro de la familia
+  let kind = list[n % list.length];
+  // myth_vs_fact: MitoVerdad SOLO si el copy parte en mito:verdad; si no, headline (semántico, no round-robin)
+  if (fam === "myth_vs_fact") kind = hasMythSplit(title) ? "mitoverdad" : "headline";
+  // guarda anti-monotonía: nunca 3 del mismo kind seguidos (usa el siguiente de la familia)
+  const lastTwo = comps.slice(-2).map((c) => c.kind);
+  if (list.length > 1 && lastTwo.length === 2 && lastTwo[0] === kind && lastTwo[1] === kind) {
+    kind = list[(n + 1) % list.length];
+  }
+  // mitoverdad requiere un título partible; si no, cae a headline
   if (kind === "mitoverdad" && !hasMythSplit(title)) kind = "headline";
-  const cap = capSec[kind] ?? 5;
-  const durF = Math.max(secF(2.6), Math.min(scene.duration, secF(cap)));
-  comps.push({ scene, fam, kind, durF, idx: compIdx++ });
+  const durF = Math.max(secF(2), Math.min(scene.duration, secF(capSec(kind))));
+  comps.push({ scene, kind, durF });
 }
 const compByScene = new Map<any, Comp>(comps.map((c) => [c.scene, c]));
-const imgFor = (i: number) => IMG_POOL[i % IMG_POOL.length];
 
-// ── CAPA 3 · ventanas del avatar ──────────────────────────────────────────────
+// ── CAPA 3 · ventanas del avatar ────────────────────────────────────────────
+// full por defecto (arranca full: la escena 0 es avatar_full >=2s); hidden mientras un
+// componente full-screen (o un b-roll) ocupa la pantalla; halfR para fotos junto al avatar.
+// Tras un componente topeado más corto que su escena, el avatar VUELVE a full.
 const pts: { start: number; mode: AvatarWindow["mode"] }[] = [{ start: 0, mode: "full" }];
 let flip = false;
 for (const scene of scenes) {
@@ -159,59 +151,42 @@ const HalfLeft = ({ children }: { children: any }) => (
   <div style={{ position: "absolute", left: 0, top: 0, width: 960, height: 1080, overflow: "hidden", background: BG }}>{children}</div>
 );
 
-// CAPA 4 — cada familia dibuja un EXPLAINER temático REAL (data-driven), no una tarjeta de texto.
 const renderComp = (c: Comp) => {
   const layer = c.scene.layers[0];
-  const fam = c.fam;
+  const fam = famOf(layer);
   const eyebrow = EYEBROW[fam] || "DATO";
   const title = usableTitle(layer);
   const d = c.durF;
   const tone: "teal" | "warn" = WARN.has(fam) ? "warn" : "teal";
-
-  if (c.kind === "process") {
-    const steps = fam === "daily_timeline" ? DAY_STEPS[0] : MECH_STEPS[c.idx % MECH_STEPS.length];
-    return renderFederer2Comp({ kind: "process", eyebrow, title, steps }, d, { medico: true });
-  }
-  if (c.kind === "ingredients") {
-    const items = CAUSE_NODES[c.idx % CAUSE_NODES.length];
-    return renderFederer2Comp({ kind: "ingredients", title, items }, d, { medico: true });
-  }
-  if (c.kind === "splitlist") {
-    const items = ["Poca agua, peor circulación", "Peor circulación, menos energía", "Menos energía, menos deseo"];
-    return renderFederer2Comp({ kind: "splitlist", title, items }, d, { medico: true });
-  }
-  if (c.kind === "chips") {
-    const bullets = fam === "comparison_scale"
-      ? ["Deshidratado: flujo lento", "Hidratado: flujo pleno"]
-      : ["El freno: deshidratación", "El alivio: agua a tiempo"];
-    return renderFederer2Comp({ kind: "chips", title, image: imgFor(c.idx), chips: bullets }, d, { medico: true });
-  }
-  if (c.kind === "stat") {
-    return renderFederer2Comp({ kind: "stat", eyebrow, value: firstNum(title), suffix: " vasos", label: title }, d, { medico: true });
-  }
-  if (c.kind === "annotated") {
-    const annotations = [
-      { label: "Claro: bien hidratado", x: 30, y: 30 },
-      { label: "Amarillo: bebé más", x: 55, y: 55 },
-      { label: "Oscuro: alerta", x: 74, y: 78 },
-    ];
-    return renderFederer2Comp({ kind: "annotated", eyebrow, caption: title, image: imgFor(c.idx), annotations }, d, { medico: true });
-  }
-  if (c.kind === "callout") {
-    return renderFederer2Comp({ kind: "callout", figure: "", caption: title, image: imgFor(c.idx), eyebrow }, d, { medico: true });
-  }
-  if (c.kind === "checklist") {
-    const items = fam === "body_signal_grid" ? SIGNAL_ITEMS : PLAN_ITEMS;
-    return renderFederer2Comp({ kind: "checklist", title, items }, d, { medico: true });
-  }
-  if (c.kind === "mitoverdad") {
-    const i = title.indexOf(":");
-    return <MitoVerdad durationInFrames={d} myth={title.slice(0, i).trim()} truth={title.slice(i + 1).trim()} />;
-  }
+  // items estructurados SOLO si el plan los trae de verdad (nunca la instrucción del director)
+  const planItems = (Array.isArray(layer.items) ? layer.items : []).filter(Boolean);
   if (c.kind === "errorstinger") {
     return <ErrorStinger durationInFrames={d} number={"✚"} title={title} eyebrow={eyebrow} tone={tone} />;
   }
-  // headline (fallback) — HookCaption con la última palabra resaltada
+  if (c.kind === "guardaesto") {
+    return <GuardaEsto durationInFrames={d} title={title} items={planItems} tag={eyebrow} />;
+  }
+  if (c.kind === "frasecinetica") {
+    const wds = title.split(/\s+/).filter(Boolean).map((w: string) => ({ t: w }));
+    return <FraseCinetica durationInFrames={d} words={wds} tone={tone} onImage={false} />;
+  }
+  if (c.kind === "mitoverdad") {
+    const i = title.indexOf(":");
+    const myth = title.slice(0, i).trim();
+    const truth = title.slice(i + 1).trim();
+    return <MitoVerdad durationInFrames={d} myth={myth} truth={truth} />;
+  }
+  if (c.kind === "quote") {
+    return renderFederer2Comp({ kind: "quote", text: title }, d, { medico: true });
+  }
+  if (c.kind === "rule") {
+    // tarjeta de capítulo: número romano rotado + título. sub = etiqueta ES de la familia
+    // (JAMÁS el default hardcodeado de ChapterTitle ni la instrucción del director).
+    const romans = ["I", "II", "III", "IV", "V", "VI"];
+    const num = romans[(comps.indexOf(c)) % romans.length];
+    return <ChapterTitle durationInFrames={d} theme={THEME_MEDICO} number={num} title={title} sub={eyebrow} />;
+  }
+  // headline (default) — HookCaption con la última palabra resaltada
   const toks = title.split(/\s+/).filter(Boolean);
   const beat = { kind: "headline", tokens: toks.map((t: string, i: number) => ({ t, hl: i === toks.length - 1 })), eyebrow };
   return renderFederer2Comp(beat, d, { medico: true });
@@ -241,7 +216,7 @@ export const BagasyTimeline_v9uz8m1rssch = () => (
     })}
     {/* CAPA 3 — AVATAR (full / hidden / halfR, cero recuadro) */}
     <AvatarLayer src={AVATAR_SRC} windows={AVATAR_WINDOWS} accent={TEAL} wav={AVATAR_WAV} />
-    {/* CAPA 4 — EXPLAINERS temáticos _fed6, topeados */}
+    {/* CAPA 4 — COMPONENTES _fed6, topeados */}
     {comps.map((c) => (
       <Sequence key={"c-" + c.scene.id} from={c.scene.from} durationInFrames={c.durF} layout="none">
         {renderComp(c)}
