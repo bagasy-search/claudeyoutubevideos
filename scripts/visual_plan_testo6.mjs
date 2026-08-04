@@ -90,6 +90,17 @@ const SECTIONS = [
       {action: "senala hacia abajo indicando la descripcion, invitando con calma", location: "consultorio", framing: "plano medio corto", props: []}]},
 ];
 
+// ── Carrusel 3D de los 6 ejercicios (FedOilCarousel, el "vara" aprobado): anillo de tarjetas
+// flotantes que gira y ATERRIZA/DESBLOQUEA la que el avatar nombra en ese beat (focus 0..5).
+const CARDS = [
+  {index: "01", name: "Sentadilla", image: "img/testo6_presenter_011.png"},
+  {index: "02", name: "Bisagra de cadera", image: "img/testo6_presenter_015.png"},
+  {index: "03", name: "Empuje sobre la cabeza", image: "img/testo6_presenter_017.png"},
+  {index: "04", name: "El tiron", image: "img/testo6_presenter_020.png"},
+  {index: "05", name: "Sprints", image: "img/testo6_presenter_024.png"},
+  {index: "06", name: "El acarreo", image: "img/testo6_presenter_034.png"},
+];
+
 // ── Heroes (Director Pass): un explainer por parrafo clave. `para` fija el tramo hablado.
 // copy <= 10 palabras y <= 72 chars; copy+sub deben compartir >= 2 terminos con el parrafo.
 const HEROES = [
@@ -102,26 +113,26 @@ const HEROES = [
   {para: 5, fed: "FedQuote", lf: "patient-quote", attributed: true, author: "Anibal, 63 anos", role: "Volvio a los cuatro meses",
     copy: "Me siento un fantasma de lo que era", sub: "Cuatro meses despues, la mano firme otra vez",
     visual: "Tarjeta clara con la frase y el presentador asomando en penumbra", detail: "Prueba humana despues del tema"},
-  {para: 7, fed: "FedChapter", lf: "exercise-one-open", copy: "Ejercicio uno: la sentadilla", sub: "El musculo mas grande manda: piernas y gluteos",
-    visual: "Apertura del primer movimiento con la silla y la pared", detail: "Capitulo del ejercicio uno"},
-  {para: 8, fed: "FedChapter", lf: "exercise-two-open", copy: "Ejercicio dos: la bisagra de cadera", sub: "Toda la cadena de atras y un cinturon natural",
-    visual: "El torso entra de perfil y la cadera viaja hacia atras", detail: "Capitulo del ejercicio dos"},
+  {para: 7, fed: "FedOilCarousel", lf: "reveal-1", cards: CARDS, focus: 0, intro: true, copy: "Ejercicio uno: la sentadilla", sub: "El musculo mas grande manda: piernas y gluteos",
+    visual: "El anillo de los seis ejercicios se arma y aterriza en la sentadilla", detail: "Desbloqueo del ejercicio uno"},
+  {para: 8, fed: "FedOilCarousel", lf: "reveal-2", cards: CARDS, focus: 1, intro: false, copy: "Ejercicio dos: la bisagra de cadera", sub: "Toda la cadena de atras y un cinturon natural",
+    visual: "El anillo gira y desbloquea la bisagra de cadera", detail: "Desbloqueo del ejercicio dos"},
   {para: 9, fed: "FedHero", lf: "tease-four", copy: "Ya llegamos: el cuarto le devuelve los hombros", sub: "Los hombros de cuando tenia treinta",
     visual: "Un hilo de luz que adelanta el proximo movimiento", detail: "Tease del ejercicio cuatro"},
-  {para: 10, fed: "FedHero", lf: "dignity-frame", copy: "No es de musculo: es de dignidad", sub: "Guardar la valija, alzar al nieto sobre los hombros",
-    visual: "Un objeto alto que por fin se alcanza sin ayuda", detail: "El valor diario del empuje"},
-  {para: 11, fed: "FedChapter", lf: "exercise-four-open", copy: "Ejercicio cuatro: el tiron", sub: "Pararse derecho y abrir el pecho",
-    visual: "Los omoplatos se juntan y el pecho se abre", detail: "Capitulo del ejercicio cuatro"},
+  {para: 10, fed: "FedOilCarousel", lf: "reveal-3", cards: CARDS, focus: 2, intro: false, copy: "Ejercicio tres: el empuje", sub: "No es de musculo, es de dignidad",
+    visual: "El anillo gira y desbloquea el empuje sobre la cabeza", detail: "Desbloqueo del ejercicio tres"},
+  {para: 11, fed: "FedOilCarousel", lf: "reveal-4", cards: CARDS, focus: 3, intro: false, copy: "Ejercicio cuatro: el tiron", sub: "Pararse derecho y abrir el pecho",
+    visual: "El anillo gira y desbloquea el tiron", detail: "Desbloqueo del ejercicio cuatro"},
   {para: 12, fed: "FedChecklist", lf: "real-life-moves", copy: "Cuatro movimientos de la vida real", sub: "Ninguno es un ejercicio de espejo",
     items: ["Agacharse", "Levantar del piso", "Poner arriba", "Tirar hacia usted"],
     visual: "Cuatro iconos de gestos cotidianos encendiendose en orden", detail: "Sintesis de los primeros cuatro"},
-  {para: 13, fed: "FedChapter", lf: "exercise-five-open", copy: "Ejercicio cinco: los sprints", sub: "Corto y feroz: diez minutos, no cuarenta",
-    visual: "Apertura veloz que rompe el ritmo de fuerza anterior", detail: "Capitulo del ejercicio cinco"},
+  {para: 13, fed: "FedOilCarousel", lf: "reveal-5", cards: CARDS, focus: 4, intro: false, copy: "Ejercicio cinco: los sprints", sub: "Corto y feroz: diez minutos, no cuarenta",
+    visual: "El anillo gira y desbloquea los sprints", detail: "Desbloqueo del ejercicio cinco"},
   {para: 14, fed: "FedMolecule", lf: "aromatase-mechanism", copy: "La panza convierte testosterona en estrogeno", sub: "Rompa la bola de nieve con musculo y esfuerzo",
     nodes: ["Grasa abdominal", "Convierte a estrogeno", "Menos testosterona", "El musculo lo revierte"],
     visual: "La grasa como fabrica que drena la hormona y el musculo que la recupera", detail: "Mecanismo clave del bloque"},
-  {para: 15, fed: "FedChapter", lf: "exercise-six-open", copy: "Ejercicio seis: el acarreo", sub: "La fuerza de agarre predice su salud",
-    visual: "Apertura con dos bolsas pesadas y una mano firme", detail: "Capitulo del ejercicio seis"},
+  {para: 15, fed: "FedOilCarousel", lf: "reveal-6", cards: CARDS, focus: 5, intro: false, copy: "Ejercicio seis: el acarreo", sub: "La fuerza de agarre predice su salud",
+    visual: "El anillo gira y desbloquea el acarreo, el ultimo", detail: "Desbloqueo del ejercicio seis"},
   {para: 16, fed: "FedLowerThird", lf: "honest-turn", copy: "Ahora, la parte incomoda pero honesta", sub: "El medico que prometio decir la verdad",
     visual: "Rotulo sobrio que marca el giro del guion", detail: "Transicion al error"},
   {para: 17, fed: "FedMolecule", lf: "cortisol-seesaw", copy: "Cortisol contra testosterona: un subibaja", sub: "El estres y el poco sueno ganan la pulseada",
@@ -225,6 +236,7 @@ for (const p of PARAS) {
         ...(hero.suffix ? {suffix: hero.suffix} : {}),
         ...(hero.step ? {step: hero.step, total: hero.total} : {}),
         ...(hero.attributed ? {attributed: true, author: hero.author, role: hero.role} : {}),
+        ...(hero.cards ? {cards: hero.cards, focus: hero.focus, intro: hero.intro} : {}),
         visual: hero.visual, detail: hero.detail,
       });
       continue;

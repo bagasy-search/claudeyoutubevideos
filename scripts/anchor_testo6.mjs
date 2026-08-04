@@ -62,7 +62,7 @@ const anchorFrame = (tokens) => {
   return {frame: Math.round((capW[best.i].ms / 1000) * FPS), hit: best.hit, n: N};
 };
 
-const KEYMAP = {FedChapter: "chapter", FedStat: "stat", FedQuote: "quote", FedMolecule: "mechanism", FedStep: "step", FedChecklist: "checklist", FedLowerThird: "lower", FedCta: "cta", FedHero: "hero"};
+const KEYMAP = {FedChapter: "chapter", FedStat: "stat", FedQuote: "quote", FedMolecule: "mechanism", FedStep: "step", FedChecklist: "checklist", FedLowerThird: "lower", FedCta: "cta", FedHero: "hero", FedOilCarousel: "carousel"};
 
 const stockManifest = [];   // {file, query}
 const presManifest = [];    // {file, action, location, framing, props}
@@ -99,6 +99,7 @@ for (const m of moments) {
       ...(m.suffix ? {suffix: m.suffix} : {}),
       ...(m.step ? {step: m.step, total: m.total} : {}),
       ...(m.attributed ? {attributed: true, author: m.author, role: m.role} : {}),
+      ...(m.cards ? {cards: m.cards, focus: m.focus, intro: m.intro, kicker: m.on_screen_copy} : {}),
     };
     if (key === "lower") { layer.author = m.author || "Dr. Federer"; layer.role = m.editorial_sub; }
   }
@@ -116,6 +117,7 @@ const allPres = scenes.filter((s) => s.layers[0].type === "image").map((s) => s.
 const compCursor = {};
 for (const sc of scenes) {
   if (sc.layers[0].type !== "component") continue;
+  if (sc.layers[0].cards) continue; // el carrusel trae sus propias tarjetas
   const pool = (presBySection[sc.section_id] && presBySection[sc.section_id].length) ? presBySection[sc.section_id] : allPres;
   if (pool.length) { const k = compCursor[sc.section_id] || 0; compCursor[sc.section_id] = k + 1; sc.layers[0].image = pool[k % pool.length]; }
 }

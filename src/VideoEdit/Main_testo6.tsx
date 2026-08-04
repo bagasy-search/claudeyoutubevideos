@@ -45,7 +45,7 @@ const FedererComponent: React.FC<{scene:any}> = ({scene}) => {
   if (/step|process|ritual|method|how/.test(key)) return <FedStep {...common} step={layer.step || 1} total={layer.total || 3} title={title} sub={sub} image={image}/>;
   if (/before|after|compare|versus/.test(key) && image && imageB) return <FedBeforeAfter {...common} kicker={layer.kicker || ""} title={title} imageA={image} imageB={imageB}/>;
   if (/check|list|safety|warning|boundary/.test(key)) return <FedChecklist {...common} kicker={layer.kicker || ""} title={title} items={layer.items || []}/>;
-  if (/carousel|advice|options/.test(key) && (layer.cards || []).length >= 2) return <FedOilCarousel cards={layer.cards.map((card:any)=>({...card,image:staticFile(card.image)}))} kicker={layer.kicker || title} accent={accent}/>;
+  if (/carousel|advice|options|reveal/.test(key) && (layer.cards || []).length >= 2) return <FedOilCarousel cards={layer.cards.map((card:any)=>({...card,image:staticFile(card.image)}))} focus={typeof layer.focus === "number" ? layer.focus : undefined} intro={layer.intro !== false} kicker={layer.kicker || title} accent={accent}/>;
   if (/lower|identity|authority/.test(key)) return <FedLowerThird {...common} name={layer.author || "Dr. Federer"} role={layer.role || ""} topic={title} avatarSrc={null}/>;
   if (/cta|closing|subscribe/.test(key)) return <FedCta {...common} kicker={layer.kicker || ""} title={title} sub={sub} image={image}/>;
   return <FedHero {...common} kicker={layer.kicker || ""} title={title} sub={sub} image={image} side={scene.from % 2 ? "left" : "right"}/>;

@@ -870,13 +870,46 @@
    "layers": [
     {
      "type": "component",
-     "render_component": "chapter",
-     "family": "chapter",
+     "render_component": "carousel",
+     "family": "carousel",
      "transition_variant": "none",
-     "kicker": "",
+     "kicker": "Ejercicio uno: la sentadilla",
      "title": "Ejercicio uno: la sentadilla",
      "sub": "El musculo mas grande manda: piernas y gluteos",
-     "image": "img/testo6_presenter_011.png"
+     "cards": [
+      {
+       "index": "01",
+       "name": "Sentadilla",
+       "image": "img/testo6_presenter_011.png"
+      },
+      {
+       "index": "02",
+       "name": "Bisagra de cadera",
+       "image": "img/testo6_presenter_015.png"
+      },
+      {
+       "index": "03",
+       "name": "Empuje sobre la cabeza",
+       "image": "img/testo6_presenter_017.png"
+      },
+      {
+       "index": "04",
+       "name": "El tiron",
+       "image": "img/testo6_presenter_020.png"
+      },
+      {
+       "index": "05",
+       "name": "Sprints",
+       "image": "img/testo6_presenter_024.png"
+      },
+      {
+       "index": "06",
+       "name": "El acarreo",
+       "image": "img/testo6_presenter_034.png"
+      }
+     ],
+     "focus": 0,
+     "intro": true
     }
    ]
   },
@@ -1218,13 +1251,46 @@
    "layers": [
     {
      "type": "component",
-     "render_component": "chapter",
-     "family": "chapter",
+     "render_component": "carousel",
+     "family": "carousel",
      "transition_variant": "fold",
-     "kicker": "",
+     "kicker": "Ejercicio dos: la bisagra de cadera",
      "title": "Ejercicio dos: la bisagra de cadera",
      "sub": "Toda la cadena de atras y un cinturon natural",
-     "image": "img/testo6_presenter_014.png"
+     "cards": [
+      {
+       "index": "01",
+       "name": "Sentadilla",
+       "image": "img/testo6_presenter_011.png"
+      },
+      {
+       "index": "02",
+       "name": "Bisagra de cadera",
+       "image": "img/testo6_presenter_015.png"
+      },
+      {
+       "index": "03",
+       "name": "Empuje sobre la cabeza",
+       "image": "img/testo6_presenter_017.png"
+      },
+      {
+       "index": "04",
+       "name": "El tiron",
+       "image": "img/testo6_presenter_020.png"
+      },
+      {
+       "index": "05",
+       "name": "Sprints",
+       "image": "img/testo6_presenter_024.png"
+      },
+      {
+       "index": "06",
+       "name": "El acarreo",
+       "image": "img/testo6_presenter_034.png"
+      }
+     ],
+     "focus": 1,
+     "intro": false
     }
    ]
   },
@@ -1332,7 +1398,7 @@
      "kicker": "",
      "title": "Ya llegamos: el cuarto le devuelve los hombros",
      "sub": "Los hombros de cuando tenia treinta",
-     "image": "img/testo6_presenter_015.png"
+     "image": "img/testo6_presenter_014.png"
     }
    ]
   },
@@ -1340,7 +1406,7 @@
    "id": "s05-empuje-m072",
    "section_id": "s05-empuje",
    "from": 11631,
-   "duration": 381,
+   "duration": 210,
    "narration": "El tercero es el empuje por encima de la cabeza Levantar un peso desde los",
    "transition": "none",
    "visual_type": "presenter_action",
@@ -1355,29 +1421,27 @@
    ]
   },
   {
-   "id": "s05-empuje-m074",
+   "id": "s05-empuje-m072-x1",
    "section_id": "s05-empuje",
-   "from": 12012,
-   "duration": 102,
-   "narration": "me encanta de este Que es el ejercicio más honesto que hay No se puede hacer",
-   "transition": "whip",
-   "visual_type": "clean_stock",
+   "from": 11841,
+   "duration": 210,
+   "narration": "El tercero es el empuje por encima de la cabeza Levantar un peso desde los",
+   "transition": "none",
+   "visual_type": "avatar_full",
    "overlay_policy": "none",
    "layers": [
     {
-     "type": "video",
-     "src": "broll/testo6_stock_030.mp4",
-     "asset_id": "testo6:s05-empuje-m074:clean_stock",
-     "transition_variant": "whip"
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
     }
    ]
   },
   {
-   "id": "s05-empuje-m075",
+   "id": "s05-empuje-m072-x2",
    "section_id": "s05-empuje",
-   "from": 12114,
-   "duration": 143,
-   "narration": "trampa Usted no puede empujar algo por encima de su cabeza usando el envión de",
+   "from": 12051,
+   "duration": 211,
+   "narration": "El tercero es el empuje por encima de la cabeza Levantar un peso desde los",
    "transition": "none",
    "visual_type": "avatar_full",
    "overlay_policy": "none",
@@ -1391,8 +1455,8 @@
   {
    "id": "s05-empuje-m076",
    "section_id": "s05-empuje",
-   "from": 12257,
-   "duration": 152,
+   "from": 12262,
+   "duration": 147,
    "narration": "la cintura sin que se note Le exige el hombro el brazo y toda la",
    "transition": "iris",
    "visual_type": "presenter_action",
@@ -1457,32 +1521,10 @@
    ]
   },
   {
-   "id": "s05-empuje-m073",
-   "section_id": "s05-empuje",
-   "from": 12866,
-   "duration": 24,
-   "narration": "alzar al nieto y ponérselo sobre los hombros",
-   "transition": "fold",
-   "visual_type": "hero_component",
-   "overlay_policy": "editorial_only",
-   "layers": [
-    {
-     "type": "component",
-     "render_component": "hero",
-     "family": "hero",
-     "transition_variant": "fold",
-     "kicker": "",
-     "title": "No es de musculo: es de dignidad",
-     "sub": "Guardar la valija, alzar al nieto sobre los hombros",
-     "image": "img/testo6_presenter_017.png"
-    }
-   ]
-  },
-  {
    "id": "s05-empuje-m080",
    "section_id": "s05-empuje",
-   "from": 12890,
-   "duration": 136,
+   "from": 12866,
+   "duration": 160,
    "narration": "alzar al nieto y ponérselo sobre los hombros El día que usted no puede hacer eso",
    "transition": "iris",
    "visual_type": "presenter_action",
@@ -1500,7 +1542,7 @@
    "id": "s05-empuje-m081",
    "section_id": "s05-empuje",
    "from": 13026,
-   "duration": 153,
+   "duration": 51,
    "narration": "se empieza a sentir viejo de verdad Así que este ejercicio en el fondo no",
    "transition": "none",
    "visual_type": "clean_stock",
@@ -1515,10 +1557,83 @@
    ]
   },
   {
+   "id": "s05-empuje-m074",
+   "section_id": "s05-empuje",
+   "from": 13077,
+   "duration": 44,
+   "narration": "me encanta de este Que es el ejercicio más honesto que hay No se puede hacer",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_030.mp4",
+     "asset_id": "testo6:s05-empuje-m074:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m073",
+   "section_id": "s05-empuje",
+   "from": 13121,
+   "duration": 58,
+   "narration": "ejercicio en el fondo no es de músculo Es de dignidad",
+   "transition": "fold",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "carousel",
+     "family": "carousel",
+     "transition_variant": "fold",
+     "kicker": "Ejercicio tres: el empuje",
+     "title": "Ejercicio tres: el empuje",
+     "sub": "No es de musculo, es de dignidad",
+     "cards": [
+      {
+       "index": "01",
+       "name": "Sentadilla",
+       "image": "img/testo6_presenter_011.png"
+      },
+      {
+       "index": "02",
+       "name": "Bisagra de cadera",
+       "image": "img/testo6_presenter_015.png"
+      },
+      {
+       "index": "03",
+       "name": "Empuje sobre la cabeza",
+       "image": "img/testo6_presenter_017.png"
+      },
+      {
+       "index": "04",
+       "name": "El tiron",
+       "image": "img/testo6_presenter_020.png"
+      },
+      {
+       "index": "05",
+       "name": "Sprints",
+       "image": "img/testo6_presenter_024.png"
+      },
+      {
+       "index": "06",
+       "name": "El acarreo",
+       "image": "img/testo6_presenter_034.png"
+      }
+     ],
+     "focus": 2,
+     "intro": false
+    }
+   ]
+  },
+  {
    "id": "s05-empuje-m082",
    "section_id": "s05-empuje",
    "from": 13179,
-   "duration": 236,
+   "duration": 228,
    "narration": "es de músculo Es de dignidad Empiece liviano Dos botellas de agua si quiere Pero hágalo",
    "transition": "whip",
    "visual_type": "avatar_full",
@@ -1531,10 +1646,26 @@
    ]
   },
   {
+   "id": "s05-empuje-m075",
+   "section_id": "s05-empuje",
+   "from": 13407,
+   "duration": 24,
+   "narration": "trampa Usted no puede empujar algo por encima de su cabeza usando el envión de",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
    "id": "s06-tiron-m083",
    "section_id": "s06-tiron",
-   "from": 13415,
-   "duration": 299,
+   "from": 13431,
+   "duration": 283,
    "narration": "El cuarto El que le prometí Los tirones Tirar de algo hacia usted o tirar",
    "transition": "lift",
    "visual_type": "clean_stock",
@@ -1630,13 +1761,46 @@
    "layers": [
     {
      "type": "component",
-     "render_component": "chapter",
-     "family": "chapter",
+     "render_component": "carousel",
+     "family": "carousel",
      "transition_variant": "none",
-     "kicker": "",
+     "kicker": "Ejercicio cuatro: el tiron",
      "title": "Ejercicio cuatro: el tiron",
      "sub": "Pararse derecho y abrir el pecho",
-     "image": "img/testo6_presenter_020.png"
+     "cards": [
+      {
+       "index": "01",
+       "name": "Sentadilla",
+       "image": "img/testo6_presenter_011.png"
+      },
+      {
+       "index": "02",
+       "name": "Bisagra de cadera",
+       "image": "img/testo6_presenter_015.png"
+      },
+      {
+       "index": "03",
+       "name": "Empuje sobre la cabeza",
+       "image": "img/testo6_presenter_017.png"
+      },
+      {
+       "index": "04",
+       "name": "El tiron",
+       "image": "img/testo6_presenter_020.png"
+      },
+      {
+       "index": "05",
+       "name": "Sprints",
+       "image": "img/testo6_presenter_024.png"
+      },
+      {
+       "index": "06",
+       "name": "El acarreo",
+       "image": "img/testo6_presenter_034.png"
+      }
+     ],
+     "focus": 3,
+     "intro": false
     }
    ]
   },
@@ -1804,7 +1968,7 @@
       "Poner arriba",
       "Tirar hacia usted"
      ],
-     "image": "img/testo6_presenter_021.png"
+     "image": "img/testo6_presenter_020.png"
     }
    ]
   },
@@ -2028,13 +2192,46 @@
    "layers": [
     {
      "type": "component",
-     "render_component": "chapter",
-     "family": "chapter",
+     "render_component": "carousel",
+     "family": "carousel",
      "transition_variant": "whip",
-     "kicker": "",
+     "kicker": "Ejercicio cinco: los sprints",
      "title": "Ejercicio cinco: los sprints",
      "sub": "Corto y feroz: diez minutos, no cuarenta",
-     "image": "img/testo6_presenter_024.png"
+     "cards": [
+      {
+       "index": "01",
+       "name": "Sentadilla",
+       "image": "img/testo6_presenter_011.png"
+      },
+      {
+       "index": "02",
+       "name": "Bisagra de cadera",
+       "image": "img/testo6_presenter_015.png"
+      },
+      {
+       "index": "03",
+       "name": "Empuje sobre la cabeza",
+       "image": "img/testo6_presenter_017.png"
+      },
+      {
+       "index": "04",
+       "name": "El tiron",
+       "image": "img/testo6_presenter_020.png"
+      },
+      {
+       "index": "05",
+       "name": "Sprints",
+       "image": "img/testo6_presenter_024.png"
+      },
+      {
+       "index": "06",
+       "name": "El acarreo",
+       "image": "img/testo6_presenter_034.png"
+      }
+     ],
+     "focus": 4,
+     "intro": false
     }
    ]
   },
@@ -2812,13 +3009,46 @@
    "layers": [
     {
      "type": "component",
-     "render_component": "chapter",
-     "family": "chapter",
+     "render_component": "carousel",
+     "family": "carousel",
      "transition_variant": "lift",
-     "kicker": "",
+     "kicker": "Ejercicio seis: el acarreo",
      "title": "Ejercicio seis: el acarreo",
      "sub": "La fuerza de agarre predice su salud",
-     "image": "img/testo6_presenter_033.png"
+     "cards": [
+      {
+       "index": "01",
+       "name": "Sentadilla",
+       "image": "img/testo6_presenter_011.png"
+      },
+      {
+       "index": "02",
+       "name": "Bisagra de cadera",
+       "image": "img/testo6_presenter_015.png"
+      },
+      {
+       "index": "03",
+       "name": "Empuje sobre la cabeza",
+       "image": "img/testo6_presenter_017.png"
+      },
+      {
+       "index": "04",
+       "name": "El tiron",
+       "image": "img/testo6_presenter_020.png"
+      },
+      {
+       "index": "05",
+       "name": "Sprints",
+       "image": "img/testo6_presenter_024.png"
+      },
+      {
+       "index": "06",
+       "name": "El acarreo",
+       "image": "img/testo6_presenter_034.png"
+      }
+     ],
+     "focus": 5,
+     "intro": false
     }
    ]
   },
@@ -2978,7 +3208,7 @@
      "sub": "El medico que prometio decir la verdad",
      "author": "Dr. Federer",
      "role": "El medico que prometio decir la verdad",
-     "image": "img/testo6_presenter_034.png"
+     "image": "img/testo6_presenter_033.png"
     }
    ]
   },
@@ -4163,11 +4393,11 @@
   }
  ],
  "metrics": {
-  "scenes": 232,
+  "scenes": 234,
   "weak_anchors": 15,
   "stock": 84,
   "presenter": 50,
   "components": 21,
-  "avatar": 77
+  "avatar": 79
  }
 }
