@@ -81,8 +81,10 @@ jobs:
             n=$((n+1)); [ "$n" -ge 4 ] && { echo "no pude bajar los assets tras $n intentos"; exit 1; }
             echo "reintento $n de la descarga de assets"; sleep $((10 * n))
           done
-          if ls "assets-${{ github.event.inputs.slug }}.tar.part-"* >/dev/null 2>&1; then
-            cat "assets-${{ github.event.inputs.slug }}.tar.part-"* > "assets-${{ github.event.inputs.slug }}.tar"
+          if [ ! -f "assets-${{ github.event.inputs.slug }}.tar" ]; then
+            PARTS=(assets-${{ github.event.inputs.slug }}.tar.part*)
+            [ -e "${PARTS[0]}" ] || { echo "no se encontró el tar ni sus partes"; exit 1; }
+            cat "${PARTS[@]}" > "assets-${{ github.event.inputs.slug }}.tar"
           fi
           mkdir -p public
           tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public

@@ -1,0 +1,3893 @@
+{
+  "version": 1,
+  "slug": "v4qsqjivs53o",
+  "kit": "federer-fluid",
+  "premium_director_enabled": true,
+  "composition_id": "Bagasy-v4qsqjivs53o",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 40884,
+  "audio_src": "avatar_v4qsqjivs53o.mp4",
+  "captions_src": "captions_v4qsqjivs53o.json",
+  "scenes": [
+    {
+      "id": "hook_m1",
+      "section_id": "hook",
+      "from": 0,
+      "duration": 284,
+      "narration": "Seis ejercicios bien elegidos pueden poner a trabajar casi toda la musculatura",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hook_m2",
+      "section_id": "hook",
+      "from": 284,
+      "duration": 100,
+      "narration": "una sala llena de máquinas que nunca vuelve a usar",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_001.mp4",
+          "asset_id": "v4qsqjivs53o:hook_m2:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "hook_m3",
+      "section_id": "hook",
+      "from": 384,
+      "duration": 238,
+      "narration": "No necesita dieciocho movimientos por sesión",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Seis patrones, no dieciocho por sesión",
+          "sub": "",
+          "detail": "Chapter de apertura; contraste 6 vs 18. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hook_m4",
+      "section_id": "hook",
+      "from": 622,
+      "duration": 286,
+      "narration": "dos o tres sesiones semanales de unos cuarenta a sesenta minutos",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_001.png",
+          "asset_id": "v4qsqjivs53o:hook_m4:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "hook_m5",
+      "section_id": "hook",
+      "from": 908,
+      "duration": 284,
+      "narration": "puede construir músculo durante años. Incluso después de los sesenta",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_002.mp4",
+          "asset_id": "v4qsqjivs53o:hook_m5:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "hook_m6",
+      "section_id": "hook",
+      "from": 1192,
+      "duration": 289,
+      "narration": "el músculo no sabe cuánto costó el gimnasio. Reconoce tensión",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "El músculo reconoce tensión, no precio",
+          "sub": "Tensión, esfuerzo y recuperación",
+          "detail": "Fibra muscular que responde a tensión; 3 pilares orbitando. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "FedMolecule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hook_m7",
+      "section_id": "hook",
+      "from": 1481,
+      "duration": 183,
+      "narration": "cuando hoy le estamos pidiendo un poco más que hace un mes",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "hook_m8",
+      "section_id": "hook",
+      "from": 1664,
+      "duration": 285,
+      "narration": "cómo adaptarlos si las rodillas, los hombros o el equilibrio ya no son los de antes",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_003.mp4",
+          "asset_id": "v4qsqjivs53o:hook_m8:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "hook_m9",
+      "section_id": "hook",
+      "from": 1949,
+      "duration": 213,
+      "narration": "hay un error incómodo que cometen muchísimos hombres maduros",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "title": "Un error incómodo de hombres maduros",
+          "sub": "",
+          "detail": "Tarjeta teaser oscura, foco puntual. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedHero",
+          "layout_family": "FedHero",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "hook_m10",
+      "section_id": "hook",
+      "from": 2162,
+      "duration": 293,
+      "narration": "llevan meses repitiendo un esfuerzo que su cuerpo ya no tiene ninguna razón",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_002.png",
+          "asset_id": "v4qsqjivs53o:hook_m10:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "hook_m11",
+      "section_id": "hook",
+      "from": 2455,
+      "duration": 218,
+      "narration": "¿por qué no puse el curl de bíceps entre los seis?",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_004.mp4",
+          "asset_id": "v4qsqjivs53o:hook_m11:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "hook_m12",
+      "section_id": "hook",
+      "from": 2673,
+      "duration": 319,
+      "narration": "un programa que luce completo sobre el papel y uno que usted realmente puede sostener",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Programa de papel vs. plan sostenible",
+          "sub": "",
+          "detail": "Izq: hoja recargada de ejercicios. Der: rutina simple sostenida. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "FedBeforeAfter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "hook_m13",
+      "section_id": "hook",
+      "from": 2992,
+      "duration": 165,
+      "narration": "No es porque el bíceps no importe",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_005.mp4",
+          "asset_id": "v4qsqjivs53o:hook_m13:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m1",
+      "section_id": "reglas",
+      "from": 3157,
+      "duration": 294,
+      "narration": "comienza a ser más fácil perder músculo si dejamos de exigirlo",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m2",
+      "section_id": "reglas",
+      "from": 3451,
+      "duration": 237,
+      "narration": "Con los años también puede costar más recuperarse de sesiones mal organizadas",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_006.mp4",
+          "asset_id": "v4qsqjivs53o:reglas_m2:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m3",
+      "section_id": "reglas",
+      "from": 3688,
+      "duration": 468,
+      "narration": "la mezcla de inactividad, miedo al peso y programas diseñados para personas que viven dentro de un gimnasio",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "El enemigo: inactividad y miedo al peso",
+          "sub": "",
+          "detail": "Checklist de tres factores del enemigo. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m4",
+      "section_id": "reglas",
+      "from": 4156,
+      "duration": 198,
+      "narration": "El enemigo no es la edad por sí sola",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m5",
+      "section_id": "reglas",
+      "from": 4354,
+      "duration": 224,
+      "narration": "Un catálogo infinito de variantes vende cursos, máquinas y novedades",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_007.mp4",
+          "asset_id": "v4qsqjivs53o:reglas_m5:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m6",
+      "section_id": "reglas",
+      "from": 4578,
+      "duration": 301,
+      "narration": "empujar, tirar, levantar algo por encima de la cabeza y transportar una carga",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Empujar, tirar, levantar y transportar",
+          "sub": "",
+          "detail": "Pizarra estilo Vox: seis acciones dibujadas a mano, íconos de patrón. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "FedWhiteboard",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m7",
+      "section_id": "reglas",
+      "from": 4879,
+      "duration": 204,
+      "narration": "Lo importante es conservar la función del movimiento",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_003.png",
+          "asset_id": "v4qsqjivs53o:reglas_m7:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m8",
+      "section_id": "reglas",
+      "from": 5083,
+      "duration": 383,
+      "narration": "Esos son nuestros seis pilares. No tiene que casarse con una versión exacta",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Seis pilares, sin una versión exacta",
+          "sub": "",
+          "detail": "Cifra 6 grande; pilares como columnas. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m9",
+      "section_id": "reglas",
+      "from": 5466,
+      "duration": 234,
+      "narration": "Cambiaremos el ángulo, la carga o el recorrido",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_008.mp4",
+          "asset_id": "v4qsqjivs53o:reglas_m9:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m10",
+      "section_id": "reglas",
+      "from": 5700,
+      "duration": 185,
+      "narration": "Eso no condena a nadie a volverse débil",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "reglas_m11",
+      "section_id": "reglas",
+      "from": 5885,
+      "duration": 254,
+      "narration": "Si una variante le duele, no debe demostrarle nada a nadie",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m1",
+      "section_id": "ej1",
+      "from": 6139,
+      "duration": 203,
+      "narration": "El primer ejercicio es la sentadilla hacia una silla",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio 1 — Sentadilla a la silla",
+          "sub": "",
+          "detail": "Chapter numerado, transición de sección. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m2",
+      "section_id": "ej1",
+      "from": 6342,
+      "duration": 175,
+      "narration": "con o sin una mancuerna sostenida frente al pecho",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_009.mp4",
+          "asset_id": "v4qsqjivs53o:ej1_m2:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m3",
+      "section_id": "ej1",
+      "from": 6517,
+      "duration": 193,
+      "narration": "desarrolla principalmente los cuádriceps y los glúteos",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Trabaja cuádriceps y glúteos",
+          "sub": "",
+          "detail": "Mapa muscular: cuádriceps y glúteos encendidos sobre silueta. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "FedMolecule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m4",
+      "section_id": "ej1",
+      "from": 6710,
+      "duration": 177,
+      "narration": "Coloque una silla firme detrás de usted",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_004.png",
+          "asset_id": "v4qsqjivs53o:ej1_m4:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m5",
+      "section_id": "ej1",
+      "from": 6887,
+      "duration": 188,
+      "narration": "La silla no es una concesión para personas débiles",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m6",
+      "section_id": "ej1",
+      "from": 7075,
+      "duration": 196,
+      "narration": "Lleve la cadera atrás y flexione las rodillas",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_010.mp4",
+          "asset_id": "v4qsqjivs53o:ej1_m6:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m7",
+      "section_id": "ej1",
+      "from": 7271,
+      "duration": 298,
+      "narration": "Cruce los brazos y levántese cinco veces de una silla sin tomar impulso",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Prueba: levántese cinco veces sin impulso",
+          "sub": "",
+          "detail": "Tres pasos numerados del test de la silla. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "FedStep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m8",
+      "section_id": "ej1",
+      "from": 7569,
+      "duration": 178,
+      "narration": "Toque la silla con suavidad. No se desplome",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_005.png",
+          "asset_id": "v4qsqjivs53o:ej1_m8:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m9",
+      "section_id": "ej1",
+      "from": 7747,
+      "duration": 361,
+      "narration": "Esa demostración dice más sobre el punto de partida que cualquier edad escrita en un documento",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m10",
+      "section_id": "ej1",
+      "from": 8108,
+      "duration": 299,
+      "narration": "use una silla más alta o ayúdese ligeramente con una superficie estable",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Adaptación: silla más alta o apoyo",
+          "sub": "",
+          "detail": "Checklist de dos adaptaciones seguras. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m11",
+      "section_id": "ej1",
+      "from": 8407,
+      "duration": 149,
+      "narration": "sostenga una mancuerna cerca del pecho",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_011.mp4",
+          "asset_id": "v4qsqjivs53o:ej1_m11:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m12",
+      "section_id": "ej1",
+      "from": 8556,
+      "duration": 270,
+      "narration": "Empiece con dos series de seis a diez repeticiones",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "2 series · 6-10 repeticiones",
+          "sub": "Luego 3-4 × 8-12",
+          "detail": "Dosis numérica clara, count-up. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m13",
+      "section_id": "ej1",
+      "from": 8826,
+      "duration": 257,
+      "narration": "El recorrido adecuado es el que puede controlar sin dolor articular agudo",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_006.png",
+          "asset_id": "v4qsqjivs53o:ej1_m13:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m14",
+      "section_id": "ej1",
+      "from": 9083,
+      "duration": 239,
+      "narration": "Sentir una punzada dentro de la rodilla no es una medalla",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_012.mp4",
+          "asset_id": "v4qsqjivs53o:ej1_m14:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej1_m15",
+      "section_id": "ej1",
+      "from": 9322,
+      "duration": 221,
+      "narration": "No necesita bajar hasta que las caderas toquen los talones",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m1",
+      "section_id": "ej2",
+      "from": 9543,
+      "duration": 316,
+      "narration": "Es la bisagra de cadera, realizada como peso muerto rumano con mancuernas",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio 2 — Bisagra de cadera",
+          "sub": "",
+          "detail": "Chapter numerado, cambio de bloque. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m2",
+      "section_id": "ej2",
+      "from": 9859,
+      "duration": 270,
+      "narration": "este suele estar ausente incluso en personas que hacen sentadillas durante años",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_013.mp4",
+          "asset_id": "v4qsqjivs53o:ej2_m2:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m3",
+      "section_id": "ej2",
+      "from": 10129,
+      "duration": 196,
+      "narration": "Glúteos. Isquiotibiales. Espalda trabajando para mantener la posición",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Cadena posterior: glúteos e isquiotibiales",
+          "sub": "",
+          "detail": "Silueta con cadena posterior encendida capa por capa. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "FedMolecule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m4",
+      "section_id": "ej2",
+      "from": 10325,
+      "duration": 328,
+      "narration": "Imagine que quiere cerrar una puerta que está detrás de usted usando los glúteos",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_007.png",
+          "asset_id": "v4qsqjivs53o:ej2_m4:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m5",
+      "section_id": "ej2",
+      "from": 10653,
+      "duration": 249,
+      "narration": "este movimiento suele confundirse con agacharse. No es lo mismo",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Movimiento correcto vs. agacharse",
+          "sub": "",
+          "detail": "Izq: bisagra correcta. Der: agacharse encorvado. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "FedBeforeAfter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m6",
+      "section_id": "ej2",
+      "from": 10902,
+      "duration": 160,
+      "narration": "Las mancuernas bajan cerca de los muslos",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_014.mp4",
+          "asset_id": "v4qsqjivs53o:ej2_m6:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m7",
+      "section_id": "ej2",
+      "from": 11062,
+      "duration": 314,
+      "narration": "La distancia no decide la calidad. La tensión en el músculo correcto sí",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m8",
+      "section_id": "ej2",
+      "from": 11376,
+      "duration": 187,
+      "narration": "apriete los glúteos y lleve la cadera hacia adelante",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_015.mp4",
+          "asset_id": "v4qsqjivs53o:ej2_m8:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m9",
+      "section_id": "ej2",
+      "from": 11563,
+      "duration": 300,
+      "narration": "Dos o tres series de seis a doce repeticiones funcionan bien para comenzar",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "2-3 series · 6-12 repeticiones",
+          "sub": "",
+          "detail": "Dosis numérica de la bisagra. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m10",
+      "section_id": "ej2",
+      "from": 11863,
+      "duration": 289,
+      "narration": "practique la bisagra frente a una pared: párese a unos veinte centímetros",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_008.png",
+          "asset_id": "v4qsqjivs53o:ej2_m10:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m11",
+      "section_id": "ej2",
+      "from": 12152,
+      "duration": 221,
+      "narration": "Puede sustituirse por un puente de glúteos en el suelo",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_016.mp4",
+          "asset_id": "v4qsqjivs53o:ej2_m11:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m12",
+      "section_id": "ej2",
+      "from": 12373,
+      "duration": 248,
+      "narration": "El peso muerto rumano no es obligatorio si produce dolor",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "No es obligatorio si produce dolor",
+          "sub": "",
+          "detail": "Checklist de cuándo sustituir. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m13",
+      "section_id": "ej2",
+      "from": 12621,
+      "duration": 238,
+      "narration": "No es idéntico, pero conserva buena parte del trabajo de cadera",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m14",
+      "section_id": "ej2",
+      "from": 12859,
+      "duration": 346,
+      "narration": "esa postura encorvada que se instala cuando todo el esfuerzo cotidiano se hace doblando la cintura",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_017.mp4",
+          "asset_id": "v4qsqjivs53o:ej2_m14:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej2_m15",
+      "section_id": "ej2",
+      "from": 13205,
+      "duration": 287,
+      "narration": "Lo que no conviene es eliminar para siempre la parte posterior del cuerpo",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m1",
+      "section_id": "ej3",
+      "from": 13492,
+      "duration": 181,
+      "narration": "El tercer ejercicio es una flexión inclinada",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio 3 — Flexión inclinada",
+          "sub": "",
+          "detail": "Chapter numerado, cambio de bloque. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m2",
+      "section_id": "ej3",
+      "from": 13673,
+      "duration": 339,
+      "narration": "usando una pared, una mesa muy firme o una barra colocada a una altura segura",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_018.mp4",
+          "asset_id": "v4qsqjivs53o:ej3_m2:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m3",
+      "section_id": "ej3",
+      "from": 14012,
+      "duration": 219,
+      "narration": "desarrolla pecho, tríceps y parte anterior de los hombros",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Pecho, tríceps y hombros",
+          "sub": "",
+          "detail": "Rótulo identidad del empuje; músculos señalados en silueta. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "FedLowerThird",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m4",
+      "section_id": "ej3",
+      "from": 14231,
+      "duration": 231,
+      "narration": "Cuanto más alta esté la superficie, más accesible será",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_019.mp4",
+          "asset_id": "v4qsqjivs53o:ej3_m4:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m5",
+      "section_id": "ej3",
+      "from": 14462,
+      "duration": 267,
+      "narration": "Apoye las manos un poco más separadas que los hombros",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_009.png",
+          "asset_id": "v4qsqjivs53o:ej3_m5:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m6",
+      "section_id": "ej3",
+      "from": 14729,
+      "duration": 255,
+      "narration": "Acerque el pecho a la superficie y vuelva a alejarlo empujando",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_010.png",
+          "asset_id": "v4qsqjivs53o:ej3_m6:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m7",
+      "section_id": "ej3",
+      "from": 14984,
+      "duration": 204,
+      "narration": "Cuanto más horizontal quede el cuerpo, mayor será el desafío",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Más horizontal, mayor desafío",
+          "sub": "",
+          "detail": "Escala de dificultad por ángulo, tres niveles. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "FedStep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m8",
+      "section_id": "ej3",
+      "from": 15188,
+      "duration": 189,
+      "narration": "Los codos no tienen que abrirse formando una cruz",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_020.mp4",
+          "asset_id": "v4qsqjivs53o:ej3_m8:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m9",
+      "section_id": "ej3",
+      "from": 15377,
+      "duration": 190,
+      "narration": "También obliga al tronco a mantener el cuerpo alineado",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m10",
+      "section_id": "ej3",
+      "from": 15567,
+      "duration": 246,
+      "narration": "También puede utilizar una prensa de pecho con mancuernas tumbado en el suelo",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_021.mp4",
+          "asset_id": "v4qsqjivs53o:ej3_m10:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m11",
+      "section_id": "ej3",
+      "from": 15813,
+      "duration": 312,
+      "narration": "terminar una serie no significa que el músculo haya recibido un estímulo suficiente",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m12",
+      "section_id": "ej3",
+      "from": 16125,
+      "duration": 259,
+      "narration": "Baje un poco la superficie o añada carga en una variante segura",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_022.mp4",
+          "asset_id": "v4qsqjivs53o:ej3_m12:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej3_m13",
+      "section_id": "ej3",
+      "from": 16384,
+      "duration": 368,
+      "narration": "cuando pueda completar quince con buena técnica y todavía sienta que podría hacer cinco o seis más",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_011.png",
+          "asset_id": "v4qsqjivs53o:ej3_m13:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m1",
+      "section_id": "ej4",
+      "from": 16752,
+      "duration": 187,
+      "narration": "El cuarto ejercicio es el remo con una mancuerna",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio 4 — Remo con mancuerna",
+          "sub": "",
+          "detail": "Chapter numerado, cambio de bloque. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m2",
+      "section_id": "ej4",
+      "from": 16939,
+      "duration": 406,
+      "narration": "apoyando una mano en una silla pesada, un banco o una mesa que no pueda volcarse",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_023.mp4",
+          "asset_id": "v4qsqjivs53o:ej4_m2:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m3",
+      "section_id": "ej4",
+      "from": 17345,
+      "duration": 324,
+      "narration": "fortalece la espalda, la parte posterior del hombro y los flexores del codo, incluido el bíceps",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "El bíceps y la espalda ya trabajan",
+          "sub": "",
+          "detail": "Espalda y bíceps encendidos; el codo flexiona bajo carga. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "FedMolecule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m4",
+      "section_id": "ej4",
+      "from": 17669,
+      "duration": 190,
+      "narration": "Allí tiene una parte de la respuesta que prometí",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m5",
+      "section_id": "ej4",
+      "from": 17859,
+      "duration": 281,
+      "narration": "Con la otra mano, lleve la mancuerna hacia el costado del torso",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_012.png",
+          "asset_id": "v4qsqjivs53o:ej4_m5:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m6",
+      "section_id": "ej4",
+      "from": 18140,
+      "duration": 239,
+      "narration": "No convierta el movimiento en un giro violento de todo el cuerpo",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_024.mp4",
+          "asset_id": "v4qsqjivs53o:ej4_m6:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m7",
+      "section_id": "ej4",
+      "from": 18379,
+      "duration": 204,
+      "narration": "Piense en llevar el codo hacia el bolsillo trasero",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Lleve el codo al bolsillo trasero",
+          "sub": "",
+          "detail": "Trazo del codo hacia el bolsillo, flecha guía. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "FedStep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m8",
+      "section_id": "ej4",
+      "from": 18583,
+      "duration": 151,
+      "narration": "no suba el hombro hacia la oreja",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_025.mp4",
+          "asset_id": "v4qsqjivs53o:ej4_m8:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m9",
+      "section_id": "ej4",
+      "from": 18734,
+      "duration": 178,
+      "narration": "Realice de ocho a quince repeticiones por lado",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "8-15 repeticiones por lado",
+          "sub": "",
+          "detail": "Dosis numérica del remo. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m10",
+      "section_id": "ej4",
+      "from": 18912,
+      "duration": 168,
+      "narration": "Nunca sujete una banda a una puerta dudosa",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_013.png",
+          "asset_id": "v4qsqjivs53o:ej4_m10:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m11",
+      "section_id": "ej4",
+      "from": 19080,
+      "duration": 261,
+      "narration": "Una banda que se suelta puede golpear la cara o los ojos",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_026.mp4",
+          "asset_id": "v4qsqjivs53o:ej4_m11:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m12",
+      "section_id": "ej4",
+      "from": 19341,
+      "duration": 228,
+      "narration": "Los seis movimientos principales son la estructura de la casa",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Estructura de la casa vs. cuadros",
+          "sub": "",
+          "detail": "Izq: estructura de una casa. Der: cuadros decorativos. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "FedBeforeAfter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m13",
+      "section_id": "ej4",
+      "from": 19569,
+      "duration": 273,
+      "narration": "Por eso el curl de bíceps no entró en los seis",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej4_m14",
+      "section_id": "ej4",
+      "from": 19842,
+      "duration": 255,
+      "narration": "Si le gusta y tiene tiempo, añada dos series al final",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_027.mp4",
+          "asset_id": "v4qsqjivs53o:ej4_m14:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m1",
+      "section_id": "ej5",
+      "from": 20097,
+      "duration": 282,
+      "narration": "El quinto ejercicio es la prensa con mancuernas por encima de la cabeza",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Ejercicio 5 — Prensa sobre la cabeza",
+          "sub": "",
+          "detail": "Chapter numerado, cambio de bloque. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m2",
+      "section_id": "ej5",
+      "from": 20379,
+      "duration": 126,
+      "narration": "Esta prensa trabaja hombros y tríceps",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m3",
+      "section_id": "ej5",
+      "from": 20505,
+      "duration": 300,
+      "narration": "es el ejercicio de esta lista que más necesita una adaptación individual",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m4",
+      "section_id": "ej5",
+      "from": 20805,
+      "duration": 311,
+      "narration": "Sostenga las mancuernas cerca de los hombros con las palmas mirando al frente",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_014.png",
+          "asset_id": "v4qsqjivs53o:ej5_m4:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m5",
+      "section_id": "ej5",
+      "from": 21116,
+      "duration": 175,
+      "narration": "Empuje hacia arriba sin chocar las pesas",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_015.png",
+          "asset_id": "v4qsqjivs53o:ej5_m5:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m6",
+      "section_id": "ej5",
+      "from": 21291,
+      "duration": 212,
+      "narration": "Después baje con control hasta un punto cómodo",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_028.mp4",
+          "asset_id": "v4qsqjivs53o:ej5_m6:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m7",
+      "section_id": "ej5",
+      "from": 21503,
+      "duration": 381,
+      "narration": "Si tiene que arquear mucho la espalda para que las mancuernas suban, el peso es excesivo",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Si arquea la espalda, baje el peso",
+          "sub": "",
+          "detail": "Tres señales de carga excesiva, proceso de ajuste. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "FedStep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m8",
+      "section_id": "ej5",
+      "from": 21884,
+      "duration": 231,
+      "narration": "Una posición sentada con respaldo puede dar más estabilidad",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_029.mp4",
+          "asset_id": "v4qsqjivs53o:ej5_m8:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m9",
+      "section_id": "ej5",
+      "from": 22115,
+      "duration": 265,
+      "narration": "Si elevar el brazo provoca dolor intenso, bloqueo, pérdida repentina de fuerza",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Alarma: dolor intenso, bloqueo o debilidad",
+          "sub": "",
+          "detail": "Checklist de señales de alarma del hombro. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m10",
+      "section_id": "ej5",
+      "from": 22380,
+      "duration": 166,
+      "narration": "Necesita una evaluación apropiada, no una frase motivacional",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m11",
+      "section_id": "ej5",
+      "from": 22546,
+      "duration": 195,
+      "narration": "La última repetición debería parecerse a la primera",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_030.mp4",
+          "asset_id": "v4qsqjivs53o:ej5_m11:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej5_m12",
+      "section_id": "ej5",
+      "from": 22741,
+      "duration": 257,
+      "narration": "Empiece con dos series de seis a diez repeticiones",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_016.png",
+          "asset_id": "v4qsqjivs53o:ej5_m12:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m1",
+      "section_id": "ej6",
+      "from": 22998,
+      "duration": 327,
+      "narration": "convierte esa fuerza en algo que se siente al caminar, cargar y estabilizar el cuerpo",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Fuerza que se siente al caminar y cargar",
+          "sub": "",
+          "detail": "Chapter numerado, cambio de bloque. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m2",
+      "section_id": "ej6",
+      "from": 23325,
+      "duration": 269,
+      "narration": "Tome una mancuerna en cada mano y camine con pasos tranquilos",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_017.png",
+          "asset_id": "v4qsqjivs53o:ej6_m2:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m3",
+      "section_id": "ej6",
+      "from": 23594,
+      "duration": 229,
+      "narration": "Los hombros no tienen que subir hacia las orejas",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_031.mp4",
+          "asset_id": "v4qsqjivs53o:ej6_m3:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m4",
+      "section_id": "ej6",
+      "from": 23823,
+      "duration": 209,
+      "narration": "entrena el agarre, los antebrazos, los trapecios, el tronco",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Agarre, antebrazos, trapecios y tronco",
+          "sub": "",
+          "detail": "Silueta con agarre, antebrazos y tronco encendidos. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "FedMolecule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m5",
+      "section_id": "ej6",
+      "from": 24032,
+      "duration": 289,
+      "narration": "Las cargas permanecen cerca de los costados y el tronco evita balancearse",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_032.mp4",
+          "asset_id": "v4qsqjivs53o:ej6_m5:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m6",
+      "section_id": "ej6",
+      "from": 24321,
+      "duration": 234,
+      "narration": "Con una carga adecuada deja de parecerlo muy rápido",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m7",
+      "section_id": "ej6",
+      "from": 24555,
+      "duration": 331,
+      "narration": "Puede sostener las mancuernas quieto junto a una pared o una superficie estable",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Adaptación: sostener quieto junto a la pared",
+          "sub": "",
+          "detail": "Checklist de adaptación por equilibrio. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m8",
+      "section_id": "ej6",
+      "from": 24886,
+      "duration": 210,
+      "narration": "No camine hasta que las manos se abran solas",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_033.mp4",
+          "asset_id": "v4qsqjivs53o:ej6_m8:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m9",
+      "section_id": "ej6",
+      "from": 25096,
+      "duration": 198,
+      "narration": "Haga tres recorridos de veinte a cuarenta segundos",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "3 recorridos · 20-40 segundos",
+          "sub": "",
+          "detail": "Dosis numérica del paseo. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m10",
+      "section_id": "ej6",
+      "from": 25294,
+      "duration": 119,
+      "narration": "Descanse hasta recuperar una respiración cómoda",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_018.png",
+          "asset_id": "v4qsqjivs53o:ej6_m10:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m11",
+      "section_id": "ej6",
+      "from": 25413,
+      "duration": 269,
+      "narration": "El agarre suele limitar tareas reales antes de que fallen las piernas",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_019.png",
+          "asset_id": "v4qsqjivs53o:ej6_m11:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m12",
+      "section_id": "ej6",
+      "from": 25682,
+      "duration": 207,
+      "narration": "Abrir un frasco. Llevar una valija. Sujetarse de una baranda",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_034.mp4",
+          "asset_id": "v4qsqjivs53o:ej6_m12:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "ej6_m13",
+      "section_id": "ej6",
+      "from": 25889,
+      "duration": 265,
+      "narration": "conecta la fuerza del gimnasio con objetos que no vienen perfectamente centrados",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m1",
+      "section_id": "dosis",
+      "from": 26154,
+      "duration": 307,
+      "narration": "Puede entrenarlos dos días por semana dejando al menos un día de recuperación",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "Dos días por semana, con recuperación",
+          "sub": "",
+          "detail": "Semana esquematizada: dos sesiones y descanso. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "FedStep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m2",
+      "section_id": "dosis",
+      "from": 26461,
+      "duration": 166,
+      "narration": "En cada sesión haga los seis",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_035.mp4",
+          "asset_id": "v4qsqjivs53o:dosis_m2:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m3",
+      "section_id": "dosis",
+      "from": 26627,
+      "duration": 276,
+      "narration": "Comience con dos series por ejercicio durante las primeras dos o tres semanas",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m4",
+      "section_id": "dosis",
+      "from": 26903,
+      "duration": 306,
+      "narration": "Otra opción es entrenar tres días por semana alternando dos bloques",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Tres días alternando dos bloques",
+          "sub": "",
+          "detail": "Pizarra Vox: bloque A y bloque B, flechas de alternancia. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "FedWhiteboard",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m5",
+      "section_id": "dosis",
+      "from": 27209,
+      "duration": 267,
+      "narration": "En el primer día haga sentadilla, flexión inclinada y remo",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_036.mp4",
+          "asset_id": "v4qsqjivs53o:dosis_m5:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m6",
+      "section_id": "dosis",
+      "from": 27476,
+      "duration": 393,
+      "narration": "una franja práctica suele ser de seis a quince repeticiones en los movimientos con peso",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Franja práctica: 6-15 repeticiones",
+          "sub": "",
+          "detail": "Barra de rango 6 a 15, count-up. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m7",
+      "section_id": "dosis",
+      "from": 27869,
+      "duration": 512,
+      "narration": "Descanse aproximadamente entre uno y tres minutos",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_020.png",
+          "asset_id": "v4qsqjivs53o:dosis_m7:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m8",
+      "section_id": "dosis",
+      "from": 28381,
+      "duration": 340,
+      "narration": "Mantenga el mismo peso hasta lograr doce repeticiones en todas las series con técnica firme",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Regla: repetir el peso hasta las doce",
+          "sub": "",
+          "detail": "Rótulo de la regla de progresión; contador a 12. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "FedLowerThird",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m9",
+      "section_id": "dosis",
+      "from": 28721,
+      "duration": 565,
+      "narration": "Entonces aumente la carga lo mínimo disponible y vuelva cerca de ocho",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_037.mp4",
+          "asset_id": "v4qsqjivs53o:dosis_m9:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m10",
+      "section_id": "dosis",
+      "from": 29286,
+      "duration": 260,
+      "narration": "Pero cambie una sola cosa a la vez",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m11",
+      "section_id": "dosis",
+      "from": 29546,
+      "duration": 251,
+      "narration": "Anote cada sesión. Ejercicio. Peso. Repeticiones",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Anote ejercicio, peso y repeticiones",
+          "sub": "",
+          "detail": "Checklist del registro de sesión. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m12",
+      "section_id": "dosis",
+      "from": 29797,
+      "duration": 105,
+      "narration": "No necesita una aplicación cara. Una hoja funciona",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_038.mp4",
+          "asset_id": "v4qsqjivs53o:dosis_m12:visual",
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m13",
+      "section_id": "dosis",
+      "from": 29902,
+      "duration": 1195,
+      "narration": "Sin registro, la memoria convierte cualquier sesión cansadora en una sesión productiva",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_021.png",
+          "asset_id": "v4qsqjivs53o:dosis_m13:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m14",
+      "section_id": "dosis",
+      "from": 31097,
+      "duration": 180,
+      "narration": "El entrenamiento envía la señal. El cuerpo necesita energía y proteína para responder",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_039.mp4",
+          "asset_id": "v4qsqjivs53o:dosis_m14:visual",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m15",
+      "section_id": "dosis",
+      "from": 31277,
+      "duration": 49,
+      "narration": "No hace falta comprar un suplemento para que estos ejercicios funcionen",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "dosis_m16",
+      "section_id": "dosis",
+      "from": 31326,
+      "duration": 7,
+      "narration": "Descansar no es pereza. Es parte de producir otra serie de calidad",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m1",
+      "section_id": "seguridad",
+      "from": 31333,
+      "duration": 6,
+      "narration": "Seis ejercicios cubren una base extraordinaria, pero no todos los objetivos particulares",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Seis ejercicios, no todos los objetivos",
+          "sub": "",
+          "detail": "Chapter de transición a seguridad. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m2",
+      "section_id": "seguridad",
+      "from": 31339,
+      "duration": 6,
+      "narration": "Un culturista que quiera maximizar cada región muscular probablemente necesitará más volumen",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_040.mp4",
+          "asset_id": "v4qsqjivs53o:seguridad_m2:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m3",
+      "section_id": "seguridad",
+      "from": 31345,
+      "duration": 128,
+      "narration": "Una persona con osteoporosis, una prótesis, una hernia, una enfermedad cardiaca o una limitación neurológica",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "Osteoporosis, hernia o enfermedad cardiaca",
+          "sub": "",
+          "detail": "Checklist de condiciones que cambian el plan. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m4",
+      "section_id": "seguridad",
+      "from": 31473,
+      "duration": 518,
+      "narration": "Esto tampoco sustituye el sueño ni la alimentación",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m5",
+      "section_id": "seguridad",
+      "from": 31991,
+      "duration": 547,
+      "narration": "busque orientación médica si tiene dolor o presión en el pecho",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_022.png",
+          "asset_id": "v4qsqjivs53o:seguridad_m5:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m6",
+      "section_id": "seguridad",
+      "from": 32538,
+      "duration": 77,
+      "narration": "exhale al superar la parte difícil",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Exhale al superar la parte difícil",
+          "sub": "",
+          "detail": "Diagrama de respiración: exhalar en el esfuerzo. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "FedMolecule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m7",
+      "section_id": "seguridad",
+      "from": 32615,
+      "duration": 199,
+      "narration": "Evite contener la respiración durante mucho tiempo",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_041.mp4",
+          "asset_id": "v4qsqjivs53o:seguridad_m7:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m8",
+      "section_id": "seguridad",
+      "from": 32814,
+      "duration": 473,
+      "narration": "Detenga la sesión y solicite atención si aparece presión en el pecho, desmayo",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedLowerThird",
+          "render_component": "FedLowerThird",
+          "title": "Detenga la sesión ante presión en el pecho",
+          "sub": "",
+          "detail": "Rótulo de alarma; lista de señales que detienen la sesión. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedLowerThird",
+          "layout_family": "FedLowerThird",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m9",
+      "section_id": "seguridad",
+      "from": 33287,
+      "duration": 223,
+      "narration": "El ardor gradual dentro del músculo que trabaja no es igual a una punzada articular",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_042.mp4",
+          "asset_id": "v4qsqjivs53o:seguridad_m9:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "seguridad_m10",
+      "section_id": "seguridad",
+      "from": 33510,
+      "duration": 147,
+      "narration": "Cuando no pueda distinguirlos, no adivine",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "error_m1",
+      "section_id": "error",
+      "from": 33657,
+      "duration": 156,
+      "narration": "No es entrenar demasiado liviano. Tampoco es entrenar demasiado pesado",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "error_m2",
+      "section_id": "error",
+      "from": 33813,
+      "duration": 297,
+      "narration": "Es elegir el peso por orgullo o por miedo, sin medir el esfuerzo real de la serie",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedBeforeAfter",
+          "render_component": "FedBeforeAfter",
+          "title": "Peso por orgullo vs. por miedo",
+          "sub": "",
+          "detail": "Izq: carga por orgullo, balanceo. Der: carga por miedo, sobra fuerza. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedBeforeAfter",
+          "layout_family": "FedBeforeAfter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "error_m3",
+      "section_id": "error",
+      "from": 34110,
+      "duration": 163,
+      "narration": "Acortan el recorrido. Balancean el cuerpo. Cada articulación busca una salida",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_043.mp4",
+          "asset_id": "v4qsqjivs53o:error_m3:visual",
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "error_m4",
+      "section_id": "error",
+      "from": 34273,
+      "duration": 151,
+      "narration": "Eso no demuestra fuerza. Solo vuelve imposible saber qué músculo recibió el trabajo",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "error_m5",
+      "section_id": "error",
+      "from": 34424,
+      "duration": 192,
+      "narration": "Otros hacen diez repeticiones porque la tabla dice diez, aunque podrían completar veinte",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_044.mp4",
+          "asset_id": "v4qsqjivs53o:error_m5:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "error_m6",
+      "section_id": "error",
+      "from": 34616,
+      "duration": 432,
+      "narration": "Guardan la pesa y repiten exactamente lo mismo durante seis meses",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Mismo peso repetido durante seis meses",
+          "sub": "",
+          "detail": "Línea de tiempo plana, sin progreso. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "error_m7",
+      "section_id": "error",
+      "from": 35048,
+      "duration": 372,
+      "narration": "Termine la mayoría de las series cuando crea que todavía podría hacer aproximadamente dos o tres repeticiones",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_023.png",
+          "asset_id": "v4qsqjivs53o:error_m7:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "error_m8",
+      "section_id": "error",
+      "from": 35420,
+      "duration": 411,
+      "narration": "reservar un pequeño margen puede mantener buena técnica y facilitar la recuperación",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedMolecule",
+          "render_component": "FedMolecule",
+          "title": "Un margen protege técnica y recuperación",
+          "sub": "",
+          "detail": "Diagrama de esfuerzo con margen antes del fallo. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedMolecule",
+          "layout_family": "FedMolecule",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "error_m9",
+      "section_id": "error",
+      "from": 35831,
+      "duration": 380,
+      "narration": "¿qué músculo se cansó, cuántas repeticiones limpias quedaban",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_045.mp4",
+          "asset_id": "v4qsqjivs53o:error_m9:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "error_m10",
+      "section_id": "error",
+      "from": 36211,
+      "duration": 253,
+      "narration": "Si el cuello se agota antes que la espalda en el remo, algo está desviando el esfuerzo",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "error_m11",
+      "section_id": "error",
+      "from": 36464,
+      "duration": 364,
+      "narration": "progresar no significa añadir peso en cada sesión",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedWhiteboard",
+          "render_component": "FedHero",
+          "title": "Progresar no es sumar peso siempre",
+          "sub": "",
+          "detail": "Pizarra Vox: formas de progreso sin subir carga. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedWhiteboard",
+          "layout_family": "FedWhiteboard",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "error_m12",
+      "section_id": "error",
+      "from": 36828,
+      "duration": 81,
+      "narration": "O necesitar menos ayuda para levantarse de la silla",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_046.mp4",
+          "asset_id": "v4qsqjivs53o:error_m12:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "error_m13",
+      "section_id": "error",
+      "from": 36909,
+      "duration": 120,
+      "narration": "No necesita llegar al fallo muscular absoluto",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "error_m14",
+      "section_id": "error",
+      "from": 37029,
+      "duration": 107,
+      "narration": "La libreta permite verlo antes de que el espejo lo muestre",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "plan_m1",
+      "section_id": "plan",
+      "from": 37136,
+      "duration": 98,
+      "narration": "Así que este es su plan de acción",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChapter",
+          "render_component": "FedChapter",
+          "title": "Su plan de acción en seis pasos",
+          "sub": "",
+          "detail": "Chapter de cierre del método. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChapter",
+          "layout_family": "FedChapter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "plan_m2",
+      "section_id": "plan",
+      "from": 37234,
+      "duration": 136,
+      "narration": "Elija una variante segura de sentadilla hacia una silla",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStep",
+          "render_component": "FedStep",
+          "title": "1. Sentadilla segura a la silla",
+          "sub": "",
+          "detail": "Paso 1 del recap numerado, tarjeta enfocada. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStep",
+          "layout_family": "FedStep",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "plan_m3",
+      "section_id": "plan",
+      "from": 37370,
+      "duration": 643,
+      "narration": "Aprenda la bisagra de cadera antes de cargar el peso muerto rumano",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_047.mp4",
+          "asset_id": "v4qsqjivs53o:plan_m3:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "plan_m4",
+      "section_id": "plan",
+      "from": 38013,
+      "duration": 195,
+      "narration": "Termine con tres recorridos cortos del paseo del granjero, sin esperar a que falle el agarre",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedChecklist",
+          "render_component": "FedChecklist",
+          "title": "6. Tres paseos del granjero cortos",
+          "sub": "",
+          "detail": "Checklist final de los seis pasos. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedChecklist",
+          "layout_family": "FedChecklist",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "plan_m5",
+      "section_id": "plan",
+      "from": 38208,
+      "duration": 225,
+      "narration": "Durante las primeras semanas haga dos series de cada uno, dos veces por semana",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_024.png",
+          "asset_id": "v4qsqjivs53o:plan_m5:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "plan_m6",
+      "section_id": "plan",
+      "from": 38433,
+      "duration": 282,
+      "narration": "Cuando complete el extremo alto del rango dejando dos o tres repeticiones posibles, aumente un poco",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedStat",
+          "render_component": "FedStat",
+          "title": "Complete el rango y aumente un poco",
+          "sub": "",
+          "detail": "Regla de subida de carga, contador. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedStat",
+          "layout_family": "FedStat",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "plan_m7",
+      "section_id": "plan",
+      "from": 38715,
+      "duration": 199,
+      "narration": "No es fácil. Y justamente por eso funciona mejor que coleccionar ejercicios nuevos cada lunes",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "plan_m8",
+      "section_id": "plan",
+      "from": 38914,
+      "duration": 119,
+      "narration": "Guarde este video para tener la secuencia durante su próxima sesión",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_048.mp4",
+          "asset_id": "v4qsqjivs53o:plan_m8:visual",
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "plan_m9",
+      "section_id": "plan",
+      "from": 39033,
+      "duration": 364,
+      "narration": "Suscríbase a Federer Building si quiere entrenar con criterios que respetan la edad",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "card",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedCta",
+          "render_component": "FedCta",
+          "title": "Suscríbase a Federer Building",
+          "sub": "",
+          "detail": "Cierre CTA con marca del canal, botón suscribir. Cámara con push-in lento y parallax entre capas; entra desde fuera de cuadro por foco y sale con corte limpio.",
+          "kicker": "",
+          "family": "FedCta",
+          "layout_family": "FedCta",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "component",
+          "depth_layers": 6,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "plan_m10",
+      "section_id": "plan",
+      "from": 39397,
+      "duration": 343,
+      "narration": "Cuénteme en los comentarios cuál de los seis movimientos le cuesta más y qué edad tiene",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "image",
+          "src": "img/v4qsqjivs53o_presenter_025.png",
+          "asset_id": "v4qsqjivs53o:plan_m10:visual",
+          "role": "presenter_action",
+          "overlay_policy": "none",
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "plan_m11",
+      "section_id": "plan",
+      "from": 39740,
+      "duration": 450,
+      "narration": "cómo revisar un desayuno común, alimento por alimento",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "video",
+          "src": "broll/v4qsqjivs53o/v4qsqjivs53o_stock_049.mp4",
+          "asset_id": "v4qsqjivs53o:plan_m11:visual",
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "plan_m12",
+      "section_id": "plan",
+      "from": 40190,
+      "duration": 510,
+      "narration": "Después de los cuarenta no necesitamos entrenar como si tuviéramos veinte",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    },
+    {
+      "id": "plan_m13",
+      "section_id": "plan",
+      "from": 40700,
+      "duration": 184,
+      "narration": "Empiece liviano. Progrese con paciencia. Pero empiece",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v4qsqjivs53o.mp4"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 159,
+    "avatar_scenes": 35,
+    "clip_scenes": 49,
+    "image_scenes": 25,
+    "component_scenes": 50,
+    "distinct_render_components": 9,
+    "duration_seconds": 1362.77,
+    "unresolved_assets": 0,
+    "unresolved_asset_scenes": [],
+    "visual_v3": {
+      "moments": 159,
+      "counts": {
+        "avatar_full": 35,
+        "clean_stock": 49,
+        "hero_component": 50,
+        "presenter_action": 25
+      },
+      "ratios": {
+        "avatar_full": 0.2201,
+        "clean_stock": 0.3082,
+        "hero_component": 0.3145,
+        "presenter_action": 0.1572
+      },
+      "clean_media_without_overlay_ratio": 1,
+      "clean_media_mix_ratio": 0.3082,
+      "hero_families": 10,
+      "rendered_components": 9,
+      "dominant_rendered_component_share": 0.18,
+      "max_consecutive_rendered_component": 1,
+      "transition_modes": 5,
+      "clean_cut_ratio": 0.2956,
+      "max_consecutive_transition": 1,
+      "presenter_section_coverage": 1
+    }
+  }
+}
