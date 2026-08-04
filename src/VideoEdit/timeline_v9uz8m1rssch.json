@@ -38,14 +38,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "vaso de agua servido en primer plano sobre mesada, luz teal",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_001.mp4",
+          "asset_id": "v9uz8m1rssch:s01m02:clean_stock",
           "transition_variant": "whip"
         }
       ]
@@ -99,14 +94,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer sostiene un vaso de agua a media luz y mira a camara planteando la paradoja",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_001.png",
+          "asset_id": "v9uz8m1rssch:s01m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -154,14 +146,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor con leve cansancio se frota la sien junto a una ventana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_002.mp4",
+          "asset_id": "v9uz8m1rssch:s02m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -215,14 +202,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer niega con la mano el mito de la pastilla magica y explica la correccion de la deshidratacion",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_002.png",
+          "asset_id": "v9uz8m1rssch:s02m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "iris"
         }
       ]
@@ -238,14 +222,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "vaso de agua junto a una pastilla azul tachada, estilo clinico",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_001.png",
+          "asset_id": "v9uz8m1rssch:s02m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "lift"
         }
       ]
@@ -315,14 +296,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor con leve cansancio se frota la sien junto a una ventana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_003.mp4",
+          "asset_id": "v9uz8m1rssch:s02m08:clean_stock",
           "transition_variant": "lift"
         }
       ]
@@ -338,14 +314,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer niega con la mano el mito de la pastilla magica y explica la correccion de la deshidratacion",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_003.png",
+          "asset_id": "v9uz8m1rssch:s02m09:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -377,14 +350,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor se levanta de la cama de noche hacia el bano",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_004.mp4",
+          "asset_id": "v9uz8m1rssch:s03m02:clean_stock",
           "transition_variant": "fold"
         }
       ]
@@ -438,14 +406,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer cuenta con los dedos las tres cosas que va a separar en el video",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_004.png",
+          "asset_id": "v9uz8m1rssch:s03m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -461,14 +426,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "tres vasos enormes de agua alineados sobre una mesa de noche",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_002.png",
+          "asset_id": "v9uz8m1rssch:s03m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "iris"
         }
       ]
@@ -538,14 +500,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor se levanta de la cama de noche hacia el bano",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_005.mp4",
+          "asset_id": "v9uz8m1rssch:s03m08:clean_stock",
           "transition_variant": "whip"
         }
       ]
@@ -577,14 +534,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "pareja madura conversando tranquila en un sillon",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_006.mp4",
+          "asset_id": "v9uz8m1rssch:s04m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -638,14 +590,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer separa con las manos dos conceptos mientras los define",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_005.png",
+          "asset_id": "v9uz8m1rssch:s04m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "fold"
         }
       ]
@@ -661,14 +610,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "cerebro y sistema vascular ilustrados lado a lado, look teal",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_003.png",
+          "asset_id": "v9uz8m1rssch:s04m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -776,14 +722,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "pareja madura conversando tranquila en un sillon",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_007.mp4",
+          "asset_id": "v9uz8m1rssch:s04m09:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -799,14 +740,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer separa con las manos dos conceptos mientras los define",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_006.png",
+          "asset_id": "v9uz8m1rssch:s04m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -838,14 +776,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "agua corriendo por una manguera al aire libre en camara lenta",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_008.mp4",
+          "asset_id": "v9uz8m1rssch:s05m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -899,14 +832,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer usa la analogia de la manguera con las manos para explicar bomba, tuberia y volumen",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_007.png",
+          "asset_id": "v9uz8m1rssch:s05m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "fold"
         }
       ]
@@ -922,14 +852,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "esquema de manguera con bomba y tuberia comparado con corazon y vasos",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_004.png",
+          "asset_id": "v9uz8m1rssch:s05m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -1037,14 +964,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "agua corriendo por una manguera al aire libre en camara lenta",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_009.mp4",
+          "asset_id": "v9uz8m1rssch:s05m09:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -1060,14 +982,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer usa la analogia de la manguera con las manos para explicar bomba, tuberia y volumen",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_008.png",
+          "asset_id": "v9uz8m1rssch:s05m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -1099,14 +1018,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor bebe un vaso de agua junto a la cocina por la manana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_010.mp4",
+          "asset_id": "v9uz8m1rssch:s06m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -1160,14 +1074,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer enumera las senales de deshidratacion senalando una lista imaginaria",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_009.png",
+          "asset_id": "v9uz8m1rssch:s06m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "fold"
         }
       ]
@@ -1183,14 +1094,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "escala de color de orina de amarillo claro a oscuro sobre fondo neutro",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_005.png",
+          "asset_id": "v9uz8m1rssch:s06m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -1298,14 +1206,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor bebe un vaso de agua junto a la cocina por la manana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_011.mp4",
+          "asset_id": "v9uz8m1rssch:s06m09:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -1321,14 +1224,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "escala de color de orina de amarillo claro a oscuro sobre fondo neutro",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_006.png",
+          "asset_id": "v9uz8m1rssch:s06m10:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -1360,14 +1260,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "taza de cafe humeante junto a un vaso de agua al amanecer",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_012.mp4",
+          "asset_id": "v9uz8m1rssch:s07m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -1421,14 +1316,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer marca en el aire la primera ventana del dia al levantarse",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_010.png",
+          "asset_id": "v9uz8m1rssch:s07m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "fold"
         }
       ]
@@ -1444,14 +1336,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "linea de tiempo del dia con vasos de agua distribuidos por la manana",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_007.png",
+          "asset_id": "v9uz8m1rssch:s07m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -1521,14 +1410,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "taza de cafe humeante junto a un vaso de agua al amanecer",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_013.mp4",
+          "asset_id": "v9uz8m1rssch:s07m08:clean_stock",
           "transition_variant": "lift"
         }
       ]
@@ -1582,14 +1466,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer marca en el aire la primera ventana del dia al levantarse",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_011.png",
+          "asset_id": "v9uz8m1rssch:s07m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -1637,14 +1518,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor camina hacia el bano de dia con gesto de urgencia",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_014.mp4",
+          "asset_id": "v9uz8m1rssch:s08m02:clean_stock",
           "transition_variant": "iris"
         }
       ]
@@ -1698,14 +1574,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer explica con calma el crecimiento prostatico y por que no sirve beber litros de golpe",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_012.png",
+          "asset_id": "v9uz8m1rssch:s08m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -1721,14 +1594,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "ilustracion de vejiga y prostata con llamadas rotuladas, look teal",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_008.png",
+          "asset_id": "v9uz8m1rssch:s08m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -1836,14 +1706,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor camina hacia el bano de dia con gesto de urgencia",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_015.mp4",
+          "asset_id": "v9uz8m1rssch:s08m09:clean_stock",
           "transition_variant": "whip"
         }
       ]
@@ -1859,14 +1724,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer explica con calma el crecimiento prostatico y por que no sirve beber litros de golpe",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_013.png",
+          "asset_id": "v9uz8m1rssch:s08m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "lift"
         }
       ]
@@ -1898,14 +1760,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "pareja madura comparte una cena tranquila con luz calida",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_016.mp4",
+          "asset_id": "v9uz8m1rssch:s09m02:clean_stock",
           "transition_variant": "iris"
         }
       ]
@@ -1959,14 +1816,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer aconseja cuidar el agua desde temprano si se espera una noche especial",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_014.png",
+          "asset_id": "v9uz8m1rssch:s09m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -1982,14 +1836,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "botella de agua tachada junto a un reloj marcando la tarde",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_009.png",
+          "asset_id": "v9uz8m1rssch:s09m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -2059,14 +1910,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "pareja madura comparte una cena tranquila con luz calida",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_017.mp4",
+          "asset_id": "v9uz8m1rssch:s09m08:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -2098,14 +1944,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "copa de vino servida en penumbra sobre una mesa",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_018.mp4",
+          "asset_id": "v9uz8m1rssch:s10m02:clean_stock",
           "transition_variant": "lift"
         }
       ]
@@ -2159,14 +2000,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer contrasta una copa social con el efecto real sobre la ereccion y el sueno",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_015.png",
+          "asset_id": "v9uz8m1rssch:s10m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "iris"
         }
       ]
@@ -2182,14 +2020,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "copa de alcohol y gota de deshidratacion enfrentadas, estilo clinico",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_010.png",
+          "asset_id": "v9uz8m1rssch:s10m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "fold"
         }
       ]
@@ -2259,14 +2094,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "copa de vino servida en penumbra sobre una mesa",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_019.mp4",
+          "asset_id": "v9uz8m1rssch:s10m08:clean_stock",
           "transition_variant": "iris"
         }
       ]
@@ -2282,14 +2112,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer contrasta una copa social con el efecto real sobre la ereccion y el sueno",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_016.png",
+          "asset_id": "v9uz8m1rssch:s10m09:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "lift"
         }
       ]
@@ -2321,14 +2148,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor con mas energia camina al aire libre por la manana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_020.mp4",
+          "asset_id": "v9uz8m1rssch:s11m02:clean_stock",
           "transition_variant": "whip"
         }
       ]
@@ -2382,14 +2204,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer aclara que el agua no eleva hormonas y que ciertos medicamentos afectan el deseo",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_017.png",
+          "asset_id": "v9uz8m1rssch:s11m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -2405,14 +2224,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "panel de tipos de medicamentos con flechas hacia deseo y funcion sexual",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_011.png",
+          "asset_id": "v9uz8m1rssch:s11m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "iris"
         }
       ]
@@ -2482,14 +2298,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor con mas energia camina al aire libre por la manana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_021.mp4",
+          "asset_id": "v9uz8m1rssch:s11m08:clean_stock",
           "transition_variant": "whip"
         }
       ]
@@ -2521,14 +2332,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "persona corpulenta trabaja bajo el sol frente a persona sedentaria en interior",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_022.mp4",
+          "asset_id": "v9uz8m1rssch:s12m02:clean_stock",
           "transition_variant": "lift"
         }
       ]
@@ -2582,14 +2388,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer desmonta la regla de los ocho vasos y advierte sobre el exceso de agua",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_018.png",
+          "asset_id": "v9uz8m1rssch:s12m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -2605,14 +2408,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "ocho vasos de agua alineados con un signo de interrogacion encima",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_012.png",
+          "asset_id": "v9uz8m1rssch:s12m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "lift"
         }
       ]
@@ -2682,14 +2482,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "persona corpulenta trabaja bajo el sol frente a persona sedentaria en interior",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_023.mp4",
+          "asset_id": "v9uz8m1rssch:s12m08:clean_stock",
           "transition_variant": "fold"
         }
       ]
@@ -2743,14 +2538,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer desmonta la regla de los ocho vasos y advierte sobre el exceso de agua",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_019.png",
+          "asset_id": "v9uz8m1rssch:s12m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -2798,14 +2590,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "jarra de agua con marcas junto a una libreta de anotaciones",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_024.mp4",
+          "asset_id": "v9uz8m1rssch:s13m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -2859,14 +2646,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer propone dejar una jarra visible y anotar el patron durante siete dias",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_020.png",
+          "asset_id": "v9uz8m1rssch:s13m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "lift"
         }
       ]
@@ -2882,14 +2666,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "diagrama de liquido en las piernas que regresa a la vejiga al acostarse",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_013.png",
+          "asset_id": "v9uz8m1rssch:s13m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -2997,14 +2778,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "jarra de agua con marcas junto a una libreta de anotaciones",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_025.mp4",
+          "asset_id": "v9uz8m1rssch:s13m09:clean_stock",
           "transition_variant": "whip"
         }
       ]
@@ -3020,14 +2796,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer propone dejar una jarra visible y anotar el patron durante siete dias",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_021.png",
+          "asset_id": "v9uz8m1rssch:s13m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "iris"
         }
       ]
@@ -3059,14 +2832,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "plato de cena salada servido de noche en penumbra",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_026.mp4",
+          "asset_id": "v9uz8m1rssch:s14m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -3120,14 +2888,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer explica como una cena salada arranca la cadena de sal, sed y sueno roto",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_022.png",
+          "asset_id": "v9uz8m1rssch:s14m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "lift"
         }
       ]
@@ -3143,14 +2908,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "cadena visual sal, sed, agua, vejiga llena y sueno fragmentado",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_014.png",
+          "asset_id": "v9uz8m1rssch:s14m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -3220,14 +2982,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "plato de cena salada servido de noche en penumbra",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_027.mp4",
+          "asset_id": "v9uz8m1rssch:s14m08:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -3259,14 +3016,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor hace una caminata tranquila por un parque",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_028.mp4",
+          "asset_id": "v9uz8m1rssch:s15m02:clean_stock",
           "transition_variant": "iris"
         }
       ]
@@ -3320,14 +3072,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer desmiente uno por uno los mitos del agua especial mientras camina un paso",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_023.png",
+          "asset_id": "v9uz8m1rssch:s15m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -3343,14 +3092,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "tarjetas de mitos del agua tachadas: alcalina, limon, sal, deportiva",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_015.png",
+          "asset_id": "v9uz8m1rssch:s15m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -3458,14 +3204,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor hace una caminata tranquila por un parque",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_029.mp4",
+          "asset_id": "v9uz8m1rssch:s15m09:clean_stock",
           "transition_variant": "fold"
         }
       ]
@@ -3481,14 +3222,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer desmiente uno por uno los mitos del agua especial mientras camina un paso",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_024.png",
+          "asset_id": "v9uz8m1rssch:s15m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -3520,14 +3258,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor pensativo mira por la ventana al atardecer",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_030.mp4",
+          "asset_id": "v9uz8m1rssch:s16m02:clean_stock",
           "transition_variant": "iris"
         }
       ]
@@ -3581,14 +3314,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer advierte, serio, que una ereccion que falla puede ser una senal cardiovascular",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_025.png",
+          "asset_id": "v9uz8m1rssch:s16m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -3604,14 +3334,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "arterias del pene y del corazon comparadas por tamano, look clinico",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_016.png",
+          "asset_id": "v9uz8m1rssch:s16m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -3681,14 +3408,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor pensativo mira por la ventana al atardecer",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_031.mp4",
+          "asset_id": "v9uz8m1rssch:s16m08:clean_stock",
           "transition_variant": "iris"
         }
       ]
@@ -3720,14 +3442,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "botella grande de agua junto a la cama en la penumbra nocturna",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_032.mp4",
+          "asset_id": "v9uz8m1rssch:s17m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -3781,14 +3498,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer revela el error nocturno completo y la botella junto a la cama",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_026.png",
+          "asset_id": "v9uz8m1rssch:s17m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "iris"
         }
       ]
@@ -3842,14 +3556,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "ciclo nocturno: vejiga llena, despertar, beber por rutina, repetir",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_017.png",
+          "asset_id": "v9uz8m1rssch:s17m06:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -3897,14 +3608,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor anota su registro de agua en una libreta por la manana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_033.mp4",
+          "asset_id": "v9uz8m1rssch:s18m02:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -3958,14 +3664,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer resume el plan de siete dias e invita a comentar y compartir",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_027.png",
+          "asset_id": "v9uz8m1rssch:s18m04:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "fold"
         }
       ]
@@ -3981,14 +3684,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "checklist de ocho pasos del plan de hidratacion marcados en orden",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_image_018.png",
+          "asset_id": "v9uz8m1rssch:s18m05:clean_image",
+          "role": "clean_image",
+          "overlay_policy": "none",
           "transition_variant": "none"
         }
       ]
@@ -4096,14 +3796,9 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "hombre mayor anota su registro de agua en una libreta por la manana",
-          "depth_layers": 7,
+          "type": "video",
+          "src": "broll/v9uz8m1rssch/v9uz8m1rssch_stock_034.mp4",
+          "asset_id": "v9uz8m1rssch:s18m09:clean_stock",
           "transition_variant": "none"
         }
       ]
@@ -4119,14 +3814,11 @@
       "overlay_policy": "none",
       "layers": [
         {
-          "type": "component",
-          "component": "FedHero",
-          "render_component": "FedHero",
-          "family": "evidence",
-          "title": "",
-          "sub": "",
-          "detail": "el Dr. Federer resume el plan de siete dias e invita a comentar y compartir",
-          "depth_layers": 7,
+          "type": "image",
+          "src": "img/v9uz8m1rssch_presenter_028.png",
+          "asset_id": "v9uz8m1rssch:s18m10:presenter_action",
+          "role": "presenter_action",
+          "overlay_policy": "none",
           "transition_variant": "whip"
         }
       ]
@@ -4135,10 +3827,10 @@
   "metrics": {
     "scenes": 162,
     "avatar_scenes": 38,
-    "clip_scenes": 0,
-    "image_scenes": 0,
-    "component_scenes": 124,
-    "distinct_render_components": 15,
+    "clip_scenes": 34,
+    "image_scenes": 46,
+    "component_scenes": 44,
+    "distinct_render_components": 14,
     "duration_seconds": 1530.96,
     "unresolved_assets": 0,
     "visual_v3": {
