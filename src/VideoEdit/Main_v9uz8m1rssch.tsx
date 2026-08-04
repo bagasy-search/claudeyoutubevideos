@@ -1,72 +1,178 @@
-import React from "react";
-import {
-  AbsoluteFill,
-  Img,
-  Sequence,
-  interpolate,
-  staticFile,
-  useCurrentFrame,
-} from "remotion";
-import {Audio, Video} from "@remotion/media";
+import { AbsoluteFill, Sequence } from "remotion";
+import { AvatarLayer, AvatarWindow } from "../_fed6/VideoEdit/scenes/AvatarLayer";
+import { RawShot } from "../_fed6/VideoEdit/scenes/RawShot";
+import { ErrorStinger } from "../_fed6/VideoEdit/scenes/ErrorStinger";
+import { GuardaEsto } from "../_fed6/VideoEdit/scenes/GuardaEsto";
+import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
+import { renderFederer2Comp } from "../_fed6/VideoEdit/FedererComponents2";
 import timeline from "./timeline_v9uz8m1rssch.json";
-const clamp = {extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const};
-const palette = {ink: "#201b16", cream: "#f3ead8", amber: "#c98232", red: "#a63728", blue: "#4e8394"};
 
-const ComponentScene: React.FC<{scene:any}> = ({scene}) => {
-  const frame = useCurrentFrame();
+const TEAL = "#12B3AE";
+const BG = "#0E1D23";
+const FPS = timeline.fps || 30;
+const AVATAR_SRC = timeline.audio_src;
+const AVATAR_WAV = "v9uz8m1rssch_16k.wav";
+const scenes: any[] = timeline.scenes as any[];
+const secF = (s: number) => Math.round(s * FPS);
+
+// etiqueta ES del bloque de acento por FAMILIA que emitió el director
+const EYEBROW: Record<string, string> = {
+  contrast_split: "EN CONTRASTE",
+  body_signal_grid: "SEÑALES DEL CUERPO",
+  loop_cycle: "EL CICLO",
+  daily_timeline: "EN EL DÍA",
+  mechanism_diagram: "CÓMO FUNCIONA",
+  comparison_scale: "COMPARACIÓN",
+  cause_chain: "CAUSA Y EFECTO",
+  dose_meter: "LA DOSIS",
+  urine_color_scale: "SEÑAL DE COLOR",
+  safety_boundary: "CUIDADO",
+  anatomy_callout: "EN EL CUERPO",
+  myth_vs_fact: "MITO O VERDAD",
+  med_interaction_panel: "INTERACCIÓN",
+  checklist_plan: "TU PLAN",
+  evidence: "DATO",
+};
+// FAMILIA del director -> kind _fed6 (todos rinden bien SOLO con el título, a pantalla completa)
+const KINDMAP: Record<string, string> = {
+  contrast_split: "headline",
+  body_signal_grid: "guardaesto",
+  loop_cycle: "frasecinetica",
+  daily_timeline: "guardaesto",
+  mechanism_diagram: "headline",
+  comparison_scale: "errorstinger",
+  cause_chain: "frasecinetica",
+  dose_meter: "errorstinger",
+  urine_color_scale: "guardaesto",
+  safety_boundary: "guardaesto",
+  anatomy_callout: "headline",
+  myth_vs_fact: "headline",
+  med_interaction_panel: "errorstinger",
+  checklist_plan: "guardaesto",
+};
+const WARN = new Set<string>(["med_interaction_panel", "safety_boundary"]);
+const capSec = (kind: string): number =>
+  kind === "guardaesto" ? 8 : kind === "errorstinger" ? 4.5 : 5;
+
+const famOf = (layer: any): string => String(layer.family || layer.render_component || "evidence").toLowerCase();
+const usableTitle = (layer: any): string => String(layer.title || "").trim();
+
+// Componentes a renderizar: SOLO las escenas component con copy editorial. Las genéricas
+// (evidence/FedHero sin título, que solo traen la nota del director) NO se dibujan: el avatar
+// sigue hablando a pantalla completa (nunca se imprime la nota del director en pantalla).
+type Comp = { scene: any; kind: string; durF: number };
+const comps: Comp[] = [];
+for (const scene of scenes) {
   const layer = scene.layers[0];
-  const family = [...String(layer.family || layer.component || "evidence")].reduce((sum,c)=>sum+c.charCodeAt(0),0) % 10;
-  const enter = interpolate(frame, [0, 18], [0, 1], clamp);
-  const drift = Math.sin(frame / 28);
-  const split = family % 3 === 0;
-  const radial = family % 3 === 1;
-  const title = layer.title || String(layer.component || "Evidence").replace(/([a-z])([A-Z])/g,"$1 $2");
-  return <AbsoluteFill style={{background:family%2?"#0d1716":"#17130f",color:palette.cream,overflow:"hidden",perspective:1600}}>
-    {/* 1: cinematic gradient plate */}
-    <AbsoluteFill style={{background:`radial-gradient(circle at ${radial?25:75}% 28%, ${family%2?"#4e839466":"#c982324d"}, transparent 36%), linear-gradient(135deg, transparent, #0009)`,opacity:enter}}/>
-    {/* 2: moving technical grid */}
-    <AbsoluteFill style={{opacity:.13,transform:`translate3d(${drift*18}px,${-drift*10}px,0) scale(1.08)`,backgroundImage:"linear-gradient(#fff3 1px,transparent 1px),linear-gradient(90deg,#fff3 1px,transparent 1px)",backgroundSize:family%2?"72px 72px":"110px 110px"}}/>
-    {/* 3-4: independent depth lights */}
-    <div style={{position:"absolute",width:620,height:620,borderRadius:"50%",left:radial?-170:1250,top:-230,background:"#c9823238",filter:"blur(55px)",transform:`translateZ(40px) scale(${1+drift*.06})`}}/>
-    <div style={{position:"absolute",width:480,height:480,borderRadius:"50%",right:radial?-90:1320,bottom:-180,background:"#4e83945c",filter:"blur(70px)",transform:`translateY(${drift*24}px) translateZ(80px)`}}/>
-    {/* 5: architectural frame, deliberately not a generic rounded card */}
-    <div style={{position:"absolute",left:split?90:family%2?180:760,top:split?120:190,width:split?820:980,height:split?840:700,borderLeft:"2px solid #c98232aa",borderTop:"2px solid #ffffff30",transform:`translate3d(0,${(1-enter)*55}px,120px) rotateY(${(1-enter)*(family%2?5:-5)}deg)`,opacity:enter}}/>
-    {/* 6: semantic value / diagram object */}
-    <div style={{position:"absolute",left:split?1030:family%2?1030:190,top:family%3===2?230:360,width:560,height:360,display:"grid",placeItems:"center",transform:`translate3d(${(1-enter)*(family%2?70:-70)}px,0,180px)`,opacity:enter}}>
-      <div style={{position:"absolute",width:310,height:310,borderRadius:family%2?"50%":"18%",border:"3px solid #c98232",boxShadow:"0 0 0 28px #c9823214,0 0 0 58px #4e839412",transform:`rotate(${family*9+frame*.08}deg)`}}/>
-      <div style={{fontFamily:"Arial, sans-serif",fontSize:layer.value?92:42,fontWeight:800,textAlign:"center",maxWidth:470}}>{layer.value || layer.icon || String(layer.component || "INSIGHT").replace(/([a-z])([A-Z])/g,"$1 $2").toUpperCase()}</div>
-    </div>
-    {/* 7: editorial hierarchy */}
-    <div style={{position:"absolute",left:split?150:family%2?210:820,top:split?210:245,width:split?760:900,transform:`translate3d(0,${(1-enter)*42}px,240px)`,opacity:enter}}>
-      <div style={{fontFamily:"Arial, sans-serif",fontSize:25,letterSpacing:7,textTransform:"uppercase",color:palette.amber,marginBottom:28}}>{String(layer.family || layer.component || "EVIDENCE").replaceAll("_"," ")}</div>
-      <div style={{fontFamily:"Georgia, serif",fontSize:split?72:82,fontWeight:750,lineHeight:1.02,maxWidth:880}}>{title}</div>
-      {layer.detail ? <div style={{fontFamily:"Arial, sans-serif",fontSize:31,lineHeight:1.35,color:"#e8dcc8",marginTop:30,maxWidth:760}}>{layer.detail}</div> : null}
-    </div>
-    {/* 8: controlled glint and progress accent */}
-    <div style={{position:"absolute",left:-420+frame*9,top:-300,width:190,height:1700,background:"linear-gradient(90deg,transparent,#fff2,transparent)",transform:"rotate(24deg) translateZ(300px)",filter:"blur(10px)"}}/>
-    <div style={{position:"absolute",left:90,right:90,bottom:72,height:4,background:"#ffffff18"}}><div style={{height:"100%",width:`${Math.min(100,frame/Math.max(1,scene.duration)*100)}%`,background:family%2?palette.blue:palette.amber}}/></div>
-  </AbsoluteFill>;
+  if (layer.type !== "component") continue;
+  if (!usableTitle(layer)) continue;
+  const kind = KINDMAP[famOf(layer)] || "headline";
+  const durF = Math.max(secF(2), Math.min(scene.duration, secF(capSec(kind))));
+  comps.push({ scene, kind, durF });
+}
+const compByScene = new Map<any, Comp>(comps.map((c) => [c.scene, c]));
+
+// ── CAPA 3 · ventanas del avatar ────────────────────────────────────────────
+// full por defecto (arranca full: la escena 0 es avatar_full >=2s); hidden mientras un
+// componente full-screen (o un b-roll) ocupa la pantalla; halfR para fotos junto al avatar.
+// Tras un componente topeado más corto que su escena, el avatar VUELVE a full.
+const pts: { start: number; mode: AvatarWindow["mode"] }[] = [{ start: 0, mode: "full" }];
+let flip = false;
+for (const scene of scenes) {
+  const layer = scene.layers[0];
+  const s = scene.from / FPS;
+  if (layer.type === "avatar") {
+    pts.push({ start: s, mode: "full" });
+  } else if (layer.type === "component") {
+    const c = compByScene.get(scene);
+    if (c) {
+      pts.push({ start: s, mode: "hidden" });
+      if (c.durF < scene.duration) pts.push({ start: (scene.from + c.durF) / FPS, mode: "full" });
+    } else {
+      pts.push({ start: s, mode: "full" });
+    }
+  } else if (layer.type === "image") {
+    pts.push({ start: s, mode: flip ? "halfR" : "hidden" });
+    flip = !flip;
+  } else {
+    pts.push({ start: s, mode: "hidden" });
+  }
+}
+pts.sort((a, b) => a.start - b.start);
+const AVATAR_WINDOWS: AvatarWindow[] = [];
+for (const p of pts) {
+  if (!AVATAR_WINDOWS.length || AVATAR_WINDOWS[AVATAR_WINDOWS.length - 1].mode !== p.mode) {
+    AVATAR_WINDOWS.push({ start: p.start, mode: p.mode });
+  }
+}
+if (AVATAR_WINDOWS[0].start > 0) AVATAR_WINDOWS.unshift({ start: 0, mode: "full" });
+
+// tramos halfR (para confinar la foto a la mitad izquierda pegada al avatar)
+const HALFR: [number, number][] = [];
+for (let i = 0; i < AVATAR_WINDOWS.length; i++) {
+  if (AVATAR_WINDOWS[i].mode === "halfR") {
+    const s = AVATAR_WINDOWS[i].start;
+    const e = i + 1 < AVATAR_WINDOWS.length ? AVATAR_WINDOWS[i + 1].start : timeline.duration_in_frames / FPS;
+    HALFR.push([s, e]);
+  }
+}
+const inHalfR = (t: number) => HALFR.some(([s, e]) => t >= s - 0.05 && t < e - 0.1);
+const HalfLeft = ({ children }: { children: any }) => (
+  <div style={{ position: "absolute", left: 0, top: 0, width: 960, height: 1080, overflow: "hidden", background: BG }}>{children}</div>
+);
+
+const renderComp = (c: Comp) => {
+  const layer = c.scene.layers[0];
+  const fam = famOf(layer);
+  const eyebrow = EYEBROW[fam] || "DATO";
+  const title = usableTitle(layer);
+  const d = c.durF;
+  const tone: "teal" | "warn" = WARN.has(fam) ? "warn" : "teal";
+  if (c.kind === "errorstinger") {
+    return <ErrorStinger durationInFrames={d} number={"✚"} title={title} eyebrow={eyebrow} tone={tone} />;
+  }
+  if (c.kind === "guardaesto") {
+    const items = (Array.isArray(layer.items) ? layer.items : []).filter(Boolean);
+    return <GuardaEsto durationInFrames={d} title={title} items={items} tag={eyebrow} />;
+  }
+  if (c.kind === "frasecinetica") {
+    const wds = title.split(/\s+/).filter(Boolean).map((w: string) => ({ t: w }));
+    return <FraseCinetica durationInFrames={d} words={wds} tone={tone} onImage={false} />;
+  }
+  const toks = title.split(/\s+/).filter(Boolean);
+  const beat = { kind: "headline", tokens: toks.map((t: string, i: number) => ({ t, hl: i === toks.length - 1 })), eyebrow };
+  return renderFederer2Comp(beat, d, { medico: true });
 };
 
-const VisualScene: React.FC<{scene:any}> = ({scene}) => {
-  const frame = useCurrentFrame();
-  const layer = scene.layers[0];
-  const fade = interpolate(frame, [0, 8, Math.max(9, scene.duration-8), scene.duration], [0,1,1,0], clamp);
-  const zoom = interpolate(frame, [0, Math.max(1, scene.duration)], [1.01, 1.09], clamp);
-  if (layer.type === "component") return <ComponentScene scene={scene}/>;
-  if (layer.type === "image") return <AbsoluteFill style={{background:"#111",opacity:fade}}>
-    <Img src={staticFile(layer.src)} style={{width:"100%",height:"100%",objectFit:"cover",transform:`scale(${zoom})`}}/>
-  </AbsoluteFill>;
-  const startFrom = layer.type === "avatar" ? scene.from : 0;
-  return <AbsoluteFill style={{background:"#111",opacity:fade}}>
-    <Video src={staticFile(layer.src)} muted startFrom={startFrom}
-      style={{width:"100%",height:"100%",objectFit:"cover",transform:`scale(${layer.type==="avatar"?1:zoom})`}}/>
-  </AbsoluteFill>;
-};
-
-export const BagasyTimeline_v9uz8m1rssch: React.FC = () => <AbsoluteFill style={{background:"#111"}}>
-  <Audio src={staticFile(timeline.audio_src)}/>
-  {timeline.scenes.map((scene:any) => <Sequence key={scene.id} from={scene.from} durationInFrames={scene.duration}>
-    <VisualScene scene={scene}/>
-  </Sequence>)}
-</AbsoluteFill>;
+export const BagasyTimeline_v9uz8m1rssch = () => (
+  <AbsoluteFill style={{ backgroundColor: BG }}>
+    {/* CAPA 1 — B-ROLL continuo (video) con solape */}
+    {scenes.filter((s) => s.layers[0].type === "video").map((s) => {
+      const dd = Math.max(1, s.duration + 3);
+      return (
+        <Sequence key={"bv-" + s.id} from={s.from} durationInFrames={dd} premountFor={30}>
+          <RawShot durationInFrames={dd} src={s.layers[0].src} hue="cold" />
+        </Sequence>
+      );
+    })}
+    {/* CAPA 2 — FOTOS topeadas (~3.6s) */}
+    {scenes.filter((s) => s.layers[0].type === "image").map((s) => {
+      const d = Math.max(1, Math.min(s.duration, secF(3.6)));
+      const half = inHalfR(s.from / FPS);
+      const shot = <RawShot durationInFrames={d} src={s.layers[0].src} hue="cold" />;
+      return (
+        <Sequence key={"ph-" + s.id} from={s.from} durationInFrames={d} premountFor={20}>
+          {half ? <HalfLeft>{shot}</HalfLeft> : shot}
+        </Sequence>
+      );
+    })}
+    {/* CAPA 3 — AVATAR (full / hidden / halfR, cero recuadro) */}
+    <AvatarLayer src={AVATAR_SRC} windows={AVATAR_WINDOWS} accent={TEAL} wav={AVATAR_WAV} />
+    {/* CAPA 4 — COMPONENTES _fed6, topeados */}
+    {comps.map((c) => (
+      <Sequence key={"c-" + c.scene.id} from={c.scene.from} durationInFrames={c.durF} layout="none">
+        {renderComp(c)}
+      </Sequence>
+    ))}
+  </AbsoluteFill>
+);
