@@ -11,7 +11,7 @@ const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 const FPS = timeline.fps || 30;
 const AVATAR_SRC = timeline.audio_src;
-const AVATAR_WAV = "v9uz8m1rssch_16k.wav";
+const AVATAR_WAV = "v9uz8m1rssch.wav";
 const scenes: any[] = timeline.scenes as any[];
 const secF = (s: number) => Math.round(s * FPS);
 
