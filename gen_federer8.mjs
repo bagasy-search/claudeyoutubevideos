@@ -172,9 +172,9 @@ const SECTIONS = [
   { key: "ej7", phrase: "llegamos al número 7", beats: [
     c("talk", {}),
     es("07", "Los piques (intervalos)", { tone: "teal", w: 3.6 }),
-    c("bars", { title: "El pique, por intervalo", unit: "seg", bars: [
-      { label: "Fuerte · rodillas bien altas", value: 100, winner: true, note: "20 s" },
-      { label: "Suave · caminás y recuperás", value: 100, tone: "teal", note: "40 s" } ], at: "20 segundos" }),
+    c("bars", { title: "El pique, por intervalo", unit: "s", bars: [
+      { label: "Fuerte · rodillas bien altas", value: 20, winner: true, note: "a full" },
+      { label: "Suave · caminás y recuperás", value: 40, tone: "teal", note: "recuperás" } ], at: "20 segundos" }),
   ]},
   { key: "ej7_como", phrase: "marchás en el lugar", beats: [
     r("fe8_e7_marcha", { at: "levantando bien alto las rodillas" }),

@@ -697,19 +697,19 @@
    "key": "ej7",
    "kind": "bars",
    "title": "El pique, por intervalo",
-   "unit": "seg",
+   "unit": "s",
    "bars": [
     {
      "label": "Fuerte · rodillas bien altas",
-     "value": 100,
+     "value": 20,
      "winner": true,
-     "note": "20 s"
+     "note": "a full"
     },
     {
      "label": "Suave · caminás y recuperás",
-     "value": 100,
+     "value": 40,
      "tone": "teal",
-     "note": "40 s"
+     "note": "recuperás"
     }
    ]
   },
