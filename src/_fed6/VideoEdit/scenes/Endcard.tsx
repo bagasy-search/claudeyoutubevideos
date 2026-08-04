@@ -18,7 +18,9 @@ export const Endcard: React.FC<{ durationInFrames: number }> = ({ durationInFram
   const { fps } = useVideoConfig();
   const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
   const enter = spring({ frame, fps, config: { damping: 18, mass: 0.9, stiffness: 110 } });
-  const outO = interpolate(frame, [D - 10, D], [1, 0], cl);
+  // SALIDA = CORTE LIMPIO (antes: disolvía en 10f). Es una placa sobre el avatar, mismo caso que
+  // DocNameCard: al disolverse se transparentaba encima del presentador.
+  const outO = 1;
   const op = Math.min(enter, outO);
   const pulse = 1 + 0.03 * Math.sin(frame / 7);
 
@@ -42,7 +44,7 @@ export const Endcard: React.FC<{ durationInFrames: number }> = ({ durationInFram
         <div style={{ fontFamily: F_INTER, fontWeight: 800, fontSize: 26, letterSpacing: 5, color: TEAL, textTransform: "uppercase", opacity: interpolate(frame, [6, 20], [0, 1], cl) }}>Dr. Federer</div>
         <div style={{ fontFamily: F_INTER, fontWeight: 900, fontSize: 88, color: INK, marginTop: 12, letterSpacing: -1, opacity: interpolate(frame, [10, 24], [0, 1], cl) }}>Suscríbete</div>
         <div style={{ fontFamily: F_INTER, fontWeight: 500, fontSize: 34, color: "rgba(20,34,43,0.7)", marginTop: 14, maxWidth: 760, opacity: interpolate(frame, [16, 30], [0, 1], cl) }}>
-          Cada semana, un truco que los laboratorios prefieren callar
+          Cada semana, salud y vitalidad real para después de los 40
         </div>
         {/* botón CTA */}
         <div style={{ display: "inline-flex", alignItems: "center", gap: 16, marginTop: 34, padding: "20px 44px", borderRadius: 999, background: `linear-gradient(150deg, ${TEAL}, #0c8f8b)`, boxShadow: `0 16px 40px ${TEAL}66`, transform: `scale(${pulse})`, opacity: interpolate(frame, [22, 36], [0, 1], cl) }}>
