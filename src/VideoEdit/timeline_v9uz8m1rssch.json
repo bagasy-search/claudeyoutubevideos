@@ -3833,6 +3833,7 @@
     "distinct_render_components": 14,
     "duration_seconds": 1530.96,
     "unresolved_assets": 0,
+    "unresolved_asset_scenes": [],
     "visual_v3": {
       "moments": 162,
       "counts": {
