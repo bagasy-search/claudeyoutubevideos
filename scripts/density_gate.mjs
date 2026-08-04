@@ -40,11 +40,30 @@ const src = [
   hayCues ? readFileSync(cuesPath, "utf8") : "",
 ].join("\n");
 
+// ── TERCER ESTILO DE BUILD: DATA-DRIVEN (materializador mecánico _fed6) ─────────────────────────
+// El Main_<slug>.tsx del materializador NO escribe cada asset/componente como literal en el JSX:
+// mapea sobre `.bagasy/timeline_<slug>.json` en runtime (`scenes.filter(...).map(...)`) y cada
+// componente aparece UNA vez dentro de renderComp(). El conteo por regex sobre el source ve ~5 tags
+// (uno por rama de renderComp) y 0 imágenes (el src es una variable, no un literal `img/...`) → la
+// densidad da ~0 SIEMPRE y el audit entra en un bucle correct→audit infinito aunque el video esté
+// lleno. Cuando ese timeline existe y trae escenas, ESA es la fuente de verdad de la densidad.
+let TL = null;
+{
+  const tlPath = `.bagasy/timeline_${slug}.json`;
+  if (existsSync(tlPath)) {
+    try {
+      const parsed = JSON.parse(readFileSync(tlPath, "utf8"));
+      if (Array.isArray(parsed.scenes) && parsed.scenes.length) TL = parsed;
+    } catch { /* timeline ilegible → se cae al conteo por regex de siempre */ }
+  }
+}
+
 // 2) duración
 // Se intentaba UN solo patrón (TOTAL_FRAMES = <número literal>) y fallaba en casi todos los builds
 // reales — `Math.round(TOTAL_X * 30)`, constantes en segundos, etc. Había que pasar los frames a
 // mano, y un gate incómodo es un gate que se saltea. Ahora cae en cascada hasta que alguno da.
 let totalFrames = +(process.argv[3] || 0);
+if (!totalFrames && TL && +TL.duration_in_frames > 60) totalFrames = +TL.duration_in_frames;
 if (!totalFrames) { const m = src.match(/TOTAL_FRAMES[_A-Z0-9]*\s*=\s*(\d+)/) || src.match(/durationInFrames\s*[=:]\s*(\d+)\s*[;,)]/); if (m) totalFrames = +m[1]; }
 // constante en SEGUNDOS (ej. `export const TOTAL_VKI4LQTCBOY0 = 2068.12` en avatar_<slug>.gen.ts)
 if (!totalFrames) {
@@ -69,7 +88,7 @@ const uniq = (re) => [...new Set([...src.matchAll(re)].map((m) => m[1]))];
 // Las rutas de b-roll tienen DOS estilos válidos desde Capa 2 (subcarpeta broll/<slug>/x.mp4 y
 // prefijo broll/<slug>_x.mp4) y algunos builds las arman dinámicamente. El regex viejo sólo veía
 // el prefijo → un video con 54 clips en disco se contaba como 0 y el gate pedía b-roll que YA estaba.
-const imgs = uniq(/["'`]\/?(?:public\/)?img\/(?:[a-z0-9_\-]+\/)*([a-z0-9_\-]+)\.(?:png|jpg|jpeg|webp)/gi);
+let imgs = uniq(/["'`]\/?(?:public\/)?img\/(?:[a-z0-9_\-]+\/)*([a-z0-9_\-]+)\.(?:png|jpg|jpeg|webp)/gi);
 const clipsFuente = uniq(/["'`]\/?(?:public\/)?(?:broll|vid|real)\/(?:[a-z0-9_\-]+\/)*([a-z0-9_\-]+)\.(?:mp4|webm|mov|jpg|png)/gi);
 const clipsDisco = (() => {
   const s = new Set();
@@ -79,7 +98,7 @@ const clipsDisco = (() => {
   try { for (const f of readdirSync("public/broll")) if (f.startsWith(slug) && /\.(mp4|webm|mov)$/i.test(f)) s.add(f); } catch {}
   return [...s];
 })();
-const clips = clipsDisco.length > clipsFuente.length ? clipsDisco : clipsFuente;
+let clips = clipsDisco.length > clipsFuente.length ? clipsDisco : clipsFuente;
 // Componentes del kit instanciados. GENÉRICO (antes la lista era casi toda de Federer → los otros
 // nichos contaban 0 y el gate los dejaba pasar peladísimos). Ahora: todo <Componente> del JSX menos
 // los primitivos de Remotion y los estructurales (fondo/marco/avatar, que no son "componentes").
@@ -95,9 +114,23 @@ const jsxAll = [...src.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)].map((m) => m[1])
   .filter((n) => !FRAMEWORK.has(n) && !ESTRUCTURA.has(n));
 const shotAll = jsxAll.filter((n) => TOMAS.has(n));
 const compAll = jsxAll.filter((n) => !TOMAS.has(n));
-const shotUses = shotAll.length;                       // tomas planas (RawShot y compañía)
-const compUses = compAll.length;                       // cada USO de componente real
-const compDistinct = [...new Set(compAll)];            // VARIEDAD
+let shotUses = shotAll.length;                         // tomas planas (RawShot y compañía)
+let compUses = compAll.length;                         // cada USO de componente real
+let compDistinct = [...new Set(compAll)];              // VARIEDAD
+// data-driven: los conteos reales salen del timeline, no del texto del build
+if (TL) {
+  const S = TL.scenes;
+  const distinct = (arr) => [...new Set(arr.filter(Boolean))];
+  const lay = (s) => (s.layers && s.layers[0]) || {};
+  const imgScenes = S.filter((s) => lay(s).type === "image");
+  const vidScenes = S.filter((s) => lay(s).type === "video");
+  const compScenes = S.filter((s) => lay(s).type === "component");
+  imgs = distinct(imgScenes.map((s) => lay(s).src));
+  clips = distinct(vidScenes.map((s) => lay(s).src));
+  compUses = compScenes.length;                        // USOS reales (uno por escena)
+  compDistinct = distinct(compScenes.map((s) => lay(s).render_component || lay(s).component || lay(s).family));
+  shotUses = imgScenes.length + vidScenes.length;      // cada foto/clip es una toma plana
+}
 // Mínimo de componentes DISTINTOS. Subido de 6 → 12 cuando se llenaron los kits en kits.json
 // (casero 38 · fauna 28 · federer 11-20): con esa biblioteca, 12 es un piso razonable — los videos
 // BUENOS llegan solos a 20-32 (termitas 32, wasp 22, federer romero 20). Los truchos usan 3.
@@ -266,6 +299,19 @@ let tramos = null, tramoReal = false;
   }
 }
 
+// data-driven: variedad por tramo desde el timeline (tiempo REAL → bloquea de verdad)
+if (TL) {
+  const lay = (s) => (s.layers && s.layers[0]) || {};
+  const B = Array.from({ length: NB }, () => new Set());
+  for (const s of TL.scenes) {
+    if (lay(s).type !== "component") continue;
+    const t = (s.from || 0) / FPS;
+    B[Math.min(NB - 1, Math.floor((t / seconds) * NB))].add(lay(s).render_component || lay(s).component || lay(s).family);
+  }
+  tramos = B;
+  tramoReal = true;
+}
+
 console.log(`── DENSIDAD · ${slug} · ${seconds}s (${(seconds / 60).toFixed(1)} min) ──`);
 console.log(`  imágenes IA distintas : ${imgs.length}`);
 console.log(`  clips de stock/b-roll : ${clips.length}`);
@@ -351,7 +397,12 @@ if (tramos) {
     else console.log(`\n  ⚠ ${msg}\n    (medido por POSICIÓN en la secuencia porque el build no tiene tiempos — no bloquea, pero miralo)`);
   }
 }
-if (clips.length < needClips) fallos.push(`FALTA B-ROLL REAL: tenés ${clips.length} clips de stock, necesitás ≥${needClips}. Corré el match_v3 / clips-first para bajar clips reales — hoy lo estás salteando.`);
+// B-ROLL REAL = metraje que cubre la narración. En clips-first son clips de stock; en los avatar-docs
+// las IMÁGENES IA cumplen la misma función (foto real a pantalla sobre la voz). Contar sólo clips
+// hacía fallar videos con 34 clips + 46 imágenes (80 visuales reales) pidiendo 4 clips más — un falso
+// negativo que mandaba a re-materializar de gusto. Si NO hay imágenes (nicho clips-first puro), el
+// término imgs es 0 y el umbral se comporta como antes.
+if (clips.length + imgs.length < needClips) fallos.push(`FALTA B-ROLL REAL: tenés ${clips.length} clips + ${imgs.length} imágenes = ${clips.length + imgs.length} visuales reales, necesitás ≥${needClips}. Corré el match_v3 / clips-first para bajar clips reales — hoy lo estás salteando.`);
 
 // ── AIRE: cuántos planos son largos ───────────────────────────────────────────────────────────
 // La densidad mide CUÁNTO hay en pantalla; esto mide si el video RESPIRA. Son cosas distintas y un
