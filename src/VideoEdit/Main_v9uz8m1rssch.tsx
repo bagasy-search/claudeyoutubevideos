@@ -122,7 +122,12 @@ for (const scene of scenes) {
       pts.push({ start: s, mode: "full" });
     }
   } else if (layer.type === "image") {
+    // La foto está topeada a ~3.6s en CAPA 2. Si la escena dura más, hay que DEVOLVER el
+    // avatar a full para el resto (idéntico al branch de componente); si no, la pantalla
+    // queda en negro tras la foto (avatar "hidden" + foto ya terminada = fondo BG).
+    const imgDurF = Math.max(1, Math.min(scene.duration, secF(3.6)));
     pts.push({ start: s, mode: flip ? "halfR" : "hidden" });
+    if (imgDurF < scene.duration) pts.push({ start: (scene.from + imgDurF) / FPS, mode: "full" });
     flip = !flip;
   } else {
     pts.push({ start: s, mode: "hidden" });
