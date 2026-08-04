@@ -1,0 +1,4172 @@
+{
+  "version": 1,
+  "slug": "v9uz8m1rssch",
+  "kit": "federer-video",
+  "premium_director_enabled": true,
+  "composition_id": "Bagasy-v9uz8m1rssch",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "duration_in_frames": 45929,
+  "audio_src": "avatar_v9uz8m1rssch.mp4",
+  "captions_src": "captions_v9uz8m1rssch.json",
+  "scenes": [
+    {
+      "id": "s01m01",
+      "section_id": "s01-hook",
+      "from": 0,
+      "duration": 148,
+      "narration": "Un vaso de agua tomado en el momento correcto puede retirar uno",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s01m02",
+      "section_id": "s01-hook",
+      "from": 148,
+      "duration": 364,
+      "narration": "de los frenos más silenciosos de la respuesta sexual después de los",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "vaso de agua servido en primer plano sobre mesada, luz teal",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s01m03",
+      "section_id": "s01-hook",
+      "from": 512,
+      "duration": 229,
+      "narration": "retirar uno de los frenos más silenciosos de la respuesta sexual",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "contrast_split",
+          "render_component": "contrast_split",
+          "title": "El freno silencioso de la respuesta sexual",
+          "sub": "",
+          "detail": "comparacion a dos columnas con divisor animado: freno silencioso vs beneficio real",
+          "kicker": "",
+          "family": "contrast_split",
+          "layout_family": "contrast_split",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s01m04",
+      "section_id": "s01-hook",
+      "from": 741,
+      "duration": 299,
+      "narration": "sesenta pero beber demasiado a la hora equivocada puede arruinar el sueño",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer sostiene un vaso de agua a media luz y mira a camara planteando la paradoja",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s01m05",
+      "section_id": "s01-hook",
+      "from": 1040,
+      "duration": 296,
+      "narration": "la energía y las ganas del día siguiente No es una contradicción",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s02m01",
+      "section_id": "s02-noes",
+      "from": 1336,
+      "duration": 250,
+      "narration": "El agua no funciona como una pastilla para la erección No aumenta",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s02m02",
+      "section_id": "s02-noes",
+      "from": 1586,
+      "duration": 266,
+      "narration": "testosterona Tampoco crea deseo donde no lo hay Lo que sí puede",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor con leve cansancio se frota la sien junto a una ventana",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s02m03",
+      "section_id": "s02-noes",
+      "from": 1852,
+      "duration": 237,
+      "narration": "una deshidratación leve que estaba sumando cansancio dolor de cabeza mareo",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "body_signal_grid",
+          "render_component": "body_signal_grid",
+          "title": "Deshidratacion leve suma cansancio y mareo",
+          "sub": "",
+          "detail": "cuadricula de senales corporales cuyos iconos se encienden al nombrarlos",
+          "kicker": "",
+          "family": "body_signal_grid",
+          "layout_family": "body_signal_grid",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s02m04",
+      "section_id": "s02-noes",
+      "from": 2089,
+      "duration": 269,
+      "narration": "es corregir una deshidratación leve que estaba sumando cansancio dolor de cabeza",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer niega con la mano el mito de la pastilla magica y explica la correccion de la deshidratacion",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s02m05",
+      "section_id": "s02-noes",
+      "from": 2358,
+      "duration": 322,
+      "narration": "menor tolerancia al esfuerzo Con los años sentimos menos sed El cuerpo",
+      "transition": "lift",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "vaso de agua junto a una pastilla azul tachada, estilo clinico",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s02m06",
+      "section_id": "s02-noes",
+      "from": 2680,
+      "duration": 288,
+      "narration": "necesitar líquido antes de que la boca lo pida Y una pérdida",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s02m07",
+      "section_id": "s02-noes",
+      "from": 2968,
+      "duration": 300,
+      "narration": "El cuerpo puede necesitar líquido antes de que la boca lo pida",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "contrast_split",
+          "render_component": "contrast_split",
+          "title": "El cuerpo pide liquido antes que la boca",
+          "sub": "",
+          "detail": "comparacion a dos columnas con divisor animado: freno silencioso vs beneficio real",
+          "kicker": "",
+          "family": "contrast_split",
+          "layout_family": "contrast_split",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s02m08",
+      "section_id": "s02-noes",
+      "from": 3268,
+      "duration": 301,
+      "narration": "relativamente pequeña ya puede acompañarse de fatiga y menor concentración Justo lo",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor con leve cansancio se frota la sien junto a una ventana",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s02m09",
+      "section_id": "s02-noes",
+      "from": 3569,
+      "duration": 378,
+      "narration": "de lo que necesita una buena respuesta sexual Ahora viene lo incómodo",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer niega con la mano el mito de la pastilla magica y explica la correccion de la deshidratacion",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s03m01",
+      "section_id": "s03-nocturno",
+      "from": 3947,
+      "duration": 221,
+      "narration": "Muchos hombres intentan arreglarlo tomando dos o tres vasos enormes por la",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s03m02",
+      "section_id": "s03-nocturno",
+      "from": 4168,
+      "duration": 323,
+      "narration": "el sueño Al día siguiente están agotados Y ese hábito aparentemente saludable",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor se levanta de la cama de noche hacia el bano",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s03m03",
+      "section_id": "s03-nocturno",
+      "from": 4491,
+      "duration": 314,
+      "narration": "tomando dos o tres vasos enormes por la noche Se levantan a orinar",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "loop_cycle",
+          "render_component": "loop_cycle",
+          "title": "Dos o tres vasos enormes de noche",
+          "sub": "",
+          "detail": "diagrama circular del ciclo que se retroalimenta noche tras noche",
+          "kicker": "",
+          "family": "loop_cycle",
+          "layout_family": "loop_cycle",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s03m04",
+      "section_id": "s03-nocturno",
+      "from": 4805,
+      "duration": 282,
+      "narration": "vaso que olvidaron durante la tarde Quédese conmigo porque vamos a separar",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer cuenta con los dedos las tres cosas que va a separar en el video",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s03m05",
+      "section_id": "s03-nocturno",
+      "from": 5087,
+      "duration": 285,
+      "narration": "erección e hidratación Le daré una forma sencilla de distribuir el agua",
+      "transition": "iris",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "tres vasos enormes de agua alineados sobre una mesa de noche",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s03m06",
+      "section_id": "s03-nocturno",
+      "from": 5372,
+      "duration": 303,
+      "narration": "separar tres cosas que suelen mezclarse deseo erección e hidratación Le",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "daily_timeline",
+          "render_component": "daily_timeline",
+          "title": "Separamos deseo, ereccion e hidratacion",
+          "sub": "",
+          "detail": "linea de tiempo del dia con marcadores de ingesta que aparecen en orden",
+          "kicker": "",
+          "family": "daily_timeline",
+          "layout_family": "daily_timeline",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 6,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s03m07",
+      "section_id": "s03-nocturno",
+      "from": 5675,
+      "duration": 288,
+      "narration": "cuerpo Y al final voy a revelar el error nocturno completo incluida",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s03m08",
+      "section_id": "s03-nocturno",
+      "from": 5963,
+      "duration": 241,
+      "narration": "fabricar el siguiente despertar Empecemos por lo que casi todos entienden mal",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor se levanta de la cama de noche hacia el bano",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s04m01",
+      "section_id": "s04-libido",
+      "from": 6204,
+      "duration": 271,
+      "narration": "Libido y erección no son sinónimos La libido es el deseo Allí",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04m02",
+      "section_id": "s04-libido",
+      "from": 6475,
+      "duration": 259,
+      "narration": "el deseo Allí influyen el cerebro las emociones la relación de pareja",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "pareja madura conversando tranquila en un sillon",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04m03",
+      "section_id": "s04-libido",
+      "from": 6734,
+      "duration": 254,
+      "narration": "La erección es una respuesta vascular y nerviosa Necesita excitación Necesita",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "mechanism_diagram",
+          "render_component": "mechanism_diagram",
+          "title": "La ereccion: respuesta vascular y nerviosa",
+          "sub": "",
+          "detail": "diagrama de mecanismo con flujo, nodos y capas conectadas",
+          "kicker": "",
+          "family": "mechanism_diagram",
+          "layout_family": "mechanism_diagram",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s04m04",
+      "section_id": "s04-libido",
+      "from": 6988,
+      "duration": 233,
+      "narration": "de pareja el descanso el estrés el dolor algunas enfermedades las hormonas",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer separa con las manos dos conceptos mientras los define",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s04m05",
+      "section_id": "s04-libido",
+      "from": 7221,
+      "duration": 317,
+      "narration": "enfermedades las hormonas y muchos medicamentos La erección es una respuesta vascular",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "cerebro y sistema vascular ilustrados lado a lado, look teal",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04m06",
+      "section_id": "s04-libido",
+      "from": 7538,
+      "duration": 320,
+      "narration": "Libido y erección no son sinónimos La libido es el deseo",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "comparison_scale",
+          "render_component": "comparison_scale",
+          "title": "Libido y ereccion no son lo mismo",
+          "sub": "",
+          "detail": "balanza comparativa que inclina entre dos escenarios opuestos",
+          "kicker": "",
+          "family": "comparison_scale",
+          "layout_family": "comparison_scale",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s04m07",
+      "section_id": "s04-libido",
+      "from": 7858,
+      "duration": 297,
+      "narration": "una respuesta vascular y nerviosa Necesita excitación Necesita señales nerviosas adecuadas Necesita",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s04m08",
+      "section_id": "s04-libido",
+      "from": 8155,
+      "duration": 312,
+      "narration": "influyen el cerebro las emociones la relación de pareja el descanso el estrés",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Deseo: cerebro, emociones, pareja y estres",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s04m09",
+      "section_id": "s04-libido",
+      "from": 8467,
+      "duration": 337,
+      "narration": "adecuadas Necesita arterias capaces de llevar sangre y tejidos que puedan retenerla",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "pareja madura conversando tranquila en un sillon",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s04m10",
+      "section_id": "s04-libido",
+      "from": 8804,
+      "duration": 303,
+      "narration": "que puedan retenerla durante el tiempo suficiente Y el agua dónde entra",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer separa con las manos dos conceptos mientras los define",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s05m01",
+      "section_id": "s05-terreno",
+      "from": 9107,
+      "duration": 328,
+      "narration": "En el terreno que sostiene todo eso La circulación La energía La",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s05m02",
+      "section_id": "s05-terreno",
+      "from": 9435,
+      "duration": 382,
+      "narration": "Pero ojo corregir una carencia no equivale a agregar un estimulante Si",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "agua corriendo por una manguera al aire libre en camara lenta",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05m03",
+      "section_id": "s05-terreno",
+      "from": 9817,
+      "duration": 290,
+      "narration": "el corazón participa como bomba Los vasos son las tuberías La",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "mechanism_diagram",
+          "render_component": "mechanism_diagram",
+          "title": "Corazon bomba, vasos tuberia, sangre volumen",
+          "sub": "",
+          "detail": "diagrama de mecanismo con flujo, nodos y capas conectadas",
+          "kicker": "",
+          "family": "mechanism_diagram",
+          "layout_family": "mechanism_diagram",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s05m04",
+      "section_id": "s05-terreno",
+      "from": 10107,
+      "duration": 365,
+      "narration": "de agua estaba agregando malestar o disminuyendo su rendimiento físico Ese límite",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer usa la analogia de la manguera con las manos para explicar bomba, tuberia y volumen",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s05m05",
+      "section_id": "s05-terreno",
+      "from": 10472,
+      "duration": 285,
+      "narration": "El objetivo no es inundar el cuerpo Es darle lo necesario repartido",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "esquema de manguera con bomba y tuberia comparado con corazon y vasos",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05m06",
+      "section_id": "s05-terreno",
+      "from": 10757,
+      "duration": 248,
+      "narration": "corregir una carencia no equivale a agregar un estimulante Si usted",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "contrast_split",
+          "render_component": "contrast_split",
+          "title": "Corregir carencia no es agregar estimulante",
+          "sub": "",
+          "detail": "comparacion a dos columnas con divisor animado: freno silencioso vs beneficio real",
+          "kicker": "",
+          "family": "contrast_split",
+          "layout_family": "contrast_split",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s05m07",
+      "section_id": "s05-terreno",
+      "from": 11005,
+      "duration": 303,
+      "narration": "una bomba que impulse y una manguera sin obstrucciones En el cuerpo",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s05m08",
+      "section_id": "s05-terreno",
+      "from": 11308,
+      "duration": 250,
+      "narration": "Con el agua muchísimo puede ser peligroso El objetivo no es inundar",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "dose_meter",
+          "render_component": "dose_meter",
+          "title": "Con el agua, muchisimo puede ser peligroso",
+          "sub": "",
+          "detail": "medidor de dosis con vaso y rango moderado marcado sobre una escala",
+          "kicker": "",
+          "family": "dose_meter",
+          "layout_family": "dose_meter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s05m09",
+      "section_id": "s05-terreno",
+      "from": 11558,
+      "duration": 245,
+      "narration": "La hidratación solo interviene en una pieza No destapa arterias No cura",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "agua corriendo por una manguera al aire libre en camara lenta",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s05m10",
+      "section_id": "s05-terreno",
+      "from": 11803,
+      "duration": 277,
+      "narration": "tomó alcohol o pasó horas bajo el calor esa pieza puede importar",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer usa la analogia de la manguera con las manos para explicar bomba, tuberia y volumen",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s06m01",
+      "section_id": "s06-senales",
+      "from": 12080,
+      "duration": 262,
+      "narration": "La primera regla práctica es no esperar siempre a tener una sed",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s06m02",
+      "section_id": "s06-senales",
+      "from": 12342,
+      "duration": 277,
+      "narration": "volverse menos confiable Observe el conjunto Boca seca Orina oscura Menor frecuencia",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor bebe un vaso de agua junto a la cocina por la manana",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06m03",
+      "section_id": "s06-senales",
+      "from": 12619,
+      "duration": 249,
+      "narration": "Boca seca Orina oscura Menor frecuencia al orinar Dolor de cabeza",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "body_signal_grid",
+          "render_component": "body_signal_grid",
+          "title": "Senales: boca seca, orina oscura, cansancio",
+          "sub": "",
+          "detail": "cuadricula de senales corporales cuyos iconos se encienden al nombrarlos",
+          "kicker": "",
+          "family": "body_signal_grid",
+          "layout_family": "body_signal_grid",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s06m04",
+      "section_id": "s06-senales",
+      "from": 12868,
+      "duration": 351,
+      "narration": "Estreñimiento Esas pistas no demuestran por sí solas una deshidratación pero justifican",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer enumera las senales de deshidratacion senalando una lista imaginaria",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s06m05",
+      "section_id": "s06-senales",
+      "from": 13219,
+      "duration": 265,
+      "narration": "muchas personas sanas un amarillo claro es compatible con una hidratación razonable",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "escala de color de orina de amarillo claro a oscuro sobre fondo neutro",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06m06",
+      "section_id": "s06-senales",
+      "from": 13484,
+      "duration": 228,
+      "narration": "un amarillo claro es compatible con una hidratación razonable Transparente durante",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "urine_color_scale",
+          "render_component": "urine_color_scale",
+          "title": "Amarillo claro: hidratacion razonable",
+          "sub": "",
+          "detail": "escala de color de orina en degrade calibrado con marcador movil",
+          "kicker": "",
+          "family": "urine_color_scale",
+          "layout_family": "urine_color_scale",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s06m07",
+      "section_id": "s06-senales",
+      "from": 13712,
+      "duration": 291,
+      "narration": "Puede significar que está bebiendo más de lo necesario Un amarillo oscuro",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s06m08",
+      "section_id": "s06-senales",
+      "from": 14003,
+      "duration": 284,
+      "narration": "Si la orina se vuelve roja color té muy turbia presenta",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "safety_boundary",
+          "render_component": "safety_boundary",
+          "title": "Orina roja o turbia: evaluacion medica",
+          "sub": "",
+          "detail": "panel de limite de seguridad con banda roja de alerta y umbral",
+          "kicker": "",
+          "family": "safety_boundary",
+          "layout_family": "safety_boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s06m09",
+      "section_id": "s06-senales",
+      "from": 14287,
+      "duration": 282,
+      "narration": "enfermedades también cambian el color Si la orina se vuelve roja color",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor bebe un vaso de agua junto a la cocina por la manana",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s06m10",
+      "section_id": "s06-senales",
+      "from": 14569,
+      "duration": 213,
+      "narration": "no se resuelve con otro vaso Necesita una evaluación médica Ahora sí",
+      "transition": "whip",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "escala de color de orina de amarillo claro a oscuro sobre fondo neutro",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s07m01",
+      "section_id": "s07-metodo",
+      "from": 14782,
+      "duration": 308,
+      "narration": "el método No empieza calculando una cifra perfecta Empieza distribuyendo Durante los",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s07m02",
+      "section_id": "s07-metodo",
+      "from": 15090,
+      "duration": 225,
+      "narration": "entre doscientos cincuenta y trescientos cincuenta mililitros No necesita beberlo de golpe",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "taza de cafe humeante junto a un vaso de agua al amanecer",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07m03",
+      "section_id": "s07-metodo",
+      "from": 15315,
+      "duration": 251,
+      "narration": "Durante los primeros treinta a sesenta minutos después de levantarse una",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "daily_timeline",
+          "render_component": "daily_timeline",
+          "title": "Primeros 30-60 minutos tras levantarse",
+          "sub": "",
+          "detail": "linea de tiempo del dia con marcadores de ingesta que aparecen en orden",
+          "kicker": "",
+          "family": "daily_timeline",
+          "layout_family": "daily_timeline",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s07m04",
+      "section_id": "s07-metodo",
+      "from": 15566,
+      "duration": 338,
+      "narration": "compensar cerca de la hora de dormir Parece una diferencia pequeña pero",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer marca en el aire la primera ventana del dia al levantarse",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s07m05",
+      "section_id": "s07-metodo",
+      "from": 15904,
+      "duration": 259,
+      "narration": "la cafeína puede aumentar la urgencia urinaria en algunas personas y alterar",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "linea de tiempo del dia con vasos de agua distribuidos por la manana",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07m06",
+      "section_id": "s07-metodo",
+      "from": 16163,
+      "duration": 290,
+      "narration": "puede tomar un vaso moderado Aproximadamente entre doscientos cincuenta y trescientos",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "dose_meter",
+          "render_component": "dose_meter",
+          "title": "Un vaso moderado, repartido sin apuro",
+          "sub": "",
+          "detail": "medidor de dosis con vaso y rango moderado marcado sobre una escala",
+          "kicker": "",
+          "family": "dose_meter",
+          "layout_family": "dose_meter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s07m07",
+      "section_id": "s07-metodo",
+      "from": 16453,
+      "duration": 310,
+      "narration": "solución perfecta especialmente si le provocan palpitaciones acidez o ganas constantes de",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s07m08",
+      "section_id": "s07-metodo",
+      "from": 16763,
+      "duration": 288,
+      "narration": "no le indicó limitar líquidos puede tomar otro vaso pequeño o moderado",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "taza de cafe humeante junto a un vaso de agua al amanecer",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s07m09",
+      "section_id": "s07-metodo",
+      "from": 17051,
+      "duration": 206,
+      "narration": "cambia la estrategia completa más temprano menos atracón nocturno El café",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Mas temprano, menos atracon nocturno",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s07m10",
+      "section_id": "s07-metodo",
+      "from": 17257,
+      "duration": 237,
+      "narration": "Este patrón también permite observar la respuesta de su cuerpo Si cada",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer marca en el aire la primera ventana del dia al levantarse",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s07m11",
+      "section_id": "s07-metodo",
+      "from": 17494,
+      "duration": 229,
+      "narration": "cuánta agua toma Esos síntomas merecen una consulta Después de los sesenta",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s08m01",
+      "section_id": "s08-prostata",
+      "from": 17723,
+      "duration": 263,
+      "narration": "la próstata puede crecer y dificultar la salida de la orina La",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s08m02",
+      "section_id": "s08-prostata",
+      "from": 17986,
+      "duration": 240,
+      "narration": "solución pero puede concentrar la orina y favorecer el estreñimiento Tomar litros",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor camina hacia el bano de dia con gesto de urgencia",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s08m03",
+      "section_id": "s08-prostata",
+      "from": 18226,
+      "duration": 346,
+      "narration": "la próstata puede crecer y dificultar la salida de la orina",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "anatomy_callout",
+          "render_component": "anatomy_callout",
+          "title": "La prostata crece y dificulta la orina",
+          "sub": "",
+          "detail": "ilustracion anatomica con llamadas rotuladas y ampliacion de zona",
+          "kicker": "",
+          "family": "anatomy_callout",
+          "layout_family": "anatomy_callout",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s08m04",
+      "section_id": "s08-prostata",
+      "from": 18572,
+      "duration": 274,
+      "narration": "El punto medio es el secreto Cantidades moderadas Repartidas Ajustadas a la",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer explica con calma el crecimiento prostatico y por que no sirve beber litros de golpe",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s08m05",
+      "section_id": "s08-prostata",
+      "from": 18846,
+      "duration": 295,
+      "narration": "la comida puede entrar otro vaso A veces me preguntan si el",
+      "transition": "whip",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "ilustracion de vejiga y prostata con llamadas rotuladas, look teal",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s08m06",
+      "section_id": "s08-prostata",
+      "from": 19141,
+      "duration": 201,
+      "narration": "puede concentrar la orina y favorecer el estreñimiento Tomar litros de",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Orina concentrada y estrenimiento",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s08m07",
+      "section_id": "s08-prostata",
+      "from": 19342,
+      "duration": 315,
+      "narration": "una persona sana Si tiene reflujo hinchazón o una indicación particular puede",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s08m08",
+      "section_id": "s08-prostata",
+      "from": 19657,
+      "duration": 243,
+      "narration": "El punto medio es el secreto Cantidades moderadas Repartidas Ajustadas a",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "dose_meter",
+          "render_component": "dose_meter",
+          "title": "El punto medio: cantidades moderadas, repartidas",
+          "sub": "",
+          "detail": "medidor de dosis con vaso y rango moderado marcado sobre una escala",
+          "kicker": "",
+          "family": "dose_meter",
+          "layout_family": "dose_meter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s08m09",
+      "section_id": "s08-prostata",
+      "from": 19900,
+      "duration": 302,
+      "narration": "nadie puede vendérselo como un secreto costoso No hay un frasco exótico",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor camina hacia el bano de dia con gesto de urgencia",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s08m10",
+      "section_id": "s08-prostata",
+      "from": 20202,
+      "duration": 282,
+      "narration": "antes de llegar sediento a la noche Ahora abramos el segundo tema",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer explica con calma el crecimiento prostatico y por que no sirve beber litros de golpe",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s09m01",
+      "section_id": "s09-intimidad",
+      "from": 20484,
+      "duration": 271,
+      "narration": "Cuál es el mejor momento si usted espera tener intimidad No existe",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s09m02",
+      "section_id": "s09-intimidad",
+      "from": 20755,
+      "duration": 359,
+      "narration": "erección Pero sí existe una lógica Llegar hidratado es mejor que intentar",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "pareja madura comparte una cena tranquila con luz calida",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s09m03",
+      "section_id": "s09-intimidad",
+      "from": 21114,
+      "duration": 284,
+      "narration": "Llegar hidratado es mejor que intentar hidratarse cinco minutos antes Si",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "daily_timeline",
+          "render_component": "daily_timeline",
+          "title": "Llegar hidratado, no beber cinco minutos antes",
+          "sub": "",
+          "detail": "linea de tiempo del dia con marcadores de ingesta que aparecen en orden",
+          "kicker": "",
+          "family": "daily_timeline",
+          "layout_family": "daily_timeline",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s09m04",
+      "section_id": "s09-intimidad",
+      "from": 21398,
+      "duration": 291,
+      "narration": "tarde o una noche especial cuide el agua desde la mañana Durante",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer aconseja cuidar el agua desde temprano si se espera una noche especial",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s09m05",
+      "section_id": "s09-intimidad",
+      "from": 21689,
+      "duration": 279,
+      "narration": "mantenga una ingesta normal Si tiene sed un vaso pequeño puede ser",
+      "transition": "whip",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "botella de agua tachada junto a un reloj marcando la tarde",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s09m06",
+      "section_id": "s09-intimidad",
+      "from": 21968,
+      "duration": 231,
+      "narration": "Evite vaciar una botella entera justo antes Una vejiga demasiado llena",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "safety_boundary",
+          "render_component": "safety_boundary",
+          "title": "No vacie una botella entera justo antes",
+          "sub": "",
+          "detail": "panel de limite de seguridad con banda roja de alerta y umbral",
+          "kicker": "",
+          "family": "safety_boundary",
+          "layout_family": "safety_boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s09m07",
+      "section_id": "s09-intimidad",
+      "from": 22199,
+      "duration": 289,
+      "narration": "antes Una vejiga demasiado llena distrae incomoda y obliga a interrumpir el",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s09m08",
+      "section_id": "s09-intimidad",
+      "from": 22488,
+      "duration": 294,
+      "narration": "significa atracón La hidratación útil se construye durante el día Y existe",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "pareja madura comparte una cena tranquila con luz calida",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s10m01",
+      "section_id": "s10-alcohol",
+      "from": 22782,
+      "duration": 328,
+      "narration": "otro enemigo que mucha gente confunde con relajación el alcohol Una copa",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s10m02",
+      "section_id": "s10-alcohol",
+      "from": 23110,
+      "duration": 308,
+      "narration": "en algunas personas Una cantidad mayor puede dificultar la erección reducir la",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "copa de vino servida en penumbra sobre una mesa",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s10m03",
+      "section_id": "s10-alcohol",
+      "from": 23418,
+      "duration": 335,
+      "narration": "El hombre toma alcohol para sentirse más dispuesto pero puede terminar somnoliento",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "myth_vs_fact",
+          "render_component": "myth_vs_fact",
+          "title": "Alcohol para animarse: termina somnoliento",
+          "sub": "",
+          "detail": "tarjeta de mito tachada que gira en 3D hacia la verdad clinica",
+          "kicker": "",
+          "family": "myth_vs_fact",
+          "layout_family": "myth_vs_fact",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s10m04",
+      "section_id": "s10-alcohol",
+      "from": 23753,
+      "duration": 346,
+      "narration": "y fragmentar el sueño Además favorece la pérdida de líquido y puede",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer contrasta una copa social con el efecto real sobre la ereccion y el sueno",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s10m05",
+      "section_id": "s10-alcohol",
+      "from": 24099,
+      "duration": 202,
+      "narration": "hombre toma alcohol para sentirse más dispuesto pero puede terminar somnoliento deshidratado",
+      "transition": "fold",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "copa de alcohol y gota de deshidratacion enfrentadas, estilo clinico",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s10m06",
+      "section_id": "s10-alcohol",
+      "from": 24301,
+      "duration": 219,
+      "narration": "respuesta sexual peor Alternar con agua puede reducir la velocidad a la",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s10m07",
+      "section_id": "s10-alcohol",
+      "from": 24520,
+      "duration": 213,
+      "narration": "Alternar con agua puede reducir la velocidad a la que bebe",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Alternar con agua reduce la velocidad al beber",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s10m08",
+      "section_id": "s10-alcohol",
+      "from": 24733,
+      "duration": 268,
+      "narration": "de la deshidratación No neutraliza el alcohol El hígado no recibe un",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "copa de vino servida en penumbra sobre una mesa",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s10m09",
+      "section_id": "s10-alcohol",
+      "from": 25001,
+      "duration": 243,
+      "narration": "agregó dos vasos de agua Aquí pagamos una parte del primer lazo",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer contrasta una copa social con el efecto real sobre la ereccion y el sueno",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s11m01",
+      "section_id": "s11-indirecto",
+      "from": 25244,
+      "duration": 314,
+      "narration": "La relación entre agua y libido suele ser indirecta Al hidratarse mejor",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s11m02",
+      "section_id": "s11-indirecto",
+      "from": 25558,
+      "duration": 338,
+      "narration": "puede facilitar el deseo No significa que el agua haya elevado sus",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor con mas energia camina al aire libre por la manana",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s11m03",
+      "section_id": "s11-indirecto",
+      "from": 25896,
+      "duration": 261,
+      "narration": "Al hidratarse mejor un hombre puede sentirse menos fatigado Puede tener",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Hidratarse mejor: menos fatiga y mas energia",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s11m04",
+      "section_id": "s11-indirecto",
+      "from": 26157,
+      "duration": 242,
+      "narration": "La relación de pareja El dolor La tiroides La diabetes La salud",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer aclara que el agua no eleva hormonas y que ciertos medicamentos afectan el deseo",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s11m05",
+      "section_id": "s11-indirecto",
+      "from": 26399,
+      "duration": 265,
+      "narration": "para la presión pueden influir en la función sexual Algunos medicamentos para",
+      "transition": "iris",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "panel de tipos de medicamentos con flechas hacia deseo y funcion sexual",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s11m06",
+      "section_id": "s11-indirecto",
+      "from": 26664,
+      "duration": 202,
+      "narration": "Algunos antidepresivos pueden afectar el deseo o el orgasmo Ciertos tratamientos",
+      "transition": "fold",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "med_interaction_panel",
+          "render_component": "med_interaction_panel",
+          "title": "Antidepresivos pueden afectar deseo y orgasmo",
+          "sub": "",
+          "detail": "panel de medicamentos con flechas de efecto sobre deseo y funcion",
+          "kicker": "",
+          "family": "med_interaction_panel",
+          "layout_family": "med_interaction_panel",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s11m07",
+      "section_id": "s11-indirecto",
+      "from": 26866,
+      "duration": 279,
+      "narration": "para mejorar su vida sexual Hable con quien se lo indicó A",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s11m08",
+      "section_id": "s11-indirecto",
+      "from": 27145,
+      "duration": 299,
+      "narration": "La decisión debe ser clínica clears throat Ahora viene la pregunta inevitable",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor con mas energia camina al aire libre por la manana",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s12m01",
+      "section_id": "s12-litros",
+      "from": 27444,
+      "duration": 294,
+      "narration": "Cuántos litros hay que tomar La respuesta honesta es que no existe",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12m02",
+      "section_id": "s12-litros",
+      "from": 27738,
+      "duration": 338,
+      "narration": "el sol no necesita lo mismo que una persona pequeña y sedentaria",
+      "transition": "lift",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "persona corpulenta trabaja bajo el sol frente a persona sedentaria en interior",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s12m03",
+      "section_id": "s12-litros",
+      "from": 28076,
+      "duration": 285,
+      "narration": "Una persona grande que trabaja bajo el sol no necesita lo mismo",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "comparison_scale",
+          "render_component": "comparison_scale",
+          "title": "Persona grande al sol vs pequena sedentaria",
+          "sub": "",
+          "detail": "balanza comparativa que inclina entre dos escenarios opuestos",
+          "kicker": "",
+          "family": "comparison_scale",
+          "layout_family": "comparison_scale",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12m04",
+      "section_id": "s12-litros",
+      "from": 28361,
+      "duration": 282,
+      "narration": "de ocho vasos para todos es engañoso Algunas personas estarán cerca de",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer desmonta la regla de los ocho vasos y advierte sobre el exceso de agua",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s12m05",
+      "section_id": "s12-litros",
+      "from": 28643,
+      "duration": 312,
+      "narration": "restricción En insuficiencia cardíaca enfermedad renal avanzada cirrosis sodio bajo y otras",
+      "transition": "lift",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "ocho vasos de agua alineados con un signo de interrogacion encima",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s12m06",
+      "section_id": "s12-litros",
+      "from": 28955,
+      "duration": 284,
+      "narration": "Convertirlas en una orden rígida de ocho vasos para todos es engañoso",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "myth_vs_fact",
+          "render_component": "myth_vs_fact",
+          "title": "Ocho vasos para todos: regla enganosa",
+          "sub": "",
+          "detail": "tarjeta de mito tachada que gira en 3D hacia la verdad clinica",
+          "kicker": "",
+          "family": "myth_vs_fact",
+          "layout_family": "myth_vs_fact",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12m07",
+      "section_id": "s12-litros",
+      "from": 29239,
+      "duration": 290,
+      "narration": "de aire aumento rápido de peso enfermedad renal insuficiencia cardíaca o antecedentes",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s12m08",
+      "section_id": "s12-litros",
+      "from": 29529,
+      "duration": 244,
+      "narration": "al baño El horario puede revisarse con un profesional pero ese medicamento",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "persona corpulenta trabaja bajo el sol frente a persona sedentaria en interior",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s12m09",
+      "section_id": "s12-litros",
+      "from": 29773,
+      "duration": 332,
+      "narration": "Beber demasiada agua en poco tiempo puede diluir el sodio de la sangre",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "safety_boundary",
+          "render_component": "safety_boundary",
+          "title": "Demasiada agua diluye el sodio en sangre",
+          "sub": "",
+          "detail": "panel de limite de seguridad con banda roja de alerta y umbral",
+          "kicker": "",
+          "family": "safety_boundary",
+          "layout_family": "safety_boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s12m10",
+      "section_id": "s12-litros",
+      "from": 30105,
+      "duration": 258,
+      "narration": "sangre Puede causar náuseas dolor de cabeza confusión somnolencia convulsiones y una",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer desmonta la regla de los ocho vasos y advierte sobre el exceso de agua",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s12m11",
+      "section_id": "s12-litros",
+      "from": 30363,
+      "duration": 272,
+      "narration": "El cuerpo necesita agua y sales en equilibrio Más no significa mejor",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13m01",
+      "section_id": "s13-demo",
+      "from": 30635,
+      "duration": 304,
+      "narration": "Ahora hagamos una demostración visible Mañana coloque una botella o jarra con",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13m02",
+      "section_id": "s13-demo",
+      "from": 30939,
+      "duration": 281,
+      "narration": "a las seis de la tarde con casi todo intacto y luego",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "jarra de agua con marcas junto a una libreta de anotaciones",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13m03",
+      "section_id": "s13-demo",
+      "from": 31220,
+      "duration": 353,
+      "narration": "coloque una botella o jarra con una cantidad conocida en un lugar fácil de ver",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "daily_timeline",
+          "render_component": "daily_timeline",
+          "title": "Una botella o jarra a la vista",
+          "sub": "",
+          "detail": "linea de tiempo del dia con marcadores de ingesta que aparecen en orden",
+          "kicker": "",
+          "family": "daily_timeline",
+          "layout_family": "daily_timeline",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s13m04",
+      "section_id": "s13-demo",
+      "from": 31573,
+      "duration": 304,
+      "narration": "mañana Uno con el almuerzo Otro durante la tarde Ajuste según su",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer propone dejar una jarra visible y anotar el patron durante siete dias",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s13m05",
+      "section_id": "s13-demo",
+      "from": 31877,
+      "duration": 314,
+      "narration": "despertar No es un experimento clínico Está buscando su patrón Si al",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "diagrama de liquido en las piernas que regresa a la vejiga al acostarse",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13m06",
+      "section_id": "s13-demo",
+      "from": 32191,
+      "duration": 310,
+      "narration": "Durante siete días anote tres cosas Su energía al final de la tarde",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "checklist_plan",
+          "render_component": "checklist_plan",
+          "title": "Siete dias: anota energia, orina y sueno",
+          "sub": "",
+          "detail": "checklist de pasos numerados que se marcan al ritmo de la narracion",
+          "kicker": "",
+          "family": "checklist_plan",
+          "layout_family": "checklist_plan",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s13m07",
+      "section_id": "s13-demo",
+      "from": 32501,
+      "duration": 267,
+      "narration": "diabetes mal controlada edema en las piernas vejiga hiperactiva síntomas prostáticos efectos",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s13m08",
+      "section_id": "s13-demo",
+      "from": 32768,
+      "duration": 357,
+      "narration": "al acostarse ese líquido regresa a la circulación y termina en la vejiga",
+      "transition": "none",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Liquido de las piernas regresa a la vejiga",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s13m09",
+      "section_id": "s13-demo",
+      "from": 33125,
+      "duration": 338,
+      "narration": "la edad Pero quizá ronca con pausas respiratorias Tal vez tiene la",
+      "transition": "whip",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "jarra de agua con marcas junto a una libreta de anotaciones",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s13m10",
+      "section_id": "s13-demo",
+      "from": 33463,
+      "duration": 269,
+      "narration": "El cuerpo no es una botella con una raya al costado Y",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer propone dejar una jarra visible y anotar el patron durante siete dias",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s14m01",
+      "section_id": "s14-sueno",
+      "from": 33732,
+      "duration": 252,
+      "narration": "eso nos lleva al sueño quizá el puente más importante entre hidratación",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14m02",
+      "section_id": "s14-sueno",
+      "from": 33984,
+      "duration": 329,
+      "narration": "sueño también se asocia con problemas cardiovasculares y sexuales Si usted bebe",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "plato de cena salada servido de noche en penumbra",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s14m03",
+      "section_id": "s14-sueno",
+      "from": 34313,
+      "duration": 254,
+      "narration": "sueño quizá el puente más importante entre hidratación y libido Dormir",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "mechanism_diagram",
+          "render_component": "mechanism_diagram",
+          "title": "El sueno: puente entre hidratacion y libido",
+          "sub": "",
+          "detail": "diagrama de mecanismo con flujo, nodos y capas conectadas",
+          "kicker": "",
+          "family": "mechanism_diagram",
+          "layout_family": "mechanism_diagram",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s14m04",
+      "section_id": "s14-sueno",
+      "from": 34567,
+      "duration": 249,
+      "narration": "necesita acostarse deshidratado La estrategia es desplazar una mayor parte del líquido",
+      "transition": "lift",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer explica como una cena salada arranca la cadena de sal, sed y sueno roto",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s14m05",
+      "section_id": "s14-sueno",
+      "from": 34816,
+      "duration": 321,
+      "narration": "Pero si tiene una sed nocturna intensa no la ignore Mucha sed",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "cadena visual sal, sed, agua, vejiga llena y sueno fragmentado",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s14m06",
+      "section_id": "s14-sueno",
+      "from": 35137,
+      "duration": 309,
+      "narration": "mucha sal mucha sed mucha agua vejiga llena y sueño fragmentado",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Sal, sed, agua, vejiga llena, mal sueno",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s14m07",
+      "section_id": "s14-sueno",
+      "from": 35446,
+      "duration": 211,
+      "narration": "provocar sed y favorecer retención de líquido Luego bebe varios vasos para",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s14m08",
+      "section_id": "s14-sueno",
+      "from": 35657,
+      "duration": 279,
+      "narration": "sufrir sed Es evitar crear una sed enorme justo antes de dormir",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "plato de cena salada servido de noche en penumbra",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s15m01",
+      "section_id": "s15-ejercicio",
+      "from": 35936,
+      "duration": 293,
+      "narration": "Ahora hablemos del ejercicio Esta pieza suele ser mucho más poderosa para",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s15m02",
+      "section_id": "s15-ejercicio",
+      "from": 36229,
+      "duration": 289,
+      "narration": "hidratado y reponer lo perdido sobre todo con calor Pero el agua",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor hace una caminata tranquila por un parque",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s15m03",
+      "section_id": "s15-ejercicio",
+      "from": 36518,
+      "duration": 274,
+      "narration": "Ninguna temperatura especial activa la próstata o enciende la libido Agua",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "myth_vs_fact",
+          "render_component": "myth_vs_fact",
+          "title": "Ninguna temperatura enciende la libido",
+          "sub": "",
+          "detail": "tarjeta de mito tachada que gira en 3D hacia la verdad clinica",
+          "kicker": "",
+          "family": "myth_vs_fact",
+          "layout_family": "myth_vs_fact",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s15m04",
+      "section_id": "s15-ejercicio",
+      "from": 36792,
+      "duration": 286,
+      "narration": "agua alcalina El agua potable común suele cumplir perfectamente su función Agua",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer desmiente uno por uno los mitos del agua especial mientras camina un paso",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s15m05",
+      "section_id": "s15-ejercicio",
+      "from": 37078,
+      "duration": 273,
+      "narration": "eréctil El ácido también puede molestar el reflujo y afectar el esmalte",
+      "transition": "whip",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "tarjetas de mitos del agua tachadas: alcalina, limon, sal, deportiva",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s15m06",
+      "section_id": "s15-ejercicio",
+      "from": 37351,
+      "duration": 307,
+      "narration": "probablemente aporte más a su bienestar sexual que obsesionarse con una marca de agua alcalina",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "comparison_scale",
+          "render_component": "comparison_scale",
+          "title": "Una caminata supera al agua alcalina",
+          "sub": "",
+          "detail": "balanza comparativa que inclina entre dos escenarios opuestos",
+          "kicker": "",
+          "family": "comparison_scale",
+          "layout_family": "comparison_scale",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s15m07",
+      "section_id": "s15-ejercicio",
+      "from": 37658,
+      "duration": 291,
+      "narration": "y usos concretos No son una bebida sexual Bebidas deportivas Para una",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s15m08",
+      "section_id": "s15-ejercicio",
+      "from": 37949,
+      "duration": 200,
+      "narration": "Si alguien promete elevar la testosterona cambiando su pH con agua",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "myth_vs_fact",
+          "render_component": "myth_vs_fact",
+          "title": "Nadie eleva testosterona cambiando el pH",
+          "sub": "",
+          "detail": "tarjeta de mito tachada que gira en 3D hacia la verdad clinica",
+          "kicker": "",
+          "family": "myth_vs_fact",
+          "layout_family": "myth_vs_fact",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s15m09",
+      "section_id": "s15-ejercicio",
+      "from": 38149,
+      "duration": 216,
+      "narration": "pH de la sangre mediante los pulmones y los riñones Una bebida",
+      "transition": "fold",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor hace una caminata tranquila por un parque",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s15m10",
+      "section_id": "s15-ejercicio",
+      "from": 38365,
+      "duration": 214,
+      "narration": "porque la obsesión con el producto distrae de señales que sí importan",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer desmiente uno por uno los mitos del agua especial mientras camina un paso",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s16m01",
+      "section_id": "s16-vascular",
+      "from": 38579,
+      "duration": 206,
+      "narration": "Una dificultad eréctil nueva o progresiva puede ser una advertencia vascular Las",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s16m02",
+      "section_id": "s16-vascular",
+      "from": 38785,
+      "duration": 265,
+      "narration": "causar episodios ocasionales Pero si se repite merece conversación médica Dolor de",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor pensativo mira por la ventana al atardecer",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s16m03",
+      "section_id": "s16-vascular",
+      "from": 39050,
+      "duration": 257,
+      "narration": "los problemas de erección aparecen antes de que se diagnostique una enfermedad cardiovascular",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "safety_boundary",
+          "render_component": "safety_boundary",
+          "title": "La ereccion puede avisar riesgo cardiovascular",
+          "sub": "",
+          "detail": "panel de limite de seguridad con banda roja de alerta y umbral",
+          "kicker": "",
+          "family": "safety_boundary",
+          "layout_family": "safety_boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s16m04",
+      "section_id": "s16-vascular",
+      "from": 39307,
+      "duration": 250,
+      "narration": "por su cuenta con medicamentos para la erección La presión puede caer",
+      "transition": "none",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer advierte, serio, que una ereccion que falla puede ser una senal cardiovascular",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s16m05",
+      "section_id": "s16-vascular",
+      "from": 39557,
+      "duration": 304,
+      "narration": "o tensión en la relación Cuando la intimidad se convierte en un",
+      "transition": "whip",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "arterias del pene y del corazon comparadas por tamano, look clinico",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s16m06",
+      "section_id": "s16-vascular",
+      "from": 39861,
+      "duration": 241,
+      "narration": "Vigila la erección en vez de sentir Se preocupa La adrenalina sube",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "mechanism_diagram",
+          "render_component": "mechanism_diagram",
+          "title": "Vigilar la ereccion: sube la adrenalina",
+          "sub": "",
+          "detail": "diagrama de mecanismo con flujo, nodos y capas conectadas",
+          "kicker": "",
+          "family": "mechanism_diagram",
+          "layout_family": "mechanism_diagram",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s16m07",
+      "section_id": "s16-vascular",
+      "from": 40102,
+      "duration": 269,
+      "narration": "al encuentro la obligación de rendir Recuperar el contacto y el placer",
+      "transition": "none",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s16m08",
+      "section_id": "s16-vascular",
+      "from": 40371,
+      "duration": 274,
+      "narration": "A veces tratamiento Y sí una hidratación sensata como parte del terreno",
+      "transition": "iris",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor pensativo mira por la ventana al atardecer",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s17m01",
+      "section_id": "s17-error",
+      "from": 40645,
+      "duration": 309,
+      "narration": "Llegamos al error prometido No consiste solamente en beber mucha agua Consiste",
+      "transition": "fold",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s17m02",
+      "section_id": "s17-error",
+      "from": 40954,
+      "duration": 312,
+      "narration": "varios vasos junto con una cena salada o alcohol Finalmente se acuesta",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "botella grande de agua junto a la cama en la penumbra nocturna",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s17m03",
+      "section_id": "s17-error",
+      "from": 41266,
+      "duration": 285,
+      "narration": "pasar casi todo el día bebiendo poco y pagar esa deuda durante la cena",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "loop_cycle",
+          "render_component": "loop_cycle",
+          "title": "Beber poco todo el dia, pagar en la cena",
+          "sub": "",
+          "detail": "diagrama circular del ciclo que se retroalimenta noche tras noche",
+          "kicker": "",
+          "family": "loop_cycle",
+          "layout_family": "loop_cycle",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s17m04",
+      "section_id": "s17-error",
+      "from": 41551,
+      "duration": 277,
+      "narration": "la falta de un agua milagrosa La mala distribución Y la costumbre",
+      "transition": "iris",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer revela el error nocturno completo y la botella junto a la cama",
+          "depth_layers": 7,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s17m05",
+      "section_id": "s17-error",
+      "from": 41828,
+      "duration": 440,
+      "narration": "se acuesta con la vejiga llena se levanta dos o tres veces y pierde sueño",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "cause_chain",
+          "render_component": "cause_chain",
+          "title": "Vejiga llena: se levanta y pierde sueno",
+          "sub": "",
+          "detail": "cadena causal de eslabones que avanzan uno a uno hasta el desenlace",
+          "kicker": "",
+          "family": "cause_chain",
+          "layout_family": "cause_chain",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s17m06",
+      "section_id": "s17-error",
+      "from": 42268,
+      "duration": 340,
+      "narration": "llena Y luego lo despierta otra vez El agua quizá no provocó",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "ciclo nocturno: vejiga llena, despertar, beber por rutina, repetir",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s17m07",
+      "section_id": "s17-error",
+      "from": 42608,
+      "duration": 312,
+      "narration": "no siempre significa que todo el cuerpo necesite medio litro de inmediato",
+      "transition": "whip",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18m01",
+      "section_id": "s18-plan",
+      "from": 42920,
+      "duration": 291,
+      "narration": "Vamos a convertirlo en un plan para los próximos siete días Uno",
+      "transition": "lift",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18m02",
+      "section_id": "s18-plan",
+      "from": 43211,
+      "duration": 345,
+      "narration": "Cuatro Si espera tener intimidad por la noche llegue hidratado desde antes",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor anota su registro de agua en una libreta por la manana",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18m03",
+      "section_id": "s18-plan",
+      "from": 43556,
+      "duration": 251,
+      "narration": "Distribuya cantidades pequeñas o moderadas durante la mañana y la tarde",
+      "transition": "iris",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "checklist_plan",
+          "render_component": "checklist_plan",
+          "title": "Reparte cantidades moderadas: manana y tarde",
+          "sub": "",
+          "detail": "checklist de pasos numerados que se marcan al ritmo de la narracion",
+          "kicker": "",
+          "family": "checklist_plan",
+          "layout_family": "checklist_plan",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 9,
+          "transition_variant": "iris"
+        }
+      ]
+    },
+    {
+      "id": "s18m04",
+      "section_id": "s18-plan",
+      "from": 43807,
+      "duration": 296,
+      "narration": "sueño Si se levanta dos o más veces con frecuencia o aparecen",
+      "transition": "fold",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer resume el plan de siete dias e invita a comentar y compartir",
+          "depth_layers": 7,
+          "transition_variant": "fold"
+        }
+      ]
+    },
+    {
+      "id": "s18m05",
+      "section_id": "s18-plan",
+      "from": 44103,
+      "duration": 271,
+      "narration": "No reemplaza un diagnóstico No destapa arterias No aumenta mágicamente la testosterona",
+      "transition": "none",
+      "visual_type": "clean_image",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "checklist de ocho pasos del plan de hidratacion marcados en orden",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18m06",
+      "section_id": "s18-plan",
+      "from": 44374,
+      "duration": 312,
+      "narration": "No use alcohol como estimulante sexual Puede producir exactamente el efecto contrario",
+      "transition": "whip",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "safety_boundary",
+          "render_component": "safety_boundary",
+          "title": "No uses alcohol como estimulante sexual",
+          "sub": "",
+          "detail": "panel de limite de seguridad con banda roja de alerta y umbral",
+          "kicker": "",
+          "family": "safety_boundary",
+          "layout_family": "safety_boundary",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 8,
+          "transition_variant": "whip"
+        }
+      ]
+    },
+    {
+      "id": "s18m07",
+      "section_id": "s18-plan",
+      "from": 44686,
+      "duration": 325,
+      "narration": "la cena Ese horario revela el patrón mejor que preguntar cuántos vasos",
+      "transition": "iris",
+      "visual_type": "avatar_full",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "avatar",
+          "src": "avatar_v9uz8m1rssch.mp4"
+        }
+      ]
+    },
+    {
+      "id": "s18m08",
+      "section_id": "s18-plan",
+      "from": 45011,
+      "duration": 315,
+      "narration": "El agua puede quitar un freno cuando faltaba No es afrodisíaca",
+      "transition": "lift",
+      "visual_type": "hero_component",
+      "overlay_policy": "editorial_only",
+      "layers": [
+        {
+          "type": "component",
+          "component": "dose_meter",
+          "render_component": "dose_meter",
+          "title": "El agua quita un freno: no es afrodisiaca",
+          "sub": "",
+          "detail": "medidor de dosis con vaso y rango moderado marcado sobre una escala",
+          "kicker": "",
+          "family": "dose_meter",
+          "layout_family": "dose_meter",
+          "value": "",
+          "suffix": "",
+          "icon": "",
+          "image": null,
+          "image_b": null,
+          "items": [],
+          "nodes": [],
+          "cards": [],
+          "step": null,
+          "total": null,
+          "attributed": false,
+          "author": "",
+          "role": "",
+          "depth_layers": 7,
+          "transition_variant": "lift"
+        }
+      ]
+    },
+    {
+      "id": "s18m09",
+      "section_id": "s18-plan",
+      "from": 45326,
+      "duration": 452,
+      "narration": "En el próximo video explicaré una señal matutina que muchos hombres utilizan",
+      "transition": "none",
+      "visual_type": "clean_stock",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "hombre mayor anota su registro de agua en una libreta por la manana",
+          "depth_layers": 7,
+          "transition_variant": "none"
+        }
+      ]
+    },
+    {
+      "id": "s18m10",
+      "section_id": "s18-plan",
+      "from": 45778,
+      "duration": 151,
+      "narration": "terco con una dificultad sexual que su cuerpo lleva meses intentando contarle",
+      "transition": "whip",
+      "visual_type": "presenter_action",
+      "overlay_policy": "none",
+      "layers": [
+        {
+          "type": "component",
+          "component": "FedHero",
+          "render_component": "FedHero",
+          "family": "evidence",
+          "title": "",
+          "sub": "",
+          "detail": "el Dr. Federer resume el plan de siete dias e invita a comentar y compartir",
+          "depth_layers": 7,
+          "transition_variant": "whip"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "scenes": 162,
+    "avatar_scenes": 38,
+    "clip_scenes": 0,
+    "image_scenes": 0,
+    "component_scenes": 124,
+    "distinct_render_components": 15,
+    "duration_seconds": 1530.96,
+    "unresolved_assets": 0,
+    "visual_v3": {
+      "moments": 162,
+      "counts": {
+        "avatar_full": 38,
+        "clean_stock": 34,
+        "hero_component": 44,
+        "presenter_action": 28,
+        "clean_image": 18
+      },
+      "ratios": {
+        "avatar_full": 0.2346,
+        "clean_stock": 0.2099,
+        "hero_component": 0.2716,
+        "presenter_action": 0.1728,
+        "clean_image": 0.1111
+      },
+      "clean_media_without_overlay_ratio": 1,
+      "clean_media_mix_ratio": 0.321,
+      "hero_families": 14,
+      "rendered_components": 14,
+      "dominant_rendered_component_share": 0.1818,
+      "max_consecutive_rendered_component": 2,
+      "transition_modes": 5,
+      "clean_cut_ratio": 0.3025,
+      "max_consecutive_transition": 1,
+      "presenter_section_coverage": 1
+    }
+  }
+}
