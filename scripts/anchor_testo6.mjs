@@ -109,6 +109,17 @@ for (const m of moments) {
   });
 }
 
+// Imagen on-topic para cada componente: el presentador de SU seccion (evita el default skincare de FED_ASSETS).
+const presBySection = {};
+for (const sc of scenes) if (sc.layers[0].type === "image") (presBySection[sc.section_id] ||= []).push(sc.layers[0].src);
+const allPres = scenes.filter((s) => s.layers[0].type === "image").map((s) => s.layers[0].src);
+const compCursor = {};
+for (const sc of scenes) {
+  if (sc.layers[0].type !== "component") continue;
+  const pool = (presBySection[sc.section_id] && presBySection[sc.section_id].length) ? presBySection[sc.section_id] : allPres;
+  if (pool.length) { const k = compCursor[sc.section_id] || 0; compCursor[sc.section_id] = k + 1; sc.layers[0].image = pool[k % pool.length]; }
+}
+
 // Monotonia + duraciones (from = max(anterior+MIN, propio); duration = siguiente - from)
 scenes.sort((a, b) => a.from - b.from);
 for (let i = 1; i < scenes.length; i++) if (scenes[i].from < scenes[i - 1].from + MIN_DUR) scenes[i].from = scenes[i - 1].from + MIN_DUR;

@@ -204,7 +204,8 @@
      "title": "Un uno por ciento menos cada ano",
      "sub": "La testosterona cae despacio despues de los treinta",
      "value": "1",
-     "suffix": "%"
+     "suffix": "%",
+     "image": "img/testo6_presenter_001.png"
     }
    ]
   },
@@ -367,7 +368,8 @@
      "title": "Con intencion, no por obligacion",
      "sub": "Entender el porque es la mitad del remedio",
      "step": 1,
-     "total": 1
+     "total": 1,
+     "image": "img/testo6_presenter_002.png"
     }
    ]
   },
@@ -460,7 +462,8 @@
      "title": "Dormir cinco horas baja la testosterona",
      "sub": "Hasta un quince por ciento en una sola semana",
      "value": "15",
-     "suffix": "%"
+     "suffix": "%",
+     "image": "img/testo6_presenter_003.png"
     }
    ]
   },
@@ -640,7 +643,8 @@
      "sub": "Cuatro meses despues, la mano firme otra vez",
      "attributed": true,
      "author": "Anibal, 63 anos",
-     "role": "Volvio a los cuatro meses"
+     "role": "Volvio a los cuatro meses",
+     "image": "img/testo6_presenter_008.png"
     }
    ]
   },
@@ -871,7 +875,8 @@
      "transition_variant": "none",
      "kicker": "",
      "title": "Ejercicio uno: la sentadilla",
-     "sub": "El musculo mas grande manda: piernas y gluteos"
+     "sub": "El musculo mas grande manda: piernas y gluteos",
+     "image": "img/testo6_presenter_011.png"
     }
    ]
   },
@@ -1218,7 +1223,8 @@
      "transition_variant": "fold",
      "kicker": "",
      "title": "Ejercicio dos: la bisagra de cadera",
-     "sub": "Toda la cadena de atras y un cinturon natural"
+     "sub": "Toda la cadena de atras y un cinturon natural",
+     "image": "img/testo6_presenter_014.png"
     }
    ]
   },
@@ -1325,7 +1331,8 @@
      "transition_variant": "iris",
      "kicker": "",
      "title": "Ya llegamos: el cuarto le devuelve los hombros",
-     "sub": "Los hombros de cuando tenia treinta"
+     "sub": "Los hombros de cuando tenia treinta",
+     "image": "img/testo6_presenter_015.png"
     }
    ]
   },
@@ -1466,7 +1473,8 @@
      "transition_variant": "fold",
      "kicker": "",
      "title": "No es de musculo: es de dignidad",
-     "sub": "Guardar la valija, alzar al nieto sobre los hombros"
+     "sub": "Guardar la valija, alzar al nieto sobre los hombros",
+     "image": "img/testo6_presenter_017.png"
     }
    ]
   },
@@ -1627,7 +1635,8 @@
      "transition_variant": "none",
      "kicker": "",
      "title": "Ejercicio cuatro: el tiron",
-     "sub": "Pararse derecho y abrir el pecho"
+     "sub": "Pararse derecho y abrir el pecho",
+     "image": "img/testo6_presenter_020.png"
     }
    ]
   },
@@ -1794,7 +1803,8 @@
       "Levantar del piso",
       "Poner arriba",
       "Tirar hacia usted"
-     ]
+     ],
+     "image": "img/testo6_presenter_021.png"
     }
    ]
   },
@@ -2023,7 +2033,8 @@
      "transition_variant": "whip",
      "kicker": "",
      "title": "Ejercicio cinco: los sprints",
-     "sub": "Corto y feroz: diez minutos, no cuarenta"
+     "sub": "Corto y feroz: diez minutos, no cuarenta",
+     "image": "img/testo6_presenter_024.png"
     }
    ]
   },
@@ -2476,7 +2487,8 @@
       "Convierte a estrogeno",
       "Menos testosterona",
       "El musculo lo revierte"
-     ]
+     ],
+     "image": "img/testo6_presenter_028.png"
     }
    ]
   },
@@ -2805,7 +2817,8 @@
      "transition_variant": "lift",
      "kicker": "",
      "title": "Ejercicio seis: el acarreo",
-     "sub": "La fuerza de agarre predice su salud"
+     "sub": "La fuerza de agarre predice su salud",
+     "image": "img/testo6_presenter_033.png"
     }
    ]
   },
@@ -2964,7 +2977,8 @@
      "title": "Ahora, la parte incomoda pero honesta",
      "sub": "El medico que prometio decir la verdad",
      "author": "Dr. Federer",
-     "role": "El medico que prometio decir la verdad"
+     "role": "El medico que prometio decir la verdad",
+     "image": "img/testo6_presenter_034.png"
     }
    ]
   },
@@ -3231,7 +3245,8 @@
       "Poco sueno",
       "Sube el cortisol",
       "Baja la testosterona"
-     ]
+     ],
+     "image": "img/testo6_presenter_037.png"
     }
    ]
   },
@@ -3325,7 +3340,8 @@
      "kicker": "",
      "title": "Tres dias a la semana alcanzan",
      "sub": "La testosterona se fabrica de noche, al descansar",
-     "value": "3"
+     "value": "3",
+     "image": "img/testo6_presenter_038.png"
     }
    ]
   },
@@ -3485,7 +3501,8 @@
      "sub": "Nadie se hace rico con que usted descanse",
      "attributed": true,
      "author": "Dr. Federer",
-     "role": "El argumento del canal"
+     "role": "El argumento del canal",
+     "image": "img/testo6_presenter_042.png"
     }
    ]
   },
@@ -3666,7 +3683,8 @@
      "title": "Esto no reemplaza a un medico",
      "sub": "Cansancio o animo bajo: hagase un analisis",
      "author": "Dr. Federer",
-     "role": "Cansancio o animo bajo: hagase un analisis"
+     "role": "Cansancio o animo bajo: hagase un analisis",
+     "image": "img/testo6_presenter_043.png"
     }
    ]
   },
@@ -3885,7 +3903,8 @@
       "Empuje y tiron",
       "Sprint y acarreo",
       "Tres dias, mucho descanso"
-     ]
+     ],
+     "image": "img/testo6_presenter_046.png"
     }
    ]
   },
@@ -4026,7 +4045,8 @@
      "transition_variant": "whip",
      "kicker": "",
      "title": "La rutina completa esta en la descripcion",
-     "sub": "Semana por semana, lista para imprimir"
+     "sub": "Semana por semana, lista para imprimir",
+     "image": "img/testo6_presenter_047.png"
     }
    ]
   },
@@ -4120,7 +4140,8 @@
      "sub": "Estos movimientos vivian en su dia a dia",
      "attributed": true,
      "author": "Dr. Federer",
-     "role": "Cierre del canal"
+     "role": "Cierre del canal",
+     "image": "img/testo6_presenter_048.png"
     }
    ]
   },
