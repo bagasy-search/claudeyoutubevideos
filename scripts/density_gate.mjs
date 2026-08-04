@@ -5,15 +5,16 @@
 //   node scripts/density_gate.mjs <slug> [total_frames]
 //   → exit 0 = suficiente, podés rendear. exit 1 = pelado, generá más ANTES de rendear.
 //
-// Umbrales (calibrables por env): 1 visual cada VIS_EVERY_S seg · 1 clip de stock cada CLIP_EVERY_S seg.
+// Umbrales legacy compatibles con Visual V3. Este gate evita un video pelado, pero no puede
+// contradecir al Golden Master pidiendo cortes o componentes de relleno.
 import { readFileSync, existsSync, readdirSync } from "fs";
 import { execSync } from "node:child_process";
 
 const slug = process.argv[2];
 if (!slug) { console.error("Uso: node scripts/density_gate.mjs <slug> [total_frames]"); process.exit(2); }
 
-const VIS_EVERY_S = +(process.env.VIS_EVERY_S || 5);    // 1 momento visual cada 5s (≈12/min)
-const CLIP_EVERY_S = +(process.env.CLIP_EVERY_S || 30); // 1 clip de STOCK real cada 30s
+const VIS_EVERY_S = +(process.env.VIS_EVERY_S || 8);    // ≈7.5 momentos/min; Visual V3 acepta 6.5-10.5
+const CLIP_EVERY_S = +(process.env.CLIP_EVERY_S || 40); // el stock limpio complementa avatar y componentes
 const FPS = 30;
 
 // 1) ubicar el build
@@ -100,7 +101,7 @@ const compDistinct = [...new Set(compAll)];            // VARIEDAD
 // Mínimo de componentes DISTINTOS. Subido de 6 → 12 cuando se llenaron los kits en kits.json
 // (casero 38 · fauna 28 · federer 11-20): con esa biblioteca, 12 es un piso razonable — los videos
 // BUENOS llegan solos a 20-32 (termitas 32, wasp 22, federer romero 20). Los truchos usan 3.
-const MIN_COMP = +(process.env.MIN_COMPONENTES || 12);
+const MIN_COMP = +(process.env.MIN_COMPONENTES || 8);
 // El mínimo global no alcanza: un video de 25 min lo cumple con UN componente nuevo cada 2 minutos
 // y después son 10 min seguidos de fotos. Por eso también se exige variedad POR BLOQUE.
 const MIN_COMP_BLOQUE = +(process.env.MIN_COMP_BLOQUE || 5);
@@ -127,7 +128,9 @@ const MAX_RAWSHOT_PCT = +(process.env.MAX_RAWSHOT_PCT || 78);
 //   · componentes REALES: 176 usos = 8,4/min
 // O sea que un piso de 9 le exigía MÁS que al video que el creador llamó "de pura calidad". El piso
 // va en 7: ~17% por debajo de esa referencia, y bien por encima del 5,3 del video que no le gustó.
-const MIN_COMP_MIN = +(process.env.MIN_COMP_MIN || 7);
+// Golden Master: los componentes premium ocupan 20-35% de ~7.5 momentos/min. Exigir 7/min
+// convertía cada explicación en una tarjeta y fue la causa directa de los videos ruidosos.
+const MIN_COMP_MIN = +(process.env.MIN_COMP_MIN || 1.5);
 
 // La DENSIDAD no cambia: las tomas planas siguen contando como visual (esto NO toca VIS_EVERY_S).
 const visuals = imgs.length + clips.length + compUses + shotUses;
@@ -335,7 +338,7 @@ if (compPorMin < MIN_COMP_MIN) {
   const pista = propios !== null && propios.length === 0
     ? " Dato medido, por si sirve: este video no trajo NINGÚN componente propio. El que el creador marcó como de máxima calidad trajo 11, diseñados de a uno."
     : "";
-  fallos.push(`KIT ESTIRADO: ${compUses} usos de componente en ${(seconds / 60).toFixed(1)} min = ${compPorMin}/min (mínimo ${MIN_COMP_MIN}/min). Te faltan ~${faltan} usos más. OJO: esto NO es lo mismo que la variedad — podés tener 20 componentes distintos y aun así un video pelado si cada uno aparece dos veces en 35 minutos. Lo que falta es CANTIDAD: más beats de componente repartidos por todo el metraje, sobre todo en los tramos flojos${sug ? `. Sin usar todavía tenés: ${sug}` : ""}.${pista}`);
+  fallos.push(`EXPLICACIÓN VISUAL INSUFICIENTE: ${compUses} usos de componente en ${(seconds / 60).toFixed(1)} min = ${compPorMin}/min (piso ${MIN_COMP_MIN}/min). Faltan ~${faltan} afirmaciones importantes convertidas en mecanismos, comparaciones, mediciones o pasos visuales. No repitas componentes ni agregues tarjetas decorativas para cumplir; elegí claims reales del guion y diseñá la explicación adecuada${sug ? `. Familias disponibles: ${sug}` : ""}.${pista}`);
 }
 // ── VARIEDAD POR TRAMO: que no haya un tercio del video en fotos seguidas ─────────────────────
 if (tramos) {
