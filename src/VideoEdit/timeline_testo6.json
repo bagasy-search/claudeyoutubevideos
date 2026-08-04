@@ -1,0 +1,4152 @@
+{
+ "version": 3,
+ "slug": "testo6",
+ "kit": "federer-fluid",
+ "premium_director_enabled": true,
+ "composition_id": "Bagasy-testo6",
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "duration_in_frames": 35682,
+ "audio_src": "testo6_opt.mp4",
+ "captions_src": "captions_testo6.json",
+ "scenes": [
+  {
+   "id": "s01-hook-m001",
+   "section_id": "s01-hook",
+   "from": 0,
+   "duration": 158,
+   "narration": "Hay seis ejercicios Solo seis Y no le hablo de suplementos de cien dólares ni de",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m002",
+   "section_id": "s01-hook",
+   "from": 158,
+   "duration": 205,
+   "narration": "inyecciones ni de nada raro le hablo de seis movimientos que su bisabuelo hacía sin saberlo y",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_001.mp4",
+     "asset_id": "testo6:s01-hook-m002:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m003",
+   "section_id": "s01-hook",
+   "from": 363,
+   "duration": 151,
+   "narration": "que le suben a un hombre de más de cuarenta la hormona que lo mantiene fuerte",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_001.png",
+     "asset_id": "testo6:s01-hook-m003:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m004",
+   "section_id": "s01-hook",
+   "from": 514,
+   "duration": 200,
+   "narration": "despierto y con ganas más que cualquier frasco que le vendan en la farmacia Y el sexto",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_002.mp4",
+     "asset_id": "testo6:s01-hook-m004:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m005",
+   "section_id": "s01-hook",
+   "from": 714,
+   "duration": 157,
+   "narration": "el sexto es el que casi nadie hace y es justo el que más mueve la aguja",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m006",
+   "section_id": "s01-hook",
+   "from": 871,
+   "duration": 328,
+   "narration": "A ver déjeme empezar por lo que casi todo el mundo entiende mal Porque acá está",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_003.mp4",
+     "asset_id": "testo6:s01-hook-m006:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m008",
+   "section_id": "s01-hook",
+   "from": 1199,
+   "duration": 207,
+   "narration": "de vanidad No No es eso La testosterona es cómo le explico es el aceite del",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_002.png",
+     "asset_id": "testo6:s01-hook-m008:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m009",
+   "section_id": "s01-hook",
+   "from": 1406,
+   "duration": 112,
+   "narration": "motor Es lo que le da energía a la mañana lo que le sostiene el ánimo lo",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_004.mp4",
+     "asset_id": "testo6:s01-hook-m009:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m010",
+   "section_id": "s01-hook",
+   "from": 1518,
+   "duration": 120,
+   "narration": "que le cuida los huesos la cabeza el deseo hasta el corazón Y a partir de",
+   "transition": "lift",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m011",
+   "section_id": "s01-hook",
+   "from": 1638,
+   "duration": 37,
+   "narration": "los treinta treinta y cinco empieza a bajar Despacio Como un uno por ciento por año",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_005.mp4",
+     "asset_id": "testo6:s01-hook-m011:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m007",
+   "section_id": "s01-hook",
+   "from": 1675,
+   "duration": 177,
+   "narration": "treinta y cinco empieza a bajar Despacio Como un uno por ciento por año",
+   "transition": "none",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "stat",
+     "family": "stat",
+     "transition_variant": "none",
+     "kicker": "",
+     "title": "Un uno por ciento menos cada ano",
+     "sub": "La testosterona cae despacio despues de los treinta",
+     "value": "1",
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m012",
+   "section_id": "s01-hook",
+   "from": 1852,
+   "duration": 147,
+   "narration": "Usted no lo siente el primer año Ni el segundo Pero un día cumple cuarenta y",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_003.png",
+     "asset_id": "testo6:s01-hook-m012:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m013",
+   "section_id": "s01-hook",
+   "from": 1999,
+   "duration": 128,
+   "narration": "ocho y se da cuenta de que ya no es el mismo que se cansa antes que",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_006.mp4",
+     "asset_id": "testo6:s01-hook-m013:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m014",
+   "section_id": "s01-hook",
+   "from": 2127,
+   "duration": 191,
+   "narration": "duerme peor que la panza aparece de la nada aunque coma casi igual y piensa bueno",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m015",
+   "section_id": "s01-hook",
+   "from": 2318,
+   "duration": 143,
+   "narration": "es la edad Y sí es la edad Pero la edad no es una sentencia Es",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_007.mp4",
+     "asset_id": "testo6:s01-hook-m015:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m016",
+   "section_id": "s01-hook",
+   "from": 2461,
+   "duration": 138,
+   "narration": "una palanca Y hoy le voy a mostrar cómo se empuja esa palanca para el otro lado",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_004.png",
+     "asset_id": "testo6:s01-hook-m016:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m017",
+   "section_id": "s01-hook",
+   "from": 2599,
+   "duration": 379,
+   "narration": "Y déjeme decirle algo así de entrada porque quiero ser honesto con usted Ninguno de estos",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_008.mp4",
+     "asset_id": "testo6:s01-hook-m017:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m019",
+   "section_id": "s01-hook",
+   "from": 2978,
+   "duration": 143,
+   "narration": "ejercicio Lo que pasa y esto es lo importante es que casi nadie los hace bien y",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m020",
+   "section_id": "s01-hook",
+   "from": 3121,
+   "duration": 107,
+   "narration": "casi nadie sabe por qué funcionan Y cuando usted entiende el porqué deja de hacerlos por",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_009.mp4",
+     "asset_id": "testo6:s01-hook-m020:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m018",
+   "section_id": "s01-hook",
+   "from": 3228,
+   "duration": 54,
+   "narration": "porqué deja de hacerlos por obligación y empieza a hacerlos con intención",
+   "transition": "fold",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "step",
+     "family": "step",
+     "transition_variant": "fold",
+     "kicker": "",
+     "title": "Con intencion, no por obligacion",
+     "sub": "Entender el porque es la mitad del remedio",
+     "step": 1,
+     "total": 1
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m021",
+   "section_id": "s01-hook",
+   "from": 3282,
+   "duration": 170,
+   "narration": "obligación y empieza a hacerlos con intención Que no es lo mismo Para nada es lo mismo",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_005.png",
+     "asset_id": "testo6:s01-hook-m021:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m022",
+   "section_id": "s01-hook",
+   "from": 3452,
+   "duration": 282,
+   "narration": "Espere antes de arrancar un número porque me gusta que usted vea que esto",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_010.mp4",
+     "asset_id": "testo6:s01-hook-m022:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m024",
+   "section_id": "s01-hook",
+   "from": 3734,
+   "duration": 151,
+   "narration": "médica seria la JAMA donde a hombres jóvenes y sanos les redujeron el sueño",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m025",
+   "section_id": "s01-hook",
+   "from": 3885,
+   "duration": 24,
+   "narration": "a cinco horas por noche durante una semana Una sola semana Y la testosterona les",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_006.png",
+     "asset_id": "testo6:s01-hook-m025:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m023",
+   "section_id": "s01-hook",
+   "from": 3909,
+   "duration": 158,
+   "narration": "cinco horas por noche durante una semana Una sola semana Y la testosterona",
+   "transition": "lift",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "stat",
+     "family": "stat",
+     "transition_variant": "lift",
+     "kicker": "",
+     "title": "Dormir cinco horas baja la testosterona",
+     "sub": "Hasta un quince por ciento en una sola semana",
+     "value": "15",
+     "suffix": "%"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m026",
+   "section_id": "s01-hook",
+   "from": 4067,
+   "duration": 157,
+   "narration": "bajó entre un diez y un quince por ciento En una semana Eso en términos",
+   "transition": "fold",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m027",
+   "section_id": "s01-hook",
+   "from": 4224,
+   "duration": 164,
+   "narration": "de hormona es como envejecer diez o quince años de golpe Guárdese ese dato",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m028",
+   "section_id": "s01-hook",
+   "from": 4388,
+   "duration": 98,
+   "narration": "porque al final del video lo voy a usar para contarle el error que arruina",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_011.mp4",
+     "asset_id": "testo6:s01-hook-m028:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s01-hook-m029",
+   "section_id": "s01-hook",
+   "from": 4486,
+   "duration": 152,
+   "narration": "el noventa por ciento de los intentos Que no es el que usted se imagina",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_007.png",
+     "asset_id": "testo6:s01-hook-m029:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m030",
+   "section_id": "s02-historia",
+   "from": 4638,
+   "duration": 337,
+   "narration": "Y mire para que no le quede solamente en la teoría en el número frío déjeme",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_012.mp4",
+     "asset_id": "testo6:s02-historia-m030:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m032",
+   "section_id": "s02-historia",
+   "from": 4975,
+   "duration": 234,
+   "narration": "la vida detrás del mostrador de una ferretería Venía apagado de verdad apagado Me decía doctor",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m033",
+   "section_id": "s02-historia",
+   "from": 5209,
+   "duration": 147,
+   "narration": "me siento un fantasma de lo que era me miro al espejo y no me reconozco",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_013.mp4",
+     "asset_id": "testo6:s02-historia-m033:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m034",
+   "section_id": "s02-historia",
+   "from": 5356,
+   "duration": 161,
+   "narration": "Y yo no le di un frasco No le di ninguna pastilla Le di estos seis",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_008.png",
+     "asset_id": "testo6:s02-historia-m034:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m035",
+   "section_id": "s02-historia",
+   "from": 5517,
+   "duration": 125,
+   "narration": "movimientos y una sola orden que después le voy a explicar dormí Cuatro meses después volvió",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_014.mp4",
+     "asset_id": "testo6:s02-historia-m035:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m031",
+   "section_id": "s02-historia",
+   "from": 5642,
+   "duration": 50,
+   "narration": "Cuatro meses después volvió Y no era",
+   "transition": "iris",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "quote",
+     "family": "quote",
+     "transition_variant": "iris",
+     "kicker": "",
+     "title": "Me siento un fantasma de lo que era",
+     "sub": "Cuatro meses despues, la mano firme otra vez",
+     "attributed": true,
+     "author": "Anibal, 63 anos",
+     "role": "Volvio a los cuatro meses"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m036",
+   "section_id": "s02-historia",
+   "from": 5692,
+   "duration": 148,
+   "narration": "Y no era el análisis de sangre lo que le brillaba que también también había mejorado",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m037",
+   "section_id": "s02-historia",
+   "from": 5840,
+   "duration": 154,
+   "narration": "la testosterona en el papel Era la cara Se paraba distinto Me dio la mano para",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_015.mp4",
+     "asset_id": "testo6:s02-historia-m037:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m038",
+   "section_id": "s02-historia",
+   "from": 5994,
+   "duration": 186,
+   "narration": "saludarme y casi me la rompe riéndose como un chico Eso esa mano firme es de",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_009.png",
+     "asset_id": "testo6:s02-historia-m038:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m039",
+   "section_id": "s02-historia",
+   "from": 6180,
+   "duration": 137,
+   "narration": "lo que le estoy hablando No de vanidad no de sacarse una foto sin remera De",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_016.mp4",
+     "asset_id": "testo6:s02-historia-m039:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m040",
+   "section_id": "s02-historia",
+   "from": 6317,
+   "duration": 150,
+   "narration": "volver a sentirse el que uno era Y tiene sesenta y tres Así que si él",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m041",
+   "section_id": "s02-historia",
+   "from": 6467,
+   "duration": 119,
+   "narration": "pudo usted también Guárdese a Aníbal en la cabeza que lo vamos a volver a nombrar",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_017.mp4",
+     "asset_id": "testo6:s02-historia-m041:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s02-historia-m042",
+   "section_id": "s02-historia",
+   "from": 6586,
+   "duration": 253,
+   "narration": "Bueno Vamos a los ejercicios Y le pido una cosa no se salte el porqué El porqué es",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_010.png",
+     "asset_id": "testo6:s02-historia-m042:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m043",
+   "section_id": "s03-sentadilla",
+   "from": 6839,
+   "duration": 313,
+   "narration": "El primero es la sentadilla La sentadilla de toda la vida Agacharse y levantarse con",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_018.mp4",
+     "asset_id": "testo6:s03-sentadilla-m043:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m045",
+   "section_id": "s03-sentadilla",
+   "from": 7152,
+   "duration": 138,
+   "narration": "le voy a contestar mal hecha sí Bien hecha es lo que le cuida las",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m046",
+   "section_id": "s03-sentadilla",
+   "from": 7290,
+   "duration": 185,
+   "narration": "rodillas para los próximos treinta años Pero por qué la sentadilla y no no sé el",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_019.mp4",
+     "asset_id": "testo6:s03-sentadilla-m046:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m047",
+   "section_id": "s03-sentadilla",
+   "from": 7475,
+   "duration": 178,
+   "narration": "bíceps Por una razón hermosa casi de sentido común La testosterona sube más cuando usted",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_011.png",
+     "asset_id": "testo6:s03-sentadilla-m047:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m048",
+   "section_id": "s03-sentadilla",
+   "from": 7653,
+   "duration": 75,
+   "narration": "mueve mucho músculo a la vez Y no hay músculo más grande en su cuerpo",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_020.mp4",
+     "asset_id": "testo6:s03-sentadilla-m048:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m044",
+   "section_id": "s03-sentadilla",
+   "from": 7728,
+   "duration": 54,
+   "narration": "músculo más grande en su cuerpo que las piernas y los glúteos Cuando usted hace una sentadilla",
+   "transition": "none",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "chapter",
+     "family": "chapter",
+     "transition_variant": "none",
+     "kicker": "",
+     "title": "Ejercicio uno: la sentadilla",
+     "sub": "El musculo mas grande manda: piernas y gluteos"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m049",
+   "section_id": "s03-sentadilla",
+   "from": 7782,
+   "duration": 156,
+   "narration": "que las piernas y los glúteos Cuando usted hace una sentadilla pesada pone en juego la",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m050",
+   "section_id": "s03-sentadilla",
+   "from": 7938,
+   "duration": 153,
+   "narration": "mitad de su cuerpo de una sola vez Su cuerpo que no es tonto dice",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_012.png",
+     "asset_id": "testo6:s03-sentadilla-m050:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m051",
+   "section_id": "s03-sentadilla",
+   "from": 8091,
+   "duration": 185,
+   "narration": "acá hace falta reconstruir acá hace falta fuerza y suelta hormona para reparar El bíceps",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m052",
+   "section_id": "s03-sentadilla",
+   "from": 8276,
+   "duration": 141,
+   "narration": "en cambio es un musculito Usted puede hacer mil curls y su cuerpo apenas se",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m053",
+   "section_id": "s03-sentadilla",
+   "from": 8417,
+   "duration": 186,
+   "narration": "entera Se entiende la lógica Músculo grande respuesta grande No hace falta que sea con una",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_021.mp4",
+     "asset_id": "testo6:s03-sentadilla-m053:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m054",
+   "section_id": "s03-sentadilla",
+   "from": 8603,
+   "duration": 164,
+   "narration": "barra olímpica Empiece con su propio peso agarrado de una silla si hace falta Baje",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_013.png",
+     "asset_id": "testo6:s03-sentadilla-m054:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m055",
+   "section_id": "s03-sentadilla",
+   "from": 8767,
+   "duration": 173,
+   "narration": "como si se fuera a sentar y suba Diez doce Y cuando eso le resulte",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_022.mp4",
+     "asset_id": "testo6:s03-sentadilla-m055:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s03-sentadilla-m056",
+   "section_id": "s03-sentadilla",
+   "from": 8940,
+   "duration": 138,
+   "narration": "fácil agarre algo con peso y abrácelo contra el pecho Ahí ya está jugando en primera",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m057",
+   "section_id": "s04-bisagra",
+   "from": 9078,
+   "duration": 244,
+   "narration": "El segundo Y este para mí es el rey escondido la bisagra de cadera El",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_023.mp4",
+     "asset_id": "testo6:s04-bisagra-m057:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m057-x1",
+   "section_id": "s04-bisagra",
+   "from": 9322,
+   "duration": 244,
+   "narration": "El segundo Y este para mí es el rey escondido la bisagra de cadera El",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m057-x2",
+   "section_id": "s04-bisagra",
+   "from": 9566,
+   "duration": 244,
+   "narration": "El segundo Y este para mí es el rey escondido la bisagra de cadera El",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m057-x3",
+   "section_id": "s04-bisagra",
+   "from": 9810,
+   "duration": 247,
+   "narration": "El segundo Y este para mí es el rey escondido la bisagra de cadera El",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m062",
+   "section_id": "s04-bisagra",
+   "from": 10057,
+   "duration": 63,
+   "narration": "como un signo de pregunta y ahí sí se lastiman El movimiento correcto es otro la",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_025.mp4",
+     "asset_id": "testo6:s04-bisagra-m062:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m063",
+   "section_id": "s04-bisagra",
+   "from": 10120,
+   "duration": 171,
+   "narration": "espalda derecha firme y el que se dobla es la cadera Usted lleva la cola",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_015.png",
+     "asset_id": "testo6:s04-bisagra-m063:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m064",
+   "section_id": "s04-bisagra",
+   "from": 10291,
+   "duration": 142,
+   "narration": "para atrás como si quisiera tocar la pared de atrás con la cola y las rodillas",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_026.mp4",
+     "asset_id": "testo6:s04-bisagra-m064:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m065",
+   "section_id": "s04-bisagra",
+   "from": 10433,
+   "duration": 200,
+   "narration": "apenas se doblan Y sube apretando los glúteos Por qué es tan poderoso Porque trabaja",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m066",
+   "section_id": "s04-bisagra",
+   "from": 10633,
+   "duration": 141,
+   "narration": "toda la cadena de atrás desde la nuca hasta el talón y esos son un montón",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_027.mp4",
+     "asset_id": "testo6:s04-bisagra-m066:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m067",
+   "section_id": "s04-bisagra",
+   "from": 10774,
+   "duration": 170,
+   "narration": "de músculos grandes tirando juntos Y encima y esto casi nadie se lo dice le",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_016.png",
+     "asset_id": "testo6:s04-bisagra-m067:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m068",
+   "section_id": "s04-bisagra",
+   "from": 10944,
+   "duration": 24,
+   "narration": "arma un cinturón natural alrededor de la columna Un hombre de sesenta que sabe hacer una",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_028.mp4",
+     "asset_id": "testo6:s04-bisagra-m068:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m058",
+   "section_id": "s04-bisagra",
+   "from": 10968,
+   "duration": 47,
+   "narration": "cinturón natural alrededor de la columna Un hombre de sesenta que sabe hacer una bisagra de cadera",
+   "transition": "fold",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "chapter",
+     "family": "chapter",
+     "transition_variant": "fold",
+     "kicker": "",
+     "title": "Ejercicio dos: la bisagra de cadera",
+     "sub": "Toda la cadena de atras y un cinturon natural"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m060",
+   "section_id": "s04-bisagra",
+   "from": 11015,
+   "duration": 33,
+   "narration": "algo del piso Una bolsa de cemento un nieto un bidón de agua El problema es",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_024.mp4",
+     "asset_id": "testo6:s04-bisagra-m060:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m061",
+   "section_id": "s04-bisagra",
+   "from": 11048,
+   "duration": 57,
+   "narration": "que la mayoría de los hombres de nuestra edad lo hacen mal doblando la espalda",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m069",
+   "section_id": "s04-bisagra",
+   "from": 11105,
+   "duration": 198,
+   "narration": "bisagra de cadera no se lastima la espalda levantando una valija Ese es el regalo real",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m070",
+   "section_id": "s04-bisagra",
+   "from": 11303,
+   "duration": 64,
+   "narration": "Vamos con el tercero pero antes deje que le tire el hilo del que viene después porque",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_029.mp4",
+     "asset_id": "testo6:s04-bisagra-m070:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m059",
+   "section_id": "s04-bisagra",
+   "from": 11367,
+   "duration": 87,
+   "narration": "algo de levantador profesional Pero es el movimiento más humano que existe agacharse a levantar",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_014.png",
+     "asset_id": "testo6:s04-bisagra-m059:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s04-bisagra-m071",
+   "section_id": "s04-bisagra",
+   "from": 11454,
+   "duration": 177,
+   "narration": "cuarto es el que le va a devolver los hombros de cuando tenía treinta Ya llegamos",
+   "transition": "iris",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "hero",
+     "family": "hero",
+     "transition_variant": "iris",
+     "kicker": "",
+     "title": "Ya llegamos: el cuarto le devuelve los hombros",
+     "sub": "Los hombros de cuando tenia treinta"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m072",
+   "section_id": "s05-empuje",
+   "from": 11631,
+   "duration": 381,
+   "narration": "El tercero es el empuje por encima de la cabeza Levantar un peso desde los",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_017.png",
+     "asset_id": "testo6:s05-empuje-m072:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m074",
+   "section_id": "s05-empuje",
+   "from": 12012,
+   "duration": 102,
+   "narration": "me encanta de este Que es el ejercicio más honesto que hay No se puede hacer",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_030.mp4",
+     "asset_id": "testo6:s05-empuje-m074:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m075",
+   "section_id": "s05-empuje",
+   "from": 12114,
+   "duration": 143,
+   "narration": "trampa Usted no puede empujar algo por encima de su cabeza usando el envión de",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m076",
+   "section_id": "s05-empuje",
+   "from": 12257,
+   "duration": 152,
+   "narration": "la cintura sin que se note Le exige el hombro el brazo y toda la",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_018.png",
+     "asset_id": "testo6:s05-empuje-m076:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m077",
+   "section_id": "s05-empuje",
+   "from": 12409,
+   "duration": 155,
+   "narration": "faja del abdomen apretada para sostenerlo Y para un hombre de más de cuarenta esto tiene",
+   "transition": "lift",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m078",
+   "section_id": "s05-empuje",
+   "from": 12564,
+   "duration": 149,
+   "narration": "un premio muy concreto muy de la vida diaria es la fuerza de guardar la",
+   "transition": "fold",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m079",
+   "section_id": "s05-empuje",
+   "from": 12713,
+   "duration": 153,
+   "narration": "valija en el compartimento del avión de subir la caja al estante de arriba de",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_031.mp4",
+     "asset_id": "testo6:s05-empuje-m079:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m073",
+   "section_id": "s05-empuje",
+   "from": 12866,
+   "duration": 24,
+   "narration": "alzar al nieto y ponérselo sobre los hombros",
+   "transition": "fold",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "hero",
+     "family": "hero",
+     "transition_variant": "fold",
+     "kicker": "",
+     "title": "No es de musculo: es de dignidad",
+     "sub": "Guardar la valija, alzar al nieto sobre los hombros"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m080",
+   "section_id": "s05-empuje",
+   "from": 12890,
+   "duration": 136,
+   "narration": "alzar al nieto y ponérselo sobre los hombros El día que usted no puede hacer eso",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_019.png",
+     "asset_id": "testo6:s05-empuje-m080:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m081",
+   "section_id": "s05-empuje",
+   "from": 13026,
+   "duration": 153,
+   "narration": "se empieza a sentir viejo de verdad Así que este ejercicio en el fondo no",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_032.mp4",
+     "asset_id": "testo6:s05-empuje-m081:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s05-empuje-m082",
+   "section_id": "s05-empuje",
+   "from": 13179,
+   "duration": 236,
+   "narration": "es de músculo Es de dignidad Empiece liviano Dos botellas de agua si quiere Pero hágalo",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m083",
+   "section_id": "s06-tiron",
+   "from": 13415,
+   "duration": 299,
+   "narration": "El cuarto El que le prometí Los tirones Tirar de algo hacia usted o tirar",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_033.mp4",
+     "asset_id": "testo6:s06-tiron-m083:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m085",
+   "section_id": "s06-tiron",
+   "from": 13714,
+   "duration": 193,
+   "narration": "con los hombros para adelante encorvados sobre el teléfono sobre el volante sobre el escritorio Parecemos",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_020.png",
+     "asset_id": "testo6:s06-tiron-m085:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m086",
+   "section_id": "s06-tiron",
+   "from": 13907,
+   "duration": 154,
+   "narration": "todos un signo de pregunta caminando Y los músculos de la espalda los que tiran hacia",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_034.mp4",
+     "asset_id": "testo6:s06-tiron-m086:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m087",
+   "section_id": "s06-tiron",
+   "from": 14061,
+   "duration": 225,
+   "narration": "atrás están dormidos Muertos de risa Este ejercicio los despierta Y cuando esos músculos se despiertan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m088",
+   "section_id": "s06-tiron",
+   "from": 14286,
+   "duration": 59,
+   "narration": "pasa algo casi mágico usted se para derecho El pecho se abre La cabeza vuelve a",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_035.mp4",
+     "asset_id": "testo6:s06-tiron-m088:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m084",
+   "section_id": "s06-tiron",
+   "from": 14345,
+   "duration": 102,
+   "narration": "usted se para derecho El pecho",
+   "transition": "none",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "chapter",
+     "family": "chapter",
+     "transition_variant": "none",
+     "kicker": "",
+     "title": "Ejercicio cuatro: el tiron",
+     "sub": "Pararse derecho y abrir el pecho"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m089",
+   "section_id": "s06-tiron",
+   "from": 14447,
+   "duration": 129,
+   "narration": "su lugar arriba de los hombros Y le voy a confesar algo que la ciencia recién",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_021.png",
+     "asset_id": "testo6:s06-tiron-m089:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m090",
+   "section_id": "s06-tiron",
+   "from": 14576,
+   "duration": 171,
+   "narration": "está estudiando bien la postura le cambia la química Un hombre parado derecho con el pecho",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_036.mp4",
+     "asset_id": "testo6:s06-tiron-m090:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m091",
+   "section_id": "s06-tiron",
+   "from": 14747,
+   "duration": 188,
+   "narration": "abierto hasta respira distinto y esa señal de acá mando yo el cuerpo la escucha No",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m092",
+   "section_id": "s06-tiron",
+   "from": 14935,
+   "duration": 136,
+   "narration": "le prometo magia Pero la postura de un hombre fuerte y la hormona de un hombre",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_037.mp4",
+     "asset_id": "testo6:s06-tiron-m092:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m093",
+   "section_id": "s06-tiron",
+   "from": 15071,
+   "duration": 168,
+   "narration": "fuerte viajan juntas siempre Si no puede colgarse de una barra todavía no importa Tire de",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_022.png",
+     "asset_id": "testo6:s06-tiron-m093:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m094",
+   "section_id": "s06-tiron",
+   "from": 15239,
+   "duration": 175,
+   "narration": "una banda elástica o de una toalla enganchada en una puerta Lo que importa es apretar",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_038.mp4",
+     "asset_id": "testo6:s06-tiron-m094:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m095",
+   "section_id": "s06-tiron",
+   "from": 15414,
+   "duration": 132,
+   "narration": "los omóplatos juntarlos atrás como si quisiera sostener un lápiz en el medio de la espalda",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m096",
+   "section_id": "s06-tiron",
+   "from": 15546,
+   "duration": 281,
+   "narration": "Frené un segundo Porque llevamos cuatro y quiero que respire Sentadilla bisagra empuje tirón Se",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_039.mp4",
+     "asset_id": "testo6:s06-tiron-m096:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m097",
+   "section_id": "s06-tiron",
+   "from": 15827,
+   "duration": 93,
+   "narration": "ejercicio de espejo Ninguno es para mostrar Todos son movimientos de la vida real",
+   "transition": "lift",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "checklist",
+     "family": "checklist",
+     "transition_variant": "lift",
+     "kicker": "",
+     "title": "Cuatro movimientos de la vida real",
+     "sub": "Ninguno es un ejercicio de espejo",
+     "items": [
+      "Agacharse",
+      "Levantar del piso",
+      "Poner arriba",
+      "Tirar hacia usted"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m098",
+   "section_id": "s06-tiron",
+   "from": 15920,
+   "duration": 198,
+   "narration": "son movimientos de la vida real agacharse levantar del piso poner arriba tirar hacia usted Su",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_023.png",
+     "asset_id": "testo6:s06-tiron-m098:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m099",
+   "section_id": "s06-tiron",
+   "from": 16118,
+   "duration": 151,
+   "narration": "cuerpo fue diseñado para hacer estas cuatro cosas Dejó de hacerlas y por eso se",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_040.mp4",
+     "asset_id": "testo6:s06-tiron-m099:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s06-tiron-m100",
+   "section_id": "s06-tiron",
+   "from": 16269,
+   "duration": 170,
+   "narration": "apagó Volvés a hacerlas y se prende de nuevo Así de simple y así de profundo",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m101",
+   "section_id": "s07-sprint",
+   "from": 16439,
+   "duration": 247,
+   "narration": "El quinto rompe el molde porque este no es de fuerza Este es de velocidad",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_024.png",
+     "asset_id": "testo6:s07-sprint-m101:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m101-x1",
+   "section_id": "s07-sprint",
+   "from": 16686,
+   "duration": 248,
+   "narration": "El quinto rompe el molde porque este no es de fuerza Este es de velocidad",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m104",
+   "section_id": "s07-sprint",
+   "from": 16934,
+   "duration": 122,
+   "narration": "nuestra edad que quiere ponerse en forma es salir a trotar cuarenta minutos todos los",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m105",
+   "section_id": "s07-sprint",
+   "from": 17056,
+   "duration": 157,
+   "narration": "días a un ritmo tristón ni caminando ni corriendo Y eso le voy a ser",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_041.mp4",
+     "asset_id": "testo6:s07-sprint-m105:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m106",
+   "section_id": "s07-sprint",
+   "from": 17213,
+   "duration": 188,
+   "narration": "franco para la testosterona no sirve casi nada Es más en exceso hasta puede jugarle en",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_025.png",
+     "asset_id": "testo6:s07-sprint-m106:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m107",
+   "section_id": "s07-sprint",
+   "from": 17401,
+   "duration": 148,
+   "narration": "contra y en un ratito le explico por qué Lo que sí funciona es lo",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_042.mp4",
+     "asset_id": "testo6:s07-sprint-m107:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m108",
+   "section_id": "s07-sprint",
+   "from": 17549,
+   "duration": 124,
+   "narration": "contrario correr como corría de chico cuando lo perseguía el perro del vecino A todo",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m109",
+   "section_id": "s07-sprint",
+   "from": 17673,
+   "duration": 154,
+   "narration": "lo que da quince veinte segundos y después parar y recuperar el aire Y de",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_043.mp4",
+     "asset_id": "testo6:s07-sprint-m109:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m110",
+   "section_id": "s07-sprint",
+   "from": 17827,
+   "duration": 49,
+   "narration": "nuevo Cuatro cinco veces Y listo Se terminó en diez minutos Ese esfuerzo corto y",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_026.png",
+     "asset_id": "testo6:s07-sprint-m110:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m102",
+   "section_id": "s07-sprint",
+   "from": 17876,
+   "duration": 141,
+   "narration": "cinco veces Y listo Se terminó en diez minutos Ese esfuerzo corto",
+   "transition": "whip",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "chapter",
+     "family": "chapter",
+     "transition_variant": "whip",
+     "kicker": "",
+     "title": "Ejercicio cinco: los sprints",
+     "sub": "Corto y feroz: diez minutos, no cuarenta"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m111",
+   "section_id": "s07-sprint",
+   "from": 18017,
+   "duration": 24,
+   "narration": "brutal es una señal potentísima el cuerpo entiende que hay que ser explosivo que hay",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_044.mp4",
+     "asset_id": "testo6:s07-sprint-m111:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m103",
+   "section_id": "s07-sprint",
+   "from": 18041,
+   "duration": 133,
+   "narration": "es el que casi todos hacen al revés Mire el error clásico del hombre de",
+   "transition": "lift",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m112",
+   "section_id": "s07-sprint",
+   "from": 18174,
+   "duration": 159,
+   "narration": "que ser joven y responde con hormona No hace falta que sea corriendo ojo Puede ser",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m113",
+   "section_id": "s07-sprint",
+   "from": 18333,
+   "duration": 201,
+   "narration": "en una bicicleta subiendo una cuesta pedaleando como un condenado veinte segundos La clave es",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_045.mp4",
+     "asset_id": "testo6:s07-sprint-m113:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m114",
+   "section_id": "s07-sprint",
+   "from": 18534,
+   "duration": 176,
+   "narration": "corto intenso y con ganas de verdad Ahora la advertencia y esta va en serio",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_027.png",
+     "asset_id": "testo6:s07-sprint-m114:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m115",
+   "section_id": "s07-sprint",
+   "from": 18710,
+   "duration": 136,
+   "narration": "si usted tiene el corazón delicado presión alta sin controlar o hace años que no",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_046.mp4",
+     "asset_id": "testo6:s07-sprint-m115:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m116",
+   "section_id": "s07-sprint",
+   "from": 18846,
+   "duration": 153,
+   "narration": "hace nada no salga a esprintar mañana como un loco Primero el médico Primero una",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s07-sprint-m117",
+   "section_id": "s07-sprint",
+   "from": 18999,
+   "duration": 184,
+   "narration": "revisión Esto se construye de a poco La intensidad se la gana no se la roba",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_047.mp4",
+     "asset_id": "testo6:s07-sprint-m117:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m118",
+   "section_id": "s08-mecanismo",
+   "from": 19183,
+   "duration": 250,
+   "narration": "Y déjeme agregarle el porqué profundo del sprint porque tiene que ver con la panza",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_028.png",
+     "asset_id": "testo6:s08-mecanismo-m118:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m118-x1",
+   "section_id": "s08-mecanismo",
+   "from": 19433,
+   "duration": 250,
+   "narration": "Y déjeme agregarle el porqué profundo del sprint porque tiene que ver con la panza",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m118-x2",
+   "section_id": "s08-mecanismo",
+   "from": 19683,
+   "duration": 250,
+   "narration": "Y déjeme agregarle el porqué profundo del sprint porque tiene que ver con la panza",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m118-x3",
+   "section_id": "s08-mecanismo",
+   "from": 19933,
+   "duration": 250,
+   "narration": "Y déjeme agregarle el porqué profundo del sprint porque tiene que ver con la panza",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m118-x4",
+   "section_id": "s08-mecanismo",
+   "from": 20183,
+   "duration": 250,
+   "narration": "Y déjeme agregarle el porqué profundo del sprint porque tiene que ver con la panza",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m118-x5",
+   "section_id": "s08-mecanismo",
+   "from": 20433,
+   "duration": 250,
+   "narration": "Y déjeme agregarle el porqué profundo del sprint porque tiene que ver con la panza",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m118-x6",
+   "section_id": "s08-mecanismo",
+   "from": 20683,
+   "duration": 255,
+   "narration": "Y déjeme agregarle el porqué profundo del sprint porque tiene que ver con la panza",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m129",
+   "section_id": "s08-mecanismo",
+   "from": 20938,
+   "duration": 126,
+   "narration": "Y sabe qué rompe esa bola de nieve mejor que el trote largo y aburrido Justamente",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_051.mp4",
+     "asset_id": "testo6:s08-mecanismo-m129:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m130",
+   "section_id": "s08-mecanismo",
+   "from": 21064,
+   "duration": 181,
+   "narration": "esto el esfuerzo corto y explosivo y el músculo que usted construye con los otros cinco",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_031.png",
+     "asset_id": "testo6:s08-mecanismo-m130:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m131",
+   "section_id": "s08-mecanismo",
+   "from": 21245,
+   "duration": 54,
+   "narration": "ejercicios Porque el músculo es un horno Un músculo grande le quema grasa incluso mientras usted",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_052.mp4",
+     "asset_id": "testo6:s08-mecanismo-m131:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m120",
+   "section_id": "s08-mecanismo",
+   "from": 21299,
+   "duration": 123,
+   "narration": "la barriga no es un depósito muerto no es una bolsa colgando ahí sin hacer nada",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_048.mp4",
+     "asset_id": "testo6:s08-mecanismo-m120:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m132",
+   "section_id": "s08-mecanismo",
+   "from": 21422,
+   "duration": 156,
+   "narration": "duerme sin hacer nada Por eso le insisto tanto con que esto está todo conectado No",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m128",
+   "section_id": "s08-mecanismo",
+   "from": 21578,
+   "duration": 24,
+   "narration": "golpe pasados los cuarenta y cinco no es una cosa son dos cosas empujándose entre sí",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m133",
+   "section_id": "s08-mecanismo",
+   "from": 21602,
+   "duration": 120,
+   "narration": "son seis ejercicios sueltos que hago porque el doctor me dijo Es un sistema Una vez",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_053.mp4",
+     "asset_id": "testo6:s08-mecanismo-m133:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m134",
+   "section_id": "s08-mecanismo",
+   "from": 21722,
+   "duration": 24,
+   "narration": "que arranca se empuja solo para arriba más músculo menos panza más testosterona más ganas de",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_032.png",
+     "asset_id": "testo6:s08-mecanismo-m134:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m123",
+   "section_id": "s08-mecanismo",
+   "from": 21746,
+   "duration": 24,
+   "narration": "Así tal cual se lo digo Cuanta más panza tiene un hombre más se le escapa",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_029.png",
+     "asset_id": "testo6:s08-mecanismo-m123:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m127",
+   "section_id": "s08-mecanismo",
+   "from": 21770,
+   "duration": 63,
+   "narration": "para abajo cada vez más rápido Por eso tantos hombres se sienten que se apagan de",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m119",
+   "section_id": "s08-mecanismo",
+   "from": 21833,
+   "duration": 25,
+   "narration": "panza más testosterona más ganas de moverse más músculo otra vez La misma bola de nieve",
+   "transition": "whip",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "mechanism",
+     "family": "mechanism",
+     "transition_variant": "whip",
+     "kicker": "",
+     "title": "La panza convierte testosterona en estrogeno",
+     "sub": "Rompa la bola de nieve con musculo y esfuerzo",
+     "nodes": [
+      "Grasa abdominal",
+      "Convierte a estrogeno",
+      "Menos testosterona",
+      "El musculo lo revierte"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m126",
+   "section_id": "s08-mecanismo",
+   "from": 21858,
+   "duration": 24,
+   "narration": "la cintura y esa grasa le baja todavía más la testosterona Es una bola de nieve",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_030.png",
+     "asset_id": "testo6:s08-mecanismo-m126:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m124",
+   "section_id": "s08-mecanismo",
+   "from": 21882,
+   "duration": 24,
+   "narration": "la testosterona por ese agujero todos los días sin que se dé cuenta Y ahí está",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_050.mp4",
+     "asset_id": "testo6:s08-mecanismo-m124:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m125",
+   "section_id": "s08-mecanismo",
+   "from": 21906,
+   "duration": 24,
+   "narration": "la trampa fea de nuestra edad baja la testosterona se le empieza a juntar grasa en",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m135",
+   "section_id": "s08-mecanismo",
+   "from": 21930,
+   "duration": 128,
+   "narration": "moverse más músculo otra vez La misma bola de nieve pero rodando para el otro lado",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_054.mp4",
+     "asset_id": "testo6:s08-mecanismo-m135:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m122",
+   "section_id": "s08-mecanismo",
+   "from": 22058,
+   "duration": 24,
+   "narration": "su testosterona la que tanto le cuesta producir y la convierte en hormona femenina En estrógeno",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_049.mp4",
+     "asset_id": "testo6:s08-mecanismo-m122:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s08-mecanismo-m121",
+   "section_id": "s08-mecanismo",
+   "from": 22082,
+   "duration": 24,
+   "narration": "Es una fábrica Una fábrica química que trabaja las veinticuatro horas Y sabe qué fabrica Agarra",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m136",
+   "section_id": "s09-acarreo",
+   "from": 22106,
+   "duration": 244,
+   "narration": "Y llegamos al sexto El que le dije que casi nadie hace Y es tan",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m136-x1",
+   "section_id": "s09-acarreo",
+   "from": 22350,
+   "duration": 244,
+   "narration": "Y llegamos al sexto El que le dije que casi nadie hace Y es tan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m136-x2",
+   "section_id": "s09-acarreo",
+   "from": 22594,
+   "duration": 244,
+   "narration": "Y llegamos al sexto El que le dije que casi nadie hace Y es tan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m136-x3",
+   "section_id": "s09-acarreo",
+   "from": 22838,
+   "duration": 244,
+   "narration": "Y llegamos al sexto El que le dije que casi nadie hace Y es tan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m136-x4",
+   "section_id": "s09-acarreo",
+   "from": 23082,
+   "duration": 247,
+   "narration": "Y llegamos al sexto El que le dije que casi nadie hace Y es tan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m143",
+   "section_id": "s09-acarreo",
+   "from": 23329,
+   "duration": 164,
+   "narration": "todo la mano el antebrazo el hombro la faja del abdomen para no irse de costado",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_034.png",
+     "asset_id": "testo6:s09-acarreo-m143:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m144",
+   "section_id": "s09-acarreo",
+   "from": 23493,
+   "duration": 231,
+   "narration": "las piernas la espalda Todo junto sosteniendo latido a latido paso a paso Y hay",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_058.mp4",
+     "asset_id": "testo6:s09-acarreo-m144:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m145",
+   "section_id": "s09-acarreo",
+   "from": 23724,
+   "duration": 121,
+   "narration": "algo más algo que a los hombres mayores les cambia la vida la fuerza de agarre",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m142",
+   "section_id": "s09-acarreo",
+   "from": 23845,
+   "duration": 24,
+   "narration": "que la vida cómoda nos sacó Cuando usted camina cargando peso se le tensa absolutamente",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_057.mp4",
+     "asset_id": "testo6:s09-acarreo-m142:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m146",
+   "section_id": "s09-acarreo",
+   "from": 23869,
+   "duration": 85,
+   "narration": "La fuerza de la mano Sabía que la fuerza con la que usted aprieta la",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_059.mp4",
+     "asset_id": "testo6:s09-acarreo-m146:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m147",
+   "section_id": "s09-acarreo",
+   "from": 23954,
+   "duration": 153,
+   "narration": "mano es uno de los mejores espejos de cuánto le queda de vida sana por delante",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_035.png",
+     "asset_id": "testo6:s09-acarreo-m147:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m148",
+   "section_id": "s09-acarreo",
+   "from": 24107,
+   "duration": 77,
+   "narration": "No lo digo yo por decir está medido la fuerza de agarre predice salud a",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_060.mp4",
+     "asset_id": "testo6:s09-acarreo-m148:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m137",
+   "section_id": "s09-acarreo",
+   "from": 24184,
+   "duration": 55,
+   "narration": "fuerza de agarre predice salud a futuro mejor que casi cualquier otra cosa simple Y este ejercicio",
+   "transition": "lift",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "chapter",
+     "family": "chapter",
+     "transition_variant": "lift",
+     "kicker": "",
+     "title": "Ejercicio seis: el acarreo",
+     "sub": "La fuerza de agarre predice su salud"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m149",
+   "section_id": "s09-acarreo",
+   "from": 24239,
+   "duration": 82,
+   "narration": "futuro mejor que casi cualquier otra cosa simple Y este ejercicio la construye como ningún otro",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m139",
+   "section_id": "s09-acarreo",
+   "from": 24321,
+   "duration": 32,
+   "narration": "Otros cuarenta La gente lo mira y dice eso es un ejercicio Doctor eso es ir",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_033.png",
+     "asset_id": "testo6:s09-acarreo-m139:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m140",
+   "section_id": "s09-acarreo",
+   "from": 24353,
+   "duration": 79,
+   "narration": "a hacer las compras Exacto Por eso funciona Es el ejercicio más natural que existe",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_056.mp4",
+     "asset_id": "testo6:s09-acarreo-m140:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m150",
+   "section_id": "s09-acarreo",
+   "from": 24432,
+   "duration": 150,
+   "narration": "Por eso es mi favorito Porque es viejo es humilde no impresiona a nadie y",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_036.png",
+     "asset_id": "testo6:s09-acarreo-m150:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m138",
+   "section_id": "s09-acarreo",
+   "from": 24582,
+   "duration": 24,
+   "narration": "cada mano o una sola cosa bien pesada pararse derecho y caminar Cuarenta pasos Descansar",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_055.mp4",
+     "asset_id": "testo6:s09-acarreo-m138:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m151",
+   "section_id": "s09-acarreo",
+   "from": 24606,
+   "duration": 117,
+   "narration": "lo hace fuerte de una manera que se nota cuando le da la mano a alguien",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m141",
+   "section_id": "s09-acarreo",
+   "from": 24723,
+   "duration": 26,
+   "narration": "el que el ser humano hizo durante cientos de miles de años todos los días y",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m152",
+   "section_id": "s09-acarreo",
+   "from": 24749,
+   "duration": 43,
+   "narration": "Bueno Ahí tiene los seis Y ahora déjeme ser el médico honesto que le prometí ser porque",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m153",
+   "section_id": "s09-acarreo",
+   "from": 24792,
+   "duration": 263,
+   "narration": "ahora déjeme ser el médico honesto que le prometí ser porque le debo la parte incómoda",
+   "transition": "fold",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "lower",
+     "family": "lower",
+     "transition_variant": "fold",
+     "kicker": "",
+     "title": "Ahora, la parte incomoda pero honesta",
+     "sub": "El medico que prometio decir la verdad",
+     "author": "Dr. Federer",
+     "role": "El medico que prometio decir la verdad"
+    }
+   ]
+  },
+  {
+   "id": "s09-acarreo-m154",
+   "section_id": "s09-acarreo",
+   "from": 25055,
+   "duration": 153,
+   "narration": "el error del que le hablé al principio Se acuerda del dato del sueño Ahí está la trampa",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_061.mp4",
+     "asset_id": "testo6:s09-acarreo-m154:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m155",
+   "section_id": "s10-error",
+   "from": 25208,
+   "duration": 233,
+   "narration": "Porque acá viene lo que arruina al noventa por ciento de los hombres que empiezan",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_037.png",
+     "asset_id": "testo6:s10-error-m155:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m155-x1",
+   "section_id": "s10-error",
+   "from": 25441,
+   "duration": 233,
+   "narration": "Porque acá viene lo que arruina al noventa por ciento de los hombres que empiezan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m155-x2",
+   "section_id": "s10-error",
+   "from": 25674,
+   "duration": 233,
+   "narration": "Porque acá viene lo que arruina al noventa por ciento de los hombres que empiezan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m155-x3",
+   "section_id": "s10-error",
+   "from": 25907,
+   "duration": 234,
+   "narration": "Porque acá viene lo que arruina al noventa por ciento de los hombres que empiezan",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m160",
+   "section_id": "s10-error",
+   "from": 26141,
+   "duration": 24,
+   "narration": "meses matándose está peor que antes Cansado sin ánimo sin resultados Y acá está la",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_038.png",
+     "asset_id": "testo6:s10-error-m160:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m161",
+   "section_id": "s10-error",
+   "from": 26165,
+   "duration": 177,
+   "narration": "verdad que nadie le cuenta la verdad contraintuitiva de todo esto la testosterona no se fabrica",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_064.mp4",
+     "asset_id": "testo6:s10-error-m161:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m162",
+   "section_id": "s10-error",
+   "from": 26342,
+   "duration": 193,
+   "narration": "cuando usted entrena Se fabrica cuando usted descansa El ejercicio es solamente la señal el pedido",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m163",
+   "section_id": "s10-error",
+   "from": 26535,
+   "duration": 184,
+   "narration": "La hormona se construye después mientras usted duerme mientras se recupera mientras el cuerpo repara",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_065.mp4",
+     "asset_id": "testo6:s10-error-m163:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m164",
+   "section_id": "s10-error",
+   "from": 26719,
+   "duration": 161,
+   "narration": "en silencio El entrenamiento sin descanso es un pedido que nunca se cobra Es firmar cheques",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_039.png",
+     "asset_id": "testo6:s10-error-m164:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m165",
+   "section_id": "s10-error",
+   "from": 26880,
+   "duration": 65,
+   "narration": "sin fondo Y el estrés crónico el dormir poco el vivir a las corridas sueltan otra",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_066.mp4",
+     "asset_id": "testo6:s10-error-m165:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m157",
+   "section_id": "s10-error",
+   "from": 26945,
+   "duration": 36,
+   "narration": "de ganas Es el hombre que se entusiasma que va todos los días que entrena",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_062.mp4",
+     "asset_id": "testo6:s10-error-m157:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m158",
+   "section_id": "s10-error",
+   "from": 26981,
+   "duration": 64,
+   "narration": "hasta reventar que suma el trote largo arriba de las pesas que duerme cinco horas porque",
+   "transition": "fold",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m166",
+   "section_id": "s10-error",
+   "from": 27045,
+   "duration": 24,
+   "narration": "hormona el cortisol que es la enemiga directa de la testosterona Son como un subibaja",
+   "transition": "fold",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m156",
+   "section_id": "s10-error",
+   "from": 27069,
+   "duration": 146,
+   "narration": "cortisol que es la enemiga directa de la testosterona Son como un subibaja",
+   "transition": "iris",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "mechanism",
+     "family": "mechanism",
+     "transition_variant": "iris",
+     "kicker": "",
+     "title": "Cortisol contra testosterona: un subibaja",
+     "sub": "El estres y el poco sueno ganan la pulseada",
+     "nodes": [
+      "Estres cronico",
+      "Poco sueno",
+      "Sube el cortisol",
+      "Baja la testosterona"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m167",
+   "section_id": "s10-error",
+   "from": 27215,
+   "duration": 39,
+   "narration": "cuando una sube la otra baja Así que el que entrena como un animal pero duerme",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_067.mp4",
+     "asset_id": "testo6:s10-error-m167:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m159",
+   "section_id": "s10-error",
+   "from": 27254,
+   "duration": 99,
+   "narration": "no tiene tiempo que vive apurado estresado corriendo y no entiende por qué después de dos",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_063.mp4",
+     "asset_id": "testo6:s10-error-m159:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m168",
+   "section_id": "s10-error",
+   "from": 27353,
+   "duration": 202,
+   "narration": "mal y vive estresado está empujando el subibaja para el lado equivocado Trabaja durísimo para nada",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_040.png",
+     "asset_id": "testo6:s10-error-m168:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m169",
+   "section_id": "s10-error",
+   "from": 27555,
+   "duration": 322,
+   "narration": "Por eso el remedio de verdad el completo no son seis ejercicios Son seis ejercicios",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_068.mp4",
+     "asset_id": "testo6:s10-error-m169:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m170",
+   "section_id": "s10-error",
+   "from": 27877,
+   "duration": 62,
+   "narration": "veces Tres días a la semana",
+   "transition": "lift",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "stat",
+     "family": "stat",
+     "transition_variant": "lift",
+     "kicker": "",
+     "title": "Tres dias a la semana alcanzan",
+     "sub": "La testosterona se fabrica de noche, al descansar",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m171",
+   "section_id": "s10-error",
+   "from": 27939,
+   "duration": 179,
+   "narration": "alcanza y sobra Deje días entre medio para que el cuerpo cobre el cheque Y",
+   "transition": "iris",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m172",
+   "section_id": "s10-error",
+   "from": 28118,
+   "duration": 192,
+   "narration": "duerma Duerma como si fuera parte del entrenamiento porque lo es Siete ocho horas La",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_069.mp4",
+     "asset_id": "testo6:s10-error-m172:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m173",
+   "section_id": "s10-error",
+   "from": 28310,
+   "duration": 151,
+   "narration": "testosterona se hace de noche en la cama no en el gimnasio El que entendió",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_041.png",
+     "asset_id": "testo6:s10-error-m173:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s10-error-m174",
+   "section_id": "s10-error",
+   "from": 28461,
+   "duration": 146,
+   "narration": "esto ya ganó El que no va a seguir corriendo en una rueda para siempre",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_070.mp4",
+     "asset_id": "testo6:s10-error-m174:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m175",
+   "section_id": "s11-enemigo",
+   "from": 28607,
+   "duration": 373,
+   "narration": "Y déjeme decirle una cosa más con una bronca sana porque me sale de adentro",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m177",
+   "section_id": "s11-enemigo",
+   "from": 28980,
+   "duration": 252,
+   "narration": "la televisión de frasquitos de polvos de geles de testosterona de pastillas mágicas de setenta ochenta",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_042.png",
+     "asset_id": "testo6:s11-enemigo-m177:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m178",
+   "section_id": "s11-enemigo",
+   "from": 29232,
+   "duration": 205,
+   "narration": "dólares el pote Por qué eso sí y esto no Se lo contesto derecho sin",
+   "transition": "fold",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m179",
+   "section_id": "s11-enemigo",
+   "from": 29437,
+   "duration": 154,
+   "narration": "vueltas porque esto que le acabo de dar es gratis No se puede vender Nadie",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m176",
+   "section_id": "s11-enemigo",
+   "from": 29591,
+   "duration": 24,
+   "narration": "Nadie se hace rico con que usted",
+   "transition": "iris",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "quote",
+     "family": "quote",
+     "transition_variant": "iris",
+     "kicker": "",
+     "title": "El musculo es suyo; el frasco es una cuota",
+     "sub": "Nadie se hace rico con que usted descanse",
+     "attributed": true,
+     "author": "Dr. Federer",
+     "role": "El argumento del canal"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m180",
+   "section_id": "s11-enemigo",
+   "from": 29615,
+   "duration": 153,
+   "narration": "se hace rico con que usted se agache levante algo del piso y duerma ocho horas",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_071.mp4",
+     "asset_id": "testo6:s11-enemigo-m180:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m181",
+   "section_id": "s11-enemigo",
+   "from": 29768,
+   "duration": 160,
+   "narration": "No hay negocio ahí El frasco en cambio es una suscripción para toda la vida",
+   "transition": "none",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_043.png",
+     "asset_id": "testo6:s11-enemigo-m181:presenter",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m182",
+   "section_id": "s11-enemigo",
+   "from": 29928,
+   "duration": 142,
+   "narration": "lo compra este mes y el que viene y el otro y no para nunca porque",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_072.mp4",
+     "asset_id": "testo6:s11-enemigo-m182:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m183",
+   "section_id": "s11-enemigo",
+   "from": 30070,
+   "duration": 150,
+   "narration": "nunca le arregla la causa solo le tapa el síntoma un ratito El músculo que",
+   "transition": "lift",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m184",
+   "section_id": "s11-enemigo",
+   "from": 30220,
+   "duration": 204,
+   "narration": "usted construye con sus propias manos en cambio es suyo No paga cuota No se",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_073.mp4",
+     "asset_id": "testo6:s11-enemigo-m184:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m185",
+   "section_id": "s11-enemigo",
+   "from": 30424,
+   "duration": 142,
+   "narration": "vence No depende de que la farmacia lo tenga en stock Por eso esto no se",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_044.png",
+     "asset_id": "testo6:s11-enemigo-m185:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m186",
+   "section_id": "s11-enemigo",
+   "from": 30566,
+   "duration": 104,
+   "narration": "lo van a poner en un aviso caro en la mitad de un partido Se",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_074.mp4",
+     "asset_id": "testo6:s11-enemigo-m186:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m187",
+   "section_id": "s11-enemigo",
+   "from": 30670,
+   "duration": 150,
+   "narration": "lo tiene que contar alguien que no le quiere vender el frasco Y acá estoy yo",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m188",
+   "section_id": "s11-enemigo",
+   "from": 30820,
+   "duration": 197,
+   "narration": "Ah y una última cosa sobre esto para los honestos porque también le debo",
+   "transition": "whip",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_075.mp4",
+     "asset_id": "testo6:s11-enemigo-m188:clean_stock",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m189",
+   "section_id": "s11-enemigo",
+   "from": 31017,
+   "duration": 94,
+   "narration": "esto reemplaza a un médico Si usted siente que algo anda muy mal cansancio",
+   "transition": "none",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "lower",
+     "family": "lower",
+     "transition_variant": "none",
+     "kicker": "",
+     "title": "Esto no reemplaza a un medico",
+     "sub": "Cansancio o animo bajo: hagase un analisis",
+     "author": "Dr. Federer",
+     "role": "Cansancio o animo bajo: hagase un analisis"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m190",
+   "section_id": "s11-enemigo",
+   "from": 31111,
+   "duration": 170,
+   "narration": "anda muy mal cansancio que no se va ánimo por el piso deseo apagado por",
+   "transition": "lift",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_045.png",
+     "asset_id": "testo6:s11-enemigo-m190:presenter",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m191",
+   "section_id": "s11-enemigo",
+   "from": 31281,
+   "duration": 206,
+   "narration": "meses vaya hágase un análisis de sangre mídase la testosterona de verdad Puede que",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_076.mp4",
+     "asset_id": "testo6:s11-enemigo-m191:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m192",
+   "section_id": "s11-enemigo",
+   "from": 31487,
+   "duration": 112,
+   "narration": "necesite otra cosa y está bien Esto que le enseñé es la base sobre",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s11-enemigo-m193",
+   "section_id": "s11-enemigo",
+   "from": 31599,
+   "duration": 185,
+   "narration": "la que todo lo demás funciona mejor No es magia es cimiento Pero qué cimiento",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_077.mp4",
+     "asset_id": "testo6:s11-enemigo-m193:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m194",
+   "section_id": "s12-cierre",
+   "from": 31784,
+   "duration": 223,
+   "narration": "Entonces hagamos el repaso así se lo lleva grabado Esta semana arranque simple Uno la",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_046.png",
+     "asset_id": "testo6:s12-cierre-m194:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m194-x1",
+   "section_id": "s12-cierre",
+   "from": 32007,
+   "duration": 223,
+   "narration": "Entonces hagamos el repaso así se lo lleva grabado Esta semana arranque simple Uno la",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m196",
+   "section_id": "s12-cierre",
+   "from": 32230,
+   "duration": 145,
+   "narration": "piso con la espalda derecha y la cola para atrás Tres el empuje arriba de",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_078.mp4",
+     "asset_id": "testo6:s12-cierre-m196:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m197",
+   "section_id": "s12-cierre",
+   "from": 32375,
+   "duration": 196,
+   "narration": "la cabeza la dignidad de alcanzar el estante de arriba Cuatro el tirón para pararse derecho",
+   "transition": "lift",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m198",
+   "section_id": "s12-cierre",
+   "from": 32571,
+   "duration": 212,
+   "narration": "y abrir el pecho Cinco el sprint corto y feroz diez minutos no cuarenta de",
+   "transition": "fold",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_079.mp4",
+     "asset_id": "testo6:s12-cierre-m198:clean_stock",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m199",
+   "section_id": "s12-cierre",
+   "from": 32783,
+   "duration": 204,
+   "narration": "trote triste Y seis mi favorito el acarreo cargar y caminar como quien vuelve del mercado",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_047.png",
+     "asset_id": "testo6:s12-cierre-m199:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m200",
+   "section_id": "s12-cierre",
+   "from": 32987,
+   "duration": 30,
+   "narration": "Y por encima de los seis la regla de oro entrene fuerte descanse en serio",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_080.mp4",
+     "asset_id": "testo6:s12-cierre-m200:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m195",
+   "section_id": "s12-cierre",
+   "from": 33017,
+   "duration": 141,
+   "narration": "seis la regla de oro entrene fuerte descanse en serio duerma",
+   "transition": "none",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "checklist",
+     "family": "checklist",
+     "transition_variant": "none",
+     "kicker": "",
+     "title": "El repaso: los seis, en orden",
+     "sub": "Entrene fuerte, descanse en serio, duerma",
+     "items": [
+      "Sentadilla y bisagra",
+      "Empuje y tiron",
+      "Sprint y acarreo",
+      "Tres dias, mucho descanso"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m201",
+   "section_id": "s12-cierre",
+   "from": 33158,
+   "duration": 171,
+   "narration": "duerma como un rey Tres días de trabajo y el resto dejar que el cuerpo cobre",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m202",
+   "section_id": "s12-cierre",
+   "from": 33329,
+   "duration": 189,
+   "narration": "Empiece por uno Uno solo esta semana Elija el que más le gustó mientras me escuchaba",
+   "transition": "whip",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_048.png",
+     "asset_id": "testo6:s12-cierre-m202:presenter",
+     "transition_variant": "whip"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m203",
+   "section_id": "s12-cierre",
+   "from": 33518,
+   "duration": 175,
+   "narration": "y hágalo tres veces antes del domingo No los seis Uno El hombre que empieza por",
+   "transition": "lift",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m204",
+   "section_id": "s12-cierre",
+   "from": 33693,
+   "duration": 177,
+   "narration": "uno sigue El que quiere empezar por seis abandona el martes Y le tengo curiosidad de",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m205",
+   "section_id": "s12-cierre",
+   "from": 33870,
+   "duration": 173,
+   "narration": "verdad cuénteme ahí abajo en los comentarios cuántos años tiene y cuál va a ser su",
+   "transition": "iris",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_081.mp4",
+     "asset_id": "testo6:s12-cierre-m205:clean_stock",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m206",
+   "section_id": "s12-cierre",
+   "from": 34043,
+   "duration": 195,
+   "narration": "ejercicio Los leo todos uno por uno no sabe cómo me gusta ver a un hombre decidiéndose",
+   "transition": "fold",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_049.png",
+     "asset_id": "testo6:s12-cierre-m206:presenter",
+     "transition_variant": "fold"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m207",
+   "section_id": "s12-cierre",
+   "from": 34238,
+   "duration": 225,
+   "narration": "Y si de verdad quiere hacer esto bien sin lastimarse y sin adivinar le dejé",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_082.mp4",
+     "asset_id": "testo6:s12-cierre-m207:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m208",
+   "section_id": "s12-cierre",
+   "from": 34463,
+   "duration": 90,
+   "narration": "descripción tiene la rutina completa de estos seis ejercicios ordenada semana",
+   "transition": "whip",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "cta",
+     "family": "cta",
+     "transition_variant": "whip",
+     "kicker": "",
+     "title": "La rutina completa esta en la descripcion",
+     "sub": "Semana por semana, lista para imprimir"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m209",
+   "section_id": "s12-cierre",
+   "from": 34553,
+   "duration": 210,
+   "narration": "ejercicios ordenada semana por semana con cuántas veces cuánto descanso y cómo hacer cada movimiento",
+   "transition": "none",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m210",
+   "section_id": "s12-cierre",
+   "from": 34763,
+   "duration": 165,
+   "narration": "sin arriesgar la espalda ni las rodillas Se la dejé lista para imprimir y pegar",
+   "transition": "lift",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_083.mp4",
+     "asset_id": "testo6:s12-cierre-m210:clean_stock",
+     "transition_variant": "lift"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m211",
+   "section_id": "s12-cierre",
+   "from": 34928,
+   "duration": 154,
+   "narration": "en la heladera Es mi manera de acompañarlo en esto para que no lo haga solo",
+   "transition": "iris",
+   "visual_type": "presenter_action",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "image",
+     "src": "img/testo6_presenter_050.png",
+     "asset_id": "testo6:s12-cierre-m211:presenter",
+     "transition_variant": "iris"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m212",
+   "section_id": "s12-cierre",
+   "from": 35082,
+   "duration": 24,
+   "narration": "Porque los hombres que envejecieron fuertes los de antes los que a los setenta todavía cargaban leña",
+   "transition": "none",
+   "visual_type": "clean_stock",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "video",
+     "src": "broll/testo6_stock_084.mp4",
+     "asset_id": "testo6:s12-cierre-m212:clean_stock",
+     "transition_variant": "none"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m213",
+   "section_id": "s12-cierre",
+   "from": 35106,
+   "duration": 370,
+   "narration": "hombres que envejecieron fuertes los de antes",
+   "transition": "fold",
+   "visual_type": "hero_component",
+   "overlay_policy": "editorial_only",
+   "layers": [
+    {
+     "type": "component",
+     "render_component": "quote",
+     "family": "quote",
+     "transition_variant": "fold",
+     "kicker": "",
+     "title": "Los hombres de antes envejecieron fuertes",
+     "sub": "Estos movimientos vivian en su dia a dia",
+     "attributed": true,
+     "author": "Dr. Federer",
+     "role": "Cierre del canal"
+    }
+   ]
+  },
+  {
+   "id": "s12-cierre-m214",
+   "section_id": "s12-cierre",
+   "from": 35476,
+   "duration": 206,
+   "narration": "de todos los días Nosotros los perdimos Y hoy usted los está recuperando Nos vemos en el próximo",
+   "transition": "whip",
+   "visual_type": "avatar_full",
+   "overlay_policy": "none",
+   "layers": [
+    {
+     "type": "avatar",
+     "src": "testo6_opt.mp4"
+    }
+   ]
+  }
+ ],
+ "metrics": {
+  "scenes": 232,
+  "weak_anchors": 15,
+  "stock": 84,
+  "presenter": 50,
+  "components": 21,
+  "avatar": 77
+ }
+}
