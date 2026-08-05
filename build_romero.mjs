@@ -36,19 +36,20 @@ for (let i = 0; i < beats.length; i++) {
   const endMs = i + 1 < beats.length ? beats[i + 1].ms : b.ms + Math.round((b.seg || 4) * 1000);
   const texto = (b.texto && b.texto !== '-') ? b.texto : '';
   const kicker = b.uso != null ? `Uso ${b.uso}` : 'Romero';
-  const base = { startMs, endMs, dice: b.dice };
+  // ⛔ NUNCA texto de dirección (muestra) ni frase hablada (dice) en pantalla → cero subtítulos.
+  const base = { startMs, endMs };
 
-  // AVATAR (incluye ValLowerThird como overlay sutil sobre la doctora)
+  // AVATAR (ValLowerThird = lower-third sutil SOLO si el beat trae texto gráfico)
   if (b.tipo === 'avatar' || b.componente === 'ValLowerThird') {
     const pay = {};
-    if (b.componente === 'ValLowerThird' || texto) { pay.title = texto || 'Dra. Valeria Alcázar'; pay.kicker = b.componente === 'ValLowerThird' ? '' : ''; }
+    if (b.componente === 'ValLowerThird' && texto) { pay.title = texto; }
     out.push({ ...base, role: 'avatar', payload: pay });
     continue;
   }
-  // CLIP real
-  if (b.tipo === 'clip') { out.push({ ...base, role: 'broll', asset: asBroll(b), payload: { sub: '' } }); continue; }
-  // IMAGEN IA
-  if (b.tipo === 'imagen') { out.push({ ...base, role: 'presenterAI', asset: asImg(b), payload: {} }); continue; }
+  // CLIP real — full-bleed, SIN texto (cero subtítulos)
+  if (b.tipo === 'clip') { out.push({ ...base, role: 'broll', asset: asBroll(b), payload: { title: '', sub: '' } }); continue; }
+  // IMAGEN IA — full-bleed, sin texto
+  if (b.tipo === 'imagen') { out.push({ ...base, role: 'presenterAI', asset: asImg(b), payload: { title: '', sub: '' } }); continue; }
 
   // COMPONENTE
   const c = b.componente;
@@ -59,7 +60,7 @@ for (let i = 0; i < beats.length; i++) {
   }
   if (c === 'RosemaryHero-STING') {
     // sustituto premium coherente: ValHero (escena hero del romero, cualquier duración)
-    out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto || 'El romero', hot: [], sub: b.muestra, bigTitle: /elixir|romero/i.test(texto) ? undefined : undefined } });
+    out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto || 'El romero', hot: [], sub: '', bigTitle: /elixir|romero/i.test(texto) ? undefined : undefined } });
     continue;
   }
   if (c === 'ValStat') {
@@ -67,20 +68,20 @@ for (let i = 0; i < beats.length; i++) {
     if (v != null) {
       const suffix = /años/i.test(texto) ? ' años' : /min/i.test(texto) ? ' min' : /%/.test(texto) ? '%' : '';
       const prefix = /^-/.test(texto.trim()) ? '−' : '';
-      out.push({ ...base, role: 'component', kind: 'ValStat', payload: { kicker, value: Math.abs(v), prefix, suffix, label: texto.replace(/[-−]?\d+[.,]?\d*\s*(años|min|%)?/i, '').trim() || b.muestra, sub: '' } });
+      out.push({ ...base, role: 'component', kind: 'ValStat', payload: { kicker, value: Math.abs(v), prefix, suffix, label: texto.replace(/[-−]?\d+[.,]?\d*\s*(años|min|%)?/i, '').trim() || '', sub: '' } });
     } else {
       // sin número → ValHero como tarjeta de énfasis
-      out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto, hot: [], sub: b.muestra } });
+      out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto, hot: [], sub: '' } });
     }
     continue;
   }
   if (c === 'ValStep') {
     stepCount[b.uso] = (stepCount[b.uso] || 0) + 1;
-    out.push({ ...base, role: 'component', kind: 'ValStep', payload: { step: stepCount[b.uso], total: stepTotalByUse[b.uso] || 1, title: texto || b.muestra, hot: [], sub: b.muestra } });
+    out.push({ ...base, role: 'component', kind: 'ValStep', payload: { step: stepCount[b.uso], total: stepTotalByUse[b.uso] || 1, title: texto || '', hot: [], sub: '' } });
     continue;
   }
   if (c === 'ValMolecule' || c === 'pizarra') {
-    out.push({ ...base, role: 'component', kind: 'ValMolecule', payload: { kicker: 'Por qué funciona', title: texto || 'Antioxidantes', hot: [], sub: b.muestra, centerLabel: 'Romero', nodes: splitItems(texto).slice(0, 4).map((label) => ({ label })) } });
+    out.push({ ...base, role: 'component', kind: 'ValMolecule', payload: { kicker: 'Por qué funciona', title: texto || 'Antioxidantes', hot: [], sub: '', centerLabel: 'Romero', nodes: splitItems(texto).slice(0, 4).map((label) => ({ label })) } });
     continue;
   }
   if (c === 'ValChecklist') {
@@ -89,27 +90,27 @@ for (let i = 0; i < beats.length; i++) {
   }
   if (c === 'ValBeforeAfter') {
     const parts = texto.split('|').map((s) => s.trim());
-    out.push({ ...base, role: 'component', kind: 'ValBeforeAfter', payload: { kicker, title: b.muestra, labelA: parts[0] || 'Antes', labelB: parts[1] || 'Después' } });
+    out.push({ ...base, role: 'component', kind: 'ValBeforeAfter', payload: { kicker, title: '', labelA: parts[0] || 'Antes', labelB: parts[1] || 'Después' } });
     continue;
   }
   if (c === 'ValQuote') {
-    out.push({ ...base, role: 'component', kind: 'ValQuote', payload: { kicker: 'Dra. Valeria Alcázar', quote: stripQuotes(texto) || b.muestra, author: 'Dra. Valeria Alcázar', role: 'Medicina estética' } });
+    out.push({ ...base, role: 'component', kind: 'ValQuote', payload: { kicker: 'Dra. Valeria Alcázar', quote: stripQuotes(texto) || '', author: 'Dra. Valeria Alcázar', role: 'Medicina estética' } });
     continue;
   }
   if (c === 'ValHero') {
-    out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto || 'El romero', hot: [], sub: b.muestra } });
+    out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto || 'El romero', hot: [], sub: '' } });
     continue;
   }
   if (c === 'ValCta') {
-    out.push({ ...base, role: 'component', kind: 'ValCta', payload: { kicker: 'Antes de irse', title: texto, sub: b.muestra } });
+    out.push({ ...base, role: 'component', kind: 'ValCta', payload: { kicker: 'Antes de irse', title: texto, sub: '' } });
     continue;
   }
   if (c === 'ValFullShot') {
-    out.push({ ...base, role: 'presenterAI', asset: `img/${SLUG}_recap_rostro.jpg`, payload: { kicker, title: texto, sub: b.muestra } });
+    out.push({ ...base, role: 'presenterAI', asset: `img/${SLUG}_recap_rostro.jpg`, payload: { kicker, title: texto, sub: '' } });
     continue;
   }
   // fallback
-  out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto || b.muestra, hot: [] } });
+  out.push({ ...base, role: 'component', kind: 'ValHero', payload: { kicker, title: texto || '', hot: [] } });
 }
 
 const lastEnd = out[out.length - 1].endMs;

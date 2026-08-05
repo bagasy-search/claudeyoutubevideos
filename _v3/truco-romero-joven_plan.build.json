@@ -83,17 +83,12 @@
   {
    "startMs": 0,
    "endMs": 5920,
-   "dice": "Existe una ramita verde, esa que muchas usan para el asado del domingo y después tiran,",
    "role": "avatar",
-   "payload": {
-    "title": "EL SECRETO DEL ROMERO",
-    "kicker": ""
-   }
+   "payload": {}
   },
   {
    "startMs": 5920,
    "endMs": 11820,
-   "dice": "que aplicada bien sobre la piel y el cabello, puede quitarle 20 años de encima a su reflejo,",
    "role": "component",
    "kind": "ValStat",
    "payload": {
@@ -101,52 +96,49 @@
     "value": 20,
     "prefix": "−",
     "suffix": " años",
-    "label": "Rostro de mujer madura con piel luminosa y firme bajo luz de ventana; sobre el plano aterriza el número gigante en Playfair con flourish botánico de romero.",
+    "label": "",
     "sub": ""
    }
   },
   {
    "startMs": 11820,
    "endMs": 15220,
-   "dice": "y no le va a costar más de lo que cuesta un atado de perejil.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_03.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 15220,
    "endMs": 21740,
-   "dice": "No es una exageración de revista, es una de las plantas más estudiadas del mundo por su poder antioxidante,",
    "role": "avatar",
-   "payload": {
-    "title": "UNA DE LAS PLANTAS MÁS ESTUDIADAS",
-    "kicker": ""
-   }
+   "payload": {}
   },
   {
    "startMs": 21740,
    "endMs": 25700,
-   "dice": "y sus abuelas lo sabían mucho antes de que la ciencia le pusiera nombre.",
    "role": "presenterAI",
    "asset": "img/truco-romero-joven_s_05.jpg",
-   "payload": {}
+   "payload": {
+    "title": "",
+    "sub": ""
+   }
   },
   {
    "startMs": 25700,
    "endMs": 31500,
-   "dice": "Estoy hablando del romero, y hoy le voy a mostrar por qué las mujeres que lo usan a diario,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_06.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 31500,
    "endMs": 36660,
-   "dice": "tienen esa piel firme, ese cabello con fuerza, y esa mirada despierta que el dinero,",
    "role": "carousel",
    "focus": 0,
    "intro": true
@@ -154,116 +146,108 @@
   {
    "startMs": 36660,
    "endMs": 43720,
-   "dice": "muchas veces, no logra comprar. Yo soy la doctora Valeria Alcázar, y llevo más de 20 años en medicina estética.",
    "role": "avatar",
    "payload": {
-    "title": "DRA. VALERIA ALCÁZAR — MEDICINA ESTÉTICA AVANZADA",
-    "kicker": ""
+    "title": "DRA. VALERIA ALCÁZAR — MEDICINA ESTÉTICA AVANZADA"
    }
   },
   {
    "startMs": 43720,
    "endMs": 48640,
-   "dice": "He visto pasar por mi consultorio cremas de 200 dólares que prometían el cielo,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_09.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 48640,
    "endMs": 53520,
-   "dice": "y no cumplían ni la mitad de lo que cumple, gratis, una infusión de romero bien hecha.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_10.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 53520,
    "endMs": 58680,
-   "dice": "He visto mujeres angustiadas por su piel y su cabello, gastar en un mes lo que no deberían,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_11.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 58680,
    "endMs": 61860,
-   "dice": "cuando la solución estaba en la maceta de su propia ventana.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_12.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 61860,
    "endMs": 66520,
-   "dice": "La industria construyó imperios sobre frascos brillantes y nombres en francés,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_13.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 66520,
    "endMs": 72400,
-   "dice": "pero los verdaderos secretos, los que funcionan de raíz, siempre estuvieron en la cocina y en el jardín,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_14.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 72400,
    "endMs": 78800,
-   "dice": "al alcance de todas. Hoy le voy a devolver el más poderoso de todos, y no le voy a pedir que me crea por fe.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 78800,
    "endMs": 85600,
-   "dice": "Le voy a explicar el porqué de cada cosa, para que lo entienda y lo pueda usar con confianza el resto de su vida.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 85600,
    "endMs": 90640,
-   "dice": "Quédese hasta el final, porque el último uso, el que le voy a contar de últimas,",
    "role": "avatar",
-   "payload": {
-    "title": "QUÉDESE HASTA EL FINAL",
-    "kicker": ""
-   }
+   "payload": {}
   },
   {
    "startMs": 90640,
    "endMs": 96340,
-   "dice": "es el que las mujeres de campo se pasaban de madre a hija en voz baja, y que jamás,",
    "role": "presenterAI",
    "asset": "img/truco-romero-joven_s_18.jpg",
-   "payload": {}
+   "payload": {
+    "title": "",
+    "sub": ""
+   }
   },
   {
    "startMs": 96340,
    "endMs": 102240,
-   "dice": "jamás salía en las revistas. Antes de empezar, una sola regla, la misma de siempre,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 102240,
    "endMs": 106540,
-   "dice": "porque la quiero cuidar de verdad. La piel es un órgano, no una pared.",
    "role": "component",
    "kind": "ValQuote",
    "payload": {
@@ -276,17 +260,16 @@
   {
    "startMs": 106540,
    "endMs": 113820,
-   "dice": "Todo lo que le muestre se usa con suavidad, en poca cantidad, y siempre se prueba primero en una zona pequeña del antebrazo",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_21.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 113820,
    "endMs": 119460,
-   "dice": "por 24 horas. El romero es noble, pero es potente, y en piel muy sensible,",
    "role": "component",
    "kind": "ValStat",
    "payload": {
@@ -301,52 +284,47 @@
   {
    "startMs": 119460,
    "endMs": 122460,
-   "dice": "o durante el embarazo, conviene consultar antes.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 122460,
    "endMs": 126660,
-   "dice": "Si algo le irrita, no es para usted, y se acabó la discusión.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 126660,
    "endMs": 131560,
-   "dice": "Dicho esto, empecemos. Y déjeme explicarle primero, en un minuto,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 131560,
    "endMs": 136420,
-   "dice": "por qué esta plantita hace lo que hace. Porque cuando usted entienda el mecanismo,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 136420,
    "endMs": 139500,
-   "dice": "no va a volver a mirar el romero de la misma manera.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_27.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 139500,
    "endMs": 143900,
-   "dice": "El envejecimiento de la piel tiene entre otras dos grandes causas.",
    "role": "component",
    "kind": "ValMolecule",
    "payload": {
     "kicker": "Por qué funciona",
     "title": "Dos causas: oxidación · mala circulación",
     "hot": [],
-    "sub": "Diagrama editorial claro: corte de la piel con dos flechas rotuladas 'Oxidación' y 'Mala circulación'",
+    "sub": "",
     "centerLabel": "Romero",
     "nodes": [
      {
@@ -361,24 +339,23 @@
   {
    "startMs": 143900,
    "endMs": 149480,
-   "dice": "La oxidación, que es el óxido invisible que el ambiente y el sol van dejando en sus células.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_29.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 149480,
    "endMs": 156460,
-   "dice": "Y la mala circulación, que hace que la piel reciba menos oxígeno y menos alimento del que necesita para repararse.",
    "role": "component",
    "kind": "ValMolecule",
    "payload": {
     "kicker": "Por qué funciona",
     "title": "Menos oxígeno = menos reparación",
     "hot": [],
-    "sub": "Sigue el diagrama de piel: se ilumina la capa de vasos, flecha 'menos oxígeno / menos nutrientes'",
+    "sub": "",
     "centerLabel": "Romero",
     "nodes": [
      {
@@ -390,21 +367,19 @@
   {
    "startMs": 156460,
    "endMs": 164360,
-   "dice": "Pues bien, el romero es, al mismo tiempo, uno de los antioxidantes vegetales más concentrados que existen.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 164360,
    "endMs": 169120,
-   "dice": "Gracias a dos compuestos llamados ácido carnósico y ácido rosmarínico.",
    "role": "component",
    "kind": "ValMolecule",
    "payload": {
     "kicker": "Por qué funciona",
     "title": "Ácido carnósico · Ácido rosmarínico",
     "hot": [],
-    "sub": "Molécula antioxidante estilo editorial, rótulos 'Ácido carnósico' y 'Ácido rosmarínico'",
+    "sub": "",
     "centerLabel": "Romero",
     "nodes": [
      {
@@ -419,99 +394,91 @@
   {
    "startMs": 169120,
    "endMs": 172140,
-   "dice": "Y es un estimulante natural de la circulación.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_33.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 172140,
    "endMs": 178940,
-   "dice": "En otras palabras, ataca las dos puntas del problema a la vez, frena el óxido y despierta el riego de sangre.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 178940,
    "endMs": 184520,
-   "dice": "Por eso su efecto sobre un rostro cansado y sobre un cabello sin vida, se nota tan rápido.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_35.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 184520,
    "endMs": 187060,
-   "dice": "No rellena arrugas ni hace magia.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 187060,
    "endMs": 189900,
-   "dice": "Repara la maquinaria que la naturaleza ya le dio.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 189900,
    "endMs": 194280,
-   "dice": "Ahora que sabe el por qué, vamos con el cómo, empezando por la cara.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 194280,
    "endMs": 198560,
-   "dice": "Y quiero que se quede con una idea más, porque es la que lo explica todo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 198560,
    "endMs": 204840,
-   "dice": "Usted seguramente escuchó hablar del colágeno, esa proteína que le da a la piel su firmeza y su sostén.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Romero",
     "title": "El colágeno sostiene gran parte de la firmeza de la piel",
     "hot": [],
-    "sub": "Estadística editorial: el colágeno como base de firmeza, número destacado"
+    "sub": ""
    }
   },
   {
    "startMs": 204840,
    "endMs": 209300,
-   "dice": "La que se va perdiendo con los años y hace que la piel se afine y se descuelgue.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_41.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 209300,
    "endMs": 213940,
-   "dice": "Lo que poca gente sabe es que buena parte de esa pérdida no viene solo de la edad,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 213940,
    "endMs": 219740,
-   "dice": "sino del daño de los radicales libres y de un proceso que los científicos llaman glicación.",
    "role": "component",
    "kind": "ValMolecule",
    "payload": {
     "kicker": "Por qué funciona",
     "title": "Radicales libres + glicación = daño al colágeno",
     "hot": [],
-    "sub": "Segunda pizarra: fibras de colágeno rotuladas, radicales libres como puntos que las atacan, rótulo 'Glicación'",
+    "sub": "",
     "centerLabel": "Romero",
     "nodes": [
      {
@@ -523,58 +490,52 @@
   {
    "startMs": 219740,
    "endMs": 226840,
-   "dice": "Que es, para que me entienda, como si el azúcar de más fuera oxidando y endureciendo esas fibras de colágeno hasta quebrarlas.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_44.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 226840,
    "endMs": 230840,
-   "dice": "¿Y qué es lo que frena a los radicales libres y protege esas fibras?",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 230840,
    "endMs": 234840,
-   "dice": "Los antioxidantes. Justamente lo que el romero tiene de sobra.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Romero",
     "title": "Antioxidantes = romero",
     "hot": [],
-    "sub": "Secuencia glass-card premium del romero: la ramita se revela con acento de latón/oro"
+    "sub": ""
    }
   },
   {
    "startMs": 234840,
    "endMs": 239740,
-   "dice": "Por eso, cuidar la piel con romero no es maquillar un problema, es proteger,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 239740,
    "endMs": 242980,
-   "dice": "desde afuera, la estructura misma que la mantiene joven.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 242980,
    "endMs": 247000,
-   "dice": "Con eso en la cabeza, todo lo que sigue le va a hacer mucho más sentido.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 247000,
    "endMs": 252200,
-   "dice": "Primero y el más importante de todos, el agua de romero como tónico facial.",
    "role": "carousel",
    "focus": 1,
    "intro": false
@@ -582,68 +543,65 @@
   {
    "startMs": 252200,
    "endMs": 256700,
-   "dice": "Este es el corazón de todo lo que le voy a enseñar, así que présteme atención.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 256700,
    "endMs": 261780,
-   "dice": "Se hierve un puñado de romero, fresco o seco, en agua durante unos minutos,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_52.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 261780,
    "endMs": 264260,
-   "dice": "se deja enfriar tapado y se cuela.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_53.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 264260,
    "endMs": 267640,
-   "dice": "Esa agua verdosa, guardada en la heladera, es su tónico.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_54.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 267640,
    "endMs": 272920,
-   "dice": "Después de lavarse la cara con un algodón, se la pasa por todo el rostro y el cuello,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_55.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 272920,
    "endMs": 275500,
-   "dice": "evitando el contorno de los ojos. ¿Qué hace?",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 275500,
    "endMs": 281440,
-   "dice": "Ese líquido está cargado de los antioxidantes de la planta, que neutralizan los radicales libres,",
    "role": "component",
    "kind": "ValMolecule",
    "payload": {
     "kicker": "Por qué funciona",
     "title": "ANTIOXIDANTES",
     "hot": [],
-    "sub": "visualización de la molécula antioxidante del romero con etiqueta 'antioxidantes', romero macro de fondo",
+    "sub": "",
     "centerLabel": "Romero",
     "nodes": [
      {
@@ -655,29 +613,27 @@
   {
    "startMs": 281440,
    "endMs": 284620,
-   "dice": "esas partículas que envejecen la piel día a día.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 284620,
    "endMs": 290600,
-   "dice": "Además, tiene una acción astringente suave, que cierra la apariencia de los poros y empareja el cutis.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_59.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 290600,
    "endMs": 296760,
-   "dice": "En dos o tres semanas de uso constante, la piel se ve más firme, más luminosa y más pareja.",
    "role": "component",
    "kind": "ValBeforeAfter",
    "payload": {
     "kicker": "Uso 1",
-    "title": "antes/después de la piel del rostro tras 2-3 semanas de tónico",
+    "title": "",
     "labelA": "2-3 SEMANAS",
     "labelB": "Después"
    }
@@ -685,7 +641,6 @@
   {
    "startMs": 296760,
    "endMs": 302480,
-   "dice": "Las medidas exactas, cuánto romero por cuánta agua y cuánto le dura en la heladera,",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -693,20 +648,18 @@
     "total": 1,
     "title": "MEDIDAS: romero + agua",
     "hot": [],
-    "sub": "paso/ficha con las medidas del tónico (romero/agua), sin cifra inventada"
+    "sub": ""
    }
   },
   {
    "startMs": 302480,
    "endMs": 308740,
-   "dice": "se las voy a dejar escritas en la descripción, porque esta receta vale oro y la va a querer tener a mano.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 308740,
    "endMs": 313080,
-   "dice": "Segundo, el vapor de romero para una limpieza profunda de verdad.",
    "role": "carousel",
    "focus": 2,
    "intro": false
@@ -714,67 +667,64 @@
   {
    "startMs": 313080,
    "endMs": 320360,
-   "dice": "Una vez por semana, se hierve agua con una buena rama de romero, se apaga el fuego y con una toalla sobre la cabeza,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_64.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 320360,
    "endMs": 327220,
-   "dice": "como una carpita, se recibe el vapor en el rostro por unos cinco minutos, a una distancia prudente para no quemarse.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_65.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 327220,
    "endMs": 334920,
-   "dice": "El calor abre y ablanda los poros, y el vapor cargado de los aceites del romero afloja la suciedad y la grasa acumulada",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 334920,
    "endMs": 341100,
-   "dice": "mucho mejor que cualquier limpiador. La piel queda rosada, receptiva y limpia desde adentro.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_67.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 341100,
    "endMs": 345820,
-   "dice": "Es el facial de spa que las mujeres se hacían en la cocina, sin gastar un peso.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 2",
     "title": "SPA EN SU COCINA",
     "hot": [],
-    "sub": "frase cinética de remate con imagen del vapor/cocina, tono vintage"
+    "sub": ""
    }
   },
   {
    "startMs": 345820,
    "endMs": 351780,
-   "dice": "Eso sí, después del vapor, siempre agua fría o un poco de su tónico para volver a cerrar el poro.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_69.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 351780,
    "endMs": 357640,
-   "dice": "Abrir y cerrar, como respira la piel. Tercero, los cubitos de hielo de romero por la mañana.",
    "role": "carousel",
    "focus": 3,
    "intro": false
@@ -782,104 +732,98 @@
   {
    "startMs": 357640,
    "endMs": 362840,
-   "dice": "Este es el truco de las estrellas de cine antes de un primer plano, con una vuelta de tuerca.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 362840,
    "endMs": 367640,
-   "dice": "En vez de congelar agua sola, usted congela su agua de romero en una cubetera.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_72.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 367640,
    "endMs": 373040,
-   "dice": "Por la mañana, envuelve un cubito en un pañuelo fino para no quemar la piel con el frío directo,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_73.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 373040,
    "endMs": 376680,
-   "dice": "y lo pasa en círculos suaves por toda la cara durante un minuto.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_74.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 376680,
    "endMs": 382640,
-   "dice": "El frío contrae los vasos sanguíneos, desinflama la cara hinchada del despertar y cierra los poros.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 382640,
    "endMs": 387360,
-   "dice": "Y al derretirse, deja sobre la piel esa capa de antioxidantes del romero.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_76.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 387360,
    "endMs": 391540,
-   "dice": "Es lo más barato de toda esta lista, es agua congelada con una hierba.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 3",
     "title": "EL MÁS BARATO",
     "hot": [],
-    "sub": "dato del costo mínimo del truco (agua + hierba)"
+    "sub": ""
    }
   },
   {
    "startMs": 391540,
    "endMs": 396380,
-   "dice": "Y le da un resultado que usted ve en el espejo al instante, una cara despierta,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_78.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 396380,
    "endMs": 401120,
-   "dice": "firme y lista para el día. Las divas de antes hacían esto religiosamente,",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 3",
     "title": "LAS DIVAS DE ANTES",
     "hot": [],
-    "sub": "frase de remate con guiño vintage a 'las divas de antes'"
+    "sub": ""
    }
   },
   {
    "startMs": 401120,
    "endMs": 403660,
-   "dice": "cada mañana, antes de que las viera nadie.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 403660,
    "endMs": 408640,
-   "dice": "Cuarto, el romero para descongestionar el contorno y la mirada cansada.",
    "role": "carousel",
    "focus": 4,
    "intro": false
@@ -887,114 +831,105 @@
   {
    "startMs": 408640,
    "endMs": 415480,
-   "dice": "El contorno de los ojos es la piel más delgada de todo el cuerpo, y es donde primero se nota el cansancio.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 415480,
    "endMs": 419260,
-   "dice": "Aquí no se aplica el tónico directo, sino algo más suave.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 419260,
    "endMs": 426620,
-   "dice": "Se moja un par de algodones o de gasas en agua de romero bien fría, se escurren y se apoyan sobre los párpados cerrados",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_84.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 426620,
    "endMs": 429720,
-   "dice": "por unos 10 minutos, recostada y tranquila.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_85.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 429720,
    "endMs": 435040,
-   "dice": "La combinación del frío y de la acción que mejora la microcirculación de la zona,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 435040,
    "endMs": 439860,
-   "dice": "ayuda a bajar la hinchazón y a que esa zona apagada recupere algo de vida.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_87.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 439860,
    "endMs": 444480,
-   "dice": "No le voy a mentir diciéndole que borra una ojera de años, eso no existe.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 444480,
    "endMs": 451740,
-   "dice": "Pero sí desinflama y refresca la mirada como pocas cosas, y sin el precio de esos parches de ojos que hoy le venden de a",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 4",
     "title": "SIN GASTAR EN PARCHES",
     "hot": [],
-    "sub": "contraste: efecto real del romero vs. costo de los parches de ojos comerciales"
+    "sub": ""
    }
   },
   {
    "startMs": 451740,
    "endMs": 455640,
-   "dice": "uno a precio de joya. Fíjese en algo, y esto es importante.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 455640,
    "endMs": 462400,
-   "dice": "Llevamos cuatro usos, todos de rostro, y todos salen de la misma ramita y del mismo jardín.",
    "role": "presenterAI",
    "asset": "img/truco-romero-joven_recap_rostro.jpg",
    "payload": {
     "kicker": "Romero",
     "title": "USOS 1-4 · ROSTRO · misma ramita",
-    "sub": "tarjeta recap 'USOS 1-4 · ROSTRO' con miniatura de la ramita de romero, sello de latón"
+    "sub": ""
    }
   },
   {
    "startMs": 462400,
    "endMs": 470220,
-   "dice": "Pero donde el romero de verdad hace historia, donde las mujeres de campo tenían fama de melenas envidiables hasta la vejez,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_92.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 470220,
    "endMs": 473600,
-   "dice": "es en el cabello. Vamos para allá porque aquí viene lo mejor.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 473600,
    "endMs": 478000,
-   "dice": "Quinto, el enjuague de romero para estimular el crecimiento del cabello.",
    "role": "carousel",
    "focus": 5,
    "intro": false
@@ -1002,14 +937,12 @@
   {
    "startMs": 478000,
    "endMs": 482940,
-   "dice": "Este es quizás el uso más famoso y más respaldado de todos,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 482940,
    "endMs": 490560,
-   "dice": "y con razón. Después del champú, como último enjuague, se vuelca sobre el cuero cabelludo y el cabello el agua de romero,",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -1017,30 +950,29 @@
     "total": 1,
     "title": "PASO 1 · Volcar el agua de romero tras el champú",
     "hot": [],
-    "sub": "paso 1: 'Después del champú, volcar el agua de romero sobre cuero cabelludo y cabello'"
+    "sub": ""
    }
   },
   {
    "startMs": 490560,
    "endMs": 496760,
-   "dice": "ya fría, y se masajea un minuto con las yemas de los dedos antes de enjuagar apenas con agua,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_97.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 496760,
    "endMs": 501900,
-   "dice": "o incluso dejarla puesta. El romero estimula la circulación en el cuero cabelludo,",
    "role": "component",
    "kind": "ValMolecule",
    "payload": {
     "kicker": "Por qué funciona",
     "title": "Romero → estimula circulación en el cuero cabelludo",
     "hot": [],
-    "sub": "diagrama folicular: flecha de circulación entrando al cuero cabelludo, corte lateral crema/latón",
+    "sub": "",
     "centerLabel": "Romero",
     "nodes": [
      {
@@ -1052,14 +984,13 @@
   {
    "startMs": 501900,
    "endMs": 509260,
-   "dice": "y un folículo que recibe más sangre es un folículo mejor alimentado, que produce un pelo más fuerte y que se cae",
    "role": "component",
    "kind": "ValMolecule",
    "payload": {
     "kicker": "Por qué funciona",
     "title": "Más riego → folículo alimentado → pelo más fuerte",
     "hot": [],
-    "sub": "continúa el diagrama: folículo se ilumina, 'más sangre → folículo alimentado → pelo fuerte'",
+    "sub": "",
     "centerLabel": "Romero",
     "nodes": [
      {
@@ -1071,56 +1002,51 @@
   {
    "startMs": 509260,
    "endMs": 517700,
-   "dice": "menos. Hay estudios modernos que han comparado el romero con tratamientos de farmacia para la caída y han encontrado resultados sorprendentemente",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 5",
     "title": "Romero ≈ tratamiento de farmacia · resultados parejos",
     "hot": [],
-    "sub": "cifra comparando romero vs. tratamiento de farmacia, resultado 'parejo'"
+    "sub": ""
    }
   },
   {
    "startMs": 517700,
    "endMs": 522660,
-   "dice": "parejos, con la ventaja de una irritación mucho menor en el cuero cabelludo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 522660,
    "endMs": 530060,
-   "dice": "Piénselo un momento, una hierba que crece gratis en una maceta, midiéndose de igual a igual con un producto de laboratorio",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 530060,
    "endMs": 533940,
-   "dice": "patentado. Ese es el tamaño del secreto que le estoy contando.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 533940,
    "endMs": 541900,
-   "dice": "Su abuela no leyó esos estudios, simplemente tenía el pelo largo, con cuerpo y abundante a los 70 años,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_104.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 541900,
    "endMs": 545160,
-   "dice": "cuando muchas, hoy a los 50, ya lo ven ralear.",
    "role": "component",
    "kind": "ValBeforeAfter",
    "payload": {
     "kicker": "Uso 5",
-    "title": "split pelo abundante (antes) vs. pelo ralo (hoy), etiquetas '70 años' / '50 años'",
+    "title": "",
     "labelA": "ANTES · 70 (abundante)",
     "labelB": "HOY · 50 (ralea)"
    }
@@ -1128,21 +1054,18 @@
   {
    "startMs": 545160,
    "endMs": 548640,
-   "dice": "Ella usaba romero por costumbre, sin saber el por qué.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 548640,
    "endMs": 553800,
-   "dice": "La ciencia llegó tarde, décadas más tarde, solamente a darle la razón.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 553800,
    "endMs": 558040,
-   "dice": "Sexto, el romero para oscurecer las canas de manera natural.",
    "role": "carousel",
    "focus": 6,
    "intro": false
@@ -1150,14 +1073,12 @@
   {
    "startMs": 558040,
    "endMs": 560840,
-   "dice": "Escuche bien este, porque es de los más guardados.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 560840,
    "endMs": 566400,
-   "dice": "El romero, sobre todo si se prepara oscuro y concentrado, y se usa con constancia,",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -1165,30 +1086,28 @@
     "total": 1,
     "title": "PASO 1 · Romero bien oscuro y concentrado",
     "hot": [],
-    "sub": "paso 1: 'Preparar el romero oscuro y concentrado' con ícono de infusión oscura"
+    "sub": ""
    }
   },
   {
    "startMs": 566400,
    "endMs": 573160,
-   "dice": "va dando reflejos oscuros al cabello y disimulando las primeras canas, sin una sola gota de tintura química.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_111.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 573160,
    "endMs": 576860,
-   "dice": "No es una tintura de un día para el otro, no le voy a prometer eso.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 576860,
    "endMs": 583580,
-   "dice": "Es un proceso paciente, de uso repetido, que oscurece el tono general y hace que las canas se noten menos,",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -1204,7 +1123,6 @@
   {
    "startMs": 583580,
    "endMs": 585940,
-   "dice": "mientras de paso, fortalece la fibra.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -1218,39 +1136,38 @@
   {
    "startMs": 585940,
    "endMs": 591000,
-   "dice": "Las mujeres de antes que se veían con el pelo entero y oscuro, a una edad avanzada,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_115.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 591000,
    "endMs": 596680,
-   "dice": "no siempre iban a la peluquería. Muchas tenían una botella de agua de romero concentrada en el baño.",
    "role": "presenterAI",
    "asset": "img/truco-romero-joven_s_116.jpg",
-   "payload": {}
+   "payload": {
+    "title": "",
+    "sub": ""
+   }
   },
   {
    "startMs": 596680,
    "endMs": 600860,
-   "dice": "La constancia era gratis, y el resultado, discreto y natural.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 600860,
    "endMs": 603840,
-   "dice": "No ese negro artificial que delata la tintura.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 603840,
    "endMs": 607620,
-   "dice": "Séptimo, el aceite de romero para masajear el cuero cabelludo.",
    "role": "carousel",
    "focus": 7,
    "intro": false
@@ -1258,7 +1175,6 @@
   {
    "startMs": 607620,
    "endMs": 614060,
-   "dice": "Una vez por semana, se entibia un poquito de aceite, de oliva o de coco, con unas hojitas de romero dentro,",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -1266,13 +1182,12 @@
     "total": 2,
     "title": "PASO 1 · Entibiar aceite con romero",
     "hot": [],
-    "sub": "paso 1: 'Entibiar aceite de oliva o coco con hojas de romero, 1 vez por semana'"
+    "sub": ""
    }
   },
   {
    "startMs": 614060,
    "endMs": 619920,
-   "dice": "o directamente, unas gotas de aceite esencial de romero bien diluido en el aceite base,",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -1280,40 +1195,38 @@
     "total": 2,
     "title": "PASO 2 · O gotas de esencial bien diluidas",
     "hot": [],
-    "sub": "paso 2: 'O gotas de aceite esencial de romero bien diluidas'"
+    "sub": ""
    }
   },
   {
    "startMs": 619920,
    "endMs": 625720,
-   "dice": "y se masajea el cuero cabelludo con las yemas de los dedos, durante unos 10 minutos antes de lavar.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_122.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 625720,
    "endMs": 632060,
-   "dice": "El masaje en sí, ya activa la circulación, y el romero potencia ese efecto y nutre una piel,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 632060,
    "endMs": 636780,
-   "dice": "la del cuero cabelludo, que también envejece y se reseca, aunque nadie la mire.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_124.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 636780,
    "endMs": 642340,
-   "dice": "Es el ritual de la noche del sábado, el que deja el cabello preparado y fuerte para toda la semana.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -1328,7 +1241,6 @@
   {
    "startMs": 642340,
    "endMs": 648000,
-   "dice": "10 minutos, casi gratis, y una melena que se lo agradece cada día que pasa.",
    "role": "component",
    "kind": "ValStat",
    "payload": {
@@ -1343,7 +1255,6 @@
   {
    "startMs": 648000,
    "endMs": 652340,
-   "dice": "Octavo, el romero contra la caspa y para el brillo espejo.",
    "role": "carousel",
    "focus": 8,
    "intro": false
@@ -1351,14 +1262,12 @@
   {
    "startMs": 652340,
    "endMs": 658580,
-   "dice": "El mismo enjuague de romero que estimula el crecimiento, tiene una acción que ayuda a equilibrar el cuero cabelludo,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 658580,
    "endMs": 662460,
-   "dice": "y a controlar la descamación y la picazón que produce la caspa.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -1373,149 +1282,136 @@
   {
    "startMs": 662460,
    "endMs": 669140,
-   "dice": "Y como beneficio extra, al sellar la cutícula del pelo, le devuelve ese brillo de espejo que refleja la luz.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_130.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 669140,
    "endMs": 674480,
-   "dice": "Un cabello limpio de residuos, con el cuero cabelludo en calma y la fibra sellada,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 674480,
    "endMs": 677020,
-   "dice": "es un cabello que se ve sano a cualquier edad.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 677020,
    "endMs": 682880,
-   "dice": "Las mujeres de los años de antes, no tenían siliconas embotelladas ni ampollas anti caspa,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_133.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 682880,
    "endMs": 687460,
-   "dice": "tenían romero, y el pelo les brillaba en cada fotografía en blanco y negro.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_134.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 687460,
    "endMs": 692560,
-   "dice": "Vamos por 8, y quiero que note el patrón, siempre la misma planta,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 692560,
    "endMs": 695540,
-   "dice": "siempre por la misma razón de fondo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 695540,
    "endMs": 699520,
-   "dice": "Antioxidantes que frenan el óxido y circulación que despierta el riego.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Romero",
     "title": "ANTIOXIDANTES · CIRCULACIÓN",
     "hot": [],
-    "sub": "dos etiquetas lado a lado: 'ANTIOXIDANTES' y 'CIRCULACIÓN' con íconos en latón"
+    "sub": ""
    }
   },
   {
    "startMs": 699520,
    "endMs": 703320,
-   "dice": "No son 8 productos distintos con 8 promesas de marketing.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 703320,
    "endMs": 708980,
-   "dice": "Es un solo remedio noble haciendo, en cada parte del cuerpo, lo mismo que sabe hacer.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Romero",
     "title": "UN SOLO REMEDIO NOBLE",
     "hot": [],
-    "sub": "toma hero de la ramita de romero centrada, luz cálida, sello de cierre"
+    "sub": ""
    }
   },
   {
    "startMs": 708980,
    "endMs": 712420,
-   "dice": "Esa es la diferencia entre la belleza de antes y la de ahora.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 712420,
    "endMs": 715820,
-   "dice": "Antes se entendía el por qué y se usaba poco para todo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 715820,
    "endMs": 720640,
-   "dice": "Ahora se compran 10 frascos que hacen, cada uno, una porción de lo mismo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 720640,
    "endMs": 724220,
-   "dice": "Ahora bajemos al cuerpo, a las manos y a los rituales.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Romero",
     "title": "CUERPO, MANOS Y RITUALES",
     "hot": [],
-    "sub": "título de capítulo premium con ramita de romero y serif dorada anunciando el tramo"
+    "sub": ""
    }
   },
   {
    "startMs": 724220,
    "endMs": 727980,
-   "dice": "Porque aquí es donde el romero revela sus usos más inesperados.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 727980,
    "endMs": 731700,
-   "dice": "Los que casi nadie conoce y los que más la van a sorprender.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_145.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 731700,
    "endMs": 737140,
-   "dice": "9. El aceite de romero para las piernas cansadas y la mala circulación.",
    "role": "carousel",
    "focus": 9,
    "intro": false
@@ -1523,68 +1419,62 @@
   {
    "startMs": 737140,
    "endMs": 744200,
-   "dice": "Este beneficio es un regalo para las mujeres que pasan muchas horas de pie o que sienten las piernas pesadas al final del día.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 744200,
    "endMs": 751680,
-   "dice": "Un aceite base, de almendras o de oliva, con romero, masajeado sobre las piernas siempre de abajo hacia arriba,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_148.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 751680,
    "endMs": 755760,
-   "dice": "en dirección al corazón, ayuda a activar la circulación de retorno.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_149.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 755760,
    "endMs": 763000,
-   "dice": "El romero es un conocido tónico circulatorio y ese mismo poder que le despierta el riego en la cara y en el cuero cabelludo,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 763000,
    "endMs": 768320,
-   "dice": "se lo despierta también en las piernas. El resultado es una sensación de alivio inmediato,",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 9",
     "title": "ALIVIO INMEDIATO",
     "hot": [],
-    "sub": "tarjeta con el resultado destacado"
+    "sub": ""
    }
   },
   {
    "startMs": 768320,
    "endMs": 773740,
-   "dice": "de piernas más livianas y con el tiempo, una piel del cuerpo más firme y mejor irrigada.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 773740,
    "endMs": 779160,
-   "dice": "Porque una piel que recibe más sangre es una piel que se repara mejor y se ve más viva.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 779160,
    "endMs": 787340,
-   "dice": "Hágalo de noche, antes de dormir. Con las piernas un poco elevadas y va a notar la diferencia al despertar.",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -1592,27 +1482,24 @@
     "total": 1,
     "title": "1. De noche · 2. Piernas elevadas · 3. Note la diferencia",
     "hot": [],
-    "sub": "tarjeta de pasos con la rutina de aplicación"
+    "sub": ""
    }
   },
   {
    "startMs": 787340,
    "endMs": 792520,
-   "dice": "Que es exactamente como entendían la belleza las mujeres sabias de antes,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 792520,
    "endMs": 800880,
-   "dice": "no como algo separado de la salud, sino como su reflejo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 800880,
    "endMs": 806220,
-   "dice": "Las manos y los brazos son los grandes delatores de la edad, más incluso que la cara.",
    "role": "carousel",
    "focus": 10,
    "intro": false
@@ -1620,64 +1507,60 @@
   {
    "startMs": 806220,
    "endMs": 812220,
-   "dice": "Un aceite de oliva macerado con romero durante unos días, aplicado con constancia en las manos,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_158.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 812220,
    "endMs": 816400,
-   "dice": "los codos y las zonas con manchitas del sol, hace un doble trabajo.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_159.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 816400,
    "endMs": 821580,
-   "dice": "Los antioxidantes del romero combaten el daño que va oscureciendo y avejentando esa piel,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 821580,
    "endMs": 824760,
-   "dice": "y el aceite de oliva la nutre y la mantiene flexible.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 10",
     "title": "NUTRE Y PROTEGE",
     "hot": [],
-    "sub": "tarjeta corta con el doble efecto del aceite"
+    "sub": ""
    }
   },
   {
    "startMs": 824760,
    "endMs": 829800,
-   "dice": "No es un blanqueador milagroso, es un cuidado paciente que, con los meses,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 829800,
    "endMs": 834000,
-   "dice": "deja unas manos más suaves, más parejas y con mejor aspecto.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_163.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 834000,
    "endMs": 841620,
-   "dice": "Y les recuerdo la regla de oro, cualquier cosa que trabaje sobre las manchas se usa de noche y nunca antes de salir al sol,",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -1692,14 +1575,12 @@
   {
    "startMs": 841620,
    "endMs": 848880,
-   "dice": "porque el sol es el que las provocó en primer lugar.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 848880,
    "endMs": 856180,
-   "dice": "Este uso no va sobre la piel, va sobre el descanso, y el descanso es el tratamiento de belleza más barato",
    "role": "carousel",
    "focus": 11,
    "intro": false
@@ -1707,54 +1588,50 @@
   {
    "startMs": 856180,
    "endMs": 863380,
-   "dice": "y más ignorado que existe. Unas ramitas de romero fresco cerca de la cama o unas gotas de su aceite esencial en",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_167.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 863380,
    "endMs": 870720,
-   "dice": "la almohada perfuman el cuarto con un aroma que, según se ha estudiado, ayuda a despejar la mente y a mejorar la calidad",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_168.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 870720,
    "endMs": 875340,
-   "dice": "del sueño en algunas personas. Y usted ya sabe lo que hace un buen sueño.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 875340,
    "endMs": 881520,
-   "dice": "Es cuando la piel se repara de verdad, cuando se reduce la hinchazón y cuando el rostro amanece descansado.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 11",
     "title": "LA PIEL SE REPARA MIENTRAS DUERME",
     "hot": [],
-    "sub": "tarjeta con el beneficio del sueño reparador"
+    "sub": ""
    }
   },
   {
    "startMs": 881520,
    "endMs": 887700,
-   "dice": "Las mujeres de antes dormían con las hierbas de su jardín cerca, no por moda, sino por costumbre sabia.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 887700,
    "endMs": 892900,
-   "dice": "Dormir mejor es verse mejor, y el romero la puede acompañar en eso también.",
    "role": "component",
    "kind": "ValQuote",
    "payload": {
@@ -1767,7 +1644,6 @@
   {
    "startMs": 892900,
    "endMs": 897520,
-   "dice": "Duodécimo. El baño de inmersión con romero para la piel de todo el cuerpo.",
    "role": "carousel",
    "focus": 12,
    "intro": false
@@ -1775,34 +1651,32 @@
   {
    "startMs": 897520,
    "endMs": 901500,
-   "dice": "Suena a lujo de spa caro y, sin embargo, es de lo más simple.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 901500,
    "endMs": 907560,
-   "dice": "Se prepara una infusión bien cargada de romero, se cuela y se vuelca en el agua tibia de la bañera,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_175.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 907560,
    "endMs": 914480,
-   "dice": "o se cuelga un atado de romero fresco bajo el chorro de agua caliente para que el vapor arrastre sus aceites.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_176.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 914480,
    "endMs": 918640,
-   "dice": "Sumergirse ahí por 15 o 20 minutos hace dos cosas a la vez.",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -1810,50 +1684,46 @@
     "total": 1,
     "title": "15 A 20 MINUTOS",
     "hot": [],
-    "sub": "tarjeta con el tiempo de inmersión"
+    "sub": ""
    }
   },
   {
    "startMs": 918640,
    "endMs": 923700,
-   "dice": "El calor y el romero relajan los músculos y descargan la tensión del día,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_178.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 923700,
    "endMs": 930180,
-   "dice": "y esos mismos antioxidantes y ese estímulo circulatorio trabajan sobre toda la piel del cuerpo,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 930180,
    "endMs": 933640,
-   "dice": "dejándola más firme, más tersa y con mejor color.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 12",
     "title": "PIEL MÁS FIRME Y TERSA",
     "hot": [],
-    "sub": "tarjeta con el resultado final del baño"
+    "sub": ""
    }
   },
   {
    "startMs": 933640,
    "endMs": 939280,
-   "dice": "Es el ritual del domingo a la tarde, el que la prepara para la semana, y sale de un atado de hierba,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 939280,
    "endMs": 942880,
-   "dice": "no de un frasco de sales de baño con nombre importado.",
    "role": "component",
    "kind": "ValQuote",
    "payload": {
@@ -1866,7 +1736,6 @@
   {
    "startMs": 942880,
    "endMs": 946140,
-   "dice": "Decimotercero. El romero para la piel grasa y los granitos.",
    "role": "carousel",
    "focus": 13,
    "intro": false
@@ -1874,54 +1743,50 @@
   {
    "startMs": 946140,
    "endMs": 953520,
-   "dice": "Este beneficio es un tesoro para las que todavía, pasados los años, pelean con brotes o con una piel que brilla de",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 953520,
    "endMs": 960760,
-   "dice": "más. El romero tiene una acción astringente que regula el exceso de grasa y propiedades que ayudan a mantener a raya",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_185.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 960760,
    "endMs": 963260,
-   "dice": "a las bacterias que agravan los granitos.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 13",
     "title": "ASTRINGENTE NATURAL",
     "hot": [],
-    "sub": "tarjeta corta con la propiedad clave"
+    "sub": ""
    }
   },
   {
    "startMs": 963260,
    "endMs": 968480,
-   "dice": "Usado como tónico con un algodón sobre la zona, deja la piel más equilibrada,",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_187.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 968480,
    "endMs": 971560,
-   "dice": "con el poro menos marcado y el brillo controlado.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 971560,
    "endMs": 978940,
-   "dice": "Sin la sequedad brutal que dejan esos productos de farmacia que prometen secar el grano y terminan resecando la cara entera.",
    "role": "component",
    "kind": "ValQuote",
    "payload": {
@@ -1934,14 +1799,12 @@
   {
    "startMs": 978940,
    "endMs": 983660,
-   "dice": "Suavidad y equilibrio, que es como se cuida una piel adulta, no a los golpes.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 983660,
    "endMs": 988880,
-   "dice": "Décimo cuarto. El romero para unas uñas y unas cutículas fuertes.",
    "role": "carousel",
    "focus": 14,
    "intro": false
@@ -1949,121 +1812,112 @@
   {
    "startMs": 988880,
    "endMs": 992840,
-   "dice": "Un detalle pequeño que dice mucho de una mujer bien cuidada.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 992840,
    "endMs": 1000200,
-   "dice": "Sumergir las puntas de los dedos por unos minutos en agua de romero tibia o masajear las cutículas con el aceite de romero",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_193.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1000200,
    "endMs": 1006160,
-   "dice": "mejora la circulación en la punta de los dedos y nutre esa piel tantas veces olvidada.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_194.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1006160,
    "endMs": 1012420,
-   "dice": "Con constancia, las uñas se ven más fuertes y las cutículas dejan de resecarse y de partirse.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 14",
     "title": "UÑAS MÁS FUERTES",
     "hot": [],
-    "sub": "tarjeta con el resultado del uso 14"
+    "sub": ""
    }
   },
   {
    "startMs": 1012420,
    "endMs": 1020020,
-   "dice": "Es el gesto de dos minutos mientras mira su programa de la tarde que le mantiene las manos elegantes sin una sola visita",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1020020,
    "endMs": 1024260,
-   "dice": "a la manicura. Décimo quinto y el más guardado de todos.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1024260,
    "endMs": 1028100,
-   "dice": "El agua de romero concentrada. El elixir de la casa.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 15",
     "title": "El más guardado de todos...",
     "hot": [],
-    "sub": "teaser cinematográfico de una botella oscura con líquido concentrado, sin revelar la receta"
+    "sub": ""
    }
   },
   {
    "startMs": 1028100,
    "endMs": 1030480,
-   "dice": "Este es el secreto que le prometí para el final.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1030480,
    "endMs": 1034260,
-   "dice": "El que se pasaba de madre a hija no es un uso nuevo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1034260,
    "endMs": 1040800,
-   "dice": "Es la versión suprema del primero. En vez de una infusión suave, se prepara una decocción bien cargada.",
    "role": "component",
    "kind": "ValHero",
    "payload": {
     "kicker": "Uso 15",
     "title": "USO 15 — EL ELIXIR",
     "hot": [],
-    "sub": "Secuencia glass-card premium: ramita de romero flotando sobre papel crema, anillo de luz dorada"
+    "sub": ""
    }
   },
   {
    "startMs": 1040800,
    "endMs": 1044580,
-   "dice": "Más romero, más tiempo de hervor a fuego bajo, tapada.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_202.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1044580,
    "endMs": 1049680,
-   "dice": "Hasta obtener un líquido oscuro y potente que se guarda en una botella de vidrio en la heladera.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_203.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1049680,
    "endMs": 1052300,
-   "dice": "Ese concentrado es el que sirve para todo.",
    "role": "component",
    "kind": "ValStat",
    "payload": {
@@ -2078,96 +1932,94 @@
   {
    "startMs": 1052300,
    "endMs": 1058180,
-   "dice": "Unas gotas en el enjuague del cabello. Un poco diluido como tónico más potente para la piel del cuerpo.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_205.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1058180,
    "endMs": 1061180,
-   "dice": "Unas cucharadas en el agua del último enjuague.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_206.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1061180,
    "endMs": 1064180,
-   "dice": "Un algodón sobre las manchas de las manos por la noche.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_207.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1064180,
    "endMs": 1067020,
-   "dice": "Es la despensa de belleza de la mujer que sabía.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1067020,
    "endMs": 1074300,
-   "dice": "Una sola preparación hecha con paciencia un domingo que le rinde toda la semana para media docena de usos y que le cuesta",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1074300,
    "endMs": 1077480,
-   "dice": "lo que vale un atado de romero y un poco de su tiempo.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_210.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1077480,
    "endMs": 1083500,
-   "dice": "Piensa en el contraste. De un lado, esta botellita oscura y humilde en la puerta de la heladera.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_211.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1083500,
    "endMs": 1087560,
-   "dice": "Del otro, el estante de la farmacia con 20 frascos de colores.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_212.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1087560,
    "endMs": 1092900,
-   "dice": "Cada uno con su promesa y su precio. Las mujeres que se veían radiantes hasta grandes.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1092900,
    "endMs": 1096580,
-   "dice": "Esas que uno recuerda con el cutis terso y el cabello con vida.",
    "role": "presenterAI",
    "asset": "img/truco-romero-joven_s_214.jpg",
-   "payload": {}
+   "payload": {
+    "title": "",
+    "sub": ""
+   }
   },
   {
    "startMs": 1096580,
    "endMs": 1099940,
-   "dice": "Muchas veces no tenían el estante, tenían la botellita.",
    "role": "component",
    "kind": "ValQuote",
    "payload": {
@@ -2180,14 +2032,12 @@
   {
    "startMs": 1099940,
    "endMs": 1104460,
-   "dice": "Y ese era todo el secreto. La medida exacta de esta decocción.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1104460,
    "endMs": 1108740,
-   "dice": "Cuánto romero, cuánta agua, cuánto tiempo de hervor y cuánto le dura.",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -2195,30 +2045,26 @@
     "total": 1,
     "title": "MEDIDA EXACTA · ROMERO + AGUA + HERVOR",
     "hot": [],
-    "sub": "Tarjeta con iconografía: romero, agua, tiempo de hervor, duración — sin cifras inventadas"
+    "sub": ""
    }
   },
   {
    "startMs": 1108740,
    "endMs": 1113500,
-   "dice": "Para que le quede en el punto justo y no se le eche a perder, se la dejo escrita,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1113500,
    "endMs": 1115880,
-   "dice": "con todo detalle, en la descripción.",
    "role": "avatar",
    "payload": {
-    "title": "↓ EN LA DESCRIPCIÓN",
-    "kicker": ""
+    "title": "↓ EN LA DESCRIPCIÓN"
    }
   },
   {
    "startMs": 1115880,
    "endMs": 1122420,
-   "dice": "Y ahí lo tiene. 15 maneras de usar una sola ramita verde que crece en cualquier maceta.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -2232,7 +2078,6 @@
   {
    "startMs": 1122420,
    "endMs": 1128340,
-   "dice": "Para el rostro, para el cabello, para el cuerpo, para las manos y hasta para el descanso.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -2250,14 +2095,12 @@
   {
    "startMs": 1128340,
    "endMs": 1131880,
-   "dice": "Deténgase un momento y piense en lo que acabamos de recorrer.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1131880,
    "endMs": 1135840,
-   "dice": "Una rutina de belleza completa, de la cabeza a los pies.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -2272,152 +2115,146 @@
   {
    "startMs": 1135840,
    "endMs": 1142520,
-   "dice": "Que en total cuesta menos que un solo frasco de esas cremas que le ofrecen en la vidriera con un nombre en francés.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_224.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1142520,
    "endMs": 1145880,
-   "dice": "No es magia y no es que antes todo era mejor.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1145880,
    "endMs": 1152160,
-   "dice": "Es que una plantita que crece gratis en el jardín es demasiado barata para construir un negocio encima.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_226.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1152160,
    "endMs": 1155400,
-   "dice": "Y por eso, con el tiempo, se dejó de contar.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1155400,
    "endMs": 1159820,
-   "dice": "Nadie va a pagar por un anuncio de romero, porque nadie es dueño del romero.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1159820,
    "endMs": 1166740,
-   "dice": "En cambio, un frasco con un nombre registrado, ese sí se puede vender caro y anunciar en todos lados.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_229.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1166740,
    "endMs": 1173000,
-   "dice": "Así, poco a poco, lo simple y lo que funciona, quedó tapado por lo caro y lo que promete.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1173000,
    "endMs": 1175860,
-   "dice": "Su abuela no olvidó el romero porque fuera malo.",
    "role": "presenterAI",
    "asset": "img/truco-romero-joven_s_231.jpg",
-   "payload": {}
+   "payload": {
+    "title": "",
+    "sub": ""
+   }
   },
   {
    "startMs": 1175860,
    "endMs": 1179480,
-   "dice": "Lo dejó de nombrar porque llegó algo con mejor publicidad.",
    "role": "presenterAI",
    "asset": "img/truco-romero-joven_s_232.jpg",
-   "payload": {}
+   "payload": {
+    "title": "",
+    "sub": ""
+   }
   },
   {
    "startMs": 1179480,
    "endMs": 1183080,
-   "dice": "Un frasco más bonito y una promesa más grande.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_233.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1183080,
    "endMs": 1186660,
-   "dice": "Pero la ramita seguía ahí, en la maceta, esperando.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_234.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1186660,
    "endMs": 1189200,
-   "dice": "Y hoy, usted la volvió a encontrar.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1189200,
    "endMs": 1194080,
-   "dice": "Ahora, permítame ser la médica responsable que soy y repetirle lo de siempre,",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1194080,
    "endMs": 1199940,
-   "dice": "porque la quiero cuidar de verdad. Nada de esto reemplaza a un dermatólogo cuando hay un problema real.",
    "role": "avatar",
    "payload": {
-    "title": "DESCARGO MÉDICO",
-    "kicker": ""
+    "title": "DESCARGO MÉDICO"
    }
   },
   {
    "startMs": 1199940,
    "endMs": 1204080,
-   "dice": "El romero es potente. Siempre se prueba primero en una zona pequeña.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_238.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1204080,
    "endMs": 1207060,
-   "dice": "Siempre se diluye bien el aceite esencial.",
    "role": "broll",
    "asset": "broll/truco-romero-joven_s_239.mp4",
    "payload": {
+    "title": "",
     "sub": ""
    }
   },
   {
    "startMs": 1207060,
    "endMs": 1214360,
-   "dice": "Y en el embarazo, en la lactancia o si toma alguna medicación, conviene consultar antes de usarlo de forma intensa.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1214360,
    "endMs": 1220200,
-   "dice": "Todo lo que aclare o trabaje sobre las manchas, se usa de noche y jamás antes del sol.",
    "role": "component",
    "kind": "ValStep",
    "payload": {
@@ -2425,84 +2262,75 @@
     "total": 1,
     "title": "ACLARANTES · SOLO DE NOCHE · NUNCA ANTES DEL SOL",
     "hot": [],
-    "sub": "Icono de sol tachado + luna, tarjeta de advertencia en tono terracota"
+    "sub": ""
    }
   },
   {
    "startMs": 1220200,
    "endMs": 1226260,
-   "dice": "Y si algo, lo que sea, le irrita o le arde, se enjuaga y no se vuelve a usar.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1226260,
    "endMs": 1228640,
-   "dice": "La belleza de verdad nunca duele.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1228640,
    "endMs": 1232760,
-   "dice": "Le voy a pedir tres cosas y ninguna le cuesta un peso.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1232760,
    "endMs": 1240180,
-   "dice": "La primera, guarde este video porque son 15 usos de la misma planta y nadie los recuerda a todos de",
    "role": "component",
    "kind": "ValCta",
    "payload": {
     "kicker": "Antes de irse",
     "title": "1 · GUARDE ESTE VIDEO",
-    "sub": "Tarjeta 1 de 3: icono de guardar sobre papel crema, avatar en split junto al texto"
+    "sub": ""
    }
   },
   {
    "startMs": 1240180,
    "endMs": 1247800,
-   "dice": "una sola vez. Va a querer volver a él. La segunda, suscríbase porque en cada video le voy a seguir devolviendo estos tesoros",
    "role": "component",
    "kind": "ValCta",
    "payload": {
     "kicker": "Antes de irse",
     "title": "2 · SUSCRÍBASE",
-    "sub": "Tarjeta 2 de 3: icono de campanita/suscribirse"
+    "sub": ""
    }
   },
   {
    "startMs": 1247800,
    "endMs": 1251420,
-   "dice": "de belleza que la industria preferiría que usted olvidara.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1251420,
    "endMs": 1253880,
-   "dice": "Y la tercera, la más importante.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1253880,
    "endMs": 1260960,
-   "dice": "En la descripción, aquí abajo, le dejé escritas las medidas exactas de las recetas que sí las necesitan.",
    "role": "component",
    "kind": "ValCta",
    "payload": {
     "kicker": "Antes de irse",
     "title": "3 · MEDIDAS EN LA DESCRIPCIÓN",
-    "sub": "Tarjeta 3 de 3: flecha hacia abajo, icono de lista/receta"
+    "sub": ""
    }
   },
   {
    "startMs": 1260960,
    "endMs": 1263980,
-   "dice": "La del tónico de romero. La de los cubitos.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -2517,7 +2345,6 @@
   {
    "startMs": 1263980,
    "endMs": 1267080,
-   "dice": "La de la decocción concentrada y varias más.",
    "role": "component",
    "kind": "ValChecklist",
    "payload": {
@@ -2532,31 +2359,26 @@
   {
    "startMs": 1267080,
    "endMs": 1270960,
-   "dice": "Para que las tenga a mano y no tenga que anotar nada corriendo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1270960,
    "endMs": 1273720,
-   "dice": "Está todo ahí, ordenado para usted.",
    "role": "avatar",
    "payload": {
-    "title": "↓ TODO EN LA DESCRIPCIÓN",
-    "kicker": ""
+    "title": "↓ TODO EN LA DESCRIPCIÓN"
    }
   },
   {
    "startMs": 1273720,
    "endMs": 1276600,
-   "dice": "Cuídese, quiérase y nos vemos en el próximo.",
    "role": "avatar",
    "payload": {}
   },
   {
    "startMs": 1276600,
    "endMs": 1281100,
-   "dice": "Soy la doctora Valeria Alcázar y para mí es un gusto acompañarla.",
    "role": "avatar",
    "payload": {}
   }
