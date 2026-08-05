@@ -1,13 +1,12 @@
 /**
  * RosemaryHero — secuencia premium de motion-design de belleza (canal Dra. Valeria Alcázar).
- * Reimaginación EN NUESTRA PALETA (papel crema · tinta espresso · latón/oro · energía salvia)
- * del trailer "liquid-glass" del romero: 6-9 capas de profundidad, haze volumétrico, partículas,
- * parallax, glass cards frosted 3D, cámara lenta (push/drift/arco) y transiciones fundidas (sin cortes duros).
+ * v2 — DINÁMICA: cámara en movimiento continuo, romero que rota/deriva, glass cards que entran
+ * con fuerza y flotan con parallax, bokeh de primer plano, rayos de luz que barren, energía
+ * salvia→oro que fluye. Paleta CREMA del canal (papel · tinta espresso · latón). Sin texto-IA.
  *
  * Autocontenida: sólo depende de src/valeria/theme.tsx + 4 assets en public/img/
  *   rosemary_hero_sprig.png · rosemary_hero_card_1..3.jpg
- *
- * Composición limpia registrada en src/index_rosemaryhero.tsx → "Val-RosemaryHero".
+ * Composición limpia en src/index_rosemaryhero.tsx → "Val-RosemaryHero".
  */
 import React from 'react';
 import {
@@ -18,6 +17,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
   spring,
+  Easing,
 } from 'remotion';
 import {
   VAL,
@@ -32,7 +32,6 @@ import {
   WarmVignette,
 } from './theme';
 
-// ── PRNG determinista (sin Math.random para render reproducible) ──────────────
 const mulberry32 = (seed: number) => () => {
   let t = (seed += 0x6d2b79f5);
   t = Math.imul(t ^ (t >>> 15), t | 1);
@@ -40,28 +39,27 @@ const mulberry32 = (seed: number) => () => {
   return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
 };
 
-const CENTER = {x: 960, y: 540};
+const CX = 960;
+const CY = 540;
 
-// blur-in helper: opacidad + desenfoque de entrada/salida en una ventana [in..hold..out]
-const reveal = (
-  frame: number,
-  inS: number,
-  inE: number,
-  outS: number,
-  outE: number,
-) => {
-  const o = interpolate(frame, [inS, inE, outS, outE], [0, 1, 1, 0], CLAMP);
-  const blur = interpolate(frame, [inS, inE, outS, outE], [10, 0, 0, 10], CLAMP);
-  const y = interpolate(frame, [inS, inE], [16, 0], CLAMP);
-  return {opacity: o, filter: `blur(${blur}px)`, transform: `translateY(${y}px)`};
+// ── Cámara global: push + drift + arco, con un empujón al clímax ──────────────
+const useCamera = () => {
+  const frame = useCurrentFrame();
+  const {durationInFrames} = useVideoConfig();
+  const basePush = interpolate(frame, [0, durationInFrames], [1.02, 1.09], CLAMP);
+  const climaxPush = interpolate(frame, [230, 300], [0, 0.05], CLAMP);
+  const push = basePush + climaxPush;
+  const x = Math.sin(frame / 62) * 46 + Math.sin(frame / 23) * 10;
+  const y = Math.cos(frame / 78) * 26;
+  const rot = Math.sin(frame / 96) * 1.4;
+  return {push, x, y, rot};
 };
 
-// ── Partículas de polvo teñidas de oro, en 3 planos de parallax ───────────────
-const Particles: React.FC<{count: number; plane: number; camX: number; camY: number}> = ({
+// ── Partículas de polvo doradas en planos de parallax ─────────────────────────
+const Particles: React.FC<{count: number; plane: number; cam: {x: number; y: number}}> = ({
   count,
   plane,
-  camX,
-  camY,
+  cam,
 }) => {
   const frame = useCurrentFrame();
   const {height} = useVideoConfig();
@@ -72,23 +70,24 @@ const Particles: React.FC<{count: number; plane: number; camX: number; camY: num
       arr.push({
         x: rnd() * 1920,
         y0: rnd() * 1080,
-        r: 1.4 + rnd() * (plane === 2 ? 5 : plane === 1 ? 3 : 1.8),
-        sp: 6 + rnd() * 16 + plane * 6,
-        drift: (rnd() - 0.5) * 40,
-        a: 0.12 + rnd() * (plane === 2 ? 0.5 : 0.28),
+        r: 1.4 + rnd() * (plane === 2 ? 9 : plane === 1 ? 3.4 : 1.8),
+        sp: 10 + rnd() * 22 + plane * 12,
+        drift: (rnd() - 0.5) * 90,
+        a: 0.12 + rnd() * (plane === 2 ? 0.55 : 0.3),
         ph: rnd() * Math.PI * 2,
       });
     }
     return arr;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count, plane]);
-  const par = (plane + 1) * 0.5;
+  const par = (plane + 1) * 0.7;
   return (
-    <AbsoluteFill style={{transform: `translate(${camX * par}px, ${camY * par}px)`}}>
+    <AbsoluteFill style={{transform: `translate(${cam.x * par}px, ${cam.y * par}px)`}}>
       {items.map((p, i) => {
-        const y = ((p.y0 - (frame * p.sp) / 30) % (height + 80) + height + 80) % (height + 80) - 40;
-        const x = p.x + Math.sin(frame / 40 + p.ph) * p.drift;
-        const tw = 0.6 + 0.4 * Math.sin(frame / 18 + p.ph);
+        const y =
+          ((p.y0 - (frame * p.sp) / 30) % (height + 120) + height + 120) % (height + 120) - 60;
+        const x = p.x + Math.sin(frame / 34 + p.ph) * p.drift;
+        const tw = 0.55 + 0.45 * Math.sin(frame / 14 + p.ph);
         return (
           <div
             key={i}
@@ -103,7 +102,7 @@ const Particles: React.FC<{count: number; plane: number; camX: number; camY: num
                 VAL.gold,
                 0,
               )} 70%)`,
-              filter: plane === 0 ? 'blur(2px)' : 'none',
+              filter: plane === 2 ? 'blur(6px)' : plane === 0 ? 'blur(2px)' : 'none',
             }}
           />
         );
@@ -112,7 +111,34 @@ const Particles: React.FC<{count: number; plane: number; camX: number; camY: num
   );
 };
 
-// ── Ramita botánica de línea fina dorada (flourish de esquina) ────────────────
+// ── Rayo de luz cálido que barre lento ────────────────────────────────────────
+const LightSweep: React.FC = () => {
+  const frame = useCurrentFrame();
+  const rot = interpolate(frame, [0, 300], [-18, 22], CLAMP);
+  const op = 0.14 + 0.06 * Math.sin(frame / 40);
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none', mixBlendMode: 'screen'}}>
+      <div
+        style={{
+          position: 'absolute',
+          left: CX - 200,
+          top: -400,
+          width: 400,
+          height: 2000,
+          transformOrigin: 'top center',
+          transform: `rotate(${rot}deg)`,
+          background: `linear-gradient(90deg, ${rgba(VAL.goldLite, 0)} 0%, ${rgba(
+            VAL.goldLite,
+            op,
+          )} 50%, ${rgba(VAL.goldLite, 0)} 100%)`,
+          filter: 'blur(24px)',
+        }}
+      />
+    </AbsoluteFill>
+  );
+};
+
+// ── Ramita botánica de línea dorada (flourish de esquina) ─────────────────────
 const Sprig: React.FC<{style?: React.CSSProperties; flip?: boolean}> = ({style, flip}) => (
   <svg
     width="360"
@@ -133,86 +159,92 @@ const Sprig: React.FC<{style?: React.CSSProperties; flip?: boolean}> = ({style, 
   </svg>
 );
 
-// ── Glass card frosted 3D con imagen de belleza + rótulo ──────────────────────
+// ── Glass card frosted 3D con imagen de belleza (grade cálido que unifica) ─────
 type CardDef = {
   img: string;
-  label: string;
-  sub: string;
-  tx: number; // posición X objetivo (rel. centro)
+  label?: string;
+  sub?: string;
+  tx: number;
   ty: number;
   scale: number;
-  fromX: number; // origen de entrada (plano de profundidad)
-  fromY: number;
-  fromZ: number; // escala inicial (más chico = más lejos)
+  fromScale: number;
   inS: number;
   rot: number;
+  hoverAmp: number;
+  hoverPh: number;
+  small?: boolean;
 };
 
-const GlassCard: React.FC<{def: CardDef; camX: number; camY: number}> = ({def, camX, camY}) => {
+const GlassCard: React.FC<{def: CardDef; cam: {x: number; y: number}}> = ({def, cam}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const s = spring({frame: frame - def.inS, fps, config: {damping: 200, mass: 1.1}});
-  const x = interpolate(s, [0, 1], [def.fromX, def.tx]);
-  const y = interpolate(s, [0, 1], [def.fromY, def.ty]);
-  const sc = interpolate(s, [0, 1], [def.fromZ, def.scale]) * (1 + camX * 0.00004);
-  const op = interpolate(frame, [def.inS, def.inS + 14], [0, 1], CLAMP);
-  // hover suave + micro-rotación (parallax de profundidad con la cámara)
-  const hoverY = Math.sin(frame / 34 + def.tx) * 7;
-  const par = def.scale; // cards más grandes = más cerca = más parallax
-  const W = 300;
-  const H = 372;
+  // entrada dramática desde profundidad con overshoot
+  const s = spring({frame: frame - def.inS, fps, config: {damping: 13, mass: 0.8, stiffness: 90}});
+  const sc = interpolate(s, [0, 1], [def.fromScale, def.scale]);
+  const rotY = interpolate(s, [0, 1], [def.rot * 3.4, def.rot]);
+  const op = interpolate(frame, [def.inS, def.inS + 12], [0, 1], CLAMP);
+  const hover = Math.sin(frame / 30 + def.hoverPh) * def.hoverAmp;
+  const wob = Math.sin(frame / 44 + def.hoverPh) * 2.4;
+  const par = def.scale;
+  const sheen = interpolate((frame + def.hoverPh * 30) % 150, [0, 150], [-140, 260]);
+  const W = def.small ? 190 : 300;
+  const H = def.small ? 236 : 372;
   return (
     <div
       style={{
         position: 'absolute',
-        left: CENTER.x - W / 2 + x + camX * 0.12 * par,
-        top: CENTER.y - H / 2 + y + hoverY + camY * 0.12 * par,
+        left: CX - W / 2 + def.tx + cam.x * 0.14 * par,
+        top: CY - H / 2 + def.ty + hover + cam.y * 0.14 * par,
         width: W,
         height: H,
         opacity: op,
-        transform: `perspective(1400px) scale(${sc}) rotateY(${def.rot - camX * 0.02}deg) rotateX(${
-          camY * 0.015
+        transform: `perspective(1300px) scale(${sc}) rotateY(${rotY + wob - cam.x * 0.02}deg) rotateX(${
+          -cam.y * 0.02
         }deg)`,
         transformStyle: 'preserve-3d',
-        borderRadius: 26,
-        background: `linear-gradient(150deg, ${rgba(VAL.card, 0.82)} 0%, ${rgba(
+        borderRadius: 24,
+        background: `linear-gradient(150deg, ${rgba(VAL.card, 0.9)} 0%, ${rgba(
           VAL.paperWarm,
-          0.66,
+          0.74,
         )} 100%)`,
-        backdropFilter: 'blur(7px)',
-        WebkitBackdropFilter: 'blur(7px)',
-        border: `1.5px solid ${rgba(VAL.onAccent, 0.75)}`,
-        boxShadow: `0 34px 70px ${rgba(VAL.ink, 0.26)}, 0 6px 18px ${rgba(
+        backdropFilter: 'blur(9px)',
+        WebkitBackdropFilter: 'blur(9px)',
+        border: `1.5px solid ${rgba(VAL.onAccent, 0.85)}`,
+        boxShadow: `0 40px 80px ${rgba(VAL.ink, 0.3)}, 0 8px 22px ${rgba(
           VAL.ink,
-          0.16,
-        )}, inset 0 1px 0 ${rgba(VAL.onAccent, 0.9)}, inset 0 0 0 1px ${rgba(VAL.gold, 0.12)}`,
+          0.18,
+        )}, inset 0 1.5px 0 ${rgba(VAL.onAccent, 0.95)}, inset 0 0 0 1px ${rgba(VAL.gold, 0.16)}`,
         overflow: 'hidden',
-        padding: 16,
+        padding: def.small ? 10 : 15,
         display: 'flex',
         flexDirection: 'column',
-        gap: 12,
+        gap: def.small ? 0 : 10,
       }}
     >
-      {/* sheen diagonal (reflejo de vidrio) */}
+      {/* sheen que se mueve (reflejo de vidrio) */}
       <div
         style={{
           position: 'absolute',
-          inset: 0,
-          background: `linear-gradient(115deg, ${rgba(VAL.onAccent, 0.5)} 0%, ${rgba(
+          top: -40,
+          bottom: -40,
+          left: sheen,
+          width: 120,
+          background: `linear-gradient(105deg, ${rgba(VAL.onAccent, 0)} 0%, ${rgba(
             VAL.onAccent,
-            0,
-          )} 26%, ${rgba(VAL.onAccent, 0)} 70%, ${rgba(VAL.onAccent, 0.22)} 100%)`,
+            0.5,
+          )} 50%, ${rgba(VAL.onAccent, 0)} 100%)`,
+          transform: 'skewX(-14deg)',
           pointerEvents: 'none',
         }}
       />
-      {/* ventana de imagen (piel), recorte al ras + grade cálido */}
+      {/* ventana de imagen (piel) recortada al ras + grade cálido que MATA el fondo frío */}
       <div
         style={{
           position: 'relative',
-          height: 232,
-          borderRadius: 16,
+          height: def.small ? '100%' : 232,
+          borderRadius: 15,
           overflow: 'hidden',
-          boxShadow: `inset 0 0 0 1px ${rgba(VAL.gold, 0.22)}`,
+          boxShadow: `inset 0 0 0 1px ${rgba(VAL.gold, 0.24)}`,
         }}
       >
         <Img
@@ -221,19 +253,28 @@ const GlassCard: React.FC<{def: CardDef; camX: number; camY: number}> = ({def, c
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            transform: 'scale(1.35)',
-            filter: 'saturate(0.82) contrast(1.02)',
+            objectPosition: 'center 32%',
+            transform: 'scale(1.55)',
+            filter: 'saturate(0.7) contrast(1.04) brightness(1.02)',
           }}
         />
-        {/* multiply cálido para unir a la paleta */}
+        {/* recolor cálido total (blend 'color') → unifica cualquier fondo a la paleta */}
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            mixBlendMode: 'color',
+            background: rgba(VAL.gold, 0.45),
+          }}
+        />
         <div
           style={{
             position: 'absolute',
             inset: 0,
             mixBlendMode: 'multiply',
-            background: `linear-gradient(160deg, ${rgba(VAL.gold, 0.28)}, ${rgba(
+            background: `linear-gradient(160deg, ${rgba(VAL.gold, 0.22)}, ${rgba(
               VAL.paperDeep,
-              0.34,
+              0.3,
             )})`,
           }}
         />
@@ -241,77 +282,82 @@ const GlassCard: React.FC<{def: CardDef; camX: number; camY: number}> = ({def, c
           style={{
             position: 'absolute',
             inset: 0,
-            background: `linear-gradient(180deg, transparent 55%, ${rgba(VAL.card, 0.55)} 100%)`,
+            background: `linear-gradient(180deg, transparent 52%, ${rgba(VAL.card, 0.6)} 100%)`,
           }}
         />
       </div>
-      <div style={{paddingLeft: 4}}>
-        <div
-          style={{
-            fontFamily: FONT_DISPLAY,
-            fontSize: 27,
-            fontWeight: 600,
-            color: VAL.ink,
-            lineHeight: 1.05,
-          }}
-        >
-          {def.label}
+      {def.label && (
+        <div style={{paddingLeft: 4}}>
+          <div
+            style={{
+              fontFamily: FONT_DISPLAY,
+              fontSize: 26,
+              fontWeight: 600,
+              color: VAL.ink,
+              lineHeight: 1.04,
+            }}
+          >
+            {def.label}
+          </div>
+          <div
+            style={{
+              fontFamily: FONT_SERIF,
+              fontSize: 15,
+              color: VAL.ink2,
+              marginTop: 4,
+              lineHeight: 1.26,
+            }}
+          >
+            {def.sub}
+          </div>
         </div>
-        <div
-          style={{
-            fontFamily: FONT_SERIF,
-            fontSize: 15.5,
-            color: VAL.ink2,
-            marginTop: 5,
-            lineHeight: 1.28,
-          }}
-        >
-          {def.sub}
-        </div>
-      </div>
+      )}
     </div>
   );
 };
 
 // ── Energía salvia→oro que fluye del romero hacia las tarjetas ────────────────
-const EnergyFlow: React.FC<{cards: CardDef[]; camX: number; camY: number}> = ({cards, camX, camY}) => {
+const EnergyFlow: React.FC<{targets: {x: number; y: number}[]; cam: {x: number; y: number}}> = ({
+  targets,
+  cam,
+}) => {
   const frame = useCurrentFrame();
-  const appear = interpolate(frame, [188, 214], [0, 1], CLAMP);
-  const pulse = 0.5 + 0.5 * Math.sin(frame / 12);
+  const appear = interpolate(frame, [150, 196], [0, 1], CLAMP);
+  const pulse = 0.5 + 0.5 * Math.sin(frame / 10);
   if (appear <= 0) return null;
   return (
-    <AbsoluteFill style={{transform: `translate(${camX * 0.9}px, ${camY * 0.9}px)`}}>
+    <AbsoluteFill style={{transform: `translate(${cam.x * 0.9}px, ${cam.y * 0.9}px)`}}>
       <svg width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
         <defs>
           <linearGradient id="rh-energy" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%" stopColor={rgba(VAL.sage, 0)} />
-            <stop offset="45%" stopColor={rgba(shade(VAL.sage, 0.25), 0.9 * appear)} />
-            <stop offset="100%" stopColor={rgba(VAL.goldLite, 0.95 * appear)} />
+            <stop offset="40%" stopColor={rgba(shade(VAL.sage, 0.25), 0.9 * appear)} />
+            <stop offset="100%" stopColor={rgba(VAL.goldLite, 0.98 * appear)} />
           </linearGradient>
-          <filter id="rh-glow" x="-40%" y="-40%" width="180%" height="180%">
-            <feGaussianBlur stdDeviation="5" result="b" />
+          <filter id="rh-glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="6" result="b" />
             <feMerge>
               <feMergeNode in="b" />
               <feMergeNode in="SourceGraphic" />
             </feMerge>
           </filter>
         </defs>
-        {cards.map((c, i) => {
-          const ex = CENTER.x + c.tx;
-          const ey = CENTER.y + c.ty;
-          const mx = (CENTER.x + ex) / 2 + Math.sin(frame / 22 + i) * 40;
-          const my = (CENTER.y + ey) / 2 - 90 - i * 26;
-          const dash = 22 + pulse * 10;
+        {targets.map((t, i) => {
+          const ex = CX + t.x;
+          const ey = CY + t.y;
+          const mx = (CX + ex) / 2 + Math.sin(frame / 18 + i) * 60;
+          const my = (CY + ey) / 2 - 100 - i * 22;
+          const dash = 24 + pulse * 12;
           return (
             <path
               key={i}
-              d={`M${CENTER.x} ${CENTER.y} Q ${mx} ${my}, ${ex} ${ey}`}
+              d={`M${CX} ${CY} Q ${mx} ${my}, ${ex} ${ey}`}
               fill="none"
               stroke="url(#rh-energy)"
-              strokeWidth={2.4 + pulse * 1.6}
+              strokeWidth={2.6 + pulse * 1.8}
               strokeLinecap="round"
-              strokeDasharray={`${dash} ${dash * 0.9}`}
-              strokeDashoffset={-frame * 3.2}
+              strokeDasharray={`${dash} ${dash}`}
+              strokeDashoffset={-frame * 5}
               filter="url(#rh-glow)"
               opacity={appear}
             />
@@ -322,48 +368,48 @@ const EnergyFlow: React.FC<{cards: CardDef[]; camX: number; camY: number}> = ({c
   );
 };
 
-// ── HERO rosemary sprig con halo ──────────────────────────────────────────────
-const Hero: React.FC<{camX: number; camY: number}> = ({camX, camY}) => {
+// ── HERO rosemary sprig: rota, deriva, respira, con halo pulsante ─────────────
+const Hero: React.FC<{cam: {x: number; y: number}}> = ({cam}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const s = spring({frame: frame - 4, fps, config: {damping: 200, mass: 1.4}});
-  const inScale = interpolate(s, [0, 1], [0.86, 1]);
-  const float = Math.sin(frame / 40) * 12;
-  const tilt = Math.sin(frame / 70) * 2.2;
-  const glowPulse = 0.62 + 0.38 * Math.sin(frame / 26);
-  // se encoge un toque hacia el frame final para dejar respirar el texto
-  const climax = interpolate(frame, [250, 300], [1, 0.92], CLAMP);
+  const s = spring({frame: frame - 2, fps, config: {damping: 40, mass: 1.6, stiffness: 60}});
+  const inScale = interpolate(s, [0, 1], [0.7, 1]);
+  const spin = -8 + Math.sin(frame / 55) * 6 + frame * 0.05; // deriva rotacional continua
+  const bob = Math.sin(frame / 32) * 20;
+  const driftX = Math.sin(frame / 70) * 30;
+  const breathe = 1 + Math.sin(frame / 46) * 0.03;
+  const glow = 0.6 + 0.4 * Math.sin(frame / 22);
+  const climax = interpolate(frame, [244, 300], [1, 0.9], CLAMP);
   return (
     <AbsoluteFill
       style={{
         justifyContent: 'center',
         alignItems: 'center',
-        transform: `translate(${camX * 0.5}px, ${camY * 0.5 + float}px)`,
+        transform: `translate(${cam.x * 0.55 + driftX}px, ${cam.y * 0.55 + bob}px)`,
       }}
     >
-      {/* halo salvia/oro */}
       <div
         style={{
           position: 'absolute',
-          width: 900,
-          height: 900,
+          width: 1000,
+          height: 1000,
           borderRadius: '50%',
-          background: `radial-gradient(circle, ${rgba(shade(VAL.sage, 0.4), 0.28 * glowPulse)} 0%, ${rgba(
+          background: `radial-gradient(circle, ${rgba(shade(VAL.sage, 0.42), 0.3 * glow)} 0%, ${rgba(
             VAL.goldLite,
-            0.14 * glowPulse,
-          )} 34%, ${rgba(VAL.paper, 0)} 66%)`,
-          filter: 'blur(8px)',
+            0.16 * glow,
+          )} 32%, ${rgba(VAL.paper, 0)} 64%)`,
+          filter: 'blur(10px)',
         }}
       />
       <Img
         src={staticFile('img/rosemary_hero_sprig.png')}
         style={{
-          width: 760,
-          transform: `scale(${inScale * climax}) rotate(${-8 + tilt}deg)`,
-          opacity: interpolate(frame, [0, 20], [0, 1], CLAMP),
-          filter: `drop-shadow(0 24px 44px ${rgba(VAL.ink, 0.34)}) drop-shadow(0 0 26px ${rgba(
+          width: 820,
+          transform: `scale(${inScale * breathe * climax}) rotate(${spin}deg)`,
+          opacity: interpolate(frame, [0, 16], [0, 1], CLAMP),
+          filter: `drop-shadow(0 26px 48px ${rgba(VAL.ink, 0.36)}) drop-shadow(0 0 30px ${rgba(
             VAL.sage,
-            0.24 * glowPulse,
+            0.28 * glow,
           )})`,
         }}
       />
@@ -371,34 +417,39 @@ const Hero: React.FC<{camX: number; camY: number}> = ({camX, camY}) => {
   );
 };
 
-// ── Bloque de texto central (reveals progresivos) ─────────────────────────────
-const CenterText: React.FC<{
+// ── Texto central kinético (slide + blur + scale) ─────────────────────────────
+const KineticText: React.FC<{
   text: string;
   inS: number;
-  inE: number;
   outS: number;
-  outE: number;
   size: number;
   font: string;
   color?: string;
   italic?: boolean;
   y?: number;
-}> = ({text, inS, inE, outS, outE, size, font, color = VAL.ink, italic, y = 360}) => {
+}> = ({text, inS, outS, size, font, color = VAL.ink, italic, y = 300}) => {
   const frame = useCurrentFrame();
-  const r = reveal(frame, inS, inE, outS, outE);
-  if (r.opacity <= 0.001) return null;
+  const inO = interpolate(frame, [inS, inS + 16], [0, 1], {...CLAMP, easing: Easing.out(Easing.cubic)});
+  const outO = interpolate(frame, [outS, outS + 16], [1, 0], CLAMP);
+  const op = Math.min(inO, outO);
+  if (op <= 0.001) return null;
+  const slide = interpolate(frame, [inS, inS + 16], [40, 0], {...CLAMP, easing: Easing.out(Easing.cubic)});
+  const blur = interpolate(frame, [inS, inS + 16], [12, 0], CLAMP);
+  const sc = interpolate(frame, [inS, inS + 16], [0.94, 1], CLAMP);
   return (
     <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center'}}>
       <div
         style={{
           marginTop: y,
-          ...r,
+          opacity: op,
+          filter: `blur(${blur}px)`,
+          transform: `translateY(${slide}px) scale(${sc})`,
           fontFamily: font,
           fontStyle: italic ? 'italic' : 'normal',
           fontSize: size,
           fontWeight: 600,
           color,
-          textShadow: `0 2px 10px ${rgba(VAL.paper, 0.8)}`,
+          textShadow: `0 2px 14px ${rgba(VAL.paper, 0.85)}`,
           letterSpacing: 0.3,
           textAlign: 'center',
         }}
@@ -409,248 +460,125 @@ const CenterText: React.FC<{
   );
 };
 
-// ── Escena completa ───────────────────────────────────────────────────────────
 export const RosemaryHero: React.FC = () => {
   const frame = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-
-  // Cámara: push-in lento + drift lateral + micro-arco (aplicada a fondo/midground)
-  const push = interpolate(frame, [0, durationInFrames], [1.0, 1.06], CLAMP);
-  const camX = Math.sin(frame / 90) * 26; // drift lateral
-  const camY = Math.cos(frame / 120) * 14;
+  const cam = useCamera();
 
   const cards: CardDef[] = [
-    {
-      img: 'img/rosemary_hero_card_1.jpg',
-      label: 'Brillo natural',
-      sub: 'La piel refleja la luz, luminosa y descansada.',
-      tx: -560,
-      ty: -30,
-      scale: 1.0,
-      fromX: -820,
-      fromY: 120,
-      fromZ: 0.6,
-      inS: 96,
-      rot: 10,
-    },
-    {
-      img: 'img/rosemary_hero_card_2.jpg',
-      label: 'Textura más suave',
-      sub: 'El cutis se siente terso, parejo y pulido.',
-      tx: 560,
-      ty: -110,
-      scale: 0.94,
-      fromX: 860,
-      fromY: -60,
-      fromZ: 0.55,
-      inS: 132,
-      rot: -11,
-    },
-    {
-      img: 'img/rosemary_hero_card_3.jpg',
-      label: 'Apariencia más firme',
-      sub: 'El contorno se ve sostenido, con mejor tono.',
-      tx: 500,
-      ty: 200,
-      scale: 1.02,
-      fromX: 780,
-      fromY: 360,
-      fromZ: 0.6,
-      inS: 166,
-      rot: -8,
-    },
+    // 3 tarjetas con rótulo — rodean al romero
+    {img: 'img/rosemary_hero_card_1.jpg', label: 'Brillo natural', sub: 'La piel refleja la luz, luminosa y descansada.', tx: -560, ty: -40, scale: 1.0, fromScale: 0.35, inS: 78, rot: 12, hoverAmp: 14, hoverPh: 0.5},
+    {img: 'img/rosemary_hero_card_2.jpg', label: 'Textura más suave', sub: 'El cutis se siente terso, parejo y pulido.', tx: 560, ty: -120, scale: 0.95, fromScale: 0.32, inS: 108, rot: -12, hoverAmp: 16, hoverPh: 2.1},
+    {img: 'img/rosemary_hero_card_3.jpg', label: 'Apariencia más firme', sub: 'El contorno se ve sostenido, con mejor tono.', tx: 520, ty: 210, scale: 1.02, fromScale: 0.34, inS: 138, rot: -9, hoverAmp: 15, hoverPh: 3.6},
+    // 2 satélites chicas (solo imagen) para densidad alrededor
+    {img: 'img/rosemary_hero_card_2.jpg', tx: -470, ty: 250, scale: 0.9, fromScale: 0.3, inS: 122, rot: 9, hoverAmp: 18, hoverPh: 4.4, small: true},
+    {img: 'img/rosemary_hero_card_3.jpg', tx: 300, ty: -300, scale: 0.82, fromScale: 0.28, inS: 152, rot: -8, hoverAmp: 20, hoverPh: 1.2, small: true},
   ];
+  const energyTargets = cards.map((c) => ({x: c.tx, y: c.ty}));
 
-  // Al clímax las tarjetas se atenúan para converger al frame héroe final
   const cardsFade = interpolate(frame, [252, 292], [1, 0], CLAMP);
-
-  const fadeIn = interpolate(frame, [0, 18], [0, 1], CLAMP);
+  const fadeIn = interpolate(frame, [0, 16], [0, 1], CLAMP);
 
   return (
     <AbsoluteFill style={{background: VAL.paper}}>
-      {/* CAPA 1 · fondo crema con haze volumétrico (parallax lento) */}
+      {/* CAPA 1 · fondo crema + haze volumétrico en movimiento */}
       <AbsoluteFill
         style={{
-          transform: `scale(${push}) translate(${camX * 0.25}px, ${camY * 0.25}px)`,
+          transform: `scale(${cam.push}) translate(${cam.x * 0.25}px, ${cam.y * 0.25}px) rotate(${
+            cam.rot * 0.2
+          }deg)`,
           background: `radial-gradient(125% 120% at 50% 34%, ${VAL.card} 0%, ${VAL.paperWarm} 46%, ${VAL.paperDeep} 100%)`,
         }}
       >
         <div
           style={{
             position: 'absolute',
-            width: 1200,
-            height: 1200,
-            left: 120,
-            top: -260,
+            width: 1300,
+            height: 1300,
+            left: 60 + Math.sin(frame / 50) * 40,
+            top: -300 + Math.cos(frame / 60) * 30,
             borderRadius: '50%',
-            background: `radial-gradient(circle, ${rgba(VAL.goldLite, 0.2)} 0%, ${rgba(
+            background: `radial-gradient(circle, ${rgba(VAL.goldLite, 0.22)} 0%, ${rgba(
               VAL.gold,
               0,
             )} 62%)`,
-            filter: 'blur(24px)',
-            transform: `translate(${camX * 0.6}px, ${camY * 0.6}px)`,
+            filter: 'blur(26px)',
           }}
         />
         <div
           style={{
             position: 'absolute',
-            width: 1000,
-            height: 1000,
-            right: 40,
-            bottom: -220,
+            width: 1100,
+            height: 1100,
+            right: -40 - Math.sin(frame / 55) * 40,
+            bottom: -240,
             borderRadius: '50%',
-            background: `radial-gradient(circle, ${rgba(shade(VAL.sage, 0.35), 0.16)} 0%, ${rgba(
+            background: `radial-gradient(circle, ${rgba(shade(VAL.sage, 0.35), 0.18)} 0%, ${rgba(
               VAL.sage,
               0,
             )} 60%)`,
-            filter: 'blur(26px)',
-            transform: `translate(${-camX * 0.5}px, ${-camY * 0.5}px)`,
+            filter: 'blur(28px)',
           }}
         />
       </AbsoluteFill>
 
-      {/* flourishes botánicos dorados en esquinas */}
-      <AbsoluteFill style={{opacity: 0.7 * fadeIn}}>
-        <Sprig style={{position: 'absolute', left: -20, top: 40, transform: 'rotate(-6deg)'}} />
-        <Sprig
-          flip
-          style={{position: 'absolute', right: -20, bottom: 40, transform: 'rotate(-6deg)'}}
-        />
+      <LightSweep />
+
+      {/* flourishes botánicos */}
+      <AbsoluteFill style={{opacity: 0.65 * fadeIn}}>
+        <Sprig style={{position: 'absolute', left: -20, top: 30, transform: 'rotate(-6deg)'}} />
+        <Sprig flip style={{position: 'absolute', right: -20, bottom: 30, transform: 'rotate(-6deg)'}} />
       </AbsoluteFill>
 
       {/* CAPA 2 · partículas lejanas */}
-      <Particles count={26} plane={0} camX={camX} camY={camY} />
+      <Particles count={30} plane={0} cam={cam} />
 
-      {/* CAPA 3 · tarjetas traseras (fuera de foco, sin rótulo) */}
-      <AbsoluteFill style={{filter: 'blur(6px)', opacity: 0.5 * fadeIn * cardsFade}}>
-        {[
-          {x: -430, y: 250, s: 0.7, r: 8},
-          {x: 610, y: 60, s: 0.66, r: -9},
-        ].map((b, i) => (
-          <div
-            key={i}
-            style={{
-              position: 'absolute',
-              left: CENTER.x - 150 + b.x + camX * 0.05,
-              top: CENTER.y - 186 + b.y + Math.sin(frame / 40 + i) * 6,
-              width: 300,
-              height: 372,
-              borderRadius: 26,
-              transform: `scale(${b.s}) rotateY(${b.r}deg)`,
-              background: `linear-gradient(150deg, ${rgba(VAL.card, 0.6)}, ${rgba(
-                VAL.paperWarm,
-                0.4,
-              )})`,
-              border: `1.5px solid ${rgba(VAL.onAccent, 0.5)}`,
-              boxShadow: `0 30px 60px ${rgba(VAL.ink, 0.2)}`,
-            }}
-          />
-        ))}
-      </AbsoluteFill>
+      {/* CAPA 3 · energía (detrás del héroe) */}
+      <EnergyFlow targets={energyTargets} cam={cam} />
 
-      {/* CAPA 4 · energía romero→tarjetas (detrás del héroe) */}
-      <EnergyFlow cards={cards} camX={camX} camY={camY} />
+      {/* CAPA 4 · HERO */}
+      <Hero cam={cam} />
 
-      {/* CAPA 5 · HERO rosemary */}
-      <Hero camX={camX} camY={camY} />
+      {/* CAPA 5 · partículas medias */}
+      <Particles count={22} plane={1} cam={cam} />
 
-      {/* CAPA 6 · partículas medias (delante del héroe, parallax mayor) */}
-      <Particles count={20} plane={1} camX={camX} camY={camY} />
-
-      {/* CAPA 7 · glass cards con rótulo */}
+      {/* CAPA 6 · glass cards */}
       <AbsoluteFill style={{opacity: cardsFade}}>
         {cards.map((c, i) => (
-          <GlassCard key={i} def={c} camX={camX} camY={camY} />
+          <GlassCard key={i} def={c} cam={cam} />
         ))}
       </AbsoluteFill>
 
-      {/* CAPA 8 · partículas cercanas grandes (bokeh) */}
-      <Particles count={9} plane={2} camX={camX} camY={camY} />
+      {/* CAPA 7 · bokeh cercano grande (fuerte parallax = sensación de movimiento) */}
+      <Particles count={8} plane={2} cam={cam} />
 
-      {/* CAPA 9 · textos progresivos */}
-      <CenterText
-        text="El romero…"
-        inS={10}
-        inE={30}
-        outS={54}
-        outE={72}
-        size={62}
-        font={FONT_DISPLAY}
-        y={300}
-      />
-      <CenterText
-        text="puede hacerte ver"
-        inS={72}
-        inE={92}
-        outS={116}
-        outE={134}
-        size={52}
-        font={FONT_SERIF_FINE}
-        color={VAL.ink2}
-        italic
-        y={318}
-      />
-      <CenterText
-        text="más luminosa"
-        inS={134}
-        inE={156}
-        outS={196}
-        outE={216}
-        size={72}
-        font={FONT_DISPLAY}
-        color={VAL.gold}
-        y={300}
-      />
+      {/* CAPA 8 · textos kinéticos */}
+      <KineticText text="El romero…" inS={8} outS={52} size={64} font={FONT_DISPLAY} y={286} />
+      <KineticText text="puede hacerte ver" inS={62} outS={110} size={52} font={FONT_SERIF_FINE} color={VAL.ink2} italic y={308} />
+      <KineticText text="más luminosa" inS={120} outS={196} size={76} font={FONT_DISPLAY} color={VAL.gold} y={288} />
 
-      {/* FRAME HÉROE FINAL · "ROMERO" + tagline */}
+      {/* FRAME HÉROE FINAL */}
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
         <div
           style={{
             marginTop: 250,
             textAlign: 'center',
-            opacity: interpolate(frame, [256, 282], [0, 1], CLAMP),
-            transform: `translateY(${interpolate(frame, [256, 282], [18, 0], CLAMP)}px)`,
+            opacity: interpolate(frame, [254, 280], [0, 1], CLAMP),
+            transform: `translateY(${interpolate(frame, [254, 280], [24, 0], CLAMP)}px)`,
           }}
         >
-          <div
-            style={{
-              fontFamily: FONT_SANS,
-              fontSize: 17,
-              letterSpacing: 9,
-              color: VAL.gold,
-              textTransform: 'uppercase',
-              marginBottom: 6,
-            }}
-          >
+          <div style={{fontFamily: FONT_SANS, fontSize: 17, letterSpacing: 9, color: VAL.gold, textTransform: 'uppercase', marginBottom: 6}}>
             Dra. Valeria Alcázar
           </div>
-          <div
-            style={{
-              fontFamily: FONT_DISPLAY,
-              fontSize: 96,
-              fontWeight: 700,
-              letterSpacing: 14,
-              color: VAL.ink,
-              lineHeight: 1,
-            }}
-          >
+          <div style={{fontFamily: FONT_DISPLAY, fontSize: 98, fontWeight: 700, letterSpacing: 14, color: VAL.ink, lineHeight: 1}}>
             ROMERO
           </div>
-          <div style={{width: 220, height: 1, background: rgba(VAL.gold, 0.6), margin: '18px auto'}} />
-          <div
-            style={{
-              fontFamily: FONT_SERIF_FINE,
-              fontStyle: 'italic',
-              fontSize: 30,
-              color: VAL.ink2,
-            }}
-          >
+          <div style={{width: 230, height: 1, background: rgba(VAL.gold, 0.6), margin: '18px auto'}} />
+          <div style={{fontFamily: FONT_SERIF_FINE, fontStyle: 'italic', fontSize: 30, color: VAL.ink2}}>
             el secreto botánico de una piel luminosa
           </div>
         </div>
       </AbsoluteFill>
 
-      {/* textura + viñeta cálida (encima de todo, sutil) */}
       <PaperGrain opacity={0.05} />
       <WarmVignette strength={0.24} />
     </AbsoluteFill>
