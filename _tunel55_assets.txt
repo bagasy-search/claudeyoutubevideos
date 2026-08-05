@@ -63,7 +63,6 @@ img/tunel55_s_124.jpg
 img/tunel55_s_127.webp
 img/tunel55_s_128.jpg
 broll/tunel55_s_129.mp4
-broll/tunel55_s_132.mp4
 img/tunel55_s_137.png
 broll/tunel55_s_141.mp4
 broll/tunel55_s_142.mp4
@@ -73,8 +72,6 @@ img/tunel55_s_147.jpg
 broll/tunel55_s_148.mp4
 img/tunel55_s_150.jpg
 img/tunel55_s_154.jpg
-img/tunel55_s_155.jpg
-broll/tunel55_s_157.mp4
 img/tunel55_s_160.jpg
 img/tunel55_s_161.jpg
 img/tunel55_s_162.jpg
@@ -131,7 +128,6 @@ img/tunel55_s_146_blur.jpg
 img/tunel55_s_147_blur.jpg
 img/tunel55_s_150_blur.jpg
 img/tunel55_s_154_blur.jpg
-img/tunel55_s_155_blur.jpg
 img/tunel55_s_160_blur.jpg
 img/tunel55_s_161_blur.jpg
 img/tunel55_s_162_blur.jpg
