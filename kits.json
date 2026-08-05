@@ -14,7 +14,7 @@
         "reference_federer_broadcast_premium_kit",
         "reference_fed_whiteboard_component"
       ],
-      "arquitectura": "UN solo <OffthreadVideo> del avatar PERSISTENTE que corre continuo abajo (audio perfecto), y ENCIMA las escenas de profundidad flotando con TransitionShell (whip, sin cortes duros). Data-driven por el array BEATS con kind:'avatar'|'depth'. NO es un slideshow de <Sequence> que se reemplazan: el avatar NUNCA se corta en pedazos.",
+      "arquitectura": "UN solo <OffthreadVideo> del avatar PERSISTENTE que corre continuo abajo (audio perfecto), y ENCIMA escenas de profundidad data-driven. Alternar TransitionShell none|whip|lift|iris|fold según intención; 25-35% deben ser cortes limpios sin transición. El avatar NUNCA se corta en pedazos.",
       "componentes": [
         "FedHero",
         "FedStat",
@@ -28,7 +28,7 @@
         "FedChapter",
         "FedWhiteboard — PIZARRA EXPLICATIVA (escena especial estilo Vox, data-driven, escrita a mano) para explicar un MECANISMO paso a paso. Self-contained en src/FedWhiteboard.tsx: usala tal cual para el beat del 'por qué funciona'. Ver memoria reference_fed_whiteboard_component."
       ],
-      "reglas": "Partí SIEMPRE de src/FedererFluid.tsx como ESQUELETO (copialo y adaptá los BEATS a este guion). PROHIBIDO inventar tu propia taxonomía de escenas (nada de TriptychScene, RecipeScene, MechanismScene, etc.) ni tu propio kit (nada de VallerKit/JamaicaKit): usá los componentes de FedererKit.tsx tal cual, y si falta uno agregá una variante DENTRO de FedererKit.tsx. Look dark-cinematic, whips fluidos, avatar full o visual full alternados.",
+      "reglas": "Partí SIEMPRE de src/FedererFluid.tsx como ESQUELETO. Usá componentes auténticos de FedererKit.tsx: mínimo 8 tipos en video largo, ninguno >25% y máximo 2 seguidos. Cada beat debe guardar narration_match literal y su texto visible debe corresponder exactamente a ese tramo. Look dark-cinematic; alternar none|whip|lift|iris|fold, con 25-35% de cortes limpios.",
       "showcase_url": "https://github.com/bautielcrack4-web/bagasy-videos/releases/download/showcase-fluid/fluidshow.mp4",
       "showcase_components": [
         "FedChapter",
@@ -79,7 +79,14 @@
         "FraseCinetica",
         "GuardaEsto"
       ],
-      "verified_at": "2026-07-20"
+      "verified_at": "2026-07-20",
+      "vara": {
+        "archivo": "src/_fed6/VideoEdit/scenes/RecalRich.tsx",
+        "componente": "HighlightData",
+        "por_que": "No es un cartel con una cifra: es una ESCENA en capas con tiempos propios. El resaltador amarillo BARRE de izquierda a derecha (scaleX 0→1 con transformOrigin left + rotate(-1.4deg) para que sea trazo de marcador y no un rectangulo), y llega ANTES de que el texto resaltado aparezca (sweep en f22-46, texto en f18-30) — el orden imita la mano que subraya, no el frame 0 con todo puesto. La tarjeta entra con spring y sale con su propio fade, sobre un Stage con degrade y glow radial que le da profundidad. Y es reusable: props tipados (pre/highlight/post/source), cero datos del video adentro, 100% determinista desde frame.",
+        "aprobada_por_el_creador": false,
+        "nota": "Elegida por codigo (es el componente del kit con mas senales de oficio: capas, spring+interpolate, camara, props tipados). Reemplazala por la que vos apruebes cuando un video de este kit produzca algo mejor."
+      }
     },
     {
       "id": "constructor",
@@ -288,6 +295,43 @@
       "showcase_url": "https://github.com/bautielcrack4-web/bagasy-videos/releases/download/vki4lqtcboy0/vki4lqtcboy0.mp4",
       "verified_at": "2026-07-25",
       "nota_kit": "⚠️ El video de referencia (25 Platos, vki4lqtcboy0) se armó con src/VideoEdit/kit/premium/ (94 usos, 19 tipos) POR INERCIA: el canal no tenía entrada en kits.json y el agente cayó en el genérico. El kit CORRECTO de este canal es src/VideoEdit/scenes/ (125 componentes, el compartido del nicho casero, mismo que amish/constructor). Ahí ya viven los componentes hechos a medida para esta cocina: FoodTeaseCards (tarjetas de plato), OllaDiagram, SpoonInCream, IngredientEquation, BlurReveal (borroso→nítido), AgedDoc y VintageMapZoom (nostalgia), NumberCard/Top7Ladder (listicle). NO improvisar ni inventar un AbuelaRosaKit: abrir estos y usarlos."
+    },
+    {
+      "id": "valeria-vintage",
+      "label": "Doctora Valeria Alcázar — Belleza Vintage (editorial claro)",
+      "channel_hint": "Doctora Valeria Alcázar",
+      "active": true,
+      "skill": "doctora-valeria-alcazar",
+      "arch_file": "src/valeria/ValeriaFluid.tsx",
+      "components_file": "src/valeria/ValeriaKit.tsx",
+      "_namespace": "AISLADO en src/valeria/ — theme + kit + arquitectura propios. La PALETA y las FUENTES salen SIEMPRE de src/valeria/theme.tsx (fuente de verdad de la marca): NO hardcodear colores en los componentes. Es un fork CLARO del kit Federer (federer-fluid), re-skineado a editorial vintage; conserva el motion, cambia solo la piel.",
+      "memorias": [
+        "project_canal_valeria_alcazar",
+        "reference_cta_medidas_descripcion_guia"
+      ],
+      "arquitectura": "UN solo <OffthreadVideo> del avatar PERSISTENTE corriendo continuo abajo (audio perfecto) y ENCIMA escenas de profundidad data-driven sobre PAPEL CREMA (nunca oscuro). Clonar src/valeria/ValeriaFluid.tsx como esqueleto. Alternar TransitionShell none|whip|lift según intención; 25-35% cortes limpios. Avatar solo FULL / HIDDEN / SPLIT — CERO PiP en esquina. Look editorial VINTAGE CLARO: crema pergamino + tinta espresso + latón/oro, serif elegante (Playfair/Garamond) y anotaciones a mano (Caveat).",
+      "componentes": [
+        "ValHero",
+        "ValStat",
+        "ValStep",
+        "ValMolecule",
+        "ValBeforeAfter",
+        "ValChecklist",
+        "ValLowerThird",
+        "ValQuote",
+        "ValCta",
+        "ValChapter",
+        "ValFullShot",
+        "ValOilCarousel — CARRUSEL de tarjetas (anillo 3D que gira y ATERRIZA en el ítem que nombra la presentadora). Es la ESCENA obligatoria para listas enumeradas (los '25 secretos'): cada beat del ítem i lleva focus:i e intro:(i===0). NO usar un cartel plano para abrir un ítem numerado."
+      ],
+      "reglas": "Partí SIEMPRE de src/valeria/ValeriaFluid.tsx como ESQUELETO y de componentes auténticos de ValeriaKit.tsx (mínimo 8 tipos en video largo, ninguno >25%, máx 2 seguidos). PALETA/FUENTES SOLO desde theme.tsx. Público adulto mayor: tinta oscura sobre papel claro (alto contraste), nada de texto claro sobre crema. Listas enumeradas = ValOilCarousel, no tarjeta plana. CTA value-first: las MEDIDAS de las recetas van a la DESCRIPCIÓN; en el guion 'le dejo las medidas y la guía en la descripción' — NUNCA link/URL ni precio en voz alta (este canal es SOLO RETENCIÓN: 'guarde el video / suscríbase'). Combinar con video-pipeline (DIRECTOR §0 + AUDITOR §4).",
+      "vara": {
+        "archivo": "src/valeria/ValeriaKit.tsx",
+        "componente": "ValOilCarousel",
+        "por_que": "Fork del FedOilCarousel aprobado: no es un cartel con texto, es una ESCENA con cámara (push-in + micro-handheld) que REACCIONA a la narración — el anillo gira libre y aterriza (easing cubic) en la tarjeta que la presentadora nombra. Props tipados, sin datos del video adentro, 100% determinista. En paleta crema/latón con tarjetas tipo ficha de cosmético vintage.",
+        "aprobada_por_el_creador": false,
+        "nota": "Heredada del vara aprobado de federer-fluid. Reemplazar cuando un video de este canal produzca algo mejor y el creador lo apruebe."
+      }
     }
   ]
 }
