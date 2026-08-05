@@ -1,5 +1,7 @@
 import "./index.css";
 import { Composition } from "remotion";
+import { RosemaryHero } from "./valeria/RosemaryHero";
+import { MainCollageDemo, TOTAL_FRAMES_COLLAGE } from "./VideoEdit/RemedioCollage";
 import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
 import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
@@ -99,6 +101,7 @@ import { MainShou, TOTAL_FRAMES_SHOU } from "./VideoEdit/Main_shou";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 import { MainFedtrailer, TOTAL_FRAMES_FEDTRAILER } from "./VideoEdit/Main_fedtrailer";
 import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
+import { ValKitReel, VAL_REEL_F } from "./valeria/ValeriaKit";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
 
@@ -110,6 +113,8 @@ import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* DEMO · estilo collage recorte de revista (romero/pastillas/receta) */}
+      <Composition id="CollageDemo" component={MainCollageDemo} durationInFrames={TOTAL_FRAMES_COLLAGE} fps={30} width={1920} height={1080} />
       {/* DR. VALLER · romero, arrugas y manchas · avatar + visuales full-screen */}
       <Composition id="Vbb0rdkrfduo" component={MainVbb0rdkrfduo} durationInFrames={TOTAL_FRAMES_VBB0RDKRFDUO} fps={30} width={1920} height={1080} />
       {/* DR. FEDERER · cansancio persistente después de los 60 · avatar + kit cinematográfico */}
@@ -492,6 +497,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Abuela" component={MainAbuela} durationInFrames={TOTAL_FRAMES_ABUELA} fps={30} width={1920} height={1080} />
       {/* Dr. Federer — El truco del ROMERO */}
       <Composition id="Federer" component={MainFederer} durationInFrames={TOTAL_FRAMES_FED} fps={30} width={1920} height={1080} />
+      {/* Contact sheet del kit valeria-vintage (canal Doctora Valeria Alcázar) */}
+      <Composition id="ValKitReel" component={ValKitReel} durationInFrames={VAL_REEL_F} fps={30} width={1920} height={1080} />
       {/* Federer Salud — Recalentados */}
       <Composition id="Recalentados" component={MainRecalentados} durationInFrames={TOTAL_FRAMES_RECAL} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — 15 Costumbres de los Domingos (Video 3 cadena) */}
@@ -555,6 +562,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Lobos" component={MainLobos} durationInFrames={TOTAL_FRAMES_LOBOS} fps={30} width={1920} height={1080} />
       {/* Crónicas Perdidas — "Los 50 Sitios Más Misteriosos" · AVATAR (guion truncado por HeyGen, cierre visual mudo) */}
       <Composition id="Vj7hqe8koadv" component={MainVj7hqe8koadv} durationInFrames={TOTAL_FRAMES_VJ7HQE8KOADV} fps={30} width={1920} height={1080} />
+      {/* DEMO motion-design del romero en paleta Valeria (transición/sting) */}
+      <Composition id="Val-RosemaryHero" component={RosemaryHero} durationInFrames={300} fps={30} width={1920} height={1080} />
     </>
   );
 };
