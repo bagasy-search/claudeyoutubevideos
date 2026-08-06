@@ -214,9 +214,9 @@ const PREMIUM = [
   P("PullQuote", "la tierra siempre paga a quien la escucha", 5.5, "topLeft", {
     quote: "La tierra siempre paga a quien la escucha.",
   }, 8),
-  P("CtaCard", "si todavia no estas suscrito a este canal", 5.5, "topLeft", {
-    eyebrow: "Secretos de jardín, cada semana", title: "Suscribite al canal",
-    bullet: "Trucos viejos, baratos y honestos que la tierra te regala — nada que vender", price: 0, cta: "SUSCRIBITE Y ACTIVÁ LA CAMPANA",
+  P("CtaCard", "si todavia no estas suscrito a este canal", 6.0, "topLeft", {
+    eyebrow: "La huerta del abuelo, en una guía", title: "El Almanaque Amish del Huerto",
+    bullet: "90 secretos para regar, abonar y defender tu huerta sin comprar nada — link en la descripción", price: 0, cta: "LINK EN LA DESCRIPCIÓN",
   }, 9),
 ];
 

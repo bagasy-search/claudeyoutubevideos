@@ -2063,17 +2063,17 @@
   {
    "id": "ov_ctacard_1033",
    "start": 1033.28,
-   "dur": 5.5,
+   "dur": 6,
    "kind": "premium",
    "overlay": true,
    "comp": "CtaCard",
    "theme": "earth",
    "zone": "topLeft",
-   "eyebrow": "Secretos de jardín, cada semana",
-   "title": "Suscribite al canal",
-   "bullet": "Trucos viejos, baratos y honestos que la tierra te regala — nada que vender",
+   "eyebrow": "La huerta del abuelo, en una guía",
+   "title": "El Almanaque Amish del Huerto",
+   "bullet": "90 secretos para regar, abonar y defender tu huerta sin comprar nada — link en la descripción",
    "price": 0,
-   "cta": "SUSCRIBITE Y ACTIVÁ LA CAMPANA"
+   "cta": "LINK EN LA DESCRIPCIÓN"
   },
   {
    "id": "platano_c60",
