@@ -98,6 +98,8 @@ import { MainRestaura, TOTAL_FRAMES_RESTAURA } from "./VideoEdit/Main_restaura";
 import { MainSellador, TOTAL_FRAMES_SELLADOR } from "./VideoEdit/Main_sellador";
 import { MainAceite, TOTAL_FRAMES_ACEITE } from "./VideoEdit/Main_aceite";
 import { MainShou, TOTAL_FRAMES_SHOU } from "./VideoEdit/Main_shou";
+import { MainTunel55, TOTAL_FRAMES_TUNEL55 } from "./VideoEdit/Main_tunel55";
+import { MainAntena25, TOTAL_FRAMES_ANTENA25 } from "./VideoEdit/Main_antena25";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 import { MainFedtrailer, TOTAL_FRAMES_FEDTRAILER } from "./VideoEdit/Main_fedtrailer";
 import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
@@ -537,6 +539,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Sellador" component={MainSellador} durationInFrames={TOTAL_FRAMES_SELLADOR} fps={30} width={1920} height={1080} />
       <Composition id="Aceite" component={MainAceite} durationInFrames={TOTAL_FRAMES_ACEITE} fps={30} width={1920} height={1080} />
       <Composition id="Shou" component={MainShou} durationInFrames={TOTAL_FRAMES_SHOU} fps={30} width={1920} height={1080} />
+      <Composition id="Tunel55" component={MainTunel55} durationInFrames={TOTAL_FRAMES_TUNEL55} fps={30} width={1920} height={1080} />
+      <Composition id="Antena25" component={MainAntena25} durationInFrames={TOTAL_FRAMES_ANTENA25} fps={30} width={1920} height={1080} />
       {/* REMAKE hit madera — "Por Qué La Madera De Antes Duraba 100 Años" · AVATAR Tomás · clips-first */}
       <Composition id="Madera" component={MainMadera} durationInFrames={TOTAL_FRAMES_MADERA} fps={30} width={1920} height={1080} />
       {/* VIDEO 1 veta "los viejos sabían" — "El cemento que no se raja ($1 la cal)" · AVATAR Tomás · clips-first */}
