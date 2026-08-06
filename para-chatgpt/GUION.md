@@ -134,6 +134,37 @@ NO es una confirmación ni un contexto. Es un impacto que frena el scroll.
 
 ---
 
+## 3.5 MODO ULTRA HUMANO (opcional — para que suene a persona pensando en voz alta)
+
+Cuando el creador pide "modo ultra humano", el guion tiene que sonar a alguien **hablando de verdad,
+sin libreto**: dudando, arrancando de nuevo, corrigiéndose, bajando la voz. NO a locutor leyendo.
+
+**La textura se logra con LAS PALABRAS** (esto sí lo dice la voz y es lo que humaniza):
+- **Muletillas de arranque**: "A ver…", "Mira…", "Escucha esto un segundo…", "o sea", "este…", "emm…", "bueno…".
+- **Arranques falsos y autocorrecciones**: "no, no…", "espera— no, espera", "no incompleto… ¡está mal enfocado!",
+  "que hacen todos, todos, exactamente lo mismo".
+- **Frases cortadas con puntos suspensivos** para el fraseo pensado: "Y una noche cualquiera… zas."
+- **Fragmentos sueltos, no oraciones perfectas**: "Un dólar. Un solo frasco.", "Estéril. Muerta."
+- **Cambios de tono marcados por la puntuación** (grave → cómplice → susurro), no por acotación.
+- **Micro-preguntas al espectador**: "¿me explico?", "¿viste?", "¿eh?".
+- Repeticiones enfáticas: "tan bien, tan bien", "justo, justo lo que le falta".
+
+### ⛔⛔ LO QUE NUNCA VA EN EL TEXTO (medido: arruina el audio)
+Las acotaciones DESCRIPTIVAS en español entre corchetes —`[Respiración profunda, habla más rápido]`,
+`[Tono cavernoso]`, `[Chasquido con la lengua]`, `[Pausita corta]`, `[exhalación suave]`— **el TTS las LEE
+EN VOZ ALTA** y destruyen la toma. Son útiles como ejemplo del efecto buscado, **jamás como texto hablado**.
+- Los ÚNICOS tags permitidos son los del §7 que la voz interpreta como sonido: `[clears throat]`, `[sighs]`
+  (y en canales que lo aceptan, `[chuckles]`, `[whispers]`, `[warmly]`), **pocos**. Nada de `[pause]`.
+- Si el creador quiere control fino de respiración/tono/ritmo, eso se hace **en HeyGen** al grabar (controles
+  de énfasis y pausas), NO en el texto del guion.
+- La respiración y los cortes se transmiten con **puntos, puntos suspensivos y frases cortas**, no con corchetes.
+
+### POV y dosis
+- **Respetá el trato del canal** (tú / usted / ustedes). El ejemplo del "modo ultra humano" usa "miren/ustedes"
+  porque venía de otro canal; **no lo copies**: si el canal es de "tú", va "mira/escucha", no "miren/escuchen".
+- **Dosificá**: cargá la textura en el HOOK y en los beats emocionales; en los tramos de información densa
+  (listas, dosis, pasos) bajá los titubeos —un "emm… o sea…" en cada ítem de una lista de 25 cansa y diluye el dato.
+
 ## 4. EL CIERRE
 
 - **RECAP numerado y accionable**: *"este finde: 1… 2… 3…"*.
