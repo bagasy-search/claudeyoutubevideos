@@ -7,7 +7,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "full"
   },
   {
-    "start": 12.8,
+    "start": 18.7,
     "mode": "hidden"
   },
   {
@@ -51,7 +51,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 137,
+    "start": 132.6,
     "mode": "full"
   },
   {
@@ -64,6 +64,14 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 167.7,
+    "mode": "hidden"
+  },
+  {
+    "start": 180.7,
+    "mode": "full"
+  },
+  {
+    "start": 183.9,
     "mode": "hidden"
   },
   {
@@ -91,11 +99,35 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 277.1,
+    "start": 251.5,
+    "mode": "full"
+  },
+  {
+    "start": 255.1,
+    "mode": "hidden"
+  },
+  {
+    "start": 271.1,
     "mode": "full"
   },
   {
     "start": 282.5,
+    "mode": "hidden"
+  },
+  {
+    "start": 285.7,
+    "mode": "full"
+  },
+  {
+    "start": 290.7,
+    "mode": "hidden"
+  },
+  {
+    "start": 298.3,
+    "mode": "full"
+  },
+  {
+    "start": 305.4,
     "mode": "hidden"
   },
   {
@@ -143,7 +175,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "full"
   },
   {
-    "start": 429.3,
+    "start": 435.2,
     "mode": "hidden"
   },
   {
@@ -155,7 +187,15 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 493.5,
+    "start": 462.8,
+    "mode": "full"
+  },
+  {
+    "start": 469.4,
+    "mode": "hidden"
+  },
+  {
+    "start": 492.3,
     "mode": "full"
   },
   {
@@ -191,15 +231,23 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "full"
   },
   {
-    "start": 562.6,
+    "start": 571.3,
     "mode": "hidden"
   },
   {
-    "start": 568.1,
+    "start": 576.3,
     "mode": "full"
   },
   {
-    "start": 571.3,
+    "start": 579.5,
+    "mode": "hidden"
+  },
+  {
+    "start": 585,
+    "mode": "full"
+  },
+  {
+    "start": 591.4,
     "mode": "hidden"
   },
   {
@@ -227,11 +275,27 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
+    "start": 648.2,
+    "mode": "full"
+  },
+  {
+    "start": 650.4,
+    "mode": "hidden"
+  },
+  {
     "start": 660.2,
     "mode": "full"
   },
   {
-    "start": 664,
+    "start": 666.7,
+    "mode": "hidden"
+  },
+  {
+    "start": 670.7,
+    "mode": "full"
+  },
+  {
+    "start": 675.3,
     "mode": "hidden"
   },
   {
@@ -239,7 +303,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "full"
   },
   {
-    "start": 682.7,
+    "start": 686.9,
     "mode": "hidden"
   },
   {
@@ -260,14 +324,6 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 777.1,
-    "mode": "full"
-  },
-  {
-    "start": 789.9,
-    "mode": "hidden"
-  },
-  {
-    "start": 797.7,
     "mode": "full"
   },
   {
@@ -295,7 +351,15 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "full"
   },
   {
-    "start": 872.4,
+    "start": 877.9,
+    "mode": "hidden"
+  },
+  {
+    "start": 887.9,
+    "mode": "full"
+  },
+  {
+    "start": 890.2,
     "mode": "hidden"
   },
   {
@@ -312,6 +376,14 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 945.9,
+    "mode": "hidden"
+  },
+  {
+    "start": 1006.3,
+    "mode": "full"
+  },
+  {
+    "start": 1012.6,
     "mode": "hidden"
   },
   {
@@ -348,14 +420,6 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
   },
   {
     "start": 1126.5,
-    "mode": "full"
-  },
-  {
-    "start": 1136.7,
-    "mode": "hidden"
-  },
-  {
-    "start": 1142.2,
     "mode": "full"
   },
   {
