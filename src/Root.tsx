@@ -99,6 +99,8 @@ import { MainSellador, TOTAL_FRAMES_SELLADOR } from "./VideoEdit/Main_sellador";
 import { MainAceite, TOTAL_FRAMES_ACEITE } from "./VideoEdit/Main_aceite";
 import { MainShou, TOTAL_FRAMES_SHOU } from "./VideoEdit/Main_shou";
 import { MainTunel55, TOTAL_FRAMES_TUNEL55 } from "./VideoEdit/Main_tunel55";
+import { MainPlatano, TOTAL_FRAMES_PLATANO } from "./VideoEdit/Main_platano";
+import { MainCoolsave, TOTAL_FRAMES_COOLSAVE } from "./VideoEdit/Main_coolsave";
 import { MainGencoche, TOTAL_FRAMES_GENCOCHE } from "./VideoEdit/Main_gencoche";
 import { MainAntena25, TOTAL_FRAMES_ANTENA25 } from "./VideoEdit/Main_antena25";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
@@ -541,6 +543,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Aceite" component={MainAceite} durationInFrames={TOTAL_FRAMES_ACEITE} fps={30} width={1920} height={1080} />
       <Composition id="Shou" component={MainShou} durationInFrames={TOTAL_FRAMES_SHOU} fps={30} width={1920} height={1080} />
       <Composition id="Tunel55" component={MainTunel55} durationInFrames={TOTAL_FRAMES_TUNEL55} fps={30} width={1920} height={1080} />
+      <Composition id="Platano" component={MainPlatano} durationInFrames={TOTAL_FRAMES_PLATANO} fps={30} width={1920} height={1080} />
+      <Composition id="Coolsave" component={MainCoolsave} durationInFrames={TOTAL_FRAMES_COOLSAVE} fps={30} width={1920} height={1080} />
       <Composition id="Gencoche" component={MainGencoche} durationInFrames={TOTAL_FRAMES_GENCOCHE} fps={30} width={1920} height={1080} />
       <Composition id="Antena25" component={MainAntena25} durationInFrames={TOTAL_FRAMES_ANTENA25} fps={30} width={1920} height={1080} />
       {/* REMAKE hit madera — "Por Qué La Madera De Antes Duraba 100 Años" · AVATAR Tomás · clips-first */}

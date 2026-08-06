@@ -1,0 +1,2089 @@
+{
+ "video": "platano",
+ "avatar": "platano_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "platano_a02",
+   "start": 5.06,
+   "kind": "raw",
+   "src": "img/platano_a02.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.66
+  },
+  {
+   "id": "platano_a03",
+   "start": 9.42,
+   "kind": "raw",
+   "src": "broll/platano_a03.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.18
+  },
+  {
+   "id": "platano_a04",
+   "start": 12.3,
+   "kind": "raw",
+   "src": "broll/platano_a04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.72
+  },
+  {
+   "id": "platano_a05",
+   "start": 15.72,
+   "kind": "raw",
+   "src": "broll/platano_a05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.28
+  },
+  {
+   "id": "platano_a06",
+   "start": 20.7,
+   "kind": "raw",
+   "src": "broll/platano_a06.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.48
+  },
+  {
+   "id": "platano_a07",
+   "start": 24.88,
+   "kind": "raw",
+   "src": "broll/platano_a07.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 0.8
+  },
+  {
+   "id": "platano_a17",
+   "start": 24.88,
+   "kind": "raw",
+   "src": "broll/platano_a17.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.04
+  },
+  {
+   "id": "platano_a08",
+   "start": 29.62,
+   "kind": "raw",
+   "src": "img/platano_a08.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.4
+  },
+  {
+   "id": "platano_a09",
+   "start": 31.72,
+   "kind": "raw",
+   "src": "broll/platano_a09.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.86
+  },
+  {
+   "id": "platano_a10",
+   "start": 34.28,
+   "kind": "raw",
+   "src": "broll/platano_a10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.46
+  },
+  {
+   "id": "platano_a11",
+   "start": 37.44,
+   "kind": "raw",
+   "src": "broll/platano_a11.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.32
+  },
+  {
+   "id": "platano_a12",
+   "start": 39.46,
+   "kind": "raw",
+   "src": "broll/platano_a12.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.72
+  },
+  {
+   "id": "platano_a13",
+   "start": 45.88,
+   "kind": "raw",
+   "src": "broll/platano_a13.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.46
+  },
+  {
+   "id": "ov_bigstatreveal_47",
+   "start": 47.06,
+   "dur": 4.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Con el ingrediente correcto",
+   "value": 2,
+   "suffix": "×",
+   "support": "casi el doble de flores y de fruto — gratis, sin un solo químico"
+  },
+  {
+   "id": "platano_a14",
+   "start": 50.04,
+   "kind": "raw",
+   "src": "broll/platano_a14.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.48
+  },
+  {
+   "id": "ov_highlightsweep_50",
+   "start": 50.04,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "El mejor fertilizante para floración no está en el vivero —",
+   "highlight": "está en tu frutero",
+   "post": ".",
+   "note": "y probablemente lo tiraste hoy con el desayuno"
+  },
+  {
+   "id": "platano_a15",
+   "start": 57.22,
+   "kind": "raw",
+   "src": "broll/platano_a15.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.98
+  },
+  {
+   "id": "platano_a16",
+   "start": 62.9,
+   "kind": "raw",
+   "src": "img/platano_a16.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.72
+  },
+  {
+   "id": "platano_a18",
+   "start": 70.32,
+   "kind": "raw",
+   "src": "broll/platano_a18.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.46
+  },
+  {
+   "id": "platano_a19",
+   "start": 76.48,
+   "kind": "raw",
+   "src": "broll/platano_a19.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.62
+  },
+  {
+   "id": "platano_a20",
+   "start": 82.8,
+   "kind": "raw",
+   "src": "broll/platano_a20.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.38
+  },
+  {
+   "id": "platano_a21",
+   "start": 84.88,
+   "kind": "raw",
+   "src": "broll/platano_a21.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.02
+  },
+  {
+   "id": "ov_pullquote_85",
+   "start": 84.88,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Acá nada se tira. Todo lo que sale de la tierra, vuelve a la tierra."
+  },
+  {
+   "id": "platano_a22",
+   "start": 88.6,
+   "kind": "raw",
+   "src": "broll/platano_a22.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.42
+  },
+  {
+   "id": "platano_a23",
+   "start": 90.72,
+   "kind": "raw",
+   "src": "broll/platano_a23.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_a24",
+   "start": 103.82,
+   "kind": "raw",
+   "src": "broll/platano_a24.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.34
+  },
+  {
+   "id": "platano_a25",
+   "start": 106.86,
+   "kind": "raw",
+   "src": "broll/platano_a25.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.8
+  },
+  {
+   "id": "platano_a26",
+   "start": 115.36,
+   "kind": "raw",
+   "src": "broll/platano_a26.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.22
+  },
+  {
+   "id": "platano_a27",
+   "start": 118.28,
+   "kind": "raw",
+   "src": "img/platano_a27.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.26
+  },
+  {
+   "id": "platano_a28",
+   "start": 121.24,
+   "kind": "raw",
+   "src": "broll/platano_a28.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.02
+  },
+  {
+   "id": "platano_a29",
+   "start": 122.96,
+   "kind": "raw",
+   "src": "broll/platano_a29.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.24
+  },
+  {
+   "id": "platano_a30",
+   "start": 126.9,
+   "kind": "raw",
+   "src": "broll/platano_a30.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_highlightsweep_131",
+   "start": 130.74,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "El ingrediente secreto del abuelo es",
+   "highlight": "la cáscara de plátano",
+   "post": ".",
+   "note": "esa que te comés la fruta y tirás sin mirar"
+  },
+  {
+   "id": "platano_a31",
+   "start": 139.54,
+   "kind": "raw",
+   "src": "img/platano_a31.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.14
+  },
+  {
+   "id": "platano_a32",
+   "start": 146.38,
+   "kind": "raw",
+   "src": "broll/platano_a32.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_framedphoto_155",
+   "start": 155.18,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/platano_dg_npk.png",
+   "caption": "Nitrógeno · Fósforo · Potasio",
+   "sub": "el N da hojas; el fósforo, raíces y flores; el potasio convierte la flor en fruto",
+   "kenburns": true
+  },
+  {
+   "id": "platano_a33",
+   "start": 158.12,
+   "kind": "raw",
+   "src": "broll/platano_a33.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.5
+  },
+  {
+   "id": "platano_a34",
+   "start": 159.32,
+   "kind": "raw",
+   "src": "broll/platano_a34.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9.34
+  },
+  {
+   "id": "platano_a35",
+   "start": 168.66,
+   "kind": "raw",
+   "src": "broll/platano_a35.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.32
+  },
+  {
+   "id": "platano_a36",
+   "start": 171.68,
+   "kind": "raw",
+   "src": "broll/platano_a36.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "platano_a37",
+   "start": 174.92,
+   "kind": "raw",
+   "src": "broll/platano_a37.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "platano_a38",
+   "start": 178.16,
+   "kind": "raw",
+   "src": "img/platano_a38.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.34
+  },
+  {
+   "id": "ov_highlightsweep_181",
+   "start": 181.14,
+   "dur": 4.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "¿Qué es lo que más tiene esa cáscara?",
+   "highlight": "potasio, muchísimo",
+   "post": ".",
+   "note": "una de las fuentes naturales de potasio más ricas que tenés en casa"
+  },
+  {
+   "id": "platano_a40",
+   "start": 183.2,
+   "kind": "raw",
+   "src": "broll/platano_a40.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_a42",
+   "start": 195.36,
+   "kind": "raw",
+   "src": "broll/platano_a42.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.88
+  },
+  {
+   "id": "platano_a43",
+   "start": 200.94,
+   "kind": "raw",
+   "src": "broll/platano_a43.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.4
+  },
+  {
+   "id": "platano_a44",
+   "start": 206.04,
+   "kind": "raw",
+   "src": "broll/platano_a44.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.98
+  },
+  {
+   "id": "platano_a45",
+   "start": 210.72,
+   "kind": "raw",
+   "src": "broll/platano_a45.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.34
+  },
+  {
+   "id": "platano_a46",
+   "start": 212.76,
+   "kind": "raw",
+   "src": "broll/platano_a46.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.52
+  },
+  {
+   "id": "platano_a47",
+   "start": 215.98,
+   "kind": "raw",
+   "src": "broll/platano_a47.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.18
+  },
+  {
+   "id": "platano_a48",
+   "start": 220.86,
+   "kind": "raw",
+   "src": "broll/platano_a48.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.7
+  },
+  {
+   "id": "platano_a49",
+   "start": 224.26,
+   "kind": "raw",
+   "src": "broll/platano_a49.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.08
+  },
+  {
+   "id": "ov_mythtruth_224",
+   "start": 224.26,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Planta enorme y muy verde = buena cosecha",
+   "truth": "Si le sobra nitrógeno y le falta potasio: mucha hoja y apenas 3 tomates tristes"
+  },
+  {
+   "id": "platano_a50",
+   "start": 228.04,
+   "kind": "raw",
+   "src": "img/platano_a50.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.64
+  },
+  {
+   "id": "platano_a51",
+   "start": 229.38,
+   "kind": "raw",
+   "src": "img/platano_a51.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.38
+  },
+  {
+   "id": "platano_b01",
+   "start": 234.46,
+   "kind": "raw",
+   "src": "broll/platano_b01.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.86
+  },
+  {
+   "id": "ov_duelcolumns_234",
+   "start": 234.46,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "El mismo fertilizante de floración",
+   "leftName": "Frasco del vivero",
+   "rightName": "Cáscara de plátano",
+   "rows": [
+    {
+     "attr": "Cuesta dinero",
+     "leftWins": false
+    },
+    {
+     "attr": "Sales químicas",
+     "leftWins": false
+    },
+    {
+     "attr": "Potasio natural",
+     "leftWins": false
+    },
+    {
+     "attr": "Ya lo tirás a la basura",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "platano_b02",
+   "start": 236.02,
+   "kind": "raw",
+   "src": "broll/platano_b02.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.8
+  },
+  {
+   "id": "platano_b03",
+   "start": 237.52,
+   "kind": "raw",
+   "src": "broll/platano_b03.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.58
+  },
+  {
+   "id": "platano_b04",
+   "start": 240.8,
+   "kind": "raw",
+   "src": "broll/platano_b04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.36
+  },
+  {
+   "id": "platano_b05",
+   "start": 243.86,
+   "kind": "raw",
+   "src": "broll/platano_b05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.22
+  },
+  {
+   "id": "platano_b06",
+   "start": 250.78,
+   "kind": "raw",
+   "src": "broll/platano_b06.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.48
+  },
+  {
+   "id": "platano_b07",
+   "start": 251.96,
+   "kind": "raw",
+   "src": "broll/platano_b07.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.98
+  },
+  {
+   "id": "platano_b09",
+   "start": 259.64,
+   "kind": "raw",
+   "src": "broll/platano_b09.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.32
+  },
+  {
+   "id": "platano_b10",
+   "start": 262.66,
+   "kind": "raw",
+   "src": "broll/platano_b10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9.18
+  },
+  {
+   "id": "ov_bigstatreveal_272",
+   "start": 271.84,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Una cáscara bien seca",
+   "value": 40,
+   "suffix": " %",
+   "support": "de su peso en potasio y minerales aprovechables — kilos de fertilizante que tirás al año"
+  },
+  {
+   "id": "platano_b13",
+   "start": 272.2,
+   "kind": "raw",
+   "src": "broll/platano_b13.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.64
+  },
+  {
+   "id": "platano_b14",
+   "start": 276.54,
+   "kind": "raw",
+   "src": "broll/platano_b14.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.94
+  },
+  {
+   "id": "platano_b15",
+   "start": 283.18,
+   "kind": "raw",
+   "src": "broll/platano_b15.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.54
+  },
+  {
+   "id": "platano_b16",
+   "start": 285.42,
+   "kind": "raw",
+   "src": "broll/platano_b16.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.84
+  },
+  {
+   "id": "platano_b17",
+   "start": 292.96,
+   "kind": "raw",
+   "src": "img/platano_b17.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9
+  },
+  {
+   "id": "platano_b19",
+   "start": 305.66,
+   "kind": "raw",
+   "src": "broll/platano_b19.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.34
+  },
+  {
+   "id": "platano_b20",
+   "start": 308.7,
+   "kind": "raw",
+   "src": "broll/platano_b20.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_b21",
+   "start": 322.14,
+   "kind": "raw",
+   "src": "img/platano_b21.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "platano_b22",
+   "start": 324.62,
+   "kind": "raw",
+   "src": "broll/platano_b22.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.98
+  },
+  {
+   "id": "ov_pullquote_332",
+   "start": 332.4,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "El que sabe, no compra lo que la tierra regala."
+  },
+  {
+   "id": "platano_b23",
+   "start": 333.3,
+   "kind": "raw",
+   "src": "broll/platano_b23.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_b24",
+   "start": 344.22,
+   "kind": "raw",
+   "src": "broll/platano_b24.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.28
+  },
+  {
+   "id": "platano_b25",
+   "start": 346.2,
+   "kind": "raw",
+   "src": "broll/platano_b25.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.1
+  },
+  {
+   "id": "platano_b26",
+   "start": 348,
+   "kind": "raw",
+   "src": "broll/platano_b26.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.68
+  },
+  {
+   "id": "platano_b27",
+   "start": 354.38,
+   "kind": "raw",
+   "src": "broll/platano_b27.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.58
+  },
+  {
+   "id": "platano_b28",
+   "start": 359.66,
+   "kind": "raw",
+   "src": "img/platano_b28.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.62
+  },
+  {
+   "id": "platano_b29",
+   "start": 364.98,
+   "kind": "raw",
+   "src": "broll/platano_b29.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.06
+  },
+  {
+   "id": "platano_b30",
+   "start": 372.74,
+   "kind": "raw",
+   "src": "img/platano_b30.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.16
+  },
+  {
+   "id": "platano_b31",
+   "start": 377.6,
+   "kind": "raw",
+   "src": "broll/platano_b31.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.24
+  },
+  {
+   "id": "platano_b32",
+   "start": 379.54,
+   "kind": "raw",
+   "src": "img/platano_b32.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.48
+  },
+  {
+   "id": "platano_b33",
+   "start": 389.02,
+   "kind": "raw",
+   "src": "broll/platano_b33.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.64
+  },
+  {
+   "id": "platano_b34",
+   "start": 393.36,
+   "kind": "raw",
+   "src": "broll/platano_b34.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_b36",
+   "start": 406.02,
+   "kind": "raw",
+   "src": "broll/platano_b36.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_b37",
+   "start": 419.5,
+   "kind": "raw",
+   "src": "broll/platano_b37.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.44
+  },
+  {
+   "id": "platano_b38",
+   "start": 426.64,
+   "kind": "raw",
+   "src": "broll/platano_b38.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9.38
+  },
+  {
+   "id": "platano_b39",
+   "start": 436.02,
+   "kind": "raw",
+   "src": "broll/platano_b39.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_highlightsweep_448",
+   "start": 448.14,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Casi todos",
+   "highlight": "meten la pata",
+   "post": " con esto.",
+   "note": "entierran la cáscara entera — y no funciona"
+  },
+  {
+   "id": "platano_b40",
+   "start": 453.76,
+   "kind": "raw",
+   "src": "broll/platano_b40.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.94
+  },
+  {
+   "id": "platano_b41",
+   "start": 455.4,
+   "kind": "raw",
+   "src": "broll/platano_b41.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.88
+  },
+  {
+   "id": "platano_b42",
+   "start": 459.98,
+   "kind": "raw",
+   "src": "img/platano_b42.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9
+  },
+  {
+   "id": "ov_numberedsteps_473",
+   "start": 472.54,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Método 1 · la más simple",
+   "title": "Cáscara picada y enterrada",
+   "steps": [
+    {
+     "title": "Cortala en trocitos pequeños",
+     "sub": "cuanto más chiquitos, más rápido se deshace"
+    },
+    {
+     "title": "Enterrala a unos 5 cm",
+     "sub": "alrededor de la planta, sin tocar el tallo"
+    },
+    {
+     "title": "Nunca entera",
+     "sub": "entera tarda meses; picada, semanas"
+    }
+   ]
+  },
+  {
+   "id": "platano_b43",
+   "start": 473.14,
+   "kind": "raw",
+   "src": "broll/platano_b43.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.88
+  },
+  {
+   "id": "platano_b44",
+   "start": 477.72,
+   "kind": "raw",
+   "src": "broll/platano_b44.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.86
+  },
+  {
+   "id": "platano_b47",
+   "start": 482.72,
+   "kind": "raw",
+   "src": "broll/platano_b47.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.18
+  },
+  {
+   "id": "platano_b48",
+   "start": 485.6,
+   "kind": "raw",
+   "src": "broll/platano_b48.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.12
+  },
+  {
+   "id": "platano_b49",
+   "start": 490.42,
+   "kind": "raw",
+   "src": "broll/platano_b49.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.34
+  },
+  {
+   "id": "platano_b50",
+   "start": 492.46,
+   "kind": "raw",
+   "src": "broll/platano_b50.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.92
+  },
+  {
+   "id": "platano_b51",
+   "start": 497.08,
+   "kind": "raw",
+   "src": "broll/platano_b51.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.64
+  },
+  {
+   "id": "platano_b52",
+   "start": 504.42,
+   "kind": "raw",
+   "src": "broll/platano_b52.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.78
+  },
+  {
+   "id": "platano_b53",
+   "start": 512.9,
+   "kind": "raw",
+   "src": "broll/platano_b53.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.24
+  },
+  {
+   "id": "ov_numberedsteps_513",
+   "start": 512.9,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Método 2 · el empujón rápido",
+   "title": "El té de cáscara de plátano",
+   "steps": [
+    {
+     "title": "2 o 3 cáscaras en 1 litro de agua",
+     "sub": "en un frasco de vidrio"
+    },
+    {
+     "title": "Dejá reposar 2 o 3 días",
+     "sub": "el agua suelta el potasio"
+    },
+    {
+     "title": "Colá y regá en la base",
+     "sub": "las cáscaras van al compost"
+    }
+   ]
+  },
+  {
+   "id": "platano_b54",
+   "start": 519.84,
+   "kind": "raw",
+   "src": "img/platano_b54.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.34
+  },
+  {
+   "id": "platano_b55",
+   "start": 525.88,
+   "kind": "raw",
+   "src": "broll/platano_b55.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.62
+  },
+  {
+   "id": "platano_b56",
+   "start": 527.2,
+   "kind": "raw",
+   "src": "broll/platano_b56.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.24
+  },
+  {
+   "id": "platano_b57",
+   "start": 532.14,
+   "kind": "raw",
+   "src": "broll/platano_b57.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.22
+  },
+  {
+   "id": "platano_b58",
+   "start": 536.06,
+   "kind": "raw",
+   "src": "broll/platano_b58.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9.38
+  },
+  {
+   "id": "platano_b60",
+   "start": 545.44,
+   "kind": "raw",
+   "src": "broll/platano_b60.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.3
+  },
+  {
+   "id": "platano_b61",
+   "start": 549.44,
+   "kind": "raw",
+   "src": "broll/platano_b61.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.32
+  },
+  {
+   "id": "platano_b62",
+   "start": 554.46,
+   "kind": "raw",
+   "src": "broll/platano_b62.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.48
+  },
+  {
+   "id": "ov_checklistreveal_554",
+   "start": 554.46,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "El té va DILUIDO (o empachás la raíz)",
+   "items": [
+    "1 parte de té por 5 de agua limpia",
+    "Regá en la base, no en las hojas",
+    "1 vez por semana, nunca a diario"
+   ],
+   "stamp": "DILUÍ SIEMPRE"
+  },
+  {
+   "id": "platano_b63",
+   "start": 558.64,
+   "kind": "raw",
+   "src": "broll/platano_b63.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.1
+  },
+  {
+   "id": "platano_b65",
+   "start": 565.44,
+   "kind": "raw",
+   "src": "broll/platano_b65.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.22
+  },
+  {
+   "id": "platano_b66",
+   "start": 568.36,
+   "kind": "raw",
+   "src": "broll/platano_b66.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.26
+  },
+  {
+   "id": "ov_mythtruth_572",
+   "start": 572.24,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Más cáscara y más té = crece más rápido",
+   "truth": "El potasio en exceso bloquea el calcio — 1 vez por semana, diluido, alcanza"
+  },
+  {
+   "id": "platano_b67",
+   "start": 572.32,
+   "kind": "raw",
+   "src": "img/platano_b67.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "platano_c01",
+   "start": 576.46,
+   "kind": "raw",
+   "src": "img/platano_c01.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9
+  },
+  {
+   "id": "ov_numberedsteps_581",
+   "start": 580.62,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Método 3 · el más potente",
+   "title": "El polvo de plátano",
+   "steps": [
+    {
+     "title": "Secala al sol o al horno",
+     "sub": "hasta que quede negra y crujiente"
+    },
+    {
+     "title": "Molela a polvo",
+     "sub": "con un molinillo, la licuadora o a mano"
+    },
+    {
+     "title": "1 cucharada + regar",
+     "sub": "un banquete que dura semanas; se guarda meses"
+    }
+   ]
+  },
+  {
+   "id": "platano_c02",
+   "start": 586.48,
+   "kind": "raw",
+   "src": "broll/platano_c02.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.44
+  },
+  {
+   "id": "platano_c03",
+   "start": 588.62,
+   "kind": "raw",
+   "src": "broll/platano_c03.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.74
+  },
+  {
+   "id": "platano_c04",
+   "start": 590.06,
+   "kind": "raw",
+   "src": "broll/platano_c04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.82
+  },
+  {
+   "id": "platano_c05",
+   "start": 591.58,
+   "kind": "raw",
+   "src": "broll/platano_c05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.42
+  },
+  {
+   "id": "platano_c06",
+   "start": 593.7,
+   "kind": "raw",
+   "src": "broll/platano_c06.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.74
+  },
+  {
+   "id": "platano_c07",
+   "start": 596.14,
+   "kind": "raw",
+   "src": "broll/platano_c07.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.9
+  },
+  {
+   "id": "platano_c08",
+   "start": 600.74,
+   "kind": "raw",
+   "src": "broll/platano_c08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.72
+  },
+  {
+   "id": "platano_c09",
+   "start": 603.16,
+   "kind": "raw",
+   "src": "broll/platano_c09.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.66
+  },
+  {
+   "id": "platano_c10",
+   "start": 604.52,
+   "kind": "raw",
+   "src": "broll/platano_c10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.5
+  },
+  {
+   "id": "platano_c11",
+   "start": 606.72,
+   "kind": "raw",
+   "src": "broll/platano_c11.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.96
+  },
+  {
+   "id": "platano_c12",
+   "start": 611.38,
+   "kind": "raw",
+   "src": "broll/platano_c12.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 1.94
+  },
+  {
+   "id": "ov_bigstatreveal_611",
+   "start": 611.38,
+   "dur": 4.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El polvo seco de plátano",
+   "value": 1,
+   "suffix": " cucharada",
+   "support": "espolvoreada y regada = un banquete de potasio que dura semanas; se guarda meses en un frasco"
+  },
+  {
+   "id": "platano_c13",
+   "start": 613.02,
+   "kind": "raw",
+   "src": "broll/platano_c13.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.88
+  },
+  {
+   "id": "platano_c14",
+   "start": 615.6,
+   "kind": "raw",
+   "src": "broll/platano_c14.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.26
+  },
+  {
+   "id": "platano_c16",
+   "start": 622.56,
+   "kind": "raw",
+   "src": "broll/platano_c16.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.64
+  },
+  {
+   "id": "platano_c17",
+   "start": 625.9,
+   "kind": "raw",
+   "src": "broll/platano_c17.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.86
+  },
+  {
+   "id": "platano_c18",
+   "start": 632.46,
+   "kind": "raw",
+   "src": "img/platano_c18.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9
+  },
+  {
+   "id": "platano_c20",
+   "start": 645.86,
+   "kind": "raw",
+   "src": "broll/platano_c20.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.02
+  },
+  {
+   "id": "platano_c21",
+   "start": 647.58,
+   "kind": "raw",
+   "src": "broll/platano_c21.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_checklistreveal_661",
+   "start": 661.04,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Las que AMAN el potasio",
+   "items": [
+    "Tomates, pimientos y berenjenas",
+    "Rosales y plantas con flor",
+    "Frutales, cítricos y la vid"
+   ],
+   "stamp": "AMAN LA CÁSCARA"
+  },
+  {
+   "id": "platano_c22",
+   "start": 662.94,
+   "kind": "raw",
+   "src": "broll/platano_c22.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.94
+  },
+  {
+   "id": "platano_c23",
+   "start": 667.58,
+   "kind": "raw",
+   "src": "broll/platano_c23.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "platano_c24",
+   "start": 670.82,
+   "kind": "raw",
+   "src": "broll/platano_c24.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.48
+  },
+  {
+   "id": "platano_c25",
+   "start": 673,
+   "kind": "raw",
+   "src": "broll/platano_c25.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.36
+  },
+  {
+   "id": "platano_c26",
+   "start": 675.06,
+   "kind": "raw",
+   "src": "broll/platano_c26.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.6
+  },
+  {
+   "id": "platano_c27",
+   "start": 678.36,
+   "kind": "raw",
+   "src": "broll/platano_c27.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.46
+  },
+  {
+   "id": "platano_c28",
+   "start": 683.52,
+   "kind": "raw",
+   "src": "broll/platano_c28.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9.14
+  },
+  {
+   "id": "ov_duelcolumns_693",
+   "start": 692.66,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "¿A qué plantas darle?",
+   "leftName": "Flor y fruto",
+   "rightName": "Solo hoja",
+   "rows": [
+    {
+     "attr": "Tomate, pimiento, rosal",
+     "leftWins": true
+    },
+    {
+     "attr": "Frutales, cítricos y vid",
+     "leftWins": true
+    },
+    {
+     "attr": "Lechuga y espinaca (quieren N)",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "platano_c29",
+   "start": 696.56,
+   "kind": "raw",
+   "src": "broll/platano_c29.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_c30",
+   "start": 713.5,
+   "kind": "raw",
+   "src": "broll/platano_c30.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.88
+  },
+  {
+   "id": "ov_checklistreveal_714",
+   "start": 713.5,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Tu rutina semanal, sin complicarte",
+   "items": [
+    "Guardá las cáscaras: picá, secá y armá el té",
+    "1 té diluido por semana + 1 puñado de polvo al mes",
+    "En cada siembra, un trocito en el fondo del hoyo"
+   ],
+   "stamp": "LA RUTINA"
+  },
+  {
+   "id": "platano_c31",
+   "start": 716.08,
+   "kind": "raw",
+   "src": "broll/platano_c31.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.82
+  },
+  {
+   "id": "platano_c32",
+   "start": 719.6,
+   "kind": "raw",
+   "src": "broll/platano_c32.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.86
+  },
+  {
+   "id": "platano_c33",
+   "start": 722.16,
+   "kind": "raw",
+   "src": "broll/platano_c33.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.62
+  },
+  {
+   "id": "platano_c34",
+   "start": 724.48,
+   "kind": "raw",
+   "src": "broll/platano_c34.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.06
+  },
+  {
+   "id": "platano_c35",
+   "start": 727.24,
+   "kind": "raw",
+   "src": "broll/platano_c35.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.72
+  },
+  {
+   "id": "platano_c36",
+   "start": 731.66,
+   "kind": "raw",
+   "src": "broll/platano_c36.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.06
+  },
+  {
+   "id": "platano_c37",
+   "start": 734.42,
+   "kind": "raw",
+   "src": "broll/platano_c37.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_c38",
+   "start": 748,
+   "kind": "raw",
+   "src": "img/platano_c38.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9
+  },
+  {
+   "id": "platano_c40",
+   "start": 769.92,
+   "kind": "raw",
+   "src": "broll/platano_c40.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_beforeafter_770",
+   "start": 769.92,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Qué significa \"casi el doble\"",
+   "beforeLabel": "Antes · 4 tomates",
+   "afterLabel": "Después · 8 a 10 tomates",
+   "caption": "eso es el doble, y es completamente real — llega con constancia, no con prisa"
+  },
+  {
+   "id": "ov_highlightsweep_776",
+   "start": 776.48,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "El resultado",
+   "highlight": "llega con constancia",
+   "post": ", no con prisa.",
+   "note": "el que quiere magia en 3 días, que compre el frasco caro"
+  },
+  {
+   "id": "ov_pullquote_783",
+   "start": 782.92,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "El que quiere una huerta sana de verdad, año tras año, le da a la tierra lo que la tierra pide."
+  },
+  {
+   "id": "ov_checklistreveal_793",
+   "start": 793.48,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Los 3 errores que lo arruinan",
+   "items": [
+    "Enterrarla entera y cruda",
+    "Pasarte de cantidad (bloquea el calcio)",
+    "Creer que reemplaza al nitrógeno"
+   ],
+   "stamp": "EVITÁ ESTO"
+  },
+  {
+   "id": "ov_mythtruth_802",
+   "start": 802.12,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Enterrar la cáscara entera y cruda al pie",
+   "truth": "Tarda meses e invita hormigas, babosas y roedores — va PICADA, o seca y molida"
+  },
+  {
+   "id": "platano_c41",
+   "start": 803.14,
+   "kind": "raw",
+   "src": "broll/platano_c41.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_c42",
+   "start": 823.7,
+   "kind": "raw",
+   "src": "broll/platano_c42.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.4
+  },
+  {
+   "id": "platano_c43",
+   "start": 825.8,
+   "kind": "raw",
+   "src": "broll/platano_c43.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_c44",
+   "start": 836.44,
+   "kind": "raw",
+   "src": "broll/platano_c44.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_c46",
+   "start": 850.7,
+   "kind": "raw",
+   "src": "broll/platano_c46.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_highlightsweep_879",
+   "start": 878.98,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Genial para flor y fruto, pero",
+   "highlight": "floja en nitrógeno",
+   "post": ".",
+   "note": "sumale compost, café o estiércol para las hojas"
+  },
+  {
+   "id": "platano_c47",
+   "start": 887.24,
+   "kind": "raw",
+   "src": "broll/platano_c47.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_numberedsteps_913",
+   "start": 913.08,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Dos trucos extra del abuelo",
+   "title": "Para exprimir cada cáscara",
+   "steps": [
+    {
+     "title": "Frotá la cara interna en las hojas",
+     "sub": "las plantas de hoja grande quedan limpias y brillantes"
+    },
+    {
+     "title": "Un trocito en el fondo del hoyo",
+     "sub": "al sembrar: una reserva de potasio desde el día uno"
+    }
+   ]
+  },
+  {
+   "id": "platano_c48",
+   "start": 915.24,
+   "kind": "raw",
+   "src": "img/platano_c48.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.88
+  },
+  {
+   "id": "platano_c49",
+   "start": 917.82,
+   "kind": "raw",
+   "src": "broll/platano_c49.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_c50",
+   "start": 930.6,
+   "kind": "raw",
+   "src": "broll/platano_c50.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.06
+  },
+  {
+   "id": "platano_c51",
+   "start": 932.36,
+   "kind": "raw",
+   "src": "broll/platano_c51.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.42
+  },
+  {
+   "id": "platano_c52",
+   "start": 940.48,
+   "kind": "raw",
+   "src": "broll/platano_c52.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_flowsteps_956",
+   "start": 956.14,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "Qué vas a ver, semana a semana",
+   "nodes": [
+    {
+     "label": "Semana 1",
+     "sub": "un verde más intenso y sano"
+    },
+    {
+     "label": "Semana 2-3",
+     "sub": "más capullos y más flores"
+    },
+    {
+     "label": "Semana 4+",
+     "sub": "más fruto, más grande y dulce"
+    }
+   ]
+  },
+  {
+   "id": "platano_c54",
+   "start": 963.1,
+   "kind": "raw",
+   "src": "broll/platano_c54.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "ov_bigstatreveal_977",
+   "start": 976.86,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Con puras cáscaras y paciencia",
+   "value": 3,
+   "suffix": "×",
+   "support": "he visto huertas triplicar su cosecha — sin gastar un solo peso"
+  },
+  {
+   "id": "platano_c56",
+   "start": 977.14,
+   "kind": "raw",
+   "src": "broll/platano_c56.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  },
+  {
+   "id": "platano_c58",
+   "start": 998.98,
+   "kind": "raw",
+   "src": "img/platano_c58.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9
+  },
+  {
+   "id": "ov_pullquote_1003",
+   "start": 1002.8,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "La tierra siempre paga a quien la escucha."
+  },
+  {
+   "id": "platano_c59",
+   "start": 1023.74,
+   "kind": "raw",
+   "src": "img/platano_c59.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.54
+  },
+  {
+   "id": "ov_ctacard_1033",
+   "start": 1033.28,
+   "dur": 5.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Secretos de jardín, cada semana",
+   "title": "Suscribite al canal",
+   "bullet": "Trucos viejos, baratos y honestos que la tierra te regala — nada que vender",
+   "price": 0,
+   "cta": "SUSCRIBITE Y ACTIVÁ LA CAMPANA"
+  },
+  {
+   "id": "platano_c60",
+   "start": 1052.3,
+   "kind": "raw",
+   "src": "broll/platano_c60.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 9
+  }
+ ]
+}
