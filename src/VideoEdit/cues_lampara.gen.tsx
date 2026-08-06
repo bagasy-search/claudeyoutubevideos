@@ -63,7 +63,7 @@ export const CUES: Cue[] = [
   { key: "s_53", start: 313.22, dur: 5.46, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/s_53.png" hue="amber" darken={0} /> },
   { key: "s_54", start: 318.38, dur: 5.82, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/s_54.png" hue="amber" darken={0} /> },
   { key: "s_55", start: 323.9, dur: 5.66, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/s_55.png" hue="amber" darken={0} /> },
-  { key: "s_56", start: 329.26, dur: 7.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/s_56.mp4" hue="amber" darken={0} clipDur={17.84} /> },
+  { key: "s_56", start: 329.26, dur: 7.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/s_56.png" hue="amber" darken={0} /> },
   { key: "s_57", start: 336.26, dur: 5.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/s_57.png" hue="amber" darken={0} /> },
   { key: "s_58", start: 341.06, dur: 7.82, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/s_58.mp4" hue="amber" darken={0} clipDur={10.01} /> },
   { key: "s_59", start: 348.58, dur: 7.62, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="real/s_59.png" hue="amber" darken={0} /> },
