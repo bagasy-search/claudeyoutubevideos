@@ -1,0 +1,2135 @@
+{
+ "video": "ollabarro",
+ "avatar": "ollabarro_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "ollabarro_s_02",
+   "start": 6.92,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_02.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.86
+  },
+  {
+   "id": "ollabarro_s_03",
+   "start": 12.48,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_03.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.9
+  },
+  {
+   "id": "ollabarro_s_04",
+   "start": 18.08,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.58
+  },
+  {
+   "id": "ollabarro_s_05",
+   "start": 21.36,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.28
+  },
+  {
+   "id": "ov_highlightsweep_23",
+   "start": 22.98,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Del otro lado del cerco,",
+   "highlight": "tu vecino casi no riega",
+   "post": ".",
+   "note": "y tiene la huerta más verde de la cuadra"
+  },
+  {
+   "id": "ollabarro_s_06",
+   "start": 26.34,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_06.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.94
+  },
+  {
+   "id": "ollabarro_s_07",
+   "start": 30.98,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_12.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.78
+  },
+  {
+   "id": "ollabarro_s_08",
+   "start": 33.46,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.74
+  },
+  {
+   "id": "ollabarro_s_10",
+   "start": 45.2,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.82
+  },
+  {
+   "id": "ov_bigstatreveal_50",
+   "start": 49.76,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El secreto entero",
+   "value": 5,
+   "suffix": " dólares",
+   "support": "una sola cosa que enterrás una vez, y tu huerta se riega prácticamente sola"
+  },
+  {
+   "id": "ollabarro_s_11",
+   "start": 51.72,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.7
+  },
+  {
+   "id": "ollabarro_s_12",
+   "start": 56.12,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_12.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.28
+  },
+  {
+   "id": "ollabarro_s_13",
+   "start": 62.1,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.44
+  },
+  {
+   "id": "ollabarro_s_14",
+   "start": 66.24,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.08
+  },
+  {
+   "id": "ollabarro_s_17",
+   "start": 80.5,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9
+  },
+  {
+   "id": "ollabarro_s_18",
+   "start": 84.1,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.8
+  },
+  {
+   "id": "ov_highlightsweep_86",
+   "start": 86.12,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Hay",
+   "highlight": "un solo error",
+   "post": " que arruina todo.",
+   "note": "tan tonto que la gente cree que es un cuento — te lo muestro al final"
+  },
+  {
+   "id": "ollabarro_s_19",
+   "start": 89.6,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_bee.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.06
+  },
+  {
+   "id": "ollabarro_s_20",
+   "start": 97.36,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.52
+  },
+  {
+   "id": "ollabarro_s_21",
+   "start": 102.58,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.56
+  },
+  {
+   "id": "ollabarro_s_24",
+   "start": 124.02,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.66
+  },
+  {
+   "id": "ollabarro_s_25",
+   "start": 130.38,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_101.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "ollabarro_s_26",
+   "start": 133.84,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_101.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.88
+  },
+  {
+   "id": "ollabarro_s_27",
+   "start": 141.42,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.58
+  },
+  {
+   "id": "ov_pullquote_153",
+   "start": 153.32,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "El que aprende a regar con una olla de barro, nunca más en su vida le tiene miedo a una sequía."
+  },
+  {
+   "id": "ollabarro_s_30",
+   "start": 158.58,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.22
+  },
+  {
+   "id": "ollabarro_s_31",
+   "start": 163.5,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.38
+  },
+  {
+   "id": "ollabarro_s_32",
+   "start": 167.58,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.9
+  },
+  {
+   "id": "ollabarro_s_33",
+   "start": 171.18,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_roots.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.54
+  },
+  {
+   "id": "ollabarro_s_34",
+   "start": 176.42,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_34.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.2
+  },
+  {
+   "id": "ollabarro_s_35",
+   "start": 182.32,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.3
+  },
+  {
+   "id": "ollabarro_s_36",
+   "start": 185.32,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_87.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.2
+  },
+  {
+   "id": "ollabarro_s_37",
+   "start": 191.22,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_02.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.54
+  },
+  {
+   "id": "ov_mythtruth_191",
+   "start": 191.22,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Regar más seguido con la manguera = plantas mejor regadas",
+   "truth": "Casi toda esa agua se evapora, escurre al costado o se hunde: a la planta le llega una migaja"
+  },
+  {
+   "id": "ollabarro_s_38",
+   "start": 195.46,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_38.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.5
+  },
+  {
+   "id": "ollabarro_s_39",
+   "start": 200.66,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.84
+  },
+  {
+   "id": "ollabarro_s_40",
+   "start": 206.2,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_soil2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.76
+  },
+  {
+   "id": "ollabarro_s_44",
+   "start": 228.3,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.42
+  },
+  {
+   "id": "ollabarro_s_45",
+   "start": 231.42,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_213.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.94
+  },
+  {
+   "id": "ollabarro_s_48",
+   "start": 247.02,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_lettuce.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.98
+  },
+  {
+   "id": "ollabarro_s_49",
+   "start": 252.7,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_215.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.38
+  },
+  {
+   "id": "ollabarro_s_50",
+   "start": 255.78,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_50.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.08
+  },
+  {
+   "id": "ollabarro_s_51",
+   "start": 261.56,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_02.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.94
+  },
+  {
+   "id": "ollabarro_s_52",
+   "start": 267.2,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.18
+  },
+  {
+   "id": "ollabarro_s_54",
+   "start": 278.08,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_12.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.18
+  },
+  {
+   "id": "ov_duelcolumns_289",
+   "start": 288.6,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Lo mismo, dos precios",
+   "leftName": "Riego por goteo del vivero",
+   "rightName": "Una olla de barro",
+   "rows": [
+    {
+     "attr": "Bomba y mangueras que se tapan",
+     "leftWins": false
+    },
+    {
+     "attr": "Programador con pilas",
+     "leftWins": false
+    },
+    {
+     "attr": "Piezas que se rompen",
+     "leftWins": false
+    },
+    {
+     "attr": "Cuesta $5 y no se rompe",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "ollabarro_s_56",
+   "start": 291.32,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.12
+  },
+  {
+   "id": "ollabarro_s_57",
+   "start": 296.14,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.2
+  },
+  {
+   "id": "ollabarro_s_58",
+   "start": 301.04,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.16
+  },
+  {
+   "id": "ollabarro_s_62",
+   "start": 322.12,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.94
+  },
+  {
+   "id": "ollabarro_s_63",
+   "start": 326.76,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.9
+  },
+  {
+   "id": "ollabarro_s_64",
+   "start": 330.36,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water3.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.5
+  },
+  {
+   "id": "ollabarro_s_65",
+   "start": 334.56,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.56
+  },
+  {
+   "id": "ollabarro_s_66",
+   "start": 337.82,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.04
+  },
+  {
+   "id": "ollabarro_s_67",
+   "start": 342.56,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.62
+  },
+  {
+   "id": "ollabarro_s_69",
+   "start": 348.6,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.14
+  },
+  {
+   "id": "ov_flowsteps_349",
+   "start": 348.6,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "Por qué riega solo",
+   "nodes": [
+    {
+     "label": "Barro poroso",
+     "sub": "millones de poros microscópicos en la pared"
+    },
+    {
+     "label": "La tierra decide",
+     "sub": "solo sale agua cuando el suelo de afuera está seco"
+    },
+    {
+     "label": "Raíces a la fuente",
+     "sub": "se enroscan al barro y toman directo, sin desperdicio"
+    }
+   ]
+  },
+  {
+   "id": "ollabarro_s_71",
+   "start": 356.98,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.36
+  },
+  {
+   "id": "ollabarro_s_73",
+   "start": 366.82,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_73.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.1
+  },
+  {
+   "id": "ov_mythtruth_367",
+   "start": 366.82,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "El agua se escapa de la olla todo el tiempo",
+   "truth": "Solo sale cuando la tierra alrededor está seca; si está húmeda, se queda quieta adentro"
+  },
+  {
+   "id": "ollabarro_s_75",
+   "start": 372.6,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.14
+  },
+  {
+   "id": "ollabarro_s_76",
+   "start": 377.44,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.58
+  },
+  {
+   "id": "ollabarro_s_77",
+   "start": 384.72,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.5
+  },
+  {
+   "id": "ollabarro_s_78",
+   "start": 387.92,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "ollabarro_s_79",
+   "start": 392.1,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_02.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.36
+  },
+  {
+   "id": "ollabarro_s_80",
+   "start": 395.16,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_roots.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.76
+  },
+  {
+   "id": "ollabarro_s_82",
+   "start": 403.4,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.12
+  },
+  {
+   "id": "ollabarro_s_83",
+   "start": 409.22,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.2
+  },
+  {
+   "id": "ollabarro_s_84",
+   "start": 415.12,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.64
+  },
+  {
+   "id": "ov_pullquote_415",
+   "start": 415.12,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "La planta come de la despensa cuando tiene hambre, no cuando a vos se te ocurre pasar con el balde."
+  },
+  {
+   "id": "ollabarro_s_85",
+   "start": 420.46,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_50.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.34
+  },
+  {
+   "id": "ollabarro_s_86",
+   "start": 427.5,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.76
+  },
+  {
+   "id": "ov_highlightsweep_428",
+   "start": 427.5,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Bajo tierra, en la raíz:",
+   "highlight": "cero evaporación",
+   "post": ".",
+   "note": "el sol no la seca y no se escurre a los costados"
+  },
+  {
+   "id": "ollabarro_s_87",
+   "start": 432.96,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_87.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.74
+  },
+  {
+   "id": "ov_bigstatreveal_434",
+   "start": 434.46,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La olla enterrada usa hasta",
+   "value": 70,
+   "suffix": " % menos agua",
+   "support": "cero evaporación, cero escurrimiento — la planta toma directo de la raíz, bajo tierra"
+  },
+  {
+   "id": "ollabarro_s_88",
+   "start": 437.4,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.96
+  },
+  {
+   "id": "ollabarro_s_89",
+   "start": 443.06,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water4.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.86
+  },
+  {
+   "id": "ollabarro_s_90",
+   "start": 449.62,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_90.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.86
+  },
+  {
+   "id": "ollabarro_s_91",
+   "start": 453.18,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.34
+  },
+  {
+   "id": "ollabarro_s_92",
+   "start": 458.22,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.58
+  },
+  {
+   "id": "ov_pullquote_468",
+   "start": 467.7,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Mi abuelo no inventó nada: copió cómo la naturaleza guarda y entrega el agua, y lo metió en una olla."
+  },
+  {
+   "id": "ollabarro_s_96",
+   "start": 480.04,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.26
+  },
+  {
+   "id": "ov_bigstatreveal_483",
+   "start": 482.88,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Esto no es una moda: tiene",
+   "value": 2000,
+   "suffix": " años",
+   "support": "de la China antigua al desierto de África — regaban así donde no llovía nunca"
+  },
+  {
+   "id": "ollabarro_s_97",
+   "start": 485,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.22
+  },
+  {
+   "id": "ollabarro_s_98",
+   "start": 490.92,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_101.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.26
+  },
+  {
+   "id": "ollabarro_s_99",
+   "start": 498.88,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.14
+  },
+  {
+   "id": "ollabarro_s_100",
+   "start": 501.72,
+   "kind": "raw",
+   "src": "img/ollabarro_s_05.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.82
+  },
+  {
+   "id": "ollabarro_s_101",
+   "start": 507.24,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_101.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.52
+  },
+  {
+   "id": "ollabarro_s_103",
+   "start": 518.34,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.2
+  },
+  {
+   "id": "ollabarro_s_104",
+   "start": 521.24,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.6
+  },
+  {
+   "id": "ollabarro_s_106",
+   "start": 534.82,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.56
+  },
+  {
+   "id": "ollabarro_s_110",
+   "start": 555.66,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.5
+  },
+  {
+   "id": "ollabarro_s_111",
+   "start": 560.86,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.46
+  },
+  {
+   "id": "ollabarro_s_116",
+   "start": 585.22,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_116.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.98
+  },
+  {
+   "id": "ov_beforeafter_587",
+   "start": 587.4,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "El verano seco de la abuela",
+   "beforeLabel": "Vecinos · hojas caídas",
+   "afterLabel": "La abuela · tomates firmes",
+   "caption": "los mismos días de sol, una sola diferencia enterrada al lado de la planta"
+  },
+  {
+   "id": "ollabarro_s_117",
+   "start": 590.9,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water4.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.38
+  },
+  {
+   "id": "ollabarro_s_118",
+   "start": 593.98,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_tomato1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.7
+  },
+  {
+   "id": "ollabarro_s_119",
+   "start": 599.38,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_06.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.52
+  },
+  {
+   "id": "ollabarro_s_120",
+   "start": 604.6,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.78
+  },
+  {
+   "id": "ollabarro_s_123",
+   "start": 622.78,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.54
+  },
+  {
+   "id": "ollabarro_s_124",
+   "start": 630.02,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 2.98
+  },
+  {
+   "id": "ollabarro_s_128",
+   "start": 642.88,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.72
+  },
+  {
+   "id": "ollabarro_s_130",
+   "start": 649.76,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.88
+  },
+  {
+   "id": "ov_highlightsweep_650",
+   "start": 649.76,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Para armarla,",
+   "highlight": "dos caminos",
+   "post": ".",
+   "note": "una maceta de terracota con tapa, o dos pegadas boca con boca"
+  },
+  {
+   "id": "ollabarro_s_131",
+   "start": 653.34,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.7
+  },
+  {
+   "id": "ollabarro_s_132",
+   "start": 659.74,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.24
+  },
+  {
+   "id": "ollabarro_s_134",
+   "start": 668.24,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.48
+  },
+  {
+   "id": "ollabarro_s_136",
+   "start": 676.64,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.04
+  },
+  {
+   "id": "ollabarro_s_137",
+   "start": 682.38,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.76
+  },
+  {
+   "id": "ollabarro_s_138",
+   "start": 685.84,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.9
+  },
+  {
+   "id": "ollabarro_s_140",
+   "start": 695.52,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.24
+  },
+  {
+   "id": "ollabarro_s_141",
+   "start": 699.46,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.98
+  },
+  {
+   "id": "ov_duelcolumns_701",
+   "start": 700.64,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Cómo armar tu olla",
+   "leftName": "1 maceta + tapa",
+   "rightName": "2 macetas pegadas",
+   "rows": [
+    {
+     "attr": "Tapás el agujero del fondo",
+     "leftWins": true
+    },
+    {
+     "attr": "Fácil para empezar",
+     "leftWins": true
+    },
+    {
+     "attr": "Vasija cerrada que dura años",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "ollabarro_s_142",
+   "start": 704.14,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.84
+  },
+  {
+   "id": "ollabarro_s_143",
+   "start": 708.68,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.82
+  },
+  {
+   "id": "ollabarro_s_144",
+   "start": 715.2,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.68
+  },
+  {
+   "id": "ollabarro_s_145",
+   "start": 722.58,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.4
+  },
+  {
+   "id": "ollabarro_s_146",
+   "start": 726.68,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "ollabarro_s_148",
+   "start": 737.3,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.46
+  },
+  {
+   "id": "ollabarro_s_149",
+   "start": 742.46,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_soil3.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.2
+  },
+  {
+   "id": "ov_numberedsteps_742",
+   "start": 742.46,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Armar el tuyo",
+   "title": "Cuatro pasos y listo",
+   "steps": [
+    {
+     "title": "Tapá el agujero del fondo",
+     "sub": "corcho, barro o cemento — que no pierda"
+    },
+    {
+     "title": "Enterrala hasta el cuello",
+     "sub": "afuera solo la boca y la tapa"
+    },
+    {
+     "title": "Llenala y tapala",
+     "sub": "una vez por semana, 30 segundos"
+    },
+    {
+     "title": "Plantá en círculo alrededor",
+     "sub": "a un palmo, para que las raíces la encuentren"
+    }
+   ]
+  },
+  {
+   "id": "ollabarro_s_150",
+   "start": 747.36,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.9
+  },
+  {
+   "id": "ollabarro_s_151",
+   "start": 751.96,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.02
+  },
+  {
+   "id": "ollabarro_s_152",
+   "start": 759.68,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.56
+  },
+  {
+   "id": "ollabarro_s_153",
+   "start": 763.94,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.6
+  },
+  {
+   "id": "ollabarro_s_154",
+   "start": 770.24,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_hands2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.04
+  },
+  {
+   "id": "ollabarro_s_155",
+   "start": 776.98,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.68
+  },
+  {
+   "id": "ollabarro_s_156",
+   "start": 784.36,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.8
+  },
+  {
+   "id": "ov_bigstatreveal_789",
+   "start": 789.3,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Tu único trabajo del verano",
+   "value": 30,
+   "suffix": " segundos",
+   "support": "una vez por semana: levantás la tapa, llenás la olla, tapás. El resto lo hace la tierra"
+  },
+  {
+   "id": "ollabarro_s_157",
+   "start": 791.86,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.6
+  },
+  {
+   "id": "ollabarro_s_159",
+   "start": 800.1,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.26
+  },
+  {
+   "id": "ollabarro_s_160",
+   "start": 807.06,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_03.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.42
+  },
+  {
+   "id": "ollabarro_s_161",
+   "start": 811.18,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_roots.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.68
+  },
+  {
+   "id": "ollabarro_s_162",
+   "start": 817.56,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.04
+  },
+  {
+   "id": "ollabarro_s_163",
+   "start": 821.3,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_06.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.48
+  },
+  {
+   "id": "ov_checklistreveal_821",
+   "start": 821.3,
+   "dur": 5.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Las que más agradecen la olla",
+   "items": [
+    "Tomate, pimiento y berenjena",
+    "Zapallo, zapallito y pepino",
+    "Melón, sandía y lechuga"
+   ],
+   "stamp": "RAÍZ QUE BUSCA A LOS COSTADOS"
+  },
+  {
+   "id": "ollabarro_s_164",
+   "start": 827.48,
+   "kind": "raw",
+   "src": "img/ollabarro_s_06.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.74
+  },
+  {
+   "id": "ollabarro_s_165",
+   "start": 834.92,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_tomato2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.32
+  },
+  {
+   "id": "ollabarro_s_167",
+   "start": 844.5,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_lettuce.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.2
+  },
+  {
+   "id": "ollabarro_s_168",
+   "start": 847.4,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_harvest.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.9
+  },
+  {
+   "id": "ollabarro_s_169",
+   "start": 852,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_roots.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.18
+  },
+  {
+   "id": "ollabarro_s_170",
+   "start": 857.88,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pepper.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.64
+  },
+  {
+   "id": "ov_beforeafter_864",
+   "start": 864.14,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Poné la olla con los tomates",
+   "beforeLabel": "Hoy · plantas con sed",
+   "afterLabel": "En 2 semanas · verdes y firmes",
+   "caption": "la diferencia se ve con tus propios ojos en un par de semanas"
+  },
+  {
+   "id": "ollabarro_s_171",
+   "start": 865.22,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_tomato1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.24
+  },
+  {
+   "id": "ollabarro_s_172",
+   "start": 868.16,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.66
+  },
+  {
+   "id": "ollabarro_s_173",
+   "start": 871.52,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.56
+  },
+  {
+   "id": "ov_highlightsweep_877",
+   "start": 877.3,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Una olla chica riega",
+   "highlight": "el ancho de tus dos brazos",
+   "post": ".",
+   "note": "huerta grande: varias medianas, una cada medio metro"
+  },
+  {
+   "id": "ollabarro_s_174",
+   "start": 878.78,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.88
+  },
+  {
+   "id": "ollabarro_s_175",
+   "start": 886.36,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.14
+  },
+  {
+   "id": "ollabarro_s_176",
+   "start": 892.2,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.22
+  },
+  {
+   "id": "ollabarro_s_177",
+   "start": 898.12,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.22
+  },
+  {
+   "id": "ollabarro_s_184",
+   "start": 936.76,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "ollabarro_s_185",
+   "start": 940,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.08
+  },
+  {
+   "id": "ov_highlightsweep_947",
+   "start": 947.08,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Tiene que ser",
+   "highlight": "barro crudo, opaco, áspero",
+   "post": ".",
+   "note": "sin esmalte, sin pintura, sin brillo — o no transpira"
+  },
+  {
+   "id": "ollabarro_s_187",
+   "start": 949.84,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.54
+  },
+  {
+   "id": "ollabarro_s_188",
+   "start": 953.08,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.48
+  },
+  {
+   "id": "ollabarro_s_189",
+   "start": 959.26,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_bee.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.02
+  },
+  {
+   "id": "ollabarro_s_190",
+   "start": 966.98,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_soil2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.8
+  },
+  {
+   "id": "ollabarro_s_192",
+   "start": 978.8,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_02.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.52
+  },
+  {
+   "id": "ov_mythtruth_981",
+   "start": 980.68,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Cualquier maceta de barro linda sirve",
+   "truth": "La esmaltada o pintada sella los poros: es un balde de plástico disfrazado de barro, no entrega ni una gota"
+  },
+  {
+   "id": "ollabarro_s_193",
+   "start": 985.02,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.08
+  },
+  {
+   "id": "ollabarro_s_194",
+   "start": 987.8,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_03.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.72
+  },
+  {
+   "id": "ollabarro_s_195",
+   "start": 995.22,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_10.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.8
+  },
+  {
+   "id": "ollabarro_s_196",
+   "start": 1001.72,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3
+  },
+  {
+   "id": "ollabarro_s_197",
+   "start": 1004.42,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.12
+  },
+  {
+   "id": "ov_beforeafter_1006",
+   "start": 1006.08,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "La prueba del abuelo",
+   "beforeLabel": "Barro poroso · chupa el agua",
+   "afterLabel": "Esmaltado · el agua resbala",
+   "caption": "mojalo antes de comprarlo: el bueno se oscurece y traga; el malo queda brillando"
+  },
+  {
+   "id": "ollabarro_s_198",
+   "start": 1010.24,
+   "kind": "raw",
+   "src": "img/ollabarro_s_10.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.4
+  },
+  {
+   "id": "ollabarro_s_199",
+   "start": 1015.34,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.58
+  },
+  {
+   "id": "ollabarro_s_200",
+   "start": 1020.62,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.28
+  },
+  {
+   "id": "ov_checklistreveal_1029",
+   "start": 1029.18,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Las otras tres reglas",
+   "items": [
+    "Tapala siempre (evita evaporación y mosquitos)",
+    "Si hiela, vaciala en invierno o se raja",
+    "Revisá que las raíces no tapen la boca"
+   ],
+   "stamp": "PARA QUE DURE AÑOS"
+  },
+  {
+   "id": "ollabarro_s_202",
+   "start": 1034.6,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.24
+  },
+  {
+   "id": "ollabarro_s_203",
+   "start": 1039.54,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.14
+  },
+  {
+   "id": "ollabarro_s_205",
+   "start": 1053.32,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.42
+  },
+  {
+   "id": "ollabarro_s_207",
+   "start": 1065.84,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.34
+  },
+  {
+   "id": "ollabarro_s_208",
+   "start": 1072.88,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.86
+  },
+  {
+   "id": "ollabarro_s_209",
+   "start": 1077.44,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_roots.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 8.02
+  },
+  {
+   "id": "ollabarro_s_210",
+   "start": 1085.16,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.54
+  },
+  {
+   "id": "ollabarro_s_211",
+   "start": 1089.4,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.72
+  },
+  {
+   "id": "ov_numberedsteps_1093",
+   "start": 1093.12,
+   "dur": 6.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Lo que ganás",
+   "title": "La cuenta final",
+   "steps": [
+    {
+     "title": "Regás 1 vez por semana",
+     "sub": "en vez de todos los días atado a la manguera"
+    },
+    {
+     "title": "Hasta 70 % menos agua",
+     "sub": "se nota en la boleta y en el tanque"
+    },
+    {
+     "title": "Dura años, no se rompe",
+     "sub": "una maceta rajada gratis alcanza"
+    }
+   ]
+  },
+  {
+   "id": "ollabarro_s_213",
+   "start": 1099.98,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_213.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 6.08
+  },
+  {
+   "id": "ollabarro_s_214",
+   "start": 1105.76,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.62
+  },
+  {
+   "id": "ollabarro_s_215",
+   "start": 1110.08,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_215.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.72
+  },
+  {
+   "id": "ov_bigstatreveal_1116",
+   "start": 1116,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Con el agua a fin de mes",
+   "value": 70,
+   "suffix": " % menos",
+   "support": "se nota en la boleta si la pagás, y te dura mucho más si sale de un pozo o un tanque"
+  },
+  {
+   "id": "ollabarro_s_216",
+   "start": 1117.5,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_water4.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.58
+  },
+  {
+   "id": "ollabarro_s_218",
+   "start": 1127.7,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.84
+  },
+  {
+   "id": "ollabarro_s_219",
+   "start": 1133.24,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.56
+  },
+  {
+   "id": "ollabarro_s_221",
+   "start": 1143.68,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_08.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 4.14
+  },
+  {
+   "id": "ollabarro_s_222",
+   "start": 1147.52,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_04.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.44
+  },
+  {
+   "id": "ollabarro_s_223",
+   "start": 1150.66,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.68
+  },
+  {
+   "id": "ollabarro_s_224",
+   "start": 1154.04,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_garden1.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 3.28
+  },
+  {
+   "id": "ov_pullquote_1196",
+   "start": 1196.26,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "El agua no se le da a la tierra a los manotazos: se le da despacio, abajo, en la raíz — con paciencia rinde el triple."
+  },
+  {
+   "id": "ov_highlightsweep_1236",
+   "start": 1235.76,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Es lo que necesitás para",
+   "highlight": "dejar de ser esclavo de la manguera",
+   "post": ".",
+   "note": "y poder irte un fin de semana sin volver a una huerta muerta"
+  },
+  {
+   "id": "ollabarro_s_240",
+   "start": 1240.5,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_83.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 5.26
+  },
+  {
+   "id": "ollabarro_s_244",
+   "start": 1264.24,
+   "kind": "raw",
+   "src": "broll/ollabarro_pool_pot2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.62
+  },
+  {
+   "id": "ollabarro_s_246",
+   "start": 1276.04,
+   "kind": "raw",
+   "src": "broll/ollabarro_s_05.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true,
+   "dur": 7.86
+  },
+  {
+   "id": "ov_ctacard_1284",
+   "start": 1283.9,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La huerta del abuelo, en una guía",
+   "title": "El Almanaque Amish del Huerto",
+   "bullet": "los trucos de $5 para regar, curar y defender tu huerta sin comprar nada — link en la descripción",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN"
+  }
+ ]
+}
