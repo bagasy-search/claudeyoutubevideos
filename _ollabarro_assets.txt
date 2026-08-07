@@ -36,7 +36,8 @@ broll/ollabarro_s_73.mp4
 broll/ollabarro_s_83.mp4
 broll/ollabarro_s_87.mp4
 broll/ollabarro_s_90.mp4
-img/ollabarro_s_05.jpg
 img/ollabarro_s_06.jpg
+img/ollabarro_s_06_blur.jpg
 img/ollabarro_s_10.jpg
+img/ollabarro_s_10_blur.jpg
 ollabarro_music.mp3

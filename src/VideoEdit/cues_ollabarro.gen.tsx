@@ -81,7 +81,6 @@ export const CUES: Cue[] = [
   { key: "ollabarro_s_97", start: 485, dur: 6.22, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/ollabarro_s_10.jpg" hue="amber" darken={0} /> },
   { key: "ollabarro_s_98", start: 490.92, dur: 8.26, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ollabarro_s_101.mp4" hue="amber" darken={0} clipDur={28.08} /> },
   { key: "ollabarro_s_99", start: 498.88, dur: 3.14, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ollabarro_s_05.mp4" hue="amber" darken={0} clipDur={16.56} /> },
-  { key: "ollabarro_s_100", start: 501.72, dur: 5.82, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/ollabarro_s_05.jpg" hue="amber" darken={0} /> },
   { key: "ollabarro_s_101", start: 507.24, dur: 7.52, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ollabarro_s_101.mp4" hue="amber" darken={0} clipDur={28.08} /> },
   { key: "ollabarro_s_103", start: 518.34, dur: 3.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ollabarro_pool_pot2.mp4" hue="amber" darken={0} clipDur={7.8} /> },
   { key: "ollabarro_s_104", start: 521.24, dur: 6.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/ollabarro_s_08.mp4" hue="amber" darken={0} clipDur={10.48} /> },

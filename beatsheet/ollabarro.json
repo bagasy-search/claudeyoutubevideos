@@ -927,15 +927,6 @@
    "dur": 3.14
   },
   {
-   "id": "ollabarro_s_100",
-   "start": 501.72,
-   "kind": "raw",
-   "src": "img/ollabarro_s_05.jpg",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 5.82
-  },
-  {
    "id": "ollabarro_s_101",
    "start": 507.24,
    "kind": "raw",
