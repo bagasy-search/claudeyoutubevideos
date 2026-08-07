@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { RosemaryHero } from "./valeria/RosemaryHero";
 import { MainCollageDemo, TOTAL_FRAMES_COLLAGE } from "./VideoEdit/RemedioCollage";
 import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
+import { MainWarmpart5, TOTAL_FRAMES_WARMPART5 } from "./VideoEdit/Main_warmpart5";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
 import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
@@ -28,6 +29,7 @@ import { MainSalitre2, TOTAL_FRAMES_SA2 } from "./VideoEdit/Main_salitre2";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
 import { MainArandano, TOTAL_FRAMES_ARAND } from "./VideoEdit/Main_arandano";
+import { MainCultivosep, TOTAL_FRAMES_CULTIVOSEP } from "./VideoEdit/Main_cultivosep";
 import { MainRomnoc, TOTAL_FRAMES_ROMNOC } from "./VideoEdit/Main_romnoc";
 import { MainOkra, TOTAL_FRAMES_OKRA } from "./VideoEdit/Main_okra";
 import { MainTeromero, TOTAL_FRAMES_TEROMERO } from "./VideoEdit/Main_teromero";
@@ -121,6 +123,8 @@ import { ValKitReel, VAL_REEL_F } from "./valeria/ValeriaKit";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* CLAUDIO YODER · $5 clay-pot heater / power outage (EN) · avatar + 96 imgs sistema + kit premium */}
+      <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* DEMO · estilo collage recorte de revista (romero/pastillas/receta) */}
       <Composition id="CollageDemo" component={MainCollageDemo} durationInFrames={TOTAL_FRAMES_COLLAGE} fps={30} width={1920} height={1080} />
       {/* DR. VALLER · romero, arrugas y manchas · avatar + visuales full-screen */}
@@ -472,6 +476,7 @@ export const RemotionRoot: React.FC = () => {
       />
       {/* Dr. Federer — Arándano/Ojos (imágenes fotorrealistas con avatar de ref) */}
       <Composition id="Arandano" component={MainArandano} durationInFrames={TOTAL_FRAMES_ARAND} fps={30} width={1920} height={1080} />
+      <Composition id="Cultivosep" component={MainCultivosep} durationInFrames={TOTAL_FRAMES_CULTIVOSEP} fps={30} width={1920} height={1080} />
       {/* Federer Más Salud — #1 Romero nocturno (melasma/manchas) */}
       <Composition id="Romnoc" component={MainRomnoc} durationInFrames={TOTAL_FRAMES_ROMNOC} fps={30} width={1920} height={1080} />
       <Composition id="Okra" component={MainOkra} durationInFrames={TOTAL_FRAMES_OKRA} fps={30} width={1920} height={1080} />
