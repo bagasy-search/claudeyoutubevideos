@@ -4,6 +4,7 @@ import { RosemaryHero } from "./valeria/RosemaryHero";
 import { MainCollageDemo, TOTAL_FRAMES_COLLAGE } from "./VideoEdit/RemedioCollage";
 import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
 import { MainWarmpart5, TOTAL_FRAMES_WARMPART5 } from "./VideoEdit/Main_warmpart5";
+import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
 import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
@@ -125,6 +126,7 @@ export const RemotionRoot: React.FC = () => {
     <>
       {/* CLAUDIO YODER · $5 clay-pot heater / power outage (EN) · avatar + 96 imgs sistema + kit premium */}
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
+      <Composition id="Warmblackout" component={MainWarmblackout} durationInFrames={TOTAL_FRAMES_WARMBLACKOUT} fps={30} width={1920} height={1080} />
       {/* DEMO · estilo collage recorte de revista (romero/pastillas/receta) */}
       <Composition id="CollageDemo" component={MainCollageDemo} durationInFrames={TOTAL_FRAMES_COLLAGE} fps={30} width={1920} height={1080} />
       {/* DR. VALLER · romero, arrugas y manchas · avatar + visuales full-screen */}
