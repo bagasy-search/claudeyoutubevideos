@@ -122,9 +122,11 @@ export const FlowSteps: React.FC<{
   theme?: Theme;
   title?: string;
   nodes?: FlowNode[];
+  kicker?: string;
 }> = ({
   durationInFrames,
   theme,
+  kicker = "Paso a paso",
   title = "Del problema a la solución",
   nodes = [
     { label: "Juntar", sub: "ceniza fina" },
@@ -174,7 +176,7 @@ export const FlowSteps: React.FC<{
         />
         {/* L8 — título sobre el b-roll graduado, arriba de la banda */}
         <div style={{ position: "absolute", top: 118, left: 0, right: 0, display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
-          <Kicker theme={t} at={2} size={30}>Paso a paso</Kicker>
+          <Kicker theme={t} at={2} size={30}>{kicker}</Kicker>
           <Headline theme={t} at={8} size={titleSize} style={{ textAlign: "center", maxWidth: 1500 }}>
             {title}
           </Headline>

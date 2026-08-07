@@ -124,12 +124,14 @@ export const ChecklistReveal: React.FC<{
   title?: string;
   items?: string[];
   stamp?: string;
+  kicker?: string;
 }> = ({
   durationInFrames,
   theme,
   title = "Antes de empezar, tené esto",
   items = ["Guantes gruesos", "Balde de 20 litros", "Vinagre blanco", "Un día sin lluvia"],
   stamp = "TODO LISTO",
+  kicker = "Cómo darte cuenta",
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -167,7 +169,7 @@ export const ChecklistReveal: React.FC<{
             justifyContent: "center",
           }}
         >
-          <Kicker theme={t} at={2} size={28}>Cómo darte cuenta</Kicker>
+          <Kicker theme={t} at={2} size={28}>{kicker}</Kicker>
           <Headline theme={t} at={8} size={titleSize} style={{ marginTop: 18 }}>
             {title}
           </Headline>

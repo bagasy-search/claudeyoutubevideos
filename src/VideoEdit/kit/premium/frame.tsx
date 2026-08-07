@@ -395,7 +395,9 @@ export const MythTruth: React.FC<{
   theme?: Theme;
   myth?: string;
   truth?: string;
-}> = ({ durationInFrames, theme, myth = "Más abono = más cosecha", truth = "El exceso quema la raíz" }) => {
+  mythLabel?: string;
+  truthLabel?: string;
+}> = ({ durationInFrames, theme, myth = "Más abono = más cosecha", truth = "El exceso quema la raíz", mythLabel = "Mito", truthLabel = "Verdad" }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const mythS = kick(frame, fps, 6, SPR.settle);
@@ -412,7 +414,7 @@ export const MythTruth: React.FC<{
           <div style={{ opacity: mythS * dim, transform: `translateY(${(1 - mythS) * 26}px) scale(${0.9 + mythS * 0.1})`, position: "relative" }}>
             <Card theme={t} accent={t.color.danger} style={{ padding: "34px 70px", display: "flex", alignItems: "center", gap: 34 }}>
               <div style={{ fontFamily: t.fontLabel, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: t.color.danger, textTransform: "uppercase", border: `3px solid ${t.color.danger}`, borderRadius: 12, padding: "6px 18px", flexShrink: 0 }}>
-                Mito
+                {mythLabel}
               </div>
               <Display theme={t} size={62}>{myth}</Display>
               <Cross at={strikeAt - 6} color={t.color.danger} size={72} />
@@ -430,7 +432,7 @@ export const MythTruth: React.FC<{
           <div style={{ opacity: Math.min(1, truthS * 1.4), transform: `scale(${0.7 + truthS * 0.3})` }}>
             <Card theme={t} accent={t.color.good} strong style={{ padding: "40px 76px", display: "flex", alignItems: "center", gap: 34, boxShadow: `0 30px 70px ${t.color.shadow}, 0 0 70px ${t.color.glow}` }}>
               <div style={{ fontFamily: t.fontLabel, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: t.color.onAccent, background: t.color.good, textTransform: "uppercase", borderRadius: 12, padding: "8px 20px", flexShrink: 0 }}>
-                Verdad
+                {truthLabel}
               </div>
               <Display theme={t} size={70}>{truth}</Display>
               <Tick at={strikeAt + 24} color={t.color.good} size={78} />
