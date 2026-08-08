@@ -5,59 +5,60 @@
  "beats": [
   {
    "id": "hook_0",
-   "start": 1,
-   "dur": 6.5,
+   "start": 0.3,
+   "dur": 15.4,
    "key": "hook",
-   "kind": "talk"
+   "kind": "freezezoom",
+   "image": "img/hook_glass.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.5,
+   "label": "About two dollars.",
+   "tone": "teal"
   },
   {
    "id": "hook_1",
-   "start": 7.5,
-   "dur": 34.68,
+   "start": 15.7,
+   "dur": 4.2,
    "key": "hook",
-   "kind": "raw",
-   "src": "img/rw_federer_hold_glass.png",
-   "kicker": "One $2 herb. One glass."
+   "kind": "pricewar",
+   "leftImage": "img/hook_glass.jpg",
+   "rightImage": "img/hook_bottle.jpg",
+   "leftPrice": "$2",
+   "rightPrice": "$60",
+   "strike": "/ year",
+   "leftLabel": "Rosemary + a glass of water",
+   "rightLabel": "“Beauty collagen water”",
+   "subtitle": "Does more for over-60 skin than a $60 bottle does in a year."
+  },
+  {
+   "id": "iknow_0",
+   "start": 19.34,
+   "dur": 13.62,
+   "key": "iknow",
+   "kind": "talk"
+  },
+  {
+   "id": "openloop_early_0",
+   "start": 32.96,
+   "dur": 9.22,
+   "key": "openloop_early",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "Works for some — NOTHING for others. One mistake.",
+   "tone": "warn",
+   "w": 3,
+   "eyebrow": "Revealed at the end"
   },
   {
    "id": "reframe_0",
    "start": 42.18,
    "dur": 19.66,
    "key": "reframe",
-   "kind": "frasecinetica",
-   "words": [
-    {
-     "t": "It's"
-    },
-    {
-     "t": "not"
-    },
-    {
-     "t": "a"
-    },
-    {
-     "t": "SURFACE",
-     "hl": true
-    },
-    {
-     "t": "problem."
-    },
-    {
-     "t": "It's"
-    },
-    {
-     "t": "a"
-    },
-    {
-     "t": "SUPPLY",
-     "hl": true
-    },
-    {
-     "t": "problem."
-    }
-   ],
-   "tone": "teal",
-   "perWord": 10
+   "kind": "mitoverdad",
+   "myth": "Dull skin is a SURFACE problem — buy another cream",
+   "truth": "It's a SUPPLY problem — starved & thirsty from the INSIDE",
+   "flipAt": 261
   },
   {
    "id": "one_hour_0",
@@ -80,7 +81,13 @@
    "start": 64.86,
    "dur": 16.1,
    "key": "inventory",
-   "kind": "talk"
+   "kind": "freezezoom",
+   "image": "img/hook_hand.jpg",
+   "x": 0.62,
+   "y": 0.42,
+   "zoom": 2,
+   "label": "A little flatter, a little duller than it was?",
+   "tone": "teal"
   },
   {
    "id": "inventory_1",

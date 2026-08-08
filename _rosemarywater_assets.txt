@@ -138,5 +138,8 @@ img/rw_federer_serious.png
 img/rw_federer_serious_blur.jpg
 img/rw_federer_steep_cup.png
 img/rw_federer_steep_cup_blur.jpg
+img/hook_glass.jpg
+img/hook_bottle.jpg
+img/hook_hand.jpg
 rosemarywater.wav
 rosemarywater_opt.mp4

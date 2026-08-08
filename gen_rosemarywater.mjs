@@ -18,23 +18,35 @@ const lt = (title, o = {}) => ({ t: "lowerthird", title, tone: o.tone || "teal",
 const ge = (title, items, o = {}) => ({ t: "guardaesto", title, items, ...o });
 
 const W = { raw: 1.4, quote: 1.1, headline: 1.0, rule: 1.0, stat: 1.05, checklist: 1.2, splitlist: 1.1, bars: 1.2, callout: 1.1, chips: 1.1, diagram: 2.4, board: 3.0, nametag: 1.3, annotated: 1.3, cross: 1.6, process: 2.6, talk: 1.0,
-  errorstinger: 1.3, mitoverdad: 2.2, frasecinetica: 1.6, avatarkeyword: 2.6, avatarpizarra: 3.4, lowerthird: 1.6, guardaesto: 3.0, freezezoom: 1.6 };
+  errorstinger: 1.3, mitoverdad: 2.2, frasecinetica: 1.6, avatarkeyword: 2.6, avatarpizarra: 3.4, lowerthird: 1.6, guardaesto: 3.0, freezezoom: 1.9, pricewar: 2.6 };
 
 const SECTIONS = [
-  // ░░ HOOK — reframe loquísimo ░░
-  { key: "hook", phrase: null, start: 1.0, beats: [
-    c("talk", {}),
-    r("rw_federer_hold_glass", { at: "steeped in a glass", kicker: "One $2 herb. One glass." }),
+  // ░░ HOOK v2 — escalera de golpes (abre en el VASO, no en la cara) ░░
+  { key: "hook", phrase: null, start: 0.3, beats: [
+    // 0:00 — cold-open sobre el vaso de romero (NO la cara), zoom lento
+    c("freezezoom", { image: "img/hook_glass.jpg", x: 0.5, y: 0.5, zoom: 1.5, label: "About two dollars.", tone: "teal" }),
+    // 0:04 — GUERRA DE PRECIOS: $2 vs $60, split
+    c("pricewar", { leftImage: "img/hook_glass.jpg", rightImage: "img/hook_bottle.jpg", leftPrice: "$2", rightPrice: "$60", strike: "/ year", leftLabel: "Rosemary + a glass of water", rightLabel: "“Beauty collagen water”", subtitle: "Does more for over-60 skin than a $60 bottle does in a year.", at: "60 beauty collagen water" }),
   ]},
+  // 0:14 — recién ACÁ el doctor, full, se gana la confianza
+  { key: "iknow", phrase: "know exactly how that sounds", beats: [
+    c("talk", {}),
+  ]},
+  // 0:23 — OPEN LOOP trabado en los primeros 30s
+  { key: "openloop_early", phrase: "does absolutely nothing for others", beats: [
+    es("!", "Works for some — NOTHING for others. One mistake.", { tone: "warn", w: 3.0, eyebrow: "Revealed at the end" }),
+  ]},
+  // 0:30 — REFRAME: MITO → VERDAD con flip físico
   { key: "reframe", phrase: "not a surface problem", beats: [
-    fc([{ t: "It's" }, { t: "not" }, { t: "a" }, { t: "SURFACE", hl: true }, { t: "problem." }, { t: "It's" }, { t: "a" }, { t: "SUPPLY", hl: true }, { t: "problem." }], { tone: "teal", at: "not a surface problem" }),
+    mv("Dull skin is a SURFACE problem — buy another cream", "It's a SUPPLY problem — starved & thirsty from the INSIDE", { flipPhrase: "a supply problem" }),
   ]},
   { key: "one_hour", phrase: "one hour of the day", beats: [
     ak([{ word: "FIX IT FROM THE INSIDE", sub: "your skin is starved & thirsty — you supply it at the one hour your body is paying attention", tone: "teal", atPhrase: "your body is actually paying" }], {}),
   ]},
-  // ░░ INVENTARIO SENSORIAL (sin espejo) ░░
+  // ░░ INVENTARIO SENSORIAL — participación física (sin espejo) ░░
   { key: "inventory", phrase: "look at the back of your hand", beats: [
-    c("talk", {}),
+    // FreezeZoom que clava y hace zoom a la mano crepé real
+    c("freezezoom", { image: "img/hook_hand.jpg", x: 0.62, y: 0.42, zoom: 2.0, label: "A little flatter, a little duller than it was?", tone: "teal", at: "look at the back of your hand" }),
     ak([{ word: "THE LIP TEST", sub: "run your tongue over your lips — a little dry? that same dryness is in your skin", tone: "teal", atPhrase: "run your tongue lightly over" }], {}),
   ]},
   { key: "fixable", phrase: "the single most fixable thing", beats: [
@@ -283,7 +295,7 @@ for (const beat of beats) {
 fs.writeFileSync("public/avatar_clips_rosemarywater.json", JSON.stringify(KIT_CLIPS, null, 1));
 
 // ── PISO DE DURACIÓN ──
-const COMPK = new Set(["headline", "stat", "quote", "chips", "splitlist", "checklist", "callout", "bars", "diagram", "rule", "nametag", "board", "annotated", "cross", "process", "lowerthird", "guardaesto", "errorstinger", "mitoverdad", "frasecinetica", "freezezoom"]);
+const COMPK = new Set(["headline", "stat", "quote", "chips", "splitlist", "checklist", "callout", "bars", "diagram", "rule", "nametag", "board", "annotated", "cross", "process", "lowerthird", "guardaesto", "errorstinger", "mitoverdad", "frasecinetica", "freezezoom", "pricewar"]);
 const MINC = 4.2;
 const compIx = beats.map((b, i) => (COMPK.has(b.kind) ? i : -1)).filter((i) => i >= 0);
 for (let k = 0; k < compIx.length; k++) {

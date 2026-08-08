@@ -1,8 +1,8 @@
 import { AbsoluteFill, Sequence } from "remotion";
 import { sec } from "./theme";
 import { AvatarLayer, AvatarWindow } from "./scenes/AvatarLayer";
-import { AvatarScrimText } from "./scenes/AvatarScrimText";
 import { RawShot } from "./scenes/RawShot";
+import { PriceWar } from "./scenes/PriceWar";
 import { Endcard } from "./scenes/Endcard";
 import { AvatarPizarra } from "./scenes/AvatarPizarra";
 import { AvatarKeyword } from "./scenes/AvatarKeyword";
@@ -25,7 +25,7 @@ import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
 const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "pricewar"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
 const NOCAP = new Set(["avatarpizarra", "avatarkeyword"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
@@ -34,7 +34,7 @@ const HERO_CAP = 3.6;
 const capOf = (k: string): number =>
   k === "diagram" ? 10 : k === "board" ? 13 : k === "quote" ? 8 : k === "rule" ? 5
   : k === "errorstinger" ? 2 : k === "guardaesto" ? 8 : k === "mitoverdad" ? 6 : k === "freezezoom" ? 4.5
-  : k === "lowerthird" ? 6 : k === "frasecinetica" ? 5 : k === "process" || k === "checklist" ? 9 : 6;
+  : k === "lowerthird" ? 6 : k === "frasecinetica" ? 5 : k === "pricewar" ? 9 : k === "freezezoom" ? 5 : k === "process" || k === "checklist" ? 9 : 6;
 
 const compBeats = WATER_BEATS.filter((b: any) => isComp(b.kind));
 const rawTop = WATER_BEATS.filter((b: any) => b.kind === "raw" && /^(img|vid)\//.test(b.src || ""));
@@ -91,15 +91,10 @@ function buildWindows(): AvatarWindow[] {
   const coll: AvatarWindow[] = [];
   for (const x of w) { if (!coll.length || coll[coll.length - 1].mode !== x.mode) coll.push(x); }
 
-  // HOOK: avatar full ~1.4s y después HIDDEN durante el hook (texto sobre la foto)
-  const HOOK_END = 7.0;
-  const post = coll.filter((wnd) => wnd.start < 1.4 || wnd.start >= HOOK_END);
-  post.push({ start: 0, mode: "full" }, { start: 1.4, mode: "hidden" });
-  const resume = coll.filter((wnd) => wnd.start < HOOK_END).pop();
-  post.push({ start: HOOK_END, mode: resume && resume.start >= 1.4 ? "hidden" : (resume?.mode ?? "hidden") });
-  post.sort((a, b) => a.start - b.start);
+  // HOOK v2: el cold-open lo llevan los componentes (freezezoom del vaso + pricewar),
+  // el avatar entra full recién en la sección "iknow" (vía TALKSR). Sin scrim.
   const out: AvatarWindow[] = [];
-  for (const x of post) { if (!out.length || out[out.length - 1].mode !== x.mode) out.push(x); }
+  for (const x of coll) { if (!out.length || out[out.length - 1].mode !== x.mode) out.push(x); }
   return out;
 }
 const AVATAR_WINDOWS = buildWindows();
@@ -129,10 +124,10 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "errorstinger" ? <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} eyebrow={b.eyebrow} />
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} prompt="SAVE THIS" />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "pricewar" ? <PriceWar durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftPrice={b.leftPrice} rightPrice={b.rightPrice} leftLabel={b.leftLabel} rightLabel={b.rightLabel} strike={b.strike} subtitle={b.subtitle} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainRosemaryWater: React.FC = () => {
-  const hookDur = 5.4;
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* CAPA 1 — B-ROLL DENSO continuo */}
@@ -172,10 +167,6 @@ export const MainRosemaryWater: React.FC = () => {
         );
       })}
 
-      {/* HOOK — texto sobre la foto de las manos manchadas */}
-      <Sequence from={sec(1.4)} durationInFrames={sec(hookDur)} layout="none">
-        <AvatarScrimText durationInFrames={sec(hookDur)} setup="That dull, tired, over-60 skin…" impact="ISN'T A SURFACE PROBLEM" accentColor="#12B3AE" font={F_INTER} fontSize={100} />
-      </Sequence>
 
       {/* ENDCARD */}
       <Sequence from={sec(CTA_AT)} durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} layout="none">
