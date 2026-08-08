@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_rosemaryrub.mjs — rangos talk.
+export const TALKSR: { start: number; dur: number }[] = [{"start":1,"dur":10.33},{"start":42.74,"dur":11.46},{"start":130.16,"dur":1.48},{"start":215.46,"dur":7.72},{"start":261.2,"dur":9.9},{"start":356.38,"dur":3.24},{"start":472.84,"dur":1.73},{"start":548.58,"dur":14.14},{"start":581.8,"dur":6.94},{"start":705.12,"dur":5.74},{"start":870.18,"dur":6.68},{"start":928.94,"dur":8.48},{"start":1020.88,"dur":1.76}];
