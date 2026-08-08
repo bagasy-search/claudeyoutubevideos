@@ -134,13 +134,23 @@ export const ThermalWipe_lamina15: React.FC<{
   // falso color: capa CALIENTE (blanco/amarillo/naranja) + capa FRÍA (multiply
   // azul-violeta sobre las zonas oscuras). Es lo que da lectura de termografía
   // sin necesitar una LUT real.
+  // ⚠️ Medido en el proof del farm: con la capa fría a 0.58 y brillo 1.06 el cuadro
+  // se aplastaba a negro y se perdía la mitad de la escena. La termografía real NO
+  // tiene negros: tiene un piso azul-violeta. Por eso el brillo sube, el multiply
+  // baja, y abajo de todo va un piso de color que levanta las sombras.
   const hot: React.CSSProperties = {
-    filter: "grayscale(1) brightness(1.06) contrast(1.55) sepia(1) saturate(7) hue-rotate(-28deg)",
+    filter: "grayscale(1) brightness(1.34) contrast(1.32) sepia(1) saturate(7) hue-rotate(-28deg)",
   };
   const cold: React.CSSProperties = {
-    filter: "grayscale(1) invert(1) contrast(1.4) sepia(1) saturate(6) hue-rotate(178deg)",
+    filter: "grayscale(1) invert(1) contrast(1.15) sepia(1) saturate(5) hue-rotate(178deg)",
     mixBlendMode: "multiply",
-    opacity: 0.58,
+    opacity: 0.3,
+  };
+  // piso frío: lo que en la imagen es sombra tiene que quedar AZUL, no negro
+  const floor: React.CSSProperties = {
+    background: "linear-gradient(180deg,#2A1E5C,#141A4A)",
+    mixBlendMode: "screen",
+    opacity: 0.34,
   };
 
   return (
@@ -158,6 +168,7 @@ export const ThermalWipe_lamina15: React.FC<{
         <AbsoluteFill style={cold}>
           <ImgOr src={image} seed={3} theme={t} />
         </AbsoluteFill>
+        <AbsoluteFill style={floor} />
       </AbsoluteFill>
 
       {/* la línea de escaneo (sólo mientras cruza) */}
@@ -243,13 +254,19 @@ export const CaliperReveal_lamina15: React.FC<{
   });
   const ink = useInk(t);
 
-  const BLOCK_H = 300; // lana mineral a escala, junto a los 7px de la lámina
+  const BLOCK_H = 340; // lana mineral a escala, junto a los 7px de la lámina
 
   return (
     <AbsoluteFill style={{ opacity: op, background: "#141118" }}>
-      <AbsoluteFill style={{ filter: "brightness(0.5) saturate(0.7)" }}>
+      {/* ⚠️ Medido en el proof: con brightness(0.5) el plate quedaba CLARO y la tinta
+          de `OnFootage` (que es clara) desaparecía sobre él. El plate va hundido de
+          verdad, y encima un degradado que garantiza el contraste de los rótulos. */}
+      <AbsoluteFill style={{ filter: "brightness(0.22) saturate(0.3) contrast(1.1)" }}>
         <ImgOr src={image} seed={11} theme={t} />
       </AbsoluteFill>
+      <AbsoluteFill
+        style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(10,9,14,0.35), rgba(10,9,14,0.86) 78%)" }}
+      />
 
       <OnFootage>
         <AbsoluteFill
@@ -277,13 +294,27 @@ export const CaliperReveal_lamina15: React.FC<{
                   boxShadow: "0 8px 24px rgba(0,0,0,0.55)",
                 }}
               />
-              {/* la lámina */}
+              {/* la lámina — el punto del plano es que casi no exista, pero tiene que
+                  VERSE que está: línea brillante + halo, no una raya perdida */}
               <div
                 style={{
                   width: 340,
                   height: 7,
                   background: "linear-gradient(90deg,#EDEFF3,#FFFFFF,#C9CFD8)",
-                  boxShadow: "0 0 26px rgba(255,255,255,0.7)",
+                  boxShadow: "0 0 10px 3px rgba(255,255,255,0.95), 0 0 44px 14px rgba(190,225,255,0.55)",
+                }}
+              />
+              {/* línea guía + rótulo del espesor, para que la raya se lea como medida */}
+              <div
+                style={{
+                  position: "absolute",
+                  left: 8,
+                  top: "50%",
+                  width: 34,
+                  height: 2,
+                  background: "#FFC761",
+                  transform: "translateY(-1px)",
+                  opacity: 1 - close,
                 }}
               />
               {/* mordaza inferior */}
@@ -322,9 +353,12 @@ export const CaliperReveal_lamina15: React.FC<{
                 style={{
                   width: 340,
                   height: BLOCK_H * blockGrow,
-                  background: "repeating-linear-gradient(135deg,#C8B79A 0 12px,#B9A688 12px 24px)",
+                  background:
+                    "linear-gradient(180deg,#D6C6A6,#B9A688 55%,#8E7F63), repeating-linear-gradient(135deg,rgba(255,255,255,0.10) 0 10px,rgba(0,0,0,0.06) 10px 20px)",
+                  backgroundBlendMode: "overlay",
                   borderRadius: 4,
-                  boxShadow: "0 26px 60px rgba(0,0,0,0.6)",
+                  borderTop: "3px solid #E6DAC0",
+                  boxShadow: "0 30px 70px rgba(0,0,0,0.75), inset 0 -18px 40px rgba(0,0,0,0.35)",
                 }}
               />
             </div>
@@ -391,7 +425,7 @@ export const DustDecay_lamina15: React.FC<{
 
   // el espejo pierde brillo, saturación y contraste: no se rompe, se apaga
   const plate: React.CSSProperties = {
-    filter: `brightness(${1 - d * 0.3}) saturate(${1 - d * 0.62}) contrast(${1 - d * 0.22})`,
+    filter: `brightness(${1 - d * 0.16}) saturate(${1 - d * 0.62}) contrast(${1 - d * 0.14})`,
   };
 
   return (
@@ -411,18 +445,21 @@ export const DustDecay_lamina15: React.FC<{
       />
 
       {/* la capa de polvo que se asienta */}
+      {/* ⚠️ Medido en el proof: con el polvo a 0.72 y el ruido a 0.9 la imagen quedaba
+          LAVADA a un gris plano y ya no se veía qué era. El polvo tiene que APAGAR el
+          espejo, no borrar la escena. */}
       <AbsoluteFill
         style={{
           background:
             "radial-gradient(circle at 22% 18%, rgba(196,184,160,0.5), rgba(150,140,120,0.34) 45%, rgba(120,112,96,0.42) 100%)",
-          opacity: d * 0.72,
+          opacity: d * 0.42,
         }}
       />
       <AbsoluteFill
         style={{
           backgroundImage:
             "repeating-radial-gradient(circle at 30% 40%, rgba(255,255,255,0.05) 0 1px, rgba(0,0,0,0) 1px 5px), repeating-radial-gradient(circle at 70% 65%, rgba(255,255,255,0.04) 0 1px, rgba(0,0,0,0) 1px 7px)",
-          opacity: d * 0.9,
+          opacity: d * 0.3,
         }}
       />
 
