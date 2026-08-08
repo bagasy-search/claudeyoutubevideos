@@ -21,7 +21,8 @@ export const ChecklistErrores: React.FC<{
   const { fps } = useVideoConfig();
   // entrada SUAVE (spring lento) + zoom leve al recuadro
   const inS = spring({ frame, fps, config: { damping: 26, mass: 1, stiffness: 78 } });
-  const out = interpolate(frame, [durationInFrames - 18, durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // SALIDA = CORTE LIMPIO (antes: disolvía en 18f, casi 3/4 de segundo de panel fantasma).
+  const out = 1;
   const W = 640;
   const x = interpolate(inS, [0, 1], [side === "right" ? 90 : -90, 0]); // se corre poquito (no vuela)
   const zoom = interpolate(inS, [0, 1], [0.9, 1]) * interpolate(frame, [0, durationInFrames], [1, 1.03], { extrapolateRight: "clamp" });

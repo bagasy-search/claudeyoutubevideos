@@ -23,7 +23,9 @@ export const FraseCinetica: React.FC<{
   const { fps } = useVideoConfig();
   const accent = tone === "warn" ? RED : TEAL;
   const starts = words.map((_, i) => (ats && ats[i] != null ? ats[i] : i * perWord));
-  const out = interpolate(frame, [durationInFrames - 12, durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // SALIDA = CORTE LIMPIO (antes: disolvía en 12f). Las palabras entran una por una clavadas a la
+  // voz; que después se desvanezcan todas juntas rompe justamente el efecto de sincronía.
+  const out = 1;
 
   return (
     <AbsoluteFill style={{ fontFamily: INTER }}>

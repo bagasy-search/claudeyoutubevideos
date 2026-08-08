@@ -71,9 +71,14 @@ export const StudyMagazine: React.FC<{
   image?: string;
 }> = ({
   durationInFrames: D,
-  journal = "The Lancet Oncology",
-  title = "Un hallazgo que cambia el tratamiento",
-  stat = "+15%",
+  // ⚠ DEFAULTS VACÍOS A PROPÓSITO — esta familia DRAMATIZA ESTUDIOS, así que un default plausible
+  // no es un placeholder: es una cita falsa que se publica. Antes traía nombres de revistas REALES
+  // (Lancet, NEJM, JAMA, The New York Times) pegados a hallazgos inventados, de modo que si el que
+  // llamaba omitía un prop, el video mostraba a esa revista afirmando algo que nunca dijo. En un
+  // canal de salud. Si falta el dato, que se vea el hueco — NO lo rellenes con un ejemplo.
+  journal = "",
+  title = "",
+  stat = "",
   image,
 }) => {
   const frame = useCurrentFrame();
@@ -280,10 +285,15 @@ export const NewspaperStudy: React.FC<{
   highlight?: string;
 }> = ({
   durationInFrames: D,
-  source = "The New York Times",
-  headline = "Nuevos datos confirman el beneficio",
-  body = "Investigadores siguieron a miles de pacientes durante una década y hallaron una reducción constante del riesgo, incluso tras ajustar por edad y hábitos.",
-  highlight = "reducción constante del riesgo",
+  // ⚠ DEFAULTS VACÍOS A PROPÓSITO — esta familia DRAMATIZA ESTUDIOS, así que un default plausible
+  // no es un placeholder: es una cita falsa que se publica. Antes traía nombres de revistas REALES
+  // (Lancet, NEJM, JAMA, The New York Times) pegados a hallazgos inventados, de modo que si el que
+  // llamaba omitía un prop, el video mostraba a esa revista afirmando algo que nunca dijo. En un
+  // canal de salud. Si falta el dato, que se vea el hueco — NO lo rellenes con un ejemplo.
+  source = "",
+  headline = "",
+  body = "",
+  highlight = "",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -437,10 +447,15 @@ export const HighlightData: React.FC<{
   source?: string;
 }> = ({
   durationInFrames: D,
-  pre = "El riesgo se reduce",
-  highlight = "hasta un 40%",
-  post = "en solo tres meses",
-  source = "Journal of the American Medical Association, 2024",
+  // ⚠ DEFAULTS VACÍOS A PROPÓSITO — esta familia DRAMATIZA ESTUDIOS, así que un default plausible
+  // no es un placeholder: es una cita falsa que se publica. Antes traía nombres de revistas REALES
+  // (Lancet, NEJM, JAMA, The New York Times) pegados a hallazgos inventados, de modo que si el que
+  // llamaba omitía un prop, el video mostraba a esa revista afirmando algo que nunca dijo. En un
+  // canal de salud. Si falta el dato, que se vea el hueco — NO lo rellenes con un ejemplo.
+  pre = "",
+  highlight = "",
+  post = "",
+  source = "",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -562,12 +577,17 @@ export const CitationCard: React.FC<{
   statLabel?: string;
 }> = ({
   durationInFrames: D,
-  journal = "New England Journal of Medicine",
-  finding = "Reduce la mortalidad cardiovascular",
+  // ⚠ DEFAULTS VACÍOS A PROPÓSITO — esta familia DRAMATIZA ESTUDIOS, así que un default plausible
+  // no es un placeholder: es una cita falsa que se publica. Antes traía nombres de revistas REALES
+  // (Lancet, NEJM, JAMA, The New York Times) pegados a hallazgos inventados, de modo que si el que
+  // llamaba omitía un prop, el video mostraba a esa revista afirmando algo que nunca dijo. En un
+  // canal de salud. Si falta el dato, que se vea el hueco — NO lo rellenes con un ejemplo.
+  journal = "",
+  finding = "",
   stat = 27,
   statPrefix = "",
   statSuffix = "%",
-  statLabel = "menos eventos graves",
+  statLabel = "",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();

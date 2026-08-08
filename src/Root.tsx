@@ -4,6 +4,7 @@ import { RosemaryHero } from "./valeria/RosemaryHero";
 import { MainCollageDemo, TOTAL_FRAMES_COLLAGE } from "./VideoEdit/RemedioCollage";
 import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
 import { MainWarmpart5, TOTAL_FRAMES_WARMPART5 } from "./VideoEdit/Main_warmpart5";
+import { MainOillamp1, TOTAL_FRAMES_OILLAMP1 } from "./VideoEdit/Main_oillamp1";
 import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
@@ -127,6 +128,8 @@ export const RemotionRoot: React.FC = () => {
     <>
       {/* CLAUDIO YODER · $5 clay-pot heater / power outage (EN) · avatar + 96 imgs sistema + kit premium */}
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
+      {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}
+      <Composition id="Oillamp1" component={MainOillamp1} durationInFrames={TOTAL_FRAMES_OILLAMP1} fps={30} width={1920} height={1080} />
       <Composition id="Warmblackout" component={MainWarmblackout} durationInFrames={TOTAL_FRAMES_WARMBLACKOUT} fps={30} width={1920} height={1080} />
       <Composition id="Endlessheat" component={MainEndlessheat} durationInFrames={TOTAL_FRAMES_ENDLESSHEAT} fps={30} width={1920} height={1080} />
       {/* DEMO · estilo collage recorte de revista (romero/pastillas/receta) */}

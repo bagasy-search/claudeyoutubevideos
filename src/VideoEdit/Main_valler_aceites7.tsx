@@ -9,7 +9,6 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import captionsJson from "./valler_aceites7_captions.json";
 import {DrVallerQuote} from "./DrVallerQuote";
 import {
   ApplicationSteps,
@@ -25,15 +24,12 @@ import {
   SevenOilOrbit,
   SkinBarrierExplainer,
   TruthCard,
-  VallerCaptions,
   VallerFilmLayers,
-  type WordCaption,
 } from "./VallerAceitesKit";
 
 export const TOTAL_FRAMES_VALLER_ACEITES7 = 33508;
 const FPS = 30;
 const f = (seconds: number) => Math.round(seconds * FPS);
-const words = captionsJson as WordCaption[];
 
 const AvatarBase: React.FC = () => {
   const frame = useCurrentFrame();
@@ -82,7 +78,6 @@ const Shot: React.FC<{
 };
 
 export const MainVallerAceites7: React.FC = () => {
-  const frame = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
   const quoteStart = f(1108.933);
 
@@ -215,7 +210,6 @@ export const MainVallerAceites7: React.FC = () => {
         />
       </Sequence>
 
-      {frame < quoteStart ? <VallerCaptions words={words} /> : null}
       <VallerFilmLayers />
     </AbsoluteFill>
   );
