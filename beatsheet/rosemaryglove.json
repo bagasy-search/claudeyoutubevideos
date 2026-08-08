@@ -224,8 +224,10 @@
    "dur": 4.2,
    "key": "price",
    "kind": "stat",
-   "big": "~$2",
-   "label": "A bag of rosemary that lasts you months — vs a $90 cream",
+   "value": 2,
+   "prefix": "$",
+   "eyebrow": "The price",
+   "label": "A bag of rosemary that lasts months — vs a $90 cream",
    "tone": "teal"
   },
   {
@@ -771,6 +773,7 @@
    "key": "honesty",
    "kind": "checklist",
    "title": "Be honest — what rosemary will NOT do",
+   "eyebrow": "The honest truth",
    "tone": "warn",
    "items": [
     {

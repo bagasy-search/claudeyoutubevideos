@@ -124,10 +124,10 @@ const renderComp = (b: any, d: number) =>
   b.kind === "avatarpizarra" ? <AvatarPizarra durationInFrames={d} items={b.items} avatar={b.clip || "rosemaryglove_opt.mp4"} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} />
   : b.kind === "avatarkeyword" ? <AvatarKeyword durationInFrames={d} items={b.items} avatar={b.clip || "rosemaryglove_opt.mp4"} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} />
   : b.kind === "lowerthird" ? <LowerThird durationInFrames={d} title={b.title} desc={b.desc} kicker={b.kicker} tag={b.tag} tone={b.tone} />
-  : b.kind === "mitoverdad" ? <MitoVerdad durationInFrames={d} myth={b.myth} truth={b.truth} flipAt={b.flipAt} />
+  : b.kind === "mitoverdad" ? <MitoVerdad durationInFrames={d} myth={b.myth} truth={b.truth} flipAt={b.flipAt} mythLabel="MYTH" truthLabel="THE TRUTH" />
   : b.kind === "frasecinetica" ? <FraseCinetica durationInFrames={d} words={b.words} ats={b.ats} perWord={b.perWord} tone={b.tone} />
   : b.kind === "errorstinger" ? <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} eyebrow={b.eyebrow} />
-  : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
+  : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} prompt="SAVE THIS" />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
   : renderFederer2Comp(b, d, { medico: true });
 
@@ -179,7 +179,7 @@ export const MainRosemaryGlove: React.FC = () => {
 
       {/* ENDCARD */}
       <Sequence from={sec(CTA_AT)} durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} layout="none">
-        <Endcard durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} />
+        <Endcard durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} kicker="Dr. Federer" title="Subscribe" subtitle="Every week — real, natural skin science for hands and mature skin" cta="SUBSCRIBE" />
       </Sequence>
     </AbsoluteFill>
   );

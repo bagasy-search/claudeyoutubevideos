@@ -67,7 +67,7 @@ const SECTIONS = [
     r("rose_dried_jar", { at: "a bag that will last", hold: true }),
   ]},
   { key: "price", phrase: "steep it gently", beats: [
-    c("stat", { big: "~$2", label: "A bag of rosemary that lasts you months — vs a $90 cream", tone: "teal", at: "will last you months" }),
+    c("stat", { value: 2, prefix: "$", eyebrow: "The price", label: "A bag of rosemary that lasts months — vs a $90 cream", tone: "teal", at: "will last you months" }),
     r("rose_oil_steeping", { at: "into a mild oil", hold: true }),
   ]},
   { key: "glove_name", phrase: "the rosemary glove", beats: [
@@ -189,7 +189,7 @@ const SECTIONS = [
   // ░░ ESCUDO DE HONESTIDAD ░░
   { key: "honesty", phrase: "what this simply cannot do", beats: [
     c("talk", {}),
-    c("checklist", { title: "Be honest — what rosemary will NOT do", tone: "warn", items: [
+    c("checklist", { title: "Be honest — what rosemary will NOT do", eyebrow: "The honest truth", tone: "warn", items: [
       { text: "Erase a deep wrinkle", state: "warn" },
       { text: "Lighten a spot in a day or a week", state: "warn" },
       { text: "Replace your sunscreen", state: "warn" } ], at: "will not erase a deep" }),

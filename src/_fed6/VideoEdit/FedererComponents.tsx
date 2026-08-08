@@ -63,7 +63,7 @@ export function renderFedererComp(beat: any, d: number): React.ReactNode {
     case "splitlist":
       return <BulletCascade durationInFrames={d} theme={T} eyebrow={beat.title} bullets={(beat.items || []).map((i: string) => ({ key: i }))} />;
     case "checklist":
-      return <ChecklistReveal durationInFrames={d} theme={T} title={beat.title} items={(beat.items || []).map((i: any) => (typeof i === "string" ? i : i.text))} />;
+      return <ChecklistReveal durationInFrames={d} theme={T} title={beat.title} eyebrow={beat.eyebrow} items={(beat.items || []).map((i: any) => (typeof i === "string" ? i : i.text))} />;
     case "process":
       return <NumberedSteps durationInFrames={d} theme={T} eyebrow={beat.eyebrow} title={beat.title} steps={(beat.steps || []).map((s: any) => ({ title: s.title, sub: s.desc, image: sf(s.image) }))} />;
     case "ingredients":
@@ -121,7 +121,7 @@ export function renderRecalComp(b: any, d: number): React.ReactNode {
       return <HookCaption durationInFrames={d} theme={T} words={toks.map((w: string) => ({ text: w, boxed: w === key }))} sub={b.eyebrow} />;
     }
     case "checklist":
-      return <ChecklistReveal durationInFrames={d} theme={T} title={b.title} items={(b.items || []).map((i: any) => (typeof i === "string" ? i : i.text))} />;
+      return <ChecklistReveal durationInFrames={d} theme={T} title={b.title} eyebrow={b.eyebrow} items={(b.items || []).map((i: any) => (typeof i === "string" ? i : i.text))} />;
     case "diagram":
       return recalDiagram(b.concept, b.title, d);
     case "pizarra": {

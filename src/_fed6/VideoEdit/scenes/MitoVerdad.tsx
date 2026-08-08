@@ -14,7 +14,9 @@ export const MitoVerdad: React.FC<{
   myth: string;
   truth: string;
   flipAt?: number; // frame del flip (default a la mitad)
-}> = ({ durationInFrames, myth, truth, flipAt }) => {
+  mythLabel?: string;
+  truthLabel?: string;
+}> = ({ durationInFrames, myth, truth, flipAt, mythLabel = "MITO", truthLabel = "LA VERDAD" }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const fA = flipAt ?? Math.round(durationInFrames * 0.42);
@@ -37,12 +39,12 @@ export const MitoVerdad: React.FC<{
           <div style={{ position: "relative", width: 1240, height: 460, transformStyle: "preserve-3d", transform: `rotateX(${deg}deg)` }}>
             {/* FRENTE — MITO */}
             <Face>
-              <Chip color={RED} icon="✕" label="MITO" />
+              <Chip color={RED} icon="✕" label={mythLabel} />
               <div style={{ fontSize: 66, fontWeight: 900, color: CREAM, lineHeight: 1.1, marginTop: 26, textDecoration: front ? "line-through" : "none", textDecorationColor: `${RED}cc`, textDecorationThickness: 6 }}>{myth}</div>
             </Face>
             {/* DORSO — VERDAD */}
             <Face back>
-              <Chip color={TEAL} icon="✓" label="LA VERDAD" />
+              <Chip color={TEAL} icon="✓" label={truthLabel} />
               <div style={{ fontSize: 66, fontWeight: 900, color: CREAM, lineHeight: 1.1, marginTop: 26 }}>{truth}</div>
             </Face>
           </div>
