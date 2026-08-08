@@ -135,7 +135,7 @@ const SECTIONS = [
     r("rh_federer_massage", { at: "with the pads of your", kicker: "Small circles, move the scalp over the bone — never nails" }),
   ]},
   { key: "donots", phrase: "a couple of do nots", beats: [
-    c("checklist", { title: "Do NOT", eyebrow: "These matter", tone: "warn", items: [
+    c("checklist", { title: "Do NOT", eyebrow: "These matter", stamp: "REMEMBER", tone: "warn", items: [
       { text: "Use essential oil undiluted (it burns → more shedding)", state: "warn" },
       { text: "Massage with your nails — fingertips only", state: "warn" },
       { text: "Rinse it out fast — it needs the overnight hours", state: "warn" } ], at: "rosemary essential oil undiluted straight" }),
@@ -171,7 +171,7 @@ const SECTIONS = [
   // ░░ ESCUDO DE HONESTIDAD ░░
   { key: "honesty", phrase: "where rosemary does not work", beats: [
     c("talk", {}),
-    c("checklist", { title: "Be honest — what rosemary will NOT do", eyebrow: "The honest truth", tone: "warn", items: [
+    c("checklist", { title: "Be honest — what rosemary will NOT do", eyebrow: "The honest truth", stamp: "THE HONEST TRUTH", tone: "warn", items: [
       { text: "Raise a dead follicle — a smooth, shiny scalp is gone", state: "warn" },
       { text: "Work overnight — this is a 3–6 month project", state: "warn" },
       { text: "Skip the early shed — that's often the first sign it works", state: "warn" },
