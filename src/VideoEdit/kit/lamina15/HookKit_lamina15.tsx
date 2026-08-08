@@ -267,31 +267,48 @@ export const CaliperReveal_lamina15: React.FC<{
       <AbsoluteFill
         style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(10,9,14,0.35), rgba(10,9,14,0.86) 78%)" }}
       />
+      {/* LÍNEA DE BASE compartida: sin una mesa donde apoyar las dos piezas, el ojo no
+          las compara. Es lo que faltaba en los dos primeros proofs. */}
+      <div
+        style={{
+          position: "absolute",
+          left: 300,
+          right: 300,
+          bottom: 250,
+          height: 2,
+          background: "linear-gradient(90deg,rgba(255,199,97,0) 0%,rgba(255,199,97,0.55) 18%,rgba(255,199,97,0.55) 82%,rgba(255,199,97,0) 100%)",
+        }}
+      />
 
       <OnFootage>
         <AbsoluteFill
           style={{
             display: "flex",
             flexDirection: "row",
-            alignItems: "center",
+            // ⚠️ Medido en el 2º proof: centradas verticalmente, las dos piezas se leían
+            // como "una pastilla" y "un cuadrado", NO como una desproporción. Una
+            // comparación de espesor sólo funciona si las dos se apoyan en la MISMA
+            // línea de base, como dos objetos sobre una mesa.
+            alignItems: "flex-end",
             justifyContent: "center",
-            gap: 190,
+            gap: 170,
+            paddingBottom: 250,
           }}
         >
           {/* IZQUIERDA — la lámina entre las mordazas del calibre */}
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 34 }}>
-            <div style={{ position: "relative", width: 420, height: BLOCK_H, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              {/* mordaza superior */}
+            <div style={{ position: "relative", width: 420, height: 26, display: "flex", alignItems: "flex-end", justifyContent: "center" }}>
+              {/* mordaza superior — fina, para que NO le gane a la lámina */}
               <div
                 style={{
                   position: "absolute",
-                  left: 40,
-                  right: 40,
-                  height: 26,
-                  bottom: `calc(50% + ${gap / 2}px)`,
-                  background: "linear-gradient(180deg,#D9DDE4,#8E96A3)",
-                  borderRadius: 3,
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.55)",
+                  left: 90,
+                  right: 90,
+                  height: 12,
+                  bottom: 7 + gap,
+                  background: "linear-gradient(180deg,#AEB6C2,#6E7684)",
+                  borderRadius: 2,
+                  boxShadow: "0 6px 18px rgba(0,0,0,0.6)",
                 }}
               />
               {/* la lámina — el punto del plano es que casi no exista, pero tiene que
@@ -317,19 +334,6 @@ export const CaliperReveal_lamina15: React.FC<{
                   opacity: 1 - close,
                 }}
               />
-              {/* mordaza inferior */}
-              <div
-                style={{
-                  position: "absolute",
-                  left: 40,
-                  right: 40,
-                  height: 26,
-                  top: `calc(50% + ${gap / 2}px)`,
-                  background: "linear-gradient(0deg,#D9DDE4,#8E96A3)",
-                  borderRadius: 3,
-                  boxShadow: "0 -8px 24px rgba(0,0,0,0.55)",
-                }}
-              />
             </div>
             <div
               style={{
@@ -346,12 +350,18 @@ export const CaliperReveal_lamina15: React.FC<{
             <div style={{ fontFamily: t.fontBody, fontSize: 28, color: ink.soft, textShadow: ink.shadow }}>{leftNote}</div>
           </div>
 
+          {/* la regla de escala: prueba de que las dos piezas están dibujadas igual */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", height: BLOCK_H, justifyContent: "flex-end", marginBottom: 96 }}>
+            <div style={{ width: 2, height: BLOCK_H * blockGrow, background: "rgba(255,199,97,0.35)" }} />
+            <div style={{ width: 22, height: 2, background: "rgba(255,199,97,0.55)" }} />
+          </div>
+
           {/* DERECHA — el bloque de aislante a la misma escala */}
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 34 }}>
-            <div style={{ width: 420, height: BLOCK_H, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ width: 420, height: BLOCK_H, display: "flex", alignItems: "flex-end", justifyContent: "center" }}>
               <div
                 style={{
-                  width: 340,
+                  width: 300,
                   height: BLOCK_H * blockGrow,
                   background:
                     "linear-gradient(180deg,#D6C6A6,#B9A688 55%,#8E7F63), repeating-linear-gradient(135deg,rgba(255,255,255,0.10) 0 10px,rgba(0,0,0,0.06) 10px 20px)",
@@ -492,7 +502,7 @@ export const DustDecay_lamina15: React.FC<{
               {num(val, 2)}
             </div>
             <div style={{ fontFamily: t.fontBody, fontSize: 34, color: ink.soft, textShadow: ink.shadow }}>
-              {d < 0.5 ? fromNote : toNote}
+              {d < 0.72 ? fromNote : toNote}
             </div>
           </div>
         </div>
