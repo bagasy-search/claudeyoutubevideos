@@ -174,12 +174,12 @@ export const MainRosemaryRub: React.FC = () => {
 
       {/* HOOK — texto sobre la foto de las manos manchadas */}
       <Sequence from={sec(1.4)} durationInFrames={sec(hookDur)} layout="none">
-        <AvatarScrimText durationInFrames={sec(hookDur)} setup="Those spots on the backs of your hands…" impact="AREN'T A SKIN PROBLEM" accentColor="#12B3AE" font={F_INTER} fontSize={104} />
+        <AvatarScrimText durationInFrames={sec(hookDur)} setup="Those wrinkles around your eyes and mouth…" impact="AREN'T JUST A COLLAGEN PROBLEM" accentColor="#12B3AE" font={F_INTER} fontSize={96} />
       </Sequence>
 
       {/* ENDCARD */}
       <Sequence from={sec(CTA_AT)} durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} layout="none">
-        <Endcard durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} kicker="Dr. Federer" title="Subscribe" subtitle="Every week — real, natural skin science for hands and mature skin" cta="SUBSCRIBE" />
+        <Endcard durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} kicker="Dr. Federer" title="Subscribe" subtitle="Every week — real, natural skin science for your face and mature skin" cta="SUBSCRIBE" />
       </Sequence>
     </AbsoluteFill>
   );
