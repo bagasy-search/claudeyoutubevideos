@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_rosemaryhair.mjs — rangos talk.
+export const TALKSR: { start: number; dur: number }[] = [{"start":21.52,"dur":24.48},{"start":122.88,"dur":10.33},{"start":199.62,"dur":21.58},{"start":336.16,"dur":2.64},{"start":418.4,"dur":6.03},{"start":528.66,"dur":12.56},{"start":563,"dur":3.86},{"start":703.28,"dur":7.1},{"start":830.04,"dur":9.11},{"start":871.5,"dur":3.58},{"start":959.72,"dur":3.96}];

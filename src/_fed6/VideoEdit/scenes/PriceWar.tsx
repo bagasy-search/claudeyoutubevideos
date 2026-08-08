@@ -76,13 +76,19 @@ export const PriceWar: React.FC<{
   rightLabel?: string;
   strike?: string;
   subtitle?: string;
-}> = ({ durationInFrames, leftImage, rightImage, leftPrice = "$2", rightPrice = "$60", leftLabel = "Rosemary + a glass of water", rightLabel = "“Beauty water” in a bottle", strike = "/ year", subtitle }) => {
+  verdict?: string;      // ej "SAME HAIR · 6 MONTHS" — el VS muta a "=" y cae la estampa
+  equalsAt?: number;     // frame en que VS→= y aparece el veredicto (default ~55% del beat)
+}> = ({ durationInFrames, leftImage, rightImage, leftPrice = "$2", rightPrice = "$60", leftLabel = "Rosemary + a glass of water", rightLabel = "“Beauty water” in a bottle", strike = "/ year", subtitle, verdict, equalsAt }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   // barrido de luz dorada sobre el divisor
   const sweep = interpolate(frame, [14, 40], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const vsSp = spring({ frame: frame - 30, fps, config: { damping: 11, stiffness: 160 } });
   const subSp = spring({ frame: frame - 52, fps, config: { damping: 20, stiffness: 120 } });
+  // ── VEREDICTO: el VS se convierte en "=" y cae la estampa (el giro shockeante) ──
+  const eqF = equalsAt ?? Math.round(durationInFrames * 0.55);
+  const eq = verdict ? spring({ frame: frame - eqF, fps, config: { damping: 13, stiffness: 150 } }) : 0;
+  const verdictSp = verdict ? spring({ frame: frame - eqF - 8, fps, config: { damping: 12, stiffness: 140 } }) : 0;
 
   return (
     <AbsoluteFill style={{ fontFamily: INTER, backgroundColor: INK, overflow: "hidden" }}>
@@ -92,18 +98,28 @@ export const PriceWar: React.FC<{
       {/* divisor con barrido dorado */}
       <div style={{ position: "absolute", left: "50%", top: 0, bottom: 0, width: 4, transform: "translateX(-50%)", background: `linear-gradient(180deg, transparent, ${GOLD}, transparent)`, opacity: 0.35 + sweep * 0.65, boxShadow: `0 0 ${20 + sweep * 40}px ${GOLD}` }} />
 
-      {/* VS badge */}
-      <div style={{ position: "absolute", left: "50%", top: "42%", transform: `translate(-50%,-50%) scale(${interpolate(vsSp, [0, 1], [0.4, 1])}) rotate(${interpolate(vsSp, [0, 1], [-30, 0])}deg)`, opacity: vsSp }}>
-        <div style={{ width: 128, height: 128, borderRadius: 70, background: "rgba(11,20,24,0.94)", border: `3px solid ${GOLD}`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 12px 50px rgba(0,0,0,0.6), 0 0 30px ${GOLD}55` }}>
-          <span style={{ fontSize: 54, fontWeight: 900, color: GOLD, letterSpacing: 1 }}>VS</span>
+      {/* VS badge → muta a "=" cuando hay veredicto */}
+      <div style={{ position: "absolute", left: "50%", top: "42%", transform: `translate(-50%,-50%) scale(${interpolate(vsSp, [0, 1], [0.4, 1]) * (1 + eq * 0.18)}) rotate(${interpolate(vsSp, [0, 1], [-30, 0])}deg)`, opacity: vsSp }}>
+        <div style={{ width: 128, height: 128, borderRadius: 70, background: "rgba(11,20,24,0.94)", border: `3px solid ${GOLD}`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 12px 50px rgba(0,0,0,0.6), 0 0 ${30 + eq * 30}px ${GOLD}${eq > 0.5 ? "AA" : "55"}` }}>
+          <span style={{ position: "absolute", fontSize: 54, fontWeight: 900, color: GOLD, letterSpacing: 1, opacity: 1 - eq }}>VS</span>
+          <span style={{ position: "absolute", fontSize: 72, fontWeight: 900, color: GOLD, opacity: eq }}>=</span>
         </div>
       </div>
 
-      {/* subtítulo cinético */}
+      {/* subtítulo cinético (oculto cuando entra el veredicto) */}
       {subtitle && (
-        <div style={{ position: "absolute", left: "50%", bottom: 148, transform: `translateX(-50%) translateY(${(1 - subSp) * 20}px)`, opacity: subSp, width: "82%" }}>
+        <div style={{ position: "absolute", left: "50%", bottom: 148, transform: `translateX(-50%) translateY(${(1 - subSp) * 20}px)`, opacity: subSp * (1 - eq), width: "82%" }}>
           <div style={{ background: "rgba(11,20,24,0.9)", border: `1px solid ${GOLD}44`, borderRadius: 18, padding: "20px 40px", textAlign: "center", boxShadow: "0 20px 60px rgba(0,0,0,0.55)" }}>
             <span style={{ fontSize: 46, fontWeight: 800, color: CREAM }}>{subtitle}</span>
+          </div>
+        </div>
+      )}
+
+      {/* ESTAMPA DE VEREDICTO — el giro: mismo resultado */}
+      {verdict && (
+        <div style={{ position: "absolute", left: "50%", bottom: 130, transform: `translateX(-50%) translateY(${(1 - verdictSp) * 26}px) scale(${interpolate(verdictSp, [0, 1], [0.7, 1])}) rotate(${interpolate(verdictSp, [0, 1], [-4, 0])}deg)`, opacity: verdictSp }}>
+          <div style={{ background: GOLD, borderRadius: 20, padding: "24px 56px", textAlign: "center", boxShadow: `0 24px 70px rgba(0,0,0,0.6), 0 0 40px ${GOLD}66` }}>
+            <span style={{ fontSize: 58, fontWeight: 900, color: INK, letterSpacing: 1 }}>{verdict}</span>
           </div>
         </div>
       )}
