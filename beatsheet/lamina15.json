@@ -1,0 +1,3871 @@
+{
+ "video": "lamina15",
+ "avatar": "lamina15_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "lamina15_s_01",
+   "start": 0,
+   "dur": 4.2,
+   "kind": "premium",
+   "comp": "ThermalWipe_lamina15",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/lamina15_s_01.jpg",
+   "label": "SUP. TECHO",
+   "from": 24,
+   "to": 67,
+   "unit": "°C",
+   "sweepDur": 36
+  },
+  {
+   "id": "lamina15_s_01_b",
+   "start": 4.2,
+   "dur": 3.06,
+   "kind": "premium",
+   "comp": "ThermalWipe_lamina15",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/lamina15_s_01_b.jpg",
+   "label": "SUP. TECHO",
+   "from": 67,
+   "to": 67,
+   "unit": "°C",
+   "sweepDur": 10,
+   "cooling": true,
+   "coolTo": 52,
+   "coolAt": 18
+  },
+  {
+   "id": "ov_headline_7",
+   "start": 7.26,
+   "dur": 2.3,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "tokens": [
+    {
+     "t": "NO"
+    },
+    {
+     "t": "ES"
+    },
+    {
+     "t": "AISLANTE"
+    }
+   ],
+   "size": 118,
+   "image": "img/lamina15_s_02.jpg"
+  },
+  {
+   "id": "lamina15_s_02_b",
+   "start": 9.56,
+   "dur": 2.78,
+   "kind": "premium",
+   "comp": "CaliperReveal_lamina15",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/lamina15_s_02_b.jpg",
+   "leftLabel": "LA LÁMINA",
+   "leftNote": "una hoja",
+   "rightLabel": "AISLANTE CONVENCIONAL",
+   "rightNote": "para el mismo trabajo"
+  },
+  {
+   "id": "lamina15_s_03",
+   "start": 12.34,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "img/lamina15_s_03.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_costtally_12",
+   "start": 12.34,
+   "dur": 4.84,
+   "kind": "costtally",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Con el techo radiando",
+    "total": 100
+   },
+   "right": {
+    "label": "Con la lámina puesta",
+    "total": 90
+   },
+   "eyebrow": "Gasto de enfriamiento",
+   "image": "img/lamina15_s_03.jpg"
+  },
+  {
+   "id": "lamina15_s_05",
+   "start": 20.68,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "img/lamina15_s_05.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_doclabel_21",
+   "start": 20.68,
+   "dur": 4.98,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "ASTM C1313",
+   "sub": "Norma de barreras radiantes",
+   "corner": "bl",
+   "image": "img/lamina15_s_05.jpg"
+  },
+  {
+   "id": "lamina15_s_06",
+   "start": 25.66,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "img/lamina15_s_06.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_sourcechip_26",
+   "start": 25.66,
+   "dur": 4.1,
+   "kind": "sourcechip",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Departamento de Energía de EE. UU.",
+   "image": "img/lamina15_s_06.jpg"
+  },
+  {
+   "id": "ov_keyphrase_30",
+   "start": 29.76,
+   "dur": 2.82,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "BARRERA RADIANTE",
+   "fontSize": 132
+  },
+  {
+   "id": "lamina15_s_07_b",
+   "start": 32.58,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "img/lamina15_s_07_b.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_08",
+   "start": 37,
+   "dur": 5.44,
+   "kind": "premium",
+   "comp": "DustDecay_lamina15",
+   "theme": "earth",
+   "zone": "full",
+   "image": "img/lamina15_s_08.jpg",
+   "label": "EMISIVIDAD",
+   "from": 0.05,
+   "to": 0.3,
+   "fromNote": "AÑO 1",
+   "toNote": "AÑO 3",
+   "at": 20,
+   "decayDur": 70
+  },
+  {
+   "id": "lamina15_s_09",
+   "start": 42.44,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "img/lamina15_s_09.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_42",
+   "start": 42.44,
+   "dur": 4.58,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "eyebrow": "La misma lámina",
+   "left": {
+    "label": "20 años",
+    "value": "20 años",
+    "sub": "sigue siendo un espejo"
+   },
+   "right": {
+    "label": "3 veranos",
+    "value": "3 veranos",
+    "sub": "deja de servir y no se nota"
+   },
+   "image": "img/lamina15_s_09.jpg"
+  },
+  {
+   "id": "lamina15_s_11",
+   "start": 52.42,
+   "dur": 5.4,
+   "kind": "raw",
+   "src": "img/lamina15_s_11.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_chips_52",
+   "start": 52.42,
+   "dur": 5.4,
+   "kind": "chips",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El mismo aluminio, tres presentaciones",
+   "chips": [
+    "Con malla plástica",
+    "Con burbujas",
+    "Reforzada con hilos"
+   ],
+   "image": "img/lamina15_s_11.jpg"
+  },
+  {
+   "id": "lamina15_s_12",
+   "start": 57.82,
+   "dur": 7.24,
+   "kind": "raw",
+   "src": "img/lamina15_s_12.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_13",
+   "start": 65.06,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "img/lamina15_s_13.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stat_65",
+   "start": 65.06,
+   "dur": 4.98,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 97,
+   "suffix": "%",
+   "eyebrow": "Aluminio pulido y limpio",
+   "label": "del calor radiante rebota",
+   "image": "img/lamina15_s_13.jpg"
+  },
+  {
+   "id": "lamina15_s_14",
+   "start": 70.04,
+   "dur": 3.34,
+   "kind": "raw",
+   "src": "img/lamina15_s_14.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_termcard_70",
+   "start": 70.04,
+   "dur": 3.34,
+   "kind": "termcard",
+   "overlay": true,
+   "hue": "amber",
+   "term": "Emisividad",
+   "image": "img/lamina15_s_14.jpg",
+   "definition": "Qué tanto calor radia una superficie, comparado con un espejo perfecto",
+   "bg": "img/lamina15_s_14.jpg"
+  },
+  {
+   "id": "lamina15_s_16",
+   "start": 77.32,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "img/lamina15_s_16.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_18",
+   "start": 89.42,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "img/lamina15_s_18.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_bars_89",
+   "start": 89.42,
+   "dur": 4.42,
+   "kind": "bars",
+   "overlay": true,
+   "hue": "amber",
+   "bars": [
+    {
+     "label": "Aluminio pulido",
+     "value": 0.05
+    },
+    {
+     "label": "Madera / teja",
+     "value": 0.9
+    },
+    {
+     "label": "Pintura reflectiva",
+     "value": 0.2
+    }
+   ],
+   "title": "Emisividad por material",
+   "eyebrow": "La diferencia que importa",
+   "unit": "",
+   "orientation": "horizontal",
+   "image": "img/lamina15_s_18.jpg"
+  },
+  {
+   "id": "lamina15_s_19",
+   "start": 93.84,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "img/lamina15_s_19.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_21",
+   "start": 104.1,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "img/lamina15_s_21.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_22",
+   "start": 107.64,
+   "dur": 3.66,
+   "kind": "raw",
+   "src": "img/lamina15_s_22.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_108",
+   "start": 107.64,
+   "dur": 3.66,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Vacío",
+    "value": "Vacío",
+    "sub": "Frena la conducción"
+   },
+   "right": {
+    "label": "Plateado",
+    "value": "Plateado",
+    "sub": "Frena la radiación"
+   },
+   "title": "Por qué funciona el termo",
+   "eyebrow": "1892",
+   "image": "img/lamina15_s_22.jpg"
+  },
+  {
+   "id": "lamina15_s_24",
+   "start": 116.38,
+   "dur": 5.68,
+   "kind": "raw",
+   "src": "img/lamina15_s_24.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_26",
+   "start": 128.56,
+   "dur": 6.34,
+   "kind": "raw",
+   "src": "img/lamina15_s_26.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_timeline_129",
+   "start": 128.56,
+   "dur": 6.34,
+   "kind": "timeline",
+   "overlay": true,
+   "hue": "amber",
+   "events": [
+    {
+     "year": "1892",
+     "label": "James Dewar platea el termo"
+    },
+    {
+     "year": "1960",
+     "label": "NASA lanza el globo Echo 1"
+    },
+    {
+     "year": "Apolo",
+     "label": "El módulo lunar se forra en lámina"
+    }
+   ],
+   "title": "El mismo material",
+   "eyebrow": "70 años de historia",
+   "image": "img/lamina15_s_26.jpg"
+  },
+  {
+   "id": "lamina15_s_27",
+   "start": 134.9,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/lamina15_s_27.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_28",
+   "start": 139.56,
+   "dur": 4.34,
+   "kind": "raw",
+   "src": "img/lamina15_s_28.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_29",
+   "start": 143.9,
+   "dur": 6.94,
+   "kind": "raw",
+   "src": "broll/lamina15_s_29.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_doclabel_144",
+   "start": 143.9,
+   "dur": 6.94,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "ASTM C1313",
+   "sub": "Qué es una barrera radiante",
+   "corner": "bl"
+  },
+  {
+   "id": "lamina15_s_30",
+   "start": 150.84,
+   "dur": 6.1,
+   "kind": "raw",
+   "src": "img/lamina15_s_30.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_sourcechip_151",
+   "start": 150.84,
+   "dur": 6.1,
+   "kind": "sourcechip",
+   "overlay": true,
+   "hue": "amber",
+   "text": "ASTM C1371 — cómo se mide la emisividad",
+   "image": "img/lamina15_s_30.jpg"
+  },
+  {
+   "id": "lamina15_s_31",
+   "start": 156.94,
+   "dur": 5.46,
+   "kind": "raw",
+   "src": "broll/lamina15_s_31.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_33",
+   "start": 166.18,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "img/lamina15_s_33.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_35",
+   "start": 176.68,
+   "dur": 4.62,
+   "kind": "raw",
+   "src": "broll/lamina15_s_35.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stattag_177",
+   "start": 176.68,
+   "dur": 4.62,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 15,
+   "suffix": "$",
+   "label": "el rollo",
+   "corner": "br"
+  },
+  {
+   "id": "lamina15_s_36",
+   "start": 181.3,
+   "dur": 3.14,
+   "kind": "raw",
+   "src": "img/lamina15_s_36.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_keyphrase_192",
+   "start": 191.86,
+   "dur": 7.1,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Un número mentiroso",
+   "fontSize": 64,
+   "position": "center",
+   "src": "img/lamina15_s_38.jpg",
+   "image": "img/lamina15_s_38.jpg"
+  },
+  {
+   "id": "lamina15_s_39",
+   "start": 198.96,
+   "dur": 4.94,
+   "kind": "raw",
+   "src": "broll/lamina15_s_39.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_40",
+   "start": 203.9,
+   "dur": 5.52,
+   "kind": "raw",
+   "src": "img/lamina15_s_40.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_204",
+   "start": 203.9,
+   "dur": 5.52,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Lo que crees",
+    "value": "Lo que crees",
+    "sub": "El calor se cuela por rendijas, como el agua"
+   },
+   "right": {
+    "label": "La realidad",
+    "value": "La realidad",
+    "sub": "El calor se mueve de tres maneras distintas"
+   },
+   "title": "Antes de seguir",
+   "eyebrow": "Idea equivocada",
+   "image": "img/lamina15_s_40.jpg"
+  },
+  {
+   "id": "lamina15_s_41",
+   "start": 209.42,
+   "dur": 3.04,
+   "kind": "raw",
+   "src": "img/lamina15_s_41.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_42",
+   "start": 212.46,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "img/lamina15_s_42.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_numcard_212",
+   "start": 212.46,
+   "dur": 4.8,
+   "kind": "numcard",
+   "overlay": true,
+   "hue": "amber",
+   "number": "1",
+   "desc": "Calor que pasa por contacto, de molécula a molécula",
+   "image": "img/lamina15_s_42.jpg",
+   "name": "Conducción"
+  },
+  {
+   "id": "lamina15_s_44",
+   "start": 221.84,
+   "dur": 4.74,
+   "kind": "raw",
+   "src": "broll/lamina15_s_44.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_45",
+   "start": 226.58,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/lamina15_s_45.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_numcard_227",
+   "start": 226.58,
+   "dur": 5.5,
+   "kind": "numcard",
+   "overlay": true,
+   "hue": "amber",
+   "number": "2",
+   "desc": "El aire caliente que sube y se mueve",
+   "image": "img/lamina15_s_45.jpg",
+   "name": "Convección"
+  },
+  {
+   "id": "lamina15_s_46",
+   "start": 232.08,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/lamina15_s_46.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_47",
+   "start": 234.68,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "img/lamina15_s_47.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_numcard_235",
+   "start": 234.68,
+   "dur": 3.5,
+   "kind": "numcard",
+   "overlay": true,
+   "hue": "amber",
+   "number": "3",
+   "desc": "La que nadie ve",
+   "image": "img/lamina15_s_47.jpg",
+   "name": "Radiación"
+  },
+  {
+   "id": "lamina15_s_48",
+   "start": 238.18,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "img/lamina15_s_48.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_49",
+   "start": 242.74,
+   "dur": 2.29,
+   "kind": "raw",
+   "src": "broll/lamina15_s_49.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_annotated_243",
+   "start": 242.74,
+   "dur": 2.29,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_49.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 40,
+     "label": "línea recta"
+    },
+    {
+     "kind": "circle",
+     "x": 70,
+     "y": 30,
+     "label": "todas direcciones"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 70,
+     "label": "caliente → fría"
+    }
+   ],
+   "caption": "Así viaja la radiación",
+   "eyebrow": "Mecanismo"
+  },
+  {
+   "id": "lamina15_s_49",
+   "start": 245.03,
+   "dur": 2.91,
+   "kind": "raw",
+   "src": "broll/lamina15_s_49.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_50",
+   "start": 247.94,
+   "dur": 6.54,
+   "kind": "raw",
+   "src": "broll/lamina15_s_50.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stat_248",
+   "start": 247.94,
+   "dur": 6.54,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 150,
+   "prefix": "",
+   "suffix": " millones de km",
+   "decimals": 0,
+   "label": "de vacío absoluto hasta el Sol",
+   "eyebrow": "LA MISMA RADIACIÓN"
+  },
+  {
+   "id": "lamina15_s_51",
+   "start": 254.48,
+   "dur": 5.54,
+   "kind": "raw",
+   "src": "broll/lamina15_s_51.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_53",
+   "start": 264.62,
+   "dur": 5.46,
+   "kind": "raw",
+   "src": "img/lamina15_s_53.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_265",
+   "start": 264.62,
+   "dur": 5.46,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_53.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 20,
+     "y": 15,
+     "label": "80 °C arriba"
+    },
+    {
+     "kind": "circle",
+     "x": 25,
+     "y": 55,
+     "label": "cruza por conducción"
+    },
+    {
+     "kind": "circle",
+     "x": 65,
+     "y": 85,
+     "label": "llega a la cara de abajo"
+    }
+   ],
+   "caption": "El calor atraviesa el material",
+   "eyebrow": "PASO 1 · CONDUCCIÓN"
+  },
+  {
+   "id": "lamina15_s_54",
+   "start": 270.08,
+   "dur": 5.28,
+   "kind": "raw",
+   "src": "img/lamina15_s_54.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_55",
+   "start": 275.36,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/lamina15_s_55.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_keyphrase_281",
+   "start": 280.86,
+   "dur": 4.46,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No es el aire. Es la radiación.",
+   "fontSize": 62,
+   "position": "center",
+   "src": "img/lamina15_s_56.jpg",
+   "image": "img/lamina15_s_56.jpg"
+  },
+  {
+   "id": "lamina15_s_58",
+   "start": 287.92,
+   "dur": 5.32,
+   "kind": "raw",
+   "src": "img/lamina15_s_58.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_59",
+   "start": 293.24,
+   "dur": 5.36,
+   "kind": "raw",
+   "src": "img/lamina15_s_59.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_process_293",
+   "start": 293.24,
+   "dur": 5.36,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "title": "El aislante contra la radiación",
+   "eyebrow": "CÓMO FALLA SOLO",
+   "steps": [
+    {
+     "title": "Frena la conducción",
+     "desc": "detiene el calor que pasa por contacto"
+    },
+    {
+     "title": "No frena la radiación",
+     "desc": "la cara de arriba se calienta igual"
+    },
+    {
+     "title": "Conduce hacia abajo",
+     "desc": "esa cara caliente empuja el calor al cuarto"
+    }
+   ],
+   "image": "img/lamina15_s_59.jpg"
+  },
+  {
+   "id": "lamina15_s_61",
+   "start": 303.18,
+   "dur": 4.18,
+   "kind": "raw",
+   "src": "broll/lamina15_s_61.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_62",
+   "start": 307.36,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "img/lamina15_s_62.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_keyphrase_311",
+   "start": 311.4,
+   "dur": 3.14,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No frena el calor. Lo devuelve.",
+   "fontSize": 66,
+   "position": "center",
+   "src": "img/lamina15_s_63.jpg",
+   "image": "img/lamina15_s_63.jpg"
+  },
+  {
+   "id": "lamina15_s_65",
+   "start": 317.8,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "img/lamina15_s_65.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_318",
+   "start": 317.8,
+   "dur": 4.8,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_65.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 20,
+     "label": "madera caliente radia hacia abajo"
+    },
+    {
+     "kind": "circle",
+     "x": 70,
+     "y": 45,
+     "label": "95-97% rebota"
+    },
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 75,
+     "label": "solo 3-5% se absorbe"
+    }
+   ],
+   "caption": "La lámina actúa de espejo",
+   "eyebrow": "EL MECANISMO"
+  },
+  {
+   "id": "lamina15_s_66",
+   "start": 322.6,
+   "dur": 7.28,
+   "kind": "raw",
+   "src": "img/lamina15_s_66.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_keyphrase_330",
+   "start": 329.88,
+   "dur": 3.78,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Física de espejo. Calor invisible.",
+   "fontSize": 60,
+   "position": "center",
+   "src": "img/lamina15_s_67.jpg",
+   "image": "img/lamina15_s_67.jpg"
+  },
+  {
+   "id": "lamina15_s_69",
+   "start": 336.32,
+   "dur": 7.34,
+   "kind": "raw",
+   "src": "img/lamina15_s_69.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_bars_336",
+   "start": 336.32,
+   "dur": 7.34,
+   "kind": "bars",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que reporta el Departamento de Energía",
+   "eyebrow": "DOE, EE.UU.",
+   "unit": "%",
+   "orientation": "horizontal",
+   "bars": [
+    {
+     "label": "Ganancia de calor por el techo (16–42)",
+     "value": 42
+    },
+    {
+     "label": "Gasto de enfriamiento (5–10)",
+     "value": 10
+    }
+   ],
+   "image": "img/lamina15_s_69.jpg"
+  },
+  {
+   "id": "lamina15_s_70",
+   "start": 343.66,
+   "dur": 7.24,
+   "kind": "raw",
+   "src": "broll/lamina15_s_70.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_sourcechip_344",
+   "start": 343.66,
+   "dur": 7.24,
+   "kind": "sourcechip",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Fuente: Departamento de Energía de EE.UU."
+  },
+  {
+   "id": "lamina15_s_71",
+   "start": 350.9,
+   "dur": 3.18,
+   "kind": "raw",
+   "src": "img/lamina15_s_71.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_73",
+   "start": 359.54,
+   "dur": 5.46,
+   "kind": "raw",
+   "src": "broll/lamina15_s_73.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stat_360",
+   "start": 359.54,
+   "dur": 5.46,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 15,
+   "prefix": "10–",
+   "suffix": " °C",
+   "decimals": 0,
+   "label": "menos en la cara de abajo del techo",
+   "eyebrow": "CENTRO DE ENERGÍA SOLAR DE FLORIDA"
+  },
+  {
+   "id": "lamina15_s_74",
+   "start": 365,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/lamina15_s_74.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_75",
+   "start": 370.5,
+   "dur": 7.12,
+   "kind": "raw",
+   "src": "img/lamina15_s_75.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_76",
+   "start": 377.62,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "img/lamina15_s_76.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_378",
+   "start": 377.62,
+   "dur": 3.28,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Qué SÍ baja y qué NO",
+   "eyebrow": "ACLARACIÓN HONESTA",
+   "left": {
+    "label": "La superficie",
+    "value": "La superficie",
+    "sub": "tapanco, losa, cara de abajo del techo — sí baja"
+   },
+   "right": {
+    "label": "El aire",
+    "value": "El aire",
+    "sub": "tu sala, tu recámara — no baja 15 °C"
+   },
+   "image": "img/lamina15_s_76.jpg"
+  },
+  {
+   "id": "lamina15_s_78",
+   "start": 386.92,
+   "dur": 5.3,
+   "kind": "raw",
+   "src": "broll/lamina15_s_78.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_79",
+   "start": 392.22,
+   "dur": 4.88,
+   "kind": "raw",
+   "src": "broll/lamina15_s_79.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_80",
+   "start": 397.1,
+   "dur": 6.42,
+   "kind": "raw",
+   "src": "img/lamina15_s_80.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_81",
+   "start": 403.52,
+   "dur": 6.9,
+   "kind": "raw",
+   "src": "img/lamina15_s_81.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_404",
+   "start": 403.52,
+   "dur": 6.9,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "title": "La misma física, al revés",
+   "eyebrow": "RADIACIÓN EN INVIERNO",
+   "left": {
+    "label": "Calefacción prendida",
+    "value": "Calefacción prendida",
+    "sub": "el aire del cuarto está caliente"
+   },
+   "right": {
+    "label": "Junto a la ventana",
+    "value": "Junto a la ventana",
+    "sub": "el vidrio frío te roba calor y sientes frío"
+   },
+   "image": "img/lamina15_s_81.jpg"
+  },
+  {
+   "id": "lamina15_s_83",
+   "start": 416.24,
+   "dur": 5.28,
+   "kind": "raw",
+   "src": "img/lamina15_s_83.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_keyphrase_422",
+   "start": 421.52,
+   "dur": 6.96,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No es magia. Es física.",
+   "fontSize": 60,
+   "position": "center",
+   "src": "img/lamina15_s_84.jpg",
+   "image": "img/lamina15_s_84.jpg"
+  },
+  {
+   "id": "lamina15_s_86",
+   "start": 433.16,
+   "dur": 3.02,
+   "kind": "raw",
+   "src": "img/lamina15_s_86.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_87",
+   "start": 436.18,
+   "dur": 7.38,
+   "kind": "raw",
+   "src": "img/lamina15_s_87.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_chips_436",
+   "start": 436.18,
+   "dur": 7.38,
+   "kind": "chips",
+   "overlay": true,
+   "hue": "amber",
+   "chips": [
+    "Separación mínima",
+    "Traslape",
+    "Distancia entre grapas",
+    "Rendimiento del rollo"
+   ],
+   "title": "Las medidas exactas",
+   "image": "img/lamina15_s_87.jpg"
+  },
+  {
+   "id": "lamina15_s_88",
+   "start": 443.56,
+   "dur": 7.18,
+   "kind": "raw",
+   "src": "img/lamina15_s_88.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_doclabel_444",
+   "start": 443.56,
+   "dur": 7.18,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Medidas exactas",
+   "sub": "En la descripción",
+   "corner": "br",
+   "image": "img/lamina15_s_88.jpg"
+  },
+  {
+   "id": "lamina15_s_90",
+   "start": 455.66,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "img/lamina15_s_90.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_numcard_456",
+   "start": 455.66,
+   "dur": 4.92,
+   "kind": "numcard",
+   "overlay": true,
+   "hue": "amber",
+   "number": "1",
+   "desc": "Tapanco con espacio para meterte agachado",
+   "image": "img/lamina15_s_90.jpg",
+   "name": "El caso ideal"
+  },
+  {
+   "id": "lamina15_s_91",
+   "start": 460.58,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_91.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_92",
+   "start": 463.28,
+   "dur": 5.04,
+   "kind": "raw",
+   "src": "broll/lamina15_s_92.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_callout_463",
+   "start": 463.28,
+   "dur": 5.04,
+   "kind": "callout",
+   "overlay": true,
+   "hue": "amber",
+   "figure": "La viga, no el cielo raso",
+   "caption": "Grapa aquí, viga por viga",
+   "eyebrow": "Ojo"
+  },
+  {
+   "id": "lamina15_s_94",
+   "start": 470.92,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "img/lamina15_s_94.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_95",
+   "start": 474.46,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "img/lamina15_s_95.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_474",
+   "start": 474.46,
+   "dur": 3.8,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_95.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 20,
+     "y": 20,
+     "label": "Viga caliente"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 50,
+     "label": "Cámara de aire"
+    },
+    {
+     "kind": "circle",
+     "x": 80,
+     "y": 80,
+     "label": "Lámina reflectante"
+    }
+   ],
+   "caption": "La separación es el mecanismo",
+   "eyebrow": "La cámara de aire"
+  },
+  {
+   "id": "lamina15_s_97",
+   "start": 481,
+   "dur": 6.54,
+   "kind": "raw",
+   "src": "img/lamina15_s_97.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_98",
+   "start": 487.54,
+   "dur": 3.8,
+   "kind": "raw",
+   "src": "img/lamina15_s_98.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_termcard_488",
+   "start": 487.54,
+   "dur": 3.8,
+   "kind": "termcard",
+   "overlay": true,
+   "hue": "amber",
+   "term": "Conducción",
+   "image": "img/lamina15_s_98.jpg",
+   "definition": "El calor pasa por contacto directo, sin aire de por medio.",
+   "bg": "img/lamina15_s_98.jpg"
+  },
+  {
+   "id": "ov_keyphrase_495",
+   "start": 494.68,
+   "dur": 2.76,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "TU ESPEJO, UN CALEFACTOR",
+   "fontSize": 64,
+   "position": "center",
+   "src": "img/lamina15_s_100.jpg",
+   "image": "img/lamina15_s_100.jpg"
+  },
+  {
+   "id": "lamina15_s_101",
+   "start": 497.44,
+   "dur": 5.66,
+   "kind": "raw",
+   "src": "img/lamina15_s_101.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_102",
+   "start": 503.1,
+   "dur": 3.02,
+   "kind": "raw",
+   "src": "broll/lamina15_s_102.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_103",
+   "start": 506.12,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "img/lamina15_s_103.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_506",
+   "start": 506.12,
+   "dur": 4.14,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Aluminio pegado",
+    "value": "Aluminio pegado",
+    "sub": "No sirve para nada"
+   },
+   "right": {
+    "label": "Aluminio con aire",
+    "value": "Aluminio con aire",
+    "sub": "Sirve muchísimo"
+   },
+   "title": "Pegado vs. con aire",
+   "eyebrow": "La regla del método",
+   "image": "img/lamina15_s_103.jpg"
+  },
+  {
+   "id": "lamina15_s_105",
+   "start": 515.6,
+   "dur": 8.74,
+   "kind": "raw",
+   "src": "img/lamina15_s_105.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_rule_516",
+   "start": 515.6,
+   "dur": 8,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": "01",
+   "title": "Aire adelante, siempre",
+   "label": "La regla que decide todo",
+   "image": "img/lamina15_s_105.jpg"
+  },
+  {
+   "id": "lamina15_s_106",
+   "start": 524.34,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_106.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_108",
+   "start": 532.48,
+   "dur": 2.94,
+   "kind": "raw",
+   "src": "img/lamina15_s_108.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_statslam_532",
+   "start": 532.48,
+   "dur": 2.94,
+   "kind": "statslam",
+   "overlay": true,
+   "hue": "amber",
+   "value": "Minutos",
+   "label": "Y ya radia como una plancha",
+   "image": "img/lamina15_s_108.jpg"
+  },
+  {
+   "id": "lamina15_s_109",
+   "start": 535.42,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_109.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_110",
+   "start": 539.12,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "img/lamina15_s_110.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_thennow_539",
+   "start": 539.12,
+   "dur": 4.84,
+   "kind": "thennow",
+   "overlay": true,
+   "hue": "amber",
+   "before": {
+    "src": "img/lamina15_s_110.jpg",
+    "label": "Antes"
+   },
+   "after": {
+    "src": "img/lamina15_s_110.jpg",
+    "label": "Después"
+   },
+   "image": "img/lamina15_s_110.jpg"
+  },
+  {
+   "id": "ov_keyphrase_547",
+   "start": 547.3,
+   "dur": 2.54,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "TRABAJA TEMPRANO",
+   "fontSize": 60,
+   "src": "img/lamina15_s_112.jpg",
+   "image": "img/lamina15_s_112.jpg"
+  },
+  {
+   "id": "lamina15_s_113",
+   "start": 549.84,
+   "dur": 3.92,
+   "kind": "raw",
+   "src": "img/lamina15_s_113.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_114",
+   "start": 553.76,
+   "dur": 6.04,
+   "kind": "raw",
+   "src": "broll/lamina15_s_114.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_116",
+   "start": 563.86,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "img/lamina15_s_116.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_checklist_564",
+   "start": 563.86,
+   "dur": 3.32,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Ya había gastado en",
+   "items": [
+    {
+     "text": "Aire acondicionado nuevo"
+    },
+    {
+     "text": "Ventanas cambiadas"
+    },
+    {
+     "text": "Impermeabilizante caro"
+    }
+   ],
+   "eyebrow": "Antes de la barrera",
+   "image": "img/lamina15_s_116.jpg"
+  },
+  {
+   "id": "lamina15_s_117",
+   "start": 567.18,
+   "dur": 3.42,
+   "kind": "raw",
+   "src": "img/lamina15_s_117.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_118",
+   "start": 570.6,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/lamina15_s_118.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mistake_571",
+   "start": 570.6,
+   "dur": 4.42,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": "01",
+   "title": "El impermeabilizante carísimo",
+   "desc": "Un gasto más que no resolvió el calor de adentro",
+   "eyebrow": "Antes de la barrera"
+  },
+  {
+   "id": "lamina15_s_120",
+   "start": 579.8,
+   "dur": 2.78,
+   "kind": "raw",
+   "src": "img/lamina15_s_120.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_123",
+   "start": 591.52,
+   "dur": 5.82,
+   "kind": "raw",
+   "src": "broll/lamina15_s_123.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_datestamp_592",
+   "start": 591.52,
+   "dur": 5.82,
+   "kind": "datestamp",
+   "overlay": true,
+   "hue": "amber",
+   "value": "Lunes",
+   "label": "No fue por el recibo",
+   "corner": "tl"
+  },
+  {
+   "id": "lamina15_s_124",
+   "start": 597.34,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "broll/lamina15_s_124.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_125",
+   "start": 601.7,
+   "dur": 4.38,
+   "kind": "raw",
+   "src": "img/lamina15_s_125.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_keyphrase_606",
+   "start": 606.08,
+   "dur": 3.08,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "Una noche, no un número.",
+   "fontSize": 64,
+   "position": "center"
+  },
+  {
+   "id": "lamina15_s_128",
+   "start": 615.18,
+   "dur": 6.3,
+   "kind": "raw",
+   "src": "broll/lamina15_s_128.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_rule_615",
+   "start": 615.18,
+   "dur": 6.3,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": "03",
+   "title": "Azotea plana de concreto",
+   "label": "Sin tapanco"
+  },
+  {
+   "id": "lamina15_s_129",
+   "start": 621.48,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "img/lamina15_s_129.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_131",
+   "start": 628.08,
+   "dur": 6.16,
+   "kind": "raw",
+   "src": "img/lamina15_s_131.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_132",
+   "start": 634.24,
+   "dur": 5,
+   "kind": "raw",
+   "src": "img/lamina15_s_132.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_634",
+   "start": 634.24,
+   "dur": 5,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Armar el aire",
+    "value": "Armar el aire",
+    "sub": "Bastidor contra la losa, por dentro"
+   },
+   "right": {
+    "label": "Por arriba",
+    "value": "Por arriba",
+    "sub": "En la azotea, del lado de afuera"
+   },
+   "title": "Dos caminos honestos",
+   "eyebrow": "Azotea de concreto",
+   "image": "img/lamina15_s_132.jpg"
+  },
+  {
+   "id": "lamina15_s_134",
+   "start": 642.62,
+   "dur": 5.56,
+   "kind": "raw",
+   "src": "img/lamina15_s_134.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_643",
+   "start": 642.62,
+   "dur": 5.56,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_134.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 20,
+     "y": 25,
+     "label": "Losa de concreto"
+    },
+    {
+     "kind": "circle",
+     "x": 45,
+     "y": 42,
+     "label": "Bastidor de madera"
+    },
+    {
+     "kind": "circle",
+     "x": 62,
+     "y": 55,
+     "label": "Cámara de aire"
+    },
+    {
+     "kind": "circle",
+     "x": 75,
+     "y": 70,
+     "label": "Lámina, cara brillante abajo"
+    }
+   ],
+   "caption": "El bastidor construye el aire que la losa no tenía",
+   "eyebrow": "Camino 1"
+  },
+  {
+   "id": "lamina15_s_135",
+   "start": 648.18,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "img/lamina15_s_135.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_136",
+   "start": 651.46,
+   "dur": 5.46,
+   "kind": "raw",
+   "src": "img/lamina15_s_136.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_metertag_651",
+   "start": 651.46,
+   "dur": 5.46,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Cámara de aire construida",
+   "fromPct": 0,
+   "toPct": 100,
+   "corner": "tr",
+   "image": "img/lamina15_s_136.jpg"
+  },
+  {
+   "id": "lamina15_s_137",
+   "start": 656.92,
+   "dur": 4.86,
+   "kind": "raw",
+   "src": "broll/lamina15_s_137.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_139",
+   "start": 665.5,
+   "dur": 3.32,
+   "kind": "raw",
+   "src": "img/lamina15_s_139.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_mistake_666",
+   "start": 665.5,
+   "dur": 3.32,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": "—",
+   "title": "Lámina al descubierto",
+   "desc": "Se ensucia y se oxidan los bordes",
+   "eyebrow": "No es la herramienta aquí",
+   "image": "img/lamina15_s_139.jpg"
+  },
+  {
+   "id": "lamina15_s_140",
+   "start": 668.82,
+   "dur": 3.76,
+   "kind": "raw",
+   "src": "img/lamina15_s_140.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_headline_673",
+   "start": 672.58,
+   "dur": 2.74,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "tokens": [
+    {
+     "t": "Otra"
+    },
+    {
+     "t": "cosa"
+    },
+    {
+     "t": "sirve"
+    },
+    {
+     "t": "aquí"
+    }
+   ],
+   "eyebrow": "Azotea de concreto",
+   "size": 56
+  },
+  {
+   "id": "lamina15_s_143",
+   "start": 678.18,
+   "dur": 4.14,
+   "kind": "raw",
+   "src": "broll/lamina15_s_143.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_144",
+   "start": 682.32,
+   "dur": 3,
+   "kind": "raw",
+   "src": "img/lamina15_s_144.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_145",
+   "start": 685.32,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "img/lamina15_s_145.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_146",
+   "start": 689.8,
+   "dur": 2.82,
+   "kind": "raw",
+   "src": "broll/lamina15_s_146.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklist_690",
+   "start": 689.8,
+   "dur": 2.82,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Azotea de concreto, en orden",
+   "items": [
+    {
+     "text": "Bastidor contra la losa"
+    },
+    {
+     "text": "Dejar la cámara de aire"
+    },
+    {
+     "text": "Cara brillante hacia abajo"
+    }
+   ],
+   "eyebrow": "Paso a paso"
+  },
+  {
+   "id": "lamina15_s_148",
+   "start": 696.54,
+   "dur": 4.78,
+   "kind": "raw",
+   "src": "img/lamina15_s_148.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_149",
+   "start": 701.32,
+   "dur": 4.28,
+   "kind": "raw",
+   "src": "img/lamina15_s_149.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_chips_701",
+   "start": 701.32,
+   "dur": 4.28,
+   "kind": "chips",
+   "overlay": true,
+   "hue": "amber",
+   "chips": [
+    "Pintura térmica",
+    "Pintura aislante",
+    "Impermeabilizante reflectivo"
+   ],
+   "title": "Lo que vas a leer en la lata",
+   "image": "img/lamina15_s_149.jpg"
+  },
+  {
+   "id": "lamina15_s_151",
+   "start": 711.16,
+   "dur": 6.68,
+   "kind": "raw",
+   "src": "img/lamina15_s_151.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_152",
+   "start": 717.84,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "img/lamina15_s_152.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_doclabel_718",
+   "start": 717.84,
+   "dur": 3.38,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "PINTURA",
+   "sub": "Lado de afuera, contra el sol",
+   "corner": "bl",
+   "image": "img/lamina15_s_152.jpg"
+  },
+  {
+   "id": "lamina15_s_154",
+   "start": 724.34,
+   "dur": 4.84,
+   "kind": "raw",
+   "src": "broll/lamina15_s_154.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_155",
+   "start": 729.18,
+   "dur": 3,
+   "kind": "raw",
+   "src": "img/lamina15_s_155.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stat_729",
+   "start": 729.18,
+   "dur": 3,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 0.05,
+   "prefix": "",
+   "suffix": "",
+   "decimals": 2,
+   "label": "Emisividad que ninguna pintura alcanza",
+   "eyebrow": "Aluminio pulido",
+   "image": "img/lamina15_s_155.jpg"
+  },
+  {
+   "id": "lamina15_s_156",
+   "start": 732.18,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "img/lamina15_s_156.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_158",
+   "start": 743.78,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_158.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_159",
+   "start": 747.48,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "broll/lamina15_s_159.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_160",
+   "start": 753.36,
+   "dur": 4.1,
+   "kind": "raw",
+   "src": "img/lamina15_s_160.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_753",
+   "start": 753.36,
+   "dur": 4.1,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_160.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 30,
+     "y": 35,
+     "label": "le da cuerpo, no se rasga"
+    },
+    {
+     "kind": "circle",
+     "x": 70,
+     "y": 65,
+     "label": "separa las dos caras de aluminio"
+    }
+   ],
+   "caption": "las burbujas sostienen, no aíslan",
+   "eyebrow": "CÓMO ESTÁ HECHA"
+  },
+  {
+   "id": "lamina15_s_162",
+   "start": 760.16,
+   "dur": 5.58,
+   "kind": "raw",
+   "src": "img/lamina15_s_162.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_760",
+   "start": 760.16,
+   "dur": 5.58,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "doble precio",
+    "value": "doble precio",
+    "sub": "por la capa de burbujas"
+   },
+   "right": {
+    "label": "cero aislamiento extra",
+    "value": "cero aislamiento extra",
+    "sub": "las burbujas no aíslan"
+   },
+   "title": "¿qué estás pagando de más?",
+   "eyebrow": "OJO CON EL PRECIO",
+   "image": "img/lamina15_s_162.jpg"
+  },
+  {
+   "id": "lamina15_s_163",
+   "start": 765.74,
+   "dur": 5.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_163.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_164",
+   "start": 771.44,
+   "dur": 4.78,
+   "kind": "raw",
+   "src": "img/lamina15_s_164.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_checklist_771",
+   "start": 771.44,
+   "dur": 4.78,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "regla de compra",
+   "items": [
+    {
+     "text": "que sea aluminio real"
+    },
+    {
+     "text": "que no se rompa al grapar"
+    }
+   ],
+   "eyebrow": "ANTES DE PAGAR"
+  },
+  {
+   "id": "ov_keyphrase_776",
+   "start": 776.22,
+   "dur": 4.78,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "no pagues por adjetivos",
+   "fontSize": 64,
+   "position": "center",
+   "src": "img/lamina15_s_165.jpg",
+   "image": "img/lamina15_s_165.jpg"
+  },
+  {
+   "id": "lamina15_s_167",
+   "start": 784.06,
+   "dur": 4.32,
+   "kind": "raw",
+   "src": "img/lamina15_s_167.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_rule_784",
+   "start": 784.06,
+   "dur": 4.32,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": "01",
+   "title": "la prueba de las dos cajas",
+   "label": "con basura que ya tienes en casa",
+   "image": "img/lamina15_s_167.jpg"
+  },
+  {
+   "id": "lamina15_s_168",
+   "start": 788.38,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "img/lamina15_s_168.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_169",
+   "start": 792.92,
+   "dur": 6.22,
+   "kind": "raw",
+   "src": "broll/lamina15_s_169.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_171",
+   "start": 802.24,
+   "dur": 3.18,
+   "kind": "raw",
+   "src": "img/lamina15_s_171.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_172",
+   "start": 805.42,
+   "dur": 5.84,
+   "kind": "raw",
+   "src": "img/lamina15_s_172.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_805",
+   "start": 805.42,
+   "dur": 5.84,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "caja normal",
+    "value": "caja normal",
+    "sub": "más caliente"
+   },
+   "right": {
+    "label": "caja con lámina",
+    "value": "caja con lámina",
+    "sub": "varios grados menos"
+   },
+   "title": "media hora después",
+   "eyebrow": "EL RESULTADO",
+   "image": "img/lamina15_s_172.jpg"
+  },
+  {
+   "id": "ov_keyphrase_816",
+   "start": 815.9,
+   "dur": 3.4,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "lo mismo que hace en tu techo",
+   "fontSize": 60,
+   "position": "center"
+  },
+  {
+   "id": "lamina15_s_175",
+   "start": 819.3,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/lamina15_s_175.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_rule_819",
+   "start": 819.3,
+   "dur": 4.52,
+   "kind": "rule",
+   "overlay": true,
+   "hue": "amber",
+   "number": "02",
+   "title": "la prueba de la mano",
+   "label": "la que convence a los incrédulos"
+  },
+  {
+   "id": "lamina15_s_176",
+   "start": 823.82,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "img/lamina15_s_176.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_178",
+   "start": 832.1,
+   "dur": 3.68,
+   "kind": "raw",
+   "src": "img/lamina15_s_178.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_180",
+   "start": 838.8,
+   "dur": 4.44,
+   "kind": "raw",
+   "src": "img/lamina15_s_180.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stat_839",
+   "start": 838.8,
+   "dur": 4.44,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 3,
+   "suffix": "s",
+   "decimals": 0,
+   "label": "y el calor desaparece",
+   "eyebrow": "LA MANO NO MIENTE",
+   "image": "img/lamina15_s_180.jpg"
+  },
+  {
+   "id": "ov_headline_843",
+   "start": 843.24,
+   "dur": 2.8,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "tokens": [
+    {
+     "t": "EL"
+    },
+    {
+     "t": "CALOR"
+    },
+    {
+     "t": "DESAPARECE"
+    }
+   ],
+   "size": 112,
+   "image": "img/lamina15_s_181.jpg"
+  },
+  {
+   "id": "lamina15_s_182",
+   "start": 846.04,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "img/lamina15_s_182.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_846",
+   "start": 846.04,
+   "dur": 3.64,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_182.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 25,
+     "label": "el calor rebota"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 75,
+     "label": "tu mano hizo de recámara"
+    }
+   ],
+   "caption": "la lámina lo mandó de regreso",
+   "eyebrow": "QUÉ PASÓ AHÍ"
+  },
+  {
+   "id": "lamina15_s_183",
+   "start": 849.68,
+   "dur": 4.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_183.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_185",
+   "start": 857.36,
+   "dur": 3.88,
+   "kind": "raw",
+   "src": "img/lamina15_s_185.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_187",
+   "start": 864.06,
+   "dur": 6.82,
+   "kind": "raw",
+   "src": "img/lamina15_s_187.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_188",
+   "start": 870.88,
+   "dur": 7.26,
+   "kind": "raw",
+   "src": "img/lamina15_s_188.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_doclabel_871",
+   "start": 870.88,
+   "dur": 7.26,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "R-8",
+   "sub": "impreso en la etiqueta del rollo",
+   "corner": "br",
+   "image": "img/lamina15_s_188.jpg"
+  },
+  {
+   "id": "lamina15_s_189",
+   "start": 878.14,
+   "dur": 3.82,
+   "kind": "raw",
+   "src": "img/lamina15_s_189.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_chips_878",
+   "start": 878.14,
+   "dur": 3.82,
+   "kind": "chips",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que dice la etiqueta",
+   "chips": [
+    "R-6",
+    "R-8",
+    "R-11"
+   ],
+   "image": "img/lamina15_s_189.jpg"
+  },
+  {
+   "id": "lamina15_s_190",
+   "start": 881.96,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "broll/lamina15_s_190.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_191",
+   "start": 886.62,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "img/lamina15_s_191.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stat_887",
+   "start": 886.62,
+   "dur": 5.92,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 1,
+   "suffix": "mm",
+   "decimals": 0,
+   "label": "sin resistencia térmica significativa",
+   "eyebrow": "POR ESPESOR",
+   "image": "img/lamina15_s_191.jpg"
+  },
+  {
+   "id": "lamina15_s_192",
+   "start": 892.54,
+   "dur": 6.1,
+   "kind": "raw",
+   "src": "broll/lamina15_s_192.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_193",
+   "start": 898.64,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/lamina15_s_193.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_195",
+   "start": 908.54,
+   "dur": 4.82,
+   "kind": "raw",
+   "src": "img/lamina15_s_195.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_909",
+   "start": 908.54,
+   "dur": 4.82,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Lámina + aire",
+    "value": "Lámina + aire",
+    "sub": "lo que mide el laboratorio"
+   },
+   "right": {
+    "label": "Lámina sola",
+    "value": "Lámina sola",
+    "sub": "lo que vende la etiqueta"
+   },
+   "title": "¿Qué mide ese número?",
+   "eyebrow": "el valor R real",
+   "image": "img/lamina15_s_195.jpg"
+  },
+  {
+   "id": "lamina15_s_196",
+   "start": 913.36,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "img/lamina15_s_196.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_197",
+   "start": 918.56,
+   "dur": 6.14,
+   "kind": "raw",
+   "src": "img/lamina15_s_197.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_doclabel_919",
+   "start": 918.56,
+   "dur": 6.14,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Regla del Valor R",
+   "sub": "Comisión Federal de Comercio",
+   "corner": "bl",
+   "image": "img/lamina15_s_197.jpg"
+  },
+  {
+   "id": "lamina15_s_198",
+   "start": 924.7,
+   "dur": 5.02,
+   "kind": "raw",
+   "src": "img/lamina15_s_198.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_sourcechip_925",
+   "start": 924.7,
+   "dur": 5.02,
+   "kind": "sourcechip",
+   "overlay": true,
+   "hue": "amber",
+   "text": "FTC — casos contra fabricantes de aislantes reflectivos",
+   "image": "img/lamina15_s_198.jpg"
+  },
+  {
+   "id": "ov_keyphrase_930",
+   "start": 929.72,
+   "dur": 4.4,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "ES UN EXPEDIENTE PÚBLICO",
+   "fontSize": 64,
+   "position": "center"
+  },
+  {
+   "id": "lamina15_s_201",
+   "start": 939.12,
+   "dur": 4.58,
+   "kind": "raw",
+   "src": "img/lamina15_s_201.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_203",
+   "start": 947.5,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_203.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_204",
+   "start": 951.2,
+   "dur": 5.3,
+   "kind": "raw",
+   "src": "img/lamina15_s_204.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_205",
+   "start": 956.5,
+   "dur": 4.66,
+   "kind": "raw",
+   "src": "img/lamina15_s_205.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_splitlist_957",
+   "start": 956.5,
+   "dur": 4.66,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Lo que NO necesita",
+   "items": [
+    "Servicio anual",
+    "Mantenimiento",
+    "Visitas técnicas"
+   ],
+   "palette": "D",
+   "cross": true,
+   "image": "img/lamina15_s_205.jpg"
+  },
+  {
+   "id": "ov_keyphrase_967",
+   "start": 966.5,
+   "dur": 4.98,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "TE CONVIENE SÓLO A TI",
+   "fontSize": 60,
+   "position": "center"
+  },
+  {
+   "id": "lamina15_s_208",
+   "start": 971.48,
+   "dur": 5.38,
+   "kind": "raw",
+   "src": "img/lamina15_s_208.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_209",
+   "start": 976.86,
+   "dur": 5.36,
+   "kind": "raw",
+   "src": "img/lamina15_s_209.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stat_977",
+   "start": 976.86,
+   "dur": 5.36,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 15,
+   "suffix": " años",
+   "label": "pagándole a la eléctrica",
+   "eyebrow": "el aire acondicionado",
+   "image": "img/lamina15_s_209.jpg"
+  },
+  {
+   "id": "lamina15_s_211",
+   "start": 987.44,
+   "dur": 2.96,
+   "kind": "raw",
+   "src": "img/lamina15_s_211.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_headline_990",
+   "start": 990.4,
+   "dur": 4.5,
+   "kind": "headline",
+   "overlay": true,
+   "hue": "amber",
+   "tokens": [
+    {
+     "t": "AHORA"
+    },
+    {
+     "t": "LOS"
+    },
+    {
+     "t": "LÍMITES"
+    }
+   ],
+   "eyebrow": "lo que sí y lo que no",
+   "size": 72
+  },
+  {
+   "id": "lamina15_s_213",
+   "start": 994.9,
+   "dur": 7.32,
+   "kind": "raw",
+   "src": "broll/lamina15_s_213.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_214",
+   "start": 1002.22,
+   "dur": 3.18,
+   "kind": "raw",
+   "src": "broll/lamina15_s_214.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_vs_1002",
+   "start": 1002.22,
+   "dur": 3.18,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Verano",
+    "value": "Verano",
+    "sub": "funciona muy bien"
+   },
+   "right": {
+    "label": "Invierno de verdad",
+    "value": "Invierno de verdad",
+    "sub": "no lo resuelve"
+   },
+   "title": "Los límites reales",
+   "eyebrow": "qué sí y qué no"
+  },
+  {
+   "id": "lamina15_s_216",
+   "start": 1011.58,
+   "dur": 8.22,
+   "kind": "raw",
+   "src": "img/lamina15_s_216.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_218",
+   "start": 1024.28,
+   "dur": 7,
+   "kind": "raw",
+   "src": "img/lamina15_s_218.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_keyphrase_1031",
+   "start": 1031.28,
+   "dur": 4.9,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "NO BAJA LA TEMPERATURA DE AFUERA",
+   "fontSize": 54,
+   "position": "center",
+   "src": "img/lamina15_s_219.jpg",
+   "image": "img/lamina15_s_219.jpg"
+  },
+  {
+   "id": "lamina15_s_221",
+   "start": 1038.76,
+   "dur": 4.3,
+   "kind": "raw",
+   "src": "img/lamina15_s_221.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_1039",
+   "start": 1038.76,
+   "dur": 4.3,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "38°C",
+    "value": "38°C",
+    "sub": "afuera"
+   },
+   "right": {
+    "label": "Sin magia",
+    "value": "Sin magia",
+    "sub": "adentro no será 22°C"
+   },
+   "title": "Lo que sí pasa",
+   "eyebrow": "temperatura real",
+   "image": "img/lamina15_s_221.jpg"
+  },
+  {
+   "id": "lamina15_s_222",
+   "start": 1043.06,
+   "dur": 5.92,
+   "kind": "raw",
+   "src": "img/lamina15_s_222.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_224",
+   "start": 1054.02,
+   "dur": 2.16,
+   "kind": "raw",
+   "src": "img/lamina15_s_224.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_statslam_1054",
+   "start": 1054.02,
+   "dur": 2.16,
+   "kind": "statslam",
+   "overlay": true,
+   "hue": "amber",
+   "value": "CERO",
+   "label": "sin cámara de aire",
+   "image": "img/lamina15_s_224.jpg"
+  },
+  {
+   "id": "lamina15_s_224_b",
+   "start": 1056.18,
+   "dur": 1.62,
+   "kind": "raw",
+   "src": "img/lamina15_s_224_b.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_226",
+   "start": 1062.78,
+   "dur": 6.08,
+   "kind": "raw",
+   "src": "img/lamina15_s_226.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_227",
+   "start": 1068.86,
+   "dur": 2.68,
+   "kind": "raw",
+   "src": "img/lamina15_s_227.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_mistake_1069",
+   "start": 1068.86,
+   "dur": 2.68,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": "01",
+   "title": "Cables expuestos",
+   "desc": "no instales la lámina encima hasta resolverlo",
+   "eyebrow": "seguridad eléctrica",
+   "image": "img/lamina15_s_227.jpg"
+  },
+  {
+   "id": "lamina15_s_230",
+   "start": 1081,
+   "dur": 4.54,
+   "kind": "raw",
+   "src": "img/lamina15_s_230.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_doclabel_1081",
+   "start": 1081,
+   "dur": 4.54,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Distancia de seguridad",
+   "sub": "ver descripción",
+   "corner": "br",
+   "image": "img/lamina15_s_230.jpg"
+  },
+  {
+   "id": "lamina15_s_231",
+   "start": 1085.54,
+   "dur": 2.66,
+   "kind": "raw",
+   "src": "img/lamina15_s_231.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stat_1086",
+   "start": 1085.54,
+   "dur": 2.66,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 60,
+   "suffix": "°C",
+   "decimals": 0,
+   "label": "tapanco a medio día en verano",
+   "eyebrow": "TU PROPIO CUERPO",
+   "image": "img/lamina15_s_231.jpg"
+  },
+  {
+   "id": "lamina15_s_232",
+   "start": 1088.2,
+   "dur": 5.6,
+   "kind": "raw",
+   "src": "broll/lamina15_s_232.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_233",
+   "start": 1093.8,
+   "dur": 2.86,
+   "kind": "raw",
+   "src": "broll/lamina15_s_233.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_234",
+   "start": 1096.66,
+   "dur": 2.48,
+   "kind": "raw",
+   "src": "broll/lamina15_s_234.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_235",
+   "start": 1099.14,
+   "dur": 2.58,
+   "kind": "raw",
+   "src": "img/lamina15_s_235.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_236",
+   "start": 1101.72,
+   "dur": 6.08,
+   "kind": "raw",
+   "src": "img/lamina15_s_236.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_splitlist_1102",
+   "start": 1101.72,
+   "dur": 6.08,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Dónde parás el pie",
+   "items": [
+    "Sobre la viga",
+    "Nunca entre vigas"
+   ],
+   "palette": "D",
+   "cross": true,
+   "image": "img/lamina15_s_236.jpg"
+  },
+  {
+   "id": "lamina15_s_238",
+   "start": 1112.58,
+   "dur": 3.18,
+   "kind": "raw",
+   "src": "img/lamina15_s_238.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stat_1113",
+   "start": 1112.58,
+   "dur": 3.18,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 90,
+   "suffix": "%",
+   "decimals": 0,
+   "label": "de instalaciones con este error",
+   "eyebrow": "EL ERROR QUE VIENE",
+   "image": "img/lamina15_s_238.jpg"
+  },
+  {
+   "id": "lamina15_s_239",
+   "start": 1115.76,
+   "dur": 2.96,
+   "kind": "raw",
+   "src": "img/lamina15_s_239.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_240",
+   "start": 1118.72,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "img/lamina15_s_240.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_mistake_1119",
+   "start": 1118.72,
+   "dur": 4.76,
+   "kind": "mistake",
+   "overlay": true,
+   "hue": "amber",
+   "number": "90%",
+   "title": "El error es el polvo",
+   "desc": "No falla el día 1",
+   "eyebrow": "EL ERROR CENTRAL",
+   "image": "img/lamina15_s_240.jpg"
+  },
+  {
+   "id": "lamina15_s_242",
+   "start": 1127.72,
+   "dur": 3.78,
+   "kind": "raw",
+   "src": "broll/lamina15_s_242.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stat_1128",
+   "start": 1127.72,
+   "dur": 3.78,
+   "kind": "stat",
+   "overlay": true,
+   "hue": "amber",
+   "value": 0.05,
+   "suffix": "",
+   "decimals": 2,
+   "label": "emisividad del aluminio limpio",
+   "eyebrow": "EL NÚMERO CLAVE"
+  },
+  {
+   "id": "lamina15_s_243",
+   "start": 1131.5,
+   "dur": 2.6,
+   "kind": "raw",
+   "src": "broll/lamina15_s_243.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_244",
+   "start": 1134.1,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "img/lamina15_s_244.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_1134",
+   "start": 1134.1,
+   "dur": 3.86,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Aluminio limpio",
+    "value": "Aluminio limpio",
+    "sub": "emisividad 0,05"
+   },
+   "right": {
+    "label": "Polvo",
+    "value": "Polvo",
+    "sub": "emisividad muy alta"
+   },
+   "title": "Lo que toca el aire importa",
+   "eyebrow": "LA CARA",
+   "image": "img/lamina15_s_244.jpg"
+  },
+  {
+   "id": "lamina15_s_245",
+   "start": 1137.96,
+   "dur": 4.82,
+   "kind": "raw",
+   "src": "img/lamina15_s_245.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_246",
+   "start": 1142.78,
+   "dur": 5.36,
+   "kind": "raw",
+   "src": "img/lamina15_s_246.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_metertag_1143",
+   "start": 1142.78,
+   "dur": 5.36,
+   "kind": "metertag",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Emisividad de la superficie",
+   "fromPct": 5,
+   "toPct": 30,
+   "corner": "tr",
+   "image": "img/lamina15_s_246.jpg"
+  },
+  {
+   "id": "lamina15_s_248",
+   "start": 1153.44,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "broll/lamina15_s_248.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_249",
+   "start": 1155.98,
+   "dur": 4.48,
+   "kind": "raw",
+   "src": "img/lamina15_s_249.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_checklist_1156",
+   "start": 1155.98,
+   "dur": 4.48,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Por fuera, nada cambió",
+   "items": [
+    {
+     "text": "No se rompió"
+    },
+    {
+     "text": "No se oxidó"
+    },
+    {
+     "text": "No se despegó"
+    }
+   ],
+   "eyebrow": "EL ENGAÑO",
+   "image": "img/lamina15_s_249.jpg"
+  },
+  {
+   "id": "lamina15_s_250",
+   "start": 1160.46,
+   "dur": 3.04,
+   "kind": "raw",
+   "src": "img/lamina15_s_250.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_keyphrase_1164",
+   "start": 1163.5,
+   "dur": 3.7,
+   "kind": "keyphrase",
+   "overlay": true,
+   "hue": "amber",
+   "text": "No está haciendo nada",
+   "fontSize": 64,
+   "position": "center",
+   "src": "img/lamina15_s_251.jpg",
+   "image": "img/lamina15_s_251.jpg"
+  },
+  {
+   "id": "lamina15_s_253",
+   "start": 1170.52,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/lamina15_s_253.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_255",
+   "start": 1175.72,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "img/lamina15_s_255.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_257",
+   "start": 1182.86,
+   "dur": 4.02,
+   "kind": "raw",
+   "src": "broll/lamina15_s_257.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_datestamp_1183",
+   "start": 1182.86,
+   "dur": 4.02,
+   "kind": "datestamp",
+   "overlay": true,
+   "hue": "amber",
+   "value": "1-2 años después",
+   "label": "la cara ya está mate",
+   "corner": "tl",
+   "image": "img/lamina15_s_257.jpg"
+  },
+  {
+   "id": "lamina15_s_258",
+   "start": 1186.88,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "img/lamina15_s_258.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_259",
+   "start": 1190.74,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/lamina15_s_259.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stattag_1191",
+   "start": 1190.74,
+   "dur": 4.16,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 20,
+   "suffix": " años",
+   "label": "sigue como espejo",
+   "corner": "tr",
+   "image": "img/lamina15_s_259.jpg"
+  },
+  {
+   "id": "lamina15_s_261",
+   "start": 1198.9,
+   "dur": 3.46,
+   "kind": "raw",
+   "src": "img/lamina15_s_261.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_1199",
+   "start": 1198.9,
+   "dur": 3.46,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Cara arriba",
+    "value": "Cara arriba",
+    "sub": "dura 2 veranos"
+   },
+   "right": {
+    "label": "Cara abajo",
+    "value": "Cara abajo",
+    "sub": "dura 20 años"
+   },
+   "title": "La misma lámina, dos destinos",
+   "eyebrow": "LA DIFERENCIA",
+   "image": "img/lamina15_s_261.jpg"
+  },
+  {
+   "id": "lamina15_s_262",
+   "start": 1202.36,
+   "dur": 2.78,
+   "kind": "raw",
+   "src": "img/lamina15_s_262.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_264",
+   "start": 1208.42,
+   "dur": 3.54,
+   "kind": "raw",
+   "src": "img/lamina15_s_264.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_265",
+   "start": 1211.96,
+   "dur": 4.92,
+   "kind": "raw",
+   "src": "img/lamina15_s_265.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_termcard_1212",
+   "start": 1211.96,
+   "dur": 4.92,
+   "kind": "termcard",
+   "overlay": true,
+   "hue": "amber",
+   "term": "Barrera de vapor",
+   "image": "img/lamina15_s_265.jpg",
+   "definition": "una lámina sólida que no deja pasar el vapor de agua",
+   "bg": "img/lamina15_s_265.jpg"
+  },
+  {
+   "id": "lamina15_s_266",
+   "start": 1216.88,
+   "dur": 3.58,
+   "kind": "raw",
+   "src": "broll/lamina15_s_266.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_268",
+   "start": 1225.2,
+   "dur": 4.76,
+   "kind": "raw",
+   "src": "img/lamina15_s_268.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_269",
+   "start": 1229.96,
+   "dur": 5.1,
+   "kind": "raw",
+   "src": "img/lamina15_s_269.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_1230",
+   "start": 1229.96,
+   "dur": 5.1,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_269.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 40,
+     "label": "el vapor se enfría contra el aluminio"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 65,
+     "label": "y se condensa en gotas"
+    }
+   ],
+   "caption": "Agua líquida sobre el aislante",
+   "eyebrow": "Cómo se moja"
+  },
+  {
+   "id": "lamina15_s_271",
+   "start": 1239.36,
+   "dur": 5.94,
+   "kind": "raw",
+   "src": "img/lamina15_s_271.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_272",
+   "start": 1245.3,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "img/lamina15_s_272.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_annotated_1245",
+   "start": 1245.3,
+   "dur": 4.08,
+   "kind": "annotated",
+   "overlay": true,
+   "hue": "amber",
+   "image": "img/lamina15_s_272.jpg",
+   "annotations": [
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 35,
+     "label": "microperforaciones"
+    },
+    {
+     "kind": "circle",
+     "x": 50,
+     "y": 70,
+     "label": "dejan salir el vapor, frenan la radiación"
+    }
+   ],
+   "caption": "Barrera radiante perforada",
+   "eyebrow": "La solución correcta"
+  },
+  {
+   "id": "lamina15_s_273",
+   "start": 1249.38,
+   "dur": 4.04,
+   "kind": "raw",
+   "src": "broll/lamina15_s_273.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_274",
+   "start": 1253.42,
+   "dur": 6.14,
+   "kind": "raw",
+   "src": "img/lamina15_s_274.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_vs_1253",
+   "start": 1253.42,
+   "dur": 6.14,
+   "kind": "vs",
+   "overlay": true,
+   "hue": "amber",
+   "left": {
+    "label": "Bien puesta",
+    "value": "Bien puesta",
+    "sub": "Bajo las vigas, cara brillante hacia abajo: te salva del calor"
+   },
+   "right": {
+    "label": "Mal puesta",
+    "value": "Mal puesta",
+    "sub": "Sólida y sellada sobre el aislante: te pudre el techo"
+   },
+   "title": "La misma lámina, dos destinos",
+   "eyebrow": "La simetría del oficio",
+   "image": "img/lamina15_s_274.jpg"
+  },
+  {
+   "id": "lamina15_s_276",
+   "start": 1266.62,
+   "dur": 6.32,
+   "kind": "raw",
+   "src": "img/lamina15_s_276.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_278",
+   "start": 1276.38,
+   "dur": 5.22,
+   "kind": "raw",
+   "src": "img/lamina15_s_278.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_manualcard_1276",
+   "start": 1276.38,
+   "dur": 5.22,
+   "kind": "manualcard",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Manual de Reparaciones Caseras",
+   "desc": "Paso a paso, con cantidades y tiempos exactos",
+   "cta": "Link en la descripción",
+   "image": "img/lamina15_s_278.jpg"
+  },
+  {
+   "id": "lamina15_s_279",
+   "start": 1281.6,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "img/lamina15_s_279.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_280",
+   "start": 1285.96,
+   "dur": 3.74,
+   "kind": "raw",
+   "src": "broll/lamina15_s_280.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_281",
+   "start": 1289.7,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "img/lamina15_s_281.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_process_1290",
+   "start": 1289.7,
+   "dur": 4.6,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Revisa qué tienes arriba",
+     "desc": "Sube temprano, con lámpara, pisando las vigas"
+    },
+    {
+     "title": "Identifica tu caso",
+     "desc": "Tapanco con espacio, techo de lámina o losa maciza sin hueco"
+    }
+   ],
+   "title": "Antes de comprar",
+   "eyebrow": "Paso 1",
+   "image": "img/lamina15_s_281.jpg"
+  },
+  {
+   "id": "lamina15_s_283",
+   "start": 1296.9,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "img/lamina15_s_283.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_284",
+   "start": 1300.54,
+   "dur": 2.58,
+   "kind": "raw",
+   "src": "img/lamina15_s_284.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_doclabel_1301",
+   "start": 1300.54,
+   "dur": 2.58,
+   "kind": "doclabel",
+   "overlay": true,
+   "hue": "amber",
+   "label": "Compra por m² de TECHO, no de piso",
+   "sub": "Súmale el traslape",
+   "corner": "bl",
+   "image": "img/lamina15_s_284.jpg"
+  },
+  {
+   "id": "lamina15_s_286",
+   "start": 1307.14,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "img/lamina15_s_286.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_process_1307",
+   "start": 1307.14,
+   "dur": 3.86,
+   "kind": "process",
+   "overlay": true,
+   "hue": "amber",
+   "steps": [
+    {
+     "title": "Grapa bajo las vigas",
+     "desc": "Siempre con la cara brillante hacia abajo"
+    },
+    {
+     "title": "Deja la cámara de aire",
+     "desc": "Sin separación, la lámina no funciona"
+    }
+   ],
+   "title": "La instalación",
+   "eyebrow": "Paso 3-4",
+   "image": "img/lamina15_s_286.jpg"
+  },
+  {
+   "id": "lamina15_s_287",
+   "start": 1311,
+   "dur": 2.54,
+   "kind": "raw",
+   "src": "broll/lamina15_s_287.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "lamina15_s_288",
+   "start": 1313.54,
+   "dur": 2.84,
+   "kind": "raw",
+   "src": "img/lamina15_s_288.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_289",
+   "start": 1316.38,
+   "dur": 2.9,
+   "kind": "raw",
+   "src": "img/lamina15_s_289.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_stattag_1316",
+   "start": 1316.38,
+   "dur": 2.9,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 20,
+   "suffix": " años",
+   "label": "Con cámara de aire",
+   "corner": "br",
+   "image": "img/lamina15_s_289.jpg"
+  },
+  {
+   "id": "lamina15_s_291",
+   "start": 1321.82,
+   "dur": 5.88,
+   "kind": "raw",
+   "src": "img/lamina15_s_291.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_checklist_1322",
+   "start": 1321.82,
+   "dur": 5.88,
+   "kind": "checklist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "Los dos que arruinan la instalación",
+   "items": [
+    {
+     "text": "Deja espacio libre alrededor de luminarias, chimeneas y cables"
+    },
+    {
+     "text": "Nunca la tiendas encima del aislante"
+    }
+   ],
+   "eyebrow": "Paso 5-6",
+   "image": "img/lamina15_s_291.jpg"
+  },
+  {
+   "id": "lamina15_s_292",
+   "start": 1327.7,
+   "dur": 3.14,
+   "kind": "raw",
+   "src": "img/lamina15_s_292.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_293",
+   "start": 1330.84,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "img/lamina15_s_293.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_statslam_1331",
+   "start": 1330.84,
+   "dur": 5.2,
+   "kind": "statslam",
+   "overlay": true,
+   "hue": "amber",
+   "value": "2 veranos",
+   "label": "y el trabajo se muere solo",
+   "image": "img/lamina15_s_293.jpg"
+  },
+  {
+   "id": "lamina15_s_295",
+   "start": 1338.74,
+   "dur": 2.58,
+   "kind": "raw",
+   "src": "img/lamina15_s_295.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_297",
+   "start": 1345.16,
+   "dur": 2.92,
+   "kind": "raw",
+   "src": "broll/lamina15_s_297.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stattag_1345",
+   "start": 1345.16,
+   "dur": 2.92,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 8,
+   "suffix": " meses",
+   "label": "para sentir la diferencia si esperás",
+   "corner": "tr",
+   "image": "img/lamina15_s_297.jpg"
+  },
+  {
+   "id": "lamina15_s_298",
+   "start": 1348.08,
+   "dur": 3.08,
+   "kind": "raw",
+   "src": "img/lamina15_s_298.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_299",
+   "start": 1351.16,
+   "dur": 3.08,
+   "kind": "raw",
+   "src": "broll/lamina15_s_299.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_splitlist_1351",
+   "start": 1351.16,
+   "dur": 3.08,
+   "kind": "splitlist",
+   "overlay": true,
+   "hue": "amber",
+   "title": "¿Qué tienes tú arriba de la cabeza?",
+   "items": [
+    "Losa maciza",
+    "Techo de lámina",
+    "Tapanco de madera"
+   ],
+   "palette": "A",
+   "cross": false,
+   "image": "img/lamina15_s_299.jpg"
+  },
+  {
+   "id": "lamina15_s_301",
+   "start": 1358,
+   "dur": 4.68,
+   "kind": "raw",
+   "src": "img/lamina15_s_301.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_302",
+   "start": 1362.68,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "img/lamina15_s_302.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "ov_nextvideo_1363",
+   "start": 1362.68,
+   "dur": 5.16,
+   "kind": "nextvideo",
+   "overlay": true,
+   "hue": "amber",
+   "title": "En el próximo video",
+   "desc": "Cómo sacarle el aire caliente al tapanco sin electricidad y sin ventilador",
+   "image": "img/lamina15_s_302.jpg"
+  },
+  {
+   "id": "lamina15_s_304",
+   "start": 1372.78,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "broll/lamina15_s_304.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stattag_1373",
+   "start": 1372.78,
+   "dur": 3.64,
+   "kind": "stattag",
+   "overlay": true,
+   "hue": "amber",
+   "value": 0,
+   "suffix": " pesos",
+   "label": "cero electricidad, cero ventilador",
+   "corner": "bl",
+   "image": "img/lamina15_s_304.jpg"
+  },
+  {
+   "id": "lamina15_s_305",
+   "start": 1376.42,
+   "dur": 4.08,
+   "kind": "raw",
+   "src": "img/lamina15_s_305.jpg",
+   "hue": "amber",
+   "darken": 0
+  },
+  {
+   "id": "lamina15_s_307",
+   "start": 1386.6,
+   "dur": 3.64,
+   "kind": "raw",
+   "src": "img/lamina15_s_307.jpg",
+   "hue": "amber",
+   "darken": 0
+  }
+ ]
+}
