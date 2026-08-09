@@ -87,7 +87,24 @@ for (let i = 0; i < beatsBase.length; i++) {
       else avatarSpans.push([t, sEnd]);
 
       if (m.comp && m.comp.kind) {
-        const props = { ...m.comp }; const kind = props.kind; delete props.kind;
+        const props = { ...m.comp }; let kind = props.kind; delete props.kind;
+        // ⚠️ Visto en el render final: `MistakeCard` y `NextVideoEndcard` pintan una
+        // PLACA NEGRA A PANTALLA COMPLETA con acentos ROJOS — son del look "alarma"
+        // (finanzas/jubilados), no del terroso de este canal. Tapaban el b-roll y
+        // dejaban ~25 s de pantalla negra y roja en un documental crema y madera
+        // (el blackdetect los cazó como 2,8 s y 5,2 s de negro).
+        // Se conserva el TEXTO y se cambia el envase por uno de la marca.
+        if (kind === "mistake") {
+          kind = "termcard";
+          props.term = props.title;
+          props.definition = props.desc || props.eyebrow;
+          delete props.title; delete props.desc; delete props.number; delete props.eyebrow;
+        } else if (kind === "nextvideo") {
+          kind = "keyphrase";
+          props.text = props.desc || props.title;
+          props.fontSize = 74;
+          delete props.title; delete props.desc;
+        }
         // ⚠️ los componentes con `image` OPCIONAL dibujan un PLACEHOLDER vacío si no se
         // la pasás (degradado con un círculo) y en la cuadrícula se ve como caja sin
         // terminar. Auto-relleno con la imagen del PROPIO momento (habla de lo mismo).
@@ -230,7 +247,9 @@ function normalizeComp(kind, p, img) {
         const n = nums.length ? Number(nums[nums.length - 1].replace(",", ".")) : NaN;
         if (!Number.isFinite(n)) return null;
         // el label NO lleva el rango: desborda el ancho de la barra y sale cortado
-        const label = String(x.label ?? "");
+        // el label va FUERA de la barra y a la izquierda: si es largo, se sale
+        // del cuadro (medido en el render: "…ncia de calor por el techo" cortado)
+        const label = String(x.label ?? "").replace(/^Ganancia de calor por el techo$/, "Calor por el techo").replace(/^Gasto de enfriamiento$/, "Enfriamiento");
         return { label, value: n };
       }).filter(Boolean);
     }

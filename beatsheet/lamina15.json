@@ -994,11 +994,11 @@
    "orientation": "horizontal",
    "bars": [
     {
-     "label": "Ganancia de calor por el techo",
+     "label": "Calor por el techo",
      "value": 42
     },
     {
-     "label": "Gasto de enfriamiento",
+     "label": "Enfriamiento",
      "value": 10
     }
    ],
@@ -1601,18 +1601,6 @@
    "noSplit": true
   },
   {
-   "id": "ov_mistake_571",
-   "start": 570.6,
-   "dur": 4.42,
-   "kind": "mistake",
-   "overlay": true,
-   "hue": "amber",
-   "number": "01",
-   "title": "El impermeabilizante carísimo",
-   "desc": "Un gasto más que no resolvió el calor de adentro",
-   "eyebrow": "Antes de la barrera"
-  },
-  {
    "id": "lamina15_s_120",
    "start": 579.8,
    "dur": 2.78,
@@ -1838,17 +1826,16 @@
    "darken": 0
   },
   {
-   "id": "ov_mistake_666",
+   "id": "ov_termcard_666",
    "start": 665.5,
    "dur": 3.32,
-   "kind": "mistake",
+   "kind": "termcard",
    "overlay": true,
    "hue": "amber",
-   "number": "—",
-   "title": "Lámina al descubierto",
-   "desc": "Se ensucia y se oxidan los bordes",
-   "eyebrow": "No es la herramienta aquí",
-   "image": "img/lamina15_s_139.jpg"
+   "image": "img/lamina15_s_139.jpg",
+   "term": "Lámina al descubierto",
+   "definition": "Se ensucia y se oxidan los bordes",
+   "bg": "img/lamina15_s_139.jpg"
   },
   {
    "id": "lamina15_s_140",
@@ -2892,17 +2879,16 @@
    "darken": 0
   },
   {
-   "id": "ov_mistake_1069",
+   "id": "ov_termcard_1069",
    "start": 1068.86,
    "dur": 2.68,
-   "kind": "mistake",
+   "kind": "termcard",
    "overlay": true,
    "hue": "amber",
-   "number": "01",
-   "title": "Cables expuestos",
-   "desc": "no instales la lámina encima hasta resolverlo",
-   "eyebrow": "seguridad eléctrica",
-   "image": "img/lamina15_s_227.jpg"
+   "image": "img/lamina15_s_227.jpg",
+   "term": "Cables expuestos",
+   "definition": "no instales la lámina encima hasta resolverlo",
+   "bg": "img/lamina15_s_227.jpg"
   },
   {
    "id": "lamina15_s_230",
@@ -3054,17 +3040,16 @@
    "darken": 0
   },
   {
-   "id": "ov_mistake_1119",
+   "id": "ov_termcard_1119",
    "start": 1118.72,
    "dur": 4.76,
-   "kind": "mistake",
+   "kind": "termcard",
    "overlay": true,
    "hue": "amber",
-   "number": "90%",
-   "title": "El error es el polvo",
-   "desc": "No falla el día 1",
-   "eyebrow": "EL ERROR CENTRAL",
-   "image": "img/lamina15_s_240.jpg"
+   "image": "img/lamina15_s_240.jpg",
+   "term": "El error es el polvo",
+   "definition": "No falla el día 1",
+   "bg": "img/lamina15_s_240.jpg"
   },
   {
    "id": "lamina15_s_242",
@@ -3829,14 +3814,14 @@
    "darken": 0
   },
   {
-   "id": "ov_nextvideo_1363",
+   "id": "ov_keyphrase_1363",
    "start": 1362.68,
    "dur": 5.16,
-   "kind": "nextvideo",
+   "kind": "keyphrase",
    "overlay": true,
    "hue": "amber",
-   "title": "En el próximo video",
-   "desc": "Cómo sacarle el aire caliente al tapanco sin electricidad y sin ventilador",
+   "text": "Cómo sacarle el aire caliente al tapanco sin electricidad y sin ventilador",
+   "fontSize": 74,
    "image": "img/lamina15_s_302.jpg"
   },
   {
