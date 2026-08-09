@@ -38,14 +38,14 @@ const D = COLORS.danger, A = COLORS.accent;
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
 export const CUES: Cue[] = [
-  { key: "lamina15_s_01", start: 0, dur: 4.2, kind: "premium", el: (d) => <ThermalWipe_lamina15 durationInFrames={d} theme={THEME_EARTH} {...({"image":"broll/lamina15_s_01.mp4","label":"SUP. TECHO","from":24,"to":67,"unit":"°C","sweepDur":36} as any)} /> },
+  { key: "lamina15_s_01", start: 0, dur: 4.2, kind: "premium", el: (d) => <ThermalWipe_lamina15 durationInFrames={d} theme={THEME_EARTH} {...({"image":"img/lamina15_s_01.jpg","label":"SUP. TECHO","from":24,"to":67,"unit":"°C","sweepDur":36} as any)} /> },
   { key: "lamina15_s_01_b", start: 4.2, dur: 3.06, kind: "premium", el: (d) => <ThermalWipe_lamina15 durationInFrames={d} theme={THEME_EARTH} {...({"image":"img/lamina15_s_01_b.jpg","label":"SUP. TECHO","from":67,"to":67,"unit":"°C","sweepDur":10,"cooling":true,"coolTo":52,"coolAt":18} as any)} /> },
   { key: "lamina15_s_02_b", start: 9.56, dur: 2.78, kind: "premium", el: (d) => <CaliperReveal_lamina15 durationInFrames={d} theme={THEME_EARTH} {...({"image":"img/lamina15_s_02_b.jpg","leftLabel":"LA LÁMINA","leftNote":"una hoja","rightLabel":"AISLANTE CONVENCIONAL","rightNote":"para el mismo trabajo"} as any)} /> },
   { key: "lamina15_s_03", start: 12.34, dur: 4.84, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lamina15_s_03.mp4" hue="amber" darken={0} clipDur={5.17} /> },
   { key: "lamina15_s_05", start: 20.68, dur: 4.98, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/lamina15_s_05.jpg" hue="amber" darken={0} /> },
   { key: "lamina15_s_06", start: 25.66, dur: 4.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lamina15_s_06.mp4" hue="amber" darken={0} clipDur={5.17} /> },
   { key: "lamina15_s_07_b", start: 32.58, dur: 4.42, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lamina15_s_07_b.mp4" hue="amber" darken={0} clipDur={5.17} /> },
-  { key: "lamina15_s_08", start: 37, dur: 5.44, kind: "premium", el: (d) => <DustDecay_lamina15 durationInFrames={d} theme={THEME_EARTH} {...({"image":"broll/lamina15_s_08.mp4","label":"EMISIVIDAD","from":0.05,"to":0.3,"fromNote":"AÑO 1","toNote":"AÑO 3","at":20,"decayDur":70} as any)} /> },
+  { key: "lamina15_s_08", start: 37, dur: 5.44, kind: "premium", el: (d) => <DustDecay_lamina15 durationInFrames={d} theme={THEME_EARTH} {...({"image":"img/lamina15_s_08.jpg","label":"EMISIVIDAD","from":0.05,"to":0.3,"fromNote":"AÑO 1","toNote":"AÑO 3","at":20,"decayDur":70} as any)} /> },
   { key: "lamina15_s_09", start: 42.44, dur: 4.58, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lamina15_s_09.mp4" hue="amber" darken={0} clipDur={5.17} /> },
   { key: "lamina15_s_11", start: 52.42, dur: 5.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/lamina15_s_11.jpg" hue="amber" darken={0} /> },
   { key: "lamina15_s_12", start: 57.82, dur: 7.24, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/lamina15_s_12.jpg" hue="amber" darken={0} /> },

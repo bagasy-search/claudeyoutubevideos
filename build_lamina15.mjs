@@ -84,7 +84,12 @@ for (let i = 0; i < beatsBase.length; i++) {
       const props = { ...m.comp }; delete props.kind;
       compBeats.push({
         id, start: +t.toFixed(2), dur, kind: "premium", comp: own, theme: "earth", zone: "full",
-        image: clip || img || undefined, ...castProps(fixPaths(props, img || clip)),
+        // ⚠️ SOLO imagen: estas variantes dibujan su plate con <ImgOr>, que no sabe
+        // cargar video. Antes decía `clip || img` y funcionó mientras estos momentos
+        // no tuvieron clip; en cuanto H3 generó uno, el mp4 entró como `image` y
+        // Remotion murió con "Error loading image with src: ….mp4" (se cayeron los
+        // 60 chunks). El clip de H3 de este momento queda sin usar a propósito.
+        image: img || undefined, ...castProps(fixPaths(props, img)),
       });
       compCount[own] = (compCount[own] || 0) + 1;
     } else {

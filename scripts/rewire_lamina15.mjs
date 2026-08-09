@@ -55,4 +55,14 @@ if (bad.length) { console.error("⛔ siguen envueltas:", bad.join(", ")); proces
 if (new RegExp(`import \\{[^}]*(${OWN.join("|")})[^}]*\\} from "\\./kit/premium"`).test(s)) {
   console.error("⛔ siguen importadas desde ./kit/premium"); process.exit(1);
 }
-console.log("rewire ✓");
+// ⛔ COMPUERTA: ninguna prop de IMAGEN puede apuntar a un .mp4. Los componentes
+// dibujan su plate con <ImgOr>/<Img>, que no cargan video: un mp4 ahí mata los 60
+// chunks con "Error loading image with src". Apareció al meter los clips de H3 en
+// momentos que hasta entonces sólo tenían foto.
+const vid = [...s.matchAll(/(image|bg|back|fore|leftImage|rightImage|beforeImage|afterImage)="([^"]*\.mp4)"/g)];
+if (vid.length) {
+  console.error(`⛔ ${vid.length} props de imagen apuntan a un .mp4:`);
+  for (const v of vid.slice(0, 8)) console.error(`   ${v[1]}="${v[2]}"`);
+  process.exit(1);
+}
+console.log("rewire ✓ (0 props de imagen con video)");
