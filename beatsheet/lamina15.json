@@ -51,7 +51,8 @@
      "t": "ES"
     },
     {
-     "t": "AISLANTE"
+     "t": "AISLANTE",
+     "hl": true
     }
    ],
    "size": 118,
@@ -222,8 +223,7 @@
    "title": "El mismo aluminio, tres presentaciones",
    "chips": [
     "Con malla plástica",
-    "Con burbujas",
-    "Reforzada con hilos"
+    "Con burbujas"
    ],
    "image": "img/lamina15_s_11.jpg"
   },
@@ -994,11 +994,11 @@
    "orientation": "horizontal",
    "bars": [
     {
-     "label": "Ganancia de calor por el techo (16–42)",
+     "label": "Ganancia de calor por el techo",
      "value": 42
     },
     {
-     "label": "Gasto de enfriamiento (5–10)",
+     "label": "Gasto de enfriamiento",
      "value": 10
     }
    ],
@@ -1213,9 +1213,7 @@
    "hue": "amber",
    "chips": [
     "Separación mínima",
-    "Traslape",
-    "Distancia entre grapas",
-    "Rendimiento del rollo"
+    "Traslape"
    ],
    "title": "Las medidas exactas",
    "image": "img/lamina15_s_87.jpg"
@@ -1568,13 +1566,16 @@
    "title": "Ya había gastado en",
    "items": [
     {
-     "text": "Aire acondicionado nuevo"
+     "text": "Aire acondicionado nuevo",
+     "state": "done"
     },
     {
-     "text": "Ventanas cambiadas"
+     "text": "Ventanas cambiadas",
+     "state": "done"
     },
     {
-     "text": "Impermeabilizante caro"
+     "text": "Impermeabilizante caro",
+     "state": "done"
     }
    ],
    "eyebrow": "Antes de la barrera",
@@ -1876,7 +1877,8 @@
      "t": "sirve"
     },
     {
-     "t": "aquí"
+     "t": "aquí",
+     "hl": true
     }
    ],
    "eyebrow": "Azotea de concreto",
@@ -1930,13 +1932,16 @@
    "title": "Azotea de concreto, en orden",
    "items": [
     {
-     "text": "Bastidor contra la losa"
+     "text": "Bastidor contra la losa",
+     "state": "done"
     },
     {
-     "text": "Dejar la cámara de aire"
+     "text": "Dejar la cámara de aire",
+     "state": "done"
     },
     {
-     "text": "Cara brillante hacia abajo"
+     "text": "Cara brillante hacia abajo",
+     "state": "done"
     }
    ],
    "eyebrow": "Paso a paso"
@@ -1968,8 +1973,7 @@
    "hue": "amber",
    "chips": [
     "Pintura térmica",
-    "Pintura aislante",
-    "Impermeabilizante reflectivo"
+    "Pintura aislante"
    ],
    "title": "Lo que vas a leer en la lata",
    "image": "img/lamina15_s_149.jpg"
@@ -2158,10 +2162,12 @@
    "title": "regla de compra",
    "items": [
     {
-     "text": "que sea aluminio real"
+     "text": "que sea aluminio real",
+     "state": "done"
     },
     {
-     "text": "que no se rompa al grapar"
+     "text": "que no se rompa al grapar",
+     "state": "done"
     }
    ],
    "eyebrow": "ANTES DE PAGAR"
@@ -2346,7 +2352,8 @@
      "t": "CALOR"
     },
     {
-     "t": "DESAPARECE"
+     "t": "DESAPARECE",
+     "hl": true
     }
    ],
    "size": 112,
@@ -2720,7 +2727,8 @@
      "t": "LOS"
     },
     {
-     "t": "LÍMITES"
+     "t": "LÍMITES",
+     "hl": true
     }
    ],
    "eyebrow": "lo que sí y lo que no",
@@ -3181,13 +3189,16 @@
    "title": "Por fuera, nada cambió",
    "items": [
     {
-     "text": "No se rompió"
+     "text": "No se rompió",
+     "state": "done"
     },
     {
-     "text": "No se oxidó"
+     "text": "No se oxidó",
+     "state": "done"
     },
     {
-     "text": "No se despegó"
+     "text": "No se despegó",
+     "state": "done"
     }
    ],
    "eyebrow": "EL ENGAÑO",
@@ -3691,10 +3702,12 @@
    "title": "Los dos que arruinan la instalación",
    "items": [
     {
-     "text": "Deja espacio libre alrededor de luminarias, chimeneas y cables"
+     "text": "Deja espacio libre alrededor de luminarias, chimeneas y cables",
+     "state": "done"
     },
     {
-     "text": "Nunca la tiendas encima del aislante"
+     "text": "Nunca la tiendas encima del aislante",
+     "state": "done"
     }
    ],
    "eyebrow": "Paso 5-6",

@@ -92,6 +92,32 @@ for (let i = 0; i < beatsBase.length; i++) {
         // la pasás (degradado con un círculo) y en la cuadrícula se ve como caja sin
         // terminar. Auto-relleno con la imagen del PROPIO momento (habla de lo mismo).
         if (props.image === undefined && img) props.image = img;
+        // ⚠️ Verificado en el 1er render mirando el beat al 85% (no al 9%, que era el
+        // error de diagnóstico de otras veces): los chips SÍ se revelaban todos — lo
+        // que fallaba era el ANCHO. ChipsCluster los pone en una fila y con 4 etiquetas
+        // largas la primera y la última quedan cortadas por los bordes del cuadro.
+        // Por eso el recorte va por CARACTERES, no por cantidad ni por duración:
+        // "R-6 / R-8 / R-11" entran de a tres, "Distancia entre grapas" no.
+        if (Array.isArray(props.chips)) {
+          const MAXCH = 46;
+          const keep = [];
+          let acc = 0;
+          for (const c of props.chips) {
+            const L = String(c).length;
+            if (keep.length >= 2 && acc + L > MAXCH) break;
+            keep.push(c); acc += L;
+          }
+          props.chips = keep;
+        }
+        // ⚠️ Checklist dibuja el ✓ SOLO si el ítem trae state:"done" (`it.state ?? "todo"`).
+        // Sin eso la casilla queda VACÍA todo el plano y se lee como componente a medio
+        // hacer — que es exactamente lo que apareció en el render.
+        if (kind === "checklist" && Array.isArray(props.items)) {
+          props.items = props.items.slice(0, 3).map((it) => (typeof it === "string" ? { text: it, state: "done" } : { ...it, state: it.state || "done" }));
+        }
+        for (const lk of ["steps", "items"]) {
+          if (kind !== "checklist" && Array.isArray(props[lk]) && props[lk].length > 3) props[lk] = props[lk].slice(0, 3);
+        }
         const norm = normalizeComp(kind, fixPaths(props, img), img);
         if (norm) {
           compBeats.push({
@@ -155,7 +181,12 @@ function normalizeComp(kind, p, img) {
   // contratos REALES de estos cuatro son distintos (leídos del .tsx, no de memoria)
   if (kind === "headline") {
     // Token = { t, hl? } — no strings sueltos
-    if (Array.isArray(o.tokens)) o.tokens = o.tokens.map((x) => (typeof x === "string" ? { t: x } : x));
+    if (Array.isArray(o.tokens)) {
+      o.tokens = o.tokens.map((x) => (typeof x === "string" ? { t: x } : x));
+      // sin ninguna palabra marcada, el display queda todo del mismo gris y la
+      // última (que es la que remata la frase) se pierde contra el fondo claro
+      if (!o.tokens.some((x) => x.hl || x.danger || x.good)) o.tokens[o.tokens.length - 1].hl = true;
+    }
     if (!o.tokens || !o.tokens.length) return null;
   }
   if (kind === "vs") {
@@ -198,7 +229,8 @@ function normalizeComp(kind, p, img) {
         const nums = raw.match(/\d+(?:[.,]\d+)?/g) || [];
         const n = nums.length ? Number(nums[nums.length - 1].replace(",", ".")) : NaN;
         if (!Number.isFinite(n)) return null;
-        const label = nums.length > 1 ? `${x.label} (${raw})` : String(x.label ?? "");
+        // el label NO lleva el rango: desborda el ancho de la barra y sale cortado
+        const label = String(x.label ?? "");
         return { label, value: n };
       }).filter(Boolean);
     }
