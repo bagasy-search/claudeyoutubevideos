@@ -24,6 +24,13 @@ const imgAsset = (n) => {
 };
 const clipAsset = (n) => (exists(`broll/${SLUG}_${n}.mp4`) ? `broll/${SLUG}_${n}.mp4` : null);
 
+// Clips generados con H3: son los ÚNICOS que llevan cama de ambiente. `Media` mutea
+// todo el b-roll por diseño (y no se toca: es compartido), así que el sonido va como
+// capa <Audio> aparte en Main_lamina15, con UNA perilla de volumen para todos.
+let H3 = new Set();
+try { H3 = new Set(JSON.parse(fs.readFileSync(`_v3/${SLUG}_h3_ingested.json`, "utf8"))); } catch {}
+const h3Audio = [];
+
 // (usadas por fixPaths, más abajo — van acá arriba porque el bucle principal las llama
 //  y un `const` declarado después queda en zona muerta temporal)
 const PATHY = /^(image|photo|src|back|fore|leftImage|rightImage|beforeImage|afterImage)$/i;
@@ -82,7 +89,9 @@ for (let i = 0; i < beatsBase.length; i++) {
       compCount[own] = (compCount[own] || 0) + 1;
     } else {
       // plano de fondo: clip real si sobrevivió a la compuerta, si no la imagen generada
-      if (clip) { rawBeats.push({ id, start: +t.toFixed(2), dur, kind: "raw", src: clip, hue: "amber", darken: 0, noSplit: true }); nClip++; }
+      if (clip) {
+        rawBeats.push({ id, start: +t.toFixed(2), dur, kind: "raw", src: clip, hue: "amber", darken: 0, noSplit: true }); nClip++;
+      }
       else if (img) { rawBeats.push({ id, start: +t.toFixed(2), dur, kind: "raw", src: img, hue: "amber", darken: 0 }); nImg++; }
       else avatarSpans.push([t, sEnd]);
 
@@ -306,7 +315,14 @@ for (const m of plan) {
   const k = m.comp && m.comp.kind;
   if (k && AV_KINDS.has(k)) { avatarPick.add(m.name); continue; }
   // 1 de cada 2 (con 1 de cada 3 daba 23% y el piso medido del canal es 28%)
-  if (!k && !clipAsset(m.name)) { if (rot++ % 2 === 0) avatarPick.add(m.name); }
+  // ⚠️ Antes esto pedía "sin clip". Al convertir 100 fotos en clips de H3, el avatar
+  // se quedó sin momentos donde aparecer y cayó a 21% (el piso medido del canal es
+  // 28%). Un clip generado NO es más valioso que ver al presentador: los de H3
+  // también entran en la rotación; los de Pexels (footage real, más difícil de
+  // conseguir) se respetan y no se pisan.
+  const esH3 = H3.has(`${SLUG}_${m.name}`);
+  const sinClipReal = !clipAsset(m.name) || esH3;
+  if (!k && sinClipReal) { if (rot++ % 2 === 0) avatarPick.add(m.name); }
 }
 for (const b of [...rawBeats]) {
   const nm = b.id.replace(`${SLUG}_`, "");
@@ -338,8 +354,28 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 fs.writeFileSync(`src/VideoEdit/avatar_${SLUG}.gen.ts`,
   `// avatar_${SLUG}.gen.ts — GENERADO. NO editar a mano.\nimport type { AvatarWindow } from "./scenes/AvatarLayer";\nexport const TOTAL_${SLUG.toUpperCase()} = ${TOTAL};\nexport const AVATAR_WINDOWS: AvatarWindow[] = ${JSON.stringify(windows, null, 2)};\n`);
 
+// La cama de ambiente se deriva de los rawBeats FINALES, no de los provisorios:
+// la rotación de avatar saca planos después, y si el audio se calculara antes
+// quedaría ambiente sonando sobre un plano que ya no está en pantalla.
+for (const b of rawBeats) {
+  if (b.src && b.src.endsWith(".mp4") && H3.has(b.id)) h3Audio.push({ src: b.src, start: b.start, dur: b.dur });
+}
+
+fs.writeFileSync(`src/VideoEdit/h3audio_${SLUG}.gen.ts`,
+  `// h3audio_${SLUG}.gen.ts — GENERADO. NO editar a mano.
+` +
+  `// Cama de ambiente de los clips de MiniMax H3, MUY por debajo de la locución.
+` +
+  `// Subir/bajar TODO el ambiente = tocar H3_VOL y re-buildear.
+` +
+  `export const H3_VOL = 0.18;
+` +
+  `export const H3_AUDIO: { src: string; start: number; dur: number }[] = ${JSON.stringify(h3Audio, null, 1)};
+`);
+
 const avSecs = windows.reduce((a, w, i) => a + (w.mode === "full" ? ((windows[i + 1]?.start ?? TOTAL) - w.start) : 0), 0);
 console.log(`beats ${beats.length} · raw ${rawBeats.length} (clip ${nClip} / img ${nImg}) · componentes ${compBeats.length} (${Object.keys(compCount).length} tipos)`);
 console.log(`avatar full ${avSecs.toFixed(0)}s / ${TOTAL.toFixed(0)}s = ${((avSecs / TOTAL) * 100).toFixed(0)}%  ·  dur ${(TOTAL / 60).toFixed(1)} min`);
 if (nDropped) console.log(`⚠ ${nDropped} componentes descartados por props obligatorias faltantes (mejor sin componente que con JSX roto)`);
+console.log(`cama de ambiente H3: ${h3Audio.length} clips con audio a volumen ${0.18}`);
 console.log("componentes:", JSON.stringify(compCount));
