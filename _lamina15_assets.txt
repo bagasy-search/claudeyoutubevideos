@@ -1,8 +1,6 @@
-broll/lamina15_s_01.mp4
 broll/lamina15_s_03.mp4
 broll/lamina15_s_06.mp4
 broll/lamina15_s_07_b.mp4
-broll/lamina15_s_08.mp4
 broll/lamina15_s_09.mp4
 broll/lamina15_s_101.mp4
 broll/lamina15_s_102.mp4
@@ -106,14 +104,18 @@ broll/lamina15_s_91.mp4
 broll/lamina15_s_92.mp4
 broll/lamina15_s_94.mp4
 broll/lamina15_s_98.mp4
+img/lamina15_s_01.jpg
 img/lamina15_s_01_b.jpg
 img/lamina15_s_01_b_blur.jpg
+img/lamina15_s_01_blur.jpg
 img/lamina15_s_02.jpg
 img/lamina15_s_02_b.jpg
 img/lamina15_s_02_b_blur.jpg
 img/lamina15_s_02_blur.jpg
 img/lamina15_s_05.jpg
 img/lamina15_s_05_blur.jpg
+img/lamina15_s_08.jpg
+img/lamina15_s_08_blur.jpg
 img/lamina15_s_100.jpg
 img/lamina15_s_100_blur.jpg
 img/lamina15_s_103.jpg
