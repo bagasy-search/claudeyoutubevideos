@@ -9,11 +9,13 @@
 - **"Baalbek – largest stone"** (La Piedra de la Embarazada, Líbano) — autor *Ralph Ellis*,
   **CC BY-SA 4.0**, Wikimedia Commons.
   https://commons.wikimedia.org/wiki/File:Baalbek-_largest_stone.jpg
+- **"Baalbek Stone"** (segundo megalito labrado, tumbado en la cantera de Baalbek) — autor
+  *Freedom's Falcon*, **CC BY-SA 3.0**, Wikimedia Commons.
+  https://commons.wikimedia.org/wiki/File:Baalbek_Stone.jpg
 - Detalle de juntas poligonales (muro): Pexels · Marco Alhelm ·
   https://www.pexels.com/photo/gray-tiles-on-vintage-wall-26985152/
 
 ## B-roll en video (todos Pexels, licencia Pexels — uso libre con atribución cortés)
-- Cantera / bloque (drone) — David Pickup — https://www.pexels.com/video/drone-flight-of-a-stone-quarry-27290037/
 - Muro inca / Machu Picchu — Florian Delée — https://www.pexels.com/video/walking-ruins-museum-finding-17636430/
 - Terrazas Machu Picchu (aéreo) — Florian Delée — https://www.pexels.com/video/exploring-the-ancient-terraces-of-machu-picchu-29837360/
 - Pirámides de Guiza (aéreo) — Blanka OG — https://www.pexels.com/video/aerial-view-on-cairo-and-pyramids-10719817/
@@ -25,6 +27,14 @@
 - Cielo estrellado (timelapse) — Alex Moliski — https://www.pexels.com/video/stunning-timelapse-of-starry-night-sky-37526465/
 - Ruinas al atardecer (silueta) — Ahmed — https://www.pexels.com/video/exploring-ancient-ruins-at-sunset-35686423/
 - Tallado en piedra — Engin Altundağ — https://www.pexels.com/video/stone-carving-4457895/
+
+### Material descartado en la auditoría v2
+- `e7h_quarry_block.mp4` (cantera, drone — David Pickup, Pexels): **fuera del montaje final.** Es una
+  cantera industrial moderna, con autopista, camiones y casas; contradecía la narración ("cortada a mano,
+  hace más de dos mil años"). Se reemplazó por el segundo megalito de Baalbek (Wikimedia, arriba).
+  El archivo queda en `public/broll/` — no se borra.
+- `e7h_hand_stone.mp4` (mano sobre muro de mármol — cottonbro studio, Pexels): descartado por look
+  (mármol azul pulido de parque turístico, fuera de la paleta y del tema).
 
 ## Música y diseño sonoro
 - Cama musical cinematográfica + drone de tensión: biblioteca de sonido del proyecto (`public/sfx/`, `cp_music.wav`, `rumble_const.mp3`).

@@ -5,16 +5,15 @@ broll/e7h_inca_wall.mp4
 broll/e7h_machu_aerial.mp4
 broll/e7h_pyramid_close.mp4
 broll/e7h_pyramids_giza.mp4
-broll/e7h_quarry_block.mp4
 broll/e7h_stars_time.mp4
 broll/e7h_stone_texture.mp4
 broll/e7h_temple_columns.mp4
 broll/e7h_workers_silhou.mp4
 e7h_mix.wav
+img/e7h_baalbek_falcon.jpg
+img/e7h_baalbek_falcon_blur.jpg
 img/e7h_baalbek_largest.jpg
 img/e7h_baalbek_largest_blur.jpg
-img/e7h_photo_incajoint.jpg
-img/e7h_photo_incajoint_blur.jpg
 img/e7h_f1.jpg
 img/e7h_f1_blur.jpg
 img/e7h_f2.jpg
@@ -29,3 +28,5 @@ img/e7h_f6.jpg
 img/e7h_f6_blur.jpg
 img/e7h_f7.jpg
 img/e7h_f7_blur.jpg
+img/e7h_photo_incajoint.jpg
+img/e7h_photo_incajoint_blur.jpg

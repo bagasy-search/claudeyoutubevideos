@@ -25,7 +25,10 @@ const CREAM = '#F4F1E9';
 const SUB = '#C9C2B2';
 const RED = '#E24A2C';
 const INK = '#0b0b0c';
-const PANEL = 'rgba(9,10,12,0.72)';
+const PANEL = 'rgba(9,10,12,0.78)';
+
+// separador de miles con punto (no depender de Intl en el runtime del farm)
+const miles = (n: number) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
 const EXPO = Easing.bezier(0.16, 1, 0.3, 1);
 const clampI = (f: number, a: number, b: number, out: [number, number], easing?: any) =>
@@ -85,7 +88,7 @@ const BigNumber: React.FC<{target: number; unit: string; kicker: string; decimal
   const scale = interpolate(f, [0, 6, 12], [1.35, 0.97, 1], {extrapolateRight: 'clamp', easing: EXPO});
   const count = clampI(f, 0, 26, [0, target], EXPO);
   let num = decimals ? count.toFixed(decimals) : Math.round(count).toString();
-  if (thousands) num = Number(num).toLocaleString('es-ES');
+  if (thousands) num = miles(Number(num));
   return (
     <div style={{position: 'absolute', left: 130, bottom: 140, opacity: appear, transform: `translateY(${(1 - appear) * 30}px)`}}>
       <div style={{font: `600 28px ${OSWALD}`, letterSpacing: 5, color: GOLD, textTransform: 'uppercase', marginBottom: -4}}>{kicker}</div>
@@ -181,55 +184,62 @@ const ProcessChips: React.FC<{items: string[]; at: number[]; y?: number}> = ({it
   );
 };
 
-// tarjeta de medición: dos bloques con una junta y una cota
+// tarjeta de medición: dos bloques que se cierran hasta la junta, con su cota
 const GapDim: React.FC<{kicker: string; value: string; x?: number; y?: number}> =
 ({kicker, value, x = 1120, y = 330}) => {
   const f = useCurrentFrame();
   const app = clampI(f, 0, 10, [0, 1], EXPO);
-  const close = clampI(f, 6, 30, [26, 4], EXPO);   // los bloques se juntan
-  const num = clampI(f, 24, 34, [0, 1], EXPO);
+  const gap = clampI(f, 6, 32, [40, 4], EXPO);   // los bloques se cierran
+  const num = clampI(f, 26, 36, [0, 1], EXPO);
+  const H = 56, TOP = 10;
+  const y2 = TOP + H + gap;                       // borde superior del bloque de abajo
   return (
     <div style={{position: 'absolute', left: x, top: y, width: 620, opacity: app, background: PANEL,
-      border: `2px solid rgba(242,194,62,.45)`, padding: '26px 28px'}}>
+      border: `2px solid rgba(242,194,62,.5)`, padding: '26px 28px'}}>
       <div style={{font: `600 22px ${OSWALD}`, letterSpacing: 5, color: GOLD, textTransform: 'uppercase', marginBottom: 18}}>{kicker}</div>
-      <svg width={564} height={150}>
-        <rect x={0} y={62 - close} width={564} height={56} fill="#8a8378" />
-        <rect x={0} y={62 + close} width={564} height={56} fill="#6f6a61" />
-        <line x1={470} y1={62 - close + 56} x2={470} y2={62 + close} stroke={GOLD} strokeWidth={3} />
-        <line x1={458} y1={62 - close + 56} x2={482} y2={62 - close + 56} stroke={GOLD} strokeWidth={3} />
-        <line x1={458} y1={62 + close} x2={482} y2={62 + close} stroke={GOLD} strokeWidth={3} />
+      <svg width={564} height={160}>
+        <rect x={0} y={TOP} width={564} height={H} fill="#a9a094" />
+        <rect x={0} y={y2} width={564} height={H} fill="#5c564c" />
+        <rect x={0} y={TOP + H} width={564} height={gap} fill="rgba(226,74,44,.45)" />
+        <g stroke={GOLD} strokeWidth={4}>
+          <line x1={470} y1={TOP + H} x2={470} y2={y2} />
+          <line x1={452} y1={TOP + H} x2={488} y2={TOP + H} />
+          <line x1={452} y1={y2} x2={488} y2={y2} />
+        </g>
       </svg>
-      <div style={{font: `400 76px ${ANTON}`, color: CREAM, opacity: num, marginTop: -8, letterSpacing: 1}}>{value}</div>
+      <div style={{font: `400 78px ${ANTON}`, color: CREAM, opacity: num, marginTop: -6, letterSpacing: 1}}>{value}</div>
     </div>
   );
 };
 
-// prueba del cuchillo: la hoja entra y choca contra la junta
+// prueba del cuchillo: la hoja avanza, choca contra la junta y no entra
 const BladeGauge: React.FC<{kicker: string; verdict: string; x?: number; y?: number}> =
 ({kicker, verdict, x = 1080, y = 320}) => {
   const f = useCurrentFrame();
   const app = clampI(f, 0, 10, [0, 1], EXPO);
-  const push = clampI(f, 14, 38, [300, 118], EXPO);
-  const hit = f > 38 ? Math.max(0, 8 - (f - 38) * 0.5) * Math.sin(f * 1.6) : 0; // rebote corto
-  const vo = clampI(f, 42, 52, [0, 1], EXPO);
+  const JOINT = 300;                                   // x de la junta entre los dos bloques
+  const push = clampI(f, 14, 40, [620, JOINT + 14], EXPO);
+  const hit = f > 40 ? Math.max(0, 7 - (f - 40) * 0.45) * Math.sin(f * 1.7) : 0;
+  const vo = clampI(f, 44, 54, [0, 1], EXPO);
   return (
     <div style={{position: 'absolute', left: x, top: y, width: 660, opacity: app, background: PANEL,
-      border: `2px solid rgba(242,194,62,.45)`, padding: '26px 28px'}}>
+      border: `2px solid rgba(242,194,62,.5)`, padding: '26px 28px'}}>
       <div style={{font: `600 22px ${OSWALD}`, letterSpacing: 5, color: GOLD, textTransform: 'uppercase', marginBottom: 16}}>{kicker}</div>
-      <svg width={604} height={172}>
-        <rect x={0} y={8} width={112} height={156} fill="#8a8378" />
-        <rect x={114} y={8} width={126} height={156} fill="#77716a" />
-        <line x1={113} y1={8} x2={113} y2={164} stroke="#2a2724" strokeWidth={2} />
+      <svg width={604} height={176}>
+        <rect x={0} y={10} width={JOINT - 3} height={156} fill="#a9a094" />
+        <rect x={JOINT + 3} y={10} width={604 - JOINT - 3} height={156} fill="#6b6459" />
+        <line x1={JOINT} y1={10} x2={JOINT} y2={166} stroke="#14120d" strokeWidth={5} />
         <g transform={`translate(${push + hit},0)`}>
-          <polygon points="0,74 250,60 250,98 0,100" fill="#cfd4da" />
-          <rect x={250} y={54} width={120} height={50} rx={6} fill="#2f2b27" />
+          <polygon points="0,88 210,68 210,108 0,96" fill="#e6ebf1" stroke="#79818b" strokeWidth={2} />
+          <rect x={206} y={60} width={140} height={58} rx={8} fill="#241f1a" stroke="#0b0a08" strokeWidth={2} />
+          <rect x={226} y={73} width={100} height={7} rx={3} fill="#514639" />
         </g>
-        <g stroke={RED} strokeWidth={4} opacity={vo}>
-          <line x1={126} y1={44} x2={166} y2={84} />
-          <line x1={166} y1={44} x2={126} y2={84} />
+        <g stroke={RED} strokeWidth={6} opacity={vo}>
+          <line x1={JOINT - 26} y1={36} x2={JOINT + 26} y2={88} />
+          <line x1={JOINT + 26} y1={36} x2={JOINT - 26} y2={88} />
         </g>
       </svg>
-      <div style={{font: `400 54px ${ANTON}`, color: RED, opacity: vo, letterSpacing: 2, textTransform: 'uppercase'}}>{verdict}</div>
+      <div style={{font: `400 56px ${ANTON}`, color: RED, opacity: vo, letterSpacing: 2, textTransform: 'uppercase'}}>{verdict}</div>
     </div>
   );
 };
@@ -242,20 +252,21 @@ const LevelBar: React.FC<{kicker: string; span: string; dev: string; y?: number}
   const devO = clampI(f, 26, 40, [0, 1], EXPO);
   const W = 1500;
   return (
-    <div style={{position: 'absolute', left: 210, top: y, width: W, opacity: app}}>
+    <div style={{position: 'absolute', left: 180, top: y, width: W + 60, opacity: app, background: PANEL,
+      borderLeft: `6px solid ${GOLD}`, padding: '20px 30px 12px'}}>
       <div style={{font: `600 24px ${OSWALD}`, letterSpacing: 5, color: GOLD, textTransform: 'uppercase', marginBottom: 12}}>{kicker}</div>
       <svg width={W} height={132}>
-        <line x1={0} y1={70} x2={W * grow} y2={70} stroke={CREAM} strokeWidth={3} />
+        <line x1={0} y1={70} x2={W * grow} y2={70} stroke={CREAM} strokeWidth={5} />
         {Array.from({length: 16}).map((_, i) => (
           <line key={i} x1={i * (W / 15)} y1={62} x2={i * (W / 15)} y2={78} stroke={SUB} strokeWidth={1.5} opacity={grow} />
         ))}
         <line x1={0} y1={70} x2={0} y2={30} stroke={GOLD} strokeWidth={2} opacity={grow} />
         <line x1={W} y1={70} x2={W} y2={30} stroke={GOLD} strokeWidth={2} opacity={grow} />
-        <line x1={0} y1={36} x2={W * grow} y2={36} stroke={GOLD} strokeWidth={2} opacity={grow} />
+        <line x1={0} y1={36} x2={W * grow} y2={36} stroke={GOLD} strokeWidth={3} opacity={grow} />
         <text x={W / 2} y={26} textAnchor="middle" style={{font: `600 28px ${OSWALD}`, letterSpacing: 3}} fill={GOLD}>{span}</text>
         <g opacity={devO}>
-          <line x1={W * 0.5} y1={70} x2={W * 0.5} y2={112} stroke={RED} strokeWidth={3} />
-          <text x={W * 0.5 + 16} y={112} style={{font: `600 30px ${OSWALD}`, letterSpacing: 2}} fill={RED}>{dev}</text>
+          <line x1={W * 0.5} y1={62} x2={W * 0.5} y2={116} stroke={RED} strokeWidth={5} />
+          <text x={W * 0.5 + 20} y={114} style={{font: `600 40px ${OSWALD}`, letterSpacing: 2}} fill={RED}>{dev}</text>
         </g>
       </svg>
     </div>
@@ -306,8 +317,8 @@ const CompareBars: React.FC<{
       <div key={i} style={{marginBottom: 22}}>
         <div style={{font: `500 26px ${OSWALD}`, color: CREAM, letterSpacing: 2, marginBottom: 6, textTransform: 'uppercase'}}>{d.label}</div>
         <div style={{display: 'flex', alignItems: 'center', gap: 18}}>
-          <div style={{height: 34, width: Math.max(4, 880 * g), background: d.color}} />
-          <div style={{font: `400 34px ${ANTON}`, color: d.color}}>{Math.round(d.val).toLocaleString('es-ES')} {unit}</div>
+          <div style={{height: 34, width: Math.max(46, 880 * g), background: d.color, outline: `2px solid ${d.color}`}} />
+          <div style={{font: `400 34px ${ANTON}`, color: CREAM}}>{miles(Math.round(d.val))} {unit}</div>
         </div>
       </div>
     );
@@ -349,23 +360,23 @@ type KLine = {at: number; size?: number; color?: string; words: {t: string; hl?:
 const Kinetic: React.FC<{lines: KLine[]}> = ({lines}) => {
   const f = useCurrentFrame();
   return (
-    <div style={{position: 'absolute', left: 160, right: 160, top: 0, bottom: 0, display: 'flex',
-      flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 10}}>
+    <AbsoluteFill style={{flexDirection: 'column', justifyContent: 'center', alignItems: 'stretch'}}>
       {lines.map((ln, li) => {
         const base = F(ln.at);
         const size = ln.size ?? 80;
         return (
-          <div key={li} style={{display: 'flex', gap: 16, justifyContent: 'center', alignItems: 'baseline', flexWrap: 'nowrap', whiteSpace: 'nowrap'}}>
+          <div key={li} style={{width: '100%', textAlign: 'center', lineHeight: 1.06, padding: '4px 0'}}>
             {ln.words.map((w, wi) => {
               const start = base + wi * 3;
               const o = clampI(f, start, start + 9, [0, 1], EXPO);
               const y = clampI(f, start, start + 12, [24, 0], EXPO);
               const strikeP = ln.strikeAt != null ? clampI(f, F(ln.strikeAt), F(ln.strikeAt) + 10, [0, 1], EXPO) : 0;
               return (
-                <span key={wi} style={{position: 'relative', opacity: o, transform: `translateY(${y}px)`,
+                <span key={wi} style={{display: 'inline-block', position: 'relative', opacity: o,
+                  transform: `translateY(${y}px)`, margin: '0 8px',
                   font: `400 ${size}px ${ANTON}`, color: w.hl ? INK : (ln.color ?? CREAM),
                   background: w.hl ? GOLD : 'transparent', padding: w.hl ? '2px 16px' : 0,
-                  letterSpacing: 1, textShadow: w.hl ? 'none' : '0 6px 30px rgba(0,0,0,.75)'}}>
+                  letterSpacing: 1, textShadow: w.hl ? 'none' : '0 6px 30px rgba(0,0,0,.85)'}}>
                   {w.t}
                   {ln.strikeAt != null && (
                     <span style={{position: 'absolute', left: 0, top: '52%', height: 8, width: `${strikeP * 100}%`, background: RED}} />
@@ -376,7 +387,7 @@ const Kinetic: React.FC<{lines: KLine[]}> = ({lines}) => {
           </div>
         );
       })}
-    </div>
+    </AbsoluteFill>
   );
 };
 
@@ -466,11 +477,11 @@ export const MainE7h: React.FC = () => {
       <Scene s={4.12} e={9.1} name="A-mega"><Bg src="broll/e7h_stone_texture.mp4" from={0} focus="50% 50%" z={[1.08, 1.18]} darken={0.30} /></Scene>
       <Seq s={0.55} e={4.05} name="A-label"><LowerLabel kicker="Baalbek · Líbano" main="La Piedra de la Embarazada" y={110} /></Seq>
       <Seq s={1.60} e={9.0} name="A-num"><BigNumber target={1000} unit="TON" kicker="Peso de un solo bloque" /></Seq>
-      <Seq s={4.12} e={8.95} name="A-planes"><PlaneStack label="3 aviones de pasajeros" x={1200} y={170} /></Seq>
+      <Seq s={4.12} e={8.95} name="A-planes"><PlaneStack label="3 aviones de pasajeros" x={1130} y={180} /></Seq>
 
       {/* ---- B · 9.1–18.36 · cortada con precisión de menos de 1 mm ---- */}
       <Scene s={9.1} e={11.8} name="B-chisel"><Bg src="broll/e7h_chisel_tool.mp4" from={1} focus="50% 50%" z={[1.05, 1.15]} /></Scene>
-      <Scene s={11.8} e={14.0} name="B-quarry"><Bg src="broll/e7h_quarry_block.mp4" from={0} focus="50% 55%" z={[1.06, 1.16]} /></Scene>
+      <Scene s={11.8} e={14.0} name="B-megalito"><Bg src="img/e7h_baalbek_falcon.jpg" kind="img" focus="58% 62%" z={[1.08, 1.2]} darken={0.26} /></Scene>
       <Scene s={14.0} e={16.2} name="B-joint"><Bg src="img/e7h_photo_incajoint.jpg" kind="img" focus="42% 50%" z={[1.06, 1.22]} darken={0.34} /></Scene>
       <Scene s={16.2} e={18.36} name="B-time"><Bg src="broll/e7h_stone_texture.mp4" from={3} focus="40% 50%" z={[1.1, 1.2]} darken={0.34} /></Scene>
       <Seq s={9.10} e={13.9} name="B-chips"><ProcessChips items={['Cortada', 'Transportada', 'Encajada']} at={[0, 1.25, 2.5]} y={830} /></Seq>
@@ -508,7 +519,7 @@ export const MainE7h: React.FC = () => {
 
       {/* ---- F · 44.6–57.76 · el giro ---- */}
       <Scene s={44.60} e={49.70} name="F-people"><Bg src="broll/e7h_workers_silhou.mp4" from={0} focus="50% 55%" z={[1.05, 1.14]} darken={0.30} /></Scene>
-      <Scene s={49.70} e={53.70} name="F-stars"><Bg src="broll/e7h_stars_time.mp4" from={0} focus="50% 40%" z={[1.04, 1.12]} darken={0} vig={0.06} /></Scene>
+      <Scene s={49.70} e={53.70} name="F-stars"><Bg src="broll/e7h_stars_time.mp4" from={0} focus="50% 22%" z={[1.10, 1.18]} darken={0} vig={0.06} /></Scene>
       <Scene s={53.70} e={57.76} name="F-desert"><Bg src="broll/e7h_desert_ruins.mp4" from={0} focus="50% 50%" z={[1.06, 1.16]} darken={0.36} /></Scene>
       <Seq s={45.35} e={49.60} name="F-k1">
         <Kinetic lines={[
