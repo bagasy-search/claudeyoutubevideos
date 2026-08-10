@@ -112,6 +112,7 @@ import { MainOllabarro, TOTAL_FRAMES_OLLABARRO } from "./VideoEdit/Main_ollabarr
 import { MainCoolsave, TOTAL_FRAMES_COOLSAVE } from "./VideoEdit/Main_coolsave";
 import { MainGencoche, TOTAL_FRAMES_GENCOCHE } from "./VideoEdit/Main_gencoche";
 import { MainAntena25, TOTAL_FRAMES_ANTENA25 } from "./VideoEdit/Main_antena25";
+import { MainAriete, TOTAL_FRAMES_ARIETE } from "./VideoEdit/Main_ariete";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 import { MainFedtrailer, TOTAL_FRAMES_FEDTRAILER } from "./VideoEdit/Main_fedtrailer";
 import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
@@ -566,6 +567,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Coolsave" component={MainCoolsave} durationInFrames={TOTAL_FRAMES_COOLSAVE} fps={30} width={1920} height={1080} />
       <Composition id="Gencoche" component={MainGencoche} durationInFrames={TOTAL_FRAMES_GENCOCHE} fps={30} width={1920} height={1080} />
       <Composition id="Antena25" component={MainAntena25} durationInFrames={TOTAL_FRAMES_ANTENA25} fps={30} width={1920} height={1080} />
+      <Composition id="Ariete" component={MainAriete} durationInFrames={TOTAL_FRAMES_ARIETE} fps={30} width={1920} height={1080} />
       {/* REMAKE hit madera — "Por Qué La Madera De Antes Duraba 100 Años" · AVATAR Tomás · clips-first */}
       <Composition id="Madera" component={MainMadera} durationInFrames={TOTAL_FRAMES_MADERA} fps={30} width={1920} height={1080} />
       {/* VIDEO 1 veta "los viejos sabían" — "El cemento que no se raja ($1 la cal)" · AVATAR Tomás · clips-first */}
