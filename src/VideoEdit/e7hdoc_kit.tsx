@@ -2,7 +2,7 @@
 // Hereda la identidad del hook (Main_e7h.tsx) y agrega la munición que 25 minutos necesitan.
 // Paleta oro/crema/rojo sobre casi negro · Anton (números) · Oswald (labels) · Inter (datos).
 import React from 'react';
-import {AbsoluteFill, Sequence, useCurrentFrame, interpolate, Img, Video, staticFile, Easing} from 'remotion';
+import {AbsoluteFill, Sequence, useCurrentFrame, interpolate, Img, OffthreadVideo, staticFile, Easing} from 'remotion';
 import {loadFont as loadAnton} from '@remotion/google-fonts/Anton';
 import {loadFont as loadOswald} from '@remotion/google-fonts/Oswald';
 import {loadFont as loadInter} from '@remotion/google-fonts/Inter';
@@ -51,7 +51,7 @@ export const Bg: React.FC<{
   return (
     <AbsoluteFill>
       {kind === 'img' ? <Img src={staticFile(src)} style={style} />
-        : <Video src={staticFile(src)} startFrom={Math.round(from * FPS)} muted style={style} />}
+        : <OffthreadVideo src={staticFile(src)} startFrom={Math.round(from * FPS)} muted style={style} />}
       {vig > 0 && <AbsoluteFill style={{background: `radial-gradient(120% 100% at 50% 42%, transparent 40%, rgba(0,0,0,${vig}) 100%)`}} />}
       {darken > 0 && <AbsoluteFill style={{background: `rgba(6,7,9,${darken})`}} />}
     </AbsoluteFill>

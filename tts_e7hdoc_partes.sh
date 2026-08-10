@@ -12,7 +12,10 @@ for f in $OUT/*.txt; do
   w="$OUT/$n.wav"
   if [ -f "$w" ]; then echo "✓ $n (ya estaba)"; continue; fi
   echo "▶ $n  ($(wc -w < "$f") palabras)  $(date +%H:%M:%S)"
-  PYTHONUTF8=1 "$PY" gen_qwen3.py --mode design --instruct e7h_instruct.txt \
+  # modo CLONE con referencia FIJA: la voz no deriva entre bloques. El bug de las "muchas voces"
+  # era usar --mode design, que sintetiza cada fragmento por separado desde una descripción.
+  PYTHONUTF8=1 "$PY" gen_qwen3.py --mode clone --ref public/ref_manvoice.wav \
+    --ref-text public/reftext_manvoice.txt \
     --text "$f" --out "$w" --lang es --gap-sentence 0.32 --gap-para 0.6 --breath 0.03 \
     > "$OUT/$n.log" 2>&1
   if [ -f "$w" ]; then

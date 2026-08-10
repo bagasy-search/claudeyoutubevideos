@@ -170,13 +170,29 @@ const durClip = (src) => {
   return largo[src];
 };
 let ajustados = 0;
+const sinMaterial = [];
 for (const t of timeline) {
   if (t.bg.kind === 'img') continue;
   const total = durClip(t.bg.src);
   const from = t.bg.from || 0;
-  if (from + t.dur > total - 0.15) {
-    const nuevo = Math.max(0, +(total - t.dur - 0.15).toFixed(2));
-    if (Math.abs(nuevo - from) > 0.05) { t.bg.from = nuevo; ajustados++; }
+  // 1) si arrancando en `from` no alcanza, primero intento bajar el `from`
+  if (from + t.dur > total - 0.12) {
+    const nuevoFrom = Math.max(0, +(total - t.dur - 0.12).toFixed(2));
+    if (Math.abs(nuevoFrom - from) > 0.05) { t.bg.from = nuevoFrom; ajustados++; }
+  }
+  // 2) COMPUERTA DURA: si aun con from=0 el clip es más corto que el plano, el último frame se
+  //    CONGELA. Antes esto pasaba silenciosamente (52 s congelados en el primer render).
+  //    Se resuelve cambiando ese plano a la mejor imagen disponible del mismo bloque.
+  const disp = total - (t.bg.from || 0);
+  if (t.dur > disp + 0.05) {
+    const imgsBloque = (pool[t.bloque] || []).filter((c) => c.kind === 'img');
+    if (imgsBloque.length) {
+      const pick = imgsBloque[Math.abs(t.at.length * 13) % imgsBloque.length];
+      sinMaterial.push(`${t.bloque} :: ${t.at.slice(0, 34)} (${t.dur}s > ${disp.toFixed(1)}s) -> ${pick.src.split('/').pop()}`);
+      t.bg = {...pick, focus: t.bg.focus || '50% 50%', z: t.bg.z || [1.06, 1.18], darken: t.bg.darken, vig: t.bg.vig};
+    } else {
+      sinMaterial.push(`${t.bloque} :: ${t.at.slice(0, 34)} (${t.dur}s > ${disp.toFixed(1)}s) -> SIN REEMPLAZO`);
+    }
   }
 }
 
@@ -206,6 +222,8 @@ console.log(`duración         : ${TOTAL.toFixed(1)}s  (${Math.round(TOTAL * 30)
 console.log(`mediana plano    : ${pct(0.5).toFixed(2)}s   p75: ${pct(0.75).toFixed(2)}s   p90: ${pct(0.9).toFixed(2)}s`);
 console.log(`planos >= 5s     : ${largos} (${(largos / durs.length * 100).toFixed(0)}%)`);
 console.log(`\`from\` ajustados : ${ajustados}`);
+console.log(`planos sin material  : ${sinMaterial.length}` + (sinMaterial.length ? ' (pasados a imagen)' : ' ✓'));
+sinMaterial.forEach((x) => console.log('   ' + x));
 if (cortos.length) console.log(`⚠ ${cortos.length} planos < 1,2s`);
 if (flojos.length) { console.log(`\n⚠ ${flojos.length} anclas con match dudoso (<0,80):`); flojos.forEach((f) => console.log(`   ${f.score} ${f.bloque} :: ${f.at.slice(0, 46)}`)); }
 if (noEncontradas.length) { console.log(`\n⛔ ${noEncontradas.length} SIN RESOLVER:`); noEncontradas.forEach((n) => console.log('  ', n)); }

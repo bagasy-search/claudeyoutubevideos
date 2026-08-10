@@ -1,11 +1,11 @@
 // GENERADO por build_e7hdoc.mjs — no editar a mano
-export const TOTAL_FRAMES_E7HDOC = 47490;
+export const TOTAL_FRAMES_E7HDOC = 45064;
 export type Beat = {bloque: string; at: string; s: number; e: number; dur: number; bg: any; ov: any[]};
 export const TIMELINE: Beat[] = [
  {
   "bloque": "pro",
   "at": "antes de empezar",
-  "s": 0.62,
+  "s": 0.3,
   "bg": {
    "src": "broll/e7hd_cl_sunset_ruins.mp4",
    "darken": 0.42
@@ -30,14 +30,14 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 5.22,
+  "e": 4.9,
   "dur": 4.6
  },
  {
   "bloque": "pro",
   "at": "antes de empezar · relleno",
-  "s": 5.22,
-  "e": 8.42,
+  "s": 4.9,
+  "e": 8.1,
   "dur": 3.2,
   "bg": {
    "src": "broll/e7hd_cl_hands_stone.mp4",
@@ -52,9 +52,9 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pro",
   "at": "antes de empezar · relleno",
-  "s": 8.42,
-  "e": 13.25,
-  "dur": 4.83,
+  "s": 8.1,
+  "e": 12.04,
+  "dur": 3.94,
   "bg": {
    "src": "broll/e7hd_cl_modern_city.mp4",
    "focus": "46% 44%",
@@ -68,7 +68,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pro",
   "at": "estan ahi alguien las hizo",
-  "s": 13.25,
+  "s": 12.04,
   "bg": {
    "src": "img/e7hd_baalbek_01.jpg",
    "kind": "img",
@@ -78,15 +78,15 @@ export const TIMELINE: Beat[] = [
    ]
   },
   "ov": [],
-  "e": 17.85,
+  "e": 16.64,
   "dur": 4.6
  },
  {
   "bloque": "pro",
   "at": "estan ahi alguien las hizo · relleno",
-  "s": 17.85,
-  "e": 21.45,
-  "dur": 3.6,
+  "s": 16.64,
+  "e": 21.25,
+  "dur": 4.61,
   "bg": {
    "src": "broll/e7hd_pro_quarry_saw.mp4",
    "focus": "54% 56%",
@@ -99,24 +99,8 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pro",
-  "at": "estan ahi alguien las hizo · relleno",
-  "s": 21.45,
-  "e": 27.16,
-  "dur": 5.71,
-  "bg": {
-   "src": "broll/e7hd_pro_survey.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pro",
   "at": "con una grua de mil toneladas",
-  "s": 27.16,
+  "s": 21.25,
   "bg": {
    "src": "broll/e7hd_pro_crane_big.mp4"
   },
@@ -127,35 +111,35 @@ export const TIMELINE: Beat[] = [
     "main": "Grúa · láser · simulación"
    }
   ],
-  "e": 29.07,
-  "dur": 1.91
+  "e": 22.53,
+  "dur": 1.28
  },
  {
   "bloque": "pro",
   "at": "con laser",
-  "s": 29.07,
+  "s": 22.53,
   "bg": {
    "src": "broll/e7hd_pro_survey.mp4"
   },
   "ov": [],
-  "e": 30.32,
-  "dur": 1.25
+  "e": 23.7,
+  "dur": 1.17
  },
  {
   "bloque": "pro",
   "at": "software de simulacion",
-  "s": 30.32,
+  "s": 23.7,
   "bg": {
    "src": "broll/e7hd_pro_blueprint.mp4"
   },
   "ov": [],
-  "e": 35.6,
-  "dur": 5.28
+  "e": 31,
+  "dur": 7.3
  },
  {
   "bloque": "pro",
   "at": "no que no podriamos",
-  "s": 35.6,
+  "s": 31,
   "bg": {
    "src": "broll/e7hd_pro_quarry_saw.mp4",
    "darken": 0.4
@@ -190,37 +174,21 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 40.2,
+  "e": 35.6,
   "dur": 4.6
  },
  {
   "bloque": "pro",
   "at": "no que no podriamos · relleno",
-  "s": 40.2,
-  "e": 44.4,
-  "dur": 4.2,
+  "s": 35.6,
+  "e": 42.66,
+  "dur": 7.06,
   "bg": {
    "src": "broll/e7hd_pro_crane_big.mp4",
-   "focus": "52% 60%",
+   "focus": "50% 40%",
    "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pro",
-  "at": "no que no podriamos · relleno",
-  "s": 44.4,
-  "e": 46.81,
-  "dur": 2.41,
-  "bg": {
-   "src": "broll/e7hd_pro_quarry_saw.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
+    1.16,
+    1.05
    ]
   },
   "ov": []
@@ -228,7 +196,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pro",
   "at": "el primero es decir que tuvieron ayuda",
-  "s": 46.81,
+  "s": 42.66,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
    "from": 0.5,
@@ -245,13 +213,29 @@ export const TIMELINE: Beat[] = [
     "rot": -3
    }
   ],
-  "e": 53.12,
-  "dur": 6.31
+  "e": 47.26,
+  "dur": 4.6
+ },
+ {
+  "bloque": "pro",
+  "at": "el primero es decir que tuvieron ayuda · relleno",
+  "s": 47.26,
+  "e": 51.48,
+  "dur": 4.22,
+  "bg": {
+   "src": "broll/e7hd_cl_sunset_ruins.mp4",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "pro",
   "at": "el segundo es decir que no hay ningun misterio",
-  "s": 53.12,
+  "s": 51.48,
   "bg": {
    "src": "broll/e7hd_sq_stone_hammer.mp4"
   },
@@ -265,29 +249,13 @@ export const TIMELINE: Beat[] = [
     "rot": 2
    }
   ],
-  "e": 57.72,
-  "dur": 4.6
- },
- {
-  "bloque": "pro",
-  "at": "el segundo es decir que no hay ningun misterio · relleno",
-  "s": 57.72,
-  "e": 60.68,
-  "dur": 2.96,
-  "bg": {
-   "src": "broll/e7hd_cl_sunset_ruins.mp4",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
+  "e": 58.54,
+  "dur": 7.06
  },
  {
   "bloque": "pro",
   "at": "los dos reflejos son comodos",
-  "s": 60.68,
+  "s": 58.54,
   "bg": {
    "src": "broll/e7hd_bk_ruins_dusk.mp4",
    "darken": 0.44
@@ -312,17 +280,67 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 65.28,
+  "e": 63.14,
   "dur": 4.6
  },
  {
   "bloque": "pro",
   "at": "los dos reflejos son comodos · relleno",
-  "s": 65.28,
-  "e": 75.21,
-  "dur": 9.93,
+  "s": 63.14,
+  "e": 69.34,
+  "dur": 6.2,
   "bg": {
    "src": "broll/e7hd_pro_blueprint.mp4",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pro",
+  "at": "los dos reflejos son comodos · relleno",
+  "s": 69.34,
+  "e": 71.55,
+  "dur": 2.21,
+  "bg": {
+   "src": "broll/e7hd_pro_crane_big.mp4",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pro",
+  "at": "el dato duro el que se puede medir",
+  "s": 71.55,
+  "bg": {
+   "src": "broll/e7hd_pro_survey.mp4",
+   "from": 0.81
+  },
+  "ov": [
+   {
+    "c": "LowerLabel",
+    "kicker": "Regla 1",
+    "main": "El dato que se puede medir"
+   }
+  ],
+  "e": 76.15,
+  "dur": 4.6
+ },
+ {
+  "bloque": "pro",
+  "at": "el dato duro el que se puede medir · relleno",
+  "s": 76.15,
+  "e": 79.33,
+  "dur": 3.18,
+  "bg": {
+   "src": "broll/e7hd_pro_quarry_saw.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -333,29 +351,11 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pro",
-  "at": "el dato duro el que se puede medir",
-  "s": 75.21,
-  "bg": {
-   "src": "broll/e7hd_pro_survey.mp4",
-   "from": 0.08
-  },
-  "ov": [
-   {
-    "c": "LowerLabel",
-    "kicker": "Regla 1",
-    "main": "El dato que se puede medir"
-   }
-  ],
-  "e": 80.51,
-  "dur": 5.3
- },
- {
-  "bloque": "pro",
   "at": "incluidas las mas delirantes",
-  "s": 80.51,
+  "s": 79.33,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
-   "from": 2.09,
+   "from": 4,
    "darken": 0.12,
    "vig": 0.1
   },
@@ -366,13 +366,13 @@ export const TIMELINE: Beat[] = [
     "main": "La teoría, con nombre y año"
    }
   ],
-  "e": 87.27,
-  "dur": 6.76
+  "e": 86.63,
+  "dur": 7.3
  },
  {
   "bloque": "pro",
   "at": "que la sostiene y que la hunde",
-  "s": 87.27,
+  "s": 86.63,
   "bg": {
    "src": "img/e7hd_sacsay_01.jpg",
    "kind": "img",
@@ -385,13 +385,13 @@ export const TIMELINE: Beat[] = [
     "main": "Qué la sostiene · qué la hunde"
    }
   ],
-  "e": 89.14,
-  "dur": 1.87
+  "e": 88.14,
+  "dur": 1.51
  },
  {
   "bloque": "pro",
   "at": "vos sos el jurado",
-  "s": 89.14,
+  "s": 88.14,
   "bg": {
    "src": "broll/e7hd_cl_hands_stone.mp4",
    "darken": 0.4
@@ -416,13 +416,29 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 96.08,
-  "dur": 6.94
+  "e": 92.74,
+  "dur": 4.6
+ },
+ {
+  "bloque": "pro",
+  "at": "vos sos el jurado · relleno",
+  "s": 92.74,
+  "e": 96.62,
+  "dur": 3.88,
+  "bg": {
+   "src": "broll/e7hd_pro_survey.mp4",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "pro",
   "at": "la construccion numero siete",
-  "s": 96.08,
+  "s": 96.62,
   "bg": {
    "src": "broll/e7hd_gt_anatolia.mp4",
    "darken": 0.38
@@ -438,33 +454,17 @@ export const TIMELINE: Beat[] = [
     "big": true
    }
   ],
-  "e": 100.68,
+  "e": 101.22,
   "dur": 4.6
  },
  {
   "bloque": "pro",
   "at": "la construccion numero siete · relleno",
-  "s": 100.68,
-  "e": 105.48,
-  "dur": 4.8,
+  "s": 101.22,
+  "e": 106.73,
+  "dur": 5.51,
   "bg": {
    "src": "broll/e7hd_pro_blueprint.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pro",
-  "at": "la construccion numero siete · relleno",
-  "s": 105.48,
-  "e": 108,
-  "dur": 2.52,
-  "bg": {
-   "src": "broll/e7hd_pro_crane_big.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -476,7 +476,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pro",
   "at": "mas dificil de digerir",
-  "s": 108,
+  "s": 106.73,
   "bg": {
    "src": "img/e7hd_gobekli_01.jpg",
    "kind": "img",
@@ -487,25 +487,25 @@ export const TIMELINE: Beat[] = [
    "darken": 0.5
   },
   "ov": [],
-  "e": 112.36,
-  "dur": 4.36
+  "e": 111.72,
+  "dur": 4.99
  },
  {
   "bloque": "pro",
   "at": "empecemos por la mas pesada",
-  "s": 112.36,
+  "s": 111.72,
   "bg": {
    "src": "broll/e7hd_bk_stone_detail.mp4",
    "darken": 0.45
   },
   "ov": [],
-  "e": 116.11,
-  "dur": 3.75
+  "e": 116.49,
+  "dur": 4.77
  },
  {
   "bloque": "bk",
   "at": "valle de la beca libano",
-  "s": 116.11,
+  "s": 116.49,
   "bg": {
    "src": "img/e7hd_baalbek_02.jpg",
    "kind": "img",
@@ -524,40 +524,24 @@ export const TIMELINE: Beat[] = [
     "coords": "34°00′N  36°12′E"
    }
   ],
-  "e": 119.28,
-  "dur": 3.17
+  "e": 120.57,
+  "dur": 4.08
  },
  {
   "bloque": "bk",
   "at": "a dos horas de beirut",
-  "s": 119.28,
+  "s": 120.57,
   "bg": {
    "src": "broll/e7hd_bk_roman_cols.mp4"
   },
   "ov": [],
-  "e": 123.88,
-  "dur": 4.6
- },
- {
-  "bloque": "bk",
-  "at": "a dos horas de beirut · relleno",
-  "s": 123.88,
-  "e": 128.22,
-  "dur": 4.34,
-  "bg": {
-   "src": "broll/e7hd_bk_stone_detail.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
+  "e": 126.26,
+  "dur": 5.69
  },
  {
   "bloque": "bk",
   "at": "el templo de jupiter mas grande",
-  "s": 128.22,
+  "s": 126.26,
   "bg": {
    "src": "img/e7hd_baalbek_03.jpg",
    "kind": "img"
@@ -569,30 +553,13 @@ export const TIMELINE: Beat[] = [
     "main": "Templo de Júpiter"
    }
   ],
-  "e": 132.82,
-  "dur": 4.6
- },
- {
-  "bloque": "bk",
-  "at": "el templo de jupiter mas grande · relleno",
-  "s": 132.82,
-  "e": 137.95,
-  "dur": 5.13,
-  "bg": {
-   "src": "img/e7hd_baalbek_05.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
+  "e": 133.47,
+  "dur": 7.21
  },
  {
   "bloque": "bk",
   "at": "lo interesante es lo que hay debajo",
-  "s": 137.95,
+  "s": 133.47,
   "bg": {
    "src": "img/e7hd_baalbek_04.jpg",
    "kind": "img",
@@ -602,13 +569,13 @@ export const TIMELINE: Beat[] = [
    ]
   },
   "ov": [],
-  "e": 144.18,
-  "dur": 6.23
+  "e": 136.94,
+  "dur": 3.47
  },
  {
   "bloque": "bk",
   "at": "tres bloques de piedra caliza",
-  "s": 144.18,
+  "s": 136.94,
   "bg": {
    "src": "img/e7hd_baalbek_05.jpg",
    "kind": "img"
@@ -622,13 +589,13 @@ export const TIMELINE: Beat[] = [
     "thousands": false
    }
   ],
-  "e": 147.37,
-  "dur": 3.19
+  "e": 139.93,
+  "dur": 2.99
  },
  {
   "bloque": "bk",
-  "at": "diecinueve metros de largo",
-  "s": 147.37,
+  "at": "19 metros de largo cada uno",
+  "s": 139.93,
   "bg": {
    "src": "broll/e7hd_bk_stone_detail.mp4"
   },
@@ -639,13 +606,13 @@ export const TIMELINE: Beat[] = [
     "label": "19 m de largo · 4,3 m de alto"
    }
   ],
-  "e": 151.11,
-  "dur": 3.74
+  "e": 143.59,
+  "dur": 3.66
  },
  {
   "bloque": "bk",
-  "at": "unas ochocientas toneladas",
-  "s": 151.11,
+  "at": "unas 800 toneladas cada uno",
+  "s": 143.59,
   "bg": {
    "src": "img/e7hd_baalbek_02.jpg",
    "kind": "img",
@@ -663,37 +630,22 @@ export const TIMELINE: Beat[] = [
     "kicker": "Cada uno de los tres"
    }
   ],
-  "e": 155.71,
+  "e": 148.19,
   "dur": 4.6
  },
  {
   "bloque": "bk",
-  "at": "unas ochocientas toneladas · relleno",
-  "s": 155.71,
-  "e": 159.31,
-  "dur": 3.6,
+  "at": "unas 800 toneladas cada uno · relleno",
+  "s": 148.19,
+  "e": 152.85,
+  "dur": 4.66,
   "bg": {
-   "src": "broll/e7hd_bk_limestone.mp4",
-   "focus": "54% 56%",
+   "src": "img/e7hd_baalbek_03.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
    "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "unas ochocientas toneladas · relleno",
-  "s": 159.31,
-  "e": 161.28,
-  "dur": 1.97,
-  "bg": {
-   "src": "broll/e7hd_bk_roman_cols.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
+    1.05,
+    1.16
    ]
   },
   "ov": []
@@ -701,7 +653,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "estan a siete metros de altura",
-  "s": 161.28,
+  "s": 152.85,
   "bg": {
    "src": "img/e7hd_baalbek_03.jpg",
    "kind": "img",
@@ -714,43 +666,43 @@ export const TIMELINE: Beat[] = [
     "valor": "7 m"
    }
   ],
-  "e": 166.97,
-  "dur": 5.69
+  "e": 158.46,
+  "dur": 5.61
  },
  {
   "bloque": "bk",
   "at": "del tamano de un vagon de tren",
-  "s": 166.97,
+  "s": 158.46,
   "bg": {
    "src": "broll/e7hd_bk_limestone.mp4"
   },
   "ov": [],
-  "e": 169.27,
-  "dur": 2.3
+  "e": 161.16,
+  "dur": 2.7
  },
  {
   "bloque": "bk",
   "at": "las movio casi un kilometro cuesta arriba",
-  "s": 169.27,
+  "s": 161.16,
   "bg": {
    "src": "broll/e7hd_bk_rope_wood.mp4"
   },
   "ov": [],
-  "e": 173.87,
+  "e": 165.76,
   "dur": 4.6
  },
  {
   "bloque": "bk",
   "at": "las movio casi un kilometro cuesta arriba · relleno",
-  "s": 173.87,
-  "e": 177.68,
-  "dur": 3.81,
+  "s": 165.76,
+  "e": 169.16,
+  "dur": 3.4,
   "bg": {
    "src": "broll/e7hd_bk_roman_cols.mp4",
-   "focus": "52% 60%",
+   "focus": "46% 44%",
    "z": [
-    1.04,
-    1.14
+    1.12,
+    1.02
    ]
   },
   "ov": []
@@ -758,7 +710,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "donde no entra una hoja de papel",
-  "s": 177.68,
+  "s": 169.16,
   "bg": {
    "src": "img/e7hd_baalbek_03.jpg",
    "kind": "img",
@@ -776,42 +728,26 @@ export const TIMELINE: Beat[] = [
     "r": 160
    }
   ],
-  "e": 182.28,
-  "dur": 4.6
- },
- {
-  "bloque": "bk",
-  "at": "donde no entra una hoja de papel · relleno",
-  "s": 182.28,
-  "e": 186.18,
-  "dur": 3.9,
-  "bg": {
-   "src": "broll/e7hd_bk_ruins_dusk.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
+  "e": 176.22,
+  "dur": 7.06
  },
  {
   "bloque": "bk",
   "at": "hay una cuarta piedra",
-  "s": 186.18,
+  "s": 176.22,
   "bg": {
    "src": "img/e7h_baalbek_largest.jpg",
    "kind": "img",
    "focus": "52% 58%"
   },
   "ov": [],
-  "e": 187.7,
-  "dur": 1.52
+  "e": 178.07,
+  "dur": 1.85
  },
  {
   "bloque": "bk",
   "at": "nunca la movieron",
-  "s": 187.7,
+  "s": 178.07,
   "bg": {
    "src": "img/e7h_baalbek_falcon.jpg",
    "kind": "img",
@@ -824,33 +760,17 @@ export const TIMELINE: Beat[] = [
     "main": "La Piedra de la Embarazada"
    }
   ],
-  "e": 192.3,
+  "e": 182.67,
   "dur": 4.6
  },
  {
   "bloque": "bk",
   "at": "nunca la movieron · relleno",
-  "s": 192.3,
-  "e": 195.7,
-  "dur": 3.4,
+  "s": 182.67,
+  "e": 187.23,
+  "dur": 4.56,
   "bg": {
    "src": "broll/e7hd_bk_rope_wood.mp4",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "nunca la movieron · relleno",
-  "s": 195.7,
-  "e": 198.04,
-  "dur": 2.34,
-  "bg": {
-   "src": "broll/e7hd_bk_ruins_dusk.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -862,7 +782,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "esa es la que pesa mil toneladas",
-  "s": 198.04,
+  "s": 187.23,
   "bg": {
    "src": "img/e7h_baalbek_largest.jpg",
    "kind": "img",
@@ -880,15 +800,15 @@ export const TIMELINE: Beat[] = [
     "kicker": "Un solo bloque"
    }
   ],
-  "e": 202.64,
+  "e": 191.83,
   "dur": 4.6
  },
  {
   "bloque": "bk",
   "at": "esa es la que pesa mil toneladas · relleno",
-  "s": 202.64,
-  "e": 207.44,
-  "dur": 4.8,
+  "s": 191.83,
+  "e": 200.5,
+  "dur": 8.67,
   "bg": {
    "src": "broll/e7hd_bk_ruins_dusk.mp4",
    "focus": "50% 40%",
@@ -901,36 +821,20 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "bk",
-  "at": "esa es la que pesa mil toneladas · relleno",
-  "s": 207.44,
-  "e": 211.46,
-  "dur": 4.02,
-  "bg": {
-   "src": "broll/e7hd_bk_stone_detail.mp4",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
   "at": "hay tres respuestas y ninguna cierra",
-  "s": 211.46,
+  "s": 200.5,
   "bg": {
    "src": "broll/e7hd_bk_ruins_dusk.mp4",
    "darken": 0.44
   },
   "ov": [],
-  "e": 215.73,
-  "dur": 4.27
+  "e": 205.18,
+  "dur": 4.68
  },
  {
   "bloque": "bk",
   "at": "teoria uno los romanos",
-  "s": 215.73,
+  "s": 205.18,
   "bg": {
    "src": "broll/e7hd_bk_rope_wood.mp4",
    "darken": 0.5
@@ -946,83 +850,18 @@ export const TIMELINE: Beat[] = [
     "hunde": "Da para arrastrar, no tan cómodo para subir 7 m. Y no hay un solo relieve ni un texto sobre la obra más brutal del imperio."
    }
   ],
-  "e": 226.73,
+  "e": 216.18,
   "dur": 11
  },
  {
   "bloque": "bk",
   "at": "teoria uno los romanos · relleno",
-  "s": 226.73,
-  "e": 229.93,
-  "dur": 3.2,
+  "s": 216.18,
+  "e": 220.38,
+  "dur": 4.2,
   "bg": {
    "src": "img/e7hd_baalbek_07.jpg",
    "kind": "img",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "teoria uno los romanos · relleno",
-  "s": 229.93,
-  "e": 234.93,
-  "dur": 5,
-  "bg": {
-   "src": "img/e7hd_baalbek_08.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "teoria uno los romanos · relleno",
-  "s": 234.93,
-  "e": 238.53,
-  "dur": 3.6,
-  "bg": {
-   "src": "broll/e7hd_bk_limestone.mp4",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "teoria uno los romanos · relleno",
-  "s": 238.53,
-  "e": 246.03,
-  "dur": 7.5,
-  "bg": {
-   "src": "broll/e7hd_bk_roman_cols.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "teoria uno los romanos · relleno",
-  "s": 246.03,
-  "e": 250.23,
-  "dur": 4.2,
-  "bg": {
-   "src": "broll/e7hd_bk_rope_wood.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -1034,11 +873,12 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "teoria uno los romanos · relleno",
-  "s": 250.23,
-  "e": 256.43,
+  "s": 220.38,
+  "e": 226.58,
   "dur": 6.2,
   "bg": {
-   "src": "broll/e7hd_bk_ruins_dusk.mp4",
+   "src": "img/e7hd_baalbek_08.jpg",
+   "kind": "img",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -1050,11 +890,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "teoria uno los romanos · relleno",
-  "s": 256.43,
-  "e": 259.83,
+  "s": 226.58,
+  "e": 229.98,
   "dur": 3.4,
   "bg": {
-   "src": "broll/e7hd_bk_stone_detail.mp4",
+   "src": "broll/e7hd_bk_limestone.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -1066,12 +906,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "teoria uno los romanos · relleno",
-  "s": 259.83,
-  "e": 265.23,
-  "dur": 5.4,
+  "s": 229.98,
+  "e": 238.48,
+  "dur": 8.5,
   "bg": {
-   "src": "img/e7hd_baalbek_01.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_bk_roman_cols.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -1082,8 +921,24 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "bk",
+  "at": "teoria uno los romanos · relleno",
+  "s": 238.48,
+  "e": 243.64,
+  "dur": 5.16,
+  "bg": {
+   "src": "broll/e7hd_bk_rope_wood.mp4",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "bk",
   "at": "teoria dos la plataforma es anterior",
-  "s": 265.23,
+  "s": 243.64,
   "bg": {
    "src": "img/e7hd_baalbek_04.jpg",
    "kind": "img",
@@ -1101,34 +956,17 @@ export const TIMELINE: Beat[] = [
     "hunde": "No hay una sola capa arqueológica debajo que lo apoye. Y la piedra de 1.000 t quedó en una cantera con herramientas romanas."
    }
   ],
-  "e": 276.23,
+  "e": 254.64,
   "dur": 11
  },
  {
   "bloque": "bk",
   "at": "teoria dos la plataforma es anterior · relleno",
-  "s": 276.23,
-  "e": 281.03,
-  "dur": 4.8,
-  "bg": {
-   "src": "img/e7hd_baalbek_01.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "teoria dos la plataforma es anterior · relleno",
-  "s": 281.03,
-  "e": 286.63,
+  "s": 254.64,
+  "e": 260.24,
   "dur": 5.6,
   "bg": {
-   "src": "img/e7hd_baalbek_02.jpg",
+   "src": "img/e7hd_baalbek_01.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -1141,11 +979,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "teoria dos la plataforma es anterior · relleno",
-  "s": 286.63,
-  "e": 289.83,
+  "s": 260.24,
+  "e": 263.44,
   "dur": 3.2,
   "bg": {
-   "src": "img/e7hd_baalbek_03.jpg",
+   "src": "img/e7hd_baalbek_02.jpg",
    "kind": "img",
    "focus": "50% 50%",
    "z": [
@@ -1158,11 +996,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "teoria dos la plataforma es anterior · relleno",
-  "s": 289.83,
-  "e": 294.83,
+  "s": 263.44,
+  "e": 268.44,
   "dur": 5,
   "bg": {
-   "src": "img/e7hd_baalbek_04.jpg",
+   "src": "img/e7hd_baalbek_03.jpg",
    "kind": "img",
    "focus": "46% 44%",
    "z": [
@@ -1175,11 +1013,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "teoria dos la plataforma es anterior · relleno",
-  "s": 294.83,
-  "e": 298.43,
+  "s": 268.44,
+  "e": 272.04,
   "dur": 3.6,
   "bg": {
-   "src": "img/e7hd_baalbek_05.jpg",
+   "src": "img/e7hd_baalbek_04.jpg",
    "kind": "img",
    "focus": "54% 56%",
    "z": [
@@ -1192,11 +1030,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "teoria dos la plataforma es anterior · relleno",
-  "s": 298.43,
-  "e": 302.72,
-  "dur": 4.29,
+  "s": 272.04,
+  "e": 279.54,
+  "dur": 7.5,
   "bg": {
-   "src": "img/e7hd_baalbek_06.jpg",
+   "src": "img/e7hd_baalbek_05.jpg",
    "kind": "img",
    "focus": "50% 40%",
    "z": [
@@ -1208,8 +1046,25 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "bk",
+  "at": "teoria dos la plataforma es anterior · relleno",
+  "s": 279.54,
+  "e": 281.34,
+  "dur": 1.8,
+  "bg": {
+   "src": "img/e7hd_baalbek_06.jpg",
+   "kind": "img",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "bk",
   "at": "teoria tres y aca nos vamos al fondo",
-  "s": 302.72,
+  "s": 281.34,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
    "from": 2,
@@ -1217,16 +1072,33 @@ export const TIMELINE: Beat[] = [
    "vig": 0.08
   },
   "ov": [],
-  "e": 309,
-  "dur": 6.28
+  "e": 285.94,
+  "dur": 4.6
+ },
+ {
+  "bloque": "bk",
+  "at": "teoria tres y aca nos vamos al fondo · relleno",
+  "s": 285.94,
+  "e": 289.62,
+  "dur": 3.68,
+  "bg": {
+   "src": "img/e7hd_baalbek_01.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "bk",
   "at": "zecharia sitchin publico",
-  "s": 309,
+  "s": 289.62,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
-   "from": 0,
+   "from": 1.38,
    "darken": 0.1,
    "vig": 0.08
   },
@@ -1241,50 +1113,18 @@ export const TIMELINE: Beat[] = [
     "hunde": "Sitchin era escritor, no arqueólogo. Su traducción de las tablillas sumerias no la acepta ningún sumerólogo."
    }
   ],
-  "e": 320,
+  "e": 300.62,
   "dur": 11
  },
  {
   "bloque": "bk",
   "at": "zecharia sitchin publico · relleno",
-  "s": 320,
-  "e": 324.2,
-  "dur": 4.2,
+  "s": 300.62,
+  "e": 304.02,
+  "dur": 3.4,
   "bg": {
    "src": "img/e7hd_baalbek_08.jpg",
    "kind": "img",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "zecharia sitchin publico · relleno",
-  "s": 324.2,
-  "e": 330.4,
-  "dur": 6.2,
-  "bg": {
-   "src": "broll/e7hd_bk_limestone.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "bk",
-  "at": "zecharia sitchin publico · relleno",
-  "s": 330.4,
-  "e": 333.8,
-  "dur": 3.4,
-  "bg": {
-   "src": "broll/e7hd_bk_roman_cols.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -1296,11 +1136,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "zecharia sitchin publico · relleno",
-  "s": 333.8,
-  "e": 342.3,
+  "s": 304.02,
+  "e": 312.52,
   "dur": 8.5,
   "bg": {
-   "src": "broll/e7hd_bk_rope_wood.mp4",
+   "src": "broll/e7hd_bk_limestone.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -1312,11 +1152,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "bk",
   "at": "zecharia sitchin publico · relleno",
-  "s": 342.3,
-  "e": 348,
-  "dur": 5.7,
+  "s": 312.52,
+  "e": 317.32,
+  "dur": 4.8,
   "bg": {
-   "src": "broll/e7hd_bk_ruins_dusk.mp4",
+   "src": "broll/e7hd_bk_roman_cols.mp4",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -1327,29 +1167,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "bk",
-  "at": "mirar el triliton te produce algo fisico",
-  "s": 348,
-  "bg": {
-   "src": "img/e7hd_baalbek_05.jpg",
-   "kind": "img",
-   "z": [
-    1.24,
-    1.06
-   ]
-  },
-  "ov": [],
-  "e": 352.6,
-  "dur": 4.6
- },
- {
-  "bloque": "bk",
-  "at": "mirar el triliton te produce algo fisico · relleno",
-  "s": 352.6,
-  "e": 358.2,
+  "at": "zecharia sitchin publico · relleno",
+  "s": 317.32,
+  "e": 322.92,
   "dur": 5.6,
   "bg": {
-   "src": "img/e7hd_baalbek_03.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_bk_rope_wood.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -1360,13 +1183,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "bk",
-  "at": "mirar el triliton te produce algo fisico · relleno",
-  "s": 358.2,
-  "e": 362.88,
-  "dur": 4.68,
+  "at": "zecharia sitchin publico · relleno",
+  "s": 322.92,
+  "e": 324.98,
+  "dur": 2.06,
   "bg": {
-   "src": "img/e7hd_baalbek_04.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_bk_ruins_dusk.mp4",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -1377,21 +1199,88 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "bk",
+  "at": "mirar el triliton te produce algo fisico",
+  "s": 324.98,
+  "bg": {
+   "src": "img/e7hd_baalbek_05.jpg",
+   "kind": "img",
+   "z": [
+    1.24,
+    1.06
+   ]
+  },
+  "ov": [],
+  "e": 329.58,
+  "dur": 4.6
+ },
+ {
+  "bloque": "bk",
+  "at": "mirar el triliton te produce algo fisico · relleno",
+  "s": 329.58,
+  "e": 334.58,
+  "dur": 5,
+  "bg": {
+   "src": "img/e7hd_baalbek_03.jpg",
+   "kind": "img",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "bk",
+  "at": "mirar el triliton te produce algo fisico · relleno",
+  "s": 334.58,
+  "e": 338.18,
+  "dur": 3.6,
+  "bg": {
+   "src": "img/e7hd_baalbek_04.jpg",
+   "kind": "img",
+   "focus": "54% 56%",
+   "z": [
+    1.08,
+    1.2
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "bk",
+  "at": "mirar el triliton te produce algo fisico · relleno",
+  "s": 338.18,
+  "e": 340.68,
+  "dur": 2.5,
+  "bg": {
+   "src": "img/e7hd_baalbek_05.jpg",
+   "kind": "img",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "bk",
   "at": "la vas a necesitar en el bloque cuatro",
-  "s": 362.88,
+  "s": 340.68,
   "bg": {
    "src": "broll/e7hd_bk_ruins_dusk.mp4",
-   "from": 3.56,
+   "from": 4,
    "darken": 0.46
   },
   "ov": [],
-  "e": 368.17,
-  "dur": 5.29
+  "e": 345.23,
+  "dur": 4.55
  },
  {
   "bloque": "gz",
   "at": "guiza egipto",
-  "s": 368.17,
+  "s": 345.23,
   "bg": {
    "src": "broll/e7hd_gz_pyramids_air.mp4",
    "darken": 0.44
@@ -1405,25 +1294,25 @@ export const TIMELINE: Beat[] = [
     "coords": "29°58′N  31°08′E"
    }
   ],
-  "e": 370,
-  "dur": 1.83
+  "e": 346.6,
+  "dur": 1.37
  },
  {
   "bloque": "gz",
   "at": "la construccion mas medida de la historia",
-  "s": 370,
+  "s": 346.6,
   "bg": {
    "src": "broll/e7hd_gz_pyramids_air.mp4",
-   "from": 2.51
+   "from": 4
   },
   "ov": [],
-  "e": 376.34,
-  "dur": 6.34
+  "e": 352.27,
+  "dur": 5.67
  },
  {
   "bloque": "gz",
   "at": "dos millones trescientos mil bloques",
-  "s": 376.34,
+  "s": 352.27,
   "bg": {
    "src": "broll/e7hd_gz_pyramid_base.mp4"
   },
@@ -1435,13 +1324,13 @@ export const TIMELINE: Beat[] = [
     "kicker": "En una sola construcción"
    }
   ],
-  "e": 380.72,
-  "dur": 4.38
+  "e": 355.86,
+  "dur": 3.59
  },
  {
   "bloque": "gz",
   "at": "146 metros de altura original",
-  "s": 380.72,
+  "s": 355.86,
   "bg": {
    "src": "img/e7hd_giza_01.jpg",
    "kind": "img"
@@ -1453,22 +1342,22 @@ export const TIMELINE: Beat[] = [
     "label": "146 m · el edificio más alto durante 4.000 años"
    }
   ],
-  "e": 385.32,
+  "e": 360.46,
   "dur": 4.6
  },
  {
   "bloque": "gz",
   "at": "146 metros de altura original · relleno",
-  "s": 385.32,
-  "e": 391.74,
-  "dur": 6.42,
+  "s": 360.46,
+  "e": 363.68,
+  "dur": 3.22,
   "bg": {
    "src": "img/e7hd_giza_02.jpg",
    "kind": "img",
-   "focus": "46% 44%",
+   "focus": "52% 60%",
    "z": [
-    1.12,
-    1.02
+    1.04,
+    1.14
    ]
   },
   "ov": []
@@ -1476,20 +1365,20 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "el numero que importa no es ninguna de esas",
-  "s": 391.74,
+  "s": 363.68,
   "bg": {
    "src": "img/e7hd_giza_02.jpg",
    "kind": "img",
    "darken": 0.4
   },
   "ov": [],
-  "e": 398.61,
-  "dur": 6.87
+  "e": 368.59,
+  "dur": 4.91
  },
  {
   "bloque": "gz",
-  "at": "doscientos treinta metros de lado",
-  "s": 398.61,
+  "at": "la base mide 230 metros de lado",
+  "s": 368.59,
   "bg": {
    "src": "img/e7hd_giza_08.jpg",
    "kind": "img"
@@ -1502,16 +1391,16 @@ export const TIMELINE: Beat[] = [
     "dev": "2,1 cm"
    }
   ],
-  "e": 406.11,
-  "dur": 7.5
+  "e": 375.07,
+  "dur": 6.48
  },
  {
   "bloque": "gz",
-  "at": "dos coma un centimetros",
-  "s": 406.11,
+  "at": "desnivel maximo de 2 1 centimetros",
+  "s": 375.07,
   "bg": {
    "src": "broll/e7hd_gz_pyramid_base.mp4",
-   "from": 2.22
+   "from": 2.25
   },
   "ov": [
    {
@@ -1522,39 +1411,37 @@ export const TIMELINE: Beat[] = [
     "thousands": false
    }
   ],
-  "e": 410.71,
+  "e": 379.67,
   "dur": 4.6
  },
  {
   "bloque": "gz",
-  "at": "dos coma un centimetros · relleno",
-  "s": 410.71,
-  "e": 414.31,
-  "dur": 3.6,
+  "at": "desnivel maximo de 2 1 centimetros · relleno",
+  "s": 379.67,
+  "e": 385.87,
+  "dur": 6.2,
   "bg": {
-   "src": "img/e7hd_giza_02.jpg",
-   "kind": "img",
-   "focus": "54% 56%",
+   "src": "broll/e7hd_gz_concrete_pour.mp4",
+   "focus": "50% 50%",
    "z": [
-    1.08,
-    1.2
+    1.05,
+    1.16
    ]
   },
   "ov": []
  },
  {
   "bloque": "gz",
-  "at": "dos coma un centimetros · relleno",
-  "s": 414.31,
-  "e": 416.32,
-  "dur": 2.01,
+  "at": "desnivel maximo de 2 1 centimetros · relleno",
+  "s": 385.87,
+  "e": 390.51,
+  "dur": 4.64,
   "bg": {
-   "src": "img/e7hd_giza_03.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
+   "src": "broll/e7hd_gz_desert_sand.mp4",
+   "focus": "46% 44%",
    "z": [
-    1.16,
-    1.05
+    1.12,
+    1.02
    ]
   },
   "ov": []
@@ -1562,9 +1449,15 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "usamos un nivel laser rotativo",
-  "s": 416.32,
+  "s": 390.51,
   "bg": {
-   "src": "broll/e7hd_pro_survey.mp4"
+   "src": "img/e7hd_giza_07.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.06,
+    1.18
+   ]
   },
   "ov": [
    {
@@ -1579,13 +1472,29 @@ export const TIMELINE: Beat[] = [
     }
    }
   ],
-  "e": 429,
-  "dur": 12.68
+  "e": 401.51,
+  "dur": 11
+ },
+ {
+  "bloque": "gz",
+  "at": "usamos un nivel laser rotativo · relleno",
+  "s": 401.51,
+  "e": 404.07,
+  "dur": 2.56,
+  "bg": {
+   "src": "broll/e7hd_gz_concrete_pour.mp4",
+   "focus": "54% 56%",
+   "z": [
+    1.08,
+    1.2
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "gz",
   "at": "error de tres minutos de arco",
-  "s": 429,
+  "s": 404.07,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
    "from": 1,
@@ -1599,22 +1508,22 @@ export const TIMELINE: Beat[] = [
     "valor": "3′ de arco"
    }
   ],
-  "e": 433.6,
+  "e": 408.67,
   "dur": 4.6
  },
  {
   "bloque": "gz",
   "at": "error de tres minutos de arco · relleno",
-  "s": 433.6,
-  "e": 437.06,
-  "dur": 3.46,
+  "s": 408.67,
+  "e": 411.78,
+  "dur": 3.11,
   "bg": {
    "src": "img/e7hd_giza_02.jpg",
    "kind": "img",
-   "focus": "52% 60%",
+   "focus": "50% 40%",
    "z": [
-    1.04,
-    1.14
+    1.16,
+    1.05
    ]
   },
   "ov": []
@@ -1622,7 +1531,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "al norte verdadero",
-  "s": 437.06,
+  "s": 411.78,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
    "from": 4,
@@ -1639,13 +1548,36 @@ export const TIMELINE: Beat[] = [
     "rot": -2
    }
   ],
-  "e": 441.94,
-  "dur": 4.88
+  "e": 416.62,
+  "dur": 4.84
+ },
+ {
+  "bloque": "sq",
+  "at": "teoria uno canteria",
+  "s": 416.62,
+  "bg": {
+   "src": "broll/e7hd_sq_stone_hammer.mp4",
+   "darken": 0.46
+  },
+  "ov": [
+   {
+    "c": "TheoryCard",
+    "n": 1,
+    "titulo": "Piedras de río, paciencia y prueba y error",
+    "autor": "Jean-Pierre Protzen",
+    "anio": "1985",
+    "side": "left",
+    "sostiene": "Protzen se sentó con piedras de río frente a un bloque de andesita y reprodujo el acabado y el encaje. Quedó filmado.",
+    "hunde": "Resolvió el corte, no del todo el traslado. Ni cómo probaban el encaje de 125 toneladas sin poder levantarlas veinte veces."
+   }
+  ],
+  "e": 418.36,
+  "dur": 1.74
  },
  {
   "bloque": "gz",
-  "at": "teoria uno jean pierre houdin",
-  "s": 441.94,
+  "at": "jean pierre houdin 2007",
+  "s": 418.36,
   "bg": {
    "src": "img/e7hd_giza_02.jpg",
    "kind": "img",
@@ -1663,85 +1595,17 @@ export const TIMELINE: Beat[] = [
     "hunde": "Que haya un vacío no prueba que sea la rampa. Todavía no se entró."
    }
   ],
-  "e": 452.94,
+  "e": 429.36,
   "dur": 11
  },
  {
   "bloque": "gz",
-  "at": "teoria uno jean pierre houdin · relleno",
-  "s": 452.94,
-  "e": 459.14,
-  "dur": 6.2,
+  "at": "jean pierre houdin 2007 · relleno",
+  "s": 429.36,
+  "e": 434.96,
+  "dur": 5.6,
   "bg": {
    "src": "img/e7hd_giza_03.jpg",
-   "kind": "img",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "teoria uno jean pierre houdin · relleno",
-  "s": 459.14,
-  "e": 462.54,
-  "dur": 3.4,
-  "bg": {
-   "src": "img/e7hd_giza_04.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "teoria uno jean pierre houdin · relleno",
-  "s": 462.54,
-  "e": 471.04,
-  "dur": 8.5,
-  "bg": {
-   "src": "img/e7hd_giza_05.jpg",
-   "kind": "img",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "teoria uno jean pierre houdin · relleno",
-  "s": 471.04,
-  "e": 475.84,
-  "dur": 4.8,
-  "bg": {
-   "src": "img/e7hd_giza_06.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "teoria uno jean pierre houdin · relleno",
-  "s": 475.84,
-  "e": 479.15,
-  "dur": 3.31,
-  "bg": {
-   "src": "img/e7hd_giza_07.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -1753,24 +1617,108 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
+  "at": "jean pierre houdin 2007 · relleno",
+  "s": 434.96,
+  "e": 438.16,
+  "dur": 3.2,
+  "bg": {
+   "src": "img/e7hd_giza_04.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
+  "at": "jean pierre houdin 2007 · relleno",
+  "s": 438.16,
+  "e": 443.16,
+  "dur": 5,
+  "bg": {
+   "src": "img/e7hd_giza_05.jpg",
+   "kind": "img",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
+  "at": "jean pierre houdin 2007 · relleno",
+  "s": 443.16,
+  "e": 446.76,
+  "dur": 3.6,
+  "bg": {
+   "src": "img/e7hd_giza_06.jpg",
+   "kind": "img",
+   "focus": "54% 56%",
+   "z": [
+    1.08,
+    1.2
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
+  "at": "jean pierre houdin 2007 · relleno",
+  "s": 446.76,
+  "e": 449.75,
+  "dur": 2.99,
+  "bg": {
+   "src": "img/e7hd_giza_07.jpg",
+   "kind": "img",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
   "at": "detectores de muones",
-  "s": 479.15,
+  "s": 449.75,
   "bg": {
    "src": "img/e7hd_giza_05.jpg",
    "kind": "img"
   },
   "ov": [],
-  "e": 483.75,
+  "e": 454.35,
   "dur": 4.6
  },
  {
   "bloque": "gz",
   "at": "detectores de muones · relleno",
-  "s": 483.75,
-  "e": 486.95,
-  "dur": 3.2,
+  "s": 454.35,
+  "e": 458.55,
+  "dur": 4.2,
   "bg": {
    "src": "broll/e7hd_gz_concrete_pour.mp4",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
+  "at": "detectores de muones · relleno",
+  "s": 458.55,
+  "e": 464.75,
+  "dur": 6.2,
+  "bg": {
+   "src": "broll/e7hd_gz_desert_sand.mp4",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -1782,11 +1730,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "detectores de muones · relleno",
-  "s": 486.95,
-  "e": 491.95,
-  "dur": 5,
+  "s": 464.75,
+  "e": 468.92,
+  "dur": 4.17,
   "bg": {
-   "src": "broll/e7hd_gz_desert_sand.mp4",
+   "src": "broll/e7hd_gz_limestone_mac.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -1797,40 +1745,8 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
-  "at": "detectores de muones · relleno",
-  "s": 491.95,
-  "e": 495.55,
-  "dur": 3.6,
-  "bg": {
-   "src": "broll/e7hd_gz_limestone_mac.mp4",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "detectores de muones · relleno",
-  "s": 495.55,
-  "e": 502.67,
-  "dur": 7.12,
-  "bg": {
-   "src": "broll/e7hd_gz_pyramids_air.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
   "at": "joseph davidovits",
-  "s": 502.67,
+  "s": 468.92,
   "bg": {
    "src": "broll/e7hd_gz_concrete_pour.mp4",
    "darken": 0.46
@@ -1846,68 +1762,17 @@ export const TIMELINE: Beat[] = [
     "hunde": "La mayoría de los geólogos ve caliza natural con fósiles orientados al azar, igual que la cantera de al lado. Y esa cantera está ahí."
    }
   ],
-  "e": 513.67,
+  "e": 479.92,
   "dur": 11
  },
  {
   "bloque": "gz",
   "at": "joseph davidovits · relleno",
-  "s": 513.67,
-  "e": 517.87,
-  "dur": 4.2,
+  "s": 479.92,
+  "e": 488.42,
+  "dur": 8.5,
   "bg": {
    "src": "img/e7hd_giza_02.jpg",
-   "kind": "img",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "joseph davidovits · relleno",
-  "s": 517.87,
-  "e": 524.07,
-  "dur": 6.2,
-  "bg": {
-   "src": "img/e7hd_giza_03.jpg",
-   "kind": "img",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "joseph davidovits · relleno",
-  "s": 524.07,
-  "e": 527.47,
-  "dur": 3.4,
-  "bg": {
-   "src": "img/e7hd_giza_04.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "joseph davidovits · relleno",
-  "s": 527.47,
-  "e": 530.4,
-  "dur": 2.93,
-  "bg": {
-   "src": "img/e7hd_giza_05.jpg",
    "kind": "img",
    "focus": "54% 56%",
    "z": [
@@ -1919,33 +1784,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos",
-  "s": 530.4,
-  "bg": {
-   "src": "broll/e7hd_gz_limestone_mac.mp4"
-  },
-  "ov": [
-   {
-    "c": "Stamp",
-    "text": "Hormigón, 4.500 años antes",
-    "color": "RED",
-    "x": 900,
-    "y": 240,
-    "rot": -4,
-    "big": true
-   }
-  ],
-  "e": 535,
-  "dur": 4.6
- },
- {
-  "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos · relleno",
-  "s": 535,
-  "e": 539.8,
+  "at": "joseph davidovits · relleno",
+  "s": 488.42,
+  "e": 493.22,
   "dur": 4.8,
   "bg": {
-   "src": "img/e7hd_giza_02.jpg",
+   "src": "img/e7hd_giza_03.jpg",
    "kind": "img",
    "focus": "50% 40%",
    "z": [
@@ -1957,12 +1801,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos · relleno",
-  "s": 539.8,
-  "e": 545.4,
+  "at": "joseph davidovits · relleno",
+  "s": 493.22,
+  "e": 498.82,
   "dur": 5.6,
   "bg": {
-   "src": "img/e7hd_giza_03.jpg",
+   "src": "img/e7hd_giza_04.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -1974,12 +1818,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos · relleno",
-  "s": 545.4,
-  "e": 548.6,
+  "at": "joseph davidovits · relleno",
+  "s": 498.82,
+  "e": 502.02,
   "dur": 3.2,
   "bg": {
-   "src": "img/e7hd_giza_04.jpg",
+   "src": "img/e7hd_giza_05.jpg",
    "kind": "img",
    "focus": "50% 50%",
    "z": [
@@ -1991,30 +1835,30 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos · relleno",
-  "s": 548.6,
-  "e": 553.6,
+  "at": "joseph davidovits · relleno",
+  "s": 502.02,
+  "e": 507.02,
   "dur": 5,
-  "bg": {
-   "src": "img/e7hd_giza_05.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos · relleno",
-  "s": 553.6,
-  "e": 557.2,
-  "dur": 3.6,
   "bg": {
    "src": "img/e7hd_giza_06.jpg",
    "kind": "img",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
+  "at": "joseph davidovits · relleno",
+  "s": 507.02,
+  "e": 510.62,
+  "dur": 3.6,
+  "bg": {
+   "src": "img/e7hd_giza_07.jpg",
+   "kind": "img",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -2025,12 +1869,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos · relleno",
-  "s": 557.2,
-  "e": 564.7,
+  "at": "joseph davidovits · relleno",
+  "s": 510.62,
+  "e": 518.12,
   "dur": 7.5,
   "bg": {
-   "src": "img/e7hd_giza_07.jpg",
+   "src": "img/e7hd_giza_08.jpg",
    "kind": "img",
    "focus": "50% 40%",
    "z": [
@@ -2042,17 +1886,48 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gz",
-  "at": "hormigon cuatro mil quinientos anos · relleno",
-  "s": 564.7,
-  "e": 570,
-  "dur": 5.3,
+  "at": "joseph davidovits · relleno",
+  "s": 518.12,
+  "e": 522.32,
+  "dur": 4.2,
   "bg": {
-   "src": "img/e7hd_giza_08.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_gz_concrete_pour.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
     1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
+  "at": "joseph davidovits · relleno",
+  "s": 522.32,
+  "e": 528.52,
+  "dur": 6.2,
+  "bg": {
+   "src": "broll/e7hd_gz_desert_sand.mp4",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gz",
+  "at": "joseph davidovits · relleno",
+  "s": 528.52,
+  "e": 530.53,
+  "dur": 2.01,
+  "bg": {
+   "src": "broll/e7hd_gz_limestone_mac.mp4",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
    ]
   },
   "ov": []
@@ -2060,7 +1935,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "christopher dunn",
-  "s": 570,
+  "s": 530.53,
   "bg": {
    "src": "img/e7hd_giza_06.jpg",
    "kind": "img",
@@ -2078,49 +1953,17 @@ export const TIMELINE: Beat[] = [
     "hunde": "No apareció maquinaria, ni conducción, ni un texto egipcio sobre energía. Sí aparecieron textos funerarios y el nombre de Keops escrito por los obreros."
    }
   ],
-  "e": 581,
+  "e": 541.53,
   "dur": 11
  },
  {
   "bloque": "gz",
   "at": "christopher dunn · relleno",
-  "s": 581,
-  "e": 587.2,
-  "dur": 6.2,
-  "bg": {
-   "src": "broll/e7hd_gz_concrete_pour.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "christopher dunn · relleno",
-  "s": 587.2,
-  "e": 590.6,
-  "dur": 3.4,
-  "bg": {
-   "src": "broll/e7hd_gz_desert_sand.mp4",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gz",
-  "at": "christopher dunn · relleno",
-  "s": 590.6,
-  "e": 599.1,
+  "s": 541.53,
+  "e": 550.03,
   "dur": 8.5,
   "bg": {
-   "src": "broll/e7hd_gz_limestone_mac.mp4",
+   "src": "broll/e7hd_gz_concrete_pour.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -2132,11 +1975,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "christopher dunn · relleno",
-  "s": 599.1,
-  "e": 603.9,
+  "s": 550.03,
+  "e": 554.83,
   "dur": 4.8,
   "bg": {
-   "src": "broll/e7hd_gz_pyramids_air.mp4",
+   "src": "broll/e7hd_gz_desert_sand.mp4",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -2148,11 +1991,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "christopher dunn · relleno",
-  "s": 603.9,
-  "e": 609.5,
+  "s": 554.83,
+  "e": 560.43,
   "dur": 5.6,
   "bg": {
-   "src": "broll/e7hd_gz_pyramid_base.mp4",
+   "src": "broll/e7hd_gz_limestone_mac.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -2164,11 +2007,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "christopher dunn · relleno",
-  "s": 609.5,
-  "e": 612.7,
+  "s": 560.43,
+  "e": 563.63,
   "dur": 3.2,
   "bg": {
-   "src": "broll/e7hd_gz_star_north.mp4",
+   "src": "broll/e7hd_gz_pyramids_air.mp4",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -2180,12 +2023,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "christopher dunn · relleno",
-  "s": 612.7,
-  "e": 617.7,
+  "s": 563.63,
+  "e": 568.63,
   "dur": 5,
   "bg": {
-   "src": "img/e7hd_giza_01.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_gz_pyramid_base.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -2197,12 +2039,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "christopher dunn · relleno",
-  "s": 617.7,
-  "e": 621.3,
+  "s": 568.63,
+  "e": 572.23,
   "dur": 3.6,
   "bg": {
-   "src": "img/e7hd_giza_02.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_gz_star_north.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -2214,11 +2055,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "christopher dunn · relleno",
-  "s": 621.3,
-  "e": 624.84,
-  "dur": 3.54,
+  "s": 572.23,
+  "e": 580.48,
+  "dur": 8.25,
   "bg": {
-   "src": "img/e7hd_giza_03.jpg",
+   "src": "img/e7hd_giza_01.jpg",
    "kind": "img",
    "focus": "50% 40%",
    "z": [
@@ -2231,7 +2072,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gz",
   "at": "el nombre de keops escrito por los obreros",
-  "s": 624.84,
+  "s": 580.48,
   "bg": {
    "src": "img/e7hd_giza_02.jpg",
    "kind": "img",
@@ -2241,13 +2082,13 @@ export const TIMELINE: Beat[] = [
    ]
   },
   "ov": [],
-  "e": 630.38,
-  "dur": 5.54
+  "e": 585.1,
+  "dur": 4.62
  },
  {
   "bloque": "sq",
   "at": "cusco peru",
-  "s": 630.38,
+  "s": 585.1,
   "bg": {
    "src": "broll/e7hd_sq_andes_terraces.mp4",
    "darken": 0.44
@@ -2261,36 +2102,53 @@ export const TIMELINE: Beat[] = [
     "coords": "13°30′S  71°58′O"
    }
   ],
-  "e": 631,
-  "dur": 0.62
+  "e": 590.2,
+  "dur": 5.1
  },
  {
   "bloque": "sq",
-  "at": "tres mil cuatrocientos metros de altura",
-  "s": 631,
+  "at": "3400 metros de altura",
+  "s": 590.2,
   "bg": {
    "src": "broll/e7hd_sq_andean_grass.mp4"
   },
   "ov": [],
-  "e": 635.97,
-  "dur": 4.97
+  "e": 592.55,
+  "dur": 2.35
  },
  {
   "bloque": "sq",
   "at": "tres murallas en zigzag",
-  "s": 635.97,
+  "s": 592.55,
   "bg": {
    "src": "img/e7hd_sacsay_01.jpg",
    "kind": "img"
   },
   "ov": [],
-  "e": 643.16,
-  "dur": 7.19
+  "e": 597.15,
+  "dur": 4.6
  },
  {
   "bloque": "sq",
-  "at": "ciento veinticinco toneladas",
-  "s": 643.16,
+  "at": "tres murallas en zigzag · relleno",
+  "s": 597.15,
+  "e": 601,
+  "dur": 3.85,
+  "bg": {
+   "src": "img/e7hd_sacsay_03.jpg",
+   "kind": "img",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "sq",
+  "at": "andesita de hasta 125 toneladas",
+  "s": 601,
   "bg": {
    "src": "img/e7hd_sacsay_02.jpg",
    "kind": "img",
@@ -2307,13 +2165,13 @@ export const TIMELINE: Beat[] = [
     "kicker": "El bloque más grande del muro"
    }
   ],
-  "e": 644.23,
-  "dur": 1.07
+  "e": 604.48,
+  "dur": 3.48
  },
  {
   "bloque": "sq",
   "at": "ninguno es igual a otro",
-  "s": 644.23,
+  "s": 604.48,
   "bg": {
    "src": "img/e7hd_sacsay_03.jpg",
    "kind": "img"
@@ -2325,30 +2183,13 @@ export const TIMELINE: Beat[] = [
     "main": "No hay dos piedras iguales"
    }
   ],
-  "e": 648.83,
-  "dur": 4.6
+  "e": 611.61,
+  "dur": 7.13
  },
  {
   "bloque": "sq",
-  "at": "ninguno es igual a otro · relleno",
-  "s": 648.83,
-  "e": 652.67,
-  "dur": 3.84,
-  "bg": {
-   "src": "img/e7hd_sacsay_04.jpg",
-   "kind": "img",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "sq",
-  "at": "entre ocho y doce caras",
-  "s": 652.67,
+  "at": "cada una tiene entre 8 y 12 caras",
+  "s": 611.61,
   "bg": {
    "src": "img/e7hd_sacsay_05.jpg",
    "kind": "img",
@@ -2365,13 +2206,13 @@ export const TIMELINE: Beat[] = [
     "r": 170
    }
   ],
-  "e": 658.73,
-  "dur": 6.06
+  "e": 618.28,
+  "dur": 6.67
  },
  {
   "bloque": "sq",
   "at": "sin cemento sin argamasa",
-  "s": 658.73,
+  "s": 618.28,
   "bg": {
    "src": "broll/e7hd_sq_cusco_walls.mp4"
   },
@@ -2386,13 +2227,13 @@ export const TIMELINE: Beat[] = [
     "big": true
    }
   ],
-  "e": 662,
-  "dur": 3.27
+  "e": 625.32,
+  "dur": 7.04
  },
  {
   "bloque": "sq",
   "at": "sin una sola linea recta",
-  "s": 662,
+  "s": 625.32,
   "bg": {
    "src": "img/e7hd_sacsay_05.jpg",
    "kind": "img"
@@ -2408,27 +2249,27 @@ export const TIMELINE: Beat[] = [
     "big": true
    }
   ],
-  "e": 667.28,
-  "dur": 5.28
+  "e": 631.78,
+  "dur": 6.46
  },
  {
   "bloque": "sq",
   "at": "cuando hay un terremoto",
-  "s": 667.28,
+  "s": 631.78,
   "bg": {
    "src": "broll/e7hd_sq_earthquake.mp4",
    "darken": 0.4
   },
   "ov": [],
-  "e": 671.88,
+  "e": 636.38,
   "dur": 4.6
  },
  {
   "bloque": "sq",
   "at": "cuando hay un terremoto · relleno",
-  "s": 671.88,
-  "e": 677.43,
-  "dur": 5.55,
+  "s": 636.38,
+  "e": 641.26,
+  "dur": 4.88,
   "bg": {
    "src": "img/e7hd_sacsay_03.jpg",
    "kind": "img",
@@ -2443,7 +2284,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "vuelven a su lugar",
-  "s": 677.43,
+  "s": 641.26,
   "bg": {
    "src": "img/e7hd_sacsay_03.jpg",
    "kind": "img"
@@ -2461,40 +2302,18 @@ export const TIMELINE: Beat[] = [
     }
    }
   ],
-  "e": 682.65,
-  "dur": 5.22
- },
- {
-  "bloque": "sq",
-  "at": "teoria uno canteria",
-  "s": 682.65,
-  "bg": {
-   "src": "broll/e7hd_sq_stone_hammer.mp4",
-   "darken": 0.46
-  },
-  "ov": [
-   {
-    "c": "TheoryCard",
-    "n": 1,
-    "titulo": "Piedras de río, paciencia y prueba y error",
-    "autor": "Jean-Pierre Protzen",
-    "anio": "1985",
-    "side": "left",
-    "sostiene": "Protzen se sentó con piedras de río frente a un bloque de andesita y reprodujo el acabado y el encaje. Quedó filmado.",
-    "hunde": "Resolvió el corte, no del todo el traslado. Ni cómo probaban el encaje de 125 toneladas sin poder levantarlas veinte veces."
-   }
-  ],
-  "e": 693.65,
+  "e": 652.26,
   "dur": 11
  },
  {
   "bloque": "sq",
-  "at": "teoria uno canteria · relleno",
-  "s": 693.65,
-  "e": 697.05,
+  "at": "vuelven a su lugar · relleno",
+  "s": 652.26,
+  "e": 655.66,
   "dur": 3.4,
   "bg": {
-   "src": "broll/e7hd_sq_andes_terraces.mp4",
+   "src": "img/e7hd_sacsay_01.jpg",
+   "kind": "img",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -2505,12 +2324,13 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "sq",
-  "at": "teoria uno canteria · relleno",
-  "s": 697.05,
-  "e": 705.55,
+  "at": "vuelven a su lugar · relleno",
+  "s": 655.66,
+  "e": 664.16,
   "dur": 8.5,
   "bg": {
-   "src": "broll/e7hd_sq_cusco_walls.mp4",
+   "src": "img/e7hd_sacsay_02.jpg",
+   "kind": "img",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -2521,66 +2341,17 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "sq",
-  "at": "teoria uno canteria · relleno",
-  "s": 705.55,
-  "e": 710.35,
-  "dur": 4.8,
+  "at": "vuelven a su lugar · relleno",
+  "s": 664.16,
+  "e": 668.73,
+  "dur": 4.57,
   "bg": {
-   "src": "broll/e7hd_sq_earthquake.mp4",
+   "src": "img/e7hd_sacsay_03.jpg",
+   "kind": "img",
    "focus": "50% 40%",
    "z": [
     1.16,
     1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "sq",
-  "at": "teoria uno canteria · relleno",
-  "s": 710.35,
-  "e": 715.95,
-  "dur": 5.6,
-  "bg": {
-   "src": "broll/e7hd_sq_stone_hammer.mp4",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "sq",
-  "at": "teoria uno canteria · relleno",
-  "s": 715.95,
-  "e": 719.15,
-  "dur": 3.2,
-  "bg": {
-   "src": "img/e7hd_sacsay_01.jpg",
-   "kind": "img",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "sq",
-  "at": "teoria uno canteria · relleno",
-  "s": 719.15,
-  "e": 722,
-  "dur": 2.85,
-  "bg": {
-   "src": "img/e7hd_sacsay_02.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
    ]
   },
   "ov": []
@@ -2588,57 +2359,23 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "lo trabajo reprodujo el acabado",
-  "s": 722,
+  "s": 668.73,
   "bg": {
    "src": "broll/e7hd_sq_stone_hammer.mp4",
    "from": 4
   },
   "ov": [],
-  "e": 726.6,
+  "e": 673.33,
   "dur": 4.6
  },
  {
   "bloque": "sq",
   "at": "lo trabajo reprodujo el acabado · relleno",
-  "s": 726.6,
-  "e": 730.2,
-  "dur": 3.6,
+  "s": 673.33,
+  "e": 678.93,
+  "dur": 5.6,
   "bg": {
    "src": "img/e7hd_sacsay_04.jpg",
-   "kind": "img",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "sq",
-  "at": "lo trabajo reprodujo el acabado · relleno",
-  "s": 730.2,
-  "e": 737.7,
-  "dur": 7.5,
-  "bg": {
-   "src": "img/e7hd_sacsay_05.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "sq",
-  "at": "lo trabajo reprodujo el acabado · relleno",
-  "s": 737.7,
-  "e": 741.9,
-  "dur": 4.2,
-  "bg": {
-   "src": "img/e7hd_sacsay_06.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -2651,11 +2388,12 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "lo trabajo reprodujo el acabado · relleno",
-  "s": 741.9,
-  "e": 748.1,
-  "dur": 6.2,
+  "s": 678.93,
+  "e": 682.13,
+  "dur": 3.2,
   "bg": {
-   "src": "broll/e7hd_sq_andean_grass.mp4",
+   "src": "img/e7hd_sacsay_05.jpg",
+   "kind": "img",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -2667,11 +2405,12 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "lo trabajo reprodujo el acabado · relleno",
-  "s": 748.1,
-  "e": 752.28,
-  "dur": 4.18,
+  "s": 682.13,
+  "e": 687.13,
+  "dur": 5,
   "bg": {
-   "src": "broll/e7hd_sq_andes_terraces.mp4",
+   "src": "img/e7hd_sacsay_06.jpg",
+   "kind": "img",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -2682,40 +2421,64 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "sq",
-  "at": "teoria dos y esta es preciosa",
-  "s": 752.28,
+  "at": "lo trabajo reprodujo el acabado · relleno",
+  "s": 687.13,
+  "e": 690.73,
+  "dur": 3.6,
   "bg": {
    "src": "broll/e7hd_sq_andean_grass.mp4",
-   "from": 0,
-   "darken": 0.44
-  },
-  "ov": [
-   {
-    "c": "TheoryCard",
-    "n": 2,
-    "titulo": "La hierba que ablanda la roca",
-    "autor": "Crónicas coloniales · tradición oral",
-    "anio": "siglo XVI –",
-    "sostiene": "Aparece en fuentes independientes de distintos siglos y la gente del lugar todavía la repite. Y las piedras parecen amasadas, no cortadas.",
-    "hunde": "Nunca se identificó la planta. Nunca se reprodujo el efecto en un laboratorio. Ni una vez."
-   }
-  ],
-  "e": 763.28,
-  "dur": 11
- },
- {
-  "bloque": "sq",
-  "at": "teoria dos y esta es preciosa · relleno",
-  "s": 763.28,
-  "e": 766.67,
-  "dur": 3.39,
-  "bg": {
-   "src": "img/e7hd_sacsay_01.jpg",
-   "kind": "img",
    "focus": "54% 56%",
    "z": [
     1.08,
     1.2
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "sq",
+  "at": "lo trabajo reprodujo el acabado · relleno",
+  "s": 690.73,
+  "e": 698.23,
+  "dur": 7.5,
+  "bg": {
+   "src": "broll/e7hd_sq_andes_terraces.mp4",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "sq",
+  "at": "lo trabajo reprodujo el acabado · relleno",
+  "s": 698.23,
+  "e": 702.43,
+  "dur": 4.2,
+  "bg": {
+   "src": "broll/e7hd_sq_cusco_walls.mp4",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "sq",
+  "at": "lo trabajo reprodujo el acabado · relleno",
+  "s": 702.43,
+  "e": 708.42,
+  "dur": 5.99,
+  "bg": {
+   "src": "broll/e7hd_sq_earthquake.mp4",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
    ]
   },
   "ov": []
@@ -2723,23 +2486,56 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito",
-  "s": 766.67,
+  "s": 708.42,
   "bg": {
    "src": "broll/e7hd_sq_andean_grass.mp4",
-   "from": 0.78
+   "from": 0.81
   },
   "ov": [],
-  "e": 771.27,
+  "e": 713.02,
   "dur": 4.6
  },
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 771.27,
-  "e": 776.07,
-  "dur": 4.8,
+  "s": 713.02,
+  "e": 716.42,
+  "dur": 3.4,
   "bg": {
    "src": "broll/e7hd_sq_earthquake.mp4",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "sq",
+  "at": "le dicen pito · relleno",
+  "s": 716.42,
+  "e": 724.92,
+  "dur": 8.5,
+  "bg": {
+   "src": "broll/e7hd_sq_stone_hammer.mp4",
+   "focus": "54% 56%",
+   "z": [
+    1.08,
+    1.2
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "sq",
+  "at": "le dicen pito · relleno",
+  "s": 724.92,
+  "e": 729.72,
+  "dur": 4.8,
+  "bg": {
+   "src": "img/e7hd_sacsay_01.jpg",
+   "kind": "img",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -2751,11 +2547,12 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 776.07,
-  "e": 781.67,
+  "s": 729.72,
+  "e": 735.32,
   "dur": 5.6,
   "bg": {
-   "src": "broll/e7hd_sq_stone_hammer.mp4",
+   "src": "img/e7hd_sacsay_02.jpg",
+   "kind": "img",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -2767,11 +2564,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 781.67,
-  "e": 784.87,
+  "s": 735.32,
+  "e": 738.52,
   "dur": 3.2,
   "bg": {
-   "src": "img/e7hd_sacsay_01.jpg",
+   "src": "img/e7hd_sacsay_03.jpg",
    "kind": "img",
    "focus": "50% 50%",
    "z": [
@@ -2784,11 +2581,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 784.87,
-  "e": 789.87,
+  "s": 738.52,
+  "e": 743.52,
   "dur": 5,
   "bg": {
-   "src": "img/e7hd_sacsay_02.jpg",
+   "src": "img/e7hd_sacsay_04.jpg",
    "kind": "img",
    "focus": "46% 44%",
    "z": [
@@ -2801,11 +2598,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 789.87,
-  "e": 793.47,
+  "s": 743.52,
+  "e": 747.12,
   "dur": 3.6,
   "bg": {
-   "src": "img/e7hd_sacsay_03.jpg",
+   "src": "img/e7hd_sacsay_05.jpg",
    "kind": "img",
    "focus": "54% 56%",
    "z": [
@@ -2818,11 +2615,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 793.47,
-  "e": 800.97,
+  "s": 747.12,
+  "e": 754.62,
   "dur": 7.5,
   "bg": {
-   "src": "img/e7hd_sacsay_04.jpg",
+   "src": "img/e7hd_sacsay_06.jpg",
    "kind": "img",
    "focus": "50% 40%",
    "z": [
@@ -2835,12 +2632,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 800.97,
-  "e": 805.17,
+  "s": 754.62,
+  "e": 758.82,
   "dur": 4.2,
   "bg": {
-   "src": "img/e7hd_sacsay_05.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_sq_andean_grass.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -2852,12 +2648,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "le dicen pito · relleno",
-  "s": 805.17,
-  "e": 811.12,
-  "dur": 5.95,
+  "s": 758.82,
+  "e": 760.59,
+  "dur": 1.77,
   "bg": {
-   "src": "img/e7hd_sacsay_06.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_sq_andes_terraces.mp4",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -2869,7 +2664,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "sq",
   "at": "mira bien los bordes",
-  "s": 811.12,
+  "s": 760.59,
   "bg": {
    "src": "img/e7hd_sacsay_05.jpg",
    "kind": "img",
@@ -2887,13 +2682,47 @@ export const TIMELINE: Beat[] = [
     "r": 200
    }
   ],
-  "e": 817.99,
-  "dur": 6.87
+  "e": 765.19,
+  "dur": 4.6
+ },
+ {
+  "bloque": "sq",
+  "at": "mira bien los bordes · relleno",
+  "s": 765.19,
+  "e": 768.59,
+  "dur": 3.4,
+  "bg": {
+   "src": "img/e7hd_sacsay_04.jpg",
+   "kind": "img",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "sq",
+  "at": "mira bien los bordes · relleno",
+  "s": 768.59,
+  "e": 770.99,
+  "dur": 2.4,
+  "bg": {
+   "src": "img/e7hd_sacsay_05.jpg",
+   "kind": "img",
+   "focus": "54% 56%",
+   "z": [
+    1.08,
+    1.2
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "pp",
   "at": "tiahuanaco bolivia",
-  "s": 817.99,
+  "s": 770.99,
   "bg": {
    "src": "broll/e7hd_pp_altiplano.mp4",
    "darken": 0.44
@@ -2907,48 +2736,32 @@ export const TIMELINE: Beat[] = [
     "coords": "16°33′S  68°40′O"
    }
   ],
-  "e": 819,
-  "dur": 1.01
+  "e": 772.48,
+  "dur": 1.49
  },
  {
   "bloque": "pp",
   "at": "cerca del lago titicaca",
-  "s": 819,
+  "s": 772.48,
   "bg": {
    "src": "broll/e7hd_pp_titicaca.mp4"
   },
   "ov": [],
-  "e": 823.6,
+  "e": 777.08,
   "dur": 4.6
  },
  {
   "bloque": "pp",
   "at": "cerca del lago titicaca · relleno",
-  "s": 823.6,
-  "e": 827,
-  "dur": 3.4,
+  "s": 777.08,
+  "e": 782.86,
+  "dur": 5.78,
   "bg": {
    "src": "broll/e7hd_pp_andesite.mp4",
-   "focus": "46% 44%",
+   "focus": "50% 40%",
    "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "cerca del lago titicaca · relleno",
-  "s": 827,
-  "e": 830.67,
-  "dur": 3.67,
-  "bg": {
-   "src": "broll/e7hd_pp_precision.mp4",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
+    1.16,
+    1.05
    ]
   },
   "ov": []
@@ -2956,20 +2769,20 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pp",
   "at": "el sitio que mas discusiones genera",
-  "s": 830.67,
+  "s": 782.86,
   "bg": {
    "src": "img/e7hd_pumapunku_03.jpg",
    "kind": "img",
    "darken": 0.4
   },
   "ov": [],
-  "e": 836.35,
-  "dur": 5.68
+  "e": 785.99,
+  "dur": 3.13
  },
  {
   "bloque": "pp",
   "at": "aca el problema no es el tamano",
-  "s": 836.35,
+  "s": 785.99,
   "bg": {
    "src": "img/e7hd_pumapunku_04.jpg",
    "kind": "img"
@@ -3003,34 +2816,17 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 840.95,
+  "e": 790.59,
   "dur": 4.6
  },
  {
   "bloque": "pp",
   "at": "aca el problema no es el tamano · relleno",
-  "s": 840.95,
-  "e": 845.75,
-  "dur": 4.8,
+  "s": 790.59,
+  "e": 796.19,
+  "dur": 5.6,
   "bg": {
    "src": "img/e7hd_pumapunku_03.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "aca el problema no es el tamano · relleno",
-  "s": 845.75,
-  "e": 849.48,
-  "dur": 3.73,
-  "bg": {
-   "src": "img/e7hd_pumapunku_04.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -3042,8 +2838,25 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pp",
+  "at": "aca el problema no es el tamano · relleno",
+  "s": 796.19,
+  "e": 800.05,
+  "dur": 3.86,
+  "bg": {
+   "src": "img/e7hd_pumapunku_04.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pp",
   "at": "los llaman bloques en h",
-  "s": 849.48,
+  "s": 800.05,
   "bg": {
    "src": "img/e7hd_pumapunku_06.jpg",
    "kind": "img",
@@ -3059,13 +2872,13 @@ export const TIMELINE: Beat[] = [
     "main": "Los bloques en H"
    }
   ],
-  "e": 855.68,
-  "dur": 6.2
+  "e": 805.36,
+  "dur": 5.31
  },
  {
   "bloque": "pp",
   "at": "angulos internos de noventa grados",
-  "s": 855.68,
+  "s": 805.36,
   "bg": {
    "src": "broll/e7hd_pp_andesite.mp4"
   },
@@ -3077,13 +2890,13 @@ export const TIMELINE: Beat[] = [
     "r": 175
    }
   ],
-  "e": 860.67,
-  "dur": 4.99
+  "e": 809.16,
+  "dur": 3.8
  },
  {
   "bloque": "pp",
   "at": "apoyas una regla y no pasa la luz",
-  "s": 860.67,
+  "s": 809.16,
   "bg": {
    "src": "img/e7hd_pumapunku_06.jpg",
    "kind": "img",
@@ -3094,13 +2907,29 @@ export const TIMELINE: Beat[] = [
    ]
   },
   "ov": [],
-  "e": 866.44,
-  "dur": 5.77
+  "e": 813.76,
+  "dur": 4.6
+ },
+ {
+  "bloque": "pp",
+  "at": "apoyas una regla y no pasa la luz · relleno",
+  "s": 813.76,
+  "e": 817.44,
+  "dur": 3.68,
+  "bg": {
+   "src": "broll/e7hd_pp_andesite.mp4",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "pp",
   "at": "como si salieran de un molde",
-  "s": 866.44,
+  "s": 817.44,
   "bg": {
    "src": "broll/e7hd_pp_precision.mp4",
    "darken": 0.42
@@ -3116,16 +2945,33 @@ export const TIMELINE: Beat[] = [
     "big": true
    }
   ],
-  "e": 873,
-  "dur": 6.56
+  "e": 822.04,
+  "dur": 4.6
+ },
+ {
+  "bloque": "pp",
+  "at": "como si salieran de un molde · relleno",
+  "s": 822.04,
+  "e": 826.44,
+  "dur": 4.4,
+  "bg": {
+   "src": "img/e7hd_pumapunku_02.jpg",
+   "kind": "img",
+   "focus": "54% 56%",
+   "z": [
+    1.08,
+    1.2
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "pp",
   "at": "la datacion oficial",
-  "s": 873,
+  "s": 826.44,
   "bg": {
    "src": "broll/e7hd_pp_altiplano.mp4",
-   "from": 0,
+   "from": 4,
    "darken": 0.48
   },
   "ov": [
@@ -3140,17 +2986,50 @@ export const TIMELINE: Beat[] = [
     "hunde": "Nada serio. Es la datación que usa la arqueología."
    }
   ],
-  "e": 884,
+  "e": 837.44,
   "dur": 11
  },
  {
   "bloque": "pp",
   "at": "la datacion oficial · relleno",
-  "s": 884,
-  "e": 887.2,
-  "dur": 3.2,
+  "s": 837.44,
+  "e": 844.94,
+  "dur": 7.5,
   "bg": {
    "src": "broll/e7hd_pp_sand_abrasive.mp4",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pp",
+  "at": "la datacion oficial · relleno",
+  "s": 844.94,
+  "e": 849.14,
+  "dur": 4.2,
+  "bg": {
+   "src": "broll/e7hd_pp_titicaca.mp4",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pp",
+  "at": "la datacion oficial · relleno",
+  "s": 849.14,
+  "e": 855.34,
+  "dur": 6.2,
+  "bg": {
+   "src": "img/e7hd_pumapunku_01.jpg",
+   "kind": "img",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -3162,11 +3041,12 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pp",
   "at": "la datacion oficial · relleno",
-  "s": 887.2,
-  "e": 892.2,
-  "dur": 5,
+  "s": 855.34,
+  "e": 857.08,
+  "dur": 1.74,
   "bg": {
-   "src": "broll/e7hd_pp_titicaca.mp4",
+   "src": "img/e7hd_pumapunku_02.jpg",
+   "kind": "img",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -3177,45 +3057,11 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pp",
-  "at": "la datacion oficial · relleno",
-  "s": 892.2,
-  "e": 895.8,
-  "dur": 3.6,
-  "bg": {
-   "src": "img/e7hd_pumapunku_01.jpg",
-   "kind": "img",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "la datacion oficial · relleno",
-  "s": 895.8,
-  "e": 903,
-  "dur": 7.2,
-  "bg": {
-   "src": "img/e7hd_pumapunku_02.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
   "at": "arthur posnansky",
-  "s": 903,
+  "s": 857.08,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
-   "from": 0,
+   "from": 1.38,
    "darken": 0.12,
    "vig": 0.08
   },
@@ -3230,37 +3076,21 @@ export const TIMELINE: Beat[] = [
     "hunde": "Que algo esté alineado no prueba cuándo se construyó. Y ninguna otra evidencia, ni una, apoya 15.000 años."
    }
   ],
-  "e": 914,
+  "e": 868.08,
   "dur": 11
  },
  {
   "bloque": "pp",
   "at": "arthur posnansky · relleno",
-  "s": 914,
-  "e": 918.2,
-  "dur": 4.2,
+  "s": 868.08,
+  "e": 875.28,
+  "dur": 7.2,
   "bg": {
    "src": "broll/e7hd_pp_precision.mp4",
-   "focus": "52% 60%",
+   "focus": "54% 56%",
    "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "arthur posnansky · relleno",
-  "s": 918.2,
-  "e": 924.56,
-  "dur": 6.36,
-  "bg": {
-   "src": "broll/e7hd_pp_sand_abrasive.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
+    1.08,
+    1.2
    ]
   },
   "ov": []
@@ -3268,10 +3098,10 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pp",
   "at": "la inclinacion del eje terrestre",
-  "s": 924.56,
+  "s": 875.28,
   "bg": {
    "src": "broll/e7hd_gz_star_north.mp4",
-   "from": 0,
+   "from": 1.38,
    "darken": 0.12,
    "vig": 0.08
   },
@@ -3288,51 +3118,17 @@ export const TIMELINE: Beat[] = [
     }
    }
   ],
-  "e": 935.56,
+  "e": 886.28,
   "dur": 11
  },
  {
   "bloque": "pp",
   "at": "la inclinacion del eje terrestre · relleno",
-  "s": 935.56,
-  "e": 938.96,
-  "dur": 3.4,
-  "bg": {
-   "src": "broll/e7hd_pp_titicaca.mp4",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "la inclinacion del eje terrestre · relleno",
-  "s": 938.96,
-  "e": 947.46,
-  "dur": 8.5,
-  "bg": {
-   "src": "img/e7hd_pumapunku_01.jpg",
-   "kind": "img",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "la inclinacion del eje terrestre · relleno",
-  "s": 947.46,
-  "e": 952.26,
+  "s": 886.28,
+  "e": 891.08,
   "dur": 4.8,
   "bg": {
-   "src": "img/e7hd_pumapunku_02.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_pp_titicaca.mp4",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -3344,11 +3140,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pp",
   "at": "la inclinacion del eje terrestre · relleno",
-  "s": 952.26,
-  "e": 955,
-  "dur": 2.74,
+  "s": 891.08,
+  "e": 896.68,
+  "dur": 5.6,
   "bg": {
-   "src": "img/e7hd_pumapunku_03.jpg",
+   "src": "img/e7hd_pumapunku_01.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -3360,11 +3156,45 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pp",
+  "at": "la inclinacion del eje terrestre · relleno",
+  "s": 896.68,
+  "e": 899.88,
+  "dur": 3.2,
+  "bg": {
+   "src": "img/e7hd_pumapunku_02.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pp",
+  "at": "la inclinacion del eje terrestre · relleno",
+  "s": 899.88,
+  "e": 903.92,
+  "dur": 4.04,
+  "bg": {
+   "src": "img/e7hd_pumapunku_03.jpg",
+   "kind": "img",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pp",
   "at": "herramientas que no deberian existir",
-  "s": 955,
+  "s": 903.92,
   "bg": {
    "src": "broll/e7hd_pp_precision.mp4",
-   "from": 0,
+   "from": 4,
    "darken": 0.46
   },
   "ov": [
@@ -3378,50 +3208,17 @@ export const TIMELINE: Beat[] = [
     "hunde": "Nadie dijo que fuera cobre. Se trabaja con abrasivo, arena de cuarzo y agua, y piedras más duras. Es lento y funciona. En Puma Punku aparecieron martillos de piedra."
    }
   ],
-  "e": 966,
+  "e": 914.92,
   "dur": 11
  },
  {
   "bloque": "pp",
   "at": "herramientas que no deberian existir · relleno",
-  "s": 966,
-  "e": 969.2,
-  "dur": 3.2,
-  "bg": {
-   "src": "broll/e7hd_pp_sand_abrasive.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "herramientas que no deberian existir · relleno",
-  "s": 969.2,
-  "e": 974.2,
-  "dur": 5,
-  "bg": {
-   "src": "broll/e7hd_pp_titicaca.mp4",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "herramientas que no deberian existir · relleno",
-  "s": 974.2,
-  "e": 977.8,
+  "s": 914.92,
+  "e": 918.52,
   "dur": 3.6,
   "bg": {
-   "src": "img/e7hd_pumapunku_01.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_pp_sand_abrasive.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -3433,12 +3230,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pp",
   "at": "herramientas que no deberian existir · relleno",
-  "s": 977.8,
-  "e": 985.3,
+  "s": 918.52,
+  "e": 926.02,
   "dur": 7.5,
   "bg": {
-   "src": "img/e7hd_pumapunku_02.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_pp_titicaca.mp4",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -3450,11 +3246,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "pp",
   "at": "herramientas que no deberian existir · relleno",
-  "s": 985.3,
-  "e": 988.77,
-  "dur": 3.47,
+  "s": 926.02,
+  "e": 930.22,
+  "dur": 4.2,
   "bg": {
-   "src": "img/e7hd_pumapunku_03.jpg",
+   "src": "img/e7hd_pumapunku_01.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -3466,23 +3262,13 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pp",
-  "at": "con arena de cuarzo y agua",
-  "s": 988.77,
-  "bg": {
-   "src": "broll/e7hd_pp_sand_abrasive.mp4"
-  },
-  "ov": [],
-  "e": 993.37,
-  "dur": 4.6
- },
- {
-  "bloque": "pp",
-  "at": "con arena de cuarzo y agua · relleno",
-  "s": 993.37,
-  "e": 999.57,
+  "at": "herramientas que no deberian existir · relleno",
+  "s": 930.22,
+  "e": 936.42,
   "dur": 6.2,
   "bg": {
-   "src": "broll/e7hd_pp_precision.mp4",
+   "src": "img/e7hd_pumapunku_02.jpg",
+   "kind": "img",
    "focus": "50% 50%",
    "z": [
     1.05,
@@ -3493,12 +3279,13 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pp",
-  "at": "con arena de cuarzo y agua · relleno",
-  "s": 999.57,
-  "e": 1002.97,
-  "dur": 3.4,
+  "at": "herramientas que no deberian existir · relleno",
+  "s": 936.42,
+  "e": 938.3,
+  "dur": 1.88,
   "bg": {
-   "src": "broll/e7hd_pp_sand_abrasive.mp4",
+   "src": "img/e7hd_pumapunku_03.jpg",
+   "kind": "img",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -3509,12 +3296,23 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pp",
-  "at": "con arena de cuarzo y agua · relleno",
-  "s": 1002.97,
-  "e": 1007.04,
-  "dur": 4.07,
+  "at": "con arena de cuarzo y agua",
+  "s": 938.3,
   "bg": {
-   "src": "broll/e7hd_pp_titicaca.mp4",
+   "src": "broll/e7hd_pp_sand_abrasive.mp4"
+  },
+  "ov": [],
+  "e": 942.9,
+  "dur": 4.6
+ },
+ {
+  "bloque": "pp",
+  "at": "con arena de cuarzo y agua · relleno",
+  "s": 942.9,
+  "e": 951.4,
+  "dur": 8.5,
+  "bg": {
+   "src": "broll/e7hd_pp_precision.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -3525,8 +3323,24 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "pp",
+  "at": "con arena de cuarzo y agua · relleno",
+  "s": 951.4,
+  "e": 954.88,
+  "dur": 3.48,
+  "bg": {
+   "src": "broll/e7hd_pp_sand_abrasive.mp4",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "pp",
   "at": "nadie reprodujo todavia un bloque en h",
-  "s": 1007.04,
+  "s": 954.88,
   "bg": {
    "src": "img/e7hd_pumapunku_06.jpg",
    "kind": "img",
@@ -3557,34 +3371,17 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1011.64,
+  "e": 959.48,
   "dur": 4.6
  },
  {
   "bloque": "pp",
   "at": "nadie reprodujo todavia un bloque en h · relleno",
-  "s": 1011.64,
-  "e": 1016.44,
-  "dur": 4.8,
+  "s": 959.48,
+  "e": 965.23,
+  "dur": 5.75,
   "bg": {
    "src": "img/e7hd_pumapunku_02.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "pp",
-  "at": "nadie reprodujo todavia un bloque en h · relleno",
-  "s": 1016.44,
-  "e": 1018.27,
-  "dur": 1.83,
-  "bg": {
-   "src": "img/e7hd_pumapunku_03.jpg",
    "kind": "img",
    "focus": "52% 60%",
    "z": [
@@ -3597,7 +3394,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "kl",
   "at": "ellora india",
-  "s": 1018.27,
+  "s": 965.23,
   "bg": {
    "src": "broll/e7hd_kl_rock_cave.mp4",
    "darken": 0.44
@@ -3611,43 +3408,27 @@ export const TIMELINE: Beat[] = [
     "coords": "20°01′N  75°10′E"
    }
   ],
-  "e": 1020,
-  "dur": 1.73
+  "e": 966.42,
+  "dur": 1.19
  },
  {
   "bloque": "kl",
   "at": "estado de maharashtra",
-  "s": 1020,
+  "s": 966.42,
   "bg": {
    "src": "img/e7hd_kailasa_01.jpg",
    "kind": "img"
   },
   "ov": [],
-  "e": 1024,
-  "dur": 4
- },
- {
-  "bloque": "kl",
-  "at": "esto es el templo de kailasa",
-  "s": 1024,
-  "bg": {
-   "src": "img/e7hd_kailasa_02.jpg",
-   "kind": "img",
-   "z": [
-    1.04,
-    1.2
-   ]
-  },
-  "ov": [],
-  "e": 1028.6,
+  "e": 971.02,
   "dur": 4.6
  },
  {
   "bloque": "kl",
-  "at": "esto es el templo de kailasa · relleno",
-  "s": 1028.6,
-  "e": 1033,
-  "dur": 4.4,
+  "at": "estado de maharashtra · relleno",
+  "s": 971.02,
+  "e": 974.22,
+  "dur": 3.2,
   "bg": {
    "src": "img/e7hd_kailasa_03.jpg",
    "kind": "img",
@@ -3661,19 +3442,53 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "kl",
+  "at": "estado de maharashtra · relleno",
+  "s": 974.22,
+  "e": 979.22,
+  "dur": 5,
+  "bg": {
+   "src": "img/e7hd_kailasa_04.jpg",
+   "kind": "img",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "kl",
+  "at": "estado de maharashtra · relleno",
+  "s": 979.22,
+  "e": 981.43,
+  "dur": 2.21,
+  "bg": {
+   "src": "img/e7hd_kailasa_05.jpg",
+   "kind": "img",
+   "focus": "54% 56%",
+   "z": [
+    1.08,
+    1.2
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "kl",
   "at": "los elefantes de tamano real",
-  "s": 1033,
+  "s": 981.43,
   "bg": {
    "src": "broll/e7hd_kl_elephant_st.mp4"
   },
   "ov": [],
-  "e": 1038.37,
-  "dur": 5.37
+  "e": 986.18,
+  "dur": 4.75
  },
  {
   "bloque": "kl",
   "at": "todo eso no se construyo",
-  "s": 1038.37,
+  "s": 986.18,
   "bg": {
    "src": "img/e7hd_kailasa_03.jpg",
    "kind": "img",
@@ -3709,30 +3524,13 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1042.97,
-  "dur": 4.6
- },
- {
-  "bloque": "kl",
-  "at": "todo eso no se construyo · relleno",
-  "s": 1042.97,
-  "e": 1046.07,
-  "dur": 3.1,
-  "bg": {
-   "src": "img/e7hd_kailasa_04.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
+  "e": 991.78,
+  "dur": 5.6
  },
  {
   "bloque": "kl",
   "at": "no hay bloques no hay juntas",
-  "s": 1046.07,
+  "s": 991.78,
   "bg": {
    "src": "broll/e7hd_kl_basalt_cliff.mp4"
   },
@@ -3743,34 +3541,17 @@ export const TIMELINE: Beat[] = [
     "main": "Sin bloques · sin juntas · sin piezas"
    }
   ],
-  "e": 1050.67,
+  "e": 996.38,
   "dur": 4.6
  },
  {
   "bloque": "kl",
   "at": "no hay bloques no hay juntas · relleno",
-  "s": 1050.67,
-  "e": 1054.27,
-  "dur": 3.6,
+  "s": 996.38,
+  "e": 1003.88,
+  "dur": 7.5,
   "bg": {
    "src": "img/e7hd_kailasa_02.jpg",
-   "kind": "img",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "kl",
-  "at": "no hay bloques no hay juntas · relleno",
-  "s": 1054.27,
-  "e": 1063.09,
-  "dur": 8.82,
-  "bg": {
-   "src": "img/e7hd_kailasa_03.jpg",
    "kind": "img",
    "focus": "50% 40%",
    "z": [
@@ -3782,8 +3563,42 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "kl",
+  "at": "no hay bloques no hay juntas · relleno",
+  "s": 1003.88,
+  "e": 1008.08,
+  "dur": 4.2,
+  "bg": {
+   "src": "img/e7hd_kailasa_03.jpg",
+   "kind": "img",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "kl",
+  "at": "no hay bloques no hay juntas · relleno",
+  "s": 1008.08,
+  "e": 1009.91,
+  "dur": 1.83,
+  "bg": {
+   "src": "img/e7hd_kailasa_04.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "kl",
   "at": "de arriba hacia abajo",
-  "s": 1063.09,
+  "s": 1009.91,
   "bg": {
    "src": "img/e7hd_kailasa_02.jpg",
    "kind": "img",
@@ -3806,104 +3621,14 @@ export const TIMELINE: Beat[] = [
     }
    }
   ],
-  "e": 1074.09,
+  "e": 1020.91,
   "dur": 11
  },
  {
   "bloque": "kl",
   "at": "de arriba hacia abajo · relleno",
-  "s": 1074.09,
-  "e": 1078.29,
-  "dur": 4.2,
-  "bg": {
-   "src": "img/e7hd_kailasa_03.jpg",
-   "kind": "img",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "kl",
-  "at": "de arriba hacia abajo · relleno",
-  "s": 1078.29,
-  "e": 1083.62,
-  "dur": 5.33,
-  "bg": {
-   "src": "img/e7hd_kailasa_04.jpg",
-   "kind": "img",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "kl",
-  "at": "tenia que estar decidida antes del primer golpe",
-  "s": 1083.62,
-  "bg": {
-   "src": "broll/e7hd_kl_india_temple.mp4"
-  },
-  "ov": [
-   {
-    "c": "Stamp",
-    "text": "Cero margen de error",
-    "color": "RED",
-    "x": 950,
-    "y": 250,
-    "rot": -4,
-    "big": true
-   }
-  ],
-  "e": 1088,
-  "dur": 4.38
- },
- {
-  "bloque": "kl",
-  "at": "sacaron alrededor de 200 000 toneladas",
-  "s": 1088,
-  "bg": {
-   "src": "broll/e7hd_kl_chisel_dust.mp4"
-  },
-  "ov": [
-   {
-    "c": "BigNumber",
-    "target": 200000,
-    "unit": "TON",
-    "kicker": "De roca sacada a mano"
-   }
-  ],
-  "e": 1092.67,
-  "dur": 4.67
- },
- {
-  "bloque": "kl",
-  "at": "no existe el deshacer",
-  "s": 1092.67,
-  "bg": {
-   "src": "img/e7hd_kailasa_01.jpg",
-   "kind": "img",
-   "z": [
-    1.24,
-    1.06
-   ],
-   "darken": 0.44
-  },
-  "ov": [],
-  "e": 1097.27,
-  "dur": 4.6
- },
- {
-  "bloque": "kl",
-  "at": "no existe el deshacer · relleno",
-  "s": 1097.27,
-  "e": 1100.67,
+  "s": 1020.91,
+  "e": 1024.31,
   "dur": 3.4,
   "bg": {
    "src": "img/e7hd_kailasa_03.jpg",
@@ -3918,10 +3643,10 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "kl",
-  "at": "no existe el deshacer · relleno",
-  "s": 1100.67,
-  "e": 1103,
-  "dur": 2.33,
+  "at": "de arriba hacia abajo · relleno",
+  "s": 1024.31,
+  "e": 1032.81,
+  "dur": 8.5,
   "bg": {
    "src": "img/e7hd_kailasa_04.jpg",
    "kind": "img",
@@ -3935,11 +3660,118 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "kl",
+  "at": "de arriba hacia abajo · relleno",
+  "s": 1032.81,
+  "e": 1034.93,
+  "dur": 2.12,
+  "bg": {
+   "src": "img/e7hd_kailasa_05.jpg",
+   "kind": "img",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "kl",
+  "at": "tenia que estar decidida antes del primer golpe",
+  "s": 1034.93,
+  "bg": {
+   "src": "broll/e7hd_kl_india_temple.mp4"
+  },
+  "ov": [
+   {
+    "c": "Stamp",
+    "text": "Cero margen de error",
+    "color": "RED",
+    "x": 950,
+    "y": 250,
+    "rot": -4,
+    "big": true
+   }
+  ],
+  "e": 1040.95,
+  "dur": 6.02
+ },
+ {
+  "bloque": "kl",
+  "at": "sacaron alrededor de 200 000 toneladas",
+  "s": 1040.95,
+  "bg": {
+   "src": "broll/e7hd_kl_chisel_dust.mp4"
+  },
+  "ov": [
+   {
+    "c": "BigNumber",
+    "target": 200000,
+    "unit": "TON",
+    "kicker": "De roca sacada a mano"
+   }
+  ],
+  "e": 1046.16,
+  "dur": 5.21
+ },
+ {
+  "bloque": "kl",
+  "at": "no existe el deshacer",
+  "s": 1046.16,
+  "bg": {
+   "src": "img/e7hd_kailasa_01.jpg",
+   "kind": "img",
+   "z": [
+    1.24,
+    1.06
+   ],
+   "darken": 0.44
+  },
+  "ov": [],
+  "e": 1050.76,
+  "dur": 4.6
+ },
+ {
+  "bloque": "kl",
+  "at": "no existe el deshacer · relleno",
+  "s": 1050.76,
+  "e": 1056.36,
+  "dur": 5.6,
+  "bg": {
+   "src": "img/e7hd_kailasa_03.jpg",
+   "kind": "img",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "kl",
+  "at": "no existe el deshacer · relleno",
+  "s": 1056.36,
+  "e": 1059.54,
+  "dur": 3.18,
+  "bg": {
+   "src": "img/e7hd_kailasa_04.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "kl",
   "at": "la leyenda del escombro que falta",
-  "s": 1103,
+  "s": 1059.54,
   "bg": {
    "src": "broll/e7hd_kl_basalt_cliff.mp4",
-   "from": 0,
+   "from": 1.71,
    "darken": 0.48
   },
   "ov": [
@@ -3954,65 +3786,17 @@ export const TIMELINE: Beat[] = [
     "hunde": "No es cierto. Hay depósitos identificados, se usó material para rellenar y construir, y buena parte se acarreó ladera abajo durante décadas."
    }
   ],
-  "e": 1114,
+  "e": 1070.54,
   "dur": 11
  },
  {
   "bloque": "kl",
   "at": "la leyenda del escombro que falta · relleno",
-  "s": 1114,
-  "e": 1118.8,
-  "dur": 4.8,
-  "bg": {
-   "src": "broll/e7hd_kl_chisel_dust.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "kl",
-  "at": "la leyenda del escombro que falta · relleno",
-  "s": 1118.8,
-  "e": 1124.4,
-  "dur": 5.6,
-  "bg": {
-   "src": "broll/e7hd_kl_elephant_st.mp4",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "kl",
-  "at": "la leyenda del escombro que falta · relleno",
-  "s": 1124.4,
-  "e": 1127.6,
-  "dur": 3.2,
-  "bg": {
-   "src": "broll/e7hd_kl_india_temple.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "kl",
-  "at": "la leyenda del escombro que falta · relleno",
-  "s": 1127.6,
-  "e": 1132.6,
+  "s": 1070.54,
+  "e": 1075.54,
   "dur": 5,
   "bg": {
-   "src": "broll/e7hd_kl_rock_cave.mp4",
+   "src": "broll/e7hd_kl_chisel_dust.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -4024,12 +3808,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "kl",
   "at": "la leyenda del escombro que falta · relleno",
-  "s": 1132.6,
-  "e": 1136.2,
+  "s": 1075.54,
+  "e": 1079.14,
   "dur": 3.6,
   "bg": {
-   "src": "img/e7hd_kailasa_01.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_kl_elephant_st.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -4041,12 +3824,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "kl",
   "at": "la leyenda del escombro que falta · relleno",
-  "s": 1136.2,
-  "e": 1143.7,
+  "s": 1079.14,
+  "e": 1086.64,
   "dur": 7.5,
   "bg": {
-   "src": "img/e7hd_kailasa_02.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_kl_india_temple.mp4",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -4058,12 +3840,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "kl",
   "at": "la leyenda del escombro que falta · relleno",
-  "s": 1143.7,
-  "e": 1147.9,
+  "s": 1086.64,
+  "e": 1090.84,
   "dur": 4.2,
   "bg": {
-   "src": "img/e7hd_kailasa_03.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_kl_rock_cave.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -4075,11 +3856,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "kl",
   "at": "la leyenda del escombro que falta · relleno",
-  "s": 1147.9,
-  "e": 1154.1,
+  "s": 1090.84,
+  "e": 1097.04,
   "dur": 6.2,
   "bg": {
-   "src": "img/e7hd_kailasa_04.jpg",
+   "src": "img/e7hd_kailasa_01.jpg",
    "kind": "img",
    "focus": "50% 50%",
    "z": [
@@ -4092,11 +3873,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "kl",
   "at": "la leyenda del escombro que falta · relleno",
-  "s": 1154.1,
-  "e": 1157.9,
-  "dur": 3.8,
+  "s": 1097.04,
+  "e": 1100.25,
+  "dur": 3.21,
   "bg": {
-   "src": "img/e7hd_kailasa_05.jpg",
+   "src": "img/e7hd_kailasa_02.jpg",
    "kind": "img",
    "focus": "46% 44%",
    "z": [
@@ -4109,7 +3890,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "kl",
   "at": "el misterio del kailasa no es como",
-  "s": 1157.9,
+  "s": 1100.25,
   "bg": {
    "src": "img/e7hd_kailasa_03.jpg",
    "kind": "img",
@@ -4149,15 +3930,15 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1162.5,
+  "e": 1104.85,
   "dur": 4.6
  },
  {
   "bloque": "kl",
   "at": "el misterio del kailasa no es como · relleno",
-  "s": 1162.5,
-  "e": 1171,
-  "dur": 8.5,
+  "s": 1104.85,
+  "e": 1113.57,
+  "dur": 8.72,
   "bg": {
    "src": "img/e7hd_kailasa_04.jpg",
    "kind": "img",
@@ -4171,25 +3952,8 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "kl",
-  "at": "el misterio del kailasa no es como · relleno",
-  "s": 1171,
-  "e": 1173.71,
-  "dur": 2.71,
-  "bg": {
-   "src": "img/e7hd_kailasa_05.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "kl",
   "at": "fueron 20 anos de trabajo",
-  "s": 1173.71,
+  "s": 1113.57,
   "bg": {
    "src": "broll/e7hd_kl_chisel_dust.mp4",
    "from": 4
@@ -4203,13 +3967,13 @@ export const TIMELINE: Beat[] = [
     "thousands": false
    }
   ],
-  "e": 1178.14,
-  "dur": 4.43
+  "e": 1116.6,
+  "dur": 3.03
  },
  {
   "bloque": "yg",
   "at": "yonaguni japon",
-  "s": 1178.14,
+  "s": 1116.6,
   "bg": {
    "src": "broll/e7hd_yg_ocean_surface.mp4",
    "darken": 0.44
@@ -4223,13 +3987,13 @@ export const TIMELINE: Beat[] = [
     "coords": "24°26′N  123°00′E"
    }
   ],
-  "e": 1183.82,
-  "dur": 5.68
+  "e": 1123.16,
+  "dur": 6.56
  },
  {
   "bloque": "yg",
   "at": "casi tocando taiwan",
-  "s": 1183.82,
+  "s": 1123.16,
   "bg": {
    "src": "img/e7hd_yonaguni_03.jpg",
    "kind": "img",
@@ -4239,13 +4003,13 @@ export const TIMELINE: Beat[] = [
    ]
   },
   "ov": [],
-  "e": 1187,
-  "dur": 3.18
+  "e": 1125.84,
+  "dur": 2.68
  },
  {
   "bloque": "yg",
   "at": "un buzo llamado kihachiro aratake",
-  "s": 1187,
+  "s": 1125.84,
   "bg": {
    "src": "broll/e7hd_yg_underwater.mp4"
   },
@@ -4256,22 +4020,22 @@ export const TIMELINE: Beat[] = [
     "main": "Buscaba tiburones martillo"
    }
   ],
-  "e": 1191.6,
+  "e": 1130.44,
   "dur": 4.6
  },
  {
   "bloque": "yg",
   "at": "un buzo llamado kihachiro aratake · relleno",
-  "s": 1191.6,
-  "e": 1194.67,
-  "dur": 3.07,
+  "s": 1130.44,
+  "e": 1135.2,
+  "dur": 4.76,
   "bg": {
    "src": "img/e7hd_yonaguni_02.jpg",
    "kind": "img",
-   "focus": "52% 60%",
+   "focus": "50% 40%",
    "z": [
-    1.04,
-    1.14
+    1.16,
+    1.05
    ]
   },
   "ov": []
@@ -4279,7 +4043,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "a veinticinco metros de profundidad",
-  "s": 1194.67,
+  "s": 1135.2,
   "bg": {
    "src": "img/e7hd_yonaguni_01.jpg",
    "kind": "img",
@@ -4294,13 +4058,13 @@ export const TIMELINE: Beat[] = [
     "thousands": false
    }
   ],
-  "e": 1198.17,
-  "dur": 3.5
+  "e": 1137.26,
+  "dur": 2.06
  },
  {
   "bloque": "yg",
   "at": "terrazas planas angulos rectos",
-  "s": 1198.17,
+  "s": 1137.26,
   "bg": {
    "src": "img/e7hd_yonaguni_02.jpg",
    "kind": "img",
@@ -4317,15 +4081,48 @@ export const TIMELINE: Beat[] = [
     "r": 180
    }
   ],
-  "e": 1202.77,
+  "e": 1141.86,
   "dur": 4.6
  },
  {
   "bloque": "yg",
   "at": "terrazas planas angulos rectos · relleno",
-  "s": 1202.77,
-  "e": 1205.97,
-  "dur": 3.2,
+  "s": 1141.86,
+  "e": 1145.83,
+  "dur": 3.97,
+  "bg": {
+   "src": "broll/e7hd_yg_seabed.mp4",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "yg",
+  "at": "lo que parece una cara tallada",
+  "s": 1145.83,
+  "bg": {
+   "src": "img/e7hd_yonaguni_02.jpg",
+   "kind": "img",
+   "focus": "58% 50%",
+   "z": [
+    1.22,
+    1.06
+   ]
+  },
+  "ov": [],
+  "e": 1150.43,
+  "dur": 4.6
+ },
+ {
+  "bloque": "yg",
+  "at": "lo que parece una cara tallada · relleno",
+  "s": 1150.43,
+  "e": 1154.02,
+  "dur": 3.59,
   "bg": {
    "src": "broll/e7hd_yg_seabed.mp4",
    "focus": "50% 50%",
@@ -4338,73 +4135,8 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "yg",
-  "at": "terrazas planas angulos rectos · relleno",
-  "s": 1205.97,
-  "e": 1210.66,
-  "dur": 4.69,
-  "bg": {
-   "src": "broll/e7hd_yg_underwater.mp4",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "yg",
-  "at": "lo que parece una cara tallada",
-  "s": 1210.66,
-  "bg": {
-   "src": "img/e7hd_yonaguni_02.jpg",
-   "kind": "img",
-   "focus": "58% 50%",
-   "z": [
-    1.22,
-    1.06
-   ]
-  },
-  "ov": [],
-  "e": 1215.26,
-  "dur": 4.6
- },
- {
-  "bloque": "yg",
-  "at": "lo que parece una cara tallada · relleno",
-  "s": 1215.26,
-  "e": 1218.86,
-  "dur": 3.6,
-  "bg": {
-   "src": "broll/e7hd_yg_seabed.mp4",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "yg",
-  "at": "lo que parece una cara tallada · relleno",
-  "s": 1218.86,
-  "e": 1222,
-  "dur": 3.14,
-  "bg": {
-   "src": "broll/e7hd_yg_underwater.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "yg",
   "at": "la pregunta no es como lo hicieron",
-  "s": 1222,
+  "s": 1154.02,
   "bg": {
    "src": "broll/e7hd_yg_seabed.mp4",
    "darken": 0.4
@@ -4439,16 +4171,16 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1228,
-  "dur": 6
+  "e": 1159.36,
+  "dur": 5.34
  },
  {
   "bloque": "yg",
   "at": "masaaki kimura",
-  "s": 1228,
+  "s": 1159.36,
   "bg": {
    "src": "broll/e7hd_yg_underwater.mp4",
-   "from": 0,
+   "from": 1.95,
    "darken": 0.46
   },
   "ov": [
@@ -4462,50 +4194,18 @@ export const TIMELINE: Beat[] = [
     "hunde": "Kimura fue corrigiendo su propia interpretación, y varias estructuras que describió al principio hoy las lee distinto."
    }
   ],
-  "e": 1239,
+  "e": 1170.36,
   "dur": 11
  },
  {
   "bloque": "yg",
   "at": "masaaki kimura · relleno",
-  "s": 1239,
-  "e": 1243.2,
-  "dur": 4.2,
+  "s": 1170.36,
+  "e": 1175.36,
+  "dur": 5,
   "bg": {
    "src": "img/e7hd_yonaguni_04.jpg",
    "kind": "img",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "yg",
-  "at": "masaaki kimura · relleno",
-  "s": 1243.2,
-  "e": 1249.4,
-  "dur": 6.2,
-  "bg": {
-   "src": "broll/e7hd_yg_coast_japan.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "yg",
-  "at": "masaaki kimura · relleno",
-  "s": 1249.4,
-  "e": 1252.8,
-  "dur": 3.4,
-  "bg": {
-   "src": "broll/e7hd_yg_ocean_surface.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -4517,11 +4217,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "masaaki kimura · relleno",
-  "s": 1252.8,
-  "e": 1260.89,
-  "dur": 8.09,
+  "s": 1175.36,
+  "e": 1178.96,
+  "dur": 3.6,
   "bg": {
-   "src": "broll/e7hd_yg_sandstone.mp4",
+   "src": "broll/e7hd_yg_coast_japan.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -4532,29 +4232,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "yg",
-  "at": "lo tallo caminando",
-  "s": 1260.89,
+  "at": "masaaki kimura · relleno",
+  "s": 1178.96,
+  "e": 1186.46,
+  "dur": 7.5,
   "bg": {
-   "src": "img/e7hd_yonaguni_02.jpg",
-   "kind": "img",
-   "focus": "50% 60%",
-   "z": [
-    1.22,
-    1.06
-   ]
-  },
-  "ov": [],
-  "e": 1265.49,
-  "dur": 4.6
- },
- {
-  "bloque": "yg",
-  "at": "lo tallo caminando · relleno",
-  "s": 1265.49,
-  "e": 1270.29,
-  "dur": 4.8,
-  "bg": {
-   "src": "broll/e7hd_yg_coast_japan.mp4",
+   "src": "broll/e7hd_yg_ocean_surface.mp4",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -4565,12 +4248,12 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "yg",
-  "at": "lo tallo caminando · relleno",
-  "s": 1270.29,
-  "e": 1276,
-  "dur": 5.71,
+  "at": "masaaki kimura · relleno",
+  "s": 1186.46,
+  "e": 1190.61,
+  "dur": 4.15,
   "bg": {
-   "src": "broll/e7hd_yg_ocean_surface.mp4",
+   "src": "broll/e7hd_yg_sandstone.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -4581,10 +4264,50 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "yg",
-  "at": "robert schoch",
-  "s": 1276,
+  "at": "lo tallo caminando",
+  "s": 1190.61,
   "bg": {
-   "src": "broll/e7hd_yg_sandstone.mp4",
+   "src": "img/e7hd_yonaguni_02.jpg",
+   "kind": "img",
+   "focus": "50% 60%",
+   "z": [
+    1.22,
+    1.06
+   ]
+  },
+  "ov": [],
+  "e": 1195.21,
+  "dur": 4.6
+ },
+ {
+  "bloque": "yg",
+  "at": "lo tallo caminando · relleno",
+  "s": 1195.21,
+  "e": 1202.44,
+  "dur": 7.23,
+  "bg": {
+   "src": "img/e7hd_yonaguni_01.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "yg",
+  "at": "robert schoch",
+  "s": 1202.44,
+  "bg": {
+   "src": "img/e7hd_yonaguni_02.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.06,
+    1.18
+   ],
    "darken": 0.46
   },
   "ov": [
@@ -4599,33 +4322,17 @@ export const TIMELINE: Beat[] = [
     "hunde": "Algunos de esos ángulos son demasiado limpios. Y esa cara sigue mirando."
    }
   ],
-  "e": 1287,
+  "e": 1213.44,
   "dur": 11
  },
  {
   "bloque": "yg",
   "at": "robert schoch · relleno",
-  "s": 1287,
-  "e": 1290.2,
-  "dur": 3.2,
+  "s": 1213.44,
+  "e": 1216.84,
+  "dur": 3.4,
   "bg": {
    "src": "broll/e7hd_yg_ocean_surface.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "yg",
-  "at": "robert schoch · relleno",
-  "s": 1290.2,
-  "e": 1295.2,
-  "dur": 5,
-  "bg": {
-   "src": "broll/e7hd_yg_sandstone.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -4637,11 +4344,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "robert schoch · relleno",
-  "s": 1295.2,
-  "e": 1298.8,
-  "dur": 3.6,
+  "s": 1216.84,
+  "e": 1225.34,
+  "dur": 8.5,
   "bg": {
-   "src": "broll/e7hd_yg_seabed.mp4",
+   "src": "broll/e7hd_yg_sandstone.mp4",
    "focus": "54% 56%",
    "z": [
     1.08,
@@ -4653,11 +4360,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "robert schoch · relleno",
-  "s": 1298.8,
-  "e": 1306.3,
-  "dur": 7.5,
+  "s": 1225.34,
+  "e": 1230.14,
+  "dur": 4.8,
   "bg": {
-   "src": "broll/e7hd_yg_underwater.mp4",
+   "src": "broll/e7hd_yg_seabed.mp4",
    "focus": "50% 40%",
    "z": [
     1.16,
@@ -4669,12 +4376,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "robert schoch · relleno",
-  "s": 1306.3,
-  "e": 1310.5,
-  "dur": 4.2,
+  "s": 1230.14,
+  "e": 1235.74,
+  "dur": 5.6,
   "bg": {
-   "src": "img/e7hd_yonaguni_01.jpg",
-   "kind": "img",
+   "src": "broll/e7hd_yg_underwater.mp4",
    "focus": "52% 60%",
    "z": [
     1.04,
@@ -4686,11 +4392,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "robert schoch · relleno",
-  "s": 1310.5,
-  "e": 1316.7,
-  "dur": 6.2,
+  "s": 1235.74,
+  "e": 1238.94,
+  "dur": 3.2,
   "bg": {
-   "src": "img/e7hd_yonaguni_02.jpg",
+   "src": "img/e7hd_yonaguni_01.jpg",
    "kind": "img",
    "focus": "50% 50%",
    "z": [
@@ -4703,11 +4409,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "robert schoch · relleno",
-  "s": 1316.7,
-  "e": 1320.1,
-  "dur": 3.4,
+  "s": 1238.94,
+  "e": 1243.94,
+  "dur": 5,
   "bg": {
-   "src": "img/e7hd_yonaguni_03.jpg",
+   "src": "img/e7hd_yonaguni_02.jpg",
    "kind": "img",
    "focus": "46% 44%",
    "z": [
@@ -4720,11 +4426,11 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "yg",
   "at": "robert schoch · relleno",
-  "s": 1320.1,
-  "e": 1322.11,
-  "dur": 2.01,
+  "s": 1243.94,
+  "e": 1247.54,
+  "dur": 3.6,
   "bg": {
-   "src": "img/e7hd_yonaguni_04.jpg",
+   "src": "img/e7hd_yonaguni_03.jpg",
    "kind": "img",
    "focus": "54% 56%",
    "z": [
@@ -4736,31 +4442,25 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "yg",
-  "at": "la respuesta honesta es que todavia no sabemos",
-  "s": 1322.11,
+  "at": "robert schoch · relleno",
+  "s": 1247.54,
+  "e": 1254.54,
+  "dur": 7,
   "bg": {
-   "src": "broll/e7hd_yg_ocean_surface.mp4",
-   "from": 5,
-   "darken": 0.42
+   "src": "img/e7hd_yonaguni_04.jpg",
+   "kind": "img",
+   "focus": "50% 40%",
+   "z": [
+    1.16,
+    1.05
+   ]
   },
-  "ov": [
-   {
-    "c": "Stamp",
-    "text": "El único sin respuesta",
-    "color": "RED",
-    "x": 620,
-    "y": 700,
-    "rot": -3,
-    "big": true
-   }
-  ],
-  "e": 1323.91,
-  "dur": 1.8
+  "ov": []
  },
  {
   "bloque": "gt",
   "at": "y ahora si el siete",
-  "s": 1323.91,
+  "s": 1254.54,
   "bg": {
    "src": "broll/e7hd_gt_anatolia.mp4",
    "darken": 0.48
@@ -4774,16 +4474,16 @@ export const TIMELINE: Beat[] = [
     "coords": "37°13′N  38°55′E"
    }
   ],
-  "e": 1336.72,
-  "dur": 12.81
+  "e": 1265.73,
+  "dur": 11.19
  },
  {
   "bloque": "gt",
   "at": "la colina del ombligo",
-  "s": 1336.72,
+  "s": 1265.73,
   "bg": {
    "src": "broll/e7hd_gt_anatolia.mp4",
-   "from": 1.46
+   "from": 4
   },
   "ov": [
    {
@@ -4792,13 +4492,13 @@ export const TIMELINE: Beat[] = [
     "main": "La colina del ombligo"
    }
   ],
-  "e": 1344.11,
-  "dur": 7.39
+  "e": 1271.81,
+  "dur": 6.08
  },
  {
   "bloque": "gt",
   "at": "klaus schmidt",
-  "s": 1344.11,
+  "s": 1271.81,
   "bg": {
    "src": "broll/e7hd_gt_excavation.mp4"
   },
@@ -4809,13 +4509,29 @@ export const TIMELINE: Beat[] = [
     "main": "Klaus Schmidt"
    }
   ],
-  "e": 1348.67,
-  "dur": 4.56
+  "e": 1276.41,
+  "dur": 4.6
+ },
+ {
+  "bloque": "gt",
+  "at": "klaus schmidt · relleno",
+  "s": 1276.41,
+  "e": 1279.32,
+  "dur": 2.91,
+  "bg": {
+   "src": "broll/e7hd_gt_anatolia.mp4",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "gt",
   "at": "reescribio el manual",
-  "s": 1348.67,
+  "s": 1279.32,
   "bg": {
    "src": "img/e7hd_gobekli_04.jpg",
    "kind": "img",
@@ -4825,13 +4541,13 @@ export const TIMELINE: Beat[] = [
    ]
   },
   "ov": [],
-  "e": 1350.99,
-  "dur": 2.32
+  "e": 1283.36,
+  "dur": 4.04
  },
  {
   "bloque": "gt",
   "at": "pilares de piedra caliza con forma de t",
-  "s": 1350.99,
+  "s": 1283.36,
   "bg": {
    "src": "img/e7hd_gobekli_02.jpg",
    "kind": "img"
@@ -4843,45 +4559,13 @@ export const TIMELINE: Beat[] = [
     "label": "Pilares en T · 5,5 m · 20 toneladas"
    }
   ],
-  "e": 1355.59,
-  "dur": 4.6
- },
- {
-  "bloque": "gt",
-  "at": "pilares de piedra caliza con forma de t · relleno",
-  "s": 1355.59,
-  "e": 1360.39,
-  "dur": 4.8,
-  "bg": {
-   "src": "broll/e7hd_gt_anatolia.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gt",
-  "at": "pilares de piedra caliza con forma de t · relleno",
-  "s": 1360.39,
-  "e": 1362.29,
-  "dur": 1.9,
-  "bg": {
-   "src": "broll/e7hd_gt_burial_soil.mp4",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
+  "e": 1290.77,
+  "dur": 7.41
  },
  {
   "bloque": "gt",
   "at": "zorros escorpiones buitres serpientes",
-  "s": 1362.29,
+  "s": 1290.77,
   "bg": {
    "src": "img/e7hd_gobekli_03.jpg",
    "kind": "img",
@@ -4891,13 +4575,13 @@ export const TIMELINE: Beat[] = [
    ]
   },
   "ov": [],
-  "e": 1368.67,
-  "dur": 6.38
+  "e": 1297.92,
+  "dur": 7.15
  },
  {
   "bloque": "gt",
   "at": "nueve mil seiscientos anos antes de cristo",
-  "s": 1368.67,
+  "s": 1297.92,
   "bg": {
    "src": "img/e7hd_gobekli_04.jpg",
    "kind": "img",
@@ -4911,15 +4595,15 @@ export const TIMELINE: Beat[] = [
     "kicker": "De antigüedad"
    }
   ],
-  "e": 1373.27,
+  "e": 1302.52,
   "dur": 4.6
  },
  {
   "bloque": "gt",
   "at": "nueve mil seiscientos anos antes de cristo · relleno",
-  "s": 1373.27,
-  "e": 1376.47,
-  "dur": 3.2,
+  "s": 1302.52,
+  "e": 1308.72,
+  "dur": 6.2,
   "bg": {
    "src": "img/e7hd_gobekli_02.jpg",
    "kind": "img",
@@ -4934,9 +4618,9 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gt",
   "at": "nueve mil seiscientos anos antes de cristo · relleno",
-  "s": 1376.47,
-  "e": 1380.47,
-  "dur": 4,
+  "s": 1308.72,
+  "e": 1310.98,
+  "dur": 2.26,
   "bg": {
    "src": "img/e7hd_gobekli_03.jpg",
    "kind": "img",
@@ -4951,7 +4635,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gt",
   "at": "stonehenge tiene cinco mil anos",
-  "s": 1380.47,
+  "s": 1310.98,
   "bg": {
    "src": "broll/e7hd_gt_stone_pillar.mp4",
    "darken": 0.5
@@ -4976,17 +4660,38 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1391.47,
-  "dur": 11
+  "e": 1314.86,
+  "dur": 3.88
  },
  {
-  "bloque": "gt",
-  "at": "stonehenge tiene cinco mil anos · relleno",
-  "s": 1391.47,
-  "e": 1395.07,
-  "dur": 3.6,
+  "bloque": "gz",
+  "at": "hormigon cuatro mil quinientos anos",
+  "s": 1314.86,
   "bg": {
-   "src": "img/e7hd_gobekli_03.jpg",
+   "src": "broll/e7hd_gz_limestone_mac.mp4"
+  },
+  "ov": [
+   {
+    "c": "Stamp",
+    "text": "Hormigón, 4.500 años antes",
+    "color": "RED",
+    "x": 900,
+    "y": 240,
+    "rot": -4,
+    "big": true
+   }
+  ],
+  "e": 1319.46,
+  "dur": 4.6
+ },
+ {
+  "bloque": "gz",
+  "at": "hormigon cuatro mil quinientos anos · relleno",
+  "s": 1319.46,
+  "e": 1323.78,
+  "dur": 4.32,
+  "bg": {
+   "src": "img/e7hd_giza_02.jpg",
    "kind": "img",
    "focus": "54% 56%",
    "z": [
@@ -4997,26 +4702,37 @@ export const TIMELINE: Beat[] = [
   "ov": []
  },
  {
-  "bloque": "gt",
-  "at": "stonehenge tiene cinco mil anos · relleno",
-  "s": 1395.07,
-  "e": 1403.16,
-  "dur": 8.09,
+  "bloque": "sq",
+  "at": "teoria dos y esta es preciosa",
+  "s": 1323.78,
   "bg": {
-   "src": "img/e7hd_gobekli_04.jpg",
+   "src": "img/e7hd_sacsay_06.jpg",
    "kind": "img",
-   "focus": "50% 40%",
+   "focus": "50% 50%",
    "z": [
-    1.16,
-    1.05
-   ]
+    1.06,
+    1.18
+   ],
+   "darken": 0.44
   },
-  "ov": []
+  "ov": [
+   {
+    "c": "TheoryCard",
+    "n": 2,
+    "titulo": "La hierba que ablanda la roca",
+    "autor": "Crónicas coloniales · tradición oral",
+    "anio": "siglo XVI –",
+    "sostiene": "Aparece en fuentes independientes de distintos siglos y la gente del lugar todavía la repite. Y las piedras parecen amasadas, no cortadas.",
+    "hunde": "Nunca se identificó la planta. Nunca se reprodujo el efecto en un laboratorio. Ni una vez."
+   }
+  ],
+  "e": 1330.47,
+  "dur": 6.69
  },
  {
   "bloque": "gt",
   "at": "no habia agricultura",
-  "s": 1403.16,
+  "s": 1330.47,
   "bg": {
    "src": "broll/e7hd_gt_wheat_field.mp4",
    "darken": 0.42
@@ -5039,13 +4755,13 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1411.84,
-  "dur": 8.68
+  "e": 1339.13,
+  "dur": 8.66
  },
  {
   "bloque": "gt",
   "at": "los que hicieron esto eran cazadores recolectores",
-  "s": 1411.84,
+  "s": 1339.13,
   "bg": {
    "src": "broll/e7hd_gt_night_fire.mp4",
    "darken": 0.34
@@ -5070,37 +4786,21 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1416.44,
+  "e": 1343.73,
   "dur": 4.6
  },
  {
   "bloque": "gt",
   "at": "los que hicieron esto eran cazadores recolectores · relleno",
-  "s": 1416.44,
-  "e": 1420.64,
-  "dur": 4.2,
+  "s": 1343.73,
+  "e": 1349.25,
+  "dur": 5.52,
   "bg": {
    "src": "broll/e7hd_gt_stone_pillar.mp4",
-   "focus": "52% 60%",
+   "focus": "50% 40%",
    "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gt",
-  "at": "los que hicieron esto eran cazadores recolectores · relleno",
-  "s": 1420.64,
-  "e": 1423,
-  "dur": 2.36,
-  "bg": {
-   "src": "broll/e7hd_gt_wheat_field.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
+    1.16,
+    1.05
    ]
   },
   "ov": []
@@ -5108,10 +4808,15 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gt",
   "at": "primero la agricultura despues el excedente",
-  "s": 1423,
+  "s": 1349.25,
   "bg": {
-   "src": "broll/e7hd_gt_wheat_field.mp4",
-   "from": 0
+   "src": "img/e7hd_gobekli_02.jpg",
+   "kind": "img",
+   "focus": "50% 50%",
+   "z": [
+    1.06,
+    1.18
+   ]
   },
   "ov": [
    {
@@ -5126,17 +4831,49 @@ export const TIMELINE: Beat[] = [
     }
    }
   ],
-  "e": 1434,
+  "e": 1360.25,
   "dur": 11
  },
  {
   "bloque": "gt",
   "at": "primero la agricultura despues el excedente · relleno",
-  "s": 1434,
-  "e": 1437.4,
-  "dur": 3.4,
+  "s": 1360.25,
+  "e": 1365.85,
+  "dur": 5.6,
   "bg": {
    "src": "broll/e7hd_gt_excavation.mp4",
+   "focus": "52% 60%",
+   "z": [
+    1.04,
+    1.14
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gt",
+  "at": "primero la agricultura despues el excedente · relleno",
+  "s": 1365.85,
+  "e": 1369.05,
+  "dur": 3.2,
+  "bg": {
+   "src": "broll/e7hd_gt_night_fire.mp4",
+   "focus": "50% 50%",
+   "z": [
+    1.05,
+    1.16
+   ]
+  },
+  "ov": []
+ },
+ {
+  "bloque": "gt",
+  "at": "primero la agricultura despues el excedente · relleno",
+  "s": 1369.05,
+  "e": 1371.39,
+  "dur": 2.34,
+  "bg": {
+   "src": "broll/e7hd_gt_relief_carve.mp4",
    "focus": "46% 44%",
    "z": [
     1.12,
@@ -5147,40 +4884,8 @@ export const TIMELINE: Beat[] = [
  },
  {
   "bloque": "gt",
-  "at": "primero la agricultura despues el excedente · relleno",
-  "s": 1437.4,
-  "e": 1445.9,
-  "dur": 8.5,
-  "bg": {
-   "src": "broll/e7hd_gt_night_fire.mp4",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gt",
-  "at": "primero la agricultura despues el excedente · relleno",
-  "s": 1445.9,
-  "e": 1449.35,
-  "dur": 3.45,
-  "bg": {
-   "src": "broll/e7hd_gt_relief_carve.mp4",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gt",
   "at": "construimos templos y por eso nos tuvimos que juntar",
-  "s": 1449.35,
+  "s": 1371.39,
   "bg": {
    "src": "img/e7hd_gobekli_05.jpg",
    "kind": "img",
@@ -5209,21 +4914,21 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1453.95,
+  "e": 1375.99,
   "dur": 4.6
  },
  {
   "bloque": "gt",
   "at": "construimos templos y por eso nos tuvimos que juntar · relleno",
-  "s": 1453.95,
-  "e": 1459.55,
-  "dur": 5.6,
+  "s": 1375.99,
+  "e": 1379.59,
+  "dur": 3.6,
   "bg": {
    "src": "broll/e7hd_gt_anatolia.mp4",
-   "focus": "52% 60%",
+   "focus": "54% 56%",
    "z": [
-    1.04,
-    1.14
+    1.08,
+    1.2
    ]
   },
   "ov": []
@@ -5231,15 +4936,15 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gt",
   "at": "construimos templos y por eso nos tuvimos que juntar · relleno",
-  "s": 1459.55,
-  "e": 1461.36,
-  "dur": 1.81,
+  "s": 1379.59,
+  "e": 1383.68,
+  "dur": 4.09,
   "bg": {
    "src": "broll/e7hd_gt_burial_soil.mp4",
-   "focus": "50% 50%",
+   "focus": "50% 40%",
    "z": [
-    1.05,
-    1.16
+    1.16,
+    1.05
    ]
   },
   "ov": []
@@ -5247,7 +4952,7 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gt",
   "at": "alguien enterro todo",
-  "s": 1461.36,
+  "s": 1383.68,
   "bg": {
    "src": "broll/e7hd_gt_burial_soil.mp4",
    "darken": 0.44
@@ -5263,46 +4968,29 @@ export const TIMELINE: Beat[] = [
     "big": true
    }
   ],
-  "e": 1465.96,
-  "dur": 4.6
- },
- {
-  "bloque": "gt",
-  "at": "alguien enterro todo · relleno",
-  "s": 1465.96,
-  "e": 1470.12,
-  "dur": 4.16,
-  "bg": {
-   "src": "img/e7hd_gobekli_04.jpg",
-   "kind": "img",
-   "focus": "46% 44%",
-   "z": [
-    1.12,
-    1.02
-   ]
-  },
-  "ov": []
+  "e": 1390.34,
+  "dur": 6.66
  },
  {
   "bloque": "gt",
   "at": "hasta hacerlo desaparecer",
-  "s": 1470.12,
+  "s": 1390.34,
   "bg": {
    "src": "img/e7hd_gobekli_06.jpg",
    "kind": "img",
    "darken": 0.5
   },
   "ov": [],
-  "e": 1474.32,
-  "dur": 4.2
+  "e": 1394.4,
+  "dur": 4.06
  },
  {
   "bloque": "gt",
   "at": "nadie sabe por que",
-  "s": 1474.32,
+  "s": 1394.4,
   "bg": {
    "src": "broll/e7hd_gt_anatolia.mp4",
-   "from": 2.03,
+   "from": 6,
    "darken": 0.5
   },
   "ov": [
@@ -5325,13 +5013,29 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1481.14,
-  "dur": 6.82
+  "e": 1399.24,
+  "dur": 4.84
+ },
+ {
+  "bloque": "kl",
+  "at": "esto es el templo de kailasa",
+  "s": 1399.24,
+  "bg": {
+   "src": "img/e7hd_kailasa_02.jpg",
+   "kind": "img",
+   "z": [
+    1.04,
+    1.2
+   ]
+  },
+  "ov": [],
+  "e": 1403.48,
+  "dur": 4.24
  },
  {
   "bloque": "gt",
   "at": "no necesita ninguna teoria alternativa",
-  "s": 1481.14,
+  "s": 1403.48,
   "bg": {
    "src": "img/e7hd_gobekli_04.jpg",
    "kind": "img",
@@ -5351,38 +5055,21 @@ export const TIMELINE: Beat[] = [
     "big": true
    }
   ],
-  "e": 1485.74,
+  "e": 1408.08,
   "dur": 4.6
  },
  {
   "bloque": "gt",
   "at": "no necesita ninguna teoria alternativa · relleno",
-  "s": 1485.74,
-  "e": 1489.34,
-  "dur": 3.6,
+  "s": 1408.08,
+  "e": 1411.57,
+  "dur": 3.49,
   "bg": {
    "src": "broll/e7hd_gt_wheat_field.mp4",
-   "focus": "54% 56%",
+   "focus": "52% 60%",
    "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
- },
- {
-  "bloque": "gt",
-  "at": "no necesita ninguna teoria alternativa · relleno",
-  "s": 1489.34,
-  "e": 1491.46,
-  "dur": 2.12,
-  "bg": {
-   "src": "img/e7hd_gobekli_01.jpg",
-   "kind": "img",
-   "focus": "50% 40%",
-   "z": [
-    1.16,
-    1.05
+    1.04,
+    1.14
    ]
   },
   "ov": []
@@ -5390,10 +5077,10 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "gt",
   "at": "ya es la mas dificil de creer de todas",
-  "s": 1491.46,
+  "s": 1411.57,
   "bg": {
    "src": "broll/e7hd_gt_stone_pillar.mp4",
-   "from": 1.53,
+   "from": 0.13,
    "darken": 0.46
   },
   "ov": [
@@ -5426,25 +5113,48 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1497.08,
-  "dur": 5.62
+  "e": 1418.62,
+  "dur": 7.05
  },
  {
   "bloque": "cl",
   "at": "volvamos a la pregunta del principio",
-  "s": 1497.08,
+  "s": 1418.62,
   "bg": {
    "src": "broll/e7hd_cl_sunset_ruins.mp4",
    "darken": 0.44
   },
   "ov": [],
-  "e": 1499.64,
-  "dur": 2.56
+  "e": 1421.93,
+  "dur": 3.31
+ },
+ {
+  "bloque": "yg",
+  "at": "la respuesta honesta es que todavia no sabemos",
+  "s": 1421.93,
+  "bg": {
+   "src": "broll/e7hd_yg_ocean_surface.mp4",
+   "from": 5,
+   "darken": 0.42
+  },
+  "ov": [
+   {
+    "c": "Stamp",
+    "text": "El único sin respuesta",
+    "color": "RED",
+    "x": 620,
+    "y": 700,
+    "rot": -3,
+    "big": true
+   }
+  ],
+  "e": 1422.68,
+  "dur": 0.75
  },
  {
   "bloque": "cl",
   "at": "por que no podriamos repetirlas",
-  "s": 1499.64,
+  "s": 1422.68,
   "bg": {
    "src": "broll/e7hd_cl_timelapse_sky.mp4",
    "darken": 0.4
@@ -5469,60 +5179,28 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1504.24,
-  "dur": 4.6
- },
- {
-  "bloque": "cl",
-  "at": "por que no podriamos repetirlas · relleno",
-  "s": 1504.24,
-  "e": 1507.16,
-  "dur": 2.92,
-  "bg": {
-   "src": "broll/e7hd_cl_modern_city.mp4",
-   "focus": "52% 60%",
-   "z": [
-    1.04,
-    1.14
-   ]
-  },
-  "ov": []
+  "e": 1430.08,
+  "dur": 7.4
  },
  {
   "bloque": "cl",
   "at": "no es tecnologica",
-  "s": 1507.16,
+  "s": 1430.08,
   "bg": {
    "src": "broll/e7hd_pro_quarry_saw.mp4",
    "from": 3
   },
   "ov": [],
-  "e": 1511.76,
-  "dur": 4.6
- },
- {
-  "bloque": "cl",
-  "at": "no es tecnologica · relleno",
-  "s": 1511.76,
-  "e": 1514.97,
-  "dur": 3.21,
-  "bg": {
-   "src": "broll/e7hd_pro_survey.mp4",
-   "focus": "50% 50%",
-   "z": [
-    1.05,
-    1.16
-   ]
-  },
-  "ov": []
+  "e": 1436.59,
+  "dur": 6.51
  },
  {
   "bloque": "cl",
   "at": "con sierra de hilo diamantado",
-  "s": 1514.97,
+  "s": 1436.59,
   "bg": {
    "src": "broll/e7hd_pro_quarry_saw.mp4",
-   "from": 2.98
+   "from": 5
   },
   "ov": [
    {
@@ -5531,13 +5209,13 @@ export const TIMELINE: Beat[] = [
     "main": "Sierra de hilo diamantado"
    }
   ],
-  "e": 1520.84,
-  "dur": 5.87
+  "e": 1441.33,
+  "dur": 4.74
  },
  {
   "bloque": "cl",
   "at": "transportes modulares autopropulsados",
-  "s": 1520.84,
+  "s": 1441.33,
   "bg": {
    "src": "broll/e7hd_pro_crane_big.mp4",
    "from": 4
@@ -5549,21 +5227,21 @@ export const TIMELINE: Beat[] = [
     "main": "Transporte modular autopropulsado"
    }
   ],
-  "e": 1525.44,
+  "e": 1445.93,
   "dur": 4.6
  },
  {
   "bloque": "cl",
   "at": "transportes modulares autopropulsados · relleno",
-  "s": 1525.44,
-  "e": 1529.58,
-  "dur": 4.14,
+  "s": 1445.93,
+  "e": 1450.9,
+  "dur": 4.97,
   "bg": {
    "src": "broll/e7hd_cl_timelapse_sky.mp4",
-   "focus": "46% 44%",
+   "focus": "50% 50%",
    "z": [
-    1.12,
-    1.02
+    1.05,
+    1.16
    ]
   },
   "ov": []
@@ -5571,10 +5249,10 @@ export const TIMELINE: Beat[] = [
  {
   "bloque": "cl",
   "at": "y probablemente hacerlo mejor",
-  "s": 1529.58,
+  "s": 1450.9,
   "bg": {
    "src": "broll/e7hd_pro_survey.mp4",
-   "from": 1.88
+   "from": 3.24
   },
   "ov": [
    {
@@ -5583,13 +5261,13 @@ export const TIMELINE: Beat[] = [
     "main": "Mejor que dos centímetros"
    }
   ],
-  "e": 1533.08,
-  "dur": 3.5
+  "e": 1453.07,
+  "dur": 2.17
  },
  {
   "bloque": "cl",
   "at": "lo que no podriamos es querer",
-  "s": 1533.08,
+  "s": 1453.07,
   "bg": {
    "src": "broll/e7hd_cl_modern_city.mp4",
    "darken": 0.46
@@ -5614,16 +5292,16 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1539.2,
-  "dur": 6.12
+  "e": 1459.5,
+  "dur": 6.43
  },
  {
   "bloque": "cl",
   "at": "ninguna se pagaba sola",
-  "s": 1539.2,
+  "s": 1459.5,
   "bg": {
    "src": "broll/e7hd_cl_modern_city.mp4",
-   "from": 0,
+   "from": 5,
    "darken": 0.44
   },
   "ov": [
@@ -5641,29 +5319,13 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1550.2,
-  "dur": 11
- },
- {
-  "bloque": "cl",
-  "at": "ninguna se pagaba sola · relleno",
-  "s": 1550.2,
-  "e": 1552.36,
-  "dur": 2.16,
-  "bg": {
-   "src": "broll/e7hd_cl_sunset_ruins.mp4",
-   "focus": "54% 56%",
-   "z": [
-    1.08,
-    1.2
-   ]
-  },
-  "ov": []
+  "e": 1470.97,
+  "dur": 11.47
  },
  {
   "bloque": "cl",
   "at": "se iba a morir sin ver el templo terminado",
-  "s": 1552.36,
+  "s": 1470.97,
   "bg": {
    "src": "img/e7hd_kailasa_02.jpg",
    "kind": "img",
@@ -5674,13 +5336,13 @@ export const TIMELINE: Beat[] = [
    "darken": 0.42
   },
   "ov": [],
-  "e": 1554.94,
-  "dur": 2.58
+  "e": 1473.66,
+  "dur": 2.69
  },
  {
   "bloque": "cl",
   "at": "y empezo igual",
-  "s": 1554.94,
+  "s": 1473.66,
   "bg": {
    "src": "broll/e7hd_cl_hands_stone.mp4",
    "from": 3,
@@ -5697,16 +5359,16 @@ export const TIMELINE: Beat[] = [
     "big": true
    }
   ],
-  "e": 1557.67,
-  "dur": 2.73
+  "e": 1476.18,
+  "dur": 2.52
  },
  {
   "bloque": "cl",
   "at": "nosotros construimos para amortizar",
-  "s": 1557.67,
+  "s": 1476.18,
   "bg": {
    "src": "broll/e7hd_cl_sunset_ruins.mp4",
-   "from": 0,
+   "from": 0.05,
    "darken": 0.44
   },
   "ov": [
@@ -5722,13 +5384,29 @@ export const TIMELINE: Beat[] = [
     }
    }
   ],
-  "e": 1570.48,
-  "dur": 12.81
+  "e": 1487.18,
+  "dur": 11
+ },
+ {
+  "bloque": "cl",
+  "at": "nosotros construimos para amortizar · relleno",
+  "s": 1487.18,
+  "e": 1489.36,
+  "dur": 2.18,
+  "bg": {
+   "src": "broll/e7hd_pro_crane_big.mp4",
+   "focus": "46% 44%",
+   "z": [
+    1.12,
+    1.02
+   ]
+  },
+  "ov": []
  },
  {
   "bloque": "cl",
   "at": "porque tenian otra idea del tiempo",
-  "s": 1570.48,
+  "s": 1489.36,
   "bg": {
    "src": "broll/e7hd_cl_timelapse_sky.mp4",
    "from": 4,
@@ -5754,13 +5432,13 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1574.88,
-  "dur": 4.4
+  "e": 1493.48,
+  "dur": 4.12
  },
  {
   "bloque": "cl",
   "at": "esa es la parte que de verdad no sabemos repetir",
-  "s": 1574.88,
+  "s": 1493.48,
   "bg": {
    "src": "img/e7h_baalbek_largest.jpg",
    "kind": "img",
@@ -5790,21 +5468,21 @@ export const TIMELINE: Beat[] = [
     ]
    }
   ],
-  "e": 1579.48,
+  "e": 1498.08,
   "dur": 4.6
  },
  {
   "bloque": "cl",
   "at": "esa es la parte que de verdad no sabemos repetir · relleno",
-  "s": 1579.48,
-  "e": 1583,
-  "dur": 3.52,
+  "s": 1498.08,
+  "e": 1502.12,
+  "dur": 4.04,
   "bg": {
    "src": "broll/e7hd_cl_hands_stone.mp4",
-   "focus": "50% 40%",
+   "focus": "54% 56%",
    "z": [
-    1.16,
-    1.05
+    1.08,
+    1.2
    ]
   },
   "ov": []

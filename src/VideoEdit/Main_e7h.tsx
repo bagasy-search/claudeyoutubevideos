@@ -5,7 +5,7 @@
 import React from 'react';
 import {
   AbsoluteFill, Sequence, useCurrentFrame, interpolate,
-  Img, Video, Audio, staticFile, Easing,
+  Img, OffthreadVideo, Audio, staticFile, Easing,
 } from 'remotion';
 import {loadFont as loadAnton} from '@remotion/google-fonts/Anton';
 import {loadFont as loadOswald} from '@remotion/google-fonts/Oswald';
@@ -69,7 +69,7 @@ const Bg: React.FC<{
     <AbsoluteFill>
       {kind === 'img'
         ? <Img src={staticFile(src)} style={style} />
-        : <Video src={staticFile(src)} startFrom={Math.round(from * FPS)} muted style={style} />}
+        : <OffthreadVideo src={staticFile(src)} startFrom={Math.round(from * FPS)} muted style={style} />}
       {vig > 0 && (
         <AbsoluteFill style={{background: `radial-gradient(120% 100% at 50% 42%, transparent 40%, rgba(0,0,0,${vig}) 100%)`}} />
       )}

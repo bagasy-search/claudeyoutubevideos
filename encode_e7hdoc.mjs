@@ -7,11 +7,14 @@ import fs from 'fs';
 
 const BIN = 'C:/Users/bauti/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.2-full_build/bin';
 const FF = `${BIN}/ffmpeg.exe`, FP = `${BIN}/ffprobe.exe`;
-const LEN = Number(process.env.LEN || 9);          // segundos que conservo de cada clip
+const LEN = Number(process.env.LEN || 18);         // segundos que conservo de cada clip
 const SCALE = 'scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1';
 
 fs.mkdirSync('_e7hdoc_raw', {recursive: true});
-const clips = fs.readdirSync('public/broll').filter((f) => f.startsWith('e7hd_') && f.endsWith('.mp4'));
+const SOLO = (process.env.SOLO || '').split(',').filter(Boolean);
+const clips = fs.readdirSync('public/broll')
+  .filter((f) => f.startsWith('e7hd_') && f.endsWith('.mp4'))
+  .filter((f) => !SOLO.length || SOLO.some((s) => f.includes(s)));
 console.log(`${clips.length} clips a conformar (${LEN}s c/u)\n`);
 
 let ok = 0, fail = 0, saltados = 0;
@@ -41,7 +44,7 @@ for (const file of clips) {
   try {
     execFileSync(FF, ['-y', '-i', bak, '-t', String(LEN), '-vf', vf, '-an',
       '-c:v', 'libx264', '-preset', 'medium', '-crf', '19', '-pix_fmt', 'yuv420p',
-      '-movflags', '+faststart', tmp], {stdio: ['ignore', 'ignore', 'pipe'], timeout: 300000});
+      '-movflags', '+faststart', tmp], {stdio: ['ignore', 'ignore', 'pipe'], timeout: 1500000});
     fs.renameSync(tmp, src);
     console.log('ok');
     ok++;
