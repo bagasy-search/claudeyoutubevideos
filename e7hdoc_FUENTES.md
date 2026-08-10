@@ -1,7 +1,24 @@
 # Fuentes y créditos — Documental "7 Construcciones Antiguas Que Hoy Serían Imposibles de Hacer"
 
-26 min 26 s · 1920x1080 · 30 fps CFR · español · faceless.
-Render final: `D:ideosdeclaude\e7hdoc.mp4` (farm de GitHub Actions, run 31364118427, 60 chunks).
+25 min 05 s · 1920x1080 · 30 fps CFR · español · faceless.
+Render final: `D:ideosdeclaude\e7hdoc.mp4` (farm de GitHub Actions, run 31386747261, 60 chunks).
+
+## Bugs corregidos en la v2 (los tres cambiaron el resultado)
+1. **Trabas en todos los clips** — la composición usaba `<Video>`, que reproduce con el elemento HTML
+   y necesita *seek*. En un render partido en 60 chunks cada uno arranca en un frame arbitrario y ese
+   seek devuelve frames repetidos. Se cambió por **`<OffthreadVideo>`** (extrae el frame exacto con
+   ffmpeg). Aplicado también a `Main_e7h.tsx`, que tenía el mismo defecto.
+2. **52 s de imagen congelada** — 22 planos (13%) duraban más que su clip. La compuerta vieja sólo
+   bajaba el `from` y, si ya era 0, no hacía nada ni avisaba. Ahora los clips se conservan a 18 s y hay
+   una **compuerta dura**: si el plano no entra, pasa a imagen fija del mismo bloque y lo reporta.
+3. **"Muchas voces"** — el VO se generó con `--mode design`, que sintetiza cada uno de los 120
+   fragmentos por separado desde una descripción: el timbre derivaba. Ahora es **`--mode clone`** con
+   referencia fija (`public/ref_manvoice.wav`), así que es la misma voz de principio a fin.
+
+Extra: la narración clonada hablaba a 149 palabras/min (apurado para el género). `respirar_e7hdoc.mjs`
+expande las 205 pausas existentes hasta llegar a **1.500 s exactos** y **123 palabras/min**, sin
+regenerar la voz. Ojo con el formato: la voz es `pcm_f32le`; generar los silencios en `s16` hace que
+al concatenar con `-c copy` cada pausa dure la MITAD.
 
 ## Narración
 - Voz 100 % sintética (**Qwen3-TTS**, modo VoiceDesign, español neutro). Sin voz humana grabada.
@@ -131,8 +148,8 @@ Todas con licencia libre verificada contra la API de Commons antes de usarse.
   los nombres propios fonéticamente: Davidovits→davidovitz, Posnansky→poznanski, Bekaa→beca,
   Schoch→schock, y pasa los números escritos a dígitos). Parte los planos largos con material del
   mismo bloque y ajusta el `from` de cada clip para que no se congele el último frame.
-- Timeline generado: `src/VideoEdit/e7hdoc_timeline.gen.ts` — **315 planos**, mediana 4,60 s,
-  p75 5,70 s, 36 % de planos ≥5 s.
+- Timeline generado: `src/VideoEdit/e7hdoc_timeline.gen.ts` — **294 planos**, mediana 4,60 s,
+  p75 6,20 s, 38 % de planos ≥5 s. 136/136 anclas resueltas.
 - Kit de componentes: `src/VideoEdit/e7hdoc_kit.tsx` (ficha de teoría, cortinilla 1/7, reloj de tiempo
   profundo, escala humana, split de teorías, zoom forense, sabemos/no sabemos).
 - Composición: `src/VideoEdit/Main_e7hdoc.tsx` · entry `src/index_e7hdoc.tsx` · comp id **E7hdoc**
