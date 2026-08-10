@@ -5,13 +5,14 @@ MP4="${1:-D:/videosdeclaude/e7h.mp4}"
 OUT=_e7h_a2
 mkdir -p $OUT
 
-shot () { "$FF" -y -v error -ss "$2" -i "$MP4" -frames:v 1 -q:v 3 "$OUT/t_$1.jpg"; }
+shot () { n=$(python -c "print(round($2*30))"); "$FF" -y -v error -i "$MP4" -vf "select=eq(n\,$n)" -vsync 0 -frames:v 1 -q:v 3 "$OUT/t_$1.jpg"; }
 
 # un frame por cada beat de diseño (los que tienen overlay)
 shot 01_hero        1.20   # label arriba-izq (Baalbek)
 shot 02_num         2.60   # BigNumber 1000 TON subiendo
 shot 03_planes      5.60   # 3 aviones + numero (chequeo de pisado)
 shot 04_chips       12.30  # chips proceso
+shot 04b_megalito   13.20  # megalito Baalbek (reemplaza la cantera)
 shot 05_gap         15.40  # tarjeta < 1 mm
 shot 06_time        17.60  # linea de tiempo
 shot 07_crane       20.60  # label grua
@@ -25,9 +26,9 @@ shot 14_level       43.20  # nivelacion + 2 CM
 shot 15_k1          48.90  # kinetic quien? tachado
 shot 16_stars       51.60  # el giro (brillo del cielo)
 shot 17_k2          56.20  # kinetic repetirlas
-shot 18_flash1      58.00  # flash 1
-shot 19_flash4      58.85  # flash 4
-shot 20_flash7      59.40  # flash 7
+shot 18_flash1      57.85  # flash 1
+shot 19_flash4      58.60  # flash 4
+shot 20_flash7      59.35  # flash 7
 shot 21_title       61.00  # tarjeta titulo
 shot 22_band        63.40  # banda dorada "imposibles"
 
