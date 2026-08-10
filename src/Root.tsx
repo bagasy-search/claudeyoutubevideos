@@ -110,9 +110,11 @@ import { MainOxigenada, TOTAL_FRAMES_OXIGENADA } from "./VideoEdit/Main_oxigenad
 import { MainHierbas, TOTAL_FRAMES_HIERBAS } from "./VideoEdit/Main_hierbas";
 import { MainOllabarro, TOTAL_FRAMES_OLLABARRO } from "./VideoEdit/Main_ollabarro";
 import { MainCoolsave, TOTAL_FRAMES_COOLSAVE } from "./VideoEdit/Main_coolsave";
+import { MainRadiador, TOTAL_FRAMES_RADIADOR } from "./VideoEdit/Main_radiador";
 import { MainGencoche, TOTAL_FRAMES_GENCOCHE } from "./VideoEdit/Main_gencoche";
 import { MainAntena25, TOTAL_FRAMES_ANTENA25 } from "./VideoEdit/Main_antena25";
 import { MainAriete, TOTAL_FRAMES_ARIETE } from "./VideoEdit/Main_ariete";
+import { MainFiltro, TOTAL_FRAMES_FILTRO } from "./VideoEdit/Main_filtro";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 import { MainFedtrailer, TOTAL_FRAMES_FEDTRAILER } from "./VideoEdit/Main_fedtrailer";
 import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
@@ -568,6 +570,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Gencoche" component={MainGencoche} durationInFrames={TOTAL_FRAMES_GENCOCHE} fps={30} width={1920} height={1080} />
       <Composition id="Antena25" component={MainAntena25} durationInFrames={TOTAL_FRAMES_ANTENA25} fps={30} width={1920} height={1080} />
       <Composition id="Ariete" component={MainAriete} durationInFrames={TOTAL_FRAMES_ARIETE} fps={30} width={1920} height={1080} />
+      <Composition id="Filtro" component={MainFiltro} durationInFrames={TOTAL_FRAMES_FILTRO} fps={30} width={1920} height={1080} />
       {/* REMAKE hit madera — "Por Qué La Madera De Antes Duraba 100 Años" · AVATAR Tomás · clips-first */}
       <Composition id="Madera" component={MainMadera} durationInFrames={TOTAL_FRAMES_MADERA} fps={30} width={1920} height={1080} />
       {/* VIDEO 1 veta "los viejos sabían" — "El cemento que no se raja ($1 la cal)" · AVATAR Tomás · clips-first */}
@@ -596,6 +599,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Vj7hqe8koadv" component={MainVj7hqe8koadv} durationInFrames={TOTAL_FRAMES_VJ7HQE8KOADV} fps={30} width={1920} height={1080} />
       {/* DEMO motion-design del romero en paleta Valeria (transición/sting) */}
       <Composition id="Val-RosemaryHero" component={RosemaryHero} durationInFrames={300} fps={30} width={1920} height={1080} />
+      <Composition id="Radiador" component={MainRadiador} durationInFrames={TOTAL_FRAMES_RADIADOR} fps={30} width={1920} height={1080} />
     </>
   );
 };
