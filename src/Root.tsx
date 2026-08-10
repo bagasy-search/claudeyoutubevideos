@@ -4,6 +4,7 @@ import { RosemaryHero } from "./valeria/RosemaryHero";
 import { MainCollageDemo, TOTAL_FRAMES_COLLAGE } from "./VideoEdit/RemedioCollage";
 import { MainVj7hqe8koadv, TOTAL_FRAMES_VJ7HQE8KOADV } from "./VideoEdit/Main_vj7hqe8koadv";
 import { MainWarmpart5, TOTAL_FRAMES_WARMPART5 } from "./VideoEdit/Main_warmpart5";
+import { MainE7h, TOTAL_FRAMES_E7H } from "./VideoEdit/Main_e7h";
 import { MainOillamp1, TOTAL_FRAMES_OILLAMP1 } from "./VideoEdit/Main_oillamp1";
 import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
@@ -571,6 +572,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Cemento" component={MainCemento} durationInFrames={TOTAL_FRAMES_CEMENTO} fps={30} width={1920} height={1080} />
       {/* Humedad/salitre en la pared — "La Humedad Que Sube NUNCA Vuelve" · AVATAR Tomás · clips-first */}
       <Composition id="Salitre" component={MainSalitre} durationInFrames={TOTAL_FRAMES_SALITRE} fps={30} width={1920} height={1080} />
+      <Composition id="E7h" component={MainE7h} durationInFrames={TOTAL_FRAMES_E7H} fps={30} width={1920} height={1080} />
       {/* AC del auto — "El Aire De Tu Auto Enfría Como Nuevo Con Esto De $10" · AVATAR Tomás · clips-first */}
       <Composition id="Acauto" component={MainAcauto} durationInFrames={TOTAL_FRAMES_ACAUTO} fps={30} width={1920} height={1080} />
       {/* Reviví tu tierra muerta con $1 (estiércol, bajo esfuerzo) */}
