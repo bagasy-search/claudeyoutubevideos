@@ -18,6 +18,24 @@ const MODEL = process.env.GPTIMG_MODEL || "gpt-image-2";
 const list = JSON.parse(fs.readFileSync(listArg, "utf8"));
 fs.mkdirSync(outArg, { recursive: true });
 const has = (name) => ["png", "jpg", "jpeg", "webp"].some((e) => fs.existsSync(path.join(outArg, `${name}.${e}`)));
+
+// ── AUTO-REF del PRESENTADOR ───────────────────────────────────────────────────────────────────
+// Si existe public/ref_<slug>.png y el item es del presentador, se adjunta SOLO (endpoint /edits →
+// mantiene su cara). Antes dependía de que el agente pusiera "ref" a mano en cada item y se le
+// olvidaba: en un video real extrajo el ref y generó las 342 imágenes sin usarlo ni una vez, así que
+// el presentador nunca aparecía haciendo lo que narra (y sin ancla, el modelo inventaba gente).
+// Slug: del nombre de la lista (prompts_<slug>_*.json) o env SLUG. Override de match: REF_MATCH.
+const SLUG = process.env.SLUG || (path.basename(listArg).match(/(?:prompts?|lista|list)_([a-z0-9]{6,})/i) || [])[1] || "";
+const AUTO_REF = SLUG && fs.existsSync(`public/ref_${SLUG}.png`) ? `public/ref_${SLUG}.png` : null;
+const REF_MATCH = new RegExp(process.env.REF_MATCH || "federer|tom[aá]s|presentador|narrador|doctor|\\bdr[._ ]|host|avatar", "i");
+if (AUTO_REF) {
+  let n = 0;
+  for (const it of list) {
+    if (!it.ref && REF_MATCH.test(`${it.name || ""} ${it.prompt || ""}`)) { it.ref = AUTO_REF; n++; }
+  }
+  console.log(`↳ auto-ref: ${AUTO_REF} aplicado a ${n}/${list.length} items del presentador`);
+}
+
 const todo = list.filter((it) => it.name && it.prompt && !has(it.name));
 console.log(`gpt-image (${MODEL}, ${qualArg}, ${sizeArg}) · total ${list.length} · a generar ${todo.length} · ya existen ${list.length - todo.length}`);
 
@@ -30,7 +48,8 @@ async function gen(it, attempt = 1) {
     if (it.ref && fs.existsSync(it.ref)) {
       // edits: mantiene la identidad de la foto de referencia (planos de Levi)
       const fd = new FormData();
-      fd.set("model", MODEL); fd.set("prompt", it.prompt); fd.set("n", "1"); fd.set("size", sizeArg); fd.set("quality", qualArg);
+      fd.set("model", MODEL); fd.set("prompt", it.prompt); fd.set("n", "1"); fd.set("size", it.size || sizeArg); fd.set("quality", qualArg);
+      if (it.background) fd.set("background", it.background);
       const rfn = it.ref.split(/[\\/]/).pop();
       const mime = /\.png$/i.test(rfn) ? "image/png" : /\.webp$/i.test(rfn) ? "image/webp" : "image/jpeg";
       fd.set("image", new Blob([fs.readFileSync(it.ref)], { type: mime }), rfn);
@@ -39,7 +58,7 @@ async function gen(it, attempt = 1) {
       res = await fetch("https://api.openai.com/v1/images/generations", {
         method: "POST",
         headers: { "Authorization": `Bearer ${KEY}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ model: MODEL, prompt: it.prompt, n: 1, size: sizeArg, quality: qualArg }),
+        body: JSON.stringify({ model: MODEL, prompt: it.prompt, n: 1, size: it.size || sizeArg, quality: qualArg, ...(it.background ? { background: it.background } : {}) }),
       });
     }
     if (!res.ok) {
