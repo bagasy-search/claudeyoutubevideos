@@ -19,7 +19,7 @@ import {
 import {BAS, FONT_DISPLAY, FONT_SANS, rgba} from './theme';
 import {RenalCarousel} from './BastidaCarousel';
 import {BenefitScene} from './BenefitScene';
-import {FearToCalm, HandUnderline, PresenterIntro, BRoll, SideIllustration} from './BastidaFX';
+import {FearToCalm, HandUnderline, PresenterIntro, BRoll, BClip, SideIllustration} from './BastidaFX';
 import {ChapterAguaLimon} from './ChapterAguaLimon';
 import {ChapterScene, CHAPTER_CONFIGS} from './ChapterScene';
 import {CreatininaScene} from './CreatininaScene';
@@ -86,7 +86,7 @@ const GuideCTA: React.FC = () => {
 /* ============================ BEATS (frames de la transcripción) ============================ */
 const DEPTH: {from: number; dur: number; node: React.ReactNode; flash?: boolean}[] = [
   // --- MINUTO 1 ---
-  {from: 0, dur: 250, node: <RenalCarousel cards={CARDS} reveals={[]} introDur={42} title="5 bebidas que sus riñones necesitan" />},
+  {from: 156, dur: 150, node: <RenalCarousel cards={CARDS} reveals={[]} introDur={30} title="5 bebidas que sus riñones necesitan" />},
   {from: 560, dur: 125, node: <RenalCarousel cards={CARDS} reveals={[]} teaseIndex={2} introDur={30} title="Una de estas cinco…" />},
   {from: 690, dur: 68, node: <BenefitScene variant="farmacia" />},
   {from: 758, dur: 66, node: <BenefitScene variant="fortuna" />},
@@ -108,26 +108,32 @@ const DEPTH: {from: number; dur: number; node: React.ReactNode; flash?: boolean}
   {from: 24720, dur: 220, node: <FoodVerdictScene />},
 ];
 
-const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: number}[] = [
-  {from: 892, dur: 102, img: 'bas_broll_labreport', caption: 'Creatinina alta', kb: 1},
-  {from: 1006, dur: 92, img: 'bas_broll_worried_senior', caption: 'Miles de pacientes', kb: -1},
-  {from: 2100, dur: 120, img: 'bas_broll_kidney_anatomy', caption: 'Dos filtros', kb: 1},
-  {from: 2690, dur: 130, img: 'bas_broll_filter', caption: 'Se va tapando', kb: -1},
-  {from: 4160, dur: 110, img: 'bas_broll_blood_pressure', caption: 'La presión, el azúcar…', kb: 1},
-  {from: 5540, dur: 150, img: 'bas_broll_hands_report', caption: 'Doña Carmen, 72', kb: -1},
-  {from: 5960, dur: 120, img: 'bas_broll_dialysis', caption: 'Diálisis', kb: 1},
-  {from: 8540, dur: 150, img: 'bas_broll_lemon_squeeze', caption: 'Citrato', kb: -1},
+// clip → clip H3 (mp4 en public/broll/, movimiento real). img → foto quieta (BRoll Ken-Burns).
+const BROLL: {from: number; dur: number; clip?: string; img?: string; caption?: string; kb?: number}[] = [
+  // ── PRIMER MINUTO: cold open real + cortes densos ──
+  {from: 6, dur: 150, clip: 'bas_kitchen_5drinks_pan', caption: '5 bebidas comunes'},   // "cinco bebidas que tiene en la cocina"
+  {from: 300, dur: 120, clip: 'bas_hand_lemon_water', caption: 'Casi nadie las toma bien'}, // "las toma mal"
+  {from: 470, dur: 82, img: 'bas_broll_glass_water_hero', kb: 1},                         // "una de estas cinco…" (foto: clip preemptado por spot)
+  {from: 900, dur: 105, clip: 'bas_labreport', caption: 'Creatinina alta'},              // "creatinina alta"
+  {from: 1010, dur: 96, clip: 'bas_worried_senior', caption: 'Miles de pacientes'},      // "en la cara de miles de pacientes"
+  // ── RESTO: fotos → clips reales ──
+  {from: 2100, dur: 120, img: 'bas_broll_kidney_anatomy', caption: 'Dos filtros', kb: 1},         // diagrama → foto
+  {from: 2690, dur: 130, clip: 'bas_filter_clog', caption: 'Se va tapando'},
+  {from: 4160, dur: 110, clip: 'bas_blood_pressure', caption: 'La presión, el azúcar…'},
+  {from: 5540, dur: 150, clip: 'bas_hands_report_carmen', caption: 'Doña Carmen, 72'},
+  {from: 5960, dur: 120, clip: 'bas_dialysis_machine', caption: 'Diálisis'},
+  {from: 8540, dur: 150, clip: 'bas_lemon_squeeze', caption: 'Citrato'},
   {from: 10340, dur: 150, img: 'bas_broll_barley_grains', caption: 'Agua de cebada', kb: 1},
-  {from: 12320, dur: 150, img: 'bas_broll_ginger_root', caption: 'Antiinflamatorio', kb: -1},
-  {from: 14540, dur: 140, img: 'bas_broll_blood_pressure', caption: 'El enemigo: la presión', kb: 1},
-  {from: 15400, dur: 150, img: 'bas_broll_hibiscus_flowers', caption: 'Hibisco', kb: -1},
-  {from: 18140, dur: 150, img: 'bas_broll_glass_water_hero', caption: 'Agua', kb: 1},
-  {from: 19850, dur: 160, img: 'bas_broll_urine_chart', caption: 'El semáforo del cuerpo', kb: -1},
-  {from: 23060, dur: 150, img: 'bas_broll_swollen_ankles', caption: 'Hinchazón', kb: 1},
-  {from: 23510, dur: 150, img: 'bas_broll_tired_senior', caption: 'Cansancio', kb: -1},
+  {from: 12320, dur: 150, clip: 'bas_ginger_root', caption: 'Antiinflamatorio'},
+  {from: 14540, dur: 140, clip: 'bas_blood_pressure', caption: 'El enemigo: la presión'},
+  {from: 15400, dur: 150, clip: 'bas_hibiscus_tea', caption: 'Hibisco'},
+  {from: 18140, dur: 150, img: 'bas_broll_glass_water_hero', caption: 'Agua', kb: -1},
+  {from: 19850, dur: 160, img: 'bas_broll_urine_chart', caption: 'El semáforo del cuerpo', kb: -1}, // gráfico → foto
+  {from: 23060, dur: 150, clip: 'bas_swollen_ankles', caption: 'Hinchazón'},
+  {from: 23510, dur: 150, clip: 'bas_tired_senior', caption: 'Cansancio'},
   {from: 25040, dur: 120, img: 'bas_broll_cola', caption: 'Refrescos de cola', kb: 1},
   {from: 25450, dur: 130, img: 'bas_broll_coffee_excess', caption: 'Exceso de café', kb: -1},
-  {from: 28690, dur: 150, img: 'bas_broll_hands_report', caption: 'Doña Carmen', kb: 1},
+  {from: 28690, dur: 150, clip: 'bas_hands_report_carmen', caption: 'Doña Carmen'},
 ];
 
 const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
@@ -138,11 +144,12 @@ const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
   {from: 26380, dur: 150, node: <SideIllustration img="img/ill/bas_ill_water_drop.png" side="right" caption="Empiece por el vaso" dur={150} size={400} />},
   {from: 9783, dur: 120, node: <CautionChip text="Reflujo o anticoagulantes: consulte antes" />},
   {from: 21440, dur: 150, node: <CautionChip text="¿Diálisis o límite de líquido? Respételo" />},
-  {from: 29075, dur: 240, node: <GuideCTAScene />},
+  {from: 29075, dur: 240, node: <GuideCTAScene title="La guía completa de las 5 bebidas" thumbs={['img/ill/bas_ill_lemon_water.png', 'img/ill/bas_ill_barley.png', 'img/ill/bas_ill_ginger.png', 'img/ill/bas_ill_hibiscus.png', 'img/ill/bas_ill_water_drop.png']} />},
 ];
 
 const SFX: {at: number; name: string; vol?: number}[] = [
-  {at: 6, name: 'carousel_whoosh'}, {at: 23, name: 'carousel_fanout'}, {at: 33, name: 'carousel_lock', vol: 0.5},
+  {at: 6, name: 'carousel_whoosh', vol: 0.4}, {at: 300, name: 'carousel_whoosh', vol: 0.35}, {at: 470, name: 'carousel_whoosh', vol: 0.3},
+  {at: 156, name: 'carousel_whoosh'}, {at: 173, name: 'carousel_fanout'}, {at: 183, name: 'carousel_lock', vol: 0.5},
   {at: 566, name: 'note_sparkle', vol: 0.5},
   {at: 690, name: 'chip_pop'}, {at: 720, name: 'chip_strike'}, {at: 758, name: 'chip_pop'}, {at: 788, name: 'chip_strike'},
   {at: 892, name: 'carousel_whoosh', vol: 0.35}, {at: 1006, name: 'carousel_whoosh', vol: 0.35},
@@ -175,7 +182,11 @@ export const MainBastida: React.FC = () => {
       {/* B-ROLL (cutaways) */}
       {BROLL.map((b, i) => (
         <Sequence key={`br${i}`} from={b.from} durationInFrames={b.dur}>
-          <BRoll img={b.img} caption={b.caption} dur={b.dur} kb={b.kb ?? 1} />
+          {b.clip ? (
+            <BClip clip={b.clip} caption={b.caption} dur={b.dur} />
+          ) : (
+            <BRoll img={b.img} caption={b.caption} dur={b.dur} kb={b.kb ?? 1} />
+          )}
         </Sequence>
       ))}
 
