@@ -188,8 +188,9 @@ export const RenalCarousel: React.FC<RenalCarouselProps> = ({
           const z = Math.round(depth * 100);
           const tiltY = -sinT * 26; // la tarjeta "mira" al centro
 
-          // entrada por tarjeta
-          const appearStart = i === 0 ? 0 : 0.42 + i * 0.12;
+          // entrada por tarjeta (cap <1: con >5 tarjetas, 0.42+i*0.12 pasaba 1 y el
+          // inputRange de interpolate quedaba decreciente [1.02,1] → crash. Con ≤5 no cambia.)
+          const appearStart = i === 0 ? 0 : Math.min(0.42 + i * 0.12, 0.94);
           const appear = interpolate(eg, [appearStart, Math.min(appearStart + 0.3, 1)], [0, 1], {
             extrapolateLeft: 'clamp',
             extrapolateRight: 'clamp',
