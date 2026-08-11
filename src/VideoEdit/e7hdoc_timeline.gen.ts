@@ -321,7 +321,7 @@ export const TIMELINE: Beat[] = [
   "s": 71.55,
   "bg": {
    "src": "broll/e7hd_pro_survey.mp4",
-   "from": 0.81
+   "from": 2.01
   },
   "ov": [
    {
@@ -5080,7 +5080,7 @@ export const TIMELINE: Beat[] = [
   "s": 1411.57,
   "bg": {
    "src": "broll/e7hd_gt_stone_pillar.mp4",
-   "from": 0.13,
+   "from": 1.66,
    "darken": 0.46
   },
   "ov": [
@@ -5252,7 +5252,7 @@ export const TIMELINE: Beat[] = [
   "s": 1450.9,
   "bg": {
    "src": "broll/e7hd_pro_survey.mp4",
-   "from": 3.24
+   "from": 4.44
   },
   "ov": [
    {
