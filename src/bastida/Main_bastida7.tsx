@@ -67,6 +67,49 @@ const CautionChip: React.FC<{text?: string}> = ({text = 'Consulte a su médico'}
   );
 };
 
+/* ---- H3Cut: cutaway de clip real (H3) full-bleed con grade navy + caption + audio nativo duckeado ---- */
+const H3Cut: React.FC<{clip: string; dur: number; caption?: string; kb?: number}> = ({clip, dur, caption, kb = 1}) => {
+  const f = useCurrentFrame();
+  // push-in muy leve (el clip ya trae movimiento propio); corte limpio
+  const scale = interpolate(f, [0, dur], [1.06, 1.12 + 0.02 * kb], {extrapolateRight: 'clamp'});
+  const capP = interpolate(f, [6, 18, dur - 12, dur - 2], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{background: '#05161f', overflow: 'hidden'}}>
+      <AbsoluteFill style={{transform: `scale(${scale})`}}>
+        <OffthreadVideo src={staticFile(clip)} volume={0.15} muted={false} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+      </AbsoluteFill>
+      {/* grade navy de marca */}
+      <AbsoluteFill style={{background: `linear-gradient(160deg, ${rgba(BAS.bgPanel, 0.28)}, ${rgba(BAS.bgDeep, 0.36)})`, mixBlendMode: 'soft-light', pointerEvents: 'none'}} />
+      <AbsoluteFill style={{background: `radial-gradient(120% 115% at 50% 46%, transparent 52%, ${rgba(BAS.bgEdge, 0.55)} 100%)`, pointerEvents: 'none'}} />
+      {caption && (
+        <div style={{position: 'absolute', left: 60, bottom: 70, opacity: capP, transform: `translateY(${interpolate(capP, [0, 1], [14, 0])}px)`}}>
+          <div style={{display: 'inline-flex', alignItems: 'center', gap: 14, background: rgba('#05161f', 0.5), borderLeft: `4px solid ${BAS.aqua}`, padding: '10px 22px', borderRadius: 6}}>
+            <span style={{fontFamily: FONT_SANS, fontSize: 34, fontWeight: 700, color: '#F4F1E9', letterSpacing: 0.3}}>{caption}</span>
+          </div>
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};
+
+// ⚡ PRIMER MINUTO — cutaways H3 reales (corte denso, tajante). clip = broll/<slug>_<name>.mp4
+const H1CLIPS: {from: number; dur: number; clip: string; caption?: string; kb?: number}[] = [
+  {from: 277, dur: 95, clip: 'broll/bastida_7bebidas_h1_pour_water.mp4', caption: 'Su primera medicina', kb: 1},
+  {from: 372, dur: 100, clip: 'broll/bastida_7bebidas_h1_pills_spill.mp4', caption: '…como una pastilla', kb: -1},
+  {from: 472, dur: 88, clip: 'broll/bastida_7bebidas_h1_water_macro.mp4', kb: 1},
+  {from: 560, dur: 140, clip: 'broll/bastida_7bebidas_h1_kidney_hold.mp4', caption: 'Un filtro que se puede ayudar', kb: -1},
+  // 700-868 avatar full ("présteme atención, acá viene lo importante")
+  {from: 868, dur: 97, clip: 'broll/bastida_7bebidas_h1_counter_drinks.mp4', caption: 'Comunes y baratas', kb: 1},
+  {from: 965, dur: 95, clip: 'broll/bastida_7bebidas_h1_lemon_squeeze.mp4', kb: -1},
+  {from: 1060, dur: 95, clip: 'broll/bastida_7bebidas_h1_ginger_slice.mp4', kb: 1},
+  {from: 1155, dur: 125, clip: 'broll/bastida_7bebidas_h1_cola_pour.mp4', caption: 'La mayoría las toma mal', kb: -1},
+  {from: 1280, dur: 80, clip: 'broll/bastida_7bebidas_h1_senior_mug.mp4', kb: 1},
+  // 1360-1510 tease carousel (la número 7)
+  {from: 1510, dur: 115, clip: 'broll/bastida_7bebidas_h1_cranberry_pour.mp4', caption: 'La número 7', kb: -1},
+  {from: 1625, dur: 95, clip: 'broll/bastida_7bebidas_h1_sugar_spoon.mp4', caption: 'Pura azúcar', kb: 1},
+  // 1720+ avatar ("pero vamos con orden") → PresenterIntro 1902
+];
+
 /* ============================ BEATS (frames de la transcripción) ============================ */
 const DEPTH: {from: number; dur: number; node: React.ReactNode; flash?: boolean}[] = [
   // HOOK — carrusel de 7 con candado (open loop)
@@ -130,7 +173,7 @@ const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
   {from: 14450, dur: 140, node: <CautionChip text="¿Potasio o creatinina alta? Consulte antes" />},
   {from: 18010, dur: 130, node: <CautionChip text="¿Toma anticoagulantes? Con medida" />},
   {from: 28816, dur: 120, node: <HandUnderline phrase="está a tiempo" note="a tiempo" />},
-  {from: 29291, dur: 250, node: <GuideCTAScene />},
+  {from: 29291, dur: 250, node: <GuideCTAScene title="La guía completa de las 7 bebidas" thumbs={['img/ill/bas_ill_lemon_water.png', 'img/ill/bas_ill_hibiscus.png', 'img/ill/bas_ill_barley.png', 'img/ill/bas_ill_ginger.png', 'img/ill/bas_ill_greentea.png', 'img/ill/bas_ill_cranberry.png', 'img/ill/bas_ill_water_drop.png']} />},
 ];
 
 const SFX: {at: number; name: string; vol?: number}[] = [
@@ -168,6 +211,13 @@ export const MainBastida7: React.FC = () => {
       {BROLL.map((b, i) => (
         <Sequence key={`br${i}`} from={b.from} durationInFrames={b.dur}>
           <BRoll img={b.img} caption={b.caption} dur={b.dur} kb={b.kb ?? 1} />
+        </Sequence>
+      ))}
+
+      {/* ⚡ PRIMER MINUTO — cutaways H3 reales (corte denso) */}
+      {H1CLIPS.map((c, i) => (
+        <Sequence key={`h1${i}`} from={c.from} durationInFrames={c.dur}>
+          <H3Cut clip={c.clip} dur={c.dur} caption={c.caption} kb={c.kb} />
         </Sequence>
       ))}
 
