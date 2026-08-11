@@ -245,8 +245,8 @@ export const RenalCarousel: React.FC<RenalCarouselProps> = ({
               >
                 {/* imagen (se desenfoca si está bloqueada) */}
                 <div style={{position: 'absolute', inset: 0, ...imgStyle, filter: `blur(${lockBlur}px) saturate(${0.7 + u * 0.4})`, transform: `scale(${1.06 - u * 0.06})`}} />
-                {/* velo frosted mientras está bloqueada */}
-                <div style={{position: 'absolute', inset: 0, background: rgba('#eaf3f5', interpolate(u, [0, 1], [0.35, 0])), backdropFilter: 'blur(2px)'}} />
+                {/* velo frosted mientras está bloqueada (sin backdrop-filter: ×5 el render en el farm) */}
+                <div style={{position: 'absolute', inset: 0, background: rgba('#eaf3f5', interpolate(u, [0, 1], [0.42, 0]))}} />
                 {/* highlight superior de vidrio */}
                 <div style={{position: 'absolute', top: 0, left: 0, right: 0, height: '45%', background: `linear-gradient(${rgba('#ffffff', 0.5)}, transparent)`}} />
                 {/* label del nombre (aparece al revelar) */}
