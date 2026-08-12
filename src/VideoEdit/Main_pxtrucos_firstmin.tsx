@@ -21,7 +21,7 @@ type Cue = { key: string; start: number; dur: number; el: (d: number) => ReactNo
 
 // helper para clips reales
 const shot = (src: string, clipDur: number) => (d: number) => (
-  <RawShot durationInFrames={d} src={`broll/${src}.mp4`} hue="red" darken={0.06} clipDur={clipDur} />
+  <RawShot durationInFrames={d} src={`broll/pxtrucosfm_${src}.mp4`} hue="red" darken={0.06} clipDur={clipDur} />
 );
 
 // ── FULL-BLEED: clips reales (footage) + los 2 componentes full-bleed (botella, abanico) ──
