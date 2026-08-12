@@ -148,9 +148,9 @@ const HOOK_CLIPS = [
   { ms: 24000, src: "pxwash_hook_fizz_macro",  seg: 3.2 }, // macro del fizz vivo
   { ms: 33000, src: "pxwash_hook_roof_dramatic", seg: 3.4 }, // rayas de techo cine
   { ms: 68000, src: "pxwash_hook_point_siding", seg: 3.0 }, // señala el film verde del siding
-  { ms: 88000, src: "pxwash_hook_roof_dramatic", seg: 3.2 }, // zona muerta 78–117: rompe el avatar largo
-  { ms: 100000, src: "pxwash_hook_foam_pour",  seg: 3.2 }, // re-promesa antes del abanico
-  { ms: 110000, src: "pxwash_hook_fizz_macro", seg: 3.0 }, // último punch antes de LightTrailCards
+  { ms: 88000, src: "pxwash_alt_roof_2",     seg: 3.2 }, // zona muerta 78–117: rompe el avatar largo (footage REAL, no repetir el H3)
+  { ms: 100000, src: "pxwash_fill_foam_1",   seg: 3.2 }, // re-promesa antes del abanico (foam real; el foam_pour H3 queda solo en 14000)
+  { ms: 110000, src: "pxwash_fill_foam_3",   seg: 3.0 }, // último punch antes de LightTrailCards (fizz real; el fizz_macro H3 queda solo en 24000)
 ];
 const HOOK_BOTTLE = { ms: 6500, src: "pxwash_hook_bottle_up", seg: 2.4 }; // botella a cámara, apertura fuerte
 HOOK_CLIPS.push(HOOK_BOTTLE);
@@ -175,6 +175,78 @@ const TYPEBESIDE = {
   986000:  { side: "right", title: "Test first",    lines: ["A hidden corner", "Bottom of a cushion", "Check colorfastness"] },
   1119000: { side: "left",  title: "Also works on", lines: ["Recycling bin", "Base of a grill", "Dog patio area"] },
 };
+
+// ════════════════════════════════════════════════════════════════════════════
+// RE-EDIT INMERSIVO — b-roll real casi CONTINUO bajo la narración; el AVATAR full
+// es un ACENTO (aperturas/giros/remates), no el relleno. Baja avatar-full 49%→~28%.
+// ════════════════════════════════════════════════════════════════════════════
+
+// ── REEMPLAZO turbo-H3 → footage REAL (rule 3): SOLO los H3 macro (fizz/roof/moss),
+//    NUNCA los H3 con el presentador en cuadro (esos son el diferencial y quedan).
+//    Keyed por el nombre derivado del clip del plan → asset real verificado.
+const CLIP_OVERRIDE = {
+  pxwash_quimica_201: "pxwash_fill_moss_1",   // macro de alga/biofilm real
+  pxwash_trick1_230:  "pxwash_alt_siding_1",  // film verde en siding real
+  pxwash_trick2_355:  "pxwash_alt_deck_2",    // deck gris/verde real
+  pxwash_trick3_499:  "pxwash_fill_foam_1",   // fizz sobre superficie real
+  pxwash_trick5_648:  "pxwash_alt_roof_1",    // rayas negras de techo real (beat estrella #5)
+  pxwash_trick8_1003: "pxwash_alt_pavers_2",  // musgo en juntas real
+};
+
+// ── ACENTOS de avatar full: momentos tipo:"avatar" que SOSTIENEN la cara todo el
+//    tramo (apertura, giro emocional, remate). El resto de los momentos avatar
+//    ceden a b-roll tras un lead corto de cara (FACE_CAP). ms del plan.
+const ACCENT = new Set([
+  0,       // apertura: botella a cámara
+  78000,   // hook: complicidad "the green stuff is alive"
+  130000,  // "stick around" — arranca retención
+  221000,  // química: remate de sección
+  511000,  // trick3: "kill first, then rinse" — el patrón central
+  551000,  // trick3: "let that sink in"
+  790000,  // trick5: remate honesto del $400
+  807000,  // midroll: pivote "pump the brakes"
+  1240000, // cierre: misión del canal
+  1290000, // cierre: complicidad final
+]);
+const FACE_CAP = 8.0;    // seg de cara al inicio de un momento avatar NO-acento; luego b-roll
+const ACCENT_CAP = 14.0; // seg máx de cara en un acento antes de ceder a b-roll
+const CONTENT_FACE = 3.8; // seg de cara al abrir un hueco tras una demo (breve "a cámara" y corte al mundo)
+const FILL_MIN = 1.8;    // hueco mínimo (s) que vale la pena rellenar con b-roll
+const FILL_LEN = 5.0;    // largo objetivo de cada corte de relleno (respira ~4.5–6s)
+
+// ── POOL de relleno on-topic por sección (clips reales + FOTOS con Ken-Burns).
+//    Mezcla acción (manos/espuma/pressure), texturas del problema y las fotos de
+//    closeup exacto que el video no tenía. Rotación evita repetir consecutivo.
+const isPhoto = (n) => n.startsWith("pxwash_photo_");
+const FILL = {
+  hook:      ["pxwash_fill_pressure_3", "pxwash_fill_softwash_1", "pxwash_fill_moss_1", "pxwash_alt_roof_1", "pxwash_fill_house_1", "pxwash_fill_foam_2", "pxwash_alt_concrete_1", "pxwash_fill_house_3"],
+  quimica:   ["pxwash_fill_foam_2", "pxwash_fill_rinse_1", "pxwash_fill_shrubs_1", "pxwash_fill_rinse_2", "pxwash_fill_shrubs_2", "pxwash_fill_house_2"],
+  trick1:    ["pxwash_alt_siding_1", "pxwash_photo_sidingalgae_1", "pxwash_fill_sprayer_1", "pxwash_fill_softwash_1", "pxwash_photo_sidingalgae_2", "pxwash_fill_shrubs_1", "pxwash_fill_foam_1", "pxwash_fill_house_2"],
+  trick2:    ["pxwash_alt_deck_2", "pxwash_photo_deckmildew_1", "pxwash_fill_hands_scrub_1", "pxwash_photo_deckmildew_2", "pxwash_fill_foam_3", "pxwash_fill_pressure_3"],
+  trick3:    ["pxwash_alt_concrete_1", "pxwash_photo_concretefilm_1", "pxwash_alt_concrete_2", "pxwash_fill_pressure_3", "pxwash_fill_foam_2", "pxwash_fill_rinse_2"],
+  trick4:    ["pxwash_alt_rust_1", "pxwash_photo_ruststain_1", "pxwash_alt_oil_1", "pxwash_photo_oilstain_1", "pxwash_fill_pour_1", "pxwash_photo_ruststain_2", "pxwash_fill_hands_scrub_1", "pxwash_fill_foam_1"],
+  trick5:    ["pxwash_alt_roof_1", "pxwash_photo_roofstreaks_2", "pxwash_alt_roof_2", "pxwash_fill_ladder_1", "pxwash_fill_sprayer_2", "pxwash_fill_ladder_2", "pxwash_fill_rinse_1"],
+  midroll:   ["pxwash_fill_tools_2", "pxwash_fill_house_1", "pxwash_fill_foam_2", "pxwash_fill_sunny_patio_1", "pxwash_fill_house_3", "pxwash_fill_pressure_3", "pxwash_fill_softwash_1", "pxwash_fill_hands_gloves_1"],
+  trick6:    ["pxwash_alt_fence_2", "pxwash_photo_fencemildew_1", "pxwash_alt_fence_1", "pxwash_photo_fencemildew_2", "pxwash_fill_sprayer_1", "pxwash_fill_foam_3"],
+  trick7:    ["pxwash_alt_cushion_1", "pxwash_photo_cushionmildew_1", "pxwash_alt_awning_1", "pxwash_fill_sunny_patio_1"],
+  trick8:    ["pxwash_alt_pavers_2", "pxwash_photo_mossjoints_1", "pxwash_photo_jointsand_1", "pxwash_fill_moss_1", "pxwash_photo_jointsand_2", "pxwash_fill_foam_2", "pxwash_fill_hands_scrub_1"],
+  trick9:    ["pxwash_alt_trash_1", "pxwash_photo_bingrime_1", "pxwash_fill_hose_1", "pxwash_photo_bingrime_2", "pxwash_fill_rinse_1"],
+  seguridad: ["pxwash_fill_ladder_2", "pxwash_fill_ladder_1", "pxwash_fill_hands_gloves_1", "pxwash_fill_foam_1", "pxwash_fill_house_1"],
+  cierre:    ["pxwash_fill_tools_2", "pxwash_fill_sunny_patio_1", "pxwash_fill_house_3", "pxwash_fill_hands_gloves_1"],
+};
+const SEC_BOUNDS = plan.secciones.map((s) => ({ id: s.id, a: s.msStart / 1000, b: s.msEnd / 1000 }));
+const sectionOf = (t) => { for (const s of SEC_BOUNDS) if (t >= s.a && t < s.b) return s.id; return SEC_BOUNDS[SEC_BOUNDS.length - 1].id; };
+const _fillCursor = {};
+function pickFill(section, avoid) {
+  const pool = FILL[section] || FILL.midroll;
+  if (_fillCursor[section] == null) _fillCursor[section] = -1;
+  for (let k = 0; k < pool.length; k++) {
+    _fillCursor[section] = (_fillCursor[section] + 1) % pool.length;
+    const cand = pool[_fillCursor[section]];
+    if (cand !== avoid) return cand;
+  }
+  return pool[0];
+}
 
 // ── recorrer el plan → momentos ordenados (con su ms, tipo, start real) ─────────
 const moments = [];
@@ -238,7 +310,12 @@ for (const m of moments) {
   }
   if (m.tipo === "clip") {
     const name = `${SLUG}_${m.section}_${Math.round(m.ms / 1000)}`;
-    beats.push({ id: name, start: m.start, dur, kind: "raw", src: `broll/${name}.mp4`, hue: "red", darken: 0.06, noSplit: true });
+    // rule 3: turbo-H3 macro (fizz/roof/moss) → footage REAL más nítido; avatar-H3 intocado.
+    const src = CLIP_OVERRIDE[name] || name;
+    const ph = isPhoto(src);
+    beats.push(ph
+      ? { id: name, start: m.start, dur, kind: "raw", src: `img/${src}.png`, hue: "red", darken: 0.05, noSplit: true, fit: "blur", zoom: [1.06, 1.16] }
+      : { id: name, start: m.start, dur, kind: "raw", src: `broll/${src}.mp4`, hue: "red", darken: 0.06, noSplit: true });
     nClip++;
     continue;
   }
@@ -276,6 +353,55 @@ for (const m of moments) {
     continue;
   }
 }
+beats.sort((a, b) => a.start - b.start);
+
+// ── RE-EDIT INMERSIVO: B-ROLL REAL BAJO CADA TRAMO DE NARRACIÓN ─────────────────
+// Recorre la secuencia de momentos y rellena los HUECOS que hoy quedan como avatar
+// full con b-roll real on-topic (avatar hidden, la narración sigue). Regla:
+//   · momento CONTENIDO (clip/foto/componente) más corto que el hueco al próximo →
+//     el remanente se cubre ENTERO con b-roll (nada de cara en medio de una demo).
+//   · momento AVATAR → se conserva un lead de cara (FACE_CAP; acentos ACCENT_CAP) y
+//     el resto del tramo pasa a b-roll. Así el avatar full queda como ACENTO.
+// Cortes 4.5–6s, contiguos (sin slivers), FOTOS con Ken-Burns (fit blur + zoom).
+const fillBeats = [];
+function addFills(s0, e0, section) {
+  const s = +s0.toFixed(2), e = +e0.toFixed(2);
+  const L = +(e - s).toFixed(2);
+  if (L < FILL_MIN) return;
+  const n = Math.max(1, Math.round(L / FILL_LEN));
+  const step = +(L / n).toFixed(2);
+  let last = null;
+  for (let k = 0; k < n; k++) {
+    const cs = +(s + k * step).toFixed(2);
+    const cd = k === n - 1 ? +(e - cs).toFixed(2) : step;
+    if (cd < 1.2) continue;
+    const name = pickFill(section, last); last = name;
+    fillBeats.push(isPhoto(name)
+      ? { id: `fill_${Math.round(cs * 100)}`, start: cs, dur: cd, kind: "raw", src: `img/${name}.png`, hue: "red", darken: 0.05, noSplit: true, fit: "blur", zoom: [1.06, 1.16] }
+      : { id: `fill_${Math.round(cs * 100)}`, start: cs, dur: cd, kind: "raw", src: `broll/${name}.mp4`, hue: "red", darken: 0.06, noSplit: true });
+  }
+}
+for (let i = 0; i < moments.length; i++) {
+  const m = moments[i];
+  const nextStart = i + 1 < moments.length ? moments[i + 1].start : TOTAL;
+  if (m.tipo === "avatar") {
+    const gap = +(nextStart - m.start).toFixed(2);
+    const face = ACCENT.has(m.ms) ? Math.min(gap, ACCENT_CAP) : Math.min(gap, FACE_CAP);
+    addFills(m.start + face, nextStart, sectionOf(m.start));
+  } else {
+    // hueco tras una demo: breve lead de cara (el presentador remata a cámara) y al mundo.
+    const end = +(m.start + (m.dur || 0)).toFixed(2);
+    const lead = nextStart - end > CONTENT_FACE + FILL_MIN ? CONTENT_FACE : 0;
+    if (nextStart - (end + lead) >= FILL_MIN) addFills(end + lead, nextStart, sectionOf(m.start));
+  }
+}
+// id único garantizado
+{
+  const seen = new Set(beats.map((b) => b.id));
+  for (const b of fillBeats) { let id = b.id, k = 1; while (seen.has(id)) id = `${b.id}_${k++}`; b.id = id; seen.add(id); }
+}
+let nFill = fillBeats.length, nFillPhoto = fillBeats.filter((b) => b.src.startsWith("img/")).length;
+beats.push(...fillBeats);
 beats.sort((a, b) => a.start - b.start);
 
 // ── FIX #2 GLITCH: transición glitch suave (~0.4s) en los cortes de sección + tras el
@@ -353,6 +479,24 @@ const fullS = (() => {
   for (let i = 0; i < windows.length - 1; i++) if (windows[i].mode === "full") s += windows[i + 1].start - windows[i].start;
   return Math.round(s);
 })();
-console.log(`beats ${beats.length}  ·  clips ${nClip}  ·  hookH3 ${nHook}  ·  imgs ${nImg}  ·  peróxido ${nPx}  ·  premium ${nPrem}  ·  beside ${nBeside}  ·  glitch ${nGlitch}  ·  avatar-momentos ${nAvatar}  ·  sin-mapear ${nMiss}`);
+// ── _pxwash_assets.txt (manifiesto del farm) — TODOS los src usados, 0 faltantes ──
+{
+  const used = [];
+  const seen = new Set();
+  for (const b of beats) {
+    if (!b.src || seen.has(b.src)) continue;
+    seen.add(b.src); used.push(b.src);
+    if (/\.(png|jpg|jpeg)$/i.test(b.src)) {
+      const blur = b.src.replace(/\.(png|jpg|jpeg)$/i, "_blur.jpg");
+      if (fs.existsSync(`public/${blur}`) && !seen.has(blur)) { seen.add(blur); used.push(blur); }
+    }
+  }
+  const missing = used.filter((p) => !fs.existsSync(`public/${p}`));
+  fs.writeFileSync(`_${SLUG}_assets.txt`, used.join("\n") + "\n");
+  if (missing.length) { console.error(`✖ ASSETS FALTANTES EN DISCO (${missing.length}):`, missing.join(", ")); process.exit(1); }
+  console.log(`assets: ${used.length} archivos → _${SLUG}_assets.txt  ·  0 faltantes ✓`);
+}
+
+console.log(`beats ${beats.length}  ·  clips ${nClip}  ·  fills ${nFill} (fotos ${nFillPhoto})  ·  hookH3 ${nHook}  ·  imgs ${nImg}  ·  peróxido ${nPx}  ·  premium ${nPrem}  ·  beside ${nBeside}  ·  glitch ${nGlitch}  ·  avatar-momentos ${nAvatar}  ·  sin-mapear ${nMiss}`);
 console.log(`dur ${(TOTAL / 60).toFixed(1)}min (${TOTAL}s)  ·  avatar full ${fullS}s (${Math.round(100 * fullS / TOTAL)}%)  ·  windows ${windows.length}`);
 console.log("componentes:", JSON.stringify(compCount));

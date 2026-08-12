@@ -14,6 +14,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
   interpolate,
+  interpolateColors,
   spring,
   staticFile,
 } from 'remotion';
@@ -143,100 +144,81 @@ const GlassFace: React.FC<{w: number; h: number; front?: boolean; number?: strin
 export const LightTrailCards: React.FC<{
   durationInFrames: number;
   eyebrow?: string;
-  phrase?: string;
+  phrase?: string; // bloques semánticos separados por "|"; *palabra* = serif itálica
   number?: string;
   cards?: number;
   images?: string[]; // 1 foto por carta (opcional), tratada B&N — la del truco correspondiente
   goldCard?: number; // índice de la carta que SOBRESALE y se vuelve DORADA
   goldAt?: number; // frame en que empieza el reveal dorado
   sfx?: boolean;
-}> = ({durationInFrames, eyebrow = '9 trucos con agua oxigenada', phrase = 'que los profesionales *no* te cuentan', number = '#1', cards = 9, images, goldCard, goldAt = 40, sfx = true}) => {
+}> = ({durationInFrames, eyebrow = '9 trucos con agua oxigenada', phrase = 'que los profesionales|*no* te cuentan', number = '#1', cards = 9, images, goldCard, goldAt = 40, sfx = true}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const prog = frame / durationInFrames;
+  const D = durationInFrames;
+  const eio = (a: number, b: number, t: number) => lerp(a, b, t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
 
-  // estela: se dibuja
-  const draw = interpolate(frame, [8, 50], [1, 0], CLAMP);
+  // FASES (gramática): arranca parcial → separa → dolly-in reencuadra → hold → salida.
+  const sep = interpolate(frame, [0, D * 0.36], [0.28, 1], CLAMP); // arranca PARCIALMENTE formado (28%)
+  const dolly = interpolate(frame, [0, D * 0.8], [0, 1], CLAMP); // dolly-in continuo (crece por perspectiva)
+  const truck = interpolate(frame, [D * 0.46, D * 0.82], [0, 1], CLAMP); // reencuadre: trucca a la izq, el frente se recorta
+  const exit = interpolate(frame, [D - 9, D], [0, 1], CLAMP); // salida óptica ANTES del corte
+  const micro = Math.sin(frame / 11) * (frame > D * 0.78 ? 3 : 0); // microdrift en el hold
+
+  // CÁMARA como grupo: dolly real (translateZ = crece por perspectiva, NO por escala) + baja + truck-izq
+  const gZ = eio(-140, 300, dolly); // hacia la cámara
+  const gY = eio(-30, 60, dolly) + micro; // baja apenas
+  const gX = eio(40, -360, truck) + micro; // trucca a la derecha → contenido a la IZQ, el frente se recorta
+  const gRotY = eio(-7, 6, frame / D);
+  const estelaDraw = interpolate(frame, [8, 50], [1, 0], CLAMP);
   const trailPath = 'M 120 780 C 480 740, 720 540, 1040 580 S 1560 620, 1880 300';
-
-  // CÁMARA: orbita lenta + push-in (nunca queda quieta)
-  const camY = interpolate(prog, [0, 1], [-13, 9], CLAMP);
-  const push = interpolate(prog, [0, 1], [0.96, 1.08], CLAMP);
-  const camX = interpolate(prog, [0, 1], [3, -4], CLAMP);
 
   const W = 300;
   const H = 210;
+  const mid = (cards - 1) / 2;
 
   return (
     <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 34%, #16171A 0%, #070708 55%, #000 100%)'}}>
-      {/* "#N" gigante fantasma detrás de la baraja */}
       <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none'}}>
-        <div style={{fontFamily: F_INTER, fontWeight: 900, fontSize: 620, color: 'rgba(255,255,255,0.035)', marginTop: 40, letterSpacing: -10}}>{number}</div>
+        <div style={{fontFamily: F_INTER, fontWeight: 900, fontSize: 620, color: 'rgba(255,255,255,0.035)', marginTop: 40, letterSpacing: -10, transform: `translateX(${gX * 0.3}px)`}}>{number}</div>
       </div>
 
-      {/* estela de luz (glow blanco + core) */}
-      <svg style={{position: 'absolute', inset: 0}} width="1920" height="1080" viewBox="0 0 1920 1080">
-        <path d={trailPath} fill="none" stroke={WHITE} strokeWidth={14} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={draw} style={{filter: 'blur(15px)', opacity: 0.55}} />
-        <path d={trailPath} fill="none" stroke={REDLITE} strokeWidth={20} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={draw} style={{filter: 'blur(24px)', opacity: 0.28}} />
-        <path d={trailPath} fill="none" stroke={WHITE} strokeWidth={3.2} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={draw} style={{filter: `drop-shadow(0 0 7px ${WHITE})`}} />
+      <svg style={{position: 'absolute', inset: 0, transform: `translate(${gX * 0.5}px, ${gY * 0.4}px)`}} width="1920" height="1080" viewBox="0 0 1920 1080">
+        <path d={trailPath} fill="none" stroke={WHITE} strokeWidth={14} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={estelaDraw} style={{filter: 'blur(15px)', opacity: 0.55}} />
+        <path d={trailPath} fill="none" stroke={REDLITE} strokeWidth={20} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={estelaDraw} style={{filter: 'blur(24px)', opacity: 0.28}} />
+        <path d={trailPath} fill="none" stroke={WHITE} strokeWidth={3.2} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={estelaDraw} style={{filter: `drop-shadow(0 0 7px ${WHITE})`}} />
         {['M 1770 350 l 44 -32 l -28 48', 'M 300 712 l -44 24 l 46 28'].map((d, i) => (
           <path key={i} d={d} fill="none" stroke={WHITE} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" opacity={interpolate(frame, [34, 48], [0, 0.9], CLAMP)} />
         ))}
       </svg>
 
-      {/* BARAJA 3D — perspectiva + cámara */}
-      <div style={{position: 'absolute', inset: 0, perspective: 1500, perspectiveOrigin: '50% 46%'}}>
-        <div
-          style={{
-            position: 'absolute',
-            left: '50%',
-            top: '54%',
-            transformStyle: 'preserve-3d',
-            transform: `translate(-50%,-50%) rotateX(9deg) rotateY(${camY}deg) rotateZ(${camX}deg) scale(${push})`,
-          }}
-        >
+      {/* BARAJA 3D — grupo con cámara-dolly */}
+      <div style={{position: 'absolute', inset: 0, perspective: 1400, perspectiveOrigin: '46% 46%'}}>
+        <div style={{position: 'absolute', left: '50%', top: '52%', transformStyle: 'preserve-3d', transform: `translate(-50%,-50%) translate3d(${gX}px, ${gY}px, ${gZ}px) rotateX(8deg) rotateY(${gRotY}deg)`}}>
           {Array.from({length: cards}).map((_, i) => {
-            const appear = spring({frame: frame - (10 + i * 4.5), fps, config: {damping: 15, mass: 0.85, stiffness: 150}});
-            // slot final del abanico — MÁS ABIERTO y separado: se lee como baraja 3D
-            // clara (antes step 62 → cartas encimadas). Ahora abren en arco amplio.
-            const mid = (cards - 1) / 2;
-            const off = i - mid; // centrado alrededor del medio
-            const fanX = off * 118;
-            const fanY = Math.abs(off) * 9 - 10; // leve V (las de los extremos caen)
-            const fanZ = -Math.abs(off) * 30;
-            const fanRot = off * 12; // abanico simétrico: giran hacia afuera
-            // entrada: nace face-on en el centro y rota/desliza a su slot (riffle)
-            const x = lerp(0, fanX, appear);
-            const yBase = lerp(0, fanY, appear);
-            const zBase = lerp(120, fanZ, appear);
-            const rotBase = lerp(0, fanRot, appear);
-            const mb = (1 - appear) * 34;
+            const off = i - mid;
+            // DESFASE POR CARTA: la delantera (más cerca del frente, |off| grande hacia la izquierda) se separa MÁS y ANTES
+            const stagger = spring({frame: frame - (6 + i * 3.2), fps, config: {damping: 16, mass: 0.85, stiffness: 150}});
+            const openF = Math.min(1, sep * (0.7 + 0.3 * (i / (cards - 1)))); // las de adelante abren un toque más
+            const fanX = off * 120 * openF;
+            const fanY = Math.abs(off) * 8 - 8;
+            const fanZ = -Math.abs(off) * 34;
+            const fanRot = off * 12;
+            const x = fanX * stagger;
+            const yBase = fanY * stagger;
+            const zBase = lerp(90, fanZ, stagger);
+            const rotBase = fanRot * stagger;
+            const mb = (1 - stagger) * 30;
 
-            // ── carta DORADA que sobresale del abanico y respira luz ──
             const isGold = goldCard != null && i === goldCard;
             const goldT = isGold ? interpolate(frame, [goldAt, goldAt + 16], [0, 1], CLAMP) : 0;
             const breath = 0.55 + 0.45 * Math.sin(frame / 9);
-            const y = yBase - goldT * 150; // sube fuera del abanico
-            const z = zBase + goldT * 220; // hacia la cámara
-            const rot = lerp(rotBase, 0, goldT); // se endereza y encara
+            const y = yBase - goldT * 150;
+            const z = zBase + goldT * 240;
+            const rot = lerp(rotBase, 0, goldT);
             const gscale = 1 + goldT * 0.14;
 
             return (
-              <div
-                key={i}
-                style={{
-                  position: 'absolute',
-                  left: -W / 2,
-                  top: -H / 2,
-                  width: W,
-                  height: H,
-                  transformStyle: 'preserve-3d',
-                  transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${rot}deg) scale(${gscale})`,
-                  opacity: appear,
-                  filter: mb > 0.6 ? `blur(${mb * 0.32}px)` : undefined,
-                  zIndex: isGold ? 999 : 100 - Math.abs(off),
-                }}
-              >
+              <div key={i} style={{position: 'absolute', left: -W / 2, top: -H / 2, width: W, height: H, transformStyle: 'preserve-3d', transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${rot}deg) scale(${gscale})`, opacity: stagger, filter: mb > 0.6 ? `blur(${mb * 0.32}px)` : undefined, zIndex: isGold ? 999 : 100 - Math.abs(off)}}>
                 <GlassFace w={W} h={H} front={i === 0} number={i === 0 ? number : undefined} image={images?.[i]} gold={goldT} goldGlow={goldT * breath} />
               </div>
             );
@@ -244,12 +226,46 @@ export const LightTrailCards: React.FC<{
         </div>
       </div>
 
-      <KineticCaption eyebrow={eyebrow} phrase={phrase} frame={frame} at={4} x={140} y={116} />
+      {/* TEXTO en el ESPACIO NEGATIVO — se corre a la derecha cuando el abanico trucca a la izq, en BLOQUES semánticos */}
+      <BlockCaption eyebrow={eyebrow} phrase={phrase} frame={frame} D={D} x={interpolate(truck, [0, 1], [150, 900], CLAMP)} y={150} />
 
-      {sfx && <SfxCue at={10} src={SFX.whoosh} volume={0.4} />}
-      {sfx && Array.from({length: cards}).map((_, i) => <SfxCue key={i} at={12 + i * 4} src={SFX.pop1} volume={0.22} />)}
+      {/* SALIDA ÓPTICA antes del corte: solariza + flash negativo */}
+      {exit > 0 && (
+        <AbsoluteFill style={{pointerEvents: 'none', mixBlendMode: 'difference', background: `rgba(255,255,255,${exit * 0.9})`, opacity: exit}} />
+      )}
+      {exit > 0.4 && <AbsoluteFill style={{pointerEvents: 'none', background: '#000', opacity: interpolate(exit, [0.4, 0.7, 1], [0, 0.85, 0], CLAMP)}} />}
+
+      {sfx && <SfxCue at={8} src={SFX.whoosh} volume={0.4} />}
+      {sfx && Array.from({length: cards}).map((_, i) => <SfxCue key={i} at={10 + i * 3.2} src={SFX.pop1} volume={0.2} />)}
       {sfx && goldCard != null && <SfxCue at={goldAt} src={SFX.sparkleClean} volume={0.5} />}
+      {sfx && <SfxCue at={Math.round(D - 9)} src={SFX.swish} volume={0.4} />}
     </AbsoluteFill>
+  );
+};
+
+/* Caption por BLOQUES semánticos (no palabra x palabra): frase con "|" separa bloques;
+   cada bloque entra en su fase, *palabra* = serif itálica (la emocional). */
+const BlockCaption: React.FC<{eyebrow?: string; phrase: string; frame: number; D: number; x: number; y: number}> = ({eyebrow, phrase, frame, D, x, y}) => {
+  const blocks = phrase.split('|').map((b) => b.trim()).filter(Boolean);
+  const ebOp = interpolate(frame, [4, 14], [0, 1], CLAMP);
+  return (
+    <div style={{position: 'absolute', left: x, top: y, width: 900, textAlign: 'left'}}>
+      {eyebrow && <div style={{fontFamily: F_INTER, fontWeight: 700, letterSpacing: 4, fontSize: 22, textTransform: 'uppercase', color: RED, opacity: ebOp, marginBottom: 12}}>{eyebrow}</div>}
+      <div style={{fontFamily: F_INTER, fontSize: 52, fontWeight: 600, lineHeight: 1.12, color: WHITE}}>
+        {blocks.map((blk, bi) => {
+          const at = D * 0.12 + bi * (D * 0.16);
+          const op = interpolate(frame, [at, at + 10], [0, 1], CLAMP);
+          const dy = interpolate(frame, [at, at + 10], [16, 0], CLAMP);
+          const ital = blk.startsWith('*') && blk.endsWith('*');
+          const txt = ital ? blk.slice(1, -1) : blk;
+          return (
+            <div key={bi} style={{opacity: op, transform: `translateY(${dy}px)`, fontFamily: ital ? F_PLAYFAIR : F_INTER, fontStyle: ital ? 'italic' : 'normal', fontWeight: ital ? 500 : 600, color: ital ? WHITE : 'rgba(255,255,255,0.9)', fontSize: ital ? 64 : 52, marginTop: bi ? 4 : 0}}>
+              {txt}
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
@@ -263,78 +279,119 @@ export const NodeRingToggle: React.FC<{
   phrase?: string;
   nodes?: number;
   sfx?: boolean;
-}> = ({durationInFrames, eyebrow = 'Antes y después', phrase = 'cómo lo sucio *se limpia*', nodes = 8, sfx = true}) => {
+}> = ({durationInFrames, eyebrow = 'Antes y después', phrase = 'cómo lo sucio | *se limpia*', nodes = 8, sfx = true}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const D = durationInFrames;
+  const eio = (a: number, b: number, t: number) => lerp(a, b, t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+  const c01 = (x: number) => Math.max(0, Math.min(1, x));
 
   const cx = 960;
-  const cy = 480;
+  const cy = 470;
   const R = 250;
 
-  const toggleStart = Math.round(fps * 1.9);
-  const flip = spring({frame: frame - toggleStart, fps, config: {damping: 15, mass: 0.9, stiffness: 120}}); // 0=rojo/off 1=blanco/on
-  const ringOut = interpolate(frame, [toggleStart - 6, toggleStart + 12], [1, 0.14], CLAMP);
+  // FASES: pulso concéntrico → satélites 1×1 → dolly/PORTAL → switch nace al centro → flip → hold → flash
+  const portalStart = D * 0.4;
+  const portalDur = D * 0.24;
+  const portal = c01((frame - portalStart) / portalDur); // atravesamos el anillo
+  const camScale = 1 + eio(0, 1, portal) * 0.55; // push-in que nos mete por el anillo
+  const pulseGate = 1 - c01(frame / (D * 0.32)); // el pulso central cede cuando el anillo se arma
+
+  const switchIn = c01((frame - D * 0.52) / (D * 0.12)); // el switch aparece al "salir" del anillo
+  const flipStart = Math.round(D * 0.62);
+  const flip = spring({frame: frame - flipStart, fps, config: {damping: 15, mass: 0.9, stiffness: 120}}); // 0=rojo/off → 1=blanco/on
+  const breath = 0.72 + 0.28 * Math.sin(frame / 12);
+  const switchFloat = frame > D * 0.66 ? Math.sin((frame - D * 0.66) / 14) * 3 : 0;
+
+  const exit = c01((frame - (D - 9)) / 9); // salida óptica: inversión breve + flash (NO lavado)
 
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 36%, #161719 0%, #070708 55%, #000 100%)'}}>
-      {/* bloom central */}
-      <div style={{position: 'absolute', left: cx, top: cy, width: 4, height: 4, transform: 'translate(-50%,-50%)'}}>
-        <div style={{position: 'absolute', left: '50%', top: '50%', width: 320, height: 320, transform: 'translate(-50%,-50%)', borderRadius: '50%', background: `radial-gradient(circle, ${WHITE} 0%, transparent 62%)`, opacity: interpolate(frame, [0, 8, 24], [0.9, 0.6, 0], CLAMP), filter: 'blur(8px)'}} />
+    <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 40%, #161719 0%, #070708 55%, #000 100%)'}}>
+      <div style={{position: 'absolute', inset: 0, transform: `scale(${camScale})`, transformOrigin: `${cx}px ${cy}px`}}>
+        {/* PULSO concéntrico central (sonar de cuadrados) — arranca la escena */}
+        {[0, 1, 2].map((k) => {
+          const t = c01(((frame + k * 9) % 42) / 42);
+          const sc = lerp(0.35, 2.6, t);
+          const op = (1 - t) * 0.5 * pulseGate;
+          return (
+            <div key={k} style={{position: 'absolute', left: cx, top: cy, width: 120, height: 120, transform: `translate(-50%,-50%) scale(${sc})`, borderRadius: 26, border: `2px solid ${WHITE}`, opacity: op, boxShadow: `0 0 24px ${WHITE}`}} />
+          );
+        })}
+        {/* núcleo brillante que pulsa (será el lugar del switch) */}
+        <div style={{position: 'absolute', left: cx, top: cy, width: 300, height: 300, transform: 'translate(-50%,-50%)', borderRadius: '50%', background: `radial-gradient(circle, ${WHITE} 0%, transparent 60%)`, opacity: (0.5 + 0.4 * Math.sin(frame / 6)) * pulseGate * (1 - switchIn), filter: 'blur(10px)'}} />
+
+        {/* NODOS → ANILLO → PORTAL (aparecen 1×1 a distinta profundidad; en el portal crecen y salen por los bordes) */}
+        {Array.from({length: nodes}).map((_, i) => {
+          const ang0 = (i / nodes) * Math.PI * 2 - Math.PI / 2;
+          const ang = ang0 + (frame / D) * 0.5 * (1 - portal * 0.6); // leve órbita
+          const spawn = spring({frame: frame - (6 + i * 3), fps, config: {damping: 17, mass: 0.9, stiffness: 130}});
+          const depth = 0.72 + (((i * 53) % 100) / 100) * 0.5; // profundidad/escala variada (anillo incompleto→completo)
+          const rad = R * depth * spawn * (1 + portal * (3.6 + depth)); // en el portal el radio explota
+          const x = cx + Math.cos(ang) * rad;
+          const y = cy + Math.sin(ang) * rad;
+          const pulse = 0.6 + 0.4 * Math.sin(frame / 7 + i);
+          const sz = 46 * depth * (1 + portal * 2.6);
+          const edgeFade = 1 - c01((portal - 0.5) / 0.5); // se disuelven al pasar por los bordes
+          const db = (1 - depth) * 2.4; // blur de profundidad
+          return (
+            <div
+              key={i}
+              style={{
+                position: 'absolute',
+                left: x,
+                top: y,
+                width: sz,
+                height: sz,
+                transform: `translate(-50%,-50%) scale(${spawn})`,
+                opacity: spawn * edgeFade * (0.7 + 0.3 * depth),
+                borderRadius: 12 * depth,
+                border: `2px solid ${WHITE}`,
+                background: 'rgba(255,255,255,0.06)',
+                boxShadow: `0 0 ${14 + pulse * 16}px ${WHITE}, inset 0 0 12px rgba(255,255,255,0.7)`,
+                filter: db > 0.3 ? `blur(${db}px)` : undefined,
+              }}
+            />
+          );
+        })}
+
+        {/* SWITCH — nace en el centro (parece haber estado siempre ahí) con piso reflejante */}
+        {switchIn > 0 && <Toggle cx={cx} cy={cy + switchFloat} flip={flip} appear={switchIn} breath={breath} />}
       </div>
 
-      {/* NODOS → ANILLO */}
-      {Array.from({length: nodes}).map((_, i) => {
-        const ang = (i / nodes) * Math.PI * 2 - Math.PI / 2;
-        const s = spring({frame: frame - (6 + i * 3), fps, config: {damping: 17, mass: 0.9, stiffness: 130}});
-        const rad = R * s;
-        const x = cx + Math.cos(ang) * rad;
-        const y = cy + Math.sin(ang) * rad;
-        const pulse = 0.6 + 0.4 * Math.sin(frame / 7 + i);
-        const sz = 46;
-        const on = flip > 0.5;
-        const col = on ? WHITE : REDLITE;
-        return (
-          <div
-            key={i}
-            style={{
-              position: 'absolute',
-              left: x,
-              top: y,
-              width: sz,
-              height: sz,
-              transform: `translate(-50%,-50%) scale(${s})`,
-              opacity: s * ringOut,
-              borderRadius: 12,
-              border: `2px solid ${col}`,
-              background: on ? 'rgba(255,255,255,0.08)' : 'rgba(228,50,42,0.08)',
-              boxShadow: `0 0 ${14 + pulse * 16}px ${col}, inset 0 0 12px ${col}`,
-            }}
-          />
-        );
-      })}
+      {/* TEXTO en bloques semánticos (premisa | palabra emocional en serif itálica) */}
+      <div style={{opacity: 1 - c01((exit - 0.1) / 0.5)}}>
+        <BlockCaption eyebrow={eyebrow} phrase={phrase} frame={frame} D={D} x={510} y={132} />
+      </div>
 
-      {frame >= toggleStart - 8 && <Toggle cx={cx} cy={cy} flip={flip} />}
+      {/* SALIDA óptica: inversión de color BREVE + flash puntual (calibrado, NO lavado blanco) */}
+      {exit > 0 && <AbsoluteFill style={{pointerEvents: 'none', mixBlendMode: 'difference', background: WHITE, opacity: interpolate(exit, [0, 0.4, 0.7], [0, 0.34, 0], CLAMP)}} />}
+      {exit > 0.35 && <AbsoluteFill style={{pointerEvents: 'none', background: `radial-gradient(circle at 50% ${cy / 10.8}%, ${WHITE} 0%, transparent 55%)`, opacity: interpolate(exit, [0.35, 0.55, 0.85], [0, 0.28, 0], CLAMP)}} />}
 
-      <KineticCaption eyebrow={eyebrow} phrase={phrase} frame={frame} at={Math.round(fps * 0.9)} align="center" y={150} />
-
-      {sfx && <SfxCue at={6} src={SFX.whoosh} volume={0.35} />}
-      {sfx && <SfxCue at={toggleStart} src={SFX.capPop} volume={0.5} />}
-      {sfx && <SfxCue at={toggleStart + 4} src={SFX.sparkleClean} volume={0.45} />}
+      {sfx && <SfxCue at={6} src={SFX.whoosh} volume={0.3} />}
+      {sfx && Array.from({length: nodes}).map((_, i) => <SfxCue key={i} at={8 + i * 3} src={SFX.pop1} volume={0.16} />)}
+      {sfx && <SfxCue at={Math.round(portalStart)} src={SFX.swish} volume={0.4} />}
+      {sfx && <SfxCue at={flipStart} src={SFX.capPop} volume={0.5} />}
+      {sfx && <SfxCue at={flipStart + 5} src={SFX.sparkleClean} volume={0.45} />}
     </AbsoluteFill>
   );
 };
 
-const Toggle: React.FC<{cx: number; cy: number; flip: number}> = ({cx, cy, flip}) => {
-  const W = 300;
-  const H = 132;
-  const pad = 12;
+const Toggle: React.FC<{cx: number; cy: number; flip: number; appear?: number; breath?: number}> = ({cx, cy, flip, appear = 1, breath = 1}) => {
+  const W = 320;
+  const H = 140;
+  const pad = 13;
   const knob = H - pad * 2;
-  const on = flip > 0.5;
-  const track = on ? WHITE : RED;
-  const knobX = interpolate(flip, [0, 1], [pad, W - knob - pad], CLAMP);
-  const glow = on ? WHITE : RED;
+  const f = Math.max(0, Math.min(1, flip));
+  const track = interpolateColors(f, [0, 0.5, 1], [RED, '#8A8F96', WHITE]); // rojo → neutro → blanco
+  const glow = interpolateColors(f, [0, 0.5, 1], [RED, '#8A8F96', WHITE]);
+  const knobX = interpolate(f, [0, 1], [pad, W - knob - pad], CLAMP); // la perilla CRUZA el centro
+  const bloom = Math.max(0, 1 - Math.abs(f - 0.5) / 0.26); // pico de bloom al cruzar el centro
+  const on = f > 0.5;
+  const sc = interpolate(appear, [0, 1], [0.62, 1], CLAMP);
   return (
-    <div style={{position: 'absolute', left: cx, top: cy, transform: 'translate(-50%,-50%)'}}>
+    <div style={{position: 'absolute', left: cx, top: cy, transform: `translate(-50%,-50%) scale(${sc})`, opacity: appear}}>
+      {/* bloom de cruce */}
+      <div style={{position: 'absolute', left: '50%', top: '50%', width: 420, height: 420, transform: 'translate(-50%,-50%)', borderRadius: '50%', background: `radial-gradient(circle, ${WHITE} 0%, transparent 60%)`, opacity: bloom * 0.5, filter: 'blur(14px)', pointerEvents: 'none'}} />
       <div
         style={{
           position: 'relative',
@@ -343,7 +400,7 @@ const Toggle: React.FC<{cx: number; cy: number; flip: number}> = ({cx, cy, flip}
           borderRadius: H / 2,
           background: on ? 'rgba(255,255,255,0.14)' : 'rgba(228,50,42,0.16)',
           border: `3px solid ${track}`,
-          boxShadow: `0 0 46px ${glow}, inset 0 0 30px rgba(0,0,0,0.45)`,
+          boxShadow: `0 0 ${40 + bloom * 40}px ${glow}, 0 0 ${90 * breath}px ${glow}55, inset 0 0 30px rgba(0,0,0,0.45)`,
         }}
       >
         <div
@@ -355,12 +412,13 @@ const Toggle: React.FC<{cx: number; cy: number; flip: number}> = ({cx, cy, flip}
             height: knob,
             borderRadius: '50%',
             background: on ? 'radial-gradient(circle at 35% 30%, #FFFFFF, #C9C9C9)' : 'radial-gradient(circle at 35% 30%, #2A2E33, #0C0E10)',
-            boxShadow: `0 6px 14px rgba(0,0,0,0.5), 0 0 22px ${glow}`,
+            boxShadow: `0 6px 14px rgba(0,0,0,0.5), 0 0 ${22 + bloom * 26}px ${glow}`,
             border: `2px solid ${track}`,
           }}
         />
       </div>
-      <div style={{position: 'absolute', left: '50%', top: H + 26, width: W * 0.8, height: 20, transform: 'translateX(-50%)', borderRadius: '50%', background: `radial-gradient(ellipse, ${glow} 0%, transparent 70%)`, opacity: 0.5, filter: 'blur(6px)'}} />
+      {/* piso reflejante */}
+      <div style={{position: 'absolute', left: '50%', top: H + 30, width: W * 0.92, height: 60, transform: 'translateX(-50%) scaleY(-1)', borderRadius: '50%', background: `radial-gradient(ellipse at 50% 0%, ${glow}66 0%, transparent 68%)`, opacity: 0.4 * appear, filter: 'blur(7px)'}} />
     </div>
   );
 };
@@ -464,55 +522,132 @@ export const ChapterTrailCard: React.FC<{
   sfx?: boolean;
 }> = ({durationInFrames, number, title, sub, sfx = true}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const prog = frame / durationInFrames;
-
-  const draw = interpolate(frame, [6, 40], [1, 0], CLAMP); // estela
-  const cardDraw = interpolate(frame, [16, 44], [1, 0], CLAMP); // borde de la tarjeta
-  const push = interpolate(prog, [0, 1], [1.02, 1.07], CLAMP);
-  const enter = spring({frame, fps, config: {damping: 18, mass: 0.9, stiffness: 120}});
+  const D = durationInFrames;
+  const prog = frame / D;
+  const eio = (a: number, b: number, t: number) => lerp(a, b, t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+  const c01 = (x: number) => Math.max(0, Math.min(1, x));
 
   const CW = 1040;
   const CH = 300;
   const cx = 960;
   const cy = 540;
-  const trailPath = 'M 60 700 C 520 660, 700 460, 1000 470 S 1560 500, 1880 250';
-  const numPop = spring({frame: frame - 20, fps, config: {damping: 10, mass: 0.7, stiffness: 180}});
+
+  // FASES: cápsula vertical → ensancha → tarjeta → borde verde se enfría a blanco → capas → # contador → título tipeo + línea → barrido → hold → blur out
+  const morph = c01((frame - D * 0.03) / (D * 0.17)); // cápsula → tarjeta
+  const cardW = eio(30, CW, morph);
+  const cardH = eio(360, CH, c01(morph * 1.3)); // alto de cápsula alta baja a tarjeta
+  const radius = lerp(15, 30, morph);
+  const cool = c01((frame - D * 0.14) / (D * 0.13)); // borde/acento verde → blanco-azulado
+  const edgeCol = interpolateColors(cool, [0, 1], ['#35E39A', '#D5E4FF']);
+  const layO = c01((frame - D * 0.19) / (D * 0.11)); // capas: bisel/reflejo/sombra/contenido
+  const dolly = eio(1.015, 1.055, prog); // la cámara empuja apenas (revela)
+
+  // "#" + contador #1 → #N
+  const nTarget = parseInt((number.match(/\d+/) || ['1'])[0], 10) || 1;
+  const hashT = c01((frame - D * 0.24) / (D * 0.05));
+  const countT = c01((frame - D * 0.29) / (D * 0.1));
+  const nShown = Math.max(1, Math.round(lerp(1, nTarget, eio(0, 1, countT))));
+  const numStr = '#' + nShown;
+
+  // título tipeo + línea luminosa inferior que se dibuja
+  const typeStart = D * 0.34;
+  const perChar = Math.max(1.2, (D * 0.22) / Math.max(1, title.length));
+  const shownChars = Math.max(0, Math.min(title.length, Math.floor((frame - typeStart) / perChar)));
+  const titleTxt = title.slice(0, shownChars);
+  const caret = frame >= typeStart && shownChars < title.length && Math.floor(frame / 6) % 2 === 0;
+  const lineDraw = c01((frame - D * 0.36) / (D * 0.2));
+
+  // barrido especular diagonal + 2ª curva
+  const sweep = c01((frame - D * 0.44) / (D * 0.16));
+  const sweepX = lerp(-cardW * 0.8, cardW * 1.0, sweep);
+  const curve2 = interpolate(frame, [D * 0.42, D * 0.62], [1, 0], CLAMP);
+  const curveBack = interpolate(frame, [8, D * 0.34], [1, 0], CLAMP);
+
+  const stabT = c01((frame - D * 0.58) / (D * 0.06));
+  const holdFloat = frame > D * 0.6 ? Math.sin((frame - D * 0.6) / 13) * 3 : 0;
+  const blurExit = c01((frame - D * 0.86) / (D * 0.14)); // blur progresivo de salida
+  const groupBlur = blurExit * 15;
+
+  const trailPath = 'M 60 720 C 520 680, 700 470, 1000 480 S 1560 510, 1880 250';
+  const curve2Path = 'M 1200 340 C 1420 300, 1620 300, 1860 210';
 
   return (
-    <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 40%, #161012 0%, #070708 55%, #000 100%)'}}>
+    <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 40%, #101318 0%, #060708 55%, #000 100%)'}}>
       {/* "#N" gigante fantasma */}
-      <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none'}}>
-        <div style={{fontFamily: F_INTER, fontWeight: 900, fontSize: 640, color: 'rgba(255,255,255,0.03)', letterSpacing: -12}}>{number}</div>
+      <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', opacity: layO}}>
+        <div style={{fontFamily: F_INTER, fontWeight: 900, fontSize: 640, color: 'rgba(210,225,255,0.035)', letterSpacing: -12}}>{'#' + nTarget}</div>
       </div>
 
-      {/* estela de luz */}
+      {/* curva luminosa ATRÁS (se dibuja al abrir el capítulo) */}
       <svg style={{position: 'absolute', inset: 0}} width="1920" height="1080" viewBox="0 0 1920 1080">
-        <path d={trailPath} fill="none" stroke={REDLITE} strokeWidth={22} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={draw} style={{filter: 'blur(26px)', opacity: 0.3}} />
-        <path d={trailPath} fill="none" stroke={WHITE} strokeWidth={12} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={draw} style={{filter: 'blur(13px)', opacity: 0.5}} />
-        <path d={trailPath} fill="none" stroke={WHITE} strokeWidth={3} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={draw} style={{filter: `drop-shadow(0 0 7px ${WHITE})`}} />
+        <path d={trailPath} fill="none" stroke={'#8FB6FF'} strokeWidth={16} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={curveBack} style={{filter: 'blur(20px)', opacity: 0.28}} />
+        <path d={trailPath} fill="none" stroke={WHITE} strokeWidth={2.6} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={curveBack} style={{filter: `drop-shadow(0 0 6px ${WHITE})`, opacity: 0.5}} />
       </svg>
 
-      {/* TARJETA */}
-      <div style={{position: 'absolute', left: cx, top: cy, transform: `translate(-50%,-50%) scale(${push})`, width: CW, height: CH}}>
-        {/* borde que se dibuja */}
-        <svg width={CW} height={CH} viewBox={`0 0 ${CW} ${CH}`} style={{position: 'absolute', inset: 0}}>
-          <rect x={2} y={2} width={CW - 4} height={CH - 4} rx={28} fill="rgba(255,255,255,0.03)" stroke={rgbaW(0.6)} strokeWidth={2.5} pathLength={1} strokeDasharray={1} strokeDashoffset={cardDraw} style={{filter: `drop-shadow(0 0 12px ${RED}66)`}} />
-        </svg>
-        <div style={{position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6}}>
-          <div style={{fontFamily: F_INTER, fontWeight: 800, fontSize: 40, color: RED, letterSpacing: 2, transform: `scale(${0.6 + numPop * 0.4})`, textShadow: `0 0 20px ${RED}`}}>{number}</div>
-          <div style={{fontFamily: F_INTER, fontWeight: 700, fontSize: 62, color: WHITE, textAlign: 'center', padding: '0 40px', opacity: enter, transform: `translateY(${(1 - enter) * 14}px)`}}>{title}</div>
-          {sub && <div style={{fontFamily: F_PLAYFAIR, fontStyle: 'italic', fontSize: 34, color: 'rgba(255,255,255,0.7)', opacity: interpolate(frame, [26, 40], [0, 1], CLAMP)}}>{sub}</div>}
+      <div style={{position: 'absolute', left: cx, top: cy + holdFloat, transform: `translate(-50%,-50%) scale(${dolly})`, filter: groupBlur > 0.3 ? `blur(${groupBlur}px)` : undefined, opacity: 1 - blurExit * 0.25}}>
+        {/* sombra ambiental */}
+        <div style={{position: 'absolute', left: '50%', top: '54%', width: cardW * 0.9, height: cardH * 0.7, transform: 'translate(-50%,-50%)', borderRadius: radius, boxShadow: `0 40px 90px rgba(0,0,0,0.7)`, opacity: layO}} />
+
+        {/* CUERPO de la tarjeta (cápsula → tarjeta), muchas capas, clip para barrido/reflejo/ruido */}
+        <div
+          style={{
+            position: 'absolute',
+            left: -cardW / 2,
+            top: -cardH / 2,
+            width: cardW,
+            height: cardH,
+            borderRadius: radius,
+            overflow: 'hidden',
+            background: 'linear-gradient(160deg, rgba(20,26,38,0.96), rgba(8,11,17,0.98) 60%, rgba(14,18,28,0.96))', // vidrio tinte azul-negro
+            border: `2.5px solid ${edgeCol}`,
+            boxShadow: `0 0 ${18 + (1 - cool) * 26}px ${edgeCol}${cool > 0.5 ? '66' : 'AA'}, 0 30px 70px rgba(0,0,0,0.6)`,
+          }}
+        >
+          {/* bisel interior */}
+          <div style={{position: 'absolute', inset: 3, borderRadius: radius - 3, boxShadow: `inset 0 1px 0 rgba(255,255,255,0.18), inset 0 0 24px rgba(0,0,0,0.5)`, pointerEvents: 'none'}} />
+          {/* reflejo superior */}
+          <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: '46%', background: 'linear-gradient(180deg, rgba(255,255,255,0.12), transparent)', opacity: layO, pointerEvents: 'none'}} />
+          {/* ruido fino */}
+          <div style={{position: 'absolute', inset: 0, backgroundImage: 'repeating-linear-gradient(0deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 3px)', opacity: 0.5 * layO, mixBlendMode: 'overlay', pointerEvents: 'none'}} />
+          {/* barrido especular diagonal */}
+          <div style={{position: 'absolute', top: -40, bottom: -40, width: 220, left: cardW / 2 + sweepX, transform: 'skewX(-18deg)', background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent)', opacity: sweep > 0 && sweep < 1 ? 0.9 : 0, pointerEvents: 'none'}} />
+
+          {/* CONTENIDO */}
+          <div style={{position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 8, opacity: layO}}>
+            <div style={{fontFamily: F_INTER, fontWeight: 800, fontSize: 42, color: edgeCol, letterSpacing: 2, opacity: hashT, textShadow: `0 0 20px ${edgeCol}99`}}>{numStr}</div>
+            <div style={{fontFamily: F_INTER, fontWeight: 700, fontSize: 62, color: WHITE, textAlign: 'center', padding: '0 44px', minHeight: 74}}>
+              {titleTxt}
+              {caret && <span style={{display: 'inline-block', width: 4, height: 44, background: edgeCol, marginLeft: 4, transform: 'translateY(6px)'}} />}
+            </div>
+            {sub && <div style={{fontFamily: F_PLAYFAIR, fontStyle: 'italic', fontSize: 34, color: 'rgba(210,225,255,0.72)', opacity: interpolate(frame, [D * 0.5, D * 0.6], [0, 1], CLAMP)}}>{sub}</div>}
+          </div>
+
+          {/* reflejo del contenido (sutil, abajo) */}
+          <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: '30%', background: 'linear-gradient(0deg, rgba(255,255,255,0.05), transparent)', opacity: layO * 0.7, pointerEvents: 'none'}} />
+
+          {/* línea luminosa inferior que se dibuja */}
+          <div style={{position: 'absolute', left: '50%', bottom: 34, width: cardW * 0.62, height: 3, transform: `translateX(-50%) scaleX(${lineDraw})`, transformOrigin: 'center', background: `linear-gradient(90deg, transparent, ${edgeCol}, transparent)`, boxShadow: `0 0 14px ${edgeCol}`, borderRadius: 2}} />
         </div>
+
+        {/* sparkle al estabilizar */}
+        {stabT > 0 && <div style={{position: 'absolute', left: -cardW / 2, top: -cardH / 2, width: cardW, height: cardH, borderRadius: radius, boxShadow: `0 0 40px ${WHITE}`, opacity: interpolate(stabT, [0, 0.5, 1], [0, 0.4, 0], CLAMP), pointerEvents: 'none'}} />}
       </div>
 
-      {sfx && <SfxCue at={6} src={SFX.whoosh} volume={0.4} />}
-      {sfx && <SfxCue at={20} src={SFX.pop1} volume={0.5} />}
+      {/* 2ª curva luminosa ADELANTE, arriba-derecha */}
+      <svg style={{position: 'absolute', inset: 0, pointerEvents: 'none'}} width="1920" height="1080" viewBox="0 0 1920 1080">
+        <path d={curve2Path} fill="none" stroke={WHITE} strokeWidth={2.4} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={curve2} style={{filter: `drop-shadow(0 0 6px ${'#9FC0FF'})`, opacity: 0.7}} />
+      </svg>
+
+      {sfx && <SfxCue at={Math.round(D * 0.03)} src={SFX.whoosh} volume={0.4} />}
+      {sfx && <SfxCue at={Math.round(D * 0.29)} src={SFX.pop1} volume={0.35} />}
+      {sfx && Array.from({length: Math.min(title.length, 24)}).map((_, i) => (
+        <SfxCue key={i} at={Math.round(typeStart + i * perChar)} src={SFX.click} volume={0.24} durationInFrames={8} />
+      ))}
+      {sfx && <SfxCue at={Math.round(D * 0.44)} src={SFX.swish} volume={0.38} />}
+      {sfx && <SfxCue at={Math.round(D * 0.58)} src={SFX.sparkleClean} volume={0.4} />}
     </AbsoluteFill>
   );
 };
-
-const rgbaW = (a: number) => `rgba(255,255,255,${a})`;
 
 /* ══════════════════════════════════════════════════════════════════════
    5) TYPE CARD BESIDE — tarjeta compacta que hace ZOOM-IN en una ZONA

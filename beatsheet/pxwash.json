@@ -30,6 +30,16 @@
    "overlay": true
   },
   {
+   "id": "fill_890",
+   "start": 8.9,
+   "dur": 1.92,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_pressure_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_hook_9",
    "start": 10.82,
    "dur": 1.64,
@@ -136,11 +146,31 @@
    "noSplit": true
   },
   {
+   "id": "fill_4796",
+   "start": 47.96,
+   "dur": 4.6,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_softwash_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_hook_52",
    "start": 52.56,
    "dur": 6.5,
    "kind": "raw",
    "src": "broll/pxwash_hook_52.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_5906",
+   "start": 59.06,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_moss_1.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -171,37 +201,77 @@
    "trans": 9
   },
   {
+   "id": "fill_7480",
+   "start": 74.8,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_h3_88",
    "start": 88,
    "dur": 3.2,
    "kind": "raw",
-   "src": "broll/pxwash_hook_roof_dramatic.mp4",
+   "src": "broll/pxwash_alt_roof_2.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true,
    "trans": 9
+  },
+  {
+   "id": "fill_9500",
+   "start": 95,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "pxwash_h3_100",
    "start": 100,
    "dur": 3.2,
    "kind": "raw",
-   "src": "broll/pxwash_hook_foam_pour.mp4",
+   "src": "broll/pxwash_fill_foam_1.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true,
    "trans": 9
   },
   {
+   "id": "fill_10700",
+   "start": 107,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_h3_110",
    "start": 110,
    "dur": 3,
    "kind": "raw",
-   "src": "broll/pxwash_hook_fizz_macro.mp4",
+   "src": "broll/pxwash_fill_foam_3.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true,
    "trans": 9
+  },
+  {
+   "id": "fill_11300",
+   "start": 113,
+   "dur": 5.48,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "px_pxfan_117",
@@ -213,6 +283,16 @@
    "number": "#1",
    "goldCard": 4,
    "goldAt": 196
+  },
+  {
+   "id": "fill_13048",
+   "start": 130.48,
+   "dur": 2.02,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "glitch_14202",
@@ -231,6 +311,16 @@
    "darken": 0.06,
    "noSplit": true,
    "fit": "blur"
+  },
+  {
+   "id": "fill_14872",
+   "start": 148.72,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "ov_flowsteps_152",
@@ -291,6 +381,16 @@
    "noSplit": true
   },
   {
+   "id": "fill_18078",
+   "start": 180.78,
+   "dur": 5.82,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_vsduel_186",
    "start": 186.6,
    "dur": 6.5,
@@ -315,11 +415,31 @@
    }
   },
   {
+   "id": "fill_19690",
+   "start": 196.9,
+   "dur": 5.04,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_shrubs_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_quimica_201",
    "start": 201.94,
    "dur": 6.5,
    "kind": "raw",
-   "src": "broll/pxwash_quimica_201.mp4",
+   "src": "broll/pxwash_fill_moss_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_20844",
+   "start": 208.44,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_2.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -353,7 +473,17 @@
    "start": 230,
    "dur": 6.5,
    "kind": "raw",
-   "src": "broll/pxwash_trick1_230.mp4",
+   "src": "broll/pxwash_alt_siding_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_23650",
+   "start": 236.5,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_siding_1.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -387,11 +517,36 @@
    "support": "a bleach mix on your siding — it can yellow your shrubs and kill the grass"
   },
   {
+   "id": "fill_26030",
+   "start": 260.3,
+   "dur": 3.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_sidingalgae_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
    "id": "pxwash_trick1_264",
    "start": 264,
    "dur": 6.5,
    "kind": "raw",
    "src": "broll/pxwash_trick1_264.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_27050",
+   "start": 270.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sprayer_1.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -424,6 +579,31 @@
    ]
   },
   {
+   "id": "fill_28830",
+   "start": 288.3,
+   "dur": 4.85,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_softwash_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_29315",
+   "start": 293.15,
+   "dur": 4.85,
+   "kind": "raw",
+   "src": "img/pxwash_photo_sidingalgae_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
    "id": "pxwash_trick1_298",
    "start": 298,
    "dur": 8,
@@ -441,6 +621,16 @@
    "eyebrow": "You'll see it work",
    "title": "It foams where the algae is thickest",
    "cleanLabel": "CLEAN!"
+  },
+  {
+   "id": "fill_31250",
+   "start": 312.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_shrubs_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "ov_beforeafter_316",
@@ -482,6 +672,26 @@
    "noSplit": true
   },
   {
+   "id": "fill_34204",
+   "start": 342.04,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_34702",
+   "start": 347.02,
+   "dur": 4.98,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "glitch_35180",
    "start": 351.8,
    "dur": 0.4,
@@ -502,7 +712,17 @@
    "start": 355.98,
    "dur": 6.5,
    "kind": "raw",
-   "src": "broll/pxwash_trick2_355.mp4",
+   "src": "broll/pxwash_alt_deck_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_36628",
+   "start": 366.28,
+   "dur": 2.72,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_deck_2.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -520,6 +740,21 @@
    "prefix": "$",
    "value": 700,
    "support": "$600–$700 for a deck a $1 bottle can bring back"
+  },
+  {
+   "id": "fill_37930",
+   "start": 379.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_deckmildew_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
   },
   {
    "id": "pxwash_trick2_382",
@@ -556,6 +791,16 @@
    }
   },
   {
+   "id": "fill_39550",
+   "start": 395.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_scrub_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_numberedsteps_399",
    "start": 399,
    "dur": 6.5,
@@ -585,6 +830,31 @@
    ]
   },
   {
+   "id": "fill_40930",
+   "start": 409.3,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "img/pxwash_photo_deckmildew_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
+   "id": "fill_41492",
+   "start": 414.92,
+   "dur": 5.62,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_trick2_420",
    "start": 420.54,
    "dur": 6.58,
@@ -607,6 +877,16 @@
    "beforeLabel": "Gray & green",
    "afterLabel": "Warm, clean tone",
    "caption": "that was under there the whole time"
+  },
+  {
+   "id": "fill_43742",
+   "start": 437.42,
+   "dur": 4.16,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_pressure_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "glitch_44424",
@@ -635,6 +915,16 @@
    "noSplit": true
   },
   {
+   "id": "fill_46030",
+   "start": 460.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_bigstatreveal_463",
    "start": 463,
    "dur": 6.5,
@@ -648,6 +938,21 @@
    "value": 200,
    "suffix": "+",
    "support": "a couple hundred dollars, easy, for concrete"
+  },
+  {
+   "id": "fill_46950",
+   "start": 469.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/pxwash_photo_concretefilm_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
   },
   {
    "id": "pxwash_trick3_475",
@@ -669,11 +974,51 @@
    "cleanLabel": "CLEAN!"
   },
   {
+   "id": "fill_49430",
+   "start": 494.3,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_49851",
+   "start": 498.51,
+   "dur": 4.21,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_pressure_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_50272",
+   "start": 502.72,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_trick3_499",
    "start": 506.94,
    "dur": 6.5,
    "kind": "raw",
-   "src": "broll/pxwash_trick3_499.mp4",
+   "src": "broll/pxwash_fill_foam_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_51724",
+   "start": 517.24,
+   "dur": 4.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_2.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -713,6 +1058,16 @@
    }
   },
   {
+   "id": "fill_54830",
+   "start": 548.3,
+   "dur": 5.66,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_concrete_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "glitch_55818",
    "start": 558.18,
    "dur": 0.4,
@@ -739,6 +1094,16 @@
    "noSplit": true
   },
   {
+   "id": "fill_57250",
+   "start": 572.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_rust_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_mythtruth_576",
    "start": 576,
    "dur": 6.5,
@@ -751,6 +1116,21 @@
    "truth": "Bleach only kills living stuff — it ignores oxidized metal",
    "mythLabel": "Myth",
    "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_58630",
+   "start": 586.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_ruststain_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
   },
   {
    "id": "ov_flowsteps_589",
@@ -808,6 +1188,16 @@
    "cleanLabel": "CLEAN!"
   },
   {
+   "id": "fill_61950",
+   "start": 619.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_oil_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "tb_625",
    "start": 625,
    "dur": 6.5,
@@ -819,6 +1209,21 @@
     "Works: rust stains",
     "Works: fresh oil",
     "Not: 10-year-old oil"
+   ]
+  },
+  {
+   "id": "fill_63150",
+   "start": 631.5,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "img/pxwash_photo_oilstain_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
    ]
   },
   {
@@ -842,7 +1247,17 @@
    "start": 648,
    "dur": 6.5,
    "kind": "raw",
-   "src": "broll/pxwash_trick5_648.mp4",
+   "src": "broll/pxwash_alt_roof_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_65830",
+   "start": 658.3,
+   "dur": 3.86,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_1.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -856,6 +1271,21 @@
    "phrase": "'failing' → *it's alive*"
   },
   {
+   "id": "fill_66866",
+   "start": 668.66,
+   "dur": 5.34,
+   "kind": "raw",
+   "src": "img/pxwash_photo_roofstreaks_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
    "id": "pxwash_gloeocapsa_magma",
    "start": 674,
    "dur": 6.5,
@@ -865,6 +1295,16 @@
    "darken": 0.06,
    "noSplit": true,
    "fit": "blur"
+  },
+  {
+   "id": "fill_68050",
+   "start": 680.5,
+   "dur": 5.16,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "ov_bigstatreveal_688",
@@ -879,6 +1319,16 @@
    "prefix": "$",
    "value": 600,
    "support": "$400–$600 on average to remove it professionally"
+  },
+  {
+   "id": "fill_69216",
+   "start": 692.16,
+   "dur": 3.62,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "pxwash_trick5_696",
@@ -908,11 +1358,31 @@
    "stamp": "A WET ROOF IS DANGEROUS"
   },
   {
+   "id": "fill_71262",
+   "start": 712.62,
+   "dur": 3.38,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sprayer_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_trick5_716",
    "start": 716,
    "dur": 6.5,
    "kind": "raw",
    "src": "broll/pxwash_trick5_716.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_72250",
+   "start": 722.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -932,12 +1402,47 @@
    "caption": "let the rain and gravity rinse it"
   },
   {
+   "id": "fill_73830",
+   "start": 738.3,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_rinse_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_74272",
+   "start": 742.72,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "px_pxtoggle_746",
    "start": 747.14,
    "dur": 6.5,
    "kind": "pxtoggle",
    "eyebrow": "That slow fade",
    "phrase": "streaks → *the algae dying off*"
+  },
+  {
+   "id": "fill_75364",
+   "start": 753.64,
+   "dur": 4.36,
+   "kind": "raw",
+   "src": "img/pxwash_photo_roofstreaks_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
   },
   {
    "id": "ov_bigstatreveal_758",
@@ -955,6 +1460,16 @@
    "support": "with a $2 bottle and an afternoon"
   },
   {
+   "id": "fill_76450",
+   "start": 764.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_roof_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_highlightsweep_768",
    "start": 768,
    "dur": 6.5,
@@ -967,6 +1482,36 @@
    "highlight": "that difference is somebody's commission",
    "post": ".",
    "note": "a salesman called a living stain 'shingle failure'"
+  },
+  {
+   "id": "fill_77830",
+   "start": 778.3,
+   "dur": 5.85,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_78415",
+   "start": 784.15,
+   "dur": 5.85,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sprayer_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_80400",
+   "start": 804,
+   "dur": 3.22,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "glitch_81280",
@@ -988,6 +1533,26 @@
     "Restain your fence",
     "Repair real damage"
    ]
+  },
+  {
+   "id": "fill_82330",
+   "start": 823.3,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_tools_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_82802",
+   "start": 828.02,
+   "dur": 4.72,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "ov_hookcaption_831",
@@ -1021,6 +1586,16 @@
     }
    ],
    "sub": "most of what they charge a premium for is just maintenance"
+  },
+  {
+   "id": "fill_84304",
+   "start": 843.04,
+   "dur": 4.2,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "pxwash_midroll_842",
@@ -1100,6 +1675,31 @@
    ]
   },
   {
+   "id": "fill_88130",
+   "start": 881.3,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_fence_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_88580",
+   "start": 885.8,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/pxwash_photo_fencemildew_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
    "id": "ov_beforeafter_888",
    "start": 890.3,
    "dur": 5.4,
@@ -1124,6 +1724,16 @@
    "noSplit": true
   },
   {
+   "id": "fill_90220",
+   "start": 902.2,
+   "dur": 4.8,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_fence_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_mythtruth_907",
    "start": 907,
    "dur": 6.5,
@@ -1136,6 +1746,21 @@
    "truth": "You laminate the mildew under the sealer — it comes back",
    "mythLabel": "Myth",
    "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_91730",
+   "start": 917.3,
+   "dur": 2.82,
+   "kind": "raw",
+   "src": "img/pxwash_photo_fencemildew_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
   },
   {
    "id": "tb_921",
@@ -1190,6 +1815,16 @@
    "support": "a new cushion set can cost more than the whole list combined"
   },
   {
+   "id": "fill_94650",
+   "start": 946.5,
+   "dur": 3.5,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_cushion_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_vsduel_950",
    "start": 950,
    "dur": 6.5,
@@ -1212,6 +1847,21 @@
     "image": "img/pxwash_oxygen.png",
     "good": true
    }
+  },
+  {
+   "id": "fill_95650",
+   "start": 956.5,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/pxwash_photo_cushionmildew_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
   },
   {
    "id": "ov_numberedsteps_961",
@@ -1240,6 +1890,26 @@
    ]
   },
   {
+   "id": "fill_97130",
+   "start": 971.3,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_awning_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_97650",
+   "start": 976.5,
+   "dur": 5.2,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sunny_patio_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_trick7_980",
    "start": 981.7,
    "dur": 4.3,
@@ -1264,6 +1934,16 @@
    ]
   },
   {
+   "id": "fill_99250",
+   "start": 992.5,
+   "dur": 2.74,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_cushion_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "glitch_99866",
    "start": 998.66,
    "dur": 0.4,
@@ -1284,7 +1964,7 @@
    "start": 1006.18,
    "dur": 5.82,
    "kind": "raw",
-   "src": "broll/pxwash_trick8_1003.mp4",
+   "src": "broll/pxwash_alt_pavers_2.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -1302,6 +1982,16 @@
    "truth": "A high blast blows out the joint sand — then they upsell you re-sanding",
    "mythLabel": "Myth",
    "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_102230",
+   "start": 1022.3,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_pavers_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "pxwash_trick8_1029",
@@ -1337,6 +2027,21 @@
     {
      "title": "GENTLE rinse — keep the joint sand"
     }
+   ]
+  },
+  {
+   "id": "fill_104630",
+   "start": 1046.3,
+   "dur": 2.7,
+   "kind": "raw",
+   "src": "img/pxwash_photo_mossjoints_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
    ]
   },
   {
@@ -1379,6 +2084,16 @@
    "sub": "that summer smell"
   },
   {
+   "id": "fill_107650",
+   "start": 1076.5,
+   "dur": 2.66,
+   "kind": "raw",
+   "src": "broll/pxwash_alt_trash_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "pxwash_trick9_1076",
    "start": 1079.16,
    "dur": 6.22,
@@ -1412,11 +2127,36 @@
    "cleanLabel": "CLEAN!"
   },
   {
+   "id": "fill_110230",
+   "start": 1102.3,
+   "dur": 5.8,
+   "kind": "raw",
+   "src": "img/pxwash_photo_bingrime_1.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
+   ]
+  },
+  {
    "id": "pxwash_trick9_1105",
    "start": 1108.1,
    "dur": 6.5,
    "kind": "raw",
    "src": "broll/pxwash_trick9_1105.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_111460",
+   "start": 1114.6,
+   "dur": 4.4,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hose_1.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -1433,6 +2173,21 @@
     "Recycling bin",
     "Base of a grill",
     "Dog patio area"
+   ]
+  },
+  {
+   "id": "fill_112930",
+   "start": 1129.3,
+   "dur": 3.28,
+   "kind": "raw",
+   "src": "img/pxwash_photo_bingrime_2.png",
+   "hue": "red",
+   "darken": 0.05,
+   "noSplit": true,
+   "fit": "blur",
+   "zoom": [
+    1.06,
+    1.16
    ]
   },
   {
@@ -1457,6 +2212,16 @@
    "support": "the standard brown bottle — 35% food grade can burn your skin"
   },
   {
+   "id": "fill_114630",
+   "start": 1146.3,
+   "dur": 6.7,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_mythtruth_1153",
    "start": 1153,
    "dur": 6.5,
@@ -1469,6 +2234,16 @@
    "truth": "Peroxide + vinegar in one bottle makes peracetic acid — irritates skin & lungs",
    "mythLabel": "Myth",
    "truthLabel": "Truth"
+  },
+  {
+   "id": "fill_116330",
+   "start": 1163.3,
+   "dur": 5.7,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "ov_checklistreveal_1169",
@@ -1489,6 +2264,36 @@
    "stamp": "SAY IT PLAINLY"
   },
   {
+   "id": "fill_117930",
+   "start": 1179.3,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_gloves_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_118387",
+   "start": 1183.87,
+   "dur": 4.57,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_foam_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_118844",
+   "start": 1188.44,
+   "dur": 4.56,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "px_pxfoam_1193",
    "start": 1193,
    "dur": 5,
@@ -1503,6 +2308,36 @@
    "dur": 6.5,
    "kind": "raw",
    "src": "broll/pxwash_seguridad_1198.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_120830",
+   "start": 1208.3,
+   "dur": 5.15,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_121345",
+   "start": 1213.45,
+   "dur": 5.15,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_ladder_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
+   "id": "fill_121860",
+   "start": 1218.6,
+   "dur": 5.14,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_gloves_1.mp4",
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
@@ -1535,6 +2370,16 @@
    "phrase": "there's *no invoice* in a dollar"
   },
   {
+   "id": "fill_123450",
+   "start": 1234.5,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_tools_2.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_bigstatreveal_1247",
    "start": 1247,
    "dur": 6.5,
@@ -1550,6 +2395,16 @@
    "support": "a $400 roof cleaning — your wallet's going to be fine"
   },
   {
+   "id": "fill_125350",
+   "start": 1253.5,
+   "dur": 3.6,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_sunny_patio_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
+  },
+  {
    "id": "ov_ctacard_1257",
    "start": 1257.1,
    "dur": 6.5,
@@ -1563,6 +2418,16 @@
    "bullet": "link's down in the description",
    "price": 0,
    "cta": "LINK IN DESCRIPTION"
+  },
+  {
+   "id": "fill_126740",
+   "start": 1267.4,
+   "dur": 5.6,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_house_3.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "ov_hookcaption_1273",
@@ -1589,6 +2454,16 @@
     }
    ],
    "sub": "if you remember one thing, ask that"
+  },
+  {
+   "id": "fill_128330",
+   "start": 1283.3,
+   "dur": 2.24,
+   "kind": "raw",
+   "src": "broll/pxwash_fill_hands_gloves_1.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true
   },
   {
    "id": "ov_highlightsweep_1281",
