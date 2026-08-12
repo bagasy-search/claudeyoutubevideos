@@ -12,6 +12,8 @@ for (let i = 0; i < beats.length - 1; i++) {
   if (beats[i].ms_out > beats[i + 1].ms_in) beats[i].ms_out = beats[i + 1].ms_in;
 }
 beats = beats.filter((b) => b.ms_out - b.ms_in >= 200);
+// GUARD: un componente < 0.9s rompe su choreografía (interpolate no-monotónico). Pasalo a clip (aguanta cualquier dur).
+for (const b of beats) if (b.tipo === "componente" && b.ms_out - b.ms_in < 900) { b.tipo = "clip"; b.avatar = "hidden"; delete b.componente; delete b.props; }
 
 // ── POOL curado por subjeto (clips Pexels verificados a mano en contact sheet) ──
 // Relleno tras la curación (task #2). Cada sección reparte round-robin sin repetir seguido.
