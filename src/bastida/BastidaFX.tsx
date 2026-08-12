@@ -16,7 +16,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
-import {spring, Img, staticFile} from 'remotion';
+import {spring, Img, staticFile, OffthreadVideo} from 'remotion';
 import {BAS, FONT_DISPLAY, FONT_SANS, FONT_HAND, FONT_SERIF, rgba, GrainOverlay} from './theme';
 
 const easeIn = Easing.in(Easing.cubic);
@@ -468,6 +468,42 @@ export const PresenterIntro: React.FC<PresenterIntroProps> = ({
  * Cutaway sobre el avatar para ilustrar lo que dice (creatinina, riñón, pacientes…). Estilo documental.
  */
 export type BRollProps = {img?: string; caption?: string; dur?: number; kb?: number};
+/* BClip — reproduce un clip H3 (mp4) a pantalla completa con micro-punch de entrada,
+ * mismo grade navy + caption que BRoll, y audio ambiente NATIVO duckeado (vol). Reemplaza
+ * las fotos quietas: el movimiento propio del clip da el "vlog ultra-real". */
+export const BClip: React.FC<{clip: string; caption?: string; dur?: number; vol?: number; punch?: boolean}> = ({
+  clip,
+  caption,
+  dur = 90,
+  vol = 0.18,
+  punch = true,
+}) => {
+  const frame = useCurrentFrame();
+  const scale = punch ? interpolate(frame, [0, 12], [1.09, 1.0], {extrapolateRight: 'clamp', easing: easeOut}) : 1;
+  const op = interpolate(frame, [0, 6, dur - 6, dur], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const capIn = interpolate(frame, [8, 24], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeOut});
+  return (
+    <AbsoluteFill style={{opacity: op, background: '#05161f'}}>
+      <AbsoluteFill style={{overflow: 'hidden'}}>
+        <OffthreadVideo
+          src={staticFile(`broll/${clip}.mp4`)}
+          volume={vol}
+          style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${scale})`}}
+        />
+      </AbsoluteFill>
+      <AbsoluteFill style={{background: `linear-gradient(150deg, ${rgba(BAS.bgPanel, 0.36)}, ${rgba(BAS.bgDeep, 0.5)})`, mixBlendMode: 'soft-light'}} />
+      <AbsoluteFill style={{background: `radial-gradient(120% 115% at 50% 46%, transparent 54%, ${rgba(BAS.bgEdge, 0.58)} 100%)`}} />
+      <GrainOverlay opacity={0.05} />
+      {caption && (
+        <div style={{position: 'absolute', left: 70, bottom: 80, display: 'flex', alignItems: 'center', gap: 16, opacity: capIn, transform: `translateY(${interpolate(capIn, [0, 1], [16, 0])}px)`}}>
+          <span style={{width: 6, height: 46, background: BAS.aqua, boxShadow: `0 0 16px ${rgba(BAS.aqua, 0.7)}`}} />
+          <span style={{fontFamily: FONT_DISPLAY, fontSize: 52, fontWeight: 700, color: '#F4F1E9', textShadow: '0 4px 20px rgba(0,0,0,0.6)'}}>{caption}</span>
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};
+
 export const BRoll: React.FC<BRollProps> = ({img = 'bas_broll_labreport', caption, dur = 90, kb = 1}) => {
   const frame = useCurrentFrame();
   const scale = interpolate(frame, [0, dur], [1.05, 1.16], {extrapolateRight: 'clamp'});
