@@ -159,7 +159,7 @@ export const MainBastida2: React.FC = () => {
       {BROLL.map((b, i) => (
         <Sequence key={`br${i}`} from={b.from} durationInFrames={b.dur}>
           {b.clip ? (
-            <BClip clip={b.clip} caption={b.caption} dur={b.dur} />
+            <BClip clip={b.clip} caption={b.caption} dur={b.dur} vol={0} />
           ) : (
             <BRoll img={b.img} caption={b.caption} dur={b.dur} kb={b.kb ?? 1} />
           )}
