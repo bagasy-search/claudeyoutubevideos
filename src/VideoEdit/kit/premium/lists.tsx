@@ -1,4 +1,5 @@
 import React from "react";
+import { SfxCue, SFX } from "../../components/Sfx";
 import { SPR, Theme, useTheme } from "./theme";
 import {
   Card,
@@ -28,6 +29,7 @@ export const NumberedSteps: React.FC<{
   eyebrow?: string;
   title?: string;
   steps?: Step[];
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -39,6 +41,7 @@ export const NumberedSteps: React.FC<{
     { title: "Rellená por capas", sub: "grueso abajo, fino arriba" },
     { title: "Regá y esperá", sub: "una semana antes de plantar" },
   ],
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -112,6 +115,14 @@ export const NumberedSteps: React.FC<{
             );
           })}
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={2} src={SFX.whoosh} volume={0.26} />
+            {steps.map((_, i) => (
+              <SfxCue key={i} at={spread(durationInFrames, steps.length, i)} src={i % 2 ? SFX.pop2 : SFX.pop1} volume={0.24} durationInFrames={16} />
+            ))}
+          </>
+        )}
       </Panel>
     </Stage>
   );
@@ -125,6 +136,7 @@ export const ChecklistReveal: React.FC<{
   items?: string[];
   stamp?: string;
   kicker?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -132,6 +144,7 @@ export const ChecklistReveal: React.FC<{
   items = ["Guantes gruesos", "Balde de 20 litros", "Vinagre blanco", "Un día sin lluvia"],
   stamp = "TODO LISTO",
   kicker = "Cómo darte cuenta",
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -250,6 +263,15 @@ export const ChecklistReveal: React.FC<{
             </div>
           </div>
         )}
+        {sfx && (
+          <>
+            <SfxCue at={2} src={SFX.whoosh} volume={0.24} />
+            {items.map((_, i) => (
+              <SfxCue key={i} at={spread(durationInFrames, items.length, i) + 6} src={SFX.click} volume={0.24} durationInFrames={14} />
+            ))}
+            {stamp && <SfxCue at={stampAt} src={SFX.sparkleClean} volume={0.4} />}
+          </>
+        )}
       </Cinema>
     </Stage>
   );
@@ -262,6 +284,7 @@ export const BulletCascade: React.FC<{
   theme?: Theme;
   eyebrow?: string;
   bullets?: Bullet[];
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -271,6 +294,7 @@ export const BulletCascade: React.FC<{
     { pre: "No es el precio,", key: "es la mezcla", post: "" },
     { pre: "No es magia,", key: "es química simple", post: "" },
   ],
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const ink = useInk(t);
@@ -323,6 +347,20 @@ export const BulletCascade: React.FC<{
             );
           })}
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={2} src={SFX.whoosh} volume={0.24} />
+            {bullets.map((_, i) => {
+              const at = spread(durationInFrames, bullets.length, i);
+              return (
+                <React.Fragment key={i}>
+                  <SfxCue at={at} src={i % 2 ? SFX.pop2 : SFX.pop1} volume={0.24} durationInFrames={16} />
+                  <SfxCue at={at + 10} src={SFX.markerDrive} volume={0.2} />
+                </React.Fragment>
+              );
+            })}
+          </>
+        )}
       </Panel>
     </Stage>
   );

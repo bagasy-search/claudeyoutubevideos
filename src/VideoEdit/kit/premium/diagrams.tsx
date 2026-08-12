@@ -1,5 +1,6 @@
 import React from "react";
 import { interpolate } from "remotion";
+import { SfxCue, SFX } from "../../components/Sfx";
 import { SPR, Theme, useTheme } from "./theme";
 import {
   Arrow,
@@ -123,6 +124,7 @@ export const FlowSteps: React.FC<{
   title?: string;
   nodes?: FlowNode[];
   kicker?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -134,6 +136,7 @@ export const FlowSteps: React.FC<{
     { label: "Colar", sub: "y reposar 24 hs" },
     { label: "Aplicar", sub: "al pie de la planta" },
   ],
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -297,6 +300,17 @@ export const FlowSteps: React.FC<{
             </div>
           );
         })}
+        {sfx && (
+          <>
+            <SfxCue at={2} src={SFX.whoosh} volume={0.26} />
+            {nodes.slice(0, n).map((_, i) => (
+              <SfxCue key={i} at={spread(durationInFrames, nodes.length, i)} src={i % 2 ? SFX.pop2 : SFX.pop1} volume={0.24} durationInFrames={16} />
+            ))}
+            {Array.from({ length: n - 1 }, (_, i) => (
+              <SfxCue key={`a${i}`} at={spread(durationInFrames, nodes.length, i) + 12} src={SFX.swish} volume={0.18} />
+            ))}
+          </>
+        )}
       </Cinema>
     </Stage>
   );

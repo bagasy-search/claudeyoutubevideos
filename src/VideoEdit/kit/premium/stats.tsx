@@ -1,5 +1,6 @@
 import React from "react";
 import { interpolate } from "remotion";
+import { SfxCue, SFX } from "../../components/Sfx";
 import { SPR, Theme, useTheme } from "./theme";
 import {
   Card,
@@ -31,6 +32,7 @@ export const BigStatReveal: React.FC<{
   suffix?: string;
   support?: string;
   source?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -49,6 +51,7 @@ export const BigStatReveal: React.FC<{
   suffix = "",
   support = "",
   source = "",
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -93,6 +96,15 @@ export const BigStatReveal: React.FC<{
             </div>
           )}
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={2} src={SFX.whoosh} volume={0.28} />
+            {[10, 18, 26, 34, 42].map((f) => (
+              <SfxCue key={f} at={f} src={SFX.digitTick} volume={0.18} durationInFrames={12} />
+            ))}
+            <SfxCue at={50} src={SFX.boom1} volume={0.34} />
+          </>
+        )}
       </Panel>
     </Stage>
   );

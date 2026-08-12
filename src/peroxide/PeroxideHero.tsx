@@ -24,6 +24,8 @@ import {PeroxideBottle} from './PeroxideKit';
 const RED = '#E4322A';
 const REDLITE = '#FF5A4E';
 const WHITE = '#FFFFFF';
+const GOLD = '#F2C24E';
+const GOLDLITE = '#FFE39A';
 const CLAMP = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 
@@ -82,16 +84,21 @@ const KineticCaption: React.FC<{
 };
 
 /* Una carta de vidrio blanca frosted. Con `image` (opcional) muestra la foto del truco
-   tratada al palette (B&N desaturado, tinte rojo sutil) viéndose a través del vidrio. */
-const GlassFace: React.FC<{w: number; h: number; front?: boolean; number?: string; image?: string}> = ({w, h, front, number, image}) => (
+   tratada al palette (B&N desaturado, tinte rojo sutil) viéndose a través del vidrio.
+   `gold` (0..1) la convierte en una carta DORADA que irradia luz (para "y el número 5"). */
+const GlassFace: React.FC<{w: number; h: number; front?: boolean; number?: string; image?: string; gold?: number; goldGlow?: number}> = ({w, h, front, number, image, gold = 0, goldGlow = 0}) => (
   <div
     style={{
       width: w,
       height: h,
       borderRadius: 20,
-      background: 'linear-gradient(135deg, rgba(255,255,255,0.22), rgba(255,255,255,0.05) 55%, rgba(255,255,255,0.12))',
-      border: '1.5px solid rgba(255,255,255,0.7)',
-      boxShadow: front
+      background: gold > 0
+        ? `linear-gradient(135deg, rgba(255,227,154,${0.30 + 0.22 * gold}), rgba(242,194,78,${0.10 + 0.12 * gold}) 55%, rgba(255,227,154,${0.18 + 0.12 * gold}))`
+        : 'linear-gradient(135deg, rgba(255,255,255,0.22), rgba(255,255,255,0.05) 55%, rgba(255,255,255,0.12))',
+      border: gold > 0.5 ? `2px solid ${GOLDLITE}` : '1.5px solid rgba(255,255,255,0.7)',
+      boxShadow: gold > 0
+        ? `0 0 ${50 + goldGlow * 90}px ${GOLD}${gold > 0.5 ? 'AA' : '66'}, 0 0 ${120 + goldGlow * 120}px ${GOLD}66, inset 0 1px 0 ${GOLDLITE}`
+        : front
         ? `0 0 46px rgba(255,255,255,0.35), 0 0 90px ${RED}55, inset 0 1px 0 rgba(255,255,255,0.7)`
         : `0 0 26px rgba(255,255,255,0.16), inset 0 1px 0 rgba(255,255,255,0.5)`,
       position: 'relative',
@@ -118,8 +125,12 @@ const GlassFace: React.FC<{w: number; h: number; front?: boolean; number?: strin
     <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0.02) 55%, rgba(255,255,255,0.08))'}} />
     <div style={{position: 'absolute', left: '10%', right: '10%', top: '42%', height: 1.5, background: 'rgba(255,255,255,0.5)'}} />
     <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(115deg, transparent 42%, rgba(255,255,255,0.22) 50%, transparent 58%)'}} />
+    {/* baño dorado que sube con `gold` */}
+    {gold > 0 && (
+      <div style={{position: 'absolute', inset: 0, background: `linear-gradient(160deg, rgba(255,227,154,${0.28 * gold}), rgba(242,194,78,${0.14 * gold}) 60%, rgba(242,194,78,${0.22 * gold}))`, mixBlendMode: 'screen'}} />
+    )}
     {number && (
-      <div style={{position: 'absolute', left: 24, bottom: 18, fontFamily: F_INTER, fontWeight: 800, fontSize: 46, color: WHITE, textShadow: `0 0 20px ${RED}, 0 2px 8px #000`}}>
+      <div style={{position: 'absolute', left: 24, bottom: 18, fontFamily: F_INTER, fontWeight: 800, fontSize: 46, color: gold > 0.5 ? GOLDLITE : WHITE, textShadow: gold > 0.5 ? `0 0 24px ${GOLD}, 0 2px 8px #000` : `0 0 20px ${RED}, 0 2px 8px #000`}}>
         {number}
       </div>
     )}
@@ -136,8 +147,10 @@ export const LightTrailCards: React.FC<{
   number?: string;
   cards?: number;
   images?: string[]; // 1 foto por carta (opcional), tratada B&N — la del truco correspondiente
+  goldCard?: number; // índice de la carta que SOBRESALE y se vuelve DORADA
+  goldAt?: number; // frame en que empieza el reveal dorado
   sfx?: boolean;
-}> = ({durationInFrames, eyebrow = '9 trucos con agua oxigenada', phrase = 'que los profesionales *no* te cuentan', number = '#1', cards = 9, images, sfx = true}) => {
+}> = ({durationInFrames, eyebrow = '9 trucos con agua oxigenada', phrase = 'que los profesionales *no* te cuentan', number = '#1', cards = 9, images, goldCard, goldAt = 40, sfx = true}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const prog = frame / durationInFrames;
@@ -184,17 +197,30 @@ export const LightTrailCards: React.FC<{
         >
           {Array.from({length: cards}).map((_, i) => {
             const appear = spring({frame: frame - (10 + i * 4.5), fps, config: {damping: 15, mass: 0.85, stiffness: 150}});
-            // slot final del abanico (recede a la derecha, cada vez más de canto)
-            const fanX = -230 + i * 62;
-            const fanY = -i * 5;
-            const fanZ = -i * 34;
-            const fanRot = -34 - i * 3.2; // rotateY: más de canto cuanto más atrás
+            // slot final del abanico — MÁS ABIERTO y separado: se lee como baraja 3D
+            // clara (antes step 62 → cartas encimadas). Ahora abren en arco amplio.
+            const mid = (cards - 1) / 2;
+            const off = i - mid; // centrado alrededor del medio
+            const fanX = off * 118;
+            const fanY = Math.abs(off) * 9 - 10; // leve V (las de los extremos caen)
+            const fanZ = -Math.abs(off) * 30;
+            const fanRot = off * 12; // abanico simétrico: giran hacia afuera
             // entrada: nace face-on en el centro y rota/desliza a su slot (riffle)
             const x = lerp(0, fanX, appear);
-            const y = lerp(0, fanY, appear);
-            const z = lerp(120, fanZ, appear);
-            const rot = lerp(0, fanRot, appear);
+            const yBase = lerp(0, fanY, appear);
+            const zBase = lerp(120, fanZ, appear);
+            const rotBase = lerp(0, fanRot, appear);
             const mb = (1 - appear) * 34;
+
+            // ── carta DORADA que sobresale del abanico y respira luz ──
+            const isGold = goldCard != null && i === goldCard;
+            const goldT = isGold ? interpolate(frame, [goldAt, goldAt + 16], [0, 1], CLAMP) : 0;
+            const breath = 0.55 + 0.45 * Math.sin(frame / 9);
+            const y = yBase - goldT * 150; // sube fuera del abanico
+            const z = zBase + goldT * 220; // hacia la cámara
+            const rot = lerp(rotBase, 0, goldT); // se endereza y encara
+            const gscale = 1 + goldT * 0.14;
+
             return (
               <div
                 key={i}
@@ -205,13 +231,13 @@ export const LightTrailCards: React.FC<{
                   width: W,
                   height: H,
                   transformStyle: 'preserve-3d',
-                  transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${rot}deg)`,
+                  transform: `translate3d(${x}px, ${y}px, ${z}px) rotateY(${rot}deg) scale(${gscale})`,
                   opacity: appear,
                   filter: mb > 0.6 ? `blur(${mb * 0.32}px)` : undefined,
-                  zIndex: 100 - i,
+                  zIndex: isGold ? 999 : 100 - Math.abs(off),
                 }}
               >
-                <GlassFace w={W} h={H} front={i === 0} number={i === 0 ? number : undefined} image={images?.[i]} />
+                <GlassFace w={W} h={H} front={i === 0} number={i === 0 ? number : undefined} image={images?.[i]} gold={goldT} goldGlow={goldT * breath} />
               </div>
             );
           })}
@@ -222,6 +248,7 @@ export const LightTrailCards: React.FC<{
 
       {sfx && <SfxCue at={10} src={SFX.whoosh} volume={0.4} />}
       {sfx && Array.from({length: cards}).map((_, i) => <SfxCue key={i} at={12 + i * 4} src={SFX.pop1} volume={0.22} />)}
+      {sfx && goldCard != null && <SfxCue at={goldAt} src={SFX.sparkleClean} volume={0.5} />}
     </AbsoluteFill>
   );
 };
@@ -449,8 +476,6 @@ export const ChapterTrailCard: React.FC<{
   const CH = 300;
   const cx = 960;
   const cy = 540;
-  const cardX = cx - CW / 2;
-  const cardY = cy - CH / 2;
   const trailPath = 'M 60 700 C 520 660, 700 460, 1000 470 S 1560 500, 1880 250';
   const numPop = spring({frame: frame - 20, fps, config: {damping: 10, mass: 0.7, stiffness: 180}});
 
@@ -488,3 +513,175 @@ export const ChapterTrailCard: React.FC<{
 };
 
 const rgbaW = (a: number) => `rgba(255,255,255,${a})`;
+
+/* ══════════════════════════════════════════════════════════════════════
+   5) TYPE CARD BESIDE — tarjeta compacta que hace ZOOM-IN en una ZONA
+      (izquierda o derecha) SOBRE el video, SIN oscurecer el fondo (fondo
+      transparente, solo la tarjeta con su glow). Va al lado del avatar.
+      El texto se revela con TIPEO (carácter por carácter) + SFX de tecla
+      por golpe + un sparkleClean al terminar. Rojo/negro/blanco.
+   ══════════════════════════════════════════════════════════════════════ */
+export const TypeCardBeside: React.FC<{
+  durationInFrames: number;
+  side?: 'left' | 'right';
+  title?: string;
+  lines?: string[];
+  typeStart?: number; // frame en que arranca el tipeo (tras el zoom-in)
+  width?: number;
+  sfx?: boolean;
+}> = ({durationInFrames, side = 'right', title = 'AGUA OXIGENADA', lines = ['3% · la de farmacia', 'Barata y sin cloro', 'Limpia sin manchar'], typeStart = 12, width = 660, sfx = true}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+
+  // ZOOM-IN de la tarjeta (con leve overshoot), sin tocar el fondo
+  const pop = spring({frame, fps, config: {damping: 13, mass: 0.7, stiffness: 180}});
+  const scale = interpolate(pop, [0, 1], [0.72, 1], CLAMP);
+  const outFade = interpolate(frame, [durationInFrames - 8, durationInFrames], [1, 0], CLAMP);
+
+  // TIPEO carácter por carácter, línea por línea
+  const perChar = 1.6;
+  const flat = lines.join('\n');
+  const total = flat.length;
+  const revealed = Math.max(0, Math.min(total, Math.floor((frame - typeStart) / perChar)));
+  const typing = frame >= typeStart && revealed < total;
+  const caret = typing && Math.floor(frame / 8) % 2 === 0;
+
+  // reparte `revealed` sobre las líneas
+  let acc = 0;
+  const shown = lines.map((ln) => {
+    const start = acc;
+    acc += ln.length + 1; // +1 por el salto
+    const take = Math.max(0, Math.min(ln.length, revealed - start));
+    return {text: ln.slice(0, take), done: revealed - start >= ln.length};
+  });
+
+  // clicks de tecla (con stride para no crear demasiados nodos de audio)
+  const stride = Math.max(1, Math.ceil(total / 40));
+  const clickIdx: number[] = [];
+  for (let i = 0; i < total; i += stride) if (flat[i] !== ' ') clickIdx.push(i);
+  const doneAt = typeStart + total * perChar;
+
+  const zoneStyle: React.CSSProperties = side === 'left' ? {left: 96} : {right: 96};
+
+  return (
+    <AbsoluteFill style={{background: 'transparent'}}>
+      <div
+        style={{
+          position: 'absolute',
+          top: '50%',
+          ...zoneStyle,
+          width,
+          transform: `translateY(-50%) scale(${scale})`,
+          transformOrigin: side === 'left' ? 'left center' : 'right center',
+          opacity: pop * outFade,
+        }}
+      >
+        <div
+          style={{
+            position: 'relative',
+            background: 'linear-gradient(160deg, rgba(20,20,22,0.94), rgba(10,10,11,0.96))',
+            border: `2px solid ${RED}`,
+            borderRadius: 26,
+            padding: '34px 40px',
+            boxShadow: `0 30px 70px rgba(0,0,0,0.6), 0 0 60px ${RED}44, inset 0 1px 0 rgba(255,255,255,0.08)`,
+          }}
+        >
+          {/* barra de acento roja arriba */}
+          <div style={{position: 'absolute', left: 40, top: 22, width: 64, height: 5, borderRadius: 3, background: RED, boxShadow: `0 0 16px ${RED}`}} />
+          <div style={{fontFamily: F_INTER, fontWeight: 800, letterSpacing: 3, fontSize: 30, textTransform: 'uppercase', color: WHITE, marginTop: 20, marginBottom: 18, textShadow: `0 0 18px ${RED}66`}}>
+            {title}
+          </div>
+          <div style={{display: 'flex', flexDirection: 'column', gap: 14}}>
+            {shown.map((s, i) => {
+              const active = typing && !s.done && (i === 0 || shown[i - 1].done) && s.text.length >= 0 && frame >= typeStart;
+              return (
+                <div key={i} style={{display: 'flex', alignItems: 'center', gap: 16, minHeight: 40}}>
+                  <div style={{width: 12, height: 12, borderRadius: 3, background: REDLITE, flexShrink: 0, boxShadow: `0 0 12px ${RED}`, opacity: s.text.length > 0 ? 1 : 0.25}} />
+                  <div style={{fontFamily: F_INTER, fontWeight: 600, fontSize: 34, color: 'rgba(255,255,255,0.92)', lineHeight: 1.1}}>
+                    {s.text}
+                    {active && caret && <span style={{display: 'inline-block', width: 3, height: 30, background: RED, marginLeft: 3, transform: 'translateY(4px)'}} />}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {sfx && clickIdx.map((i) => <SfxCue key={i} at={typeStart + i * perChar} src={SFX.click} volume={0.3} durationInFrames={8} />)}
+      {sfx && <SfxCue at={Math.round(doneAt)} src={SFX.sparkleClean} volume={0.4} />}
+    </AbsoluteFill>
+  );
+};
+
+/* ══════════════════════════════════════════════════════════════════════
+   6) GLITCH CUT — overlay corto (~0.4s) de glitch SUAVE y elegante para
+      cortar entre planos: RGB-split + desplazamiento de scanlines + un
+      flash tenue. NO agresivo. Prop `durationInFrames`.
+   ══════════════════════════════════════════════════════════════════════ */
+export const GlitchCut: React.FC<{
+  durationInFrames?: number;
+  sfx?: boolean;
+}> = ({durationInFrames = 12, sfx = true}) => {
+  const frame = useCurrentFrame();
+  const prog = Math.max(0, Math.min(1, frame / durationInFrames));
+  const env = Math.sin(prog * Math.PI); // sube y baja suave (0→1→0)
+
+  // slices horizontales que se desplazan (pseudo-aleatorio determinista)
+  const SLICES = 9;
+  const rnd = (k: number) => {
+    const s = Math.sin(k * 12.9898 + Math.floor(frame / 2) * 4.1) * 43758.5453;
+    return s - Math.floor(s);
+  };
+
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none', overflow: 'hidden'}}>
+      {/* RGB-split: dos velos finos de color desplazados a los lados */}
+      <div style={{position: 'absolute', inset: 0, background: `linear-gradient(90deg, ${RED}22, transparent 18%, transparent 82%, rgba(80,200,255,0.13))`, transform: `translateX(${env * 10}px)`, opacity: env}} />
+      <div style={{position: 'absolute', inset: 0, background: `linear-gradient(90deg, rgba(80,200,255,0.12), transparent 20%, transparent 80%, ${RED}1F)`, transform: `translateX(${-env * 10}px)`, opacity: env}} />
+
+      {/* slices que patinan lateralmente con leve tinte RGB */}
+      {Array.from({length: SLICES}).map((_, k) => {
+        const y = (k / SLICES) * 100;
+        const h = 100 / SLICES;
+        const dx = (rnd(k) - 0.5) * 90 * env;
+        const on = rnd(k + 7) > 0.45;
+        if (!on) return null;
+        const tint = k % 2 === 0 ? `${RED}` : 'rgba(80,200,255,1)';
+        return (
+          <div
+            key={k}
+            style={{
+              position: 'absolute',
+              left: 0,
+              right: 0,
+              top: `${y}%`,
+              height: `${h}%`,
+              transform: `translateX(${dx}px)`,
+              background: `linear-gradient(90deg, transparent, ${tint === RED ? 'rgba(228,50,42,0.10)' : 'rgba(80,200,255,0.08)'} 40%, transparent)`,
+              opacity: env * 0.9,
+              boxShadow: `inset 0 0 0 0.5px ${tint === RED ? 'rgba(228,50,42,0.18)' : 'rgba(80,200,255,0.14)'}`,
+            }}
+          />
+        );
+      })}
+
+      {/* scanlines que se desplazan */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, transparent 2px, transparent 4px)',
+          transform: `translateY(${(frame % 4) - 2}px)`,
+          opacity: env * 0.6,
+          mixBlendMode: 'screen',
+        }}
+      />
+
+      {/* flash tenue en el pico */}
+      <div style={{position: 'absolute', inset: 0, background: WHITE, opacity: Math.max(0, env - 0.55) * 0.4}} />
+
+      {sfx && <SfxCue at={0} src={SFX.swish} volume={0.3} durationInFrames={durationInFrames + 6} />}
+    </AbsoluteFill>
+  );
+};

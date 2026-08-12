@@ -1,5 +1,6 @@
 import React from "react";
 import { interpolate } from "remotion";
+import { SfxCue, SFX } from "../../components/Sfx";
 import { SPR, Theme, useTheme } from "./theme";
 import {
   Burst,
@@ -176,6 +177,7 @@ export const CtaCard: React.FC<{
   price?: number;
   cta?: string;
   image?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -185,6 +187,7 @@ export const CtaCard: React.FC<{
   price = 27,
   cta = "LINK EN LA DESCRIPCIÓN",
   image,
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -249,6 +252,13 @@ export const CtaCard: React.FC<{
             </div>
           </div>
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={6} src={SFX.whoosh} volume={0.3} />
+            {price > 0 && <SfxCue at={22} src={SFX.digitTick} volume={0.2} durationInFrames={14} />}
+            <SfxCue at={34} src={SFX.winnerChime} volume={0.4} />
+          </>
+        )}
       </Panel>
     </Stage>
   );
@@ -406,7 +416,8 @@ export const MythTruth: React.FC<{
   truth?: string;
   mythLabel?: string;
   truthLabel?: string;
-}> = ({ durationInFrames, theme, myth = "Más abono = más cosecha", truth = "El exceso quema la raíz", mythLabel = "Mito", truthLabel = "Verdad" }) => {
+  sfx?: boolean;
+}> = ({ durationInFrames, theme, myth = "Más abono = más cosecha", truth = "El exceso quema la raíz", mythLabel = "Mito", truthLabel = "Verdad", sfx = true }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const mythS = kick(frame, fps, 6, SPR.settle);
@@ -448,6 +459,13 @@ export const MythTruth: React.FC<{
             </Card>
           </div>
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={6} src={SFX.whoosh} volume={0.28} />
+            <SfxCue at={strikeAt} src={SFX.swish} volume={0.3} />
+            <SfxCue at={strikeAt + 24} src={SFX.sparkleClean} volume={0.42} />
+          </>
+        )}
       </Panel>
     </Stage>
   );

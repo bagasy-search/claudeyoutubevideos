@@ -1,5 +1,6 @@
 import React from "react";
 import { interpolate } from "remotion";
+import { SfxCue, SFX } from "../../components/Sfx";
 import { SPR, Theme, useTheme } from "./theme";
 import {
   Card,
@@ -30,6 +31,7 @@ export const HookCaption: React.FC<{
   theme?: Theme;
   words?: HookWord[];
   sub?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -41,6 +43,7 @@ export const HookCaption: React.FC<{
     { text: "todos los días", boxed: true },
   ],
   sub = "y se arregla con lo que ya tenés en tu casa",
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -85,6 +88,23 @@ export const HookCaption: React.FC<{
             </div>
           )}
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={2} src={SFX.whoosh} volume={0.24} />
+            {words.map((w, i) => {
+              const at = spread(durationInFrames, words.length, i, { holdFrac: 0.45, maxStep: 16 });
+              return (
+                <SfxCue
+                  key={i}
+                  at={at}
+                  src={w.boxed ? SFX.boom1 : SFX.pop1}
+                  volume={w.boxed ? 0.32 : 0.22}
+                  durationInFrames={w.boxed ? 30 : 16}
+                />
+              );
+            })}
+          </>
+        )}
       </Panel>
     </Stage>
   );
@@ -98,6 +118,7 @@ export const PullQuote: React.FC<{
   author?: string;
   role?: string;
   image?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -105,6 +126,7 @@ export const PullQuote: React.FC<{
   author,
   role,
   image,
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -211,6 +233,12 @@ export const PullQuote: React.FC<{
             </div>
           </div>
         )}
+        {sfx && (
+          <>
+            <SfxCue at={4} src={SFX.whoosh} volume={0.3} />
+            {author && <SfxCue at={34} src={SFX.winnerChime} volume={0.3} />}
+          </>
+        )}
       </Cinema>
     </Stage>
   );
@@ -280,6 +308,7 @@ export const HighlightSweep: React.FC<{
   highlight?: string;
   post?: string;
   note?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -287,6 +316,7 @@ export const HighlightSweep: React.FC<{
   highlight = "menos lo que más se rompe",
   post = ".",
   note = "cláusula 14, letra chica",
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const ink = useInk(t);
@@ -328,6 +358,13 @@ export const HighlightSweep: React.FC<{
             </div>
           )}
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={4} src={SFX.whoosh} volume={0.24} />
+            <SfxCue at={22} src={SFX.markerDrive} volume={0.36} />
+            {note && <SfxCue at={48} src={SFX.pop1} volume={0.22} />}
+          </>
+        )}
       </Panel>
     </Stage>
   );

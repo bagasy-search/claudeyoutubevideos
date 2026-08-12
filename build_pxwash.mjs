@@ -53,7 +53,7 @@ const PROPS = {
   // QUIMICA
   152000: { comp: "FlowSteps", title: "Why it works", kicker: "H2O2 = water + one extra oxygen", nodes: [{ label: "H2O2" }, { label: "Weak bond breaks" }, { label: "Oxygen burst" }, { label: "Rips the gunk apart" }, { label: "Back to water + oxygen" }] },
   163000: { px: "pxfoam", eyebrow: "The reaction you can see", title: "It foams and lifts the gunk", cleanLabel: "CLEAN!" },
-  186000: { comp: "VsDuel", eyebrow: "Two kinds of bleach", title: "Chlorine vs Oxygen", left: { label: "Chlorine bleach", sub: "harsh, scorches plants, lingers", good: false }, right: { label: "Oxygen bleach", sub: "same kill, breaks down to water + oxygen", good: true } },
+  186000: { comp: "VsDuel", eyebrow: "Two kinds of bleach", title: "Chlorine vs Oxygen", left: { label: "Chlorine bleach", sub: "harsh, scorches plants", image: "img/pxwash_bleach.png", good: false }, right: { label: "Oxygen bleach", sub: "same kill, gone to water + air", image: "img/pxwash_oxygen.png", good: true } },
   212000: { px: "pxtoggle", eyebrow: "Right next to the garden", phrase: "harsh → *safe by the beds*" },
   // TRICK 1
   228000: { px: "pxchap", number: "#1", title: "Siding", sub: "the green film on the north side" },
@@ -66,7 +66,7 @@ const PROPS = {
   // TRICK 2
   352000: { px: "pxchap", number: "#2", title: "Wood deck", sub: "gray, green & slippery" },
   369000: { comp: "BigStatReveal", eyebrow: "A restoration crew charges", prefix: "$", value: 700, support: "$600–$700 for a deck a $1 bottle can bring back" },
-  389000: { comp: "VsDuel", eyebrow: "On wood", title: "Peroxide vs Chlorine", left: { label: "Chlorine", sub: "bleaches it white & blotchy", good: false }, right: { label: "Peroxide", sub: "brightens, restores the wood", good: true } },
+  389000: { comp: "VsDuel", eyebrow: "On wood", title: "Peroxide vs Chlorine", left: { label: "Chlorine", sub: "bleaches it white & blotchy", image: "img/pxwash_bleach.png", good: false }, right: { label: "Peroxide", sub: "brightens, restores the wood", image: "img/pxwash_oxygen.png", good: true } },
   399000: { comp: "NumberedSteps", eyebrow: "The recipe (stronger than #1)", title: "Deck, how I do it", steps: [{ title: "Sweep the deck" }, { title: "Mix 2:1 peroxide to water" }, { title: "Add a tiny squirt of dish soap" }, { title: "Work in sections" }, { title: "Wait 15–20 min" }] },
   432000: { comp: "BeforeAfter", eyebrow: "Scrub with the grain", beforeLabel: "Gray & green", afterLabel: "Warm, clean tone", caption: "that was under there the whole time" },
   // TRICK 3
@@ -103,7 +103,7 @@ const PROPS = {
   // TRICK 7
   927000: { px: "pxchap", number: "#7", title: "Cushions & fabric", sub: "the black mildew speckles" },
   940000: { comp: "BigStatReveal", eyebrow: "They just throw them out", support: "a new cushion set can cost more than the whole list combined" },
-  950000: { comp: "VsDuel", eyebrow: "On colored fabric", title: "Oxygen vs Chlorine", left: { label: "Chlorine", sub: "fades navy cushions to sad gray", good: false }, right: { label: "Oxygen bleach", sub: "way safer on color", good: true } },
+  950000: { comp: "VsDuel", eyebrow: "On colored fabric", title: "Oxygen vs Chlorine", left: { label: "Chlorine", sub: "fades navy to sad gray", image: "img/pxwash_bleach.png", good: false }, right: { label: "Oxygen bleach", sub: "way safer on color", image: "img/pxwash_oxygen.png", good: true } },
   961000: { comp: "NumberedSteps", eyebrow: "The recipe", title: "Fabric, how I do it", steps: [{ title: "Mix 1:1, spray till damp" }, { title: "Let it sit a good 30 min" }, { title: "Scrub with a soft brush" }, { title: "Rinse, dry in the sun" }] },
   986000: { comp: "ChecklistReveal", title: "Test first", items: ["Test a hidden corner for colorfastness", "Bottom of a cushion", "Inside seam"], stamp: "PROTECT THE COLOR" },
   // TRICK 8
@@ -138,36 +138,104 @@ const ZONE = {
   PullQuote: "topLeft", ChecklistReveal: "topLeft", HookCaption: "top", CtaCard: "topLeft",
 };
 
+// ── FIX #4 PRIMER MINUTO: clips H3 del avatar/promesa intercalados en el HOOK ────
+// Cortes cortos y punchy (2–3.5s) que prometen "cosas locas": el VERTIDO que erupciona
+// espuma, el macro del fizz, las rayas de techo cine, señalar el siding. Se inyectan como
+// momentos tipo:"hookclip" → NO llenan hasta el próximo (dur corta), el resto lo cubre el
+// avatar full. Reusar clips está OK (baraja chica). ms → nombre del clip en public/broll/.
+const HOOK_CLIPS = [
+  { ms: 14000, src: "pxwash_hook_foam_pour",   seg: 4.5 }, // LA promesa: vierte y erupciona la espuma
+  { ms: 24000, src: "pxwash_hook_fizz_macro",  seg: 3.2 }, // macro del fizz vivo
+  { ms: 33000, src: "pxwash_hook_roof_dramatic", seg: 3.4 }, // rayas de techo cine
+  { ms: 68000, src: "pxwash_hook_point_siding", seg: 3.0 }, // señala el film verde del siding
+  { ms: 88000, src: "pxwash_hook_roof_dramatic", seg: 3.2 }, // zona muerta 78–117: rompe el avatar largo
+  { ms: 100000, src: "pxwash_hook_foam_pour",  seg: 3.2 }, // re-promesa antes del abanico
+  { ms: 110000, src: "pxwash_hook_fizz_macro", seg: 3.0 }, // último punch antes de LightTrailCards
+];
+const HOOK_BOTTLE = { ms: 6500, src: "pxwash_hook_bottle_up", seg: 2.4 }; // botella a cámara, apertura fuerte
+HOOK_CLIPS.push(HOOK_BOTTLE);
+
+// ── FIX #6 GOLD #5: en el abanico intro de los 9 la carta #5 sobresale DORADA cuando
+// el guion teasea "number five … saved $400". goldCard=4 (0-based) · goldAt = frame local.
+const T_NUMBER5 = at("number five is the one", 8); // ~123s
+// ms del momento que se ABSORBE en el abanico intro (el BigStat #5 del hook): el tease
+// de #5 lo lleva ahora la carta dorada, no un cartel aparte → el abanico respira 13s.
+const DROP = new Set([123000]);
+
+// ── FIX #5 TARJETAS AL LADO DEL AVATAR (avatar VISIBLE): ~7 momentos de tips/notas que
+// hoy oscurecen todo pasan a TypeCardBeside (lado opuesto, tipeo). Los HÉROES (BigStat,
+// MythTruth, VsDuel, LightTrailCards, BottleHero, BeforeAfter, FoamClean, Checklist de
+// seguridad crítica) quedan full/centrados. ms → { side, title, lines[] }.
+const TYPEBESIDE = {
+  60000:   { side: "right", title: "The quote",     lines: ["$240 — one wall", "Just green film", "He didn't know it's alive"] },
+  241000:  { side: "right", title: "Reality check", lines: ["That green film", "is NOT dirt", "It's living algae"] },
+  625000:  { side: "left",  title: "Honest limits", lines: ["Works: rust stains", "Works: fresh oil", "Not: 10-year-old oil"] },
+  813000:  { side: "right", title: "It won't…",     lines: ["Fix a cracked driveway", "Restain your fence", "Repair real damage"] },
+  921000:  { side: "left",  title: "The pattern",   lines: ["Kill it first", "THEN finish", "Noticing it yet?"] },
+  986000:  { side: "right", title: "Test first",    lines: ["A hidden corner", "Bottom of a cushion", "Check colorfastness"] },
+  1119000: { side: "left",  title: "Also works on", lines: ["Recycling bin", "Base of a grill", "Dog patio area"] },
+};
+
 // ── recorrer el plan → momentos ordenados (con su ms, tipo, start real) ─────────
 const moments = [];
 for (const sec of plan.secciones) {
   for (const m of sec.momentos) {
+    if (DROP.has(m.ms)) continue; // absorbido por el abanico dorado
     const t = at(m.dice, 8);
     const start = +(t != null ? t : m.ms / 1000).toFixed(2);
     moments.push({ ...m, section: sec.id, start });
   }
 }
+// inyectar los clips H3 del hook como momentos propios (start = ms fijo, no hay caption)
+for (const h of HOOK_CLIPS) {
+  moments.push({ ms: h.ms, tipo: "hookclip", section: "hook", src: h.src, seg: h.seg, start: +(h.ms / 1000).toFixed(2) });
+}
 moments.sort((a, b) => a.start - b.start || a.ms - b.ms);
-// duración = la que fijó el DIRECTOR (m.seg), clampeada para no pisar el próximo momento.
-// Cuando seg < hueco al próximo, ese hueco lo cubre el AVATAR full (presentador hablando).
-// Así se respeta el pacing del plan (hook cortísimo, etc.) y ningún plano se congela/estira.
+// ── FIX #1 CERO DESTELLOS: TILEO 100% CONTIGUO ──────────────────────────────────
+// Regla dura: cada plano visible dura EXACTO hasta el próximo momento (dur = hueco) para
+// que NUNCA asome el fondo entre planos. Solo cuando el hueco supera HOLDCAP (tramo de
+// avatar hablando genuino) el plano se topa y el resto lo cubre el avatar full — y ahí el
+// hueco es grande (>1.2s) así que la ventana de avatar entra sin dejar slivers.
+// Excepción: los clips H3 del hook son PUNCH cortos (2–3.5s) y ceden a avatar full; si el
+// remanente al próximo es chico (<1.2s) se estiran a contiguo para no dejar destello.
+const HOLDCAP = 9.0;
 for (let i = 0; i < moments.length; i++) {
   const next = i + 1 < moments.length ? moments[i + 1].start : TOTAL;
   const gap = +(next - moments[i].start).toFixed(2);
   const seg = +moments[i].seg || 4;
-  // hold hasta ~7.5s (bajo el techo de 12s; RawShot maneja el anti-congelado). Cuando el
-  // hueco al próximo momento supera eso, la cola la cubre el avatar full → menos cabeza
-  // parlante que tilear entero, sin planos de 20s ni fondo pelado.
-  moments[i].dur = +Math.max(1.2, Math.min(gap, Math.max(seg, 6.5), 7.5)).toFixed(2);
+  // FIX #6: el abanico intro (ms 117000) es SHOWCASE — se sostiene hasta el próximo momento
+  // (absorbió el BigStat #5) para que la carta #5 se vuelva DORADA justo en "number five" y
+  // respire. Sube el techo a 12s (tope del plan) solo para este plano.
+  if (moments[i].tipo === "componente" && moments[i].ms === 117000) {
+    moments[i].dur = +Math.max(1.2, Math.min(gap, 12)).toFixed(2);
+    continue;
+  }
+  if (moments[i].tipo === "hookclip") {
+    let dur = Math.max(1.6, Math.min(gap, seg));
+    if (gap - dur < 1.2) dur = gap; // remanente chico → contiguo (sin sliver de fondo)
+    moments[i].dur = +dur.toFixed(2);
+  } else if (gap <= HOLDCAP) {
+    moments[i].dur = +Math.max(1.2, gap).toFixed(2); // CONTIGUO exacto
+  } else {
+    // hueco largo → plano al tope y el resto lo cubre el avatar full (cabeza parlante real)
+    moments[i].dur = +Math.max(1.2, Math.min(Math.max(seg, 6.5), 7.5)).toFixed(2);
+  }
 }
 
 // ── construir beats ─────────────────────────────────────────────────────────
 const beats = [];
 const compCount = {};
-let nClip = 0, nImg = 0, nAvatar = 0, nPx = 0, nPrem = 0, nMiss = 0;
+let nClip = 0, nImg = 0, nAvatar = 0, nPx = 0, nPrem = 0, nMiss = 0, nHook = 0, nBeside = 0;
 for (const m of moments) {
   const dur = m.dur;
   if (m.tipo === "avatar") { nAvatar++; continue; } // sin beat: lo cubre el avatar full
+  if (m.tipo === "hookclip") {
+    // FIX #4/#7: clip H3 del hook (o footage extra). raw full-bleed, corte punchy.
+    const id = `${SLUG}_h3_${Math.round(m.ms / 1000)}`;
+    beats.push({ id, start: m.start, dur, kind: "raw", src: `broll/${m.src}.mp4`, hue: "red", darken: 0.06, noSplit: true, trans: 9 });
+    nHook++;
+    continue;
+  }
   if (m.tipo === "clip") {
     const name = `${SLUG}_${m.section}_${Math.round(m.ms / 1000)}`;
     beats.push({ id: name, start: m.start, dur, kind: "raw", src: `broll/${name}.mp4`, hue: "red", darken: 0.06, noSplit: true });
@@ -182,10 +250,22 @@ for (const m of moments) {
     continue;
   }
   if (m.tipo === "componente") {
+    // FIX #5: momentos de tip/nota → TARJETA AL LADO del avatar (avatar visible), no full.
+    const tb = TYPEBESIDE[m.ms];
+    if (tb) {
+      beats.push({ id: `tb_${Math.round(m.ms / 1000)}`, start: m.start, dur, kind: "typebeside", overlay: true, ...tb });
+      nBeside++; compCount.TypeCardBeside = (compCount.TypeCardBeside || 0) + 1;
+      continue;
+    }
     const p = PROPS[m.ms];
     if (!p) { console.warn("⚠ componente sin props ms=", m.ms, m.kind); nMiss++; continue; }
     if (p.px) {
       const { px, ...props } = p;
+      // FIX #6: el abanico intro de los 9 → carta #5 DORADA cuando el guion teasea "#5 = $400".
+      if (px === "pxfan" && m.ms === 117000) {
+        props.goldCard = 4;
+        props.goldAt = Math.max(40, Math.round(((T_NUMBER5 != null ? T_NUMBER5 : 123) - m.start) * 30));
+      }
       beats.push({ id: `px_${px}_${Math.round(m.ms / 1000)}`, start: m.start, dur, kind: px, ...props });
       nPx++; compCount[px] = (compCount[px] || 0) + 1;
     } else {
@@ -195,6 +275,34 @@ for (const m of moments) {
     }
     continue;
   }
+}
+beats.sort((a, b) => a.start - b.start);
+
+// ── FIX #2 GLITCH: transición glitch suave (~0.4s) en los cortes de sección + tras el
+// PRIMER clip. Elegante, NO en todos lados. Overlay: no oculta avatar ni cuenta como tile.
+const GLITCH_DUR = 0.4;
+const glitchAts = [];
+// arranque de cada sección (salvo el hook) = el primer beat con start dentro de la sección
+{
+  const secStart = {};
+  for (const m of moments) {
+    if (m.tipo === "avatar") continue;
+    if (secStart[m.section] == null || m.start < secStart[m.section]) secStart[m.section] = m.start;
+  }
+  for (const sec of plan.secciones) {
+    if (sec.id === "hook") continue;
+    const s = secStart[sec.id];
+    if (s != null) glitchAts.push(+(s - 0.2).toFixed(2));
+  }
+  // tras el PRIMER clip real/H3 del video (regla dura del canal)
+  const firstClip = beats.find((b) => b.kind === "raw");
+  if (firstClip) glitchAts.push(+(firstClip.start + firstClip.dur - 0.2).toFixed(2));
+}
+let nGlitch = 0;
+for (const a0 of [...new Set(glitchAts)].sort((x, y) => x - y)) {
+  const a = Math.max(0, a0);
+  beats.push({ id: `glitch_${Math.round(a * 100)}`, start: a, dur: GLITCH_DUR, kind: "glitch", overlay: true });
+  nGlitch++;
 }
 beats.sort((a, b) => a.start - b.start);
 
@@ -212,8 +320,11 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 // ── AVATAR WINDOWS full↔hidden (sin PiP) — HIDDEN bajo cada beat, FULL en los huecos ──
 // El avatar cubre TODO lo que no ocupa un beat (clip/imagen/peróxido/premium), incluidos
 // los momentos tipo:"avatar" y las colas de narración donde el director no puso visual.
-const snapWord = (tt) => { for (const c of caps) if (c.startMs / 1000 >= tt - 0.05) return c.startMs / 1000; return tt; };
-const iv = beats.map((b) => [b.start, +(b.start + b.dur).toFixed(2)]).sort((a, b) => a[0] - b[0]);
+// NOHIDE = overlays que NO ocultan el avatar: la tarjeta al lado (avatar visible) y el
+// glitch de transición (velo encima). No participan de las ventanas hidden → el avatar
+// queda FULL debajo de ellos.
+const NOHIDE = new Set(["typebeside", "glitch"]);
+const iv = beats.filter((b) => !NOHIDE.has(b.kind)).map((b) => [b.start, +(b.start + b.dur).toFixed(2)]).sort((a, b) => a[0] - b[0]);
 const merged = [];
 for (const [s, e] of iv) {
   if (merged.length && s <= merged[merged.length - 1][1] + 0.05) merged[merged.length - 1][1] = Math.max(merged[merged.length - 1][1], e);
@@ -222,11 +333,13 @@ for (const [s, e] of iv) {
 const windows = [];
 let cur = 0;
 for (const [s, e] of merged) {
-  if (s > cur + 0.2) windows.push({ start: +snapWord(cur).toFixed(2), mode: "full" }); // hueco → avatar
+  // FIX #1: el avatar full arranca EXACTO donde termina el plano anterior (sin snap a la
+  // palabra siguiente) → cero frames de fondo pelado entre un plano y la cara.
+  if (s > cur + 0.2) windows.push({ start: +cur.toFixed(2), mode: "full" }); // hueco → avatar
   windows.push({ start: +s.toFixed(2), mode: "hidden" }); // beat → avatar oculto
   cur = e;
 }
-if (cur < TOTAL - 0.2) windows.push({ start: +snapWord(cur).toFixed(2), mode: "full" });
+if (cur < TOTAL - 0.2) windows.push({ start: +cur.toFixed(2), mode: "full" });
 if (!windows.length || windows[0].start !== 0) windows.unshift({ start: 0, mode: windows[0]?.mode === "hidden" ? "hidden" : "full" });
 // dedup starts iguales
 for (let i = windows.length - 1; i > 0; i--) if (windows[i].start === windows[i - 1].start) windows.splice(i, 1);
@@ -240,6 +353,6 @@ const fullS = (() => {
   for (let i = 0; i < windows.length - 1; i++) if (windows[i].mode === "full") s += windows[i + 1].start - windows[i].start;
   return Math.round(s);
 })();
-console.log(`beats ${beats.length}  ·  clips ${nClip}  ·  imgs ${nImg}  ·  peróxido ${nPx}  ·  premium ${nPrem}  ·  avatar-momentos ${nAvatar}  ·  sin-mapear ${nMiss}`);
+console.log(`beats ${beats.length}  ·  clips ${nClip}  ·  hookH3 ${nHook}  ·  imgs ${nImg}  ·  peróxido ${nPx}  ·  premium ${nPrem}  ·  beside ${nBeside}  ·  glitch ${nGlitch}  ·  avatar-momentos ${nAvatar}  ·  sin-mapear ${nMiss}`);
 console.log(`dur ${(TOTAL / 60).toFixed(1)}min (${TOTAL}s)  ·  avatar full ${fullS}s (${Math.round(100 * fullS / TOTAL)}%)  ·  windows ${windows.length}`);
 console.log("componentes:", JSON.stringify(compCount));

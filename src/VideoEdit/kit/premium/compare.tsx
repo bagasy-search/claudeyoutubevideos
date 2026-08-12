@@ -1,5 +1,6 @@
 import React from "react";
 import { interpolate } from "remotion";
+import { SfxCue, SFX } from "../../components/Sfx";
 import { SPR, Theme, useTheme } from "./theme";
 import {
   Burst,
@@ -41,6 +42,7 @@ export const VsDuel: React.FC<{
   title?: string;
   left?: VsSide;
   right?: VsSide;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -48,6 +50,7 @@ export const VsDuel: React.FC<{
   title = "¿Cuál conviene de verdad?",
   left = { label: "Comprado", sub: "$60.000 por temporada", value: 60000, unit: "$", good: false },
   right = { label: "Casero", sub: "una tarde de trabajo", value: 900, unit: "$", good: true },
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -129,6 +132,14 @@ export const VsDuel: React.FC<{
             </div>
           </div>
         </div>
+        {sfx && (
+          <>
+            <SfxCue at={2} src={SFX.whoosh} volume={0.28} />
+            <SfxCue at={9} src={SFX.pop1} volume={0.3} />
+            <SfxCue at={17} src={SFX.pop2} volume={0.3} />
+            <SfxCue at={VS_AT} src={SFX.winnerChime} volume={0.42} />
+          </>
+        )}
       </Panel>
     </Stage>
   );
@@ -144,6 +155,7 @@ export const BeforeAfter: React.FC<{
   beforeImage?: string;
   afterImage?: string;
   caption?: string;
+  sfx?: boolean;
 }> = ({
   durationInFrames,
   theme,
@@ -153,6 +165,7 @@ export const BeforeAfter: React.FC<{
   beforeImage,
   afterImage,
   caption = "El mismo lugar, 3 semanas más tarde",
+  sfx = true,
 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
@@ -286,6 +299,14 @@ export const BeforeAfter: React.FC<{
 
         <Grain theme={t} />
         <LensVignette theme={t} strength={1.15} />
+        {sfx && (
+          <>
+            <SfxCue at={14} src={SFX.markerDrive} volume={0.34} />
+            <SfxCue at={22} src={SFX.pop1} volume={0.24} />
+            <SfxCue at={48} src={SFX.pop2} volume={0.24} />
+            <SfxCue at={58} src={SFX.sparkleClean} volume={0.3} />
+          </>
+        )}
       </div>
     </Stage>
   );

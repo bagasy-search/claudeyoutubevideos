@@ -1396,6 +1396,18 @@ function renderEl(b) {
     // src/peroxide/PeroxideHero.tsx + PeroxideKit.tsx. Son escenas completas (rojo/negro/
     // blanco, THEME_PEROXIDE), NO overlays: durante ellas el avatar va HIDDEN. Todas las
     // props (eyebrow/phrase/number/title/…) pasan tal cual; texto en INGLÉS desde el build.
+    case "glitch":
+      // TRANSICIÓN GLITCH SUAVE (overlay ~0.4s) entre bloques/secciones + tras el 1er clip.
+      return `<GlitchCut durationInFrames={d} />`;
+    case "typebeside":
+      // TARJETA QUE TIPEA AL LADO DEL AVATAR (avatar VISIBLE): tips/notas sin oscurecer todo.
+      return (
+        `<TypeCardBeside durationInFrames={d}` +
+        (b.side ? ` side=${j(b.side)}` : ``) +
+        (b.title ? ` title=${j(b.title)}` : ``) +
+        (b.lines ? ` lines={${j(b.lines)}}` : ``) +
+        ` />`
+      );
     case "pxfan": case "pxchap": case "pxtoggle": case "pxhero": case "pxfoam": case "pxpour": {
       const PXC = { pxfan: "LightTrailCards", pxchap: "ChapterTrailCard", pxtoggle: "NodeRingToggle", pxhero: "BottleHero", pxfoam: "FoamClean", pxpour: "GluGluPour" };
       const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k) && k !== "comp" && k !== "zone" && k !== "theme") rest[k] = b[k];
@@ -1600,7 +1612,7 @@ if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlay
 if (kinds.has("dishgrid")) imports.push(`import { DishGrid } from "./components/DishGrid";`);
 // ── COMPONENTES FIRMA "Agua Oxigenada" (src/peroxide/) — full-bleed, escena propia ──
 {
-  const PX_HERO = { pxfan: "LightTrailCards", pxchap: "ChapterTrailCard", pxtoggle: "NodeRingToggle", pxhero: "BottleHero" };
+  const PX_HERO = { pxfan: "LightTrailCards", pxchap: "ChapterTrailCard", pxtoggle: "NodeRingToggle", pxhero: "BottleHero", glitch: "GlitchCut", typebeside: "TypeCardBeside" };
   const PX_KIT = { pxfoam: "FoamClean", pxpour: "GluGluPour" };
   const heroUsed = Object.entries(PX_HERO).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   const kitUsed = Object.entries(PX_KIT).filter(([k]) => kinds.has(k)).map(([, v]) => v);

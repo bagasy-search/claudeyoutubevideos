@@ -12,6 +12,24 @@
    "phrase": "just *a dollar* at the drugstore"
   },
   {
+   "id": "pxwash_h3_7",
+   "start": 6.5,
+   "dur": 2.4,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_bottle_up.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "glitch_870",
+   "start": 8.7,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
    "id": "pxwash_hook_9",
    "start": 10.82,
    "dur": 1.64,
@@ -24,7 +42,7 @@
   {
    "id": "ov_bigstatreveal_12",
    "start": 12.46,
-   "dur": 6.5,
+   "dur": 1.54,
    "kind": "premium",
    "overlay": true,
    "comp": "BigStatReveal",
@@ -36,9 +54,20 @@
    "support": "to come out and clean the exact same stuff a $1 bottle handles"
   },
   {
+   "id": "pxwash_h3_14",
+   "start": 14,
+   "dur": 5.24,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_foam_pour.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
    "id": "ov_bulletcascade_19",
    "start": 19.24,
-   "dur": 6.5,
+   "dur": 4.76,
    "kind": "premium",
    "overlay": true,
    "comp": "BulletCascade",
@@ -61,9 +90,20 @@
    ]
   },
   {
+   "id": "pxwash_h3_24",
+   "start": 24,
+   "dur": 4,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_fizz_macro.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
    "id": "ov_mythtruth_28",
    "start": 28,
-   "dur": 6.5,
+   "dur": 5,
    "kind": "premium",
    "overlay": true,
    "comp": "MythTruth",
@@ -73,6 +113,17 @@
    "truth": "It kills algae, mold & mildew outside your house",
    "mythLabel": "Myth",
    "truthLabel": "Truth"
+  },
+  {
+   "id": "pxwash_h3_33",
+   "start": 33,
+   "dur": 3.4,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_roof_dramatic.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
   },
   {
    "id": "pxwash_hook_37",
@@ -95,42 +146,80 @@
    "noSplit": true
   },
   {
-   "id": "ov_highlightsweep_60",
+   "id": "tb_60",
    "start": 63.28,
-   "dur": 6.5,
-   "kind": "premium",
+   "dur": 4.72,
+   "kind": "typebeside",
    "overlay": true,
-   "comp": "HighlightSweep",
-   "theme": "peroxide",
-   "zone": "top",
-   "pre": "They quoted my buddy ",
-   "highlight": "$240 to spray one wall",
-   "post": " of green film.",
-   "note": "he didn't know the green stuff is alive"
+   "side": "right",
+   "title": "The quote",
+   "lines": [
+    "$240 — one wall",
+    "Just green film",
+    "He didn't know it's alive"
+   ]
+  },
+  {
+   "id": "pxwash_h3_68",
+   "start": 68,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_point_siding.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "pxwash_h3_88",
+   "start": 88,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_roof_dramatic.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "pxwash_h3_100",
+   "start": 100,
+   "dur": 3.2,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_foam_pour.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
+  },
+  {
+   "id": "pxwash_h3_110",
+   "start": 110,
+   "dur": 3,
+   "kind": "raw",
+   "src": "broll/pxwash_hook_fizz_macro.mp4",
+   "hue": "red",
+   "darken": 0.06,
+   "noSplit": true,
+   "trans": 9
   },
   {
    "id": "px_pxfan_117",
    "start": 118.48,
-   "dur": 6.5,
+   "dur": 12,
    "kind": "pxfan",
    "eyebrow": "Hydrogen peroxide, outside the house",
    "phrase": "*9 ways* the pros won't tell you",
-   "number": "#1"
+   "number": "#1",
+   "goldCard": 4,
+   "goldAt": 196
   },
   {
-   "id": "ov_bigstatreveal_123",
-   "start": 125.02,
-   "dur": 6.5,
-   "kind": "premium",
-   "overlay": true,
-   "comp": "BigStatReveal",
-   "theme": "peroxide",
-   "zone": "topLeft",
-   "eyebrow": "Number five",
-   "prefix": "$",
-   "value": 400,
-   "suffix": " saved",
-   "support": "the one trick that's saved people around $400 in a single afternoon — stick around"
+   "id": "glitch_14202",
+   "start": 142.02,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "pxwash_h2o2_molecule",
@@ -175,7 +264,7 @@
   {
    "id": "px_pxfoam_163",
    "start": 158.28,
-   "dur": 6.5,
+   "dur": 7.4,
    "kind": "pxfoam",
    "eyebrow": "The reaction you can see",
    "title": "It foams and lifts the gunk",
@@ -214,12 +303,14 @@
    "title": "Chlorine vs Oxygen",
    "left": {
     "label": "Chlorine bleach",
-    "sub": "harsh, scorches plants, lingers",
+    "sub": "harsh, scorches plants",
+    "image": "img/pxwash_bleach.png",
     "good": false
    },
    "right": {
     "label": "Oxygen bleach",
-    "sub": "same kill, breaks down to water + oxygen",
+    "sub": "same kill, gone to water + air",
+    "image": "img/pxwash_oxygen.png",
     "good": true
    }
   },
@@ -236,10 +327,17 @@
   {
    "id": "px_pxtoggle_212",
    "start": 213.16,
-   "dur": 6.5,
+   "dur": 7.84,
    "kind": "pxtoggle",
    "eyebrow": "Right next to the garden",
    "phrase": "harsh → *safe by the beds*"
+  },
+  {
+   "id": "glitch_22790",
+   "start": 227.9,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxchap_228",
@@ -261,18 +359,18 @@
    "noSplit": true
   },
   {
-   "id": "ov_highlightsweep_241",
+   "id": "tb_241",
    "start": 241,
-   "dur": 6.5,
-   "kind": "premium",
+   "dur": 9,
+   "kind": "typebeside",
    "overlay": true,
-   "comp": "HighlightSweep",
-   "theme": "peroxide",
-   "zone": "top",
-   "pre": "That green film is ",
-   "highlight": "not dirt — it's living algae",
-   "post": ".",
-   "note": "it's alive"
+   "side": "right",
+   "title": "Reality check",
+   "lines": [
+    "That green film",
+    "is NOT dirt",
+    "It's living algae"
+   ]
   },
   {
    "id": "ov_bigstatreveal_250",
@@ -328,7 +426,7 @@
   {
    "id": "pxwash_trick1_298",
    "start": 298,
-   "dur": 6.5,
+   "dur": 8,
    "kind": "raw",
    "src": "broll/pxwash_trick1_298.mp4",
    "hue": "red",
@@ -347,7 +445,7 @@
   {
    "id": "ov_beforeafter_316",
    "start": 316,
-   "dur": 6.5,
+   "dur": 9,
    "kind": "premium",
    "overlay": true,
    "comp": "BeforeAfter",
@@ -361,7 +459,7 @@
   {
    "id": "ov_bigstatreveal_325",
    "start": 325,
-   "dur": 6.5,
+   "dur": 6.74,
    "kind": "premium",
    "overlay": true,
    "comp": "BigStatReveal",
@@ -382,6 +480,13 @@
    "hue": "red",
    "darken": 0.06,
    "noSplit": true
+  },
+  {
+   "id": "glitch_35180",
+   "start": 351.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxchap_352",
@@ -419,7 +524,7 @@
   {
    "id": "pxwash_trick2_382",
    "start": 382,
-   "dur": 6.5,
+   "dur": 7,
    "kind": "raw",
    "src": "broll/pxwash_trick2_382.mp4",
    "hue": "red",
@@ -440,11 +545,13 @@
    "left": {
     "label": "Chlorine",
     "sub": "bleaches it white & blotchy",
+    "image": "img/pxwash_bleach.png",
     "good": false
    },
    "right": {
     "label": "Peroxide",
     "sub": "brightens, restores the wood",
+    "image": "img/pxwash_oxygen.png",
     "good": true
    }
   },
@@ -480,7 +587,7 @@
   {
    "id": "pxwash_trick2_420",
    "start": 420.54,
-   "dur": 6.5,
+   "dur": 6.58,
    "kind": "raw",
    "src": "broll/pxwash_trick2_420.mp4",
    "hue": "red",
@@ -500,6 +607,13 @@
    "beforeLabel": "Gray & green",
    "afterLabel": "Warm, clean tone",
    "caption": "that was under there the whole time"
+  },
+  {
+   "id": "glitch_44424",
+   "start": 444.24,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxchap_444",
@@ -538,7 +652,7 @@
   {
    "id": "pxwash_trick3_475",
    "start": 475,
-   "dur": 6.5,
+   "dur": 9,
    "kind": "raw",
    "src": "broll/pxwash_trick3_475.mp4",
    "hue": "red",
@@ -599,9 +713,16 @@
    }
   },
   {
+   "id": "glitch_55818",
+   "start": 558.18,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
    "id": "px_pxchap_558",
    "start": 558.38,
-   "dur": 6.5,
+   "dur": 7.62,
    "kind": "pxchap",
    "number": "#4",
    "title": "Driveway stains",
@@ -634,7 +755,7 @@
   {
    "id": "ov_flowsteps_589",
    "start": 589,
-   "dur": 6.5,
+   "dur": 7.98,
    "kind": "premium",
    "overlay": true,
    "comp": "FlowSteps",
@@ -660,7 +781,7 @@
   {
    "id": "pxwash_trick4_602",
    "start": 596.98,
-   "dur": 6.5,
+   "dur": 7.76,
    "kind": "raw",
    "src": "broll/pxwash_trick4_602.mp4",
    "hue": "red",
@@ -670,7 +791,7 @@
   {
    "id": "pxwash_trick4_607",
    "start": 604.74,
-   "dur": 6.5,
+   "dur": 8.26,
    "kind": "raw",
    "src": "broll/pxwash_trick4_607.mp4",
    "hue": "red",
@@ -687,26 +808,30 @@
    "cleanLabel": "CLEAN!"
   },
   {
-   "id": "ov_checklistreveal_625",
+   "id": "tb_625",
    "start": 625,
    "dur": 6.5,
-   "kind": "premium",
+   "kind": "typebeside",
    "overlay": true,
-   "comp": "ChecklistReveal",
-   "theme": "peroxide",
-   "zone": "topLeft",
+   "side": "left",
    "title": "Honest limits",
-   "items": [
+   "lines": [
     "Works: rust stains",
     "Works: fresh oil",
-    "Doesn't: a 10-year-old oil stain"
-   ],
-   "stamp": "BEATS RESURFACING"
+    "Not: 10-year-old oil"
+   ]
+  },
+  {
+   "id": "glitch_63914",
+   "start": 639.14,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxchap_639",
    "start": 639.34,
-   "dur": 6.5,
+   "dur": 8.66,
    "kind": "pxchap",
    "number": "#5",
    "title": "The roof",
@@ -758,7 +883,7 @@
   {
    "id": "pxwash_trick5_696",
    "start": 695.78,
-   "dur": 6.5,
+   "dur": 6.54,
    "kind": "raw",
    "src": "broll/pxwash_trick5_696.mp4",
    "hue": "red",
@@ -844,21 +969,25 @@
    "note": "a salesman called a living stain 'shingle failure'"
   },
   {
-   "id": "ov_checklistreveal_813",
+   "id": "glitch_81280",
+   "start": 812.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
+   "id": "tb_813",
    "start": 813,
    "dur": 6.5,
-   "kind": "premium",
+   "kind": "typebeside",
    "overlay": true,
-   "comp": "ChecklistReveal",
-   "theme": "peroxide",
-   "zone": "topLeft",
-   "title": "What it will NOT do",
-   "items": [
+   "side": "right",
+   "title": "It won't…",
+   "lines": [
     "Fix a cracked driveway",
     "Restain your fence",
-    "Repair real damage → call a pro"
-   ],
-   "stamp": "BE HONEST ABOUT IT"
+    "Repair real damage"
+   ]
   },
   {
    "id": "ov_hookcaption_831",
@@ -904,9 +1033,16 @@
    "noSplit": true
   },
   {
+   "id": "glitch_85172",
+   "start": 851.72,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
+  },
+  {
    "id": "px_pxchap_851",
    "start": 851.92,
-   "dur": 6.5,
+   "dur": 6.56,
    "kind": "pxchap",
    "number": "#6",
    "title": "Fence",
@@ -915,7 +1051,7 @@
   {
    "id": "pxwash_trick6_856",
    "start": 858.48,
-   "dur": 6.5,
+   "dur": 6.82,
    "kind": "raw",
    "src": "broll/pxwash_trick6_856.mp4",
    "hue": "red",
@@ -1002,18 +1138,25 @@
    "truthLabel": "Truth"
   },
   {
-   "id": "ov_highlightsweep_921",
+   "id": "tb_921",
    "start": 920.12,
-   "dur": 6.5,
-   "kind": "premium",
+   "dur": 7.54,
+   "kind": "typebeside",
    "overlay": true,
-   "comp": "HighlightSweep",
-   "theme": "peroxide",
-   "zone": "top",
-   "pre": "",
-   "highlight": "Kill it first, then finish",
-   "post": ".",
-   "note": "noticing the pattern yet?"
+   "side": "left",
+   "title": "The pattern",
+   "lines": [
+    "Kill it first",
+    "THEN finish",
+    "Noticing it yet?"
+   ]
+  },
+  {
+   "id": "glitch_92746",
+   "start": 927.46,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxchap_927",
@@ -1027,7 +1170,7 @@
   {
    "id": "pxwash_trick7_931",
    "start": 931,
-   "dur": 6.5,
+   "dur": 9,
    "kind": "raw",
    "src": "broll/pxwash_trick7_931.mp4",
    "hue": "red",
@@ -1059,12 +1202,14 @@
    "title": "Oxygen vs Chlorine",
    "left": {
     "label": "Chlorine",
-    "sub": "fades navy cushions to sad gray",
+    "sub": "fades navy to sad gray",
+    "image": "img/pxwash_bleach.png",
     "good": false
    },
    "right": {
     "label": "Oxygen bleach",
     "sub": "way safer on color",
+    "image": "img/pxwash_oxygen.png",
     "good": true
    }
   },
@@ -1105,26 +1250,30 @@
    "noSplit": true
   },
   {
-   "id": "ov_checklistreveal_986",
+   "id": "tb_986",
    "start": 986,
    "dur": 6.5,
-   "kind": "premium",
+   "kind": "typebeside",
    "overlay": true,
-   "comp": "ChecklistReveal",
-   "theme": "peroxide",
-   "zone": "topLeft",
+   "side": "right",
    "title": "Test first",
-   "items": [
-    "Test a hidden corner for colorfastness",
+   "lines": [
+    "A hidden corner",
     "Bottom of a cushion",
-    "Inside seam"
-   ],
-   "stamp": "PROTECT THE COLOR"
+    "Check colorfastness"
+   ]
+  },
+  {
+   "id": "glitch_99866",
+   "start": 998.66,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxchap_998",
    "start": 998.86,
-   "dur": 6.5,
+   "dur": 7.32,
    "kind": "pxchap",
    "number": "#8",
    "title": "Brick & pavers",
@@ -1157,7 +1306,7 @@
   {
    "id": "pxwash_trick8_1029",
    "start": 1029,
-   "dur": 6.5,
+   "dur": 7,
    "kind": "raw",
    "src": "broll/pxwash_trick8_1029.mp4",
    "hue": "red",
@@ -1202,7 +1351,7 @@
   {
    "id": "ov_beforeafter_1054",
    "start": 1054,
-   "dur": 6.5,
+   "dur": 9,
    "kind": "premium",
    "overlay": true,
    "comp": "BeforeAfter",
@@ -1212,6 +1361,13 @@
    "beforeLabel": "Black moss",
    "afterLabel": "Real brick color",
    "caption": "killed at the root — stays gone longer"
+  },
+  {
+   "id": "glitch_106980",
+   "start": 1069.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxchap_1070",
@@ -1235,7 +1391,7 @@
   {
    "id": "ov_mythtruth_1085",
    "start": 1085.38,
-   "dur": 6.5,
+   "dur": 6.62,
    "kind": "premium",
    "overlay": true,
    "comp": "MythTruth",
@@ -1266,26 +1422,25 @@
    "noSplit": true
   },
   {
-   "id": "ov_bulletcascade_1119",
+   "id": "tb_1119",
    "start": 1119,
    "dur": 6.5,
-   "kind": "premium",
+   "kind": "typebeside",
    "overlay": true,
-   "comp": "BulletCascade",
-   "theme": "peroxide",
-   "zone": "left",
-   "eyebrow": "Same trick also works on",
-   "bullets": [
-    {
-     "key": "Recycling bin"
-    },
-    {
-     "key": "The base of a grill"
-    },
-    {
-     "key": "A dog area on the patio"
-    }
+   "side": "left",
+   "title": "Also works on",
+   "lines": [
+    "Recycling bin",
+    "Base of a grill",
+    "Dog patio area"
    ]
+  },
+  {
+   "id": "glitch_113580",
+   "start": 1135.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "ov_bigstatreveal_1136",
@@ -1363,6 +1518,13 @@
    "zone": "topLeft",
    "quote": "The tricks are for routine cleaning — not for risking a fall.",
    "role": "be smart about it"
+  },
+  {
+   "id": "glitch_122780",
+   "start": 1227.8,
+   "dur": 0.4,
+   "kind": "glitch",
+   "overlay": true
   },
   {
    "id": "px_pxhero_1228",
@@ -1445,7 +1607,7 @@
   {
    "id": "pxwash_cierre_1300",
    "start": 1300.58,
-   "dur": 6.5,
+   "dur": 8.3,
    "kind": "raw",
    "src": "broll/pxwash_cierre_1300.mp4",
    "hue": "red",
