@@ -390,6 +390,15 @@ export const StampBadge: React.FC<{
 };
 
 // ── MythTruth — MITO tachado que se apaga vs VERDAD que se enciende ──────────
+// ── FIX i18n/contraste: la chip de VERDAD pintaba `onAccent` sobre `good`. En
+// temas donde `good` es BLANCO (THEME_PEROXIDE) quedaba blanco-sobre-blanco e
+// invisible. Elegimos texto oscuro cuando el fondo `good` es claro.
+const _onGood = (t: Theme): string => {
+  const h = (t.color.good || "#000000").replace("#", "");
+  const r = parseInt(h.slice(0, 2), 16) || 0, g = parseInt(h.slice(2, 4), 16) || 0, b = parseInt(h.slice(4, 6), 16) || 0;
+  return r * 0.299 + g * 0.587 + b * 0.114 > 150 ? (t.color.bg0 || "#0A0A0B") : t.color.onAccent;
+};
+
 export const MythTruth: React.FC<{
   durationInFrames: number;
   theme?: Theme;
@@ -431,7 +440,7 @@ export const MythTruth: React.FC<{
           {/* VERDAD */}
           <div style={{ opacity: Math.min(1, truthS * 1.4), transform: `scale(${0.7 + truthS * 0.3})` }}>
             <Card theme={t} accent={t.color.good} strong style={{ padding: "40px 76px", display: "flex", alignItems: "center", gap: 34, boxShadow: `0 30px 70px ${t.color.shadow}, 0 0 70px ${t.color.glow}` }}>
-              <div style={{ fontFamily: t.fontLabel, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: t.color.onAccent, background: t.color.good, textTransform: "uppercase", borderRadius: 12, padding: "8px 20px", flexShrink: 0 }}>
+              <div style={{ fontFamily: t.fontLabel, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: _onGood(t), background: t.color.good, textTransform: "uppercase", borderRadius: 12, padding: "8px 20px", flexShrink: 0 }}>
                 {truthLabel}
               </div>
               <Display theme={t} size={70}>{truth}</Display>

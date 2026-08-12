@@ -15,7 +15,7 @@ import { FreezeZoom } from "./scenes/FreezeZoom";
 import { F_INTER } from "./kit/premium/theme";
 import { RUB_BEATS } from "./rosemaryrub_beats";
 import { RUB_BROLL } from "./rosemaryrub_broll";
-import { TALKSR } from "./rosemaryrub_hooks";
+import { TALKSR, AVATAR_FOCUS } from "./rosemaryrub_hooks";
 import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
 
 // ── CANAL "Dr. Federer | Holistic Health" · THE ROSEMARY GLOVE (manos) ──────────
@@ -137,7 +137,11 @@ export const MainRosemaryRub: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* CAPA 1 — B-ROLL DENSO continuo */}
       {RUB_BROLL.map((b) => {
-        const dd = Math.max(1, Math.min(sec(b.dur) + 3, sec(7.5)));
+        // TILEO CONTIGUO: cada clip dura hasta el PRÓXIMO (+3f de overlap), SIN tope de 7.5s.
+        // El tope viejo dejaba un HUECO cuando el próximo ancla estaba lejos → asomaba el fondo (BG)
+        // entre clips = la "transición glitch fea" cuando no hay imagen/componente. Contiguo = nunca hay hueco.
+        // (Si un clip queda muy largo por bed ralo, RawShot lo sostiene con ken-burns; mejor eso que el destello.)
+        const dd = Math.max(1, sec(b.dur) + 3);
         const half = inHalfR(b.start);
         const shot = <RawShot durationInFrames={dd} src={b.src} hue="cold" />;
         return (
@@ -160,7 +164,7 @@ export const MainRosemaryRub: React.FC = () => {
       })}
 
       {/* CAPA 3 — AVATAR (full / hidden / split halfR, cero recuadro) */}
-      <AvatarLayer src="rosemaryrub_opt.mp4" windows={AVATAR_WINDOWS} accent={TEAL} />
+      <AvatarLayer src="rosemaryrub_opt.mp4" windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={AVATAR_FOCUS} />
 
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {

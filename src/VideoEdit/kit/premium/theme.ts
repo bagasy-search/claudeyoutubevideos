@@ -268,12 +268,56 @@ export const THEME_MEDICO: Theme = {
   displayWeight: 800,
 };
 
+// ── 6) PEROXIDE — canal "Agua Oxigenada / Hydrogen Peroxide Tricks" ──────────
+// Oscuro-cinematográfico (como las refs premium del usuario): fondo navy profundo,
+// acento AZUL peróxido/limpio + LIMA "funciona/limpio", ámbar de la botella como
+// segundo acento, y serif Playfair para la palabra clave en itálica. La espuma
+// BLANCA y el glow leen sobre este fondo oscuro (sobre azulejo blanco desaparecían).
+export const THEME_PEROXIDE: Theme = {
+  name: "peroxide",
+  mode: "dark",
+  fontDisplay: F_PLAYFAIR,
+  fontBody: F_INTER,
+  fontLabel: F_INTER,
+  color: {
+    // ROJO / NEGRO / BLANCO — premium editorial, pega con las miniaturas.
+    bg0: "#0A0A0B",
+    bg1: "#141416",
+    bg2: "#1E1E22",
+    surface: "rgba(20,20,22,0.86)",
+    surfaceStrong: "#17171A",
+    text: "#FFFFFF",
+    textSoft: "rgba(255,255,255,0.72)",
+    textDim: "rgba(255,255,255,0.44)",
+    accent: "#E4322A", // rojo — acento del canal
+    accentSoft: "#8E2420",
+    accent2: "#C9C9CF", // plata / blanco frío — "el otro lado"
+    gold: "#FF5A4E", // realce cálido rojizo para cifras/sellos
+    danger: "#FF4136",
+    good: "#FFFFFF", // blanco — limpio / verdad / ON
+    ink: "#FFFFFF",
+    line: "rgba(255,255,255,0.14)",
+    glow: "rgba(228,50,42,0.55)",
+    shadow: "rgba(0,0,0,0.6)",
+    onAccent: "#FFFFFF",
+  },
+  radius: 20,
+  texture: "grain",
+  rays: true,
+  raysColor: "rgba(228,50,42,0.10)",
+  upperLabels: true,
+  labelSpacing: 5,
+  strokeW: 6,
+  displayWeight: 700,
+};
+
 export const THEMES: Record<string, Theme> = {
   earth: THEME_EARTH,
   nature: THEME_NATURE,
   amish: THEME_AMISH,
   alarm: THEME_ALARM,
   medico: THEME_MEDICO,
+  peroxide: THEME_PEROXIDE,
 };
 
 // ── Context + hook ────────────────────────────────────────────────────────────

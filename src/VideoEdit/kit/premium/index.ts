@@ -15,6 +15,7 @@ export {
   THEME_AMISH,
   THEME_ALARM,
   THEME_MEDICO,
+  THEME_PEROXIDE,
   SPR,
 } from "./theme";
 export type { Theme, ThemeColors } from "./theme";

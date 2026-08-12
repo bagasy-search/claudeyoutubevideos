@@ -1385,6 +1385,23 @@ function renderEl(b) {
     // el componente (full-bleed por diseño) dentro de una caja recortada en zona segura vía
     // PremiumOverlay (topLeft|left|top|full) para que el b-roll siga viéndose alrededor y
     // no tape el avatar PiP abajo-derecha. Todas las demás props pasan tal cual al componente.
+    // ── componentes a medida del video "cultivos de septiembre" (full-screen) ──
+    case "showcase":
+      return `<CropShowcase durationInFrames={d} focus={${b.focus | 0}} number={${j(String(b.number ?? ""))}} name={${j(b.name || "")}} description={${j(b.description || "")}} tip={${j(b.tip || "")}} images={${j(b.images || [])}} months={${j(b.months || [])}}${b.assemble === false ? " assemble={false}" : ""}${b.accent ? ` accent={${j(b.accent)}}` : ""}${b.pastel ? ` pastel={${j(b.pastel)}}` : ""} />`;
+    case "seasondial": return `<SeasonDial durationInFrames={d} />`;
+    case "starchsugar": return `<StarchToSugar durationInFrames={d} />`;
+    case "vernalize": return `<VernalizationClock durationInFrames={d} />`;
+    case "soilfridge": return `<SoilFridge durationInFrames={d} />`;
+    // ── componentes FIRMA del canal Agua Oxigenada (full-bleed, escena propia) ──
+    // src/peroxide/PeroxideHero.tsx + PeroxideKit.tsx. Son escenas completas (rojo/negro/
+    // blanco, THEME_PEROXIDE), NO overlays: durante ellas el avatar va HIDDEN. Todas las
+    // props (eyebrow/phrase/number/title/…) pasan tal cual; texto en INGLÉS desde el build.
+    case "pxfan": case "pxchap": case "pxtoggle": case "pxhero": case "pxfoam": case "pxpour": {
+      const PXC = { pxfan: "LightTrailCards", pxchap: "ChapterTrailCard", pxtoggle: "NodeRingToggle", pxhero: "BottleHero", pxfoam: "FoamClean", pxpour: "GluGluPour" };
+      const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k) && k !== "comp" && k !== "zone" && k !== "theme") rest[k] = b[k];
+      delete rest.kind;
+      return `<${PXC[b.kind]} durationInFrames={d} {...(${j(rest)} as any)} />`;
+    }
     case "premium": {
       const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k) && k !== "comp" && k !== "zone" && k !== "theme") rest[k] = b[k];
       const themeConst = `THEME_${(b.theme || "earth").toUpperCase()}`;
@@ -1457,6 +1474,11 @@ if (kinds.has("heatslow")) imports.push(`import { HeatSlowDiagram } from "./scen
 if (kinds.has("frostwipe")) imports.push(`import { FrostWipe } from "./scenes/FrostWipe";`);
 if (kinds.has("rollnum")) imports.push(`import { Odometer } from "./scenes/Odometer";`);
 if (kinds.has("splitba")) imports.push(`import { SplitBeforeAfter } from "./scenes/SplitBeforeAfter";`);
+if (kinds.has("showcase")) imports.push(`import { CropShowcase } from "./scenes/CropShowcase";`);
+if (kinds.has("seasondial")) imports.push(`import { SeasonDial } from "./scenes/CropMechanisms";`);
+if (kinds.has("starchsugar")) imports.push(`import { StarchToSugar } from "./scenes/CropMechanisms";`);
+if (kinds.has("vernalize")) imports.push(`import { VernalizationClock } from "./scenes/CropMechanisms";`);
+if (kinds.has("soilfridge")) imports.push(`import { SoilFridge } from "./scenes/CropMechanisms";`);
 if (kinds.has("saltplunge")) imports.push(`import { SaltPlunge } from "./scenes/SaltPlunge";`);
 if (kinds.has("redacted")) imports.push(`import { RedactedReveal } from "./scenes/RedactedReveal";`);
 if (kinds.has("impstamp")) imports.push(`import { ImpossibleStamp } from "./scenes/ImpossibleStamp";`);
@@ -1576,6 +1598,15 @@ if (kinds.has("manualcard")) imports.push(`import { ManualCard } from "./overlay
   const duUsed = Object.entries(duMap).filter(([k]) => kinds.has(k)).map(([, v]) => v);
   if (duUsed.length) imports.push(`import { ${duUsed.join(", ")} } from "./components/DulcesCards";`); }
 if (kinds.has("dishgrid")) imports.push(`import { DishGrid } from "./components/DishGrid";`);
+// ── COMPONENTES FIRMA "Agua Oxigenada" (src/peroxide/) — full-bleed, escena propia ──
+{
+  const PX_HERO = { pxfan: "LightTrailCards", pxchap: "ChapterTrailCard", pxtoggle: "NodeRingToggle", pxhero: "BottleHero" };
+  const PX_KIT = { pxfoam: "FoamClean", pxpour: "GluGluPour" };
+  const heroUsed = Object.entries(PX_HERO).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  const kitUsed = Object.entries(PX_KIT).filter(([k]) => kinds.has(k)).map(([, v]) => v);
+  if (heroUsed.length) imports.push(`import { ${heroUsed.join(", ")} } from "../peroxide/PeroxideHero";`);
+  if (kitUsed.length) imports.push(`import { ${kitUsed.join(", ")} } from "../peroxide/PeroxideKit";`);
+}
 // ── KIT PREMIUM (themeable) — componentes usados vía kind:"premium" + comp:"X" ──
 if (kinds.has("premium")) {
   imports.push(`import { PremiumOverlay } from "./scenes/PremiumOverlay";`);
