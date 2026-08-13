@@ -21,29 +21,40 @@ beats = beats.filter((b) => b.ms_out - b.ms_in >= 200);
 // reasignamos a un pool de clips verificados, por sección, con variedad round-robin.
 // POOL depurado tras verificación visual (contact sheet): se sacaron los off-topic
 // (sillón, edificios, neumático, interior de auto, mecánico, hazmat, blur).
+// POOL expandido con stock video fresco (_v1) + FOTOS REALES web verificadas (pxa_photo_*, sin
+// marca/texto por imgaudit_vision) para MATAR la repetición en los subjetos escasos (coil/drain/
+// disposal/window). Las fotos entran como Ken-Burns still (resolveAsset las detecta).
 const POOL = {
-  hook:   ["pxa_ac_6", "pxa_window_3", "pxa_dish_1", "pxa_washer_1", "pxa_humid_2", "pxa_bottle_1", "pxa_bottle_2", "pxa_mold_1", "pxa_clean_1", "pxa_drain_1"],
-  quim:   ["pxa_pour_1", "pxa_foam_2", "pxa_foam_1", "pxa_mold_1", "pxa_bottle_1", "pxa_spray_1", "pxa_drain_2"],
-  t1:     ["pxa_drain_1", "pxa_mold_3", "pxa_drain_3", "pxa_drain_2", "pxa_pour_1"],
-  t2:     ["pxa_window_3", "pxa_coil_3", "pxa_gloves_1", "pxa_spray_1", "pxa_mold_1"],
-  cta1:   ["pxa_clean_1", "pxa_spray_1", "pxa_dish_2", "pxa_bottle_1"],
-  t3:     ["pxa_washer_1", "pxa_washer_2", "pxa_mold_1", "pxa_spray_1", "pxa_gloves_1"],
-  t4:     ["pxa_fridge_2", "pxa_fridge_3", "pxa_clean_1", "pxa_pour_1", "pxa_gloves_1"],
-  t5:     ["pxa_coil_3", "pxa_ac_6", "pxa_window_3", "pxa_spray_2", "pxa_mold_1", "pxa_bill_1"],
-  cta2:   ["pxa_clean_1", "pxa_coil_3", "pxa_bottle_1", "pxa_dish_1"],
-  t6:     ["pxa_dish_1", "pxa_dish_2", "pxa_gloves_1", "pxa_spray_1", "pxa_mold_1"],
-  t7:     ["pxa_disposal_1", "pxa_disposal_2", "pxa_foam_2", "pxa_foam_1"],
-  t8:     ["pxa_humid_1", "pxa_humid_2", "pxa_mold_1", "pxa_pour_1"],
-  t9:     ["pxa_car_1", "pxa_car_2", "pxa_car_3", "pxa_spray_1"],
-  seg:    ["pxa_safety_1", "pxa_safety_2", "pxa_bottle_1", "pxa_gloves_1", "pxa_pour_1", "pxa_spray_2"],
-  cierre: ["pxa_bottle_1", "pxa_bottle_2", "pxa_ac_6", "pxa_clean_1", "pxa_window_3", "pxa_spray_1"],
+  hook:   ["pxa_ac_6", "pxa_window_3", "pxa_window_v1", "pxa_dish_1", "pxa_washer_1", "pxa_humid_2", "pxa_bottle_1", "pxa_bottle_2", "pxa_mold_1", "pxa_clean_1", "pxa_drain_1", "pxa_photo_coil_1"],
+  quim:   ["pxa_pour_1", "pxa_foam_2", "pxa_foam_1", "pxa_mold_1", "pxa_bottle_1", "pxa_spray_1", "pxa_drain_2", "pxa_photo_coil_2", "pxa_gloves_v1"],
+  t1:     ["pxa_drain_1", "pxa_photo_drain_1", "pxa_mold_3", "pxa_photo_drain_3", "pxa_drain_3", "pxa_drain_2", "pxa_pour_1"],
+  t2:     ["pxa_window_3", "pxa_window_v1", "pxa_coil_3", "pxa_photo_coil_1", "pxa_gloves_1", "pxa_spray_1", "pxa_mold_1"],
+  cta1:   ["pxa_clean_1", "pxa_spray_1", "pxa_dish_2", "pxa_bottle_1", "pxa_gloves_v1"],
+  t3:     ["pxa_washer_1", "pxa_washer_2", "pxa_mold_1", "pxa_spray_1", "pxa_gloves_1", "pxa_gloves_v1"],
+  t4:     ["pxa_fridge_2", "pxa_fridge_3", "pxa_fridge_v1", "pxa_clean_1", "pxa_pour_1", "pxa_gloves_1"],
+  t5:     ["pxa_photo_coil_1", "pxa_photo_coil_2", "pxa_photo_coil_3", "pxa_photo_coil_4", "pxa_coil_v1", "pxa_coil_3", "pxa_ac_6", "pxa_spray_2", "pxa_bill_1", "pxa_mold_1"],
+  cta2:   ["pxa_clean_1", "pxa_coil_3", "pxa_photo_coil_3", "pxa_bottle_1", "pxa_dish_1"],
+  t6:     ["pxa_dish_1", "pxa_dish_2", "pxa_dish_v1", "pxa_photo_dish_3", "pxa_gloves_1", "pxa_spray_1", "pxa_mold_1"],
+  t7:     ["pxa_disposal_1", "pxa_disposal_2", "pxa_photo_disposal_1", "pxa_photo_disposal_2", "pxa_photo_disposal_3", "pxa_disposal_v1", "pxa_foam_2", "pxa_foam_1"],
+  t8:     ["pxa_humid_1", "pxa_humid_2", "pxa_humid_v1", "pxa_mold_1", "pxa_pour_1"],
+  t9:     ["pxa_car_1", "pxa_car_2", "pxa_car_3", "pxa_car_v1", "pxa_spray_1"],
+  seg:    ["pxa_safety_1", "pxa_safety_2", "pxa_bottle_1", "pxa_gloves_1", "pxa_gloves_v1", "pxa_pour_1", "pxa_spray_2"],
+  cierre: ["pxa_bottle_1", "pxa_bottle_2", "pxa_ac_6", "pxa_clean_1", "pxa_window_v1", "pxa_window_3", "pxa_spray_1"],
 };
 const secOf = (name) => { const m = /^pxaire_([a-z0-9]+)_/.exec(name || ""); return m ? m[1] : null; };
+// resolvedor: un nombre del POOL puede ser VIDEO (broll/*.mp4) o FOTO real (real|img/*.png|jpg).
+const resolveAsset = (name) => {
+  if (fs.existsSync(`public/broll/${name}.mp4`)) return { src: `broll/${name}.mp4`, isImg: false };
+  for (const [dir, ext] of [["img", "png"], ["real", "png"], ["real", "jpg"], ["real", "jpeg"], ["img", "jpg"]]) {
+    if (fs.existsSync(`public/${dir}/${name}.${ext}`)) return { src: `${dir}/${name}.${ext}`, isImg: true };
+  }
+  return null;
+};
 const cnt = {}; let lastClip = null;
 for (const b of beats) {
   if (b.tipo !== "clip") continue;
-  // ya remapeado (empieza con pxa_) → respetar
-  if (/^pxa_/.test(b.clip) && fs.existsSync(`public/broll/${b.clip}.mp4`)) { lastClip = b.clip; continue; }
+  // ya remapeado (empieza con pxa_) y el asset existe (video o foto) → respetar
+  if (/^pxa_/.test(b.clip) && resolveAsset(b.clip)) { lastClip = b.clip; continue; }
   const s = secOf(b.clip); const pool = POOL[s];
   if (!pool || !pool.length) continue;
   let i = (cnt[s] = (cnt[s] || 0)) % pool.length;
@@ -111,6 +122,7 @@ const overlays = [];
 const windows = [];
 let lastMode = null;
 const clipsUsed = new Set();
+const imgsUsed = new Set(); // fotos reales (real/*.png|jpg, img/*.png) usadas como Ken-Burns still
 const missing = [];
 
 for (let i = 0; i < beats.length; i++) {
@@ -130,10 +142,12 @@ for (let i = 0; i < beats.length; i++) {
 
   if (b.tipo === "clip") {
     const name = b.clip;
-    clipsUsed.add(name);
-    if (!fs.existsSync(`public/broll/${name}.mp4`)) missing.push(name);
-    const cd = durs[name] ? ` clipDur={${(+durs[name]).toFixed(2)}}` : "";
-    cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="broll/${name}.mp4" hue="red" darken={0.06}${cd} />` });
+    const a = resolveAsset(name);
+    if (!a) { missing.push(name); continue; }
+    if (a.isImg) { imgsUsed.add(a.src); }
+    else { clipsUsed.add(name); }
+    const cd = !a.isImg && durs[name] ? ` clipDur={${(+durs[name]).toFixed(2)}}` : "";
+    cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="${a.src}" hue="red" darken={0.06}${cd} />` });
   } else if (b.tipo === "componente") {
     const c = b.componente;
     const props = jprops(normProps(c, b.props));
@@ -227,7 +241,11 @@ registerRoot(RootPxaire);
 `;
 fs.writeFileSync("src/index_pxaire.tsx", idx);
 
-fs.writeFileSync("_pxaire_assets.txt", [...clipsUsed].map((n) => `broll/${n}.mp4`).join("\n") + "\n");
+// assets: clips de video + fotos reales + su _blur.jpg (el kit lo pide en runtime)
+const imgLines = [];
+for (const src of imgsUsed) { imgLines.push(src); const blur = src.replace(/\.(png|jpe?g)$/i, "_blur.jpg"); imgLines.push(blur); }
+fs.writeFileSync("_pxaire_assets.txt", [...[...clipsUsed].map((n) => `broll/${n}.mp4`), ...imgLines].join("\n") + "\n");
+console.log(`imágenes (fotos reales): ${imgsUsed.size}`);
 
 const nClip = beats.filter((b) => b.tipo === "clip").length;
 const nComp = beats.filter((b) => b.tipo === "componente").length;
