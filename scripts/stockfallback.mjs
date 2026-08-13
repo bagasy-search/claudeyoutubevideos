@@ -19,7 +19,7 @@ import { acquireStock } from "./stock_lib.mjs";
 const args = process.argv.slice(2);
 const DRY = args.includes("--dry");
 const listIdx = args.indexOf("--list");
-const OUT = "public/broll";
+const OUT = process.env.STOCK_OUT || "public/broll";
 
 let bad = [];
 let matchedPath = null, matched = null;
