@@ -82,6 +82,7 @@ import { MainHuron, TOTAL_FRAMES_HUR } from "./VideoEdit/Main_huron";
 import { MainCastores, TOTAL_FRAMES_CAS } from "./VideoEdit/Main_castores";
 import { MainAral, TOTAL_FRAMES_AR } from "./VideoEdit/Main_aral";
 import { MainBarcos, TOTAL_FRAMES_BAR } from "./VideoEdit/Main_barcos";
+import { MainPxaire, TOTAL_FRAMES_PXAIRE } from "./VideoEdit/Main_pxaire";
 import { MainLeona, TOTAL_FRAMES_LEONA } from "./VideoEdit/Main_leona";
 import { MainConstrucciones, TOTAL_FRAMES_CONS } from "./VideoEdit/Main_construcciones";
 import { MainAntartida, TOTAL_FRAMES_ANT } from "./VideoEdit/Main_antartida";
@@ -149,6 +150,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="KitPreview" component={MainKitPreview} durationInFrames={TOTAL_FRAMES_KIT} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Crónicas Perdidas · "7 Barcos…" (SLICE 1) · faceless · voz clonada */}
       <Composition id="Barcos" component={MainBarcos} durationInFrames={TOTAL_FRAMES_BAR} fps={30} width={1920} height={1080} />
+      <Composition id="PxAire" component={MainPxaire} durationInFrames={TOTAL_FRAMES_PXAIRE} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Documental fauna · "El Hurón de Patas Negras" · faceless · voz clonada */}
       <Composition id="Huron" component={MainHuron} durationInFrames={TOTAL_FRAMES_HUR} fps={30} width={1920} height={1080} />
       {/* DOCUMENTAL FAUNA · Planeta Reconstruido — Castores paracaidistas de Idaho (1948) */}
