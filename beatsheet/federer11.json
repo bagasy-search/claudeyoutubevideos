@@ -1,0 +1,1268 @@
+{
+ "video": "federer11",
+ "avatar": "federer11_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1,
+   "dur": 16.98,
+   "key": "hook",
+   "kind": "talk"
+  },
+  {
+   "id": "hook_1",
+   "start": 17.98,
+   "dur": 5,
+   "key": "hook",
+   "kind": "raw",
+   "src": "img/fe11_carmen_tobillos.png",
+   "kicker": "Carmen, 86 años. Tobillos a punto de reventar."
+  },
+  {
+   "id": "impresionaron_0",
+   "start": 22.98,
+   "dur": 5.82,
+   "key": "impresionaron",
+   "kind": "raw",
+   "src": "img/fe11_tobillo_brilla.png",
+   "hold": true
+  },
+  {
+   "id": "impresionaron_1",
+   "start": 28.8,
+   "dur": 4.2,
+   "key": "impresionaron",
+   "kind": "callout",
+   "image": "img/fe11_tobillo_brilla.png",
+   "figure": "«La piel brilla, tensa»",
+   "caption": "Cuando la piel del tobillo brilla estirada, hay líquido empujando desde adentro."
+  },
+  {
+   "id": "presion_0",
+   "start": 30.12,
+   "dur": 4.57,
+   "key": "presion",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LA MARCA NO VUELVE",
+     "sub": "presionas el tobillo y el hoyito tarda en desaparecer: eso es líquido retenido",
+     "tone": "warn",
+     "at": 53
+    }
+   ],
+   "clip": "avatar_clips/federer11/presion_0.mp4"
+  },
+  {
+   "id": "resigne_0",
+   "start": 42.64,
+   "dur": 6.25,
+   "key": "resigne",
+   "kind": "talk"
+  },
+  {
+   "id": "resigne_1",
+   "start": 48.89,
+   "dur": 13.75,
+   "key": "resigne",
+   "kind": "mitoverdad",
+   "myth": "Las piernas hinchadas son normales a mi edad",
+   "truth": "No es normal — es una SEÑAL que tu cuerpo te manda",
+   "flipAt": 376
+  },
+  {
+   "id": "senal_0",
+   "start": 62.64,
+   "dur": 5.27,
+   "key": "senal",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TU CUERPO TE ESTÁ AVISANDO",
+     "sub": "piernas hinchadas después de los 60 = una señal que casi nadie sabe leer",
+     "tone": "warn",
+     "at": 74
+    }
+   ],
+   "clip": "avatar_clips/federer11/senal_0.mp4"
+  },
+  {
+   "id": "error_tease_0",
+   "start": 82.44,
+   "dur": 22.58,
+   "key": "error_tease",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Y"
+    },
+    {
+     "t": "hay"
+    },
+    {
+     "t": "un"
+    },
+    {
+     "t": "ERROR",
+     "hl": true
+    },
+    {
+     "t": "cada"
+    },
+    {
+     "t": "noche"
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "promesa_0",
+   "start": 105.02,
+   "dur": 13.76,
+   "key": "promesa",
+   "kind": "talk"
+  },
+  {
+   "id": "porque_cumplimos_0",
+   "start": 118.78,
+   "dur": 3.3,
+   "key": "porque_cumplimos",
+   "kind": "talk"
+  },
+  {
+   "id": "canerias_0",
+   "start": 122.08,
+   "dur": 16.04,
+   "key": "canerias",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_canerias.png"
+    }
+   ]
+  },
+  {
+   "id": "valvulas_0",
+   "start": 138.12,
+   "dur": 18.6,
+   "key": "valvulas",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_valvulas.png"
+    }
+   ]
+  },
+  {
+   "id": "bomba_0",
+   "start": 156.72,
+   "dur": 2.8,
+   "key": "bomba",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TUS PANTORRILLAS SON UNA BOMBA",
+     "sub": "al caminar, el músculo aprieta las venas y empuja la sangre hacia el corazón",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer11/bomba_0.mp4"
+  },
+  {
+   "id": "desgastan_0",
+   "start": 163.54,
+   "dur": 10.76,
+   "key": "desgastan",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_valvulas_flojas.png"
+    }
+   ]
+  },
+  {
+   "id": "estancada_0",
+   "start": 174.3,
+   "dur": 6.52,
+   "key": "estancada",
+   "kind": "raw",
+   "src": "img/fe11_tobillo_hinchado_cerca.png",
+   "hold": true
+  },
+  {
+   "id": "estancada_1",
+   "start": 180.82,
+   "dur": 10.16,
+   "key": "estancada",
+   "kind": "annotated",
+   "image": "img/fe11_tobillo_hinchado_cerca.png",
+   "eyebrow": "Dónde se acumula",
+   "caption": "La sangre se estanca abajo y empuja líquido a los tejidos",
+   "annotations": [
+    {
+     "label": "Tobillo hinchado",
+     "x": 42,
+     "y": 55
+    },
+    {
+     "label": "Empeine y pie",
+     "x": 60,
+     "y": 74
+    }
+   ]
+  },
+  {
+   "id": "linfatico_0",
+   "start": 190.98,
+   "dur": 17.96,
+   "key": "linfatico",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_linfatico.png"
+    }
+   ]
+  },
+  {
+   "id": "sodio_0",
+   "start": 208.94,
+   "dur": 12.7,
+   "key": "sodio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_sal_agua.png"
+    }
+   ]
+  },
+  {
+   "id": "zapatos_0",
+   "start": 221.64,
+   "dur": 5.26,
+   "key": "zapatos",
+   "kind": "raw",
+   "src": "img/fe11_zapatos_no_entran.png",
+   "hold": true
+  },
+  {
+   "id": "tres_fallas_0",
+   "start": 226.9,
+   "dur": 9.2,
+   "key": "tres_fallas",
+   "kind": "chips",
+   "bg": "image",
+   "image": "img/fe11_piernas_mayor.png",
+   "imageDarken": 0.55,
+   "title": "No es la vejez, es fisiología",
+   "chips": [
+    "Válvulas flojas",
+    "Drenaje lento",
+    "Sal que retiene agua"
+   ]
+  },
+  {
+   "id": "puedes_influir_0",
+   "start": 236.1,
+   "dur": 14.48,
+   "key": "puedes_influir",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "En"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "TRES"
+    },
+    {
+     "t": "puedes"
+    },
+    {
+     "t": "influir",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "advertir_0",
+   "start": 250.58,
+   "dur": 4.52,
+   "key": "advertir",
+   "kind": "talk"
+  },
+  {
+   "id": "advertir_1",
+   "start": 255.1,
+   "dur": 15.04,
+   "key": "advertir",
+   "kind": "splitlist",
+   "title": "No todas las piernas hinchadas son iguales",
+   "items": [
+    "La gran mayoría: circulación cansada, mejora en casa",
+    "La señal de alerta: al médico, sin demora"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "alerta_lista_0",
+   "start": 270.14,
+   "dur": 16.26,
+   "key": "alerta_lista",
+   "kind": "checklist",
+   "title": "Ve a tu médico si...",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Hinchazón repentina en UNA sola pierna",
+     "state": "warn"
+    },
+    {
+     "text": "Viene con falta de aire",
+     "state": "warn"
+    },
+    {
+     "text": "O con dolor en el pecho",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "no_reemplaza_0",
+   "start": 286.4,
+   "dur": 17.4,
+   "key": "no_reemplaza",
+   "kind": "lowerthird",
+   "title": "Yo te acompaño. Tu médico te revisa.",
+   "tone": "teal",
+   "kicker": "Que quede claro",
+   "desc": "La mayoría de las piernas hinchadas es circulación cansada y mejora en casa. Pero si tienes una señal de alerta, ve a tu médico. Cada quien su trabajo."
+  },
+  {
+   "id": "recete_carmen_0",
+   "start": 303.8,
+   "dur": 4.22,
+   "key": "recete_carmen",
+   "kind": "talk"
+  },
+  {
+   "id": "recete_carmen_1",
+   "start": 308.02,
+   "dur": 13.48,
+   "key": "recete_carmen",
+   "kind": "raw",
+   "src": "img/fe11_hija_rie.png",
+   "kicker": "Tan simple que su hija se rió"
+  },
+  {
+   "id": "como_cuando_0",
+   "start": 321.5,
+   "dur": 5.77,
+   "key": "como_cuando",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NO ES SOLO QUÉ — ES CÓMO Y CUÁNDO",
+     "sub": "el mismo alimento, a la hora correcta, cambia todo",
+     "tone": "teal",
+     "at": 89
+    }
+   ],
+   "clip": "avatar_clips/federer11/como_cuando_0.mp4"
+  },
+  {
+   "id": "primera_semillas_0",
+   "start": 334.82,
+   "dur": 4.2,
+   "key": "primera_semillas",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Semillas de calabaza (pepitas)",
+   "tone": "teal",
+   "w": 3.2,
+   "eyebrow": "El remedio"
+  },
+  {
+   "id": "primera_semillas_1",
+   "start": 337.74,
+   "dur": 4.3,
+   "key": "primera_semillas",
+   "kind": "raw",
+   "src": "img/fe11_semillas_calabaza.png",
+   "hold": true
+  },
+  {
+   "id": "segunda_perejil_0",
+   "start": 342.04,
+   "dur": 5.52,
+   "key": "segunda_perejil",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Perejil común y corriente",
+   "tone": "teal",
+   "w": 3.2,
+   "eyebrow": "El remedio"
+  },
+  {
+   "id": "segunda_perejil_1",
+   "start": 347.56,
+   "dur": 17.98,
+   "key": "segunda_perejil",
+   "kind": "raw",
+   "src": "img/fe11_perejil_fresco.png",
+   "hold": true
+  },
+  {
+   "id": "magnesio_rico_0",
+   "start": 365.54,
+   "dur": 2.94,
+   "key": "magnesio_rico",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_magnesio_venas.png"
+    }
+   ]
+  },
+  {
+   "id": "magnesio_rico_1",
+   "start": 368.48,
+   "dur": 4.2,
+   "key": "magnesio_rico",
+   "kind": "bars",
+   "w": 1.6,
+   "title": "Magnesio (mg por 30 g, aprox.)",
+   "unit": "mg",
+   "bars": [
+    {
+     "label": "Semilla de calabaza",
+     "value": 150,
+     "tone": "teal",
+     "note": "la campeona"
+    },
+    {
+     "label": "Almendra",
+     "value": 80,
+     "tone": "teal"
+    },
+    {
+     "label": "Espinaca cocida",
+     "value": 45,
+     "tone": "teal"
+    }
+   ]
+  },
+  {
+   "id": "oro_puro_0",
+   "start": 370.84,
+   "dur": 12.6,
+   "key": "oro_puro",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "MAGNESIO = VENAS FLEXIBLES",
+     "sub": "una vena flexible trabaja mejor y sube la sangre de vuelta",
+     "tone": "teal",
+     "at": 294
+    }
+   ],
+   "clip": "avatar_clips/federer11/oro_puro_0.mp4"
+  },
+  {
+   "id": "potasio_sodio_0",
+   "start": 390.82,
+   "dur": 30.92,
+   "key": "potasio_sodio",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_potasio_sodio.png"
+    }
+   ]
+  },
+  {
+   "id": "tesoro_0",
+   "start": 421.74,
+   "dur": 6.08,
+   "key": "tesoro",
+   "kind": "chips",
+   "title": "Semilla de calabaza — un paquete completo",
+   "chips": [
+    "Magnesio",
+    "Potasio",
+    "Antioxidantes",
+    "Grasas antiinflamatorias"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "perejil_diuretico_0",
+   "start": 427.82,
+   "dur": 28.42,
+   "key": "perejil_diuretico",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_perejil_rinon.png"
+    }
+   ]
+  },
+  {
+   "id": "equipo_0",
+   "start": 456.24,
+   "dur": 9.8,
+   "key": "equipo",
+   "kind": "process",
+   "title": "Trabajan en equipo",
+   "eyebrow": "Uno saca, el otro fortalece",
+   "steps": [
+    {
+     "title": "Perejil",
+     "desc": "saca el líquido que sobra",
+     "image": "img/fe11_perejil_fresco.png"
+    },
+    {
+     "title": "Semilla",
+     "desc": "relaja las venas, equilibra minerales",
+     "image": "img/fe11_semillas_calabaza.png"
+    },
+    {
+     "title": "Juntos",
+     "desc": "más que la suma de sus partes",
+     "image": "img/fe11_semillas_perejil.png"
+    }
+   ]
+  },
+  {
+   "id": "por_que_noche_0",
+   "start": 466.04,
+   "dur": 47.86,
+   "key": "por_que_noche",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_noche_drenaje.png"
+    }
+   ]
+  },
+  {
+   "id": "corriente_0",
+   "start": 513.9,
+   "dur": 2.8,
+   "key": "corriente",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "DÁSELO ANTES DE DORMIR",
+     "sub": "ayudas a tu cuerpo justo cuando más está drenando: remas a favor de la corriente",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer11/corriente_0.mp4"
+  },
+  {
+   "id": "paso1_0",
+   "start": 528.34,
+   "dur": 5.38,
+   "key": "paso1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Un puñado de semillas",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Paso"
+  },
+  {
+   "id": "paso1_1",
+   "start": 533.72,
+   "dur": 2.22,
+   "key": "paso1",
+   "kind": "raw",
+   "src": "img/fe11_semillas_mano.png",
+   "hold": true
+  },
+  {
+   "id": "sin_sal_0",
+   "start": 535.94,
+   "dur": 10.57,
+   "key": "sin_sal",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SIN SAL",
+     "sub": "si les echas sal haces justo lo contrario de lo que queremos",
+     "tone": "warn",
+     "at": 233
+    }
+   ],
+   "clip": "avatar_clips/federer11/sin_sal_0.mp4"
+  },
+  {
+   "id": "paso2_0",
+   "start": 552.24,
+   "dur": 4.2,
+   "key": "paso2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Infusión de perejil, tibia",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Paso"
+  },
+  {
+   "id": "paso2_1",
+   "start": 555.54,
+   "dur": 11.36,
+   "key": "paso2",
+   "kind": "raw",
+   "src": "img/fe11_infusion_taza.png",
+   "hold": true
+  },
+  {
+   "id": "reposar_0",
+   "start": 566.9,
+   "dur": 18.38,
+   "key": "reposar",
+   "kind": "process",
+   "title": "La infusión, paso a paso",
+   "eyebrow": "Facilísima",
+   "steps": [
+    {
+     "title": "Calienta",
+     "desc": "una taza de agua, sin hervir fuerte",
+     "image": "img/fe11_infusion_taza.png"
+    },
+    {
+     "title": "Reposa",
+     "desc": "perejil 5 minutos, tapado",
+     "image": "img/fe11_perejil_picado.png"
+    },
+    {
+     "title": "Cuela y toma",
+     "desc": "tibio, con unas gotas de limón",
+     "image": "img/fe11_colar_te.png"
+    }
+   ]
+  },
+  {
+   "id": "paso3_0",
+   "start": 585.28,
+   "dur": 6.44,
+   "key": "paso3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Las piernas un poco elevadas",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Paso"
+  },
+  {
+   "id": "paso3_1",
+   "start": 591.72,
+   "dur": 19.54,
+   "key": "paso3",
+   "kind": "raw",
+   "src": "img/fe11_almohada_pies.png",
+   "hold": true
+  },
+  {
+   "id": "combinacion_0",
+   "start": 611.26,
+   "dur": 19.18,
+   "key": "combinacion",
+   "kind": "guardaesto",
+   "title": "Tu ritual de esta noche",
+   "items": [
+    "Un puñado de semillas de calabaza (sin sal)",
+    "Una infusión de perejil tibia",
+    "Las piernas sobre una almohada"
+   ]
+  },
+  {
+   "id": "error_0",
+   "start": 630.44,
+   "dur": 5.54,
+   "key": "error",
+   "kind": "talk"
+  },
+  {
+   "id": "error_1",
+   "start": 635.98,
+   "dur": 23.06,
+   "key": "error",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "La cena salada",
+   "tone": "warn",
+   "w": 3.2,
+   "eyebrow": "El error"
+  },
+  {
+   "id": "cena_salada_0",
+   "start": 659.04,
+   "dur": 7.86,
+   "key": "cena_salada",
+   "kind": "raw",
+   "src": "img/fe11_cena_salada.png",
+   "hold": true
+  },
+  {
+   "id": "cena_salada_1",
+   "start": 666.9,
+   "dur": 11.12,
+   "key": "cena_salada",
+   "kind": "checklist",
+   "title": "La bomba de sal antes de dormir",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Sopa de sobre",
+     "state": "warn"
+    },
+    {
+     "text": "Embutidos",
+     "state": "warn"
+    },
+    {
+     "text": "Pan con quesos curados",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "cena_salada_2",
+   "start": 678.02,
+   "dur": 4.2,
+   "key": "cena_salada",
+   "kind": "bars",
+   "w": 1.6,
+   "title": "Sodio en la cena (mg, aprox.)",
+   "unit": "mg",
+   "bars": [
+    {
+     "label": "Sopa de sobre",
+     "value": 1200,
+     "tone": "danger",
+     "note": "una bomba"
+    },
+    {
+     "label": "Embutidos",
+     "value": 900,
+     "tone": "danger"
+    },
+    {
+     "label": "Cena casera ligera",
+     "value": 250,
+     "tone": "teal",
+     "note": "así sí"
+    }
+   ]
+  },
+  {
+   "id": "canilla_0",
+   "start": 681.82,
+   "dur": 5.47,
+   "key": "canilla",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ES VACIAR UNA TINA CON LA CANILLA ABIERTA",
+     "sub": "el perejil saca agua por un lado, la sal la retiene por el otro",
+     "tone": "warn",
+     "at": 80
+    }
+   ],
+   "clip": "avatar_clips/federer11/canilla_0.mp4"
+  },
+  {
+   "id": "lo_que_quitas_0",
+   "start": 690.92,
+   "dur": 18.2,
+   "key": "lo_que_quitas",
+   "kind": "mitoverdad",
+   "myth": "El secreto es solo lo que agregas",
+   "truth": "La mitad de la batalla es lo que QUITAS: una cena ligera y baja en sal",
+   "flipAt": 41
+  },
+  {
+   "id": "piernas_de_antes_0",
+   "start": 709.12,
+   "dur": 7.84,
+   "key": "piernas_de_antes",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Volver"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "tus"
+    },
+    {
+     "t": "piernas"
+    },
+    {
+     "t": "de"
+    },
+    {
+     "t": "antes",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "no_magia_0",
+   "start": 716.96,
+   "dur": 25.38,
+   "key": "no_magia",
+   "kind": "talk"
+  },
+  {
+   "id": "injerto1_0",
+   "start": 742.34,
+   "dur": 36.86,
+   "key": "injerto1",
+   "kind": "lowerthird",
+   "title": "Todo esto, ordenado para tu edad",
+   "tone": "teal",
+   "kicker": "Lo reuní para ti",
+   "desc": "Los alimentos que desinflaman y los que te hinchan sin que lo sepas, en una guía sencilla con letra grande. Te dejé el enlace arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "carmen_vuelve_0",
+   "start": 779.2,
+   "dur": 3.62,
+   "key": "carmen_vuelve",
+   "kind": "talk"
+  },
+  {
+   "id": "carmen_vuelve_1",
+   "start": 782.82,
+   "dur": 23.5,
+   "key": "carmen_vuelve",
+   "kind": "raw",
+   "src": "img/fe11_carmen_consultorio.png",
+   "hold": true
+  },
+  {
+   "id": "sin_fallar_0",
+   "start": 806.32,
+   "dur": 2.8,
+   "key": "sin_fallar",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "TODAS LAS NOCHES, SIN FALLAR",
+     "sub": "Carmen lo hizo en serio, con la terquedad hermosa de las abuelas",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer11/sin_fallar_0.mp4"
+  },
+  {
+   "id": "tres_semanas_0",
+   "start": 808.12,
+   "dur": 11.34,
+   "key": "tres_semanas",
+   "kind": "raw",
+   "src": "img/fe11_carmen_feliz.png",
+   "kicker": "Tres semanas después",
+   "hold": true
+  },
+  {
+   "id": "tres_semanas_1",
+   "start": 819.46,
+   "dur": 9.34,
+   "key": "tres_semanas",
+   "kind": "process",
+   "title": "El cambio de Carmen",
+   "eyebrow": "Constancia, todas las noches",
+   "steps": [
+    {
+     "title": "Día 1",
+     "desc": "tobillos brillantes, el hoyito no vuelve",
+     "image": "img/fe11_carmen_tobillos.png"
+    },
+    {
+     "title": "Semana 1",
+     "desc": "empieza a bajar la hinchazón",
+     "image": "img/fe11_tobillo_hinchado_cerca.png"
+    },
+    {
+     "title": "Semana 3",
+     "desc": "se marcan los huesitos del tobillo",
+     "image": "img/fe11_tobillo_sano.png"
+    }
+   ]
+  },
+  {
+   "id": "huesitos_0",
+   "start": 828.8,
+   "dur": 16.6,
+   "key": "huesitos",
+   "kind": "raw",
+   "src": "img/fe11_tobillo_sano.png",
+   "hold": true
+  },
+  {
+   "id": "primera_vez_0",
+   "start": 845.4,
+   "dur": 17.26,
+   "key": "primera_vez",
+   "kind": "lowerthird",
+   "title": "«Por primera vez en una década, mis piernas no se hinchan»",
+   "tone": "teal",
+   "kicker": "Carmen, 86 años",
+   "desc": "Puedo cruzar una pierna sobre la otra. Puedo ponerme los zapatos por la mañana sin pelear."
+  },
+  {
+   "id": "tu_puedes_0",
+   "start": 862.66,
+   "dur": 4.2,
+   "key": "tu_puedes",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Si"
+    },
+    {
+     "t": "Carmen"
+    },
+    {
+     "t": "pudo,"
+    },
+    {
+     "t": "tú"
+    },
+    {
+     "t": "también",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "don_ernesto_0",
+   "start": 866.7,
+   "dur": 6.84,
+   "key": "don_ernesto",
+   "kind": "talk"
+  },
+  {
+   "id": "don_ernesto_1",
+   "start": 873.54,
+   "dur": 11.66,
+   "key": "don_ernesto",
+   "kind": "raw",
+   "src": "img/fe11_ernesto_calambre.png",
+   "kicker": "Don Ernesto — calambres a las 3 de la madrugada",
+   "hold": true
+  },
+  {
+   "id": "primos_0",
+   "start": 885.2,
+   "dur": 4.6,
+   "key": "primos",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "CALAMBRES Y PIERNAS HINCHADAS: PRIMOS HERMANOS",
+     "sub": "misma raíz: falta de magnesio y mala circulación",
+     "tone": "teal",
+     "at": 54
+    }
+   ],
+   "clip": "avatar_clips/federer11/primos_0.mp4"
+  },
+  {
+   "id": "noche_entera_0",
+   "start": 903.22,
+   "dur": 8.7,
+   "key": "noche_entera",
+   "kind": "raw",
+   "src": "img/fe11_dormir_placido.png",
+   "hold": true
+  },
+  {
+   "id": "sistema_nervioso_0",
+   "start": 911.92,
+   "dur": 38.38,
+   "key": "sistema_nervioso",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe11_magnesio_sueno.png"
+    }
+   ]
+  },
+  {
+   "id": "conectado_0",
+   "start": 950.3,
+   "dur": 11.56,
+   "key": "conectado",
+   "kind": "chips",
+   "title": "Cuidas una cosa y se acomodan tres",
+   "chips": [
+    "Piernas desinflamadas",
+    "Menos calambres",
+    "Mejor sueño",
+    "Más energía"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "consejos_intro_0",
+   "start": 961.86,
+   "dur": 4.22,
+   "key": "consejos_intro",
+   "kind": "talk"
+  },
+  {
+   "id": "consejos_intro_1",
+   "start": 966.08,
+   "dur": 6.88,
+   "key": "consejos_intro",
+   "kind": "process",
+   "title": "Tu día, sin complicarte",
+   "eyebrow": "Cuatro gestos simples",
+   "steps": [
+    {
+     "title": "Todo el día",
+     "desc": "agua a sorbos, sin esperar la sed",
+     "image": "img/fe11_vaso_agua.png"
+    },
+    {
+     "title": "Cada hora",
+     "desc": "mueve los pies, activa la bomba",
+     "image": "img/fe11_caminar_parque.png"
+    },
+    {
+     "title": "En la noche",
+     "desc": "semillas, perejil y piernas arriba",
+     "image": "img/fe11_semillas_mano.png"
+    }
+   ]
+  },
+  {
+   "id": "consejo1_0",
+   "start": 972.96,
+   "dur": 7.3,
+   "key": "consejo1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "El agua (toma más, no menos)",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "consejo1_1",
+   "start": 980.26,
+   "dur": 9.06,
+   "key": "consejo1",
+   "kind": "raw",
+   "src": "img/fe11_vaso_agua.png",
+   "hold": true
+  },
+  {
+   "id": "modo_ahorro_0",
+   "start": 989.32,
+   "dur": 20.9,
+   "key": "modo_ahorro",
+   "kind": "mitoverdad",
+   "myth": "Si retengo líquido, mejor tomo menos agua",
+   "truth": "Al revés: sin agua tu cuerpo entra en modo ahorro y retiene MÁS",
+   "flipAt": 263
+  },
+  {
+   "id": "consejo2_0",
+   "start": 1010.22,
+   "dur": 15.84,
+   "key": "consejo2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Muévete, aunque sea poco",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "consejo2_1",
+   "start": 1026.06,
+   "dur": 10.18,
+   "key": "consejo2",
+   "kind": "raw",
+   "src": "img/fe11_caminar_parque.png",
+   "hold": true
+  },
+  {
+   "id": "acelerador_0",
+   "start": 1036.24,
+   "dur": 4.2,
+   "key": "acelerador",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "BOMBEA SENTADO",
+     "sub": "sube y baja las puntas de los pies, como pisando el acelerador, 10-20 veces",
+     "tone": "teal",
+     "at": 42
+    }
+   ],
+   "clip": "avatar_clips/federer11/acelerador_0.mp4"
+  },
+  {
+   "id": "consejo3_0",
+   "start": 1048.48,
+   "dur": 4.2,
+   "key": "consejo3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "No aprietes tus venas",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "consejo3_1",
+   "start": 1052.22,
+   "dur": 14.56,
+   "key": "consejo3",
+   "kind": "raw",
+   "src": "img/fe11_piernas_cruzadas.png",
+   "hold": true
+  },
+  {
+   "id": "consejo4_0",
+   "start": 1066.78,
+   "dur": 25.44,
+   "key": "consejo4",
+   "kind": "errorstinger",
+   "number": "04",
+   "title": "La constancia",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Consejo"
+  },
+  {
+   "id": "constancia_0",
+   "start": 1092.22,
+   "dur": 9.1,
+   "key": "constancia",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "NOCHE TRAS NOCHE",
+     "sub": "Carmen no mejoró en un día — mejoró porque fue constante. Está a tu alcance.",
+     "tone": "teal",
+     "at": 189
+    }
+   ],
+   "clip": "avatar_clips/federer11/constancia_0.mp4"
+  },
+  {
+   "id": "injerto2_0",
+   "start": 1108.38,
+   "dur": 37.67,
+   "key": "injerto2",
+   "kind": "freezezoom",
+   "image": "img/fe11_libro_guia.png",
+   "kicker": "Las 3 guías · enlace arriba en la descripción",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "inversion_0",
+   "start": 1146.05,
+   "dur": 9,
+   "key": "inversion",
+   "kind": "lowerthird",
+   "title": "La mejor inversión: los años que te quedan",
+   "tone": "teal",
+   "kicker": "Para vivirlos de pie",
+   "desc": "Un plan completo para cuidar tu cuerpo después de los 60: circulación, articulaciones, energía y descanso. El enlace está arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "despedirme_0",
+   "start": 1155.05,
+   "dur": 15.2,
+   "key": "despedirme",
+   "kind": "talk"
+  },
+  {
+   "id": "imagina_0",
+   "start": 1170.25,
+   "dur": 17,
+   "key": "imagina",
+   "kind": "splitlist",
+   "title": "Imagina tus piernas livianas otra vez",
+   "items": [
+    "Zapatos que entran por la mañana",
+    "Caminar sin ese peso, sin esa presión"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "no_resignes_0",
+   "start": 1187.25,
+   "dur": 33.36,
+   "key": "no_resignes",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "No"
+    },
+    {
+     "t": "te"
+    },
+    {
+     "t": "resignes."
+    },
+    {
+     "t": "Empieza"
+    },
+    {
+     "t": "HOY",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "cta_coment_0",
+   "start": 1220.61,
+   "dur": 33.34,
+   "key": "cta_coment",
+   "kind": "lowerthird",
+   "title": "¿Hace cuánto sufres las piernas hinchadas?",
+   "tone": "teal",
+   "kicker": "Cuéntame abajo",
+   "desc": "Déjame un me gusta, suscríbete, y compártelo con alguien que ya se resignó. Puede que le cambies la vida."
+  },
+  {
+   "id": "cierre_0",
+   "start": 1253.95,
+   "dur": 6.74,
+   "key": "cierre",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Esta noche ya sabes lo que tienes que hacer",
+   "image": "img/fe11_federer_cocina.png"
+  }
+ ]
+}
