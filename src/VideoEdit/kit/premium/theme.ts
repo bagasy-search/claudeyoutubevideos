@@ -311,6 +311,45 @@ export const THEME_PEROXIDE: Theme = {
   displayWeight: 700,
 };
 
+// ── VOLT — Claudio Mendoza / energía casera (negro cinematográfico + verde-voltio) ──
+export const THEME_VOLT: Theme = {
+  name: "volt",
+  mode: "dark",
+  fontDisplay: F_OSWALD,
+  fontBody: F_INTER,
+  fontLabel: F_OSWALD,
+  color: {
+    // NEGRO / VERDE-VOLTIO / ÁMBAR — pega con las miniaturas del canal.
+    bg0: "#0A0B08",
+    bg1: "#12140D",
+    bg2: "#1C2015",
+    surface: "rgba(16,18,12,0.86)",
+    surfaceStrong: "#14160F",
+    text: "#F2F4E9",
+    textSoft: "rgba(242,244,233,0.72)",
+    textDim: "rgba(242,244,233,0.44)",
+    accent: "#C8F000", // verde-voltio — acento del canal
+    accentSoft: "#8FAD00",
+    accent2: "#E8E8E0", // blanco frío — "el otro lado"
+    gold: "#FFC83D", // ámbar cálido para cifras/alertas ($, factura)
+    danger: "#FF6A3D",
+    good: "#C8F000", // voltio = ON / correcto
+    ink: "#FFFFFF",
+    line: "rgba(242,244,233,0.14)",
+    glow: "rgba(200,240,0,0.5)",
+    shadow: "rgba(0,0,0,0.62)",
+    onAccent: "#0A0B08", // texto oscuro sobre chips voltio
+  },
+  radius: 18,
+  texture: "grain",
+  rays: true,
+  raysColor: "rgba(200,240,0,0.10)",
+  upperLabels: true,
+  labelSpacing: 5,
+  strokeW: 6,
+  displayWeight: 800,
+};
+
 export const THEMES: Record<string, Theme> = {
   earth: THEME_EARTH,
   nature: THEME_NATURE,
@@ -318,6 +357,7 @@ export const THEMES: Record<string, Theme> = {
   alarm: THEME_ALARM,
   medico: THEME_MEDICO,
   peroxide: THEME_PEROXIDE,
+  volt: THEME_VOLT,
 };
 
 // ── Context + hook ────────────────────────────────────────────────────────────

@@ -16,6 +16,7 @@ export {
   THEME_ALARM,
   THEME_MEDICO,
   THEME_PEROXIDE,
+  THEME_VOLT,
   SPR,
 } from "./theme";
 export type { Theme, ThemeColors } from "./theme";
