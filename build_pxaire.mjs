@@ -66,6 +66,45 @@ const ZONE = { BigStatReveal: "topLeft", MythTruth: "topLeft", HighlightSweep: "
 const sec = (ms) => +(ms / 1000).toFixed(3);
 const jprops = (p) => { const q = { ...(p || {}) }; delete q.theme; delete q.durationInFrames; return JSON.stringify(q); };
 
+// ⛔ Los directores mandaron formas SIMPLIFICADAS que NO matchean el shape real de los
+// componentes → cada componente caía a su TEXTO DEFAULT ("Juntar ceniza fina", "La garantía
+// cubre todo", VsDuel sin labels, BigStat en "$OOO"). Este normalizador traduce director→componente.
+const wrapStr = (v, key) => (typeof v === "string" ? { [key]: v } : v);
+const normProps = (comp, raw) => {
+  const p = { ...(raw || {}) };
+  if (comp === "BigStatReveal") {
+    const nums = String(p.value ?? "").match(/\d[\d.,]*/g)?.map((s) => +s.replace(/[.,]/g, "")) || [0];
+    const out = { value: Math.max(...nums), prefix: "$" };
+    if (p.label) out.support = p.label;
+    if (p.eyebrow) out.eyebrow = p.eyebrow;
+    return out;
+  }
+  if (comp === "NumberedSteps") {
+    if (Array.isArray(p.steps)) p.steps = p.steps.map((s) => wrapStr(s, "title"));
+    return p;
+  }
+  if (comp === "FlowSteps") {
+    if (Array.isArray(p.steps)) { p.nodes = p.steps.map((s) => wrapStr(s, "label")); delete p.steps; }
+    if (Array.isArray(p.nodes)) p.nodes = p.nodes.map((s) => wrapStr(s, "label"));
+    return p;
+  }
+  if (comp === "BulletCascade") {
+    const src = p.bullets || p.items;
+    if (Array.isArray(src)) { p.bullets = src.map((s) => wrapStr(s, "key")); delete p.items; }
+    return p;
+  }
+  if (comp === "VsDuel") {
+    if (p.left) p.left = wrapStr(p.left, "label");
+    if (p.right) { p.right = wrapStr(p.right, "label"); if (/per[oó]xido|oxigenad/i.test(p.right.label || "")) p.right.good = true; }
+    return p;
+  }
+  if (comp === "HighlightSweep") {
+    if (p.text && !p.highlight) { p.highlight = p.text; p.pre = p.pre || ""; p.post = p.post || ""; delete p.text; }
+    return p;
+  }
+  return p;
+};
+
 // ── construir CUES / OVERLAYS / WINDOWS ──────────────────────────────────────────
 const cues = [];
 const overlays = [];
@@ -97,7 +136,7 @@ for (let i = 0; i < beats.length; i++) {
     cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="broll/${name}.mp4" hue="red" darken={0.06}${cd} />` });
   } else if (b.tipo === "componente") {
     const c = b.componente;
-    const props = jprops(b.props);
+    const props = jprops(normProps(c, b.props));
     let el;
     if (PREMIUM.has(c)) {
       const zone = ZONE[c] || "topLeft";
