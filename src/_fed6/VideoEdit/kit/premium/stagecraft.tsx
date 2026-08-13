@@ -251,7 +251,8 @@ export const useRack = (
     const at = spreadAt(durationInFrames, count, i);
     const next = spreadAt(durationInFrames, count, i + 1);
     // peso de atención: sube al aparecer, se sostiene su turno, baja al pasar
-    const w = interpolate(frame, [at - 6, at + 8, next - 2, next + 14], [0, 1, 1, 0], {
+    const q0 = at - 6, q1 = Math.max(q0 + 0.01, at + 8), q2 = Math.max(q1 + 0.01, next - 2), q3 = Math.max(q2 + 0.01, next + 14);
+    const w = interpolate(frame, [q0, q1, q2, q3], [0, 1, 1, 0], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });
@@ -867,7 +868,7 @@ export const Sweep: React.FC<{ theme?: Theme; at?: number; dur?: number; angle?:
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const fade = interpolate(frame - at, [0, 8, dur - 10, dur], [0, 1, 1, 0], {
+  const fade = interpolate(frame - at, [0, Math.min(8, dur / 2), Math.max(Math.min(8, dur / 2) + 0.01, dur - 10), dur], [0, 1, 1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
