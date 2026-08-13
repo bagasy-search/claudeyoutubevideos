@@ -12,6 +12,7 @@ import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886
 import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
 import { MainPxplagas, TOTAL_FRAMES_PXPLAGAS } from "./VideoEdit/Main_pxplagas";
+import { MainPxpros, TOTAL_FRAMES_PXPROS } from "./VideoEdit/Main_pxpros";
 import { MainFoods, TOTAL_FRAMES_FOODS } from "./VideoEdit/Main_foods";
 import { MainEstiercol, TOTAL_FRAMES_EST } from "./VideoEdit/Main_estiercol";
 import { MainWasp, TOTAL_FRAMES_WASP } from "./VideoEdit/Main_wasp";
@@ -607,6 +608,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Radiador" component={MainRadiador} durationInFrames={TOTAL_FRAMES_RADIADOR} fps={30} width={1920} height={1080} />
       {/* "11 Secretos con Agua Oxigenada que los Exterminadores No Quieren que Sepas" · canal Agua Oxigenada ES · AVATAR · b-roll 100% stock */}
       <Composition id="PxPlagas" component={MainPxplagas} durationInFrames={TOTAL_FRAMES_PXPLAGAS} fps={30} width={1920} height={1080} />
+      <Composition id="PxPros" component={MainPxpros} durationInFrames={TOTAL_FRAMES_PXPROS} fps={30} width={1920} height={1080} />
     </>
   );
 };
