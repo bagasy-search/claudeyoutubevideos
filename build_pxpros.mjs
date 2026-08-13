@@ -31,8 +31,9 @@ for (const b of beats) {
 
 // ── DIVERSIFICACIÓN por SUBJETO: balancea el uso de clips (mata la repetición y sube distintos ≥28) ──
 // Cada grupo = clips intercambiables del MISMO subjeto (todos verificados on-subject en el contact sheet).
+// (pxpool_siding_3 = pared con GRAFFITI → EXCLUIDO del pool; off-subject en la auditoría)
 const GROUPS = [
-  ["pxpool_siding_1", "pxpool_siding_2", "pxpool_siding_3", "pxpool_wash_2"],
+  ["pxpool_siding_1", "pxpool_siding_2", "pxpool_wash_2", "pxpool_wash_1"],
   ["pxpool_deck_1", "pxpool_deck_2", "pxpool_deck_3"],
   ["pxpool_concrete_1", "pxpool_concrete_2", "pxpool_concrete_3"],
   ["pxpool_moss_1", "pxpool_pavers_3", "pxpool_pavers_2"],
@@ -57,6 +58,9 @@ for (const b of beats) {
   grpIdx.set(g, i + 1);
   b.clip = pick; prevClip = pick;
 }
+// REMAP_OUT: por si un director referenció directo un clip off-subject → a uno on-subject.
+const REMAP_OUT = { pxpool_siding_3: "pxpool_siding_1" };
+for (const b of beats) { if (b.tipo === "clip" && REMAP_OUT[b.clip]) b.clip = REMAP_OUT[b.clip]; }
 
 // duraciones reales de clips (anti-congelado)
 let durs = {};
@@ -194,7 +198,21 @@ registerRoot(RootPxpros);
 `;
 fs.writeFileSync("src/index_pxpros.tsx", idx);
 
-fs.writeFileSync("_pxpros_assets.txt", [...clipsUsed].map((n) => `broll/${n}.mp4`).join("\n") + "\n");
+// recolectar imágenes referenciadas por componentes (LightTrailCards.images[], VsDuel left/right.image, CtaCard.image, etc.)
+const imgAssets = new Set();
+const collectImgs = (o) => {
+  if (!o || typeof o !== "object") return;
+  for (const [k, v] of Object.entries(o)) {
+    if ((k === "image" || k === "src") && typeof v === "string" && /\.(jpg|jpeg|png|webp)$/i.test(v)) imgAssets.add(v.replace(/^\//, ""));
+    else if (k === "images" && Array.isArray(v)) v.forEach((s) => typeof s === "string" && imgAssets.add(s.replace(/^\//, "")));
+    else if (v && typeof v === "object") collectImgs(v);
+  }
+};
+for (const b of beats) if (b.tipo === "componente") collectImgs(b.props);
+const imgMissing = [...imgAssets].filter((p) => !fs.existsSync(`public/${p}`));
+fs.writeFileSync("_pxpros_assets.txt", [...[...clipsUsed].map((n) => `broll/${n}.mp4`), ...imgAssets].join("\n") + "\n");
+if (imgMissing.length) console.log(`⚠️ IMÁGENES FALTANTES (${imgMissing.length}): ${imgMissing.join(", ")}`);
+else console.log(`imágenes de componentes: ${imgAssets.size} (todas presentes)`);
 
 const nClip = beats.filter((b) => b.tipo === "clip").length;
 const nComp = beats.filter((b) => b.tipo === "componente").length;
