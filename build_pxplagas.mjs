@@ -19,18 +19,18 @@ for (const b of beats) if (b.tipo === "componente" && b.ms_out - b.ms_in < 900) 
 // Relleno tras la curación (task #2). Cada sección reparte round-robin sin repetir seguido.
 const POOL = {
   hook:    ["pxplagas_bottle_1", "pxplagas_house_1", "pxplagas_kitchen_1", "pxplagas_bottle_3", "pxplagas_garden_1"],
-  quim:    ["pxplagas_foam_1", "pxplagas_bottle_2", "pxplagas_bottle_1", "pxplagas_water_2"],
+  quim:    ["pxplagas_foam_1", "pxplagas_bottle_2", "pxplagas_bottle_3", "pxplagas_water_2"],
   t1:      ["pxplagas_ants_1", "pxplagas_ants_2", "pxplagas_ants_3", "pxplagas_kitchen_2"],
   t2:      ["pxplagas_aphids_1", "pxplagas_aphids_2", "pxplagas_aphids_3", "pxplagas_pot_3"],
-  t3:      ["pxplagas_pot_1", "pxplagas_pot_2", "pxplagas_pot_3", "pxplagas_aphids_2"],
+  t3:      ["pxplagas_pgnats_1", "pxplagas_pgnats_2", "pxplagas_pot_1", "pxplagas_pot_2", "pxplagas_pot_3"],
   t4:      ["pxplagas_water_1", "pxplagas_water_2", "pxplagas_mosquito_1", "pxplagas_pot_1"],
-  t5:      ["pxplagas_spray_2", "pxplagas_house_1", "pxplagas_house_2", "pxplagas_house_3", "pxplagas_spray_1"],
-  t6:      ["pxplagas_mealy_1", "pxplagas_mealy_2", "pxplagas_pot_3", "pxplagas_aphids_3"],
+  t5:      ["pxplagas_spray_2", "pxplagas_pfound_1", "pxplagas_pfound_2", "pxplagas_pfound_3", "pxplagas_house_1", "pxplagas_spray_1"],
+  t6:      ["pxplagas_pmealy_1", "pxplagas_pmealy_2", "pxplagas_pmealy_3", "pxplagas_mealy_1", "pxplagas_mealy_2"],
   t7:      ["pxplagas_slug_1", "pxplagas_slug_2", "pxplagas_lettuce_1", "pxplagas_garden_1"],
-  t8:      ["pxplagas_spidermite_1", "pxplagas_spidermite_2", "pxplagas_aphids_1", "pxplagas_pot_3"],
-  t9:      ["pxplagas_fruitfly_2", "pxplagas_kitchen_1", "pxplagas_kitchen_2", "pxplagas_garden_1"],
-  t10:     ["pxplagas_roach_1", "pxplagas_sink_1", "pxplagas_kitchen_2", "pxplagas_house_3"],
-  t11:     ["pxplagas_pantry_1", "pxplagas_pantry_2", "pxplagas_seeds_1", "pxplagas_mealy_1"],
+  t8:      ["pxplagas_pmite_1", "pxplagas_pmite_2", "pxplagas_pmite_3", "pxplagas_spidermite_1", "pxplagas_spidermite_2"],
+  t9:      ["pxplagas_pfruitfly_1", "pxplagas_pfruitfly_2", "pxplagas_pfruitfly_3", "pxplagas_kitchen_1", "pxplagas_kitchen_2"],
+  t10:     ["pxplagas_proach_1", "pxplagas_proach_2", "pxplagas_proach_3", "pxplagas_roach_1", "pxplagas_sink_1"],
+  t11:     ["pxplagas_pweevil_1", "pxplagas_pweevil_2", "pxplagas_pweevil_3", "pxplagas_pantry_1", "pxplagas_seeds_1"],
   hon:     ["pxplagas_house_1", "pxplagas_bottle_1", "pxplagas_garden_1", "pxplagas_spray_3"],
   seg:     ["pxplagas_bottle_1", "pxplagas_bottle_3", "pxplagas_spray_3", "pxplagas_foam_1"],
   cierre:  ["pxplagas_bottle_1", "pxplagas_house_1", "pxplagas_garden_1", "pxplagas_spray_1"],
@@ -67,6 +67,7 @@ const overlays = [];
 const windows = [];
 let lastMode = null;
 const clipsUsed = new Set();
+const photosUsed = new Set();
 const missing = [];
 
 for (let i = 0; i < beats.length; i++) {
@@ -86,10 +87,17 @@ for (let i = 0; i < beats.length; i++) {
 
   if (b.tipo === "clip") {
     const name = b.clip;
-    clipsUsed.add(name);
-    if (!fs.existsSync(`public/broll/${name}.mp4`)) missing.push(name);
-    const cd = durs[name] ? ` clipDur={${(+durs[name]).toFixed(2)}}` : "";
-    cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="broll/${name}.mp4" hue="red" darken={0.06}${cd} />` });
+    // FOTO REAL (web, sin marca/texto): existe public/real/<name>.jpg → RawShot en modo IMAGEN
+    // (SceneFrame le hace Ken-Burns real; nada de mp4 congelado). Si no, es clip mp4 de stock.
+    if (fs.existsSync(`public/real/${name}.jpg`)) {
+      photosUsed.add(name);
+      cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="real/${name}.jpg" hue="red" darken={0.06} />` });
+    } else {
+      clipsUsed.add(name);
+      if (!fs.existsSync(`public/broll/${name}.mp4`)) missing.push(name);
+      const cd = durs[name] ? ` clipDur={${(+durs[name]).toFixed(2)}}` : "";
+      cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="broll/${name}.mp4" hue="red" darken={0.06}${cd} />` });
+    }
   } else if (b.tipo === "componente") {
     const c = b.componente;
     const props = jprops(b.props);
@@ -193,7 +201,7 @@ registerRoot(RootPxplagas);
 `;
 fs.writeFileSync("src/index_pxplagas.tsx", idx);
 
-fs.writeFileSync("_pxplagas_assets.txt", [...clipsUsed].map((n) => `broll/${n}.mp4`).join("\n") + "\n");
+fs.writeFileSync("_pxplagas_assets.txt", [...[...clipsUsed].map((n) => `broll/${n}.mp4`), ...[...photosUsed].map((n) => `real/${n}.jpg`)].join("\n") + "\n");
 
 const nClip = beats.filter((b) => b.tipo === "clip").length;
 const nComp = beats.filter((b) => b.tipo === "componente").length;
