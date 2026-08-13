@@ -210,7 +210,9 @@ const collectImgs = (o) => {
 };
 for (const b of beats) if (b.tipo === "componente") collectImgs(b.props);
 const imgMissing = [...imgAssets].filter((p) => !fs.existsSync(`public/${p}`));
-fs.writeFileSync("_pxpros_assets.txt", [...[...clipsUsed].map((n) => `broll/${n}.mp4`), ...imgAssets].join("\n") + "\n");
+// el kit pide el hermano _blur.jpg en runtime → incluirlo en el tar
+const blurs = [...imgAssets].map((p) => p.replace(/\.(jpg|jpeg|png|webp)$/i, "_blur.jpg"));
+fs.writeFileSync("_pxpros_assets.txt", [...[...clipsUsed].map((n) => `broll/${n}.mp4`), ...imgAssets, ...blurs].join("\n") + "\n");
 if (imgMissing.length) console.log(`⚠️ IMÁGENES FALTANTES (${imgMissing.length}): ${imgMissing.join(", ")}`);
 else console.log(`imágenes de componentes: ${imgAssets.size} (todas presentes)`);
 
