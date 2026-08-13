@@ -10,6 +10,8 @@ import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_wa
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
 import { MainFederer11, TOTAL_FRAMES_FED11 } from "./_fed6/VideoEdit/Main_federer11";
+import { MainFederer12, TOTAL_FRAMES_FED12 } from "./_fed6/VideoEdit/Main_federer12";
+import { MainFederer13, TOTAL_FRAMES_FED13 } from "./_fed6/VideoEdit/Main_federer13";
 import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
 import { MainPxplagas, TOTAL_FRAMES_PXPLAGAS } from "./VideoEdit/Main_pxplagas";
@@ -148,6 +150,8 @@ export const RemotionRoot: React.FC = () => {
       {/* DR. FEDERER · cansancio persistente después de los 60 · avatar + kit cinematográfico */}
       <Composition id="Federer886" component={MainFederer886} durationInFrames={TOTAL_FRAMES_FED886} fps={30} width={1920} height={1080} />
       <Composition id="Federer11" component={MainFederer11} durationInFrames={TOTAL_FRAMES_FED11} fps={30} width={1920} height={1080} />
+      <Composition id="Federer12" component={MainFederer12} durationInFrames={TOTAL_FRAMES_FED12} fps={30} width={1920} height={1080} />
+      <Composition id="Federer13" component={MainFederer13} durationInFrames={TOTAL_FRAMES_FED13} fps={30} width={1920} height={1080} />
       {/* Hoja de contactos — 16 componentes bespoke del video de peróxido */}
       <Composition id="KitPreviewPx" component={MainKitPreviewPx} durationInFrames={TOTAL_FRAMES_KITPX} fps={30} width={1920} height={1080} />
       {/* PREVIEW DEL KIT — los 30 componentes genéricos en secuencia (90 frames c/u) */}

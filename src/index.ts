@@ -1,4 +1,4 @@
 import { registerRoot } from "remotion";
-import { RootFederer11 } from "./Root_federer11";
+import { RootFederer12 } from "./Root_federer12";
 
-registerRoot(RootFederer11);
+registerRoot(RootFederer12);
