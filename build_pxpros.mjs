@@ -34,10 +34,11 @@ for (const b of beats) {
 // (pxpool_siding_3 = pared con GRAFFITI → EXCLUIDO del pool; off-subject en la auditoría)
 const GROUPS = [
   ["pxpool_siding_1", "pxpool_siding_2", "pxpool_wash_2", "pxpool_wash_1"],
-  ["pxpool_deck_1", "pxpool_deck_2", "pxpool_deck_3"],
+  ["pxpool_deck_1", "pxpool_deck_2", "pxpool_deck_3", "pxpros_deck_a", "pxpros_deck_b", "pxpros_deck_c"],
   ["pxpool_concrete_1", "pxpool_concrete_2", "pxpool_concrete_3"],
-  ["pxpool_moss_1", "pxpool_pavers_3", "pxpool_pavers_2"],
-  ["pxpros_roofstreak_2", "pxpool_roof_3", "pxpool_roof_4"],
+  ["pxpool_moss_1", "pxpool_pavers_3", "pxpool_pavers_2", "pxpros_moss_a", "pxpros_pavers_a", "pxpros_roof_b"],
+  ["pxpros_roofstreak_2", "pxpool_roof_3", "pxpool_roof_4", "pxpros_roof_a"],
+  ["pxpros_fence_2", "pxpros_fence_a"],
   ["pxpros_cushionmold_1", "pxpool_cushion_2", "pxpool_cushion_1"],
   ["pxpool_garbage_1", "pxpool_garbage_2"],
   ["pxpool_bottle_1", "pxpool_pour_1"],
