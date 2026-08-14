@@ -1,0 +1,1010 @@
+{
+ "video": "federer16",
+ "avatar": "federer16_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "m1_0_0",
+   "start": 0.4,
+   "dur": 1.78,
+   "key": "m1_0",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_1_0",
+   "start": 2.18,
+   "dur": 1.68,
+   "key": "m1_1",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_2_0",
+   "start": 3.86,
+   "dur": 1.22,
+   "key": "m1_2",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NO",
+     "hl": false
+    },
+    {
+     "t": "ME",
+     "hl": false
+    },
+    {
+     "t": "VAS",
+     "hl": false
+    },
+    {
+     "t": "A",
+     "hl": false
+    },
+    {
+     "t": "CREER",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_3_0",
+   "start": 5.08,
+   "dur": 4.08,
+   "key": "m1_3",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_4_0",
+   "start": 9.16,
+   "dur": 1.5,
+   "key": "m1_4",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "LA",
+     "hl": false
+    },
+    {
+     "t": "MÁS",
+     "hl": false
+    },
+    {
+     "t": "BONITA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_5_0",
+   "start": 10.66,
+   "dur": 1.5,
+   "key": "m1_5",
+   "kind": "stat",
+   "big": "70",
+   "label": "",
+   "tone": "warn"
+  },
+  {
+   "id": "m1_6_0",
+   "start": 12.16,
+   "dur": 5.54,
+   "key": "m1_6",
+   "kind": "stat",
+   "big": "80 AÑOS",
+   "label": "",
+   "tone": "warn"
+  },
+  {
+   "id": "m1_7_0",
+   "start": 17.7,
+   "dur": 3.14,
+   "key": "m1_7",
+   "kind": "raw",
+   "src": "img/fe16_min1_0.png"
+  },
+  {
+   "id": "m1_8_0",
+   "start": 20.84,
+   "dur": 2.08,
+   "key": "m1_8",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "FRESCURA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_9_0",
+   "start": 22.92,
+   "dur": 1.42,
+   "key": "m1_9",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_10_0",
+   "start": 24.34,
+   "dur": 1.26,
+   "key": "m1_10",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_11_0",
+   "start": 25.6,
+   "dur": 1.5,
+   "key": "m1_11",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "CASI",
+     "hl": false
+    },
+    {
+     "t": "NADIE",
+     "hl": false
+    },
+    {
+     "t": "SE",
+     "hl": false
+    },
+    {
+     "t": "ANIMA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_12_0",
+   "start": 27.1,
+   "dur": 1.28,
+   "key": "m1_12",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_13_0",
+   "start": 28.38,
+   "dur": 1.76,
+   "key": "m1_13",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "¿SU",
+     "hl": false
+    },
+    {
+     "t": "SECRETO?",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_14_0",
+   "start": 30.14,
+   "dur": 3.08,
+   "key": "m1_14",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_15_0",
+   "start": 33.22,
+   "dur": 1.36,
+   "key": "m1_15",
+   "kind": "stat",
+   "big": "MILES DE PIELES",
+   "label": "",
+   "tone": "warn"
+  },
+  {
+   "id": "m1_16_0",
+   "start": 34.58,
+   "dur": 2.2,
+   "key": "m1_16",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NO",
+     "hl": false
+    },
+    {
+     "t": "ES",
+     "hl": false
+    },
+    {
+     "t": "LA",
+     "hl": false
+    },
+    {
+     "t": "CREMA",
+     "hl": false
+    },
+    {
+     "t": "CARA",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_17_0",
+   "start": 36.78,
+   "dur": 1.16,
+   "key": "m1_17",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_18_0",
+   "start": 37.94,
+   "dur": 1.2,
+   "key": "m1_18",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "MUCHO",
+     "hl": false
+    },
+    {
+     "t": "MÁS",
+     "hl": false
+    },
+    {
+     "t": "SIMPLE",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_19_0",
+   "start": 39.14,
+   "dur": 2.94,
+   "key": "m1_19",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_20_0",
+   "start": 42.08,
+   "dur": 3.22,
+   "key": "m1_20",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "DOÑA",
+     "hl": false
+    },
+    {
+     "t": "AMPARO",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_21_0",
+   "start": 45.3,
+   "dur": 4.66,
+   "key": "m1_21",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_22_0",
+   "start": 49.96,
+   "dur": 4.42,
+   "key": "m1_22",
+   "kind": "talk"
+  },
+  {
+   "id": "m1_23_0",
+   "start": 54.38,
+   "dur": 2.7,
+   "key": "m1_23",
+   "kind": "raw",
+   "src": "img/fe16_min1_1.png"
+  },
+  {
+   "id": "m1_24_0",
+   "start": 57.08,
+   "dur": 2.4,
+   "key": "m1_24",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "TERSA",
+     "hl": false
+    },
+    {
+     "t": "Y",
+     "hl": false
+    },
+    {
+     "t": "CON",
+     "hl": false
+    },
+    {
+     "t": "BRILLO",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_25_0",
+   "start": 59.48,
+   "dur": 3.84,
+   "key": "m1_25",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "PIEL",
+     "hl": false
+    },
+    {
+     "t": "JOVEN",
+     "hl": true
+    }
+   ],
+   "tone": "warn",
+   "perWord": 10
+  },
+  {
+   "id": "m1_26_0",
+   "start": 63.32,
+   "dur": 92.08,
+   "key": "m1_26",
+   "kind": "raw",
+   "src": "img/fe16_min1_2.png"
+  },
+  {
+   "id": "medicina_0",
+   "start": 155.4,
+   "dur": 5.83,
+   "key": "medicina",
+   "kind": "talk"
+  },
+  {
+   "id": "medicina_1",
+   "start": 161.23,
+   "dur": 2.8,
+   "key": "medicina",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "LA REINA DE LA CASA: EL ROMERO",
+     "sub": "lo que las abuelas usaban por necesidad, hoy la ciencia lo confirma",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/medicina_1.mp4"
+  },
+  {
+   "id": "antiox_0",
+   "start": 176.4,
+   "dur": 5.11,
+   "key": "antiox",
+   "kind": "talk"
+  },
+  {
+   "id": "antiox_1",
+   "start": 181.51,
+   "dur": 12.27,
+   "key": "antiox",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe16_antiox.png"
+    }
+   ]
+  },
+  {
+   "id": "oxido_0",
+   "start": 193.78,
+   "dur": 2.8,
+   "key": "oxido",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UN ESCUDO QUE OTRAS PAGAN CARÍSIMO",
+     "sub": "Doña Amparo se lo puso toda la vida, gratis, con romero",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/oxido_0.mp4"
+  },
+  {
+   "id": "circulacion_0",
+   "start": 212.7,
+   "dur": 4.2,
+   "key": "circulacion",
+   "kind": "diagram",
+   "slides": [
+    {
+     "image": "img/dg_fe16_circulacion.png"
+    }
+   ]
+  },
+  {
+   "id": "jardin_0",
+   "start": 215.38,
+   "dur": 2.8,
+   "key": "jardin",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "MANTUVO EL RIEGO DESPIERTO DÉCADAS",
+     "sub": "no le puso colágeno de fuera; ayudó a que su piel lo siguiera fabricando",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/jardin_0.mp4"
+  },
+  {
+   "id": "genetica_0",
+   "start": 261.48,
+   "dur": 11.2,
+   "key": "genetica",
+   "kind": "talk"
+  },
+  {
+   "id": "genetica_1",
+   "start": 272.68,
+   "dur": 24.64,
+   "key": "genetica",
+   "kind": "mitoverdad",
+   "myth": "Es solo cuestión de genética o de suerte",
+   "truth": "Dos mujeres con la misma genética envejecen MUY distinto según cómo se cuidan",
+   "flipAt": 112
+  },
+  {
+   "id": "clara_0",
+   "start": 297.32,
+   "dur": 42.32,
+   "key": "clara",
+   "kind": "raw",
+   "src": "img/fe16_clara_piel.png",
+   "kicker": "Doña Clara, 62 — gastó más, se ve mayor",
+   "hold": true
+  },
+  {
+   "id": "clara_1",
+   "start": 339.64,
+   "dur": 18.54,
+   "key": "clara",
+   "kind": "bars",
+   "w": 2.2,
+   "title": "62 vs 78 años — ¿qué explica la diferencia?",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Doña Amparo (78): sol cuidado, romero, constancia",
+     "value": 90,
+     "tone": "teal",
+     "note": "hábitos"
+    },
+    {
+     "label": "Doña Clara (62): cremas caras, sol, sin constancia",
+     "value": 35,
+     "tone": "danger",
+     "note": "no es la crema"
+    }
+   ]
+  },
+  {
+   "id": "nunca_tarde_0",
+   "start": 358.18,
+   "dur": 26.32,
+   "key": "nunca_tarde",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Nunca"
+    },
+    {
+     "t": "es"
+    },
+    {
+     "t": "demasiado"
+    },
+    {
+     "t": "TARDE",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "segundo_mejor_0",
+   "start": 384.5,
+   "dur": 2.8,
+   "key": "segundo_mejor",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "EL SEGUNDO MEJOR MOMENTO ES ESTA NOCHE",
+     "sub": "no borrarás lo de atrás, pero puedes cambiar por completo lo que viene",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/segundo_mejor_0.mp4"
+  },
+  {
+   "id": "tesoro_0",
+   "start": 393.16,
+   "dur": 1.24,
+   "key": "tesoro",
+   "kind": "talk"
+  },
+  {
+   "id": "tesoro_1",
+   "start": 394.4,
+   "dur": 4.56,
+   "key": "tesoro",
+   "kind": "raw",
+   "src": "img/fe16_aceite_romero.png",
+   "hold": true
+  },
+  {
+   "id": "receta_0",
+   "start": 398.96,
+   "dur": 40.34,
+   "key": "receta",
+   "kind": "process",
+   "w": 2.4,
+   "title": "Su aceite de romero",
+   "eyebrow": "2 formas",
+   "steps": [
+    {
+     "title": "Paciente",
+     "desc": "romero en aceite, frasco oscuro, 15 días",
+     "image": "img/fe16_romero_frasco.png"
+    },
+    {
+     "title": "Rápida",
+     "desc": "baño maría, tibio, NUNCA hervir",
+     "image": "img/fe16_bano_maria.png"
+    },
+    {
+     "title": "Cuela y guarda",
+     "desc": "color verdoso, a un frasquito",
+     "image": "img/fe16_aceite_verde.png"
+    }
+   ]
+  },
+  {
+   "id": "noche_0",
+   "start": 439.3,
+   "dur": 8.02,
+   "key": "noche",
+   "kind": "raw",
+   "src": "img/fe16_masaje_facial.png",
+   "hold": true
+  },
+  {
+   "id": "noche_1",
+   "start": 447.32,
+   "dur": 29.38,
+   "key": "noche",
+   "kind": "annotated",
+   "w": 1.6,
+   "image": "img/fe16_masaje_facial.png",
+   "eyebrow": "Su ritual de noche",
+   "caption": "Gotitas, masaje hacia arriba; cara, cuello y manos",
+   "annotations": [
+    {
+     "label": "Hacia arriba",
+     "x": 40,
+     "y": 40
+    },
+    {
+     "label": "Cuello y manos",
+     "x": 64,
+     "y": 62
+    }
+   ]
+  },
+  {
+   "id": "tonico_0",
+   "start": 476.7,
+   "dur": 17.7,
+   "key": "tonico",
+   "kind": "raw",
+   "src": "img/fe16_tonico_spray.png",
+   "hold": true
+  },
+  {
+   "id": "sol_0",
+   "start": 494.4,
+   "dur": 2.8,
+   "key": "sol",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "SU SECRETO MÁS GRANDE Y GRATIS: EL SOL",
+     "sub": "sombrero, sombra, sombrilla — el 80% de las arrugas viene del sol",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/sol_0.mp4"
+  },
+  {
+   "id": "sol_1",
+   "start": 509.46,
+   "dur": 10.56,
+   "key": "sol",
+   "kind": "bars",
+   "w": 2.6,
+   "title": "¿De dónde vienen las arrugas, en verdad?",
+   "unit": "",
+   "bars": [
+    {
+     "label": "El sol (lo que ella evitaba, gratis)",
+     "value": 80,
+     "tone": "danger",
+     "note": "80%"
+    },
+    {
+     "label": "Todo lo demás (genética, tiempo…)",
+     "value": 20,
+     "tone": "teal",
+     "note": "20%"
+    }
+   ]
+  },
+  {
+   "id": "comida_0",
+   "start": 520.02,
+   "dur": 21.94,
+   "key": "comida",
+   "kind": "splitlist",
+   "w": 2,
+   "title": "Belleza de adentro y de afuera",
+   "items": [
+    "Fruta y verdura de colores, agua: antioxidantes por dentro",
+    "Dormir bien: de noche la piel se repara sola"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "resumen_0",
+   "start": 541.96,
+   "dur": 26.18,
+   "key": "resumen",
+   "kind": "chips",
+   "title": "El método de Doña Amparo",
+   "chips": [
+    "Romero cada noche",
+    "Sol cuidado",
+    "Comida simple",
+    "Buen sueño",
+    "Constancia"
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "piernas_pelo_0",
+   "start": 568.14,
+   "dur": 73.84,
+   "key": "piernas_pelo",
+   "kind": "process",
+   "w": 2.2,
+   "title": "El mismo romero, tres regalos",
+   "eyebrow": "Por la circulación",
+   "steps": [
+    {
+     "title": "Cara",
+     "desc": "luminosa y firme",
+     "image": "img/fe16_masaje_facial.png"
+    },
+    {
+     "title": "Piernas",
+     "desc": "menos pesadas, alivia várices",
+     "image": "img/fe16_masaje_piernas.png"
+    },
+    {
+     "title": "Cabello",
+     "desc": "más fuerte, se cae menos",
+     "image": "img/fe16_cuero_cabelludo.png"
+    }
+   ]
+  },
+  {
+   "id": "detalle_0",
+   "start": 641.98,
+   "dur": 1.96,
+   "key": "detalle",
+   "kind": "talk"
+  },
+  {
+   "id": "detalle_1",
+   "start": 643.94,
+   "dur": 8.14,
+   "key": "detalle",
+   "kind": "errorstinger",
+   "number": "!",
+   "title": "Constancia SIN buscar el milagro",
+   "tone": "teal",
+   "w": 3.2,
+   "eyebrow": "El detalle"
+  },
+  {
+   "id": "detalle_2",
+   "start": 652.08,
+   "dur": 4.66,
+   "key": "detalle",
+   "kind": "checklist",
+   "w": 2.6,
+   "title": "El romero, con honestidad",
+   "tone": "teal",
+   "items": [
+    {
+     "text": "SÍ: luminosidad, textura y firmeza poco a poco, sin químicos",
+     "state": "done"
+    },
+    {
+     "text": "NO: lo que hace un procedimiento médico o el bisturí",
+     "state": "warn"
+    },
+    {
+     "text": "Mancha que cambia, crece o sangra → al dermatólogo",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "milagro_0",
+   "start": 656.74,
+   "dur": 2.8,
+   "key": "milagro",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "COMO QUIEN SE LAVA LOS DIENTES",
+     "sub": "no para el resultado de mañana, sino como cuidado de por vida — por eso funcionó",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/milagro_0.mp4"
+  },
+  {
+   "id": "disfrutaba_0",
+   "start": 697.32,
+   "dur": 52.76,
+   "key": "disfrutaba",
+   "kind": "lowerthird",
+   "title": "Su ritual no era obligación: era su momento de paz",
+   "tone": "teal",
+   "kicker": "La lección más bonita",
+   "desc": "Cinco minutos para sí misma, después de un día cuidando a otros. Y esa paz también se refleja en la piel."
+  },
+  {
+   "id": "injerto1_0",
+   "start": 750.08,
+   "dur": 72,
+   "key": "injerto1",
+   "kind": "lowerthird",
+   "title": "Las recetas de las abuelas, ordenadas para ti",
+   "tone": "teal",
+   "kicker": "Lo reuní para ti",
+   "desc": "Un método completo, con las cantidades y los tiempos, en una guía con letra grande. El enlace está arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "quieran_0",
+   "start": 822.08,
+   "dur": 27.16,
+   "key": "quieran",
+   "kind": "lowerthird",
+   "title": "«Dígales que se quieran — se les nota en la cara»",
+   "tone": "teal",
+   "kicker": "Doña Amparo, 78",
+   "desc": "No es el romero: es quererse lo suficiente para dedicarse unos minutos cada noche, toda la vida."
+  },
+  {
+   "id": "invisible_0",
+   "start": 849.24,
+   "dur": 2.8,
+   "key": "invisible",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "ELLA NO SE CUIDABA PARA QUE LA MIRARAN",
+     "sub": "se cuidaba para mirarse ella con gusto — esa es la verdadera juventud",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/invisible_0.mp4"
+  },
+  {
+   "id": "s1_0",
+   "start": 938.92,
+   "dur": 42.04,
+   "key": "s1",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Protégete del sol, como ella",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Secreto"
+  },
+  {
+   "id": "s1_1",
+   "start": 980.96,
+   "dur": 10.06,
+   "key": "s1",
+   "kind": "raw",
+   "src": "img/fe16_sombrero_sol.png",
+   "hold": true
+  },
+  {
+   "id": "s2_0",
+   "start": 991.02,
+   "dur": 27.8,
+   "key": "s2",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Manos y cuello, siempre juntos",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Secreto"
+  },
+  {
+   "id": "s2_1",
+   "start": 1018.82,
+   "dur": 12.54,
+   "key": "s2",
+   "kind": "callout",
+   "w": 1.6,
+   "image": "img/fe16_manos_guante.png",
+   "figure": "«Las manos no mienten»",
+   "caption": "Aceite tibio + guantes de algodón para dormir: amanecen suaves."
+  },
+  {
+   "id": "s3_0",
+   "start": 1031.36,
+   "dur": 21,
+   "key": "s3",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Constancia con cariño",
+   "tone": "teal",
+   "w": 3,
+   "eyebrow": "Secreto"
+  },
+  {
+   "id": "s3_1",
+   "start": 1052.36,
+   "dur": 2.8,
+   "key": "s3",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "word": "UNA VIDA DE QUERERSE",
+     "sub": "Doña Amparo no construyó esa piel en un día — la construyó en toda una vida. Está a tu alcance.",
+     "tone": "teal",
+     "at": 0
+    }
+   ],
+   "clip": "avatar_clips/federer16/s3_1.mp4"
+  },
+  {
+   "id": "injerto2_0",
+   "start": 1069.26,
+   "dur": 28.72,
+   "key": "injerto2",
+   "kind": "freezezoom",
+   "image": "img/fe16_libro_guia.png",
+   "kicker": "Método completo · enlace arriba en la descripción",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "inversion_0",
+   "start": 1097.98,
+   "dur": 5,
+   "key": "inversion",
+   "kind": "lowerthird",
+   "title": "La mejor inversión: cuidarte para siempre, como Doña Amparo",
+   "tone": "teal",
+   "kicker": "Sin depender de la farmacia",
+   "desc": "No es un gasto en un frasco: es aprender a cuidarte sola. El enlace está arriba, en la descripción.",
+   "link": "drfederer.com"
+  },
+  {
+   "id": "primera_noche_0",
+   "start": 1102.98,
+   "dur": 0.69,
+   "key": "primera_noche",
+   "kind": "talk"
+  },
+  {
+   "id": "primera_noche_1",
+   "start": 1103.67,
+   "dur": 4.31,
+   "key": "primera_noche",
+   "kind": "process",
+   "w": 2.4,
+   "title": "Tu primera noche, como Doña Amparo",
+   "eyebrow": "Paso a paso",
+   "steps": [
+    {
+     "title": "Lava",
+     "desc": "solo agua tibia, suave, sin tallar",
+     "image": "img/fe16_lavar_cara.png"
+    },
+    {
+     "title": "Romero",
+     "desc": "3-4 gotitas tibias, masaje hacia arriba: cara, cuello, manos",
+     "image": "img/fe16_masaje_facial.png"
+    },
+    {
+     "title": "Duerme",
+     "desc": "tus horas: de noche la piel se repara sola",
+     "image": "img/fe16_dormir.png"
+    }
+   ]
+  },
+  {
+   "id": "macera_0",
+   "start": 1107.98,
+   "dur": 119.28,
+   "key": "macera",
+   "kind": "raw",
+   "src": "img/fe16_romero_frasco.png",
+   "hold": true
+  },
+  {
+   "id": "luz_0",
+   "start": 1227.26,
+   "dur": 5,
+   "key": "luz",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "Una"
+    },
+    {
+     "t": "mirada"
+    },
+    {
+     "t": "con"
+    },
+    {
+     "t": "CARIÑO",
+     "hl": true
+    }
+   ],
+   "tone": "teal",
+   "perWord": 10
+  },
+  {
+   "id": "cierre_0",
+   "start": 1232.26,
+   "dur": -0.58,
+   "key": "cierre",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Unos minutos para ti, tu romero, y una mirada con cariño",
+   "image": "img/fe16_federer_cocina.png"
+  }
+ ]
+}
