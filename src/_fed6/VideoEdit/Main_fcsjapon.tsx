@@ -117,7 +117,7 @@ const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag");
 const CTA_AT = ctaBeat ? ctaBeat.start : VIDEO_END - 12;
 
 const renderComp = (b: any, d: number) =>
-  b.kind === "avatarpizarra" ? <AvatarPizarra durationInFrames={d} items={b.items} avatar={b.clip || "fcsjapon_opt.mp4"} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} objectPos="10% 45%" />
+  b.kind === "avatarpizarra" ? <AvatarPizarra durationInFrames={d} items={b.items} avatar={b.clip || "fcsjapon_opt.mp4"} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} objectPos="40% 22%" />
   : b.kind === "avatarkeyword" ? <AvatarKeyword durationInFrames={d} items={b.items} avatar={b.clip || "fcsjapon_opt.mp4"} avatarFrom={b.clip ? 0 : Math.round(b.start * 30)} />
   : b.kind === "lowerthird" ? <LowerThird durationInFrames={d} title={b.title} desc={b.desc} kicker={b.kicker} tag={b.tag} tone={b.tone} />
   : b.kind === "mitoverdad" ? <MitoVerdad durationInFrames={d} myth={b.myth} truth={b.truth} flipAt={b.flipAt} />
@@ -162,7 +162,7 @@ export const MainFcsjapon: React.FC = () => {
       })}
 
       {/* CAPA 3 — AVATAR (full / hidden / split halfR, cero recuadro) */}
-      <AvatarLayer src="fcsjapon_opt.mp4" windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.29, y: 0.3, splitZoom: 1.12 }} />
+      <AvatarLayer src="fcsjapon_opt.mp4" windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.4, y: 0.28, splitZoom: 1.12 }} />
 
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {
