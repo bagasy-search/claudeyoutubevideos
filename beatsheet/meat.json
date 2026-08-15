@@ -1643,7 +1643,7 @@
       "start": 975.14,
       "dur": 4.33,
       "kind": "raw",
-      "src": "broll/meat/s_215.jpg",
+      "src": "img/meat/s_215.png",
       "darken": 0
     },
     {
@@ -1745,7 +1745,7 @@
       "start": 1045.18,
       "dur": 5.05,
       "kind": "raw",
-      "src": "broll/meat/s_231.jpg",
+      "src": "img/meat/s_231.png",
       "darken": 0
     },
     {
@@ -1940,7 +1940,7 @@
       "start": 1158.31,
       "dur": 6.27,
       "kind": "raw",
-      "src": "broll/meat/s_258.jpg",
+      "src": "img/meat/s_258.png",
       "darken": 0
     },
     {
@@ -2056,7 +2056,7 @@
       "start": 1236.27,
       "dur": 7.85,
       "kind": "raw",
-      "src": "broll/meat/s_273.jpg",
+      "src": "img/meat/s_273.png",
       "darken": 0
     },
     {
