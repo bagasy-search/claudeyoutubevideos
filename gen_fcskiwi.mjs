@@ -121,9 +121,9 @@ const CMP = [
   ] },
   // 3 BENEFICIOS (clímax en el nº3) (s_102)
   { at: "s_102", phrase: "llegues sobre todo al numero tres", kind: "splitlist", title: "Lo que el kiwi le devuelve a tu músculo", items: [
-    "1 · Duermes profundo → reparas el músculo de noche",
-    "2 · Vitamina C → el cemento que arma el colágeno",
-    "3 · Apaga la inflamación que derrite el músculo",
+    "1 · Duermes profundo → reparas músculo",
+    "2 · Vitamina C → arma el colágeno",
+    "3 · Apagas la inflamación que lo derrite",
   ] },
   // MECANISMO 2 — vitamina C = cemento del colágeno (s_116)
   { at: "s_116", phrase: "estan hechos en buena parte de colageno", kind: "avatarpizarra", items: [
