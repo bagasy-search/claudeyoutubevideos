@@ -1,0 +1,2151 @@
+{
+  "video": "waterwell",
+  "avatar": "waterwell_opt.mp4",
+  "clipsfirst": true,
+  "maxRawDur": 9,
+  "beats": [
+    {
+      "id": "ww_h_pumphand",
+      "start": 1.8,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_pumphand.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_pumphand",
+        "prompt": "weathered old hands gripping the iron handle of an old red pitcher water pump in a rustic farm yard, warm morning light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_gush",
+      "start": 4.4,
+      "dur": 2.7,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_gush.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_gush",
+        "prompt": "clear cold water gushing out of the iron spout of a hand water pump into cupped hands, splashing, close up, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_impact",
+      "start": 6.6,
+      "dur": 4.6,
+      "kind": "impact",
+      "image": "img/waterwell/ww_h_gush.png",
+      "setup": "No wire. No pump.",
+      "impact": "Free water.",
+      "impactAccent": "good",
+      "hitAt": 2,
+      "boom": 0,
+      "darken": 0.42
+    },
+    {
+      "id": "ww_h_well",
+      "start": 11.2,
+      "dur": 3.3,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_well.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_well",
+        "prompt": "an old wide stone-lined dug well with a wooden windlass and a bucket in a green Amish farmyard, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_key1",
+      "start": 14,
+      "dur": 3.8,
+      "kind": "keyphrase",
+      "text": "No electricity.",
+      "src": "img/waterwell/ww_h_key1.png",
+      "accent": "cold",
+      "fontSize": 104,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_key1",
+        "prompt": "a lone old iron hand pump standing in a quiet farmyard, no wires anywhere, soft golden light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_ram",
+      "start": 17.8,
+      "dur": 3.3,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_ram.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_ram",
+        "prompt": "a small cast iron hydraulic ram pump sitting beside a flowing creek, two brass valves and an air chamber, no motor, dim mossy light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_uphill",
+      "start": 20.6,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_uphill.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_uphill",
+        "prompt": "a thin pipe running up a grassy hillside from a creek toward a wooden barrel, water trickling into the barrel at the top, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_key2",
+      "start": 23.2,
+      "dur": 3.8,
+      "kind": "keyphrase",
+      "text": "Uphill. On nothing.",
+      "src": "img/waterwell/ww_h_key2.png",
+      "accent": "good",
+      "fontSize": 92,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_key2",
+        "prompt": "water trickling into a barrel at the top of a hill, a creek far below, no machinery visible, natural, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_windmill",
+      "start": 27,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_windmill.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_windmill",
+        "prompt": "a tall old skeleton farm windmill with a spinning fan standing over a stock tank in a wide field, low sun, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_creek",
+      "start": 30,
+      "dur": 3.3,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_creek.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_creek",
+        "prompt": "a small clear creek flowing over stones with a little drop, mossy banks, dim green woodland light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_dig",
+      "start": 32.8,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_dig.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_dig",
+        "prompt": "a man's boots and shovel beside a wide half-dug well hole lined with fieldstone, dirt piled up, farm, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_key3",
+      "start": 35.8,
+      "dur": 4,
+      "kind": "keyphrase",
+      "text": "Free water forever.",
+      "src": "img/waterwell/ww_h_key3.png",
+      "accent": "good",
+      "fontSize": 100,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_key3",
+        "prompt": "cupped weathered hands full of clear cold water held up in warm sunlight, drops falling, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_blackout",
+      "start": 39.8,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_blackout.png",
+      "darken": 0.15,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_blackout",
+        "prompt": "a dark modern kitchen during a blackout, a hand turning a faucet with nothing coming out, dim cold light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_pumpwork",
+      "start": 42.8,
+      "dur": 3.7,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_pumpwork.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_pumpwork",
+        "prompt": "an old iron hand pump on a porch giving water in the daylight, calm and working, warm natural light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_bucket",
+      "start": 46,
+      "dur": 3.7,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_bucket.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_bucket",
+        "prompt": "a wooden bucket coming up full of water on a rope from a stone well, hands hauling it, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_drink",
+      "start": 49.2,
+      "dur": 3.7,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_drink.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_drink",
+        "prompt": "a child drinking cold clear water from cupped hands at a farm pump, soft golden documentary light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_key4",
+      "start": 52.4,
+      "dur": 3.6,
+      "kind": "keyphrase",
+      "text": "The old way pays you back.",
+      "src": "img/waterwell/ww_h_key4.png",
+      "accent": "good",
+      "fontSize": 84,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_key4",
+        "prompt": "wide peaceful Amish farm at golden hour with a windmill and a well, quiet and self-sufficient, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "ww_h_settle",
+      "start": 56,
+      "dur": 10.5,
+      "kind": "raw",
+      "src": "img/waterwell/ww_h_settle.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "waterwell/ww_h_settle",
+        "prompt": "a still close up of clear water in a wooden bucket reflecting the sky, calm, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_24",
+      "start": 94.68,
+      "dur": 4,
+      "kind": "raw",
+      "src": "img/waterwell/s_24.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_notpower",
+      "start": 98.18,
+      "dur": 7.9,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "You don't need power",
+      "eyebrow": "The whole trick",
+      "caption": "the water is already under your feet — the trick isn't making electricity, it's not needing any",
+      "image": "img/waterwell/cmp_notpower_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_notpower_bg",
+        "prompt": "an old iron hand pump standing alone in a quiet farmyard, no wires, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_27",
+      "start": 106.08,
+      "dur": 5.78,
+      "kind": "raw",
+      "src": "img/waterwell/s_27.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_needlist",
+      "start": 111.36,
+      "dur": 7.24,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "What you're told it takes",
+      "items": [
+        "A drilling company and a truck",
+        "A crew, and thousands of dollars",
+        "A big electric pump underground",
+        "One more wire that can fail you"
+      ]
+    },
+    {
+      "id": "s_30",
+      "start": 118.6,
+      "dur": 6.42,
+      "kind": "raw",
+      "src": "broll/waterwell/s_30.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_watts",
+      "start": 124.52,
+      "dur": 9.34,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 0,
+      "suffix": " watts",
+      "label": "the old world got its water for ten thousand years with not one watt of electricity anywhere on earth",
+      "eyebrow": "Ten thousand years"
+    },
+    {
+      "id": "cmp_shortcut",
+      "start": 133.86,
+      "dur": 25.32,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Power is just the shortcut",
+      "eyebrow": "Not the water itself",
+      "caption": "electricity is only the modern shortcut — take it away and the water's still right there, right where it's always been, under your feet",
+      "image": "img/waterwell/cmp_shortcut_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_shortcut_bg",
+        "prompt": "a quiet farmyard with an old hand pump and a windmill, no power lines anywhere, soft light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_34",
+      "start": 159.18,
+      "dur": 5.08,
+      "kind": "raw",
+      "src": "img/waterwell/s_34.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_twotricks",
+      "start": 163.76,
+      "dur": 8.68,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Only two problems to solve",
+      "items": [
+        "Reach the water — get a hole down to it",
+        "Lift the water — get it up and out",
+        "Power just does both for you",
+        "Do both the old way, with none"
+      ]
+    },
+    {
+      "id": "s_37",
+      "start": 172.44,
+      "dur": 4.74,
+      "kind": "raw",
+      "src": "broll/waterwell/s_37.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_bothjobs",
+      "start": 176.68,
+      "dur": 13.26,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "The modern world vs the old",
+      "items": [
+        "Modern: power reaches the water",
+        "Modern: power lifts the water",
+        "The old way: reach it with none",
+        "The old way: lift it with none"
+      ]
+    },
+    {
+      "id": "s_41",
+      "start": 189.94,
+      "dur": 4.3,
+      "kind": "raw",
+      "src": "broll/waterwell/s_41.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_42",
+      "start": 193.74,
+      "dur": 4.12,
+      "kind": "raw",
+      "src": "broll/waterwell/s_42.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_43",
+      "start": 197.36,
+      "dur": 3.6,
+      "kind": "raw",
+      "src": "img/waterwell/s_43.png",
+      "darken": 0
+    },
+    {
+      "id": "s_44",
+      "start": 200.46,
+      "dur": 3.6,
+      "kind": "raw",
+      "src": "broll/waterwell/s_44.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_watertable",
+      "start": 203.56,
+      "dur": 8.24,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "The water table",
+      "eyebrow": "It's almost surely there",
+      "caption": "the depth where the ground is soaked full like the bottom of a wrung-out sponge — dig far enough and you hit it",
+      "image": "img/waterwell/cmp_watertable_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_watertable_bg",
+        "prompt": "a cross section of green earth with a shovel, showing the wet dark soil of the water table below, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_47",
+      "start": 211.8,
+      "dur": 5.14,
+      "kind": "raw",
+      "src": "img/waterwell/s_47.png",
+      "darken": 0
+    },
+    {
+      "id": "s_48",
+      "start": 216.44,
+      "dur": 4.48,
+      "kind": "raw",
+      "src": "img/waterwell/s_48.png",
+      "darken": 0
+    },
+    {
+      "id": "s_49",
+      "start": 220.42,
+      "dur": 5.82,
+      "kind": "raw",
+      "src": "broll/waterwell/s_49.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_shallowdeep",
+      "start": 225.74,
+      "dur": 7.92,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "How deep is the water?",
+      "items": [
+        "Some places, way down deep",
+        "Low ground near a creek: 10–15 ft",
+        "Sometimes shockingly close to the top",
+        "Read the land to guess how far"
+      ]
+    },
+    {
+      "id": "s_52",
+      "start": 233.66,
+      "dur": 5.24,
+      "kind": "raw",
+      "src": "img/waterwell/s_52.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_signs",
+      "start": 238.4,
+      "dur": 10.02,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "Reading the land",
+      "eyebrow": "Where water sits near the top",
+      "items": [
+        {
+          "text": "Low ground, hollows, near a creek",
+          "state": "done"
+        },
+        {
+          "text": "Willows, cattails, rushes",
+          "state": "done"
+        },
+        {
+          "text": "Grass that stays green in a dry spell",
+          "state": "done"
+        },
+        {
+          "text": "Where the morning mist settles",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_signs_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_signs_bg",
+        "prompt": "a low green hollow with willows and cattails growing, morning mist, soft light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_56",
+      "start": 248.42,
+      "dur": 5.04,
+      "kind": "raw",
+      "src": "img/waterwell/s_56.png",
+      "darken": 0
+    },
+    {
+      "id": "s_57",
+      "start": 252.96,
+      "dur": 5.7,
+      "kind": "raw",
+      "src": "img/waterwell/s_57.png",
+      "darken": 0
+    },
+    {
+      "id": "s_58",
+      "start": 258.16,
+      "dur": 7.48,
+      "kind": "raw",
+      "src": "broll/waterwell/s_58.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_shallow",
+      "start": 265.14,
+      "dur": 7.48,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 15,
+      "suffix": " ft",
+      "label": "in low ground near a creek the water table can sit this close to the top — sometimes less",
+      "eyebrow": "Shockingly close"
+    },
+    {
+      "id": "s_60",
+      "start": 272.62,
+      "dur": 5.52,
+      "kind": "raw",
+      "src": "broll/waterwell/s_60.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_61",
+      "start": 277.64,
+      "dur": 4.94,
+      "kind": "raw",
+      "src": "broll/waterwell/s_61.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_62",
+      "start": 282.08,
+      "dur": 8.16,
+      "kind": "raw",
+      "src": "img/waterwell/s_62.png",
+      "darken": 0
+    },
+    {
+      "id": "s_64",
+      "start": 289.74,
+      "dur": 5.62,
+      "kind": "raw",
+      "src": "broll/waterwell/s_64.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_65",
+      "start": 294.86,
+      "dur": 5.34,
+      "kind": "raw",
+      "src": "img/waterwell/s_65.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_dowsing",
+      "start": 299.7,
+      "dur": 8.6,
+      "kind": "mistake",
+      "number": "?",
+      "eyebrow": "An honest word on dowsing",
+      "title": "No promises — but no harm",
+      "desc": "The old folks walked the land with a forked willow branch and swore it pulled down over water. I've got no science for it. It costs nothing to try. But the reading of the land — green grass, low ground, willows — that part I'll stand behind all day.",
+      "image": "img/waterwell/cmp_dowsing_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_dowsing_bg",
+        "prompt": "weathered hands holding a forked willow dowsing stick walking over green ground, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_68",
+      "start": 308.3,
+      "dur": 2.9,
+      "kind": "raw",
+      "src": "img/waterwell/s_68.png",
+      "darken": 0
+    },
+    {
+      "id": "s_69",
+      "start": 310.7,
+      "dur": 4.58,
+      "kind": "raw",
+      "src": "broll/waterwell/s_69.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_landchips",
+      "start": 314.78,
+      "dur": 9.22,
+      "kind": "chips",
+      "hue": "cold",
+      "title": "The land tells you where",
+      "chips": [
+        "willows",
+        "cattails",
+        "green in a dry spell",
+        "morning mist"
+      ],
+      "image": "img/waterwell/cmp_landchips_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_landchips_bg",
+        "prompt": "a low green hollow with willows and cattails and a bright green patch of grass, soft morning mist, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_72",
+      "start": 324,
+      "dur": 3.56,
+      "kind": "raw",
+      "src": "broll/waterwell/s_72.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_73",
+      "start": 327.06,
+      "dur": 6.66,
+      "kind": "raw",
+      "src": "broll/waterwell/s_73.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_75",
+      "start": 333.22,
+      "dur": 5.84,
+      "kind": "raw",
+      "src": "img/waterwell/s_75.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_threeways",
+      "start": 338.56,
+      "dur": 9.52,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "Three ways to reach it",
+      "items": [
+        "Drive a sand-point — shallow & sandy",
+        "Bore it with a hand auger — a bit deeper",
+        "Dig it wide & stone-line it — the old way",
+        "Easiest to hardest"
+      ]
+    },
+    {
+      "id": "s_78",
+      "start": 348.08,
+      "dur": 9.04,
+      "kind": "raw",
+      "src": "img/waterwell/s_78.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_sandpoint",
+      "start": 356.62,
+      "dur": 10.44,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The driven sand-point well",
+      "eyebrow": "Almost too easy",
+      "items": [
+        {
+          "text": "A pointed well point with a screen",
+          "state": "done"
+        },
+        {
+          "text": "Drive it down with a maul, foot by foot",
+          "state": "done"
+        },
+        {
+          "text": "Thread on more pipe and keep driving",
+          "state": "done"
+        },
+        {
+          "text": "Screw a pump right onto the top",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_sandpoint_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_sandpoint_bg",
+        "prompt": "a pointed steel well point and pipe being driven into the ground with a heavy maul, farmyard, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_82",
+      "start": 367.06,
+      "dur": 5.56,
+      "kind": "raw",
+      "src": "img/waterwell/s_82.png",
+      "darken": 0
+    },
+    {
+      "id": "s_83",
+      "start": 372.12,
+      "dur": 7.5,
+      "kind": "raw",
+      "src": "img/waterwell/s_83.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_afternoon",
+      "start": 379.12,
+      "dur": 7.24,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 1,
+      "suffix": " afternoon",
+      "label": "a man and a strong boy can drive a sand-point well in one afternoon — a hundred dollars in pipe and a point",
+      "eyebrow": "The driven well"
+    },
+    {
+      "id": "cmp_sandwhere",
+      "start": 386.36,
+      "dur": 9.62,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Where the sand-point works",
+      "chips": [
+        "shallow water",
+        "sandy or gravelly",
+        "no rock",
+        "an afternoon's work"
+      ],
+      "image": "img/waterwell/cmp_sandwhere_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_sandwhere_bg",
+        "prompt": "sandy gravelly ground with a driven pipe standing up, farm, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_87",
+      "start": 395.98,
+      "dur": 5.38,
+      "kind": "raw",
+      "src": "broll/waterwell/s_87.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_88",
+      "start": 400.86,
+      "dur": 6.38,
+      "kind": "raw",
+      "src": "img/waterwell/s_88.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_auger",
+      "start": 406.74,
+      "dur": 7.62,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The hand-bored auger well",
+      "eyebrow": "A bit deeper, some clay",
+      "items": [
+        {
+          "text": "A giant earth auger on a pipe",
+          "state": "done"
+        },
+        {
+          "text": "Turn it by hand, round and round",
+          "state": "done"
+        },
+        {
+          "text": "Pull it up full and dump the dirt",
+          "state": "done"
+        },
+        {
+          "text": "Add pipe as the hole gets deeper",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_auger_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_auger_bg",
+        "prompt": "two people turning a large hand earth auger boring a hole in soft ground, farm, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_90",
+      "start": 414.36,
+      "dur": 6.7,
+      "kind": "raw",
+      "src": "img/waterwell/s_90.png",
+      "darken": 0
+    },
+    {
+      "id": "s_92",
+      "start": 420.56,
+      "dur": 7.34,
+      "kind": "raw",
+      "src": "img/waterwell/s_92.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_augersplit",
+      "start": 427.4,
+      "dur": 10.22,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Bore it where the ground is",
+      "items": [
+        "Soft ground, clay, or sand",
+        "No rock — rock will stop you",
+        "Turn the auger, pull, and dump",
+        "40–50 ft by hand and patience"
+      ]
+    },
+    {
+      "id": "cmp_augerbars",
+      "start": 437.62,
+      "dur": 7.14,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "Hand auger — what it beats",
+      "eyebrow": "Arms and patience",
+      "bars": [
+        {
+          "label": "Soft ground, clay, sand",
+          "value": 3,
+          "display": "bore 40–50 ft by hand",
+          "winner": true
+        },
+        {
+          "label": "Rock",
+          "value": 1,
+          "display": "stops you"
+        }
+      ]
+    },
+    {
+      "id": "s_97",
+      "start": 444.76,
+      "dur": 4.4,
+      "kind": "raw",
+      "src": "broll/waterwell/s_97.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_98",
+      "start": 448.66,
+      "dur": 4.98,
+      "kind": "raw",
+      "src": "broll/waterwell/s_98.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_99",
+      "start": 453.14,
+      "dur": 8.4,
+      "kind": "raw",
+      "src": "img/waterwell/s_99.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_dugwell",
+      "start": 461.04,
+      "dur": 8.46,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "The deep hand-dug well",
+      "eyebrow": "The oldest way there is",
+      "caption": "a wide hole a man climbs into, pick and shovel and a bucket on a rope, lined with stone as you go — some give water 200 years",
+      "image": "img/waterwell/cmp_dugwell_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_dugwell_bg",
+        "prompt": "a wide stone-lined dug well with a curb and a windlass in a farmyard, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_dugstat",
+      "start": 469.5,
+      "dur": 11.52,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 200,
+      "suffix": " years+",
+      "label": "a stone-lined dug well, walled proper, outlasts the house beside it — some give water two and three centuries",
+      "eyebrow": "The old dug well"
+    },
+    {
+      "id": "s_106",
+      "start": 481.02,
+      "dur": 4.34,
+      "kind": "raw",
+      "src": "img/waterwell/s_106.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_danger",
+      "start": 484.86,
+      "dur": 7.82,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "Stop — this is dead serious",
+      "title": "The most dangerous thing here",
+      "desc": "A deep hand-dug well can kill you, and it has killed people. Two things can kill you down in a well, and you must respect both. Do not miss this.",
+      "image": "img/waterwell/cmp_danger_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_danger_bg",
+        "prompt": "looking down into a dark deep stone well shaft, dim and ominous, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_109",
+      "start": 492.68,
+      "dur": 6.66,
+      "kind": "raw",
+      "src": "img/waterwell/s_109.png",
+      "darken": 0
+    },
+    {
+      "id": "s_111",
+      "start": 498.84,
+      "dur": 5.08,
+      "kind": "raw",
+      "src": "img/waterwell/s_111.png",
+      "darken": 0
+    },
+    {
+      "id": "s_112",
+      "start": 503.42,
+      "dur": 3.98,
+      "kind": "raw",
+      "src": "broll/waterwell/s_112.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_113",
+      "start": 506.9,
+      "dur": 5.5,
+      "kind": "raw",
+      "src": "broll/waterwell/s_113.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_caveins",
+      "start": 511.9,
+      "dur": 6.92,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "The walls cave in",
+      "eyebrow": "Danger one",
+      "caption": "a deep hole wants to collapse — never go down one that isn't shored and stone-lined solid as you go. You line it as you descend, not after",
+      "image": "img/waterwell/cmp_caveins_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_caveins_bg",
+        "prompt": "the inside of a stone-cribbed well shaft being lined with fieldstone, dim, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_115",
+      "start": 518.82,
+      "dur": 6.88,
+      "kind": "raw",
+      "src": "broll/waterwell/s_115.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_117",
+      "start": 525.2,
+      "dur": 4.18,
+      "kind": "raw",
+      "src": "broll/waterwell/s_117.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_118",
+      "start": 528.88,
+      "dur": 5.54,
+      "kind": "raw",
+      "src": "img/waterwell/s_118.png",
+      "darken": 0
+    },
+    {
+      "id": "s_120",
+      "start": 533.92,
+      "dur": 7.52,
+      "kind": "raw",
+      "src": "img/waterwell/s_120.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_badair",
+      "start": 540.94,
+      "dur": 7.44,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "Danger two — nobody sees it",
+      "title": "Bad air — the damps",
+      "desc": "A heavy poisoned air pools at the bottom of a deep well. You cannot see it or smell it. A man climbs down into it and it takes his breath before anyone knows. Then someone climbs down to save him, and it takes them too.",
+      "image": "img/waterwell/cmp_badair_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_badair_bg",
+        "prompt": "the dark bottom of a deep well shaft, heavy dim air, ominous, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_122",
+      "start": 548.38,
+      "dur": 5.26,
+      "kind": "raw",
+      "src": "img/waterwell/s_122.png",
+      "darken": 0
+    },
+    {
+      "id": "s_123",
+      "start": 553.14,
+      "dur": 3.2,
+      "kind": "raw",
+      "src": "img/waterwell/s_123.png",
+      "darken": 0
+    },
+    {
+      "id": "s_124",
+      "start": 555.84,
+      "dur": 4.3,
+      "kind": "raw",
+      "src": "broll/waterwell/s_124.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_125",
+      "start": 559.64,
+      "dur": 4.24,
+      "kind": "raw",
+      "src": "img/waterwell/s_125.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_candletest",
+      "start": 563.38,
+      "dur": 9.26,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "Test the air — every time",
+      "eyebrow": "Before any person goes down",
+      "items": [
+        {
+          "text": "Lower a lit candle or lantern on a rope",
+          "state": "done"
+        },
+        {
+          "text": "Flame burns bright all the way = good air",
+          "state": "done"
+        },
+        {
+          "text": "Flame guts, dims, or dies = bad air",
+          "state": "done"
+        },
+        {
+          "text": "Clear it and test again — nobody goes down till it's bright",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_candletest_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_candletest_bg",
+        "prompt": "a lit lantern being lowered on a rope into a dark stone well shaft, small flame, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_128",
+      "start": 572.64,
+      "dur": 6.7,
+      "kind": "raw",
+      "src": "img/waterwell/s_128.png",
+      "darken": 0
+    },
+    {
+      "id": "s_129",
+      "start": 578.84,
+      "dur": 10.68,
+      "kind": "raw",
+      "src": "img/waterwell/s_129.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_neveralone",
+      "start": 589.02,
+      "dur": 7.36,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "Never go down alone",
+      "eyebrow": "Not once — not ever",
+      "caption": "there is always a strong person up top, on the rope, watching you the whole time. Respect the well and it gives water 200 years",
+      "image": "img/waterwell/cmp_neveralone_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_neveralone_bg",
+        "prompt": "a person up top holding a rope at the mouth of a well while another descends, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_133",
+      "start": 596.38,
+      "dur": 8.02,
+      "kind": "raw",
+      "src": "img/waterwell/s_133.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_twokillers",
+      "start": 603.9,
+      "dur": 8.9,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "The two things that kill",
+      "items": [
+        "The walls cave in — shore & stone-line",
+        "The bad air pools — test with a flame",
+        "Never go down a well alone",
+        "Always a strong person up top"
+      ]
+    },
+    {
+      "id": "s_137",
+      "start": 612.8,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "broll/waterwell/s_137.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_lifting",
+      "start": 617.72,
+      "dur": 7.88,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Lifting it — no power",
+      "items": [
+        "A hand pump for a shallow well",
+        "A cylinder pump for a deep one",
+        "A bucket, a windlass, a rope pump",
+        "A windmill — and a ram"
+      ]
+    },
+    {
+      "id": "s_140",
+      "start": 625.6,
+      "dur": 6.16,
+      "kind": "raw",
+      "src": "broll/waterwell/s_140.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_handpump",
+      "start": 631.26,
+      "dur": 7.04,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The hand pump",
+      "eyebrow": "The plainest way",
+      "items": [
+        {
+          "text": "Bolt it right on top of the pipe",
+          "state": "done"
+        },
+        {
+          "text": "Work the handle, it draws water up",
+          "state": "done"
+        },
+        {
+          "text": "Perfect for a shallow well",
+          "state": "done"
+        },
+        {
+          "text": "A pitcher pump or an iron farm pump",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_handpump_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_handpump_bg",
+        "prompt": "an old red pitcher hand pump bolted to a well pipe, water in the spout, farmyard, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_142",
+      "start": 638.3,
+      "dur": 6.04,
+      "kind": "raw",
+      "src": "broll/waterwell/s_142.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_pumpwhere",
+      "start": 643.84,
+      "dur": 7.02,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "The hand pump is for",
+      "items": [
+        "A shallow well",
+        "Water under about 25 feet",
+        "One iron handle, no power",
+        "Bolted right on top of the pipe"
+      ]
+    },
+    {
+      "id": "cmp_suction",
+      "start": 650.86,
+      "dur": 7.5,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "danger",
+      "value": 25,
+      "suffix": " ft max",
+      "label": "how far a suction pump can pull water up — honestly closer to 22 in the real world. Deeper than that, you need a different rig",
+      "eyebrow": "The one honest number"
+    },
+    {
+      "id": "s_145",
+      "start": 658.36,
+      "dur": 4.94,
+      "kind": "raw",
+      "src": "broll/waterwell/s_145.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_146",
+      "start": 662.8,
+      "dur": 6.5,
+      "kind": "raw",
+      "src": "img/waterwell/s_146.png",
+      "darken": 0
+    },
+    {
+      "id": "s_147",
+      "start": 668.8,
+      "dur": 5.54,
+      "kind": "raw",
+      "src": "broll/waterwell/s_147.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_148",
+      "start": 673.84,
+      "dur": 6.34,
+      "kind": "raw",
+      "src": "img/waterwell/s_148.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_cylinder",
+      "start": 679.68,
+      "dur": 7.42,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "The deep-well cylinder pump",
+      "eyebrow": "For the deep ones",
+      "caption": "the working part sits down in the water; a long rod works it from up top, pushing water up from below — no 25-foot limit",
+      "image": "img/waterwell/cmp_cylinder_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_cylinder_bg",
+        "prompt": "a cast iron deep well cylinder hand pump head with a long rod, farmyard, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_150",
+      "start": 687.1,
+      "dur": 5.82,
+      "kind": "raw",
+      "src": "img/waterwell/s_150.png",
+      "darken": 0
+    },
+    {
+      "id": "s_151",
+      "start": 692.42,
+      "dur": 5.24,
+      "kind": "raw",
+      "src": "img/waterwell/s_151.png",
+      "darken": 0
+    },
+    {
+      "id": "s_152",
+      "start": 697.16,
+      "dur": 7.82,
+      "kind": "raw",
+      "src": "broll/waterwell/s_152.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_cylbars",
+      "start": 704.48,
+      "dur": 7.24,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": " ft",
+      "title": "Suction vs cylinder pump",
+      "eyebrow": "How deep each reaches",
+      "bars": [
+        {
+          "label": "Suction pump",
+          "value": 25,
+          "display": "~25 ft"
+        },
+        {
+          "label": "Deep-well cylinder",
+          "value": 300,
+          "display": "200–300 ft by hand",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "s_154",
+      "start": 711.72,
+      "dur": 7.54,
+      "kind": "raw",
+      "src": "broll/waterwell/s_154.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_156",
+      "start": 718.76,
+      "dur": 5.56,
+      "kind": "raw",
+      "src": "broll/waterwell/s_156.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_nopump",
+      "start": 723.82,
+      "dur": 12.3,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "No pump at all",
+      "chips": [
+        "bucket & windlass",
+        "rope pump",
+        "windmill",
+        "the ram"
+      ],
+      "image": "img/waterwell/cmp_nopump_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_nopump_bg",
+        "prompt": "a wooden bucket on a windlass over a stone well, farmyard, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_ropepump",
+      "start": 736.12,
+      "dur": 9.82,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The rope pump",
+      "eyebrow": "A poor man's wonder",
+      "items": [
+        {
+          "text": "A loop of rope with rubber washers",
+          "state": "done"
+        },
+        {
+          "text": "Runs up a pipe over a wheel you turn",
+          "state": "done"
+        },
+        {
+          "text": "Each washer drags a slug of water up",
+          "state": "done"
+        },
+        {
+          "text": "Waters a whole garden — for a bicycle wheel",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_ropepump_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_ropepump_bg",
+        "prompt": "a homemade rope pump with washers running over a wheel, water coming up a pipe, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_161",
+      "start": 745.94,
+      "dur": 5.46,
+      "kind": "raw",
+      "src": "img/waterwell/s_161.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_windmill",
+      "start": 750.9,
+      "dur": 5.34,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "The windmill",
+      "eyebrow": "Let the wind pump",
+      "caption": "the fan does what your arm does on the handle — it pumps water into a tank all day and all night, every hour the wind blows",
+      "image": "img/waterwell/cmp_windmill_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_windmill_bg",
+        "prompt": "a tall skeleton farm windmill spinning over a full stock tank, wide field, low sun, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_windmillstat",
+      "start": 756.24,
+      "dur": 8.32,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 24,
+      "suffix": " / 7",
+      "label": "the windmill pumps every hour the wind blows, day and night, filling a tank for a whole herd — no hand on it",
+      "eyebrow": "The windmill"
+    },
+    {
+      "id": "s_165",
+      "start": 764.56,
+      "dur": 6.24,
+      "kind": "raw",
+      "src": "broll/waterwell/s_165.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_166",
+      "start": 770.3,
+      "dur": 5.72,
+      "kind": "raw",
+      "src": "broll/waterwell/s_166.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_167",
+      "start": 775.52,
+      "dur": 6.96,
+      "kind": "raw",
+      "src": "broll/waterwell/s_167.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_168",
+      "start": 781.98,
+      "dur": 3.86,
+      "kind": "raw",
+      "src": "broll/waterwell/s_168.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_169",
+      "start": 785.34,
+      "dur": 7.86,
+      "kind": "raw",
+      "src": "broll/waterwell/s_169.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_ram",
+      "start": 792.7,
+      "dur": 9.52,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "The hydraulic ram",
+      "eyebrow": "The one you came for",
+      "caption": "no motor, no electricity, nothing to plug in — it pushes water uphill on the water's own weight, and never stops",
+      "image": "img/waterwell/cmp_ram_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_ram_bg",
+        "prompt": "a small cast iron hydraulic ram pump beside a creek, two valves and an air chamber, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_172",
+      "start": 802.22,
+      "dur": 5.74,
+      "kind": "raw",
+      "src": "img/waterwell/s_172.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_ramhow",
+      "start": 807.46,
+      "dur": 6.32,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "How the ram works",
+      "eyebrow": "A beautiful trick",
+      "items": [
+        {
+          "text": "Falling creek water rushes down a pipe",
+          "state": "done"
+        },
+        {
+          "text": "It slams a valve shut all at once",
+          "state": "done"
+        },
+        {
+          "text": "That force shoves a squirt uphill",
+          "state": "done"
+        },
+        {
+          "text": "Slam and push, every second, forever",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_ramhow_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_ramhow_bg",
+        "prompt": "a diagram-like real view of a hydraulic ram: drive pipe from a creek, valve, delivery pipe up a hill, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_ramcost",
+      "start": 813.78,
+      "dur": 15.14,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 0,
+      "suffix": " power",
+      "label": "the ram runs on the water's own weight — no motor, no wire, not one moving part you have to feed",
+      "eyebrow": "The hydraulic ram"
+    },
+    {
+      "id": "s_177",
+      "start": 828.92,
+      "dur": 7.92,
+      "kind": "raw",
+      "src": "img/waterwell/s_177.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_ramslam",
+      "start": 836.34,
+      "dur": 9.3,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "The ram's beat — forever",
+      "items": [
+        "Falling water rushes down the pipe",
+        "It slams a valve shut all at once",
+        "That force shoves a squirt uphill",
+        "The valve opens — and it slams again"
+      ]
+    },
+    {
+      "id": "s_180",
+      "start": 845.64,
+      "dur": 6.38,
+      "kind": "raw",
+      "src": "img/waterwell/s_180.png",
+      "darken": 0
+    },
+    {
+      "id": "s_181",
+      "start": 851.52,
+      "dur": 7.32,
+      "kind": "raw",
+      "src": "img/waterwell/s_181.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_ram10",
+      "start": 858.34,
+      "dur": 13.18,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 10,
+      "suffix": "× the fall",
+      "label": "the rough old rule — for every foot the water falls coming in, a ram can push a share of it about ten feet up",
+      "eyebrow": "Water uphill, free"
+    },
+    {
+      "id": "s_185",
+      "start": 871.52,
+      "dur": 8.12,
+      "kind": "raw",
+      "src": "broll/waterwell/s_185.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_186",
+      "start": 879.14,
+      "dur": 7.34,
+      "kind": "raw",
+      "src": "broll/waterwell/s_186.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_ram100",
+      "start": 885.98,
+      "dur": 7.84,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 100,
+      "suffix": " years+",
+      "label": "there are ram pumps in England still running, untouched, for over a century — as close to free water forever as there is",
+      "eyebrow": "The ram"
+    },
+    {
+      "id": "s_188",
+      "start": 893.82,
+      "dur": 5,
+      "kind": "raw",
+      "src": "img/waterwell/s_188.png",
+      "darken": 0
+    },
+    {
+      "id": "s_189",
+      "start": 898.32,
+      "dur": 4.64,
+      "kind": "raw",
+      "src": "img/waterwell/s_189.png",
+      "darken": 0
+    },
+    {
+      "id": "s_190",
+      "start": 902.46,
+      "dur": 6.04,
+      "kind": "raw",
+      "src": "broll/waterwell/s_190.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_clean",
+      "start": 981.08,
+      "dur": 7.32,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "Keep the water clean",
+      "eyebrow": "The one you can't get wrong",
+      "items": [
+        {
+          "text": "Keep the well away from the outhouse & barnyard",
+          "state": "done"
+        },
+        {
+          "text": "Always uphill from the privy and manure",
+          "state": "done"
+        },
+        {
+          "text": "Cap and cover it — no dirt or runoff in",
+          "state": "done"
+        },
+        {
+          "text": "If ever in doubt, boil it first",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_clean_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_clean_bg",
+        "prompt": "a clean capped well head set well away from a wooden outhouse, uphill, farm, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_206",
+      "start": 988.4,
+      "dur": 4.46,
+      "kind": "raw",
+      "src": "broll/waterwell/s_206.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_207",
+      "start": 992.36,
+      "dur": 3.08,
+      "kind": "raw",
+      "src": "broll/waterwell/s_207.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_privybars",
+      "start": 994.94,
+      "dur": 6.7,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": " ft",
+      "title": "Keep the well clear of the privy",
+      "eyebrow": "Uphill, always",
+      "bars": [
+        {
+          "label": "Right beside the outhouse",
+          "value": 5,
+          "display": "poisons the water"
+        },
+        {
+          "label": "50–100 ft & uphill",
+          "value": 100,
+          "display": "safe & clean",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "s_209",
+      "start": 1001.64,
+      "dur": 6.46,
+      "kind": "raw",
+      "src": "img/waterwell/s_209.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_distance",
+      "start": 1007.6,
+      "dur": 14.04,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "danger",
+      "value": 50,
+      "suffix": " ft min",
+      "label": "at least this far from any outhouse or manure — a hundred feet is better, and always uphill so nothing drains toward your water",
+      "eyebrow": "The rule that matters most"
+    },
+    {
+      "id": "s_212",
+      "start": 1021.64,
+      "dur": 5.52,
+      "kind": "raw",
+      "src": "img/waterwell/s_212.png",
+      "darken": 0
+    },
+    {
+      "id": "s_213",
+      "start": 1026.66,
+      "dur": 4.38,
+      "kind": "raw",
+      "src": "broll/waterwell/s_213.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_214",
+      "start": 1030.54,
+      "dur": 6.68,
+      "kind": "raw",
+      "src": "img/waterwell/s_214.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_boil",
+      "start": 1036.72,
+      "dur": 12.18,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "When in doubt, boil it",
+      "eyebrow": "New well, old spring, after a flood",
+      "caption": "a hard rolling boil for one minute makes near any water safe to drink — it costs you nothing but firewood",
+      "image": "img/waterwell/cmp_boil_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_boil_bg",
+        "prompt": "a pot of water at a rolling boil over a wood fire, steam, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_217",
+      "start": 1048.9,
+      "dur": 7.72,
+      "kind": "raw",
+      "src": "broll/waterwell/s_217.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_219",
+      "start": 1056.12,
+      "dur": 3.96,
+      "kind": "raw",
+      "src": "img/waterwell/s_219.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_waterbill",
+      "start": 1059.58,
+      "dur": 11.76,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "It all hangs on the wire",
+      "eyebrow": "The modern way",
+      "caption": "a water bill every month, or an electric pump humming underground — and it only works as long as the power company says it can",
+      "image": "img/waterwell/cmp_waterbill_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_waterbill_bg",
+        "prompt": "an electric water pump and pressure tank in a dim basement, wires running to it, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_blackout",
+      "start": 1071.34,
+      "dur": 10.5,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "Power out — water out",
+      "eyebrow": "The modern house",
+      "caption": "the taps go dry, the toilets won't fill — a house full of pipes and not one gives up a cup, because it only ever worked while the wire held",
+      "image": "img/waterwell/cmp_blackout_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_blackout_bg",
+        "prompt": "a dark modern kitchen in a blackout, a dry faucet, dim cold light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_drytaps",
+      "start": 1081.84,
+      "dur": 7.22,
+      "kind": "splitlist",
+      "palette": "D",
+      "cross": true,
+      "title": "When the power dies",
+      "items": [
+        "The taps go dry",
+        "The toilets won't fill",
+        "People fight over bottled water",
+        "The porch pump doesn't care one bit"
+      ]
+    },
+    {
+      "id": "s_225",
+      "start": 1089.06,
+      "dur": 6.1,
+      "kind": "raw",
+      "src": "broll/waterwell/s_225.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_stakesbars",
+      "start": 1094.66,
+      "dur": 6.96,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "When the grid goes down",
+      "eyebrow": "Same storm",
+      "bars": [
+        {
+          "label": "Electric well pump",
+          "value": 1,
+          "display": "taps go dry"
+        },
+        {
+          "label": "Hand pump, windmill, ram",
+          "value": 3,
+          "display": "water right through",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "s_227",
+      "start": 1101.62,
+      "dur": 8.72,
+      "kind": "raw",
+      "src": "broll/waterwell/s_227.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_228",
+      "start": 1109.84,
+      "dur": 5.28,
+      "kind": "raw",
+      "src": "broll/waterwell/s_228.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_security",
+      "start": 1114.62,
+      "dur": 13,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 0,
+      "suffix": " / month",
+      "label": "what the ground, the wind and the falling creek charge you for water — no line coming in from the road",
+      "eyebrow": "The deepest security"
+    },
+    {
+      "id": "cmp_neverdry",
+      "start": 1127.62,
+      "dur": 11.92,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Water right through the storm",
+      "items": [
+        "Hand pump — works in the blackout",
+        "Windmill — pumps on the wind",
+        "Ram — runs right through the ice storm",
+        "Cold water, on demand, for free"
+      ]
+    },
+    {
+      "id": "s_233",
+      "start": 1139.54,
+      "dur": 5.7,
+      "kind": "raw",
+      "src": "img/waterwell/s_233.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_recapreach",
+      "start": 1144.74,
+      "dur": 10.46,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "To reach the water",
+      "eyebrow": "No power",
+      "items": [
+        {
+          "text": "Drive a sand-point where it's shallow",
+          "state": "done"
+        },
+        {
+          "text": "Bore with a hand auger a bit deeper",
+          "state": "done"
+        },
+        {
+          "text": "Dig & stone-line it the old way",
+          "state": "done"
+        },
+        {
+          "text": "Shore the walls · test the air · never alone",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_recapreach_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_recapreach_bg",
+        "prompt": "a stone well, a driven pipe and a hand auger together in a farmyard, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_236",
+      "start": 1155.2,
+      "dur": 7.2,
+      "kind": "raw",
+      "src": "img/waterwell/s_236.png",
+      "darken": 0
+    },
+    {
+      "id": "s_237",
+      "start": 1161.9,
+      "dur": 7.8,
+      "kind": "raw",
+      "src": "broll/waterwell/s_237.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_recaplift",
+      "start": 1169.2,
+      "dur": 7.38,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "To lift the water",
+      "eyebrow": "No power",
+      "items": [
+        {
+          "text": "Hand pump for a shallow well",
+          "state": "done"
+        },
+        {
+          "text": "Cylinder pump for the deep ones",
+          "state": "done"
+        },
+        {
+          "text": "Windlass, rope pump, or a windmill",
+          "state": "done"
+        },
+        {
+          "text": "A ram on the creek — uphill, forever",
+          "state": "done"
+        }
+      ],
+      "image": "img/waterwell/cmp_recaplift_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_recaplift_bg",
+        "prompt": "an iron hand pump, a windmill and a creek ram pump together, warm farm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_239",
+      "start": 1176.58,
+      "dur": 7.6,
+      "kind": "raw",
+      "src": "img/waterwell/s_239.png",
+      "darken": 0
+    },
+    {
+      "id": "s_240",
+      "start": 1183.68,
+      "dur": 6.44,
+      "kind": "raw",
+      "src": "img/waterwell/s_240.png",
+      "darken": 0
+    },
+    {
+      "id": "s_241",
+      "start": 1189.62,
+      "dur": 3.98,
+      "kind": "raw",
+      "src": "img/waterwell/s_241.png",
+      "darken": 0
+    },
+    {
+      "id": "s_242",
+      "start": 1193.1,
+      "dur": 7.1,
+      "kind": "raw",
+      "src": "broll/waterwell/s_242.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_243",
+      "start": 1199.7,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "broll/waterwell/s_243.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_almanac",
+      "start": 1204.62,
+      "dur": 6.4,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "The Plain Almanac",
+      "eyebrow": "Below this video — scan the code",
+      "caption": "Amos & Rebecca gathered ninety old methods into one almanac — the water pages, the ram, the rain, laid out step by step. Link in the description",
+      "image": "img/waterwell/cmp_almanac_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "waterwell/cmp_almanac_bg",
+        "prompt": "an old vintage almanac book open on a wooden table beside a lantern, warm light, casual documentary phone snapshot, rustic Amish farm, old iron hand pump and stone well, warm natural daylight, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_245",
+      "start": 1211.02,
+      "dur": 4.68,
+      "kind": "raw",
+      "src": "img/waterwell/s_245.png",
+      "darken": 0
+    },
+    {
+      "id": "s_246",
+      "start": 1215.2,
+      "dur": 5.82,
+      "kind": "raw",
+      "src": "img/waterwell/s_246.png",
+      "darken": 0
+    },
+    {
+      "id": "s_247",
+      "start": 1220.52,
+      "dur": 4.98,
+      "kind": "raw",
+      "src": "img/waterwell/s_247.png",
+      "darken": 0
+    },
+    {
+      "id": "s_248",
+      "start": 1225,
+      "dur": 6.36,
+      "kind": "raw",
+      "src": "img/waterwell/s_248.png",
+      "darken": 0
+    },
+    {
+      "id": "s_249",
+      "start": 1230.86,
+      "dur": 3.78,
+      "kind": "raw",
+      "src": "broll/waterwell/s_249.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_next",
+      "start": 1234.14,
+      "dur": 5.86,
+      "kind": "nextvideo",
+      "kicker": "Next time",
+      "title": "Catch the rain off your own roof",
+      "sub": "Tens of thousands of gallons a year running off into the mud — caught, kept clean, saved for the dry months. Easier than any well."
+    }
+  ]
+}
