@@ -72,7 +72,8 @@ export const AvatarPizarra: React.FC<{
   items: PizItem[];
   avatar?: string;
   avatarFrom?: number;
-}> = ({ durationInFrames, items, avatar, avatarFrom = 0 }) => {
+  objectPos?: string;
+}> = ({ durationInFrames, items, avatar, avatarFrom = 0, objectPos = "50% 50%" }) => {
   const frame = useCurrentFrame();
   const n = Math.max(1, items.length);
   // momento de aparición de cada ítem: `at` clavado al ms del avatar; si no, reparto parejo
@@ -97,7 +98,7 @@ export const AvatarPizarra: React.FC<{
       {/* AVATAR a la derecha — CONSTANTE (no participa del crossfade) */}
       {avatar && (
         <div style={{ position: "absolute", right: 30, top: 40, width: AV_W, height: 1000, borderRadius: 28, overflow: "hidden", boxShadow: "0 30px 90px rgba(0,0,0,0.5)", border: "1px solid rgba(255,255,255,0.08)" }}>
-          <OffthreadVideo src={staticFile(avatar)} trimBefore={avatarFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          <OffthreadVideo src={staticFile(avatar)} trimBefore={avatarFrom} muted style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: objectPos }} />
         </div>
       )}
     </AbsoluteFill>
