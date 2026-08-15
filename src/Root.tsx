@@ -84,6 +84,7 @@ import { MainCalor, TOTAL_FRAMES_CALOR } from "./VideoEdit/Main_calor";
 import { MainCarne, TOTAL_FRAMES_CARNE } from "./VideoEdit/Main_carne";
 import { MainHerbs, TOTAL_FRAMES_HERBS } from "./VideoEdit/Main_herbs";
 import { MainOnions, TOTAL_FRAMES_ONIONS } from "./VideoEdit/Main_onions";
+import { MainTomatoes, TOTAL_FRAMES_TOMATOES } from "./VideoEdit/Main_tomatoes";
 import { MainMolino, TOTAL_FRAMES_MOLINO } from "./VideoEdit/Main_molino";
 import { MainLeche, TOTAL_FRAMES_LECHE } from "./VideoEdit/Main_leche";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
@@ -307,6 +308,7 @@ export const RemotionRoot: React.FC = () => {
       {/* VIDEO ACTIVO — Keep fresh herbs a whole year, no fridge (Claudio · Amish Off-Grid EN) */}
       <Composition id="Herbs" component={MainHerbs} durationInFrames={TOTAL_FRAMES_HERBS} fps={30} width={1920} height={1080} />
       <Composition id="Onions" component={MainOnions} durationInFrames={TOTAL_FRAMES_ONIONS} fps={30} width={1920} height={1080} />
+      <Composition id="Tomatoes" component={MainTomatoes} durationInFrames={TOTAL_FRAMES_TOMATOES} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Keep food cold with no fridge / zeer pot (Claudio · off-grid EN) */}
       <Composition
         id="Zeer"
