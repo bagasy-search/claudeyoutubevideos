@@ -85,6 +85,9 @@ import { MainCarne, TOTAL_FRAMES_CARNE } from "./VideoEdit/Main_carne";
 import { MainHerbs, TOTAL_FRAMES_HERBS } from "./VideoEdit/Main_herbs";
 import { MainOnions, TOTAL_FRAMES_ONIONS } from "./VideoEdit/Main_onions";
 import { MainTomatoes, TOTAL_FRAMES_TOMATOES } from "./VideoEdit/Main_tomatoes";
+import { MainMeat, TOTAL_FRAMES_MEAT } from "./VideoEdit/Main_meat";
+import { MainMeatyears, TOTAL_FRAMES_MEATYEARS } from "./VideoEdit/Main_meatyears";
+import { MainAmishpantry, TOTAL_FRAMES_AMISHPANTRY } from "./VideoEdit/Main_amishpantry";
 import { MainMolino, TOTAL_FRAMES_MOLINO } from "./VideoEdit/Main_molino";
 import { MainLeche, TOTAL_FRAMES_LECHE } from "./VideoEdit/Main_leche";
 import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
@@ -309,6 +312,9 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Herbs" component={MainHerbs} durationInFrames={TOTAL_FRAMES_HERBS} fps={30} width={1920} height={1080} />
       <Composition id="Onions" component={MainOnions} durationInFrames={TOTAL_FRAMES_ONIONS} fps={30} width={1920} height={1080} />
       <Composition id="Tomatoes" component={MainTomatoes} durationInFrames={TOTAL_FRAMES_TOMATOES} fps={30} width={1920} height={1080} />
+      <Composition id="Meat" component={MainMeat} durationInFrames={TOTAL_FRAMES_MEAT} fps={30} width={1920} height={1080} />
+      <Composition id="Meatyears" component={MainMeatyears} durationInFrames={TOTAL_FRAMES_MEATYEARS} fps={30} width={1920} height={1080} />
+      <Composition id="Amishpantry" component={MainAmishpantry} durationInFrames={TOTAL_FRAMES_AMISHPANTRY} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Keep food cold with no fridge / zeer pot (Claudio · off-grid EN) */}
       <Composition
         id="Zeer"

@@ -1,0 +1,2164 @@
+{
+  "video": "meat",
+  "avatar": "meat_opt.mp4",
+  "clipsfirst": true,
+  "beats": [
+    {
+      "id": "mt_h_smoke",
+      "start": 1.8,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/meat/mt_h_smoke.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_smoke",
+        "prompt": "interior of a dim rustic Amish smokehouse with whole cured hams and dark strips of meat hanging on strings in the cool dark, thin blue woodsmoke, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_biltong",
+      "start": 4.4,
+      "dur": 2.7,
+      "kind": "raw",
+      "src": "img/meat/mt_h_biltong.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_biltong",
+        "prompt": "extreme macro of dark red-brown air-dried beef biltong strips hanging on a wire, rich and dense, dim warm light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_impact",
+      "start": 6.6,
+      "dur": 4.6,
+      "kind": "impact",
+      "image": "img/meat/mt_h_biltong.png",
+      "setup": "Hung since last winter.",
+      "impact": "Still good.",
+      "impactAccent": "good",
+      "hitAt": 2,
+      "boom": 0,
+      "darken": 0.42
+    },
+    {
+      "id": "mt_h_hams",
+      "start": 11.2,
+      "dur": 3.3,
+      "kind": "raw",
+      "src": "img/meat/mt_h_hams.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_hams",
+        "prompt": "rows of whole salt-cured hams and slabs of bacon hanging from hooks in a dark smoke shed, dim shaft of light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_key1",
+      "start": 14,
+      "dur": 3.8,
+      "kind": "keyphrase",
+      "text": "A whole year.",
+      "src": "img/meat/mt_h_key1.png",
+      "accent": "good",
+      "fontSize": 108,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_key1",
+        "prompt": "a single cured ham glowing on a hook in a dim smokehouse, warm shaft of light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_salt",
+      "start": 17.8,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/meat/mt_h_salt.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_salt",
+        "prompt": "weathered hands rubbing coarse white salt heavy onto a raw slab of pork belly on a wooden board, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_hang",
+      "start": 20.4,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/meat/mt_h_hang.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_hang",
+        "prompt": "dark strips of raw salted beef hung to dry on a wire in cool moving air, dim airy room, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_key2",
+      "start": 23,
+      "dur": 3.8,
+      "kind": "keyphrase",
+      "text": "No fridge. No freezer.",
+      "src": "img/meat/mt_h_key2.png",
+      "accent": "cold",
+      "fontSize": 96,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_key2",
+        "prompt": "a rustic Amish kitchen with no refrigerator, cured meat hanging in a cool pantry, dim window light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_freezer",
+      "start": 26.8,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "img/meat/mt_h_freezer.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_freezer",
+        "prompt": "a chest freezer full of meat with the power out in a dark blackout, condensation, spoiling, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_hog",
+      "start": 29.8,
+      "dur": 4.5,
+      "kind": "raw",
+      "src": "img/meat/mt_h_hog.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_hog",
+        "prompt": "vintage sepia photograph of an Amish family on hog-killing day in late fall, crocks of salt, hanging meat, nostalgic, film grain, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_spice",
+      "start": 33.8,
+      "dur": 3.5,
+      "kind": "raw",
+      "src": "img/meat/mt_h_spice.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_spice",
+        "prompt": "coarse salt, cracked black pepper and toasted coriander seed pressed onto raw beef strips on a wooden board, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_key3",
+      "start": 36.8,
+      "dur": 4,
+      "kind": "keyphrase",
+      "text": "Better than jerky.",
+      "src": "img/meat/mt_h_key3.png",
+      "accent": "good",
+      "fontSize": 100,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_key3",
+        "prompt": "a hand holding up a dark rich strip of air-dried biltong, tender and beefy, dim warm light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_shelf",
+      "start": 40.8,
+      "dur": 3.9,
+      "kind": "raw",
+      "src": "img/meat/mt_h_shelf.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_shelf",
+        "prompt": "a cool dark cellar with cured hams and crocks of salt pork and hanging dried meat, warm documentary light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "mt_h_take",
+      "start": 44.2,
+      "dur": 4.3,
+      "kind": "raw",
+      "src": "img/meat/mt_h_take.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/mt_h_take",
+        "prompt": "weathered hands taking a dark strip of cured meat down off a string in a dim smokehouse, warm light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_19",
+      "start": 61.11,
+      "dur": 4.86,
+      "kind": "raw",
+      "src": "img/meat/s_19.png",
+      "darken": 0
+    },
+    {
+      "id": "s_20",
+      "start": 65.47,
+      "dur": 6.24,
+      "kind": "raw",
+      "src": "img/meat/s_20.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_20",
+        "prompt": "dried herbs onions root cellar ambient, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_21",
+      "start": 71.21,
+      "dur": 6.18,
+      "kind": "raw",
+      "src": "broll/meat/s_21.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_23",
+      "start": 76.89,
+      "dur": 4.54,
+      "kind": "raw",
+      "src": "img/meat/s_23.png",
+      "darken": 0
+    },
+    {
+      "id": "s_24",
+      "start": 80.93,
+      "dur": 4.98,
+      "kind": "raw",
+      "src": "img/meat/s_24.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_24",
+        "prompt": "raw chicken left kitchen counter sunlight, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_25",
+      "start": 85.41,
+      "dur": 4.82,
+      "kind": "raw",
+      "src": "broll/meat/s_25.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_methods",
+      "start": 89.73,
+      "dur": 10.67,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Three ways to keep meat a year",
+      "items": [
+        "Salt — cure it hard and cold",
+        "Smoke — hang it in the smokehouse",
+        "Air-dry — biltong, better than jerky",
+        "Bonus: potted under a cap of fat"
+      ]
+    },
+    {
+      "id": "s_28",
+      "start": 100.4,
+      "dur": 4.88,
+      "kind": "raw",
+      "src": "img/meat/s_28.png",
+      "darken": 0
+    },
+    {
+      "id": "s_29",
+      "start": 104.78,
+      "dur": 4.64,
+      "kind": "raw",
+      "src": "img/meat/s_29.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_29",
+        "prompt": "vintage sepia hog killing day farm family, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_neverbought",
+      "start": 108.92,
+      "dur": 7.88,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 0,
+      "suffix": "",
+      "label": "meat my great-grandparents ever refrigerated — they cured a whole winter, no plug in the wall",
+      "eyebrow": "The old way"
+    },
+    {
+      "id": "s_32",
+      "start": 116.8,
+      "dur": 5.32,
+      "kind": "raw",
+      "src": "broll/meat/s_32.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_33",
+      "start": 121.62,
+      "dur": 4.47,
+      "kind": "raw",
+      "src": "img/meat/s_33.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_changeform",
+      "start": 125.59,
+      "dur": 7.58,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Change its form",
+      "eyebrow": "The whole trick",
+      "caption": "you don't keep meat fresh — nobody can. You turn it into a thing the rot can't live in",
+      "image": "img/meat/cmp_changeform_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_changeform_bg",
+        "prompt": "weathered hands packing a slab of pork in coarse salt in a wooden crock, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_36",
+      "start": 133.17,
+      "dur": 6.02,
+      "kind": "raw",
+      "src": "img/meat/s_36.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_36",
+        "prompt": "raw fresh meat cutting board close, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_38",
+      "start": 138.69,
+      "dur": 6.24,
+      "kind": "raw",
+      "src": "img/meat/s_38.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_38",
+        "prompt": "vintage grandmother salting meat sepia portrait, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_enemy3",
+      "start": 144.43,
+      "dur": 12.77,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Starve any one of these",
+      "chips": [
+        "water",
+        "warmth",
+        "time"
+      ],
+      "image": "img/meat/cmp_enemy3_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_enemy3_bg",
+        "prompt": "raw meat in cool dim light, macro, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_enemy",
+      "start": 157.2,
+      "dur": 11.78,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "Water · Warmth · Time",
+      "eyebrow": "The enemy",
+      "caption": "meat doesn't die of old age — it rots. Starve the rot of even one of these and it keeps",
+      "image": "img/meat/cmp_enemy_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_enemy_bg",
+        "prompt": "macro of raw meat with tiny life, cool dim light, ominous, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_45",
+      "start": 168.98,
+      "dur": 9.21,
+      "kind": "raw",
+      "src": "img/meat/s_45.png",
+      "darken": 0
+    },
+    {
+      "id": "s_47",
+      "start": 177.69,
+      "dur": 4.71,
+      "kind": "raw",
+      "src": "broll/meat/s_47.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_saltpulls",
+      "start": 181.9,
+      "dur": 11.15,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Salt is thirsty",
+      "eyebrow": "Why it all works",
+      "caption": "salt pulls the water right out of the flesh and poisons the well besides — no water, no rot",
+      "image": "img/meat/cmp_saltpulls_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_saltpulls_bg",
+        "prompt": "coarse white salt drawing moisture from a piece of raw meat, macro, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_50",
+      "start": 193.05,
+      "dur": 7.35,
+      "kind": "raw",
+      "src": "img/meat/s_50.png",
+      "darken": 0
+    },
+    {
+      "id": "s_52",
+      "start": 199.9,
+      "dur": 5.34,
+      "kind": "raw",
+      "src": "img/meat/s_52.png",
+      "darken": 0
+    },
+    {
+      "id": "s_53",
+      "start": 204.74,
+      "dur": 5.39,
+      "kind": "raw",
+      "src": "img/meat/s_53.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_salt",
+      "start": 209.63,
+      "dur": 8.69,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The salt cure",
+      "eyebrow": "The foundation",
+      "items": [
+        {
+          "text": "Rub it heavy, all over, with coarse salt",
+          "state": "done"
+        },
+        {
+          "text": "Pack it in a crock, skin down",
+          "state": "done"
+        },
+        {
+          "text": "Keep it cold — cellar-cool, not frozen",
+          "state": "done"
+        },
+        {
+          "text": "About a week per two pounds thick",
+          "state": "done"
+        }
+      ],
+      "image": "img/meat/cmp_salt_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_salt_bg",
+        "prompt": "hands rubbing coarse salt onto a ham, packed in a stoneware crock, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_56",
+      "start": 218.32,
+      "dur": 7.09,
+      "kind": "raw",
+      "src": "img/meat/s_56.png",
+      "darken": 0
+    },
+    {
+      "id": "s_57",
+      "start": 224.91,
+      "dur": 4.15,
+      "kind": "raw",
+      "src": "img/meat/s_57.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_crock",
+      "start": 228.56,
+      "dur": 7.27,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Skin side down",
+      "eyebrow": "Packing the crock",
+      "caption": "lay it in a stoneware crock or a wooden box, cover it over in salt, and set it somewhere cellar-cold",
+      "image": "img/meat/cmp_crock_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_crock_bg",
+        "prompt": "a slab of pork packed skin-down in coarse salt in a stoneware crock, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_59",
+      "start": 235.83,
+      "dur": 7.05,
+      "kind": "raw",
+      "src": "img/meat/s_59.png",
+      "darken": 0
+    },
+    {
+      "id": "s_61",
+      "start": 242.38,
+      "dur": 6,
+      "kind": "raw",
+      "src": "broll/meat/s_61.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_drywet",
+      "start": 247.88,
+      "dur": 9.48,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "Two ways with salt",
+      "items": [
+        "Dry cure — ham, bacon, salt pork",
+        "Wet cure — a strong cold brine",
+        "Brine gives you corned beef",
+        "Both drive the water out"
+      ]
+    },
+    {
+      "id": "s_64",
+      "start": 257.36,
+      "dur": 8.2,
+      "kind": "raw",
+      "src": "broll/meat/s_64.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_66",
+      "start": 265.06,
+      "dur": 6.01,
+      "kind": "raw",
+      "src": "img/meat/s_66.png",
+      "darken": 0
+    },
+    {
+      "id": "s_67",
+      "start": 270.57,
+      "dur": 4.23,
+      "kind": "raw",
+      "src": "img/meat/s_67.png",
+      "darken": 0
+    },
+    {
+      "id": "s_68",
+      "start": 274.3,
+      "dur": 7.23,
+      "kind": "raw",
+      "src": "img/meat/s_68.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_68",
+        "prompt": "cured meat resting in cold cellar, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_69",
+      "start": 281.03,
+      "dur": 5.67,
+      "kind": "raw",
+      "src": "broll/meat/s_69.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_saltpork",
+      "start": 286.2,
+      "dur": 7.53,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 1,
+      "suffix": " year+",
+      "label": "a barrel of salt pork was survival — it flavored a whole winter of beans and greens",
+      "eyebrow": "Salt pork"
+    },
+    {
+      "id": "s_72",
+      "start": 293.73,
+      "dur": 6.7,
+      "kind": "raw",
+      "src": "broll/meat/s_72.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_saltjobs",
+      "start": 299.93,
+      "dur": 12.29,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "What the salt does",
+      "items": [
+        "Draws the water out through the flesh",
+        "Soaks in and takes the water's place",
+        "Makes the place too harsh for rot",
+        "Your country ham, your salt pork"
+      ]
+    },
+    {
+      "id": "s_76",
+      "start": 312.22,
+      "dur": 6.17,
+      "kind": "raw",
+      "src": "broll/meat/s_76.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_thickness",
+      "start": 317.89,
+      "dur": 9.88,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 7,
+      "suffix": " days / 2 lb",
+      "label": "the old rule of thumb for how long the salt needs to reach the middle",
+      "eyebrow": "Dry cure"
+    },
+    {
+      "id": "s_79",
+      "start": 327.77,
+      "dur": 6.46,
+      "kind": "raw",
+      "src": "broll/meat/s_79.mp4",
+      "darken": 0
+    },
+    {
+      "id": "s_80",
+      "start": 333.73,
+      "dur": 4.65,
+      "kind": "raw",
+      "src": "img/meat/s_80.png",
+      "darken": 0
+    },
+    {
+      "id": "s_81",
+      "start": 337.88,
+      "dur": 4.7,
+      "kind": "raw",
+      "src": "img/meat/s_81.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_81",
+        "prompt": "elderly amish man leaning in to camera, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_curingsalt",
+      "start": 342.08,
+      "dur": 9.94,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "The one honest catch",
+      "title": "Use the curing salt",
+      "desc": "For long, low-air cures eaten uncooked — hams, bacon, dry sausage — use pink curing salt (a little nitrite), the exact small amount. It's your seatbelt against the poison you can't see. Don't skip it.",
+      "image": "img/meat/cmp_curingsalt_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_curingsalt_bg",
+        "prompt": "a small dish of pink curing salt beside coarse white salt on a board, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_84",
+      "start": 352.02,
+      "dur": 5.41,
+      "kind": "raw",
+      "src": "img/meat/s_84.png",
+      "darken": 0
+    },
+    {
+      "id": "s_85",
+      "start": 356.93,
+      "dur": 5.53,
+      "kind": "raw",
+      "src": "img/meat/s_85.png",
+      "darken": 0
+    },
+    {
+      "id": "s_86",
+      "start": 361.96,
+      "dur": 4.26,
+      "kind": "raw",
+      "src": "img/meat/s_86.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_country",
+      "start": 365.72,
+      "dur": 9.95,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 6,
+      "suffix": " months+",
+      "label": "how long a firm, dry, salt-cured country ham keeps hung in the cold and the dark",
+      "eyebrow": "The country ham"
+    },
+    {
+      "id": "s_89",
+      "start": 375.67,
+      "dur": 5.49,
+      "kind": "raw",
+      "src": "img/meat/s_89.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_saltwins",
+      "start": 380.66,
+      "dur": 11.01,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Why salt is the mother method",
+      "items": [
+        "Pulls the water out, deep",
+        "Takes the water's place in the flesh",
+        "Rot gets no foothold",
+        "Every other method sits on top of it"
+      ]
+    },
+    {
+      "id": "s_92",
+      "start": 391.67,
+      "dur": 8.83,
+      "kind": "raw",
+      "src": "img/meat/s_92.png",
+      "darken": 0
+    },
+    {
+      "id": "s_94",
+      "start": 400,
+      "dur": 4.19,
+      "kind": "raw",
+      "src": "img/meat/s_94.png",
+      "darken": 0
+    },
+    {
+      "id": "s_95",
+      "start": 403.69,
+      "dur": 8.89,
+      "kind": "raw",
+      "src": "img/meat/s_95.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_95",
+        "prompt": "elderly amish man nodding calmly, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_97",
+      "start": 412.08,
+      "dur": 6.45,
+      "kind": "raw",
+      "src": "img/meat/s_97.png",
+      "darken": 0
+    },
+    {
+      "id": "s_99",
+      "start": 418.03,
+      "dur": 6.67,
+      "kind": "raw",
+      "src": "img/meat/s_99.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_smoke",
+      "start": 424.2,
+      "dur": 11.08,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "Smoke — salt's partner",
+      "eyebrow": "Salt first, always",
+      "items": [
+        {
+          "text": "Salt it first to pull the water",
+          "state": "done"
+        },
+        {
+          "text": "Hang it in cool woodsmoke, days",
+          "state": "done"
+        },
+        {
+          "text": "The smoke dries the skin hard",
+          "state": "done"
+        },
+        {
+          "text": "A salted, cold-smoked ham hangs near a year",
+          "state": "done"
+        }
+      ],
+      "image": "img/meat/cmp_smoke_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_smoke_bg",
+        "prompt": "cool woodsmoke rising around hams hanging in a dim smoke shed, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_102",
+      "start": 435.28,
+      "dur": 9.51,
+      "kind": "raw",
+      "src": "img/meat/s_102.png",
+      "darken": 0
+    },
+    {
+      "id": "s_104",
+      "start": 444.29,
+      "dur": 4.13,
+      "kind": "raw",
+      "src": "img/meat/s_104.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_smokewhat",
+      "start": 447.92,
+      "dur": 7.43,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "What goes in the smoke",
+      "chips": [
+        "hams",
+        "bacon",
+        "sausage",
+        "fish"
+      ],
+      "image": "img/meat/cmp_smokewhat_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_smokewhat_bg",
+        "prompt": "hams, bacon and sausage hanging together in a dim smoke shed, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_107",
+      "start": 455.35,
+      "dur": 4.67,
+      "kind": "raw",
+      "src": "img/meat/s_107.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_107",
+        "prompt": "ham hanging in cold wood smoke, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_108",
+      "start": 459.52,
+      "dur": 5.07,
+      "kind": "raw",
+      "src": "img/meat/s_108.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_108",
+        "prompt": "cured ham hanging in cold smokehouse, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_coldhot",
+      "start": 464.09,
+      "dur": 11.69,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "Cold smoke vs hot smoke",
+      "eyebrow": "Know the difference",
+      "bars": [
+        {
+          "label": "Cold smoke — keeps it",
+          "value": 365,
+          "display": "hangs a year",
+          "winner": true
+        },
+        {
+          "label": "Hot smoke — eat it that week",
+          "value": 7,
+          "display": "cooked, spoils"
+        }
+      ]
+    },
+    {
+      "id": "s_112",
+      "start": 475.78,
+      "dur": 4.64,
+      "kind": "raw",
+      "src": "img/meat/s_112.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_smokekeep",
+      "start": 479.92,
+      "dur": 9.61,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 1,
+      "suffix": " year",
+      "label": "how long a salted, cold-smoked ham hangs in the cold and stays good",
+      "eyebrow": "Salt + smoke"
+    },
+    {
+      "id": "s_116",
+      "start": 489.53,
+      "dur": 9.81,
+      "kind": "raw",
+      "src": "img/meat/s_116.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_smokedoes",
+      "start": 498.84,
+      "dur": 8.01,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "Smoke does three things",
+      "items": [
+        "Dries the surface into a hard skin",
+        "Lays on its own preserving coat",
+        "That deep dark flavor nothing else gives",
+        "Then hang it in the cold"
+      ]
+    },
+    {
+      "id": "s_120",
+      "start": 506.85,
+      "dur": 6.17,
+      "kind": "raw",
+      "src": "img/meat/s_120.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_smokemistake",
+      "start": 512.52,
+      "dur": 10.98,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "Keep it cool",
+      "title": "Cook it and it's not a keeper",
+      "desc": "Let the fire run hot and you've cooked the meat — and cooked meat spoils like cooked meat. Keep the smoke cool, the fire set far off, and it just dries and takes the smoke.",
+      "image": "img/meat/cmp_smokemistake_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_smokemistake_bg",
+        "prompt": "a low fire pit set well away from a smoke shed, thin cool smoke drawn in, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_shed",
+      "start": 523.5,
+      "dur": 6.22,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "A humble shed",
+      "eyebrow": "It needn't be grand",
+      "caption": "an old barrel, a scrap-wood box, a board shed no bigger than an outhouse — with the fire set far off",
+      "image": "img/meat/cmp_shed_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_shed_bg",
+        "prompt": "a tiny weathered board smokehouse shed with a fire pit outside, dim light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_124",
+      "start": 529.72,
+      "dur": 7.53,
+      "kind": "raw",
+      "src": "img/meat/s_124.png",
+      "darken": 0
+    },
+    {
+      "id": "s_125",
+      "start": 536.75,
+      "dur": 4.34,
+      "kind": "raw",
+      "src": "img/meat/s_125.png",
+      "darken": 0
+    },
+    {
+      "id": "s_126",
+      "start": 540.59,
+      "dur": 7.43,
+      "kind": "raw",
+      "src": "img/meat/s_126.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_126",
+        "prompt": "coarse salt packed on cured ham crock, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_127",
+      "start": 547.52,
+      "dur": 5.99,
+      "kind": "raw",
+      "src": "img/meat/s_127.png",
+      "darken": 0
+    },
+    {
+      "id": "s_128",
+      "start": 553.01,
+      "dur": 6.2,
+      "kind": "raw",
+      "src": "img/meat/s_128.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_biltong",
+      "start": 558.71,
+      "dur": 7.6,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "Biltong — the one you came for",
+      "eyebrow": "No smoke, no heat, never cooked",
+      "items": [
+        {
+          "text": "Lean beef sliced along the grain",
+          "state": "done"
+        },
+        {
+          "text": "Douse in vinegar, salt it heavy",
+          "state": "done"
+        },
+        {
+          "text": "Coarse salt, black pepper, coriander",
+          "state": "done"
+        },
+        {
+          "text": "Hang in cool moving air, a few days",
+          "state": "done"
+        }
+      ],
+      "image": "img/meat/cmp_biltong_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_biltong_bg",
+        "prompt": "raw beef strips doused in vinegar and coated in coarse salt and pepper on a board, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_131",
+      "start": 566.31,
+      "dur": 7.79,
+      "kind": "raw",
+      "src": "img/meat/s_131.png",
+      "darken": 0
+    },
+    {
+      "id": "s_132",
+      "start": 573.6,
+      "dur": 6.66,
+      "kind": "raw",
+      "src": "img/meat/s_132.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_biltongspice",
+      "start": 579.76,
+      "dur": 10.56,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "The old biltong cure",
+      "chips": [
+        "coarse salt",
+        "brown vinegar",
+        "black pepper",
+        "coriander"
+      ],
+      "image": "img/meat/cmp_biltongspice_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_biltongspice_bg",
+        "prompt": "coarse salt, brown vinegar, cracked pepper and coriander seed beside raw beef strips, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_136",
+      "start": 590.32,
+      "dur": 5.23,
+      "kind": "raw",
+      "src": "img/meat/s_136.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_vsjerky",
+      "start": 595.05,
+      "dur": 7.23,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "Biltong vs jerky",
+      "eyebrow": "It's not close",
+      "bars": [
+        {
+          "label": "Store jerky — cooked hard",
+          "value": 1,
+          "display": "a salty board"
+        },
+        {
+          "label": "Biltong — cured raw, air-dried",
+          "value": 3,
+          "display": "rich & tender",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "s_138",
+      "start": 602.28,
+      "dur": 7.74,
+      "kind": "raw",
+      "src": "img/meat/s_138.png",
+      "darken": 0
+    },
+    {
+      "id": "s_139",
+      "start": 609.52,
+      "dur": 6.26,
+      "kind": "raw",
+      "src": "img/meat/s_139.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_biltongsteps",
+      "start": 615.28,
+      "dur": 6.4,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "The whole of biltong",
+      "items": [
+        "Vinegar, coarse salt, pepper, coriander",
+        "Sit a few hours, turn it once",
+        "Hang in cool moving air — never sun",
+        "Dry it through to keep it long"
+      ]
+    },
+    {
+      "id": "s_142",
+      "start": 621.68,
+      "dur": 7.46,
+      "kind": "raw",
+      "src": "img/meat/s_142.png",
+      "darken": 0
+    },
+    {
+      "id": "s_143",
+      "start": 628.64,
+      "dur": 5.31,
+      "kind": "raw",
+      "src": "img/meat/s_143.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_biltongwhy",
+      "start": 633.45,
+      "dur": 9.59,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Never cooked",
+      "eyebrow": "Why it works",
+      "caption": "salt pulls the water and sets the meat; the vinegar sours the surface so nothing can grow on it",
+      "image": "img/meat/cmp_biltongwhy_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_biltongwhy_bg",
+        "prompt": "dark biltong strips hanging on a wire in cool moving air, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_146",
+      "start": 643.04,
+      "dur": 4.55,
+      "kind": "raw",
+      "src": "img/meat/s_146.png",
+      "darken": 0
+    },
+    {
+      "id": "s_147",
+      "start": 647.09,
+      "dur": 5.7,
+      "kind": "raw",
+      "src": "img/meat/s_147.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_147",
+        "prompt": "coarse salt crystals drawing moisture beef surface, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_148",
+      "start": 652.29,
+      "dur": 4.34,
+      "kind": "raw",
+      "src": "img/meat/s_148.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_biltongair",
+      "start": 656.13,
+      "dur": 13.91,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "Cool moving air — never sun",
+      "eyebrow": "Where it hangs",
+      "caption": "a spare room, a pantry, a porch out of the weather with a little fan to stir the air — three days to a week",
+      "image": "img/meat/cmp_biltongair_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_biltongair_bg",
+        "prompt": "dark beef strips hanging on a wire with a small fan stirring the cool air, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_biltongkeep",
+      "start": 670.04,
+      "dur": 7.36,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 2,
+      "suffix": " months+",
+      "label": "how long biltong keeps in a cloth bag or jar, cool and dry, dried through",
+      "eyebrow": "The air-dried"
+    },
+    {
+      "id": "s_153",
+      "start": 677.4,
+      "dur": 5.34,
+      "kind": "raw",
+      "src": "img/meat/s_153.png",
+      "darken": 0
+    },
+    {
+      "id": "s_154",
+      "start": 682.24,
+      "dur": 5.51,
+      "kind": "raw",
+      "src": "img/meat/s_154.png",
+      "darken": 0
+    },
+    {
+      "id": "s_155",
+      "start": 687.25,
+      "dur": 4.77,
+      "kind": "raw",
+      "src": "img/meat/s_155.png",
+      "darken": 0
+    },
+    {
+      "id": "s_156",
+      "start": 691.52,
+      "dur": 7.72,
+      "kind": "raw",
+      "src": "img/meat/s_156.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_156",
+        "prompt": "biltong strips stored cloth bag shelf, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_notclose",
+      "start": 698.74,
+      "dur": 8.71,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Better than jerky",
+      "items": [
+        "Never cooked — stays rich and beefy",
+        "Tender enough to bite clean through",
+        "A cheap cut, vinegar, and patience",
+        "You'll never buy a bag again"
+      ]
+    },
+    {
+      "id": "s_159",
+      "start": 707.45,
+      "dur": 6.59,
+      "kind": "raw",
+      "src": "img/meat/s_159.png",
+      "darken": 0
+    },
+    {
+      "id": "s_160",
+      "start": 713.54,
+      "dur": 4.29,
+      "kind": "raw",
+      "src": "img/meat/s_160.png",
+      "darken": 0
+    },
+    {
+      "id": "s_161",
+      "start": 717.33,
+      "dur": 6.69,
+      "kind": "raw",
+      "src": "img/meat/s_161.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_161",
+        "prompt": "gas station jerky bag next to biltong strips, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_162",
+      "start": 723.52,
+      "dur": 4.69,
+      "kind": "raw",
+      "src": "img/meat/s_162.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_cut",
+      "start": 727.71,
+      "dur": 9.17,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "Which meat to dry",
+      "eyebrow": "Lean is your friend",
+      "bars": [
+        {
+          "label": "Lean muscle — round, loin",
+          "value": 3,
+          "display": "dries & keeps",
+          "winner": true
+        },
+        {
+          "label": "Marbled fat",
+          "value": 1,
+          "display": "goes rancid"
+        }
+      ]
+    },
+    {
+      "id": "s_165",
+      "start": 736.88,
+      "dur": 4.74,
+      "kind": "raw",
+      "src": "img/meat/s_165.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_165",
+        "prompt": "lean raw beef versus fatty beef cut, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_166",
+      "start": 741.12,
+      "dur": 6.98,
+      "kind": "raw",
+      "src": "img/meat/s_166.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_166",
+        "prompt": "marbled fat raw beef macro close up, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_cutrule",
+      "start": 747.6,
+      "dur": 8.99,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Lean dries · fat protects",
+      "eyebrow": "The whole rule",
+      "caption": "trim the fat for the air-dried and the long-hung; leave it on the ham where salt and smoke guard it",
+      "image": "img/meat/cmp_cutrule_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_cutrule_bg",
+        "prompt": "a lean trimmed cut of beef beside a fatty salted ham on a board, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_trimfat",
+      "start": 756.59,
+      "dur": 10.23,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "Trim the fat",
+      "eyebrow": "For the long keepers",
+      "caption": "fat doesn't dry and it turns rancid over the months — dry your lean, and let the salt and smoke protect the ham",
+      "image": "img/meat/cmp_trimfat_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_trimfat_bg",
+        "prompt": "trimming the outer fat off a lean cut of beef with a knife, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_lean",
+      "start": 766.82,
+      "dur": 11.62,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Best cuts to air-dry",
+      "chips": [
+        "beef round",
+        "loin",
+        "trimmed lean",
+        "silverside"
+      ],
+      "image": "img/meat/cmp_lean_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_lean_bg",
+        "prompt": "lean cuts of beef with the outside fat trimmed off on a wooden board, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_176",
+      "start": 778.44,
+      "dur": 5.04,
+      "kind": "raw",
+      "src": "img/meat/s_176.png",
+      "darken": 0
+    },
+    {
+      "id": "s_177",
+      "start": 782.98,
+      "dur": 4.56,
+      "kind": "raw",
+      "src": "img/meat/s_177.png",
+      "darken": 0,
+      "gen": {
+        "type": "image",
+        "name": "meat/s_177",
+        "prompt": "thin woodsmoke rising cold smokehouse, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_178",
+      "start": 787.04,
+      "dur": 5.14,
+      "kind": "raw",
+      "src": "broll/meat/s_178.mp4",
+      "darken": 0
+    },
+    {
+      "id": "cmp_temp",
+      "start": 791.68,
+      "dur": 8.32,
+      "kind": "callout",
+      "hue": "cold",
+      "accent": "good",
+      "figure": "Cool · Dry · Moving air",
+      "eyebrow": "The quiet thing",
+      "caption": "cure and dry in the cool — the old-timers butchered in late fall, when the world turned into a free walk-in cooler",
+      "image": "img/meat/cmp_temp_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_temp_bg",
+        "prompt": "cool late-autumn farm light, meat drying in a cold airy shed, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_181",
+      "start": 800,
+      "dur": 5.71,
+      "kind": "raw",
+      "src": "img/meat/s_181.png",
+      "darken": 0
+    },
+    {
+      "id": "s_182",
+      "start": 805.21,
+      "dur": 7.98,
+      "kind": "raw",
+      "src": "img/meat/s_182.png",
+      "darken": 0
+    },
+    {
+      "id": "s_183",
+      "start": 812.69,
+      "dur": 9.05,
+      "kind": "raw",
+      "src": "img/meat/s_183.png",
+      "darken": 0
+    },
+    {
+      "id": "s_185",
+      "start": 821.24,
+      "dur": 9.21,
+      "kind": "raw",
+      "src": "img/meat/s_185.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_confit",
+      "start": 829.95,
+      "dur": 13.25,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "Potting — sealed under fat",
+      "eyebrow": "The old bonus method",
+      "items": [
+        {
+          "text": "Cook the meat slow in its own fat",
+          "state": "done"
+        },
+        {
+          "text": "Pack it down into a crock",
+          "state": "done"
+        },
+        {
+          "text": "Pour fat over till it's drowned and sealed",
+          "state": "done"
+        },
+        {
+          "text": "Cool cellar — it keeps for months",
+          "state": "done"
+        }
+      ],
+      "image": "img/meat/cmp_confit_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_confit_bg",
+        "prompt": "cooked meat packed in a stoneware crock sealed under a solid cap of white lard, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_189",
+      "start": 843.2,
+      "dur": 6.31,
+      "kind": "raw",
+      "src": "img/meat/s_189.png",
+      "darken": 0
+    },
+    {
+      "id": "cmp_lawoffat",
+      "start": 849.01,
+      "dur": 7.72,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "Same old law, dressed up in lard",
+      "items": [
+        "Fat sealed tight keeps air away",
+        "No air means no spoiling",
+        "Cut down, take what you need",
+        "Smooth the fat back, it holds"
+      ]
+    },
+    {
+      "id": "s_192",
+      "start": 856.73,
+      "dur": 6.62,
+      "kind": "raw",
+      "src": "img/meat/s_192.png",
+      "darken": 0
+    },
+    {
+      "id": "s_193",
+      "start": 862.85,
+      "dur": 6,
+      "kind": "raw",
+      "src": "img/meat/s_193.png",
+      "darken": 0
+    },
+    {
+      "id": "s_194",
+      "start": 868.35,
+      "dur": 0.55,
+      "kind": "raw",
+      "src": "img/meat/s_194.png",
+      "darken": 0
+    },
+    {
+      "id": "s_201",
+      "start": 905.04,
+      "dur": 4.83,
+      "kind": "raw",
+      "src": "img/meat/s_201.png",
+      "darken": 0
+    },
+    {
+      "id": "s_202",
+      "start": 909.37,
+      "dur": 5.74,
+      "kind": "raw",
+      "src": "broll/meat/s_202.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_203",
+      "start": 914.61,
+      "dur": 10.12,
+      "kind": "raw",
+      "src": "broll/meat/s_203.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_205",
+      "start": 924.23,
+      "dur": 6.4,
+      "kind": "raw",
+      "src": "broll/meat/s_205.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_206",
+      "start": 930.13,
+      "dur": 5.57,
+      "kind": "raw",
+      "src": "broll/meat/s_206.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_potstat",
+      "start": 935.2,
+      "dur": 7.23,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 3,
+      "suffix": " months+",
+      "label": "how long meat keeps drowned and sealed under a solid cap of fat in a cool cellar",
+      "eyebrow": "Potted / confit"
+    },
+    {
+      "id": "s_208",
+      "start": 942.43,
+      "dur": 6.12,
+      "kind": "raw",
+      "src": "broll/meat/s_208.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_209",
+      "start": 948.05,
+      "dur": 6.93,
+      "kind": "raw",
+      "src": "broll/meat/s_209.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_211",
+      "start": 954.48,
+      "dur": 10.96,
+      "kind": "raw",
+      "src": "broll/meat/s_211.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_safety",
+      "start": 964.94,
+      "dur": 10.2,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The safety rules",
+      "eyebrow": "Keep them and you're safe",
+      "items": [
+        {
+          "text": "Keep it cool — cellar-cool, never summer heat",
+          "state": "done"
+        },
+        {
+          "text": "Enough salt; curing salt for long cures",
+          "state": "done"
+        },
+        {
+          "text": "Keep it clean — hands, crocks, knives",
+          "state": "done"
+        },
+        {
+          "text": "Look and smell before you eat",
+          "state": "done"
+        }
+      ],
+      "image": "img/meat/cmp_safety_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_safety_bg",
+        "prompt": "clean hands, a clean crock and knife beside salted meat, cool light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_215",
+      "start": 975.14,
+      "dur": 4.33,
+      "kind": "raw",
+      "src": "broll/meat/s_215.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_whendoubt",
+      "start": 978.97,
+      "dur": 10.54,
+      "kind": "mistake",
+      "number": "!",
+      "eyebrow": "The rule you never break",
+      "title": "When in doubt, throw it out",
+      "desc": "Slimy, sour, a smell that says no, a fuzzy mold that isn't the good white bloom — you throw it out and don't argue with yourself. A cheap cut is not worth your health.",
+      "image": "img/meat/cmp_whendoubt_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_whendoubt_bg",
+        "prompt": "hands inspecting and smelling a piece of cured meat in dim light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_crossed",
+      "start": 989.51,
+      "dur": 9.71,
+      "kind": "stat",
+      "hue": "amber",
+      "accent": "good",
+      "value": 100,
+      "suffix": "s of yrs",
+      "label": "whole civilizations crossed oceans on salted meat — done right, it's one of the safest foods there is",
+      "eyebrow": "Proven"
+    },
+    {
+      "id": "cmp_bloom",
+      "start": 999.22,
+      "dur": 9.22,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Know the good bloom",
+      "eyebrow": "Look before you eat",
+      "caption": "a cured ham wears a white bloom that belongs; slimy, sour, or a fuzzy wrong mold does not — then out it goes",
+      "image": "img/meat/cmp_bloom_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_bloom_bg",
+        "prompt": "a cured ham with a natural white surface bloom in dim cellar light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_222",
+      "start": 1008.44,
+      "dur": 6.88,
+      "kind": "raw",
+      "src": "broll/meat/s_222.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_224",
+      "start": 1014.82,
+      "dur": 7.6,
+      "kind": "raw",
+      "src": "broll/meat/s_224.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_225",
+      "start": 1021.92,
+      "dur": 5.2,
+      "kind": "raw",
+      "src": "broll/meat/s_225.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_226",
+      "start": 1026.62,
+      "dur": 7.03,
+      "kind": "raw",
+      "src": "broll/meat/s_226.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_seatbelt",
+      "start": 1033.15,
+      "dur": 12.03,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "Wear the seatbelt",
+      "eyebrow": "The curing salt",
+      "caption": "the exact small amount the recipe gives — not less, which isn't safe, not more — against the one poison you can't see",
+      "image": "img/meat/cmp_seatbelt_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_seatbelt_bg",
+        "prompt": "a careful pinch of pink curing salt measured onto a scale, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_231",
+      "start": 1045.18,
+      "dur": 5.05,
+      "kind": "raw",
+      "src": "broll/meat/s_231.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_232",
+      "start": 1049.73,
+      "dur": 4.46,
+      "kind": "raw",
+      "src": "broll/meat/s_232.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_233",
+      "start": 1053.69,
+      "dur": 6.39,
+      "kind": "raw",
+      "src": "broll/meat/s_233.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_freezer",
+      "start": 1059.58,
+      "dur": 11.35,
+      "kind": "callout",
+      "hue": "red",
+      "accent": "danger",
+      "figure": "The freezer owns you",
+      "eyebrow": "When the grid fails",
+      "caption": "three days of ice storm and a whole freezer of meat turns to garbage in the dark — a cured ham doesn't blink",
+      "image": "img/meat/cmp_freezer_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_freezer_bg",
+        "prompt": "a chest freezer of thawing meat in a dark blackout kitchen, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "cmp_blackout",
+      "start": 1070.93,
+      "dur": 7.07,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "Three days without power",
+      "items": [
+        "Freezer — meat thaws and spoils",
+        "Cured ham — hangs on, unbothered",
+        "Biltong — keeps right through",
+        "Salt pork — blinks at nothing"
+      ]
+    },
+    {
+      "id": "s_240",
+      "start": 1078,
+      "dur": 7.96,
+      "kind": "raw",
+      "src": "broll/meat/s_240.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_stakesbars",
+      "start": 1085.46,
+      "dur": 11.08,
+      "kind": "bars",
+      "hue": "amber",
+      "accent": "good",
+      "unit": "",
+      "title": "When the grid goes down",
+      "eyebrow": "Same storm",
+      "bars": [
+        {
+          "label": "Freezer full of meat",
+          "value": 1,
+          "display": "hundreds lost"
+        },
+        {
+          "label": "Smokehouse & crock",
+          "value": 3,
+          "display": "keeps right through",
+          "winner": true
+        }
+      ]
+    },
+    {
+      "id": "s_244",
+      "start": 1096.54,
+      "dur": 7.76,
+      "kind": "raw",
+      "src": "broll/meat/s_244.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_offgrid",
+      "start": 1103.8,
+      "dur": 10.4,
+      "kind": "stat",
+      "hue": "cold",
+      "accent": "good",
+      "value": 0,
+      "suffix": " / month",
+      "label": "what it costs to keep your family's meat off the grid — salt, vinegar, a cool dry corner",
+      "eyebrow": "Real security"
+    },
+    {
+      "id": "s_247",
+      "start": 1114.2,
+      "dur": 4.22,
+      "kind": "raw",
+      "src": "broll/meat/s_247.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_recap",
+      "start": 1117.92,
+      "dur": 9.84,
+      "kind": "checklist",
+      "hue": "good",
+      "accent": "good",
+      "title": "The three ways",
+      "eyebrow": "Do it this fall",
+      "items": [
+        {
+          "text": "Salt it — cure hard, cellar-cool & dark",
+          "state": "done"
+        },
+        {
+          "text": "Smoke it — cold smoke to keep, hot to eat",
+          "state": "done"
+        },
+        {
+          "text": "Air-dry it — biltong, better than jerky",
+          "state": "done"
+        },
+        {
+          "text": "Look & smell before every bite",
+          "state": "done"
+        }
+      ],
+      "image": "img/meat/cmp_recap_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_recap_bg",
+        "prompt": "cured hams, a crock of salt pork and hanging biltong in a cool cellar, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_250",
+      "start": 1127.76,
+      "dur": 8.27,
+      "kind": "raw",
+      "src": "broll/meat/s_250.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_252",
+      "start": 1135.53,
+      "dur": 4.32,
+      "kind": "raw",
+      "src": "broll/meat/s_252.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_253",
+      "start": 1139.35,
+      "dur": 5.28,
+      "kind": "raw",
+      "src": "broll/meat/s_253.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_built",
+      "start": 1144.13,
+      "dur": 8,
+      "kind": "splitlist",
+      "palette": "B",
+      "title": "Look what you've built",
+      "items": [
+        "Seasoning, onions, tomatoes — and meat",
+        "A whole supper in the dead of February",
+        "No store, no freezer, no line from the road",
+        "Out of the seasons, with salt and smoke"
+      ]
+    },
+    {
+      "id": "s_256",
+      "start": 1152.13,
+      "dur": 6.68,
+      "kind": "raw",
+      "src": "broll/meat/s_256.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_258",
+      "start": 1158.31,
+      "dur": 6.27,
+      "kind": "raw",
+      "src": "broll/meat/s_258.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_259",
+      "start": 1164.08,
+      "dur": 5.17,
+      "kind": "raw",
+      "src": "broll/meat/s_259.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_pantry",
+      "start": 1168.75,
+      "dur": 10.68,
+      "kind": "splitlist",
+      "palette": "G",
+      "title": "A pantry on its own two feet",
+      "items": [
+        "Herbs — seasoning every pot",
+        "Onions — the start of every meal",
+        "Tomatoes — August in a jar",
+        "Meat — a whole supper, no freezer"
+      ]
+    },
+    {
+      "id": "s_262",
+      "start": 1179.43,
+      "dur": 8.9,
+      "kind": "raw",
+      "src": "broll/meat/s_262.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_264",
+      "start": 1187.83,
+      "dur": 7.25,
+      "kind": "raw",
+      "src": "broll/meat/s_264.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_recapchips",
+      "start": 1194.58,
+      "dur": 7.05,
+      "kind": "chips",
+      "hue": "amber",
+      "title": "Put up your meat this fall",
+      "chips": [
+        "salt",
+        "smoke",
+        "air-dry",
+        "pot it in fat"
+      ],
+      "image": "img/meat/cmp_recapchips_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_recapchips_bg",
+        "prompt": "cured hams, hanging biltong and a crock of salt pork in a cool cellar, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_267",
+      "start": 1201.63,
+      "dur": 7.79,
+      "kind": "raw",
+      "src": "broll/meat/s_267.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_almanac",
+      "start": 1208.92,
+      "dur": 7.53,
+      "kind": "callout",
+      "hue": "amber",
+      "accent": "good",
+      "figure": "The Plain Almanac",
+      "eyebrow": "Below this video",
+      "caption": "the whole pantry in order — the salting, the smoking, the drying, the cellar and the crocks — ninety old methods",
+      "image": "img/meat/cmp_almanac_bg.png",
+      "gen": {
+        "type": "image",
+        "name": "meat/cmp_almanac_bg",
+        "prompt": "an old vintage almanac book on a wooden table in warm smokehouse light, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
+      }
+    },
+    {
+      "id": "s_269",
+      "start": 1216.45,
+      "dur": 8.6,
+      "kind": "raw",
+      "src": "broll/meat/s_269.jpg",
+      "darken": 0
+    },
+    {
+      "id": "cmp_next",
+      "start": 1224.55,
+      "dur": 6.8,
+      "kind": "nextvideo",
+      "kicker": "Next time",
+      "title": "Keep meat not for months — but for YEARS",
+      "sub": "The little dark cake the old trappers carried across a whole continent. Folks refuse to believe it."
+    },
+    {
+      "id": "s_272",
+      "start": 1231.35,
+      "dur": 5.42,
+      "kind": "raw",
+      "src": "broll/meat/s_272.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_273",
+      "start": 1236.27,
+      "dur": 7.85,
+      "kind": "raw",
+      "src": "broll/meat/s_273.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_274",
+      "start": 1243.62,
+      "dur": 5.22,
+      "kind": "raw",
+      "src": "broll/meat/s_274.jpg",
+      "darken": 0
+    },
+    {
+      "id": "s_275",
+      "start": 1248.34,
+      "dur": 2.16,
+      "kind": "raw",
+      "src": "broll/meat/s_275.jpg",
+      "darken": 0
+    }
+  ]
+}
