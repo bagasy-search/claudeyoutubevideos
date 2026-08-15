@@ -205,12 +205,7 @@
       "dur": 6.24,
       "kind": "raw",
       "src": "img/meat/s_20.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_20",
-        "prompt": "dried herbs onions root cellar ambient, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_21",
@@ -234,12 +229,7 @@
       "dur": 4.98,
       "kind": "raw",
       "src": "img/meat/s_24.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_24",
-        "prompt": "raw chicken left kitchen counter sunlight, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_25",
@@ -277,12 +267,7 @@
       "dur": 4.64,
       "kind": "raw",
       "src": "img/meat/s_29.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_29",
-        "prompt": "vintage sepia hog killing day farm family, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "cmp_neverbought",
@@ -335,12 +320,7 @@
       "dur": 6.02,
       "kind": "raw",
       "src": "img/meat/s_36.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_36",
-        "prompt": "raw fresh meat cutting board close, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_38",
@@ -348,12 +328,7 @@
       "dur": 6.24,
       "kind": "raw",
       "src": "img/meat/s_38.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_38",
-        "prompt": "vintage grandmother salting meat sepia portrait, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "cmp_enemy3",
@@ -550,7 +525,7 @@
       "start": 257.36,
       "dur": 8.2,
       "kind": "raw",
-      "src": "broll/meat/s_64.mp4",
+      "src": "img/meat/s_64.png",
       "darken": 0
     },
     {
@@ -575,12 +550,7 @@
       "dur": 7.23,
       "kind": "raw",
       "src": "img/meat/s_68.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_68",
-        "prompt": "cured meat resting in cold cellar, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_69",
@@ -666,12 +636,7 @@
       "dur": 4.7,
       "kind": "raw",
       "src": "img/meat/s_81.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_81",
-        "prompt": "elderly amish man leaning in to camera, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "cmp_curingsalt",
@@ -769,12 +734,7 @@
       "dur": 8.89,
       "kind": "raw",
       "src": "img/meat/s_95.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_95",
-        "prompt": "elderly amish man nodding calmly, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_97",
@@ -868,12 +828,7 @@
       "dur": 4.67,
       "kind": "raw",
       "src": "img/meat/s_107.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_107",
-        "prompt": "ham hanging in cold wood smoke, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_108",
@@ -881,12 +836,7 @@
       "dur": 5.07,
       "kind": "raw",
       "src": "img/meat/s_108.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_108",
-        "prompt": "cured ham hanging in cold smokehouse, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "cmp_coldhot",
@@ -900,15 +850,15 @@
       "eyebrow": "Know the difference",
       "bars": [
         {
-          "label": "Cold smoke — keeps it",
+          "label": "Cold smoke",
           "value": 365,
-          "display": "hangs a year",
+          "display": "keeps a year",
           "winner": true
         },
         {
-          "label": "Hot smoke — eat it that week",
+          "label": "Hot smoke",
           "value": 7,
-          "display": "cooked, spoils"
+          "display": "eat that week"
         }
       ]
     },
@@ -1017,12 +967,7 @@
       "dur": 7.43,
       "kind": "raw",
       "src": "img/meat/s_126.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_126",
-        "prompt": "coarse salt packed on cured ham crock, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_127",
@@ -1130,14 +1075,14 @@
       "eyebrow": "It's not close",
       "bars": [
         {
-          "label": "Store jerky — cooked hard",
+          "label": "Store jerky",
           "value": 1,
-          "display": "a salty board"
+          "display": "cooked, dry"
         },
         {
-          "label": "Biltong — cured raw, air-dried",
+          "label": "Biltong",
           "value": 3,
-          "display": "rich & tender",
+          "display": "raw, rich, tender",
           "winner": true
         }
       ]
@@ -1219,12 +1164,7 @@
       "dur": 5.7,
       "kind": "raw",
       "src": "img/meat/s_147.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_147",
-        "prompt": "coarse salt crystals drawing moisture beef surface, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_148",
@@ -1293,12 +1233,7 @@
       "dur": 7.72,
       "kind": "raw",
       "src": "img/meat/s_156.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_156",
-        "prompt": "biltong strips stored cloth bag shelf, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "cmp_notclose",
@@ -1336,12 +1271,7 @@
       "dur": 6.69,
       "kind": "raw",
       "src": "img/meat/s_161.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_161",
-        "prompt": "gas station jerky bag next to biltong strips, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_162",
@@ -1381,12 +1311,7 @@
       "dur": 4.74,
       "kind": "raw",
       "src": "img/meat/s_165.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_165",
-        "prompt": "lean raw beef versus fatty beef cut, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_166",
@@ -1394,12 +1319,7 @@
       "dur": 6.98,
       "kind": "raw",
       "src": "img/meat/s_166.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_166",
-        "prompt": "marbled fat raw beef macro close up, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "cmp_cutrule",
@@ -1469,12 +1389,7 @@
       "dur": 4.56,
       "kind": "raw",
       "src": "img/meat/s_177.png",
-      "darken": 0,
-      "gen": {
-        "type": "image",
-        "name": "meat/s_177",
-        "prompt": "thin woodsmoke rising cold smokehouse, casual documentary phone snapshot, rustic Amish smokehouse and farmhouse, warm dim light, natural, nothing polished, no AI look, low saturation, soft muted colors, natural hands, no text, no watermark"
-      }
+      "darken": 0
     },
     {
       "id": "s_178",
@@ -1581,7 +1496,7 @@
       "dur": 7.72,
       "kind": "splitlist",
       "palette": "G",
-      "title": "Same old law, dressed up in lard",
+      "title": "The same old law",
       "items": [
         "Fat sealed tight keeps air away",
         "No air means no spoiling",
@@ -2033,7 +1948,7 @@
       "start": 1164.08,
       "dur": 5.17,
       "kind": "raw",
-      "src": "broll/meat/s_259.jpg",
+      "src": "img/meat/s_259.png",
       "darken": 0
     },
     {

@@ -133,7 +133,7 @@ const COMPONENTS = [
     bg: "cool woodsmoke rising around hams hanging in a dim smoke shed" },
   { t: 466, id: "cmp_coldhot", kind: "bars", hue: "amber", accent: "good", unit: "",
     title: "Cold smoke vs hot smoke", eyebrow: "Know the difference",
-    bars: [{ label: "Cold smoke — keeps it", value: 365, display: "hangs a year", winner: true }, { label: "Hot smoke — eat it that week", value: 7, display: "cooked, spoils" }] },
+    bars: [{ label: "Cold smoke", value: 365, display: "keeps a year", winner: true }, { label: "Hot smoke", value: 7, display: "eat that week" }] },
   { t: 500, id: "cmp_smokedoes", kind: "splitlist", palette: "B",
     title: "Smoke does three things", items: ["Dries the surface into a hard skin", "Lays on its own preserving coat", "That deep dark flavor nothing else gives", "Then hang it in the cold"] },
   { t: 528, id: "cmp_shed", kind: "callout", hue: "amber", accent: "good",
@@ -146,7 +146,7 @@ const COMPONENTS = [
     bg: "raw beef strips doused in vinegar and coated in coarse salt and pepper on a board" },
   { t: 600, id: "cmp_vsjerky", kind: "bars", hue: "amber", accent: "good", unit: "",
     title: "Biltong vs jerky", eyebrow: "It's not close",
-    bars: [{ label: "Store jerky — cooked hard", value: 1, display: "a salty board" }, { label: "Biltong — cured raw, air-dried", value: 3, display: "rich & tender", winner: true }] },
+    bars: [{ label: "Store jerky", value: 1, display: "cooked, dry" }, { label: "Biltong", value: 3, display: "raw, rich, tender", winner: true }] },
   { t: 640, id: "cmp_biltongwhy", kind: "callout", hue: "amber", accent: "good",
     figure: "Never cooked", eyebrow: "Why it works", caption: "salt pulls the water and sets the meat; the vinegar sours the surface so nothing can grow on it",
     bg: "dark biltong strips hanging on a wire in cool moving air" },
@@ -211,7 +211,7 @@ const COMPONENTS = [
     figure: "Trim the fat", eyebrow: "For the long keepers", caption: "fat doesn't dry and it turns rancid over the months — dry your lean, and let the salt and smoke protect the ham",
     bg: "trimming the outer fat off a lean cut of beef with a knife" },
   { t: 850, id: "cmp_lawoffat", kind: "splitlist", palette: "G",
-    title: "Same old law, dressed up in lard", items: ["Fat sealed tight keeps air away", "No air means no spoiling", "Cut down, take what you need", "Smooth the fat back, it holds"] },
+    title: "The same old law", items: ["Fat sealed tight keeps air away", "No air means no spoiling", "Cut down, take what you need", "Smooth the fat back, it holds"] },
   { t: 990, id: "cmp_crossed", kind: "stat", hue: "amber", accent: "good",
     value: 100, suffix: "s of yrs", label: "whole civilizations crossed oceans on salted meat — done right, it's one of the safest foods there is", eyebrow: "Proven" },
   { t: 1148, id: "cmp_built", kind: "splitlist", palette: "B",
@@ -299,7 +299,8 @@ const POS = ["cornerTR", "cornerBL", "cornerTL", "right", "left", "cornerBR"];
 const pip = [];
 let k = 0;
 for (let i = 0; i < beats.length; i++) {
-  if (beats[i].start >= COLD_END && i % 6 === 3) { pip.push([beats[i].start, beats[i].start + Math.min(beats[i].dur, 7), POS[k % POS.length]]); k++; }
+  // ⛔ NUNCA PiP sobre un componente: el avatar tapaba el texto (AUDITOR §4). Solo sobre toma cruda.
+  if (beats[i].kind === "raw" && beats[i].start >= COLD_END && i % 6 === 3) { pip.push([beats[i].start, beats[i].start + Math.min(beats[i].dur, 7), POS[k % POS.length]]); k++; }
 }
 const firstHero = COLD_OPEN.length ? COLD_OPEN[0].start : OPEN;
 const modeAt = (t) => {
