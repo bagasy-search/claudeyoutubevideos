@@ -3,8 +3,16 @@
 // Clon de gen_fcscoagulos, pero TODOS los beats se anclan por FRASE (cada beat trae `anchor` verbatim del
 // transcript). Overlays de componentes anclados por `phrase` verbatim. Kit CLÍNICO _fed6.
 import fs from "fs";
+import { spawnSync } from "child_process";
 
 const SLUG = "fcscanela";
+// duración REAL de un mp4 (para que la cobertura no exceda el clip → sin freeze ni fondo)
+const probeDur = (p) => {
+  if (!fs.existsSync(p)) return 0;
+  const r = spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p], { encoding: "utf8" });
+  const d = parseFloat((r.stdout || "").trim());
+  return isFinite(d) ? d : 0;
+};
 const VIDEO_END = 1256; // ≥ largo del wav (captions terminan ~1255s)
 
 // ── captions (anclaje por frase) ───────────────────────────────────────────────
@@ -83,14 +91,38 @@ for (let i = 0; i < N; i++) {
   beats.push(beat);
 }
 
+// ── cobertura garantizada — cada contenido cubre SOLO su duración real; el resto = avatar full ──
+// contentStarts = TODOS los beats raw (foto + video). El avatar es el fondo: nunca se ve #0E1D23.
+const contentStarts = beats.map((b) => b.start).sort((a, b) => a - b);
+const nextContentStart = (s) => { for (const x of contentStarts) if (x > s + 0.05) return x; return VIDEO_END; };
+const HERO_CAP = 3.6;   // foto ≤3.6s
+
 // ── b-roll layer (stock .mp4) — CAPA 1 ────────────────────────────────────────────
 const FCS_BROLL = [];
 for (let i = 0; i < N; i++) {
   const b = SRC[i];
   if (b.mediakind === "video") {
     const st = start[i];
-    const nx = i + 1 < N ? start[i + 1] : VIDEO_END;
-    FCS_BROLL.push({ name: b.name, src: `broll/${SLUG}_${b.name}.mp4`, start: +st.toFixed(2), dur: +Math.max(0.8, nx - st).toFixed(2), query: b.desc || "" });
+    const nx = nextContentStart(st);
+    const slot = nx - st;
+    const real = probeDur(`public/broll/${SLUG}_${b.name}.mp4`) || 10;
+    // cubrir hasta el próximo contenido, pero NUNCA más que el clip real (−0.1 evita el último frame congelado)
+    const cov = +Math.max(0.8, Math.min(slot, real - 0.1)).toFixed(2);
+    FCS_BROLL.push({ name: b.name, src: `broll/${SLUG}_${b.name}.mp4`, start: +st.toFixed(2), dur: +Math.max(0.8, slot).toFixed(2), cov, query: b.desc || "" });
+  }
+}
+// COVER unificado (video+foto) para que el Main sepa DÓNDE el avatar debe estar full (los huecos).
+const FCS_COVER = [];
+for (let i = 0; i < N; i++) {
+  const b = SRC[i];
+  const st = start[i];
+  const nx = nextContentStart(st);
+  const slot = nx - st;
+  if (b.mediakind === "video") {
+    const bv = FCS_BROLL.find((x) => x.name === b.name);
+    FCS_COVER.push({ start: +st.toFixed(2), cov: bv ? bv.cov : Math.min(slot, 10), kind: "video", src: `broll/${SLUG}_${b.name}.mp4` });
+  } else {
+    FCS_COVER.push({ start: +st.toFixed(2), cov: +Math.min(slot, HERO_CAP).toFixed(2), kind: "photo", src: `img/${SLUG}_${b.name}.png` });
   }
 }
 
@@ -207,7 +239,8 @@ const U = SLUG.toUpperCase();
 const tsBody =
   `// AUTO-GENERADO por gen_${SLUG}.mjs — NO editar a mano.\n` +
   `export const ${U}_BEATS: any[] = ${JSON.stringify(ALL)};\n` +
-  `export const ${U}_BROLL: { name: string; src: string; start: number; dur: number; query: string }[] = ${JSON.stringify(FCS_BROLL)};\n` +
+  `export const ${U}_BROLL: { name: string; src: string; start: number; dur: number; cov: number; query: string }[] = ${JSON.stringify(FCS_BROLL)};\n` +
+  `export const ${U}_COVER: { start: number; cov: number; kind: string; src: string }[] = ${JSON.stringify(FCS_COVER)};\n` +
   `export const ${U}_TALKS: { start: number; dur: number }[] = ${JSON.stringify(talks)};\n` +
   `export const VIDEO_END = ${VIDEO_END};\n`;
 fs.writeFileSync(`src/_fed6/VideoEdit/${SLUG}_beats.ts`, tsBody);
