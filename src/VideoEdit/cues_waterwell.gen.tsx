@@ -123,7 +123,7 @@ export const CUES: Cue[] = [
   { key: "s_142", start: 638.3, dur: 6.04, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/waterwell/s_142.mp4" darken={0} clipDur={16.58} /> },
   { key: "cmp_pumpwhere", start: 643.84, dur: 7.02, kind: "splitlist", el: (d) => <SplitList durationInFrames={d} title="The hand pump is for" items={["A shallow well","Water under about 25 feet","One iron handle, no power","Bolted right on top of the pipe"]} accent={G} /> },
   { key: "cmp_suction", start: 650.86, dur: 7.5, kind: "stat", el: (d) => <StatBig durationInFrames={d} value={25} suffix=" ft max" label="how far a suction pump can pull water up — honestly closer to 22 in the real world. Deeper than that, you need a different rig" eyebrow="The one honest number" accent="danger" hue="amber" /> },
-  { key: "s_145", start: 658.36, dur: 4.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/waterwell/s_145.mp4" darken={0} clipDur={15.05} /> },
+  { key: "s_145", start: 658.36, dur: 4.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/waterwell/s_145.png" darken={0} /> },
   { key: "s_146", start: 662.8, dur: 6.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/waterwell/s_146.png" darken={0} /> },
   { key: "s_147", start: 668.8, dur: 5.54, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/waterwell/s_147.mp4" darken={0} clipDur={10.76} /> },
   { key: "s_148", start: 673.84, dur: 6.34, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/waterwell/s_148.png" darken={0} /> },
