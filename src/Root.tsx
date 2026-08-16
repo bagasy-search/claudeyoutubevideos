@@ -9,6 +9,7 @@ import { MainOillamp1, TOTAL_FRAMES_OILLAMP1 } from "./VideoEdit/Main_oillamp1";
 import { MainOakshaft, TOTAL_FRAMES_OAKSHAFT } from "./VideoEdit/Main_oakshaft";
 import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
 import { MainGrietas, TOTAL_FRAMES_GRIETAS } from "./VideoEdit/Main_grietas";
+import { MainOxidotanico, TOTAL_FRAMES_OXIDOTANICO } from "./VideoEdit/Main_oxidotanico";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
 import { MainRaingutter, TOTAL_FRAMES_RAINGUTTER } from "./VideoEdit/Main_raingutter";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
@@ -118,6 +119,7 @@ import { MainPuertas, TOTAL_FRAMES_PUE } from "./VideoEdit/Main_puertas";
 import { MainMapas, TOTAL_FRAMES_MAP } from "./VideoEdit/Main_mapas";
 import { MainFaros, TOTAL_FRAMES_FAROS } from "./VideoEdit/Main_faros";
 import { MainMadera, TOTAL_FRAMES_MADERA } from "./VideoEdit/Main_madera";
+import { MainSotanoseco, TOTAL_FRAMES_SOTANOSECO } from "./VideoEdit/Main_sotanoseco";
 import { MainCemento, TOTAL_FRAMES_CEMENTO } from "./VideoEdit/Main_cemento";
 import { MainSalitre, TOTAL_FRAMES_SALITRE } from "./VideoEdit/Main_salitre";
 import { MainAcauto, TOTAL_FRAMES_ACAUTO } from "./VideoEdit/Main_acauto";
@@ -128,6 +130,8 @@ import { MainRestaura, TOTAL_FRAMES_RESTAURA } from "./VideoEdit/Main_restaura";
 import { MainSellador, TOTAL_FRAMES_SELLADOR } from "./VideoEdit/Main_sellador";
 import { MainAceite, TOTAL_FRAMES_ACEITE } from "./VideoEdit/Main_aceite";
 import { MainPxwash, TOTAL_FRAMES_PXWASH } from "./VideoEdit/Main_pxwash";
+import { MainPxgarden, TOTAL_FRAMES_PXGARDEN } from "./VideoEdit/Main_pxgarden";
+import { MainPxappliance, TOTAL_FRAMES_PXAPPLIANCE } from "./VideoEdit/Main_pxappliance";
 import { MainShou, TOTAL_FRAMES_SHOU } from "./VideoEdit/Main_shou";
 import { MainTunel55, TOTAL_FRAMES_TUNEL55 } from "./VideoEdit/Main_tunel55";
 import { MainPlatano, TOTAL_FRAMES_PLATANO } from "./VideoEdit/Main_platano";
@@ -159,6 +163,7 @@ export const RemotionRoot: React.FC = () => {
     <>
       {/* CLAUDIO YODER · $5 clay-pot heater / power outage (EN) · avatar + 96 imgs sistema + kit premium */}
       <Composition id="Grietas" component={MainGrietas} durationInFrames={TOTAL_FRAMES_GRIETAS} fps={30} width={1920} height={1080} />
+      <Composition id="Oxidotanico" component={MainOxidotanico} durationInFrames={TOTAL_FRAMES_OXIDOTANICO} fps={30} width={1920} height={1080} />
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}
       <Composition id="Oillamp1" component={MainOillamp1} durationInFrames={TOTAL_FRAMES_OILLAMP1} fps={30} width={1920} height={1080} />
@@ -624,6 +629,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Filtro" component={MainFiltro} durationInFrames={TOTAL_FRAMES_FILTRO} fps={30} width={1920} height={1080} />
       {/* REMAKE hit madera — "Por Qué La Madera De Antes Duraba 100 Años" · AVATAR Tomás · clips-first */}
       <Composition id="Madera" component={MainMadera} durationInFrames={TOTAL_FRAMES_MADERA} fps={30} width={1920} height={1080} />
+      <Composition id="Sotanoseco" component={MainSotanoseco} durationInFrames={TOTAL_FRAMES_SOTANOSECO} fps={30} width={1920} height={1080} />
       {/* VIDEO 1 veta "los viejos sabían" — "El cemento que no se raja ($1 la cal)" · AVATAR Tomás · clips-first */}
       <Composition id="Cemento" component={MainCemento} durationInFrames={TOTAL_FRAMES_CEMENTO} fps={30} width={1920} height={1080} />
       {/* Humedad/salitre en la pared — "La Humedad Que Sube NUNCA Vuelve" · AVATAR Tomás · clips-first */}
@@ -654,6 +660,8 @@ export const RemotionRoot: React.FC = () => {
       {/* "11 Secretos con Agua Oxigenada que los Exterminadores No Quieren que Sepas" · canal Agua Oxigenada ES · AVATAR · b-roll 100% stock */}
       <Composition id="PxPlagas" component={MainPxplagas} durationInFrames={TOTAL_FRAMES_PXPLAGAS} fps={30} width={1920} height={1080} />
       <Composition id="PxPros" component={MainPxpros} durationInFrames={TOTAL_FRAMES_PXPROS} fps={30} width={1920} height={1080} />
+      <Composition id="PxGarden" component={MainPxgarden} durationInFrames={TOTAL_FRAMES_PXGARDEN} fps={30} width={1920} height={1080} />
+      <Composition id="PxAppliance" component={MainPxappliance} durationInFrames={TOTAL_FRAMES_PXAPPLIANCE} fps={30} width={1920} height={1080} />
       <Composition id="Fcsmanchas" component={MainFcsmanchas} durationInFrames={TOTAL_FRAMES_FCSMANCHAS} fps={30} width={1920} height={1080} />
       <Composition id="Fcskiwi" component={MainFcskiwi} durationInFrames={TOTAL_FRAMES_FCSKIWI} fps={30} width={1920} height={1080} />
     </>
