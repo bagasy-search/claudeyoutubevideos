@@ -8,6 +8,7 @@ import { MainE7h, TOTAL_FRAMES_E7H } from "./VideoEdit/Main_e7h";
 import { MainOillamp1, TOTAL_FRAMES_OILLAMP1 } from "./VideoEdit/Main_oillamp1";
 import { MainOakshaft, TOTAL_FRAMES_OAKSHAFT } from "./VideoEdit/Main_oakshaft";
 import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
+import { MainGrietas, TOTAL_FRAMES_GRIETAS } from "./VideoEdit/Main_grietas";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
 import { MainRaingutter, TOTAL_FRAMES_RAINGUTTER } from "./VideoEdit/Main_raingutter";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
@@ -157,6 +158,7 @@ export const RemotionRoot: React.FC = () => {
   return (
     <>
       {/* CLAUDIO YODER · $5 clay-pot heater / power outage (EN) · avatar + 96 imgs sistema + kit premium */}
+      <Composition id="Grietas" component={MainGrietas} durationInFrames={TOTAL_FRAMES_GRIETAS} fps={30} width={1920} height={1080} />
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}
       <Composition id="Oillamp1" component={MainOillamp1} durationInFrames={TOTAL_FRAMES_OILLAMP1} fps={30} width={1920} height={1080} />
