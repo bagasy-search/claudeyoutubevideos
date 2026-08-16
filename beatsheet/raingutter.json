@@ -1,0 +1,1428 @@
+{
+ "video": "raingutter",
+ "avatar": "raingutter_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "raingutter_0",
+   "start": 0.11,
+   "kind": "raw",
+   "src": "img/rg_p_by_barrel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.62
+  },
+  {
+   "id": "raingutter_1",
+   "start": 2.73,
+   "kind": "raw",
+   "src": "broll/rg_s_rainroof.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.29,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_2",
+   "start": 8.02,
+   "kind": "raw",
+   "src": "broll/rg_s_barreloverflow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.71,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_3",
+   "start": 10.73,
+   "kind": "raw",
+   "src": "broll/rg_s_rainheavy.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.61,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_4",
+   "start": 15.34,
+   "kind": "raw",
+   "src": "broll/rg_s_rainroof2.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.62,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_5",
+   "start": 20.96,
+   "kind": "raw",
+   "src": "broll/rg_s_raingutter.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_6",
+   "start": 22.96,
+   "kind": "raw",
+   "src": "img/rg_o_downspout.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.28
+  },
+  {
+   "id": "raingutter_7",
+   "start": 28.24,
+   "kind": "raw",
+   "src": "broll/rg_s_tapwater.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_8",
+   "start": 29.59,
+   "kind": "raw",
+   "src": "broll/rg_s_tapfill.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.43,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_9",
+   "start": 33.02,
+   "kind": "raw",
+   "src": "img/rg_o_rainsky.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "ov_highlightsweep_33",
+   "start": 33.02,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Every time it rains,",
+   "highlight": "you pay for the sky",
+   "post": " — twice.",
+   "note": "the rain runs off your roof to the curb, and then you buy that same water back from the town"
+  },
+  {
+   "id": "raingutter_10",
+   "start": 36.24,
+   "kind": "raw",
+   "src": "img/rg_p_amish_intro.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "raingutter_11",
+   "start": 38.32,
+   "kind": "raw",
+   "src": "img/rg_p_amish_intro.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_mythtruth_50",
+   "start": 50.37,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "A 'zero water bill' sounds too good to be true",
+   "truth": "It's not magic — catch the rain off your own roof and you stop buying most of what a household actually uses",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "raingutter_12",
+   "start": 53.87,
+   "kind": "raw",
+   "src": "img/rg_o_cistern.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.66
+  },
+  {
+   "id": "raingutter_13",
+   "start": 58.53,
+   "kind": "raw",
+   "src": "broll/rg_s_barnroofrain.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.19,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_14",
+   "start": 65.72,
+   "kind": "raw",
+   "src": "broll/rg_o_watermeter.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.03
+  },
+  {
+   "id": "raingutter_15",
+   "start": 69.75,
+   "kind": "raw",
+   "src": "img/rg_o_rainbarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_pullquote_70",
+   "start": 69.75,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "No motor. No meter. No monthly envelope from the county. Just a roof, gravity, and a hole in the ground."
+  },
+  {
+   "id": "raingutter_16",
+   "start": 86.96,
+   "kind": "raw",
+   "src": "img/rg_o_greenbarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.01
+  },
+  {
+   "id": "ov_numberedsteps_92",
+   "start": 91.97,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "By the end of this video",
+   "title": "You'll know how to",
+   "steps": [
+    {
+     "title": "Catch the rain",
+     "sub": "off your own roof, into a barrel"
+    },
+    {
+     "title": "Keep it clean",
+     "sub": "screen it and first-flush it"
+    },
+    {
+     "title": "Get pressure",
+     "sub": "without a pump or a watt of power"
+    }
+   ]
+  },
+  {
+   "id": "raingutter_17",
+   "start": 95.8,
+   "kind": "raw",
+   "src": "img/rg_p_by_barrel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.01
+  },
+  {
+   "id": "raingutter_18",
+   "start": 99.81,
+   "kind": "raw",
+   "src": "img/rg_p_serious_safety.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_19",
+   "start": 110.91,
+   "kind": "raw",
+   "src": "img/rg_p_amish_intro.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.01
+  },
+  {
+   "id": "raingutter_20",
+   "start": 117.92,
+   "kind": "raw",
+   "src": "img/rg_p_point_roof.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "raingutter_21",
+   "start": 122.72,
+   "kind": "raw",
+   "src": "img/rg_o_roofrain.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_22",
+   "start": 134.55,
+   "kind": "raw",
+   "src": "broll/rg_s_rainroof.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_135",
+   "start": 134.55,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "One inch of rain on 1,000 sq ft of roof =",
+   "value": 623,
+   "suffix": " gallons",
+   "support": "call it 600 gallons — off a roof that size, from a single ordinary inch of rain, running straight to the curb"
+  },
+  {
+   "id": "raingutter_23",
+   "start": 136.61,
+   "kind": "raw",
+   "src": "img/rg_o_bigroof.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_24",
+   "start": 150.62,
+   "kind": "raw",
+   "src": "img/rg_o_househouse.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.05
+  },
+  {
+   "id": "raingutter_25",
+   "start": 156.67,
+   "kind": "raw",
+   "src": "broll/rg_s_rainstorm.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.02,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_26",
+   "start": 163.69,
+   "kind": "raw",
+   "src": "broll/rg_s_raindownspout.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.18,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_27",
+   "start": 168.87,
+   "kind": "raw",
+   "src": "broll/rg_s_rainfield.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_28",
+   "start": 179.57,
+   "kind": "raw",
+   "src": "broll/rg_s_rainstreet.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.25,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_182",
+   "start": 181.82,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Tens of thousands of gallons a year —",
+   "highlight": "landing free, then bought back",
+   "post": ".",
+   "note": "forty inches of rain a year on your roof adds up fast, and all of it runs away"
+  },
+  {
+   "id": "raingutter_29",
+   "start": 189.44,
+   "kind": "raw",
+   "src": "broll/rg_s_gutteroverflow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.23,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_189",
+   "start": 189.44,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "The whole job:",
+   "highlight": "stop the water running away, and put it where you can use it",
+   "post": ".",
+   "note": "everything else is just detail"
+  },
+  {
+   "id": "raingutter_30",
+   "start": 191.67,
+   "kind": "raw",
+   "src": "img/rg_o_rainbarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "raingutter_31",
+   "start": 195.55,
+   "kind": "raw",
+   "src": "img/rg_p_point_downspout.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96
+  },
+  {
+   "id": "raingutter_32",
+   "start": 199.51,
+   "kind": "raw",
+   "src": "broll/rg_s_guttergush.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.21,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_200",
+   "start": 199.51,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "How a roof becomes a rain catcher",
+   "nodes": [
+    {
+     "label": "Rain hits the roof",
+     "sub": "your whole roof is already a collector"
+    },
+    {
+     "label": "Gutter → downspout",
+     "sub": "it's all funneled to one pipe"
+    },
+    {
+     "label": "Interrupt the downspout",
+     "sub": "send it to a barrel, not the curb"
+    }
+   ]
+  },
+  {
+   "id": "raingutter_33",
+   "start": 204.72,
+   "kind": "raw",
+   "src": "img/rg_o_downspout.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.66
+  },
+  {
+   "id": "raingutter_34",
+   "start": 213.38,
+   "kind": "raw",
+   "src": "img/rg_o_downspout_diverter.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.25
+  },
+  {
+   "id": "raingutter_35",
+   "start": 220.63,
+   "kind": "raw",
+   "src": "img/rg_o_cloggedgutter.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_36",
+   "start": 238.81,
+   "kind": "raw",
+   "src": "img/rg_p_hold_mesh.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "raingutter_37",
+   "start": 243.37,
+   "kind": "raw",
+   "src": "broll/rg_o_meshscreen.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.97
+  },
+  {
+   "id": "ov_checklistreveal_246",
+   "start": 246.34,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "A simple screen keeps out",
+   "items": [
+    "Leaves and twigs off the roof",
+    "Shingle grit and roof debris",
+    "Mosquitoes — no still water to breed in",
+    "Screen the downspout AND the barrel lid"
+   ],
+   "stamp": "SCREEN IT"
+  },
+  {
+   "id": "raingutter_38",
+   "start": 250.54,
+   "kind": "raw",
+   "src": "broll/rg_s_mosquito.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.69,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_39",
+   "start": 253.23,
+   "kind": "raw",
+   "src": "broll/rg_s_stillwater.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.16,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_40",
+   "start": 261.39,
+   "kind": "raw",
+   "src": "img/rg_o_screenedbarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_41",
+   "start": 272.73,
+   "kind": "raw",
+   "src": "img/rg_o_rainbarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.88
+  },
+  {
+   "id": "raingutter_42",
+   "start": 277.61,
+   "kind": "raw",
+   "src": "img/rg_p_by_barrel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "raingutter_43",
+   "start": 281.45,
+   "kind": "raw",
+   "src": "img/rg_o_downspout_diverter.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.02
+  },
+  {
+   "id": "ov_bigstatreveal_281",
+   "start": 281.45,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "A downspout diverter kit runs about",
+   "value": 30,
+   "prefix": "$20–",
+   "suffix": "",
+   "support": "cut a section out of the downspout, slide it in — and when the barrel's full, the extra just goes back down the normal way"
+  },
+  {
+   "id": "raingutter_44",
+   "start": 289.47,
+   "kind": "raw",
+   "src": "img/rg_o_diverterhose.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "raingutter_45",
+   "start": 293.53,
+   "kind": "raw",
+   "src": "broll/rg_s_barrelfill.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_46",
+   "start": 323.03,
+   "kind": "raw",
+   "src": "img/rg_o_bluedrum.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "raingutter_47",
+   "start": 326.13,
+   "kind": "raw",
+   "src": "img/rg_o_bluedrum.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_48",
+   "start": 344.35,
+   "kind": "raw",
+   "src": "img/rg_o_chemdrum.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.09
+  },
+  {
+   "id": "ov_duelcolumns_344",
+   "start": 344.35,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Which barrel?",
+   "leftName": "Food-grade drum",
+   "rightName": "Any old chemical drum",
+   "rows": [
+    {
+     "attr": "Held food or drink before",
+     "leftWins": true
+    },
+    {
+     "attr": "Safe for the garden and your tomatoes",
+     "leftWins": true
+    },
+    {
+     "attr": "$20–30 used, easy to find",
+     "leftWins": true
+    },
+    {
+     "attr": "Residue you can never rinse out",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "raingutter_49",
+   "start": 349.44,
+   "kind": "raw",
+   "src": "broll/rg_s_tomatoes.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.56,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_351",
+   "start": 351,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "One rule on the barrel:",
+   "highlight": "food-grade only",
+   "post": ".",
+   "note": "it held food or drink before, never a chemical — you'll never fully rinse that out, and it ends up in your tomatoes"
+  },
+  {
+   "id": "raingutter_50",
+   "start": 354.99,
+   "kind": "raw",
+   "src": "img/rg_o_fullbarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_51",
+   "start": 366.48,
+   "kind": "raw",
+   "src": "img/rg_p_by_barrel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "ov_checklistreveal_370",
+   "start": 370.24,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Growing your storage, cheap",
+   "items": [
+    "Link barrels — they fill as one",
+    "IBC tote = 275 gallons (five barrels)",
+    "Totes on the shady side of the house",
+    "A cistern holds thousands of gallons"
+   ],
+   "stamp": "ONE BARREL → CISTERN"
+  },
+  {
+   "id": "raingutter_52",
+   "start": 372.95,
+   "kind": "raw",
+   "src": "img/rg_o_barrels_linked.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_53",
+   "start": 387.27,
+   "kind": "raw",
+   "src": "img/rg_o_barrelrow.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.61
+  },
+  {
+   "id": "raingutter_54",
+   "start": 391.88,
+   "kind": "raw",
+   "src": "broll/rg_o_ibctote.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "raingutter_55",
+   "start": 393.69,
+   "kind": "raw",
+   "src": "broll/rg_o_ibctote.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.71
+  },
+  {
+   "id": "ov_bigstatreveal_396",
+   "start": 396.4,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Ready to scale up? One IBC tote holds",
+   "value": 275,
+   "suffix": " gallons",
+   "support": "that's five barrels' worth in one square tank — often $50–100 used. Link barrels, add totes, and the ladder goes all the way to a cistern"
+  },
+  {
+   "id": "raingutter_56",
+   "start": 416.28,
+   "kind": "raw",
+   "src": "img/rg_o_cistern.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.92
+  },
+  {
+   "id": "raingutter_57",
+   "start": 420.2,
+   "kind": "raw",
+   "src": "broll/rg_s_dryearth.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_58",
+   "start": 442.53,
+   "kind": "raw",
+   "src": "img/rg_p_point_roof.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.19
+  },
+  {
+   "id": "ov_bigstatreveal_443",
+   "start": 442.53,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The first water off the roof is the",
+   "value": 1,
+   "prefix": "#",
+   "suffix": " thing people skip",
+   "support": "dust, pollen, bird droppings, soot and grit — the first gush is the dirtiest water of the whole storm"
+  },
+  {
+   "id": "raingutter_59",
+   "start": 449.72,
+   "kind": "raw",
+   "src": "broll/rg_o_dirtyroof.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.45
+  },
+  {
+   "id": "raingutter_60",
+   "start": 458.17,
+   "kind": "raw",
+   "src": "broll/rg_s_roofrunoff.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_483",
+   "start": 482.76,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "title": "The first-flush diverter",
+   "nodes": [
+    {
+     "label": "Dirty first water fills a standing pipe",
+     "sub": "a length of PVC beside the downspout"
+    },
+    {
+     "label": "Once it's full, clean water rises past",
+     "sub": "and flows on into your barrel"
+    },
+    {
+     "label": "A drip hole empties it after the storm",
+     "sub": "resets itself for next time"
+    }
+   ]
+  },
+  {
+   "id": "raingutter_61",
+   "start": 497.96,
+   "kind": "raw",
+   "src": "broll/rg_o_valvepvc.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_62",
+   "start": 507.44,
+   "kind": "raw",
+   "src": "img/rg_p_first_flush.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_bigstatreveal_507",
+   "start": 507.44,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Rule of thumb — first flush about",
+   "value": 10,
+   "suffix": " gallons",
+   "support": "a gallon or two for every 100 sq ft of roof. Rough is fine — even a crude first flush makes the barrel water dramatically cleaner"
+  },
+  {
+   "id": "ov_pullquote_524",
+   "start": 524.48,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Build the first flush. Everybody skips it. Don't be everybody."
+  },
+  {
+   "id": "raingutter_63",
+   "start": 540.72,
+   "kind": "raw",
+   "src": "broll/rg_s_dribble.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.81,
+   "noSplit": true
+  },
+  {
+   "id": "ov_beforeafter_541",
+   "start": 540.72,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Same barrel, same water",
+   "beforeLabel": "On the ground: a dribble",
+   "afterLabel": "Up on blocks: real force",
+   "caption": "height is pressure — raise the barrel 2–4 feet and gravity runs a soaker hose across the whole garden, no pump"
+  },
+  {
+   "id": "raingutter_64",
+   "start": 547.53,
+   "kind": "raw",
+   "src": "img/rg_p_lift_barrel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.13
+  },
+  {
+   "id": "ov_highlightsweep_549",
+   "start": 548.66,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "The whole secret:",
+   "highlight": "height is pressure",
+   "post": ".",
+   "note": "every foot you raise the barrel adds pressure — get it 2–4 feet up and gravity runs a soaker hose on its own"
+  },
+  {
+   "id": "raingutter_65",
+   "start": 569.93,
+   "kind": "raw",
+   "src": "broll/rg_s_soakerhose.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.18,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_66",
+   "start": 577.11,
+   "kind": "raw",
+   "src": "broll/rg_s_spigotflow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_67",
+   "start": 590.43,
+   "kind": "raw",
+   "src": "img/rg_p_point_desc.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_68",
+   "start": 599.94,
+   "kind": "raw",
+   "src": "img/rg_p_by_barrel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.45
+  },
+  {
+   "id": "raingutter_69",
+   "start": 604.39,
+   "kind": "raw",
+   "src": "broll/rg_s_overflowwater.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.71,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_70",
+   "start": 611.1,
+   "kind": "raw",
+   "src": "broll/rg_o_dampbasement.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.47
+  },
+  {
+   "id": "ov_bigstatreveal_611",
+   "start": 611.1,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "A 5-minute overflow saves you a",
+   "value": 5000,
+   "prefix": "$",
+   "suffix": " problem",
+   "support": "put an overflow near the top and aim it downhill, away from the house — trapped water against the foundation is how basements flood"
+  },
+  {
+   "id": "raingutter_71",
+   "start": 618.57,
+   "kind": "raw",
+   "src": "broll/rg_o_overflowhose.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "raingutter_72",
+   "start": 622.79,
+   "kind": "raw",
+   "src": "broll/rg_s_gardenflow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_644",
+   "start": 644,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Rainwater is dirty 'acid rain' — not safe",
+   "truth": "The rain itself is nearly distilled — some of the cleanest water there is. It's the roof, gutter and barrel that need handling, not the rain",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "raingutter_73",
+   "start": 653.57,
+   "kind": "raw",
+   "src": "broll/rg_s_raindropripple.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_74",
+   "start": 655.74,
+   "kind": "raw",
+   "src": "broll/rg_s_clouds.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_75",
+   "start": 661.18,
+   "kind": "raw",
+   "src": "img/rg_o_downspout.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_76",
+   "start": 680.88,
+   "kind": "raw",
+   "src": "broll/rg_s_gardengrow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "ov_beforeafter_681",
+   "start": 680.88,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Rain vs. tap, for your garden",
+   "beforeLabel": "Tap: chlorinated",
+   "afterLabel": "Rain: plants love it",
+   "caption": "rainwater is nearly distilled — your garden will be happier with it than the treated stuff from the hose"
+  },
+  {
+   "id": "raingutter_77",
+   "start": 692.67,
+   "kind": "raw",
+   "src": "img/rg_p_serious_safety.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.63
+  },
+  {
+   "id": "ov_checklistreveal_693",
+   "start": 692.67,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Drinking vs. everything else",
+   "items": [
+    "Garden, lawn, laundry, flushing, animals — perfect",
+    "That alone guts most of a household's water bill",
+    "Drinking / cooking: filter AND disinfect first",
+    "Boil, proper filter, or UV — then test it"
+   ],
+   "stamp": "DON'T DRINK IT RAW"
+  },
+  {
+   "id": "raingutter_78",
+   "start": 699.3,
+   "kind": "raw",
+   "src": "broll/rg_s_laundry.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.21,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_79",
+   "start": 707.51,
+   "kind": "raw",
+   "src": "broll/rg_o_waterbill.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_80",
+   "start": 756.04,
+   "kind": "raw",
+   "src": "img/rg_p_serious_safety.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.35
+  },
+  {
+   "id": "ov_checklistreveal_756",
+   "start": 756.04,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Before a big system — check the law",
+   "items": [
+    "A few western states restrict rainwater",
+    "Some just want you to register it",
+    "Most of the country: fine, even rebates",
+    "Search: '[your state] rainwater harvesting law'"
+   ],
+   "stamp": "CHECK YOUR STATE"
+  },
+  {
+   "id": "raingutter_81",
+   "start": 761.39,
+   "kind": "raw",
+   "src": "broll/rg_o_usmap.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.57
+  },
+  {
+   "id": "raingutter_82",
+   "start": 767.96,
+   "kind": "raw",
+   "src": "img/rg_o_rainbarrel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_83",
+   "start": 782.99,
+   "kind": "raw",
+   "src": "img/rg_o_barrels_linked.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.14
+  },
+  {
+   "id": "raingutter_84",
+   "start": 788.13,
+   "kind": "raw",
+   "src": "img/rg_p_point_desc.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_85",
+   "start": 813.91,
+   "kind": "raw",
+   "src": "img/rg_p_point_desc.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_numberedsteps_814",
+   "start": 813.91,
+   "dur": 7.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "This weekend — in order",
+   "title": "Your whole rain-catcher",
+   "steps": [
+    {
+     "title": "Check your local rule",
+     "sub": "ten minutes, before anything else"
+    },
+    {
+     "title": "Clean the gutter + screen it",
+     "sub": "leaves and bugs out"
+    },
+    {
+     "title": "Food-grade barrel on blocks",
+     "sub": "2+ feet up = free pressure"
+    },
+    {
+     "title": "Diverter + first flush + overflow",
+     "sub": "clean water in, spillover aimed away"
+    }
+   ]
+  },
+  {
+   "id": "raingutter_86",
+   "start": 826.67,
+   "kind": "raw",
+   "src": "img/rg_o_bluedrum.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_87",
+   "start": 848.95,
+   "kind": "raw",
+   "src": "broll/rg_o_overflowhose.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.88
+  },
+  {
+   "id": "raingutter_88",
+   "start": 852.83,
+   "kind": "raw",
+   "src": "broll/rg_o_spigot.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.78
+  },
+  {
+   "id": "ov_bigstatreveal_858",
+   "start": 857.61,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The whole first barrel runs about",
+   "value": 80,
+   "prefix": "$50–",
+   "suffix": "",
+   "support": "and the next time it rains, you turn a spigot and clean water comes out that you didn't pay a soul for"
+  },
+  {
+   "id": "raingutter_89",
+   "start": 865.04,
+   "kind": "raw",
+   "src": "broll/rg_s_spigotflow.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "raingutter_90",
+   "start": 892.41,
+   "kind": "raw",
+   "src": "img/rg_p_hold_book.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_ctacard_892",
+   "start": 892.41,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The whole water side, written down",
+   "title": "The Plain Almanac",
+   "bullet": "how the Amish size a cistern to carry a house through a dry spell, and the $40 ram pump that moves your rainwater uphill on no power — it's the water section. Link's up at the top of the description",
+   "price": 0,
+   "cta": "LINK IN THE DESCRIPTION"
+  },
+  {
+   "id": "raingutter_91",
+   "start": 931,
+   "kind": "raw",
+   "src": "img/rg_o_rainsky.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_duelcolumns_931",
+   "start": 931,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Two ways to get water",
+   "leftName": "Rain off your roof",
+   "rightName": "The town's meter",
+   "rows": [
+    {
+     "attr": "Free — it always was",
+     "leftWins": true
+    },
+    {
+     "attr": "Still there in a dry summer",
+     "leftWins": true
+    },
+    {
+     "attr": "No monthly bill, no restrictions",
+     "leftWins": true
+    },
+    {
+     "attr": "Something they can shut off",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "raingutter_92",
+   "start": 940.73,
+   "kind": "raw",
+   "src": "img/rg_p_by_barrel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_93",
+   "start": 954.83,
+   "kind": "raw",
+   "src": "img/rg_p_point_desc.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_94",
+   "start": 968.2,
+   "kind": "raw",
+   "src": "broll/rg_o_rampump.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "raingutter_95",
+   "start": 1000.4,
+   "kind": "raw",
+   "src": "broll/rg_s_rainhands.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pullquote_1000",
+   "start": 1000.4,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "Most of what you need is already falling on you for free. You just have to put something under it."
+  },
+  {
+   "id": "raingutter_96",
+   "start": 1004.8,
+   "kind": "raw",
+   "src": "img/rg_p_close_smile.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  }
+ ]
+}
