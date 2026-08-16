@@ -174,9 +174,9 @@ export const MainFcsjapon: React.FC = () => {
         );
       })}
 
-      {/* HOOK — texto sobre la foto piña + pierna con venas marcadas */}
+      {/* HOOK — texto sobre el b-roll de ancianos japoneses */}
       <Sequence from={sec(1.4)} durationInFrames={sec(hookDur)} layout="none">
-        <AvatarScrimText durationInFrames={sec(hookDur)} setup="¿Piernas pesadas e hinchadas a los 70? Un médico explica la piña…" impact="LA FRUTA QUE LIMPIA LOS COÁGULOS" accentColor="#12B3AE" font={F_INTER} fontSize={120} />
+        <AvatarScrimText durationInFrames={sec(hookDur)} setup="¿Cuándo fue la última vez que te levantaste del suelo sin manos?" impact="5 MOVIMIENTOS JAPONESES" accentColor="#12B3AE" font={F_INTER} fontSize={120} />
       </Sequence>
 
       {/* ENDCARD */}
