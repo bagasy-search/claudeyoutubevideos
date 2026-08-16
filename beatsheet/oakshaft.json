@@ -1,0 +1,1186 @@
+{
+ "video": "oakshaft",
+ "avatar": "oakshaft_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "oakshaft_0",
+   "start": 0,
+   "kind": "raw",
+   "src": "img/oakshaft_giant_white_oak_forest.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_1",
+   "start": 9.38,
+   "kind": "raw",
+   "src": "img/oakshaft_squared_oak_shaft_beam.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.68
+  },
+  {
+   "id": "oakshaft_2",
+   "start": 14.06,
+   "kind": "raw",
+   "src": "img/oakshaft_wooden_shaft_through_mill.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "oakshaft_3",
+   "start": 19.16,
+   "kind": "raw",
+   "src": "img/oakshaft_millwright_looking_up_oak.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "ov_highlightsweep_22",
+   "start": 21.7,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Get the shaft wrong and",
+   "highlight": "the whole mill shakes itself to pieces",
+   "post": ".",
+   "note": "rush it, or pick the wrong tree, and it tears itself apart inside a single season"
+  },
+  {
+   "id": "oakshaft_4",
+   "start": 27.56,
+   "kind": "raw",
+   "src": "img/oakshaft_two_men_crosscut_saw_snow.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.12
+  },
+  {
+   "id": "oakshaft_5",
+   "start": 29.68,
+   "kind": "raw",
+   "src": "img/oakshaft_man_hewing_log.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.24
+  },
+  {
+   "id": "oakshaft_6",
+   "start": 34.92,
+   "kind": "raw",
+   "src": "img/oakshaft_seasoning_shed_stacked_timber.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.7
+  },
+  {
+   "id": "ov_bigstatreveal_41",
+   "start": 40.62,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "They spent",
+   "value": 3,
+   "suffix": " years drying one shaft",
+   "support": "before it ever turned — a tree chosen, felled in winter, hewn by hand, then seasoned longer than most folks will wait for anything"
+  },
+  {
+   "id": "oakshaft_7",
+   "start": 42.18,
+   "kind": "raw",
+   "src": "img/oakshaft_squared_timber_flat_face.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.82
+  },
+  {
+   "id": "oakshaft_8",
+   "start": 50,
+   "kind": "raw",
+   "src": "img/oakshaft_old_water_mill_exterior.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.26
+  },
+  {
+   "id": "oakshaft_9",
+   "start": 57.26,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_waterwheel.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.74,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_10",
+   "start": 64,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_stream.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_11",
+   "start": 68.54,
+   "kind": "raw",
+   "src": "img/oakshaft_mill_interior_dark_gears.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "oakshaft_12",
+   "start": 72.94,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_gears.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.78,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_13",
+   "start": 78.72,
+   "kind": "raw",
+   "src": "img/oakshaft_old_restored_mill_wheel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.64
+  },
+  {
+   "id": "ov_flowsteps_80",
+   "start": 80.36,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "How a water mill works",
+   "title": "Where the power goes",
+   "nodes": [
+    {
+     "label": "The wheel catches the falling water",
+     "sub": "the pretty part — but it only turns the log"
+    },
+    {
+     "label": "The oak shaft carries it inside",
+     "sub": "one squared log runs straight through the building"
+    },
+    {
+     "label": "Gears and millstones do the work",
+     "sub": "everything the mill does runs through that one piece of oak"
+    }
+   ]
+  },
+  {
+   "id": "oakshaft_14",
+   "start": 82.54,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_wheelsplash.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.48,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_15",
+   "start": 85.02,
+   "kind": "raw",
+   "src": "img/oakshaft_wooden_shaft_through_mill.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.98
+  },
+  {
+   "id": "oakshaft_16",
+   "start": 92,
+   "kind": "raw",
+   "src": "img/oakshaft_millstones_grinding.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_17",
+   "start": 105.74,
+   "kind": "raw",
+   "src": "img/oakshaft_archival_millwrights_1930s.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.74
+  },
+  {
+   "id": "oakshaft_18",
+   "start": 112.48,
+   "kind": "raw",
+   "src": "img/oakshaft_old_craftsman_hands.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3
+  },
+  {
+   "id": "ov_pullquote_115",
+   "start": 114.78,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "The old millwrights treated the shaft almost like it was alive — because in a way, the mill lived or died on it."
+  },
+  {
+   "id": "oakshaft_19",
+   "start": 121.16,
+   "kind": "raw",
+   "src": "img/oakshaft_white_oak_trunk_bark.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_mythtruth_131",
+   "start": 130.5,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH",
+   "myth": "Any big oak would do for a mill shaft",
+   "truth": "Only white oak — dense, and it holds up wet its whole life. Red oak wicks water like a straw and rots from the inside"
+  },
+  {
+   "id": "oakshaft_20",
+   "start": 138.48,
+   "kind": "raw",
+   "src": "img/oakshaft_tall_oaks_canopy_up.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.06
+  },
+  {
+   "id": "oakshaft_21",
+   "start": 141.54,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_canopy.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.84,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_22",
+   "start": 143.38,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_woodgrain.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.9,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_23",
+   "start": 149.28,
+   "kind": "raw",
+   "src": "img/oakshaft_knot_in_oak_wood.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.9
+  },
+  {
+   "id": "oakshaft_24",
+   "start": 156.18,
+   "kind": "raw",
+   "src": "img/oakshaft_millwright_looking_up_oak.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_25",
+   "start": 176.36,
+   "kind": "raw",
+   "src": "img/oakshaft_blaze_mark_on_bark.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_pullquote_189",
+   "start": 189.48,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "They'd mark a young oak and just leave it standing — like money in the bank. A tree they were saving for a job ten years off."
+  },
+  {
+   "id": "oakshaft_26",
+   "start": 212.74,
+   "kind": "raw",
+   "src": "img/oakshaft_snowy_oak_forest_winter.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_mythtruth_223",
+   "start": 222.54,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH",
+   "myth": "Fell the tree whenever you need the wood",
+   "truth": "Fell it in deep winter — sap down, tree asleep. Cut it in July full of sap and it fights you the whole way and cracks as it dries"
+  },
+  {
+   "id": "oakshaft_27",
+   "start": 226.68,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_snowforest.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.64,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_28",
+   "start": 230.32,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_snowfall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_29",
+   "start": 232.62,
+   "kind": "raw",
+   "src": "img/oakshaft_two_men_crosscut_saw_snow.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.58
+  },
+  {
+   "id": "oakshaft_30",
+   "start": 239.2,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_sawing.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_31",
+   "start": 239.68,
+   "kind": "raw",
+   "src": "img/oakshaft_huge_trunk_four_feet.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.52
+  },
+  {
+   "id": "oakshaft_32",
+   "start": 246.2,
+   "kind": "raw",
+   "src": "img/oakshaft_tree_falling_forest.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "oakshaft_33",
+   "start": 250.66,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_windtrees.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_34",
+   "start": 273.84,
+   "kind": "raw",
+   "src": "img/oakshaft_chalk_line_on_log.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.74
+  },
+  {
+   "id": "ov_numberedsteps_274",
+   "start": 273.84,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Squaring a log by hand",
+   "title": "Score and hew",
+   "steps": [
+    {
+     "title": "Snap a chalk line",
+     "sub": "one true line down the whole length of the log"
+    },
+    {
+     "title": "Score across the grain",
+     "sub": "little cuts, chop-chop, every few inches"
+    },
+    {
+     "title": "Hew to the line",
+     "sub": "knock the chunks off flat with the broadaxe"
+    },
+    {
+     "title": "Roll a quarter turn",
+     "sub": "four faces — near enough four whole mornings"
+    }
+   ]
+  },
+  {
+   "id": "oakshaft_35",
+   "start": 279.58,
+   "kind": "raw",
+   "src": "img/oakshaft_man_hewing_log.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "oakshaft_36",
+   "start": 284.4,
+   "kind": "raw",
+   "src": "img/oakshaft_squared_timber_flat_face.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_37",
+   "start": 295.96,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_chopping.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.82,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_38",
+   "start": 301.78,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_shavings.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.62,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_39",
+   "start": 306.4,
+   "kind": "raw",
+   "src": "img/oakshaft_pale_wood_chips_pile.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_highlightsweep_334",
+   "start": 334.2,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Why a man took four mornings on one log —",
+   "highlight": "hurry is how you cut past the line",
+   "post": ".",
+   "note": "and once you're past the line, there's no putting the wood back"
+  },
+  {
+   "id": "oakshaft_40",
+   "start": 350.88,
+   "kind": "raw",
+   "src": "img/oakshaft_seasoning_shed_stacked_timber.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_41",
+   "start": 372.34,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_dustbeam.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.18,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_42",
+   "start": 375.52,
+   "kind": "raw",
+   "src": "img/oakshaft_timber_ends_drying.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "oakshaft_43",
+   "start": 380.42,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_barnlight.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.1,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_388",
+   "start": 387.52,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The old-timers' rule",
+   "value": 1,
+   "suffix": " year of drying per inch",
+   "support": "a foot-thick shaft meant years in the shed — so they raised the next one while the old one still turned"
+  },
+  {
+   "id": "ov_checklistreveal_426",
+   "start": 425.64,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "No meter, no gauge",
+   "title": "How they knew the wood was dry",
+   "items": [
+    "Heft it — dry wood is lighter; they knew the weight of dry",
+    "Knock it — green rings dull, dry rings and sings",
+    "Touch the end grain to your cheek — cool means damp still"
+   ],
+   "stamp": "KNOWING BY HAND"
+  },
+  {
+   "id": "oakshaft_44",
+   "start": 430.48,
+   "kind": "raw",
+   "src": "img/oakshaft_hand_knocking_wood.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.88
+  },
+  {
+   "id": "oakshaft_45",
+   "start": 437.36,
+   "kind": "raw",
+   "src": "img/oakshaft_seasoned_timber_grain_end.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_pullquote_455",
+   "start": 454.64,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "We get impatient when a page takes three seconds to load. These men measured a single project in the growing of their own children."
+  },
+  {
+   "id": "oakshaft_46",
+   "start": 477.46,
+   "kind": "raw",
+   "src": "img/oakshaft_claudio_almanac_book.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_47",
+   "start": 499.16,
+   "kind": "raw",
+   "src": "img/oakshaft_drawknife_rounding_end.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_mythtruth_511",
+   "start": 511.24,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH",
+   "myth": "Close enough is good enough for the journal",
+   "truth": "It had to be perfectly round and true. A hair of wobble on something this heavy, turning day and night, tears a mill apart"
+  },
+  {
+   "id": "oakshaft_48",
+   "start": 538.84,
+   "kind": "raw",
+   "src": "img/oakshaft_spokeshave_on_wood.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.72
+  },
+  {
+   "id": "oakshaft_49",
+   "start": 540.56,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_handplane.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.94,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_50",
+   "start": 543.5,
+   "kind": "raw",
+   "src": "img/oakshaft_wooden_dividers_calipers.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "ov_flowsteps_548",
+   "start": 547.9,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "Turning the journal by hand",
+   "title": "Round and true, by eye",
+   "nodes": [
+    {
+     "label": "Rough it round with a drawknife",
+     "sub": "peeling the corners off the squared end"
+    },
+    {
+     "label": "True it with a spokeshave",
+     "sub": "fine shavings, checking as you go"
+    },
+    {
+     "label": "Test it with wooden dividers",
+     "sub": "turn, check, turn again — round enough to ride fifty years"
+    }
+   ]
+  },
+  {
+   "id": "oakshaft_51",
+   "start": 560.86,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_blacksmith.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.64,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_52",
+   "start": 567.5,
+   "kind": "raw",
+   "src": "img/oakshaft_iron_gudgeon_shaft_end.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 0.8
+  },
+  {
+   "id": "ov_highlightsweep_568",
+   "start": 567.82,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Wood alone would crush and burn at the ends, so",
+   "highlight": "they fit iron into the very ends",
+   "post": ".",
+   "note": "the gudgeons — hand-forged iron pins that actually rode in the bearings"
+  },
+  {
+   "id": "oakshaft_53",
+   "start": 569.96,
+   "kind": "raw",
+   "src": "img/oakshaft_blacksmith_forging_iron.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.16
+  },
+  {
+   "id": "oakshaft_54",
+   "start": 579.12,
+   "kind": "raw",
+   "src": "img/oakshaft_stone_bearing_block.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_55",
+   "start": 615.76,
+   "kind": "raw",
+   "src": "img/oakshaft_wooden_gear_pit_wheel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.82
+  },
+  {
+   "id": "oakshaft_56",
+   "start": 621.58,
+   "kind": "raw",
+   "src": "img/oakshaft_wooden_gear_teeth_macro.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.94
+  },
+  {
+   "id": "oakshaft_57",
+   "start": 627.52,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_carving.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_58",
+   "start": 629.62,
+   "kind": "raw",
+   "src": "img/oakshaft_miller_whittling_cog.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_checklistreveal_641",
+   "start": 641.34,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "Why the gear teeth were wood",
+   "title": "Make the cheap part the part that breaks",
+   "items": [
+    "Softer than the iron it runs against — so it wears first",
+    "One breaks, you knock it out — not the whole gear",
+    "A new cog is an hour with a knife and applewood",
+    "Spares whittled ahead, hung ready on a nail"
+   ],
+   "stamp": "OLD-TIMER WISDOM"
+  },
+  {
+   "id": "oakshaft_59",
+   "start": 669.58,
+   "kind": "raw",
+   "src": "img/oakshaft_spare_cogs_on_nail.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "ov_pullquote_674",
+   "start": 673.64,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "A cog went bad and the whole mill got a little click, once around — and the miller's head came up. He knew that machine by its voice."
+  },
+  {
+   "id": "ov_highlightsweep_695",
+   "start": 695.34,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "That's the whole spirit of the plain book —",
+   "highlight": "make it so it can be fixed",
+   "post": ".",
+   "note": "make it out of what you've got; there's a couple hundred years of that kind of wisdom in the description"
+  },
+  {
+   "id": "oakshaft_60",
+   "start": 706.76,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_sparks.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_710",
+   "start": 710.06,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Every single turn depended on one thing —",
+   "highlight": "the iron set dead center",
+   "post": ".",
+   "note": "a hair off the true center line and the shaft throws itself off, out and back, until it tears the mill apart"
+  },
+  {
+   "id": "oakshaft_61",
+   "start": 728.22,
+   "kind": "raw",
+   "src": "img/oakshaft_old_restored_mill_wheel.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_bigstatreveal_742",
+   "start": 741.74,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Wheel, shaft and water together",
+   "value": 2,
+   "suffix": " tons on two iron ends",
+   "support": "all of it balanced on two greased stone blocks — and raised onto its bearings with rope, levers and a mule"
+  },
+  {
+   "id": "oakshaft_62",
+   "start": 748.38,
+   "kind": "raw",
+   "src": "img/oakshaft_men_raising_beam_pulleys.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.22
+  },
+  {
+   "id": "ov_numberedsteps_756",
+   "start": 755.6,
+   "dur": 6.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "No crane, no motor",
+   "title": "Raising the shaft",
+   "steps": [
+    {
+     "title": "Block and tackle",
+     "sub": "rope and pulleys to take the weight"
+    },
+    {
+     "title": "Levers and rollers",
+     "sub": "ease a beam that weighs what a small car weighs"
+    },
+    {
+     "title": "Every man, boy and mule",
+     "sub": "all of it rounded up for the lift"
+    },
+    {
+     "title": "Slow",
+     "sub": "if it got away it'd take a leg — so, slow"
+    }
+   ]
+  },
+  {
+   "id": "oakshaft_63",
+   "start": 760.72,
+   "kind": "raw",
+   "src": "img/oakshaft_block_and_tackle_rope.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_64",
+   "start": 775.74,
+   "kind": "raw",
+   "src": "img/oakshaft_water_gate_race_opening.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.52
+  },
+  {
+   "id": "oakshaft_65",
+   "start": 778.26,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_rushingwater.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.82,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_66",
+   "start": 780.08,
+   "kind": "raw",
+   "src": "img/oakshaft_water_filling_wheel_buckets.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5
+  },
+  {
+   "id": "oakshaft_67",
+   "start": 780.24,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_wheelbuckets.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_68",
+   "start": 789.76,
+   "kind": "raw",
+   "src": "img/oakshaft_water_wheel_turning_close.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5
+  },
+  {
+   "id": "oakshaft_69",
+   "start": 790.98,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_wheelturn.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "ov_highlightsweep_803",
+   "start": 802.58,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "At the first turn, every man listens —",
+   "highlight": "the sound tells you everything",
+   "post": ".",
+   "note": "a deep steady groan and you've done it; a knock or a shudder and something's not true"
+  },
+  {
+   "id": "oakshaft_70",
+   "start": 827.08,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_flourmill.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_71",
+   "start": 856.12,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_millwheel.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.16,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_859",
+   "start": 859.28,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "When it's right, that oak turns for",
+   "value": 50,
+   "suffix": " years, day and night",
+   "support": "longer than the man who made it will live — some are still sound a hundred years on"
+  },
+  {
+   "id": "ov_pullquote_886",
+   "start": 886.14,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "We think permanent is a thing you buy. They knew permanent is a thing you make — slow, out of the best tree, dried longer than you want to wait. Permanent is patience."
+  },
+  {
+   "id": "oakshaft_72",
+   "start": 893.22,
+   "kind": "raw",
+   "src": "img/oakshaft_power_line_pole_valley.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.82
+  },
+  {
+   "id": "oakshaft_73",
+   "start": 898.04,
+   "kind": "raw",
+   "src": "img/oakshaft_old_electric_motor_box.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "ov_duelcolumns_898",
+   "start": 898.04,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "When the wire reached the valley",
+   "leftName": "The oak shaft",
+   "rightName": "The steel motor",
+   "rows": [
+    {
+     "attr": "A tree you chose, hewn true, dried three years",
+     "leftWins": true
+    },
+    {
+     "attr": "Outlasted the man who made it — fifty years",
+     "leftWins": true
+    },
+    {
+     "attr": "Easier, smaller, bought in a box",
+     "leftWins": false
+    },
+    {
+     "attr": "And the man who could read an oak — no longer needed",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "oakshaft_74",
+   "start": 912.14,
+   "kind": "raw",
+   "src": "img/oakshaft_old_craftsman_hands.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "oakshaft_75",
+   "start": 927.56,
+   "kind": "raw",
+   "src": "img/oakshaft_claudio_reflective_window.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.26
+  },
+  {
+   "id": "ov_pullquote_930",
+   "start": 929.82,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "An ordinary man, with an axe and his patience and his eye, could make the beating heart of a machine out of a tree in his own woods. And it would outlast him."
+  },
+  {
+   "id": "ov_ctacard_951",
+   "start": 950.72,
+   "dur": 6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The old plain ways, written down",
+   "title": "The Plain Almanac",
+   "bullet": "how the old folks seasoned, sealed, built and repaired so a thing lasts a lifetime — link at the top of the description",
+   "price": 0,
+   "cta": "LINK IN THE DESCRIPTION"
+  },
+  {
+   "id": "oakshaft_76",
+   "start": 978.82,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_restoredwheel.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.36,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_77",
+   "start": 986.18,
+   "kind": "raw",
+   "src": "broll/oakshaft_s_oaktree.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "oakshaft_78",
+   "start": 998.9,
+   "kind": "raw",
+   "src": "img/oakshaft_claudio_warm_close.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5
+  }
+ ]
+}
