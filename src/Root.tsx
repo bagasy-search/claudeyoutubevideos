@@ -9,6 +9,7 @@ import { MainOillamp1, TOTAL_FRAMES_OILLAMP1 } from "./VideoEdit/Main_oillamp1";
 import { MainOakshaft, TOTAL_FRAMES_OAKSHAFT } from "./VideoEdit/Main_oakshaft";
 import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
+import { MainRaingutter, TOTAL_FRAMES_RAINGUTTER } from "./VideoEdit/Main_raingutter";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
 import { MainFederer11, TOTAL_FRAMES_FED11 } from "./_fed6/VideoEdit/Main_federer11";
 import { MainFederer12, TOTAL_FRAMES_FED12 } from "./_fed6/VideoEdit/Main_federer12";
@@ -162,6 +163,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Oakshaft" component={MainOakshaft} durationInFrames={TOTAL_FRAMES_OAKSHAFT} fps={30} width={1920} height={1080} />
       <Composition id="Warmblackout" component={MainWarmblackout} durationInFrames={TOTAL_FRAMES_WARMBLACKOUT} fps={30} width={1920} height={1080} />
       <Composition id="Endlessheat" component={MainEndlessheat} durationInFrames={TOTAL_FRAMES_ENDLESSHEAT} fps={30} width={1920} height={1080} />
+      <Composition id="Raingutter" component={MainRaingutter} durationInFrames={TOTAL_FRAMES_RAINGUTTER} fps={30} width={1920} height={1080} />
       {/* DEMO · estilo collage recorte de revista (romero/pastillas/receta) */}
       <Composition id="CollageDemo" component={MainCollageDemo} durationInFrames={TOTAL_FRAMES_COLLAGE} fps={30} width={1920} height={1080} />
       {/* DR. VALLER · romero, arrugas y manchas · avatar + visuales full-screen */}
