@@ -231,9 +231,16 @@ const RootPxappliance: React.FC = () => (
 registerRoot(RootPxappliance);
 `);
 
-// assets list: clips + imgs (+ _blur) + SFX usados
-const assets = [...[...clipsUsed].map((n) => `broll/${n}.mp4`), ...[...imgsUsed], ...[...imgsUsed].map((s) => s.replace(/\.(png|jpg|jpeg)$/i, "_blur.jpg")), ...[...usedSfx]];
+// imgs referenciadas DENTRO de props de componentes (VsDuel left/right.image, CtaCard image, images[])
+const propImgs = new Set();
+const scan = (v) => { if (!v) return; if (typeof v === "string") { if (/^img\/.*\.(png|jpg|jpeg)$/i.test(v)) propImgs.add(v); } else if (Array.isArray(v)) v.forEach(scan); else if (typeof v === "object") Object.values(v).forEach(scan); };
+for (const b of beats) if (b.tipo === "componente") scan(b.props);
+
+// assets list: clips + imgs (+ _blur) + prop-imgs (+ _blur) + SFX usados
+const allImgs = [...new Set([...imgsUsed, ...propImgs])];
+const assets = [...[...clipsUsed].map((n) => `broll/${n}.mp4`), ...allImgs, ...allImgs.map((s) => s.replace(/\.(png|jpg|jpeg)$/i, "_blur.jpg")), ...[...usedSfx]];
 fs.writeFileSync("_pxappliance_assets.txt", assets.join("\n") + "\n");
+console.log(`prop-imgs incluidas: ${propImgs.size} (${[...propImgs].join(", ")})`);
 
 const nClip = beats.filter((b) => b.tipo === "clip").length, nComp = beats.filter((b) => b.tipo === "componente").length, nAv = beats.filter((b) => b.tipo === "avatar").length, nImg = beats.filter((b) => b.tipo === "imagen").length;
 const compTypes = new Set(beats.filter((b) => b.tipo === "componente").map((b) => b.componente));

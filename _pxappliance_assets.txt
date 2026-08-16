@@ -39,7 +39,15 @@ broll/pxappliance_steel_1.mp4
 broll/pxappliance_steel_3.mp4
 broll/pxappliance_gloves_1.mp4
 img/pxappliance_qrcard.png
+img/pxappliance_washer_still.jpg
+img/pxappliance_mold_still.jpg
+img/pxappliance_spray_still.jpg
+img/pxappliance_bottle_still.jpg
 img/pxappliance_qrcard_blur.jpg
+img/pxappliance_washer_still_blur.jpg
+img/pxappliance_mold_still_blur.jpg
+img/pxappliance_spray_still_blur.jpg
+img/pxappliance_bottle_still_blur.jpg
 sfx/lib/glitch_soft_1.mp3
 sfx/lib/whoosh_soft_1.mp3
 sfx/lib/glitch_soft_2.mp3
