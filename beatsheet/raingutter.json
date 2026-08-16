@@ -172,7 +172,8 @@
    "src": "broll/rg_o_watermeter.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.03
+   "dur": 4.03,
+   "noSplit": true
   },
   {
    "id": "raingutter_15",
@@ -431,6 +432,7 @@
    "comp": "FlowSteps",
    "theme": "earth",
    "zone": "full",
+   "kicker": "HOW IT WORKS",
    "title": "How a roof becomes a rain catcher",
    "nodes": [
     {
@@ -490,7 +492,8 @@
    "src": "broll/rg_o_meshscreen.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.97
+   "dur": 2.97,
+   "noSplit": true
   },
   {
    "id": "ov_checklistreveal_246",
@@ -501,6 +504,7 @@
    "comp": "ChecklistReveal",
    "theme": "earth",
    "zone": "topLeft",
+   "kicker": "WHAT THE SCREEN STOPS",
    "title": "A simple screen keeps out",
    "items": [
     "Leaves and twigs off the roof",
@@ -709,6 +713,7 @@
    "comp": "ChecklistReveal",
    "theme": "earth",
    "zone": "topLeft",
+   "kicker": "SCALING UP",
    "title": "Growing your storage, cheap",
    "items": [
     "Link barrels — they fill as one",
@@ -743,7 +748,8 @@
    "src": "broll/rg_o_ibctote.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 2.2,
+   "noSplit": true
   },
   {
    "id": "raingutter_55",
@@ -752,7 +758,8 @@
    "src": "broll/rg_o_ibctote.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.71
+   "dur": 2.71,
+   "noSplit": true
   },
   {
    "id": "ov_bigstatreveal_396",
@@ -818,7 +825,8 @@
    "src": "broll/rg_o_dirtyroof.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 8.45
+   "dur": 8.45,
+   "noSplit": true
   },
   {
    "id": "raingutter_60",
@@ -839,6 +847,7 @@
    "comp": "FlowSteps",
    "theme": "earth",
    "zone": "full",
+   "kicker": "HOW IT WORKS",
    "title": "The first-flush diverter",
    "nodes": [
     {
@@ -862,7 +871,8 @@
    "src": "broll/rg_o_valvepvc.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 8
+   "dur": 8,
+   "noSplit": true
   },
   {
    "id": "raingutter_62",
@@ -1000,7 +1010,8 @@
    "src": "broll/rg_o_dampbasement.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 7.47
+   "dur": 7.47,
+   "noSplit": true
   },
   {
    "id": "ov_bigstatreveal_611",
@@ -1024,7 +1035,8 @@
    "src": "broll/rg_o_overflowhose.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.22
+   "dur": 4.22,
+   "noSplit": true
   },
   {
    "id": "raingutter_72",
@@ -1121,6 +1133,7 @@
    "comp": "ChecklistReveal",
    "theme": "earth",
    "zone": "topLeft",
+   "kicker": "USE IT RIGHT",
    "title": "Drinking vs. everything else",
    "items": [
     "Garden, lawn, laundry, flushing, animals — perfect",
@@ -1147,7 +1160,8 @@
    "src": "broll/rg_o_waterbill.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 8
+   "dur": 8,
+   "noSplit": true
   },
   {
    "id": "raingutter_80",
@@ -1167,6 +1181,7 @@
    "comp": "ChecklistReveal",
    "theme": "earth",
    "zone": "topLeft",
+   "kicker": "KNOW THE LAW",
    "title": "Before a big system — check the law",
    "items": [
     "A few western states restrict rainwater",
@@ -1183,7 +1198,8 @@
    "src": "broll/rg_o_usmap.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 6.57
+   "dur": 6.57,
+   "noSplit": true
   },
   {
    "id": "raingutter_82",
@@ -1267,7 +1283,8 @@
    "src": "broll/rg_o_overflowhose.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.88
+   "dur": 3.88,
+   "noSplit": true
   },
   {
    "id": "raingutter_88",
@@ -1276,7 +1293,8 @@
    "src": "broll/rg_o_spigot.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.78
+   "dur": 4.78,
+   "noSplit": true
   },
   {
    "id": "ov_bigstatreveal_858",
@@ -1392,7 +1410,8 @@
    "src": "broll/rg_o_rampump.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 8
+   "dur": 8,
+   "noSplit": true
   },
   {
    "id": "raingutter_95",

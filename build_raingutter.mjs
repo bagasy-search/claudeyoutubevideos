@@ -48,7 +48,7 @@ const VIS = [
   ["my name s claudio i m amish", P("rg_p_amish_intro"), 5, false],
   ["there s a cistern under the ground on our place", O("rg_o_cistern"), 8, false],
   ["and it catches the rain off the barn roof", S("rg_s_barnroofrain"), 7, true],
-  ["no motor no meter no monthly envelope", S("rg_o_watermeter"), 5, false],
+  ["no motor no meter no monthly envelope", S("rg_o_watermeter"), 5, true],
   ["just a roof and gravity and a hole in the ground", O("rg_o_rainbarrel"), 9, false],
   ["a green buggy mess that i m scared to use", O("rg_o_greenbarrel"), 8, false],
   ["how to get pressure out of it without electricity", P("rg_p_by_barrel"), 8, false],
@@ -76,7 +76,7 @@ const VIS = [
   ["clean the gutter first i mean it", O("rg_o_cloggedgutter"), 6, false],
   ["get the leaves out get the shingle grit out", S("rg_s_cleangutter"), 8, true],
   ["put a screen over the mouth of the gutter", P("rg_p_hold_mesh"), 8, false],
-  ["just a mesh quarter inch is fine", S("rg_o_meshscreen"), 6, false],
+  ["just a mesh quarter inch is fine", S("rg_o_meshscreen"), 6, true],
   ["and this is the important one the mosquitoes", S("rg_s_mosquito"), 6, true],
   ["mosquitoes need still water to lay their eggs", S("rg_s_stillwater"), 7, true],
   ["top of the downspout and the lid of the barrel both", O("rg_o_screenedbarrel"), 9, false],
@@ -98,28 +98,28 @@ const VIS = [
   ["think of it as the proof", P("rg_p_by_barrel"), 5, false],
   ["the cheapest way to grow is to link barrels together", O("rg_o_barrels_linked"), 9, false],
   ["run them along the side of the shed", O("rg_o_barrelrow"), 6, false],
-  ["what s called an ibc tote", S("rg_o_ibctote"), 5, false],
-  ["those big square tanks in a metal cage", S("rg_o_ibctote"), 7, false],
-  ["two of those totes on the shady side of the house", S("rg_o_twototes"), 9, false],
+  ["what s called an ibc tote", S("rg_o_ibctote"), 5, true],
+  ["those big square tanks in a metal cage", S("rg_o_ibctote"), 7, true],
+  ["two of those totes on the shady side of the house", S("rg_o_twototes"), 9, true],
   ["that s a cistern a big tank in the ground", O("rg_o_cistern"), 8, false],
   ["holds thousands of gallons through the dry months", S("rg_s_dryearth"), 6, true],
 
   // ── FIRST FLUSH (520–610) ──
   ["the first water off your roof is dirty", P("rg_p_point_roof"), 7, false],
-  ["collecting dust pollen bird droppings soot", S("rg_o_dirtyroof"), 5, false],
+  ["collecting dust pollen bird droppings soot", S("rg_o_dirtyroof"), 5, true],
   ["that first gush of water sweeps all of that off the roof", S("rg_s_roofrunoff"), 10, true],
-  ["the fix is called a first flush", S("rg_o_firstflush"), 6, false],
-  ["a piece of pvc pipe standing straight up", S("rg_o_firstflush"), 7, false],
+  ["the fix is called a first flush", S("rg_o_firstflush"), 6, true],
+  ["a piece of pvc pipe standing straight up", S("rg_o_firstflush"), 7, true],
   ["the water rises past it and flows on into your barrel", S("rg_s_pvcwater"), 9, true],
-  ["you put a tiny drip hole or a little valve", S("rg_o_valvepvc"), 8, false],
+  ["you put a tiny drip hole or a little valve", S("rg_o_valvepvc"), 8, true],
   ["throw away about the first 10 gallons", P("rg_p_first_flush"), 6, false],
-  ["build the first flush everybody skips it", S("rg_o_firstflush"), 6, false],
+  ["build the first flush everybody skips it", S("rg_o_firstflush"), 6, true],
 
   // ── PRESSURE (610–680) ──
   ["a sad little dribble", S("rg_s_dribble"), 4, true],
   ["you lift the barrel up height is pressure", P("rg_p_lift_barrel"), 7, false],
-  ["you put your barrel up on cinder blocks", S("rg_o_cinderblocks"), 7, false],
-  ["get it two three four feet off the ground", S("rg_o_barrelstand"), 8, false],
+  ["you put your barrel up on cinder blocks", S("rg_o_cinderblocks"), 7, true],
+  ["get it two three four feet off the ground", S("rg_o_barrelstand"), 8, true],
   ["run a soaker hose across the whole garden", S("rg_s_soakerhose"), 7, true],
   ["water falling is water with pressure", S("rg_s_spigotflow"), 5, true],
   ["there s an amish pump that does exactly that", P("rg_p_point_desc"), 7, false],
@@ -127,8 +127,8 @@ const VIS = [
   // ── OVERFLOW (680–720) ──
   ["let me talk about overflow", P("rg_p_by_barrel"), 4, false],
   ["the water has to go somewhere", S("rg_s_overflowwater"), 5, true],
-  ["water against a foundation is how basements flood", S("rg_o_dampbasement"), 7, false],
-  ["put an overflow outlet near the top of the barrel", S("rg_o_overflowhose"), 9, false],
+  ["water against a foundation is how basements flood", S("rg_o_dampbasement"), 7, true],
+  ["put an overflow outlet near the top of the barrel", S("rg_o_overflowhose"), 9, true],
   ["aim it away from the house downhill", S("rg_s_gardenflow"), 6, true],
 
   // ── MYTH: ACID RAIN + WATER ITSELF IS CLEAN (720–800) ──
@@ -141,13 +141,13 @@ const VIS = [
   // ── WARNING 1: POTABILITY (800–860) ──
   ["do not assume this water is safe to drink", P("rg_p_serious_safety"), 8, false],
   ["washing the car flushing a toilet washing clothes", S("rg_s_laundry"), 7, true],
-  ["that alone is going to gut your water bill", S("rg_o_waterbill"), 8, false],
+  ["that alone is going to gut your water bill", S("rg_o_waterbill"), 8, true],
   ["you need good filtration and you need to disinfect it", S("rg_s_boilwater"), 9, true],
-  ["there s sand filtration there s settling", S("rg_o_sandfilter"), 5, false],
+  ["there s sand filtration there s settling", S("rg_o_sandfilter"), 5, true],
 
   // ── WARNING 2: LEGAL (860–930) ──
   ["it is against the rules to collect the rain", P("rg_p_serious_safety"), 8, false],
-  ["a handful of states out west especially", S("rg_o_usmap"), 6, false],
+  ["a handful of states out west especially", S("rg_o_usmap"), 6, true],
   ["some limit how much you can store", O("rg_o_rainbarrel"), 5, false],
   ["some towns will give you a rebate for it", O("rg_o_barrels_linked"), 7, false],
   ["check your own state and your own town", P("rg_p_point_desc"), 7, false],
@@ -156,9 +156,9 @@ const VIS = [
   ["here s your weekend here s the whole thing in order", P("rg_p_point_desc"), 9, false],
   ["clean your gutter and put a screen on the down spout", S("rg_s_cleangutter"), 9, true],
   ["get a food grade barrel 55 gallons to start", O("rg_o_bluedrum"), 8, false],
-  ["put the barrel up on blocks two feet at least", S("rg_o_cinderblocks"), 8, false],
-  ["add an overflow near the top aimed away from your house", S("rg_o_overflowhose"), 9, false],
-  ["put a spigot near the bottom", S("rg_o_spigot"), 5, false],
+  ["put the barrel up on blocks two feet at least", S("rg_o_cinderblocks"), 8, true],
+  ["add an overflow near the top aimed away from your house", S("rg_o_overflowhose"), 9, true],
+  ["put a spigot near the bottom", S("rg_o_spigot"), 5, true],
   ["watch clean water come out that you did not pay a soul for", S("rg_s_spigotflow"), 10, true],
 
   // ── CTA + CLOSE (990–1007) ──
@@ -166,7 +166,7 @@ const VIS = [
   ["they cannot shut off the sky", O("rg_o_rainsky"), 5, false],
   ["are you going to put a barrel under it", P("rg_p_by_barrel"), 7, false],
   ["leave a comment and tell me where you re at", P("rg_p_point_desc"), 8, false],
-  ["the next one i want to show you is the pump", S("rg_o_rampump"), 8, false],
+  ["the next one i want to show you is the pump", S("rg_o_rampump"), 8, true],
   ["is already falling on you for free", S("rg_s_rainhands"), 6, true],
   ["go put the barrel out i ll see you on the next one", P("rg_p_close_smile"), 10, false],
 ];
@@ -208,14 +208,14 @@ const PREMIUM = [
     pre: "The whole job:", highlight: "stop the water running away, and put it where you can use it", post: ".", note: "everything else is just detail",
   }, 5),
   C("FlowSteps", "the rain hits the roof runs to the edge", 6.2, "full", {
-    title: "How a roof becomes a rain catcher", nodes: [
+    kicker: "HOW IT WORKS", title: "How a roof becomes a rain catcher", nodes: [
       { label: "Rain hits the roof", sub: "your whole roof is already a collector" },
       { label: "Gutter → downspout", sub: "it's all funneled to one pipe" },
       { label: "Interrupt the downspout", sub: "send it to a barrel, not the curb" },
     ],
   }, 7),
   C("ChecklistReveal", "that mesh is going to keep out the leaves", 6.2, "topLeft", {
-    title: "A simple screen keeps out", items: [
+    kicker: "WHAT THE SCREEN STOPS", title: "A simple screen keeps out", items: [
       "Leaves and twigs off the roof",
       "Shingle grit and roof debris",
       "Mosquitoes — no still water to breed in",
@@ -236,7 +236,7 @@ const PREMIUM = [
     eyebrow: "The first water off the roof is the", value: 1, prefix: "#", suffix: " thing people skip", support: "dust, pollen, bird droppings, soot and grit — the first gush is the dirtiest water of the whole storm",
   }, 7),
   C("FlowSteps", "you can build a first flush diverter", 6.4, "full", {
-    title: "The first-flush diverter", nodes: [
+    kicker: "HOW IT WORKS", title: "The first-flush diverter", nodes: [
       { label: "Dirty first water fills a standing pipe", sub: "a length of PVC beside the downspout" },
       { label: "Once it's full, clean water rises past", sub: "and flows on into your barrel" },
       { label: "A drip hole empties it after the storm", sub: "resets itself for next time" },
@@ -257,7 +257,7 @@ const PREMIUM = [
     mythLabel: "MYTH", truthLabel: "TRUTH",
   }, 5),
   C("ChecklistReveal", "do not assume this water is safe to drink", 6.6, "topLeft", {
-    title: "Drinking vs. everything else", items: [
+    kicker: "USE IT RIGHT", title: "Drinking vs. everything else", items: [
       "Garden, lawn, laundry, flushing, animals — perfect",
       "That alone guts most of a household's water bill",
       "Drinking / cooking: filter AND disinfect first",
@@ -266,7 +266,7 @@ const PREMIUM = [
     stamp: "DON'T DRINK IT RAW",
   }, 8),
   C("ChecklistReveal", "it is against the rules to collect the rain", 6.4, "topLeft", {
-    title: "Before a big system — check the law", items: [
+    kicker: "KNOW THE LAW", title: "Before a big system — check the law", items: [
       "A few western states restrict rainwater",
       "Some just want you to register it",
       "Most of the country: fine, even rebates",
@@ -327,7 +327,7 @@ const PREMIUM = [
     ],
   }, 5),
   C("ChecklistReveal", "here s how you grow it without spending a fortune", 6.4, "topLeft", {
-    title: "Growing your storage, cheap", items: [
+    kicker: "SCALING UP", title: "Growing your storage, cheap", items: [
       "Link barrels — they fill as one",
       "IBC tote = 275 gallons (five barrels)",
       "Totes on the shady side of the house",
