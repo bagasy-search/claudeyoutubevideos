@@ -70,8 +70,11 @@ function buildWindows(): AvatarWindow[] {
     pts.push({ start: b.start, mode: "hidden", pr: 4 });                         // componente full-screen → avatar hidden
     pts.push({ start: +(b.start + d).toFixed(2), mode: "full", pr: 1 });         // termina → avatar FULL
   }
-  // el avatar full lo dan los huecos; el modo activo = último punto en el tiempo (pr desempata mismo ms).
-  pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
+  // el avatar full lo dan los huecos; el modo activo = último punto en el tiempo. En un MISMO ms,
+  // el de MAYOR pr debe aplicarse ÚLTIMO para ganar (colapso "last wins") → ordená pr ASCENDENTE.
+  // ⛔ Si se ordena pr DESC, el "full" (pr1) del fin de un clip pisa el "hidden" (pr3) del próximo
+  // contenido cuando el borde coincide (clip que llena todo su slot) → avatar tapa el 80% del b-roll.
+  pts.sort((a, b) => a.start - b.start || a.pr - b.pr);
   const coll: AvatarWindow[] = [];
   let last = "";
   for (const p of pts) { if (p.mode !== last) { coll.push({ start: p.start, mode: p.mode }); last = p.mode; } }
@@ -123,7 +126,7 @@ export const MainFcscanela: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* CAPA 1 — B-ROLL DENSO continuo (stock .mp4) */}
       {FCSCANELA_BROLL.map((b) => {
-        const dd = Math.max(1, sec((b as any).cov ?? Math.min(b.dur, 10)));
+        const dd = Math.max(1, sec(((b as any).cov ?? Math.min(b.dur, 10)) + 0.6));  // +0.6 cola: cubre sub-huecos de redondeo (queda bajo el avatar/próximo clip)
         const half = inHalfR(b.start);
         const shot = <RawShot durationInFrames={dd} src={b.src} hue="cold" />;
         return (
@@ -135,7 +138,7 @@ export const MainFcscanela: React.FC = () => {
 
       {/* CAPA 2 — FOTOS fcscanela_*.png TOPEADAS (~3.6s) */}
       {rawTop.map((b: any) => {
-        const d = Math.max(1, sec(Math.min(b.dur, HERO_CAP)));
+        const d = Math.max(1, sec(Math.min(b.dur, HERO_CAP) + 0.6));  // +0.6 cola anti sub-hueco (la foto es estática, extenderla no cuesta)
         const half = inHalfR(b.start);
         const shot = <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />;
         return (
