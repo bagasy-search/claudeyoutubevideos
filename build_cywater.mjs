@@ -248,7 +248,7 @@ const COMPONENTS = [
   // ── CTA + NEXT (983–1035) ──
   { t: 986, id: "cmp_almanac", kind: "callout", hue: "amber", accent: "good",
     figure: "The Plain Almanac", eyebrow: "Link below this video", caption: "the whole set written out — the spring, the cistern, the root cellar — step by step with the real measurements and numbers",
-    bg: "an old vintage homestead almanac book open on a wooden table in warm window light" },
+    bg: "a plain old leather-bound book with a completely blank cover and no text or title, closed on a rustic wooden table beside a candle, warm window light" },
   { t: 1014, id: "cmp_next", kind: "nextvideo", kicker: "Next time",
     title: "The springhouse, up close",
     sub: "How to build the cold room that holds food all summer on nothing but the water running through it." },
