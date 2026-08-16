@@ -46,6 +46,29 @@ for (const b of beats) {
 let durs = {};
 try { durs = JSON.parse(fs.readFileSync("_v3/pxappliance_clipdurs.json", "utf8")); } catch {}
 
+// ── ANTI-HUECO: ningún beat de CONTENIDO más largo que su choreografía/clip real.
+// El excedente (cuando Whisper no cortó la oración) se rellena con AVATAR FULL → nunca
+// se ve el fondo/placeholder crema entre transiciones. (bug medido en pxgarden 62s.)
+{
+  const CAP_COMP = 9.5, CAP_IMG = 6.8;
+  const out = [];
+  for (const b of beats) {
+    const durS = (b.ms_out - b.ms_in) / 1000;
+    let cap = Infinity;
+    if (b.tipo === "componente") cap = b.componente === "ChapterTrailCard" ? 9.5 : CAP_COMP;
+    else if (b.tipo === "imagen") cap = CAP_IMG;
+    else if (b.tipo === "clip") cap = Math.min(9.5, (durs[b.clip] || 10) - 0.2);
+    if (durS > cap + 0.5) {
+      const cut = b.ms_in + Math.round(cap * 1000);
+      out.push({ ...b, ms_out: cut });
+      out.push({ ms_in: cut, ms_out: b.ms_out, tipo: "avatar", avatar: "full" });
+    } else out.push(b);
+  }
+  const nSplit = out.length - beats.length;
+  beats = out;
+  console.log(`ANTI-HUECO: ${nSplit} beats de contenido recortados → avatar full en el excedente`);
+}
+
 // ── SFX: biblioteca por rol (public/sfx/lib) → picker que ROTA variantes ──────
 let SFXLIB = {};
 try {
