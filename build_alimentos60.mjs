@@ -67,7 +67,7 @@ for (const c of CARDS) needs.push({name: c.img, query: c.q, type: 'photo'});
 const AMBIENT = [
   'mature woman touching face skin', 'older woman smiling outdoors sunlight', 'fresh vegetables wooden table',
   'hands cracking egg bowl', 'water splash fresh skin', 'sliced oranges citrus closeup',
-  'grandmother hands kitchen cooking', 'woman applying face cream mirror', 'red bell peppers market',
+  'grandmother hands kitchen cooking', 'natural face cream jar close up texture', 'red bell peppers market',
   'healthy breakfast plate eggs', 'sardines olive oil plate', 'elderly woman laughing portrait',
   'skin texture macro close up', 'green salad fresh vegetables',
   'woman drinking glass of water', 'fresh eggs basket farm', 'senior woman wellness peaceful',

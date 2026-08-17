@@ -186,11 +186,11 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "cut_amb8_88",
+    "id": "cut_amb9_88",
     "start": 88.42,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb8.mp4",
+    "src": "broll/al_amb9.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -206,31 +206,31 @@ export const BEATS: Cue[] = [
     "dur": 20.76
   },
   {
-    "id": "cut_amb9_95",
+    "id": "cut_amb10_95",
     "start": 95.02,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb9.mp4",
+    "src": "broll/al_amb10.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb10_102",
+    "id": "cut_amb11_102",
     "start": 101.62,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb10.mp4",
+    "src": "broll/al_amb11.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb11_108",
+    "id": "cut_amb12_108",
     "start": 108.22,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb11.mp4",
+    "src": "broll/al_amb12.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -246,11 +246,11 @@ export const BEATS: Cue[] = [
     "dur": 14.9
   },
   {
-    "id": "cut_amb12_115",
+    "id": "cut_amb13_115",
     "start": 114.82,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb12.mp4",
+    "src": "broll/al_amb13.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -286,11 +286,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb13_138",
+    "id": "cut_amb14_138",
     "start": 138.12,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb13.mp4",
+    "src": "broll/al_amb14.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -311,31 +311,31 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb14_158",
+    "id": "cut_amb15_158",
     "start": 158.38,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb14.mp4",
+    "src": "broll/al_amb15.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb15_165",
+    "id": "cut_amb16_165",
     "start": 164.98,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb15.mp4",
+    "src": "broll/al_amb16.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb16_172",
+    "id": "cut_amb17_172",
     "start": 171.58,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb16.mp4",
+    "src": "broll/al_amb17.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -351,21 +351,21 @@ export const BEATS: Cue[] = [
     "dur": 10.88
   },
   {
-    "id": "cut_amb17_178",
+    "id": "cut_amb18_178",
     "start": 178.18,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb17.mp4",
+    "src": "broll/al_amb18.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb18_185",
+    "id": "cut_amb19_185",
     "start": 184.78,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb18.mp4",
+    "src": "broll/al_amb19.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -382,21 +382,21 @@ export const BEATS: Cue[] = [
     "dur": 19.46
   },
   {
-    "id": "cut_amb19_191",
+    "id": "cut_amb20_191",
     "start": 191.38,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb19.mp4",
+    "src": "broll/al_amb20.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb20_198",
+    "id": "cut_amb21_198",
     "start": 197.98,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb20.mp4",
+    "src": "broll/al_amb21.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -464,21 +464,21 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb21_231",
+    "id": "cut_amb22_231",
     "start": 231.3,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb21.mp4",
+    "src": "broll/al_amb22.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb22_238",
+    "id": "cut_amb23_238",
     "start": 237.9,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb22.mp4",
+    "src": "broll/al_amb23.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -518,21 +518,21 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb23_260",
+    "id": "cut_amb24_260",
     "start": 259.82,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb23.mp4",
+    "src": "broll/al_amb24.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb24_266",
+    "id": "cut_amb1_266",
     "start": 266.42,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb24.mp4",
+    "src": "broll/al_amb1.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -548,51 +548,51 @@ export const BEATS: Cue[] = [
     "dur": 31.28
   },
   {
-    "id": "cut_amb1_273",
+    "id": "cut_amb2_273",
     "start": 273.02,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb1.mp4",
+    "src": "broll/al_amb2.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb2_280",
+    "id": "cut_amb3_280",
     "start": 279.62,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb2.mp4",
+    "src": "broll/al_amb3.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb3_286",
+    "id": "cut_amb4_286",
     "start": 286.22,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb3.mp4",
+    "src": "broll/al_amb4.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb4_293",
+    "id": "cut_amb5_293",
     "start": 292.82,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb4.mp4",
+    "src": "broll/al_amb5.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb5_299",
+    "id": "cut_amb6_299",
     "start": 299.42,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb5.mp4",
+    "src": "broll/al_amb6.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -678,11 +678,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb6_336",
+    "id": "cut_amb7_336",
     "start": 336,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb6.mp4",
+    "src": "broll/al_amb7.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -699,21 +699,21 @@ export const BEATS: Cue[] = [
     "dur": 10.6
   },
   {
-    "id": "cut_amb7_343",
+    "id": "cut_amb9_343",
     "start": 342.6,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb7.mp4",
+    "src": "broll/al_amb9.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb8_349",
+    "id": "cut_amb10_349",
     "start": 349.2,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb8.mp4",
+    "src": "broll/al_amb10.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -730,21 +730,21 @@ export const BEATS: Cue[] = [
     "dur": 15.04
   },
   {
-    "id": "cut_amb9_356",
+    "id": "cut_amb11_356",
     "start": 355.8,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb9.mp4",
+    "src": "broll/al_amb11.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb10_362",
+    "id": "cut_amb12_362",
     "start": 362.4,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb10.mp4",
+    "src": "broll/al_amb12.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -760,11 +760,11 @@ export const BEATS: Cue[] = [
     "dur": 3.54
   },
   {
-    "id": "cut_amb11_369",
+    "id": "cut_amb13_369",
     "start": 369,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb11.mp4",
+    "src": "broll/al_amb13.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -781,11 +781,11 @@ export const BEATS: Cue[] = [
     "dur": 9.58
   },
   {
-    "id": "cut_amb12_376",
+    "id": "cut_amb14_376",
     "start": 375.6,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb12.mp4",
+    "src": "broll/al_amb14.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -821,11 +821,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb13_390",
+    "id": "cut_amb15_390",
     "start": 389.82,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb13.mp4",
+    "src": "broll/al_amb15.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -850,11 +850,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb14_407",
+    "id": "cut_amb16_407",
     "start": 406.58,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb14.mp4",
+    "src": "broll/al_amb16.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -892,11 +892,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb15_423",
+    "id": "cut_amb17_423",
     "start": 422.6,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb15.mp4",
+    "src": "broll/al_amb17.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -923,11 +923,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb16_440",
+    "id": "cut_amb18_440",
     "start": 439.5,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb16.mp4",
+    "src": "broll/al_amb18.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -943,11 +943,11 @@ export const BEATS: Cue[] = [
     "dur": 12.82
   },
   {
-    "id": "cut_amb17_446",
+    "id": "cut_amb19_446",
     "start": 446.1,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb17.mp4",
+    "src": "broll/al_amb19.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -1009,11 +1009,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb18_472",
+    "id": "cut_amb20_472",
     "start": 471.82,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb18.mp4",
+    "src": "broll/al_amb20.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -1051,31 +1051,31 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb19_487",
+    "id": "cut_amb21_487",
     "start": 486.56,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb19.mp4",
+    "src": "broll/al_amb21.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb20_493",
+    "id": "cut_amb22_493",
     "start": 493.16,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb20.mp4",
+    "src": "broll/al_amb22.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb21_500",
+    "id": "cut_amb23_500",
     "start": 499.76,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb21.mp4",
+    "src": "broll/al_amb23.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -1107,11 +1107,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb22_514",
+    "id": "cut_amb24_514",
     "start": 513.96,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb22.mp4",
+    "src": "broll/al_amb24.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -1132,21 +1132,21 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb23_531",
+    "id": "cut_amb1_531",
     "start": 531.08,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb23.mp4",
+    "src": "broll/al_amb1.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb24_538",
+    "id": "cut_amb2_538",
     "start": 537.68,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb24.mp4",
+    "src": "broll/al_amb2.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -1184,21 +1184,21 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb1_555",
+    "id": "cut_amb3_555",
     "start": 554.62,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb1.mp4",
+    "src": "broll/al_amb3.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb2_561",
+    "id": "cut_amb4_561",
     "start": 561.22,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb2.mp4",
+    "src": "broll/al_amb4.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -1261,41 +1261,41 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb3_592",
+    "id": "cut_amb5_592",
     "start": 592.06,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb3.mp4",
+    "src": "broll/al_amb5.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb4_599",
+    "id": "cut_amb6_599",
     "start": 598.66,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb4.mp4",
+    "src": "broll/al_amb6.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb5_605",
+    "id": "cut_amb7_605",
     "start": 605.26,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb5.mp4",
+    "src": "broll/al_amb7.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb6_612",
+    "id": "cut_amb9_612",
     "start": 611.86,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb6.mp4",
+    "src": "broll/al_amb9.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -1311,11 +1311,11 @@ export const BEATS: Cue[] = [
     "dur": 8.7
   },
   {
-    "id": "cut_amb7_618",
+    "id": "cut_amb10_618",
     "start": 618.46,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb7.mp4",
+    "src": "broll/al_amb10.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -1339,21 +1339,21 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb8_634",
+    "id": "cut_amb11_634",
     "start": 634.14,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb8.mp4",
+    "src": "broll/al_amb11.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb9_641",
+    "id": "cut_amb12_641",
     "start": 640.74,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb9.mp4",
+    "src": "broll/al_amb12.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -1374,11 +1374,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb10_654",
+    "id": "cut_amb13_654",
     "start": 654.38,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb10.mp4",
+    "src": "broll/al_amb13.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -1420,11 +1420,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb11_686",
+    "id": "cut_amb14_686",
     "start": 685.98,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb11.mp4",
+    "src": "broll/al_amb14.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -1492,11 +1492,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb12_720",
+    "id": "cut_amb15_720",
     "start": 719.98,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb12.mp4",
+    "src": "broll/al_amb15.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -1517,31 +1517,31 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb13_734",
+    "id": "cut_amb16_734",
     "start": 733.62,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb13.mp4",
+    "src": "broll/al_amb16.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb14_740",
+    "id": "cut_amb17_740",
     "start": 740.22,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb14.mp4",
+    "src": "broll/al_amb17.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb15_747",
+    "id": "cut_amb18_747",
     "start": 746.82,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb15.mp4",
+    "src": "broll/al_amb18.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -1600,21 +1600,21 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb16_778",
+    "id": "cut_amb19_778",
     "start": 777.56,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb16.mp4",
+    "src": "broll/al_amb19.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb17_784",
+    "id": "cut_amb20_784",
     "start": 784.16,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb17.mp4",
+    "src": "broll/al_amb20.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -1642,61 +1642,61 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb18_802",
+    "id": "cut_amb21_802",
     "start": 802.3,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb18.mp4",
+    "src": "broll/al_amb21.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb19_809",
+    "id": "cut_amb22_809",
     "start": 808.9,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb19.mp4",
+    "src": "broll/al_amb22.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb20_816",
+    "id": "cut_amb23_816",
     "start": 815.5,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb20.mp4",
+    "src": "broll/al_amb23.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb21_822",
+    "id": "cut_amb24_822",
     "start": 822.1,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb21.mp4",
+    "src": "broll/al_amb24.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb22_829",
+    "id": "cut_amb1_829",
     "start": 828.7,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb22.mp4",
+    "src": "broll/al_amb1.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb23_835",
+    "id": "cut_amb2_835",
     "start": 835.3,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb23.mp4",
+    "src": "broll/al_amb2.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -1717,31 +1717,31 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb24_848",
+    "id": "cut_amb3_848",
     "start": 848.02,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb24.mp4",
+    "src": "broll/al_amb3.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb1_855",
+    "id": "cut_amb4_855",
     "start": 854.62,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb1.mp4",
+    "src": "broll/al_amb4.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb2_861",
+    "id": "cut_amb5_861",
     "start": 861.22,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb2.mp4",
+    "src": "broll/al_amb5.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -1768,61 +1768,61 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb3_880",
+    "id": "cut_amb6_880",
     "start": 879.8,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb3.mp4",
+    "src": "broll/al_amb6.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb4_886",
+    "id": "cut_amb7_886",
     "start": 886.4,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb4.mp4",
+    "src": "broll/al_amb7.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb5_893",
+    "id": "cut_amb9_893",
     "start": 893,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb5.mp4",
+    "src": "broll/al_amb9.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb6_900",
+    "id": "cut_amb10_900",
     "start": 899.6,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb6.mp4",
+    "src": "broll/al_amb10.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb7_906",
+    "id": "cut_amb11_906",
     "start": 906.2,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb7.mp4",
+    "src": "broll/al_amb11.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb8_913",
+    "id": "cut_amb12_913",
     "start": 912.8,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb8.mp4",
+    "src": "broll/al_amb12.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -1856,11 +1856,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb9_928",
+    "id": "cut_amb13_928",
     "start": 928.14,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb9.mp4",
+    "src": "broll/al_amb13.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -1881,41 +1881,41 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb10_941",
+    "id": "cut_amb14_941",
     "start": 941.1,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb10.mp4",
+    "src": "broll/al_amb14.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb11_948",
+    "id": "cut_amb15_948",
     "start": 947.7,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb11.mp4",
+    "src": "broll/al_amb15.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb12_954",
+    "id": "cut_amb16_954",
     "start": 954.3,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb12.mp4",
+    "src": "broll/al_amb16.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb13_961",
+    "id": "cut_amb17_961",
     "start": 960.9,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb13.mp4",
+    "src": "broll/al_amb17.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -1932,31 +1932,31 @@ export const BEATS: Cue[] = [
     "dur": 19.48
   },
   {
-    "id": "cut_amb14_968",
+    "id": "cut_amb18_968",
     "start": 967.5,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb14.mp4",
+    "src": "broll/al_amb18.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb15_974",
+    "id": "cut_amb19_974",
     "start": 974.1,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb15.mp4",
+    "src": "broll/al_amb19.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb16_981",
+    "id": "cut_amb20_981",
     "start": 980.7,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb16.mp4",
+    "src": "broll/al_amb20.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -2042,11 +2042,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb17_1020",
+    "id": "cut_amb21_1020",
     "start": 1020.32,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb17.mp4",
+    "src": "broll/al_amb21.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -2062,31 +2062,31 @@ export const BEATS: Cue[] = [
     "dur": 17.92
   },
   {
-    "id": "cut_amb18_1027",
+    "id": "cut_amb22_1027",
     "start": 1026.92,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb18.mp4",
+    "src": "broll/al_amb22.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb19_1034",
+    "id": "cut_amb23_1034",
     "start": 1033.52,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb19.mp4",
+    "src": "broll/al_amb23.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb20_1040",
+    "id": "cut_amb24_1040",
     "start": 1040.12,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb20.mp4",
+    "src": "broll/al_amb24.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -2123,48 +2123,8 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb21_1058",
+    "id": "cut_amb1_1058",
     "start": 1058,
-    "dur": 3.2,
-    "kind": "full",
-    "src": "broll/al_amb21.mp4",
-    "video": true,
-    "ken": "in",
-    "variant": "whip"
-  },
-  {
-    "id": "cut_amb22_1065",
-    "start": 1064.6,
-    "dur": 3.2,
-    "kind": "full",
-    "src": "broll/al_amb22.mp4",
-    "video": true,
-    "ken": "out",
-    "variant": "whip"
-  },
-  {
-    "id": "cut_amb23_1071",
-    "start": 1071.2,
-    "dur": 3.2,
-    "kind": "full",
-    "src": "broll/al_amb23.mp4",
-    "video": true,
-    "ken": "left",
-    "variant": "whip"
-  },
-  {
-    "id": "cut_amb24_1078",
-    "start": 1077.8,
-    "dur": 3.2,
-    "kind": "full",
-    "src": "broll/al_amb24.mp4",
-    "video": true,
-    "ken": "right",
-    "variant": "whip"
-  },
-  {
-    "id": "cut_amb1_1084",
-    "start": 1084.4,
     "dur": 3.2,
     "kind": "full",
     "src": "broll/al_amb1.mp4",
@@ -2173,8 +2133,8 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "cut_amb2_1091",
-    "start": 1091,
+    "id": "cut_amb2_1065",
+    "start": 1064.6,
     "dur": 3.2,
     "kind": "full",
     "src": "broll/al_amb2.mp4",
@@ -2183,8 +2143,8 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "cut_amb3_1098",
-    "start": 1097.6,
+    "id": "cut_amb3_1071",
+    "start": 1071.2,
     "dur": 3.2,
     "kind": "full",
     "src": "broll/al_amb3.mp4",
@@ -2193,8 +2153,8 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "cut_amb4_1104",
-    "start": 1104.2,
+    "id": "cut_amb4_1078",
+    "start": 1077.8,
     "dur": 3.2,
     "kind": "full",
     "src": "broll/al_amb4.mp4",
@@ -2203,11 +2163,51 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "cut_amb5_1111",
-    "start": 1110.8,
+    "id": "cut_amb5_1084",
+    "start": 1084.4,
     "dur": 3.2,
     "kind": "full",
     "src": "broll/al_amb5.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "cut_amb6_1091",
+    "start": 1091,
+    "dur": 3.2,
+    "kind": "full",
+    "src": "broll/al_amb6.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "cut_amb7_1098",
+    "start": 1097.6,
+    "dur": 3.2,
+    "kind": "full",
+    "src": "broll/al_amb7.mp4",
+    "video": true,
+    "ken": "left",
+    "variant": "whip"
+  },
+  {
+    "id": "cut_amb9_1104",
+    "start": 1104.2,
+    "dur": 3.2,
+    "kind": "full",
+    "src": "broll/al_amb9.mp4",
+    "video": true,
+    "ken": "right",
+    "variant": "whip"
+  },
+  {
+    "id": "cut_amb10_1111",
+    "start": 1110.8,
+    "dur": 3.2,
+    "kind": "full",
+    "src": "broll/al_amb10.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
@@ -2223,31 +2223,31 @@ export const BEATS: Cue[] = [
     "dur": 25.06
   },
   {
-    "id": "cut_amb6_1117",
+    "id": "cut_amb11_1117",
     "start": 1117.4,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb6.mp4",
+    "src": "broll/al_amb11.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb7_1124",
+    "id": "cut_amb12_1124",
     "start": 1124,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb7.mp4",
+    "src": "broll/al_amb12.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb8_1131",
+    "id": "cut_amb13_1131",
     "start": 1130.6,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb8.mp4",
+    "src": "broll/al_amb13.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -2274,31 +2274,31 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb9_1150",
+    "id": "cut_amb14_1150",
     "start": 1150.48,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb9.mp4",
+    "src": "broll/al_amb14.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb10_1157",
+    "id": "cut_amb15_1157",
     "start": 1157.08,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb10.mp4",
+    "src": "broll/al_amb15.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb11_1164",
+    "id": "cut_amb16_1164",
     "start": 1163.68,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb11.mp4",
+    "src": "broll/al_amb16.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -2315,11 +2315,11 @@ export const BEATS: Cue[] = [
     "dur": 10.94
   },
   {
-    "id": "cut_amb12_1170",
+    "id": "cut_amb17_1170",
     "start": 1170.28,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb12.mp4",
+    "src": "broll/al_amb17.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -2348,61 +2348,61 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb13_1190",
+    "id": "cut_amb18_1190",
     "start": 1190.14,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb13.mp4",
+    "src": "broll/al_amb18.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb14_1197",
+    "id": "cut_amb19_1197",
     "start": 1196.74,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb14.mp4",
+    "src": "broll/al_amb19.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb15_1203",
+    "id": "cut_amb20_1203",
     "start": 1203.34,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb15.mp4",
+    "src": "broll/al_amb20.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb16_1210",
+    "id": "cut_amb21_1210",
     "start": 1209.94,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb16.mp4",
+    "src": "broll/al_amb21.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
   },
   {
-    "id": "cut_amb17_1217",
+    "id": "cut_amb22_1217",
     "start": 1216.54,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb17.mp4",
+    "src": "broll/al_amb22.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb18_1223",
+    "id": "cut_amb23_1223",
     "start": 1223.14,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb18.mp4",
+    "src": "broll/al_amb23.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
@@ -2418,21 +2418,21 @@ export const BEATS: Cue[] = [
     "dur": 21.52
   },
   {
-    "id": "cut_amb19_1230",
+    "id": "cut_amb24_1230",
     "start": 1229.74,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb19.mp4",
+    "src": "broll/al_amb24.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
   },
   {
-    "id": "cut_amb20_1236",
+    "id": "cut_amb1_1236",
     "start": 1236.34,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb20.mp4",
+    "src": "broll/al_amb1.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -2456,31 +2456,31 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb21_1255",
+    "id": "cut_amb2_1255",
     "start": 1255.32,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb21.mp4",
+    "src": "broll/al_amb2.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
   },
   {
-    "id": "cut_amb22_1262",
+    "id": "cut_amb3_1262",
     "start": 1261.92,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb22.mp4",
+    "src": "broll/al_amb3.mp4",
     "video": true,
     "ken": "out",
     "variant": "whip"
   },
   {
-    "id": "cut_amb23_1269",
+    "id": "cut_amb4_1269",
     "start": 1268.52,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb23.mp4",
+    "src": "broll/al_amb4.mp4",
     "video": true,
     "ken": "left",
     "variant": "whip"
@@ -2525,11 +2525,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb24_1297",
+    "id": "cut_amb5_1297",
     "start": 1297.22,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb24.mp4",
+    "src": "broll/al_amb5.mp4",
     "video": true,
     "ken": "right",
     "variant": "whip"
@@ -2550,11 +2550,11 @@ export const BEATS: Cue[] = [
     "kind": "talk"
   },
   {
-    "id": "cut_amb1_1310",
+    "id": "cut_amb6_1310",
     "start": 1309.98,
     "dur": 3.2,
     "kind": "full",
-    "src": "broll/al_amb1.mp4",
+    "src": "broll/al_amb6.mp4",
     "video": true,
     "ken": "in",
     "variant": "whip"
