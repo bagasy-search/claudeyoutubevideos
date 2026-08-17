@@ -14,6 +14,7 @@ import { BenefitScene } from "./bastida/BenefitScene";
 import { MainBastida, TOTAL_MIN1 } from "./bastida/Main_bastida";
 import { MainBastida2, TOTAL_2 } from "./bastida/Main_bastida2";
 import { MainBastida4, TOTAL_4 } from "./bastida/Main_bastida4";
+import { MainBastida5, TOTAL_5 } from "./bastida/Main_bastida5";
 import { ChapterAguaLimon } from "./bastida/ChapterAguaLimon";
 import { ChapterScene, CHAPTER_CONFIGS } from "./bastida/ChapterScene";
 import { CreatininaScene } from "./bastida/CreatininaScene";
@@ -41,6 +42,14 @@ export const RootBastida: React.FC = () => (
       id="Bas-Main4"
       component={MainBastida4}
       durationInFrames={TOTAL_4}
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Bas-Main5"
+      component={MainBastida5}
+      durationInFrames={TOTAL_5}
       fps={30}
       width={1920}
       height={1080}

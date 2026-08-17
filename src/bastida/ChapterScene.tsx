@@ -221,4 +221,8 @@ export const CHAPTER_CONFIGS: Record<string, ChapterSceneProps> = {
   manzana: {number: '1', unit: 'MANZANA', subtitle: 'baja en potasio · fibra pectina', hero: 'img/ill/bas4_ill_manzana.png', heroSide: 'right', accent: '#3FA96B', accentDeep: '#1E6B43', ambient: 'rgba(63,169,107,0.14)', flourish: 'droplets'},
   frutillas: {number: '2', unit: 'FRUTILLAS', subtitle: 'antioxidantes · frenan el óxido', hero: 'img/ill/bas4_ill_frutillas.png', heroSide: 'left', accent: '#E0577F', accentDeep: '#7A1E3E', ambient: 'rgba(224,87,127,0.13)', flourish: 'petals'},
   pina: {number: '3', unit: 'PIÑA', subtitle: 'bromelina · desinflama', hero: 'img/ill/bas4_ill_pina.png', heroSide: 'right', accent: '#E0C070', accentDeep: '#8A6636', ambient: 'rgba(224,192,112,0.14)', flourish: 'droplets'},
+  // --- VIDEO #5: "Top 3 Leches para bajar la creatinina" (openers de las 3 SÍ; NO=vaca/condensada/soja van con FoodVerdict rojo) ---
+  almendras: {number: '1', unit: 'ALMENDRAS', subtitle: 'sin endulzar · casi sin proteína', hero: 'img/bas5_ill_almendras.png', heroSide: 'right', accent: '#3FA96B', accentDeep: '#1E6B43', ambient: 'rgba(63,169,107,0.14)', flourish: 'grains'},
+  arroz: {number: '2', unit: 'ARROZ', subtitle: 'la más baja en fósforo y potasio', hero: 'img/bas5_ill_arroz.png', heroSide: 'left', accent: '#34C6E0', accentDeep: '#0E7F97', ambient: 'rgba(52,198,224,0.14)', flourish: 'grains'},
+  avena: {number: '3', unit: 'AVENA', subtitle: 'cremosa · beta-glucano', hero: 'img/bas5_ill_avena.png', heroSide: 'right', accent: '#C9A56A', accentDeep: '#7A5A2E', ambient: 'rgba(201,165,106,0.14)', flourish: 'steam'},
 };
