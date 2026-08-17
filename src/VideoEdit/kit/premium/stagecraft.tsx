@@ -378,6 +378,78 @@ export const usePush = (durationInFrames: number, amount = 0.035) => {
   });
 };
 
+/**
+ * useHandheld — cámara "filmada a mano", NO programática.
+ * El `usePush` de arriba es LINEAL (arranca y frena con velocidad constante →
+ * el ojo lo lee como software). Esto lo reemplaza para las escenas firma:
+ *   1) PUSH por SPRING (acelera y frena como una muñeca; micro-overshoot y asienta).
+ *   2) 3 OCTAVAS de ruido de frecuencias INCONMENSURABLES (no múltiplos entre sí)
+ *      → el barrido NUNCA se repite = mano sostenida, no un loop de seno.
+ *   3) ROTACIÓN sutil desfasada (la mano nunca está perfectamente a nivel).
+ *   4) MOTION-BLUR acoplado a la VELOCIDAD por-frame (los movimientos rápidos
+ *      manchan como footage real; el hold queda nítido).
+ *   5) ANCHOR levemente descentrado (el sujeto nunca al centro muerto).
+ * Devuelve { transform, filter, tx, ty, scale, rot, vel } para envolver la escena.
+ * `intensity` 0.6=quieto reflexivo · 1=normal · 1.6=enérgico. `seed` varía por escena.
+ */
+export const useHandheld = (
+  durationInFrames: number,
+  opts?: { intensity?: number; push?: number; seed?: number; anchor?: [number, number] },
+) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const k = opts?.intensity ?? 1;
+  const seed = opts?.seed ?? 0;
+  const pushAmt = opts?.push ?? 0.05;
+
+  // 1) push por spring: rampa suave con overshoot leve y asentamiento
+  const s = spring({ frame, fps, config: { damping: 26, mass: 1.1, stiffness: 42 }, durationInFrames });
+  const scale = 1 + pushAmt * s;
+
+  // 2) sway multi-octava — frecuencias en Hz que NO son múltiplos (0.37, 1.13, 2.71)
+  const t = frame / fps;
+  const ph = seed * 2.399963; // desfase áureo por escena
+  const swayX =
+    6.2 * k * Math.sin(2 * Math.PI * 0.37 * t + ph) +
+    2.1 * k * Math.sin(2 * Math.PI * 1.13 * t + ph * 1.7) +
+    0.7 * k * Math.sin(2 * Math.PI * 2.71 * t + ph * 2.3);
+  const swayY =
+    4.8 * k * Math.cos(2 * Math.PI * 0.31 * t + ph * 1.2) +
+    1.7 * k * Math.cos(2 * Math.PI * 0.97 * t + ph * 0.6) +
+    0.6 * k * Math.cos(2 * Math.PI * 2.29 * t + ph * 2.9);
+
+  // 3) rotación de muñeca — lenta, desfasada, muy sutil
+  const rot = 0.28 * k * Math.sin(2 * Math.PI * 0.23 * t + ph * 0.9);
+
+  // 4) motion-blur por velocidad: derivada aprox del sway entre frames
+  const t0 = (frame - 1) / fps;
+  const vx =
+    6.2 * k * Math.sin(2 * Math.PI * 0.37 * t0 + ph) +
+    2.1 * k * Math.sin(2 * Math.PI * 1.13 * t0 + ph * 1.7) +
+    0.7 * k * Math.sin(2 * Math.PI * 2.71 * t0 + ph * 2.3);
+  const vy =
+    4.8 * k * Math.cos(2 * Math.PI * 0.31 * t0 + ph * 1.2) +
+    1.7 * k * Math.cos(2 * Math.PI * 0.97 * t0 + ph * 0.6) +
+    0.6 * k * Math.cos(2 * Math.PI * 2.29 * t0 + ph * 2.9);
+  const vel = Math.hypot(swayX - vx, swayY - vy);
+  const blur = Math.min(2.4, vel * 0.42);
+
+  // 5) anchor levemente descentrado (regla de encuadre)
+  const [ax, ay] = opts?.anchor ?? [0.5, 0.46];
+
+  const transform = `translate(${swayX.toFixed(2)}px, ${swayY.toFixed(2)}px) scale(${scale.toFixed(4)}) rotate(${rot.toFixed(3)}deg)`;
+  return {
+    transform,
+    transformOrigin: `${(ax * 100).toFixed(1)}% ${(ay * 100).toFixed(1)}%`,
+    filter: blur > 0.25 ? `blur(${blur.toFixed(2)}px)` : undefined,
+    tx: swayX,
+    ty: swayY,
+    scale,
+    rot,
+    vel,
+  };
+};
+
 // ── autoSize — la tipografía NO puede romper el layout. Achica cuando el texto
 //    es largo, con piso duro (legibilidad en celular manda).
 export const autoSize = (text: string | undefined, base: number, idealChars: number, min?: number) => {
@@ -978,8 +1050,8 @@ export const Cinema: React.FC<{
   const t = useTheme(theme);
   const stage = useStage();
   const { durationInFrames: seqDur } = useVideoConfig();
-  const push = usePush(durationInFrames ?? seqDur, 0.03);
-  const back = useDrift(0.15, 3);
+  // cámara filmada a mano (spring + sway multi-octava) en vez del push LINEAL robótico
+  const cam = useHandheld(durationInFrames ?? seqDur, { intensity: 0.5, push: 0.035, seed: 3 });
   // Si el MONTAJE ya trató el fondo (`Backdrop` del PremiumOverlay), Cinema no
   // vuelve a hacerlo: duplicar grade/blur/polvo/viñeta apaga el plano y cuesta
   // el doble de render. Queda como pasarela para el papel y el contenido.
@@ -993,7 +1065,7 @@ export const Cinema: React.FC<{
         style={{
           position: "absolute",
           inset: -40,
-          transform: `scale(${push}) translate(${back.x * 0.4}px, ${back.y * 0.4}px)`,
+          transform: cam.transform,
         }}
       >
         <DepthBlur radius={blur} side={side} />
@@ -1004,7 +1076,7 @@ export const Cinema: React.FC<{
           <Band>/<Column>, que es una región con canto duro en vez de una
           neblina global (que deja el frame lechoso). */}
       {paper > 0 && (
-        <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + (push - 1) * 0.35})` }}>
+        <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + (cam.scale - 1) * 0.35})` }}>
           <Scrim theme={t} side={side} strength={paper} edge={edge} />
         </div>
       )}
