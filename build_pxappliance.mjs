@@ -131,10 +131,11 @@ for (let i = 0; i < beats.length; i++) {
   } else if (b.tipo === "imagen") {
     const src = b.img; imgsUsed.add(src);
     if (!fs.existsSync(`public/${src}`)) missing.push(src);
-    // QR full-bleed ESTÁTICO: sin SceneFrame → sin reveal crema de 0.6s, y sin Ken-Burns
-    // (un QR no debe moverse ni tener fade, si no no se escanea). Fondo negro sólido detrás.
-    cues.push({ key, start, dur, el: `(d) => <AbsoluteFill style={{ backgroundColor: "#0d0d0f" }}><Img src={staticFile("${src}")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>` });
-    addSfx(start, "success", "chime", 0.45); // acento en el QR
+    // QR = estático (no debe moverse ni escanear mal). Fotos de demo = Ken-Burns sutil (más vivas).
+    const isQR = /qrcard/.test(src);
+    const zoomAttr = isQR ? ` zoom={[1,1] as [number,number]}` : "";
+    cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="${src}" hue="red" darken={${isQR ? 0 : 0.05}}${zoomAttr} />` });
+    addSfx(start, "success", isQR ? "chime" : "whoosh_soft", 0.4);
   } else if (b.tipo === "componente") {
     const c = b.componente, props = jprops(b.props);
     let el;
