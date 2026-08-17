@@ -187,8 +187,8 @@ const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
   {from: 15286, dur: 160, node: <TraidoraTag name="Banana" reason="De las más altas en potasio" />},
   {from: 16439, dur: 160, node: <TraidoraTag name="Naranja y su jugo" reason="Potasio + azúcar concentrada" />},
   {from: 17893, dur: 160, node: <TraidoraTag name="Palta" reason="La más alta en potasio" />},
-  // el golpe estadístico de la palta
-  {from: 18420, dur: 150, node: <StatTag a="1 palta" b="2 bananas" note="de potasio" />},
+  // el golpe estadístico de la palta (cubre hasta el remate "Dos. Bananas." f18732)
+  {from: 18420, dur: 330, node: <StatTag a="1 palta" b="2 bananas" note="de potasio" />},
   // cuidado avanzado
   {from: 27050, dur: 170, node: <CautionChip text="¿Enfermedad renal avanzada? Consulte a su médico" />},
   // suscríbase (cierre)
