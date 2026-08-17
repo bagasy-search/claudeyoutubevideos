@@ -261,32 +261,18 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "carousel_11",
+    "id": "hero_11",
     "start": 124.64,
-    "kind": "carousel",
-    "intro": true,
-    "focus": 0,
+    "kind": "hero",
     "kicker": "Los 3 alimentos",
-    "cards": [
-      {
-        "index": "N.º 01",
-        "name": "El huevo",
-        "tag": "Ladrillos",
-        "image": "img/al_huevo.jpg"
-      },
-      {
-        "index": "N.º 02",
-        "name": "La sardina",
-        "tag": "Humedad",
-        "image": "img/al_sardina.jpg"
-      },
-      {
-        "index": "N.º 03",
-        "name": "Vitamina C",
-        "tag": "Cemento",
-        "image": "img/al_vitc.jpg"
-      }
+    "title": "Huevo, sardina y vitamina C",
+    "hot": [
+      "Huevo"
     ],
+    "sub": "Baratos, de toda la vida, y con respaldo de la ciencia.",
+    "image": "img/al_huevo.jpg",
+    "side": "right",
+    "mood": "gold",
     "dur": 4.46
   },
   {
@@ -825,32 +811,18 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "carousel_30",
+    "id": "hero_30",
     "start": 381.48,
-    "kind": "carousel",
-    "intro": false,
-    "focus": 0,
-    "kicker": "Alimento 1",
-    "cards": [
-      {
-        "index": "N.º 01",
-        "name": "El huevo",
-        "tag": "Ladrillos",
-        "image": "img/al_huevo.jpg"
-      },
-      {
-        "index": "N.º 02",
-        "name": "La sardina",
-        "tag": "Humedad",
-        "image": "img/al_sardina.jpg"
-      },
-      {
-        "index": "N.º 03",
-        "name": "Vitamina C",
-        "tag": "Cemento",
-        "image": "img/al_vitc.jpg"
-      }
+    "kind": "hero",
+    "kicker": "Alimento 1 · Los ladrillos",
+    "title": "El huevo",
+    "hot": [
+      "huevo"
     ],
+    "sub": "La proteína completa que reconstruye tu colágeno.",
+    "image": "img/al_huevo.jpg",
+    "side": "left",
+    "mood": "gold",
     "dur": 1.34
   },
   {
@@ -1439,36 +1411,22 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "carousel_50",
+    "id": "hero_50",
     "start": 666.18,
-    "kind": "carousel",
-    "intro": false,
-    "focus": 1,
-    "kicker": "Alimento 2",
-    "cards": [
-      {
-        "index": "N.º 01",
-        "name": "El huevo",
-        "tag": "Ladrillos",
-        "image": "img/al_huevo.jpg"
-      },
-      {
-        "index": "N.º 02",
-        "name": "La sardina",
-        "tag": "Humedad",
-        "image": "img/al_sardina.jpg"
-      },
-      {
-        "index": "N.º 03",
-        "name": "Vitamina C",
-        "tag": "Cemento",
-        "image": "img/al_vitc.jpg"
-      }
+    "kind": "hero",
+    "kicker": "Alimento 2 · La humedad",
+    "title": "La sardina",
+    "hot": [
+      "sardina"
     ],
+    "sub": "Omega-3 que rellena e hidrata la piel desde adentro.",
+    "image": "img/al_sardina.jpg",
+    "side": "right",
+    "mood": "cool",
     "dur": 6.5
   },
   {
-    "id": "fill_carousel_50",
+    "id": "fill_hero_50",
     "start": 672.68,
     "dur": 6.32,
     "kind": "talk"
@@ -2028,32 +1986,18 @@ export const BEATS: Cue[] = [
     "variant": "whip"
   },
   {
-    "id": "carousel_65",
+    "id": "hero_65",
     "start": 986.56,
-    "kind": "carousel",
-    "intro": false,
-    "focus": 2,
-    "kicker": "Alimento 3",
-    "cards": [
-      {
-        "index": "N.º 01",
-        "name": "El huevo",
-        "tag": "Ladrillos",
-        "image": "img/al_huevo.jpg"
-      },
-      {
-        "index": "N.º 02",
-        "name": "La sardina",
-        "tag": "Humedad",
-        "image": "img/al_sardina.jpg"
-      },
-      {
-        "index": "N.º 03",
-        "name": "Vitamina C",
-        "tag": "Cemento",
-        "image": "img/al_vitc.jpg"
-      }
+    "kind": "hero",
+    "kicker": "Alimento 3 · El cemento",
+    "title": "La vitamina C",
+    "hot": [
+      "vitamina"
     ],
+    "sub": "Sin ella, los ladrillos nunca se vuelven piel firme.",
+    "image": "img/al_vitc.jpg",
+    "side": "left",
+    "mood": "science",
     "dur": 6.5
   },
   {

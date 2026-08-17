@@ -88,7 +88,7 @@ S('la piel es el unico organo que ves por fuera', 'talk', {title: 'Tu piel es tu
 S('va en contra de casi todo lo que te vendieron', 'talk', {title: 'Va en contra de todo lo que te vendieron.', hot: ['todo'], accent: '#B5643C'});
 S('se construye por dentro desde el plato', 'talk', {title: 'La piel firme se construye por dentro.', hot: ['dentro']});
 S('tu piel se renueva a cualquier edad', 'talk', {title: 'Tu piel se renueva a cualquier edad.', hot: ['cualquier']});
-S('son tres comidas de toda la vida', 'carousel', {intro: true, focus: 0, kicker: 'Los 3 alimentos', cards: 'CARDS'});
+S('son tres comidas de toda la vida', 'hero', {kicker: 'Los 3 alimentos', title: 'Huevo, sardina y vitamina C', hot: ['Huevo'], sub: 'Baratos, de toda la vida, y con respaldo de la ciencia.', image: 'img/al_huevo.jpg', side: 'right', mood: 'gold'});
 S('esa abuela que a los 80 tenia una piel', 'full', {caption: 'La piel que tenían nuestras abuelas.', stock: {q: 'elderly woman beautiful smiling face portrait', type: 'video'}, ken: 'out'});
 S('yo soy el doctor bastida', 'lowerthird', {name: 'Dr. Bastida', role: 'Salud y belleza natural', topic: '3 alimentos para la piel +60'});
 S('no por una crema nueva por tres alimentos', 'talk', {title: 'No una crema. Tres alimentos.', hot: ['Tres']});
@@ -111,7 +111,7 @@ S('vienen de la comida no de un pomo', 'talk', {title: 'Solo le faltan los mater
 
 /* ===================== ALIMENTO 1 · HUEVO ===================== */
 S('el primer alimento son los ladrillos', 'talk', {title: 'El primero: los ladrillos del colágeno.', hot: ['ladrillos'], kicker: 'Alimento 1 de 3'});
-S('sí el huevo', 'carousel', {intro: false, focus: 0, kicker: 'Alimento 1', cards: 'CARDS'});
+S('sí el huevo', 'hero', {kicker: 'Alimento 1 · Los ladrillos', title: 'El huevo', hot: ['huevo'], sub: 'La proteína completa que reconstruye tu colágeno.', image: 'img/al_huevo.jpg', side: 'left', mood: 'gold'});
 S('ese que durante 40 anos te dijeron', 'full', {caption: '40 años de miedo… para nada.', stock: {q: 'eggs bowl rustic kitchen', type: 'video'}, ken: 'in'});
 S('un huevo al dia no dana el corazon', 'stat', {kicker: 'Estudio · +250.000 personas', value: 1, suffix: '/día', label: 'un huevo al día no daña el corazón', sub: 'Cuarenta años de miedo desmentidos.', image: 'PHOTO:egg', mood: 'science'});
 S('esta hecho de aminoacidos', 'molecule', {kicker: 'De qué está hecho', title: 'Aminoácidos = ladrillos', hot: ['ladrillos'], centerLabel: 'Colágeno', sub: 'Tres ladrillos que tu piel necesita para armar colágeno.', nodes: [{label: 'Glicina'}, {label: 'Prolina'}, {label: 'Del huevo'}], mood: 'science', image: 'PHOTO:egg'});
@@ -135,7 +135,7 @@ S('ahi esta un codigo un cuadrito lleno de puntitos', 'qr', {kicker: 'Su guía, 
 S('ella es rosa de guadalajara', 'full', {caption: 'Rosa · Guadalajara · ya va por su 3.er día', kicker: 'Historias reales', stock: {q: 'happy mature latina woman smiling phone', type: 'photo'}, ken: 'in'});
 
 /* ===================== ALIMENTO 2 · SARDINA ===================== */
-S('el segundo alimento viene en una latita', 'carousel', {intro: false, focus: 1, kicker: 'Alimento 2', cards: 'CARDS'});
+S('el segundo alimento viene en una latita', 'hero', {kicker: 'Alimento 2 · La humedad', title: 'La sardina', hot: ['sardina'], sub: 'Omega-3 que rellena e hidrata la piel desde adentro.', image: 'img/al_sardina.jpg', side: 'right', mood: 'cool'});
 S('la sardina', 'full', {caption: 'La sardina. Humilde y poderosa.', stock: {q: 'canned sardines tin fish', type: 'video'}, ken: 'out'});
 S('humedad retenida por dentro', 'full', {caption: 'Piel joven = humedad retenida por dentro.', stock: {q: 'water drop skin hydration macro', type: 'video'}, ken: 'in'});
 S('la piel se reseca se pone tirante', 'full', {caption: 'Piel seca: las líneas se marcan más.', stock: {q: 'dry skin texture closeup', type: 'video'}, ken: 'in'});
@@ -154,7 +154,7 @@ S('dona alfonsina de monterrey', 'full', {caption: 'Alfonsina · Monterrey · 79
 
 /* ===================== ALIMENTO 3 · VITAMINA C ===================== */
 S('tu cuerpo no puede armar ni una sola fibra', 'talk', {title: 'Sin este ingrediente, nada se arma.', hot: ['nada'], kicker: 'El secreto que lo une todo'});
-S('ese cemento es la vitamina c', 'carousel', {intro: false, focus: 2, kicker: 'Alimento 3', cards: 'CARDS'});
+S('ese cemento es la vitamina c', 'hero', {kicker: 'Alimento 3 · El cemento', title: 'La vitamina C', hot: ['vitamina'], sub: 'Sin ella, los ladrillos nunca se vuelven piel firme.', image: 'img/al_vitc.jpg', side: 'left', mood: 'science'});
 S('el pimiento rojo que tiene mas vitamina c que una naranja', 'full', {caption: 'Pimiento rojo: más vitamina C que una naranja.', stock: {q: 'red bell pepper fresh', type: 'video'}, ken: 'in'});
 S('la guayaba que revienta de vitamina c', 'full', {caption: 'Guayaba: revienta de vitamina C.', stock: {q: 'guava fruit fresh sliced', type: 'video'}, ken: 'out'});
 S('los citricos la naranja la mandarina', 'full', {caption: 'Naranja, mandarina, limón, kiwi, fresa.', stock: {q: 'citrus oranges slices fresh', type: 'video'}, ken: 'left'});
