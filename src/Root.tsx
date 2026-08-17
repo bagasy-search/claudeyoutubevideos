@@ -131,6 +131,7 @@ import { MainSellador, TOTAL_FRAMES_SELLADOR } from "./VideoEdit/Main_sellador";
 import { MainAceite, TOTAL_FRAMES_ACEITE } from "./VideoEdit/Main_aceite";
 import { MainPxwash, TOTAL_FRAMES_PXWASH } from "./VideoEdit/Main_pxwash";
 import { MainPxgarden, TOTAL_FRAMES_PXGARDEN } from "./VideoEdit/Main_pxgarden";
+import { MainPxpest, TOTAL_FRAMES_PXPEST } from "./VideoEdit/Main_pxpest";
 import { MainPxappliance, TOTAL_FRAMES_PXAPPLIANCE } from "./VideoEdit/Main_pxappliance";
 import { MainShou, TOTAL_FRAMES_SHOU } from "./VideoEdit/Main_shou";
 import { MainTunel55, TOTAL_FRAMES_TUNEL55 } from "./VideoEdit/Main_tunel55";
@@ -661,6 +662,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="PxPlagas" component={MainPxplagas} durationInFrames={TOTAL_FRAMES_PXPLAGAS} fps={30} width={1920} height={1080} />
       <Composition id="PxPros" component={MainPxpros} durationInFrames={TOTAL_FRAMES_PXPROS} fps={30} width={1920} height={1080} />
       <Composition id="PxGarden" component={MainPxgarden} durationInFrames={TOTAL_FRAMES_PXGARDEN} fps={30} width={1920} height={1080} />
+      <Composition id="PxPest" component={MainPxpest} durationInFrames={TOTAL_FRAMES_PXPEST} fps={30} width={1920} height={1080} />
       <Composition id="PxAppliance" component={MainPxappliance} durationInFrames={TOTAL_FRAMES_PXAPPLIANCE} fps={30} width={1920} height={1080} />
       <Composition id="Fcsmanchas" component={MainFcsmanchas} durationInFrames={TOTAL_FRAMES_FCSMANCHAS} fps={30} width={1920} height={1080} />
       <Composition id="Fcskiwi" component={MainFcskiwi} durationInFrames={TOTAL_FRAMES_FCSKIWI} fps={30} width={1920} height={1080} />
