@@ -1,4 +1,4 @@
-// build_alimentos60.mjs — Doctor Bastida · "Come ESTOS 3 ALIMENTOS" (piel/belleza +60)
+// build_alimentos60.mjs — Doctora Valeria Alcázar · "Come ESTOS 3 ALIMENTOS" (piel/belleza +60)
 // Kit valeria-vintage. DIRECTOR + generador: escenas ancladas al ms de Whisper.
 //   Motor: L0 avatar persistente + escenas Val* opacas (Main_alimentos60.tsx).
 //   Salidas: src/valeria/cues_alimentos60.gen.ts  ·  _alimentos60_stock.json (needs)
@@ -78,7 +78,7 @@ for (const a of AMBIENT) needs.push({name: a.name, query: a.query, type: 'video'
 const cardImgs = () => CARDS.map((c) => ({index: c.index, name: c.name, tag: c.tag, image: (havePhoto(c.img) ? `img/al_${c.img}.jpg` : (MED('crema.png') || fallbackImg()))}));
 
 /* ===================== HOOK / APERTURA ===================== */
-S(0, 'talk', {title: 'Tres alimentos. Tu piel más joven desde el plato.', hot: ['Tres'], kicker: 'Dr. Bastida · Belleza natural +60'});
+S(0, 'talk', {title: 'Tres alimentos. Tu piel más joven desde el plato.', hot: ['Tres'], kicker: 'Dra. Valeria Alcázar · Belleza natural'});
 S('por menos de lo que cuesta una crema', 'full', {caption: 'No en un frasco caro.', stock: {q: 'cosmetic cream jars luxury', type: 'video'}, ken: 'in'});
 S('en la piel de las mujeres', 'full', {caption: 'La piel más envidiada del mundo.', stock: {q: 'mature woman beautiful skin face', type: 'video'}, ken: 'out'});
 S('mientras gastas dinero en cremas', 'full', {caption: 'Cremas que prometen y no cumplen.', stock: {q: 'skincare cream shelf store', type: 'video'}, ken: 'left'});
@@ -90,7 +90,7 @@ S('se construye por dentro desde el plato', 'talk', {title: 'La piel firme se co
 S('tu piel se renueva a cualquier edad', 'talk', {title: 'Tu piel se renueva a cualquier edad.', hot: ['cualquier']});
 S('son tres comidas de toda la vida', 'hero', {kicker: 'Los 3 alimentos', title: 'Huevo, sardina y vitamina C', hot: ['Huevo'], sub: 'Baratos, de toda la vida, y con respaldo de la ciencia.', image: 'img/al_huevo.jpg', side: 'right', mood: 'gold'});
 S('esa abuela que a los 80 tenia una piel', 'full', {caption: 'La piel que tenían nuestras abuelas.', stock: {q: 'elderly woman beautiful smiling face portrait', type: 'video'}, ken: 'out'});
-S('yo soy el doctor bastida', 'lowerthird', {name: 'Dr. Bastida', role: 'Salud y belleza natural', topic: '3 alimentos para la piel +60'});
+S('yo soy el doctor bastida', 'lowerthird', {name: 'Dra. Valeria Alcázar', role: 'Medicina estética · Belleza natural', topic: '3 alimentos para la piel +60'});
 S('no por una crema nueva por tres alimentos', 'talk', {title: 'No una crema. Tres alimentos.', hot: ['Tres']});
 S('quedate hasta el final', 'talk', {title: 'El tercero hace que los otros dos funcionen.', hot: ['tercero'], kicker: 'Quédese hasta el final'});
 
@@ -169,7 +169,7 @@ S('como la comes fresca y cruda', 'step', {step: 1, total: 1, title: 'Cómo come
 S('dejame juntarlo todo', 'talk', {title: 'Juntémoslo todo.', hot: ['todo'], kicker: 'El resumen'});
 S('para reconstruirla necesitas tres cosas', 'checklist', {kicker: 'Tu piel joven, en 3', title: 'Ladrillos, humedad y cemento', hot: ['tres'], items: ['Huevo → los ladrillos (proteína + biotina)', 'Sardina → la humedad (omega-3, calcio, B12)', 'Vitamina C → el cemento (pega el colágeno)'], mood: 'gold'});
 S('empieza con uno', 'talk', {title: 'No los tres perfectos. Empieza con uno.', hot: ['uno']});
-S('la belleza no estaba en el pomo caro', 'quote', {kicker: 'Recuérdalo', quote: 'La belleza no estaba en el pomo caro. Estaba en tu cocina.', author: 'Dr. Bastida', role: 'Belleza natural +60', image: 'PHOTO:kitchen', mood: 'warmdark'});
+S('la belleza no estaba en el pomo caro', 'quote', {kicker: 'Recuérdalo', quote: 'La belleza no estaba en el pomo caro. Estaba en tu cocina.', author: 'Dra. Valeria Alcázar', role: 'Belleza natural', image: 'PHOTO:kitchen', mood: 'warmdark'});
 S('la segunda si esto te hizo sentido suscribete', 'cta', {kicker: 'Antes de irte', title: 'Suscríbete y guarda el video', hot: ['Suscríbete'], sub: 'Cada semana, otro secreto de belleza barato que sí funciona.', buttonLabel: 'Suscríbete al canal', image: 'PHOTO:kitchen', mood: 'gold'});
 S('la tercera ahi sigue el codigo', 'qr', {kicker: 'Su guía, gratis', title: 'Una última vez: escanee el código', hot: ['código'], sub: 'Abra la cámara, apunte al recuadro, y guárdelo. Toma 10 segundos.'});
 S('ella es carmen de puebla', 'full', {caption: 'Carmen · Puebla · 68 · "Gracias"', kicker: 'Historias reales', stock: {q: 'happy older woman smiling grateful portrait', type: 'photo'}, ken: 'in'});
