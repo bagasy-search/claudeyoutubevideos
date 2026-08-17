@@ -75,7 +75,7 @@ export const SceneFrame: React.FC<{
   const pRotX = Math.cos(frame / 137) * 0.7;
 
   return (
-    <AbsoluteFill style={{ fontFamily: FONT_STACK, opacity }}>
+    <AbsoluteFill style={{ fontFamily: FONT_STACK, opacity, backgroundColor: "#0d0d0f" }}>
       {/* background gets its own slightly stronger parallax zoom + perspective for depth */}
       <AbsoluteFill style={{ transform: `perspective(1800px) rotateY(${pRotY}deg) rotateX(${pRotX}deg) scale(${cam * 1.06})`, transformOrigin: camOrigin }}>
         {bg === "image" && image ? (
