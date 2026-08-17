@@ -7,7 +7,7 @@
 import fs from 'fs';
 
 const SLUG = 'alimentos60';
-const TOTAL = 1328.34;               // duración exacta del avatar (ffprobe)
+const TOTAL = 1326.30;               // duración exacta del avatar (ffprobe)
 const CAP_COMP = 6.5;                // tope de un componente antes de volver al avatar
 const CAP_FULL = 5.0;                // tope de un b-roll fullshot
 
@@ -82,7 +82,7 @@ S(0, 'talk', {title: 'Tres alimentos. Tu piel más joven desde el plato.', hot: 
 S('por menos de lo que cuesta una crema', 'full', {caption: 'No en un frasco caro.', stock: {q: 'cosmetic cream jars luxury', type: 'video'}, ken: 'in'});
 S('en la piel de las mujeres', 'full', {caption: 'La piel más envidiada del mundo.', stock: {q: 'mature woman beautiful skin face', type: 'video'}, ken: 'out'});
 S('mientras gastas dinero en cremas', 'full', {caption: 'Cremas que prometen y no cumplen.', stock: {q: 'skincare cream shelf store', type: 'video'}, ken: 'left'});
-S('esta manana te miraste al espejo', 'full', {caption: 'Esta mañana, frente al espejo.', stock: {q: 'senior woman looking mirror bathroom', type: 'video'}, ken: 'in'});
+S('esta manana te miraste al espejo', 'full', {caption: 'Esta mañana, frente al espejo.', stock: {q: 'mature woman looking mirror face reflection', type: 'video'}, ken: 'in'});
 S('unas lineas nuevas alrededor de los ojos', 'full', {caption: 'Líneas nuevas. Un tono apagado.', stock: {q: 'older woman face wrinkles closeup', type: 'video'}, ken: 'in'});
 S('la piel es el unico organo que ves por fuera', 'talk', {title: 'Tu piel es tu boletín de calificaciones.', hot: ['boletín'], accent: VAL_gold()});
 S('va en contra de casi todo lo que te vendieron', 'talk', {title: 'Va en contra de todo lo que te vendieron.', hot: ['todo'], accent: '#B5643C'});
@@ -90,7 +90,7 @@ S('se construye por dentro desde el plato', 'talk', {title: 'La piel firme se co
 S('tu piel se renueva a cualquier edad', 'talk', {title: 'Tu piel se renueva a cualquier edad.', hot: ['cualquier']});
 S('son tres comidas de toda la vida', 'hero', {kicker: 'Los 3 alimentos', title: 'Huevo, sardina y vitamina C', hot: ['Huevo'], sub: 'Baratos, de toda la vida, y con respaldo de la ciencia.', image: 'img/al_huevo.jpg', side: 'right', mood: 'gold'});
 S('esa abuela que a los 80 tenia una piel', 'full', {caption: 'La piel que tenían nuestras abuelas.', stock: {q: 'elderly woman beautiful smiling face portrait', type: 'video'}, ken: 'out'});
-S('yo soy el doctor bastida', 'lowerthird', {name: 'Dra. Valeria Alcázar', role: 'Medicina estética · Belleza natural', topic: '3 alimentos para la piel +60'});
+S('llevo muchos años viendo lo mismo', 'lowerthird', {name: 'Dra. Valeria Alcázar', role: 'Medicina estética · Belleza natural', topic: '3 alimentos para la piel +60'});
 S('no por una crema nueva por tres alimentos', 'talk', {title: 'No una crema. Tres alimentos.', hot: ['Tres']});
 S('quedate hasta el final', 'talk', {title: 'El tercero hace que los otros dos funcionen.', hot: ['tercero'], kicker: 'Quédese hasta el final'});
 
@@ -103,8 +103,8 @@ S('aparecen las arrugas profundas', 'full', {caption: 'Se afloja la malla: arrug
 S('habia una hormona el estrogeno', 'talk', {title: 'El estrógeno era la capataz de la fábrica.', hot: ['capataz']});
 S('y ahora escucha esta alerta', 'talk', {title: 'Alerta: algo en tu plato destruye tu colágeno.', hot: ['Alerta'], accent: '#B5643C', kicker: 'Atención'});
 S('hay algo en tu plato que esta destruyendo tu colageno', 'full', {caption: 'El enemigo escondido.', stock: {q: 'white sugar cubes spoon', type: 'video'}, ken: 'left'});
-S('el exceso de azucar', 'hero', {kicker: 'El enemigo #1 del colágeno', title: 'El azúcar', hot: ['azúcar'], sub: 'Se pega a tus fibras y las endurece como caramelo.', image: MED('cubito.png') || 'PHOTO:sugar', side: 'right', mood: 'warmdark'});
-S('los cientificos a esto le dicen glicacion', 'molecule', {kicker: 'El nombre técnico', title: 'Glicación', hot: ['Glicación'], centerLabel: 'Azúcar', sub: 'La reacción que "caramela" tu piel por dentro.', nodes: [{label: 'Fibras rígidas'}, {label: 'Se quiebran'}, {label: 'Más arrugas'}], mood: 'warmdark', image: MED('cubito.png') || 'PHOTO:sugar'});
+S('el exceso de azucar', 'hero', {kicker: 'El enemigo #1 del colágeno', title: 'El azúcar', hot: ['azúcar'], sub: 'Se pega a tus fibras y las endurece como caramelo.', image: 'PHOTO:sugar', side: 'right', mood: 'warmdark'});
+S('los cientificos a esto le dicen glicacion', 'molecule', {kicker: 'El nombre técnico', title: 'Glicación', hot: ['Glicación'], centerLabel: 'Azúcar', sub: 'La reacción que "caramela" tu piel por dentro.', nodes: [{label: 'Fibras rígidas'}, {label: 'Se quiebran'}, {label: 'Más arrugas'}], mood: 'warmdark', image: 'PHOTO:sugar'});
 S('baja el azucar baja el pan blanco', 'talk', {title: 'Baja el azúcar. Es la mitad de la batalla.', hot: ['mitad'], accent: '#7A8B5A'});
 S('tu cuerpo sabe fabricar colageno nuevo a cualquier edad', 'talk', {title: 'Tu cuerpo sabe fabricar colágeno nuevo.', hot: ['nuevo'], kicker: 'La buena noticia'});
 S('vienen de la comida no de un pomo', 'talk', {title: 'Solo le faltan los materiales. Vienen del plato.', hot: ['materiales']});
@@ -161,7 +161,7 @@ S('los citricos la naranja la mandarina', 'full', {caption: 'Naranja, mandarina,
 S('la herramienta que tu cuerpo usa para pegar', 'molecule', {kicker: 'El cemento del colágeno', title: 'Vitamina C = cofactor', hot: ['cofactor'], centerLabel: 'Vitamina C', sub: 'Pega los ladrillos y los convierte en colágeno firme.', nodes: [{label: 'Une aminoácidos'}, {label: 'Forma fibras'}, {label: 'Piel firme'}], mood: 'science', image: 'PHOTO:pepper2'});
 S('pero sin vitamina c esos ladrillos no se convierten', 'talk', {title: 'Sin vitamina C, los ladrillos nunca son piel firme.', hot: ['nunca']});
 S('ese dano que te llena de manchas', 'full', {caption: 'El sol te llena de manchas y arrugas finas.', stock: {q: 'age spots skin hands sun damage', type: 'video'}, ken: 'in'});
-S('ayude a emparejar el tono', 'beforeafter', {kicker: 'Con constancia', title: 'Empareja el tono, aclara manchas', hot: ['manchas'], imageA: 'PHOTO:spots', imageB: 'PHOTO:clearskin', labelA: 'Con manchas', labelB: 'Más parejo', mood: 'science'});
+S('ayuda a emparejar el tono', 'beforeafter', {kicker: 'Con constancia', title: 'Empareja el tono, aclara manchas', hot: ['manchas'], imageA: 'PHOTO:spots', imageB: 'PHOTO:clearskin', labelA: 'Con manchas', labelB: 'Más parejo', mood: 'science'});
 S('la vitamina c y el huevo del desayuno se potencian', 'talk', {title: 'Vitamina C + huevo: se potencian entre sí.', hot: ['potencian']});
 S('como la comes fresca y cruda', 'step', {step: 1, total: 1, title: 'Cómo comerla', hot: ['comerla'], sub: 'Fresca y cruda: el calor la destruye. Media naranja junto a tus huevos.', image: 'PHOTO:salad', mood: 'gold'});
 
