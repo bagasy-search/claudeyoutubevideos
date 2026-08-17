@@ -167,7 +167,7 @@ registerRoot(RootPxhvac);
 const imgLines = [];
 for (const src of imgsUsed) { imgLines.push(src); imgLines.push(src.replace(/\.(png|jpe?g)$/i, "_blur.jpg")); }
 // imágenes de componentes (CtaCard) + su blur
-for (const b of beats) if (b.componente === "CtaCard" && b.props?.image) { imgLines.push(`img/${b.props.image}.png`); imgLines.push(`img/${b.props.image}_blur.jpg`); }
+for (const b of beats) if (b.componente === "CtaCard" && b.props?.image) { imgLines.push(b.props.image); imgLines.push(b.props.image.replace(/\.(png|jpe?g)$/i, "_blur.jpg")); }
 fs.writeFileSync("_pxhvac_assets.txt", [...new Set(imgLines)].join("\n") + "\n");
 
 const nA = beats.filter((b) => b.tipo === "avatar").length, nI = beats.filter((b) => b.tipo === "clip").length, nC = beats.filter((b) => b.tipo === "componente").length;

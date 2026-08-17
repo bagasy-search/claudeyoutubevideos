@@ -65,7 +65,7 @@ const CUR = [
   { sec: "t2", ph: "the driveway", comp: "BigStatReveal", dur: 2.6, props: { value: 100, prefix: "$", eyebrow: "A SHOP CHARGES", label: "for this clean" } },
   // ===== CTA1 (guía + QR) =====
   { sec: "cta1", ph: "the amount", comp: "MythTruth", dur: 4.2, props: { myth: "The trick is the peroxide", truth: "The trick is the AMOUNT", mythLabel: "EVERYONE THINKS", truthLabel: "THE REAL SECRET" } },
-  { sec: "cta1", ph: "qr code", comp: "CtaCard", dur: 5.5, props: { eyebrow: "THE MEASUREMENTS SHEET", title: "Every trick, the exact amount", bullet: "Scan the QR — or the first link below", image: "pxhvac_qrcard", cta: "hydrogen-peroxide-ventas.vercel.app" } },
+  { sec: "cta1", ph: "qr code", comp: "CtaCard", dur: 5.5, props: { eyebrow: "THE MEASUREMENTS SHEET", title: "Every trick, the exact amount", bullet: "Scan the QR — or the first link below", image: "img/pxhvac_qrcard.png", cta: "hydrogen-peroxide-ventas.vercel.app" } },
   // ===== T3 washer =====
   { sec: "t3", ph: "trick number three", comp: "ChapterTrailCard", dur: 4.0, props: { number: 3, title: "The Washing Machine", sub: "that sour smell" } },
   { sec: "t3", ph: "rubber door gasket", comp: "FoamClean", dur: 3.2, props: {} },
@@ -84,7 +84,7 @@ const CUR = [
   { sec: "t6", ph: "nine hundred", occ: 1, comp: "BigStatReveal", dur: 3.2, props: { value: 900, prefix: "$", eyebrow: "PULL & DEEP-CLEAN", label: "you do it for $1" } },
   // ===== CTA2 (Ricardo) =====
   { sec: "cta2", ph: "the exact dilution", comp: "HighlightSweep", dur: 3.6, props: { pre: "The exact number is", highlight: "in the description", post: "with the QR", note: "don't guess on a $900 part" } },
-  { sec: "cta2", ph: "like new", comp: "CtaCard", dur: 5.0, props: { eyebrow: "REAL RESULT", title: "Ricardo skipped the repair call", bullet: "the gasket step — right off the sheet", image: "pxhvac_cta2_ricardo_washer", cta: "hydrogen-peroxide-ventas.vercel.app" } },
+  { sec: "cta2", ph: "like new", comp: "CtaCard", dur: 5.0, props: { eyebrow: "REAL RESULT", title: "Ricardo skipped the repair call", bullet: "the gasket step — right off the sheet", image: "img/pxhvac_cta2_ricardo_washer.png", cta: "hydrogen-peroxide-ventas.vercel.app" } },
   // ===== T7 disposal =====
   { sec: "t7", ph: "trick number seven", comp: "ChapterTrailCard", dur: 4.0, props: { number: 7, title: "The Garbage Disposal", sub: "the drain funk" } },
   { sec: "t7", ph: "half a cup", comp: "FoamClean", dur: 3.4, props: {} },
@@ -99,7 +99,7 @@ const CUR = [
   { sec: "safety", ph: "parasitic acid", comp: "MythTruth", dur: 4.4, props: { myth: "Peroxide + vinegar = better", truth: "= peracetic acid + pressure", mythLabel: "THE INTERNET SAYS", truthLabel: "WHAT ACTUALLY HAPPENS" } },
   // ===== CIERRE (CTA3) =====
   { sec: "cierre", ph: "the evaporator coil", occ: 1, comp: "LightTrailCards", dur: 4.4, props: { number: "9", phrase: "All nine — *one* dollar bottle", cards: 9, goldCard: 5 } },
-  { sec: "cierre", ph: "point your phone", comp: "CtaCard", dur: 6.0, props: { eyebrow: "GET THE SHEET", title: "Every amount, every appliance", bullet: "Point your camera at the QR — or link below", image: "pxhvac_qrcard", cta: "hydrogen-peroxide-ventas.vercel.app" } },
+  { sec: "cierre", ph: "point your phone", comp: "CtaCard", dur: 6.0, props: { eyebrow: "GET THE SHEET", title: "Every amount, every appliance", bullet: "Point your camera at the QR — or link below", image: "img/pxhvac_qrcard.png", cta: "hydrogen-peroxide-ventas.vercel.app" } },
 ];
 
 // ── PROMPTS de imagen por sección (subjetos concretos, rotados) ───────────────
