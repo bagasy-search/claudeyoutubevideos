@@ -66,6 +66,7 @@ import { MainGallinas, TOTAL_FRAMES_GALLINAS } from "./VideoEdit/Main_gallinas";
 import { MainOvejas, TOTAL_FRAMES_OVEJAS } from "./VideoEdit/Main_ovejas";
 import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainSecretos, TOTAL_FRAMES_SECRETOS } from "./VideoEdit/Main_secretos";
+import { MainAlimentos60, TOTAL_FRAMES as TOTAL_FRAMES_ALIMENTOS60 } from "./valeria/Main_alimentos60";
 import { MainRevivir, TOTAL_FRAMES_REVIVIR } from "./VideoEdit/Main_revivir";
 import { MainSemillas, TOTAL_FRAMES_SEMILLAS } from "./VideoEdit/Main_semillas";
 import { MainOidio, TOTAL_FRAMES_OIDIO } from "./VideoEdit/Main_oidio";
@@ -666,6 +667,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="PxAppliance" component={MainPxappliance} durationInFrames={TOTAL_FRAMES_PXAPPLIANCE} fps={30} width={1920} height={1080} />
       <Composition id="Fcsmanchas" component={MainFcsmanchas} durationInFrames={TOTAL_FRAMES_FCSMANCHAS} fps={30} width={1920} height={1080} />
       <Composition id="Fcskiwi" component={MainFcskiwi} durationInFrames={TOTAL_FRAMES_FCSKIWI} fps={30} width={1920} height={1080} />
+      {/* Dr. Bastida — "Come ESTOS 3 ALIMENTOS para tu piel +60" · kit valeria-vintage · AVATAR · b-roll 100% stock Pexels */}
+      <Composition id="Alimentos60" component={MainAlimentos60} durationInFrames={TOTAL_FRAMES_ALIMENTOS60} fps={30} width={1920} height={1080} />
     </>
   );
 };
