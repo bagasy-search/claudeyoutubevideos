@@ -202,7 +202,7 @@ const BROLL: {from: number; dur: number; clip?: string; img?: string; caption?: 
   {from: 10960, dur: 140, clip: 'bas_blood_pressure', caption: 'Ojo si hay azúcar alta'},
   // SÍ #3 avena
   {from: 11642, dur: 150, img: 'bas5_avena', caption: 'Espumita en el café'},
-  {from: 12300, dur: 140, img: 'bas_broll_kidney', caption: 'Menos carga al filtro'},
+  {from: 12300, dur: 140, img: 'bas_broll_kidney_anatomy', caption: 'Menos carga al filtro'},
   // recap seguras + reglas
   {from: 13086, dur: 150, img: 'bas5_broll_breakfast', caption: 'Sus tres seguras'},
   {from: 13409, dur: 150, img: 'bas5_broll_etiqueta', caption: 'Dé vuelta el envase'},
@@ -219,7 +219,7 @@ const BROLL: {from: number; dur: number; clip?: string; img?: string; caption?: 
   {from: 23577, dur: 150, img: 'bas5_soja', caption: 'La "sana" que le hacía mal'},
   {from: 24075, dur: 150, img: 'bas5_avena', caption: 'Soja → avena'},
   // ladrillo
-  {from: 25667, dur: 150, img: 'bas_broll_kidney', caption: 'Un ladrillo por día'},
+  {from: 25667, dur: 150, img: 'bas_broll_kidney_anatomy', caption: 'Un ladrillo por día'},
   // señales (tras AlertSignals depth)
   {from: 27300, dur: 120, clip: 'bas_swollen_ankles', caption: 'Hinchazón'},
   {from: 27430, dur: 120, clip: 'bas_tired_senior', caption: 'Cansancio raro'},
@@ -229,7 +229,7 @@ const BROLL: {from: number; dur: number; clip?: string; img?: string; caption?: 
   {from: 28331, dur: 150, img: 'bas_broll_kidney_anatomy', caption: 'Riñón delicado: su médico'},
   // --- rellenos anti-hueco (tramos largos de avatar-solo) ---
   {from: 1300, dur: 160, img: 'bas5_soja', caption: '"Saludable", "con calcio"…'},
-  {from: 5050, dur: 150, img: 'bas_broll_kidney', caption: 'Un filtro cansado'},
+  {from: 5050, dur: 150, img: 'bas_broll_kidney_anatomy', caption: 'Un filtro cansado'},
   {from: 7400, dur: 150, img: 'bas5_broll_etiqueta', caption: 'Fósforo de fábrica'},
   {from: 12550, dur: 150, img: 'bas5_avena', caption: 'Reemplaza a la de vaca'},
   {from: 13900, dur: 150, clip: 'fruta_sugar_spoon', caption: 'Sin azúcar agregada'},
