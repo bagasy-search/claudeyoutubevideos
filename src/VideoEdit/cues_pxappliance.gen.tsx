@@ -1,5 +1,6 @@
 // cues_pxappliance.gen.tsx — GENERADO por build_pxappliance.mjs. NO editar a mano.
 import { ReactNode } from "react";
+import { AbsoluteFill, Img, staticFile } from "remotion";
 import { RawShot } from "./scenes/RawShot";
 import { LightTrailCards, ChapterTrailCard, NodeRingToggle, BottleHero, GlitchCut } from "../peroxide/PeroxideHero";
 import { FoamClean, GluGluPour } from "../peroxide/PeroxideKit";
@@ -77,7 +78,7 @@ export const CUES: Cue[] = [
   { key: "clip_626980", start: 626.98, dur: 8, el: (d) => <RawShot durationInFrames={d} src="broll/pxappliance_gasket_1.mp4" hue="red" darken={0.06} clipDur={10.00} /> },
   { key: "componente_644780", start: 644.78, dur: 9.5, el: (d) => <PremiumOverlay durationInFrames={d} zone="full" theme={THEME_PEROXIDE}><CtaCard durationInFrames={d} theme={THEME_PEROXIDE} {...({"eyebrow":"The Appliance Peroxide Guide","title":"Every trick, the exact amount","bullet":"By appliance: how much, how long, plus the never-mix table. One page for the fridge.","price":0,"cta":"FREE · SCAN THE QR / LINK BELOW","image":"img/pxappliance_bottle_still.jpg"} as any)} /></PremiumOverlay> },
   { key: "clip_656620", start: 656.62, dur: 6.26, el: (d) => <RawShot durationInFrames={d} src="broll/pxappliance_washer_3.mp4" hue="red" darken={0.06} clipDur={10.67} /> },
-  { key: "imagen_663380", start: 663.38, dur: 6.04, el: (d) => <RawShot durationInFrames={d} src="img/pxappliance_qrcard.png" hue="red" darken={0} /> },
+  { key: "imagen_663380", start: 663.38, dur: 6.04, el: (d) => <AbsoluteFill style={{ backgroundColor: "#0d0d0f" }}><Img src={staticFile("img/pxappliance_qrcard.png")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill> },
   { key: "componente_669840", start: 669.84, dur: 1.96, el: (d) => <ChapterTrailCard durationInFrames={d} {...({"number":"#4","title":"The dishwasher","sub":"evict the extremophile"} as any)} /> },
   { key: "componente_672380", start: 672.38, dur: 7.3, el: (d) => <PremiumOverlay durationInFrames={d} zone="top" theme={THEME_PEROXIDE}><HighlightSweep durationInFrames={d} theme={THEME_PEROXIDE} {...({"pre":"Remember the extremophile?","highlight":"this is its home","post":"the dishwasher door seal","note":"it survives your hottest cycle — use chemistry"} as any)} /></PremiumOverlay> },
   { key: "clip_680120", start: 680.12, dur: 8.62, el: (d) => <RawShot durationInFrames={d} src="broll/pxappliance_dish_1.mp4" hue="red" darken={0.06} clipDur={10.00} /> },
@@ -161,7 +162,7 @@ export const CUES: Cue[] = [
   { key: "clip_1416880", start: 1416.88, dur: 4.46, el: (d) => <RawShot durationInFrames={d} src="broll/pxappliance_spray_1.mp4" hue="red" darken={0.06} clipDur={10.00} /> },
   { key: "clip_1425780", start: 1425.78, dur: 3.22, el: (d) => <RawShot durationInFrames={d} src="broll/pxappliance_bottle_1.mp4" hue="red" darken={0.06} clipDur={10.00} /> },
   { key: "clip_1435900", start: 1435.9, dur: 3.2, el: (d) => <RawShot durationInFrames={d} src="broll/pxappliance_bottle_2.mp4" hue="red" darken={0.06} clipDur={6.84} /> },
-  { key: "imagen_1439780", start: 1439.78, dur: 6.2, el: (d) => <RawShot durationInFrames={d} src="img/pxappliance_qrcard.png" hue="red" darken={0} /> },
+  { key: "imagen_1439780", start: 1439.78, dur: 6.2, el: (d) => <AbsoluteFill style={{ backgroundColor: "#0d0d0f" }}><Img src={staticFile("img/pxappliance_qrcard.png")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill> },
 ];
 export const OVERLAYS: Cue[] = [
   { key: "glitch_0", start: 0, dur: 0.4, el: (d) => <GlitchCut durationInFrames={d} /> },

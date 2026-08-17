@@ -131,8 +131,10 @@ for (let i = 0; i < beats.length; i++) {
   } else if (b.tipo === "imagen") {
     const src = b.img; imgsUsed.add(src);
     if (!fs.existsSync(`public/${src}`)) missing.push(src);
-    cues.push({ key, start, dur, el: `(d) => <RawShot durationInFrames={d} src="${src}" hue="red" darken={0} />` });
-    addSfx(start, "success", "chime", 0.45); // reveal del QR
+    // QR full-bleed ESTÁTICO: sin SceneFrame → sin reveal crema de 0.6s, y sin Ken-Burns
+    // (un QR no debe moverse ni tener fade, si no no se escanea). Fondo negro sólido detrás.
+    cues.push({ key, start, dur, el: `(d) => <AbsoluteFill style={{ backgroundColor: "#0d0d0f" }}><Img src={staticFile("${src}")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>` });
+    addSfx(start, "success", "chime", 0.45); // acento en el QR
   } else if (b.tipo === "componente") {
     const c = b.componente, props = jprops(b.props);
     let el;
@@ -155,7 +157,7 @@ const heroAll = ["LightTrailCards", "ChapterTrailCard", "NodeRingToggle", "Bottl
 const kitAll = ["FoamClean", "GluGluPour"];
 const premAll = ["BigStatReveal", "BulletCascade", "MythTruth", "FlowSteps", "VsDuel", "NumberedSteps", "BeforeAfter", "PullQuote", "ChecklistReveal", "HighlightSweep", "HookCaption", "CtaCard"];
 const heroUsed = heroAll.filter((c) => usedComp.has(c)), kitUsed = kitAll.filter((c) => usedComp.has(c)), premUsed = premAll.filter((c) => usedComp.has(c));
-const imp = [`import { ReactNode } from "react";`, `import { RawShot } from "./scenes/RawShot";`];
+const imp = [`import { ReactNode } from "react";`, `import { AbsoluteFill, Img, staticFile } from "remotion";`, `import { RawShot } from "./scenes/RawShot";`];
 if (heroUsed.length) imp.push(`import { ${heroUsed.join(", ")} } from "../peroxide/PeroxideHero";`);
 if (kitUsed.length) imp.push(`import { ${kitUsed.join(", ")} } from "../peroxide/PeroxideKit";`);
 if (premUsed.length) imp.push(`import { PremiumOverlay } from "./scenes/PremiumOverlay";`);
