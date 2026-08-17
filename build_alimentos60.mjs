@@ -266,6 +266,8 @@ console.log(`cutaways ambiente insertados: ${cutaways.length}`);
 
 // limpiar campos internos
 for (const b of beats) { delete b._stock; delete b.stock; }
+// SIN TEXTO sobre los videos de stock (el creador: cansa) → b-roll limpio, cero overlay
+for (const b of beats) { if (b.kind === 'full') { delete b.caption; delete b.kicker; } }
 
 /* ===================== EMITIR ===================== */
 const TOTAL_FRAMES = Math.round(TOTAL * 30);
