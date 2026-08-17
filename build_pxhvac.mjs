@@ -44,6 +44,8 @@ const normProps = (comp, raw) => {
   if (comp === "BulletCascade") { const src = p.bullets || p.items; if (Array.isArray(src)) { p.bullets = src.map((s) => wrapStr(s, "key")); delete p.items; } return p; }
   if (comp === "VsDuel") { if (p.left) p.left = wrapStr(p.left, "label"); if (p.right) { p.right = wrapStr(p.right, "label"); } return p; }
   if (comp === "HighlightSweep") { if (p.text && !p.highlight) { p.highlight = p.text; p.pre = p.pre || ""; p.post = p.post || ""; delete p.text; } return p; }
+  // ChapterTrailCard/LightTrailCards hacen number.match(/\d+/) → el prop DEBE ser string, no number
+  if (comp === "ChapterTrailCard" || comp === "LightTrailCards") { if (p.number != null) p.number = String(p.number); return p; }
   return p;
 };
 

@@ -78,7 +78,7 @@ const CUR = [
   { sec: "t5", ph: "trick number five", comp: "ChapterTrailCard", dur: 4.0, props: { number: 5, title: "The Dishwasher", sub: "cloudy dishes" } },
   { sec: "t5", ph: "runs around", comp: "BigStatReveal", dur: 2.6, props: { value: 200, prefix: "$", eyebrow: "A DISHWASHER CALL", label: "usually just cleaning" } },
   // ===== T6 THE COIL ($900) — trato premium =====
-  { sec: "t6", ph: "number six", occ: 0, comp: "ChapterTrailCard", dur: 4.4, props: { number: 6, title: "The Evaporator Coil", sub: "the $900 job" } },
+  { sec: "t6", ph: "number six", occ: 1, comp: "ChapterTrailCard", dur: 4.4, props: { number: 6, title: "The Evaporator Coil", sub: "the $900 job" } },
   { sec: "t6", ph: "works like a coat", comp: "MythTruth", dur: 4.6, props: { myth: "It ran out of refrigerant", truth: "A blanket of mold insulates the cold", mythLabel: "WHAT YOU THINK", truthLabel: "WHAT IT REALLY IS" } },
   { sec: "t6", ph: "cut the breaker", comp: "NumberedSteps", dur: 5.4, props: { steps: [{ title: "Cut power AND the breaker", sub: "both" }, { title: "Open the access panel" }, { title: "Even coat on the coil & fins", sub: "don't soak" }, { title: "Let it dry fully, reassemble" }], eyebrow: "THE COIL — SAFELY" } },
   { sec: "t6", ph: "nine hundred", occ: 1, comp: "BigStatReveal", dur: 3.2, props: { value: 900, prefix: "$", eyebrow: "PULL & DEEP-CLEAN", label: "you do it for $1" } },
