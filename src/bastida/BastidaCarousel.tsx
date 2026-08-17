@@ -41,10 +41,15 @@ export type RenalCarouselProps = {
   title?: string;
   /** índice de una tarjeta BLOQUEADA que PULSA con glow (teaser "una de ellas…"). -1 = ninguna. */
   teaseIndex?: number;
+  /** veredicto por tarjeta — activa el halo verde/rojo y el arco de cada lado en el split. */
+  verdicts?: ('si' | 'no')[];
+  /** frame en que el anillo se ABRE en dos arcos: SÍ (verde, izq) / NO (rojo, der). undefined = sin split. */
+  splitAt?: number;
 };
 
 const easeIO = Easing.bezier(0.4, 0, 0.2, 1);
 const easeOut = Easing.out(Easing.cubic);
+const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 
 /** Devuelve los frames de cue de SFX para este carrusel (para cablear el audio en el beatsheet). */
 export const sfxCues = (introDur: number, reveals: number[]) => ({
@@ -81,10 +86,16 @@ export const RenalCarousel: React.FC<RenalCarouselProps> = ({
   kicker = 'Salud renal · 60+',
   title = '5 bebidas que sus riñones necesitan',
   teaseIndex = -1,
+  verdicts,
+  splitAt,
 }) => {
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
   const N = cards.length;
+  // progreso del SPLIT (0 = anillo intacto, 1 = dos arcos SÍ/NO abiertos)
+  const splitP = typeof splitAt === 'number'
+    ? interpolate(frame, [splitAt, splitAt + fps * 0.7], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: easeIO})
+    : 0;
   const cx = width / 2;
   const cy = height * 0.54;
   const Rx = width * 0.29;
@@ -188,6 +199,26 @@ export const RenalCarousel: React.FC<RenalCarouselProps> = ({
           const z = Math.round(depth * 100);
           const tiltY = -sinT * 26; // la tarjeta "mira" al centro
 
+          // ── SPLIT SÍ/NO: el anillo se ABRE en dos arcos (izq verde / der rojo) ──
+          let fx = x, fyArc = yArc, fscale = scale, ftilt = tiltY, fblur = depthBlur, fopacity = opacity, fz = z;
+          let haloColor: string | null = null;
+          if (splitP > 0 && verdicts && verdicts[i]) {
+            const side = verdicts[i] === 'si' ? -1 : 1;
+            let gi = 0; for (let k = 0; k < i; k++) if (verdicts[k] === verdicts[i]) gi++; // índice dentro del grupo
+            const gN = verdicts.filter((v) => v === verdicts[i]).length;
+            const mid = (gN - 1) / 2;
+            const xS = side * width * 0.245 + side * Math.abs(gi - mid) * 26; // leve arco hacia afuera
+            const yS = (gi - mid) * 292; // apilado vertical con separación
+            fx = lerp(x, xS, splitP);
+            fyArc = lerp(yArc, yS, splitP);
+            fscale = lerp(scale, 0.8, splitP);
+            ftilt = lerp(tiltY, side * -9, splitP);
+            fblur = lerp(depthBlur, 0, splitP);
+            fopacity = lerp(opacity, 1, splitP);
+            fz = Math.round(lerp(z, 60, splitP));
+            haloColor = verdicts[i] === 'si' ? BAS.si : BAS.no;
+          }
+
           // entrada por tarjeta (cap <1: con >5 tarjetas, 0.42+i*0.12 pasaba 1 y el
           // inputRange de interpolate quedaba decreciente [1.02,1] → crash. Con ≤5 no cambia.)
           const appearStart = i === 0 ? 0 : Math.min(0.42 + i * 0.12, 0.94);
@@ -226,10 +257,10 @@ export const RenalCarousel: React.FC<RenalCarouselProps> = ({
                 top: cy,
                 width: 360,
                 height: 460,
-                zIndex: z,
-                opacity: opacity * appear,
-                transform: `translate(-50%,-50%) translate(${x}px, ${yArc + enterY}px) scale(${scale * enterScale}) rotateY(${tiltY}deg)`,
-                filter: `blur(${depthBlur}px)`,
+                zIndex: fz,
+                opacity: fopacity * appear,
+                transform: `translate(-50%,-50%) translate(${fx}px, ${fyArc + enterY}px) scale(${fscale * enterScale}) rotateY(${ftilt}deg)`,
+                filter: `blur(${fblur}px)`,
                 transformStyle: 'preserve-3d',
               }}
             >
@@ -240,7 +271,7 @@ export const RenalCarousel: React.FC<RenalCarouselProps> = ({
                   inset: 0,
                   borderRadius: 30,
                   overflow: 'hidden',
-                  boxShadow: `0 40px 80px ${rgba('#12303b', 0.34)}, 0 8px 24px ${rgba('#12303b', 0.24)}${focusGlow ? `, 0 0 0 3px ${rgba(BAS.aqua, 0.9)}, 0 0 60px ${rgba(BAS.aqua, 0.55 * focusGlow)}` : ''}${teasePulse ? `, 0 0 0 ${2 + teasePulse * 2}px ${rgba(BAS.aqua, 0.4 + teasePulse * 0.5)}, 0 0 ${40 + teasePulse * 40}px ${rgba(BAS.aqua, 0.3 + teasePulse * 0.4)}` : ''}`,
+                  boxShadow: `0 40px 80px ${rgba('#12303b', 0.34)}, 0 8px 24px ${rgba('#12303b', 0.24)}${focusGlow ? `, 0 0 0 3px ${rgba(BAS.aqua, 0.9)}, 0 0 60px ${rgba(BAS.aqua, 0.55 * focusGlow)}` : ''}${teasePulse ? `, 0 0 0 ${2 + teasePulse * 2}px ${rgba(BAS.aqua, 0.4 + teasePulse * 0.5)}, 0 0 ${40 + teasePulse * 40}px ${rgba(BAS.aqua, 0.3 + teasePulse * 0.4)}` : ''}${haloColor ? `, 0 0 0 4px ${rgba(haloColor, 0.9 * splitP)}, 0 0 55px ${rgba(haloColor, 0.5 * splitP)}` : ''}`,
                   border: `1px solid ${rgba('#ffffff', 0.7)}`,
                 }}
               >
@@ -290,6 +321,33 @@ export const RenalCarousel: React.FC<RenalCarouselProps> = ({
               >
                 {i + 1}
               </div>
+
+              {/* badge veredicto ✓/✕ (aparece con el split) */}
+              {haloColor && splitP > 0.05 && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: -18,
+                    right: -18,
+                    width: 54,
+                    height: 54,
+                    borderRadius: '50%',
+                    background: haloColor,
+                    color: verdicts && verdicts[i] === 'si' ? BAS.onSi : BAS.onNo,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontFamily: FONT_SANS,
+                    fontSize: 30,
+                    fontWeight: 900,
+                    boxShadow: `0 8px 20px ${rgba(haloColor, 0.5)}`,
+                    opacity: splitP,
+                    transform: `scale(${0.6 + splitP * 0.4})`,
+                  }}
+                >
+                  {verdicts && verdicts[i] === 'si' ? '✓' : '✕'}
+                </div>
+              )}
 
               {/* candado (mientras no está revelada / abriéndose) */}
               {u < 1 && (

@@ -13,12 +13,15 @@ import { FearToCalm, StrikeChips, HandUnderline, PresenterIntro, SideIllustratio
 import { BenefitScene } from "./bastida/BenefitScene";
 import { MainBastida, TOTAL_MIN1 } from "./bastida/Main_bastida";
 import { MainBastida2, TOTAL_2 } from "./bastida/Main_bastida2";
+import { MainBastida4, TOTAL_4 } from "./bastida/Main_bastida4";
 import { ChapterAguaLimon } from "./bastida/ChapterAguaLimon";
 import { ChapterScene, CHAPTER_CONFIGS } from "./bastida/ChapterScene";
 import { CreatininaScene } from "./bastida/CreatininaScene";
 import { FoodVerdictScene } from "./bastida/FoodVerdictScene";
 import { AlertSignalsScene } from "./bastida/AlertSignalsScene";
 import { GuideCTAScene } from "./bastida/GuideCTAScene";
+import { QrCtaScene } from "./bastida/QrCtaScene";
+import { TestimonialScene } from "./bastida/TestimonialScene";
 import { NightShiftScene, OxidationScene } from "./bastida/VideoScenes2";
 
 // Root de REVIEW del kit "Dr. Bastida · Salud Renal" — cada componente firma como su
@@ -30,6 +33,14 @@ export const RootBastida: React.FC = () => (
       id="Bas-Main-Min1"
       component={MainBastida}
       durationInFrames={TOTAL_MIN1}
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Bas-Main4"
+      component={MainBastida4}
+      durationInFrames={TOTAL_4}
       fps={30}
       width={1920}
       height={1080}
@@ -161,6 +172,8 @@ export const RootBastida: React.FC = () => (
     <Composition id="Bas-NightShift" component={NightShiftScene} durationInFrames={110} fps={30} width={1920} height={1080} />
     <Composition id="Bas-Oxidation" component={OxidationScene} durationInFrames={110} fps={30} width={1920} height={1080} defaultProps={{ breakAt: 60 }} />
     <Composition id="Bas-GuideCTAScene" component={GuideCTAScene} durationInFrames={120} fps={30} width={1920} height={1080} />
+    <Composition id="Bas-QrCta" component={QrCtaScene} durationInFrames={150} fps={30} width={1920} height={1080} />
+    <Composition id="Bas-Testimonial" component={TestimonialScene} durationInFrames={180} fps={30} width={1920} height={1080} />
     <Composition id="Bas-AlertSignalsScene" component={AlertSignalsScene} durationInFrames={120} fps={30} width={1920} height={1080} />
     <Composition id="Bas-FoodVerdictScene" component={FoodVerdictScene} durationInFrames={120} fps={30} width={1920} height={1080} />
     <Composition id="Bas-CreatininaScene" component={CreatininaScene} durationInFrames={120} fps={30} width={1920} height={1080} defaultProps={{ from: 2.4, to: 1.3, caption: "Creatinina", subcaption: "se estabilizó" }} />
@@ -168,6 +181,9 @@ export const RootBastida: React.FC = () => (
     <Composition id="Bas-Chapter-Jengibre" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.jengibre} />
     <Composition id="Bas-Chapter-Hibisco" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.hibisco} />
     <Composition id="Bas-Chapter-Agua" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.agua} />
+    <Composition id="Bas-Chapter-Manzana" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.manzana} />
+    <Composition id="Bas-Chapter-Frutillas" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.frutillas} />
+    <Composition id="Bas-Chapter-Pina" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.pina} />
     <Composition
       id="Bas-SideIllustration"
       component={SideIllustration}

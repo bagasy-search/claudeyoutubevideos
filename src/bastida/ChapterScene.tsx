@@ -217,4 +217,8 @@ export const CHAPTER_CONFIGS: Record<string, ChapterSceneProps> = {
   arandano: {number: '7', unit: 'ARÁNDANO ROJO', subtitle: 'protege sus vías urinarias', hero: 'img/ill/bas_ill_cranberry.png', heroSide: 'left', accent: '#E0576A', accentDeep: '#7A1E2E', ambient: 'rgba(220,70,90,0.14)', flourish: 'droplets'},
   // --- VIDEO #2: "la mejor fruta antes de dormir" (arándanos azules = blueberries) ---
   arandanos: {number: '1', unit: 'ARÁNDANOS', subtitle: 'la mejor fruta antes de dormir', hero: 'img/ill/bas_ill_blueberries.png', heroSide: 'right', accent: '#6E7BD6', accentDeep: '#2E3A7A', ambient: 'rgba(110,123,214,0.14)', flourish: 'droplets'},
+  // --- VIDEO #4: "3 frutas que puede comer sin riesgo" (openers SÍ; NO=traidoras van con AlertSignals/rojo) ---
+  manzana: {number: '1', unit: 'MANZANA', subtitle: 'baja en potasio · fibra pectina', hero: 'img/ill/bas4_ill_manzana.png', heroSide: 'right', accent: '#3FA96B', accentDeep: '#1E6B43', ambient: 'rgba(63,169,107,0.14)', flourish: 'droplets'},
+  frutillas: {number: '2', unit: 'FRUTILLAS', subtitle: 'antioxidantes · frenan el óxido', hero: 'img/ill/bas4_ill_frutillas.png', heroSide: 'left', accent: '#E0577F', accentDeep: '#7A1E3E', ambient: 'rgba(224,87,127,0.13)', flourish: 'petals'},
+  pina: {number: '3', unit: 'PIÑA', subtitle: 'bromelina · desinflama', hero: 'img/ill/bas4_ill_pina.png', heroSide: 'right', accent: '#E0C070', accentDeep: '#8A6636', ambient: 'rgba(224,192,112,0.14)', flourish: 'droplets'},
 };
