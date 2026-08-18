@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
 
 // Kinetic typography: the phrase builds word-by-word, each word springing in with overshoot,
 // snapped to the Whisper word times (`times` = frame offsets from beat start). The key word
@@ -26,8 +26,13 @@ export const KineticText: React.FC<{
     <AbsoluteFill>
       {src && (
         <AbsoluteFill>
-          <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover",
-            filter: `${blur ? "blur(9px) " : ""}brightness(0.5) saturate(1.05)`, transform: `scale(${bgPush})` }} />
+          {/(\.mp4|\.webm|\.mov)$/i.test(src) ? (
+            <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover",
+              filter: `${blur ? "blur(9px) " : ""}brightness(0.5) saturate(1.05)`, transform: `scale(${bgPush})` }} />
+          ) : (
+            <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover",
+              filter: `${blur ? "blur(9px) " : ""}brightness(0.5) saturate(1.05)`, transform: `scale(${bgPush})` }} />
+          )}
           <AbsoluteFill style={{ background: "radial-gradient(120% 100% at 50% 60%, transparent 30%, rgba(4,6,12,.55) 100%)" }} />
         </AbsoluteFill>
       )}
