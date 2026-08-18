@@ -47,6 +47,13 @@ const compDur = (b: any): number => {
   if (NOCAP.has(b.kind)) return Math.max(2, b.dur);
   const next = compBeats.filter((x: any) => x.start > b.start && !OVERLAY.has(x.kind)).sort((a: any, c: any) => a.start - c.start)[0];
   const room = next ? next.start - b.start - 0.1 : b.dur;
+  // FreezeZoom: si el SIGUIENTE componente es OTRO freezezoom cercano (cadena de zoom de la lámina/reveal),
+  // TILE CONTIGUO hasta él (tope 13s) → sin huecos negros entre zoom y zoom. Un freezezoom SUELTO (el del
+  // hook, el último de la lámina antes de un gap grande) queda corto 4.5s y el avatar rellena después.
+  if (b.kind === "freezezoom") {
+    const contig = next && next.kind === "freezezoom" && (next.start - b.start) < 15;
+    return contig ? Math.max(2, Math.min((b.dur || 4.5) + 6, room, 13)) : Math.max(2, Math.min(4.5, room));
+  }
   return Math.max(2, Math.min(b.dur, capOf(b.kind), room));
 };
 
@@ -69,13 +76,18 @@ function buildWindows(): AvatarWindow[] {
   // GAP FILL: cuando el próximo contenido tarda >7.5s, avatar FULL desde start+6.8s.
   for (let i = 0; i < content.length; i++) {
     const nextStart = i + 1 < content.length ? content[i + 1].start : VIDEO_END;
-    if (nextStart - content[i].start > 7.5) pts.push({ start: +(content[i].start + 6.8).toFixed(2), mode: "full", pr: 2 });
+    const gap = nextStart - content[i].start;
+    // hook (t<130): sólo huecos grandes (>7.5s). 2ª mitad: huecos >4s se rellenan con avatar full.
+    const thr = content[i].start > 130 ? 4 : 7.5;
+    if (gap > thr) pts.push({ start: +(content[i].start + Math.min(6.8, gap - 1.5)).toFixed(2), mode: "full", pr: 2 });
   }
   for (const b of compBeats) {
     if (OVERLAY.has(b.kind)) continue; // overlays NO esconden al avatar
     const d = compDur(b);
     pts.push({ start: b.start, mode: "hidden", pr: 3 });
-    pts.push({ start: b.start + d, mode: "hidden", pr: 1 });
+    // ANTI-HUECO: tras cerrar un componente el avatar vuelve a FULL (nunca fondo muerto). Antes del
+    // hook (t<130s) se mantiene hidden para preservar el arranque sin cara.
+    pts.push({ start: +(b.start + d).toFixed(2), mode: b.start > 130 ? "full" : "hidden", pr: 1 });
   }
   for (const s of FULL_AT) { pts.push({ start: s, mode: "full", pr: 4 }); pts.push({ start: +(s + 2.6).toFixed(2), mode: "hidden", pr: 2 }); }
   pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
@@ -88,6 +100,14 @@ function buildWindows(): AvatarWindow[] {
     if (mode !== last) { w.push({ start: p.start, mode }); last = mode; }
   }
   for (const t of TALKSR) { w.push({ start: t.start, mode: "full" }); w.push({ start: +(t.start + t.dur).toFixed(2), mode: "hidden" }); }
+  // ANTI-HUECO overlays 2ª mitad: avatar FULL detrás del lowerthird/frasecinetica durante TODO su span.
+  // Se agregan DESPUÉS de TALKSR → en empate de tiempo (fin de talk = inicio del overlay) el sort estable
+  // deja el "full" del overlay al final y gana el colapso, evitando el fondo muerto tras cerrar el talk.
+  for (const b of compBeats) {
+    if (!OVERLAY.has(b.kind) || b.start <= 130) continue;
+    w.push({ start: b.start, mode: "full" });
+    w.push({ start: +(b.start + Math.max(2, b.dur)).toFixed(2), mode: "hidden" });
+  }
   w.sort((a, b) => a.start - b.start);
   const coll: AvatarWindow[] = [];
   for (const x of w) { if (!coll.length || coll[coll.length - 1].mode !== x.mode) coll.push(x); }
