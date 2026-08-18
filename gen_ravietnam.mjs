@@ -81,7 +81,7 @@ const SECTIONS = [
     D("dg_map_danang", "Where I live", "A simple warm map of Vietnam with a glowing gold pin on the central coast city of Da Nang, small plane arc from the USA across the Pacific."),
     r("rv_danang_skyline", "a mid-size coastal city skyline with a river and bridges at dusk, palm trees, Da Nang Vietnam", { w: 0.7, hold: true }),
     r("rv_n_riverside_night", "a lively riverfront promenade in a vietnamese city at night, lights on the water", { w: 0.5 }),
-    c("chips", { title: "Exactly how — no brochure nonsense", image: "img/rv_danang_skyline.png", chips: ["The apartment", "The food", "The healthcare", "The visa trapdoor"], hue: "amber" }),
+    c("chips", { bg: "image", imageDarken: 0.62, title: "Exactly how — no brochure nonsense", image: "img/rv_danang_skyline.png", chips: ["The apartment", "The food", "The healthcare", "The visa trapdoor"], hue: "amber" }),
     kpav("I'll show you *exactly how* a regular guy pulls this off.", "rv_him_cafe_talk", "sitting at an outdoor cafe in vietnam talking to the camera, warm and honest", { accent: GOLD }),
   ]},
   // ░░ 5 · THE KITCHEN TABLE (miedo — azul somber) ░░
@@ -121,7 +121,7 @@ const SECTIONS = [
     r("rv_dragon_bridge", "a big dragon-shaped bridge lit up over a river in a vietnamese city at night", { w: 0.7 }),
     c("callout", { image: "img/rv_dragon_bridge.png", figure: "🐉", caption: "It breathes fire on weekends.", accent: GOLD, eyebrow: "The dragon bridge", at: "shaped like a giant dragon" }),
     half("rv_expats_cafe", "a friendly group of older western expats laughing at an outdoor cafe in vietnam", { side: "left", kicker: "You're not alone", w: 1.0 }),
-    c("chips", { title: "A whole community over here", image: r("rv_expats_walk", "two older expat couples chatting on a sunny palm-lined promenade in vietnam").name && "img/rv_expats_walk.png", chips: ["Americans", "Canadians", "Aussies", "Brits", "Koreans"], hue: "amber" }),
+    c("chips", { bg: "image", imageDarken: 0.62, title: "A whole community over here", image: r("rv_expats_walk", "two older expat couples chatting on a sunny palm-lined promenade in vietnam").name && "img/rv_expats_walk.png", chips: ["Americans", "Canadians", "Aussies", "Brits", "Koreans"], hue: "amber" }),
   ]},
   // ░░ 9 · THE APARTMENT ░░
   { key: "apartment", phrase: "the apartment This is where", beats: [
@@ -217,7 +217,7 @@ const SECTIONS = [
     half("rv_heat_sun", "a hazy hot humid tropical afternoon in a vietnamese city, bright sun, sweat", { side: "left", kicker: "The heat — it's real", w: 0.85 }),
     c("callout", { image: r("rv_traffic_river", "a chaotic river of motorbikes at a vietnamese intersection, everyday, a little scary").name && "img/rv_traffic_river.png", figure: "⚠", caption: "Go slow. Wear the real helmet.", accent: ALARM, eyebrow: "The motorbikes", at: "every year people get hurt" }),
     kp("“A live coward beats a *brave statistic*.”", "rv_helmet", "a proper motorcycle helmet on a scooter seat in vietnam, close, casual", { accent: RED, at: "a brave statistic" }),
-    c("chips", { title: "The language — learn a little", image: r("rv_market_smile", "an older western man smiling and pointing to order at a vietnamese market stall").name && "img/rv_market_smile.png", chips: ["Hello", "Thank you", "Your numbers", "Smile + point"], hue: "amber" }),
+    c("chips", { bg: "image", imageDarken: 0.62, title: "The language — learn a little", image: r("rv_market_smile", "an older western man smiling and pointing to order at a vietnamese market stall").name && "img/rv_market_smile.png", chips: ["Hello", "Thank you", "Your numbers", "Smile + point"], hue: "amber" }),
     half("rv_tax_papers", "US tax paperwork and a laptop on a table, boring but important, soft light", { side: "left", kicker: "Taxes — you're still an American", w: 0.8 }),
     c("mistake", { number: "$", title: "The scams", desc: "Nobody legit needs you to wire money. Keep your head.", eyebrow: "STAY SHARP", image: r("rv_phone_scam", "an older man's hand on a phone with a suspicious message, cautious mood").name && "img/rv_phone_scam.png" }),
   ]},
@@ -234,7 +234,7 @@ const SECTIONS = [
     half("rv_him_friends", "an older western man laughing with a diverse group of expat friends at dinner in vietnam", { side: "left", kicker: "What saved me wasn't the rent — it was the people", w: 1.0 }),
     r("rv_coffee_morning", "a cheerful group of older expats at a morning coffee meetup on a sunny terrace in vietnam", { w: 0.8, hold: true }),
     r("rv_n_walking_group", "a group of older expats walking together on a beach promenade at sunrise in vietnam", { w: 0.5 }),
-    c("chips", { title: "A whole life here", image: "img/rv_coffee_morning.png", chips: ["Coffee mornings", "Walking groups", "Friday dinners", "Poker night"], hue: "amber" }),
+    c("chips", { bg: "image", imageDarken: 0.62, title: "A whole life here", image: "img/rv_coffee_morning.png", chips: ["Coffee mornings", "Walking groups", "Friday dinners", "Poker night"], hue: "amber" }),
     half("rv_neighbor", "an older western man and an elderly vietnamese grandmother smiling at a little shop, fruit basket", { kicker: "She leaves fruit on my doorstep", w: 0.95 }),
     kp("More people who'd *notice* if I didn't show up — than in 40 years back home.", "rv_promenade_friends", "older expats walking and chatting on a palm promenade at sunset in vietnam", { accent: GREEN, at: "more people who'd notice" }),
     r("rv_quiet_house", "a quiet empty american living room, soft lonely light, conceptual", { w: 0.6 }),

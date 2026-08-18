@@ -234,6 +234,8 @@
    "dur": 4.81,
    "key": "vietnam_3",
    "kind": "chips",
+   "bg": "image",
+   "imageDarken": 0.62,
    "title": "Exactly how — no brochure nonsense",
    "image": "img/rv_danang_skyline.png",
    "chips": [
@@ -535,6 +537,8 @@
    "dur": 5.55,
    "key": "danang_7",
    "kind": "chips",
+   "bg": "image",
+   "imageDarken": 0.62,
    "title": "A whole community over here",
    "image": "img/rv_expats_walk.png",
    "chips": [
@@ -1319,6 +1323,8 @@
    "dur": 23.45,
    "key": "warnings_4",
    "kind": "chips",
+   "bg": "image",
+   "imageDarken": 0.62,
    "title": "The language — learn a little",
    "image": "img/rv_market_smile.png",
    "chips": [
@@ -1446,6 +1452,8 @@
    "dur": 13.21,
    "key": "community_3",
    "kind": "chips",
+   "bg": "image",
+   "imageDarken": 0.62,
    "title": "A whole life here",
    "image": "img/rv_coffee_morning.png",
    "chips": [
