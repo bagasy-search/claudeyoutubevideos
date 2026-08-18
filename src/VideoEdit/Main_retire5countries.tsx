@@ -2,8 +2,7 @@ import React from "react";
 import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { sec, COLORS } from "./theme_ben";
 import { CinematicWrap } from "./components/CinematicWrap";
-import { SfxCue, SFX } from "./components/Sfx";
-import { CUES, SFX_CUES } from "./cues_retire5countries.gen";
+import { CUES } from "./cues_retire5countries.gen";
 
 // ── CANAL "RETIRE ABROAD" · "5 Countries Practically Begging Americans to Retire" ──
 // Look finance-avatar (theme_ben) SESGADO CÁLIDO: los accents por componente llevan el
@@ -47,10 +46,7 @@ export const MainRetire5: React.FC = () => {
       </CinematicWrap>
       {/* ambiente REAL del creador (loop 16s, normalizado), fits la playa donde está el avatar */}
       <Audio src={staticFile("sfx/ra_ambient_ocean.mp3")} volume={0.22} loop />
-      {/* SFX suaves en los reveals de componentes (bajos, que no tapen la voz ni el mar) */}
-      {SFX_CUES.map((s, i) => (
-        <SfxCue key={"sfx" + i} at={s.at} src={(SFX as Record<string, string>)[s.role] || SFX.popUp} volume={Math.min(s.vol ?? 0.16, 0.16)} durationInFrames={sec(1.2)} />
-      ))}
+      {/* ⛔ SFX "pop" ELIMINADOS a pedido del creador (aparecían en cada cartel y molestaban). */}
     </AbsoluteFill>
   );
 };
