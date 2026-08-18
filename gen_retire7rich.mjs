@@ -29,7 +29,9 @@ const hi = (name, prompt, o = {}) => {
     if (o.noref) HOSTIMG.push({ name: nm, prompt: `Realistic handheld 16:9 photo. ${prompt}. ${IMPERF}` });
     else HOSTIMG.push({ name: nm, ref: [HOSTREF], prompt: PH(prompt) });
   }
-  const { noref, ...rest } = o;
+  const { noref, parallax, ...rest } = o;
+  // tomas emocionales → 2.5D parallax (WebGL: la foto sobre un plano desplazado + cámara que se mueve)
+  if (parallax) return { t: "photo25d", src: `img/${nm}.png`, ...rest };
   return { t: "raw", name: nm, ...rest };
 };
 let fpi = 0;
@@ -52,7 +54,7 @@ const FP_BG = ["beach_ocean", "market_produce", "passport_stamp", "cafe_table", 
 
 const W = { raw: 1.3, keyphrase: 1.4, statpills: 1.3, floatprop: 1.5, rule: 1.0, checklist: 1.7, splitlist: 1.4,
   bars: 1.5, callout: 1.3, mistake: 1.5, action: 1.5, signature: 1.7, vsmed: 1.6, nextvideo: 1.4, quote: 1.1, chips: 1.1, stat: 1.2,
-  globe3d: 2.6, city3d: 1.9, number3d: 1.3, oner3d: 4.0 };
+  globe3d: 2.6, city3d: 1.9, number3d: 1.3, oner3d: 4.0, photo25d: 1.8 };
 
 // ── componentes 3D (three.js) — hero moments ──
 const GOLD = "#FFC400";
@@ -72,7 +74,7 @@ const SECTIONS = [
   // ░░ HOOK ░░ (0–64s) muy dinámico
   { key: "hook", phrase: null, start: 1.4, beats: [
     c("talk", {}),
-    hi("beach_porch", "sitting relaxed on a tropical beach porch in the morning, a coffee mug in hand, looking out at the ocean, content half-smile", { hold: true, w: 0.9 }),
+    hi("beach_porch", "sitting relaxed on a tropical beach porch in the morning, a coffee mug in hand, looking out at the ocean, content half-smile", { parallax: true, hold: true, w: 0.9 }),
     kp("*$1,900* a month. That's the whole budget.", { src: "img/ra_beach_porch.png", at: "that s the whole budget", w: 0.6 }),
     real("beach_ocean", "calm tropical ocean and palm beach, slow", "tropical beach ocean palm slow calm", { w: 0.45 }),
     kp("A small number... in the *wrong zip code*", { src: "broll/rac_beach_ocean.mp4", at: "in the wrong zip code", accent: "amber", w: 0.6 }),
@@ -84,14 +86,14 @@ const SECTIONS = [
   ]},
   // ░░ STORY — Ohio kitchen table ░░
   { key: "ohio", phrase: "two years ago", beats: [
-    hi("ohio_night", "a few years younger and tired, sitting alone at a worn kitchen table at night in an Ohio home, a laptop and a spreadsheet glowing, worried, dim warm lamp light", { kicker: "Ohio, two years ago", hold: true }),
+    hi("ohio_night", "a few years younger and tired, sitting alone at a worn kitchen table at night in an Ohio home, a laptop and a spreadsheet glowing, worried, dim warm lamp light", { kicker: "Ohio, two years ago", parallax: true, hold: true }),
     kp("Worked *40 years*. Paid the house down.", { src: "img/ra_ohio_night.png", at: "forty years of work", w: 0.7 }),
     kp("By the end there's *nothing left*", { src: "img/ra_ohio_night.png", at: "there s nothing", w: 0.7 }),
-    hi("empty_chair", "an empty wooden kitchen chair across the table, soft melancholic light, absence", { kicker: "Her chair, still there", w: 0.8 }),
+    hi("empty_chair", "an empty wooden kitchen chair across the table, soft melancholic light, absence", { kicker: "Her chair, still there", parallax: true, w: 0.8 }),
   ]},
   // ░░ RAY ░░
   { key: "ray", phrase: "my buddy ray", beats: [
-    hi("phone_call", "at the kitchen table at night holding an old phone to his ear, a small surprised smile starting", { kicker: "11 o'clock, a phone call", hold: true }),
+    hi("phone_call", "at the kitchen table at night holding an old phone to his ear, a small surprised smile starting", { kicker: "11 o'clock, a phone call", parallax: true, hold: true }),
     real("phone_night", "an older man on a phone at night at home, warm lamp", "older man phone night home lamp", { w: 0.5 }),
     kp("*You're doing the math in the wrong country*", { src: "img/ra_phone_call.png", at: "you re doing the math in the wrong country", w: 0.9 }),
     fp("plane_ticket", "a single paper airline boarding pass, round trip", { caption: "So I bought *one ticket*", accent: "amber", scale: 0.8 }),
@@ -199,7 +201,7 @@ const SECTIONS = [
     c("checklist", { title: "Pensioner discounts — by law", accent: "good", items: ["25% off airline tickets & restaurants", "20% off doctor visits & medicine", "25% off electric & phone bills", "50% off movies & shows", "Half off hotels Mon–Thu"] }),
     kp("They wrote *we want you* right into the law", { src: "broll/rac_pa_skyline.mp4", at: "they wrote it into the code", accent: "good", w: 0.65 }),
     real("pa_boquete", "boquete panama green mountains, coffee farms, river", "boquete panama mountains coffee farm river", { w: 0.5 }),
-    hi("marisol", "chatting and laughing with an older latina woman in an apron at a colorful fruit stand in a small tropical town, morning light", { kicker: "Marisol, at the fruit stand", w: 0.8 }),
+    hi("marisol", "chatting and laughing with an older latina woman in an apron at a colorful fruit stand in a small tropical town, morning light", { kicker: "Marisol, at the fruit stand", parallax: true, w: 0.8 }),
     kp("A little house, *one street back* from the water", { src: "img/ra_little_house.png", at: "one street back from the water", w: 0.7 }),
     hi("little_house", "a modest pastel one-story beach house one street back from the water in a latin american town, plants, no people", { noref: true }),
     c("callout", { image: "pa_hospital", figure: "$400/mo", caption: "The widow's little house — I've been there ever since", accent: "good" }),
@@ -225,11 +227,11 @@ const SECTIONS = [
   ]},
   // ░░ WARNINGS — THE HOUSE + payoff del loop (rojo) ░░
   { key: "house", phrase: "the mistake i almost made", beats: [
-    hi("phone_doubt", "sitting on the edge of a rented bed at night, hand resting on a phone, homesick and doubting, tired, dim warm light", { kicker: "Four months in, my hand on the phone", hold: true }),
+    hi("phone_doubt", "sitting on the edge of a rented bed at night, hand resting on a phone, homesick and doubting, tired, dim warm light", { kicker: "Four months in, my hand on the phone", parallax: true, hold: true }),
     kp("*You still got your exit door open?*", { src: "img/ra_phone_doubt.png", at: "you still got your exit door open", accent: "amber", w: 0.85 }),
     c("mistake", { number: "3", eyebrow: "THE BIG ONE", title: "Don't sell everything on trip one", desc: "Rent for a year before you buy. Keep your exit door open. Keep a cushion back home.", accent: "danger" }),
     kp("Paradise for two weeks is *different* on a Tuesday", { src: "broll/rac_beach_town.mp4", at: "a different animal when it s a wet tuesday", accent: "amber", w: 0.6 }),
-    hi("welder_condo", "a worried heavier older american man in a work shirt looking up at a half-finished abandoned concrete condo building, construction site", { kicker: "A man I knew", w: 0.8, noref: true }),
+    hi("welder_condo", "a worried heavier older american man in a work shirt looking up at a half-finished abandoned concrete condo building, construction site", { kicker: "A man I knew", parallax: true, w: 0.8, noref: true }),
     kp("His money was just... *gone*. An ocean away.", { src: "img/ra_welder_condo.png", at: "his money was just gone", accent: "danger", w: 0.7 }),
     c("action", { eyebrow: "The rule", step: "Rent before you buy — for a year", question: "If you wanted to come home in six months, could you?" }),
   ]},
@@ -240,7 +242,7 @@ const SECTIONS = [
   ]},
   // ░░ CLOSE ░░
   { key: "close", phrase: "the most expensive country in the world", beats: [
-    hi("beach_walk", "walking a quiet beach at golden hour, sandals in hand, profile, relaxed and free", { kicker: "For the first time in years", hold: true }),
+    hi("beach_walk", "walking a quiet beach at golden hour, sandals in hand, profile, relaxed and free", { kicker: "For the first time in years", parallax: true, hold: true }),
     kp("It was never that I didn't have *enough money*", { src: "img/ra_beach_walk.png", at: "i didn t have enough money", w: 0.7 }),
     kp("I moved the same check... the fear just *left*", { src: "broll/rac_beach_ocean.mp4", at: "the fear just left", accent: "good", w: 0.7 }),
     c("statpills", { pills: ["No alarm", "Real food", "Money left over"], accent: "good", slider: false }),
@@ -324,7 +326,7 @@ for (let si = 0; si < SECTIONS.length; si++) {
   }
   const CAP = { keyphrase: 4.6, statpills: 5.0, checklist: 8.5, rule: 3.2, callout: 5.0,
     mistake: 6.5, splitlist: 6.0, bars: 6.5, vsmed: 7.5, action: 6.5, signature: 6.5, nextvideo: 6.0,
-    floatprop: 5.0, quote: 4.5, chips: 4.5, stat: 5.0, globe3d: 15.0, city3d: 8.5, number3d: 5.0, oner3d: 20.0 };
+    floatprop: 5.0, quote: 4.5, chips: 4.5, stat: 5.0, globe3d: 15.0, city3d: 8.5, number3d: 5.0, oner3d: 20.0, photo25d: 6.0 };
   sec.beats.forEach((b, i) => {
     const cursor = +startT[i].toFixed(2);
     const nextR = +(i + 1 < n ? startT[i + 1] : end).toFixed(2);
