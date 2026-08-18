@@ -1,5 +1,6 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { GRAIN_URI } from "./grainData";
 
 // Global compositing texture: film grain (animated), vignette, drifting dust motes, and a slow
 // light-ray sweep. Sits on top of everything (pointerEvents none). Subtle by design — it makes
@@ -11,7 +12,10 @@ const MOTES = Array.from({ length: 26 }, (_, i) => {
 
 export const CineFX: React.FC<{ grain?: number; rays?: boolean }> = ({ grain = 0.09, rays = true }) => {
   const frame = useCurrentFrame();
-  const seed = (frame % 12) + 1;          // animated grain
+  // cheap animated grain: a baked noise tile shifted each frame (feTurbulence per-frame was
+  // far too slow on the farm and timed out chunks). Deterministic pseudo-random offset.
+  const gx = (frame * 37) % 256;
+  const gy = (frame * 53) % 256;
   const raySweep = 118 + Math.sin(frame * 0.006) * 8;
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
@@ -31,13 +35,9 @@ export const CineFX: React.FC<{ grain?: number; rays?: boolean }> = ({ grain = 0
         })}
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "radial-gradient(120% 100% at 50% 46%, transparent 52%, rgba(0,0,0,.26) 78%, rgba(0,0,0,.6) 100%)" }} />
-      <svg width="100%" height="100%" style={{ position: "absolute", inset: 0, opacity: grain, mixBlendMode: "overlay" }}>
-        <filter id={`cinegrain${seed}`}>
-          <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" seed={seed} />
-          <feColorMatrix type="saturate" values="0" />
-        </filter>
-        <rect width="100%" height="100%" filter={`url(#cinegrain${seed})`} />
-      </svg>
+      <AbsoluteFill style={{ opacity: grain, mixBlendMode: "overlay",
+        backgroundImage: `url(${GRAIN_URI})`, backgroundRepeat: "repeat",
+        backgroundPosition: `${gx}px ${gy}px` }} />
     </AbsoluteFill>
   );
 };
