@@ -45,11 +45,11 @@ export const MainRetire5: React.FC = () => {
           ))}
         </AbsoluteFill>
       </CinematicWrap>
-      {/* ambiente de mar continuo, muy bajo (fits the beach setting del avatar) */}
-      <Audio src={staticFile("sfx/ra_ambient_ocean.mp3")} volume={0.05} loop />
-      {/* SFX suaves en los reveals de componentes */}
+      {/* ambiente de mar CONTINUO y sin cortes (loop seamless, fits la playa donde está el avatar) */}
+      <Audio src={staticFile("sfx/ra_ambient_ocean.mp3")} volume={0.11} loop />
+      {/* SFX suaves en los reveals de componentes (bajos, que no tapen la voz ni el mar) */}
       {SFX_CUES.map((s, i) => (
-        <SfxCue key={"sfx" + i} at={s.at} src={(SFX as Record<string, string>)[s.role] || SFX.popUp} volume={s.vol ?? 0.28} durationInFrames={sec(1.2)} />
+        <SfxCue key={"sfx" + i} at={s.at} src={(SFX as Record<string, string>)[s.role] || SFX.popUp} volume={Math.min(s.vol ?? 0.16, 0.16)} durationInFrames={sec(1.2)} />
       ))}
     </AbsoluteFill>
   );
