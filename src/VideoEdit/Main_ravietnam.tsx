@@ -53,13 +53,13 @@ const SECTION_KEYS = new Set(CUES.filter((c) => c.kind === "rule").map((c) => c.
 
 const OceanBed: React.FC = () => {
   const { fps, durationInFrames } = useVideoConfig();
-  const loopLen = Math.round(40 * fps);
+  const loopLen = Math.round(16 * fps);
   const n = Math.ceil(durationInFrames / loopLen);
   return (
     <>
       {Array.from({ length: n }).map((_, i) => (
-        <Sequence key={"ocean" + i} from={i * loopLen} durationInFrames={loopLen}>
-          <Audio src={staticFile("sfx/ra_ambient_ocean.mp3")} volume={0.06} />
+        <Sequence key={"amb" + i} from={i * loopLen} durationInFrames={loopLen}>
+          <Audio src={staticFile("sfx/ra_ambient_day.mp3")} volume={0.08} />
         </Sequence>
       ))}
     </>
