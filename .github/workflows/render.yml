@@ -103,12 +103,12 @@ jobs:
             TMPDIR=/dev/shm npx remotion render "$ENTRY" "${{ github.event.inputs.comp_id }}" \
               "out/chunk_${{ matrix.idx }}.mp4" \
               --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
-              --concurrency=4 --timeout=180000 --crf=23 --gl=angle
+              --concurrency=4 --timeout=180000 --crf=23 --gl=swangle
           else
             TMPDIR=/dev/shm npx remotion render "${{ github.event.inputs.comp_id }}" \
               "out/chunk_${{ matrix.idx }}.mp4" \
               --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
-              --concurrency=4 --timeout=180000 --crf=23 --gl=angle
+              --concurrency=4 --timeout=180000 --crf=23 --gl=swangle
           fi
       - name: reportar progreso del chunk (Bagasy)
         continue-on-error: true
