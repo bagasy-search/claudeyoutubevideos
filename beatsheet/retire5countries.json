@@ -42,6 +42,7 @@
    "text": "My total spending this month? About *$1,300*",
    "src": "img/ra_beach_porch.png",
    "at": "about $1,300",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -60,6 +61,7 @@
    "text": "My Social Security check makes me feel *rich*",
    "src": "broll/rac_beach_ocean.mp4",
    "at": "it makes me feel rich",
+   "accent": "amber",
    "hue": "good"
   },
   {
@@ -102,6 +104,7 @@
    "text": "Worked *40 years*. Paid the house down.",
    "src": "img/ra_ohio_night.png",
    "at": "worked 40 years",
+   "accent": "amber",
    "hue": "good",
    "times": [
     9,
@@ -121,6 +124,7 @@
    "text": "By the time everything's paid... *nothing left*",
    "src": "img/ra_ohio_night.png",
    "at": "there's nothing left",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -174,6 +178,7 @@
    "text": "*You're doing the math in the wrong country*",
    "src": "img/ra_phone_call.png",
    "at": "you're doing the math in the wrong country",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -228,6 +233,7 @@
    "text": "They are *begging* Americans to come",
    "src": "broll/rac_redcarpet.mp4",
    "at": "begging us to come",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -246,6 +252,7 @@
    "text": "Cutting your bills in half — *by law*",
    "src": "broll/rac_law_book.mp4",
    "at": "cutting your bills in half",
+   "accent": "amber",
    "hue": "amber",
    "times": [
     9,
@@ -306,6 +313,7 @@
    "text": "Not a pension. Not investments. *Just the check.*",
    "src": "broll/rac_money_count.mp4",
    "at": "just the check",
+   "accent": "amber",
    "hue": "good"
   },
   {
@@ -354,6 +362,7 @@
    "dur": 3.2,
    "kind": "rule",
    "number": "05",
+   "label": "N°",
    "title": "Costa Rica",
    "hue": "good"
   },
@@ -395,6 +404,7 @@
    "text": "If your check clears *$1,000*, you qualify",
    "src": "broll/rac_cr_town.mp4",
    "at": "if your social security check clears",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -495,6 +505,7 @@
    "text": "*Pura vida* — a slower way through the day",
    "src": "broll/rac_cr_rainforest.mp4",
    "at": "pura vida",
+   "accent": "amber",
    "hue": "good"
   },
   {
@@ -564,6 +575,7 @@
    "dur": 3.2,
    "kind": "rule",
    "number": "04",
+   "label": "N°",
    "title": "Colombia",
    "hue": "amber"
   },
@@ -603,6 +615,7 @@
    "text": "The *City of Eternal Spring* — 72°, every day",
    "src": "broll/rac_co_flowers.mp4",
    "at": "the city of eternal spring",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -734,6 +747,7 @@
    "dur": 2.68,
    "kind": "rule",
    "number": "03",
+   "label": "N°",
    "title": "Portugal",
    "hue": "amber"
   },
@@ -762,6 +776,7 @@
    "text": "This is *Europe*. On a Social Security check.",
    "src": "broll/rac_pt_cobblestone.mp4",
    "at": "this is western europe",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -921,6 +936,7 @@
    "dur": 3.2,
    "kind": "rule",
    "number": "02",
+   "label": "N°",
    "title": "Ecuador",
    "hue": "good"
   },
@@ -953,6 +969,7 @@
    "text": "No exchange rate. *What you see is what you get.*",
    "src": "broll/rac_ec_cuenca.mp4",
    "at": "there is no exchange rate",
+   "accent": "amber",
    "hue": "good"
   },
   {
@@ -977,6 +994,22 @@
    "hue": "amber"
   },
   {
+   "id": "fill_44",
+   "start": 740.75,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cr_beach.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_45",
+   "start": 748.35,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cr_market.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "ecuador_5",
    "start": 759.34,
    "dur": 4.6,
@@ -984,6 +1017,15 @@
    "text": "This is where Ecuador starts *begging*",
    "src": "broll/rac_ec_market.mp4",
    "at": "where ecuador starts begging",
+   "accent": "amber",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_46",
+   "start": 764.19,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cr_coffee.mp4",
    "hue": "amber"
   },
   {
@@ -1014,11 +1056,43 @@
    "hue": "good"
   },
   {
+   "id": "fill_47",
+   "start": 784.88,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_co_street.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_48",
+   "start": 792.48,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_co_food.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_49",
+   "start": 800.08,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_co_cablecar.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "ecuador_7",
    "start": 810.1,
    "dur": 5,
    "kind": "raw",
    "src": "broll/rac_ec_market.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_50",
+   "start": 815.35,
+   "dur": 3.44,
+   "kind": "raw",
+   "src": "broll/rac_pt_tram.mp4",
    "hue": "amber"
   },
   {
@@ -1035,6 +1109,22 @@
    "hue": "amber"
   },
   {
+   "id": "fill_51",
+   "start": 827.04,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pt_castle.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_52",
+   "start": 834.64,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pt_coast.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "ecuador_9",
    "start": 847.78,
    "dur": 4.6,
@@ -1046,11 +1136,20 @@
    "hue": "good"
   },
   {
+   "id": "fill_53",
+   "start": 852.63,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_ec_plaza.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "panama_0",
    "start": 861.76,
    "dur": 3.2,
    "kind": "rule",
    "number": "01",
+   "label": "N°",
    "title": "Panama",
    "hue": "amber"
   },
@@ -1071,7 +1170,24 @@
    "text": "The *most generous* retirement program I've ever seen",
    "src": "broll/rac_pa_skyline.mp4",
    "at": "the most generous retirement program",
+   "accent": "amber",
    "hue": "good"
+  },
+  {
+   "id": "fill_54",
+   "start": 877.48,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_ec_andes.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_55",
+   "start": 885.08,
+   "dur": 3.73,
+   "kind": "raw",
+   "src": "broll/rac_ec_llama.mp4",
+   "hue": "amber"
   },
   {
    "id": "panama_3",
@@ -1085,6 +1201,22 @@
    ],
    "accent": "amber",
    "slider": false,
+   "hue": "amber"
+  },
+  {
+   "id": "fill_56",
+   "start": 897.06,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pa_canal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_57",
+   "start": 904.66,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pa_beach.mp4",
    "hue": "amber"
   },
   {
@@ -1119,6 +1251,30 @@
    "hue": "amber"
   },
   {
+   "id": "fill_58",
+   "start": 925.99,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pa_oldtown.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_59",
+   "start": 933.59,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_older_couple_walk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_60",
+   "start": 941.19,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_airport.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "panama_5",
    "start": 950.5,
    "dur": 4.6,
@@ -1130,11 +1286,35 @@
    "hue": "good"
   },
   {
+   "id": "fill_61",
+   "start": 955.35,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_suitcase.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_62",
+   "start": 962.95,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_passport_book.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "panama_6",
    "start": 973.37,
    "dur": 5,
    "kind": "raw",
    "src": "broll/rac_pa_boquete.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_63",
+   "start": 978.62,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_market_fish.mp4",
    "hue": "amber"
   },
   {
@@ -1147,6 +1327,22 @@
    "kicker": "Marisol, at the fruit stand"
   },
   {
+   "id": "fill_64",
+   "start": 994.46,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_coffee_pour.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_65",
+   "start": 1002.06,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_apartment_interior.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "panama_8",
    "start": 1015.86,
    "dur": 4.6,
@@ -1154,6 +1350,7 @@
    "text": "A little house, *one street back* from the water",
    "src": "img/ra_little_house.png",
    "at": "one street back from the water",
+   "accent": "amber",
    "hue": "good",
    "times": [
     0,
@@ -1168,11 +1365,27 @@
    ]
   },
   {
+   "id": "fill_66",
+   "start": 1020.71,
+   "dur": 4.15,
+   "kind": "raw",
+   "src": "broll/rac_pharmacy.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "panama_9",
    "start": 1027.86,
    "dur": 4.5,
    "kind": "raw",
    "src": "img/ra_little_house.png",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_67",
+   "start": 1032.61,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_doctor_talk.mp4",
    "hue": "amber"
   },
   {
@@ -1193,6 +1406,14 @@
    "caption": "What that surgery would've cost back home",
    "accent": "amber",
    "hue": "good"
+  },
+  {
+   "id": "fill_68",
+   "start": 1055.4,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_house_for_sale.mp4",
+   "hue": "amber"
   },
   {
    "id": "recap_0",
@@ -1220,6 +1441,14 @@
    "at": "your social security check can actually clear",
    "accent": "good",
    "hue": "good"
+  },
+  {
+   "id": "fill_69",
+   "start": 1074.14,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_moving_boxes.mp4",
+   "hue": "amber"
   },
   {
    "id": "warnings_0",
@@ -1269,6 +1498,14 @@
    "hue": "amber"
   },
   {
+   "id": "fill_70",
+   "start": 1100.84,
+   "dur": 4.01,
+   "kind": "raw",
+   "src": "broll/rac_video_call.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "warnings_3",
    "start": 1107.85,
    "dur": 8.5,
@@ -1296,6 +1533,14 @@
    "hue": "good"
   },
   {
+   "id": "fill_71",
+   "start": 1116.6,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_beach_sunset.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "taxes_0",
    "start": 1128.43,
    "dur": 7.5,
@@ -1316,6 +1561,14 @@
    "hue": "amber"
   },
   {
+   "id": "fill_72",
+   "start": 1146.11,
+   "dur": 3.53,
+   "kind": "raw",
+   "src": "broll/rac_town_square.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "taxes_2",
    "start": 1152.64,
    "dur": 5,
@@ -1328,6 +1581,14 @@
    "hue": "good"
   },
   {
+   "id": "fill_73",
+   "start": 1157.89,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_hands_coffee_talk.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "taxes_3",
    "start": 1170.06,
    "dur": 4.6,
@@ -1336,6 +1597,14 @@
    "src": "broll/rac_money_count.mp4",
    "at": "an accountant who knows expat taxes",
    "accent": "amber",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_74",
+   "start": 1174.91,
+   "dur": 4.51,
+   "kind": "raw",
+   "src": "broll/rac_palm_road.mp4",
    "hue": "amber"
   },
   {
@@ -1351,6 +1620,30 @@
    "hue": "amber"
   },
   {
+   "id": "fill_75",
+   "start": 1189.17,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_fruit_hands.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_76",
+   "start": 1196.77,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_boat_harbor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_77",
+   "start": 1204.37,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cathedral.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "house_1",
    "start": 1212.99,
    "dur": 4.6,
@@ -1362,6 +1655,14 @@
    "hue": "good"
   },
   {
+   "id": "fill_78",
+   "start": 1217.84,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_mountain_town.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "house_2",
    "start": 1231.54,
    "dur": 4.5,
@@ -1369,6 +1670,22 @@
    "src": "img/ra_welder_condo.png",
    "hue": "amber",
    "kicker": "A man I knew"
+  },
+  {
+   "id": "fill_79",
+   "start": 1236.29,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cafe_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_80",
+   "start": 1243.89,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_hammock.mp4",
+   "hue": "amber"
   },
   {
    "id": "house_3",
@@ -1382,6 +1699,22 @@
    "hue": "amber"
   },
   {
+   "id": "fill_81",
+   "start": 1257.59,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_street_food.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_82",
+   "start": 1265.19,
+   "dur": 4.52,
+   "kind": "raw",
+   "src": "broll/rac_sunrise_sea.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "house_4",
    "start": 1272.71,
    "dur": 6.5,
@@ -1390,6 +1723,30 @@
    "step": "Rent before you buy — for a year",
    "question": "If you wanted to come home in six months, could you?",
    "hue": "good"
+  },
+  {
+   "id": "fill_83",
+   "start": 1279.46,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_old_couple_cook.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_84",
+   "start": 1287.06,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_bank_desk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_85",
+   "start": 1294.66,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_calendar_plan.mp4",
+   "hue": "amber"
   },
   {
    "id": "mexico_0",
@@ -1422,6 +1779,14 @@
    "hue": "amber"
   },
   {
+   "id": "fill_86",
+   "start": 1313.32,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_window_view.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "mexico_3",
    "start": 1324.1,
    "dur": 5,
@@ -1433,6 +1798,22 @@
    "accent": "amber",
    "slider": false,
    "hue": "good"
+  },
+  {
+   "id": "fill_87",
+   "start": 1329.35,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_dog_beach.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_88",
+   "start": 1336.95,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cr_beach.mp4",
+   "hue": "amber"
   },
   {
    "id": "close_0",
@@ -1452,6 +1833,7 @@
    "text": "It was never that I didn't have *enough money*",
    "src": "img/ra_beach_walk.png",
    "at": "i didn't have enough money",
+   "accent": "amber",
    "hue": "amber"
   },
   {
@@ -1480,6 +1862,14 @@
    "hue": "amber"
   },
   {
+   "id": "fill_89",
+   "start": 1370.27,
+   "dur": 4.42,
+   "kind": "raw",
+   "src": "broll/rac_cr_market.mp4",
+   "hue": "amber"
+  },
+  {
    "id": "cta_0",
    "start": 1377.69,
    "dur": 6.5,
@@ -1487,6 +1877,14 @@
    "eyebrow": "Free — in the description",
    "step": "Grab the free step-by-step guide",
    "question": "Exact income numbers, visa paperwork, real budgets, and a scouting-trip checklist.",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_90",
+   "start": 1384.44,
+   "dur": 4.61,
+   "kind": "raw",
+   "src": "broll/rac_cr_coffee.mp4",
    "hue": "amber"
   },
   {

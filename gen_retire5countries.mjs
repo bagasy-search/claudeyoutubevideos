@@ -54,7 +54,8 @@ const real = (name, concept, query, o = {}) => {
 // reusar clip ya registrado (no re-baja)
 const clip = (name, o = {}) => ({ t: "raw", name: CLIPFX + name, broll: true, ...o });
 const c = (kind, props = {}) => ({ t: kind, ...props });
-const kp = (text, o = {}) => c("keyphrase", { text, ...o });
+// keyphrase: highlight ÁMBAR por defecto (rojo SOLO en avisos, que pasan accent:"danger").
+const kp = (text, o = {}) => c("keyphrase", { text, ...o, accent: o.accent || "amber" });
 
 // pool de fondos para floatprops (clips ya registrados abajo)
 const FP_BG = ["beach_ocean", "market_produce", "passport_stamp", "cafe_table", "couple_beach", "airplane_window", "money_count", "doctor_clinic"];
@@ -106,7 +107,7 @@ const SECTIONS = [
   ]},
   // ░░ #5 COSTA RICA ░░
   { key: "costarica", phrase: "Number five, Costa Rica", beats: [
-    c("rule", { number: "05", title: "Costa Rica" }),
+    c("rule", { number: "05", label: "N°", title: "Costa Rica" }),
     real("cr_rainforest", "costa rica lush green rainforest and waterfall, aerial", "costa rica rainforest waterfall aerial green", { w: 0.55, hold: true }),
     real("cr_town", "a colorful small town in costa rica central valley, mountains", "costa rica central valley town mountains", { w: 0.5 }),
     c("statpills", { pills: ["Pensionado visa", "$1,000/mo income"], accent: "amber", slider: false }),
@@ -120,7 +121,7 @@ const SECTIONS = [
   ]},
   // ░░ #4 COLOMBIA ░░
   { key: "colombia", phrase: "Number four", beats: [
-    c("rule", { number: "04", title: "Colombia" }),
+    c("rule", { number: "04", label: "N°", title: "Colombia" }),
     real("co_medellin", "medellin colombia city skyline in a green valley, aerial", "medellin colombia skyline green valley aerial", { w: 0.55, hold: true }),
     kp("The picture in your head is *30 years* out of date", { src: "broll/rac_co_medellin.mp4", at: "frozen in time about 30 years ago", accent: "amber", w: 0.6 }),
     real("co_flowers", "colorful flowers and a plaza in medellin, spring, people", "medellin flowers plaza spring people", { w: 0.45 }),
@@ -132,7 +133,7 @@ const SECTIONS = [
   ]},
   // ░░ #3 PORTUGAL ░░
   { key: "portugal", phrase: "Number three, Portugal", beats: [
-    c("rule", { number: "03", title: "Portugal" }),
+    c("rule", { number: "03", label: "N°", title: "Portugal" }),
     real("pt_algarve", "algarve portugal golden cliffs and blue atlantic ocean, aerial", "algarve portugal cliffs atlantic ocean aerial", { w: 0.55, hold: true }),
     real("pt_cobblestone", "a cobblestone street with little cafes in a portuguese town", "portugal cobblestone street cafe town", { w: 0.5 }),
     kp("This is *Europe*. On a Social Security check.", { src: "broll/rac_pt_cobblestone.mp4", at: "this is western europe", w: 0.7 }),
@@ -144,7 +145,7 @@ const SECTIONS = [
   ]},
   // ░░ #2 ECUADOR ░░
   { key: "ecuador", phrase: "Number two, Ecuador", beats: [
-    c("rule", { number: "02", title: "Ecuador" }),
+    c("rule", { number: "02", label: "N°", title: "Ecuador" }),
     real("ec_cuenca", "cuenca ecuador colonial city with blue domed cathedral, andes", "cuenca ecuador cathedral colonial andes", { w: 0.55, hold: true }),
     fp("us_dollar", "a US one dollar bill, cash", { caption: "Ecuador uses the *US dollar*", accent: "good", scale: 0.7 }),
     kp("No exchange rate. *What you see is what you get.*", { src: "broll/rac_ec_cuenca.mp4", at: "there is no exchange rate", w: 0.65 }),
@@ -157,7 +158,7 @@ const SECTIONS = [
   ]},
   // ░░ #1 PANAMA ░░
   { key: "panama", phrase: "Number one, Panama", beats: [
-    c("rule", { number: "01", title: "Panama" }),
+    c("rule", { number: "01", label: "N°", title: "Panama" }),
     real("pa_skyline", "panama city skyline at golden hour, modern towers, ocean", "panama city skyline towers ocean golden hour", { w: 0.55, hold: true }),
     kp("The *most generous* retirement program I've ever seen", { src: "broll/rac_pa_skyline.mp4", at: "the most generous retirement program", w: 0.7 }),
     c("statpills", { pills: ["Pensionado visa", "$1,000/mo", "US dollar"], accent: "amber", slider: false }),
@@ -380,8 +381,8 @@ for (let i = 0; i < beats.length; i++) {
   let gap = nextStart - curEnd;
   // rellená gaps grandes con 1-2 clips distintos (deja ~4s de avatar al final del gap).
   let cursor = curEnd + 0.25;
-  while (gap > 6.5 && pi < POOL.length) {
-    const [nm, concept, query] = POOL[pi];
+  while (gap > 6.5) {
+    const [nm, concept, query] = POOL[pi % POOL.length];
     const cn = CLIPFX + nm;
     if (!CLIPS.find((x) => x.name === cn)) CLIPS.push({ name: cn, concept, query, dur: 6 });
     const d = Math.min(5.0, nextStart - cursor - 3.0);
