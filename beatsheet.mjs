@@ -245,6 +245,10 @@ const cleanSlides = (slides) =>
 
 function renderEl(b) {
   switch (b.kind) {
+    case "city3d": return `<City3D${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
+    case "globe3d": return `<Globe3D${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
+    case "number3d":
+      return `<Number3D num=${j(String(b.num ?? "01"))} country=${j(String(b.country ?? ""))}${b.accent ? ` accent=${j(b.accent)}` : ``}${b.tOffset != null ? ` tOffset={${b.tOffset}}` : ``} />`;
     case "raw": {
       const cd = clipDurOf(b.src);
       const gr = b.grade ?? gradeOf(b.src);
@@ -1473,6 +1477,7 @@ if (kinds.has("scrolldoc")) imports.push(`import { ScrollDoc } from "./scenes/Sc
 if (kinds.has("avpizarra")) imports.push(`import { AvatarPizarra } from "./scenes/AvatarPizarra";`);
 if (kinds.has("chips")) imports.push(`import { ChipsCluster } from "./scenes/ReframeContent";`);
 if (kinds.has("splitlist")) imports.push(`import { SplitList } from "./scenes/SplitList";`);
+if (kinds.has("city3d") || kinds.has("globe3d") || kinds.has("number3d")) imports.push(`import { City3D, Globe3D, Number3D } from "./three/Scene3D";`);
 if (kinds.has("struckcards")) imports.push(`import { StruckCards } from "./scenes/StruckCards";`);
 if (kinds.has("radsky")) imports.push(`import { ColdRadiationSky } from "./scenes/ColdRadiationSky";`);
 if (kinds.has("coldcal")) imports.push(`import { ColdCalendar } from "./scenes/ColdCalendar";`);
