@@ -201,7 +201,18 @@ const CueScene: React.FC<{cue: Cue; totalF: number}> = ({cue, totalF}) => {
     case 'lowerthird':
       return <ValLowerThird variant={variant} totalF={totalF} name={cue.name} role={cue.role} topic={cue.topic} accent={accent} avatarSrc={AVATAR} />;
     case 'carousel':
-      return <ValOilCarousel cards={(cue.cards || []) as ValCarouselCard[]} focus={cue.focus} kicker={cue.kicker} accent={accent} intro={cue.intro} />;
+      // ⚠ las cards se dibujan con <Img src={card.image}> CRUDO dentro de CarouselCard → hay que
+      // pasar la ruta ya resuelta con staticFile(), si no da 404 en el render (era la causa de que
+      // fallaran los chunks del carrusel). El resto de las imágenes ya pasan por sf().
+      return (
+        <ValOilCarousel
+          cards={(cue.cards || []).map((c) => ({...c, image: sf(c.image) as string})) as ValCarouselCard[]}
+          focus={cue.focus}
+          kicker={cue.kicker}
+          accent={accent}
+          intro={cue.intro}
+        />
+      );
     default:
       return null;
   }
