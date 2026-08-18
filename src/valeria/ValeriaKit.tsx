@@ -3024,11 +3024,15 @@ const CarouselCard: React.FC<{
   const depthScale = 0.8 + 0.2 * front01;
   const scale = depthScale * (focused ? 1 + 0.14 * p : anyFocus ? 1 - 0.08 * p : 1) * s;
 
-  const blur = focused
+  // ⚠ FARM: blur por-frame en 7 tarjetas es carísimo en Chrome headless (CPU sin GPU) → timeout de
+  // chunk. Capamos a ≤5px: el look defocus se mantiene, el costo baja ~10×. (medido: chunks 41-50
+  // fallaban justo sobre el carrusel; con esto rinden.)
+  const blurRaw = focused
     ? 18 * (1 - p)
     : anyFocus
     ? 3 + 4 * (1 - front01) + 6 * p
     : 1.4 + 5.2 * (1 - front01);
+  const blur = Math.min(5, blurRaw);
 
   const bright = focused ? 0.82 + 0.28 * p : anyFocus ? 1 - 0.2 * p : 0.86 + 0.14 * front01;
   const sat = focused ? 0.85 + 0.25 * p : anyFocus ? 1 - 0.24 * p : 0.9;
@@ -3241,8 +3245,8 @@ export const ValOilCarousel: React.FC<ValOilCarouselProps> = ({
         }}
       />
 
-      {/* L2 · bokeh de fondo */}
-      <MotesLayer motes={nearBokeh} blur={14} scale={height / 1080} />
+      {/* L2 · bokeh de fondo (blur bajado 14→6 por costo de render en el farm) */}
+      <MotesLayer motes={nearBokeh} blur={6} scale={height / 1080} />
 
       {/* L3 · polvo */}
       <MotesLayer motes={farMotes} blur={1.4} scale={height / 1080} />
@@ -3288,8 +3292,8 @@ export const ValOilCarousel: React.FC<ValOilCarouselProps> = ({
         </AbsoluteFill>
       </AbsoluteFill>
 
-      {/* L6 · bokeh de primer plano fuera de foco */}
-      <AbsoluteFill style={{filter: 'blur(16px)', opacity: 0.5, pointerEvents: 'none'}}>
+      {/* L6 · bokeh de primer plano fuera de foco (blur 16→7 por costo de render en el farm) */}
+      <AbsoluteFill style={{filter: 'blur(7px)', opacity: 0.5, pointerEvents: 'none'}}>
         <MotesLayer motes={nearBokeh} blur={0} scale={height / 1080} />
       </AbsoluteFill>
 
