@@ -1,0 +1,1553 @@
+{
+ "video": "retire5countries",
+ "avatar": "retire5countries_opt.mp4",
+ "beats": [
+  {
+   "id": "hook_0",
+   "start": 1.4,
+   "dur": 5,
+   "kind": "talk",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_1",
+   "start": 8.6,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/ra_beach_porch.png",
+   "hue": "amber",
+   "hold": true
+  },
+  {
+   "id": "fill_0",
+   "start": 14.35,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/rac_cr_beach.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_2",
+   "start": 21.61,
+   "dur": 4.26,
+   "kind": "raw",
+   "src": "broll/rac_beach_ocean.mp4",
+   "hue": "good"
+  },
+  {
+   "id": "hook_3",
+   "start": 25.87,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "My total spending this month? About *$1,300*",
+   "src": "img/ra_beach_porch.png",
+   "at": "about $1,300",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_4",
+   "start": 31.36,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/rac_beach_town.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "hook_5",
+   "start": 35.19,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "My Social Security check makes me feel *rich*",
+   "src": "broll/rac_beach_ocean.mp4",
+   "at": "it makes me feel rich",
+   "hue": "good"
+  },
+  {
+   "id": "hook_6",
+   "start": 41.41,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Rent ~$400",
+    "Dinner ~$5",
+    "Beach 2 min"
+   ],
+   "accent": "amber",
+   "slider": false,
+   "hue": "amber"
+  },
+  {
+   "id": "hook_7",
+   "start": 51.91,
+   "dur": 4.73,
+   "kind": "raw",
+   "src": "broll/rac_cafe_table.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ohio_0",
+   "start": 56.64,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/ra_ohio_night.png",
+   "hue": "amber",
+   "kicker": "Ohio, two years ago",
+   "hold": true
+  },
+  {
+   "id": "ohio_1",
+   "start": 67.41,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Worked *40 years*. Paid the house down.",
+   "src": "img/ra_ohio_night.png",
+   "at": "worked 40 years",
+   "hue": "good",
+   "times": [
+    9,
+    18,
+    28,
+    55,
+    63,
+    67,
+    77
+   ]
+  },
+  {
+   "id": "ohio_2",
+   "start": 77.45,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "By the time everything's paid... *nothing left*",
+   "src": "img/ra_ohio_night.png",
+   "at": "there's nothing left",
+   "hue": "amber"
+  },
+  {
+   "id": "ohio_3",
+   "start": 87.5,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/ra_empty_chair.png",
+   "hue": "amber",
+   "kicker": "Her chair, still there"
+  },
+  {
+   "id": "ray_0",
+   "start": 98.16,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/ra_phone_call.png",
+   "hue": "good",
+   "kicker": "11 o'clock, a phone call",
+   "hold": true
+  },
+  {
+   "id": "fill_1",
+   "start": 103.91,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cr_market.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_2",
+   "start": 111.51,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cr_coffee.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ray_1",
+   "start": 122.17,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_phone_night.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ray_2",
+   "start": 129.24,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "*You're doing the math in the wrong country*",
+   "src": "img/ra_phone_call.png",
+   "at": "you're doing the math in the wrong country",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_3",
+   "start": 134.09,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_co_street.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ray_3",
+   "start": 142.93,
+   "dur": 5,
+   "kind": "floatprop",
+   "src": "img/ra_plane_ticket.png",
+   "caption": "One ticket. *Round trip.*",
+   "accent": "amber",
+   "scale": 0.8,
+   "bg": "broll/rac_beach_ocean.mp4",
+   "hue": "good"
+  },
+  {
+   "id": "fill_4",
+   "start": 148.18,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_co_food.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "promise_0",
+   "start": 159.23,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_redcarpet.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_5",
+   "start": 164.48,
+   "dur": 4.79,
+   "kind": "raw",
+   "src": "broll/rac_co_cablecar.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "promise_1",
+   "start": 172.27,
+   "dur": 2.15,
+   "kind": "keyphrase",
+   "text": "They are *begging* Americans to come",
+   "src": "broll/rac_redcarpet.mp4",
+   "at": "begging us to come",
+   "hue": "amber"
+  },
+  {
+   "id": "promise_2",
+   "start": 174.42,
+   "dur": 1.28,
+   "kind": "raw",
+   "src": "broll/rac_law_book.mp4",
+   "hue": "good"
+  },
+  {
+   "id": "promise_3",
+   "start": 175.7,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Cutting your bills in half — *by law*",
+   "src": "broll/rac_law_book.mp4",
+   "at": "cutting your bills in half",
+   "hue": "amber",
+   "times": [
+    9,
+    18,
+    23,
+    35,
+    41,
+    56,
+    62
+   ]
+  },
+  {
+   "id": "promise_4",
+   "start": 185.48,
+   "dur": 6.5,
+   "kind": "mistake",
+   "number": "!",
+   "eyebrow": "STAY FOR THIS",
+   "title": "One mistake",
+   "desc": "It can turn this whole dream into the most expensive lesson of your life. I almost made it.",
+   "accent": "amber",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_6",
+   "start": 192.23,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pt_tram.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "roadmap_0",
+   "start": 202.94,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Avg check ~$1,900/mo",
+    "Just the check"
+   ],
+   "accent": "good",
+   "slider": true,
+   "hue": "amber"
+  },
+  {
+   "id": "fill_7",
+   "start": 208.19,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pt_castle.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "roadmap_1",
+   "start": 217.56,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Not a pension. Not investments. *Just the check.*",
+   "src": "broll/rac_money_count.mp4",
+   "at": "just the check",
+   "hue": "good"
+  },
+  {
+   "id": "fill_8",
+   "start": 222.41,
+   "dur": 3.55,
+   "kind": "raw",
+   "src": "broll/rac_pt_coast.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "roadmap_2",
+   "start": 228.96,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_money_count.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "roadmap_3",
+   "start": 236.89,
+   "dur": 6,
+   "kind": "splitlist",
+   "title": "The 5 countries",
+   "items": [
+    "Costa Rica",
+    "Colombia",
+    "Portugal",
+    "Ecuador",
+    "Panama"
+   ],
+   "palette": "A",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_9",
+   "start": 243.14,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_ec_plaza.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_0",
+   "start": 255.88,
+   "dur": 3.2,
+   "kind": "rule",
+   "number": "05",
+   "title": "Costa Rica",
+   "hue": "good"
+  },
+  {
+   "id": "costarica_1",
+   "start": 262.14,
+   "dur": 7.5,
+   "kind": "raw",
+   "src": "broll/rac_cr_rainforest.mp4",
+   "hue": "amber",
+   "hold": true
+  },
+  {
+   "id": "costarica_2",
+   "start": 269.75,
+   "dur": 4.07,
+   "kind": "raw",
+   "src": "broll/rac_cr_town.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_3",
+   "start": 273.82,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Pensionado visa",
+    "$1,000/mo income"
+   ],
+   "accent": "amber",
+   "slider": false,
+   "hue": "good"
+  },
+  {
+   "id": "costarica_4",
+   "start": 281.96,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "If your check clears *$1,000*, you qualify",
+   "src": "broll/rac_cr_town.mp4",
+   "at": "if your social security check clears",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_10",
+   "start": 286.81,
+   "dur": 3.47,
+   "kind": "raw",
+   "src": "broll/rac_ec_andes.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_5",
+   "start": 293.28,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cr_toucan.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_6",
+   "start": 301.17,
+   "dur": 8.5,
+   "kind": "checklist",
+   "title": "Public healthcare (the Caja)",
+   "accent": "good",
+   "items": [
+    {
+     "text": "Legal resident pays in by income",
+     "state": "done"
+    },
+    {
+     "text": "~$60–$130 a month",
+     "state": "done"
+    },
+    {
+     "text": "Doctor visits · prescriptions · surgery",
+     "state": "done"
+    }
+   ],
+   "hue": "good"
+  },
+  {
+   "id": "fill_11",
+   "start": 309.92,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_ec_llama.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_12",
+   "start": 317.52,
+   "dur": 3.57,
+   "kind": "raw",
+   "src": "broll/rac_pa_canal.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_7",
+   "start": 324.09,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "But the public system *has waits* — be honest",
+   "src": "broll/rac_doctor_clinic.mp4",
+   "at": "the public system has waits",
+   "accent": "amber",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_13",
+   "start": 328.94,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pa_beach.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_8",
+   "start": 341.38,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_doctor_clinic.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_14",
+   "start": 346.63,
+   "dur": 3.79,
+   "kind": "raw",
+   "src": "broll/rac_pa_oldtown.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_9",
+   "start": 353.42,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "*Pura vida* — a slower way through the day",
+   "src": "broll/rac_cr_rainforest.mp4",
+   "at": "pura vida",
+   "hue": "good"
+  },
+  {
+   "id": "fill_15",
+   "start": 358.27,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_older_couple_walk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_16",
+   "start": 365.87,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_airport.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "costarica_10",
+   "start": 375.96,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Couple ~$2,000–2,500",
+    "Rent $500–$700"
+   ],
+   "accent": "amber",
+   "slider": true,
+   "hue": "amber"
+  },
+  {
+   "id": "fill_17",
+   "start": 381.21,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_suitcase.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_18",
+   "start": 388.81,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_passport_book.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_19",
+   "start": 396.41,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_market_fish.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_20",
+   "start": 404.01,
+   "dur": 3.83,
+   "kind": "raw",
+   "src": "broll/rac_coffee_pour.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colombia_0",
+   "start": 410.84,
+   "dur": 3.2,
+   "kind": "rule",
+   "number": "04",
+   "title": "Colombia",
+   "hue": "amber"
+  },
+  {
+   "id": "colombia_1",
+   "start": 417.81,
+   "dur": 7.5,
+   "kind": "raw",
+   "src": "broll/rac_co_medellin.mp4",
+   "hue": "amber",
+   "hold": true
+  },
+  {
+   "id": "colombia_2",
+   "start": 426.27,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "The picture in your head is *30 years* out of date",
+   "src": "broll/rac_co_medellin.mp4",
+   "at": "frozen in time about 30 years ago",
+   "accent": "amber",
+   "hue": "good"
+  },
+  {
+   "id": "colombia_3",
+   "start": 433.64,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_co_flowers.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colombia_4",
+   "start": 438.78,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "The *City of Eternal Spring* — 72°, every day",
+   "src": "broll/rac_co_flowers.mp4",
+   "at": "the city of eternal spring",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_21",
+   "start": 443.63,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_apartment_interior.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_22",
+   "start": 451.23,
+   "dur": 4.39,
+   "kind": "raw",
+   "src": "broll/rac_pharmacy.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colombia_5",
+   "start": 458.62,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Pensioner visa",
+    "~$900–$1,000/mo"
+   ],
+   "accent": "amber",
+   "slider": false,
+   "hue": "good"
+  },
+  {
+   "id": "fill_23",
+   "start": 463.87,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_doctor_talk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_24",
+   "start": 471.47,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_house_for_sale.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_25",
+   "start": 479.07,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_moving_boxes.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colombia_6",
+   "start": 489.32,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_co_apartment.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_26",
+   "start": 494.57,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_video_call.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colombia_7",
+   "start": 503.13,
+   "dur": 5,
+   "kind": "callout",
+   "image": "img/ra_co_apartment_c.png",
+   "figure": "$1,200",
+   "caption": "Linda's all-in monthly spend — everything",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_27",
+   "start": 508.38,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_beach_sunset.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_28",
+   "start": 515.98,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_town_square.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_29",
+   "start": 523.58,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_hands_coffee_talk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "colombia_8",
+   "start": 533.83,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Learn some *Spanish* — you'll really need it",
+   "src": "broll/rac_co_medellin.mp4",
+   "at": "you've got to learn some spanish",
+   "accent": "amber",
+   "hue": "good"
+  },
+  {
+   "id": "fill_30",
+   "start": 538.68,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_palm_road.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_0",
+   "start": 552.02,
+   "dur": 2.68,
+   "kind": "rule",
+   "number": "03",
+   "title": "Portugal",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_1",
+   "start": 554.7,
+   "dur": 3.26,
+   "kind": "raw",
+   "src": "broll/rac_pt_algarve.mp4",
+   "hue": "good",
+   "hold": true
+  },
+  {
+   "id": "portugal_2",
+   "start": 557.96,
+   "dur": 1.74,
+   "kind": "raw",
+   "src": "broll/rac_pt_cobblestone.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_3",
+   "start": 559.7,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "This is *Europe*. On a Social Security check.",
+   "src": "broll/rac_pt_cobblestone.mp4",
+   "at": "this is western europe",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_31",
+   "start": 564.55,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_fruit_hands.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_32",
+   "start": 572.15,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_boat_harbor.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_4",
+   "start": 582.49,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "D7 visa",
+    "~€870/mo floor"
+   ],
+   "accent": "amber",
+   "slider": false,
+   "hue": "good"
+  },
+  {
+   "id": "fill_33",
+   "start": 587.74,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cathedral.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_34",
+   "start": 595.34,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_mountain_town.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_35",
+   "start": 602.94,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_cafe_people.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_5",
+   "start": 612.72,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "The average check qualifies you for the *European Union*",
+   "src": "broll/rac_pt_algarve.mp4",
+   "at": "to live in the european union",
+   "accent": "good",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_36",
+   "start": 617.57,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_hammock.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_37",
+   "start": 625.17,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_street_food.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_38",
+   "start": 632.77,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_sunrise_sea.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_6",
+   "start": 641.05,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pt_market.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_39",
+   "start": 646.3,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_old_couple_cook.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_7",
+   "start": 657.96,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Portugal got *popular* — look inland to save",
+   "src": "broll/rac_pt_cobblestone.mp4",
+   "at": "portugal got popular",
+   "accent": "amber",
+   "hue": "good"
+  },
+  {
+   "id": "fill_40",
+   "start": 662.81,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_bank_desk.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "portugal_8",
+   "start": 672.95,
+   "dur": 5,
+   "kind": "floatprop",
+   "src": "img/ra_wine_bottle.png",
+   "caption": "Good wine, a few *dollars* a bottle",
+   "accent": "good",
+   "scale": 0.7,
+   "bg": "broll/rac_market_produce.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_41",
+   "start": 678.2,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_calendar_plan.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "fill_42",
+   "start": 685.8,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_window_view.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ecuador_0",
+   "start": 699.72,
+   "dur": 3.2,
+   "kind": "rule",
+   "number": "02",
+   "title": "Ecuador",
+   "hue": "good"
+  },
+  {
+   "id": "ecuador_1",
+   "start": 704.86,
+   "dur": 6.24,
+   "kind": "raw",
+   "src": "broll/rac_ec_cuenca.mp4",
+   "hue": "amber",
+   "hold": true
+  },
+  {
+   "id": "ecuador_2",
+   "start": 711.1,
+   "dur": 5,
+   "kind": "floatprop",
+   "src": "img/ra_us_dollar.png",
+   "caption": "Ecuador uses the *US dollar*",
+   "accent": "good",
+   "scale": 0.7,
+   "bg": "broll/rac_passport_stamp.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ecuador_3",
+   "start": 718.81,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "No exchange rate. *What you see is what you get.*",
+   "src": "broll/rac_ec_cuenca.mp4",
+   "at": "there is no exchange rate",
+   "hue": "good"
+  },
+  {
+   "id": "fill_43",
+   "start": 723.66,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_dog_beach.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ecuador_4",
+   "start": 735.5,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Pensioner visa",
+    "~$1,400/mo"
+   ],
+   "accent": "amber",
+   "slider": false,
+   "hue": "amber"
+  },
+  {
+   "id": "ecuador_5",
+   "start": 759.34,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "This is where Ecuador starts *begging*",
+   "src": "broll/rac_ec_market.mp4",
+   "at": "where ecuador starts begging",
+   "hue": "amber"
+  },
+  {
+   "id": "ecuador_6",
+   "start": 776.13,
+   "dur": 8.5,
+   "kind": "checklist",
+   "title": "Senior discounts — by law (65+)",
+   "accent": "good",
+   "items": [
+    {
+     "text": "50% off airline tickets",
+     "state": "done"
+    },
+    {
+     "text": "50% off public transportation",
+     "state": "done"
+    },
+    {
+     "text": "50% off cultural & sporting events",
+     "state": "done"
+    },
+    {
+     "text": "Sales tax refunded to you",
+     "state": "done"
+    }
+   ],
+   "hue": "good"
+  },
+  {
+   "id": "ecuador_7",
+   "start": 810.1,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_ec_market.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "ecuador_8",
+   "start": 821.79,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Single ~$1,200–1,300",
+    "Rent $300–$500"
+   ],
+   "accent": "amber",
+   "slider": true,
+   "hue": "amber"
+  },
+  {
+   "id": "ecuador_9",
+   "start": 847.78,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Roads and paperwork need *patience* — honest",
+   "src": "broll/rac_ec_market.mp4",
+   "at": "the infrastructure isn't switzerland",
+   "accent": "amber",
+   "hue": "good"
+  },
+  {
+   "id": "panama_0",
+   "start": 861.76,
+   "dur": 3.2,
+   "kind": "rule",
+   "number": "01",
+   "title": "Panama",
+   "hue": "amber"
+  },
+  {
+   "id": "panama_1",
+   "start": 866.67,
+   "dur": 5.96,
+   "kind": "raw",
+   "src": "broll/rac_pa_skyline.mp4",
+   "hue": "amber",
+   "hold": true
+  },
+  {
+   "id": "panama_2",
+   "start": 872.63,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "The *most generous* retirement program I've ever seen",
+   "src": "broll/rac_pa_skyline.mp4",
+   "at": "the most generous retirement program",
+   "hue": "good"
+  },
+  {
+   "id": "panama_3",
+   "start": 891.81,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Pensionado visa",
+    "$1,000/mo",
+    "US dollar"
+   ],
+   "accent": "amber",
+   "slider": false,
+   "hue": "amber"
+  },
+  {
+   "id": "panama_4",
+   "start": 917.24,
+   "dur": 8.5,
+   "kind": "checklist",
+   "title": "Pensioner discounts — by law",
+   "accent": "good",
+   "items": [
+    {
+     "text": "25% off airline tickets",
+     "state": "done"
+    },
+    {
+     "text": "25% off restaurants",
+     "state": "done"
+    },
+    {
+     "text": "20% off doctor visits & medicine",
+     "state": "done"
+    },
+    {
+     "text": "25% off electric & phone bills",
+     "state": "done"
+    },
+    {
+     "text": "50% off movies & shows",
+     "state": "done"
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "panama_5",
+   "start": 950.5,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "They wrote *we want you* right into the law",
+   "src": "broll/rac_pa_skyline.mp4",
+   "at": "they wrote it into the code",
+   "accent": "good",
+   "hue": "good"
+  },
+  {
+   "id": "panama_6",
+   "start": 973.37,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pa_boquete.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "panama_7",
+   "start": 989.71,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/ra_marisol.png",
+   "hue": "amber",
+   "kicker": "Marisol, at the fruit stand"
+  },
+  {
+   "id": "panama_8",
+   "start": 1015.86,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "A little house, *one street back* from the water",
+   "src": "img/ra_little_house.png",
+   "at": "one street back from the water",
+   "hue": "good",
+   "times": [
+    0,
+    0,
+    0,
+    9,
+    13,
+    22,
+    29,
+    34,
+    38
+   ]
+  },
+  {
+   "id": "panama_9",
+   "start": 1027.86,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/ra_little_house.png",
+   "hue": "amber"
+  },
+  {
+   "id": "panama_10",
+   "start": 1043.78,
+   "dur": 5,
+   "kind": "raw",
+   "src": "broll/rac_pa_hospital.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "panama_11",
+   "start": 1050.15,
+   "dur": 5,
+   "kind": "callout",
+   "image": "img/ra_pa_hospital.png",
+   "figure": "$40–50k",
+   "caption": "What that surgery would've cost back home",
+   "accent": "amber",
+   "hue": "good"
+  },
+  {
+   "id": "recap_0",
+   "start": 1066.08,
+   "dur": 3.21,
+   "kind": "splitlist",
+   "title": "The door is wide open",
+   "items": [
+    "Costa Rica",
+    "Colombia",
+    "Portugal",
+    "Ecuador",
+    "Panama"
+   ],
+   "palette": "A",
+   "hue": "amber"
+  },
+  {
+   "id": "recap_1",
+   "start": 1069.29,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Set at a number your check can *actually clear*",
+   "src": "broll/rac_beach_ocean.mp4",
+   "at": "your social security check can actually clear",
+   "accent": "good",
+   "hue": "good"
+  },
+  {
+   "id": "warnings_0",
+   "start": 1085.42,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/ra_host_serious.png",
+   "hue": "good",
+   "kicker": "Now the honest part",
+   "hold": true
+  },
+  {
+   "id": "warnings_1",
+   "start": 1091.55,
+   "dur": 4.44,
+   "kind": "vsmed",
+   "eyebrow": "The #1 mistake",
+   "leftTitle": "MEDICARE in the US",
+   "leftItems": [
+    {
+     "text": "Covers you",
+     "ok": true
+    }
+   ],
+   "rightTitle": "MEDICARE abroad",
+   "rightItems": [
+    {
+     "text": "Does NOT come with you",
+     "ok": false
+    },
+    {
+     "text": "Does not work overseas",
+     "ok": false
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "warnings_2",
+   "start": 1095.99,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Medicare *does not* work outside the US",
+   "src": "broll/rac_doctor_clinic.mp4",
+   "at": "it does not work outside the united states",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "warnings_3",
+   "start": 1107.85,
+   "dur": 8.5,
+   "kind": "checklist",
+   "title": "So instead",
+   "accent": "good",
+   "items": [
+    {
+     "text": "Get onto the local system",
+     "state": "done"
+    },
+    {
+     "text": "Or buy international health insurance",
+     "state": "done"
+    },
+    {
+     "text": "Keep Medicare Part A for big stuff back home",
+     "state": "done"
+    },
+    {
+     "text": "Have a plan — don't wing it",
+     "state": "done"
+    }
+   ],
+   "hue": "good"
+  },
+  {
+   "id": "taxes_0",
+   "start": 1128.43,
+   "dur": 7.5,
+   "kind": "raw",
+   "src": "broll/rac_tax_form.mp4",
+   "hue": "amber",
+   "hold": true
+  },
+  {
+   "id": "taxes_1",
+   "start": 1141.26,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "The US taxes your *worldwide income* — you always file",
+   "src": "broll/rac_tax_form.mp4",
+   "at": "you still file a u.s. tax return",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "taxes_2",
+   "start": 1152.64,
+   "dur": 5,
+   "kind": "floatprop",
+   "src": "img/ra_fbar_form.png",
+   "caption": "Over $10k in a bank? *File the FBAR*",
+   "accent": "danger",
+   "scale": 0.8,
+   "bg": "broll/rac_cafe_table.mp4",
+   "hue": "good"
+  },
+  {
+   "id": "taxes_3",
+   "start": 1170.06,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Call an accountant who *knows expat taxes*",
+   "src": "broll/rac_money_count.mp4",
+   "at": "an accountant who knows expat taxes",
+   "accent": "amber",
+   "hue": "amber"
+  },
+  {
+   "id": "house_0",
+   "start": 1182.42,
+   "dur": 6.5,
+   "kind": "mistake",
+   "number": "3",
+   "eyebrow": "THE BIG ONE",
+   "title": "Don't sell everything on trip one",
+   "desc": "Rent for a year before you buy. Keep your exit door open. Keep a cushion back home.",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "house_1",
+   "start": 1212.99,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Paradise for two weeks is *different* on a Tuesday",
+   "src": "broll/rac_beach_town.mp4",
+   "at": "a different animal when it's your tuesday",
+   "accent": "amber",
+   "hue": "good"
+  },
+  {
+   "id": "house_2",
+   "start": 1231.54,
+   "dur": 4.5,
+   "kind": "raw",
+   "src": "img/ra_welder_condo.png",
+   "hue": "amber",
+   "kicker": "A man I knew"
+  },
+  {
+   "id": "house_3",
+   "start": 1252.74,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "His money was just... *gone*. An ocean away.",
+   "src": "img/ra_welder_condo.png",
+   "at": "his money was just",
+   "accent": "danger",
+   "hue": "amber"
+  },
+  {
+   "id": "house_4",
+   "start": 1272.71,
+   "dur": 6.5,
+   "kind": "action",
+   "eyebrow": "The rule",
+   "step": "Rent before you buy — for a year",
+   "question": "If you wanted to come home in six months, could you?",
+   "hue": "good"
+  },
+  {
+   "id": "mexico_0",
+   "start": 1303.28,
+   "dur": 3.06,
+   "kind": "keyphrase",
+   "text": "Rules *change* — confirm with the consulate",
+   "src": "broll/rac_passport_stamp.mp4",
+   "at": "countries change them",
+   "accent": "amber",
+   "hue": "good"
+  },
+  {
+   "id": "mexico_1",
+   "start": 1306.34,
+   "dur": 2.13,
+   "kind": "raw",
+   "src": "broll/rac_passport_stamp.mp4",
+   "hue": "amber"
+  },
+  {
+   "id": "mexico_2",
+   "start": 1308.47,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "Mexico *quietly raised* the income bar",
+   "src": "broll/rac_beach_town.mp4",
+   "at": "mexico quietly raised the income",
+   "accent": "amber",
+   "hue": "amber"
+  },
+  {
+   "id": "mexico_3",
+   "start": 1324.1,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "Mexico income",
+    "now > avg check"
+   ],
+   "accent": "amber",
+   "slider": false,
+   "hue": "good"
+  },
+  {
+   "id": "close_0",
+   "start": 1348.3,
+   "dur": 4.96,
+   "kind": "raw",
+   "src": "img/ra_beach_walk.png",
+   "hue": "amber",
+   "kicker": "For the first time in years",
+   "hold": true
+  },
+  {
+   "id": "close_1",
+   "start": 1353.26,
+   "dur": 2.2,
+   "kind": "keyphrase",
+   "text": "It was never that I didn't have *enough money*",
+   "src": "img/ra_beach_walk.png",
+   "at": "i didn't have enough money",
+   "hue": "amber"
+  },
+  {
+   "id": "close_2",
+   "start": 1355.46,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "The moment I moved the check... *everything changed*",
+   "src": "broll/rac_beach_ocean.mp4",
+   "at": "everything changed",
+   "accent": "good",
+   "hue": "good"
+  },
+  {
+   "id": "close_3",
+   "start": 1365.02,
+   "dur": 5,
+   "kind": "statpills",
+   "pills": [
+    "No alarm",
+    "Real food",
+    "Money left over"
+   ],
+   "accent": "good",
+   "slider": false,
+   "hue": "amber"
+  },
+  {
+   "id": "cta_0",
+   "start": 1377.69,
+   "dur": 6.5,
+   "kind": "action",
+   "eyebrow": "Free — in the description",
+   "step": "Grab the free step-by-step guide",
+   "question": "Exact income numbers, visa paperwork, real budgets, and a scouting-trip checklist.",
+   "hue": "amber"
+  },
+  {
+   "id": "cta_1",
+   "start": 1392.05,
+   "dur": 4.6,
+   "kind": "keyphrase",
+   "text": "It's *completely free* — link in the description",
+   "src": "broll/rac_cafe_table.mp4",
+   "at": "it's completely free",
+   "accent": "good",
+   "hue": "good"
+  },
+  {
+   "id": "outro_0",
+   "start": 1400.1,
+   "dur": 6,
+   "kind": "nextvideo",
+   "kicker": "Coming up",
+   "title": "Inside each country",
+   "sub": "The actual neighborhoods, the actual apartments, the actual grocery bills.",
+   "hue": "good"
+  },
+  {
+   "id": "outro_1",
+   "start": 1407.43,
+   "dur": 6.5,
+   "kind": "signature",
+   "eyebrow": "Ray was right",
+   "lines": [
+    {
+     "text": "I was doing the math"
+    },
+    {
+     "text": "in the wrong country."
+    },
+    {
+     "text": "Come do the math down here.",
+     "gold": true
+    }
+   ],
+   "hue": "amber"
+  },
+  {
+   "id": "outro_2",
+   "start": 1416.34,
+   "dur": 5.5,
+   "kind": "raw",
+   "src": "img/ra_outro_smile.png",
+   "hue": "amber",
+   "kicker": "The water's warm",
+   "hold": true
+  },
+  {
+   "id": "tail",
+   "start": 1421.84,
+   "dur": 5.96,
+   "kind": "raw",
+   "src": "broll/rac_beach_sunset.mp4",
+   "hue": "amber",
+   "hold": true
+  }
+ ]
+}
