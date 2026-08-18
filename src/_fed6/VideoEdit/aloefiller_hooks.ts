@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_aloefiller.mjs — rangos talk.
+export const TALKSR: { start: number; dur: number }[] = [{"start":50.56,"dur":5.87},{"start":83.6,"dur":16.56},{"start":131.31,"dur":3.89},{"start":169.84,"dur":5.99},{"start":202.39,"dur":31.03},{"start":250.24,"dur":11.44},{"start":326.59,"dur":11.73},{"start":444.3,"dur":3.92},{"start":469.66,"dur":1.62},{"start":556.63,"dur":2.82},{"start":611.44,"dur":17.49},{"start":791.56,"dur":21.2},{"start":940.29,"dur":24.11}];
