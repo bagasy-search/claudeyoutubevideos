@@ -52,13 +52,14 @@ const FP_BG = ["beach_ocean", "market_produce", "passport_stamp", "cafe_table", 
 
 const W = { raw: 1.3, keyphrase: 1.4, statpills: 1.3, floatprop: 1.5, rule: 1.0, checklist: 1.7, splitlist: 1.4,
   bars: 1.5, callout: 1.3, mistake: 1.5, action: 1.5, signature: 1.7, vsmed: 1.6, nextvideo: 1.4, quote: 1.1, chips: 1.1, stat: 1.2,
-  globe3d: 2.6, city3d: 1.9, number3d: 1.3 };
+  globe3d: 2.6, city3d: 1.9, number3d: 1.3, oner3d: 4.0 };
 
 // ── componentes 3D (three.js) — hero moments ──
 const GOLD = "#FFC400";
 const n3d = (num, country) => c("number3d", { num, country, accent: GOLD });   // cuenta regresiva extruída
 const globe3d = (o = {}) => c("globe3d", o);                                     // globo de los 7 países
 const city3d = (o = {}) => c("city3d", o);                                       // ciudad nocturna "makes you rich"
+const oner3d = (o = {}) => c("oner3d", o);                                        // 🎬 el ONER: espacio→globo→ciudad
 
 // región de cada sección (para el relleno de huecos on-topic)
 const SEC_REGION = { hook:"any", ohio:"any", ray:"any", promise:"any", roadmap:"any",
@@ -105,8 +106,7 @@ const SECTIONS = [
   ]},
   // ░░ ROADMAP ░░
   { key: "roadmap", phrase: "seven countries", beats: [
-    globe3d({ w: 1.0 }),                                   // 🌎 globo 3D de los 7 países (hero)
-    kp("Every one has a *catch* — I won't hide a single one", { src: "broll/rac_money_count.mp4", at: "every single one of these has a catch", accent: "amber", w: 0.5 }),
+    oner3d({ w: 1.0 }),                                    // 🎬 ONER (dueño de toda la sección): espacio → globo 7 países → dive → ciudad
   ]},
   // ░░ #7 MEXICO ░░
   { key: "mexico", phrase: "number seven", beats: [
@@ -324,7 +324,7 @@ for (let si = 0; si < SECTIONS.length; si++) {
   }
   const CAP = { keyphrase: 4.6, statpills: 5.0, checklist: 8.5, rule: 3.2, callout: 5.0,
     mistake: 6.5, splitlist: 6.0, bars: 6.5, vsmed: 7.5, action: 6.5, signature: 6.5, nextvideo: 6.0,
-    floatprop: 5.0, quote: 4.5, chips: 4.5, stat: 5.0, globe3d: 15.0, city3d: 8.5, number3d: 5.0 };
+    floatprop: 5.0, quote: 4.5, chips: 4.5, stat: 5.0, globe3d: 15.0, city3d: 8.5, number3d: 5.0, oner3d: 20.0 };
   sec.beats.forEach((b, i) => {
     const cursor = +startT[i].toFixed(2);
     const nextR = +(i + 1 < n ? startT[i + 1] : end).toFixed(2);

@@ -4,6 +4,7 @@ import * as THREE from "three";
 import { createCity } from "./cityScene.js";
 import { createGlobe } from "./globeScene.js";
 import { createNumber } from "./numberScene.js";
+import { createOner } from "./onerScene.js";
 
 type Factory = (r: THREE.WebGLRenderer, w: number, h: number, opts?: any) => { render: (t: number) => void };
 
@@ -46,5 +47,6 @@ export const City3D: React.FC<{ tOffset?: number }> = ({ tOffset }) => <Scene3D 
 export const Globe3D: React.FC<{ tOffset?: number }> = ({ tOffset }) => <Scene3D factory={createGlobe as Factory} tOffset={tOffset} />;
 export const Number3D: React.FC<{ num?: string; country?: string; accent?: string; tOffset?: number }>
   = ({ num, country, accent, tOffset }) => <Scene3D factory={createNumber as Factory} opts={{ num, country, accent }} tOffset={tOffset} />;
+export const Oner3D: React.FC<{ tOffset?: number }> = ({ tOffset }) => <Scene3D factory={createOner as Factory} tOffset={tOffset} />;
 
 export default Scene3D;

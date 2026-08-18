@@ -2,6 +2,7 @@ import React from "react";
 import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { sec, COLORS } from "./theme_ben";
 import { CinematicWrap } from "./components/CinematicWrap";
+import { CineFX } from "./scenes/CineFX";
 import { CUES } from "./cues_retire7rich.gen";
 
 // ── CANAL "RETIRE ABROAD" · "7 Countries Where Your Social Security Check Makes You Rich" ──
@@ -43,6 +44,8 @@ export const MainRetire7: React.FC = () => {
           ))}
         </AbsoluteFill>
       </CinematicWrap>
+      {/* capa de compositing global: grano + viñeta + polvo + light rays (hecho a mano) */}
+      <CineFX grain={0.08} rays />
       {/* ambiente REAL del creador (loop 16s, normalizado), fits la playa donde está el avatar */}
       <Audio src={staticFile("sfx/ra_ambient_ocean.mp3")} volume={0.22} loop />
     </AbsoluteFill>
