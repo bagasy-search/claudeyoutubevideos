@@ -21,6 +21,7 @@ import { MainFederer15, TOTAL_FRAMES_FED15 } from "./_fed6/VideoEdit/Main_federe
 import { MainFederer16, TOTAL_FRAMES_FED16 } from "./_fed6/VideoEdit/Main_federer16";
 import { MainFederer19, TOTAL_FRAMES_FED19 } from "./_fed6/VideoEdit/Main_federer19";
 import { MainFederer18, TOTAL_FRAMES_FED18 } from "./_fed6/VideoEdit/Main_federer18";
+import { MainGreenbotox, TOTAL_FRAMES_GB } from "./_fed6/VideoEdit/Main_greenbotox";
 import { MainFederer17, TOTAL_FRAMES_FED17 } from "./_fed6/VideoEdit/Main_federer17";
 import { MainVbb0rdkrfduo, TOTAL_FRAMES_VBB0RDKRFDUO } from "./VideoEdit/Main_vbb0rdkrfduo";
 import { MainKitPreviewPx, TOTAL_FRAMES_KITPX } from "./VideoEdit/KitPreviewPx";
@@ -191,6 +192,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Federer16" component={MainFederer16} durationInFrames={TOTAL_FRAMES_FED16} fps={30} width={1920} height={1080} />
       <Composition id="Federer19" component={MainFederer19} durationInFrames={TOTAL_FRAMES_FED19} fps={30} width={1920} height={1080} />
       <Composition id="Federer18" component={MainFederer18} durationInFrames={TOTAL_FRAMES_FED18} fps={30} width={1920} height={1080} />
+      <Composition id="GreenBotox" component={MainGreenbotox} durationInFrames={TOTAL_FRAMES_GB} fps={30} width={1920} height={1080} />
       <Composition id="Federer17" component={MainFederer17} durationInFrames={TOTAL_FRAMES_FED17} fps={30} width={1920} height={1080} />
       {/* Hoja de contactos — 16 componentes bespoke del video de peróxido */}
       <Composition id="KitPreviewPx" component={MainKitPreviewPx} durationInFrames={TOTAL_FRAMES_KITPX} fps={30} width={1920} height={1080} />
