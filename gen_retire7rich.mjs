@@ -178,7 +178,7 @@ const SECTIONS = [
   // ░░ #2 VIETNAM ░░
   { key: "vietnam", phrase: "number two", beats: [
     n3d("02", "Vietnam"),
-    city3d({ w: 0.8 }),                                   // 🌆 Da Nang, "a modern city on the coast"
+    city3d({ w: 0.8, tOffset: 7 }),                                   // 🌆 Da Nang, "a modern city on the coast"
     real("vn_danang", "da nang vietnam modern beach city with a river and bridge, aerial", "da nang vietnam beach city river bridge aerial", { w: 0.55, hold: true }),
     kp("Maybe the *best value on earth* right now", { src: "broll/rac_vn_danang.mp4", at: "the single best value on the face of the earth", accent: "good", w: 0.7 }),
     c("bars", { title: "Da Nang prices", accent: "good", unit: "$", items: [{ label: "Apartment near water /mo", value: 350 }, { label: "Bowl of pho", value: 1.5 }, { label: "Dinner for two", value: 11 }] }),
@@ -191,7 +191,7 @@ const SECTIONS = [
   // ░░ #1 PANAMA ░░
   { key: "panama", phrase: "number one", beats: [
     n3d("01", "Panama"),
-    city3d({ w: 0.9 }),                                   // 🌆 skyline "like Miami" (en el guion)
+    city3d({ w: 0.9, tOffset: 7 }),                                   // 🌆 skyline "like Miami" (en el guion)
     real("pa_skyline", "panama city skyline at golden hour, modern towers, ocean", "panama city skyline towers ocean golden hour", { w: 0.55, hold: true }),
     kp("The *most generous* retirement program I've ever seen", { src: "broll/rac_pa_skyline.mp4", at: "the most generous retirement program", w: 0.7 }),
     c("statpills", { pills: ["Pensionado visa", "$1,000/mo", "US dollar"], accent: "amber", slider: false }),
