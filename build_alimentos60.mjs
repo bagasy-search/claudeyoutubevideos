@@ -110,22 +110,19 @@ S('tu cuerpo sabe fabricar colageno nuevo a cualquier edad', 'talk', {title: 'Tu
 S('vienen de la comida no de un pomo', 'talk', {title: 'Solo le faltan los materiales. Vienen del plato.', hot: ['materiales']});
 
 /* ===================== ALIMENTO 1 · HUEVO ===================== */
-S('el primer alimento son los ladrillos', 'talk', {title: 'El primero: los ladrillos del colágeno.', hot: ['ladrillos'], kicker: 'Alimento 1 de 3'});
+S('el primer alimento son los ladrillos', 'chapter', {index: '01', kicker: 'Alimento 1 de 3', title: 'El Huevo', sub: 'Los ladrillos del colágeno', mood: 'gold'});
 S('sí el huevo', 'hero', {kicker: 'Alimento 1 · Los ladrillos', title: 'El huevo', hot: ['huevo'], sub: 'La proteína completa que reconstruye tu colágeno.', image: 'img/al_huevo.jpg', side: 'left', mood: 'gold'});
 S('ese que durante 40 anos te dijeron', 'full', {caption: '40 años de miedo… para nada.', stock: {q: 'eggs bowl rustic kitchen', type: 'video'}, ken: 'in'});
-S('un huevo al dia no dana el corazon', 'stat', {kicker: 'Estudio · +250.000 personas', value: 1, suffix: '/día', label: 'un huevo al día no daña el corazón', sub: 'Cuarenta años de miedo desmentidos.', image: 'PHOTO:egg', mood: 'science'});
-S('esta hecho de aminoacidos', 'molecule', {kicker: 'De qué está hecho', title: 'Aminoácidos = ladrillos', hot: ['ladrillos'], centerLabel: 'Colágeno', sub: 'Tres ladrillos que tu piel necesita para armar colágeno.', nodes: [{label: 'Glicina'}, {label: 'Prolina'}, {label: 'Del huevo'}], mood: 'science', image: 'PHOTO:egg'});
-S('la regla de oro con la que miden', 'hero', {kicker: 'Proteína patrón oro', title: 'La mejor proteína, la más barata', hot: ['mejor'], sub: 'Los científicos miden todas las demás contra el huevo.', image: 'PHOTO:eggyolk', side: 'left', mood: 'gold'});
+S('un huevo al dia no dana el corazon', 'stat', {kicker: 'Estudio · +250.000 personas', value: 1, suffix: '/día', label: 'un huevo al día NO daña el corazón', sub: 'Cuarenta años de miedo, desmentidos.', image: 'PHOTO:egg', mood: 'science'});
+S('esta hecho de aminoacidos', 'checklist', {kicker: 'Lo que el huevo le da a tu piel', title: 'Una farmacia de belleza', hot: ['belleza'], items: ['Proteína completa → los ladrillos del colágeno', 'Biotina → cabello con cuerpo y uñas firmes', 'Luteína → escudo natural contra el sol', 'Zinc y selenio → reparan y protegen la piel'], mood: 'gold'});
+S('la regla de oro con la que miden', 'stat', {kicker: 'Proteína patrón oro', prefix: '#', value: 1, label: 'la proteína contra la que se miden todas', sub: 'La más completa… y la más barata.', image: 'PHOTO:eggyolk', mood: 'science'});
 S('sin ladrillos no hay obra', 'talk', {title: 'Sin ladrillos no hay obra. Sin proteína, no hay colágeno.', hot: ['obra']});
-S('hay una vitamina que se llama biotina', 'molecule', {kicker: 'La vitamina de la belleza', title: 'Biotina', hot: ['Biotina'], centerLabel: 'Yema', sub: 'En la yema que te dijeron que tiraras.', nodes: [{label: 'Cabello'}, {label: 'Uñas'}, {label: 'Piel'}], mood: 'gold', image: 'PHOTO:eggyolk'});
+S('hay una vitamina que se llama biotina', 'quote', {kicker: 'En la yema', quote: 'La biotina es la vitamina de la belleza: cabello, uñas y piel.', author: 'Dra. Valeria Alcázar', role: 'Belleza natural', image: 'PHOTO:eggyolk', mood: 'gold'});
 S('es la vitamina de la belleza', 'full', {caption: 'Cabello con cuerpo, uñas fuertes.', stock: {q: 'healthy shiny hair woman brushing', type: 'video'}, ken: 'out'});
 S('para unas que no se quiebren', 'full', {caption: 'Uñas que dejan de quebrarse.', stock: {q: 'healthy natural nails hands manicure', type: 'video'}, ken: 'in'});
-S('dos pigmentos luteina', 'molecule', {kicker: 'Escudo contra el sol', title: 'Luteína y zeaxantina', hot: ['sol'], centerLabel: 'Piel', sub: 'Un escudo natural contra el enemigo #1: el sol.', nodes: [{label: 'Anti-manchas'}, {label: 'Anti-arrugas'}, {label: 'Protege'}], mood: 'science', image: 'PHOTO:sun'});
 S('dejame contarte de una paciente', 'talk', {title: 'Déjame contarte de una paciente.', hot: ['paciente'], kicker: 'Caso real'});
-S('dona elvira 72 anos', 'full', {caption: 'Doña Elvira, 72 · cabello y uñas frágiles.', stock: {q: 'senior woman worried mirror hair', type: 'photo'}, ken: 'in'});
-S('lo primero que me dijo con una sonrisa', 'full', {caption: 'Tres meses después: uñas firmes, cabello con cuerpo.', stock: {q: 'happy senior woman smiling healthy', type: 'photo'}, ken: 'out'});
-S('el zinc y el selenio', 'molecule', {kicker: 'Dos minerales más', title: 'Zinc y selenio', hot: ['Zinc'], centerLabel: 'Huevo', sub: 'Reparan y protegen la piel del desgaste.', nodes: [{label: 'Cicatriza'}, {label: 'Antioxidante'}, {label: 'Repara'}], mood: 'science', image: 'PHOTO:egg'});
-S('una farmacia de belleza completa', 'hero', {kicker: 'Todo en uno', title: 'Una farmacia de belleza por centavos', hot: ['centavos'], sub: 'Más barato que un solo día de crema.', image: 'PHOTO:eggs2', side: 'right', mood: 'gold'});
+S('dona elvira 72 anos', 'beforeafter', {kicker: 'Doña Elvira · 72 años', title: 'Tres meses, dos huevos al día', hot: ['huevos'], imageA: 'PHOTO:elviraantes', imageB: 'PHOTO:elviradespues', labelA: 'Antes: uñas y cabello frágiles', labelB: 'Después: firmes y con cuerpo', mood: 'warmdark'});
+S('no le di ninguna pastilla', 'talk', {title: 'No le di una pastilla. Le di el material que le faltaba.', hot: ['material']});
 S('no lo frias nadando en aceite', 'step', {step: 1, total: 2, title: 'Cómo comerlo', hot: ['comerlo'], sub: 'Hervido, tibio o revuelto suave. Nunca frito en aceite requemado.', image: 'PHOTO:boiledegg', mood: 'warmdark'});
 S('dos huevos en el desayuno la mayoria de los dias', 'step', {step: 2, total: 2, title: 'Dos huevos al desayuno', hot: ['Dos'], sub: 'La mayoría de los días de la semana.', image: 'PHOTO:breakfast', mood: 'gold'});
 
@@ -135,15 +132,14 @@ S('ahi esta un codigo un cuadrito lleno de puntitos', 'qr', {kicker: 'Su guía, 
 S('ella es rosa de guadalajara', 'full', {caption: 'Rosa · Guadalajara · ya va por su 3.er día', kicker: 'Historias reales', stock: {q: 'happy mature latina woman smiling phone', type: 'photo'}, ken: 'in'});
 
 /* ===================== ALIMENTO 2 · SARDINA ===================== */
-S('el segundo alimento viene en una latita', 'hero', {kicker: 'Alimento 2 · La humedad', title: 'La sardina', hot: ['sardina'], sub: 'Omega-3 que rellena e hidrata la piel desde adentro.', image: 'img/al_sardina.jpg', side: 'right', mood: 'cool'});
-S('la sardina', 'full', {caption: 'La sardina. Humilde y poderosa.', stock: {q: 'canned sardines tin fish', type: 'video'}, ken: 'out'});
+S('el segundo alimento viene en una latita', 'chapter', {index: '02', kicker: 'Alimento 2 de 3', title: 'La Sardina', sub: 'La humedad que rellena la piel', mood: 'cool'});
+S('la sardina', 'hero', {kicker: 'Alimento 2 · La humedad', title: 'La sardina', hot: ['sardina'], sub: 'Humilde, baratísima, y más poderosa que un suero caro.', image: 'img/al_sardina.jpg', side: 'right', mood: 'cool'});
 S('humedad retenida por dentro', 'full', {caption: 'Piel joven = humedad retenida por dentro.', stock: {q: 'water drop skin hydration macro', type: 'video'}, ken: 'in'});
 S('la piel se reseca se pone tirante', 'full', {caption: 'Piel seca: las líneas se marcan más.', stock: {q: 'dry skin texture closeup', type: 'video'}, ken: 'in'});
-S('la sardina esta repleta de omega 3', 'molecule', {kicker: 'La grasa buena', title: 'Omega-3', hot: ['Omega-3'], centerLabel: 'Sardina', sub: 'El material con el que tu piel retiene el agua por dentro.', nodes: [{label: 'Hidrata'}, {label: 'Rellena'}, {label: 'Calma'}], mood: 'cool', image: 'PHOTO:sardines2'});
+S('la sardina esta repleta de omega 3', 'checklist', {kicker: 'Lo que la sardina le da a tu piel', title: 'Todo esto, en una latita', hot: ['latita'], items: ['Omega-3 → hidrata y rellena desde adentro', 'Omega-3 → apaga la inflamación que quema el colágeno', 'Calcio y vitamina D → huesos fuertes', 'Vitamina B12 → color vivo, adiós piel apagada'], mood: 'cool'});
 S('tu piel se vuelve mas jugosa', 'full', {caption: 'Piel jugosa, rellena, desde adentro.', stock: {q: 'glowing hydrated skin woman face', type: 'video'}, ken: 'out'});
-S('el envejecimiento por inflamacion', 'hero', {kicker: 'El fuego escondido', title: 'Envejecimiento por inflamación', hot: ['inflamación'], sub: 'Un fueguito que quema tu colágeno. El omega-3 lo apaga.', image: 'PHOTO:calmskin', side: 'left', mood: 'warmdark'});
-S('esos huesitos blandos que trae la sardina', 'molecule', {kicker: 'Y hay más adentro', title: 'Calcio, vitamina D y B12', hot: ['Calcio'], centerLabel: 'Sardina', sub: 'Huesos, renovación de la piel y color vivo.', nodes: [{label: 'Calcio'}, {label: 'Vitamina D'}, {label: 'B12'}], mood: 'science', image: 'PHOTO:sardines2'});
-S('es la diferencia entre una uva y una pasa', 'beforeafter', {kicker: 'La prueba del espejo', title: 'Uva o pasa: es el agua', hot: ['agua'], imageA: 'PHOTO:grape', imageB: 'PHOTO:raisin', labelA: 'Hidratada', labelB: 'Seca', mood: 'cool'});
+S('el envejecimiento por inflamacion', 'talk', {title: 'El omega-3 apaga el fuego que quema tu colágeno.', hot: ['apaga'], kicker: 'El fuego escondido'});
+S('es la diferencia entre una uva y una pasa', 'beforeafter', {kicker: 'La prueba del espejo', title: 'Uva o pasa: es el agua', hot: ['agua'], imageA: 'PHOTO:grape', imageB: 'PHOTO:raisin', labelA: 'Piel hidratada', labelB: 'Piel seca', mood: 'cool'});
 S('el contorno de los ojos', 'full', {caption: 'El contorno de ojos delata la edad.', stock: {q: 'woman eye area wrinkles crows feet', type: 'video'}, ken: 'in'});
 S('como la comes para que sepa rico', 'step', {step: 1, total: 1, title: 'Cómo comerla', hot: ['comerla'], sub: 'Sobre tostada integral, con limón y aceite de oliva. 2-3 veces por semana, con sus huesitos.', image: 'PHOTO:sardinetoast', mood: 'gold'});
 
@@ -154,8 +150,9 @@ S('dona alfonsina de monterrey', 'full', {caption: 'Alfonsina · Monterrey · 79
 
 /* ===================== ALIMENTO 3 · VITAMINA C ===================== */
 S('tu cuerpo no puede armar ni una sola fibra', 'talk', {title: 'Sin este ingrediente, nada se arma.', hot: ['nada'], kicker: 'El secreto que lo une todo'});
-S('ese cemento es la vitamina c', 'hero', {kicker: 'Alimento 3 · El cemento', title: 'La vitamina C', hot: ['vitamina'], sub: 'Sin ella, los ladrillos nunca se vuelven piel firme.', image: 'img/al_vitc.jpg', side: 'left', mood: 'science'});
-S('el pimiento rojo que tiene mas vitamina c que una naranja', 'full', {caption: 'Pimiento rojo: más vitamina C que una naranja.', stock: {q: 'red bell pepper fresh', type: 'video'}, ken: 'in'});
+S('ese cemento es la vitamina c', 'chapter', {index: '03', kicker: 'Alimento 3 de 3', title: 'La Vitamina C', sub: 'El cemento que une los ladrillos', mood: 'science'});
+S('el tercer alimento es cualquiera', 'hero', {kicker: 'Alimento 3 · El cemento', title: 'La vitamina C', hot: ['vitamina'], sub: 'Pimiento rojo, guayaba, cítricos… el que tengas a mano.', image: 'img/al_vitc.jpg', side: 'left', mood: 'science'});
+S('el pimiento rojo que tiene mas vitamina c que una naranja', 'stat', {kicker: 'Dato que sorprende', prefix: '>', value: 100, suffix: '%', label: 'el pimiento rojo tiene MÁS vitamina C que una naranja', sub: 'Y la guayaba, todavía más.', image: 'PHOTO:pepper2', mood: 'science'});
 S('la guayaba que revienta de vitamina c', 'full', {caption: 'Guayaba: revienta de vitamina C.', stock: {q: 'guava fruit fresh sliced', type: 'video'}, ken: 'out'});
 S('los citricos la naranja la mandarina', 'full', {caption: 'Naranja, mandarina, limón, kiwi, fresa.', stock: {q: 'citrus oranges slices fresh', type: 'video'}, ken: 'left'});
 S('la herramienta que tu cuerpo usa para pegar', 'molecule', {kicker: 'El cemento del colágeno', title: 'Vitamina C = cofactor', hot: ['cofactor'], centerLabel: 'Vitamina C', sub: 'Pega los ladrillos y los convierte en colágeno firme.', nodes: [{label: 'Une aminoácidos'}, {label: 'Forma fibras'}, {label: 'Piel firme'}], mood: 'science', image: 'PHOTO:pepper2'});
@@ -166,7 +163,7 @@ S('la vitamina c y el huevo del desayuno se potencian', 'talk', {title: 'Vitamin
 S('como la comes fresca y cruda', 'step', {step: 1, total: 1, title: 'Cómo comerla', hot: ['comerla'], sub: 'Fresca y cruda: el calor la destruye. Media naranja junto a tus huevos.', image: 'PHOTO:salad', mood: 'gold'});
 
 /* ===================== RECAP + CIERRE ===================== */
-S('dejame juntarlo todo', 'talk', {title: 'Juntémoslo todo.', hot: ['todo'], kicker: 'El resumen'});
+S('dejame juntarlo todo', 'chapter', {index: '04', kicker: 'Para que no se te escape', title: 'El Resumen', sub: 'Ladrillos, humedad y cemento', mood: 'gold'});
 S('para reconstruirla necesitas tres cosas', 'checklist', {kicker: 'Tu piel joven, en 3', title: 'Ladrillos, humedad y cemento', hot: ['tres'], items: ['Huevo → los ladrillos (proteína + biotina)', 'Sardina → la humedad (omega-3, calcio, B12)', 'Vitamina C → el cemento (pega el colágeno)'], mood: 'gold'});
 S('empieza con uno', 'talk', {title: 'No los tres perfectos. Empieza con uno.', hot: ['uno']});
 S('la belleza no estaba en el pomo caro', 'quote', {kicker: 'Recuérdalo', quote: 'La belleza no estaba en el pomo caro. Estaba en tu cocina.', author: 'Dra. Valeria Alcázar', role: 'Belleza natural', image: 'PHOTO:kitchen', mood: 'warmdark'});
@@ -184,6 +181,7 @@ function resolvePhoto(tag) {
     sun: 'woman sun protection skin', boiledegg: 'boiled eggs halved plate', breakfast: 'healthy breakfast eggs plate', sugar: 'sugar cubes white',
     sardines2: 'sardines tin oil', calmskin: 'calm smooth woman skin', grape: 'green grapes fresh', raisin: 'raisins dried fruit', pepper2: 'red peppers fresh market',
     spots: 'age spots woman cheek', clearskin: 'even skin tone woman face', kitchen: 'rustic kitchen fresh vegetables', salad: 'fresh salad peppers citrus', sardinetoast: 'sardine toast bread',
+    elviraantes: 'senior woman tired dull skin portrait', elviradespues: 'happy senior woman healthy glowing skin',
   };
   const name = `ph_${tag}`;
   if (!needs.find((n) => n.name === name)) needs.push({name, query: map[tag] || tag, type: 'photo'});
