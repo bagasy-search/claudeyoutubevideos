@@ -59,7 +59,7 @@ jobs:
           restore-keys: rmn-${{ runner.os }}-
       - name: install deps (si no vinieron del cache)
         run: |
-          if [ -d node_modules ] && node -e "require('@rspack/binding')" 2>/dev/null; then
+          if [ -d node_modules ] && node -e "require('@rspack/binding'); require.resolve('three')" 2>/dev/null; then
             echo "deps cacheadas ✓ — salteo npm ci"
           else
             n=0
