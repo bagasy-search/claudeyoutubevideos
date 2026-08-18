@@ -7,6 +7,7 @@
   "private": true,
   "dependencies": {
     "@huggingface/transformers": "^4.2.0",
+    "@react-three/fiber": "^9.7.0",
     "@remotion/captions": "4.0.472",
     "@remotion/cli": "4.0.472",
     "@remotion/google-fonts": "4.0.472",
@@ -14,12 +15,14 @@
     "@remotion/media": "4.0.472",
     "@remotion/motion-blur": "^4.0.472",
     "@remotion/tailwind-v4": "4.0.472",
+    "@remotion/three": "^4.0.472",
     "@remotion/transitions": "4.0.472",
     "noisejs": "^2.1.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.472",
-    "tailwindcss": "4.0.0"
+    "tailwindcss": "4.0.0",
+    "three": "^0.170.0"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.472",
