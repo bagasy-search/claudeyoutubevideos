@@ -103,6 +103,7 @@ import { MainLuz, TOTAL_FRAMES_LUZ } from "./VideoEdit/Main_luz";
 import { MainMedicaid, TOTAL_FRAMES_MED } from "./VideoEdit/Main_medicaid";
 import { MainViuda, TOTAL_FRAMES_VD } from "./VideoEdit/Main_viuda";
 import { MainRetire5, TOTAL_FRAMES_RA } from "./VideoEdit/Main_retire5countries";
+import { MainRetire7, TOTAL_FRAMES_R7 } from "./VideoEdit/Main_retire7rich";
 import { MainRavietnam, TOTAL_FRAMES_RAV } from "./VideoEdit/Main_ravietnam";
 import { MainEstafas, TOTAL_FRAMES_ES } from "./VideoEdit/Main_estafas";
 import { MainHormiga, TOTAL_FRAMES_HB } from "./VideoEdit/Main_hormiga";
@@ -225,6 +226,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Viuda" component={MainViuda} durationInFrames={TOTAL_FRAMES_VD} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Retire Abroad · "5 Countries Begging Americans to Retire" · AVATAR · finance cálido */}
       <Composition id="Retire5" component={MainRetire5} durationInFrames={TOTAL_FRAMES_RA} fps={30} width={1920} height={1080} />
+      <Composition id="Retire7" component={MainRetire7} durationInFrames={TOTAL_FRAMES_R7} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Ben retirado · "¿Casa PAGADA? Medicaid se la QUEDA" · AVATAR · look ALARMA */}
       <Composition id="Medicaid" component={MainMedicaid} durationInFrames={TOTAL_FRAMES_MED} fps={30} width={1920} height={1080} />
       {/* RETIRE ABROAD · "I Retired on $1,300 a Month in Vietnam" · AVATAR · look cálido oro */}
