@@ -6,7 +6,7 @@
   {
    "id": "hook_0",
    "start": 3.9,
-   "dur": 8.09,
+   "dur": 8.25,
    "key": "hook_0",
    "kind": "odometer",
    "to": 1300,
@@ -17,18 +17,18 @@
   },
   {
    "id": "hook_1",
-   "start": 11.99,
-   "dur": 3.45,
+   "start": 12.15,
+   "dur": 4.2,
    "key": "hook_1",
-   "kind": "keyphrase",
-   "text": "*Everything.* Rent. Food. The doctor. The motorbike.",
+   "kind": "half",
    "src": "img/rv_pho_stall.png",
-   "accent": "amber"
+   "side": "right",
+   "kicker": "Everything — rent, food, the doctor"
   },
   {
    "id": "hook_2",
-   "start": 15.44,
-   "dur": 6.62,
+   "start": 16.35,
+   "dur": 6.75,
    "key": "hook_2",
    "kind": "raw",
    "src": "img/rv_beach_aerial.png",
@@ -36,26 +36,24 @@
   },
   {
    "id": "hook_3",
-   "start": 22.06,
-   "dur": 3.9,
+   "start": 23.1,
+   "dur": 3.57,
    "key": "hook_3",
+   "kind": "raw",
+   "src": "img/rv_n_market_morning.png"
+  },
+  {
+   "id": "hook_4",
+   "start": 26.67,
+   "dur": 3.97,
+   "key": "hook_4",
    "kind": "raw",
    "src": "img/rv_dinner_out.png"
   },
   {
-   "id": "hook_4",
-   "start": 25.96,
-   "dur": 4.68,
-   "key": "hook_4",
-   "kind": "keyphrase",
-   "text": "*Money left over.* First time since I was forty.",
-   "src": "img/rv_wallet_cash.png",
-   "accent": "amber"
-  },
-  {
    "id": "hook_5",
    "start": 30.64,
-   "dur": 6.75,
+   "dur": 4.46,
    "key": "hook_5",
    "kind": "statpills",
    "pills": [
@@ -67,9 +65,19 @@
   },
   {
    "id": "hook_6",
-   "start": 37.39,
-   "dur": 6.45,
+   "start": 35.1,
+   "dur": 4.47,
    "key": "hook_6",
+   "kind": "keyphrase",
+   "text": "*Money left over.* First time since I was forty.",
+   "src": "img/rv_wallet_cash.png",
+   "accent": "amber"
+  },
+  {
+   "id": "hook_7",
+   "start": 39.57,
+   "dur": 4.27,
+   "key": "hook_7",
    "kind": "infzoom",
    "images": [
     {
@@ -87,10 +95,10 @@
    ]
   },
   {
-   "id": "hook_7",
+   "id": "hook_8",
    "start": 43.84,
    "dur": 16.52,
-   "key": "hook_7",
+   "key": "hook_8",
    "kind": "keyphrase",
    "text": "Down here it makes me feel *RICH*.",
    "src": "img/rv_him_beach_smile.png",
@@ -100,7 +108,7 @@
   {
    "id": "catch_0",
    "start": 60.36,
-   "dur": 2.67,
+   "dur": 4.7,
    "key": "catch_0",
    "kind": "keyphrase",
    "text": "One thing *nobody* puts in these videos.",
@@ -109,8 +117,8 @@
   },
   {
    "id": "catch_1",
-   "start": 63.03,
-   "dur": 3.37,
+   "start": 65.06,
+   "dur": 5.93,
    "key": "catch_1",
    "kind": "mistake",
    "number": "1",
@@ -121,26 +129,27 @@
   },
   {
    "id": "catch_2",
-   "start": 66.4,
-   "dur": 9.17,
+   "start": 70.99,
+   "dur": 4.6,
    "key": "catch_2",
-   "kind": "keyphrase",
-   "text": "It can blow this dream to pieces in *90 days flat*.",
+   "kind": "half",
    "src": "img/rv_calendar_x.png",
-   "accent": "danger"
+   "side": "left",
+   "kicker": "90 days flat"
   },
   {
    "id": "catch_3",
-   "start": 75.57,
-   "dur": 7.25,
+   "start": 75.59,
+   "dur": 7.23,
    "key": "catch_3",
    "kind": "raw",
-   "src": "img/rv_him_serious.png"
+   "src": "img/rv_him_serious.png",
+   "hold": true
   },
   {
    "id": "angry_0",
    "start": 82.82,
-   "dur": 6.87,
+   "dur": 6.05,
    "key": "angry_0",
    "kind": "keyphrase",
    "text": "Your whole life you get sold *one story*.",
@@ -149,8 +158,8 @@
   },
   {
    "id": "angry_1",
-   "start": 89.69,
-   "dur": 8.95,
+   "start": 88.87,
+   "dur": 7.89,
    "key": "angry_1",
    "kind": "bars",
    "eyebrow": "The lie you were sold",
@@ -170,13 +179,13 @@
   },
   {
    "id": "angry_2",
-   "start": 98.64,
-   "dur": 4.04,
+   "start": 96.76,
+   "dur": 5.92,
    "key": "angry_2",
-   "kind": "keyphrase",
-   "text": "A *not-enough* check buys a life that feels like *wealth*.",
+   "kind": "half",
    "src": "img/rv_market_fruit.png",
-   "accent": "amber"
+   "side": "right",
+   "kicker": "A “not-enough” check"
   },
   {
    "id": "angry_3",
@@ -191,7 +200,7 @@
   {
    "id": "vietnam_0",
    "start": 107.36,
-   "dur": 10.6,
+   "dur": 9.16,
    "key": "vietnam_0",
    "kind": "diagram",
    "eyebrow": "Where I live",
@@ -204,8 +213,8 @@
   },
   {
    "id": "vietnam_1",
-   "start": 117.96,
-   "dur": 7.04,
+   "start": 116.52,
+   "dur": 7.09,
    "key": "vietnam_1",
    "kind": "raw",
    "src": "img/rv_danang_skyline.png",
@@ -213,9 +222,17 @@
   },
   {
    "id": "vietnam_2",
-   "start": 125,
-   "dur": 5.56,
+   "start": 123.61,
+   "dur": 2.97,
    "key": "vietnam_2",
+   "kind": "raw",
+   "src": "img/rv_n_riverside_night.png"
+  },
+  {
+   "id": "vietnam_3",
+   "start": 126.58,
+   "dur": 4.81,
+   "key": "vietnam_3",
    "kind": "chips",
    "title": "Exactly how — no brochure nonsense",
    "image": "img/rv_danang_skyline.png",
@@ -228,10 +245,10 @@
    "hue": "amber"
   },
   {
-   "id": "vietnam_3",
-   "start": 130.56,
-   "dur": 6.1,
-   "key": "vietnam_3",
+   "id": "vietnam_4",
+   "start": 131.39,
+   "dur": 5.27,
+   "key": "vietnam_4",
    "kind": "keyphrase",
    "text": "I'll show you *exactly how* a regular guy pulls this off.",
    "src": "img/rv_him_cafe_talk.png",
@@ -240,7 +257,7 @@
   {
    "id": "kitchen_0",
    "start": 136.66,
-   "dur": 1.23,
+   "dur": 7.46,
    "key": "kitchen_0",
    "kind": "rule",
    "number": "01",
@@ -249,8 +266,8 @@
   },
   {
    "id": "kitchen_1",
-   "start": 137.89,
-   "dur": 3.71,
+   "start": 144.12,
+   "dur": 22.54,
    "key": "kitchen_1",
    "kind": "raw",
    "src": "img/rv_kitchen_ohio.png",
@@ -258,18 +275,18 @@
   },
   {
    "id": "kitchen_2",
-   "start": 141.6,
-   "dur": 13.15,
+   "start": 166.66,
+   "dur": 8.83,
    "key": "kitchen_2",
-   "kind": "keyphrase",
-   "text": "Heat down to *62* — the gas bill scared me.",
+   "kind": "half",
    "src": "img/rv_thermostat.png",
-   "accent": "cold"
+   "side": "left",
+   "kicker": "Heat down to 62"
   },
   {
    "id": "kitchen_3",
-   "start": 154.75,
-   "dur": 14.28,
+   "start": 175.49,
+   "dur": 9.81,
    "key": "kitchen_3",
    "kind": "callout",
    "image": "img/rv_bank_statement.png",
@@ -280,8 +297,8 @@
   },
   {
    "id": "kitchen_4",
-   "start": 169.03,
-   "dur": 17.15,
+   "start": 185.3,
+   "dur": 11.77,
    "key": "kitchen_4",
    "kind": "bars",
    "eyebrow": "The check ran out",
@@ -313,18 +330,16 @@
   },
   {
    "id": "kitchen_5",
-   "start": 186.18,
-   "dur": 14.04,
+   "start": 197.07,
+   "dur": 8.16,
    "key": "kitchen_5",
-   "kind": "keyphrase",
-   "text": "Forty years of work — living *check to check* at 70.",
-   "src": "img/rv_old_hands_coffee.png",
-   "accent": "cold"
+   "kind": "raw",
+   "src": "img/rv_old_hands_coffee.png"
   },
   {
    "id": "kitchen_6",
-   "start": 200.22,
-   "dur": 14.04,
+   "start": 205.23,
+   "dur": 9.03,
    "key": "kitchen_6",
    "kind": "keyphrase",
    "text": "That's not a retirement. That's a *waiting room*.",
@@ -334,25 +349,25 @@
   {
    "id": "nephew_0",
    "start": 214.26,
-   "dur": 17.63,
+   "dur": 16.9,
    "key": "nephew_0",
    "kind": "raw",
    "src": "img/rv_nephew_laptop.png"
   },
   {
    "id": "nephew_1",
-   "start": 231.89,
-   "dur": 17.33,
+   "start": 231.16,
+   "dur": 18.06,
    "key": "nephew_1",
-   "kind": "keyphrase",
-   "text": "“Your problem is *where* you're trying to spend it.”",
+   "kind": "half",
    "src": "img/rv_phone_photos.png",
-   "accent": "amber"
+   "side": "left",
+   "kicker": "“You're spending it in the wrong country”"
   },
   {
    "id": "nephew_2",
    "start": 249.22,
-   "dur": 6.78,
+   "dur": 9.22,
    "key": "nephew_2",
    "kind": "callout",
    "image": "img/rv_apartment_listing.png",
@@ -363,8 +378,8 @@
   },
   {
    "id": "nephew_3",
-   "start": 256,
-   "dur": 6.24,
+   "start": 258.44,
+   "dur": 8.49,
    "key": "nephew_3",
    "kind": "keyphrase",
    "text": "“That can't be real. That's a *vacation price*.”",
@@ -373,18 +388,18 @@
   },
   {
    "id": "nephew_4",
-   "start": 262.24,
-   "dur": 13.54,
+   "start": 266.93,
+   "dur": 8.85,
    "key": "nephew_4",
-   "kind": "keyphrase",
-   "text": "“Buy *one plane ticket*. Come see for two weeks.”",
+   "kind": "diorama",
    "src": "img/rv_plane_ticket.png",
+   "text": "“Buy *one* plane ticket. Come see.”",
    "accent": "amber"
   },
   {
    "id": "arrival_0",
    "start": 275.78,
-   "dur": 18.8,
+   "dur": 18.35,
    "key": "arrival_0",
    "kind": "journey",
    "dark": true,
@@ -436,18 +451,18 @@
   },
   {
    "id": "arrival_1",
-   "start": 294.58,
-   "dur": 7.46,
+   "start": 294.13,
+   "dur": 7.91,
    "key": "arrival_1",
-   "kind": "keyphrase",
-   "text": "I went back to pack up. But in my head — *I never came back*.",
+   "kind": "half",
    "src": "img/rv_him_beach_arrive.png",
-   "accent": "amber"
+   "side": "right",
+   "kicker": "In my head, I never came back"
   },
   {
    "id": "danang_0",
    "start": 302.04,
-   "dur": 28.28,
+   "dur": 14.9,
    "key": "danang_0",
    "kind": "raw",
    "src": "img/rv_danang_beach_wide.png",
@@ -455,39 +470,25 @@
   },
   {
    "id": "danang_1",
-   "start": 330.32,
-   "dur": 4.61,
+   "start": 316.94,
+   "dur": 5.58,
    "key": "danang_1",
-   "kind": "keyphrase",
-   "text": "A real beach. *Soft sand, warm water.* For miles.",
-   "src": "img/rv_beach_walk.png",
-   "accent": "amber"
+   "kind": "raw",
+   "src": "img/rv_beach_walk.png"
   },
   {
    "id": "danang_2",
-   "start": 334.93,
-   "dur": 4.69,
+   "start": 322.52,
+   "dur": 4.78,
    "key": "danang_2",
    "kind": "raw",
-   "src": "img/rv_dragon_bridge.png"
+   "src": "img/rv_n_coast_road.png"
   },
   {
    "id": "danang_3",
-   "start": 339.62,
-   "dur": 5.16,
+   "start": 327.3,
+   "dur": 6.74,
    "key": "danang_3",
-   "kind": "callout",
-   "image": "img/rv_dragon_bridge.png",
-   "figure": "🐉",
-   "caption": "It breathes fire on weekends.",
-   "accent": "amber",
-   "eyebrow": "The dragon bridge"
-  },
-  {
-   "id": "danang_4",
-   "start": 344.78,
-   "dur": 4.54,
-   "key": "danang_4",
    "kind": "splitlist",
    "title": "Why Da Nang",
    "palette": "A",
@@ -499,13 +500,43 @@
    ]
   },
   {
+   "id": "danang_4",
+   "start": 334.04,
+   "dur": 5.58,
+   "key": "danang_4",
+   "kind": "raw",
+   "src": "img/rv_dragon_bridge.png"
+  },
+  {
    "id": "danang_5",
-   "start": 349.32,
-   "dur": 4.33,
+   "start": 339.62,
+   "dur": 6.61,
    "key": "danang_5",
+   "kind": "callout",
+   "image": "img/rv_dragon_bridge.png",
+   "figure": "🐉",
+   "caption": "It breathes fire on weekends.",
+   "accent": "amber",
+   "eyebrow": "The dragon bridge"
+  },
+  {
+   "id": "danang_6",
+   "start": 346.23,
+   "dur": 6.62,
+   "key": "danang_6",
+   "kind": "half",
+   "src": "img/rv_expats_cafe.png",
+   "side": "left",
+   "kicker": "You're not alone"
+  },
+  {
+   "id": "danang_7",
+   "start": 352.85,
+   "dur": 5.55,
+   "key": "danang_7",
    "kind": "chips",
    "title": "A whole community over here",
-   "image": "img/rv_expats_cafe.png",
+   "image": "img/rv_expats_walk.png",
    "chips": [
     "Americans",
     "Canadians",
@@ -516,19 +547,9 @@
    "hue": "amber"
   },
   {
-   "id": "danang_6",
-   "start": 353.65,
-   "dur": 4.75,
-   "key": "danang_6",
-   "kind": "keyphrase",
-   "text": "So you're *not alone*. That mattered more than I expected.",
-   "src": "img/rv_expats_walk.png",
-   "accent": "good"
-  },
-  {
    "id": "apartment_0",
    "start": 358.4,
-   "dur": 1.48,
+   "dur": 8.08,
    "key": "apartment_0",
    "kind": "rule",
    "number": "02",
@@ -537,8 +558,8 @@
   },
   {
    "id": "apartment_1",
-   "start": 359.88,
-   "dur": 4.14,
+   "start": 366.48,
+   "dur": 20.68,
    "key": "apartment_1",
    "kind": "raw",
    "src": "img/rv_apartment_interior.png",
@@ -546,27 +567,27 @@
   },
   {
    "id": "apartment_2",
-   "start": 364.02,
-   "dur": 26.03,
+   "start": 387.16,
+   "dur": 10.63,
    "key": "apartment_2",
-   "kind": "annotated",
-   "image": "img/rv_apartment_balcony.png",
-   "eyebrow": "Furnished — didn't buy a stick",
-   "caption": "10-minute walk to the sand",
-   "annotations": [
-    {
-     "kind": "circle",
-     "x": 50,
-     "y": 55,
-     "label": "$450 / mo"
-    }
-   ]
+   "kind": "half",
+   "src": "img/rv_apartment_balcony.png",
+   "side": "right",
+   "kicker": "Furnished · 10-min walk to the sand"
   },
   {
    "id": "apartment_3",
-   "start": 390.05,
-   "dur": 26.03,
+   "start": 397.79,
+   "dur": 5.53,
    "key": "apartment_3",
+   "kind": "raw",
+   "src": "img/rv_n_apartment_pool.png"
+  },
+  {
+   "id": "apartment_4",
+   "start": 403.32,
+   "dur": 12.76,
+   "key": "apartment_4",
    "kind": "bars",
    "eyebrow": "The range is wide",
    "title": "What rent costs in Da Nang",
@@ -588,20 +609,20 @@
    ]
   },
   {
-   "id": "apartment_4",
+   "id": "apartment_5",
    "start": 416.08,
    "dur": 15,
-   "key": "apartment_4",
+   "key": "apartment_5",
    "kind": "keyphrase",
    "text": "The *floor* is low. A clean, safe home is *$400*.",
    "src": "img/rv_street_local.png",
    "accent": "amber"
   },
   {
-   "id": "apartment_5",
+   "id": "apartment_6",
    "start": 431.08,
    "dur": 20.86,
-   "key": "apartment_5",
+   "key": "apartment_6",
    "kind": "vsmed",
    "eyebrow": "Renting here vs back home",
    "leftTitle": "Back home",
@@ -638,7 +659,7 @@
   {
    "id": "food_0",
    "start": 451.94,
-   "dur": 20.82,
+   "dur": 16.26,
    "key": "food_0",
    "kind": "rule",
    "number": "03",
@@ -647,18 +668,18 @@
   },
   {
    "id": "food_1",
-   "start": 472.76,
-   "dur": 25.21,
+   "start": 468.2,
+   "dur": 19.25,
    "key": "food_1",
-   "kind": "keyphrase",
-   "text": "I'd move here for the *food* alone.",
+   "kind": "half",
    "src": "img/rv_him_eating.png",
-   "accent": "amber"
+   "side": "left",
+   "kicker": "I'd move here for the food alone"
   },
   {
    "id": "food_2",
-   "start": 497.97,
-   "dur": 63.57,
+   "start": 487.45,
+   "dur": 49.62,
    "key": "food_2",
    "kind": "journey",
    "dark": true,
@@ -710,9 +731,25 @@
   },
   {
    "id": "food_3",
-   "start": 561.54,
-   "dur": 9.6,
+   "start": 537.07,
+   "dur": 11.12,
    "key": "food_3",
+   "kind": "raw",
+   "src": "img/rv_n_fruit_vendor.png"
+  },
+  {
+   "id": "food_4",
+   "start": 548.19,
+   "dur": 13.35,
+   "key": "food_4",
+   "kind": "raw",
+   "src": "img/rv_market_wonder.png"
+  },
+  {
+   "id": "food_5",
+   "start": 561.54,
+   "dur": 18.44,
+   "key": "food_5",
    "kind": "callout",
    "image": "img/rv_market_wonder.png",
    "figure": "$300",
@@ -721,19 +758,9 @@
    "eyebrow": "All my food"
   },
   {
-   "id": "food_4",
-   "start": 571.14,
-   "dur": 8.84,
-   "key": "food_4",
-   "kind": "keyphrase",
-   "text": "Best food of my life — *cooked fresh, every day*.",
-   "src": "img/rv_food_spread.png",
-   "accent": "amber"
-  },
-  {
    "id": "around_0",
    "start": 579.98,
-   "dur": 16.04,
+   "dur": 12.39,
    "key": "around_0",
    "kind": "raw",
    "src": "img/rv_motorbike_coast.png",
@@ -741,9 +768,17 @@
   },
   {
    "id": "around_1",
+   "start": 592.37,
+   "dur": 3.65,
+   "key": "around_1",
+   "kind": "raw",
+   "src": "img/rv_n_scooter_alley.png"
+  },
+  {
+   "id": "around_2",
    "start": 596.02,
    "dur": 19.66,
-   "key": "around_1",
+   "key": "around_2",
    "kind": "statpills",
    "pills": [
     "Scooter $50-60/mo",
@@ -753,10 +788,10 @@
    "accent": "amber"
   },
   {
-   "id": "around_2",
+   "id": "around_3",
    "start": 615.68,
    "dur": 4.72,
-   "key": "around_2",
+   "key": "around_3",
    "kind": "keyphrase",
    "text": "For getting around, it's *freedom*. About *$60-70* a month.",
    "src": "img/rv_scooters_street.png",
@@ -794,7 +829,7 @@
   {
    "id": "utilities_1",
    "start": 662.14,
-   "dur": 14.48,
+   "dur": 8.39,
    "key": "utilities_1",
    "kind": "callout",
    "image": "img/rv_cleaner_home.png",
@@ -805,13 +840,13 @@
   },
   {
    "id": "utilities_2",
-   "start": 676.62,
-   "dur": 2.3,
+   "start": 670.53,
+   "dur": 8.39,
    "key": "utilities_2",
-   "kind": "keyphrase",
-   "text": "It gives an old man his *time back*.",
+   "kind": "half",
    "src": "img/rv_relax_balcony.png",
-   "accent": "good"
+   "side": "right",
+   "kicker": "It gives an old man his time back"
   },
   {
    "id": "budget_0",
@@ -899,7 +934,7 @@
   {
    "id": "budget_2",
    "start": 726.7,
-   "dur": 11.23,
+   "dur": 10.8,
    "key": "budget_2",
    "kind": "odometer",
    "to": 1300,
@@ -910,18 +945,18 @@
   },
   {
    "id": "budget_3",
-   "start": 737.93,
-   "dur": 9.57,
+   "start": 737.5,
+   "dur": 10,
    "key": "budget_3",
-   "kind": "keyphrase",
-   "text": "Me — a guy afraid to run the *dryer* — with money to spare.",
+   "kind": "half",
    "src": "img/rv_him_content.png",
-   "accent": "amber"
+   "side": "left",
+   "kicker": "Money to spare — first time since 40"
   },
   {
    "id": "health_0",
    "start": 747.5,
-   "dur": 8.97,
+   "dur": 7.96,
    "key": "health_0",
    "kind": "rule",
    "number": "05",
@@ -930,8 +965,8 @@
   },
   {
    "id": "health_1",
-   "start": 756.47,
-   "dur": 22.95,
+   "start": 755.46,
+   "dur": 18.51,
    "key": "health_1",
    "kind": "raw",
    "src": "img/rv_clinic_doctor.png",
@@ -939,9 +974,17 @@
   },
   {
    "id": "health_2",
-   "start": 779.42,
-   "dur": 34.52,
+   "start": 773.97,
+   "dur": 5.45,
    "key": "health_2",
+   "kind": "raw",
+   "src": "img/rv_n_hospital_ext.png"
+  },
+  {
+   "id": "health_3",
+   "start": 779.42,
+   "dur": 23.22,
+   "key": "health_3",
    "kind": "callout",
    "image": "img/rv_clinic_doctor.png",
    "figure": "$30-40",
@@ -950,30 +993,30 @@
    "eyebrow": "Day-to-day care"
   },
   {
-   "id": "health_3",
-   "start": 813.94,
-   "dur": 9.6,
-   "key": "health_3",
-   "kind": "keyphrase",
-   "text": "Chest pain in the night. The whole night — *a few hundred dollars*.",
+   "id": "health_4",
+   "start": 802.64,
+   "dur": 20.9,
+   "key": "health_4",
+   "kind": "half",
    "src": "img/rv_him_hospital.png",
-   "accent": "amber"
+   "side": "left",
+   "kicker": "The whole night — a few hundred dollars"
   },
   {
-   "id": "health_4",
+   "id": "health_5",
    "start": 823.54,
    "dur": 12.25,
-   "key": "health_4",
+   "key": "health_5",
    "kind": "keyphrase",
-   "text": "No fighting an insurance company. *No letter that ruins your Tuesday*.",
+   "text": "*No letter in the mail* that ruins your Tuesday.",
    "src": "img/rv_mailbox.png",
    "accent": "good"
   },
   {
-   "id": "health_5",
+   "id": "health_6",
    "start": 835.79,
    "dur": 15.45,
-   "key": "health_5",
+   "key": "health_6",
    "kind": "mistake",
    "number": "!",
    "title": "The BIG stuff is different",
@@ -982,10 +1025,10 @@
    "image": "img/rv_serious_ward.png"
   },
   {
-   "id": "health_6",
+   "id": "health_7",
    "start": 851.24,
    "dur": 16.51,
-   "key": "health_6",
+   "key": "health_7",
    "kind": "checklist",
    "title": "What the smart expats do",
    "eyebrow": "Two things",
@@ -1007,10 +1050,10 @@
    "image": "img/rv_medevac_plane.png"
   },
   {
-   "id": "health_7",
+   "id": "health_8",
    "start": 867.75,
    "dur": 21.31,
-   "key": "health_7",
+   "key": "health_8",
    "kind": "diagram",
    "eyebrow": "If it's serious",
    "slides": [
@@ -1021,10 +1064,10 @@
    ]
   },
   {
-   "id": "health_8",
+   "id": "health_9",
    "start": 889.06,
    "dur": 17.78,
-   "key": "health_8",
+   "key": "health_9",
    "kind": "keyphrase",
    "text": "The older you are, the more it costs. The time is *now*.",
    "src": "img/rv_him_reading_policy.png",
@@ -1033,7 +1076,7 @@
   {
    "id": "visa_0",
    "start": 906.84,
-   "dur": 13.74,
+   "dur": 22.61,
    "key": "visa_0",
    "kind": "rule",
    "number": "06",
@@ -1043,18 +1086,19 @@
   },
   {
    "id": "visa_1",
-   "start": 920.58,
-   "dur": 37.42,
+   "start": 929.45,
+   "dur": 28.55,
    "key": "visa_1",
-   "kind": "keyphrase",
-   "text": "Vietnam does *not* have a retirement visa.",
+   "kind": "diorama",
    "src": "img/rv_passport_stamp.png",
-   "accent": "danger"
+   "text": "Vietnam has *no retirement visa*.",
+   "accent": "danger",
+   "tint": "#2A0A08"
   },
   {
    "id": "visa_2",
    "start": 958,
-   "dur": 6.16,
+   "dur": 14.45,
    "key": "visa_2",
    "kind": "callout",
    "image": "img/rv_passport_stamp.png",
@@ -1065,8 +1109,8 @@
   },
   {
    "id": "visa_3",
-   "start": 964.16,
-   "dur": 9.86,
+   "start": 972.45,
+   "dur": 23.13,
    "key": "visa_3",
    "kind": "diagram",
    "eyebrow": "The 90-day cycle",
@@ -1079,18 +1123,18 @@
   },
   {
    "id": "visa_4",
-   "start": 974.02,
-   "dur": 19.19,
+   "start": 995.58,
+   "dur": 13.01,
    "key": "visa_4",
-   "kind": "keyphrase",
-   "text": "Or use a local *agent* — pay them, stay legal, learn the ropes.",
+   "kind": "half",
    "src": "img/rv_agent_desk.png",
-   "accent": "amber"
+   "side": "left",
+   "kicker": "Use a local agent — stay legal"
   },
   {
    "id": "visa_5",
-   "start": 993.21,
-   "dur": 24.2,
+   "start": 1008.59,
+   "dur": 16.77,
    "key": "visa_5",
    "kind": "mistake",
    "number": "★",
@@ -1101,8 +1145,8 @@
   },
   {
    "id": "visa_6",
-   "start": 1017.41,
-   "dur": 25.87,
+   "start": 1025.36,
+   "dur": 17.92,
    "key": "visa_6",
    "kind": "checklist",
    "title": "Keep a soft place to land",
@@ -1136,7 +1180,7 @@
   {
    "id": "firstweeks_0",
    "start": 1053.48,
-   "dur": 17.64,
+   "dur": 15.91,
    "key": "firstweeks_0",
    "kind": "rule",
    "number": "07",
@@ -1145,8 +1189,8 @@
   },
   {
    "id": "firstweeks_1",
-   "start": 1071.12,
-   "dur": 53.84,
+   "start": 1069.39,
+   "dur": 48.57,
    "key": "firstweeks_1",
    "kind": "journey",
    "dark": true,
@@ -1208,13 +1252,13 @@
   },
   {
    "id": "firstweeks_2",
-   "start": 1124.96,
-   "dur": 13.94,
+   "start": 1117.96,
+   "dur": 20.94,
    "key": "firstweeks_2",
-   "kind": "keyphrase",
-   "text": "At the end of two weeks, *your body will know*.",
+   "kind": "half",
    "src": "img/rv_feet_sand.png",
-   "accent": "good"
+   "side": "right",
+   "kicker": "At the end of two weeks, your body will know"
   },
   {
    "id": "firstweeks_3",
@@ -1222,14 +1266,14 @@
    "dur": 4.36,
    "key": "firstweeks_3",
    "kind": "keyphrase",
-   "text": "It costs one ticket and a month's rent to find out your life just got *bigger*.",
+   "text": "One ticket and a month's rent to find your life just got *bigger*.",
    "src": "img/rv_horizon.png",
    "accent": "amber"
   },
   {
    "id": "warnings_0",
    "start": 1143.26,
-   "dur": 10.55,
+   "dur": 11.01,
    "key": "warnings_0",
    "kind": "rule",
    "number": "08",
@@ -1239,13 +1283,13 @@
   },
   {
    "id": "warnings_1",
-   "start": 1153.81,
-   "dur": 12.77,
+   "start": 1154.27,
+   "dur": 12.31,
    "key": "warnings_1",
-   "kind": "keyphrase",
-   "text": "The *heat*. It's hot. It's humid.",
+   "kind": "half",
    "src": "img/rv_heat_sun.png",
-   "accent": "amber"
+   "side": "left",
+   "kicker": "The heat — it's real"
   },
   {
    "id": "warnings_2",
@@ -1262,7 +1306,7 @@
   {
    "id": "warnings_3",
    "start": 1184.98,
-   "dur": 20.79,
+   "dur": 25.68,
    "key": "warnings_3",
    "kind": "keyphrase",
    "text": "“A live coward beats a *brave statistic*.”",
@@ -1271,8 +1315,8 @@
   },
   {
    "id": "warnings_4",
-   "start": 1205.77,
-   "dur": 18.99,
+   "start": 1210.66,
+   "dur": 23.45,
    "key": "warnings_4",
    "kind": "chips",
    "title": "The language — learn a little",
@@ -1287,18 +1331,18 @@
   },
   {
    "id": "warnings_5",
-   "start": 1224.76,
-   "dur": 28.33,
+   "start": 1234.11,
+   "dur": 22.33,
    "key": "warnings_5",
-   "kind": "keyphrase",
-   "text": "The *taxes* — you're still an American. Get a real accountant.",
+   "kind": "half",
    "src": "img/rv_tax_papers.png",
-   "accent": "cold"
+   "side": "left",
+   "kicker": "Taxes — you're still an American"
   },
   {
    "id": "warnings_6",
-   "start": 1253.09,
-   "dur": 35.73,
+   "start": 1256.44,
+   "dur": 32.38,
    "key": "warnings_6",
    "kind": "mistake",
    "number": "$",
@@ -1310,28 +1354,36 @@
   {
    "id": "distance_0",
    "start": 1288.82,
-   "dur": 9.26,
+   "dur": 5.36,
    "key": "distance_0",
-   "kind": "keyphrase",
-   "text": "The *distance*. My grandkids are on the other side of the world.",
+   "kind": "half",
    "src": "img/rv_videocall.png",
-   "accent": "cold"
+   "side": "left",
+   "kicker": "My grandkids — the other side of the world"
   },
   {
    "id": "distance_1",
-   "start": 1298.08,
-   "dur": 14.92,
+   "start": 1294.18,
+   "dur": 3.9,
    "key": "distance_1",
-   "kind": "keyphrase",
-   "text": "A video call is a gift. But it's not the same as *holding them*.",
-   "src": "img/rv_photos_wall.png",
-   "accent": "cold"
+   "kind": "raw",
+   "src": "img/rv_photos_wall.png"
   },
   {
    "id": "distance_2",
+   "start": 1298.08,
+   "dur": 14.92,
+   "key": "distance_2",
+   "kind": "keyphrase",
+   "text": "A video call is a gift. But it's not the same as *holding them*.",
+   "src": "img/rv_n_hug_photo.png",
+   "accent": "cold"
+  },
+  {
+   "id": "distance_3",
    "start": 1313,
    "dur": 20.1,
-   "key": "distance_2",
+   "key": "distance_3",
    "kind": "checklist",
    "title": "How folks handle the miles",
    "eyebrow": "No perfect answer",
@@ -1352,29 +1404,29 @@
    ]
   },
   {
-   "id": "distance_3",
+   "id": "distance_4",
    "start": 1333.1,
    "dur": 3.08,
-   "key": "distance_3",
+   "key": "distance_4",
    "kind": "keyphrase",
-   "text": "This life is cheaper. It is *not free*. You pay some of it in *miles*.",
+   "text": "This life is cheaper. It is *not free*. You pay some in *miles*.",
    "src": "img/rv_plane_sky.png",
    "accent": "cold"
   },
   {
    "id": "community_0",
    "start": 1336.18,
-   "dur": 16.47,
+   "dur": 15.73,
    "key": "community_0",
-   "kind": "keyphrase",
-   "text": "The thing that *saved* me wasn't the rent. It was the *community*.",
+   "kind": "half",
    "src": "img/rv_him_friends.png",
-   "accent": "good"
+   "side": "left",
+   "kicker": "What saved me wasn't the rent — it was the people"
   },
   {
    "id": "community_1",
-   "start": 1352.65,
-   "dur": 31.64,
+   "start": 1351.91,
+   "dur": 22.25,
    "key": "community_1",
    "kind": "raw",
    "src": "img/rv_coffee_morning.png",
@@ -1382,9 +1434,17 @@
   },
   {
    "id": "community_2",
-   "start": 1384.29,
-   "dur": 15.03,
+   "start": 1374.16,
+   "dur": 8.18,
    "key": "community_2",
+   "kind": "raw",
+   "src": "img/rv_n_walking_group.png"
+  },
+  {
+   "id": "community_3",
+   "start": 1382.34,
+   "dur": 13.21,
+   "key": "community_3",
    "kind": "chips",
    "title": "A whole life here",
    "image": "img/rv_coffee_morning.png",
@@ -1397,39 +1457,37 @@
    "hue": "amber"
   },
   {
-   "id": "community_3",
-   "start": 1399.32,
-   "dur": 15.53,
-   "key": "community_3",
-   "kind": "keyphrase",
-   "text": "A neighbor leaves *fruit* on my doorstep. We talk in *smiles*.",
+   "id": "community_4",
+   "start": 1395.55,
+   "dur": 14.94,
+   "key": "community_4",
+   "kind": "half",
    "src": "img/rv_neighbor.png",
-   "accent": "good"
+   "side": "right",
+   "kicker": "She leaves fruit on my doorstep"
   },
   {
-   "id": "community_4",
-   "start": 1414.85,
-   "dur": 15.53,
-   "key": "community_4",
+   "id": "community_5",
+   "start": 1410.49,
+   "dur": 14.47,
+   "key": "community_5",
    "kind": "keyphrase",
    "text": "More people who'd *notice* if I didn't show up — than in 40 years back home.",
    "src": "img/rv_promenade_friends.png",
    "accent": "good"
   },
   {
-   "id": "community_5",
-   "start": 1430.38,
-   "dur": 4.4,
-   "key": "community_5",
-   "kind": "keyphrase",
-   "text": "That quiet back home is *not your only option*.",
-   "src": "img/rv_quiet_house.png",
-   "accent": "good"
+   "id": "community_6",
+   "start": 1424.96,
+   "dur": 9.82,
+   "key": "community_6",
+   "kind": "raw",
+   "src": "img/rv_quiet_house.png"
   },
   {
    "id": "close_0",
    "start": 1434.78,
-   "dur": 20.59,
+   "dur": 15.63,
    "key": "close_0",
    "kind": "raw",
    "src": "img/rv_morning_beach_ladies.png",
@@ -1437,40 +1495,48 @@
   },
   {
    "id": "close_1",
-   "start": 1455.37,
-   "dur": 8.93,
+   "start": 1450.41,
+   "dur": 8.04,
    "key": "close_1",
-   "kind": "keyphrase",
-   "text": "Feet in the sea, warm as a bath. Coffee. A book.",
+   "kind": "half",
    "src": "img/rv_him_morning.png",
-   "accent": "amber"
+   "side": "right",
+   "kicker": "Feet in the sea, warm as a bath"
   },
   {
    "id": "close_2",
+   "start": 1458.45,
+   "dur": 5.85,
+   "key": "close_2",
+   "kind": "raw",
+   "src": "img/rv_n_sunrise_sea.png"
+  },
+  {
+   "id": "close_3",
    "start": 1464.3,
    "dur": 15.75,
-   "key": "close_2",
+   "key": "close_3",
    "kind": "keyphrase",
-   "text": "Grilled fish tonight by the river — *six dollars* — and we'll close the place down talking.",
+   "text": "Grilled fish tonight — *six dollars* — and we'll close the place down talking.",
    "src": "img/rv_river_dinner.png",
    "accent": "amber"
   },
   {
-   "id": "close_3",
+   "id": "close_4",
    "start": 1480.05,
    "dur": 15.75,
-   "key": "close_3",
+   "key": "close_4",
    "kind": "keyphrase",
-   "text": "Buddy — it *wasn't over*. You were just doing the math in the *wrong country*.",
+   "text": "Buddy — it *wasn't over*. You were doing the math in the *wrong country*.",
    "src": "img/rv_him_close.png",
    "accent": "amber",
    "fontSize": 108
   },
   {
-   "id": "close_4",
+   "id": "close_5",
    "start": 1495.8,
    "dur": 23.28,
-   "key": "close_4",
+   "key": "close_5",
    "kind": "signature",
    "eyebrow": "That's the secret",
    "lines": [
@@ -1491,17 +1557,17 @@
   {
    "id": "cta_0",
    "start": 1519.08,
-   "dur": 9.68,
+   "dur": 7.96,
    "key": "cta_0",
-   "kind": "keyphrase",
-   "text": "I wrote *all of it* out — the budget, the visa steps, the checklist.",
+   "kind": "half",
    "src": "img/rv_him_guide.png",
-   "accent": "amber"
+   "side": "left",
+   "kicker": "I wrote all of it out — free"
   },
   {
    "id": "cta_1",
-   "start": 1528.76,
-   "dur": 13.06,
+   "start": 1527.04,
+   "dur": 9.87,
    "key": "cta_1",
    "kind": "checklist",
    "title": "The free breakdown — down in the description",
@@ -1524,8 +1590,8 @@
   },
   {
    "id": "cta_2",
-   "start": 1541.82,
-   "dur": 9.68,
+   "start": 1536.91,
+   "dur": 7.33,
    "key": "cta_2",
    "kind": "keyphrase",
    "text": "You are *not stuck*. You have more options than they ever told you.",
@@ -1534,18 +1600,18 @@
   },
   {
    "id": "cta_3",
-   "start": 1551.5,
-   "dur": 4.95,
+   "start": 1544.24,
+   "dur": 7.64,
    "key": "cta_3",
-   "kind": "keyphrase",
-   "text": "The check you worked 40 years for might be a *first-class ticket*.",
+   "kind": "diorama",
    "src": "img/rv_ticket_sunset.png",
+   "text": "A check that becomes a *first-class ticket*.",
    "accent": "amber"
   },
   {
    "id": "cta_4",
-   "start": 1556.45,
-   "dur": 9.51,
+   "start": 1551.88,
+   "dur": 14.08,
    "key": "cta_4",
    "kind": "raw",
    "src": "img/rv_him_wave.png",
