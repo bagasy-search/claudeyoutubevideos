@@ -58,42 +58,39 @@ GB_BEATS.filter((b: any) => /^(hook1|mirror|creams|okra_reveal|why_none|ruin|rec
   .forEach((b: any) => FULL_AT.push(b.start));
 
 function buildWindows(): AvatarWindow[] {
-  type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
-  const pts: Pt[] = [];
+  // ANTI-HUECO: el avatar es el FONDO garantizado (base = FULL). Se calculan intervalos
+  // de COBERTURA reales (comp / contenido) y TODO lo demás queda en full → nunca fondo negro.
+  // Prioridad por instante: comp(hidden) > talk(full) > contenido(hidden/halfR) > full.
+  type Iv = { s: number; e: number; mode: AvatarWindow["mode"] };
+  const compIv: Iv[] = [];
+  for (const b of compBeats) { if (OVERLAY.has(b.kind)) continue; compIv.push({ s: b.start, e: b.start + compDur(b), mode: "hidden" }); }
+  const contentRaw = [
+    ...GB_BROLL.map((b: any) => ({ s: b.start, e: b.start + Math.min(b.dur + 3, 7.5), src: b.src })),
+    ...rawTop.map((b: any) => ({ s: b.start, e: b.start + (b.hold ? Math.min(b.dur, 6.5) : Math.min(b.dur, HERO_CAP)), src: b.src })),
+  ].sort((a, b) => a.s - b.s);
+  const contentIv: Iv[] = [];
   let flip = false;
-  const content = [...GB_BROLL.map((b: any) => ({ start: b.start, src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, src: b.src }))].sort((a, b) => a.start - b.start);
-  for (const b of content) {
-    const forceHidden = /lamina|libro|guia|kitchen|desk|slice|gel|glass|dg_/.test(b.src || "");
+  for (const c of contentRaw) {
+    const forceHidden = /lamina|libro|guia|kitchen|desk|slice|gel|glass|dg_/.test(c.src || "");
     const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
     if (!forceHidden) flip = !flip;
-    pts.push({ start: b.start, mode, pr: 0 });
+    contentIv.push({ s: c.s, e: c.e, mode });
   }
-  // GAP FILL: cuando el próximo contenido tarda >7.5s, avatar FULL desde start+6.8s.
-  for (let i = 0; i < content.length; i++) {
-    const nextStart = i + 1 < content.length ? content[i + 1].start : VIDEO_END;
-    if (nextStart - content[i].start > 7.5) pts.push({ start: +(content[i].start + 6.8).toFixed(2), mode: "full", pr: 2 });
-  }
-  for (const b of compBeats) {
-    if (OVERLAY.has(b.kind)) continue; // overlays NO esconden al avatar
-    const d = compDur(b);
-    pts.push({ start: b.start, mode: "hidden", pr: 3 });
-    pts.push({ start: b.start + d, mode: "hidden", pr: 1 });
-  }
-  for (const s of FULL_AT) { pts.push({ start: s, mode: "full", pr: 4 }); pts.push({ start: +(s + 2.6).toFixed(2), mode: "hidden", pr: 2 }); }
-  pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
-
-  const w: AvatarWindow[] = [{ start: 0, mode: "full" }];
-  let last = "full";
+  const inIv = (ivs: Iv[], s: number) => ivs.find((x) => s >= x.s - 0.02 && s < x.e - 0.02);
   const talkAt = (s: number) => TALKS_GB.some((t) => s >= t.start - 0.05 && s < t.start + t.dur);
-  for (const p of pts) {
-    const mode: AvatarWindow["mode"] = p.pr < 3 && talkAt(p.start) ? "full" : p.mode;
-    if (mode !== last) { w.push({ start: p.start, mode }); last = mode; }
+
+  const w: AvatarWindow[] = [];
+  let last: AvatarWindow["mode"] | null = null;
+  for (let s = 0; s <= VIDEO_END + 0.001; s += 0.1) {
+    const comp = inIv(compIv, s);
+    let mode: AvatarWindow["mode"];
+    if (comp) mode = "hidden";
+    else if (talkAt(s)) mode = "full";
+    else { const cont = inIv(contentIv, s); mode = cont ? cont.mode : "full"; }
+    if (mode !== last) { w.push({ start: +s.toFixed(2), mode }); last = mode; }
   }
-  for (const t of TALKS_GB) { w.push({ start: t.start, mode: "full" }); w.push({ start: +(t.start + t.dur).toFixed(2), mode: "hidden" }); }
-  w.sort((a, b) => a.start - b.start);
-  const coll: AvatarWindow[] = [];
-  for (const x of w) { if (!coll.length || coll[coll.length - 1].mode !== x.mode) coll.push(x); }
-  return coll;
+  if (!w.length || w[0].start > 0) w.unshift({ start: 0, mode: "full" });
+  return w;
 }
 const AVATAR_WINDOWS = buildWindows();
 
