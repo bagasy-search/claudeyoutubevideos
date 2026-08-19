@@ -1,5 +1,6 @@
-import { AbsoluteFill, Sequence } from "remotion";
+import { AbsoluteFill, Sequence, staticFile } from "remotion";
 import { sec } from "./theme";
+import { FedOilCarousel } from "../../FedererKit";
 import { AvatarLayer, AvatarWindow } from "./scenes/AvatarLayer";
 import { RawShot } from "./scenes/RawShot";
 import { Endcard } from "./scenes/Endcard";
@@ -21,7 +22,7 @@ import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
 const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "guidecta"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "guidecta", "carousel"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
 const NOCAP = new Set(["avatarpizarra", "avatarkeyword"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
@@ -112,6 +113,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "guidecta" ? <FedGuideCTA durationInFrames={d} cover={b.cover} qr={b.qr} title={b.title} kicker={b.kicker} desc={b.desc} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "carousel" ? <FedOilCarousel cards={(b.cards || []).map((c: any) => ({ ...c, image: staticFile(c.image) }))} focus={typeof b.focus === "number" ? b.focus : -1} intro={b.intro === true} accent={TEAL} kicker={b.kicker} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainGreenlift: React.FC = () => {
