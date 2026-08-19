@@ -12,6 +12,10 @@ import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
 import { FedGuideCTA } from "./scenes/FedGuideCTA";
+import { RaisinReframe } from "./scenes/RaisinReframe";
+import { IngredientDuo } from "./scenes/IngredientDuo";
+import { FloodSealScene } from "./scenes/FloodSealScene";
+import { WhyNightScene } from "./scenes/WhyNightScene";
 import { NS_BEATS } from "./nightserum_beats";
 import { NS_BROLL } from "./nightserum_broll";
 import { TALKS_NS, AVATAR_FOCUS_NS } from "./nightserum_hooks";
@@ -22,7 +26,7 @@ const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 const AVATAR = "nightserum_opt.mp4";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "guidecta"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "guidecta", "raisinreframe", "ingredientduo", "floodseal", "whynight"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
 const NOCAP = new Set(["avatarpizarra", "avatarkeyword"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
@@ -31,6 +35,7 @@ const HERO_CAP = 3.6;
 const capOf = (b: any): number => {
   if (b.kind === "freezezoom") return /lamina/.test(b.image || "") ? Math.max(2, b.dur) : /dg_|cmp_|whynight|facemap|collagen/.test(b.image || "") ? 8 : 4.5;
   const k = b.kind;
+  if (k === "raisinreframe" || k === "floodseal" || k === "whynight" || k === "ingredientduo") return 9;
   return k === "guidecta" ? 12 : k === "diagram" ? 10 : k === "board" ? 16 : k === "quote" ? 8 : k === "rule" ? 5
     : k === "errorstinger" ? 2 : k === "guardaesto" ? 8 : k === "mitoverdad" ? 6
     : k === "lowerthird" ? 6 : k === "frasecinetica" ? 5 : k === "process" || k === "checklist" ? 9 : 6;
@@ -53,9 +58,6 @@ const FULL_AT: number[] = [];
 NS_BEATS.filter((b: any) => /^(hook1|inventory|whyfail|reveal|whynone|mistakes_intro|recipe_intro|lamina_intro|safety|start)$/.test(b.key) && (b.id.endsWith("_0")))
   .forEach((b: any) => FULL_AT.push(b.start));
 
-// ⛔ forceHidden: tokens SOLO de hero/lámina — NUNCA el slug (broll/nightserum/ lo tiene → rompería el split).
-const FORCE_HIDDEN = /lamina|cmp_|dg_|whynight|libro|_desk|_aloe|_oil|_apply|_kitchen/;
-
 function buildWindows(): AvatarWindow[] {
   type Iv = { s: number; e: number; mode: AvatarWindow["mode"] };
   const compIv: Iv[] = [];
@@ -64,13 +66,11 @@ function buildWindows(): AvatarWindow[] {
     ...NS_BROLL.map((b: any) => ({ s: b.start, e: b.start + Math.min(b.dur + 3, 7.5), src: b.src })),
     ...rawTop.map((b: any) => ({ s: b.start, e: b.start + (b.hold ? Math.min(b.dur, 6.5) : Math.min(b.dur, HERO_CAP)), src: b.src })),
   ].sort((a, b) => a.s - b.s);
+  // ⭐ STOCK FULL-SCREEN: el stock manda a pantalla completa (avatar hidden), NO en split chico
+  // (feedback del creador: "no veo videos de stock"). El avatar vuelve a full en los HUECOS entre clips.
   const contentIv: Iv[] = [];
-  let flip = false;
   for (const c of contentRaw) {
-    const forceHidden = FORCE_HIDDEN.test(c.src || "");
-    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
-    if (!forceHidden) flip = !flip;
-    contentIv.push({ s: c.s, e: c.e, mode });
+    contentIv.push({ s: c.s, e: c.e, mode: "hidden" });
   }
   const inIv = (ivs: Iv[], s: number) => ivs.find((x) => s >= x.s - 0.02 && s < x.e - 0.02);
   const talkAt = (s: number) => TALKS_NS.some((t) => s >= t.start - 0.05 && s < t.start + t.dur);
@@ -116,6 +116,10 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} prompt={b.prompt} />
   : b.kind === "guidecta" ? <FedGuideCTA durationInFrames={d} cover={b.cover} qr={b.qr} title={b.title} kicker={b.kicker} desc={b.desc} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "raisinreframe" ? <RaisinReframe durationInFrames={d} />
+  : b.kind === "ingredientduo" ? <IngredientDuo durationInFrames={d} leftImg={b.leftImg} rightImg={b.rightImg} />
+  : b.kind === "floodseal" ? <FloodSealScene durationInFrames={d} aloeImg={b.aloeImg} oilImg={b.oilImg} />
+  : b.kind === "whynight" ? <WhyNightScene durationInFrames={d} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainNightserum: React.FC = () => {
