@@ -480,8 +480,8 @@ const BounceParticles: React.FC<{ ph: Phases }> = ({ ph }) => {
   const winA = ph.sealA + (ph.sealB - ph.sealA) * 0.45;
   const winB = ph.guardB;
   const on = interpolate(frame, [winA, winA + 8, winB - 14, winB], [0, 1, 1, 0], CLAMP);
-  if (on <= 0.001) return null;
 
+  // ⚠️ hooks SIEMPRE antes de cualquier return condicional (React error #310)
   const parts = React.useMemo(() => {
     const r = mulberry32(6203);
     return new Array(9).fill(0).map(() => ({
@@ -492,6 +492,8 @@ const BounceParticles: React.FC<{ ph: Phases }> = ({ ph }) => {
       size: 5 + r() * 4,
     }));
   }, []);
+
+  if (on <= 0.001) return null;
 
   const lidY = ROOF_BOT + 6;
   const span = winB - winA;
@@ -528,9 +530,9 @@ const ShieldsAndEnzymes: React.FC<{ ph: Phases }> = ({ ph }) => {
   const { fps } = useVideoConfig();
   const guardLocal = interpolate(frame, [ph.guardA, ph.guardB], [0, 1], CLAMP);
   const winOut = interpolate(frame, [ph.guardB - 12, ph.guardB], [0, 1], CLAMP);
-  if (guardLocal <= 0 || winOut >= 1) return null;
 
   // eventos de flecha (enzimas) — 6 disparos escalonados sobre 4 escudos
+  // ⚠️ hooks SIEMPRE antes de cualquier return condicional (React error #310)
   const events = React.useMemo(() => {
     const r = mulberry32(4127);
     return new Array(6).fill(0).map((_, i) => {
@@ -539,6 +541,8 @@ const ShieldsAndEnzymes: React.FC<{ ph: Phases }> = ({ ph }) => {
       return { sIdx, t0: (i / 6) * 0.72, dur: 0.34, ang, spread: 0.35 + r() * 0.2 };
     });
   }, []);
+
+  if (guardLocal <= 0 || winOut >= 1) return null;
 
   const contactSpark = (t: number): number => interpolate(t, [0.4, 0.46, 0.56], [0, 1, 0], CLAMP);
 
