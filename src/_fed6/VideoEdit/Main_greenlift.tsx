@@ -70,16 +70,19 @@ function buildWindows(): AvatarWindow[] {
     contentIv.push({ s: c.s, e: c.e, mode });
   }
   const inIv = (ivs: Iv[], s: number) => ivs.find((x) => s >= x.s - 0.02 && s < x.e - 0.02);
-  const talkAt = (s: number) => TALKS_GB.some((t) => s >= t.start - 0.05 && s < t.start + t.dur);
 
   const w: AvatarWindow[] = [];
   let last: AvatarWindow["mode"] | null = null;
   for (let s = 0; s <= VIDEO_END + 0.001; s += 0.1) {
+    // PRIORIDAD: componente(hidden) > CONTENIDO b-roll/foto(hidden/halfR) > avatar full.
+    // El CONTENIDO gana sobre el "talk": si no, el avatar tapa el b-roll casi siempre
+    // (bug medido: los 11 clips de stock NO se veían) y el video queda talking-head.
     const comp = inIv(compIv, s);
+    const cont = inIv(contentIv, s);
     let mode: AvatarWindow["mode"];
     if (comp) mode = "hidden";
-    else if (talkAt(s)) mode = "full";
-    else { const cont = inIv(contentIv, s); mode = cont ? cont.mode : "full"; }
+    else if (cont) mode = cont.mode;
+    else mode = "full";
     if (mode !== last) { w.push({ start: +s.toFixed(2), mode }); last = mode; }
   }
   if (!w.length || w[0].start > 0) w.unshift({ start: 0, mode: "full" });
