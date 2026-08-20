@@ -158,6 +158,7 @@ import { MainFiltro, TOTAL_FRAMES_FILTRO } from "./VideoEdit/Main_filtro";
 import { MainKitPreview, TOTAL_FRAMES_KIT } from "./VideoEdit/KitPreview";
 import { MainFedtrailer, TOTAL_FRAMES_FEDTRAILER } from "./VideoEdit/Main_fedtrailer";
 import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
+import { MainImpermeacasero, TOTAL_FRAMES_IMPERMEACASERO } from "./VideoEdit/Main_impermeacasero";
 import { MainFcsmanchas, TOTAL_FRAMES_FCSMANCHAS } from "./_fed6/VideoEdit/Main_fcsmanchas";
 import { MainFcskiwi, TOTAL_FRAMES_FCSKIWI } from "./_fed6/VideoEdit/Main_fcskiwi";
 import { ValKitReel, VAL_REEL_F } from "./valeria/ValeriaKit";
@@ -689,6 +690,7 @@ export const RemotionRoot: React.FC = () => {
       {/* Dr. Bastida — "Come ESTOS 3 ALIMENTOS para tu piel +60" · kit valeria-vintage · AVATAR · b-roll 100% stock Pexels */}
       <Composition id="Alimentos60" component={MainAlimentos60} durationInFrames={TOTAL_FRAMES_ALIMENTOS60} fps={30} width={1920} height={1080} />
       <Composition id="ValeriaVaselina" component={MainValeriaVaselina} durationInFrames={TOTAL_FRAMES_VALERIAVASELINA} fps={30} width={1920} height={1080} />
+      <Composition id="Impermeacasero" component={MainImpermeacasero} durationInFrames={TOTAL_FRAMES_IMPERMEACASERO} fps={30} width={1920} height={1080} />
     </>
   );
 };
