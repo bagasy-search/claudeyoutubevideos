@@ -47,6 +47,9 @@ const compDur = (b: any): number => {
   const next = compBeats.filter((x: any) => x.start > b.start && !OVERLAY.has(x.kind)).sort((a: any, c: any) => a.start - c.start)[0];
   const room = next ? next.start - b.start - 0.1 : b.dur;
   if (b.kind === "freezezoom") {
+    // CONVERSIÓN: la lámina y el reveal (portada+QR) NO ceden al avatar — tilean continuo hasta el próximo
+    // componente (tope 60s), así la lámina se sostiene mientras se explica y el QR queda leíble/escaneable.
+    if (/lamina_board|reveal/.test(b.image || "")) return Math.max(2, Math.min(room, 60));
     const contig = next && next.kind === "freezezoom" && (next.start - b.start) < 15;
     return contig ? Math.max(2, Math.min((b.dur || 4.5) + 6, room, 13)) : Math.max(2, Math.min(4.5, room));
   }
