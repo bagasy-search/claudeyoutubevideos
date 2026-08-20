@@ -167,7 +167,7 @@ export const MainHandsAge: React.FC = () => {
       })}
 
       {/* CAPA 3 — AVATAR (full / hidden / split halfR, cero recuadro) */}
-      <AvatarLayer src="handsage_opt.mp4" windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.5, y: 0.32, splitZoom: 1.02 }} />
+      <AvatarLayer src="handsage_opt.mp4" windows={AVATAR_WINDOWS} accent={TEAL} avatarFocus={{ x: 0.5, y: 0.34, splitZoom: 1.16 }} />
 
       {/* CAPA 4 — COMPONENTES / diagramas, TOPEADOS */}
       {compBeats.map((b: any) => {
