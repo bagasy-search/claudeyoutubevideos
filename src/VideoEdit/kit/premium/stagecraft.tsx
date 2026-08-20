@@ -659,7 +659,9 @@ export const Backdrop: React.FC<{
   blur?: number;
   /** 0..1 cuánto se hunde el plate */
   grade?: number;
-}> = ({ theme, durationInFrames, zone = "center", blur = 30, grade = 1 }) => {
+}> = ({ theme, durationInFrames, zone = "center", blur = 33, grade = 1 }) => {
+  // AE-tune (impermeacasero, ago-2026): +profundidad/parallax/push conservador y reversible.
+  //   originales → blur 30 · push [1.015,1.055] · drift *6 · Bokeh opacity 0.55
   const t = useTheme(theme);
   const frame = useCurrentFrame();
   // ★ El tratamiento es UNIFORME, no direccional. La versión direccional tenía
@@ -675,18 +677,18 @@ export const Backdrop: React.FC<{
     [0, 1, 1, 0],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" },
   );
-  const push = interpolate(frame, [0, durationInFrames], [1.015, 1.055], {
+  const push = interpolate(frame, [0, durationInFrames], [1.02, 1.07], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const drift = Math.sin(frame / 130) * 6;
+  const drift = Math.sin(frame / 130) * 8.5;
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
       <div style={{ position: "absolute", inset: -40, transform: `scale(${push}) translateX(${drift}px)` }}>
         <DepthBlur radius={blur * ramp} side="full" saturate={1 - 0.24 * ramp} />
         <Grade theme={t} strength={grade * ramp} side="full" />
         {/* bokeh MUY al fondo: la capa que convence al ojo de que hay distancia */}
-        <Bokeh theme={t} count={9} opacity={0.55 * ramp} />
+        <Bokeh theme={t} count={11} opacity={0.6 * ramp} />
         <Shafts theme={t} x={shaftX} opacity={ramp} />
       </div>
       <Grain theme={t} />
