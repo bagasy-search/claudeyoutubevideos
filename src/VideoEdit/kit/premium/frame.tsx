@@ -1,5 +1,5 @@
 import React from "react";
-import { interpolate } from "remotion";
+import { AbsoluteFill, interpolate } from "remotion";
 import { SfxCue, SFX } from "../../components/Sfx";
 import { SPR, Theme, useTheme } from "./theme";
 import {
@@ -261,6 +261,50 @@ export const CtaCard: React.FC<{
         )}
       </Panel>
     </Stage>
+  );
+};
+
+// ── QrAside — tarjeta de vidrio con el QR al LADO del avatar hablando ─────────
+// (el PremiumOverlay desenfoca suave el avatar detrás; la tarjeta redondeada flota a la derecha)
+export const QrAside: React.FC<{
+  durationInFrames: number;
+  theme?: Theme;
+  qr?: string;
+  title?: string;
+  caption?: string;
+}> = ({ durationInFrames, theme, qr, title = "La Guía del Constructor Libre", caption = "Apuntá la cámara del celular al código" }) => {
+  const t = useTheme(theme);
+  const { frame, fps, op } = useBeat(durationInFrames);
+  const enter = kick(frame, fps, 4, SPR.settle);
+  return (
+    <AbsoluteFill>
+      <div
+        style={{
+          position: "absolute",
+          right: 92,
+          top: "50%",
+          transform: `translate(${(1 - enter) * 90}px, -50%)`,
+          opacity: op * enter,
+          width: 452,
+          padding: 34,
+          background: t.color.surfaceStrong,
+          border: `${t.strokeW}px solid ${t.color.ink}`,
+          borderRadius: 36,
+          boxShadow: `-34px 46px 100px ${t.color.shadow}, 0 0 64px ${t.color.glow}`,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 20,
+        }}
+      >
+        <div style={{ fontFamily: t.fontLabel, fontWeight: 800, fontSize: 27, color: t.color.ink, textAlign: "center", letterSpacing: 0.5, lineHeight: 1.15 }}>{title}</div>
+        <div style={{ width: 344, height: 344, borderRadius: 22, overflow: "hidden", background: "#ffffff", border: "8px solid #ffffff", boxShadow: `0 10px 26px ${t.color.shadow}` }}>
+          <ImgOr src={qr} seed={7} theme={t} style={{ objectFit: "contain" }} />
+        </div>
+        <div style={{ fontFamily: t.fontLabel, fontWeight: 600, fontSize: 23, color: t.color.ink, textAlign: "center", opacity: 0.86, lineHeight: 1.22 }}>{caption}</div>
+      </div>
+      <SfxCue at={4} src={SFX.whoosh} volume={0.26} />
+    </AbsoluteFill>
   );
 };
 

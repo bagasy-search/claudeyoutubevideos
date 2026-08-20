@@ -118,7 +118,7 @@ export { TimelinePlayhead, MapPinPoint, RouteTrace, DateStampCorner } from "./pl
 export type { TimeEvent } from "./place";
 
 // Marco / identidad
-export { CornerEyebrow, ChapterTitle, LowerThirdId, CtaCard, StampBadge, MythTruth } from "./frame";
+export { CornerEyebrow, ChapterTitle, LowerThirdId, CtaCard, StampBadge, MythTruth, QrAside } from "./frame";
 
 // Media
 export { FramedPhoto, FloatingCutout, PhotoCarousel, SplitPanel } from "./media";
