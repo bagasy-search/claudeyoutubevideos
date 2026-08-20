@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_darkspots.mjs — rangos talk.
+export const TALKSR: { start: number; dur: number }[] = [{"start":66.66,"dur":1.52},{"start":110.34,"dur":8.08},{"start":166.68,"dur":12.42},{"start":287.76,"dur":35.04},{"start":333.02,"dur":9.26},{"start":397.78,"dur":26.81},{"start":467.48,"dur":0.62},{"start":543.18,"dur":12.97},{"start":592.7,"dur":3.25},{"start":662.52,"dur":11.12},{"start":949.38,"dur":2.17},{"start":998.02,"dur":5.46}];
