@@ -23,6 +23,7 @@ import { MainFederer19, TOTAL_FRAMES_FED19 } from "./_fed6/VideoEdit/Main_federe
 import { MainFederer18, TOTAL_FRAMES_FED18 } from "./_fed6/VideoEdit/Main_federer18";
 import { MainGreenbotox, TOTAL_FRAMES_GB } from "./_fed6/VideoEdit/Main_greenbotox";
 import { MainGreenlift, TOTAL_FRAMES_GB as TOTAL_FRAMES_GL } from "./_fed6/VideoEdit/Main_greenlift";
+import { MainGreenglove, TOTAL_FRAMES_GG } from "./_fed6/VideoEdit/Main_greenglove";
 import { MainNightserum, TOTAL_FRAMES_NS } from "./_fed6/VideoEdit/Main_nightserum";
 import { MainHandsAge, TOTAL_FRAMES_HANDS } from "./_fed6/VideoEdit/Main_handsage";
 import { MainFederer17, TOTAL_FRAMES_FED17 } from "./_fed6/VideoEdit/Main_federer17";
@@ -197,6 +198,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Federer18" component={MainFederer18} durationInFrames={TOTAL_FRAMES_FED18} fps={30} width={1920} height={1080} />
       <Composition id="GreenBotox" component={MainGreenbotox} durationInFrames={TOTAL_FRAMES_GB} fps={30} width={1920} height={1080} />
       <Composition id="GreenLift" component={MainGreenlift} durationInFrames={TOTAL_FRAMES_GL} fps={30} width={1920} height={1080} />
+      <Composition id="GreenGlove" component={MainGreenglove} durationInFrames={TOTAL_FRAMES_GG} fps={30} width={1920} height={1080} />
       <Composition id="NightSerum" component={MainNightserum} durationInFrames={TOTAL_FRAMES_NS} fps={30} width={1920} height={1080} />
       <Composition id="HandsAge" component={MainHandsAge} durationInFrames={TOTAL_FRAMES_HANDS} fps={30} width={1920} height={1080} />
       <Composition id="Federer17" component={MainFederer17} durationInFrames={TOTAL_FRAMES_FED17} fps={30} width={1920} height={1080} />
