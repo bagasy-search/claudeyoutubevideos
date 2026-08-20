@@ -447,42 +447,22 @@ export const ImgOr: React.FC<{
       />
     );
   }
-  const sunX = 90 + rand(seed, 1) * 220;
-  const sunY = 60 + rand(seed, 2) * 70;
-  const dark = t.mode === "dark";
-  // en dark las capas deben ser MÁS claras que el fondo para leerse (no bg0/bg1)
-  const sky0 = t.color.accentSoft;
-  const sky1 = dark ? t.color.bg2 : t.color.bg1;
-  const ridge = dark ? t.color.accent2 : t.color.accent;
+  // ★ SIN src: superficie neutra themeada. NUNCA el paisaje sembrado — en un video real ese
+  // placeholder (cielo + sol + montaña) se leía como un asset ROTO/genérico y el usuario lo
+  // marcó como error recurrente. De raíz: un slot de imagen sin foto ahora se ve INTENCIONAL,
+  // no roto. Los componentes con foto (CtaCard=portada, VsDuel=fotos reales, FramedPhoto…)
+  // deben pasar `src`; si no, cae limpio a esta superficie.
+  void seed;
   return (
-    <svg
-      viewBox="0 0 400 300"
-      preserveAspectRatio="xMidYMid slice"
-      width="100%"
-      height="100%"
-      style={{ display: "block", ...style }}
-    >
-      <defs>
-        <linearGradient id={`phsky${seed}${t.name}`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor={sky0} />
-          <stop offset="100%" stopColor={sky1} />
-        </linearGradient>
-      </defs>
-      <rect width={400} height={300} fill={`url(#phsky${seed}${t.name})`} />
-      <circle cx={sunX} cy={sunY} r={26 + rand(seed, 3) * 14} fill={t.color.gold} opacity={0.9} />
-      <circle cx={sunX} cy={sunY} r={44 + rand(seed, 3) * 14} fill={t.color.gold} opacity={0.18} />
-      <path
-        d={`M 0 ${190 + rand(seed, 4) * 30} Q 100 ${140 + rand(seed, 5) * 40} 200 ${185 + rand(seed, 6) * 20} T 400 ${175 + rand(seed, 7) * 30} L 400 300 L 0 300 Z`}
-        fill={ridge}
-        opacity={0.55}
-      />
-      <path
-        d={`M 0 ${225 + rand(seed, 8) * 20} Q 130 ${195 + rand(seed, 9) * 30} 260 ${228 + rand(seed, 10) * 14} T 400 ${222} L 400 300 L 0 300 Z`}
-        fill={dark ? "#000" : t.color.text}
-        opacity={dark ? 0.55 : 0.72}
-      />
-      <rect width={400} height={300} fill={t.color.gold} opacity={0.06} />
-    </svg>
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        background: t.color.surfaceStrong,
+        backgroundImage: `radial-gradient(120% 90% at 30% 22%, ${t.color.accentSoft}40, rgba(0,0,0,0) 62%)`,
+        ...style,
+      }}
+    />
   );
 };
 
