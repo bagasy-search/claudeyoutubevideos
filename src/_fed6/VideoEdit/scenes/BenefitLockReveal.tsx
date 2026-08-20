@@ -40,7 +40,8 @@ const clampInt = (f: number, a: number, b: number, from: number, to: number, eas
 export const BenefitLockReveal: React.FC<{
   durationInFrames: number;
   index?: number; // 0,1,2 → cuál se revela ahora
-}> = ({ durationInFrames: D, index = 0 }) => {
+  cards?: { img: string; label: string; num: string }[]; // override (default = arrugas/varices/dolores)
+}> = ({ durationInFrames: D, index = 0, cards = CARDS }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -89,7 +90,7 @@ export const BenefitLockReveal: React.FC<{
           </svg>
 
           {/* tarjetas */}
-          {CARDS.map((card, i) => {
+          {cards.map((card, i) => {
             const revealed = i < index; // ya reveladas antes
             const isActive = i === index;
             const locked = i > index;
@@ -133,7 +134,7 @@ export const BenefitLockReveal: React.FC<{
           })}
 
           {/* TEXTO que se escribe debajo de la tarjeta activa */}
-          <LabelWrite text={CARDS[index].label} x={target.x} y={target.y + CH / 2 + 70} frame={frame} start={fF} D={D} />
+          <LabelWrite text={cards[index].label} x={target.x} y={target.y + CH / 2 + 70} frame={frame} start={fF} D={D} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

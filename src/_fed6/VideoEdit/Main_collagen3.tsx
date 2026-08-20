@@ -12,6 +12,9 @@ import { ErrorStinger } from "./scenes/ErrorStinger";
 import { GuardaEsto } from "./scenes/GuardaEsto";
 import { FreezeZoom } from "./scenes/FreezeZoom";
 import { FedGuideCTA } from "./scenes/FedGuideCTA";
+import { PriceWar } from "./scenes/PriceWar";
+import { IngredientDuo } from "./scenes/IngredientDuo";
+import { BenefitLockReveal } from "./scenes/BenefitLockReveal";
 import { GB_BEATS } from "./collagen3_beats";
 import { GB_BROLL } from "./collagen3_broll";
 import { TALKS_GB } from "./collagen3_hooks";
@@ -22,18 +25,15 @@ const TEAL = "#12B3AE";
 const BG = "#0E1D23";
 const AVATAR = "collagen3_opt.mp4";
 
-const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "guidecta"]);
+const NEWFULL = new Set(["avatarpizarra", "avatarkeyword", "mitoverdad", "errorstinger", "guardaesto", "freezezoom", "guidecta", "pricewar", "lockreveal", "ingredientduo"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
 const NOCAP = new Set(["avatarpizarra", "avatarkeyword"]);
 const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.has(k);
 
-// imágenes que van a PANTALLA COMPLETA (avatar hidden). NO incluye "collagen" (colisiona con el slug
-// de los clips broll/collagen3_bNN.mp4 → los mandaría a todos a full-hidden y mataría el split).
-const IMG_FULL = /lamina|cmp_|dg_|kitchen|plants|horsetail|rosehip|_tea|libro|guia/;
-
-const HERO_CAP = 3.6;
+const HERO_CAP = 4.2;
 const capOf = (b: any): number => {
   if (b.kind === "freezezoom") return /lamina/.test(b.image || "") ? Math.max(2, b.dur) : /dg_|cmp_|facemap|collagen/.test(b.image || "") ? 8 : 4.5;
+  if (b.kind === "pricewar" || b.kind === "lockreveal" || b.kind === "ingredientduo") return 9;
   const k = b.kind;
   return k === "guidecta" ? 12 : k === "diagram" ? 10 : k === "board" ? 16 : k === "quote" ? 8 : k === "rule" ? 5
     : k === "errorstinger" ? 2 : k === "guardaesto" ? 8 : k === "mitoverdad" ? 6
@@ -65,14 +65,10 @@ function buildWindows(): AvatarWindow[] {
     ...GB_BROLL.map((b: any) => ({ s: b.start, e: b.start + Math.min(b.dur + 3, 7.5), src: b.src })),
     ...rawTop.map((b: any) => ({ s: b.start, e: b.start + (b.hold ? Math.min(b.dur, 6.5) : Math.min(b.dur, HERO_CAP)), src: b.src })),
   ].sort((a, b) => a.s - b.s);
+  // ⭐ STOCK/FOTOS FULL-SCREEN (avatar hidden), NUNCA split chico (feedback del creador: "no veo el stock").
+  // El avatar vuelve a FULL en los huecos entre clips/fotos → cero fondo muerto.
   const contentIv: Iv[] = [];
-  let flip = false;
-  for (const c of contentRaw) {
-    const forceHidden = IMG_FULL.test(c.src || "");
-    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
-    if (!forceHidden) flip = !flip;
-    contentIv.push({ s: c.s, e: c.e, mode });
-  }
+  for (const c of contentRaw) { contentIv.push({ s: c.s, e: c.e, mode: "hidden" }); }
   const inIv = (ivs: Iv[], s: number) => ivs.find((x) => s >= x.s - 0.02 && s < x.e - 0.02);
   const talkAt = (s: number) => TALKS_GB.some((t) => s >= t.start - 0.05 && s < t.start + t.dur);
 
@@ -117,6 +113,9 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} />
   : b.kind === "guidecta" ? <FedGuideCTA durationInFrames={d} cover={b.cover} qr={b.qr} title={b.title} kicker={b.kicker} desc={b.desc} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "pricewar" ? <PriceWar durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftPrice={b.leftPrice} rightPrice={b.rightPrice} leftLabel={b.leftLabel} rightLabel={b.rightLabel} strike={b.strike} verdict={b.verdict} />
+  : b.kind === "ingredientduo" ? <IngredientDuo durationInFrames={d} leftImg={b.leftImg} rightImg={b.rightImg} />
+  : b.kind === "lockreveal" ? <BenefitLockReveal durationInFrames={d} index={b.index} cards={b.cards} />
   : renderFederer2Comp(b, d, { medico: true });
 
 export const MainCollagen3: React.FC = () => {
