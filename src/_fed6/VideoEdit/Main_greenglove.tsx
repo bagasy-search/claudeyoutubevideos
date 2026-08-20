@@ -58,7 +58,10 @@ function buildWindows(): AvatarWindow[] {
   const compIv: Iv[] = [];
   for (const b of compBeats) { if (OVERLAY.has(b.kind)) continue; compIv.push({ s: b.start, e: b.start + compDur(b), mode: "hidden" }); }
   const contentRaw = [
-    ...GB_BROLL.map((b: any) => ({ s: b.start, e: b.start + Math.min(b.dur + 3, 7.5), src: b.src })),
+    // e ALINEADO al display real del clip (dd = sec(b.dur)). Antes usaba b.dur+3 SEGUNDOS
+    // (=7.5s) mientras el clip se mostraba solo sec(b.dur)+3 FRAMES → 1.4s de FONDO NEGRO
+    // por clip full-screen. Ahora el avatar vuelve a full exactamente cuando el clip termina.
+    ...GB_BROLL.map((b: any) => ({ s: b.start, e: b.start + Math.min(b.dur, 7.5), src: b.src })),
     ...rawTop.map((b: any) => ({ s: b.start, e: b.start + (b.hold ? Math.min(b.dur, 6.5) : Math.min(b.dur, HERO_CAP)), src: b.src })),
   ].sort((a, b) => a.s - b.s);
   const contentIv: Iv[] = [];
@@ -123,7 +126,7 @@ export const MainGreenglove: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* CAPA 1 — B-ROLL DENSO continuo */}
       {GB_BROLL.map((b) => {
-        const dd = Math.max(1, Math.min(sec(b.dur) + 3, sec(7.5)));
+        const dd = Math.max(1, Math.min(sec(b.dur), sec(7.5)));
         const half = inHalfR(b.start);
         const shot = <RawShot durationInFrames={dd} src={b.src} hue="cold" />;
         return (

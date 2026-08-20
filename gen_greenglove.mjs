@@ -103,10 +103,10 @@ const SECTIONS = [
 
   // ═══ PARA QUIÉN ES ═══
   { key: "whofor", phrase: "who this is really for", beats: [
-    c("chips", { w: 1.5, title: "Who this is for", items: [
-      "Light, newer spots → fast results",
-      "Dark, older spots → weeks of patience",
-      "Barely any yet → the best time to start" ], at: "who this is really for" }) ] },
+    c("checklist", { w: 2.4, title: "Who this is for", eyebrow: "WHO THIS IS FOR", tone: "teal", items: [
+      { text: "Light, newer spots → fast, happy results.", state: "done" },
+      { text: "Dark, older spots → it still works, it just asks for weeks of patience.", state: "done" },
+      { text: "Barely any yet → the best possible time to start.", state: "done" } ], at: "who this is really for" }) ] },
 
   // ═══ LÁMINA (PICO DE CONVERSIÓN) ═══
   { key: "lamina_intro", phrase: "close attention", beats: [ c("talk", {}) ] },
