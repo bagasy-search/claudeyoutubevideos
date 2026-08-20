@@ -65,13 +65,10 @@ function buildWindows(): AvatarWindow[] {
     ...rawTop.map((b: any) => ({ s: b.start, e: b.start + (b.hold ? Math.min(b.dur, 6.5) : Math.min(b.dur, HERO_CAP)), src: b.src })),
   ].sort((a, b) => a.s - b.s);
   const contentIv: Iv[] = [];
-  let flip = false;
+  // AVATAR HeyGen (manos gesticulan ancho) → TODO el contenido FULL-screen (hidden), CERO split halfR:
+  // el avatar recortado a media pantalla cortaba las manos. Regla "full O visual-full, nada PiP".
   for (const c of contentRaw) {
-    // Presenter photos + láminas → FULL-screen (hidden). Stock clips (greenglove_bNN) → split halfR/hidden.
-    const forceHidden = /lamina|handmap|rosemary|wrap|crush|mix|apply|kitchen|desk|libro|guia/.test(c.src || "");
-    const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
-    if (!forceHidden) flip = !flip;
-    contentIv.push({ s: c.s, e: c.e, mode });
+    contentIv.push({ s: c.s, e: c.e, mode: "hidden" });
   }
   const inIv = (ivs: Iv[], s: number) => ivs.find((x) => s >= x.s - 0.02 && s < x.e - 0.02);
 
