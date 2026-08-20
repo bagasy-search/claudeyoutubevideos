@@ -114,7 +114,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guidecta" ? <FedGuideCTA durationInFrames={d} cover={b.cover} qr={b.qr} title={b.title} kicker={b.kicker} desc={b.desc} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
   : b.kind === "pricewar" ? <PriceWar durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftPrice={b.leftPrice} rightPrice={b.rightPrice} leftLabel={b.leftLabel} rightLabel={b.rightLabel} strike={b.strike} verdict={b.verdict} />
-  : b.kind === "ingredientduo" ? <IngredientDuo durationInFrames={d} leftImg={b.leftImg} rightImg={b.rightImg} />
+  : b.kind === "ingredientduo" ? <IngredientDuo durationInFrames={d} leftImg={b.leftImg} rightImg={b.rightImg} leftTitle={b.leftTitle} leftSub={b.leftSub} rightTitle={b.rightTitle} rightSub={b.rightSub} />
   : b.kind === "lockreveal" ? <BenefitLockReveal durationInFrames={d} index={b.index} cards={b.cards} />
   : renderFederer2Comp(b, d, { medico: true });
 

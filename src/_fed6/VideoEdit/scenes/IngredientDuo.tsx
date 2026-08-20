@@ -567,7 +567,13 @@ export const IngredientDuo: React.FC<{
   durationInFrames: number;
   leftImg: string;
   rightImg: string;
-}> = ({ durationInFrames, leftImg, rightImg }) => {
+  leftTitle?: string;
+  leftSub?: string;
+  rightTitle?: string;
+  rightSub?: string;
+}> = ({ durationInFrames, leftImg, rightImg,
+  leftTitle = "ALOE", leftSub = "The flood — water + collagen signal",
+  rightTitle = "ROSEMARY", rightSub = "The seal — locks it in + guards collagen" }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
 
@@ -673,9 +679,9 @@ export const IngredientDuo: React.FC<{
           accent={TEAL}
           extraBlur={leftExtraBlur}
           dim={leftDim}
-          title="ALOE"
+          title={leftTitle}
           titleColor={TEAL_HI}
-          subtitle="The flood — water + collagen signal"
+          subtitle={leftSub}
           parX={parX}
           parY={parY}
           factor={0.6}
@@ -703,9 +709,9 @@ export const IngredientDuo: React.FC<{
           accent={GOLD}
           extraBlur={rightExtraBlur}
           dim={rightDim}
-          title="ROSEMARY"
+          title={rightTitle}
           titleColor={GOLD}
-          subtitle="The seal — locks it in + guards collagen"
+          subtitle={rightSub}
           parX={parX}
           parY={parY}
           factor={0.78}
