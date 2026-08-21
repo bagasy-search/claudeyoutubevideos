@@ -16,6 +16,7 @@ import { FedGuideCTA } from "./scenes/FedGuideCTA";
 import { PriceWar } from "./scenes/PriceWar";
 import { BenefitLockReveal } from "./scenes/BenefitLockReveal";
 import { HighlightData, CitationCard } from "./scenes/RecalRich";
+import { DocNameCard } from "./scenes/DocNameCard";
 import { CP_BEATS } from "./cuellopavo_beats";
 import { CP_BROLL } from "./cuellopavo_broll";
 import { renderFederer2Comp, COMP2_KINDS } from "./FedererComponents2";
@@ -102,6 +103,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "benefitlock" ? <BenefitLockReveal durationInFrames={d} index={b.index} cards={b.cards} />
   : b.kind === "highlightdata" ? <HighlightData durationInFrames={d} pre={b.pre} highlight={b.highlight} post={b.post} source={b.source} />
   : b.kind === "citationcard" ? <CitationCard durationInFrames={d} journal={b.journal} finding={b.finding} stat={b.stat} statPrefix={b.statPrefix} statSuffix={b.statSuffix} statLabel={b.statLabel} />
+  : b.kind === "nametag" ? <DocNameCard durationInFrames={d} name={b.name} role={b.role} image={b.image} />
   : b.kind === "carousel" ? <FedOilCarousel cards={(b.cards || []).map((c: any) => ({ ...c, image: staticFile(c.image) }))} focus={typeof b.focus === "number" ? b.focus : -1} intro={b.intro === true} accent={TEAL} kicker={b.kicker} />
   : renderFederer2Comp(b, d, { medico: true });
 
