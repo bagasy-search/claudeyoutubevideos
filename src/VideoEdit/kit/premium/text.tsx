@@ -46,6 +46,7 @@ export const HookCaption: React.FC<{
   sfx = true,
 }) => {
   const t = useTheme(theme);
+  const ink = useInk(t);
   const { frame, fps, op } = useBeat(durationInFrames);
   const subS = kick(frame, fps, spread(durationInFrames, words.length, words.length, { holdFrac: 0.45, maxStep: 16 }) + 6, SPR.settle);
   return (
@@ -68,12 +69,12 @@ export const HookCaption: React.FC<{
                     fontWeight: t.displayWeight >= 800 ? 900 : t.displayWeight,
                     fontSize: w.boxed ? 108 : 92,
                     lineHeight: 1.12,
-                    color: w.boxed ? t.color.onAccent : t.color.text,
+                    color: w.boxed ? t.color.onAccent : ink.text,
                     background: w.boxed ? `linear-gradient(160deg, ${t.color.accent}, ${t.color.accent}DD)` : "none",
                     padding: w.boxed ? "2px 30px 8px" : 0,
                     borderRadius: w.boxed ? t.radius * 0.6 : 0,
                     boxShadow: w.boxed ? `0 20px 44px ${t.color.shadow}` : "none",
-                    textShadow: w.boxed ? "0 3px 10px rgba(0,0,0,0.3)" : `0 6px 24px ${t.color.shadow}`,
+                    textShadow: w.boxed ? "0 3px 10px rgba(0,0,0,0.3)" : ink.shadowStrong,
                     transformOrigin: "bottom center",
                   }}
                 >

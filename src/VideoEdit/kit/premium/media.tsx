@@ -1,5 +1,6 @@
 import React from "react";
-import { interpolate } from "remotion";
+import { Audio, Sequence, interpolate, staticFile } from "remotion";
+import { Typed } from "./typewriter";
 import { SPR, Theme, useTheme } from "./theme";
 import {
   Card,
@@ -30,13 +31,23 @@ export const FramedPhoto: React.FC<{
   caption?: string;
   sub?: string;
   kenburns?: boolean;
-}> = ({ durationInFrames, theme, image, caption = "La primera cosecha, 1962", sub = "archivo familiar", kenburns = true }) => {
+  /** La placa se ESCRIBE letra por letra, con sonido de teclado suave (opt-in). */
+  typewriter?: boolean;
+  typeCps?: number;
+  /** REVELADO POR PARTES: segundo (relativo al plano) en que aparece la placa de
+   *  texto. La foto entra sola al principio y el texto llega cuando la voz lo dice.
+   *  Default 0.73s = el comportamiento viejo (todo junto). */
+  captionAt?: number;
+  /** Intensidad del zoom de cámara. 0 = quieto · 1 = el de antes · 0.45 = ultra suave. */
+  push?: number;
+}> = ({ durationInFrames, theme, image, caption = "La primera cosecha, 1962", sub = "archivo familiar", kenburns = true, typewriter = false, typeCps = 26, captionAt, push = 1 }) => {
   const t = useTheme(theme);
   const { frame, fps, op } = useBeat(durationInFrames);
   const enterS = kick(frame, fps, 4, SPR.settle);
-  const plateS = kick(frame, fps, 22, SPR.snappy);
-  const kb = kenburns ? interpolate(frame, [0, durationInFrames], [1.06, 1.14], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
-  const kbx = kenburns ? interpolate(frame, [0, durationInFrames], [0, -26], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
+  const plateFrame = captionAt != null ? Math.round(captionAt * fps) : 22;
+  const plateS = kick(frame, fps, plateFrame, SPR.snappy);
+  const kb = kenburns ? interpolate(frame, [0, durationInFrames], [1.06, 1.06 + 0.08 * push], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
+  const kbx = kenburns ? interpolate(frame, [0, durationInFrames], [0, -26 * push], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
   return (
     <Stage theme={t} style={{ opacity: op }}>
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={72}>
@@ -65,8 +76,14 @@ export const FramedPhoto: React.FC<{
             {/* placa museo */}
             <div style={{ position: "absolute", bottom: -34, left: 60, opacity: plateS, transform: `translateY(${(1 - plateS) * 16}px)` }}>
               <Card theme={t} strong accent={t.color.gold} style={{ padding: "16px 36px" }}>
-                <Display theme={t} size={38}>{caption}</Display>
-                {sub && <Support theme={t} size={23}>{sub}</Support>}
+                <Display theme={t} size={38}>
+                  {typewriter ? <Typed text={caption} startFrame={plateFrame + 2} cps={typeCps} /> : caption}
+                </Display>
+                {sub && (
+                  <Support theme={t} size={23}>
+                    {typewriter ? <Typed text={sub} startFrame={plateFrame + 2 + Math.ceil((caption.length / typeCps) * fps) + 8} cps={typeCps} caret={false} /> : sub}
+                  </Support>
+                )}
               </Card>
             </div>
           </div>
@@ -142,9 +159,12 @@ export const PhotoCarousel: React.FC<{
   theme?: Theme;
   title?: string;
   items?: CarouselItem[];
+  /** Dispara un obturador de cámara suave cuando aterriza cada instantánea (opt-in). */
+  shutter?: boolean;
 }> = ({
   durationInFrames,
   theme,
+  shutter = false,
   title = "Los cuatro que probamos",
   items = [{ label: "Cal viva" }, { label: "Bórax" }, { label: "Vinagre" }, { label: "Ceniza" }],
 }) => {
@@ -155,6 +175,15 @@ export const PhotoCarousel: React.FC<{
   const activeIdx = Math.min(n - 1, Math.floor(Math.max(0, frame - 14) / per));
   return (
     <Stage theme={t} style={{ opacity: op }}>
+      {/* El obturador suena cuando cada instantánea SE ADELANTA (el momento en que la
+          mirás), no cuando entran todas juntas al principio: si no, se amontonan tres
+          disparos en medio segundo y después el carrusel avanza mudo. */}
+      {shutter &&
+        items.map((_, i) => (
+          <Sequence key={`sh${i}`} from={Math.max(0, 14 + i * per - 3)} durationInFrames={26} layout="none">
+            <Audio src={staticFile("sfx/universfield-camera-shutter-199580.mp3")} volume={0.2} />
+          </Sequence>
+        ))}
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={52}>
         <div style={{ position: "absolute", top: 58, left: 0, right: 0, textAlign: "center" }}>
           <Display theme={t} size={56}>{title}</Display>

@@ -123,3 +123,6 @@ export { CornerEyebrow, ChapterTitle, LowerThirdId, CtaCard, StampBadge, MythTru
 // Media
 export { FramedPhoto, FloatingCutout, PhotoCarousel, SplitPanel } from "./media";
 export type { CarouselItem } from "./media";
+
+// Typewriter — revelado letra por letra + SFX de teclado (aditivo, opt-in)
+export { Typed, TypeSfx, Caret, useTypewriter, typeFrames, TYPE_POOL } from "./typewriter";
