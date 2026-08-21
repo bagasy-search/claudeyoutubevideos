@@ -46,7 +46,7 @@ const Layer: React.FC<{ fade: boolean; z: number; children: React.ReactNode }> =
 
 export const Main_moho2: React.FC = () => (
   <AbsoluteFill style={{ background: "#171310" }}>
-    <Audio src={staticFile("moho.wav")} volume={1} />
+    <Audio src={staticFile("moho2.wav")} volume={1} />
     <AvatarBase />
     {CUES.map((c) => (
       <Sequence key={c.key} from={Math.round(c.start * FPS)} durationInFrames={Math.round(c.dur * FPS)} layout="none">
