@@ -99,7 +99,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} prompt={b.prompt} />
   : b.kind === "guidecta" ? <FedGuideCTA durationInFrames={d} cover={b.cover} qr={b.qr} title={b.title} kicker={b.kicker} desc={b.desc} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
-  : b.kind === "pricewar" ? <PriceWar durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftPrice={b.leftPrice} rightPrice={b.rightPrice} leftLabel={b.leftLabel} rightLabel={b.rightLabel} subtitle={b.subtitle} verdict={b.verdict} />
+  : b.kind === "pricewar" ? <PriceWar durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftPrice={b.leftPrice} rightPrice={b.rightPrice} leftLabel={b.leftLabel} rightLabel={b.rightLabel} subtitle={b.subtitle} verdict={b.verdict} strike={b.strike} />
   : b.kind === "benefitlock" ? <BenefitLockReveal durationInFrames={d} index={b.index} cards={b.cards} />
   : b.kind === "highlightdata" ? <HighlightData durationInFrames={d} pre={b.pre} highlight={b.highlight} post={b.post} source={b.source} />
   : b.kind === "citationcard" ? <CitationCard durationInFrames={d} journal={b.journal} finding={b.finding} stat={b.stat} statPrefix={b.statPrefix} statSuffix={b.statSuffix} statLabel={b.statLabel} />
