@@ -24,6 +24,8 @@ import { MainFederer18, TOTAL_FRAMES_FED18 } from "./_fed6/VideoEdit/Main_federe
 import { MainGreenbotox, TOTAL_FRAMES_GB } from "./_fed6/VideoEdit/Main_greenbotox";
 import { MainGreenlift, TOTAL_FRAMES_GB as TOTAL_FRAMES_GL } from "./_fed6/VideoEdit/Main_greenlift";
 import { MainGreenglove, TOTAL_FRAMES_GG } from "./_fed6/VideoEdit/Main_greenglove";
+import { MainCuellopavo, TOTAL_FRAMES_CP } from "./_fed6/VideoEdit/Main_cuellopavo";
+import { MainTaza9pm, TOTAL_FRAMES_TAZA9PM } from "./_fed6/VideoEdit/Main_taza9pm";
 import { MainNightserum, TOTAL_FRAMES_NS } from "./_fed6/VideoEdit/Main_nightserum";
 import { MainHandsAge, TOTAL_FRAMES_HANDS } from "./_fed6/VideoEdit/Main_handsage";
 import { MainFederer17, TOTAL_FRAMES_FED17 } from "./_fed6/VideoEdit/Main_federer17";
@@ -49,6 +51,8 @@ import { MainMaderaRest, TOTAL_FRAMES_MR } from "./VideoEdit/Main_maderarest";
 import { MainImpermeable, TOTAL_FRAMES_IM } from "./VideoEdit/Main_impermeable";
 import { MainQuebracho, TOTAL_FRAMES_QB } from "./VideoEdit/Main_quebracho";
 import { MainAzotea, TOTAL_FRAMES_AZ } from "./VideoEdit/Main_azotea";
+import { MainAzotea2, TOTAL_FRAMES_AZOTEA2 } from "./VideoEdit/Main_azotea2";
+import { MainImpermeacasero, TOTAL_FRAMES_IMPERMEACASERO } from "./VideoEdit/Main_impermeacasero";
 import { MainSalitre2, TOTAL_FRAMES_SA2 } from "./VideoEdit/Main_salitre2";
 import { MainFederer, TOTAL_FRAMES_FED } from "./VideoEdit/Main_federer";
 import { MainRecalentados, TOTAL_FRAMES_RECAL } from "./VideoEdit/Main_recalentados";
@@ -615,6 +619,10 @@ export const RemotionRoot: React.FC = () => {
       
       {/* IMPERMEABILIZACIÓN · Azotea (líquido $2 para siempre) */}
       <Composition id="Azotea" component={MainAzotea} durationInFrames={TOTAL_FRAMES_AZ} fps={30} width={1920} height={1080} />
+      {/* IMPERMEABILIZACIÓN 2 · Azotea2 (alumbre + jabón, adiós goteras) */}
+      <Composition id="Azotea2" component={MainAzotea2} durationInFrames={TOTAL_FRAMES_AZOTEA2} fps={30} width={1920} height={1080} />
+      {/* IMPERMEABILIZANTE CASERO · Impermeacasero (cemento + cola vinílica, grietas y goteras) */}
+      <Composition id="Impermeacasero" component={MainImpermeacasero} durationInFrames={TOTAL_FRAMES_IMPERMEACASERO} fps={30} width={1920} height={1080} />
       {/* HUMEDAD · Salitre (el error que lo hace volver) */}
       <Composition id="Salitre2" component={MainSalitre2} durationInFrames={TOTAL_FRAMES_SA2} fps={30} width={1920} height={1080} />
       {/* VIDEO 2 · EL CONSTRUCTOR LIBRE — Madera sin termitas (bórax + aceite) */}
@@ -688,6 +696,10 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Fcskiwi" component={MainFcskiwi} durationInFrames={TOTAL_FRAMES_FCSKIWI} fps={30} width={1920} height={1080} />
       {/* Dr. Bastida — "Come ESTOS 3 ALIMENTOS para tu piel +60" · kit valeria-vintage · AVATAR · b-roll 100% stock Pexels */}
       <Composition id="Alimentos60" component={MainAlimentos60} durationInFrames={TOTAL_FRAMES_ALIMENTOS60} fps={30} width={1920} height={1080} />
+      {/* Federer - Mas Salud, Mas Vida — "Adios al CUELLO DE PAVO" · kit _fed6 · AVATAR loop · b-roll agnes */}
+      <Composition id="Cuellopavo" component={MainCuellopavo} durationInFrames={TOTAL_FRAMES_CP} fps={30} width={1920} height={1080} />
+      {/* Federer - Mas Salud, Mas Vida — "La TAZA DE LAS 9 PM" · kit _fed6 · AVATAR en bucle de 152s · b-roll agnes texto-a-video */}
+      <Composition id="Taza9pm" component={MainTaza9pm} durationInFrames={TOTAL_FRAMES_TAZA9PM} fps={30} width={1920} height={1080} />
       <Composition id="ValeriaVaselina" component={MainValeriaVaselina} durationInFrames={TOTAL_FRAMES_VALERIAVASELINA} fps={30} width={1920} height={1080} />
     </>
   );
