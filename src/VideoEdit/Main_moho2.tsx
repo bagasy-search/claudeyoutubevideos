@@ -5,7 +5,7 @@ import { AVATAR_WINDOWS } from "./avatar_moho2.gen";
 
 // GENERADO por build_moho.mjs — no editar a mano.
 export const FPS = 30;
-export const TOTAL_MOHO2 = 55855;
+export const TOTAL_MOHO2 = 55854;
 const XF = 12;
 
 /** Foto fija de Tomás: el piso de la capa base. Nunca queda fondo muerto. */
