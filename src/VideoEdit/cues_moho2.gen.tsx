@@ -167,10 +167,20 @@ export const CUES: Cue[] = [
         <HookCaption durationInFrames={190} theme={THEME_EARTH} {...({"words":[{"text":"Hay un error"},{"text":"UNO SOLO","boxed":true},{"text":"que lo trae de vuelta"}],"sub":"Aunque hagas todo perfecto"} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s38", start: 186.867, dur: 4.767, fade: false, z: 48,
+    sfx: "sfx/lib/swish_3.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={143} src="img/moho_fill_rodillo_pintura_trabajo_terminado.png" />
+    ) },
   { key: "s39", start: 191.633, dur: 5.200, fade: false, z: 49,
     sfx: "sfx/lib/whoosh_soft_3.mp3",
     el: (d: number) => (
       <CineShot durationInFrames={156} src="img/moho_tomas_corre_cama_hija.png" />
+    ) },
+  { key: "s40", start: 196.833, dur: 5.433, fade: false, z: 50,
+    sfx: "sfx/lib/sub_drop_2.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={163} src="img/moho_fill_pared_cuarto_hija_parche_repintado.png" />
     ) },
   { key: "s41", start: 202.267, dur: 4.933, fade: false, z: 51,
     sfx: "sfx/lib/tick_8.mp3",
@@ -178,6 +188,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={148} zone="left" theme={THEME_EARTH}>
         <BulletCascade durationInFrames={148} theme={THEME_EARTH} {...({"eyebrow":"El error","bullets":[{"pre":"No es ","key":"limpiar mal"},{"pre":"No es ","key":"poco producto"},{"pre":"Es ","key":"otra cosa"}]} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s42", start: 207.233, dur: 5.200, fade: false, z: 52,
+    sfx: "sfx/lib/tap_8.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={156} src="img/moho_fill_bolsa_plastico_cinta_lista.png" />
     ) },
   { key: "s43", start: 212.433, dur: 7.267, fade: false, z: 53,
     sfx: "sfx/lib/pop_soft_2.mp3",
@@ -190,6 +205,11 @@ export const CUES: Cue[] = [
     sfx: "sfx/lib/click_soft_2.mp3",
     el: (d: number) => (
       <CineShot durationInFrames={166} src="img/moho_tomas_pega_bolsa.png" />
+    ) },
+  { key: "s45", start: 225.233, dur: 5.200, fade: false, z: 55,
+    sfx: "sfx/lib/tick_1.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={156} src="img/moho_fill_botella_lejia_piso_bano.png" />
     ) },
   { key: "s46", start: 230.467, dur: 5.567, fade: false, z: 56,
     sfx: "sfx/lib/card_slide_2.mp3",
@@ -232,6 +252,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={212} zone="full" theme={THEME_EARTH}>
         <FramedPhoto durationInFrames={212} theme={THEME_EARTH} {...({"image":"img/moho_corte_blanqueado_raiz.png","caption":"La raíz sigue ahí","sub":"Intacta, adentro del poro","kenburns":true,"push":0.45,"captionAt":3,"typewriter":true} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s56", start: 286.067, dur: 4.567, fade: false, z: 66,
+    sfx: "sfx/lib/tick_3.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={137} src="img/moho_fill_botella_traslucida_contraluz_agua.png" />
     ) },
   { key: "s57", start: 290.633, dur: 5.733, fade: false, z: 67,
     sfx: "sfx/lib/click_soft_3.mp3",
@@ -318,6 +343,11 @@ export const CUES: Cue[] = [
         <FramedPhoto durationInFrames={170} theme={THEME_EARTH} {...({"image":"img/moho_pared_patio_sin_sol.png","caption":"La pared que da al patio","sub":"La que nunca ve el sol","kenburns":true,"push":0.45,"captionAt":2.6,"typewriter":true} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s76", start: 385.067, dur: 5.167, fade: false, z: 86,
+    sfx: "sfx/lib/sub_drop_4.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={155} src="img/moho_fill_mancha_atras_cabecera_cama.png" />
+    ) },
   { key: "s77", start: 390.233, dur: 3.833, fade: false, z: 87,
     sfx: "sfx/lib/splash_soft_2.mp3",
     el: (d: number) => (
@@ -356,6 +386,11 @@ export const CUES: Cue[] = [
         <FloatingCutout durationInFrames={173} theme={THEME_EARTH} {...({"image":"img/moho_manos_cal_balde.png","label":"Un albañil viejo","sub":"Toda la vida con cal"} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s85", start: 428.700, dur: 4.600, fade: false, z: 95,
+    sfx: "sfx/lib/tap_8.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={138} src="img/moho_fill_balde_cal_muro_antiguo.png" />
+    ) },
   { key: "s87", start: 436.200, dur: 8.300, fade: false, z: 97,
     sfx: "sfx/lib/bell_soft_1.mp3",
     el: (d: number) => (
@@ -377,6 +412,11 @@ export const CUES: Cue[] = [
         <PhotoCarousel durationInFrames={312} theme={THEME_EARTH} {...({"title":"El menú","shutter":true,"items":[{"image":"img/moho_polvo_zocalo_dedo.png","label":"Polvo"},{"image":"img/moho_papel_yeso_despegado.png","label":"Papel del yeso"},{"image":"img/moho_madera_veta_humeda.png","label":"Madera"},{"image":"img/moho_grasa_azulejo_cocina.png","label":"Grasa de cocina"}]} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s92", start: 468.100, dur: 5.633, fade: false, z: 102,
+    sfx: "sfx/lib/tap_1.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={169} src="img/moho_fill_menu_del_hongo_bodegon_cenital.png" />
+    ) },
   { key: "s93", start: 473.733, dur: 7.200, fade: false, z: 103,
     sfx: "sfx/lib/shimmer_1.mp3",
     el: (d: number) => (
@@ -390,6 +430,16 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={141} zone="full" theme={THEME_EARTH}>
         <BigStatReveal durationInFrames={141} theme={THEME_EARTH} {...({"eyebrow":"Te queda una sola","value":"1","prefix":"","suffix":" pata","support":"El agua","source":"Sácala y se muere solo"} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s96", start: 488.233, dur: 4.967, fade: false, z: 106,
+    sfx: "sfx/lib/tap_2.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={149} src="img/moho_fill_estante_productos_sin_etiqueta.png" />
+    ) },
+  { key: "s97", start: 493.200, dur: 4.767, fade: false, z: 107,
+    sfx: "sfx/lib/tick_2.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={143} src="img/moho_fill_macro_gota_condensacion_pared.png" />
     ) },
   { key: "s98", start: 497.967, dur: 5.067, fade: false, z: 108,
     sfx: "sfx/lib/whoosh_reverse_3.mp3",
@@ -418,6 +468,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={173} zone="full" theme={THEME_EARTH}>
         <BigStatReveal durationInFrames={173} theme={THEME_EARTH} {...({"eyebrow":"Una familia de cuatro","value":"10","prefix":"","suffix":" litros","support":"de agua al aire por día","source":"En tu propia casa"} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s102", start: 524.200, dur: 5.667, fade: false, z: 112,
+    sfx: "sfx/lib/tap_3.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={170} src="img/moho_fill_olla_hirviendo_vapor_cocina.png" />
     ) },
   { key: "s103", start: 529.833, dur: 6.533, fade: false, z: 113,
     sfx: "sfx/lib/squish_1.mp3",
@@ -453,6 +508,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={163} zone="full" theme={THEME_EARTH}>
         <PhotoCarousel durationInFrames={163} theme={THEME_EARTH} {...({"title":"Más puntos fríos","shutter":true,"items":[{"image":"img/moho_columna_hormigon_pared.png","label":"La columna"},{"image":"img/moho_techo_viga_esquina.png","label":"El techo"},{"image":"img/moho_marco_ventana_humedad.png","label":"El marco"}]} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s109", start: 563.667, dur: 6.800, fade: false, z: 119,
+    sfx: "sfx/lib/tap_4.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={204} src="img/moho_fill_rincon_frio_dos_paredes_exteriores.png" />
     ) },
   { key: "s110", start: 570.433, dur: 6.433, fade: false, z: 120,
     sfx: "sfx/lib/whoosh_soft_7.mp3",
@@ -492,12 +552,22 @@ export const CUES: Cue[] = [
     el: (d: number) => (
       <CineShot durationInFrames={79} src="img/moho_tomas_ventana_invierno.png" />
     ) },
+  { key: "s118", start: 613.467, dur: 6.333, fade: false, z: 128,
+    sfx: "sfx/lib/tick_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={190} src="img/moho_fill_ventana_empanada_invierno.png" />
+    ) },
   { key: "s119", start: 619.833, dur: 5.967, fade: false, z: 129,
     sfx: "sfx/lib/riser_soft_4.mp3",
     el: (d: number) => (
       <PremiumOverlay durationInFrames={179} zone="top" theme={THEME_EARTH}>
         <HookCaption durationInFrames={179} theme={THEME_EARTH} {...({"words":[{"text":"Antes de mezclar"},{"text":"ALGO EN SERIO","boxed":true}],"sub":"No es un formalismo"} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s120", start: 625.800, dur: 4.700, fade: false, z: 130,
+    sfx: "sfx/lib/tap_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={141} src="img/moho_fill_advertencia_dos_botellas_guantes.png" />
     ) },
   { key: "s121", start: 630.467, dur: 7.833, fade: false, z: 131,
     sfx: "sfx/lib/boom_soft_4.mp3",
@@ -551,6 +621,11 @@ export const CUES: Cue[] = [
     el: (d: number) => (
       <CineShot durationInFrames={170} src="img/moho_tomas_botella_vinagre.png" />
     ) },
+  { key: "s131", start: 693.533, dur: 5.633, fade: false, z: 141,
+    sfx: "sfx/lib/tap_8.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={169} src="img/moho_fill_vinagre_rociador_baldosas.png" />
+    ) },
   { key: "s132", start: 699.167, dur: 9.767, fade: false, z: 142,
     sfx: "sfx/lib/swish_7.mp3",
     el: (d: number) => (
@@ -598,6 +673,11 @@ export const CUES: Cue[] = [
         <VsDuel durationInFrames={226} theme={THEME_EARTH} {...({"eyebrow":"LA MEZCLA","title":"Puro contra diluido","left":{"label":"PURO","sub":"Como viene","good":true,"image":"img/moho_rociador_puro.png"},"right":{"label":"MITAD Y MITAD","sub":"Pierde fuerza","image":"img/moho_rociador_diluido.png"}} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s140", start: 755.600, dur: 5.333, fade: false, z: 150,
+    sfx: "sfx/lib/tap_2.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={160} src="img/moho_fill_rociador_medio_lleno_jarra_agua.png" />
+    ) },
   { key: "s141", start: 760.933, dur: 4.133, fade: false, z: 151,
     sfx: "sfx/lib/pour_soft_2.mp3",
     el: (d: number) => (
@@ -617,6 +697,11 @@ export const CUES: Cue[] = [
         <HighlightSweep durationInFrames={256} theme={THEME_EARTH} {...({"pre":"Si tratas solo ","highlight":"lo negro","post":", dejas viva la mitad","note":"El error más común de todos"} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s144", start: 782.067, dur: 6.267, fade: false, z: 154,
+    sfx: "sfx/lib/tick_6.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={188} src="img/moho_fill_borde_mancha_halo_invisible.png" />
+    ) },
   { key: "s145", start: 788.333, dur: 6.333, fade: false, z: 155,
     sfx: "sfx/lib/swish_1.mp3",
     el: (d: number) => (
@@ -635,6 +720,11 @@ export const CUES: Cue[] = [
     sfx: "sfx/lib/click_soft_5.mp3",
     el: (d: number) => (
       <CineShot durationInFrames={143} src="img/moho_tomas_reloj_taller.png" />
+    ) },
+  { key: "s149", start: 812.700, dur: 5.800, fade: false, z: 159,
+    sfx: "sfx/lib/spritz_4.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={174} src="img/moho_fill_pared_mojada_secandose_mate.png" />
     ) },
   { key: "s150", start: 818.500, dur: 9.067, fade: false, z: 160,
     sfx: "sfx/lib/squish_3.mp3",
@@ -669,6 +759,11 @@ export const CUES: Cue[] = [
     el: (d: number) => (
       <CineShot durationInFrames={74} src="img/moho_tomas_polvo_luz.png" />
     ) },
+  { key: "s155", start: 855.567, dur: 5.867, fade: false, z: 165,
+    sfx: "sfx/lib/tap_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={176} src="img/moho_fill_esporas_polvo_rayo_de_sol.png" />
+    ) },
   { key: "s156", start: 861.467, dur: 6.600, fade: false, z: 166,
     sfx: "sfx/lib/riser_soft_5.mp3",
     el: (d: number) => (
@@ -687,6 +782,11 @@ export const CUES: Cue[] = [
     sfx: "sfx/lib/pop_soft_4.mp3",
     el: (d: number) => (
       <CineShot durationInFrames={157} src="img/moho_tomas_polvo_mano.png" />
+    ) },
+  { key: "s159", start: 880.233, dur: 8.700, fade: false, z: 169,
+    sfx: "sfx/lib/tap_6.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={261} src="img/moho_fill_borax_polvo_blanco_ferreteria.png" />
     ) },
   { key: "s160", start: 888.933, dur: 5.567, fade: false, z: 170,
     sfx: "sfx/lib/magic_soft_2.mp3",
@@ -735,6 +835,11 @@ export const CUES: Cue[] = [
         <CutawayCallouts durationInFrames={213} theme={THEME_EARTH} {...({"eyebrow":"LA ESPORA","title":"Llega y no puede","image":"img/moho_espora_filamento.png","callouts":[{"text":"Aterriza","sub":"y germina","tx":0.33,"ty":0.34,"side":"left"},{"text":"Se topa con la sal","sub":"No prospera","tx":0.63,"ty":0.66,"side":"right"}]} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s169", start: 947.300, dur: 4.700, fade: false, z: 179,
+    sfx: "sfx/lib/tick_8.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={141} src="img/moho_fill_cristales_borato_en_el_poro.png" />
+    ) },
   { key: "s170", start: 952.000, dur: 8.033, fade: false, z: 180,
     sfx: "sfx/lib/ding_soft_3.mp3",
     el: (d: number) => (
@@ -759,6 +864,11 @@ export const CUES: Cue[] = [
     el: (d: number) => (
       <CineShot durationInFrames={113} src="img/moho_tomas_pincela_borax.png" />
     ) },
+  { key: "s175", start: 979.467, dur: 5.933, fade: false, z: 185,
+    sfx: "sfx/lib/spritz_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={178} src="img/moho_fill_brocha_ancha_balde_solucion.png" />
+    ) },
   { key: "s176", start: 985.400, dur: 8.033, fade: false, z: 186,
     sfx: "sfx/lib/impact_soft_3.mp3",
     el: (d: number) => (
@@ -780,6 +890,11 @@ export const CUES: Cue[] = [
         <ChecklistReveal durationInFrames={286} theme={THEME_EARTH} {...({"title":"En la descripción","items":["Bórax por litro","Pared pintada","Madera desnuda"],"stamp":"ANOTADO","kicker":"Las proporciones"} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s180", start: 1014.633, dur: 7.533, fade: false, z: 190,
+    sfx: "sfx/lib/tap_3.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={226} src="img/moho_fill_balde_agua_caliente_cuchara_polvo.png" />
+    ) },
   { key: "s181", start: 1022.167, dur: 6.567, fade: false, z: 191,
     sfx: "sfx/lib/riser_soft_6.mp3",
     el: (d: number) => (
@@ -800,6 +915,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={273} zone="full" theme={THEME_EARTH}>
         <PhotoCarousel durationInFrames={273} theme={THEME_EARTH} {...({"title":"Cada superficie es otra cosa","shutter":true,"items":[{"label":"Pared pintada","image":"img/moho_sup_pared_pintada.png"},{"label":"Junta de azulejo","image":"img/moho_sup_junta_azulejo.png"},{"label":"Madera","image":"img/moho_sup_madera.png"},{"label":"Placa de yeso","image":"img/moho_sup_placa_yeso.png"}]} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s184", start: 1044.767, dur: 6.400, fade: false, z: 194,
+    sfx: "sfx/lib/tap_4.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={192} src="img/moho_fill_cuatro_superficies_comparadas.png" />
     ) },
   { key: "s185", start: 1051.200, dur: 21.300, fade: false, z: 195,
     sfx: "sfx/lib/page_flip_6.mp3",
@@ -854,6 +974,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={301} zone="full" theme={THEME_EARTH}>
         <HighlightSweep durationInFrames={301} theme={THEME_EARTH} {...({"pre":"Casi todo va ","highlight":"sin enjuagar","post":" y no se toca","note":"Hay una sola excepción"} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s193", start: 1175.033, dur: 5.933, fade: false, z: 203,
+    sfx: "sfx/lib/tap_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={178} src="img/moho_fill_yeso_sano_vs_yeso_empapado.png" />
     ) },
   { key: "s194", start: 1180.967, dur: 14.733, fade: false, z: 204,
     sfx: "sfx/lib/impact_soft_5.mp3",
@@ -956,6 +1081,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={171} zone="left" theme={THEME_EARTH}>
         <MythTruth durationInFrames={171} theme={THEME_EARTH} {...({"myth":"Cortar por el borde","truth":"Cortar con margen de sobra"} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s217", start: 1316.567, dur: 5.933, fade: false, z: 227,
+    sfx: "sfx/lib/tick_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={178} src="img/moho_fill_hueco_recortado_placa_yeso.png" />
     ) },
   { key: "s218", start: 1322.500, dur: 10.567, fade: false, z: 228,
     sfx: "sfx/lib/card_slide_8.mp3",
@@ -1073,6 +1203,11 @@ export const CUES: Cue[] = [
         <BulletCascade durationInFrames={165} theme={THEME_EARTH} {...({"eyebrow":"El tercer caso","bullets":[{"pre":"No es ","key":"condensación"},{"pre":"No es ","key":"filtración"},{"pre":"Es ","key":"salitre"}]} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s240", start: 1443.900, dur: 7.167, fade: false, z: 250,
+    sfx: "sfx/lib/tick_8.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={215} src="img/moho_fill_humedad_ascendente_zocalo_salitre.png" />
+    ) },
   { key: "s241", start: 1451.067, dur: 4.400, fade: false, z: 251,
     sfx: "sfx/lib/tap_3.mp3",
     el: (d: number) => (
@@ -1098,6 +1233,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={153} zone="full" theme={THEME_EARTH}>
         <BigStatReveal durationInFrames={153} theme={THEME_EARTH} {...({"eyebrow":"El olor avisa","value":"3","prefix":"","suffix":" semanas","support":"de ventaja","source":"El olor avisa primero"} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s246", start: 1474.700, dur: 5.600, fade: false, z: 256,
+    sfx: "sfx/lib/tick_1.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={168} src="img/moho_fill_ropero_abierto_olor_sotano.png" />
     ) },
   { key: "s247", start: 1480.300, dur: 2.800, fade: false, z: 257,
     sfx: "sfx/lib/whoosh_soft_6.mp3",
@@ -1134,6 +1274,11 @@ export const CUES: Cue[] = [
     sfx: "sfx/lib/tick_2.mp3",
     el: (d: number) => (
       <CineShot durationInFrames={97} src="img/moho_cinta_metrica_cinco_cm.png" />
+    ) },
+  { key: "s253", start: 1507.967, dur: 6.800, fade: false, z: 263,
+    sfx: "sfx/lib/tap_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={204} src="img/moho_fill_mueble_separado_cinco_centimetros.png" />
     ) },
   { key: "s254", start: 1514.767, dur: 4.467, fade: false, z: 264,
     sfx: "sfx/lib/whoosh_soft_8.mp3",
@@ -1177,6 +1322,11 @@ export const CUES: Cue[] = [
     sfx: "sfx/lib/droplet_5.mp3",
     el: (d: number) => (
       <CineShot durationInFrames={133} src="img/moho_tendedero_adentro_ventana.png" />
+    ) },
+  { key: "s263", start: 1564.667, dur: 5.767, fade: false, z: 273,
+    sfx: "sfx/lib/tick_4.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={173} src="img/moho_fill_ropa_tendida_adentro_ventana_cerrada.png" />
     ) },
   { key: "s264", start: 1570.433, dur: 2.767, fade: false, z: 274,
     sfx: "sfx/lib/light_pass_4.mp3",
@@ -1245,12 +1395,22 @@ export const CUES: Cue[] = [
     el: (d: number) => (
       <CineShot durationInFrames={87} src="img/moho_muro_abierto_nucleo_humedo.png" />
     ) },
+  { key: "s277", start: 1629.800, dur: 5.900, fade: false, z: 287,
+    sfx: "sfx/lib/tick_6.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={177} src="img/moho_fill_espesor_revoque_humedo_adentro.png" />
+    ) },
   { key: "s278", start: 1635.667, dur: 10.600, fade: false, z: 288,
     sfx: "sfx/lib/whoosh_glass_2.mp3",
     el: (d: number) => (
       <PremiumOverlay durationInFrames={318} zone="full" theme={THEME_EARTH}>
         <CutawayCallouts durationInFrames={318} theme={THEME_EARTH} {...({"eyebrow":"Pintura plástica","title":"Película cerrada","image":"img/moho_corte_pintura_pelicula.png","callouts":[{"text":"No pasa el vapor","sub":"Impermeable","tx":0.3,"ty":0.3,"side":"left"},{"text":"El agua de adentro","sub":"No sale","tx":0.62,"ty":0.66,"side":"right"}]} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s279", start: 1646.267, dur: 4.767, fade: false, z: 289,
+    sfx: "sfx/lib/tap_8.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={143} src="img/moho_fill_gotas_perladas_pintura_plastica.png" />
     ) },
   { key: "s280", start: 1651.067, dur: 7.867, fade: false, z: 290,
     sfx: "sfx/lib/page_flip_2.mp3",
@@ -1259,12 +1419,22 @@ export const CUES: Cue[] = [
         <BulletCascade durationInFrames={236} theme={THEME_EARTH} {...({"eyebrow":"Lo que pasa después","bullets":[{"pre":"El agua ","key":"no desaparece"},{"pre":"Si le tapas ","key":"el frente"},{"pre":"Camina ","key":"por adentro"}]} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s281", start: 1658.900, dur: 4.733, fade: false, z: 291,
+    sfx: "sfx/lib/tick_7.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={142} src="img/moho_fill_borde_parche_pintado_humedo.png" />
+    ) },
   { key: "s282", start: 1663.633, dur: 5.533, fade: false, z: 292,
     sfx: "sfx/lib/boom_soft_6.mp3",
     el: (d: number) => (
       <PremiumOverlay durationInFrames={166} zone="full" theme={THEME_EARTH}>
         <FramedPhoto durationInFrames={166} theme={THEME_EARTH} {...({"image":"img/moho_anillo_alrededor_parche.png","caption":"El anillo","sub":"La firma de este error","kenburns":true,"push":0.45,"captionAt":2.6,"typewriter":true} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s283", start: 1669.167, dur: 6.267, fade: false, z: 293,
+    sfx: "sfx/lib/tick_8.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={188} src="img/moho_fill_anillo_negro_alrededor_parche.png" />
     ) },
   { key: "s284", start: 1675.400, dur: 5.067, fade: false, z: 294,
     sfx: "sfx/lib/foam_2.mp3",
@@ -1277,6 +1447,11 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={200} zone="top" theme={THEME_EARTH}>
         <StampBadge durationInFrames={200} theme={THEME_EARTH} {...({"text":"PERDISTE LOS DOS","sub":"La pintura y el trabajo","color":"terracota","x":0.62,"y":0.28} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s286", start: 1687.133, dur: 4.967, fade: false, z: 296,
+    sfx: "sfx/lib/tap_1.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={149} src="img/moho_fill_pared_tratada_esperando_sombra.png" />
     ) },
   { key: "s287", start: 1692.100, dur: 5.733, fade: false, z: 297,
     sfx: "sfx/lib/whoosh_soft_1.mp3",
@@ -1335,6 +1510,11 @@ export const CUES: Cue[] = [
         <BulletCascade durationInFrames={182} theme={THEME_EARTH} {...({"eyebrow":"Si hay gotas adentro","bullets":[{"pre":"Más ","key":"tiempo"},{"pre":"Más ","key":"aire"},{"pre":"Calor ","key":"suave"}]} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s296", start: 1748.367, dur: 5.900, fade: false, z: 306,
+    sfx: "sfx/lib/tick_1.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={177} src="img/moho_fill_filtracion_techo_cano_mapa.png" />
+    ) },
   { key: "s297", start: 1754.233, dur: 6.733, fade: false, z: 307,
     sfx: "sfx/lib/droplet_6.mp3",
     el: (d: number) => (
@@ -1375,6 +1555,11 @@ export const CUES: Cue[] = [
     el: (d: number) => (
       <CineShot durationInFrames={111} src="img/moho_pincel_cal_pared.png" />
     ) },
+  { key: "s304", start: 1794.700, dur: 6.100, fade: false, z: 314,
+    sfx: "sfx/lib/tick_2.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={183} src="img/moho_fill_pintura_mineral_cal_respira.png" />
+    ) },
   { key: "s305", start: 1800.833, dur: 5.533, fade: false, z: 315,
     sfx: "sfx/lib/impact_soft_3.mp3",
     el: (d: number) => (
@@ -1396,12 +1581,22 @@ export const CUES: Cue[] = [
         <HookCaption durationInFrames={244} theme={THEME_EARTH} {...({"words":[{"text":"El hongo es"},{"text":"EL SÍNTOMA","boxed":true},{"text":"El agua es la enfermedad"}],"sub":"Saca el agua del aire"} as any)} />
       </PremiumOverlay>
     ) },
+  { key: "s308", start: 1823.400, dur: 4.867, fade: false, z: 318,
+    sfx: "sfx/lib/tap_5.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={146} src="img/moho_fill_techo_bano_esquina_manchada.png" />
+    ) },
   { key: "s309", start: 1828.267, dur: 7.933, fade: false, z: 319,
     sfx: "sfx/lib/card_slide_2.mp3",
     el: (d: number) => (
       <PremiumOverlay durationInFrames={238} zone="full" theme={THEME_EARTH}>
         <PhotoCarousel durationInFrames={238} theme={THEME_EARTH} {...({"title":"¿En qué rincón te sale?","shutter":true,"items":[{"image":"img/moho_rincon_esquina_cuarto.png","label":"La esquina"},{"image":"img/moho_rincon_techo_bano.png","label":"El techo del baño"},{"image":"img/moho_rincon_detras_ropero.png","label":"Detrás del ropero"},{"image":"img/moho_rincon_marco_ventana.png","label":"La ventana"}]} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s310", start: 1836.200, dur: 4.567, fade: false, z: 320,
+    sfx: "sfx/lib/tick_3.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={137} src="img/moho_fill_marco_ventana_madera_junta_negra.png" />
     ) },
   { key: "s311", start: 1840.767, dur: 5.733, fade: false, z: 321,
     sfx: "sfx/lib/shimmer_4.mp3",
@@ -1416,5 +1611,10 @@ export const CUES: Cue[] = [
       <PremiumOverlay durationInFrames={221} zone="left" theme={THEME_EARTH}>
         <BulletCascade durationInFrames={221} theme={THEME_EARTH} {...({"eyebrow":"El próximo video","bullets":[{"pre":"Sin ","key":"romper nada"},{"pre":"Sin ","key":"obra"},{"pre":"Para que el vapor ","key":"no condense"}]} as any)} />
       </PremiumOverlay>
+    ) },
+  { key: "s313", start: 1853.867, dur: 7.967, fade: false, z: 323,
+    sfx: "sfx/lib/bell_soft_2.mp3",
+    el: (d: number) => (
+      <CineShot durationInFrames={239} src="img/moho_fill_panel_aislante_pared_fria_taller.png" />
     ) },
 ];
