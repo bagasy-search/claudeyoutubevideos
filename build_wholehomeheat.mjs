@@ -13,13 +13,25 @@ const CLIP_DUR = 4.0;           // agnes 97f @24fps = 4,04s; dejo 4,0 de margen
 
 const moments = JSON.parse(fs.readFileSync(`_v3/${SLUG}_moments.json`, "utf8").replace(/^﻿/, ""));
 const comps   = JSON.parse(fs.readFileSync(`_v3/${SLUG}_comps.json`,   "utf8").replace(/^﻿/, ""));
+// Escenas FloatCards: cada tarjeta entra en el ms EXACTO en que el narrador nombra
+// esa cosa. Son OVERLAY (no tapan el avatar) y no cuentan como cobertura.
+const fcards  = JSON.parse(fs.readFileSync(`_v3/${SLUG}_floatcards.json`, "utf8").replace(/^﻿/, ""));
 
 // ── B-ROLL ────────────────────────────────────────────────────────────────────
 // Cada momento trae su clip Y su foto de respaldo (mismo prompt). Si el hueco es
 // más largo que el clip, entra la foto a taparle la cola: un corte más, mismo tema,
 // en vez de dejar avatar suelto (agnes-broll §1).
+// Etiqueta de la tarjeta flotante, sacada del nombre del momento (whh_chimney_outside
+// -> "Chimney outside"). Le da el aire "diseñado" que tiene una tarjeta con rótulo.
+const KICKER_FIX = { co: "CO", "50": "50°F" };
+const kickerOf = (name) => name.replace(/^whh_/, "").split("_")
+  .map((w) => KICKER_FIX[w] || w).join(" ")
+  .replace(/^./, (c) => c.toUpperCase());
+const compSpans = comps.map((c) => [c.start, +(c.start + c.dur).toFixed(2)]);
+const underComp = (a, b) => compSpans.some(([s2, e2]) => a < e2 && b > s2);
+
 const raw = [];
-let nClip = 0, nPhoto = 0, nTail = 0, missing = [];
+let nClip = 0, nPhoto = 0, nTail = 0, nFloat = 0, missing = [];
 const sorted = [...moments].sort((a, b) => a.ms - b.ms);
 
 for (let i = 0; i < sorted.length; i++) {
@@ -55,7 +67,19 @@ for (let i = 0; i < sorted.length; i++) {
     nPhoto++;
   } else if (hasMp4) {
     const d = +Math.min(slot, CLIP_DUR).toFixed(2);
-    raw.push({ start: m.ms, dur: d, src: mp4, vid: true });
+    // ★ EL CLIP DENTRO DE UNA ESCENA, no suelto a pantalla completa.
+    // FloatingInsert = tarjeta que entra con resorte, con sombra y flotación, y el
+    // PRESENTADOR queda vivo detrás (los floats son overlay sobre el avatar full).
+    // Se alternan los lados y se evita pisar un componente. El resto del metraje sí
+    // va a sangre: la mezcla es lo que hace que no se sienta ni plano ni repetitivo.
+    const canFloat = !TRAILER && d >= 3.0 && !underComp(m.ms, m.ms + d);
+    if (canFloat && nFloat * 3 < nClip + 1) {
+      raw.push({ start: m.ms, dur: d, src: mp4, vid: true, float: true,
+                 side: nFloat % 2 ? "left" : "right", kicker: kickerOf(m.name) });
+      nFloat++;
+    } else {
+      raw.push({ start: m.ms, dur: d, src: mp4, vid: true });
+    }
     nClip++;
     // Cola SOLO si da para un plano de verdad (≥2,2s). Una colita de 1s es un corte
     // de relleno que aplana el pacing; ese hueco lo llena el AVATAR, que además está
@@ -66,18 +90,23 @@ for (let i = 0; i < sorted.length; i++) {
       nTail++;
     }
   } else {
-    raw.push({ start: m.ms, dur: +Math.max(2.2, Math.min(slot, 8)).toFixed(2), src: jpg, vid: false });
+    raw.push({ start: m.ms, dur: +Math.min(slot, 8).toFixed(2), src: jpg, vid: false });   // sin piso: forzar 2,2s pisaba el momento siguiente
     nPhoto++;
   }
 }
 raw.sort((a, b) => a.start - b.start);
 
-const rawBeats = raw.map((b, i) => ({
-  id: `${SLUG}_${i}`, start: b.start, kind: "raw", src: b.src, hue: "amber", darken: 0,
-  dur: b.dur, ...(b.vid ? { noSplit: true } : {}),
-}));
+const rawBeats = raw.map((b, i) => (b.float
+  ? { id: `${SLUG}_f${i}`, start: b.start, kind: "float", src: b.src, side: b.side,
+      kicker: b.kicker, hue: "amber", dur: b.dur }
+  : { id: `${SLUG}_${i}`, start: b.start, kind: "raw", src: b.src, hue: "amber", darken: 0,
+      dur: b.dur, ...(b.vid ? { noSplit: true } : {}) }));
 
 // ── COMPONENTES (overlay premium) ─────────────────────────────────────────────
+const cardBeats = fcards.map((f, i) => ({
+  id: `fc_${i}`, start: f.start, dur: f.dur, kind: "floatcards", overlay: true, cards: f.cards,
+}));
+
 const compBeats = comps.map((c) => ({
   id: `ov_${c.comp.toLowerCase()}_${Math.round(c.start)}`,
   start: c.start, dur: c.dur, kind: "premium", overlay: true,
@@ -90,7 +119,10 @@ const compBeats = comps.map((c) => ({
 // Si contaran como "cubierto", en un overlay parcial (HighlightSweep/PullQuote en
 // zona "top") no quedaría ni b-roll ni avatar => segundos de NEGRO.
 // Base = FULL: el avatar es el fondo garantizado.
-const rawSpans = rawBeats.map((b) => [b.start, +(b.start + b.dur).toFixed(2)]);
+// ⛔ Los floats son tarjetas SOBRE el avatar: no cuentan como cobertura, o el avatar
+// se ocultaría y la tarjeta flotaría sobre un fondo vacío.
+const rawSpans = rawBeats.filter((b) => b.kind === "raw")
+  .map((b) => [b.start, +(b.start + b.dur).toFixed(2)]);
 const covered = (t) => rawSpans.some(([s, e]) => s <= t && e > t);
 
 // Las ventanas se construyen por INTERVALOS EXACTOS (unión de los spans del b-roll),
@@ -132,7 +164,7 @@ for (let f = 0; f < Math.round(TOTAL * 30); f++) {
   if (mode !== "full" && !covered(t)) { holes++; if (firstHole === null) firstHole = t; }
 }
 
-const beats = [...rawBeats, ...compBeats].sort((a, b) => a.start - b.start);
+const beats = [...rawBeats, ...compBeats, ...cardBeats].sort((a, b) => a.start - b.start);
 fs.mkdirSync("beatsheet", { recursive: true });
 fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar: AVATAR, tutorial: true, beats }, null, 1));
 fs.writeFileSync(`src/VideoEdit/avatar_${SLUG}.gen.ts`,
@@ -145,9 +177,10 @@ const q = (p) => durs[Math.floor(durs.length * p)];
 const kinds = {}; for (const c of compBeats) kinds[c.comp] = (kinds[c.comp] || 0) + 1;
 const half = TOTAL / 2;
 
-console.log(`b-roll ${rawBeats.length}  (clips ${nClip} · colas-foto ${nTail} · fotos ${nPhoto})`);
+console.log(`b-roll ${rawBeats.length}  (clips ${nClip} · TARJETAS FLOTANTES ${nFloat} · colas-foto ${nTail} · fotos ${nPhoto})`);
 if (missing.length) console.log(`⚠ SIN ASSET (${missing.length}): ${missing.slice(0, 10).join(", ")}`);
 console.log(`pacing: mediana ${q(0.5).toFixed(2)}s · p75 ${q(0.75).toFixed(2)}s · ≥5s ${(durs.filter(d => d >= 5).length / durs.length * 100).toFixed(0)}% · techo ${durs[durs.length - 1].toFixed(1)}s`);
+console.log(`escenas FloatCards ${cardBeats.length} (${cardBeats.reduce((a,c)=>a+c.cards.length,0)} tarjetas)`);
 console.log(`componentes ${compBeats.length} · tipos ${Object.keys(kinds).length} · 1ª mitad ${compBeats.filter(c => c.start < half).length} / 2ª ${compBeats.filter(c => c.start >= half).length}`);
 console.log(`avatar full ${avSecs.toFixed(0)}s / ${TOTAL.toFixed(0)}s = ${(avSecs / TOTAL * 100).toFixed(0)}%`);
 console.log(holes === 0 ? "✅ COMPUERTA ANTI-HUECO: 0 instantes sin contenido" : `⛔ ${holes} instantes vacíos (1º @ ${firstHole}s)`);

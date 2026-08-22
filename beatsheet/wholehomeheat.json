@@ -82,25 +82,43 @@
    "noSplit": true
   },
   {
-   "id": "ov_checklistreveal_17",
-   "start": 17,
-   "dur": 7,
-   "kind": "premium",
+   "id": "fc_0",
+   "start": 17.19,
+   "dur": 13.01,
+   "kind": "floatcards",
    "overlay": true,
-   "comp": "ChecklistReveal",
-   "theme": "earth",
-   "zone": "full",
-   "kicker": "WHAT THIS HOUSE DOES NOT HAVE",
-   "title": "Nothing with a motor in it, anywhere",
-   "items": [
-    "No furnace",
-    "No gas line from the road",
-    "No propane tank behind the shed",
-    "No electric line",
-    "No ductwork in the walls",
-    "No blower. No thermostat."
-   ],
-   "stamp": "NOT ONE MOVING PART"
+   "cards": [
+    {
+     "label": "No furnace",
+     "src": "img/whh_octopus_furnace.jpg",
+     "at": 0.35
+    },
+    {
+     "label": "No gas line",
+     "src": "img/whh_meter_socket.jpg",
+     "at": 1.89
+    },
+    {
+     "label": "No propane",
+     "src": "img/whh_house_snow.jpg",
+     "at": 4.15
+    },
+    {
+     "label": "No ductwork",
+     "src": "img/whh_duct_run.jpg",
+     "at": 7.65
+    },
+    {
+     "label": "No blower",
+     "src": "img/whh_blower_motor.jpg",
+     "at": 9.37
+    },
+    {
+     "label": "No thermostat",
+     "src": "img/whh_thermostat_wall.jpg",
+     "at": 10.25
+    }
+   ]
   },
   {
    "id": "wholehomeheat_5",
@@ -297,14 +315,14 @@
    ]
   },
   {
-   "id": "wholehomeheat_13",
+   "id": "wholehomeheat_f13",
    "start": 83.06,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_open_door_cold.mp4",
+   "side": "right",
+   "kicker": "Open door cold",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_14",
@@ -326,14 +344,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_16",
+   "id": "wholehomeheat_f16",
    "start": 123.88,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_russian_oven.mp4",
+   "side": "left",
+   "kicker": "Russian oven",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_17",
@@ -419,14 +437,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_22",
+   "id": "wholehomeheat_f22",
    "start": 149.94,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_farm_1880.mp4",
+   "side": "right",
+   "kicker": "Farm 1880",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.1,
-   "noSplit": true
+   "dur": 3.1
   },
   {
    "id": "wholehomeheat_23",
@@ -438,24 +456,24 @@
    "dur": 7.2
   },
   {
-   "id": "wholehomeheat_24",
+   "id": "wholehomeheat_f24",
    "start": 163.94,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_octopus_furnace.mp4",
+   "side": "left",
+   "kicker": "Octopus furnace",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.86,
-   "noSplit": true
+   "dur": 3.86
   },
   {
-   "id": "wholehomeheat_25",
+   "id": "wholehomeheat_f25",
    "start": 167.8,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_octopus_arms.mp4",
+   "side": "right",
+   "kicker": "Octopus arms",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_26",
@@ -467,14 +485,14 @@
    "dur": 3.2
   },
   {
-   "id": "wholehomeheat_27",
+   "id": "wholehomeheat_f27",
    "start": 177.26,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_gravity_nofan.mp4",
+   "side": "left",
+   "kicker": "Gravity nofan",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_28",
@@ -486,14 +504,14 @@
    "dur": 2.64
   },
   {
-   "id": "wholehomeheat_29",
+   "id": "wholehomeheat_f29",
    "start": 183.9,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_blower_motor.mp4",
+   "side": "right",
+   "kicker": "Blower motor",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_30",
@@ -600,14 +618,14 @@
    "dur": 5.88
   },
   {
-   "id": "wholehomeheat_38",
+   "id": "wholehomeheat_f38",
    "start": 247.18,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_bucket_leak.mp4",
+   "side": "left",
+   "kicker": "Bucket leak",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_39",
@@ -620,6 +638,40 @@
    "noSplit": true
   },
   {
+   "id": "fc_1",
+   "start": 252.97,
+   "dur": 9,
+   "kind": "floatcards",
+   "overlay": true,
+   "cards": [
+    {
+     "label": "Brick",
+     "src": "img/whh_brick_stack.jpg",
+     "at": 0.35
+    },
+    {
+     "label": "Stone",
+     "src": "img/whh_stone_slab.jpg",
+     "at": 0.81
+    },
+    {
+     "label": "Iron",
+     "src": "img/whh_iron_plate.jpg",
+     "at": 1.47
+    },
+    {
+     "label": "Water",
+     "src": "img/whh_water_reservoir.jpg",
+     "at": 1.89
+    },
+    {
+     "label": "Plaster",
+     "src": "img/whh_plaster_wall.jpg",
+     "at": 2.43
+    }
+   ]
+  },
+  {
    "id": "wholehomeheat_40",
    "start": 253.32,
    "kind": "raw",
@@ -630,14 +682,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_41",
+   "id": "wholehomeheat_f41",
    "start": 255.82,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_iron_plate.mp4",
+   "side": "right",
+   "kicker": "Iron plate",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_42",
@@ -730,14 +782,14 @@
    "dur": 6.84
   },
   {
-   "id": "wholehomeheat_47",
+   "id": "wholehomeheat_f47",
    "start": 292.42,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_dishes_wash.mp4",
+   "side": "left",
+   "kicker": "Dishes wash",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.02,
-   "noSplit": true
+   "dur": 3.02
   },
   {
    "id": "wholehomeheat_48",
@@ -769,7 +821,7 @@
    "src": "img/whh_presenter_chimney.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 1.02
   },
   {
    "id": "wholehomeheat_50",
@@ -884,24 +936,24 @@
    "note": "all the heat that brick soaks up goes straight to the outdoors, every night"
   },
   {
-   "id": "wholehomeheat_57",
+   "id": "wholehomeheat_f57",
    "start": 351.8,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_chimney_tower.mp4",
+   "side": "right",
+   "kicker": "Chimney tower",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.46,
-   "noSplit": true
+   "dur": 3.46
   },
   {
-   "id": "wholehomeheat_58",
+   "id": "wholehomeheat_f58",
    "start": 355.26,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_fire_dies_ten.mp4",
+   "side": "left",
+   "kicker": "Fire dies ten",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.48,
-   "noSplit": true
+   "dur": 3.48
   },
   {
    "id": "wholehomeheat_59",
@@ -1024,14 +1076,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_69",
+   "id": "wholehomeheat_f69",
    "start": 438.82,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_cold_air_falls.mp4",
+   "side": "right",
+   "kicker": "Cold air falls",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_70",
@@ -1096,24 +1148,24 @@
    ]
   },
   {
-   "id": "wholehomeheat_72",
+   "id": "wholehomeheat_f72",
    "start": 457.56,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_grate_near_stove.mp4",
+   "side": "left",
+   "kicker": "Grate near stove",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
-   "id": "wholehomeheat_73",
+   "id": "wholehomeheat_f73",
    "start": 462.94,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_stairwell_return.mp4",
+   "side": "right",
+   "kicker": "Stairwell return",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_74",
@@ -1209,14 +1261,14 @@
    "dur": 7.2
   },
   {
-   "id": "wholehomeheat_81",
+   "id": "wholehomeheat_f81",
    "start": 513.64,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_doorway_fan.mp4",
+   "side": "left",
+   "kicker": "Doorway fan",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_82",
@@ -1321,14 +1373,14 @@
    "dur": 6.88
   },
   {
-   "id": "wholehomeheat_89",
+   "id": "wholehomeheat_f89",
    "start": 559.72,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_co_detector.mp4",
+   "side": "right",
+   "kicker": "CO detector",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.18,
-   "noSplit": true
+   "dur": 3.18
   },
   {
    "id": "wholehomeheat_90",
@@ -1374,7 +1426,7 @@
    "src": "img/whh_presenter_wood.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 1.14
   },
   {
    "id": "wholehomeheat_95",
@@ -1440,24 +1492,24 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_100",
+   "id": "wholehomeheat_f100",
    "start": 609.98,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_workshop_stove.mp4",
+   "side": "left",
+   "kicker": "Workshop stove",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
-   "id": "wholehomeheat_101",
+   "id": "wholehomeheat_f101",
    "start": 614.1,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_masonry_wrap.mp4",
+   "side": "right",
+   "kicker": "Masonry wrap",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.64,
-   "noSplit": true
+   "dur": 3.64
   },
   {
    "id": "wholehomeheat_102",
@@ -1629,7 +1681,7 @@
    "src": "img/whh_presenter_brick.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 1.84
   },
   {
    "id": "wholehomeheat_113",
@@ -1648,7 +1700,7 @@
    "src": "img/whh_presenter_soapstone.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 2.08
   },
   {
    "id": "wholehomeheat_115",
@@ -1731,14 +1783,14 @@
    "note": "there are rooms here that sit at fifty degrees in January, and that is fine — nobody is standing in them"
   },
   {
-   "id": "wholehomeheat_119",
+   "id": "wholehomeheat_f119",
    "start": 722.58,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_cold_room_50.mp4",
+   "side": "left",
+   "kicker": "Cold room 50°F",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_120",
@@ -1897,14 +1949,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_130",
+   "id": "wholehomeheat_f130",
    "start": 776.74,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_wet_hand_draft.mp4",
+   "side": "right",
+   "kicker": "Wet hand draft",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_131",
@@ -1913,17 +1965,17 @@
    "src": "img/whh_presenter_caulk.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 1.86
   },
   {
-   "id": "wholehomeheat_132",
+   "id": "wholehomeheat_f132",
    "start": 785.68,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_door_bottom.mp4",
+   "side": "left",
+   "kicker": "Door bottom",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.8,
-   "noSplit": true
+   "dur": 3.8
   },
   {
    "id": "wholehomeheat_133",
@@ -1936,14 +1988,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_134",
+   "id": "wholehomeheat_f134",
    "start": 792.18,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_leaves_bank.mp4",
+   "side": "right",
+   "kicker": "Leaves bank",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.4,
-   "noSplit": true
+   "dur": 3.4
   },
   {
    "id": "wholehomeheat_135",
@@ -2042,14 +2094,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_142",
+   "id": "wholehomeheat_f142",
    "start": 833.16,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_one_dollar_three.mp4",
+   "side": "left",
+   "kicker": "One dollar three",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_143",
@@ -2134,24 +2186,24 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_147",
+   "id": "wholehomeheat_f147",
    "start": 856.4,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_fire_holds.mp4",
+   "side": "right",
+   "kicker": "Fire holds",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.32,
-   "noSplit": true
+   "dur": 3.32
   },
   {
-   "id": "wholehomeheat_148",
+   "id": "wholehomeheat_f148",
    "start": 859.72,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_morning_kindling.mp4",
+   "side": "left",
+   "kicker": "Morning kindling",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_149",
@@ -2163,14 +2215,14 @@
    "dur": 2.2
   },
   {
-   "id": "wholehomeheat_150",
+   "id": "wholehomeheat_f150",
    "start": 865.92,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_match_unused.mp4",
+   "side": "right",
+   "kicker": "Match unused",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_151",
@@ -2192,14 +2244,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_153",
+   "id": "wholehomeheat_f153",
    "start": 878.3,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_stone_in_bed.mp4",
+   "side": "left",
+   "kicker": "Stone in bed",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.26,
-   "noSplit": true
+   "dur": 3.26
   },
   {
    "id": "wholehomeheat_154",
@@ -2316,14 +2368,53 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_161",
+   "id": "fc_2",
+   "start": 921.83,
+   "dur": 8.87,
+   "kind": "floatcards",
+   "overlay": true,
+   "cards": [
+    {
+     "label": "No blower motor",
+     "src": "img/whh_blower_motor.jpg",
+     "at": 0.35
+    },
+    {
+     "label": "No capacitor",
+     "src": "img/whh_blower_shelf.jpg",
+     "at": 1.11
+    },
+    {
+     "label": "No control board",
+     "src": "img/whh_part_number.jpg",
+     "at": 2.53
+    },
+    {
+     "label": "No filters",
+     "src": "img/whh_filters_four.jpg",
+     "at": 3.25
+    },
+    {
+     "label": "No service call",
+     "src": "img/whh_service_van.jpg",
+     "at": 5.55
+    },
+    {
+     "label": "No fuel contract",
+     "src": "img/whh_fuel_contract.jpg",
+     "at": 7.01
+    }
+   ]
+  },
+  {
+   "id": "wholehomeheat_f161",
    "start": 923.74,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_filters_four.mp4",
+   "side": "right",
+   "kicker": "Filters four",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.02,
-   "noSplit": true
+   "dur": 3.02
   },
   {
    "id": "wholehomeheat_162",
@@ -2405,14 +2496,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_169",
+   "id": "wholehomeheat_f169",
    "start": 951.44,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_power_line_ice.mp4",
+   "side": "left",
+   "kicker": "Power line ice",
    "hue": "amber",
-   "darken": 0,
-   "dur": 3.68,
-   "noSplit": true
+   "dur": 3.68
   },
   {
    "id": "wholehomeheat_170",
@@ -2476,14 +2567,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_173",
+   "id": "wholehomeheat_f173",
    "start": 965.92,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_soup_stove.mp4",
+   "side": "right",
+   "kicker": "Soup stove",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_174",
@@ -2568,14 +2659,14 @@
    "dur": 6.38
   },
   {
-   "id": "wholehomeheat_180",
+   "id": "wholehomeheat_f180",
    "start": 1010.3,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_recap_mass.mp4",
+   "side": "left",
+   "kicker": "Recap mass",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_181",
@@ -2635,14 +2726,14 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_185",
+   "id": "wholehomeheat_f185",
    "start": 1040.16,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_recap_codetect.mp4",
+   "side": "right",
+   "kicker": "Recap codetect",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_186",
@@ -2726,14 +2817,14 @@
    "dur": 5.42
   },
   {
-   "id": "wholehomeheat_192",
+   "id": "wholehomeheat_f192",
    "start": 1091.74,
-   "kind": "raw",
+   "kind": "float",
    "src": "broll/whh_thrown_out.mp4",
+   "side": "left",
+   "kicker": "Thrown out",
    "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 4
   },
   {
    "id": "wholehomeheat_193",
@@ -2742,7 +2833,7 @@
    "src": "img/whh_presenter_house.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.2
+   "dur": 1.42
   },
   {
    "id": "wholehomeheat_194",
