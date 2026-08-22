@@ -299,7 +299,10 @@ const CMP = [
   { phrase: "La nariz tiene que ir por delante", kind: "frasecinetica", tone: "teal", words: [
     { t: "LA" }, { t: "NARIZ" }, { t: "POR" }, { t: "DELANTE" }, { t: "DE" }, { t: "LOS" }, { t: "DEDOS", hl: true },
   ] },
+  // ⚠ BlurExplainer tipa `clip: string` (NO opcional) y hace Media src={clip}: sin clip de fondo
+  //   revienta con "undefined was passed to staticFile()" — costó el chunk 37 de la 1ra corrida.
   { phrase: "Inclina el torso nariz adelante", kind: "blurexplainer", image: I("be_nariz"),
+    clip: `broll/${SLUG}_p1_caesfrente.mp4`,
     eyebrow: "El truco que casi nadie dice", title: "Nariz por delante de los dedos",
     body: "Con la espalda de soldado el peso queda atrás y no hay fuerza que alcance.", side: "left" },
   { phrase: "La segunda y esta es la que a mi", kind: "errorstinger", number: "02", title: "La rodilla a la pared", eyebrow: "PASO", tone: "teal" },
