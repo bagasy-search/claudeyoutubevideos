@@ -124,9 +124,12 @@ export const ChecklistReveal: React.FC<{
   title?: string;
   items?: string[];
   stamp?: string;
+  /** rótulo de arriba. Default en español; los canales en INGLÉS DEBEN pasarlo. */
+  kicker?: string;
 }> = ({
   durationInFrames,
   theme,
+  kicker = "Cómo darte cuenta",
   title = "Antes de empezar, tené esto",
   items = ["Guantes gruesos", "Balde de 20 litros", "Vinagre blanco", "Un día sin lluvia"],
   stamp = "TODO LISTO",
@@ -167,7 +170,7 @@ export const ChecklistReveal: React.FC<{
             justifyContent: "center",
           }}
         >
-          <Kicker theme={t} at={2} size={28}>Cómo darte cuenta</Kicker>
+          <Kicker theme={t} at={2} size={28}>{kicker}</Kicker>
           <Headline theme={t} at={8} size={titleSize} style={{ marginTop: 18 }}>
             {title}
           </Headline>

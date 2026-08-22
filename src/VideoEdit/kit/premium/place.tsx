@@ -68,9 +68,12 @@ export const TimelinePlayhead: React.FC<{
   theme?: Theme;
   title?: string;
   events?: TimeEvent[];
+  /** rótulo de arriba. Default en español; los canales en INGLÉS DEBEN pasarlo. */
+  eyebrow?: string;
 }> = ({
   durationInFrames,
   theme,
+  eyebrow = "Línea de tiempo",
   title = "Cien años del mismo truco",
   events = [
     { year: "1920", label: "Los abuelos lo usaban" },
@@ -91,7 +94,7 @@ export const TimelinePlayhead: React.FC<{
     <Stage theme={t} style={{ opacity: op }}>
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={40}>
         <div style={{ position: "absolute", top: 66, left: 0, right: 0, textAlign: "center" }}>
-          <Eyebrow theme={t} style={{ justifyContent: "center" }}>Línea de tiempo</Eyebrow>
+          <Eyebrow theme={t} style={{ justifyContent: "center" }}>{eyebrow}</Eyebrow>
           <Display theme={t} size={56} style={{ marginTop: 10 }}>{title}</Display>
         </div>
         <svg viewBox="0 0 1800 960" width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
