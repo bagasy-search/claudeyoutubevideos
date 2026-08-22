@@ -1845,6 +1845,8 @@
    "comp": "LayerStack",
    "theme": "earth",
    "zone": "full",
+   "kicker": "HOW IT SHRINKS",
+   "eyebrow": "HOW IT SHRINKS",
    "title": "Every step, you stop heating space you are not in",
    "layers": [
     {

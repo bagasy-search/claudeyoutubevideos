@@ -618,7 +618,7 @@ const PREMIUM = [
     bullets: ["Heat it, wrap it, in the bed 20 min early", "A gallon at 160°F ≈ 600 BTU", "Gives it back over six to eight hours", "Warm the glass first — never boiling"],
   }, 5),
   C("LayerStack", "think about what we just did", 6.4, "full", {
-    title: "Every step, you stop heating space you are not in", layers: [
+    kicker: "HOW IT SHRINKS", eyebrow: "HOW IT SHRINKS", title: "Every step, you stop heating space you are not in", layers: [
       { label: "The whole house — 1,800 sq ft" },
       { label: "One room — about 140 sq ft" },
       { label: "One bed — where you actually are" },
