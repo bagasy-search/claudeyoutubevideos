@@ -48,7 +48,7 @@ const Half: React.FC<{
       {/* PRECIO */}
       <div style={{ position: "absolute", left: 0, right: 0, top: 150, display: "flex", flexDirection: "column", alignItems: "center", opacity: tag }}>
         <div style={{ transform: `translateY(${tagY}px) scale(${punch})` }}>
-          <span style={{ fontSize: 250, fontWeight: 900, lineHeight: 0.9, color: tone === "teal" ? TEAL : CREAM, textShadow: `0 12px 50px ${accent}77, 0 4px 0 rgba(0,0,0,0.4)`, WebkitTextStroke: tone === "teal" ? "0" : `2px ${DANGER}` }}>{price}</span>
+          <span style={{ fontSize: Math.min(250, Math.round(250 * 6 / Math.max(6, String(price).length))), fontWeight: 900, lineHeight: 0.9, color: tone === "teal" ? TEAL : CREAM, textShadow: `0 12px 50px ${accent}77, 0 4px 0 rgba(0,0,0,0.4)`, WebkitTextStroke: tone === "teal" ? "0" : `2px ${DANGER}` }}>{price}</span>
         </div>
         {strike && (
           <div style={{ position: "relative", marginTop: 6, opacity: strikeSp }}>

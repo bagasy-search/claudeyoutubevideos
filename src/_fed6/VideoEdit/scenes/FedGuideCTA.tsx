@@ -20,11 +20,16 @@ const BRASS = "#C79A3B";
 export const FedGuideCTA: React.FC<{
   durationInFrames: number;
   cover: string;
-  qr: string;
+  qr?: string;
+  domain?: string;
+  scanTitle?: string;
+  scanSub?: string;
   title?: string;
   kicker?: string;
   desc?: string;
-}> = ({ durationInFrames: D, cover, qr, title = "The Youthful Skin Method", kicker = "The complete guide", desc = "" }) => {
+}> = ({ durationInFrames: D, cover, qr, domain = "docfederer.com", scanTitle = "Scan me",
+        scanSub = "or the free link in the description",
+        title = "The Youthful Skin Method", kicker = "The complete guide", desc = "" }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
@@ -54,13 +59,15 @@ export const FedGuideCTA: React.FC<{
 
             {/* fila QR */}
             <div style={{ display: "flex", alignItems: "center", gap: 26, marginTop: 40, opacity: interpolate(frame, [26, 40], [0, 1], cl) }}>
-              <div style={{ background: "#fff", padding: 16, borderRadius: 18, boxShadow: `0 14px 34px rgba(0,0,0,0.4)`, transform: `scale(${qrPulse})`, border: `3px solid ${TEAL}` }}>
-                <Media src={qr} style={{ display: "block", width: 168, height: 168, objectFit: "contain" }} />
-              </div>
+              {qr ? (
+                <div style={{ background: "#fff", padding: 16, borderRadius: 18, boxShadow: `0 14px 34px rgba(0,0,0,0.4)`, transform: `scale(${qrPulse})`, border: `3px solid ${TEAL}` }}>
+                  <Media src={qr} style={{ display: "block", width: 168, height: 168, objectFit: "contain" }} />
+                </div>
+              ) : null}
               <div>
-                <div style={{ fontFamily: INTER, fontWeight: 900, fontSize: 34, color: CREAM, letterSpacing: 1 }}>Scan me</div>
-                <div style={{ fontFamily: INTER, fontWeight: 600, fontSize: 25, color: "rgba(245,241,230,0.72)", marginTop: 6 }}>or the free link in the description</div>
-                <div style={{ display: "inline-block", marginTop: 12, padding: "9px 20px", borderRadius: 999, background: `linear-gradient(150deg, ${TEAL}, #0c8f8b)`, color: "#04252a", fontWeight: 900, fontSize: 24, letterSpacing: 0.5, boxShadow: `0 10px 26px ${TEAL}55` }}>docfederer.com</div>
+                <div style={{ fontFamily: INTER, fontWeight: 900, fontSize: 34, color: CREAM, letterSpacing: 1 }}>{scanTitle}</div>
+                <div style={{ fontFamily: INTER, fontWeight: 600, fontSize: 25, color: "rgba(245,241,230,0.72)", marginTop: 6 }}>{scanSub}</div>
+                <div style={{ display: "inline-block", marginTop: 12, padding: "9px 20px", borderRadius: 999, background: `linear-gradient(150deg, ${TEAL}, #0c8f8b)`, color: "#04252a", fontWeight: 900, fontSize: 24, letterSpacing: 0.5, boxShadow: `0 10px 26px ${TEAL}55` }}>{domain}</div>
               </div>
             </div>
           </div>
