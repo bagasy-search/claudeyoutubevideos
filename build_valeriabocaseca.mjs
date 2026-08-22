@@ -69,7 +69,7 @@ S('pero antes dejeme presentarle a carmen', 'hero', {kicker: 'Una paciente real'
 S('la saliva no es agua', 'checklist', {kicker: 'Lo que hace su saliva cada noche', title: 'El líquido más inteligente del cuerpo', hot: ['inteligente'], items: ['Repara el esmalte con calcio y fosfato', 'Frena a millones de bacterias', 'Lubrica y protege la mucosa', 'Empieza la digestión antes del estómago'], mood: 'science'});
 S('pasan cuatro cosas a la vez', 'checklist', {kicker: 'Por qué justo ahora', title: 'Cuatro cosas pasan a la vez', hot: ['Cuatro'], items: ['Las glándulas producen menos y más espeso', 'Casi todas tomamos alguna pastilla', 'La sed llega tarde: el aviso se apaga', 'La menopausia reseca las mucosas'], mood: 'gold'});
 S('la sensacion de sed se apaga con la edad', 'hero', {kicker: 'El dato que casi nadie sabe', title: 'A esta edad la sed llega tarde', hot: ['tarde'], sub: 'Puede estar deshidratada de verdad y no sentir nada.', image: hero('agua'), side: 'left', mood: 'cool'});
-S('se estima que alrededor de una de cada cuatro personas', 'stat', {kicker: 'Mayores de 65 años', value: 1, label: 'de cada 4 convive con la boca seca', sub: 'Y entre quienes toman varias pastillas, muchísimos más.', image: imgOf('v054'), mood: 'science', decimals: 0});
+S('se estima que alrededor de una de cada cuatro personas', 'stat', {suffix: '', kicker: 'Mayores de 65 años', value: 1, label: 'de cada 4 convive con la boca seca', sub: 'Y entre quienes toman varias pastillas, muchísimos más.', image: imgOf('v054'), mood: 'science', decimals: 0});
 S('que sea frecuente no significa que sea normal', 'quote', {kicker: 'La frase más importante del vídeo', quote: 'Frecuente y normal no son la misma cosa.', author: 'Dra. Valeria Alcázar', role: 'Medicina estética', image: hero('consulta'), mood: 'gold'});
 
 /* ---- SEÑAL 1 · APNEA ---- */
@@ -86,8 +86,8 @@ S('es el mensajero y matar', 'hero', {kicker: 'No mate al mensajero', title: 'La
 
 /* ---- SEÑAL 3 · LOS MEDICAMENTOS (la causa nº 1) ---- */
 S('senal numero 3', 'chapter', {kicker: 'Señal', index: 'N.º 03', title: 'Su lista de medicamentos', sub: 'La causa número uno a esta edad. Probablemente la suya.'});
-S('4 pastillas cada manana', 'stat', {kicker: 'El pastillero de Carmen', value: 4, label: 'pastillas cada mañana', sub: 'Tensión, diurético, antihistamínico y una para dormir.', image: hero('pastillero'), mood: 'gold', decimals: 0});
-S('medicamentos de uso corriente que resecan la boca', 'stat', {kicker: 'Efecto secundario', value: 400, prefix: '+', label: 'medicamentos corrientes resecan la boca', sub: 'No son medicinas raras: son las de todos los días.', image: imgOf('v097'), mood: 'science', decimals: 0});
+S('4 pastillas cada manana', 'stat', {suffix: '', kicker: 'El pastillero de Carmen', value: 4, label: 'pastillas cada mañana', sub: 'Tensión, diurético, antihistamínico y una para dormir.', image: hero('pastillero'), mood: 'gold', decimals: 0});
+S('medicamentos de uso corriente que resecan la boca', 'stat', {suffix: '', kicker: 'Efecto secundario', value: 400, prefix: '+', label: 'medicamentos corrientes resecan la boca', sub: 'No son medicinas raras: son las de todos los días.', image: imgOf('v097'), mood: 'science', decimals: 0});
 S('son las de todos los dias', 'checklist', {kicker: 'Las que están en casi todos los pastilleros', title: 'Las de todos los días', hot: ['días'], items: ['Tensión, y sobre todo los diuréticos', 'Antihistamínicos de la alergia', 'Antidepresivos y ansiolíticos', 'Pastillas para dormir', 'Vejiga, mareo y dolor'], mood: 'science'});
 S('usted no va a suspender ni a reducir', 'hero', {kicker: 'Orden médica', title: 'No suspenda nada por su cuenta', hot: ['nada'], sub: 'Jamás. Lo que hay que hacer es otra cosa, mucho más inteligente.', image: hero('receta'), side: 'right', mood: 'alert'});
 S('le va a decir a su medico esta frase exacta', 'quote', {kicker: 'Dígalo con estas palabras', quote: 'Doctor, tengo la boca muy seca por las noches: ¿alguno de estos medicamentos me la puede estar resecando?', author: 'La frase que abre la conversación', role: 'Llévela apuntada', image: imgOf('v109'), mood: 'gold'});
@@ -107,7 +107,7 @@ S('no lo aguante callada', 'quote', {kicker: 'Se ve, se trata y se acaba', quote
 
 /* ---- SEÑAL 6 · CARIES DEL CUELLO ---- */
 S('senal numero 6', 'chapter', {kicker: 'Señal', index: 'N.º 06', title: 'Encías que sangran y caries nuevas', sub: 'A una edad en la que ya no debería tenerlas.'});
-S('le encontraron 5', 'stat', {kicker: 'Veinte años sin una caries', value: 5, label: 'caries en una sola revisión', sub: 'No fue mala suerte: se le había secado la boca.', image: imgOf('v145'), mood: 'alert', decimals: 0});
+S('le encontraron 5', 'stat', {suffix: '', kicker: 'Veinte años sin una caries', value: 5, label: 'caries en una sola revisión', sub: 'No fue mala suerte: se le había secado la boca.', image: imgOf('v145'), mood: 'alert', decimals: 0});
 S('esas son las caries de la boca seca', 'beforeafter', {kicker: 'La reparación que ocurre mientras duerme', title: 'Con saliva y sin saliva', hot: ['saliva'], imageA: imgOf('v148'), imageB: imgOf('v254'), labelA: 'Con saliva: el esmalte se repara', labelB: 'Sin saliva: el esmalte se pica', mood: 'science'});
 S('su dentista exactamente estas cuatro palabras', 'quote', {kicker: 'Cuatro palabras que cambian la revisión', quote: 'Tengo la boca seca.', author: 'Dígaselo a su dentista', role: 'Le cambia el plan entero', image: imgOf('v118'), mood: 'gold'});
 
