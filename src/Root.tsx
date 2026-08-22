@@ -108,6 +108,7 @@ import { MainMeatyears, TOTAL_FRAMES_MEATYEARS } from "./VideoEdit/Main_meatyear
 import { MainCywater, TOTAL_FRAMES_CYWATER } from "./VideoEdit/Main_cywater";
 import { MainAmishdolly, TOTAL_FRAMES_AMISHDOLLY } from "./VideoEdit/Main_amishdolly";
 import { MainWaterwell, TOTAL_FRAMES_WATERWELL } from "./VideoEdit/Main_waterwell";
+import { MainWholehomeheat, TOTAL_FRAMES_WHOLEHOMEHEAT } from "./VideoEdit/Main_wholehomeheat";
 import { MainAmishpantry, TOTAL_FRAMES_AMISHPANTRY } from "./VideoEdit/Main_amishpantry";
 import { MainMolino, TOTAL_FRAMES_MOLINO } from "./VideoEdit/Main_molino";
 import { MainLeche, TOTAL_FRAMES_LECHE } from "./VideoEdit/Main_leche";
@@ -361,6 +362,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Cywater" component={MainCywater} durationInFrames={TOTAL_FRAMES_CYWATER} fps={30} width={1920} height={1080} />
       <Composition id="Amishdolly" component={MainAmishdolly} durationInFrames={TOTAL_FRAMES_AMISHDOLLY} fps={30} width={1920} height={1080} />
       <Composition id="Waterwell" component={MainWaterwell} durationInFrames={TOTAL_FRAMES_WATERWELL} fps={30} width={1920} height={1080} />
+      <Composition id="Wholehomeheat" component={MainWholehomeheat} durationInFrames={TOTAL_FRAMES_WHOLEHOMEHEAT} fps={30} width={1920} height={1080} />
       <Composition id="Amishpantry" component={MainAmishpantry} durationInFrames={TOTAL_FRAMES_AMISHPANTRY} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Keep food cold with no fridge / zeer pot (Claudio · off-grid EN) */}
       <Composition
