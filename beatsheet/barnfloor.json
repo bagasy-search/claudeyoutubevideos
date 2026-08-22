@@ -1,0 +1,2643 @@
+{
+ "slug": "barnfloor",
+ "total": 1237.8,
+ "beats": [
+  {
+   "id": "barnfloor_1",
+   "start": 6.96,
+   "kind": "raw",
+   "src": "broll/bf_boot_crack.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.6,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_1t",
+   "start": 13.56,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_boot_crack.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.62
+  },
+  {
+   "id": "ov_bigstatreveal_15",
+   "start": 15.18,
+   "dur": 4.78,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "THE QUOTE",
+   "value": 4600,
+   "prefix": "$",
+   "support": "to resurface 800 sq ft of cow alley"
+  },
+  {
+   "id": "barnfloor_6",
+   "start": 28.88,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_three_patches.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 12.74
+  },
+  {
+   "id": "ov_layerstack_34",
+   "start": 33.96,
+   "dur": 7.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Three repairs, one crack",
+   "layers": [
+    {
+     "label": "Grey — years ago"
+    },
+    {
+     "label": "White — the season after"
+    },
+    {
+     "label": "Tan — a $38 bucket, two springs back"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_7",
+   "start": 41.62,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_snakeskin_patch.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9
+  },
+  {
+   "id": "barnfloor_13",
+   "start": 71.32,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_two_bags.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.32
+  },
+  {
+   "id": "ov_bigstatreveal_71",
+   "start": 71.32,
+   "dur": 5.53,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "WHAT IT COST US",
+   "value": 29,
+   "prefix": "$",
+   "support": "two weekends, and one winter on it so far"
+  },
+  {
+   "id": "barnfloor_14",
+   "start": 76.64,
+   "kind": "raw",
+   "src": "broll/bf_barn_winter.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.84,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_h16",
+   "start": 86.84,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_serious.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.76
+  },
+  {
+   "id": "ov_highlightsweep_94",
+   "start": 93.6,
+   "dur": 4.16,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "bottom",
+   "pre": "",
+   "highlight": "Not every crack should be patched",
+   "post": ""
+  },
+  {
+   "id": "barnfloor_h21",
+   "start": 120.38,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_intro.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.44
+  },
+  {
+   "id": "ov_framedphoto_120",
+   "start": 120.38,
+   "dur": 5.17,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "right",
+   "image": "img/barnfloor/bfp_claudio_intro.jpg",
+   "caption": "Claudio",
+   "sub": "Lancaster County · 22 years of barn floors",
+   "typewriter": true,
+   "kenburns": true
+  },
+  {
+   "id": "barnfloor_22",
+   "start": 123.82,
+   "kind": "raw",
+   "src": "broll/bf_pack_mortar.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.38,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_h25",
+   "start": 138.1,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_explain.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.6
+  },
+  {
+   "id": "ov_numberedsteps_150",
+   "start": 150.12,
+   "dur": 10.96,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "WHY THEY GO",
+   "title": "Four things crack a barn floor",
+   "steps": [
+    {
+     "title": "Poured too wet",
+     "sub": "born cracked"
+    },
+    {
+     "title": "Manure acid",
+     "sub": "eats the paste"
+    },
+    {
+     "title": "Point loads",
+     "sub": "a skid steer on four inches"
+    },
+    {
+     "title": "Frost",
+     "sub": "ice pries it open"
+    }
+   ]
+  },
+  {
+   "id": "ov_mythtruth_165",
+   "start": 164.7,
+   "dur": 6.32,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "myth": "More water makes it easier",
+   "truth": "More water makes it weaker",
+   "mythLabel": "FEELS RIGHT",
+   "truthLabel": "TRUE"
+  },
+  {
+   "id": "barnfloor_31",
+   "start": 171.14,
+   "kind": "raw",
+   "src": "broll/bf_trowel_shine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_32",
+   "start": 175.38,
+   "kind": "raw",
+   "src": "broll/bf_barrow_tip.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.42,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_h33",
+   "start": 180.8,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_admit.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.4
+  },
+  {
+   "id": "barnfloor_36",
+   "start": 192.66,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_broken_chunk.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7
+  },
+  {
+   "id": "ov_cutawaycallouts_196",
+   "start": 195.62,
+   "dur": 7.03,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "INSIDE A WET POUR",
+   "title": "Where the strength went",
+   "image": "img/barnfloor/bf_broken_chunk.jpg",
+   "callouts": [
+    {
+     "text": "Stone",
+     "tx": 0.3,
+     "ty": 0.38
+    },
+    {
+     "text": "Paste",
+     "sub": "the glue",
+     "tx": 0.62,
+     "ty": 0.52,
+     "side": "right"
+    },
+    {
+     "text": "Holes the extra water left",
+     "tx": 0.44,
+     "ty": 0.72
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_40",
+   "start": 220.34,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_sandy_surface.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.58
+  },
+  {
+   "id": "ov_highlightsweep_233",
+   "start": 233.16,
+   "dur": 4.94,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "bottom",
+   "pre": "Manure acid ",
+   "highlight": "eats the glue and leaves the gravel",
+   "post": "."
+  },
+  {
+   "id": "barnfloor_43",
+   "start": 239.68,
+   "kind": "raw",
+   "src": "broll/bf_hoof_step.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.94,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_45",
+   "start": 249.34,
+   "kind": "raw",
+   "src": "broll/bf_slab_edge_dirt.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.9,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_46",
+   "start": 258.24,
+   "kind": "raw",
+   "src": "broll/bf_loader_turn.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.86,
+   "noSplit": true
+  },
+  {
+   "id": "ov_splitpanel_265",
+   "start": 264.82,
+   "dur": 8.1,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "WEAK POINTS",
+   "title": "Where it always goes",
+   "image": "img/barnfloor/bf_doorway_crack.jpg",
+   "bullets": [
+    "The doorway",
+    "The drain",
+    "The corner",
+    "The gutter lip",
+    "Where the slab changes thickness"
+   ]
+  },
+  {
+   "id": "barnfloor_48",
+   "start": 268.7,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_gutter_lip.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08
+  },
+  {
+   "id": "barnfloor_50",
+   "start": 275.8,
+   "kind": "raw",
+   "src": "broll/bf_ice_bulge.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.68,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_278",
+   "start": 278.04,
+   "dur": 4.04,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "FROST",
+   "value": 9,
+   "suffix": "%",
+   "support": "more room than the water was"
+  },
+  {
+   "id": "ov_timelineplayhead_282",
+   "start": 282.48,
+   "dur": 7.87,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "TimelinePlayhead",
+   "theme": "earth",
+   "zone": "full",
+   "title": "One winter, forty times over",
+   "events": [
+    {
+     "year": "OCT",
+     "label": "first freeze"
+    },
+    {
+     "year": "NOV",
+     "label": "freeze and thaw"
+    },
+    {
+     "year": "JAN",
+     "label": "ice wedges it wider"
+    },
+    {
+     "year": "APR",
+     "label": "a quarter inch gap"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_52",
+   "start": 287.5,
+   "kind": "raw",
+   "src": "broll/bf_gap_dime.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_305",
+   "start": 304.86,
+   "dur": 8.87,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "BEFORE YOU BUY ANYTHING",
+   "title": "The five-minute test",
+   "nodes": [
+    {
+     "label": "One side higher?",
+     "sub": "settlement"
+    },
+    {
+     "label": "Dead straight?",
+     "sub": "a joint"
+    },
+    {
+     "label": "Does it move?",
+     "sub": "pencil line"
+    },
+    {
+     "label": "Is it wet?",
+     "sub": "drainage"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_57",
+   "start": 315.14,
+   "kind": "raw",
+   "src": "broll/bf_hand_drag.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.26,
+   "noSplit": true
+  },
+  {
+   "id": "ov_framedphoto_315",
+   "start": 315.14,
+   "dur": 4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "right",
+   "image": "img/barnfloor/bf_hand_drag.jpg",
+   "caption": "Eyes shut. Feel for the lip.",
+   "typewriter": true
+  },
+  {
+   "id": "barnfloor_58",
+   "start": 320.4,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_lip_step.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.5
+  },
+  {
+   "id": "ov_stampbadge_327",
+   "start": 327.14,
+   "dur": 4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "top",
+   "text": "DO NOT PATCH",
+   "sub": "that one is settlement",
+   "x": 0.5,
+   "y": 0.3
+  },
+  {
+   "id": "barnfloor_60",
+   "start": 329.12,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_slab_dropped.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.74
+  },
+  {
+   "id": "ov_highlightsweep_342",
+   "start": 342.14,
+   "dur": 4.53,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "bottom",
+   "pre": "Settlement is ",
+   "highlight": "a soil problem",
+   "post": ", not a cement problem."
+  },
+  {
+   "id": "barnfloor_63",
+   "start": 344.1,
+   "kind": "raw",
+   "src": "broll/bf_mudjack_holes.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.34,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_66",
+   "start": 359.44,
+   "kind": "raw",
+   "src": "broll/bf_joint_wall_wall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_67",
+   "start": 364.54,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_groove_crack.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.98
+  },
+  {
+   "id": "ov_mythtruth_365",
+   "start": 364.54,
+   "dur": 7.07,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "myth": "A straight crack is a bad crack",
+   "truth": "It is a control joint, doing its job",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "barnfloor_69",
+   "start": 379.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_popped_lump.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.88
+  },
+  {
+   "id": "barnfloor_71",
+   "start": 388.54,
+   "kind": "raw",
+   "src": "broll/bf_draw_line.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.88,
+   "noSplit": true
+  },
+  {
+   "id": "ov_framedphoto_389",
+   "start": 388.54,
+   "dur": 5.23,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "left",
+   "image": "img/barnfloor/bf_draw_line.jpg",
+   "caption": "Draw the line. Write the date.",
+   "sub": "Come back in two months.",
+   "typewriter": true
+  },
+  {
+   "id": "barnfloor_72",
+   "start": 395.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_line_marked.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34
+  },
+  {
+   "id": "barnfloor_73",
+   "start": 399.76,
+   "kind": "raw",
+   "src": "broll/bf_frost_yard.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68,
+   "noSplit": true
+  },
+  {
+   "id": "ov_beforeafter_406",
+   "start": 406.38,
+   "dur": 5.62,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "THE PENCIL LINE",
+   "beforeLabel": "STILL",
+   "afterLabel": "MOVING",
+   "beforeImage": "img/barnfloor/bf_line_aligned.jpg",
+   "afterImage": "img/barnfloor/bf_line_offset.jpg",
+   "caption": "One gets cement. One gets sealant."
+  },
+  {
+   "id": "barnfloor_75",
+   "start": 407.62,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_crack_wider.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "barnfloor_76",
+   "start": 412.52,
+   "kind": "raw",
+   "src": "broll/bf_wall_floor_crack.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.66,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_417",
+   "start": 417.18,
+   "dur": 8.16,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "left",
+   "kicker": "WILL NOT HOLD IT",
+   "title": "On a moving crack",
+   "items": [
+    "Plain portland",
+    "The expensive bagged patch",
+    "The kind with fibres",
+    "Epoxy"
+   ],
+   "stamp": "NONE OF THEM"
+  },
+  {
+   "id": "ov_highlightsweep_428",
+   "start": 428.24,
+   "dur": 4.96,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "bottom",
+   "pre": "A moving crack gets ",
+   "highlight": "a flexible sealant",
+   "post": " — about two dollars."
+  },
+  {
+   "id": "barnfloor_81",
+   "start": 439.7,
+   "kind": "raw",
+   "src": "broll/bf_salt_ring.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.06,
+   "noSplit": true
+  },
+  {
+   "id": "ov_cutawaycallouts_442",
+   "start": 442,
+   "dur": 7.16,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "WATER FROM UNDERNEATH",
+   "title": "What the salt ring means",
+   "image": "img/barnfloor/bf_salt_ring.jpg",
+   "callouts": [
+    {
+     "text": "Efflorescence",
+     "sub": "minerals the water left",
+     "tx": 0.34,
+     "ty": 0.44
+    },
+    {
+     "text": "Damp coming up",
+     "tx": 0.64,
+     "ty": 0.6,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_82",
+   "start": 445.76,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_efflor_crust.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.72
+  },
+  {
+   "id": "barnfloor_84",
+   "start": 459.88,
+   "kind": "raw",
+   "src": "broll/bf_hydraulic_tub.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_90",
+   "start": 489,
+   "kind": "raw",
+   "src": "broll/bf_book_shelf.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.3,
+   "noSplit": true
+  },
+  {
+   "id": "ov_ctacard_490",
+   "start": 490.38,
+   "dur": 9.51,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "IF YOU WANT IT ON PAPER",
+   "title": "The Plain Almanac",
+   "bullet": "Ratios and cure times, in the slab and stone section",
+   "cta": "Link above the description",
+   "image": "img/barnfloor/bf_book_shelf.jpg"
+  },
+  {
+   "id": "barnfloor_h95",
+   "start": 515.44,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_first_thing.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.52
+  },
+  {
+   "id": "ov_highlightsweep_523",
+   "start": 522.64,
+   "dur": 4.23,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "",
+   "highlight": "Get the barn out of the barn floor",
+   "post": ""
+  },
+  {
+   "id": "barnfloor_98",
+   "start": 528.82,
+   "kind": "raw",
+   "src": "broll/bf_roots_rock.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.7,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_530",
+   "start": 530.2,
+   "dur": 7.69,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "HOW A PATCH HOLDS",
+   "title": "It does not glue. It grows in.",
+   "nodes": [
+    {
+     "label": "Open pores"
+    },
+    {
+     "label": "Slurry wets them"
+    },
+    {
+     "label": "Crystals grow down"
+    },
+    {
+     "label": "Locked in"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_100",
+   "start": 541.56,
+   "kind": "raw",
+   "src": "broll/bf_stained_floor.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_101",
+   "start": 546.02,
+   "kind": "raw",
+   "src": "broll/bf_oil_stain.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.3,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_104",
+   "start": 560.16,
+   "kind": "raw",
+   "src": "broll/bf_water_soaks.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.29,
+   "noSplit": true
+  },
+  {
+   "id": "ov_beforeafter_563",
+   "start": 562.8,
+   "dur": 6.51,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "THE WATER-BREAK TEST",
+   "beforeLabel": "BEADS UP",
+   "afterLabel": "SOAKS IN",
+   "beforeImage": "img/barnfloor/bf_water_beads.jpg",
+   "afterImage": "img/barnfloor/bf_water_soaks.jpg",
+   "caption": "Four seconds. It decides the whole job."
+  },
+  {
+   "id": "barnfloor_106",
+   "start": 570.62,
+   "kind": "raw",
+   "src": "broll/bf_sheet_peel.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.52,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_108",
+   "start": 581.82,
+   "kind": "raw",
+   "src": "broll/bf_powder_bucket.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_109",
+   "start": 585.5,
+   "kind": "raw",
+   "src": "broll/bf_steam_bucket.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_110",
+   "start": 589.78,
+   "kind": "raw",
+   "src": "broll/bf_foam_scrub.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68,
+   "noSplit": true
+  },
+  {
+   "id": "ov_stampbadge_599",
+   "start": 598.64,
+   "dur": 4.89,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "top",
+   "text": "NO ACID",
+   "sub": "you would be feeding what is eating it",
+   "x": 0.5,
+   "y": 0.28
+  },
+  {
+   "id": "barnfloor_114",
+   "start": 605.5,
+   "kind": "raw",
+   "src": "broll/bf_pitted_floor.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_115",
+   "start": 612.1,
+   "kind": "raw",
+   "src": "broll/bf_dust_doorway.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.48,
+   "noSplit": true
+  },
+  {
+   "id": "ov_mythtruth_612",
+   "start": 612.24,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "myth": "Feather the edge so it blends",
+   "truth": "Square it, then undercut it",
+   "mythLabel": "INSTINCT",
+   "truthLabel": "DO THIS"
+  },
+  {
+   "id": "barnfloor_116",
+   "start": 616,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_feather_edge.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "barnfloor_117",
+   "start": 619.66,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_thin_flake.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "barnfloor_118",
+   "start": 623.8,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_water_under.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "barnfloor_119",
+   "start": 628,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_v_groove.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "ov_cutawaycallouts_628",
+   "start": 628,
+   "dur": 7.26,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "THE CUT",
+   "title": "Like a dovetail in a drawer",
+   "image": "img/barnfloor/bf_undercut_channel.jpg",
+   "callouts": [
+    {
+     "text": "Narrow at the top",
+     "tx": 0.5,
+     "ty": 0.3
+    },
+    {
+     "text": "Wider at the bottom",
+     "sub": "it cannot lift out",
+     "tx": 0.5,
+     "ty": 0.7,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_120",
+   "start": 632.48,
+   "kind": "raw",
+   "src": "broll/bf_dovetail_pine.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.86,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_121",
+   "start": 637.34,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_undercut_channel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.46
+  },
+  {
+   "id": "barnfloor_122",
+   "start": 641.8,
+   "kind": "raw",
+   "src": "broll/bf_chisel_hammer.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_123",
+   "start": 646.02,
+   "kind": "raw",
+   "src": "broll/bf_grinder_cut.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_647",
+   "start": 647.18,
+   "dur": 6.25,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "PREP",
+   "title": "Before anything goes in",
+   "steps": [
+    {
+     "title": "Chisel the undercut"
+    },
+    {
+     "title": "Wire brush the channel"
+    },
+    {
+     "title": "Vacuum it twice"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_124",
+   "start": 650.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_mask_nail.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "barnfloor_125",
+   "start": 654.12,
+   "kind": "raw",
+   "src": "broll/bf_vacuum_channel.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_h126",
+   "start": 660.4,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_hose_dusk.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.32
+  },
+  {
+   "id": "barnfloor_127",
+   "start": 662.72,
+   "kind": "raw",
+   "src": "broll/bf_barn_dusk.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.42,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_128",
+   "start": 667.14,
+   "kind": "raw",
+   "src": "broll/bf_hose_crack.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_129",
+   "start": 671.38,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_wet_rags.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6
+  },
+  {
+   "id": "barnfloor_130",
+   "start": 677.38,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_wet_dry_edge.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "barnfloor_131",
+   "start": 682.48,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_mortar_dry_slab.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.2
+  },
+  {
+   "id": "ov_bigstatreveal_682",
+   "start": 682.48,
+   "dur": 6.01,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "A DRY SLAB DRINKS IT",
+   "value": 90,
+   "suffix": "s",
+   "support": "that was the water the cement needed to cure"
+  },
+  {
+   "id": "barnfloor_132",
+   "start": 688.68,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_patch_going_pale.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.02
+  },
+  {
+   "id": "barnfloor_133",
+   "start": 692.7,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_patch_looks_sound.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.32
+  },
+  {
+   "id": "barnfloor_135",
+   "start": 703.56,
+   "kind": "raw",
+   "src": "broll/bf_barn_morning.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_136",
+   "start": 708.36,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_squeegee_water.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.36
+  },
+  {
+   "id": "ov_highlightsweep_711",
+   "start": 710.88,
+   "dur": 5.64,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "bottom",
+   "pre": "Soaked inside, ",
+   "highlight": "dry on the surface",
+   "post": ". That is the whole ballgame."
+  },
+  {
+   "id": "barnfloor_137",
+   "start": 713.72,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_damp_dull.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "barnfloor_138",
+   "start": 720.1,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_hand_press_damp.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.66
+  },
+  {
+   "id": "barnfloor_139",
+   "start": 721.76,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_open_sack.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08
+  },
+  {
+   "id": "barnfloor_140",
+   "start": 725.84,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_sack_pallet.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.78
+  },
+  {
+   "id": "barnfloor_141",
+   "start": 730.62,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_three_sacks.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "barnfloor_142",
+   "start": 735.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_powder_stones.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.5
+  },
+  {
+   "id": "barnfloor_143",
+   "start": 740.92,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_soft_mortar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "ov_duelcolumns_744",
+   "start": 743.9,
+   "dur": 6.62,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "full",
+   "title": "Which sand",
+   "leftName": "PLAY SAND",
+   "rightName": "SHARP SAND",
+   "rows": [
+    {
+     "attr": "Round grains that slide",
+     "leftWins": true
+    },
+    {
+     "attr": "Corners that lock",
+     "leftWins": false
+    },
+    {
+     "attr": "Strength in the patch",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_144",
+   "start": 745.5,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_two_sands.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.02
+  },
+  {
+   "id": "barnfloor_145",
+   "start": 750.52,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_coarse_grains.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9
+  },
+  {
+   "id": "ov_statgrid_752",
+   "start": 752.08,
+   "dur": 5.39,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StatGrid",
+   "theme": "earth",
+   "zone": "full",
+   "title": "The whole shopping list",
+   "stats": [
+    {
+     "value": 16,
+     "prefix": "$",
+     "label": "Portland, 94 lb"
+    },
+    {
+     "value": 6,
+     "prefix": "$",
+     "label": "Sharp sand, 50 lb"
+    },
+    {
+     "value": 5,
+     "prefix": "$",
+     "label": "Washing soda"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_146",
+   "start": 754.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_two_sacks_wall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.5
+  },
+  {
+   "id": "barnfloor_147",
+   "start": 759.92,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_slurry_stir.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4
+  },
+  {
+   "id": "barnfloor_148",
+   "start": 763.92,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_brush_channel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "barnfloor_149",
+   "start": 770,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_channel_coated.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.56
+  },
+  {
+   "id": "barnfloor_150",
+   "start": 771.56,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_slurry_shine.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "barnfloor_151",
+   "start": 775.8,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_powder_sand_heaps.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.7
+  },
+  {
+   "id": "barnfloor_h152",
+   "start": 781.5,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_squeeze.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "ov_highlightsweep_782",
+   "start": 781.5,
+   "dur": 4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "bottom",
+   "pre": "You want it ",
+   "highlight": "barely damp",
+   "post": " — it feels wrong."
+  },
+  {
+   "id": "barnfloor_153",
+   "start": 785.78,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_squeeze_handful.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.58
+  },
+  {
+   "id": "ov_framedphoto_786",
+   "start": 785.78,
+   "dur": 5.05,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "right",
+   "image": "img/barnfloor/bfp_claudio_squeeze.jpg",
+   "caption": "Holds the fist. Breaks clean.",
+   "sub": "No water on your palm.",
+   "typewriter": true,
+   "kenburns": true
+  },
+  {
+   "id": "barnfloor_154",
+   "start": 791.36,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_fist_ball.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.64
+  },
+  {
+   "id": "barnfloor_155",
+   "start": 800.4,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_ball_broken.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.48
+  },
+  {
+   "id": "barnfloor_156",
+   "start": 802.88,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_stiff_heap.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.34
+  },
+  {
+   "id": "barnfloor_157",
+   "start": 808.22,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_soupy_slop.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.3
+  },
+  {
+   "id": "ov_numberedsteps_808",
+   "start": 808.22,
+   "dur": 6.3,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "PACKING",
+   "title": "Half an inch at a time",
+   "steps": [
+    {
+     "title": "Lay half an inch"
+    },
+    {
+     "title": "Tamp it hard"
+    },
+    {
+     "title": "Wait for the sheen"
+    },
+    {
+     "title": "Next lift"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_158",
+   "start": 813.52,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_layer_press.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.28
+  },
+  {
+   "id": "barnfloor_159",
+   "start": 819.8,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_tamp_stick.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.96
+  },
+  {
+   "id": "barnfloor_160",
+   "start": 823.76,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_mortar_tightens.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.3
+  },
+  {
+   "id": "barnfloor_161",
+   "start": 830.4,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_damp_sheen.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.02
+  },
+  {
+   "id": "barnfloor_162",
+   "start": 832.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_strike_board.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.32
+  },
+  {
+   "id": "ov_stampbadge_834",
+   "start": 834.46,
+   "dur": 4.59,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "top",
+   "text": "BROOM FINISH",
+   "sub": "never glass smooth in an alley",
+   "x": 0.5,
+   "y": 0.3
+  },
+  {
+   "id": "barnfloor_163",
+   "start": 837.74,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_polished_floor.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "barnfloor_164",
+   "start": 842.14,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_broom_finish.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.7
+  },
+  {
+   "id": "barnfloor_165",
+   "start": 847.84,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_wet_patch_dark.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4
+  },
+  {
+   "id": "barnfloor_166",
+   "start": 851.84,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_burlap_over.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.34
+  },
+  {
+   "id": "barnfloor_167",
+   "start": 857.18,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_watering_can.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.88
+  },
+  {
+   "id": "ov_bigstatreveal_857",
+   "start": 857.18,
+   "dur": 5.46,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "CURING",
+   "value": 3,
+   "suffix": " days",
+   "support": "five is better, and seven in a barn in July"
+  },
+  {
+   "id": "barnfloor_168",
+   "start": 863.06,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_pallet_block.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.58
+  },
+  {
+   "id": "ov_checklistreveal_869",
+   "start": 868.64,
+   "dur": 12.26,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "THE WHOLE REPAIR",
+   "title": "Only two of these cost money",
+   "items": [
+    "Clean it",
+    "Water-test it",
+    "Undercut it",
+    "Vacuum twice",
+    "Soak overnight",
+    "Squeegee the face",
+    "Slurry it",
+    "Pack it stiff",
+    "Tamp it hard",
+    "Keep it wet three days"
+   ],
+   "stamp": "THAT IS ALL"
+  },
+  {
+   "id": "barnfloor_169",
+   "start": 871.2,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_clean_channel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.72
+  },
+  {
+   "id": "barnfloor_170",
+   "start": 872.92,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_tools_together.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18
+  },
+  {
+   "id": "barnfloor_171",
+   "start": 877.1,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_patch_rag.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.98
+  },
+  {
+   "id": "barnfloor_172",
+   "start": 882.08,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_worn_alley.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.8
+  },
+  {
+   "id": "barnfloor_173",
+   "start": 887.88,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_stones_out.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "barnfloor_174",
+   "start": 892.08,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_topping_spread.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.36
+  },
+  {
+   "id": "ov_splitpanel_896",
+   "start": 895.52,
+   "dur": 11.78,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "THE ALLEY THAT IS GONE",
+   "title": "A bonded topping",
+   "image": "img/barnfloor/bf_topping_spread.jpg",
+   "bullets": [
+    "Three quarters of an inch to an inch",
+    "Never thinner than half an inch",
+    "Same scrub, soak and slurry",
+    "Keep it wet a full week"
+   ]
+  },
+  {
+   "id": "barnfloor_175",
+   "start": 897.44,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_topping_screed.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84
+  },
+  {
+   "id": "barnfloor_176",
+   "start": 902.28,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_floor_scrubbed.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "barnfloor_177",
+   "start": 906.5,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_chip_curl.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.04
+  },
+  {
+   "id": "barnfloor_178",
+   "start": 912.54,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_sacks_sand_pile.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.16
+  },
+  {
+   "id": "ov_rankbars_913",
+   "start": 912.54,
+   "dur": 4.53,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "RankBars",
+   "theme": "earth",
+   "zone": "full",
+   "title": "Eight hundred square feet",
+   "unit": "$",
+   "rows": [
+    {
+     "label": "The quote",
+     "value": 4600
+    },
+    {
+     "label": "Doing it yourself",
+     "value": 300
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_179",
+   "start": 918.7,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_finished_alley.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "barnfloor_180",
+   "start": 925.7,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_dry_clean_floor.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.54
+  },
+  {
+   "id": "barnfloor_181",
+   "start": 928.24,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_clear_bottle.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.7
+  },
+  {
+   "id": "barnfloor_182",
+   "start": 932.94,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_pour_tray.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.94
+  },
+  {
+   "id": "ov_framedphoto_933",
+   "start": 932.94,
+   "dur": 5.17,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "right",
+   "image": "img/barnfloor/bf_clear_bottle.jpg",
+   "caption": "Sodium silicate",
+   "sub": "About $25 a gallon. Nothing to peel.",
+   "typewriter": true
+  },
+  {
+   "id": "barnfloor_183",
+   "start": 939.88,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_liquid_soaks.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6
+  },
+  {
+   "id": "barnfloor_184",
+   "start": 945.88,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_faint_sheen.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.84
+  },
+  {
+   "id": "barnfloor_185",
+   "start": 951.72,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_clean_no_dust.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.32
+  },
+  {
+   "id": "barnfloor_186",
+   "start": 958.04,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_brush_liquid.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.68
+  },
+  {
+   "id": "ov_flowsteps_958",
+   "start": 958.04,
+   "dur": 6.78,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "ON CURED CONCRETE",
+   "title": "The hardener",
+   "nodes": [
+    {
+     "label": "Wait a month"
+    },
+    {
+     "label": "Wet the floor"
+    },
+    {
+     "label": "Brush it on"
+    },
+    {
+     "label": "Keep it moving"
+    },
+    {
+     "label": "Rinse the rest"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_187",
+   "start": 961.72,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_broom_liquid.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.42
+  },
+  {
+   "id": "barnfloor_188",
+   "start": 966.14,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_rinse_treated.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "barnfloor_189",
+   "start": 973.2,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_wet_ground_wall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.24
+  },
+  {
+   "id": "barnfloor_190",
+   "start": 975.44,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_drain_cracks.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "barnfloor_191",
+   "start": 980.08,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_downspout_away.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "ov_splitpanel_981",
+   "start": 981.46,
+   "dur": 11.87,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "FREE, AND IT DECIDES EVERYTHING",
+   "title": "Keep the water off it",
+   "image": "img/barnfloor/bf_downspout_away.jpg",
+   "bullets": [
+    "Downspouts running away",
+    "Six inches of fall in ten feet",
+    "Scrape the alley",
+    "No pressure washer on soft concrete"
+   ]
+  },
+  {
+   "id": "barnfloor_192",
+   "start": 984.6,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_splash_block.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.6
+  },
+  {
+   "id": "barnfloor_193",
+   "start": 989.2,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_graded_soil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.6
+  },
+  {
+   "id": "barnfloor_194",
+   "start": 994.8,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_scrape_alley.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.4
+  },
+  {
+   "id": "ov_checklistreveal_1002",
+   "start": 1002.44,
+   "dur": 11.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "STOP AND CALL SOMEONE",
+   "title": "Do not patch these",
+   "items": [
+    "Horizontal crack in a wall",
+    "Stepped crack through block",
+    "A slab that rocks",
+    "Anything to do with a pit",
+    "Under about fifty degrees"
+   ],
+   "stamp": "PHONE CALL"
+  },
+  {
+   "id": "barnfloor_h195",
+   "start": 1003.8,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_warn.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.28
+  },
+  {
+   "id": "barnfloor_196",
+   "start": 1006.08,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_horiz_crack_wall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.96
+  },
+  {
+   "id": "barnfloor_197",
+   "start": 1012.04,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_soil_against_wall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5
+  },
+  {
+   "id": "barnfloor_198",
+   "start": 1017.04,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_stepped_crack.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.32
+  },
+  {
+   "id": "barnfloor_199",
+   "start": 1024.36,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_slab_tilted.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "barnfloor_200",
+   "start": 1028.02,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_void_gap.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "barnfloor_201",
+   "start": 1035.2,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_pit_cover.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.22
+  },
+  {
+   "id": "barnfloor_202",
+   "start": 1037.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_grate_bolted.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.66
+  },
+  {
+   "id": "ov_stampbadge_1040",
+   "start": 1040.04,
+   "dur": 6.21,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "top",
+   "text": "PIT GAS KILLS",
+   "sub": "meters, blowers and a harness — never a Saturday job",
+   "x": 0.5,
+   "y": 0.3
+  },
+  {
+   "id": "barnfloor_203",
+   "start": 1043.08,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_meter_hose.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "barnfloor_204",
+   "start": 1048.28,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_harness_rope.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "barnfloor_205",
+   "start": 1053.72,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_frost_floor.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.36
+  },
+  {
+   "id": "barnfloor_206",
+   "start": 1059.08,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_frozen_sand.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "barnfloor_207",
+   "start": 1065.3,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_gloves_boots.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.8
+  },
+  {
+   "id": "barnfloor_208",
+   "start": 1067.1,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_wet_paste.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "ov_bigstatreveal_1069",
+   "start": 1069.08,
+   "dur": 7.07,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "WET CEMENT",
+   "value": 13,
+   "prefix": "pH ",
+   "support": "up there with drain cleaner, and it does not hurt while it burns"
+  },
+  {
+   "id": "barnfloor_209",
+   "start": 1071.32,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_cement_knee.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.7
+  },
+  {
+   "id": "barnfloor_210",
+   "start": 1077.02,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_kneel_wet.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.36
+  },
+  {
+   "id": "barnfloor_211",
+   "start": 1084.38,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_kneel_board.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "ov_checklistreveal_1084",
+   "start": 1084.38,
+   "dur": 9.41,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "left",
+   "kicker": "BEFORE YOU KNEEL",
+   "title": "Wet cement burns slowly",
+   "items": [
+    "Waterproof gloves",
+    "Rubber boots",
+    "Knees on a board",
+    "An N95, not a bandana",
+    "A doctor the same day"
+   ],
+   "stamp": "IT DOES NOT HURT"
+  },
+  {
+   "id": "barnfloor_212",
+   "start": 1088.52,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_rinse_hands.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.76
+  },
+  {
+   "id": "barnfloor_213",
+   "start": 1093.28,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_first_aid_tin.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.84
+  },
+  {
+   "id": "barnfloor_214",
+   "start": 1097.12,
+   "kind": "raw",
+   "src": "broll/bf_dust_shaft.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.98,
+   "noSplit": true
+  },
+  {
+   "id": "barnfloor_215",
+   "start": 1101.1,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_n95_bench.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6
+  },
+  {
+   "id": "barnfloor_h216",
+   "start": 1107.2,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_bags.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.32
+  },
+  {
+   "id": "barnfloor_217",
+   "start": 1108.52,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_sand_sack.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.54
+  },
+  {
+   "id": "barnfloor_218",
+   "start": 1113.06,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_tools_row.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.52
+  },
+  {
+   "id": "barnfloor_219",
+   "start": 1117.58,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_vac_bucket_wall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.02
+  },
+  {
+   "id": "ov_statgrid_1120",
+   "start": 1120.04,
+   "dur": 5.07,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StatGrid",
+   "theme": "earth",
+   "zone": "full",
+   "title": "What it actually costs",
+   "stats": [
+    {
+     "value": 25,
+     "prefix": "$",
+     "label": "Every still crack"
+    },
+    {
+     "value": 300,
+     "prefix": "$",
+     "label": "A whole alley"
+    },
+    {
+     "value": 4600,
+     "prefix": "$",
+     "label": "The quote"
+    }
+   ]
+  },
+  {
+   "id": "barnfloor_220",
+   "start": 1123.6,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_alley_even.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.94
+  },
+  {
+   "id": "barnfloor_221",
+   "start": 1130,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_slip_crumpled.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.42
+  },
+  {
+   "id": "barnfloor_h222",
+   "start": 1132.42,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_pencil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.12
+  },
+  {
+   "id": "barnfloor_223",
+   "start": 1136.54,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_knees_pencil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.36
+  },
+  {
+   "id": "barnfloor_224",
+   "start": 1142.9,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_line_aligned.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "barnfloor_225",
+   "start": 1146.96,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_joint_unfilled.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "barnfloor_226",
+   "start": 1151.86,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_narrow_gap.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.16
+  },
+  {
+   "id": "barnfloor_227",
+   "start": 1158.02,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_sealant_neat.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.96
+  },
+  {
+   "id": "ov_pullquote_1163",
+   "start": 1162.98,
+   "dur": 6.89,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "full",
+   "quote": "Everybody wants the trick. The trick is the diagnosis.",
+   "author": "Claudio",
+   "role": "Lancaster County",
+   "image": "img/barnfloor/bfp_claudio_thesis.jpg"
+  },
+  {
+   "id": "barnfloor_h228",
+   "start": 1165.4,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_thesis.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "barnfloor_229",
+   "start": 1167.9,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_book_pencil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "barnfloor_230",
+   "start": 1172.54,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_book_lantern.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62
+  },
+  {
+   "id": "ov_ctacard_1173",
+   "start": 1172.54,
+   "dur": 9.35,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "THE RATIOS, WRITTEN DOWN",
+   "title": "The Plain Almanac",
+   "bullet": "Slab and stone work, and a good deal more besides",
+   "cta": "Link above the description",
+   "image": "img/barnfloor/bf_book_lantern.jpg"
+  },
+  {
+   "id": "barnfloor_231",
+   "start": 1176.16,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_book_bale.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.86
+  },
+  {
+   "id": "barnfloor_232",
+   "start": 1183.4,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_alley_swept.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.84
+  },
+  {
+   "id": "barnfloor_233",
+   "start": 1185.24,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_old_worn_floor.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "ov_highlightsweep_1189",
+   "start": 1188.64,
+   "dur": 5.71,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "bottom",
+   "pre": "In the comments: ",
+   "highlight": "how old, where it runs, is one side higher",
+   "post": "?"
+  },
+  {
+   "id": "barnfloor_234",
+   "start": 1190.34,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_crack_from_door.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "barnfloor_235",
+   "start": 1194.1,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_hand_drag2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.84
+  },
+  {
+   "id": "barnfloor_236",
+   "start": 1199.94,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_step_higher.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.32
+  },
+  {
+   "id": "barnfloor_237",
+   "start": 1202.26,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_step_higherb.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "barnfloor_238",
+   "start": 1205.06,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_door_half_open.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.6
+  },
+  {
+   "id": "ov_framedphoto_1210",
+   "start": 1209.66,
+   "dur": 5.28,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "right",
+   "image": "img/barnfloor/bfp_claudio_jar.jpg",
+   "caption": "Next time",
+   "sub": "Two things in a jar. About twelve dollars.",
+   "typewriter": true,
+   "kenburns": true
+  },
+  {
+   "id": "barnfloor_h239",
+   "start": 1212,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_jar.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.54
+  },
+  {
+   "id": "barnfloor_240",
+   "start": 1215.54,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_jar_tools.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.42
+  },
+  {
+   "id": "barnfloor_241",
+   "start": 1220.96,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_jar_kitchen.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.4
+  },
+  {
+   "id": "barnfloor_242",
+   "start": 1227.36,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_pencil_hose.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "ov_checklistreveal_1227",
+   "start": 1227.36,
+   "dur": 9.16,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "left",
+   "kicker": "UNTIL THEN",
+   "title": "Four things",
+   "items": [
+    "Draw the pencil line",
+    "Soak it the night before",
+    "Mix it stiffer than feels right",
+    "Wet rag on it three days"
+   ],
+   "stamp": "BY HAND"
+  },
+  {
+   "id": "barnfloor_243",
+   "start": 1231.68,
+   "kind": "raw",
+   "src": "img/barnfloor/bf_rag_on_patch.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.16
+  },
+  {
+   "id": "barnfloor_h244",
+   "start": 1235.84,
+   "kind": "raw",
+   "src": "img/barnfloor/bfp_claudio_close.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.96
+  }
+ ],
+ "maxRawDur": 8
+}
