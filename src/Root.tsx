@@ -26,6 +26,8 @@ import { MainGreenlift, TOTAL_FRAMES_GB as TOTAL_FRAMES_GL } from "./_fed6/Video
 import { MainGreenglove, TOTAL_FRAMES_GG } from "./_fed6/VideoEdit/Main_greenglove";
 import { MainCuellopavo, TOTAL_FRAMES_CP } from "./_fed6/VideoEdit/Main_cuellopavo";
 import { MainTaza9pm, TOTAL_FRAMES_TAZA9PM } from "./_fed6/VideoEdit/Main_taza9pm";
+import { MainTrucos60, TOTAL_FRAMES_T60 } from "./_fed6/VideoEdit/Main_trucos60";
+import { MainHierbacolon, TOTAL_FRAMES_HIERBACOLON } from "./_fed6/VideoEdit/Main_hierbacolon";
 import { MainNightserum, TOTAL_FRAMES_NS } from "./_fed6/VideoEdit/Main_nightserum";
 import { MainHandsAge, TOTAL_FRAMES_HANDS } from "./_fed6/VideoEdit/Main_handsage";
 import { MainFederer17, TOTAL_FRAMES_FED17 } from "./_fed6/VideoEdit/Main_federer17";
@@ -75,6 +77,7 @@ import { MainGallinas, TOTAL_FRAMES_GALLINAS } from "./VideoEdit/Main_gallinas";
 import { MainOvejas, TOTAL_FRAMES_OVEJAS } from "./VideoEdit/Main_ovejas";
 import { MainCorn, TOTAL_FRAMES_CORN } from "./VideoEdit/Main_corn";
 import { MainSecretos, TOTAL_FRAMES_SECRETOS } from "./VideoEdit/Main_secretos";
+import { MainFedcolageno, TOTAL_FRAMES_FEDCOLAGENO } from "./_fed6/VideoEdit/Main_fedcolageno";
 import { MainAlimentos60, TOTAL_FRAMES as TOTAL_FRAMES_ALIMENTOS60 } from "./valeria/Main_alimentos60";
 import { MainValeriaVaselina, TOTAL_FRAMES as TOTAL_FRAMES_VALERIAVASELINA } from "./valeria/Main_valeriavaselina";
 import { MainRevivir, TOTAL_FRAMES_REVIVIR } from "./VideoEdit/Main_revivir";
@@ -154,6 +157,7 @@ import { MainOxigenada, TOTAL_FRAMES_OXIGENADA } from "./VideoEdit/Main_oxigenad
 import { MainHierbas, TOTAL_FRAMES_HIERBAS } from "./VideoEdit/Main_hierbas";
 import { MainOllabarro, TOTAL_FRAMES_OLLABARRO } from "./VideoEdit/Main_ollabarro";
 import { MainCoolsave, TOTAL_FRAMES_COOLSAVE } from "./VideoEdit/Main_coolsave";
+import { MainEstoalos70, TOTAL_FRAMES_ESTOALOS70 } from "./_fed6/VideoEdit/Main_estoalos70";
 import { MainRadiador, TOTAL_FRAMES_RADIADOR } from "./VideoEdit/Main_radiador";
 import { MainGencoche, TOTAL_FRAMES_GENCOCHE } from "./VideoEdit/Main_gencoche";
 import { MainAntena25, TOTAL_FRAMES_ANTENA25 } from "./VideoEdit/Main_antena25";
@@ -694,12 +698,19 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="PxAppliance" component={MainPxappliance} durationInFrames={TOTAL_FRAMES_PXAPPLIANCE} fps={30} width={1920} height={1080} />
       <Composition id="Fcsmanchas" component={MainFcsmanchas} durationInFrames={TOTAL_FRAMES_FCSMANCHAS} fps={30} width={1920} height={1080} />
       <Composition id="Fcskiwi" component={MainFcskiwi} durationInFrames={TOTAL_FRAMES_FCSKIWI} fps={30} width={1920} height={1080} />
+      {/* Dr. Federer (id 70) — "El ALIMENTO de $1 que DISPARA tu COLÁGENO" · kit _fed6 · AVATAR continuo re-alineado · b-roll 100% agnes + hero gpt-image low */}
+      <Composition id="Fedcolageno" component={MainFedcolageno} durationInFrames={TOTAL_FRAMES_FEDCOLAGENO} fps={30} width={1920} height={1080} />
       {/* Dr. Bastida — "Come ESTOS 3 ALIMENTOS para tu piel +60" · kit valeria-vintage · AVATAR · b-roll 100% stock Pexels */}
       <Composition id="Alimentos60" component={MainAlimentos60} durationInFrames={TOTAL_FRAMES_ALIMENTOS60} fps={30} width={1920} height={1080} />
       {/* Federer - Mas Salud, Mas Vida — "Adios al CUELLO DE PAVO" · kit _fed6 · AVATAR loop · b-roll agnes */}
       <Composition id="Cuellopavo" component={MainCuellopavo} durationInFrames={TOTAL_FRAMES_CP} fps={30} width={1920} height={1080} />
       {/* Federer - Mas Salud, Mas Vida — "La TAZA DE LAS 9 PM" · kit _fed6 · AVATAR en bucle de 152s · b-roll agnes texto-a-video */}
       <Composition id="Taza9pm" component={MainTaza9pm} durationInFrames={TOTAL_FRAMES_TAZA9PM} fps={30} width={1920} height={1080} />
+      <Composition id="Hierbacolon" component={MainHierbacolon} durationInFrames={TOTAL_FRAMES_HIERBACOLON} fps={30} width={1920} height={1080} />
+      {/* Federer - Mas Salud, Mas Vida — "Si Puedes Hacer ESTO a los 70" · kit _fed6 · AVATAR completo 23:07 · b-roll agnes texto-a-video */}
+      <Composition id="Estoalos70" component={MainEstoalos70} durationInFrames={TOTAL_FRAMES_ESTOALOS70} fps={30} width={1920} height={1080} />
+      {/* Federer - Mas Salud, Mas Vida — "Los 12 TRUCOS de Belleza PROHIBIDOS de las Abuelas de los Anos 60" · kit _fed6 · AVATAR completo 23:54 · b-roll agnes */}
+      <Composition id="Trucos60" component={MainTrucos60} durationInFrames={TOTAL_FRAMES_T60} fps={30} width={1920} height={1080} />
       <Composition id="ValeriaVaselina" component={MainValeriaVaselina} durationInFrames={TOTAL_FRAMES_VALERIAVASELINA} fps={30} width={1920} height={1080} />
     </>
   );
