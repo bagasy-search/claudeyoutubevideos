@@ -189,8 +189,6 @@ img/whh_hot_fast_fire.jpg
 img/whh_hot_fast_fire_blur.jpg
 img/whh_hot_water_bottle.jpg
 img/whh_hot_water_bottle_blur.jpg
-img/whh_house_snow.jpg
-img/whh_house_snow_blur.jpg
 img/whh_iron_plate.jpg
 img/whh_iron_plate_blur.jpg
 img/whh_jar_lid.jpg

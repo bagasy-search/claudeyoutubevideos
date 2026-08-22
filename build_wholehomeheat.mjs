@@ -97,8 +97,8 @@ for (let i = 0; i < sorted.length; i++) {
 raw.sort((a, b) => a.start - b.start);
 
 const rawBeats = raw.map((b, i) => (b.float
-  ? { id: `${SLUG}_f${i}`, start: b.start, kind: "float", src: b.src, side: b.side,
-      kicker: b.kicker, hue: "amber", dur: b.dur }
+  ? { id: `${SLUG}_f${i}`, start: b.start, kind: "float", overlay: true, src: b.src, side: b.side,
+      kicker: b.kicker, hue: "amber", dur: b.dur }   // overlay: si no, el avatar full la tapa
   : { id: `${SLUG}_${i}`, start: b.start, kind: "raw", src: b.src, hue: "amber", darken: 0,
       dur: b.dur, ...(b.vid ? { noSplit: true } : {}) }));
 
