@@ -21,6 +21,10 @@ const FPS = 30;
 const candidates = [
   `src/VideoEdit/Main_${slug}.tsx`,
   `src/VideoEdit/Main_${slug}_redo.tsx`,
+  // los kits por canal viven fuera de VideoEdit (valeria, _fed6, peroxide...)
+  `src/valeria/Main_${slug}.tsx`,
+  `src/_fed6/Main_${slug}.tsx`,
+  `src/peroxide/Main_${slug}.tsx`,
 ];
 const build = candidates.find((p) => existsSync(p)) || readdirSync("src/VideoEdit").filter((f) => f.includes(slug) && /^Main_.*\.tsx$/.test(f)).map((f) => `src/VideoEdit/${f}`)[0];
 if (!build || !existsSync(build)) { console.error(`✗ no encontré el build Main_${slug}.tsx — ¿ya lo armaste?`); process.exit(1); }
@@ -29,7 +33,14 @@ if (!build || !existsSync(build)) { console.error(`✗ no encontré el build Mai
 //   · nuevo: Main_ solo mapea CUES y el contenido real vive en cues_<slug>.gen.tsx
 //            (esos builds embeben además un ASSET_MANIFEST en comentario, para este gate)
 // Leyendo solo el Main_, en los builds del estilo viejo contaba CERO y no medía nada.
-const cuesPath = `src/VideoEdit/cues_${slug}.gen.tsx`;
+const cuesCand = [
+  `src/VideoEdit/cues_${slug}.gen.tsx`,
+  `src/VideoEdit/cues_${slug}.gen.ts`,
+  `src/valeria/cues_${slug}.gen.ts`,
+  `src/_fed6/cues_${slug}.gen.ts`,
+  `src/peroxide/cues_${slug}.gen.ts`,
+];
+const cuesPath = cuesCand.find((p) => existsSync(p)) || cuesCand[0];
 const hayCues = existsSync(cuesPath);
 // Si hay cues, ESA es la fuente de verdad y hay que sacar los comentarios del Main_: el
 // ASSET_MANIFEST/COMPONENT_MANIFEST que embebe el build repetiría todo y contaría doble.
@@ -104,8 +115,19 @@ if (hayCues) {
   try {
     const cs = readFileSync(cuesPath, "utf8");
     const arr = (re) => { const m = cs.match(re); return m ? JSON.parse(m[1]) : null; };
-    const bts = arr(/CP_BEATS[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z_]+_BEATS[^=]*=\s*(\[[\s\S]*?\]);/);
-    const brl = arr(/CP_BROLL[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z_]+_BROLL[^=]*=\s*(\[[\s\S]*?\]);/);
+    let bts = arr(/CP_BEATS[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z_]+_BEATS[^=]*=\s*(\[[\s\S]*?\]);/);
+    let brl = arr(/CP_BROLL[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z_]+_BROLL[^=]*=\s*(\[[\s\S]*?\]);/);
+    // Variante de UN SOLO array: `export const BEATS: Cue[] = [...]` con componentes y b-roll
+    // mezclados y separados por `kind` (kits por canal: valeria, _fed6...). Sin esto el gate
+    // cae al conteo por JSX y ve los casos del switch, no los usos reales.
+    if (!bts) {
+      const todo = arr(/(?:^|[^A-Z_])BEATS\s*:?[^=]*=\s*(\[[\s\S]*?\]);/m);
+      if (todo && todo.some((b) => b && b.kind)) {
+        const OVER = new Set(["talk", "lowerthird"]);
+        bts = todo.filter((b) => b.kind !== "full").map((b) => (OVER.has(b.kind) ? {...b, overlay: true} : b));
+        brl = todo.filter((b) => b.kind === "full");
+      }
+    }
     if (bts && bts.length && bts.some((b) => b && b.kind)) {
       const ov = bts.filter((b) => b.overlay);
       const tapado = (v) => ov.some((o) => o.start < v.start + v.dur && v.start < o.start + o.dur);
