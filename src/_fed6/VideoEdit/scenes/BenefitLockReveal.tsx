@@ -25,12 +25,24 @@ const CARDS = [
   { img: "img/fe_varices.png", label: "VÁRICES", num: "02" },
   { img: "img/fe_rodilla_dolor.png", label: "DOLORES", num: "03" },
 ];
-// posiciones (centro de cada tarjeta) en el lienzo 1920x1080 — zig-zag hacia abajo
-const POS = [
+// posiciones (centro de cada tarjeta) en el lienzo 1920x1080 — zig-zag hacia abajo.
+// ⚠ ANTES eran 3 FIJAS: con 4+ tarjetas POS[i] daba undefined y el chunk moría con
+// "cannot read properties of undefined (reading 'x')". Ahora se calculan para N.
+const POS_3 = [
   { x: 660, y: 300 },
   { x: 1270, y: 560 },
   { x: 660, y: 820 },
 ];
+const posFor = (n: number) => {
+  if (n <= 3) return POS_3.slice(0, Math.max(1, n));
+  // reparto vertical parejo entre 200 y 880 (la tarjeta entra entera); x alterna izq/der,
+  // así dos tarjetas de la misma columna quedan a 2*gap y no se pisan.
+  const top = 200, bottom = 880;
+  return Array.from({ length: n }, (_, i) => ({
+    x: i % 2 === 0 ? 660 : 1270,
+    y: top + (i * (bottom - top)) / (n - 1),
+  }));
+};
 const CW = 500;
 const CH = 320;
 
@@ -55,7 +67,9 @@ export const BenefitLockReveal: React.FC<{
   const t = frame / D; // progreso 0..1
   const fE = D * pEstablish, fC = D * pCamera, fL = D * pLock, fF = D * pFocus;
 
-  const target = POS[index];
+  const POS = posFor(cards.length);
+  const idx = Math.max(0, Math.min(index, cards.length - 1));
+  const target = POS[idx];
   // cámara: de vista amplia (todo el mapa) a zoom en la tarjeta activa
   const camScale = clampInt(frame, D * 0.06, fC, 0.9, 1.5, Easing.inOut(Easing.cubic));
   const focusX = clampInt(frame, D * 0.06, fC, 960, target.x, Easing.inOut(Easing.cubic));
@@ -70,8 +84,8 @@ export const BenefitLockReveal: React.FC<{
   // camino brillante 0..index (se dibuja durante la fase de cámara)
   const drawn = clampInt(frame, D * 0.1, fC, 0, 1, Easing.inOut(Easing.cubic));
   let brightD = `M ${POS[0].x} ${POS[0].y}`;
-  for (let i = 1; i <= index; i++) brightD += ` L ${POS[i].x} ${POS[i].y}`;
-  const fullD = `M ${POS[0].x} ${POS[0].y} L ${POS[1].x} ${POS[1].y} L ${POS[2].x} ${POS[2].y}`;
+  for (let i = 1; i <= idx; i++) brightD += ` L ${POS[i].x} ${POS[i].y}`;
+  const fullD = POS.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x} ${p.y}`).join(" ");
 
   return (
     <AbsoluteFill style={{ opacity: outOp, background: "linear-gradient(160deg,#0c1a20,#132b33)" }}>
@@ -84,16 +98,16 @@ export const BenefitLockReveal: React.FC<{
           {/* líneas del zig-zag */}
           <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
             <path d={fullD} fill="none" stroke="rgba(255,255,255,0.16)" strokeWidth={5} strokeDasharray="2 14" strokeLinecap="round" />
-            {index > 0 && (
+            {idx > 0 && (
               <path d={brightD} fill="none" stroke={TEAL} strokeWidth={6} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - drawn} style={{ filter: `drop-shadow(0 0 10px ${TEAL}aa)` }} />
             )}
           </svg>
 
           {/* tarjetas */}
           {cards.map((card, i) => {
-            const revealed = i < index; // ya reveladas antes
-            const isActive = i === index;
-            const locked = i > index;
+            const revealed = i < idx; // ya reveladas antes
+            const isActive = i === idx;
+            const locked = i > idx;
 
             // blur: reveladas=0, bloqueadas=16, activa=anima 16→0 en pFocus
             const activeBlur = clampInt(frame, fL, fF, 16, 0, Easing.out(Easing.cubic));
@@ -134,7 +148,7 @@ export const BenefitLockReveal: React.FC<{
           })}
 
           {/* TEXTO que se escribe debajo de la tarjeta activa */}
-          <LabelWrite text={cards[index].label} x={target.x} y={target.y + CH / 2 + 70} frame={frame} start={fF} D={D} />
+          <LabelWrite text={cards[idx].label} x={target.x} y={target.y + CH / 2 + 70} frame={frame} start={fF} D={D} />
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
