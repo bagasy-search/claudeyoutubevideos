@@ -146,6 +146,8 @@ img/whh_chimney_core.jpg
 img/whh_chimney_core_blur.jpg
 img/whh_chimney_inside.jpg
 img/whh_chimney_inside_blur.jpg
+img/whh_chimney_outside.jpg
+img/whh_chimney_outside_blur.jpg
 img/whh_chimney_sweep.jpg
 img/whh_chimney_sweep_blur.jpg
 img/whh_chimney_wind.jpg
@@ -174,6 +176,8 @@ img/whh_engine_running.jpg
 img/whh_engine_running_blur.jpg
 img/whh_franklin_pages.jpg
 img/whh_franklin_pages_blur.jpg
+img/whh_front_room_full.jpg
+img/whh_front_room_full_blur.jpg
 img/whh_grate_feet.jpg
 img/whh_grate_feet_blur.jpg
 img/whh_grate_lift.jpg
@@ -254,6 +258,8 @@ img/whh_tease_object.jpg
 img/whh_tease_object_blur.jpg
 img/whh_tent_mortgage.jpg
 img/whh_tent_mortgage_blur.jpg
+img/whh_thirty_eight.jpg
+img/whh_thirty_eight_blur.jpg
 img/whh_thrown_out.jpg
 img/whh_thrown_out_blur.jpg
 img/whh_tile_stove_door.jpg

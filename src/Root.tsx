@@ -10,8 +10,10 @@ import { MainOakshaft, TOTAL_FRAMES_OAKSHAFT } from "./VideoEdit/Main_oakshaft";
 import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
 import { MainGrietas, TOTAL_FRAMES_GRIETAS } from "./VideoEdit/Main_grietas";
 import { MainOxidotanico, TOTAL_FRAMES_OXIDOTANICO } from "./VideoEdit/Main_oxidotanico";
+import { MainCrackpowder, TOTAL_FRAMES_CP } from "./_cp/Main_crackpowder";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
 import { MainRaingutter, TOTAL_FRAMES_RAINGUTTER } from "./VideoEdit/Main_raingutter";
+import { MainCytomato, TOTAL_FRAMES_CYTOMATO } from "./VideoEdit/Main_cytomato";
 import { MainFederer886, TOTAL_FRAMES_FED886 } from "./VideoEdit/Main_federer886";
 import { MainFederer11, TOTAL_FRAMES_FED11 } from "./_fed6/VideoEdit/Main_federer11";
 import { MainFederer12, TOTAL_FRAMES_FED12 } from "./_fed6/VideoEdit/Main_federer12";
@@ -184,6 +186,7 @@ export const RemotionRoot: React.FC = () => {
       {/* CLAUDIO YODER · $5 clay-pot heater / power outage (EN) · avatar + 96 imgs sistema + kit premium */}
       <Composition id="Grietas" component={MainGrietas} durationInFrames={TOTAL_FRAMES_GRIETAS} fps={30} width={1920} height={1080} />
       <Composition id="Oxidotanico" component={MainOxidotanico} durationInFrames={TOTAL_FRAMES_OXIDOTANICO} fps={30} width={1920} height={1080} />
+      <Composition id="Crackpowder" component={MainCrackpowder} durationInFrames={TOTAL_FRAMES_CP} fps={30} width={1920} height={1080} />
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}
       <Composition id="Oillamp1" component={MainOillamp1} durationInFrames={TOTAL_FRAMES_OILLAMP1} fps={30} width={1920} height={1080} />
@@ -191,6 +194,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Warmblackout" component={MainWarmblackout} durationInFrames={TOTAL_FRAMES_WARMBLACKOUT} fps={30} width={1920} height={1080} />
       <Composition id="Endlessheat" component={MainEndlessheat} durationInFrames={TOTAL_FRAMES_ENDLESSHEAT} fps={30} width={1920} height={1080} />
       <Composition id="Raingutter" component={MainRaingutter} durationInFrames={TOTAL_FRAMES_RAINGUTTER} fps={30} width={1920} height={1080} />
+      <Composition id="Cytomato" component={MainCytomato} durationInFrames={TOTAL_FRAMES_CYTOMATO} fps={30} width={1920} height={1080} />
       {/* DEMO · estilo collage recorte de revista (romero/pastillas/receta) */}
       <Composition id="CollageDemo" component={MainCollageDemo} durationInFrames={TOTAL_FRAMES_COLLAGE} fps={30} width={1920} height={1080} />
       {/* DR. VALLER · romero, arrugas y manchas · avatar + visuales full-screen */}

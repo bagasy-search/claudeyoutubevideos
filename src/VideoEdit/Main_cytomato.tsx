@@ -1,16 +1,29 @@
-import { AbsoluteFill, Sequence, Img, staticFile, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, Sequence, Audio, Img, staticFile, useCurrentFrame, useVideoConfig, interpolate } from "remotion";
 import { sec, COLORS } from "./theme";
 import { TechBackground } from "./components/TechBackground";
 import { AvatarLayer } from "./scenes/AvatarLayer";
 import { CinematicWrap } from "./components/CinematicWrap";
-import { CUES, OVERLAYS } from "./cues_wholehomeheat.gen";
-import { AVATAR_WINDOWS, TOTAL_WHOLEHOMEHEAT } from "./avatar_wholehomeheat.gen";
+import { CUES, OVERLAYS } from "./cues_cytomato.gen";
+import { AVATAR_WINDOWS, TOTAL_CYTOMATO } from "./avatar_cytomato.gen";
 
-export const TOTAL_FRAMES_WHOLEHOMEHEAT = Math.round(TOTAL_WHOLEHOMEHEAT * 30);
+// ── "Preserve Fresh Tomatoes for Years — The Old Amish Way" — Claudio Yoder (EN) ──
+// Avatar de 6:47 EN BUCLE (horneado en cytomato_opt.mp4 junto al master de audio) +
+// 257 clips agnes + fotos de respaldo + 21 hero gpt-image-2 + kit premium THEME_EARTH.
+export const TOTAL_FRAMES_CYTOMATO = Math.round(TOTAL_CYTOMATO * 30);
 
-// ── QR de la guía en una esquina, durante las menciones a "The Plain Almanac" ──
-// La voz nunca dice precio ni URL: el QR (theplainalmanac.vercel.app) y el "scan"
-// viven EN PANTALLA. 300px — a 132px el creador lo rechazó porque no se escanea.
+const MusicBed: React.FC = () => {
+  const f = useCurrentFrame();
+  const s = f / 30;
+  const vol = interpolate(
+    s,
+    [0, 4, 10, 24, 30, TOTAL_CYTOMATO - 6, TOTAL_CYTOMATO],
+    [0.06, 0.12, 0.15, 0.15, 0.1, 0.1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
+  return <Audio src={staticFile("cytomato_music.mp3")} loop volume={vol} />;
+};
+
+// ── QR de la guía en una esquina, SOLO durante las menciones a "The Plain Almanac" ──
 const QrCorner: React.FC<{ durF: number }> = ({ durF }) => {
   const f = useCurrentFrame();
   const fadeIn = interpolate(f, [0, 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -37,21 +50,16 @@ const QrCorner: React.FC<{ durF: number }> = ({ durF }) => {
   );
 };
 
-// Ventanas (segundos) donde la narración menciona la guía → se muestra el QR.
-// Coinciden con las dos CtaCard del beatsheet, arrancando un pelo antes y quedándose
-// después para que dé tiempo de sacar el teléfono.
+// ventanas (en segundos) donde se menciona la guía
 const QR_WINDOWS: [number, number][] = [
-  // ⛔ Arrancan DESPUÉS de que termina la CtaCard (696.2+6 y 1069.8+6): superpuestos,
-  // el QR tapaba el botón "LINK ABOVE THE DESCRIPTION" de la tarjeta. Así se encadenan:
-  // primero la tarjeta explica, después queda el QR para escanear.
-  [702.5, 721.0],    // tras la CtaCard #1 ("the heating section has the sealing work")
-  [1076.0, 1097.0],  // tras la CtaCard #2 (cierre, "about ninety other household methods")
+  [612.0, 626.0],    // CTA sembrada: "it is why we put a guide together…"
+  [1194.0, 1240.0],  // CTA de cierre: "the guide is up at the top of the description"
 ];
 
-export const MainWholehomeheat: React.FC = () => {
+export const MainCytomato: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.bg0 }}>
-      <CinematicWrap handheld={0} grain={0} vignette={0}>
+      <CinematicWrap grain={0} vignette={0}>
         <AbsoluteFill style={{ backgroundColor: COLORS.bg0 }}>
           <TechBackground glowX={50} glowY={46} hue="amber" drift={0.4} />
           {CUES.map((cue) => (
@@ -59,10 +67,7 @@ export const MainWholehomeheat: React.FC = () => {
               {cue.el(sec(cue.dur))}
             </Sequence>
           ))}
-          <AvatarLayer src="wholehomeheat_opt.mp4" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
-          {/* ⛔ Los componentes premium se exportan en OVERLAYS, NO en CUES (beatsheet.mjs
-              separa por `overlay:true`). Van DESPUÉS del AvatarLayer para quedar ENCIMA
-              del avatar y del b-roll — que es justo el punto de marcarlos como overlay. */}
+          <AvatarLayer src="cytomato_opt.mp4" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
           {OVERLAYS.map((cue) => (
             <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
               {cue.el(sec(cue.dur))}
@@ -73,6 +78,7 @@ export const MainWholehomeheat: React.FC = () => {
               <QrCorner durF={sec(e - s)} />
             </Sequence>
           ))}
+          <MusicBed />
         </AbsoluteFill>
       </CinematicWrap>
     </AbsoluteFill>
