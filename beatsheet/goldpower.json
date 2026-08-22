@@ -1,0 +1,2291 @@
+{
+ "video": "goldpower",
+ "avatar": "goldpower_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "goldpower_0",
+   "start": 0,
+   "kind": "raw",
+   "src": "img/cy_p_crate.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.84
+  },
+  {
+   "id": "ov_hookcaption_0",
+   "start": 0,
+   "dur": 4.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "earth",
+   "zone": "top",
+   "text": "Seven cheap things. No fuel. No moving parts."
+  },
+  {
+   "id": "goldpower_1",
+   "start": 2.84,
+   "kind": "raw",
+   "src": "broll/gp_s_darkroom.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_2",
+   "start": 7.42,
+   "kind": "raw",
+   "src": "broll/gp_s_woolblanket.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.72,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_3",
+   "start": 10.14,
+   "kind": "raw",
+   "src": "img/cy_i_tubing_coil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.68
+  },
+  {
+   "id": "goldpower_4",
+   "start": 12.82,
+   "kind": "raw",
+   "src": "img/cy_i_saltbox.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "goldpower_5",
+   "start": 15.6,
+   "kind": "raw",
+   "src": "img/cy_i_coalarm_wall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.82
+  },
+  {
+   "id": "goldpower_6",
+   "start": 18.42,
+   "kind": "raw",
+   "src": "img/cy_i_jug_glass.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.22
+  },
+  {
+   "id": "ov_photocarousel_20",
+   "start": 19.7,
+   "dur": 9.5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PhotoCarousel",
+   "theme": "earth",
+   "zone": "full",
+   "title": "What is in the crate",
+   "items": [
+    {
+     "label": "Wool blanket",
+     "image": "img/cy_i_wool_macro.jpg"
+    },
+    {
+     "label": "A dozen candles",
+     "image": "img/cy_i_candles_box.jpg"
+    },
+    {
+     "label": "Five feet of hose",
+     "image": "img/cy_i_tubing_coil.jpg"
+    },
+    {
+     "label": "A box of salt",
+     "image": "img/cy_i_saltbox.jpg"
+    },
+    {
+     "label": "Cast iron pot",
+     "image": "img/cy_i_dutchoven_coals.jpg"
+    },
+    {
+     "label": "Carbon monoxide alarm",
+     "image": "img/cy_i_coalarm_wall.jpg"
+    },
+    {
+     "label": "A glass jug",
+     "image": "img/cy_i_jug_glass.jpg"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_7",
+   "start": 21.64,
+   "kind": "raw",
+   "src": "img/cy_p_seven_bench.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.28
+  },
+  {
+   "id": "goldpower_8",
+   "start": 25.92,
+   "kind": "raw",
+   "src": "img/cy_p_talk_stove.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.64
+  },
+  {
+   "id": "goldpower_9",
+   "start": 31.56,
+   "kind": "raw",
+   "src": "broll/gp_s_snowstorm.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.72,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_10",
+   "start": 35.28,
+   "kind": "raw",
+   "src": "img/cy_i_crate2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98
+  },
+  {
+   "id": "goldpower_11",
+   "start": 38.26,
+   "kind": "raw",
+   "src": "broll/gp_s_generator.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.98,
+   "noSplit": true
+  },
+  {
+   "id": "ov_duelcolumns_38",
+   "start": 38.26,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "left",
+   "title": "Two answers to the same night",
+   "leftName": "The crate",
+   "rightName": "The generator",
+   "rows": [
+    {
+     "attr": "Costs about $110, all in",
+     "leftWins": true
+    },
+    {
+     "attr": "Needs no fuel, ever",
+     "leftWins": true
+    },
+    {
+     "attr": "Nothing in it can break",
+     "leftWins": true
+    },
+    {
+     "attr": "Dead once the pumps are dark",
+     "leftWins": false
+    }
+   ]
+  },
+  {
+   "id": "goldpower_12",
+   "start": 41.24,
+   "kind": "raw",
+   "src": "img/cy_i_cord_window.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.72
+  },
+  {
+   "id": "goldpower_13",
+   "start": 45.96,
+   "kind": "raw",
+   "src": "broll/gp_s_gaspump.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_14",
+   "start": 50.8,
+   "kind": "raw",
+   "src": "img/cy_p_window_storm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "goldpower_15",
+   "start": 55.44,
+   "kind": "raw",
+   "src": "img/cy_p_seven_bench.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.78
+  },
+  {
+   "id": "goldpower_16",
+   "start": 62.22,
+   "kind": "raw",
+   "src": "img/cy_p_alarm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.78
+  },
+  {
+   "id": "goldpower_17",
+   "start": 97.44,
+   "kind": "raw",
+   "src": "broll/gp_s_moneybills.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.6,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_18",
+   "start": 102.04,
+   "kind": "raw",
+   "src": "img/cy_p_window_storm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "ov_highlightsweep_102",
+   "start": 102.04,
+   "dur": 4.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "The whole idea:",
+   "highlight": "you do not replace the power — you make the house not need it",
+   "post": ".",
+   "note": "every dollar spent replacing the grid is a dollar not spent on what actually works"
+  },
+  {
+   "id": "goldpower_19",
+   "start": 106.84,
+   "kind": "raw",
+   "src": "broll/gp_s_oldkitchen.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "goldpower_20",
+   "start": 112.28,
+   "kind": "raw",
+   "src": "img/cy_p_talk5.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.78
+  },
+  {
+   "id": "goldpower_21",
+   "start": 117.06,
+   "kind": "raw",
+   "src": "broll/gp_s_thrift.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_22",
+   "start": 121.54,
+   "kind": "raw",
+   "src": "img/cy_i_tubing2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "goldpower_23",
+   "start": 125.24,
+   "kind": "raw",
+   "src": "img/cy_p_hose_heater.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.76
+  },
+  {
+   "id": "ov_bigstatreveal_129",
+   "start": 128.94,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Sitting in your house right now",
+   "value": 40,
+   "suffix": "–50 gallons",
+   "support": "clean, potable water in the water heater — and almost nobody knows how to get it out"
+  },
+  {
+   "id": "ov_mythtruth_140",
+   "start": 140.12,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "This is a prepper list — buckets of freeze-dried food and a bunker",
+   "truth": "Every one of these seven was ordinary household equipment in 1890. Not emergency gear. The gear",
+   "mythLabel": "MYTH",
+   "truthLabel": "TRUTH"
+  },
+  {
+   "id": "goldpower_24",
+   "start": 143.22,
+   "kind": "raw",
+   "src": "img/cy_i_hardware_shelf.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.14
+  },
+  {
+   "id": "goldpower_25",
+   "start": 150.36,
+   "kind": "raw",
+   "src": "broll/gp_s_oldkitchen.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_26",
+   "start": 154.92,
+   "kind": "raw",
+   "src": "broll/gp_s_oldkitchen.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "goldpower_27",
+   "start": 165.16,
+   "kind": "raw",
+   "src": "img/cy_i_bulb.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "ov_flowsteps_165",
+   "start": 165.16,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "HOW IT GOT LOST",
+   "title": "One item at a time, 1920 to 1960",
+   "nodes": [
+    {
+     "label": "The blanket → the furnace",
+     "sub": "better, on a normal day"
+    },
+    {
+     "label": "The candle → the bulb",
+     "sub": "better, on a normal day"
+    },
+    {
+     "label": "The salt → the refrigerator",
+     "sub": "better, on a normal day"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_28",
+   "start": 169.22,
+   "kind": "raw",
+   "src": "img/cy_i_furnace_new.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.64
+  },
+  {
+   "id": "goldpower_29",
+   "start": 173.86,
+   "kind": "raw",
+   "src": "img/cy_i_gasrange_on.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.34
+  },
+  {
+   "id": "goldpower_30",
+   "start": 180.2,
+   "kind": "raw",
+   "src": "img/cy_p_talk7.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.68
+  },
+  {
+   "id": "goldpower_31",
+   "start": 186.88,
+   "kind": "raw",
+   "src": "img/cy_i_bulb.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.36
+  },
+  {
+   "id": "goldpower_32",
+   "start": 193.24,
+   "kind": "raw",
+   "src": "img/cy_i_hardware_shelf.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.88
+  },
+  {
+   "id": "goldpower_33",
+   "start": 199.12,
+   "kind": "raw",
+   "src": "img/cy_p_almanac.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.88
+  },
+  {
+   "id": "ov_pullquote_199",
+   "start": 199.12,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "The stuff is cheap and it is at the store right now. It is the knowing that got expensive."
+  },
+  {
+   "id": "goldpower_34",
+   "start": 215.54,
+   "kind": "raw",
+   "src": "broll/gp_s_blanketfold.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.68,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_35",
+   "start": 222.22,
+   "kind": "raw",
+   "src": "img/cy_i_handsfire.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "goldpower_36",
+   "start": 230.22,
+   "kind": "raw",
+   "src": "img/cy_i_house_dark.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "goldpower_37",
+   "start": 234.36,
+   "kind": "raw",
+   "src": "img/cy_i_darkhall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_38",
+   "start": 238.44,
+   "kind": "raw",
+   "src": "img/cy_i_amishfarm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.66
+  },
+  {
+   "id": "goldpower_39",
+   "start": 244.1,
+   "kind": "raw",
+   "src": "img/cy_p_blanket_door.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.38
+  },
+  {
+   "id": "ov_splitpanel_244",
+   "start": 244.1,
+   "dur": 6.23,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "ITEM ONE",
+   "title": "The wool blanket",
+   "image": "img/cy_i_blanket_doorway.jpg",
+   "bullets": [
+    "Do not wrap it around you — hang it",
+    "One room, doorway and window",
+    "Wool: still works when it is damp",
+    "About $15, army surplus, buy two"
+   ]
+  },
+  {
+   "id": "goldpower_40",
+   "start": 250.48,
+   "kind": "raw",
+   "src": "img/cy_i_blanket_doorway.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46
+  },
+  {
+   "id": "ov_bigstatreveal_250",
+   "start": 250.48,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Shrink the house from 1,800 sq ft to one room",
+   "value": 12,
+   "prefix": "",
+   "suffix": "× further",
+   "support": "whatever heat you can make — candles, bodies, a jug of hot water — now goes twelve times as far"
+  },
+  {
+   "id": "goldpower_41",
+   "start": 255.94,
+   "kind": "raw",
+   "src": "img/cy_i_room_small.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.82
+  },
+  {
+   "id": "goldpower_42",
+   "start": 264.76,
+   "kind": "raw",
+   "src": "img/cy_i_candle_alone.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.72
+  },
+  {
+   "id": "goldpower_43",
+   "start": 269.48,
+   "kind": "raw",
+   "src": "broll/gp_s_thermometer.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.5,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_44",
+   "start": 276.98,
+   "kind": "raw",
+   "src": "img/cy_i_wool_macro.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "goldpower_45",
+   "start": 280.72,
+   "kind": "raw",
+   "src": "broll/gp_s_woolmacro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_46",
+   "start": 291.74,
+   "kind": "raw",
+   "src": "broll/gp_s_woolblanket.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.18,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_47",
+   "start": 295.92,
+   "kind": "raw",
+   "src": "broll/gp_s_woolmacro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_305",
+   "start": 305.3,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "GET IT RIGHT",
+   "title": "Hanging it so it actually works",
+   "items": [
+    "Tack the top edge — do not drape it",
+    "Weight the bottom: towel or firewood",
+    "The floor gap is where you lose it",
+    "Cold air falls — it pours through"
+   ],
+   "stamp": "MIND THE GAP"
+  },
+  {
+   "id": "goldpower_48",
+   "start": 319.24,
+   "kind": "raw",
+   "src": "img/cy_p_blanket_floor.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8
+  },
+  {
+   "id": "goldpower_49",
+   "start": 331.18,
+   "kind": "raw",
+   "src": "broll/gp_s_candleflame.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.76,
+   "noSplit": true
+  },
+  {
+   "id": "ov_splitpanel_334",
+   "start": 334.08,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "ITEM TWO",
+   "title": "Candles — and a mirror",
+   "image": "img/cy_i_candle_mirror.jpg",
+   "bullets": [
+    "One candle ≈ 13 lumens. A bulb ≈ 800",
+    "A mirror behind roughly doubles it",
+    "Shelf, eye level, pale wall opposite",
+    "Three, arranged that way, let you read"
+   ]
+  },
+  {
+   "id": "goldpower_50",
+   "start": 335.94,
+   "kind": "raw",
+   "src": "img/cy_i_candle_stub.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.22
+  },
+  {
+   "id": "goldpower_51",
+   "start": 342.16,
+   "kind": "raw",
+   "src": "img/cy_i_candle_alone.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.84
+  },
+  {
+   "id": "goldpower_52",
+   "start": 348,
+   "kind": "raw",
+   "src": "img/cy_i_darkhall.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_53",
+   "start": 358.36,
+   "kind": "raw",
+   "src": "img/cy_i_candle_stub.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.52
+  },
+  {
+   "id": "goldpower_54",
+   "start": 365.88,
+   "kind": "raw",
+   "src": "img/cy_i_candle_mirror.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.82
+  },
+  {
+   "id": "ov_beforeafter_366",
+   "start": 365.88,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Same candle, same wax",
+   "beforeLabel": "Candle alone: lights a table",
+   "afterLabel": "Mirror behind: lights the room",
+   "caption": "the half going backwards into a dark wall gets folded forward — about double the light, for nothing"
+  },
+  {
+   "id": "goldpower_55",
+   "start": 372.7,
+   "kind": "raw",
+   "src": "img/cy_i_candle_mirror.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.04
+  },
+  {
+   "id": "goldpower_56",
+   "start": 381.74,
+   "kind": "raw",
+   "src": "img/cy_p_candle_mirror.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.7
+  },
+  {
+   "id": "goldpower_57",
+   "start": 387.44,
+   "kind": "raw",
+   "src": "img/cy_i_three_candles.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "goldpower_58",
+   "start": 391.66,
+   "kind": "raw",
+   "src": "broll/gp_s_bookcandle.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_59",
+   "start": 395.56,
+   "kind": "raw",
+   "src": "img/cy_i_three_candles.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.12
+  },
+  {
+   "id": "goldpower_60",
+   "start": 400.68,
+   "kind": "raw",
+   "src": "img/cy_i_lacemaker.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.44
+  },
+  {
+   "id": "goldpower_61",
+   "start": 406.12,
+   "kind": "raw",
+   "src": "img/cy_i_lacemaker.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.78
+  },
+  {
+   "id": "goldpower_62",
+   "start": 411.9,
+   "kind": "raw",
+   "src": "img/cy_i_lacemaker.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.48
+  },
+  {
+   "id": "goldpower_63",
+   "start": 420.38,
+   "kind": "raw",
+   "src": "img/cy_p_jug_lens.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.28
+  },
+  {
+   "id": "goldpower_64",
+   "start": 426.66,
+   "kind": "raw",
+   "src": "img/cy_i_candles_box.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.44
+  },
+  {
+   "id": "goldpower_65",
+   "start": 431.1,
+   "kind": "raw",
+   "src": "broll/gp_s_candlesmany.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_66",
+   "start": 435.2,
+   "kind": "raw",
+   "src": "img/cy_p_talk2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "ov_checklistreveal_435",
+   "start": 435.2,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "THE ONE RULE",
+   "title": "Open flame in a sealed room",
+   "items": [
+    "Never leave a candle burning while you sleep",
+    "Put every one out, every time you lie down",
+    "The blanket over the door will catch",
+    "Discipline about the flame — not hope"
+   ],
+   "stamp": "PUT THEM OUT"
+  },
+  {
+   "id": "goldpower_67",
+   "start": 465.84,
+   "kind": "raw",
+   "src": "img/cy_p_hardware.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.58
+  },
+  {
+   "id": "goldpower_68",
+   "start": 470.42,
+   "kind": "raw",
+   "src": "img/cy_i_tubing_coil.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.36
+  },
+  {
+   "id": "goldpower_69",
+   "start": 474.78,
+   "kind": "raw",
+   "src": "img/cy_i_hardware_shelf.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.82
+  },
+  {
+   "id": "goldpower_70",
+   "start": 481.6,
+   "kind": "raw",
+   "src": "img/cy_p_hose_heater.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66
+  },
+  {
+   "id": "goldpower_71",
+   "start": 485.26,
+   "kind": "raw",
+   "src": "broll/gp_s_basement.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.62,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_72",
+   "start": 488.88,
+   "kind": "raw",
+   "src": "broll/gp_s_faucetdry.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_73",
+   "start": 493.78,
+   "kind": "raw",
+   "src": "broll/gp_s_plumbingvalve.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.98,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_74",
+   "start": 497.76,
+   "kind": "raw",
+   "src": "img/cy_i_tap_dry.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.56
+  },
+  {
+   "id": "goldpower_75",
+   "start": 505.32,
+   "kind": "raw",
+   "src": "img/cy_i_tap_dry.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.48
+  },
+  {
+   "id": "ov_cutawaycallouts_508",
+   "start": 507.76,
+   "dur": 7.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "ITEM THREE",
+   "title": "Where the forty gallons are",
+   "image": "img/cy_i_waterheater.jpg",
+   "callouts": [
+    {
+     "text": "Shut the inlet valve",
+     "sub": "top of the tank, first thing",
+     "tx": 0.52,
+     "ty": 0.16,
+     "side": "right"
+    },
+    {
+     "text": "Gas to pilot / breaker off",
+     "sub": "or you burn the elements out",
+     "tx": 0.3,
+     "ty": 0.34,
+     "side": "left"
+    },
+    {
+     "text": "Drain valve",
+     "sub": "your tubing goes here",
+     "tx": 0.44,
+     "ty": 0.82,
+     "side": "right"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_76",
+   "start": 510.8,
+   "kind": "raw",
+   "src": "broll/gp_s_basement.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.04,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_77",
+   "start": 516.84,
+   "kind": "raw",
+   "src": "broll/gp_s_waterclean.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.76,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_78",
+   "start": 522.6,
+   "kind": "raw",
+   "src": "img/cy_p_talk9.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.06
+  },
+  {
+   "id": "goldpower_79",
+   "start": 528.66,
+   "kind": "raw",
+   "src": "broll/gp_s_waterpour.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.34,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_80",
+   "start": 533,
+   "kind": "raw",
+   "src": "img/cy_p_hose_heater.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.86
+  },
+  {
+   "id": "ov_numberedsteps_533",
+   "start": 533,
+   "dur": 7.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Getting the water out",
+   "title": "In this order",
+   "steps": [
+    {
+     "title": "Shut the inlet valve",
+     "sub": "top of the tank"
+    },
+    {
+     "title": "Gas to pilot, or breaker off",
+     "sub": "a $200 mistake if you skip it"
+    },
+    {
+     "title": "Crack a hot tap upstairs",
+     "sub": "vents it — thumb off the straw"
+    },
+    {
+     "title": "Tubing on the drain valve",
+     "sub": "first bucket is rust, throw it out"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_81",
+   "start": 539.86,
+   "kind": "raw",
+   "src": "broll/gp_s_plumbingvalve.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.68,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_82",
+   "start": 548.54,
+   "kind": "raw",
+   "src": "img/cy_p_talk9.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "goldpower_83",
+   "start": 553.02,
+   "kind": "raw",
+   "src": "broll/gp_s_faucetdry.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_84",
+   "start": 556.62,
+   "kind": "raw",
+   "src": "img/cy_i_tap_dry.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.28
+  },
+  {
+   "id": "goldpower_85",
+   "start": 561.9,
+   "kind": "raw",
+   "src": "broll/gp_s_faucetdry.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.76,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_86",
+   "start": 566.66,
+   "kind": "raw",
+   "src": "img/cy_i_drainvalve.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.78
+  },
+  {
+   "id": "goldpower_87",
+   "start": 570.44,
+   "kind": "raw",
+   "src": "img/cy_i_bucket_clear.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4
+  },
+  {
+   "id": "goldpower_88",
+   "start": 574.44,
+   "kind": "raw",
+   "src": "img/cy_i_bucket_rusty.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.98
+  },
+  {
+   "id": "goldpower_89",
+   "start": 578.42,
+   "kind": "raw",
+   "src": "img/cy_i_bucket_rusty.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.68
+  },
+  {
+   "id": "goldpower_90",
+   "start": 583.1,
+   "kind": "raw",
+   "src": "img/cy_p_talk3.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.94
+  },
+  {
+   "id": "ov_highlightsweep_585",
+   "start": 584.78,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "A six dollar hose and",
+   "highlight": "forty gallons you already paid for",
+   "post": ".",
+   "note": "sitting in a closet or a basement in almost every house in the country"
+  },
+  {
+   "id": "goldpower_91",
+   "start": 592.04,
+   "kind": "raw",
+   "src": "broll/gp_s_kettlesteam.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.42,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_92",
+   "start": 598.46,
+   "kind": "raw",
+   "src": "img/cy_i_drainvalve.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.54
+  },
+  {
+   "id": "goldpower_93",
+   "start": 610,
+   "kind": "raw",
+   "src": "img/cy_i_almanac_lamp.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.4
+  },
+  {
+   "id": "ov_ctacard_610",
+   "start": 610.32,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "All of it, written down",
+   "title": "The Plain Almanac",
+   "bullet": "ninety household methods with the real measurements — heat, water, pantry, light. Link at the top of the description",
+   "price": 0,
+   "cta": "LINK IN THE DESCRIPTION"
+  },
+  {
+   "id": "goldpower_94",
+   "start": 625.16,
+   "kind": "raw",
+   "src": "img/cy_i_salt_scoop.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46
+  },
+  {
+   "id": "goldpower_95",
+   "start": 630.62,
+   "kind": "raw",
+   "src": "broll/gp_s_fridgeopen.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.7,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_96",
+   "start": 637.32,
+   "kind": "raw",
+   "src": "img/cy_i_fridge_dark.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.86
+  },
+  {
+   "id": "goldpower_97",
+   "start": 642.18,
+   "kind": "raw",
+   "src": "broll/gp_s_meatbutcher.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_98",
+   "start": 645.92,
+   "kind": "raw",
+   "src": "img/cy_i_saltbox.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.86
+  },
+  {
+   "id": "ov_splitpanel_646",
+   "start": 645.92,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "ITEM FOUR",
+   "title": "A box of plain salt",
+   "image": "img/cy_i_saltmeat.jpg",
+   "bullets": [
+    "Fridge turns in ~4 hours. Freezer in ~36",
+    "Salt takes the free water away",
+    "About 1 oz of salt per pound of meat",
+    "A day and a half per pound, cellar cold"
+   ]
+  },
+  {
+   "id": "goldpower_99",
+   "start": 652.78,
+   "kind": "raw",
+   "src": "broll/gp_s_saltmacro.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.08,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_100",
+   "start": 658.86,
+   "kind": "raw",
+   "src": "broll/gp_s_saltpour.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_101",
+   "start": 666.86,
+   "kind": "raw",
+   "src": "img/cy_i_saltmeat.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.78
+  },
+  {
+   "id": "goldpower_102",
+   "start": 672.64,
+   "kind": "raw",
+   "src": "img/cy_i_1890_kitchen.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.76
+  },
+  {
+   "id": "goldpower_103",
+   "start": 676.4,
+   "kind": "raw",
+   "src": "img/cy_p_salt.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.68
+  },
+  {
+   "id": "goldpower_104",
+   "start": 681.08,
+   "kind": "raw",
+   "src": "img/cy_p_salt.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.02
+  },
+  {
+   "id": "goldpower_105",
+   "start": 686.1,
+   "kind": "raw",
+   "src": "img/cy_i_salt_scoop.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.96
+  },
+  {
+   "id": "goldpower_106",
+   "start": 695.06,
+   "kind": "raw",
+   "src": "img/cy_i_hangmeat.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "ov_checklistreveal_698",
+   "start": 698.36,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "THE HONEST LIMITS",
+   "title": "When salt curing does NOT apply",
+   "items": [
+    "Summer, 80°F house — do not cure",
+    "Winter, 40°F back room — works",
+    "Long keeping? nitrite cure salt",
+    "Short outage: salt just buys days"
+   ],
+   "stamp": "MATCH IT TO THE WEATHER"
+  },
+  {
+   "id": "goldpower_107",
+   "start": 723.7,
+   "kind": "raw",
+   "src": "img/cy_i_saltmeat.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.24
+  },
+  {
+   "id": "goldpower_108",
+   "start": 727.94,
+   "kind": "raw",
+   "src": "img/cy_i_salt_scoop.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.04
+  },
+  {
+   "id": "goldpower_109",
+   "start": 731.98,
+   "kind": "raw",
+   "src": "broll/gp_s_meatbutcher.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.72,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_110",
+   "start": 738.7,
+   "kind": "raw",
+   "src": "broll/gp_s_saltpour.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.3,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_111",
+   "start": 760.26,
+   "kind": "raw",
+   "src": "img/cy_i_propane_empty.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "goldpower_112",
+   "start": 764.74,
+   "kind": "raw",
+   "src": "img/cy_i_dutchoven_coals.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "ov_splitpanel_765",
+   "start": 764.74,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "ITEM FIVE",
+   "title": "The cast iron pot",
+   "image": "img/cy_i_dutchoven_coals.jpg",
+   "bullets": [
+    "Wood fire, coals, grill, wood stove",
+    "The one tool indifferent to the fuel",
+    "Mass averages out a bad fire",
+    "$15 at a farm sale — season it first"
+   ]
+  },
+  {
+   "id": "goldpower_113",
+   "start": 769.64,
+   "kind": "raw",
+   "src": "broll/gp_s_castironfire.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_114",
+   "start": 773.96,
+   "kind": "raw",
+   "src": "img/cy_i_dutchoven_stove.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.76
+  },
+  {
+   "id": "goldpower_115",
+   "start": 778.72,
+   "kind": "raw",
+   "src": "broll/gp_s_castironfire.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.36,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_116",
+   "start": 786.08,
+   "kind": "raw",
+   "src": "img/cy_p_castiron.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.7
+  },
+  {
+   "id": "goldpower_117",
+   "start": 792.78,
+   "kind": "raw",
+   "src": "img/cy_i_dutchoven2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.26,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_118",
+   "start": 800.04,
+   "kind": "raw",
+   "src": "img/cy_i_dutchoven_coals.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.12
+  },
+  {
+   "id": "ov_pullquote_804",
+   "start": 803.56,
+   "dur": 5.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "You are not cooking on the fire. You are cooking on the iron — the fire just charges it up."
+  },
+  {
+   "id": "goldpower_119",
+   "start": 809.16,
+   "kind": "raw",
+   "src": "img/cy_i_castiron_rust.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.18
+  },
+  {
+   "id": "goldpower_120",
+   "start": 815.34,
+   "kind": "raw",
+   "src": "img/cy_i_castiron_rust.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.4
+  },
+  {
+   "id": "goldpower_121",
+   "start": 821.74,
+   "kind": "raw",
+   "src": "broll/gp_s_dutchoven.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.26,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_122",
+   "start": 826,
+   "kind": "raw",
+   "src": "img/cy_i_seasoning.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.06
+  },
+  {
+   "id": "goldpower_123",
+   "start": 830.06,
+   "kind": "raw",
+   "src": "img/cy_i_seasoning.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.94
+  },
+  {
+   "id": "goldpower_124",
+   "start": 867.5,
+   "kind": "raw",
+   "src": "img/cy_p_alarm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22
+  },
+  {
+   "id": "ov_checklistreveal_869",
+   "start": 869.08,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "NEVER — NOT ONCE",
+   "title": "What kills people in an outage",
+   "items": [
+    "A generator in a garage — even door open",
+    "A charcoal grill inside, porch or fireplace",
+    "A gas oven or range used to heat a room",
+    "Any flame in a sealed room with no window cracked"
+   ],
+   "stamp": "CRACK A WINDOW"
+  },
+  {
+   "id": "goldpower_125",
+   "start": 871.72,
+   "kind": "raw",
+   "src": "broll/gp_s_generator.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.64,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_126",
+   "start": 877.36,
+   "kind": "raw",
+   "src": "img/cy_i_grill_garage.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.14
+  },
+  {
+   "id": "goldpower_127",
+   "start": 881.5,
+   "kind": "raw",
+   "src": "broll/gp_s_embers.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.96,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_128",
+   "start": 886.46,
+   "kind": "raw",
+   "src": "img/cy_i_gasrange_on.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.24
+  },
+  {
+   "id": "goldpower_129",
+   "start": 891.7,
+   "kind": "raw",
+   "src": "img/cy_i_gasrange_on.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.3
+  },
+  {
+   "id": "ov_bigstatreveal_920",
+   "start": 919.96,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Buy the one with a display — act at",
+   "value": 30,
+   "suffix": " ppm",
+   "support": "not the kind that only screeches when it is already too late — the number lets you act early"
+  },
+  {
+   "id": "goldpower_130",
+   "start": 931.24,
+   "kind": "raw",
+   "src": "broll/gp_s_winterhouse.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.22,
+   "noSplit": true
+  },
+  {
+   "id": "ov_splitpanel_931",
+   "start": 931.24,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "ITEM SIX",
+   "title": "The carbon monoxide alarm",
+   "image": "img/cy_i_coalarm_display.jpg",
+   "bullets": [
+    "About $20, battery, with a display",
+    "Fresh battery every October",
+    "It makes the other six safe",
+    "This is the one I will not be folksy about"
+   ]
+  },
+  {
+   "id": "goldpower_131",
+   "start": 939.46,
+   "kind": "raw",
+   "src": "img/cy_p_alarm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4
+  },
+  {
+   "id": "goldpower_132",
+   "start": 943.46,
+   "kind": "raw",
+   "src": "img/cy_p_jug_bed.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.06
+  },
+  {
+   "id": "ov_splitpanel_943",
+   "start": 943.46,
+   "dur": 6.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "SplitPanel",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "ITEM SEVEN",
+   "title": "A glass jug of hot water",
+   "image": "img/cy_i_jug_towel.jpg",
+   "bullets": [
+    "Heat it, wrap it, in the bed 20 min early",
+    "A gallon at 160°F ≈ 600 BTU",
+    "Gives it back over six to eight hours",
+    "Warm the glass first — never boiling"
+   ]
+  },
+  {
+   "id": "goldpower_133",
+   "start": 948.52,
+   "kind": "raw",
+   "src": "broll/gp_s_darkroom.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.7,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_134",
+   "start": 954.22,
+   "kind": "raw",
+   "src": "broll/gp_s_bedquilt.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_135",
+   "start": 958.02,
+   "kind": "raw",
+   "src": "img/cy_i_bed_quilts.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.92
+  },
+  {
+   "id": "goldpower_136",
+   "start": 963.94,
+   "kind": "raw",
+   "src": "broll/gp_s_kettlesteam.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.38,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_137",
+   "start": 968.32,
+   "kind": "raw",
+   "src": "img/cy_i_jug2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7
+  },
+  {
+   "id": "goldpower_138",
+   "start": 972.02,
+   "kind": "raw",
+   "src": "img/cy_i_stonebottle.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.54
+  },
+  {
+   "id": "goldpower_139",
+   "start": 980.56,
+   "kind": "raw",
+   "src": "img/cy_i_jug2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.26
+  },
+  {
+   "id": "goldpower_140",
+   "start": 988.82,
+   "kind": "raw",
+   "src": "broll/gp_s_sleeping.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.86,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_141",
+   "start": 992.68,
+   "kind": "raw",
+   "src": "img/cy_i_bed_quilts.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.08
+  },
+  {
+   "id": "goldpower_142",
+   "start": 996.76,
+   "kind": "raw",
+   "src": "img/cy_p_talk7.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.24
+  },
+  {
+   "id": "ov_layerstack_997",
+   "start": 996.76,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "full",
+   "title": "Every step, you stop heating space you are not in",
+   "layers": [
+    {
+     "label": "The whole house — 1,800 sq ft"
+    },
+    {
+     "label": "One room — about 140 sq ft"
+    },
+    {
+     "label": "One bed — where you actually are"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_143",
+   "start": 1021.76,
+   "kind": "raw",
+   "src": "img/cy_i_jug_towel.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "goldpower_144",
+   "start": 1026.26,
+   "kind": "raw",
+   "src": "img/cy_i_stonebottle.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.36
+  },
+  {
+   "id": "goldpower_145",
+   "start": 1032.62,
+   "kind": "raw",
+   "src": "broll/gp_s_sleeping.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.38,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_146",
+   "start": 1050.02,
+   "kind": "raw",
+   "src": "img/cy_i_bed_quilts.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.98
+  },
+  {
+   "id": "goldpower_147",
+   "start": 1056,
+   "kind": "raw",
+   "src": "img/cy_p_talk8.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56
+  },
+  {
+   "id": "ov_statgrid_1056",
+   "start": 1056,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StatGrid",
+   "theme": "earth",
+   "zone": "full",
+   "title": "What $110 actually buys",
+   "stats": [
+    {
+     "value": 12,
+     "suffix": "×",
+     "label": "further your heat goes"
+    },
+    {
+     "value": 40,
+     "suffix": " gal",
+     "label": "water already in the house"
+    },
+    {
+     "value": 600,
+     "suffix": " BTU",
+     "label": "in one jug, for the night"
+    },
+    {
+     "value": 110,
+     "prefix": "$",
+     "label": "the whole crate"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_148",
+   "start": 1060.56,
+   "kind": "raw",
+   "src": "img/cy_p_seven_bench.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.74
+  },
+  {
+   "id": "goldpower_149",
+   "start": 1064.3,
+   "kind": "raw",
+   "src": "img/cy_i_generator2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.66,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_150",
+   "start": 1067.96,
+   "kind": "raw",
+   "src": "img/cy_i_generator2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.68,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_151",
+   "start": 1074.64,
+   "kind": "raw",
+   "src": "img/cy_p_talk4.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.94
+  },
+  {
+   "id": "goldpower_152",
+   "start": 1079.58,
+   "kind": "raw",
+   "src": "img/cy_i_crate2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.1
+  },
+  {
+   "id": "goldpower_153",
+   "start": 1088.68,
+   "kind": "raw",
+   "src": "img/cy_p_window_storm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4
+  },
+  {
+   "id": "goldpower_154",
+   "start": 1092.68,
+   "kind": "raw",
+   "src": "img/cy_i_blanket_doorway.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.66
+  },
+  {
+   "id": "ov_pullquote_1096",
+   "start": 1095.66,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "The blanket in the doorway is not a worse furnace. It is a different idea about what a house is for."
+  },
+  {
+   "id": "goldpower_155",
+   "start": 1098.34,
+   "kind": "raw",
+   "src": "img/cy_i_amishfarm.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.66
+  },
+  {
+   "id": "ov_ctacard_1106",
+   "start": 1105.96,
+   "dur": 6.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Ninety of these, written down",
+   "title": "The Plain Almanac",
+   "bullet": "the measurements, the amounts, what to buy and what it costs — heat, water, pantry, light. Link is up at the top of the description",
+   "price": 0,
+   "cta": "LINK IN THE DESCRIPTION"
+  },
+  {
+   "id": "goldpower_156",
+   "start": 1122.22,
+   "kind": "raw",
+   "src": "img/cy_p_seven_bench.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.36
+  },
+  {
+   "id": "ov_numberedsteps_1122",
+   "start": 1122.22,
+   "dur": 7.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "This weekend — in order",
+   "title": "Build the crate",
+   "steps": [
+    {
+     "title": "Two wool blankets",
+     "sub": "thrift store, not fleece"
+    },
+    {
+     "title": "Candles + a mirror off the wall",
+     "sub": "keep them in the same place"
+    },
+    {
+     "title": "5 ft of clear tubing",
+     "sub": "then go find your drain valve"
+    },
+    {
+     "title": "Salt, iron pot, alarm, jug",
+     "sub": "and the crate is done"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_157",
+   "start": 1128.58,
+   "kind": "raw",
+   "src": "broll/gp_s_thrift.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.62,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_158",
+   "start": 1133.2,
+   "kind": "raw",
+   "src": "img/cy_i_candle_mirror.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.8
+  },
+  {
+   "id": "goldpower_159",
+   "start": 1140,
+   "kind": "raw",
+   "src": "img/cy_i_tubing2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32
+  },
+  {
+   "id": "goldpower_160",
+   "start": 1144.32,
+   "kind": "raw",
+   "src": "img/cy_i_drainvalve.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.36
+  },
+  {
+   "id": "goldpower_161",
+   "start": 1149.68,
+   "kind": "raw",
+   "src": "broll/gp_s_flashlight.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.9,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_162",
+   "start": 1157.58,
+   "kind": "raw",
+   "src": "img/cy_i_castiron_rust.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.48
+  },
+  {
+   "id": "goldpower_163",
+   "start": 1162.06,
+   "kind": "raw",
+   "src": "img/cy_i_coalarm_display.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46
+  },
+  {
+   "id": "goldpower_164",
+   "start": 1167.52,
+   "kind": "raw",
+   "src": "img/cy_i_jug2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "goldpower_165",
+   "start": 1172.72,
+   "kind": "raw",
+   "src": "img/cy_p_talk8.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.78
+  },
+  {
+   "id": "goldpower_166",
+   "start": 1178.5,
+   "kind": "raw",
+   "src": "broll/gp_s_winterhouse.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.22,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_167",
+   "start": 1184.72,
+   "kind": "raw",
+   "src": "img/cy_i_crate2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.5
+  },
+  {
+   "id": "goldpower_168",
+   "start": 1192.22,
+   "kind": "raw",
+   "src": "img/cy_p_talk2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.82
+  },
+  {
+   "id": "goldpower_169",
+   "start": 1196.04,
+   "kind": "raw",
+   "src": "img/cy_i_dutchoven2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.22,
+   "noSplit": true
+  },
+  {
+   "id": "ov_flowsteps_1196",
+   "start": 1196.04,
+   "dur": 6.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "NEXT TIME",
+   "title": "Fifteen minutes of fire, all day of cooking",
+   "nodes": [
+    {
+     "label": "Bring it to a boil",
+     "sub": "about fifteen minutes of fire"
+    },
+    {
+     "label": "Take it off, pack it in a box",
+     "sub": "what you pack is the whole trick"
+    },
+    {
+     "label": "Come back at supper",
+     "sub": "it has been cooking the entire time"
+    }
+   ]
+  },
+  {
+   "id": "goldpower_170",
+   "start": 1200.26,
+   "kind": "raw",
+   "src": "broll/gp_s_embers.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.32,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_171",
+   "start": 1204.58,
+   "kind": "raw",
+   "src": "broll/gp_s_kettlesteam.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.56,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_172",
+   "start": 1209.14,
+   "kind": "raw",
+   "src": "broll/gp_s_castironfire.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8,
+   "noSplit": true
+  },
+  {
+   "id": "goldpower_173",
+   "start": 1220.1,
+   "kind": "raw",
+   "src": "img/cy_i_dutchoven2.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "ov_pullquote_1223",
+   "start": 1223.04,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "They were not tougher than us and they were not smarter than us. They just knew where the water was."
+  },
+  {
+   "id": "ov_highlightsweep_1246",
+   "start": 1246.12,
+   "dur": 5.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Nothing patented, nothing anybody got rich on —",
+   "highlight": "still on a shelf at the hardware store",
+   "post": ".",
+   "note": "waiting for somebody to want it again"
+  }
+ ]
+}

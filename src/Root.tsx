@@ -101,6 +101,7 @@ import { MainFedtrailer, TOTAL_FRAMES_FEDTRAILER } from "./VideoEdit/Main_fedtra
 import { MainLobos, TOTAL_FRAMES_LOBOS } from "./VideoEdit/Main_lobos";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
+import { MainGoldpower, TOTAL_FRAMES_GOLDPOWER } from "./VideoEdit/Main_goldpower";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -555,6 +556,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Lobos" component={MainLobos} durationInFrames={TOTAL_FRAMES_LOBOS} fps={30} width={1920} height={1080} />
       {/* Crónicas Perdidas — "Los 50 Sitios Más Misteriosos" · AVATAR (guion truncado por HeyGen, cierre visual mudo) */}
       <Composition id="Vj7hqe8koadv" component={MainVj7hqe8koadv} durationInFrames={TOTAL_FRAMES_VJ7HQE8KOADV} fps={30} width={1920} height={1080} />
-    </>
+          <Composition
+        id="Goldpower"
+        component={MainGoldpower}
+        durationInFrames={TOTAL_FRAMES_GOLDPOWER}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+</>
   );
 };
