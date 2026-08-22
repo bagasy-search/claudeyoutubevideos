@@ -10,7 +10,7 @@ import { MainOakshaft, TOTAL_FRAMES_OAKSHAFT } from "./VideoEdit/Main_oakshaft";
 import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_warmblackout";
 import { MainGrietas, TOTAL_FRAMES_GRIETAS } from "./VideoEdit/Main_grietas";
 import { MainOxidotanico, TOTAL_FRAMES_OXIDOTANICO } from "./VideoEdit/Main_oxidotanico";
-import { MainCrackpowder, TOTAL_FRAMES_CP } from "./_cp/Main_crackpowder";
+import { MainCrackpowder, TOTAL_FRAMES_CP } from "./VideoEdit/Main_crackpowder";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
 import { MainRaingutter, TOTAL_FRAMES_RAINGUTTER } from "./VideoEdit/Main_raingutter";
 import { MainCytomato, TOTAL_FRAMES_CYTOMATO } from "./VideoEdit/Main_cytomato";
