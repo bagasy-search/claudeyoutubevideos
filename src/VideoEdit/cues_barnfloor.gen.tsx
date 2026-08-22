@@ -163,7 +163,7 @@ export const CUES: Cue[] = [
   { key: "barnfloor_220", start: 1123.6, dur: 3.94, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bf_alley_even.jpg" hue="amber" darken={0} /> },
   { key: "barnfloor_221", start: 1130, dur: 2.42, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bf_slip_crumpled.jpg" hue="amber" darken={0} /> },
   { key: "barnfloor_h222", start: 1132.42, dur: 4.12, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bfp_claudio_pencil.jpg" hue="amber" darken={0} /> },
-  { key: "barnfloor_223", start: 1136.54, dur: 6.36, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bf_knees_pencil.jpg" hue="amber" darken={0} /> },
+  { key: "barnfloor_223", start: 1136.54, dur: 6.36, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bf_pencil_alone.jpg" hue="amber" darken={0} /> },
   { key: "barnfloor_224", start: 1142.9, dur: 4.06, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bf_line_aligned.jpg" hue="amber" darken={0} /> },
   { key: "barnfloor_225", start: 1146.96, dur: 4.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bf_joint_unfilled.jpg" hue="amber" darken={0} /> },
   { key: "barnfloor_226", start: 1151.86, dur: 6.16, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/barnfloor/bf_narrow_gap.jpg" hue="amber" darken={0} /> },
