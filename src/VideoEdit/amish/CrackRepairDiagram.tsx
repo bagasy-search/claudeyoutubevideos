@@ -399,7 +399,11 @@ export const CrackRepairDiagram: React.FC<{
   return (
     <AbsoluteFill style={{ background: "#1c1710" }}>
       <AbsoluteFill style={{ opacity: op }}>
-        <AgedPaper durationInFrames={durationInFrames} theme={t} />
+        {/* ⛔ AgedPaper es position:relative y su papel va en un hijo con inset:0 — sin darle
+            dimensiones el contenedor COLAPSA y no pinta nada. Renderizado así, la tinta oscura
+            del diagrama quedaba sobre el fondo oscuro de la comp y el componente salía ilegible.
+            Tampoco acepta durationInFrames (su firma es at/seed/deckle/style/children). */}
+        <AgedPaper theme={t} style={{ position: "absolute", inset: 0 }} />
         <AbsoluteFill style={{ display: "flex", flexDirection: "column", justifyContent: "center", padding: "64px 90px" }}>
           {title && (
             <div
