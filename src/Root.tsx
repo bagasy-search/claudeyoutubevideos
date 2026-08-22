@@ -84,6 +84,7 @@ import { MainFedcolageno, TOTAL_FRAMES_FEDCOLAGENO } from "./_fed6/VideoEdit/Mai
 import { MainAlimentos60, TOTAL_FRAMES as TOTAL_FRAMES_ALIMENTOS60 } from "./valeria/Main_alimentos60";
 import { MainValeriaVaselina, TOTAL_FRAMES as TOTAL_FRAMES_VALERIAVASELINA } from "./valeria/Main_valeriavaselina";
 import { MainValeriaPresion, TOTAL_FRAMES as TOTAL_FRAMES_VALERIAPRESION } from "./valeria/Main_valeriapresion";
+import { MainValeriaNariz, TOTAL_FRAMES as TOTAL_FRAMES_VALERIANARIZ } from "./valeria/Main_valerianariz";
 import { MainValeriaBocaSeca, TOTAL_FRAMES as TOTAL_FRAMES_VALERIABOCASECA } from "./valeria/Main_valeriabocaseca";
 import { MainRevivir, TOTAL_FRAMES_REVIVIR } from "./VideoEdit/Main_revivir";
 import { MainSemillas, TOTAL_FRAMES_SEMILLAS } from "./VideoEdit/Main_semillas";
@@ -728,6 +729,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Trucos60" component={MainTrucos60} durationInFrames={TOTAL_FRAMES_T60} fps={30} width={1920} height={1080} />
       <Composition id="ValeriaVaselina" component={MainValeriaVaselina} durationInFrames={TOTAL_FRAMES_VALERIAVASELINA} fps={30} width={1920} height={1080} />
       <Composition id="ValeriaPresion" component={MainValeriaPresion} durationInFrames={TOTAL_FRAMES_VALERIAPRESION} fps={30} width={1920} height={1080} />
+      <Composition id="ValeriaNariz" component={MainValeriaNariz} durationInFrames={TOTAL_FRAMES_VALERIANARIZ} fps={30} width={1920} height={1080} />
       {/* Doctora Valeria Alcazar — "BOCA SECA: 7 senales +60" · kit valeria-vintage · AVATAR EN BUCLE + audio master (avatar 5:27 + Fish) · b-roll 260 clips agnes */}
       <Composition id="ValeriaBocaSeca" component={MainValeriaBocaSeca} durationInFrames={TOTAL_FRAMES_VALERIABOCASECA} fps={30} width={1920} height={1080} />
     </>
