@@ -10,26 +10,42 @@
    "src": "broll/whh_grate_hero.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.96,
+   "dur": 1.6,
    "noSplit": true
   },
   {
    "id": "wholehomeheat_1",
    "start": 3.96,
    "kind": "raw",
-   "src": "img/whh_grate_size.jpg",
+   "src": "broll/whh_grate_size.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.4
+   "dur": 2.6,
+   "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_4",
+   "start": 3.96,
+   "dur": 3.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "The cast iron grate in my floor",
+   "value": 24,
+   "prefix": "20 × ",
+   "suffix": " inches",
+   "support": "worn smooth down the middle by sixty years of feet crossing over it"
   },
   {
    "id": "wholehomeheat_2",
    "start": 9.36,
    "kind": "raw",
-   "src": "img/whh_grate_feet.jpg",
+   "src": "img/whh_presenter_grate.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.74
+   "dur": 2.6
   },
   {
    "id": "wholehomeheat_3",
@@ -38,17 +54,53 @@
    "src": "broll/whh_thermo_porch.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.9,
+   "dur": 1.8,
    "noSplit": true
+  },
+  {
+   "id": "ov_bigstatreveal_14",
+   "start": 14.1,
+   "dur": 3.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Outside this house, right now",
+   "value": 9,
+   "suffix": "°F",
+   "support": "and there is nothing with a motor in it anywhere in the building"
   },
   {
    "id": "wholehomeheat_4",
    "start": 17,
    "kind": "raw",
-   "src": "img/whh_house_snow.jpg",
+   "src": "broll/whh_house_snow.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 6.22
+   "dur": 2.4,
+   "noSplit": true
+  },
+  {
+   "id": "ov_checklistreveal_17",
+   "start": 17,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "full",
+   "kicker": "WHAT THIS HOUSE DOES NOT HAVE",
+   "title": "Nothing with a motor in it, anywhere",
+   "items": [
+    "No furnace",
+    "No gas line from the road",
+    "No propane tank behind the shed",
+    "No electric line",
+    "No ductwork in the walls",
+    "No blower. No thermostat."
+   ],
+   "stamp": "NOT ONE MOVING PART"
   },
   {
    "id": "wholehomeheat_5",
@@ -57,7 +109,7 @@
    "src": "broll/whh_no_ducts_wall.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
+   "dur": 2.6,
    "noSplit": true
   },
   {
@@ -69,6 +121,37 @@
    "darken": 0,
    "dur": 4,
    "noSplit": true
+  },
+  {
+   "id": "ov_duelcolumns_30",
+   "start": 30.28,
+   "dur": 5,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DuelColumns",
+   "theme": "earth",
+   "zone": "full",
+   "title": "One fire. Nine degrees outside.",
+   "leftName": "The room with the stove",
+   "rightName": "Back bedroom, two floors up",
+   "rows": [
+    {
+     "attr": "Holds 68°F",
+     "leftWins": false
+    },
+    {
+     "attr": "Has a heat source in it",
+     "leftWins": true
+    },
+    {
+     "attr": "Has a duct running to it",
+     "leftWins": false
+    },
+    {
+     "attr": "Has a vent, a fan, a thermostat",
+     "leftWins": false
+    }
+   ]
   },
   {
    "id": "wholehomeheat_7",
@@ -105,6 +188,20 @@
    "noSplit": true
   },
   {
+   "id": "ov_highlightsweep_39",
+   "start": 39.42,
+   "dur": 4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "top",
+   "pre": "Not one warm room.",
+   "highlight": "The whole house",
+   "post": ".",
+   "note": "two floors up, in a back bedroom with the door standing open, it is sixty eight degrees"
+  },
+  {
    "id": "wholehomeheat_9",
    "start": 42.72,
    "kind": "raw",
@@ -122,6 +219,20 @@
    "hue": "amber",
    "darken": 0,
    "dur": 5.88
+  },
+  {
+   "id": "ov_mythtruth_47",
+   "start": 46.94,
+   "dur": 4.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "myth": "Find the right stove and your house gets warm",
+   "truth": "The stove is not the secret. The house is.",
+   "mythLabel": "WHAT EVERYONE ASKS",
+   "truthLabel": "THE ANSWER"
   },
   {
    "id": "wholehomeheat_11",
@@ -150,7 +261,7 @@
    "id": "wholehomeheat_12",
    "start": 62.5,
    "kind": "raw",
-   "src": "img/whh_winter_windowin.jpg",
+   "src": "img/whh_presenter_stove.jpg",
    "hue": "amber",
    "darken": 0,
    "dur": 7.2
@@ -189,13 +300,23 @@
    "id": "wholehomeheat_13",
    "start": 83.06,
    "kind": "raw",
-   "src": "img/whh_open_door_cold.jpg",
+   "src": "broll/whh_open_door_cold.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 7.2
+   "dur": 4,
+   "noSplit": true
   },
   {
    "id": "wholehomeheat_14",
+   "start": 87.06,
+   "kind": "raw",
+   "src": "img/whh_open_door_cold.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2
+  },
+  {
+   "id": "wholehomeheat_15",
    "start": 121.34,
    "kind": "raw",
    "src": "broll/whh_tilestove_eu.mp4",
@@ -205,7 +326,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_15",
+   "id": "wholehomeheat_16",
    "start": 123.88,
    "kind": "raw",
    "src": "broll/whh_russian_oven.mp4",
@@ -215,7 +336,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_16",
+   "id": "wholehomeheat_17",
    "start": 127.88,
    "kind": "raw",
    "src": "img/whh_russian_oven.jpg",
@@ -224,7 +345,7 @@
    "dur": 3.2
   },
   {
-   "id": "wholehomeheat_17",
+   "id": "wholehomeheat_18",
    "start": 133.32,
    "kind": "raw",
    "src": "broll/whh_barn_beam.mp4",
@@ -234,14 +355,13 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_18",
+   "id": "wholehomeheat_19",
    "start": 136.14,
    "kind": "raw",
-   "src": "broll/whh_chimney_core.mp4",
+   "src": "img/whh_chimney_core.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 5.68
   },
   {
    "id": "ov_cutawaycallouts_136",
@@ -280,17 +400,16 @@
    ]
   },
   {
-   "id": "wholehomeheat_19",
+   "id": "wholehomeheat_20",
    "start": 141.82,
    "kind": "raw",
-   "src": "broll/whh_grate_ceiling.mp4",
+   "src": "img/whh_grate_ceiling.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 5.8
   },
   {
-   "id": "wholehomeheat_20",
+   "id": "wholehomeheat_21",
    "start": 147.62,
    "kind": "raw",
    "src": "broll/whh_doorknob_old.mp4",
@@ -300,7 +419,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_21",
+   "id": "wholehomeheat_22",
    "start": 149.94,
    "kind": "raw",
    "src": "broll/whh_farm_1880.mp4",
@@ -310,7 +429,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_22",
+   "id": "wholehomeheat_23",
    "start": 153.04,
    "kind": "raw",
    "src": "img/whh_grate_pair.jpg",
@@ -319,7 +438,7 @@
    "dur": 7.2
   },
   {
-   "id": "wholehomeheat_23",
+   "id": "wholehomeheat_24",
    "start": 163.94,
    "kind": "raw",
    "src": "broll/whh_octopus_furnace.mp4",
@@ -329,25 +448,45 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_24",
+   "id": "wholehomeheat_25",
    "start": 167.8,
+   "kind": "raw",
+   "src": "broll/whh_octopus_arms.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
+  },
+  {
+   "id": "wholehomeheat_26",
+   "start": 171.8,
    "kind": "raw",
    "src": "img/whh_octopus_arms.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 7.2
+   "dur": 3.2
   },
   {
-   "id": "wholehomeheat_25",
+   "id": "wholehomeheat_27",
    "start": 177.26,
+   "kind": "raw",
+   "src": "broll/whh_gravity_nofan.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
+  },
+  {
+   "id": "wholehomeheat_28",
+   "start": 181.26,
    "kind": "raw",
    "src": "img/whh_gravity_nofan.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 6.64
+   "dur": 2.64
   },
   {
-   "id": "wholehomeheat_26",
+   "id": "wholehomeheat_29",
    "start": 183.9,
    "kind": "raw",
    "src": "broll/whh_blower_motor.mp4",
@@ -357,7 +496,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_27",
+   "id": "wholehomeheat_30",
    "start": 187.9,
    "kind": "raw",
    "src": "img/whh_blower_motor.jpg",
@@ -366,7 +505,7 @@
    "dur": 3.16
   },
   {
-   "id": "wholehomeheat_28",
+   "id": "wholehomeheat_31",
    "start": 192.86,
    "kind": "raw",
    "src": "broll/whh_furnace_garage.mp4",
@@ -376,7 +515,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_29",
+   "id": "wholehomeheat_32",
    "start": 197.28,
    "kind": "raw",
    "src": "broll/whh_duct_run.mp4",
@@ -386,7 +525,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_30",
+   "id": "wholehomeheat_33",
    "start": 201.42,
    "kind": "raw",
    "src": "broll/whh_thermostat_wall.mp4",
@@ -396,7 +535,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_31",
+   "id": "wholehomeheat_34",
    "start": 203.6,
    "kind": "raw",
    "src": "img/whh_dark_house_out.jpg",
@@ -405,7 +544,7 @@
    "dur": 7.2
   },
   {
-   "id": "wholehomeheat_32",
+   "id": "wholehomeheat_35",
    "start": 217.26,
    "kind": "raw",
    "src": "img/whh_tent_mortgage.jpg",
@@ -442,7 +581,7 @@
    "note": "air holds almost no heat — open a door for ten seconds and you start over"
   },
   {
-   "id": "wholehomeheat_33",
+   "id": "wholehomeheat_36",
    "start": 237.7,
    "kind": "raw",
    "src": "broll/whh_heater_elec.mp4",
@@ -452,7 +591,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_34",
+   "id": "wholehomeheat_37",
    "start": 239.5,
    "kind": "raw",
    "src": "img/whh_door_open_heat.jpg",
@@ -461,7 +600,7 @@
    "dur": 5.88
   },
   {
-   "id": "wholehomeheat_35",
+   "id": "wholehomeheat_38",
    "start": 247.18,
    "kind": "raw",
    "src": "broll/whh_bucket_leak.mp4",
@@ -471,7 +610,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_36",
+   "id": "wholehomeheat_39",
    "start": 251.42,
    "kind": "raw",
    "src": "broll/whh_brick_stack.mp4",
@@ -481,7 +620,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_37",
+   "id": "wholehomeheat_40",
    "start": 253.32,
    "kind": "raw",
    "src": "broll/whh_stone_slab.mp4",
@@ -491,7 +630,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_38",
+   "id": "wholehomeheat_41",
    "start": 255.82,
    "kind": "raw",
    "src": "broll/whh_iron_plate.mp4",
@@ -501,7 +640,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_39",
+   "id": "wholehomeheat_42",
    "start": 259.82,
    "kind": "raw",
    "src": "img/whh_iron_plate.jpg",
@@ -510,14 +649,13 @@
    "dur": 3.08
   },
   {
-   "id": "wholehomeheat_40",
+   "id": "wholehomeheat_43",
    "start": 264.7,
    "kind": "raw",
-   "src": "broll/whh_brick_ton.mp4",
+   "src": "img/whh_brick_ton.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 6.64
   },
   {
    "id": "ov_bigstatreveal_265",
@@ -534,26 +672,16 @@
    "support": "and it hands that back over eight to twelve hours — at about the rate a room actually wants it"
   },
   {
-   "id": "wholehomeheat_41",
-   "start": 268.7,
-   "kind": "raw",
-   "src": "img/whh_brick_ton.jpg",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 2.64
-  },
-  {
-   "id": "wholehomeheat_42",
+   "id": "wholehomeheat_44",
    "start": 273.14,
    "kind": "raw",
-   "src": "broll/whh_heat_hours.mp4",
+   "src": "img/whh_heat_hours.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 5.46
   },
   {
-   "id": "wholehomeheat_43",
+   "id": "wholehomeheat_45",
    "start": 280.4,
    "kind": "raw",
    "src": "img/whh_water_pour.jpg",
@@ -593,7 +721,7 @@
    ]
   },
   {
-   "id": "wholehomeheat_44",
+   "id": "wholehomeheat_46",
    "start": 285.58,
    "kind": "raw",
    "src": "img/whh_water_reservoir.jpg",
@@ -602,7 +730,7 @@
    "dur": 6.84
   },
   {
-   "id": "wholehomeheat_45",
+   "id": "wholehomeheat_47",
    "start": 292.42,
    "kind": "raw",
    "src": "broll/whh_dishes_wash.mp4",
@@ -612,7 +740,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_46",
+   "id": "wholehomeheat_48",
    "start": 295.44,
    "kind": "raw",
    "src": "img/whh_plaster_wall.jpg",
@@ -635,16 +763,26 @@
    "note": "and the house will do the second one for free, if it is built right"
   },
   {
-   "id": "wholehomeheat_47",
-   "start": 310.98,
+   "id": "wholehomeheat_49",
+   "start": 309.96,
    "kind": "raw",
-   "src": "img/whh_chimney_inside.jpg",
+   "src": "img/whh_presenter_chimney.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.62
+   "dur": 2.2
   },
   {
-   "id": "wholehomeheat_48",
+   "id": "wholehomeheat_50",
+   "start": 310.98,
+   "kind": "raw",
+   "src": "broll/whh_chimney_inside.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
+  },
+  {
+   "id": "wholehomeheat_51",
    "start": 318.4,
    "kind": "raw",
    "src": "broll/whh_chimney_outside.mp4",
@@ -654,23 +792,38 @@
    "noSplit": true
   },
   {
-   "id": "ov_beforeafter_318",
+   "id": "ov_duelcolumns_318",
    "start": 318.4,
    "dur": 5.6,
    "kind": "premium",
    "overlay": true,
-   "comp": "BeforeAfter",
+   "comp": "DuelColumns",
    "theme": "earth",
    "zone": "full",
-   "eyebrow": "Same stove. Same fire. Different house.",
-   "beforeImage": "img/whh_chimney_outside.jpg",
-   "afterImage": "img/whh_chimney_inside.jpg",
-   "beforeLabel": "Chimney on an outside wall",
-   "afterLabel": "Chimney through the middle",
-   "caption": "outside, the masonry hands its stored heat to your yard all night — inside, that same brick is a heat tower in your living room"
+   "title": "Same stove. Same fire. Different house.",
+   "leftName": "Chimney on an OUTSIDE wall",
+   "rightName": "Chimney through the MIDDLE",
+   "rows": [
+    {
+     "attr": "Still radiating at 4 a.m.",
+     "leftWins": false
+    },
+    {
+     "attr": "Gives its heat to your rooms",
+     "leftWins": false
+    },
+    {
+     "attr": "Warms your yard all night",
+     "leftWins": true
+    },
+    {
+     "attr": "Burns more fuel for the same warmth",
+     "leftWins": true
+    }
+   ]
   },
   {
-   "id": "wholehomeheat_49",
+   "id": "wholehomeheat_52",
    "start": 322,
    "kind": "raw",
    "src": "broll/whh_chimney_metal.mp4",
@@ -680,26 +833,16 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_50",
+   "id": "wholehomeheat_53",
    "start": 325.22,
-   "kind": "raw",
-   "src": "broll/whh_chimney_wind.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_51",
-   "start": 329.22,
    "kind": "raw",
    "src": "img/whh_chimney_wind.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.2
+   "dur": 7.2
   },
   {
-   "id": "wholehomeheat_52",
+   "id": "wholehomeheat_54",
    "start": 334.44,
    "kind": "raw",
    "src": "broll/whh_flue_gas_hot.mp4",
@@ -709,26 +852,16 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_53",
+   "id": "wholehomeheat_55",
    "start": 336.66,
-   "kind": "raw",
-   "src": "broll/whh_brick_soak.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_54",
-   "start": 340.66,
    "kind": "raw",
    "src": "img/whh_brick_soak.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.2
+   "dur": 7.2
   },
   {
-   "id": "wholehomeheat_55",
+   "id": "wholehomeheat_56",
    "start": 346.56,
    "kind": "raw",
    "src": "img/whh_radiator_yard.jpg",
@@ -751,7 +884,7 @@
    "note": "all the heat that brick soaks up goes straight to the outdoors, every night"
   },
   {
-   "id": "wholehomeheat_56",
+   "id": "wholehomeheat_57",
    "start": 351.8,
    "kind": "raw",
    "src": "broll/whh_chimney_tower.mp4",
@@ -761,7 +894,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_57",
+   "id": "wholehomeheat_58",
    "start": 355.26,
    "kind": "raw",
    "src": "broll/whh_fire_dies_ten.mp4",
@@ -771,7 +904,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_58",
+   "id": "wholehomeheat_59",
    "start": 358.74,
    "kind": "raw",
    "src": "broll/whh_night_radiate.mp4",
@@ -781,7 +914,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_59",
+   "id": "wholehomeheat_60",
    "start": 360.66,
    "kind": "raw",
    "src": "broll/whh_four_am.mp4",
@@ -791,7 +924,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_60",
+   "id": "wholehomeheat_61",
    "start": 363.74,
    "kind": "raw",
    "src": "broll/whh_envelope_keep.mp4",
@@ -801,7 +934,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_61",
+   "id": "wholehomeheat_62",
    "start": 367.28,
    "kind": "raw",
    "src": "broll/whh_franklin_stove.mp4",
@@ -822,55 +955,34 @@
    "quote": "Franklin, 1741. Rumford, 1796. Serious people have fought this exact problem for close to three hundred years — and kept landing on the same answer."
   },
   {
-   "id": "wholehomeheat_62",
-   "start": 373.16,
-   "kind": "raw",
-   "src": "broll/whh_franklin_pages.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
    "id": "wholehomeheat_63",
-   "start": 377.16,
+   "start": 373.16,
    "kind": "raw",
    "src": "img/whh_franklin_pages.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.36
+   "dur": 6.36
   },
   {
    "id": "wholehomeheat_64",
    "start": 381.32,
    "kind": "raw",
-   "src": "broll/whh_heat_up_flue.mp4",
+   "src": "img/whh_heat_up_flue.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 5.7
   },
   {
    "id": "wholehomeheat_65",
    "start": 387.02,
    "kind": "raw",
-   "src": "broll/whh_rumford_throat.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_66",
-   "start": 391.02,
-   "kind": "raw",
    "src": "img/whh_rumford_throat.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.2
+   "dur": 7.2
   },
   {
-   "id": "wholehomeheat_67",
+   "id": "wholehomeheat_66",
    "start": 416.64,
    "kind": "raw",
    "src": "img/whh_one_hole_wait.jpg",
@@ -879,7 +991,7 @@
    "dur": 7.2
   },
   {
-   "id": "wholehomeheat_68",
+   "id": "wholehomeheat_67",
    "start": 429.56,
    "kind": "raw",
    "src": "img/whh_jar_lid.jpg",
@@ -902,7 +1014,7 @@
    "truthLabel": "TRUTH"
   },
   {
-   "id": "wholehomeheat_69",
+   "id": "wholehomeheat_68",
    "start": 435.88,
    "kind": "raw",
    "src": "broll/whh_warm_air_up.mp4",
@@ -912,22 +1024,33 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_70",
+   "id": "wholehomeheat_69",
    "start": 438.82,
+   "kind": "raw",
+   "src": "broll/whh_cold_air_falls.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
+  },
+  {
+   "id": "wholehomeheat_70",
+   "start": 442.82,
    "kind": "raw",
    "src": "img/whh_cold_air_falls.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 7.2
+   "dur": 3.2
   },
   {
    "id": "wholehomeheat_71",
    "start": 449.86,
    "kind": "raw",
-   "src": "img/whh_two_paths.jpg",
+   "src": "broll/whh_two_paths.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.9
+   "dur": 4,
+   "noSplit": true
   },
   {
    "id": "ov_cutawaycallouts_450",
@@ -976,10 +1099,11 @@
    "id": "wholehomeheat_72",
    "start": 457.56,
    "kind": "raw",
-   "src": "img/whh_grate_near_stove.jpg",
+   "src": "broll/whh_grate_near_stove.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.38
+   "dur": 4,
+   "noSplit": true
   },
   {
    "id": "wholehomeheat_73",
@@ -1004,20 +1128,19 @@
    "id": "wholehomeheat_75",
    "start": 472.2,
    "kind": "raw",
-   "src": "broll/whh_upstairs_ceiling.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_76",
-   "start": 476.2,
-   "kind": "raw",
    "src": "img/whh_upstairs_ceiling.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.2
+   "dur": 7.2
+  },
+  {
+   "id": "wholehomeheat_76",
+   "start": 487.74,
+   "kind": "raw",
+   "src": "img/whh_presenter_stairs.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3
   },
   {
    "id": "wholehomeheat_77",
@@ -1033,11 +1156,10 @@
    "id": "wholehomeheat_78",
    "start": 493.22,
    "kind": "raw",
-   "src": "broll/whh_engine_running.mp4",
+   "src": "img/whh_engine_running.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 6.52
   },
   {
    "id": "ov_highlightsweep_493",
@@ -1055,15 +1177,6 @@
   },
   {
    "id": "wholehomeheat_79",
-   "start": 497.22,
-   "kind": "raw",
-   "src": "img/whh_engine_running.jpg",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 2.52
-  },
-  {
-   "id": "wholehomeheat_80",
    "start": 501.54,
    "kind": "raw",
    "src": "broll/whh_two_storey.mp4",
@@ -1087,7 +1200,7 @@
    "note": "on one level you lean much harder on the mass and the layout, and you may end up wanting a small doorway fan"
   },
   {
-   "id": "wholehomeheat_81",
+   "id": "wholehomeheat_80",
    "start": 504.16,
    "kind": "raw",
    "src": "img/whh_ranch_flat.jpg",
@@ -1096,13 +1209,23 @@
    "dur": 7.2
   },
   {
-   "id": "wholehomeheat_82",
+   "id": "wholehomeheat_81",
    "start": 513.64,
+   "kind": "raw",
+   "src": "broll/whh_doorway_fan.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
+  },
+  {
+   "id": "wholehomeheat_82",
+   "start": 517.64,
    "kind": "raw",
    "src": "img/whh_doorway_fan.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 7.2
+   "dur": 3.2
   },
   {
    "id": "ov_checklistreveal_519",
@@ -1183,52 +1306,41 @@
    "id": "wholehomeheat_87",
    "start": 544.3,
    "kind": "raw",
-   "src": "broll/whh_rug_over_grate.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_88",
-   "start": 548.3,
-   "kind": "raw",
    "src": "img/whh_rug_over_grate.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.74
+   "dur": 6.74
   },
   {
-   "id": "wholehomeheat_89",
+   "id": "wholehomeheat_88",
    "start": 551.04,
-   "kind": "raw",
-   "src": "broll/whh_child_hand.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_90",
-   "start": 555.04,
    "kind": "raw",
    "src": "img/whh_child_hand.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.88
+   "dur": 6.88
   },
   {
-   "id": "wholehomeheat_91",
+   "id": "wholehomeheat_89",
    "start": 559.72,
    "kind": "raw",
    "src": "broll/whh_co_detector.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
+   "dur": 3.18,
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_92",
+   "id": "wholehomeheat_90",
+   "start": 562.9,
+   "kind": "raw",
+   "src": "img/whh_presenter_detector.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.52
+  },
+  {
+   "id": "wholehomeheat_91",
    "start": 565.42,
    "kind": "raw",
    "src": "img/whh_co_bedroom.jpg",
@@ -1237,16 +1349,16 @@
    "dur": 5.46
   },
   {
-   "id": "wholehomeheat_93",
+   "id": "wholehomeheat_92",
    "start": 570.88,
    "kind": "raw",
-   "src": "img/whh_chimney_sweep.jpg",
+   "src": "img/whh_presenter_sweep.jpg",
    "hue": "amber",
    "darken": 0,
    "dur": 5.42
   },
   {
-   "id": "wholehomeheat_94",
+   "id": "wholehomeheat_93",
    "start": 578.1,
    "kind": "raw",
    "src": "broll/whh_creosote_flue.mp4",
@@ -1256,17 +1368,16 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_95",
+   "id": "wholehomeheat_94",
    "start": 580.96,
    "kind": "raw",
-   "src": "broll/whh_wood_split.mp4",
+   "src": "img/whh_presenter_wood.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 1.14,
-   "noSplit": true
+   "dur": 2.2
   },
   {
-   "id": "wholehomeheat_96",
+   "id": "wholehomeheat_95",
    "start": 582.1,
    "kind": "raw",
    "src": "broll/whh_wood_stack.mp4",
@@ -1290,7 +1401,7 @@
    "support": "wet wood makes creosote and gives you a fraction of the heat — creosote is what burns chimneys down"
   },
   {
-   "id": "wholehomeheat_97",
+   "id": "wholehomeheat_96",
    "start": 586.06,
    "kind": "raw",
    "src": "broll/whh_wet_wood_hiss.mp4",
@@ -1300,26 +1411,16 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_98",
+   "id": "wholehomeheat_97",
    "start": 590,
-   "kind": "raw",
-   "src": "broll/whh_treated_lumber.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_99",
-   "start": 594,
    "kind": "raw",
    "src": "img/whh_treated_lumber.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.2
+   "dur": 7.2
   },
   {
-   "id": "wholehomeheat_100",
+   "id": "wholehomeheat_98",
    "start": 605.24,
    "kind": "raw",
    "src": "broll/whh_iron_fast.mp4",
@@ -1329,7 +1430,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_101",
+   "id": "wholehomeheat_99",
    "start": 607.4,
    "kind": "raw",
    "src": "broll/whh_iron_cold.mp4",
@@ -1339,7 +1440,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_102",
+   "id": "wholehomeheat_100",
    "start": 609.98,
    "kind": "raw",
    "src": "broll/whh_workshop_stove.mp4",
@@ -1349,7 +1450,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_103",
+   "id": "wholehomeheat_101",
    "start": 614.1,
    "kind": "raw",
    "src": "broll/whh_masonry_wrap.mp4",
@@ -1359,7 +1460,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_104",
+   "id": "wholehomeheat_102",
    "start": 617.74,
    "kind": "raw",
    "src": "broll/whh_soapstone_slab.mp4",
@@ -1369,7 +1470,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_105",
+   "id": "wholehomeheat_103",
    "start": 619.76,
    "kind": "raw",
    "src": "broll/whh_masonry_heater.mp4",
@@ -1415,7 +1516,7 @@
    ]
   },
   {
-   "id": "wholehomeheat_106",
+   "id": "wholehomeheat_104",
    "start": 622.72,
    "kind": "raw",
    "src": "img/whh_tile_stove_door.jpg",
@@ -1424,7 +1525,7 @@
    "dur": 4.86
   },
   {
-   "id": "wholehomeheat_107",
+   "id": "wholehomeheat_105",
    "start": 627.58,
    "kind": "raw",
    "src": "img/whh_hot_fast_fire.jpg",
@@ -1433,7 +1534,7 @@
    "dur": 5.2
   },
   {
-   "id": "wholehomeheat_108",
+   "id": "wholehomeheat_106",
    "start": 634.58,
    "kind": "raw",
    "src": "broll/whh_damper_shut.mp4",
@@ -1443,7 +1544,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_109",
+   "id": "wholehomeheat_107",
    "start": 636.12,
    "kind": "raw",
    "src": "broll/whh_radiate_24.mp4",
@@ -1453,23 +1554,13 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_110",
+   "id": "wholehomeheat_108",
    "start": 637.52,
-   "kind": "raw",
-   "src": "broll/whh_two_fires_day.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_111",
-   "start": 641.52,
    "kind": "raw",
    "src": "img/whh_two_fires_day.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.2
+   "dur": 7.2
   },
   {
    "id": "ov_duelcolumns_649",
@@ -1503,7 +1594,7 @@
    ]
   },
   {
-   "id": "wholehomeheat_112",
+   "id": "wholehomeheat_109",
    "start": 649.92,
    "kind": "raw",
    "src": "broll/whh_baby_bird.mp4",
@@ -1513,7 +1604,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_113",
+   "id": "wholehomeheat_110",
    "start": 652.82,
    "kind": "raw",
    "src": "broll/whh_coffee_pot.mp4",
@@ -1523,7 +1614,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_114",
+   "id": "wholehomeheat_111",
    "start": 656.82,
    "kind": "raw",
    "src": "img/whh_coffee_pot.jpg",
@@ -1532,26 +1623,35 @@
    "dur": 3.2
   },
   {
-   "id": "wholehomeheat_115",
+   "id": "wholehomeheat_112",
    "start": 663.94,
    "kind": "raw",
-   "src": "broll/whh_hearth_pad.mp4",
+   "src": "img/whh_presenter_brick.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 1.84,
+   "dur": 2.2
+  },
+  {
+   "id": "wholehomeheat_113",
+   "start": 665.78,
+   "kind": "raw",
+   "src": "broll/whh_stone_back_wall.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.64,
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_116",
-   "start": 665.78,
+   "id": "wholehomeheat_114",
+   "start": 668.42,
    "kind": "raw",
-   "src": "img/whh_stone_back_wall.jpg",
+   "src": "img/whh_presenter_soapstone.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.72
+   "dur": 2.2
   },
   {
-   "id": "wholehomeheat_117",
+   "id": "wholehomeheat_115",
    "start": 670.5,
    "kind": "raw",
    "src": "img/whh_reservoir_fill.jpg",
@@ -1574,7 +1674,7 @@
    "support": "and hands it back to the room all evening — anything heavy stacked where the fire is pays you back after the fire is out"
   },
   {
-   "id": "wholehomeheat_118",
+   "id": "wholehomeheat_116",
    "start": 685,
    "kind": "raw",
    "src": "img/whh_mass_payback.jpg",
@@ -1583,17 +1683,16 @@
    "dur": 6.98
   },
   {
-   "id": "wholehomeheat_119",
+   "id": "wholehomeheat_117",
    "start": 693.78,
    "kind": "raw",
-   "src": "broll/whh_almanac_book.mp4",
+   "src": "img/whh_presenter_book.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.42,
-   "noSplit": true
+   "dur": 2.42
   },
   {
-   "id": "wholehomeheat_120",
+   "id": "wholehomeheat_118",
    "start": 696.2,
    "kind": "raw",
    "src": "img/whh_almanac_open.jpg",
@@ -1632,7 +1731,7 @@
    "note": "there are rooms here that sit at fifty degrees in January, and that is fine — nobody is standing in them"
   },
   {
-   "id": "wholehomeheat_121",
+   "id": "wholehomeheat_119",
    "start": 722.58,
    "kind": "raw",
    "src": "broll/whh_cold_room_50.mp4",
@@ -1642,7 +1741,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_122",
+   "id": "wholehomeheat_120",
    "start": 726.58,
    "kind": "raw",
    "src": "img/whh_cold_room_50.jpg",
@@ -1651,23 +1750,38 @@
    "dur": 2.62
   },
   {
-   "id": "ov_beforeafter_730",
+   "id": "ov_duelcolumns_730",
    "start": 729.56,
    "dur": 5.2,
    "kind": "premium",
    "overlay": true,
-   "comp": "BeforeAfter",
+   "comp": "DuelColumns",
    "theme": "earth",
    "zone": "full",
-   "eyebrow": "Zoning — done with doors and curtains, for free",
-   "beforeImage": "img/whh_cold_room_50.jpg",
-   "afterImage": "img/whh_rooms_lived.jpg",
-   "beforeLabel": "Heat all 2,200 sq ft",
-   "afterLabel": "Heat the rooms you live in",
-   "caption": "the rooms we live in are the rooms that touch the chimney; the rest are shut and allowed to go cold"
+   "title": "Zoning — done with doors and curtains, for free",
+   "leftName": "Heat all 2,200 sq ft",
+   "rightName": "Heat the rooms you live in",
+   "rows": [
+    {
+     "attr": "Rooms that touch the chimney",
+     "leftWins": false
+    },
+    {
+     "attr": "Fuel burned",
+     "leftWins": true
+    },
+    {
+     "attr": "Cold rooms you never stand in",
+     "leftWins": true
+    },
+    {
+     "attr": "Costs anything",
+     "leftWins": true
+    }
+   ]
   },
   {
-   "id": "wholehomeheat_123",
+   "id": "wholehomeheat_121",
    "start": 731,
    "kind": "raw",
    "src": "broll/whh_door_closed.mp4",
@@ -1677,7 +1791,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_124",
+   "id": "wholehomeheat_122",
    "start": 734.36,
    "kind": "raw",
    "src": "broll/whh_rooms_lived.mp4",
@@ -1687,7 +1801,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_125",
+   "id": "wholehomeheat_123",
    "start": 738.36,
    "kind": "raw",
    "src": "img/whh_rooms_lived.jpg",
@@ -1696,17 +1810,16 @@
    "dur": 2.54
   },
   {
-   "id": "wholehomeheat_126",
+   "id": "wholehomeheat_124",
    "start": 740.9,
    "kind": "raw",
-   "src": "broll/whh_curtain_hall.mp4",
+   "src": "img/whh_presenter_curtain.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.22,
-   "noSplit": true
+   "dur": 2.22
   },
   {
-   "id": "wholehomeheat_127",
+   "id": "wholehomeheat_125",
    "start": 743.12,
    "kind": "raw",
    "src": "img/whh_curtain_stair.jpg",
@@ -1715,7 +1828,7 @@
    "dur": 7.2
   },
   {
-   "id": "wholehomeheat_128",
+   "id": "wholehomeheat_126",
    "start": 752.9,
    "kind": "raw",
    "src": "img/whh_upstairs_closed.jpg",
@@ -1754,7 +1867,7 @@
    ]
   },
   {
-   "id": "wholehomeheat_129",
+   "id": "wholehomeheat_127",
    "start": 769.3,
    "kind": "raw",
    "src": "broll/whh_sash_gap.mp4",
@@ -1764,7 +1877,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_130",
+   "id": "wholehomeheat_128",
    "start": 771.82,
    "kind": "raw",
    "src": "broll/whh_attic_hatch.mp4",
@@ -1774,7 +1887,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_131",
+   "id": "wholehomeheat_129",
    "start": 773.06,
    "kind": "raw",
    "src": "broll/whh_sill_foundation.mp4",
@@ -1784,26 +1897,26 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_132",
+   "id": "wholehomeheat_130",
    "start": 776.74,
    "kind": "raw",
-   "src": "img/whh_wet_hand_draft.jpg",
+   "src": "broll/whh_wet_hand_draft.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.28
-  },
-  {
-   "id": "wholehomeheat_133",
-   "start": 783.82,
-   "kind": "raw",
-   "src": "broll/whh_rope_caulk.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 1.86,
+   "dur": 4,
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_134",
+   "id": "wholehomeheat_131",
+   "start": 783.82,
+   "kind": "raw",
+   "src": "img/whh_presenter_caulk.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "wholehomeheat_132",
    "start": 785.68,
    "kind": "raw",
    "src": "broll/whh_door_bottom.mp4",
@@ -1813,7 +1926,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_135",
+   "id": "wholehomeheat_133",
    "start": 789.48,
    "kind": "raw",
    "src": "broll/whh_straw_bales.mp4",
@@ -1823,7 +1936,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_136",
+   "id": "wholehomeheat_134",
    "start": 792.18,
    "kind": "raw",
    "src": "broll/whh_leaves_bank.mp4",
@@ -1833,7 +1946,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_137",
+   "id": "wholehomeheat_135",
    "start": 795.58,
    "kind": "raw",
    "src": "img/whh_snow_bank.jpg",
@@ -1842,7 +1955,7 @@
    "dur": 5.62
   },
   {
-   "id": "wholehomeheat_138",
+   "id": "wholehomeheat_136",
    "start": 801.2,
    "kind": "raw",
    "src": "img/whh_window_quilt.jpg",
@@ -1851,7 +1964,7 @@
    "dur": 6.36
   },
   {
-   "id": "wholehomeheat_139",
+   "id": "wholehomeheat_137",
    "start": 807.56,
    "kind": "raw",
    "src": "broll/whh_quilt_morning.mp4",
@@ -1861,7 +1974,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_140",
+   "id": "wholehomeheat_138",
    "start": 809.44,
    "kind": "raw",
    "src": "img/whh_single_pane.jpg",
@@ -1884,7 +1997,7 @@
    "note": "a heavy blanket or an insulated shade, down at dusk and back up in the morning"
   },
   {
-   "id": "wholehomeheat_141",
+   "id": "wholehomeheat_139",
    "start": 825.52,
    "kind": "raw",
    "src": "broll/whh_duct_leak.mp4",
@@ -1909,7 +2022,7 @@
    "support": "leaking into attics, crawlspaces and the hollow parts of the walls — one dollar in three, heating the parts of the house nobody lives in"
   },
   {
-   "id": "wholehomeheat_142",
+   "id": "wholehomeheat_140",
    "start": 828.6,
    "kind": "raw",
    "src": "broll/whh_crawlspace.mp4",
@@ -1919,7 +2032,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_143",
+   "id": "wholehomeheat_141",
    "start": 830.08,
    "kind": "raw",
    "src": "broll/whh_wall_cavity.mp4",
@@ -1929,7 +2042,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_144",
+   "id": "wholehomeheat_142",
    "start": 833.16,
    "kind": "raw",
    "src": "broll/whh_one_dollar_three.mp4",
@@ -1939,14 +2052,13 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_145",
+   "id": "wholehomeheat_143",
    "start": 840.88,
    "kind": "raw",
-   "src": "broll/whh_heat_in_room.mp4",
+   "src": "img/whh_heat_in_room.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 6.18
   },
   {
    "id": "ov_highlightsweep_841",
@@ -1963,14 +2075,13 @@
    "note": ""
   },
   {
-   "id": "wholehomeheat_146",
+   "id": "wholehomeheat_144",
    "start": 848.86,
    "kind": "raw",
-   "src": "broll/whh_bank_coals.mp4",
+   "src": "img/whh_presenter_bank.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.48,
-   "noSplit": true
+   "dur": 3.48
   },
   {
    "id": "ov_flowsteps_849",
@@ -2003,7 +2114,7 @@
    ]
   },
   {
-   "id": "wholehomeheat_147",
+   "id": "wholehomeheat_145",
    "start": 852.34,
    "kind": "raw",
    "src": "broll/whh_big_round.mp4",
@@ -2013,7 +2124,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_148",
+   "id": "wholehomeheat_146",
    "start": 854.6,
    "kind": "raw",
    "src": "broll/whh_damper_down.mp4",
@@ -2023,7 +2134,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_149",
+   "id": "wholehomeheat_147",
    "start": 856.4,
    "kind": "raw",
    "src": "broll/whh_fire_holds.mp4",
@@ -2033,22 +2144,42 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_150",
+   "id": "wholehomeheat_148",
    "start": 859.72,
+   "kind": "raw",
+   "src": "broll/whh_morning_kindling.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
+  },
+  {
+   "id": "wholehomeheat_149",
+   "start": 863.72,
    "kind": "raw",
    "src": "img/whh_morning_kindling.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 6.2
+   "dur": 2.2
+  },
+  {
+   "id": "wholehomeheat_150",
+   "start": 865.92,
+   "kind": "raw",
+   "src": "broll/whh_match_unused.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
   },
   {
    "id": "wholehomeheat_151",
-   "start": 865.92,
+   "start": 869.92,
    "kind": "raw",
    "src": "img/whh_match_unused.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 7.2
+   "dur": 3.2
   },
   {
    "id": "wholehomeheat_152",
@@ -2074,11 +2205,10 @@
    "id": "wholehomeheat_154",
    "start": 881.56,
    "kind": "raw",
-   "src": "broll/whh_hot_water_bottle.mp4",
+   "src": "img/whh_hot_water_bottle.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 5.18
   },
   {
    "id": "wholehomeheat_155",
@@ -2094,11 +2224,10 @@
    "id": "wholehomeheat_156",
    "start": 889.48,
    "kind": "raw",
-   "src": "broll/whh_bed_warm.mp4",
+   "src": "img/whh_bed_warm.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 7.2
   },
   {
    "id": "ov_checklistreveal_893",
@@ -2121,15 +2250,6 @@
    "stamp": "THAT IS ALL OF IT"
   },
   {
-   "id": "wholehomeheat_157",
-   "start": 893.48,
-   "kind": "raw",
-   "src": "img/whh_bed_warm.jpg",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 3.2
-  },
-  {
    "id": "ov_mythtruth_901",
    "start": 900.9,
    "dur": 5,
@@ -2144,7 +2264,7 @@
    "truthLabel": "TRUTH"
   },
   {
-   "id": "wholehomeheat_158",
+   "id": "wholehomeheat_157",
    "start": 904.1,
    "kind": "raw",
    "src": "broll/whh_heating_books.mp4",
@@ -2154,7 +2274,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_159",
+   "id": "wholehomeheat_158",
    "start": 907.52,
    "kind": "raw",
    "src": "img/whh_book_diagram.jpg",
@@ -2163,7 +2283,7 @@
    "dur": 5.98
   },
   {
-   "id": "wholehomeheat_160",
+   "id": "wholehomeheat_159",
    "start": 915.3,
    "kind": "raw",
    "src": "img/whh_part_number.jpg",
@@ -2186,7 +2306,7 @@
    "note": "no blower motor, no capacitor, no control board, no filters, no service call, no fuel contract"
   },
   {
-   "id": "wholehomeheat_161",
+   "id": "wholehomeheat_160",
    "start": 921.62,
    "kind": "raw",
    "src": "broll/whh_blower_shelf.mp4",
@@ -2196,7 +2316,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_162",
+   "id": "wholehomeheat_161",
    "start": 923.74,
    "kind": "raw",
    "src": "broll/whh_filters_four.mp4",
@@ -2206,7 +2326,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_163",
+   "id": "wholehomeheat_162",
    "start": 926.76,
    "kind": "raw",
    "src": "broll/whh_service_van.mp4",
@@ -2216,7 +2336,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_164",
+   "id": "wholehomeheat_163",
    "start": 928.32,
    "kind": "raw",
    "src": "broll/whh_fuel_contract.mp4",
@@ -2226,7 +2346,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_165",
+   "id": "wholehomeheat_164",
    "start": 930.92,
    "kind": "raw",
    "src": "broll/whh_meter_stone.mp4",
@@ -2247,27 +2367,25 @@
    "quote": "You cannot put a meter on a stone wall."
   },
   {
-   "id": "wholehomeheat_166",
+   "id": "wholehomeheat_165",
    "start": 933.22,
    "kind": "raw",
-   "src": "broll/whh_salesman_50s.mp4",
+   "src": "img/whh_salesman_50s.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 5.84
+  },
+  {
+   "id": "wholehomeheat_166",
+   "start": 940.86,
+   "kind": "raw",
+   "src": "img/whh_catalogue_pages.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.84
   },
   {
    "id": "wholehomeheat_167",
-   "start": 940.86,
-   "kind": "raw",
-   "src": "broll/whh_catalogue_pages.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_168",
    "start": 945.7,
    "kind": "raw",
    "src": "broll/whh_grate_forgotten.mp4",
@@ -2277,7 +2395,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_169",
+   "id": "wholehomeheat_168",
    "start": 948.46,
    "kind": "raw",
    "src": "broll/whh_grate_rug_over.mp4",
@@ -2287,7 +2405,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_170",
+   "id": "wholehomeheat_169",
    "start": 951.44,
    "kind": "raw",
    "src": "broll/whh_power_line_ice.mp4",
@@ -2297,32 +2415,48 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_171",
+   "id": "wholehomeheat_170",
    "start": 955.12,
    "kind": "raw",
-   "src": "img/whh_ice_storm.jpg",
+   "src": "broll/whh_ice_storm.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.28
+   "dur": 4,
+   "noSplit": true
   },
   {
-   "id": "ov_beforeafter_955",
+   "id": "ov_duelcolumns_955",
    "start": 955.12,
    "dur": 5.6,
    "kind": "premium",
    "overlay": true,
-   "comp": "BeforeAfter",
+   "comp": "DuelColumns",
    "theme": "earth",
    "zone": "full",
-   "eyebrow": "Four days without power, in an ice storm",
-   "beforeImage": "img/whh_thirty_eight.jpg",
-   "afterImage": "img/whh_front_room_full.jpg",
-   "beforeLabel": "House with ducts: 38°F",
-   "afterLabel": "House with the stove: warm",
-   "caption": "one of them has the neighbours over and soup on the stove; the other is watching the pipes"
+   "title": "Four days without power, in an ice storm",
+   "leftName": "House with ducts",
+   "rightName": "House with the stove",
+   "rows": [
+    {
+     "attr": "Temperature by morning two",
+     "leftWins": false
+    },
+    {
+     "attr": "Neighbours come over",
+     "leftWins": false
+    },
+    {
+     "attr": "Soup on the stove",
+     "leftWins": false
+    },
+    {
+     "attr": "Watching the pipes",
+     "leftWins": true
+    }
+   ]
   },
   {
-   "id": "wholehomeheat_172",
+   "id": "wholehomeheat_171",
    "start": 960.4,
    "kind": "raw",
    "src": "broll/whh_neighbours_come.mp4",
@@ -2332,7 +2466,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_173",
+   "id": "wholehomeheat_172",
    "start": 964,
    "kind": "raw",
    "src": "broll/whh_front_room_full.mp4",
@@ -2342,7 +2476,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_174",
+   "id": "wholehomeheat_173",
    "start": 965.92,
    "kind": "raw",
    "src": "broll/whh_soup_stove.mp4",
@@ -2352,7 +2486,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_175",
+   "id": "wholehomeheat_174",
    "start": 973.18,
    "kind": "raw",
    "src": "broll/whh_dark_windows.mp4",
@@ -2362,7 +2496,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_176",
+   "id": "wholehomeheat_175",
    "start": 975.74,
    "kind": "raw",
    "src": "broll/whh_thirty_eight.mp4",
@@ -2372,26 +2506,16 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_177",
+   "id": "wholehomeheat_176",
    "start": 977.04,
-   "kind": "raw",
-   "src": "broll/whh_pipes_freeze.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_178",
-   "start": 981.04,
    "kind": "raw",
    "src": "img/whh_pipes_freeze.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.5
+   "dur": 6.5
   },
   {
-   "id": "wholehomeheat_179",
+   "id": "wholehomeheat_177",
    "start": 985.34,
    "kind": "raw",
    "src": "img/whh_recap_seal.jpg",
@@ -2426,7 +2550,7 @@
    ]
   },
   {
-   "id": "wholehomeheat_180",
+   "id": "wholehomeheat_178",
    "start": 996.48,
    "kind": "raw",
    "src": "img/whh_recap_window.jpg",
@@ -2435,7 +2559,7 @@
    "dur": 5.64
   },
   {
-   "id": "wholehomeheat_181",
+   "id": "wholehomeheat_179",
    "start": 1002.12,
    "kind": "raw",
    "src": "img/whh_recap_zone.jpg",
@@ -2444,22 +2568,33 @@
    "dur": 6.38
   },
   {
-   "id": "wholehomeheat_182",
+   "id": "wholehomeheat_180",
    "start": 1010.3,
+   "kind": "raw",
+   "src": "broll/whh_recap_mass.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
+  },
+  {
+   "id": "wholehomeheat_181",
+   "start": 1014.3,
    "kind": "raw",
    "src": "img/whh_recap_mass.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 7.2
+   "dur": 3.2
   },
   {
-   "id": "wholehomeheat_183",
+   "id": "wholehomeheat_182",
    "start": 1031.14,
    "kind": "raw",
-   "src": "img/whh_recap_middle.jpg",
+   "src": "broll/whh_recap_middle.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 6.34
+   "dur": 4,
+   "noSplit": true
   },
   {
    "id": "ov_checklistreveal_1031",
@@ -2479,6 +2614,15 @@
     "CO detector on every floor"
    ],
    "stamp": "PLAN IT"
+  },
+  {
+   "id": "wholehomeheat_183",
+   "start": 1035.14,
+   "kind": "raw",
+   "src": "img/whh_recap_middle.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.34
   },
   {
    "id": "wholehomeheat_184",
@@ -2504,52 +2648,31 @@
    "id": "wholehomeheat_186",
    "start": 1044.88,
    "kind": "raw",
-   "src": "broll/whh_feel_change.mp4",
+   "src": "img/whh_feel_change.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4,
-   "noSplit": true
+   "dur": 5.38
   },
   {
    "id": "wholehomeheat_187",
    "start": 1052.06,
    "kind": "raw",
-   "src": "broll/whh_chimney_check.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_188",
-   "start": 1056.06,
-   "kind": "raw",
    "src": "img/whh_chimney_check.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 2.72
+   "dur": 6.72
   },
   {
-   "id": "wholehomeheat_189",
+   "id": "wholehomeheat_188",
    "start": 1058.78,
-   "kind": "raw",
-   "src": "broll/whh_comments_read.mp4",
-   "hue": "amber",
-   "darken": 0,
-   "dur": 4,
-   "noSplit": true
-  },
-  {
-   "id": "wholehomeheat_190",
-   "start": 1062.78,
    "kind": "raw",
    "src": "img/whh_comments_read.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.2
+   "dur": 7.2
   },
   {
-   "id": "wholehomeheat_191",
+   "id": "wholehomeheat_189",
    "start": 1069.76,
    "kind": "raw",
    "src": "img/whh_almanac_close.jpg",
@@ -2574,7 +2697,7 @@
    "image": "img/whh_almanac_close.jpg"
   },
   {
-   "id": "wholehomeheat_192",
+   "id": "wholehomeheat_190",
    "start": 1077.52,
    "kind": "raw",
    "src": "img/whh_tease_object.jpg",
@@ -2594,7 +2717,7 @@
    "quote": "Next time: the thing on top of the stove that does four jobs at once — and it is why our houses never get that dry, cracked February air. It is not a humidifier. It cost nothing."
   },
   {
-   "id": "wholehomeheat_193",
+   "id": "wholehomeheat_191",
    "start": 1084.52,
    "kind": "raw",
    "src": "img/whh_dry_air_feb.jpg",
@@ -2603,22 +2726,33 @@
    "dur": 5.42
   },
   {
-   "id": "wholehomeheat_194",
+   "id": "wholehomeheat_192",
    "start": 1091.74,
    "kind": "raw",
-   "src": "img/whh_thrown_out.jpg",
+   "src": "broll/whh_thrown_out.mp4",
    "hue": "amber",
    "darken": 0,
-   "dur": 6.44
+   "dur": 4,
+   "noSplit": true
   },
   {
-   "id": "wholehomeheat_195",
-   "start": 1098.18,
+   "id": "wholehomeheat_193",
+   "start": 1096.76,
    "kind": "raw",
-   "src": "img/whh_builders_hands.jpg",
+   "src": "img/whh_presenter_house.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 5.58
+   "dur": 2.2
+  },
+  {
+   "id": "wholehomeheat_194",
+   "start": 1098.18,
+   "kind": "raw",
+   "src": "broll/whh_builders_hands.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4,
+   "noSplit": true
   },
   {
    "id": "ov_highlightsweep_1098",
@@ -2635,7 +2769,7 @@
    "note": "then we got a machine, and stopped thinking about it"
   },
   {
-   "id": "wholehomeheat_196",
+   "id": "wholehomeheat_195",
    "start": 1103.76,
    "kind": "raw",
    "src": "broll/whh_house_dusk.mp4",
@@ -2645,7 +2779,7 @@
    "noSplit": true
   },
   {
-   "id": "wholehomeheat_197",
+   "id": "wholehomeheat_196",
    "start": 1105.4,
    "kind": "raw",
    "src": "broll/whh_keep_warm.mp4",

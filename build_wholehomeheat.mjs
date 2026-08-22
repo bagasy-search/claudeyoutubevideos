@@ -34,7 +34,12 @@ for (let i = 0; i < sorted.length; i++) {
   const hasJpg = fs.existsSync("public/" + jpg);
   if (!hasMp4 && !hasJpg) { missing.push(m.name); continue; }
 
-  let slot = Math.min(gap, 9);
+  // ★ COLD OPEN = TRAILER (regla dura de amish-doc + pasada HOOK del pipeline).
+  // Los primeros ~30s deciden la retención de TODO el video: cortes de 1,4-2,6s,
+  // nada de fotos sostenidas. Recién después baja al ritmo pausado del cuerpo.
+  const TRAILER = m.ms < 30;
+  const trailerCut = [1.6, 2.6, 2.0, 2.6, 1.8, 2.4][i % 6];   // variado, no metrónomo
+  let slot = Math.min(gap, TRAILER ? trailerCut : 9);
   // En los momentos MUY amplios el visual no llena todo el hueco: los últimos ~1,8s
   // vuelven al AVATAR. Sube la presencia del presentador (piso 28%) y da respiro
   // antes del próximo corte, que es la identidad Amish (pausado, deja respirar).
@@ -43,7 +48,7 @@ for (let i = 0; i < sorted.length; i++) {
   // mediana y el p75 dan 4,00 y el video "cambia una por segundo, cansa". Hace falta
   // que ~4 de cada 10 planos pasen los 5s. El clip agnes dura 4,04s fijos, así que
   // los planos LARGOS los sostiene la FOTO (Ken Burns lento = identidad Amish).
-  const roomy = slot >= 4.6;
+  const roomy = !TRAILER && slot >= 4.6;
   const holdPhoto = roomy && hasJpg && (i % 10 < 6);  // ~60% de los momentos amplios: foto SOSTENIDA
   if (holdPhoto) {
     raw.push({ start: m.ms, dur: +slot.toFixed(2), src: jpg, vid: false });
@@ -97,9 +102,17 @@ for (const [s, e] of [...rawSpans].sort((a, b) => a[0] - b[0])) {
   if (last && s <= last[1] + 0.001) last[1] = Math.max(last[1], e);
   else merged.push([s, e]);
 }
+// ⛔ ANTI-DESTELLO (reportado: "por milésimas se ve el fondo vacío al cambiar de
+// avatar a b-roll"). Causa: `sec()` redondea segundos->frames, y el borde de la
+// ventana del avatar y el arranque del Sequence del b-roll pueden caer en frames
+// distintos => 1 frame (33ms) sin nada. Afinar el muestreo NO alcanza: hay que
+// SOLAPAR. La ventana "hidden" se angosta HANDOFF a cada lado, así en cada relevo
+// el avatar sigue vivo debajo del b-roll (invisible, pero tapando el agujero).
+const HANDOFF = 0.14;   // ~4 frames a 30fps
 const windows = [];
 let t0 = 0;
-for (const [s, e] of merged) {
+for (let [s, e] of merged) {
+  if (e - s > HANDOFF * 2 + 0.1) { s = +(s + HANDOFF).toFixed(2); e = +(e - HANDOFF).toFixed(2); }
   if (s > t0 + 0.001) windows.push({ start: +t0.toFixed(2), mode: "full" });
   windows.push({ start: +Math.max(s, 0).toFixed(2), mode: "hidden" });
   t0 = Math.min(e, TOTAL);
@@ -112,7 +125,8 @@ windows.push({ start: +TOTAL.toFixed(2), mode: "hidden" });
 // Simula el timeline REAL (misma lógica que las ventanas) y exige que en ningún
 // momento el avatar esté oculto sin b-roll debajo.
 let holes = 0, firstHole = null;
-for (let t = 0; t < TOTAL; t = +(t + 0.05).toFixed(2)) {
+for (let f = 0; f < Math.round(TOTAL * 30); f++) {
+  const t = +(f / 30).toFixed(4);
   let mode = "full";
   for (const w of windows) { if (w.start <= t) mode = w.mode; else break; }
   if (mode !== "full" && !covered(t)) { holes++; if (firstHole === null) firstHole = t; }
