@@ -900,11 +900,10 @@
    "id": "barnfloor_109",
    "start": 585.5,
    "kind": "raw",
-   "src": "broll/bf_steam_bucket.mp4",
+   "src": "img/barnfloor/bf_steam_bucket.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 4.28,
-   "noSplit": true
+   "dur": 4.28
   },
   {
    "id": "barnfloor_110",
@@ -2258,11 +2257,10 @@
    "id": "barnfloor_214",
    "start": 1097.12,
    "kind": "raw",
-   "src": "broll/bf_dust_shaft.mp4",
+   "src": "img/barnfloor/bf_dust_shaft.jpg",
    "hue": "amber",
    "darken": 0,
-   "dur": 3.98,
-   "noSplit": true
+   "dur": 3.98
   },
   {
    "id": "barnfloor_215",
