@@ -69,7 +69,11 @@ function buildWindows(): AvatarWindow[] {
     pts.push({ start: c.start, mode, pr: 3 });
     pts.push({ start: +(c.start + c.cov).toFixed(2), mode: "full", pr: 1 });
   }
+  // ⛔ FIX (auditor, 1ra corrida): los OVERLAY (lowerthird / frasecinetica) están diseñados para ir
+  // ENCIMA del avatar — no deben ocultarlo. Ocultándolos, si además no había b-roll debajo quedaba
+  // PANTALLA NEGRA: pasó 1.3s en 300.5s ("no te matan, te avisan"). El avatar es el fondo garantizado.
   for (const b of compBeats) {
+    if (OVERLAY.has(b.kind)) continue;
     const d = compDur(b);
     pts.push({ start: b.start, mode: "hidden", pr: 4 });
     pts.push({ start: +(b.start + d).toFixed(2), mode: "full", pr: 1 });
