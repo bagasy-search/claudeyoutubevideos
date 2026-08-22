@@ -3,7 +3,7 @@ import { sec, COLORS } from "./theme";
 import { TechBackground } from "./components/TechBackground";
 import { AvatarLayer } from "./scenes/AvatarLayer";
 import { CinematicWrap } from "./components/CinematicWrap";
-import { CUES } from "./cues_wholehomeheat.gen";
+import { CUES, OVERLAYS } from "./cues_wholehomeheat.gen";
 import { AVATAR_WINDOWS, TOTAL_WHOLEHOMEHEAT } from "./avatar_wholehomeheat.gen";
 
 export const TOTAL_FRAMES_WHOLEHOMEHEAT = Math.round(TOTAL_WHOLEHOMEHEAT * 30);
@@ -57,6 +57,14 @@ export const MainWholehomeheat: React.FC = () => {
             </Sequence>
           ))}
           <AvatarLayer src="wholehomeheat_opt.mp4" windows={AVATAR_WINDOWS} accent={COLORS.accent} />
+          {/* ⛔ Los componentes premium se exportan en OVERLAYS, NO en CUES (beatsheet.mjs
+              separa por `overlay:true`). Van DESPUÉS del AvatarLayer para quedar ENCIMA
+              del avatar y del b-roll — que es justo el punto de marcarlos como overlay. */}
+          {OVERLAYS.map((cue) => (
+            <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
+              {cue.el(sec(cue.dur))}
+            </Sequence>
+          ))}
           {QR_WINDOWS.map(([s, e], i) => (
             <Sequence key={`qr${i}`} from={sec(s)} durationInFrames={sec(e - s)}>
               <QrCorner durF={sec(e - s)} />
