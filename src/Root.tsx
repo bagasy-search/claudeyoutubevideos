@@ -11,6 +11,7 @@ import { MainWarmblackout, TOTAL_FRAMES_WARMBLACKOUT } from "./VideoEdit/Main_wa
 import { MainGrietas, TOTAL_FRAMES_GRIETAS } from "./VideoEdit/Main_grietas";
 import { MainOxidotanico, TOTAL_FRAMES_OXIDOTANICO } from "./VideoEdit/Main_oxidotanico";
 import { MainCrackpowder, TOTAL_FRAMES_CP } from "./VideoEdit/Main_crackpowder";
+import { MainCymouse, TOTAL_FRAMES_CYMOUSE } from "./VideoEdit/Main_cymouse";
 import { MainEndlessheat, TOTAL_FRAMES_ENDLESSHEAT } from "./VideoEdit/Main_endlessheat";
 import { MainRaingutter, TOTAL_FRAMES_RAINGUTTER } from "./VideoEdit/Main_raingutter";
 import { MainCytomato, TOTAL_FRAMES_CYTOMATO } from "./VideoEdit/Main_cytomato";
@@ -111,6 +112,8 @@ import { MainCywater, TOTAL_FRAMES_CYWATER } from "./VideoEdit/Main_cywater";
 import { MainAmishdolly, TOTAL_FRAMES_AMISHDOLLY } from "./VideoEdit/Main_amishdolly";
 import { MainWaterwell, TOTAL_FRAMES_WATERWELL } from "./VideoEdit/Main_waterwell";
 import { MainWholehomeheat, TOTAL_FRAMES_WHOLEHOMEHEAT } from "./VideoEdit/Main_wholehomeheat";
+import { MainBarnfloor, TOTAL_FRAMES_BARNFLOOR } from "./VideoEdit/Main_barnfloor";
+import { MainBlackout25, TOTAL_FRAMES_BLACKOUT25 } from "./VideoEdit/Main_blackout25";
 import { MainAmishpantry, TOTAL_FRAMES_AMISHPANTRY } from "./VideoEdit/Main_amishpantry";
 import { MainMolino, TOTAL_FRAMES_MOLINO } from "./VideoEdit/Main_molino";
 import { MainLeche, TOTAL_FRAMES_LECHE } from "./VideoEdit/Main_leche";
@@ -187,6 +190,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Grietas" component={MainGrietas} durationInFrames={TOTAL_FRAMES_GRIETAS} fps={30} width={1920} height={1080} />
       <Composition id="Oxidotanico" component={MainOxidotanico} durationInFrames={TOTAL_FRAMES_OXIDOTANICO} fps={30} width={1920} height={1080} />
       <Composition id="Crackpowder" component={MainCrackpowder} durationInFrames={TOTAL_FRAMES_CP} fps={30} width={1920} height={1080} />
+      {/* CLAUDIO YODER · dos metales baratos contra ratones (EN) · avatar 11:01 en bucle + kit MouseKit */}
+      <Composition id="Cymouse" component={MainCymouse} durationInFrames={TOTAL_FRAMES_CYMOUSE} fps={30} width={1920} height={1080} />
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}
       <Composition id="Oillamp1" component={MainOillamp1} durationInFrames={TOTAL_FRAMES_OILLAMP1} fps={30} width={1920} height={1080} />
@@ -367,6 +372,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Amishdolly" component={MainAmishdolly} durationInFrames={TOTAL_FRAMES_AMISHDOLLY} fps={30} width={1920} height={1080} />
       <Composition id="Waterwell" component={MainWaterwell} durationInFrames={TOTAL_FRAMES_WATERWELL} fps={30} width={1920} height={1080} />
       <Composition id="Wholehomeheat" component={MainWholehomeheat} durationInFrames={TOTAL_FRAMES_WHOLEHOMEHEAT} fps={30} width={1920} height={1080} />
+      <Composition id="Barnfloor" component={MainBarnfloor} durationInFrames={TOTAL_FRAMES_BARNFLOOR} fps={30} width={1920} height={1080} />
+      <Composition id="Blackout25" component={MainBlackout25} durationInFrames={TOTAL_FRAMES_BLACKOUT25} fps={30} width={1920} height={1080} />
       <Composition id="Amishpantry" component={MainAmishpantry} durationInFrames={TOTAL_FRAMES_AMISHPANTRY} fps={30} width={1920} height={1080} />
       {/* VIDEO ACTIVO — Keep food cold with no fridge / zeer pot (Claudio · off-grid EN) */}
       <Composition
