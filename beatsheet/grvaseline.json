@@ -1,0 +1,4928 @@
+{
+ "video": "grvaseline",
+ "avatar": "grvaseline_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "000",
+   "start": 0.36,
+   "dur": 15.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_000.mp4"
+  },
+  {
+   "id": "001",
+   "start": 15.42,
+   "dur": 9.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_001.mp4"
+  },
+  {
+   "id": "002",
+   "start": 24.86,
+   "dur": 5.15,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_002.mp4"
+  },
+  {
+   "id": "003",
+   "start": 30.01,
+   "dur": 5.15,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_003.mp4"
+  },
+  {
+   "id": "004",
+   "start": 35.16,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_004.mp4"
+  },
+  {
+   "id": "005",
+   "start": 37.56,
+   "dur": 9.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_005.mp4"
+  },
+  {
+   "id": "cmp_0_bars",
+   "start": 37.56,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "bars",
+   "title": "How long one purchase actually lasts",
+   "unit": "weeks",
+   "bars": [
+    {
+     "label": "The tub, about $4",
+     "value": 104,
+     "winner": true,
+     "note": "two years"
+    },
+    {
+     "label": "The jar, about $80",
+     "value": 11,
+     "tone": "danger",
+     "note": "eleven weeks"
+    }
+   ]
+  },
+  {
+   "id": "006",
+   "start": 46.6,
+   "dur": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_006.mp4"
+  },
+  {
+   "id": "007",
+   "start": 50.76,
+   "dur": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_007.mp4"
+  },
+  {
+   "id": "008",
+   "start": 56.76,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_008.mp4"
+  },
+  {
+   "id": "009",
+   "start": 59.6,
+   "dur": 3.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_009.mp4"
+  },
+  {
+   "id": "010",
+   "start": 63.3,
+   "dur": 7.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_010.mp4"
+  },
+  {
+   "id": "cmp_1_checklist",
+   "start": 63.3,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "eyebrow": "What is actually in the tub",
+   "title": "One ingredient. That is the list.",
+   "items": [
+    {
+     "text": "No vitamins",
+     "state": "danger"
+    },
+    {
+     "text": "No actives",
+     "state": "danger"
+    },
+    {
+     "text": "No botanicals — nothing your skin can eat",
+     "state": "danger"
+    },
+    {
+     "text": "No preservative, no fragrance, no emulsifier to react to",
+     "state": "ok"
+    }
+   ]
+  },
+  {
+   "id": "011",
+   "start": 71.1,
+   "dur": 1.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_011.mp4"
+  },
+  {
+   "id": "cmp_2_headline",
+   "start": 71.1,
+   "dur": 6,
+   "key": "s",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "It"
+    },
+    {
+     "t": "is"
+    },
+    {
+     "t": "not"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "moisturiser."
+    },
+    {
+     "t": "It",
+     "hl": true
+    },
+    {
+     "t": "is",
+     "hl": true
+    },
+    {
+     "t": "a",
+     "hl": true
+    },
+    {
+     "t": "LID.",
+     "hl": true
+    }
+   ],
+   "eyebrow": "One ingredient. That is the entire product."
+  },
+  {
+   "id": "012",
+   "start": 72.8,
+   "dur": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_012.mp4"
+  },
+  {
+   "id": "013",
+   "start": 78.16,
+   "dur": 5.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_013.mp4"
+  },
+  {
+   "id": "014",
+   "start": 84,
+   "dur": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_014.mp4"
+  },
+  {
+   "id": "015",
+   "start": 87.8,
+   "dur": 14.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_015.mp4"
+  },
+  {
+   "id": "016",
+   "start": 101.84,
+   "dur": 11.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_016.mp4"
+  },
+  {
+   "id": "017",
+   "start": 113.26,
+   "dur": 6.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_017.jpg"
+  },
+  {
+   "id": "018",
+   "start": 119.9,
+   "dur": 3.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_018.mp4"
+  },
+  {
+   "id": "019",
+   "start": 123.44,
+   "dur": 10.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_019.mp4"
+  },
+  {
+   "id": "020",
+   "start": 133.9,
+   "dur": 6.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_020.mp4"
+  },
+  {
+   "id": "021",
+   "start": 140.54,
+   "dur": 4.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_021.mp4"
+  },
+  {
+   "id": "cmp_3_rule",
+   "start": 144.1,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "01",
+   "title": "WHERE IT CAME FROM"
+  },
+  {
+   "id": "022",
+   "start": 145.38,
+   "dur": 11.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_022.mp4"
+  },
+  {
+   "id": "023",
+   "start": 157.2,
+   "dur": 11.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_023.mp4"
+  },
+  {
+   "id": "024",
+   "start": 168.36,
+   "dur": 13.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_024.mp4"
+  },
+  {
+   "id": "025",
+   "start": 182.3,
+   "dur": 4.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_025.mp4"
+  },
+  {
+   "id": "026",
+   "start": 187.06,
+   "dur": 3.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_026.mp4"
+  },
+  {
+   "id": "027",
+   "start": 190.94,
+   "dur": 5.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_027.mp4"
+  },
+  {
+   "id": "cmp_4_callout",
+   "start": 190.94,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "→",
+   "eyebrow": "Rod wax, scraped off the drilling rods",
+   "caption": "The oil men cursed it — then rubbed it on their cuts and burns, and those closed up faster",
+   "medico": true
+  },
+  {
+   "id": "028",
+   "start": 196.78,
+   "dur": 8.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_028.mp4"
+  },
+  {
+   "id": "029",
+   "start": 204.98,
+   "dur": 6.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_029.mp4"
+  },
+  {
+   "id": "030",
+   "start": 211,
+   "dur": 10.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_030.mp4"
+  },
+  {
+   "id": "cmp_5_frasecinetica",
+   "start": 211,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "perWord": 11,
+   "tone": "teal",
+   "words": [
+    {
+     "t": "Patented"
+    },
+    {
+     "t": "in"
+    },
+    {
+     "t": "1872."
+    },
+    {
+     "t": "The"
+    },
+    {
+     "t": "patent"
+    },
+    {
+     "t": "ran"
+    },
+    {
+     "t": "out",
+     "hl": true
+    },
+    {
+     "t": "a",
+     "hl": true
+    },
+    {
+     "t": "century",
+     "hl": true
+    },
+    {
+     "t": "ago.",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "031",
+   "start": 221.64,
+   "dur": 9.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_031.mp4"
+  },
+  {
+   "id": "032",
+   "start": 230.88,
+   "dur": 13.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_032.mp4"
+  },
+  {
+   "id": "033",
+   "start": 244.12,
+   "dur": 2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_033.mp4"
+  },
+  {
+   "id": "cmp_6_stat",
+   "start": 244.12,
+   "dur": 6,
+   "key": "s",
+   "kind": "stat",
+   "eyebrow": "Robert Chesebrough, who ate a spoonful a day",
+   "value": 96,
+   "label": "He toured the country burning his own arm to sell it. He lived to ninety six."
+  },
+  {
+   "id": "034",
+   "start": 246.12,
+   "dur": 2.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_034.mp4"
+  },
+  {
+   "id": "035",
+   "start": 248.2,
+   "dur": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_035.mp4"
+  },
+  {
+   "id": "036",
+   "start": 254.44,
+   "dur": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_036.mp4"
+  },
+  {
+   "id": "cmp_7_chips",
+   "start": 257.18,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "What this was, for a hundred years",
+   "eyebrow": "Before it became a dirty word",
+   "image": "img/grvaseline_036.jpg",
+   "chips": [
+    "Every medicine cabinet in the west",
+    "Two world wars, in soldiers' kits",
+    "On every burns ward",
+    "Your grandmother's hands and your knee"
+   ]
+  },
+  {
+   "id": "037",
+   "start": 257.84,
+   "dur": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_037.mp4"
+  },
+  {
+   "id": "038",
+   "start": 261.4,
+   "dur": 3.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_038.mp4"
+  },
+  {
+   "id": "039",
+   "start": 264.62,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_039.mp4"
+  },
+  {
+   "id": "040",
+   "start": 267.8,
+   "dur": 30.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_040.mp4"
+  },
+  {
+   "id": "041",
+   "start": 298.4,
+   "dur": 5.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_041.mp4"
+  },
+  {
+   "id": "cmp_8_chips",
+   "start": 298.4,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "Four things are happening at once",
+   "eyebrow": "The mechanism",
+   "image": "img/grvaseline_lam_seal_closed.jpg",
+   "chips": [
+    "It seals — 98% of the water stays in",
+    "The water held in is YOUR OWN",
+    "It protects the repair hours",
+    "Nothing in it to react to"
+   ]
+  },
+  {
+   "id": "042",
+   "start": 304.06,
+   "dur": 7.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_042.mp4"
+  },
+  {
+   "id": "cmp_9_avatarpizarra",
+   "start": 304.06,
+   "dur": 10.2,
+   "key": "s",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "1 · Your skin is leaking, right now",
+     "sub": "transepidermal water loss — the tax you pay for having a surface",
+     "at": 0
+    },
+    {
+     "card": "2 · After the menopause it leaks faster",
+     "sub": "the fats between the cells thin out with the years",
+     "at": 90
+    },
+    {
+     "card": "3 · A lid stops about 98% of it",
+     "sub": "oils get you twenty. A rich cream, similar.",
+     "at": 180
+    }
+   ]
+  },
+  {
+   "id": "043",
+   "start": 311.3,
+   "dur": 5.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_043.mp4"
+  },
+  {
+   "id": "044",
+   "start": 317.02,
+   "dur": 12.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_044.mp4"
+  },
+  {
+   "id": "045",
+   "start": 329.56,
+   "dur": 3.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_045.mp4"
+  },
+  {
+   "id": "cmp_10_freezezoom",
+   "start": 329.56,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/grvaseline_lam_seal_leak.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.9,
+   "tone": "teal",
+   "label": "Water walking out of your skin, all day and all night"
+  },
+  {
+   "id": "046",
+   "start": 332.86,
+   "dur": 7.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_046.mp4"
+  },
+  {
+   "id": "047",
+   "start": 340.74,
+   "dur": 17,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_047.mp4"
+  },
+  {
+   "id": "cmp_11_stat",
+   "start": 353.4,
+   "dur": 6,
+   "key": "s",
+   "kind": "stat",
+   "eyebrow": "Why it changes after the menopause",
+   "value": 57,
+   "label": "The same face leaks more water every hour at 57 than it did at 35 — the fats between the cells thin out."
+  },
+  {
+   "id": "048",
+   "start": 357.74,
+   "dur": 11.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_048.mp4"
+  },
+  {
+   "id": "049",
+   "start": 368.82,
+   "dur": 11.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_049.mp4"
+  },
+  {
+   "id": "050",
+   "start": 380.76,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_050.mp4"
+  },
+  {
+   "id": "cmp_12_bars",
+   "start": 380.76,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "bars",
+   "title": "How much of the water actually stays in",
+   "unit": "%",
+   "bars": [
+    {
+     "label": "Petroleum jelly",
+     "value": 98,
+     "winner": true,
+     "note": "a near total seal"
+    },
+    {
+     "label": "Oils",
+     "value": 25,
+     "note": "twenty, maybe thirty percent"
+    },
+    {
+     "label": "A good rich cream",
+     "value": 28,
+     "note": "about the same"
+    }
+   ]
+  },
+  {
+   "id": "051",
+   "start": 383.94,
+   "dur": 3.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_051.mp4"
+  },
+  {
+   "id": "052",
+   "start": 387.42,
+   "dur": 8.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_052.mp4"
+  },
+  {
+   "id": "053",
+   "start": 395.62,
+   "dur": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_053.mp4"
+  },
+  {
+   "id": "054",
+   "start": 399.2,
+   "dur": 3.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_054.mp4"
+  },
+  {
+   "id": "055",
+   "start": 402.88,
+   "dur": 5.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_055.mp4"
+  },
+  {
+   "id": "056",
+   "start": 407.9,
+   "dur": 2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_056.mp4"
+  },
+  {
+   "id": "057",
+   "start": 409.9,
+   "dur": 2.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_057.mp4"
+  },
+  {
+   "id": "058",
+   "start": 412,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_058.mp4"
+  },
+  {
+   "id": "cmp_13_blurexplainer",
+   "start": 412,
+   "dur": 7,
+   "key": "s",
+   "kind": "blurexplainer",
+   "clip": "broll/grvaseline_058.mp4",
+   "image": "img/grvaseline_lam_seal_closed.jpg",
+   "side": "right",
+   "eyebrow": "No, it does not suffocate your skin",
+   "title": "It is not cling film",
+   "body": "Your skin takes its oxygen from your blood, not through the surface. The layer lets gas through and holds water back. That is the whole trick."
+  },
+  {
+   "id": "059",
+   "start": 417.71,
+   "dur": 5.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_059.mp4"
+  },
+  {
+   "id": "060",
+   "start": 423.42,
+   "dur": 3.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_060.mp4"
+  },
+  {
+   "id": "061",
+   "start": 427.3,
+   "dur": 2.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_061.mp4"
+  },
+  {
+   "id": "062",
+   "start": 429.68,
+   "dur": 3.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_062.mp4"
+  },
+  {
+   "id": "063",
+   "start": 433.36,
+   "dur": 1.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_063.mp4"
+  },
+  {
+   "id": "064",
+   "start": 435.08,
+   "dur": 4.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_064.mp4"
+  },
+  {
+   "id": "cmp_14_callout",
+   "start": 435.08,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "0",
+   "eyebrow": "There is no water in the tub at all",
+   "caption": "The water held under there is your own, rising up from the living layers underneath",
+   "medico": true
+  },
+  {
+   "id": "065",
+   "start": 439.22,
+   "dur": 11.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_065.mp4"
+  },
+  {
+   "id": "cmp_15_annotated",
+   "start": 450.3,
+   "dur": 6,
+   "key": "s",
+   "kind": "annotated",
+   "eyebrow": "What is actually happening up there",
+   "caption": "The dead cells at the surface drink the trapped water and swell",
+   "image": "img/grvaseline_lam_layers_stack.jpg",
+   "annotations": [
+    {
+     "label": "The seal on top",
+     "x": 50,
+     "y": 20
+    },
+    {
+     "label": "Water held against the skin",
+     "x": 50,
+     "y": 55
+    },
+    {
+     "label": "A fine line in plumped skin is shallower",
+     "x": 50,
+     "y": 82
+    }
+   ]
+  },
+  {
+   "id": "066",
+   "start": 450.5,
+   "dur": 18.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_066.mp4"
+  },
+  {
+   "id": "067",
+   "start": 468.74,
+   "dur": 2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_067.mp4"
+  },
+  {
+   "id": "068",
+   "start": 470.74,
+   "dur": 10.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_068.mp4"
+  },
+  {
+   "id": "069",
+   "start": 481.6,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_069.mp4"
+  },
+  {
+   "id": "070",
+   "start": 484.62,
+   "dur": 2.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_070.jpg"
+  },
+  {
+   "id": "cmp_16_frasecinetica",
+   "start": 484.62,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "perWord": 10,
+   "tone": "teal",
+   "words": [
+    {
+     "t": "Your"
+    },
+    {
+     "t": "skin"
+    },
+    {
+     "t": "rebuilds"
+    },
+    {
+     "t": "at"
+    },
+    {
+     "t": "night."
+    },
+    {
+     "t": "And",
+     "hl": true
+    },
+    {
+     "t": "that",
+     "hl": true
+    },
+    {
+     "t": "is",
+     "hl": true
+    },
+    {
+     "t": "when",
+     "hl": true
+    },
+    {
+     "t": "it",
+     "hl": true
+    },
+    {
+     "t": "leaks",
+     "hl": true
+    },
+    {
+     "t": "most.",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "071",
+   "start": 487.22,
+   "dur": 8.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_071.jpg"
+  },
+  {
+   "id": "072",
+   "start": 495.36,
+   "dur": 6.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_072.jpg"
+  },
+  {
+   "id": "073",
+   "start": 501.78,
+   "dur": 5.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_073.mp4"
+  },
+  {
+   "id": "074",
+   "start": 507.6,
+   "dur": 5.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_074.mp4"
+  },
+  {
+   "id": "cmp_17_freezezoom",
+   "start": 507.6,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/grvaseline_lam_night_curve.jpg",
+   "x": 0.68,
+   "y": 0.45,
+   "zoom": 1.7,
+   "tone": "gold",
+   "label": "Water loss peaks in the small hours — that is why this is a night thing"
+  },
+  {
+   "id": "cmp_18_hourdial",
+   "start": 512.88,
+   "dur": 5,
+   "key": "s",
+   "kind": "hourdial",
+   "hour": 3,
+   "big": "3",
+   "unit": "AM",
+   "tone": "gold",
+   "label": "Your face is losing more water than at any other point in the day"
+  },
+  {
+   "id": "075",
+   "start": 513.4,
+   "dur": 17.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_075.jpg"
+  },
+  {
+   "id": "076",
+   "start": 531.08,
+   "dur": 9.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_076.jpg"
+  },
+  {
+   "id": "077",
+   "start": 540.6,
+   "dur": 11.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_077.mp4"
+  },
+  {
+   "id": "078",
+   "start": 552.34,
+   "dur": 5.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_078.mp4"
+  },
+  {
+   "id": "079",
+   "start": 558.16,
+   "dur": 11.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_079.mp4"
+  },
+  {
+   "id": "080",
+   "start": 569.8,
+   "dur": 7.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_080.mp4"
+  },
+  {
+   "id": "cmp_19_freezezoom",
+   "start": 576.84,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/grvaseline_lam_patch_grid.jpg",
+   "x": 0.5,
+   "y": 0.42,
+   "zoom": 1.8,
+   "tone": "teal",
+   "label": "The allergy test itself is carried in petroleum jelly"
+  },
+  {
+   "id": "081",
+   "start": 577,
+   "dur": 7.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_081.mp4"
+  },
+  {
+   "id": "082",
+   "start": 584.2,
+   "dur": 7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_082.mp4"
+  },
+  {
+   "id": "083",
+   "start": 591.2,
+   "dur": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_083.mp4"
+  },
+  {
+   "id": "084",
+   "start": 596.44,
+   "dur": 5.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_084.jpg"
+  },
+  {
+   "id": "cmp_20_headline",
+   "start": 596.44,
+   "dur": 6,
+   "key": "s",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "When"
+    },
+    {
+     "t": "the"
+    },
+    {
+     "t": "point"
+    },
+    {
+     "t": "is"
+    },
+    {
+     "t": "to"
+    },
+    {
+     "t": "make"
+    },
+    {
+     "t": "skin"
+    },
+    {
+     "t": "REACT,"
+    },
+    {
+     "t": "this",
+     "hl": true
+    },
+    {
+     "t": "is",
+     "hl": true
+    },
+    {
+     "t": "what",
+     "hl": true
+    },
+    {
+     "t": "must",
+     "hl": true
+    },
+    {
+     "t": "not.",
+     "hl": true
+    }
+   ],
+   "eyebrow": "One ingredient · no preservative · no fragrance · no emulsifier"
+  },
+  {
+   "id": "085",
+   "start": 602.32,
+   "dur": 5.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_085.mp4"
+  },
+  {
+   "id": "086",
+   "start": 608.3,
+   "dur": 2.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_086.jpg"
+  },
+  {
+   "id": "087",
+   "start": 611.22,
+   "dur": 11.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_087.mp4"
+  },
+  {
+   "id": "cmp_21_chips",
+   "start": 611.22,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "What every other bottle brings with it",
+   "eyebrow": "Three things your face can object to",
+   "image": "img/grvaseline_087.jpg",
+   "chips": [
+    "A preservative",
+    "A fragrance",
+    "An emulsifier to hold oil and water",
+    "Any of them, at 57, on a Tuesday"
+   ]
+  },
+  {
+   "id": "088",
+   "start": 622.84,
+   "dur": 7.51,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_088.mp4"
+  },
+  {
+   "id": "089",
+   "start": 630.35,
+   "dur": 2.89,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_089.jpg"
+  },
+  {
+   "id": "090",
+   "start": 633.24,
+   "dur": 5.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_090.mp4"
+  },
+  {
+   "id": "091",
+   "start": 638.3,
+   "dur": 9.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_091.mp4"
+  },
+  {
+   "id": "092",
+   "start": 647.88,
+   "dur": 1.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_092.mp4"
+  },
+  {
+   "id": "093",
+   "start": 649.48,
+   "dur": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_093.mp4"
+  },
+  {
+   "id": "094",
+   "start": 653.04,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_094.mp4"
+  },
+  {
+   "id": "095",
+   "start": 656.06,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_095.jpg"
+  },
+  {
+   "id": "cmp_22_headline",
+   "start": 656.06,
+   "dur": 6,
+   "key": "s",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "There"
+    },
+    {
+     "t": "is"
+    },
+    {
+     "t": "no"
+    },
+    {
+     "t": "margin"
+    },
+    {
+     "t": "in",
+     "hl": true
+    },
+    {
+     "t": "the",
+     "hl": true
+    },
+    {
+     "t": "bottom",
+     "hl": true
+    },
+    {
+     "t": "shelf.",
+     "hl": true
+    }
+   ],
+   "eyebrow": "The patent ran out over a century ago"
+  },
+  {
+   "id": "096",
+   "start": 658.24,
+   "dur": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_096.mp4"
+  },
+  {
+   "id": "097",
+   "start": 661.36,
+   "dur": 2.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_097.mp4"
+  },
+  {
+   "id": "cmp_23_callout",
+   "start": 662.72,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "$",
+   "eyebrow": "Between the cotton wool and the plasters",
+   "caption": "Nobody spends money teaching you about the bottom shelf, because there is no margin on the bottom shelf",
+   "medico": true
+  },
+  {
+   "id": "098",
+   "start": 663.38,
+   "dur": 5.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_098.mp4"
+  },
+  {
+   "id": "099",
+   "start": 668.84,
+   "dur": 3.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_099.mp4"
+  },
+  {
+   "id": "100",
+   "start": 672.04,
+   "dur": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_100.mp4"
+  },
+  {
+   "id": "101",
+   "start": 677.4,
+   "dur": 2.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_101.mp4"
+  },
+  {
+   "id": "102",
+   "start": 679.78,
+   "dur": 2.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_102.mp4"
+  },
+  {
+   "id": "103",
+   "start": 682.64,
+   "dur": 2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_103.mp4"
+  },
+  {
+   "id": "104",
+   "start": 684.64,
+   "dur": 2.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_104.mp4"
+  },
+  {
+   "id": "105",
+   "start": 687.58,
+   "dur": 3.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_105.mp4"
+  },
+  {
+   "id": "106",
+   "start": 690.82,
+   "dur": 2.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_106.mp4"
+  },
+  {
+   "id": "cmp_24_mitoverdad",
+   "start": 690.82,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "eyebrow": "What you were taught",
+   "mito": "It is crude oil. It suffocates your skin and clogs your pores.",
+   "verdad": "What is sold in a chemist is refined to a pharmaceutical standard, three times over. The testing says it does not block a pore.",
+   "flipAt": 82
+  },
+  {
+   "id": "107",
+   "start": 693.48,
+   "dur": 9.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_107.mp4"
+  },
+  {
+   "id": "108",
+   "start": 703.08,
+   "dur": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_108.mp4"
+  },
+  {
+   "id": "109",
+   "start": 706.08,
+   "dur": 6.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_109.mp4"
+  },
+  {
+   "id": "110",
+   "start": 712.16,
+   "dur": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_110.mp4"
+  },
+  {
+   "id": "111",
+   "start": 715.6,
+   "dur": 2.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_111.mp4"
+  },
+  {
+   "id": "112",
+   "start": 717.82,
+   "dur": 2.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_112.mp4"
+  },
+  {
+   "id": "113",
+   "start": 720.2,
+   "dur": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_113.mp4"
+  },
+  {
+   "id": "114",
+   "start": 722.16,
+   "dur": 3.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_114.mp4"
+  },
+  {
+   "id": "115",
+   "start": 725.98,
+   "dur": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_115.mp4"
+  },
+  {
+   "id": "116",
+   "start": 729.78,
+   "dur": 2.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_116.mp4"
+  },
+  {
+   "id": "117",
+   "start": 732.72,
+   "dur": 2.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_117.mp4"
+  },
+  {
+   "id": "118",
+   "start": 735.24,
+   "dur": 7.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_118.mp4"
+  },
+  {
+   "id": "119",
+   "start": 742.9,
+   "dur": 7.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_119.mp4"
+  },
+  {
+   "id": "120",
+   "start": 749.92,
+   "dur": 7.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_120.mp4"
+  },
+  {
+   "id": "121",
+   "start": 757.52,
+   "dur": 6.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_121.mp4"
+  },
+  {
+   "id": "122",
+   "start": 764.46,
+   "dur": 3.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_122.mp4"
+  },
+  {
+   "id": "cmp_25_blurexplainer",
+   "start": 767.02,
+   "dur": 7,
+   "key": "s",
+   "kind": "blurexplainer",
+   "clip": "broll/grvaseline_123.mp4",
+   "image": "img/grvaseline_lam_molecule_pore.jpg",
+   "side": "left",
+   "eyebrow": "Why it never sinks in",
+   "title": "It has nowhere to go",
+   "body": "The molecules are too big to get down into a pore in the first place. It stays on top — which, for a lid, is the entire job description."
+  },
+  {
+   "id": "123",
+   "start": 768.32,
+   "dur": 7.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_123.mp4"
+  },
+  {
+   "id": "124",
+   "start": 776.12,
+   "dur": 4.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_124.mp4"
+  },
+  {
+   "id": "125",
+   "start": 780.24,
+   "dur": 5.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_125.mp4"
+  },
+  {
+   "id": "126",
+   "start": 785.38,
+   "dur": 7.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_126.mp4"
+  },
+  {
+   "id": "127",
+   "start": 792.82,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_127.mp4"
+  },
+  {
+   "id": "cmp_26_quote",
+   "start": 792.82,
+   "dur": 6,
+   "key": "s",
+   "kind": "quote",
+   "text": "It is the most boring recommendation in all of dermatology. And it is also one of the best ones.",
+   "author": "The dermatologist, with the door shut"
+  },
+  {
+   "id": "128",
+   "start": 795.66,
+   "dur": 1.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_128.mp4"
+  },
+  {
+   "id": "129",
+   "start": 797.52,
+   "dur": 3.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_129.mp4"
+  },
+  {
+   "id": "130",
+   "start": 801.14,
+   "dur": 7.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_130.mp4"
+  },
+  {
+   "id": "cmp_27_chips",
+   "start": 806.86,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "Where your doctor already uses it",
+   "eyebrow": "Not hidden — in daily use",
+   "image": "img/grvaseline_129.jpg",
+   "chips": [
+    "The burns ward",
+    "After surgery",
+    "After laser work",
+    "Handed to the parents of a newborn with eczema"
+   ]
+  },
+  {
+   "id": "131",
+   "start": 808.58,
+   "dur": 6.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_131.mp4"
+  },
+  {
+   "id": "132",
+   "start": 815.44,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_132.mp4"
+  },
+  {
+   "id": "133",
+   "start": 818.28,
+   "dur": 10.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_133.mp4"
+  },
+  {
+   "id": "134",
+   "start": 828.76,
+   "dur": 2.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_134.mp4"
+  },
+  {
+   "id": "135",
+   "start": 831.14,
+   "dur": 5.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_135.mp4"
+  },
+  {
+   "id": "cmp_28_checklist",
+   "start": 835.88,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "eyebrow": "Why they will not say it on camera",
+   "title": "It seals whatever it finds",
+   "items": [
+    {
+     "text": "Over clean, intact skin — it protects it",
+     "state": "ok"
+    },
+    {
+     "text": "Over a wound that is not clean — you sealed that in, warm, for eight hours",
+     "state": "danger"
+    },
+    {
+     "text": "Over a prescription retinoid — you just made a mild product a strong one",
+     "state": "danger"
+    }
+   ]
+  },
+  {
+   "id": "136",
+   "start": 836.68,
+   "dur": 11.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_136.mp4"
+  },
+  {
+   "id": "137",
+   "start": 847.88,
+   "dur": 2.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_137.mp4"
+  },
+  {
+   "id": "138",
+   "start": 850.78,
+   "dur": 8.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_138.mp4"
+  },
+  {
+   "id": "139",
+   "start": 859.24,
+   "dur": 2.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_139.mp4"
+  },
+  {
+   "id": "140",
+   "start": 861.92,
+   "dur": 8.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_140.mp4"
+  },
+  {
+   "id": "141",
+   "start": 870.9,
+   "dur": 7.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_141.mp4"
+  },
+  {
+   "id": "142",
+   "start": 878.44,
+   "dur": 2.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_142.mp4"
+  },
+  {
+   "id": "143",
+   "start": 880.82,
+   "dur": 1.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_143.mp4"
+  },
+  {
+   "id": "144",
+   "start": 882.44,
+   "dur": 8.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_144.mp4"
+  },
+  {
+   "id": "145",
+   "start": 891.34,
+   "dur": 6.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_145.mp4"
+  },
+  {
+   "id": "146",
+   "start": 898.22,
+   "dur": 4.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_146.mp4"
+  },
+  {
+   "id": "147",
+   "start": 902.26,
+   "dur": 4.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_147.mp4"
+  },
+  {
+   "id": "cmp_29_rule",
+   "start": 902.26,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "02",
+   "title": "FOURTEEN NIGHTS, ONE MIRROR"
+  },
+  {
+   "id": "148",
+   "start": 906.3,
+   "dur": 2.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_148.jpg"
+  },
+  {
+   "id": "149",
+   "start": 908.66,
+   "dur": 5.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_149.mp4"
+  },
+  {
+   "id": "150",
+   "start": 914.4,
+   "dur": 3.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_150.jpg"
+  },
+  {
+   "id": "151",
+   "start": 918.22,
+   "dur": 7.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_151.mp4"
+  },
+  {
+   "id": "152",
+   "start": 925.66,
+   "dur": 1.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_152.mp4"
+  },
+  {
+   "id": "153",
+   "start": 927.28,
+   "dur": 3.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_153.mp4"
+  },
+  {
+   "id": "154",
+   "start": 930.74,
+   "dur": 10.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_154.mp4"
+  },
+  {
+   "id": "155",
+   "start": 941.42,
+   "dur": 1.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_155.mp4"
+  },
+  {
+   "id": "156",
+   "start": 942.8,
+   "dur": 1.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_156.mp4"
+  },
+  {
+   "id": "157",
+   "start": 944.18,
+   "dur": 4.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_157.mp4"
+  },
+  {
+   "id": "cmp_30_errorstinger",
+   "start": 944.18,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "It WILL get on the pillow",
+   "tone": "warn",
+   "eyebrow": "Night one, the part nobody warns you about"
+  },
+  {
+   "id": "158",
+   "start": 949.02,
+   "dur": 2.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_158.mp4"
+  },
+  {
+   "id": "159",
+   "start": 951.32,
+   "dur": 2.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_159.mp4"
+  },
+  {
+   "id": "160",
+   "start": 953.52,
+   "dur": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_160.mp4"
+  },
+  {
+   "id": "161",
+   "start": 958.52,
+   "dur": 6.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_161.mp4"
+  },
+  {
+   "id": "162",
+   "start": 964.96,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_162.jpg"
+  },
+  {
+   "id": "163",
+   "start": 967.8,
+   "dur": 2.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_163.mp4"
+  },
+  {
+   "id": "cmp_31_errorstinger",
+   "start": 967.8,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "I got greedy on night three",
+   "tone": "warn",
+   "eyebrow": "The mistake"
+  },
+  {
+   "id": "164",
+   "start": 970.74,
+   "dur": 6.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_164.mp4"
+  },
+  {
+   "id": "165",
+   "start": 977.36,
+   "dur": 6.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_165.jpg"
+  },
+  {
+   "id": "166",
+   "start": 983.9,
+   "dur": 5.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_166.mp4"
+  },
+  {
+   "id": "167",
+   "start": 989.46,
+   "dur": 1.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_167.mp4"
+  },
+  {
+   "id": "168",
+   "start": 990.92,
+   "dur": 6.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_168.mp4"
+  },
+  {
+   "id": "169",
+   "start": 997.46,
+   "dur": 10.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_169.mp4"
+  },
+  {
+   "id": "cmp_32_callout",
+   "start": 997.46,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "4",
+   "eyebrow": "Night 4 — an hour before I could see properly",
+   "caption": "The lid puffy, the skin sore. Entirely my fault — and it is the instruction almost every video gives you.",
+   "medico": true
+  },
+  {
+   "id": "170",
+   "start": 1008.38,
+   "dur": 7.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_170.mp4"
+  },
+  {
+   "id": "171",
+   "start": 1015.78,
+   "dur": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_171.jpg"
+  },
+  {
+   "id": "172",
+   "start": 1020.74,
+   "dur": 7.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_172.mp4"
+  },
+  {
+   "id": "173",
+   "start": 1028.66,
+   "dur": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_173.mp4"
+  },
+  {
+   "id": "174",
+   "start": 1032.58,
+   "dur": 8.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_174.mp4"
+  },
+  {
+   "id": "cmp_33_process",
+   "start": 1036.88,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "eyebrow": "The method I went back with",
+   "title": "How it is actually done",
+   "steps": [
+    {
+     "title": "A grain of rice",
+     "desc": "For BOTH eyes. Not a scoop, not a layer."
+    },
+    {
+     "title": "Warmed between two fingertips",
+     "desc": "Until it stops being a solid and turns almost to an oil."
+    },
+    {
+     "title": "Pressed along the bone",
+     "desc": "Not rubbed. And nowhere else."
+    }
+   ]
+  },
+  {
+   "id": "175",
+   "start": 1040.72,
+   "dur": 7.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_175.mp4"
+  },
+  {
+   "id": "176",
+   "start": 1048.58,
+   "dur": 6.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_176.mp4"
+  },
+  {
+   "id": "cmp_34_stat",
+   "start": 1048.58,
+   "dur": 6,
+   "key": "s",
+   "kind": "stat",
+   "eyebrow": "The amount, for BOTH eyes",
+   "value": 1,
+   "label": "One grain of rice. Warmed between two fingertips until it goes clear, then pressed along the bone."
+  },
+  {
+   "id": "177",
+   "start": 1054.74,
+   "dur": 17,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_177.mp4"
+  },
+  {
+   "id": "178",
+   "start": 1071.74,
+   "dur": 6.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_178.mp4"
+  },
+  {
+   "id": "cmp_35_stat",
+   "start": 1071.74,
+   "dur": 6,
+   "key": "s",
+   "kind": "stat",
+   "eyebrow": "Night 8 — the first real change",
+   "value": 8,
+   "label": "Not the puffiness. The fan of fine lines at the outer corner — softer, and filled rather than papery."
+  },
+  {
+   "id": "179",
+   "start": 1077.9,
+   "dur": 4.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_179.mp4"
+  },
+  {
+   "id": "180",
+   "start": 1082.04,
+   "dur": 6.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_180.mp4"
+  },
+  {
+   "id": "181",
+   "start": 1088.32,
+   "dur": 5.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_181.mp4"
+  },
+  {
+   "id": "182",
+   "start": 1094.3,
+   "dur": 2.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_182.mp4"
+  },
+  {
+   "id": "cmp_36_mitoverdad",
+   "start": 1094.3,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "eyebrow": "What I am NOT going to tell you",
+   "mito": "My eyes looked ten years younger.",
+   "verdad": "The lines were exactly where I left them. What changed was the surface — filled in, calm, and no longer struggling.",
+   "flipAt": 82
+  },
+  {
+   "id": "183",
+   "start": 1096.82,
+   "dur": 6.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_183.mp4"
+  },
+  {
+   "id": "184",
+   "start": 1103.34,
+   "dur": 10.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_184.mp4"
+  },
+  {
+   "id": "185",
+   "start": 1113.82,
+   "dur": 1.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_185.mp4"
+  },
+  {
+   "id": "186",
+   "start": 1115.46,
+   "dur": 2.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_186.mp4"
+  },
+  {
+   "id": "187",
+   "start": 1118.08,
+   "dur": 9.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_187.mp4"
+  },
+  {
+   "id": "188",
+   "start": 1127.12,
+   "dur": 4.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_188.jpg"
+  },
+  {
+   "id": "189",
+   "start": 1131.24,
+   "dur": 5.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_189.mp4"
+  },
+  {
+   "id": "190",
+   "start": 1136.66,
+   "dur": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_190.mp4"
+  },
+  {
+   "id": "191",
+   "start": 1142.9,
+   "dur": 2.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_191.mp4"
+  },
+  {
+   "id": "192",
+   "start": 1144.96,
+   "dur": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_192.mp4"
+  },
+  {
+   "id": "193",
+   "start": 1146.72,
+   "dur": 2.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_193.mp4"
+  },
+  {
+   "id": "194",
+   "start": 1149.02,
+   "dur": 5.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_194.mp4"
+  },
+  {
+   "id": "cmp_37_callout",
+   "start": 1153.4,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "“",
+   "eyebrow": "Night 10 — my sister, who never says it",
+   "caption": "What are you on? Round your eyes. Something is going on round your eyes.",
+   "medico": true
+  },
+  {
+   "id": "195",
+   "start": 1154.5,
+   "dur": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_195.mp4"
+  },
+  {
+   "id": "196",
+   "start": 1157.2,
+   "dur": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_196.mp4"
+  },
+  {
+   "id": "197",
+   "start": 1159.9,
+   "dur": 7.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_197.mp4"
+  },
+  {
+   "id": "198",
+   "start": 1166.92,
+   "dur": 7.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_198.mp4"
+  },
+  {
+   "id": "cmp_38_pricewar",
+   "start": 1171.34,
+   "dur": 8,
+   "key": "s",
+   "kind": "pricewar",
+   "leftImage": "img/grvaseline_lam_dry_sealed.jpg",
+   "rightImage": "img/grvaseline_197.jpg",
+   "leftPrice": "$4",
+   "rightPrice": "$60",
+   "leftLabel": "A tub that lasts two years",
+   "rightLabel": "A jar she has bought since 2009",
+   "strike": "/ jar",
+   "verdict": "SIXTEEN YEARS",
+   "subtitle": "I did the arithmetic standing at the sink and had to stop"
+  },
+  {
+   "id": "199",
+   "start": 1173.94,
+   "dur": 7.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_199.jpg"
+  },
+  {
+   "id": "200",
+   "start": 1180.98,
+   "dur": 4.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_200.mp4"
+  },
+  {
+   "id": "201",
+   "start": 1185.24,
+   "dur": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_201.mp4"
+  },
+  {
+   "id": "202",
+   "start": 1188.82,
+   "dur": 4.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_202.mp4"
+  },
+  {
+   "id": "203",
+   "start": 1193.56,
+   "dur": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_203.mp4"
+  },
+  {
+   "id": "204",
+   "start": 1195.52,
+   "dur": 2.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_204.mp4"
+  },
+  {
+   "id": "205",
+   "start": 1198.12,
+   "dur": 4.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_205.mp4"
+  },
+  {
+   "id": "206",
+   "start": 1202.16,
+   "dur": 7.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_206.mp4"
+  },
+  {
+   "id": "207",
+   "start": 1209.6,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_207.mp4"
+  },
+  {
+   "id": "208",
+   "start": 1212,
+   "dur": 2.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_208.mp4"
+  },
+  {
+   "id": "209",
+   "start": 1214.32,
+   "dur": 5.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_209.mp4"
+  },
+  {
+   "id": "210",
+   "start": 1219.54,
+   "dur": 5.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_210.mp4"
+  },
+  {
+   "id": "211",
+   "start": 1225,
+   "dur": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_211.mp4"
+  },
+  {
+   "id": "212",
+   "start": 1226.96,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_212.mp4"
+  },
+  {
+   "id": "213",
+   "start": 1229.14,
+   "dur": 3.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_213.mp4"
+  },
+  {
+   "id": "cmp_39_chips",
+   "start": 1229.14,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "Night 14 — the honest result",
+   "eyebrow": "Same window, same hour, same dressing gown",
+   "image": "img/grvaseline_219.jpg",
+   "chips": [
+    "The deep crease exactly where I left it",
+    "The fine crepey texture smoother",
+    "The dry corner gone completely",
+    "Skin that was not struggling"
+   ]
+  },
+  {
+   "id": "214",
+   "start": 1232.44,
+   "dur": 3.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_214.mp4"
+  },
+  {
+   "id": "215",
+   "start": 1236.16,
+   "dur": 3.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_215.mp4"
+  },
+  {
+   "id": "216",
+   "start": 1240.1,
+   "dur": 2.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_216.mp4"
+  },
+  {
+   "id": "217",
+   "start": 1242.78,
+   "dur": 8.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_217.mp4"
+  },
+  {
+   "id": "218",
+   "start": 1250.8,
+   "dur": 3.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_218.jpg"
+  },
+  {
+   "id": "219",
+   "start": 1254.68,
+   "dur": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_219.mp4"
+  },
+  {
+   "id": "220",
+   "start": 1257.68,
+   "dur": 3.27,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_220.mp4"
+  },
+  {
+   "id": "221",
+   "start": 1260.95,
+   "dur": 8.07,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_221.mp4"
+  },
+  {
+   "id": "222",
+   "start": 1269.02,
+   "dur": 2.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_222.mp4"
+  },
+  {
+   "id": "cmp_40_rule",
+   "start": 1269.02,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "03",
+   "title": "THE APPOINTMENT"
+  },
+  {
+   "id": "223",
+   "start": 1272,
+   "dur": 2.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_223.mp4"
+  },
+  {
+   "id": "224",
+   "start": 1274.12,
+   "dur": 5.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_224.mp4"
+  },
+  {
+   "id": "225",
+   "start": 1279.56,
+   "dur": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_225.mp4"
+  },
+  {
+   "id": "226",
+   "start": 1283.48,
+   "dur": 3.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_226.mp4"
+  },
+  {
+   "id": "227",
+   "start": 1286.9,
+   "dur": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_227.mp4"
+  },
+  {
+   "id": "228",
+   "start": 1290.34,
+   "dur": 3.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_228.mp4"
+  },
+  {
+   "id": "229",
+   "start": 1293.4,
+   "dur": 3.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_229.jpg"
+  },
+  {
+   "id": "230",
+   "start": 1296.7,
+   "dur": 4.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_230.mp4"
+  },
+  {
+   "id": "231",
+   "start": 1301.44,
+   "dur": 3.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_231.mp4"
+  },
+  {
+   "id": "232",
+   "start": 1304.86,
+   "dur": 5.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_232.mp4"
+  },
+  {
+   "id": "233",
+   "start": 1310.62,
+   "dur": 4.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_233.mp4"
+  },
+  {
+   "id": "234",
+   "start": 1314.94,
+   "dur": 2.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_234.mp4"
+  },
+  {
+   "id": "235",
+   "start": 1317.22,
+   "dur": 4.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_235.mp4"
+  },
+  {
+   "id": "236",
+   "start": 1321.62,
+   "dur": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_236.mp4"
+  },
+  {
+   "id": "cmp_41_process",
+   "start": 1321.62,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "eyebrow": "What the doctor said",
+   "title": "His three warnings",
+   "steps": [
+    {
+     "title": "The boundary",
+     "desc": "The orbital bone. Not onto the soft lid, not near the lash line. Never."
+    },
+    {
+     "title": "What is underneath",
+     "desc": "It seals whatever it finds. Clean face, and it goes on last."
+    },
+    {
+     "title": "And the way you put it on",
+     "desc": "The one that turned out to be the whole ending of this video."
+    }
+   ]
+  },
+  {
+   "id": "237",
+   "start": 1325.12,
+   "dur": 3.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_237.mp4"
+  },
+  {
+   "id": "238",
+   "start": 1328.28,
+   "dur": 3.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_238.mp4"
+  },
+  {
+   "id": "239",
+   "start": 1331.8,
+   "dur": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_239.mp4"
+  },
+  {
+   "id": "240",
+   "start": 1338.04,
+   "dur": 1.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_240.mp4"
+  },
+  {
+   "id": "cmp_42_freezezoom",
+   "start": 1338.04,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/grvaseline_lam_orbital_rim.jpg",
+   "x": 0.44,
+   "y": 0.46,
+   "zoom": 1.8,
+   "tone": "teal",
+   "label": "That hard ridge is the line. You do not cross it."
+  },
+  {
+   "id": "241",
+   "start": 1339.64,
+   "dur": 7.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_241.mp4"
+  },
+  {
+   "id": "242",
+   "start": 1347.6,
+   "dur": 2.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_242.mp4"
+  },
+  {
+   "id": "243",
+   "start": 1349.7,
+   "dur": 2.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_243.mp4"
+  },
+  {
+   "id": "244",
+   "start": 1352.02,
+   "dur": 2.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_244.mp4"
+  },
+  {
+   "id": "245",
+   "start": 1354.64,
+   "dur": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_245.mp4"
+  },
+  {
+   "id": "246",
+   "start": 1358.4,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_246.mp4"
+  },
+  {
+   "id": "247",
+   "start": 1361.58,
+   "dur": 2.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_247.mp4"
+  },
+  {
+   "id": "cmp_43_blurexplainer",
+   "start": 1361.58,
+   "dur": 7,
+   "key": "s",
+   "kind": "blurexplainer",
+   "clip": "broll/grvaseline_247.mp4",
+   "image": "img/grvaseline_lam_migration.jpg",
+   "side": "right",
+   "eyebrow": "Why the boundary matters more here",
+   "title": "It travels towards the eye",
+   "body": "It is warm on your skin, it thins out, and it creeps — because that is downhill and because you blink. By two in the morning it was in my eye."
+  },
+  {
+   "id": "248",
+   "start": 1364.48,
+   "dur": 5.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_248.mp4"
+  },
+  {
+   "id": "249",
+   "start": 1370.08,
+   "dur": 2.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_249.mp4"
+  },
+  {
+   "id": "250",
+   "start": 1372.22,
+   "dur": 1.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_250.mp4"
+  },
+  {
+   "id": "251",
+   "start": 1374.02,
+   "dur": 1.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_251.mp4"
+  },
+  {
+   "id": "252",
+   "start": 1375.3,
+   "dur": 2.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_252.mp4"
+  },
+  {
+   "id": "253",
+   "start": 1377.4,
+   "dur": 2.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_253.mp4"
+  },
+  {
+   "id": "254",
+   "start": 1380.34,
+   "dur": 2.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_254.mp4"
+  },
+  {
+   "id": "255",
+   "start": 1383,
+   "dur": 2.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_255.jpg"
+  },
+  {
+   "id": "256",
+   "start": 1385.76,
+   "dur": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_256.mp4"
+  },
+  {
+   "id": "257",
+   "start": 1389.34,
+   "dur": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_257.mp4"
+  },
+  {
+   "id": "258",
+   "start": 1392.06,
+   "dur": 2.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_258.mp4"
+  },
+  {
+   "id": "259",
+   "start": 1394.32,
+   "dur": 4.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_259.mp4"
+  },
+  {
+   "id": "260",
+   "start": 1399.16,
+   "dur": 3.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_260.mp4"
+  },
+  {
+   "id": "261",
+   "start": 1402.24,
+   "dur": 2.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_261.mp4"
+  },
+  {
+   "id": "262",
+   "start": 1405,
+   "dur": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_262.mp4"
+  },
+  {
+   "id": "263",
+   "start": 1409,
+   "dur": 3.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_263.mp4"
+  },
+  {
+   "id": "264",
+   "start": 1412.34,
+   "dur": 6.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_264.mp4"
+  },
+  {
+   "id": "265",
+   "start": 1418.52,
+   "dur": 2.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_265.mp4"
+  },
+  {
+   "id": "266",
+   "start": 1420.86,
+   "dur": 6.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_266.mp4"
+  },
+  {
+   "id": "267",
+   "start": 1427.66,
+   "dur": 4.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_267.mp4"
+  },
+  {
+   "id": "cmp_44_checklist",
+   "start": 1427.66,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "eyebrow": "Honest limits",
+   "title": "The limits, before the good part",
+   "items": [
+    {
+     "text": "It will NOT remove a wrinkle. Nothing on the surface does",
+     "state": "danger"
+    },
+    {
+     "text": "Nothing for pigment, age spots or sun damage",
+     "state": "danger"
+    },
+    {
+     "text": "The filling is WATER — temporary. By the afternoon much of it has gone",
+     "state": "warn"
+    },
+    {
+     "text": "It does not feed your skin. There is nothing in it to feed with",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "268",
+   "start": 1431.9,
+   "dur": 6.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_268.jpg"
+  },
+  {
+   "id": "269",
+   "start": 1437.96,
+   "dur": 2.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_269.mp4"
+  },
+  {
+   "id": "270",
+   "start": 1440.88,
+   "dur": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_270.mp4"
+  },
+  {
+   "id": "271",
+   "start": 1446.04,
+   "dur": 3.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_271.mp4"
+  },
+  {
+   "id": "272",
+   "start": 1449.86,
+   "dur": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_272.mp4"
+  },
+  {
+   "id": "273",
+   "start": 1454.86,
+   "dur": 1.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_273.mp4"
+  },
+  {
+   "id": "274",
+   "start": 1456.48,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_274.mp4"
+  },
+  {
+   "id": "275",
+   "start": 1458.88,
+   "dur": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_275.mp4"
+  },
+  {
+   "id": "276",
+   "start": 1462.46,
+   "dur": 2.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_276.mp4"
+  },
+  {
+   "id": "277",
+   "start": 1465.44,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_277.mp4"
+  },
+  {
+   "id": "278",
+   "start": 1467.62,
+   "dur": 2.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_278.mp4"
+  },
+  {
+   "id": "279",
+   "start": 1469.96,
+   "dur": 2.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_279.mp4"
+  },
+  {
+   "id": "280",
+   "start": 1472.1,
+   "dur": 2.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_280.mp4"
+  },
+  {
+   "id": "281",
+   "start": 1474.56,
+   "dur": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_281.mp4"
+  },
+  {
+   "id": "282",
+   "start": 1477.68,
+   "dur": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_282.mp4"
+  },
+  {
+   "id": "283",
+   "start": 1480.56,
+   "dur": 6.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_283.mp4"
+  },
+  {
+   "id": "284",
+   "start": 1486.74,
+   "dur": 1.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_284.mp4"
+  },
+  {
+   "id": "285",
+   "start": 1488.52,
+   "dur": 5.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_285.mp4"
+  },
+  {
+   "id": "286",
+   "start": 1494.14,
+   "dur": 5.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_286.mp4"
+  },
+  {
+   "id": "287",
+   "start": 1499.32,
+   "dur": 7.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_287.mp4"
+  },
+  {
+   "id": "288",
+   "start": 1507,
+   "dur": 6.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_288.mp4"
+  },
+  {
+   "id": "cmp_45_callout",
+   "start": 1507,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "!",
+   "eyebrow": "Milia — a small group of people get them",
+   "caption": "Harmless, annoying, and they take weeks to go. If it starts happening to you, stop.",
+   "medico": true
+  },
+  {
+   "id": "289",
+   "start": 1513.46,
+   "dur": 3.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_289.mp4"
+  },
+  {
+   "id": "290",
+   "start": 1516.62,
+   "dur": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_290.mp4"
+  },
+  {
+   "id": "291",
+   "start": 1519.44,
+   "dur": 4.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_291.mp4"
+  },
+  {
+   "id": "292",
+   "start": 1523.62,
+   "dur": 1.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_292.mp4"
+  },
+  {
+   "id": "293",
+   "start": 1525.6,
+   "dur": 4.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_293.mp4"
+  },
+  {
+   "id": "294",
+   "start": 1530.04,
+   "dur": 7.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_294.mp4"
+  },
+  {
+   "id": "295",
+   "start": 1537.46,
+   "dur": 1.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_295.mp4"
+  },
+  {
+   "id": "296",
+   "start": 1539.2,
+   "dur": 3.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_296.mp4"
+  },
+  {
+   "id": "297",
+   "start": 1542.68,
+   "dur": 5.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_297.mp4"
+  },
+  {
+   "id": "298",
+   "start": 1547.9,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_298.mp4"
+  },
+  {
+   "id": "299",
+   "start": 1550.92,
+   "dur": 4.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_299.mp4"
+  },
+  {
+   "id": "cmp_46_callout",
+   "start": 1550.92,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "SUN",
+   "eyebrow": "If you only ever do ONE thing",
+   "caption": "It is not this, and it is not anything else in a tub. This is the pleasant thing you do on top of the boring thing that matters.",
+   "medico": true
+  },
+  {
+   "id": "300",
+   "start": 1555.34,
+   "dur": 7.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_300.mp4"
+  },
+  {
+   "id": "301",
+   "start": 1562.74,
+   "dur": 2.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_301.mp4"
+  },
+  {
+   "id": "302",
+   "start": 1564.94,
+   "dur": 2.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_302.mp4"
+  },
+  {
+   "id": "303",
+   "start": 1567.16,
+   "dur": 7.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_303.mp4"
+  },
+  {
+   "id": "304",
+   "start": 1574.42,
+   "dur": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_304.mp4"
+  },
+  {
+   "id": "cmp_47_splitlist",
+   "start": 1574.42,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "What goes under the lid — the four I tried",
+   "items": [
+    "PLAIN WATER — skin still damp. Costs nothing and works better than it has any right to.",
+    "GLYCERIN — a humectant. My favourite of the four, and about a dollar.",
+    "PLAIN ALOE GEL — cool, some water of its own. Check it is actually aloe.",
+    "THE BORING CREAM YOU OWN — this is not a replacement for it. It is a lid for it."
+   ]
+  },
+  {
+   "id": "305",
+   "start": 1577.14,
+   "dur": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_305.mp4"
+  },
+  {
+   "id": "306",
+   "start": 1582.06,
+   "dur": 2.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_306.mp4"
+  },
+  {
+   "id": "307",
+   "start": 1584.6,
+   "dur": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_307.mp4"
+  },
+  {
+   "id": "308",
+   "start": 1587.32,
+   "dur": 1.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_308.mp4"
+  },
+  {
+   "id": "309",
+   "start": 1588.94,
+   "dur": 2.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_309.mp4"
+  },
+  {
+   "id": "310",
+   "start": 1591.4,
+   "dur": 1.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_310.mp4"
+  },
+  {
+   "id": "cmp_48_ingredients",
+   "start": 1591.4,
+   "dur": 6,
+   "key": "s",
+   "kind": "ingredients",
+   "title": "The free version, in three moves",
+   "items": [
+    {
+     "name": "Rinse",
+     "amount": "and do not dry",
+     "image": "img/grvaseline_310.jpg"
+    },
+    {
+     "name": "Leave it damp",
+     "amount": "cool and slightly wet",
+     "image": "img/grvaseline_312.jpg"
+    },
+    {
+     "name": "Press the jelly over it",
+     "amount": "a film, not a layer",
+     "image": "img/grvaseline_314.jpg"
+    }
+   ]
+  },
+  {
+   "id": "311",
+   "start": 1593.28,
+   "dur": 2.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_311.mp4"
+  },
+  {
+   "id": "312",
+   "start": 1595.72,
+   "dur": 9.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_312.mp4"
+  },
+  {
+   "id": "313",
+   "start": 1604.88,
+   "dur": 4.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_313.mp4"
+  },
+  {
+   "id": "314",
+   "start": 1609.54,
+   "dur": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_314.mp4"
+  },
+  {
+   "id": "315",
+   "start": 1613.04,
+   "dur": 4.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_315.mp4"
+  },
+  {
+   "id": "316",
+   "start": 1617.1,
+   "dur": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_316.mp4"
+  },
+  {
+   "id": "317",
+   "start": 1620.14,
+   "dur": 3.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_317.mp4"
+  },
+  {
+   "id": "318",
+   "start": 1623.66,
+   "dur": 3.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_318.mp4"
+  },
+  {
+   "id": "319",
+   "start": 1627.3,
+   "dur": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_319.mp4"
+  },
+  {
+   "id": "cmp_49_blurexplainer",
+   "start": 1627.3,
+   "dur": 7,
+   "key": "s",
+   "kind": "blurexplainer",
+   "clip": "broll/grvaseline_319.mp4",
+   "image": "img/grvaseline_lam_layers_stack.jpg",
+   "side": "left",
+   "eyebrow": "Humectant underneath, seal on top",
+   "title": "You have just built a night cream",
+   "body": "A humectant pulls water towards itself and holds it. Seal that in, and you have the entire architecture of every good night cream ever made — for about a dollar."
+  },
+  {
+   "id": "320",
+   "start": 1629.86,
+   "dur": 1.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_320.mp4"
+  },
+  {
+   "id": "321",
+   "start": 1631.68,
+   "dur": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_321.mp4"
+  },
+  {
+   "id": "322",
+   "start": 1634.56,
+   "dur": 4.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_322.mp4"
+  },
+  {
+   "id": "323",
+   "start": 1639.3,
+   "dur": 5.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_323.mp4"
+  },
+  {
+   "id": "324",
+   "start": 1644.78,
+   "dur": 5.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_324.mp4"
+  },
+  {
+   "id": "325",
+   "start": 1650.06,
+   "dur": 2.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_325.mp4"
+  },
+  {
+   "id": "326",
+   "start": 1652.54,
+   "dur": 2.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_326.mp4"
+  },
+  {
+   "id": "327",
+   "start": 1655.4,
+   "dur": 6.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_327.mp4"
+  },
+  {
+   "id": "328",
+   "start": 1662.14,
+   "dur": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_328.mp4"
+  },
+  {
+   "id": "329",
+   "start": 1668.38,
+   "dur": 4.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_329.jpg"
+  },
+  {
+   "id": "330",
+   "start": 1672.68,
+   "dur": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_330.mp4"
+  },
+  {
+   "id": "331",
+   "start": 1675.38,
+   "dur": 3.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_331.mp4"
+  },
+  {
+   "id": "332",
+   "start": 1679.28,
+   "dur": 2.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_332.mp4"
+  },
+  {
+   "id": "333",
+   "start": 1682.18,
+   "dur": 4.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_333.mp4"
+  },
+  {
+   "id": "334",
+   "start": 1686.46,
+   "dur": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_334.jpg"
+  },
+  {
+   "id": "335",
+   "start": 1689.82,
+   "dur": 8.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_335.mp4"
+  },
+  {
+   "id": "336",
+   "start": 1698.62,
+   "dur": 4.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_336.mp4"
+  },
+  {
+   "id": "337",
+   "start": 1703.4,
+   "dur": 3.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_337.mp4"
+  },
+  {
+   "id": "338",
+   "start": 1706.82,
+   "dur": 2.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_338.mp4"
+  },
+  {
+   "id": "339",
+   "start": 1709.12,
+   "dur": 1.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_339.mp4"
+  },
+  {
+   "id": "340",
+   "start": 1710.92,
+   "dur": 3.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_340.mp4"
+  },
+  {
+   "id": "341",
+   "start": 1714.34,
+   "dur": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_341.mp4"
+  },
+  {
+   "id": "342",
+   "start": 1719.26,
+   "dur": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_342.mp4"
+  },
+  {
+   "id": "343",
+   "start": 1721.9,
+   "dur": 3.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_343.mp4"
+  },
+  {
+   "id": "344",
+   "start": 1725.1,
+   "dur": 3.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_344.mp4"
+  },
+  {
+   "id": "345",
+   "start": 1728.74,
+   "dur": 6.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_345.mp4"
+  },
+  {
+   "id": "346",
+   "start": 1734.94,
+   "dur": 8.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_346.mp4"
+  },
+  {
+   "id": "347",
+   "start": 1743.78,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_347.mp4"
+  },
+  {
+   "id": "348",
+   "start": 1745.96,
+   "dur": 7.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_348.mp4"
+  },
+  {
+   "id": "cmp_50_callout",
+   "start": 1745.96,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "3",
+   "eyebrow": "The one where the result is undeniable",
+   "caption": "Hands, overnight, with cotton gloves over the top. Three nights and you will see it.",
+   "medico": true
+  },
+  {
+   "id": "349",
+   "start": 1753.64,
+   "dur": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_349.mp4"
+  },
+  {
+   "id": "350",
+   "start": 1757.22,
+   "dur": 7.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_350.mp4"
+  },
+  {
+   "id": "351",
+   "start": 1764.68,
+   "dur": 1.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_351.mp4"
+  },
+  {
+   "id": "352",
+   "start": 1765.96,
+   "dur": 5.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_352.mp4"
+  },
+  {
+   "id": "cmp_51_chips",
+   "start": 1765.96,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "Everywhere else it earns its place",
+   "eyebrow": "Where it stops being about your face",
+   "image": "img/grvaseline_348.jpg",
+   "chips": [
+    "Hands, with cotton gloves — three nights",
+    "Heels, with cotton socks",
+    "The cracked corners of your mouth",
+    "Cuticles and dry shins"
+   ]
+  },
+  {
+   "id": "353",
+   "start": 1771.86,
+   "dur": 2.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_353.mp4"
+  },
+  {
+   "id": "354",
+   "start": 1774.38,
+   "dur": 6.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_354.mp4"
+  },
+  {
+   "id": "355",
+   "start": 1781.22,
+   "dur": 9.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_355.mp4"
+  },
+  {
+   "id": "356",
+   "start": 1790.68,
+   "dur": 5.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_356.mp4"
+  },
+  {
+   "id": "357",
+   "start": 1795.7,
+   "dur": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_357.mp4"
+  },
+  {
+   "id": "358",
+   "start": 1798.34,
+   "dur": 4.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_358.jpg"
+  },
+  {
+   "id": "359",
+   "start": 1802.96,
+   "dur": 6.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_359.mp4"
+  },
+  {
+   "id": "360",
+   "start": 1809.64,
+   "dur": 3.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_360.mp4"
+  },
+  {
+   "id": "361",
+   "start": 1812.78,
+   "dur": 2.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_361.mp4"
+  },
+  {
+   "id": "362",
+   "start": 1815.54,
+   "dur": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_362.mp4"
+  },
+  {
+   "id": "363",
+   "start": 1819.14,
+   "dur": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_363.mp4"
+  },
+  {
+   "id": "364",
+   "start": 1822.58,
+   "dur": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_364.mp4"
+  },
+  {
+   "id": "365",
+   "start": 1825.62,
+   "dur": 2.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_365.mp4"
+  },
+  {
+   "id": "cmp_52_mitoverdad",
+   "start": 1825.62,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "eyebrow": "Two places the answer is simply no",
+   "mito": "It grows your lashes and your eyebrows.",
+   "verdad": "It cannot. There is nothing in it that could. It makes the ones you already have look darker and glossier while it sits on them. That is all.",
+   "flipAt": 82
+  },
+  {
+   "id": "366",
+   "start": 1828.54,
+   "dur": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_366.mp4"
+  },
+  {
+   "id": "367",
+   "start": 1832.7,
+   "dur": 5.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_367.mp4"
+  },
+  {
+   "id": "368",
+   "start": 1837.72,
+   "dur": 4.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_368.mp4"
+  },
+  {
+   "id": "369",
+   "start": 1842.32,
+   "dur": 3.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_369.mp4"
+  },
+  {
+   "id": "370",
+   "start": 1845.8,
+   "dur": 5.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_370.mp4"
+  },
+  {
+   "id": "cmp_53_errorstinger",
+   "start": 1845.8,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "Never inside your nose",
+   "tone": "danger",
+   "eyebrow": "A very old piece of advice that is wrong"
+  },
+  {
+   "id": "371",
+   "start": 1851.18,
+   "dur": 4.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_371.mp4"
+  },
+  {
+   "id": "372",
+   "start": 1855.94,
+   "dur": 4.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_372.mp4"
+  },
+  {
+   "id": "373",
+   "start": 1860.7,
+   "dur": 5.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_373.mp4"
+  },
+  {
+   "id": "374",
+   "start": 1866.18,
+   "dur": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_374.mp4"
+  },
+  {
+   "id": "375",
+   "start": 1869,
+   "dur": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_375.mp4"
+  },
+  {
+   "id": "376",
+   "start": 1875,
+   "dur": 5.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_376.mp4"
+  },
+  {
+   "id": "377",
+   "start": 1880.7,
+   "dur": 3.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_377.mp4"
+  },
+  {
+   "id": "378",
+   "start": 1884.36,
+   "dur": 4.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_378.mp4"
+  },
+  {
+   "id": "379",
+   "start": 1888.38,
+   "dur": 3.17,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_379.jpg"
+  },
+  {
+   "id": "cmp_54_checklist",
+   "start": 1888.38,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "eyebrow": "Safety",
+   "title": "Before you try any of this",
+   "items": [
+    {
+     "text": "Patch test inside the elbow. Leave it a day",
+     "state": "ok"
+    },
+    {
+     "text": "Never seal a wound that is not properly cleaned",
+     "state": "danger"
+    },
+    {
+     "text": "Get it out with a clean spoon — not the same finger, night after night",
+     "state": "warn"
+    },
+    {
+     "text": "Anything prescribed for your face? Ask before you seal over it",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "380",
+   "start": 1891.55,
+   "dur": 4.77,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_380.mp4"
+  },
+  {
+   "id": "381",
+   "start": 1896.32,
+   "dur": 1.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_381.mp4"
+  },
+  {
+   "id": "382",
+   "start": 1898.3,
+   "dur": 4.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_382.mp4"
+  },
+  {
+   "id": "383",
+   "start": 1902.38,
+   "dur": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_383.mp4"
+  },
+  {
+   "id": "384",
+   "start": 1907.54,
+   "dur": 5.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_384.mp4"
+  },
+  {
+   "id": "385",
+   "start": 1913.28,
+   "dur": 6.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_385.mp4"
+  },
+  {
+   "id": "386",
+   "start": 1919.58,
+   "dur": 11.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_386.mp4"
+  },
+  {
+   "id": "387",
+   "start": 1931.1,
+   "dur": 4.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_387.mp4"
+  },
+  {
+   "id": "388",
+   "start": 1935.92,
+   "dur": 8.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_388.mp4"
+  },
+  {
+   "id": "389",
+   "start": 1944.52,
+   "dur": 3.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_389.mp4"
+  },
+  {
+   "id": "390",
+   "start": 1948.5,
+   "dur": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_390.mp4"
+  },
+  {
+   "id": "391",
+   "start": 1951.14,
+   "dur": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_391.mp4"
+  },
+  {
+   "id": "cmp_55_rule",
+   "start": 1951.14,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "04",
+   "title": "THE MISTAKE, AND THE FIX"
+  },
+  {
+   "id": "392",
+   "start": 1956.1,
+   "dur": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_392.mp4"
+  },
+  {
+   "id": "393",
+   "start": 1961.06,
+   "dur": 3.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_393.jpg"
+  },
+  {
+   "id": "394",
+   "start": 1964.28,
+   "dur": 2.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_394.mp4"
+  },
+  {
+   "id": "395",
+   "start": 1967.2,
+   "dur": 4.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_395.mp4"
+  },
+  {
+   "id": "cmp_56_mitoverdad",
+   "start": 1967.2,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "eyebrow": "What everybody tells you",
+   "mito": "Put a good thick layer on. Slather it. More is better.",
+   "verdad": "A thick layer cannot seal better than a thin one. The seal is made by the first microscopically thin film that touches your skin.",
+   "flipAt": 82
+  },
+  {
+   "id": "396",
+   "start": 1972.1,
+   "dur": 1.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_396.mp4"
+  },
+  {
+   "id": "397",
+   "start": 1973.56,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_397.mp4"
+  },
+  {
+   "id": "398",
+   "start": 1976.74,
+   "dur": 5.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_398.mp4"
+  },
+  {
+   "id": "399",
+   "start": 1982.18,
+   "dur": 2.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_399.mp4"
+  },
+  {
+   "id": "400",
+   "start": 1984.68,
+   "dur": 3.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_400.mp4"
+  },
+  {
+   "id": "401",
+   "start": 1987.92,
+   "dur": 7.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_401.mp4"
+  },
+  {
+   "id": "402",
+   "start": 1995.2,
+   "dur": 4.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_402.mp4"
+  },
+  {
+   "id": "cmp_57_blurexplainer",
+   "start": 1995.2,
+   "dur": 7,
+   "key": "s",
+   "kind": "blurexplainer",
+   "clip": "broll/grvaseline_402.mp4",
+   "image": "img/grvaseline_lam_thin_vs_thick.jpg",
+   "side": "right",
+   "eyebrow": "All of the risk, none of the benefit",
+   "title": "It is not a slather. It is a film.",
+   "body": "Everything above that first film does nothing at all — it just sits there getting warm, and creeps. The mess, the pillow, the gummed up eye: all of it comes from the part that was never working."
+  },
+  {
+   "id": "403",
+   "start": 1999.64,
+   "dur": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_403.mp4"
+  },
+  {
+   "id": "404",
+   "start": 2004.22,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_404.mp4"
+  },
+  {
+   "id": "405",
+   "start": 2007.4,
+   "dur": 5.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_405.mp4"
+  },
+  {
+   "id": "406",
+   "start": 2012.52,
+   "dur": 4.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_406.mp4"
+  },
+  {
+   "id": "407",
+   "start": 2017.36,
+   "dur": 4.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_407.mp4"
+  },
+  {
+   "id": "408",
+   "start": 2021.76,
+   "dur": 2.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_408.mp4"
+  },
+  {
+   "id": "409",
+   "start": 2024.52,
+   "dur": 12.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_409.mp4"
+  },
+  {
+   "id": "410",
+   "start": 2037.44,
+   "dur": 1.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_410.mp4"
+  },
+  {
+   "id": "411",
+   "start": 2039.38,
+   "dur": 2.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_411.mp4"
+  },
+  {
+   "id": "412",
+   "start": 2042.04,
+   "dur": 1.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_412.mp4"
+  },
+  {
+   "id": "413",
+   "start": 2043.78,
+   "dur": 4.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_413.mp4"
+  },
+  {
+   "id": "414",
+   "start": 2048.38,
+   "dur": 3.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_414.mp4"
+  },
+  {
+   "id": "415",
+   "start": 2052.06,
+   "dur": 1.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_415.mp4"
+  },
+  {
+   "id": "416",
+   "start": 2053.94,
+   "dur": 5.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_416.mp4"
+  },
+  {
+   "id": "417",
+   "start": 2059.34,
+   "dur": 3.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_417.mp4"
+  },
+  {
+   "id": "418",
+   "start": 2062.6,
+   "dur": 1.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_418.mp4"
+  },
+  {
+   "id": "cmp_58_frasecinetica",
+   "start": 2062.6,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "perWord": 13,
+   "tone": "warn",
+   "words": [
+    {
+     "t": "It"
+    },
+    {
+     "t": "is"
+    },
+    {
+     "t": "not"
+    },
+    {
+     "t": "a"
+    },
+    {
+     "t": "slather."
+    },
+    {
+     "t": "It",
+     "hl": true
+    },
+    {
+     "t": "is",
+     "hl": true
+    },
+    {
+     "t": "a",
+     "hl": true
+    },
+    {
+     "t": "FILM.",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "419",
+   "start": 2064.14,
+   "dur": 2.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_419.mp4"
+  },
+  {
+   "id": "420",
+   "start": 2066.58,
+   "dur": 1.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_420.mp4"
+  },
+  {
+   "id": "421",
+   "start": 2068.4,
+   "dur": 1.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_421.mp4"
+  },
+  {
+   "id": "422",
+   "start": 2070.14,
+   "dur": 4.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_422.mp4"
+  },
+  {
+   "id": "423",
+   "start": 2074.62,
+   "dur": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_423.mp4"
+  },
+  {
+   "id": "424",
+   "start": 2079.78,
+   "dur": 2.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_424.mp4"
+  },
+  {
+   "id": "425",
+   "start": 2081.86,
+   "dur": 2.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_425.mp4"
+  },
+  {
+   "id": "426",
+   "start": 2084.6,
+   "dur": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_426.mp4"
+  },
+  {
+   "id": "427",
+   "start": 2088.2,
+   "dur": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_427.jpg"
+  },
+  {
+   "id": "428",
+   "start": 2091.32,
+   "dur": 2.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_428.mp4"
+  },
+  {
+   "id": "429",
+   "start": 2093.8,
+   "dur": 1.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_429.mp4"
+  },
+  {
+   "id": "430",
+   "start": 2095.44,
+   "dur": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_430.mp4"
+  },
+  {
+   "id": "cmp_59_freezezoom",
+   "start": 2095.44,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/grvaseline_lam_dry_sealed.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.75,
+   "tone": "gold",
+   "label": "Seal bone dry skin and you have sealed the dry IN"
+  },
+  {
+   "id": "431",
+   "start": 2098.4,
+   "dur": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_431.mp4"
+  },
+  {
+   "id": "432",
+   "start": 2103.32,
+   "dur": 3.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_432.mp4"
+  },
+  {
+   "id": "433",
+   "start": 2106.52,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_433.mp4"
+  },
+  {
+   "id": "434",
+   "start": 2109.54,
+   "dur": 1.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_434.mp4"
+  },
+  {
+   "id": "435",
+   "start": 2111.18,
+   "dur": 2.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_435.mp4"
+  },
+  {
+   "id": "436",
+   "start": 2113.22,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_436.mp4"
+  },
+  {
+   "id": "437",
+   "start": 2116.24,
+   "dur": 4.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_437.mp4"
+  },
+  {
+   "id": "438",
+   "start": 2120.9,
+   "dur": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_438.mp4"
+  },
+  {
+   "id": "cmp_60_headline",
+   "start": 2120.9,
+   "dur": 6,
+   "key": "s",
+   "kind": "headline",
+   "tokens": [
+    {
+     "t": "The"
+    },
+    {
+     "t": "water"
+    },
+    {
+     "t": "has"
+    },
+    {
+     "t": "to"
+    },
+    {
+     "t": "be"
+    },
+    {
+     "t": "there",
+     "hl": true
+    },
+    {
+     "t": "FIRST.",
+     "hl": true
+    }
+   ],
+   "eyebrow": "That is the whole secret, and it is free"
+  },
+  {
+   "id": "439",
+   "start": 2123.62,
+   "dur": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_439.mp4"
+  },
+  {
+   "id": "440",
+   "start": 2125.38,
+   "dur": 3.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_440.mp4"
+  },
+  {
+   "id": "441",
+   "start": 2129.02,
+   "dur": 2.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_441.mp4"
+  },
+  {
+   "id": "442",
+   "start": 2131.34,
+   "dur": 1.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_442.mp4"
+  },
+  {
+   "id": "443",
+   "start": 2133,
+   "dur": 1.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_443.mp4"
+  },
+  {
+   "id": "444",
+   "start": 2134.44,
+   "dur": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_444.mp4"
+  },
+  {
+   "id": "445",
+   "start": 2137.56,
+   "dur": 3.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_445.mp4"
+  },
+  {
+   "id": "446",
+   "start": 2140.64,
+   "dur": 3.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_446.mp4"
+  },
+  {
+   "id": "447",
+   "start": 2144.5,
+   "dur": 10.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_447.mp4"
+  },
+  {
+   "id": "448",
+   "start": 2154.94,
+   "dur": 6.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_448.mp4"
+  },
+  {
+   "id": "449",
+   "start": 2161.24,
+   "dur": 2.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_449.mp4"
+  },
+  {
+   "id": "450",
+   "start": 2164.14,
+   "dur": 8.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_450.mp4"
+  },
+  {
+   "id": "cmp_61_guardaesto",
+   "start": 2167.18,
+   "dur": 9,
+   "key": "s",
+   "kind": "guardaesto",
+   "title": "The whole thing, in three lines",
+   "tag": "Golden Remedies",
+   "prompt": "Save this",
+   "items": [
+    "1 · Rinse and do NOT dry. Leave the skin damp and cool.",
+    "2 · A grain of rice, warmed between two fingertips until it goes clear.",
+    "3 · Press it along the bone under the eye. Never above it. Every other night."
+   ]
+  },
+  {
+   "id": "451",
+   "start": 2172.3,
+   "dur": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_451.mp4"
+  },
+  {
+   "id": "452",
+   "start": 2174.26,
+   "dur": 5.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_452.mp4"
+  },
+  {
+   "id": "453",
+   "start": 2179.32,
+   "dur": 5.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_453.mp4"
+  },
+  {
+   "id": "454",
+   "start": 2184.38,
+   "dur": 2.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_454.mp4"
+  },
+  {
+   "id": "455",
+   "start": 2186.72,
+   "dur": 3.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_455.mp4"
+  },
+  {
+   "id": "456",
+   "start": 2190.4,
+   "dur": 1.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_456.mp4"
+  },
+  {
+   "id": "457",
+   "start": 2192.06,
+   "dur": 1.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_457.mp4"
+  },
+  {
+   "id": "458",
+   "start": 2193.38,
+   "dur": 1.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_458.mp4"
+  },
+  {
+   "id": "459",
+   "start": 2195.32,
+   "dur": 3.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_459.mp4"
+  },
+  {
+   "id": "460",
+   "start": 2198.86,
+   "dur": 3.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_460.mp4"
+  },
+  {
+   "id": "461",
+   "start": 2202.1,
+   "dur": 6.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_461.mp4"
+  },
+  {
+   "id": "cmp_62_lowerthird",
+   "start": 2202.1,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "The exact amounts are in the DESCRIPTION",
+   "kicker": "Free, right below this video",
+   "desc": "How much, what goes underneath, how long before bed, and how to take it off.",
+   "tone": "teal"
+  },
+  {
+   "id": "462",
+   "start": 2209.08,
+   "dur": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_462.mp4"
+  },
+  {
+   "id": "463",
+   "start": 2214.08,
+   "dur": 1.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_463.mp4"
+  },
+  {
+   "id": "464",
+   "start": 2215.96,
+   "dur": 6.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_464.mp4"
+  },
+  {
+   "id": "465",
+   "start": 2222.34,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_465.mp4"
+  },
+  {
+   "id": "466",
+   "start": 2227.84,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_466.mp4"
+  },
+  {
+   "id": "467",
+   "start": 2234.34,
+   "dur": 10.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_467.mp4"
+  },
+  {
+   "id": "468",
+   "start": 2245.24,
+   "dur": 2.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_468.mp4"
+  },
+  {
+   "id": "469",
+   "start": 2247.72,
+   "dur": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_469.mp4"
+  },
+  {
+   "id": "470",
+   "start": 2251.28,
+   "dur": 2.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_470.mp4"
+  },
+  {
+   "id": "471",
+   "start": 2253.76,
+   "dur": 4.05,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_471.mp4"
+  },
+  {
+   "id": "cmp_63_nametag",
+   "start": 2253.76,
+   "dur": 6,
+   "key": "s",
+   "kind": "nametag",
+   "name": "Golden Remedies",
+   "role": "The remedies nobody could sell you — every week",
+   "image": "img/grvaseline_472.jpg"
+  },
+  {
+   "id": "472",
+   "start": 2257.82,
+   "dur": 4.05,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grvaseline_472.mp4"
+  }
+ ]
+}
