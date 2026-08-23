@@ -27,7 +27,7 @@ import { MainFederer18, TOTAL_FRAMES_FED18 } from "./_fed6/VideoEdit/Main_federe
 import { MainGreenbotox, TOTAL_FRAMES_GB } from "./_fed6/VideoEdit/Main_greenbotox";
 import { MainGreenlift, TOTAL_FRAMES_GB as TOTAL_FRAMES_GL } from "./_fed6/VideoEdit/Main_greenlift";
 import { MainGreenglove, TOTAL_FRAMES_GG } from "./_fed6/VideoEdit/Main_greenglove";
-import { MainCuellopavo, TOTAL_FRAMES_CP } from "./_fed6/VideoEdit/Main_cuellopavo";
+import { MainCuellopavo, TOTAL_FRAMES_CP as TOTAL_FRAMES_CUELLOPAVO } from "./_fed6/VideoEdit/Main_cuellopavo";
 import { MainTaza9pm, TOTAL_FRAMES_TAZA9PM } from "./_fed6/VideoEdit/Main_taza9pm";
 import { MainTrucos60, TOTAL_FRAMES_T60 } from "./_fed6/VideoEdit/Main_trucos60";
 import { MainHierbacolon, TOTAL_FRAMES_HIERBACOLON } from "./_fed6/VideoEdit/Main_hierbacolon";
@@ -85,6 +85,7 @@ import { MainAlimentos60, TOTAL_FRAMES as TOTAL_FRAMES_ALIMENTOS60 } from "./val
 import { MainValeriaVaselina, TOTAL_FRAMES as TOTAL_FRAMES_VALERIAVASELINA } from "./valeria/Main_valeriavaselina";
 import { MainValeriaPresion, TOTAL_FRAMES as TOTAL_FRAMES_VALERIAPRESION } from "./valeria/Main_valeriapresion";
 import { MainValeriaNariz, TOTAL_FRAMES as TOTAL_FRAMES_VALERIANARIZ } from "./valeria/Main_valerianariz";
+import { MainGrcoffee, TOTAL_FRAMES_GRCOFFEE } from "./_fed6/VideoEdit/Main_grcoffee";
 import { MainValeriaBocaSeca, TOTAL_FRAMES as TOTAL_FRAMES_VALERIABOCASECA } from "./valeria/Main_valeriabocaseca";
 import { MainRevivir, TOTAL_FRAMES_REVIVIR } from "./VideoEdit/Main_revivir";
 import { MainSemillas, TOTAL_FRAMES_SEMILLAS } from "./VideoEdit/Main_semillas";
@@ -719,7 +720,7 @@ export const RemotionRoot: React.FC = () => {
       {/* Dr. Bastida — "Come ESTOS 3 ALIMENTOS para tu piel +60" · kit valeria-vintage · AVATAR · b-roll 100% stock Pexels */}
       <Composition id="Alimentos60" component={MainAlimentos60} durationInFrames={TOTAL_FRAMES_ALIMENTOS60} fps={30} width={1920} height={1080} />
       {/* Federer - Mas Salud, Mas Vida — "Adios al CUELLO DE PAVO" · kit _fed6 · AVATAR loop · b-roll agnes */}
-      <Composition id="Cuellopavo" component={MainCuellopavo} durationInFrames={TOTAL_FRAMES_CP} fps={30} width={1920} height={1080} />
+      <Composition id="Cuellopavo" component={MainCuellopavo} durationInFrames={TOTAL_FRAMES_CUELLOPAVO} fps={30} width={1920} height={1080} />
       {/* Federer - Mas Salud, Mas Vida — "La TAZA DE LAS 9 PM" · kit _fed6 · AVATAR en bucle de 152s · b-roll agnes texto-a-video */}
       <Composition id="Taza9pm" component={MainTaza9pm} durationInFrames={TOTAL_FRAMES_TAZA9PM} fps={30} width={1920} height={1080} />
       <Composition id="Hierbacolon" component={MainHierbacolon} durationInFrames={TOTAL_FRAMES_HIERBACOLON} fps={30} width={1920} height={1080} />
@@ -732,6 +733,9 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="ValeriaNariz" component={MainValeriaNariz} durationInFrames={TOTAL_FRAMES_VALERIANARIZ} fps={30} width={1920} height={1080} />
       {/* Doctora Valeria Alcazar — "BOCA SECA: 7 senales +60" · kit valeria-vintage · AVATAR EN BUCLE + audio master (avatar 5:27 + Fish) · b-roll 260 clips agnes */}
       <Composition id="ValeriaBocaSeca" component={MainValeriaBocaSeca} durationInFrames={TOTAL_FRAMES_VALERIABOCASECA} fps={30} width={1920} height={1080} />
+      {/* Golden Remedies (EN) — "I Rubbed Coffee on My Face for 7 Days" · kit federer-video/_fed6 ·
+          AVATAR EN BUCLE + audio master de Fish (avatar 5:31.6 de 27:23) · b-roll agnes */}
+      <Composition id="GrCoffee" component={MainGrcoffee} durationInFrames={TOTAL_FRAMES_GRCOFFEE} fps={30} width={1920} height={1080} />
     </>
   );
 };

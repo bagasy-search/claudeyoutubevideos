@@ -24,6 +24,10 @@ const candidates = [
   // los kits por canal viven fuera de VideoEdit (valeria, _fed6, peroxide...)
   `src/valeria/Main_${slug}.tsx`,
   `src/_fed6/Main_${slug}.tsx`,
+  // ⛔ los Main de _fed6 viven UN NIVEL MAS ADENTRO (src/_fed6/VideoEdit/). Sin esta linea el
+  // gate abortaba con "no encontré el build" para TODA la familia _fed6 (estoalos70, taza9pm,
+  // collagen3, cuellopavo...) — o sea que nunca llegó a medir nada en esos videos.
+  `src/_fed6/VideoEdit/Main_${slug}.tsx`,
   `src/peroxide/Main_${slug}.tsx`,
 ];
 const build = candidates.find((p) => existsSync(p)) || readdirSync("src/VideoEdit").filter((f) => f.includes(slug) && /^Main_.*\.tsx$/.test(f)).map((f) => `src/VideoEdit/${f}`)[0];
@@ -38,6 +42,11 @@ const cuesCand = [
   `src/VideoEdit/cues_${slug}.gen.ts`,
   `src/valeria/cues_${slug}.gen.ts`,
   `src/_fed6/cues_${slug}.gen.ts`,
+  // ⛔ el kit _fed6 no usa `cues_*.gen.ts`: su fuente de verdad data-driven es
+  // `src/_fed6/VideoEdit/<slug>_beats.ts` (exporta <SLUG>_BEATS y <SLUG>_BROLL, que es
+  // justo lo que el bloque data-driven de más abajo sabe leer). Sin esta ruta el gate caía
+  // al conteo por JSX y veía los ~13 casos del switch en vez de los usos REALES de componente.
+  `src/_fed6/VideoEdit/${slug}_beats.ts`,
   `src/peroxide/cues_${slug}.gen.ts`,
 ];
 const cuesPath = cuesCand.find((p) => existsSync(p)) || cuesCand[0];
@@ -129,11 +138,17 @@ if (hayCues) {
       }
     }
     if (bts && bts.length && bts.some((b) => b && b.kind)) {
-      const ov = bts.filter((b) => b.overlay);
+      // ⛔ Los beats `raw` NO son componentes: son la toma plana. Contándolos, un video de 341
+      // fotos + 55 componentes reportaba 396 usos y 14.5/min (y listaba "raw" como si fuera un
+      // kind del kit), o sea el gate se auto-aprobaba justo en lo que vino a medir.
+      const comps = bts.filter((b) => b.kind !== "raw");
+      // "sin NADA del kit encima": tapa tanto el overlay como el componente a PANTALLA COMPLETA
+      // (si un componente full ocupa ese tramo, el b-roll de abajo ni se ve — no es crudo).
+      const ov = comps.length ? comps : bts.filter((b) => b.overlay);
       const tapado = (v) => ov.some((o) => o.start < v.start + v.dur && v.start < o.start + o.dur);
       dd = {
-        compUses: bts.length,
-        compDistinct: [...new Set(bts.map((b) => b.kind))],
+        compUses: comps.length,
+        compDistinct: [...new Set(comps.map((b) => b.kind))],
         // "crudo" = visual sin NADA del kit encima; los componentes a pantalla completa no son crudos
         momentos: (brl || []).length,
         crudos: (brl || []).filter((v) => !tapado(v)).length,
