@@ -59,7 +59,10 @@ export function renderFedererComp(beat: any, d: number): React.ReactNode {
     case "quote":
       return <PullQuote durationInFrames={d} theme={T} quote={strip(beat.text)} image={sf(beat.image)} />;
     case "chips":
-      return <SplitPanel durationInFrames={d} theme={T} title={beat.title} image={sf(beat.image)} bullets={beat.chips || []} />;
+      // ⛔ `eyebrow` NO se reenviaba y el default de SplitPanel es "En resumen": en un canal en
+      // INGLÉS eso sale tal cual en pantalla (medido en grcoffee, 5 veces). Sin eyebrow en el beat
+      // queda undefined → default de siempre, así que ningún video en español cambia.
+      return <SplitPanel durationInFrames={d} theme={T} eyebrow={beat.eyebrow} title={beat.title} image={sf(beat.image)} bullets={beat.chips || []} />;
     case "splitlist":
       return <BulletCascade durationInFrames={d} theme={T} eyebrow={beat.title} bullets={(beat.items || []).map((i: string) => ({ key: i }))} />;
     case "checklist":
