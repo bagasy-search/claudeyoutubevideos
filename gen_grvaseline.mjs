@@ -489,7 +489,7 @@ const q = (p) => durs[Math.floor(durs.length * p)];
 const pct5 = Math.round(durs.filter((d) => d >= 5).length / durs.length * 100);
 const distinct = new Set(cmpBeats.map((b) => b.kind));
 const need = new Set();
-ALL.forEach((b) => { if (b.src) need.add(b.src); if (b.image) need.add(b.image); if (b.leftImg) need.add(b.leftImg); if (b.rightImg) need.add(b.rightImg); if (b.leftImage) need.add(b.leftImage); if (b.rightImage) need.add(b.rightImage); if (b.clip) need.add(b.clip); (b.cards || []).forEach((c) => c.img && need.add(c.img)); });
+ALL.forEach((b) => { if (b.src) need.add(b.src); if (b.image) need.add(b.image); if (b.leftImg) need.add(b.leftImg); if (b.rightImg) need.add(b.rightImg); if (b.leftImage) need.add(b.leftImage); if (b.rightImage) need.add(b.rightImage); if (b.clip) need.add(b.clip); (b.cards || []).forEach((c) => c.img && need.add(c.img)); (b.items || []).forEach((i) => i && i.image && need.add(i.image)); (b.steps || []).forEach((s) => s && s.image && need.add(s.image)); });
 BROLL.forEach((b) => need.add(b.src));
 const miss = [...need].filter((p) => !fs.existsSync("public/" + p));
 fs.writeFileSync(`_${SLUG}_need.json`, JSON.stringify([...need].sort(), null, 1));
