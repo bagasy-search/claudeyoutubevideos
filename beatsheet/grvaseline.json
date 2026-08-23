@@ -1399,9 +1399,11 @@
    "dur": 6.5,
    "key": "s",
    "kind": "mitoverdad",
+   "mythLabel": "MYTH",
+   "truthLabel": "THE TRUTH",
    "eyebrow": "What you were taught",
-   "mito": "It is crude oil. It suffocates your skin and clogs your pores.",
-   "verdad": "What is sold in a chemist is refined to a pharmaceutical standard, three times over. The testing says it does not block a pore.",
+   "myth": "It is crude oil. It suffocates your skin and clogs your pores.",
+   "truth": "What is sold in a chemist is refined to a pharmaceutical standard, three times over. The testing says it does not block a pore.",
    "flipAt": 82
   },
   {
@@ -1592,7 +1594,7 @@
    "key": "s",
    "kind": "quote",
    "text": "It is the most boring recommendation in all of dermatology. And it is also one of the best ones.",
-   "author": "The dermatologist, with the door shut"
+   "image": "img/grvaseline_129.jpg"
   },
   {
    "id": "128",
@@ -2164,9 +2166,11 @@
    "dur": 6.5,
    "key": "s",
    "kind": "mitoverdad",
+   "mythLabel": "MYTH",
+   "truthLabel": "THE TRUTH",
    "eyebrow": "What I am NOT going to tell you",
-   "mito": "My eyes looked ten years younger.",
-   "verdad": "The lines were exactly where I left them. What changed was the surface — filled in, calm, and no longer struggling.",
+   "myth": "My eyes looked ten years younger.",
+   "truth": "The lines were exactly where I left them. What changed was the surface — filled in, calm, and no longer struggling.",
    "flipAt": 82
   },
   {
@@ -3868,9 +3872,11 @@
    "dur": 6.5,
    "key": "s",
    "kind": "mitoverdad",
+   "mythLabel": "MYTH",
+   "truthLabel": "THE TRUTH",
    "eyebrow": "Two places the answer is simply no",
-   "mito": "It grows your lashes and your eyebrows.",
-   "verdad": "It cannot. There is nothing in it that could. It makes the ones you already have look darker and glossier while it sits on them. That is all.",
+   "myth": "It grows your lashes and your eyebrows.",
+   "truth": "It cannot. There is nothing in it that could. It makes the ones you already have look darker and glossier while it sits on them. That is all.",
    "flipAt": 82
   },
   {
@@ -4166,9 +4172,11 @@
    "dur": 6.5,
    "key": "s",
    "kind": "mitoverdad",
+   "mythLabel": "MYTH",
+   "truthLabel": "THE TRUTH",
    "eyebrow": "What everybody tells you",
-   "mito": "Put a good thick layer on. Slather it. More is better.",
-   "verdad": "A thick layer cannot seal better than a thin one. The seal is made by the first microscopically thin film that touches your skin.",
+   "myth": "Put a good thick layer on. Slather it. More is better.",
+   "truth": "A thick layer cannot seal better than a thin one. The seal is made by the first microscopically thin film that touches your skin.",
    "flipAt": 82
   },
   {

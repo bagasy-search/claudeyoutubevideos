@@ -87,6 +87,35 @@ for (const b of beats) {
   }
 }
 
+// 4) EL MAIN TIENE QUE REENVIAR CADA PROP DEL BEAT.
+// Esta es la que caza el caso mas traicionero: el beat trae `mito`/`verdad` pero el
+// componente lee `myth`/`truth` -> el Main nunca pasa nada, el componente sale VACIO y
+// el chunk termina en VERDE. Se grepea el renderComp del Main por `b.<prop>`.
+const MAIN = process.argv[3] || `src/_fed6/VideoEdit/Main_${SLUG[0].toUpperCase() + SLUG.slice(1)}.tsx`;
+const mainPath = fs.existsSync(MAIN) ? MAIN : `src/_fed6/VideoEdit/Main_${SLUG}.tsx`;
+// Ademas del Main hay que mirar los renderers compartidos: los kinds que resuelve
+// `renderFederer2Comp(beat, d)` reciben el beat ENTERO y leen `beat.<prop>`, no `b.<prop>`.
+const RENDERERS = ["src/_fed6/VideoEdit/FedererComponents.tsx", "src/_fed6/VideoEdit/FedererComponents2.tsx"];
+if (fs.existsSync(mainPath)) {
+  const main = [mainPath, ...RENDERERS].filter((f) => fs.existsSync(f))
+    .map((f) => fs.readFileSync(f, "utf8")).join(String.fromCharCode(10));
+  const IGNORAR = new Set(["id", "start", "dur", "key", "kind", "src", "medico"]);
+  const vistos = new Set();
+  for (const b of beats) {
+    if (!b.kind || b.kind === "raw" || !CONTRACT[b.kind]) continue;
+    for (const k of Object.keys(b)) {
+      if (IGNORAR.has(k)) continue;
+      const id = `${b.kind}.${k}`;
+      if (vistos.has(id)) continue;
+      vistos.add(id);
+      if (!main.includes(`b.${k}`) && !main.includes(`beat.${k}`))
+        errs.push(`${b.kind}: el beat trae \`${k}\` pero ${mainPath} NUNCA lo reenvia (no aparece \`b.${k}\`) -> el componente usa su DEFAULT o sale VACIO, y el chunk pasa en VERDE`);
+    }
+  }
+} else {
+  console.log(`  ⚠ no encontre el Main (${mainPath}) — salteo el chequeo de reenvio de props`);
+}
+
 const kinds = [...new Set(beats.filter((b) => b.kind && b.kind !== "raw").map((b) => b.kind))];
 const sinContrato = kinds.filter((k) => !CONTRACT[k]);
 console.log(`── CONTRATOS · ${SLUG} · ${beats.length} beats · ${kinds.length} kinds`);
