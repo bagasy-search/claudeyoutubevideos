@@ -13,6 +13,17 @@
 //
 // Si da bajo: pedir el avatar de nuevo en modo AUDIO-DRIVEN (lipsync sobre el wav), no en
 // modo texto->avatar. Montar igual garantiza un video fuera de sincro de punta a punta.
+//
+// ⚠️ NO CONFUNDIR CON EL 0.2% DEL FARM (medido en grcoffee, y lo tienen TODOS los videos).
+// El mp4 que sale del farm dura ~0.195% mas que la composicion (60 chunks x ~57 ms de padding
+// de prime del encoder AAC). Si corres este gate sobre el MP4 FINAL contra el wav fuente vas a
+// ver una deriva que crece lineal (+0.05s a los 5s, +3.0s a los 25 min) y vas a pensar que el
+// lipsync se rompio. NO se rompio: se estiran los DOS streams casi igual
+//   video 0.1937%  ·  audio 0.1963%  ->  desfase A/V REAL = 9 ms en 331 s
+// y 9 ms esta muy por debajo del umbral perceptible (~40 ms). Lo unico que pasa es que el video
+// corre 0.2% mas lento de lo nominal.
+// REGLA: este gate se corre sobre el AVATAR CRUDO vs el WAV, ANTES de montar. Sobre el mp4 final
+// no sirve — ahi el estiramiento del farm enmascara la medicion.
 import { execFileSync } from "node:child_process";
 import { readFileSync, unlinkSync } from "node:fs";
 
