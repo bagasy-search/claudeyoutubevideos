@@ -1,0 +1,3712 @@
+{
+ "video": "grbanana",
+ "avatar": "grbanana_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "000",
+   "start": 0.32,
+   "dur": 1.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_000.mp4"
+  },
+  {
+   "id": "001",
+   "start": 1.96,
+   "dur": 4.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_001.mp4"
+  },
+  {
+   "id": "003",
+   "start": 6.28,
+   "dur": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_003.mp4"
+  },
+  {
+   "id": "004",
+   "start": 8.84,
+   "dur": 5.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_004.mp4"
+  },
+  {
+   "id": "006",
+   "start": 14.58,
+   "dur": 8.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_006.mp4"
+  },
+  {
+   "id": "008",
+   "start": 23.24,
+   "dur": 7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_008.mp4"
+  },
+  {
+   "id": "cmp_0_bars",
+   "start": 23.24,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "bars",
+   "title": "The same fruit. Two different plants.",
+   "unit": "mg / 100g",
+   "bars": [
+    {
+     "label": "The peel you throw away",
+     "value": 100,
+     "winner": true,
+     "note": "80 to 560 mg"
+    },
+    {
+     "label": "The fruit you eat",
+     "value": 3,
+     "note": "2.5 to 10 mg"
+    }
+   ]
+  },
+  {
+   "id": "009",
+   "start": 30.24,
+   "dur": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_009.mp4"
+  },
+  {
+   "id": "010",
+   "start": 35.16,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_010.mp4"
+  },
+  {
+   "id": "cmp_1_callout",
+   "start": 35.16,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "100x",
+   "eyebrow": "Peel against fruit",
+   "caption": "We eat the small half and compost the large one, and then we go and buy it back in a jar",
+   "medico": true
+  },
+  {
+   "id": "011",
+   "start": 37.34,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_011.mp4"
+  },
+  {
+   "id": "012",
+   "start": 40.18,
+   "dur": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_012.mp4"
+  },
+  {
+   "id": "013",
+   "start": 44.18,
+   "dur": 3.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_013.mp4"
+  },
+  {
+   "id": "014",
+   "start": 47.96,
+   "dur": 11.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_014.mp4"
+  },
+  {
+   "id": "015",
+   "start": 59.56,
+   "dur": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_015.mp4"
+  },
+  {
+   "id": "cmp_2_mitoverdad",
+   "start": 59.56,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "mythLabel": "WHAT YOU ARE TOLD",
+   "truthLabel": "WHAT ACTUALLY HAPPENS",
+   "myth": "Banana peel erases wrinkles",
+   "truth": "It cannot. A line that folds from underneath is not reached from the surface",
+   "flipAt": 137
+  },
+  {
+   "id": "016",
+   "start": 64.12,
+   "dur": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_016.mp4"
+  },
+  {
+   "id": "017",
+   "start": 67.12,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_017.mp4"
+  },
+  {
+   "id": "018",
+   "start": 71.32,
+   "dur": 3.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_018.mp4"
+  },
+  {
+   "id": "019",
+   "start": 74.48,
+   "dur": 2.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_019.mp4"
+  },
+  {
+   "id": "020",
+   "start": 77.34,
+   "dur": 4.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_020.mp4"
+  },
+  {
+   "id": "021",
+   "start": 82.2,
+   "dur": 6.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_021.mp4"
+  },
+  {
+   "id": "023",
+   "start": 88.72,
+   "dur": 5.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_023.mp4"
+  },
+  {
+   "id": "024",
+   "start": 94.06,
+   "dur": 9.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_024.mp4"
+  },
+  {
+   "id": "025",
+   "start": 103.36,
+   "dur": 9.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_025.mp4"
+  },
+  {
+   "id": "cmp_3_hourdial",
+   "start": 103.36,
+   "dur": 5,
+   "key": "s",
+   "kind": "hourdial",
+   "hour": 9,
+   "big": "4",
+   "unit": "MIN",
+   "tone": "gold",
+   "label": "From the moment you tear it open"
+  },
+  {
+   "id": "027",
+   "start": 113.28,
+   "dur": 8.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_027.mp4"
+  },
+  {
+   "id": "028",
+   "start": 121.5,
+   "dur": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_028.mp4"
+  },
+  {
+   "id": "029",
+   "start": 126.06,
+   "dur": 5.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_029.mp4"
+  },
+  {
+   "id": "030",
+   "start": 131.76,
+   "dur": 8.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_030.mp4"
+  },
+  {
+   "id": "031",
+   "start": 140.64,
+   "dur": 2.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_031.mp4"
+  },
+  {
+   "id": "cmp_4_errorstinger",
+   "start": 140.64,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "Night three. I let it dry all the way.",
+   "tone": "warn",
+   "eyebrow": "The mistake I am going to walk you through"
+  },
+  {
+   "id": "032",
+   "start": 142.78,
+   "dur": 4.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_032.mp4"
+  },
+  {
+   "id": "033",
+   "start": 147.66,
+   "dur": 2.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_033.mp4"
+  },
+  {
+   "id": "034",
+   "start": 150.14,
+   "dur": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_034.mp4"
+  },
+  {
+   "id": "035",
+   "start": 153.18,
+   "dur": 4.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_035.mp4"
+  },
+  {
+   "id": "036",
+   "start": 158.08,
+   "dur": 4.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_036.mp4"
+  },
+  {
+   "id": "037",
+   "start": 162.32,
+   "dur": 7.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_037.mp4"
+  },
+  {
+   "id": "038",
+   "start": 169.64,
+   "dur": 13.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_038.mp4"
+  },
+  {
+   "id": "040",
+   "start": 183.02,
+   "dur": 7.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_040.mp4"
+  },
+  {
+   "id": "041",
+   "start": 190.68,
+   "dur": 6.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_041.mp4"
+  },
+  {
+   "id": "cmp_5_rule",
+   "start": 190.68,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "01",
+   "title": "WHAT IS ACTUALLY IN THE SKIN"
+  },
+  {
+   "id": "042",
+   "start": 197.66,
+   "dur": 5.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_042.mp4"
+  },
+  {
+   "id": "cmp_6_stat",
+   "start": 201.92,
+   "dur": 6,
+   "key": "s",
+   "kind": "stat",
+   "eyebrow": "Of every banana you have ever bought",
+   "value": 33,
+   "suffix": "%",
+   "label": "A third of the weight goes straight into the bin"
+  },
+  {
+   "id": "044",
+   "start": 203.58,
+   "dur": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_044.mp4"
+  },
+  {
+   "id": "045",
+   "start": 209.82,
+   "dur": 7.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_045.mp4"
+  },
+  {
+   "id": "048",
+   "start": 217,
+   "dur": 5.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_048.mp4"
+  },
+  {
+   "id": "049",
+   "start": 222.12,
+   "dur": 5.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_049.mp4"
+  },
+  {
+   "id": "cmp_7_callout",
+   "start": 222.12,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "40M",
+   "eyebrow": "Tonnes of banana peel a year",
+   "caption": "Almost all of it goes into the ground, and none of it has ever been asked what it can do"
+  },
+  {
+   "id": "050",
+   "start": 227.54,
+   "dur": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_050.mp4"
+  },
+  {
+   "id": "051",
+   "start": 230.66,
+   "dur": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_051.mp4"
+  },
+  {
+   "id": "052",
+   "start": 233.3,
+   "dur": 4.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_052.mp4"
+  },
+  {
+   "id": "053",
+   "start": 237.38,
+   "dur": 5.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_053.mp4"
+  },
+  {
+   "id": "cmp_8_freezezoom",
+   "start": 237.38,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/grbanana_h_058.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 2,
+   "tone": "teal",
+   "label": "The rich half was the half we threw out"
+  },
+  {
+   "id": "055",
+   "start": 242.5,
+   "dur": 3.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_055.mp4"
+  },
+  {
+   "id": "056",
+   "start": 246.38,
+   "dur": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_056.mp4"
+  },
+  {
+   "id": "057",
+   "start": 249.94,
+   "dur": 3.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_057.mp4"
+  },
+  {
+   "id": "cmp_9_bars",
+   "start": 249.94,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "bars",
+   "title": "Protective antioxidant compounds",
+   "unit": "x",
+   "bars": [
+    {
+     "label": "In the skin",
+     "value": 100,
+     "winner": true,
+     "note": "four to five times higher"
+    },
+    {
+     "label": "In the fruit",
+     "value": 22,
+     "note": "the part we actually eat"
+    }
+   ]
+  },
+  {
+   "id": "058",
+   "start": 253.16,
+   "dur": 8.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_058.mp4"
+  },
+  {
+   "id": "059",
+   "start": 261.56,
+   "dur": 8.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_059.mp4"
+  },
+  {
+   "id": "cmp_10_ingredients",
+   "start": 261.56,
+   "dur": 6,
+   "key": "s",
+   "kind": "ingredients",
+   "title": "What is in that skin",
+   "items": [
+    {
+     "name": "Potassium",
+     "amount": "more than the flesh, gram for gram",
+     "image": "img/grbanana_h_059.jpg"
+    },
+    {
+     "name": "Silicon",
+     "amount": "the mineral used in the scaffolding under the skin",
+     "image": "img/grbanana_h_061.jpg"
+    },
+    {
+     "name": "Carotenoids",
+     "amount": "lutein among them - the yellow itself",
+     "image": "img/grbanana_h_063.jpg"
+    }
+   ]
+  },
+  {
+   "id": "060",
+   "start": 270.3,
+   "dur": 4.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_060.mp4"
+  },
+  {
+   "id": "061",
+   "start": 274.92,
+   "dur": 7.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_061.mp4"
+  },
+  {
+   "id": "062",
+   "start": 282.88,
+   "dur": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_062.mp4"
+  },
+  {
+   "id": "063",
+   "start": 285.88,
+   "dur": 4.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_063.mp4"
+  },
+  {
+   "id": "064",
+   "start": 289.94,
+   "dur": 6.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_064.mp4"
+  },
+  {
+   "id": "065",
+   "start": 296.4,
+   "dur": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_065.mp4"
+  },
+  {
+   "id": "cmp_11_chips",
+   "start": 296.4,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "And three more nobody mentions",
+   "eyebrow": "Still in the skin",
+   "image": "img/grbanana_h_065.jpg",
+   "chips": [
+    "Pectin - a soluble fibre that dries to a film",
+    "Natural waxes on the inner face",
+    "Enzymes - the reason it goes brown"
+   ]
+  },
+  {
+   "id": "066",
+   "start": 300.4,
+   "dur": 4.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_066.mp4"
+  },
+  {
+   "id": "067",
+   "start": 304.92,
+   "dur": 2.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_067.mp4"
+  },
+  {
+   "id": "068",
+   "start": 307.78,
+   "dur": 9.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_068.mp4"
+  },
+  {
+   "id": "069",
+   "start": 317.34,
+   "dur": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_069.mp4"
+  },
+  {
+   "id": "070",
+   "start": 320.92,
+   "dur": 4.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_070.mp4"
+  },
+  {
+   "id": "cmp_12_avatarkeyword",
+   "start": 320.92,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "card": "The rubbish is the rich part",
+     "sub": "chemically, the skin is the most interesting thing on the plant",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "071",
+   "start": 325.35,
+   "dur": 4.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_071.mp4"
+  },
+  {
+   "id": "072",
+   "start": 329.78,
+   "dur": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_072.mp4"
+  },
+  {
+   "id": "cmp_13_rule",
+   "start": 329.78,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "02",
+   "title": "WHY NOBODY TALKS ABOUT IT"
+  },
+  {
+   "id": "074",
+   "start": 334.78,
+   "dur": 4.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_074.mp4"
+  },
+  {
+   "id": "075",
+   "start": 339,
+   "dur": 4.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_075.mp4"
+  },
+  {
+   "id": "076",
+   "start": 343.78,
+   "dur": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_076.mp4"
+  },
+  {
+   "id": "077",
+   "start": 347.62,
+   "dur": 3.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_077.mp4"
+  },
+  {
+   "id": "078",
+   "start": 350.72,
+   "dur": 9.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_078.mp4"
+  },
+  {
+   "id": "079",
+   "start": 360.42,
+   "dur": 2.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_079.mp4"
+  },
+  {
+   "id": "cmp_14_blurexplainer",
+   "start": 360.42,
+   "dur": 7,
+   "key": "s",
+   "kind": "blurexplainer",
+   "clip": "broll/grbanana_079.mp4",
+   "image": "img/grbanana_h_078.jpg",
+   "side": "right",
+   "eyebrow": "Eighteen eighties, on the pavement",
+   "title": "It was a genuine public menace",
+   "body": "Two days on a hot pavement and a peel stops being a peel. Cities wrote ordinances about it and paid men to sweep them up."
+  },
+  {
+   "id": "080",
+   "start": 363.2,
+   "dur": 3.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_080.mp4"
+  },
+  {
+   "id": "081",
+   "start": 366.3,
+   "dur": 3.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_081.mp4"
+  },
+  {
+   "id": "082",
+   "start": 369.4,
+   "dur": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_082.mp4"
+  },
+  {
+   "id": "083",
+   "start": 372.84,
+   "dur": 2.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_083.mp4"
+  },
+  {
+   "id": "084",
+   "start": 375.62,
+   "dur": 5.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_084.mp4"
+  },
+  {
+   "id": "085",
+   "start": 380.76,
+   "dur": 6.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_085.mp4"
+  },
+  {
+   "id": "087",
+   "start": 387.46,
+   "dur": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_087.mp4"
+  },
+  {
+   "id": "088",
+   "start": 391.04,
+   "dur": 8.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_088.mp4"
+  },
+  {
+   "id": "089",
+   "start": 399.68,
+   "dur": 4.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_089.mp4"
+  },
+  {
+   "id": "cmp_15_quote",
+   "start": 399.68,
+   "dur": 6,
+   "key": "s",
+   "kind": "quote",
+   "text": "Nobody researches the punchline. Nobody puts the punchline in a jar and sells it to you for eighty pounds.",
+   "author": "Why the banana peel was never studied"
+  },
+  {
+   "id": "090",
+   "start": 404.62,
+   "dur": 2.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_090.mp4"
+  },
+  {
+   "id": "091",
+   "start": 407.3,
+   "dur": 12.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_091.mp4"
+  },
+  {
+   "id": "092",
+   "start": 419.5,
+   "dur": 7.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_092.mp4"
+  },
+  {
+   "id": "cmp_16_pricewar",
+   "start": 419.5,
+   "dur": 8,
+   "key": "s",
+   "kind": "pricewar",
+   "leftImage": "img/grbanana_h_093.jpg",
+   "rightImage": "img/grbanana_h_019.jpg",
+   "leftPrice": "0",
+   "rightPrice": "80",
+   "leftLabel": "Already in your fruit bowl",
+   "rightLabel": "Three teaspoons in a glass jar",
+   "strike": "/ jar",
+   "verdict": "NOBODY MAKES A PENNY FROM THE FIRST ONE",
+   "subtitle": "Fourteen nights of this cost me nothing at all"
+  },
+  {
+   "id": "093",
+   "start": 427.02,
+   "dur": 2.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_093.mp4"
+  },
+  {
+   "id": "094",
+   "start": 430,
+   "dur": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_094.mp4"
+  },
+  {
+   "id": "095",
+   "start": 434.96,
+   "dur": 6.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_095.mp4"
+  },
+  {
+   "id": "096",
+   "start": 441.64,
+   "dur": 9.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_096.mp4"
+  },
+  {
+   "id": "097",
+   "start": 451.1,
+   "dur": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_097.mp4"
+  },
+  {
+   "id": "cmp_17_rule",
+   "start": 451.1,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "03",
+   "title": "THREE THINGS AT ONCE"
+  },
+  {
+   "id": "098",
+   "start": 453.74,
+   "dur": 2.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_098.mp4"
+  },
+  {
+   "id": "099",
+   "start": 456.6,
+   "dur": 6.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_099.mp4"
+  },
+  {
+   "id": "cmp_18_avatarpizarra",
+   "start": 461.1,
+   "dur": 10.2,
+   "key": "s",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "1 - The inside of the skin is wet",
+     "sub": "pectin and natural sugars, sitting in that water",
+     "at": 0
+    },
+    {
+     "card": "2 - As it dries, it contracts",
+     "sub": "it shrinks, very slightly, like the skin on custard",
+     "at": 90
+    },
+    {
+     "card": "3 - So your face feels lifted",
+     "sub": "and none of that has touched the line underneath",
+     "at": 180
+    }
+   ]
+  },
+  {
+   "id": "101",
+   "start": 463.02,
+   "dur": 4.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_101.mp4"
+  },
+  {
+   "id": "102",
+   "start": 467.32,
+   "dur": 3.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_102.mp4"
+  },
+  {
+   "id": "103",
+   "start": 470.98,
+   "dur": 5.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_103.mp4"
+  },
+  {
+   "id": "105",
+   "start": 476.2,
+   "dur": 5.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_105.mp4"
+  },
+  {
+   "id": "106",
+   "start": 481.58,
+   "dur": 3.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_106.mp4"
+  },
+  {
+   "id": "107",
+   "start": 484.92,
+   "dur": 5.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_107.mp4"
+  },
+  {
+   "id": "108",
+   "start": 490.4,
+   "dur": 2.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_108.mp4"
+  },
+  {
+   "id": "109",
+   "start": 493.18,
+   "dur": 2.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_109.mp4"
+  },
+  {
+   "id": "110",
+   "start": 495.96,
+   "dur": 7.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_110.mp4"
+  },
+  {
+   "id": "111",
+   "start": 503.22,
+   "dur": 3.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_111.mp4"
+  },
+  {
+   "id": "cmp_19_mitoverdad",
+   "start": 503.22,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "mythLabel": "WHAT YOU ARE TOLD",
+   "truthLabel": "WHAT ACTUALLY HAPPENS",
+   "myth": "Tight means it is working",
+   "truth": "Tight means a film of fruit sugar is shrinking on top of you",
+   "flipAt": 82
+  },
+  {
+   "id": "112",
+   "start": 506.28,
+   "dur": 2.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_112.mp4"
+  },
+  {
+   "id": "113",
+   "start": 508.82,
+   "dur": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_113.mp4"
+  },
+  {
+   "id": "114",
+   "start": 512.1,
+   "dur": 3.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_114.mp4"
+  },
+  {
+   "id": "115",
+   "start": 515.62,
+   "dur": 2.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_115.mp4"
+  },
+  {
+   "id": "116",
+   "start": 518.36,
+   "dur": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_116.mp4"
+  },
+  {
+   "id": "117",
+   "start": 522.16,
+   "dur": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_117.mp4"
+  },
+  {
+   "id": "cmp_20_chips",
+   "start": 522.16,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "The same trick, older than all of us",
+   "eyebrow": "Where you have met it before",
+   "image": "img/grbanana_h_120.jpg",
+   "chips": [
+    "Peel off masks",
+    "Egg white",
+    "Gelatin",
+    "A tight face feels like a young face"
+   ]
+  },
+  {
+   "id": "119",
+   "start": 525.66,
+   "dur": 2.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_119.mp4"
+  },
+  {
+   "id": "120",
+   "start": 527.78,
+   "dur": 5.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_120.mp4"
+  },
+  {
+   "id": "121",
+   "start": 533.56,
+   "dur": 5.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_121.mp4"
+  },
+  {
+   "id": "122",
+   "start": 539.38,
+   "dur": 3.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_122.mp4"
+  },
+  {
+   "id": "123",
+   "start": 542.84,
+   "dur": 5.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_123.mp4"
+  },
+  {
+   "id": "cmp_21_errorstinger",
+   "start": 542.84,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "The tightening is not just useless",
+   "tone": "warn",
+   "eyebrow": "Hold on to this for night three"
+  },
+  {
+   "id": "124",
+   "start": 547.9,
+   "dur": 3.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_124.mp4"
+  },
+  {
+   "id": "125",
+   "start": 551.88,
+   "dur": 3.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_125.mp4"
+  },
+  {
+   "id": "cmp_22_avatarpizarra",
+   "start": 551.88,
+   "dur": 10.2,
+   "key": "s",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "1 - The compounds are water soluble",
+     "sub": "they sit in the wet layer that touches your face",
+     "at": 0
+    },
+    {
+     "card": "2 - Skin is a barrier, and should be",
+     "sub": "most of it stays on the top. That is not a failure.",
+     "at": 90
+    },
+    {
+     "card": "3 - The top is where the damage starts",
+     "sub": "the redness, the roughness, the dull grey look",
+     "at": 180
+    }
+   ]
+  },
+  {
+   "id": "126",
+   "start": 554.98,
+   "dur": 9.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_126.mp4"
+  },
+  {
+   "id": "127",
+   "start": 564.44,
+   "dur": 3.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_127.mp4"
+  },
+  {
+   "id": "128",
+   "start": 567.98,
+   "dur": 2.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_128.mp4"
+  },
+  {
+   "id": "129",
+   "start": 570.4,
+   "dur": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_129.mp4"
+  },
+  {
+   "id": "130",
+   "start": 574.2,
+   "dur": 4.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_130.mp4"
+  },
+  {
+   "id": "132",
+   "start": 578.94,
+   "dur": 9.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_132.mp4"
+  },
+  {
+   "id": "133",
+   "start": 588.66,
+   "dur": 2.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_133.mp4"
+  },
+  {
+   "id": "134",
+   "start": 591,
+   "dur": 6.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_134.mp4"
+  },
+  {
+   "id": "136",
+   "start": 597.32,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_136.mp4"
+  },
+  {
+   "id": "137",
+   "start": 600.16,
+   "dur": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_137.mp4"
+  },
+  {
+   "id": "138",
+   "start": 605.52,
+   "dur": 3.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_138.mp4"
+  },
+  {
+   "id": "cmp_23_stat",
+   "start": 605.52,
+   "dur": 6,
+   "key": "s",
+   "kind": "stat",
+   "eyebrow": "Ten minutes, every other night",
+   "value": 14,
+   "suffix": " nights",
+   "label": "Slow, boring, and it does not feel like anything at all"
+  },
+  {
+   "id": "139",
+   "start": 609.24,
+   "dur": 5.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_139.mp4"
+  },
+  {
+   "id": "140",
+   "start": 614.76,
+   "dur": 7.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_140.mp4"
+  },
+  {
+   "id": "cmp_24_avatarpizarra",
+   "start": 614.76,
+   "dur": 10.2,
+   "key": "s",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "1 - The inside of the peel is mostly water",
+     "sub": "you are giving your face a short drink",
+     "at": 0
+    },
+    {
+     "card": "2 - Evaporating water takes yours with it",
+     "sub": "which is how a hydrating thing leaves you drier",
+     "at": 90
+    },
+    {
+     "card": "3 - So it needs a lid on top",
+     "sub": "the plainest, cheapest thing in the cupboard, on damp skin",
+     "at": 180
+    }
+   ]
+  },
+  {
+   "id": "141",
+   "start": 622.56,
+   "dur": 5.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_141.mp4"
+  },
+  {
+   "id": "142",
+   "start": 627.84,
+   "dur": 4.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_142.mp4"
+  },
+  {
+   "id": "143",
+   "start": 632.68,
+   "dur": 3.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_143.mp4"
+  },
+  {
+   "id": "144",
+   "start": 636.14,
+   "dur": 9.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_144.mp4"
+  },
+  {
+   "id": "145",
+   "start": 645.4,
+   "dur": 4.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_145.mp4"
+  },
+  {
+   "id": "146",
+   "start": 649.68,
+   "dur": 4.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_146.mp4"
+  },
+  {
+   "id": "cmp_25_ingredientduo",
+   "start": 649.68,
+   "dur": 7,
+   "key": "s",
+   "kind": "ingredientduo",
+   "leftImg": "img/grbanana_h_143.jpg",
+   "rightImg": "img/grbanana_h_146.jpg"
+  },
+  {
+   "id": "147",
+   "start": 654.3,
+   "dur": 18.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_147.mp4"
+  },
+  {
+   "id": "148",
+   "start": 672.46,
+   "dur": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_148.mp4"
+  },
+  {
+   "id": "149",
+   "start": 675.34,
+   "dur": 6.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_149.mp4"
+  },
+  {
+   "id": "150",
+   "start": 682,
+   "dur": 2.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_150.mp4"
+  },
+  {
+   "id": "cmp_26_rule",
+   "start": 682,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "04",
+   "title": "FOURTEEN NIGHTS"
+  },
+  {
+   "id": "151",
+   "start": 684.66,
+   "dur": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_151.mp4"
+  },
+  {
+   "id": "153",
+   "start": 688.5,
+   "dur": 5.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_153.mp4"
+  },
+  {
+   "id": "154",
+   "start": 693.68,
+   "dur": 2.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_154.mp4"
+  },
+  {
+   "id": "155",
+   "start": 696.42,
+   "dur": 2.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_155.mp4"
+  },
+  {
+   "id": "156",
+   "start": 698.7,
+   "dur": 4.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_156.mp4"
+  },
+  {
+   "id": "158",
+   "start": 702.74,
+   "dur": 4.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_158.mp4"
+  },
+  {
+   "id": "159",
+   "start": 707.2,
+   "dur": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_159.mp4"
+  },
+  {
+   "id": "cmp_27_splitlist",
+   "start": 707.2,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "Two test areas, and one of them had no hope in it",
+   "items": [
+    "My face - photographed at the kitchen window at seven every morning, same light, same angle",
+    "The backs of my hands - where I had honestly stopped looking, so I could not fool myself"
+   ]
+  },
+  {
+   "id": "160",
+   "start": 710.96,
+   "dur": 4.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_160.mp4"
+  },
+  {
+   "id": "161",
+   "start": 715.1,
+   "dur": 3.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_161.mp4"
+  },
+  {
+   "id": "162",
+   "start": 718.3,
+   "dur": 4.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_162.mp4"
+  },
+  {
+   "id": "164",
+   "start": 723.28,
+   "dur": 2.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_164.mp4"
+  },
+  {
+   "id": "cmp_28_callout",
+   "start": 723.28,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "1",
+   "eyebrow": "Night one",
+   "caption": "Standing in my own kitchen at half past nine rubbing a piece of fruit rubbish on my face"
+  },
+  {
+   "id": "165",
+   "start": 726.02,
+   "dur": 8.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_165.mp4"
+  },
+  {
+   "id": "166",
+   "start": 734.42,
+   "dur": 3.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_166.mp4"
+  },
+  {
+   "id": "167",
+   "start": 738.1,
+   "dur": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_167.mp4"
+  },
+  {
+   "id": "168",
+   "start": 741.38,
+   "dur": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_168.mp4"
+  },
+  {
+   "id": "169",
+   "start": 744.66,
+   "dur": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_169.mp4"
+  },
+  {
+   "id": "170",
+   "start": 747.94,
+   "dur": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_170.mp4"
+  },
+  {
+   "id": "171",
+   "start": 753.18,
+   "dur": 5.77,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_171.mp4"
+  },
+  {
+   "id": "172",
+   "start": 758.95,
+   "dur": 5.77,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_172.mp4"
+  },
+  {
+   "id": "173",
+   "start": 764.71,
+   "dur": 5.77,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_173.mp4"
+  },
+  {
+   "id": "cmp_29_callout",
+   "start": 764.94,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "0",
+   "eyebrow": "Night two",
+   "caption": "Most of a fortnight is nothing. If somebody saw a change on day two, they are describing the film"
+  },
+  {
+   "id": "174",
+   "start": 770.48,
+   "dur": 13.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_174.mp4"
+  },
+  {
+   "id": "175",
+   "start": 783.62,
+   "dur": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_175.mp4"
+  },
+  {
+   "id": "176",
+   "start": 790.02,
+   "dur": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_176.mp4"
+  },
+  {
+   "id": "177",
+   "start": 793.82,
+   "dur": 5.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_177.mp4"
+  },
+  {
+   "id": "cmp_30_rule",
+   "start": 793.82,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "05",
+   "title": "NIGHT THREE"
+  },
+  {
+   "id": "178",
+   "start": 799.72,
+   "dur": 3.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_178.mp4"
+  },
+  {
+   "id": "cmp_31_mitoverdad",
+   "start": 799.72,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "mythLabel": "WHAT YOU ARE TOLD",
+   "truthLabel": "WHAT ACTUALLY HAPPENS",
+   "myth": "Leave it on until it dries completely, then rinse",
+   "truth": "Take it off while it is still wet. The drying is the part that hurt me.",
+   "flipAt": 82
+  },
+  {
+   "id": "179",
+   "start": 802.82,
+   "dur": 3.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_179.mp4"
+  },
+  {
+   "id": "180",
+   "start": 806.14,
+   "dur": 6.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_180.mp4"
+  },
+  {
+   "id": "181",
+   "start": 813.04,
+   "dur": 8.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_181.mp4"
+  },
+  {
+   "id": "183",
+   "start": 821.36,
+   "dur": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_183.mp4"
+  },
+  {
+   "id": "184",
+   "start": 823.92,
+   "dur": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_184.mp4"
+  },
+  {
+   "id": "185",
+   "start": 827.28,
+   "dur": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_185.mp4"
+  },
+  {
+   "id": "cmp_32_hourdial",
+   "start": 827.28,
+   "dur": 5,
+   "key": "s",
+   "kind": "hourdial",
+   "hour": 10,
+   "big": "25",
+   "unit": "MIN",
+   "tone": "warn",
+   "label": "By the end my face felt like a drum"
+  },
+  {
+   "id": "186",
+   "start": 830.78,
+   "dur": 2.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_186.mp4"
+  },
+  {
+   "id": "187",
+   "start": 833.28,
+   "dur": 5.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_187.mp4"
+  },
+  {
+   "id": "188",
+   "start": 838.8,
+   "dur": 5.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_188.mp4"
+  },
+  {
+   "id": "cmp_33_process",
+   "start": 838.8,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "eyebrow": "What actually happens at the sink",
+   "title": "Why the drying is the trap",
+   "steps": [
+    {
+     "title": "It goes tacky",
+     "body": "the film sets and stops being liquid"
+    },
+    {
+     "title": "Then it goes gluey",
+     "body": "and plain water will not lift it"
+    },
+    {
+     "title": "So you rub",
+     "body": "hardest exactly where the film is thinnest - under the eye"
+    }
+   ]
+  },
+  {
+   "id": "190",
+   "start": 844.26,
+   "dur": 4.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_190.mp4"
+  },
+  {
+   "id": "192",
+   "start": 848.28,
+   "dur": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_192.mp4"
+  },
+  {
+   "id": "193",
+   "start": 851.1,
+   "dur": 7.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_193.mp4"
+  },
+  {
+   "id": "194",
+   "start": 858.26,
+   "dur": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_194.mp4"
+  },
+  {
+   "id": "cmp_34_bars",
+   "start": 858.26,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "bars",
+   "title": "How thick is the skin, really",
+   "unit": "mm",
+   "bars": [
+    {
+     "label": "Most of your face",
+     "value": 100,
+     "note": "about 2 mm"
+    },
+    {
+     "label": "Under your eye",
+     "value": 25,
+     "tone": "danger",
+     "note": "a fraction of it, and almost no oil glands"
+    }
+   ]
+  },
+  {
+   "id": "195",
+   "start": 861.66,
+   "dur": 2.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_195.mp4"
+  },
+  {
+   "id": "196",
+   "start": 864.56,
+   "dur": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_196.mp4"
+  },
+  {
+   "id": "197",
+   "start": 869.8,
+   "dur": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_197.mp4"
+  },
+  {
+   "id": "198",
+   "start": 873.36,
+   "dur": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_198.mp4"
+  },
+  {
+   "id": "199",
+   "start": 876.06,
+   "dur": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_199.mp4"
+  },
+  {
+   "id": "cmp_35_errorstinger",
+   "start": 876.06,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "Four minutes of rubbing, two days of damage",
+   "tone": "danger",
+   "eyebrow": "Night four"
+  },
+  {
+   "id": "200",
+   "start": 882.3,
+   "dur": 4.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_200.mp4"
+  },
+  {
+   "id": "201",
+   "start": 886.56,
+   "dur": 5.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_201.mp4"
+  },
+  {
+   "id": "202",
+   "start": 892.18,
+   "dur": 5.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_202.mp4"
+  },
+  {
+   "id": "cmp_36_callout",
+   "start": 892.18,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "!",
+   "eyebrow": "It was not an allergy",
+   "caption": "No swelling, no itching - just skin dragged about while it was hot and wet, which is the fastest way to age a face overnight",
+   "medico": true
+  },
+  {
+   "id": "203",
+   "start": 897.6,
+   "dur": 11.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_203.mp4"
+  },
+  {
+   "id": "204",
+   "start": 909.48,
+   "dur": 4.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_204.mp4"
+  },
+  {
+   "id": "205",
+   "start": 913.72,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_205.mp4"
+  },
+  {
+   "id": "206",
+   "start": 916.9,
+   "dur": 5.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_206.mp4"
+  },
+  {
+   "id": "207",
+   "start": 922.82,
+   "dur": 7.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_207.mp4"
+  },
+  {
+   "id": "208",
+   "start": 930.46,
+   "dur": 2.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_208.mp4"
+  },
+  {
+   "id": "209",
+   "start": 932.66,
+   "dur": 2.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_209.mp4"
+  },
+  {
+   "id": "210",
+   "start": 935.2,
+   "dur": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_210.mp4"
+  },
+  {
+   "id": "211",
+   "start": 938.76,
+   "dur": 4.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_211.mp4"
+  },
+  {
+   "id": "212",
+   "start": 943.52,
+   "dur": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_212.mp4"
+  },
+  {
+   "id": "213",
+   "start": 945.68,
+   "dur": 2.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_213.mp4"
+  },
+  {
+   "id": "cmp_37_rule",
+   "start": 945.68,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "06",
+   "title": "THE HANDS"
+  },
+  {
+   "id": "214",
+   "start": 947.78,
+   "dur": 4.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_214.mp4"
+  },
+  {
+   "id": "215",
+   "start": 952,
+   "dur": 3.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_215.mp4"
+  },
+  {
+   "id": "216",
+   "start": 955.42,
+   "dur": 4.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_216.mp4"
+  },
+  {
+   "id": "217",
+   "start": 959.64,
+   "dur": 6.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_217.mp4"
+  },
+  {
+   "id": "219",
+   "start": 965.68,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_219.mp4"
+  },
+  {
+   "id": "220",
+   "start": 968.08,
+   "dur": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_220.mp4"
+  },
+  {
+   "id": "221",
+   "start": 971.92,
+   "dur": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_221.mp4"
+  },
+  {
+   "id": "cmp_38_ingredientduo",
+   "start": 971.92,
+   "dur": 7,
+   "key": "s",
+   "kind": "ingredientduo",
+   "leftImg": "img/grbanana_h_221.jpg",
+   "rightImg": "img/grbanana_h_226.jpg"
+  },
+  {
+   "id": "222",
+   "start": 975.68,
+   "dur": 4.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_222.mp4"
+  },
+  {
+   "id": "223",
+   "start": 980.1,
+   "dur": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_223.mp4"
+  },
+  {
+   "id": "224",
+   "start": 984.66,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_224.mp4"
+  },
+  {
+   "id": "225",
+   "start": 987.06,
+   "dur": 4.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_225.mp4"
+  },
+  {
+   "id": "226",
+   "start": 991.84,
+   "dur": 5.25,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_226.mp4"
+  },
+  {
+   "id": "cmp_39_frasecinetica",
+   "start": 995.22,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    "Not gone.",
+    "Softer."
+   ],
+   "tone": "teal"
+  },
+  {
+   "id": "227",
+   "start": 997.09,
+   "dur": 5.25,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_227.mp4"
+  },
+  {
+   "id": "228",
+   "start": 1002.34,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_228.mp4"
+  },
+  {
+   "id": "229",
+   "start": 1004.74,
+   "dur": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_229.mp4"
+  },
+  {
+   "id": "230",
+   "start": 1008.34,
+   "dur": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_230.mp4"
+  },
+  {
+   "id": "231",
+   "start": 1012.5,
+   "dur": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_231.mp4"
+  },
+  {
+   "id": "cmp_40_process",
+   "start": 1012.5,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "eyebrow": "Night seven onwards",
+   "title": "What I changed",
+   "steps": [
+    {
+     "title": "Seven or eight minutes",
+     "body": "and off while it is still visibly wet"
+    },
+    {
+     "title": "Cool water, nine seconds",
+     "body": "the film never sets, so nothing has to be dragged"
+    },
+    {
+     "title": "On the bone, never the hollow",
+     "body": "the ridge you can feel with a fingertip, and no further in"
+    },
+    {
+     "title": "Pressed, never rubbed",
+     "body": "nothing a dermatologist would call friction"
+    }
+   ]
+  },
+  {
+   "id": "232",
+   "start": 1017.3,
+   "dur": 2.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_232.mp4"
+  },
+  {
+   "id": "233",
+   "start": 1019.98,
+   "dur": 3.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_233.mp4"
+  },
+  {
+   "id": "234",
+   "start": 1023.14,
+   "dur": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_234.mp4"
+  },
+  {
+   "id": "235",
+   "start": 1025.3,
+   "dur": 10.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_235.mp4"
+  },
+  {
+   "id": "236",
+   "start": 1035.48,
+   "dur": 7.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_236.mp4"
+  },
+  {
+   "id": "237",
+   "start": 1043.26,
+   "dur": 6.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_237.mp4"
+  },
+  {
+   "id": "238",
+   "start": 1049.36,
+   "dur": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_238.mp4"
+  },
+  {
+   "id": "239",
+   "start": 1054.72,
+   "dur": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_239.mp4"
+  },
+  {
+   "id": "240",
+   "start": 1060.08,
+   "dur": 6.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_240.mp4"
+  },
+  {
+   "id": "241",
+   "start": 1066.16,
+   "dur": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_241.mp4"
+  },
+  {
+   "id": "242",
+   "start": 1070.74,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_242.mp4"
+  },
+  {
+   "id": "243",
+   "start": 1072.92,
+   "dur": 12.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_243.mp4"
+  },
+  {
+   "id": "244",
+   "start": 1085.9,
+   "dur": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_244.mp4"
+  },
+  {
+   "id": "245",
+   "start": 1089.9,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_245.mp4"
+  },
+  {
+   "id": "cmp_41_quote",
+   "start": 1089.9,
+   "dur": 6,
+   "key": "s",
+   "kind": "quote",
+   "text": "Your face is not shiny and it is not dull. What have you changed?",
+   "author": "My sister, who is two years older and has never been kind about my face"
+  },
+  {
+   "id": "246",
+   "start": 1092.74,
+   "dur": 2.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_246.mp4"
+  },
+  {
+   "id": "247",
+   "start": 1095,
+   "dur": 11.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_247.mp4"
+  },
+  {
+   "id": "248",
+   "start": 1106.06,
+   "dur": 2.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_248.mp4"
+  },
+  {
+   "id": "249",
+   "start": 1108.4,
+   "dur": 2.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_249.mp4"
+  },
+  {
+   "id": "250",
+   "start": 1110.82,
+   "dur": 2.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_250.mp4"
+  },
+  {
+   "id": "251",
+   "start": 1113.06,
+   "dur": 9.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_251.mp4"
+  },
+  {
+   "id": "252",
+   "start": 1122.2,
+   "dur": 8.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_252.mp4"
+  },
+  {
+   "id": "253",
+   "start": 1130.48,
+   "dur": 3.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_253.mp4"
+  },
+  {
+   "id": "254",
+   "start": 1133.78,
+   "dur": 3.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_254.mp4"
+  },
+  {
+   "id": "255",
+   "start": 1137.08,
+   "dur": 2.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_255.mp4"
+  },
+  {
+   "id": "cmp_42_avatarkeyword",
+   "start": 1137.08,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "avatarkeyword",
+   "items": [
+    {
+     "card": "Even",
+     "sub": "the word I had been failing to find for eleven days",
+     "at": 0
+    }
+   ]
+  },
+  {
+   "id": "256",
+   "start": 1139.38,
+   "dur": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_256.mp4"
+  },
+  {
+   "id": "257",
+   "start": 1142.34,
+   "dur": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_257.mp4"
+  },
+  {
+   "id": "259",
+   "start": 1147.54,
+   "dur": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_259.mp4"
+  },
+  {
+   "id": "260",
+   "start": 1150.82,
+   "dur": 7.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_260.mp4"
+  },
+  {
+   "id": "261",
+   "start": 1158.68,
+   "dur": 7.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_261.mp4"
+  },
+  {
+   "id": "263",
+   "start": 1165.8,
+   "dur": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_263.mp4"
+  },
+  {
+   "id": "264",
+   "start": 1168.5,
+   "dur": 3.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_264.mp4"
+  },
+  {
+   "id": "265",
+   "start": 1172.04,
+   "dur": 4.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_265.mp4"
+  },
+  {
+   "id": "266",
+   "start": 1176.7,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_266.mp4"
+  },
+  {
+   "id": "267",
+   "start": 1185.2,
+   "dur": 3.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_267.mp4"
+  },
+  {
+   "id": "cmp_43_bars",
+   "start": 1185.2,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "bars",
+   "title": "How long the morning puffiness lasted",
+   "unit": "min",
+   "bars": [
+    {
+     "label": "Before",
+     "value": 100,
+     "note": "about two hours, every morning of my life"
+    },
+    {
+     "label": "Second week",
+     "value": 17,
+     "winner": true,
+     "note": "twenty minutes, consistently"
+    }
+   ]
+  },
+  {
+   "id": "268",
+   "start": 1188.82,
+   "dur": 3.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_268.mp4"
+  },
+  {
+   "id": "269",
+   "start": 1192.56,
+   "dur": 5.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_269.mp4"
+  },
+  {
+   "id": "270",
+   "start": 1197.64,
+   "dur": 4.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_270.mp4"
+  },
+  {
+   "id": "271",
+   "start": 1202.16,
+   "dur": 7.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_271.mp4"
+  },
+  {
+   "id": "cmp_44_checklist",
+   "start": 1202.16,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "eyebrow": "The honest limits",
+   "title": "What fourteen nights did NOT do",
+   "items": [
+    {
+     "text": "The lines from my nose to my mouth are exactly where they were",
+     "state": "danger"
+    },
+    {
+     "text": "The vertical one between my eyebrows is exactly where it was",
+     "state": "danger"
+    },
+    {
+     "text": "Nothing pressed onto the surface reaches a fold made of forty years",
+     "state": "danger"
+    },
+    {
+     "text": "And no, it is not a substitute for sun protection",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "272",
+   "start": 1209.22,
+   "dur": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_272.mp4"
+  },
+  {
+   "id": "273",
+   "start": 1214.14,
+   "dur": 7.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_273.mp4"
+  },
+  {
+   "id": "274",
+   "start": 1221.16,
+   "dur": 7.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_274.mp4"
+  },
+  {
+   "id": "276",
+   "start": 1228.72,
+   "dur": 4.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_276.mp4"
+  },
+  {
+   "id": "277",
+   "start": 1233.2,
+   "dur": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_277.mp4"
+  },
+  {
+   "id": "278",
+   "start": 1236.8,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_278.mp4"
+  },
+  {
+   "id": "cmp_45_splitlist",
+   "start": 1236.8,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "The honest list",
+   "items": [
+    "Texture and evenness - not shiny, not dull",
+    "The dullness and the papery look on the backs of my hands",
+    "Two hours of morning puffiness down to about twenty minutes"
+   ]
+  },
+  {
+   "id": "279",
+   "start": 1239.82,
+   "dur": 5.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_279.mp4"
+  },
+  {
+   "id": "281",
+   "start": 1245.34,
+   "dur": 5.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_281.mp4"
+  },
+  {
+   "id": "282",
+   "start": 1251,
+   "dur": 7.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_282.mp4"
+  },
+  {
+   "id": "283",
+   "start": 1258.54,
+   "dur": 5.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_283.mp4"
+  },
+  {
+   "id": "284",
+   "start": 1263.86,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_284.mp4"
+  },
+  {
+   "id": "cmp_46_rule",
+   "start": 1263.86,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "07",
+   "title": "THE APPOINTMENT"
+  },
+  {
+   "id": "285",
+   "start": 1266.88,
+   "dur": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_285.mp4"
+  },
+  {
+   "id": "286",
+   "start": 1270.16,
+   "dur": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_286.mp4"
+  },
+  {
+   "id": "287",
+   "start": 1273.2,
+   "dur": 2.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_287.mp4"
+  },
+  {
+   "id": "288",
+   "start": 1275.56,
+   "dur": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_288.mp4"
+  },
+  {
+   "id": "289",
+   "start": 1278.68,
+   "dur": 6.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_289.mp4"
+  },
+  {
+   "id": "290",
+   "start": 1284.86,
+   "dur": 2.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_290.mp4"
+  },
+  {
+   "id": "cmp_47_quote",
+   "start": 1284.86,
+   "dur": 6,
+   "key": "s",
+   "kind": "quote",
+   "text": "The tightening is a film. The peel off sensation is the oldest and most profitable illusion in the business.",
+   "author": "The dermatologist, mid-appointment"
+  },
+  {
+   "id": "291",
+   "start": 1287.2,
+   "dur": 5.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_291.mp4"
+  },
+  {
+   "id": "293",
+   "start": 1293.16,
+   "dur": 3.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_293.mp4"
+  },
+  {
+   "id": "294",
+   "start": 1297.14,
+   "dur": 4.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_294.mp4"
+  },
+  {
+   "id": "296",
+   "start": 1301.2,
+   "dur": 4.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_296.mp4"
+  },
+  {
+   "id": "297",
+   "start": 1305.94,
+   "dur": 4.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_297.mp4"
+  },
+  {
+   "id": "cmp_48_callout",
+   "start": 1305.94,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "=",
+   "eyebrow": "Strawberry, egg white, gelatin",
+   "caption": "Any of them would have given me the same night four. The injury was mechanical - it was never the banana",
+   "medico": true
+  },
+  {
+   "id": "298",
+   "start": 1310.54,
+   "dur": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_298.mp4"
+  },
+  {
+   "id": "299",
+   "start": 1314.34,
+   "dur": 7.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_299.mp4"
+  },
+  {
+   "id": "cmp_49_process",
+   "start": 1314.34,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "eyebrow": "What the doctor said",
+   "title": "His three warnings",
+   "steps": [
+    {
+     "title": "Latex cross reaction",
+     "body": "banana sits on that list with avocado, chestnut and kiwi"
+    },
+    {
+     "title": "The skin is the sprayed part",
+     "body": "wash it, warm water, both sides, before it touches you"
+    },
+    {
+     "title": "On the bone, never the hollow",
+     "body": "orbital skin is a fraction of the thickness and has almost no oil glands"
+    }
+   ]
+  },
+  {
+   "id": "300",
+   "start": 1322.18,
+   "dur": 2.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_300.mp4"
+  },
+  {
+   "id": "301",
+   "start": 1324.98,
+   "dur": 4.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_301.mp4"
+  },
+  {
+   "id": "302",
+   "start": 1329.36,
+   "dur": 4.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_302.mp4"
+  },
+  {
+   "id": "303",
+   "start": 1333.78,
+   "dur": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_303.mp4"
+  },
+  {
+   "id": "304",
+   "start": 1336.34,
+   "dur": 2.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_304.mp4"
+  },
+  {
+   "id": "305",
+   "start": 1338.54,
+   "dur": 7.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_305.mp4"
+  },
+  {
+   "id": "306",
+   "start": 1345.6,
+   "dur": 3.45,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_306.mp4"
+  },
+  {
+   "id": "307",
+   "start": 1349.05,
+   "dur": 5.17,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_307.mp4"
+  },
+  {
+   "id": "cmp_50_checklist",
+   "start": 1352.5,
+   "dur": 9,
+   "key": "s",
+   "kind": "checklist",
+   "eyebrow": "Safety",
+   "title": "Read this bit before you try it",
+   "items": [
+    {
+     "text": "Patch test on the inside of your forearm and leave it a full DAY",
+     "state": "done"
+    },
+    {
+     "text": "Ever reacted to latex gloves or party balloons? This one is not for you",
+     "state": "danger"
+    },
+    {
+     "text": "Wash the banana - warm water, both sides - before anything touches your face",
+     "state": "done"
+    },
+    {
+     "text": "The bone under your eye is as close as you EVER go",
+     "state": "danger"
+    },
+    {
+     "text": "Broken, angry or eczema skin - not right now",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "309",
+   "start": 1354.22,
+   "dur": 2.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_309.mp4"
+  },
+  {
+   "id": "310",
+   "start": 1356.96,
+   "dur": 8.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_310.mp4"
+  },
+  {
+   "id": "311",
+   "start": 1365.76,
+   "dur": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_311.mp4"
+  },
+  {
+   "id": "312",
+   "start": 1368.6,
+   "dur": 4.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_312.mp4"
+  },
+  {
+   "id": "313",
+   "start": 1372.62,
+   "dur": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_313.mp4"
+  },
+  {
+   "id": "cmp_51_blurexplainer",
+   "start": 1372.62,
+   "dur": 7,
+   "key": "s",
+   "kind": "blurexplainer",
+   "clip": "broll/grbanana_313.mp4",
+   "image": "img/grbanana_h_312.jpg",
+   "side": "left",
+   "eyebrow": "The part I had never thought about",
+   "title": "The peel is the sprayed half",
+   "body": "The fruit inside is protected - that is what a peel is for. I had been pressing the sprayed side of a supermarket banana against my face without running it under a tap."
+  },
+  {
+   "id": "314",
+   "start": 1375.44,
+   "dur": 12.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_314.mp4"
+  },
+  {
+   "id": "315",
+   "start": 1388,
+   "dur": 4.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_315.mp4"
+  },
+  {
+   "id": "317",
+   "start": 1392.9,
+   "dur": 8.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_317.mp4"
+  },
+  {
+   "id": "318",
+   "start": 1401.36,
+   "dur": 3.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_318.mp4"
+  },
+  {
+   "id": "319",
+   "start": 1404.42,
+   "dur": 4.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_319.mp4"
+  },
+  {
+   "id": "320",
+   "start": 1409.3,
+   "dur": 4.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_320.mp4"
+  },
+  {
+   "id": "321",
+   "start": 1413.64,
+   "dur": 5.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_321.mp4"
+  },
+  {
+   "id": "322",
+   "start": 1419.32,
+   "dur": 2.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_322.mp4"
+  },
+  {
+   "id": "323",
+   "start": 1421.44,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_323.mp4"
+  },
+  {
+   "id": "324",
+   "start": 1426.94,
+   "dur": 2.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_324.mp4"
+  },
+  {
+   "id": "cmp_52_rule",
+   "start": 1426.94,
+   "dur": 6,
+   "key": "s",
+   "kind": "rule",
+   "number": "08",
+   "title": "THE CLOCK"
+  },
+  {
+   "id": "325",
+   "start": 1429.16,
+   "dur": 7.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_325.mp4"
+  },
+  {
+   "id": "326",
+   "start": 1436.82,
+   "dur": 6.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_326.mp4"
+  },
+  {
+   "id": "cmp_53_callout",
+   "start": 1441.16,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "callout",
+   "figure": "100x",
+   "eyebrow": "Dopamine, in the skin of a banana",
+   "caption": "Not there to make anything happy - plants have no interest in your mood. It is there because it is a very powerful antioxidant",
+   "medico": true
+  },
+  {
+   "id": "328",
+   "start": 1443.24,
+   "dur": 5.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_328.mp4"
+  },
+  {
+   "id": "329",
+   "start": 1448.94,
+   "dur": 6.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_329.mp4"
+  },
+  {
+   "id": "330",
+   "start": 1454.98,
+   "dur": 4.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_330.mp4"
+  },
+  {
+   "id": "331",
+   "start": 1459.08,
+   "dur": 3.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_331.mp4"
+  },
+  {
+   "id": "332",
+   "start": 1462.46,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_332.mp4"
+  },
+  {
+   "id": "333",
+   "start": 1465.64,
+   "dur": 5.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_333.mp4"
+  },
+  {
+   "id": "cmp_54_bars",
+   "start": 1465.64,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "bars",
+   "title": "Dopamine, milligrams per hundred grams",
+   "unit": "mg",
+   "bars": [
+    {
+     "label": "The peel",
+     "value": 100,
+     "winner": true,
+     "note": "80 to 560"
+    },
+    {
+     "label": "The fruit",
+     "value": 2,
+     "note": "2.5 to 10"
+    }
+   ]
+  },
+  {
+   "id": "334",
+   "start": 1471.22,
+   "dur": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_334.mp4"
+  },
+  {
+   "id": "335",
+   "start": 1476.46,
+   "dur": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_335.mp4"
+  },
+  {
+   "id": "336",
+   "start": 1479.28,
+   "dur": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_336.mp4"
+  },
+  {
+   "id": "337",
+   "start": 1482.72,
+   "dur": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_337.mp4"
+  },
+  {
+   "id": "cmp_55_avatarpizarra",
+   "start": 1482.72,
+   "dur": 10.2,
+   "key": "s",
+   "kind": "avatarpizarra",
+   "items": [
+    {
+     "card": "1 - You tear it, and the tissue opens",
+     "sub": "an enzyme inside meets the air for the first time",
+     "at": 0
+    },
+    {
+     "card": "2 - It converts the compounds to pigment",
+     "sub": "that is what the brown actually is",
+     "at": 90
+    },
+    {
+     "card": "3 - So the browning is the spending",
+     "sub": "watch the torn edge go grey and tan while you finish your tea",
+     "at": 180
+    }
+   ]
+  },
+  {
+   "id": "338",
+   "start": 1485.28,
+   "dur": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_338.mp4"
+  },
+  {
+   "id": "339",
+   "start": 1487.98,
+   "dur": 3.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_339.mp4"
+  },
+  {
+   "id": "340",
+   "start": 1491.92,
+   "dur": 3.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_340.mp4"
+  },
+  {
+   "id": "341",
+   "start": 1495.86,
+   "dur": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_341.mp4"
+  },
+  {
+   "id": "342",
+   "start": 1498.58,
+   "dur": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_342.mp4"
+  },
+  {
+   "id": "343",
+   "start": 1501.54,
+   "dur": 4.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_343.mp4"
+  },
+  {
+   "id": "344",
+   "start": 1506.36,
+   "dur": 3.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_344.mp4"
+  },
+  {
+   "id": "345",
+   "start": 1509.44,
+   "dur": 4.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_345.mp4"
+  },
+  {
+   "id": "cmp_56_frasecinetica",
+   "start": 1509.44,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    "The brown",
+    "is the receipt."
+   ],
+   "tone": "gold"
+  },
+  {
+   "id": "346",
+   "start": 1513.76,
+   "dur": 3.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_346.mp4"
+  },
+  {
+   "id": "347",
+   "start": 1517.46,
+   "dur": 3.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_347.mp4"
+  },
+  {
+   "id": "348",
+   "start": 1520.64,
+   "dur": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_348.mp4"
+  },
+  {
+   "id": "350",
+   "start": 1525.88,
+   "dur": 4.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_350.mp4"
+  },
+  {
+   "id": "351",
+   "start": 1529.96,
+   "dur": 8.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_351.mp4"
+  },
+  {
+   "id": "352",
+   "start": 1538.16,
+   "dur": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_352.mp4"
+  },
+  {
+   "id": "cmp_57_mitoverdad",
+   "start": 1538.16,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "mythLabel": "WHAT YOU ARE TOLD",
+   "truthLabel": "WHAT ACTUALLY HAPPENS",
+   "myth": "Use the brownest, ripest, most speckled banana you can find",
+   "truth": "A peel that has gone brown has already spent it. Yellow, with a few freckles.",
+   "flipAt": 82
+  },
+  {
+   "id": "353",
+   "start": 1542.72,
+   "dur": 3.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_353.mp4"
+  },
+  {
+   "id": "354",
+   "start": 1545.98,
+   "dur": 3.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_354.mp4"
+  },
+  {
+   "id": "355",
+   "start": 1549.94,
+   "dur": 4.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_355.mp4"
+  },
+  {
+   "id": "356",
+   "start": 1554.54,
+   "dur": 2.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_356.mp4"
+  },
+  {
+   "id": "357",
+   "start": 1557.12,
+   "dur": 2.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_357.mp4"
+  },
+  {
+   "id": "358",
+   "start": 1559.7,
+   "dur": 2.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_358.mp4"
+  },
+  {
+   "id": "cmp_58_ingredientduo",
+   "start": 1559.7,
+   "dur": 7,
+   "key": "s",
+   "kind": "ingredientduo",
+   "leftImg": "img/grbanana_h_357.jpg",
+   "rightImg": "img/grbanana_h_355.jpg"
+  },
+  {
+   "id": "359",
+   "start": 1562,
+   "dur": 4.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_359.mp4"
+  },
+  {
+   "id": "360",
+   "start": 1566.94,
+   "dur": 2.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_360.mp4"
+  },
+  {
+   "id": "361",
+   "start": 1569.38,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_361.mp4"
+  },
+  {
+   "id": "362",
+   "start": 1571.56,
+   "dur": 5.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_362.mp4"
+  },
+  {
+   "id": "363",
+   "start": 1576.62,
+   "dur": 17.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_363.mp4"
+  },
+  {
+   "id": "cmp_59_guardaesto",
+   "start": 1576.62,
+   "dur": 9,
+   "key": "s",
+   "kind": "guardaesto",
+   "title": "The whole thing, in four lines",
+   "tag": "Golden Remedies",
+   "prompt": "Save this",
+   "items": [
+    "1 - Ripe, not brown. Yellow with a few freckles. Wash it first.",
+    "2 - Tear it and use it within a few minutes. Fresh piece, never the one that has been lying there.",
+    "3 - Press it on. Never rub. On the bone under the eye, never in the hollow.",
+    "4 - Seven or eight minutes, off while still wet, then a plain lid on damp skin. Every other night."
+   ]
+  },
+  {
+   "id": "365",
+   "start": 1594.14,
+   "dur": 4.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_365.mp4"
+  },
+  {
+   "id": "367",
+   "start": 1598.92,
+   "dur": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_367.mp4"
+  },
+  {
+   "id": "369",
+   "start": 1602.48,
+   "dur": 4.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_369.mp4"
+  },
+  {
+   "id": "370",
+   "start": 1607.36,
+   "dur": 3.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_370.mp4"
+  },
+  {
+   "id": "cmp_60_lowerthird",
+   "start": 1607.36,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "The exact method is in the DESCRIPTION",
+   "kicker": "GOLDEN REMEDIES",
+   "tag": "GOLDEN REMEDIES",
+   "desc": "Ripeness, how big a piece, how many minutes, which side, what goes over it and how many nights a week - with the patch test at the top.",
+   "tone": "teal"
+  },
+  {
+   "id": "371",
+   "start": 1610.74,
+   "dur": 5.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_371.mp4"
+  },
+  {
+   "id": "372",
+   "start": 1615.8,
+   "dur": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_372.mp4"
+  },
+  {
+   "id": "373",
+   "start": 1618.84,
+   "dur": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_373.mp4"
+  },
+  {
+   "id": "374",
+   "start": 1621.4,
+   "dur": 4.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_374.mp4"
+  },
+  {
+   "id": "375",
+   "start": 1625.52,
+   "dur": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_375.mp4"
+  },
+  {
+   "id": "376",
+   "start": 1628.48,
+   "dur": 8.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_376.mp4"
+  },
+  {
+   "id": "378",
+   "start": 1636.58,
+   "dur": 6.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_378.mp4"
+  },
+  {
+   "id": "379",
+   "start": 1642.86,
+   "dur": 3.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_379.mp4"
+  },
+  {
+   "id": "380",
+   "start": 1646.32,
+   "dur": 4.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_380.mp4"
+  },
+  {
+   "id": "381",
+   "start": 1650.4,
+   "dur": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_381.mp4"
+  },
+  {
+   "id": "cmp_61_chips",
+   "start": 1650.4,
+   "dur": 6,
+   "key": "s",
+   "kind": "chips",
+   "title": "Next time - the papery brown skins on an onion",
+   "eyebrow": "Coming next",
+   "image": "img/grbanana_h_381.jpg",
+   "chips": [
+    "The bit that falls off on the board",
+    "Many times more of it in the paper than in the whole onion",
+    "And it is sold in capsules in every health shop"
+   ]
+  },
+  {
+   "id": "382",
+   "start": 1654.96,
+   "dur": 2.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_382.mp4"
+  },
+  {
+   "id": "383",
+   "start": 1657.06,
+   "dur": 10.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_383.mp4"
+  },
+  {
+   "id": "384",
+   "start": 1667.22,
+   "dur": 3.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_384.mp4"
+  },
+  {
+   "id": "385",
+   "start": 1670.54,
+   "dur": 8.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_385.mp4"
+  },
+  {
+   "id": "386",
+   "start": 1678.72,
+   "dur": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_386.mp4"
+  },
+  {
+   "id": "cmp_62_nametag",
+   "start": 1678.72,
+   "dur": 6,
+   "key": "s",
+   "kind": "nametag",
+   "name": "Golden Remedies",
+   "role": "The remedies nobody could sell you - every week",
+   "image": "img/grbanana_hero_01.jpg"
+  },
+  {
+   "id": "387",
+   "start": 1683.64,
+   "dur": 5.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/grbanana_387.mp4"
+  }
+ ]
+}

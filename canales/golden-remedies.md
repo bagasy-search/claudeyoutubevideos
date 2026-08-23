@@ -112,3 +112,33 @@ como autoridad clínica: la autoridad la aporta *el médico al que consulta* den
   luminancia 0-23 contra 37-109). Los ambientes de cuarto oscuro salen negros en clip y bien en foto
   → conviene degradarlos a foto en vez de regenerar. Y los **macros extremos de piel** ("very close
   view of a lower eyelid") salen con textura pustulosa/uncanny: abrir el plano a la CARA.
+
+- **2026-08-23** — **COSTO gpt-image en este canal.** El unico gasto real por video son las fotos
+  HERO de la presentadora: agnes NO puede hacer su cara (no acepta referencia de imagen), asi que
+  van si o si por `gen_images_ref.mjs` con `OPENAI_IMAGE_QUALITY=low`. En `grvaseline` fueron **14**.
+  Dos palancas medidas para bajarlo:
+  1. **BIBLIOTECA DE HERO POR CANAL** (la grande, pendiente): la casa es FIJA (misma cocina, mismo
+     bano, misma mesa) y las poses se repiten en todos los videos — "en el lavabo", "frente al
+     espejo", "sentada a la mesa mirando a camara", "en el borde de la banera". Generar ~30 UNA vez,
+     etiquetarlas, y reusarlas -> el costo marginal por video baja a casi cero y solo se generan las
+     2-4 poses realmente especificas del video.
+  2. **REFERENCIA CHICA**: se estaba mandando el frame Full HD del avatar (1,7 MB) en CADA llamada.
+     Con `/images/edits` la referencia se cobra como tokens de ENTRADA, y el script solo loguea los
+     de salida, asi que ese gasto era invisible. Usar `ref_<slug>_small.png` (recorte cara+hombros
+     a 768x768) — misma identidad, la mitad del peso.
+
+- **2026-08-23** — ⛔⛔ **EL AVATAR PUEDE VENIR CON OTRA VOZ, NO CON LA MÍA.** En `grcoffee` el
+  generador de avatar **re-sintetizó la locución un 23% más lenta** (150 wpm contra 177) en vez de
+  lipsyncarla sobre el wav que le pasé. Mismas palabras, otro timing: muxear mi master encima
+  calzaba sólo en el segundo 0 y a los 30s ya iba 2,4s corrido. Se descubrió **con el video ya
+  entregado**, y el creador lo marcó ("no entiendo pq al principio el avatar no está sincronizado").
+  **Correr SIEMPRE `node scripts/avatar_sync_gate.mjs <avatar.mp4> <master.wav>` antes de montar**
+  (2 min; dio 0.078 en el caso roto y 1.000 en el control).
+  **Fix sin regenerar el avatar** (el que se usó): master v2 = **audio PROPIO del avatar** en su
+  tramo + mi master desde la palabra equivalente, empalmados en un límite de oración y cada tramo
+  normalizado por separado a −14 LUFS. No hubo que reescribir NADA del montaje: los momentos y los
+  componentes se anclan por FRASE, así que el generador los re-ubicó solo sobre las captions nuevas.
+- **2026-08-23** — ⚠️ **No perseguir el 0,2% del farm.** El mp4 del farm dura ~0,195% más que la
+  composición (60 chunks × ~57 ms de padding del AAC). Medido sobre el mp4 final contra el wav
+  fuente parece deriva de lipsync (+3,0s a los 25 min), pero se estiran los DOS streams casi igual
+  (video 0,1937% · audio 0,1963%) → desfase A/V **real de 9 ms**. Imperceptible. Lo tienen todos.

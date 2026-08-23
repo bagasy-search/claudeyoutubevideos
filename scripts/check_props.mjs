@@ -41,7 +41,7 @@ const CONTRACT = {
   nametag:       { assets: ["image"] },
   guardaesto:    { req: ["items"], arrayOfString: ["items"] },
   avatarpizarra: { req: ["items"], itemKey: { items: "card" } },
-  mitoverdad:    { req: ["mito", "verdad"] },
+  mitoverdad:    { req: ["myth", "truth"] },   // _fed6/scenes/MitoVerdad.tsx usa myth/truth (el contrato viejo en ES era de otro kit)
   quote:         { req: ["text"] },
   callout:       { req: ["caption"] },
   rule:          { req: ["title"] },
