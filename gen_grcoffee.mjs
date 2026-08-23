@@ -192,6 +192,11 @@ const I = (n) => `img/${SLUG}_${n}.jpg`;
 // ⛔ NO se usa `board`: deja el avatar VISIBLE al costado y este avatar es un BUCLE — pasada la
 //    costura mostraria la cara fuera de sincro. Tampoco `diagram` (diagramFor es por concepto y
 //    devuelve el diagrama de otro video si el concepto no matchea).
+// ⚠ ORDEN CRONOLOGICO OBLIGATORIO: el generador busca cada `phrase` con un cursor que solo
+// avanza (findMs(spec.phrase, cmpCursor)). Un componente fuera de orden NO ancla y se pierde.
+// ⛔ NO se usa `board`: deja el avatar VISIBLE al costado y este avatar es un BUCLE — pasada la
+//    costura mostraria la cara fuera de sincro. Tampoco `diagram` (diagramFor es por concepto y
+//    devuelve el diagrama de otro video si el concepto no matchea).
 const CMP = [
   // ── EL SUJETO ────────────────────────────────────────────────────────────────
   { phrase: "one of the most common active", kind: "stat", eyebrow: "On the label of the jar you already own",
@@ -217,7 +222,7 @@ const CMP = [
     { label: "Most of your face", value: 100, note: "about 2 mm" },
     { label: "Under your eye", value: 25, tone: "danger", winner: true, note: "closer to half a millimetre" },
   ] },
-  { phrase: "like ink through a sheet", kind: "blurexplainer", image: I("044"), side: "right",
+  { phrase: "like ink through a sheet", kind: "blurexplainer", clip: "broll/grcoffee_042.mp4", image: I("044"), side: "right",
     eyebrow: "Why the dark circle is dark", title: "You are not looking at a stain",
     body: "You are looking at the blood in the vessels underneath, showing through skin thin enough to see through." },
   { phrase: "largest sources of polyphenols", kind: "stat", eyebrow: "Chlorogenic acid survives in the spent grounds",
@@ -257,7 +262,7 @@ const CMP = [
     value: "5", label: "Not the puffiness this time. Texture. Smoother under my fingers, less like paper." },
   { phrase: "day six is the day somebody", kind: "callout", figure: "“", eyebrow: "Day 6 — my sister, who never says it",
     caption: "Have you changed something? You look less tired.", medico: true },
-  { phrase: "my mother never threw coffee grounds out", kind: "blurexplainer", image: I("155"), side: "left",
+  { phrase: "my mother never threw coffee grounds out", kind: "blurexplainer", clip: "broll/grcoffee_154.mp4", image: I("155"), side: "left",
     eyebrow: "She never called it face care", title: "The roses drank coffee before she did",
     body: "She gardened bare-handed her whole life, and I remember her hands being soft. I always assumed that was luck." },
   { phrase: "the puffiness was down", kind: "chips", title: "Day 7 — the honest result",
@@ -288,7 +293,7 @@ const CMP = [
   ] },
   { phrase: "if your circles are brown", kind: "callout", figure: "≠", eyebrow: "Brown is pigment, not blood",
     caption: "Genetic or sun. Coffee grounds will do very little for it — and you deserve to know before you spend a month hoping.", medico: true },
-  { phrase: "look in the mirror with a lamp", kind: "blurexplainer", image: I("217"), side: "right",
+  { phrase: "look in the mirror with a lamp", kind: "blurexplainer", clip: "broll/grcoffee_216.mp4", image: I("217"), side: "right",
     eyebrow: "The 10-second test you can do tonight", title: "Hold a lamp below your face",
     body: "If the darkness fills in and vanishes, it was never a stain. It was a shadow — and no kitchen remedy casts light into a hollow." },
   { phrase: "the timeline as i actually experienced it", kind: "process", title: "What changes, and when", steps: [
@@ -347,7 +352,7 @@ const CMP = [
     myth: "Massage it in circles for two minutes, really work it in",
     truth: "It is a MASK, not a scrub. Press it on and leave it alone",
     flipPhrase: "it is not a scrub it is a mask" },
-  { phrase: "not a little round bead", kind: "blurexplainer", image: I("290"), side: "left",
+  { phrase: "not a little round bead", kind: "blurexplainer", clip: "broll/grcoffee_291.mp4", image: I("290"), side: "left",
     eyebrow: "Under any magnification", title: "A coffee ground is a shard",
     body: "Irregular, hard-edged, broken — like tiny gravel. Dragged across your face for two minutes it does not exfoliate, it tears." },
   { phrase: "torn open in", kind: "callout", figure: "120s", eyebrow: "A barrier you spent a week helping",
