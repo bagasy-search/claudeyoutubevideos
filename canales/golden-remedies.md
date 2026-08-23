@@ -5,7 +5,11 @@
 >
 > 📌 Esto **no es una biografía ficticia**. No inventes familia, edad ni vida personal.
 
-Canal **EN-US**, remedios caseros para piel/salud, público **+55/60**. Bagasy `draft:scn3l7x` (role own).
+Canal **EN-US**, remedios caseros para piel/salud, público **+55/60**.
+⚠️ **Bagasy: el canal YA NO es borrador.** La clave es
+`https://www.youtube.com/channel/UC2LXyiJ4NcO9CIyTC4D4pag` — `draft:scn3l7x` quedó obsoleta y
+`deliver_card.mjs` sale con "canal no encontrado". Verificar la clave en `tracked_channels`
+ANTES de entregar (`select=channel_key,name&role=eq.own`).
 Presentadora: **mujer ~55, primera persona, testimonial confesional** — NO es médica, no se presenta
 como autoridad clínica: la autoridad la aporta *el médico al que consulta* dentro de la historia.
 
@@ -35,6 +39,8 @@ como autoridad clínica: la autoridad la aporta *el médico al que consulta* den
 | Fecha | Video | Gancho usado |
 |---|---|---|
 | 2026-08-23 | `grcoffee` — I Rubbed Coffee on My Face for 7 Days | Los posos de café que tirás tienen más del compuesto activo que la crema de ojos de $80 |
+| 2026-08-23 | `grbanana` — Banana Peel on Your Wrinkles? | La cáscara de banana que tirás tiene 100× más del antioxidante que frena el pardeamiento que la fruta que te comiste |
+| 2026-08-23 | `grvaseline` — Why Do Doctors NEVER Tell You to Rub Vaseline Here at Night? | El pote azul de vaselina frena el 98% del agua que se te va de la cara de noche; el frasco de tapa dorada, 20-30 |
 
 ## 2. VOZ — cómo suena
 
@@ -142,3 +148,37 @@ como autoridad clínica: la autoridad la aporta *el médico al que consulta* den
   composición (60 chunks × ~57 ms de padding del AAC). Medido sobre el mp4 final contra el wav
   fuente parece deriva de lipsync (+3,0s a los 25 min), pero se estiran los DOS streams casi igual
   (video 0,1937% · audio 0,1963%) → desfase A/V **real de 9 ms**. Imperceptible. Lo tienen todos.
+
+- **2026-08-23** — ✅ **`grvaseline` ENTREGADO** (job 217, tarjeta `k26it9s`, 37:46). Avatar PARCIAL
+  en bucle: 10:30.6 de 37:46. Aprendizajes del montaje, todos con costo medido:
+  - ⛔ **`MitoVerdad` lee `myth`/`truth`, NO `mito`/`verdad`** — y sus etiquetas por defecto son
+    `"MITO"`/`"LA VERDAD"`, que en este canal EN hay que pisar con `mythLabel`/`truthLabel`. Con las
+    props mal, las 4 tarjetas salieron **VACÍAS y el chunk en VERDE**. Es el fallo más caro porque
+    no aparece en ningún log. Lo caza `node scripts/check_props.mjs <slug> <Main>`, que ahora valida
+    que cada prop del beat aparezca como `b.<prop>` en el Main o `beat.<prop>` en los renderers.
+  - ⛔ **`BlurExplainer` exige `clip` ADEMÁS de `image`** (el video borroso del fondo). Sin él,
+    `staticFile(undefined)` mata todos los chunks que lo contengan.
+  - ⛔ **RELLENO POST-COSTURA, obligatorio con avatar parcial.** Pasada la costura la boca no calza.
+    Medido en la 1ª entrega: **16,1% del tramo posterior (4m22s) con la cara sola**, 39 tramos de
+    ≥2,5s y el mayor de **12,4s**. Se tapa cada hueco con la FOTO del beat más cercano → **5,2% y
+    CERO tramos ≥2,5s**. ANTES de la costura NO se toca (39% de avatar solo está bien: ahí sincroniza).
+  - ⛔ **agnes-VIDEO: medir la luminancia al FINAL del clip, no sólo al principio** (`_v3/measure_tail.py`).
+    Varios empiezan bien y se apagan (59 → 17). Y sobre el MP4 rendido, `blackdetect` + barrido de
+    luminancia: 6 clips oscuros pasaron los filtros previos y se veían negros en pantalla.
+  - ℹ️ **NO son bugs** aunque lo parezcan en un frame suelto: `BarCompare` tiene un movimiento de
+    cámara que recorre las barras (a mitad se ve cortado, resuelve encuadrado), y el `body` de
+    `BlurExplainer` se escribe con efecto de tipeo (1,4 chars/frame desde el segundo 1).
+
+- **2026-08-23** — ⛔ **Al clonar un `Main_*.tsx` hay DOS cosas que se renderizan FUERA del beatsheet** y por eso
+  `check_props`, `density_gate` y `gap_gate` son ciegos a ellas: el **HOOK** (`AvatarScrimText`, `<Sequence>` a
+  mano con el texto escrito duro) y el **ENDCARD** (`<Endcard/>` sin props). En `grbanana` el hook salió con el
+  texto de `grcoffee` ("COFFEE ON MY FACE") y el endcard con el default del kit, que es **"DR. FEDERER /
+  Suscríbete / Cada semana, salud y vitalidad real para después de los 40"** — en español, en un canal inglés.
+  Los agarró el AUDITOR mirando frames, no las compuertas. **Al clonar: pisar los dos SIEMPRE**
+  (`kicker`/`title`/`subtitle`/`cta` del Endcard y setup/impact del hook). `grcoffee` se entregó con este bug.
+- **2026-08-23** — `MitoVerdad` de `_fed6` usa `myth`/`truth` (el contrato de `check_props` decía `mito`/`verdad`,
+  de otro kit) y sus etiquetas defaultean a **"MITO"/"LA VERDAD"**: en un canal EN hay que pasar
+  `mythLabel`/`truthLabel` **y** que el Main los reenvíe. Ya está arreglado en `Main_grbanana`.
+- **2026-08-23** — Cuota de agnes con OTRA tanda corriendo: los primeros 10 clips costaron 143 "cola llena" y
+  115 rate-limits. Sola, la tanda rinde ~3-4 clips/min (388 clips ≈ 100 min). Mirar si hay otra tanda ANTES de
+  prometer un plazo.
