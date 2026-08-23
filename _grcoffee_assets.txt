@@ -330,8 +330,6 @@ img/grcoffee_044.jpg
 img/grcoffee_044_blur.jpg
 img/grcoffee_047.jpg
 img/grcoffee_047_blur.jpg
-img/grcoffee_057.jpg
-img/grcoffee_057_blur.jpg
 img/grcoffee_084.jpg
 img/grcoffee_084_blur.jpg
 img/grcoffee_086.jpg
@@ -360,8 +358,6 @@ img/grcoffee_217.jpg
 img/grcoffee_217_blur.jpg
 img/grcoffee_254.jpg
 img/grcoffee_254_blur.jpg
-img/grcoffee_266.jpg
-img/grcoffee_266_blur.jpg
 img/grcoffee_290.jpg
 img/grcoffee_290_blur.jpg
 img/grcoffee_306.jpg

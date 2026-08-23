@@ -5,7 +5,7 @@ import fs from "fs";
 import { spawnSync } from "child_process";
 
 const SLUG = "grcoffee";
-const VIDEO_END = 1643.32;         // = largo real del master.wav de Fish
+const VIDEO_END = 1704.83;        // master v2 = audio PROPIO del avatar (0-331.26s, lipsync real) + Fish desde 269.74s
 const AVATAR_CYCLE = 331.6;        // el avatar cubre 5:31.6 de 27:23 -> BUCLE, cortes en multiplos
 
 const probeDur = (p) => {
@@ -202,6 +202,11 @@ const I = (n) => `img/${SLUG}_${n}.jpg`;
 // ⛔ NO se usa `board`: deja el avatar VISIBLE al costado y este avatar es un BUCLE — pasada la
 //    costura mostraria la cara fuera de sincro. Tampoco `diagram` (diagramFor es por concepto y
 //    devuelve el diagrama de otro video si el concepto no matchea).
+// ⚠ ORDEN CRONOLOGICO OBLIGATORIO: el generador busca cada `phrase` con un cursor que solo
+// avanza (findMs(spec.phrase, cmpCursor)). Un componente fuera de orden NO ancla y se pierde.
+// ⛔ NO se usa `board`: deja el avatar VISIBLE al costado y este avatar es un BUCLE — pasada la
+//    costura mostraria la cara fuera de sincro. Tampoco `diagram` (diagramFor es por concepto y
+//    devuelve el diagrama de otro video si el concepto no matchea).
 const CMP = [
   // ── EL SUJETO ────────────────────────────────────────────────────────────────
   { phrase: "one of the most common active", kind: "stat", eyebrow: "On the label of the jar you already own",
@@ -301,7 +306,7 @@ const CMP = [
   { phrase: "look in the mirror with a lamp", kind: "blurexplainer", clip: "broll/grcoffee_216.mp4", image: I("217"), side: "right",
     eyebrow: "The 10-second test you can do tonight", title: "Hold a lamp below your face",
     body: "If the darkness fills in and vanishes, it was never a stain. It was a shadow — and no kitchen remedy casts light into a hollow." },
-  { phrase: "the timeline as i actually experienced it", kind: "process", eyebrow: "The timeline", title: "What changes, and when", steps: [
+  { phrase: "day two to day three the puffiness", kind: "process", eyebrow: "The timeline", title: "What changes, and when", steps: [
     { title: "Day 2–3", desc: "The puffiness. The fast one — and the reason you keep going." },
     { title: "Week 2", desc: "Texture. Smoother under your fingertips, before it is visible." },
     { title: "Week 4–6", desc: "Tone. The evenness other people notice before you do." },
