@@ -14,13 +14,22 @@ const [manifestArg, outArg] = process.argv.slice(2);
 const env = {};
 try {
   for (const l of fs.readFileSync(".env", "utf8").split(/\r?\n/)) {
-    const m = l.match(/^([A-Z_]+)\s*=\s*(.*)$/);
+    const m = l.match(/^([A-Z_0-9]+)\s*=\s*(.*)$/);
     if (m) env[m[1]] = m[2].replace(/^["']|["']$/g, "");
   }
 } catch {}
+// MOTOR: agnes (GRATIS) por defecto; AUDIT_ENGINE=openai vuelve a gpt-4.1-mini (pago).
+// Medido 23-ago-2026 (60 frames de grvaseline): 95% de acuerdo con gpt-4.1-mini, y de los 3
+// desacuerdos 2 eran falsos positivos de gpt. Ver skill `agnes-broll` §4.
+const ENGINE = (process.env.AUDIT_ENGINE || "agnes").toLowerCase();
+const AGNES_KS = (env.AGNES_KEYS || process.env.AGNES_KEYS || "").split(",").map((s) => s.trim()).filter(Boolean);
 const KEY = process.env.OPENAI_API_KEY || env.OPENAI_API_KEY;
-const MODEL = process.env.IMGAUDIT_MODEL || "gpt-4.1-mini";
-const CONC = +(process.env.IMGAUDIT_CONC || 12);
+const MODEL = process.env.IMGAUDIT_MODEL || (ENGINE === "agnes" ? "agnes-2.5-flash" : "gpt-4.1-mini");
+const CONC = +(process.env.IMGAUDIT_CONC || (ENGINE === "agnes" ? 10 : 12));
+const API = ENGINE === "agnes"
+  ? (env.AGNES_BASE_URL || "https://apihub.agnes-ai.com/v1") + "/chat/completions"
+  : "https://api.openai.com/v1/chat/completions";
+let ki = 0;
 
 const SYSTEM = `Sos un control de calidad de fotogramas para video. Mira SOLO una cosa: si en la
 imagen hay LETRAS, PALABRAS, NUMEROS, logos o marca de agua VISIBLES.
@@ -41,11 +50,14 @@ async function one(it) {
   catch { return { name: it.name, has_text: false, what: "sin archivo" }; }
   for (let a = 0; a < 3; a++) {
     try {
-      const r = await fetch("https://api.openai.com/v1/chat/completions", {
+      const auth = ENGINE === "agnes" ? AGNES_KS[(ki++) % AGNES_KS.length] : KEY;
+      const r = await fetch(API, {
         method: "POST",
-        headers: { Authorization: `Bearer ${KEY}`, "Content-Type": "application/json" },
+        headers: { Authorization: `Bearer ${auth}`, "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: MODEL, temperature: 0, response_format: { type: "json_object" },
+          model: MODEL, temperature: 0,
+          // agnes RAZONA antes del JSON: response_format lo trunca.
+          ...(ENGINE === "agnes" ? {} : { response_format: { type: "json_object" } }),
           messages: [
             { role: "system", content: SYSTEM },
             { role: "user", content: [{ type: "image_url", image_url: { url: `data:image/jpeg;base64,${b64}`, detail: "low" } }] },
@@ -54,7 +66,9 @@ async function one(it) {
       });
       if (!r.ok) { await new Promise((s) => setTimeout(s, 1500 * (a + 1))); continue; }
       const d = await r.json();
-      const j = JSON.parse(d.choices[0].message.content);
+      // agnes devuelve el JSON DESPUES del razonamiento -> recortarlo.
+      const content = d.choices?.[0]?.message?.content || "";
+      const j = JSON.parse((content.match(/\{[\s\S]*\}/) || ["{}"])[0]);
       return { name: it.name, has_text: !!j.has_text, what: j.what || "" };
     } catch { await new Promise((s) => setTimeout(s, 1500 * (a + 1))); }
   }
