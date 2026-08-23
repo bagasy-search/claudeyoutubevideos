@@ -197,10 +197,15 @@ const I = (n) => `img/${SLUG}_${n}.jpg`;
 // ⛔ NO se usa `board`: deja el avatar VISIBLE al costado y este avatar es un BUCLE — pasada la
 //    costura mostraria la cara fuera de sincro. Tampoco `diagram` (diagramFor es por concepto y
 //    devuelve el diagrama de otro video si el concepto no matchea).
+// ⚠ ORDEN CRONOLOGICO OBLIGATORIO: el generador busca cada `phrase` con un cursor que solo
+// avanza (findMs(spec.phrase, cmpCursor)). Un componente fuera de orden NO ancla y se pierde.
+// ⛔ NO se usa `board`: deja el avatar VISIBLE al costado y este avatar es un BUCLE — pasada la
+//    costura mostraria la cara fuera de sincro. Tampoco `diagram` (diagramFor es por concepto y
+//    devuelve el diagrama de otro video si el concepto no matchea).
 const CMP = [
   // ── EL SUJETO ────────────────────────────────────────────────────────────────
   { phrase: "one of the most common active", kind: "stat", eyebrow: "On the label of the jar you already own",
-    value: "1", prefix: "#", label: "Caffeine is one of the most common active ingredients in eye creams" },
+    value: 1, prefix: "#", label: "Caffeine is one of the most common active ingredients in eye creams" },
   { phrase: "sitting high up in that list", kind: "freezezoom", image: I("fz_label"), x: 0.5, y: 0.52, zoom: 2.1,
     tone: "teal", label: "It is already in the jar you own" },
   { phrase: "where do they get that caffeine", kind: "callout", figure: "→", eyebrow: "Green coffee extract · coffee seed extract",
@@ -211,7 +216,7 @@ const CMP = [
   { phrase: "seven mornings coffee on my face", kind: "rule", number: "01", title: "THE EXPERIMENT · SEVEN DAYS" },
 
   // ── MECANISMO ────────────────────────────────────────────────────────────────
-  { phrase: "there are four separate things", kind: "chips", title: "Four things are happening at once",
+  { phrase: "there are four separate things", kind: "chips", title: "Four things are happening at once", eyebrow: "The mechanism", image: I("pw_grounds"),
     chips: ["Caffeine narrows the vessels", "Antioxidants defend the skin", "Coffee oil slows water loss", "Five still, warm minutes"] },
   { phrase: "the first one is the caffeine", kind: "avatarpizarra", items: [
     { card: "1 · Caffeine narrows the tiny vessels", sub: "a vasoconstrictor — it works on contact", atPhrase: "narrows the tiny blood vessels" },
@@ -225,8 +230,8 @@ const CMP = [
   { phrase: "like ink through a sheet", kind: "blurexplainer", clip: "broll/grcoffee_042.mp4", image: I("044"), side: "right",
     eyebrow: "Why the dark circle is dark", title: "You are not looking at a stain",
     body: "You are looking at the blood in the vessels underneath, showing through skin thin enough to see through." },
-  { phrase: "largest sources of polyphenols", kind: "stat", eyebrow: "Chlorogenic acid survives in the spent grounds",
-    value: "More", suffix: " than fruit", label: "Coffee is one of the largest sources of polyphenols in the western diet" },
+  { phrase: "largest sources of polyphenols", kind: "callout", figure: "MORE", eyebrow: "More polyphenols than most fruit",
+    caption: "Coffee is one of the largest sources of polyphenols in the western diet — and chlorogenic acid survives in the spent grounds", medico: true },
   { phrase: "the darker the roast", kind: "ingredientduo", leftImg: I("duo_dark"), rightImg: I("duo_light") },
   { phrase: "a medium roast or a lighter one", kind: "bars", title: "What the roasting drum destroys", unit: "%", bars: [
     { label: "Light / medium roast", value: 100, winner: true, note: "keeps considerably more chlorogenic acid" },
@@ -247,25 +252,25 @@ const CMP = [
     strike: "/ jar", verdict: "SAME ACTIVE INGREDIENT", subtitle: "You already make 15 grams of it every morning" },
   { phrase: "grams of spent grounds every", kind: "callout", figure: "15–20g", eyebrow: "Every single time you brew a pot",
     caption: "Every day. Forever. And you carry it to the bin.", medico: true },
-  { phrase: "apricot pits", kind: "chips", title: "Why skin doctors warned you off scrubs",
+  { phrase: "apricot pits", kind: "chips", title: "Why skin doctors warned you off scrubs", eyebrow: "Where the fear came from", image: I("097"),
     chips: ["Apricot pits", "Walnut shells", "Anything with a hard broken edge", "And coffee grounds got swept in with them"] },
 
   // ── LOS SIETE DIAS ───────────────────────────────────────────────────────────
   { phrase: "the seven days", kind: "rule", number: "02", title: "SEVEN MORNINGS, ONE WINDOW" },
   { phrase: "day two is where", kind: "stat", eyebrow: "Day 2 — the first thing I could see",
-    value: "2", label: "The puffiness was down. Noticeably down. That small reward is what carries you to day seven." },
+    value: 2, label: "The puffiness was down. Noticeably down. That small reward is what carries you to day seven." },
   { phrase: "day three i got greedy", kind: "errorstinger", number: "01", title: "I got greedy on day three",
     tone: "warn", eyebrow: "The mistake" },
   { phrase: "day four i did not do it", kind: "callout", figure: "0", eyebrow: "Day 4 — I did not do it at all",
     caption: "Cheeks stinging, two thin red lines. And I learned more that day than the other six put together.", medico: true },
   { phrase: "day five i went back", kind: "stat", eyebrow: "Day 5 — and I went back gentle",
-    value: "5", label: "Not the puffiness this time. Texture. Smoother under my fingers, less like paper." },
+    value: 5, label: "Not the puffiness this time. Texture. Smoother under my fingers, less like paper." },
   { phrase: "day six is the day somebody", kind: "callout", figure: "“", eyebrow: "Day 6 — my sister, who never says it",
     caption: "Have you changed something? You look less tired.", medico: true },
   { phrase: "my mother never threw coffee grounds out", kind: "blurexplainer", clip: "broll/grcoffee_154.mp4", image: I("155"), side: "left",
     eyebrow: "She never called it face care", title: "The roses drank coffee before she did",
     body: "She gardened bare-handed her whole life, and I remember her hands being soft. I always assumed that was luck." },
-  { phrase: "the puffiness was down", kind: "chips", title: "Day 7 — the honest result",
+  { phrase: "the puffiness was down", kind: "chips", title: "Day 7 — the honest result", eyebrow: "Seven days later", image: I("161"),
     chips: ["Puffiness down", "Under the eyes lighter", "Redness calmed right down", "The lines exactly where I left them"] },
 
   // ── EL MEDICO ────────────────────────────────────────────────────────────────
@@ -273,14 +278,14 @@ const CMP = [
   { phrase: "that will be the caffeine", kind: "quote",
     text: "That will be the caffeine. It is a vasoconstrictor — it is what is in the products anyway.",
     author: "The dermatologist, mid-appointment" },
-  { phrase: "he gave me three warnings", kind: "process", title: "His three warnings", steps: [
+  { phrase: "he gave me three warnings", kind: "process", eyebrow: "What the doctor said", title: "His three warnings", steps: [
     { title: "The eye itself", desc: "The orbital bone is the boundary. Nothing above it — it migrates into the eye overnight." },
     { title: "Frequency", desc: "Two or three times a week. Skin needs to be left alone to repair." },
     { title: "And do not scrub", desc: "The one that turned out to be the whole ending of this video." },
   ] },
 
   // ── LIMITES HONESTOS ─────────────────────────────────────────────────────────
-  { phrase: "now honest limits", kind: "checklist", title: "Before the good part — the honest limits", items: [
+  { phrase: "now honest limits", kind: "checklist", eyebrow: "Honest limits", title: "Before the good part — the honest limits", items: [
     { text: "It will NOT remove a wrinkle. Nothing on the surface does", state: "danger" },
     { text: "It will not undo sun damage or lift age spots", state: "danger" },
     { text: "The de-puffing is TEMPORARY — hours, not days", state: "warn" },
@@ -296,14 +301,14 @@ const CMP = [
   { phrase: "look in the mirror with a lamp", kind: "blurexplainer", clip: "broll/grcoffee_216.mp4", image: I("217"), side: "right",
     eyebrow: "The 10-second test you can do tonight", title: "Hold a lamp below your face",
     body: "If the darkness fills in and vanishes, it was never a stain. It was a shadow — and no kitchen remedy casts light into a hollow." },
-  { phrase: "the timeline as i actually experienced it", kind: "process", title: "What changes, and when", steps: [
+  { phrase: "the timeline as i actually experienced it", kind: "process", eyebrow: "The timeline", title: "What changes, and when", steps: [
     { title: "Day 2–3", desc: "The puffiness. The fast one — and the reason you keep going." },
     { title: "Week 2", desc: "Texture. Smoother under your fingertips, before it is visible." },
     { title: "Week 4–6", desc: "Tone. The evenness other people notice before you do." },
     { title: "Week 6, nothing?", desc: "Then it is not for your skin. Stop — there is no shame in it." },
   ] },
-  { phrase: "one single thing for aging skin", kind: "stat", eyebrow: "If you only ever do one thing",
-    value: "SUN", label: "This is the pleasant thing you do on top of the boring thing that actually matters" },
+  { phrase: "one single thing for aging skin", kind: "callout", figure: "SUN", eyebrow: "If you only ever do one thing",
+    caption: "This is the pleasant thing you do on top of the boring thing that actually matters", medico: true },
 
   // ── LAS MEZCLAS ──────────────────────────────────────────────────────────────
   { phrase: "plain water first", kind: "benefitlock", index: 0, cards: [
@@ -326,7 +331,7 @@ const CMP = [
     { name: "Plain full-fat yogurt", amount: "1 tablespoon", image: I("mix_yogurt") },
     { name: "Press, wait, rinse", amount: "4–5 min · 2–3 mornings a week", image: I("mix_water") },
   ] },
-  { phrase: "the back of your hands", kind: "chips", title: "Where else it is worth doing",
+  { phrase: "the back of your hands", kind: "chips", title: "Where else it is worth doing", eyebrow: "Other places", image: I("254"),
     chips: ["Backs of the hands — where I saw it first", "Neck and chest, gently", "Elbows and knees, a bit firmer", "Never above the orbital bone"] },
   { phrase: "everybody asks about cellulite", kind: "callout", figure: "!", eyebrow: "The one everybody asks about",
     caption: "Coffee is in every cellulite cream for the same vasoconstriction — a few hours of tightening, sold as a cure", medico: true },
@@ -336,7 +341,7 @@ const CMP = [
   ] },
 
   // ── SEGURIDAD ────────────────────────────────────────────────────────────────
-  { phrase: "patch test first", kind: "checklist", title: "Read this bit before you try it", items: [
+  { phrase: "patch test first", kind: "checklist", eyebrow: "Safety", title: "Read this bit before you try it", items: [
     { text: "Patch test inside your elbow and leave it a DAY", state: "done" },
     { text: "Rosacea, eczema, broken or angry skin — not for you right now", state: "danger" },
     { text: "The orbital bone is as close to the eye as you EVER go", state: "danger" },
@@ -362,7 +367,7 @@ const CMP = [
     { label: "Friction — scrubbing in circles", value: 0, tone: "danger", note: "not one bit more. All of the damage, none of the benefit." },
   ] },
   { phrase: "press wait rinse", kind: "frasecinetica", words: ["Press.", "Wait.", "Rinse."], tone: "teal" },
-  { phrase: "fresh dry grounds are harder", kind: "chips", title: "Used, not fresh — and this is why",
+  { phrase: "fresh dry grounds are harder", kind: "chips", title: "Used, not fresh — and this is why", eyebrow: "The other half of the mistake", image: I("316"),
     chips: ["Brewing SOFTENS the grounds", "It pulls the harshest of it out", "Cooling makes them safe to leave on", "Dry from the bag: harder, sharper, more acidic"] },
   { phrase: "the waste is the ingredient", kind: "avatarkeyword", items: [
     { card: "The waste is the ingredient", sub: "the thing you were about to throw away is the thing that works" },

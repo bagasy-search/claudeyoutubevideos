@@ -58,7 +58,7 @@
    "key": "s",
    "kind": "stat",
    "eyebrow": "On the label of the jar you already own",
-   "value": "1",
+   "value": 1,
    "prefix": "#",
    "label": "Caffeine is one of the most common active ingredients in eye creams"
   },
@@ -373,6 +373,8 @@
    "key": "s",
    "kind": "chips",
    "title": "Four things are happening at once",
+   "eyebrow": "The mechanism",
+   "image": "img/grcoffee_pw_grounds.jpg",
    "chips": [
     "Caffeine narrows the vessels",
     "Antioxidants defend the skin",
@@ -553,15 +555,15 @@
    "src": "broll/grcoffee_049.mp4"
   },
   {
-   "id": "cmp_9_stat",
+   "id": "cmp_9_callout",
    "start": 287.2,
-   "dur": 6,
+   "dur": 6.5,
    "key": "s",
-   "kind": "stat",
-   "eyebrow": "Chlorogenic acid survives in the spent grounds",
-   "value": "More",
-   "suffix": " than fruit",
-   "label": "Coffee is one of the largest sources of polyphenols in the western diet"
+   "kind": "callout",
+   "figure": "MORE",
+   "eyebrow": "More polyphenols than most fruit",
+   "caption": "Coffee is one of the largest sources of polyphenols in the western diet — and chlorogenic acid survives in the spent grounds",
+   "medico": true
   },
   {
    "id": "050",
@@ -956,7 +958,7 @@
    "dur": 3.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/grcoffee_086.mp4"
+   "src": "img/grcoffee_086.jpg"
   },
   {
    "id": "087",
@@ -1080,6 +1082,8 @@
    "key": "s",
    "kind": "chips",
    "title": "Why skin doctors warned you off scrubs",
+   "eyebrow": "Where the fear came from",
+   "image": "img/grcoffee_097.jpg",
    "chips": [
     "Apricot pits",
     "Walnut shells",
@@ -1166,7 +1170,7 @@
    "dur": 5.53,
    "key": "s",
    "kind": "raw",
-   "src": "broll/grcoffee_106.mp4"
+   "src": "img/grcoffee_106.jpg"
   },
   {
    "id": "107",
@@ -1247,7 +1251,7 @@
    "key": "s",
    "kind": "stat",
    "eyebrow": "Day 2 — the first thing I could see",
-   "value": "2",
+   "value": 2,
    "label": "The puffiness was down. Noticeably down. That small reward is what carries you to day seven."
   },
   {
@@ -1423,7 +1427,7 @@
    "key": "s",
    "kind": "stat",
    "eyebrow": "Day 5 — and I went back gentle",
-   "value": "5",
+   "value": 5,
    "label": "Not the puffiness this time. Texture. Smoother under my fingers, less like paper."
   },
   {
@@ -1713,6 +1717,8 @@
    "key": "s",
    "kind": "chips",
    "title": "Day 7 — the honest result",
+   "eyebrow": "Seven days later",
+   "image": "img/grcoffee_161.jpg",
    "chips": [
     "Puffiness down",
     "Under the eyes lighter",
@@ -1856,6 +1862,7 @@
    "dur": 9,
    "key": "s",
    "kind": "process",
+   "eyebrow": "What the doctor said",
    "title": "His three warnings",
    "steps": [
     {
@@ -2006,6 +2013,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "eyebrow": "Honest limits",
    "title": "Before the good part — the honest limits",
    "items": [
     {
@@ -2048,7 +2056,7 @@
    "dur": 9.8,
    "key": "s",
    "kind": "raw",
-   "src": "broll/grcoffee_198.mp4"
+   "src": "img/grcoffee_198.jpg"
   },
   {
    "id": "199",
@@ -2269,6 +2277,7 @@
    "dur": 9,
    "key": "s",
    "kind": "process",
+   "eyebrow": "The timeline",
    "title": "What changes, and when",
    "steps": [
     {
@@ -2362,14 +2371,15 @@
    "src": "broll/grcoffee_229.mp4"
   },
   {
-   "id": "cmp_34_stat",
+   "id": "cmp_34_callout",
    "start": 1145.66,
-   "dur": 6,
+   "dur": 6.5,
    "key": "s",
-   "kind": "stat",
+   "kind": "callout",
+   "figure": "SUN",
    "eyebrow": "If you only ever do one thing",
-   "value": "SUN",
-   "label": "This is the pleasant thing you do on top of the boring thing that actually matters"
+   "caption": "This is the pleasant thing you do on top of the boring thing that actually matters",
+   "medico": true
   },
   {
    "id": "230",
@@ -2678,6 +2688,8 @@
    "key": "s",
    "kind": "chips",
    "title": "Where else it is worth doing",
+   "eyebrow": "Other places",
+   "image": "img/grcoffee_254.jpg",
    "chips": [
     "Backs of the hands — where I saw it first",
     "Neck and chest, gently",
@@ -2860,6 +2872,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "eyebrow": "Safety",
    "title": "Read this bit before you try it",
    "items": [
     {
@@ -3247,7 +3260,7 @@
    "dur": 4,
    "key": "s",
    "kind": "raw",
-   "src": "broll/grcoffee_306.mp4"
+   "src": "img/grcoffee_306.jpg"
   },
   {
    "id": "307",
@@ -3333,6 +3346,8 @@
    "key": "s",
    "kind": "chips",
    "title": "Used, not fresh — and this is why",
+   "eyebrow": "The other half of the mistake",
+   "image": "img/grcoffee_316.jpg",
    "chips": [
     "Brewing SOFTENS the grounds",
     "It pulls the harshest of it out",
