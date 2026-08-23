@@ -86,6 +86,7 @@ import { MainValeriaVaselina, TOTAL_FRAMES as TOTAL_FRAMES_VALERIAVASELINA } fro
 import { MainValeriaPresion, TOTAL_FRAMES as TOTAL_FRAMES_VALERIAPRESION } from "./valeria/Main_valeriapresion";
 import { MainValeriaNariz, TOTAL_FRAMES as TOTAL_FRAMES_VALERIANARIZ } from "./valeria/Main_valerianariz";
 import { MainGrcoffee, TOTAL_FRAMES_GRCOFFEE } from "./_fed6/VideoEdit/Main_grcoffee";
+import { MainGrbanana, TOTAL_FRAMES_GRBANANA } from "./_fed6/VideoEdit/Main_grbanana";
 import { MainValeriaBocaSeca, TOTAL_FRAMES as TOTAL_FRAMES_VALERIABOCASECA } from "./valeria/Main_valeriabocaseca";
 import { MainRevivir, TOTAL_FRAMES_REVIVIR } from "./VideoEdit/Main_revivir";
 import { MainSemillas, TOTAL_FRAMES_SEMILLAS } from "./VideoEdit/Main_semillas";
@@ -737,6 +738,7 @@ export const RemotionRoot: React.FC = () => {
       {/* Golden Remedies (EN) — "I Rubbed Coffee on My Face for 7 Days" · kit federer-video/_fed6 ·
           AVATAR EN BUCLE + audio master de Fish (avatar 5:31.6 de 27:23) · b-roll agnes */}
       <Composition id="GrCoffee" component={MainGrcoffee} durationInFrames={TOTAL_FRAMES_GRCOFFEE} fps={30} width={1920} height={1080} />
+      <Composition id="GrBanana" component={MainGrbanana} durationInFrames={TOTAL_FRAMES_GRBANANA} fps={30} width={1920} height={1080} />
       <Composition id="GrVaseline" component={MainGrvaseline} durationInFrames={TOTAL_FRAMES_GRVASELINE} fps={30} width={1920} height={1080} />
     </>
   );
