@@ -88,6 +88,15 @@ jobs:
           fi
           mkdir -p public
           tar -xf "assets-${{ github.event.inputs.slug }}.tar" -C public
+          # TAR DELTA: parche para assets que se agregan DESPUES de haber tarreado (p.ej. el
+          # AUDITOR degrada un clip a su foto y esa foto nunca viajo en el tar original ->
+          # 404 y el chunk muere). Se extrae DESPUES del principal, asi tambien puede pisar.
+          # Evita re-subir 1.2 GB por unos pocos MB. El patron de descarga ya lo trae.
+          for d in "assets-${{ github.event.inputs.slug }}.tar.delta"*; do
+            [ -e "$d" ] || continue
+            echo "aplicando delta: $d"
+            tar -xf "$d" -C public
+          done
       - name: frame range
         id: r
         run: node scripts/chunkmath.mjs ${{ github.event.inputs.total_frames }} ${{ github.event.inputs.chunks }} ${{ matrix.idx }} >> "$GITHUB_OUTPUT"
