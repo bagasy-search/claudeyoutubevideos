@@ -181,6 +181,7 @@ import { MainFcskiwi, TOTAL_FRAMES_FCSKIWI } from "./_fed6/VideoEdit/Main_fcskiw
 import { ValKitReel, VAL_REEL_F } from "./valeria/ValeriaKit";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
+import { MainGrvaseline, TOTAL_FRAMES_GRVASELINE } from "./_fed6/VideoEdit/Main_grvaseline";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -736,6 +737,7 @@ export const RemotionRoot: React.FC = () => {
       {/* Golden Remedies (EN) — "I Rubbed Coffee on My Face for 7 Days" · kit federer-video/_fed6 ·
           AVATAR EN BUCLE + audio master de Fish (avatar 5:31.6 de 27:23) · b-roll agnes */}
       <Composition id="GrCoffee" component={MainGrcoffee} durationInFrames={TOTAL_FRAMES_GRCOFFEE} fps={30} width={1920} height={1080} />
+      <Composition id="GrVaseline" component={MainGrvaseline} durationInFrames={TOTAL_FRAMES_GRVASELINE} fps={30} width={1920} height={1080} />
     </>
   );
 };
