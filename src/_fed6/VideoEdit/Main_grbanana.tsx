@@ -183,12 +183,12 @@ export const MainGrbanana: React.FC = () => {
 
       {/* HOOK — ⚠ GOTCHA de clon: este texto va A MANO al tema nuevo (si se clona con sed queda el del otro video) */}
       <Sequence from={sec(1.4)} durationInFrames={sec(hookDur)} layout="none">
-        <AvatarScrimText durationInFrames={sec(hookDur)} setup="The grounds you tip into the bin every morning hold more of it than the $80 jar on your shelf." impact="COFFEE ON MY FACE" accentColor={TEAL} font={F_INTER} fontSize={104} />
+        <AvatarScrimText durationInFrames={sec(hookDur)} setup="The banana skin you scrape into the bin holds more of it than the eighty pound jar on your shelf." impact="BANANA PEEL ON MY FACE" accentColor={TEAL} font={F_INTER} fontSize={104} />
       </Sequence>
 
       {/* ENDCARD */}
       <Sequence from={sec(CTA_AT)} durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} layout="none">
-        <Endcard durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} />
+        <Endcard durationInFrames={sec(Math.max(2, VIDEO_END - CTA_AT))} kicker="Golden Remedies" title="Subscribe" subtitle="The remedies nobody could sell you - every week" cta="SUBSCRIBE" />
       </Sequence>
     </AbsoluteFill>
   );
