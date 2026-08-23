@@ -15,13 +15,29 @@
   {
    "id": "ov_hookcaption_0",
    "start": 0,
-   "dur": 4.2,
+   "dur": 4.6,
    "kind": "premium",
    "overlay": true,
    "comp": "HookCaption",
    "theme": "earth",
    "zone": "top",
-   "text": "Seven cheap things. No fuel. No moving parts."
+   "words": [
+    {
+     "text": "Seven"
+    },
+    {
+     "text": "cheap things",
+     "boxed": true
+    },
+    {
+     "text": "worth more than"
+    },
+    {
+     "text": "GOLD",
+     "boxed": true
+    }
+   ],
+   "sub": "when the power goes out — and none of them need fuel"
   },
   {
    "id": "goldpower_1",
@@ -1845,7 +1861,6 @@
    "comp": "LayerStack",
    "theme": "earth",
    "zone": "full",
-   "kicker": "HOW IT SHRINKS",
    "eyebrow": "HOW IT SHRINKS",
    "title": "Every step, you stop heating space you are not in",
    "layers": [

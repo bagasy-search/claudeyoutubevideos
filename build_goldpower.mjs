@@ -470,8 +470,14 @@ const C = (comp, atPhrase, dur, zone, props = {}, maxTok) => ({ comp, at: atPhra
 // ── COMPONENTES (kit premium THEME_EARTH) — TODOS los textos en INGLÉS (los defaults del kit
 //    están en español y las props no los cubren si no se pasan). Anclados al TEXTO REAL.
 const PREMIUM = [
-  C("HookCaption", "there is a wooden crate on the floor", 4.2, "top", {
-    text: "Seven cheap things. No fuel. No moving parts.",
+  C("HookCaption", "there is a wooden crate on the floor", 4.6, "top", {
+    words: [
+      { text: "Seven" },
+      { text: "cheap things", boxed: true },
+      { text: "worth more than" },
+      { text: "GOLD", boxed: true },
+    ],
+    sub: "when the power goes out — and none of them need fuel",
   }, 8),
   C("PhotoCarousel", "that is it seven things", 9.5, "full", {
     title: "What is in the crate", items: [
@@ -618,7 +624,7 @@ const PREMIUM = [
     bullets: ["Heat it, wrap it, in the bed 20 min early", "A gallon at 160°F ≈ 600 BTU", "Gives it back over six to eight hours", "Warm the glass first — never boiling"],
   }, 5),
   C("LayerStack", "think about what we just did", 6.4, "full", {
-    kicker: "HOW IT SHRINKS", eyebrow: "HOW IT SHRINKS", title: "Every step, you stop heating space you are not in", layers: [
+    eyebrow: "HOW IT SHRINKS", title: "Every step, you stop heating space you are not in", layers: [
       { label: "The whole house — 1,800 sq ft" },
       { label: "One room — about 140 sq ft" },
       { label: "One bed — where you actually are" },
