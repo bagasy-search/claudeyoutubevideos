@@ -2368,7 +2368,7 @@ export const ValLowerThird: React.FC<ValLowerThirdProps> = ({
                 willChange: 'transform',
               }}
             >
-              <OffthreadVideo src={avatarSrc} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+              <OffthreadVideo src={avatarSrc} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
               <AbsoluteFill
                 style={{
                   pointerEvents: 'none',

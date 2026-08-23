@@ -207,7 +207,7 @@ const CueScene: React.FC<{cue: Cue; totalF: number}> = ({cue, totalF}) => {
     case 'cta':
       return <ValCta variant={variant} totalF={totalF} kicker={cue.kicker} title={cue.title} hot={cue.hot} sub={cue.sub} buttonLabel={cue.buttonLabel} image={sf(cue.image)} accent={accent} mood={mood} />;
     case 'lowerthird':
-      return <ValLowerThird variant={variant} totalF={totalF} name={cue.name} role={cue.role} topic={cue.topic} accent={accent} avatarSrc={AVATAR} />;
+      return <ValLowerThird variant={variant} totalF={totalF} name={cue.name} role={cue.role} topic={cue.topic} accent={accent} avatarSrc={null as unknown as string} />;
     case 'carousel':
       // ⚠ las cards se dibujan con <Img src={card.image}> CRUDO dentro de CarouselCard → hay que
       // pasar la ruta ya resuelta con staticFile(), si no da 404 en el render (era la causa de que

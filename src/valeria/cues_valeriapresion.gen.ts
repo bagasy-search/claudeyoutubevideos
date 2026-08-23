@@ -17,13 +17,133 @@ export const BEATS: Cue[] = [
   {
     "id": "talk_1",
     "start": 0,
-    "dur": 5.5,
+    "dur": 4.5,
     "kind": "talk",
     "title": "Nunca tome la pastilla de la tensión a esta hora",
     "hot": [
       "a esta hora"
     ],
     "kicker": "Dra. Valeria Alcázar"
+  },
+  {
+    "id": "tr_t00",
+    "start": 0,
+    "dur": 2.2,
+    "kind": "full",
+    "src": "broll/vp_t00.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t01",
+    "start": 2.2,
+    "dur": 1.3,
+    "kind": "full",
+    "src": "broll/vp_t01.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t02",
+    "start": 3.5,
+    "dur": 1.2,
+    "kind": "full",
+    "src": "broll/vp_t02.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t03",
+    "start": 4.7,
+    "dur": 1.1,
+    "kind": "full",
+    "src": "broll/vp_t03.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t04",
+    "start": 5.8,
+    "dur": 1.1,
+    "kind": "full",
+    "src": "broll/vp_t04.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_b001",
+    "start": 6.9,
+    "dur": 1.1,
+    "kind": "full",
+    "src": "broll/vp_b001.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t05",
+    "start": 8,
+    "dur": 1.1,
+    "kind": "full",
+    "src": "broll/vp_t05.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t06",
+    "start": 9.1,
+    "dur": 3,
+    "kind": "full",
+    "src": "broll/vp_t06.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t07",
+    "start": 12.1,
+    "dur": 2.2,
+    "kind": "full",
+    "src": "broll/vp_t07.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t08",
+    "start": 14.3,
+    "dur": 1.3,
+    "kind": "full",
+    "src": "broll/vp_t08.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t09",
+    "start": 15.6,
+    "dur": 2.5,
+    "kind": "full",
+    "src": "broll/vp_t09.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t10",
+    "start": 18.1,
+    "dur": 1.5,
+    "kind": "full",
+    "src": "broll/vp_t10.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
   },
   {
     "id": "lowerthird_2",
@@ -34,156 +154,419 @@ export const BEATS: Cue[] = [
     "sub": "Elena se toma su pastilla, como cada día desde hace nueve años"
   },
   {
-    "id": "full_b006",
-    "start": 31.92,
-    "dur": 3.8,
+    "id": "tr_t11",
+    "start": 19.6,
+    "dur": 1.6,
     "kind": "full",
-    "src": "broll/vp_b006.mp4",
+    "src": "broll/vp_t11.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "in",
+    "variant": "whip"
   },
   {
-    "id": "full_b007",
-    "start": 35.72,
-    "dur": 3.92,
+    "id": "tr_t12",
+    "start": 21.2,
+    "dur": 1.6,
     "kind": "full",
-    "src": "broll/vp_b007.mp4",
+    "src": "broll/vp_t12.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "out",
+    "variant": "whip"
   },
   {
-    "id": "full_b009",
-    "start": 44.54,
-    "dur": 4.04,
+    "id": "tr_t13",
+    "start": 22.8,
+    "dur": 1.8,
     "kind": "full",
-    "src": "broll/vp_b009.mp4",
+    "src": "broll/vp_t13.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "in",
+    "variant": "whip"
   },
   {
-    "id": "tail_b009",
-    "start": 48.58,
-    "dur": 1.56,
+    "id": "tr_t14",
+    "start": 24.6,
+    "dur": 2,
     "kind": "full",
-    "src": "img/vp_b009.jpg",
-    "video": false,
-    "ken": "in"
-  },
-  {
-    "id": "full_b010",
-    "start": 50.14,
-    "dur": 4.04,
-    "kind": "full",
-    "src": "broll/vp_b010.mp4",
+    "src": "broll/vp_t14.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "out",
+    "variant": "whip"
   },
   {
-    "id": "tail_b010",
-    "start": 54.18,
-    "dur": 0.8,
+    "id": "tr_t15",
+    "start": 26.6,
+    "dur": 1.6,
     "kind": "full",
-    "src": "img/vp_b010.jpg",
-    "video": false,
-    "ken": "in"
-  },
-  {
-    "id": "full_b012",
-    "start": 61.84,
-    "dur": 4.04,
-    "kind": "full",
-    "src": "broll/vp_b012.mp4",
+    "src": "broll/vp_t15.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "whip"
   },
   {
-    "id": "tail_b012",
-    "start": 65.88,
-    "dur": 3.08,
+    "id": "tr_t16",
+    "start": 28.2,
+    "dur": 1.8,
     "kind": "full",
-    "src": "img/vp_b012.jpg",
-    "video": false,
-    "ken": "out"
-  },
-  {
-    "id": "full_b013",
-    "start": 68.96,
-    "dur": 4.04,
-    "kind": "full",
-    "src": "broll/vp_b013.mp4",
+    "src": "broll/vp_t16.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "whip"
   },
   {
-    "id": "tail_b013",
-    "start": 73,
-    "dur": 2.48,
+    "id": "tr_t17",
+    "start": 30,
+    "dur": 1.9,
     "kind": "full",
-    "src": "img/vp_b013.jpg",
-    "video": false,
-    "ken": "in"
+    "src": "broll/vp_t17.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t18",
+    "start": 31.9,
+    "dur": 1.1,
+    "kind": "full",
+    "src": "broll/vp_t18.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t19",
+    "start": 33,
+    "dur": 1.2,
+    "kind": "full",
+    "src": "broll/vp_t19.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t20",
+    "start": 34.2,
+    "dur": 1.5,
+    "kind": "full",
+    "src": "broll/vp_t20.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t21",
+    "start": 35.7,
+    "dur": 1.6,
+    "kind": "full",
+    "src": "broll/vp_t21.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t22",
+    "start": 37.3,
+    "dur": 2.3,
+    "kind": "full",
+    "src": "broll/vp_t22.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t23",
+    "start": 39.6,
+    "dur": 2,
+    "kind": "full",
+    "src": "broll/vp_t23.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t24",
+    "start": 41.6,
+    "dur": 2.9,
+    "kind": "full",
+    "src": "broll/vp_t24.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t25",
+    "start": 44.5,
+    "dur": 2.3,
+    "kind": "full",
+    "src": "broll/vp_t25.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t26",
+    "start": 46.8,
+    "dur": 1.6,
+    "kind": "full",
+    "src": "broll/vp_t26.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t27",
+    "start": 48.4,
+    "dur": 1.7,
+    "kind": "full",
+    "src": "broll/vp_t27.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t28",
+    "start": 50.1,
+    "dur": 2.7,
+    "kind": "full",
+    "src": "broll/vp_t28.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t29",
+    "start": 52.8,
+    "dur": 2.2,
+    "kind": "full",
+    "src": "broll/vp_t29.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t30",
+    "start": 55,
+    "dur": 1.8,
+    "kind": "full",
+    "src": "broll/vp_t30.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t31",
+    "start": 56.8,
+    "dur": 1.6,
+    "kind": "full",
+    "src": "broll/vp_t31.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t32",
+    "start": 58.4,
+    "dur": 1.6,
+    "kind": "full",
+    "src": "broll/vp_t32.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t33",
+    "start": 60,
+    "dur": 1.8,
+    "kind": "full",
+    "src": "broll/vp_t33.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t34",
+    "start": 61.8,
+    "dur": 2.2,
+    "kind": "full",
+    "src": "broll/vp_t34.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t35",
+    "start": 64,
+    "dur": 3,
+    "kind": "full",
+    "src": "broll/vp_t35.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t36",
+    "start": 67,
+    "dur": 1.4,
+    "kind": "full",
+    "src": "broll/vp_t36.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t37",
+    "start": 68.4,
+    "dur": 0.6,
+    "kind": "full",
+    "src": "broll/vp_t37.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t38",
+    "start": 69,
+    "dur": 2.5,
+    "kind": "full",
+    "src": "broll/vp_t38.mp4",
+    "video": true,
+    "ken": "out",
+    "variant": "whip"
+  },
+  {
+    "id": "tr_t39",
+    "start": 71.5,
+    "dur": 4,
+    "kind": "full",
+    "src": "broll/vp_t39.mp4",
+    "video": true,
+    "ken": "in",
+    "variant": "whip"
   },
   {
     "id": "full_b015",
     "start": 81.96,
-    "dur": 4.04,
+    "dur": 2.67,
     "kind": "full",
     "src": "broll/vp_b015.mp4",
     "video": true,
     "ken": "right"
   },
   {
-    "id": "tail_b015",
-    "start": 86,
-    "dur": 1.3,
+    "id": "xtra_b015",
+    "start": 84.63,
+    "dur": 2.67,
     "kind": "full",
-    "src": "img/vp_b015.jpg",
-    "video": false,
+    "src": "broll/vp_x15.mp4",
+    "video": true,
     "ken": "in"
   },
   {
     "id": "full_b016",
     "start": 87.3,
-    "dur": 3.58,
+    "dur": 1.79,
     "kind": "full",
     "src": "broll/vp_b016.mp4",
     "video": true,
     "ken": "in"
   },
   {
+    "id": "xtra_b016",
+    "start": 89.09,
+    "dur": 1.79,
+    "kind": "full",
+    "src": "broll/vp_x16.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "full_b017",
+    "start": 90.88,
+    "dur": 2.81,
+    "kind": "full",
+    "src": "broll/vp_b017.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "xtra_b017",
+    "start": 93.69,
+    "dur": 2.81,
+    "kind": "full",
+    "src": "broll/vp_x17.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
     "id": "full_b018",
     "start": 96.5,
-    "dur": 4.04,
+    "dur": 2.64,
     "kind": "full",
     "src": "broll/vp_b018.mp4",
     "video": true,
     "ken": "left"
   },
   {
-    "id": "tail_b018",
-    "start": 100.54,
-    "dur": 1.24,
+    "id": "xtra_b018",
+    "start": 99.14,
+    "dur": 2.64,
     "kind": "full",
-    "src": "img/vp_b018.jpg",
-    "video": false,
+    "src": "broll/vp_x18.mp4",
+    "video": true,
     "ken": "in"
   },
   {
     "id": "full_b019",
     "start": 101.78,
-    "dur": 4.04,
+    "dur": 2.42,
     "kind": "full",
     "src": "broll/vp_b019.mp4",
     "video": true,
     "ken": "right"
   },
   {
-    "id": "tail_b019",
-    "start": 105.82,
-    "dur": 0.8,
+    "id": "xtra_b019",
+    "start": 104.2,
+    "dur": 2.42,
     "kind": "full",
-    "src": "img/vp_b019.jpg",
-    "video": false,
+    "src": "broll/vp_x19.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
+    "id": "full_b020",
+    "start": 106.62,
+    "dur": 3.03,
+    "kind": "full",
+    "src": "broll/vp_b020.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
+    "id": "xtra_b020",
+    "start": 109.65,
+    "dur": 3.03,
+    "kind": "full",
+    "src": "broll/vp_x20.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "full_b021",
+    "start": 112.68,
+    "dur": 2.71,
+    "kind": "full",
+    "src": "broll/vp_b021.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "xtra_b021",
+    "start": 115.39,
+    "dur": 2.71,
+    "kind": "full",
+    "src": "broll/vp_x21.mp4",
+    "video": true,
     "ken": "in"
   },
   {
@@ -200,22 +583,58 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
+    "id": "full_b023",
+    "start": 124.6,
+    "dur": 1.24,
+    "kind": "full",
+    "src": "broll/vp_b023.mp4",
+    "video": true,
+    "ken": "right"
+  },
+  {
+    "id": "xtra_b023",
+    "start": 125.84,
+    "dur": 1.24,
+    "kind": "full",
+    "src": "broll/vp_x23.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
     "id": "full_b024",
     "start": 127.08,
-    "dur": 3.28,
+    "dur": 1.64,
     "kind": "full",
     "src": "broll/vp_b024.mp4",
     "video": true,
     "ken": "in"
   },
   {
+    "id": "xtra_b024",
+    "start": 128.72,
+    "dur": 1.64,
+    "kind": "full",
+    "src": "broll/vp_x24.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
     "id": "full_b025",
     "start": 130.36,
-    "dur": 2.72,
+    "dur": 1.36,
     "kind": "full",
     "src": "broll/vp_b025.mp4",
     "video": true,
     "ken": "out"
+  },
+  {
+    "id": "xtra_b025",
+    "start": 131.72,
+    "dur": 1.36,
+    "kind": "full",
+    "src": "broll/vp_x25.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "stat_4",
@@ -229,40 +648,130 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
+    "id": "full_b027",
+    "start": 139.08,
+    "dur": 1.8,
+    "kind": "full",
+    "src": "broll/vp_b027.mp4",
+    "video": true,
+    "ken": "right"
+  },
+  {
+    "id": "xtra_b027",
+    "start": 140.88,
+    "dur": 1.8,
+    "kind": "full",
+    "src": "broll/vp_x27.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
     "id": "full_b028",
     "start": 142.68,
-    "dur": 3.18,
+    "dur": 1.59,
     "kind": "full",
     "src": "broll/vp_b028.mp4",
     "video": true,
     "ken": "in"
   },
   {
+    "id": "xtra_b028",
+    "start": 144.27,
+    "dur": 1.59,
+    "kind": "full",
+    "src": "broll/vp_x28.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "full_b029",
+    "start": 145.86,
+    "dur": 3.71,
+    "kind": "full",
+    "src": "broll/vp_b029.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "xtra_b029",
+    "start": 149.57,
+    "dur": 3.71,
+    "kind": "full",
+    "src": "broll/vp_x29.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
     "id": "full_b030",
     "start": 153.28,
-    "dur": 2.96,
+    "dur": 1.48,
     "kind": "full",
     "src": "broll/vp_b030.mp4",
     "video": true,
     "ken": "left"
   },
   {
+    "id": "xtra_b030",
+    "start": 154.76,
+    "dur": 1.48,
+    "kind": "full",
+    "src": "broll/vp_x30.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
     "id": "full_b031",
     "start": 156.24,
-    "dur": 4.04,
+    "dur": 2.29,
     "kind": "full",
     "src": "broll/vp_b031.mp4",
     "video": true,
     "ken": "right"
   },
   {
+    "id": "xtra_b031",
+    "start": 158.53,
+    "dur": 2.29,
+    "kind": "full",
+    "src": "broll/vp_x31.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
+    "id": "full_b032",
+    "start": 160.82,
+    "dur": 1.97,
+    "kind": "full",
+    "src": "broll/vp_b032.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
+    "id": "xtra_b032",
+    "start": 162.79,
+    "dur": 1.97,
+    "kind": "full",
+    "src": "broll/vp_x32.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
     "id": "full_b033",
     "start": 164.76,
-    "dur": 2.92,
+    "dur": 1.46,
     "kind": "full",
     "src": "broll/vp_b033.mp4",
     "video": true,
     "ken": "out"
+  },
+  {
+    "id": "xtra_b033",
+    "start": 166.22,
+    "dur": 1.46,
+    "kind": "full",
+    "src": "broll/vp_x33.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b034",
@@ -319,20 +828,20 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "full_b039",
-    "start": 196.74,
+    "id": "full_b038",
+    "start": 191.86,
     "dur": 4.04,
     "kind": "full",
-    "src": "broll/vp_b039.mp4",
+    "src": "broll/vp_b038.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "left"
   },
   {
-    "id": "tail_b039",
-    "start": 200.78,
-    "dur": 5.08,
+    "id": "tail_b038",
+    "start": 195.9,
+    "dur": 0.84,
     "kind": "full",
-    "src": "img/vp_b039.jpg",
+    "src": "img/vp_b038.jpg",
     "video": false,
     "ken": "in"
   },
@@ -355,6 +864,15 @@ export const BEATS: Cue[] = [
     "ken": "out"
   },
   {
+    "id": "full_b041",
+    "start": 213.6,
+    "dur": 3.86,
+    "kind": "full",
+    "src": "broll/vp_b041.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
     "id": "full_b042",
     "start": 217.46,
     "dur": 4.04,
@@ -373,22 +891,22 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "full_b043",
-    "start": 223,
+    "id": "full_b044",
+    "start": 228.16,
     "dur": 4.04,
     "kind": "full",
-    "src": "broll/vp_b043.mp4",
+    "src": "broll/vp_b044.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "in"
   },
   {
-    "id": "tail_b043",
-    "start": 227.04,
-    "dur": 1.12,
+    "id": "tail_b044",
+    "start": 232.2,
+    "dur": 1.64,
     "kind": "full",
-    "src": "img/vp_b043.jpg",
+    "src": "img/vp_b044.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "out"
   },
   {
     "id": "full_b045",
@@ -409,6 +927,15 @@ export const BEATS: Cue[] = [
     "ken": "left"
   },
   {
+    "id": "full_b048",
+    "start": 247.96,
+    "dur": 2.52,
+    "kind": "full",
+    "src": "broll/vp_b048.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
     "id": "beforeafter_5",
     "start": 250.48,
     "dur": 6.5,
@@ -420,13 +947,22 @@ export const BEATS: Cue[] = [
     "imageB": "img/vp_b053.jpg"
   },
   {
-    "id": "full_b051",
-    "start": 261.8,
-    "dur": 2.74,
+    "id": "full_b050",
+    "start": 256.98,
+    "dur": 4.04,
     "kind": "full",
-    "src": "broll/vp_b051.mp4",
+    "src": "broll/vp_b050.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "left"
+  },
+  {
+    "id": "tail_b050",
+    "start": 261.02,
+    "dur": 0.78,
+    "kind": "full",
+    "src": "img/vp_b050.jpg",
+    "video": false,
+    "ken": "in"
   },
   {
     "id": "full_b052",
@@ -436,6 +972,15 @@ export const BEATS: Cue[] = [
     "src": "broll/vp_b052.mp4",
     "video": true,
     "ken": "in"
+  },
+  {
+    "id": "full_b053",
+    "start": 267.04,
+    "dur": 3.94,
+    "kind": "full",
+    "src": "broll/vp_b053.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "full_b054",
@@ -466,6 +1011,15 @@ export const BEATS: Cue[] = [
     "label": "Latidos al día, todos los días",
     "sub": "El corazón no se jubila",
     "mood": "gold"
+  },
+  {
+    "id": "full_b058",
+    "start": 290.98,
+    "dur": 2.64,
+    "kind": "full",
+    "src": "broll/vp_b058.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "full_b060",
@@ -517,6 +1071,15 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
+    "id": "full_b065",
+    "start": 320.18,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b065.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
     "id": "full_b066",
     "start": 324.22,
     "dur": 3.74,
@@ -526,21 +1089,12 @@ export const BEATS: Cue[] = [
     "ken": "left"
   },
   {
-    "id": "full_b067",
-    "start": 327.96,
-    "dur": 4.04,
+    "id": "full_b068",
+    "start": 332.82,
+    "dur": 2.66,
     "kind": "full",
-    "src": "broll/vp_b067.mp4",
+    "src": "broll/vp_b068.mp4",
     "video": true,
-    "ken": "right"
-  },
-  {
-    "id": "tail_b067",
-    "start": 332,
-    "dur": 0.82,
-    "kind": "full",
-    "src": "img/vp_b067.jpg",
-    "video": false,
     "ken": "in"
   },
   {
@@ -554,6 +1108,15 @@ export const BEATS: Cue[] = [
     "label": "Más infartos entre las 6 y las 12 de la mañana",
     "sub": "La franja más peligrosa del día",
     "mood": "terracotta"
+  },
+  {
+    "id": "full_b070",
+    "start": 341.98,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b070.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "full_b072",
@@ -579,6 +1142,24 @@ export const BEATS: Cue[] = [
     "dur": 1.14,
     "kind": "full",
     "src": "img/vp_b073.jpg",
+    "video": false,
+    "ken": "in"
+  },
+  {
+    "id": "full_b074",
+    "start": 358.46,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b074.mp4",
+    "video": true,
+    "ken": "left"
+  },
+  {
+    "id": "tail_b074",
+    "start": 362.5,
+    "dur": 1.1,
+    "kind": "full",
+    "src": "img/vp_b074.jpg",
     "video": false,
     "ken": "in"
   },
@@ -610,22 +1191,22 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "full_b079",
-    "start": 379.02,
+    "id": "full_b080",
+    "start": 383.78,
     "dur": 4.04,
     "kind": "full",
-    "src": "broll/vp_b079.mp4",
+    "src": "broll/vp_b080.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "in"
   },
   {
-    "id": "tail_b079",
-    "start": 383.06,
-    "dur": 0.72,
+    "id": "tail_b080",
+    "start": 387.82,
+    "dur": 1.18,
     "kind": "full",
-    "src": "img/vp_b079.jpg",
+    "src": "img/vp_b080.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "out"
   },
   {
     "id": "full_b081",
@@ -656,13 +1237,22 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
-    "id": "full_b087",
-    "start": 411.14,
+    "id": "full_b086",
+    "start": 405.7,
     "dur": 4.04,
     "kind": "full",
-    "src": "broll/vp_b087.mp4",
+    "src": "broll/vp_b086.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "left"
+  },
+  {
+    "id": "tail_b086",
+    "start": 409.74,
+    "dur": 1.4,
+    "kind": "full",
+    "src": "img/vp_b086.jpg",
+    "video": false,
+    "ken": "in"
   },
   {
     "id": "molecule_12",
@@ -688,6 +1278,15 @@ export const BEATS: Cue[] = [
     "sub": "Usted no lo puede eliminar: sólo decidir dónde cae"
   },
   {
+    "id": "full_b089",
+    "start": 421.86,
+    "dur": 3.44,
+    "kind": "full",
+    "src": "broll/vp_b089.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
     "id": "full_b090",
     "start": 425.3,
     "dur": 3.62,
@@ -697,13 +1296,13 @@ export const BEATS: Cue[] = [
     "ken": "left"
   },
   {
-    "id": "full_b091",
-    "start": 428.92,
-    "dur": 3,
+    "id": "full_b092",
+    "start": 431.92,
+    "dur": 3.12,
     "kind": "full",
-    "src": "broll/vp_b091.mp4",
+    "src": "broll/vp_b092.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "in"
   },
   {
     "id": "full_b093",
@@ -741,6 +1340,15 @@ export const BEATS: Cue[] = [
     "author": "El caso de Elena"
   },
   {
+    "id": "full_b096",
+    "start": 455.84,
+    "dur": 3.28,
+    "kind": "full",
+    "src": "broll/vp_b096.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
     "id": "full_b097",
     "start": 459.12,
     "dur": 3.68,
@@ -750,20 +1358,20 @@ export const BEATS: Cue[] = [
     "ken": "out"
   },
   {
-    "id": "full_b099",
-    "start": 468.14,
+    "id": "full_b098",
+    "start": 462.8,
     "dur": 4.04,
     "kind": "full",
-    "src": "broll/vp_b099.mp4",
+    "src": "broll/vp_b098.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "left"
   },
   {
-    "id": "tail_b099",
-    "start": 472.18,
-    "dur": 0.74,
+    "id": "tail_b098",
+    "start": 466.84,
+    "dur": 1.3,
     "kind": "full",
-    "src": "img/vp_b099.jpg",
+    "src": "img/vp_b098.jpg",
     "video": false,
     "ken": "in"
   },
@@ -786,12 +1394,48 @@ export const BEATS: Cue[] = [
     "ken": "out"
   },
   {
+    "id": "full_b101",
+    "start": 478.08,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b101.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "tail_b101",
+    "start": 482.12,
+    "dur": 2.74,
+    "kind": "full",
+    "src": "img/vp_b101.jpg",
+    "video": false,
+    "ken": "in"
+  },
+  {
+    "id": "full_b102",
+    "start": 484.86,
+    "dur": 1.82,
+    "kind": "full",
+    "src": "broll/vp_b102.mp4",
+    "video": true,
+    "ken": "left"
+  },
+  {
     "id": "lowerthird_14",
     "start": 486.68,
     "dur": 5.5,
     "kind": "lowerthird",
     "title": "Diuréticos: SIEMPRE por la mañana",
     "sub": "Nunca después de la merienda"
+  },
+  {
+    "id": "full_b104",
+    "start": 492.84,
+    "dur": 3.86,
+    "kind": "full",
+    "src": "broll/vp_b104.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b105",
@@ -848,6 +1492,24 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
+    "id": "full_b110",
+    "start": 518.92,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b110.mp4",
+    "video": true,
+    "ken": "left"
+  },
+  {
+    "id": "tail_b110",
+    "start": 522.96,
+    "dur": 1.4,
+    "kind": "full",
+    "src": "img/vp_b110.jpg",
+    "video": false,
+    "ken": "in"
+  },
+  {
     "id": "chapter_15",
     "start": 525.98,
     "dur": 6.5,
@@ -855,6 +1517,33 @@ export const BEATS: Cue[] = [
     "index": "Pista 5",
     "title": "La caída de febrero",
     "sub": "Lo que no le contó a nadie"
+  },
+  {
+    "id": "full_b112",
+    "start": 532.48,
+    "dur": 2.88,
+    "kind": "full",
+    "src": "broll/vp_b112.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
+    "id": "full_b113",
+    "start": 535.36,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b113.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "tail_b113",
+    "start": 539.4,
+    "dur": 0.88,
+    "kind": "full",
+    "src": "img/vp_b113.jpg",
+    "video": false,
+    "ken": "in"
   },
   {
     "id": "full_b114",
@@ -875,22 +1564,22 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "full_b115",
-    "start": 547.94,
+    "id": "full_b116",
+    "start": 554.74,
     "dur": 4.04,
     "kind": "full",
-    "src": "broll/vp_b115.mp4",
+    "src": "broll/vp_b116.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "in"
   },
   {
-    "id": "tail_b115",
-    "start": 551.98,
-    "dur": 2.76,
+    "id": "tail_b116",
+    "start": 558.78,
+    "dur": 1.74,
     "kind": "full",
-    "src": "img/vp_b115.jpg",
+    "src": "img/vp_b116.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "out"
   },
   {
     "id": "quote_16",
@@ -899,6 +1588,15 @@ export const BEATS: Cue[] = [
     "kind": "quote",
     "quote": "La mejor hora es la que usted puede repetir los 365 días del año.",
     "author": "Dra. Valeria Alcázar"
+  },
+  {
+    "id": "full_b118",
+    "start": 567.02,
+    "dur": 3.8,
+    "kind": "full",
+    "src": "broll/vp_b118.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "full_b120",
@@ -937,14 +1635,13 @@ export const BEATS: Cue[] = [
     "sub": "Un desayuno que peleaba contra la pastilla"
   },
   {
-    "id": "gap_b124_591",
+    "id": "full_b123",
     "start": 591.28,
     "dur": 2.88,
     "kind": "full",
-    "src": "img/vp_b124.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b123.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b124",
@@ -1052,7 +1749,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b131.jpg",
     "video": false,
-    "ken": "out",
+    "ken": "in",
     "variant": "whip"
   },
   {
@@ -1132,14 +1829,31 @@ export const BEATS: Cue[] = [
     "sub": "Amlodipino, felodipino, nifedipino"
   },
   {
-    "id": "gap_b134_646",
+    "id": "full_b133",
+    "start": 640.92,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b133.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "tail_b133",
+    "start": 644.96,
+    "dur": 0.76,
+    "kind": "full",
+    "src": "img/vp_b133.jpg",
+    "video": false,
+    "ken": "in"
+  },
+  {
+    "id": "full_b134",
     "start": 645.88,
     "dur": 3.86,
     "kind": "full",
-    "src": "img/vp_b134.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b134.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "full_b135",
@@ -1250,14 +1964,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b143_687",
+    "id": "full_b143",
     "start": 686.62,
     "dur": 1.54,
     "kind": "full",
-    "src": "img/vp_b143.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b143.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "carousel_20",
@@ -1295,14 +2008,13 @@ export const BEATS: Cue[] = [
     "title": "Lo que pelea contra su pastilla"
   },
   {
-    "id": "gap_b145_694",
+    "id": "full_b144",
     "start": 694.16,
     "dur": 2.96,
     "kind": "full",
-    "src": "img/vp_b145.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b144.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b145",
@@ -1323,14 +2035,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b146_702",
+    "id": "full_b146",
     "start": 702.24,
     "dur": 2.6,
     "kind": "full",
-    "src": "img/vp_b146.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b146.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "beforeafter_21",
@@ -1350,7 +2061,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b148.jpg",
     "video": false,
-    "ken": "in",
+    "ken": "out",
     "variant": "whip"
   },
   {
@@ -1426,14 +2137,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b152_736",
+    "id": "full_b152",
     "start": 736.22,
     "dur": 0.94,
     "kind": "full",
-    "src": "img/vp_b152.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b152.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "checklist_22",
@@ -1452,24 +2162,22 @@ export const BEATS: Cue[] = [
     "mood": "sage"
   },
   {
-    "id": "gap_b153_743",
+    "id": "full_b153",
     "start": 743.16,
-    "dur": 4.2,
+    "dur": 3.78,
     "kind": "full",
-    "src": "img/vp_b153.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b153.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
-    "id": "gap_b154_747",
-    "start": 747.36,
-    "dur": 1.86,
+    "id": "full_b154",
+    "start": 746.94,
+    "dur": 2.28,
     "kind": "full",
-    "src": "img/vp_b154.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b154.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "stat_23",
@@ -1483,14 +2191,13 @@ export const BEATS: Cue[] = [
     "mood": "gold"
   },
   {
-    "id": "gap_b155_755",
+    "id": "full_b155",
     "start": 755.22,
     "dur": 3.38,
     "kind": "full",
-    "src": "img/vp_b155.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b155.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b156",
@@ -1555,14 +2262,13 @@ export const BEATS: Cue[] = [
     "title": "Lo que pelea contra su pastilla"
   },
   {
-    "id": "gap_b160_772",
+    "id": "full_b160",
     "start": 772.06,
     "dur": 4.04,
     "kind": "full",
-    "src": "img/vp_b160.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b160.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b161",
@@ -1576,12 +2282,21 @@ export const BEATS: Cue[] = [
   {
     "id": "gap_b162_780",
     "start": 780.14,
-    "dur": 2.82,
+    "dur": 0.6,
     "kind": "full",
     "src": "img/vp_b162.jpg",
     "video": false,
     "ken": "in",
     "variant": "whip"
+  },
+  {
+    "id": "full_b162",
+    "start": 780.74,
+    "dur": 2.22,
+    "kind": "full",
+    "src": "broll/vp_b162.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "molecule_25",
@@ -1604,24 +2319,22 @@ export const BEATS: Cue[] = [
     "sub": "Dele la vuelta a la caja y lea los ingredientes"
   },
   {
-    "id": "gap_b164_789",
+    "id": "full_b164",
     "start": 788.96,
-    "dur": 4.2,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b164.mp4",
+    "video": true,
+    "ken": "in"
+  },
+  {
+    "id": "tail_b164",
+    "start": 793,
+    "dur": 1.72,
     "kind": "full",
     "src": "img/vp_b164.jpg",
     "video": false,
-    "ken": "out",
-    "variant": "whip"
-  },
-  {
-    "id": "gap_b165_793",
-    "start": 793.16,
-    "dur": 1.56,
-    "kind": "full",
-    "src": "img/vp_b165.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "ken": "out"
   },
   {
     "id": "full_b165",
@@ -1651,23 +2364,22 @@ export const BEATS: Cue[] = [
     "ken": "left"
   },
   {
-    "id": "gap_b167_805",
-    "start": 804.58,
-    "dur": 4.2,
+    "id": "full_b167",
+    "start": 804.82,
+    "dur": 4.04,
     "kind": "full",
-    "src": "img/vp_b167.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b167.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "gap_b168_809",
-    "start": 808.78,
-    "dur": 0.62,
+    "start": 808.86,
+    "dur": 0.54,
     "kind": "full",
     "src": "img/vp_b168.jpg",
     "video": false,
-    "ken": "in",
+    "ken": "out",
     "variant": "whip"
   },
   {
@@ -1706,24 +2418,31 @@ export const BEATS: Cue[] = [
     "title": "Lo que pelea contra su pastilla"
   },
   {
-    "id": "gap_b169_815",
+    "id": "full_b169",
     "start": 815.4,
-    "dur": 4.2,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b169.mp4",
+    "video": true,
+    "ken": "out"
+  },
+  {
+    "id": "tail_b169",
+    "start": 819.44,
+    "dur": 0.92,
     "kind": "full",
     "src": "img/vp_b169.jpg",
     "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "ken": "in"
   },
   {
-    "id": "gap_b170_820",
-    "start": 819.6,
-    "dur": 4.2,
+    "id": "full_b170",
+    "start": 820.36,
+    "dur": 3.44,
     "kind": "full",
-    "src": "img/vp_b170.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b170.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "hero_27",
@@ -1736,14 +2455,13 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
-    "id": "gap_b172_830",
+    "id": "full_b171",
     "start": 829.8,
     "dur": 1.42,
     "kind": "full",
-    "src": "img/vp_b172.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b171.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b172",
@@ -1909,14 +2627,22 @@ export const BEATS: Cue[] = [
     "author": "Dra. Valeria Alcázar"
   },
   {
-    "id": "gap_b184_887",
+    "id": "full_b183",
     "start": 886.88,
-    "dur": 2.7,
+    "dur": 0.82,
     "kind": "full",
-    "src": "img/vp_b184.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b183.mp4",
+    "video": true,
+    "ken": "right"
+  },
+  {
+    "id": "full_b184",
+    "start": 887.7,
+    "dur": 1.88,
+    "kind": "full",
+    "src": "broll/vp_b184.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "chapter_29",
@@ -1928,14 +2654,13 @@ export const BEATS: Cue[] = [
     "sub": "Dos años de números falsos"
   },
   {
-    "id": "gap_b185_896",
+    "id": "full_b185",
     "start": 896.08,
     "dur": 3.7,
     "kind": "full",
-    "src": "img/vp_b185.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b185.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "full_b186",
@@ -2094,14 +2819,13 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
-    "id": "gap_b197_952",
+    "id": "full_b197",
     "start": 951.72,
     "dur": 4.04,
     "kind": "full",
-    "src": "img/vp_b197.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b197.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "full_b198",
@@ -2129,14 +2853,13 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
-    "id": "gap_b200_965",
+    "id": "full_b200",
     "start": 964.98,
-    "dur": 4.1,
+    "dur": 4.04,
     "kind": "full",
-    "src": "img/vp_b200.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b200.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b201",
@@ -2372,14 +3095,13 @@ export const BEATS: Cue[] = [
     "ken": "left"
   },
   {
-    "id": "gap_b219_1041",
-    "start": 1040.82,
-    "dur": 1.06,
+    "id": "full_b219",
+    "start": 1040.9,
+    "dur": 0.98,
     "kind": "full",
-    "src": "img/vp_b219.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b219.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "lowerthird_33",
@@ -2390,14 +3112,13 @@ export const BEATS: Cue[] = [
     "sub": "Desde ahí, siempre el que dio el número más alto"
   },
   {
-    "id": "gap_b221_1047",
+    "id": "full_b220",
     "start": 1047.38,
     "dur": 2.16,
     "kind": "full",
-    "src": "img/vp_b221.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b220.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b221",
@@ -2454,14 +3175,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b225_1067",
+    "id": "full_b225",
     "start": 1066.78,
     "dur": 3.38,
     "kind": "full",
-    "src": "img/vp_b225.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b225.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "checklist_34",
@@ -2477,14 +3197,13 @@ export const BEATS: Cue[] = [
     "mood": "sage"
   },
   {
-    "id": "gap_b227_1076",
+    "id": "full_b227",
     "start": 1076.16,
-    "dur": 4.12,
+    "dur": 4.04,
     "kind": "full",
-    "src": "img/vp_b227.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b227.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b228",
@@ -2543,14 +3262,22 @@ export const BEATS: Cue[] = [
     "sub": "Las dosis que faltaban"
   },
   {
-    "id": "gap_b233_1103",
+    "id": "full_b231",
+    "start": 1098.78,
+    "dur": 1.08,
+    "kind": "full",
+    "src": "broll/vp_b231.mp4",
+    "video": true,
+    "ken": "right"
+  },
+  {
+    "id": "full_b232",
     "start": 1103.26,
     "dur": 1.32,
     "kind": "full",
-    "src": "img/vp_b233.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b232.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b233",
@@ -2625,14 +3352,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b239_1131",
+    "id": "full_b239",
     "start": 1131.2,
     "dur": 3.64,
     "kind": "full",
-    "src": "img/vp_b239.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b239.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "stat_37",
@@ -2665,14 +3391,13 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
-    "id": "gap_b243_1151",
+    "id": "full_b243",
     "start": 1150.76,
     "dur": 3.28,
     "kind": "full",
-    "src": "img/vp_b243.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b243.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b244",
@@ -2729,14 +3454,13 @@ export const BEATS: Cue[] = [
     "ken": "right"
   },
   {
-    "id": "gap_b248_1173",
+    "id": "full_b248",
     "start": 1173.42,
     "dur": 1.62,
     "kind": "full",
-    "src": "img/vp_b248.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b248.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "lowerthird_39",
@@ -2747,14 +3471,13 @@ export const BEATS: Cue[] = [
     "sub": "Mareo, visión borrosa y caída"
   },
   {
-    "id": "gap_b250_1181",
+    "id": "full_b249",
     "start": 1180.54,
     "dur": 1.82,
     "kind": "full",
-    "src": "img/vp_b250.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b249.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "full_b250",
@@ -2833,14 +3556,13 @@ export const BEATS: Cue[] = [
     "mood": "sage"
   },
   {
-    "id": "gap_b256_1209",
+    "id": "full_b256",
     "start": 1208.74,
     "dur": 3.06,
     "kind": "full",
-    "src": "img/vp_b256.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b256.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b257",
@@ -2942,14 +3664,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b265_1242",
+    "id": "full_b265",
     "start": 1242.38,
     "dur": 3.46,
     "kind": "full",
-    "src": "img/vp_b265.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b265.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "lowerthird_41",
@@ -2960,24 +3681,22 @@ export const BEATS: Cue[] = [
     "sub": "Se retiran con el médico y poco a poco"
   },
   {
-    "id": "gap_b267_1251",
+    "id": "full_b267",
     "start": 1251.34,
-    "dur": 4.2,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b267.mp4",
+    "video": true,
+    "ken": "right"
+  },
+  {
+    "id": "tail_b267",
+    "start": 1255.38,
+    "dur": 0.72,
     "kind": "full",
     "src": "img/vp_b267.jpg",
     "video": false,
-    "ken": "in",
-    "variant": "whip"
-  },
-  {
-    "id": "gap_b268_1256",
-    "start": 1255.54,
-    "dur": 0.56,
-    "kind": "full",
-    "src": "img/vp_b268.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "ken": "in"
   },
   {
     "id": "full_b268",
@@ -3025,14 +3744,13 @@ export const BEATS: Cue[] = [
     "ken": "right"
   },
   {
-    "id": "gap_b272_1272",
+    "id": "full_b272",
     "start": 1272.02,
     "dur": 2.4,
     "kind": "full",
-    "src": "img/vp_b272.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b272.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "cta_42",
@@ -3049,14 +3767,13 @@ export const BEATS: Cue[] = [
     ]
   },
   {
-    "id": "gap_b275_1281",
+    "id": "full_b274",
     "start": 1280.92,
     "dur": 0.94,
     "kind": "full",
-    "src": "img/vp_b275.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b274.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "full_b275",
@@ -3083,7 +3800,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b277.jpg",
     "video": false,
-    "ken": "in",
+    "ken": "out",
     "variant": "whip"
   },
   {
@@ -3255,7 +3972,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b293.jpg",
     "video": false,
-    "ken": "out",
+    "ken": "in",
     "variant": "whip"
   },
   {
@@ -3323,14 +4040,13 @@ export const BEATS: Cue[] = [
     "mood": "gold"
   },
   {
-    "id": "gap_b299_1375",
+    "id": "full_b299",
     "start": 1375.38,
     "dur": 3.62,
     "kind": "full",
-    "src": "img/vp_b299.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b299.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b300",
@@ -3371,14 +4087,22 @@ export const BEATS: Cue[] = [
     "sub": "Cuente hasta treinta moviendo los tobillos"
   },
   {
-    "id": "gap_b305_1394",
+    "id": "full_b303",
+    "start": 1390.12,
+    "dur": 1.26,
+    "kind": "full",
+    "src": "broll/vp_b303.mp4",
+    "video": true,
+    "ken": "right"
+  },
+  {
+    "id": "full_b304",
     "start": 1393.6,
     "dur": 1.72,
     "kind": "full",
-    "src": "img/vp_b305.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b304.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b305",
@@ -3406,7 +4130,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b307.jpg",
     "video": false,
-    "ken": "in",
+    "ken": "out",
     "variant": "whip"
   },
   {
@@ -3479,7 +4203,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b312.jpg",
     "video": false,
-    "ken": "out",
+    "ken": "in",
     "variant": "whip"
   },
   {
@@ -3537,14 +4261,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b316_1444",
+    "id": "full_b316",
     "start": 1443.86,
     "dur": 0.96,
     "kind": "full",
-    "src": "img/vp_b316.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b316.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "beforeafter_47",
@@ -3558,14 +4281,13 @@ export const BEATS: Cue[] = [
     "imageB": "img/vp_b316.jpg"
   },
   {
-    "id": "gap_b318_1451",
+    "id": "full_b317",
     "start": 1450.82,
     "dur": 0.84,
     "kind": "full",
-    "src": "img/vp_b318.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b317.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "full_b318",
@@ -3713,14 +4435,13 @@ export const BEATS: Cue[] = [
     "mood": "sage"
   },
   {
-    "id": "gap_b331_1506",
+    "id": "full_b331",
     "start": 1506,
-    "dur": 4.16,
+    "dur": 4.04,
     "kind": "full",
-    "src": "img/vp_b331.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b331.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b332",
@@ -3768,14 +4489,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b336_1525",
+    "id": "full_b336",
     "start": 1524.62,
     "dur": 1.94,
     "kind": "full",
-    "src": "img/vp_b336.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b336.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "stat_49",
@@ -3788,24 +4508,22 @@ export const BEATS: Cue[] = [
     "mood": "gold"
   },
   {
-    "id": "gap_b338_1533",
+    "id": "full_b338",
     "start": 1533.06,
-    "dur": 4.2,
+    "dur": 4.04,
+    "kind": "full",
+    "src": "broll/vp_b338.mp4",
+    "video": true,
+    "ken": "left"
+  },
+  {
+    "id": "tail_b338",
+    "start": 1537.1,
+    "dur": 1.72,
     "kind": "full",
     "src": "img/vp_b338.jpg",
     "video": false,
-    "ken": "in",
-    "variant": "whip"
-  },
-  {
-    "id": "gap_b339_1537",
-    "start": 1537.26,
-    "dur": 1.56,
-    "kind": "full",
-    "src": "img/vp_b339.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "ken": "in"
   },
   {
     "id": "full_b339",
@@ -3907,14 +4625,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b349_1574",
+    "id": "full_b349",
     "start": 1573.98,
     "dur": 1.9,
     "kind": "full",
-    "src": "img/vp_b349.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b349.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "hero_50",
@@ -3929,14 +4646,13 @@ export const BEATS: Cue[] = [
     "mood": "gold"
   },
   {
-    "id": "gap_b351_1582",
+    "id": "full_b350",
     "start": 1582.38,
     "dur": 1.26,
     "kind": "full",
-    "src": "img/vp_b351.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b350.mp4",
+    "video": true,
+    "ken": "left"
   },
   {
     "id": "full_b351",
@@ -3954,7 +4670,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b352.jpg",
     "video": false,
-    "ken": "in",
+    "ken": "out",
     "variant": "whip"
   },
   {
@@ -4030,14 +4746,13 @@ export const BEATS: Cue[] = [
     "ken": "right"
   },
   {
-    "id": "gap_b360_1614",
+    "id": "full_b360",
     "start": 1613.7,
     "dur": 1.14,
     "kind": "full",
-    "src": "img/vp_b360.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b360.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "stat_51",
@@ -4105,14 +4820,13 @@ export const BEATS: Cue[] = [
     "ken": "in"
   },
   {
-    "id": "gap_b367_1639",
+    "id": "full_b367",
     "start": 1639.46,
-    "dur": 4.2,
+    "dur": 4.04,
     "kind": "full",
-    "src": "img/vp_b367.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b367.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "hero_52",
@@ -4125,14 +4839,13 @@ export const BEATS: Cue[] = [
     "mood": "terracotta"
   },
   {
-    "id": "gap_b370_1650",
+    "id": "full_b369",
     "start": 1649.84,
     "dur": 0.98,
     "kind": "full",
-    "src": "img/vp_b370.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b369.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "full_b370",
@@ -4198,14 +4911,13 @@ export const BEATS: Cue[] = [
     "author": "La frase que hay que llevar a la consulta"
   },
   {
-    "id": "gap_b376_1676",
+    "id": "full_b376",
     "start": 1675.64,
     "dur": 2.94,
     "kind": "full",
-    "src": "img/vp_b376.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b376.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "full_b377",
@@ -4309,14 +5021,13 @@ export const BEATS: Cue[] = [
     "imageB": "img/vp_b388.jpg"
   },
   {
-    "id": "gap_b388_1717",
+    "id": "full_b387",
     "start": 1717.24,
     "dur": 1.3,
     "kind": "full",
-    "src": "img/vp_b388.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b387.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b388",
@@ -4360,14 +5071,13 @@ export const BEATS: Cue[] = [
     "mood": "sage"
   },
   {
-    "id": "gap_b393_1735",
+    "id": "full_b393",
     "start": 1735.24,
     "dur": 3.64,
     "kind": "full",
-    "src": "img/vp_b393.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b393.mp4",
+    "video": true,
+    "ken": "out"
   },
   {
     "id": "full_b394",
@@ -4457,14 +5167,13 @@ export const BEATS: Cue[] = [
     "mood": "sage"
   },
   {
-    "id": "gap_b404_1775",
+    "id": "full_b403",
     "start": 1774.9,
     "dur": 0.96,
     "kind": "full",
-    "src": "img/vp_b404.jpg",
-    "video": false,
-    "ken": "in",
-    "variant": "whip"
+    "src": "broll/vp_b403.mp4",
+    "video": true,
+    "ken": "right"
   },
   {
     "id": "full_b404",
@@ -4593,14 +5302,13 @@ export const BEATS: Cue[] = [
     "ken": "right"
   },
   {
-    "id": "gap_b416_1816",
+    "id": "full_b416",
     "start": 1816.08,
     "dur": 1.86,
     "kind": "full",
-    "src": "img/vp_b416.jpg",
-    "video": false,
-    "ken": "out",
-    "variant": "whip"
+    "src": "broll/vp_b416.mp4",
+    "video": true,
+    "ken": "in"
   },
   {
     "id": "quote_57",
@@ -4698,7 +5406,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b425.jpg",
     "video": false,
-    "ken": "in",
+    "ken": "out",
     "variant": "whip"
   },
   {
@@ -4771,7 +5479,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b431.jpg",
     "video": false,
-    "ken": "out",
+    "ken": "in",
     "variant": "whip"
   },
   {

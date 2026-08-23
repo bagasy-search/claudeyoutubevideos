@@ -44,7 +44,7 @@ const C = (phrase, kind, props = {}, dur = CAP_COMP) => {
 };
 
 // — apertura
-C(0, 'talk', {title: 'Nunca tome la pastilla de la tensión a esta hora', hot: ['a esta hora'], kicker: 'Dra. Valeria Alcázar'}, 5.5);
+C(0, 'talk', {title: 'Nunca tome la pastilla de la tensión a esta hora', hot: ['a esta hora'], kicker: 'Dra. Valeria Alcázar'}, 4.5);
 
 // — las cinco pistas = divisores de capítulo
 C('Primera pista', 'chapter', {index: 'Pista 1', title: 'El blíster encima del microondas', sub: 'La hora que no era una hora'}, 6.5);
@@ -143,22 +143,116 @@ const beats = [];
 let idc = 0;
 for (const c of COMP) beats.push({id: `${c.kind}_${++idc}`, ...c});
 
-let nClip = 0, nPhoto = 0, nAvatar = 0;
+/* ===================== COLD OPEN COMO TRAILER (0-75.5s) =====================
+   La escena mas visual del guion (el hervidor, la taza que se va de la mano, el te,
+   ella en el suelo) estaba resuelta con 33 de 62 segundos de cara hablando.
+   Aca va montada a mano, anclada a lo que se dice en cada ms, con ritmo de trailer:
+   rafagas de ~1,1s + planos SOSTENIDOS en los tres golpes. agnes es gratis: 40 tomas
+   propias del pack `vp_t*` + los `vp_x*`.                                            */
+const TRAILER_END = 75.5;
+const TR = [
+  {s: 0.00, d: 2.20, a: "t00"},   // Eran las siete y doce de la manana
+  {s: 2.20, d: 1.30, a: "t01"},   // se tomo su pastilla
+  {s: 3.50, d: 1.20, a: "t02"},   // para la tension
+  {s: 4.70, d: 1.10, a: "t03"},   // la misma que llevaba nueve anos
+  {s: 5.80, d: 1.10, a: "t04"},   // el sitio gastado del blister
+  {s: 6.90, d: 1.10, a: "b001"},   // el blister encima del microondas
+  {s: 8.00, d: 1.10, a: "t05"},   // la cocina vacia
+  {s: 9.10, d: 3.00, a: "t06"},   // SOSTENIDO tirada en el suelo
+  {s: 12.10, d: 2.20, a: "t07"},   // SOSTENIDO la mano derecha inmovil
+  {s: 14.30, d: 1.30, a: "t08"},   // los dedos que no cierran
+  {s: 15.60, d: 2.50, a: "t09"},   // SOSTENIDO el ojo contra las baldosas
+  {s: 18.10, d: 1.50, a: "t10"},   // el hervidor silbando
+  {s: 19.60, d: 1.60, a: "t11"},   // la taza de las amapolas
+  {s: 21.20, d: 1.60, a: "t12"},   // la que le regalo su hija
+  {s: 22.80, d: 1.80, a: "t13"},   // el blister gastado
+  {s: 24.60, d: 2.00, a: "t14"},   // donde llevaba nueve anos
+  {s: 26.60, d: 1.60, a: "t15"},   // un trago de zumo
+  {s: 28.20, d: 1.80, a: "t16"},   // se dio la vuelta
+  {s: 30.00, d: 1.90, a: "t17"},   // a bajar el pan
+  {s: 31.90, d: 1.10, a: "t18"},   // el agarre que se suelta
+  {s: 33.00, d: 1.20, a: "t19"},   // la taza en el aire
+  {s: 34.20, d: 1.50, a: "t20"},   // el te contra las baldosas
+  {s: 35.70, d: 1.60, a: "t21"},   // ella la vio caer
+  {s: 37.30, d: 2.30, a: "t22"},   // SOSTENIDO la mano abierta
+  {s: 39.60, d: 2.00, a: "t23"},   // los labios que no forman la palabra
+  {s: 41.60, d: 2.90, a: "t24"},   // SOSTENIDO la cocina en silencio
+  {s: 44.50, d: 2.30, a: "t25"},   // SOSTENIDO la llave en la cerradura
+  {s: 46.80, d: 1.60, a: "t26"},   // la puerta abriendose
+  {s: 48.40, d: 1.70, a: "t27"},   // las bolsas y las naranjas
+  {s: 50.10, d: 2.70, a: "t28"},   // SOSTENIDO la mejilla en las baldosas
+  {s: 52.80, d: 2.20, a: "t29"},   // el hervidor que seguia silbando
+  {s: 55.00, d: 1.80, a: "t30"},   // la hija de rodillas
+  {s: 56.80, d: 1.60, a: "t31"},   // el telefono en la mano temblando
+  {s: 58.40, d: 1.60, a: "t32"},   // la luz azul en la pared
+  {s: 60.00, d: 1.80, a: "t33"},   // el pasillo del hospital
+  {s: 61.80, d: 2.20, a: "t34"},   // SOSTENIDO las dos manos agarradas
+  {s: 64.00, d: 3.00, a: "t35"},   // SOSTENIDO Elena caminando con su nieta
+  {s: 67.00, d: 1.40, a: "t36"},   // la puerta del colegio
+  {s: 68.40, d: 0.60, a: "t37"},   // la sonrisa
+  {s: 69.00, d: 2.50, a: "t38"},   // la hoja del aparato
+  {s: 71.50, d: 4.00, a: "t39"}   // SOSTENIDO el reloj congelado en las 7:12
+];
+{
+  let usadas = 0, faltan = 0;
+  for (const sh of TR) {
+    const mp4 = `public/broll/${PFX}${sh.a}.mp4`;
+    const jpg = `public/img/${PFX}${sh.a}.jpg`;
+    const png = `public/img/${PFX}${sh.a}.png`;
+    let src = null, video = false;
+    if (fs.existsSync(mp4)) { src = `broll/${PFX}${sh.a}.mp4`; video = true; }
+    else if (fs.existsSync(jpg)) src = `img/${PFX}${sh.a}.jpg`;
+    else if (fs.existsSync(png)) src = `img/${PFX}${sh.a}.png`;
+    if (!src) { faltan++; continue; }
+    beats.push({id: `tr_${sh.a}`, start: sh.s, dur: sh.d, kind: 'full', src, video,
+                ken: usadas % 2 ? 'out' : 'in', variant: 'whip'});
+    usadas++;
+  }
+  console.log(`TRAILER cold open: ${usadas} tomas · faltantes ${faltan}`);
+}
+
+
+let nClip = 0, nPhoto = 0, nAvatar = 0, nExtra = 0;
+// COLD = cold open + gancho. Es la parte MAS VISUAL del guion (el hervidor, la taza que se va
+// de la mano, el te derramandose, ella en el suelo) y en la v1 quedaron 33 de 62 segundos de
+// cara hablando. Aca: cobertura TOTAL y corte al doble de ritmo con tomas extra (agnes es gratis).
+const COLD = 165;
+const haveExtra = (i) => fs.existsSync(`public/broll/${PFX}x${String(i).padStart(2, '0')}.mp4`);
+const extraSrc = (i) => `broll/${PFX}x${String(i).padStart(2, '0')}.mp4`;
+const nextCompAfter = (t) => {
+  const c = occupied.filter(([a]) => a > t).sort((x, y) => x[0] - y[0])[0];
+  return c ? c[0] : Infinity;
+};
 for (let i = 0; i < skel.length; i++) {
-  const b = skel[i];
-  const s = +(b.ms / 1000).toFixed(2);
+  let s = +(skel[i].ms / 1000).toFixed(2);
   const next = i + 1 < skel.length ? skel[i + 1].ms / 1000 : TOTAL;
-  const slot = +(next - s).toFixed(2);
-  if (slot <= 0.4) continue;
+  let slot = +(next - s).toFixed(2);
+  // Si el beat ARRANCA dentro de un componente, no se tira: se corre al final del componente.
+  // (En la v1 se descartaba entero y por eso el `talk` de apertura y el lowerthird de los 18s
+  //  se comieron sus beats vecinos y dejaron huecos de 12 y 9 segundos de avatar solo.)
+  const dentro = occupied.find(([a, b2]) => s >= a && s < b2);
+  if (dentro) { slot = +(slot - (dentro[1] - s)).toFixed(2); s = +dentro[1].toFixed(2); }
+  // y si un componente empieza ANTES de que termine el slot, se recorta contra el.
+  const lim = nextCompAfter(s);
+  if (s + slot > lim) slot = +(lim - s).toFixed(2);
+  if (slot <= 0.8) continue;
+  if (s < TRAILER_END) continue;   // esa zona la monta el TRAILER a mano
   const id = `b${String(i).padStart(3, '0')}`;
-  // En la zona del avatar real dejamos respirar la cara: 1 de cada 3 beats sin tapar.
   const enAvatar = s < AVATAR_END;
-  if (enAvatar && i % 3 === 2) { nAvatar++; continue; }
-  if (overlaps(s, s + slot)) continue;
+  // fuera del cold open dejamos respirar la cara 1 de cada 4; en el cold open NUNCA.
+  if (enAvatar && s > COLD && i % 4 === 3) { nAvatar++; continue; }
   const vid = haveVid(id);
   const ph = havePhoto(id);
   if (!vid && !ph) continue;
   const ken = ['in', 'out', 'left', 'right'][i % 4];
+  // COLD: dos tomas por beat (la del beat + la extra) para cortar a ~2,2s
+  if (s < COLD && vid && haveExtra(i)) {
+    const half = +(slot / 2).toFixed(2);
+    beats.push({id: `full_${id}`, start: s, dur: half, kind: 'full', src: `broll/${PFX}${id}.mp4`, video: true, ken});
+    beats.push({id: `xtra_${id}`, start: +(s + half).toFixed(2), dur: +(slot - half).toFixed(2), kind: 'full', src: extraSrc(i), video: true, ken: ken === 'in' ? 'out' : 'in'});
+    nClip++; nExtra++;
+    continue;
+  }
   if (vid) {
     const d = Math.min(slot, CLIP_DUR);
     beats.push({id: `full_${id}`, start: s, dur: +d.toFixed(2), kind: 'full', src: `broll/${PFX}${id}.mp4`, video: true, ken});
@@ -252,7 +346,7 @@ if (TOTAL - cursor > 0) { huecoFish += TOTAL - cursor; peor = Math.max(peor, TOT
 const nComp = beats.filter((b) => !['talk', 'full'].includes(b.kind)).length;
 const kinds = [...new Set(beats.filter((b) => b.kind !== 'full').map((b) => b.kind))];
 console.log(`=== build_${SLUG} ===`);
-console.log(`beats: ${beats.length} · componentes: ${nComp} · clips: ${nClip} · fotos: ${nPhoto} · avatar libre: ${nAvatar}`);
+console.log(`beats: ${beats.length} · componentes: ${nComp} · clips: ${nClip} (+${nExtra} dobles en cold open) · fotos: ${nPhoto} · avatar libre: ${nAvatar}`);
 console.log(`tipos distintos: ${kinds.length} -> ${kinds.join(', ')}`);
 console.log(`anchors faltantes: ${missing}`);
 console.log(`ZONA FISH descubierta: ${huecoFish.toFixed(1)}s (peor hueco ${peor.toFixed(1)}s)`);
