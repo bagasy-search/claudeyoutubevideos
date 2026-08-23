@@ -92,8 +92,14 @@ function buildWindows(): AvatarWindow[] {
   const HOOK_END = 7.0;
   const post = coll.filter((wnd) => wnd.start < 1.4 || wnd.start >= HOOK_END);
   post.push({ start: 0, mode: "full" }, { start: 1.4, mode: "hidden" });
-  const resume = coll.filter((wnd) => wnd.start < HOOK_END).pop();
-  post.push({ start: HOOK_END, mode: resume && resume.start >= 1.4 ? "hidden" : (resume?.mode ?? "full") });
+  // ⛔ FIX (AUDITOR, 1ra corrida): al terminar el HOOK NO se puede "retomar" el hidden que puso el
+  // propio hook — hay que preguntar si en ese instante HAY contenido. Acá el 1er clip recién
+  // arranca en 10.38s, así que el avatar quedaba oculto sobre nada: 3.57s de PANTALLA NEGRA
+  // medidos con blackdetect entre 6.8s y 10.38s, y en el peor lugar posible (arranque del video).
+  const hayContenido = (t: number) =>
+    GRCOFFEE_COVER.some((c: any) => t >= c.start - 0.05 && t < c.start + c.cov - 0.05) ||
+    compBeats.some((b: any) => !OVERLAY.has(b.kind) && t >= b.start && t < b.start + compDur(b));
+  post.push({ start: HOOK_END, mode: hayContenido(HOOK_END) ? "hidden" : "full" });
   post.sort((a, b) => a.start - b.start);
   const out: AvatarWindow[] = [];
   for (const x of post) { if (!out.length || out[out.length - 1].mode !== x.mode) out.push(x); }
