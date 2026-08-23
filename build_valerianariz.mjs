@@ -66,22 +66,22 @@ const C = (phrase, kind, props = {}, dur = CAP_COMP) => {
 C(0, 'talk', {title: 'Su nariz avisa años antes que su memoria', hot: ['años antes'], kicker: 'Dra. Valeria Alcázar'}, 6.0);
 C('porque no es el fuego', 'hero', {kicker: 'Lo importante', title: 'Lo que falló esa mañana no fue la cabeza', sub: 'Se acordaba del paquete, del laurel y del fuego al dos', image: ph('b014'), mood: 'terracotta'}, 6.5);
 C('era su nariz', 'hero', {kicker: 'El fallo', title: 'Era su nariz', hot: ['nariz'], sub: 'Cuarenta minutos a cuatro metros del humo', image: ph('b010'), side: 'right', mood: 'terracotta'}, 6.0);
-C('uno de esos silencios que valen', 'quote', {quote: 'Un silencio al otro lado del teléfono que vale más que un análisis entero.', author: 'La llamada de su hija'}, 6.5);
+C('uno de esos silencios que valen', 'quote', {role: '', kicker: 'La llamada', image: ph('b023'), quote: 'Un silencio al otro lado del teléfono que vale más que un análisis entero.', author: 'La llamada de su hija'}, 6.5);
 C('la fecha exacta en que empezo todo esto', 'hero', {kicker: 'El detalle', title: 'La familia sabe la fecha exacta', sub: 'Está grabada en un vídeo del móvil', image: ph('b029'), mood: 'gold'}, 6.5);
 C('En una comida de Navidad', 'chapter', {kicker: 'Tres años antes', index: 'La escena', title: 'Una comida de Navidad', sub: 'Lo vieron once personas y no lo entendió ninguna'}, 6.5);
 
 /* — PRESENTACIÓN — */
 C('Yo soy la doctora Valeria', 'lowerthird', {name: 'Dra. Valeria Alcázar', role: 'Medicina estética · el cuerpo a partir de los 50', topic: 'La nariz y la memoria'}, 6.0);
 C('Hoy le voy a dar las cinco senales', 'chapter', {kicker: 'Lo que viene', index: 'Las 5', title: 'Las cinco señales que da la nariz', sub: 'Y una sexta que decide si las otras sirven'}, 6.5);
-C('Lo que de verdad avisa no es cuanto huele usted', 'quote', {quote: 'Lo que avisa no es cuánto huele usted. Es la distancia entre lo que cree que huele y lo que huele de verdad.', author: 'Dra. Valeria Alcázar'}, 7.0);
-C('Son dos numeros y lo que importa es la resta', 'stat', {value: 2, label: 'Números en un papel', sub: 'Y lo único que importa es la resta entre los dos', mood: 'gold', image: ph('b050')}, 6.0);
+C('Lo que de verdad avisa no es cuanto huele usted', 'quote', {role: '', kicker: 'La sexta cosa', image: ph('b050'), quote: 'Lo que avisa no es cuánto huele usted. Es la distancia entre lo que cree que huele y lo que huele de verdad.', author: 'Dra. Valeria Alcázar'}, 7.0);
+C('Son dos numeros y lo que importa es la resta', 'stat', {suffix: '', kicker: 'La sexta cosa', value: 2, label: 'Números en un papel', sub: 'Y lo único que importa es la resta entre los dos', mood: 'gold', image: ph('b050')}, 6.0);
 
 /* — EL CEREBRO — */
 C('el olfato es el unico que no hace escala', 'beforeafter', {kicker: 'Por qué la nariz', title: 'El único sentido que no hace escala', labelA: 'Vista, oído y tacto pasan por la centralita', labelB: 'El olfato entra directo', imageA: ph('b059'), imageB: ph('b060')}, 6.5);
-C('justo al lado de la amigdala', 'molecule', {centerLabel: 'Bulbo olfatorio', nodes: [{label: 'Amígdala'}, {label: 'Hipocampo'}, {label: 'Corteza'}, {label: 'Emoción'}], title: 'Aterriza en la zona más antigua del cerebro', sub: 'Pegado a donde se fabrica la memoria'}, 7.0);
-C('Eso no es sentimentalismo', 'quote', {quote: 'Eso no es sentimentalismo. Es fontanería: están cableados juntos.', author: 'Dra. Valeria Alcázar'}, 6.0);
+C('justo al lado de la amigdala', 'molecule', {kicker: 'Cómo entra el olfato', image: ph('b061'), centerLabel: 'Bulbo olfatorio', nodes: [{label: 'Amígdala'}, {label: 'Hipocampo'}, {label: 'Corteza'}, {label: 'Emoción'}], title: 'Aterriza en la zona más antigua del cerebro', sub: 'Pegado a donde se fabrica la memoria'}, 7.0);
+C('Eso no es sentimentalismo', 'quote', {role: '', kicker: 'Cómo está cableado', image: ph('b064'), quote: 'Eso no es sentimentalismo. Es fontanería: están cableados juntos.', author: 'Dra. Valeria Alcázar'}, 6.0);
 C('el incendio empieza en el cuarto de al lado', 'hero', {kicker: 'El orden', title: 'El incendio empieza en el cuarto de al lado', hot: ['al lado'], sub: 'Por eso la nariz se entera antes que la memoria', image: ph('b069'), mood: 'terracotta'}, 6.5);
-C('hasta 10 anos antes', 'stat', {value: 10, suffix: ' años', label: 'Antes de que aparezca ningún problema de memoria', sub: 'Es lo que ven algunos estudios de seguimiento', mood: 'gold', image: ph('b073')}, 6.5);
+C('hasta 10 anos antes', 'stat', {kicker: 'Lo que ven los estudios', value: 10, suffix: ' años', label: 'Antes de que aparezca ningún problema de memoria', sub: 'Es lo que ven algunos estudios de seguimiento', mood: 'gold', image: ph('b073')}, 6.5);
 
 /* — EL AVISO DE HONESTIDAD — */
 C('Perder olfato no significa tener Alzheimer', 'hero', {kicker: 'Léalo antes de seguir', title: 'Perder olfato no significa tener alzhéimer', hot: ['no significa'], sub: 'La inmensa mayoría no lo va a desarrollar jamás', image: ph('b078'), mood: 'sage'}, 7.0);
@@ -90,9 +90,9 @@ C('El olfato se estropea por muchisimas cosas', 'checklist', {kicker: 'Antes de 
 /* — SEÑAL 1 — */
 C('Senal numero 1', 'chapter', {kicker: 'Señal', index: '01', title: 'No huele menos: confunde', sub: 'La que todo el mundo conoce es la que menos vale'}, 6.5);
 C('Su olfato tiene dos capacidades distintas', 'beforeafter', {kicker: 'Dos cosas distintas', title: 'Detectar no es identificar', labelA: 'Detectar: saber que hay algo', labelB: 'Identificar: saber qué es', imageA: ph('b089'), imageB: ph('b090')}, 6.5);
-C('Detectar es la nariz', 'molecule', {centerLabel: 'Identificar', nodes: [{label: 'Nariz'}, {label: 'Archivo'}, {label: 'Corteza'}, {label: 'La palabra'}], title: 'Detectar es la nariz. Identificar es el cerebro.', sub: 'Quien abre el archivo y devuelve la palabra es la corteza'}, 7.0);
+C('Detectar es la nariz', 'molecule', {kicker: 'Las dos capacidades', image: ph('b092'), centerLabel: 'Identificar', nodes: [{label: 'Nariz'}, {label: 'Archivo'}, {label: 'Corteza'}, {label: 'La palabra'}], title: 'Detectar es la nariz. Identificar es el cerebro.', sub: 'Quien abre el archivo y devuelve la palabra es la corteza'}, 7.0);
 C('chocolate y no rectifica', 'beforeafter', {kicker: 'El caso', title: 'Lo que había y lo que dijo', labelA: 'En el frasco: café molido', labelB: 'Ella dijo: chocolate', imageA: ph('b099'), imageB: ph('b100')}, 6.5);
-C('preguntese si acierta', 'quote', {quote: 'No se pregunte cuánto huele. Pregúntese si acierta.', author: 'La regla de la señal 1'}, 6.0);
+C('preguntese si acierta', 'quote', {role: '', kicker: 'La regla de la señal 1', image: ph('b104'), quote: 'No se pregunte cuánto huele. Pregúntese si acierta.', author: 'La regla de la señal 1'}, 6.0);
 
 /* — SEÑAL 2 — */
 C('Senal numero dos', 'chapter', {kicker: 'Señal', index: '02', title: 'La comida ha dejado de saber', sub: 'Y en la mesa aparecen la sal y el azúcar'}, 6.5);
@@ -100,8 +100,8 @@ C('Su lengua solo distingue cinco cosas', 'checklist', {kicker: 'La lengua', tit
 C('Dice que la fruta ya no sabe como antes', 'checklist', {kicker: 'Lo que dice en su lugar', title: 'Nadie dice “he perdido el olfato”', items: ['La fruta ya no sabe como antes', 'La carne está sosa', 'El tomate no sabe a tomate', 'Tú no cocinas como cocinaba yo'], mood: 'terracotta'}, 7.0);
 C('pierde el placer', 'hero', {kicker: 'Lo peligroso', title: 'No pierde el apetito: pierde el placer', hot: ['el placer'], sub: 'Y lo sustituye por sal y por azúcar', image: ph('b118'), mood: 'terracotta'}, 6.5);
 C('Carmen llevaba haciendo el mismo asado', 'chapter', {kicker: 'La escena', index: 'Navidad', title: 'El asado que era su firma', sub: 'Once personas lo esperaban todo el año'}, 6.5);
-C('acabo salandolo el triple', 'stat', {value: 3, prefix: '×', label: 'La sal que acabó echándole al asado', sub: 'Ella lo probó y dijo, en voz alta, que estaba soso', mood: 'terracotta', image: ph('b127')}, 6.5);
-C('Se rieron con muchisimo carino', 'quote', {quote: 'Estaban oyendo el aviso más temprano que existe, y sonaba como una anécdota de abuela.', author: 'La mesa de Navidad'}, 7.0);
+C('acabo salandolo el triple', 'stat', {suffix: '', kicker: 'La Navidad de Carmen', value: 3, prefix: '×', label: 'La sal que acabó echándole al asado', sub: 'Ella lo probó y dijo, en voz alta, que estaba soso', mood: 'terracotta', image: ph('b127')}, 6.5);
+C('Se rieron con muchisimo carino', 'quote', {role: '', kicker: 'La mesa de Navidad', image: ph('b129'), quote: 'Estaban oyendo el aviso más temprano que existe, y sonaba como una anécdota de abuela.', author: 'La mesa de Navidad'}, 7.0);
 C('Es que esta de luto', 'hero', {kicker: 'La explicación fácil', title: 'Todos pensaron que era la pena', sub: 'El marido había muerto tres meses antes. Nadie pensó en la nariz.', image: ph('b134'), side: 'right', mood: 'terracotta'}, 7.0);
 C('Pregunte estas dos', 'checklist', {kicker: 'En su familia', title: 'Las dos preguntas que sí sirven', items: ['¿Hace cuánto que no te gusta una comida?', '¿Le estás echando más sal que antes?'], mood: 'sage'}, 6.5);
 
@@ -109,15 +109,15 @@ C('Pregunte estas dos', 'checklist', {kicker: 'En su familia', title: 'Las dos p
 C('Senal numero 3', 'chapter', {kicker: 'Señal', index: '03', title: 'Olores que no están', sub: 'O los que están, deformados'}, 6.5);
 C('Es un olor fantasma', 'hero', {kicker: 'El primero', title: 'Un olor fantasma', sub: 'Busca de dónde viene por toda la casa y no viene de ningún sitio', image: ph('b151'), mood: 'terracotta'}, 6.5);
 C('El cafe huele a gasolina', 'beforeafter', {kicker: 'El segundo', title: 'El olor llega deformado', labelA: 'El café huele a gasolina', labelB: 'La colonia de siempre da asco', imageA: ph('b154'), imageB: ph('b156')}, 6.5);
-C('como un telefono que se esta reparando', 'molecule', {centerLabel: 'Se regenera', nodes: [{label: 'Virus'}, {label: 'Neuronas'}, {label: 'Mal conectadas'}, {label: 'Mejora'}], title: 'Después de un virus suele ser buena señal', sub: 'Como un teléfono que se repara y cruza las líneas'}, 6.5);
+C('como un telefono que se esta reparando', 'molecule', {kicker: 'Después de un virus', image: ph('b159'), centerLabel: 'Se regenera', nodes: [{label: 'Virus'}, {label: 'Neuronas'}, {label: 'Mal conectadas'}, {label: 'Mejora'}], title: 'Después de un virus suele ser buena señal', sub: 'Como un teléfono que se repara y cruza las líneas'}, 6.5);
 C('hay una cosa que si es urgente', 'hero', {kicker: 'Esto sí, pronto', title: 'De golpe, siempre el mismo, en episodios cortos', sub: 'Sobre todo si además pierde el hilo unos segundos: consúltelo pronto', image: ph('b164'), mood: 'terracotta'}, 7.0);
 
 /* — SEÑAL 4 — */
 C('Senal numero cuatro', 'chapter', {kicker: 'Señal', index: '04', title: 'No lo sabe', sub: 'Se lo tienen que decir los demás'}, 6.5);
-C('Yo huelo bien y no me estaba mintiendo', 'quote', {quote: 'Bien, doctora. Normal. Yo huelo bien.', author: 'Carmen, semanas después del incendio'}, 6.0);
+C('Yo huelo bien y no me estaba mintiendo', 'quote', {role: '', kicker: 'Lo que ella creía', image: ph('b173'), quote: 'Bien, doctora. Normal. Yo huelo bien.', author: 'Carmen, semanas después del incendio'}, 6.0);
 C('se apaga como se apaga la luz al atardecer', 'hero', {kicker: 'Por qué no se nota', title: 'Se apaga como la luz al atardecer', hot: ['al atardecer'], sub: 'Sin un momento concreto, y el cerebro baja el listón cada día', image: ph('b177'), mood: 'gold'}, 6.5);
-C('el cerebro rellena', 'molecule', {centerLabel: 'El cerebro rellena', nodes: [{label: 'Los ojos'}, {label: 'La memoria'}, {label: 'Lo esperado'}, {label: 'La respuesta'}], title: 'Ve una naranja y “huele” naranja', sub: 'Aunque la nariz esté transmitiendo poquísimo'}, 7.0);
-C('le mintieron a ella desde dentro', 'quote', {quote: 'No mintió. Le mintieron a ella desde dentro.', author: 'El frasco de perfume'}, 6.0);
+C('el cerebro rellena', 'molecule', {kicker: 'El segundo mecanismo', image: ph('b181'), centerLabel: 'El cerebro rellena', nodes: [{label: 'Los ojos'}, {label: 'La memoria'}, {label: 'Lo esperado'}, {label: 'La respuesta'}], title: 'Ve una naranja y “huele” naranja', sub: 'Aunque la nariz esté transmitiendo poquísimo'}, 7.0);
+C('le mintieron a ella desde dentro', 'quote', {role: '', kicker: 'El frasco de perfume', image: ph('b168'), quote: 'No mintió. Le mintieron a ella desde dentro.', author: 'El frasco de perfume'}, 6.0);
 C('su nariz no puede ser su detector de humo', 'checklist', {kicker: 'Si vive sola', title: 'Tres cosas que hay que sacar de la nariz', items: ['El detector de humo', 'El detector de gas', 'La fecha de caducidad'], mood: 'terracotta'}, 6.5);
 C('Un detector de humo', 'step', {step: 1, total: 3, title: 'Un detector con pila en el pasillo', sub: 'Y comprobarlo de vez en cuando', image: ph('b191')}, 5.5);
 C('la costumbre de mirar la fecha del envase', 'step', {step: 2, total: 3, title: 'Mirar la fecha, no olfatear el táper', sub: 'La vista decide, no la nariz', image: ph('b193')}, 5.5);
@@ -126,19 +126,19 @@ C('y si hay gas en casa', 'step', {step: 3, total: 3, title: 'Revisión al día 
 /* — SEÑAL 5 — */
 C('Senal numero cinco', 'chapter', {kicker: 'Señal', index: '05', title: 'Años, y sin resfriado', sub: 'La que separa el ruido de la información'}, 6.5);
 C('Un olfato que va y viene', 'beforeafter', {kicker: 'Dos dibujos', title: 'El que no preocupa y el que sí', labelA: 'Va y viene con el catarro y la alergia', labelB: 'Cuesta abajo, años, sin excusa', imageA: ph('b203'), imageB: ph('b205')}, 6.5);
-C('Y ya van cinco anos', 'stat', {value: 5, suffix: ' años', label: 'Bajando un poco cada año, sin altibajos', sub: 'Ese dibujo es el que se parece al de los estudios', mood: 'terracotta', image: ph('b209')}, 6.5);
+C('Y ya van cinco anos', 'stat', {kicker: 'El dibujo que importa', value: 5, suffix: ' años', label: 'Bajando un poco cada año, sin altibajos', sub: 'Ese dibujo es el que se parece al de los estudios', mood: 'terracotta', image: ph('b209')}, 6.5);
 C('Si le falla mucho mas una fosa nasal que la otra', 'beforeafter', {kicker: 'Un detalle útil', title: 'Una fosa o las dos', labelA: 'Sólo una peor: problema de esa fosa', labelB: 'Las dos por igual: viene de más adentro', imageA: ph('b213'), imageB: ph('b215')}, 6.5);
 
 /* — PILAR Y LA LISTA DE SOSPECHOSOS — */
 C('Pilar tiene 68 anos', 'hero', {kicker: 'La otra historia', title: 'Pilar acertó dos de seis', sub: 'Y se pasó una semana entera sin dormir', image: ph('b219'), mood: 'terracotta'}, 6.5);
-C('Le miraron la nariz por dentro con una camara', 'stat', {value: 6, suffix: ' min', label: 'Lo que tardaron en mirarle la nariz por dentro', sub: 'Tenía las dos fosas llenas de pólipos', mood: 'gold', image: ph('b224')}, 6.5);
-C('por oler lejia', 'quote', {quote: 'Se echó a llorar de alegría por oler lejía. Eso no le pasa a nadie que tenga el olfato bien.', author: 'Pilar, después de la operación'}, 7.0);
+C('Le miraron la nariz por dentro con una camara', 'stat', {kicker: 'El caso de Pilar', value: 6, suffix: ' min', label: 'Lo que tardaron en mirarle la nariz por dentro', sub: 'Tenía las dos fosas llenas de pólipos', mood: 'gold', image: ph('b224')}, 6.5);
+C('por oler lejia', 'quote', {role: '', kicker: 'Pilar, después de la operación', image: ph('b227'), quote: 'Se echó a llorar de alegría por oler lejía. Eso no le pasa a nadie que tenga el olfato bien.', author: 'Pilar, después de la operación'}, 7.0);
 C('La lista de sospechosos', 'chapter', {kicker: 'Antes de asustarse', index: 'La lista', title: 'Lo que apaga el olfato', sub: 'Y casi nunca es la memoria'}, 6.5);
 C('Lo primero la nariz misma', 'checklist', {kicker: 'Por orden de frecuencia', title: 'Los siete sospechosos', items: ['La nariz: pólipos, sinusitis, tabique', 'Un virus fuerte', 'Un golpe en la cabeza', 'El tabaco', 'Medicamentos y carencias', 'La edad, sin más', 'Otras enfermedades neurológicas'], mood: 'gold'}, 8.0);
 C('Aqui lo importante es la fecha', 'hero', {kicker: 'Los virus', title: 'Si puede señalar la semana, es otra historia', sub: 'De golpe y justo después de estar mala: otro pronóstico', image: ph('b233'), mood: 'sage'}, 6.5);
 C('Cuarto el tabaco', 'hero', {kicker: 'El tabaco', title: 'Apaga el olfato de forma muy notable', sub: 'Y mejora bastante al dejarlo, aunque tarde su tiempo', image: ph('b238'), side: 'right', mood: 'terracotta'}, 6.0);
 C('Hay farmacos de uso comun', 'checklist', {kicker: 'Lo que se pasa por alto', title: 'Se ven en un análisis normal', items: ['Falta de zinc', 'Falta de vitamina B12', 'Un tiroides bajo', 'Fármacos de uso común'], mood: 'sage'}, 6.5);
-C('una pastilla que cuesta 4 euros al mes', 'stat', {value: 4, suffix: ' €', label: 'Al mes', sub: 'Hay olfatos que vuelven con eso. Por eso se mira primero.', mood: 'sage', image: ph('b243')}, 6.0);
+C('una pastilla que cuesta 4 euros al mes', 'stat', {kicker: 'Lo que se arregla', value: 4, suffix: ' €', label: 'Al mes', sub: 'Hay olfatos que vuelven con eso. Por eso se mira primero.', mood: 'sage', image: ph('b243')}, 6.0);
 C('Y septimo para no dejarme nada', 'hero', {kicker: 'Honestidad', title: 'En el párkinson es aún más precoz', sub: 'La pérdida de olfato es de las señales más constantes que existen', image: ph('b247'), mood: 'gold'}, 6.5);
 
 /* — LA PRUEBA DE CASA — */
@@ -156,30 +156,30 @@ C('la sexta cosa', 'chapter', {kicker: 'Lo prometido', index: 'La 6ª', title: '
 C('Si dijo cinco y saco cinco', 'checklist', {kicker: 'Los tres resultados', title: 'Mire los dos números', items: ['Dijo cinco y sacó cinco: nada que hablar', 'Dijo dos y sacó dos: flojo, pero informado', 'Dijo seis y sacó dos: ahí miro dos veces'], mood: 'gold'}, 7.0);
 C('Usted dijo seis', 'beforeafter', {kicker: 'La señal fina', title: 'Lo que cree y lo que le pasa', labelA: 'Lo que usted dijo: seis', labelB: 'Lo que sacó: dos', imageA: hero('paper2') || ph('b284'), imageB: ph('b291')}, 6.5);
 C('Esa resta', 'hero', {kicker: 'Por qué importa', title: 'No sólo falla la nariz: falla el darse cuenta', hot: ['darse cuenta'], sub: 'Y el darse cuenta vive en las zonas de las que llevamos hablando', image: ph('b293'), mood: 'terracotta'}, 7.0);
-C('como una anecdota de abuela', 'quote', {quote: 'Quédese con la resta. Es gratis, se hace en diez minutos, y no hay aparato que se la dé mejor.', author: 'Dra. Valeria Alcázar'}, 7.0);
+C('como una anecdota de abuela', 'quote', {role: '', kicker: 'Quédese con la resta', image: ph('b300'), quote: 'Quédese con la resta. Es gratis, se hace en diez minutos, y no hay aparato que se la dé mejor.', author: 'Dra. Valeria Alcázar'}, 7.0);
 
 /* — LOS TRES PASOS — */
 C('Primero con el otorrino', 'step', {step: 1, total: 3, title: 'Al otorrino, y a nadie más primero', sub: 'Que le miren la nariz por dentro con la cámara', image: hero('screen') || ph('b306')}, 6.5);
 C('lleve la lista de todo lo que toma', 'step', {step: 2, total: 3, title: 'Análisis y la lista de todo lo que toma', sub: 'Hierro, zinc, B12 y tiroides. Y el herbolario también.', image: ph('b309')}, 6.5);
 C('Apuntela tal cual', 'step', {step: 3, total: 3, title: 'La frase exacta para la consulta', sub: 'Escríbala y llévela en el bolso', image: hero('serious') || ph('b311')}, 6.0);
-C('Me pueden hacer una prueba de identificacion de olores', 'quote', {quote: 'Doctor, ¿me pueden hacer una prueba de identificación de olores?', author: 'La frase que hay que llevar a la consulta'}, 7.0);
+C('Me pueden hacer una prueba de identificacion de olores', 'quote', {role: '', kicker: 'La frase para la consulta', image: ph('b313'), quote: 'Doctor, ¿me pueden hacer una prueba de identificación de olores?', author: 'La frase que hay que llevar a la consulta'}, 7.0);
 
 /* — ENTRENAMIENTO OLFATIVO — */
 C('El olfato se entrena', 'chapter', {kicker: 'Mientras espera', index: 'Extra', title: 'El olfato se entrena', sub: 'Cuesta cero y se hace en tres minutos'}, 6.5);
 C('Cuatro olores fuertes y distintos', 'checklist', {kicker: 'Dos veces al día', title: 'Los cuatro olores', items: ['Rosa', 'Limón', 'Clavo', 'Eucalipto'], mood: 'gold'}, 6.5);
-C('veinte segundos cada uno', 'stat', {value: 20, suffix: ' s', label: 'Cada olor, dos veces al día', sub: 'Y mientras huele el limón, piense en un limón: eso es lo que reconstruye el camino', mood: 'sage', image: hero('training') || ph('b321')}, 7.0);
+C('veinte segundos cada uno', 'stat', {kicker: 'Entrenamiento olfativo', value: 20, suffix: ' s', label: 'Cada olor, dos veces al día', sub: 'Y mientras huele el limón, piense en un limón: eso es lo que reconstruye el camino', mood: 'sage', image: hero('training') || ph('b321')}, 7.0);
 C('No es un tratamiento para el Alzheimer', 'hero', {kicker: 'La letra pequeña', title: 'No previene el alzhéimer, y no se lo voy a vender así', sub: 'Está estudiado sobre todo tras un virus o un golpe. Pero cuesta cero.', image: ph('b327'), mood: 'terracotta'}, 7.0);
 
 /* — CIERRE — */
 C('llegar antes no sirve para nada', 'hero', {kicker: 'Lo que de verdad importa', title: 'Llegar antes sí sirve', hot: ['sí sirve'], sub: 'Para descartar todo lo que se arregla y se confunde con esto', image: ph('b333'), mood: 'sage'}, 6.5);
 C('Un tiroides bajo', 'checklist', {kicker: 'Se confunden con esto', title: 'Cosas que se arreglan', items: ['Un tiroides bajo', 'Falta de vitamina B12', 'Una depresión', 'Una apnea del sueño', 'Unos audífonos que hacían falta', 'Pastillas que juntas hacen daño'], mood: 'sage'}, 7.5);
 C('la tension bien llevada', 'checklist', {kicker: 'Lo que sí protege', title: 'Y funciona mejor cuanto antes se empieza', items: ['La tensión bien llevada', 'El azúcar bien llevado', 'El oído corregido', 'El sueño', 'Moverse', 'No quedarse sola'], mood: 'gold'}, 7.5);
-C('el tiempo es lo unico que aqui no se compra', 'quote', {quote: 'Todo eso es tiempo. Y el tiempo es lo único que aquí no se compra.', author: 'Dra. Valeria Alcázar'}, 6.5);
+C('el tiempo es lo unico que aqui no se compra', 'quote', {role: '', kicker: 'Lo que de verdad importa', image: ph('b339'), quote: 'Todo eso es tiempo. Y el tiempo es lo único que aquí no se compra.', author: 'Dra. Valeria Alcázar'}, 6.5);
 C('Hoy tiene un detector de humo en el pasillo', 'checklist', {kicker: 'Carmen, hoy', title: 'Lo que cambió en su casa', items: ['Un detector de humo en el pasillo', 'Un temporizador que suena como una bomba', 'El entrenamiento de los cuatro olores', 'Y sigue empezando por las verticales'], mood: 'sage'}, 7.0);
 C('Cada navidad antes de comer', 'hero', {kicker: 'Y una cosa más', title: 'Cada Navidad sacan seis frascos a la mesa', sub: 'Se la hacen los once, por turnos, con una venda y muchas risas', image: ph('b346'), mood: 'gold'}, 7.0);
-C('ahora sabemos de que nos estamos riendo', 'quote', {quote: 'Nos reímos igual que aquel año, doctora. Pero ahora sabemos de qué nos estamos riendo.', author: 'La hija de Carmen'}, 7.0);
+C('ahora sabemos de que nos estamos riendo', 'quote', {role: '', kicker: 'La hija de Carmen', image: ph('b349'), quote: 'Nos reímos igual que aquel año, doctora. Pero ahora sabemos de qué nos estamos riendo.', author: 'La hija de Carmen'}, 7.0);
 C('Recapitulemos', 'checklist', {kicker: 'Guárdese estas cinco', title: 'Las cinco señales', items: ['No es oler menos: es confundir', 'La comida no sabe, y aparece la sal', 'Olores fantasma o deformados sin virus', 'No se ha dado cuenta: se lo dicen los demás', 'Años cuesta abajo, sin resfriado, las dos fosas'], mood: 'gold'}, 8.5);
-C('la resta entre lo que usted cree que huele', 'stat', {value: 6, label: 'Y por encima de las cinco, la sexta', sub: 'La resta entre lo que cree que huele y lo que huele de verdad', mood: 'terracotta', image: hero('paper2') || ph('b355')}, 6.5);
+C('la resta entre lo que usted cree que huele', 'stat', {suffix: '', kicker: 'Por encima de las cinco', value: 6, label: 'Y por encima de las cinco, la sexta', sub: 'La resta entre lo que cree que huele y lo que huele de verdad', mood: 'terracotta', image: hero('paper2') || ph('b355')}, 6.5);
 C('Guarde este video', 'cta', {kicker: 'Antes de irse', title: 'Guarde este vídeo y suscríbase', hot: ['Guarde'], sub: 'La prueba de los seis frascos paso a paso, la hoja de los dos números y las frases para pedir cita están escritas en la descripción.', buttonLabel: 'Guardar · Suscribirse', image: hero('smile') || ph('b357')}, 8.0);
 C('Cual fue el ultimo olor que la emociono de verdad', 'hero', {kicker: 'En los comentarios', title: '¿Cuál fue el último olor que la emocionó?', sub: 'El pan recién hecho, la lluvia sobre la tierra seca, la colonia de su madre', image: ph('b365'), mood: 'gold'}, 7.0);
 C('presentese un dia en su casa con seis frascos', 'hero', {kicker: 'Si vive sola alguien cerca', title: 'Vaya un día con seis frascos', sub: 'Diez minutos de mesa de cocina hacen más que un año preocupándose de lejos', image: ph('b369'), mood: 'sage'}, 7.0);

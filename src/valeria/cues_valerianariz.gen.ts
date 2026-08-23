@@ -218,6 +218,9 @@ export const BEATS: Cue[] = [
     "start": 131.1,
     "dur": 6.5,
     "kind": "quote",
+    "role": "",
+    "kicker": "La llamada",
+    "image": "img/vn_b023.jpg",
     "quote": "Un silencio al otro lado del teléfono que vale más que un análisis entero.",
     "author": "La llamada de su hija"
   },
@@ -421,6 +424,9 @@ export const BEATS: Cue[] = [
     "start": 250.92,
     "dur": 7,
     "kind": "quote",
+    "role": "",
+    "kicker": "La sexta cosa",
+    "image": "img/vn_b050.jpg",
     "quote": "Lo que avisa no es cuánto huele usted. Es la distancia entre lo que cree que huele y lo que huele de verdad.",
     "author": "Dra. Valeria Alcázar"
   },
@@ -429,6 +435,8 @@ export const BEATS: Cue[] = [
     "start": 258.86,
     "dur": 6,
     "kind": "stat",
+    "suffix": "",
+    "kicker": "La sexta cosa",
     "value": 2,
     "label": "Números en un papel",
     "sub": "Y lo único que importa es la resta entre los dos",
@@ -509,6 +517,8 @@ export const BEATS: Cue[] = [
     "start": 313.66,
     "dur": 7,
     "kind": "molecule",
+    "kicker": "Cómo entra el olfato",
+    "image": "img/vn_b061.jpg",
     "centerLabel": "Bulbo olfatorio",
     "nodes": [
       {
@@ -542,6 +552,9 @@ export const BEATS: Cue[] = [
     "start": 331.54,
     "dur": 6,
     "kind": "quote",
+    "role": "",
+    "kicker": "Cómo está cableado",
+    "image": "img/vn_b064.jpg",
     "quote": "Eso no es sentimentalismo. Es fontanería: están cableados juntos.",
     "author": "Dra. Valeria Alcázar"
   },
@@ -612,6 +625,7 @@ export const BEATS: Cue[] = [
     "start": 388.48,
     "dur": 6.5,
     "kind": "stat",
+    "kicker": "Lo que ven los estudios",
     "value": 10,
     "suffix": " años",
     "label": "Antes de que aparezca ningún problema de memoria",
@@ -761,6 +775,8 @@ export const BEATS: Cue[] = [
     "start": 473.08,
     "dur": 7,
     "kind": "molecule",
+    "kicker": "Las dos capacidades",
+    "image": "img/vn_b092.jpg",
     "centerLabel": "Identificar",
     "nodes": [
       {
@@ -990,6 +1006,9 @@ export const BEATS: Cue[] = [
     "start": 546.46,
     "dur": 6,
     "kind": "quote",
+    "role": "",
+    "kicker": "La regla de la señal 1",
+    "image": "img/vn_b104.jpg",
     "quote": "No se pregunte cuánto huele. Pregúntese si acierta.",
     "author": "La regla de la señal 1"
   },
@@ -1364,6 +1383,8 @@ export const BEATS: Cue[] = [
     "start": 660,
     "dur": 6.5,
     "kind": "stat",
+    "suffix": "",
+    "kicker": "La Navidad de Carmen",
     "value": 3,
     "prefix": "×",
     "label": "La sal que acabó echándole al asado",
@@ -1376,6 +1397,9 @@ export const BEATS: Cue[] = [
     "start": 666.32,
     "dur": 7,
     "kind": "quote",
+    "role": "",
+    "kicker": "La mesa de Navidad",
+    "image": "img/vn_b129.jpg",
     "quote": "Estaban oyendo el aviso más temprano que existe, y sonaba como una anécdota de abuela.",
     "author": "La mesa de Navidad"
   },
@@ -1816,6 +1840,8 @@ export const BEATS: Cue[] = [
     "start": 808.84,
     "dur": 6.5,
     "kind": "molecule",
+    "kicker": "Después de un virus",
+    "image": "img/vn_b159.jpg",
     "centerLabel": "Se regenera",
     "nodes": [
       {
@@ -2026,6 +2052,9 @@ export const BEATS: Cue[] = [
     "start": 880.36,
     "dur": 6,
     "kind": "quote",
+    "role": "",
+    "kicker": "Lo que ella creía",
+    "image": "img/vn_b173.jpg",
     "quote": "Bien, doctora. Normal. Yo huelo bien.",
     "author": "Carmen, semanas después del incendio"
   },
@@ -2117,6 +2146,8 @@ export const BEATS: Cue[] = [
     "start": 916.72,
     "dur": 7,
     "kind": "molecule",
+    "kicker": "El segundo mecanismo",
+    "image": "img/vn_b181.jpg",
     "centerLabel": "El cerebro rellena",
     "nodes": [
       {
@@ -2208,6 +2239,9 @@ export const BEATS: Cue[] = [
     "start": 944.4,
     "dur": 6,
     "kind": "quote",
+    "role": "",
+    "kicker": "El frasco de perfume",
+    "image": "img/vn_b168.jpg",
     "quote": "No mintió. Le mintieron a ella desde dentro.",
     "author": "El frasco de perfume"
   },
@@ -2519,6 +2553,7 @@ export const BEATS: Cue[] = [
     "start": 1050.9,
     "dur": 6.5,
     "kind": "stat",
+    "kicker": "El dibujo que importa",
     "value": 5,
     "suffix": " años",
     "label": "Bajando un poco cada año, sin altibajos",
@@ -2730,6 +2765,7 @@ export const BEATS: Cue[] = [
     "start": 1125.28,
     "dur": 6.5,
     "kind": "stat",
+    "kicker": "El caso de Pilar",
     "value": 6,
     "suffix": " min",
     "label": "Lo que tardaron en mirarle la nariz por dentro",
@@ -2781,6 +2817,9 @@ export const BEATS: Cue[] = [
     "start": 1141.02,
     "dur": 7,
     "kind": "quote",
+    "role": "",
+    "kicker": "Pilar, después de la operación",
+    "image": "img/vn_b227.jpg",
     "quote": "Se echó a llorar de alegría por oler lejía. Eso no le pasa a nadie que tenga el olfato bien.",
     "author": "Pilar, después de la operación"
   },
@@ -3037,6 +3076,7 @@ export const BEATS: Cue[] = [
     "start": 1229.22,
     "dur": 6,
     "kind": "stat",
+    "kicker": "Lo que se arregla",
     "value": 4,
     "suffix": " €",
     "label": "Al mes",
@@ -3860,6 +3900,9 @@ export const BEATS: Cue[] = [
     "start": 1500.68,
     "dur": 7,
     "kind": "quote",
+    "role": "",
+    "kicker": "Quédese con la resta",
+    "image": "img/vn_b300.jpg",
     "quote": "Quédese con la resta. Es gratis, se hace en diez minutos, y no hay aparato que se la dé mejor.",
     "author": "Dra. Valeria Alcázar"
   },
@@ -4067,6 +4110,9 @@ export const BEATS: Cue[] = [
     "start": 1574.72,
     "dur": 7,
     "kind": "quote",
+    "role": "",
+    "kicker": "La frase para la consulta",
+    "image": "img/vn_b313.jpg",
     "quote": "Doctor, ¿me pueden hacer una prueba de identificación de olores?",
     "author": "La frase que hay que llevar a la consulta"
   },
@@ -4178,6 +4224,7 @@ export const BEATS: Cue[] = [
     "start": 1616.82,
     "dur": 7,
     "kind": "stat",
+    "kicker": "Entrenamiento olfativo",
     "value": 20,
     "suffix": " s",
     "label": "Cada olor, dos veces al día",
@@ -4484,6 +4531,9 @@ export const BEATS: Cue[] = [
     "start": 1716.04,
     "dur": 6.5,
     "kind": "quote",
+    "role": "",
+    "kicker": "Lo que de verdad importa",
+    "image": "img/vn_b339.jpg",
     "quote": "Todo eso es tiempo. Y el tiempo es lo único que aquí no se compra.",
     "author": "Dra. Valeria Alcázar"
   },
@@ -4626,6 +4676,9 @@ export const BEATS: Cue[] = [
     "start": 1771.42,
     "dur": 7,
     "kind": "quote",
+    "role": "",
+    "kicker": "La hija de Carmen",
+    "image": "img/vn_b349.jpg",
     "quote": "Nos reímos igual que aquel año, doctora. Pero ahora sabemos de qué nos estamos riendo.",
     "author": "La hija de Carmen"
   },
@@ -4728,6 +4781,8 @@ export const BEATS: Cue[] = [
     "start": 1806.9,
     "dur": 6.5,
     "kind": "stat",
+    "suffix": "",
+    "kicker": "Por encima de las cinco",
     "value": 6,
     "label": "Y por encima de las cinco, la sexta",
     "sub": "La resta entre lo que cree que huele y lo que huele de verdad",

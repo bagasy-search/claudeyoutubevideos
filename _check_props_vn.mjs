@@ -33,7 +33,29 @@ for (const b of BEATS) for (const k of ['src', 'image', 'imageA', 'imageB']) {
 }
 console.log('assets faltantes en disco:', miss.length ? miss.slice(0, 8).join(' | ') : 'ninguno ✔');
 
+
+// ⛔ props con DEFAULT del video de romero: si no se pasan, el kit escribe texto de OTRO video
+const OBLIGATORIAS = {
+  chapter: ['kicker', 'index', 'title'],
+  hero: ['kicker', 'title', 'image'],
+  stat: ['kicker', 'label', 'image', 'suffix'],
+  quote: ['kicker', 'quote', 'author', 'role'],
+  molecule: ['kicker', 'title', 'centerLabel', 'image', 'nodes'],
+  step: ['title', 'image'],
+  beforeafter: ['kicker', 'title', 'labelA', 'labelB', 'imageA', 'imageB'],
+  checklist: ['kicker', 'title', 'items'],
+  cta: ['kicker', 'title', 'sub', 'buttonLabel', 'image'],
+  lowerthird: ['name', 'role', 'topic'],
+};
+let defaults = 0;
+for (const b of BEATS) {
+  const req = OBLIGATORIAS[b.kind];
+  if (!req) continue;
+  for (const k of req) if (b[k] === undefined) { console.log('⛔ DEFAULT del kit:', b.id, b.kind + '.' + k); defaults++; }
+}
+console.log('props que caerian al default:', defaults);
+
 const kinds = {};
 for (const b of BEATS) kinds[b.kind] = (kinds[b.kind] || 0) + 1;
 console.log('beats:', BEATS.length, JSON.stringify(kinds));
-process.exit(faltan.size || mal || miss.length ? 1 : 0);
+process.exit(faltan.size || mal || miss.length || defaults ? 1 : 0);
