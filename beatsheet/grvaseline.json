@@ -62,7 +62,7 @@
    "bars": [
     {
      "label": "The tub, about $4",
-     "value": 104,
+     "value": 100,
      "winner": true,
      "note": "two years"
     },
@@ -1225,6 +1225,14 @@
    "src": "broll/grvaseline_091.mp4"
   },
   {
+   "id": "fill_0_091",
+   "start": 643.01,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_091.jpg"
+  },
+  {
    "id": "092",
    "start": 647.88,
    "dur": 1.6,
@@ -1415,6 +1423,14 @@
    "src": "broll/grvaseline_107.mp4"
   },
   {
+   "id": "fill_1_107",
+   "start": 698.19,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_107.jpg"
+  },
+  {
    "id": "108",
    "start": 703.08,
    "dur": 3,
@@ -1503,12 +1519,28 @@
    "src": "broll/grvaseline_118.mp4"
   },
   {
+   "id": "fill_2_119",
+   "start": 739.95,
+   "dur": 2.85,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_119.jpg"
+  },
+  {
    "id": "119",
    "start": 742.9,
    "dur": 7.02,
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_119.mp4"
+  },
+  {
+   "id": "fill_3_120",
+   "start": 747.61,
+   "dur": 2.21,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_120.jpg"
   },
   {
    "id": "120",
@@ -1519,12 +1551,28 @@
    "src": "broll/grvaseline_120.mp4"
   },
   {
+   "id": "fill_4_121",
+   "start": 754.63,
+   "dur": 2.79,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_121.jpg"
+  },
+  {
    "id": "121",
    "start": 757.52,
    "dur": 6.94,
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_121.mp4"
+  },
+  {
+   "id": "fill_5_122",
+   "start": 762.23,
+   "dur": 2.13,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_122.jpg"
   },
   {
    "id": "122",
@@ -1578,6 +1626,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_126.mp4"
+  },
+  {
+   "id": "fill_6_127",
+   "start": 790.09,
+   "dur": 2.63,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_127.jpg"
   },
   {
    "id": "127",
@@ -1645,6 +1701,14 @@
    "src": "broll/grvaseline_131.mp4"
   },
   {
+   "id": "fill_7_132",
+   "start": 813.29,
+   "dur": 2.05,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_132.jpg"
+  },
+  {
    "id": "132",
    "start": 815.44,
    "dur": 2.84,
@@ -1659,6 +1723,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_133.mp4"
+  },
+  {
+   "id": "fill_8_133",
+   "start": 822.99,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_133.jpg"
   },
   {
    "id": "134",
@@ -1708,6 +1780,14 @@
    "src": "broll/grvaseline_136.mp4"
   },
   {
+   "id": "fill_9_137",
+   "start": 845.03,
+   "dur": 2.75,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_137.jpg"
+  },
+  {
    "id": "137",
    "start": 847.88,
    "dur": 2.9,
@@ -1722,6 +1802,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_138.mp4"
+  },
+  {
+   "id": "fill_10_139",
+   "start": 855.49,
+   "dur": 3.65,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_139.jpg"
   },
   {
    "id": "139",
@@ -1740,12 +1828,28 @@
    "src": "broll/grvaseline_140.mp4"
   },
   {
+   "id": "fill_11_141",
+   "start": 866.63,
+   "dur": 4.17,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_141.jpg"
+  },
+  {
    "id": "141",
    "start": 870.9,
    "dur": 7.54,
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_141.mp4"
+  },
+  {
+   "id": "fill_12_142",
+   "start": 875.61,
+   "dur": 2.73,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_142.jpg"
   },
   {
    "id": "142",
@@ -1772,12 +1876,28 @@
    "src": "broll/grvaseline_144.mp4"
   },
   {
+   "id": "fill_13_145",
+   "start": 887.15,
+   "dur": 4.09,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_145.jpg"
+  },
+  {
    "id": "145",
    "start": 891.34,
    "dur": 6.88,
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_145.mp4"
+  },
+  {
+   "id": "fill_14_146",
+   "start": 896.05,
+   "dur": 2.07,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_146.jpg"
   },
   {
    "id": "146",
@@ -1837,6 +1957,14 @@
    "src": "broll/grvaseline_151.mp4"
   },
   {
+   "id": "fill_15_152",
+   "start": 922.93,
+   "dur": 2.63,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_152.jpg"
+  },
+  {
    "id": "152",
    "start": 925.66,
    "dur": 1.62,
@@ -1859,6 +1987,22 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_154.mp4"
+  },
+  {
+   "id": "fill_16_154",
+   "start": 935.45,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_154.jpg"
+  },
+  {
+   "id": "fill_17_155",
+   "start": 939.65,
+   "dur": 1.67,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_155.jpg"
   },
   {
    "id": "155",
@@ -2014,12 +2158,28 @@
    "medico": true
   },
   {
+   "id": "fill_18_170",
+   "start": 1004.11,
+   "dur": 4.17,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_170.jpg"
+  },
+  {
    "id": "170",
    "start": 1008.38,
    "dur": 7.4,
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_170.mp4"
+  },
+  {
+   "id": "fill_19_171",
+   "start": 1013.09,
+   "dur": 2.59,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_171.jpg"
   },
   {
    "id": "171",
@@ -2036,6 +2196,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_172.mp4"
+  },
+  {
+   "id": "fill_20_173",
+   "start": 1025.45,
+   "dur": 3.11,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_173.jpg"
   },
   {
    "id": "173",
@@ -2085,6 +2253,14 @@
    "src": "broll/grvaseline_175.mp4"
   },
   {
+   "id": "fill_21_176",
+   "start": 1046.03,
+   "dur": 2.45,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_176.jpg"
+  },
+  {
    "id": "176",
    "start": 1048.58,
    "dur": 6.16,
@@ -2109,6 +2285,30 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_177.mp4"
+  },
+  {
+   "id": "fill_22_177",
+   "start": 1059.45,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_177.jpg"
+  },
+  {
+   "id": "fill_23_178",
+   "start": 1063.65,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_178.jpg"
+  },
+  {
+   "id": "fill_24_178",
+   "start": 1067.85,
+   "dur": 3.79,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_178.jpg"
   },
   {
    "id": "178",
@@ -2190,6 +2390,14 @@
    "src": "broll/grvaseline_184.mp4"
   },
   {
+   "id": "fill_25_184",
+   "start": 1108.05,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_184.jpg"
+  },
+  {
    "id": "185",
    "start": 1113.82,
    "dur": 1.64,
@@ -2212,6 +2420,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_187.mp4"
+  },
+  {
+   "id": "fill_26_188",
+   "start": 1122.79,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_188.jpg"
   },
   {
    "id": "188",
@@ -2305,6 +2521,14 @@
    "src": "broll/grvaseline_197.mp4"
   },
   {
+   "id": "fill_27_198",
+   "start": 1164.61,
+   "dur": 2.21,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_198.jpg"
+  },
+  {
    "id": "198",
    "start": 1166.92,
    "dur": 7.02,
@@ -2391,6 +2615,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_206.mp4"
+  },
+  {
+   "id": "fill_28_207",
+   "start": 1206.87,
+   "dur": 2.63,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_207.jpg"
   },
   {
    "id": "207",
@@ -2497,6 +2729,14 @@
    "src": "broll/grvaseline_217.mp4"
   },
   {
+   "id": "fill_29_218",
+   "start": 1247.49,
+   "dur": 3.21,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_218.jpg"
+  },
+  {
    "id": "218",
    "start": 1250.8,
    "dur": 3.88,
@@ -2527,6 +2767,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_221.mp4"
+  },
+  {
+   "id": "fill_30_222",
+   "start": 1265.66,
+   "dur": 3.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_222.jpg"
   },
   {
    "id": "222",
@@ -2732,6 +2980,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_241.mp4"
+  },
+  {
+   "id": "fill_31_242",
+   "start": 1344.35,
+   "dur": 3.15,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_242.jpg"
   },
   {
    "id": "242",
@@ -2947,6 +3203,14 @@
    "src": "broll/grvaseline_266.mp4"
   },
   {
+   "id": "fill_32_267",
+   "start": 1425.57,
+   "dur": 1.99,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_267.jpg"
+  },
+  {
    "id": "267",
    "start": 1427.66,
    "dur": 4.24,
@@ -3142,6 +3406,14 @@
    "src": "broll/grvaseline_287.mp4"
   },
   {
+   "id": "fill_33_288",
+   "start": 1504.03,
+   "dur": 2.87,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_288.jpg"
+  },
+  {
    "id": "288",
    "start": 1507,
    "dur": 6.46,
@@ -3209,6 +3481,14 @@
    "src": "broll/grvaseline_294.mp4"
   },
   {
+   "id": "fill_34_295",
+   "start": 1534.75,
+   "dur": 2.61,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_295.jpg"
+  },
+  {
    "id": "295",
    "start": 1537.46,
    "dur": 1.74,
@@ -3268,6 +3548,14 @@
    "src": "broll/grvaseline_300.mp4"
   },
   {
+   "id": "fill_35_301",
+   "start": 1560.05,
+   "dur": 2.59,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_301.jpg"
+  },
+  {
    "id": "301",
    "start": 1562.74,
    "dur": 2.2,
@@ -3290,6 +3578,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_303.mp4"
+  },
+  {
+   "id": "fill_36_304",
+   "start": 1571.87,
+   "dur": 2.45,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_304.jpg"
   },
   {
    "id": "304",
@@ -3401,6 +3697,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_312.mp4"
+  },
+  {
+   "id": "fill_37_313",
+   "start": 1600.43,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_313.jpg"
   },
   {
    "id": "313",
@@ -3600,6 +3904,14 @@
    "src": "broll/grvaseline_335.mp4"
   },
   {
+   "id": "fill_38_336",
+   "start": 1694.53,
+   "dur": 3.99,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_336.jpg"
+  },
+  {
    "id": "336",
    "start": 1698.62,
    "dur": 4.78,
@@ -3688,6 +4000,14 @@
    "src": "broll/grvaseline_346.mp4"
   },
   {
+   "id": "fill_39_347",
+   "start": 1739.65,
+   "dur": 4.03,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_347.jpg"
+  },
+  {
    "id": "347",
    "start": 1743.78,
    "dur": 2.18,
@@ -3729,6 +4049,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_350.mp4"
+  },
+  {
+   "id": "fill_40_351",
+   "start": 1761.93,
+   "dur": 2.65,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_351.jpg"
   },
   {
    "id": "351",
@@ -3779,12 +4107,28 @@
    "src": "broll/grvaseline_354.mp4"
   },
   {
+   "id": "fill_41_355",
+   "start": 1779.09,
+   "dur": 2.03,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_355.jpg"
+  },
+  {
    "id": "355",
    "start": 1781.22,
    "dur": 9.46,
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_355.mp4"
+  },
+  {
+   "id": "fill_42_355",
+   "start": 1785.93,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_355.jpg"
   },
   {
    "id": "356",
@@ -4086,6 +4430,22 @@
    "src": "broll/grvaseline_386.mp4"
   },
   {
+   "id": "fill_43_386",
+   "start": 1924.29,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_386.jpg"
+  },
+  {
+   "id": "fill_44_387",
+   "start": 1928.49,
+   "dur": 2.51,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_387.jpg"
+  },
+  {
    "id": "387",
    "start": 1931.1,
    "dur": 4.82,
@@ -4100,6 +4460,14 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_388.mp4"
+  },
+  {
+   "id": "fill_45_389",
+   "start": 1940.63,
+   "dur": 3.79,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_389.jpg"
   },
   {
    "id": "389",
@@ -4228,6 +4596,14 @@
    "src": "broll/grvaseline_401.mp4"
   },
   {
+   "id": "fill_46_402",
+   "start": 1992.63,
+   "dur": 2.47,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_402.jpg"
+  },
+  {
    "id": "402",
    "start": 1995.2,
    "dur": 4.44,
@@ -4303,6 +4679,22 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_409.mp4"
+  },
+  {
+   "id": "fill_47_409",
+   "start": 2029.23,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_409.jpg"
+  },
+  {
+   "id": "fill_48_410",
+   "start": 2033.43,
+   "dur": 3.91,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_410.jpg"
   },
   {
    "id": "410",
@@ -4697,6 +5089,14 @@
    "src": "broll/grvaseline_447.mp4"
   },
   {
+   "id": "fill_49_447",
+   "start": 2149.21,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_447.jpg"
+  },
+  {
    "id": "448",
    "start": 2154.94,
    "dur": 6.3,
@@ -4835,6 +5235,14 @@
    "tone": "teal"
   },
   {
+   "id": "fill_50_462",
+   "start": 2206.81,
+   "dur": 2.17,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_462.jpg"
+  },
+  {
    "id": "462",
    "start": 2209.08,
    "dur": 5,
@@ -4881,6 +5289,22 @@
    "key": "s",
    "kind": "raw",
    "src": "broll/grvaseline_467.mp4"
+  },
+  {
+   "id": "fill_51_467",
+   "start": 2239.05,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_467.jpg"
+  },
+  {
+   "id": "fill_52_468",
+   "start": 2243.25,
+   "dur": 1.89,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/grvaseline_468.jpg"
   },
   {
    "id": "468",

@@ -217,7 +217,7 @@ const CMP = [
 
   // ── EL SUJETO ────────────────────────────────────────────────────────────────
     { phrase: "the other one costs about", kind: "bars", title: "How long one purchase actually lasts", unit: "weeks", bars: [
-    { label: "The tub, about $4", value: 104, winner: true, note: "two years" },
+    { label: "The tub, about $4", value: 100, winner: true, note: "two years" },
     { label: "The jar, about $80", value: 11, tone: "danger", note: "eleven weeks" },
   ] },
   { phrase: "no vitamins in it no actives", kind: "checklist", eyebrow: "What is actually in the tub", title: "One ingredient. That is the list.", items: [
@@ -463,6 +463,55 @@ for (const beat of cmpBeats) {
 }
 fs.mkdirSync("public", { recursive: true });
 fs.writeFileSync(`public/avatar_clips_${SLUG}.json`, JSON.stringify(KIT_CLIPS, null, 1));
+
+// ── RELLENO POST-COSTURA ────────────────────────────────────────────────────────
+// Pasada la costura el avatar es un BUCLE: su boca ya no calza con lo que se escucha.
+// Medido en la 1a entrega: 16.1% del tramo posterior (4m22s en 39 huecos, el mayor de
+// 12.4s) quedaba con su cara sola en pantalla. Cada hueco >= MINGAP_POST se tapa con la
+// FOTO del beat mas cercano — asset que ya existe, misma frase, y al ser "photo" el Main
+// la manda a pantalla completa. ANTES de la costura NO se toca: ahi el lipsync es real y
+// el avatar a cámara es el recurso principal del canal.
+{
+  const MINGAP_POST = 2.2, FILL_MAX = 4.2;
+  const segs = COVER.map((c) => [c.start, c.start + c.cov + 0.6])
+    .concat(cmpBeats.filter((c) => !["lowerthird", "frasecinetica"].includes(c.kind)).map((c) => [c.start, c.start + c.dur]));
+  segs.sort((a, b) => a[0] - b[0]);
+  const merged = [];
+  for (const [s, e] of segs) {
+    if (merged.length && s <= merged[merged.length - 1][1] + 0.01) merged[merged.length - 1][1] = Math.max(merged[merged.length - 1][1], e);
+    else merged.push([s, e]);
+  }
+  const huecos = [];
+  let cur = AVATAR_CYCLE;
+  for (const [s, e] of merged) {
+    if (e <= AVATAR_CYCLE) continue;
+    if (s > cur) huecos.push([cur, Math.min(s, VIDEO_END)]);
+    cur = Math.max(cur, e);
+    if (cur >= VIDEO_END) break;
+  }
+  if (cur < VIDEO_END) huecos.push([cur, VIDEO_END]);
+
+  let n = 0;
+  for (const [a, z] of huecos) {
+    if (z - a < MINGAP_POST) continue;
+    let t2 = a + 0.15;
+    while (z - t2 >= MINGAP_POST * 0.8) {
+      let best = null, bd = Infinity;
+      for (const i of KEPT) { const d = Math.abs(start[i] - t2); if (d < bd) { bd = d; best = i; } }
+      if (best == null) break;
+      const cov2 = +Math.min(FILL_MAX, z - t2 - 0.1).toFixed(2);
+      if (cov2 < 1.2) break;
+      const src = `img/${SLUG}_${SRC[best].name}.jpg`;
+      beats.push({ id: `fill_${n}_${SRC[best].name}`, start: +t2.toFixed(2), dur: cov2, key: "s", kind: "raw", src });
+      COVER.push({ start: +t2.toFixed(2), cov: cov2, kind: "photo", src });
+      t2 += cov2;
+      n++;
+    }
+  }
+  beats.sort((a, b) => a.start - b.start);
+  COVER.sort((a, b) => a.start - b.start);
+  console.log(`  relleno post-costura: ${n} fotos en ${huecos.filter(([a,z]) => z-a >= MINGAP_POST).length} huecos`);
+}
 
 // ── COSTURAS DEL BUCLE DEL AVATAR ───────────────────────────────────────────────
 // El avatar es un loop de 152.03s: cada múltiplo es un corte duro. Se los tapa exigiendo
