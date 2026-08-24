@@ -1,0 +1,5589 @@
+{
+ "video": "fcsdeterioro",
+ "avatar": "fcsdeterioro_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "fd000",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd000.mp4",
+   "start": 0,
+   "dur": 3.94
+  },
+  {
+   "id": "c000",
+   "start": 0,
+   "dur": 9.38,
+   "kind": "lowerthird",
+   "kicker": "DIEZ DÍAS EN OBSERVACIÓN",
+   "title": "Sin fractura y sin cirugía",
+   "desc": "Nada grave. Solo acostado.",
+   "tone": "warn"
+  },
+  {
+   "id": "ph000",
+   "kind": "raw",
+   "src": "img/fd000.png",
+   "start": 3.94,
+   "dur": 3.8
+  },
+  {
+   "id": "fd001",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd001.mp4",
+   "start": 9.38,
+   "dur": 3.94
+  },
+  {
+   "id": "ph001",
+   "kind": "raw",
+   "src": "img/fd001.png",
+   "start": 13.32,
+   "dur": 3.8
+  },
+  {
+   "id": "fd002",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd002.mp4",
+   "start": 18.16,
+   "dur": 3.94
+  },
+  {
+   "id": "ph002",
+   "kind": "raw",
+   "src": "img/fd002.png",
+   "start": 22.1,
+   "dur": 4.36
+  },
+  {
+   "id": "ph002b",
+   "kind": "raw",
+   "src": "img/fd002b.png",
+   "start": 26.46,
+   "dur": 4.36
+  },
+  {
+   "id": "fd003",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd003.mp4",
+   "start": 30.82,
+   "dur": 3.94
+  },
+  {
+   "id": "ph003",
+   "kind": "raw",
+   "src": "img/fd003.png",
+   "start": 34.76,
+   "dur": 3.8
+  },
+  {
+   "id": "ph004",
+   "kind": "raw",
+   "src": "img/fd004.png",
+   "start": 40.4,
+   "dur": 3.8
+  },
+  {
+   "id": "ph005",
+   "kind": "raw",
+   "src": "img/fd005.png",
+   "start": 47.56,
+   "dur": 3.8
+  },
+  {
+   "id": "c005",
+   "start": 47.56,
+   "dur": 5.68,
+   "kind": "headline",
+   "eyebrow": "SEIS RAZONES",
+   "tokens": [
+    {
+     "t": "NINGUNA"
+    },
+    {
+     "t": "DE"
+    },
+    {
+     "t": "LAS"
+    },
+    {
+     "t": "SEIS"
+    },
+    {
+     "t": "ES"
+    },
+    {
+     "t": "LA"
+    },
+    {
+     "t": "EDAD",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "ph006",
+   "kind": "raw",
+   "src": "img/fd006.png",
+   "start": 53.24,
+   "dur": 3.8
+  },
+  {
+   "id": "c006",
+   "start": 53.24,
+   "dur": 8.48,
+   "kind": "lowerthird",
+   "kicker": "EL ERROR QUE MÁS ME DUELE",
+   "title": "Y no lo comete el enfermo",
+   "tone": "warn"
+  },
+  {
+   "id": "ph007",
+   "kind": "raw",
+   "src": "img/fd007.png",
+   "start": 61.72,
+   "dur": 3.8
+  },
+  {
+   "id": "ph008",
+   "kind": "raw",
+   "src": "img/fd008.png",
+   "start": 70.92,
+   "dur": 3.8
+  },
+  {
+   "id": "fd009",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd009.mp4",
+   "start": 80.48,
+   "dur": 3.94
+  },
+  {
+   "id": "ph009",
+   "kind": "raw",
+   "src": "img/fd009.png",
+   "start": 84.42,
+   "dur": 3.8
+  },
+  {
+   "id": "ph010",
+   "kind": "raw",
+   "src": "img/fd010.png",
+   "start": 88.4,
+   "dur": 3.8
+  },
+  {
+   "id": "c010",
+   "start": 88.4,
+   "dur": 9.34,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "LO"
+    },
+    {
+     "t": "MÁS"
+    },
+    {
+     "t": "ÚTIL"
+    },
+    {
+     "t": "VA"
+    },
+    {
+     "t": "AL"
+    },
+    {
+     "t": "FINAL"
+    }
+   ],
+   "perWord": 12,
+   "tone": "teal"
+  },
+  {
+   "id": "ph011",
+   "kind": "raw",
+   "src": "img/fd011.png",
+   "start": 97.74,
+   "dur": 3.8
+  },
+  {
+   "id": "ph014",
+   "kind": "raw",
+   "src": "img/fd014.png",
+   "start": 124.98,
+   "dur": 3.8
+  },
+  {
+   "id": "c014",
+   "start": 124.98,
+   "dur": 7.1,
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Federer Consejos Salud",
+   "image": "img/fdhero082.png"
+  },
+  {
+   "id": "ph016",
+   "kind": "raw",
+   "src": "img/fd016.png",
+   "start": 138.86,
+   "dur": 3.8
+  },
+  {
+   "id": "ph017",
+   "kind": "raw",
+   "src": "img/fd017.png",
+   "start": 148.56,
+   "dur": 3.8
+  },
+  {
+   "id": "c017",
+   "start": 148.56,
+   "dur": 6.4,
+   "kind": "headline",
+   "eyebrow": "LO QUE SE DECIDE HOY",
+   "tokens": [
+    {
+     "t": "LOS"
+    },
+    {
+     "t": "PRÓXIMOS"
+    },
+    {
+     "t": "10"
+    },
+    {
+     "t": "AÑOS"
+    },
+    {
+     "t": "CAMINANDO",
+     "hl": true
+    },
+    {
+     "t": "O"
+    },
+    {
+     "t": "SENTADO",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "ph018",
+   "kind": "raw",
+   "src": "img/fd018.png",
+   "start": 154.96,
+   "dur": 3.8
+  },
+  {
+   "id": "fd019",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd019.mp4",
+   "start": 160.9,
+   "dur": 3.94
+  },
+  {
+   "id": "ph019",
+   "kind": "raw",
+   "src": "img/fd019.png",
+   "start": 164.84,
+   "dur": 3.8
+  },
+  {
+   "id": "fd020",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd020.mp4",
+   "start": 168.72,
+   "dur": 3.94
+  },
+  {
+   "id": "c020",
+   "start": 168.72,
+   "dur": 6.6,
+   "kind": "splitlist",
+   "title": "Cómo se ve el derrumbe",
+   "items": [
+    "Se encoge",
+    "Se le apaga la mirada",
+    "La voz más chiquita",
+    "Empieza a arrastrar el pie"
+   ]
+  },
+  {
+   "id": "ph020",
+   "kind": "raw",
+   "src": "img/fd020.png",
+   "start": 172.66,
+   "dur": 2.66
+  },
+  {
+   "id": "ph021",
+   "kind": "raw",
+   "src": "img/fd021.png",
+   "start": 175.32,
+   "dur": 3.8
+  },
+  {
+   "id": "ph022",
+   "kind": "raw",
+   "src": "img/fd022.png",
+   "start": 181.44,
+   "dur": 3.8
+  },
+  {
+   "id": "c022",
+   "start": 181.44,
+   "dur": 7.52,
+   "kind": "mitoverdad",
+   "myth": "De un día para otro se nos vino abajo",
+   "truth": "El derrumbe se ve de golpe. Las vigas se fueron en años."
+  },
+  {
+   "id": "ph023",
+   "kind": "raw",
+   "src": "img/fd023.png",
+   "start": 188.96,
+   "dur": 3.8
+  },
+  {
+   "id": "ph024",
+   "kind": "raw",
+   "src": "img/fd024.png",
+   "start": 194.92,
+   "dur": 3.8
+  },
+  {
+   "id": "ph025",
+   "kind": "raw",
+   "src": "img/fd025.png",
+   "start": 201.4,
+   "dur": 3.8
+  },
+  {
+   "id": "c025",
+   "start": 201.4,
+   "dur": 9.76,
+   "kind": "checklist",
+   "eyebrow": "LOS DOS, SANOS",
+   "title": "La misma hoja de análisis",
+   "items": [
+    "Presión bien",
+    "Azúcar bien",
+    "Colesterol aceptable",
+    "Todo normal"
+   ]
+  },
+  {
+   "id": "fd026",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd026.mp4",
+   "start": 211.16,
+   "dur": 3.94
+  },
+  {
+   "id": "ph026",
+   "kind": "raw",
+   "src": "img/fd026.png",
+   "start": 215.1,
+   "dur": 3.8
+  },
+  {
+   "id": "fd027",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd027.mp4",
+   "start": 219.86,
+   "dur": 3.94
+  },
+  {
+   "id": "c027",
+   "start": 219.86,
+   "dur": 10.38,
+   "kind": "splitcompare",
+   "eyebrow": "LA MISMA GRIPA",
+   "title": "Dos señores de setenta",
+   "left": {
+    "image": "img/fd027.png",
+    "label": "Se repone",
+    "value": "1 semana",
+    "note": "y ni se acuerda"
+   },
+   "right": {
+    "image": "img/fd028.png",
+    "label": "Ya no se levanta igual",
+    "value": "6 meses",
+    "note": "y está en un sillón"
+   },
+   "winner": "left"
+  },
+  {
+   "id": "ph027",
+   "kind": "raw",
+   "src": "img/fd027.png",
+   "start": 223.8,
+   "dur": 3.8
+  },
+  {
+   "id": "fd028",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd028.mp4",
+   "start": 230.24,
+   "dur": 3.94
+  },
+  {
+   "id": "ph028",
+   "kind": "raw",
+   "src": "img/fd028.png",
+   "start": 234.18,
+   "dur": 3.8
+  },
+  {
+   "id": "ph029",
+   "kind": "raw",
+   "src": "img/fd029.png",
+   "start": 240.04,
+   "dur": 3.8
+  },
+  {
+   "id": "c029",
+   "start": 240.04,
+   "dur": 6,
+   "kind": "splitlist",
+   "title": "Lo que NO explica la diferencia",
+   "items": [
+    "La edad",
+    "La gripa",
+    "Los análisis",
+    "El colesterol"
+   ]
+  },
+  {
+   "id": "ph030",
+   "kind": "raw",
+   "src": "img/fd030.png",
+   "start": 246.04,
+   "dur": 3.8
+  },
+  {
+   "id": "ph031",
+   "kind": "raw",
+   "src": "img/fd031.png",
+   "start": 254.08,
+   "dur": 3.8
+  },
+  {
+   "id": "c031",
+   "start": 254.08,
+   "dur": 10.4,
+   "kind": "callout",
+   "eyebrow": "NO SALE EN NINGÚN ANÁLISIS",
+   "figure": "RESERVA",
+   "caption": "Ningún estudio de rutina te la mide, y casi nadie te la nombra en una consulta de quince minutos.",
+   "image": "img/fd030.png"
+  },
+  {
+   "id": "ph033",
+   "kind": "raw",
+   "src": "img/fd033.png",
+   "start": 271.48,
+   "dur": 3.8
+  },
+  {
+   "id": "ph034",
+   "kind": "raw",
+   "src": "img/fd034.png",
+   "start": 280.76,
+   "dur": 3.8
+  },
+  {
+   "id": "c034",
+   "start": 280.76,
+   "dur": 9.54,
+   "kind": "lowerthird",
+   "kicker": "LO QUE SÍ ESTÁ DEMOSTRADO",
+   "title": "Hay una ventana",
+   "desc": "Después del empujón, el cuerpo todavía responde",
+   "tone": "teal"
+  },
+  {
+   "id": "fd035",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd035.mp4",
+   "start": 290.3,
+   "dur": 3.94
+  },
+  {
+   "id": "ph035",
+   "kind": "raw",
+   "src": "img/fd035.png",
+   "start": 294.24,
+   "dur": 3.8
+  },
+  {
+   "id": "ph036",
+   "kind": "raw",
+   "src": "img/fd036.png",
+   "start": 301.16,
+   "dur": 3.8
+  },
+  {
+   "id": "c036",
+   "start": 301.16,
+   "dur": 6.66,
+   "kind": "stat",
+   "eyebrow": "LA VENTANA",
+   "value": 3,
+   "suffix": " meses",
+   "label": "las primeras semanas y los primeros dos o tres meses"
+  },
+  {
+   "id": "fd037",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd037.mp4",
+   "start": 307.82,
+   "dur": 3.94
+  },
+  {
+   "id": "ph037",
+   "kind": "raw",
+   "src": "img/fd037.png",
+   "start": 311.76,
+   "dur": 1.94
+  },
+  {
+   "id": "ph038",
+   "kind": "raw",
+   "src": "img/fd038.png",
+   "start": 313.7,
+   "dur": 3.8
+  },
+  {
+   "id": "ph039",
+   "kind": "raw",
+   "src": "img/fd039.png",
+   "start": 323.52,
+   "dur": 3.8
+  },
+  {
+   "id": "c039",
+   "start": 323.52,
+   "dur": 7.24,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "EL CUERPO ACEPTA EL NIVEL NUEVO",
+   "tone": "warn"
+  },
+  {
+   "id": "ph040",
+   "kind": "raw",
+   "src": "img/fd040.png",
+   "start": 330.76,
+   "dur": 3.8
+  },
+  {
+   "id": "ph041",
+   "kind": "raw",
+   "src": "img/fd041.png",
+   "start": 340.36,
+   "dur": 3.8
+  },
+  {
+   "id": "c041",
+   "start": 340.36,
+   "dur": 8.8,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "NO SUSPENDAS NINGUNA MEDICINA POR TU CUENTA",
+   "tone": "warn"
+  },
+  {
+   "id": "ph044",
+   "kind": "raw",
+   "src": "img/fd044.png",
+   "start": 361.02,
+   "dur": 3.8
+  },
+  {
+   "id": "c044",
+   "start": 361.02,
+   "dur": 8.26,
+   "kind": "headline",
+   "eyebrow": "UNA SOLA IDEA",
+   "tokens": [
+    {
+     "t": "SE"
+    },
+    {
+     "t": "LLAMA"
+    },
+    {
+     "t": "RESERVA",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "fd045",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd045.mp4",
+   "start": 369.28,
+   "dur": 3.94
+  },
+  {
+   "id": "ph045",
+   "kind": "raw",
+   "src": "img/fd045.png",
+   "start": 373.22,
+   "dur": 3.8
+  },
+  {
+   "id": "ph046",
+   "kind": "raw",
+   "src": "img/fd046.png",
+   "start": 378.86,
+   "dur": 6.46
+  },
+  {
+   "id": "c046",
+   "start": 378.86,
+   "dur": 12.92,
+   "kind": "diagram",
+   "eyebrow": "LA RESERVA",
+   "slides": [
+    {
+     "image": "img/fdlam046.png",
+     "eyebrow": "EL TANQUE QUE NO SE USA"
+    }
+   ],
+   "tag": "Lámina de la guía"
+  },
+  {
+   "id": "ph046b",
+   "kind": "raw",
+   "src": "img/fd046b.png",
+   "start": 385.32,
+   "dur": 6.46
+  },
+  {
+   "id": "fd047",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd047.mp4",
+   "start": 391.78,
+   "dur": 3.94
+  },
+  {
+   "id": "c047",
+   "start": 391.78,
+   "dur": 6.54,
+   "kind": "depthscene",
+   "image": "img/fd047.png",
+   "back": "img/fd045.png",
+   "eyebrow": "LA RESERVA",
+   "title": "Lo que te salva cuando la vida te empuja",
+   "sub": "La capacidad de sobra que nunca usas en tu día normal",
+   "side": "left"
+  },
+  {
+   "id": "ph047",
+   "kind": "raw",
+   "src": "img/fd047.png",
+   "start": 395.72,
+   "dur": 2.6
+  },
+  {
+   "id": "ph048",
+   "kind": "raw",
+   "src": "img/fd048.png",
+   "start": 398.32,
+   "dur": 3.8
+  },
+  {
+   "id": "fd049",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd049.mp4",
+   "start": 403.84,
+   "dur": 3.94
+  },
+  {
+   "id": "ph049",
+   "kind": "raw",
+   "src": "img/fd049.png",
+   "start": 407.78,
+   "dur": 2.06
+  },
+  {
+   "id": "ph050",
+   "kind": "raw",
+   "src": "img/fd050.png",
+   "start": 409.84,
+   "dur": 3.8
+  },
+  {
+   "id": "c050",
+   "start": 409.84,
+   "dur": 8.4,
+   "kind": "stat",
+   "eyebrow": "TU DÍA NORMAL",
+   "value": 30,
+   "suffix": " %",
+   "label": "de tu capacidad usas para levantarte, bañarte e ir por el mandado"
+  },
+  {
+   "id": "fd051",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd051.mp4",
+   "start": 418.24,
+   "dur": 3.94
+  },
+  {
+   "id": "c051",
+   "start": 418.24,
+   "dur": 9.32,
+   "kind": "chips",
+   "eyebrow": "TU DÍA NORMAL",
+   "title": "Lo que te pide poquito",
+   "image": "img/fd051.png",
+   "chips": [
+    "Levantarte",
+    "Bañarte",
+    "Hacer de comer",
+    "Ir por el mandado"
+   ]
+  },
+  {
+   "id": "ph051",
+   "kind": "raw",
+   "src": "img/fd051.png",
+   "start": 422.18,
+   "dur": 3.8
+  },
+  {
+   "id": "ph052",
+   "kind": "raw",
+   "src": "img/fd052.png",
+   "start": 427.56,
+   "dur": 3.8
+  },
+  {
+   "id": "ph053",
+   "kind": "raw",
+   "src": "img/fd053.png",
+   "start": 433.8,
+   "dur": 3.8
+  },
+  {
+   "id": "c053",
+   "start": 433.8,
+   "dur": 6.3,
+   "kind": "mitoverdad",
+   "myth": "Si los análisis salen bien, estoy fuerte",
+   "truth": "Sano en reposo no es lo mismo que fuerte"
+  },
+  {
+   "id": "ph054",
+   "kind": "raw",
+   "src": "img/fd054.png",
+   "start": 440.1,
+   "dur": 3.8
+  },
+  {
+   "id": "fd055",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd055.mp4",
+   "start": 450.12,
+   "dur": 3.94
+  },
+  {
+   "id": "ph055",
+   "kind": "raw",
+   "src": "img/fd055.png",
+   "start": 454.06,
+   "dur": 3.8
+  },
+  {
+   "id": "ph056",
+   "kind": "raw",
+   "src": "img/fd056.png",
+   "start": 459.3,
+   "dur": 3.8
+  },
+  {
+   "id": "c056",
+   "start": 459.3,
+   "dur": 9.02,
+   "kind": "lowerthird",
+   "kicker": "LOS MÉDICOS LE DECIMOS",
+   "title": "Fragilidad",
+   "desc": "No es una enfermedad: es tener el tanque en la reserva"
+  },
+  {
+   "id": "ph057",
+   "kind": "raw",
+   "src": "img/fd057.png",
+   "start": 468.32,
+   "dur": 3.8
+  },
+  {
+   "id": "ph058",
+   "kind": "raw",
+   "src": "img/fd058.png",
+   "start": 478.12,
+   "dur": 3.8
+  },
+  {
+   "id": "ph059",
+   "kind": "raw",
+   "src": "img/fd059.png",
+   "start": 487.2,
+   "dur": 3.8
+  },
+  {
+   "id": "c059",
+   "start": 487.2,
+   "dur": 8.08,
+   "kind": "process",
+   "eyebrow": "EL EMPUJÓN",
+   "title": "Por qué uno se repone y el otro no",
+   "steps": [
+    {
+     "title": "Llega el empujón",
+     "desc": "una gripa, una caída, un hospital"
+    },
+    {
+     "title": "El del tanque lleno",
+     "desc": "gasta lo que tiene que gastar y se repone"
+    },
+    {
+     "title": "El del tanque vacío",
+     "desc": "gasta lo último que le quedaba"
+    },
+    {
+     "title": "Ahí se ve el derrumbe",
+     "desc": "en tres semanas, y todos dicen de un día para otro"
+    }
+   ]
+  },
+  {
+   "id": "ph060",
+   "kind": "raw",
+   "src": "img/fd060.png",
+   "start": 495.28,
+   "dur": 3.8
+  },
+  {
+   "id": "ph061",
+   "kind": "raw",
+   "src": "img/fd061.png",
+   "start": 502.3,
+   "dur": 3.8
+  },
+  {
+   "id": "c061",
+   "start": 502.3,
+   "dur": 5.52,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "EL"
+    },
+    {
+     "t": "TANQUE"
+    },
+    {
+     "t": "LLEVABA"
+    },
+    {
+     "t": "AÑOS"
+    },
+    {
+     "t": "VACIÁNDOSE"
+    }
+   ],
+   "perWord": 12,
+   "tone": "warn"
+  },
+  {
+   "id": "ph062",
+   "kind": "raw",
+   "src": "img/fd062.png",
+   "start": 507.82,
+   "dur": 3.8
+  },
+  {
+   "id": "c062",
+   "start": 507.82,
+   "dur": 8.64,
+   "kind": "escalera",
+   "eyebrow": "DESPUÉS DE LOS 70",
+   "title": "No baja como una rampa",
+   "rampLabel": "Lo que todos creen",
+   "tone": "warn",
+   "steps": [
+    {
+     "label": "Una infección de orina"
+    },
+    {
+     "label": "Una caída"
+    },
+    {
+     "label": "Una semana en el hospital"
+    },
+    {
+     "label": "Una gripa fuerte"
+    }
+   ]
+  },
+  {
+   "id": "fd063",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd063.mp4",
+   "start": 516.46,
+   "dur": 3.94
+  },
+  {
+   "id": "ph063",
+   "kind": "raw",
+   "src": "img/fd063.png",
+   "start": 520.4,
+   "dur": 2.04
+  },
+  {
+   "id": "ph064",
+   "kind": "raw",
+   "src": "img/fd064.png",
+   "start": 522.44,
+   "dur": 3.8
+  },
+  {
+   "id": "ph065",
+   "kind": "raw",
+   "src": "img/fd065.png",
+   "start": 531.04,
+   "dur": 3.8
+  },
+  {
+   "id": "c065",
+   "start": 531.04,
+   "dur": 6.94,
+   "kind": "checklist",
+   "eyebrow": "CADA UNO ES UN ESCALÓN",
+   "title": "Lo que te baja un piso",
+   "items": [
+    "Una infección de orina",
+    "Una caída",
+    "Una semana en el hospital",
+    "Una gripa fuerte"
+   ]
+  },
+  {
+   "id": "ph066",
+   "kind": "raw",
+   "src": "img/fd066.png",
+   "start": 537.98,
+   "dur": 3.8
+  },
+  {
+   "id": "fd067",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd067.mp4",
+   "start": 544.64,
+   "dur": 3.94
+  },
+  {
+   "id": "c067",
+   "start": 544.64,
+   "dur": 6.4,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "CADA"
+    },
+    {
+     "t": "ESCALÓN"
+    },
+    {
+     "t": "SE"
+    },
+    {
+     "t": "QUEDA"
+    }
+   ],
+   "perWord": 13,
+   "tone": "warn"
+  },
+  {
+   "id": "ph067",
+   "kind": "raw",
+   "src": "img/fd067.png",
+   "start": 548.58,
+   "dur": 2.46
+  },
+  {
+   "id": "ph068",
+   "kind": "raw",
+   "src": "img/fd068.png",
+   "start": 551.04,
+   "dur": 3.8
+  },
+  {
+   "id": "c068",
+   "start": 551.04,
+   "dur": 6.56,
+   "kind": "headline",
+   "eyebrow": "LA PREGUNTA",
+   "tokens": [
+    {
+     "t": "¿CÓMO"
+    },
+    {
+     "t": "SÉ"
+    },
+    {
+     "t": "CÓMO"
+    },
+    {
+     "t": "ANDO"
+    },
+    {
+     "t": "DE"
+    },
+    {
+     "t": "TANQUE",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "ph069",
+   "kind": "raw",
+   "src": "img/fd069.png",
+   "start": 557.6,
+   "dur": 3.8
+  },
+  {
+   "id": "c069",
+   "start": 557.6,
+   "dur": 10.9,
+   "kind": "lowerthird",
+   "kicker": "CINCO SEÑALES",
+   "title": "Revísalas en tu casa hoy",
+   "desc": "No hace falta ningún análisis caro",
+   "tone": "teal"
+  },
+  {
+   "id": "fd070",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd070.mp4",
+   "start": 568.5,
+   "dur": 3.94
+  },
+  {
+   "id": "ph070",
+   "kind": "raw",
+   "src": "img/fd070.png",
+   "start": 572.44,
+   "dur": 2.62
+  },
+  {
+   "id": "ph071",
+   "kind": "raw",
+   "src": "img/fd071.png",
+   "start": 575.06,
+   "dur": 3.8
+  },
+  {
+   "id": "c071",
+   "start": 575.06,
+   "dur": 9.32,
+   "kind": "callout",
+   "eyebrow": "SEÑAL 1",
+   "figure": "EL CINTURÓN",
+   "caption": "En qué hoyito lo aprieta ahora y en cuál lo apretaba el año pasado.",
+   "image": "img/fd070.png"
+  },
+  {
+   "id": "ph072",
+   "kind": "raw",
+   "src": "img/fd072.png",
+   "start": 584.38,
+   "dur": 3.8
+  },
+  {
+   "id": "fd073",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd073.mp4",
+   "start": 590.96,
+   "dur": 3.94
+  },
+  {
+   "id": "c073",
+   "start": 590.96,
+   "dur": 7.24,
+   "kind": "callout",
+   "eyebrow": "SEÑAL 2",
+   "figure": "TODO ME CUESTA",
+   "caption": "No es el cansancio de haberse desvelado: es estar cansado antes de empezar.",
+   "image": "img/fd073.png"
+  },
+  {
+   "id": "ph073",
+   "kind": "raw",
+   "src": "img/fd073.png",
+   "start": 594.9,
+   "dur": 3.3
+  },
+  {
+   "id": "ph074",
+   "kind": "raw",
+   "src": "img/fd074.png",
+   "start": 598.2,
+   "dur": 3.8
+  },
+  {
+   "id": "c074",
+   "start": 598.2,
+   "dur": 8.26,
+   "kind": "chips",
+   "eyebrow": "SEÑAL 3",
+   "title": "La fuerza de la mano",
+   "image": "img/fd075.png",
+   "chips": [
+    "El frasco de mermelada",
+    "Exprimir un limón",
+    "La tapa del refresco"
+   ]
+  },
+  {
+   "id": "fd075",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd075.mp4",
+   "start": 606.46,
+   "dur": 3.94
+  },
+  {
+   "id": "ph075",
+   "kind": "raw",
+   "src": "img/fd075.png",
+   "start": 610.4,
+   "dur": 3.36
+  },
+  {
+   "id": "ph076",
+   "kind": "raw",
+   "src": "img/fd076.png",
+   "start": 613.76,
+   "dur": 3.8
+  },
+  {
+   "id": "c076",
+   "start": 613.76,
+   "dur": 7.06,
+   "kind": "lowerthird",
+   "kicker": "SEÑAL 4",
+   "title": "La velocidad al caminar",
+   "desc": "No necesitas nada: camínale al lado"
+  },
+  {
+   "id": "fd077",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd077.mp4",
+   "start": 620.82,
+   "dur": 3.94
+  },
+  {
+   "id": "ph077",
+   "kind": "raw",
+   "src": "img/fd077.png",
+   "start": 624.76,
+   "dur": 3.8
+  },
+  {
+   "id": "ph078",
+   "kind": "raw",
+   "src": "img/fd078.png",
+   "start": 628.58,
+   "dur": 3.8
+  },
+  {
+   "id": "c078",
+   "start": 628.58,
+   "dur": 9.5,
+   "kind": "stat",
+   "eyebrow": "CUATRO METROS EN PLANO",
+   "value": 5,
+   "suffix": " segundos",
+   "label": "tardar más que eso es señal de alerta"
+  },
+  {
+   "id": "ph079",
+   "kind": "raw",
+   "src": "img/fd079.png",
+   "start": 638.08,
+   "dur": 3.8
+  },
+  {
+   "id": "fd080",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd080.mp4",
+   "start": 644.5,
+   "dur": 3.94
+  },
+  {
+   "id": "c080",
+   "start": 644.5,
+   "dur": 7.46,
+   "kind": "checklist",
+   "eyebrow": "SEÑAL 5",
+   "title": "Se le encogió el movimiento",
+   "items": [
+    "Ya no sale",
+    "Ya no barre",
+    "Ya no va a misa",
+    "Ya no camina a la tienda",
+    "Ya no le da vuelta a la cuadra"
+   ]
+  },
+  {
+   "id": "ph080",
+   "kind": "raw",
+   "src": "img/fd080.png",
+   "start": 648.44,
+   "dur": 3.52
+  },
+  {
+   "id": "ph081",
+   "kind": "raw",
+   "src": "img/fd081.png",
+   "start": 651.96,
+   "dur": 3.8
+  },
+  {
+   "id": "c081",
+   "start": 651.96,
+   "dur": 8.92,
+   "kind": "checklist",
+   "eyebrow": "EL AUTOTEST",
+   "title": "Las cinco señales",
+   "stamp": "3 O MÁS",
+   "items": [
+    "Baja de peso sin proponérselo",
+    "Cansado antes de empezar",
+    "Ya no abre el frasco",
+    "Camina lento",
+    "Se dejó de mover"
+   ]
+  },
+  {
+   "id": "ph082",
+   "kind": "raw",
+   "src": "img/fdhero082.png",
+   "start": 660.88,
+   "dur": 6.13
+  },
+  {
+   "id": "ph082b",
+   "kind": "raw",
+   "src": "img/fd082b.png",
+   "start": 667.01,
+   "dur": 6.13
+  },
+  {
+   "id": "ph083",
+   "kind": "raw",
+   "src": "img/fd083.png",
+   "start": 673.14,
+   "dur": 3.8
+  },
+  {
+   "id": "c083",
+   "start": 673.14,
+   "dur": 7.52,
+   "kind": "razoncarousel",
+   "cards": [
+    {
+     "index": 0,
+     "name": "LA CAMA",
+     "image": "img/fd084.png"
+    },
+    {
+     "index": 1,
+     "name": "EL SUSTO",
+     "image": "img/fd121.png"
+    },
+    {
+     "index": 2,
+     "name": "LA BOLSA DE MEDICINAS",
+     "image": "img/fd155.png"
+    },
+    {
+     "index": 3,
+     "name": "EL PLATO",
+     "image": "img/fd202.png"
+    },
+    {
+     "index": 4,
+     "name": "LA SED",
+     "image": "img/fd225.png"
+    },
+    {
+     "index": 5,
+     "name": "EL MUNDO CHIQUITO",
+     "image": "img/fd256.png"
+    }
+   ],
+   "focus": 0,
+   "intro": true,
+   "eyebrow": "RAZÓN 1",
+   "kicker": "LA CAMA"
+  },
+  {
+   "id": "fd084",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd084.mp4",
+   "start": 680.66,
+   "dur": 3.94
+  },
+  {
+   "id": "ph084",
+   "kind": "raw",
+   "src": "img/fd084.png",
+   "start": 684.6,
+   "dur": 2.08
+  },
+  {
+   "id": "ph085",
+   "kind": "raw",
+   "src": "img/fd085.png",
+   "start": 686.68,
+   "dur": 3.8
+  },
+  {
+   "id": "ph086",
+   "kind": "raw",
+   "src": "img/fd086.png",
+   "start": 694.97,
+   "dur": 7.46
+  },
+  {
+   "id": "c086",
+   "start": 694.97,
+   "dur": 14.92,
+   "kind": "quote",
+   "text": "Los peligros de irse a la cama. Richard Asher, 1947.",
+   "image": "img/fd087.png"
+  },
+  {
+   "id": "ph086b",
+   "kind": "raw",
+   "src": "img/fd086b.png",
+   "start": 702.43,
+   "dur": 7.46
+  },
+  {
+   "id": "ph087",
+   "kind": "raw",
+   "src": "img/fd087.png",
+   "start": 709.89,
+   "dur": 3.8
+  },
+  {
+   "id": "fd088",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd088.mp4",
+   "start": 719.27,
+   "dur": 3.94
+  },
+  {
+   "id": "c088",
+   "start": 719.27,
+   "dur": 5.98,
+   "kind": "splitlist",
+   "title": "En aquel entonces la receta para todo era reposo",
+   "items": [
+    "¿Te operaron? Reposo tres semanas",
+    "¿Te dio neumonía? Reposo",
+    "¿Estás débil? Reposo"
+   ]
+  },
+  {
+   "id": "ph088",
+   "kind": "raw",
+   "src": "img/fd088.png",
+   "start": 723.21,
+   "dur": 2.04
+  },
+  {
+   "id": "ph089",
+   "kind": "raw",
+   "src": "img/fd089.png",
+   "start": 725.25,
+   "dur": 3.8
+  },
+  {
+   "id": "c089",
+   "start": 725.25,
+   "dur": 8.4,
+   "kind": "mitoverdad",
+   "myth": "La cama es la medicina",
+   "truth": "Están matando gente con el reposo"
+  },
+  {
+   "id": "fd090",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd090.mp4",
+   "start": 733.65,
+   "dur": 3.94
+  },
+  {
+   "id": "c090",
+   "start": 733.65,
+   "dur": 7.16,
+   "kind": "checklist",
+   "eyebrow": "LO QUE PASA ACOSTADO",
+   "title": "Lo que describió Asher en 1947",
+   "items": [
+    "La sangre se estanca en las piernas",
+    "La piel se abre en llagas",
+    "El músculo se desbarata",
+    "Los huesos sueltan calcio",
+    "La cabeza se empieza a confundir"
+   ]
+  },
+  {
+   "id": "ph090",
+   "kind": "raw",
+   "src": "img/fd090.png",
+   "start": 737.59,
+   "dur": 3.22
+  },
+  {
+   "id": "ph091",
+   "kind": "raw",
+   "src": "img/fd091.png",
+   "start": 740.81,
+   "dur": 3.8
+  },
+  {
+   "id": "ph092",
+   "kind": "raw",
+   "src": "img/fd092.png",
+   "start": 746.55,
+   "dur": 9.83
+  },
+  {
+   "id": "c092",
+   "start": 746.55,
+   "dur": 9.83,
+   "kind": "callout",
+   "eyebrow": "ESO NO ES UN CUENTO",
+   "figure": "1947",
+   "caption": "Es historia registrada. Y casi ochenta años después se sigue diciendo: déjalo ahí, que descanse.",
+   "image": "img/fd093.png"
+  },
+  {
+   "id": "ph093",
+   "kind": "raw",
+   "src": "img/fd093.png",
+   "start": 756.38,
+   "dur": 9.97
+  },
+  {
+   "id": "ph094",
+   "kind": "raw",
+   "src": "img/fd094.png",
+   "start": 766.35,
+   "dur": 11.4
+  },
+  {
+   "id": "c094",
+   "start": 766.35,
+   "dur": 11.4,
+   "kind": "lowerthird",
+   "kicker": "EL ESTUDIO",
+   "title": "Personas mayores SANAS, diez días en cama",
+   "desc": "Controlados, bien alimentados, sin enfermedad"
+  },
+  {
+   "id": "fd095",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd095.mp4",
+   "start": 777.75,
+   "dur": 3.94
+  },
+  {
+   "id": "ph095",
+   "kind": "raw",
+   "src": "img/fd095.png",
+   "start": 781.69,
+   "dur": 5.19
+  },
+  {
+   "id": "ph096",
+   "kind": "raw",
+   "src": "img/fd096.png",
+   "start": 786.88,
+   "dur": 9.73
+  },
+  {
+   "id": "c096",
+   "start": 786.88,
+   "dur": 9.73,
+   "kind": "stat",
+   "eyebrow": "EN DIEZ DÍAS",
+   "value": 15,
+   "suffix": " %",
+   "label": "de la fuerza de las piernas, perdida"
+  },
+  {
+   "id": "fd097",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd097.mp4",
+   "start": 796.61,
+   "dur": 3.94
+  },
+  {
+   "id": "c097",
+   "start": 796.61,
+   "dur": 9.81,
+   "kind": "diagram",
+   "eyebrow": "DIEZ DIAS CONTRA DIEZ ANOS",
+   "slides": [
+    {
+     "image": "img/fdlam097.png",
+     "eyebrow": "PESAN LO MISMO"
+    }
+   ],
+   "tag": "Lamina de la guia"
+  },
+  {
+   "id": "ph097",
+   "kind": "raw",
+   "src": "img/fd097.png",
+   "start": 800.55,
+   "dur": 5.87
+  },
+  {
+   "id": "ph098",
+   "kind": "raw",
+   "src": "img/fd098.png",
+   "start": 806.42,
+   "dur": 9.55
+  },
+  {
+   "id": "c098",
+   "start": 806.42,
+   "dur": 9.55,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "DIEZ"
+    },
+    {
+     "t": "DÍAS"
+    },
+    {
+     "t": "CONTRA"
+    },
+    {
+     "t": "DIEZ"
+    },
+    {
+     "t": "AÑOS"
+    }
+   ],
+   "perWord": 12,
+   "tone": "warn"
+  },
+  {
+   "id": "fd099",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd099.mp4",
+   "start": 815.97,
+   "dur": 3.94
+  },
+  {
+   "id": "ph099",
+   "kind": "raw",
+   "src": "img/fd099.png",
+   "start": 819.91,
+   "dur": 6.01
+  },
+  {
+   "id": "fd100",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd100.mp4",
+   "start": 825.92,
+   "dur": 3.94
+  },
+  {
+   "id": "ph100",
+   "kind": "raw",
+   "src": "img/fd100.png",
+   "start": 829.86,
+   "dur": 3.81
+  },
+  {
+   "id": "ph100b",
+   "kind": "raw",
+   "src": "img/fd100b.png",
+   "start": 833.67,
+   "dur": 3.82
+  },
+  {
+   "id": "ph101",
+   "kind": "raw",
+   "src": "img/fd101.png",
+   "start": 837.49,
+   "dur": 10.36
+  },
+  {
+   "id": "fd102",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd102.mp4",
+   "start": 847.85,
+   "dur": 3.94
+  },
+  {
+   "id": "c102",
+   "start": 847.85,
+   "dur": 9.33,
+   "kind": "mitoverdad",
+   "myth": "La infección ya se quitó: misión cumplida",
+   "truth": "Salió del hospital sin poder levantarse sola del escusado"
+  },
+  {
+   "id": "ph102",
+   "kind": "raw",
+   "src": "img/fd102.png",
+   "start": 851.79,
+   "dur": 5.39
+  },
+  {
+   "id": "ph103",
+   "kind": "raw",
+   "src": "img/fd103.png",
+   "start": 857.18,
+   "dur": 10.22
+  },
+  {
+   "id": "ph104",
+   "kind": "raw",
+   "src": "img/fdhero104.png",
+   "start": 867.4,
+   "dur": 9.09
+  },
+  {
+   "id": "ph105",
+   "kind": "raw",
+   "src": "img/fd105.png",
+   "start": 876.49,
+   "dur": 9.46
+  },
+  {
+   "id": "ph106",
+   "kind": "raw",
+   "src": "img/fd106.png",
+   "start": 885.95,
+   "dur": 9.05
+  },
+  {
+   "id": "c106",
+   "start": 885.95,
+   "dur": 9.05,
+   "kind": "stat",
+   "eyebrow": "DE LOS QUE SE INTERNAN",
+   "value": 1,
+   "suffix": " de cada 3",
+   "label": "sale del hospital pudiendo hacer menos cosas que al entrar"
+  },
+  {
+   "id": "ph107",
+   "kind": "raw",
+   "src": "img/fdhero107.png",
+   "start": 895,
+   "dur": 10.68
+  },
+  {
+   "id": "fd108",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd108.mp4",
+   "start": 905.68,
+   "dur": 3.94
+  },
+  {
+   "id": "ph108",
+   "kind": "raw",
+   "src": "img/fd108.png",
+   "start": 909.62,
+   "dur": 5.49
+  },
+  {
+   "id": "ph109",
+   "kind": "raw",
+   "src": "img/fd109.png",
+   "start": 915.11,
+   "dur": 8.72
+  },
+  {
+   "id": "fd110",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd110.mp4",
+   "start": 923.83,
+   "dur": 3.94
+  },
+  {
+   "id": "ph110",
+   "kind": "raw",
+   "src": "img/fd110.png",
+   "start": 927.77,
+   "dur": 6.36
+  },
+  {
+   "id": "fd111",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd111.mp4",
+   "start": 934.13,
+   "dur": 3.94
+  },
+  {
+   "id": "c111",
+   "start": 934.13,
+   "dur": 9.58,
+   "kind": "callout",
+   "eyebrow": "SEGUNDO",
+   "figure": "A LA SILLA",
+   "caption": "Levantarse de una superficie es de los movimientos más completos que existen para la pierna.",
+   "image": "img/fd110.png"
+  },
+  {
+   "id": "ph111",
+   "kind": "raw",
+   "src": "img/fd111.png",
+   "start": 938.07,
+   "dur": 5.64
+  },
+  {
+   "id": "fd112",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd112.mp4",
+   "start": 943.71,
+   "dur": 3.94
+  },
+  {
+   "id": "c112",
+   "start": 943.71,
+   "dur": 13.29,
+   "kind": "stat",
+   "eyebrow": "AUNQUE SEAN",
+   "value": 20,
+   "suffix": " pasos",
+   "label": "veinte pasos hoy son veinte que no vas a tener que reconstruir la semana que entra"
+  },
+  {
+   "id": "ph112",
+   "kind": "raw",
+   "src": "img/fd112.png",
+   "start": 947.65,
+   "dur": 4.67
+  },
+  {
+   "id": "ph112b",
+   "kind": "raw",
+   "src": "img/fd112b.png",
+   "start": 952.32,
+   "dur": 4.68
+  },
+  {
+   "id": "ph113",
+   "kind": "raw",
+   "src": "img/fd113.png",
+   "start": 957,
+   "dur": 10.45
+  },
+  {
+   "id": "c113",
+   "start": 957,
+   "dur": 10.45,
+   "kind": "checklist",
+   "eyebrow": "PREGUNTA POR ESTO",
+   "title": "Lo que lo amarra a la cama",
+   "items": [
+    "El suero que ya no se ocupa",
+    "La sonda que ya no hace falta",
+    "El oxígeno que ya no necesita",
+    "No se levante sola, señora"
+   ]
+  },
+  {
+   "id": "ph114",
+   "kind": "raw",
+   "src": "img/fd114.png",
+   "start": 967.45,
+   "dur": 8.78
+  },
+  {
+   "id": "fd115",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd115.mp4",
+   "start": 976.23,
+   "dur": 3.94
+  },
+  {
+   "id": "ph115",
+   "kind": "raw",
+   "src": "img/fd115.png",
+   "start": 980.17,
+   "dur": 7.4
+  },
+  {
+   "id": "ph116",
+   "kind": "raw",
+   "src": "img/fd116.png",
+   "start": 987.57,
+   "dur": 5.87
+  },
+  {
+   "id": "c116",
+   "start": 987.57,
+   "dur": 11.73,
+   "kind": "mitoverdad",
+   "myth": "Que descanse, pobrecito",
+   "truth": "Que se enferme lo más de pie que se pueda"
+  },
+  {
+   "id": "ph116b",
+   "kind": "raw",
+   "src": "img/fd116b.png",
+   "start": 993.44,
+   "dur": 5.86
+  },
+  {
+   "id": "fd117",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd117.mp4",
+   "start": 999.3,
+   "dur": 3.94
+  },
+  {
+   "id": "ph117",
+   "kind": "raw",
+   "src": "img/fd117.png",
+   "start": 1003.24,
+   "dur": 3.94
+  },
+  {
+   "id": "ph118",
+   "kind": "raw",
+   "src": "img/fd118.png",
+   "start": 1007.18,
+   "dur": 5.76
+  },
+  {
+   "id": "c118",
+   "start": 1007.18,
+   "dur": 11.53,
+   "kind": "guardaesto",
+   "title": "La lista del hospital va en la descripción",
+   "items": [
+    "Qué preguntar cada día",
+    "El plan de las primeras semanas",
+    "Cómo levantarlo a la silla",
+    "Los 20 pasos del pasillo"
+   ],
+   "tag": "ABRE LA DESCRIPCIÓN"
+  },
+  {
+   "id": "ph118b",
+   "kind": "raw",
+   "src": "img/fd118b.png",
+   "start": 1012.94,
+   "dur": 5.77
+  },
+  {
+   "id": "ph119",
+   "kind": "raw",
+   "src": "img/fd119.png",
+   "start": 1018.71,
+   "dur": 7.17
+  },
+  {
+   "id": "ph120",
+   "kind": "raw",
+   "src": "img/fd120.png",
+   "start": 1025.88,
+   "dur": 9.49
+  },
+  {
+   "id": "c120",
+   "start": 1025.88,
+   "dur": 9.49,
+   "kind": "razoncarousel",
+   "cards": [
+    {
+     "index": 0,
+     "name": "LA CAMA",
+     "image": "img/fd084.png"
+    },
+    {
+     "index": 1,
+     "name": "EL SUSTO",
+     "image": "img/fd121.png"
+    },
+    {
+     "index": 2,
+     "name": "LA BOLSA DE MEDICINAS",
+     "image": "img/fd155.png"
+    },
+    {
+     "index": 3,
+     "name": "EL PLATO",
+     "image": "img/fd202.png"
+    },
+    {
+     "index": 4,
+     "name": "LA SED",
+     "image": "img/fd225.png"
+    },
+    {
+     "index": 5,
+     "name": "EL MUNDO CHIQUITO",
+     "image": "img/fd256.png"
+    }
+   ],
+   "focus": 1,
+   "intro": false,
+   "eyebrow": "RAZÓN 2",
+   "kicker": "EL SUSTO"
+  },
+  {
+   "id": "ph121",
+   "kind": "raw",
+   "src": "img/fd121.png",
+   "start": 1035.37,
+   "dur": 9.51
+  },
+  {
+   "id": "ph122",
+   "kind": "raw",
+   "src": "img/fd122.png",
+   "start": 1044.88,
+   "dur": 6.91
+  },
+  {
+   "id": "ph123",
+   "kind": "raw",
+   "src": "img/fd123.png",
+   "start": 1051.79,
+   "dur": 5.96
+  },
+  {
+   "id": "ph123b",
+   "kind": "raw",
+   "src": "img/fd123b.png",
+   "start": 1057.75,
+   "dur": 5.95
+  },
+  {
+   "id": "ph124",
+   "kind": "raw",
+   "src": "img/fd124.png",
+   "start": 1063.7,
+   "dur": 9.44
+  },
+  {
+   "id": "c124",
+   "start": 1063.7,
+   "dur": 9.44,
+   "kind": "depthscene",
+   "image": "img/fd124.png",
+   "back": "img/fd123.png",
+   "eyebrow": "LO QUE SE ROMPE EN UNA CAÍDA",
+   "title": "La confianza, no el hueso",
+   "sub": "Una confianza que él ni sabía que tenía",
+   "side": "right",
+   "tone": "warn"
+  },
+  {
+   "id": "fd125",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd125.mp4",
+   "start": 1073.14,
+   "dur": 3.94
+  },
+  {
+   "id": "ph125",
+   "kind": "raw",
+   "src": "img/fd125.png",
+   "start": 1077.08,
+   "dur": 6.4
+  },
+  {
+   "id": "fd126",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd126.mp4",
+   "start": 1083.48,
+   "dur": 3.94
+  },
+  {
+   "id": "ph126",
+   "kind": "raw",
+   "src": "img/fd126.png",
+   "start": 1087.42,
+   "dur": 5.21
+  },
+  {
+   "id": "fd127",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd127.mp4",
+   "start": 1092.63,
+   "dur": 3.94
+  },
+  {
+   "id": "ph127",
+   "kind": "raw",
+   "src": "img/fd127.png",
+   "start": 1096.57,
+   "dur": 5.89
+  },
+  {
+   "id": "ph128",
+   "kind": "raw",
+   "src": "img/fd128.png",
+   "start": 1102.46,
+   "dur": 8.13
+  },
+  {
+   "id": "c128",
+   "start": 1102.46,
+   "dur": 8.13,
+   "kind": "process",
+   "eyebrow": "SÍNDROME POST CAÍDA",
+   "title": "Los seis meses que siguen",
+   "steps": [
+    {
+     "title": "Semana 1",
+     "desc": "mejor ya no salgo sola, no vaya a ser"
+    },
+    {
+     "title": "Semana 3",
+     "desc": "ya tampoco baja al patio"
+    },
+    {
+     "title": "Mes 2",
+     "desc": "ya no se baña sola"
+    },
+    {
+     "title": "Mes 4",
+     "desc": "pasa el día en el sillón"
+    },
+    {
+     "title": "Mes 6",
+     "desc": "se cae otra vez, y ahora sí se rompe la cadera"
+    }
+   ]
+  },
+  {
+   "id": "ph129",
+   "kind": "raw",
+   "src": "img/fd129.png",
+   "start": 1110.59,
+   "dur": 5.96
+  },
+  {
+   "id": "fd130",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd130.mp4",
+   "start": 1116.55,
+   "dur": 3.94
+  },
+  {
+   "id": "ph130",
+   "kind": "raw",
+   "src": "img/fd130.png",
+   "start": 1120.49,
+   "dur": 6.38
+  },
+  {
+   "id": "ph131",
+   "kind": "raw",
+   "src": "img/fd131.png",
+   "start": 1126.87,
+   "dur": 10.59
+  },
+  {
+   "id": "fd132",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd132.mp4",
+   "start": 1137.46,
+   "dur": 3.94
+  },
+  {
+   "id": "c132",
+   "start": 1137.46,
+   "dur": 9.02,
+   "kind": "errorstinger",
+   "number": "6",
+   "title": "MESES DESPUÉS, LA CADERA",
+   "tone": "warn"
+  },
+  {
+   "id": "ph132",
+   "kind": "raw",
+   "src": "img/fd132.png",
+   "start": 1141.4,
+   "dur": 5.08
+  },
+  {
+   "id": "ph133",
+   "kind": "raw",
+   "src": "img/fd133.png",
+   "start": 1146.48,
+   "dur": 9.74
+  },
+  {
+   "id": "c133",
+   "start": 1146.48,
+   "dur": 9.74,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "NADIE HIZO NADA CON EL SUSTO",
+   "tone": "warn"
+  },
+  {
+   "id": "fd134",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd134.mp4",
+   "start": 1156.22,
+   "dur": 3.94
+  },
+  {
+   "id": "ph134",
+   "kind": "raw",
+   "src": "img/fd134.png",
+   "start": 1160.16,
+   "dur": 5.03
+  },
+  {
+   "id": "ph134b",
+   "kind": "raw",
+   "src": "img/fd134b.png",
+   "start": 1165.19,
+   "dur": 5.03
+  },
+  {
+   "id": "ph135",
+   "kind": "raw",
+   "src": "img/fd135.png",
+   "start": 1170.22,
+   "dur": 10.33
+  },
+  {
+   "id": "c135",
+   "start": 1170.22,
+   "dur": 10.33,
+   "kind": "lowerthird",
+   "kicker": "DESPUÉS DE LOS 75",
+   "title": "La cadera no es una fractura cualquiera",
+   "tone": "warn"
+  },
+  {
+   "id": "ph136",
+   "kind": "raw",
+   "src": "img/fdhero136.png",
+   "start": 1180.55,
+   "dur": 9.46
+  },
+  {
+   "id": "ph137",
+   "kind": "raw",
+   "src": "img/fd137.png",
+   "start": 1190.01,
+   "dur": 9.58
+  },
+  {
+   "id": "c137",
+   "start": 1190.01,
+   "dur": 9.58,
+   "kind": "headline",
+   "eyebrow": "NO SE TRATA DE DECIRLE NO TENGAS MIEDO",
+   "tokens": [
+    {
+     "t": "QUITARLE"
+    },
+    {
+     "t": "MOTIVOS"
+    },
+    {
+     "t": "AL"
+    },
+    {
+     "t": "MIEDO",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "fd138",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd138.mp4",
+   "start": 1199.59,
+   "dur": 3.94
+  },
+  {
+   "id": "ph138",
+   "kind": "raw",
+   "src": "img/fd138.png",
+   "start": 1203.53,
+   "dur": 5.61
+  },
+  {
+   "id": "fd139",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd139.mp4",
+   "start": 1209.14,
+   "dur": 3.94
+  },
+  {
+   "id": "ph139",
+   "kind": "raw",
+   "src": "img/fd139.png",
+   "start": 1213.08,
+   "dur": 5.79
+  },
+  {
+   "id": "ph140",
+   "kind": "raw",
+   "src": "img/fd140.png",
+   "start": 1218.87,
+   "dur": 10.2
+  },
+  {
+   "id": "c140",
+   "start": 1218.87,
+   "dur": 10.2,
+   "kind": "callout",
+   "eyebrow": "EL BAÑO",
+   "figure": "LA BARRA",
+   "caption": "Bien atornillada a la pared. No de esas que se pegan con ventosa.",
+   "image": "img/fd139.png"
+  },
+  {
+   "id": "ph141",
+   "kind": "raw",
+   "src": "img/fd141.png",
+   "start": 1229.07,
+   "dur": 9.11
+  },
+  {
+   "id": "ph142",
+   "kind": "raw",
+   "src": "img/fd142.png",
+   "start": 1238.18,
+   "dur": 9.93
+  },
+  {
+   "id": "c142",
+   "start": 1238.18,
+   "dur": 9.93,
+   "kind": "chips",
+   "eyebrow": "DENTRO DE LA CASA",
+   "title": "Lo que trae en los pies",
+   "image": "img/fd141.png",
+   "chips": [
+    "Zapato cerrado",
+    "Con talón",
+    "Suela que agarre"
+   ]
+  },
+  {
+   "id": "ph143",
+   "kind": "raw",
+   "src": "img/fd143.png",
+   "start": 1248.11,
+   "dur": 10.09
+  },
+  {
+   "id": "ph144",
+   "kind": "raw",
+   "src": "img/fd144.png",
+   "start": 1258.2,
+   "dur": 10.44
+  },
+  {
+   "id": "fd145",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd145.mp4",
+   "start": 1268.64,
+   "dur": 3.94
+  },
+  {
+   "id": "ph145",
+   "kind": "raw",
+   "src": "img/fd145.png",
+   "start": 1272.58,
+   "dur": 5.75
+  },
+  {
+   "id": "ph146",
+   "kind": "raw",
+   "src": "img/fd146.png",
+   "start": 1278.33,
+   "dur": 10.63
+  },
+  {
+   "id": "c146",
+   "start": 1278.33,
+   "dur": 10.63,
+   "kind": "checklist",
+   "eyebrow": "UN FIN DE SEMANA",
+   "title": "La casa, cuarto por cuarto",
+   "stamp": "BARATO",
+   "items": [
+    "Barra atornillada en el baño",
+    "Tapete que de verdad agarre",
+    "Zapato cerrado dentro de casa",
+    "Lucecita de noche en el pasillo",
+    "Fuera los tapetes sueltos"
+   ]
+  },
+  {
+   "id": "fd147",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd147.mp4",
+   "start": 1288.96,
+   "dur": 3.94
+  },
+  {
+   "id": "c147",
+   "start": 1288.96,
+   "dur": 10.63,
+   "kind": "chips",
+   "eyebrow": "QUÍTALE DEL CAMINO",
+   "title": "Lo que agarra el pie",
+   "image": "img/fd147.png",
+   "chips": [
+    "Los tapetes sueltos",
+    "El cable de la extensión",
+    "La cubeta de siempre"
+   ]
+  },
+  {
+   "id": "ph147",
+   "kind": "raw",
+   "src": "img/fd147.png",
+   "start": 1292.9,
+   "dur": 6.69
+  },
+  {
+   "id": "ph148",
+   "kind": "raw",
+   "src": "img/fd148.png",
+   "start": 1299.59,
+   "dur": 9.2
+  },
+  {
+   "id": "ph149",
+   "kind": "raw",
+   "src": "img/fd149.png",
+   "start": 1308.79,
+   "dur": 10.89
+  },
+  {
+   "id": "c149",
+   "start": 1308.79,
+   "dur": 10.89,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "HAY"
+    },
+    {
+     "t": "QUE"
+    },
+    {
+     "t": "VOLVER"
+    },
+    {
+     "t": "A"
+    },
+    {
+     "t": "MOVERSE"
+    }
+   ],
+   "perWord": 12,
+   "tone": "teal"
+  },
+  {
+   "id": "fd150",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd150.mp4",
+   "start": 1319.68,
+   "dur": 3.94
+  },
+  {
+   "id": "ph150",
+   "kind": "raw",
+   "src": "img/fd150.png",
+   "start": 1323.62,
+   "dur": 6.43
+  },
+  {
+   "id": "fd151",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd151.mp4",
+   "start": 1330.05,
+   "dur": 3.94
+  },
+  {
+   "id": "c151",
+   "start": 1330.05,
+   "dur": 9.83,
+   "kind": "razoncarousel",
+   "cards": [
+    {
+     "index": 0,
+     "name": "LA CAMA",
+     "image": "img/fd084.png"
+    },
+    {
+     "index": 1,
+     "name": "EL SUSTO",
+     "image": "img/fd121.png"
+    },
+    {
+     "index": 2,
+     "name": "LA BOLSA DE MEDICINAS",
+     "image": "img/fd155.png"
+    },
+    {
+     "index": 3,
+     "name": "EL PLATO",
+     "image": "img/fd202.png"
+    },
+    {
+     "index": 4,
+     "name": "LA SED",
+     "image": "img/fd225.png"
+    },
+    {
+     "index": 5,
+     "name": "EL MUNDO CHIQUITO",
+     "image": "img/fd256.png"
+    }
+   ],
+   "focus": 2,
+   "intro": false,
+   "eyebrow": "RAZÓN 3",
+   "kicker": "LA BOLSA DE MEDICINAS"
+  },
+  {
+   "id": "ph151",
+   "kind": "raw",
+   "src": "img/fd151.png",
+   "start": 1333.99,
+   "dur": 5.89
+  },
+  {
+   "id": "ph152",
+   "kind": "raw",
+   "src": "img/fd152.png",
+   "start": 1339.88,
+   "dur": 9.65
+  },
+  {
+   "id": "c152",
+   "start": 1339.88,
+   "dur": 9.65,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "NO ABRAS EL CAJÓN A TIRAR CAJAS",
+   "tone": "warn"
+  },
+  {
+   "id": "ph153",
+   "kind": "raw",
+   "src": "img/fd153.png",
+   "start": 1349.53,
+   "dur": 11.32
+  },
+  {
+   "id": "fd154",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd154.mp4",
+   "start": 1360.85,
+   "dur": 3.94
+  },
+  {
+   "id": "ph154",
+   "kind": "raw",
+   "src": "img/fd154.png",
+   "start": 1364.79,
+   "dur": 4.29
+  },
+  {
+   "id": "ph154b",
+   "kind": "raw",
+   "src": "img/fd154b.png",
+   "start": 1369.08,
+   "dur": 4.29
+  },
+  {
+   "id": "ph155",
+   "kind": "raw",
+   "src": "img/fd155.png",
+   "start": 1373.37,
+   "dur": 9.53
+  },
+  {
+   "id": "c155",
+   "start": 1373.37,
+   "dur": 9.53,
+   "kind": "stat",
+   "eyebrow": "EN LA MISMA BOLSA",
+   "value": 12,
+   "suffix": " cajas",
+   "label": "típicamente entre seis y doce medicamentos distintos"
+  },
+  {
+   "id": "ph156",
+   "kind": "raw",
+   "src": "img/fdhero156.png",
+   "start": 1382.9,
+   "dur": 9.02
+  },
+  {
+   "id": "ph157",
+   "kind": "raw",
+   "src": "img/fd157.png",
+   "start": 1391.92,
+   "dur": 8.98
+  },
+  {
+   "id": "c157",
+   "start": 1391.92,
+   "dur": 8.98,
+   "kind": "lowerthird",
+   "kicker": "ESTO TIENE NOMBRE",
+   "title": "Polifarmacia",
+   "desc": "Cada uno recetó bien. Ninguno vio la bolsa completa."
+  },
+  {
+   "id": "fd158",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd158.mp4",
+   "start": 1400.9,
+   "dur": 3.94
+  },
+  {
+   "id": "ph158",
+   "kind": "raw",
+   "src": "img/fd158.png",
+   "start": 1404.84,
+   "dur": 5.03
+  },
+  {
+   "id": "ph159",
+   "kind": "raw",
+   "src": "img/fd159.png",
+   "start": 1409.87,
+   "dur": 9.74
+  },
+  {
+   "id": "c159",
+   "start": 1409.87,
+   "dur": 9.74,
+   "kind": "headline",
+   "eyebrow": "LA TRAMPA MÁS ELEGANTE",
+   "tokens": [
+    {
+     "t": "LA"
+    },
+    {
+     "t": "CASCADA",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "ph160",
+   "kind": "raw",
+   "src": "img/fd160.png",
+   "start": 1419.61,
+   "dur": 10.83
+  },
+  {
+   "id": "ph161",
+   "kind": "raw",
+   "src": "img/fd161.png",
+   "start": 1430.44,
+   "dur": 9.37
+  },
+  {
+   "id": "ph162",
+   "kind": "raw",
+   "src": "img/fd162.png",
+   "start": 1439.81,
+   "dur": 9.74
+  },
+  {
+   "id": "c162",
+   "start": 1439.81,
+   "dur": 9.74,
+   "kind": "diagram",
+   "eyebrow": "LA CASCADA",
+   "slides": [
+    {
+     "image": "img/fdlam162.png",
+     "eyebrow": "CÓMO EMPIEZA CON UN TOBILLO"
+    }
+   ],
+   "tag": "Lámina de la guía"
+  },
+  {
+   "id": "fd163",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd163.mp4",
+   "start": 1449.55,
+   "dur": 3.94
+  },
+  {
+   "id": "ph163",
+   "kind": "raw",
+   "src": "img/fd163.png",
+   "start": 1453.49,
+   "dur": 6.67
+  },
+  {
+   "id": "fd164",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd164.mp4",
+   "start": 1460.16,
+   "dur": 3.94
+  },
+  {
+   "id": "ph164",
+   "kind": "raw",
+   "src": "img/fd164.png",
+   "start": 1464.1,
+   "dur": 4.75
+  },
+  {
+   "id": "fd165",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd165.mp4",
+   "start": 1468.85,
+   "dur": 3.94
+  },
+  {
+   "id": "c165",
+   "start": 1468.85,
+   "dur": 10.81,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "TODO"
+    },
+    {
+     "t": "EMPEZÓ"
+    },
+    {
+     "t": "CON"
+    },
+    {
+     "t": "UN"
+    },
+    {
+     "t": "TOBILLO"
+    },
+    {
+     "t": "HINCHADO"
+    }
+   ],
+   "perWord": 11,
+   "tone": "warn"
+  },
+  {
+   "id": "ph165",
+   "kind": "raw",
+   "src": "img/fd165.png",
+   "start": 1472.79,
+   "dur": 6.87
+  },
+  {
+   "id": "ph166",
+   "kind": "raw",
+   "src": "img/fd166.png",
+   "start": 1479.66,
+   "dur": 10
+  },
+  {
+   "id": "c166",
+   "start": 1479.66,
+   "dur": 10,
+   "kind": "splitlist",
+   "title": "Los cuatro grupos que más deterioro causan",
+   "items": [
+    "Las de dormir y los nervios",
+    "Las que resecan",
+    "La presión demasiado controlada",
+    "El efecto escondido de la B12"
+   ]
+  },
+  {
+   "id": "ph167",
+   "kind": "raw",
+   "src": "img/fd167.png",
+   "start": 1489.66,
+   "dur": 11.04
+  },
+  {
+   "id": "c167",
+   "start": 1489.66,
+   "dur": 11.04,
+   "kind": "lowerthird",
+   "kicker": "GRUPO 1",
+   "title": "Las de dormir y los nervios",
+   "desc": "Quitan el equilibrio y suben el riesgo de caídas",
+   "tone": "warn"
+  },
+  {
+   "id": "fd168",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd168.mp4",
+   "start": 1500.7,
+   "dur": 3.94
+  },
+  {
+   "id": "ph168",
+   "kind": "raw",
+   "src": "img/fd168.png",
+   "start": 1504.64,
+   "dur": 7
+  },
+  {
+   "id": "ph169",
+   "kind": "raw",
+   "src": "img/fd169.png",
+   "start": 1511.64,
+   "dur": 6.77
+  },
+  {
+   "id": "ph169b",
+   "kind": "raw",
+   "src": "img/fd169b.png",
+   "start": 1518.41,
+   "dur": 6.77
+  },
+  {
+   "id": "ph170",
+   "kind": "raw",
+   "src": "img/fd170.png",
+   "start": 1525.18,
+   "dur": 11.24
+  },
+  {
+   "id": "c170",
+   "start": 1525.18,
+   "dur": 11.24,
+   "kind": "lowerthird",
+   "kicker": "GRUPO 2",
+   "title": "Las que resecan",
+   "desc": "Las reconoces por la boca seca"
+  },
+  {
+   "id": "ph171",
+   "kind": "raw",
+   "src": "img/fd171.png",
+   "start": 1536.42,
+   "dur": 9.65
+  },
+  {
+   "id": "ph172",
+   "kind": "raw",
+   "src": "img/fd172.png",
+   "start": 1546.07,
+   "dur": 5.88
+  },
+  {
+   "id": "ph172b",
+   "kind": "raw",
+   "src": "img/fd172b.png",
+   "start": 1551.95,
+   "dur": 5.88
+  },
+  {
+   "id": "ph173",
+   "kind": "raw",
+   "src": "img/fd173.png",
+   "start": 1557.83,
+   "dur": 5.78
+  },
+  {
+   "id": "ph173b",
+   "kind": "raw",
+   "src": "img/fd173b.png",
+   "start": 1563.61,
+   "dur": 5.77
+  },
+  {
+   "id": "ph174",
+   "kind": "raw",
+   "src": "img/fd174.png",
+   "start": 1569.38,
+   "dur": 10.08
+  },
+  {
+   "id": "c174",
+   "start": 1569.38,
+   "dur": 10.08,
+   "kind": "lowerthird",
+   "kicker": "GRUPO 3",
+   "title": "La presión demasiado controlada",
+   "desc": "Después de cierta edad, demasiado baja también es peligrosa",
+   "tone": "warn"
+  },
+  {
+   "id": "fd175",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd175.mp4",
+   "start": 1579.46,
+   "dur": 3.94
+  },
+  {
+   "id": "c175",
+   "start": 1579.46,
+   "dur": 9.05,
+   "kind": "diagram",
+   "eyebrow": "AL PARARSE",
+   "slides": [
+    {
+     "image": "img/fdlam177.png",
+     "eyebrow": "LA PRESION SE CAE TODAVIA MAS"
+    }
+   ],
+   "tag": "Lamina de la guia"
+  },
+  {
+   "id": "ph175",
+   "kind": "raw",
+   "src": "img/fd175.png",
+   "start": 1583.4,
+   "dur": 5.11
+  },
+  {
+   "id": "ph176",
+   "kind": "raw",
+   "src": "img/fd176.png",
+   "start": 1588.51,
+   "dur": 8.95
+  },
+  {
+   "id": "c176",
+   "start": 1588.51,
+   "dur": 8.95,
+   "kind": "checklist",
+   "eyebrow": "PÍDELO EN LA CONSULTA",
+   "title": "Presión acostado y de pie",
+   "stamp": "3 MINUTOS",
+   "items": [
+    "Acostado, tranquilo",
+    "De pie, después de un ratito",
+    "Compara los dos números",
+    "Se llama hipotensión ortostática"
+   ]
+  },
+  {
+   "id": "fd177",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd177.mp4",
+   "start": 1597.46,
+   "dur": 3.94
+  },
+  {
+   "id": "c177",
+   "start": 1597.46,
+   "dur": 16.31,
+   "kind": "splitcompare",
+   "eyebrow": "PÍDELO EN LA CONSULTA",
+   "title": "La misma persona, dos posiciones",
+   "left": {
+    "image": "img/fd176.png",
+    "label": "Acostado",
+    "note": "tranquilo, un minuto"
+   },
+   "right": {
+    "image": "img/fd177.png",
+    "label": "De pie",
+    "note": "si se cae mucho: hipotensión ortostática"
+   },
+   "winner": "none"
+  },
+  {
+   "id": "ph177",
+   "kind": "raw",
+   "src": "img/fd177.png",
+   "start": 1601.4,
+   "dur": 6.18
+  },
+  {
+   "id": "ph177b",
+   "kind": "raw",
+   "src": "img/fd177b.png",
+   "start": 1607.58,
+   "dur": 6.19
+  },
+  {
+   "id": "ph178",
+   "kind": "raw",
+   "src": "img/fd178.png",
+   "start": 1613.77,
+   "dur": 10.91
+  },
+  {
+   "id": "c178",
+   "start": 1613.77,
+   "dur": 10.91,
+   "kind": "lowerthird",
+   "kicker": "GRUPO 4",
+   "title": "El efecto escondido: la B12",
+   "desc": "Se mide con un análisis normalito y se corrige"
+  },
+  {
+   "id": "ph179",
+   "kind": "raw",
+   "src": "img/fd179.png",
+   "start": 1624.68,
+   "dur": 11.48
+  },
+  {
+   "id": "fd180",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd180.mp4",
+   "start": 1636.16,
+   "dur": 3.94
+  },
+  {
+   "id": "c180",
+   "start": 1636.16,
+   "dur": 9.76,
+   "kind": "splitlist",
+   "title": "Lo que da la falta de B12",
+   "items": [
+    "Cansancio",
+    "Hormigueo en los pies",
+    "Problemas de equilibrio",
+    "Y hasta puede afectar la memoria"
+   ]
+  },
+  {
+   "id": "ph180",
+   "kind": "raw",
+   "src": "img/fd180.png",
+   "start": 1640.1,
+   "dur": 5.82
+  },
+  {
+   "id": "ph181",
+   "kind": "raw",
+   "src": "img/fd181.png",
+   "start": 1645.92,
+   "dur": 6.01
+  },
+  {
+   "id": "c181",
+   "start": 1645.92,
+   "dur": 12.02,
+   "kind": "headline",
+   "eyebrow": "LO MÁS FÁCIL DEL VIDEO",
+   "tokens": [
+    {
+     "t": "JUNTA"
+    },
+    {
+     "t": "TODO"
+    },
+    {
+     "t": "EN"
+    },
+    {
+     "t": "UNA"
+    },
+    {
+     "t": "BOLSA",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "ph181b",
+   "kind": "raw",
+   "src": "img/fd181b.png",
+   "start": 1651.93,
+   "dur": 6.01
+  },
+  {
+   "id": "fd182",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd182.mp4",
+   "start": 1657.94,
+   "dur": 3.94
+  },
+  {
+   "id": "ph182",
+   "kind": "raw",
+   "src": "img/fd182.png",
+   "start": 1661.88,
+   "dur": 6.04
+  },
+  {
+   "id": "ph183",
+   "kind": "raw",
+   "src": "img/fd183.png",
+   "start": 1667.92,
+   "dur": 7.76
+  },
+  {
+   "id": "ph184",
+   "kind": "raw",
+   "src": "img/fd184.png",
+   "start": 1675.68,
+   "dur": 9.61
+  },
+  {
+   "id": "c184",
+   "start": 1675.68,
+   "dur": 9.61,
+   "kind": "guardaesto",
+   "title": "La pregunta que más deterioro previene",
+   "items": [
+    "¿Podemos revisar la lista completa?",
+    "¿Hay alguna que ya no necesite?",
+    "¿Alguna que se pueda bajar?",
+    "Presión acostado y de pie"
+   ],
+   "tag": "LLÉVALO A LA CONSULTA"
+  },
+  {
+   "id": "ph185",
+   "kind": "raw",
+   "src": "img/fd185.png",
+   "start": 1685.29,
+   "dur": 6.05
+  },
+  {
+   "id": "ph185b",
+   "kind": "raw",
+   "src": "img/fd185b.png",
+   "start": 1691.34,
+   "dur": 6.06
+  },
+  {
+   "id": "ph186",
+   "kind": "raw",
+   "src": "img/fdhero186.png",
+   "start": 1697.4,
+   "dur": 9.32
+  },
+  {
+   "id": "fd187",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd187.mp4",
+   "start": 1706.72,
+   "dur": 3.94
+  },
+  {
+   "id": "c187",
+   "start": 1706.72,
+   "dur": 13.65,
+   "kind": "razoncarousel",
+   "cards": [
+    {
+     "index": 0,
+     "name": "LA CAMA",
+     "image": "img/fd084.png"
+    },
+    {
+     "index": 1,
+     "name": "EL SUSTO",
+     "image": "img/fd121.png"
+    },
+    {
+     "index": 2,
+     "name": "LA BOLSA DE MEDICINAS",
+     "image": "img/fd155.png"
+    },
+    {
+     "index": 3,
+     "name": "EL PLATO",
+     "image": "img/fd202.png"
+    },
+    {
+     "index": 4,
+     "name": "LA SED",
+     "image": "img/fd225.png"
+    },
+    {
+     "index": 5,
+     "name": "EL MUNDO CHIQUITO",
+     "image": "img/fd256.png"
+    }
+   ],
+   "focus": 3,
+   "intro": false,
+   "eyebrow": "RAZÓN 4",
+   "kicker": "EL PLATO"
+  },
+  {
+   "id": "ph187",
+   "kind": "raw",
+   "src": "img/fd187.png",
+   "start": 1710.66,
+   "dur": 4.86
+  },
+  {
+   "id": "ph187b",
+   "kind": "raw",
+   "src": "img/fd187b.png",
+   "start": 1715.52,
+   "dur": 4.85
+  },
+  {
+   "id": "ph188",
+   "kind": "raw",
+   "src": "img/fd188.png",
+   "start": 1720.37,
+   "dur": 5.86
+  },
+  {
+   "id": "ph188b",
+   "kind": "raw",
+   "src": "img/fd188b.png",
+   "start": 1726.23,
+   "dur": 5.86
+  },
+  {
+   "id": "fd189",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd189.mp4",
+   "start": 1732.09,
+   "dur": 3.94
+  },
+  {
+   "id": "ph189",
+   "kind": "raw",
+   "src": "img/fd189.png",
+   "start": 1736.03,
+   "dur": 3.89
+  },
+  {
+   "id": "ph189b",
+   "kind": "raw",
+   "src": "img/fd189b.png",
+   "start": 1739.92,
+   "dur": 3.89
+  },
+  {
+   "id": "ph190",
+   "kind": "raw",
+   "src": "img/fdhero190.png",
+   "start": 1743.81,
+   "dur": 9.24
+  },
+  {
+   "id": "fd191",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd191.mp4",
+   "start": 1753.05,
+   "dur": 3.94
+  },
+  {
+   "id": "ph191",
+   "kind": "raw",
+   "src": "img/fd191.png",
+   "start": 1756.99,
+   "dur": 5.04
+  },
+  {
+   "id": "fd192",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd192.mp4",
+   "start": 1762.03,
+   "dur": 3.94
+  },
+  {
+   "id": "ph192",
+   "kind": "raw",
+   "src": "img/fd192.png",
+   "start": 1765.97,
+   "dur": 4.25
+  },
+  {
+   "id": "ph192b",
+   "kind": "raw",
+   "src": "img/fd192b.png",
+   "start": 1770.22,
+   "dur": 4.26
+  },
+  {
+   "id": "ph193",
+   "kind": "raw",
+   "src": "img/fd193.png",
+   "start": 1774.48,
+   "dur": 10.72
+  },
+  {
+   "id": "c193",
+   "start": 1774.48,
+   "dur": 10.72,
+   "kind": "splitlist",
+   "title": "El día completo de don Aurelio",
+   "items": [
+    "Café con leche y dos panes",
+    "Sopa de fideo y una quesadilla",
+    "Café con pan otra vez",
+    "Casi cero proteína"
+   ]
+  },
+  {
+   "id": "ph194",
+   "kind": "raw",
+   "src": "img/fd194.png",
+   "start": 1785.2,
+   "dur": 9.76
+  },
+  {
+   "id": "ph195",
+   "kind": "raw",
+   "src": "img/fd195.png",
+   "start": 1794.96,
+   "dur": 10.92
+  },
+  {
+   "id": "c195",
+   "start": 1794.96,
+   "dur": 10.92,
+   "kind": "callout",
+   "eyebrow": "LA TRAMPA",
+   "figure": "3 HOYITOS",
+   "caption": "Le movió tres hoyitos al cinturón, y nadie en la casa se había dado cuenta.",
+   "image": "img/fd194.png"
+  },
+  {
+   "id": "ph196",
+   "kind": "raw",
+   "src": "img/fdhero196.png",
+   "start": 1805.88,
+   "dur": 10.02
+  },
+  {
+   "id": "ph197",
+   "kind": "raw",
+   "src": "img/fd197.png",
+   "start": 1815.9,
+   "dur": 5.75
+  },
+  {
+   "id": "ph197b",
+   "kind": "raw",
+   "src": "img/fd197b.png",
+   "start": 1821.65,
+   "dur": 5.75
+  },
+  {
+   "id": "ph198",
+   "kind": "raw",
+   "src": "img/fd198.png",
+   "start": 1827.4,
+   "dur": 9.24
+  },
+  {
+   "id": "c198",
+   "start": 1827.4,
+   "dur": 9.24,
+   "kind": "depthscene",
+   "image": "img/fd198.png",
+   "back": "img/fd197.png",
+   "eyebrow": "RESISTENCIA ANABÓLICA",
+   "title": "El cuerpo se volvió medio sordo a la señal",
+   "sub": "Justo cuando comes menos, necesitas más",
+   "side": "left"
+  },
+  {
+   "id": "ph199",
+   "kind": "raw",
+   "src": "img/fd199.png",
+   "start": 1836.64,
+   "dur": 10.73
+  },
+  {
+   "id": "ph200",
+   "kind": "raw",
+   "src": "img/fd200.png",
+   "start": 1847.37,
+   "dur": 10.5
+  },
+  {
+   "id": "c200",
+   "start": 1847.37,
+   "dur": 10.5,
+   "kind": "bars",
+   "eyebrow": "PROTEÍNA AL DÍA",
+   "title": "Gramos por cada kilo de peso",
+   "unit": "g/kg",
+   "bars": [
+    {
+     "label": "Persona joven",
+     "value": 0.8
+    },
+    {
+     "label": "Persona mayor",
+     "value": 1.2,
+     "tone": "teal",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "ph201",
+   "kind": "raw",
+   "src": "img/fd201.png",
+   "start": 1857.87,
+   "dur": 5.98
+  },
+  {
+   "id": "c201",
+   "start": 1857.87,
+   "dur": 11.96,
+   "kind": "diagram",
+   "eyebrow": "PROTEINA POR KILO",
+   "slides": [
+    {
+     "image": "img/fdlam201.png",
+     "eyebrow": "EL MAYOR NECESITA MAS, NO MENOS"
+    }
+   ],
+   "tag": "Lamina de la guia"
+  },
+  {
+   "id": "ph201b",
+   "kind": "raw",
+   "src": "img/fd201b.png",
+   "start": 1863.85,
+   "dur": 5.98
+  },
+  {
+   "id": "ph202",
+   "kind": "raw",
+   "src": "img/fd202.png",
+   "start": 1869.83,
+   "dur": 5.93
+  },
+  {
+   "id": "c202",
+   "start": 1869.83,
+   "dur": 11.87,
+   "kind": "stat",
+   "eyebrow": "SI PESAS 70 KILOS",
+   "value": 85,
+   "suffix": " gramos",
+   "label": "de proteína al día, repartidos"
+  },
+  {
+   "id": "ph202b",
+   "kind": "raw",
+   "src": "img/fd202b.png",
+   "start": 1875.76,
+   "dur": 5.94
+  },
+  {
+   "id": "ph203",
+   "kind": "raw",
+   "src": "img/fd203.png",
+   "start": 1881.7,
+   "dur": 10.87
+  },
+  {
+   "id": "ph204",
+   "kind": "raw",
+   "src": "img/fd204.png",
+   "start": 1892.57,
+   "dur": 9.8
+  },
+  {
+   "id": "c204",
+   "start": 1892.57,
+   "dur": 9.8,
+   "kind": "stat",
+   "eyebrow": "POR COMIDA",
+   "value": 30,
+   "suffix": " gramos",
+   "label": "para prender el interruptor del músculo"
+  },
+  {
+   "id": "ph205",
+   "kind": "raw",
+   "src": "img/fd205.png",
+   "start": 1902.37,
+   "dur": 9.27
+  },
+  {
+   "id": "ph206",
+   "kind": "raw",
+   "src": "img/fd206.png",
+   "start": 1911.64,
+   "dur": 10.63
+  },
+  {
+   "id": "c206",
+   "start": 1911.64,
+   "dur": 10.63,
+   "kind": "errorstinger",
+   "number": "16",
+   "title": "HORAS SIN MATERIAL PARA REPARAR NADA",
+   "tone": "warn"
+  },
+  {
+   "id": "ph207",
+   "kind": "raw",
+   "src": "img/fd207.png",
+   "start": 1922.27,
+   "dur": 9.19
+  },
+  {
+   "id": "ph208",
+   "kind": "raw",
+   "src": "img/fd208.png",
+   "start": 1931.46,
+   "dur": 9.44
+  },
+  {
+   "id": "ph209",
+   "kind": "raw",
+   "src": "img/fd209.png",
+   "start": 1940.9,
+   "dur": 11.43
+  },
+  {
+   "id": "ph210",
+   "kind": "raw",
+   "src": "img/fd210.png",
+   "start": 1952.33,
+   "dur": 11.04
+  },
+  {
+   "id": "c210",
+   "start": 1952.33,
+   "dur": 11.04,
+   "kind": "ingredients",
+   "title": "Un desayuno que sí sirve",
+   "items": [
+    {
+     "name": "Dos huevos",
+     "amount": "13 gramos",
+     "image": "img/fd207.png"
+    },
+    {
+     "name": "Un plato de frijoles",
+     "amount": "15 gramos",
+     "image": "img/fd202.png"
+    },
+    {
+     "name": "Una lata de atún",
+     "amount": "20 gramos",
+     "image": "img/fd208.png"
+    }
+   ]
+  },
+  {
+   "id": "ph211",
+   "kind": "raw",
+   "src": "img/fdhero211.png",
+   "start": 1963.37,
+   "dur": 9.14
+  },
+  {
+   "id": "ph212",
+   "kind": "raw",
+   "src": "img/fd212.png",
+   "start": 1972.51,
+   "dur": 9.39
+  },
+  {
+   "id": "c212",
+   "start": 1972.51,
+   "dur": 9.39,
+   "kind": "checklist",
+   "eyebrow": "POR QUÉ SE DEJÓ DE HACER",
+   "title": "Las cuatro causas",
+   "items": [
+    "Los dientes",
+    "El gusto y el olfato apagados",
+    "Cocinar para uno solo",
+    "La tristeza"
+   ]
+  },
+  {
+   "id": "ph213",
+   "kind": "raw",
+   "src": "img/fd213.png",
+   "start": 1981.9,
+   "dur": 9.24
+  },
+  {
+   "id": "ph214",
+   "kind": "raw",
+   "src": "img/fd214.png",
+   "start": 1991.14,
+   "dur": 9.84
+  },
+  {
+   "id": "ph215",
+   "kind": "raw",
+   "src": "img/fdhero215.png",
+   "start": 2000.98,
+   "dur": 9.46
+  },
+  {
+   "id": "ph216",
+   "kind": "raw",
+   "src": "img/fd216.png",
+   "start": 2010.44,
+   "dur": 10.15
+  },
+  {
+   "id": "ph217",
+   "kind": "raw",
+   "src": "img/fdhero217.png",
+   "start": 2020.59,
+   "dur": 9.22
+  },
+  {
+   "id": "fd218",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd218.mp4",
+   "start": 2029.81,
+   "dur": 3.94
+  },
+  {
+   "id": "ph218",
+   "kind": "raw",
+   "src": "img/fd218.png",
+   "start": 2033.75,
+   "dur": 7.45
+  },
+  {
+   "id": "ph219",
+   "kind": "raw",
+   "src": "img/fd219.png",
+   "start": 2041.2,
+   "dur": 6.84
+  },
+  {
+   "id": "c219",
+   "start": 2041.2,
+   "dur": 13.69,
+   "kind": "mitoverdad",
+   "myth": "Con darle proteína alcanza",
+   "truth": "La proteína es el material. La orden es el movimiento."
+  },
+  {
+   "id": "ph219b",
+   "kind": "raw",
+   "src": "img/fd219b.png",
+   "start": 2048.04,
+   "dur": 6.85
+  },
+  {
+   "id": "ph220",
+   "kind": "raw",
+   "src": "img/fd220.png",
+   "start": 2054.89,
+   "dur": 9.74
+  },
+  {
+   "id": "fd221",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd221.mp4",
+   "start": 2064.63,
+   "dur": 3.94
+  },
+  {
+   "id": "c221",
+   "start": 2064.63,
+   "dur": 11.82,
+   "kind": "checklist",
+   "eyebrow": "UNA VEZ AL MES",
+   "title": "Cómo pesarlo",
+   "stamp": "GRATIS",
+   "items": [
+    "El mismo día",
+    "Con la misma ropa",
+    "En la mañana",
+    "Apuntado en un papel pegado al refri"
+   ]
+  },
+  {
+   "id": "ph221",
+   "kind": "raw",
+   "src": "img/fd221.png",
+   "start": 2068.57,
+   "dur": 3.94
+  },
+  {
+   "id": "ph221b",
+   "kind": "raw",
+   "src": "img/fd221b.png",
+   "start": 2072.51,
+   "dur": 3.94
+  },
+  {
+   "id": "ph222",
+   "kind": "raw",
+   "src": "img/fd222.png",
+   "start": 2076.45,
+   "dur": 9.77
+  },
+  {
+   "id": "c222",
+   "start": 2076.45,
+   "dur": 9.77,
+   "kind": "stat",
+   "eyebrow": "EN SEIS MESES",
+   "value": 5,
+   "suffix": " %",
+   "label": "de su peso sin proponérselo: al médico esa semana"
+  },
+  {
+   "id": "ph223",
+   "kind": "raw",
+   "src": "img/fd223.png",
+   "start": 2086.22,
+   "dur": 10.5
+  },
+  {
+   "id": "ph224",
+   "kind": "raw",
+   "src": "img/fd224.png",
+   "start": 2096.72,
+   "dur": 9.25
+  },
+  {
+   "id": "c224",
+   "start": 2096.72,
+   "dur": 9.25,
+   "kind": "guardaesto",
+   "title": "Las cantidades y los desayunos van en la descripción",
+   "items": [
+    "Proteína según el peso",
+    "Desayunos de diez minutos",
+    "Cosas del mercado",
+    "Qué revisar en la boca"
+   ],
+   "tag": "ABRE LA DESCRIPCIÓN"
+  },
+  {
+   "id": "ph225",
+   "kind": "raw",
+   "src": "img/fd225.png",
+   "start": 2105.97,
+   "dur": 10.42
+  },
+  {
+   "id": "ph226",
+   "kind": "raw",
+   "src": "img/fd226.png",
+   "start": 2116.39,
+   "dur": 9.37
+  },
+  {
+   "id": "ph227",
+   "kind": "raw",
+   "src": "img/fd227.png",
+   "start": 2125.76,
+   "dur": 4.98
+  },
+  {
+   "id": "c227",
+   "start": 2125.76,
+   "dur": 9.96,
+   "kind": "razoncarousel",
+   "cards": [
+    {
+     "index": 0,
+     "name": "LA CAMA",
+     "image": "img/fd084.png"
+    },
+    {
+     "index": 1,
+     "name": "EL SUSTO",
+     "image": "img/fd121.png"
+    },
+    {
+     "index": 2,
+     "name": "LA BOLSA DE MEDICINAS",
+     "image": "img/fd155.png"
+    },
+    {
+     "index": 3,
+     "name": "EL PLATO",
+     "image": "img/fd202.png"
+    },
+    {
+     "index": 4,
+     "name": "LA SED",
+     "image": "img/fd225.png"
+    },
+    {
+     "index": 5,
+     "name": "EL MUNDO CHIQUITO",
+     "image": "img/fd256.png"
+    }
+   ],
+   "focus": 4,
+   "intro": false,
+   "eyebrow": "RAZÓN 5",
+   "kicker": "LA SED"
+  },
+  {
+   "id": "ph227b",
+   "kind": "raw",
+   "src": "img/fd227b.png",
+   "start": 2130.74,
+   "dur": 4.98
+  },
+  {
+   "id": "fd228",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd228.mp4",
+   "start": 2135.72,
+   "dur": 3.94
+  },
+  {
+   "id": "ph228",
+   "kind": "raw",
+   "src": "img/fd228.png",
+   "start": 2139.66,
+   "dur": 3.32
+  },
+  {
+   "id": "ph228b",
+   "kind": "raw",
+   "src": "img/fd228b.png",
+   "start": 2142.98,
+   "dur": 3.32
+  },
+  {
+   "id": "ph229",
+   "kind": "raw",
+   "src": "img/fd229.png",
+   "start": 2146.3,
+   "dur": 9.42
+  },
+  {
+   "id": "c229",
+   "start": 2146.3,
+   "dur": 9.42,
+   "kind": "lowerthird",
+   "kicker": "ESTO ESTÁ MEDIDO",
+   "title": "El aviso de la sed se descompone",
+   "desc": "No es flojera: no siente sed"
+  },
+  {
+   "id": "fd230",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd230.mp4",
+   "start": 2155.72,
+   "dur": 3.94
+  },
+  {
+   "id": "c230",
+   "start": 2155.72,
+   "dur": 11.77,
+   "kind": "splitcompare",
+   "eyebrow": "EL MISMO RATO SIN TOMAR AGUA",
+   "title": "Lo que dijo cada uno",
+   "left": {
+    "image": "img/fd230.png",
+    "label": "Joven",
+    "note": "muchísima sed, tomó harto"
+   },
+   "right": {
+    "image": "img/fd230b.png",
+    "label": "Mayor",
+    "note": "poca sed, tomó menos"
+   },
+   "winner": "none"
+  },
+  {
+   "id": "ph230",
+   "kind": "raw",
+   "src": "img/fd230.png",
+   "start": 2159.66,
+   "dur": 3.92
+  },
+  {
+   "id": "ph230b",
+   "kind": "raw",
+   "src": "img/fd230b.png",
+   "start": 2163.58,
+   "dur": 3.91
+  },
+  {
+   "id": "ph231",
+   "kind": "raw",
+   "src": "img/fd231.png",
+   "start": 2167.49,
+   "dur": 9.04
+  },
+  {
+   "id": "c231",
+   "start": 2167.49,
+   "dur": 9.04,
+   "kind": "mitoverdad",
+   "myth": "Si no tiene sed, es que no le falta agua",
+   "truth": "El cuerpo pedía agua y el aviso nunca llegó"
+  },
+  {
+   "id": "fd232",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd232.mp4",
+   "start": 2176.53,
+   "dur": 3.94
+  },
+  {
+   "id": "ph232",
+   "kind": "raw",
+   "src": "img/fd232.png",
+   "start": 2180.47,
+   "dur": 3.24
+  },
+  {
+   "id": "ph232b",
+   "kind": "raw",
+   "src": "img/fd232b.png",
+   "start": 2183.71,
+   "dur": 3.24
+  },
+  {
+   "id": "ph233",
+   "kind": "raw",
+   "src": "img/fd233.png",
+   "start": 2186.95,
+   "dur": 5.67
+  },
+  {
+   "id": "c233",
+   "start": 2186.95,
+   "dur": 11.35,
+   "kind": "diagram",
+   "eyebrow": "MENOS MÚSCULO, MENOS AGUA",
+   "slides": [
+    {
+     "image": "img/fdlam233.png",
+     "eyebrow": "DONDE VIVE EL AGUA DEL CUERPO"
+    }
+   ],
+   "tag": "Lámina de la guía"
+  },
+  {
+   "id": "ph233b",
+   "kind": "raw",
+   "src": "img/fd233b.png",
+   "start": 2192.62,
+   "dur": 5.68
+  },
+  {
+   "id": "fd234",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd234.mp4",
+   "start": 2198.3,
+   "dur": 3.94
+  },
+  {
+   "id": "ph234",
+   "kind": "raw",
+   "src": "img/fd234.png",
+   "start": 2202.24,
+   "dur": 5.87
+  },
+  {
+   "id": "ph235",
+   "kind": "raw",
+   "src": "img/fd235.png",
+   "start": 2208.11,
+   "dur": 8.82
+  },
+  {
+   "id": "c235",
+   "start": 2208.11,
+   "dur": 8.82,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "TOMO POQUITA AGUA PARA NO LEVANTARME",
+   "tone": "warn"
+  },
+  {
+   "id": "fd236",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd236.mp4",
+   "start": 2216.93,
+   "dur": 3.94
+  },
+  {
+   "id": "ph236",
+   "kind": "raw",
+   "src": "img/fd236.png",
+   "start": 2220.87,
+   "dur": 2.78
+  },
+  {
+   "id": "ph236b",
+   "kind": "raw",
+   "src": "img/fd236b.png",
+   "start": 2223.65,
+   "dur": 2.78
+  },
+  {
+   "id": "ph237",
+   "kind": "raw",
+   "src": "img/fd237.png",
+   "start": 2226.43,
+   "dur": 6.06
+  },
+  {
+   "id": "c237",
+   "start": 2226.43,
+   "dur": 12.12,
+   "kind": "lowerthird",
+   "kicker": "TIENE RAZÓN EN EL MIEDO",
+   "title": "Pero la solución que escogió lo va a tumbar",
+   "tone": "warn"
+  },
+  {
+   "id": "ph237b",
+   "kind": "raw",
+   "src": "img/fd237b.png",
+   "start": 2232.49,
+   "dur": 6.06
+  },
+  {
+   "id": "ph238",
+   "kind": "raw",
+   "src": "img/fd238.png",
+   "start": 2238.55,
+   "dur": 5.79
+  },
+  {
+   "id": "c238",
+   "start": 2238.55,
+   "dur": 11.58,
+   "kind": "depthscene",
+   "image": "img/fd238.png",
+   "back": "img/fd239.png",
+   "eyebrow": "LO QUE QUIERO QUE SE TE QUEDE",
+   "title": "No se ve deshidratada. Se ve vieja.",
+   "sub": "Confusión, mareo al pararse, estreñimiento, infecciones de orina",
+   "side": "right",
+   "tone": "warn"
+  },
+  {
+   "id": "ph238b",
+   "kind": "raw",
+   "src": "img/fd238b.png",
+   "start": 2244.34,
+   "dur": 5.79
+  },
+  {
+   "id": "ph239",
+   "kind": "raw",
+   "src": "img/fd239.png",
+   "start": 2250.13,
+   "dur": 9.5
+  },
+  {
+   "id": "c239",
+   "start": 2250.13,
+   "dur": 9.5,
+   "kind": "splitlist",
+   "title": "Cómo se ve una persona mayor deshidratada",
+   "items": [
+    "Confusión",
+    "Mareo al pararse",
+    "Estreñimiento fuerte",
+    "Infecciones de orina",
+    "Caídas"
+   ]
+  },
+  {
+   "id": "fd240",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd240.mp4",
+   "start": 2259.63,
+   "dur": 3.94
+  },
+  {
+   "id": "ph240",
+   "kind": "raw",
+   "src": "img/fd240.png",
+   "start": 2263.57,
+   "dur": 3
+  },
+  {
+   "id": "ph240b",
+   "kind": "raw",
+   "src": "img/fd240b.png",
+   "start": 2266.57,
+   "dur": 3
+  },
+  {
+   "id": "ph241",
+   "kind": "raw",
+   "src": "img/fd241.png",
+   "start": 2269.57,
+   "dur": 6.66
+  },
+  {
+   "id": "c241",
+   "start": 2269.57,
+   "dur": 13.32,
+   "kind": "mitoverdad",
+   "myth": "Ya le está dando eso de la demencia",
+   "truth": "A veces lleva tres días con un vaso de agua al día"
+  },
+  {
+   "id": "ph241b",
+   "kind": "raw",
+   "src": "img/fd241b.png",
+   "start": 2276.23,
+   "dur": 6.66
+  },
+  {
+   "id": "fd242",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd242.mp4",
+   "start": 2282.89,
+   "dur": 3.94
+  },
+  {
+   "id": "c242",
+   "start": 2282.89,
+   "dur": 8.85,
+   "kind": "diagram",
+   "eyebrow": "UNA SOLA MAQUINA",
+   "slides": [
+    {
+     "image": "img/fdlam242.png",
+     "eyebrow": "CADA UNA EMPUJA A LA SIGUIENTE"
+    }
+   ],
+   "tag": "Lamina de la guia"
+  },
+  {
+   "id": "ph242",
+   "kind": "raw",
+   "src": "img/fd242.png",
+   "start": 2286.83,
+   "dur": 4.91
+  },
+  {
+   "id": "ph243",
+   "kind": "raw",
+   "src": "img/fd243.png",
+   "start": 2291.74,
+   "dur": 5.28
+  },
+  {
+   "id": "c243",
+   "start": 2291.74,
+   "dur": 10.56,
+   "kind": "process",
+   "eyebrow": "UNA SOLA MÁQUINA",
+   "title": "Cómo se encadenan las seis",
+   "steps": [
+    {
+     "title": "Se deshidrata",
+     "desc": "la sed ya no avisa"
+    },
+    {
+     "title": "Se marea",
+     "desc": "y se cae"
+    },
+    {
+     "title": "La internan",
+     "desc": "y la acuestan"
+    },
+    {
+     "title": "Pierde la fuerza",
+     "desc": "quince por ciento en diez días"
+    },
+    {
+     "title": "Sale peor",
+     "desc": "de lo que entró"
+    }
+   ]
+  },
+  {
+   "id": "ph243b",
+   "kind": "raw",
+   "src": "img/fd243b.png",
+   "start": 2297.02,
+   "dur": 5.28
+  },
+  {
+   "id": "ph244",
+   "kind": "raw",
+   "src": "img/fdhero244.png",
+   "start": 2302.3,
+   "dur": 11.71
+  },
+  {
+   "id": "ph245",
+   "kind": "raw",
+   "src": "img/fd245.png",
+   "start": 2314.01,
+   "dur": 10.38
+  },
+  {
+   "id": "c245",
+   "start": 2314.01,
+   "dur": 10.38,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "SI HAY RESTRICCIÓN DE LÍQUIDOS, PREGUNTA PRIMERO",
+   "tone": "warn"
+  },
+  {
+   "id": "ph246",
+   "kind": "raw",
+   "src": "img/fdhero246.png",
+   "start": 2324.39,
+   "dur": 9.04
+  },
+  {
+   "id": "ph247",
+   "kind": "raw",
+   "src": "img/fd247.png",
+   "start": 2333.43,
+   "dur": 9.77
+  },
+  {
+   "id": "ph248",
+   "kind": "raw",
+   "src": "img/fd248.png",
+   "start": 2343.2,
+   "dur": 4.96
+  },
+  {
+   "id": "ph248b",
+   "kind": "raw",
+   "src": "img/fd248b.png",
+   "start": 2348.16,
+   "dur": 4.97
+  },
+  {
+   "id": "ph249",
+   "kind": "raw",
+   "src": "img/fd249.png",
+   "start": 2353.13,
+   "dur": 4.78
+  },
+  {
+   "id": "c249",
+   "start": 2353.13,
+   "dur": 9.55,
+   "kind": "lowerthird",
+   "kicker": "LA REGLA",
+   "title": "Carga el día, aligera la noche",
+   "desc": "Así ya no tiene que deshidratarse para dormir tranquilo",
+   "tone": "teal"
+  },
+  {
+   "id": "ph249b",
+   "kind": "raw",
+   "src": "img/fd249b.png",
+   "start": 2357.91,
+   "dur": 4.77
+  },
+  {
+   "id": "fd250",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd250.mp4",
+   "start": 2362.68,
+   "dur": 3.94
+  },
+  {
+   "id": "ph250",
+   "kind": "raw",
+   "src": "img/fd250.png",
+   "start": 2366.62,
+   "dur": 3.76
+  },
+  {
+   "id": "ph250b",
+   "kind": "raw",
+   "src": "img/fd250b.png",
+   "start": 2370.38,
+   "dur": 3.76
+  },
+  {
+   "id": "ph251",
+   "kind": "raw",
+   "src": "img/fd251.png",
+   "start": 2374.14,
+   "dur": 9.31
+  },
+  {
+   "id": "ph252",
+   "kind": "raw",
+   "src": "img/fd252.png",
+   "start": 2383.45,
+   "dur": 5
+  },
+  {
+   "id": "c252",
+   "start": 2383.45,
+   "dur": 10,
+   "kind": "checklist",
+   "eyebrow": "AGUA POR RELOJ",
+   "title": "El plan del día",
+   "items": [
+    "Un vaso al levantarse",
+    "Uno a media mañana",
+    "Uno con cada comida",
+    "Uno en la tarde",
+    "Nada dos o tres horas antes de dormir"
+   ]
+  },
+  {
+   "id": "ph252b",
+   "kind": "raw",
+   "src": "img/fd252b.png",
+   "start": 2388.45,
+   "dur": 5
+  },
+  {
+   "id": "ph253",
+   "kind": "raw",
+   "src": "img/fd253.png",
+   "start": 2393.45,
+   "dur": 9
+  },
+  {
+   "id": "fd254",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd254.mp4",
+   "start": 2402.45,
+   "dur": 3.94
+  },
+  {
+   "id": "c254",
+   "start": 2402.45,
+   "dur": 9.73,
+   "kind": "chips",
+   "eyebrow": "TAMBIÉN HIDRATA",
+   "title": "No todo tiene que ser agua sola",
+   "image": "img/fd254.png",
+   "chips": [
+    "Caldo y sopa",
+    "Sandía y melón",
+    "Jamaica sin tanta azúcar",
+    "Té y leche"
+   ]
+  },
+  {
+   "id": "ph254",
+   "kind": "raw",
+   "src": "img/fd254.png",
+   "start": 2406.39,
+   "dur": 2.9
+  },
+  {
+   "id": "ph254b",
+   "kind": "raw",
+   "src": "img/fd254b.png",
+   "start": 2409.29,
+   "dur": 2.89
+  },
+  {
+   "id": "ph255",
+   "kind": "raw",
+   "src": "img/fd255.png",
+   "start": 2412.18,
+   "dur": 9.41
+  },
+  {
+   "id": "c255",
+   "start": 2412.18,
+   "dur": 9.41,
+   "kind": "lowerthird",
+   "kicker": "CALOR, FIEBRE, DIARREA O VÓMITO",
+   "title": "Esos días sube la dosis",
+   "desc": "Ahí se deshidrata en horas, no en días",
+   "tone": "warn"
+  },
+  {
+   "id": "ph256",
+   "kind": "raw",
+   "src": "img/fd256.png",
+   "start": 2421.59,
+   "dur": 9.32
+  },
+  {
+   "id": "ph257",
+   "kind": "raw",
+   "src": "img/fd257.png",
+   "start": 2430.91,
+   "dur": 10.93
+  },
+  {
+   "id": "c257",
+   "start": 2430.91,
+   "dur": 10.93,
+   "kind": "razoncarousel",
+   "cards": [
+    {
+     "index": 0,
+     "name": "LA CAMA",
+     "image": "img/fd084.png"
+    },
+    {
+     "index": 1,
+     "name": "EL SUSTO",
+     "image": "img/fd121.png"
+    },
+    {
+     "index": 2,
+     "name": "LA BOLSA DE MEDICINAS",
+     "image": "img/fd155.png"
+    },
+    {
+     "index": 3,
+     "name": "EL PLATO",
+     "image": "img/fd202.png"
+    },
+    {
+     "index": 4,
+     "name": "LA SED",
+     "image": "img/fd225.png"
+    },
+    {
+     "index": 5,
+     "name": "EL MUNDO CHIQUITO",
+     "image": "img/fd256.png"
+    }
+   ],
+   "focus": 5,
+   "intro": false,
+   "eyebrow": "RAZÓN 6",
+   "kicker": "EL MUNDO CHIQUITO"
+  },
+  {
+   "id": "ph258",
+   "kind": "raw",
+   "src": "img/fd258.png",
+   "start": 2441.84,
+   "dur": 10.44
+  },
+  {
+   "id": "c258",
+   "start": 2441.84,
+   "dur": 10.44,
+   "kind": "stat",
+   "eyebrow": "SOLEDAD Y AISLAMIENTO",
+   "value": 25,
+   "suffix": " a 30 %",
+   "label": "más de riesgo en los estudios grandes"
+  },
+  {
+   "id": "fd259",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd259.mp4",
+   "start": 2452.28,
+   "dur": 3.94
+  },
+  {
+   "id": "ph259",
+   "kind": "raw",
+   "src": "img/fd259.png",
+   "start": 2456.22,
+   "dur": 5.04
+  },
+  {
+   "id": "ph259b",
+   "kind": "raw",
+   "src": "img/fd259b.png",
+   "start": 2461.26,
+   "dur": 5.04
+  },
+  {
+   "id": "ph260",
+   "kind": "raw",
+   "src": "img/fd260.png",
+   "start": 2466.3,
+   "dur": 10.02
+  },
+  {
+   "id": "c260",
+   "start": 2466.3,
+   "dur": 10.02,
+   "kind": "mitoverdad",
+   "myth": "La soledad es un tema bonito de motivación",
+   "truth": "Es un factor de riesgo médico, con números"
+  },
+  {
+   "id": "ph261",
+   "kind": "raw",
+   "src": "img/fd261.png",
+   "start": 2476.32,
+   "dur": 4.88
+  },
+  {
+   "id": "ph261b",
+   "kind": "raw",
+   "src": "img/fd261b.png",
+   "start": 2481.2,
+   "dur": 4.89
+  },
+  {
+   "id": "ph262",
+   "kind": "raw",
+   "src": "img/fd262.png",
+   "start": 2486.09,
+   "dur": 5.21
+  },
+  {
+   "id": "ph262b",
+   "kind": "raw",
+   "src": "img/fd262b.png",
+   "start": 2491.3,
+   "dur": 5.21
+  },
+  {
+   "id": "ph263",
+   "kind": "raw",
+   "src": "img/fd263.png",
+   "start": 2496.51,
+   "dur": 5.23
+  },
+  {
+   "id": "c263",
+   "start": 2496.51,
+   "dur": 10.46,
+   "kind": "depthscene",
+   "image": "img/fd263.png",
+   "back": "img/fd262.png",
+   "eyebrow": "SIN QUE NADIE LO NOTE",
+   "title": "Se apaga el motor",
+   "sub": "El cuerpo no se mueve por salud: se mueve por motivos",
+   "side": "left"
+  },
+  {
+   "id": "ph263b",
+   "kind": "raw",
+   "src": "img/fd263b.png",
+   "start": 2501.74,
+   "dur": 5.23
+  },
+  {
+   "id": "ph264",
+   "kind": "raw",
+   "src": "img/fdhero264.png",
+   "start": 2506.97,
+   "dur": 5.57
+  },
+  {
+   "id": "ph264b",
+   "kind": "raw",
+   "src": "img/fd264b.png",
+   "start": 2512.54,
+   "dur": 5.57
+  },
+  {
+   "id": "ph265",
+   "kind": "raw",
+   "src": "img/fd265.png",
+   "start": 2518.11,
+   "dur": 6.05
+  },
+  {
+   "id": "ph265b",
+   "kind": "raw",
+   "src": "img/fd265b.png",
+   "start": 2524.16,
+   "dur": 6.05
+  },
+  {
+   "id": "ph265c",
+   "kind": "raw",
+   "src": "img/fd265c.png",
+   "start": 2530.21,
+   "dur": 6.05
+  },
+  {
+   "id": "fd266",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd266.mp4",
+   "start": 2536.26,
+   "dur": 3.94
+  },
+  {
+   "id": "ph266",
+   "kind": "raw",
+   "src": "img/fd266.png",
+   "start": 2540.2,
+   "dur": 4.74
+  },
+  {
+   "id": "ph266b",
+   "kind": "raw",
+   "src": "img/fd266b.png",
+   "start": 2544.94,
+   "dur": 4.74
+  },
+  {
+   "id": "ph266c",
+   "kind": "raw",
+   "src": "img/fd266c.png",
+   "start": 2549.68,
+   "dur": 4.73
+  },
+  {
+   "id": "ph267",
+   "kind": "raw",
+   "src": "img/fd267.png",
+   "start": 2554.41,
+   "dur": 6.03
+  },
+  {
+   "id": "c267",
+   "start": 2554.41,
+   "dur": 18.08,
+   "kind": "splitlist",
+   "title": "Lo que se cae cuando falta la pareja",
+   "items": [
+    "Dejó de comer bien",
+    "Dejó de tomar sus cosas a tiempo",
+    "Dejó de salir",
+    "Ya nadie se da cuenta si anda mal"
+   ]
+  },
+  {
+   "id": "ph267b",
+   "kind": "raw",
+   "src": "img/fd267b.png",
+   "start": 2560.44,
+   "dur": 6.03
+  },
+  {
+   "id": "ph267c",
+   "kind": "raw",
+   "src": "img/fd267c.png",
+   "start": 2566.47,
+   "dur": 6.02
+  },
+  {
+   "id": "fd268",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd268.mp4",
+   "start": 2572.49,
+   "dur": 3.94
+  },
+  {
+   "id": "c268",
+   "start": 2572.49,
+   "dur": 18.02,
+   "kind": "lowerthird",
+   "kicker": "ESE PRIMER AÑO",
+   "title": "Hay que estar encima",
+   "desc": "No con lástima: con presencia"
+  },
+  {
+   "id": "ph268",
+   "kind": "raw",
+   "src": "img/fd268.png",
+   "start": 2576.43,
+   "dur": 4.69
+  },
+  {
+   "id": "ph268b",
+   "kind": "raw",
+   "src": "img/fd268b.png",
+   "start": 2581.12,
+   "dur": 4.69
+  },
+  {
+   "id": "ph268c",
+   "kind": "raw",
+   "src": "img/fd268c.png",
+   "start": 2585.81,
+   "dur": 4.7
+  },
+  {
+   "id": "fd269",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd269.mp4",
+   "start": 2590.51,
+   "dur": 3.94
+  },
+  {
+   "id": "c269",
+   "start": 2590.51,
+   "dur": 18.08,
+   "kind": "diagram",
+   "eyebrow": "NO SE AISLO POR TRISTEZA",
+   "slides": [
+    {
+     "image": "img/fdlam269.png",
+     "eyebrow": "DEJO DE OIR"
+    }
+   ],
+   "tag": "Lamina de la guia"
+  },
+  {
+   "id": "ph269",
+   "kind": "raw",
+   "src": "img/fd269.png",
+   "start": 2594.45,
+   "dur": 4.71
+  },
+  {
+   "id": "ph269b",
+   "kind": "raw",
+   "src": "img/fd269b.png",
+   "start": 2599.16,
+   "dur": 4.71
+  },
+  {
+   "id": "ph269c",
+   "kind": "raw",
+   "src": "img/fd269c.png",
+   "start": 2603.87,
+   "dur": 4.72
+  },
+  {
+   "id": "fd270",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd270.mp4",
+   "start": 2608.59,
+   "dur": 3.94
+  },
+  {
+   "id": "ph270",
+   "kind": "raw",
+   "src": "img/fd270.png",
+   "start": 2612.53,
+   "dur": 4.72
+  },
+  {
+   "id": "ph270b",
+   "kind": "raw",
+   "src": "img/fd270b.png",
+   "start": 2617.25,
+   "dur": 4.72
+  },
+  {
+   "id": "ph270c",
+   "kind": "raw",
+   "src": "img/fd270c.png",
+   "start": 2621.97,
+   "dur": 4.73
+  },
+  {
+   "id": "ph271",
+   "kind": "raw",
+   "src": "img/fd271.png",
+   "start": 2626.7,
+   "dur": 6.15
+  },
+  {
+   "id": "c271",
+   "start": 2626.7,
+   "dur": 18.44,
+   "kind": "lowerthird",
+   "kicker": "SÍ SE PUEDE HACER ALGO",
+   "title": "La pérdida de audición no tratada",
+   "desc": "Está entre los factores de riesgo más importantes que sí se pueden atender",
+   "tone": "warn"
+  },
+  {
+   "id": "ph271b",
+   "kind": "raw",
+   "src": "img/fd271b.png",
+   "start": 2632.85,
+   "dur": 6.15
+  },
+  {
+   "id": "ph271c",
+   "kind": "raw",
+   "src": "img/fd271c.png",
+   "start": 2639,
+   "dur": 6.14
+  },
+  {
+   "id": "ph272",
+   "kind": "raw",
+   "src": "img/fd272.png",
+   "start": 2645.14,
+   "dur": 6.01
+  },
+  {
+   "id": "ph272b",
+   "kind": "raw",
+   "src": "img/fd272b.png",
+   "start": 2651.15,
+   "dur": 6.01
+  },
+  {
+   "id": "ph272c",
+   "kind": "raw",
+   "src": "img/fd272c.png",
+   "start": 2657.16,
+   "dur": 6.02
+  },
+  {
+   "id": "ph273",
+   "kind": "raw",
+   "src": "img/fd273.png",
+   "start": 2663.18,
+   "dur": 6.02
+  },
+  {
+   "id": "c273",
+   "start": 2663.18,
+   "dur": 18.06,
+   "kind": "checklist",
+   "eyebrow": "LO CONCRETO",
+   "title": "Qué hacer con el mundo chiquito",
+   "items": [
+    "Revísale el oído",
+    "Revísale la vista",
+    "Dale un para qué",
+    "Un compromiso fijo cada semana",
+    "La llamada corta y diaria"
+   ]
+  },
+  {
+   "id": "ph273b",
+   "kind": "raw",
+   "src": "img/fd273b.png",
+   "start": 2669.2,
+   "dur": 6.02
+  },
+  {
+   "id": "ph273c",
+   "kind": "raw",
+   "src": "img/fd273c.png",
+   "start": 2675.22,
+   "dur": 6.02
+  },
+  {
+   "id": "ph274",
+   "kind": "raw",
+   "src": "img/fd274.png",
+   "start": 2681.24,
+   "dur": 6.01
+  },
+  {
+   "id": "ph274b",
+   "kind": "raw",
+   "src": "img/fd274b.png",
+   "start": 2687.25,
+   "dur": 6.01
+  },
+  {
+   "id": "ph274c",
+   "kind": "raw",
+   "src": "img/fd274c.png",
+   "start": 2693.26,
+   "dur": 6.02
+  },
+  {
+   "id": "fd275",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd275.mp4",
+   "start": 2699.28,
+   "dur": 3.94
+  },
+  {
+   "id": "ph275",
+   "kind": "raw",
+   "src": "img/fd275.png",
+   "start": 2703.22,
+   "dur": 4.83
+  },
+  {
+   "id": "ph275b",
+   "kind": "raw",
+   "src": "img/fd275b.png",
+   "start": 2708.05,
+   "dur": 4.83
+  },
+  {
+   "id": "ph275c",
+   "kind": "raw",
+   "src": "img/fd275c.png",
+   "start": 2712.88,
+   "dur": 4.84
+  },
+  {
+   "id": "fd276",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd276.mp4",
+   "start": 2717.72,
+   "dur": 3.94
+  },
+  {
+   "id": "c276",
+   "start": 2717.72,
+   "dur": 18.19,
+   "kind": "callout",
+   "eyebrow": "SI VIVES LEJOS",
+   "figure": "5 MINUTOS",
+   "caption": "La llamada corta y diaria vale más que la visita larga cada tres meses.",
+   "image": "img/fd276.png"
+  },
+  {
+   "id": "ph276",
+   "kind": "raw",
+   "src": "img/fd276.png",
+   "start": 2721.66,
+   "dur": 4.75
+  },
+  {
+   "id": "ph276b",
+   "kind": "raw",
+   "src": "img/fd276b.png",
+   "start": 2726.41,
+   "dur": 4.75
+  },
+  {
+   "id": "ph276c",
+   "kind": "raw",
+   "src": "img/fd276c.png",
+   "start": 2731.16,
+   "dur": 4.75
+  },
+  {
+   "id": "ph277",
+   "kind": "raw",
+   "src": "img/fd277.png",
+   "start": 2735.91,
+   "dur": 6.13
+  },
+  {
+   "id": "c277",
+   "start": 2735.91,
+   "dur": 18.39,
+   "kind": "headline",
+   "eyebrow": "ANTES DE CERRAR",
+   "tokens": [
+    {
+     "t": "FALTAN"
+    },
+    {
+     "t": "TRES"
+    },
+    {
+     "t": "COSAS",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "ph277b",
+   "kind": "raw",
+   "src": "img/fd277b.png",
+   "start": 2742.04,
+   "dur": 6.13
+  },
+  {
+   "id": "ph277c",
+   "kind": "raw",
+   "src": "img/fd277c.png",
+   "start": 2748.17,
+   "dur": 6.13
+  },
+  {
+   "id": "ph278",
+   "kind": "raw",
+   "src": "img/fd278.png",
+   "start": 2754.3,
+   "dur": 6.01
+  },
+  {
+   "id": "c278",
+   "start": 2754.3,
+   "dur": 18.02,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ES"
+    },
+    {
+     "t": "UNA"
+    },
+    {
+     "t": "CADENA"
+    },
+    {
+     "t": "RÓMPELA"
+    },
+    {
+     "t": "POR"
+    },
+    {
+     "t": "DONDE"
+    },
+    {
+     "t": "SEA"
+    }
+   ],
+   "perWord": 12,
+   "tone": "teal"
+  },
+  {
+   "id": "ph278b",
+   "kind": "raw",
+   "src": "img/fd278b.png",
+   "start": 2760.31,
+   "dur": 6.01
+  },
+  {
+   "id": "ph278c",
+   "kind": "raw",
+   "src": "img/fd278c.png",
+   "start": 2766.32,
+   "dur": 6
+  },
+  {
+   "id": "fd279",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd279.mp4",
+   "start": 2772.32,
+   "dur": 3.94
+  },
+  {
+   "id": "ph279",
+   "kind": "raw",
+   "src": "img/fd279.png",
+   "start": 2776.26,
+   "dur": 4.78
+  },
+  {
+   "id": "ph279b",
+   "kind": "raw",
+   "src": "img/fd279b.png",
+   "start": 2781.04,
+   "dur": 4.78
+  },
+  {
+   "id": "ph279c",
+   "kind": "raw",
+   "src": "img/fd279c.png",
+   "start": 2785.82,
+   "dur": 4.79
+  },
+  {
+   "id": "ph280",
+   "kind": "raw",
+   "src": "img/fdhero280.png",
+   "start": 2790.61,
+   "dur": 6.17
+  },
+  {
+   "id": "ph280b",
+   "kind": "raw",
+   "src": "img/fd280b.png",
+   "start": 2796.78,
+   "dur": 6.17
+  },
+  {
+   "id": "ph280c",
+   "kind": "raw",
+   "src": "img/fd280c.png",
+   "start": 2802.95,
+   "dur": 6.16
+  },
+  {
+   "id": "ph281",
+   "kind": "raw",
+   "src": "img/fd281.png",
+   "start": 2809.11,
+   "dur": 6.01
+  },
+  {
+   "id": "ph281b",
+   "kind": "raw",
+   "src": "img/fd281b.png",
+   "start": 2815.12,
+   "dur": 6.01
+  },
+  {
+   "id": "ph281c",
+   "kind": "raw",
+   "src": "img/fd281c.png",
+   "start": 2821.13,
+   "dur": 6
+  },
+  {
+   "id": "fd282",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd282.mp4",
+   "start": 2827.13,
+   "dur": 3.94
+  },
+  {
+   "id": "c282",
+   "start": 2827.13,
+   "dur": 18.13,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "DELIRIUM: SE ATIENDE HOY, NO EL LUNES",
+   "tone": "warn"
+  },
+  {
+   "id": "ph282",
+   "kind": "raw",
+   "src": "img/fd282.png",
+   "start": 2831.07,
+   "dur": 4.73
+  },
+  {
+   "id": "ph282b",
+   "kind": "raw",
+   "src": "img/fd282b.png",
+   "start": 2835.8,
+   "dur": 4.73
+  },
+  {
+   "id": "ph282c",
+   "kind": "raw",
+   "src": "img/fd282c.png",
+   "start": 2840.53,
+   "dur": 4.73
+  },
+  {
+   "id": "ph283",
+   "kind": "raw",
+   "src": "img/fd283.png",
+   "start": 2845.26,
+   "dur": 6.01
+  },
+  {
+   "id": "c283",
+   "start": 2845.26,
+   "dur": 18.02,
+   "kind": "checklist",
+   "eyebrow": "SEÑALES DE ALARMA",
+   "title": "Cuándo no se espera",
+   "stamp": "HOY",
+   "items": [
+    "Confusión de horas o de pocos días",
+    "Bajó más del 5 % del peso en seis meses",
+    "Se cayó y no sabe por qué",
+    "De un mes a otro dejó de poder algo"
+   ]
+  },
+  {
+   "id": "ph283b",
+   "kind": "raw",
+   "src": "img/fd283b.png",
+   "start": 2851.27,
+   "dur": 6.01
+  },
+  {
+   "id": "ph283c",
+   "kind": "raw",
+   "src": "img/fd283c.png",
+   "start": 2857.28,
+   "dur": 6
+  },
+  {
+   "id": "ph284",
+   "kind": "raw",
+   "src": "img/fd284.png",
+   "start": 2863.28,
+   "dur": 6.02
+  },
+  {
+   "id": "ph284b",
+   "kind": "raw",
+   "src": "img/fd284b.png",
+   "start": 2869.3,
+   "dur": 6.02
+  },
+  {
+   "id": "ph284c",
+   "kind": "raw",
+   "src": "img/fd284c.png",
+   "start": 2875.32,
+   "dur": 6.02
+  },
+  {
+   "id": "ph285",
+   "kind": "raw",
+   "src": "img/fd285.png",
+   "start": 2881.34,
+   "dur": 6.04
+  },
+  {
+   "id": "ph285b",
+   "kind": "raw",
+   "src": "img/fd285b.png",
+   "start": 2887.38,
+   "dur": 6.04
+  },
+  {
+   "id": "ph285c",
+   "kind": "raw",
+   "src": "img/fd285c.png",
+   "start": 2893.42,
+   "dur": 6.03
+  },
+  {
+   "id": "ph286",
+   "kind": "raw",
+   "src": "img/fd286.png",
+   "start": 2899.45,
+   "dur": 6.07
+  },
+  {
+   "id": "ph286b",
+   "kind": "raw",
+   "src": "img/fd286b.png",
+   "start": 2905.52,
+   "dur": 6.07
+  },
+  {
+   "id": "ph286c",
+   "kind": "raw",
+   "src": "img/fd286c.png",
+   "start": 2911.59,
+   "dur": 6.07
+  },
+  {
+   "id": "ph287",
+   "kind": "raw",
+   "src": "img/fd287.png",
+   "start": 2917.66,
+   "dur": 6.08
+  },
+  {
+   "id": "c287",
+   "start": 2917.66,
+   "dur": 18.25,
+   "kind": "depthscene",
+   "image": "img/fd287.png",
+   "back": "img/fd288.png",
+   "eyebrow": "PARA UNA PERSONA DE 75 AÑOS",
+   "title": "Levantarse del sillón es un ejercicio",
+   "sub": "Es la única rutina de fuerza que tiene en el día",
+   "side": "right"
+  },
+  {
+   "id": "ph287b",
+   "kind": "raw",
+   "src": "img/fd287b.png",
+   "start": 2923.74,
+   "dur": 6.08
+  },
+  {
+   "id": "ph287c",
+   "kind": "raw",
+   "src": "img/fd287c.png",
+   "start": 2929.82,
+   "dur": 6.09
+  },
+  {
+   "id": "ph288",
+   "kind": "raw",
+   "src": "img/fd288.png",
+   "start": 2935.91,
+   "dur": 6.11
+  },
+  {
+   "id": "c288",
+   "start": 2935.91,
+   "dur": 18.33,
+   "kind": "diagram",
+   "eyebrow": "LO QUE A TI TE PARECE UN TRAMITE",
+   "slides": [
+    {
+     "image": "img/fdlam287.png",
+     "eyebrow": "PARA ELLA ES EL ENTRENAMIENTO DEL DIA"
+    }
+   ],
+   "tag": "Lamina de la guia"
+  },
+  {
+   "id": "ph288b",
+   "kind": "raw",
+   "src": "img/fd288b.png",
+   "start": 2942.02,
+   "dur": 6.11
+  },
+  {
+   "id": "ph288c",
+   "kind": "raw",
+   "src": "img/fd288c.png",
+   "start": 2948.13,
+   "dur": 6.11
+  },
+  {
+   "id": "ph289",
+   "kind": "raw",
+   "src": "img/fd289.png",
+   "start": 2954.24,
+   "dur": 6.26
+  },
+  {
+   "id": "c289",
+   "start": 2954.24,
+   "dur": 18.79,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "EL ERROR ES AYUDARLO DE MÁS",
+   "tone": "warn"
+  },
+  {
+   "id": "ph289b",
+   "kind": "raw",
+   "src": "img/fd289b.png",
+   "start": 2960.5,
+   "dur": 6.26
+  },
+  {
+   "id": "ph289c",
+   "kind": "raw",
+   "src": "img/fd289c.png",
+   "start": 2966.76,
+   "dur": 6.27
+  },
+  {
+   "id": "fd290",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd290.mp4",
+   "start": 2973.03,
+   "dur": 3.94
+  },
+  {
+   "id": "ph290",
+   "kind": "raw",
+   "src": "img/fd290.png",
+   "start": 2976.97,
+   "dur": 4.71
+  },
+  {
+   "id": "ph290b",
+   "kind": "raw",
+   "src": "img/fd290b.png",
+   "start": 2981.68,
+   "dur": 4.71
+  },
+  {
+   "id": "ph290c",
+   "kind": "raw",
+   "src": "img/fd290c.png",
+   "start": 2986.39,
+   "dur": 4.72
+  },
+  {
+   "id": "ph291",
+   "kind": "raw",
+   "src": "img/fd291.png",
+   "start": 2991.11,
+   "dur": 6.01
+  },
+  {
+   "id": "c291",
+   "start": 2991.11,
+   "dur": 18.03,
+   "kind": "mitoverdad",
+   "myth": "Lo ayudo porque ya no puede",
+   "truth": "Le estás cancelando el único entrenamiento del día"
+  },
+  {
+   "id": "ph291b",
+   "kind": "raw",
+   "src": "img/fd291b.png",
+   "start": 2997.12,
+   "dur": 6.01
+  },
+  {
+   "id": "ph291c",
+   "kind": "raw",
+   "src": "img/fd291c.png",
+   "start": 3003.13,
+   "dur": 6.01
+  },
+  {
+   "id": "fd292",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd292.mp4",
+   "start": 3009.14,
+   "dur": 3.94
+  },
+  {
+   "id": "ph292",
+   "kind": "raw",
+   "src": "img/fd292.png",
+   "start": 3013.08,
+   "dur": 4.83
+  },
+  {
+   "id": "ph292b",
+   "kind": "raw",
+   "src": "img/fd292b.png",
+   "start": 3017.91,
+   "dur": 4.83
+  },
+  {
+   "id": "ph292c",
+   "kind": "raw",
+   "src": "img/fd292c.png",
+   "start": 3022.74,
+   "dur": 4.83
+  },
+  {
+   "id": "ph293",
+   "kind": "raw",
+   "src": "img/fd293.png",
+   "start": 3027.57,
+   "dur": 6.01
+  },
+  {
+   "id": "c293",
+   "start": 3027.57,
+   "dur": 18.02,
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "CADA"
+    },
+    {
+     "t": "COSA"
+    },
+    {
+     "t": "QUE"
+    },
+    {
+     "t": "SUELTAS"
+    },
+    {
+     "t": "NO"
+    },
+    {
+     "t": "LA"
+    },
+    {
+     "t": "VUELVES"
+    },
+    {
+     "t": "A"
+    },
+    {
+     "t": "AGARRAR"
+    }
+   ],
+   "perWord": 12,
+   "tone": "warn"
+  },
+  {
+   "id": "ph293b",
+   "kind": "raw",
+   "src": "img/fd293b.png",
+   "start": 3033.58,
+   "dur": 6.01
+  },
+  {
+   "id": "ph293c",
+   "kind": "raw",
+   "src": "img/fd293c.png",
+   "start": 3039.59,
+   "dur": 6
+  },
+  {
+   "id": "ph294",
+   "kind": "raw",
+   "src": "img/fdhero294.png",
+   "start": 3045.59,
+   "dur": 6.02
+  },
+  {
+   "id": "ph294b",
+   "kind": "raw",
+   "src": "img/fd294b.png",
+   "start": 3051.61,
+   "dur": 6.02
+  },
+  {
+   "id": "ph294c",
+   "kind": "raw",
+   "src": "img/fd294c.png",
+   "start": 3057.63,
+   "dur": 6.03
+  },
+  {
+   "id": "ph295",
+   "kind": "raw",
+   "src": "img/fd295.png",
+   "start": 3063.66,
+   "dur": 6.05
+  },
+  {
+   "id": "c295",
+   "start": 3063.66,
+   "dur": 18.14,
+   "kind": "process",
+   "eyebrow": "ESTA SEMANA",
+   "title": "Los tres pasos",
+   "steps": [
+    {
+     "title": "Paso 1",
+     "desc": "la bolsa de medicinas a la consulta, con la pregunta"
+    },
+    {
+     "title": "Paso 2",
+     "desc": "proteína en el desayuno y agua por reloj"
+    },
+    {
+     "title": "Paso 3",
+     "desc": "que se mueva y que tenga un para qué"
+    }
+   ]
+  },
+  {
+   "id": "ph295b",
+   "kind": "raw",
+   "src": "img/fd295b.png",
+   "start": 3069.71,
+   "dur": 6.05
+  },
+  {
+   "id": "ph295c",
+   "kind": "raw",
+   "src": "img/fd295c.png",
+   "start": 3075.76,
+   "dur": 6.04
+  },
+  {
+   "id": "ph296",
+   "kind": "raw",
+   "src": "img/fd296.png",
+   "start": 3081.8,
+   "dur": 6.15
+  },
+  {
+   "id": "c296",
+   "start": 3081.8,
+   "dur": 18.44,
+   "kind": "guardaesto",
+   "title": "Todo lo demás está en la guía de la descripción",
+   "items": [
+    "La lista de preguntas para el médico",
+    "Las cantidades de proteína",
+    "Los desayunos de diez minutos",
+    "La casa cuarto por cuarto"
+   ],
+   "tag": "ABRE LA DESCRIPCIÓN"
+  },
+  {
+   "id": "ph296b",
+   "kind": "raw",
+   "src": "img/fd296b.png",
+   "start": 3087.95,
+   "dur": 6.15
+  },
+  {
+   "id": "ph296c",
+   "kind": "raw",
+   "src": "img/fd296c.png",
+   "start": 3094.1,
+   "dur": 6.14
+  },
+  {
+   "id": "ph297",
+   "kind": "raw",
+   "src": "img/fdhero297.png",
+   "start": 3100.24,
+   "dur": 6.06
+  },
+  {
+   "id": "ph297b",
+   "kind": "raw",
+   "src": "img/fd297b.png",
+   "start": 3106.3,
+   "dur": 6.06
+  },
+  {
+   "id": "ph297c",
+   "kind": "raw",
+   "src": "img/fd297c.png",
+   "start": 3112.36,
+   "dur": 6.07
+  },
+  {
+   "id": "fd298",
+   "kind": "raw",
+   "src": "broll/fcsdeterioro/fd298.mp4",
+   "start": 3118.43,
+   "dur": 3.94
+  },
+  {
+   "id": "ph298",
+   "kind": "raw",
+   "src": "img/fd298.png",
+   "start": 3122.37,
+   "dur": 4.69
+  },
+  {
+   "id": "ph298b",
+   "kind": "raw",
+   "src": "img/fd298b.png",
+   "start": 3127.06,
+   "dur": 4.69
+  },
+  {
+   "id": "ph298c",
+   "kind": "raw",
+   "src": "img/fd298c.png",
+   "start": 3131.75,
+   "dur": 4.7
+  },
+  {
+   "id": "ph299",
+   "kind": "raw",
+   "src": "img/fd299.png",
+   "start": 3136.45,
+   "dur": 6.08
+  },
+  {
+   "id": "ph299b",
+   "kind": "raw",
+   "src": "img/fd299b.png",
+   "start": 3142.53,
+   "dur": 6.08
+  },
+  {
+   "id": "ph299c",
+   "kind": "raw",
+   "src": "img/fd299c.png",
+   "start": 3148.61,
+   "dur": 6.09
+  },
+  {
+   "id": "ph300",
+   "kind": "raw",
+   "src": "img/fdhero300.png",
+   "start": 3154.7,
+   "dur": 7.17
+  },
+  {
+   "id": "ph300b",
+   "kind": "raw",
+   "src": "img/fd300b.png",
+   "start": 3161.87,
+   "dur": 7.17
+  }
+ ]
+}
