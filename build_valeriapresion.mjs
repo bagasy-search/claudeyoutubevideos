@@ -248,19 +248,19 @@ for (let i = 0; i < skel.length; i++) {
   // COLD: dos tomas por beat (la del beat + la extra) para cortar a ~2,2s
   if (s < COLD && vid && haveExtra(i)) {
     const half = +(slot / 2).toFixed(2);
-    beats.push({id: `full_${id}`, start: s, dur: half, kind: 'full', src: `broll/${PFX}${id}.mp4`, video: true, ken});
-    beats.push({id: `xtra_${id}`, start: +(s + half).toFixed(2), dur: +(slot - half).toFixed(2), kind: 'full', src: extraSrc(i), video: true, ken: ken === 'in' ? 'out' : 'in'});
+    beats.push({id: `full_${id}`, start: s, dur: half, kind: 'full', src: `broll/${PFX}${id}.mp4`, video: true, ken, variant: 'none'});
+    beats.push({id: `xtra_${id}`, start: +(s + half).toFixed(2), dur: +(slot - half).toFixed(2), kind: 'full', src: extraSrc(i), video: true, ken: ken === 'in' ? 'out' : 'in', variant: 'none'});
     nClip++; nExtra++;
     continue;
   }
   if (vid) {
     const d = Math.min(slot, CLIP_DUR);
-    beats.push({id: `full_${id}`, start: s, dur: +d.toFixed(2), kind: 'full', src: `broll/${PFX}${id}.mp4`, video: true, ken});
+    beats.push({id: `full_${id}`, start: s, dur: +d.toFixed(2), kind: 'full', src: `broll/${PFX}${id}.mp4`, video: true, ken, variant: 'none'});
     nClip++;
     const tail = +(slot - d).toFixed(2);
-    if (tail > 0.7 && ph) { beats.push({id: `tail_${id}`, start: +(s + d).toFixed(2), dur: tail, kind: 'full', src: photoPath(id), video: false, ken: ken === 'in' ? 'out' : 'in'}); nPhoto++; }
+    if (tail > 0.7 && ph) { beats.push({id: `tail_${id}`, start: +(s + d).toFixed(2), dur: tail, kind: 'full', src: photoPath(id), video: false, ken: ken === 'in' ? 'out' : 'in', variant: 'none'}); nPhoto++; }
   } else {
-    beats.push({id: `full_${id}`, start: s, dur: slot, kind: 'full', src: photoPath(id), video: false, ken});
+    beats.push({id: `full_${id}`, start: s, dur: slot, kind: 'full', src: photoPath(id), video: false, ken, variant: 'none'});
     nPhoto++;
   }
 }
@@ -295,7 +295,7 @@ beats.sort((a, b) => a.start - b.start);
       const id = cercano(t);
       if (!id) break;
       rellenos.push({id: `gap_${id}_${t.toFixed(0)}`, start: +t.toFixed(2), dur: +d.toFixed(2), kind: 'full',
-                     src: photoPath(id), video: false, ken: rellenos.length % 2 ? 'out' : 'in', variant: 'whip'});
+                     src: photoPath(id), video: false, ken: rellenos.length % 2 ? 'out' : 'in', variant: 'none'});
       t += d;
     }
   }

@@ -450,7 +450,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b015.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "xtra_b015",
@@ -459,7 +460,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x15.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b016",
@@ -468,7 +470,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b016.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "xtra_b016",
@@ -477,7 +480,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x16.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b017",
@@ -486,7 +490,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b017.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "xtra_b017",
@@ -495,7 +500,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x17.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b018",
@@ -504,7 +510,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b018.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "xtra_b018",
@@ -513,7 +520,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x18.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b019",
@@ -522,7 +530,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b019.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "xtra_b019",
@@ -531,7 +540,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x19.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b020",
@@ -540,7 +550,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b020.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "xtra_b020",
@@ -549,7 +560,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x20.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b021",
@@ -558,7 +570,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b021.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "xtra_b021",
@@ -567,7 +580,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x21.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "checklist_3",
@@ -589,7 +603,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b023.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "xtra_b023",
@@ -598,7 +613,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x23.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b024",
@@ -607,7 +623,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b024.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "xtra_b024",
@@ -616,7 +633,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x24.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b025",
@@ -625,7 +643,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b025.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "xtra_b025",
@@ -634,7 +653,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x25.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "stat_4",
@@ -654,7 +674,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b027.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "xtra_b027",
@@ -663,7 +684,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x27.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b028",
@@ -672,7 +694,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b028.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "xtra_b028",
@@ -681,7 +704,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x28.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b029",
@@ -690,7 +714,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b029.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "xtra_b029",
@@ -699,7 +724,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x29.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b030",
@@ -708,7 +734,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b030.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "xtra_b030",
@@ -717,7 +744,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x30.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b031",
@@ -726,7 +754,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b031.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "xtra_b031",
@@ -735,7 +764,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x31.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b032",
@@ -744,7 +774,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b032.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "xtra_b032",
@@ -753,7 +784,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x32.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b033",
@@ -762,7 +794,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b033.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "xtra_b033",
@@ -771,7 +804,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_x33.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b034",
@@ -780,7 +814,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b034.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b034",
@@ -789,7 +824,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b034.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b036",
@@ -798,7 +834,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b036.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b036",
@@ -807,7 +844,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b036.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b037",
@@ -816,7 +854,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b037.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b037",
@@ -825,7 +864,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b037.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b038",
@@ -834,7 +874,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b038.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b038",
@@ -843,7 +884,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b038.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b040",
@@ -852,7 +894,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b040.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b040",
@@ -861,7 +904,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b040.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b041",
@@ -870,7 +914,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b041.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b042",
@@ -879,7 +924,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b042.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b042",
@@ -888,7 +934,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b042.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b044",
@@ -897,7 +944,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b044.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b044",
@@ -906,7 +954,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b044.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b045",
@@ -915,7 +964,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b045.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b046",
@@ -924,7 +974,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b046.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b048",
@@ -933,7 +984,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b048.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "beforeafter_5",
@@ -953,7 +1005,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b050.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b050",
@@ -962,7 +1015,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b050.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b052",
@@ -971,7 +1025,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b052.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b053",
@@ -980,7 +1035,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b053.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b054",
@@ -989,7 +1045,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b054.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "stat_6",
@@ -1019,7 +1076,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b058.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b060",
@@ -1028,7 +1086,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b060.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b061",
@@ -1037,7 +1096,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b061.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "molecule_8",
@@ -1068,7 +1128,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b064.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b065",
@@ -1077,7 +1138,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b065.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b066",
@@ -1086,7 +1148,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b066.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b068",
@@ -1095,7 +1158,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b068.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "stat_9",
@@ -1116,7 +1180,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b070.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b072",
@@ -1125,7 +1190,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b072.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b073",
@@ -1134,7 +1200,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b073.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b073",
@@ -1143,7 +1210,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b073.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b074",
@@ -1152,7 +1220,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b074.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b074",
@@ -1161,7 +1230,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b074.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "chapter_10",
@@ -1179,7 +1249,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b078.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b078",
@@ -1188,7 +1259,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b078.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b080",
@@ -1197,7 +1269,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b080.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b080",
@@ -1206,7 +1279,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b080.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b081",
@@ -1215,7 +1289,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b081.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b082",
@@ -1224,7 +1299,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b082.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "hero_11",
@@ -1243,7 +1319,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b086.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b086",
@@ -1252,7 +1329,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b086.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "molecule_12",
@@ -1284,7 +1362,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b089.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b090",
@@ -1293,7 +1372,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b090.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b092",
@@ -1302,7 +1382,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b092.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b093",
@@ -1311,7 +1392,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b093.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b094",
@@ -1320,7 +1402,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b094.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b094",
@@ -1329,7 +1412,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b094.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "quote_13",
@@ -1346,7 +1430,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b096.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b097",
@@ -1355,7 +1440,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b097.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b098",
@@ -1364,7 +1450,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b098.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b098",
@@ -1373,7 +1460,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b098.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b100",
@@ -1382,7 +1470,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b100.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b100",
@@ -1391,7 +1480,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b100.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b101",
@@ -1400,7 +1490,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b101.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b101",
@@ -1409,7 +1500,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b101.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b102",
@@ -1418,7 +1510,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b102.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "lowerthird_14",
@@ -1435,7 +1528,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b104.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b105",
@@ -1444,7 +1538,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b105.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b106",
@@ -1453,7 +1548,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b106.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b106",
@@ -1462,7 +1558,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b106.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b108",
@@ -1471,7 +1568,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b108.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b109",
@@ -1480,7 +1578,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b109.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b109",
@@ -1489,7 +1588,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b109.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b110",
@@ -1498,7 +1598,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b110.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b110",
@@ -1507,7 +1608,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b110.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "chapter_15",
@@ -1525,7 +1627,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b112.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b113",
@@ -1534,7 +1637,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b113.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b113",
@@ -1543,7 +1647,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b113.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b114",
@@ -1552,7 +1657,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b114.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b114",
@@ -1561,7 +1667,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b114.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b116",
@@ -1570,7 +1677,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b116.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b116",
@@ -1579,7 +1687,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b116.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "quote_16",
@@ -1596,7 +1705,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b118.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b120",
@@ -1605,7 +1715,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b120.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b121",
@@ -1614,7 +1725,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b121.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b121",
@@ -1623,7 +1735,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b121.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "chapter_17",
@@ -1641,7 +1754,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b123.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b124",
@@ -1650,7 +1764,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b124.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b124",
@@ -1659,7 +1774,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b124.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b125",
@@ -1668,7 +1784,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b125.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b125",
@@ -1677,7 +1794,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b125.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b126",
@@ -1686,7 +1804,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b126.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b126",
@@ -1695,7 +1814,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b126.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b127",
@@ -1704,7 +1824,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b127.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b128",
@@ -1713,7 +1834,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b128.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b128",
@@ -1722,7 +1844,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b128.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b129",
@@ -1731,7 +1854,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b129.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b130",
@@ -1740,7 +1864,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b130.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b131_629",
@@ -1750,7 +1875,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b131.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b131",
@@ -1759,7 +1884,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b131.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b131",
@@ -1768,7 +1894,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b131.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "carousel_18",
@@ -1835,7 +1962,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b133.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b133",
@@ -1844,7 +1972,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b133.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b134",
@@ -1853,7 +1982,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b134.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b135",
@@ -1862,7 +1992,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b135.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b136",
@@ -1871,7 +2002,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b136.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b137",
@@ -1880,7 +2012,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b137.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b137",
@@ -1889,7 +2022,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b137.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b138",
@@ -1898,7 +2032,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b138.jpg",
     "video": false,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b139",
@@ -1907,7 +2042,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b139.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b139",
@@ -1916,7 +2052,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b139.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b140",
@@ -1925,7 +2062,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b140.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b140",
@@ -1934,7 +2072,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b140.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b141",
@@ -1943,7 +2082,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b141.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b142",
@@ -1952,7 +2092,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b142.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b142",
@@ -1961,7 +2102,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b142.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b143",
@@ -1970,7 +2112,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b143.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "carousel_20",
@@ -2014,7 +2157,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b144.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b145",
@@ -2023,7 +2167,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b145.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b145",
@@ -2032,7 +2177,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b145.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b146",
@@ -2041,7 +2187,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b146.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "beforeafter_21",
@@ -2062,7 +2209,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b148.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b148",
@@ -2071,7 +2218,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b148.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b148",
@@ -2080,7 +2228,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b148.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b149",
@@ -2089,7 +2238,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b149.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b149",
@@ -2098,7 +2248,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b149.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b150",
@@ -2107,7 +2258,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b150.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b150",
@@ -2116,7 +2268,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b150.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b151",
@@ -2125,7 +2278,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b151.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b151",
@@ -2134,7 +2288,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b151.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b152",
@@ -2143,7 +2298,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b152.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "checklist_22",
@@ -2168,7 +2324,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b153.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b154",
@@ -2177,7 +2334,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b154.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "stat_23",
@@ -2197,7 +2355,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b155.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b156",
@@ -2206,7 +2365,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b156.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b157",
@@ -2215,7 +2375,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b157.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b157",
@@ -2224,7 +2385,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b157.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "carousel_24",
@@ -2268,7 +2430,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b160.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b161",
@@ -2277,7 +2440,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b161.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b162_780",
@@ -2287,7 +2451,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b162.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b162",
@@ -2296,7 +2460,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b162.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "molecule_25",
@@ -2325,7 +2490,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b164.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b164",
@@ -2334,7 +2500,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b164.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b165",
@@ -2343,7 +2510,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b165.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b165",
@@ -2352,7 +2520,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b165.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b166",
@@ -2361,7 +2530,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b166.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b167_805",
@@ -2371,7 +2541,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b167.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b167",
@@ -2380,7 +2550,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b167.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b168_809",
@@ -2390,7 +2561,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b168.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "carousel_26",
@@ -2434,7 +2605,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b169.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b169",
@@ -2443,7 +2615,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b169.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b170",
@@ -2452,7 +2625,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b170.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "hero_27",
@@ -2471,7 +2645,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b171.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b172",
@@ -2480,7 +2655,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b172.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b172",
@@ -2489,7 +2665,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b172.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b173",
@@ -2498,7 +2675,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b173.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b173",
@@ -2507,7 +2685,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b173.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b174",
@@ -2516,7 +2695,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b174.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b174",
@@ -2525,7 +2705,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b174.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b175",
@@ -2534,7 +2715,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b175.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b175",
@@ -2543,7 +2725,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b175.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b176",
@@ -2552,7 +2735,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b176.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b177",
@@ -2561,7 +2745,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b177.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b177",
@@ -2570,7 +2755,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b177.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b178",
@@ -2579,7 +2765,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b178.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b179_869",
@@ -2589,7 +2776,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b179.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b179",
@@ -2598,7 +2785,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b179.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b180_873",
@@ -2608,7 +2796,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b180.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b180",
@@ -2617,7 +2805,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b180.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b181_877",
@@ -2627,7 +2816,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b181.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b181",
@@ -2636,7 +2825,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b181.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b182_880",
@@ -2646,7 +2836,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b182.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "quote_28",
@@ -2663,7 +2853,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b183.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b184",
@@ -2672,7 +2863,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b184.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "chapter_29",
@@ -2690,7 +2882,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b185.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b186",
@@ -2699,7 +2892,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b186.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b186",
@@ -2708,7 +2902,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b186.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b187",
@@ -2717,7 +2912,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b187.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b187",
@@ -2726,7 +2922,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b187.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b188",
@@ -2735,7 +2932,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b188.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b188",
@@ -2744,7 +2942,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b188.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b189",
@@ -2753,7 +2952,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b189.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b189",
@@ -2762,7 +2962,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b189.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b190",
@@ -2771,7 +2972,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b190.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b191_927",
@@ -2781,7 +2983,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b191.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b191",
@@ -2790,7 +2992,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b191.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b192",
@@ -2799,7 +3002,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b192.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b193_935",
@@ -2809,7 +3013,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b193.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b193",
@@ -2818,7 +3022,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b193.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b194",
@@ -2827,7 +3032,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b194.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b194",
@@ -2836,7 +3042,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b194.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b195",
@@ -2845,7 +3052,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b195.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "stat_30",
@@ -2865,7 +3073,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b197.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b198",
@@ -2874,7 +3083,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b198.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "checklist_31",
@@ -2899,7 +3109,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b200.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b201_969",
@@ -2909,7 +3120,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b201.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b201",
@@ -2918,7 +3129,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b201.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b202",
@@ -2927,7 +3139,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b202.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b202",
@@ -2936,7 +3149,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b202.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b203",
@@ -2945,7 +3159,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b203.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b204_981",
@@ -2955,7 +3170,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b204.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b204",
@@ -2964,7 +3179,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b204.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b204",
@@ -2973,7 +3189,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b204.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b205",
@@ -2982,7 +3199,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b205.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b205",
@@ -2991,7 +3209,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b205.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b206",
@@ -3000,7 +3219,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b206.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "checklist_32",
@@ -3025,7 +3245,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b209.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b209",
@@ -3034,7 +3254,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b209.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b210",
@@ -3043,7 +3264,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b210.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b210",
@@ -3052,7 +3274,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b210.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b211",
@@ -3061,7 +3284,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b211.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b211",
@@ -3070,7 +3294,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b211.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b212",
@@ -3079,7 +3304,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b212.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b213_1021",
@@ -3089,7 +3315,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b213.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b213",
@@ -3098,7 +3324,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b213.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b213",
@@ -3107,7 +3334,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b213.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b214",
@@ -3116,7 +3344,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b214.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b215",
@@ -3125,7 +3354,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b215.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b216",
@@ -3134,7 +3364,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b216.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b217",
@@ -3143,7 +3374,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b217.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b218",
@@ -3152,7 +3384,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b218.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b219_1041",
@@ -3162,7 +3395,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b219.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b219",
@@ -3171,7 +3404,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b219.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "lowerthird_33",
@@ -3188,7 +3422,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b220.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b221",
@@ -3197,7 +3432,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b221.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b221",
@@ -3206,7 +3442,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b221.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b222",
@@ -3215,7 +3452,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b222.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b222",
@@ -3224,7 +3462,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b222.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b223",
@@ -3233,7 +3472,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b223.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b224",
@@ -3242,7 +3482,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b224.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b225",
@@ -3251,7 +3492,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b225.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "checklist_34",
@@ -3273,7 +3515,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b227.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b228_1080",
@@ -3283,7 +3526,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b228.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b228",
@@ -3292,7 +3535,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b228.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b228",
@@ -3301,7 +3545,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b228.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b229",
@@ -3310,7 +3555,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b229.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b229",
@@ -3319,7 +3565,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b229.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "beforeafter_35",
@@ -3348,7 +3595,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b231.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b232",
@@ -3357,7 +3605,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b232.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b233",
@@ -3366,7 +3615,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b233.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b234",
@@ -3375,7 +3625,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b234.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b235_1113",
@@ -3385,7 +3636,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b235.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b235",
@@ -3394,7 +3645,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b235.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b236",
@@ -3403,7 +3655,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b236.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b236",
@@ -3412,7 +3665,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b236.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b237",
@@ -3421,7 +3675,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b237.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b238",
@@ -3430,7 +3685,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b238.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b238",
@@ -3439,7 +3695,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b238.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b239",
@@ -3448,7 +3705,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b239.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "stat_37",
@@ -3469,7 +3727,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b241.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b241",
@@ -3478,7 +3736,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b241.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "hero_38",
@@ -3497,7 +3756,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b243.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b244",
@@ -3506,7 +3766,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b244.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b245",
@@ -3515,7 +3776,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b245.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b245",
@@ -3524,7 +3786,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b245.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b246",
@@ -3533,7 +3796,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b246.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b246",
@@ -3542,7 +3806,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b246.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b247",
@@ -3551,7 +3816,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b247.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b248",
@@ -3560,7 +3826,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b248.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "lowerthird_39",
@@ -3577,7 +3844,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b249.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b250",
@@ -3586,7 +3854,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b250.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b251",
@@ -3595,7 +3864,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b251.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b252",
@@ -3604,7 +3874,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b252.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b252",
@@ -3613,7 +3884,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b252.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b253",
@@ -3622,7 +3894,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b253.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b254",
@@ -3631,7 +3904,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b254.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b254",
@@ -3640,7 +3914,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b254.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "checklist_40",
@@ -3662,7 +3937,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b256.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b257",
@@ -3671,7 +3947,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b257.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b258",
@@ -3680,7 +3957,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b258.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b259",
@@ -3689,7 +3967,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b259.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b259",
@@ -3698,7 +3977,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b259.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b260",
@@ -3707,7 +3987,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b260.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b261",
@@ -3716,7 +3997,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b261.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "tail_b261",
@@ -3725,7 +4007,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b261.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b262",
@@ -3734,7 +4017,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b262.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b263",
@@ -3743,7 +4027,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b263.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b263",
@@ -3752,7 +4037,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b263.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b264",
@@ -3761,7 +4047,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b264.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b265",
@@ -3770,7 +4057,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b265.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "lowerthird_41",
@@ -3787,7 +4075,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b267.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b267",
@@ -3796,7 +4085,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b267.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b268",
@@ -3805,7 +4095,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b268.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b268",
@@ -3814,7 +4105,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b268.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b269",
@@ -3823,7 +4115,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b269.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b270",
@@ -3832,7 +4125,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b270.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b271",
@@ -3841,7 +4135,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b271.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b272",
@@ -3850,7 +4145,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b272.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "cta_42",
@@ -3873,7 +4169,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b274.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b275",
@@ -3882,7 +4179,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b275.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b276",
@@ -3891,7 +4189,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b276.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b277_1288",
@@ -3901,7 +4200,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b277.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b277",
@@ -3910,7 +4209,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b277.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b278",
@@ -3919,7 +4219,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b278.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b279",
@@ -3928,7 +4229,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b279.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b280",
@@ -3937,7 +4239,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b280.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b281",
@@ -3946,7 +4249,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b281.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b282_1306",
@@ -3956,7 +4260,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b282.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b282",
@@ -3965,7 +4269,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b282.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b283",
@@ -3974,7 +4279,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b283.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b284",
@@ -3983,7 +4289,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b284.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b284",
@@ -3992,7 +4299,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b284.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b285",
@@ -4001,7 +4309,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b285.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b286",
@@ -4010,7 +4319,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b286.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b287",
@@ -4019,7 +4329,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b287.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b288",
@@ -4028,7 +4339,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b288.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b289",
@@ -4037,7 +4349,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b289.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b290",
@@ -4046,7 +4359,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b290.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b290",
@@ -4055,7 +4369,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b290.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b291",
@@ -4064,7 +4379,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b291.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b292",
@@ -4073,7 +4389,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b292.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b293_1349",
@@ -4083,7 +4400,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b293.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b293",
@@ -4092,7 +4409,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b293.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b294",
@@ -4101,7 +4419,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b294.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b294",
@@ -4110,7 +4429,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b294.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b295",
@@ -4119,7 +4439,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b295.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b296",
@@ -4128,7 +4449,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b296.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b297_1366",
@@ -4138,7 +4460,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b297.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b297",
@@ -4147,7 +4469,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b297.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "stat_43",
@@ -4166,7 +4489,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b299.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b300",
@@ -4175,7 +4499,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b300.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b301",
@@ -4184,7 +4509,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b301.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "step_44",
@@ -4213,7 +4539,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b303.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b304",
@@ -4222,7 +4549,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b304.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b305",
@@ -4231,7 +4559,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b305.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b306_1399",
@@ -4241,7 +4570,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b306.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "step_46",
@@ -4261,7 +4590,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b307.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b307",
@@ -4270,7 +4599,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b307.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b308",
@@ -4279,7 +4609,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b308.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b308",
@@ -4288,7 +4619,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b308.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b309",
@@ -4297,7 +4629,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b309.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b310",
@@ -4306,7 +4639,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b310.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b310",
@@ -4315,7 +4649,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b310.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b311",
@@ -4324,7 +4659,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b311.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b312_1426",
@@ -4334,7 +4670,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b312.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b312",
@@ -4343,7 +4679,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b312.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b313",
@@ -4352,7 +4689,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b313.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b314",
@@ -4361,7 +4699,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b314.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b314",
@@ -4370,7 +4709,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b314.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b315",
@@ -4379,7 +4719,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b315.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b315",
@@ -4388,7 +4729,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b315.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b316",
@@ -4397,7 +4739,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b316.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "beforeafter_47",
@@ -4417,7 +4760,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b317.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b318",
@@ -4426,7 +4770,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b318.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b319",
@@ -4435,7 +4780,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b319.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b320",
@@ -4444,7 +4790,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b320.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b320",
@@ -4453,7 +4800,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b320.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b321",
@@ -4462,7 +4810,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b321.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b322",
@@ -4471,7 +4820,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b322.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b323",
@@ -4480,7 +4830,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b323.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b323",
@@ -4489,7 +4840,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b323.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b324",
@@ -4498,7 +4850,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b324.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b325_1479",
@@ -4508,7 +4861,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b325.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b325",
@@ -4517,7 +4870,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b325.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b326_1483",
@@ -4527,7 +4881,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b326.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b326",
@@ -4536,7 +4890,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b326.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b327",
@@ -4545,7 +4900,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b327.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b327",
@@ -4554,7 +4910,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b327.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b328",
@@ -4563,7 +4920,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b328.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b329_1497",
@@ -4573,7 +4931,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b329.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b329",
@@ -4582,7 +4940,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b329.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "stat_48",
@@ -4601,7 +4960,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b331.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b332_1510",
@@ -4611,7 +4971,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b332.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b332",
@@ -4620,7 +4980,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b332.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b333",
@@ -4629,7 +4990,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b333.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b334",
@@ -4638,7 +5000,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b334.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b335",
@@ -4647,7 +5010,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b335.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b335",
@@ -4656,7 +5020,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b335.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b336",
@@ -4665,7 +5030,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b336.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "stat_49",
@@ -4684,7 +5050,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b338.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b338",
@@ -4693,7 +5060,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b338.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b339",
@@ -4702,7 +5070,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b339.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b340",
@@ -4711,7 +5080,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b340.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b341",
@@ -4720,7 +5090,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b341.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b342",
@@ -4729,7 +5100,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b342.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b343",
@@ -4738,7 +5110,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b343.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b343",
@@ -4747,7 +5120,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b343.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b344",
@@ -4756,7 +5130,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b344.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b345",
@@ -4765,7 +5140,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b345.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b346",
@@ -4774,7 +5150,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b346.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b347",
@@ -4783,7 +5160,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b347.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b348_1570",
@@ -4793,7 +5171,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b348.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b348",
@@ -4802,7 +5180,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b348.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b349",
@@ -4811,7 +5190,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b349.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "hero_50",
@@ -4832,7 +5212,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b350.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b351",
@@ -4841,7 +5222,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b351.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b352_1588",
@@ -4851,7 +5233,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b352.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b352",
@@ -4860,7 +5242,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b352.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b353",
@@ -4869,7 +5252,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b353.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b354",
@@ -4878,7 +5262,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b354.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b355",
@@ -4887,7 +5272,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b355.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b356",
@@ -4896,7 +5282,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b356.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b357",
@@ -4905,7 +5292,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b357.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b358",
@@ -4914,7 +5302,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b358.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b359",
@@ -4923,7 +5312,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b359.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b360",
@@ -4932,7 +5322,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b360.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "stat_51",
@@ -4953,7 +5344,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b363.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b363",
@@ -4962,7 +5353,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b363.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b364",
@@ -4971,7 +5363,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b364.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b364",
@@ -4980,7 +5373,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b364.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b365",
@@ -4989,7 +5383,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b365.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b366_1634",
@@ -4999,7 +5394,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b366.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b366",
@@ -5008,7 +5403,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b366.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b366",
@@ -5017,7 +5413,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b366.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b367",
@@ -5026,7 +5423,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b367.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b368_1644",
@@ -5036,7 +5434,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b368.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "hero_52",
@@ -5055,7 +5453,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b369.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b370",
@@ -5064,7 +5463,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b370.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b371",
@@ -5073,7 +5473,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b371.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b371",
@@ -5082,7 +5483,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b371.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b372",
@@ -5091,7 +5493,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b372.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b373",
@@ -5100,7 +5503,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b373.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b374_1668",
@@ -5110,7 +5514,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b374.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "quote_53",
@@ -5127,7 +5531,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b376.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b377",
@@ -5136,7 +5541,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b377.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b378",
@@ -5145,7 +5551,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b378.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b379",
@@ -5154,7 +5561,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b379.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b380",
@@ -5163,7 +5571,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b380.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b381",
@@ -5172,7 +5581,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b381.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b382_1693",
@@ -5182,7 +5592,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b382.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b382",
@@ -5191,7 +5601,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b382.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b382",
@@ -5200,7 +5611,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b382.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b383",
@@ -5209,7 +5621,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b383.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b384",
@@ -5218,7 +5631,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b384.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b385",
@@ -5227,7 +5641,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b385.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "gap_b386_1710",
@@ -5237,7 +5652,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b386.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "beforeafter_54",
@@ -5257,7 +5672,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b387.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b388",
@@ -5266,7 +5682,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b388.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b389",
@@ -5275,7 +5692,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b389.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b390",
@@ -5284,7 +5702,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b390.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "checklist_55",
@@ -5307,7 +5726,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b393.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b394",
@@ -5316,7 +5736,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b394.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b394",
@@ -5325,7 +5746,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b394.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b395",
@@ -5334,7 +5756,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b395.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b396",
@@ -5343,7 +5766,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b396.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b397",
@@ -5352,7 +5776,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b397.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b398",
@@ -5361,7 +5786,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b398.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b399_1759",
@@ -5371,7 +5797,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b399.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b399",
@@ -5380,7 +5806,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b399.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b400",
@@ -5389,7 +5816,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b400.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b401_1768",
@@ -5399,7 +5827,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b401.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "checklist_56",
@@ -5423,7 +5851,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b403.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b404",
@@ -5432,7 +5861,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b404.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b405",
@@ -5441,7 +5871,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b405.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b406",
@@ -5450,7 +5881,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b406.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b407",
@@ -5459,7 +5891,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b407.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b408",
@@ -5468,7 +5901,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b408.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b409",
@@ -5477,7 +5911,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b409.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b410",
@@ -5486,7 +5921,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b410.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b411",
@@ -5495,7 +5931,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b411.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b412",
@@ -5504,7 +5941,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b412.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b412",
@@ -5513,7 +5951,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b412.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b413",
@@ -5522,7 +5961,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b413.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b414",
@@ -5531,7 +5971,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b414.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "tail_b414",
@@ -5540,7 +5981,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b414.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b415",
@@ -5549,7 +5991,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b415.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "full_b416",
@@ -5558,7 +6001,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b416.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "quote_57",
@@ -5576,7 +6020,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b418.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b418",
@@ -5585,7 +6029,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b418.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b419",
@@ -5594,7 +6039,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b419.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b420_1832",
@@ -5604,7 +6050,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b420.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b420",
@@ -5613,7 +6059,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b420.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b420",
@@ -5622,7 +6069,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b420.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b421",
@@ -5631,7 +6079,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b421.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b422",
@@ -5640,7 +6089,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b422.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b423",
@@ -5649,7 +6099,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b423.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "tail_b423",
@@ -5658,7 +6109,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b423.jpg",
     "video": false,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "full_b424",
@@ -5667,7 +6119,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b424.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "gap_b425_1854",
@@ -5677,7 +6130,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b425.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b425",
@@ -5686,7 +6139,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b425.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b426",
@@ -5695,7 +6149,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b426.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "full_b427",
@@ -5704,7 +6159,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b427.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   },
   {
     "id": "gap_b428_1865",
@@ -5714,7 +6170,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b428.jpg",
     "video": false,
     "ken": "out",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b428",
@@ -5723,7 +6179,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b428.mp4",
     "video": true,
-    "ken": "in"
+    "ken": "in",
+    "variant": "none"
   },
   {
     "id": "tail_b428",
@@ -5732,7 +6189,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "img/vp_b428.jpg",
     "video": false,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b429",
@@ -5741,7 +6199,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b429.mp4",
     "video": true,
-    "ken": "out"
+    "ken": "out",
+    "variant": "none"
   },
   {
     "id": "full_b430",
@@ -5750,7 +6209,8 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b430.mp4",
     "video": true,
-    "ken": "left"
+    "ken": "left",
+    "variant": "none"
   },
   {
     "id": "gap_b431_1878",
@@ -5760,7 +6220,7 @@ export const BEATS: Cue[] = [
     "src": "img/vp_b431.jpg",
     "video": false,
     "ken": "in",
-    "variant": "whip"
+    "variant": "none"
   },
   {
     "id": "full_b431",
@@ -5769,6 +6229,7 @@ export const BEATS: Cue[] = [
     "kind": "full",
     "src": "broll/vp_b431.mp4",
     "video": true,
-    "ken": "right"
+    "ken": "right",
+    "variant": "none"
   }
 ];
