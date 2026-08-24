@@ -244,7 +244,7 @@ const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: num
   {from: 5000, dur: 160, img: 'bas6_broll_lab.jpg', caption: 'Lo que mide el análisis'},
   {from: 6000, dur: 150, img: 'bas7_carne.jpg', caption: '¿Qué deja atrás cada una?'},
   {from: 6960, dur: 160, img: 'bas6_broll_huesos.jpg', caption: 'Se lo roba de sus huesos'},
-  {from: 7150, dur: 160, img: 'bas6_broll_caneria_sarro.jpg', caption: 'Como sarro en la cañería'},
+  {from: 7150, dur: 160, img: 'bas6_p_caneria_sarro.jpg', caption: 'Como sarro en la cañería'},
   {from: 7480, dur: 170, img: 'bas6_p_paciente_asustado.jpg', caption: 'Se asusta y deja la proteína'},
   {from: 7934, dur: 170, img: 'bas7_broll_sopita.jpg', caption: 'Sopita, té y galletitas'},
   {from: 8700, dur: 160, img: 'bas6_p_cansancio_cama.jpg', caption: 'Más flaco, más débil'},
