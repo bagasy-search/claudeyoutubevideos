@@ -108,7 +108,7 @@ export const MainFcsvarices: React.FC = () => {
           scanSub="o el link en la descripción"
           kicker="La guía completa"
           title="Salud después de los 60"
-          desc="Piernas, sueño, piel y los errores que arruinan todo lo demás"
+          desc="Las láminas que viste en este video son de acá: piernas, sueño, piel y los errores que arruinan todo lo demás"
         />
       </Sequence>
 

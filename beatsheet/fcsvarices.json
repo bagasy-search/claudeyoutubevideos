@@ -41,6 +41,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed002",
+   "kind": "raw",
+   "src": "img/fv001.png",
+   "start": 26.13,
+   "dur": 8.71
+  },
+  {
    "id": "c002",
    "start": 26.13,
    "dur": 8.71,
@@ -133,6 +140,13 @@
    "dur": 3.56
   },
   {
+   "id": "bed007",
+   "kind": "raw",
+   "src": "img/fv006.png",
+   "start": 66.52,
+   "dur": 7.58
+  },
+  {
    "id": "c007",
    "start": 66.52,
    "dur": 7.58,
@@ -154,6 +168,13 @@
    "src": "img/fv008.png",
    "start": 78.04,
    "dur": 3.6
+  },
+  {
+   "id": "bed009",
+   "kind": "raw",
+   "src": "img/fv008.png",
+   "start": 87.5,
+   "dur": 6.96
   },
   {
    "id": "c009",
@@ -364,6 +385,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed022",
+   "kind": "raw",
+   "src": "img/fv021.png",
+   "start": 234.9,
+   "dur": 12.04
+  },
+  {
    "id": "c022",
    "start": 234.9,
    "dur": 12.04,
@@ -393,6 +421,13 @@
    "src": "img/fv023.png",
    "start": 250.88,
    "dur": 3.6
+  },
+  {
+   "id": "bed024",
+   "kind": "raw",
+   "src": "img/fv023.png",
+   "start": 256.7,
+   "dur": 8.24
   },
   {
    "id": "c024",
@@ -457,6 +492,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed028",
+   "kind": "raw",
+   "src": "img/fv027.png",
+   "start": 295.48,
+   "dur": 13.26
+  },
+  {
    "id": "c028",
    "start": 295.48,
    "dur": 13.26,
@@ -467,7 +509,8 @@
      "image": "img/fvdg028.png",
      "eyebrow": "UNA PUERTA QUE YA NO CIERRA"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv029",
@@ -482,6 +525,13 @@
    "src": "img/fv029.png",
    "start": 312.68,
    "dur": 3.6
+  },
+  {
+   "id": "bed030",
+   "kind": "raw",
+   "src": "img/fv029.png",
+   "start": 321.32,
+   "dur": 11.28
   },
   {
    "id": "c030",
@@ -503,6 +553,13 @@
    "src": "broll/fcsvarices/fv031.mp4",
    "start": 332.6,
    "dur": 3.94
+  },
+  {
+   "id": "bed031",
+   "kind": "raw",
+   "src": "img/fv032.png",
+   "start": 332.6,
+   "dur": 10.02
   },
   {
    "id": "c031",
@@ -569,6 +626,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed034",
+   "kind": "raw",
+   "src": "img/fv033.png",
+   "start": 368.16,
+   "dur": 13.44
+  },
+  {
    "id": "c034",
    "start": 368.16,
    "dur": 13.44,
@@ -579,7 +643,8 @@
      "image": "img/fvdg034.png",
      "eyebrow": "EL LÍQUIDO QUE SE QUEDA EN EL TEJIDO"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "ph035",
@@ -600,7 +665,14 @@
    "kind": "raw",
    "src": "img/fv036.png",
    "start": 397.14,
-   "dur": 3.6
+   "dur": 4.06
+  },
+  {
+   "id": "bed037",
+   "kind": "raw",
+   "src": "img/fv036.png",
+   "start": 401.02,
+   "dur": 8.26
   },
   {
    "id": "c037",
@@ -609,8 +681,15 @@
    "kind": "lowerthird",
    "kicker": "LO QUE MÁS IMPORTA",
    "title": "Esto FRENA el avance",
-   "desc": "El objetivo no es la que ya tienes: son las tres que vienen atrás",
+   "desc": "El objetivo son las tres que vienen atrás",
    "tone": "good"
+  },
+  {
+   "id": "bed038",
+   "kind": "raw",
+   "src": "img/fv039.png",
+   "start": 409.28,
+   "dur": 12.26
   },
   {
    "id": "c038",
@@ -715,6 +794,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed043",
+   "kind": "raw",
+   "src": "img/fv042.png",
+   "start": 470.06,
+   "dur": 14.42
+  },
+  {
    "id": "c043",
    "start": 470.06,
    "dur": 14.42,
@@ -725,7 +811,15 @@
      "image": "img/fvdg043.png",
      "eyebrow": "EL CORAZÓN EMPUJA, NO JALA"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
+  },
+  {
+   "id": "bed044",
+   "kind": "raw",
+   "src": "img/fv045.png",
+   "start": 484.48,
+   "dur": 9.1
   },
   {
    "id": "c044",
@@ -778,6 +872,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed047",
+   "kind": "raw",
+   "src": "img/fv046.png",
+   "start": 519.52,
+   "dur": 14.76
+  },
+  {
    "id": "c047",
    "start": 519.52,
    "dur": 14.76,
@@ -788,7 +889,8 @@
      "image": "img/fvdg047.png",
      "eyebrow": "ESCALÓN POR ESCALÓN HASTA LA INGLE"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv048",
@@ -846,6 +948,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed050",
+   "kind": "raw",
+   "src": "img/fv049.png",
+   "start": 558.52,
+   "dur": 11.06
+  },
+  {
    "id": "c050",
    "start": 558.52,
    "dur": 11.06,
@@ -856,7 +965,15 @@
      "image": "img/fvdg050.png",
      "eyebrow": "EL ESCALÓN DE ABAJO SE SOBRECARGA"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
+  },
+  {
+   "id": "bed051",
+   "kind": "raw",
+   "src": "img/fv052.png",
+   "start": 569.58,
+   "dur": 9.18
   },
   {
    "id": "c051",
@@ -869,7 +986,8 @@
      "image": "img/fvdg051.png",
      "eyebrow": "LA VENA SE ESTIRA COMO UNA LIGA VIEJA"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv052",
@@ -901,6 +1019,13 @@
    "src": "img/fvhero053.png",
    "start": 589.56,
    "dur": 3.6
+  },
+  {
+   "id": "bed054",
+   "kind": "raw",
+   "src": "img/fv055.png",
+   "start": 600.42,
+   "dur": 5.4
   },
   {
    "id": "c054",
@@ -958,6 +1083,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed056",
+   "kind": "raw",
+   "src": "img/fv055.png",
+   "start": 618.06,
+   "dur": 5.64
+  },
+  {
    "id": "c056",
    "start": 618.06,
    "dur": 5.64,
@@ -982,6 +1114,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed058",
+   "kind": "raw",
+   "src": "img/fv057.png",
+   "start": 636.96,
+   "dur": 11.48
+  },
+  {
    "id": "c058",
    "start": 636.96,
    "dur": 11.48,
@@ -992,7 +1131,8 @@
      "image": "img/fvdg058.png",
      "eyebrow": "UNA COLUMNA DE SANGRE DE UN METRO Y PICO"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv059",
@@ -1042,6 +1182,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed061",
+   "kind": "raw",
+   "src": "img/fv060.png",
+   "start": 673.62,
+   "dur": 13.23
+  },
+  {
    "id": "c061",
    "start": 673.62,
    "dur": 13.23,
@@ -1069,6 +1216,13 @@
      "note": "la ventana de la noche"
     }
    ]
+  },
+  {
+   "id": "bed062",
+   "kind": "raw",
+   "src": "img/fv063.png",
+   "start": 686.85,
+   "dur": 13.23
   },
   {
    "id": "c062",
@@ -1178,6 +1332,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed068",
+   "kind": "raw",
+   "src": "img/fv067.png",
+   "start": 757.9,
+   "dur": 11.5
+  },
+  {
    "id": "c068",
    "start": 757.9,
    "dur": 11.5,
@@ -1200,7 +1361,7 @@
    "dur": 11.66,
    "kind": "lowerthird",
    "kicker": "CÓMO FUNCIONA",
-   "title": "Como apretar una bolsa de agua",
+   "title": "Cómo apretar una bolsa de agua",
    "tone": "good"
   },
   {
@@ -1209,6 +1370,13 @@
    "src": "img/fv069.png",
    "start": 773.34,
    "dur": 3.6
+  },
+  {
+   "id": "bed070",
+   "kind": "raw",
+   "src": "img/fv069.png",
+   "start": 781.06,
+   "dur": 9.68
   },
   {
    "id": "c070",
@@ -1221,7 +1389,15 @@
      "image": "img/fvdg070.png",
      "eyebrow": "EL MÚSCULO ESTRUJA, LA VÁLVULA DEJA SUBIR"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
+  },
+  {
+   "id": "bed071",
+   "kind": "raw",
+   "src": "img/fv069.png",
+   "start": 790.74,
+   "dur": 11.02
   },
   {
    "id": "c071",
@@ -1232,6 +1408,13 @@
    "value": 300,
    "suffix": " mmHg",
    "label": "hasta el triple de la gravedad que te gana"
+  },
+  {
+   "id": "bed072",
+   "kind": "raw",
+   "src": "img/fv073.png",
+   "start": 801.76,
+   "dur": 11.02
   },
   {
    "id": "c072",
@@ -1340,6 +1523,13 @@
    "src": "img/fv076.png",
    "start": 852.48,
    "dur": 3.6
+  },
+  {
+   "id": "bed077",
+   "kind": "raw",
+   "src": "img/fv076.png",
+   "start": 861.24,
+   "dur": 10.4
   },
   {
    "id": "c077",
@@ -1454,6 +1644,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed083",
+   "kind": "raw",
+   "src": "img/fv082.png",
+   "start": 925.16,
+   "dur": 6.44
+  },
+  {
    "id": "c083",
    "start": 925.16,
    "dur": 6.44,
@@ -1488,6 +1685,13 @@
    ]
   },
   {
+   "id": "bed084",
+   "kind": "raw",
+   "src": "img/fv085.png",
+   "start": 931.6,
+   "dur": 10.92
+  },
+  {
    "id": "c084",
    "start": 931.6,
    "dur": 10.92,
@@ -1498,7 +1702,8 @@
      "image": "img/fvdg084.png",
      "eyebrow": "LA PARED FINÍSIMA DEJA SALIR LÍQUIDO"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv085",
@@ -1561,6 +1766,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed088",
+   "kind": "raw",
+   "src": "img/fv087.png",
+   "start": 975.7,
+   "dur": 12.18
+  },
+  {
    "id": "c088",
    "start": 975.7,
    "dur": 12.18,
@@ -1571,7 +1783,8 @@
      "image": "img/fvdg088.png",
      "eyebrow": "EL AGUA VUELVE A LA SANGRE Y VA AL RIÑÓN"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv089",
@@ -1611,6 +1824,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed091",
+   "kind": "raw",
+   "src": "img/fv090.png",
+   "start": 1010.34,
+   "dur": 10.32
+  },
+  {
    "id": "c091",
    "start": 1010.34,
    "dur": 10.32,
@@ -1621,12 +1841,26 @@
    "tone": "alert"
   },
   {
+   "id": "bed092",
+   "kind": "raw",
+   "src": "img/fv090.png",
+   "start": 1020.66,
+   "dur": 11.28
+  },
+  {
    "id": "c092",
    "start": 1020.66,
    "dur": 11.28,
    "kind": "quote",
    "text": "Se está estudiando si tratar la insuficiencia venosa reduce las veces que la gente se levanta al baño de noche",
    "image": "img/fv089.png"
+  },
+  {
+   "id": "bed093",
+   "kind": "raw",
+   "src": "img/fv094.png",
+   "start": 1031.94,
+   "dur": 11.36
   },
   {
    "id": "c093",
@@ -1691,6 +1925,13 @@
    "dur": 3.6
   },
   {
+   "id": "bed096",
+   "kind": "raw",
+   "src": "img/fv095.png",
+   "start": 1068.26,
+   "dur": 13.48
+  },
+  {
    "id": "c096",
    "start": 1068.26,
    "dur": 13.48,
@@ -1710,13 +1951,20 @@
    "tone": "alert"
   },
   {
+   "id": "bed097",
+   "kind": "raw",
+   "src": "img/fv098.png",
+   "start": 1081.74,
+   "dur": 12.18
+  },
+  {
    "id": "c097",
    "start": 1081.74,
    "dur": 12.18,
    "kind": "lowerthird",
    "kicker": "POR ESO ES NOCTURNO",
    "title": "La ventana se abre cuando te acuestas",
-   "desc": "Es el único momento del día en que las venas no pelean con la gravedad",
+   "desc": "El único rato en que las venas no pelean con la gravedad",
    "tone": "good"
   },
   {
@@ -1764,6 +2012,13 @@
    "dur": 2.98
   },
   {
+   "id": "bed100",
+   "kind": "raw",
+   "src": "img/fv099.png",
+   "start": 1111.24,
+   "dur": 9.35
+  },
+  {
    "id": "c100",
    "start": 1111.24,
    "dur": 9.35,
@@ -1774,6 +2029,13 @@
     "Te levantas menos al baño",
     "Amaneces con la pierna en cero"
    ]
+  },
+  {
+   "id": "bed101",
+   "kind": "raw",
+   "src": "img/fv099.png",
+   "start": 1120.59,
+   "dur": 9.35
   },
   {
    "id": "c101",
@@ -1796,6 +2058,13 @@
      "t": "TODO"
     }
    ]
+  },
+  {
+   "id": "bed102",
+   "kind": "raw",
+   "src": "img/fv103.png",
+   "start": 1129.95,
+   "dur": 9.35
   },
   {
    "id": "c102",
@@ -1891,6 +2160,13 @@
    "src": "img/fv106.png",
    "start": 1167.57,
    "dur": 3.6
+  },
+  {
+   "id": "bed107",
+   "kind": "raw",
+   "src": "img/fv106.png",
+   "start": 1173.44,
+   "dur": 11.5
   },
   {
    "id": "c107",
@@ -2002,7 +2278,8 @@
      "image": "img/fvdg112.png",
      "eyebrow": "UN RECEPTOR EN LA TERMINACIÓN DEL NERVIO"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "bed113",
@@ -2039,7 +2316,8 @@
      "image": "img/fvdg114.png",
      "eyebrow": "LOS VASITOS DE LA ZONA SE ABREN"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv115",
@@ -2113,7 +2391,8 @@
      "image": "img/fvdg118.png",
      "eyebrow": "LA PRESIÓN ALTA INFLAMA LA PARED"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "bed119",
@@ -2509,7 +2788,8 @@
      "image": "img/fvdg138.png",
      "eyebrow": "MÁS RIEGO EN LOS VASITOS DE LA PIEL"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "bed139",
@@ -3234,7 +3514,7 @@
    "kind": "lowerthird",
    "kicker": "POR QUÉ IMPORTA TANTO",
    "title": "Esa piel ya está frágil",
-   "desc": "La pierna con problema venoso se lastima más fácil que cualquiera",
+   "desc": "Se lastima más fácil que cualquier otra piel",
    "tone": "alert"
   },
   {
@@ -3478,7 +3758,8 @@
      "image": "img/fvdg195.png",
      "eyebrow": "EL MÚSCULO ESTRUJA Y LA SANGRE SUBE"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv196",
@@ -3645,7 +3926,8 @@
      "image": "img/fvdg204.png",
      "eyebrow": "LA VÁLVULA ABRE PARA UN SOLO LADO"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv205",
@@ -3722,7 +4004,7 @@
    "kind": "lowerthird",
    "kicker": "PASO 5 · LA PRESIÓN",
    "title": "Como acariciar a un gato",
-   "desc": "Y encima del cordón de la várice, sin presionar",
+   "desc": "Nunca sobre el cordón de la várice",
    "tone": "alert"
   },
   {
@@ -3840,7 +4122,8 @@
      "image": "img/fvdg214.png",
      "eyebrow": "EL LÍQUIDO DEL TEJIDO, NO LA SANGRE DE LA VÁRICE"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv215",
@@ -4110,7 +4393,8 @@
      "image": "img/fvdg228.png",
      "eyebrow": "UN COÁGULO EN UNA VENA PROFUNDA"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "bed229",
@@ -4126,7 +4410,7 @@
    "kind": "lowerthird",
    "kicker": "EL PELIGRO",
    "title": "El coágulo se puede desprender",
-   "desc": "Viaja por la sangre y llega al pulmón",
+   "desc": "Viaja por la sangre hasta el pulmón",
    "tone": "bad"
   },
   {
@@ -4394,7 +4678,8 @@
      "image": "img/fvdg244.png",
      "eyebrow": "EL CALOR DILATA LA VENA Y LA SANGRE SE ESTANCA"
     }
-   ]
+   ],
+   "tag": "Lámina de la guía"
   },
   {
    "id": "fv245",
@@ -4747,7 +5032,7 @@
    "kind": "lowerthird",
    "kicker": "SEMANAS 4 A 8",
    "title": "El aguante",
-   "desc": "Lo notas cuando haces algo que antes te costaba y no te acuerdas de haberte cansado",
+   "desc": "Un día haces algo que antes te costaba y ni te acuerdas",
    "tone": "good"
   },
   {

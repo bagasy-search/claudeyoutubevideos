@@ -97,9 +97,11 @@ for (let i = 0; i < N; i++) {
     // con avatar: foto topeada (el avatar tapa el resto). sin avatar: la foto CUBRE todo el resto.
     const cov = conAvatar ? +Math.min(rest, HERO_CAP_AV).toFixed(2) : rest;
     PHOTOS.push({ name: `ph${id3}`, src: photoRel, start: +(st + used).toFixed(2), cov, dur: cov, i, hero: p.k === "hero" });
-  } else if (!fs.existsSync(photoAbs) && !conAvatar && rest > 0.5) {
-    // momento de COMPONENTE sin foto propia en el tramo sin avatar → cama prestada
-    // del vecino más cercano que sí tenga foto (nunca queda fondo muerto).
+  } else if (!fs.existsSync(photoAbs) && rest > 0.5) {
+    // momento de COMPONENTE sin foto propia → CAMA prestada del vecino más cercano.
+    // Va en TODO el video, no solo en el tramo sin avatar: los componentes a pantalla
+    // completa del kit dejan un marco de ~60px, y con el avatar oculto ese marco mostraba
+    // el fondo plano (lo cazó el AUDITOR en el render). Con la cama siempre hay algo vivo.
     let j = i, ph = null;
     for (let d = 1; d < 24 && !ph; d++) {
       for (const k of [i - d, i + d]) {

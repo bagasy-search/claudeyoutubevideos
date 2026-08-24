@@ -28,7 +28,7 @@ export function renderFederer2Comp(beat: any, d: number, opts: { medico?: boolea
         .filter((s: any) => s && s.image)
         .map((s: any) => ({ image: s.image, eyebrow: s.eyebrow || beat.eyebrow }));
       if (!pages.length) return null;
-      return <DiagramBoard durationInFrames={d} pages={pages} medico={medico} />;
+      return <DiagramBoard durationInFrames={d} pages={pages} medico={medico} tag={beat.tag} />;
     }
     case "bars":
       return (

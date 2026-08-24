@@ -39,7 +39,10 @@ export const DiagramBoard: React.FC<{
   // desde el frame 0 SIN trimBefore (evita el deep-seek que sale negro en el farm).
   fit?: "cover" | "contain";
   medico?: boolean; // marco/eyebrow/puntos en teal clínico (canal Dr. Federer)
-}> = ({ durationInFrames, pages, avatar, avatarFrom, clip, fit = "contain", medico = false }) => {
+  // SELLO DE PERTENENCIA (opcional): marca la lámina como página de la guía del embudo.
+  // Es de las estrategias que mejor funcionan: el espectador ve el valor y recién ahí lee de dónde sale.
+  tag?: string;
+}> = ({ durationInFrames, pages, avatar, avatarFrom, clip, fit = "contain", medico = false, tag }) => {
   const frame = useCurrentFrame();
   const { width } = useVideoConfig();
   const bgFill = medico ? MED_DIAG.bg : COLORS.bg1;
@@ -68,6 +71,20 @@ export const DiagramBoard: React.FC<{
       {page.eyebrow && (
         <div style={{ position: "absolute", top: 40, left: 56, fontSize: 22, fontWeight: 800, letterSpacing: 5, textTransform: "uppercase", color: eyebrowColor, opacity: op }}>
           {page.eyebrow}
+        </div>
+      )}
+
+      {/* SELLO "página de la guía" — abajo a la izquierda, discreto, no tapa el diagrama */}
+      {tag && (
+        <div style={{
+          position: "absolute", bottom: 44, left: 56, display: "flex", alignItems: "center", gap: 10,
+          padding: "8px 16px", borderRadius: 999, opacity: op * 0.92,
+          border: `1px solid ${accentColor}55`, background: "rgba(0,0,0,0.28)",
+          fontFamily: FONT, fontSize: 19, fontWeight: 800, letterSpacing: 2.5,
+          textTransform: "uppercase", color: accentColor,
+        }}>
+          <span style={{ width: 7, height: 7, borderRadius: 999, background: accentColor, display: "inline-block" }} />
+          {tag}
         </div>
       )}
 

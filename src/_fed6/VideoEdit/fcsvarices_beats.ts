@@ -1389,6 +1389,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed002",
+  "src": "img/fv001.png",
+  "start": 26.13,
+  "cov": 8.71,
+  "dur": 8.71,
+  "i": 2,
+  "bed": true,
+  "from": 1
+ },
+ {
   "name": "ph003",
   "src": "img/fv003.png",
   "start": 38.78,
@@ -1425,6 +1435,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed007",
+  "src": "img/fv006.png",
+  "start": 66.52,
+  "cov": 7.58,
+  "dur": 7.58,
+  "i": 7,
+  "bed": true,
+  "from": 6
+ },
+ {
   "name": "ph008",
   "src": "img/fv008.png",
   "start": 78.04,
@@ -1432,6 +1452,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 8,
   "hero": false
+ },
+ {
+  "name": "bed009",
+  "src": "img/fv008.png",
+  "start": 87.5,
+  "cov": 6.96,
+  "dur": 6.96,
+  "i": 9,
+  "bed": true,
+  "from": 8
  },
  {
   "name": "ph010",
@@ -1542,6 +1572,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed022",
+  "src": "img/fv021.png",
+  "start": 234.9,
+  "cov": 12.04,
+  "dur": 12.04,
+  "i": 22,
+  "bed": true,
+  "from": 21
+ },
+ {
   "name": "ph023",
   "src": "img/fv023.png",
   "start": 250.88,
@@ -1549,6 +1589,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 23,
   "hero": false
+ },
+ {
+  "name": "bed024",
+  "src": "img/fv023.png",
+  "start": 256.7,
+  "cov": 8.24,
+  "dur": 8.24,
+  "i": 24,
+  "bed": true,
+  "from": 23
  },
  {
   "name": "ph025",
@@ -1578,6 +1628,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed028",
+  "src": "img/fv027.png",
+  "start": 295.48,
+  "cov": 13.26,
+  "dur": 13.26,
+  "i": 28,
+  "bed": true,
+  "from": 27
+ },
+ {
   "name": "ph029",
   "src": "img/fv029.png",
   "start": 312.68,
@@ -1585,6 +1645,26 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 29,
   "hero": false
+ },
+ {
+  "name": "bed030",
+  "src": "img/fv029.png",
+  "start": 321.32,
+  "cov": 11.28,
+  "dur": 11.28,
+  "i": 30,
+  "bed": true,
+  "from": 29
+ },
+ {
+  "name": "bed031",
+  "src": "img/fv032.png",
+  "start": 332.6,
+  "cov": 10.02,
+  "dur": 10.02,
+  "i": 31,
+  "bed": true,
+  "from": 32
  },
  {
   "name": "ph032",
@@ -1605,6 +1685,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed034",
+  "src": "img/fv033.png",
+  "start": 368.16,
+  "cov": 13.44,
+  "dur": 13.44,
+  "i": 34,
+  "bed": true,
+  "from": 33
+ },
+ {
   "name": "ph035",
   "src": "img/fvhero035.png",
   "start": 381.6,
@@ -1617,10 +1707,30 @@ export const FCSVARICES_PHOTOS: any[] = [
   "name": "ph036",
   "src": "img/fv036.png",
   "start": 397.14,
-  "cov": 3.6,
-  "dur": 3.6,
+  "cov": 4.06,
+  "dur": 4.06,
   "i": 36,
   "hero": false
+ },
+ {
+  "name": "bed037",
+  "src": "img/fv036.png",
+  "start": 401.02,
+  "cov": 8.26,
+  "dur": 8.26,
+  "i": 37,
+  "bed": true,
+  "from": 36
+ },
+ {
+  "name": "bed038",
+  "src": "img/fv039.png",
+  "start": 409.28,
+  "cov": 12.26,
+  "dur": 12.26,
+  "i": 38,
+  "bed": true,
+  "from": 39
  },
  {
   "name": "ph039",
@@ -1659,6 +1769,26 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed043",
+  "src": "img/fv042.png",
+  "start": 470.06,
+  "cov": 14.42,
+  "dur": 14.42,
+  "i": 43,
+  "bed": true,
+  "from": 42
+ },
+ {
+  "name": "bed044",
+  "src": "img/fv045.png",
+  "start": 484.48,
+  "cov": 9.1,
+  "dur": 9.1,
+  "i": 44,
+  "bed": true,
+  "from": 45
+ },
+ {
   "name": "ph045",
   "src": "img/fv045.png",
   "start": 497.52,
@@ -1675,6 +1805,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 46,
   "hero": false
+ },
+ {
+  "name": "bed047",
+  "src": "img/fv046.png",
+  "start": 519.52,
+  "cov": 14.76,
+  "dur": 14.76,
+  "i": 47,
+  "bed": true,
+  "from": 46
  },
  {
   "name": "ph048",
@@ -1695,6 +1835,26 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed050",
+  "src": "img/fv049.png",
+  "start": 558.52,
+  "cov": 11.06,
+  "dur": 11.06,
+  "i": 50,
+  "bed": true,
+  "from": 49
+ },
+ {
+  "name": "bed051",
+  "src": "img/fv052.png",
+  "start": 569.58,
+  "cov": 9.18,
+  "dur": 9.18,
+  "i": 51,
+  "bed": true,
+  "from": 52
+ },
+ {
   "name": "ph052",
   "src": "img/fv052.png",
   "start": 582.7,
@@ -1713,6 +1873,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": true
  },
  {
+  "name": "bed054",
+  "src": "img/fv055.png",
+  "start": 600.42,
+  "cov": 5.4,
+  "dur": 5.4,
+  "i": 54,
+  "bed": true,
+  "from": 55
+ },
+ {
   "name": "ph055",
   "src": "img/fv055.png",
   "start": 609.76,
@@ -1722,6 +1892,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed056",
+  "src": "img/fv055.png",
+  "start": 618.06,
+  "cov": 5.64,
+  "dur": 5.64,
+  "i": 56,
+  "bed": true,
+  "from": 55
+ },
+ {
   "name": "ph057",
   "src": "img/fv057.png",
   "start": 627.64,
@@ -1729,6 +1909,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 57,
   "hero": false
+ },
+ {
+  "name": "bed058",
+  "src": "img/fv057.png",
+  "start": 636.96,
+  "cov": 11.48,
+  "dur": 11.48,
+  "i": 58,
+  "bed": true,
+  "from": 57
  },
  {
   "name": "ph059",
@@ -1747,6 +1937,26 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 60,
   "hero": false
+ },
+ {
+  "name": "bed061",
+  "src": "img/fv060.png",
+  "start": 673.62,
+  "cov": 13.23,
+  "dur": 13.23,
+  "i": 61,
+  "bed": true,
+  "from": 60
+ },
+ {
+  "name": "bed062",
+  "src": "img/fv063.png",
+  "start": 686.85,
+  "cov": 13.23,
+  "dur": 13.23,
+  "i": 62,
+  "bed": true,
+  "from": 63
  },
  {
   "name": "ph063",
@@ -1794,6 +2004,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed068",
+  "src": "img/fv067.png",
+  "start": 757.9,
+  "cov": 11.5,
+  "dur": 11.5,
+  "i": 68,
+  "bed": true,
+  "from": 67
+ },
+ {
   "name": "ph069",
   "src": "img/fv069.png",
   "start": 773.34,
@@ -1801,6 +2021,36 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 69,
   "hero": false
+ },
+ {
+  "name": "bed070",
+  "src": "img/fv069.png",
+  "start": 781.06,
+  "cov": 9.68,
+  "dur": 9.68,
+  "i": 70,
+  "bed": true,
+  "from": 69
+ },
+ {
+  "name": "bed071",
+  "src": "img/fv069.png",
+  "start": 790.74,
+  "cov": 11.02,
+  "dur": 11.02,
+  "i": 71,
+  "bed": true,
+  "from": 69
+ },
+ {
+  "name": "bed072",
+  "src": "img/fv073.png",
+  "start": 801.76,
+  "cov": 11.02,
+  "dur": 11.02,
+  "i": 72,
+  "bed": true,
+  "from": 73
  },
  {
   "name": "ph073",
@@ -1837,6 +2087,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 76,
   "hero": false
+ },
+ {
+  "name": "bed077",
+  "src": "img/fv076.png",
+  "start": 861.24,
+  "cov": 10.4,
+  "dur": 10.4,
+  "i": 77,
+  "bed": true,
+  "from": 76
  },
  {
   "name": "ph078",
@@ -1884,6 +2144,26 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed083",
+  "src": "img/fv082.png",
+  "start": 925.16,
+  "cov": 6.44,
+  "dur": 6.44,
+  "i": 83,
+  "bed": true,
+  "from": 82
+ },
+ {
+  "name": "bed084",
+  "src": "img/fv085.png",
+  "start": 931.6,
+  "cov": 10.92,
+  "dur": 10.92,
+  "i": 84,
+  "bed": true,
+  "from": 85
+ },
+ {
   "name": "ph085",
   "src": "img/fv085.png",
   "start": 946.46,
@@ -1911,6 +2191,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed088",
+  "src": "img/fv087.png",
+  "start": 975.7,
+  "cov": 12.18,
+  "dur": 12.18,
+  "i": 88,
+  "bed": true,
+  "from": 87
+ },
+ {
   "name": "ph089",
   "src": "img/fv089.png",
   "start": 991.82,
@@ -1927,6 +2217,36 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 90,
   "hero": false
+ },
+ {
+  "name": "bed091",
+  "src": "img/fv090.png",
+  "start": 1010.34,
+  "cov": 10.32,
+  "dur": 10.32,
+  "i": 91,
+  "bed": true,
+  "from": 90
+ },
+ {
+  "name": "bed092",
+  "src": "img/fv090.png",
+  "start": 1020.66,
+  "cov": 11.28,
+  "dur": 11.28,
+  "i": 92,
+  "bed": true,
+  "from": 90
+ },
+ {
+  "name": "bed093",
+  "src": "img/fv094.png",
+  "start": 1031.94,
+  "cov": 11.36,
+  "dur": 11.36,
+  "i": 93,
+  "bed": true,
+  "from": 94
  },
  {
   "name": "ph094",
@@ -1947,6 +2267,26 @@ export const FCSVARICES_PHOTOS: any[] = [
   "hero": false
  },
  {
+  "name": "bed096",
+  "src": "img/fv095.png",
+  "start": 1068.26,
+  "cov": 13.48,
+  "dur": 13.48,
+  "i": 96,
+  "bed": true,
+  "from": 95
+ },
+ {
+  "name": "bed097",
+  "src": "img/fv098.png",
+  "start": 1081.74,
+  "cov": 12.18,
+  "dur": 12.18,
+  "i": 97,
+  "bed": true,
+  "from": 98
+ },
+ {
   "name": "ph098",
   "src": "img/fv098.png",
   "start": 1097.86,
@@ -1963,6 +2303,36 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 2.98,
   "i": 99,
   "hero": false
+ },
+ {
+  "name": "bed100",
+  "src": "img/fv099.png",
+  "start": 1111.24,
+  "cov": 9.35,
+  "dur": 9.35,
+  "i": 100,
+  "bed": true,
+  "from": 99
+ },
+ {
+  "name": "bed101",
+  "src": "img/fv099.png",
+  "start": 1120.59,
+  "cov": 9.35,
+  "dur": 9.35,
+  "i": 101,
+  "bed": true,
+  "from": 99
+ },
+ {
+  "name": "bed102",
+  "src": "img/fv103.png",
+  "start": 1129.95,
+  "cov": 9.35,
+  "dur": 9.35,
+  "i": 102,
+  "bed": true,
+  "from": 103
  },
  {
   "name": "ph103",
@@ -1999,6 +2369,16 @@ export const FCSVARICES_PHOTOS: any[] = [
   "dur": 3.6,
   "i": 106,
   "hero": false
+ },
+ {
+  "name": "bed107",
+  "src": "img/fv106.png",
+  "start": 1173.44,
+  "cov": 11.5,
+  "dur": 11.5,
+  "i": 107,
+  "bed": true,
+  "from": 106
  },
  {
   "name": "ph108",
@@ -4062,7 +4442,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg028.png",
     "eyebrow": "UNA PUERTA QUE YA NO CIERRA"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c030",
@@ -4125,7 +4506,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg034.png",
     "eyebrow": "EL LÍQUIDO QUE SE QUEDA EN EL TEJIDO"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c037",
@@ -4134,7 +4516,7 @@ export const FCSVARICES_BEATS: any[] = [
   "kind": "lowerthird",
   "kicker": "LO QUE MÁS IMPORTA",
   "title": "Esto FRENA el avance",
-  "desc": "El objetivo no es la que ya tienes: son las tres que vienen atrás",
+  "desc": "El objetivo son las tres que vienen atrás",
   "tone": "good"
  },
  {
@@ -4194,7 +4576,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg043.png",
     "eyebrow": "EL CORAZÓN EMPUJA, NO JALA"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c044",
@@ -4229,7 +4612,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg047.png",
     "eyebrow": "ESCALÓN POR ESCALÓN HASTA LA INGLE"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c048",
@@ -4269,7 +4653,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg050.png",
     "eyebrow": "EL ESCALÓN DE ABAJO SE SOBRECARGA"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c051",
@@ -4282,7 +4667,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg051.png",
     "eyebrow": "LA VENA SE ESTIRA COMO UNA LIGA VIEJA"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c052",
@@ -4356,7 +4742,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg058.png",
     "eyebrow": "UNA COLUMNA DE SANGRE DE UN METRO Y PICO"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c059",
@@ -4459,7 +4846,7 @@ export const FCSVARICES_BEATS: any[] = [
   "dur": 11.66,
   "kind": "lowerthird",
   "kicker": "CÓMO FUNCIONA",
-  "title": "Como apretar una bolsa de agua",
+  "title": "Cómo apretar una bolsa de agua",
   "tone": "good"
  },
  {
@@ -4473,7 +4860,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg070.png",
     "eyebrow": "EL MÚSCULO ESTRUJA, LA VÁLVULA DEJA SUBIR"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c071",
@@ -4624,7 +5012,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg084.png",
     "eyebrow": "LA PARED FINÍSIMA DEJA SALIR LÍQUIDO"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c085",
@@ -4655,7 +5044,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg088.png",
     "eyebrow": "EL AGUA VUELVE A LA SANGRE Y VA AL RIÑÓN"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c090",
@@ -4744,7 +5134,7 @@ export const FCSVARICES_BEATS: any[] = [
   "kind": "lowerthird",
   "kicker": "POR ESO ES NOCTURNO",
   "title": "La ventana se abre cuando te acuestas",
-  "desc": "Es el único momento del día en que las venas no pelean con la gravedad",
+  "desc": "El único rato en que las venas no pelean con la gravedad",
   "tone": "good"
  },
  {
@@ -4890,7 +5280,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg112.png",
     "eyebrow": "UN RECEPTOR EN LA TERMINACIÓN DEL NERVIO"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c113",
@@ -4913,7 +5304,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg114.png",
     "eyebrow": "LOS VASITOS DE LA ZONA SE ABREN"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c116",
@@ -4952,7 +5344,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg118.png",
     "eyebrow": "LA PRESIÓN ALTA INFLAMA LA PARED"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c120",
@@ -5159,7 +5552,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg138.png",
     "eyebrow": "MÁS RIEGO EN LOS VASITOS DE LA PIEL"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c140",
@@ -5373,7 +5767,7 @@ export const FCSVARICES_BEATS: any[] = [
   "kind": "lowerthird",
   "kicker": "POR QUÉ IMPORTA TANTO",
   "title": "Esa piel ya está frágil",
-  "desc": "La pierna con problema venoso se lastima más fácil que cualquiera",
+  "desc": "Se lastima más fácil que cualquier otra piel",
   "tone": "alert"
  },
  {
@@ -5505,7 +5899,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg195.png",
     "eyebrow": "EL MÚSCULO ESTRUJA Y LA SANGRE SUBE"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c197",
@@ -5588,7 +5983,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg204.png",
     "eyebrow": "LA VÁLVULA ABRE PARA UN SOLO LADO"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c206",
@@ -5616,7 +6012,7 @@ export const FCSVARICES_BEATS: any[] = [
   "kind": "lowerthird",
   "kicker": "PASO 5 · LA PRESIÓN",
   "title": "Como acariciar a un gato",
-  "desc": "Y encima del cordón de la várice, sin presionar",
+  "desc": "Nunca sobre el cordón de la várice",
   "tone": "alert"
  },
  {
@@ -5664,7 +6060,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg214.png",
     "eyebrow": "EL LÍQUIDO DEL TEJIDO, NO LA SANGRE DE LA VÁRICE"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c215",
@@ -5794,7 +6191,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg228.png",
     "eyebrow": "UN COÁGULO EN UNA VENA PROFUNDA"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c229",
@@ -5803,7 +6201,7 @@ export const FCSVARICES_BEATS: any[] = [
   "kind": "lowerthird",
   "kicker": "EL PELIGRO",
   "title": "El coágulo se puede desprender",
-  "desc": "Viaja por la sangre y llega al pulmón",
+  "desc": "Viaja por la sangre hasta el pulmón",
   "tone": "bad"
  },
  {
@@ -5917,7 +6315,8 @@ export const FCSVARICES_BEATS: any[] = [
     "image": "img/fvdg244.png",
     "eyebrow": "EL CALOR DILATA LA VENA Y LA SANGRE SE ESTANCA"
    }
-  ]
+  ],
+  "tag": "Lámina de la guía"
  },
  {
   "id": "c245",
@@ -6081,7 +6480,7 @@ export const FCSVARICES_BEATS: any[] = [
   "kind": "lowerthird",
   "kicker": "SEMANAS 4 A 8",
   "title": "El aguante",
-  "desc": "Lo notas cuando haces algo que antes te costaba y no te acuerdas de haberte cansado",
+  "desc": "Un día haces algo que antes te costaba y ni te acuerdas",
   "tone": "good"
  },
  {
@@ -6498,14 +6897,6 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "hidden"
  },
  {
-  "start": 66.52,
-  "mode": "full"
- },
- {
-  "start": 74.1,
-  "mode": "hidden"
- },
- {
   "start": 81.64,
   "mode": "full"
  },
@@ -6606,7 +6997,7 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "full"
  },
  {
-  "start": 246.94,
+  "start": 234.9,
   "mode": "hidden"
  },
  {
@@ -6614,7 +7005,7 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "full"
  },
  {
-  "start": 264.94,
+  "start": 256.7,
   "mode": "hidden"
  },
  {
@@ -6650,14 +7041,6 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "hidden"
  },
  {
-  "start": 336.54,
-  "mode": "full"
- },
- {
-  "start": 342.62,
-  "mode": "hidden"
- },
- {
   "start": 350.16,
   "mode": "full"
  },
@@ -6679,14 +7062,6 @@ export const AVATAR_WINDOWS: any[] = [
  },
  {
   "start": 393.2,
-  "mode": "hidden"
- },
- {
-  "start": 400.74,
-  "mode": "full"
- },
- {
-  "start": 409.28,
   "mode": "hidden"
  },
  {
@@ -6802,14 +7177,6 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "hidden"
  },
  {
-  "start": 686.85,
-  "mode": "full"
- },
- {
-  "start": 700.08,
-  "mode": "hidden"
- },
- {
   "start": 707.62,
   "mode": "full"
  },
@@ -6846,7 +7213,7 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "full"
  },
  {
-  "start": 769.4,
+  "start": 757.9,
   "mode": "hidden"
  },
  {
@@ -6966,7 +7333,7 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "full"
  },
  {
-  "start": 1020.66,
+  "start": 1010.34,
   "mode": "hidden"
  },
  {
@@ -6982,7 +7349,7 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "full"
  },
  {
-  "start": 1093.92,
+  "start": 1068.26,
   "mode": "hidden"
  },
  {
