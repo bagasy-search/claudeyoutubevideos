@@ -42,7 +42,7 @@ const DUR = 560;
 
 const CLAMP = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const easeOut = Easing.out(Easing.cubic);
-const easeQuint = Easing.out(Easing.quint);
+const easeQuint = Easing.out(Easing.poly(5));
 const easeIO = Easing.inOut(Easing.quad);
 const easeIOc = Easing.inOut(Easing.cubic);
 const easeIn = Easing.in(Easing.quad);
