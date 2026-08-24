@@ -193,7 +193,8 @@ export const MainFcsmusculo: React.FC = () => {
 
       {/* ENDCARD */}
       <Sequence from={sec(CTA_AT)} durationInFrames={sec(Math.max(2, VEND - CTA_AT))} layout="none">
-        <Endcard durationInFrames={sec(Math.max(2, VEND - CTA_AT))} />
+        <Endcard durationInFrames={sec(Math.max(2, VEND - CTA_AT))}
+          subtitle="Cada semana, salud real y sencilla para después de los 60" />
       </Sequence>
     </AbsoluteFill>
   );
