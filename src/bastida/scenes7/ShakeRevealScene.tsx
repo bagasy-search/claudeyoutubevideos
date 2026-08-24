@@ -768,7 +768,7 @@ const Body: React.FC<Required<ShakeRevealSceneProps>> = ({
               style={{
                 position: 'absolute',
                 left: 300,
-                top: 846,
+                top: 742,
                 width: 1320,
                 height: 196,
                 opacity: cardP,

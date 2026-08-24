@@ -403,21 +403,38 @@ const Body: React.FC<Required<FilterMechanismSceneProps>> = ({
               sweep={sweepPos - 0.5}
             />
           </div>
+          {/* rótulo ARRIBA del segundo riñón: zona libre (el hero arranca en y≈248, el título termina en x≈1176) */}
           <div
             style={{
               position: 'absolute',
-              left: K2_X + 12,
-              top: K2_Y + K2_H + 14,
-              fontFamily: FONT_SANS,
-              fontSize: 34,
-              fontWeight: 700,
-              letterSpacing: 3,
-              color: rgba(BAS.onDark, 0.72),
+              left: K2_X + 6,
+              top: K2_Y - 66,
               opacity: kid2In,
-              textShadow: `0 3px 14px ${rgba('#000000', 0.8)}`,
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
             }}
           >
-            y el otro
+            <span
+              style={{
+                fontFamily: FONT_SANS,
+                fontSize: 34,
+                fontWeight: 700,
+                letterSpacing: 3,
+                color: rgba(BAS.onDark, 0.82),
+                textShadow: `0 3px 16px ${rgba('#000000', 0.9)}`,
+                whiteSpace: 'nowrap',
+              }}
+            >
+              y el otro
+            </span>
+            <span
+              style={{
+                width: 46,
+                height: 2,
+                background: `linear-gradient(90deg, ${rgba(BAS.aqua, 0.75)}, transparent)`,
+              }}
+            />
           </div>
         </Plane>
 
@@ -724,12 +741,12 @@ const Body: React.FC<Required<FilterMechanismSceneProps>> = ({
             </div>
           </div>
 
-          {/* rótulo ENTRA SUCIA */}
+          {/* rótulo ENTRA SUCIA — ARRIBA del tubo (abajo ahora vive la cifra) */}
           <div
             style={{
               position: 'absolute',
               left: TUBE_X - 10,
-              top: TUBE_Y + TUBE_H + 26,
+              top: 224,
               opacity: flowLblIn,
               fontFamily: FONT_SANS,
               fontSize: 36,
@@ -794,9 +811,9 @@ const Body: React.FC<Required<FilterMechanismSceneProps>> = ({
           <div
             style={{
               position: 'absolute',
-              left: 1006,
-              top: 826,
-              width: 826,
+              left: 1040,
+              bottom: 120,
+              width: 770,
               opacity: ashCardIn,
               transformStyle: 'preserve-3d',
               transform: `translateY(${interpolate(ashCardIn, [0, 1], [46, 0])}px) rotateY(${interpolate(ashCardIn, [0, 1], [-9, 0])}deg)`,
@@ -849,13 +866,13 @@ const Body: React.FC<Required<FilterMechanismSceneProps>> = ({
           </div>
         </Plane>
 
-        {/* ── z +230 · LA CIFRA AL FRENTE ── */}
-        <Plane z={230}>
+        {/* ── z +170 · LA CIFRA AL FRENTE (anclada por ABAJO: la perspectiva la agranda) ── */}
+        <Plane z={170}>
           <div
             style={{
               position: 'absolute',
-              left: 96,
-              top: 782,
+              left: 150,
+              bottom: 120,
               opacity: numIn,
               transform: `translateY(${interpolate(numIn, [0, 1], [40, 0])}px)`,
             }}

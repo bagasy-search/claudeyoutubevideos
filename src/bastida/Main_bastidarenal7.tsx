@@ -58,12 +58,12 @@ const BAD = [
   {img: 'img/ill/bas7_ill_batido.png', name: 'Batido de proteína'},
 ];
 const CH_CLARA = {
-  number: '1', unit: 'CLARA DE HUEVO', subtitle: 'la leña que arde limpia',
+  number: '1', unit: 'CLARA', subtitle: 'de huevo · la leña que arde limpia',
   hero: 'img/ill/bas7_ill_clara.png', heroSide: 'right' as const,
   accent: '#3FA96B', accentDeep: '#1E6B43', ambient: 'rgba(63,169,107,0.14)', flourish: 'droplets' as const,
 };
 const CH_PESCADO = {
-  number: '2', unit: 'PESCADO BLANCO', subtitle: 'menos ceniza ácida · grasas buenas',
+  number: '2', unit: 'PESCADO', subtitle: 'blanco · menos ceniza ácida',
   hero: 'img/ill/bas7_ill_pescado.png', heroSide: 'left' as const,
   accent: '#34C6E0', accentDeep: '#0E7F97', ambient: 'rgba(52,198,224,0.14)', flourish: 'droplets' as const,
 };
@@ -90,6 +90,11 @@ const KeyWord: React.FC<{word: string; sub?: string; color?: string}> = ({word, 
   );
 };
 
+/** Lower — baja y achica una escena overlay para que no le tape la cara al doctor. */
+const Lower: React.FC<{y?: number; k?: number; children: React.ReactNode}> = ({y = 120, k = 0.86, children}) => (
+  <AbsoluteFill style={{transform: `translateY(${y}px) scale(${k})`, transformOrigin: '50% 100%'}}>{children}</AbsoluteFill>
+);
+
 const StatTag: React.FC<{a: string; b: string; note?: string}> = ({a, b, note}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -102,7 +107,7 @@ const StatTag: React.FC<{a: string; b: string; note?: string}> = ({a, b, note}) 
         <div style={{fontFamily: FONT_SANS, fontSize: 66, fontWeight: 800, color: '#EAF2F4'}}>≈</div>
         <div style={{fontFamily: FONT_DISPLAY, fontSize: 96, fontWeight: 800, color: BAS.no, textShadow: `0 0 30px ${rgba(BAS.no, 0.5)}, 0 6px 24px rgba(0,0,0,0.65)`, transform: `scale(${interpolate(bIn, [0, 1], [0.7, 1])})`, opacity: bIn}}>{b}</div>
       </div>
-      {note && <div style={{position: 'absolute', bottom: '32%', fontFamily: FONT_SANS, fontSize: 38, fontWeight: 700, letterSpacing: 2, color: rgba('#EAF2F4', 0.9), opacity: bIn, textShadow: '0 3px 14px rgba(0,0,0,0.7)'}}>{note.toUpperCase()}</div>}
+      {note && <div style={{position: 'absolute', bottom: '30%', background: rgba('#04121A', 0.82), borderRadius: 999, padding: '10px 28px', border: `1px solid ${rgba(BAS.aqua, 0.35)}`, fontFamily: FONT_SANS, fontSize: 38, fontWeight: 800, letterSpacing: 2, color: '#F4F1E9', opacity: bIn, boxShadow: '0 14px 30px rgba(0,0,0,0.5)'}}>{note.toUpperCase()}</div>}
     </AbsoluteFill>
   );
 };
@@ -157,7 +162,7 @@ const SubscribeCard: React.FC = () => {
 /* ============================ BEATS (anclados al ms) ============================ */
 const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[] = [
   // COLD OPEN — las 6 proteínas bloqueadas; el batido pulsa: ¿cuál es la peor?
-  {from: 0, dur: 1000, dir: 'in', node: <RenalCarousel cards={CARDS} reveals={[]} teaseIndex={5} introDur={40} kicker="Creatinina · Salud renal" title="6 proteínas · ¿cuál es la peor?" />},
+  {from: 0, dur: 900, dir: 'in', node: <RenalCarousel cards={CARDS} reveals={[70, 170, 270, 370, 470]} teaseIndex={5} introDur={40} kicker="Creatinina · Salud renal" title="¿Cuál es la peor?" />},
   // DIÁLISIS → respire
   {from: 2402, dur: 300, dir: 'up', node: <FearToCalm word="DIÁLISIS" calm={['Respire.', 'No estamos ahí.']} breakAt={110} />},
   // la creatinina es CENIZA → la aguja sube
@@ -175,7 +180,7 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
   // REGLA DE ORO 1 — la palma
   {from: 10700, dur: 500, dir: 'right', node: <RuleScene kicker="La regla de oro" question="¿Entra en la palma de mi mano?" answer="LA PALMA, NO EL PLATO" note="Sin los dedos, y del grosor de su dedo meñique." img="img/bas7_broll_palma.jpg" imgSide="left" />},
   // REGLA DE ORO 2 — la heladera
-  {from: 11254, dur: 540, dir: 'left', node: <RuleScene kicker="La segunda pregunta" question="¿Se echaría a perder en tres días?" answer="Si no se pudre, no es comida fresca" note="Es un paquete de fósforo con sabor a jamón." img="img/bas7_broll_etiqueta.jpg" imgSide="right" accent={BAS.no} />},
+  {from: 11254, dur: 540, dir: 'left', node: <RuleScene kicker="La segunda pregunta" question="¿Se echaría a perder en tres días?" answer="Si no se pudre, no es comida fresca" note="Es un paquete de fósforo con sabor a jamón." img="img/bas7_fiambre.jpg" imgSide="right" accent={BAS.no} />},
   // LAS 3 SEGURAS — openers 2.5D
   {from: 12470, dur: 130, dir: 'right', node: <ChapterScene {...CH_CLARA} />},
   // el huevo son DOS alimentos: la clara (limpia) y la yema (el hollín)
@@ -196,7 +201,7 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
     />
   )},
   // EL GIRO — el anillo se abre en SÍ / NO y el batido cae al bando rojo (cierra el loop)
-  {from: 21391, dur: 400, dir: 'in', node: <RenalCarousel cards={CARDS} reveals={[]} verdicts={VERD} splitAt={60} introDur={40} kicker="El veredicto" title="3 que sostienen · 3 que hunden" />},
+  {from: 21391, dur: 400, dir: 'in', node: <RenalCarousel cards={CARDS} reveals={[16, 56, 96, 136, 176, 216]} verdicts={VERD} splitAt={60} introDur={40} kicker="El veredicto" title="3 · 3" />},
   // EL REVEAL DEL BATIDO — la carga de dos bifes de golpe (clímax)
   {from: 21900, dur: 560, dir: 'up', node: <ShakeRevealScene />},
   // LÁMINA B — el botiquín traicionero (27 productos) = puente al método
@@ -221,21 +226,26 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
   {from: 27932, dur: 250, dir: 'in', node: <CreatininaScene from={2.4} to={1.5} caption="Creatinina" subcaption="aflojó en el control siguiente" />},
   /* ---------- COSTURA: acá arranca la cola locutada (avatar en bucle) ---------- */
   // LAS 4 SEÑALES
-  {from: 28509, dur: 1120, dir: 'up', node: <AlertSignalsScene title="¿Sus riñones ya piden ayuda?" signals={['Orina espumosa que no se va', 'Hinchazón: tobillos, párpados, el anillo', 'Cansancio que no se arregla durmiendo', 'Picazón en la piel, sobre todo de noche']} footer="Si reconoce 2 o más, pídale a su médico un análisis" />},
+  {from: 28509, dur: 700, dir: 'up', node: <AlertSignalsScene title="¿Sus riñones ya piden ayuda?" signals={['Orina espumosa que no se va', 'Hinchazón: tobillos, párpados, el anillo', 'Cansancio que no se arregla durmiendo', 'Picazón en la piel, sobre todo de noche']} footer="Si reconoce 2 o más, pídale a su médico un análisis" />},
   // QUÉ HAY ADENTRO DE LA GUÍA
-  {from: 31983, dur: 1660, dir: 'in', node: <MethodStackScene />},
+  {from: 31983, dur: 1660, dir: 'in', node: <MethodStackScene rows={[
+    {img: 'bas7_lamina_c.jpg', title: 'El semáforo renal', sub: 'casi 300 alimentos, de la A a la Z', stat: '300', statLabel: 'alimentos con su porción'},
+    {img: 'bas6_p_calendario_pared.jpg', title: '90 días para bajar la creatinina', sub: 'día por día, hasta su próximo análisis', stat: '90', statLabel: 'días'},
+    {img: 'bas7_lamina_b.jpg', title: 'El botiquín traicionero', sub: 'pastillas, hierbas y suplementos', stat: '27', statLabel: 'revisados uno por uno'},
+    {img: 'bas7_broll_analisis.jpg', title: 'Su análisis traducido', sub: 'qué le dice cada sigla del papel'},
+  ]} />},
   // CTA — el QR y cómo escanearlo
-  {from: 33900, dur: 1290, dir: 'up', node: <QrCtaScene qr="renal/bas_qr_bastida.png" kicker="Dr. Bastida · Salud renal" title="La guía completa del riñón" steps={['Abra la cámara de su teléfono', 'Apunte al código de la pantalla', 'Toque el aviso que aparece arriba']} note="También en la descripción, es el primer enlace" />},
+  {from: 33900, dur: 1290, dir: 'up', node: <Lower y={130} k={0.86}><QrCtaScene qr="renal/bas_qr_bastida.png" kicker="Dr. Bastida · Salud renal" title="La guía completa del riñón" steps={['Abra la cámara de su teléfono', 'Apunte al código de la pantalla', 'Toque el aviso que aparece arriba']} note="También en la descripción, es el primer enlace" /></Lower>},
   // TESTIMONIAL Norma
   {from: 35639, dur: 900, dir: 'left', node: <TestimonialScene img="img/bas7_norma_kitchen.jpg" name="Norma" place="Puebla" quote={'“Siete días midiendo con la palma y cambiando el fiambre de la noche… dormía mejor y se me bajó la hinchazón.”'} tag="El reto de la palma" />},
   // RECAP SÍ / NO
   {from: 36608, dur: 640, dir: 'up', node: <FoodVerdictScene title="Proteínas para su riñón: SÍ / NO" good={GOOD} bad={BAD} />},
   // reprise del QR sobre el cierre
-  {from: 37596, dur: 300, dir: 'in', node: <QrCtaScene qr="renal/bas_qr_bastida.png" kicker="El mapa entero" title="El semáforo de todos los alimentos" steps={['Cámara del teléfono', 'Apunte al código', 'Toque el aviso']} note="O el enlace de aquí abajo" />},
+  {from: 37596, dur: 300, dir: 'in', node: <Lower y={130} k={0.86}><QrCtaScene qr="renal/bas_qr_bastida.png" kicker="El mapa entero" title="El semáforo de todos los alimentos" steps={['Cámara del teléfono', 'Apunte al código', 'Toque el aviso']} note="O el enlace de aquí abajo" /></Lower>},
 ];
 
 const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: number}[] = [
-  {from: 1080, dur: 150, img: 'bas6_p_pote_tele.jpg', caption: 'La que toma todos los días'},
+  {from: 1080, dur: 150, img: 'bas6_p_farmacia_estante.jpg', caption: 'La que toma todos los días'},
   {from: 1445, dur: 150, img: 'bas6_p_dietetica_estante.jpg', caption: 'El pote a precio de oro'},
   {from: 2000, dur: 150, img: 'bas6_p_paciente_asustado.jpg', caption: 'Un número en un papel'},
   {from: 2760, dur: 150, img: 'bas6_p_respirar_ventana.jpg', caption: 'Respire'},
@@ -250,34 +260,39 @@ const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: num
   {from: 8700, dur: 160, img: 'bas6_p_cansancio_cama.jpg', caption: 'Más flaco, más débil'},
   {from: 9078, dur: 70, img: 'bas6_p_bife_plato.jpg', caption: 'El plato de anoche'},
   {from: 9700, dur: 170, img: 'bas6_broll_lab.jpg', caption: 'Y el número de hoy'},
+  {from: 9900, dur: 150, img: 'bas6_p_lab_lupa.jpg', caption: 'Un número que no miente… si lo miden bien'},
   {from: 10255, dur: 160, img: 'bas7_broll_platon.jpg', caption: 'El plato del restaurante'},
+  {from: 10430, dur: 150, img: 'bas7_carne.jpg', caption: 'Su porción, no la del vecino'},
   {from: 11850, dur: 160, img: 'bas6_p_frasco_heladera.jpg', caption: '¿Cuánto le dura?'},
   {from: 12100, dur: 150, img: 'bas7_fiambre.jpg', caption: 'Tres meses en la góndola'},
   {from: 12616, dur: 160, img: 'bas7_clara.jpg', caption: 'La leña que arde limpia'},
   {from: 13400, dur: 160, img: 'bas6_p_desayuno_manana.jpg', caption: 'Dos o tres claras revueltas'},
   {from: 14250, dur: 170, img: 'bas7_pescado.jpg', caption: 'Merluza, lenguado, pescadilla'},
   {from: 14600, dur: 160, img: 'bas6_broll_kidney.jpg', caption: 'Un ovillo de arterias chiquitas'},
-  {from: 15032, dur: 170, img: 'bas6_p_gondola_confundida.jpg', caption: 'Ni rebozado ni en bastoncitos'},
+  {from: 15032, dur: 170, img: 'bas7_pescado.jpg', caption: 'Ni rebozado ni en bastoncitos'},
   {from: 15300, dur: 150, img: 'bas7_pescado.jpg', caption: 'Del tamaño de su palma'},
   {from: 16000, dur: 170, img: 'bas7_lentejas.jpg', caption: 'El guiso de siempre'},
   {from: 16400, dur: 150, img: 'bas6_p_almacen_barrio.jpg', caption: 'La más barata de las tres'},
   {from: 16684, dur: 170, img: 'bas7_broll_remojo.jpg', caption: 'Ocho horas en remojo'},
   {from: 17000, dur: 160, img: 'bas6_p_colador_agua.jpg', caption: 'Y esa agua se tira'},
   {from: 18422, dur: 180, img: 'bas7_fiambre.jpg'},
-  {from: 19308, dur: 170, img: 'bas7_broll_etiqueta.jpg', caption: 'Si dura tres meses…'},
+  {from: 19308, dur: 170, img: 'bas7_fiambre.jpg', caption: 'Si dura tres meses…'},
   {from: 19628, dur: 180, img: 'bas7_carne.jpg'},
   {from: 20000, dur: 160, img: 'bas6_p_bife_plato.jpg', caption: 'Carne al mediodía y a la noche'},
   {from: 20473, dur: 170, img: 'bas7_carne.jpg', caption: 'Cuanto más cocida, más ceniza'},
   {from: 21098, dur: 180, img: 'bas7_broll_caldo.jpg', caption: 'El caldo… tírelo'},
-  {from: 22700, dur: 160, img: 'bas6_p_dietetica_bolsita.jpg', caption: 'La etiqueta linda'},
+  {from: 22700, dur: 160, img: 'bas7_batido.jpg', caption: 'La etiqueta linda'},
   {from: 23200, dur: 160, img: 'bas6_p_farmacia_estante.jpg', caption: 'Lo que se vende suelto'},
   {from: 26150, dur: 160, img: 'bas6_p_semaforo_calle.jpg', caption: 'Verde, amarillo, rojo'},
   {from: 26581, dur: 180, img: 'bas7_anibal_consultorio.jpg', caption: 'Don Aníbal, 71'},
   {from: 27000, dur: 160, img: 'bas7_batido.jpg', caption: 'Un batido cada mañana'},
   {from: 27250, dur: 150, img: 'bas7_fiambre.jpg', caption: 'Y el sánguche de la noche'},
   {from: 27530, dur: 180, img: 'bas7_anibal_desayuno.jpg', caption: 'Dos claras y una tostada'},
-  {from: 28230, dur: 300, img: 'bas6_p_desayuno_final.jpg', caption: 'Cambió el desayuno y la cena'},
+  {from: 28230, dur: 300, img: 'bas7_anibal_desayuno.jpg', caption: 'Cambió el desayuno y la cena'},
   /* ---- cola ---- */
+  {from: 29215, dur: 165, img: 'bas6_broll_tobillos.jpg', caption: 'Hinchazón en los tobillos'},
+  {from: 29385, dur: 160, img: 'bas6_p_cansancio_cama.jpg', caption: 'Un cansancio que no se va'},
+  {from: 29550, dur: 145, img: 'bas6_broll_picazon.jpg', caption: 'Picazón de noche'},
   {from: 29700, dur: 170, img: 'bas6_broll_lab.jpg', caption: 'Un análisis simple'},
   {from: 30008, dur: 170, img: 'bas6_p_consulta_medico.jpg', caption: 'Yo no le miento nunca'},
   {from: 30400, dur: 160, img: 'bas6_p_nefrologo_control.jpg', caption: 'Su médico ajusta sus números'},
@@ -286,7 +301,7 @@ const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: num
   {from: 31500, dur: 170, img: 'bas7_lamina_d.jpg', caption: 'Páginas de la guía'},
   {from: 35250, dur: 160, img: 'bas6_p_nieto_ayuda.jpg', caption: 'Pídale a un hijo o a un nieto'},
   {from: 37300, dur: 170, img: 'bas6_p_cocina_manana.jpg', caption: 'Esta noche, en la cena'},
-  {from: 37950, dur: 180, img: 'bas6_broll_kidney.jpg', caption: 'El riñón agradece en silencio'},
+  {from: 37860, dur: 140, img: 'bas6_broll_kidney.jpg', caption: 'El riñón agradece en silencio'},
 ];
 
 const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
@@ -296,10 +311,7 @@ const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
   {from: 8814, dur: 210, node: <KeyWord word="EL APELLIDO" sub="no la cantidad de proteína" />},
   {from: 9822, dur: 210, node: <KeyWord word="CENA LIVIANA" sub="la noche antes del análisis" />},
   {from: 11896, dur: 210, node: <KeyWord word="SI NO SE PUDRE" sub="no es comida fresca" color={BAS.no} />},
-  {from: 12487, dur: 150, node: <SideIllustration img="img/ill/bas7_ill_clara.png" side="right" caption="Proteína de primera" dur={150} size={380} />},
   {from: 13892, dur: 220, node: <KeyWord word="MUCHAS CLARAS" sub="poca yema" color={BAS.si} />},
-  {from: 14125, dur: 150, node: <SideIllustration img="img/ill/bas7_ill_pescado.png" side="left" caption="Magro y liviano" dur={150} size={380} />},
-  {from: 15665, dur: 150, node: <SideIllustration img="img/ill/bas7_ill_lentejas.png" side="right" caption="La más humilde" dur={150} size={360} />},
   {from: 16840, dur: 200, node: <KeyWord word="TIRE ESA AGUA" sub="y hierva en agua limpia" color={BAS.si} />},
   {from: 18248, dur: 160, node: <KeyWord word="LAS 3 QUE CARGAN" sub="el filtro, sin que usted se entere" color={BAS.no} />},
   {from: 18422, dur: 200, node: <TraidoraTag name="Fiambre" reason="Sal + fósforo AÑADIDO" />},

@@ -66,12 +66,15 @@ export const AshFurnaceScene: React.FC<AshFurnaceSceneProps> = ({
   const t = frame / fps;
 
   /* ============ ACTOS ============ */
-  // (1) ambiente 0–40
-  const ambP = interpolate(frame, [0, 38], [0, 1], {...CL, easing: easeOut});
-  const wallP = interpolate(frame, [0, 26], [0, 1], {...CL, easing: easeIO});
-  // (2) el hogar limpio se presenta 22–78
-  const leftP = interpolate(frame, [22, 66], [0, 1], {...CL, easing: easeOut});
-  const emberP = interpolate(frame, [34, 78], [0, 1], CL);
+  // (1) ambiente 0–15: RAMPA CORTA (0,5 s). Nunca fundido desde negro: a los 15f ya hay materia
+  // en pantalla (pilar + pileta de luz de fuego + el hogar limpio entrando).
+  const ambP = interpolate(frame, [0, 14], [0.5, 1], {...CL, easing: easeOut});
+  const wallP = interpolate(frame, [0, 10], [0.55, 1], {...CL, easing: easeIO});
+  // (2) el hogar limpio ENTRA EN CORTE (ya visible al 58% en el frame 0) y termina de asentarse
+  // en 10f; el deslizamiento lateral sigue su propia rampa un poco más larga.
+  const leftFade = interpolate(frame, [0, 10], [0.58, 1], {...CL, easing: easeOut});
+  const leftP = interpolate(frame, [0, 26], [0, 1], {...CL, easing: easeOut});
+  const emberP = interpolate(frame, [8, 40], [0, 1], CL);
   // (3) el hogar sucio IRRUMPE 84–128 (+ golpe de cámara)
   const rightP = spring({frame: Math.max(0, frame - 84), fps, config: {damping: 12, mass: 0.95, stiffness: 132}});
   const hit = interpolate(frame, [92, 100, 128], [0, 1, 0], {...CL, easing: easeOut});
@@ -106,7 +109,7 @@ export const AshFurnaceScene: React.FC<AshFurnaceSceneProps> = ({
   /* ============ LUZ ============ */
   // fuego: parpadeo determinístico (3 senos batiendo)
   const flick = 0.78 + 0.22 * (Math.sin(t * 7.7) * 0.5 + Math.sin(t * 12.9) * 0.3 + Math.sin(t * 3.3) * 0.2);
-  const fire = flick * leftP;
+  const fire = flick * leftFade;
   const cold = (0.86 + 0.14 * Math.sin(t * 1.05)) * Math.min(1, rightP);
   const sweep = ((frame % 150) / 150) * 150 - 25; // barrido especular del vidrio
 
@@ -474,12 +477,12 @@ export const AshFurnaceScene: React.FC<AshFurnaceSceneProps> = ({
         <Layer
           z={10}
           style={{
-            opacity: leftP,
-            transform: `translateZ(10px) scale(${1 - 10 / PERSP}) translateX(${interpolate(leftP, [0, 1], [-86, 0])}px)`,
+            opacity: leftFade,
+            transform: `translateZ(10px) scale(${1 - 10 / PERSP}) translateX(${interpolate(leftP, [0, 1], [-64, 0])}px)`,
           }}
         >
-          <Hearth x={LX} src={leftImg} accent={BAS.si} warmSide reveal={leftP} kb={interpolate(frame, [0, 430], [1.07, 1.015], CL)} />
-          <AshTray x={LX} fill={lFill} tone={BAS.si} grey={false} op={leftP} />
+          <Hearth x={LX} src={leftImg} accent={BAS.si} warmSide reveal={leftFade} kb={interpolate(frame, [0, 430], [1.07, 1.015], CL)} />
+          <AshTray x={LX} fill={lFill} tone={BAS.si} grey={false} op={leftFade} />
         </Layer>
 
         {/* chispas doradas del lado limpio (pocas, nobles) */}
