@@ -145,6 +145,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 63
  },
  {
+  "name": "fd064",
+  "src": "broll/fcsdeterioro/fd064.mp4",
+  "start": 522.44,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 64
+ },
+ {
   "name": "fd067",
   "src": "broll/fcsdeterioro/fd067.mp4",
   "start": 544.64,
@@ -217,6 +225,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 90
  },
  {
+  "name": "fd093",
+  "src": "broll/fcsdeterioro/fd093.mp4",
+  "start": 756.38,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 93
+ },
+ {
   "name": "fd095",
   "src": "broll/fcsdeterioro/fd095.mp4",
   "start": 777.75,
@@ -255,6 +271,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "cov": 3.94,
   "dur": 3.94,
   "i": 102
+ },
+ {
+  "name": "fd105",
+  "src": "broll/fcsdeterioro/fd105.mp4",
+  "start": 876.49,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 105
  },
  {
   "name": "fd108",
@@ -303,6 +327,22 @@ export const FCSDETERIORO_BROLL: any[] = [
   "cov": 3.94,
   "dur": 3.94,
   "i": 117
+ },
+ {
+  "name": "fd119",
+  "src": "broll/fcsdeterioro/fd119.mp4",
+  "start": 1018.71,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 119
+ },
+ {
+  "name": "fd123",
+  "src": "broll/fcsdeterioro/fd123.mp4",
+  "start": 1051.79,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 123
  },
  {
   "name": "fd125",
@@ -385,6 +425,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 147
  },
  {
+  "name": "fd148",
+  "src": "broll/fcsdeterioro/fd148.mp4",
+  "start": 1299.59,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 148
+ },
+ {
   "name": "fd150",
   "src": "broll/fcsdeterioro/fd150.mp4",
   "start": 1319.68,
@@ -415,6 +463,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "cov": 3.94,
   "dur": 3.94,
   "i": 158
+ },
+ {
+  "name": "fd160",
+  "src": "broll/fcsdeterioro/fd160.mp4",
+  "start": 1419.61,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 160
  },
  {
   "name": "fd163",
@@ -449,6 +505,22 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 168
  },
  {
+  "name": "fd172",
+  "src": "broll/fcsdeterioro/fd172.mp4",
+  "start": 1546.07,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 172
+ },
+ {
+  "name": "fd173",
+  "src": "broll/fcsdeterioro/fd173.mp4",
+  "start": 1557.83,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 173
+ },
+ {
   "name": "fd175",
   "src": "broll/fcsdeterioro/fd175.mp4",
   "start": 1579.46,
@@ -479,6 +551,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "cov": 3.94,
   "dur": 3.94,
   "i": 182
+ },
+ {
+  "name": "fd183",
+  "src": "broll/fcsdeterioro/fd183.mp4",
+  "start": 1667.92,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 183
  },
  {
   "name": "fd187",
@@ -513,6 +593,86 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 192
  },
  {
+  "name": "fd194",
+  "src": "broll/fcsdeterioro/fd194.mp4",
+  "start": 1785.2,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 194
+ },
+ {
+  "name": "fd199",
+  "src": "broll/fcsdeterioro/fd199.mp4",
+  "start": 1836.64,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 199
+ },
+ {
+  "name": "fd203",
+  "src": "broll/fcsdeterioro/fd203.mp4",
+  "start": 1881.7,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 203
+ },
+ {
+  "name": "fd205",
+  "src": "broll/fcsdeterioro/fd205.mp4",
+  "start": 1902.37,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 205
+ },
+ {
+  "name": "fd207",
+  "src": "broll/fcsdeterioro/fd207.mp4",
+  "start": 1922.27,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 207
+ },
+ {
+  "name": "fd208",
+  "src": "broll/fcsdeterioro/fd208.mp4",
+  "start": 1931.46,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 208
+ },
+ {
+  "name": "fd209",
+  "src": "broll/fcsdeterioro/fd209.mp4",
+  "start": 1940.9,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 209
+ },
+ {
+  "name": "fd213",
+  "src": "broll/fcsdeterioro/fd213.mp4",
+  "start": 1981.9,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 213
+ },
+ {
+  "name": "fd214",
+  "src": "broll/fcsdeterioro/fd214.mp4",
+  "start": 1991.14,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 214
+ },
+ {
+  "name": "fd216",
+  "src": "broll/fcsdeterioro/fd216.mp4",
+  "start": 2010.44,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 216
+ },
+ {
   "name": "fd218",
   "src": "broll/fcsdeterioro/fd218.mp4",
   "start": 2029.81,
@@ -521,12 +681,28 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 218
  },
  {
+  "name": "fd220",
+  "src": "broll/fcsdeterioro/fd220.mp4",
+  "start": 2054.89,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 220
+ },
+ {
   "name": "fd221",
   "src": "broll/fcsdeterioro/fd221.mp4",
   "start": 2064.63,
   "cov": 3.94,
   "dur": 3.94,
   "i": 221
+ },
+ {
+  "name": "fd225",
+  "src": "broll/fcsdeterioro/fd225.mp4",
+  "start": 2105.97,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 225
  },
  {
   "name": "fd228",
@@ -569,6 +745,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 236
  },
  {
+  "name": "fd238",
+  "src": "broll/fcsdeterioro/fd238.mp4",
+  "start": 2238.55,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 238
+ },
+ {
   "name": "fd240",
   "src": "broll/fcsdeterioro/fd240.mp4",
   "start": 2259.63,
@@ -585,12 +769,44 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 242
  },
  {
+  "name": "fd247",
+  "src": "broll/fcsdeterioro/fd247.mp4",
+  "start": 2333.43,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 247
+ },
+ {
+  "name": "fd248",
+  "src": "broll/fcsdeterioro/fd248.mp4",
+  "start": 2343.2,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 248
+ },
+ {
   "name": "fd250",
   "src": "broll/fcsdeterioro/fd250.mp4",
   "start": 2362.68,
   "cov": 3.94,
   "dur": 3.94,
   "i": 250
+ },
+ {
+  "name": "fd251",
+  "src": "broll/fcsdeterioro/fd251.mp4",
+  "start": 2374.14,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 251
+ },
+ {
+  "name": "fd253",
+  "src": "broll/fcsdeterioro/fd253.mp4",
+  "start": 2393.45,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 253
  },
  {
   "name": "fd254",
@@ -601,12 +817,36 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 254
  },
  {
+  "name": "fd256",
+  "src": "broll/fcsdeterioro/fd256.mp4",
+  "start": 2421.59,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 256
+ },
+ {
   "name": "fd259",
   "src": "broll/fcsdeterioro/fd259.mp4",
   "start": 2452.28,
   "cov": 3.94,
   "dur": 3.94,
   "i": 259
+ },
+ {
+  "name": "fd261",
+  "src": "broll/fcsdeterioro/fd261.mp4",
+  "start": 2476.32,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 261
+ },
+ {
+  "name": "fd265",
+  "src": "broll/fcsdeterioro/fd265.mp4",
+  "start": 2518.11,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 265
  },
  {
   "name": "fd266",
@@ -641,6 +881,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 270
  },
  {
+  "name": "fd272",
+  "src": "broll/fcsdeterioro/fd272.mp4",
+  "start": 2645.14,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 272
+ },
+ {
   "name": "fd275",
   "src": "broll/fcsdeterioro/fd275.mp4",
   "start": 2699.28,
@@ -665,12 +913,52 @@ export const FCSDETERIORO_BROLL: any[] = [
   "i": 279
  },
  {
+  "name": "fd281",
+  "src": "broll/fcsdeterioro/fd281.mp4",
+  "start": 2809.11,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 281
+ },
+ {
   "name": "fd282",
   "src": "broll/fcsdeterioro/fd282.mp4",
   "start": 2827.13,
   "cov": 3.94,
   "dur": 3.94,
   "i": 282
+ },
+ {
+  "name": "fd284",
+  "src": "broll/fcsdeterioro/fd284.mp4",
+  "start": 2863.28,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 284
+ },
+ {
+  "name": "fd285",
+  "src": "broll/fcsdeterioro/fd285.mp4",
+  "start": 2881.34,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 285
+ },
+ {
+  "name": "fd287",
+  "src": "broll/fcsdeterioro/fd287.mp4",
+  "start": 2917.66,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 287
+ },
+ {
+  "name": "fd288",
+  "src": "broll/fcsdeterioro/fd288.mp4",
+  "start": 2935.91,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 288
  },
  {
   "name": "fd290",
@@ -695,6 +983,14 @@ export const FCSDETERIORO_BROLL: any[] = [
   "cov": 3.94,
   "dur": 3.94,
   "i": 298
+ },
+ {
+  "name": "fd299",
+  "src": "broll/fcsdeterioro/fd299.mp4",
+  "start": 3136.45,
+  "cov": 3.94,
+  "dur": 3.94,
+  "i": 299
  }
 ];
 export const FCSDETERIORO_PHOTOS: any[] = [
@@ -1241,7 +1537,7 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph064",
   "src": "img/fd064.png",
-  "start": 522.44,
+  "start": 526.38,
   "cov": 3.8,
   "i": 64,
   "hero": false,
@@ -1520,11 +1816,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph093",
   "src": "img/fd093.png",
-  "start": 756.38,
-  "cov": 9.97,
+  "start": 760.32,
+  "cov": 6.03,
   "i": 93,
   "hero": false,
-  "dur": 9.97
+  "dur": 6.03
  },
  {
   "name": "ph094",
@@ -1637,11 +1933,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph105",
   "src": "img/fd105.png",
-  "start": 876.49,
-  "cov": 9.46,
+  "start": 880.43,
+  "cov": 5.52,
   "i": 105,
   "hero": false,
-  "dur": 9.46
+  "dur": 5.52
  },
  {
   "name": "ph106",
@@ -1790,11 +2086,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph119",
   "src": "img/fd119.png",
-  "start": 1018.71,
-  "cov": 7.17,
+  "start": 1022.65,
+  "cov": 3.23,
   "i": 119,
   "hero": false,
-  "dur": 7.17
+  "dur": 3.23
  },
  {
   "name": "ph120",
@@ -1826,20 +2122,20 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph123",
   "src": "img/fd123.png",
-  "start": 1051.79,
-  "cov": 5.96,
+  "start": 1055.73,
+  "cov": 3.98,
   "i": 123,
   "hero": false,
-  "dur": 5.96
+  "dur": 3.98
  },
  {
   "name": "ph123b",
   "src": "img/fd123b.png",
-  "start": 1057.75,
-  "cov": 5.95,
+  "start": 1059.71,
+  "cov": 3.99,
   "i": 123,
   "hero": false,
-  "dur": 5.95
+  "dur": 3.99
  },
  {
   "name": "ph124",
@@ -2069,11 +2365,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph148",
   "src": "img/fd148.png",
-  "start": 1299.59,
-  "cov": 9.2,
+  "start": 1303.53,
+  "cov": 5.26,
   "i": 148,
   "hero": false,
-  "dur": 9.2
+  "dur": 5.26
  },
  {
   "name": "ph149",
@@ -2186,11 +2482,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph160",
   "src": "img/fd160.png",
-  "start": 1419.61,
-  "cov": 10.83,
+  "start": 1423.55,
+  "cov": 6.89,
   "i": 160,
   "hero": false,
-  "dur": 10.83
+  "dur": 6.89
  },
  {
   "name": "ph161",
@@ -2303,38 +2599,38 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph172",
   "src": "img/fd172.png",
-  "start": 1546.07,
-  "cov": 5.88,
+  "start": 1550.01,
+  "cov": 3.91,
   "i": 172,
   "hero": false,
-  "dur": 5.88
+  "dur": 3.91
  },
  {
   "name": "ph172b",
   "src": "img/fd172b.png",
-  "start": 1551.95,
-  "cov": 5.88,
+  "start": 1553.92,
+  "cov": 3.91,
   "i": 172,
   "hero": false,
-  "dur": 5.88
+  "dur": 3.91
  },
  {
   "name": "ph173",
   "src": "img/fd173.png",
-  "start": 1557.83,
-  "cov": 5.78,
+  "start": 1561.77,
+  "cov": 3.81,
   "i": 173,
   "hero": false,
-  "dur": 5.78
+  "dur": 3.81
  },
  {
   "name": "ph173b",
   "src": "img/fd173b.png",
-  "start": 1563.61,
-  "cov": 5.77,
+  "start": 1565.58,
+  "cov": 3.8,
   "i": 173,
   "hero": false,
-  "dur": 5.77
+  "dur": 3.8
  },
  {
   "name": "ph174",
@@ -2438,11 +2734,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph183",
   "src": "img/fd183.png",
-  "start": 1667.92,
-  "cov": 7.76,
+  "start": 1671.86,
+  "cov": 3.82,
   "i": 183,
   "hero": false,
-  "dur": 7.76
+  "dur": 3.82
  },
  {
   "name": "ph184",
@@ -2582,11 +2878,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph194",
   "src": "img/fd194.png",
-  "start": 1785.2,
-  "cov": 9.76,
+  "start": 1789.14,
+  "cov": 5.82,
   "i": 194,
   "hero": false,
-  "dur": 9.76
+  "dur": 5.82
  },
  {
   "name": "ph195",
@@ -2636,11 +2932,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph199",
   "src": "img/fd199.png",
-  "start": 1836.64,
-  "cov": 10.73,
+  "start": 1840.58,
+  "cov": 6.79,
   "i": 199,
   "hero": false,
-  "dur": 10.73
+  "dur": 6.79
  },
  {
   "name": "ph200",
@@ -2690,11 +2986,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph203",
   "src": "img/fd203.png",
-  "start": 1881.7,
-  "cov": 10.87,
+  "start": 1885.64,
+  "cov": 6.93,
   "i": 203,
   "hero": false,
-  "dur": 10.87
+  "dur": 6.93
  },
  {
   "name": "ph204",
@@ -2708,11 +3004,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph205",
   "src": "img/fd205.png",
-  "start": 1902.37,
-  "cov": 9.27,
+  "start": 1906.31,
+  "cov": 5.33,
   "i": 205,
   "hero": false,
-  "dur": 9.27
+  "dur": 5.33
  },
  {
   "name": "ph206",
@@ -2726,29 +3022,29 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph207",
   "src": "img/fd207.png",
-  "start": 1922.27,
-  "cov": 9.19,
+  "start": 1926.21,
+  "cov": 5.25,
   "i": 207,
   "hero": false,
-  "dur": 9.19
+  "dur": 5.25
  },
  {
   "name": "ph208",
   "src": "img/fd208.png",
-  "start": 1931.46,
-  "cov": 9.44,
+  "start": 1935.4,
+  "cov": 5.5,
   "i": 208,
   "hero": false,
-  "dur": 9.44
+  "dur": 5.5
  },
  {
   "name": "ph209",
   "src": "img/fd209.png",
-  "start": 1940.9,
-  "cov": 11.43,
+  "start": 1944.84,
+  "cov": 7.49,
   "i": 209,
   "hero": false,
-  "dur": 11.43
+  "dur": 7.49
  },
  {
   "name": "ph210",
@@ -2780,20 +3076,20 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph213",
   "src": "img/fd213.png",
-  "start": 1981.9,
-  "cov": 9.24,
+  "start": 1985.84,
+  "cov": 5.3,
   "i": 213,
   "hero": false,
-  "dur": 9.24
+  "dur": 5.3
  },
  {
   "name": "ph214",
   "src": "img/fd214.png",
-  "start": 1991.14,
-  "cov": 9.84,
+  "start": 1995.08,
+  "cov": 5.9,
   "i": 214,
   "hero": false,
-  "dur": 9.84
+  "dur": 5.9
  },
  {
   "name": "ph215",
@@ -2807,11 +3103,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph216",
   "src": "img/fd216.png",
-  "start": 2010.44,
-  "cov": 10.15,
+  "start": 2014.38,
+  "cov": 6.21,
   "i": 216,
   "hero": false,
-  "dur": 10.15
+  "dur": 6.21
  },
  {
   "name": "ph217",
@@ -2852,11 +3148,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph220",
   "src": "img/fd220.png",
-  "start": 2054.89,
-  "cov": 9.74,
+  "start": 2058.83,
+  "cov": 5.8,
   "i": 220,
   "hero": false,
-  "dur": 9.74
+  "dur": 5.8
  },
  {
   "name": "ph221",
@@ -2906,11 +3202,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph225",
   "src": "img/fd225.png",
-  "start": 2105.97,
-  "cov": 10.42,
+  "start": 2109.91,
+  "cov": 6.48,
   "i": 225,
   "hero": false,
-  "dur": 10.42
+  "dur": 6.48
  },
  {
   "name": "ph226",
@@ -3086,20 +3382,20 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph238",
   "src": "img/fd238.png",
-  "start": 2238.55,
-  "cov": 5.79,
+  "start": 2242.49,
+  "cov": 3.82,
   "i": 238,
   "hero": false,
-  "dur": 5.79
+  "dur": 3.82
  },
  {
   "name": "ph238b",
   "src": "img/fd238b.png",
-  "start": 2244.34,
-  "cov": 5.79,
+  "start": 2246.31,
+  "cov": 3.82,
   "i": 238,
   "hero": false,
-  "dur": 5.79
+  "dur": 3.82
  },
  {
   "name": "ph239",
@@ -3203,29 +3499,29 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph247",
   "src": "img/fd247.png",
-  "start": 2333.43,
-  "cov": 9.77,
+  "start": 2337.37,
+  "cov": 5.83,
   "i": 247,
   "hero": false,
-  "dur": 9.77
+  "dur": 5.83
  },
  {
   "name": "ph248",
   "src": "img/fd248.png",
-  "start": 2343.2,
-  "cov": 4.96,
+  "start": 2347.14,
+  "cov": 3,
   "i": 248,
   "hero": false,
-  "dur": 4.96
+  "dur": 3
  },
  {
   "name": "ph248b",
   "src": "img/fd248b.png",
-  "start": 2348.16,
-  "cov": 4.97,
+  "start": 2350.14,
+  "cov": 2.99,
   "i": 248,
   "hero": false,
-  "dur": 4.97
+  "dur": 2.99
  },
  {
   "name": "ph249",
@@ -3266,11 +3562,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph251",
   "src": "img/fd251.png",
-  "start": 2374.14,
-  "cov": 9.31,
+  "start": 2378.08,
+  "cov": 5.37,
   "i": 251,
   "hero": false,
-  "dur": 9.31
+  "dur": 5.37
  },
  {
   "name": "ph252",
@@ -3293,11 +3589,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph253",
   "src": "img/fd253.png",
-  "start": 2393.45,
-  "cov": 9,
+  "start": 2397.39,
+  "cov": 5.06,
   "i": 253,
   "hero": false,
-  "dur": 9
+  "dur": 5.06
  },
  {
   "name": "ph254",
@@ -3329,11 +3625,11 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph256",
   "src": "img/fd256.png",
-  "start": 2421.59,
-  "cov": 9.32,
+  "start": 2425.53,
+  "cov": 5.38,
   "i": 256,
   "hero": false,
-  "dur": 9.32
+  "dur": 5.38
  },
  {
   "name": "ph257",
@@ -3383,20 +3679,20 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph261",
   "src": "img/fd261.png",
-  "start": 2476.32,
-  "cov": 4.88,
+  "start": 2480.26,
+  "cov": 2.92,
   "i": 261,
   "hero": false,
-  "dur": 4.88
+  "dur": 2.92
  },
  {
   "name": "ph261b",
   "src": "img/fd261b.png",
-  "start": 2481.2,
-  "cov": 4.89,
+  "start": 2483.18,
+  "cov": 2.91,
   "i": 261,
   "hero": false,
-  "dur": 4.89
+  "dur": 2.91
  },
  {
   "name": "ph262",
@@ -3455,29 +3751,29 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph265",
   "src": "img/fd265.png",
-  "start": 2518.11,
-  "cov": 6.05,
+  "start": 2522.05,
+  "cov": 4.74,
   "i": 265,
   "hero": false,
-  "dur": 6.05
+  "dur": 4.74
  },
  {
   "name": "ph265b",
   "src": "img/fd265b.png",
-  "start": 2524.16,
-  "cov": 6.05,
+  "start": 2526.79,
+  "cov": 4.74,
   "i": 265,
   "hero": false,
-  "dur": 6.05
+  "dur": 4.74
  },
  {
   "name": "ph265c",
   "src": "img/fd265c.png",
-  "start": 2530.21,
-  "cov": 6.05,
+  "start": 2531.53,
+  "cov": 4.73,
   "i": 265,
   "hero": false,
-  "dur": 6.05
+  "dur": 4.73
  },
  {
   "name": "ph266",
@@ -3644,29 +3940,29 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph272",
   "src": "img/fd272.png",
-  "start": 2645.14,
-  "cov": 6.01,
+  "start": 2649.08,
+  "cov": 4.7,
   "i": 272,
   "hero": false,
-  "dur": 6.01
+  "dur": 4.7
  },
  {
   "name": "ph272b",
   "src": "img/fd272b.png",
-  "start": 2651.15,
-  "cov": 6.01,
+  "start": 2653.78,
+  "cov": 4.7,
   "i": 272,
   "hero": false,
-  "dur": 6.01
+  "dur": 4.7
  },
  {
   "name": "ph272c",
   "src": "img/fd272c.png",
-  "start": 2657.16,
-  "cov": 6.02,
+  "start": 2658.48,
+  "cov": 4.7,
   "i": 272,
   "hero": false,
-  "dur": 6.02
+  "dur": 4.7
  },
  {
   "name": "ph273",
@@ -3887,29 +4183,29 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph281",
   "src": "img/fd281.png",
-  "start": 2809.11,
-  "cov": 6.01,
+  "start": 2813.05,
+  "cov": 4.69,
   "i": 281,
   "hero": false,
-  "dur": 6.01
+  "dur": 4.69
  },
  {
   "name": "ph281b",
   "src": "img/fd281b.png",
-  "start": 2815.12,
-  "cov": 6.01,
+  "start": 2817.74,
+  "cov": 4.69,
   "i": 281,
   "hero": false,
-  "dur": 6.01
+  "dur": 4.69
  },
  {
   "name": "ph281c",
   "src": "img/fd281c.png",
-  "start": 2821.13,
-  "cov": 6,
+  "start": 2822.43,
+  "cov": 4.7,
   "i": 281,
   "hero": false,
-  "dur": 6
+  "dur": 4.7
  },
  {
   "name": "ph282",
@@ -3968,56 +4264,56 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph284",
   "src": "img/fd284.png",
-  "start": 2863.28,
-  "cov": 6.02,
+  "start": 2867.22,
+  "cov": 4.71,
   "i": 284,
   "hero": false,
-  "dur": 6.02
+  "dur": 4.71
  },
  {
   "name": "ph284b",
   "src": "img/fd284b.png",
-  "start": 2869.3,
-  "cov": 6.02,
+  "start": 2871.93,
+  "cov": 4.71,
   "i": 284,
   "hero": false,
-  "dur": 6.02
+  "dur": 4.71
  },
  {
   "name": "ph284c",
   "src": "img/fd284c.png",
-  "start": 2875.32,
-  "cov": 6.02,
+  "start": 2876.64,
+  "cov": 4.7,
   "i": 284,
   "hero": false,
-  "dur": 6.02
+  "dur": 4.7
  },
  {
   "name": "ph285",
   "src": "img/fd285.png",
-  "start": 2881.34,
-  "cov": 6.04,
+  "start": 2885.28,
+  "cov": 4.72,
   "i": 285,
   "hero": false,
-  "dur": 6.04
+  "dur": 4.72
  },
  {
   "name": "ph285b",
   "src": "img/fd285b.png",
-  "start": 2887.38,
-  "cov": 6.04,
+  "start": 2890,
+  "cov": 4.72,
   "i": 285,
   "hero": false,
-  "dur": 6.04
+  "dur": 4.72
  },
  {
   "name": "ph285c",
   "src": "img/fd285c.png",
-  "start": 2893.42,
-  "cov": 6.03,
+  "start": 2894.72,
+  "cov": 4.73,
   "i": 285,
   "hero": false,
-  "dur": 6.03
+  "dur": 4.73
  },
  {
   "name": "ph286",
@@ -4049,56 +4345,56 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph287",
   "src": "img/fd287.png",
-  "start": 2917.66,
-  "cov": 6.08,
+  "start": 2921.6,
+  "cov": 4.77,
   "i": 287,
   "hero": false,
-  "dur": 6.08
+  "dur": 4.77
  },
  {
   "name": "ph287b",
   "src": "img/fd287b.png",
-  "start": 2923.74,
-  "cov": 6.08,
+  "start": 2926.37,
+  "cov": 4.77,
   "i": 287,
   "hero": false,
-  "dur": 6.08
+  "dur": 4.77
  },
  {
   "name": "ph287c",
   "src": "img/fd287c.png",
-  "start": 2929.82,
-  "cov": 6.09,
+  "start": 2931.14,
+  "cov": 4.77,
   "i": 287,
   "hero": false,
-  "dur": 6.09
+  "dur": 4.77
  },
  {
   "name": "ph288",
   "src": "img/fd288.png",
-  "start": 2935.91,
-  "cov": 6.11,
+  "start": 2939.85,
+  "cov": 4.8,
   "i": 288,
   "hero": false,
-  "dur": 6.11
+  "dur": 4.8
  },
  {
   "name": "ph288b",
   "src": "img/fd288b.png",
-  "start": 2942.02,
-  "cov": 6.11,
+  "start": 2944.65,
+  "cov": 4.8,
   "i": 288,
   "hero": false,
-  "dur": 6.11
+  "dur": 4.8
  },
  {
   "name": "ph288c",
   "src": "img/fd288c.png",
-  "start": 2948.13,
-  "cov": 6.11,
+  "start": 2949.45,
+  "cov": 4.79,
   "i": 288,
   "hero": false,
-  "dur": 6.11
+  "dur": 4.79
  },
  {
   "name": "ph289",
@@ -4373,29 +4669,29 @@ export const FCSDETERIORO_PHOTOS: any[] = [
  {
   "name": "ph299",
   "src": "img/fd299.png",
-  "start": 3136.45,
-  "cov": 6.08,
+  "start": 3140.39,
+  "cov": 4.77,
   "i": 299,
   "hero": false,
-  "dur": 6.08
+  "dur": 4.77
  },
  {
   "name": "ph299b",
   "src": "img/fd299b.png",
-  "start": 3142.53,
-  "cov": 6.08,
+  "start": 3145.16,
+  "cov": 4.77,
   "i": 299,
   "hero": false,
-  "dur": 6.08
+  "dur": 4.77
  },
  {
   "name": "ph299c",
   "src": "img/fd299c.png",
-  "start": 3148.61,
-  "cov": 6.09,
+  "start": 3149.93,
+  "cov": 4.77,
   "i": 299,
   "hero": false,
-  "dur": 6.09
+  "dur": 4.77
  },
  {
   "name": "ph300",
@@ -6822,7 +7118,7 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "hidden"
  },
  {
-  "start": 526.24,
+  "start": 530.18,
   "mode": "full"
  },
  {
