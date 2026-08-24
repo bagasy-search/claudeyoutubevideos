@@ -130,7 +130,8 @@ export const CMP = (G) => [
   tag: "LÍNEA DE BASE", prompt: "Anota esto" },
 { phrase: "beneficio numero 2 la hidratacion desde adentro", kind: "errorstinger", number: "2", title: "HIDRATACIÓN DESDE ADENTRO", eyebrow: "Beneficio", tone: "teal" },
 { phrase: "es como regar una maceta sin tierra", kind: "raisin" },
-{ phrase: "tu no necesitas nada mas agua", kind: "frasecinetica",
+// ⛔ sacada: caia ENCIMA de la escena RaisinReframe (que ya dice "LA ESPONJA") y quedaba texto sobre texto
+{ phrase: "PLACEHOLDER_NO_MATCH_frase_esponja", kind: "frasecinetica",
   words: [{ t: "NO TE FALTA" }, { t: "AGUA" }, { t: "TE FALTA" }, { t: "LA ESPONJA", hl: true }], perWord: 13, tone: "teal" },
 { phrase: "la numero 3 es el sueno", kind: "errorstinger", number: "3", title: "EL SUEÑO", eyebrow: "El que nadie se espera", tone: "teal" },
 { phrase: "el mas chiquito y el mas simple que existe", kind: "lowerthird", title: "Glicina", kicker: "1 DE CADA 3 PIEZAS",

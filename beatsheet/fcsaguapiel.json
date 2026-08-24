@@ -3454,30 +3454,6 @@
    "src": "img/fcsaguapiel_m288.jpg"
   },
   {
-   "id": "cmp_38_frasecinetica",
-   "start": 1371.51,
-   "dur": 5.5,
-   "key": "s",
-   "kind": "frasecinetica",
-   "words": [
-    {
-     "t": "NO TE FALTA"
-    },
-    {
-     "t": "AGUA"
-    },
-    {
-     "t": "TE FALTA"
-    },
-    {
-     "t": "LA ESPONJA",
-     "hl": true
-    }
-   ],
-   "perWord": 13,
-   "tone": "teal"
-  },
-  {
    "id": "m289",
    "start": 1375.55,
    "dur": 5.72,
