@@ -259,7 +259,7 @@ export const AshFurnaceScene: React.FC<AshFurnaceSceneProps> = ({
         >
           {/* grano de la ceniza: grumos determinísticos, no una barra plana */}
           {grey
-            ? Array.from({length: 26}).map((_, i) => {
+            ? Array.from({length: 34}).map((_, i) => {
                 const s = (i * 37.7) % 100;
                 return (
                   <div
@@ -267,11 +267,11 @@ export const AshFurnaceScene: React.FC<AshFurnaceSceneProps> = ({
                     style={{
                       position: 'absolute',
                       left: `${(s * 1.7) % 100}%`,
-                      top: 2 + (s % 5) * 7,
-                      width: 6 + (s % 5) * 4,
-                      height: 6 + (s % 4) * 3,
+                      top: 3 + ((s * 3.1) % 34),
+                      width: 3 + (s % 4) * 2,
+                      height: 3 + (s % 3) * 2,
                       borderRadius: '50%',
-                      background: s % 3 === 0 ? rgba('#2B3236', 0.5) : rgba('#D2D9DD', 0.28),
+                      background: s % 3 === 0 ? rgba('#20272B', 0.42) : rgba('#D2D9DD', 0.14),
                     }}
                   />
                 );
@@ -685,13 +685,13 @@ export const AshFurnaceScene: React.FC<AshFurnaceSceneProps> = ({
                     fontWeight: 800,
                     letterSpacing: 0.5,
                     color: BAS.amber,
-                    textShadow: `0 4px 26px ${rgba('#000000', 0.92)}, 0 0 42px ${rgba(BAS.amber, 0.4)}`,
+                    // el ámbar respira en el hold (brasa que late, nunca congelado)
+                    textShadow: `0 4px 26px ${rgba('#000000', 0.92)}, 0 0 ${34 + Math.sin(t * 1.45) * 14}px ${rgba(BAS.amber, 0.34 + Math.sin(t * 1.45) * 0.12)}`,
                   }}
                 >
                   {tTail}
                 </span>
               ) : null}
-              <div style={{position: 'absolute', inset: 0, background: `linear-gradient(100deg, transparent ${sweep - 10}%, ${rgba('#FFFFFF', 0.32)} ${sweep}%, transparent ${sweep + 10}%)`, mixBlendMode: 'overlay'}} />
             </div>
           </div>
         </Layer>

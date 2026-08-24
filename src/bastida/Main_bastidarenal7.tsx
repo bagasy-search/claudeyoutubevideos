@@ -22,9 +22,13 @@ import {AlertSignalsScene} from './AlertSignalsScene';
 import {QrCtaScene} from './QrCtaScene';
 import {TestimonialScene} from './TestimonialScene';
 import {MatchWhip, WhipDir} from './MatchWhip';
-import {AshScene, BotiquinPage, MethodScene} from './Scenes7';
+import {BotiquinPage} from './Scenes7';
+import {MethodStackScene} from './scenes7/MethodStackScene';
+import {AshFurnaceScene} from './scenes7/AshFurnaceScene';
 import {AshTriadScene} from './scenes7/AshTriadScene';
 import {FilterMechanismScene} from './scenes7/FilterMechanismScene';
+import {ShakeRevealScene} from './scenes7/ShakeRevealScene';
+import {SplitFoodScene} from './scenes7/SplitFoodScene';
 import {RuleScene} from './scenes7/RuleScene';
 import {GuidePageScene} from './scenes7/GuidePageScene';
 
@@ -161,7 +165,7 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
   // EL MECANISMO: dos filtros del tamaño de su puño, 30 veces por día, y la ceniza que se acumula
   {from: 4380, dur: 420, dir: 'left', node: <FilterMechanismScene />},
   // LA IDEA: la leña que arde limpia vs la que deja hollín
-  {from: 5393, dur: 430, dir: 'right', node: <AshScene />},
+  {from: 5393, dur: 430, dir: 'right', node: <AshFurnaceScene />},
   // ¿qué es esa ceniza? fósforo · sal · acidez
   {from: 6290, dur: 640, dir: 'in', node: <AshTriadScene />},
   // el error más peligroso: dejar la proteína
@@ -174,6 +178,8 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
   {from: 11254, dur: 540, dir: 'left', node: <RuleScene kicker="La segunda pregunta" question="¿Se echaría a perder en tres días?" answer="Si no se pudre, no es comida fresca" note="Es un paquete de fósforo con sabor a jamón." img="img/bas7_broll_etiqueta.jpg" imgSide="right" accent={BAS.no} />},
   // LAS 3 SEGURAS — openers 2.5D
   {from: 12470, dur: 130, dir: 'right', node: <ChapterScene {...CH_CLARA} />},
+  // el huevo son DOS alimentos: la clara (limpia) y la yema (el hollín)
+  {from: 12850, dur: 480, dir: 'in', node: <SplitFoodScene />},
   {from: 14110, dur: 130, dir: 'left', node: <ChapterScene {...CH_PESCADO} />},
   {from: 15650, dur: 130, dir: 'right', node: <ChapterScene {...CH_LENTEJAS} />},
   // LÁMINA A — página de la guía: las 3 seguras con preparación y porción
@@ -190,7 +196,9 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
     />
   )},
   // EL GIRO — el anillo se abre en SÍ / NO y el batido cae al bando rojo (cierra el loop)
-  {from: 21391, dur: 560, dir: 'in', node: <RenalCarousel cards={CARDS} reveals={[]} verdicts={VERD} splitAt={60} introDur={40} kicker="El veredicto" title="3 que sostienen · 3 que hunden" />},
+  {from: 21391, dur: 400, dir: 'in', node: <RenalCarousel cards={CARDS} reveals={[]} verdicts={VERD} splitAt={60} introDur={40} kicker="El veredicto" title="3 que sostienen · 3 que hunden" />},
+  // EL REVEAL DEL BATIDO — la carga de dos bifes de golpe (clímax)
+  {from: 21900, dur: 560, dir: 'up', node: <ShakeRevealScene />},
   // LÁMINA B — el botiquín traicionero (27 productos) = puente al método
   {from: 23760, dur: 940, dir: 'left', node: <BotiquinPage />},
   // LÁMINA C — el semáforo de las 6
@@ -215,7 +223,7 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
   // LAS 4 SEÑALES
   {from: 28509, dur: 1120, dir: 'up', node: <AlertSignalsScene title="¿Sus riñones ya piden ayuda?" signals={['Orina espumosa que no se va', 'Hinchazón: tobillos, párpados, el anillo', 'Cansancio que no se arregla durmiendo', 'Picazón en la piel, sobre todo de noche']} footer="Si reconoce 2 o más, pídale a su médico un análisis" />},
   // QUÉ HAY ADENTRO DE LA GUÍA
-  {from: 31983, dur: 1660, dir: 'in', node: <MethodScene />},
+  {from: 31983, dur: 1660, dir: 'in', node: <MethodStackScene />},
   // CTA — el QR y cómo escanearlo
   {from: 33900, dur: 1290, dir: 'up', node: <QrCtaScene qr="renal/bas_qr_bastida.png" kicker="Dr. Bastida · Salud renal" title="La guía completa del riñón" steps={['Abra la cámara de su teléfono', 'Apunte al código de la pantalla', 'Toque el aviso que aparece arriba']} note="También en la descripción, es el primer enlace" />},
   // TESTIMONIAL Norma
@@ -240,15 +248,14 @@ const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: num
   {from: 7480, dur: 170, img: 'bas6_p_paciente_asustado.jpg', caption: 'Se asusta y deja la proteína'},
   {from: 7934, dur: 170, img: 'bas7_broll_sopita.jpg', caption: 'Sopita, té y galletitas'},
   {from: 8700, dur: 160, img: 'bas6_p_cansancio_cama.jpg', caption: 'Más flaco, más débil'},
-  {from: 9078, dur: 150, img: 'bas6_p_bife_plato.jpg', caption: 'El plato de anoche'},
+  {from: 9078, dur: 70, img: 'bas6_p_bife_plato.jpg', caption: 'El plato de anoche'},
   {from: 9700, dur: 170, img: 'bas6_broll_lab.jpg', caption: 'Y el número de hoy'},
   {from: 10255, dur: 160, img: 'bas7_broll_platon.jpg', caption: 'El plato del restaurante'},
   {from: 11850, dur: 160, img: 'bas6_p_frasco_heladera.jpg', caption: '¿Cuánto le dura?'},
   {from: 12100, dur: 150, img: 'bas7_fiambre.jpg', caption: 'Tres meses en la góndola'},
   {from: 12616, dur: 160, img: 'bas7_clara.jpg', caption: 'La leña que arde limpia'},
-  {from: 12968, dur: 170, img: 'bas7_broll_yema.jpg', caption: 'La yema: casi todo el fósforo'},
   {from: 13400, dur: 160, img: 'bas6_p_desayuno_manana.jpg', caption: 'Dos o tres claras revueltas'},
-  {from: 14165, dur: 170, img: 'bas7_pescado.jpg', caption: 'Merluza, lenguado, pescadilla'},
+  {from: 14250, dur: 170, img: 'bas7_pescado.jpg', caption: 'Merluza, lenguado, pescadilla'},
   {from: 14600, dur: 160, img: 'bas6_broll_kidney.jpg', caption: 'Un ovillo de arterias chiquitas'},
   {from: 15032, dur: 170, img: 'bas6_p_gondola_confundida.jpg', caption: 'Ni rebozado ni en bastoncitos'},
   {from: 15300, dur: 150, img: 'bas7_pescado.jpg', caption: 'Del tamaño de su palma'},
@@ -262,7 +269,6 @@ const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: num
   {from: 20000, dur: 160, img: 'bas6_p_bife_plato.jpg', caption: 'Carne al mediodía y a la noche'},
   {from: 20473, dur: 170, img: 'bas7_carne.jpg', caption: 'Cuanto más cocida, más ceniza'},
   {from: 21098, dur: 180, img: 'bas7_broll_caldo.jpg', caption: 'El caldo… tírelo'},
-  {from: 21960, dur: 180, img: 'bas7_batido.jpg'},
   {from: 22700, dur: 160, img: 'bas6_p_dietetica_bolsita.jpg', caption: 'La etiqueta linda'},
   {from: 23200, dur: 160, img: 'bas6_p_farmacia_estante.jpg', caption: 'Lo que se vende suelto'},
   {from: 26150, dur: 160, img: 'bas6_p_semaforo_calle.jpg', caption: 'Verde, amarillo, rojo'},
@@ -270,7 +276,7 @@ const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: num
   {from: 27000, dur: 160, img: 'bas7_batido.jpg', caption: 'Un batido cada mañana'},
   {from: 27250, dur: 150, img: 'bas7_fiambre.jpg', caption: 'Y el sánguche de la noche'},
   {from: 27530, dur: 180, img: 'bas7_anibal_desayuno.jpg', caption: 'Dos claras y una tostada'},
-  {from: 28200, dur: 150, img: 'bas6_p_desayuno_final.jpg', caption: 'Cambió el desayuno y la cena'},
+  {from: 28230, dur: 300, img: 'bas6_p_desayuno_final.jpg', caption: 'Cambió el desayuno y la cena'},
   /* ---- cola ---- */
   {from: 29700, dur: 170, img: 'bas6_broll_lab.jpg', caption: 'Un análisis simple'},
   {from: 30008, dur: 170, img: 'bas6_p_consulta_medico.jpg', caption: 'Yo no le miento nunca'},
@@ -300,9 +306,6 @@ const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
   {from: 18852, dur: 260, node: <StatTag a="1 feta" b="3 bifes" note="de sal" />},
   {from: 19628, dur: 210, node: <TraidoraTag name="Carne roja a diario" reason="La leña que más ceniza ácida deja" />},
   {from: 20800, dur: 230, node: <KeyWord word="EL CALDO" sub="creatinina casi pura, servida en cuchara" color={BAS.no} />},
-  {from: 21960, dur: 230, node: <TraidoraTag name="Batido de proteína" reason='La "más sana"… la más pesada' />},
-  {from: 22042, dur: 280, node: <StatTag a="1 medida" b="2 bifes" note="de golpe, en un filtro cansado" />},
-  {from: 22414, dur: 210, node: <KeyWord word="FOSFATOS AÑADIDOS" sub="se absorben casi enteros" />},
   {from: 23643, dur: 200, node: <CautionChip text="Llévele el pote a su médico, con la etiqueta" />},
   {from: 26322, dur: 260, node: <StatTag a="6" b="300" note="alimentos en el semáforo completo" />},
   {from: 29635, dur: 230, node: <CautionChip text="¿Dos o más señales? pida un análisis" />},

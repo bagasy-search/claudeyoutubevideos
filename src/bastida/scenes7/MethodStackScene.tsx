@@ -72,7 +72,7 @@ const H = 660; // alto de la página
 const PERSP = 1850;
 
 /** posición por "edad" en la pila (0 = la que acaba de entrar). x/y son PÍXELES DE PANTALLA. */
-const LX = [220, -280, -520, -700];
+const LX = [200, -280, -520, -700];
 const LY = [-30, 60, 140, 215];
 const LZ = [90, -250, -500, -740];
 const LRY = [-5, 11, 17, 21];
@@ -82,6 +82,13 @@ const LOP = [1, 0.7, 0.5, 0.36];
 const LDIM = [0, 0.3, 0.46, 0.58];
 const LBLUR = [0, 1, 1.8, 2.4];
 const AGES = [0, 1, 2, 3];
+
+/** encuadre de cada lámina: zoom base y punto de interés del recorte */
+const PHOTO_ZOOM = [1.06, 1.08, 1.06, 1.75];
+const PHOTO_POS = ['50% 50%', '50% 44%', '50% 50%', '76% 50%'];
+/** desplazamiento del recorte (la lámina del laboratorio se cierra sobre la MANO y el gráfico) */
+const PHOTO_TX = [0, 0, 0, -3];
+const PHOTO_TY = [0, 0, 0, -20];
 
 const PAGE_TAG = ['Lámina · Semáforo', 'Lámina · Calendario', 'Lámina · Botiquín', 'Lámina · Laboratorio'];
 const RAIL_TAG = ['El semáforo', 'Los 90 días', 'El botiquín', 'Su análisis'];
@@ -466,7 +473,10 @@ const PaperPage: React.FC<{row: MethodRow; index: number; enter: number; ageF: n
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  transform: `scale(${interpolate(rel, [0, 300], [1.1, 1.02], {...CL, easing: EIO})})`,
+                  objectPosition: PHOTO_POS[index] ? PHOTO_POS[index] : '50% 50%',
+                  transform:
+                    `translate(${PHOTO_TX[index] || 0}%, ${PHOTO_TY[index] || 0}%) ` +
+                    `scale(${(PHOTO_ZOOM[index] ? PHOTO_ZOOM[index] : 1.06) * interpolate(rel, [0, 300], [1.04, 0.98], {...CL, easing: EIO})})`,
                   clipPath: `inset(0% 0% ${(1 - photoP) * 100}% 0%)`,
                 }}
               />
@@ -527,7 +537,7 @@ const PaperPage: React.FC<{row: MethodRow; index: number; enter: number; ageF: n
           <div
             style={{
               fontFamily: FONT_DISPLAY,
-              fontSize: 50,
+              fontSize: 52,
               fontWeight: 700,
               lineHeight: 1.06,
               color: BAS.ink,
@@ -542,7 +552,7 @@ const PaperPage: React.FC<{row: MethodRow; index: number; enter: number; ageF: n
           <div
             style={{
               fontFamily: FONT_SERIF,
-              fontSize: 30,
+              fontSize: 32,
               lineHeight: 1.34,
               color: BAS.ink2,
               opacity: subP,
@@ -572,7 +582,7 @@ const PaperPage: React.FC<{row: MethodRow; index: number; enter: number; ageF: n
               >
                 {counted}
               </div>
-              <div style={{fontFamily: FONT_SANS, fontSize: 30, fontWeight: 700, color: BAS.ink2}}>{row.statLabel}</div>
+              <div style={{fontFamily: FONT_SANS, fontSize: 31, fontWeight: 700, color: BAS.ink2}}>{row.statLabel}</div>
             </div>
           ) : null}
 
@@ -629,8 +639,8 @@ export const MethodStackScene: React.FC<MethodStackSceneProps> = ({
     push += interpolate(frame, [e - 6, e + 12, e + 78], [0, 0.036, 0], CL);
   }
   const dolly =
-    interpolate(frame, [0, 150], [0.8, 1.045], {...CL, easing: EOUT}) +
-    interpolate(frame, [150, 1660], [0, -0.14], {...CL, easing: EIO}) +
+    interpolate(frame, [0, 150], [0.78, 0.99], {...CL, easing: EOUT}) +
+    interpolate(frame, [150, 1660], [0, -0.07], {...CL, easing: EIO}) +
     push;
   const panX = interpolate(frame, [0, 1660], [-46, 74], {...CL, easing: EIO}) + Math.sin(t * 0.29) * 7;
   const panY = interpolate(frame, [0, 1660], [30, -20], {...CL, easing: EIO}) + Math.cos(t * 0.23) * 5;
@@ -749,7 +759,7 @@ export const MethodStackScene: React.FC<MethodStackSceneProps> = ({
             top: 62,
             width: 520,
             transformOrigin: '0% 0%',
-            transform: `translate(${hM * 300 + panX * 0.3}px, ${hM * 292 + panY * 0.3}px) scale(${1 + hM * 0.5}) rotate(${camRy * 0.1}deg)`,
+            transform: `translate(${hM * 436 + panX * 0.3}px, ${hM * 286 + panY * 0.3}px) scale(${1 + hM * 0.5}) rotate(${camRy * 0.1}deg)`,
           }}
         >
           <div style={{fontFamily: FONT_SANS, fontSize: 22, fontWeight: 800, letterSpacing: 3.4, color: BAS.aqua, opacity: hKick}}>
