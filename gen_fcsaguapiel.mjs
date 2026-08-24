@@ -59,15 +59,17 @@ const LAMINA = {
   m504: "sol", m519: "cigarro",
   m552: "glicacion", m557: "hamaca", m567: "tijeras", m569: "recambio",
 };
-const lamSrc = (n) => (LAMINA[n] ? `img/lam_${SLUG}_${LAMINA[n]}.png` : null);
+// JPG > PNG: 626 fotos en PNG = 1.198 MB; las mismas en JPG = 46 MB (regla b-roll-en-JPG)
+const jpg = (p) => p.replace(/\.png$/i, ".jpg");
+const pick = (p) => (has(jpg(p)) ? jpg(p) : has(p) ? p : null);
+const lamSrc = (n) => (LAMINA[n] ? pick(`img/lam_${SLUG}_${LAMINA[n]}.png`) : null);
 
 // foto de un momento: lamina > hero mapeada > propia > respaldo del clip
-const heroSrc = (n) => (HEROMAP[n] ? `img/${SLUG}_${HEROMAP[n].toLowerCase()}.png` : null);
+const heroSrc = (n) => (HEROMAP[n] ? pick(`img/${SLUG}_${HEROMAP[n].toLowerCase()}.png`) : null);
 const fotoDe = (n) => {
-  const l = lamSrc(n); if (l && has(l)) return l;
-  const h = heroSrc(n); if (h && has(h)) return h;
-  const a = `img/${SLUG}_${n}.png`, b = `img/${SLUG}_${n}_bk.png`;
-  return has(a) ? a : has(b) ? b : null;
+  const l = lamSrc(n); if (l) return l;
+  const h = heroSrc(n); if (h) return h;
+  return pick(`img/${SLUG}_${n}.png`) || pick(`img/${SLUG}_${n}_bk.png`);
 };
 const G = (n) => fotoDe(n) || `img/${SLUG}_${n}.png`;
 
@@ -81,9 +83,10 @@ for (let i = 0; i < N; i++) {
   const slot = +(nextStart(i) - st).toFixed(2);
   const route = ROUTE.get(m.n);
   // el clip de agnes MANDA; si no llego, el de stock (Pexels) cubre el movimiento
-  const clipA = `broll/${SLUG}_${m.n}.mp4`;
-  const clipS = `broll/${SLUG}_${m.n}_st.mp4`;
-  const clip = has(clipA) ? clipA : clipS;
+  const optA = `broll/opt/${SLUG}_${m.n}.mp4`, optS = `broll/opt/${SLUG}_${m.n}_st.mp4`;
+  const clipA = has(optA) ? optA : `broll/${SLUG}_${m.n}.mp4`;
+  const clipS = has(optS) ? optS : `broll/${SLUG}_${m.n}_st.mp4`;
+  const clip = (has(optA) || has(`broll/${SLUG}_${m.n}.mp4`)) ? clipA : clipS;
   const zonaFish = st >= AVATAR_END;
 
   if (route === "clip" && has(clip) && !DARK.has(m.n) && !LAMINA[m.n]) {
@@ -99,8 +102,9 @@ for (let i = 0; i < N; i++) {
       const src = fotoDe(m.n);
       if (src) {
         const ts = +(st + cov).toFixed(2);
-        beats.push({ id: m.n + "_t", start: ts, dur: resto, key: "s", kind: "raw", src });
-        COVER.push({ start: ts, cov: +Math.min(resto, HERO_CAP + 2).toFixed(2), kind: "photo", src });
+        const covT = +Math.min(resto, HERO_CAP + 2).toFixed(2);
+        beats.push({ id: m.n + "_t", start: ts, dur: resto, cov: covT, key: "s", kind: "raw", src });
+        COVER.push({ start: ts, cov: covT, kind: "photo", src });
         nCola++;
       }
     }
@@ -118,7 +122,8 @@ for (let i = 0; i < N; i++) {
   let cov = zonaFish ? Math.min(slot, 9) : Math.min(slot, HERO_CAP);
   if (!zonaFish && slot - cov > 0.05 && slot - cov < 1.6) cov = slot;   // sin micro-huecos
   cov = +cov.toFixed(2);
-  beats.push({ id: m.n, start: +st.toFixed(2), dur: slot, key: "s", kind: "raw", src });
+  // ⛔ el beat LLEVA su cov: si el Main la recalcula con otra formula quedan huecos de fondo
+  beats.push({ id: m.n, start: +st.toFixed(2), dur: slot, cov, key: "s", kind: "raw", src });
   COVER.push({ start: +st.toFixed(2), cov, kind: "photo", src });
 }
 

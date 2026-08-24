@@ -173,8 +173,11 @@ export const MainFcsaguapiel: React.FC = () => {
 
       {/* CAPA 2 — FOTOS (agnes + hero gpt-image con la cara real del Dr. Federer) */}
       {rawTop.map((b: any) => {
+        // ⛔ ANTI-HUECO: el cov lo decide el GEN (y es lo que simula la compuerta). Recalcularlo
+        // acá con otra fórmula dejaba ~0,7 s de fondo plano entre foto y foto.
         const cap = b.start >= AVATAR_END ? 9 : HERO_CAP;
-        const d = Math.max(1, sec(Math.min(b.dur, cap) + 0.6));
+        const cov = (b as any).cov ?? Math.min(b.dur, cap);
+        const d = Math.max(1, sec(cov + 0.6));
         const half = inHalfR(b.start);
         const shot = <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />;
         return (

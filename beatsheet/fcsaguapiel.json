@@ -7,9 +7,10 @@
    "id": "m001",
    "start": 0,
    "dur": 4.84,
+   "cov": 4.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m001.png"
+   "src": "img/fcsaguapiel_m001.jpg"
   },
   {
    "id": "m002",
@@ -17,15 +18,25 @@
    "dur": 4.92,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m002_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m002.mp4"
+  },
+  {
+   "id": "m002_t",
+   "start": 8.78,
+   "dur": 0.98,
+   "cov": 0.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m002_bk.jpg"
   },
   {
    "id": "m003",
    "start": 9.76,
    "dur": 5.1,
+   "cov": 5.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m003.png"
+   "src": "img/fcsaguapiel_m003.jpg"
   },
   {
    "id": "cmp_0_frasecinetica",
@@ -64,15 +75,16 @@
    "dur": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m004_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m004.mp4"
   },
   {
    "id": "m005",
    "start": 18.88,
    "dur": 3.06,
+   "cov": 3.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m005.png"
+   "src": "img/fcsaguapiel_m005.jpg"
   },
   {
    "id": "m006",
@@ -80,7 +92,7 @@
    "dur": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m006_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m006.mp4"
   },
   {
    "id": "m007",
@@ -88,15 +100,16 @@
    "dur": 3.62,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m007_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m007.mp4"
   },
   {
    "id": "m008",
    "start": 29.62,
    "dur": 4.64,
+   "cov": 4.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m008.png"
+   "src": "img/fcsaguapiel_m008.jpg"
   },
   {
    "id": "m009",
@@ -104,15 +117,16 @@
    "dur": 6.26,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m009_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m009.mp4"
   },
   {
    "id": "m010",
    "start": 40.52,
    "dur": 4.96,
+   "cov": 4.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m010.png"
+   "src": "img/fcsaguapiel_m010.jpg"
   },
   {
    "id": "m011",
@@ -120,15 +134,25 @@
    "dur": 5.36,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m011.mp4"
+   "src": "broll/opt/fcsaguapiel_m011.mp4"
+  },
+  {
+   "id": "m011_t",
+   "start": 49.42,
+   "dur": 1.42,
+   "cov": 1.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m011_bk.jpg"
   },
   {
    "id": "m013",
    "start": 55.18,
    "dur": 3.9,
+   "cov": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m013.png"
+   "src": "img/fcsaguapiel_m013.jpg"
   },
   {
    "id": "cmp_1_lowerthird",
@@ -147,15 +171,16 @@
    "dur": 8.74,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m014.mp4"
+   "src": "broll/opt/fcsaguapiel_m014.mp4"
   },
   {
    "id": "m015",
    "start": 67.82,
    "dur": 4.12,
+   "cov": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m015.png"
+   "src": "img/fcsaguapiel_m015.jpg"
   },
   {
    "id": "m016",
@@ -163,23 +188,25 @@
    "dur": 6.88,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m016_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m016.mp4"
   },
   {
    "id": "m017",
    "start": 78.82,
    "dur": 4.6,
+   "cov": 4.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m017.png"
+   "src": "img/fcsaguapiel_m017.jpg"
   },
   {
    "id": "m018",
    "start": 83.42,
    "dur": 4.4,
+   "cov": 4.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m018.png"
+   "src": "img/fcsaguapiel_m018.jpg"
   },
   {
    "id": "m019",
@@ -187,7 +214,16 @@
    "dur": 3.52,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m019_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m019.mp4"
+  },
+  {
+   "id": "m020",
+   "start": 91.34,
+   "dur": 6.8,
+   "cov": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m020.jpg"
   },
   {
    "id": "m021",
@@ -195,15 +231,16 @@
    "dur": 3.42,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m021.mp4"
+   "src": "broll/opt/fcsaguapiel_m021.mp4"
   },
   {
    "id": "m022",
    "start": 101.56,
    "dur": 2.74,
+   "cov": 2.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m022.png"
+   "src": "img/fcsaguapiel_m022.jpg"
   },
   {
    "id": "cmp_2_pizarraexplica",
@@ -234,23 +271,25 @@
    "dur": 8.66,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m023_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m023.mp4"
   },
   {
    "id": "m024",
    "start": 112.96,
    "dur": 7.1,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m024.png"
+   "src": "img/fcsaguapiel_m024.jpg"
   },
   {
    "id": "m026",
    "start": 125.02,
    "dur": 3.42,
+   "cov": 3.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m026.png"
+   "src": "img/fcsaguapiel_m026.jpg"
   },
   {
    "id": "m027",
@@ -258,15 +297,25 @@
    "dur": 5.24,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m027_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m027.mp4"
+  },
+  {
+   "id": "m027_t",
+   "start": 132.38,
+   "dur": 1.3,
+   "cov": 1.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m027_bk.jpg"
   },
   {
    "id": "m028",
    "start": 133.68,
    "dur": 3,
+   "cov": 3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m028.png"
+   "src": "img/fcsaguapiel_m028.jpg"
   },
   {
    "id": "m029",
@@ -274,7 +323,7 @@
    "dur": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m029.mp4"
+   "src": "broll/opt/fcsaguapiel_m029.mp4"
   },
   {
    "id": "cmp_3_splitlist",
@@ -296,9 +345,10 @@
    "id": "m029_t",
    "start": 140.62,
    "dur": 0.54,
+   "cov": 0.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m029.png"
+   "src": "img/fcsaguapiel_m029.jpg"
   },
   {
    "id": "m030",
@@ -306,23 +356,25 @@
    "dur": 3.62,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m030.mp4"
+   "src": "broll/opt/fcsaguapiel_m030.mp4"
   },
   {
    "id": "m031",
    "start": 144.78,
    "dur": 5.6,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m031.png"
+   "src": "img/fcsaguapiel_m031.jpg"
   },
   {
    "id": "m032",
    "start": 150.38,
    "dur": 3.72,
+   "cov": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m032.png"
+   "src": "img/fcsaguapiel_m032.jpg"
   },
   {
    "id": "m033",
@@ -330,15 +382,16 @@
    "dur": 7.34,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m033_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m033.mp4"
   },
   {
    "id": "m034",
    "start": 161.44,
    "dur": 4.42,
+   "cov": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m034.png"
+   "src": "img/fcsaguapiel_m034.jpg"
   },
   {
    "id": "m035",
@@ -346,15 +399,16 @@
    "dur": 4.24,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m035_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m035_st.mp4"
   },
   {
    "id": "m036",
    "start": 170.1,
    "dur": 4.82,
+   "cov": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m036.png"
+   "src": "img/fcsaguapiel_m036.jpg"
   },
   {
    "id": "cmp_4_ingredientduo",
@@ -362,8 +416,8 @@
    "dur": 6.5,
    "key": "s",
    "kind": "ingredientduo",
-   "leftImg": "img/fcsaguapiel_m029.png",
-   "rightImg": "img/fcsaguapiel_m036.png"
+   "leftImg": "img/fcsaguapiel_m029.jpg",
+   "rightImg": "img/fcsaguapiel_m036.jpg"
   },
   {
    "id": "m037",
@@ -371,15 +425,25 @@
    "dur": 4.24,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m037.mp4"
+   "src": "broll/opt/fcsaguapiel_m037.mp4"
+  },
+  {
+   "id": "m037_t",
+   "start": 178.86,
+   "dur": 0.3,
+   "cov": 0.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m037_bk.jpg"
   },
   {
    "id": "m038",
    "start": 179.16,
    "dur": 4.56,
+   "cov": 4.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m038.png"
+   "src": "img/fcsaguapiel_m038.jpg"
   },
   {
    "id": "m039",
@@ -387,31 +451,34 @@
    "dur": 2.52,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m039_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m039.mp4"
   },
   {
    "id": "m040",
    "start": 186.24,
    "dur": 3.92,
+   "cov": 3.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m040.png"
+   "src": "img/fcsaguapiel_m040.jpg"
   },
   {
    "id": "m041",
    "start": 190.16,
    "dur": 2.38,
+   "cov": 2.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m041.png"
+   "src": "img/fcsaguapiel_m041.jpg"
   },
   {
    "id": "m042",
    "start": 192.54,
    "dur": 3.68,
+   "cov": 3.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m042.png"
+   "src": "img/fcsaguapiel_m042.jpg"
   },
   {
    "id": "m043",
@@ -419,47 +486,61 @@
    "dur": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m043_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m043.mp4"
+  },
+  {
+   "id": "m043_t",
+   "start": 200.16,
+   "dur": 0.5,
+   "cov": 0.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m043_bk.jpg"
   },
   {
    "id": "m044",
    "start": 200.66,
    "dur": 2.66,
+   "cov": 2.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m044.png"
+   "src": "img/fcsaguapiel_m044.jpg"
   },
   {
    "id": "m045",
    "start": 203.32,
    "dur": 4.14,
+   "cov": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m045.png"
+   "src": "img/fcsaguapiel_m045.jpg"
   },
   {
    "id": "m046",
    "start": 207.46,
    "dur": 3.94,
+   "cov": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m046.png"
+   "src": "img/fcsaguapiel_m046.jpg"
   },
   {
    "id": "m047",
    "start": 211.4,
    "dur": 4.6,
+   "cov": 4.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m047.png"
+   "src": "img/fcsaguapiel_m047.jpg"
   },
   {
    "id": "m048",
    "start": 216,
    "dur": 3.14,
+   "cov": 3.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m048.png"
+   "src": "img/fcsaguapiel_m048.jpg"
   },
   {
    "id": "m049",
@@ -467,47 +548,52 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m049_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m049.mp4"
   },
   {
    "id": "m050",
    "start": 223.18,
    "dur": 4.88,
+   "cov": 4.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m050.png"
+   "src": "img/fcsaguapiel_m050.jpg"
   },
   {
    "id": "m051",
    "start": 228.06,
    "dur": 4.98,
+   "cov": 4.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m051.png"
+   "src": "img/fcsaguapiel_m051.jpg"
   },
   {
    "id": "m052",
    "start": 233.04,
    "dur": 4.74,
+   "cov": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m052.png"
+   "src": "img/fcsaguapiel_m052.jpg"
   },
   {
    "id": "m053",
    "start": 237.78,
    "dur": 5.62,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m053.png"
+   "src": "img/fcsaguapiel_m053.jpg"
   },
   {
    "id": "m054",
    "start": 243.4,
    "dur": 5.5,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m054.png"
+   "src": "img/fcsaguapiel_m054.jpg"
   },
   {
    "id": "cmp_5_mitoverdad",
@@ -525,15 +611,16 @@
    "dur": 3.44,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m055.mp4"
+   "src": "broll/opt/fcsaguapiel_m055.mp4"
   },
   {
    "id": "m056",
    "start": 252.34,
    "dur": 3.7,
+   "cov": 3.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m056.png"
+   "src": "img/fcsaguapiel_m056.jpg"
   },
   {
    "id": "m058",
@@ -541,23 +628,25 @@
    "dur": 7.74,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m058_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m058.mp4"
   },
   {
    "id": "m059",
    "start": 269.08,
    "dur": 3.4,
+   "cov": 3.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m059.png"
+   "src": "img/fcsaguapiel_m059.jpg"
   },
   {
    "id": "m060",
    "start": 272.48,
    "dur": 5.32,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m060.png"
+   "src": "img/fcsaguapiel_m060.jpg"
   },
   {
    "id": "m061",
@@ -565,7 +654,7 @@
    "dur": 5.58,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m061.mp4"
+   "src": "broll/opt/fcsaguapiel_m061.mp4"
   },
   {
    "id": "m062",
@@ -573,15 +662,16 @@
    "dur": 2.3,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m062.mp4"
+   "src": "broll/opt/fcsaguapiel_m062.mp4"
   },
   {
    "id": "m063",
    "start": 285.68,
    "dur": 3.28,
+   "cov": 3.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m063.png"
+   "src": "img/fcsaguapiel_m063.jpg"
   },
   {
    "id": "cmp_6_stat",
@@ -598,9 +688,10 @@
    "id": "m064",
    "start": 288.96,
    "dur": 4.06,
+   "cov": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m064.png"
+   "src": "img/fcsaguapiel_m064.jpg"
   },
   {
    "id": "m065",
@@ -608,7 +699,7 @@
    "dur": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m065.mp4"
+   "src": "broll/opt/fcsaguapiel_m065.mp4"
   },
   {
    "id": "m068",
@@ -616,15 +707,25 @@
    "dur": 5.16,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m068.mp4"
+   "src": "broll/opt/fcsaguapiel_m068.mp4"
+  },
+  {
+   "id": "m068_t",
+   "start": 313.6,
+   "dur": 1.22,
+   "cov": 1.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m068_bk.jpg"
   },
   {
    "id": "m069",
    "start": 314.82,
    "dur": 4.06,
+   "cov": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m069.png"
+   "src": "img/fcsaguapiel_m069.jpg"
   },
   {
    "id": "m070",
@@ -632,15 +733,16 @@
    "dur": 3.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m070.mp4"
+   "src": "broll/opt/fcsaguapiel_m070.mp4"
   },
   {
    "id": "m071",
    "start": 322.2,
    "dur": 2.56,
+   "cov": 2.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m071.png"
+   "src": "img/fcsaguapiel_m071.jpg"
   },
   {
    "id": "m072",
@@ -648,15 +750,25 @@
    "dur": 4.5,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m072_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m072.mp4"
+  },
+  {
+   "id": "m072_t",
+   "start": 328.7,
+   "dur": 0.56,
+   "cov": 0.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m072_bk.jpg"
   },
   {
    "id": "m073",
    "start": 329.26,
    "dur": 3,
+   "cov": 3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m073.png"
+   "src": "img/fcsaguapiel_m073.jpg"
   },
   {
    "id": "m074",
@@ -664,23 +776,34 @@
    "dur": 4.68,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m074.mp4"
+   "src": "broll/opt/fcsaguapiel_m074.mp4"
+  },
+  {
+   "id": "m074_t",
+   "start": 336.2,
+   "dur": 0.74,
+   "cov": 0.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m074_bk.jpg"
   },
   {
    "id": "m075",
    "start": 336.94,
    "dur": 3.3,
+   "cov": 3.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m075.png"
+   "src": "img/fcsaguapiel_m075.jpg"
   },
   {
    "id": "m076",
    "start": 340.24,
    "dur": 3.76,
+   "cov": 3.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m076.png"
+   "src": "img/fcsaguapiel_m076.jpg"
   },
   {
    "id": "cmp_7_lowerthird",
@@ -699,7 +822,16 @@
    "dur": 4.94,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m077.mp4"
+   "src": "broll/opt/fcsaguapiel_m077.mp4"
+  },
+  {
+   "id": "m077_t",
+   "start": 347.94,
+   "dur": 1,
+   "cov": 1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m077_bk.jpg"
   },
   {
    "id": "m078",
@@ -707,23 +839,25 @@
    "dur": 6.84,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m078_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m078.mp4"
   },
   {
    "id": "m079",
    "start": 355.78,
    "dur": 5.74,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m079.png"
+   "src": "img/fcsaguapiel_m079.jpg"
   },
   {
    "id": "m080",
    "start": 361.52,
    "dur": 2.92,
+   "cov": 2.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m080.png"
+   "src": "img/fcsaguapiel_m080.jpg"
   },
   {
    "id": "m081",
@@ -731,15 +865,16 @@
    "dur": 6.72,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m081.mp4"
+   "src": "broll/opt/fcsaguapiel_m081.mp4"
   },
   {
    "id": "m082",
    "start": 371.16,
    "dur": 4.42,
+   "cov": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m082.png"
+   "src": "img/fcsaguapiel_m082.jpg"
   },
   {
    "id": "m084",
@@ -747,23 +882,25 @@
    "dur": 6.48,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m084_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m084_st.mp4"
   },
   {
    "id": "m085",
    "start": 385.98,
    "dur": 7.76,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m085.png"
+   "src": "img/fcsaguapiel_m085.jpg"
   },
   {
    "id": "m086",
    "start": 393.74,
    "dur": 4.36,
+   "cov": 4.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m086.png"
+   "src": "img/fcsaguapiel_m086.jpg"
   },
   {
    "id": "cmp_8_mitoverdad",
@@ -779,9 +916,10 @@
    "id": "m087",
    "start": 398.1,
    "dur": 7.02,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m087.png"
+   "src": "img/fcsaguapiel_m087.jpg"
   },
   {
    "id": "m088",
@@ -789,23 +927,25 @@
    "dur": 4.92,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m088_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m088_st.mp4"
   },
   {
    "id": "m089",
    "start": 410.04,
    "dur": 4.9,
+   "cov": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m089.png"
+   "src": "img/fcsaguapiel_m089.jpg"
   },
   {
    "id": "m090",
    "start": 414.94,
    "dur": 7.54,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m090.png"
+   "src": "img/fcsaguapiel_m090.jpg"
   },
   {
    "id": "m091",
@@ -813,23 +953,34 @@
    "dur": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m091.mp4"
+   "src": "broll/opt/fcsaguapiel_m091.mp4"
+  },
+  {
+   "id": "m091_t",
+   "start": 426.42,
+   "dur": 0.48,
+   "cov": 0.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m091_bk.jpg"
   },
   {
    "id": "m092",
    "start": 426.9,
    "dur": 5,
+   "cov": 5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m092.png"
+   "src": "img/fcsaguapiel_m092.jpg"
   },
   {
    "id": "m093",
    "start": 431.9,
    "dur": 5.16,
+   "cov": 5.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m093.png"
+   "src": "img/fcsaguapiel_m093.jpg"
   },
   {
    "id": "cmp_9_bars",
@@ -858,9 +1009,10 @@
    "id": "m094",
    "start": 437.06,
    "dur": 3.52,
+   "cov": 3.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m094.png"
+   "src": "img/fcsaguapiel_m094.jpg"
   },
   {
    "id": "m095",
@@ -868,15 +1020,16 @@
    "dur": 6.26,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m095.mp4"
+   "src": "broll/opt/fcsaguapiel_m095.mp4"
   },
   {
    "id": "m096",
    "start": 446.84,
    "dur": 4.48,
+   "cov": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m096.png"
+   "src": "img/fcsaguapiel_m096.jpg"
   },
   {
    "id": "m097",
@@ -884,15 +1037,25 @@
    "dur": 5.52,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m097.mp4"
+   "src": "broll/opt/fcsaguapiel_m097.mp4"
+  },
+  {
+   "id": "m097_t",
+   "start": 455.26,
+   "dur": 1.58,
+   "cov": 1.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m097_bk.jpg"
   },
   {
    "id": "m098",
    "start": 456.84,
    "dur": 4.84,
+   "cov": 4.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m098.png"
+   "src": "img/fcsaguapiel_m098.jpg"
   },
   {
    "id": "m099",
@@ -900,23 +1063,25 @@
    "dur": 5.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m099_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m099_st.mp4"
   },
   {
    "id": "m100",
    "start": 466.78,
    "dur": 2.68,
+   "cov": 2.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m100.png"
+   "src": "img/fcsaguapiel_m100.jpg"
   },
   {
    "id": "m101",
    "start": 469.46,
    "dur": 4.26,
+   "cov": 4.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m101.png"
+   "src": "img/fcsaguapiel_m101.jpg"
   },
   {
    "id": "cmp_10_pizarraexplica",
@@ -947,23 +1112,34 @@
    "dur": 4.54,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m102_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m102.mp4"
+  },
+  {
+   "id": "m102_t",
+   "start": 477.66,
+   "dur": 0.6,
+   "cov": 0.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m102_bk.jpg"
   },
   {
    "id": "m103",
    "start": 478.26,
    "dur": 4.96,
+   "cov": 4.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m103.png"
+   "src": "img/fcsaguapiel_m103.jpg"
   },
   {
    "id": "m104",
    "start": 483.22,
    "dur": 3.9,
+   "cov": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m104.png"
+   "src": "img/fcsaguapiel_m104.jpg"
   },
   {
    "id": "m105",
@@ -971,15 +1147,16 @@
    "dur": 2.82,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m105.mp4"
+   "src": "broll/opt/fcsaguapiel_m105.mp4"
   },
   {
    "id": "m106",
    "start": 489.94,
    "dur": 4.14,
+   "cov": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m106.png"
+   "src": "img/fcsaguapiel_m106.jpg"
   },
   {
    "id": "m107",
@@ -987,15 +1164,16 @@
    "dur": 5.66,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m107.mp4"
+   "src": "broll/opt/fcsaguapiel_m107.mp4"
   },
   {
    "id": "m108",
    "start": 499.74,
    "dur": 5.78,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m108.png"
+   "src": "img/fcsaguapiel_m108.jpg"
   },
   {
    "id": "m109",
@@ -1003,15 +1181,16 @@
    "dur": 5.96,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m109.mp4"
+   "src": "broll/opt/fcsaguapiel_m109.mp4"
   },
   {
    "id": "m110",
    "start": 511.48,
    "dur": 5.38,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m110.png"
+   "src": "img/fcsaguapiel_m110.jpg"
   },
   {
    "id": "m111",
@@ -1019,7 +1198,7 @@
    "dur": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m111.mp4"
+   "src": "broll/opt/fcsaguapiel_m111.mp4"
   },
   {
    "id": "cmp_11_frasecinetica",
@@ -1046,25 +1225,28 @@
    "id": "m112",
    "start": 520.88,
    "dur": 6.64,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m112.png"
+   "src": "img/fcsaguapiel_m112.jpg"
   },
   {
    "id": "m113",
    "start": 527.52,
    "dur": 4.58,
+   "cov": 4.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m113.png"
+   "src": "img/fcsaguapiel_m113.jpg"
   },
   {
    "id": "m114",
    "start": 532.1,
    "dur": 5,
+   "cov": 5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m114.png"
+   "src": "img/fcsaguapiel_m114.jpg"
   },
   {
    "id": "m115",
@@ -1072,15 +1254,16 @@
    "dur": 5.84,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m115_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m115.mp4"
   },
   {
    "id": "m116",
    "start": 542.94,
    "dur": 3.46,
+   "cov": 3.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m116.png"
+   "src": "img/fcsaguapiel_m116.jpg"
   },
   {
    "id": "m117",
@@ -1088,23 +1271,25 @@
    "dur": 6.14,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m117.mp4"
+   "src": "broll/opt/fcsaguapiel_m117.mp4"
   },
   {
    "id": "m118",
    "start": 552.54,
    "dur": 4.52,
+   "cov": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m118.png"
+   "src": "img/fcsaguapiel_m118.jpg"
   },
   {
    "id": "m119",
    "start": 557.06,
    "dur": 6.48,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m119.png"
+   "src": "img/fcsaguapiel_m119.jpg"
   },
   {
    "id": "m120",
@@ -1112,15 +1297,16 @@
    "dur": 6.22,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m120_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m120_st.mp4"
   },
   {
    "id": "m121",
    "start": 569.76,
    "dur": 3.56,
+   "cov": 3.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m121.png"
+   "src": "img/fcsaguapiel_m121.jpg"
   },
   {
    "id": "m122",
@@ -1128,23 +1314,34 @@
    "dur": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m122.mp4"
+   "src": "broll/opt/fcsaguapiel_m122.mp4"
+  },
+  {
+   "id": "m122_t",
+   "start": 577.26,
+   "dur": 0.34,
+   "cov": 0.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m122_bk.jpg"
   },
   {
    "id": "m123",
    "start": 577.6,
    "dur": 4.54,
+   "cov": 4.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m123.png"
+   "src": "img/fcsaguapiel_m123.jpg"
   },
   {
    "id": "m124",
    "start": 582.14,
    "dur": 3.6,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m124.png"
+   "src": "img/fcsaguapiel_m124.jpg"
   },
   {
    "id": "cmp_12_process",
@@ -1174,7 +1371,16 @@
    "dur": 5.2,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m125_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m125.mp4"
+  },
+  {
+   "id": "m125_t",
+   "start": 589.68,
+   "dur": 1.26,
+   "cov": 1.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m125_bk.jpg"
   },
   {
    "id": "m126",
@@ -1182,7 +1388,16 @@
    "dur": 4.24,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m126.mp4"
+   "src": "broll/opt/fcsaguapiel_m126.mp4"
+  },
+  {
+   "id": "m126_t",
+   "start": 594.88,
+   "dur": 0.3,
+   "cov": 0.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m126_bk.jpg"
   },
   {
    "id": "m127",
@@ -1190,31 +1405,34 @@
    "dur": 4.3,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m127.mp4"
+   "src": "broll/opt/fcsaguapiel_m127.mp4"
   },
   {
    "id": "m127_t",
    "start": 599.12,
    "dur": 0.36,
+   "cov": 0.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m127.png"
+   "src": "img/fcsaguapiel_m127.jpg"
   },
   {
    "id": "m128",
    "start": 599.48,
    "dur": 2.56,
+   "cov": 2.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m128.png"
+   "src": "img/fcsaguapiel_m128.jpg"
   },
   {
    "id": "m129",
    "start": 602.04,
    "dur": 3.84,
+   "cov": 3.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m129.png"
+   "src": "img/fcsaguapiel_m129.jpg"
   },
   {
    "id": "cmp_13_pliegue",
@@ -1222,8 +1440,8 @@
    "dur": 9,
    "key": "s",
    "kind": "pliegue",
-   "leftImage": "img/fcsaguapiel_m127.png",
-   "rightImage": "img/fcsaguapiel_m129.png",
+   "leftImage": "img/fcsaguapiel_m127.jpg",
+   "rightImage": "img/fcsaguapiel_m129.jpg",
    "leftLabel": "A LOS 30",
    "rightLabel": "A LOS 60 Y TANTOS",
    "leftSeconds": 0,
@@ -1236,23 +1454,34 @@
    "dur": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m130_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m130.mp4"
+  },
+  {
+   "id": "m130_t",
+   "start": 609.82,
+   "dur": 0.58,
+   "cov": 0.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m130_bk.jpg"
   },
   {
    "id": "m131",
    "start": 610.4,
    "dur": 4.44,
+   "cov": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m131.png"
+   "src": "img/fcsaguapiel_m131.jpg"
   },
   {
    "id": "m132",
    "start": 614.84,
    "dur": 2.76,
+   "cov": 2.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m132.png"
+   "src": "img/fcsaguapiel_m132.jpg"
   },
   {
    "id": "m133",
@@ -1260,15 +1489,25 @@
    "dur": 5.18,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m133.mp4"
+   "src": "broll/opt/fcsaguapiel_m133.mp4"
+  },
+  {
+   "id": "m133_t",
+   "start": 621.54,
+   "dur": 1.24,
+   "cov": 1.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m133_bk.jpg"
   },
   {
    "id": "m134",
    "start": 622.78,
    "dur": 4.22,
+   "cov": 4.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m134.png"
+   "src": "img/fcsaguapiel_m134.jpg"
   },
   {
    "id": "cmp_14_frasecinetica",
@@ -1300,31 +1539,34 @@
    "dur": 3.28,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m135_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m135_st.mp4"
   },
   {
    "id": "m136",
    "start": 630.28,
    "dur": 3.02,
+   "cov": 3.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m136.png"
+   "src": "img/fcsaguapiel_m136.jpg"
   },
   {
    "id": "m137",
    "start": 633.3,
    "dur": 4.14,
+   "cov": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m137.png"
+   "src": "img/fcsaguapiel_m137.jpg"
   },
   {
    "id": "m138",
    "start": 637.44,
    "dur": 5.46,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m138.png"
+   "src": "img/fcsaguapiel_m138.jpg"
   },
   {
    "id": "m139",
@@ -1332,31 +1574,34 @@
    "dur": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m139.mp4"
+   "src": "broll/opt/fcsaguapiel_m139.mp4"
   },
   {
    "id": "m140",
    "start": 646.92,
    "dur": 5.24,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m140.png"
+   "src": "img/fcsaguapiel_m140.jpg"
   },
   {
    "id": "m141",
    "start": 652.16,
    "dur": 4.62,
+   "cov": 4.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_colchon.png"
+   "src": "img/lam_fcsaguapiel_colchon.jpg"
   },
   {
    "id": "m142",
    "start": 656.78,
    "dur": 5.02,
+   "cov": 5.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m142.png"
+   "src": "img/fcsaguapiel_m142.jpg"
   },
   {
    "id": "m143",
@@ -1364,23 +1609,34 @@
    "dur": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m143.mp4"
+   "src": "broll/opt/fcsaguapiel_m143.mp4"
+  },
+  {
+   "id": "m143_t",
+   "start": 665.74,
+   "dur": 0.38,
+   "cov": 0.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m143_bk.jpg"
   },
   {
    "id": "m144",
    "start": 666.12,
    "dur": 4.68,
+   "cov": 4.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m144.png"
+   "src": "img/fcsaguapiel_m144.jpg"
   },
   {
    "id": "m145",
    "start": 670.8,
    "dur": 6.52,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m145.png"
+   "src": "img/fcsaguapiel_m145.jpg"
   },
   {
    "id": "cmp_16_avatarpizarra",
@@ -1410,9 +1666,10 @@
    "id": "m146",
    "start": 677.32,
    "dur": 3.94,
+   "cov": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m146.png"
+   "src": "img/fcsaguapiel_m146.jpg"
   },
   {
    "id": "cmp_15_malla",
@@ -1429,25 +1686,28 @@
    "id": "m147",
    "start": 681.26,
    "dur": 5.32,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_malla.png"
+   "src": "img/lam_fcsaguapiel_malla.jpg"
   },
   {
    "id": "m148",
    "start": 686.58,
    "dur": 4.58,
+   "cov": 4.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m148.png"
+   "src": "img/fcsaguapiel_m148.jpg"
   },
   {
    "id": "m149",
    "start": 691.16,
    "dur": 4.7,
+   "cov": 4.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m149.png"
+   "src": "img/fcsaguapiel_m149.jpg"
   },
   {
    "id": "m150",
@@ -1455,15 +1715,16 @@
    "dur": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m150.mp4"
+   "src": "broll/opt/fcsaguapiel_m150.mp4"
   },
   {
    "id": "m151",
    "start": 699.8,
    "dur": 3.8,
+   "cov": 3.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_fibro.png"
+   "src": "img/lam_fcsaguapiel_fibro.jpg"
   },
   {
    "id": "cmp_17_lowerthird",
@@ -1482,47 +1743,52 @@
    "dur": 7.96,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m152.mp4"
+   "src": "broll/opt/fcsaguapiel_m152.mp4"
   },
   {
    "id": "m154",
    "start": 715.6,
    "dur": 3.86,
+   "cov": 3.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m154.png"
+   "src": "img/fcsaguapiel_m154.jpg"
   },
   {
    "id": "m155",
    "start": 719.46,
    "dur": 4.66,
+   "cov": 4.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m155.png"
+   "src": "img/fcsaguapiel_m155.jpg"
   },
   {
    "id": "m156",
    "start": 724.12,
    "dur": 4.48,
+   "cov": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_caida.png"
+   "src": "img/lam_fcsaguapiel_caida.jpg"
   },
   {
    "id": "m157",
    "start": 728.6,
    "dur": 4.18,
+   "cov": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m157.png"
+   "src": "img/fcsaguapiel_m157.jpg"
   },
   {
    "id": "m158",
    "start": 732.78,
    "dur": 7.42,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m158.png"
+   "src": "img/fcsaguapiel_m158.jpg"
   },
   {
    "id": "cmp_18_lineatiempo",
@@ -1533,18 +1799,18 @@
    "title": "Cómo se cae la malla",
    "marks": [
     {
-     "image": "img/fcsaguapiel_m154.png",
+     "image": "img/fcsaguapiel_m154.jpg",
      "label": "A los 25",
      "sub": "empieza a caer, un poco cada año"
     },
     {
-     "image": "img/fcsaguapiel_m158.png",
+     "image": "img/fcsaguapiel_m158.jpg",
      "label": "La menopausia",
      "sub": "y los cinco años que le siguen",
      "alert": true
     },
     {
-     "image": "img/fcsaguapiel_m167.png",
+     "image": "img/fcsaguapiel_m167.jpg",
      "label": "A los 60 y tantos",
      "sub": "la funda de arriba ya sobra"
     }
@@ -1554,9 +1820,10 @@
    "id": "m159",
    "start": 740.2,
    "dur": 2.7,
+   "cov": 2.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m159.png"
+   "src": "img/fcsaguapiel_m159.jpg"
   },
   {
    "id": "m160",
@@ -1564,23 +1831,25 @@
    "dur": 10.6,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m160_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m160_st.mp4"
   },
   {
    "id": "m161",
    "start": 753.5,
    "dur": 3.98,
+   "cov": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m161.png"
+   "src": "img/fcsaguapiel_m161.jpg"
   },
   {
    "id": "m162",
    "start": 757.48,
    "dur": 7.76,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m162.png"
+   "src": "img/fcsaguapiel_m162.jpg"
   },
   {
    "id": "m163",
@@ -1588,15 +1857,16 @@
    "dur": 2.66,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m163_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m163_st.mp4"
   },
   {
    "id": "m164",
    "start": 767.9,
    "dur": 3.94,
+   "cov": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m164.png"
+   "src": "img/fcsaguapiel_m164.jpg"
   },
   {
    "id": "m165",
@@ -1604,15 +1874,16 @@
    "dur": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m165_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m165.mp4"
   },
   {
    "id": "m166",
    "start": 775.82,
    "dur": 4.76,
+   "cov": 4.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m166.png"
+   "src": "img/fcsaguapiel_m166.jpg"
   },
   {
    "id": "m167",
@@ -1620,15 +1891,16 @@
    "dur": 2.6,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m167_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m167.mp4"
   },
   {
    "id": "m168",
    "start": 783.18,
    "dur": 5.84,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m168.png"
+   "src": "img/fcsaguapiel_m168.jpg"
   },
   {
    "id": "cmp_19_frasecinetica",
@@ -1658,9 +1930,10 @@
    "id": "m169",
    "start": 789.02,
    "dur": 4.1,
+   "cov": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m169.png"
+   "src": "img/fcsaguapiel_m169.jpg"
   },
   {
    "id": "m170",
@@ -1668,23 +1941,34 @@
    "dur": 4.86,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m170_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m170.mp4"
+  },
+  {
+   "id": "m170_t",
+   "start": 797.06,
+   "dur": 0.92,
+   "cov": 0.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m170_bk.jpg"
   },
   {
    "id": "m171",
    "start": 797.98,
    "dur": 5.2,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m171.png"
+   "src": "img/fcsaguapiel_m171.jpg"
   },
   {
    "id": "m172",
    "start": 803.18,
    "dur": 4.64,
+   "cov": 4.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m172.png"
+   "src": "img/fcsaguapiel_m172.jpg"
   },
   {
    "id": "m173",
@@ -1692,23 +1976,34 @@
    "dur": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m173.mp4"
+   "src": "broll/opt/fcsaguapiel_m173.mp4"
+  },
+  {
+   "id": "m173_t",
+   "start": 811.76,
+   "dur": 0.8,
+   "cov": 0.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m173_bk.jpg"
   },
   {
    "id": "m174",
    "start": 812.56,
    "dur": 4.84,
+   "cov": 4.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m174.png"
+   "src": "img/fcsaguapiel_m174.jpg"
   },
   {
    "id": "m176",
    "start": 822.08,
    "dur": 4.74,
+   "cov": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m176.png"
+   "src": "img/fcsaguapiel_m176.jpg"
   },
   {
    "id": "m177",
@@ -1716,31 +2011,34 @@
    "dur": 5.68,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m177.mp4"
+   "src": "broll/opt/fcsaguapiel_m177.mp4"
   },
   {
    "id": "m178",
    "start": 832.5,
    "dur": 3.04,
+   "cov": 3.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_colador.png"
+   "src": "img/lam_fcsaguapiel_colador.jpg"
   },
   {
    "id": "m179",
    "start": 835.54,
    "dur": 5.18,
+   "cov": 5.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m179.png"
+   "src": "img/fcsaguapiel_m179.jpg"
   },
   {
    "id": "m180",
    "start": 840.72,
    "dur": 3.4,
+   "cov": 3.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m180.png"
+   "src": "img/fcsaguapiel_m180.jpg"
   },
   {
    "id": "cmp_20_pizarraexplica",
@@ -1769,9 +2067,10 @@
    "id": "m181",
    "start": 844.12,
    "dur": 5.34,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m181.png"
+   "src": "img/fcsaguapiel_m181.jpg"
   },
   {
    "id": "m182",
@@ -1779,23 +2078,34 @@
    "dur": 5.36,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m182_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m182.mp4"
+  },
+  {
+   "id": "m182_t",
+   "start": 853.4,
+   "dur": 1.42,
+   "cov": 1.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m182_bk.jpg"
   },
   {
    "id": "m183",
    "start": 854.82,
    "dur": 3.92,
+   "cov": 3.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m183.png"
+   "src": "img/fcsaguapiel_m183.jpg"
   },
   {
    "id": "m184",
    "start": 858.74,
    "dur": 2.94,
+   "cov": 2.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m184.png"
+   "src": "img/fcsaguapiel_m184.jpg"
   },
   {
    "id": "cmp_21_colador",
@@ -1811,9 +2121,10 @@
    "id": "m185",
    "start": 861.68,
    "dur": 7.12,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_escala.png"
+   "src": "img/lam_fcsaguapiel_escala.jpg"
   },
   {
    "id": "m186",
@@ -1821,7 +2132,7 @@
    "dur": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m186_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m186.mp4"
   },
   {
    "id": "cmp_22_freezezoom",
@@ -1829,18 +2140,28 @@
    "dur": 4.5,
    "key": "s",
    "kind": "freezezoom",
-   "image": "img/fcsaguapiel_m186.png",
+   "image": "img/fcsaguapiel_m186.jpg",
    "label": "No es que sea difícil: es que no cabe",
    "zoom": 1.22,
    "tone": "warn"
   },
   {
+   "id": "m186_t",
+   "start": 872.74,
+   "dur": 0.38,
+   "cov": 0.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m186.jpg"
+  },
+  {
    "id": "m187",
    "start": 873.12,
    "dur": 5.92,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m187.png"
+   "src": "img/fcsaguapiel_m187.jpg"
   },
   {
    "id": "m188",
@@ -1848,39 +2169,52 @@
    "dur": 5.44,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m188_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m188.mp4"
+  },
+  {
+   "id": "m188_t",
+   "start": 882.98,
+   "dur": 1.5,
+   "cov": 1.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m188_bk.jpg"
   },
   {
    "id": "m189",
    "start": 884.48,
    "dur": 4.68,
+   "cov": 4.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m189.png"
+   "src": "img/fcsaguapiel_m189.jpg"
   },
   {
    "id": "m190",
    "start": 889.16,
    "dur": 4.76,
+   "cov": 4.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_crema.png"
+   "src": "img/lam_fcsaguapiel_crema.jpg"
   },
   {
    "id": "m191",
    "start": 893.92,
    "dur": 4.6,
+   "cov": 4.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m191.png"
+   "src": "img/fcsaguapiel_m191.jpg"
   },
   {
    "id": "m192",
    "start": 898.52,
    "dur": 6.28,
+   "cov": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m192.png"
+   "src": "img/fcsaguapiel_m192.jpg"
   },
   {
    "id": "m193",
@@ -1888,23 +2222,43 @@
    "dur": 4.7,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m193.mp4"
+   "src": "broll/opt/fcsaguapiel_m193.mp4"
+  },
+  {
+   "id": "m193_t",
+   "start": 908.74,
+   "dur": 0.76,
+   "cov": 0.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m193_bk.jpg"
+  },
+  {
+   "id": "m194",
+   "start": 909.5,
+   "dur": 4.98,
+   "cov": 4.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m194.jpg"
   },
   {
    "id": "m195",
    "start": 914.48,
    "dur": 5.4,
+   "cov": 5.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h01.png"
+   "src": "img/fcsaguapiel_h01.jpg"
   },
   {
    "id": "m196",
    "start": 919.88,
    "dur": 6.64,
+   "cov": 6.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m196.png"
+   "src": "img/fcsaguapiel_m196.jpg"
   },
   {
    "id": "m197",
@@ -1912,7 +2266,7 @@
    "dur": 8.3,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m197_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m197_st.mp4"
   },
   {
    "id": "cmp_23_pricewar",
@@ -1920,8 +2274,8 @@
    "dur": 8,
    "key": "s",
    "kind": "pricewar",
-   "leftImage": "img/fcsaguapiel_m199.png",
-   "rightImage": "img/fcsaguapiel_m171.png",
+   "leftImage": "img/fcsaguapiel_m199.jpg",
+   "rightImage": "img/fcsaguapiel_m171.jpg",
    "leftPrice": "8",
    "rightPrice": "900",
    "leftLabel": "Grenetina de la tienda",
@@ -1934,17 +2288,19 @@
    "id": "m198",
    "start": 934.82,
    "dur": 4.72,
+   "cov": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m198.png"
+   "src": "img/fcsaguapiel_m198.jpg"
   },
   {
    "id": "m199",
    "start": 939.54,
    "dur": 3.76,
+   "cov": 3.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m199.png"
+   "src": "img/fcsaguapiel_m199.jpg"
   },
   {
    "id": "m200",
@@ -1952,31 +2308,43 @@
    "dur": 5.78,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m200_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m200.mp4"
+  },
+  {
+   "id": "m200_t",
+   "start": 947.24,
+   "dur": 1.84,
+   "cov": 1.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m200_bk.jpg"
   },
   {
    "id": "m201",
    "start": 949.08,
    "dur": 6.94,
+   "cov": 6.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h02.png"
+   "src": "img/fcsaguapiel_h02.jpg"
   },
   {
    "id": "m202",
    "start": 956.02,
    "dur": 6.21,
+   "cov": 6.21,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m202.png"
+   "src": "img/fcsaguapiel_m202.jpg"
   },
   {
    "id": "m203",
    "start": 962.23,
    "dur": 3.72,
+   "cov": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m203.png"
+   "src": "img/fcsaguapiel_m203.jpg"
   },
   {
    "id": "m204",
@@ -1984,39 +2352,43 @@
    "dur": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m204_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m204.mp4"
   },
   {
    "id": "m205",
    "start": 970.01,
    "dur": 3.36,
+   "cov": 3.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m205.png"
+   "src": "img/fcsaguapiel_m205.jpg"
   },
   {
    "id": "m206",
    "start": 973.37,
    "dur": 4.24,
+   "cov": 4.24,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_digestion.png"
+   "src": "img/lam_fcsaguapiel_digestion.jpg"
   },
   {
    "id": "m207",
    "start": 977.61,
    "dur": 4.32,
+   "cov": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m207.png"
+   "src": "img/fcsaguapiel_m207.jpg"
   },
   {
    "id": "m208",
    "start": 981.93,
    "dur": 4.4,
+   "cov": 4.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m208.png"
+   "src": "img/fcsaguapiel_m208.jpg"
   },
   {
    "id": "m209",
@@ -2024,23 +2396,25 @@
    "dur": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m209.mp4"
+   "src": "broll/opt/fcsaguapiel_m209.mp4"
   },
   {
    "id": "m210",
    "start": 990.35,
    "dur": 3.72,
+   "cov": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h03.png"
+   "src": "img/fcsaguapiel_h03.jpg"
   },
   {
    "id": "m211",
    "start": 994.07,
    "dur": 4.94,
+   "cov": 4.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m211.png"
+   "src": "img/fcsaguapiel_m211.jpg"
   },
   {
    "id": "m212",
@@ -2048,15 +2422,16 @@
    "dur": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m212.mp4"
+   "src": "broll/opt/fcsaguapiel_m212.mp4"
   },
   {
    "id": "m213",
    "start": 1003.13,
    "dur": 4.36,
+   "cov": 4.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m213.png"
+   "src": "img/fcsaguapiel_m213.jpg"
   },
   {
    "id": "cmp_24_mitoverdad",
@@ -2072,25 +2447,28 @@
    "id": "m214",
    "start": 1007.49,
    "dur": 4.62,
+   "cov": 4.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h25.png"
+   "src": "img/fcsaguapiel_h25.jpg"
   },
   {
    "id": "m215",
    "start": 1012.11,
    "dur": 5.26,
+   "cov": 5.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m215.png"
+   "src": "img/fcsaguapiel_m215.jpg"
   },
   {
    "id": "m216",
    "start": 1017.37,
    "dur": 8.8,
+   "cov": 8.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m216.png"
+   "src": "img/fcsaguapiel_m216.jpg"
   },
   {
    "id": "m217",
@@ -2098,15 +2476,25 @@
    "dur": 5.08,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m217.mp4"
+   "src": "broll/opt/fcsaguapiel_m217.mp4"
+  },
+  {
+   "id": "m217_t",
+   "start": 1030.11,
+   "dur": 1.14,
+   "cov": 1.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m217_bk.jpg"
   },
   {
    "id": "m218",
    "start": 1031.25,
    "dur": 4.28,
+   "cov": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m218.png"
+   "src": "img/fcsaguapiel_m218.jpg"
   },
   {
    "id": "m219",
@@ -2114,15 +2502,25 @@
    "dur": 5.06,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m219.mp4"
+   "src": "broll/opt/fcsaguapiel_m219.mp4"
+  },
+  {
+   "id": "m219_t",
+   "start": 1039.47,
+   "dur": 1.12,
+   "cov": 1.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m219_bk.jpg"
   },
   {
    "id": "m220",
    "start": 1040.59,
    "dur": 6.42,
+   "cov": 6.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m220.png"
+   "src": "img/fcsaguapiel_m220.jpg"
   },
   {
    "id": "m221",
@@ -2130,23 +2528,34 @@
    "dur": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m221_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m221.mp4"
+  },
+  {
+   "id": "m221_t",
+   "start": 1050.95,
+   "dur": 0.54,
+   "cov": 0.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m221_bk.jpg"
   },
   {
    "id": "m222",
    "start": 1051.49,
    "dur": 3.96,
+   "cov": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m222.png"
+   "src": "img/fcsaguapiel_m222.jpg"
   },
   {
    "id": "m223",
    "start": 1055.45,
    "dur": 5.3,
+   "cov": 5.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m223.png"
+   "src": "img/fcsaguapiel_m223.jpg"
   },
   {
    "id": "cmp_25_lowerthird",
@@ -2163,9 +2572,10 @@
    "id": "m224",
    "start": 1060.75,
    "dur": 3.78,
+   "cov": 3.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m224.png"
+   "src": "img/fcsaguapiel_m224.jpg"
   },
   {
    "id": "m225",
@@ -2173,15 +2583,16 @@
    "dur": 3.36,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m225.mp4"
+   "src": "broll/opt/fcsaguapiel_m225.mp4"
   },
   {
    "id": "m226",
    "start": 1067.89,
    "dur": 5.48,
+   "cov": 5.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_fragmento.png"
+   "src": "img/lam_fcsaguapiel_fragmento.jpg"
   },
   {
    "id": "m227",
@@ -2189,7 +2600,16 @@
    "dur": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m227_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m227.mp4"
+  },
+  {
+   "id": "m227_t",
+   "start": 1077.31,
+   "dur": 0.34,
+   "cov": 0.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m227_bk.jpg"
   },
   {
    "id": "m228",
@@ -2197,23 +2617,25 @@
    "dur": 3.82,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m228.mp4"
+   "src": "broll/opt/fcsaguapiel_m228.mp4"
   },
   {
    "id": "m229",
    "start": 1081.47,
    "dur": 4.86,
+   "cov": 4.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m229.png"
+   "src": "img/fcsaguapiel_m229.jpg"
   },
   {
    "id": "m230",
    "start": 1086.33,
    "dur": 5.56,
+   "cov": 5.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m230.png"
+   "src": "img/fcsaguapiel_m230.jpg"
   },
   {
    "id": "cmp_26_pizarraexplica",
@@ -2242,9 +2664,10 @@
    "id": "m231",
    "start": 1091.89,
    "dur": 5.42,
+   "cov": 5.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m231.png"
+   "src": "img/fcsaguapiel_m231.jpg"
   },
   {
    "id": "m232",
@@ -2252,15 +2675,25 @@
    "dur": 4.76,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m232.mp4"
+   "src": "broll/opt/fcsaguapiel_m232.mp4"
+  },
+  {
+   "id": "m232_t",
+   "start": 1101.25,
+   "dur": 0.82,
+   "cov": 0.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m232_bk.jpg"
   },
   {
    "id": "m233",
    "start": 1102.07,
    "dur": 4.06,
+   "cov": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_obra.png"
+   "src": "img/lam_fcsaguapiel_obra.jpg"
   },
   {
    "id": "m234",
@@ -2268,7 +2701,16 @@
    "dur": 5.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m234.mp4"
+   "src": "broll/opt/fcsaguapiel_m234.mp4"
+  },
+  {
+   "id": "m234_t",
+   "start": 1110.07,
+   "dur": 1.08,
+   "cov": 1.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m234_bk.jpg"
   },
   {
    "id": "m235",
@@ -2276,7 +2718,7 @@
    "dur": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m235.mp4"
+   "src": "broll/opt/fcsaguapiel_m235.mp4"
   },
   {
    "id": "cmp_27_frasecinetica",
@@ -2306,17 +2748,19 @@
    "id": "m236",
    "start": 1115.29,
    "dur": 5.12,
+   "cov": 5.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m236.png"
+   "src": "img/fcsaguapiel_m236.jpg"
   },
   {
    "id": "m237",
    "start": 1120.41,
    "dur": 5,
+   "cov": 5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m237.png"
+   "src": "img/fcsaguapiel_m237.jpg"
   },
   {
    "id": "m238",
@@ -2324,7 +2768,7 @@
    "dur": 3.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m238_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m238.mp4"
   },
   {
    "id": "m239",
@@ -2332,15 +2776,25 @@
    "dur": 4.98,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m239.mp4"
+   "src": "broll/opt/fcsaguapiel_m239.mp4"
+  },
+  {
+   "id": "m239_t",
+   "start": 1132.45,
+   "dur": 1.04,
+   "cov": 1.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m239_bk.jpg"
   },
   {
    "id": "m240",
    "start": 1133.49,
    "dur": 5.36,
+   "cov": 5.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m240.png"
+   "src": "img/fcsaguapiel_m240.jpg"
   },
   {
    "id": "m241",
@@ -2348,7 +2802,16 @@
    "dur": 5.66,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m241_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m241.mp4"
+  },
+  {
+   "id": "m241_t",
+   "start": 1142.79,
+   "dur": 1.72,
+   "cov": 1.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m241_bk.jpg"
   },
   {
    "id": "m242",
@@ -2356,47 +2819,52 @@
    "dur": 3.04,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m242_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m242.mp4"
   },
   {
    "id": "m243",
    "start": 1147.55,
    "dur": 4.98,
+   "cov": 4.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h26.png"
+   "src": "img/fcsaguapiel_h26.jpg"
   },
   {
    "id": "m244",
    "start": 1152.53,
    "dur": 2.76,
+   "cov": 2.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m244.png"
+   "src": "img/fcsaguapiel_m244.jpg"
   },
   {
    "id": "m245",
    "start": 1155.29,
    "dur": 2.76,
+   "cov": 2.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h35.png"
+   "src": "img/fcsaguapiel_h35.jpg"
   },
   {
    "id": "m246",
    "start": 1158.05,
    "dur": 3.62,
+   "cov": 3.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h18.png"
+   "src": "img/fcsaguapiel_h18.jpg"
   },
   {
    "id": "m247",
    "start": 1161.67,
    "dur": 6.6,
+   "cov": 6.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m247.png"
+   "src": "img/fcsaguapiel_m247.jpg"
   },
   {
    "id": "cmp_28_lowerthird",
@@ -2413,9 +2881,10 @@
    "id": "m248",
    "start": 1168.27,
    "dur": 4.04,
+   "cov": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m248.png"
+   "src": "img/fcsaguapiel_m248.jpg"
   },
   {
    "id": "m249",
@@ -2423,15 +2892,25 @@
    "dur": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m249.mp4"
+   "src": "broll/opt/fcsaguapiel_m249.mp4"
+  },
+  {
+   "id": "m249_t",
+   "start": 1176.25,
+   "dur": 0.58,
+   "cov": 0.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m249_bk.jpg"
   },
   {
    "id": "m250",
    "start": 1176.83,
    "dur": 11.7,
+   "cov": 9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m250.png"
+   "src": "img/fcsaguapiel_m250.jpg"
   },
   {
    "id": "cmp_29_callout",
@@ -2442,15 +2921,16 @@
    "figure": "114",
    "eyebrow": "2014 · doble ciego con placebo",
    "caption": "mujeres de 45 a 65 años · 2,5 g al día · 8 semanas",
-   "image": "img/fcsaguapiel_m250.png"
+   "image": "img/fcsaguapiel_m250.jpg"
   },
   {
    "id": "m251",
    "start": 1188.53,
    "dur": 6.58,
+   "cov": 6.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m251.png"
+   "src": "img/fcsaguapiel_m251.jpg"
   },
   {
    "id": "m252",
@@ -2458,31 +2938,34 @@
    "dur": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m252_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m252.mp4"
   },
   {
    "id": "m253",
    "start": 1199.09,
    "dur": 4.12,
+   "cov": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m253.png"
+   "src": "img/fcsaguapiel_m253.jpg"
   },
   {
    "id": "m254",
    "start": 1203.21,
    "dur": 3.96,
+   "cov": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m254.png"
+   "src": "img/fcsaguapiel_m254.jpg"
   },
   {
    "id": "m255",
    "start": 1207.17,
    "dur": 6,
+   "cov": 6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m255.png"
+   "src": "img/fcsaguapiel_m255.jpg"
   },
   {
    "id": "cmp_30_stat",
@@ -2501,15 +2984,16 @@
    "dur": 3.52,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m256.mp4"
+   "src": "broll/opt/fcsaguapiel_m256.mp4"
   },
   {
    "id": "m257",
    "start": 1216.69,
    "dur": 6.4,
+   "cov": 6.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m257.png"
+   "src": "img/fcsaguapiel_m257.jpg"
   },
   {
    "id": "m258",
@@ -2517,23 +3001,34 @@
    "dur": 5.66,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m258.mp4"
+   "src": "broll/opt/fcsaguapiel_m258.mp4"
+  },
+  {
+   "id": "m258_t",
+   "start": 1227.03,
+   "dur": 1.72,
+   "cov": 1.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m258_bk.jpg"
   },
   {
    "id": "m259",
    "start": 1228.75,
    "dur": 5.06,
+   "cov": 5.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m259.png"
+   "src": "img/fcsaguapiel_m259.jpg"
   },
   {
    "id": "m260",
    "start": 1233.81,
    "dur": 5.68,
+   "cov": 5.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m260.png"
+   "src": "img/fcsaguapiel_m260.jpg"
   },
   {
    "id": "cmp_31_bars",
@@ -2560,9 +3055,10 @@
    "id": "m261",
    "start": 1239.49,
    "dur": 6.46,
+   "cov": 6.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m261.png"
+   "src": "img/fcsaguapiel_m261.jpg"
   },
   {
    "id": "m262",
@@ -2570,15 +3066,16 @@
    "dur": 3.2,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m262.mp4"
+   "src": "broll/opt/fcsaguapiel_m262.mp4"
   },
   {
    "id": "m263",
    "start": 1249.15,
    "dur": 4.46,
+   "cov": 4.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m263.png"
+   "src": "img/fcsaguapiel_m263.jpg"
   },
   {
    "id": "cmp_32_carrusel",
@@ -2589,31 +3086,31 @@
    "title": "Los cinco, en orden",
    "items": [
     {
-     "image": "img/fcsaguapiel_m266.png",
+     "image": "img/fcsaguapiel_m266.jpg",
      "num": "1",
      "title": "La firmeza",
      "sub": "la calidad de la tela"
     },
     {
-     "image": "img/fcsaguapiel_m280.png",
+     "image": "img/fcsaguapiel_m280.jpg",
      "num": "2",
      "title": "Hidratación desde adentro",
      "sub": "no te falta agua: te falta la esponja"
     },
     {
-     "image": "img/fcsaguapiel_m309.png",
+     "image": "img/fcsaguapiel_m309.jpg",
      "num": "3",
      "title": "El sueño",
      "sub": "la glicina — el que nadie se espera"
     },
     {
-     "image": "img/fcsaguapiel_m335.png",
+     "image": "img/fcsaguapiel_m335.jpg",
      "num": "4",
      "title": "Las rodillas",
      "sub": "y la primera señal, que no está en el espejo"
     },
     {
-     "image": "img/fcsaguapiel_m352.png",
+     "image": "img/fcsaguapiel_m352.jpg",
      "num": "5",
      "title": "Las uñas",
      "sub": "el testigo que no se deja sobornar"
@@ -2624,25 +3121,28 @@
    "id": "m264",
    "start": 1253.61,
    "dur": 4.56,
+   "cov": 4.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m264.png"
+   "src": "img/fcsaguapiel_m264.jpg"
   },
   {
    "id": "m265",
    "start": 1258.17,
    "dur": 5.74,
+   "cov": 5.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h04.png"
+   "src": "img/fcsaguapiel_h04.jpg"
   },
   {
    "id": "m266",
    "start": 1263.91,
    "dur": 4.7,
+   "cov": 4.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m266.png"
+   "src": "img/fcsaguapiel_m266.jpg"
   },
   {
    "id": "cmp_33_errorstinger",
@@ -2659,9 +3159,10 @@
    "id": "m267",
    "start": 1268.61,
    "dur": 4.76,
+   "cov": 4.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h09.png"
+   "src": "img/fcsaguapiel_h09.jpg"
   },
   {
    "id": "m268",
@@ -2669,15 +3170,16 @@
    "dur": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m268_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m268.mp4"
   },
   {
    "id": "m269",
    "start": 1277.31,
    "dur": 5.72,
+   "cov": 5.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m269.png"
+   "src": "img/fcsaguapiel_m269.jpg"
   },
   {
    "id": "m270",
@@ -2685,7 +3187,7 @@
    "dur": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m270.mp4"
+   "src": "broll/opt/fcsaguapiel_m270.mp4"
   },
   {
    "id": "m271",
@@ -2693,15 +3195,16 @@
    "dur": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m271.mp4"
+   "src": "broll/opt/fcsaguapiel_m271.mp4"
   },
   {
    "id": "m272",
    "start": 1290.99,
    "dur": 6.7,
+   "cov": 6.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m272.png"
+   "src": "img/fcsaguapiel_m272.jpg"
   },
   {
    "id": "cmp_34_frasecinetica",
@@ -2731,17 +3234,19 @@
    "id": "m273",
    "start": 1297.69,
    "dur": 3.66,
+   "cov": 3.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m273.png"
+   "src": "img/fcsaguapiel_m273.jpg"
   },
   {
    "id": "m274",
    "start": 1301.35,
    "dur": 4.96,
+   "cov": 4.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m274.png"
+   "src": "img/fcsaguapiel_m274.jpg"
   },
   {
    "id": "m275",
@@ -2749,7 +3254,16 @@
    "dur": 5.2,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m275.mp4"
+   "src": "broll/opt/fcsaguapiel_m275.mp4"
+  },
+  {
+   "id": "m275_t",
+   "start": 1310.25,
+   "dur": 1.26,
+   "cov": 1.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m275_bk.jpg"
   },
   {
    "id": "m276",
@@ -2757,7 +3271,7 @@
    "dur": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m276.mp4"
+   "src": "broll/opt/fcsaguapiel_m276.mp4"
   },
   {
    "id": "cmp_35_guardaesto",
@@ -2775,28 +3289,48 @@
    "prompt": "Anota esto"
   },
   {
+   "id": "m276_t",
+   "start": 1315.45,
+   "dur": 0.78,
+   "cov": 0.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m276_bk.jpg"
+  },
+  {
    "id": "m277",
    "start": 1316.23,
    "dur": 6.98,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m277.mp4"
+   "src": "broll/opt/fcsaguapiel_m277.mp4"
+  },
+  {
+   "id": "m277_t",
+   "start": 1320.17,
+   "dur": 3.04,
+   "cov": 3.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m277_bk.jpg"
   },
   {
    "id": "m278",
    "start": 1323.21,
    "dur": 6.1,
+   "cov": 6.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m278.png"
+   "src": "img/fcsaguapiel_m278.jpg"
   },
   {
    "id": "m279",
    "start": 1329.31,
    "dur": 4.72,
+   "cov": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m279.png"
+   "src": "img/fcsaguapiel_m279.jpg"
   },
   {
    "id": "cmp_36_errorstinger",
@@ -2813,9 +3347,10 @@
    "id": "m280",
    "start": 1334.03,
    "dur": 4.56,
+   "cov": 4.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m280.png"
+   "src": "img/fcsaguapiel_m280.jpg"
   },
   {
    "id": "m281",
@@ -2823,7 +3358,16 @@
    "dur": 6.7,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m281_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m281.mp4"
+  },
+  {
+   "id": "m281_t",
+   "start": 1342.53,
+   "dur": 2.76,
+   "cov": 2.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m281_bk.jpg"
   },
   {
    "id": "m282",
@@ -2831,7 +3375,16 @@
    "dur": 5.78,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m282_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m282.mp4"
+  },
+  {
+   "id": "m282_t",
+   "start": 1349.23,
+   "dur": 1.84,
+   "cov": 1.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m282_bk.jpg"
   },
   {
    "id": "m283",
@@ -2839,15 +3392,16 @@
    "dur": 3,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m283_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m283.mp4"
   },
   {
    "id": "m284",
    "start": 1354.07,
    "dur": 4.18,
+   "cov": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m284.png"
+   "src": "img/fcsaguapiel_m284.jpg"
   },
   {
    "id": "m285",
@@ -2855,15 +3409,25 @@
    "dur": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m285.mp4"
+   "src": "broll/opt/fcsaguapiel_m285.mp4"
+  },
+  {
+   "id": "m285_t",
+   "start": 1362.19,
+   "dur": 0.88,
+   "cov": 0.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m285_bk.jpg"
   },
   {
    "id": "m286",
    "start": 1363.07,
    "dur": 4.34,
+   "cov": 4.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m286.png"
+   "src": "img/fcsaguapiel_m286.jpg"
   },
   {
    "id": "m287",
@@ -2871,7 +3435,7 @@
    "dur": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m287.mp4"
+   "src": "broll/opt/fcsaguapiel_m287.mp4"
   },
   {
    "id": "cmp_37_raisin",
@@ -2884,9 +3448,10 @@
    "id": "m288",
    "start": 1371.51,
    "dur": 4.04,
+   "cov": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m288.png"
+   "src": "img/fcsaguapiel_m288.jpg"
   },
   {
    "id": "cmp_38_frasecinetica",
@@ -2916,9 +3481,10 @@
    "id": "m289",
    "start": 1375.55,
    "dur": 5.72,
+   "cov": 5.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m289.png"
+   "src": "img/fcsaguapiel_m289.jpg"
   },
   {
    "id": "cmp_39_errorstinger",
@@ -2935,25 +3501,37 @@
    "id": "m290",
    "start": 1381.27,
    "dur": 6.76,
+   "cov": 6.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h35.png"
+   "src": "img/fcsaguapiel_h35.jpg"
   },
   {
    "id": "m291",
    "start": 1388.03,
    "dur": 4.42,
+   "cov": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m291.png"
+   "src": "img/fcsaguapiel_m291.jpg"
+  },
+  {
+   "id": "m292",
+   "start": 1392.45,
+   "dur": 3.82,
+   "cov": 3.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m292.jpg"
   },
   {
    "id": "m293",
    "start": 1396.27,
    "dur": 4.14,
+   "cov": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m293.png"
+   "src": "img/fcsaguapiel_m293.jpg"
   },
   {
    "id": "cmp_40_lowerthird",
@@ -2972,23 +3550,34 @@
    "dur": 5.34,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m294_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m294.mp4"
+  },
+  {
+   "id": "m294_t",
+   "start": 1404.35,
+   "dur": 1.4,
+   "cov": 1.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m294_bk.jpg"
   },
   {
    "id": "m295",
    "start": 1405.75,
    "dur": 3.14,
+   "cov": 3.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m295.png"
+   "src": "img/fcsaguapiel_m295.jpg"
   },
   {
    "id": "m296",
    "start": 1408.89,
    "dur": 5.8,
+   "cov": 5.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m296.png"
+   "src": "img/fcsaguapiel_m296.jpg"
   },
   {
    "id": "m297",
@@ -2996,15 +3585,25 @@
    "dur": 5.04,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m297.mp4"
+   "src": "broll/opt/fcsaguapiel_m297.mp4"
+  },
+  {
+   "id": "m297_t",
+   "start": 1418.63,
+   "dur": 1.1,
+   "cov": 1.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m297_bk.jpg"
   },
   {
    "id": "m298",
    "start": 1419.73,
    "dur": 5.06,
+   "cov": 5.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m298.png"
+   "src": "img/fcsaguapiel_m298.jpg"
   },
   {
    "id": "m299",
@@ -3012,7 +3611,7 @@
    "dur": 6.62,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m299_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m299.mp4"
   },
   {
    "id": "cmp_41_callout",
@@ -3023,23 +3622,43 @@
    "figure": "3 g",
    "eyebrow": "Japón · años 2000",
    "caption": "de glicina antes de dormir: se dormían antes y amanecían menos cansados",
-   "image": "img/fcsaguapiel_m299.png"
+   "image": "img/fcsaguapiel_m299.jpg"
+  },
+  {
+   "id": "m299_t",
+   "start": 1428.73,
+   "dur": 2.68,
+   "cov": 2.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m299.jpg"
+  },
+  {
+   "id": "m300",
+   "start": 1431.41,
+   "dur": 5.24,
+   "cov": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m300.jpg"
   },
   {
    "id": "m301",
    "start": 1436.65,
    "dur": 7.12,
+   "cov": 7.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m301.png"
+   "src": "img/fcsaguapiel_m301.jpg"
   },
   {
    "id": "m302",
    "start": 1443.77,
    "dur": 3.84,
+   "cov": 3.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m302.png"
+   "src": "img/fcsaguapiel_m302.jpg"
   },
   {
    "id": "cmp_42_whynight",
@@ -3061,7 +3680,7 @@
    "dur": 3.8,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m303.mp4"
+   "src": "broll/opt/fcsaguapiel_m303.mp4"
   },
   {
    "id": "m304",
@@ -3069,7 +3688,16 @@
    "dur": 5.5,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m304.mp4"
+   "src": "broll/opt/fcsaguapiel_m304.mp4"
+  },
+  {
+   "id": "m304_t",
+   "start": 1455.35,
+   "dur": 1.56,
+   "cov": 1.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m304_bk.jpg"
   },
   {
    "id": "m305",
@@ -3077,15 +3705,16 @@
    "dur": 3.26,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m305.mp4"
+   "src": "broll/opt/fcsaguapiel_m305.mp4"
   },
   {
    "id": "m306",
    "start": 1460.17,
    "dur": 6.4,
+   "cov": 6.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_glicina.png"
+   "src": "img/lam_fcsaguapiel_glicina.jpg"
   },
   {
    "id": "m307",
@@ -3093,23 +3722,34 @@
    "dur": 5.82,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m307_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m307.mp4"
+  },
+  {
+   "id": "m307_t",
+   "start": 1470.51,
+   "dur": 1.88,
+   "cov": 1.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m307_bk.jpg"
   },
   {
    "id": "m308",
    "start": 1472.39,
    "dur": 4.22,
+   "cov": 4.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m308.png"
+   "src": "img/fcsaguapiel_m308.jpg"
   },
   {
    "id": "m309",
    "start": 1476.61,
    "dur": 4.18,
+   "cov": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m309.png"
+   "src": "img/fcsaguapiel_m309.jpg"
   },
   {
    "id": "cmp_43_relojnoche",
@@ -3157,9 +3797,10 @@
    "id": "m310",
    "start": 1480.79,
    "dur": 5.32,
+   "cov": 5.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_noche.png"
+   "src": "img/lam_fcsaguapiel_noche.jpg"
   },
   {
    "id": "m311",
@@ -3167,7 +3808,16 @@
    "dur": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m311.mp4"
+   "src": "broll/opt/fcsaguapiel_m311.mp4"
+  },
+  {
+   "id": "m311_t",
+   "start": 1490.05,
+   "dur": 0.96,
+   "cov": 0.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m311_bk.jpg"
   },
   {
    "id": "m312",
@@ -3175,7 +3825,16 @@
    "dur": 5.36,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m312_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m312.mp4"
+  },
+  {
+   "id": "m312_t",
+   "start": 1494.95,
+   "dur": 1.42,
+   "cov": 1.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m312_bk.jpg"
   },
   {
    "id": "m313",
@@ -3183,7 +3842,7 @@
    "dur": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m313_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m313.mp4"
   },
   {
    "id": "cmp_44_pizarraexplica",
@@ -3209,28 +3868,40 @@
    ]
   },
   {
+   "id": "m313_t",
+   "start": 1500.31,
+   "dur": 0.8,
+   "cov": 0.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m313_bk.jpg"
+  },
+  {
    "id": "m314",
    "start": 1501.11,
    "dur": 3.86,
+   "cov": 3.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m314.png"
+   "src": "img/fcsaguapiel_m314.jpg"
   },
   {
    "id": "m315",
    "start": 1504.97,
    "dur": 6.08,
+   "cov": 6.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m315.png"
+   "src": "img/fcsaguapiel_m315.jpg"
   },
   {
    "id": "m316",
    "start": 1511.05,
    "dur": 5.8,
+   "cov": 5.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m316.png"
+   "src": "img/fcsaguapiel_m316.jpg"
   },
   {
    "id": "m317",
@@ -3238,15 +3909,16 @@
    "dur": 4.88,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m317.mp4"
+   "src": "broll/opt/fcsaguapiel_m317.mp4"
   },
   {
    "id": "m317_t",
    "start": 1520.79,
    "dur": 0.94,
+   "cov": 0.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m317_bk.png"
+   "src": "img/fcsaguapiel_m317_bk.jpg"
   },
   {
    "id": "m318",
@@ -3254,31 +3926,43 @@
    "dur": 6.76,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m318_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m318.mp4"
+  },
+  {
+   "id": "m318_t",
+   "start": 1525.67,
+   "dur": 2.82,
+   "cov": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m318_bk.jpg"
   },
   {
    "id": "m319",
    "start": 1528.49,
    "dur": 4.92,
+   "cov": 4.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m319.png"
+   "src": "img/fcsaguapiel_m319.jpg"
   },
   {
    "id": "m320",
    "start": 1533.41,
    "dur": 7.28,
+   "cov": 7.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m320.png"
+   "src": "img/fcsaguapiel_m320.jpg"
   },
   {
    "id": "m321",
    "start": 1540.69,
    "dur": 4.3,
+   "cov": 4.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m321.png"
+   "src": "img/fcsaguapiel_m321.jpg"
   },
   {
    "id": "m322",
@@ -3286,7 +3970,7 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m322.mp4"
+   "src": "broll/opt/fcsaguapiel_m322.mp4"
   },
   {
    "id": "m323",
@@ -3294,31 +3978,34 @@
    "dur": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m323.mp4"
+   "src": "broll/opt/fcsaguapiel_m323.mp4"
   },
   {
    "id": "m323_t",
    "start": 1552.97,
    "dur": 0.78,
+   "cov": 0.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m323_bk.png"
+   "src": "img/fcsaguapiel_m323_bk.jpg"
   },
   {
    "id": "m324",
    "start": 1553.75,
    "dur": 4.5,
+   "cov": 4.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m324.png"
+   "src": "img/fcsaguapiel_m324.jpg"
   },
   {
    "id": "m325",
    "start": 1558.25,
    "dur": 5.42,
+   "cov": 5.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h32.png"
+   "src": "img/fcsaguapiel_h32.jpg"
   },
   {
    "id": "m326",
@@ -3326,39 +4013,43 @@
    "dur": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m326.mp4"
+   "src": "broll/opt/fcsaguapiel_m326.mp4"
   },
   {
    "id": "m326_t",
    "start": 1567.61,
    "dur": 0.38,
+   "cov": 0.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m326_bk.png"
+   "src": "img/fcsaguapiel_m326_bk.jpg"
   },
   {
    "id": "m327",
    "start": 1567.99,
    "dur": 3.88,
+   "cov": 3.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h33.png"
+   "src": "img/fcsaguapiel_h33.jpg"
   },
   {
    "id": "m328",
    "start": 1571.87,
    "dur": 4.18,
+   "cov": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m328.png"
+   "src": "img/fcsaguapiel_m328.jpg"
   },
   {
    "id": "m329",
    "start": 1576.05,
    "dur": 8.42,
+   "cov": 8.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m329.png"
+   "src": "img/fcsaguapiel_m329.jpg"
   },
   {
    "id": "m330",
@@ -3366,23 +4057,25 @@
    "dur": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m330.mp4"
+   "src": "broll/opt/fcsaguapiel_m330.mp4"
   },
   {
    "id": "m331",
    "start": 1588.57,
    "dur": 6.36,
+   "cov": 6.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m331.png"
+   "src": "img/fcsaguapiel_m331.jpg"
   },
   {
    "id": "m332",
    "start": 1594.93,
    "dur": 3.32,
+   "cov": 3.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m332.png"
+   "src": "img/fcsaguapiel_m332.jpg"
   },
   {
    "id": "m333",
@@ -3390,7 +4083,7 @@
    "dur": 5.06,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m333_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m333.mp4"
   },
   {
    "id": "cmp_45_errorstinger",
@@ -3404,28 +4097,40 @@
    "tone": "teal"
   },
   {
+   "id": "m333_t",
+   "start": 1602.19,
+   "dur": 1.12,
+   "cov": 1.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m333_bk.jpg"
+  },
+  {
    "id": "m334",
    "start": 1603.31,
    "dur": 6.54,
+   "cov": 6.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h14.png"
+   "src": "img/fcsaguapiel_h14.jpg"
   },
   {
    "id": "m335",
    "start": 1609.85,
    "dur": 4.82,
+   "cov": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m335.png"
+   "src": "img/fcsaguapiel_m335.jpg"
   },
   {
    "id": "m336",
    "start": 1614.67,
    "dur": 5,
+   "cov": 5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m336.png"
+   "src": "img/fcsaguapiel_m336.jpg"
   },
   {
    "id": "m337",
@@ -3433,7 +4138,16 @@
    "dur": 5.82,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m337_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m337.mp4"
+  },
+  {
+   "id": "m337_t",
+   "start": 1623.61,
+   "dur": 1.88,
+   "cov": 1.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m337_bk.jpg"
   },
   {
    "id": "m338",
@@ -3441,23 +4155,25 @@
    "dur": 3.8,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m338.mp4"
+   "src": "broll/opt/fcsaguapiel_m338.mp4"
   },
   {
    "id": "m339",
    "start": 1629.29,
    "dur": 4.93,
+   "cov": 4.93,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m339.png"
+   "src": "img/fcsaguapiel_m339.jpg"
   },
   {
    "id": "m340",
    "start": 1634.22,
    "dur": 7.27,
+   "cov": 7.27,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m340.png"
+   "src": "img/fcsaguapiel_m340.jpg"
   },
   {
    "id": "cmp_46_checklist",
@@ -3487,23 +4203,34 @@
    "dur": 5.96,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m341_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m341.mp4"
+  },
+  {
+   "id": "m341_t",
+   "start": 1645.43,
+   "dur": 2.02,
+   "cov": 2.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m341_bk.jpg"
   },
   {
    "id": "m342",
    "start": 1647.45,
    "dur": 4.6,
+   "cov": 4.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h13.png"
+   "src": "img/fcsaguapiel_h13.jpg"
   },
   {
    "id": "m343",
    "start": 1652.05,
    "dur": 5.12,
+   "cov": 5.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m343.png"
+   "src": "img/fcsaguapiel_m343.jpg"
   },
   {
    "id": "m344",
@@ -3511,7 +4238,7 @@
    "dur": 4.3,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m344_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m344.mp4"
   },
   {
    "id": "cmp_47_frasecinetica",
@@ -3538,12 +4265,22 @@
    "tone": "teal"
   },
   {
+   "id": "m344_t",
+   "start": 1661.11,
+   "dur": 0.36,
+   "cov": 0.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m344_bk.jpg"
+  },
+  {
    "id": "m345",
    "start": 1661.47,
    "dur": 4.72,
+   "cov": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m345.png"
+   "src": "img/fcsaguapiel_m345.jpg"
   },
   {
    "id": "m346",
@@ -3551,15 +4288,16 @@
    "dur": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m346.mp4"
+   "src": "broll/opt/fcsaguapiel_m346.mp4"
   },
   {
    "id": "m346_t",
    "start": 1670.13,
    "dur": 0.5,
+   "cov": 0.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m346_bk.png"
+   "src": "img/fcsaguapiel_m346_bk.jpg"
   },
   {
    "id": "m347",
@@ -3567,15 +4305,16 @@
    "dur": 3.88,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m347.mp4"
+   "src": "broll/opt/fcsaguapiel_m347.mp4"
   },
   {
    "id": "m348",
    "start": 1674.51,
    "dur": 4.06,
+   "cov": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m348.png"
+   "src": "img/fcsaguapiel_m348.jpg"
   },
   {
    "id": "cmp_48_errorstinger",
@@ -3592,9 +4331,10 @@
    "id": "m349",
    "start": 1678.57,
    "dur": 7.34,
+   "cov": 7.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m349.png"
+   "src": "img/fcsaguapiel_m349.jpg"
   },
   {
    "id": "m350",
@@ -3602,23 +4342,25 @@
    "dur": 5.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m350.mp4"
+   "src": "broll/opt/fcsaguapiel_m350.mp4"
   },
   {
    "id": "m350_t",
    "start": 1689.85,
    "dur": 1.16,
+   "cov": 1.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m350_bk.png"
+   "src": "img/fcsaguapiel_m350_bk.jpg"
   },
   {
    "id": "m351",
    "start": 1691.01,
    "dur": 9.86,
+   "cov": 9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m351.png"
+   "src": "img/fcsaguapiel_m351.jpg"
   },
   {
    "id": "cmp_49_bars",
@@ -3645,9 +4387,10 @@
    "id": "m352",
    "start": 1700.87,
    "dur": 4.48,
+   "cov": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m352.png"
+   "src": "img/fcsaguapiel_m352.jpg"
   },
   {
    "id": "m353",
@@ -3655,23 +4398,25 @@
    "dur": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m353_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m353.mp4"
   },
   {
    "id": "m354",
    "start": 1709.33,
    "dur": 4.68,
+   "cov": 4.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m354.png"
+   "src": "img/fcsaguapiel_m354.jpg"
   },
   {
    "id": "m355",
    "start": 1714.01,
    "dur": 3.84,
+   "cov": 3.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m355.png"
+   "src": "img/fcsaguapiel_m355.jpg"
   },
   {
    "id": "cmp_50_frasecinetica",
@@ -3703,71 +4448,79 @@
    "dur": 4.36,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m356.mp4"
+   "src": "broll/opt/fcsaguapiel_m356.mp4"
   },
   {
    "id": "m356_t",
    "start": 1721.79,
    "dur": 0.42,
+   "cov": 0.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m356_bk.png"
+   "src": "img/fcsaguapiel_m356_bk.jpg"
   },
   {
    "id": "m357",
    "start": 1722.21,
    "dur": 4.64,
+   "cov": 4.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m357.png"
+   "src": "img/fcsaguapiel_m357.jpg"
   },
   {
    "id": "m358",
    "start": 1726.85,
    "dur": 4.16,
+   "cov": 4.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m358.png"
+   "src": "img/fcsaguapiel_m358.jpg"
   },
   {
    "id": "m359",
    "start": 1731.01,
    "dur": 3.52,
+   "cov": 3.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m359.png"
+   "src": "img/fcsaguapiel_m359.jpg"
   },
   {
    "id": "m360",
    "start": 1734.53,
    "dur": 3.72,
+   "cov": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h19.png"
+   "src": "img/fcsaguapiel_h19.jpg"
   },
   {
    "id": "m361",
    "start": 1738.25,
    "dur": 3.66,
+   "cov": 3.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h37.png"
+   "src": "img/fcsaguapiel_h37.jpg"
   },
   {
    "id": "m362",
    "start": 1741.91,
    "dur": 4.86,
+   "cov": 4.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m362.png"
+   "src": "img/fcsaguapiel_m362.jpg"
   },
   {
    "id": "m363",
    "start": 1746.77,
    "dur": 4.48,
+   "cov": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m363.png"
+   "src": "img/fcsaguapiel_m363.jpg"
   },
   {
    "id": "cmp_51_guidecta",
@@ -3788,25 +4541,28 @@
    "id": "m364",
    "start": 1751.25,
    "dur": 6.86,
+   "cov": 6.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m364.png"
+   "src": "img/fcsaguapiel_m364.jpg"
   },
   {
    "id": "m365",
    "start": 1758.11,
    "dur": 8.22,
+   "cov": 8.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h33.png"
+   "src": "img/fcsaguapiel_h33.jpg"
   },
   {
    "id": "m366",
    "start": 1766.33,
    "dur": 4.52,
+   "cov": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m366.png"
+   "src": "img/fcsaguapiel_m366.jpg"
   },
   {
    "id": "m367",
@@ -3814,15 +4570,25 @@
    "dur": 4.96,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m367_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m367.mp4"
+  },
+  {
+   "id": "m367_t",
+   "start": 1774.79,
+   "dur": 1.02,
+   "cov": 1.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m367_bk.jpg"
   },
   {
    "id": "m368",
    "start": 1775.81,
    "dur": 6.78,
+   "cov": 6.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m368.png"
+   "src": "img/fcsaguapiel_m368.jpg"
   },
   {
    "id": "m369",
@@ -3830,15 +4596,16 @@
    "dur": 3.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m369.mp4"
+   "src": "broll/opt/fcsaguapiel_m369.mp4"
   },
   {
    "id": "m370",
    "start": 1785.69,
    "dur": 4.58,
+   "cov": 4.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m370.png"
+   "src": "img/fcsaguapiel_m370.jpg"
   },
   {
    "id": "cmp_52_ingredientduo",
@@ -3846,8 +4613,8 @@
    "dur": 6.5,
    "key": "s",
    "kind": "ingredientduo",
-   "leftImg": "img/fcsaguapiel_m370.png",
-   "rightImg": "img/fcsaguapiel_m376.png"
+   "leftImg": "img/fcsaguapiel_m370.jpg",
+   "rightImg": "img/fcsaguapiel_m376.jpg"
   },
   {
    "id": "m371",
@@ -3855,15 +4622,16 @@
    "dur": 4,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m371_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m371.mp4"
   },
   {
    "id": "m372",
    "start": 1794.27,
    "dur": 4.28,
+   "cov": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m372.png"
+   "src": "img/fcsaguapiel_m372.jpg"
   },
   {
    "id": "m373",
@@ -3871,23 +4639,25 @@
    "dur": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m373_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m373.mp4"
   },
   {
    "id": "m374",
    "start": 1802.15,
    "dur": 2.9,
+   "cov": 2.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m374.png"
+   "src": "img/fcsaguapiel_m374.jpg"
   },
   {
    "id": "m375",
    "start": 1805.05,
    "dur": 4.7,
+   "cov": 4.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m375.png"
+   "src": "img/fcsaguapiel_m375.jpg"
   },
   {
    "id": "cmp_53_checklist",
@@ -3919,9 +4689,10 @@
    "id": "m376",
    "start": 1809.75,
    "dur": 5.44,
+   "cov": 5.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m376.png"
+   "src": "img/fcsaguapiel_m376.jpg"
   },
   {
    "id": "m377",
@@ -3929,31 +4700,52 @@
    "dur": 4.22,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m377_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m377.mp4"
+  },
+  {
+   "id": "m377_t",
+   "start": 1819.13,
+   "dur": 0.28,
+   "cov": 0.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m377_bk.jpg"
+  },
+  {
+   "id": "m378",
+   "start": 1819.41,
+   "dur": 2.22,
+   "cov": 2.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m378.jpg"
   },
   {
    "id": "m379",
    "start": 1821.63,
    "dur": 3.92,
+   "cov": 3.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h31.png"
+   "src": "img/fcsaguapiel_h31.jpg"
   },
   {
    "id": "m380",
    "start": 1825.55,
    "dur": 6.34,
+   "cov": 6.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m380.png"
+   "src": "img/fcsaguapiel_m380.jpg"
   },
   {
    "id": "m381",
    "start": 1831.89,
    "dur": 4.9,
+   "cov": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m381.png"
+   "src": "img/fcsaguapiel_m381.jpg"
   },
   {
    "id": "cmp_54_pizarraexplica",
@@ -3984,7 +4776,16 @@
    "dur": 5.18,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m382.mp4"
+   "src": "broll/opt/fcsaguapiel_m382.mp4"
+  },
+  {
+   "id": "m382_t",
+   "start": 1840.73,
+   "dur": 1.24,
+   "cov": 1.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m382_bk.jpg"
   },
   {
    "id": "m383",
@@ -3992,55 +4793,61 @@
    "dur": 4.94,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m383.mp4"
+   "src": "broll/opt/fcsaguapiel_m383.mp4"
   },
   {
    "id": "m383_t",
    "start": 1845.91,
    "dur": 1,
+   "cov": 1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m383_bk.png"
+   "src": "img/fcsaguapiel_m383_bk.jpg"
   },
   {
    "id": "m384",
    "start": 1846.91,
    "dur": 4.84,
+   "cov": 4.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m384.png"
+   "src": "img/fcsaguapiel_m384.jpg"
   },
   {
    "id": "m385",
    "start": 1851.75,
    "dur": 5.22,
+   "cov": 5.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m385.png"
+   "src": "img/fcsaguapiel_m385.jpg"
   },
   {
    "id": "m386",
    "start": 1856.97,
    "dur": 4.34,
+   "cov": 4.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m386.png"
+   "src": "img/fcsaguapiel_m386.jpg"
   },
   {
    "id": "m387",
    "start": 1861.31,
    "dur": 7.08,
+   "cov": 7.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m387.png"
+   "src": "img/fcsaguapiel_m387.jpg"
   },
   {
    "id": "m388",
    "start": 1868.39,
    "dur": 3.8,
+   "cov": 3.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h05.png"
+   "src": "img/fcsaguapiel_h05.jpg"
   },
   {
    "id": "m389",
@@ -4048,15 +4855,16 @@
    "dur": 2.56,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m389_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m389.mp4"
   },
   {
    "id": "m390",
    "start": 1874.75,
    "dur": 4.1,
+   "cov": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m390.png"
+   "src": "img/fcsaguapiel_m390.jpg"
   },
   {
    "id": "m391",
@@ -4064,7 +4872,7 @@
    "dur": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m391_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m391_st.mp4"
   },
   {
    "id": "cmp_55_frasecinetica",
@@ -4094,25 +4902,28 @@
    "id": "m392",
    "start": 1882.75,
    "dur": 5.58,
+   "cov": 5.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m392.png"
+   "src": "img/fcsaguapiel_m392.jpg"
   },
   {
    "id": "m393",
    "start": 1888.33,
    "dur": 3.92,
+   "cov": 3.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m393.png"
+   "src": "img/fcsaguapiel_m393.jpg"
   },
   {
    "id": "m394",
    "start": 1892.25,
    "dur": 4.28,
+   "cov": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m394.png"
+   "src": "img/fcsaguapiel_m394.jpg"
   },
   {
    "id": "m395",
@@ -4120,31 +4931,34 @@
    "dur": 5.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m395.mp4"
+   "src": "broll/opt/fcsaguapiel_m395.mp4"
   },
   {
    "id": "m395_t",
    "start": 1900.47,
    "dur": 1.08,
+   "cov": 1.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m395_bk.png"
+   "src": "img/fcsaguapiel_m395_bk.jpg"
   },
   {
    "id": "m396",
    "start": 1901.55,
    "dur": 4.06,
+   "cov": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h06.png"
+   "src": "img/fcsaguapiel_h06.jpg"
   },
   {
    "id": "m397",
    "start": 1905.61,
    "dur": 5.54,
+   "cov": 5.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m397.png"
+   "src": "img/fcsaguapiel_m397.jpg"
   },
   {
    "id": "m398",
@@ -4152,7 +4966,7 @@
    "dur": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m398.mp4"
+   "src": "broll/opt/fcsaguapiel_m398.mp4"
   },
   {
    "id": "cmp_56_recetaescena",
@@ -4163,31 +4977,31 @@
    "title": "La receta, paso a paso",
    "steps": [
     {
-     "image": "img/fcsaguapiel_m398_bk.png",
+     "image": "img/fcsaguapiel_m398_bk.jpg",
      "num": "1",
      "title": "Medio vaso de agua FRÍA",
      "desc": "espolvorea la grenetina como sal a un guisado"
     },
     {
-     "image": "img/lam_fcsaguapiel_florecer.png",
+     "image": "img/lam_fcsaguapiel_florecer.jpg",
      "num": "2",
      "title": "Cinco minutos sin tocarla",
      "desc": "que florezca: cada granito se hincha"
     },
     {
-     "image": "img/fcsaguapiel_m408_bk.png",
+     "image": "img/fcsaguapiel_m408_bk.jpg",
      "num": "3",
      "title": "Media taza de agua caliente",
      "desc": "revuelve hasta que quede transparente. NO hirviendo"
     },
     {
-     "image": "img/fcsaguapiel_m416_bk.png",
+     "image": "img/fcsaguapiel_m416_bk.jpg",
      "num": "4",
      "title": "Espera a que se entibie",
      "desc": "y recién ahí exprime medio limón"
     },
     {
-     "image": "img/fcsaguapiel_m440_bk.png",
+     "image": "img/fcsaguapiel_m440_bk.jpg",
      "num": "5",
      "title": "Tómatelo",
      "desc": "de noche, una hora antes de dormir"
@@ -4200,7 +5014,7 @@
    "dur": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m399_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m399.mp4"
   },
   {
    "id": "m400",
@@ -4208,23 +5022,25 @@
    "dur": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m400.mp4"
+   "src": "broll/opt/fcsaguapiel_m400.mp4"
   },
   {
    "id": "m400_t",
    "start": 1923.29,
    "dur": 0.48,
+   "cov": 0.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m400_bk.png"
+   "src": "img/fcsaguapiel_m400_bk.jpg"
   },
   {
    "id": "m401",
    "start": 1923.77,
    "dur": 8.02,
+   "cov": 8.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m401.png"
+   "src": "img/fcsaguapiel_m401.jpg"
   },
   {
    "id": "m402",
@@ -4232,15 +5048,16 @@
    "dur": 3.6,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m402.mp4"
+   "src": "broll/opt/fcsaguapiel_m402.mp4"
   },
   {
    "id": "m403",
    "start": 1935.39,
    "dur": 4.34,
+   "cov": 4.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m403.png"
+   "src": "img/fcsaguapiel_m403.jpg"
   },
   {
    "id": "cmp_58_stat",
@@ -4257,33 +5074,37 @@
    "id": "m404",
    "start": 1939.73,
    "dur": 4.74,
+   "cov": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m404.png"
+   "src": "img/fcsaguapiel_m404.jpg"
   },
   {
    "id": "m405",
    "start": 1944.47,
    "dur": 5.74,
+   "cov": 5.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_florecer.png"
+   "src": "img/lam_fcsaguapiel_florecer.jpg"
   },
   {
    "id": "m406",
    "start": 1950.21,
    "dur": 6.38,
+   "cov": 6.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m406.png"
+   "src": "img/fcsaguapiel_m406.jpg"
   },
   {
    "id": "m407",
    "start": 1956.59,
    "dur": 4.14,
+   "cov": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m407.png"
+   "src": "img/fcsaguapiel_m407.jpg"
   },
   {
    "id": "m408",
@@ -4291,15 +5112,25 @@
    "dur": 7.96,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m408_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m408.mp4"
+  },
+  {
+   "id": "m408_t",
+   "start": 1964.67,
+   "dur": 4.02,
+   "cov": 4.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m408_bk.jpg"
   },
   {
    "id": "m409",
    "start": 1968.69,
    "dur": 4.28,
+   "cov": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m409.png"
+   "src": "img/fcsaguapiel_m409.jpg"
   },
   {
    "id": "m410",
@@ -4307,7 +5138,7 @@
    "dur": 4.34,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m410.mp4"
+   "src": "broll/opt/fcsaguapiel_m410.mp4"
   },
   {
    "id": "cmp_59_mitoverdad",
@@ -4323,17 +5154,19 @@
    "id": "m410_t",
    "start": 1976.91,
    "dur": 0.4,
+   "cov": 0.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m410_bk.png"
+   "src": "img/fcsaguapiel_m410_bk.jpg"
   },
   {
    "id": "m411",
    "start": 1977.31,
    "dur": 4.76,
+   "cov": 4.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m411.png"
+   "src": "img/fcsaguapiel_m411.jpg"
   },
   {
    "id": "m412",
@@ -4341,31 +5174,43 @@
    "dur": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m412_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m412.mp4"
+  },
+  {
+   "id": "m412_t",
+   "start": 1986.01,
+   "dur": 0.96,
+   "cov": 0.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m412_bk.jpg"
   },
   {
    "id": "m413",
    "start": 1986.97,
    "dur": 3.5,
+   "cov": 3.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m413.png"
+   "src": "img/fcsaguapiel_m413.jpg"
   },
   {
    "id": "m414",
    "start": 1990.47,
    "dur": 6.5,
+   "cov": 6.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h07.png"
+   "src": "img/fcsaguapiel_h07.jpg"
   },
   {
    "id": "m415",
    "start": 1996.97,
    "dur": 3.98,
+   "cov": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h28.png"
+   "src": "img/fcsaguapiel_h28.jpg"
   },
   {
    "id": "m416",
@@ -4373,7 +5218,16 @@
    "dur": 4.2,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m416_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m416.mp4"
+  },
+  {
+   "id": "m416_t",
+   "start": 2004.89,
+   "dur": 0.26,
+   "cov": 0.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m416_bk.jpg"
   },
   {
    "id": "m417",
@@ -4381,7 +5235,7 @@
    "dur": 4.66,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m417_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m417.mp4"
   },
   {
    "id": "cmp_60_ingredientduo",
@@ -4389,64 +5243,80 @@
    "dur": 6.5,
    "key": "s",
    "kind": "ingredientduo",
-   "leftImg": "img/fcsaguapiel_m417_bk.png",
-   "rightImg": "img/fcsaguapiel_m419.png"
+   "leftImg": "img/fcsaguapiel_m417.jpg",
+   "rightImg": "img/fcsaguapiel_m419.jpg"
+  },
+  {
+   "id": "m417_t",
+   "start": 2009.09,
+   "dur": 0.72,
+   "cov": 0.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m417.jpg"
   },
   {
    "id": "m418",
    "start": 2009.81,
    "dur": 5.66,
+   "cov": 5.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m418.png"
+   "src": "img/fcsaguapiel_m418.jpg"
   },
   {
    "id": "m419",
    "start": 2015.47,
    "dur": 4.7,
+   "cov": 4.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m419.png"
+   "src": "img/fcsaguapiel_m419.jpg"
   },
   {
    "id": "m420",
    "start": 2020.17,
    "dur": 5.8,
+   "cov": 5.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m420.png"
+   "src": "img/fcsaguapiel_m420.jpg"
   },
   {
    "id": "m421",
    "start": 2025.97,
    "dur": 4.94,
+   "cov": 4.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m421.png"
+   "src": "img/fcsaguapiel_m421.jpg"
   },
   {
    "id": "m422",
    "start": 2030.91,
    "dur": 3.62,
+   "cov": 3.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m422.png"
+   "src": "img/fcsaguapiel_m422.jpg"
   },
   {
    "id": "m423",
    "start": 2034.53,
    "dur": 7.1,
+   "cov": 7.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_trenza.png"
+   "src": "img/lam_fcsaguapiel_trenza.jpg"
   },
   {
    "id": "m424",
    "start": 2041.63,
    "dur": 5.24,
+   "cov": 5.24,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m424.png"
+   "src": "img/fcsaguapiel_m424.jpg"
   },
   {
    "id": "m425",
@@ -4454,23 +5324,25 @@
    "dur": 4.58,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m425.mp4"
+   "src": "broll/opt/fcsaguapiel_m425.mp4"
   },
   {
    "id": "m425_t",
    "start": 2050.81,
    "dur": 0.64,
+   "cov": 0.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m425_bk.png"
+   "src": "img/fcsaguapiel_m425_bk.jpg"
   },
   {
    "id": "m426",
    "start": 2051.45,
    "dur": 3.96,
+   "cov": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m426.png"
+   "src": "img/fcsaguapiel_m426.jpg"
   },
   {
    "id": "cmp_61_pizarraexplica",
@@ -4499,17 +5371,19 @@
    "id": "m427",
    "start": 2055.41,
    "dur": 5.2,
+   "cov": 5.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_llave.png"
+   "src": "img/lam_fcsaguapiel_llave.jpg"
   },
   {
    "id": "m428",
    "start": 2060.61,
    "dur": 4.12,
+   "cov": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m428.png"
+   "src": "img/fcsaguapiel_m428.jpg"
   },
   {
    "id": "cmp_62_lowerthird",
@@ -4526,33 +5400,37 @@
    "id": "m429",
    "start": 2064.73,
    "dur": 3.76,
+   "cov": 3.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m429.png"
+   "src": "img/fcsaguapiel_m429.jpg"
   },
   {
    "id": "m430",
    "start": 2068.49,
    "dur": 4.96,
+   "cov": 4.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_escorbuto.png"
+   "src": "img/lam_fcsaguapiel_escorbuto.jpg"
   },
   {
    "id": "m431",
    "start": 2073.45,
    "dur": 4.78,
+   "cov": 4.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m431.png"
+   "src": "img/fcsaguapiel_m431.jpg"
   },
   {
    "id": "m432",
    "start": 2078.23,
    "dur": 4.44,
+   "cov": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m432.png"
+   "src": "img/fcsaguapiel_m432.jpg"
   },
   {
    "id": "m433",
@@ -4560,23 +5438,34 @@
    "dur": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m433_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m433.mp4"
+  },
+  {
+   "id": "m433_t",
+   "start": 2086.61,
+   "dur": 0.96,
+   "cov": 0.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m433_bk.jpg"
   },
   {
    "id": "m434",
    "start": 2087.57,
    "dur": 4.76,
+   "cov": 4.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m434.png"
+   "src": "img/fcsaguapiel_m434.jpg"
   },
   {
    "id": "m435",
    "start": 2092.33,
    "dur": 3.8,
+   "cov": 3.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m435.png"
+   "src": "img/fcsaguapiel_m435.jpg"
   },
   {
    "id": "cmp_63_frasecinetica",
@@ -4603,9 +5492,10 @@
    "id": "m436",
    "start": 2096.13,
    "dur": 2.76,
+   "cov": 2.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m436.png"
+   "src": "img/fcsaguapiel_m436.jpg"
   },
   {
    "id": "m437",
@@ -4613,7 +5503,7 @@
    "dur": 4.26,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m437_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m437.mp4"
   },
   {
    "id": "cmp_64_checklist",
@@ -4638,20 +5528,39 @@
    ]
   },
   {
+   "id": "m437_t",
+   "start": 2102.83,
+   "dur": 0.32,
+   "cov": 0.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m437_bk.jpg"
+  },
+  {
    "id": "m438",
    "start": 2103.15,
    "dur": 4.86,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m438_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m438.mp4"
+  },
+  {
+   "id": "m438_t",
+   "start": 2107.09,
+   "dur": 0.92,
+   "cov": 0.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m438_bk.jpg"
   },
   {
    "id": "m439",
    "start": 2108.01,
    "dur": 5.62,
+   "cov": 5.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m439.png"
+   "src": "img/fcsaguapiel_m439.jpg"
   },
   {
    "id": "m440",
@@ -4659,7 +5568,7 @@
    "dur": 2.5,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m440.mp4"
+   "src": "broll/opt/fcsaguapiel_m440.mp4"
   },
   {
    "id": "m441",
@@ -4667,7 +5576,7 @@
    "dur": 3.84,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m441_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m441.mp4"
   },
   {
    "id": "cmp_65_callout",
@@ -4678,23 +5587,25 @@
    "figure": "10 g",
    "eyebrow": "La dosis",
    "caption": "una cucharada sopera rasa ≈ un sobre y medio de los chiquitos",
-   "image": "img/fcsaguapiel_m441_bk.png"
+   "image": "img/fcsaguapiel_m441_bk.jpg"
   },
   {
    "id": "m442",
    "start": 2119.97,
    "dur": 4.74,
+   "cov": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m442.png"
+   "src": "img/fcsaguapiel_m442.jpg"
   },
   {
    "id": "m443",
    "start": 2124.71,
    "dur": 3.78,
+   "cov": 3.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m443.png"
+   "src": "img/fcsaguapiel_m443.jpg"
   },
   {
    "id": "m444",
@@ -4702,23 +5613,25 @@
    "dur": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m444_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m444.mp4"
   },
   {
    "id": "m445",
    "start": 2132.21,
    "dur": 3.28,
+   "cov": 3.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m445.png"
+   "src": "img/fcsaguapiel_m445.jpg"
   },
   {
    "id": "m446",
    "start": 2135.49,
    "dur": 6.24,
+   "cov": 6.24,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m446.png"
+   "src": "img/fcsaguapiel_m446.jpg"
   },
   {
    "id": "cmp_66_hourdial",
@@ -4736,17 +5649,19 @@
    "id": "m447",
    "start": 2141.73,
    "dur": 4.82,
+   "cov": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m447.png"
+   "src": "img/fcsaguapiel_m447.jpg"
   },
   {
    "id": "m448",
    "start": 2146.55,
    "dur": 5.62,
+   "cov": 5.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h08.png"
+   "src": "img/fcsaguapiel_h08.jpg"
   },
   {
    "id": "m449",
@@ -4754,23 +5669,25 @@
    "dur": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m449.mp4"
+   "src": "broll/opt/fcsaguapiel_m449.mp4"
   },
   {
    "id": "m449_t",
    "start": 2156.11,
    "dur": 0.5,
+   "cov": 0.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m449_bk.png"
+   "src": "img/fcsaguapiel_m449_bk.jpg"
   },
   {
    "id": "m450",
    "start": 2156.61,
    "dur": 7.06,
+   "cov": 7.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m450.png"
+   "src": "img/fcsaguapiel_m450.jpg"
   },
   {
    "id": "cmp_67_bars",
@@ -4801,15 +5718,16 @@
    "dur": 3.76,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m451.mp4"
+   "src": "broll/opt/fcsaguapiel_m451.mp4"
   },
   {
    "id": "m452",
    "start": 2167.43,
    "dur": 3.88,
+   "cov": 3.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m452.png"
+   "src": "img/fcsaguapiel_m452.jpg"
   },
   {
    "id": "m453",
@@ -4817,7 +5735,7 @@
    "dur": 3.86,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m453_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m453.mp4"
   },
   {
    "id": "m454",
@@ -4825,55 +5743,61 @@
    "dur": 4.24,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m454.mp4"
+   "src": "broll/opt/fcsaguapiel_m454.mp4"
   },
   {
    "id": "m454_t",
    "start": 2179.11,
    "dur": 0.3,
+   "cov": 0.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m454_bk.png"
+   "src": "img/fcsaguapiel_m454_bk.jpg"
   },
   {
    "id": "m455",
    "start": 2179.41,
    "dur": 3.74,
+   "cov": 3.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m455.png"
+   "src": "img/fcsaguapiel_m455.jpg"
   },
   {
    "id": "m456",
    "start": 2183.15,
    "dur": 4.34,
+   "cov": 4.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m456.png"
+   "src": "img/fcsaguapiel_m456.jpg"
   },
   {
    "id": "m457",
    "start": 2187.49,
    "dur": 2.9,
+   "cov": 2.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m457.png"
+   "src": "img/fcsaguapiel_m457.jpg"
   },
   {
    "id": "m458",
    "start": 2190.39,
    "dur": 4.32,
+   "cov": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m458.png"
+   "src": "img/fcsaguapiel_m458.jpg"
   },
   {
    "id": "m459",
    "start": 2194.71,
    "dur": 4.5,
+   "cov": 4.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m459.png"
+   "src": "img/fcsaguapiel_m459.jpg"
   },
   {
    "id": "cmp_68_process",
@@ -4905,9 +5829,10 @@
    "id": "m460",
    "start": 2199.21,
    "dur": 4,
+   "cov": 4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m460.png"
+   "src": "img/fcsaguapiel_m460.jpg"
   },
   {
    "id": "m461",
@@ -4915,7 +5840,16 @@
    "dur": 6.34,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m461_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m461.mp4"
+  },
+  {
+   "id": "m461_t",
+   "start": 2207.15,
+   "dur": 2.4,
+   "cov": 2.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m461_bk.jpg"
   },
   {
    "id": "m462",
@@ -4923,7 +5857,16 @@
    "dur": 4.26,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m462_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m462.mp4"
+  },
+  {
+   "id": "m462_t",
+   "start": 2213.49,
+   "dur": 0.32,
+   "cov": 0.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m462_bk.jpg"
   },
   {
    "id": "m463",
@@ -4931,7 +5874,7 @@
    "dur": 3.5,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m463_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m463.mp4"
   },
   {
    "id": "m464",
@@ -4939,7 +5882,16 @@
    "dur": 4.96,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m464_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m464.mp4"
+  },
+  {
+   "id": "m464_t",
+   "start": 2221.25,
+   "dur": 1.02,
+   "cov": 1.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m464_bk.jpg"
   },
   {
    "id": "m465",
@@ -4947,7 +5899,7 @@
    "dur": 4.8,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m465_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m465.mp4"
   },
   {
    "id": "cmp_69_freezezoom",
@@ -4955,18 +5907,28 @@
    "dur": 4.5,
    "key": "s",
    "kind": "freezezoom",
-   "image": "img/fcsaguapiel_m465_bk.png",
+   "image": "img/fcsaguapiel_m465.jpg",
    "label": "Si al otro día tiembla solo, eso es colágeno",
    "zoom": 1.2,
    "tone": "teal"
   },
   {
+   "id": "m465_t",
+   "start": 2226.21,
+   "dur": 0.86,
+   "cov": 0.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m465.jpg"
+  },
+  {
    "id": "m466",
    "start": 2227.07,
    "dur": 3.9,
+   "cov": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m466.png"
+   "src": "img/fcsaguapiel_m466.jpg"
   },
   {
    "id": "m467",
@@ -4974,55 +5936,61 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m467_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m467.mp4"
   },
   {
    "id": "m468",
    "start": 2235.01,
    "dur": 4.04,
+   "cov": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m468.png"
+   "src": "img/fcsaguapiel_m468.jpg"
   },
   {
    "id": "m469",
    "start": 2239.05,
    "dur": 4.28,
+   "cov": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m469.png"
+   "src": "img/fcsaguapiel_m469.jpg"
   },
   {
    "id": "m470",
    "start": 2243.33,
    "dur": 6.92,
+   "cov": 6.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h12.png"
+   "src": "img/fcsaguapiel_h12.jpg"
   },
   {
    "id": "m471",
    "start": 2250.25,
    "dur": 4.32,
+   "cov": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h27.png"
+   "src": "img/fcsaguapiel_h27.jpg"
   },
   {
    "id": "m472",
    "start": 2254.57,
    "dur": 4.74,
+   "cov": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h18.png"
+   "src": "img/fcsaguapiel_h18.jpg"
   },
   {
    "id": "m473",
    "start": 2259.31,
    "dur": 4.12,
+   "cov": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m473.png"
+   "src": "img/fcsaguapiel_m473.jpg"
   },
   {
    "id": "cmp_70_checklist",
@@ -5056,31 +6024,34 @@
    "dur": 3.86,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m474_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m474.mp4"
   },
   {
    "id": "m475",
    "start": 2267.29,
    "dur": 4.38,
+   "cov": 4.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m475.png"
+   "src": "img/fcsaguapiel_m475.jpg"
   },
   {
    "id": "m476",
    "start": 2271.67,
    "dur": 5.46,
+   "cov": 5.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m476.png"
+   "src": "img/fcsaguapiel_m476.jpg"
   },
   {
    "id": "m477",
    "start": 2277.13,
    "dur": 4.08,
+   "cov": 4.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m477.png"
+   "src": "img/fcsaguapiel_m477.jpg"
   },
   {
    "id": "m478",
@@ -5088,47 +6059,52 @@
    "dur": 3.74,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m478.mp4"
+   "src": "broll/opt/fcsaguapiel_m478.mp4"
   },
   {
    "id": "m479",
    "start": 2284.95,
    "dur": 4.02,
+   "cov": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m479.png"
+   "src": "img/fcsaguapiel_m479.jpg"
   },
   {
    "id": "m480",
    "start": 2288.97,
    "dur": 4.44,
+   "cov": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m480.png"
+   "src": "img/fcsaguapiel_m480.jpg"
   },
   {
    "id": "m481",
    "start": 2293.41,
    "dur": 7.06,
+   "cov": 7.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m481.png"
+   "src": "img/fcsaguapiel_m481.jpg"
   },
   {
    "id": "m482",
    "start": 2300.47,
    "dur": 4.82,
+   "cov": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m482.png"
+   "src": "img/fcsaguapiel_m482.jpg"
   },
   {
    "id": "m483",
    "start": 2305.29,
    "dur": 4.72,
+   "cov": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m483.png"
+   "src": "img/fcsaguapiel_m483.jpg"
   },
   {
    "id": "m484",
@@ -5136,47 +6112,52 @@
    "dur": 4,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m484_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m484.mp4"
   },
   {
    "id": "m485",
    "start": 2314.01,
    "dur": 3.68,
+   "cov": 3.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m485.png"
+   "src": "img/fcsaguapiel_m485.jpg"
   },
   {
    "id": "m486",
    "start": 2317.69,
    "dur": 3.96,
+   "cov": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h10.png"
+   "src": "img/fcsaguapiel_h10.jpg"
   },
   {
    "id": "m487",
    "start": 2321.65,
    "dur": 5.04,
+   "cov": 5.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m487.png"
+   "src": "img/fcsaguapiel_m487.jpg"
   },
   {
    "id": "m488",
    "start": 2326.69,
    "dur": 4.08,
+   "cov": 4.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m488.png"
+   "src": "img/fcsaguapiel_m488.jpg"
   },
   {
    "id": "m489",
    "start": 2330.77,
    "dur": 3.72,
+   "cov": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m489.png"
+   "src": "img/fcsaguapiel_m489.jpg"
   },
   {
    "id": "m490",
@@ -5184,7 +6165,7 @@
    "dur": 6.14,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m490.mp4"
+   "src": "broll/opt/fcsaguapiel_m490.mp4"
   },
   {
    "id": "cmp_71_mitoverdad",
@@ -5200,49 +6181,55 @@
    "id": "m490_t",
    "start": 2338.43,
    "dur": 2.2,
+   "cov": 2.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m490_bk.png"
+   "src": "img/fcsaguapiel_m490_bk.jpg"
   },
   {
    "id": "m491",
    "start": 2340.63,
    "dur": 4.98,
+   "cov": 4.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m491.png"
+   "src": "img/fcsaguapiel_m491.jpg"
   },
   {
    "id": "m492",
    "start": 2345.61,
    "dur": 3.7,
+   "cov": 3.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m492.png"
+   "src": "img/fcsaguapiel_m492.jpg"
   },
   {
    "id": "m493",
    "start": 2349.31,
    "dur": 5.2,
+   "cov": 5.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m493.png"
+   "src": "img/fcsaguapiel_m493.jpg"
   },
   {
    "id": "m494",
    "start": 2354.51,
    "dur": 4.52,
+   "cov": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m494.png"
+   "src": "img/fcsaguapiel_m494.jpg"
   },
   {
    "id": "m495",
    "start": 2359.03,
    "dur": 4.62,
+   "cov": 4.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m495.png"
+   "src": "img/fcsaguapiel_m495.jpg"
   },
   {
    "id": "m496",
@@ -5250,15 +6237,16 @@
    "dur": 4.58,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m496_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m496.mp4"
   },
   {
    "id": "m497",
    "start": 2368.23,
    "dur": 3.98,
+   "cov": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m497.png"
+   "src": "img/fcsaguapiel_m497.jpg"
   },
   {
    "id": "m498",
@@ -5266,31 +6254,34 @@
    "dur": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m498.mp4"
+   "src": "broll/opt/fcsaguapiel_m498.mp4"
   },
   {
    "id": "m498_t",
    "start": 2376.15,
    "dur": 0.88,
+   "cov": 0.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m498_bk.png"
+   "src": "img/fcsaguapiel_m498_bk.jpg"
   },
   {
    "id": "m499",
    "start": 2377.03,
    "dur": 6.94,
+   "cov": 6.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m499.png"
+   "src": "img/fcsaguapiel_m499.jpg"
   },
   {
    "id": "m500",
    "start": 2383.97,
    "dur": 4.38,
+   "cov": 4.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m500.png"
+   "src": "img/fcsaguapiel_m500.jpg"
   },
   {
    "id": "cmp_72_checklist",
@@ -5320,31 +6311,43 @@
    "dur": 6.18,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m501_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m501.mp4"
+  },
+  {
+   "id": "m501_t",
+   "start": 2392.29,
+   "dur": 2.24,
+   "cov": 2.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m501_bk.jpg"
   },
   {
    "id": "m502",
    "start": 2394.53,
    "dur": 4.36,
+   "cov": 4.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h22.png"
+   "src": "img/fcsaguapiel_h22.jpg"
   },
   {
    "id": "m503",
    "start": 2398.89,
    "dur": 2.78,
+   "cov": 2.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m503.png"
+   "src": "img/fcsaguapiel_m503.jpg"
   },
   {
    "id": "m504",
    "start": 2401.67,
    "dur": 6.82,
+   "cov": 6.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_sol.png"
+   "src": "img/lam_fcsaguapiel_sol.jpg"
   },
   {
    "id": "cmp_73_errorstinger",
@@ -5361,9 +6364,10 @@
    "id": "m505",
    "start": 2408.49,
    "dur": 4.14,
+   "cov": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m505.png"
+   "src": "img/fcsaguapiel_m505.jpg"
   },
   {
    "id": "m506",
@@ -5371,7 +6375,16 @@
    "dur": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m506_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m506.mp4"
+  },
+  {
+   "id": "m506_t",
+   "start": 2416.57,
+   "dur": 0.78,
+   "cov": 0.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m506_bk.jpg"
   },
   {
    "id": "m507",
@@ -5379,15 +6392,16 @@
    "dur": 3.34,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m507_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m507_st.mp4"
   },
   {
    "id": "m508",
    "start": 2420.69,
    "dur": 3.8,
+   "cov": 3.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m508.png"
+   "src": "img/fcsaguapiel_m508.jpg"
   },
   {
    "id": "cmp_74_process",
@@ -5415,33 +6429,37 @@
    "id": "m509",
    "start": 2424.49,
    "dur": 3.88,
+   "cov": 3.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m509.png"
+   "src": "img/fcsaguapiel_m509.jpg"
   },
   {
    "id": "m510",
    "start": 2428.37,
    "dur": 4.1,
+   "cov": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m510.png"
+   "src": "img/fcsaguapiel_m510.jpg"
   },
   {
    "id": "m511",
    "start": 2432.47,
    "dur": 4.56,
+   "cov": 4.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m511.png"
+   "src": "img/fcsaguapiel_m511.jpg"
   },
   {
    "id": "m512",
    "start": 2437.03,
    "dur": 3.72,
+   "cov": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m512.png"
+   "src": "img/fcsaguapiel_m512.jpg"
   },
   {
    "id": "m513",
@@ -5449,7 +6467,16 @@
    "dur": 7.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m513_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m513.mp4"
+  },
+  {
+   "id": "m513_t",
+   "start": 2444.69,
+   "dur": 3.38,
+   "cov": 3.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m513_bk.jpg"
   },
   {
    "id": "m514",
@@ -5457,7 +6484,16 @@
    "dur": 5.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m514_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m514.mp4"
+  },
+  {
+   "id": "m514_t",
+   "start": 2452.01,
+   "dur": 1.38,
+   "cov": 1.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m514_bk.jpg"
   },
   {
    "id": "m515",
@@ -5465,7 +6501,7 @@
    "dur": 4.24,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m515_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m515.mp4"
   },
   {
    "id": "cmp_75_frasecinetica",
@@ -5486,20 +6522,31 @@
    "tone": "warn"
   },
   {
+   "id": "m515_t",
+   "start": 2457.33,
+   "dur": 0.3,
+   "cov": 0.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m515_bk.jpg"
+  },
+  {
    "id": "m516",
    "start": 2457.63,
    "dur": 4.5,
+   "cov": 4.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m516.png"
+   "src": "img/fcsaguapiel_m516.jpg"
   },
   {
    "id": "m517",
    "start": 2462.13,
    "dur": 6.16,
+   "cov": 6.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m517.png"
+   "src": "img/fcsaguapiel_m517.jpg"
   },
   {
    "id": "cmp_76_checklist",
@@ -5527,17 +6574,19 @@
    "id": "m518",
    "start": 2468.29,
    "dur": 7,
+   "cov": 7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m518.png"
+   "src": "img/fcsaguapiel_m518.jpg"
   },
   {
    "id": "m519",
    "start": 2475.29,
    "dur": 6.96,
+   "cov": 6.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_cigarro.png"
+   "src": "img/lam_fcsaguapiel_cigarro.jpg"
   },
   {
    "id": "cmp_77_pizarraexplica",
@@ -5566,17 +6615,19 @@
    "id": "m520",
    "start": 2482.25,
    "dur": 12.56,
+   "cov": 9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m520.png"
+   "src": "img/fcsaguapiel_m520.jpg"
   },
   {
    "id": "m521",
    "start": 2494.81,
    "dur": 4.74,
+   "cov": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m521.png"
+   "src": "img/fcsaguapiel_m521.jpg"
   },
   {
    "id": "m522",
@@ -5584,31 +6635,34 @@
    "dur": 2.94,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m522_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m522.mp4"
   },
   {
    "id": "m523",
    "start": 2502.49,
    "dur": 3.04,
+   "cov": 3.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h21.png"
+   "src": "img/fcsaguapiel_h21.jpg"
   },
   {
    "id": "m524",
    "start": 2505.53,
    "dur": 3.98,
+   "cov": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h34.png"
+   "src": "img/fcsaguapiel_h34.jpg"
   },
   {
    "id": "m525",
    "start": 2509.51,
    "dur": 4.36,
+   "cov": 4.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m525.png"
+   "src": "img/fcsaguapiel_m525.jpg"
   },
   {
    "id": "cmp_78_errorstinger",
@@ -5625,9 +6679,10 @@
    "id": "m526",
    "start": 2513.87,
    "dur": 3.74,
+   "cov": 3.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m526.png"
+   "src": "img/fcsaguapiel_m526.jpg"
   },
   {
    "id": "m527",
@@ -5635,55 +6690,70 @@
    "dur": 4.96,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m527_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m527.mp4"
+  },
+  {
+   "id": "m527_t",
+   "start": 2521.55,
+   "dur": 1.02,
+   "cov": 1.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m527_bk.jpg"
   },
   {
    "id": "m528",
    "start": 2522.57,
    "dur": 4.18,
+   "cov": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m528.png"
+   "src": "img/fcsaguapiel_m528.jpg"
   },
   {
    "id": "m529",
    "start": 2526.75,
    "dur": 3.64,
+   "cov": 3.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h03.png"
+   "src": "img/fcsaguapiel_h03.jpg"
   },
   {
    "id": "m530",
    "start": 2530.39,
    "dur": 4.12,
+   "cov": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m530.png"
+   "src": "img/fcsaguapiel_m530.jpg"
   },
   {
    "id": "m531",
    "start": 2534.51,
    "dur": 3.78,
+   "cov": 3.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h17.png"
+   "src": "img/fcsaguapiel_h17.jpg"
   },
   {
    "id": "m532",
    "start": 2538.29,
    "dur": 5.44,
+   "cov": 5.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m532.png"
+   "src": "img/fcsaguapiel_m532.jpg"
   },
   {
    "id": "m533",
    "start": 2543.73,
    "dur": 6.22,
+   "cov": 6.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m533.png"
+   "src": "img/fcsaguapiel_m533.jpg"
   },
   {
    "id": "cmp_79_bars",
@@ -5714,15 +6784,16 @@
    "dur": 3.82,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m534_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m534.mp4"
   },
   {
    "id": "m535",
    "start": 2553.77,
    "dur": 4.9,
+   "cov": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m535.png"
+   "src": "img/fcsaguapiel_m535.jpg"
   },
   {
    "id": "m536",
@@ -5730,23 +6801,25 @@
    "dur": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m536_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m536.mp4"
   },
   {
    "id": "m537",
    "start": 2562.77,
    "dur": 3.74,
+   "cov": 3.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m537.png"
+   "src": "img/fcsaguapiel_m537.jpg"
   },
   {
    "id": "m538",
    "start": 2566.51,
    "dur": 4.9,
+   "cov": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m538.png"
+   "src": "img/fcsaguapiel_m538.jpg"
   },
   {
    "id": "m539",
@@ -5754,23 +6827,25 @@
    "dur": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m539_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m539.mp4"
   },
   {
    "id": "m540",
    "start": 2575.55,
    "dur": 4.72,
+   "cov": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m540.png"
+   "src": "img/fcsaguapiel_m540.jpg"
   },
   {
    "id": "m541",
    "start": 2580.27,
    "dur": 3.78,
+   "cov": 3.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m541.png"
+   "src": "img/fcsaguapiel_m541.jpg"
   },
   {
    "id": "cmp_80_lowerthird",
@@ -5787,17 +6862,19 @@
    "id": "m542",
    "start": 2584.05,
    "dur": 4.1,
+   "cov": 4.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h18.png"
+   "src": "img/fcsaguapiel_h18.jpg"
   },
   {
    "id": "m543",
    "start": 2588.15,
    "dur": 5.44,
+   "cov": 5.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m543.png"
+   "src": "img/fcsaguapiel_m543.jpg"
   },
   {
    "id": "m544",
@@ -5805,31 +6882,43 @@
    "dur": 6.1,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m544_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m544.mp4"
+  },
+  {
+   "id": "m544_t",
+   "start": 2597.53,
+   "dur": 2.16,
+   "cov": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m544_bk.jpg"
   },
   {
    "id": "m545",
    "start": 2599.69,
    "dur": 7.78,
+   "cov": 7.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m545.png"
+   "src": "img/fcsaguapiel_m545.jpg"
   },
   {
    "id": "m546",
    "start": 2607.47,
    "dur": 4.78,
+   "cov": 4.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m546.png"
+   "src": "img/fcsaguapiel_m546.jpg"
   },
   {
    "id": "m547",
    "start": 2612.25,
    "dur": 4.48,
+   "cov": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m547.png"
+   "src": "img/fcsaguapiel_m547.jpg"
   },
   {
    "id": "m548",
@@ -5837,23 +6926,34 @@
    "dur": 6.02,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m548_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m548.mp4"
+  },
+  {
+   "id": "m548_t",
+   "start": 2620.67,
+   "dur": 2.08,
+   "cov": 2.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m548_bk.jpg"
   },
   {
    "id": "m549",
    "start": 2622.75,
    "dur": 3.56,
+   "cov": 3.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m549.png"
+   "src": "img/fcsaguapiel_m549.jpg"
   },
   {
    "id": "m550",
    "start": 2626.31,
    "dur": 4.52,
+   "cov": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m550.png"
+   "src": "img/fcsaguapiel_m550.jpg"
   },
   {
    "id": "m551",
@@ -5861,15 +6961,25 @@
    "dur": 4.26,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m551_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m551.mp4"
+  },
+  {
+   "id": "m551_t",
+   "start": 2634.77,
+   "dur": 0.32,
+   "cov": 0.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m551_bk.jpg"
   },
   {
    "id": "m552",
    "start": 2635.09,
    "dur": 5.76,
+   "cov": 5.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_glicacion.png"
+   "src": "img/lam_fcsaguapiel_glicacion.jpg"
   },
   {
    "id": "cmp_81_malla",
@@ -5890,15 +7000,16 @@
    "dur": 3.28,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m553_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m553.mp4"
   },
   {
    "id": "m554",
    "start": 2644.13,
    "dur": 3.76,
+   "cov": 3.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m554.png"
+   "src": "img/fcsaguapiel_m554.jpg"
   },
   {
    "id": "cmp_83_freezezoom",
@@ -5906,7 +7017,7 @@
    "dur": 4.5,
    "key": "s",
    "kind": "freezezoom",
-   "image": "img/fcsaguapiel_m554.png",
+   "image": "img/fcsaguapiel_m554.jpg",
    "label": "Funciona porque los hilos se corren",
    "zoom": 1.18,
    "tone": "warn"
@@ -5917,7 +7028,16 @@
    "dur": 4.2,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m555_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m555.mp4"
+  },
+  {
+   "id": "m555_t",
+   "start": 2651.83,
+   "dur": 0.26,
+   "cov": 0.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m555_bk.jpg"
   },
   {
    "id": "m556",
@@ -5925,23 +7045,25 @@
    "dur": 2.68,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m556_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m556.mp4"
   },
   {
    "id": "m557",
    "start": 2654.77,
    "dur": 5.56,
+   "cov": 5.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_hamaca.png"
+   "src": "img/lam_fcsaguapiel_hamaca.jpg"
   },
   {
    "id": "m558",
    "start": 2660.33,
    "dur": 3.9,
+   "cov": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m558.png"
+   "src": "img/fcsaguapiel_m558.jpg"
   },
   {
    "id": "cmp_84_frasecinetica",
@@ -5970,39 +7092,52 @@
    "dur": 5.28,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m559_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m559.mp4"
+  },
+  {
+   "id": "m559_t",
+   "start": 2668.17,
+   "dur": 1.34,
+   "cov": 1.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m559_bk.jpg"
   },
   {
    "id": "m560",
    "start": 2669.51,
    "dur": 4.54,
+   "cov": 4.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m560.png"
+   "src": "img/fcsaguapiel_m560.jpg"
   },
   {
    "id": "m561",
    "start": 2674.05,
    "dur": 3.34,
+   "cov": 3.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m561.png"
+   "src": "img/fcsaguapiel_m561.jpg"
   },
   {
    "id": "m562",
    "start": 2677.39,
    "dur": 5.1,
+   "cov": 5.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h15.png"
+   "src": "img/fcsaguapiel_h15.jpg"
   },
   {
    "id": "m563",
    "start": 2682.49,
    "dur": 2.82,
+   "cov": 2.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m563.png"
+   "src": "img/fcsaguapiel_m563.jpg"
   },
   {
    "id": "cmp_85_pizarraexplica",
@@ -6031,9 +7166,10 @@
    "id": "m564",
    "start": 2685.31,
    "dur": 7.76,
+   "cov": 7.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m564.png"
+   "src": "img/fcsaguapiel_m564.jpg"
   },
   {
    "id": "m565",
@@ -6041,47 +7177,52 @@
    "dur": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m565_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m565.mp4"
   },
   {
    "id": "m566",
    "start": 2697.21,
    "dur": 5.42,
+   "cov": 5.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m566.png"
+   "src": "img/fcsaguapiel_m566.jpg"
   },
   {
    "id": "m567",
    "start": 2702.63,
    "dur": 3.76,
+   "cov": 3.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_tijeras.png"
+   "src": "img/lam_fcsaguapiel_tijeras.jpg"
   },
   {
    "id": "m568",
    "start": 2706.39,
    "dur": 4.18,
+   "cov": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m568.png"
+   "src": "img/fcsaguapiel_m568.jpg"
   },
   {
    "id": "m569",
    "start": 2710.57,
    "dur": 4.54,
+   "cov": 4.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/lam_fcsaguapiel_recambio.png"
+   "src": "img/lam_fcsaguapiel_recambio.jpg"
   },
   {
    "id": "m570",
    "start": 2715.11,
    "dur": 6.08,
+   "cov": 6.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m570.png"
+   "src": "img/fcsaguapiel_m570.jpg"
   },
   {
    "id": "cmp_86_stat",
@@ -6098,9 +7239,10 @@
    "id": "m571",
    "start": 2721.19,
    "dur": 3.92,
+   "cov": 3.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m571.png"
+   "src": "img/fcsaguapiel_m571.jpg"
   },
   {
    "id": "m572",
@@ -6108,15 +7250,25 @@
    "dur": 4.74,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m572_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m572.mp4"
+  },
+  {
+   "id": "m572_t",
+   "start": 2729.05,
+   "dur": 0.8,
+   "cov": 0.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m572_bk.jpg"
   },
   {
    "id": "m573",
    "start": 2729.85,
    "dur": 2.46,
+   "cov": 2.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m573.png"
+   "src": "img/fcsaguapiel_m573.jpg"
   },
   {
    "id": "m574",
@@ -6124,23 +7276,34 @@
    "dur": 4.5,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m574_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m574.mp4"
+  },
+  {
+   "id": "m574_t",
+   "start": 2736.25,
+   "dur": 0.56,
+   "cov": 0.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m574_bk.jpg"
   },
   {
    "id": "m575",
    "start": 2736.81,
    "dur": 4.22,
+   "cov": 4.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m575.png"
+   "src": "img/fcsaguapiel_m575.jpg"
   },
   {
    "id": "m576",
    "start": 2741.03,
    "dur": 5.9,
+   "cov": 5.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m576.png"
+   "src": "img/fcsaguapiel_m576.jpg"
   },
   {
    "id": "m577",
@@ -6148,15 +7311,25 @@
    "dur": 4.68,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m577_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m577.mp4"
+  },
+  {
+   "id": "m577_t",
+   "start": 2750.87,
+   "dur": 0.74,
+   "cov": 0.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m577_bk.jpg"
   },
   {
    "id": "m578",
    "start": 2751.61,
    "dur": 4.18,
+   "cov": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m578.png"
+   "src": "img/fcsaguapiel_m578.jpg"
   },
   {
    "id": "cmp_87_frasecinetica",
@@ -6186,9 +7359,10 @@
    "id": "m579",
    "start": 2755.79,
    "dur": 3.7,
+   "cov": 3.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m579.png"
+   "src": "img/fcsaguapiel_m579.jpg"
   },
   {
    "id": "m580",
@@ -6196,23 +7370,25 @@
    "dur": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m580_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m580.mp4"
   },
   {
    "id": "m581",
    "start": 2763.43,
    "dur": 3,
+   "cov": 3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h16.png"
+   "src": "img/fcsaguapiel_h16.jpg"
   },
   {
    "id": "m582",
    "start": 2766.43,
    "dur": 5.8,
+   "cov": 5.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m582.png"
+   "src": "img/fcsaguapiel_m582.jpg"
   },
   {
    "id": "m583",
@@ -6220,7 +7396,7 @@
    "dur": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m583_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m583.mp4"
   },
   {
    "id": "cmp_88_guardaesto",
@@ -6242,41 +7418,46 @@
    "id": "m584",
    "start": 2776.29,
    "dur": 4.66,
+   "cov": 4.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m584.png"
+   "src": "img/fcsaguapiel_m584.jpg"
   },
   {
    "id": "m585",
    "start": 2780.95,
    "dur": 6.22,
+   "cov": 6.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m585.png"
+   "src": "img/fcsaguapiel_m585.jpg"
   },
   {
    "id": "m586",
    "start": 2787.17,
    "dur": 3.3,
+   "cov": 3.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m586.png"
+   "src": "img/fcsaguapiel_m586.jpg"
   },
   {
    "id": "m587",
    "start": 2790.47,
    "dur": 4.42,
+   "cov": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m587.png"
+   "src": "img/fcsaguapiel_m587.jpg"
   },
   {
    "id": "m588",
    "start": 2794.89,
    "dur": 4.86,
+   "cov": 4.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h26.png"
+   "src": "img/fcsaguapiel_h26.jpg"
   },
   {
    "id": "m589",
@@ -6284,7 +7465,7 @@
    "dur": 4.66,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m589_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m589.mp4"
   },
   {
    "id": "cmp_89_lowerthird",
@@ -6298,20 +7479,40 @@
    "tone": "warn"
   },
   {
+   "id": "m589_t",
+   "start": 2803.69,
+   "dur": 0.72,
+   "cov": 0.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m589_bk.jpg"
+  },
+  {
+   "id": "m590",
+   "start": 2804.41,
+   "dur": 6.92,
+   "cov": 6.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m590.jpg"
+  },
+  {
    "id": "m591",
    "start": 2811.33,
    "dur": 3.94,
+   "cov": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m591.png"
+   "src": "img/fcsaguapiel_m591.jpg"
   },
   {
    "id": "m592",
    "start": 2815.27,
    "dur": 5.08,
+   "cov": 5.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m592.png"
+   "src": "img/fcsaguapiel_m592.jpg"
   },
   {
    "id": "m593",
@@ -6319,23 +7520,25 @@
    "dur": 3.04,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m593_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m593_st.mp4"
   },
   {
    "id": "m594",
    "start": 2823.39,
    "dur": 6.7,
+   "cov": 6.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h24.png"
+   "src": "img/fcsaguapiel_h24.jpg"
   },
   {
    "id": "m595",
    "start": 2830.09,
    "dur": 5.46,
+   "cov": 5.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h06.png"
+   "src": "img/fcsaguapiel_h06.jpg"
   },
   {
    "id": "m596",
@@ -6343,7 +7546,7 @@
    "dur": 5.36,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m596_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m596.mp4"
   },
   {
    "id": "cmp_90_process",
@@ -6368,12 +7571,22 @@
    ]
   },
   {
+   "id": "m596_t",
+   "start": 2839.49,
+   "dur": 1.42,
+   "cov": 1.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m596_bk.jpg"
+  },
+  {
    "id": "m597",
    "start": 2840.91,
    "dur": 4.06,
+   "cov": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m597.png"
+   "src": "img/fcsaguapiel_m597.jpg"
   },
   {
    "id": "m598",
@@ -6381,15 +7594,25 @@
    "dur": 4.88,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m598_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m598.mp4"
+  },
+  {
+   "id": "m598_t",
+   "start": 2848.91,
+   "dur": 0.94,
+   "cov": 0.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m598_bk.jpg"
   },
   {
    "id": "m599",
    "start": 2849.85,
    "dur": 4,
+   "cov": 4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m599.png"
+   "src": "img/fcsaguapiel_m599.jpg"
   },
   {
    "id": "m600",
@@ -6397,15 +7620,25 @@
    "dur": 5.32,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m600_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m600.mp4"
+  },
+  {
+   "id": "m600_t",
+   "start": 2857.79,
+   "dur": 1.38,
+   "cov": 1.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m600_bk.jpg"
   },
   {
    "id": "m601",
    "start": 2859.17,
    "dur": 3.14,
+   "cov": 3.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m601.png"
+   "src": "img/fcsaguapiel_m601.jpg"
   },
   {
    "id": "m602",
@@ -6413,23 +7646,34 @@
    "dur": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m602_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m602.mp4"
+  },
+  {
+   "id": "m602_t",
+   "start": 2866.25,
+   "dur": 0.34,
+   "cov": 0.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m602_bk.jpg"
   },
   {
    "id": "m603",
    "start": 2866.59,
    "dur": 6.56,
+   "cov": 6.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m603.png"
+   "src": "img/fcsaguapiel_m603.jpg"
   },
   {
    "id": "m604",
    "start": 2873.15,
    "dur": 3.16,
+   "cov": 3.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m604.png"
+   "src": "img/fcsaguapiel_m604.jpg"
   },
   {
    "id": "m605",
@@ -6437,7 +7681,7 @@
    "dur": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m605_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m605.mp4"
   },
   {
    "id": "cmp_91_guardaesto",
@@ -6455,28 +7699,48 @@
    "prompt": "Anota esto"
   },
   {
+   "id": "m605_t",
+   "start": 2880.25,
+   "dur": 0.78,
+   "cov": 0.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m605_bk.jpg"
+  },
+  {
    "id": "m606",
    "start": 2881.03,
    "dur": 5.08,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m606_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m606.mp4"
+  },
+  {
+   "id": "m606_t",
+   "start": 2884.97,
+   "dur": 1.14,
+   "cov": 1.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m606_bk.jpg"
   },
   {
    "id": "m607",
    "start": 2886.11,
    "dur": 4.32,
+   "cov": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m607.png"
+   "src": "img/fcsaguapiel_m607.jpg"
   },
   {
    "id": "m608",
    "start": 2890.43,
    "dur": 5.72,
+   "cov": 5.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m608.png"
+   "src": "img/fcsaguapiel_m608.jpg"
   },
   {
    "id": "cmp_92_guidecta",
@@ -6497,17 +7761,19 @@
    "id": "m609",
    "start": 2896.15,
    "dur": 4.72,
+   "cov": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m609.png"
+   "src": "img/fcsaguapiel_m609.jpg"
   },
   {
    "id": "m610",
    "start": 2900.87,
    "dur": 2.82,
+   "cov": 2.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m610.png"
+   "src": "img/fcsaguapiel_m610.jpg"
   },
   {
    "id": "m611",
@@ -6515,7 +7781,16 @@
    "dur": 4.5,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m611_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m611.mp4"
+  },
+  {
+   "id": "m611_t",
+   "start": 2907.63,
+   "dur": 0.56,
+   "cov": 0.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m611_bk.jpg"
   },
   {
    "id": "m612",
@@ -6523,15 +7798,25 @@
    "dur": 4.68,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m612_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m612.mp4"
+  },
+  {
+   "id": "m612_t",
+   "start": 2912.13,
+   "dur": 0.74,
+   "cov": 0.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m612_bk.jpg"
   },
   {
    "id": "m613",
    "start": 2912.87,
    "dur": 3.04,
+   "cov": 3.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m613.png"
+   "src": "img/fcsaguapiel_m613.jpg"
   },
   {
    "id": "cmp_93_frasecinetica",
@@ -6558,49 +7843,55 @@
    "id": "m614",
    "start": 2915.91,
    "dur": 3.26,
+   "cov": 3.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m614.png"
+   "src": "img/fcsaguapiel_m614.jpg"
   },
   {
    "id": "m615",
    "start": 2919.17,
    "dur": 3.08,
+   "cov": 3.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h20.png"
+   "src": "img/fcsaguapiel_h20.jpg"
   },
   {
    "id": "m616",
    "start": 2922.25,
    "dur": 5.2,
+   "cov": 5.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m616.png"
+   "src": "img/fcsaguapiel_m616.jpg"
   },
   {
    "id": "m617",
    "start": 2927.45,
    "dur": 7.2,
+   "cov": 7.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m617.png"
+   "src": "img/fcsaguapiel_m617.jpg"
   },
   {
    "id": "m618",
    "start": 2934.65,
    "dur": 3.78,
+   "cov": 3.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h38.png"
+   "src": "img/fcsaguapiel_h38.jpg"
   },
   {
    "id": "m619",
    "start": 2938.43,
    "dur": 7.16,
+   "cov": 7.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m619.png"
+   "src": "img/fcsaguapiel_m619.jpg"
   },
   {
    "id": "m620",
@@ -6608,31 +7899,43 @@
    "dur": 6.72,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcsaguapiel_m620_st.mp4"
+   "src": "broll/opt/fcsaguapiel_m620.mp4"
+  },
+  {
+   "id": "m620_t",
+   "start": 2949.53,
+   "dur": 2.78,
+   "cov": 2.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fcsaguapiel_m620_bk.jpg"
   },
   {
    "id": "m621",
    "start": 2952.31,
    "dur": 4.32,
+   "cov": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m621.png"
+   "src": "img/fcsaguapiel_m621.jpg"
   },
   {
    "id": "m622",
    "start": 2956.63,
    "dur": 4.08,
+   "cov": 4.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h11.png"
+   "src": "img/fcsaguapiel_h11.jpg"
   },
   {
    "id": "m623",
    "start": 2960.71,
    "dur": 3.96,
+   "cov": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m623.png"
+   "src": "img/fcsaguapiel_m623.jpg"
   },
   {
    "id": "cmp_94_lowerthird",
@@ -6649,89 +7952,100 @@
    "id": "m624",
    "start": 2964.67,
    "dur": 7.34,
+   "cov": 7.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m624.png"
+   "src": "img/fcsaguapiel_m624.jpg"
   },
   {
    "id": "m625",
    "start": 2972.01,
    "dur": 4.9,
+   "cov": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m625.png"
+   "src": "img/fcsaguapiel_m625.jpg"
   },
   {
    "id": "m626",
    "start": 2976.91,
    "dur": 3.82,
+   "cov": 3.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h23.png"
+   "src": "img/fcsaguapiel_h23.jpg"
   },
   {
    "id": "m627",
    "start": 2980.73,
    "dur": 3.8,
+   "cov": 3.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m627.png"
+   "src": "img/fcsaguapiel_m627.jpg"
   },
   {
    "id": "m628",
    "start": 2984.53,
    "dur": 4.24,
+   "cov": 4.24,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m628.png"
+   "src": "img/fcsaguapiel_m628.jpg"
   },
   {
    "id": "m629",
    "start": 2988.77,
    "dur": 5.86,
+   "cov": 5.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m629.png"
+   "src": "img/fcsaguapiel_m629.jpg"
   },
   {
    "id": "m630",
    "start": 2994.63,
    "dur": 3.68,
+   "cov": 3.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m630.png"
+   "src": "img/fcsaguapiel_m630.jpg"
   },
   {
    "id": "m631",
    "start": 2998.31,
    "dur": 3.9,
+   "cov": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h24.png"
+   "src": "img/fcsaguapiel_h24.jpg"
   },
   {
    "id": "m632",
    "start": 3002.21,
    "dur": 5.44,
+   "cov": 5.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m632.png"
+   "src": "img/fcsaguapiel_m632.jpg"
   },
   {
    "id": "m633",
    "start": 3007.65,
    "dur": 6.1,
+   "cov": 6.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m633.png"
+   "src": "img/fcsaguapiel_m633.jpg"
   },
   {
    "id": "m634",
    "start": 3013.75,
    "dur": 5.08,
+   "cov": 5.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m634.png"
+   "src": "img/fcsaguapiel_m634.jpg"
   },
   {
    "id": "cmp_95_nametag",
@@ -6741,23 +8055,25 @@
    "kind": "nametag",
    "name": "Dr. Federer",
    "role": "Federer Consejos Salud",
-   "image": "img/fcsaguapiel_h23.png"
+   "image": "img/fcsaguapiel_h23.jpg"
   },
   {
    "id": "m635",
    "start": 3018.83,
    "dur": 2.86,
+   "cov": 2.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_m635.png"
+   "src": "img/fcsaguapiel_m635.jpg"
   },
   {
    "id": "m636",
    "start": 3021.69,
    "dur": 2.46,
+   "cov": 2.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcsaguapiel_h23.png"
+   "src": "img/fcsaguapiel_h23.jpg"
   }
  ]
 }
