@@ -123,7 +123,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "guardaesto" ? <GuardaEsto durationInFrames={d} title={b.title} items={b.items} tag={b.tag} prompt={b.prompt} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
   : b.kind === "relojnoche" ? <RelojNoche durationInFrames={d} subtitle={b.subtitle} marks={b.marks} hits={b.hits} />
-  : b.kind === "whynight" ? <WhyNightScene durationInFrames={d} dayTitle={b.dayTitle} nightTitle={b.nightTitle} cardText={b.cardText} />
+  : b.kind === "whynight" ? <WhyNightScene durationInFrames={d} dayTitle={b.dayTitle} nightTitle={b.nightTitle} cardText={b.cardText} dayWord={b.dayWord} nightWord={b.nightWord} daySub={b.daySub} nightSub={b.nightSub} />
   : b.kind === "pricewar" ? <PriceWar durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftPrice={b.leftPrice} rightPrice={b.rightPrice} leftLabel={b.leftLabel} rightLabel={b.rightLabel} strike={b.strike} subtitle={b.subtitle} verdict={b.verdict} />
   : b.kind === "ingredientduo" ? <IngredientDuo durationInFrames={d} leftImg={b.leftImg} rightImg={b.rightImg} />
   : b.kind === "hourdial" ? <HourDial durationInFrames={d} hour={b.hour} big={b.big} unit={b.unit} label={b.label} tone={b.tone} />

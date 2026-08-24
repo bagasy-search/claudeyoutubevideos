@@ -1122,11 +1122,19 @@ export const WhyNightScene: React.FC<{
   dayTitle?: string;
   nightTitle?: string;
   cardText?: string;
+  dayWord?: string;
+  nightWord?: string;
+  daySub?: string;
+  nightSub?: string;
 }> = ({
   durationInFrames,
   dayTitle = "DAY — DEFENSE",
   nightTitle = "NIGHT — REPAIR",
   cardText = "flood + seal at the hour your skin rebuilds",
+  dayWord = "DEFENSE",
+  nightWord = "REPAIR",
+  daySub = "fights sun + pollution · loses water · builds nothing",
+  nightSub = "cell turnover peaks · barrier rebuilds · water escapes fastest",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -1248,8 +1256,8 @@ export const WhyNightScene: React.FC<{
           <ParallaxLayer factor={0.85} z={7} px={driftX} py={driftY}>
             <LabelBlock
               title={dayTitle}
-              accentWord="DEFENSE"
-              sub="fights sun + pollution · loses water · builds nothing"
+              accentWord={dayWord}
+              sub={daySub}
               accent={SUN}
               startFrame={10}
               x="7%"
@@ -1298,8 +1306,8 @@ export const WhyNightScene: React.FC<{
           <ParallaxLayer factor={0.85} z={7} px={driftX} py={driftY}>
             <LabelBlock
               title={nightTitle}
-              accentWord="REPAIR"
-              sub="cell turnover peaks · barrier rebuilds · water escapes fastest"
+              accentWord={nightWord}
+              sub={nightSub}
               accent={BRIGHT}
               startFrame={P2 + 6}
               x="7%"
