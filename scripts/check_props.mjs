@@ -47,6 +47,12 @@ const CONTRACT = {
   rule:          { req: ["title"] },
   lowerthird:    { req: ["title"] },
   errorstinger:  { req: ["title"] },
+  carrusel:      { req: ["items"], itemKey: { items: "title" }, itemAssets: { items: "image" } },
+  recetaescena:  { req: ["steps"], itemKey: { steps: "title" }, itemAssets: { steps: "image" } },
+  lineatiempo:   { req: ["marks"], itemKey: { marks: "label" }, itemAssets: { marks: "image" } },
+  pliegue:       { assets: ["leftImage", "rightImage"] },
+  malla:         {},
+  colador:       {},
 };
 
 const errs = [];

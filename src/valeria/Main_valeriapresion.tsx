@@ -235,7 +235,7 @@ export const MainValeriaPresion: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: VAL.paper, overflow: 'hidden'}}>
-      <Audio src={staticFile('valeriapresion.wav')} />
+      <Audio src={staticFile('valeriapresion.m4a')} />
       {/* OPTIMIZACION DE RENDER: el avatar solo se monta mientras es el avatar REAL (0..9:44).
           Despues de ahi va en bucle, no sincroniza labios y esta tapado por una escena opaca
           el 100% del tiempo (el build garantiza cobertura total en esa zona), asi que
