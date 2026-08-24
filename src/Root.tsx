@@ -183,6 +183,7 @@ import { ValKitReel, VAL_REEL_F } from "./valeria/ValeriaKit";
 // import { MainCafe, TOTAL_FRAMES_CAFE } from "./VideoEdit/Main_cafe"; // untracked: rompe el farm
 // import { MainAmish, TOTAL_FRAMES_AMISH } from "./VideoEdit/Main_amish"; // untracked: rompe el farm
 import { MainGrvaseline, TOTAL_FRAMES_GRVASELINE } from "./_fed6/VideoEdit/Main_grvaseline";
+import { MainFcsvarices, TOTAL_FRAMES_FCSVARICES } from "./_fed6/VideoEdit/Main_fcsvarices";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -197,6 +198,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Oxidotanico" component={MainOxidotanico} durationInFrames={TOTAL_FRAMES_OXIDOTANICO} fps={30} width={1920} height={1080} />
       <Composition id="Crackpowder" component={MainCrackpowder} durationInFrames={TOTAL_FRAMES_CP} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · dos metales baratos contra ratones (EN) · avatar 11:01 en bucle + kit MouseKit */}
+      <Composition id="Fcsvarices" component={MainFcsvarices} durationInFrames={TOTAL_FRAMES_FCSVARICES} fps={30} width={1920} height={1080} />
       <Composition id="Cymouse" component={MainCymouse} durationInFrames={TOTAL_FRAMES_CYMOUSE} fps={30} width={1920} height={1080} />
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}

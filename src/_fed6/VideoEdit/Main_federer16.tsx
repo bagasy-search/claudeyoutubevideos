@@ -55,24 +55,23 @@ function buildWindows(): AvatarWindow[] {
   type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
   const pts: Pt[] = [];
   let flip = false;
-  const content = [...FED16_BROLL.map((b: any) => ({ start: b.start, src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, src: b.src }))].sort((a, b) => a.start - b.start);
-  for (const b of content) {
+  const content = [...FED16_BROLL.map((b: any) => ({ start: b.start, len: Math.min(b.dur + 3, 7.5), src: b.src })), ...rawTop.map((b: any) => ({ start: b.start, len: HERO_CAP, src: b.src }))].sort((a, b) => a.start - b.start);
+  for (let i = 0; i < content.length; i++) {
+    const b = content[i];
     const forceHidden = /libro|cocina|pagina|guia|federer_cocina/.test(b.src || "");
     const mode: AvatarWindow["mode"] = forceHidden ? "hidden" : (flip ? "halfR" : "hidden");
     if (!forceHidden) flip = !flip;
     pts.push({ start: b.start, mode, pr: 0 });
-  }
-  // GAP FILL: cuando el próximo contenido (b-roll/foto) tarda >7.5s, el b-roll se
-  // congelaría → en su lugar, avatar FULL desde start+6.8s hasta que llegue el próximo.
-  for (let i = 0; i < content.length; i++) {
+    // ⛔ ANTI-FRAME-MUERTO: al TERMINAR el clip, si el próximo contenido tarda >0.6s, avatar FULL.
     const nextStart = i + 1 < content.length ? content[i + 1].start : VIDEO_END;
-    if (nextStart - content[i].start > 7.5) pts.push({ start: +(content[i].start + 6.8).toFixed(2), mode: "full", pr: 2 });
+    const clipEnd = b.start + b.len;
+    if (nextStart - clipEnd > 0.6) pts.push({ start: +clipEnd.toFixed(2), mode: "full", pr: 0 });
   }
   for (const b of compBeats) {
     if (OVERLAY.has(b.kind)) continue; // overlays (lowerthird/frasecinetica) NO esconden al avatar
     const d = compDur(b);
     pts.push({ start: b.start, mode: "hidden", pr: 3 });
-    pts.push({ start: b.start + d, mode: "hidden", pr: 1 });
+    pts.push({ start: b.start + d, mode: "full", pr: 1 }); // al terminar el componente → avatar FULL
   }
   for (const s of FULL_AT) { pts.push({ start: s, mode: "full", pr: 4 }); pts.push({ start: +(s + 2.6).toFixed(2), mode: "hidden", pr: 2 }); }
   pts.sort((a, b) => a.start - b.start || b.pr - a.pr);
