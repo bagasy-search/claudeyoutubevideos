@@ -205,7 +205,7 @@ const TR = [
     else if (fs.existsSync(png)) src = `img/${PFX}${sh.a}.png`;
     if (!src) { faltan++; continue; }
     beats.push({id: `tr_${sh.a}`, start: sh.s, dur: sh.d, kind: 'full', src, video,
-                ken: usadas % 2 ? 'out' : 'in', variant: 'whip'});
+                ken: usadas % 2 ? 'out' : 'in', variant: 'none'});
     usadas++;
   }
   console.log(`TRAILER cold open: ${usadas} tomas · faltantes ${faltan}`);
@@ -284,13 +284,13 @@ beats.sort((a, b) => a.start - b.start);
   for (const [s2, e2] of segs) {
     if (e2 <= AVATAR_END) continue;
     const ini = Math.max(s2, AVATAR_END);
-    if (ini - cur > 0.5) huecos.push([cur, ini]);
+    if (ini - cur > 0.03) huecos.push([cur, ini]);
     cur = Math.max(cur, e2);
   }
-  if (TOTAL - cur > 0.5) huecos.push([cur, TOTAL]);
+  if (TOTAL - cur > 0.03) huecos.push([cur, TOTAL]);
   for (const [gs, ge] of huecos) {
     let t = gs;
-    while (ge - t > 0.5) {
+    while (ge - t > 0.03) {
       const d = Math.min(4.2, ge - t);
       const id = cercano(t);
       if (!id) break;

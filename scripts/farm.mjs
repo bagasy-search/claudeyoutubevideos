@@ -39,6 +39,7 @@ if (!slug || !comp || !total) {
 const sh = (c) => execSync(c, { stdio: "inherit" });
 const out = (c) => execSync(c, { encoding: "utf8" }).trim();
 const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chunks (reusa el resto; assets ya subidos)
+const reuseAssets = process.env.REUSE_ASSETS === "1"; // full rerender with an already validated release
 
 // ── PRE-VUELO (milisegundos, todo local) ────────────────────────────────────────────────
 // Sin esto se sube ~1 GB de assets y se encienden 20-24 runners para que recién ADENTRO del
@@ -46,6 +47,14 @@ const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chu
 // de farm por corrida tirados, varias veces. Chequeamos ANTES de gastar un solo byte.
 {
   const ref = process.env.FARM_REF;
+  // Sin ENTRY el workflow NO cae a Root.tsx: cae a src/index.ts, que es COMPARTIDO y lo pisan
+  // otros agentes (medido: un render entero perdido con "Available compositions: Azotea2"
+  // porque index.ts registraba el video de otro). Si existe un entry propio del slug, se usa.
+  if (!process.env.ENTRY) {
+    for (const cand of [`src/index_${slug}.tsx`, `src/index_${slug}.ts`]) {
+      if (fs.existsSync(cand)) { process.env.ENTRY = cand; console.log(`entry propio detectado: ${cand}`); break; }
+    }
+  }
   const entryFile = process.env.ENTRY;
   if (entryFile && !fs.existsSync(entryFile)) {
     console.error(`✗ PRE-VUELO: ENTRY=${entryFile} no existe en el disco.`); process.exit(1);
@@ -66,7 +75,8 @@ const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chu
     }
   }
   // la composición tiene que estar declarada en el entry (o en Root.tsx si no hay entry)
-  const src = entryFile || "src/Root.tsx";
+  // sin entry propio, el render usa src/index.ts (NO Root.tsx): validar el archivo REAL
+  const src = entryFile || "src/index.ts";
   if (fs.existsSync(src) && !fs.readFileSync(src, "utf8").includes(`"${comp}"`)) {
     console.error(`✗ PRE-VUELO: la composición "${comp}" no aparece en ${src}. Con entry propio, registrala ahí.`);
     process.exit(1);
@@ -74,18 +84,19 @@ const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chu
   console.log("pre-vuelo ✓ (ref sincronizado, entry commiteado, composición declarada)");
 }
 
-if (!only) { // en re-render parcial NO re-empaquetamos ni re-subimos assets (el release assets-<slug> ya existe)
+if (!only && !reuseAssets) { // partial/recovery rerenders reuse the already validated asset release
 // 1) tarball de assets (TAR_DIR redirige el .tar a otro disco — C: se llena con ~1GB)
 const tarDir = process.env.TAR_DIR || ".";
 const tar = `${tarDir}/assets-${slug}.tar`;
-const avatar = `public/${slug}_opt.mp4`;
+const avatarCandidates = [`public/avatar_${slug}.mp4`, `public/${slug}_opt.mp4`];
+const avatar = avatarCandidates.find((candidate) => fs.existsSync(candidate)) || avatarCandidates[0];
 const wav = `public/${slug}.wav`;
 if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
-const hasAvatar = fs.existsSync(avatar); // videos FACELESS (sin avatar) no tienen _opt.mp4
+const hasAvatar = fs.existsSync(avatar); // videos FACELESS do not have either canonical avatar path
 if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la narración`);
 // rutas relativas a public/ (el workflow extrae con -C public)
 let items = [`${slug}.wav`];
-if (hasAvatar) items.unshift(`${slug}_opt.mp4`);
+if (hasAvatar) items.unshift(avatar.replace(/^public[\\/]/, ""));
 // SFX: `public/` está en .gitignore, así que un worktree nuevo nace SIN public/sfx. Este `if` se
 // escribió como defensa, pero la rama defensiva ES el caso roto: el tar salía sin sfx, en silencio,
 // y cada chunk que usaba un whoosh moría con "404 downloading /public/sfx/…". Costó 13 de 20 chunks
@@ -253,11 +264,70 @@ try {
 execFileSync("tar", tarArgs, { stdio: "inherit" });
 fs.rmSync(listFile);
 
+// GitHub limita cada asset individual de un release a 2 GiB. Los videos con mucho stock superan
+// ese límite aunque el contenido total del release sea válido. Dividimos sólo el transporte; el
+// workflow recompone el mismo tar byte a byte antes de extraerlo.
+const releaseAssetLimit = 1_900_000_000;
+const uploadFiles = [];
+if (fs.statSync(tar).size <= releaseAssetLimit) {
+  uploadFiles.push(tar);
+} else {
+  const sourceFd = fs.openSync(tar, "r");
+  const buffer = Buffer.allocUnsafe(8 * 1024 * 1024);
+  let part = 0;
+  let offset = 0;
+  try {
+    while (offset < fs.statSync(tar).size) {
+      part += 1;
+      const partPath = `${tar}.part${String(part).padStart(3, "0")}`;
+      const targetFd = fs.openSync(partPath, "w");
+      let written = 0;
+      try {
+        while (written < releaseAssetLimit && offset < fs.statSync(tar).size) {
+          const wanted = Math.min(buffer.length, releaseAssetLimit - written, fs.statSync(tar).size - offset);
+          const read = fs.readSync(sourceFd, buffer, 0, wanted, offset);
+          if (!read) break;
+          fs.writeSync(targetFd, buffer, 0, read);
+          written += read;
+          offset += read;
+        }
+      } finally { fs.closeSync(targetFd); }
+      uploadFiles.push(partPath);
+    }
+  } finally { fs.closeSync(sourceFd); }
+  console.log(`tar de ${(fs.statSync(tar).size / 1024 / 1024 / 1024).toFixed(2)} GiB dividido en ${uploadFiles.length} partes aptas para GitHub`);
+}
+
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
-try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --cleanup-tag`); } catch { /* no existe */ }
-sh(`gh release create ${relTag} ${tar} --title ${relTag} --notes "assets del render"`);
-fs.rmSync(tar);
+let reusableRelease = false;
+try {
+  const release = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
+  const remote = new Map((release.assets || []).map((asset) => [asset.name, Number(asset.size || 0)]));
+  reusableRelease = !release.isDraft && uploadFiles.every((file) => remote.get(path.basename(file)) === fs.statSync(file).size);
+} catch { /* no existe o está incompleto */ }
+// `gh release create` puede dejar un draft huérfano si la subida grande se corta. Ese draft no
+// siempre aparece en `gh release view <tag>` y el reintento falla para siempre con HTTP 422. La API
+// de releases sí enumera drafts: borramos únicamente los que pertenecen a este slug antes de crear
+// la entrega idempotente de nuevo. No toca releases de otros videos.
+if (!reusableRelease) {
+  try { out(`gh release view ${relTag}`); sh(`gh release delete ${relTag} --yes --cleanup-tag`); } catch { /* no existe */ }
+  try {
+    const releases = JSON.parse(out(`gh api "repos/{owner}/{repo}/releases?per_page=100"`));
+    for (const release of releases.filter((item) => item?.tag_name === relTag || item?.name === relTag)) {
+      sh(`gh api -X DELETE repos/{owner}/{repo}/releases/${release.id}`);
+    }
+  } catch { /* sin draft huérfano o fallo transitorio: create devolverá el diagnóstico real */ }
+  try { sh(`gh api -X DELETE repos/{owner}/{repo}/git/refs/tags/${encodeURIComponent(relTag)}`); } catch { /* tag ausente */ }
+  // Target the exact pushed commit instead of relying on a branch/tag ref that
+  // GitHub may not have made visible yet after cleanup. The former race caused
+  // intermittent HTTP 422 "Reference does not exist" before any render run.
+  const releaseTarget = out("git rev-parse HEAD");
+  sh(`gh release create ${relTag} ${uploadFiles.map((file) => `"${file}"`).join(" ")} --target ${releaseTarget} --title ${relTag} --notes "assets del render"`);
+} else {
+  console.log(`release ${relTag} ya contiene exactamente las ${uploadFiles.length} parte(s); reutilizo la subida`);
+}
+for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, {force:true});
 }
 
 // ── EL MISMO CHEQUEO DE ASSETS, PERO PARA RE-RENDER PARCIAL ───────────────────────────────────
@@ -371,10 +441,11 @@ const entry = process.env.ENTRY || "";
   let ok = false, motivo = "";
   try {
     const j = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
-    const tarAsset = (j.assets || []).find((a) => /\.tar$/i.test(a.name));
+    const tarAssets = (j.assets || []).filter((a) => /\.tar(?:\.part\d+)?$/i.test(a.name));
+    const tarBytes = tarAssets.reduce((sum, asset) => sum + Number(asset.size || 0), 0);
     if (j.isDraft) motivo = "el release quedó en DRAFT (la subida no terminó) — los runners no pueden bajarlo";
-    else if (!tarAsset) motivo = `el release existe pero NO tiene el .tar adentro (${(j.assets || []).length} assets)`;
-    else if (!tarAsset.size) motivo = "el .tar está en el release pero pesa 0";
+    else if (!tarAssets.length) motivo = `el release existe pero NO tiene el .tar ni sus partes (${(j.assets || []).length} assets)`;
+    else if (!tarBytes) motivo = "el paquete está en el release pero pesa 0";
     else ok = true;
   } catch { motivo = "no existe el release de assets"; }
   if (!ok) {

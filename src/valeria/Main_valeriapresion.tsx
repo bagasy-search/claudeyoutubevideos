@@ -236,7 +236,14 @@ export const MainValeriaPresion: React.FC = () => {
   return (
     <AbsoluteFill style={{background: VAL.paper, overflow: 'hidden'}}>
       <Audio src={staticFile('valeriapresion.wav')} />
-      <AvatarLayer cuts={cuts} />
+      {/* OPTIMIZACION DE RENDER: el avatar solo se monta mientras es el avatar REAL (0..9:44).
+          Despues de ahi va en bucle, no sincroniza labios y esta tapado por una escena opaca
+          el 100% del tiempo (el build garantiza cobertura total en esa zona), asi que
+          decodificar el mp4 debajo era gastar ~38.000 frames de decodificacion invisible.
+          Medido: el render de 31 min tarda ~2h50 con dos videos por frame. */}
+      <Sequence from={0} durationInFrames={AVATAR_END_F} name="avatar real" premountFor={0}>
+        <AvatarLayer cuts={cuts} />
+      </Sequence>
       {BEATS.map((cue) => {
         const from = Math.round(cue.start * fps);
         const df = Math.max(1, Math.round(cue.dur * fps));
