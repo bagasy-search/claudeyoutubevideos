@@ -1,0 +1,5658 @@
+{
+ "video": "fcsvarices",
+ "avatar": "fcsvarices_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "fv000",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv000.mp4",
+   "start": 8.71,
+   "dur": 3.94
+  },
+  {
+   "id": "c000",
+   "start": 8.71,
+   "dur": 8.71,
+   "kind": "lowerthird",
+   "kicker": "LAS 2 O LAS 3 DE LA MAÑANA",
+   "title": "No siempre es la próstata",
+   "tone": "alert"
+  },
+  {
+   "id": "ph000",
+   "kind": "raw",
+   "src": "img/fv000.png",
+   "start": 12.65,
+   "dur": 3.6
+  },
+  {
+   "id": "fv001",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv001.mp4",
+   "start": 17.42,
+   "dur": 3.94
+  },
+  {
+   "id": "ph001",
+   "kind": "raw",
+   "src": "img/fv001.png",
+   "start": 21.36,
+   "dur": 3.6
+  },
+  {
+   "id": "c002",
+   "start": 26.13,
+   "dur": 8.71,
+   "kind": "bars",
+   "eyebrow": "PRESIÓN EN EL TOBILLO",
+   "title": "Lo que aguanta tu tobillo según cómo estés",
+   "unit": "mmHg",
+   "bars": [
+    {
+     "label": "De pie, quieto",
+     "value": 90,
+     "tone": "bad"
+    },
+    {
+     "label": "Caminando",
+     "value": 22
+    },
+    {
+     "label": "Acostado",
+     "value": 15,
+     "tone": "good",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "fv003",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv003.mp4",
+   "start": 34.84,
+   "dur": 3.94
+  },
+  {
+   "id": "ph003",
+   "kind": "raw",
+   "src": "img/fv003.png",
+   "start": 38.78,
+   "dur": 3.6
+  },
+  {
+   "id": "fv004",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv004.mp4",
+   "start": 44.58,
+   "dur": 3.94
+  },
+  {
+   "id": "ph004",
+   "kind": "raw",
+   "src": "img/fv004.png",
+   "start": 48.52,
+   "dur": 3.6
+  },
+  {
+   "id": "fv005",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv005.mp4",
+   "start": 52.14,
+   "dur": 3.94
+  },
+  {
+   "id": "c005",
+   "start": 52.14,
+   "dur": 6.88,
+   "kind": "lowerthird",
+   "kicker": "ATENCIÓN",
+   "title": "Hay un error que puede ser una emergencia",
+   "desc": "Te doy las señales exactas al final",
+   "tone": "bad"
+  },
+  {
+   "id": "ph005",
+   "kind": "raw",
+   "src": "img/fv005.png",
+   "start": 56.08,
+   "dur": 2.94
+  },
+  {
+   "id": "fv006",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv006.mp4",
+   "start": 59.02,
+   "dur": 3.94
+  },
+  {
+   "id": "ph006",
+   "kind": "raw",
+   "src": "img/fv006.png",
+   "start": 62.96,
+   "dur": 3.56
+  },
+  {
+   "id": "c007",
+   "start": 66.52,
+   "dur": 7.58,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "HAY UNA PIERNA QUE NO SE MASAJEA",
+   "tone": "bad"
+  },
+  {
+   "id": "fv008",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv008.mp4",
+   "start": 74.1,
+   "dur": 3.94
+  },
+  {
+   "id": "ph008",
+   "kind": "raw",
+   "src": "img/fv008.png",
+   "start": 78.04,
+   "dur": 3.6
+  },
+  {
+   "id": "c009",
+   "start": 87.5,
+   "dur": 6.96,
+   "kind": "mitoverdad",
+   "myth": "El aceite hace desaparecer la várice",
+   "truth": "El aceite te devuelve la pierna, no borra la vena",
+   "flipAt": 0.55
+  },
+  {
+   "id": "ph010",
+   "kind": "raw",
+   "src": "img/fvhero010.png",
+   "start": 94.46,
+   "dur": 3.6
+  },
+  {
+   "id": "ph011",
+   "kind": "raw",
+   "src": "img/fvhero011.png",
+   "start": 106.28,
+   "dur": 3.6
+  },
+  {
+   "id": "fv012",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv012.mp4",
+   "start": 116.36,
+   "dur": 3.94
+  },
+  {
+   "id": "ph012",
+   "kind": "raw",
+   "src": "img/fv012.png",
+   "start": 120.3,
+   "dur": 3.6
+  },
+  {
+   "id": "fv013",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv013.mp4",
+   "start": 127.16,
+   "dur": 3.94
+  },
+  {
+   "id": "c013",
+   "start": 127.16,
+   "dur": 10.68,
+   "kind": "frasecinetica",
+   "words": [
+    "EL",
+    "QUE",
+    "ENTIENDE",
+    "SE",
+    "CUIDA",
+    "SOLO"
+   ],
+   "perWord": 0.4,
+   "tone": "good"
+  },
+  {
+   "id": "ph013",
+   "kind": "raw",
+   "src": "img/fv013.png",
+   "start": 131.1,
+   "dur": 3.6
+  },
+  {
+   "id": "fv014",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv014.mp4",
+   "start": 137.84,
+   "dur": 3.94
+  },
+  {
+   "id": "ph014",
+   "kind": "raw",
+   "src": "img/fv014.png",
+   "start": 141.78,
+   "dur": 3.6
+  },
+  {
+   "id": "fv015",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv015.mp4",
+   "start": 150.53,
+   "dur": 3.94
+  },
+  {
+   "id": "c015",
+   "start": 150.53,
+   "dur": 12.69,
+   "kind": "lowerthird",
+   "kicker": "DOÑA TRINI · 68 AÑOS",
+   "title": "41 años vendiendo fruta, de pie",
+   "desc": "De seis de la mañana a cuatro de la tarde",
+   "tone": "good"
+  },
+  {
+   "id": "ph015",
+   "kind": "raw",
+   "src": "img/fv015.png",
+   "start": 154.47,
+   "dur": 3.6
+  },
+  {
+   "id": "fv016",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv016.mp4",
+   "start": 163.22,
+   "dur": 3.94
+  },
+  {
+   "id": "ph016",
+   "kind": "raw",
+   "src": "img/fv016.png",
+   "start": 167.16,
+   "dur": 3.6
+  },
+  {
+   "id": "fv017",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv017.mp4",
+   "start": 174.32,
+   "dur": 3.94
+  },
+  {
+   "id": "ph017",
+   "kind": "raw",
+   "src": "img/fv017.png",
+   "start": 178.26,
+   "dur": 3.6
+  },
+  {
+   "id": "fv018",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv018.mp4",
+   "start": 185.66,
+   "dur": 3.94
+  },
+  {
+   "id": "ph018",
+   "kind": "raw",
+   "src": "img/fv018.png",
+   "start": 189.6,
+   "dur": 3.6
+  },
+  {
+   "id": "fv019",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv019.mp4",
+   "start": 198.22,
+   "dur": 3.94
+  },
+  {
+   "id": "c019",
+   "start": 198.22,
+   "dur": 11.36,
+   "kind": "lowerthird",
+   "kicker": "LO QUE ELLA DESCRIBÍA",
+   "title": "Se me despiertan las piernas",
+   "desc": "Hormigueo, ganas de moverlas, calambre",
+   "tone": "alert"
+  },
+  {
+   "id": "ph019",
+   "kind": "raw",
+   "src": "img/fv019.png",
+   "start": 202.16,
+   "dur": 3.6
+  },
+  {
+   "id": "fv020",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv020.mp4",
+   "start": 209.58,
+   "dur": 3.94
+  },
+  {
+   "id": "c020",
+   "start": 209.58,
+   "dur": 11.36,
+   "kind": "lowerthird",
+   "kicker": "Y OTRA VEZ A LAS CINCO",
+   "title": "Al baño a las dos y media",
+   "tone": "alert"
+  },
+  {
+   "id": "ph020",
+   "kind": "raw",
+   "src": "img/fv020.png",
+   "start": 213.52,
+   "dur": 3.6
+  },
+  {
+   "id": "fv021",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv021.mp4",
+   "start": 220.94,
+   "dur": 3.94
+  },
+  {
+   "id": "ph021",
+   "kind": "raw",
+   "src": "img/fv021.png",
+   "start": 224.88,
+   "dur": 3.6
+  },
+  {
+   "id": "c022",
+   "start": 234.9,
+   "dur": 12.04,
+   "kind": "frasecinetica",
+   "words": [
+    "LA",
+    "NOCHE",
+    "ES",
+    "CUANDO",
+    "PEOR",
+    "ME",
+    "VA"
+   ],
+   "perWord": 0.42,
+   "tone": "alert"
+  },
+  {
+   "id": "fv023",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv023.mp4",
+   "start": 246.94,
+   "dur": 3.94
+  },
+  {
+   "id": "ph023",
+   "kind": "raw",
+   "src": "img/fv023.png",
+   "start": 250.88,
+   "dur": 3.6
+  },
+  {
+   "id": "c024",
+   "start": 256.7,
+   "dur": 8.24,
+   "kind": "lowerthird",
+   "kicker": "SIN ADORNOS",
+   "title": "La verdad del título",
+   "desc": "Qué es cierto y qué no te puedo prometer",
+   "tone": "alert"
+  },
+  {
+   "id": "fv025",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv025.mp4",
+   "start": 264.94,
+   "dur": 3.94
+  },
+  {
+   "id": "ph025",
+   "kind": "raw",
+   "src": "img/fv025.png",
+   "start": 268.88,
+   "dur": 3.6
+  },
+  {
+   "id": "fv026",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv026.mp4",
+   "start": 274.91,
+   "dur": 3.94
+  },
+  {
+   "id": "c026",
+   "start": 274.91,
+   "dur": 10.93,
+   "kind": "lowerthird",
+   "kicker": "LA VENA QUE SE VE",
+   "title": "Casi no duele",
+   "desc": "Lo que duele es la presión y el líquido de alrededor",
+   "tone": "good"
+  },
+  {
+   "id": "ph026",
+   "kind": "raw",
+   "src": "img/fv026.png",
+   "start": 278.85,
+   "dur": 3.6
+  },
+  {
+   "id": "fv027",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv027.mp4",
+   "start": 285.84,
+   "dur": 3.94
+  },
+  {
+   "id": "ph027",
+   "kind": "raw",
+   "src": "img/fv027.png",
+   "start": 289.78,
+   "dur": 3.6
+  },
+  {
+   "id": "c028",
+   "start": 295.48,
+   "dur": 13.26,
+   "kind": "diagram",
+   "eyebrow": "LA VÁLVULA",
+   "slides": [
+    {
+     "image": "img/fvdg028.png",
+     "eyebrow": "UNA PUERTA QUE YA NO CIERRA"
+    }
+   ]
+  },
+  {
+   "id": "fv029",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv029.mp4",
+   "start": 308.74,
+   "dur": 3.94
+  },
+  {
+   "id": "ph029",
+   "kind": "raw",
+   "src": "img/fv029.png",
+   "start": 312.68,
+   "dur": 3.6
+  },
+  {
+   "id": "c030",
+   "start": 321.32,
+   "dur": 11.28,
+   "kind": "splitlist",
+   "title": "Lo que sí cambia",
+   "items": [
+    "La pesadez de las seis de la tarde",
+    "La hinchazón del tobillo",
+    "La comezón en la pantorrilla",
+    "El calambre de las tres de la mañana",
+    "El hormigueo y la pierna inquieta"
+   ]
+  },
+  {
+   "id": "fv031",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv031.mp4",
+   "start": 332.6,
+   "dur": 3.94
+  },
+  {
+   "id": "c031",
+   "start": 332.6,
+   "dur": 10.02,
+   "kind": "lowerthird",
+   "kicker": "A LAS SEIS DE LA TARDE",
+   "title": "Piernas llenas de arena mojada",
+   "tone": "alert"
+  },
+  {
+   "id": "fv032",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv032.mp4",
+   "start": 342.62,
+   "dur": 3.94
+  },
+  {
+   "id": "c032",
+   "start": 342.62,
+   "dur": 12.46,
+   "kind": "lowerthird",
+   "kicker": "LA PRUEBA MÁS FÁCIL",
+   "title": "La marca del calcetín que tarda dos horas",
+   "tone": "alert"
+  },
+  {
+   "id": "ph032",
+   "kind": "raw",
+   "src": "img/fv032.png",
+   "start": 346.56,
+   "dur": 3.6
+  },
+  {
+   "id": "fv033",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv033.mp4",
+   "start": 355.08,
+   "dur": 3.94
+  },
+  {
+   "id": "c033",
+   "start": 355.08,
+   "dur": 13.08,
+   "kind": "frasecinetica",
+   "words": [
+    "EL",
+    "CALAMBRE",
+    "DE",
+    "LAS",
+    "TRES",
+    "DE",
+    "LA",
+    "MAÑANA"
+   ],
+   "perWord": 0.36,
+   "tone": "alert"
+  },
+  {
+   "id": "ph033",
+   "kind": "raw",
+   "src": "img/fv033.png",
+   "start": 359.02,
+   "dur": 3.6
+  },
+  {
+   "id": "c034",
+   "start": 368.16,
+   "dur": 13.44,
+   "kind": "diagram",
+   "eyebrow": "DE DÓNDE VIENE EL DOLOR",
+   "slides": [
+    {
+     "image": "img/fvdg034.png",
+     "eyebrow": "EL LÍQUIDO QUE SE QUEDA EN EL TEJIDO"
+    }
+   ]
+  },
+  {
+   "id": "ph035",
+   "kind": "raw",
+   "src": "img/fvhero035.png",
+   "start": 381.6,
+   "dur": 3.6
+  },
+  {
+   "id": "fv036",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv036.mp4",
+   "start": 393.2,
+   "dur": 3.94
+  },
+  {
+   "id": "ph036",
+   "kind": "raw",
+   "src": "img/fv036.png",
+   "start": 397.14,
+   "dur": 3.6
+  },
+  {
+   "id": "c037",
+   "start": 401.02,
+   "dur": 8.26,
+   "kind": "lowerthird",
+   "kicker": "LO QUE MÁS IMPORTA",
+   "title": "Esto FRENA el avance",
+   "desc": "El objetivo no es la que ya tienes: son las tres que vienen atrás",
+   "tone": "good"
+  },
+  {
+   "id": "c038",
+   "start": 409.28,
+   "dur": 12.26,
+   "kind": "process",
+   "eyebrow": "LA ESCALERA",
+   "title": "Cómo escala la insuficiencia venosa",
+   "steps": [
+    {
+     "title": "Arañitas",
+     "desc": "venitas finas, el primer aviso"
+    },
+    {
+     "title": "Pesadez e hinchazón",
+     "desc": "el tobillo que se borra al final del día"
+    },
+    {
+     "title": "La várice visible",
+     "desc": "la vena dilatada que ya no vuelve"
+    },
+    {
+     "title": "Piel oscura y dura",
+     "desc": "años de presión marcados arriba del tobillo"
+    }
+   ]
+  },
+  {
+   "id": "fv039",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv039.mp4",
+   "start": 421.54,
+   "dur": 3.94
+  },
+  {
+   "id": "ph039",
+   "kind": "raw",
+   "src": "img/fv039.png",
+   "start": 425.48,
+   "dur": 3.6
+  },
+  {
+   "id": "fv040",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv040.mp4",
+   "start": 431.64,
+   "dur": 3.94
+  },
+  {
+   "id": "c040",
+   "start": 431.64,
+   "dur": 12.48,
+   "kind": "lowerthird",
+   "kicker": "IMAGÍNATE UN EDIFICIO",
+   "title": "El sótano es tu pie",
+   "desc": "La azotea es tu corazón",
+   "tone": "good"
+  },
+  {
+   "id": "ph040",
+   "kind": "raw",
+   "src": "img/fv040.png",
+   "start": 435.58,
+   "dur": 3.6
+  },
+  {
+   "id": "fv041",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv041.mp4",
+   "start": 444.12,
+   "dur": 3.94
+  },
+  {
+   "id": "ph041",
+   "kind": "raw",
+   "src": "img/fv041.png",
+   "start": 448.06,
+   "dur": 3.6
+  },
+  {
+   "id": "fv042",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv042.mp4",
+   "start": 459.34,
+   "dur": 3.94
+  },
+  {
+   "id": "c042",
+   "start": 459.34,
+   "dur": 10.72,
+   "kind": "lowerthird",
+   "kicker": "LA PARTE DIFÍCIL",
+   "title": "La sangre tiene que SUBIR",
+   "desc": "Desde el pie hasta el corazón, contra la gravedad",
+   "tone": "alert"
+  },
+  {
+   "id": "ph042",
+   "kind": "raw",
+   "src": "img/fv042.png",
+   "start": 463.28,
+   "dur": 3.6
+  },
+  {
+   "id": "c043",
+   "start": 470.06,
+   "dur": 14.42,
+   "kind": "diagram",
+   "eyebrow": "EL DATO QUE NADIE SABE",
+   "slides": [
+    {
+     "image": "img/fvdg043.png",
+     "eyebrow": "EL CORAZÓN EMPUJA, NO JALA"
+    }
+   ]
+  },
+  {
+   "id": "c044",
+   "start": 484.48,
+   "dur": 9.1,
+   "kind": "chips",
+   "eyebrow": "QUIÉN SUBE LA SANGRE",
+   "title": "Dos cosas, y las dos te fallan con la edad",
+   "image": "img/fv042.png",
+   "chips": [
+    "Las válvulas: los escalones",
+    "La pantorrilla: la bomba"
+   ]
+  },
+  {
+   "id": "fv045",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv045.mp4",
+   "start": 493.58,
+   "dur": 3.94
+  },
+  {
+   "id": "c045",
+   "start": 493.58,
+   "dur": 11.42,
+   "kind": "lowerthird",
+   "kicker": "LAS VÁLVULAS",
+   "title": "Puertas de cantina que abren para un solo lado",
+   "tone": "good"
+  },
+  {
+   "id": "ph045",
+   "kind": "raw",
+   "src": "img/fv045.png",
+   "start": 497.52,
+   "dur": 3.6
+  },
+  {
+   "id": "fv046",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv046.mp4",
+   "start": 505,
+   "dur": 3.94
+  },
+  {
+   "id": "ph046",
+   "kind": "raw",
+   "src": "img/fv046.png",
+   "start": 508.94,
+   "dur": 3.6
+  },
+  {
+   "id": "c047",
+   "start": 519.52,
+   "dur": 14.76,
+   "kind": "diagram",
+   "eyebrow": "CÓMO SUBE",
+   "slides": [
+    {
+     "image": "img/fvdg047.png",
+     "eyebrow": "ESCALÓN POR ESCALÓN HASTA LA INGLE"
+    }
+   ]
+  },
+  {
+   "id": "fv048",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv048.mp4",
+   "start": 534.28,
+   "dur": 3.94
+  },
+  {
+   "id": "c048",
+   "start": 534.28,
+   "dur": 13.02,
+   "kind": "frasecinetica",
+   "words": [
+    "SE",
+    "AFLOJA",
+    "Y",
+    "LE",
+    "QUEDA",
+    "UNA",
+    "RENDIJITA"
+   ],
+   "perWord": 0.4,
+   "tone": "alert"
+  },
+  {
+   "id": "ph048",
+   "kind": "raw",
+   "src": "img/fv048.png",
+   "start": 538.22,
+   "dur": 3.6
+  },
+  {
+   "id": "fv049",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv049.mp4",
+   "start": 547.3,
+   "dur": 3.94
+  },
+  {
+   "id": "c049",
+   "start": 547.3,
+   "dur": 11.22,
+   "kind": "lowerthird",
+   "kicker": "REFLUJO",
+   "title": "La sangre se regresa un chorrito",
+   "desc": "Y le cae encima al escalón de abajo",
+   "tone": "bad"
+  },
+  {
+   "id": "ph049",
+   "kind": "raw",
+   "src": "img/fv049.png",
+   "start": 551.24,
+   "dur": 3.6
+  },
+  {
+   "id": "c050",
+   "start": 558.52,
+   "dur": 11.06,
+   "kind": "diagram",
+   "eyebrow": "EL EFECTO DOMINÓ",
+   "slides": [
+    {
+     "image": "img/fvdg050.png",
+     "eyebrow": "EL ESCALÓN DE ABAJO SE SOBRECARGA"
+    }
+   ]
+  },
+  {
+   "id": "c051",
+   "start": 569.58,
+   "dur": 9.18,
+   "kind": "diagram",
+   "eyebrow": "ASÍ NACE",
+   "slides": [
+    {
+     "image": "img/fvdg051.png",
+     "eyebrow": "LA VENA SE ESTIRA COMO UNA LIGA VIEJA"
+    }
+   ]
+  },
+  {
+   "id": "fv052",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv052.mp4",
+   "start": 578.76,
+   "dur": 3.94
+  },
+  {
+   "id": "c052",
+   "start": 578.76,
+   "dur": 10.8,
+   "kind": "lowerthird",
+   "kicker": "ESO ES UNA VÁRICE",
+   "title": "Una vena estirada como una liga vieja",
+   "desc": "Que ya no vuelve a su tamaño",
+   "tone": "bad"
+  },
+  {
+   "id": "ph052",
+   "kind": "raw",
+   "src": "img/fv052.png",
+   "start": 582.7,
+   "dur": 3.6
+  },
+  {
+   "id": "ph053",
+   "kind": "raw",
+   "src": "img/fvhero053.png",
+   "start": 589.56,
+   "dur": 3.6
+  },
+  {
+   "id": "c054",
+   "start": 600.42,
+   "dur": 5.4,
+   "kind": "headline",
+   "eyebrow": "Y AHORA EL NÚMERO",
+   "tokens": [
+    {
+     "t": "EL"
+    },
+    {
+     "t": "NÚMERO",
+     "hl": true
+    },
+    {
+     "t": "QUE"
+    },
+    {
+     "t": "EXPLICA"
+    },
+    {
+     "t": "TU"
+    },
+    {
+     "t": "VIDA"
+    },
+    {
+     "t": "ENTERA",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "fv055",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv055.mp4",
+   "start": 605.82,
+   "dur": 3.94
+  },
+  {
+   "id": "c055",
+   "start": 605.82,
+   "dur": 12.24,
+   "kind": "lowerthird",
+   "kicker": "PARADO, QUIETO",
+   "title": "La fila del banco es lo peor",
+   "tone": "bad"
+  },
+  {
+   "id": "ph055",
+   "kind": "raw",
+   "src": "img/fv055.png",
+   "start": 609.76,
+   "dur": 3.6
+  },
+  {
+   "id": "c056",
+   "start": 618.06,
+   "dur": 5.64,
+   "kind": "stat",
+   "eyebrow": "DE PIE, QUIETO",
+   "value": 100,
+   "suffix": " mmHg",
+   "label": "lo que aguanta tu tobillo: de 80 a 100"
+  },
+  {
+   "id": "fv057",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv057.mp4",
+   "start": 623.7,
+   "dur": 3.94
+  },
+  {
+   "id": "ph057",
+   "kind": "raw",
+   "src": "img/fv057.png",
+   "start": 627.64,
+   "dur": 3.6
+  },
+  {
+   "id": "c058",
+   "start": 636.96,
+   "dur": 11.48,
+   "kind": "diagram",
+   "eyebrow": "POR QUÉ TANTO",
+   "slides": [
+    {
+     "image": "img/fvdg058.png",
+     "eyebrow": "UNA COLUMNA DE SANGRE DE UN METRO Y PICO"
+    }
+   ]
+  },
+  {
+   "id": "fv059",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv059.mp4",
+   "start": 648.44,
+   "dur": 3.94
+  },
+  {
+   "id": "c059",
+   "start": 648.44,
+   "dur": 12.98,
+   "kind": "lowerthird",
+   "kicker": "EN UNOS CUANTOS PASOS",
+   "title": "La presión se desploma a la cuarta parte",
+   "tone": "good"
+  },
+  {
+   "id": "ph059",
+   "kind": "raw",
+   "src": "img/fv059.png",
+   "start": 652.38,
+   "dur": 3.6
+  },
+  {
+   "id": "fv060",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv060.mp4",
+   "start": 661.42,
+   "dur": 3.94
+  },
+  {
+   "id": "c060",
+   "start": 661.42,
+   "dur": 12.2,
+   "kind": "lowerthird",
+   "kicker": "ACOSTADO",
+   "title": "De cien a quince",
+   "desc": "La misma vena, las mismas válvulas",
+   "tone": "good"
+  },
+  {
+   "id": "ph060",
+   "kind": "raw",
+   "src": "img/fv060.png",
+   "start": 665.36,
+   "dur": 3.6
+  },
+  {
+   "id": "c061",
+   "start": 673.62,
+   "dur": 13.23,
+   "kind": "bars",
+   "eyebrow": "LA MISMA PIERNA",
+   "title": "Cambia solo lo que estás haciendo",
+   "unit": "mmHg",
+   "bars": [
+    {
+     "label": "Parado quieto",
+     "value": 100,
+     "tone": "bad",
+     "note": "la bomba apagada"
+    },
+    {
+     "label": "Caminando",
+     "value": 22,
+     "note": "unos cuantos pasos"
+    },
+    {
+     "label": "Acostado",
+     "value": 15,
+     "tone": "good",
+     "winner": true,
+     "note": "la ventana de la noche"
+    }
+   ]
+  },
+  {
+   "id": "c062",
+   "start": 686.85,
+   "dur": 13.23,
+   "kind": "frasecinetica",
+   "words": [
+    "SIN",
+    "PASTILLAS",
+    "SIN",
+    "CIRUGÍA",
+    "TÚ",
+    "CONTROLAS",
+    "ESA",
+    "PRESIÓN"
+   ],
+   "perWord": 0.38,
+   "tone": "good"
+  },
+  {
+   "id": "fv063",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv063.mp4",
+   "start": 700.08,
+   "dur": 3.94
+  },
+  {
+   "id": "c063",
+   "start": 700.08,
+   "dur": 12.13,
+   "kind": "lowerthird",
+   "kicker": "NADIE SE LO EXPLICA",
+   "title": "Las que trabajan de pie",
+   "desc": "Tianguis, enfermeras, guardias, cocineros",
+   "tone": "alert"
+  },
+  {
+   "id": "ph063",
+   "kind": "raw",
+   "src": "img/fv063.png",
+   "start": 704.02,
+   "dur": 3.6
+  },
+  {
+   "id": "fv064",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv064.mp4",
+   "start": 712.21,
+   "dur": 3.94
+  },
+  {
+   "id": "ph064",
+   "kind": "raw",
+   "src": "img/fv064.png",
+   "start": 716.15,
+   "dur": 3.6
+  },
+  {
+   "id": "fv065",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv065.mp4",
+   "start": 724.34,
+   "dur": 3.94
+  },
+  {
+   "id": "ph065",
+   "kind": "raw",
+   "src": "img/fv065.png",
+   "start": 728.28,
+   "dur": 3.6
+  },
+  {
+   "id": "fv066",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv066.mp4",
+   "start": 735.96,
+   "dur": 3.94
+  },
+  {
+   "id": "c066",
+   "start": 735.96,
+   "dur": 10.97,
+   "kind": "lowerthird",
+   "kicker": "LA PANTORRILLA",
+   "title": "El segundo corazón",
+   "tone": "good"
+  },
+  {
+   "id": "ph066",
+   "kind": "raw",
+   "src": "img/fv066.png",
+   "start": 739.9,
+   "dur": 3.6
+  },
+  {
+   "id": "fv067",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv067.mp4",
+   "start": 746.93,
+   "dur": 3.94
+  },
+  {
+   "id": "ph067",
+   "kind": "raw",
+   "src": "img/fv067.png",
+   "start": 750.87,
+   "dur": 3.6
+  },
+  {
+   "id": "c068",
+   "start": 757.9,
+   "dur": 11.5,
+   "kind": "lowerthird",
+   "kicker": "EN MEDICINA LE DECIMOS",
+   "title": "El segundo corazón",
+   "desc": "No es una figura poética: es una descripción técnica",
+   "tone": "good"
+  },
+  {
+   "id": "fv069",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv069.mp4",
+   "start": 769.4,
+   "dur": 3.94
+  },
+  {
+   "id": "c069",
+   "start": 769.4,
+   "dur": 11.66,
+   "kind": "lowerthird",
+   "kicker": "CÓMO FUNCIONA",
+   "title": "Como apretar una bolsa de agua",
+   "tone": "good"
+  },
+  {
+   "id": "ph069",
+   "kind": "raw",
+   "src": "img/fv069.png",
+   "start": 773.34,
+   "dur": 3.6
+  },
+  {
+   "id": "c070",
+   "start": 781.06,
+   "dur": 9.68,
+   "kind": "diagram",
+   "eyebrow": "LA BOMBA",
+   "slides": [
+    {
+     "image": "img/fvdg070.png",
+     "eyebrow": "EL MÚSCULO ESTRUJA, LA VÁLVULA DEJA SUBIR"
+    }
+   ]
+  },
+  {
+   "id": "c071",
+   "start": 790.74,
+   "dur": 11.02,
+   "kind": "stat",
+   "eyebrow": "AL CONTRAERSE LA PANTORRILLA",
+   "value": 300,
+   "suffix": " mmHg",
+   "label": "hasta el triple de la gravedad que te gana"
+  },
+  {
+   "id": "c072",
+   "start": 801.76,
+   "dur": 11.02,
+   "kind": "bars",
+   "eyebrow": "TIENES CON QUÉ PELEAR",
+   "title": "Tu bomba contra la columna",
+   "unit": "mmHg",
+   "bars": [
+    {
+     "label": "La pantorrilla",
+     "value": 300,
+     "tone": "good",
+     "winner": true
+    },
+    {
+     "label": "La columna de sangre",
+     "value": 100,
+     "tone": "bad"
+    }
+   ]
+  },
+  {
+   "id": "fv073",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv073.mp4",
+   "start": 812.78,
+   "dur": 3.94
+  },
+  {
+   "id": "ph073",
+   "kind": "raw",
+   "src": "img/fv073.png",
+   "start": 816.72,
+   "dur": 3.6
+  },
+  {
+   "id": "fv074",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv074.mp4",
+   "start": 821.2,
+   "dur": 3.94
+  },
+  {
+   "id": "c074",
+   "start": 821.2,
+   "dur": 13.34,
+   "kind": "lowerthird",
+   "kicker": "LA CONDICIÓN",
+   "title": "Contraer y soltar",
+   "desc": "Si el músculo se queda quieto, la bomba está apagada",
+   "tone": "alert"
+  },
+  {
+   "id": "ph074",
+   "kind": "raw",
+   "src": "img/fv074.png",
+   "start": 825.14,
+   "dur": 3.6
+  },
+  {
+   "id": "fv075",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv075.mp4",
+   "start": 834.54,
+   "dur": 3.94
+  },
+  {
+   "id": "c075",
+   "start": 834.54,
+   "dur": 14,
+   "kind": "frasecinetica",
+   "words": [
+    "LO",
+    "MALO",
+    "NO",
+    "ES",
+    "ESTAR",
+    "DE",
+    "PIE",
+    "ES",
+    "ESTAR",
+    "QUIETO"
+   ],
+   "perWord": 0.34,
+   "tone": "alert"
+  },
+  {
+   "id": "ph075",
+   "kind": "raw",
+   "src": "img/fv075.png",
+   "start": 838.48,
+   "dur": 3.6
+  },
+  {
+   "id": "fv076",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv076.mp4",
+   "start": 848.54,
+   "dur": 3.94
+  },
+  {
+   "id": "ph076",
+   "kind": "raw",
+   "src": "img/fv076.png",
+   "start": 852.48,
+   "dur": 3.6
+  },
+  {
+   "id": "c077",
+   "start": 861.24,
+   "dur": 10.4,
+   "kind": "bars",
+   "eyebrow": "LO CONTRA INTUITIVO",
+   "title": "No es estar de pie: es estar quieto",
+   "unit": "mmHg",
+   "bars": [
+    {
+     "label": "Caminando 8 horas",
+     "value": 22,
+     "tone": "good",
+     "winner": true
+    },
+    {
+     "label": "Parado quieto 3 horas",
+     "value": 100,
+     "tone": "bad"
+    }
+   ]
+  },
+  {
+   "id": "fv078",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv078.mp4",
+   "start": 871.64,
+   "dur": 3.94
+  },
+  {
+   "id": "ph078",
+   "kind": "raw",
+   "src": "img/fv078.png",
+   "start": 875.58,
+   "dur": 3.6
+  },
+  {
+   "id": "fv079",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv079.mp4",
+   "start": 881.14,
+   "dur": 3.94
+  },
+  {
+   "id": "ph079",
+   "kind": "raw",
+   "src": "img/fv079.png",
+   "start": 885.08,
+   "dur": 3.6
+  },
+  {
+   "id": "fv080",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv080.mp4",
+   "start": 892.9,
+   "dur": 3.94
+  },
+  {
+   "id": "c080",
+   "start": 892.9,
+   "dur": 10.3,
+   "kind": "lowerthird",
+   "kicker": "LA SILLA",
+   "title": "Como pisar una manguera",
+   "desc": "La bomba apagada y el paso pellizcado",
+   "tone": "bad"
+  },
+  {
+   "id": "ph080",
+   "kind": "raw",
+   "src": "img/fv080.png",
+   "start": 896.84,
+   "dur": 3.6
+  },
+  {
+   "id": "fv081",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv081.mp4",
+   "start": 903.2,
+   "dur": 3.94
+  },
+  {
+   "id": "c081",
+   "start": 903.2,
+   "dur": 11.3,
+   "kind": "lowerthird",
+   "kicker": "POR ESO",
+   "title": "Te bajas del camión y no te entra el zapato",
+   "desc": "No es la altura: es la silla",
+   "tone": "alert"
+  },
+  {
+   "id": "ph081",
+   "kind": "raw",
+   "src": "img/fv081.png",
+   "start": 907.14,
+   "dur": 3.6
+  },
+  {
+   "id": "fv082",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv082.mp4",
+   "start": 914.5,
+   "dur": 3.94
+  },
+  {
+   "id": "ph082",
+   "kind": "raw",
+   "src": "img/fv082.png",
+   "start": 918.44,
+   "dur": 3.6
+  },
+  {
+   "id": "c083",
+   "start": 925.16,
+   "dur": 6.44,
+   "kind": "headline",
+   "eyebrow": "LA PREGUNTA BUENA",
+   "tokens": [
+    {
+     "t": "¿A"
+    },
+    {
+     "t": "DÓNDE"
+    },
+    {
+     "t": "SE"
+    },
+    {
+     "t": "VA"
+    },
+    {
+     "t": "TODA"
+    },
+    {
+     "t": "ESA"
+    },
+    {
+     "t": "AGUA",
+     "hl": true
+    },
+    {
+     "t": "?"
+    }
+   ]
+  },
+  {
+   "id": "c084",
+   "start": 931.6,
+   "dur": 10.92,
+   "kind": "diagram",
+   "eyebrow": "LA FILTRACIÓN",
+   "slides": [
+    {
+     "image": "img/fvdg084.png",
+     "eyebrow": "LA PARED FINÍSIMA DEJA SALIR LÍQUIDO"
+    }
+   ]
+  },
+  {
+   "id": "fv085",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv085.mp4",
+   "start": 942.52,
+   "dur": 3.94
+  },
+  {
+   "id": "c085",
+   "start": 942.52,
+   "dur": 13.56,
+   "kind": "lowerthird",
+   "kicker": "QUÉ ES LA HINCHAZÓN",
+   "title": "La pierna se empapa como una esponja",
+   "tone": "alert"
+  },
+  {
+   "id": "ph085",
+   "kind": "raw",
+   "src": "img/fv085.png",
+   "start": 946.46,
+   "dur": 3.6
+  },
+  {
+   "id": "fv086",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv086.mp4",
+   "start": 956.08,
+   "dur": 3.94
+  },
+  {
+   "id": "c086",
+   "start": 956.08,
+   "dur": 10.7,
+   "kind": "lowerthird",
+   "kicker": "LA PRUEBA DEL DEDO",
+   "title": "Si queda el hoyito, eso es agua",
+   "tone": "good"
+  },
+  {
+   "id": "ph086",
+   "kind": "raw",
+   "src": "img/fv086.png",
+   "start": 960.02,
+   "dur": 3.6
+  },
+  {
+   "id": "fv087",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv087.mp4",
+   "start": 966.78,
+   "dur": 3.94
+  },
+  {
+   "id": "ph087",
+   "kind": "raw",
+   "src": "img/fv087.png",
+   "start": 970.72,
+   "dur": 3.6
+  },
+  {
+   "id": "c088",
+   "start": 975.7,
+   "dur": 12.18,
+   "kind": "diagram",
+   "eyebrow": "AL ACOSTARTE",
+   "slides": [
+    {
+     "image": "img/fvdg088.png",
+     "eyebrow": "EL AGUA VUELVE A LA SANGRE Y VA AL RIÑÓN"
+    }
+   ]
+  },
+  {
+   "id": "fv089",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv089.mp4",
+   "start": 987.88,
+   "dur": 3.94
+  },
+  {
+   "id": "ph089",
+   "kind": "raw",
+   "src": "img/fv089.png",
+   "start": 991.82,
+   "dur": 3.6
+  },
+  {
+   "id": "fv090",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv090.mp4",
+   "start": 998.8,
+   "dur": 3.94
+  },
+  {
+   "id": "c090",
+   "start": 998.8,
+   "dur": 11.54,
+   "kind": "lowerthird",
+   "kicker": "A LAS TRES DE LA MAÑANA",
+   "title": "Esa agua es la de tus piernas",
+   "tone": "alert"
+  },
+  {
+   "id": "ph090",
+   "kind": "raw",
+   "src": "img/fv090.png",
+   "start": 1002.74,
+   "dur": 3.6
+  },
+  {
+   "id": "c091",
+   "start": 1010.34,
+   "dur": 10.32,
+   "kind": "lowerthird",
+   "kicker": "OJO CON ESTO",
+   "title": "La próstata igual se revisa",
+   "desc": "Si eres hombre y pasas de sesenta, eso no está a discusión",
+   "tone": "alert"
+  },
+  {
+   "id": "c092",
+   "start": 1020.66,
+   "dur": 11.28,
+   "kind": "quote",
+   "text": "Se está estudiando si tratar la insuficiencia venosa reduce las veces que la gente se levanta al baño de noche",
+   "image": "img/fv089.png"
+  },
+  {
+   "id": "c093",
+   "start": 1031.94,
+   "dur": 11.36,
+   "kind": "checklist",
+   "eyebrow": "HAZLA ESTA NOCHE",
+   "title": "La prueba casera del tobillo",
+   "stamp": "GRATIS",
+   "items": [
+    "Míratelo en la mañana, antes de los zapatos",
+    "Míratelo en la noche, después de todo el día",
+    "¿El zapato aprieta más en la noche?",
+    "¿Se te marca el calcetín y tarda en irse?",
+    "¿Te levantas una o dos veces al baño?"
+   ]
+  },
+  {
+   "id": "fv094",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv094.mp4",
+   "start": 1043.3,
+   "dur": 3.94
+  },
+  {
+   "id": "c094",
+   "start": 1043.3,
+   "dur": 11.2,
+   "kind": "lowerthird",
+   "kicker": "MÍRATELO EN LA MAÑANA",
+   "title": "Antes de ponerte los zapatos",
+   "tone": "good"
+  },
+  {
+   "id": "ph094",
+   "kind": "raw",
+   "src": "img/fv094.png",
+   "start": 1047.24,
+   "dur": 3.6
+  },
+  {
+   "id": "fv095",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv095.mp4",
+   "start": 1054.5,
+   "dur": 3.94
+  },
+  {
+   "id": "c095",
+   "start": 1054.5,
+   "dur": 13.76,
+   "kind": "lowerthird",
+   "kicker": "Y OTRA VEZ EN LA NOCHE",
+   "title": "Ahí está la diferencia",
+   "tone": "good"
+  },
+  {
+   "id": "ph095",
+   "kind": "raw",
+   "src": "img/fv095.png",
+   "start": 1058.44,
+   "dur": 3.6
+  },
+  {
+   "id": "c096",
+   "start": 1068.26,
+   "dur": 13.48,
+   "kind": "frasecinetica",
+   "words": [
+    "TU",
+    "CUERPO",
+    "TE",
+    "DABA",
+    "EL",
+    "REPORTE",
+    "TODAS",
+    "LAS",
+    "MADRUGADAS"
+   ],
+   "perWord": 0.36,
+   "tone": "alert"
+  },
+  {
+   "id": "c097",
+   "start": 1081.74,
+   "dur": 12.18,
+   "kind": "lowerthird",
+   "kicker": "POR ESO ES NOCTURNO",
+   "title": "La ventana se abre cuando te acuestas",
+   "desc": "Es el único momento del día en que las venas no pelean con la gravedad",
+   "tone": "good"
+  },
+  {
+   "id": "fv098",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv098.mp4",
+   "start": 1093.92,
+   "dur": 3.94
+  },
+  {
+   "id": "ph098",
+   "kind": "raw",
+   "src": "img/fv098.png",
+   "start": 1097.86,
+   "dur": 3.6
+  },
+  {
+   "id": "fv099",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv099.mp4",
+   "start": 1104.32,
+   "dur": 3.94
+  },
+  {
+   "id": "c099",
+   "start": 1104.32,
+   "dur": 6.92,
+   "kind": "frasecinetica",
+   "words": [
+    "AMANECER",
+    "CON",
+    "LA",
+    "PIERNA",
+    "EN",
+    "CERO"
+   ],
+   "perWord": 0.42,
+   "tone": "good"
+  },
+  {
+   "id": "ph099",
+   "kind": "raw",
+   "src": "img/fv099.png",
+   "start": 1108.26,
+   "dur": 2.98
+  },
+  {
+   "id": "c100",
+   "start": 1111.24,
+   "dur": 9.35,
+   "kind": "splitlist",
+   "title": "Lo que pasa si vacías la pierna de noche",
+   "items": [
+    "Duermes mejor: menos presión, menos calambre",
+    "Te levantas menos al baño",
+    "Amaneces con la pierna en cero"
+   ]
+  },
+  {
+   "id": "c101",
+   "start": 1120.59,
+   "dur": 9.35,
+   "kind": "headline",
+   "eyebrow": "EL PROBLEMA DE FONDO",
+   "tokens": [
+    {
+     "t": "NUNCA"
+    },
+    {
+     "t": "VACÍAN",
+     "hl": true
+    },
+    {
+     "t": "DEL"
+    },
+    {
+     "t": "TODO"
+    }
+   ]
+  },
+  {
+   "id": "c102",
+   "start": 1129.95,
+   "dur": 9.35,
+   "kind": "bars",
+   "eyebrow": "EL TANQUE QUE NO SE VACÍA",
+   "title": "Cómo amaneces cada día",
+   "unit": "% lleno",
+   "bars": [
+    {
+     "label": "Amanece el martes",
+     "value": 30
+    },
+    {
+     "label": "Amanece el miércoles",
+     "value": 40
+    },
+    {
+     "label": "Amanece el jueves",
+     "value": 55,
+     "tone": "bad"
+    },
+    {
+     "label": "Amanece el viernes",
+     "value": 70,
+     "tone": "bad",
+     "note": "el tobillo ya nunca vuelve a estar delgado"
+    }
+   ]
+  },
+  {
+   "id": "fv103",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv103.mp4",
+   "start": 1139.3,
+   "dur": 3.94
+  },
+  {
+   "id": "ph103",
+   "kind": "raw",
+   "src": "img/fv103.png",
+   "start": 1143.24,
+   "dur": 3.4
+  },
+  {
+   "id": "fv104",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv104.mp4",
+   "start": 1146.64,
+   "dur": 3.94
+  },
+  {
+   "id": "ph104",
+   "kind": "raw",
+   "src": "img/fv104.png",
+   "start": 1150.58,
+   "dur": 3.24
+  },
+  {
+   "id": "fv105",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv105.mp4",
+   "start": 1153.82,
+   "dur": 3.94
+  },
+  {
+   "id": "ph105",
+   "kind": "raw",
+   "src": "img/fv105.png",
+   "start": 1157.76,
+   "dur": 3.6
+  },
+  {
+   "id": "fv106",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv106.mp4",
+   "start": 1163.63,
+   "dur": 3.94
+  },
+  {
+   "id": "c106",
+   "start": 1163.63,
+   "dur": 9.81,
+   "kind": "lowerthird",
+   "kicker": "LA HOJA DE ROMERO",
+   "title": "Tres cosas trabajando en tres frentes",
+   "tone": "good"
+  },
+  {
+   "id": "ph106",
+   "kind": "raw",
+   "src": "img/fv106.png",
+   "start": 1167.57,
+   "dur": 3.6
+  },
+  {
+   "id": "c107",
+   "start": 1173.44,
+   "dur": 11.5,
+   "kind": "chips",
+   "eyebrow": "LO QUE TRAE LA HOJA",
+   "title": "Tres compuestos, tres frentes",
+   "image": "img/fv106.png",
+   "chips": [
+    "Ácido carnósico: abre el riego",
+    "Ácido rosmarínico: baja el fuego lento",
+    "Cineol y alcanfor: calman la comezón"
+   ]
+  },
+  {
+   "id": "fv108",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv108.mp4",
+   "start": 1184.94,
+   "dur": 3.94
+  },
+  {
+   "id": "ph108",
+   "kind": "raw",
+   "src": "img/fv108.png",
+   "start": 1188.88,
+   "dur": 3.6
+  },
+  {
+   "id": "fv109",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv109.mp4",
+   "start": 1197.84,
+   "dur": 3.94
+  },
+  {
+   "id": "ph109",
+   "kind": "raw",
+   "src": "img/fv109.png",
+   "start": 1201.78,
+   "dur": 2.96
+  },
+  {
+   "id": "fv110",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv110.mp4",
+   "start": 1204.74,
+   "dur": 3.94
+  },
+  {
+   "id": "c110",
+   "start": 1204.74,
+   "dur": 11.54,
+   "kind": "lowerthird",
+   "kicker": "LO VAS A SENTIR",
+   "title": "Un calorcito, un cosquilleo tibio",
+   "desc": "No arde: la piel se despierta",
+   "tone": "good"
+  },
+  {
+   "id": "ph110",
+   "kind": "raw",
+   "src": "img/fv110.png",
+   "start": 1208.68,
+   "dur": 3.6
+  },
+  {
+   "id": "bed111",
+   "kind": "raw",
+   "src": "img/fv110.png",
+   "start": 1216.28,
+   "dur": 11.54
+  },
+  {
+   "id": "c111",
+   "start": 1216.28,
+   "dur": 11.54,
+   "kind": "headline",
+   "eyebrow": "EL COSQUILLEO",
+   "tokens": [
+    {
+     "t": "NO"
+    },
+    {
+     "t": "ES"
+    },
+    {
+     "t": "SUGESTIÓN",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "bed112",
+   "kind": "raw",
+   "src": "img/fv110.png",
+   "start": 1227.81,
+   "dur": 11.08
+  },
+  {
+   "id": "c112",
+   "start": 1227.81,
+   "dur": 11.08,
+   "kind": "diagram",
+   "eyebrow": "EL TIMBRE DE LA PIEL",
+   "slides": [
+    {
+     "image": "img/fvdg112.png",
+     "eyebrow": "UN RECEPTOR EN LA TERMINACIÓN DEL NERVIO"
+    }
+   ]
+  },
+  {
+   "id": "bed113",
+   "kind": "raw",
+   "src": "img/fv115.png",
+   "start": 1238.89,
+   "dur": 6.44
+  },
+  {
+   "id": "c113",
+   "start": 1238.89,
+   "dur": 6.44,
+   "kind": "lowerthird",
+   "kicker": "ÁCIDO CARNÓSICO",
+   "title": "Toca ese timbre",
+   "desc": "Y el timbre abre la llave del riego",
+   "tone": "good"
+  },
+  {
+   "id": "bed114",
+   "kind": "raw",
+   "src": "img/fv115.png",
+   "start": 1245.33,
+   "dur": 8.5
+  },
+  {
+   "id": "c114",
+   "start": 1245.33,
+   "dur": 8.5,
+   "kind": "diagram",
+   "eyebrow": "LO QUE PASA DESPUÉS",
+   "slides": [
+    {
+     "image": "img/fvdg114.png",
+     "eyebrow": "LOS VASITOS DE LA ZONA SE ABREN"
+    }
+   ]
+  },
+  {
+   "id": "fv115",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv115.mp4",
+   "start": 1253.83,
+   "dur": 3.94
+  },
+  {
+   "id": "ph115",
+   "kind": "raw",
+   "src": "img/fv115.png",
+   "start": 1257.77,
+   "dur": 4.16
+  },
+  {
+   "id": "bed116",
+   "kind": "raw",
+   "src": "img/fv115.png",
+   "start": 1261.93,
+   "dur": 12.08
+  },
+  {
+   "id": "c116",
+   "start": 1261.93,
+   "dur": 12.08,
+   "kind": "quote",
+   "text": "El ácido carnósico aplicado en la piel acelera la reparación del tejido, y lo hace por ese receptor",
+   "image": "img/fv115.png"
+  },
+  {
+   "id": "bed117",
+   "kind": "raw",
+   "src": "img/fv115.png",
+   "start": 1274.01,
+   "dur": 13.74
+  },
+  {
+   "id": "c117",
+   "start": 1274.01,
+   "dur": 13.74,
+   "kind": "frasecinetica",
+   "words": [
+    "UN",
+    "COMPUESTO",
+    "TOCANDO",
+    "UN",
+    "TIMBRE",
+    "EN",
+    "TUS",
+    "NERVIOS"
+   ],
+   "perWord": 0.36,
+   "tone": "good"
+  },
+  {
+   "id": "bed118",
+   "kind": "raw",
+   "src": "img/fv120.png",
+   "start": 1287.75,
+   "dur": 4.3
+  },
+  {
+   "id": "c118",
+   "start": 1287.75,
+   "dur": 4.3,
+   "kind": "diagram",
+   "eyebrow": "EL FUEGO LENTO",
+   "slides": [
+    {
+     "image": "img/fvdg118.png",
+     "eyebrow": "LA PRESIÓN ALTA INFLAMA LA PARED"
+    }
+   ]
+  },
+  {
+   "id": "bed119",
+   "kind": "raw",
+   "src": "img/fv120.png",
+   "start": 1292.05,
+   "dur": 11.22
+  },
+  {
+   "id": "fv120",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv120.mp4",
+   "start": 1303.27,
+   "dur": 3.94
+  },
+  {
+   "id": "c120",
+   "start": 1303.27,
+   "dur": 9.28,
+   "kind": "lowerthird",
+   "kicker": "ESA PIEL CAFÉ DEL TOBILLO",
+   "title": "No es una mancha de la edad",
+   "desc": "Es hierro: sangre vieja que se filtró",
+   "tone": "alert"
+  },
+  {
+   "id": "ph120",
+   "kind": "raw",
+   "src": "img/fv120.png",
+   "start": 1307.21,
+   "dur": 5.34
+  },
+  {
+   "id": "bed121",
+   "kind": "raw",
+   "src": "img/fv120.png",
+   "start": 1312.55,
+   "dur": 12.88
+  },
+  {
+   "id": "c121",
+   "start": 1312.55,
+   "dur": 12.88,
+   "kind": "callout",
+   "eyebrow": "ESO NO ES UNA MANCHA DE LA EDAD",
+   "figure": "HIERRO",
+   "caption": "Es sangre vieja que se filtró y se quedó ahí. Es el mapa de años de presión.",
+   "image": "img/fv120.png"
+  },
+  {
+   "id": "bed122",
+   "kind": "raw",
+   "src": "img/fv120.png",
+   "start": 1325.43,
+   "dur": 5.96
+  },
+  {
+   "id": "c122",
+   "start": 1325.43,
+   "dur": 5.96,
+   "kind": "lowerthird",
+   "kicker": "ÁCIDO ROSMARÍNICO",
+   "title": "Antiinflamatorio y antioxidante",
+   "desc": "Trabaja en los dos frentes que alimentan el fuego lento",
+   "tone": "good"
+  },
+  {
+   "id": "bed123",
+   "kind": "raw",
+   "src": "img/fv124.png",
+   "start": 1331.39,
+   "dur": 8.88
+  },
+  {
+   "id": "c123",
+   "start": 1331.39,
+   "dur": 8.88,
+   "kind": "mitoverdad",
+   "myth": "El romero cura la insuficiencia venosa",
+   "truth": "Apaga leña. No apaga el incendio.",
+   "flipAt": 0.55
+  },
+  {
+   "id": "fv124",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv124.mp4",
+   "start": 1340.27,
+   "dur": 3.94
+  },
+  {
+   "id": "ph124",
+   "kind": "raw",
+   "src": "img/fv124.png",
+   "start": 1344.21,
+   "dur": 7.2
+  },
+  {
+   "id": "fv125",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv125.mp4",
+   "start": 1351.41,
+   "dur": 3.94
+  },
+  {
+   "id": "ph125",
+   "kind": "raw",
+   "src": "img/fv125.png",
+   "start": 1355.35,
+   "dur": 7.2
+  },
+  {
+   "id": "bed126",
+   "kind": "raw",
+   "src": "img/fv125.png",
+   "start": 1362.55,
+   "dur": 9.36
+  },
+  {
+   "id": "c126",
+   "start": 1362.55,
+   "dur": 9.36,
+   "kind": "chips",
+   "eyebrow": "CINEOL Y ALCANFOR",
+   "title": "Los que hacen que huela a romero",
+   "image": "img/fv125.png",
+   "chips": [
+    "Vasodilatadores suaves",
+    "Abren la superficie",
+    "Calman el picor"
+   ]
+  },
+  {
+   "id": "fv127",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv127.mp4",
+   "start": 1371.91,
+   "dur": 3.94
+  },
+  {
+   "id": "ph127",
+   "kind": "raw",
+   "src": "img/fv127.png",
+   "start": 1375.85,
+   "dur": 2.08
+  },
+  {
+   "id": "bed128",
+   "kind": "raw",
+   "src": "img/fv127.png",
+   "start": 1377.93,
+   "dur": 9.54
+  },
+  {
+   "id": "c128",
+   "start": 1377.93,
+   "dur": 9.54,
+   "kind": "lowerthird",
+   "kicker": "CASI NADIE LO DICE",
+   "title": "También cortan la comezón",
+   "desc": "Esa que te rascas dormido y amaneces con las uñas marcadas",
+   "tone": "good"
+  },
+  {
+   "id": "fv129",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv129.mp4",
+   "start": 1387.47,
+   "dur": 3.94
+  },
+  {
+   "id": "c129",
+   "start": 1387.47,
+   "dur": 9.54,
+   "kind": "lowerthird",
+   "kicker": "LA COMEZÓN",
+   "title": "Esa que te rascas dormido",
+   "tone": "alert"
+  },
+  {
+   "id": "ph129",
+   "kind": "raw",
+   "src": "img/fv129.png",
+   "start": 1391.41,
+   "dur": 5.6
+  },
+  {
+   "id": "bed130",
+   "kind": "raw",
+   "src": "img/fv129.png",
+   "start": 1397.01,
+   "dur": 9.86
+  },
+  {
+   "id": "c130",
+   "start": 1397.01,
+   "dur": 9.86,
+   "kind": "splitlist",
+   "title": "Las tres cosas juntas",
+   "items": [
+    "Un compuesto que toca el timbre del riego",
+    "Uno que baja la irritación de fondo",
+    "Y unos aceites que abren la superficie"
+   ]
+  },
+  {
+   "id": "bed131",
+   "kind": "raw",
+   "src": "img/fv132.png",
+   "start": 1406.87,
+   "dur": 11.48
+  },
+  {
+   "id": "c131",
+   "start": 1406.87,
+   "dur": 11.48,
+   "kind": "headline",
+   "eyebrow": "LA PREGUNTA QUE ESTÁS HACIENDO",
+   "tokens": [
+    {
+     "t": "¿DE"
+    },
+    {
+     "t": "VERDAD"
+    },
+    {
+     "t": "ATRAVIESA"
+    },
+    {
+     "t": "LA"
+    },
+    {
+     "t": "PIEL",
+     "hl": true
+    },
+    {
+     "t": "?"
+    }
+   ]
+  },
+  {
+   "id": "fv132",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv132.mp4",
+   "start": 1418.35,
+   "dur": 3.94
+  },
+  {
+   "id": "ph132",
+   "kind": "raw",
+   "src": "img/fv132.png",
+   "start": 1422.29,
+   "dur": 8.94
+  },
+  {
+   "id": "bed133",
+   "kind": "raw",
+   "src": "img/fv132.png",
+   "start": 1431.23,
+   "dur": 6.38
+  },
+  {
+   "id": "c133",
+   "start": 1431.23,
+   "dur": 6.38,
+   "kind": "process",
+   "eyebrow": "LA PRUEBA PRESTADA",
+   "title": "Cien hombres, seis meses",
+   "steps": [
+    {
+     "title": "50 con minoxidil al 2%",
+     "desc": "el medicamento de farmacia"
+    },
+    {
+     "title": "50 con aceite de romero",
+     "desc": "nada más el aceite"
+    },
+    {
+     "title": "Seis meses contando pelos",
+     "desc": "con método y con fotos"
+    }
+   ]
+  },
+  {
+   "id": "fv134",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv134.mp4",
+   "start": 1437.61,
+   "dur": 3.94
+  },
+  {
+   "id": "ph134",
+   "kind": "raw",
+   "src": "img/fv134.png",
+   "start": 1441.55,
+   "dur": 8.82
+  },
+  {
+   "id": "bed135",
+   "kind": "raw",
+   "src": "img/fv134.png",
+   "start": 1450.37,
+   "dur": 10.62
+  },
+  {
+   "id": "c135",
+   "start": 1450.37,
+   "dur": 10.62,
+   "kind": "headline",
+   "eyebrow": "¿Y QUÉ PASÓ?",
+   "tokens": [
+    {
+     "t": "EL"
+    },
+    {
+     "t": "ROMERO"
+    },
+    {
+     "t": "LE"
+    },
+    {
+     "t": "EMPATÓ",
+     "hl": true
+    },
+    {
+     "t": "AL"
+    },
+    {
+     "t": "MEDICAMENTO"
+    }
+   ]
+  },
+  {
+   "id": "bed136",
+   "kind": "raw",
+   "src": "img/fv134.png",
+   "start": 1460.99,
+   "dur": 9.86
+  },
+  {
+   "id": "c136",
+   "start": 1460.99,
+   "dur": 9.86,
+   "kind": "bars",
+   "eyebrow": "A LOS SEIS MESES",
+   "title": "Aumento de pelo comparado",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Minoxidil 2%",
+     "value": 100
+    },
+    {
+     "label": "Aceite de romero",
+     "value": 98,
+     "tone": "good",
+     "winner": true,
+     "note": "y menos comezón"
+    }
+   ]
+  },
+  {
+   "id": "bed137",
+   "kind": "raw",
+   "src": "img/fv134.png",
+   "start": 1470.85,
+   "dur": 11
+  },
+  {
+   "id": "c137",
+   "start": 1470.85,
+   "dur": 11,
+   "kind": "lowerthird",
+   "kicker": "POR QUÉ TE LO CUENTO",
+   "title": "El minoxidil funciona abriendo la microcirculación",
+   "desc": "Ese es su mecanismo en la piel",
+   "tone": "alert"
+  },
+  {
+   "id": "bed138",
+   "kind": "raw",
+   "src": "img/fv134.png",
+   "start": 1481.85,
+   "dur": 7.08
+  },
+  {
+   "id": "c138",
+   "start": 1481.85,
+   "dur": 7.08,
+   "kind": "diagram",
+   "eyebrow": "CÓMO ACTÚA",
+   "slides": [
+    {
+     "image": "img/fvdg138.png",
+     "eyebrow": "MÁS RIEGO EN LOS VASITOS DE LA PIEL"
+    }
+   ]
+  },
+  {
+   "id": "bed139",
+   "kind": "raw",
+   "src": "img/fv134.png",
+   "start": 1488.93,
+   "dur": 8.1
+  },
+  {
+   "id": "bed140",
+   "kind": "raw",
+   "src": "img/fv145.png",
+   "start": 1497.03,
+   "dur": 8.98
+  },
+  {
+   "id": "c140",
+   "start": 1497.03,
+   "dur": 8.98,
+   "kind": "frasecinetica",
+   "words": [
+    "EL",
+    "ROMERO",
+    "EN",
+    "LA",
+    "PIEL",
+    "MUEVE",
+    "LA",
+    "MICROCIRCULACIÓN"
+   ],
+   "perWord": 0.36,
+   "tone": "good"
+  },
+  {
+   "id": "ph141",
+   "kind": "raw",
+   "src": "img/fvhero141.png",
+   "start": 1506.01,
+   "dur": 8
+  },
+  {
+   "id": "bed142",
+   "kind": "raw",
+   "src": "img/fv145.png",
+   "start": 1514.01,
+   "dur": 6.3
+  },
+  {
+   "id": "c142",
+   "start": 1514.01,
+   "dur": 6.3,
+   "kind": "mitoverdad",
+   "myth": "Ese estudio prueba que el romero cura várices",
+   "truth": "Prueba el eslabón: en piel humana, el aceite sí llega",
+   "flipAt": 0.55
+  },
+  {
+   "id": "bed143",
+   "kind": "raw",
+   "src": "img/fv145.png",
+   "start": 1520.31,
+   "dur": 6.76
+  },
+  {
+   "id": "bed144",
+   "kind": "raw",
+   "src": "img/fv145.png",
+   "start": 1527.07,
+   "dur": 10.8
+  },
+  {
+   "id": "c144",
+   "start": 1527.07,
+   "dur": 10.8,
+   "kind": "lowerthird",
+   "kicker": "EL RESTO",
+   "title": "Lo sostiene la mecánica",
+   "desc": "La posición y el bombeo están fuera de discusión: es física",
+   "tone": "good"
+  },
+  {
+   "id": "fv145",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv145.mp4",
+   "start": 1537.87,
+   "dur": 3.94
+  },
+  {
+   "id": "ph145",
+   "kind": "raw",
+   "src": "img/fv145.png",
+   "start": 1541.81,
+   "dur": 8.76
+  },
+  {
+   "id": "fv146",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv146.mp4",
+   "start": 1550.57,
+   "dur": 3.94
+  },
+  {
+   "id": "ph146",
+   "kind": "raw",
+   "src": "img/fv146.png",
+   "start": 1554.51,
+   "dur": 6.96
+  },
+  {
+   "id": "fv147",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv147.mp4",
+   "start": 1561.47,
+   "dur": 3.94
+  },
+  {
+   "id": "ph147",
+   "kind": "raw",
+   "src": "img/fv147.png",
+   "start": 1565.41,
+   "dur": 5.18
+  },
+  {
+   "id": "fv148",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv148.mp4",
+   "start": 1570.59,
+   "dur": 3.94
+  },
+  {
+   "id": "ph148",
+   "kind": "raw",
+   "src": "img/fv148.png",
+   "start": 1574.53,
+   "dur": 5.6
+  },
+  {
+   "id": "fv149",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv149.mp4",
+   "start": 1580.13,
+   "dur": 3.12
+  },
+  {
+   "id": "c149",
+   "start": 1580.13,
+   "dur": 3.2,
+   "kind": "lowerthird",
+   "kicker": "ALCOHOL DE ROMERO",
+   "title": "Para las piernas cansadas",
+   "desc": "Está en el botiquín desde que eras niño",
+   "tone": "good"
+  },
+  {
+   "id": "fv150",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv150.mp4",
+   "start": 1583.25,
+   "dur": 3.94
+  },
+  {
+   "id": "ph150",
+   "kind": "raw",
+   "src": "img/fv150.png",
+   "start": 1587.19,
+   "dur": 7.02
+  },
+  {
+   "id": "fv151",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv151.mp4",
+   "start": 1594.21,
+   "dur": 3.94
+  },
+  {
+   "id": "ph151",
+   "kind": "raw",
+   "src": "img/fv151.png",
+   "start": 1598.15,
+   "dur": 8.31
+  },
+  {
+   "id": "fv152",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv152.mp4",
+   "start": 1606.46,
+   "dur": 3.94
+  },
+  {
+   "id": "c152",
+   "start": 1606.46,
+   "dur": 12.25,
+   "kind": "lowerthird",
+   "kicker": "A PURO TANTEO",
+   "title": "De mamá a hija, durante generaciones",
+   "desc": "Y hoy la química les da la razón",
+   "tone": "good"
+  },
+  {
+   "id": "ph152",
+   "kind": "raw",
+   "src": "img/fv152.png",
+   "start": 1610.4,
+   "dur": 8.31
+  },
+  {
+   "id": "ph153",
+   "kind": "raw",
+   "src": "img/fvhero153.png",
+   "start": 1618.71,
+   "dur": 9.2
+  },
+  {
+   "id": "bed154",
+   "kind": "raw",
+   "src": "img/fv155.png",
+   "start": 1627.91,
+   "dur": 9.96
+  },
+  {
+   "id": "c154",
+   "start": 1627.91,
+   "dur": 9.96,
+   "kind": "splitlist",
+   "title": "Alcohol de día, aceite de noche",
+   "items": [
+    "El alcohol se evapora: fresco, pero no deja nada trabajando",
+    "A la larga reseca una piel que ya está frágil",
+    "El aceite se queda pegado las horas que duermes"
+   ]
+  },
+  {
+   "id": "fv155",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv155.mp4",
+   "start": 1637.87,
+   "dur": 3.94
+  },
+  {
+   "id": "ph155",
+   "kind": "raw",
+   "src": "img/fv155.png",
+   "start": 1641.81,
+   "dur": 3.28
+  },
+  {
+   "id": "fv156",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv156.mp4",
+   "start": 1645.09,
+   "dur": 3.94
+  },
+  {
+   "id": "ph156",
+   "kind": "raw",
+   "src": "img/fv156.png",
+   "start": 1649.03,
+   "dur": 3.28
+  },
+  {
+   "id": "bed157",
+   "kind": "raw",
+   "src": "img/fv156.png",
+   "start": 1652.31,
+   "dur": 11.58
+  },
+  {
+   "id": "c157",
+   "start": 1652.31,
+   "dur": 11.58,
+   "kind": "callout",
+   "eyebrow": "POR QUÉ NO EL ALCOHOL DE NOCHE",
+   "figure": "SE VA",
+   "caption": "Se evapora en minutos y te reseca la piel de la pierna, que ya de por sí está fina.",
+   "image": "img/fv156.png"
+  },
+  {
+   "id": "fv158",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv158.mp4",
+   "start": 1663.89,
+   "dur": 3.94
+  },
+  {
+   "id": "ph158",
+   "kind": "raw",
+   "src": "img/fv158.png",
+   "start": 1667.83,
+   "dur": 6.72
+  },
+  {
+   "id": "bed159",
+   "kind": "raw",
+   "src": "img/fv158.png",
+   "start": 1674.55,
+   "dur": 12.58
+  },
+  {
+   "id": "c159",
+   "start": 1674.55,
+   "dur": 12.58,
+   "kind": "chips",
+   "eyebrow": "DOS FORMAS DE TENERLO",
+   "title": "El aceite de romero",
+   "image": "img/fv160.png",
+   "chips": [
+    "Macerado: tres semanas",
+    "Baño maría: dos horas",
+    "Con aceite esencial: diluido"
+   ]
+  },
+  {
+   "id": "fv160",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv160.mp4",
+   "start": 1687.13,
+   "dur": 3.94
+  },
+  {
+   "id": "ph160",
+   "kind": "raw",
+   "src": "img/fv160.png",
+   "start": 1691.07,
+   "dur": 7.5
+  },
+  {
+   "id": "bed161",
+   "kind": "raw",
+   "src": "img/fv160.png",
+   "start": 1698.57,
+   "dur": 11.64
+  },
+  {
+   "id": "c161",
+   "start": 1698.57,
+   "dur": 11.64,
+   "kind": "ingredients",
+   "title": "Lo que necesitas",
+   "items": [
+    {
+     "name": "Romero SECO",
+     "amount": "30 gramos",
+     "image": "img/fv162.png"
+    },
+    {
+     "name": "Aceite portador",
+     "amount": "250 mililitros",
+     "image": "img/fv166.png"
+    },
+    {
+     "name": "Frasco de vidrio",
+     "amount": "con tapa",
+     "image": "img/fv167.png"
+    }
+   ]
+  },
+  {
+   "id": "fv162",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv162.mp4",
+   "start": 1710.21,
+   "dur": 3.94
+  },
+  {
+   "id": "c162",
+   "start": 1710.21,
+   "dur": 5.22,
+   "kind": "lowerthird",
+   "kicker": "EL DETALLE QUE TODOS SE SALTAN",
+   "title": "El romero va SECO",
+   "desc": "La hoja fresca trae agua y enmohece el frasco",
+   "tone": "bad"
+  },
+  {
+   "id": "ph162",
+   "kind": "raw",
+   "src": "img/fv162.png",
+   "start": 1714.15,
+   "dur": 1.28
+  },
+  {
+   "id": "fv163",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv163.mp4",
+   "start": 1715.43,
+   "dur": 3.94
+  },
+  {
+   "id": "ph163",
+   "kind": "raw",
+   "src": "img/fv163.png",
+   "start": 1719.37,
+   "dur": 7.22
+  },
+  {
+   "id": "fv164",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv164.mp4",
+   "start": 1726.59,
+   "dur": 3.94
+  },
+  {
+   "id": "ph164",
+   "kind": "raw",
+   "src": "img/fv164.png",
+   "start": 1730.53,
+   "dur": 7.06
+  },
+  {
+   "id": "fv165",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv165.mp4",
+   "start": 1737.59,
+   "dur": 3.94
+  },
+  {
+   "id": "c165",
+   "start": 1737.59,
+   "dur": 12.9,
+   "kind": "lowerthird",
+   "kicker": "CÓMO SABER QUE ESTÁ LISTO",
+   "title": "Cuando truena entre los dedos",
+   "tone": "good"
+  },
+  {
+   "id": "ph165",
+   "kind": "raw",
+   "src": "img/fv165.png",
+   "start": 1741.53,
+   "dur": 8.96
+  },
+  {
+   "id": "fv166",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv166.mp4",
+   "start": 1750.49,
+   "dur": 3.94
+  },
+  {
+   "id": "ph166",
+   "kind": "raw",
+   "src": "img/fv166.png",
+   "start": 1754.43,
+   "dur": 7.66
+  },
+  {
+   "id": "fv167",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv167.mp4",
+   "start": 1762.09,
+   "dur": 3.94
+  },
+  {
+   "id": "ph167",
+   "kind": "raw",
+   "src": "img/fv167.png",
+   "start": 1766.03,
+   "dur": 5.68
+  },
+  {
+   "id": "fv168",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv168.mp4",
+   "start": 1771.71,
+   "dur": 3.94
+  },
+  {
+   "id": "ph168",
+   "kind": "raw",
+   "src": "img/fv168.png",
+   "start": 1775.65,
+   "dur": 2.94
+  },
+  {
+   "id": "fv169",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv169.mp4",
+   "start": 1778.59,
+   "dur": 3.94
+  },
+  {
+   "id": "c169",
+   "start": 1778.59,
+   "dur": 6.8,
+   "kind": "lowerthird",
+   "kicker": "OJO",
+   "title": "Ni una hojita fuera del aceite",
+   "desc": "La que se asoma es la que se enmohece",
+   "tone": "bad"
+  },
+  {
+   "id": "ph169",
+   "kind": "raw",
+   "src": "img/fv169.png",
+   "start": 1782.53,
+   "dur": 2.86
+  },
+  {
+   "id": "fv170",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv170.mp4",
+   "start": 1785.39,
+   "dur": 3.94
+  },
+  {
+   "id": "ph170",
+   "kind": "raw",
+   "src": "img/fv170.png",
+   "start": 1789.33,
+   "dur": 8.38
+  },
+  {
+   "id": "fv171",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv171.mp4",
+   "start": 1797.71,
+   "dur": 3.94
+  },
+  {
+   "id": "ph171",
+   "kind": "raw",
+   "src": "img/fv171.png",
+   "start": 1801.65,
+   "dur": 3.49
+  },
+  {
+   "id": "fv172",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv172.mp4",
+   "start": 1805.14,
+   "dur": 3.94
+  },
+  {
+   "id": "c172",
+   "start": 1805.14,
+   "dur": 7.43,
+   "kind": "lowerthird",
+   "kicker": "AL COLAR",
+   "title": "Aprieta bien las hojas",
+   "desc": "Ahí está lo concentrado",
+   "tone": "good"
+  },
+  {
+   "id": "ph172",
+   "kind": "raw",
+   "src": "img/fv172.png",
+   "start": 1809.08,
+   "dur": 3.49
+  },
+  {
+   "id": "fv173",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv173.mp4",
+   "start": 1812.57,
+   "dur": 3.94
+  },
+  {
+   "id": "ph173",
+   "kind": "raw",
+   "src": "img/fv173.png",
+   "start": 1816.51,
+   "dur": 6.88
+  },
+  {
+   "id": "fv174",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv174.mp4",
+   "start": 1823.39,
+   "dur": 3.94
+  },
+  {
+   "id": "ph174",
+   "kind": "raw",
+   "src": "img/fv174.png",
+   "start": 1827.33,
+   "dur": 2
+  },
+  {
+   "id": "fv175",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv175.mp4",
+   "start": 1829.33,
+   "dur": 3.94
+  },
+  {
+   "id": "ph175",
+   "kind": "raw",
+   "src": "img/fv175.png",
+   "start": 1833.27,
+   "dur": 6.02
+  },
+  {
+   "id": "bed176",
+   "kind": "raw",
+   "src": "img/fv175.png",
+   "start": 1839.29,
+   "dur": 11.52
+  },
+  {
+   "id": "c176",
+   "start": 1839.29,
+   "dur": 11.52,
+   "kind": "process",
+   "eyebrow": "LA VERSIÓN RÁPIDA",
+   "title": "Baño maría, el mismo día",
+   "steps": [
+    {
+     "title": "Frasco dentro de la olla",
+     "desc": "agua caliente, sin hervir fuerte"
+    },
+    {
+     "title": "Dos horas",
+     "desc": "el calor saca lo que el tiempo sacaría en tres semanas"
+    },
+    {
+     "title": "Colar",
+     "desc": "y ya lo tienes hoy"
+    }
+   ]
+  },
+  {
+   "id": "bed177",
+   "kind": "raw",
+   "src": "img/fv178.png",
+   "start": 1850.81,
+   "dur": 12.5
+  },
+  {
+   "id": "c177",
+   "start": 1850.81,
+   "dur": 12.5,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "EL ACEITE NUNCA DEBE HUMEAR",
+   "tone": "bad"
+  },
+  {
+   "id": "fv178",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv178.mp4",
+   "start": 1863.31,
+   "dur": 2.58
+  },
+  {
+   "id": "fv179",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv179.mp4",
+   "start": 1865.89,
+   "dur": 3.94
+  },
+  {
+   "id": "ph179",
+   "kind": "raw",
+   "src": "img/fv179.png",
+   "start": 1869.83,
+   "dur": 6.7
+  },
+  {
+   "id": "bed180",
+   "kind": "raw",
+   "src": "img/fv179.png",
+   "start": 1876.53,
+   "dur": 11.32
+  },
+  {
+   "id": "c180",
+   "start": 1876.53,
+   "dur": 11.32,
+   "kind": "errorstinger",
+   "number": "1",
+   "title": "NUNCA PURO SOBRE LA PIEL",
+   "tone": "bad"
+  },
+  {
+   "id": "fv181",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv181.mp4",
+   "start": 1887.85,
+   "dur": 3.94
+  },
+  {
+   "id": "c181",
+   "start": 1887.85,
+   "dur": 6.72,
+   "kind": "lowerthird",
+   "kicker": "POR QUÉ NUNCA PURO",
+   "title": "Kilos de planta en un frasquito",
+   "tone": "bad"
+  },
+  {
+   "id": "ph181",
+   "kind": "raw",
+   "src": "img/fv181.png",
+   "start": 1891.79,
+   "dur": 2.78
+  },
+  {
+   "id": "fv182",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv182.mp4",
+   "start": 1894.57,
+   "dur": 3.94
+  },
+  {
+   "id": "ph182",
+   "kind": "raw",
+   "src": "img/fv182.png",
+   "start": 1898.51,
+   "dur": 3.8
+  },
+  {
+   "id": "bed183",
+   "kind": "raw",
+   "src": "img/fv182.png",
+   "start": 1902.31,
+   "dur": 7.26
+  },
+  {
+   "id": "c183",
+   "start": 1902.31,
+   "dur": 7.26,
+   "kind": "lowerthird",
+   "kicker": "POR QUÉ IMPORTA TANTO",
+   "title": "Esa piel ya está frágil",
+   "desc": "La pierna con problema venoso se lastima más fácil que cualquiera",
+   "tone": "alert"
+  },
+  {
+   "id": "fv184",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv184.mp4",
+   "start": 1909.57,
+   "dur": 3.94
+  },
+  {
+   "id": "ph184",
+   "kind": "raw",
+   "src": "img/fv184.png",
+   "start": 1913.51,
+   "dur": 8.2
+  },
+  {
+   "id": "bed185",
+   "kind": "raw",
+   "src": "img/fv184.png",
+   "start": 1921.71,
+   "dur": 8.28
+  },
+  {
+   "id": "c185",
+   "start": 1921.71,
+   "dur": 8.28,
+   "kind": "stat",
+   "eyebrow": "DILUCIÓN SEGURA",
+   "value": 12,
+   "suffix": " gotas",
+   "label": "por cada cucharada sopera de aceite portador"
+  },
+  {
+   "id": "bed186",
+   "kind": "raw",
+   "src": "img/fv184.png",
+   "start": 1929.99,
+   "dur": 12.7
+  },
+  {
+   "id": "c186",
+   "start": 1929.99,
+   "dur": 12.7,
+   "kind": "guardaesto",
+   "title": "Las medidas exactas van en la descripción",
+   "items": [
+    "Macerado: gramos y mililitros",
+    "Baño maría: tiempos",
+    "Gotas por cucharada",
+    "Centímetros de elevación"
+   ],
+   "tag": "ABRE LA DESCRIPCIÓN"
+  },
+  {
+   "id": "bed187",
+   "kind": "raw",
+   "src": "img/fv189.png",
+   "start": 1942.69,
+   "dur": 10.88
+  },
+  {
+   "id": "bed188",
+   "kind": "raw",
+   "src": "img/fv189.png",
+   "start": 1953.57,
+   "dur": 12.2
+  },
+  {
+   "id": "c188",
+   "start": 1953.57,
+   "dur": 12.2,
+   "kind": "process",
+   "eyebrow": "EL TRUCO NOCTURNO",
+   "title": "Seis pasos, doce minutos",
+   "steps": [
+    {
+     "title": "Ya acostado",
+     "desc": "no en el sillón"
+    },
+    {
+     "title": "Bombeo de tobillo",
+     "desc": "30 por pierna"
+    },
+    {
+     "title": "Aceite tibio",
+     "desc": "entre las palmas"
+    },
+    {
+     "title": "Siempre hacia arriba",
+     "desc": "tobillo a rodilla, rodilla a muslo"
+    },
+    {
+     "title": "Presión de acariciar un gato",
+     "desc": "nunca sobre la várice"
+    },
+    {
+     "title": "Piernas arriba",
+     "desc": "15 a 20 cm sobre el pecho"
+    }
+   ]
+  },
+  {
+   "id": "fv189",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv189.mp4",
+   "start": 1965.77,
+   "dur": 3.94
+  },
+  {
+   "id": "ph189",
+   "kind": "raw",
+   "src": "img/fv189.png",
+   "start": 1969.71,
+   "dur": 8.62
+  },
+  {
+   "id": "bed190",
+   "kind": "raw",
+   "src": "img/fv189.png",
+   "start": 1978.33,
+   "dur": 11.88
+  },
+  {
+   "id": "c190",
+   "start": 1978.33,
+   "dur": 11.88,
+   "kind": "bars",
+   "eyebrow": "POR ESO ACOSTADO",
+   "title": "La misma pierna, otra presión",
+   "unit": "mmHg",
+   "bars": [
+    {
+     "label": "Sentado en el sillón",
+     "value": 100,
+     "tone": "bad"
+    },
+    {
+     "label": "Acostado en la cama",
+     "value": 15,
+     "tone": "good",
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "bed191",
+   "kind": "raw",
+   "src": "img/fv189.png",
+   "start": 1990.21,
+   "dur": 12.44
+  },
+  {
+   "id": "c191",
+   "start": 1990.21,
+   "dur": 12.44,
+   "kind": "frasecinetica",
+   "words": [
+    "CON",
+    "EL",
+    "CUERPO",
+    "A",
+    "FAVOR",
+    "NO",
+    "EN",
+    "CONTRA"
+   ],
+   "perWord": 0.4,
+   "tone": "good"
+  },
+  {
+   "id": "bed192",
+   "kind": "raw",
+   "src": "img/fv193.png",
+   "start": 2002.65,
+   "dur": 4.54
+  },
+  {
+   "id": "c192",
+   "start": 2002.65,
+   "dur": 4.54,
+   "kind": "stat",
+   "eyebrow": "PASO 2 · GRATIS",
+   "value": 30,
+   "suffix": " bombeos",
+   "label": "por pierna, antes de tocar el aceite"
+  },
+  {
+   "id": "fv193",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv193.mp4",
+   "start": 2007.19,
+   "dur": 3.94
+  },
+  {
+   "id": "c193",
+   "start": 2007.19,
+   "dur": 11.32,
+   "kind": "lowerthird",
+   "kicker": "BOMBEO DE TOBILLO",
+   "title": "Punta adelante, punta hacia ti",
+   "desc": "Despacio y hasta el tope, 30 veces",
+   "tone": "good"
+  },
+  {
+   "id": "ph193",
+   "kind": "raw",
+   "src": "img/fv193.png",
+   "start": 2011.13,
+   "dur": 7.38
+  },
+  {
+   "id": "fv194",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv194.mp4",
+   "start": 2018.51,
+   "dur": 3.94
+  },
+  {
+   "id": "ph194",
+   "kind": "raw",
+   "src": "img/fv194.png",
+   "start": 2022.45,
+   "dur": 6.14
+  },
+  {
+   "id": "bed195",
+   "kind": "raw",
+   "src": "img/fv194.png",
+   "start": 2028.59,
+   "dur": 12.6
+  },
+  {
+   "id": "c195",
+   "start": 2028.59,
+   "dur": 12.6,
+   "kind": "diagram",
+   "eyebrow": "QUÉ PASA ADENTRO",
+   "slides": [
+    {
+     "image": "img/fvdg195.png",
+     "eyebrow": "EL MÚSCULO ESTRUJA Y LA SANGRE SUBE"
+    }
+   ]
+  },
+  {
+   "id": "fv196",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv196.mp4",
+   "start": 2041.19,
+   "dur": 3.94
+  },
+  {
+   "id": "ph196",
+   "kind": "raw",
+   "src": "img/fv196.png",
+   "start": 2045.13,
+   "dur": 3.13
+  },
+  {
+   "id": "bed197",
+   "kind": "raw",
+   "src": "img/fv196.png",
+   "start": 2048.26,
+   "dur": 7.07
+  },
+  {
+   "id": "c197",
+   "start": 2048.26,
+   "dur": 7.07,
+   "kind": "lowerthird",
+   "kicker": "EL TRUCO DENTRO DEL TRUCO",
+   "title": "Bombea con las piernas ya levantadas",
+   "desc": "La sangre ya no sube cuesta arriba: baja",
+   "tone": "good"
+  },
+  {
+   "id": "ph198",
+   "kind": "raw",
+   "src": "img/fvhero198.png",
+   "start": 2055.33,
+   "dur": 8.24
+  },
+  {
+   "id": "bed199",
+   "kind": "raw",
+   "src": "img/fv200.png",
+   "start": 2063.57,
+   "dur": 11.66
+  },
+  {
+   "id": "c199",
+   "start": 2063.57,
+   "dur": 11.66,
+   "kind": "headline",
+   "eyebrow": "SI SOLO TE LLEVAS UNA COSA",
+   "tokens": [
+    {
+     "t": "EL"
+    },
+    {
+     "t": "BOMBEO",
+     "hl": true
+    },
+    {
+     "t": "DE"
+    },
+    {
+     "t": "TOBILLO"
+    }
+   ]
+  },
+  {
+   "id": "fv200",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv200.mp4",
+   "start": 2075.23,
+   "dur": 3.94
+  },
+  {
+   "id": "c200",
+   "start": 2075.23,
+   "dur": 11.22,
+   "kind": "lowerthird",
+   "kicker": "PASO 3",
+   "title": "Entibia el aceite entre las palmas",
+   "desc": "Cinco segundos. Nada de microondas.",
+   "tone": "good"
+  },
+  {
+   "id": "ph200",
+   "kind": "raw",
+   "src": "img/fv200.png",
+   "start": 2079.17,
+   "dur": 7.28
+  },
+  {
+   "id": "fv201",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv201.mp4",
+   "start": 2086.45,
+   "dur": 3.94
+  },
+  {
+   "id": "ph201",
+   "kind": "raw",
+   "src": "img/fv201.png",
+   "start": 2090.39,
+   "dur": 4.06
+  },
+  {
+   "id": "bed202",
+   "kind": "raw",
+   "src": "img/fv201.png",
+   "start": 2094.45,
+   "dur": 11
+  },
+  {
+   "id": "c202",
+   "start": 2094.45,
+   "dur": 11,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "NADA DE AGUA CALIENTE ANTES",
+   "tone": "bad"
+  },
+  {
+   "id": "bed203",
+   "kind": "raw",
+   "src": "img/fv201.png",
+   "start": 2105.45,
+   "dur": 12.32
+  },
+  {
+   "id": "c203",
+   "start": 2105.45,
+   "dur": 12.32,
+   "kind": "headline",
+   "eyebrow": "PASO 4",
+   "tokens": [
+    {
+     "t": "SIEMPRE"
+    },
+    {
+     "t": "HACIA"
+    },
+    {
+     "t": "ARRIBA",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "bed204",
+   "kind": "raw",
+   "src": "img/fv205.png",
+   "start": 2117.77,
+   "dur": 8.64
+  },
+  {
+   "id": "c204",
+   "start": 2117.77,
+   "dur": 8.64,
+   "kind": "diagram",
+   "eyebrow": "POR QUÉ",
+   "slides": [
+    {
+     "image": "img/fvdg204.png",
+     "eyebrow": "LA VÁLVULA ABRE PARA UN SOLO LADO"
+    }
+   ]
+  },
+  {
+   "id": "fv205",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv205.mp4",
+   "start": 2126.41,
+   "dur": 3.94
+  },
+  {
+   "id": "ph205",
+   "kind": "raw",
+   "src": "img/fv205.png",
+   "start": 2130.35,
+   "dur": 4.7
+  },
+  {
+   "id": "fv206",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv206.mp4",
+   "start": 2135.05,
+   "dur": 3.94
+  },
+  {
+   "id": "c206",
+   "start": 2135.05,
+   "dur": 12.26,
+   "kind": "lowerthird",
+   "kicker": "DEL TOBILLO A LA RODILLA",
+   "title": "Diez a quince pases",
+   "desc": "Y de la rodilla al muslo, otros diez",
+   "tone": "good"
+  },
+  {
+   "id": "ph206",
+   "kind": "raw",
+   "src": "img/fv206.png",
+   "start": 2138.99,
+   "dur": 8.32
+  },
+  {
+   "id": "fv207",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv207.mp4",
+   "start": 2147.31,
+   "dur": 3.94
+  },
+  {
+   "id": "c207",
+   "start": 2147.31,
+   "dur": 8.82,
+   "kind": "lowerthird",
+   "kicker": "AL VOLVER",
+   "title": "Despega las manos, no arrastres hacia abajo",
+   "tone": "alert"
+  },
+  {
+   "id": "ph207",
+   "kind": "raw",
+   "src": "img/fv207.png",
+   "start": 2151.25,
+   "dur": 4.88
+  },
+  {
+   "id": "bed208",
+   "kind": "raw",
+   "src": "img/fv207.png",
+   "start": 2156.13,
+   "dur": 11.68
+  },
+  {
+   "id": "c208",
+   "start": 2156.13,
+   "dur": 11.68,
+   "kind": "lowerthird",
+   "kicker": "PASO 5 · LA PRESIÓN",
+   "title": "Como acariciar a un gato",
+   "desc": "Y encima del cordón de la várice, sin presionar",
+   "tone": "alert"
+  },
+  {
+   "id": "fv209",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv209.mp4",
+   "start": 2167.81,
+   "dur": 3.94
+  },
+  {
+   "id": "c209",
+   "start": 2167.81,
+   "dur": 11.74,
+   "kind": "frasecinetica",
+   "words": [
+    "COMO",
+    "ACARICIAR",
+    "A",
+    "UN",
+    "GATO"
+   ],
+   "perWord": 0.46,
+   "tone": "good"
+  },
+  {
+   "id": "ph209",
+   "kind": "raw",
+   "src": "img/fv209.png",
+   "start": 2171.75,
+   "dur": 7.8
+  },
+  {
+   "id": "bed210",
+   "kind": "raw",
+   "src": "img/fv209.png",
+   "start": 2179.55,
+   "dur": 9.62
+  },
+  {
+   "id": "c210",
+   "start": 2179.55,
+   "dur": 9.62,
+   "kind": "callout",
+   "eyebrow": "POR QUÉ TAN SUAVE",
+   "figure": "MILÍMETROS",
+   "caption": "Las venas del problema están a milímetros de la piel y tienen la pared adelgazada. Fuerza aquí es daño.",
+   "image": "img/fv211.png"
+  },
+  {
+   "id": "fv211",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv211.mp4",
+   "start": 2189.17,
+   "dur": 3.94
+  },
+  {
+   "id": "ph211",
+   "kind": "raw",
+   "src": "img/fv211.png",
+   "start": 2193.11,
+   "dur": 7.28
+  },
+  {
+   "id": "fv212",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv212.mp4",
+   "start": 2200.39,
+   "dur": 3.94
+  },
+  {
+   "id": "c212",
+   "start": 2200.39,
+   "dur": 7.78,
+   "kind": "lowerthird",
+   "kicker": "SOBRE LA VÁRICE",
+   "title": "Solo desliza el aceite, sin presionar",
+   "tone": "bad"
+  },
+  {
+   "id": "ph212",
+   "kind": "raw",
+   "src": "img/fv212.png",
+   "start": 2204.33,
+   "dur": 3.84
+  },
+  {
+   "id": "fv213",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv213.mp4",
+   "start": 2208.17,
+   "dur": 3.94
+  },
+  {
+   "id": "ph213",
+   "kind": "raw",
+   "src": "img/fv213.png",
+   "start": 2212.11,
+   "dur": 8.24
+  },
+  {
+   "id": "bed214",
+   "kind": "raw",
+   "src": "img/fv213.png",
+   "start": 2220.35,
+   "dur": 11.48
+  },
+  {
+   "id": "c214",
+   "start": 2220.35,
+   "dur": 11.48,
+   "kind": "diagram",
+   "eyebrow": "QUÉ ESTÁS MOVIENDO",
+   "slides": [
+    {
+     "image": "img/fvdg214.png",
+     "eyebrow": "EL LÍQUIDO DEL TEJIDO, NO LA SANGRE DE LA VÁRICE"
+    }
+   ]
+  },
+  {
+   "id": "fv215",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv215.mp4",
+   "start": 2231.83,
+   "dur": 3.94
+  },
+  {
+   "id": "c215",
+   "start": 2231.83,
+   "dur": 8.02,
+   "kind": "lowerthird",
+   "kicker": "PASO 6",
+   "title": "Las piernas para arriba",
+   "tone": "good"
+  },
+  {
+   "id": "ph215",
+   "kind": "raw",
+   "src": "img/fv215.png",
+   "start": 2235.77,
+   "dur": 4.08
+  },
+  {
+   "id": "bed216",
+   "kind": "raw",
+   "src": "img/fv215.png",
+   "start": 2239.85,
+   "dur": 8.02
+  },
+  {
+   "id": "c216",
+   "start": 2239.85,
+   "dur": 8.02,
+   "kind": "stat",
+   "eyebrow": "PASO 6 · ELEVACIÓN",
+   "value": 20,
+   "suffix": " cm",
+   "label": "de 15 a 20 por encima del nivel del pecho"
+  },
+  {
+   "id": "fv217",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv217.mp4",
+   "start": 2247.87,
+   "dur": 3.94
+  },
+  {
+   "id": "c217",
+   "start": 2247.87,
+   "dur": 10.3,
+   "kind": "lowerthird",
+   "kicker": "ASÍ NO",
+   "title": "La almohada bajo la rodilla pellizca el paso",
+   "tone": "bad"
+  },
+  {
+   "id": "ph217",
+   "kind": "raw",
+   "src": "img/fv217.png",
+   "start": 2251.81,
+   "dur": 6.36
+  },
+  {
+   "id": "bed218",
+   "kind": "raw",
+   "src": "img/fv217.png",
+   "start": 2258.17,
+   "dur": 10.68
+  },
+  {
+   "id": "c218",
+   "start": 2258.17,
+   "dur": 10.68,
+   "kind": "mitoverdad",
+   "myth": "La almohada va debajo de la rodilla",
+   "truth": "Va debajo de la PANTORRILLA y el TOBILLO",
+   "flipAt": 0.5
+  },
+  {
+   "id": "fv219",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv219.mp4",
+   "start": 2268.85,
+   "dur": 3.94
+  },
+  {
+   "id": "ph219",
+   "kind": "raw",
+   "src": "img/fv219.png",
+   "start": 2272.79,
+   "dur": 7.26
+  },
+  {
+   "id": "fv220",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv220.mp4",
+   "start": 2280.05,
+   "dur": 3.94
+  },
+  {
+   "id": "c220",
+   "start": 2280.05,
+   "dur": 6.2,
+   "kind": "lowerthird",
+   "kicker": "EL TRUCO QUE MEJOR FUNCIONA",
+   "title": "Libros debajo del colchón",
+   "desc": "Se sostiene toda la noche aunque te muevas",
+   "tone": "good"
+  },
+  {
+   "id": "ph220",
+   "kind": "raw",
+   "src": "img/fv220.png",
+   "start": 2283.99,
+   "dur": 2.26
+  },
+  {
+   "id": "fv221",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv221.mp4",
+   "start": 2286.25,
+   "dur": 3.94
+  },
+  {
+   "id": "ph221",
+   "kind": "raw",
+   "src": "img/fv221.png",
+   "start": 2290.19,
+   "dur": 4.28
+  },
+  {
+   "id": "bed222",
+   "kind": "raw",
+   "src": "img/fv221.png",
+   "start": 2294.47,
+   "dur": 12.32
+  },
+  {
+   "id": "c222",
+   "start": 2294.47,
+   "dur": 12.32,
+   "kind": "guardaesto",
+   "title": "Los centímetros exactos van abajo",
+   "items": [
+    "Cómo medir la elevación",
+    "Cómo levantar el pie de la cama",
+    "Cuántos minutos"
+   ],
+   "tag": "EN LA DESCRIPCIÓN"
+  },
+  {
+   "id": "fv223",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv223.mp4",
+   "start": 2306.79,
+   "dur": 3.94
+  },
+  {
+   "id": "ph223",
+   "kind": "raw",
+   "src": "img/fv223.png",
+   "start": 2310.73,
+   "dur": 8.38
+  },
+  {
+   "id": "bed224",
+   "kind": "raw",
+   "src": "img/fv223.png",
+   "start": 2319.11,
+   "dur": 12.26
+  },
+  {
+   "id": "c224",
+   "start": 2319.11,
+   "dur": 12.26,
+   "kind": "checklist",
+   "eyebrow": "TODAS LAS NOCHES",
+   "title": "El truco completo",
+   "stamp": "12 MIN",
+   "items": [
+    "Ya acostado, en la cama",
+    "30 bombeos de tobillo por pierna",
+    "Aceite entibiado entre las palmas",
+    "Del tobillo a la rodilla, siempre hacia arriba",
+    "Presión suavísima, nunca sobre la várice",
+    "Piernas arriba 15 minutos"
+   ]
+  },
+  {
+   "id": "ph225",
+   "kind": "raw",
+   "src": "img/fvhero225.png",
+   "start": 2331.37,
+   "dur": 9.75
+  },
+  {
+   "id": "bed226",
+   "kind": "raw",
+   "src": "img/fv223.png",
+   "start": 2341.13,
+   "dur": 9.75
+  },
+  {
+   "id": "c226",
+   "start": 2341.13,
+   "dur": 9.75,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "AVISO DE SEGURIDAD",
+   "tone": "bad"
+  },
+  {
+   "id": "bed227",
+   "kind": "raw",
+   "src": "img/fv230.png",
+   "start": 2350.88,
+   "dur": 9.75
+  },
+  {
+   "id": "c227",
+   "start": 2350.88,
+   "dur": 9.75,
+   "kind": "headline",
+   "eyebrow": "ERROR NÚMERO UNO",
+   "tokens": [
+    {
+     "t": "MASAJEAR"
+    },
+    {
+     "t": "UNA"
+    },
+    {
+     "t": "PIERNA"
+    },
+    {
+     "t": "QUE"
+    },
+    {
+     "t": "NO"
+    },
+    {
+     "t": "SE"
+    },
+    {
+     "t": "DEBE",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "bed228",
+   "kind": "raw",
+   "src": "img/fv230.png",
+   "start": 2360.63,
+   "dur": 6.5
+  },
+  {
+   "id": "c228",
+   "start": 2360.63,
+   "dur": 6.5,
+   "kind": "diagram",
+   "eyebrow": "TROMBOSIS VENOSA PROFUNDA",
+   "slides": [
+    {
+     "image": "img/fvdg228.png",
+     "eyebrow": "UN COÁGULO EN UNA VENA PROFUNDA"
+    }
+   ]
+  },
+  {
+   "id": "bed229",
+   "kind": "raw",
+   "src": "img/fv230.png",
+   "start": 2367.13,
+   "dur": 11.14
+  },
+  {
+   "id": "c229",
+   "start": 2367.13,
+   "dur": 11.14,
+   "kind": "lowerthird",
+   "kicker": "EL PELIGRO",
+   "title": "El coágulo se puede desprender",
+   "desc": "Viaja por la sangre y llega al pulmón",
+   "tone": "bad"
+  },
+  {
+   "id": "fv230",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv230.mp4",
+   "start": 2378.27,
+   "dur": 3.94
+  },
+  {
+   "id": "c230",
+   "start": 2378.27,
+   "dur": 9.53,
+   "kind": "lowerthird",
+   "kicker": "POR ESO PREGUNTAN",
+   "title": "Ningún terapeuta serio toca una pierna sin preguntar",
+   "tone": "alert"
+  },
+  {
+   "id": "ph230",
+   "kind": "raw",
+   "src": "img/fv230.png",
+   "start": 2382.21,
+   "dur": 5.59
+  },
+  {
+   "id": "fv231",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv231.mp4",
+   "start": 2387.8,
+   "dur": 3.94
+  },
+  {
+   "id": "c231",
+   "start": 2387.8,
+   "dur": 9.53,
+   "kind": "lowerthird",
+   "kicker": "SEÑAL 1",
+   "title": "UNA sola pierna, hinchada de golpe",
+   "tone": "bad"
+  },
+  {
+   "id": "ph231",
+   "kind": "raw",
+   "src": "img/fv231.png",
+   "start": 2391.74,
+   "dur": 5.59
+  },
+  {
+   "id": "bed232",
+   "kind": "raw",
+   "src": "img/fv231.png",
+   "start": 2397.33,
+   "dur": 6.84
+  },
+  {
+   "id": "c232",
+   "start": 2397.33,
+   "dur": 6.84,
+   "kind": "mitoverdad",
+   "myth": "Las dos piernas hinchadas parejo = alarma",
+   "truth": "UNA sola, de golpe y más gruesa = alarma",
+   "flipAt": 0.5
+  },
+  {
+   "id": "bed233",
+   "kind": "raw",
+   "src": "img/fv231.png",
+   "start": 2404.17,
+   "dur": 9.42
+  },
+  {
+   "id": "c233",
+   "start": 2404.17,
+   "dur": 9.42,
+   "kind": "checklist",
+   "eyebrow": "NO TE MASAJEES · VE AL MÉDICO",
+   "title": "Las cuatro señales",
+   "stamp": "HOY",
+   "items": [
+    "Hinchazón de repente y en UNA sola pierna",
+    "Dolor apretado en la pantorrilla que no se va",
+    "Calor al tacto comparado con la otra pierna",
+    "La piel rojiza o morada en esa zona"
+   ]
+  },
+  {
+   "id": "bed234",
+   "kind": "raw",
+   "src": "img/fv236.png",
+   "start": 2413.59,
+   "dur": 9.44
+  },
+  {
+   "id": "bed235",
+   "kind": "raw",
+   "src": "img/fv236.png",
+   "start": 2423.03,
+   "dur": 9.44
+  },
+  {
+   "id": "fv236",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv236.mp4",
+   "start": 2432.47,
+   "dur": 3.94
+  },
+  {
+   "id": "ph236",
+   "kind": "raw",
+   "src": "img/fv236.png",
+   "start": 2436.41,
+   "dur": 8.28
+  },
+  {
+   "id": "bed237",
+   "kind": "raw",
+   "src": "img/fv236.png",
+   "start": 2444.69,
+   "dur": 4.54
+  },
+  {
+   "id": "c237",
+   "start": 2444.69,
+   "dur": 4.54,
+   "kind": "frasecinetica",
+   "words": [
+    "SI",
+    "SOLO",
+    "TE",
+    "ACUERDAS",
+    "DE",
+    "ESTO",
+    "YA",
+    "CUMPLÍ"
+   ],
+   "perWord": 0.4,
+   "tone": "alert"
+  },
+  {
+   "id": "bed238",
+   "kind": "raw",
+   "src": "img/fv239.png",
+   "start": 2449.23,
+   "dur": 12.37
+  },
+  {
+   "id": "c238",
+   "start": 2449.23,
+   "dur": 12.37,
+   "kind": "splitlist",
+   "title": "Tres situaciones que suben el riesgo",
+   "items": [
+    "Después de una cirugía",
+    "Después de un viaje muy largo sentado",
+    "Después de días en cama por enfermedad"
+   ]
+  },
+  {
+   "id": "fv239",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv239.mp4",
+   "start": 2461.6,
+   "dur": 3.94
+  },
+  {
+   "id": "c239",
+   "start": 2461.6,
+   "dur": 12.37,
+   "kind": "lowerthird",
+   "kicker": "OJO DESPUÉS DE",
+   "title": "Cirugía, viaje largo o días en cama",
+   "tone": "bad"
+  },
+  {
+   "id": "ph239",
+   "kind": "raw",
+   "src": "img/fv239.png",
+   "start": 2465.54,
+   "dur": 8.43
+  },
+  {
+   "id": "bed240",
+   "kind": "raw",
+   "src": "img/fv239.png",
+   "start": 2473.97,
+   "dur": 8.4
+  },
+  {
+   "id": "c240",
+   "start": 2473.97,
+   "dur": 8.4,
+   "kind": "errorstinger",
+   "number": "2",
+   "title": "EL ACEITE ESENCIAL PURO",
+   "tone": "bad"
+  },
+  {
+   "id": "fv241",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv241.mp4",
+   "start": 2482.37,
+   "dur": 3.94
+  },
+  {
+   "id": "ph241",
+   "kind": "raw",
+   "src": "img/fv241.png",
+   "start": 2486.31,
+   "dur": 5.96
+  },
+  {
+   "id": "fv242",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv242.mp4",
+   "start": 2492.27,
+   "dur": 3.94
+  },
+  {
+   "id": "ph242",
+   "kind": "raw",
+   "src": "img/fv242.png",
+   "start": 2496.21,
+   "dur": 6
+  },
+  {
+   "id": "fv243",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv243.mp4",
+   "start": 2502.21,
+   "dur": 3.94
+  },
+  {
+   "id": "c243",
+   "start": 2502.21,
+   "dur": 12.22,
+   "kind": "lowerthird",
+   "kicker": "ERROR 3",
+   "title": "El agua bien caliente antes",
+   "desc": "El calor dilata la vena que ya está dilatada",
+   "tone": "bad"
+  },
+  {
+   "id": "ph243",
+   "kind": "raw",
+   "src": "img/fv243.png",
+   "start": 2506.15,
+   "dur": 8.28
+  },
+  {
+   "id": "bed244",
+   "kind": "raw",
+   "src": "img/fv243.png",
+   "start": 2514.43,
+   "dur": 8.2
+  },
+  {
+   "id": "c244",
+   "start": 2514.43,
+   "dur": 8.2,
+   "kind": "diagram",
+   "eyebrow": "ERROR 3 · EL CALOR",
+   "slides": [
+    {
+     "image": "img/fvdg244.png",
+     "eyebrow": "EL CALOR DILATA LA VENA Y LA SANGRE SE ESTANCA"
+    }
+   ]
+  },
+  {
+   "id": "fv245",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv245.mp4",
+   "start": 2522.63,
+   "dur": 3.94
+  },
+  {
+   "id": "c245",
+   "start": 2522.63,
+   "dur": 6.8,
+   "kind": "lowerthird",
+   "kicker": "POR ESO",
+   "title": "En verano las piernas sufren más",
+   "tone": "alert"
+  },
+  {
+   "id": "ph245",
+   "kind": "raw",
+   "src": "img/fv245.png",
+   "start": 2526.57,
+   "dur": 2.86
+  },
+  {
+   "id": "bed246",
+   "kind": "raw",
+   "src": "img/fv245.png",
+   "start": 2529.43,
+   "dur": 10.8
+  },
+  {
+   "id": "c246",
+   "start": 2529.43,
+   "dur": 10.8,
+   "kind": "checklist",
+   "eyebrow": "NADA DE ESTO ANTES",
+   "title": "El calor es el enemigo silencioso",
+   "stamp": "EVITAR",
+   "items": [
+    "Baño de agua bien caliente",
+    "Compresas calientes en las piernas",
+    "Horas al rayo del sol con las piernas descubiertas"
+   ]
+  },
+  {
+   "id": "fv247",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv247.mp4",
+   "start": 2540.23,
+   "dur": 3.94
+  },
+  {
+   "id": "c247",
+   "start": 2540.23,
+   "dur": 11.82,
+   "kind": "lowerthird",
+   "kicker": "LO QUE SÍ AYUDA",
+   "title": "Agua fresca al final de la regadera",
+   "desc": "Del tobillo hacia arriba, 20 o 30 segundos",
+   "tone": "good"
+  },
+  {
+   "id": "ph247",
+   "kind": "raw",
+   "src": "img/fv247.png",
+   "start": 2544.17,
+   "dur": 7.88
+  },
+  {
+   "id": "bed248",
+   "kind": "raw",
+   "src": "img/fv247.png",
+   "start": 2552.05,
+   "dur": 12.18
+  },
+  {
+   "id": "c248",
+   "start": 2552.05,
+   "dur": 12.18,
+   "kind": "errorstinger",
+   "number": "4",
+   "title": "HACERLO TRES DÍAS Y DEJARLO",
+   "tone": "bad"
+  },
+  {
+   "id": "fv249",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv249.mp4",
+   "start": 2564.23,
+   "dur": 3.94
+  },
+  {
+   "id": "c249",
+   "start": 2564.23,
+   "dur": 10.92,
+   "kind": "lowerthird",
+   "kicker": "LO MÁS HUMANO DEL MUNDO",
+   "title": "El jueves llegas tarde y el viernes se acabó",
+   "tone": "alert"
+  },
+  {
+   "id": "ph249",
+   "kind": "raw",
+   "src": "img/fv249.png",
+   "start": 2568.17,
+   "dur": 6.98
+  },
+  {
+   "id": "bed250",
+   "kind": "raw",
+   "src": "img/fv249.png",
+   "start": 2575.15,
+   "dur": 12.14
+  },
+  {
+   "id": "c250",
+   "start": 2575.15,
+   "dur": 12.14,
+   "kind": "lowerthird",
+   "kicker": "NO ES UN MEDICAMENTO",
+   "title": "Es un hábito",
+   "desc": "Lo que vale no es la intensidad: es la repetición",
+   "tone": "good"
+  },
+  {
+   "id": "fv251",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv251.mp4",
+   "start": 2587.29,
+   "dur": 3.94
+  },
+  {
+   "id": "c251",
+   "start": 2587.29,
+   "dur": 11.14,
+   "kind": "lowerthird",
+   "kicker": "EL CONSEJO PRÁCTICO",
+   "title": "Deja el frasco arriba del buró",
+   "desc": "Lo que se ve se hace; lo guardado se olvida",
+   "tone": "good"
+  },
+  {
+   "id": "ph251",
+   "kind": "raw",
+   "src": "img/fv251.png",
+   "start": 2591.23,
+   "dur": 7.2
+  },
+  {
+   "id": "fv252",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv252.mp4",
+   "start": 2598.43,
+   "dur": 3.94
+  },
+  {
+   "id": "ph252",
+   "kind": "raw",
+   "src": "img/fv252.png",
+   "start": 2602.37,
+   "dur": 8.26
+  },
+  {
+   "id": "ph253",
+   "kind": "raw",
+   "src": "img/fvhero253.png",
+   "start": 2610.63,
+   "dur": 10.3
+  },
+  {
+   "id": "bed254",
+   "kind": "raw",
+   "src": "img/fv255.png",
+   "start": 2620.93,
+   "dur": 11.16
+  },
+  {
+   "id": "c254",
+   "start": 2620.93,
+   "dur": 11.16,
+   "kind": "mitoverdad",
+   "myth": "Lo importante es el masaje con aceite",
+   "truth": "Si tuviera que dejar dos: bombeo y elevación",
+   "flipAt": 0.55
+  },
+  {
+   "id": "fv255",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv255.mp4",
+   "start": 2632.09,
+   "dur": 3.94
+  },
+  {
+   "id": "ph255",
+   "kind": "raw",
+   "src": "img/fv255.png",
+   "start": 2636.03,
+   "dur": 7.12
+  },
+  {
+   "id": "bed256",
+   "kind": "raw",
+   "src": "img/fv255.png",
+   "start": 2643.15,
+   "dur": 12.64
+  },
+  {
+   "id": "c256",
+   "start": 2643.15,
+   "dur": 12.64,
+   "kind": "bars",
+   "eyebrow": "QUÉ MUEVE QUÉ",
+   "title": "Lo que baja el tobillo de verdad",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Mecánica: bomba y gravedad",
+     "value": 80,
+     "tone": "good",
+     "winner": true
+    },
+    {
+     "label": "Aceite: piel, comezón, superficie",
+     "value": 20
+    }
+   ]
+  },
+  {
+   "id": "bed257",
+   "kind": "raw",
+   "src": "img/fv258.png",
+   "start": 2655.79,
+   "dur": 12.58
+  },
+  {
+   "id": "c257",
+   "start": 2655.79,
+   "dur": 12.58,
+   "kind": "process",
+   "eyebrow": "EL CALENDARIO HONESTO",
+   "title": "Qué vas a sentir y cuándo",
+   "steps": [
+    {
+     "title": "La primera noche",
+     "desc": "alivio prestado: elevación y masaje"
+    },
+    {
+     "title": "Semana 1",
+     "desc": "amaneces mejor y se va la comezón"
+    },
+    {
+     "title": "Semanas 2 a 4",
+     "desc": "el tobillo: te entra mejor el zapato"
+    },
+    {
+     "title": "Semanas 4 a 8",
+     "desc": "el aguante: cuánto caminas sin dolor"
+    }
+   ]
+  },
+  {
+   "id": "fv258",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv258.mp4",
+   "start": 2668.37,
+   "dur": 3.94
+  },
+  {
+   "id": "ph258",
+   "kind": "raw",
+   "src": "img/fv258.png",
+   "start": 2672.31,
+   "dur": 5.46
+  },
+  {
+   "id": "fv259",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv259.mp4",
+   "start": 2677.77,
+   "dur": 3.94
+  },
+  {
+   "id": "c259",
+   "start": 2677.77,
+   "dur": 8.6,
+   "kind": "lowerthird",
+   "kicker": "SEMANA 1",
+   "title": "Se nota en cómo amaneces",
+   "tone": "good"
+  },
+  {
+   "id": "ph259",
+   "kind": "raw",
+   "src": "img/fv259.png",
+   "start": 2681.71,
+   "dur": 4.66
+  },
+  {
+   "id": "bed260",
+   "kind": "raw",
+   "src": "img/fv259.png",
+   "start": 2686.37,
+   "dur": 11.36
+  },
+  {
+   "id": "c260",
+   "start": 2686.37,
+   "dur": 11.36,
+   "kind": "stat",
+   "eyebrow": "EL PRIMER CAMBIO EVIDENTE",
+   "value": 1,
+   "suffix": "ª semana",
+   "label": "la comezón se va casi por completo"
+  },
+  {
+   "id": "fv261",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv261.mp4",
+   "start": 2697.73,
+   "dur": 3.94
+  },
+  {
+   "id": "c261",
+   "start": 2697.73,
+   "dur": 9.72,
+   "kind": "lowerthird",
+   "kicker": "SEMANAS 2 A 4",
+   "title": "Te entra mejor el zapato",
+   "tone": "good"
+  },
+  {
+   "id": "ph261",
+   "kind": "raw",
+   "src": "img/fv261.png",
+   "start": 2701.67,
+   "dur": 5.78
+  },
+  {
+   "id": "bed262",
+   "kind": "raw",
+   "src": "img/fv261.png",
+   "start": 2707.45,
+   "dur": 12.12
+  },
+  {
+   "id": "c262",
+   "start": 2707.45,
+   "dur": 12.12,
+   "kind": "lowerthird",
+   "kicker": "SEMANAS 4 A 8",
+   "title": "El aguante",
+   "desc": "Lo notas cuando haces algo que antes te costaba y no te acuerdas de haberte cansado",
+   "tone": "good"
+  },
+  {
+   "id": "fv263",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv263.mp4",
+   "start": 2719.57,
+   "dur": 3.94
+  },
+  {
+   "id": "ph263",
+   "kind": "raw",
+   "src": "img/fv263.png",
+   "start": 2723.51,
+   "dur": 6.14
+  },
+  {
+   "id": "fv264",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv264.mp4",
+   "start": 2729.65,
+   "dur": 3.94
+  },
+  {
+   "id": "bed264",
+   "kind": "raw",
+   "src": "img/fv263.png",
+   "start": 2729.65,
+   "dur": 10.06
+  },
+  {
+   "id": "bed265",
+   "kind": "raw",
+   "src": "img/fv266.png",
+   "start": 2739.71,
+   "dur": 8.36
+  },
+  {
+   "id": "c265",
+   "start": 2739.71,
+   "dur": 8.36,
+   "kind": "frasecinetica",
+   "words": [
+    "LO",
+    "QUE",
+    "CAMBIA",
+    "ES",
+    "TODO",
+    "LO",
+    "DEMÁS"
+   ],
+   "perWord": 0.42,
+   "tone": "good"
+  },
+  {
+   "id": "fv266",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv266.mp4",
+   "start": 2748.07,
+   "dur": 3.94
+  },
+  {
+   "id": "c266",
+   "start": 2748.07,
+   "dur": 9.88,
+   "kind": "lowerthird",
+   "kicker": "MULTIPLICADOR 1",
+   "title": "La sal retiene agua",
+   "tone": "alert"
+  },
+  {
+   "id": "ph266",
+   "kind": "raw",
+   "src": "img/fv266.png",
+   "start": 2752.01,
+   "dur": 5.94
+  },
+  {
+   "id": "fv267",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv267.mp4",
+   "start": 2757.95,
+   "dur": 3.94
+  },
+  {
+   "id": "ph267",
+   "kind": "raw",
+   "src": "img/fv267.png",
+   "start": 2761.89,
+   "dur": 7.48
+  },
+  {
+   "id": "bed268",
+   "kind": "raw",
+   "src": "img/fv267.png",
+   "start": 2769.37,
+   "dur": 8.96
+  },
+  {
+   "id": "c268",
+   "start": 2769.37,
+   "dur": 8.96,
+   "kind": "lowerthird",
+   "kicker": "MULTIPLICADOR 1",
+   "title": "La cena, la comida menos salada del día",
+   "desc": "No te pido que dejes la sal de por vida. Solo la cena.",
+   "tone": "good"
+  },
+  {
+   "id": "fv269",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv269.mp4",
+   "start": 2778.33,
+   "dur": 3.94
+  },
+  {
+   "id": "c269",
+   "start": 2778.33,
+   "dur": 13.6,
+   "kind": "lowerthird",
+   "kicker": "MULTIPLICADOR 2",
+   "title": "Toma tu agua, normal",
+   "desc": "Ajusta la última hora, no el día entero",
+   "tone": "good"
+  },
+  {
+   "id": "ph269",
+   "kind": "raw",
+   "src": "img/fv269.png",
+   "start": 2782.27,
+   "dur": 9.66
+  },
+  {
+   "id": "bed270",
+   "kind": "raw",
+   "src": "img/fv269.png",
+   "start": 2791.93,
+   "dur": 10.58
+  },
+  {
+   "id": "c270",
+   "start": 2791.93,
+   "dur": 10.58,
+   "kind": "mitoverdad",
+   "myth": "Si tomo menos agua, me hincho menos",
+   "truth": "Deshidratarte hace retener MÁS, no menos",
+   "flipAt": 0.5
+  },
+  {
+   "id": "bed271",
+   "kind": "raw",
+   "src": "img/fv272.png",
+   "start": 2802.51,
+   "dur": 3.58
+  },
+  {
+   "id": "c271",
+   "start": 2802.51,
+   "dur": 3.58,
+   "kind": "headline",
+   "eyebrow": "MULTIPLICADOR 3",
+   "tokens": [
+    {
+     "t": "LA"
+    },
+    {
+     "t": "PARED",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "fv272",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv272.mp4",
+   "start": 2806.09,
+   "dur": 3.94
+  },
+  {
+   "id": "c272",
+   "start": 2806.09,
+   "dur": 11.68,
+   "kind": "lowerthird",
+   "kicker": "CINCO MINUTOS",
+   "title": "Piernas rectas contra la pared",
+   "tone": "good"
+  },
+  {
+   "id": "ph272",
+   "kind": "raw",
+   "src": "img/fv272.png",
+   "start": 2810.03,
+   "dur": 7.74
+  },
+  {
+   "id": "bed273",
+   "kind": "raw",
+   "src": "img/fv272.png",
+   "start": 2817.77,
+   "dur": 15.43
+  },
+  {
+   "id": "c273",
+   "start": 2817.77,
+   "dur": 11.06,
+   "kind": "stat",
+   "eyebrow": "AL LLEGAR A CASA",
+   "value": 5,
+   "suffix": " minutos",
+   "label": "piernas rectas apoyadas en la pared"
+  },
+  {
+   "id": "fv274",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv274.mp4",
+   "start": 2828.83,
+   "dur": 3.94
+  },
+  {
+   "id": "bed275",
+   "kind": "raw",
+   "src": "img/fv274.png",
+   "start": 2833.09,
+   "dur": 11.6
+  },
+  {
+   "id": "c275",
+   "start": 2833.09,
+   "dur": 11.6,
+   "kind": "callout",
+   "eyebrow": "MULTIPLICADOR 4",
+   "figure": "LA MEJOR EVIDENCIA",
+   "caption": "Las medias de compresión graduada son la herramienta con más evidencia de todo lo que existe para esto. Más que cualquier hierba, incluido el romero.",
+   "image": "img/fv274.png"
+  },
+  {
+   "id": "bed276",
+   "kind": "raw",
+   "src": "img/fv277.png",
+   "start": 2844.69,
+   "dur": 11.34
+  },
+  {
+   "id": "c276",
+   "start": 2844.69,
+   "dur": 11.34,
+   "kind": "splitlist",
+   "title": "Cada quien en su turno",
+   "items": [
+    "Las medias: de día, contra la gravedad",
+    "El romero y la elevación: de noche",
+    "Se ponen en la MAÑANA, con la pierna delgada",
+    "La compresión se elige con un profesional"
+   ]
+  },
+  {
+   "id": "fv277",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv277.mp4",
+   "start": 2856.03,
+   "dur": 3.94
+  },
+  {
+   "id": "c277",
+   "start": 2856.03,
+   "dur": 10.1,
+   "kind": "lowerthird",
+   "kicker": "LAS MEDIAS",
+   "title": "En la MAÑANA, con la pierna delgada",
+   "tone": "good"
+  },
+  {
+   "id": "ph277",
+   "kind": "raw",
+   "src": "img/fv277.png",
+   "start": 2859.97,
+   "dur": 6.16
+  },
+  {
+   "id": "fv278",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv278.mp4",
+   "start": 2866.13,
+   "dur": 3.32
+  },
+  {
+   "id": "bed279",
+   "kind": "raw",
+   "src": "img/fv278.png",
+   "start": 2869.45,
+   "dur": 11.88
+  },
+  {
+   "id": "c279",
+   "start": 2869.45,
+   "dur": 11.88,
+   "kind": "errorstinger",
+   "number": "⚠",
+   "title": "CON DIABETES, PREGUNTA ANTES",
+   "tone": "bad"
+  },
+  {
+   "id": "bed280",
+   "kind": "raw",
+   "src": "img/fv281.png",
+   "start": 2881.33,
+   "dur": 9.04
+  },
+  {
+   "id": "c280",
+   "start": 2881.33,
+   "dur": 9.04,
+   "kind": "headline",
+   "eyebrow": "EL LÍMITE DE LO CASERO",
+   "tokens": [
+    {
+     "t": "CUÁNDO"
+    },
+    {
+     "t": "ESTO"
+    },
+    {
+     "t": "YA"
+    },
+    {
+     "t": "NO"
+    },
+    {
+     "t": "ALCANZA",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "fv281",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv281.mp4",
+   "start": 2890.37,
+   "dur": 3.94
+  },
+  {
+   "id": "c281",
+   "start": 2890.37,
+   "dur": 10.14,
+   "kind": "checklist",
+   "eyebrow": "VE CON UN ANGIÓLOGO",
+   "title": "Sin dejarlo para después",
+   "stamp": "IMPORTANTE",
+   "items": [
+    "La piel del tobillo café oscura, dura y brillosa",
+    "Una llaga cerca del tobillo que no cierra en dos semanas",
+    "Una várice que sangra",
+    "Un cordón duro y doloroso con la piel roja encima"
+   ]
+  },
+  {
+   "id": "ph281",
+   "kind": "raw",
+   "src": "img/fv281.png",
+   "start": 2894.31,
+   "dur": 6.2
+  },
+  {
+   "id": "fv282",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv282.mp4",
+   "start": 2900.51,
+   "dur": 3.94
+  },
+  {
+   "id": "c282",
+   "start": 2900.51,
+   "dur": 10.16,
+   "kind": "lowerthird",
+   "kicker": "AL MÉDICO",
+   "title": "Piel café oscura, dura y brillosa",
+   "tone": "bad"
+  },
+  {
+   "id": "ph282",
+   "kind": "raw",
+   "src": "img/fv282.png",
+   "start": 2904.45,
+   "dur": 6.22
+  },
+  {
+   "id": "fv283",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv283.mp4",
+   "start": 2910.67,
+   "dur": 3.94
+  },
+  {
+   "id": "c283",
+   "start": 2910.67,
+   "dur": 5.6,
+   "kind": "lowerthird",
+   "kicker": "AL MÉDICO",
+   "title": "Una llaga que no cierra en dos semanas",
+   "tone": "bad"
+  },
+  {
+   "id": "ph283",
+   "kind": "raw",
+   "src": "img/fv283.png",
+   "start": 2914.61,
+   "dur": 1.66
+  },
+  {
+   "id": "bed284",
+   "kind": "raw",
+   "src": "img/fv283.png",
+   "start": 2916.27,
+   "dur": 9.7
+  },
+  {
+   "id": "c284",
+   "start": 2916.27,
+   "dur": 9.7,
+   "kind": "lowerthird",
+   "kicker": "SI UNA VÁRICE SANGRA",
+   "title": "Acostado y la pierna bien alto",
+   "desc": "Presión con un trapo limpio, y al médico",
+   "tone": "bad"
+  },
+  {
+   "id": "bed285",
+   "kind": "raw",
+   "src": "img/fv286.png",
+   "start": 2925.97,
+   "dur": 9.22
+  },
+  {
+   "id": "fv286",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv286.mp4",
+   "start": 2935.19,
+   "dur": 3.94
+  },
+  {
+   "id": "ph286",
+   "kind": "raw",
+   "src": "img/fv286.png",
+   "start": 2939.13,
+   "dur": 4.96
+  },
+  {
+   "id": "ph287",
+   "kind": "raw",
+   "src": "img/fvhero287.png",
+   "start": 2944.09,
+   "dur": 10.06
+  },
+  {
+   "id": "fv288",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv288.mp4",
+   "start": 2954.15,
+   "dur": 3.94
+  },
+  {
+   "id": "c288",
+   "start": 2954.15,
+   "dur": 10.06,
+   "kind": "lowerthird",
+   "kicker": "LAS ARAÑITAS",
+   "title": "No son el problema: son el aviso",
+   "tone": "alert"
+  },
+  {
+   "id": "ph288",
+   "kind": "raw",
+   "src": "img/fv288.png",
+   "start": 2958.09,
+   "dur": 6.12
+  },
+  {
+   "id": "bed289",
+   "kind": "raw",
+   "src": "img/fv288.png",
+   "start": 2964.21,
+   "dur": 6.58
+  },
+  {
+   "id": "c289",
+   "start": 2964.21,
+   "dur": 6.58,
+   "kind": "callout",
+   "eyebrow": "SI TIENES 40 O 45",
+   "figure": "EL AVISO",
+   "caption": "Las arañitas no son el problema: son la primera gota de agua en el techo. Todavía puedes arreglar el techo antes de que se caiga.",
+   "image": "img/fv288.png"
+  },
+  {
+   "id": "fv290",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv290.mp4",
+   "start": 2970.79,
+   "dur": 3.94
+  },
+  {
+   "id": "ph290",
+   "kind": "raw",
+   "src": "img/fv290.png",
+   "start": 2974.73,
+   "dur": 8.78
+  },
+  {
+   "id": "fv291",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv291.mp4",
+   "start": 2983.51,
+   "dur": 3.94
+  },
+  {
+   "id": "c291",
+   "start": 2983.51,
+   "dur": 8.7,
+   "kind": "frasecinetica",
+   "words": [
+    "LA",
+    "PRIMERA",
+    "GOTA",
+    "EN",
+    "EL",
+    "TECHO"
+   ],
+   "perWord": 0.44,
+   "tone": "alert"
+  },
+  {
+   "id": "ph291",
+   "kind": "raw",
+   "src": "img/fv291.png",
+   "start": 2987.45,
+   "dur": 4.76
+  },
+  {
+   "id": "bed292",
+   "kind": "raw",
+   "src": "img/fv291.png",
+   "start": 2992.21,
+   "dur": 10.62
+  },
+  {
+   "id": "bed293",
+   "kind": "raw",
+   "src": "img/fv294.png",
+   "start": 3002.83,
+   "dur": 10.62
+  },
+  {
+   "id": "c293",
+   "start": 3002.83,
+   "dur": 10.62,
+   "kind": "chips",
+   "eyebrow": "DESPUÉS DE LOS SESENTA",
+   "title": "Todo está amarrado",
+   "image": "img/fv294.png",
+   "chips": [
+    "La circulación jala al sueño",
+    "El sueño jala a la energía",
+    "La energía jala a las ganas de moverte"
+   ]
+  },
+  {
+   "id": "fv294",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv294.mp4",
+   "start": 3013.45,
+   "dur": 3.94
+  },
+  {
+   "id": "ph294",
+   "kind": "raw",
+   "src": "img/fv294.png",
+   "start": 3017.39,
+   "dur": 1.52
+  },
+  {
+   "id": "fv295",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv295.mp4",
+   "start": 3018.91,
+   "dur": 3.94
+  },
+  {
+   "id": "ph295",
+   "kind": "raw",
+   "src": "img/fv295.png",
+   "start": 3022.85,
+   "dur": 13.76
+  },
+  {
+   "id": "bed296",
+   "kind": "raw",
+   "src": "img/fv295.png",
+   "start": 3036.61,
+   "dur": 8.5
+  },
+  {
+   "id": "c296",
+   "start": 3036.61,
+   "dur": 8.5,
+   "kind": "frasecinetica",
+   "words": [
+    "NO",
+    "FALLAS",
+    "POR",
+    "LO",
+    "QUE",
+    "NO",
+    "SABES",
+    "FALLAS",
+    "POR",
+    "LO",
+    "QUE",
+    "SIGUES",
+    "HACIENDO"
+   ],
+   "perWord": 0.32,
+   "tone": "alert"
+  },
+  {
+   "id": "bed297",
+   "kind": "raw",
+   "src": "img/fv295.png",
+   "start": 3045.11,
+   "dur": 6.22
+  },
+  {
+   "id": "c297",
+   "start": 3045.11,
+   "dur": 6.22,
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Federer Consejos Salud",
+   "image": "img/fvhero308.png"
+  },
+  {
+   "id": "bed298",
+   "kind": "raw",
+   "src": "img/fv299.png",
+   "start": 3051.33,
+   "dur": 9.4
+  },
+  {
+   "id": "fv299",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv299.mp4",
+   "start": 3060.73,
+   "dur": 3.94
+  },
+  {
+   "id": "c299",
+   "start": 3060.73,
+   "dur": 16.74,
+   "kind": "lowerthird",
+   "kicker": "SI LO VES EN LA TELE",
+   "title": "Apunta el celular al cuadrito",
+   "desc": "Se abre solo, sin escribir nada",
+   "tone": "good"
+  },
+  {
+   "id": "ph299",
+   "kind": "raw",
+   "src": "img/fv299.png",
+   "start": 3064.67,
+   "dur": 12.8
+  },
+  {
+   "id": "fv300",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv300.mp4",
+   "start": 3077.47,
+   "dur": 3.94
+  },
+  {
+   "id": "ph300",
+   "kind": "raw",
+   "src": "img/fv300.png",
+   "start": 3081.41,
+   "dur": 7.38
+  },
+  {
+   "id": "fv301",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv301.mp4",
+   "start": 3088.79,
+   "dur": 3.94
+  },
+  {
+   "id": "c301",
+   "start": 3088.79,
+   "dur": 11.6,
+   "kind": "lowerthird",
+   "kicker": "DOÑA TRINI HIZO DOS COSAS",
+   "title": "Bombeo de tobillo y piernas arriba",
+   "tone": "good"
+  },
+  {
+   "id": "ph301",
+   "kind": "raw",
+   "src": "img/fv301.png",
+   "start": 3092.73,
+   "dur": 7.66
+  },
+  {
+   "id": "fv302",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv302.mp4",
+   "start": 3100.39,
+   "dur": 3.94
+  },
+  {
+   "id": "ph302",
+   "kind": "raw",
+   "src": "img/fv302.png",
+   "start": 3104.33,
+   "dur": 5.96
+  },
+  {
+   "id": "fv303",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv303.mp4",
+   "start": 3110.29,
+   "dur": 3.94
+  },
+  {
+   "id": "c303",
+   "start": 3110.29,
+   "dur": 6.8,
+   "kind": "lowerthird",
+   "kicker": "A LAS TRES SEMANAS",
+   "title": "Ya nada más me levanto una vez",
+   "tone": "good"
+  },
+  {
+   "id": "ph303",
+   "kind": "raw",
+   "src": "img/fv303.png",
+   "start": 3114.23,
+   "dur": 2.86
+  },
+  {
+   "id": "bed304",
+   "kind": "raw",
+   "src": "img/fv303.png",
+   "start": 3117.09,
+   "dur": 10.26
+  },
+  {
+   "id": "c304",
+   "start": 3117.09,
+   "dur": 10.26,
+   "kind": "frasecinetica",
+   "words": [
+    "YO",
+    "PENSÉ",
+    "QUE",
+    "YA",
+    "ME",
+    "TOCABA",
+    "DORMIR",
+    "MAL",
+    "POR",
+    "LA",
+    "EDAD"
+   ],
+   "perWord": 0.34,
+   "tone": "alert"
+  },
+  {
+   "id": "ph305",
+   "kind": "raw",
+   "src": "img/fvhero305.png",
+   "start": 3127.35,
+   "dur": 10.3
+  },
+  {
+   "id": "bed306",
+   "kind": "raw",
+   "src": "img/fv307.png",
+   "start": 3137.65,
+   "dur": 9.26
+  },
+  {
+   "id": "c306",
+   "start": 3137.65,
+   "dur": 9.26,
+   "kind": "mitoverdad",
+   "myth": "Era la edad",
+   "truth": "Era mecánica: una posición y un músculo apagado",
+   "flipAt": 0.5
+  },
+  {
+   "id": "fv307",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv307.mp4",
+   "start": 3146.91,
+   "dur": 3.94
+  },
+  {
+   "id": "ph307",
+   "kind": "raw",
+   "src": "img/fv307.png",
+   "start": 3150.85,
+   "dur": 3.84
+  },
+  {
+   "id": "ph308",
+   "kind": "raw",
+   "src": "img/fvhero308.png",
+   "start": 3154.69,
+   "dur": 10.34
+  },
+  {
+   "id": "bed309",
+   "kind": "raw",
+   "src": "img/fv310.png",
+   "start": 3165.03,
+   "dur": 11.06
+  },
+  {
+   "id": "c309",
+   "start": 3165.03,
+   "dur": 11.06,
+   "kind": "frasecinetica",
+   "words": [
+    "COMÚN",
+    "NO",
+    "ES",
+    "LO",
+    "MISMO",
+    "QUE",
+    "NORMAL"
+   ],
+   "perWord": 0.44,
+   "tone": "good"
+  },
+  {
+   "id": "fv310",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv310.mp4",
+   "start": 3176.09,
+   "dur": 3.94
+  },
+  {
+   "id": "c310",
+   "start": 3176.09,
+   "dur": 11.9,
+   "kind": "checklist",
+   "eyebrow": "HAZLO ESTA NOCHE",
+   "title": "No hace falta que compres nada",
+   "stamp": "HOY",
+   "items": [
+    "Acuéstate",
+    "Almohada bajo la pantorrilla, no bajo la rodilla",
+    "30 bombeos de tobillo",
+    "Mañana fíjate cómo sientes el primer paso"
+   ]
+  },
+  {
+   "id": "ph310",
+   "kind": "raw",
+   "src": "img/fv310.png",
+   "start": 3180.03,
+   "dur": 7.96
+  },
+  {
+   "id": "fv311",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv311.mp4",
+   "start": 3187.99,
+   "dur": 3.94
+  },
+  {
+   "id": "bed311",
+   "kind": "raw",
+   "src": "img/fv310.png",
+   "start": 3187.99,
+   "dur": 10.52
+  },
+  {
+   "id": "c311",
+   "start": 3187.99,
+   "dur": 10.52,
+   "kind": "lowerthird",
+   "kicker": "MAÑANA",
+   "title": "Fíjate cómo sientes el primer paso",
+   "tone": "good"
+  },
+  {
+   "id": "fv312",
+   "kind": "raw",
+   "src": "broll/fcsvarices/fv312.mp4",
+   "start": 3198.51,
+   "dur": 3.94
+  },
+  {
+   "id": "ph312",
+   "kind": "raw",
+   "src": "img/fv312.png",
+   "start": 3202.45,
+   "dur": 1.25
+  }
+ ]
+}

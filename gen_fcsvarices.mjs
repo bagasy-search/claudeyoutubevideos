@@ -82,14 +82,14 @@ for (let i = 0; i < N; i++) {
   const st = start[i], slot = slotOf(i);
   const conAvatar = st + slot <= AVATAR_END;
   const id3 = String(i).padStart(3, "0");
-  const clipPath = `public/broll_${SLUG}/fv${id3}.mp4`;
+  const clipPath = `public/broll/${SLUG}/fv${id3}.mp4`;
   const photoRel = p.k === "hero" ? `img/fvhero${id3}.png` : `img/fv${id3}.png`;
   const photoAbs = `public/${photoRel}`;
   let used = 0;
   if (p.k === "clip" && fs.existsSync(clipPath)) {
     const real = probeDur(clipPath) || 4;
     const cov = +Math.max(0.8, Math.min(slot, real - 0.1)).toFixed(2);
-    BROLL.push({ name: `fv${id3}`, src: `broll_${SLUG}/fv${id3}.mp4`, start: +st.toFixed(2), cov, dur: cov, i });
+    BROLL.push({ name: `fv${id3}`, src: `broll/${SLUG}/fv${id3}.mp4`, start: +st.toFixed(2), cov, dur: cov, i });
     used = cov;
   }
   const rest = +(slot - used).toFixed(2);
@@ -189,7 +189,7 @@ console.log(`HUECOS: ${holes.length} tramos, ${(dead * 0.2).toFixed(1)}s muertos
 if (holes.length) console.log("  primeros:", JSON.stringify(holes.slice(0, 12)));
 
 // ── salidas ────────────────────────────────────────────────────────────────────
-const ts = (n, v) => `export const ${n} = ${JSON.stringify(v, null, 1)} as any;\n`;
+const ts = (n, v) => "export const " + n + ": any[] = " + JSON.stringify(v, null, 1) + ";" + String.fromCharCode(10);
 fs.writeFileSync(`src/_fed6/VideoEdit/${SLUG}_beats.ts`,
   `// GENERADO por gen_${SLUG}.mjs — no editar a mano\n` +
   ts("FCSVARICES_BROLL", BROLL) + ts("FCSVARICES_PHOTOS", PHOTOS) +

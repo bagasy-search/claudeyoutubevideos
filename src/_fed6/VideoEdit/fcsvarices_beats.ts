@@ -1,8 +1,8 @@
 // GENERADO por gen_fcsvarices.mjs — no editar a mano
-export const FCSVARICES_BROLL = [
+export const FCSVARICES_BROLL: any[] = [
  {
   "name": "fv000",
-  "src": "broll_fcsvarices/fv000.mp4",
+  "src": "broll/fcsvarices/fv000.mp4",
   "start": 8.71,
   "cov": 3.94,
   "dur": 3.94,
@@ -10,7 +10,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv001",
-  "src": "broll_fcsvarices/fv001.mp4",
+  "src": "broll/fcsvarices/fv001.mp4",
   "start": 17.42,
   "cov": 3.94,
   "dur": 3.94,
@@ -18,7 +18,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv003",
-  "src": "broll_fcsvarices/fv003.mp4",
+  "src": "broll/fcsvarices/fv003.mp4",
   "start": 34.84,
   "cov": 3.94,
   "dur": 3.94,
@@ -26,7 +26,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv004",
-  "src": "broll_fcsvarices/fv004.mp4",
+  "src": "broll/fcsvarices/fv004.mp4",
   "start": 44.58,
   "cov": 3.94,
   "dur": 3.94,
@@ -34,7 +34,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv005",
-  "src": "broll_fcsvarices/fv005.mp4",
+  "src": "broll/fcsvarices/fv005.mp4",
   "start": 52.14,
   "cov": 3.94,
   "dur": 3.94,
@@ -42,7 +42,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv006",
-  "src": "broll_fcsvarices/fv006.mp4",
+  "src": "broll/fcsvarices/fv006.mp4",
   "start": 59.02,
   "cov": 3.94,
   "dur": 3.94,
@@ -50,7 +50,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv008",
-  "src": "broll_fcsvarices/fv008.mp4",
+  "src": "broll/fcsvarices/fv008.mp4",
   "start": 74.1,
   "cov": 3.94,
   "dur": 3.94,
@@ -58,7 +58,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv012",
-  "src": "broll_fcsvarices/fv012.mp4",
+  "src": "broll/fcsvarices/fv012.mp4",
   "start": 116.36,
   "cov": 3.94,
   "dur": 3.94,
@@ -66,7 +66,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv013",
-  "src": "broll_fcsvarices/fv013.mp4",
+  "src": "broll/fcsvarices/fv013.mp4",
   "start": 127.16,
   "cov": 3.94,
   "dur": 3.94,
@@ -74,7 +74,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv014",
-  "src": "broll_fcsvarices/fv014.mp4",
+  "src": "broll/fcsvarices/fv014.mp4",
   "start": 137.84,
   "cov": 3.94,
   "dur": 3.94,
@@ -82,7 +82,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv015",
-  "src": "broll_fcsvarices/fv015.mp4",
+  "src": "broll/fcsvarices/fv015.mp4",
   "start": 150.53,
   "cov": 3.94,
   "dur": 3.94,
@@ -90,7 +90,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv016",
-  "src": "broll_fcsvarices/fv016.mp4",
+  "src": "broll/fcsvarices/fv016.mp4",
   "start": 163.22,
   "cov": 3.94,
   "dur": 3.94,
@@ -98,7 +98,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv017",
-  "src": "broll_fcsvarices/fv017.mp4",
+  "src": "broll/fcsvarices/fv017.mp4",
   "start": 174.32,
   "cov": 3.94,
   "dur": 3.94,
@@ -106,7 +106,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv018",
-  "src": "broll_fcsvarices/fv018.mp4",
+  "src": "broll/fcsvarices/fv018.mp4",
   "start": 185.66,
   "cov": 3.94,
   "dur": 3.94,
@@ -114,7 +114,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv019",
-  "src": "broll_fcsvarices/fv019.mp4",
+  "src": "broll/fcsvarices/fv019.mp4",
   "start": 198.22,
   "cov": 3.94,
   "dur": 3.94,
@@ -122,7 +122,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv020",
-  "src": "broll_fcsvarices/fv020.mp4",
+  "src": "broll/fcsvarices/fv020.mp4",
   "start": 209.58,
   "cov": 3.94,
   "dur": 3.94,
@@ -130,7 +130,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv021",
-  "src": "broll_fcsvarices/fv021.mp4",
+  "src": "broll/fcsvarices/fv021.mp4",
   "start": 220.94,
   "cov": 3.94,
   "dur": 3.94,
@@ -138,7 +138,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv023",
-  "src": "broll_fcsvarices/fv023.mp4",
+  "src": "broll/fcsvarices/fv023.mp4",
   "start": 246.94,
   "cov": 3.94,
   "dur": 3.94,
@@ -146,7 +146,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv025",
-  "src": "broll_fcsvarices/fv025.mp4",
+  "src": "broll/fcsvarices/fv025.mp4",
   "start": 264.94,
   "cov": 3.94,
   "dur": 3.94,
@@ -154,7 +154,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv026",
-  "src": "broll_fcsvarices/fv026.mp4",
+  "src": "broll/fcsvarices/fv026.mp4",
   "start": 274.91,
   "cov": 3.94,
   "dur": 3.94,
@@ -162,7 +162,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv027",
-  "src": "broll_fcsvarices/fv027.mp4",
+  "src": "broll/fcsvarices/fv027.mp4",
   "start": 285.84,
   "cov": 3.94,
   "dur": 3.94,
@@ -170,7 +170,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv029",
-  "src": "broll_fcsvarices/fv029.mp4",
+  "src": "broll/fcsvarices/fv029.mp4",
   "start": 308.74,
   "cov": 3.94,
   "dur": 3.94,
@@ -178,7 +178,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv031",
-  "src": "broll_fcsvarices/fv031.mp4",
+  "src": "broll/fcsvarices/fv031.mp4",
   "start": 332.6,
   "cov": 3.94,
   "dur": 3.94,
@@ -186,7 +186,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv032",
-  "src": "broll_fcsvarices/fv032.mp4",
+  "src": "broll/fcsvarices/fv032.mp4",
   "start": 342.62,
   "cov": 3.94,
   "dur": 3.94,
@@ -194,7 +194,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv033",
-  "src": "broll_fcsvarices/fv033.mp4",
+  "src": "broll/fcsvarices/fv033.mp4",
   "start": 355.08,
   "cov": 3.94,
   "dur": 3.94,
@@ -202,7 +202,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv036",
-  "src": "broll_fcsvarices/fv036.mp4",
+  "src": "broll/fcsvarices/fv036.mp4",
   "start": 393.2,
   "cov": 3.94,
   "dur": 3.94,
@@ -210,7 +210,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv039",
-  "src": "broll_fcsvarices/fv039.mp4",
+  "src": "broll/fcsvarices/fv039.mp4",
   "start": 421.54,
   "cov": 3.94,
   "dur": 3.94,
@@ -218,7 +218,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv040",
-  "src": "broll_fcsvarices/fv040.mp4",
+  "src": "broll/fcsvarices/fv040.mp4",
   "start": 431.64,
   "cov": 3.94,
   "dur": 3.94,
@@ -226,7 +226,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv041",
-  "src": "broll_fcsvarices/fv041.mp4",
+  "src": "broll/fcsvarices/fv041.mp4",
   "start": 444.12,
   "cov": 3.94,
   "dur": 3.94,
@@ -234,7 +234,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv042",
-  "src": "broll_fcsvarices/fv042.mp4",
+  "src": "broll/fcsvarices/fv042.mp4",
   "start": 459.34,
   "cov": 3.94,
   "dur": 3.94,
@@ -242,7 +242,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv045",
-  "src": "broll_fcsvarices/fv045.mp4",
+  "src": "broll/fcsvarices/fv045.mp4",
   "start": 493.58,
   "cov": 3.94,
   "dur": 3.94,
@@ -250,7 +250,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv046",
-  "src": "broll_fcsvarices/fv046.mp4",
+  "src": "broll/fcsvarices/fv046.mp4",
   "start": 505,
   "cov": 3.94,
   "dur": 3.94,
@@ -258,7 +258,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv048",
-  "src": "broll_fcsvarices/fv048.mp4",
+  "src": "broll/fcsvarices/fv048.mp4",
   "start": 534.28,
   "cov": 3.94,
   "dur": 3.94,
@@ -266,7 +266,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv049",
-  "src": "broll_fcsvarices/fv049.mp4",
+  "src": "broll/fcsvarices/fv049.mp4",
   "start": 547.3,
   "cov": 3.94,
   "dur": 3.94,
@@ -274,7 +274,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv052",
-  "src": "broll_fcsvarices/fv052.mp4",
+  "src": "broll/fcsvarices/fv052.mp4",
   "start": 578.76,
   "cov": 3.94,
   "dur": 3.94,
@@ -282,7 +282,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv055",
-  "src": "broll_fcsvarices/fv055.mp4",
+  "src": "broll/fcsvarices/fv055.mp4",
   "start": 605.82,
   "cov": 3.94,
   "dur": 3.94,
@@ -290,7 +290,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv057",
-  "src": "broll_fcsvarices/fv057.mp4",
+  "src": "broll/fcsvarices/fv057.mp4",
   "start": 623.7,
   "cov": 3.94,
   "dur": 3.94,
@@ -298,7 +298,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv059",
-  "src": "broll_fcsvarices/fv059.mp4",
+  "src": "broll/fcsvarices/fv059.mp4",
   "start": 648.44,
   "cov": 3.94,
   "dur": 3.94,
@@ -306,7 +306,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv060",
-  "src": "broll_fcsvarices/fv060.mp4",
+  "src": "broll/fcsvarices/fv060.mp4",
   "start": 661.42,
   "cov": 3.94,
   "dur": 3.94,
@@ -314,7 +314,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv063",
-  "src": "broll_fcsvarices/fv063.mp4",
+  "src": "broll/fcsvarices/fv063.mp4",
   "start": 700.08,
   "cov": 3.94,
   "dur": 3.94,
@@ -322,7 +322,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv064",
-  "src": "broll_fcsvarices/fv064.mp4",
+  "src": "broll/fcsvarices/fv064.mp4",
   "start": 712.21,
   "cov": 3.94,
   "dur": 3.94,
@@ -330,7 +330,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv065",
-  "src": "broll_fcsvarices/fv065.mp4",
+  "src": "broll/fcsvarices/fv065.mp4",
   "start": 724.34,
   "cov": 3.94,
   "dur": 3.94,
@@ -338,7 +338,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv066",
-  "src": "broll_fcsvarices/fv066.mp4",
+  "src": "broll/fcsvarices/fv066.mp4",
   "start": 735.96,
   "cov": 3.94,
   "dur": 3.94,
@@ -346,7 +346,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv067",
-  "src": "broll_fcsvarices/fv067.mp4",
+  "src": "broll/fcsvarices/fv067.mp4",
   "start": 746.93,
   "cov": 3.94,
   "dur": 3.94,
@@ -354,7 +354,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv069",
-  "src": "broll_fcsvarices/fv069.mp4",
+  "src": "broll/fcsvarices/fv069.mp4",
   "start": 769.4,
   "cov": 3.94,
   "dur": 3.94,
@@ -362,7 +362,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv073",
-  "src": "broll_fcsvarices/fv073.mp4",
+  "src": "broll/fcsvarices/fv073.mp4",
   "start": 812.78,
   "cov": 3.94,
   "dur": 3.94,
@@ -370,7 +370,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv074",
-  "src": "broll_fcsvarices/fv074.mp4",
+  "src": "broll/fcsvarices/fv074.mp4",
   "start": 821.2,
   "cov": 3.94,
   "dur": 3.94,
@@ -378,7 +378,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv075",
-  "src": "broll_fcsvarices/fv075.mp4",
+  "src": "broll/fcsvarices/fv075.mp4",
   "start": 834.54,
   "cov": 3.94,
   "dur": 3.94,
@@ -386,7 +386,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv076",
-  "src": "broll_fcsvarices/fv076.mp4",
+  "src": "broll/fcsvarices/fv076.mp4",
   "start": 848.54,
   "cov": 3.94,
   "dur": 3.94,
@@ -394,7 +394,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv078",
-  "src": "broll_fcsvarices/fv078.mp4",
+  "src": "broll/fcsvarices/fv078.mp4",
   "start": 871.64,
   "cov": 3.94,
   "dur": 3.94,
@@ -402,7 +402,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv079",
-  "src": "broll_fcsvarices/fv079.mp4",
+  "src": "broll/fcsvarices/fv079.mp4",
   "start": 881.14,
   "cov": 3.94,
   "dur": 3.94,
@@ -410,7 +410,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv080",
-  "src": "broll_fcsvarices/fv080.mp4",
+  "src": "broll/fcsvarices/fv080.mp4",
   "start": 892.9,
   "cov": 3.94,
   "dur": 3.94,
@@ -418,7 +418,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv081",
-  "src": "broll_fcsvarices/fv081.mp4",
+  "src": "broll/fcsvarices/fv081.mp4",
   "start": 903.2,
   "cov": 3.94,
   "dur": 3.94,
@@ -426,7 +426,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv082",
-  "src": "broll_fcsvarices/fv082.mp4",
+  "src": "broll/fcsvarices/fv082.mp4",
   "start": 914.5,
   "cov": 3.94,
   "dur": 3.94,
@@ -434,7 +434,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv085",
-  "src": "broll_fcsvarices/fv085.mp4",
+  "src": "broll/fcsvarices/fv085.mp4",
   "start": 942.52,
   "cov": 3.94,
   "dur": 3.94,
@@ -442,7 +442,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv086",
-  "src": "broll_fcsvarices/fv086.mp4",
+  "src": "broll/fcsvarices/fv086.mp4",
   "start": 956.08,
   "cov": 3.94,
   "dur": 3.94,
@@ -450,7 +450,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv087",
-  "src": "broll_fcsvarices/fv087.mp4",
+  "src": "broll/fcsvarices/fv087.mp4",
   "start": 966.78,
   "cov": 3.94,
   "dur": 3.94,
@@ -458,7 +458,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv089",
-  "src": "broll_fcsvarices/fv089.mp4",
+  "src": "broll/fcsvarices/fv089.mp4",
   "start": 987.88,
   "cov": 3.94,
   "dur": 3.94,
@@ -466,7 +466,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv090",
-  "src": "broll_fcsvarices/fv090.mp4",
+  "src": "broll/fcsvarices/fv090.mp4",
   "start": 998.8,
   "cov": 3.94,
   "dur": 3.94,
@@ -474,7 +474,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv094",
-  "src": "broll_fcsvarices/fv094.mp4",
+  "src": "broll/fcsvarices/fv094.mp4",
   "start": 1043.3,
   "cov": 3.94,
   "dur": 3.94,
@@ -482,7 +482,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv095",
-  "src": "broll_fcsvarices/fv095.mp4",
+  "src": "broll/fcsvarices/fv095.mp4",
   "start": 1054.5,
   "cov": 3.94,
   "dur": 3.94,
@@ -490,7 +490,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv098",
-  "src": "broll_fcsvarices/fv098.mp4",
+  "src": "broll/fcsvarices/fv098.mp4",
   "start": 1093.92,
   "cov": 3.94,
   "dur": 3.94,
@@ -498,7 +498,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv099",
-  "src": "broll_fcsvarices/fv099.mp4",
+  "src": "broll/fcsvarices/fv099.mp4",
   "start": 1104.32,
   "cov": 3.94,
   "dur": 3.94,
@@ -506,7 +506,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv103",
-  "src": "broll_fcsvarices/fv103.mp4",
+  "src": "broll/fcsvarices/fv103.mp4",
   "start": 1139.3,
   "cov": 3.94,
   "dur": 3.94,
@@ -514,7 +514,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv104",
-  "src": "broll_fcsvarices/fv104.mp4",
+  "src": "broll/fcsvarices/fv104.mp4",
   "start": 1146.64,
   "cov": 3.94,
   "dur": 3.94,
@@ -522,7 +522,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv105",
-  "src": "broll_fcsvarices/fv105.mp4",
+  "src": "broll/fcsvarices/fv105.mp4",
   "start": 1153.82,
   "cov": 3.94,
   "dur": 3.94,
@@ -530,7 +530,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv106",
-  "src": "broll_fcsvarices/fv106.mp4",
+  "src": "broll/fcsvarices/fv106.mp4",
   "start": 1163.63,
   "cov": 3.94,
   "dur": 3.94,
@@ -538,7 +538,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv108",
-  "src": "broll_fcsvarices/fv108.mp4",
+  "src": "broll/fcsvarices/fv108.mp4",
   "start": 1184.94,
   "cov": 3.94,
   "dur": 3.94,
@@ -546,7 +546,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv109",
-  "src": "broll_fcsvarices/fv109.mp4",
+  "src": "broll/fcsvarices/fv109.mp4",
   "start": 1197.84,
   "cov": 3.94,
   "dur": 3.94,
@@ -554,7 +554,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv110",
-  "src": "broll_fcsvarices/fv110.mp4",
+  "src": "broll/fcsvarices/fv110.mp4",
   "start": 1204.74,
   "cov": 3.94,
   "dur": 3.94,
@@ -562,7 +562,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv115",
-  "src": "broll_fcsvarices/fv115.mp4",
+  "src": "broll/fcsvarices/fv115.mp4",
   "start": 1253.83,
   "cov": 3.94,
   "dur": 3.94,
@@ -570,7 +570,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv120",
-  "src": "broll_fcsvarices/fv120.mp4",
+  "src": "broll/fcsvarices/fv120.mp4",
   "start": 1303.27,
   "cov": 3.94,
   "dur": 3.94,
@@ -578,7 +578,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv124",
-  "src": "broll_fcsvarices/fv124.mp4",
+  "src": "broll/fcsvarices/fv124.mp4",
   "start": 1340.27,
   "cov": 3.94,
   "dur": 3.94,
@@ -586,7 +586,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv125",
-  "src": "broll_fcsvarices/fv125.mp4",
+  "src": "broll/fcsvarices/fv125.mp4",
   "start": 1351.41,
   "cov": 3.94,
   "dur": 3.94,
@@ -594,7 +594,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv127",
-  "src": "broll_fcsvarices/fv127.mp4",
+  "src": "broll/fcsvarices/fv127.mp4",
   "start": 1371.91,
   "cov": 3.94,
   "dur": 3.94,
@@ -602,7 +602,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv129",
-  "src": "broll_fcsvarices/fv129.mp4",
+  "src": "broll/fcsvarices/fv129.mp4",
   "start": 1387.47,
   "cov": 3.94,
   "dur": 3.94,
@@ -610,7 +610,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv132",
-  "src": "broll_fcsvarices/fv132.mp4",
+  "src": "broll/fcsvarices/fv132.mp4",
   "start": 1418.35,
   "cov": 3.94,
   "dur": 3.94,
@@ -618,7 +618,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv134",
-  "src": "broll_fcsvarices/fv134.mp4",
+  "src": "broll/fcsvarices/fv134.mp4",
   "start": 1437.61,
   "cov": 3.94,
   "dur": 3.94,
@@ -626,7 +626,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv145",
-  "src": "broll_fcsvarices/fv145.mp4",
+  "src": "broll/fcsvarices/fv145.mp4",
   "start": 1537.87,
   "cov": 3.94,
   "dur": 3.94,
@@ -634,7 +634,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv146",
-  "src": "broll_fcsvarices/fv146.mp4",
+  "src": "broll/fcsvarices/fv146.mp4",
   "start": 1550.57,
   "cov": 3.94,
   "dur": 3.94,
@@ -642,7 +642,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv147",
-  "src": "broll_fcsvarices/fv147.mp4",
+  "src": "broll/fcsvarices/fv147.mp4",
   "start": 1561.47,
   "cov": 3.94,
   "dur": 3.94,
@@ -650,7 +650,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv148",
-  "src": "broll_fcsvarices/fv148.mp4",
+  "src": "broll/fcsvarices/fv148.mp4",
   "start": 1570.59,
   "cov": 3.94,
   "dur": 3.94,
@@ -658,7 +658,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv149",
-  "src": "broll_fcsvarices/fv149.mp4",
+  "src": "broll/fcsvarices/fv149.mp4",
   "start": 1580.13,
   "cov": 3.12,
   "dur": 3.12,
@@ -666,7 +666,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv150",
-  "src": "broll_fcsvarices/fv150.mp4",
+  "src": "broll/fcsvarices/fv150.mp4",
   "start": 1583.25,
   "cov": 3.94,
   "dur": 3.94,
@@ -674,7 +674,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv151",
-  "src": "broll_fcsvarices/fv151.mp4",
+  "src": "broll/fcsvarices/fv151.mp4",
   "start": 1594.21,
   "cov": 3.94,
   "dur": 3.94,
@@ -682,7 +682,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv152",
-  "src": "broll_fcsvarices/fv152.mp4",
+  "src": "broll/fcsvarices/fv152.mp4",
   "start": 1606.46,
   "cov": 3.94,
   "dur": 3.94,
@@ -690,7 +690,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv155",
-  "src": "broll_fcsvarices/fv155.mp4",
+  "src": "broll/fcsvarices/fv155.mp4",
   "start": 1637.87,
   "cov": 3.94,
   "dur": 3.94,
@@ -698,7 +698,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv156",
-  "src": "broll_fcsvarices/fv156.mp4",
+  "src": "broll/fcsvarices/fv156.mp4",
   "start": 1645.09,
   "cov": 3.94,
   "dur": 3.94,
@@ -706,7 +706,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv158",
-  "src": "broll_fcsvarices/fv158.mp4",
+  "src": "broll/fcsvarices/fv158.mp4",
   "start": 1663.89,
   "cov": 3.94,
   "dur": 3.94,
@@ -714,7 +714,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv160",
-  "src": "broll_fcsvarices/fv160.mp4",
+  "src": "broll/fcsvarices/fv160.mp4",
   "start": 1687.13,
   "cov": 3.94,
   "dur": 3.94,
@@ -722,7 +722,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv162",
-  "src": "broll_fcsvarices/fv162.mp4",
+  "src": "broll/fcsvarices/fv162.mp4",
   "start": 1710.21,
   "cov": 3.94,
   "dur": 3.94,
@@ -730,7 +730,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv163",
-  "src": "broll_fcsvarices/fv163.mp4",
+  "src": "broll/fcsvarices/fv163.mp4",
   "start": 1715.43,
   "cov": 3.94,
   "dur": 3.94,
@@ -738,7 +738,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv164",
-  "src": "broll_fcsvarices/fv164.mp4",
+  "src": "broll/fcsvarices/fv164.mp4",
   "start": 1726.59,
   "cov": 3.94,
   "dur": 3.94,
@@ -746,7 +746,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv165",
-  "src": "broll_fcsvarices/fv165.mp4",
+  "src": "broll/fcsvarices/fv165.mp4",
   "start": 1737.59,
   "cov": 3.94,
   "dur": 3.94,
@@ -754,7 +754,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv166",
-  "src": "broll_fcsvarices/fv166.mp4",
+  "src": "broll/fcsvarices/fv166.mp4",
   "start": 1750.49,
   "cov": 3.94,
   "dur": 3.94,
@@ -762,7 +762,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv167",
-  "src": "broll_fcsvarices/fv167.mp4",
+  "src": "broll/fcsvarices/fv167.mp4",
   "start": 1762.09,
   "cov": 3.94,
   "dur": 3.94,
@@ -770,7 +770,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv168",
-  "src": "broll_fcsvarices/fv168.mp4",
+  "src": "broll/fcsvarices/fv168.mp4",
   "start": 1771.71,
   "cov": 3.94,
   "dur": 3.94,
@@ -778,7 +778,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv169",
-  "src": "broll_fcsvarices/fv169.mp4",
+  "src": "broll/fcsvarices/fv169.mp4",
   "start": 1778.59,
   "cov": 3.94,
   "dur": 3.94,
@@ -786,7 +786,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv170",
-  "src": "broll_fcsvarices/fv170.mp4",
+  "src": "broll/fcsvarices/fv170.mp4",
   "start": 1785.39,
   "cov": 3.94,
   "dur": 3.94,
@@ -794,7 +794,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv171",
-  "src": "broll_fcsvarices/fv171.mp4",
+  "src": "broll/fcsvarices/fv171.mp4",
   "start": 1797.71,
   "cov": 3.94,
   "dur": 3.94,
@@ -802,7 +802,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv172",
-  "src": "broll_fcsvarices/fv172.mp4",
+  "src": "broll/fcsvarices/fv172.mp4",
   "start": 1805.14,
   "cov": 3.94,
   "dur": 3.94,
@@ -810,7 +810,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv173",
-  "src": "broll_fcsvarices/fv173.mp4",
+  "src": "broll/fcsvarices/fv173.mp4",
   "start": 1812.57,
   "cov": 3.94,
   "dur": 3.94,
@@ -818,7 +818,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv174",
-  "src": "broll_fcsvarices/fv174.mp4",
+  "src": "broll/fcsvarices/fv174.mp4",
   "start": 1823.39,
   "cov": 3.94,
   "dur": 3.94,
@@ -826,7 +826,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv175",
-  "src": "broll_fcsvarices/fv175.mp4",
+  "src": "broll/fcsvarices/fv175.mp4",
   "start": 1829.33,
   "cov": 3.94,
   "dur": 3.94,
@@ -834,7 +834,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv178",
-  "src": "broll_fcsvarices/fv178.mp4",
+  "src": "broll/fcsvarices/fv178.mp4",
   "start": 1863.31,
   "cov": 2.58,
   "dur": 2.58,
@@ -842,7 +842,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv179",
-  "src": "broll_fcsvarices/fv179.mp4",
+  "src": "broll/fcsvarices/fv179.mp4",
   "start": 1865.89,
   "cov": 3.94,
   "dur": 3.94,
@@ -850,7 +850,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv181",
-  "src": "broll_fcsvarices/fv181.mp4",
+  "src": "broll/fcsvarices/fv181.mp4",
   "start": 1887.85,
   "cov": 3.94,
   "dur": 3.94,
@@ -858,7 +858,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv182",
-  "src": "broll_fcsvarices/fv182.mp4",
+  "src": "broll/fcsvarices/fv182.mp4",
   "start": 1894.57,
   "cov": 3.94,
   "dur": 3.94,
@@ -866,7 +866,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv184",
-  "src": "broll_fcsvarices/fv184.mp4",
+  "src": "broll/fcsvarices/fv184.mp4",
   "start": 1909.57,
   "cov": 3.94,
   "dur": 3.94,
@@ -874,7 +874,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv189",
-  "src": "broll_fcsvarices/fv189.mp4",
+  "src": "broll/fcsvarices/fv189.mp4",
   "start": 1965.77,
   "cov": 3.94,
   "dur": 3.94,
@@ -882,7 +882,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv193",
-  "src": "broll_fcsvarices/fv193.mp4",
+  "src": "broll/fcsvarices/fv193.mp4",
   "start": 2007.19,
   "cov": 3.94,
   "dur": 3.94,
@@ -890,7 +890,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv194",
-  "src": "broll_fcsvarices/fv194.mp4",
+  "src": "broll/fcsvarices/fv194.mp4",
   "start": 2018.51,
   "cov": 3.94,
   "dur": 3.94,
@@ -898,7 +898,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv196",
-  "src": "broll_fcsvarices/fv196.mp4",
+  "src": "broll/fcsvarices/fv196.mp4",
   "start": 2041.19,
   "cov": 3.94,
   "dur": 3.94,
@@ -906,7 +906,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv200",
-  "src": "broll_fcsvarices/fv200.mp4",
+  "src": "broll/fcsvarices/fv200.mp4",
   "start": 2075.23,
   "cov": 3.94,
   "dur": 3.94,
@@ -914,7 +914,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv201",
-  "src": "broll_fcsvarices/fv201.mp4",
+  "src": "broll/fcsvarices/fv201.mp4",
   "start": 2086.45,
   "cov": 3.94,
   "dur": 3.94,
@@ -922,7 +922,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv205",
-  "src": "broll_fcsvarices/fv205.mp4",
+  "src": "broll/fcsvarices/fv205.mp4",
   "start": 2126.41,
   "cov": 3.94,
   "dur": 3.94,
@@ -930,7 +930,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv206",
-  "src": "broll_fcsvarices/fv206.mp4",
+  "src": "broll/fcsvarices/fv206.mp4",
   "start": 2135.05,
   "cov": 3.94,
   "dur": 3.94,
@@ -938,7 +938,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv207",
-  "src": "broll_fcsvarices/fv207.mp4",
+  "src": "broll/fcsvarices/fv207.mp4",
   "start": 2147.31,
   "cov": 3.94,
   "dur": 3.94,
@@ -946,7 +946,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv209",
-  "src": "broll_fcsvarices/fv209.mp4",
+  "src": "broll/fcsvarices/fv209.mp4",
   "start": 2167.81,
   "cov": 3.94,
   "dur": 3.94,
@@ -954,7 +954,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv211",
-  "src": "broll_fcsvarices/fv211.mp4",
+  "src": "broll/fcsvarices/fv211.mp4",
   "start": 2189.17,
   "cov": 3.94,
   "dur": 3.94,
@@ -962,7 +962,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv212",
-  "src": "broll_fcsvarices/fv212.mp4",
+  "src": "broll/fcsvarices/fv212.mp4",
   "start": 2200.39,
   "cov": 3.94,
   "dur": 3.94,
@@ -970,7 +970,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv213",
-  "src": "broll_fcsvarices/fv213.mp4",
+  "src": "broll/fcsvarices/fv213.mp4",
   "start": 2208.17,
   "cov": 3.94,
   "dur": 3.94,
@@ -978,7 +978,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv215",
-  "src": "broll_fcsvarices/fv215.mp4",
+  "src": "broll/fcsvarices/fv215.mp4",
   "start": 2231.83,
   "cov": 3.94,
   "dur": 3.94,
@@ -986,7 +986,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv217",
-  "src": "broll_fcsvarices/fv217.mp4",
+  "src": "broll/fcsvarices/fv217.mp4",
   "start": 2247.87,
   "cov": 3.94,
   "dur": 3.94,
@@ -994,7 +994,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv219",
-  "src": "broll_fcsvarices/fv219.mp4",
+  "src": "broll/fcsvarices/fv219.mp4",
   "start": 2268.85,
   "cov": 3.94,
   "dur": 3.94,
@@ -1002,7 +1002,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv220",
-  "src": "broll_fcsvarices/fv220.mp4",
+  "src": "broll/fcsvarices/fv220.mp4",
   "start": 2280.05,
   "cov": 3.94,
   "dur": 3.94,
@@ -1010,7 +1010,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv221",
-  "src": "broll_fcsvarices/fv221.mp4",
+  "src": "broll/fcsvarices/fv221.mp4",
   "start": 2286.25,
   "cov": 3.94,
   "dur": 3.94,
@@ -1018,7 +1018,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv223",
-  "src": "broll_fcsvarices/fv223.mp4",
+  "src": "broll/fcsvarices/fv223.mp4",
   "start": 2306.79,
   "cov": 3.94,
   "dur": 3.94,
@@ -1026,7 +1026,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv230",
-  "src": "broll_fcsvarices/fv230.mp4",
+  "src": "broll/fcsvarices/fv230.mp4",
   "start": 2378.27,
   "cov": 3.94,
   "dur": 3.94,
@@ -1034,7 +1034,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv231",
-  "src": "broll_fcsvarices/fv231.mp4",
+  "src": "broll/fcsvarices/fv231.mp4",
   "start": 2387.8,
   "cov": 3.94,
   "dur": 3.94,
@@ -1042,7 +1042,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv236",
-  "src": "broll_fcsvarices/fv236.mp4",
+  "src": "broll/fcsvarices/fv236.mp4",
   "start": 2432.47,
   "cov": 3.94,
   "dur": 3.94,
@@ -1050,7 +1050,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv239",
-  "src": "broll_fcsvarices/fv239.mp4",
+  "src": "broll/fcsvarices/fv239.mp4",
   "start": 2461.6,
   "cov": 3.94,
   "dur": 3.94,
@@ -1058,7 +1058,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv241",
-  "src": "broll_fcsvarices/fv241.mp4",
+  "src": "broll/fcsvarices/fv241.mp4",
   "start": 2482.37,
   "cov": 3.94,
   "dur": 3.94,
@@ -1066,7 +1066,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv242",
-  "src": "broll_fcsvarices/fv242.mp4",
+  "src": "broll/fcsvarices/fv242.mp4",
   "start": 2492.27,
   "cov": 3.94,
   "dur": 3.94,
@@ -1074,7 +1074,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv243",
-  "src": "broll_fcsvarices/fv243.mp4",
+  "src": "broll/fcsvarices/fv243.mp4",
   "start": 2502.21,
   "cov": 3.94,
   "dur": 3.94,
@@ -1082,7 +1082,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv245",
-  "src": "broll_fcsvarices/fv245.mp4",
+  "src": "broll/fcsvarices/fv245.mp4",
   "start": 2522.63,
   "cov": 3.94,
   "dur": 3.94,
@@ -1090,7 +1090,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv247",
-  "src": "broll_fcsvarices/fv247.mp4",
+  "src": "broll/fcsvarices/fv247.mp4",
   "start": 2540.23,
   "cov": 3.94,
   "dur": 3.94,
@@ -1098,7 +1098,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv249",
-  "src": "broll_fcsvarices/fv249.mp4",
+  "src": "broll/fcsvarices/fv249.mp4",
   "start": 2564.23,
   "cov": 3.94,
   "dur": 3.94,
@@ -1106,7 +1106,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv251",
-  "src": "broll_fcsvarices/fv251.mp4",
+  "src": "broll/fcsvarices/fv251.mp4",
   "start": 2587.29,
   "cov": 3.94,
   "dur": 3.94,
@@ -1114,7 +1114,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv252",
-  "src": "broll_fcsvarices/fv252.mp4",
+  "src": "broll/fcsvarices/fv252.mp4",
   "start": 2598.43,
   "cov": 3.94,
   "dur": 3.94,
@@ -1122,7 +1122,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv255",
-  "src": "broll_fcsvarices/fv255.mp4",
+  "src": "broll/fcsvarices/fv255.mp4",
   "start": 2632.09,
   "cov": 3.94,
   "dur": 3.94,
@@ -1130,7 +1130,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv258",
-  "src": "broll_fcsvarices/fv258.mp4",
+  "src": "broll/fcsvarices/fv258.mp4",
   "start": 2668.37,
   "cov": 3.94,
   "dur": 3.94,
@@ -1138,7 +1138,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv259",
-  "src": "broll_fcsvarices/fv259.mp4",
+  "src": "broll/fcsvarices/fv259.mp4",
   "start": 2677.77,
   "cov": 3.94,
   "dur": 3.94,
@@ -1146,7 +1146,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv261",
-  "src": "broll_fcsvarices/fv261.mp4",
+  "src": "broll/fcsvarices/fv261.mp4",
   "start": 2697.73,
   "cov": 3.94,
   "dur": 3.94,
@@ -1154,7 +1154,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv263",
-  "src": "broll_fcsvarices/fv263.mp4",
+  "src": "broll/fcsvarices/fv263.mp4",
   "start": 2719.57,
   "cov": 3.94,
   "dur": 3.94,
@@ -1162,7 +1162,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv264",
-  "src": "broll_fcsvarices/fv264.mp4",
+  "src": "broll/fcsvarices/fv264.mp4",
   "start": 2729.65,
   "cov": 3.94,
   "dur": 3.94,
@@ -1170,7 +1170,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv266",
-  "src": "broll_fcsvarices/fv266.mp4",
+  "src": "broll/fcsvarices/fv266.mp4",
   "start": 2748.07,
   "cov": 3.94,
   "dur": 3.94,
@@ -1178,7 +1178,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv267",
-  "src": "broll_fcsvarices/fv267.mp4",
+  "src": "broll/fcsvarices/fv267.mp4",
   "start": 2757.95,
   "cov": 3.94,
   "dur": 3.94,
@@ -1186,7 +1186,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv269",
-  "src": "broll_fcsvarices/fv269.mp4",
+  "src": "broll/fcsvarices/fv269.mp4",
   "start": 2778.33,
   "cov": 3.94,
   "dur": 3.94,
@@ -1194,7 +1194,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv272",
-  "src": "broll_fcsvarices/fv272.mp4",
+  "src": "broll/fcsvarices/fv272.mp4",
   "start": 2806.09,
   "cov": 3.94,
   "dur": 3.94,
@@ -1202,7 +1202,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv274",
-  "src": "broll_fcsvarices/fv274.mp4",
+  "src": "broll/fcsvarices/fv274.mp4",
   "start": 2828.83,
   "cov": 3.94,
   "dur": 3.94,
@@ -1210,7 +1210,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv277",
-  "src": "broll_fcsvarices/fv277.mp4",
+  "src": "broll/fcsvarices/fv277.mp4",
   "start": 2856.03,
   "cov": 3.94,
   "dur": 3.94,
@@ -1218,7 +1218,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv278",
-  "src": "broll_fcsvarices/fv278.mp4",
+  "src": "broll/fcsvarices/fv278.mp4",
   "start": 2866.13,
   "cov": 3.32,
   "dur": 3.32,
@@ -1226,7 +1226,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv281",
-  "src": "broll_fcsvarices/fv281.mp4",
+  "src": "broll/fcsvarices/fv281.mp4",
   "start": 2890.37,
   "cov": 3.94,
   "dur": 3.94,
@@ -1234,7 +1234,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv282",
-  "src": "broll_fcsvarices/fv282.mp4",
+  "src": "broll/fcsvarices/fv282.mp4",
   "start": 2900.51,
   "cov": 3.94,
   "dur": 3.94,
@@ -1242,7 +1242,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv283",
-  "src": "broll_fcsvarices/fv283.mp4",
+  "src": "broll/fcsvarices/fv283.mp4",
   "start": 2910.67,
   "cov": 3.94,
   "dur": 3.94,
@@ -1250,7 +1250,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv286",
-  "src": "broll_fcsvarices/fv286.mp4",
+  "src": "broll/fcsvarices/fv286.mp4",
   "start": 2935.19,
   "cov": 3.94,
   "dur": 3.94,
@@ -1258,7 +1258,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv288",
-  "src": "broll_fcsvarices/fv288.mp4",
+  "src": "broll/fcsvarices/fv288.mp4",
   "start": 2954.15,
   "cov": 3.94,
   "dur": 3.94,
@@ -1266,7 +1266,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv290",
-  "src": "broll_fcsvarices/fv290.mp4",
+  "src": "broll/fcsvarices/fv290.mp4",
   "start": 2970.79,
   "cov": 3.94,
   "dur": 3.94,
@@ -1274,7 +1274,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv291",
-  "src": "broll_fcsvarices/fv291.mp4",
+  "src": "broll/fcsvarices/fv291.mp4",
   "start": 2983.51,
   "cov": 3.94,
   "dur": 3.94,
@@ -1282,7 +1282,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv294",
-  "src": "broll_fcsvarices/fv294.mp4",
+  "src": "broll/fcsvarices/fv294.mp4",
   "start": 3013.45,
   "cov": 3.94,
   "dur": 3.94,
@@ -1290,7 +1290,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv295",
-  "src": "broll_fcsvarices/fv295.mp4",
+  "src": "broll/fcsvarices/fv295.mp4",
   "start": 3018.91,
   "cov": 3.94,
   "dur": 3.94,
@@ -1298,7 +1298,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv299",
-  "src": "broll_fcsvarices/fv299.mp4",
+  "src": "broll/fcsvarices/fv299.mp4",
   "start": 3060.73,
   "cov": 3.94,
   "dur": 3.94,
@@ -1306,7 +1306,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv300",
-  "src": "broll_fcsvarices/fv300.mp4",
+  "src": "broll/fcsvarices/fv300.mp4",
   "start": 3077.47,
   "cov": 3.94,
   "dur": 3.94,
@@ -1314,7 +1314,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv301",
-  "src": "broll_fcsvarices/fv301.mp4",
+  "src": "broll/fcsvarices/fv301.mp4",
   "start": 3088.79,
   "cov": 3.94,
   "dur": 3.94,
@@ -1322,7 +1322,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv302",
-  "src": "broll_fcsvarices/fv302.mp4",
+  "src": "broll/fcsvarices/fv302.mp4",
   "start": 3100.39,
   "cov": 3.94,
   "dur": 3.94,
@@ -1330,7 +1330,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv303",
-  "src": "broll_fcsvarices/fv303.mp4",
+  "src": "broll/fcsvarices/fv303.mp4",
   "start": 3110.29,
   "cov": 3.94,
   "dur": 3.94,
@@ -1338,7 +1338,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv307",
-  "src": "broll_fcsvarices/fv307.mp4",
+  "src": "broll/fcsvarices/fv307.mp4",
   "start": 3146.91,
   "cov": 3.94,
   "dur": 3.94,
@@ -1346,7 +1346,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv310",
-  "src": "broll_fcsvarices/fv310.mp4",
+  "src": "broll/fcsvarices/fv310.mp4",
   "start": 3176.09,
   "cov": 3.94,
   "dur": 3.94,
@@ -1354,7 +1354,7 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv311",
-  "src": "broll_fcsvarices/fv311.mp4",
+  "src": "broll/fcsvarices/fv311.mp4",
   "start": 3187.99,
   "cov": 3.94,
   "dur": 3.94,
@@ -1362,14 +1362,14 @@ export const FCSVARICES_BROLL = [
  },
  {
   "name": "fv312",
-  "src": "broll_fcsvarices/fv312.mp4",
+  "src": "broll/fcsvarices/fv312.mp4",
   "start": 3198.51,
   "cov": 3.94,
   "dur": 3.94,
   "i": 312
  }
-] as any;
-export const FCSVARICES_PHOTOS = [
+];
+export const FCSVARICES_PHOTOS: any[] = [
  {
   "name": "ph000",
   "src": "img/fv000.png",
@@ -3904,8 +3904,17 @@ export const FCSVARICES_PHOTOS = [
   "i": 312,
   "hero": false
  }
-] as any;
-export const FCSVARICES_BEATS = [
+];
+export const FCSVARICES_BEATS: any[] = [
+ {
+  "id": "c000",
+  "start": 8.71,
+  "dur": 8.71,
+  "kind": "lowerthird",
+  "kicker": "LAS 2 O LAS 3 DE LA MAÑANA",
+  "title": "No siempre es la próstata",
+  "tone": "alert"
+ },
  {
   "id": "c002",
   "start": 26.13,
@@ -3933,6 +3942,16 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c005",
+  "start": 52.14,
+  "dur": 6.88,
+  "kind": "lowerthird",
+  "kicker": "ATENCIÓN",
+  "title": "Hay un error que puede ser una emergencia",
+  "desc": "Te doy las señales exactas al final",
+  "tone": "bad"
+ },
+ {
   "id": "c007",
   "start": 66.52,
   "dur": 7.58,
@@ -3949,6 +3968,51 @@ export const FCSVARICES_BEATS = [
   "myth": "El aceite hace desaparecer la várice",
   "truth": "El aceite te devuelve la pierna, no borra la vena",
   "flipAt": 0.55
+ },
+ {
+  "id": "c013",
+  "start": 127.16,
+  "dur": 10.68,
+  "kind": "frasecinetica",
+  "words": [
+   "EL",
+   "QUE",
+   "ENTIENDE",
+   "SE",
+   "CUIDA",
+   "SOLO"
+  ],
+  "perWord": 0.4,
+  "tone": "good"
+ },
+ {
+  "id": "c015",
+  "start": 150.53,
+  "dur": 12.69,
+  "kind": "lowerthird",
+  "kicker": "DOÑA TRINI · 68 AÑOS",
+  "title": "41 años vendiendo fruta, de pie",
+  "desc": "De seis de la mañana a cuatro de la tarde",
+  "tone": "good"
+ },
+ {
+  "id": "c019",
+  "start": 198.22,
+  "dur": 11.36,
+  "kind": "lowerthird",
+  "kicker": "LO QUE ELLA DESCRIBÍA",
+  "title": "Se me despiertan las piernas",
+  "desc": "Hormigueo, ganas de moverlas, calambre",
+  "tone": "alert"
+ },
+ {
+  "id": "c020",
+  "start": 209.58,
+  "dur": 11.36,
+  "kind": "lowerthird",
+  "kicker": "Y OTRA VEZ A LAS CINCO",
+  "title": "Al baño a las dos y media",
+  "tone": "alert"
  },
  {
   "id": "c022",
@@ -3978,6 +4042,16 @@ export const FCSVARICES_BEATS = [
   "tone": "alert"
  },
  {
+  "id": "c026",
+  "start": 274.91,
+  "dur": 10.93,
+  "kind": "lowerthird",
+  "kicker": "LA VENA QUE SE VE",
+  "title": "Casi no duele",
+  "desc": "Lo que duele es la presión y el líquido de alrededor",
+  "tone": "good"
+ },
+ {
   "id": "c028",
   "start": 295.48,
   "dur": 13.26,
@@ -4003,6 +4077,42 @@ export const FCSVARICES_BEATS = [
    "El calambre de las tres de la mañana",
    "El hormigueo y la pierna inquieta"
   ]
+ },
+ {
+  "id": "c031",
+  "start": 332.6,
+  "dur": 10.02,
+  "kind": "lowerthird",
+  "kicker": "A LAS SEIS DE LA TARDE",
+  "title": "Piernas llenas de arena mojada",
+  "tone": "alert"
+ },
+ {
+  "id": "c032",
+  "start": 342.62,
+  "dur": 12.46,
+  "kind": "lowerthird",
+  "kicker": "LA PRUEBA MÁS FÁCIL",
+  "title": "La marca del calcetín que tarda dos horas",
+  "tone": "alert"
+ },
+ {
+  "id": "c033",
+  "start": 355.08,
+  "dur": 13.08,
+  "kind": "frasecinetica",
+  "words": [
+   "EL",
+   "CALAMBRE",
+   "DE",
+   "LAS",
+   "TRES",
+   "DE",
+   "LA",
+   "MAÑANA"
+  ],
+  "perWord": 0.36,
+  "tone": "alert"
  },
  {
   "id": "c034",
@@ -4054,6 +4164,26 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c040",
+  "start": 431.64,
+  "dur": 12.48,
+  "kind": "lowerthird",
+  "kicker": "IMAGÍNATE UN EDIFICIO",
+  "title": "El sótano es tu pie",
+  "desc": "La azotea es tu corazón",
+  "tone": "good"
+ },
+ {
+  "id": "c042",
+  "start": 459.34,
+  "dur": 10.72,
+  "kind": "lowerthird",
+  "kicker": "LA PARTE DIFÍCIL",
+  "title": "La sangre tiene que SUBIR",
+  "desc": "Desde el pie hasta el corazón, contra la gravedad",
+  "tone": "alert"
+ },
+ {
   "id": "c043",
   "start": 470.06,
   "dur": 14.42,
@@ -4080,6 +4210,15 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c045",
+  "start": 493.58,
+  "dur": 11.42,
+  "kind": "lowerthird",
+  "kicker": "LAS VÁLVULAS",
+  "title": "Puertas de cantina que abren para un solo lado",
+  "tone": "good"
+ },
+ {
   "id": "c047",
   "start": 519.52,
   "dur": 14.76,
@@ -4091,6 +4230,33 @@ export const FCSVARICES_BEATS = [
     "eyebrow": "ESCALÓN POR ESCALÓN HASTA LA INGLE"
    }
   ]
+ },
+ {
+  "id": "c048",
+  "start": 534.28,
+  "dur": 13.02,
+  "kind": "frasecinetica",
+  "words": [
+   "SE",
+   "AFLOJA",
+   "Y",
+   "LE",
+   "QUEDA",
+   "UNA",
+   "RENDIJITA"
+  ],
+  "perWord": 0.4,
+  "tone": "alert"
+ },
+ {
+  "id": "c049",
+  "start": 547.3,
+  "dur": 11.22,
+  "kind": "lowerthird",
+  "kicker": "REFLUJO",
+  "title": "La sangre se regresa un chorrito",
+  "desc": "Y le cae encima al escalón de abajo",
+  "tone": "bad"
  },
  {
   "id": "c050",
@@ -4117,6 +4283,16 @@ export const FCSVARICES_BEATS = [
     "eyebrow": "LA VENA SE ESTIRA COMO UNA LIGA VIEJA"
    }
   ]
+ },
+ {
+  "id": "c052",
+  "start": 578.76,
+  "dur": 10.8,
+  "kind": "lowerthird",
+  "kicker": "ESO ES UNA VÁRICE",
+  "title": "Una vena estirada como una liga vieja",
+  "desc": "Que ya no vuelve a su tamaño",
+  "tone": "bad"
  },
  {
   "id": "c054",
@@ -4151,6 +4327,15 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c055",
+  "start": 605.82,
+  "dur": 12.24,
+  "kind": "lowerthird",
+  "kicker": "PARADO, QUIETO",
+  "title": "La fila del banco es lo peor",
+  "tone": "bad"
+ },
+ {
   "id": "c056",
   "start": 618.06,
   "dur": 5.64,
@@ -4172,6 +4357,25 @@ export const FCSVARICES_BEATS = [
     "eyebrow": "UNA COLUMNA DE SANGRE DE UN METRO Y PICO"
    }
   ]
+ },
+ {
+  "id": "c059",
+  "start": 648.44,
+  "dur": 12.98,
+  "kind": "lowerthird",
+  "kicker": "EN UNOS CUANTOS PASOS",
+  "title": "La presión se desploma a la cuarta parte",
+  "tone": "good"
+ },
+ {
+  "id": "c060",
+  "start": 661.42,
+  "dur": 12.2,
+  "kind": "lowerthird",
+  "kicker": "ACOSTADO",
+  "title": "De cien a quince",
+  "desc": "La misma vena, las mismas válvulas",
+  "tone": "good"
  },
  {
   "id": "c061",
@@ -4221,6 +4425,25 @@ export const FCSVARICES_BEATS = [
   "tone": "good"
  },
  {
+  "id": "c063",
+  "start": 700.08,
+  "dur": 12.13,
+  "kind": "lowerthird",
+  "kicker": "NADIE SE LO EXPLICA",
+  "title": "Las que trabajan de pie",
+  "desc": "Tianguis, enfermeras, guardias, cocineros",
+  "tone": "alert"
+ },
+ {
+  "id": "c066",
+  "start": 735.96,
+  "dur": 10.97,
+  "kind": "lowerthird",
+  "kicker": "LA PANTORRILLA",
+  "title": "El segundo corazón",
+  "tone": "good"
+ },
+ {
   "id": "c068",
   "start": 757.9,
   "dur": 11.5,
@@ -4228,6 +4451,15 @@ export const FCSVARICES_BEATS = [
   "kicker": "EN MEDICINA LE DECIMOS",
   "title": "El segundo corazón",
   "desc": "No es una figura poética: es una descripción técnica",
+  "tone": "good"
+ },
+ {
+  "id": "c069",
+  "start": 769.4,
+  "dur": 11.66,
+  "kind": "lowerthird",
+  "kicker": "CÓMO FUNCIONA",
+  "title": "Como apretar una bolsa de agua",
   "tone": "good"
  },
  {
@@ -4276,6 +4508,36 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c074",
+  "start": 821.2,
+  "dur": 13.34,
+  "kind": "lowerthird",
+  "kicker": "LA CONDICIÓN",
+  "title": "Contraer y soltar",
+  "desc": "Si el músculo se queda quieto, la bomba está apagada",
+  "tone": "alert"
+ },
+ {
+  "id": "c075",
+  "start": 834.54,
+  "dur": 14,
+  "kind": "frasecinetica",
+  "words": [
+   "LO",
+   "MALO",
+   "NO",
+   "ES",
+   "ESTAR",
+   "DE",
+   "PIE",
+   "ES",
+   "ESTAR",
+   "QUIETO"
+  ],
+  "perWord": 0.34,
+  "tone": "alert"
+ },
+ {
   "id": "c077",
   "start": 861.24,
   "dur": 10.4,
@@ -4296,6 +4558,26 @@ export const FCSVARICES_BEATS = [
     "tone": "bad"
    }
   ]
+ },
+ {
+  "id": "c080",
+  "start": 892.9,
+  "dur": 10.3,
+  "kind": "lowerthird",
+  "kicker": "LA SILLA",
+  "title": "Como pisar una manguera",
+  "desc": "La bomba apagada y el paso pellizcado",
+  "tone": "bad"
+ },
+ {
+  "id": "c081",
+  "start": 903.2,
+  "dur": 11.3,
+  "kind": "lowerthird",
+  "kicker": "POR ESO",
+  "title": "Te bajas del camión y no te entra el zapato",
+  "desc": "No es la altura: es la silla",
+  "tone": "alert"
  },
  {
   "id": "c083",
@@ -4345,6 +4627,24 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c085",
+  "start": 942.52,
+  "dur": 13.56,
+  "kind": "lowerthird",
+  "kicker": "QUÉ ES LA HINCHAZÓN",
+  "title": "La pierna se empapa como una esponja",
+  "tone": "alert"
+ },
+ {
+  "id": "c086",
+  "start": 956.08,
+  "dur": 10.7,
+  "kind": "lowerthird",
+  "kicker": "LA PRUEBA DEL DEDO",
+  "title": "Si queda el hoyito, eso es agua",
+  "tone": "good"
+ },
+ {
   "id": "c088",
   "start": 975.7,
   "dur": 12.18,
@@ -4356,6 +4656,15 @@ export const FCSVARICES_BEATS = [
     "eyebrow": "EL AGUA VUELVE A LA SANGRE Y VA AL RIÑÓN"
    }
   ]
+ },
+ {
+  "id": "c090",
+  "start": 998.8,
+  "dur": 11.54,
+  "kind": "lowerthird",
+  "kicker": "A LAS TRES DE LA MAÑANA",
+  "title": "Esa agua es la de tus piernas",
+  "tone": "alert"
  },
  {
   "id": "c091",
@@ -4392,6 +4701,24 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c094",
+  "start": 1043.3,
+  "dur": 11.2,
+  "kind": "lowerthird",
+  "kicker": "MÍRATELO EN LA MAÑANA",
+  "title": "Antes de ponerte los zapatos",
+  "tone": "good"
+ },
+ {
+  "id": "c095",
+  "start": 1054.5,
+  "dur": 13.76,
+  "kind": "lowerthird",
+  "kicker": "Y OTRA VEZ EN LA NOCHE",
+  "title": "Ahí está la diferencia",
+  "tone": "good"
+ },
+ {
   "id": "c096",
   "start": 1068.26,
   "dur": 13.48,
@@ -4418,6 +4745,22 @@ export const FCSVARICES_BEATS = [
   "kicker": "POR ESO ES NOCTURNO",
   "title": "La ventana se abre cuando te acuestas",
   "desc": "Es el único momento del día en que las venas no pelean con la gravedad",
+  "tone": "good"
+ },
+ {
+  "id": "c099",
+  "start": 1104.32,
+  "dur": 6.92,
+  "kind": "frasecinetica",
+  "words": [
+   "AMANECER",
+   "CON",
+   "LA",
+   "PIERNA",
+   "EN",
+   "CERO"
+  ],
+  "perWord": 0.42,
   "tone": "good"
  },
  {
@@ -4485,6 +4828,15 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c106",
+  "start": 1163.63,
+  "dur": 9.81,
+  "kind": "lowerthird",
+  "kicker": "LA HOJA DE ROMERO",
+  "title": "Tres cosas trabajando en tres frentes",
+  "tone": "good"
+ },
+ {
   "id": "c107",
   "start": 1173.44,
   "dur": 11.5,
@@ -4497,6 +4849,16 @@ export const FCSVARICES_BEATS = [
    "Ácido rosmarínico: baja el fuego lento",
    "Cineol y alcanfor: calman la comezón"
   ]
+ },
+ {
+  "id": "c110",
+  "start": 1204.74,
+  "dur": 11.54,
+  "kind": "lowerthird",
+  "kicker": "LO VAS A SENTIR",
+  "title": "Un calorcito, un cosquilleo tibio",
+  "desc": "No arde: la piel se despierta",
+  "tone": "good"
  },
  {
   "id": "c111",
@@ -4593,6 +4955,16 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c120",
+  "start": 1303.27,
+  "dur": 9.28,
+  "kind": "lowerthird",
+  "kicker": "ESA PIEL CAFÉ DEL TOBILLO",
+  "title": "No es una mancha de la edad",
+  "desc": "Es hierro: sangre vieja que se filtró",
+  "tone": "alert"
+ },
+ {
   "id": "c121",
   "start": 1312.55,
   "dur": 12.88,
@@ -4644,6 +5016,15 @@ export const FCSVARICES_BEATS = [
   "title": "También cortan la comezón",
   "desc": "Esa que te rascas dormido y amaneces con las uñas marcadas",
   "tone": "good"
+ },
+ {
+  "id": "c129",
+  "start": 1387.47,
+  "dur": 9.54,
+  "kind": "lowerthird",
+  "kicker": "LA COMEZÓN",
+  "title": "Esa que te rascas dormido",
+  "tone": "alert"
  },
  {
   "id": "c130",
@@ -4818,6 +5199,26 @@ export const FCSVARICES_BEATS = [
   "tone": "good"
  },
  {
+  "id": "c149",
+  "start": 1580.13,
+  "dur": 3.2,
+  "kind": "lowerthird",
+  "kicker": "ALCOHOL DE ROMERO",
+  "title": "Para las piernas cansadas",
+  "desc": "Está en el botiquín desde que eras niño",
+  "tone": "good"
+ },
+ {
+  "id": "c152",
+  "start": 1606.46,
+  "dur": 12.25,
+  "kind": "lowerthird",
+  "kicker": "A PURO TANTEO",
+  "title": "De mamá a hija, durante generaciones",
+  "desc": "Y hoy la química les da la razón",
+  "tone": "good"
+ },
+ {
   "id": "c154",
   "start": 1627.91,
   "dur": 9.96,
@@ -4878,6 +5279,45 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c162",
+  "start": 1710.21,
+  "dur": 5.22,
+  "kind": "lowerthird",
+  "kicker": "EL DETALLE QUE TODOS SE SALTAN",
+  "title": "El romero va SECO",
+  "desc": "La hoja fresca trae agua y enmohece el frasco",
+  "tone": "bad"
+ },
+ {
+  "id": "c165",
+  "start": 1737.59,
+  "dur": 12.9,
+  "kind": "lowerthird",
+  "kicker": "CÓMO SABER QUE ESTÁ LISTO",
+  "title": "Cuando truena entre los dedos",
+  "tone": "good"
+ },
+ {
+  "id": "c169",
+  "start": 1778.59,
+  "dur": 6.8,
+  "kind": "lowerthird",
+  "kicker": "OJO",
+  "title": "Ni una hojita fuera del aceite",
+  "desc": "La que se asoma es la que se enmohece",
+  "tone": "bad"
+ },
+ {
+  "id": "c172",
+  "start": 1805.14,
+  "dur": 7.43,
+  "kind": "lowerthird",
+  "kicker": "AL COLAR",
+  "title": "Aprieta bien las hojas",
+  "desc": "Ahí está lo concentrado",
+  "tone": "good"
+ },
+ {
   "id": "c176",
   "start": 1839.29,
   "dur": 11.52,
@@ -4915,6 +5355,15 @@ export const FCSVARICES_BEATS = [
   "kind": "errorstinger",
   "number": "1",
   "title": "NUNCA PURO SOBRE LA PIEL",
+  "tone": "bad"
+ },
+ {
+  "id": "c181",
+  "start": 1887.85,
+  "dur": 6.72,
+  "kind": "lowerthird",
+  "kicker": "POR QUÉ NUNCA PURO",
+  "title": "Kilos de planta en un frasquito",
   "tone": "bad"
  },
  {
@@ -5036,6 +5485,16 @@ export const FCSVARICES_BEATS = [
   "label": "por pierna, antes de tocar el aceite"
  },
  {
+  "id": "c193",
+  "start": 2007.19,
+  "dur": 11.32,
+  "kind": "lowerthird",
+  "kicker": "BOMBEO DE TOBILLO",
+  "title": "Punta adelante, punta hacia ti",
+  "desc": "Despacio y hasta el tope, 30 veces",
+  "tone": "good"
+ },
+ {
   "id": "c195",
   "start": 2028.59,
   "dur": 12.6,
@@ -5081,6 +5540,16 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c200",
+  "start": 2075.23,
+  "dur": 11.22,
+  "kind": "lowerthird",
+  "kicker": "PASO 3",
+  "title": "Entibia el aceite entre las palmas",
+  "desc": "Cinco segundos. Nada de microondas.",
+  "tone": "good"
+ },
+ {
   "id": "c202",
   "start": 2094.45,
   "dur": 11,
@@ -5122,6 +5591,25 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c206",
+  "start": 2135.05,
+  "dur": 12.26,
+  "kind": "lowerthird",
+  "kicker": "DEL TOBILLO A LA RODILLA",
+  "title": "Diez a quince pases",
+  "desc": "Y de la rodilla al muslo, otros diez",
+  "tone": "good"
+ },
+ {
+  "id": "c207",
+  "start": 2147.31,
+  "dur": 8.82,
+  "kind": "lowerthird",
+  "kicker": "AL VOLVER",
+  "title": "Despega las manos, no arrastres hacia abajo",
+  "tone": "alert"
+ },
+ {
   "id": "c208",
   "start": 2156.13,
   "dur": 11.68,
@@ -5132,6 +5620,21 @@ export const FCSVARICES_BEATS = [
   "tone": "alert"
  },
  {
+  "id": "c209",
+  "start": 2167.81,
+  "dur": 11.74,
+  "kind": "frasecinetica",
+  "words": [
+   "COMO",
+   "ACARICIAR",
+   "A",
+   "UN",
+   "GATO"
+  ],
+  "perWord": 0.46,
+  "tone": "good"
+ },
+ {
   "id": "c210",
   "start": 2179.55,
   "dur": 9.62,
@@ -5140,6 +5643,15 @@ export const FCSVARICES_BEATS = [
   "figure": "MILÍMETROS",
   "caption": "Las venas del problema están a milímetros de la piel y tienen la pared adelgazada. Fuerza aquí es daño.",
   "image": "img/fv211.png"
+ },
+ {
+  "id": "c212",
+  "start": 2200.39,
+  "dur": 7.78,
+  "kind": "lowerthird",
+  "kicker": "SOBRE LA VÁRICE",
+  "title": "Solo desliza el aceite, sin presionar",
+  "tone": "bad"
  },
  {
   "id": "c214",
@@ -5155,6 +5667,15 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c215",
+  "start": 2231.83,
+  "dur": 8.02,
+  "kind": "lowerthird",
+  "kicker": "PASO 6",
+  "title": "Las piernas para arriba",
+  "tone": "good"
+ },
+ {
   "id": "c216",
   "start": 2239.85,
   "dur": 8.02,
@@ -5165,6 +5686,15 @@ export const FCSVARICES_BEATS = [
   "label": "de 15 a 20 por encima del nivel del pecho"
  },
  {
+  "id": "c217",
+  "start": 2247.87,
+  "dur": 10.3,
+  "kind": "lowerthird",
+  "kicker": "ASÍ NO",
+  "title": "La almohada bajo la rodilla pellizca el paso",
+  "tone": "bad"
+ },
+ {
   "id": "c218",
   "start": 2258.17,
   "dur": 10.68,
@@ -5172,6 +5702,16 @@ export const FCSVARICES_BEATS = [
   "myth": "La almohada va debajo de la rodilla",
   "truth": "Va debajo de la PANTORRILLA y el TOBILLO",
   "flipAt": 0.5
+ },
+ {
+  "id": "c220",
+  "start": 2280.05,
+  "dur": 6.2,
+  "kind": "lowerthird",
+  "kicker": "EL TRUCO QUE MEJOR FUNCIONA",
+  "title": "Libros debajo del colchón",
+  "desc": "Se sostiene toda la noche aunque te muevas",
+  "tone": "good"
  },
  {
   "id": "c222",
@@ -5267,6 +5807,24 @@ export const FCSVARICES_BEATS = [
   "tone": "bad"
  },
  {
+  "id": "c230",
+  "start": 2378.27,
+  "dur": 9.53,
+  "kind": "lowerthird",
+  "kicker": "POR ESO PREGUNTAN",
+  "title": "Ningún terapeuta serio toca una pierna sin preguntar",
+  "tone": "alert"
+ },
+ {
+  "id": "c231",
+  "start": 2387.8,
+  "dur": 9.53,
+  "kind": "lowerthird",
+  "kicker": "SEÑAL 1",
+  "title": "UNA sola pierna, hinchada de golpe",
+  "tone": "bad"
+ },
+ {
   "id": "c232",
   "start": 2397.33,
   "dur": 6.84,
@@ -5321,12 +5879,31 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c239",
+  "start": 2461.6,
+  "dur": 12.37,
+  "kind": "lowerthird",
+  "kicker": "OJO DESPUÉS DE",
+  "title": "Cirugía, viaje largo o días en cama",
+  "tone": "bad"
+ },
+ {
   "id": "c240",
   "start": 2473.97,
   "dur": 8.4,
   "kind": "errorstinger",
   "number": "2",
   "title": "EL ACEITE ESENCIAL PURO",
+  "tone": "bad"
+ },
+ {
+  "id": "c243",
+  "start": 2502.21,
+  "dur": 12.22,
+  "kind": "lowerthird",
+  "kicker": "ERROR 3",
+  "title": "El agua bien caliente antes",
+  "desc": "El calor dilata la vena que ya está dilatada",
   "tone": "bad"
  },
  {
@@ -5343,6 +5920,15 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c245",
+  "start": 2522.63,
+  "dur": 6.8,
+  "kind": "lowerthird",
+  "kicker": "POR ESO",
+  "title": "En verano las piernas sufren más",
+  "tone": "alert"
+ },
+ {
   "id": "c246",
   "start": 2529.43,
   "dur": 10.8,
@@ -5357,6 +5943,16 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c247",
+  "start": 2540.23,
+  "dur": 11.82,
+  "kind": "lowerthird",
+  "kicker": "LO QUE SÍ AYUDA",
+  "title": "Agua fresca al final de la regadera",
+  "desc": "Del tobillo hacia arriba, 20 o 30 segundos",
+  "tone": "good"
+ },
+ {
   "id": "c248",
   "start": 2552.05,
   "dur": 12.18,
@@ -5366,6 +5962,15 @@ export const FCSVARICES_BEATS = [
   "tone": "bad"
  },
  {
+  "id": "c249",
+  "start": 2564.23,
+  "dur": 10.92,
+  "kind": "lowerthird",
+  "kicker": "LO MÁS HUMANO DEL MUNDO",
+  "title": "El jueves llegas tarde y el viernes se acabó",
+  "tone": "alert"
+ },
+ {
   "id": "c250",
   "start": 2575.15,
   "dur": 12.14,
@@ -5373,6 +5978,16 @@ export const FCSVARICES_BEATS = [
   "kicker": "NO ES UN MEDICAMENTO",
   "title": "Es un hábito",
   "desc": "Lo que vale no es la intensidad: es la repetición",
+  "tone": "good"
+ },
+ {
+  "id": "c251",
+  "start": 2587.29,
+  "dur": 11.14,
+  "kind": "lowerthird",
+  "kicker": "EL CONSEJO PRÁCTICO",
+  "title": "Deja el frasco arriba del buró",
+  "desc": "Lo que se ve se hace; lo guardado se olvida",
   "tone": "good"
  },
  {
@@ -5432,6 +6047,15 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c259",
+  "start": 2677.77,
+  "dur": 8.6,
+  "kind": "lowerthird",
+  "kicker": "SEMANA 1",
+  "title": "Se nota en cómo amaneces",
+  "tone": "good"
+ },
+ {
   "id": "c260",
   "start": 2686.37,
   "dur": 11.36,
@@ -5440,6 +6064,15 @@ export const FCSVARICES_BEATS = [
   "value": 1,
   "suffix": "ª semana",
   "label": "la comezón se va casi por completo"
+ },
+ {
+  "id": "c261",
+  "start": 2697.73,
+  "dur": 9.72,
+  "kind": "lowerthird",
+  "kicker": "SEMANAS 2 A 4",
+  "title": "Te entra mejor el zapato",
+  "tone": "good"
  },
  {
   "id": "c262",
@@ -5469,6 +6102,15 @@ export const FCSVARICES_BEATS = [
   "tone": "good"
  },
  {
+  "id": "c266",
+  "start": 2748.07,
+  "dur": 9.88,
+  "kind": "lowerthird",
+  "kicker": "MULTIPLICADOR 1",
+  "title": "La sal retiene agua",
+  "tone": "alert"
+ },
+ {
   "id": "c268",
   "start": 2769.37,
   "dur": 8.96,
@@ -5476,6 +6118,16 @@ export const FCSVARICES_BEATS = [
   "kicker": "MULTIPLICADOR 1",
   "title": "La cena, la comida menos salada del día",
   "desc": "No te pido que dejes la sal de por vida. Solo la cena.",
+  "tone": "good"
+ },
+ {
+  "id": "c269",
+  "start": 2778.33,
+  "dur": 13.6,
+  "kind": "lowerthird",
+  "kicker": "MULTIPLICADOR 2",
+  "title": "Toma tu agua, normal",
+  "desc": "Ajusta la última hora, no el día entero",
   "tone": "good"
  },
  {
@@ -5502,6 +6154,15 @@ export const FCSVARICES_BEATS = [
     "hl": true
    }
   ]
+ },
+ {
+  "id": "c272",
+  "start": 2806.09,
+  "dur": 11.68,
+  "kind": "lowerthird",
+  "kicker": "CINCO MINUTOS",
+  "title": "Piernas rectas contra la pared",
+  "tone": "good"
  },
  {
   "id": "c273",
@@ -5535,6 +6196,15 @@ export const FCSVARICES_BEATS = [
    "Se ponen en la MAÑANA, con la pierna delgada",
    "La compresión se elige con un profesional"
   ]
+ },
+ {
+  "id": "c277",
+  "start": 2856.03,
+  "dur": 10.1,
+  "kind": "lowerthird",
+  "kicker": "LAS MEDIAS",
+  "title": "En la MAÑANA, con la pierna delgada",
+  "tone": "good"
  },
  {
   "id": "c279",
@@ -5586,6 +6256,24 @@ export const FCSVARICES_BEATS = [
   ]
  },
  {
+  "id": "c282",
+  "start": 2900.51,
+  "dur": 10.16,
+  "kind": "lowerthird",
+  "kicker": "AL MÉDICO",
+  "title": "Piel café oscura, dura y brillosa",
+  "tone": "bad"
+ },
+ {
+  "id": "c283",
+  "start": 2910.67,
+  "dur": 5.6,
+  "kind": "lowerthird",
+  "kicker": "AL MÉDICO",
+  "title": "Una llaga que no cierra en dos semanas",
+  "tone": "bad"
+ },
+ {
   "id": "c284",
   "start": 2916.27,
   "dur": 9.7,
@@ -5596,6 +6284,15 @@ export const FCSVARICES_BEATS = [
   "tone": "bad"
  },
  {
+  "id": "c288",
+  "start": 2954.15,
+  "dur": 10.06,
+  "kind": "lowerthird",
+  "kicker": "LAS ARAÑITAS",
+  "title": "No son el problema: son el aviso",
+  "tone": "alert"
+ },
+ {
   "id": "c289",
   "start": 2964.21,
   "dur": 6.58,
@@ -5604,6 +6301,22 @@ export const FCSVARICES_BEATS = [
   "figure": "EL AVISO",
   "caption": "Las arañitas no son el problema: son la primera gota de agua en el techo. Todavía puedes arreglar el techo antes de que se caiga.",
   "image": "img/fv288.png"
+ },
+ {
+  "id": "c291",
+  "start": 2983.51,
+  "dur": 8.7,
+  "kind": "frasecinetica",
+  "words": [
+   "LA",
+   "PRIMERA",
+   "GOTA",
+   "EN",
+   "EL",
+   "TECHO"
+  ],
+  "perWord": 0.44,
+  "tone": "alert"
  },
  {
   "id": "c293",
@@ -5650,6 +6363,34 @@ export const FCSVARICES_BEATS = [
   "name": "Dr. Federer",
   "role": "Federer Consejos Salud",
   "image": "img/fvhero308.png"
+ },
+ {
+  "id": "c299",
+  "start": 3060.73,
+  "dur": 16.74,
+  "kind": "lowerthird",
+  "kicker": "SI LO VES EN LA TELE",
+  "title": "Apunta el celular al cuadrito",
+  "desc": "Se abre solo, sin escribir nada",
+  "tone": "good"
+ },
+ {
+  "id": "c301",
+  "start": 3088.79,
+  "dur": 11.6,
+  "kind": "lowerthird",
+  "kicker": "DOÑA TRINI HIZO DOS COSAS",
+  "title": "Bombeo de tobillo y piernas arriba",
+  "tone": "good"
+ },
+ {
+  "id": "c303",
+  "start": 3110.29,
+  "dur": 6.8,
+  "kind": "lowerthird",
+  "kicker": "A LAS TRES SEMANAS",
+  "title": "Ya nada más me levanto una vez",
+  "tone": "good"
  },
  {
   "id": "c304",
@@ -5712,9 +6453,18 @@ export const FCSVARICES_BEATS = [
    "30 bombeos de tobillo",
    "Mañana fíjate cómo sientes el primer paso"
   ]
+ },
+ {
+  "id": "c311",
+  "start": 3187.99,
+  "dur": 10.52,
+  "kind": "lowerthird",
+  "kicker": "MAÑANA",
+  "title": "Fíjate cómo sientes el primer paso",
+  "tone": "good"
  }
-] as any;
-export const AVATAR_WINDOWS = [
+];
+export const AVATAR_WINDOWS: any[] = [
  {
   "start": 0,
   "mode": "full"
@@ -6275,7 +7025,7 @@ export const AVATAR_WINDOWS = [
   "start": 1216.28,
   "mode": "hidden"
  }
-] as any;
+];
 export const VIDEO_END = 3203.7;
 export const AVATAR_END = 1221.18;
 export const TOTAL_FRAMES_FCSVARICES = 96111;

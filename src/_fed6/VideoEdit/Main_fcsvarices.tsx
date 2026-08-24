@@ -72,7 +72,7 @@ export const MainFcsvarices: React.FC = () => {
 
       {/* AUDIO DEL TRAMO 2 — la cola de la locución, desde la costura */}
       <Sequence from={sec(SEAM)} durationInFrames={Math.max(1, sec(VIDEO_END - SEAM))}>
-        <Audio src={staticFile("fcsvarices_tail.wav")} />
+        <Audio src={staticFile("fcsvarices_tail.mp3")} />
       </Sequence>
 
       {/* CAPA 4 — COMPONENTES */}
