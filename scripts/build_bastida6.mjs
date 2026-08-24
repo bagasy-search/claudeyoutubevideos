@@ -86,6 +86,10 @@ for (const s of spans) {
 const usadas = new Set(kept.map((x) => x.img).filter(Boolean).map((n) => n.replace(/\.(jpg|png)$/, '')));
 const pool = fs.readdirSync("public/img")
   .filter((f) => /^bas6_(p|broll|lino|chia|cilantro|girasol|sesamo|zapallo|ramon|elena|lamina)/.test(f) && /\.(jpg|png)$/.test(f))
+  // ⛔ los hermanos *_blur son la copia DESENFOCADA que usa un componente de fondo:
+  //    a pantalla completa se ven como un plano fuera de foco. Nunca al pool de relleno.
+  .filter((f) => !/_blur/.test(f))
+  .filter((f) => !/_raw/.test(f))
   .map((f) => f.replace(/\.(jpg|png)$/, ""))
   .filter((n) => !usadas.has(n));
 let pi = 0;
