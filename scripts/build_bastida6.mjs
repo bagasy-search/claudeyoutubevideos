@@ -19,7 +19,7 @@ const FPS = 30;
 const TOTAL = 41115;
 const SEAM = 16697;
 const CAP_CLIP = 330;   // 11 s
-const CAP_PHOTO = 165;  // 5,5 s — una foto no aguanta mas
+const CAP_PHOTO = 240;  // 8 s con Ken Burns; el ritmo lo da la VARIEDAD, no el techo bajo
 const R = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 
 const beats = R("_v3/bastidarenal6_beats.json");
@@ -37,6 +37,8 @@ function probe(f) {
   } catch { return (probeCache[f] = 0); }
 }
 const hasImg = (n) => fs.existsSync(`public/img/${n}.jpg`) || fs.existsSync(`public/img/${n}.png`);
+// BRoll respeta la extension si el nombre la trae: preferimos .jpg (el tar pesa 10x menos)
+const imgRef = (n) => (fs.existsSync(`public/img/${n}.jpg`) ? `${n}.jpg` : `${n}.png`);
 
 const out = [];
 let missClip = 0, missBoth = 0;
@@ -58,7 +60,11 @@ for (const c of clips) {
     ? Math.min(slot, Math.max(0, Math.round(probe(mp4) * FPS) - 3), CAP_CLIP)
     : Math.min(slot, CAP_PHOTO);
   if (dur < 45) continue;
-  out.push(hasClip ? {from, dur, clip: name} : {from, dur, img: photo});
+  out.push(hasClip ? {from, dur, clip: name} : {from, dur, img: imgRef(photo)});
+  // cola: el clip dura 4 s; si el hueco da para mas, lo termina su foto (mismo prompt, mismo tema)
+  if (hasClip && hasImg(photo) && slot - dur >= 105) {
+    out.push({from: from + dur, dur: Math.min(slot - dur, 240), img: imgRef(photo)});
+  }
 }
 
 out.sort((a, b) => a.from - b.from);
@@ -77,7 +83,7 @@ for (const s of spans) {
   else merged.push([...s]);
 }
 // pool de relleno: heroes + fotos de respaldo que no quedaron usadas
-const usadas = new Set(kept.map((x) => x.img).filter(Boolean));
+const usadas = new Set(kept.map((x) => x.img).filter(Boolean).map((n) => n.replace(/\.(jpg|png)$/, '')));
 const pool = fs.readdirSync("public/img")
   .filter((f) => /^bas6_(p|broll|lino|chia|cilantro|girasol|sesamo|zapallo|ramon|elena|lamina)/.test(f) && /\.(jpg|png)$/.test(f))
   .map((f) => f.replace(/\.(jpg|png)$/, ""))
@@ -91,8 +97,9 @@ for (const [a, b] of merged) {
   if (a - gapStart >= 90 && pool.length) {
     let t = gapStart;
     while (a - t >= 90) {
-      const d = Math.min(a - t, 120 + (pi % 3) * 30); // 4,0 / 5,0 / 6,0 s alternados = ritmo variado
-      fills.push({from: t, dur: d, img: pool[pi++ % pool.length]});
+      const LARGOS = [150, 240, 180, 300, 165, 210]; // 5 / 8 / 6 / 10 / 5,5 / 7 s
+      const d = Math.min(a - t, LARGOS[pi % LARGOS.length]);
+      fills.push({from: t, dur: d, img: imgRef(pool[pi++ % pool.length])});
       t += d;
     }
   }
@@ -101,8 +108,8 @@ for (const [a, b] of merged) {
 if (TOTAL - cursor >= 90 && pool.length) {
   let t = cursor;
   while (TOTAL - t >= 90) {
-    const d = Math.min(TOTAL - t, 120 + (pi % 3) * 30);
-    fills.push({from: t, dur: d, img: pool[pi++ % pool.length]});
+    const d = Math.min(TOTAL - t, [150, 240, 180, 300, 165, 210][pi % 6]);
+    fills.push({from: t, dur: d, img: imgRef(pool[pi++ % pool.length])});
     t += d;
   }
 }

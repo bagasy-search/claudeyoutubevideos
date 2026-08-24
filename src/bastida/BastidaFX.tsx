@@ -513,7 +513,7 @@ export const BRoll: React.FC<BRollProps> = ({img = 'bas_broll_labreport', captio
   return (
     <AbsoluteFill style={{opacity: op, background: '#05161f'}}>
       <AbsoluteFill style={{overflow: 'hidden'}}>
-        <Img src={staticFile(`img/${img}.png`)} style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${scale}) translateX(${px}px)`}} />
+        <Img src={staticFile(img.includes('.') ? `img/${img}` : `img/${img}.png`)} style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${scale}) translateX(${px}px)`}} />
       </AbsoluteFill>
       {/* grade navy + viñeta + grano (documental) */}
       <AbsoluteFill style={{background: `linear-gradient(150deg, ${rgba(BAS.bgPanel, 0.4)}, ${rgba(BAS.bgDeep, 0.55)})`, mixBlendMode: 'soft-light'}} />

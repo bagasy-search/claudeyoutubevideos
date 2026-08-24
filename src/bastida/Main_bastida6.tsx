@@ -258,7 +258,7 @@ export const MainBastida6: React.FC = () => {
       ))}
 
       {/* AUDIO MASTER (avatar real + cola clonada en Fish, −14 LUFS) */}
-      <Audio src={staticFile('bastidarenal6.wav')} />
+      <Audio src={staticFile('bastidarenal6.mp3')} />
 
       {/* MÚSICA bed */}
       <Audio src={staticFile('renal/music/bas_music_quiet_pulse_bed_a.mp3')} volume={0.1} loop />
