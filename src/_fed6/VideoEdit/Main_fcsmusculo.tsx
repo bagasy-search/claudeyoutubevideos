@@ -156,8 +156,10 @@ export const MainFcsmusculo: React.FC = () => {
 
       {/* CAPA 2 — FOTOS (Modal + respaldos + hero gpt-image) */}
       {rawTop.map((b: any) => {
+        // ⛔ la duración la manda el `cov` que calculó el generador. Si acá se dibuja MENOS que lo
+        // que COVER promete, el avatar está oculto y no hay nada debajo -> NEGRO en pantalla.
         const cap = b.start >= AVATAR_END ? 9 : HERO_CAP;
-        const d = Math.max(1, sec(Math.min(b.dur, cap) + 0.6));
+        const d = Math.max(1, sec((b.cov ?? Math.min(b.dur, cap)) + 0.6));
         const half = inHalfR(b.start);
         const shot = <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />;
         return (
