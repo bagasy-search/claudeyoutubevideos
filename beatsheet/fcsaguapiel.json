@@ -601,6 +601,7 @@
    "dur": 6,
    "key": "s",
    "kind": "mitoverdad",
+   "image": "img/fcsaguapiel_m055_bk.jpg",
    "myth": "«La gelatina no alimenta» · París, 1841",
    "truth": "Cierto: sola no reemplaza a la carne. Pero nadie preguntó si servía como SEÑAL.",
    "flipAt": 76
@@ -679,6 +680,7 @@
    "dur": 5,
    "key": "s",
    "kind": "stat",
+   "image": "img/fcsaguapiel_m063.jpg",
    "value": 150,
    "unit": "años",
    "label": "que nadie hizo la otra pregunta",
@@ -908,6 +910,7 @@
    "dur": 6,
    "key": "s",
    "kind": "mitoverdad",
+   "image": "img/fcsaguapiel_m089.jpg",
    "myth": "«Borra las arrugas»",
    "truth": "No las borra. Reduce el VOLUMEN de la arruga alrededor de un 20% en 8 semanas.",
    "flipAt": 76
@@ -988,6 +991,7 @@
    "dur": 6.5,
    "key": "s",
    "kind": "bars",
+   "image": "img/fcsaguapiel_m253.jpg",
    "title": "Volumen de la arruga del ojo · 8 semanas",
    "unit": "%",
    "bars": [
@@ -1440,6 +1444,7 @@
    "dur": 9,
    "key": "s",
    "kind": "pliegue",
+   "image": "img/fcsaguapiel_m123.jpg",
    "leftImage": "img/fcsaguapiel_m127.jpg",
    "rightImage": "img/fcsaguapiel_m129.jpg",
    "leftLabel": "A LOS 30",
@@ -2113,6 +2118,7 @@
    "dur": 10,
    "key": "s",
    "kind": "colador",
+   "image": "img/fcsaguapiel_m184.jpg",
    "smallLabel": "LO CHICO PASA",
    "bigLabel": "EL COLÁGENO NO",
    "note": "No es que sea difícil: es que no cabe"
@@ -2439,6 +2445,7 @@
    "dur": 6,
    "key": "s",
    "kind": "mitoverdad",
+   "image": "img/fcsaguapiel_m213.jpg",
    "myth": "«Comer colágeno para tener colágeno es como comerse un pelo para tener pelo»",
    "truth": "No llega como ladrillo. Llega como AVISO de que algo se rompió.",
    "flipAt": 76
@@ -2973,6 +2980,7 @@
    "dur": 5,
    "key": "s",
    "kind": "stat",
+   "image": "img/fcsaguapiel_m255.jpg",
    "value": 4,
    "unit": "semanas",
    "label": "después de dejarlo, el efecto seguía",
@@ -3036,6 +3044,7 @@
    "dur": 6.5,
    "key": "s",
    "kind": "bars",
+   "image": "img/fcsaguapiel_m260.jpg",
    "title": "Mejora de elasticidad · 8 semanas",
    "unit": "",
    "bars": [
@@ -3279,6 +3288,7 @@
    "dur": 8,
    "key": "s",
    "kind": "guardaesto",
+   "image": "img/fcsaguapiel_m276_bk.jpg",
    "title": "Haz esto HOY, antes de empezar",
    "items": [
     "Pellízcate el dorso de la mano",
@@ -4157,6 +4167,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "image": "img/fcsaguapiel_m341_bk.jpg",
    "title": "Lo que esto NO hace",
    "items": [
     {
@@ -4344,6 +4355,7 @@
    "dur": 6.5,
    "key": "s",
    "kind": "bars",
+   "image": "img/fcsaguapiel_m351.jpg",
    "title": "Uñas · 24 semanas con 2,5 g al día",
    "unit": "%",
    "bars": [
@@ -4641,6 +4653,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "image": "img/fcsaguapiel_m374.jpg",
    "title": "Que la etiqueta diga…",
    "items": [
     {
@@ -5041,6 +5054,7 @@
    "dur": 5,
    "key": "s",
    "kind": "stat",
+   "image": "img/fcsaguapiel_m404.jpg",
    "value": 5,
    "unit": "min",
    "label": "sin tocarla · que florezca",
@@ -5122,6 +5136,7 @@
    "dur": 6,
    "key": "s",
    "kind": "mitoverdad",
+   "image": "img/fcsaguapiel_m412_bk.jpg",
    "myth": "«Hay que hervirla para que se disuelva»",
    "truth": "Caliente, no hirviendo. Hervida se amarga y sabe a caldo viejo — y la que sabe feo no te la tomas mañana.",
    "flipAt": 76
@@ -5487,6 +5502,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "image": "img/fcsaguapiel_m437_bk.jpg",
    "title": "El orden importa",
    "items": [
     {
@@ -5671,6 +5687,7 @@
    "dur": 6.5,
    "key": "s",
    "kind": "bars",
+   "image": "img/fcsaguapiel_m450.jpg",
    "title": "Lo que de verdad decide el resultado",
    "unit": "días",
    "bars": [
@@ -5974,6 +5991,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "image": "img/fcsaguapiel_m473.jpg",
    "title": "Habla con tu médico ANTES si:",
    "items": [
     {
@@ -6149,6 +6167,7 @@
    "dur": 6,
    "key": "s",
    "kind": "mitoverdad",
+   "image": "img/fcsaguapiel_m490_bk.jpg",
    "myth": "«Colágeno vegetal»",
    "truth": "Las plantas no fabrican colágeno. Lo que venden con ese nombre son otras cosas. La grenetina viene de animal, siempre.",
    "flipAt": 71
@@ -6265,6 +6284,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "image": "img/fcsaguapiel_m500.jpg",
    "title": "Y esto no es negociable",
    "items": [
     {
@@ -6530,6 +6550,7 @@
    "dur": 9,
    "key": "s",
    "kind": "checklist",
+   "image": "img/fcsaguapiel_m516.jpg",
    "title": "Gratis, y vale más que cualquier polvo",
    "items": [
     {
@@ -6737,6 +6758,7 @@
    "dur": 6.5,
    "key": "s",
    "kind": "bars",
+   "image": "img/fcsaguapiel_m533.jpg",
    "title": "Grenetina de verdad por porción",
    "unit": "g",
    "bars": [
@@ -7206,6 +7228,7 @@
    "dur": 5,
    "key": "s",
    "kind": "stat",
+   "image": "img/fcsaguapiel_m570.jpg",
    "value": 12,
    "unit": "años",
    "label": "puede seguir ahí, tiesa",
@@ -7380,6 +7403,7 @@
    "dur": 8,
    "key": "s",
    "kind": "guardaesto",
+   "image": "img/fcsaguapiel_m583_bk.jpg",
    "title": "Si vas a hacer UNA sola cosa",
    "items": [
     "Quítale el azúcar a lo que TOMAS",
@@ -7665,6 +7689,7 @@
    "dur": 8,
    "key": "s",
    "kind": "guardaesto",
+   "image": "img/fcsaguapiel_m606_bk.jpg",
    "title": "Y mide, no confíes en tu memoria",
    "items": [
     "Mídete las uñas, no la cara",

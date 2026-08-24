@@ -24,18 +24,18 @@ export const CMP = (G) => [
   "La gelatina de patitas, cuajada sola",
 ] },
 { phrase: "cambiamos todo eso por una pechuga sin hueso", kind: "ingredientduo", leftImg: G("m029"), rightImg: G("m036") },
-{ phrase: "y esa comision trabajo anos y en 1841", kind: "mitoverdad",
+{ phrase: "y esa comision trabajo anos y en 1841", kind: "mitoverdad", image: G("m055"),
   myth: "«La gelatina no alimenta» · París, 1841", truth: "Cierto: sola no reemplaza a la carne. Pero nadie preguntó si servía como SEÑAL.",
   flipPhrase: "pero fijate en la pregunta que hicieron" },
-{ phrase: "esa pregunta tardo 150 anos en hacerse", kind: "stat", value: 150, unit: "años", label: "que nadie hizo la otra pregunta", tone: "warn" },
+{ phrase: "esa pregunta tardo 150 anos en hacerse", kind: "stat", image: G("m063"), value: 150, unit: "años", label: "que nadie hizo la otra pregunta", tone: "warn" },
 // ══ S05 · loops ═══════════════════════════════════════════════════════════
 { phrase: "la primera quedate hasta el final", kind: "lowerthird", title: "El error que lo deshace todo", kicker: "AL FINAL DEL VIDEO",
   desc: "Se comete con toda la buena intención. Y hay altísima probabilidad de que lo hayas hecho esta semana.", tone: "warn" },
 // ══ S06 · escudo de honestidad ════════════════════════════════════════════
-{ phrase: "el titulo dice reafirmar la piel y borrar", kind: "mitoverdad",
+{ phrase: "el titulo dice reafirmar la piel y borrar", kind: "mitoverdad", image: G("m089"),
   myth: "«Borra las arrugas»", truth: "No las borra. Reduce el VOLUMEN de la arruga alrededor de un 20% en 8 semanas.",
   flipPhrase: "borrar las arrugas ahi me tengo que parar" },
-{ phrase: "la reduccion promedio fue de alrededor del 20", kind: "bars", title: "Volumen de la arruga del ojo · 8 semanas", unit: "%", bars: [
+{ phrase: "la reduccion promedio fue de alrededor del 20", kind: "bars", image: G("m253"), title: "Volumen de la arruga del ojo · 8 semanas", unit: "%", bars: [
   { label: "Grupo placebo", value: 0, tone: "danger", note: "sin cambio" },
   { label: "Con colágeno, 2,5 g al día", value: 20, winner: true, note: "menos profunda" },
 ] },
@@ -53,7 +53,7 @@ export const CMP = (G) => [
   { title: "2 · Jálala un poquito y suéltala", desc: "sin lastimarte" },
   { title: "3 · Cuenta los segundos", desc: "anótalo hoy con la fecha, en un papel" },
 ] },
-{ phrase: "a los 60 y tantos en muchisima gente tarda 1", kind: "pliegue",
+{ phrase: "a los 60 y tantos en muchisima gente tarda 1", kind: "pliegue", image: G("m123"),
   leftImage: G("m127"), rightImage: G("m129"), leftLabel: "A LOS 30", rightLabel: "A LOS 60 Y TANTOS",
   leftSeconds: 0, rightSeconds: 3, verdict: "La malla de abajo perdió el resorte" },
 { phrase: "yo ya ni me pongo crema en las manos", kind: "frasecinetica",
@@ -82,7 +82,7 @@ export const CMP = (G) => [
   { t: "El colágeno pesa unos 300.000 daltones" },
   { t: "No es difícil: es que no cabe" },
 ] },
-{ phrase: "cuanto pesa una molecula de colageno", kind: "colador",
+{ phrase: "cuanto pesa una molecula de colageno", kind: "colador", image: G("m184"),
   smallLabel: "LO CHICO PASA", bigLabel: "EL COLÁGENO NO", note: "No es que sea difícil: es que no cabe" },
 { phrase: "es como querer meter un colchon por la ventanita", kind: "freezezoom", image: G("m186"),
   label: "No es que sea difícil: es que no cabe", zoom: 1.22, tone: "warn" },
@@ -90,7 +90,7 @@ export const CMP = (G) => [
   leftPrice: "8", rightPrice: "900", leftLabel: "Grenetina de la tienda", rightLabel: "Pomo de 60 ml \"con colágeno\"",
   strike: "", subtitle: "pesos", verdict: "Una entra. La otra se queda arriba." },
 // ══ S12-S14 · el mito y el maestro de obras ═══════════════════════════════
-{ phrase: "comer colageno para tener colageno", kind: "mitoverdad",
+{ phrase: "comer colageno para tener colageno", kind: "mitoverdad", image: G("m213"),
   myth: "«Comer colágeno para tener colágeno es como comerse un pelo para tener pelo»",
   truth: "No llega como ladrillo. Llega como AVISO de que algo se rompió.",
   flipPhrase: "pero es que estabamos preguntando mal" },
@@ -109,8 +109,8 @@ export const CMP = (G) => [
 // ══ S15 · los numeros ═════════════════════════════════════════════════════
 { phrase: "el estudio que mas se cita se publico en 2014", kind: "callout", figure: "114", eyebrow: "2014 · doble ciego con placebo",
   caption: "mujeres de 45 a 65 años · 2,5 g al día · 8 semanas", image: G("m250") },
-{ phrase: "cuatro semanas despues de que dejaron de tomarlo", kind: "stat", value: 4, unit: "semanas", label: "después de dejarlo, el efecto seguía", tone: "teal" },
-{ phrase: "la mejora fue mas grande en las mujeres mayores de 50", kind: "bars", title: "Mejora de elasticidad · 8 semanas", unit: "", bars: [
+{ phrase: "cuatro semanas despues de que dejaron de tomarlo", kind: "stat", image: G("m255"), value: 4, unit: "semanas", label: "después de dejarlo, el efecto seguía", tone: "teal" },
+{ phrase: "la mejora fue mas grande en las mujeres mayores de 50", kind: "bars", image: G("m260"), title: "Mejora de elasticidad · 8 semanas", unit: "", bars: [
   { label: "Mujeres menores de 50", value: 4 },
   { label: "Mujeres mayores de 50", value: 7, winner: true, note: "funciona mejor mientras más lo necesitas" },
 ] },
@@ -125,7 +125,7 @@ export const CMP = (G) => [
 { phrase: "la numero 1 es la que ya te adelante", kind: "errorstinger", number: "1", title: "LA FIRMEZA", eyebrow: "Beneficio", tone: "teal" },
 { phrase: "en vez de sentir que estas tocando papel de china", kind: "frasecinetica",
   words: [{ t: "PIEL" }, { t: "CON CUERPO" }, { t: "NO PAPEL" }, { t: "DE CHINA", hl: true }], perWord: 13, tone: "teal" },
-{ phrase: "hazte la prueba del pliegue en el dorso de la mano y cuenta", kind: "guardaesto", title: "Haz esto HOY, antes de empezar",
+{ phrase: "hazte la prueba del pliegue en el dorso de la mano y cuenta", kind: "guardaesto", image: G("m276"), title: "Haz esto HOY, antes de empezar",
   items: ["Pellízcate el dorso de la mano", "Cuenta los segundos que tarda en regresar", "Anótalo en un papel CON LA FECHA"],
   tag: "LÍNEA DE BASE", prompt: "Anota esto" },
 { phrase: "beneficio numero 2 la hidratacion desde adentro", kind: "errorstinger", number: "2", title: "HIDRATACIÓN DESDE ADENTRO", eyebrow: "Beneficio", tone: "teal" },
@@ -158,7 +158,7 @@ export const CMP = (G) => [
   { t: "La piel se repara mejor… por haber dormido" },
 ] },
 { phrase: "la cuatro son las articulaciones", kind: "errorstinger", number: "4", title: "LAS RODILLAS", eyebrow: "Beneficio", tone: "teal" },
-{ phrase: "y te aviso para que no te hagas ilusiones", kind: "checklist", title: "Lo que esto NO hace", items: [
+{ phrase: "y te aviso para que no te hagas ilusiones", kind: "checklist", image: G("m341"), title: "Lo que esto NO hace", items: [
   { text: "NO regenera un cartílago que ya está hueso contra hueso", state: "danger" },
   { text: "NO devuelve el espacio que la radiografía ya no muestra", state: "danger" },
   { text: "SÍ hay estudios donde el dolor al moverse bajó contra placebo", state: "ok" },
@@ -166,7 +166,7 @@ export const CMP = (G) => [
 { phrase: "es que se levanta del sillon sin hacer ruido", kind: "frasecinetica",
   words: [{ t: "LA PRIMERA" }, { t: "SEÑAL" }, { t: "NO ESTÁ" }, { t: "EN EL ESPEJO", hl: true }], perWord: 13, tone: "teal" },
 { phrase: "y la numero cinco la mas chiquita", kind: "errorstinger", number: "5", title: "LAS UÑAS", eyebrow: "El testigo que no se soborna", tone: "teal" },
-{ phrase: "y encontraron que crecian alrededor de un 12", kind: "bars", title: "Uñas · 24 semanas con 2,5 g al día", unit: "%", bars: [
+{ phrase: "y encontraron que crecian alrededor de un 12", kind: "bars", image: G("m351"), title: "Uñas · 24 semanas con 2,5 g al día", unit: "%", bars: [
   { label: "Crecen más rápido", value: 12, winner: true },
   { label: "Menos uñas rotas o astilladas", value: 40, winner: true },
 ] },
@@ -180,7 +180,7 @@ export const CMP = (G) => [
   desc: "Las cantidades exactas y las combinaciones, ordenadas por síntoma." },
 // ══ S23 · que comprar ═════════════════════════════════════════════════════
 { phrase: "el camino 1 es la grenetina sin sabor", kind: "ingredientduo", leftImg: G("m370"), rightImg: G("m376") },
-{ phrase: "si dice azucar si dice sabor a fresa", kind: "checklist", title: "Que la etiqueta diga…", items: [
+{ phrase: "si dice azucar si dice sabor a fresa", kind: "checklist", image: G("m374"), title: "Que la etiqueta diga…", items: [
   { text: "Grenetina. Y punto. Nada más", state: "ok" },
   { text: "Sin sabor y sin color", state: "ok" },
   { text: "Si dice azúcar o sabor a fresa, ese es POSTRE", state: "danger" },
@@ -209,8 +209,8 @@ export const CMP = (G) => [
   { title: "4 · Espera a que se entibie", desc: "y recién ahí exprime medio limón" },
   { title: "5 · Tómatelo", desc: "de noche, una hora antes de dormir" },
 ] },
-{ phrase: "dejala ahi 5 minutos sin tocarla", kind: "stat", value: 5, unit: "min", label: "sin tocarla · que florezca", tone: "teal" },
-{ phrase: "y aqui te lo digo derecho caliente no hirviendo", kind: "mitoverdad",
+{ phrase: "dejala ahi 5 minutos sin tocarla", kind: "stat", image: G("m404"), value: 5, unit: "min", label: "sin tocarla · que florezca", tone: "teal" },
+{ phrase: "y aqui te lo digo derecho caliente no hirviendo", kind: "mitoverdad", image: G("m412"),
   myth: "«Hay que hervirla para que se disuelva»", truth: "Caliente, no hirviendo. Hervida se amarga y sabe a caldo viejo — y la que sabe feo no te la tomas mañana.",
   flipPhrase: "hervirla no te va a envenenar" },
 { phrase: "y ahora hasta ahora le exprimes medio limon", kind: "ingredientduo", leftImg: G("m417"), rightImg: G("m419") },
@@ -224,7 +224,7 @@ export const CMP = (G) => [
   desc: "A los marineros se les reabrían cicatrices de años. No era infección: era colágeno que dejó de fabricarse.", tone: "warn" },
 { phrase: "ladrillos y mezcla grenetina y vitamina c", kind: "frasecinetica",
   words: [{ t: "LADRILLOS" }, { t: "Y" }, { t: "MEZCLA", hl: true }], perWord: 16, tone: "teal" },
-{ phrase: "la vitamina c se destruye con el calor", kind: "checklist", title: "El orden importa", items: [
+{ phrase: "la vitamina c se destruye con el calor", kind: "checklist", image: G("m437"), title: "El orden importa", items: [
   { text: "Primero disolver con agua caliente", state: "ok" },
   { text: "Esperar a poder meter el dedo sin quemarte", state: "ok" },
   { text: "RECIÉN AHÍ el limón — la vitamina C se destruye con calor", state: "danger" },
@@ -232,7 +232,7 @@ export const CMP = (G) => [
 { phrase: "una cucharada sopera ras al dia", kind: "callout", figure: "10 g", eyebrow: "La dosis",
   caption: "una cucharada sopera rasa ≈ un sobre y medio de los chiquitos", image: G("m441") },
 { phrase: "yo te digo de noche una hora antes de acostarte", kind: "hourdial", hour: 10, big: "1", unit: "hora", label: "antes de dormir", tone: "teal" },
-{ phrase: "una cucharada tomada 300 dias", kind: "bars", title: "Lo que de verdad decide el resultado", unit: "días", bars: [
+{ phrase: "una cucharada tomada 300 dias", kind: "bars", image: G("m450"), title: "Lo que de verdad decide el resultado", unit: "días", bars: [
   { label: "La cucharada imperfecta, 300 días", value: 300, winner: true, note: "esta gana" },
   { label: "La cucharada perfecta, 9 días", value: 9, tone: "danger", note: "no sirve de nada" },
 ] },
@@ -245,16 +245,16 @@ export const CMP = (G) => [
 { phrase: "que esta temblando como una gelatina", kind: "freezezoom", image: G("m465"),
   label: "Si al otro día tiembla solo, eso es colágeno", zoom: 1.2, tone: "teal" },
 // ══ S28 · limites ═════════════════════════════════════════════════════════
-{ phrase: "uno si tu tienes enfermedad del rinon", kind: "checklist", title: "Habla con tu médico ANTES si:", items: [
+{ phrase: "uno si tu tienes enfermedad del rinon", kind: "checklist", image: G("m473"), title: "Habla con tu médico ANTES si:", items: [
   { text: "Tienes enfermedad del riñón o te dijeron que le bajes a la proteína", state: "danger" },
   { text: "Tienes gota o el ácido úrico alto", state: "warn" },
   { text: "Eres alérgico al pescado — el colágeno marino sale de pescado", state: "danger" },
   { text: "Tienes historia de piedras en el riñón — ojo con las pastillas de vitamina C", state: "warn" },
 ] },
-{ phrase: "el colageno vegetal no existe", kind: "mitoverdad",
+{ phrase: "el colageno vegetal no existe", kind: "mitoverdad", image: G("m490"),
   myth: "«Colágeno vegetal»", truth: "Las plantas no fabrican colágeno. Lo que venden con ese nombre son otras cosas. La grenetina viene de animal, siempre.",
   flipPhrase: "las plantas no fabrican colageno" },
-{ phrase: "esto no reemplaza ningun medicamento", kind: "checklist", title: "Y esto no es negociable", items: [
+{ phrase: "esto no reemplaza ningun medicamento", kind: "checklist", image: G("m500"), title: "Y esto no es negociable", items: [
   { text: "No reemplaza ningún medicamento que ya tomes", state: "danger" },
   { text: "No reemplaza a tu médico. Se suma", state: "danger" },
   { text: "Si sientes pesadez los primeros días, bájale a la mitad una semana", state: "warn" },
@@ -268,7 +268,7 @@ export const CMP = (G) => [
 ] },
 { phrase: "estas llenando una cubeta agujerada", kind: "frasecinetica",
   words: [{ t: "UNA CUBETA" }, { t: "AGUJEREADA", hl: true }], perWord: 18, tone: "warn" },
-{ phrase: "y sombra entre las 11 y las 4", kind: "checklist", title: "Gratis, y vale más que cualquier polvo", items: [
+{ phrase: "y sombra entre las 11 y las 4", kind: "checklist", image: G("m516"), title: "Gratis, y vale más que cualquier polvo", items: [
   { text: "Sombrero", state: "ok" },
   { text: "Manga larga", state: "ok" },
   { text: "Sombra entre las once y las cuatro", state: "ok" },
@@ -281,7 +281,7 @@ export const CMP = (G) => [
 ] },
 // ══ S30-S31 · EL ERROR y la glicacion ═════════════════════════════════════
 { phrase: "el error es la gelatina de sabor", kind: "errorstinger", number: "✕", title: "LA GELATINA DE SABOR", eyebrow: "EL ERROR", tone: "danger" },
-{ phrase: "trae mas o menos entre 1 y 2 gramos de grenetina", kind: "bars", title: "Grenetina de verdad por porción", unit: "g", bars: [
+{ phrase: "trae mas o menos entre 1 y 2 gramos de grenetina", kind: "bars", image: G("m533"), title: "Grenetina de verdad por porción", unit: "g", bars: [
   { label: "Un vasito de gelatina de sabor", value: 1.5, tone: "danger", note: "el resto es azúcar y color" },
   { label: "Lo que estamos hablando", value: 10, winner: true, note: "una cucharada rasa" },
 ] },
@@ -305,10 +305,10 @@ export const CMP = (G) => [
   { t: "Se resbalan. No la pueden cortar" },
   { t: "Esa fibra tiesa se queda AÑOS, no semanas" },
 ] },
-{ phrase: "una fibra que se te soldo a los 58", kind: "stat", value: 12, unit: "años", label: "puede seguir ahí, tiesa", tone: "warn" },
+{ phrase: "una fibra que se te soldo a los 58", kind: "stat", image: G("m570"), value: 12, unit: "años", label: "puede seguir ahí, tiesa", tone: "warn" },
 { phrase: "y sabes que fibra se glica primero", kind: "frasecinetica",
   words: [{ t: "CONSTRUYES" }, { t: "CON UNA MANO" }, { t: "Y SUELDAS" }, { t: "CON LA OTRA", hl: true }], perWord: 12, tone: "warn" },
-{ phrase: "quitale el azucar a lo que tomas", kind: "guardaesto", title: "Si vas a hacer UNA sola cosa",
+{ phrase: "quitale el azucar a lo que tomas", kind: "guardaesto", image: G("m583"), title: "Si vas a hacer UNA sola cosa",
   items: ["Quítale el azúcar a lo que TOMAS", "El refresco, el café con tres, el agua de sabor", "El jugo de cartón", "Eso no te cuesta un peso: te ahorra"],
   tag: "LO ÚNICO IMPRESCINDIBLE", prompt: "Guarda esto" },
 { phrase: "hoy existen aparatos que le ponen una luz al antebrazo", kind: "lowerthird", title: "La piel lleva el registro", kicker: "SE MIDE CON LUZ",
@@ -319,7 +319,7 @@ export const CMP = (G) => [
   { title: "2 · Media taza de agua caliente, no hirviendo", desc: "revuelve, espera a que se entibie y exprime medio limón" },
   { title: "3 · De noche, una hora antes de dormir", desc: "todos los días, ocho semanas — y sin azúcar en lo que tomas" },
 ] },
-{ phrase: "y hazte la prueba del pliegue en el dorso", kind: "guardaesto", title: "Y mide, no confíes en tu memoria",
+{ phrase: "y hazte la prueba del pliegue en el dorso", kind: "guardaesto", image: G("m606"), title: "Y mide, no confíes en tu memoria",
   items: ["Mídete las uñas, no la cara", "La prueba del pliegue hoy, con la fecha", "A las 8 semanas tu memoria te va a mentir. El papel no"],
   tag: "TU LÍNEA DE BASE", prompt: "Anota esto" },
 { phrase: "la guia esta en el enlace de la descripcion", kind: "guidecta",

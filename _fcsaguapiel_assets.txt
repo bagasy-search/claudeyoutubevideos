@@ -351,6 +351,8 @@ img/fcsaguapiel_m053.jpg
 img/fcsaguapiel_m053_blur.jpg
 img/fcsaguapiel_m054.jpg
 img/fcsaguapiel_m054_blur.jpg
+img/fcsaguapiel_m055_bk.jpg
+img/fcsaguapiel_m055_bk_blur.jpg
 img/fcsaguapiel_m056.jpg
 img/fcsaguapiel_m056_blur.jpg
 img/fcsaguapiel_m059.jpg
@@ -1129,6 +1131,8 @@ img/fcsaguapiel_m579.jpg
 img/fcsaguapiel_m579_blur.jpg
 img/fcsaguapiel_m582.jpg
 img/fcsaguapiel_m582_blur.jpg
+img/fcsaguapiel_m583_bk.jpg
+img/fcsaguapiel_m583_bk_blur.jpg
 img/fcsaguapiel_m584.jpg
 img/fcsaguapiel_m584_blur.jpg
 img/fcsaguapiel_m585.jpg

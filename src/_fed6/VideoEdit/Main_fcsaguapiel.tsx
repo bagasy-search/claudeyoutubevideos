@@ -25,6 +25,11 @@ import { RecetaEscena } from "./scenes/RecetaEscena";
 import { ColadorEscala } from "./scenes/ColadorEscala";
 import { LineaTiempoPiel } from "./scenes/LineaTiempoPiel";
 import { PruebaPliegue } from "./scenes/PruebaPliegue";
+import { DatoImpacto } from "./scenes/DatoImpacto";
+import { ComparaProfundidad } from "./scenes/ComparaProfundidad";
+import { ListaFlotante } from "./scenes/ListaFlotante";
+import { MitoRevelado } from "./scenes/MitoRevelado";
+import { GuiaCTA3D } from "./scenes/GuiaCTA3D";
 import { FedGuideCTA } from "./scenes/FedGuideCTA";
 import { DocNameCard } from "./scenes/DocNameCard";
 import { F_INTER } from "./kit/premium/theme";
@@ -49,14 +54,15 @@ const isComp = (k: string) => COMP2_KINDS.has(k) || NEWFULL.has(k) || OVERLAY.ha
 
 const HERO_CAP = 3.6;
 const capOf = (k: string): number =>
-  k === "diagram" ? 10 : k === "relojnoche" ? 11 : k === "whynight" ? 10 : k === "guidecta" ? 9
-  : k === "quote" ? 8 : k === "rule" ? 5 : k === "errorstinger" ? 2.4 : k === "guardaesto" ? 8
-  : k === "mitoverdad" ? 6 : k === "freezezoom" ? 4.5 : k === "lowerthird" ? 6 : k === "frasecinetica" ? 5.5
+  k === "diagram" ? 10 : k === "relojnoche" ? 11 : k === "whynight" ? 10 : k === "guidecta" ? 11
+  : k === "quote" ? 8 : k === "rule" ? 5 : k === "errorstinger" ? 2.4 : k === "guardaesto" ? 10
+  : k === "mitoverdad" ? 8.5 : k === "freezezoom" ? 4.5 : k === "lowerthird" ? 6 : k === "frasecinetica" ? 5.5
   : k === "pricewar" ? 8 : k === "ingredientduo" ? 6.5 : k === "hourdial" ? 6 : k === "pizarraexplica" ? 8.5
-  : k === "stat" ? 5 : k === "raisin" ? 9
+  : k === "stat" ? 7 : k === "raisin" ? 9
   : k === "malla" ? 11 : k === "carrusel" ? 13 : k === "recetaescena" ? 14
   : k === "colador" ? 10 : k === "lineatiempo" ? 11 : k === "pliegue" ? 9
-  : k === "process" || k === "checklist" || k === "splitlist" ? 9 : 6;
+  : k === "checklist" ? 10 : k === "callout" ? 7 : k === "bars" ? 8
+  : k === "process" || k === "splitlist" ? 9 : 6;
 
 const compBeats = FCSAGUAPIEL_BEATS.filter((b: any) => isComp(b.kind));
 const rawTop = FCSAGUAPIEL_BEATS.filter((b: any) => b.kind === "raw" && /^img\//.test(b.src || ""));
@@ -140,6 +146,15 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "hourdial" ? <HourDial durationInFrames={d} hour={b.hour} big={b.big} unit={b.unit} label={b.label} tone={b.tone} />
   : b.kind === "pizarraexplica" ? <PizarraExplica durationInFrames={d} eyebrow={b.eyebrow} title={b.title} items={b.items} />
   : b.kind === "raisin" ? <RaisinReframe durationInFrames={d} />
+  // ── kinds del kit REMAPEADOS a las escenas premium (misma forma de beat, otro render) ──
+  : b.kind === "stat" ? <DatoImpacto durationInFrames={d} figure={String(b.value)} unit={b.unit} eyebrow={b.eyebrow} caption={b.label} image={b.image} tone={b.tone} />
+  : b.kind === "callout" ? <DatoImpacto durationInFrames={d} figure={b.figure} unit={b.unit} eyebrow={b.eyebrow} caption={b.caption} image={b.image} tone={b.tone} />
+  : b.kind === "bars" ? <ComparaProfundidad durationInFrames={d} title={b.title} unit={b.unit} image={b.image} bars={b.bars} />
+  : b.kind === "checklist" ? <ListaFlotante durationInFrames={d} title={b.title} image={b.image} items={b.items} tone={b.tone} />
+  : b.kind === "guardaesto" ? <ListaFlotante durationInFrames={d} title={b.title} image={b.image} prompt={b.prompt} tone="teal"
+      items={(b.items || []).map((x: any) => (typeof x === "string" ? { text: x, state: "ok" } : x))} />
+  : b.kind === "mitoverdad" ? <MitoRevelado durationInFrames={d} myth={b.myth} truth={b.truth} image={b.image} flipAt={b.flipAt} />
+  : b.kind === "guidecta" ? <GuiaCTA3D durationInFrames={d} cover={b.cover} qr={b.qr} domain={b.domain} kicker={b.kicker} title={b.title} desc={b.desc} scanTitle={b.scanTitle} scanSub={b.scanSub} />
   : b.kind === "malla" ? <MallaColageno durationInFrames={d} phase={b.phase} labels={b.labels} />
   : b.kind === "carrusel" ? <Carrusel3D durationInFrames={d} title={b.title} items={b.items} focus={b.focus} tone={b.tone} />
   : b.kind === "recetaescena" ? <RecetaEscena durationInFrames={d} title={b.title} steps={b.steps} tone={b.tone} />
