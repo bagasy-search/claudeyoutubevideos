@@ -1115,8 +1115,18 @@ const GoldSweep: React.FC<{ a: number; b: number }> = ({ a, b }) => {
 
 /* ============================ ESCENA PRINCIPAL ========================= */
 
-export const WhyNightScene: React.FC<{ durationInFrames: number }> = ({
+export const WhyNightScene: React.FC<{
+  durationInFrames: number;
+  // ⚠️ props OPCIONALES con los textos originales (inglés/piel) como default → cero regresión
+  // en el canal EN que ya la usa. Sirven para adaptar la escena al tema de CADA video.
+  dayTitle?: string;
+  nightTitle?: string;
+  cardText?: string;
+}> = ({
   durationInFrames,
+  dayTitle = "DAY — DEFENSE",
+  nightTitle = "NIGHT — REPAIR",
+  cardText = "flood + seal at the hour your skin rebuilds",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -1237,7 +1247,7 @@ export const WhyNightScene: React.FC<{ durationInFrames: number }> = ({
           {/* etiqueta (capa cercana) */}
           <ParallaxLayer factor={0.85} z={7} px={driftX} py={driftY}>
             <LabelBlock
-              title="DAY — DEFENSE"
+              title={dayTitle}
               accentWord="DEFENSE"
               sub="fights sun + pollution · loses water · builds nothing"
               accent={SUN}
@@ -1287,7 +1297,7 @@ export const WhyNightScene: React.FC<{ durationInFrames: number }> = ({
           {/* etiqueta (capa cercana) */}
           <ParallaxLayer factor={0.85} z={7} px={driftX} py={driftY}>
             <LabelBlock
-              title="NIGHT — REPAIR"
+              title={nightTitle}
               accentWord="REPAIR"
               sub="cell turnover peaks · barrier rebuilds · water escapes fastest"
               accent={BRIGHT}
@@ -1305,7 +1315,7 @@ export const WhyNightScene: React.FC<{ durationInFrames: number }> = ({
           {/* tarjeta de cierre (lo más cercano) */}
           <ParallaxLayer factor={0.9} z={9} px={driftX} py={driftY}>
             <EndCaption
-              text="flood + seal at the hour your skin rebuilds"
+              text={cardText}
               startFrame={CAP_START}
             />
           </ParallaxLayer>
