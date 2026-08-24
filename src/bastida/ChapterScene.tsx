@@ -225,4 +225,8 @@ export const CHAPTER_CONFIGS: Record<string, ChapterSceneProps> = {
   almendras: {number: '1', unit: 'ALMENDRAS', subtitle: 'sin endulzar · casi sin proteína', hero: 'img/bas5_ill_almendras.png', heroSide: 'right', accent: '#3FA96B', accentDeep: '#1E6B43', ambient: 'rgba(63,169,107,0.14)', flourish: 'grains'},
   arroz: {number: '2', unit: 'ARROZ', subtitle: 'la más baja en fósforo y potasio', hero: 'img/bas5_ill_arroz.png', heroSide: 'left', accent: '#34C6E0', accentDeep: '#0E7F97', ambient: 'rgba(52,198,224,0.14)', flourish: 'grains'},
   avena: {number: '3', unit: 'AVENA', subtitle: 'cremosa · beta-glucano', hero: 'img/bas5_ill_avena.png', heroSide: 'right', accent: '#C9A56A', accentDeep: '#7A5A2E', ambient: 'rgba(201,165,106,0.14)', flourish: 'steam'},
+  // --- VIDEO #6: "3 semillas que elevan su creatinina (y 3 que la bajan)" — openers de las 3 SEGURAS ---
+  lino: {number: '1', unit: 'LINO', subtitle: 'molido · una cucharada al día', hero: 'img/ill/bas6_ill_lino.png', heroSide: 'right', accent: '#C9A56A', accentDeep: '#7A5A2E', ambient: 'rgba(201,165,106,0.14)', flourish: 'grains'},
+  chia: {number: '2', unit: 'CHÍA', subtitle: 'remojada · la dosis es la medicina', hero: 'img/ill/bas6_ill_chia.png', heroSide: 'left', accent: '#34C6E0', accentDeep: '#0E7F97', ambient: 'rgba(52,198,224,0.14)', flourish: 'droplets'},
+  cilantro: {number: '3', unit: 'CILANTRO', subtitle: 'en infusión · la excusa para tomar agua', hero: 'img/ill/bas6_ill_cilantro.png', heroSide: 'right', accent: '#3FA96B', accentDeep: '#1E6B43', ambient: 'rgba(63,169,107,0.14)', flourish: 'steam'},
 };

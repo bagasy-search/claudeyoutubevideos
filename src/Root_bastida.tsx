@@ -15,6 +15,8 @@ import { MainBastida, TOTAL_MIN1 } from "./bastida/Main_bastida";
 import { MainBastida2, TOTAL_2 } from "./bastida/Main_bastida2";
 import { MainBastida4, TOTAL_4 } from "./bastida/Main_bastida4";
 import { MainBastida5, TOTAL_5 } from "./bastida/Main_bastida5";
+import { MainBastida6, TOTAL_6 } from "./bastida/Main_bastida6";
+import { LaminaSeguras, SemaforoScene, ManoVsCuchara, OxalatoScene, SemillaDespensa } from "./bastida/Bastida6Kit";
 import { ChapterAguaLimon } from "./bastida/ChapterAguaLimon";
 import { ChapterScene, CHAPTER_CONFIGS } from "./bastida/ChapterScene";
 import { CreatininaScene } from "./bastida/CreatininaScene";
@@ -46,6 +48,19 @@ export const RootBastida: React.FC = () => (
       width={1920}
       height={1080}
     />
+    <Composition
+      id="Bas-Main6"
+      component={MainBastida6}
+      durationInFrames={TOTAL_6}
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition id="Bas-Lamina-Seguras" component={LaminaSeguras} durationInFrames={200} fps={30} width={1920} height={1080} />
+    <Composition id="Bas-Semaforo" component={SemaforoScene} durationInFrames={260} fps={30} width={1920} height={1080} />
+    <Composition id="Bas-ManoVsCuchara" component={ManoVsCuchara} durationInFrames={220} fps={30} width={1920} height={1080} />
+    <Composition id="Bas-Oxalato" component={OxalatoScene} durationInFrames={200} fps={30} width={1920} height={1080} />
+    <Composition id="Bas-SemillaDespensa" component={SemillaDespensa} durationInFrames={190} fps={30} width={1920} height={1080} />
     <Composition
       id="Bas-Main5"
       component={MainBastida5}
