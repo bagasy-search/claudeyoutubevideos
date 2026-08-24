@@ -457,14 +457,6 @@ export const FCSVARICES_BROLL: any[] = [
   "i": 87
  },
  {
-  "name": "fv089",
-  "src": "broll/fcsvarices/fv089.mp4",
-  "start": 987.88,
-  "cov": 3.94,
-  "dur": 3.94,
-  "i": 89
- },
- {
   "name": "fv090",
   "src": "broll/fcsvarices/fv090.mp4",
   "start": 998.8,
@@ -2203,7 +2195,7 @@ export const FCSVARICES_PHOTOS: any[] = [
  {
   "name": "ph089",
   "src": "img/fv089.png",
-  "start": 991.82,
+  "start": 987.88,
   "cov": 3.6,
   "dur": 3.6,
   "i": 89,
@@ -7321,7 +7313,7 @@ export const AVATAR_WINDOWS: any[] = [
   "mode": "hidden"
  },
  {
-  "start": 995.42,
+  "start": 991.48,
   "mode": "full"
  },
  {

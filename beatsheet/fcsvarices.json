@@ -1787,17 +1787,10 @@
    "tag": "Lámina de la guía"
   },
   {
-   "id": "fv089",
-   "kind": "raw",
-   "src": "broll/fcsvarices/fv089.mp4",
-   "start": 987.88,
-   "dur": 3.94
-  },
-  {
    "id": "ph089",
    "kind": "raw",
    "src": "img/fv089.png",
-   "start": 991.82,
+   "start": 987.88,
    "dur": 3.6
   },
   {

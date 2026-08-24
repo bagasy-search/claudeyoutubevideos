@@ -74,6 +74,9 @@ const slotOf = (i) => +((i + 1 < N ? start[i + 1] : VIDEO_END) - start[i]).toFix
 // clip real primero (su duración REAL, −0.1 para no congelar el último frame),
 // y la foto del MISMO momento estira hasta el próximo momento. En el tramo sin
 // avatar eso es lo único que impide ver el fondo, así que no lleva tope.
+const LUMA = fs.existsSync(`_luma_${SLUG}.json`)
+  ? JSON.parse(fs.readFileSync(`_luma_${SLUG}.json`, "utf8")) : {};
+const descartadosOscuros = [];
 const BROLL = [];   // clips
 const PHOTOS = [];  // fotos (bed)
 const HERO_CAP_AV = 3.6;   // con avatar detrás, la foto no necesita estirarse
@@ -86,7 +89,12 @@ for (let i = 0; i < N; i++) {
   const photoRel = p.k === "hero" ? `img/fvhero${id3}.png` : `img/fv${id3}.png`;
   const photoAbs = `public/${photoRel}`;
   let used = 0;
-  if (p.k === "clip" && fs.existsSync(clipPath)) {
+  // ⛔ CLIP DEMASIADO OSCURO = PANTALLA NEGRA. Medido en el 1er render: fv089 (luma 20)
+  // disparó blackdetect con 2s de negro. Si el clip es casi negro se descarta y la foto
+  // del mismo momento cubre el slot entero. Umbral 25 (las nocturnas legítimas dan ~30).
+  const oscuro = LUMA[`fv${id3}`] != null && LUMA[`fv${id3}`] < 25;
+  if (oscuro) descartadosOscuros.push(`fv${id3}(${LUMA[`fv${id3}`].toFixed(0)})`);
+  if (p.k === "clip" && !oscuro && fs.existsSync(clipPath)) {
     const real = probeDur(clipPath) || 4;
     const cov = +Math.max(0.8, Math.min(slot, real - 0.1)).toFixed(2);
     BROLL.push({ name: `fv${id3}`, src: `broll/${SLUG}/fv${id3}.mp4`, start: +st.toFixed(2), cov, dur: cov, i });
@@ -208,6 +216,7 @@ fs.writeFileSync(`beatsheet/${SLUG}.json`, JSON.stringify({ video: SLUG, avatar:
 
 const durs = [...BROLL.map((b) => b.cov), ...PHOTOS.map((p) => p.cov)].sort((a, b) => a - b);
 const q = (p) => durs[Math.floor(durs.length * p)];
+if (descartadosOscuros.length) console.log(`clips descartados por OSCUROS: ${descartadosOscuros.join(", ")} (los cubre su foto)`);
 console.log(`beats: ${ALL.length} · clips ${BROLL.length} · fotos ${PHOTOS.length} · comps ${CMP.length}`);
 console.log(`pacing visual — mediana ${q(0.5)}s · p75 ${q(0.75)}s · p90 ${q(0.9)}s · ≥5s: ${(durs.filter((d) => d >= 5).length / durs.length * 100).toFixed(0)}%`);
 console.log(`kinds distintos: ${[...new Set(CMP.map((c) => c.kind))].join(", ")}`);
