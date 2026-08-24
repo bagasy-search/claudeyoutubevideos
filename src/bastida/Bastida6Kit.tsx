@@ -203,8 +203,9 @@ export const SemaforoScene: React.FC<{
                 transform: `translateX(${interpolate(bp, [0, 1], [-70, 0])}px)`,
               }}
             >
-              <div style={{width: 210, flexShrink: 0}}>
-                <div style={{fontFamily: FONT_DISPLAY, fontSize: 40, fontWeight: 900, color: b.color, letterSpacing: 1}}>{b.label}</div>
+              <div style={{width: 268, flexShrink: 0}}>
+                {/* la columna tiene que aguantar la palabra mas larga (AMARILLO) sin pisar la 1a tarjeta */}
+                <div style={{fontFamily: FONT_DISPLAY, fontSize: 34, fontWeight: 900, color: b.color, letterSpacing: 0, whiteSpace: 'nowrap'}}>{b.label}</div>
                 <div style={{fontFamily: FONT_SANS, fontSize: 23, fontWeight: 700, color: rgba(BAS.brand, 0.7)}}>{b.sub}</div>
               </div>
               <div style={{display: 'flex', gap: 18, flex: 1}}>
