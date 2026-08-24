@@ -17,7 +17,8 @@
    "dur": 4.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m002.png"
+   "src": "img/fcssenales_m002.png",
+   "cov": 4.62
   },
   {
    "id": "m003",
@@ -33,7 +34,8 @@
    "dur": 5.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m004.png"
+   "src": "img/fcssenales_m004.png",
+   "cov": 3.6
   },
   {
    "id": "cmp_0_frasecinetica",
@@ -73,7 +75,8 @@
    "dur": 4.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m005_bk.png"
+   "src": "img/fcssenales_m005_bk.png",
+   "cov": 4.18
   },
   {
    "id": "m007",
@@ -99,7 +102,8 @@
    "dur": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m008.png"
+   "src": "img/fcssenales_m008.png",
+   "cov": 4.12
   },
   {
    "id": "m009",
@@ -107,7 +111,8 @@
    "dur": 5.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m009.png"
+   "src": "img/fcssenales_m009.png",
+   "cov": 5.16
   },
   {
    "id": "m011",
@@ -161,7 +166,8 @@
    "dur": 7.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m013.png"
+   "src": "img/fcssenales_m013.png",
+   "cov": 3.6
   },
   {
    "id": "m015",
@@ -188,7 +194,8 @@
    "dur": 0.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m015_bk.png"
+   "src": "img/fcssenales_m015_bk.png",
+   "cov": 0.42
   },
   {
    "id": "m016",
@@ -196,7 +203,8 @@
    "dur": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m016.png"
+   "src": "img/fcssenales_m016.png",
+   "cov": 4.14
   },
   {
    "id": "m017",
@@ -228,7 +236,8 @@
    "dur": 3.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m021.png"
+   "src": "img/fcssenales_m021.png",
+   "cov": 3.74
   },
   {
    "id": "m022",
@@ -299,7 +308,8 @@
    "dur": 6.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m025.png"
+   "src": "img/fcssenales_m025.png",
+   "cov": 3.6
   },
   {
    "id": "m026",
@@ -307,7 +317,8 @@
    "dur": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m026.png"
+   "src": "img/fcssenales_m026.png",
+   "cov": 3.96
   },
   {
    "id": "m027",
@@ -315,15 +326,8 @@
    "dur": 6.08,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fcssenales_m027.mp4"
-  },
-  {
-   "id": "m027_t",
-   "start": 137.08,
-   "dur": 1.14,
-   "key": "s",
-   "kind": "raw",
-   "src": "img/fcssenales_m027_bk.png"
+   "src": "img/fcssenales_m027_bk.png",
+   "cov": 3.6
   },
   {
    "id": "m028",
@@ -331,7 +335,8 @@
    "dur": 4.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m028.png"
+   "src": "img/fcssenales_m028.png",
+   "cov": 4.92
   },
   {
    "id": "m029",
@@ -347,7 +352,8 @@
    "dur": 6.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m030.png"
+   "src": "img/fcssenales_m030.png",
+   "cov": 3.6
   },
   {
    "id": "m031",
@@ -386,7 +392,8 @@
    "dur": 0.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m032_bk.png"
+   "src": "img/fcssenales_m032_bk.png",
+   "cov": 0.52
   },
   {
    "id": "m033",
@@ -394,7 +401,8 @@
    "dur": 4.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m033.png"
+   "src": "img/fcssenales_m033.png",
+   "cov": 4.64
   },
   {
    "id": "m034",
@@ -410,7 +418,8 @@
    "dur": 0.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m034_bk.png"
+   "src": "img/fcssenales_m034_bk.png",
+   "cov": 0.84
   },
   {
    "id": "m036",
@@ -418,7 +427,8 @@
    "dur": 3.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m036.png"
+   "src": "img/fcssenales_m036.png",
+   "cov": 3.08
   },
   {
    "id": "cmp_8_headline",
@@ -511,7 +521,8 @@
    "dur": 3.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m038.png"
+   "src": "img/fcssenales_m038.png",
+   "cov": 3.88
   },
   {
    "id": "m039",
@@ -527,7 +538,8 @@
    "dur": 1.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m039_bk.png"
+   "src": "img/fcssenales_m039_bk.png",
+   "cov": 1.2
   },
   {
    "id": "m040",
@@ -535,7 +547,8 @@
    "dur": 3.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m040.png"
+   "src": "img/fcssenales_m040.png",
+   "cov": 3.14
   },
   {
    "id": "m042",
@@ -543,7 +556,8 @@
    "dur": 3.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m042.png"
+   "src": "img/fcssenales_m042.png",
+   "cov": 3.4
   },
   {
    "id": "cmp_10_rule",
@@ -604,7 +618,8 @@
    "dur": 0.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m044_bk.png"
+   "src": "img/fcssenales_m044_bk.png",
+   "cov": 0.34
   },
   {
    "id": "m045",
@@ -612,7 +627,8 @@
    "dur": 2.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m045.png"
+   "src": "img/fcssenales_m045.png",
+   "cov": 2.34
   },
   {
    "id": "m046",
@@ -659,7 +675,8 @@
    "dur": 0.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m046_bk.png"
+   "src": "img/fcssenales_m046_bk.png",
+   "cov": 0.28
   },
   {
    "id": "m048",
@@ -675,7 +692,8 @@
    "dur": 10.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m049.png"
+   "src": "img/fcssenales_m049.png",
+   "cov": 3.6
   },
   {
    "id": "m050",
@@ -691,7 +709,8 @@
    "dur": 0.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m050_bk.png"
+   "src": "img/fcssenales_m050_bk.png",
+   "cov": 0.46
   },
   {
    "id": "m051",
@@ -699,7 +718,8 @@
    "dur": 3.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m051.png"
+   "src": "img/fcssenales_m051.png",
+   "cov": 3.72
   },
   {
    "id": "m053",
@@ -707,7 +727,8 @@
    "dur": 5.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m053.png"
+   "src": "img/fcssenales_m053.png",
+   "cov": 3.6
   },
   {
    "id": "cmp_12_nametag",
@@ -725,7 +746,8 @@
    "dur": 7.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m055.png"
+   "src": "img/fcssenales_m055.png",
+   "cov": 3.6
   },
   {
    "id": "m056",
@@ -741,7 +763,8 @@
    "dur": 0.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m056_bk.png"
+   "src": "img/fcssenales_m056_bk.png",
+   "cov": 0.54
   },
   {
    "id": "m057",
@@ -757,7 +780,8 @@
    "dur": 3.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m058.png"
+   "src": "img/fcssenales_m058.png",
+   "cov": 3.88
   },
   {
    "id": "m059",
@@ -773,7 +797,8 @@
    "dur": 0.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m059_bk.png"
+   "src": "img/fcssenales_m059_bk.png",
+   "cov": 0.84
   },
   {
    "id": "m061",
@@ -781,7 +806,8 @@
    "dur": 2.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m061.png"
+   "src": "img/fcssenales_m061.png",
+   "cov": 2.52
   },
   {
    "id": "cmp_13_stat",
@@ -808,7 +834,8 @@
    "dur": 4.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m063.png"
+   "src": "img/fcssenales_m063.png",
+   "cov": 4.54
   },
   {
    "id": "m064",
@@ -824,7 +851,8 @@
    "dur": 4.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m065.png"
+   "src": "img/fcssenales_m065.png",
+   "cov": 4.26
   },
   {
    "id": "m066",
@@ -864,7 +892,8 @@
    "dur": 5.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m067.png"
+   "src": "img/fcssenales_m067.png",
+   "cov": 3.6
   },
   {
    "id": "m068",
@@ -880,7 +909,8 @@
    "dur": 2.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m069.png"
+   "src": "img/fcssenales_m069.png",
+   "cov": 2.78
   },
   {
    "id": "m070",
@@ -896,7 +926,8 @@
    "dur": 5.24,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m071.png"
+   "src": "img/fcssenales_m071.png",
+   "cov": 3.6
   },
   {
    "id": "m072",
@@ -928,7 +959,8 @@
    "dur": 6.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m076.png"
+   "src": "img/fcssenales_m076.png",
+   "cov": 3.6
   },
   {
    "id": "cmp_15_callout",
@@ -947,7 +979,8 @@
    "dur": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m077.png"
+   "src": "img/fcssenales_m077.png",
+   "cov": 4.28
   },
   {
    "id": "m078",
@@ -955,7 +988,8 @@
    "dur": 5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m078.png"
+   "src": "img/fcssenales_m078.png",
+   "cov": 5
   },
   {
    "id": "m079",
@@ -963,7 +997,8 @@
    "dur": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m079.png"
+   "src": "img/fcssenales_m079.png",
+   "cov": 4.72
   },
   {
    "id": "m080",
@@ -971,7 +1006,8 @@
    "dur": 5.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m080_bk.png"
+   "src": "img/fcssenales_m080_bk.png",
+   "cov": 3.6
   },
   {
    "id": "m081",
@@ -979,7 +1015,8 @@
    "dur": 5.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m081.png"
+   "src": "img/fcssenales_m081.png",
+   "cov": 5.02
   },
   {
    "id": "m082",
@@ -995,7 +1032,8 @@
    "dur": 10.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m083.png"
+   "src": "img/fcssenales_m083.png",
+   "cov": 3.6
   },
   {
    "id": "m084",
@@ -1011,7 +1049,8 @@
    "dur": 0.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m084_bk.png"
+   "src": "img/fcssenales_m084_bk.png",
+   "cov": 0.76
   },
   {
    "id": "m085",
@@ -1019,7 +1058,8 @@
    "dur": 3.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m085.png"
+   "src": "img/fcssenales_m085.png",
+   "cov": 3.4
   },
   {
    "id": "m086",
@@ -1027,7 +1067,8 @@
    "dur": 11.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m086.png"
+   "src": "img/fcssenales_m086.png",
+   "cov": 3.6
   },
   {
    "id": "m087",
@@ -1079,7 +1120,8 @@
    "dur": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m090_bk.png"
+   "src": "img/fcssenales_m090_bk.png",
+   "cov": 3.96
   },
   {
    "id": "m091",
@@ -1087,7 +1129,8 @@
    "dur": 8.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m091.png"
+   "src": "img/fcssenales_m091.png",
+   "cov": 3.6
   },
   {
    "id": "m092",
@@ -1095,7 +1138,8 @@
    "dur": 2.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m092.png"
+   "src": "img/fcssenales_m092.png",
+   "cov": 2.88
   },
   {
    "id": "m093",
@@ -1119,7 +1163,8 @@
    "dur": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m095.png"
+   "src": "img/fcssenales_m095.png",
+   "cov": 3.98
   },
   {
    "id": "m096",
@@ -1143,7 +1188,8 @@
    "dur": 5.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m098.png"
+   "src": "img/fcssenales_m098.png",
+   "cov": 3.6
   },
   {
    "id": "m099",
@@ -1151,7 +1197,8 @@
    "dur": 5.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m099.png"
+   "src": "img/fcssenales_m099.png",
+   "cov": 3.6
   },
   {
    "id": "cmp_17_frasecinetica",
@@ -1224,7 +1271,8 @@
    "dur": 5.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m102.png"
+   "src": "img/fcssenales_m102.png",
+   "cov": 5.18
   },
   {
    "id": "m103",
@@ -1240,7 +1288,8 @@
    "dur": 2.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m104.png"
+   "src": "img/fcssenales_m104.png",
+   "cov": 2.78
   },
   {
    "id": "m106",
@@ -1248,7 +1297,8 @@
    "dur": 2.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m106.png"
+   "src": "img/fcssenales_m106.png",
+   "cov": 2.38
   },
   {
    "id": "m107",
@@ -1283,7 +1333,8 @@
    "dur": 0.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m108_bk.png"
+   "src": "img/fcssenales_m108_bk.png",
+   "cov": 0.7
   },
   {
    "id": "m109",
@@ -1334,7 +1385,8 @@
    "dur": 7.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m112.png"
+   "src": "img/fcssenales_m112.png",
+   "cov": 3.6
   },
   {
    "id": "m113",
@@ -1350,7 +1402,8 @@
    "dur": 3.7,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m114.png"
+   "src": "img/fcssenales_m114.png",
+   "cov": 3.7
   },
   {
    "id": "m116",
@@ -1366,7 +1419,8 @@
    "dur": 4.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m117.png"
+   "src": "img/fcssenales_m117.png",
+   "cov": 4.22
   },
   {
    "id": "cmp_21_quote",
@@ -1399,7 +1453,8 @@
    "dur": 0.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m119_bk.png"
+   "src": "img/fcssenales_m119_bk.png",
+   "cov": 0.8
   },
   {
    "id": "m120",
@@ -1407,7 +1462,8 @@
    "dur": 2.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m120.png"
+   "src": "img/fcssenales_m120.png",
+   "cov": 2.94
   },
   {
    "id": "cmp_22_stat",
@@ -1441,7 +1497,8 @@
    "dur": 4.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m124.png"
+   "src": "img/fcssenales_m124.png",
+   "cov": 4.94
   },
   {
    "id": "m125",
@@ -1490,7 +1547,8 @@
    "dur": 3.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m127.png"
+   "src": "img/fcssenales_m127.png",
+   "cov": 3.16
   },
   {
    "id": "m128",
@@ -1506,7 +1564,8 @@
    "dur": 6.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m129.png"
+   "src": "img/fcssenales_m129.png",
+   "cov": 3.6
   },
   {
    "id": "cmp_24_lowerthird",
@@ -1525,7 +1584,8 @@
    "dur": 2.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m130.png"
+   "src": "img/fcssenales_m130.png",
+   "cov": 2.76
   },
   {
    "id": "m131",
@@ -1563,7 +1623,8 @@
    "dur": 2.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m132.png"
+   "src": "img/fcssenales_m132.png",
+   "cov": 2.62
   },
   {
    "id": "m133",
@@ -1579,7 +1640,8 @@
    "dur": 4.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m134_bk.png"
+   "src": "img/fcssenales_m134_bk.png",
+   "cov": 4.56
   },
   {
    "id": "m135",
@@ -1587,7 +1649,8 @@
    "dur": 4.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m135.png"
+   "src": "img/fcssenales_m135.png",
+   "cov": 4.54
   },
   {
    "id": "m136",
@@ -1603,7 +1666,8 @@
    "dur": 4.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m137.png"
+   "src": "img/fcssenales_m137.png",
+   "cov": 4.16
   },
   {
    "id": "m138",
@@ -1642,7 +1706,8 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m139.png"
+   "src": "img/fcssenales_m139.png",
+   "cov": 4.04
   },
   {
    "id": "m141",
@@ -1666,7 +1731,8 @@
    "dur": 3.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m143.png"
+   "src": "img/fcssenales_m143.png",
+   "cov": 3.9
   },
   {
    "id": "m144",
@@ -1682,7 +1748,8 @@
    "dur": 8.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m145.png"
+   "src": "img/fcssenales_m145.png",
+   "cov": 3.6
   },
   {
    "id": "m147",
@@ -1740,7 +1807,8 @@
    "dur": 0.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m150_bk.png"
+   "src": "img/fcssenales_m150_bk.png",
+   "cov": 0.66
   },
   {
    "id": "m151",
@@ -1748,7 +1816,8 @@
    "dur": 3.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m151.png"
+   "src": "img/fcssenales_m151.png",
+   "cov": 3.86
   },
   {
    "id": "m152",
@@ -1764,7 +1833,8 @@
    "dur": 2.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m153.png"
+   "src": "img/fcssenales_m153.png",
+   "cov": 2.64
   },
   {
    "id": "m154",
@@ -1788,7 +1858,8 @@
    "dur": 4.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m156.png"
+   "src": "img/fcssenales_m156.png",
+   "cov": 4.58
   },
   {
    "id": "m158",
@@ -1804,7 +1875,8 @@
    "dur": 0.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m158_bk.png"
+   "src": "img/fcssenales_m158_bk.png",
+   "cov": 0.76
   },
   {
    "id": "m159",
@@ -1812,7 +1884,8 @@
    "dur": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m159.png"
+   "src": "img/fcssenales_m159.png",
+   "cov": 4.06
   },
   {
    "id": "m160",
@@ -1853,7 +1926,8 @@
    "dur": 0.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m162_bk.png"
+   "src": "img/fcssenales_m162_bk.png",
+   "cov": 0.3
   },
   {
    "id": "m163",
@@ -1869,7 +1943,8 @@
    "dur": 3.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m164.png"
+   "src": "img/fcssenales_m164.png",
+   "cov": 3.52
   },
   {
    "id": "m167",
@@ -1885,7 +1960,8 @@
    "dur": 3.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m168.png"
+   "src": "img/fcssenales_m168.png",
+   "cov": 3.32
   },
   {
    "id": "m169",
@@ -1909,7 +1985,8 @@
    "dur": 1.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m171_bk.png"
+   "src": "img/fcssenales_m171_bk.png",
+   "cov": 1.02
   },
   {
    "id": "m172",
@@ -1917,7 +1994,8 @@
    "dur": 5.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m172.png"
+   "src": "img/fcssenales_m172.png",
+   "cov": 5.06
   },
   {
    "id": "m173",
@@ -1950,7 +2028,8 @@
    "dur": 0.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m173_bk.png"
+   "src": "img/fcssenales_m173_bk.png",
+   "cov": 0.44
   },
   {
    "id": "m174",
@@ -1966,7 +2045,8 @@
    "dur": 4.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m175.png"
+   "src": "img/fcssenales_m175.png",
+   "cov": 4.26
   },
   {
    "id": "m176",
@@ -2018,7 +2098,8 @@
    "dur": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m179.png"
+   "src": "img/fcssenales_m179.png",
+   "cov": 4.28
   },
   {
    "id": "m180",
@@ -2034,7 +2115,8 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m181.png"
+   "src": "img/fcssenales_m181.png",
+   "cov": 4.04
   },
   {
    "id": "m182",
@@ -2061,7 +2143,8 @@
    "dur": 4.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m183.png"
+   "src": "img/fcssenales_m183.png",
+   "cov": 4.76
   },
   {
    "id": "m184",
@@ -2077,7 +2160,8 @@
    "dur": 4.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m185.png"
+   "src": "img/fcssenales_m185.png",
+   "cov": 4.64
   },
   {
    "id": "m186",
@@ -2093,7 +2177,8 @@
    "dur": 0.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m186_bk.png"
+   "src": "img/fcssenales_m186_bk.png",
+   "cov": 0.28
   },
   {
    "id": "cmp_33_checklist",
@@ -2147,7 +2232,8 @@
    "dur": 0.99,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m190_bk.png"
+   "src": "img/fcssenales_m190_bk.png",
+   "cov": 0.99
   },
   {
    "id": "m191",
@@ -2155,7 +2241,8 @@
    "dur": 5.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m191.png"
+   "src": "img/fcssenales_m191.png",
+   "cov": 5.62
   },
   {
    "id": "m192",
@@ -2197,7 +2284,8 @@
    "dur": 3.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m193.png"
+   "src": "img/fcssenales_m193.png",
+   "cov": 3.12
   },
   {
    "id": "m194",
@@ -2213,7 +2301,8 @@
    "dur": 2.03,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m194_bk.png"
+   "src": "img/fcssenales_m194_bk.png",
+   "cov": 2.03
   },
   {
    "id": "m195",
@@ -2282,7 +2371,8 @@
    "dur": 3.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m196.png"
+   "src": "img/fcssenales_m196.png",
+   "cov": 3.02
   },
   {
    "id": "m197",
@@ -2308,7 +2398,8 @@
    "dur": 0.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m197_bk.png"
+   "src": "img/fcssenales_m197_bk.png",
+   "cov": 0.73
   },
   {
    "id": "m198",
@@ -2316,7 +2407,8 @@
    "dur": 4.07,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m198.png"
+   "src": "img/fcssenales_m198.png",
+   "cov": 4.07
   },
   {
    "id": "m199",
@@ -2332,7 +2424,8 @@
    "dur": 4.17,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m200.png"
+   "src": "img/fcssenales_m200.png",
+   "cov": 4.17
   },
   {
    "id": "m201",
@@ -2340,7 +2433,8 @@
    "dur": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m201.png"
+   "src": "img/fcssenales_m201.png",
+   "cov": 4.12
   },
   {
    "id": "m202",
@@ -2356,7 +2450,8 @@
    "dur": 4.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m203.png"
+   "src": "img/fcssenales_m203.png",
+   "cov": 4.28
   },
   {
    "id": "cmp_37_lowerthird",
@@ -2383,7 +2478,8 @@
    "dur": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m205.png"
+   "src": "img/fcssenales_m205.png",
+   "cov": 4.02
   },
   {
    "id": "m206",
@@ -2407,7 +2503,8 @@
    "dur": 1.66,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m207_bk.png"
+   "src": "img/fcssenales_m207_bk.png",
+   "cov": 1.66
   },
   {
    "id": "m208",
@@ -2415,7 +2512,8 @@
    "dur": 4.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m208.png"
+   "src": "img/fcssenales_m208.png",
+   "cov": 4.12
   },
   {
    "id": "m209",
@@ -2431,7 +2529,8 @@
    "dur": 1.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m209_bk.png"
+   "src": "img/fcssenales_m209_bk.png",
+   "cov": 1.6
   },
   {
    "id": "m210",
@@ -2439,7 +2538,8 @@
    "dur": 4.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m210.png"
+   "src": "img/fcssenales_m210.png",
+   "cov": 4.22
   },
   {
    "id": "m211",
@@ -2472,7 +2572,8 @@
    "dur": 1.13,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m211_bk.png"
+   "src": "img/fcssenales_m211_bk.png",
+   "cov": 1.13
   },
   {
    "id": "m212",
@@ -2488,7 +2589,8 @@
    "dur": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m213.png"
+   "src": "img/fcssenales_m213.png",
+   "cov": 4.48
   },
   {
    "id": "m214",
@@ -2496,7 +2598,8 @@
    "dur": 2.59,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m214.png"
+   "src": "img/fcssenales_m214.png",
+   "cov": 2.59
   },
   {
    "id": "m215",
@@ -2504,7 +2607,8 @@
    "dur": 2.55,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m215.png"
+   "src": "img/fcssenales_m215.png",
+   "cov": 2.55
   },
   {
    "id": "m216",
@@ -2520,7 +2624,8 @@
    "dur": 0.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m216_bk.png"
+   "src": "img/fcssenales_m216_bk.png",
+   "cov": 0.9
   },
   {
    "id": "m217",
@@ -2536,7 +2641,8 @@
    "dur": 0.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m217_bk.png"
+   "src": "img/fcssenales_m217_bk.png",
+   "cov": 0.65
   },
   {
    "id": "m218",
@@ -2544,7 +2650,8 @@
    "dur": 4.81,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m218.png"
+   "src": "img/fcssenales_m218.png",
+   "cov": 4.81
   },
   {
    "id": "cmp_39_frasecinetica",
@@ -2583,7 +2690,8 @@
    "dur": 3.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m219.png"
+   "src": "img/fcssenales_m219.png",
+   "cov": 3.74
   },
   {
    "id": "m220",
@@ -2599,7 +2707,8 @@
    "dur": 0.29,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m220_bk.png"
+   "src": "img/fcssenales_m220_bk.png",
+   "cov": 0.29
   },
   {
    "id": "m221",
@@ -2615,7 +2724,8 @@
    "dur": 1.13,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m221_bk.png"
+   "src": "img/fcssenales_m221_bk.png",
+   "cov": 1.13
   },
   {
    "id": "m222",
@@ -2623,7 +2733,8 @@
    "dur": 5.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m222.png"
+   "src": "img/fcssenales_m222.png",
+   "cov": 5.06
   },
   {
    "id": "m223",
@@ -2631,7 +2742,8 @@
    "dur": 5.05,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m223.png"
+   "src": "img/fcssenales_m223.png",
+   "cov": 5.05
   },
   {
    "id": "m224",
@@ -2639,7 +2751,8 @@
    "dur": 3.95,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m224.png"
+   "src": "img/fcssenales_m224.png",
+   "cov": 3.95
   },
   {
    "id": "cmp_40_process",
@@ -2685,7 +2798,8 @@
    "dur": 4.13,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m226.png"
+   "src": "img/fcssenales_m226.png",
+   "cov": 4.13
   },
   {
    "id": "m227",
@@ -2701,7 +2815,8 @@
    "dur": 5.11,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m228.png"
+   "src": "img/fcssenales_m228.png",
+   "cov": 5.11
   },
   {
    "id": "m229",
@@ -2709,7 +2824,8 @@
    "dur": 2.87,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m229.png"
+   "src": "img/fcssenales_m229.png",
+   "cov": 2.87
   },
   {
    "id": "m230",
@@ -2725,7 +2841,8 @@
    "dur": 4.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m231.png"
+   "src": "img/fcssenales_m231.png",
+   "cov": 4.06
   },
   {
    "id": "m232",
@@ -2741,7 +2858,8 @@
    "dur": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m233.png"
+   "src": "img/fcssenales_m233.png",
+   "cov": 3.98
   },
   {
    "id": "m234",
@@ -2749,7 +2867,8 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m234.png"
+   "src": "img/fcssenales_m234.png",
+   "cov": 4.04
   },
   {
    "id": "m235",
@@ -2757,7 +2876,8 @@
    "dur": 6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m235.png"
+   "src": "img/fcssenales_m235.png",
+   "cov": 6
   },
   {
    "id": "m236",
@@ -2784,7 +2904,8 @@
    "dur": 0.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m236_bk.png"
+   "src": "img/fcssenales_m236_bk.png",
+   "cov": 0.6
   },
   {
    "id": "m237",
@@ -2792,7 +2913,8 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m237.png"
+   "src": "img/fcssenales_m237.png",
+   "cov": 4.04
   },
   {
    "id": "m238",
@@ -2800,7 +2922,8 @@
    "dur": 5.25,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m238.png"
+   "src": "img/fcssenales_m238.png",
+   "cov": 5.25
   },
   {
    "id": "m239",
@@ -2808,7 +2931,8 @@
    "dur": 4.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m239.png"
+   "src": "img/fcssenales_m239.png",
+   "cov": 4.34
   },
   {
    "id": "m240",
@@ -2824,7 +2948,8 @@
    "dur": 4.34,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m241.png"
+   "src": "img/fcssenales_m241.png",
+   "cov": 4.34
   },
   {
    "id": "m242",
@@ -2840,7 +2965,8 @@
    "dur": 1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m242_bk.png"
+   "src": "img/fcssenales_m242_bk.png",
+   "cov": 1
   },
   {
    "id": "m243",
@@ -2848,7 +2974,8 @@
    "dur": 5.83,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m243.png"
+   "src": "img/fcssenales_m243.png",
+   "cov": 5.83
   },
   {
    "id": "m244",
@@ -2873,7 +3000,8 @@
    "dur": 0.55,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m244_bk.png"
+   "src": "img/fcssenales_m244_bk.png",
+   "cov": 0.55
   },
   {
    "id": "m245",
@@ -2881,7 +3009,8 @@
    "dur": 4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m245.png"
+   "src": "img/fcssenales_m245.png",
+   "cov": 4
   },
   {
    "id": "m246",
@@ -2912,7 +3041,8 @@
    "dur": 0.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m246_bk.png"
+   "src": "img/fcssenales_m246_bk.png",
+   "cov": 0.8
   },
   {
    "id": "m247",
@@ -2936,7 +3066,8 @@
    "dur": 5.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m249.png"
+   "src": "img/fcssenales_m249.png",
+   "cov": 5.28
   },
   {
    "id": "m250",
@@ -2952,7 +3083,8 @@
    "dur": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m251.png"
+   "src": "img/fcssenales_m251.png",
+   "cov": 4.48
   },
   {
    "id": "m252",
@@ -2968,7 +3100,8 @@
    "dur": 5.91,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m253.png"
+   "src": "img/fcssenales_m253.png",
+   "cov": 5.91
   },
   {
    "id": "m254",
@@ -2976,7 +3109,8 @@
    "dur": 4.81,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m254.png"
+   "src": "img/fcssenales_m254.png",
+   "cov": 4.81
   },
   {
    "id": "m255",
@@ -3003,7 +3137,8 @@
    "dur": 1.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m255_bk.png"
+   "src": "img/fcssenales_m255_bk.png",
+   "cov": 1.32
   },
   {
    "id": "m256",
@@ -3011,7 +3146,8 @@
    "dur": 5.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m256.png"
+   "src": "img/fcssenales_m256.png",
+   "cov": 5.32
   },
   {
    "id": "cmp_45_depthphoto",
@@ -3038,7 +3174,8 @@
    "dur": 4.85,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m257.png"
+   "src": "img/fcssenales_m257.png",
+   "cov": 4.85
   },
   {
    "id": "m258",
@@ -3054,7 +3191,8 @@
    "dur": 8.41,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m259.png"
+   "src": "img/fcssenales_m259.png",
+   "cov": 8.41
   },
   {
    "id": "m260",
@@ -3062,7 +3200,8 @@
    "dur": 4.39,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m260.png"
+   "src": "img/fcssenales_m260.png",
+   "cov": 4.39
   },
   {
    "id": "cmp_46_callout",
@@ -3097,7 +3236,8 @@
    "dur": 4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m263.png"
+   "src": "img/fcssenales_m263.png",
+   "cov": 4
   },
   {
    "id": "m264",
@@ -3113,7 +3253,8 @@
    "dur": 1.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m264_bk.png"
+   "src": "img/fcssenales_m264_bk.png",
+   "cov": 1.04
   },
   {
    "id": "m265",
@@ -3121,7 +3262,8 @@
    "dur": 4.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m265.png"
+   "src": "img/fcssenales_m265.png",
+   "cov": 4.54
   },
   {
    "id": "m266",
@@ -3153,7 +3295,8 @@
    "dur": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m267.png"
+   "src": "img/fcssenales_m267.png",
+   "cov": 3.94
   },
   {
    "id": "m268",
@@ -3169,7 +3312,8 @@
    "dur": 1.47,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m268_bk.png"
+   "src": "img/fcssenales_m268_bk.png",
+   "cov": 1.47
   },
   {
    "id": "m269",
@@ -3185,7 +3329,8 @@
    "dur": 3.95,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m270.png"
+   "src": "img/fcssenales_m270.png",
+   "cov": 3.95
   },
   {
    "id": "m271",
@@ -3245,7 +3390,8 @@
    "dur": 0.95,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m273_bk.png"
+   "src": "img/fcssenales_m273_bk.png",
+   "cov": 0.95
   },
   {
    "id": "m274",
@@ -3253,7 +3399,8 @@
    "dur": 6.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m274.png"
+   "src": "img/fcssenales_m274.png",
+   "cov": 6.9
   },
   {
    "id": "m275",
@@ -3261,7 +3408,8 @@
    "dur": 4.93,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m275.png"
+   "src": "img/fcssenales_m275.png",
+   "cov": 4.93
   },
   {
    "id": "m276",
@@ -3277,7 +3425,8 @@
    "dur": 6.29,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m277.png"
+   "src": "img/fcssenales_m277.png",
+   "cov": 6.29
   },
   {
    "id": "m278",
@@ -3293,7 +3442,8 @@
    "dur": 2.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m278_bk.png"
+   "src": "img/fcssenales_m278_bk.png",
+   "cov": 2.6
   },
   {
    "id": "m279",
@@ -3301,7 +3451,8 @@
    "dur": 5.33,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m279.png"
+   "src": "img/fcssenales_m279.png",
+   "cov": 5.33
   },
   {
    "id": "cmp_49_guidecta",
@@ -3401,7 +3552,8 @@
    "dur": 5.79,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m283.png"
+   "src": "img/fcssenales_m283.png",
+   "cov": 5.79
   },
   {
    "id": "m284",
@@ -3409,7 +3561,8 @@
    "dur": 4.61,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m284.png"
+   "src": "img/fcssenales_m284.png",
+   "cov": 4.61
   },
   {
    "id": "cmp_51_lowerthird",
@@ -3436,7 +3589,8 @@
    "dur": 3.55,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m286.png"
+   "src": "img/fcssenales_m286.png",
+   "cov": 3.55
   },
   {
    "id": "m287",
@@ -3460,7 +3614,8 @@
    "dur": 1.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m288_bk.png"
+   "src": "img/fcssenales_m288_bk.png",
+   "cov": 1.9
   },
   {
    "id": "m289",
@@ -3468,7 +3623,8 @@
    "dur": 4.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m289.png"
+   "src": "img/fcssenales_m289.png",
+   "cov": 4.14
   },
   {
    "id": "cmp_52_annotated",
@@ -3493,7 +3649,8 @@
    "dur": 6.39,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m290.png"
+   "src": "img/fcssenales_m290.png",
+   "cov": 6.39
   },
   {
    "id": "m291",
@@ -3509,7 +3666,8 @@
    "dur": 0.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m291_bk.png"
+   "src": "img/fcssenales_m291_bk.png",
+   "cov": 0.3
   },
   {
    "id": "m292",
@@ -3517,7 +3675,8 @@
    "dur": 4.19,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m292.png"
+   "src": "img/fcssenales_m292.png",
+   "cov": 4.19
   },
   {
    "id": "m293",
@@ -3533,7 +3692,8 @@
    "dur": 11.11,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m294.png"
+   "src": "img/fcssenales_m294.png",
+   "cov": 11.11
   },
   {
    "id": "m295",
@@ -3568,7 +3728,8 @@
    "dur": 6.95,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m296_bk.png"
+   "src": "img/fcssenales_m296_bk.png",
+   "cov": 6.95
   },
   {
    "id": "m297",
@@ -3576,7 +3737,8 @@
    "dur": 4.63,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m297.png"
+   "src": "img/fcssenales_m297.png",
+   "cov": 4.63
   },
   {
    "id": "m298",
@@ -3592,7 +3754,8 @@
    "dur": 1.71,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m298_bk.png"
+   "src": "img/fcssenales_m298_bk.png",
+   "cov": 1.71
   },
   {
    "id": "m299",
@@ -3600,7 +3763,8 @@
    "dur": 8.74,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m299.png"
+   "src": "img/fcssenales_m299.png",
+   "cov": 8.74
   },
   {
    "id": "m300",
@@ -3608,7 +3772,8 @@
    "dur": 3.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m300.png"
+   "src": "img/fcssenales_m300.png",
+   "cov": 3.46
   },
   {
    "id": "m301",
@@ -3656,7 +3821,8 @@
    "dur": 4.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m302.png"
+   "src": "img/fcssenales_m302.png",
+   "cov": 4.02
   },
   {
    "id": "m303",
@@ -3664,7 +3830,8 @@
    "dur": 2.57,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m303.png"
+   "src": "img/fcssenales_m303.png",
+   "cov": 2.57
   },
   {
    "id": "m304",
@@ -3672,7 +3839,8 @@
    "dur": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m304.png"
+   "src": "img/fcssenales_m304.png",
+   "cov": 4.82
   },
   {
    "id": "m305",
@@ -3688,7 +3856,8 @@
    "dur": 1.13,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m305_bk.png"
+   "src": "img/fcssenales_m305_bk.png",
+   "cov": 1.13
   },
   {
    "id": "m306",
@@ -3696,7 +3865,8 @@
    "dur": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m306.png"
+   "src": "img/fcssenales_m306.png",
+   "cov": 4.48
   },
   {
    "id": "m307",
@@ -3712,7 +3882,8 @@
    "dur": 4.53,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m308.png"
+   "src": "img/fcssenales_m308.png",
+   "cov": 4.53
   },
   {
    "id": "m309",
@@ -3720,7 +3891,8 @@
    "dur": 4.39,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m309.png"
+   "src": "img/fcssenales_m309.png",
+   "cov": 4.39
   },
   {
    "id": "m310",
@@ -3766,7 +3938,8 @@
    "dur": 2.47,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m311_bk.png"
+   "src": "img/fcssenales_m311_bk.png",
+   "cov": 2.47
   },
   {
    "id": "m312",
@@ -3774,7 +3947,8 @@
    "dur": 2.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m312.png"
+   "src": "img/fcssenales_m312.png",
+   "cov": 2.96
   },
   {
    "id": "m313",
@@ -3782,7 +3956,8 @@
    "dur": 3.07,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m313.png"
+   "src": "img/fcssenales_m313.png",
+   "cov": 3.07
   },
   {
    "id": "m314",
@@ -3798,7 +3973,8 @@
    "dur": 6.11,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m315.png"
+   "src": "img/fcssenales_m315.png",
+   "cov": 6.11
   },
   {
    "id": "m316",
@@ -3847,7 +4023,8 @@
    "dur": 2.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m318.png"
+   "src": "img/fcssenales_m318.png",
+   "cov": 2.65
   },
   {
    "id": "m319",
@@ -3882,7 +4059,8 @@
    "dur": 3.93,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m321.png"
+   "src": "img/fcssenales_m321.png",
+   "cov": 3.93
   },
   {
    "id": "cmp_58_ring3d",
@@ -3951,7 +4129,8 @@
    "dur": 0.41,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m322_bk.png"
+   "src": "img/fcssenales_m322_bk.png",
+   "cov": 0.41
   },
   {
    "id": "m323",
@@ -3959,7 +4138,8 @@
    "dur": 3.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m323.png"
+   "src": "img/fcssenales_m323.png",
+   "cov": 3.65
   },
   {
    "id": "m324",
@@ -3975,7 +4155,8 @@
    "dur": 3.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m325.png"
+   "src": "img/fcssenales_m325.png",
+   "cov": 3.58
   },
   {
    "id": "cmp_59_lowerthird",
@@ -4002,7 +4183,8 @@
    "dur": 4.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m327.png"
+   "src": "img/fcssenales_m327.png",
+   "cov": 4.48
   },
   {
    "id": "m328",
@@ -4018,7 +4200,8 @@
    "dur": 0.43,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m328_bk.png"
+   "src": "img/fcssenales_m328_bk.png",
+   "cov": 0.43
   },
   {
    "id": "m329",
@@ -4026,7 +4209,8 @@
    "dur": 2.76,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m329.png"
+   "src": "img/fcssenales_m329.png",
+   "cov": 2.76
   },
   {
    "id": "cmp_60_process",
@@ -4080,7 +4264,8 @@
    "dur": 3.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m332.png"
+   "src": "img/fcssenales_m332.png",
+   "cov": 3.84
   },
   {
    "id": "m333",
@@ -4096,7 +4281,8 @@
    "dur": 3.53,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m334.png"
+   "src": "img/fcssenales_m334.png",
+   "cov": 3.53
   },
   {
    "id": "m335",
@@ -4104,7 +4290,8 @@
    "dur": 5.17,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m335.png"
+   "src": "img/fcssenales_m335.png",
+   "cov": 5.17
   },
   {
    "id": "m336",
@@ -4112,7 +4299,8 @@
    "dur": 2.37,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m336.png"
+   "src": "img/fcssenales_m336.png",
+   "cov": 2.37
   },
   {
    "id": "cmp_61_frasecinetica",
@@ -4154,7 +4342,8 @@
    "dur": 3.69,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m338.png"
+   "src": "img/fcssenales_m338.png",
+   "cov": 3.69
   },
   {
    "id": "m339",
@@ -4170,7 +4359,8 @@
    "dur": 5.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m340.png"
+   "src": "img/fcssenales_m340.png",
+   "cov": 5.42
   },
   {
    "id": "cmp_62_annotated",
@@ -4200,7 +4390,8 @@
    "dur": 4.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m341.png"
+   "src": "img/fcssenales_m341.png",
+   "cov": 4.58
   },
   {
    "id": "m342",
@@ -4216,7 +4407,8 @@
    "dur": 3.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m343.png"
+   "src": "img/fcssenales_m343.png",
+   "cov": 3.18
   },
   {
    "id": "m344",
@@ -4232,7 +4424,8 @@
    "dur": 4.45,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m345.png"
+   "src": "img/fcssenales_m345.png",
+   "cov": 4.45
   },
   {
    "id": "m346",
@@ -4270,7 +4463,8 @@
    "dur": 1.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m346_bk.png"
+   "src": "img/fcssenales_m346_bk.png",
+   "cov": 1.58
   },
   {
    "id": "m347",
@@ -4278,7 +4472,8 @@
    "dur": 4.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m347.png"
+   "src": "img/fcssenales_m347.png",
+   "cov": 4.9
   },
   {
    "id": "m348",
@@ -4302,7 +4497,8 @@
    "dur": 4.41,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m350.png"
+   "src": "img/fcssenales_m350.png",
+   "cov": 4.41
   },
   {
    "id": "m351",
@@ -4318,7 +4514,8 @@
    "dur": 4.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m352.png"
+   "src": "img/fcssenales_m352.png",
+   "cov": 4.2
   },
   {
    "id": "m353",
@@ -4326,7 +4523,8 @@
    "dur": 5.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m353.png"
+   "src": "img/fcssenales_m353.png",
+   "cov": 5.52
   },
   {
    "id": "cmp_64_mitoverdad",
@@ -4352,7 +4550,8 @@
    "dur": 4.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m355.png"
+   "src": "img/fcssenales_m355.png",
+   "cov": 4.73
   },
   {
    "id": "m356",
@@ -4379,7 +4578,8 @@
    "dur": 3.37,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m357.png"
+   "src": "img/fcssenales_m357.png",
+   "cov": 3.37
   },
   {
    "id": "m358",
@@ -4387,7 +4587,8 @@
    "dur": 3.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m358.png"
+   "src": "img/fcssenales_m358.png",
+   "cov": 3.26
   },
   {
    "id": "m359",
@@ -4403,7 +4604,8 @@
    "dur": 0.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m359_bk.png"
+   "src": "img/fcssenales_m359_bk.png",
+   "cov": 0.52
   },
   {
    "id": "m360",
@@ -4411,7 +4613,8 @@
    "dur": 2.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m360.png"
+   "src": "img/fcssenales_m360.png",
+   "cov": 2.8
   },
   {
    "id": "m361",
@@ -4435,7 +4638,8 @@
    "dur": 1.19,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m362_bk.png"
+   "src": "img/fcssenales_m362_bk.png",
+   "cov": 1.19
   },
   {
    "id": "m363",
@@ -4443,7 +4647,8 @@
    "dur": 5.61,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m363.png"
+   "src": "img/fcssenales_m363.png",
+   "cov": 5.61
   },
   {
    "id": "m364",
@@ -4451,7 +4656,8 @@
    "dur": 2.83,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m364.png"
+   "src": "img/fcssenales_m364.png",
+   "cov": 2.83
   },
   {
    "id": "m365",
@@ -4496,7 +4702,8 @@
    "dur": 4.51,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m366.png"
+   "src": "img/fcssenales_m366.png",
+   "cov": 4.51
   },
   {
    "id": "m367",
@@ -4512,7 +4719,8 @@
    "dur": 0.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m367_bk.png"
+   "src": "img/fcssenales_m367_bk.png",
+   "cov": 0.62
   },
   {
    "id": "m368",
@@ -4536,7 +4744,8 @@
    "dur": 0.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m369_bk.png"
+   "src": "img/fcssenales_m369_bk.png",
+   "cov": 0.73
   },
   {
    "id": "m370",
@@ -4560,7 +4769,8 @@
    "dur": 2.57,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m372.png"
+   "src": "img/fcssenales_m372.png",
+   "cov": 2.57
   },
   {
    "id": "m373",
@@ -4576,7 +4786,8 @@
    "dur": 3.79,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m374.png"
+   "src": "img/fcssenales_m374.png",
+   "cov": 3.79
   },
   {
    "id": "m375",
@@ -4592,7 +4803,8 @@
    "dur": 0.99,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m375_bk.png"
+   "src": "img/fcssenales_m375_bk.png",
+   "cov": 0.99
   },
   {
    "id": "m376",
@@ -4600,7 +4812,8 @@
    "dur": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m376.png"
+   "src": "img/fcssenales_m376.png",
+   "cov": 3.98
   },
   {
    "id": "m377",
@@ -4616,7 +4829,8 @@
    "dur": 3.15,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m378.png"
+   "src": "img/fcssenales_m378.png",
+   "cov": 3.15
   },
   {
    "id": "m379",
@@ -4651,7 +4865,8 @@
    "dur": 3.37,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m380.png"
+   "src": "img/fcssenales_m380.png",
+   "cov": 3.37
   },
   {
    "id": "m381",
@@ -4667,7 +4882,8 @@
    "dur": 3.98,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m382.png"
+   "src": "img/fcssenales_m382.png",
+   "cov": 3.98
   },
   {
    "id": "m383",
@@ -4691,7 +4907,8 @@
    "dur": 4.61,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m385.png"
+   "src": "img/fcssenales_m385.png",
+   "cov": 4.61
   },
   {
    "id": "cmp_69_guardaesto",
@@ -4722,7 +4939,8 @@
    "dur": 4.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m387.png"
+   "src": "img/fcssenales_m387.png",
+   "cov": 4.82
   },
   {
    "id": "m388",
@@ -4768,7 +4986,8 @@
    "dur": 4.63,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m390.png"
+   "src": "img/fcssenales_m390.png",
+   "cov": 4.63
   },
   {
    "id": "m391",
@@ -4784,7 +5003,8 @@
    "dur": 1.01,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m391_bk.png"
+   "src": "img/fcssenales_m391_bk.png",
+   "cov": 1.01
   },
   {
    "id": "m392",
@@ -4800,7 +5020,8 @@
    "dur": 3.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m393.png"
+   "src": "img/fcssenales_m393.png",
+   "cov": 3.32
   },
   {
    "id": "m394",
@@ -4808,7 +5029,8 @@
    "dur": 7.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m394.png"
+   "src": "img/fcssenales_m394.png",
+   "cov": 7.16
   },
   {
    "id": "cmp_71_chips",
@@ -4847,7 +5069,8 @@
    "dur": 6.63,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m397.png"
+   "src": "img/fcssenales_m397.png",
+   "cov": 6.63
   },
   {
    "id": "m398",
@@ -4855,7 +5078,8 @@
    "dur": 4.35,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m398.png"
+   "src": "img/fcssenales_m398.png",
+   "cov": 4.35
   },
   {
    "id": "m399",
@@ -4897,7 +5121,8 @@
    "dur": 5.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m400.png"
+   "src": "img/fcssenales_m400.png",
+   "cov": 5.65
   },
   {
    "id": "m401",
@@ -4905,7 +5130,8 @@
    "dur": 7.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m401.png"
+   "src": "img/fcssenales_m401.png",
+   "cov": 7.46
   },
   {
    "id": "m402",
@@ -4921,7 +5147,8 @@
    "dur": 4.91,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m403.png"
+   "src": "img/fcssenales_m403.png",
+   "cov": 4.91
   },
   {
    "id": "m404",
@@ -4929,7 +5156,8 @@
    "dur": 4.26,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m404.png"
+   "src": "img/fcssenales_m404.png",
+   "cov": 4.26
   },
   {
    "id": "m405",
@@ -4945,7 +5173,8 @@
    "dur": 1.67,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m405_bk.png"
+   "src": "img/fcssenales_m405_bk.png",
+   "cov": 1.67
   },
   {
    "id": "m406",
@@ -4953,7 +5182,8 @@
    "dur": 3.67,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m406.png"
+   "src": "img/fcssenales_m406.png",
+   "cov": 3.67
   },
   {
    "id": "m407",
@@ -5022,7 +5252,8 @@
    "dur": 2.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m407_bk.png"
+   "src": "img/fcssenales_m407_bk.png",
+   "cov": 2.28
   },
   {
    "id": "m408",
@@ -5030,7 +5261,8 @@
    "dur": 4.37,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m408.png"
+   "src": "img/fcssenales_m408.png",
+   "cov": 4.37
   },
   {
    "id": "m409",
@@ -5038,7 +5270,8 @@
    "dur": 4.35,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m409.png"
+   "src": "img/fcssenales_m409.png",
+   "cov": 4.35
   },
   {
    "id": "m410",
@@ -5062,7 +5295,8 @@
    "dur": 6.35,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m412.png"
+   "src": "img/fcssenales_m412.png",
+   "cov": 6.35
   },
   {
    "id": "cmp_74_lowerthird",
@@ -5111,7 +5345,8 @@
    "dur": 6.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m414.png"
+   "src": "img/fcssenales_m414.png",
+   "cov": 6.06
   },
   {
    "id": "m415",
@@ -5127,7 +5362,8 @@
    "dur": 2.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m415_bk.png"
+   "src": "img/fcssenales_m415_bk.png",
+   "cov": 2.52
   },
   {
    "id": "m416",
@@ -5135,7 +5371,8 @@
    "dur": 4.87,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m416.png"
+   "src": "img/fcssenales_m416.png",
+   "cov": 4.87
   },
   {
    "id": "cmp_76_glasstest",
@@ -5156,7 +5393,8 @@
    "dur": 2.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m417.png"
+   "src": "img/fcssenales_m417.png",
+   "cov": 2.58
   },
   {
    "id": "m418",
@@ -5172,7 +5410,8 @@
    "dur": 5.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m419.png"
+   "src": "img/fcssenales_m419.png",
+   "cov": 5.18
   },
   {
    "id": "m420",
@@ -5188,7 +5427,8 @@
    "dur": 1.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m420_bk.png"
+   "src": "img/fcssenales_m420_bk.png",
+   "cov": 1.12
   },
   {
    "id": "m421",
@@ -5196,7 +5436,8 @@
    "dur": 5.28,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m421.png"
+   "src": "img/fcssenales_m421.png",
+   "cov": 5.28
   },
   {
    "id": "m422",
@@ -5212,7 +5453,8 @@
    "dur": 6.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m423.png"
+   "src": "img/fcssenales_m423.png",
+   "cov": 6.65
   },
   {
    "id": "m424",
@@ -5228,7 +5470,8 @@
    "dur": 2.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m425.png"
+   "src": "img/fcssenales_m425.png",
+   "cov": 2.82
   },
   {
    "id": "m426",
@@ -5274,7 +5517,8 @@
    "dur": 0.3,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m427_bk.png"
+   "src": "img/fcssenales_m427_bk.png",
+   "cov": 0.3
   },
   {
    "id": "m428",
@@ -5282,7 +5526,8 @@
    "dur": 12.35,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m428.png"
+   "src": "img/fcssenales_m428.png",
+   "cov": 12.35
   },
   {
    "id": "m429",
@@ -5290,7 +5535,8 @@
    "dur": 2.89,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m429.png"
+   "src": "img/fcssenales_m429.png",
+   "cov": 2.89
   },
   {
    "id": "m430",
@@ -5306,7 +5552,8 @@
    "dur": 5.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m430_bk.png"
+   "src": "img/fcssenales_m430_bk.png",
+   "cov": 5.58
   },
   {
    "id": "m431",
@@ -5333,7 +5580,8 @@
    "dur": 0.39,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m431_bk.png"
+   "src": "img/fcssenales_m431_bk.png",
+   "cov": 0.39
   },
   {
    "id": "m432",
@@ -5349,7 +5597,8 @@
    "dur": 4.11,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m433.png"
+   "src": "img/fcssenales_m433.png",
+   "cov": 4.11
   },
   {
    "id": "m434",
@@ -5381,7 +5630,8 @@
    "dur": 0.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m434_bk.png"
+   "src": "img/fcssenales_m434_bk.png",
+   "cov": 0.58
   },
   {
    "id": "m435",
@@ -5389,7 +5639,8 @@
    "dur": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m435.png"
+   "src": "img/fcssenales_m435.png",
+   "cov": 4.44
   },
   {
    "id": "m436",
@@ -5405,7 +5656,8 @@
    "dur": 4.32,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m437.png"
+   "src": "img/fcssenales_m437.png",
+   "cov": 4.32
   },
   {
    "id": "m438",
@@ -5413,7 +5665,8 @@
    "dur": 3.71,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m438.png"
+   "src": "img/fcssenales_m438.png",
+   "cov": 3.71
   },
   {
    "id": "m439",
@@ -5421,7 +5674,8 @@
    "dur": 4.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m439.png"
+   "src": "img/fcssenales_m439.png",
+   "cov": 4.4
   },
   {
    "id": "m440",
@@ -5437,7 +5691,8 @@
    "dur": 6.85,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m441.png"
+   "src": "img/fcssenales_m441.png",
+   "cov": 6.85
   },
   {
    "id": "m442",
@@ -5445,7 +5700,8 @@
    "dur": 4.13,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m442.png"
+   "src": "img/fcssenales_m442.png",
+   "cov": 4.13
   },
   {
    "id": "cmp_80_lowerthird",
@@ -5494,7 +5750,8 @@
    "dur": 2.71,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m445.png"
+   "src": "img/fcssenales_m445.png",
+   "cov": 2.71
   },
   {
    "id": "m446",
@@ -5510,7 +5767,8 @@
    "dur": 1.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m446_bk.png"
+   "src": "img/fcssenales_m446_bk.png",
+   "cov": 1.14
   },
   {
    "id": "m447",
@@ -5518,7 +5776,8 @@
    "dur": 12.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m447.png"
+   "src": "img/fcssenales_m447.png",
+   "cov": 12.46
   },
   {
    "id": "m448",
@@ -5587,7 +5846,8 @@
    "dur": 2.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m448_bk.png"
+   "src": "img/fcssenales_m448_bk.png",
+   "cov": 2.56
   },
   {
    "id": "m449",
@@ -5595,7 +5855,8 @@
    "dur": 8.4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m449.png"
+   "src": "img/fcssenales_m449.png",
+   "cov": 8.4
   },
   {
    "id": "m450",
@@ -5603,7 +5864,8 @@
    "dur": 3.87,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m450.png"
+   "src": "img/fcssenales_m450.png",
+   "cov": 3.87
   },
   {
    "id": "m451",
@@ -5627,7 +5889,8 @@
    "dur": 7.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m453.png"
+   "src": "img/fcssenales_m453.png",
+   "cov": 7.04
   },
   {
    "id": "m454",
@@ -5643,7 +5906,8 @@
    "dur": 9.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m454_bk.png"
+   "src": "img/fcssenales_m454_bk.png",
+   "cov": 9.22
   },
   {
    "id": "cmp_83_lowerthird",
@@ -5662,7 +5926,8 @@
    "dur": 4.17,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m455.png"
+   "src": "img/fcssenales_m455.png",
+   "cov": 4.17
   },
   {
    "id": "m456",
@@ -5678,7 +5943,8 @@
    "dur": 3.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m457.png"
+   "src": "img/fcssenales_m457.png",
+   "cov": 3.62
   },
   {
    "id": "m458",
@@ -5694,7 +5960,8 @@
    "dur": 2.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m458_bk.png"
+   "src": "img/fcssenales_m458_bk.png",
+   "cov": 2.46
   },
   {
    "id": "m459",
@@ -5702,7 +5969,8 @@
    "dur": 2.91,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m459.png"
+   "src": "img/fcssenales_m459.png",
+   "cov": 2.91
   },
   {
    "id": "m460",
@@ -5710,7 +5978,8 @@
    "dur": 3.19,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m460.png"
+   "src": "img/fcssenales_m460.png",
+   "cov": 3.19
   },
   {
    "id": "cmp_84_annotated",
@@ -5774,7 +6043,8 @@
    "dur": 6.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m463.png"
+   "src": "img/fcssenales_m463.png",
+   "cov": 6.38
   },
   {
    "id": "m464",
@@ -5790,7 +6060,8 @@
    "dur": 2.29,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m464_bk.png"
+   "src": "img/fcssenales_m464_bk.png",
+   "cov": 2.29
   },
   {
    "id": "m465",
@@ -5806,7 +6077,8 @@
    "dur": 3.19,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m466.png"
+   "src": "img/fcssenales_m466.png",
+   "cov": 3.19
   },
   {
    "id": "m467",
@@ -5822,7 +6094,8 @@
    "dur": 2.03,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m467_bk.png"
+   "src": "img/fcssenales_m467_bk.png",
+   "cov": 2.03
   },
   {
    "id": "m468",
@@ -5830,7 +6103,8 @@
    "dur": 2.8,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m468.png"
+   "src": "img/fcssenales_m468.png",
+   "cov": 2.8
   },
   {
    "id": "m469",
@@ -5838,7 +6112,8 @@
    "dur": 4.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m469.png"
+   "src": "img/fcssenales_m469.png",
+   "cov": 4.72
   },
   {
    "id": "m470",
@@ -5873,7 +6148,8 @@
    "dur": 0.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m470_bk.png"
+   "src": "img/fcssenales_m470_bk.png",
+   "cov": 0.36
   },
   {
    "id": "m471",
@@ -5881,7 +6157,8 @@
    "dur": 3.87,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m471.png"
+   "src": "img/fcssenales_m471.png",
+   "cov": 3.87
   },
   {
    "id": "m472",
@@ -5897,7 +6174,8 @@
    "dur": 1.71,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m472_bk.png"
+   "src": "img/fcssenales_m472_bk.png",
+   "cov": 1.71
   },
   {
    "id": "m473",
@@ -5921,7 +6199,8 @@
    "dur": 1.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m474_bk.png"
+   "src": "img/fcssenales_m474_bk.png",
+   "cov": 1.64
   },
   {
    "id": "m475",
@@ -5937,7 +6216,8 @@
    "dur": 3.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m476.png"
+   "src": "img/fcssenales_m476.png",
+   "cov": 3.56
   },
   {
    "id": "m477",
@@ -6006,7 +6286,8 @@
    "dur": 3.85,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m478.png"
+   "src": "img/fcssenales_m478.png",
+   "cov": 3.85
   },
   {
    "id": "m479",
@@ -6014,7 +6295,8 @@
    "dur": 5.61,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m479.png"
+   "src": "img/fcssenales_m479.png",
+   "cov": 5.61
   },
   {
    "id": "m480",
@@ -6022,7 +6304,8 @@
    "dur": 4.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m480.png"
+   "src": "img/fcssenales_m480.png",
+   "cov": 4.04
   },
   {
    "id": "cmp_88_triptych",
@@ -6065,7 +6348,8 @@
    "dur": 2.69,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m482.png"
+   "src": "img/fcssenales_m482.png",
+   "cov": 2.69
   },
   {
    "id": "m483",
@@ -6081,7 +6365,8 @@
    "dur": 2.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m484.png"
+   "src": "img/fcssenales_m484.png",
+   "cov": 2.96
   },
   {
    "id": "m485",
@@ -6089,7 +6374,8 @@
    "dur": 4.35,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m485.png"
+   "src": "img/fcssenales_m485.png",
+   "cov": 4.35
   },
   {
    "id": "m486",
@@ -6113,7 +6399,8 @@
    "dur": 3.81,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m488.png"
+   "src": "img/fcssenales_m488.png",
+   "cov": 3.81
   },
   {
    "id": "m489",
@@ -6121,7 +6408,8 @@
    "dur": 3.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m489.png"
+   "src": "img/fcssenales_m489.png",
+   "cov": 3.94
   },
   {
    "id": "cmp_89_lowerthird",
@@ -6148,7 +6436,8 @@
    "dur": 1.41,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m490_bk.png"
+   "src": "img/fcssenales_m490_bk.png",
+   "cov": 1.41
   },
   {
    "id": "m491",
@@ -6156,7 +6445,8 @@
    "dur": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m491.png"
+   "src": "img/fcssenales_m491.png",
+   "cov": 4.42
   },
   {
    "id": "m492",
@@ -6172,7 +6462,8 @@
    "dur": 4.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m493.png"
+   "src": "img/fcssenales_m493.png",
+   "cov": 4.56
   },
   {
    "id": "m494",
@@ -6188,7 +6479,8 @@
    "dur": 5.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m495.png"
+   "src": "img/fcssenales_m495.png",
+   "cov": 5.48
   },
   {
    "id": "m496",
@@ -6204,7 +6496,8 @@
    "dur": 3.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m497.png"
+   "src": "img/fcssenales_m497.png",
+   "cov": 3.5
   },
   {
    "id": "m498",
@@ -6231,7 +6524,8 @@
    "dur": 0.29,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m498_bk.png"
+   "src": "img/fcssenales_m498_bk.png",
+   "cov": 0.29
   },
   {
    "id": "m499",
@@ -6247,7 +6541,8 @@
    "dur": 3.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m499_bk.png"
+   "src": "img/fcssenales_m499_bk.png",
+   "cov": 3.54
   },
   {
    "id": "m500",
@@ -6255,7 +6550,8 @@
    "dur": 4.75,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m500.png"
+   "src": "img/fcssenales_m500.png",
+   "cov": 4.75
   },
   {
    "id": "m501",
@@ -6263,7 +6559,8 @@
    "dur": 2.5,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m501.png"
+   "src": "img/fcssenales_m501.png",
+   "cov": 2.5
   },
   {
    "id": "m502",
@@ -6294,7 +6591,8 @@
    "dur": 5.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m503.png"
+   "src": "img/fcssenales_m503.png",
+   "cov": 5.02
   },
   {
    "id": "m504",
@@ -6318,7 +6616,8 @@
    "dur": 0.78,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m505_bk.png"
+   "src": "img/fcssenales_m505_bk.png",
+   "cov": 0.78
   },
   {
    "id": "m506",
@@ -6353,7 +6652,8 @@
    "dur": 1.79,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m507_bk.png"
+   "src": "img/fcssenales_m507_bk.png",
+   "cov": 1.79
   },
   {
    "id": "m508",
@@ -6361,7 +6661,8 @@
    "dur": 4.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m508.png"
+   "src": "img/fcssenales_m508.png",
+   "cov": 4.44
   },
   {
    "id": "cmp_93_ring3d",
@@ -6430,7 +6731,8 @@
    "dur": 3.75,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m510.png"
+   "src": "img/fcssenales_m510.png",
+   "cov": 3.75
   },
   {
    "id": "m511",
@@ -6438,7 +6740,8 @@
    "dur": 5.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m511.png"
+   "src": "img/fcssenales_m511.png",
+   "cov": 5.64
   },
   {
    "id": "m512",
@@ -6454,7 +6757,8 @@
    "dur": 3.79,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m513.png"
+   "src": "img/fcssenales_m513.png",
+   "cov": 3.79
   },
   {
    "id": "m514",
@@ -6478,7 +6782,8 @@
    "dur": 3.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m516.png"
+   "src": "img/fcssenales_m516.png",
+   "cov": 3.54
   },
   {
    "id": "m517",
@@ -6494,7 +6799,8 @@
    "dur": 3.63,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m518.png"
+   "src": "img/fcssenales_m518.png",
+   "cov": 3.63
   },
   {
    "id": "m519",
@@ -6502,7 +6808,8 @@
    "dur": 4.33,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m519.png"
+   "src": "img/fcssenales_m519.png",
+   "cov": 4.33
   },
   {
    "id": "cmp_94_frasecinetica",
@@ -6604,7 +6911,8 @@
    "dur": 6.17,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m523.png"
+   "src": "img/fcssenales_m523.png",
+   "cov": 6.17
   },
   {
    "id": "cmp_96_lowerthird",
@@ -6631,7 +6939,8 @@
    "dur": 6.67,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m525.png"
+   "src": "img/fcssenales_m525.png",
+   "cov": 6.67
   },
   {
    "id": "m526",
@@ -6647,7 +6956,8 @@
    "dur": 2.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m527.png"
+   "src": "img/fcssenales_m527.png",
+   "cov": 2.73
   },
   {
    "id": "m528",
@@ -6663,7 +6973,8 @@
    "dur": 3.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m529.png"
+   "src": "img/fcssenales_m529.png",
+   "cov": 3.65
   },
   {
    "id": "cmp_97_callout",
@@ -6690,7 +7001,8 @@
    "dur": 5.05,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m531.png"
+   "src": "img/fcssenales_m531.png",
+   "cov": 5.05
   },
   {
    "id": "m532",
@@ -6698,7 +7010,8 @@
    "dur": 5.35,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m532_bk.png"
+   "src": "img/fcssenales_m532_bk.png",
+   "cov": 5.35
   },
   {
    "id": "m533",
@@ -6706,7 +7019,8 @@
    "dur": 2.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m533.png"
+   "src": "img/fcssenales_m533.png",
+   "cov": 2.42
   },
   {
    "id": "m534",
@@ -6714,7 +7028,8 @@
    "dur": 2.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m534.png"
+   "src": "img/fcssenales_m534.png",
+   "cov": 2.56
   },
   {
    "id": "m535",
@@ -6722,7 +7037,8 @@
    "dur": 3.08,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m535.png"
+   "src": "img/fcssenales_m535.png",
+   "cov": 3.08
   },
   {
    "id": "m536",
@@ -6738,7 +7054,8 @@
    "dur": 2.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m537.png"
+   "src": "img/fcssenales_m537.png",
+   "cov": 2.65
   },
   {
    "id": "m538",
@@ -6788,7 +7105,8 @@
    "dur": 4.22,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m540.png"
+   "src": "img/fcssenales_m540.png",
+   "cov": 4.22
   },
   {
    "id": "m541",
@@ -6817,7 +7135,8 @@
    "dur": 1.36,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m541_bk.png"
+   "src": "img/fcssenales_m541_bk.png",
+   "cov": 1.36
   },
   {
    "id": "m542",
@@ -6825,7 +7144,8 @@
    "dur": 5.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m542.png"
+   "src": "img/fcssenales_m542.png",
+   "cov": 5.16
   },
   {
    "id": "m543",
@@ -6833,7 +7153,8 @@
    "dur": 3.25,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m543.png"
+   "src": "img/fcssenales_m543.png",
+   "cov": 3.25
   },
   {
    "id": "m544",
@@ -6857,7 +7178,8 @@
    "dur": 6.19,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m546.png"
+   "src": "img/fcssenales_m546.png",
+   "cov": 6.19
   },
   {
    "id": "m547",
@@ -6873,7 +7195,8 @@
    "dur": 3.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m548.png"
+   "src": "img/fcssenales_m548.png",
+   "cov": 3.73
   },
   {
    "id": "m549",
@@ -6935,7 +7258,8 @@
    "dur": 3.25,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m552.png"
+   "src": "img/fcssenales_m552.png",
+   "cov": 3.25
   },
   {
    "id": "m553",
@@ -6951,7 +7275,8 @@
    "dur": 0.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m553_bk.png"
+   "src": "img/fcssenales_m553_bk.png",
+   "cov": 0.72
   },
   {
    "id": "m554",
@@ -6959,7 +7284,8 @@
    "dur": 3.67,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m554.png"
+   "src": "img/fcssenales_m554.png",
+   "cov": 3.67
   },
   {
    "id": "m555",
@@ -6991,7 +7317,8 @@
    "dur": 4.23,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m558.png"
+   "src": "img/fcssenales_m558.png",
+   "cov": 4.23
   },
   {
    "id": "cmp_102_process",
@@ -7045,7 +7372,8 @@
    "dur": 3.15,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m561.png"
+   "src": "img/fcssenales_m561.png",
+   "cov": 3.15
   },
   {
    "id": "m562",
@@ -7053,7 +7381,8 @@
    "dur": 2.48,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m562.png"
+   "src": "img/fcssenales_m562.png",
+   "cov": 2.48
   },
   {
    "id": "m563",
@@ -7069,7 +7398,8 @@
    "dur": 3.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m564.png"
+   "src": "img/fcssenales_m564.png",
+   "cov": 3.73
   },
   {
    "id": "m565",
@@ -7085,7 +7415,8 @@
    "dur": 1.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m565_bk.png"
+   "src": "img/fcssenales_m565_bk.png",
+   "cov": 1.1
   },
   {
    "id": "m566",
@@ -7093,7 +7424,8 @@
    "dur": 4.37,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m566.png"
+   "src": "img/fcssenales_m566.png",
+   "cov": 4.37
   },
   {
    "id": "cmp_103_bodymap",
@@ -7175,28 +7507,6 @@
    "src": "broll/fcssenales_m567.mp4"
   },
   {
-   "id": "cmp_104_process",
-   "start": 2641.55,
-   "dur": 9,
-   "key": "s",
-   "kind": "process",
-   "title": "La foto con moneda",
-   "steps": [
-    {
-     "title": "1 · Foto con el celular",
-     "sub": "cuando algo te llame la atención"
-    },
-    {
-     "title": "2 · Una moneda al lado",
-     "sub": "para tener el tamaño real"
-    },
-    {
-     "title": "3 · Guárdala en un álbum",
-     "sub": "que se llame Piel"
-    }
-   ]
-  },
-  {
    "id": "m568",
    "start": 2646.09,
    "dur": 4.79,
@@ -7210,7 +7520,8 @@
    "dur": 4.07,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m569.png"
+   "src": "img/fcssenales_m569.png",
+   "cov": 4.07
   },
   {
    "id": "m570",
@@ -7226,7 +7537,8 @@
    "dur": 1.72,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m570_bk.png"
+   "src": "img/fcssenales_m570_bk.png",
+   "cov": 1.72
   },
   {
    "id": "m571",
@@ -7234,7 +7546,8 @@
    "dur": 3.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m571.png"
+   "src": "img/fcssenales_m571.png",
+   "cov": 3.86
   },
   {
    "id": "m572",
@@ -7250,7 +7563,8 @@
    "dur": 1.6,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m572_bk.png"
+   "src": "img/fcssenales_m572_bk.png",
+   "cov": 1.6
   },
   {
    "id": "m573",
@@ -7266,7 +7580,8 @@
    "dur": 0.83,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m573_bk.png"
+   "src": "img/fcssenales_m573_bk.png",
+   "cov": 0.83
   },
   {
    "id": "m574",
@@ -7274,7 +7589,8 @@
    "dur": 5.75,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m574.png"
+   "src": "img/fcssenales_m574.png",
+   "cov": 5.75
   },
   {
    "id": "cmp_105_frasecinetica",
@@ -7314,7 +7630,8 @@
    "dur": 4.17,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m575.png"
+   "src": "img/fcssenales_m575.png",
+   "cov": 4.17
   },
   {
    "id": "m576",
@@ -7341,7 +7658,8 @@
    "dur": 4.87,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m577.png"
+   "src": "img/fcssenales_m577.png",
+   "cov": 4.87
   },
   {
    "id": "m578",
@@ -7349,7 +7667,8 @@
    "dur": 5.54,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m578.png"
+   "src": "img/fcssenales_m578.png",
+   "cov": 5.54
   },
   {
    "id": "m579",
@@ -7365,7 +7684,8 @@
    "dur": 3.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m580.png"
+   "src": "img/fcssenales_m580.png",
+   "cov": 3.73
   },
   {
    "id": "m581",
@@ -7410,7 +7730,8 @@
    "dur": 6.38,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m582.png"
+   "src": "img/fcssenales_m582.png",
+   "cov": 6.38
   },
   {
    "id": "m583",
@@ -7421,23 +7742,13 @@
    "src": "broll/fcssenales_m583.mp4"
   },
   {
-   "id": "cmp_108_callout",
-   "start": 2720.49,
-   "dur": 6,
-   "key": "s",
-   "kind": "callout",
-   "figure": "Diabetes Care",
-   "eyebrow": "Un equipo de Nueva York",
-   "caption": "la misma comida, el mismo día, sólo cambiando el orden",
-   "image": "img/fcssenales_m583_bk.png"
-  },
-  {
    "id": "m584",
    "start": 2724.45,
    "dur": 5.14,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m584.png"
+   "src": "img/fcssenales_m584.png",
+   "cov": 5.14
   },
   {
    "id": "m585",
@@ -7461,7 +7772,8 @@
    "dur": 2.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m587.png"
+   "src": "img/fcssenales_m587.png",
+   "cov": 2.65
   },
   {
    "id": "m588",
@@ -7477,7 +7789,8 @@
    "dur": 4.07,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m589.png"
+   "src": "img/fcssenales_m589.png",
+   "cov": 4.07
   },
   {
    "id": "m590",
@@ -7493,7 +7806,8 @@
    "dur": 4.89,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m591.png"
+   "src": "img/fcssenales_m591.png",
+   "cov": 4.89
   },
   {
    "id": "cmp_109_frasecinetica",
@@ -7567,7 +7881,8 @@
    "dur": 3.84,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m594.png"
+   "src": "img/fcssenales_m594.png",
+   "cov": 3.84
   },
   {
    "id": "m595",
@@ -7583,7 +7898,8 @@
    "dur": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m596.png"
+   "src": "img/fcssenales_m596.png",
+   "cov": 4.52
   },
   {
    "id": "m597",
@@ -7618,7 +7934,8 @@
    "dur": 3.29,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m599.png"
+   "src": "img/fcssenales_m599.png",
+   "cov": 3.29
   },
   {
    "id": "m600",
@@ -7642,7 +7959,8 @@
    "dur": 6.1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m601_bk.png"
+   "src": "img/fcssenales_m601_bk.png",
+   "cov": 6.1
   },
   {
    "id": "m602",
@@ -7678,7 +7996,8 @@
    "dur": 1.06,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m602_bk.png"
+   "src": "img/fcssenales_m602_bk.png",
+   "cov": 1.06
   },
   {
    "id": "m603",
@@ -7686,7 +8005,8 @@
    "dur": 4.42,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m603.png"
+   "src": "img/fcssenales_m603.png",
+   "cov": 4.42
   },
   {
    "id": "m604",
@@ -7702,7 +8022,8 @@
    "dur": 1.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m604_bk.png"
+   "src": "img/fcssenales_m604_bk.png",
+   "cov": 1.04
   },
   {
    "id": "m605",
@@ -7718,7 +8039,8 @@
    "dur": 6.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m606.png"
+   "src": "img/fcssenales_m606.png",
+   "cov": 6.68
   },
   {
    "id": "m607",
@@ -7745,7 +8067,8 @@
    "dur": 3.18,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m608.png"
+   "src": "img/fcssenales_m608.png",
+   "cov": 3.18
   },
   {
    "id": "m609",
@@ -7788,7 +8111,8 @@
    "dur": 4.79,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m611.png"
+   "src": "img/fcssenales_m611.png",
+   "cov": 4.79
   },
   {
    "id": "m612",
@@ -7796,7 +8120,8 @@
    "dur": 5.04,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m612.png"
+   "src": "img/fcssenales_m612.png",
+   "cov": 5.04
   },
   {
    "id": "m613",
@@ -7804,7 +8129,8 @@
    "dur": 3.96,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m613.png"
+   "src": "img/fcssenales_m613.png",
+   "cov": 3.96
   },
   {
    "id": "m614",
@@ -7812,7 +8138,8 @@
    "dur": 3.71,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m614.png"
+   "src": "img/fcssenales_m614.png",
+   "cov": 3.71
   },
   {
    "id": "m615",
@@ -7851,7 +8178,8 @@
    "dur": 4.88,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m616.png"
+   "src": "img/fcssenales_m616.png",
+   "cov": 4.88
   },
   {
    "id": "m617",
@@ -7867,7 +8195,8 @@
    "dur": 2.58,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m618.png"
+   "src": "img/fcssenales_m618.png",
+   "cov": 2.58
   },
   {
    "id": "m619",
@@ -7891,7 +8220,8 @@
    "dur": 2.99,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m620_bk.png"
+   "src": "img/fcssenales_m620_bk.png",
+   "cov": 2.99
   },
   {
    "id": "m621",
@@ -7899,7 +8229,8 @@
    "dur": 5.02,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m621.png"
+   "src": "img/fcssenales_m621.png",
+   "cov": 5.02
   },
   {
    "id": "cmp_116_mitoverdad",
@@ -7925,7 +8256,8 @@
    "dur": 0.94,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m622_bk.png"
+   "src": "img/fcssenales_m622_bk.png",
+   "cov": 0.94
   },
   {
    "id": "m623",
@@ -7933,7 +8265,8 @@
    "dur": 3.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m623.png"
+   "src": "img/fcssenales_m623.png",
+   "cov": 3.65
   },
   {
    "id": "m624",
@@ -7960,7 +8293,8 @@
    "dur": 1.2,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m624_bk.png"
+   "src": "img/fcssenales_m624_bk.png",
+   "cov": 1.2
   },
   {
    "id": "m625",
@@ -7968,7 +8302,8 @@
    "dur": 4,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m625.png"
+   "src": "img/fcssenales_m625.png",
+   "cov": 4
   },
   {
    "id": "m626",
@@ -7984,7 +8319,8 @@
    "dur": 9.61,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m627.png"
+   "src": "img/fcssenales_m627.png",
+   "cov": 9.61
   },
   {
    "id": "m628",
@@ -8027,7 +8363,8 @@
    "dur": 1.9,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m630_bk.png"
+   "src": "img/fcssenales_m630_bk.png",
+   "cov": 1.9
   },
   {
    "id": "m631",
@@ -8035,7 +8372,8 @@
    "dur": 2.35,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m631.png"
+   "src": "img/fcssenales_m631.png",
+   "cov": 2.35
   },
   {
    "id": "cmp_119_chips",
@@ -8066,7 +8404,8 @@
    "dur": 3.82,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m633.png"
+   "src": "img/fcssenales_m633.png",
+   "cov": 3.82
   },
   {
    "id": "m634",
@@ -8082,7 +8421,8 @@
    "dur": 2.62,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m635.png"
+   "src": "img/fcssenales_m635.png",
+   "cov": 2.62
   },
   {
    "id": "m636",
@@ -8154,7 +8494,8 @@
    "dur": 3.12,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m638.png"
+   "src": "img/fcssenales_m638.png",
+   "cov": 3.12
   },
   {
    "id": "m639",
@@ -8178,7 +8519,8 @@
    "dur": 2.75,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m641.png"
+   "src": "img/fcssenales_m641.png",
+   "cov": 2.75
   },
   {
    "id": "m642",
@@ -8205,7 +8547,8 @@
    "dur": 6.46,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m643.png"
+   "src": "img/fcssenales_m643.png",
+   "cov": 6.46
   },
   {
    "id": "m644",
@@ -8237,7 +8580,8 @@
    "dur": 5.44,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m646_bk.png"
+   "src": "img/fcssenales_m646_bk.png",
+   "cov": 5.44
   },
   {
    "id": "cmp_123_frasecinetica",
@@ -8268,7 +8612,8 @@
    "dur": 3.45,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m647.png"
+   "src": "img/fcssenales_m647.png",
+   "cov": 3.45
   },
   {
    "id": "m648",
@@ -8276,7 +8621,8 @@
    "dur": 2.73,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m648.png"
+   "src": "img/fcssenales_m648.png",
+   "cov": 2.73
   },
   {
    "id": "cmp_124_guardaesto",
@@ -8307,7 +8653,8 @@
    "dur": 2.64,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m650.png"
+   "src": "img/fcssenales_m650.png",
+   "cov": 2.64
   },
   {
    "id": "m651",
@@ -8323,7 +8670,8 @@
    "dur": 4.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m652.png"
+   "src": "img/fcssenales_m652.png",
+   "cov": 4.52
   },
   {
    "id": "m653",
@@ -8339,7 +8687,8 @@
    "dur": 3.68,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m654.png"
+   "src": "img/fcssenales_m654.png",
+   "cov": 3.68
   },
   {
    "id": "m655",
@@ -8379,7 +8728,8 @@
    "dur": 3.85,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m657.png"
+   "src": "img/fcssenales_m657.png",
+   "cov": 3.85
   },
   {
    "id": "m658",
@@ -8387,7 +8737,8 @@
    "dur": 6.52,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m658.png"
+   "src": "img/fcssenales_m658.png",
+   "cov": 6.52
   },
   {
    "id": "m659",
@@ -8418,7 +8769,8 @@
    "dur": 4.89,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m660.png"
+   "src": "img/fcssenales_m660.png",
+   "cov": 4.89
   },
   {
    "id": "m661",
@@ -8426,7 +8778,8 @@
    "dur": 7.05,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m661.png"
+   "src": "img/fcssenales_m661.png",
+   "cov": 7.05
   },
   {
    "id": "m662",
@@ -8442,7 +8795,8 @@
    "dur": 0.87,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m662_bk.png"
+   "src": "img/fcssenales_m662_bk.png",
+   "cov": 0.87
   },
   {
    "id": "m663",
@@ -8473,7 +8827,8 @@
    "dur": 1,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m663_bk.png"
+   "src": "img/fcssenales_m663_bk.png",
+   "cov": 1
   },
   {
    "id": "m664",
@@ -8481,7 +8836,8 @@
    "dur": 3.16,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m664.png"
+   "src": "img/fcssenales_m664.png",
+   "cov": 3.16
   },
   {
    "id": "m665",
@@ -8513,7 +8869,8 @@
    "dur": 4.56,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m668.png"
+   "src": "img/fcssenales_m668.png",
+   "cov": 4.56
   },
   {
    "id": "cmp_128_lowerthird",
@@ -8540,7 +8897,8 @@
    "dur": 1.86,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m669_bk.png"
+   "src": "img/fcssenales_m669_bk.png",
+   "cov": 1.86
   },
   {
    "id": "m670",
@@ -8548,7 +8906,8 @@
    "dur": 4.83,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m670.png"
+   "src": "img/fcssenales_m670.png",
+   "cov": 4.83
   },
   {
    "id": "m671",
@@ -8556,7 +8915,8 @@
    "dur": 5.65,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m671.png"
+   "src": "img/fcssenales_m671.png",
+   "cov": 5.65
   },
   {
    "id": "m672",
@@ -8564,7 +8924,8 @@
    "dur": 4.83,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m672.png"
+   "src": "img/fcssenales_m672.png",
+   "cov": 4.83
   },
   {
    "id": "cmp_129_frasecinetica",
@@ -8606,7 +8967,8 @@
    "dur": 0.79,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m673_bk.png"
+   "src": "img/fcssenales_m673_bk.png",
+   "cov": 0.79
   },
   {
    "id": "m674",
@@ -8622,7 +8984,8 @@
    "dur": 3.92,
    "key": "s",
    "kind": "raw",
-   "src": "img/fcssenales_m675.png"
+   "src": "img/fcssenales_m675.png",
+   "cov": 3.92
   },
   {
    "id": "cmp_130_nametag",

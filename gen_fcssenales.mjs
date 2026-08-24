@@ -77,8 +77,11 @@ for (let i = 0; i < N; i++) {
       const src = has(bk) ? bk : has(foto) ? foto : null;
       if (src) {
         const ts = +(st + cov).toFixed(2);
-        beats.push({ id: m.n + "_t", start: ts, dur: resto, key: "s", kind: "raw", src });
-        COVER.push({ start: ts, cov: +Math.min(resto, HERO_CAP + 2).toFixed(2), kind: "photo", src });
+        // en la ZONA FISH la cola tiene que tapar TODO lo que le queda al momento (el avatar no
+        // puede asomar); en la zona avatar se topa cortita porque ahí el avatar SÍ puede respirar.
+        const tcov = +Math.min(resto, st >= AVATAR_END ? 11 : HERO_CAP + 2).toFixed(2);
+        beats.push({ id: m.n + "_t", start: ts, dur: resto, key: "s", kind: "raw", src, cov: tcov });
+        COVER.push({ start: ts, cov: tcov, kind: "photo", src });
         nCola++;
       }
     }
@@ -92,7 +95,7 @@ for (let i = 0; i < N; i++) {
     // slot es un resto chico, la foto lo estira; si es grande, igual se topa en 11s (plano muerto).
     if (st >= AVATAR_END && slot - cov > 0.05 && slot - cov < 3) cov = slot;
     cov = +cov.toFixed(2);
-    beats.push({ id: m.n, start: +st.toFixed(2), dur: slot, key: "s", kind: "raw", src });
+    beats.push({ id: m.n, start: +st.toFixed(2), dur: slot, key: "s", kind: "raw", src, cov });
     COVER.push({ start: +st.toFixed(2), cov, kind: "photo", src });
   }
 }
@@ -102,6 +105,7 @@ const G = (n) => {
   const a = `img/${SLUG}_${n}.png`, b = `img/${SLUG}_${n}_bk.png`;
   return has(a) ? a : has(b) ? b : a;
 };
+const OVERLAY_K = new Set(["lowerthird", "frasecinetica"]);
 const capOfDur = { avatarpizarra: 9, mitoverdad: 6, bars: 6.5, splitlist: 9, checklist: 9, lowerthird: 6,
   frasecinetica: 5.5, nametag: 6, process: 9, callout: 6, diagram: 10, errorstinger: 2.4, guardaesto: 8,
   freezezoom: 4.5, pizarraexplica: 8.5, relojnoche: 11, whynight: 10, pricewar: 8, ingredientduo: 6.5,
@@ -141,6 +145,35 @@ for (const b of cmpBeats) {
   }
 }
 cmpBeats.sort((a, b) => a.start - b.start);
+
+// ⛔ COLISIONES: `compDur` recorta un componente hasta donde arranca el SIGUIENTE. En el primer
+// render eso dejó al anillo 3D, al tríptico, al mapa del cuerpo y al orden del plato en 2 s
+// (empezaban y desaparecían). Las escenas grandes mandan: el componente chico que caiga adentro
+// de su ventana mínima se descarta.
+{
+  const PREMIUM = new Set(["ring3d", "triptych", "depthphoto", "glasstest", "skinlayers", "bodymap",
+    "plateorder", "beforeafter", "avatarpizarra", "guidecta", "pizarraexplica", "process"]);
+  const MIN = { ring3d: 6.5, triptych: 9, depthphoto: 6.5, glasstest: 8.5, skinlayers: 10.5, bodymap: 11,
+    plateorder: 10.5, beforeafter: 7.5, avatarpizarra: 6, guidecta: 8.5, pizarraexplica: 8, process: 8 };
+  const drop = new Set();
+  for (let i = 0; i < cmpBeats.length; i++) {
+    const b = cmpBeats[i];
+    if (!PREMIUM.has(b.kind) || drop.has(i)) continue;
+    const need = Math.min(MIN[b.kind] ?? 6, capOfDur[b.kind] ?? 6);
+    for (let j = i + 1; j < cmpBeats.length; j++) {
+      const o = cmpBeats[j];
+      if (o.start >= b.start + need) break;
+      if (OVERLAY_K.has(o.kind)) continue;          // los overlay van ENCIMA, no molestan
+      if (PREMIUM.has(o.kind) && (MIN[o.kind] ?? 6) > need) { drop.add(i); break; }
+      drop.add(j);
+    }
+  }
+  if (drop.size) {
+    const fuera = [...drop].map((i) => `${cmpBeats[i].kind}@${cmpBeats[i].start}`);
+    console.log(`⚠ ${drop.size} componentes descartados por chocar con una escena premium: ${fuera.slice(0, 10).join(" ")}`);
+    for (let i = cmpBeats.length - 1; i >= 0; i--) if (drop.has(i)) cmpBeats.splice(i, 1);
+  }
+}
 fs.mkdirSync("public", { recursive: true });
 fs.writeFileSync(`public/avatar_clips_${SLUG}.json`, JSON.stringify(KIT_CLIPS, null, 1));
 
@@ -180,22 +213,25 @@ console.log(`ZONA FISH sin cubrir por b-roll/fotos: ${libre.toFixed(1)}s (lo tap
     const room = nx ? nx.start - b.start - 0.1 : b.dur;
     return Math.max(2, Math.min(b.dur, capOf(b.kind), room));
   };
-  const pts = [{ start: 0, mode: "full", pr: 0 }];
+  // ⛔ MISMA lógica que el Main: unión de coberturas (ver el comentario allá).
+  const ivs = [];
+  for (const c of COVER) ivs.push({ a: c.start, b: +(c.start + c.cov).toFixed(2), solo: c.kind === "video" && c.start + c.cov < AVATAR_END });
+  for (const b of cmpBeats) { if (OVERLAY.has(b.kind)) continue; ivs.push({ a: b.start, b: +(b.start + compDur(b)).toFixed(2), solo: false }); }
+  ivs.sort((x, y) => x.a - y.a);
+  const merged = [];
+  for (const iv of ivs) {
+    const last = merged[merged.length - 1];
+    if (last && iv.a <= last.b + 0.02) { last.b = Math.max(last.b, iv.b); last.solo = last.solo && iv.solo && iv.a >= last.a - 0.02; }
+    else merged.push({ ...iv });
+  }
+  const win = [{ start: 0, mode: "full" }];
   let flip = false;
-  for (const c of COVER) {
-    const puedeSplit = c.kind === "video" && c.start + c.cov < AVATAR_END;
-    pts.push({ start: c.start, mode: puedeSplit && flip ? "halfR" : "hidden", pr: 3 });
+  for (const m of merged) {
+    const puedeSplit = m.solo && m.b < AVATAR_END;
+    win.push({ start: m.a, mode: puedeSplit && flip ? "halfR" : "hidden" });
     if (puedeSplit) flip = !flip;
-    pts.push({ start: +(c.start + c.cov).toFixed(2), mode: "full", pr: 1 });
+    win.push({ start: m.b, mode: "full" });
   }
-  for (const b of cmpBeats) {
-    if (OVERLAY.has(b.kind)) continue;
-    pts.push({ start: b.start, mode: "hidden", pr: 4 });
-    pts.push({ start: +(b.start + compDur(b)).toFixed(2), mode: "full", pr: 1 });
-  }
-  pts.sort((a, b) => a.start - b.start || a.pr - b.pr);
-  const win = []; let last = "";
-  for (const p of pts) if (p.mode !== last) { win.push({ start: p.start, mode: p.mode }); last = p.mode; }
   const post = win.filter((w) => w.start < 1.4 || w.start >= 7.0);
   post.push({ start: 0, mode: "full" }, { start: 1.4, mode: "hidden" });
   const res = win.filter((w) => w.start < 7.0).pop();

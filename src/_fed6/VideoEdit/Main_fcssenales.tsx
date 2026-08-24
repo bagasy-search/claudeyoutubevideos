@@ -69,27 +69,31 @@ const compDur = (b: any): number => {
 // su cobertura real; en el hueco el avatar vuelve a full. En la ZONA FISH nunca vuelve a full
 // visible porque el generador dejó el 100% cubierto (colas con foto de respaldo).
 function buildWindows(): AvatarWindow[] {
-  type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
-  const pts: Pt[] = [{ start: 0, mode: "full", pr: 0 }];
+  // ⛔⛔ POR UNIÓN, no por puntos con prioridad. El esquema viejo (un punto "hidden" al
+  // empezar cada contenido y uno "full" al terminar) devolvía el avatar a FULL apenas
+  // terminaba UN contenido, aunque OTRO siguiera en pantalla debajo: en el primer render
+  // eso tapó fotos enteras con el avatar y, del otro lado, dejó colas de fondo pelado.
+  // La regla correcta: el avatar está oculto mientras HAYA cualquier contenido activo.
+  type Iv = { a: number; b: number; solo: boolean };
+  const ivs: Iv[] = [];
+  for (const c of FCSSENALES_COVER) ivs.push({ a: c.start, b: +(c.start + c.cov).toFixed(2), solo: c.kind === "video" && c.start + c.cov < AVATAR_END });
+  for (const b of compBeats) { if (OVERLAY.has(b.kind)) continue; ivs.push({ a: b.start, b: +(b.start + compDur(b)).toFixed(2), solo: false }); }
+  ivs.sort((x, y) => x.a - y.a);
+  const merged: Iv[] = [];
+  for (const iv of ivs) {
+    const last = merged[merged.length - 1];
+    if (last && iv.a <= last.b + 0.02) { last.b = Math.max(last.b, iv.b); last.solo = last.solo && iv.solo && iv.a >= last.a - 0.02; }
+    else merged.push({ ...iv });
+  }
+  const coll: AvatarWindow[] = [{ start: 0, mode: "full" }];
   let flip = false;
-  for (const c of FCSSENALES_COVER) {
-    const puedeSplit = c.kind === "video" && c.start + c.cov < AVATAR_END;
+  for (const m of merged) {
+    const puedeSplit = m.solo && m.b < AVATAR_END;
     const mode: AvatarWindow["mode"] = puedeSplit && flip ? "halfR" : "hidden";
     if (puedeSplit) flip = !flip;
-    pts.push({ start: c.start, mode, pr: 3 });
-    pts.push({ start: +(c.start + c.cov).toFixed(2), mode: "full", pr: 1 });
+    coll.push({ start: m.a, mode });
+    coll.push({ start: m.b, mode: "full" });
   }
-  for (const b of compBeats) {
-    // ⛔ los OVERLAY van ENCIMA: NO deben ocultar al avatar (si no, segundos de NEGRO).
-    if (OVERLAY.has(b.kind)) continue;
-    const d = compDur(b);
-    pts.push({ start: b.start, mode: "hidden", pr: 4 });
-    pts.push({ start: +(b.start + d).toFixed(2), mode: "full", pr: 1 });
-  }
-  pts.sort((a, b) => a.start - b.start || a.pr - b.pr);   // pr ASCENDENTE
-  const coll: AvatarWindow[] = [];
-  let last = "";
-  for (const p of pts) { if (p.mode !== last) { coll.push({ start: p.start, mode: p.mode }); last = p.mode; } }
 
   const HOOK_END = 7.0;
   const post = coll.filter((w) => w.start < 1.4 || w.start >= HOOK_END);
@@ -163,8 +167,11 @@ export const MainFcssenales: React.FC = () => {
 
       {/* CAPA 2 — FOTOS (agnes + respaldos + hero gpt-image) */}
       {rawTop.map((b: any) => {
-        const cap = b.start >= AVATAR_END ? 9 : HERO_CAP;
-        const d = Math.max(1, sec(Math.min(b.dur, cap) + 0.6));
+        // ⛔ la duración TIENE que ser el `cov` que usó la ventana del avatar. Recalcularlo
+        // acá (con otro tope) dejaba colas de 0,3-0,9 s con el fondo #0E1D23 a la vista:
+        // `blackdetect` las marcó como PANTALLA NEGRA en el primer render.
+        const cap = b.start >= AVATAR_END ? 11 : HERO_CAP;
+        const d = Math.max(1, sec((b.cov ?? Math.min(b.dur, cap)) + 0.6));
         const half = inHalfR(b.start);
         const shot = <RawShot durationInFrames={d} src={b.src} hue="cold" kicker={b.kicker} />;
         return (
