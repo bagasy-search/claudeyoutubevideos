@@ -139,8 +139,8 @@ export const MainFcsmusculo: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* AUDIO MASTER — avatar real (0..17:16) + Fish desde la costura. El avatar va MUTEADO.
-          MP3 192k mono en vez del wav: el PCM son 279 MB y engorda el tar del farm sin ganar nada. */}
-      <Audio src={staticFile("fcsmusculo_master.mp3")} />
+          El wav es obligatorio: farm.mjs lo mete en el tar por contrato (`public/<slug>.wav`). */}
+      <Audio src={staticFile("fcsmusculo.wav")} />
 
       {/* CAPA 1 — CLIPS (agnes) */}
       {FCSMUSCULO_BROLL.map((b) => {
