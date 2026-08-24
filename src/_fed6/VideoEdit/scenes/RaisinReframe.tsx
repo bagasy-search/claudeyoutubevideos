@@ -735,10 +735,10 @@ export const RaisinReframe: React.FC<{ durationInFrames: number }> = ({
                   lineHeight: 1.12,
                 }}
               >
-                A GRAPE
+                UNA UVA
                 <span style={{ color: rgba(INK, 0.62), fontWeight: 600 }}>
                   {" "}
-                  — young skin: full, tight, smooth
+                  — piel joven: llena, firme, con agua
                 </span>
               </div>
             }
@@ -760,10 +760,10 @@ export const RaisinReframe: React.FC<{ durationInFrames: number }> = ({
                   lineHeight: 1.12,
                 }}
               >
-                <span style={{ color: RED }}>A RAISIN</span>
+                <span style={{ color: RED }}>UNA PASA</span>
                 <span style={{ color: rgba(INK, 0.62), fontWeight: 600 }}>
                   {" "}
-                  — crepey skin: lost its water + cushion
+                  — piel de papel: perdió el agua y el relleno
                 </span>
               </div>
             }
@@ -774,7 +774,7 @@ export const RaisinReframe: React.FC<{ durationInFrames: number }> = ({
             inF={Math.round(0.47 * D)}
             outF={Math.round(0.66 * D)}
             y={890}
-            text="same skin — just emptied out"
+            text="la misma piel — nada más que vaciada"
           />
 
           {/* FASE 3 — re-hinchada */}
@@ -793,10 +793,10 @@ export const RaisinReframe: React.FC<{ durationInFrames: number }> = ({
                   lineHeight: 1.12,
                 }}
               >
-                <span style={{ color: TEAL }}>FLOOD + SEAL</span>
+                <span style={{ color: TEAL }}>LA ESPONJA</span>
                 <span style={{ color: rgba(INK, 0.62), fontWeight: 600 }}>
                   {" "}
-                  → it fills back in
+                  → vuelve a llenarse desde adentro
                 </span>
               </div>
             }
