@@ -1151,10 +1151,30 @@ export const MovClose: React.FC<{ durationInFrames: number }> = ({ durationInFra
       </AbsoluteFill>
 
       {/* ── COSTURAS ───────────────────────────────────────────────────────────────────────
-          F2 @A3 OCLUSIÓN: el papel ya tapa el 100%; estas dos bandas cubren cualquier borde. */}
+          F2 @A3 OCLUSIÓN. El relevo real (medido, no supuesto): la página del acto 3 tapa el
+          100% del cuadro entre A3-9 y A3+10 — 380×572 px × pScale (6.4 → 9.4 → 5.7) da de
+          2425×3652 a 3572×5377 sobre un cuadro de 1920×1080, con el rotateX ya descontado. Las
+          dos bandas sólo existen para cubrir el borde de la carta del mazo que queda debajo
+          mientras los dos objetos coexisten (el mazo se desmonta en A3+6).
+
+          ⛔ BUG CORREGIDO — DESTELLO A NEGRO EN LA FRONTERA 2. Las bandas iban pintadas con
+          `MD.ink1`/`MD.ink0`, o sea CON EL NEGRO DEL FONDO. `Occluder` mide 300% de la PANTALLA
+          y vive en zIndex 40, ENCIMA de todo el mundo 3D: entre A3-5 y A3+3 las dos juntas
+          cubren el 100% del cuadro, así que durante ~8 frames pintaban la pantalla entera de
+          negro tapando la página que sí estaba ahí abajo. En el render del farm (D=1350, A3=429)
+          eso midió luma 236 → 47 → 21 → 13 → 10 → 65 → 235: un FUNDIDO A NEGRO de 0,23 s, que es
+          justo lo que está prohibido en una frontera.
+
+          Ahora la banda es PAPEL: `MD.bone` (#EDE9E2, luma ≈233) es la misma luma que la página
+          que hay detrás, así que cuando cubre el 100% lo que se ve sigue siendo papel llenando
+          el lente — la oclusión DESCUBRE el acto 3 en vez de dejar un hueco. La cobertura es
+          además complementaria y no puede dejar un frame vacío: donde las bandas no llegan
+          (A3-9…A3-6 y A3+4…A3+10) la página gigante sí cubre, y donde la página todavía no
+          cubriría, cubren las bandas. Todo en offsets desde A3, que es una FRACCIÓN de D: la
+          frontera se comporta igual a D=1350 que a D=2025. */}
       <AbsoluteFill style={{ zIndex: 40 }}>
-        <Occluder at={A3 - 9} dur={17} color={MD.ink1} angle={-6} />
-        <Occluder at={A3 - 4} dur={14} color={MD.ink0} angle={-6} />
+        <Occluder at={A3 - 9} dur={17} color={MD.bone} angle={-6} />
+        <Occluder at={A3 - 4} dur={14} color={rgba(MD.bone, 0.9)} angle={-3} />
       </AbsoluteFill>
 
       {/* F5 @A6 WIPE POR MATERIA — recortado al 42% izquierdo del cuadro: el vapor NO toca el QR */}
@@ -1310,8 +1330,14 @@ export const MovClose: React.FC<{ durationInFrames: number }> = ({ durationInFra
           </div>
         )}
 
-        {/* ACTO 5 — el código. Texto SÓLO en el tercio izquierdo: el QR vive a la derecha. */}
-        {f > A5 + 14 && f < A6 + 6 && (
+        {/* ACTO 5 — el código. Texto SÓLO en el tercio izquierdo: el QR vive a la derecha.
+            RELEVO DE LA F4: el bloque del acto 4 termina de recortarse en A5+8, así que montarse
+            recién en A5+14 (con el kicker arrancando en A5+18) dejaba ~10 frames sin una sola
+            línea de tipografía — el titular rojo se iba y nada lo reemplazaba. Ahora entra en
+            A5+2 y el kicker sube desde A5+6, cuando el bloque del acto 4 ya está 82% recortado y
+            192 px por debajo de su sitio (bottom 100 vs. bottom 148 de éste: no se pisan). Se
+            solapan igual que en la F2: lo nuevo ya está antes de que lo viejo termine de irse. */}
+        {f > A5 + 2 && f < A6 + 6 && (
           <div
             style={{
               position: "absolute",
@@ -1323,7 +1349,7 @@ export const MovClose: React.FC<{ durationInFrames: number }> = ({ durationInFra
             }}
           >
             <TextBed pad={30}>
-              <div style={{ opacity: ip(f, [A5 + 18, A5 + 36], [0, 1], E_OUT) }}>
+              <div style={{ opacity: ip(f, [A5 + 6, A5 + 24], [0, 1], E_OUT) }}>
                 <Kicker>The fastest way in</Kicker>
               </div>
               <div style={{ marginTop: 12 }}>

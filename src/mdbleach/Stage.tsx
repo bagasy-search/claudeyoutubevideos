@@ -283,6 +283,18 @@ export const Decal: React.FC<{
 //  COSTURAS — una distinta por frontera. ⛔ NUNCA un fade.
 //  `Occluder` (oclusión) y `VaporWipe` (wipe por materia) vienen del Stage del canal.
 //  Acá van las dos que faltaban.
+//
+//  ⛔⛔ MINA MEDIDA EN EL RENDER (mdbleach, ago 2026) — `Occluder` CON EL COLOR DEL FONDO
+//  NO ES UNA OCLUSIÓN: ES UN FUNDIDO A NEGRO.
+//  El default del componente en `../mdtank/Stage` es `MD.ink1` (#141518), o sea el fondo. Pasarle
+//  eso (o `MD.ink0`) hace que la banda de 300% de pantalla tape el cuadro con NEGRO: el acto
+//  siguiente puede estar perfectamente montado debajo y aun así se ve un flash negro.
+//  Medido frame a frame sobre el mp4 del farm, en la frontera 2 de MovClose:
+//      luma 229 (la página tapando) → 47 → 21 → 13 → **10** → 65 → 235   = 7 frames de negro
+//  y en la frontera 1 de MovTruck: 53 → **21 → 22** → 53 = 6 frames de parpadeo.
+//  ✅ REGLA: el color del `Occluder` es SIEMPRE el de la MATERIA que cruza la frontera —
+//     el papel (`MD.bone`), la porcelana, la goma, la jarra. Nunca el color del fondo.
+//     Y verificalo midiendo, no mirando: `signalstats` YAVG alrededor de la frontera.
 // ════════════════════════════════════════════════════════════════════════════════════════════
 
 /**

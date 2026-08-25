@@ -37,8 +37,12 @@
  *               luz  t≈0.15
  *               mat  LA TARJETA DEL ESTANTE, ya en movimiento hacia el centro
  *    ── FRONTERA A @ 0.150 · OCLUSIÓN ──────────────────────────────────────────────────────
- *       Banda `Occluder` (300 % de pantalla). BAJO COBERTURA TOTAL se enciende la atmósfera y
- *       desaparece el avatar. Es la única costura que puede tapar un cambio de FONDO.
+ *       Banda `Occluder` (300 % de pantalla) del color de LA MADERA DEL ESTANTE (`OCC_A_MAT`,
+ *       luma ≈ 80): la tarjeta del acto 1 pasa pegada al lente. BAJO COBERTURA TOTAL se
+ *       enciende la atmósfera y desaparece el avatar. Es la única costura que puede tapar un
+ *       cambio de FONDO. ⛔ Con el color del fondo (`MD.ink1`) esto NO ocluye: es un fundido a
+ *       negro (medido: 53 → 21 → 22 → 53). Y la cobertura opaca tiene que CONTENER el frame en
+ *       que conmuta `atmosOn` — por eso `at = A2 − 6`, no A2 − 9 (ver la nota en el código).
  *
  *  ACTO 2 · «EL AGUA ES EL CAMIÓN» · 0.150 → 0.360 (f189 → f454)
  *    enterFrom  cam  exactos los del acto 1 (misma función, sin corte)
@@ -587,8 +591,26 @@ export const MovTruck: React.FC<{ durationInFrames: number }> = ({ durationInFra
 
   // ── EL AVATAR: sólo se ve en el acto 1 (la pregunta del espectador). La atmósfera se
   //    enciende EXACTAMENTE en el frame en que la banda del `Occluder` cubre el 100 %.
-  const OCC_A = A2 - 9;
+  //
+  //    ⛔ MINA MEDIDA (render del farm, ago 2026): con `at = A2 − 9` la cobertura OPACA de la
+  //    banda (plumeado de 12 % a cada lado + el margen de la rotación de 7°) vive en
+  //    A2−4 … A2−2, o sea que TERMINA DOS FRAMES ANTES de que conmute `atmosOn`: el cambio de
+  //    fondo se veía por el tercio derecho, justo lo que la oclusión venía a tapar.
+  //    Con `at = A2 − 6` la cobertura total cae en A2−1 … A2+1 y el frame de la conmutación
+  //    queda ADENTRO con un frame de margen a cada lado. (La FRONTERA sigue en 0.150 exacto:
+  //    lo que se movió es el helper de la costura, no el acto.)
+  const OCC_A = A2 - 6;
   const atmosOn = f >= A2 ? 1 : 0;
+
+  // ── EL COLOR DE LA BANDA = LA MATERIA QUE CRUZA ──────────────────────────────────────────
+  //    ⛔ La banda del `Occluder` mide 300 % de pantalla: pintada con `MD.ink1` (#141518, el
+  //    FONDO) no ocluye nada — hace un FUNDIDO A NEGRO. Medido frame a frame en esta misma
+  //    frontera: 53 → 21 → 22 → 53, seis frames de parpadeo a oscuro en plena escena clara.
+  //    La materia que cruza la FRONTERA A es LA TARJETA DEL ESTANTE (`h38_twoshelves`: la jarra
+  //    blanca y el frasco marrón sobre la madera), viajando hacia el centro y todavía tocada por
+  //    la key CÁLIDA del acto 1. Su color es la madera del estante en la key: luma ≈ 80, o sea
+  //    un LEVE realce sobre la escena de los dos lados (≈53), nunca un pozo negro ni un flash.
+  const OCC_A_MAT = "#5B4E3E";
 
   /* ══════════════════════════════════════════════════════════════════════════════════════════
      ACTO 1 + ACTO 2 · la tarjeta del estante y las dos entregas
@@ -1145,7 +1167,11 @@ export const MovTruck: React.FC<{ durationInFrames: number }> = ({ durationInFra
            C · MATCH-MOVE   (no lleva helper: la hace la cámara con el `swing`)
            D · WIPE POR MATERIA
            E · CORTE EN EL BEAT (no lleva helper: cajas idénticas + golpe de cámara)          */}
-      <Occluder at={OCC_A} dur={18} color={MD.ink1} angle={7} />
+      {/* A · la TARJETA DEL ESTANTE cruza el lente: dos cantos de la MISMA madera (el de
+             adelante opaco — es el que garantiza el 100 % de cobertura en A2 — y el de atrás a
+             0.85, que le da espesor y lo despega de un "cartón de color"). ⛔ NUNCA MD.ink0/ink1. */}
+      <Occluder at={OCC_A} dur={18} color={OCC_A_MAT} angle={7} />
+      <Occluder at={OCC_A + 3} dur={15} color={rgba(OCC_A_MAT, 0.85)} angle={3} />
       <VaporWipe at={A5 - 11} dur={22} />
       {/* hold VIVO del último acto: el barrido cruza la escena mientras la cámara aterriza */}
       <Sheen at={A6 + 88} dur={34} angle={14} />
