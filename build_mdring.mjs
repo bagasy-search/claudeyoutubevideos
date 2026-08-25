@@ -228,7 +228,26 @@ registerRoot(Root${COMP});
 // el AVATAR es el fondo garantizado: su mp4 y su wav TIENEN que viajar en el tarball
 const avatarAssets = [`${SLUG}_opt.mp4`, `${SLUG}.wav`];
 for (const a of avatarAssets) if (!fs.existsSync(`public/${a}`)) missing.push(a);
-const assets = [...clipsUsed, ...imgsUsed, ...avatarAssets, ...[...usedSfx]].sort();
+// ⛔ MINA MEDIDA (mdring, ago-2026): los MOVIMIENTOS propios referencian clips y fotos DESDE SU
+// TSX, no desde los beats. El build sólo veía los beats → 62 assets no viajaban en el tar y cada
+// 404 mata el chunk entero. Escaneamos src/<slug>/ y sumamos lo que encontremos, más los _blur.
+const fromMovs = new Set();
+try {
+  for (const f of fs.readdirSync(`src/${SLUG}`)) {
+    const t = fs.readFileSync(`src/${SLUG}/${f}`, "utf8");
+    for (const m of t.matchAll(/["'`]((?:broll|img|sfx)\/[A-Za-z0-9_\-.]+\.(?:mp4|jpg|jpeg|png|mp3))["'`]/g)) fromMovs.add(m[1]);
+  }
+} catch { /* el video puede no tener carpeta de movimientos */ }
+for (const a of fromMovs) if (!fs.existsSync(`public/${a}`)) missing.push(a);
+const assets0 = [...new Set([...clipsUsed, ...imgsUsed, ...avatarAssets, ...usedSfx, ...fromMovs])];
+// todo img necesita su hermano _blur.jpg (lo pide el kit en runtime; el pre-vuelo BLUR aborta si falta)
+for (const a of [...assets0]) {
+  if (/^img\/.+\.(jpg|png)$/.test(a) && !/_blur\./.test(a)) {
+    const b = a.replace(/\.(jpg|png)$/, "_blur.jpg");
+    if (fs.existsSync(`public/${b}`)) assets0.push(b);
+  }
+}
+const assets = [...new Set(assets0)].sort();
 fs.writeFileSync(`_${SLUG}_assets.txt`, assets.join("\n") + "\n");
 
 console.log(`cues ${cues.length} · sfx ${sfxCues.length} · ventanas avatar ${windows.length}`);
