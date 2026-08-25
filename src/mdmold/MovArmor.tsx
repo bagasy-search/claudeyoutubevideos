@@ -14,7 +14,7 @@
  *               materia: — (arranque del movimiento) }
  *   exitTo    { cam: z+240 (empuje DENTRO de la mancha) · luz #6F8E86 ·
  *               materia: LA MANCHA NEGRA, que crece hasta llenar cuadro con el MISMO ink0 }
- *   -- FRONTERA 1 @214-248 · ZOOM-THROUGH --  atravesamos la mancha; su nucleo es MD.ink0
+ *   -- FRONTERA 1 @196-250 · ZOOM-THROUGH (tapa 100% desde 226; swap en 228) --  atravesamos la mancha; su nucleo es MD.ink0
  *      exacto y el fondo del acto 2 es MD.ink0 exacto: no hay corte, hay travesia.
  *
  * ACTO 2 · f228 — "late 90s... into the shelter around the ruined reactor"
@@ -22,13 +22,14 @@
  *               luz #6F8E86 · materia: el negro de la mancha = la oscuridad del refugio }
  *   exitTo    { cam: z+30 rx+2 · luz #7FA98F · materia: EL HAZ de la linterna (mismo angulo,
  *               mismo polvo, misma posicion) y el HORMIGON (<Concrete/>, mismo componente) }
- *   -- FRONTERA 2 @550 · OCLUSION (<Occluder/>) --  una losa cruza y tapa el 100%; detras,
- *      el mismo muro 2,2x mas cerca con el haz clavado exactamente donde quedo.
+ *   -- FRONTERA 2 @543-583 · OCLUSION (<SlabPass/> + <Occluder/>) --  una losa de hormigon
+ *      cruza y tapa el 100% en 557-559 (medido); el swap cae en 558. Detras, el mismo muro
+ *      2,2x mas cerca, con el haz clavado exactamente donde quedo.
  *
  * ACTO 3 · f556 — "black fungus on the walls, growing toward the radiation"
  *   enterFrom { cam: z+30 · luz #7FA98F · materia: hormigon + haz del acto 2 }
  *   exitTo    { cam: z+120 · luz #6FD0B4 irradiado · materia: EL DISCO de la fuente }
- *   -- FRONTERA 3 @694-796 · MATCH-SHAPE --  el disco rojo-caliente NO se funde: es el mismo
+  *   -- FRONTERA 3 @694-796 · MATCH-SHAPE (cobertura medida 718-748; swap en 742) --  el disco rojo-caliente NO se funde: es el mismo
  *      circulo que crece hasta tragarse el cuadro (nos metemos EN la radiacion) y al retroceder
  *      ya es el limbo de la Tierra. UN SOLO objeto atraviesa la frontera.
  *
@@ -44,8 +45,9 @@
  *   enterFrom { cam: z+70 · luz #8FBFD0 · materia: cielo/Tierra + barra que llega trucando }
  *   exitTo    { cam: z+190 · luz #B87A5E virando a rojo · materia: la barra negra se DESHACE
  *               en granulos que viajan hacia la camara }
- *   -- FRONTERA 5 @1262 · WIPE POR MATERIA (<VaporWipe/>) --  las esporas/granulos cruzan y
- *      detras ya estamos en el macro del pigmento. Son LOS MISMOS granulos de la barra.
+ *   -- FRONTERA 5 @1255-1283 · WIPE POR MATERIA (<SporeWipe/> + <VaporWipe/>) --  el enjambre
+ *      de esporas cruza, tapa el 100% en 1265-1268 (medido) y el swap cae en 1265. Detras ya
+ *      estamos en el macro del pigmento: son LOS MISMOS granulos que salieron de la barra.
  *
  * ACTO 6 · f1268 — "the pigment is melanin... that's not dirt. that's armor."
  *   enterFrom { cam: z+190 · luz #B87A5E · materia: granulos del acto 5 }
@@ -119,7 +121,7 @@ const tintAt = (f: number) => {
 const RIG_F = [0, 228, 400, 556, 700, 760, 900, 1090, 1268, 1400, 1548];
 const RIG_X = [30, -70, 80, -60, 10, 60, -40, -90, 50, -20, -70];
 const RIG_Y = [16, -28, 12, 24, -16, 20, 8, 14, -16, 8, -6];
-const RIG_Z = [-70, 240, -30, 30, 120, -60, 10, 70, 190, 310, 400];
+const RIG_Z = [-60, 90, -30, 20, 70, -40, 10, 50, 110, 160, 200];
 const RIG_RY = [-5, 1, 6, -3, -6, 4, 3, -4, 2, -1, -4];
 const RIG_RX = [6, 1, -3, 2, -1, -2, 2, 1, -2, 0, 1];
 const rigAt = (f: number, out: number[]) => interpolate(f, RIG_F, out, { easing: EZ_IO, ...CL });
@@ -282,6 +284,99 @@ const SpaceBack: React.FC<{ f: number; dim: number }> = ({ f, dim }) => (
   </AbsoluteFill>
 );
 
+/* == LOS DOS DATOS — viven FUERA de la camara: el dolly de cam() agranda por perspectiva
+      y contra el borde derecho los recortaria. Aca el safe area de 60px es exacto. ==== */
+const DaysCounter: React.FC<{ f: number; keyHex: string }> = ({ f, keyHex }) => {
+  const op = seg(f, 812, 834) * (1 - seg(f, 1062, 1090));
+  if (op <= 0.005) return null;
+  const days = Math.round(interpolate(f, [820, 1010], [0, 26], { easing: Easing.out(Easing.cubic), ...CL }));
+  return (
+    <div
+      style={{
+        position: "absolute",
+        right: 92,
+        top: 244,
+        textAlign: "right",
+        opacity: op,
+        transform: `translateX(${interpolate(seg(f, 1062, 1090), [0, 1], [0, 110], CL).toFixed(1)}px)`,
+      }}
+    >
+      <div
+        style={{
+          fontFamily: F_SANS,
+          fontWeight: 900,
+          fontSize: 210,
+          lineHeight: 0.9,
+          letterSpacing: -6,
+          color: MD.white,
+          textShadow: `0 0 60px ${rgba(keyHex, 0.35)}, 0 10px 40px rgba(0,0,0,0.95)`,
+        }}
+      >
+        {days}
+      </div>
+      <div
+        style={{
+          fontFamily: F_SANS,
+          fontWeight: 800,
+          fontSize: 38,
+          letterSpacing: 8,
+          color: MD.bone,
+          textShadow: "0 4px 18px rgba(0,0,0,0.9)",
+        }}
+      >
+        DAYS
+      </div>
+      <div style={{ width: 190, height: 3, background: MD.red, marginLeft: "auto", marginTop: 14, boxShadow: `0 0 16px ${MD.red}` }} />
+    </div>
+  );
+};
+
+const PctNumber: React.FC<{ f: number }> = ({ f }) => {
+  const op = seg(f, 1166, 1184) * (1 - seg(f, 1250, 1264));
+  if (op <= 0.005) return null;
+  const pct = Math.round(interpolate(f, [1168, 1214], [0, 20], { easing: Easing.out(Easing.poly(4)), ...CL }));
+  const breath = 0.86 + 0.14 * Math.sin(f / 11);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        right: 84,
+        top: 190,
+        textAlign: "right",
+        opacity: op,
+        transform: `scale(${(0.93 + 0.07 * seg(f, 1166, 1204)).toFixed(3)})`,
+        transformOrigin: "100% 50%",
+      }}
+    >
+      <div
+        style={{
+          fontFamily: F_SANS,
+          fontWeight: 900,
+          fontSize: 250,
+          lineHeight: 0.86,
+          letterSpacing: -10,
+          color: MD.white,
+          textShadow: `0 0 70px ${rgba(MD.red, 0.4 * breath)}, 0 12px 44px rgba(0,0,0,0.95)`,
+        }}
+      >
+        +{pct}%
+      </div>
+      <div
+        style={{
+          fontFamily: F_SANS,
+          fontWeight: 800,
+          fontSize: 44,
+          letterSpacing: 10,
+          color: MD.redHot,
+          textShadow: "0 4px 20px rgba(0,0,0,0.9)",
+        }}
+      >
+        FASTER
+      </div>
+    </div>
+  );
+};
+
 /* == COSTURAS DE MATERIA (cobertura garantizada; Stage monta el acento encima) ======== */
 /* FRONTERA 2 — una losa de hormigon cruza el haz. Tapa el 100% durante ~5 frames. */
 const SlabPass: React.FC<{ f: number; at: number; dur: number }> = ({ f, at, dur }) => {
@@ -317,7 +412,7 @@ const SporeWipe: React.FC<{ f: number; at: number; dur: number }> = ({ f, at, du
           top: "-24%",
           width: "240%",
           height: "148%",
-          background: `radial-gradient(ellipse at 50% 50%, ${MD.ink0} 0%, ${MD.ink0} 65%, rgba(8,9,11,0.68) 80%, rgba(8,9,11,0) 88%)`,
+          background: `radial-gradient(ellipse at 50% 50%, ${MD.ink0} 0%, ${MD.ink0} 72%, rgba(8,9,11,0.7) 86%, rgba(8,9,11,0) 88%)`,
         }}
       />
       {Array.from({ length: 30 }, (_, i) => {
@@ -380,13 +475,14 @@ const Caption: React.FC<{
 };
 
 /* Sello de esquina (fecha / lugar) — anclado por right/top, dentro del safe area. */
-const Stamp: React.FC<{ f: number; at: number; until: number; label: string; tone?: string }> = ({
-  f,
-  at,
-  until,
-  label,
-  tone = MD.red,
-}) => {
+const Stamp: React.FC<{
+  f: number;
+  at: number;
+  until: number;
+  label: string;
+  tone?: string;
+  side?: "left" | "right";
+}> = ({ f, at, until, label, tone = MD.red, side = "right" }) => {
   const inn = interpolate(seg(f, at, at + 12), [0, 1], [0, 1], { easing: EZ_OUT });
   const out = seg(f, until - 12, until);
   const op = inn * (1 - out);
@@ -395,11 +491,13 @@ const Stamp: React.FC<{ f: number; at: number; until: number; label: string; ton
     <div
       style={{
         position: "absolute",
-        right: 76,
+        left: side === "left" ? 76 : undefined,
+        right: side === "right" ? 76 : undefined,
         top: 74,
         opacity: op,
-        transform: `translateX(${((1 - inn) * 26).toFixed(2)}px)`,
+        transform: `translateX(${((1 - inn) * (side === "left" ? -26 : 26)).toFixed(2)}px)`,
         display: "flex",
+        flexDirection: side === "left" ? "row-reverse" : "row",
         alignItems: "center",
         gap: 14,
       }}
@@ -436,7 +534,7 @@ const Act1: React.FC<{ f: number }> = ({ f }) => {
   const swallow = interpolate(f, [196, 214, 226, 250], [1, 8, 26, 96], { easing: EZ_IN, ...CL });
 
   return (
-    <AbsoluteFill>
+    <AbsoluteFill style={{ transformStyle: "preserve-3d" }}>
       {/* plano lejano: pared humeda fuera de foco */}
       <AbsoluteFill
         style={{
@@ -647,8 +745,16 @@ const Act2: React.FC<{ f: number; tint: string }> = ({ f, tint }) => {
   const flick = 0.86 + 0.14 * Math.sin(f / 5.3) + 0.05 * Math.sin(f / 1.9);
 
   return (
-    <AbsoluteFill style={{ backgroundColor: MD.ink0 }}>
-      <div style={{ position: "absolute", inset: 0, transform: `scale(${pull.toFixed(3)})`, transformOrigin: "47% 48%" }}>
+    <AbsoluteFill style={{ backgroundColor: MD.ink0, transformStyle: "preserve-3d" }}>
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          transformStyle: "preserve-3d",
+          transform: `scale(${pull.toFixed(3)})`,
+          transformOrigin: "47% 48%",
+        }}
+      >
         {/* plano lejano: profundidad de la nave, pilares */}
         <div style={{ position: "absolute", inset: 0, transform: "translateZ(-460px) scale(1.18)" }}>
           {[0, 1, 2].map((i) => (
@@ -812,7 +918,7 @@ const Act3: React.FC<{ f: number; tint: string }> = ({ f, tint }) => {
   const bx = beamXAt(f); // el haz sigue clavado donde quedo: materia que cruza la frontera
   const by = beamYAt(f);
   return (
-    <AbsoluteFill style={{ backgroundColor: MD.ink0 }}>
+    <AbsoluteFill style={{ backgroundColor: MD.ink0, transformStyle: "preserve-3d" }}>
       <div style={{ position: "absolute", inset: 0, transform: "translateZ(-120px)" }}>
         <Concrete scale={push} tint={tint} ox={30} />
       </div>
@@ -1031,7 +1137,7 @@ const HotCircle: React.FC<{ f: number }> = ({ f }) => {
 const plateXAt = (f: number) => interpolate(f, [780, 850, 910, 1030], [1180, 420, 40, -60], { easing: EZ_IO, ...CL });
 /* La salida: rampa cuadratica hasta 34 px/f y despues velocidad CONSTANTE. Es EXACTAMENTE
    la velocidad con la que entra la barra del acto 5 -> el ojo no ve un corte, ve un traveling. */
-export const PLATE_V = 34;
+const PLATE_V = 34;
 const plateExit = (f: number) => {
   if (f < 1030) return plateXAt(f);
   const u = f - 1030;
@@ -1044,7 +1150,6 @@ const Act4: React.FC<{ f: number; keyHex: string }> = ({ f, keyHex }) => {
   const pry = interpolate(f, [780, 910, 1062, 1124], [-38, -14, -20, -48], { easing: EZ_IO, ...CL });
   const prx = interpolate(f, [780, 950, 1124], [17, 7, 13], { easing: EZ_IO, ...CL });
   const ps = interpolate(f, [780, 910, 1062, 1124], [0.7, 1, 0.98, 0.7], { easing: EZ_IO, ...CL });
-  const days = Math.round(interpolate(f, [820, 1010], [0, 26], { easing: Easing.out(Easing.cubic), ...CL }));
   const dose = seg(f, 910, 1062);
   const flux = seg(f, 866, 910);
   // la estructura de la estacion ENTRA deslizando (no aparece de la nada) cuando el
@@ -1056,7 +1161,7 @@ const Act4: React.FC<{ f: number; keyHex: string }> = ({ f, keyHex }) => {
   const H = 300;
 
   return (
-    <AbsoluteFill style={{ pointerEvents: "none" }}>
+    <AbsoluteFill style={{ pointerEvents: "none", transformStyle: "preserve-3d" }}>
       {/* estructura de la estacion — plano medio-lejano */}
       <div style={{ position: "absolute", inset: 0, transform: `translateZ(-260px) translateX(${truss.toFixed(1)}%)` }}>
         <div
@@ -1246,45 +1351,6 @@ const Act4: React.FC<{ f: number; keyHex: string }> = ({ f, keyHex }) => {
         </div>
       </div>
 
-      {/* CONTADOR — el dato como objeto, no como parrafo */}
-      <div
-        style={{
-          position: "absolute",
-          right: 92,
-          top: 250,
-          textAlign: "right",
-          opacity: seg(f, 812, 834) * (1 - seg(f, 1062, 1090)),
-          transform: `translateX(${(interpolate(seg(f, 1062, 1090), [0, 1], [0, 90], CL)).toFixed(1)}px)`,
-        }}
-      >
-        <div
-          style={{
-            fontFamily: F_SANS,
-            fontWeight: 900,
-            fontSize: 210,
-            lineHeight: 0.9,
-            color: MD.white,
-            letterSpacing: -6,
-            textShadow: `0 0 60px ${rgba(keyHex, 0.35)}, 0 10px 40px rgba(0,0,0,0.95)`,
-          }}
-        >
-          {days}
-        </div>
-        <div
-          style={{
-            fontFamily: F_SANS,
-            fontWeight: 800,
-            fontSize: 38,
-            letterSpacing: 8,
-            color: MD.bone,
-            textShadow: "0 4px 18px rgba(0,0,0,0.9)",
-          }}
-        >
-          DAYS
-        </div>
-        <div style={{ width: 190, height: 3, background: MD.red, marginLeft: "auto", marginTop: 14, boxShadow: `0 0 16px ${MD.red}` }} />
-      </div>
-
       {/* pasamanos de la estacion, primer plano fuera de foco */}
       <div
         style={{
@@ -1317,16 +1383,22 @@ const Act5: React.FC<{ f: number }> = ({ f }) => {
   const ctrl = L0 * eio(0, 1, seg(f, 1118, 1160)); // el control crece DESPUES: es la referencia
   const surge = seg(f, 1163, 1218);
   const iss = L0 * (1 + 0.2 * interpolate(surge, [0, 0.68, 1], [0, 1.08, 1], CL));
-  const pct = Math.round(interpolate(f, [1168, 1214], [0, 20], { easing: Easing.out(Easing.poly(4)), ...CL }));
   const bracket = seg(f, 1198, 1228);
   const breath = 0.86 + 0.14 * Math.sin(f / 11);
-  const X0 = 240;
+  const X0 = 280;
   const Y_ISS = 392;
   const Y_CTL = 552;
 
   return (
-    <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <div style={{ position: "absolute", inset: 0, transform: `translateX(${arrive.toFixed(2)}px) translateZ(70px)` }}>
+    <AbsoluteFill style={{ pointerEvents: "none", transformStyle: "preserve-3d" }}>
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          transformStyle: "preserve-3d",
+          transform: `translateX(${arrive.toFixed(2)}px) translateZ(70px)`,
+        }}
+      >
         {/* la linea de base VIAJA con la barra: llega clavada, no aparece de la nada */}
         <div
           style={{
@@ -1472,44 +1544,6 @@ const Act5: React.FC<{ f: number }> = ({ f }) => {
         })}
       </div>
 
-      {/* EL NUMERO — un solo dato, con peso. Anclado a la derecha, lejos de las barras. */}
-      <div
-        style={{
-          position: "absolute",
-          right: 84,
-          top: 196,
-          textAlign: "right",
-          opacity: seg(f, 1166, 1184),
-          transform: `scale(${(0.93 + 0.07 * seg(f, 1166, 1204)).toFixed(3)})`,
-          transformOrigin: "100% 50%",
-        }}
-      >
-        <div
-          style={{
-            fontFamily: F_SANS,
-            fontWeight: 900,
-            fontSize: 250,
-            lineHeight: 0.86,
-            letterSpacing: -10,
-            color: MD.white,
-            textShadow: `0 0 70px ${rgba(MD.red, 0.4 * breath)}, 0 12px 44px rgba(0,0,0,0.95)`,
-          }}
-        >
-          +{pct}%
-        </div>
-        <div
-          style={{
-            fontFamily: F_SANS,
-            fontWeight: 800,
-            fontSize: 44,
-            letterSpacing: 10,
-            color: MD.redHot,
-            textShadow: "0 4px 20px rgba(0,0,0,0.9)",
-          }}
-        >
-          FASTER
-        </div>
-      </div>
     </AbsoluteFill>
   );
 };
@@ -1525,7 +1559,7 @@ const Act6: React.FC<{ f: number; keyHex: string; rake: string }> = ({ f, keyHex
   const breath = 0.88 + 0.12 * Math.sin(f / 13);
 
   return (
-    <AbsoluteFill style={{ backgroundColor: MD.ink0, pointerEvents: "none" }}>
+    <AbsoluteFill style={{ backgroundColor: MD.ink0, pointerEvents: "none", transformStyle: "preserve-3d" }}>
       <AbsoluteFill style={{ background: "radial-gradient(110% 90% at 74% 26%, #16090A 0%, #080607 52%, #030304 100%)" }} />
       {/* luz rasante: el viaje de la luz aterriza en ROJO sobre el negro */}
       <AbsoluteFill
@@ -1707,10 +1741,13 @@ export const MovArmor: React.FC<{ durationInFrames: number }> = ({ durationInFra
             ` translate3d(${rx.toFixed(2)}px, ${ry.toFixed(2)}px, ${rz.toFixed(2)}px) rotateY(${rry.toFixed(3)}deg) rotateX(${rrx.toFixed(3)}deg)`,
         }}
       >
+       {/* el ESPACIO del mundo: sin esta perspectiva CSS los translateZ de los planos
+           se aplanan y no hay parallax. cam() aporta el dolly; esto, la profundidad. */}
+       <AbsoluteFill style={{ perspective: 1500, perspectiveOrigin: "50% 46%" }}>
         {/* 1 · la junta del bano (hasta 232: para entonces la mancha ya llena el cuadro) */}
         {vis(f, 0, 232) && <Act1 f={f} />}
         {/* 2 · el refugio — entra a f228 con el MISMO ink0 que el nucleo de la mancha */}
-        {vis(f, 228, 560) && <Act2 f={f} tint={tint} />}
+        {vis(f, 228, 559) && <Act2 f={f} tint={tint} />}
         {/* el cielo se monta bajo el acto 3 (tapado) y sirve al 4 Y al 5: nunca se remonta */}
         {vis(f, 716, 1267) && <SpaceBack f={f} dim={interpolate(f, [716, 780, 1240, 1267], [0.5, 1, 1, 0.72], CL)} />}
         {/* 3 · el hallazgo — swap dentro de la losa (cobertura 556-561) */}
@@ -1723,6 +1760,7 @@ export const MovArmor: React.FC<{ durationInFrames: number }> = ({ durationInFra
         {vis(f, 1078, 1267) && <Act5 f={f} />}
         {/* 6 · la melanina — swap dentro del enjambre de esporas (cobertura 1264-1268) */}
         {f >= 1265 && <Act6 f={f} keyHex={keyHex} rake={rakeCol} />}
+       </AbsoluteFill>
       </AbsoluteFill>
 
       {/* POLVO — la misma aire para todo el movimiento */}
@@ -1731,10 +1769,10 @@ export const MovArmor: React.FC<{ durationInFrames: number }> = ({ durationInFra
       {/* COSTURAS — una distinta por frontera, ninguna es un fundido.
           B1 ZOOM-THROUGH (dentro del acto 1) · B2 OCLUSION · B3 MATCH-SHAPE (HotCircle)
           B4 MATCH-MOVE (velocidad heredada) · B5 WIPE POR MATERIA · beat final @1518 */}
-      <SlabPass f={f} at={538} dur={40} />
-      <Occluder at={546} dur={22} color="#12151A" angle={7} />
-      <SporeWipe f={f} at={1252} dur={28} />
-      <VaporWipe at={1256} dur={26} />
+      <SlabPass f={f} at={543} dur={40} />
+      <Occluder at={547} dur={22} color="#12151A" angle={7} />
+      <SporeWipe f={f} at={1255} dur={28} />
+      <VaporWipe at={1259} dur={26} />
 
       {/* vinieta viva — va DEBAJO del texto para no ensuciar la legibilidad */}
       <AbsoluteFill
@@ -1748,12 +1786,15 @@ export const MovArmor: React.FC<{ durationInFrames: number }> = ({ durationInFra
         }}
       />
 
-      {/* TEXTO — una idea por acto, <=7 palabras */}
-      <Caption f={f} at={44} until={222} kicker="THE ONE IN YOUR BATHROOM" size={64}>
-        Cladosporium
+      {/* LOS DATOS y EL TEXTO — una idea por acto, <=7 palabras */}
+      <DaysCounter f={f} keyHex={keyHex} />
+      <PctNumber f={f} />
+      <Caption f={f} at={44} until={222} kicker="MOST COMMON INDOOR MOLD" size={62}>
+        The one in <Em>your</Em> bathroom.
       </Caption>
+      <Stamp f={f} at={186} until={226} label="Cladosporium" side="left" />
       <Stamp f={f} at={252} until={548} label="Late 1990s" />
-      <Caption f={f} at={286} until={540} kicker="CHERNOBYL · INSIDE THE SHELTER" size={58}>
+      <Caption f={f} at={470} until={546} kicker="CHERNOBYL · INSIDE THE SHELTER" size={58}>
         Anything <Em>alive</Em> in there?
       </Caption>
       <Caption f={f} at={584} until={690} kicker="ON THE WALLS" size={58}>

@@ -13,10 +13,10 @@
 // ── TABLA DE HANDOFF ──────────────────────────────────────────────────────────────────────────
 //
 // ACTO 1 · f0–186 · "la línea negra" (macro de la junta)
-//   enterFrom { cam: S 0.60, camY −110, rx 0°, ry −7° (arranca YA en movimiento, sin rampa)
+//   enterFrom { cam: S 0.86, camY −110, rx 0°, ry −7° (arranca YA en movimiento, sin rampa)
 //               luz: MD.cold pura, key 0.22 (ventanita arriba-izq)
 //               materia: pared de azulejos + canal de junta + COSTRA NEGRA en y=0 }
-//   exitTo    { cam: S 0.92, camY +6, rx 2°  — la costra queda CENTRADA y clavada
+//   exitTo    { cam: S 1.16, camY +6, rx 2°  — la costra queda CENTRADA y clavada
 //               luz: cold (tRed = 0)
 //               materia: la COSTRA NEGRA, inmóvil en y=0 → es el eje de la costura }
 //   ── COSTURA @186: MATCH-SHAPE. La costra no se mueve ni un píxel; la tapa frontal
@@ -24,31 +24,33 @@
 //      exactamente el borde inferior de la costra. Nada aparece: se destapa. + Sheen @184.
 //
 // ACTO 2 · f186–300 · "hifas" (el corte transversal, hilos que BAJAN)
-//   enterFrom { cam: S 0.92, camY 6   (heredado, sin salto)
+//   enterFrom { cam: S 1.16, camY 6   (heredado, sin salto)
 //               luz: cold, key 0.24
 //               materia: la costra + la tapa abriéndose }
-//   exitTo    { cam: S 1.06, camY 170, rx 9°, ry +5° — bajando dentro del corte
+//   exitTo    { cam: S 1.28, camY 170, rx 9°, ry +5° — bajando dentro del corte
 //               luz: cold, tRed empieza a asomar recién en 440
 //               materia: 20 HIFAS ya dibujadas de y=8 hacia abajo, en 2 capas de profundidad }
 //   ── COSTURA @300: WIPE POR MATERIA (<VaporWipe/>). Vapor de baño cruza; detrás, el cemento
 //      liso ya resolvió en GRANO + ARENA + POROS. El corte y las hifas siguen ahí, idénticos.
 //
 // ACTO 3 · f300–500 · "no es piedra, es esponja"
-//   enterFrom { cam: S 1.06, camY 170 (heredado)
+//   enterFrom { cam: S 1.28, camY 170 (heredado)
 //               luz: cold, pared de azulejos aún al 100%
 //               materia: corte + hifas + poros recién nacidos }
-//   exitTo    { cam: S 3.40, camY 140 — ZOOM-THROUGH interno (f352→418) hacia un poro:
-//               los MISMOS poros pasan de 34 px a 350 px. Nada se reemplaza, se agranda.
+//   exitTo    { cam: S 3.28, camY 215 — ZOOM-THROUGH interno (f352→418) hacia un poro:
+//               los MISMOS poros pasan de ~45 px a ~340 px. Nada se reemplaza, se agranda.
+//               En f418 la costra ya salió por arriba del cuadro: atravesamos la superficie.
 //               luz: tRed 0.25, la pared cae a 0.22 (quedó fuera del plano focal)
 //               materia: campo de POROS a escala macro + BOCAS que perforan la costra }
 //   ── COSTURA @500: OCLUSIÓN (<Occluder color=bone/>). Una lámina pálida y pesada —la lejía—
 //      cruza el lente y tapa el 100%; cuando sale, el líquido ya está encima de la costra.
 //
 // ACTO 4 · f500–878 · "94% agua" (la lejía se queda ARRIBA)
-//   enterFrom { cam: S 3.40, camY 140 (heredado; sube a la superficie, no salta)
+//   enterFrom { cam: S 3.20, camY 150 (heredado; la cámara sube a buscar la cara, no salta)
 //               luz: tRed 0.25 → 1 (el ROJO de alerta entra con la lejía)
 //               materia: costra + bocas + poros, ya a escala macro }
-//   exitTo    { cam: S 3.56, camY 32, rx 15° — mirando la cara desde arriba
+//   exitTo    { cam: S 2.80, camY 24, rx 15° — retrocede lo justo para que quepa el AIRE
+//               sobre la cara (ahí vive la lejía); la costra queda como banda central
 //               luz: red plena, key 0.56
 //               materia: 5 moléculas de CLORO encajadas en las bocas (no entran) + la cara de
 //               la costra BLANQUEADA (bone) mientras el interior sigue negro }
@@ -56,10 +58,10 @@
 //      la cara empiezan a bajar por las bocas y la CÁMARA LAS SIGUE. El movimiento ES la costura.
 //
 // ACTO 5 · f878–1254 · "y después la regaste"
-//   enterFrom { cam: S 3.56, camY 32 (heredado, se pone en marcha hacia abajo)
+//   enterFrom { cam: S 2.80, camY 24 (heredado, se pone en marcha hacia abajo)
 //               luz: red plena
 //               materia: gotas entrando por las bocas de la costra bleacheada }
-//   exitTo    { cam: S 3.92, camY 1175 — 1143 unidades más abajo, en la zona de raíces
+//   exitTo    { cam: S 3.60, camY 1168 — 1144 unidades más abajo, en la zona de raíces
 //               luz: red + rim verde-moho (el ser vivo responde)
 //               materia: las MISMAS hifas del acto 2, ahora tallo grueso: beben, se hinchan,
 //               vuelven a verde y brotan puntas nuevas }
@@ -106,14 +108,14 @@ const wrap = (v: number, n: number) => ((v % n) + n) % n;
 // ── LA CÁMARA (una sola, función del frame GLOBAL) ────────────────────────────────────────────
 // S = magnificación, camX/camY = punto de mundo sobre el eje óptico. Monótona: nunca reinicia.
 const camS = (f: number) =>
-  kf(f, [0, 100, 186, 300, 340, 352, 386, 418, 500, 620, 792, 878, 1000, 1120, 1254],
-       [0.60, 0.78, 0.92, 1.06, 1.14, 1.20, 2.05, 3.28, 3.40, 3.46, 3.52, 3.56, 3.66, 3.80, 3.92]);
+  kf(f, [0, 100, 186, 300, 340, 352, 386, 418, 500, 560, 700, 792, 878, 1000, 1120, 1254],
+       [0.86, 1.02, 1.16, 1.28, 1.36, 1.42, 2.20, 3.28, 3.20, 2.72, 2.66, 2.72, 2.80, 3.10, 3.40, 3.60]);
 const camXAt = (f: number) =>
   kf(f, [0, 186, 300, 352, 418, 500, 700, 878, 1000, 1254],
        [180, 40, 10, -20, -110, -120, -80, -60, -40, -10]);
 const camYAt = (f: number) =>
-  kf(f, [0, 100, 186, 300, 352, 418, 500, 560, 611, 700, 792, 878, 930, 1000, 1060, 1110, 1180, 1254],
-       [-110, -46, 6, 170, 240, 215, 140, 90, 62, 40, 28, 32, 140, 560, 900, 1080, 1140, 1175]);
+  kf(f, [0, 100, 186, 300, 352, 418, 496, 508, 530, 560, 611, 700, 792, 878, 930, 1000, 1060, 1110, 1180, 1254],
+       [-110, -46, 6, 170, 240, 215, 150, 96, 44, 30, 24, 22, 18, 24, 130, 540, 880, 1060, 1130, 1168]);
 const camRX = (f: number) => kf(f, [0, 186, 300, 500, 792, 1000, 1254], [0, 2, 9, 12, 15, 11, 8]);
 const camRY = (f: number) => kf(f, [0, 186, 300, 500, 792, 1000, 1254], [-7, -1, 5, 1, -4, -1, 2]);
 
@@ -123,10 +125,10 @@ const clip = (
 ) => {
   const vw = W / sc;
   const vh = H / sc;
-  const left = cx - vw * 0.75;
-  const top = Math.max(y0, cy - vh * 0.75);
-  const bot = Math.min(y1, cy + vh * 0.75);
-  return { left, top, width: vw * 1.5, height: Math.max(0, bot - top) };
+  const left = cx - vw * 0.9;
+  const top = Math.max(y0, cy - vh * 0.9);
+  const bot = Math.min(y1, cy + vh * 0.9);
+  return { left, top, width: vw * 1.8, height: Math.max(0, bot - top) };
 };
 
 // ── DATOS DETERMINÍSTICOS (rnd = hash de Stage; ⛔ nada de Math.random) ────────────────────────
@@ -234,12 +236,12 @@ const WDOTS = Array.from({ length: 56 }, (_, i) => {
   const a = rnd(i * 2.7 + 71);
   const b = rnd(i * 4.1 + 79);
   const c = rnd(i * 6.7 + 83);
-  return { x: -900 + i * 33 + (a - 0.5) * 60, y: -430 + b * 380, r: 4 + c * 5, ph: a * 6.283, sp: 0.6 + c };
+  return { x: -900 + i * 33 + (a - 0.5) * 60, y: -196 + b * 172, r: 4 + c * 5, ph: a * 6.283, sp: 0.6 + c };
 });
 
 const CHLO = [0, 2, 4, 6, 8].map((m, i) => {
   const a = rnd(i * 13.3 + 97);
-  return { m, x0: MOUTHS[m].x + (a - 0.5) * 120, y0: -520 - a * 260, r: 40 + a * 14, ph: a * 6.283 };
+  return { m, x0: MOUTHS[m].x + (a - 0.5) * 120, y0: -142 - a * 34, r: 40 + a * 14, ph: a * 6.283 };
 });
 
 const MOTES = Array.from({ length: 24 }, (_, i) => {
@@ -819,10 +821,10 @@ const CoverFlap: React.FC<{ sc: number; cx: number; cy: number; W: number; H: nu
 const Bleach: React.FC<{
   f: number; sc: number; cx: number; cy: number; W: number; H: number; burn: number;
 }> = ({ f, sc, cx, cy, W, H, burn }) => {
-  const pour = clamp01((f - 494) / 44);
-  if (pour <= 0) return null;
+  const pour = clamp01((f - 494) / 40);
+  if (pour <= 0 || f > 986) return null;
   const b = clip(sc, cx, cy, W, H, -1800, -24);
-  const drop = (1 - pour) * 1250;
+  const drop = -(1 - pour) * 300;
   const wob = Math.sin(f / 17) * 4 + Math.sin(f / 29) * 2.6;
   // el cloro: pesado, lento, y se FRENA en la boca del poro
   const sink = clamp01((f - 606) / 46);
@@ -858,7 +860,7 @@ const Bleach: React.FC<{
       />
       {/* 94%: agua, chiquita y rapidísima */}
       {WDOTS.map((d, i) => {
-        const y = d.y + Math.sin(f / (13 / d.sp) + d.ph) * 46 - clamp01((f - 870) / 60) * (d.y + 30);
+        const y = d.y + Math.sin(f / (13 / d.sp) + d.ph) * 26 - clamp01((f - 870) / 60) * (d.y + 30);
         const x = d.x + Math.sin(f / (21 / d.sp) + d.ph * 2) * 34;
         return (
           <div
@@ -986,7 +988,7 @@ export const MovRoots: React.FC<{ durationInFrames: number }> = ({ durationInFra
 
   // ── ESTADOS DE MATERIA (lo que hace que un acto se vuelva el siguiente) ──
   const mat = clamp01((frame - 298) / 42);
-  const openDeg = kf(frame, [180, 252, 294], [0, 86, 93], Easing.bezier(0.55, 0, 0.18, 1));
+  const openDeg = kf(frame, [180, 258, 296], [0, 84, 89], Easing.bezier(0.55, 0, 0.18, 1));
   const bleach = kf(frame, [792, 802, 874], [0, 0.07, 1]);
   const burn = kf(frame, [790, 834], [0, 1]);
   const mouthOpen = kf(frame, [286, 338], [0.18, 1]);
@@ -996,7 +998,7 @@ export const MovRoots: React.FC<{ durationInFrames: number }> = ({ durationInFra
 
   // ── HOLD VIVO: la velocidad del descenso del acto 5 dibuja estelas ──
   const spd = Math.abs(camYAt(frame) - camYAt(frame - 1)) * S;
-  const streak = clamp01((spd - 9) / 60);
+  const streak = clamp01((spd - 4) / 26);
 
   // escalas por estrato (m): los planos cercanos se mueven más
   const sBody = S;

@@ -37,9 +37,15 @@ export const MD = {
 export const F_SANS = "Inter, system-ui, sans-serif";
 export const F_SERIF = "'Playfair Display', Georgia, serif";
 
-export const rgba = (hex: string, a: number) => {
-  const h = hex.replace("#", "");
+// ⚠️ Acepta HEX *y* `rgb(r,g,b)`. Antes sólo parseaba HEX, así que `rgba(light(t,...), .3)` —que
+// es lo natural de escribir, porque `light()` devuelve `rgb(...)`— daba `rgba(NaN,NaN,NaN,.3)` y el
+// color desaparecía sin error. Lo cazó el movimiento de Chernóbil (25-ago-2026).
+export const rgba = (color: string, a: number) => {
+  const m = color.match(/rgba?\(\s*([\d.]+)[,\s]+([\d.]+)[,\s]+([\d.]+)/i);
+  if (m) return `rgba(${Math.round(+m[1])},${Math.round(+m[2])},${Math.round(+m[3])},${a})`;
+  const h = color.replace("#", "");
   const n = parseInt(h.length === 3 ? h.split("").map((c) => c + c).join("") : h, 16);
+  if (Number.isNaN(n)) return `rgba(255,255,255,${a})`; // nunca devolver NaN: se ve como "no pasa nada"
   return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
 };
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;

@@ -613,30 +613,29 @@ const Numeral: React.FC<{
 // El tono cambia: el cuarto se enfría y se queda quieto. UNA palabra, con aire.
 // Sale por MATCH-MOVE: las letras se van por el mismo vector que trae al segundo envase.
 const Act1: React.FC<{ f: number }> = ({ f }) => {
-  const open = kf(f, [0, 14], [1, 0], [E.glide]);          // rampa de entrada: la rendija abre (⛔ no es un fundido)
+  // rampa de entrada ≤15f: la rendija ABRE (⛔ no es un fundido). Arranca ya entreabierta:
+  // el frame 0 nunca es un frame muerto en negro.
+  const open = kf(f, [0, 14], [0.86, 0], [E.glide]);
   const letters = "SAFETY".split("");
   const tight = kf(f, [22, 49, 70], [26, 15, 13], [E.out, E.soft]); // en "Straight." la palabra SE ASIENTA
   const keyline = kf(f, [49, 66], [0, 1], [E.snap]);
-  const wallPar = kf(f, [0, 130], [-26, 6], [E.soft]);
   return (
+    // La pared del fondo NO se dibuja acá: es la del acto 2, que ya está montada desde el
+    // frame 0. Este acto aporta el haz, el espejo y LA PALABRA, por delante de ese mismo cuarto.
     <div style={{ position: "absolute", inset: 0, perspective: "1500px", transformStyle: "preserve-3d" }}>
-      {/* plano -900: la pared del fondo */}
-      <div style={{ position: "absolute", left: 0, top: 0, transform: `translateZ(-900px) translateX(${wallPar}px) scale(1.9)`, transformOrigin: "50% 40%" }}>
-        <TilePlane w={W} h={H} lit={0.6} tint={MD.cold} grid={118} />
-      </div>
       {/* plano -520: el haz de la ventanita */}
       <div
         style={{
           position: "absolute", left: 120, top: -180, width: 560, height: 1200,
-          transform: `translateZ(-520px) rotate(16deg) translateY(${kf(f, [0, 40], [-90, 0], [E.out])}px)`,
+          transform: `translateZ(-520px) rotate(16deg) translateY(${kf(f, [0, 40, 128, 158], [-90, 0, 0, 940], [E.out, E.lin, E.inc])}px)`,
           background: `linear-gradient(180deg, ${rgba(MD.cold, 0.16)} 0%, ${rgba(MD.cold, 0.05)} 46%, rgba(0,0,0,0) 84%)`,
         }}
       />
       {/* plano -300: el espejo del botiquín, apenas insinuado */}
       <div
         style={{
-          position: "absolute", left: 1280, top: 190, width: 470, height: 380,
-          transform: "translateZ(-300px)",
+          position: "absolute", left: 1424, top: 178, width: 420, height: 360,
+          transform: `translateZ(-300px) translateX(${kf(f, [124, 158], [0, 760], [E.inc])}px)`,
           borderRadius: 8,
           background: `linear-gradient(150deg, ${rgba(MD.cold, 0.07)} 0%, rgba(0,0,0,0) 60%)`,
           boxShadow: `inset 0 0 0 2px ${rgba(MD.white, 0.06)}, inset 0 40px 90px rgba(0,0,0,0.7)`,
@@ -718,13 +717,13 @@ const Act2: React.FC<{ f: number }> = ({ f }) => {
   const pulse = 0.72 + 0.28 * Math.sin(f / 9);
   const gasOp = kf(f, [286, 330, 470, 545], [0, 0.5, 0.62, 0.78], [E.out, E.soft, E.out]);
   const measure = kf(f, [150, 176, 272, 292], [0, 1, 1, 0], [E.out, E.lin, E.inc]);
-  const wallPar = kf(f, [130, 545], [6, 54], [E.soft]);
+  const wallPar = kf(f, [0, 130, 545], [-26, 6, 54], [E.soft, E.soft]);
   const shimmer = Math.sin(f / 5) * 6;
   return (
     <div style={{ position: "absolute", inset: 0, perspective: "1500px", transformStyle: "preserve-3d" }}>
-      {/* MISMA pared del acto 1 (el espacio no se remonta, sólo lo miramos de más cerca) */}
+      {/* LA PARED DEL CUARTO — montada desde el frame 0: es el mismo espacio del acto 1 */}
       <div style={{ position: "absolute", left: 0, top: 0, transform: `translateZ(-900px) translateX(${wallPar}px) scale(1.9)`, transformOrigin: "50% 40%" }}>
-        <TilePlane w={W} h={H} lit={0.5} tint={MD.cold} grid={118} />
+        <TilePlane w={W} h={H} lit={0.56} tint={MD.cold} grid={118} />
       </div>
       {/* la repisa: la keyline del acto 1 ya estirada */}
       <div
@@ -774,6 +773,15 @@ const Act2: React.FC<{ f: number }> = ({ f }) => {
           background: `radial-gradient(circle, ${rgba(MD.moldLit, 0.5)} 0%, ${rgba(MD.red, 0.22)} 46%, rgba(0,0,0,0) 76%)`,
         }}
       />
+      {/* el gas SE COME EL LENTE: es la materia que entrega el acto (no un fundido a negro) */}
+      {f >= 528 && (
+        <AbsoluteFill
+          style={{
+            transform: `scale(${(1 + clamp01((f - 528) / 30) * 0.5).toFixed(3)})`,
+            background: `radial-gradient(120% 112% at 50% 58%, ${rgba(MD.moldLit, 0.96 * clamp01((f - 530) / 26))} 0%, ${rgba(MD.moldLit, 0.86 * clamp01((f - 530) / 26))} 42%, ${rgba(MD.red, 0.6 * clamp01((f - 530) / 26))} 74%, ${rgba(MD.ink1, 0.82 * clamp01((f - 530) / 26))} 100%)`,
+          }}
+        />
+      )}
       <Chip frame={f} at={138} out={272} text="NEVER MIX" x={960} y={300} accent={MD.red} />
       <Caption
         frame={f} at={292} kicker="RULE ONE" title="CHLORINE *GAS*"
@@ -925,13 +933,24 @@ const Act3: React.FC<{ f: number }> = ({ f }) => {
       </div>
       {/* el aire ESTANCADO (la misma materia del gas, ya sin fuerza: cae) */}
       <Plume frame={f} at={545} x={960} y={FLOOR - 120} spread={900} rise={520} n={13} color={MD.moldLit} op={air} speed={0.62} sag={0.85} />
-      <Caption frame={f} at={548} out={652} kicker="WHY THE BATHROOM" title="THE WORST *ROOM*" x={96} y={126} w={800} size={84} accent={MD.red} />
+      {/* la misma nube que nos tragó, ya adentro del cuarto, disipándose */}
+      {f < 616 && (
+        <AbsoluteFill
+          style={{
+            transform: `scale(${(1.5 - clamp01((f - 556) / 60) * 0.5).toFixed(3)})`,
+            background: `radial-gradient(120% 112% at 50% 58%, ${rgba(MD.moldLit, 0.9 * (1 - clamp01((f - 556) / 58)))} 0%, ${rgba(MD.moldLit, 0.72 * (1 - clamp01((f - 552) / 54)))} 42%, ${rgba(MD.red, 0.4 * (1 - clamp01((f - 552) / 48)))} 74%, ${rgba(MD.ink1, 0.6 * (1 - clamp01((f - 552) / 44)))} 100%)`,
+          }}
+        />
+      )}
+      <Caption frame={f} at={548} out={652} kicker="WHY THE BATHROOM" title="THE WORST *ROOM*" x={96} y={126} w={720} size={84} accent={MD.red} />
       <Chip frame={f} at={552} out={648} text="SMALL" x={430} y={430} accent={MD.bone} />
       <Chip frame={f} at={580} out={648} text="DOOR SHUT" x={1476} y={496} accent={MD.red} />
-      <Chip frame={f} at={614} out={648} text="FAN: NOT WORKING" x={960} y={216} accent={MD.red} />
+      <Chip frame={f} at={614} out={648} text="FAN: NOT WORKING" x={1180} y={214} accent={MD.red} />
       {/* la SECUENCIA sobre el azulejo */}
-      {f >= 660 && f < 846 && (
-        <Rail frame={f} at={664} x={300} y={946} w={760} stations={["SPRAYED", "RINSE", "LET IT DRY"]} head={railHead} accent={MD.cold} />
+      {f >= 660 && f < 884 && (
+        <div style={{ position: "absolute", inset: 0, transform: `translateY(${kf(f, [838, 868], [0, 280], [E.inc]).toFixed(1)}px)` }}>
+          <Rail frame={f} at={664} x={300} y={946} w={760} stations={["SPRAYED", "RINSE", "LET IT DRY"]} head={railHead} accent={MD.cold} />
+        </div>
       )}
       {/* CIERRE DEL ACTO: tres losas apiladas que se SEPARAN */}
       {slab > 0.001 &&
@@ -1198,24 +1217,31 @@ export const MovSafety: React.FC<{ durationInFrames: number }> = ({ durationInFr
 
       {/* EL MUNDO, bajo la única cámara */}
       <AbsoluteFill style={{ transform: `${c.transform} scale(${camS.toFixed(4)})` }}>
-        {f < 158 && <Act1 f={f} />}
+        {/* El ORDEN importa en cada frontera: el acto que SE VA queda por delante mientras dura
+            la costura (pasamos a través de SU materia), salvo en la oclusión, donde lo que entra
+            ya está montado detrás de la hoja de la puerta. */}
+        {f < 158 && (
+          <div style={{ position: "absolute", inset: 0, zIndex: 4 }}>
+            <Act1 f={f} />
+          </div>
+        )}
         {f < 558 && (
-          <div style={{ position: "absolute", inset: 0, transform: `scale(${sc2.toFixed(4)})`, transformOrigin: "960px 640px" }}>
+          <div style={{ position: "absolute", inset: 0, zIndex: 3, transform: `scale(${sc2.toFixed(4)})`, transformOrigin: "960px 640px" }}>
             <Act2 f={f} />
           </div>
         )}
         {f >= 500 && f < 892 && (
-          <div style={{ position: "absolute", inset: 0, transform: `scale(${sc3.toFixed(4)})`, transformOrigin: "960px 600px" }}>
+          <div style={{ position: "absolute", inset: 0, zIndex: f < 560 ? 2 : 4, transform: `scale(${sc3.toFixed(4)})`, transformOrigin: "960px 600px" }}>
             <Act3 f={f} />
           </div>
         )}
         {f >= 884 && f < 1426 && (
-          <div style={{ position: "absolute", inset: 0, clipPath: wiping ? `inset(0px 0px 0px ${weC.toFixed(0)}px)` : undefined }}>
+          <div style={{ position: "absolute", inset: 0, zIndex: 5, clipPath: wiping ? `inset(0px 0px 0px ${weC.toFixed(0)}px)` : undefined }}>
             <Act4 f={f} />
           </div>
         )}
         {f >= 1392 && (
-          <div style={{ position: "absolute", inset: 0, clipPath: wiping ? `inset(0px ${(W - weC).toFixed(0)}px 0px 0px)` : undefined }}>
+          <div style={{ position: "absolute", inset: 0, zIndex: 6, clipPath: wiping ? `inset(0px ${(W - weC).toFixed(0)}px 0px 0px)` : undefined }}>
             <Act5 f={f} end={END} />
           </div>
         )}
