@@ -229,10 +229,10 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
   {from: 28509, dur: 700, dir: 'up', node: <AlertSignalsScene title="¿Sus riñones ya piden ayuda?" signals={['Orina espumosa que no se va', 'Hinchazón: tobillos, párpados, el anillo', 'Cansancio que no se arregla durmiendo', 'Picazón en la piel, sobre todo de noche']} footer="Si reconoce 2 o más, pídale a su médico un análisis" />},
   // QUÉ HAY ADENTRO DE LA GUÍA
   {from: 31983, dur: 1660, dir: 'in', node: <MethodStackScene rows={[
-    {img: 'bas7_lamina_c.jpg', title: 'El semáforo renal', sub: 'casi 300 alimentos, de la A a la Z', stat: '300', statLabel: 'alimentos con su porción'},
-    {img: 'bas6_p_calendario_pared.jpg', title: '90 días para bajar la creatinina', sub: 'día por día, hasta su próximo análisis', stat: '90', statLabel: 'días'},
-    {img: 'bas7_lamina_b.jpg', title: 'El botiquín traicionero', sub: 'pastillas, hierbas y suplementos', stat: '27', statLabel: 'revisados uno por uno'},
-    {img: 'bas7_broll_analisis.jpg', title: 'Su análisis traducido', sub: 'qué le dice cada sigla del papel'},
+    {img: 'img/bas7_lamina_c.jpg', title: 'El semáforo renal', sub: 'casi 300 alimentos, de la A a la Z', stat: '300', statLabel: 'alimentos con su porción'},
+    {img: 'img/bas6_p_calendario_pared.jpg', title: '90 días para bajar la creatinina', sub: 'día por día, hasta su próximo análisis', stat: '90', statLabel: 'días'},
+    {img: 'img/bas7_lamina_b.jpg', title: 'El botiquín traicionero', sub: 'pastillas, hierbas y suplementos', stat: '27', statLabel: 'revisados uno por uno'},
+    {img: 'img/bas7_broll_analisis.jpg', title: 'Su análisis traducido', sub: 'qué le dice cada sigla del papel'},
   ]} />},
   // CTA — el QR y cómo escanearlo
   {from: 33900, dur: 1290, dir: 'up', node: <Lower y={130} k={0.86}><QrCtaScene qr="renal/bas_qr_bastida.png" kicker="Dr. Bastida · Salud renal" title="La guía completa del riñón" steps={['Abra la cámara de su teléfono', 'Apunte al código de la pantalla', 'Toque el aviso que aparece arriba']} note="También en la descripción, es el primer enlace" /></Lower>},
