@@ -1,0 +1,290 @@
+{
+ "totalMs": 1020900,
+ "anchors": {
+  "HOOK_pulls": {
+   "ms": 0,
+   "s": 0,
+   "phrase": "your toilet doesn't push anything down"
+  },
+  "HOOK_siphon": {
+   "ms": 19000,
+   "s": 19,
+   "phrase": "and the second that bend is full"
+  },
+  "RIM_channel": {
+   "ms": 34640,
+   "s": 34.64,
+   "phrase": "and every drop of water that does that"
+  },
+  "RIM_nobrush": {
+   "ms": 51940,
+   "s": 51.94,
+   "phrase": "no brush you have ever owned"
+  },
+  "RIM_made": {
+   "ms": 54700,
+   "s": 54.7,
+   "phrase": "and that channel is where the ring"
+  },
+  "NINETY": {
+   "ms": 70720,
+   "s": 70.72,
+   "phrase": "so here's the 90"
+  },
+  "GIVE_start": {
+   "ms": 88300,
+   "s": 88.3,
+   "phrase": "all right let me just give you the whole thing"
+  },
+  "GIVE_valve": {
+   "ms": 97540,
+   "s": 97.54,
+   "phrase": "reach behind the toilet down low on the left"
+  },
+  "GIVE_peroxide": {
+   "ms": 123340,
+   "s": 123.34,
+   "phrase": "now three percent hydrogen peroxide"
+  },
+  "GIVE_paper": {
+   "ms": 136520,
+   "s": 136.52,
+   "phrase": "then take toilet paper four or five sheets"
+  },
+  "GIVE_tank": {
+   "ms": 155660,
+   "s": 155.66,
+   "phrase": "take the lid off the tank while that sits"
+  },
+  "GIVE_end": {
+   "ms": 169200,
+   "s": 169.2,
+   "phrase": "that's it that's the video go do it"
+  },
+  "BIO_start": {
+   "ms": 172500,
+   "s": 172.5,
+   "phrase": "now if you're still here"
+  },
+  "BIO_colony": {
+   "ms": 183640,
+   "s": 183.64,
+   "phrase": "that ring isn't a stain"
+  },
+  "BIO_bleach": {
+   "ms": 201280,
+   "s": 201.28,
+   "phrase": "and here's the part that matters"
+  },
+  "BIO_mowed": {
+   "ms": 220720,
+   "s": 220.72,
+   "phrase": "so you didn't clean it you mowed it"
+  },
+  "BIO_peroxide": {
+   "ms": 236300,
+   "s": 236.3,
+   "phrase": "peroxide works differently"
+  },
+  "BIO_honest": {
+   "ms": 257700,
+   "s": 257.7,
+   "phrase": "i do want to be honest about one thing"
+  },
+  "TANK_start": {
+   "ms": 286080,
+   "s": 286.08,
+   "phrase": "okay now i have to tell you about the tank"
+  },
+  "TANK_house": {
+   "ms": 307040,
+   "s": 307.04,
+   "phrase": "there was a house"
+  },
+  "TANK_lift": {
+   "ms": 334300,
+   "s": 334.3,
+   "phrase": "third time i'm in there and the fill sounds slow"
+  },
+  "TANK_pond": {
+   "ms": 352280,
+   "s": 352.28,
+   "phrase": "so think about what i had been doing"
+  },
+  "TANK_lesson": {
+   "ms": 371900,
+   "s": 371.9,
+   "phrase": "that's really the whole reason i do this"
+  },
+  "ORDER_start": {
+   "ms": 380780,
+   "s": 380.78,
+   "phrase": "all right here's the order i use"
+  },
+  "ORDER_valve": {
+   "ms": 390180,
+   "s": 390.18,
+   "phrase": "water off first"
+  },
+  "ORDER_flush": {
+   "ms": 408080,
+   "s": 408.08,
+   "phrase": "flush and hold the handle down"
+  },
+  "ORDER_rim": {
+   "ms": 413100,
+   "s": 413.1,
+   "phrase": "rim first always"
+  },
+  "ORDER_photo": {
+   "ms": 421560,
+   "s": 421.56,
+   "phrase": "get your phone hold it under the rim"
+  },
+  "ORDER_ring": {
+   "ms": 444240,
+   "s": 444.24,
+   "phrase": "then the ring paper on it"
+  },
+  "ORDER_tank": {
+   "ms": 459740,
+   "s": 459.74,
+   "phrase": "tank while that works"
+  },
+  "ORDER_tablets": {
+   "ms": 479400,
+   "s": 479.4,
+   "phrase": "and while you've got that lid off"
+  },
+  "ORDER_jets": {
+   "ms": 529360,
+   "s": 529.36,
+   "phrase": "then the jets"
+  },
+  "ORDER_nobody": {
+   "ms": 569280,
+   "s": 569.28,
+   "phrase": "now the parts nobody does"
+  },
+  "ORDER_handle": {
+   "ms": 587220,
+   "s": 587.22,
+   "phrase": "the handle just think about the order of operations"
+  },
+  "ORDER_base": {
+   "ms": 596740,
+   "s": 596.74,
+   "phrase": "and the base where the porcelain meets the floor"
+  },
+  "ORDER_brush": {
+   "ms": 621800,
+   "s": 621.8,
+   "phrase": "and the brush okay"
+  },
+  "ORDER_rinse": {
+   "ms": 649000,
+   "s": 649,
+   "phrase": "so when you're done scrubbing open the valve"
+  },
+  "PLUME_start": {
+   "ms": 671300,
+   "s": 671.3,
+   "phrase": "now let me tell you where all of this actually ends up"
+  },
+  "PLUME_lasers": {
+   "ms": 679140,
+   "s": 679.14,
+   "phrase": "in 2022 engineers at the university of colorado"
+  },
+  "PLUME_fivefeet": {
+   "ms": 705580,
+   "s": 705.58,
+   "phrase": "five feet that's face height"
+  },
+  "PLUME_lid": {
+   "ms": 713100,
+   "s": 713.1,
+   "phrase": "now i want to be straight with you"
+  },
+  "ROOM_smell": {
+   "ms": 733100,
+   "s": 733.1,
+   "phrase": "and it explains something people find confusing"
+  },
+  "ROOM_wipe": {
+   "ms": 755320,
+   "s": 755.32,
+   "phrase": "wipe the wall behind and beside the toilet"
+  },
+  "HONEST_start": {
+   "ms": 773160,
+   "s": 773.16,
+   "phrase": "and here's the honest part"
+  },
+  "HONEST_pumice": {
+   "ms": 791760,
+   "s": 791.76,
+   "phrase": "that's pumice stone"
+  },
+  "HONEST_wax": {
+   "ms": 808600,
+   "s": 808.6,
+   "phrase": "if the smell survives everything i just said"
+  },
+  "HONEST_guest": {
+   "ms": 835320,
+   "s": 835.32,
+   "phrase": "and if you've got a bathroom nobody uses"
+  },
+  "SAFE_start": {
+   "ms": 866100,
+   "s": 866.1,
+   "phrase": "now safety and i'm going to say this part straight"
+  },
+  "SAFE_gas": {
+   "ms": 879240,
+   "s": 879.24,
+   "phrase": "and bleach plus acid makes chlorine gas"
+  },
+  "SAFE_urine": {
+   "ms": 898060,
+   "s": 898.06,
+   "phrase": "never pour bleach into a bowl with urine"
+  },
+  "SAFE_vinegar": {
+   "ms": 906080,
+   "s": 906.08,
+   "phrase": "never mix peroxide and vinegar together"
+  },
+  "SAFE_three": {
+   "ms": 917120,
+   "s": 917.12,
+   "phrase": "three percent the brown bottle"
+  },
+  "SAFE_light": {
+   "ms": 927320,
+   "s": 927.32,
+   "phrase": "and it's a brown bottle for a reason"
+  },
+  "SAFE_gloves": {
+   "ms": 946720,
+   "s": 946.72,
+   "phrase": "gloves aren't a bad idea"
+  },
+  "CLOSE_start": {
+   "ms": 955440,
+   "s": 955.44,
+   "phrase": "so that's the whole thing two ideas really"
+  },
+  "CLOSE_cta": {
+   "ms": 981540,
+   "s": 981.54,
+   "phrase": "there's a printed checklist in the description"
+  },
+  "CLOSE_one": {
+   "ms": 1002940,
+   "s": 1002.94,
+   "phrase": "and if you do one thing tonight"
+  }
+ }
+}

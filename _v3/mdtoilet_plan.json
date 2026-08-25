@@ -1,0 +1,3217 @@
+{
+ "totalMs": 1021727,
+ "beats": [
+  {
+   "ms_in": 0,
+   "ms_out": 2300,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 2300,
+   "ms_out": 6300,
+   "tipo": "clip",
+   "sec": "hook",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h01_handle",
+   "startFrom": 0,
+   "flash": false
+  },
+  {
+   "ms_in": 6300,
+   "ms_out": 8160,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 8160,
+   "ms_out": 11800,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 11800,
+   "ms_out": 16700,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 16700,
+   "ms_out": 19000,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 19000,
+   "ms_out": 54700,
+   "tipo": "movimiento",
+   "componente": "MovSiphon",
+   "sec": "siphon",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 54700,
+   "ms_out": 56620,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h04_rimfinger",
+   "startFrom": 52,
+   "flash": false
+  },
+  {
+   "ms_in": 56620,
+   "ms_out": 59200,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h05_mirror",
+   "startFrom": 6,
+   "flash": false
+  },
+  {
+   "ms_in": 59200,
+   "ms_out": 60440,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h06_scrubwrong",
+   "startFrom": 42,
+   "flash": false
+  },
+  {
+   "ms_in": 60440,
+   "ms_out": 63920,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h07_pointbowl",
+   "startFrom": 28,
+   "flash": false
+  },
+  {
+   "ms_in": 63920,
+   "ms_out": 65720,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h04_rimfinger",
+   "startFrom": 16,
+   "flash": false
+  },
+  {
+   "ms_in": 65720,
+   "ms_out": 67240,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h05_mirror",
+   "startFrom": 47,
+   "flash": false
+  },
+  {
+   "ms_in": 67240,
+   "ms_out": 71920,
+   "tipo": "avatar",
+   "sec": "rimmade",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 71920,
+   "ms_out": 74200,
+   "tipo": "avatar",
+   "sec": "rimmade",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 74200,
+   "ms_out": 75160,
+   "tipo": "avatar",
+   "sec": "rimmade",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 75160,
+   "ms_out": 78160,
+   "tipo": "avatar",
+   "sec": "rimmade",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 78160,
+   "ms_out": 79780,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h06_scrubwrong",
+   "startFrom": 75,
+   "flash": false
+  },
+  {
+   "ms_in": 79780,
+   "ms_out": 82760,
+   "tipo": "avatar",
+   "sec": "rimmade",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 82760,
+   "ms_out": 84460,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h07_pointbowl",
+   "startFrom": 25,
+   "flash": false
+  },
+  {
+   "ms_in": 84460,
+   "ms_out": 86840,
+   "tipo": "clip",
+   "sec": "rimmade",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h04_rimfinger",
+   "startFrom": 41,
+   "flash": false
+  },
+  {
+   "ms_in": 86840,
+   "ms_out": 88300,
+   "tipo": "avatar",
+   "sec": "rimmade",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 88300,
+   "ms_out": 92480,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "give",
+   "avatar": "hidden",
+   "props": {
+    "number": "0",
+    "title": "THE 90-SECOND VERSION",
+    "sub": "the whole fix, right now"
+   }
+  },
+  {
+   "ms_in": 92480,
+   "ms_out": 93260,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h08_valve",
+   "startFrom": 7,
+   "flash": true
+  },
+  {
+   "ms_in": 93260,
+   "ms_out": 94260,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 94260,
+   "ms_out": 94940,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h09_drain",
+   "startFrom": 44,
+   "flash": true
+  },
+  {
+   "ms_in": 94940,
+   "ms_out": 97540,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h10_bottle",
+   "startFrom": 54,
+   "flash": false
+  },
+  {
+   "ms_in": 97540,
+   "ms_out": 98900,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h11_squirtrim",
+   "startFrom": 15,
+   "flash": false
+  },
+  {
+   "ms_in": 98900,
+   "ms_out": 99780,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 99780,
+   "ms_out": 103880,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h12_paperring",
+   "startFrom": 15,
+   "flash": false
+  },
+  {
+   "ms_in": 103880,
+   "ms_out": 105180,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h14_tanklid",
+   "startFrom": 25,
+   "flash": false
+  },
+  {
+   "ms_in": 105180,
+   "ms_out": 105880,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 105880,
+   "ms_out": 108580,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h15_pourtank",
+   "startFrom": 34,
+   "flash": false
+  },
+  {
+   "ms_in": 108580,
+   "ms_out": 110120,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h16_wait",
+   "startFrom": 2,
+   "flash": false
+  },
+  {
+   "ms_in": 110120,
+   "ms_out": 110940,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 110940,
+   "ms_out": 115080,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h17_brushring",
+   "startFrom": 7,
+   "flash": false
+  },
+  {
+   "ms_in": 115080,
+   "ms_out": 115960,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h08_valve",
+   "startFrom": 73,
+   "flash": true
+  },
+  {
+   "ms_in": 115960,
+   "ms_out": 116860,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h09_drain",
+   "startFrom": 13,
+   "flash": true
+  },
+  {
+   "ms_in": 116860,
+   "ms_out": 117660,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h10_bottle",
+   "startFrom": 49,
+   "flash": true
+  },
+  {
+   "ms_in": 117660,
+   "ms_out": 119780,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 119780,
+   "ms_out": 120380,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h11_squirtrim",
+   "startFrom": 90,
+   "flash": true
+  },
+  {
+   "ms_in": 120380,
+   "ms_out": 121800,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 121800,
+   "ms_out": 122740,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 122740,
+   "ms_out": 126500,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h12_paperring",
+   "startFrom": 7,
+   "flash": false
+  },
+  {
+   "ms_in": 126500,
+   "ms_out": 127340,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h13_soakpaper",
+   "startFrom": 60,
+   "flash": true
+  },
+  {
+   "ms_in": 127340,
+   "ms_out": 129000,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h14_tanklid",
+   "startFrom": 77,
+   "flash": false
+  },
+  {
+   "ms_in": 129000,
+   "ms_out": 131600,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h15_pourtank",
+   "startFrom": 19,
+   "flash": false
+  },
+  {
+   "ms_in": 131600,
+   "ms_out": 133100,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h16_wait",
+   "startFrom": 59,
+   "flash": false
+  },
+  {
+   "ms_in": 133100,
+   "ms_out": 133840,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h17_brushring",
+   "startFrom": 10,
+   "flash": true
+  },
+  {
+   "ms_in": 133840,
+   "ms_out": 138180,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h08_valve",
+   "startFrom": 6,
+   "flash": false
+  },
+  {
+   "ms_in": 138180,
+   "ms_out": 138980,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h09_drain",
+   "startFrom": 81,
+   "flash": true
+  },
+  {
+   "ms_in": 138980,
+   "ms_out": 139780,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 139780,
+   "ms_out": 140540,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h10_bottle",
+   "startFrom": 21,
+   "flash": true
+  },
+  {
+   "ms_in": 140540,
+   "ms_out": 142780,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 142780,
+   "ms_out": 143400,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h11_squirtrim",
+   "startFrom": 59,
+   "flash": true
+  },
+  {
+   "ms_in": 143400,
+   "ms_out": 144800,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h12_paperring",
+   "startFrom": 79,
+   "flash": false
+  },
+  {
+   "ms_in": 144800,
+   "ms_out": 145640,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h13_soakpaper",
+   "startFrom": 31,
+   "flash": true
+  },
+  {
+   "ms_in": 145640,
+   "ms_out": 149300,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 149300,
+   "ms_out": 150060,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 150060,
+   "ms_out": 151680,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h14_tanklid",
+   "startFrom": 63,
+   "flash": true
+  },
+  {
+   "ms_in": 151680,
+   "ms_out": 154360,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h15_pourtank",
+   "startFrom": 3,
+   "flash": false
+  },
+  {
+   "ms_in": 154360,
+   "ms_out": 156060,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 156060,
+   "ms_out": 156840,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h16_wait",
+   "startFrom": 42,
+   "flash": true
+  },
+  {
+   "ms_in": 156840,
+   "ms_out": 161520,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 161520,
+   "ms_out": 162580,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h09_drain",
+   "startFrom": 49,
+   "flash": true
+  },
+  {
+   "ms_in": 162580,
+   "ms_out": 163180,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h10_bottle",
+   "startFrom": 93,
+   "flash": true
+  },
+  {
+   "ms_in": 163180,
+   "ms_out": 165900,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 165900,
+   "ms_out": 167440,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h11_squirtrim",
+   "startFrom": 22,
+   "flash": false
+  },
+  {
+   "ms_in": 167440,
+   "ms_out": 168120,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h12_paperring",
+   "startFrom": 65,
+   "flash": true
+  },
+  {
+   "ms_in": 168120,
+   "ms_out": 171800,
+   "tipo": "clip",
+   "sec": "give",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h13_soakpaper",
+   "startFrom": 1,
+   "flash": false
+  },
+  {
+   "ms_in": 171800,
+   "ms_out": 172500,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 172500,
+   "ms_out": 175140,
+   "tipo": "avatar",
+   "sec": "biointro",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 175140,
+   "ms_out": 179380,
+   "tipo": "avatar",
+   "sec": "biointro",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 179380,
+   "ms_out": 181280,
+   "tipo": "clip",
+   "sec": "biointro",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h18_pointring",
+   "startFrom": 28,
+   "flash": false
+  },
+  {
+   "ms_in": 181280,
+   "ms_out": 183640,
+   "tipo": "avatar",
+   "sec": "biointro",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 183640,
+   "ms_out": 236300,
+   "tipo": "movimiento",
+   "componente": "MovBiofilm",
+   "sec": "biofilm",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 236300,
+   "ms_out": 238140,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 238140,
+   "ms_out": 240600,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h21_breakfilm",
+   "startFrom": 43,
+   "flash": false
+  },
+  {
+   "ms_in": 240600,
+   "ms_out": 242020,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 242020,
+   "ms_out": 245540,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 245540,
+   "ms_out": 247620,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 247620,
+   "ms_out": 249180,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h22_calendar",
+   "startFrom": 10,
+   "flash": false
+  },
+  {
+   "ms_in": 249180,
+   "ms_out": 253920,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 253920,
+   "ms_out": 256280,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 256280,
+   "ms_out": 257220,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 257220,
+   "ms_out": 260040,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 260040,
+   "ms_out": 261540,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h10_bottle",
+   "startFrom": 70,
+   "flash": false
+  },
+  {
+   "ms_in": 261540,
+   "ms_out": 264540,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h18_pointring",
+   "startFrom": 11,
+   "flash": false
+  },
+  {
+   "ms_in": 264540,
+   "ms_out": 266360,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h21_breakfilm",
+   "startFrom": 45,
+   "flash": false
+  },
+  {
+   "ms_in": 266360,
+   "ms_out": 268920,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h22_calendar",
+   "startFrom": 54,
+   "flash": false
+  },
+  {
+   "ms_in": 268920,
+   "ms_out": 270200,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h19_twobottles",
+   "startFrom": 30,
+   "flash": false
+  },
+  {
+   "ms_in": 270200,
+   "ms_out": 273440,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h10_bottle",
+   "startFrom": 28,
+   "flash": false
+  },
+  {
+   "ms_in": 273440,
+   "ms_out": 275340,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h18_pointring",
+   "startFrom": 6,
+   "flash": false
+  },
+  {
+   "ms_in": 275340,
+   "ms_out": 276640,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h21_breakfilm",
+   "startFrom": 39,
+   "flash": false
+  },
+  {
+   "ms_in": 276640,
+   "ms_out": 281340,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 281340,
+   "ms_out": 283500,
+   "tipo": "avatar",
+   "sec": "bioperox",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 283500,
+   "ms_out": 284700,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h22_calendar",
+   "startFrom": 73,
+   "flash": true
+  },
+  {
+   "ms_in": 284700,
+   "ms_out": 286080,
+   "tipo": "clip",
+   "sec": "bioperox",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h19_twobottles",
+   "startFrom": 17,
+   "flash": false
+  },
+  {
+   "ms_in": 286080,
+   "ms_out": 288740,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 288740,
+   "ms_out": 293160,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 293160,
+   "ms_out": 295040,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 295040,
+   "ms_out": 298800,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 298800,
+   "ms_out": 303800,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 303800,
+   "ms_out": 306120,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 306120,
+   "ms_out": 308920,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h23_tubedge",
+   "startFrom": 28,
+   "flash": false
+  },
+  {
+   "ms_in": 308920,
+   "ms_out": 313640,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 313640,
+   "ms_out": 316200,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h24_pumice",
+   "startFrom": 52,
+   "flash": false
+  },
+  {
+   "ms_in": 316200,
+   "ms_out": 320380,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h25_phonecall",
+   "startFrom": 5,
+   "flash": false
+  },
+  {
+   "ms_in": 320380,
+   "ms_out": 322000,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h26_liftlid",
+   "startFrom": 53,
+   "flash": false
+  },
+  {
+   "ms_in": 322000,
+   "ms_out": 325740,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h27_blackfinger",
+   "startFrom": 1,
+   "flash": false
+  },
+  {
+   "ms_in": 325740,
+   "ms_out": 330820,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 330820,
+   "ms_out": 333020,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h28_flapper",
+   "startFrom": 27,
+   "flash": false
+  },
+  {
+   "ms_in": 333020,
+   "ms_out": 336280,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 336280,
+   "ms_out": 340720,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 340720,
+   "ms_out": 343180,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 343180,
+   "ms_out": 347160,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h29_invoice",
+   "startFrom": 17,
+   "flash": false
+  },
+  {
+   "ms_in": 347160,
+   "ms_out": 348880,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 348880,
+   "ms_out": 352660,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h23_tubedge",
+   "startFrom": 4,
+   "flash": false
+  },
+  {
+   "ms_in": 352660,
+   "ms_out": 357580,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 357580,
+   "ms_out": 359700,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 359700,
+   "ms_out": 362740,
+   "tipo": "clip",
+   "sec": "tankstory",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h24_pumice",
+   "startFrom": 23,
+   "flash": false
+  },
+  {
+   "ms_in": 362740,
+   "ms_out": 367780,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 367780,
+   "ms_out": 370360,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 370360,
+   "ms_out": 374560,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 374560,
+   "ms_out": 376260,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 376260,
+   "ms_out": 379800,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 379800,
+   "ms_out": 380780,
+   "tipo": "avatar",
+   "sec": "tankstory",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 380780,
+   "ms_out": 382460,
+   "tipo": "avatar",
+   "sec": "ordintro",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 382460,
+   "ms_out": 384880,
+   "tipo": "clip",
+   "sec": "ordintro",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h07_pointbowl",
+   "startFrom": 16,
+   "flash": false
+  },
+  {
+   "ms_in": 384880,
+   "ms_out": 385880,
+   "tipo": "avatar",
+   "sec": "ordintro",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 385880,
+   "ms_out": 389400,
+   "tipo": "avatar",
+   "sec": "ordintro",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 389400,
+   "ms_out": 390180,
+   "tipo": "clip",
+   "sec": "ordintro",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h23_tubedge",
+   "startFrom": 63,
+   "flash": true
+  },
+  {
+   "ms_in": 390180,
+   "ms_out": 394080,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "ordvalve",
+   "avatar": "hidden",
+   "props": {
+    "number": "1",
+    "title": "THE VALVE",
+    "sub": "stop cleaning underwater"
+   }
+  },
+  {
+   "ms_in": 394080,
+   "ms_out": 395840,
+   "tipo": "avatar",
+   "sec": "ordvalve",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 395840,
+   "ms_out": 398380,
+   "tipo": "clip",
+   "sec": "ordvalve",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h08_valve",
+   "startFrom": 1,
+   "flash": false
+  },
+  {
+   "ms_in": 398380,
+   "ms_out": 399620,
+   "tipo": "clip",
+   "sec": "ordvalve",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h30_valveweep",
+   "startFrom": 33,
+   "flash": false
+  },
+  {
+   "ms_in": 399620,
+   "ms_out": 402900,
+   "tipo": "avatar",
+   "sec": "ordvalve",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 402900,
+   "ms_out": 404900,
+   "tipo": "clip",
+   "sec": "ordvalve",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h31_newvalve",
+   "startFrom": 52,
+   "flash": false
+  },
+  {
+   "ms_in": 404900,
+   "ms_out": 406060,
+   "tipo": "clip",
+   "sec": "ordvalve",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h09_drain",
+   "startFrom": 11,
+   "flash": true
+  },
+  {
+   "ms_in": 406060,
+   "ms_out": 410640,
+   "tipo": "avatar",
+   "sec": "ordvalve",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 410640,
+   "ms_out": 413100,
+   "tipo": "clip",
+   "sec": "ordvalve",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h08_valve",
+   "startFrom": 28,
+   "flash": false
+  },
+  {
+   "ms_in": 413100,
+   "ms_out": 417220,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "props": {
+    "number": "2",
+    "title": "THE RIM",
+    "sub": "where the ring is made"
+   }
+  },
+  {
+   "ms_in": 417220,
+   "ms_out": 417980,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h11_squirtrim",
+   "startFrom": 84,
+   "flash": true
+  },
+  {
+   "ms_in": 417980,
+   "ms_out": 419180,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h32_phonerim",
+   "startFrom": 20,
+   "flash": true
+  },
+  {
+   "ms_in": 419180,
+   "ms_out": 420020,
+   "tipo": "avatar",
+   "sec": "ordrim",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 420020,
+   "ms_out": 422440,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h33_phonelook",
+   "startFrom": 35,
+   "flash": false
+  },
+  {
+   "ms_in": 422440,
+   "ms_out": 423300,
+   "tipo": "avatar",
+   "sec": "ordrim",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 423300,
+   "ms_out": 424580,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h05_mirror",
+   "startFrom": 83,
+   "flash": false
+  },
+  {
+   "ms_in": 424580,
+   "ms_out": 425500,
+   "tipo": "avatar",
+   "sec": "ordrim",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 425500,
+   "ms_out": 429060,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h04_rimfinger",
+   "startFrom": 11,
+   "flash": false
+  },
+  {
+   "ms_in": 429060,
+   "ms_out": 429940,
+   "tipo": "avatar",
+   "sec": "ordrim",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 429940,
+   "ms_out": 430940,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h11_squirtrim",
+   "startFrom": 66,
+   "flash": true
+  },
+  {
+   "ms_in": 430940,
+   "ms_out": 431540,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h32_phonerim",
+   "startFrom": 8,
+   "flash": true
+  },
+  {
+   "ms_in": 431540,
+   "ms_out": 434120,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h33_phonelook",
+   "startFrom": 25,
+   "flash": false
+  },
+  {
+   "ms_in": 434120,
+   "ms_out": 435600,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h05_mirror",
+   "startFrom": 66,
+   "flash": false
+  },
+  {
+   "ms_in": 435600,
+   "ms_out": 436400,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h04_rimfinger",
+   "startFrom": 18,
+   "flash": true
+  },
+  {
+   "ms_in": 436400,
+   "ms_out": 440700,
+   "tipo": "avatar",
+   "sec": "ordrim",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 440700,
+   "ms_out": 441300,
+   "tipo": "avatar",
+   "sec": "ordrim",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 441300,
+   "ms_out": 442260,
+   "tipo": "avatar",
+   "sec": "ordrim",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 442260,
+   "ms_out": 442920,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h11_squirtrim",
+   "startFrom": 57,
+   "flash": true
+  },
+  {
+   "ms_in": 442920,
+   "ms_out": 444240,
+   "tipo": "clip",
+   "sec": "ordrim",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h32_phonerim",
+   "startFrom": 79,
+   "flash": false
+  },
+  {
+   "ms_in": 444240,
+   "ms_out": 448600,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "ordring",
+   "avatar": "hidden",
+   "props": {
+    "number": "3",
+    "title": "THE RING",
+    "sub": "paper holds it there"
+   }
+  },
+  {
+   "ms_in": 448600,
+   "ms_out": 450320,
+   "tipo": "avatar",
+   "sec": "ordring",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 450320,
+   "ms_out": 452940,
+   "tipo": "avatar",
+   "sec": "ordring",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 452940,
+   "ms_out": 454000,
+   "tipo": "clip",
+   "sec": "ordring",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h12_paperring",
+   "startFrom": 27,
+   "flash": true
+  },
+  {
+   "ms_in": 454000,
+   "ms_out": 457620,
+   "tipo": "avatar",
+   "sec": "ordring",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 457620,
+   "ms_out": 459740,
+   "tipo": "clip",
+   "sec": "ordring",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h13_soakpaper",
+   "startFrom": 44,
+   "flash": false
+  },
+  {
+   "ms_in": 459740,
+   "ms_out": 464000,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "props": {
+    "number": "4",
+    "title": "THE TANK",
+    "sub": "the end nobody opens"
+   }
+  },
+  {
+   "ms_in": 464000,
+   "ms_out": 465700,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 465700,
+   "ms_out": 468040,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 468040,
+   "ms_out": 469080,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h14_tanklid",
+   "startFrom": 4,
+   "flash": true
+  },
+  {
+   "ms_in": 469080,
+   "ms_out": 472180,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 472180,
+   "ms_out": 474160,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h15_pourtank",
+   "startFrom": 28,
+   "flash": false
+  },
+  {
+   "ms_in": 474160,
+   "ms_out": 475640,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h35_brushtank",
+   "startFrom": 63,
+   "flash": false
+  },
+  {
+   "ms_in": 475640,
+   "ms_out": 480280,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 480280,
+   "ms_out": 482400,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 482400,
+   "ms_out": 483360,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 483360,
+   "ms_out": 486460,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h28_flapper",
+   "startFrom": 6,
+   "flash": false
+  },
+  {
+   "ms_in": 486460,
+   "ms_out": 488180,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 488180,
+   "ms_out": 490660,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h36_newflapper",
+   "startFrom": 30,
+   "flash": false
+  },
+  {
+   "ms_in": 490660,
+   "ms_out": 492140,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h37_bluetablet",
+   "startFrom": 72,
+   "flash": false
+  },
+  {
+   "ms_in": 492140,
+   "ms_out": 494580,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 494580,
+   "ms_out": 495740,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h38_sticker",
+   "startFrom": 23,
+   "flash": true
+  },
+  {
+   "ms_in": 495740,
+   "ms_out": 498980,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h14_tanklid",
+   "startFrom": 25,
+   "flash": false
+  },
+  {
+   "ms_in": 498980,
+   "ms_out": 501360,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h15_pourtank",
+   "startFrom": 0,
+   "flash": false
+  },
+  {
+   "ms_in": 501360,
+   "ms_out": 502820,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 502820,
+   "ms_out": 507700,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 507700,
+   "ms_out": 509860,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h35_brushtank",
+   "startFrom": 24,
+   "flash": false
+  },
+  {
+   "ms_in": 509860,
+   "ms_out": 511000,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h28_flapper",
+   "startFrom": 66,
+   "flash": true
+  },
+  {
+   "ms_in": 511000,
+   "ms_out": 514340,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h36_newflapper",
+   "startFrom": 4,
+   "flash": false
+  },
+  {
+   "ms_in": 514340,
+   "ms_out": 516200,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 516200,
+   "ms_out": 519080,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h37_bluetablet",
+   "startFrom": 23,
+   "flash": false
+  },
+  {
+   "ms_in": 519080,
+   "ms_out": 521000,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h38_sticker",
+   "startFrom": 60,
+   "flash": false
+  },
+  {
+   "ms_in": 521000,
+   "ms_out": 523660,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 523660,
+   "ms_out": 524860,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h14_tanklid",
+   "startFrom": 19,
+   "flash": false
+  },
+  {
+   "ms_in": 524860,
+   "ms_out": 528280,
+   "tipo": "avatar",
+   "sec": "ordtank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 528280,
+   "ms_out": 529360,
+   "tipo": "clip",
+   "sec": "ordtank",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h15_pourtank",
+   "startFrom": 54,
+   "flash": true
+  },
+  {
+   "ms_in": 529360,
+   "ms_out": 560000,
+   "tipo": "movimiento",
+   "componente": "MovJets",
+   "sec": "jets",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 560000,
+   "ms_out": 561840,
+   "tipo": "clip",
+   "sec": "jets2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h40_wirejet",
+   "startFrom": 69,
+   "flash": false
+  },
+  {
+   "ms_in": 561840,
+   "ms_out": 564580,
+   "tipo": "avatar",
+   "sec": "jets2",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 564580,
+   "ms_out": 565800,
+   "tipo": "clip",
+   "sec": "jets2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h41_goodswirl",
+   "startFrom": 29,
+   "flash": false
+  },
+  {
+   "ms_in": 565800,
+   "ms_out": 569280,
+   "tipo": "clip",
+   "sec": "jets2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h39_vinegar",
+   "startFrom": 23,
+   "flash": false
+  },
+  {
+   "ms_in": 569280,
+   "ms_out": 573520,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "props": {
+    "number": "5",
+    "title": "THE PARTS NOBODY DOES",
+    "sub": "hinges, handle, the base"
+   }
+  },
+  {
+   "ms_in": 573520,
+   "ms_out": 574340,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h42_hingecap",
+   "startFrom": 7,
+   "flash": true
+  },
+  {
+   "ms_in": 574340,
+   "ms_out": 575120,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h43_toothbrushbolt",
+   "startFrom": 43,
+   "flash": true
+  },
+  {
+   "ms_in": 575120,
+   "ms_out": 576020,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h44_handle",
+   "startFrom": 77,
+   "flash": true
+  },
+  {
+   "ms_in": 576020,
+   "ms_out": 578220,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 12,
+   "flash": false
+  },
+  {
+   "ms_in": 578220,
+   "ms_out": 578880,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h42_hingecap",
+   "startFrom": 56,
+   "flash": true
+  },
+  {
+   "ms_in": 578880,
+   "ms_out": 580240,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h43_toothbrushbolt",
+   "startFrom": 77,
+   "flash": false
+  },
+  {
+   "ms_in": 580240,
+   "ms_out": 581100,
+   "tipo": "avatar",
+   "sec": "ordnobody",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 581100,
+   "ms_out": 585220,
+   "tipo": "avatar",
+   "sec": "ordnobody",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 585220,
+   "ms_out": 586500,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 57,
+   "flash": false
+  },
+  {
+   "ms_in": 586500,
+   "ms_out": 587220,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h42_hingecap",
+   "startFrom": 3,
+   "flash": true
+  },
+  {
+   "ms_in": 587220,
+   "ms_out": 589800,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h43_toothbrushbolt",
+   "startFrom": 22,
+   "flash": false
+  },
+  {
+   "ms_in": 589800,
+   "ms_out": 591400,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h44_handle",
+   "startFrom": 60,
+   "flash": false
+  },
+  {
+   "ms_in": 591400,
+   "ms_out": 592160,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 14,
+   "flash": true
+  },
+  {
+   "ms_in": 592160,
+   "ms_out": 596460,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h42_hingecap",
+   "startFrom": 7,
+   "flash": false
+  },
+  {
+   "ms_in": 596460,
+   "ms_out": 597420,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h43_toothbrushbolt",
+   "startFrom": 82,
+   "flash": true
+  },
+  {
+   "ms_in": 597420,
+   "ms_out": 598200,
+   "tipo": "avatar",
+   "sec": "ordnobody",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 598200,
+   "ms_out": 598860,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h44_handle",
+   "startFrom": 25,
+   "flash": true
+  },
+  {
+   "ms_in": 598860,
+   "ms_out": 601180,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 38,
+   "flash": false
+  },
+  {
+   "ms_in": 601180,
+   "ms_out": 601840,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h42_hingecap",
+   "startFrom": 100,
+   "flash": true
+  },
+  {
+   "ms_in": 601840,
+   "ms_out": 603200,
+   "tipo": "avatar",
+   "sec": "ordnobody",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 603200,
+   "ms_out": 604100,
+   "tipo": "avatar",
+   "sec": "ordnobody",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 604100,
+   "ms_out": 607480,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h43_toothbrushbolt",
+   "startFrom": 13,
+   "flash": false
+  },
+  {
+   "ms_in": 607480,
+   "ms_out": 608380,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h44_handle",
+   "startFrom": 69,
+   "flash": true
+  },
+  {
+   "ms_in": 608380,
+   "ms_out": 610240,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 9,
+   "flash": false
+  },
+  {
+   "ms_in": 610240,
+   "ms_out": 612920,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h43_toothbrushbolt",
+   "startFrom": 44,
+   "flash": false
+  },
+  {
+   "ms_in": 612920,
+   "ms_out": 614100,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h44_handle",
+   "startFrom": 18,
+   "flash": true
+  },
+  {
+   "ms_in": 614100,
+   "ms_out": 615480,
+   "tipo": "avatar",
+   "sec": "ordnobody",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 615480,
+   "ms_out": 619720,
+   "tipo": "avatar",
+   "sec": "ordnobody",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 619720,
+   "ms_out": 620320,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 59,
+   "flash": true
+  },
+  {
+   "ms_in": 620320,
+   "ms_out": 621800,
+   "tipo": "clip",
+   "sec": "ordnobody",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h42_hingecap",
+   "startFrom": 77,
+   "flash": false
+  },
+  {
+   "ms_in": 621800,
+   "ms_out": 625800,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "props": {
+    "number": "6",
+    "title": "THE BRUSH",
+    "sub": "and the cup it lives in"
+   }
+  },
+  {
+   "ms_in": 625800,
+   "ms_out": 627640,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h46_caddy",
+   "startFrom": 23,
+   "flash": false
+  },
+  {
+   "ms_in": 627640,
+   "ms_out": 630240,
+   "tipo": "avatar",
+   "sec": "ordbrush",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 630240,
+   "ms_out": 631380,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h47_rinsebrush",
+   "startFrom": 61,
+   "flash": true
+  },
+  {
+   "ms_in": 631380,
+   "ms_out": 634720,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h48_wedgebrush",
+   "startFrom": 2,
+   "flash": false
+  },
+  {
+   "ms_in": 634720,
+   "ms_out": 636800,
+   "tipo": "avatar",
+   "sec": "ordbrush",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 636800,
+   "ms_out": 638200,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h49_pourcaddy",
+   "startFrom": 36,
+   "flash": false
+  },
+  {
+   "ms_in": 638200,
+   "ms_out": 642740,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h46_caddy",
+   "startFrom": 6,
+   "flash": false
+  },
+  {
+   "ms_in": 642740,
+   "ms_out": 645040,
+   "tipo": "avatar",
+   "sec": "ordbrush",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 645040,
+   "ms_out": 645900,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h47_rinsebrush",
+   "startFrom": 16,
+   "flash": true
+  },
+  {
+   "ms_in": 645900,
+   "ms_out": 649000,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h48_wedgebrush",
+   "startFrom": 23,
+   "flash": false
+  },
+  {
+   "ms_in": 649000,
+   "ms_out": 650800,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h49_pourcaddy",
+   "startFrom": 66,
+   "flash": false
+  },
+  {
+   "ms_in": 650800,
+   "ms_out": 653580,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h46_caddy",
+   "startFrom": 14,
+   "flash": false
+  },
+  {
+   "ms_in": 653580,
+   "ms_out": 655300,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h47_rinsebrush",
+   "startFrom": 49,
+   "flash": false
+  },
+  {
+   "ms_in": 655300,
+   "ms_out": 657460,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h48_wedgebrush",
+   "startFrom": 1,
+   "flash": false
+  },
+  {
+   "ms_in": 657460,
+   "ms_out": 658680,
+   "tipo": "avatar",
+   "sec": "ordbrush",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 658680,
+   "ms_out": 661860,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h49_pourcaddy",
+   "startFrom": 16,
+   "flash": false
+  },
+  {
+   "ms_in": 661860,
+   "ms_out": 663860,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h46_caddy",
+   "startFrom": 52,
+   "flash": false
+  },
+  {
+   "ms_in": 663860,
+   "ms_out": 665280,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h47_rinsebrush",
+   "startFrom": 11,
+   "flash": false
+  },
+  {
+   "ms_in": 665280,
+   "ms_out": 669820,
+   "tipo": "avatar",
+   "sec": "ordbrush",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 669820,
+   "ms_out": 671300,
+   "tipo": "clip",
+   "sec": "ordbrush",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h48_wedgebrush",
+   "startFrom": 41,
+   "flash": false
+  },
+  {
+   "ms_in": 671300,
+   "ms_out": 673960,
+   "tipo": "clip",
+   "sec": "plumein",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h50_closelid",
+   "startFrom": 46,
+   "flash": false
+  },
+  {
+   "ms_in": 673960,
+   "ms_out": 678200,
+   "tipo": "avatar",
+   "sec": "plumein",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 678200,
+   "ms_out": 679140,
+   "tipo": "clip",
+   "sec": "plumein",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h51_toothbrushcup",
+   "startFrom": 23,
+   "flash": true
+  },
+  {
+   "ms_in": 679140,
+   "ms_out": 733100,
+   "tipo": "movimiento",
+   "componente": "MovPlume",
+   "sec": "plume",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 733100,
+   "ms_out": 734920,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h52_wallbehind",
+   "startFrom": 45,
+   "flash": false
+  },
+  {
+   "ms_in": 734920,
+   "ms_out": 737440,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h51_toothbrushcup",
+   "startFrom": 55,
+   "flash": false
+  },
+  {
+   "ms_in": 737440,
+   "ms_out": 738740,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 738740,
+   "ms_out": 742160,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 742160,
+   "ms_out": 744340,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h44_handle",
+   "startFrom": 22,
+   "flash": false
+  },
+  {
+   "ms_in": 744340,
+   "ms_out": 745760,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 745760,
+   "ms_out": 750360,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 750360,
+   "ms_out": 752660,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 752660,
+   "ms_out": 753600,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 753600,
+   "ms_out": 756820,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 756820,
+   "ms_out": 758180,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 60,
+   "flash": false
+  },
+  {
+   "ms_in": 758180,
+   "ms_out": 761060,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h50_closelid",
+   "startFrom": 4,
+   "flash": false
+  },
+  {
+   "ms_in": 761060,
+   "ms_out": 762740,
+   "tipo": "avatar",
+   "sec": "room",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 762740,
+   "ms_out": 765380,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h52_wallbehind",
+   "startFrom": 24,
+   "flash": false
+  },
+  {
+   "ms_in": 765380,
+   "ms_out": 766380,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h51_toothbrushcup",
+   "startFrom": 77,
+   "flash": true
+  },
+  {
+   "ms_in": 766380,
+   "ms_out": 769600,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h44_handle",
+   "startFrom": 8,
+   "flash": false
+  },
+  {
+   "ms_in": 769600,
+   "ms_out": 771560,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h45_baseseam",
+   "startFrom": 39,
+   "flash": false
+  },
+  {
+   "ms_in": 771560,
+   "ms_out": 773160,
+   "tipo": "clip",
+   "sec": "room",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h50_closelid",
+   "startFrom": 73,
+   "flash": false
+  },
+  {
+   "ms_in": 773160,
+   "ms_out": 775800,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 775800,
+   "ms_out": 779820,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 779820,
+   "ms_out": 781740,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h53_hardring",
+   "startFrom": 22,
+   "flash": false
+  },
+  {
+   "ms_in": 781740,
+   "ms_out": 785440,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h24_pumice",
+   "startFrom": 19,
+   "flash": false
+  },
+  {
+   "ms_in": 785440,
+   "ms_out": 790480,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 790480,
+   "ms_out": 792640,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 792640,
+   "ms_out": 796260,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 796260,
+   "ms_out": 800860,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 800860,
+   "ms_out": 803340,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h55_waxring",
+   "startFrom": 24,
+   "flash": false
+  },
+  {
+   "ms_in": 803340,
+   "ms_out": 807560,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 807560,
+   "ms_out": 809440,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h56_cupwater",
+   "startFrom": 56,
+   "flash": false
+  },
+  {
+   "ms_in": 809440,
+   "ms_out": 812940,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 812940,
+   "ms_out": 817900,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 817900,
+   "ms_out": 820180,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h24_pumice",
+   "startFrom": 33,
+   "flash": false
+  },
+  {
+   "ms_in": 820180,
+   "ms_out": 823200,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h54_pinkfixture",
+   "startFrom": 40,
+   "flash": false
+  },
+  {
+   "ms_in": 823200,
+   "ms_out": 827820,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 827820,
+   "ms_out": 830320,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 830320,
+   "ms_out": 834400,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h56_cupwater",
+   "startFrom": 12,
+   "flash": false
+  },
+  {
+   "ms_in": 834400,
+   "ms_out": 836140,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 836140,
+   "ms_out": 839560,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 839560,
+   "ms_out": 844800,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 844800,
+   "ms_out": 846980,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 846980,
+   "ms_out": 850140,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 850140,
+   "ms_out": 854800,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 854800,
+   "ms_out": 857440,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h24_pumice",
+   "startFrom": 20,
+   "flash": false
+  },
+  {
+   "ms_in": 857440,
+   "ms_out": 861760,
+   "tipo": "clip",
+   "sec": "honest",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h54_pinkfixture",
+   "startFrom": 10,
+   "flash": false
+  },
+  {
+   "ms_in": 861760,
+   "ms_out": 863620,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 863620,
+   "ms_out": 866100,
+   "tipo": "avatar",
+   "sec": "honest",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 866100,
+   "ms_out": 927320,
+   "tipo": "movimiento",
+   "componente": "MovSafety",
+   "sec": "safety",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 927320,
+   "ms_out": 929260,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h60_label",
+   "startFrom": 8,
+   "flash": false
+  },
+  {
+   "ms_in": 929260,
+   "ms_out": 931800,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h61_windowsill",
+   "startFrom": 27,
+   "flash": false
+  },
+  {
+   "ms_in": 931800,
+   "ms_out": 932940,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h62_gloves",
+   "startFrom": 77,
+   "flash": true
+  },
+  {
+   "ms_in": 932940,
+   "ms_out": 936140,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h59_apart",
+   "startFrom": 9,
+   "flash": false
+  },
+  {
+   "ms_in": 936140,
+   "ms_out": 938020,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h57_gelbottle",
+   "startFrom": 43,
+   "flash": false
+  },
+  {
+   "ms_in": 938020,
+   "ms_out": 939380,
+   "tipo": "avatar",
+   "sec": "safe2",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 939380,
+   "ms_out": 944000,
+   "tipo": "avatar",
+   "sec": "safe2",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 944000,
+   "ms_out": 946220,
+   "tipo": "avatar",
+   "sec": "safe2",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 946220,
+   "ms_out": 947340,
+   "tipo": "avatar",
+   "sec": "safe2",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 947340,
+   "ms_out": 950460,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h60_label",
+   "startFrom": 14,
+   "flash": false
+  },
+  {
+   "ms_in": 950460,
+   "ms_out": 952100,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h61_windowsill",
+   "startFrom": 55,
+   "flash": false
+  },
+  {
+   "ms_in": 952100,
+   "ms_out": 954840,
+   "tipo": "clip",
+   "sec": "safe2",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h62_gloves",
+   "startFrom": 4,
+   "flash": false
+  },
+  {
+   "ms_in": 954840,
+   "ms_out": 955440,
+   "tipo": "avatar",
+   "sec": "safe2",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 955440,
+   "ms_out": 981540,
+   "tipo": "movimiento",
+   "componente": "MovClose",
+   "sec": "close",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 981540,
+   "ms_out": 983960,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h63_checklist",
+   "startFrom": 26,
+   "flash": false
+  },
+  {
+   "ms_in": 983960,
+   "ms_out": 988220,
+   "tipo": "avatar",
+   "sec": "cta",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 988220,
+   "ms_out": 989900,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h64_finalstand",
+   "startFrom": 62,
+   "flash": false
+  },
+  {
+   "ms_in": 989900,
+   "ms_out": 993700,
+   "tipo": "avatar",
+   "sec": "cta",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 993700,
+   "ms_out": 998640,
+   "tipo": "avatar",
+   "sec": "cta",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 998640,
+   "ms_out": 1000720,
+   "tipo": "avatar",
+   "sec": "cta",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1000720,
+   "ms_out": 1004020,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h07_pointbowl",
+   "startFrom": 21,
+   "flash": false
+  },
+  {
+   "ms_in": 1004020,
+   "ms_out": 1008600,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h63_checklist",
+   "startFrom": 7,
+   "flash": false
+  },
+  {
+   "ms_in": 1008600,
+   "ms_out": 1011040,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h64_finalstand",
+   "startFrom": 17,
+   "flash": false
+  },
+  {
+   "ms_in": 1011040,
+   "ms_out": 1015320,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h10_bottle",
+   "startFrom": 9,
+   "flash": false
+  },
+  {
+   "ms_in": 1015320,
+   "ms_out": 1017120,
+   "tipo": "avatar",
+   "sec": "cta",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1017120,
+   "ms_out": 1020900,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h07_pointbowl",
+   "startFrom": 1,
+   "flash": false
+  },
+  {
+   "ms_in": 1020900,
+   "ms_out": 1021727,
+   "tipo": "clip",
+   "sec": "cta",
+   "avatar": "hidden",
+   "clip": "mdtoilet_h63_checklist",
+   "startFrom": 40,
+   "flash": true
+  }
+ ],
+ "overlays": [
+  {
+   "ms_in": 75160,
+   "ms_out": 81560,
+   "componente": "HookCaption",
+   "zone": "center",
+   "props": {
+    "words": [
+     {
+      "text": "WE SCRUB"
+     },
+     {
+      "text": "THE ONE PART",
+      "boxed": true
+     },
+     {
+      "text": "THAT RINSES",
+      "boxed": true
+     },
+     {
+      "text": "ITSELF"
+     }
+    ]
+   }
+  },
+  {
+   "ms_in": 97540,
+   "ms_out": 107040,
+   "componente": "NumberedSteps",
+   "zone": "left",
+   "props": {
+    "eyebrow": "THE 90-SECOND VERSION",
+    "title": "Five moves, twenty minutes",
+    "steps": [
+     {
+      "title": "Shut the valve",
+      "sub": "behind the bowl, clockwise"
+     },
+     {
+      "title": "Flush it dry",
+      "sub": "hold the handle down"
+     },
+     {
+      "title": "Peroxide under the rim",
+      "sub": "into the holes, all the way round"
+     },
+     {
+      "title": "Paper on the ring",
+      "sub": "soak it, walk away"
+     },
+     {
+      "title": "Two cups in the tank",
+      "sub": "brush, open the valve, flush twice"
+     }
+    ]
+   }
+  },
+  {
+   "ms_in": 152980,
+   "ms_out": 158980,
+   "componente": "BigStatReveal",
+   "zone": "topLeft",
+   "props": {
+    "eyebrow": "DWELL TIME ON THE RING",
+    "value": 20,
+    "suffix": " MIN",
+    "support": "a liquid on a vertical wall is gone in six seconds"
+   }
+  },
+  {
+   "ms_in": 169200,
+   "ms_out": 174800,
+   "componente": "HighlightSweep",
+   "zone": "top",
+   "props": {
+    "pre": "That's the whole fix.",
+    "highlight": "Go do it now",
+    "post": ".",
+    "note": "the rest of this is why it works"
+   }
+  },
+  {
+   "ms_in": 279320,
+   "ms_out": 285520,
+   "componente": "HighlightSweep",
+   "zone": "top",
+   "props": {
+    "pre": "Break it up, treat it,",
+    "highlight": "and treat it again next week",
+    "post": ".",
+    "note": "nobody tells you that — nobody sells a second treatment"
+   }
+  },
+  {
+   "ms_in": 370360,
+   "ms_out": 376960,
+   "componente": "PullQuote",
+   "zone": "center",
+   "props": {
+    "quote": "I was scrubbing a bowl spotless and refilling it from a tank that looked like a pond.",
+    "author": "Mike Dalton",
+    "role": "eleven years, lid on"
+   }
+  },
+  {
+   "ms_in": 406560,
+   "ms_out": 411760,
+   "componente": "BigStatReveal",
+   "zone": "topLeft",
+   "props": {
+    "eyebrow": "A SHUTOFF VALVE COSTS",
+    "value": 8,
+    "prefix": "$",
+    "support": "if it weeps and won't stop, that valve is telling you something"
+   }
+  },
+  {
+   "ms_in": 421560,
+   "ms_out": 428560,
+   "componente": "ChecklistReveal",
+   "zone": "left",
+   "props": {
+    "kicker": "BEFORE YOU SPRAY",
+    "title": "Take the photo first",
+    "items": [
+     "Seat up, phone under the rim",
+     "Screen facing up, one picture",
+     "Orange, black, or a hard crust",
+     "That is what feeds your bowl"
+    ],
+    "stamp": "LOOK"
+   }
+  },
+  {
+   "ms_in": 473200,
+   "ms_out": 478600,
+   "componente": "BigStatReveal",
+   "zone": "topLeft",
+   "props": {
+    "eyebrow": "A NEW FLAPPER COSTS",
+    "value": 5,
+    "prefix": "$",
+    "support": "soft, slippery, black on your fingers — that's why it runs at 2 a.m."
+   }
+  },
+  {
+   "ms_in": 492140,
+   "ms_out": 499540,
+   "componente": "HighlightSweep",
+   "zone": "top",
+   "props": {
+    "pre": "The manufacturer put the warning",
+    "highlight": "inside the tank",
+    "post": " — the one place you'd only see it if you opened the lid.",
+    "note": "in-tank cleaners void the warranty and destroy parts"
+   }
+  },
+  {
+   "ms_in": 515360,
+   "ms_out": 521760,
+   "componente": "BulletCascade",
+   "zone": "left",
+   "props": {
+    "eyebrow": "WHAT THE BLUE TABLET ACTUALLY DOES",
+    "bullets": [
+     {
+      "pre": "It isn't cleaning the ring,",
+      "key": "it can't reach it"
+     },
+     {
+      "pre": "It sits on rubber",
+      "key": "twenty-four hours a day"
+     },
+     {
+      "pre": "It doesn't save a job,",
+      "key": "it costs you a flapper"
+     }
+    ]
+   }
+  },
+  {
+   "ms_in": 572760,
+   "ms_out": 579360,
+   "componente": "ChecklistReveal",
+   "zone": "left",
+   "props": {
+    "kicker": "THE PARTS NOBODY DOES",
+    "title": "Thirty seconds each",
+    "items": [
+     "Under the seat hinge caps",
+     "The flush handle",
+     "The seam at the base",
+     "The wall behind the tank"
+    ],
+    "stamp": "DONE"
+   }
+  },
+  {
+   "ms_in": 626260,
+   "ms_out": 632260,
+   "componente": "MythTruth",
+   "zone": "topLeft",
+   "props": {
+    "myth": "The bowl is the dirty part",
+    "truth": "The wet brush in a closed cup is",
+    "mythLabel": "WHAT YOU ASSUME",
+    "truthLabel": "WHAT IT IS"
+   }
+  },
+  {
+   "ms_in": 649000,
+   "ms_out": 656000,
+   "componente": "NumberedSteps",
+   "zone": "left",
+   "props": {
+    "eyebrow": "THE BRUSH",
+    "title": "Three moves, every time",
+    "steps": [
+     {
+      "title": "Rinse it in the flush",
+      "sub": "hold it in the clean stream"
+     },
+     {
+      "title": "Wedge it under the seat",
+      "sub": "let it drip dry ten minutes"
+     },
+     {
+      "title": "Peroxide in the cup",
+      "sub": "not a rinse — peroxide"
+     }
+    ]
+   }
+  },
+  {
+   "ms_in": 755320,
+   "ms_out": 762120,
+   "componente": "ChecklistReveal",
+   "zone": "left",
+   "props": {
+    "kicker": "THE ACTUAL LIST",
+    "title": "Where the smell really lives",
+    "items": [
+     "The wall behind and beside",
+     "The side of the vanity",
+     "The floor around the base",
+     "The underside of the seat"
+    ],
+    "stamp": "WEEKLY"
+   }
+  },
+  {
+   "ms_in": 791760,
+   "ms_out": 798360,
+   "componente": "VsDuel",
+   "zone": "center",
+   "props": {
+    "eyebrow": "WHEN THE RING IS A RAISED SHELF",
+    "title": "Peroxide or pumice?",
+    "left": {
+     "label": "PEROXIDE",
+     "sub": "kills what's alive — will not dissolve rock",
+     "good": false
+    },
+    "right": {
+     "label": "PUMICE",
+     "sub": "wet stone on wet porcelain, softer than the glaze",
+     "good": true
+    }
+   }
+  },
+  {
+   "ms_in": 855820,
+   "ms_out": 862220,
+   "componente": "HighlightSweep",
+   "zone": "top",
+   "props": {
+    "pre": "Nothing is dirty —",
+    "highlight": "the trap dried out",
+    "post": ".",
+    "note": "two to four weeks unused and you're smelling the sewer line"
+   }
+  },
+  {
+   "ms_in": 997880,
+   "ms_out": 1004880,
+   "componente": "ChecklistReveal",
+   "zone": "left",
+   "props": {
+    "kicker": "IN THE DESCRIPTION",
+    "title": "The printed checklist",
+    "items": [
+     "The order, room by room",
+     "Every dwell time",
+     "Weekly vs once a year",
+     "What never goes near what"
+    ],
+    "stamp": "PRINT IT"
+   }
+  }
+ ]
+}
