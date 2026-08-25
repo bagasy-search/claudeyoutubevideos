@@ -226,6 +226,44 @@ const Root${COMP}: React.FC = () => (
 registerRoot(Root${COMP});
 `);
 
+// ⛔⛔ LOS MOVIMIENTOS HARDCODEAN SU PROPIO MATERIAL (clips y fotos dentro de las tarjetas de
+// vidrio). Eso NO pasa por los props, así que `noteImgs` no lo ve y el asset se queda fuera del
+// tarball → 404 en el farm y chunk muerto. Se escanean los .tsx de `src/mddrain/` buscando
+// staticFile("broll/…") y staticFile("img/…"), y se suma cada uno (+ su `_blur.jpg`).
+// ⚠️ Los movimientos arman las rutas con PLANTILLAS (`staticFile(\`img/${b}_blur.jpg\`)`), así que
+// buscar el string literal completo NO alcanza: hay que cazar el IDENTIFICADOR del asset
+// (`mddrain_h07_wettowel`, `mddrain_lam_towel`, `mddrain_qrcard`) y de ahí derivar sus archivos.
+{
+  const ids = new Set();
+  for (const f of fs.readdirSync(`src/${SLUG}`)) {
+    if (!f.endsWith(".tsx")) continue;
+    const src = fs.readFileSync(`src/${SLUG}/${f}`, "utf8");
+    // rutas literales completas
+    for (const m of src.matchAll(/["'`]((?:broll|img)\/[A-Za-z0-9_./-]+\.(?:mp4|png|jpe?g))["'`]/g)) {
+      const p = m[1];
+      if (!fs.existsSync(`public/${p}`)) { missing.push(`${p} (literal en ${f})`); continue; }
+      if (p.startsWith("broll/")) clipsUsed.add(p); else imgsUsed.add(p);
+      const blur = p.replace(/\.(png|jpg|jpeg)$/i, "_blur.jpg");
+      if (blur !== p && fs.existsSync(`public/${blur}`)) imgsUsed.add(blur);
+    }
+    // identificadores sueltos usados en plantillas
+    for (const m of src.matchAll(new RegExp(`\\b(${SLUG}_[a-z0-9_]+)\\b`, "g"))) {
+      ids.add(m[1].replace(/_blur$/, ""));
+    }
+    // y los que se escriben SIN el prefijo del slug, tipo "h59_hoseloop"
+    for (const m of src.matchAll(/["'`](h\d{2}_[a-z0-9]+)["'`]/g)) ids.add(`${SLUG}_${m[1]}`);
+  }
+  let n = 0;
+  for (const id of ids) {
+    for (const cand of [`broll/${id}.mp4`, `img/${id}.jpg`, `img/${id}.png`, `img/${id}_blur.jpg`]) {
+      if (!fs.existsSync(`public/${cand}`)) continue;
+      if (cand.startsWith("broll/")) clipsUsed.add(cand); else imgsUsed.add(cand);
+      n++;
+    }
+  }
+  console.log(`material de los movimientos: ${ids.size} identificador(es) → ${n} archivo(s) al tarball`);
+}
+
 // lista de assets para el farm (⛔ el nombre del archivo NO lleva arroba: el farm hace pref.slice(1))
 const assets = [...clipsUsed, ...imgsUsed, ...usedSfx].sort();
 fs.writeFileSync(`_${SLUG}_assets.txt`, assets.join("\n") + "\n");
