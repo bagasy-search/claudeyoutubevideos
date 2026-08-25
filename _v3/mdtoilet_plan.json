@@ -286,7 +286,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h15_pourtank",
+   "clip": "mdtoilet_h16_wait",
    "startFrom": 34,
    "flash": false
   },
@@ -296,7 +296,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h16_wait",
+   "clip": "mdtoilet_h17_brushring",
    "startFrom": 2,
    "flash": false
   },
@@ -313,7 +313,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h17_brushring",
+   "clip": "mdtoilet_h08_valve",
    "startFrom": 7,
    "flash": false
   },
@@ -323,7 +323,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h08_valve",
+   "clip": "mdtoilet_h09_drain",
    "startFrom": 73,
    "flash": true
   },
@@ -333,7 +333,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h09_drain",
+   "clip": "mdtoilet_h10_bottle",
    "startFrom": 13,
    "flash": true
   },
@@ -343,7 +343,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h10_bottle",
+   "clip": "mdtoilet_h11_squirtrim",
    "startFrom": 49,
    "flash": true
   },
@@ -360,7 +360,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h11_squirtrim",
+   "clip": "mdtoilet_h12_paperring",
    "startFrom": 90,
    "flash": true
   },
@@ -384,7 +384,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h12_paperring",
+   "clip": "mdtoilet_h13_soakpaper",
    "startFrom": 7,
    "flash": false
   },
@@ -394,7 +394,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h13_soakpaper",
+   "clip": "mdtoilet_h14_tanklid",
    "startFrom": 60,
    "flash": true
   },
@@ -404,7 +404,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h14_tanklid",
+   "clip": "mdtoilet_h16_wait",
    "startFrom": 77,
    "flash": false
   },
@@ -414,7 +414,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h15_pourtank",
+   "clip": "mdtoilet_h17_brushring",
    "startFrom": 19,
    "flash": false
   },
@@ -424,7 +424,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h16_wait",
+   "clip": "mdtoilet_h08_valve",
    "startFrom": 59,
    "flash": false
   },
@@ -434,7 +434,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h17_brushring",
+   "clip": "mdtoilet_h09_drain",
    "startFrom": 10,
    "flash": true
   },
@@ -444,7 +444,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h08_valve",
+   "clip": "mdtoilet_h10_bottle",
    "startFrom": 6,
    "flash": false
   },
@@ -454,7 +454,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h09_drain",
+   "clip": "mdtoilet_h11_squirtrim",
    "startFrom": 81,
    "flash": true
   },
@@ -471,7 +471,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h10_bottle",
+   "clip": "mdtoilet_h12_paperring",
    "startFrom": 21,
    "flash": true
   },
@@ -488,7 +488,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h11_squirtrim",
+   "clip": "mdtoilet_h13_soakpaper",
    "startFrom": 59,
    "flash": true
   },
@@ -498,7 +498,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h12_paperring",
+   "clip": "mdtoilet_h14_tanklid",
    "startFrom": 79,
    "flash": false
   },
@@ -508,7 +508,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h13_soakpaper",
+   "clip": "mdtoilet_h16_wait",
    "startFrom": 31,
    "flash": true
   },
@@ -532,7 +532,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h14_tanklid",
+   "clip": "mdtoilet_h17_brushring",
    "startFrom": 63,
    "flash": true
   },
@@ -542,7 +542,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h15_pourtank",
+   "clip": "mdtoilet_h08_valve",
    "startFrom": 3,
    "flash": false
   },
@@ -559,7 +559,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h16_wait",
+   "clip": "mdtoilet_h09_drain",
    "startFrom": 42,
    "flash": true
   },
@@ -576,7 +576,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h09_drain",
+   "clip": "mdtoilet_h12_paperring",
    "startFrom": 49,
    "flash": true
   },
@@ -586,7 +586,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h10_bottle",
+   "clip": "mdtoilet_h13_soakpaper",
    "startFrom": 93,
    "flash": true
   },
@@ -603,7 +603,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h11_squirtrim",
+   "clip": "mdtoilet_h14_tanklid",
    "startFrom": 22,
    "flash": false
   },
@@ -613,7 +613,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h12_paperring",
+   "clip": "mdtoilet_h16_wait",
    "startFrom": 65,
    "flash": true
   },
@@ -623,7 +623,7 @@
    "tipo": "clip",
    "sec": "give",
    "avatar": "hidden",
-   "clip": "mdtoilet_h13_soakpaper",
+   "clip": "mdtoilet_h17_brushring",
    "startFrom": 1,
    "flash": false
   },
@@ -1504,7 +1504,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h15_pourtank",
+   "clip": "mdtoilet_h35_brushtank",
    "startFrom": 28,
    "flash": false
   },
@@ -1514,7 +1514,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h35_brushtank",
+   "clip": "mdtoilet_h28_flapper",
    "startFrom": 63,
    "flash": false
   },
@@ -1545,7 +1545,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h28_flapper",
+   "clip": "mdtoilet_h36_newflapper",
    "startFrom": 6,
    "flash": false
   },
@@ -1562,7 +1562,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h36_newflapper",
+   "clip": "mdtoilet_h37_bluetablet",
    "startFrom": 30,
    "flash": false
   },
@@ -1572,7 +1572,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h37_bluetablet",
+   "clip": "mdtoilet_h38_sticker",
    "startFrom": 72,
    "flash": false
   },
@@ -1589,7 +1589,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h38_sticker",
+   "clip": "mdtoilet_h14_tanklid",
    "startFrom": 23,
    "flash": true
   },
@@ -1599,7 +1599,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h14_tanklid",
+   "clip": "mdtoilet_h35_brushtank",
    "startFrom": 25,
    "flash": false
   },
@@ -1609,7 +1609,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h15_pourtank",
+   "clip": "mdtoilet_h28_flapper",
    "startFrom": 0,
    "flash": false
   },
@@ -1633,7 +1633,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h35_brushtank",
+   "clip": "mdtoilet_h36_newflapper",
    "startFrom": 24,
    "flash": false
   },
@@ -1643,7 +1643,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h28_flapper",
+   "clip": "mdtoilet_h37_bluetablet",
    "startFrom": 66,
    "flash": true
   },
@@ -1653,7 +1653,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h36_newflapper",
+   "clip": "mdtoilet_h38_sticker",
    "startFrom": 4,
    "flash": false
   },
@@ -1670,7 +1670,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h37_bluetablet",
+   "clip": "mdtoilet_h14_tanklid",
    "startFrom": 23,
    "flash": false
   },
@@ -1680,7 +1680,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h38_sticker",
+   "clip": "mdtoilet_h35_brushtank",
    "startFrom": 60,
    "flash": false
   },
@@ -1697,7 +1697,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h14_tanklid",
+   "clip": "mdtoilet_h28_flapper",
    "startFrom": 19,
    "flash": false
   },
@@ -1714,7 +1714,7 @@
    "tipo": "clip",
    "sec": "ordtank",
    "avatar": "hidden",
-   "clip": "mdtoilet_h15_pourtank",
+   "clip": "mdtoilet_h36_newflapper",
    "startFrom": 54,
    "flash": true
   },
