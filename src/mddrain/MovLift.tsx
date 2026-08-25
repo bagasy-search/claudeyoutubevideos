@@ -660,7 +660,7 @@ export const MovLift: React.FC<{ durationInFrames: number }> = ({ durationInFram
                 z={lerp(-30, 34, ramp(frame, A2, A2 + 60))}
                 ry={lerp(-8, 7, ramp(frame, A2, A2 + 60))}
                 rx={1.2}
-                s={lerp(0.98, 1.06, ramp(frame, A2, A2 + 120))}
+                s={lerp(1, 1.06, ramp(frame, A2, A2 + 120))}
                 op={win(frame, A2, A3, 2, 22)}
                 radius={16}
               >

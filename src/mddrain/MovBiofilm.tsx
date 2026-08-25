@@ -16,41 +16,41 @@
 //                                  T A B L A   D E   H A N D O F F
 // ══════════════════════════════════════════════════════════════════════════════════════════════
 // ACTO 1 · f0–244 · "DIRT DOESN'T SMELL"
-//   enterFrom  cám z −250, plano medio, luz FRÍA arriba-izquierda (key .20) — engancha con el
+//   enterFrom  cám z −130, plano medio, luz FRÍA arriba-izquierda (key .20) — engancha con el
 //              b-roll macro de la película raspada sobre papel: la cama ES esa misma foto.
-//   exitTo     cám z −20 empujando; la mancha negra de la tarjeta llena el cuadro.
+//   exitTo     cám z −10 empujando; la mancha negra de la tarjeta llena el cuadro.
 //   materia    la raspadura: CLIP h39_scrapefilm dentro de vidrio, que FLIPEA a la foto h40.
 //   ── FRONTERA A @f230–252 · ZOOM-THROUGH ── la cámara entra EN la mancha (escala ×12, tapa
 //      100% ~6 frames) y sale del otro lado adentro de la capa. Profundidad extrema, sin corte.
 //
 // ACTO 2 · f244–520 · "IT'S A COLONY"
-//   enterFrom  cám z +760 (recién atravesada la mancha) desacelerando a +170: emerger.
-//   exitTo     cám z +240, luz virando apenas al rojo (key .38).
+//   enterFrom  cám z +620 (recién atravesada la mancha) desacelerando a +60: emerger.
+//   exitTo     cám z +40, luz virando apenas al rojo (key .38).
 //   materia    la pared del caño en corte (PipeWall) + ojo de buey con CLIP h40_lookinpipe +
 //              tarjeta ancha con CLIP h03_pipesection, que es la que cruza la frontera.
 //   ── FRONTERA B @f508–526 · OCLUSIÓN ── la tarjeta del tramo de caño se pone de canto (rotateY
 //      −84°) mientras el Occluder barre el cuadro entero: detrás ya está armada la estratigrafía.
 //
 // ACTO 3 · f520–830 · "FOUR LAYERS, ONE STENCH"
-//   enterFrom  cám z +240 abriendo hacia atrás; la tarjeta ancha ya es el panel de secciones.
-//   exitTo     cám z +60, panel completo, la banda de abajo encendida en rojo.
+//   enterFrom  cám z +40 abriendo hacia atrás; la tarjeta ancha ya es el panel de secciones.
+//   exitTo     cám z −20, panel completo, la banda de abajo encendida en rojo.
 //   materia    4 capas, cada una con su VENTANITA de material real (fotos h39/h48/h03/h40) y un
 //              foco que viaja: la capa activa cambia su ventana por el CLIP vivo.
 //   ── FRONTERA C @f814–840 · WIPE POR MATERIA ── la marea anaeróbica (rojo-negro con burbujas)
 //      sube desde la capa de abajo, tapa de punta a punta y se lleva el panel.
 //
 // ACTO 4 · f830–1060 · "SO THEY BREATHE SULFUR"
-//   enterFrom  cám z +60 → +190, luz ROJA de alerta (key .58), cama = h01_smellnight_blur.
-//   exitTo     cám z +190; la columna de moléculas sigue subiendo, una se separa del grupo.
+//   enterFrom  cám z −20 → +55, luz ROJA de alerta (key .58), cama = h01_smellnight_blur.
+//   exitTo     cám z +55; la columna de moléculas sigue subiendo, una se separa del grupo.
 //   materia    las moléculas dibujadas suben Y ENTRAN en la tarjeta del CLIP h10_smelltowel.
 //   ── FRONTERA D @f1030–1078 · MATCH-SHAPE ── la molécula elegida vuela, encoge y ATERRIZA como
 //      el punto decimal de "0.5". El número nace de la escena, no aparece de la nada.
 //
 // ACTO 5 · f1060–1257 · "HALF A PART PER BILLION"
-//   enterFrom  cám z +190 → −150 (dolly-out a escala de cocina), luz roja → CÁLIDA NORMAL con un
+//   enterFrom  cám z +55 → −120 (dolly-out a escala de cocina), luz roja → CÁLIDA NORMAL con un
 //              bloom motivado ("se prende la luz de la cocina") entre f1058 y f1086.
 //   exitTo     tarjeta con CLIP h41_quarter creciendo hacia cámara, luz de cocina normal,
-//              cám z −150 abierta → CORTE EN EL BEAT al b-roll del bicarbonato en la pileta.
+//              cám z −120 abierta → CORTE EN EL BEAT al b-roll del bicarbonato en la pileta.
 //   materia    la moneda al lado de la mancha: la capa, otra vez, ahora medida.
 //
 // COSTURAS: A ZOOM-THROUGH · B OCLUSIÓN · C WIPE POR MATERIA · D MATCH-SHAPE · salida CORTE EN
@@ -98,20 +98,20 @@ const BLURSRC = (n: string) => `img/mddrain_${n}_blur.jpg`;
 // Función del frame GLOBAL. Nunca vuelve a cero: cada acto hereda posición, zoom e inercia.
 const CAMERA = (f: number) => {
   const z =
-    f < 230 ? lerp(-250, -20, clamp01(f / 230)) :
-    f < 252 ? lerp(-20, 760, clamp01((f - 230) / 22)) :            // ZOOM-THROUGH
-    f < 300 ? lerp(760, 170, clamp01((f - 252) / 48)) :            // emerger del otro lado
-    f < A3 ? lerp(170, 240, clamp01((f - 300) / (A3 - 300))) :
-    f < 814 ? lerp(240, 60, clamp01((f - A3) / (814 - A3))) :
-    f < 1030 ? lerp(60, 190, clamp01((f - 814) / (1030 - 814))) :
-    lerp(190, -150, clamp01((f - 1030) / (END - 1030)));
+    f < 230 ? lerp(-130, -10, clamp01(f / 230)) :
+    f < 252 ? lerp(-10, 620, clamp01((f - 230) / 22)) :            // ZOOM-THROUGH
+    f < 300 ? lerp(620, 60, clamp01((f - 252) / 48)) :             // emerger del otro lado
+    f < A3 ? lerp(60, 40, clamp01((f - 300) / (A3 - 300))) :
+    f < 814 ? lerp(40, -20, clamp01((f - A3) / (814 - A3))) :
+    f < 1030 ? lerp(-20, 55, clamp01((f - 814) / (1030 - 814))) :
+    lerp(55, -120, clamp01((f - 1030) / (END - 1030)));
   const panX =
-    f < 252 ? lerp(0, -46, clamp01(f / 252)) :
-    f < A3 ? lerp(-46, 54, clamp01((f - 252) / (A3 - 252))) :
-    f < A4 ? lerp(54, -38, clamp01((f - A3) / (A4 - A3))) :
-    lerp(-38, 42, clamp01((f - A4) / (END - A4)));
+    f < 252 ? lerp(0, -30, clamp01(f / 252)) :
+    f < A3 ? lerp(-30, 34, clamp01((f - 252) / (A3 - 252))) :
+    f < A4 ? lerp(34, -26, clamp01((f - A3) / (A4 - A3))) :
+    lerp(-26, 30, clamp01((f - A4) / (END - A4)));
   const panY =
-    f < A3 ? lerp(18, -10, clamp01(f / A3)) : lerp(-10, 22, clamp01((f - A3) / (END - A3)));
+    f < A3 ? lerp(14, -8, clamp01(f / A3)) : lerp(-8, 18, clamp01((f - A3) / (END - A3)));
   const ry = f < 252 ? lerp(3.2, 0, clamp01(f / 252)) : lerp(0, -4.4, clamp01((f - 252) / 900));
   const rx = lerp(2.6, -1.8, clamp01(f / 1150));
   const bx = Math.sin(f / 49) * 2.4 + Math.sin(f / 117) * 1.5;     // deriva viva, nunca quieto
@@ -138,13 +138,13 @@ const rise = (f: number, at: number, dur = 22, dy = 26): React.CSSProperties => 
 };
 
 // Plano con parallax propio: cada capa tiene su Z y su factor de deriva.
-const Plane: React.FC<{ pz: number; px?: number; f: number; op?: number; children?: React.ReactNode }> = ({
-  pz, px = 1, f, op = 1, children,
-}) => (
+const Plane: React.FC<{
+  pz: number; px?: number; f: number; op?: number; sc?: number; children?: React.ReactNode;
+}> = ({ pz, px = 1, f, op = 1, sc = 1, children }) => (
   <AbsoluteFill
     style={{
       opacity: op,
-      transform: `translateZ(${pz}px) translate3d(${(Math.sin(f / 53) * 4 * px).toFixed(2)}px, ${(Math.cos(f / 79) * 3 * px).toFixed(2)}px, 0)`,
+      transform: `translateZ(${pz}px) scale(${sc}) translate3d(${(Math.sin(f / 53) * 4 * px).toFixed(2)}px, ${(Math.cos(f / 79) * 3 * px).toFixed(2)}px, 0)`,
       transformStyle: "preserve-3d",
     }}
   >
@@ -263,7 +263,7 @@ const MatCard: React.FC<{
               style={{
                 position: "absolute", left: 14, top: 14, padding: "6px 12px", borderRadius: 4,
                 background: rgba(MD.red, 0.92),
-                fontFamily: F_SANS, fontWeight: 800, fontSize: 19, letterSpacing: 2.2,
+                fontFamily: F_SANS, fontWeight: 800, fontSize: 22, letterSpacing: 2.2,
                 color: MD.white, textTransform: "uppercase",
               }}
             >
@@ -275,7 +275,7 @@ const MatCard: React.FC<{
               style={{
                 position: "absolute", left: 0, right: 0, bottom: 0, padding: "34px 20px 15px",
                 background: "linear-gradient(180deg, rgba(6,6,8,0) 0%, rgba(6,6,8,0.88) 52%)",
-                fontFamily: F_SANS, fontWeight: 700, fontSize: 24, letterSpacing: 1.4,
+                fontFamily: F_SANS, fontWeight: 700, fontSize: 30, letterSpacing: 1.4,
                 color: rgba(MD.white, 0.94), textTransform: "uppercase",
               }}
             >
@@ -381,7 +381,7 @@ const Act1: React.FC<{ f: number; op: number }> = ({ f, op }) => {
   return (
     <AbsoluteFill style={{ opacity: op }}>
       {/* plano 1 · la cama: la MISMA foto macro con la que entra el b-roll */}
-      <Plane pz={-300} px={0.16} f={f}>
+      <Plane pz={-150} px={0.16} f={f} sc={1.3}>
         <AbsoluteFill style={{ overflow: "hidden" }}>
           <Img
             src={staticFile(BLURSRC("h39_scrapefilm"))}
@@ -396,7 +396,7 @@ const Act1: React.FC<{ f: number; op: number }> = ({ f, op }) => {
       </Plane>
 
       {/* plano 4 · el protagonista: material real dentro de vidrio */}
-      <Plane pz={90} px={1} f={f}>
+      <Plane pz={70} px={1} f={f}>
         <MatCard
           w={880} h={496} left={628} top={244}
           rotY={-9 + flip} rotZ={lerp(2.4, -0.8, innE)}
@@ -418,7 +418,7 @@ const Act1: React.FC<{ f: number; op: number }> = ({ f, op }) => {
 
       {/* plano 6 · la tipografía */}
       <Plane pz={40} px={0.6} f={f}>
-        <div style={{ position: "absolute", left: 104, top: 318, width: 470 }}>
+        <div style={{ position: "absolute", left: 150, top: 318, width: 460 }}>
           <div style={rise(f, 18)}>
             <Kicker>THE SMELL ISN&apos;T DIRT</Kicker>
           </div>
@@ -438,7 +438,7 @@ const Act1: React.FC<{ f: number; op: number }> = ({ f, op }) => {
             }}
           />
           <div style={{ marginTop: 26, ...rise(f, 112, 26, 22) }}>
-            <TextBed w={456} pad={22}>
+            <TextBed w={440} pad={22}>
               <div style={{ fontFamily: F_SANS, fontWeight: 600, fontSize: 31, lineHeight: 1.34, color: rgba(MD.white, 0.9) }}>
                 Mud on your boots is silent. Whatever is in that pipe is not mud.
               </div>
@@ -461,7 +461,7 @@ const Act2: React.FC<{ f: number; op: number }> = ({ f, op }) => {
   return (
     <AbsoluteFill style={{ opacity: op }}>
       {/* plano 1 · cama macro real: la capa levantándose de la pared */}
-      <Plane pz={-300} px={0.16} f={f}>
+      <Plane pz={-150} px={0.16} f={f} sc={1.3}>
         <AbsoluteFill style={{ overflow: "hidden" }}>
           <Img
             src={staticFile(BLURSRC("h48_liftlayer"))}
@@ -476,7 +476,7 @@ const Act2: React.FC<{ f: number; op: number }> = ({ f, op }) => {
       </Plane>
 
       {/* plano 3 · estructura: la pared del caño en corte, con la película entera */}
-      <Plane pz={-110} px={0.44} f={f} op={clamp01((f - A2 - 4) / 34) * 0.92}>
+      <Plane pz={-70} px={0.44} f={f} op={clamp01((f - A2 - 4) / 34) * 0.92}>
         <div
           style={{
             position: "absolute", left: 720, top: -60,
@@ -489,18 +489,18 @@ const Act2: React.FC<{ f: number; op: number }> = ({ f, op }) => {
       </Plane>
 
       {/* plano 5 · la colonia viva sobre la pared */}
-      <Plane pz={130} px={1.32} f={f}>
+      <Plane pz={60} px={1.32} f={f}>
         <div style={{ position: "absolute", left: 700, top: 60, width: 620, height: 940 }}>
           <Colony f={f} at={A2 + 40} n={44} alive={0.9} />
         </div>
       </Plane>
 
       {/* plano 4a · OJO DE BUEY: mirar adentro del caño, CLIP real */}
-      <Plane pz={150} px={1.1} f={f}>
+      <Plane pz={70} px={1.1} f={f}>
         <MatCard
-          w={470} h={470} left={132} top={452} radius={235}
+          w={470} h={470} left={210} top={424} radius={235}
           rotZ={lerp(-6, -1.4, portE)} sc={lerp(0.84, 1, portE)} op={portE}
-          sheenAt={A2 + 96} caption="LOOK IN ANY OLD LINE"
+          sheenAt={A2 + 96}
         >
           <PhotoIn name="h40_lookinpipe" pos="50% 46%" sc={1.16} d={0.18} />
           <ClipIn from={268} dur={138} name="h40_lookinpipe" startFrom={6} pos="50% 46%" sc={1.1} d={0.13} />
@@ -512,12 +512,26 @@ const Act2: React.FC<{ f: number; op: number }> = ({ f, op }) => {
             }}
           />
         </MatCard>
+        {/* el rótulo va FUERA del ojo de buey: adentro lo cortaría el círculo */}
+        <div
+          style={{
+            position: "absolute", left: 214, top: 906, padding: "11px 20px", borderRadius: 5,
+            opacity: portE,
+            transform: `translateY(${((1 - portE) * 16).toFixed(1)}px)`,
+            background: "linear-gradient(180deg, rgba(8,8,10,0.9) 0%, rgba(8,8,10,0.7) 100%)",
+            boxShadow: `0 14px 34px rgba(0,0,0,0.7), inset 0 0 0 1px ${rgba(MD.white, 0.16)}`,
+            fontFamily: F_SANS, fontWeight: 700, fontSize: 30, letterSpacing: 1.6,
+            color: rgba(MD.white, 0.94), textTransform: "uppercase",
+          }}
+        >
+          LOOK IN ANY OLD LINE
+        </div>
       </Plane>
 
       {/* plano 4b · LA TARJETA QUE CRUZA LA FRONTERA: el tramo de caño cortado */}
-      <Plane pz={196} px={1.18} f={f}>
+      <Plane pz={90} px={1.18} f={f}>
         <MatCard
-          w={760} h={430} left={1000} top={548}
+          w={720} h={380} left={950} top={540}
           rotY={lerp(-12, -84, edge)} rotZ={lerp(3.6, 0.6, wideE)}
           sc={lerp(0.88, 1, wideE) * (1 + edge * 0.5)} op={wideE}
           sheenAt={452} caption="HE CUT ONE OPEN"
@@ -529,7 +543,7 @@ const Act2: React.FC<{ f: number; op: number }> = ({ f, op }) => {
 
       {/* plano 6 · tipografía */}
       <Plane pz={40} px={0.6} f={f}>
-        <div style={{ position: "absolute", left: 1000, top: 132, width: 800 }}>
+        <div style={{ position: "absolute", left: 950, top: 120, width: 760 }}>
           <div style={rise(f, A2 + 24)}>
             <Kicker>SO WHAT IS ACTUALLY IN THERE</Kicker>
           </div>
@@ -542,7 +556,7 @@ const Act2: React.FC<{ f: number; op: number }> = ({ f, op }) => {
             <Title size={72}>living in slime.</Title>
           </div>
           <div style={{ marginTop: 24, ...rise(f, A2 + 118, 26, 22) }}>
-            <TextBed w={700} pad={22}>
+            <TextBed w={660} pad={22}>
               <div style={{ fontFamily: F_SANS, fontWeight: 600, fontSize: 31, lineHeight: 1.32, color: rgba(MD.white, 0.9) }}>
                 Bacteria glue themselves to the wall and eat whatever you rinse off the plates.
               </div>
@@ -583,7 +597,7 @@ const LayerBand: React.FC<{ f: number; i: number; d: LayerDef; top: number }> = 
   return (
     <div
       style={{
-        position: "absolute", left: 0, top: lerp(280 - i * 6, top, openE), width: 1180, height: d.h,
+        position: "absolute", left: 0, top: lerp(280 - i * 6, top, openE), width: 1080, height: d.h,
         opacity: openE,
         transform: `translateZ(${(active * 46).toFixed(1)}px) translateX(${((1 - openE) * (i % 2 === 0 ? -70 : 70)).toFixed(1)}px) scaleY(${lerp(0.36, 1, openE).toFixed(3)})`,
         transformStyle: "preserve-3d",
@@ -634,7 +648,7 @@ const LayerBand: React.FC<{ f: number; i: number; d: LayerDef; top: number }> = 
         />
       </div>
       {/* rótulo */}
-      <div style={{ position: "absolute", left: 344, top: 16, width: 800 }}>
+      <div style={{ position: "absolute", left: 344, top: 14, width: 660 }}>
         <div
           style={{
             fontFamily: F_SANS, fontWeight: 800,
@@ -647,7 +661,7 @@ const LayerBand: React.FC<{ f: number; i: number; d: LayerDef; top: number }> = 
         </div>
         <div
           style={{
-            marginTop: 6, fontFamily: F_SANS, fontWeight: 600, fontSize: 25, letterSpacing: 0.6,
+            marginTop: 5, fontFamily: F_SANS, fontWeight: 600, fontSize: 30, letterSpacing: 0.4,
             color: rgba(active > 0.4 ? MD.redHot : MD.white, 0.62 + active * 0.32),
           }}
         >
@@ -658,7 +672,7 @@ const LayerBand: React.FC<{ f: number; i: number; d: LayerDef; top: number }> = 
       <div
         style={{
           position: "absolute", right: 18, top: 14,
-          fontFamily: F_SANS, fontWeight: 800, fontSize: 22, letterSpacing: 2,
+          fontFamily: F_SANS, fontWeight: 800, fontSize: 28, letterSpacing: 2,
           color: rgba(MD.white, 0.26 + active * 0.5),
         }}
       >
@@ -673,7 +687,7 @@ const Act3: React.FC<{ f: number; op: number }> = ({ f, op }) => {
   return (
     <AbsoluteFill style={{ opacity: op }}>
       {/* plano 1 · el panel vive sobre una FOTO MACRO REAL, no sobre fondo plano */}
-      <Plane pz={-300} px={0.16} f={f}>
+      <Plane pz={-150} px={0.16} f={f} sc={1.3}>
         <AbsoluteFill style={{ overflow: "hidden" }}>
           <Img
             src={staticFile(BLURSRC("h48_liftlayer"))}
@@ -688,10 +702,10 @@ const Act3: React.FC<{ f: number; op: number }> = ({ f, op }) => {
       </Plane>
 
       {/* plano 4 · LA ESTRATIGRAFÍA */}
-      <Plane pz={110} px={1.05} f={f}>
+      <Plane pz={60} px={1.05} f={f}>
         <div
           style={{
-            position: "absolute", left: 636, top: 228, width: 1180, height: 620,
+            position: "absolute", left: 640, top: 228, width: 1080, height: 620,
             transformStyle: "preserve-3d",
             transform: `rotateY(${lerp(-9, -3.4, clamp01((f - A3) / 260)).toFixed(2)}deg) rotateX(${lerp(5, 1.2, clamp01((f - A3) / 260)).toFixed(2)}deg)`,
           }}
@@ -712,7 +726,7 @@ const Act3: React.FC<{ f: number; op: number }> = ({ f, op }) => {
 
       {/* plano 6 · tipografía */}
       <Plane pz={40} px={0.6} f={f}>
-        <div style={{ position: "absolute", left: 96, top: 300, width: 500 }}>
+        <div style={{ position: "absolute", left: 150, top: 300, width: 460 }}>
           <div style={rise(f, A3 + 16)}>
             <Kicker>CUT THE PIPE OPEN</Kicker>
           </div>
@@ -720,12 +734,12 @@ const Act3: React.FC<{ f: number; op: number }> = ({ f, op }) => {
             <Title size={74}>Four layers.</Title>
           </div>
           <div style={{ marginTop: -2, ...rise(f, A3 + 66, 24, 32) }}>
-            <Title size={92}>
+            <Title size={80}>
               One <Em>stench</Em>.
             </Title>
           </div>
           <div style={{ marginTop: 26, ...rise(f, A3 + 120, 26, 22) }}>
-            <TextBed w={470} pad={22}>
+            <TextBed w={444} pad={22}>
               <div style={{ fontFamily: F_SANS, fontWeight: 600, fontSize: 31, lineHeight: 1.32, color: rgba(MD.white, 0.9) }}>
                 Top to bottom: the food, the slime, the colony — and then the dark.
               </div>
@@ -739,8 +753,8 @@ const Act3: React.FC<{ f: number; op: number }> = ({ f, op }) => {
 
 // ══ ACTO 4 · EL SULFURO ═════════════════════════════════════════════════════════════════════
 const COUSINS = [
-  { at: A4 + 130, x: 1010, y: 262, t1: "SOUR MILK", t2: "methanethiol" },
-  { at: A4 + 164, x: 916, y: 706, t1: "OLD SOCKS", t2: "dimethyl sulfide" },
+  { at: A4 + 130, x: 742, y: 214, t1: "SOUR MILK", t2: "methanethiol" },
+  { at: A4 + 164, x: 660, y: 752, t1: "OLD SOCKS", t2: "dimethyl sulfide" },
 ];
 
 const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
@@ -752,7 +766,7 @@ const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
   return (
     <AbsoluteFill style={{ opacity: op }}>
       {/* plano 1 · la cocina de noche, real */}
-      <Plane pz={-300} px={0.16} f={f}>
+      <Plane pz={-150} px={0.16} f={f} sc={1.3}>
         <AbsoluteFill style={{ overflow: "hidden" }}>
           <Img
             src={staticFile(BLURSRC("h01_smellnight"))}
@@ -779,7 +793,7 @@ const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
       </Plane>
 
       {/* plano 5 · LA COLUMNA DE MOLÉCULAS que sube y entra en la tarjeta */}
-      <Plane pz={168} px={1.4} f={f}>
+      <Plane pz={60} px={1.4} f={f}>
         {Array.from({ length: 15 }, (_, i) => {
           const s = rnd(i * 5.7);
           const s2 = rnd(i * 13.1);
@@ -805,9 +819,9 @@ const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
       </Plane>
 
       {/* plano 4 · la tarjeta real: huele el papel y echa la cabeza atrás */}
-      <Plane pz={200} px={1.16} f={f}>
+      <Plane pz={90} px={1.16} f={f}>
         <MatCard
-          w={700} h={452} left={lerp(1120, 1900, out)} top={lerp(300, 268, cardE)}
+          w={680} h={440} left={lerp(1010, 1960, out)} top={lerp(302, 272, cardE)}
           rotY={lerp(-14, -6, cardE) - out * 16} rotZ={lerp(3.2, 0.8, cardE)}
           sc={lerp(0.86, 1, cardE)} op={cardE}
           hot={clamp01((t - 120) / 40) * (1 - out)}
@@ -820,7 +834,7 @@ const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
 
       {/* plano 5b · los dos primos, rotulados sobre sus estelas */}
       {COUSINS.map((c, i) => (
-        <Plane pz={150} px={1.24} f={f} key={i} op={1 - out}>
+        <Plane pz={60} px={1.24} f={f} key={i} op={1 - out}>
           <div style={{ position: "absolute", left: c.x, top: c.y, ...rise(f, c.at, 24, 18) }}>
             <div
               style={{
@@ -830,7 +844,7 @@ const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
               }}
             >
               <div style={{ fontFamily: F_SANS, fontWeight: 800, fontSize: 27, letterSpacing: 2.2, color: MD.white }}>{c.t1}</div>
-              <div style={{ fontFamily: F_SANS, fontWeight: 600, fontSize: 20, letterSpacing: 1, color: rgba(MD.redHot, 0.85) }}>{c.t2}</div>
+              <div style={{ fontFamily: F_SANS, fontWeight: 600, fontSize: 26, letterSpacing: 1, color: rgba(MD.redHot, 0.85) }}>{c.t2}</div>
             </div>
           </div>
         </Plane>
@@ -838,7 +852,7 @@ const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
 
       {/* plano 6 · tipografía */}
       <Plane pz={40} px={0.6} f={f} op={1 - clamp01((f - 1030) / 40)}>
-        <div style={{ position: "absolute", left: 100, top: 292, width: 500 }}>
+        <div style={{ position: "absolute", left: 150, top: 292, width: 460 }}>
           <div style={rise(f, A4 + 18)}>
             <Kicker>AT THE BOTTOM, NO OXYGEN</Kicker>
           </div>
@@ -851,7 +865,7 @@ const Act4: React.FC<{ f: number; op: number }> = ({ f, op }) => {
             </Title>
           </div>
           <div style={{ marginTop: 26, ...rise(f, A4 + 116, 26, 22) }}>
-            <TextBed w={476} pad={22}>
+            <TextBed w={444} pad={22}>
               <div style={{ fontFamily: F_SANS, fontWeight: 600, fontSize: 31, lineHeight: 1.32, color: rgba(MD.white, 0.9) }}>
                 They exhale hydrogen sulfide — plus two cousins you already know.
               </div>
@@ -888,7 +902,7 @@ const Act5: React.FC<{ f: number }> = ({ f }) => {
   return (
     <AbsoluteFill>
       {/* plano 1 · la cocina, luz normal: ya estamos donde arranca el b-roll siguiente */}
-      <Plane pz={-300} px={0.16} f={f} op={bed}>
+      <Plane pz={-150} px={0.16} f={f} op={bed} sc={1.3}>
         <AbsoluteFill style={{ overflow: "hidden" }}>
           <Img
             src={staticFile(BLURSRC("h41_quarter"))}
@@ -903,13 +917,13 @@ const Act5: React.FC<{ f: number }> = ({ f }) => {
       </Plane>
 
       {/* plano 6 · EL NÚMERO, enorme, con el punto que llegó volando */}
-      <Plane pz={70} px={0.68} f={f} op={numFade}>
-        <div style={{ position: "absolute", left: 96, top: 218, width: 700, ...rise(f, 1054, 22, 16) }}>
+      <Plane pz={20} px={0.68} f={f} op={numFade}>
+        <div style={{ position: "absolute", left: 150, top: 214, width: 700, ...rise(f, 1054, 22, 16) }}>
           <Kicker color={MD.white}>WHAT YOUR NOSE CAN CATCH</Kicker>
         </div>
         <div
           style={{
-            position: "absolute", left: 96, top: 272,
+            position: "absolute", left: 150, top: 268,
             display: "flex", alignItems: "flex-end",
             transform: `scale(${lerp(1, 0.82, pushE).toFixed(3)})`,
             transformOrigin: "left bottom",
@@ -956,7 +970,7 @@ const Act5: React.FC<{ f: number }> = ({ f }) => {
             5
           </div>
         </div>
-        <div style={{ position: "absolute", left: 102, top: 552, ...rise(f, 1092, 26, 20) }}>
+        <div style={{ position: "absolute", left: 156, top: 548, ...rise(f, 1092, 26, 20) }}>
           <div
             style={{
               fontFamily: F_SANS, fontWeight: 800, fontSize: 46, letterSpacing: 9,
@@ -966,12 +980,12 @@ const Act5: React.FC<{ f: number }> = ({ f }) => {
             PARTS PER BILLION
           </div>
         </div>
-        <div style={{ position: "absolute", left: 100, top: 632, width: 620, ...rise(f, 1120, 26, 22) }}>
+        <div style={{ position: "absolute", left: 156, top: 630, width: 600, ...rise(f, 1120, 26, 22) }}>
           <Title size={62}>
             Your nose finds it <Em>first</Em>.
           </Title>
           <div style={{ marginTop: 20 }}>
-            <TextBed w={600} pad={20}>
+            <TextBed w={580} pad={20}>
               <div style={{ fontFamily: F_SANS, fontWeight: 600, fontSize: 31, lineHeight: 1.3, color: rgba(MD.white, 0.9) }}>
                 For this one molecule you beat most lab gear on the planet.
               </div>
@@ -981,10 +995,10 @@ const Act5: React.FC<{ f: number }> = ({ f }) => {
       </Plane>
 
       {/* plano 4 · la moneda al lado de la mancha: material real que se lleva el cuadro */}
-      <Plane pz={210} px={1.2} f={f}>
+      <Plane pz={90} px={1.2} f={f}>
         <MatCard
-          w={660} h={404}
-          left={lerp(1150, 690, pushE)} top={lerp(596, 336, pushE)}
+          w={640} h={380}
+          left={lerp(1090, 690, pushE)} top={lerp(560, 336, pushE)}
           rotY={lerp(-13, -3, cardE) + pushE * 2} rotZ={lerp(3, 0.6, cardE)}
           sc={lerp(0.86, 1, cardE) * lerp(1, 1.58, pushE)} op={cardE}
           sheenAt={1168} caption="COIN-SIZED PATCH. WHOLE KITCHEN."
@@ -1092,11 +1106,11 @@ export const MovBiofilm: React.FC<{ durationInFrames: number }> = ({ durationInF
         {f >= 1026 && <Act5 f={f} />}
 
         {/* plano 2 · el aire del cuarto, siempre vivo sobre todos los actos */}
-        <Plane pz={-190} px={0.26} f={f} op={0.9}>
+        <Plane pz={-110} px={0.26} f={f} op={0.9} sc={1.24}>
           <Motes f={f} n={24} />
         </Plane>
         {/* plano 7 · suciedad de primer plano, fuera de foco */}
-        <Plane pz={250} px={1.9} f={f} op={0.7}>
+        <Plane pz={120} px={1.9} f={f} op={0.7}>
           <Motes f={f * 1.6} n={9} big />
         </Plane>
       </AbsoluteFill>

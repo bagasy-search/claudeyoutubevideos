@@ -19,7 +19,7 @@
 //   real:      hero = clip `h77_wipehands` (2 beats) · satélite = clip `h07_wettowel` (2 beats).
 //
 // acto 2  f230-460  LE COBRÉ A GENTE. EN PLURAL.
-//   enterFrom: caemos DENTRO del plano de la máquina, a escala 1,42 (sigue el mismo empuje).
+//   enterFrom: caemos DENTRO del plano de la máquina, a escala 1,58 (sigue el mismo empuje).
 //   exitTo:    la máquina reducida a una placa lejana, apagada, con el piloto rojo muerto.
 //   materia:   el PAPEL se acerca a cámara mientras la máquina se aleja (el cruce del acto).
 //   real:      placa lejana = clip `h04_machinefloor` (2 beats) · tarjeta = clip `h11_holdtowelup` (2 beats).
@@ -210,7 +210,7 @@ export const MovClose: React.FC<{
   const machZ = interpolate(frame, [A2, A2 + 70, A3 - 6], [-150, -300, -560], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.18, 0.72, 0.24, 1),
   });
-  const machS = interpolate(frame, [A2, A2 + 22, A3 - 6], [1.42, 1.14, 0.72], {
+  const machS = interpolate(frame, [A2, A2 + 22, A3 - 6], [1.58, 1.16, 0.72], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.18, 0.72, 0.24, 1),
   });
   const machDim = interpolate(frame, [A2 + 34, A3 - 10], [0.04, 0.74], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -220,7 +220,7 @@ export const MovClose: React.FC<{
   });
 
   // ── ACTO 4 · la botella entra, se apoya y sale por abajo ──────────────────────────────────
-  const bottleIn = interpolate(frame, [662, 706], [0, 1], {
+  const bottleIn = interpolate(frame, [666, 708], [0, 1], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.16, 0.82, 0.2, 1),
   });
   const bottleOut = interpolate(frame, [852, 902], [0, 1], {
@@ -257,6 +257,12 @@ export const MovClose: React.FC<{
   const fgS = 1 + c.e * 0.1;
   const fg: React.CSSProperties = {
     transform: `translate(${fgX.toFixed(2)}px, ${fgY.toFixed(2)}px) scale(${fgS.toFixed(4)})`,
+    transformOrigin: "50% 60%",
+  };
+  // el mismo plano, pero su parallax se APAGA a medida que la tarjeta se cuadra: en mm=1 el
+  // transform es identidad y la plancha cae exactamente en los píxeles donde va el QR.
+  const fgOut: React.CSSProperties = {
+    transform: `translate(${(fgX * (1 - mm)).toFixed(2)}px, ${(fgY * (1 - mm)).toFixed(2)}px) scale(${(1 + (fgS - 1) * (1 - mm)).toFixed(4)})`,
     transformOrigin: "50% 60%",
   };
 
@@ -301,10 +307,10 @@ export const MovClose: React.FC<{
           </div>
 
           {/* P1a · LA MÁQUINA (acto 2): entra a escala 1,42 —caemos dentro— y después se aleja y se apaga */}
-          {frame >= 220 && frame < A3 && (
+          {frame >= 214 && frame < A3 && (
             <div style={{ position: "absolute", left: 280, top: 158, ...plane(machZ, -c.e * 10 + dr(103, 4), dr(151, 3), machS) }}>
               <Card w={1360} h={765} r={16} lit={0.9} grade={0.9} contact={0.9} sheenAt={A2 + 118}>
-                <Clip from={226} len={116} src="mddrain_h04_machinefloor" start={4} scale={1.03} />
+                <Clip from={214} len={128} src="mddrain_h04_machinefloor" start={4} scale={1.03} />
                 <Clip from={342} len={118} src="mddrain_h04_machinefloor" start={22} scale={1.06} />
                 {/* el piloto rojo de la máquina, que se muere */}
                 <div
@@ -321,7 +327,7 @@ export const MovClose: React.FC<{
           )}
 
           {/* P1b · LA DIRECCIÓN A CÁMARA (acto 5): Mike señala, con la botella marrón al lado */}
-          {frame >= 852 && (
+          {frame >= 856 && (
             <div
               style={{
                 position: "absolute", left: 210, top: 118,
@@ -369,11 +375,11 @@ export const MovClose: React.FC<{
           )}
 
           {/* P3 · HERO acto 3: el macro del dedo con el papel bajo el borde (CLIP REAL, 2 beats) */}
-          {frame >= 456 && frame < A4 && (
+          {frame >= 458 && frame < 668 && (
             <div
               style={{
                 position: "absolute", left: 250, top: 150,
-                ...plane(30, -c.e * 22 + dr(87, 5), dr(141, 4), lerp(0.94, 1.04, clamp01((frame - 456) / 150))),
+                ...plane(30, -c.e * 22 + dr(87, 5), dr(141, 4), lerp(0.94, 1.04, clamp01((frame - 458) / 150))),
               }}
             >
               <Card w={700} h={760} r={16} lit={1} grade={0.8} contact={1} sheenAt={572}>
@@ -384,7 +390,7 @@ export const MovClose: React.FC<{
           )}
 
           {/* P3 · HERO acto 4: LA BOTELLA MARRÓN — clip real + su reflejo en la mesada */}
-          {frame >= 660 && bottleOut < 0.999 && (
+          {frame >= 666 && bottleOut < 0.999 && (
             <div
               style={{
                 position: "absolute", left: 320, top: 150,
@@ -393,8 +399,8 @@ export const MovClose: React.FC<{
               }}
             >
               <Card w={480} h={640} r={14} lit={1} grade={0.72} contact={1 - bottleOut} sheenAt={790}>
-                <Clip from={660} len={116} src="mddrain_h49_bottlehold" start={10} scale={1.03} />
-                <Clip from={776} len={104} src="mddrain_h49_bottlehold" start={36} scale={1.08} />
+                <Clip from={666} len={110} src="mddrain_h49_bottlehold" start={10} scale={1.03} />
+                <Clip from={776} len={104} src="mddrain_h49_bottlehold" start={34} scale={1.08} />
               </Card>
               {/* el REFLEJO: la misma foto, espejada y enmascarada — la botella APOYA de verdad */}
               <div
@@ -419,14 +425,14 @@ export const MovClose: React.FC<{
               }}
             >
               <Card w={430} h={242} r={12} lit={0.95} grade={0.8} contact={1} sheenAt={356}>
-                <Clip from={236} len={114} src="mddrain_h11_holdtowelup" start={6} scale={1.03} />
+                <Clip from={232} len={118} src="mddrain_h11_holdtowelup" start={6} scale={1.03} />
                 <Clip from={350} len={112} src="mddrain_h11_holdtowelup" start={24} scale={1.08} />
               </Card>
             </div>
           )}
 
           {/* P4 · acto 3: la FOTO del papel manchado en alto — la prueba */}
-          {frame >= 466 && frame < A4 && (
+          {frame >= 466 && frame < 668 && (
             <div
               style={{
                 position: "absolute", left: 1120, top: 250,
@@ -463,7 +469,7 @@ export const MovClose: React.FC<{
               opacity: clamp01((frame - 54) / 20) * (1 - clamp01((frame - 214) / 20)),
             }}
           >
-            <Clip from={60} len={120} src="mddrain_h07_wettowel" start={8} scale={1.04} />
+            <Clip from={54} len={126} src="mddrain_h07_wettowel" start={8} scale={1.04} />
             <Clip from={180} len={58} src="mddrain_h07_wettowel" start={30} scale={1.1} />
           </Card>
         </AbsoluteFill>
@@ -471,7 +477,7 @@ export const MovClose: React.FC<{
 
       {/* acto 4 → 5: la tarjeta del papel VIAJA y se cuadra en la plancha del QR (MATCH-SHAPE) */}
       {frame >= 682 && sheetLit > 0.001 && (
-        <AbsoluteFill style={mm > 0.02 ? undefined : fg}>
+        <AbsoluteFill style={fgOut}>
           <Card
             w={satW} h={satH} r={lerp(12, 8, mm)} lit={lerp(0.92, 1, mm)} grade={lerp(0.8, 0, mm)}
             contact={lerp(1, 0.55, mm)} sheenAt={mm > 0.5 ? 930 : 760}
@@ -480,12 +486,12 @@ export const MovClose: React.FC<{
               left: satL, top: satT,
               opacity: clamp01((frame - 682) / 22) * sheetLit,
               transform: `translateY(${(lerp(34, 0, clamp01((frame - 682) / 40)) + (1 - mm) * dr(117, 4)).toFixed(1)}px)`,
-              filter: mm > 0.5 ? `drop-shadow(0 0 ${(46 * sheetLit).toFixed(0)}px ${rgba(MD.warm, 0.34 * sheetLit)})` : undefined,
+              boxShadow: mm > 0.5 ? `0 0 ${(76 * sheetLit).toFixed(0)}px ${(16 * sheetLit).toFixed(0)}px ${rgba(MD.warm, 0.2 * sheetLit)}` : undefined,
             }}
           >
             {/* material real hasta que la hoja limpia lo cubre */}
             <div style={{ position: "absolute", left: 0, top: 0, width: "100%", height: "100%", overflow: "hidden" }}>
-              <Clip from={686} len={112} src="mddrain_h07_wettowel" start={4} scale={1.03} />
+              <Clip from={682} len={116} src="mddrain_h07_wettowel" start={4} scale={1.03} />
               {frame >= 798 && <Photo src="mddrain_h07_wettowel" scale={lerp(1.03, 1.12, clamp01((frame - 798) / 100))} />}
             </div>
             {/* LA HOJA LIMPIA baja y cubre: oclusión a escala de objeto, no un fundido */}
@@ -557,7 +563,7 @@ export const MovClose: React.FC<{
         cy={78}
       />
       <Steam
-        amount={interpolate(frame, [880, 960, 1006], [0.2, 0.14, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
+        amount={interpolate(frame, [876, 892, 960, 1006], [0, 0.2, 0.14, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
         seed={31}
         cx={46}
         cy={96}
@@ -619,6 +625,17 @@ export const MovClose: React.FC<{
             </div>
           </TextBed>
         </div>
+      )}
+
+      {/* cama oscura del remate: la luz cae sobre la mitad derecha (⛔ nunca texto sobre imagen sin cama) */}
+      {frame >= 872 && (
+        <AbsoluteFill
+          style={{
+            background: "linear-gradient(90deg, rgba(0,0,0,0) 26%, rgba(6,6,8,0.62) 46%, rgba(6,6,8,0.82) 100%)",
+            opacity: interpolate(frame, [872, 892, 996, 1008], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
+            pointerEvents: "none",
+          }}
+        />
       )}
 
       {/* acto 5 · el remate en bloques semánticos, a la derecha: donde `MdQrCta` pone su texto */}

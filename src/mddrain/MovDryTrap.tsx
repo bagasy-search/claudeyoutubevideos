@@ -946,7 +946,7 @@ export const MovDryTrap: React.FC<{ durationInFrames: number }> = ({ durationInF
                 0.78,
                 lerp(318, 560, toFan),
                 lerp(16, 96, toFan),
-                `scale(${(lerp(0.82, 1, inD) * lerp(1, 1.02, toFan) * lerp(1, 2.4, flyFront)).toFixed(3)}) translateZ(${(flyFront * 520).toFixed(1)}px) rotateY(${lerp(6, 4, inD).toFixed(2)}deg) rotateZ(${lerp(3, 4, toFan).toFixed(2)}deg)`,
+                `scale(${(lerp(0.82, 1, inD) * lerp(1, 1.02, toFan) * lerp(1, 1.6, flyFront)).toFixed(3)}) translateZ(${(flyFront * 520).toFixed(1)}px) rotateY(${lerp(6, 4, inD).toFixed(2)}deg) rotateZ(${lerp(3, 4, toFan).toFixed(2)}deg)`,
               ),
               opacity: inD * (1 - clamp01((flyFront - 0.62) / 0.38)),
             }}
@@ -1008,7 +1008,7 @@ export const MovDryTrap: React.FC<{ durationInFrames: number }> = ({ durationInF
                 0.9,
                 lerp(1180, 150, inB) * (1 - heroB) - heroB * 30,
                 lerp(150, 24, inB) * (1 - heroB) + heroB * 8,
-                `scale(${(lerp(0.6, 0.92, inB) * lerp(1, 1.06, heroB) * lerp(1, 7.4, dive)).toFixed(3)}) translateZ(${(dive * 640).toFixed(1)}px) rotateY(${lerp(-9, -1, heroB).toFixed(2)}deg)`,
+                `scale(${(lerp(0.6, 0.92, inB) * lerp(1, 1.06, heroB) * lerp(1, 1.9, dive)).toFixed(3)}) translateZ(${(dive * 760).toFixed(1)}px) rotateY(${lerp(-9, -1, heroB).toFixed(2)}deg)`,
               ),
               opacity: 1 - clamp01((dive - 0.84) / 0.16),
             }}
@@ -1032,7 +1032,7 @@ export const MovDryTrap: React.FC<{ durationInFrames: number }> = ({ durationInF
           <div
             style={{
               ...plane(
-                0.55,
+                0.55 * openT, // a sangre no hay parallax: el plano ES la pantalla
                 lerp(0, -60, openT) - exitA * 980,
                 exitA * 190,
                 `scale(${(1 - exitA * 0.26).toFixed(3)}) rotateZ(${(exitA * -7).toFixed(2)}deg) rotateY(${(openT * -3).toFixed(2)}deg)`,
