@@ -83,5 +83,36 @@ for (const u of usos) {
     for (const d of otros) console.log(`     ${d.prop} = ${JSON.stringify(d.val).slice(0, 110)}`);
   }
 }
-console.log(`\n=== ${problemas} defaults en ESPAÑOL sin pisar · ${avisos} avisos ===`);
-if (problemas) { console.log("Pisalos en el plan y volvé a buildear ANTES de rendear."); process.exit(1); }
+// ── HUECOS DE IMAGEN ────────────────────────────────────────────────────────────────────────
+// Misma familia de bug que los defaults de texto: el componente NO queda vacío, queda con un
+// PLACEHOLDER (marco negro / paisaje lavado) que "se ve lleno" y pasa todas las compuertas.
+// Medido en `mdmold`: el VsDuel del sellador salió con los dos paneles en negro.
+// slot = ruta dentro de las props que TIENE que traer una imagen.
+const SLOTS = {
+  VsDuel: ["left.image", "right.image"],
+  CtaCard: ["image"],
+  LightTrailCards: ["images"],
+  BeforeAfter: ["beforeImage", "afterImage"],
+  FloatingCutout: ["image"],
+  DocNameCard: ["image"],
+  BlurExplainer: ["image", "clip"],
+};
+const get = (o, ruta) => ruta.split(".").reduce((a, k) => (a == null ? a : a[k]), o);
+let huecos = 0;
+for (const u of usos) {
+  const slots = SLOTS[u.comp];
+  if (!slots) continue;
+  for (const sl of slots) {
+    const v = get(u.props, sl);
+    if (v == null || (Array.isArray(v) && !v.length)) {
+      huecos++;
+      console.log(`\n⛔ ${u.comp} (${Math.round(u.ms / 1000)}s) — SIN IMAGEN en \`${sl}\` → renderiza un placeholder vacío`);
+    } else if (typeof v === "string" && !fs.existsSync(`public/${v}`)) {
+      huecos++;
+      console.log(`\n⛔ ${u.comp} (${Math.round(u.ms / 1000)}s) — \`${sl}\` apunta a public/${v} que NO EXISTE (404 mata el chunk)`);
+    }
+  }
+}
+
+console.log(`\n=== ${problemas} defaults en ESPAÑOL sin pisar · ${huecos} huecos de imagen · ${avisos} avisos ===`);
+if (problemas || huecos) { console.log("Arreglalo en el plan y volvé a buildear ANTES de rendear."); process.exit(1); }

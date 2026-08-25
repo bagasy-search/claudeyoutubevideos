@@ -192,8 +192,32 @@ const Root${COMP}: React.FC = () => (
 registerRoot(Root${COMP});
 `);
 
-// lista de assets para el farm
-const assets = [...clipsUsed, ...[...usedSfx]].sort();
+// ── assets para el farm ──────────────────────────────────────────────────────────────────────
+// ⛔ Las imágenes que viven DENTRO de props (VsDuel.left.image, PullQuote.image, CtaCard.image…)
+// NO aparecen como beats, así que el build no las ve y el tar sale sin ellas → 404 y chunk muerto.
+// Hay que escanear las props recursivamente. Y toda imagen necesita su hermano `_blur.jpg`, que el
+// kit pide en runtime (el pre-vuelo BLUR del farm aborta si falta).
+const imgsEnProps = new Set();
+const scan = (v) => {
+  if (typeof v === "string") { if (/^img\/.+\.(png|jpe?g)$/i.test(v)) imgsEnProps.add(v); return; }
+  if (Array.isArray(v)) return v.forEach(scan);
+  if (v && typeof v === "object") return Object.values(v).forEach(scan);
+};
+for (const b of beats) scan(b.props);
+for (const o of ovPlan) scan(o.props);
+const faltanImg = [];
+const blurs = new Set(); // ⚠ set aparte: agregar el _blur al set que estoy recorriendo lo hacía
+                         // buscar `_blur_blur.jpg` en la vuelta siguiente
+for (const im of imgsEnProps) {
+  if (!fs.existsSync(`public/${im}`)) faltanImg.push(im);
+  const blur = im.replace(/\.(png|jpe?g)$/i, "_blur.jpg");
+  if (fs.existsSync(`public/${blur}`)) blurs.add(blur);
+  else faltanImg.push(blur);
+}
+for (const b of blurs) imgsEnProps.add(b);
+if (faltanImg.length) { console.log(`\n⛔ FALTAN imágenes de props:`); faltanImg.forEach((m) => console.log("   " + m)); process.exit(1); }
+
+const assets = [...clipsUsed, ...imgsEnProps, ...usedSfx].sort();
 fs.writeFileSync(`@_${SLUG}_assets.txt`, assets.join("\n") + "\n");
 
 console.log(`cues ${cues.length} · sfx ${sfxCues.length} · ventanas avatar ${windows.length}`);

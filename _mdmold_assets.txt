@@ -45,6 +45,12 @@ broll/mdmold_h46_gauge.mp4
 broll/mdmold_h47_softwall.mp4
 broll/mdmold_h48_truck.mp4
 broll/mdmold_h49_kit.mp4
+img/mdmold_h07_toothbrush.png
+img/mdmold_h07_toothbrush_blur.jpg
+img/mdmold_h15_cutcaulk.png
+img/mdmold_h15_cutcaulk_blur.jpg
+img/mdmold_h48_truck.png
+img/mdmold_h48_truck_blur.jpg
 sfx/lib/card_slide_1.mp3
 sfx/lib/card_slide_2.mp3
 sfx/lib/card_slide_3.mp3
