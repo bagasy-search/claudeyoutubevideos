@@ -87,7 +87,17 @@ for (let i = 0; i < beats.length; i++) {
   } else if (b.tipo === "componente") {
     const c = b.componente;
     noteImgs(b.props);
-    cues.push({ key, start, dur, el: `(d) => <${c} durationInFrames={d} {...(${jprops(b.props)} as any)} />` });
+    // ⛔ CAMA DE FOTO debajo del componente (regla 2.quater). El ChapterTrailCard pinta su PROPIO
+    // fondo negro opaco, así que envolverlo en MdBed no serviría: la cama va como PROP y el
+    // componente la dibuja debajo de su gradiente. Se le pasa el `_blur.jpg` ya horneado.
+    const props = { ...(b.props || {}) };
+    if (b.bed) {
+      const blur = b.bed.replace(/\.(png|jpg|jpeg)$/i, "_blur.jpg");
+      const use = fs.existsSync(`public/${blur}`) ? blur : b.bed;
+      props.bed = use;
+      noteImgs({ bed: use });
+    }
+    cues.push({ key, start, dur, el: `(d) => <${c} durationInFrames={d} {...(${jprops(props)} as any)} />` });
     addSfx(start, "card_slide", "whoosh_soft", 0.34);
     addSfx(start, "ding_soft", "sparkle", 0.36, 0.5);
   } else if (b.tipo === "movimiento") {
@@ -116,7 +126,15 @@ for (const o of ovPlan) {
   noteImgs(o.props);
   if (FULLSCREEN.has(o.componente)) {
     ovFull.add(o.componente);
-    overlays.push({ key: `ov_${o.ms_in}`, start, dur, el: `(d) => <${o.componente} durationInFrames={d} {...(${jprops(o.props)} as any)} />` });
+    // El QR es el CTA del embudo: no puede quedarse ni medio segundo sobre negro plano mientras
+    // entra. Medido en el 1er render: 0,77 s de negro adentro de la tarjeta. Va con cama de foto,
+    // como PROP (el componente pinta su propio fondo opaco, envolverlo no serviría).
+    const p = { ...(o.props || {}) };
+    if (o.componente === "MdQrCta") {
+      const bed = `img/${SLUG}_h77_wipehands_blur.jpg`;
+      if (fs.existsSync(`public/${bed}`)) { p.bed = bed; noteImgs({ bed }); }
+    }
+    overlays.push({ key: `ov_${o.ms_in}`, start, dur, el: `(d) => <${o.componente} durationInFrames={d} {...(${jprops(p)} as any)} />` });
   } else {
     ovComps.add(o.componente);
     overlays.push({

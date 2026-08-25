@@ -12,11 +12,12 @@ const RED = "#E4322A";
 export const MdQrCta: React.FC<{
   durationInFrames: number;
   image: string;     // "img/mdtank_qrcard.jpg"
+  bed?: string;      // "img/mddrain_h77_wipehands_blur.jpg" — cama de foto (regla 2.quater)
   eyebrow?: string;
   title?: string;
   bullet?: string;
   cta?: string;
-}> = ({ durationInFrames, image, eyebrow = "THE REST OF THE PAGES", title = "Point your camera", bullet, cta }) => {
+}> = ({ durationInFrames, image, bed, eyebrow = "THE REST OF THE PAGES", title = "Point your camera", bullet, cta }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const D = durationInFrames;
@@ -29,6 +30,17 @@ export const MdQrCta: React.FC<{
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#0A0A0C", opacity: out }}>
+      {/* cama de foto: la tarjeta del QR es el CTA del embudo y no puede quedar ni medio segundo
+          sobre negro plano mientras el código entra (medido: 0,77 s de negro en el 1er render). */}
+      {bed ? (
+        <AbsoluteFill style={{ overflow: "hidden" }}>
+          <Img
+            src={staticFile(bed)}
+            style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(0.30) saturate(0.6)", transform: "scale(1.14)" }}
+          />
+          <AbsoluteFill style={{ background: "radial-gradient(86% 76% at 50% 48%, rgba(0,0,0,0.42) 30%, rgba(0,0,0,0.84) 100%)" }} />
+        </AbsoluteFill>
+      ) : null}
       <AbsoluteFill style={{ background: "radial-gradient(64% 60% at 62% 46%, rgba(228,50,42,0.16) 0%, rgba(0,0,0,0) 70%)" }} />
       <AbsoluteFill style={{ background: "radial-gradient(84% 72% at 50% 48%, rgba(0,0,0,0) 42%, rgba(0,0,0,0.66) 100%)" }} />
 

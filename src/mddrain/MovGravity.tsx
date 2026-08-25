@@ -550,15 +550,20 @@ export const MovGravity: React.FC<{ durationInFrames: number }> = ({ durationInF
   });
 
   // ── ACTO 1 · la marca roja se vuelve el caño ────────────────────────────────────────────
-  const seamRot = interpolate(frame, [26, 72], [0, -90], {
+  // ⛔ TIEMPOS COMPRIMIDOS (auditoría del 1er render): con [26,72]/[72,128] el arranque dejaba
+  // 3,17 s de pantalla casi negra con sólo la barra roja — `blackdetect` lo cazó y a ojo se lee
+  // como cuelgue, no como costura. La herencia del Mov 2 (negro + marca roja) se respeta igual:
+  // sigue arrancando ahí, pero el caño empieza a abrirse a los 40 frames en vez de a los 72,
+  // así el tramo muerto baja de ~2,4 s a ~1,3 s.
+  const seamRot = interpolate(frame, [12, 44], [0, -90], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.62, 0, 0.14, 1),
   });
-  const seamX = interpolate(frame, [26, 78], [463, 700], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.5, 0, 0.2, 1) });
-  const seamY = interpolate(frame, [26, 78], [612, 540], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.5, 0, 0.2, 1) });
-  const seamLen = interpolate(frame, [0, 26, 78], [666, 666, 856], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const seamThick = interpolate(frame, [0, 40, 84, 128], [7, 11, 18, 5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const seamOp = interpolate(frame, [0, 8, 108, 168], [0.55, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const pipeOpen = interpolate(frame, [72, 128], [0, 1], {
+  const seamX = interpolate(frame, [12, 50], [463, 700], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.5, 0, 0.2, 1) });
+  const seamY = interpolate(frame, [12, 50], [612, 540], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.5, 0, 0.2, 1) });
+  const seamLen = interpolate(frame, [0, 12, 50], [666, 666, 856], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const seamThick = interpolate(frame, [0, 22, 52, 86], [7, 11, 18, 5], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const seamOp = interpolate(frame, [0, 6, 74, 118], [0.55, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const pipeOpen = interpolate(frame, [40, 86], [0, 1], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.18, 0.86, 0.2, 1),
   });
 
@@ -642,7 +647,9 @@ export const MovGravity: React.FC<{ durationInFrames: number }> = ({ durationInF
 
   // ── LA CAMA BORROSA (hermanos `_blur.jpg` ya horneados: blur 0 en render) ───────────────
   const beds: Array<[number, number, string]> = [
-    [60, A2 + 40, "img/mddrain_h35_clearpipe_blur.jpg"],
+    // adelantada de 60 → 28: la cama entra junto con la apertura del caño, así el arranque
+    // heredado del Mov 2 (negro + marca roja) dura lo justo y no se lee como pantalla muerta.
+    [28, A2 + 40, "img/mddrain_h35_clearpipe_blur.jpg"],
     [A2 - 10, A3 + 40, "img/mddrain_h34_pourstraight_blur.jpg"],
     [A3 - 10, A4 + 40, "img/mddrain_h36_gelbottle_blur.jpg"],
     [A4 - 10, A5 + 40, "img/mddrain_h19_soakwad_blur.jpg"],
