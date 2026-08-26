@@ -1,0 +1,132 @@
+[
+ {
+  "nombre": "mdtank_h102_weeklater",
+  "change": "The man is standing in a bathroom doorway with a small brown glass bottle in one hand and a toilet brush in the other, looking in at the toilet as if arriving to do the job again. Daylight from a window inside the room.",
+  "motion": "he stands still in the doorway and only turns his head a little toward the toilet, both hands stay down at his sides",
+  "causality": "the bottle and the brush stay in the same hands and never change shape or swap places"
+ },
+ {
+  "nombre": "mdtank_h105_slimewipe",
+  "change": "Very close view of a gloved fingertip wiping across a slick dark film on white porcelain and leaving a clean stripe, the film rolling up at the edge of the stripe. Even indoor light.",
+  "motion": "the gloved fingertip stays pressed in one place on the porcelain and only rocks a couple of millimetres",
+  "causality": "the dark film stays exactly as it is except right under the fingertip"
+ },
+ {
+  "nombre": "mdtank_h107_scrub40",
+  "change": "The man is crouched at the toilet scrubbing inside the bowl with a long handled brush, his shoulder working, looking down into the bowl. Small bathroom, tiled floor, overhead light.",
+  "motion": "he holds the brush still down in the bowl with both hands low and only his shoulders move very slightly as he looks down",
+  "causality": "the brush stays in his hands in the same position for the whole take"
+ },
+ {
+  "nombre": "mdtank_h120_septiclid",
+  "change": "The man is standing outside on grass beside a round green plastic lid set flush into the lawn, looking down at it with his hands on his hips. Ordinary daylight, a plain house wall in the background.",
+  "motion": "he stands still with his hands on his hips and only turns his head slowly to look along the lawn",
+  "causality": "his feet stay planted and the round lid in the grass never moves or changes shape"
+ },
+ {
+  "nombre": "mdtank_h122_aisle",
+  "change": "The man is standing in front of a shelf stacked with rows of plain coloured cleaning bottles, arms folded, looking along the shelf with a flat unimpressed expression. Even overhead light, no text",
+  "motion": "he stands still with his arms folded and only moves his eyes and head slowly along the row of bottles",
+  "causality": "every bottle on the shelf stays exactly where it is and none of them move"
+ },
+ {
+  "nombre": "mdtank_h123_bottlepalm",
+  "change": "Close view of the man's open palm held out flat with a single small brown glass bottle standing upright on it, a plain bathroom wall behind. Daylight from the left.",
+  "motion": "his open palm stays completely still and the small brown bottle stands upright on it without moving",
+  "causality": "the bottle keeps the same size and shape and stays standing in the middle of the palm"
+ },
+ {
+  "nombre": "mdtank_h126_foamwide",
+  "change": "Wide view of an open white toilet with a dry empty bowl, a patch of white foam sitting on one side of the porcelain at the old waterline and the rest of the bowl completely still and clean. Small bathroom, white tile, daylight from a window on the left.",
+  "motion": "the patch of white foam stays where it is and only a few bubbles break on its surface",
+  "causality": "the foam never spreads to the clean porcelain and the bowl itself does not change"
+ },
+ {
+  "nombre": "mdtank_h129_trashcan",
+  "change": "The man is standing over a small plastic bathroom bin with a half full brown glass bottle held out above it, pausing, looking down at the bin. Tiled floor, white tile wall, overhead light.",
+  "motion": "he stands still holding the bottle over the bin and only lowers his eyes to look down at it",
+  "causality": "the bottle stays closed in his hand and never enters the bin"
+ },
+ {
+  "nombre": "mdtank_h135_flushtwice",
+  "change": "Close view down into a white toilet bowl mid flush, the water swirling hard around the sides and dropping away. Even indoor light from above.",
+  "motion": "the water in the bowl swirls gently in place and the level stays where it is",
+  "causality": "the porcelain of the bowl stays completely fixed and only the water surface moves"
+ },
+ {
+  "nombre": "mdtank_h98_foamfade",
+  "change": "Very close view of a patch of white foam on a dark band on dry porcelain, the foam thinning and going flat, most of the bubbles already gone. Even indoor light from above.",
+  "motion": "the thin foam stays in place and a few of the last bubbles break slowly",
+  "causality": "the foam only gets thinner and never grows back"
+ },
+ {
+  "nombre": "mdtank_h103_twobottles",
+  "change": "Close view of two small brown glass bottles standing side by side on a bathroom counter, one full and one nearly empty, the man's hand resting on the counter behind them. White counter, daylight from the left.",
+  "motion": "both bottles stand completely still on the counter and his hand stays flat and motionless behind them",
+  "causality": "neither bottle moves and his fingers stay together and still"
+ },
+ {
+  "nombre": "mdtank_h104_brushhand",
+  "change": "Close view of the man's hand gripping the handle of a white toilet brush held upright in front of a plain bathroom wall, the wet bristles at the top of the frame. Even indoor light.",
+  "motion": "his hand holds the brush upright and completely still, only the wet bristles settle slightly",
+  "causality": "his grip does not change and his fingers stay separate and countable"
+ },
+ {
+  "nombre": "mdtank_h87_diaphragm",
+  "change": "Close view of the man's open palm holding a small grey rubber diaphragm and a plastic valve cap, tilted toward the light so the cracked edge of the rubber shows. Plain wall behind his hand, even indoor light.",
+  "motion": "his open palm stays level and still with the rubber diaphragm resting on it",
+  "causality": "the rubber keeps the same shape and stays in the middle of the palm"
+ },
+ {
+  "nombre": "mdtank_h79_slimebucket",
+  "change": "The man is kneeling on the bathroom floor beside a plain plastic bucket, shaking a yellow rubber glove out over it, dark slime dropping off his fingers into the bucket. The open toilet tank is behind him. Tiled floor, overhead light.",
+  "motion": "the gloved hand stays still over the bucket and only the dark slime drips slowly off it",
+  "causality": "the glove keeps the same shape and the same number of fingers"
+ },
+ {
+  "nombre": "mdtank_h65_twoglasses",
+  "change": "Close view of two plain drinking glasses of clear liquid standing side by side on a bathroom counter, the left one perfectly still and the right one full of fine rising bubbles. The man's hand is just leaving the frame beside them. White tile behind, daylight from the left.",
+  "motion": "both glasses stand completely still on the counter, no hands anywhere in the frame, and only the fine bubbles keep rising in the right one",
+  "causality": "neither glass moves and nothing enters the frame at any point"
+ },
+ {
+  "nombre": "mdtank_h71_rimholes",
+  "change": "Close view up under the rim of a white toilet, the row of small round holes on the underside filling the frame, dark and damp, with a thin dark line running along the channel behind them. Light coming in from below.",
+  "motion": "the view stays fixed on the underside of the rim and a single drop swells slowly at one of the holes",
+  "causality": "the rim and the holes stay completely still and nothing else enters the frame"
+ },
+ {
+  "nombre": "mdtank_h72_tankwall",
+  "change": "Close view down the inside wall of an empty white toilet tank, the porcelain streaked with a dark film and a dried water line partway up. A black rubber flapper sits at the bottom of the frame. Even indoor light from above.",
+  "motion": "the view stays fixed on the inside wall of the tank and nothing moves, no hands enter the frame",
+  "causality": "the wall, the streaks and the flapper all stay exactly as they are"
+ },
+ {
+  "nombre": "mdtank_h131_ringweek",
+  "change": "The man is crouched at a toilet looking down into the bowl at a grey brown band that is clearly back, his jaw set and his mouth flat, one hand loose on the rim. Small bathroom, tiled floor, overhead light.",
+  "motion": "he crouches completely still looking down into the bowl and only blinks, his hands stay out of the frame"
+ },
+ {
+  "nombre": "mdtank_h111_brushrinse",
+  "change": "The man is holding a white toilet brush down inside a flushing toilet bowl, rinsing it in the moving water, looking down at it. Small bathroom, tiled floor, overhead light.",
+  "motion": "he holds the brush still down in the bowl and only looks down at it, his head barely moves",
+  "causality": "the brush stays in his hand in the same place for the whole take"
+ },
+ {
+  "nombre": "mdtank_h64_clockmorning",
+  "change": "The man is standing in a small bathroom in the early morning in an old t-shirt, one hand flat on the counter, looking toward the toilet across the room with a neutral face. Cool daylight coming in low through a small window. White tile.",
+  "motion": "he stands completely still with his hand flat on the counter and only blinks while he looks toward the toilet"
+ },
+ {
+  "nombre": "mdtank_h134_tankfill",
+  "change": "Close view down into an open toilet tank as water rises inside it, the float on the fill valve lifting with the surface, the walls wet. Even indoor light from above.",
+  "motion": "the water inside the tank stays at the same level and only the surface ripples very slightly",
+  "causality": "the float and the fill valve stay exactly where they are and do not change shape"
+ },
+ {
+  "nombre": "mdtank_h67_bottleshelf",
+  "change": "The man is reaching up to a bathroom shelf and taking down a small brown glass bottle from between a row of plain white bottles, looking at what he is doing. White tile wall behind the shelf, daylight from the left.",
+  "motion": "his hand rests on the brown bottle on the shelf without pulling it out, and nothing else moves",
+  "causality": "every bottle on the shelf keeps its place, its shape and its size"
+ }
+]

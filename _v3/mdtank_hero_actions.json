@@ -1,0 +1,279 @@
+[
+ {
+  "nombre": "mdtank_h01_fizzwatch",
+  "change": "The man is crouched down beside a white toilet in a small ordinary bathroom, leaning over the open bowl and looking down into it. The bowl is empty of water and dry, and there is a band of white foam sitting on the porcelain where the waterline used to be. Plain white wall tile behind the toilet, a folded towel on a rail, daylight from a small window on the left.",
+  "motion": "he leans a few inches closer to the bowl and tilts his head to watch the foam, then blinks and keeps looking down"
+ },
+ {
+  "nombre": "mdtank_h02_pourring",
+  "change": "Close view of the man's hand tipping a small brown glass bottle with a plain white label over the inside wall of a dry white toilet bowl, the clear liquid running down the porcelain onto a grey-brown band at the waterline. His other hand rests on the rim. His face is partly visible above, looking down at what he is doing.",
+  "motion": "he tips the bottle a little further and moves his hand slowly along the curve of the bowl so the liquid keeps running down the same band",
+  "causality": "the liquid only wets the porcelain where the mouth of the bottle passes over it, the rest of the bowl stays dry"
+ },
+ {
+  "nombre": "mdtank_h03_cabinet",
+  "change": "The man is kneeling on the bathroom floor in front of the open cabinet under the sink, one door swung wide, reaching into the back of the shelf. Inside there are a few plain plastic bottles, a folded rag and a roll of toilet paper. Small bathroom, white tile, a bath mat under his knees.",
+  "motion": "he reaches deeper into the back of the cabinet and pulls his arm slowly out again, still looking into the shelf"
+ },
+ {
+  "nombre": "mdtank_h04_oldbottle",
+  "change": "Close view of the man holding up a small brown glass bottle with a curled, blank white label at chest height, turning it in his fingers and looking at it with a flat expression. There is a dried ring of dark residue on the shoulder of the bottle. He is standing in a small bathroom, white wall behind him.",
+  "motion": "he turns the bottle slowly a quarter turn in his fingers, looks at the dried ring on it, then lowers his hand a few inches"
+ },
+ {
+  "nombre": "mdtank_h05_dumpbottle",
+  "change": "The man is standing over an open toilet, holding a small brown glass bottle upside down over the bowl with a loose careless grip, emptying it. The water in the bowl is clear. He is looking off to the side, not at the bowl, as if getting rid of something rather than cleaning. Small bathroom, white tile, daylight from the left.",
+  "motion": "he shakes the upside down bottle twice to get the last of it out and then straightens up",
+  "causality": "the liquid leaves the bottle only while it is tipped over the bowl and the level inside the bottle drops as it empties"
+ },
+ {
+  "nombre": "mdtank_h06_lightswitch",
+  "change": "The man is standing in the bathroom doorway at night with one hand flat on the light switch on the wall, half turned away as if leaving. The bathroom behind him is lit by a single bare bulb overhead, the toilet visible at the back of the room. Dark hallway behind his shoulder.",
+  "motion": "he pushes the switch down with his fingers and turns his head away toward the hallway"
+ },
+ {
+  "nombre": "mdtank_h07_morninglook",
+  "change": "The man is standing over an open toilet in the morning, looking straight down into the bowl with his eyebrows raised and his mouth slightly open, surprised. He is in an old t-shirt, hair not combed. Small bathroom, white tile, cool daylight from a window on the left.",
+  "motion": "he leans forward from the waist to look further into the bowl, then straightens up again slowly, still looking down"
+ },
+ {
+  "nombre": "mdtank_h08_ringbefore",
+  "change": "Close view of the inside of a white toilet bowl with a wide grey-brown band running around it at the waterline, the man's index finger pointing at the band a few inches away from it. The porcelain above and below the band is clean and white. Ordinary indoor light from overhead.",
+  "motion": "he moves his pointing finger slowly along the curve of the band, following it around the bowl"
+ },
+ {
+  "nombre": "mdtank_h09_pumice",
+  "change": "The man is crouched beside the toilet holding a grey pumice stone on a short white handle in one hand, resting his forearm on the rim, looking at the stone with an unimpressed expression. The bowl below him has a grey-brown band at the waterline. Small bathroom, white tile.",
+  "motion": "he turns the pumice stone over in his hand, looks at the worn face of it, and lets his hand drop toward the bowl"
+ },
+ {
+  "nombre": "mdtank_h10_threebottles",
+  "change": "The man is standing at a bathroom sink with three plain cleaning bottles lined up on the counter in front of him, one blue plastic bottle, one squat gel bottle with an angled neck, and one small brown glass bottle. He is looking down at the row with his arms loose at his sides. White counter, mirror behind him showing part of his shoulder.",
+  "motion": "he picks up the blue bottle, looks at it for a moment, and sets it back down in the row"
+ },
+ {
+  "nombre": "mdtank_h11_customerbath",
+  "change": "The man is standing in the middle of a stranger's small bathroom with his hands on his hips, mid explanation, looking toward the toilet and talking. He is wearing a checked shirt with the sleeves rolled. There is a toolbag on the floor by the door and a beige bath mat. Daylight from a frosted window.",
+  "motion": "he lifts one hand off his hip and gestures once toward the toilet while he keeps talking, then puts the hand back"
+ },
+ {
+  "nombre": "mdtank_h12_valve",
+  "change": "Close view of the man's hand reaching down low behind a white toilet to a small oval chrome shutoff valve on a pipe near the floor, his fingers closed around the handle. The tiled floor and the base of the toilet fill the rest of the frame. Ordinary indoor light.",
+  "motion": "he turns the oval handle clockwise a quarter turn, stops, and adjusts his grip to turn it a little further",
+  "causality": "only the small oval handle rotates, the pipe and the toilet behind it stay completely still"
+ },
+ {
+  "nombre": "mdtank_h13_flushhold",
+  "change": "Close view of the man's hand pressing the chrome flush lever on the side of a white toilet tank all the way down and holding it there, his thumb on top of the lever. His other hand rests on the closed tank lid. Small bathroom, white tile.",
+  "motion": "he presses the lever down and holds it, his knuckles tightening slightly, without letting it come back up"
+ },
+ {
+  "nombre": "mdtank_h14_drybowl",
+  "change": "The man is standing over a white toilet looking down into a completely empty dry bowl, no water at all, the drain opening visible at the bottom and a grey-brown band around the porcelain higher up. He has one hand on the rim. Small bathroom, daylight from the left.",
+  "motion": "he leans over the empty bowl and turns his head slightly to look around the inside of it"
+ },
+ {
+  "nombre": "mdtank_h15_pourtank",
+  "change": "The man is leaning over an open toilet tank with the lid off, pouring from a small brown glass bottle into the water inside the tank. The inside of the tank shows a black rubber flapper at the bottom and a tall plastic overflow tube. Small bathroom, white tile, overhead light.",
+  "motion": "he tips the bottle steadily over the open tank and watches the stream go in, then lifts the bottle upright again",
+  "causality": "the level in the bottle drops while it is tipped and the stream stops the moment he brings it upright"
+ },
+ {
+  "nombre": "mdtank_h16_squirtrim",
+  "change": "The man is crouched low beside the toilet with his cheek almost at the level of the rim, holding a small brown glass bottle upside down and pushing its mouth up under the underside of the rim of the bowl. His other hand steadies the seat, which is lifted. Small bathroom, tiled floor.",
+  "motion": "he squeezes the bottle and moves it slowly sideways along the underside of the rim, keeping the mouth pressed up against it",
+  "causality": "liquid runs out only where the mouth of the bottle touches the underside of the rim and drips straight down into the bowl"
+ },
+ {
+  "nombre": "mdtank_h17_watchwait",
+  "change": "The man is standing back a step from the toilet with his arms folded across his chest, looking down at the bowl and waiting. The bowl is dry with foam sitting on the porcelain. Small bathroom, white tile, a towel on a rail behind him.",
+  "motion": "he shifts his weight from one foot to the other and keeps looking down at the bowl, then glances at his wrist"
+ },
+ {
+  "nombre": "mdtank_h18_brushrim",
+  "change": "The man is crouched beside the toilet pushing the head of a white bristled toilet brush up under the rim of the dry bowl, his forearm braced against the seat. His face is above, looking down into the bowl. Small bathroom, tiled floor, overhead light.",
+  "motion": "he works the brush head back and forth twice under the rim, moving it a few inches along as he goes",
+  "causality": "the bristles stay pressed against the underside of the rim through the whole movement"
+ },
+ {
+  "nombre": "mdtank_h19_brushtank",
+  "change": "The man is leaning over an open toilet tank with the lid off, running a brush down the inside wall of the empty tank. The bottom of the tank and the black rubber flapper are visible below his hand. Small bathroom, white tile.",
+  "motion": "he draws the brush down the inside wall of the tank in one long stroke and then lifts it clear",
+  "causality": "the bristles stay in contact with the tank wall for the whole stroke"
+ },
+ {
+  "nombre": "mdtank_h20_valveon",
+  "change": "Close view of the man's hand down low behind the toilet turning the small oval chrome shutoff valve back the other way, fingers wrapped around the handle, the flexible supply line curving up out of frame. Tiled floor, ordinary indoor light.",
+  "motion": "he turns the oval handle counterclockwise in two short movements and then takes his hand off it"
+ },
+ {
+  "nombre": "mdtank_h21_cutfizz",
+  "change": "Very close view of the man's thumb held up in front of him with a small shallow cut across the pad of it and a patch of white foam sitting on the cut. His other hand holds a small brown glass bottle just below. Plain kitchen counter behind, even indoor light.",
+  "motion": "he turns his thumb slightly toward himself to look at the foam on the cut, holding very still"
+ },
+ {
+  "nombre": "mdtank_h22_bottleup",
+  "change": "The man is standing in a small bathroom holding a small brown glass bottle with a plain white label up at chest height in one hand, looking at it thoughtfully as he talks. His other hand is open, palm up, mid gesture. White tile behind him, daylight from the left.",
+  "motion": "he lifts the bottle an inch higher and turns it slightly toward himself, still talking, then lowers it again"
+ },
+ {
+  "nombre": "mdtank_h23_saucertest",
+  "change": "The man is standing at a bathroom sink dripping liquid from a small brown glass bottle onto a plain white saucer that has a smear of grey-brown residue on it. Small bubbles are rising on the smear. He is leaning over the saucer, watching. White counter, even indoor light.",
+  "motion": "he squeezes two more drops onto the smear and leans a little closer to watch the bubbles come up",
+  "causality": "bubbles appear only on the smear where the drops land, the clean part of the saucer stays still"
+ },
+ {
+  "nombre": "mdtank_h24_sinkdrain",
+  "change": "Close view of the man's hand pouring a little clear liquid from a small brown glass bottle around the chrome rim of a bathroom sink drain, with foam rising out of the drain opening. His face is above at the top of the frame, looking down.",
+  "motion": "he pours a small amount and lifts the bottle away, then watches the foam rise up out of the drain",
+  "causality": "the foam only starts after the liquid reaches the drain opening"
+ },
+ {
+  "nombre": "mdtank_h25_phonerim",
+  "change": "The man is crouched on the bathroom floor with his shoulder almost on the tiles, holding a phone flat with its light on and pushing it up under the rim of the toilet bowl, his head turned to look at the screen. The seat is lifted. Small bathroom, tiled floor, overhead light.",
+  "motion": "he pushes the phone a little further under the rim and tilts his head to see the screen better"
+ },
+ {
+  "nombre": "mdtank_h26_lidoff",
+  "change": "The man is standing over a white toilet with both hands under the edges of the heavy porcelain tank lid, lifting it straight up off the tank. The open tank below shows dark water. Small bathroom, white tile, daylight from a window on the left.",
+  "motion": "he lifts the lid a few inches straight up and holds it steady with both hands",
+  "causality": "the lid stays flat and level in both hands and the tank below it does not move"
+ },
+ {
+  "nombre": "mdtank_h27_lidfloor",
+  "change": "The man is crouched down setting a heavy white porcelain tank lid flat on a folded towel on the bathroom floor beside the toilet, both hands still on it. Tiled floor, the base of the toilet behind the lid.",
+  "motion": "he lowers the lid the last few inches onto the towel and slides his hands out from under the edges"
+ },
+ {
+  "nombre": "mdtank_h28_tankwater",
+  "change": "The man is leaning over an open toilet tank looking straight down at the water inside it. The water is slightly cloudy and there is a dark line around the inside walls. A tall plastic overflow tube stands in the middle. Small bathroom, overhead light.",
+  "motion": "he leans further over the open tank and turns his head slowly from one side to the other, looking along the inside walls"
+ },
+ {
+  "nombre": "mdtank_h29_boltheads",
+  "change": "Close view down into an empty toilet tank with the man's index finger pointing at a dark stained bolt head in the bottom corner of the tank, the porcelain around it discoloured. The black rubber flapper is off to one side. Even indoor light from above.",
+  "motion": "he moves his finger from one bolt head across to the other one in the far corner"
+ },
+ {
+  "nombre": "mdtank_h30_flapper",
+  "change": "Close view of the man's hand reaching down into an empty toilet tank and pinching the edge of the black rubber flapper at the bottom between his thumb and finger. The chain and the plastic overflow tube are beside his wrist. Even indoor light.",
+  "motion": "he lifts the edge of the rubber flapper a couple of centimetres and lets it settle back down flat",
+  "causality": "only the edge he is pinching lifts, the rest of the flapper stays seated in the opening"
+ },
+ {
+  "nombre": "mdtank_h31_noreaction",
+  "change": "The man is crouched beside a dry toilet bowl with a small brown glass bottle in his hand, looking down at a pale chalky mark on the porcelain where nothing is happening, no foam at all. His mouth is set flat. Small bathroom, tiled floor, overhead light.",
+  "motion": "he waits, looks at the dry chalky mark, then glances at the bottle in his hand and back at the mark"
+ },
+ {
+  "nombre": "mdtank_h32_fingernail",
+  "change": "Very close view of the man's thumbnail running along a hard white chalky ridge that stands out from the inside wall of a dry white toilet bowl. The rest of the porcelain is smooth and clean. Even indoor light from above.",
+  "motion": "he drags his thumbnail slowly along the chalky ridge and stops where it catches",
+  "causality": "the ridge stays exactly where it is, only his nail moves along it"
+ },
+ {
+  "nombre": "mdtank_h33_vinegarjug",
+  "change": "The man is standing at a bathroom sink holding a plain clear plastic jug of white vinegar in one hand and a small brown glass bottle in the other, holding them apart at chest height and looking from one to the other. White counter, mirror behind his shoulder.",
+  "motion": "he lifts the jug in one hand a little higher, looks at it, then looks across at the brown bottle in his other hand"
+ },
+ {
+  "nombre": "mdtank_h34_ironstreak",
+  "change": "Close view of the back inside wall of a white toilet bowl with a rust orange streak running down it from under the rim, and the man's finger tracing the line of the streak from above. Dry porcelain, even indoor light.",
+  "motion": "he traces his finger slowly down the length of the orange streak without touching the porcelain"
+ },
+ {
+  "nombre": "mdtank_h35_gloveslime",
+  "change": "The man is kneeling beside an open toilet tank with a yellow rubber glove on one hand, lifting a handful of dark slick slime out of the bottom of the tank, his face turned slightly away with a grimace. Small bathroom, tiled floor, overhead light.",
+  "motion": "he lifts the gloved hand slowly up out of the tank with the dark slime hanging off his fingers",
+  "causality": "the slime hangs and stretches from the glove and stays attached to it as the hand rises"
+ },
+ {
+  "nombre": "mdtank_h36_slimeclose",
+  "change": "Very close view of a yellow rubber glove held over an open toilet tank with dark grey and purple slime spread across the fingers and dripping slowly back down into the water below. Even indoor light from above.",
+  "motion": "a thick drop of the dark slime stretches off the glove and falls back down into the tank"
+ },
+ {
+  "nombre": "mdtank_h37_plunger",
+  "change": "The man is standing next to a toilet with a black rubber plunger hanging from one hand, his shoulders down, looking at the bowl with a tired defeated expression. There is a bucket beside his foot. Small bathroom, tiled floor, overhead light.",
+  "motion": "he lets out a breath, shifts the plunger to his other hand and keeps looking down at the bowl"
+ },
+ {
+  "nombre": "mdtank_h38_tanklook",
+  "change": "The man is crouched at the side of a toilet with the tank lid off, holding a small work light in one hand and shining it down into the open tank, his head close to the opening. Small bathroom, white tile, tiled floor.",
+  "motion": "he moves the light slowly across the opening of the tank and leans his head after it"
+ },
+ {
+  "nombre": "mdtank_h39_bluetablet",
+  "change": "The man is holding a round blue cleaning tablet between his thumb and finger out over an open toilet tank, holding it well away from himself with a disapproving look on his face. The dark water in the tank is below his hand. Small bathroom, overhead light.",
+  "motion": "he turns the blue tablet over between his fingers, shakes his head once and pulls his hand back away from the tank"
+ },
+ {
+  "nombre": "mdtank_h40_deadflapper",
+  "change": "Close view of the man's open palm holding a warped black rubber flapper that has gone soft and misshapen at the edges, a short brass chain hanging off it. He is standing in a small bathroom, white tile behind his hand.",
+  "motion": "he tilts his palm slowly so the warped rubber flapper leans over and the chain slides across his hand",
+  "causality": "the flapper keeps the same shape the whole time and only slides on his palm"
+ },
+ {
+  "nombre": "mdtank_h41_washers",
+  "change": "Close view of the man's open palm with four small black rubber washers of different sizes sitting on it, some cracked at the edge. His other hand is just below, holding a small screwdriver. Even indoor light, plain wall behind.",
+  "motion": "he pushes one of the rubber washers around his palm with the tip of his finger and turns it over"
+ },
+ {
+  "nombre": "mdtank_h42_sticker",
+  "change": "The man is leaning over the open tank of a toilet with his index finger pressed against a small pale rectangular sticker on the inside wall of the tank, mostly covered by his fingertip, looking at it closely. The water level is below. Small bathroom, overhead light, no text",
+  "motion": "he presses his fingertip against the pale sticker and leans in closer to look at it"
+ },
+ {
+  "nombre": "mdtank_h43_glassbubbles",
+  "change": "Close view of a plain drinking glass of clear liquid standing on a closed white toilet tank lid, with fine bubbles rising through the liquid, and the man's hand just setting it down and letting go. Small bathroom, white tile behind, daylight from the left.",
+  "motion": "he sets the glass down and takes his fingers away from it, and the bubbles keep rising through the liquid",
+  "causality": "the glass stays standing still on the lid once his hand leaves it"
+ },
+ {
+  "nombre": "mdtank_h44_fizzstop",
+  "change": "The man is crouched very close to a dry toilet bowl with his face near the porcelain, looking at a patch of foam that has gone flat and thin on the grey-brown band, no bubbles left. His expression is neutral and attentive. Small bathroom, overhead light.",
+  "motion": "he stays low and keeps watching the flat foam, then blinks and lifts his head a little"
+ },
+ {
+  "nombre": "mdtank_h45_calendar",
+  "change": "The man is standing in a hallway tapping one finger on a plain paper wall calendar hanging by a nail, looking at the grid of squares. Painted wall, a light switch beside the calendar, daylight from the side, no text",
+  "motion": "he taps the calendar twice with his fingertip and then slides his finger sideways across a row of squares"
+ },
+ {
+  "nombre": "mdtank_h46_brushpress",
+  "change": "Close view of a white bristled toilet brush pressed against the grey-brown band on the inside of a dry white toilet bowl, the bristles splayed against the porcelain, the man's hand on the handle above. Even indoor light from above.",
+  "motion": "he pushes the brush along the band in a short firm stroke, the bristles bending against the porcelain",
+  "causality": "the bristles stay pressed on the band for the whole stroke and the band lightens only where they pass"
+ },
+ {
+  "nombre": "mdtank_h47_gloves",
+  "change": "The man is standing in a small bathroom pulling a yellow rubber glove onto his right hand, the cuff halfway up his forearm, looking down at what he is doing. The toilet is behind him with the seat lifted. White tile, daylight from the left.",
+  "motion": "he pulls the glove cuff the rest of the way up his forearm and flexes his fingers inside it once"
+ },
+ {
+  "nombre": "mdtank_h48_nomix",
+  "change": "The man is standing in a small bathroom holding a small brown glass bottle out to one side in his right hand and a white plastic bleach jug out to the other side in his left, arms wide apart, shaking his head. White tile behind him, tiled floor.",
+  "motion": "he moves both hands further apart from each other and shakes his head once, keeping both containers upright"
+ },
+ {
+  "nombre": "mdtank_h49_windowsill",
+  "change": "The man is standing at a window holding up a clear plastic spray bottle full of clear liquid against the daylight, looking through it with one eye slightly narrowed. Dusty windowsill behind his hand, plain painted wall.",
+  "motion": "he turns the clear spray bottle slowly in the daylight and lowers it a little, still looking at it"
+ },
+ {
+  "nombre": "mdtank_h50_markerbrush",
+  "change": "Close view of the man's hands holding a white toilet brush by its handle and writing on the handle with a black marker, the cap of the marker held in his teeth is not visible, just his two hands and the brush over a plain bathroom counter. Even indoor light, no text",
+  "motion": "he draws the marker tip along the handle in a short stroke and then turns the handle slightly in his other hand"
+ },
+ {
+  "nombre": "mdtank_h51_tapesheet",
+  "change": "The man is crouched at the open cabinet under a bathroom sink pressing a plain sheet of white paper flat against the inside of the cabinet door with one hand and holding a strip of tape in the other. Pipes and a couple of plastic bottles visible inside the cabinet. Even indoor light, no text",
+  "motion": "he presses the top corner of the sheet flat against the door and smooths his hand down across it",
+  "causality": "the sheet stays flat against the door where his hand has already pressed it"
+ },
+ {
+  "nombre": "mdtank_h52_donelook",
+  "change": "The man is standing back from a clean white toilet with the lid closed and the seat down, arms folded, looking at it with a small satisfied nod. A brown glass bottle and a toilet brush stand on the floor by the base. Small tidy bathroom, white tile, daylight from a window on the left.",
+  "motion": "he nods once at the toilet, unfolds his arms and lets his hands drop to his sides"
+ }
+]

@@ -1,0 +1,4973 @@
+{
+ "beats": [
+  {
+   "ms_in": 0,
+   "ms_out": 3000,
+   "tipo": "componente",
+   "componente": "HookCaption",
+   "sec": "hook",
+   "avatar": "hidden",
+   "props": {
+    "words": [
+     {
+      "text": "The foam"
+     },
+     {
+      "text": "is not"
+     },
+     {
+      "text": "CLEANING",
+      "boxed": true
+     }
+    ],
+    "sub": "it is something defending itself"
+   }
+  },
+  {
+   "ms_in": 3000,
+   "ms_out": 5100,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 5100,
+   "ms_out": 6200,
+   "tipo": "clip",
+   "clip": "mdtank_h53_mapfinger",
+   "startFrom": 29,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 6200,
+   "ms_out": 7000,
+   "tipo": "clip",
+   "clip": "mdtank_h125_scrubwrong",
+   "startFrom": 29,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 7000,
+   "ms_out": 8395,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 8395,
+   "ms_out": 10795,
+   "tipo": "clip",
+   "clip": "mdtank_h127_lookup",
+   "startFrom": 29,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 10795,
+   "ms_out": 12795,
+   "tipo": "clip",
+   "clip": "mdtank_h149_bowlpoint",
+   "startFrom": 29,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 12795,
+   "ms_out": 13340,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 13340,
+   "ms_out": 16740,
+   "tipo": "componente",
+   "componente": "HookCaption",
+   "sec": "hook",
+   "avatar": "hidden",
+   "props": {
+    "words": [
+     {
+      "text": "The foam"
+     },
+     {
+      "text": "is a"
+     },
+     {
+      "text": "MAP",
+      "boxed": true
+     }
+    ],
+    "sub": "where it fizzes, something is alive"
+   }
+  },
+  {
+   "ms_in": 16740,
+   "ms_out": 18840,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 18840,
+   "ms_out": 19740,
+   "tipo": "clip",
+   "clip": "mdtank_h53_mapfinger",
+   "startFrom": 58,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 19740,
+   "ms_out": 21340,
+   "tipo": "clip",
+   "clip": "mdtank_h125_scrubwrong",
+   "startFrom": 58,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 21340,
+   "ms_out": 21981,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 21981,
+   "ms_out": 22981,
+   "tipo": "clip",
+   "clip": "mdtank_h127_lookup",
+   "startFrom": 58,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 22981,
+   "ms_out": 25181,
+   "tipo": "clip",
+   "clip": "mdtank_h149_bowlpoint",
+   "startFrom": 58,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 25181,
+   "ms_out": 26244,
+   "tipo": "avatar",
+   "sec": "hook",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 26244,
+   "ms_out": 29244,
+   "tipo": "clip",
+   "clip": "mdtank_h150_foamlean",
+   "startFrom": 29,
+   "sec": "hook",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 29244,
+   "ms_out": 30444,
+   "tipo": "clip",
+   "clip": "mdtank_h54_shelfclear",
+   "startFrom": 29,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 30444,
+   "ms_out": 31458,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 31458,
+   "ms_out": 32258,
+   "tipo": "clip",
+   "clip": "mdtank_h55_acidtell",
+   "startFrom": 29,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 32258,
+   "ms_out": 32560,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 32560,
+   "ms_out": 35560,
+   "tipo": "clip",
+   "clip": "mdtank_h03_cabinet",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 35560,
+   "ms_out": 36194.4,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 36194.4,
+   "ms_out": 36894.4,
+   "tipo": "clip",
+   "clip": "mdtank_h130_gelsqueeze",
+   "startFrom": 29,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 36894.4,
+   "ms_out": 37794.4,
+   "tipo": "clip",
+   "clip": "mdtank_h131_ringweek",
+   "startFrom": 29,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 37794.4,
+   "ms_out": 38000,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 38000,
+   "ms_out": 41400,
+   "tipo": "clip",
+   "clip": "mdtank_h04_oldbottle",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 41400,
+   "ms_out": 43225.2,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 43225.2,
+   "ms_out": 46025.2,
+   "tipo": "clip",
+   "clip": "mdtank_h132_notepad",
+   "startFrom": 29,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 46025.2,
+   "ms_out": 47225.2,
+   "tipo": "clip",
+   "clip": "mdtank_h54_shelfclear",
+   "startFrom": 58,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 47225.2,
+   "ms_out": 47858.2,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 47858.2,
+   "ms_out": 48420,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 48420,
+   "ms_out": 51220,
+   "tipo": "clip",
+   "clip": "mdtank_h05_dumpbottle",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 51220,
+   "ms_out": 52900,
+   "tipo": "clip",
+   "clip": "mdtank_h06_lightswitch",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 52900,
+   "ms_out": 55080,
+   "tipo": "clip",
+   "clip": "mdtank_h07_morninglook",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 55080,
+   "ms_out": 57056,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 57056,
+   "ms_out": 58856,
+   "tipo": "clip",
+   "clip": "mdtank_h128_expiredlabel",
+   "startFrom": 29,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 58856,
+   "ms_out": 62680,
+   "tipo": "clip",
+   "clip": "mdtank_h130_gelsqueeze",
+   "startFrom": 4,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 62680,
+   "ms_out": 65280,
+   "tipo": "clip",
+   "clip": "mdtank_h08_ringbefore",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 65280,
+   "ms_out": 67340,
+   "tipo": "clip",
+   "clip": "mdtank_h10_threebottles",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 67340,
+   "ms_out": 67840,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 67840,
+   "ms_out": 70240,
+   "tipo": "clip",
+   "clip": "mdtank_h09_pumice",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 70240,
+   "ms_out": 72340,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 72340,
+   "ms_out": 73340,
+   "tipo": "clip",
+   "clip": "mdtank_h131_ringweek",
+   "startFrom": 58,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 73340,
+   "ms_out": 76740,
+   "tipo": "clip",
+   "clip": "mdtank_h132_notepad",
+   "startFrom": 21,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 76740,
+   "ms_out": 78119,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 78119,
+   "ms_out": 79019,
+   "tipo": "clip",
+   "clip": "mdtank_h54_shelfclear",
+   "startFrom": 87,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 79019,
+   "ms_out": 80519,
+   "tipo": "clip",
+   "clip": "mdtank_h55_acidtell",
+   "startFrom": 58,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 80519,
+   "ms_out": 81319,
+   "tipo": "clip",
+   "clip": "mdtank_h128_expiredlabel",
+   "startFrom": 58,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 81319,
+   "ms_out": 83071,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 83071,
+   "ms_out": 84971,
+   "tipo": "clip",
+   "clip": "mdtank_h130_gelsqueeze",
+   "startFrom": 14,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 84971,
+   "ms_out": 86000,
+   "tipo": "clip",
+   "clip": "mdtank_h131_ringweek",
+   "startFrom": 87,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 86000,
+   "ms_out": 89200,
+   "tipo": "clip",
+   "clip": "mdtank_h11_customerbath",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 89200,
+   "ms_out": 91300,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 91300,
+   "ms_out": 96100,
+   "tipo": "clip",
+   "clip": "mdtank_h132_notepad",
+   "startFrom": 0,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 96100,
+   "ms_out": 96900,
+   "tipo": "clip",
+   "clip": "mdtank_h54_shelfclear",
+   "startFrom": 17,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 96900,
+   "ms_out": 97600,
+   "tipo": "clip",
+   "clip": "mdtank_h55_acidtell",
+   "startFrom": 87,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 97600,
+   "ms_out": 98598,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 98598,
+   "ms_out": 99598,
+   "tipo": "clip",
+   "clip": "mdtank_h128_expiredlabel",
+   "startFrom": 87,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 99598,
+   "ms_out": 102198,
+   "tipo": "clip",
+   "clip": "mdtank_h130_gelsqueeze",
+   "startFrom": 4,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 102198,
+   "ms_out": 103618,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 103618,
+   "ms_out": 106818,
+   "tipo": "clip",
+   "clip": "mdtank_h131_ringweek",
+   "startFrom": 32,
+   "sec": "story",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 106818,
+   "ms_out": 106980,
+   "tipo": "avatar",
+   "sec": "story",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 106980,
+   "ms_out": 110780,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "give",
+   "avatar": "hidden",
+   "props": {
+    "number": "1",
+    "title": "THE WHOLE FIX",
+    "sub": "in ninety seconds, then you can go"
+   }
+  },
+  {
+   "ms_in": 110780,
+   "ms_out": 112880,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 112880,
+   "ms_out": 115080,
+   "tipo": "clip",
+   "clip": "mdtank_h56_watchwait",
+   "startFrom": 29,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 115080,
+   "ms_out": 115980,
+   "tipo": "clip",
+   "clip": "mdtank_h133_valvefind",
+   "startFrom": 29,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 115980,
+   "ms_out": 117724,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 117724,
+   "ms_out": 119340,
+   "tipo": "clip",
+   "clip": "mdtank_h134_tankfill",
+   "startFrom": 29,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 119340,
+   "ms_out": 122340,
+   "tipo": "clip",
+   "clip": "mdtank_h12_valve",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 122340,
+   "ms_out": 122792.4,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 122792.4,
+   "ms_out": 124080,
+   "tipo": "clip",
+   "clip": "mdtank_h136_pourcup",
+   "startFrom": 29,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 124080,
+   "ms_out": 126480,
+   "tipo": "clip",
+   "clip": "mdtank_h13_flushhold",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 126480,
+   "ms_out": 127040,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 127040,
+   "ms_out": 130040,
+   "tipo": "clip",
+   "clip": "mdtank_h14_drybowl",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 130040,
+   "ms_out": 132140,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 132140,
+   "ms_out": 133240,
+   "tipo": "clip",
+   "clip": "mdtank_h137_kneelfloor",
+   "startFrom": 29,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 133240,
+   "ms_out": 134040,
+   "tipo": "clip",
+   "clip": "mdtank_h56_watchwait",
+   "startFrom": 58,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 134040,
+   "ms_out": 135030,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 135030,
+   "ms_out": 137430,
+   "tipo": "clip",
+   "clip": "mdtank_h133_valvefind",
+   "startFrom": 58,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 137430,
+   "ms_out": 138520,
+   "tipo": "clip",
+   "clip": "mdtank_h134_tankfill",
+   "startFrom": 58,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 138520,
+   "ms_out": 142120,
+   "tipo": "componente",
+   "componente": "BottleHero",
+   "sec": "give",
+   "avatar": "hidden",
+   "props": {
+    "eyebrow": "THE WHOLE TOOLKIT",
+    "phrase": "*3%* hydrogen peroxide, the dollar bottle"
+   }
+  },
+  {
+   "ms_in": 142120,
+   "ms_out": 143580,
+   "tipo": "clip",
+   "clip": "mdtank_h15_pourtank",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 143580,
+   "ms_out": 145420,
+   "tipo": "clip",
+   "clip": "mdtank_h02_pourring",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 145420,
+   "ms_out": 145830.8,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 145830.8,
+   "ms_out": 146730.8,
+   "tipo": "clip",
+   "clip": "mdtank_h136_pourcup",
+   "startFrom": 58,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 146730.8,
+   "ms_out": 147000,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 147000,
+   "ms_out": 150400,
+   "tipo": "clip",
+   "clip": "mdtank_h16_squirtrim",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 150400,
+   "ms_out": 150764,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 150764,
+   "ms_out": 151800,
+   "tipo": "clip",
+   "clip": "mdtank_h137_kneelfloor",
+   "startFrom": 58,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 151800,
+   "ms_out": 154400,
+   "tipo": "clip",
+   "clip": "mdtank_h17_watchwait",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 154400,
+   "ms_out": 156500,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 156500,
+   "ms_out": 157900,
+   "tipo": "clip",
+   "clip": "mdtank_h56_watchwait",
+   "startFrom": 2,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 157900,
+   "ms_out": 162800,
+   "tipo": "clip",
+   "clip": "mdtank_h133_valvefind",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 162800,
+   "ms_out": 163782,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 163782,
+   "ms_out": 164482,
+   "tipo": "clip",
+   "clip": "mdtank_h134_tankfill",
+   "startFrom": 87,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 164482,
+   "ms_out": 165382,
+   "tipo": "clip",
+   "clip": "mdtank_h136_pourcup",
+   "startFrom": 87,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 165382,
+   "ms_out": 166540,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 166540,
+   "ms_out": 171740,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "give",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_routine.jpg",
+    "tag": "PAGE 02 · THE COMPLETE METHOD",
+    "title": "The twenty minute routine"
+   }
+  },
+  {
+   "ms_in": 171740,
+   "ms_out": 173020,
+   "tipo": "clip",
+   "clip": "mdtank_h18_brushrim",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 173020,
+   "ms_out": 174520,
+   "tipo": "clip",
+   "clip": "mdtank_h20_valveon",
+   "startFrom": 0,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 174520,
+   "ms_out": 176620,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 176620,
+   "ms_out": 179420,
+   "tipo": "clip",
+   "clip": "mdtank_h137_kneelfloor",
+   "startFrom": 36,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 179420,
+   "ms_out": 180620,
+   "tipo": "clip",
+   "clip": "mdtank_h56_watchwait",
+   "startFrom": 26,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 180620,
+   "ms_out": 182348,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 182348,
+   "ms_out": 185948,
+   "tipo": "clip",
+   "clip": "mdtank_h133_valvefind",
+   "startFrom": 20,
+   "sec": "give",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 185948,
+   "ms_out": 186200,
+   "tipo": "avatar",
+   "sec": "give",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 186200,
+   "ms_out": 190000,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "fizz",
+   "avatar": "hidden",
+   "props": {
+    "number": "2",
+    "title": "WHY IT FOAMS",
+    "sub": "an enzyme two billion years old"
+   }
+  },
+  {
+   "ms_in": 190000,
+   "ms_out": 191378,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 191378,
+   "ms_out": 193178,
+   "tipo": "clip",
+   "clip": "mdtank_h57_bandaid",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 193178,
+   "ms_out": 195300,
+   "tipo": "clip",
+   "clip": "mdtank_h58_cottonball",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 195300,
+   "ms_out": 198900,
+   "tipo": "clip",
+   "clip": "mdtank_h21_cutfizz",
+   "startFrom": 0,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 198900,
+   "ms_out": 201000,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 201000,
+   "ms_out": 202000,
+   "tipo": "clip",
+   "clip": "mdtank_h59_bottlecap",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 202000,
+   "ms_out": 205400,
+   "tipo": "clip",
+   "clip": "mdtank_h60_dropperdrop",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 205400,
+   "ms_out": 206374,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 206374,
+   "ms_out": 207274,
+   "tipo": "clip",
+   "clip": "mdtank_h61_smearfoam",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 207274,
+   "ms_out": 208774,
+   "tipo": "clip",
+   "clip": "mdtank_h62_bubbleclose",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 208774,
+   "ms_out": 209574,
+   "tipo": "clip",
+   "clip": "mdtank_h63_handwash",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 209574,
+   "ms_out": 210921,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 210921,
+   "ms_out": 212821,
+   "tipo": "clip",
+   "clip": "mdtank_h64_clockmorning",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 212821,
+   "ms_out": 217040,
+   "tipo": "clip",
+   "clip": "mdtank_h66_spoonfoam",
+   "startFrom": 12,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 217040,
+   "ms_out": 220040,
+   "tipo": "clip",
+   "clip": "mdtank_h24_sinkdrain",
+   "startFrom": 0,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 220040,
+   "ms_out": 221111.2,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 221111.2,
+   "ms_out": 224160,
+   "tipo": "clip",
+   "clip": "mdtank_h67_bottleshelf",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 224160,
+   "ms_out": 228960,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "fizz",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_catalase.jpg",
+    "tag": "PAGE 03 · THE COMPLETE METHOD",
+    "title": "Why it foams"
+   }
+  },
+  {
+   "ms_in": 228960,
+   "ms_out": 229480,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 229480,
+   "ms_out": 230280,
+   "tipo": "clip",
+   "clip": "mdtank_h68_thumbtest",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 230280,
+   "ms_out": 230960,
+   "tipo": "clip",
+   "clip": "mdtank_h69_lightbulb",
+   "startFrom": 29,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 230960,
+   "ms_out": 234160,
+   "tipo": "componente",
+   "componente": "BigStatReveal",
+   "sec": "fizz",
+   "avatar": "hidden",
+   "props": {
+    "value": 40,
+    "suffix": "M",
+    "eyebrow": "CATALASE, PER SECOND",
+    "label": "molecules torn apart by one enzyme"
+   }
+  },
+  {
+   "ms_in": 234160,
+   "ms_out": 236260,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 236260,
+   "ms_out": 239460,
+   "tipo": "clip",
+   "clip": "mdtank_h57_bandaid",
+   "startFrom": 16,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 239460,
+   "ms_out": 240560,
+   "tipo": "clip",
+   "clip": "mdtank_h58_cottonball",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 240560,
+   "ms_out": 241526,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 241526,
+   "ms_out": 243726,
+   "tipo": "clip",
+   "clip": "mdtank_h59_bottlecap",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 243726,
+   "ms_out": 244626,
+   "tipo": "clip",
+   "clip": "mdtank_h60_dropperdrop",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 244626,
+   "ms_out": 245965,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 245965,
+   "ms_out": 249965,
+   "tipo": "clip",
+   "clip": "mdtank_h61_smearfoam",
+   "startFrom": 14,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 249965,
+   "ms_out": 251265,
+   "tipo": "clip",
+   "clip": "mdtank_h62_bubbleclose",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 251265,
+   "ms_out": 254065,
+   "tipo": "clip",
+   "clip": "mdtank_h63_handwash",
+   "startFrom": 7,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 254065,
+   "ms_out": 255777,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 255777,
+   "ms_out": 256477,
+   "tipo": "clip",
+   "clip": "mdtank_h64_clockmorning",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 256477,
+   "ms_out": 257577,
+   "tipo": "clip",
+   "clip": "mdtank_h66_spoonfoam",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 257577,
+   "ms_out": 258377,
+   "tipo": "clip",
+   "clip": "mdtank_h67_bottleshelf",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 258377,
+   "ms_out": 260462,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 260462,
+   "ms_out": 262862,
+   "tipo": "clip",
+   "clip": "mdtank_h68_thumbtest",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 262862,
+   "ms_out": 264862,
+   "tipo": "clip",
+   "clip": "mdtank_h69_lightbulb",
+   "startFrom": 58,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 264862,
+   "ms_out": 269462,
+   "tipo": "clip",
+   "clip": "mdtank_h57_bandaid",
+   "startFrom": 7,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 269462,
+   "ms_out": 270420,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 270420,
+   "ms_out": 271320,
+   "tipo": "clip",
+   "clip": "mdtank_h58_cottonball",
+   "startFrom": 87,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 271320,
+   "ms_out": 272920,
+   "tipo": "clip",
+   "clip": "mdtank_h59_bottlecap",
+   "startFrom": 7,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 272920,
+   "ms_out": 274251,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 274251,
+   "ms_out": 275251,
+   "tipo": "clip",
+   "clip": "mdtank_h60_dropperdrop",
+   "startFrom": 87,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 275251,
+   "ms_out": 277451,
+   "tipo": "clip",
+   "clip": "mdtank_h61_smearfoam",
+   "startFrom": 21,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 277451,
+   "ms_out": 279204,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 279204,
+   "ms_out": 282204,
+   "tipo": "clip",
+   "clip": "mdtank_h62_bubbleclose",
+   "startFrom": 41,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 282204,
+   "ms_out": 283404,
+   "tipo": "clip",
+   "clip": "mdtank_h63_handwash",
+   "startFrom": 87,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 283404,
+   "ms_out": 285108,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 285108,
+   "ms_out": 285140,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 285140,
+   "ms_out": 289140,
+   "tipo": "componente",
+   "componente": "MythTruth",
+   "sec": "fizz",
+   "avatar": "hidden",
+   "props": {
+    "myth": "The foam means it is working",
+    "truth": "The foam means something is alive there",
+    "mythLabel": "WHAT WE ASSUME",
+    "truthLabel": "WHAT IT IS"
+   }
+  },
+  {
+   "ms_in": 289140,
+   "ms_out": 291720,
+   "tipo": "clip",
+   "clip": "mdtank_h23_saucertest",
+   "startFrom": 0,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 291720,
+   "ms_out": 293628.4,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 293628.4,
+   "ms_out": 295028.4,
+   "tipo": "clip",
+   "clip": "mdtank_h64_clockmorning",
+   "startFrom": 2,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 295028.4,
+   "ms_out": 299060,
+   "tipo": "clip",
+   "clip": "mdtank_h66_spoonfoam",
+   "startFrom": 21,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 299060,
+   "ms_out": 302060,
+   "tipo": "clip",
+   "clip": "mdtank_h22_bottleup",
+   "startFrom": 0,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 302060,
+   "ms_out": 304160,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 304160,
+   "ms_out": 304860,
+   "tipo": "clip",
+   "clip": "mdtank_h67_bottleshelf",
+   "startFrom": 87,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 304860,
+   "ms_out": 305760,
+   "tipo": "clip",
+   "clip": "mdtank_h68_thumbtest",
+   "startFrom": 87,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 305760,
+   "ms_out": 306710,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 306710,
+   "ms_out": 308010,
+   "tipo": "clip",
+   "clip": "mdtank_h69_lightbulb",
+   "startFrom": 0,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 308010,
+   "ms_out": 308810,
+   "tipo": "clip",
+   "clip": "mdtank_h57_bandaid",
+   "startFrom": 17,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 308810,
+   "ms_out": 310182,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 310182,
+   "ms_out": 312982,
+   "tipo": "clip",
+   "clip": "mdtank_h58_cottonball",
+   "startFrom": 14,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 312982,
+   "ms_out": 314182,
+   "tipo": "clip",
+   "clip": "mdtank_h59_bottlecap",
+   "startFrom": 26,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 314182,
+   "ms_out": 315505,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 315505,
+   "ms_out": 319105,
+   "tipo": "clip",
+   "clip": "mdtank_h60_dropperdrop",
+   "startFrom": 20,
+   "sec": "fizz",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 319105,
+   "ms_out": 319660,
+   "tipo": "avatar",
+   "sec": "fizz",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 319660,
+   "ms_out": 324060,
+   "tipo": "componente",
+   "componente": "LightTrailCards",
+   "sec": "map",
+   "avatar": "hidden",
+   "props": {
+    "eyebrow": "READING THE MAP",
+    "number": "5",
+    "phrase": "five places|*five different* answers",
+    "cards": 5,
+    "goldCard": 3
+   }
+  },
+  {
+   "ms_in": 324060,
+   "ms_out": 326160,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 326160,
+   "ms_out": 327160,
+   "tipo": "clip",
+   "clip": "mdtank_h70_ringclose",
+   "startFrom": 29,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 327160,
+   "ms_out": 330560,
+   "tipo": "clip",
+   "clip": "mdtank_h73_chainflapper",
+   "startFrom": 29,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 330560,
+   "ms_out": 332629,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 332629,
+   "ms_out": 333529,
+   "tipo": "clip",
+   "clip": "mdtank_h143_ringtrace",
+   "startFrom": 29,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 333529,
+   "ms_out": 335029,
+   "tipo": "clip",
+   "clip": "mdtank_h144_rimlight",
+   "startFrom": 29,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 335029,
+   "ms_out": 335829,
+   "tipo": "clip",
+   "clip": "mdtank_h145_lidedge",
+   "startFrom": 29,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 335829,
+   "ms_out": 336771,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 336771,
+   "ms_out": 338671,
+   "tipo": "clip",
+   "clip": "mdtank_h146_tankinside",
+   "startFrom": 29,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 338671,
+   "ms_out": 343071,
+   "tipo": "clip",
+   "clip": "mdtank_h147_boltclose",
+   "startFrom": 3,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 343071,
+   "ms_out": 344435,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 344435,
+   "ms_out": 346540,
+   "tipo": "clip",
+   "clip": "mdtank_h148_flapperlift",
+   "startFrom": 29,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 346540,
+   "ms_out": 349940,
+   "tipo": "clip",
+   "clip": "mdtank_h25_phonerim",
+   "startFrom": 0,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 349940,
+   "ms_out": 352040,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 352040,
+   "ms_out": 352840,
+   "tipo": "clip",
+   "clip": "mdtank_h70_ringclose",
+   "startFrom": 58,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 352840,
+   "ms_out": 353540,
+   "tipo": "clip",
+   "clip": "mdtank_h73_chainflapper",
+   "startFrom": 58,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 353540,
+   "ms_out": 355228,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 355228,
+   "ms_out": 356228,
+   "tipo": "clip",
+   "clip": "mdtank_h143_ringtrace",
+   "startFrom": 58,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 356228,
+   "ms_out": 358800,
+   "tipo": "clip",
+   "clip": "mdtank_h144_rimlight",
+   "startFrom": 1,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 358800,
+   "ms_out": 363800,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "map",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_rimcut.jpg",
+    "tag": "PAGE 04 · THE COMPLETE METHOD",
+    "title": "Under the rim"
+   }
+  },
+  {
+   "ms_in": 363800,
+   "ms_out": 365250.8,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 365250.8,
+   "ms_out": 368450.8,
+   "tipo": "clip",
+   "clip": "mdtank_h145_lidedge",
+   "startFrom": 16,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 368450.8,
+   "ms_out": 369380,
+   "tipo": "clip",
+   "clip": "mdtank_h146_tankinside",
+   "startFrom": 58,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 369380,
+   "ms_out": 372180,
+   "tipo": "clip",
+   "clip": "mdtank_h26_lidoff",
+   "startFrom": 0,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 372180,
+   "ms_out": 373040,
+   "tipo": "clip",
+   "clip": "mdtank_h27_lidfloor",
+   "startFrom": 0,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 373040,
+   "ms_out": 373440.4,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 373440.4,
+   "ms_out": 374580,
+   "tipo": "clip",
+   "clip": "mdtank_h147_boltclose",
+   "startFrom": 58,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 374580,
+   "ms_out": 379180,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "map",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_tankmap.jpg",
+    "tag": "PAGE 05 · THE COMPLETE METHOD",
+    "title": "Inside the tank"
+   }
+  },
+  {
+   "ms_in": 379180,
+   "ms_out": 379260,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 379260,
+   "ms_out": 381860,
+   "tipo": "clip",
+   "clip": "mdtank_h29_boltheads",
+   "startFrom": 0,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 381860,
+   "ms_out": 382681.6,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 382681.6,
+   "ms_out": 383981.6,
+   "tipo": "clip",
+   "clip": "mdtank_h148_flapperlift",
+   "startFrom": 58,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 383981.6,
+   "ms_out": 385020,
+   "tipo": "clip",
+   "clip": "mdtank_h70_ringclose",
+   "startFrom": 87,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 385020,
+   "ms_out": 388020,
+   "tipo": "clip",
+   "clip": "mdtank_h30_flapper",
+   "startFrom": 0,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 388020,
+   "ms_out": 390120,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 390120,
+   "ms_out": 391220,
+   "tipo": "clip",
+   "clip": "mdtank_h73_chainflapper",
+   "startFrom": 87,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 391220,
+   "ms_out": 392020,
+   "tipo": "clip",
+   "clip": "mdtank_h143_ringtrace",
+   "startFrom": 87,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 392020,
+   "ms_out": 393700,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 393700,
+   "ms_out": 396100,
+   "tipo": "clip",
+   "clip": "mdtank_h144_rimlight",
+   "startFrom": 26,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 396100,
+   "ms_out": 398100,
+   "tipo": "clip",
+   "clip": "mdtank_h145_lidedge",
+   "startFrom": 17,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 398100,
+   "ms_out": 402700,
+   "tipo": "clip",
+   "clip": "mdtank_h146_tankinside",
+   "startFrom": 7,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 402700,
+   "ms_out": 404720,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 404720,
+   "ms_out": 407720,
+   "tipo": "clip",
+   "clip": "mdtank_h31_noreaction",
+   "startFrom": 0,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 407720,
+   "ms_out": 409576.4,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 409576.4,
+   "ms_out": 410476.4,
+   "tipo": "clip",
+   "clip": "mdtank_h147_boltclose",
+   "startFrom": 87,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 410476.4,
+   "ms_out": 412076.4,
+   "tipo": "clip",
+   "clip": "mdtank_h148_flapperlift",
+   "startFrom": 7,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 412076.4,
+   "ms_out": 413002.4,
+   "tipo": "avatar",
+   "sec": "map",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 413002.4,
+   "ms_out": 414002.4,
+   "tipo": "clip",
+   "clip": "mdtank_h70_ringclose",
+   "startFrom": 22,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 414002.4,
+   "ms_out": 414860,
+   "tipo": "clip",
+   "clip": "mdtank_h73_chainflapper",
+   "startFrom": 18,
+   "sec": "map",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 414860,
+   "ms_out": 418660,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "quiet",
+   "avatar": "hidden",
+   "props": {
+    "number": "3",
+    "title": "WHAT DOESN'T FIZZ",
+    "sub": "the half that saves you money"
+   }
+  },
+  {
+   "ms_in": 418660,
+   "ms_out": 420260,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "quiet",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_fizztest.jpg",
+    "tag": "PAGE 01 · THE COMPLETE METHOD",
+    "title": "The fizz test"
+   }
+  },
+  {
+   "ms_in": 420260,
+   "ms_out": 421040,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 421040,
+   "ms_out": 423260,
+   "tipo": "clip",
+   "clip": "mdtank_h74_chalkyclose",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 423260,
+   "ms_out": 426060,
+   "tipo": "clip",
+   "clip": "mdtank_h32_fingernail",
+   "startFrom": 0,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 426060,
+   "ms_out": 427942.4,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 427942.4,
+   "ms_out": 429342.4,
+   "tipo": "clip",
+   "clip": "mdtank_h75_vinegarpour",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 429342.4,
+   "ms_out": 433300,
+   "tipo": "clip",
+   "clip": "mdtank_h76_descaler",
+   "startFrom": 6,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 433300,
+   "ms_out": 437500,
+   "tipo": "componente",
+   "componente": "MythTruth",
+   "sec": "quiet",
+   "avatar": "hidden",
+   "props": {
+    "myth": "Peroxide did not work on my ring",
+    "truth": "That ring was never alive",
+    "mythLabel": "MYTH",
+    "truthLabel": "TRUTH"
+   }
+  },
+  {
+   "ms_in": 437500,
+   "ms_out": 438212.4,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 438212.4,
+   "ms_out": 438912.4,
+   "tipo": "clip",
+   "clip": "mdtank_h77_rustclose",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 438912.4,
+   "ms_out": 439812.4,
+   "tipo": "clip",
+   "clip": "mdtank_h78_sheenwater",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 439812.4,
+   "ms_out": 440240,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 440240,
+   "ms_out": 443240,
+   "tipo": "clip",
+   "clip": "mdtank_h33_vinegarjug",
+   "startFrom": 0,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 443240,
+   "ms_out": 445340,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 445340,
+   "ms_out": 448140,
+   "tipo": "clip",
+   "clip": "mdtank_h80_flushfail",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 448140,
+   "ms_out": 449340,
+   "tipo": "clip",
+   "clip": "mdtank_h81_towelwipe",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 449340,
+   "ms_out": 450258,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 450258,
+   "ms_out": 453858,
+   "tipo": "clip",
+   "clip": "mdtank_h82_wellsink",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 453858,
+   "ms_out": 454820,
+   "tipo": "clip",
+   "clip": "mdtank_h74_chalkyclose",
+   "startFrom": 58,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 454820,
+   "ms_out": 458020,
+   "tipo": "clip",
+   "clip": "mdtank_h34_ironstreak",
+   "startFrom": 0,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 458020,
+   "ms_out": 460120,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 460120,
+   "ms_out": 461120,
+   "tipo": "clip",
+   "clip": "mdtank_h75_vinegarpour",
+   "startFrom": 58,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 461120,
+   "ms_out": 464520,
+   "tipo": "clip",
+   "clip": "mdtank_h76_descaler",
+   "startFrom": 21,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 464520,
+   "ms_out": 466184,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 466184,
+   "ms_out": 467084,
+   "tipo": "clip",
+   "clip": "mdtank_h77_rustclose",
+   "startFrom": 58,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 467084,
+   "ms_out": 468584,
+   "tipo": "clip",
+   "clip": "mdtank_h78_sheenwater",
+   "startFrom": 58,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 468584,
+   "ms_out": 469384,
+   "tipo": "clip",
+   "clip": "mdtank_h79_slimebucket",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 469384,
+   "ms_out": 471421,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 471421,
+   "ms_out": 473321,
+   "tipo": "clip",
+   "clip": "mdtank_h80_flushfail",
+   "startFrom": 58,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 473321,
+   "ms_out": 477721,
+   "tipo": "clip",
+   "clip": "mdtank_h81_towelwipe",
+   "startFrom": 6,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 477721,
+   "ms_out": 478680,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 478680,
+   "ms_out": 483480,
+   "tipo": "clip",
+   "clip": "mdtank_h82_wellsink",
+   "startFrom": 1,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 483480,
+   "ms_out": 484280,
+   "tipo": "clip",
+   "clip": "mdtank_h74_chalkyclose",
+   "startFrom": 87,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 484280,
+   "ms_out": 484980,
+   "tipo": "clip",
+   "clip": "mdtank_h75_vinegarpour",
+   "startFrom": 87,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 484980,
+   "ms_out": 486263,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 486263,
+   "ms_out": 487263,
+   "tipo": "clip",
+   "clip": "mdtank_h76_descaler",
+   "startFrom": 87,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 487263,
+   "ms_out": 489863,
+   "tipo": "clip",
+   "clip": "mdtank_h77_rustclose",
+   "startFrom": 31,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 489863,
+   "ms_out": 491460,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 491460,
+   "ms_out": 494660,
+   "tipo": "clip",
+   "clip": "mdtank_h35_gloveslime",
+   "startFrom": 0,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 494660,
+   "ms_out": 496760,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 496760,
+   "ms_out": 499960,
+   "tipo": "clip",
+   "clip": "mdtank_h78_sheenwater",
+   "startFrom": 3,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 499960,
+   "ms_out": 501060,
+   "tipo": "clip",
+   "clip": "mdtank_h79_slimebucket",
+   "startFrom": 58,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 501060,
+   "ms_out": 502716,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 502716,
+   "ms_out": 504916,
+   "tipo": "clip",
+   "clip": "mdtank_h80_flushfail",
+   "startFrom": 21,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 504916,
+   "ms_out": 505816,
+   "tipo": "clip",
+   "clip": "mdtank_h81_towelwipe",
+   "startFrom": 87,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 505816,
+   "ms_out": 507845,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 507845,
+   "ms_out": 511845,
+   "tipo": "clip",
+   "clip": "mdtank_h82_wellsink",
+   "startFrom": 21,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 511845,
+   "ms_out": 513145,
+   "tipo": "clip",
+   "clip": "mdtank_h74_chalkyclose",
+   "startFrom": 29,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 513145,
+   "ms_out": 515945,
+   "tipo": "clip",
+   "clip": "mdtank_h75_vinegarpour",
+   "startFrom": 14,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 515945,
+   "ms_out": 516847,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 516847,
+   "ms_out": 517547,
+   "tipo": "clip",
+   "clip": "mdtank_h76_descaler",
+   "startFrom": 14,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 517547,
+   "ms_out": 518020,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 518020,
+   "ms_out": 520420,
+   "tipo": "clip",
+   "clip": "mdtank_h37_plunger",
+   "startFrom": 0,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 520420,
+   "ms_out": 522422,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 522422,
+   "ms_out": 524422,
+   "tipo": "clip",
+   "clip": "mdtank_h78_sheenwater",
+   "startFrom": 46,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 524422,
+   "ms_out": 528120,
+   "tipo": "clip",
+   "clip": "mdtank_h79_slimebucket",
+   "startFrom": 27,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 528120,
+   "ms_out": 531120,
+   "tipo": "clip",
+   "clip": "mdtank_h36_slimeclose",
+   "startFrom": 0,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 531120,
+   "ms_out": 532752.8,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 532752.8,
+   "ms_out": 533652.8,
+   "tipo": "clip",
+   "clip": "mdtank_h80_flushfail",
+   "startFrom": 19,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 533652.8,
+   "ms_out": 535252.8,
+   "tipo": "clip",
+   "clip": "mdtank_h81_towelwipe",
+   "startFrom": 36,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 535252.8,
+   "ms_out": 537273.8,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 537273.8,
+   "ms_out": 537400,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 537400,
+   "ms_out": 540400,
+   "tipo": "clip",
+   "clip": "mdtank_h38_tanklook",
+   "startFrom": 0,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 540400,
+   "ms_out": 541429.6,
+   "tipo": "avatar",
+   "sec": "quiet",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 541429.6,
+   "ms_out": 544360,
+   "tipo": "clip",
+   "clip": "mdtank_h82_wellsink",
+   "startFrom": 20,
+   "sec": "quiet",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 544360,
+   "ms_out": 548160,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "tank",
+   "avatar": "hidden",
+   "props": {
+    "number": "4",
+    "title": "INSIDE THE TANK",
+    "sub": "the room nobody opens"
+   }
+  },
+  {
+   "ms_in": 548160,
+   "ms_out": 550260,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 550260,
+   "ms_out": 551660,
+   "tipo": "clip",
+   "clip": "mdtank_h83_tanklidon",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 551660,
+   "ms_out": 556560,
+   "tipo": "clip",
+   "clip": "mdtank_h84_darktank",
+   "startFrom": 0,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 556560,
+   "ms_out": 557827,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 557827,
+   "ms_out": 558527,
+   "tipo": "clip",
+   "clip": "mdtank_h85_tabletjar",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 558527,
+   "ms_out": 559427,
+   "tipo": "clip",
+   "clip": "mdtank_h86_fillvalve",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 559427,
+   "ms_out": 561067,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 561067,
+   "ms_out": 562367,
+   "tipo": "clip",
+   "clip": "mdtank_h87_diaphragm",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 562367,
+   "ms_out": 563167,
+   "tipo": "clip",
+   "clip": "mdtank_h88_sealring",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 563167,
+   "ms_out": 565229,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 565229,
+   "ms_out": 568029,
+   "tipo": "clip",
+   "clip": "mdtank_h89_night3am",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 568029,
+   "ms_out": 569229,
+   "tipo": "clip",
+   "clip": "mdtank_h90_toolbag",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 569229,
+   "ms_out": 571242,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 571242,
+   "ms_out": 574842,
+   "tipo": "clip",
+   "clip": "mdtank_h91_tankbolts",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 574842,
+   "ms_out": 576642,
+   "tipo": "clip",
+   "clip": "mdtank_h92_handintank",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 576642,
+   "ms_out": 580842,
+   "tipo": "clip",
+   "clip": "mdtank_h93_flapperseat",
+   "startFrom": 11,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 580842,
+   "ms_out": 581728,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 581728,
+   "ms_out": 582728,
+   "tipo": "clip",
+   "clip": "mdtank_h94_tabletdrop",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 582728,
+   "ms_out": 586128,
+   "tipo": "clip",
+   "clip": "mdtank_h95_stickerlean",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 586128,
+   "ms_out": 587387,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 587387,
+   "ms_out": 588287,
+   "tipo": "clip",
+   "clip": "mdtank_h83_tanklidon",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 588287,
+   "ms_out": 589787,
+   "tipo": "clip",
+   "clip": "mdtank_h84_darktank",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 589787,
+   "ms_out": 590587,
+   "tipo": "clip",
+   "clip": "mdtank_h85_tabletjar",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 590587,
+   "ms_out": 592219,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 592219,
+   "ms_out": 594119,
+   "tipo": "clip",
+   "clip": "mdtank_h86_fillvalve",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 594119,
+   "ms_out": 598320,
+   "tipo": "clip",
+   "clip": "mdtank_h87_diaphragm",
+   "startFrom": 4,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 598320,
+   "ms_out": 601320,
+   "tipo": "clip",
+   "clip": "mdtank_h39_bluetablet",
+   "startFrom": 0,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 601320,
+   "ms_out": 603420,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 603420,
+   "ms_out": 608220,
+   "tipo": "clip",
+   "clip": "mdtank_h88_sealring",
+   "startFrom": 1,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 608220,
+   "ms_out": 609020,
+   "tipo": "clip",
+   "clip": "mdtank_h89_night3am",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 609020,
+   "ms_out": 609720,
+   "tipo": "clip",
+   "clip": "mdtank_h90_toolbag",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 609720,
+   "ms_out": 610598,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 610598,
+   "ms_out": 611598,
+   "tipo": "clip",
+   "clip": "mdtank_h91_tankbolts",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 611598,
+   "ms_out": 612720,
+   "tipo": "clip",
+   "clip": "mdtank_h92_handintank",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 612720,
+   "ms_out": 615320,
+   "tipo": "clip",
+   "clip": "mdtank_h40_deadflapper",
+   "startFrom": 0,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 615320,
+   "ms_out": 616323.6,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 616323.6,
+   "ms_out": 619180,
+   "tipo": "clip",
+   "clip": "mdtank_h93_flapperseat",
+   "startFrom": 8,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 619180,
+   "ms_out": 623780,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "tank",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_tablet.jpg",
+    "tag": "PAGE 06 · THE COMPLETE METHOD",
+    "title": "What the tablet does"
+   }
+  },
+  {
+   "ms_in": 623780,
+   "ms_out": 625880,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 625880,
+   "ms_out": 628080,
+   "tipo": "clip",
+   "clip": "mdtank_h94_tabletdrop",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 628080,
+   "ms_out": 628980,
+   "tipo": "clip",
+   "clip": "mdtank_h95_stickerlean",
+   "startFrom": 58,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 628980,
+   "ms_out": 630604,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 630604,
+   "ms_out": 634604,
+   "tipo": "clip",
+   "clip": "mdtank_h83_tanklidon",
+   "startFrom": 21,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 634604,
+   "ms_out": 635904,
+   "tipo": "clip",
+   "clip": "mdtank_h84_darktank",
+   "startFrom": 0,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 635904,
+   "ms_out": 636900,
+   "tipo": "clip",
+   "clip": "mdtank_h85_tabletjar",
+   "startFrom": 87,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 636900,
+   "ms_out": 639900,
+   "tipo": "clip",
+   "clip": "mdtank_h41_washers",
+   "startFrom": 0,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 639900,
+   "ms_out": 640960.8,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 640960.8,
+   "ms_out": 642060.8,
+   "tipo": "clip",
+   "clip": "mdtank_h86_fillvalve",
+   "startFrom": 87,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 642060.8,
+   "ms_out": 642860.8,
+   "tipo": "clip",
+   "clip": "mdtank_h87_diaphragm",
+   "startFrom": 87,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 642860.8,
+   "ms_out": 643730.8,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 643730.8,
+   "ms_out": 643980,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 643980,
+   "ms_out": 660980,
+   "tipo": "movimiento",
+   "componente": "MovTank",
+   "sec": "tank",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 660980,
+   "ms_out": 662571.2,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 662571.2,
+   "ms_out": 664571.2,
+   "tipo": "clip",
+   "clip": "mdtank_h88_sealring",
+   "startFrom": 17,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 664571.2,
+   "ms_out": 667100,
+   "tipo": "clip",
+   "clip": "mdtank_h89_night3am",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 667100,
+   "ms_out": 689100,
+   "tipo": "movimiento",
+   "componente": "MovOxygen",
+   "sec": "tank",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 689100,
+   "ms_out": 691660,
+   "tipo": "clip",
+   "clip": "mdtank_h43_glassbubbles",
+   "startFrom": 0,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 691660,
+   "ms_out": 693760,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 693760,
+   "ms_out": 694660,
+   "tipo": "clip",
+   "clip": "mdtank_h90_toolbag",
+   "startFrom": 87,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 694660,
+   "ms_out": 696260,
+   "tipo": "clip",
+   "clip": "mdtank_h91_tankbolts",
+   "startFrom": 7,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 696260,
+   "ms_out": 697876,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 697876,
+   "ms_out": 698876,
+   "tipo": "clip",
+   "clip": "mdtank_h92_handintank",
+   "startFrom": 87,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 698876,
+   "ms_out": 701076,
+   "tipo": "clip",
+   "clip": "mdtank_h93_flapperseat",
+   "startFrom": 21,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 701076,
+   "ms_out": 703114,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 703114,
+   "ms_out": 706114,
+   "tipo": "clip",
+   "clip": "mdtank_h94_tabletdrop",
+   "startFrom": 41,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 706114,
+   "ms_out": 707314,
+   "tipo": "clip",
+   "clip": "mdtank_h95_stickerlean",
+   "startFrom": 87,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 707314,
+   "ms_out": 709303,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 709303,
+   "ms_out": 710103,
+   "tipo": "clip",
+   "clip": "mdtank_h83_tanklidon",
+   "startFrom": 17,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 710103,
+   "ms_out": 711503,
+   "tipo": "clip",
+   "clip": "mdtank_h84_darktank",
+   "startFrom": 31,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 711503,
+   "ms_out": 716403,
+   "tipo": "clip",
+   "clip": "mdtank_h85_tabletjar",
+   "startFrom": 0,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 716403,
+   "ms_out": 717265,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 717265,
+   "ms_out": 717965,
+   "tipo": "clip",
+   "clip": "mdtank_h86_fillvalve",
+   "startFrom": 14,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 717965,
+   "ms_out": 718865,
+   "tipo": "clip",
+   "clip": "mdtank_h87_diaphragm",
+   "startFrom": 19,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 718865,
+   "ms_out": 720100,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 720100,
+   "ms_out": 721400,
+   "tipo": "clip",
+   "clip": "mdtank_h88_sealring",
+   "startFrom": 29,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 721400,
+   "ms_out": 722200,
+   "tipo": "clip",
+   "clip": "mdtank_h89_night3am",
+   "startFrom": 17,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 722200,
+   "ms_out": 723857,
+   "tipo": "avatar",
+   "sec": "tank",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 723857,
+   "ms_out": 726657,
+   "tipo": "clip",
+   "clip": "mdtank_h90_toolbag",
+   "startFrom": 14,
+   "sec": "tank",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 726657,
+   "ms_out": 727857,
+   "tipo": "clip",
+   "clip": "mdtank_h96_glasswater",
+   "startFrom": 29,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 727857,
+   "ms_out": 729465,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 729465,
+   "ms_out": 732120,
+   "tipo": "clip",
+   "clip": "mdtank_h97_vinegarbottle",
+   "startFrom": 29,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 732120,
+   "ms_out": 735300,
+   "tipo": "clip",
+   "clip": "mdtank_h44_fizzstop",
+   "startFrom": 0,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 735300,
+   "ms_out": 740100,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "timer",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_timer.jpg",
+    "tag": "PAGE 07 · THE COMPLETE METHOD",
+    "title": "The fizz is a timer"
+   }
+  },
+  {
+   "ms_in": 740100,
+   "ms_out": 742200,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 742200,
+   "ms_out": 744000,
+   "tipo": "clip",
+   "clip": "mdtank_h99_fullbowlpour",
+   "startFrom": 29,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 744000,
+   "ms_out": 748200,
+   "tipo": "clip",
+   "clip": "mdtank_h100_dryringdose",
+   "startFrom": 11,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 748200,
+   "ms_out": 750181,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 750181,
+   "ms_out": 751181,
+   "tipo": "clip",
+   "clip": "mdtank_h101_brushbreak",
+   "startFrom": 29,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 751181,
+   "ms_out": 754581,
+   "tipo": "clip",
+   "clip": "mdtank_h102_weeklater",
+   "startFrom": 29,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 754581,
+   "ms_out": 755435,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 755435,
+   "ms_out": 756335,
+   "tipo": "clip",
+   "clip": "mdtank_h96_glasswater",
+   "startFrom": 58,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 756335,
+   "ms_out": 757835,
+   "tipo": "clip",
+   "clip": "mdtank_h97_vinegarbottle",
+   "startFrom": 58,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 757835,
+   "ms_out": 758635,
+   "tipo": "clip",
+   "clip": "mdtank_h99_fullbowlpour",
+   "startFrom": 58,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 758635,
+   "ms_out": 759862,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 759862,
+   "ms_out": 761762,
+   "tipo": "clip",
+   "clip": "mdtank_h100_dryringdose",
+   "startFrom": 58,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 761762,
+   "ms_out": 766162,
+   "tipo": "clip",
+   "clip": "mdtank_h101_brushbreak",
+   "startFrom": 6,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 766162,
+   "ms_out": 767811,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 767811,
+   "ms_out": 772611,
+   "tipo": "clip",
+   "clip": "mdtank_h102_weeklater",
+   "startFrom": 1,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 772611,
+   "ms_out": 773411,
+   "tipo": "clip",
+   "clip": "mdtank_h96_glasswater",
+   "startFrom": 87,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 773411,
+   "ms_out": 774111,
+   "tipo": "clip",
+   "clip": "mdtank_h97_vinegarbottle",
+   "startFrom": 87,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 774111,
+   "ms_out": 775360,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 775360,
+   "ms_out": 777440,
+   "tipo": "clip",
+   "clip": "mdtank_h45_calendar",
+   "startFrom": 0,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 777440,
+   "ms_out": 781440,
+   "tipo": "componente",
+   "componente": "HighlightSweep",
+   "sec": "timer",
+   "avatar": "hidden",
+   "props": {
+    "pre": "Two treatments",
+    "highlight": "a week apart",
+    "post": "beat one left overnight",
+    "note": "nobody sells you the second one"
+   }
+  },
+  {
+   "ms_in": 781440,
+   "ms_out": 783540,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 783540,
+   "ms_out": 786740,
+   "tipo": "clip",
+   "clip": "mdtank_h99_fullbowlpour",
+   "startFrom": 3,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 786740,
+   "ms_out": 787840,
+   "tipo": "clip",
+   "clip": "mdtank_h100_dryringdose",
+   "startFrom": 87,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 787840,
+   "ms_out": 788686,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 788686,
+   "ms_out": 790886,
+   "tipo": "clip",
+   "clip": "mdtank_h101_brushbreak",
+   "startFrom": 21,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 790886,
+   "ms_out": 791786,
+   "tipo": "clip",
+   "clip": "mdtank_h102_weeklater",
+   "startFrom": 87,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 791786,
+   "ms_out": 793005,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 793005,
+   "ms_out": 797005,
+   "tipo": "clip",
+   "clip": "mdtank_h96_glasswater",
+   "startFrom": 6,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 797005,
+   "ms_out": 798305,
+   "tipo": "clip",
+   "clip": "mdtank_h97_vinegarbottle",
+   "startFrom": 29,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 798305,
+   "ms_out": 801105,
+   "tipo": "clip",
+   "clip": "mdtank_h99_fullbowlpour",
+   "startFrom": 14,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 801105,
+   "ms_out": 802697,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 802697,
+   "ms_out": 803397,
+   "tipo": "clip",
+   "clip": "mdtank_h100_dryringdose",
+   "startFrom": 14,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 803397,
+   "ms_out": 804497,
+   "tipo": "clip",
+   "clip": "mdtank_h101_brushbreak",
+   "startFrom": 24,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 804497,
+   "ms_out": 805297,
+   "tipo": "clip",
+   "clip": "mdtank_h102_weeklater",
+   "startFrom": 17,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 805297,
+   "ms_out": 807262,
+   "tipo": "avatar",
+   "sec": "timer",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 807262,
+   "ms_out": 808560,
+   "tipo": "clip",
+   "clip": "mdtank_h96_glasswater",
+   "startFrom": 58,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 808560,
+   "ms_out": 811560,
+   "tipo": "clip",
+   "clip": "mdtank_h51_tapesheet",
+   "startFrom": 0,
+   "sec": "timer",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 811560,
+   "ms_out": 813660,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 813660,
+   "ms_out": 815660,
+   "tipo": "clip",
+   "clip": "mdtank_h105_slimewipe",
+   "startFrom": 29,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 815660,
+   "ms_out": 820260,
+   "tipo": "clip",
+   "clip": "mdtank_h106_beforeafter",
+   "startFrom": 5,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 820260,
+   "ms_out": 821098,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 821098,
+   "ms_out": 821998,
+   "tipo": "clip",
+   "clip": "mdtank_h107_scrub40",
+   "startFrom": 29,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 821998,
+   "ms_out": 823598,
+   "tipo": "clip",
+   "clip": "mdtank_h108_strongbottle",
+   "startFrom": 29,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 823598,
+   "ms_out": 824809,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 824809,
+   "ms_out": 825809,
+   "tipo": "clip",
+   "clip": "mdtank_h109_glovehand",
+   "startFrom": 29,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 825809,
+   "ms_out": 828009,
+   "tipo": "clip",
+   "clip": "mdtank_h110_shrugcamera",
+   "startFrom": 29,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 828009,
+   "ms_out": 829642,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 829642,
+   "ms_out": 832642,
+   "tipo": "clip",
+   "clip": "mdtank_h111_brushrinse",
+   "startFrom": 29,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 832642,
+   "ms_out": 833842,
+   "tipo": "clip",
+   "clip": "mdtank_h112_bowlclean",
+   "startFrom": 29,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 833842,
+   "ms_out": 835426,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 835426,
+   "ms_out": 836226,
+   "tipo": "clip",
+   "clip": "mdtank_h105_slimewipe",
+   "startFrom": 58,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 836226,
+   "ms_out": 837626,
+   "tipo": "clip",
+   "clip": "mdtank_h106_beforeafter",
+   "startFrom": 58,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 837626,
+   "ms_out": 838700,
+   "tipo": "clip",
+   "clip": "mdtank_h107_scrub40",
+   "startFrom": 58,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 838700,
+   "ms_out": 841500,
+   "tipo": "clip",
+   "clip": "mdtank_h46_brushpress",
+   "startFrom": 0,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 841500,
+   "ms_out": 843600,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 843600,
+   "ms_out": 844300,
+   "tipo": "clip",
+   "clip": "mdtank_h108_strongbottle",
+   "startFrom": 58,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 844300,
+   "ms_out": 845200,
+   "tipo": "clip",
+   "clip": "mdtank_h109_glovehand",
+   "startFrom": 58,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 845200,
+   "ms_out": 846030,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 846030,
+   "ms_out": 847330,
+   "tipo": "clip",
+   "clip": "mdtank_h110_shrugcamera",
+   "startFrom": 58,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 847330,
+   "ms_out": 848130,
+   "tipo": "clip",
+   "clip": "mdtank_h111_brushrinse",
+   "startFrom": 58,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 848130,
+   "ms_out": 849382,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 849382,
+   "ms_out": 852182,
+   "tipo": "clip",
+   "clip": "mdtank_h112_bowlclean",
+   "startFrom": 7,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 852182,
+   "ms_out": 853382,
+   "tipo": "clip",
+   "clip": "mdtank_h105_slimewipe",
+   "startFrom": 87,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 853382,
+   "ms_out": 854585,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 854585,
+   "ms_out": 858185,
+   "tipo": "clip",
+   "clip": "mdtank_h106_beforeafter",
+   "startFrom": 23,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 858185,
+   "ms_out": 859985,
+   "tipo": "clip",
+   "clip": "mdtank_h107_scrub40",
+   "startFrom": 12,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 859985,
+   "ms_out": 860660,
+   "tipo": "clip",
+   "clip": "mdtank_h108_strongbottle",
+   "startFrom": 87,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 860660,
+   "ms_out": 863460,
+   "tipo": "clip",
+   "clip": "mdtank_h47_gloves",
+   "startFrom": 0,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 863460,
+   "ms_out": 865560,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 865560,
+   "ms_out": 866560,
+   "tipo": "clip",
+   "clip": "mdtank_h109_glovehand",
+   "startFrom": 87,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 866560,
+   "ms_out": 869960,
+   "tipo": "clip",
+   "clip": "mdtank_h110_shrugcamera",
+   "startFrom": 13,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 869960,
+   "ms_out": 871909,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 871909,
+   "ms_out": 872809,
+   "tipo": "clip",
+   "clip": "mdtank_h111_brushrinse",
+   "startFrom": 87,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 872809,
+   "ms_out": 874309,
+   "tipo": "clip",
+   "clip": "mdtank_h112_bowlclean",
+   "startFrom": 5,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 874309,
+   "ms_out": 875109,
+   "tipo": "clip",
+   "clip": "mdtank_h105_slimewipe",
+   "startFrom": 17,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 875109,
+   "ms_out": 875931,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 875931,
+   "ms_out": 877831,
+   "tipo": "clip",
+   "clip": "mdtank_h106_beforeafter",
+   "startFrom": 43,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 877831,
+   "ms_out": 882231,
+   "tipo": "clip",
+   "clip": "mdtank_h107_scrub40",
+   "startFrom": 12,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 882231,
+   "ms_out": 883475,
+   "tipo": "avatar",
+   "sec": "honesty",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 883475,
+   "ms_out": 887500,
+   "tipo": "clip",
+   "clip": "mdtank_h108_strongbottle",
+   "startFrom": 6,
+   "sec": "honesty",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 887500,
+   "ms_out": 891300,
+   "tipo": "componente",
+   "componente": "ChapterTrailCard",
+   "sec": "safety",
+   "avatar": "hidden",
+   "props": {
+    "number": "5",
+    "title": "SAFETY",
+    "sub": "this is where people get hurt"
+   }
+  },
+  {
+   "ms_in": 891300,
+   "ms_out": 893400,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 893400,
+   "ms_out": 894200,
+   "tipo": "clip",
+   "clip": "mdtank_h113_gelbottle",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 894200,
+   "ms_out": 894900,
+   "tipo": "clip",
+   "clip": "mdtank_h114_bleachpour",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 894900,
+   "ms_out": 896468,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 896468,
+   "ms_out": 897468,
+   "tipo": "clip",
+   "clip": "mdtank_h115_windowopen",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 897468,
+   "ms_out": 900068,
+   "tipo": "clip",
+   "clip": "mdtank_h116_cappedbottle",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 900068,
+   "ms_out": 902058,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 902058,
+   "ms_out": 905258,
+   "tipo": "clip",
+   "clip": "mdtank_h117_cabinetline",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 905258,
+   "ms_out": 906358,
+   "tipo": "clip",
+   "clip": "mdtank_h118_calendarmonth",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 906358,
+   "ms_out": 908299,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 908299,
+   "ms_out": 910499,
+   "tipo": "clip",
+   "clip": "mdtank_h119_brushcaddy",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 910499,
+   "ms_out": 911399,
+   "tipo": "clip",
+   "clip": "mdtank_h120_septiclid",
+   "startFrom": 29,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 911399,
+   "ms_out": 912213,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 912213,
+   "ms_out": 916213,
+   "tipo": "clip",
+   "clip": "mdtank_h121_labelcheck",
+   "startFrom": 7,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 916213,
+   "ms_out": 917280,
+   "tipo": "clip",
+   "clip": "mdtank_h113_gelbottle",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 917280,
+   "ms_out": 922480,
+   "tipo": "componente",
+   "componente": "MdGuidePage",
+   "sec": "safety",
+   "avatar": "hidden",
+   "props": {
+    "src": "img/mdtank_lam_nevermix.jpg",
+    "tag": "PAGE 08 · THE COMPLETE METHOD",
+    "title": "Never mix"
+   }
+  },
+  {
+   "ms_in": 922480,
+   "ms_out": 924580,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 924580,
+   "ms_out": 925680,
+   "tipo": "clip",
+   "clip": "mdtank_h114_bleachpour",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 925680,
+   "ms_out": 926480,
+   "tipo": "clip",
+   "clip": "mdtank_h115_windowopen",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 926480,
+   "ms_out": 928040,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 928040,
+   "ms_out": 930440,
+   "tipo": "clip",
+   "clip": "mdtank_h116_cappedbottle",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 930440,
+   "ms_out": 930760,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 930760,
+   "ms_out": 934960,
+   "tipo": "componente",
+   "componente": "BulletCascade",
+   "sec": "safety",
+   "avatar": "hidden",
+   "props": {
+    "bullets": [
+     {
+      "key": "Flush first"
+     },
+     {
+      "key": "Empty bowl"
+     },
+     {
+      "key": "One thing at a time"
+     }
+    ],
+    "eyebrow": "BEFORE YOU POUR"
+   }
+  },
+  {
+   "ms_in": 934960,
+   "ms_out": 938100,
+   "tipo": "clip",
+   "clip": "mdtank_h48_nomix",
+   "startFrom": 0,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 938100,
+   "ms_out": 939015.2,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 939015.2,
+   "ms_out": 939915.2,
+   "tipo": "clip",
+   "clip": "mdtank_h118_calendarmonth",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 939915.2,
+   "ms_out": 941515.2,
+   "tipo": "clip",
+   "clip": "mdtank_h119_brushcaddy",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 941515.2,
+   "ms_out": 941620,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 941620,
+   "ms_out": 961620,
+   "tipo": "movimiento",
+   "componente": "MovSafety",
+   "sec": "safety",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 961620,
+   "ms_out": 962290.8,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 962290.8,
+   "ms_out": 964200,
+   "tipo": "clip",
+   "clip": "mdtank_h120_septiclid",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 964200,
+   "ms_out": 967400,
+   "tipo": "clip",
+   "clip": "mdtank_h49_windowsill",
+   "startFrom": 0,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 967400,
+   "ms_out": 969500,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 969500,
+   "ms_out": 970900,
+   "tipo": "clip",
+   "clip": "mdtank_h121_labelcheck",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 970900,
+   "ms_out": 975800,
+   "tipo": "clip",
+   "clip": "mdtank_h113_gelbottle",
+   "startFrom": 0,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 975800,
+   "ms_out": 977352,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 977352,
+   "ms_out": 978052,
+   "tipo": "clip",
+   "clip": "mdtank_h114_bleachpour",
+   "startFrom": 87,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 978052,
+   "ms_out": 978952,
+   "tipo": "clip",
+   "clip": "mdtank_h115_windowopen",
+   "startFrom": 87,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 978952,
+   "ms_out": 980877,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 980877,
+   "ms_out": 982177,
+   "tipo": "clip",
+   "clip": "mdtank_h116_cappedbottle",
+   "startFrom": 0,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 982177,
+   "ms_out": 982977,
+   "tipo": "clip",
+   "clip": "mdtank_h117_cabinetline",
+   "startFrom": 58,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 982977,
+   "ms_out": 983824,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 983824,
+   "ms_out": 986624,
+   "tipo": "clip",
+   "clip": "mdtank_h118_calendarmonth",
+   "startFrom": 36,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 986624,
+   "ms_out": 987824,
+   "tipo": "clip",
+   "clip": "mdtank_h119_brushcaddy",
+   "startFrom": 87,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 987824,
+   "ms_out": 988622,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 988622,
+   "ms_out": 992222,
+   "tipo": "clip",
+   "clip": "mdtank_h120_septiclid",
+   "startFrom": 23,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 992222,
+   "ms_out": 994022,
+   "tipo": "clip",
+   "clip": "mdtank_h121_labelcheck",
+   "startFrom": 12,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 994022,
+   "ms_out": 998222,
+   "tipo": "clip",
+   "clip": "mdtank_h113_gelbottle",
+   "startFrom": 8,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 998222,
+   "ms_out": 999393,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 999393,
+   "ms_out": 1000393,
+   "tipo": "clip",
+   "clip": "mdtank_h114_bleachpour",
+   "startFrom": 22,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 1000393,
+   "ms_out": 1002020,
+   "tipo": "clip",
+   "clip": "mdtank_h115_windowopen",
+   "startFrom": 37,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1002020,
+   "ms_out": 1005020,
+   "tipo": "clip",
+   "clip": "mdtank_h50_markerbrush",
+   "startFrom": 0,
+   "sec": "safety",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1005020,
+   "ms_out": 1007120,
+   "tipo": "avatar",
+   "sec": "safety",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1007120,
+   "ms_out": 1008620,
+   "tipo": "clip",
+   "clip": "mdtank_h124_lightsout",
+   "startFrom": 29,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1008620,
+   "ms_out": 1009420,
+   "tipo": "clip",
+   "clip": "mdtank_h138_shelfrow",
+   "startFrom": 29,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 1009420,
+   "ms_out": 1011337,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1011337,
+   "ms_out": 1013237,
+   "tipo": "clip",
+   "clip": "mdtank_h139_bottleset",
+   "startFrom": 29,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1013237,
+   "ms_out": 1017637,
+   "tipo": "clip",
+   "clip": "mdtank_h140_pointdown",
+   "startFrom": 3,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1017637,
+   "ms_out": 1018476,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1018476,
+   "ms_out": 1023276,
+   "tipo": "clip",
+   "clip": "mdtank_h141_doorframe",
+   "startFrom": 2,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1023276,
+   "ms_out": 1024076,
+   "tipo": "clip",
+   "clip": "mdtank_h142_lastlook",
+   "startFrom": 29,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 1024076,
+   "ms_out": 1024776,
+   "tipo": "clip",
+   "clip": "mdtank_h124_lightsout",
+   "startFrom": 58,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 1024776,
+   "ms_out": 1025939,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1025939,
+   "ms_out": 1026939,
+   "tipo": "clip",
+   "clip": "mdtank_h138_shelfrow",
+   "startFrom": 58,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 1026939,
+   "ms_out": 1028460,
+   "tipo": "clip",
+   "clip": "mdtank_h139_bottleset",
+   "startFrom": 58,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1028460,
+   "ms_out": 1032460,
+   "tipo": "componente",
+   "componente": "HookCaption",
+   "sec": "close",
+   "avatar": "hidden",
+   "props": {
+    "words": [
+     {
+      "text": "A diagnosis"
+     },
+     {
+      "text": "for a"
+     },
+     {
+      "text": "DOLLAR",
+      "boxed": true
+     }
+    ],
+    "sub": "the only product that answers you"
+   }
+  },
+  {
+   "ms_in": 1032460,
+   "ms_out": 1034560,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1034560,
+   "ms_out": 1037760,
+   "tipo": "clip",
+   "clip": "mdtank_h140_pointdown",
+   "startFrom": 16,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1037760,
+   "ms_out": 1038860,
+   "tipo": "clip",
+   "clip": "mdtank_h141_doorframe",
+   "startFrom": 58,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 1038860,
+   "ms_out": 1040396,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1040396,
+   "ms_out": 1042596,
+   "tipo": "clip",
+   "clip": "mdtank_h142_lastlook",
+   "startFrom": 58,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1042596,
+   "ms_out": 1043496,
+   "tipo": "clip",
+   "clip": "mdtank_h124_lightsout",
+   "startFrom": 87,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": true
+  },
+  {
+   "ms_in": 1043496,
+   "ms_out": 1043980,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1043980,
+   "ms_out": 1049980,
+   "tipo": "componente",
+   "componente": "MdQrCta",
+   "sec": "close",
+   "avatar": "hidden",
+   "props": {
+    "image": "img/mdtank_qrcard.jpg",
+    "eyebrow": "THE REST OF THE PAGES",
+    "title": "Point your camera",
+    "bullet": "Amounts · dilution chart · never-mix chart · room by room",
+    "cta": "also first in the description"
+   }
+  },
+  {
+   "ms_in": 1049980,
+   "ms_out": 1051290.4,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  },
+  {
+   "ms_in": 1051290.4,
+   "ms_out": 1052590.4,
+   "tipo": "clip",
+   "clip": "mdtank_h139_bottleset",
+   "startFrom": 0,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1052590.4,
+   "ms_out": 1055020,
+   "tipo": "clip",
+   "clip": "mdtank_h140_pointdown",
+   "startFrom": 27,
+   "sec": "close",
+   "avatar": "hidden",
+   "flash": false
+  },
+  {
+   "ms_in": 1055020,
+   "ms_out": 1070020,
+   "tipo": "movimiento",
+   "componente": "MovClose",
+   "sec": "close",
+   "avatar": "hidden"
+  },
+  {
+   "ms_in": 1070020,
+   "ms_out": 1070700,
+   "tipo": "avatar",
+   "sec": "close",
+   "avatar": "full"
+  }
+ ],
+ "totalMs": 1072000,
+ "overlays": []
+}

@@ -1,0 +1,71 @@
+[
+ {
+  "nombre": "mdtank_h04_oldbottle",
+  "change": "Close view of the man holding up a small brown glass bottle with a curled, blank white label at chest height, turning it in his fingers and looking at it with a flat expression. There is a dried ring of dark residue on the shoulder of the bottle. He is standing in a small bathroom, white wall behind him.",
+  "motion": "he holds the bottle completely still in front of him and only turns his head a little to look at it, his hand does not move",
+  "causality": "his fingers keep the same grip on the bottle for the whole take and the bottle never changes shape or size"
+ },
+ {
+  "nombre": "mdtank_h06_lightswitch",
+  "change": "The man is standing in the bathroom doorway at night with one hand flat on the light switch on the wall, half turned away as if leaving. The bathroom behind him is lit by a single bare bulb overhead, the toilet visible at the back of the room. Dark hallway behind his shoulder.",
+  "motion": "his hand stays flat and still on the switch plate and he only turns his head toward the hallway",
+  "causality": "his hand stays in contact with the wall plate the entire time and does not lift off"
+ },
+ {
+  "nombre": "mdtank_h07_morninglook",
+  "change": "The man is standing over an open toilet in the morning, looking straight down into the bowl with his eyebrows raised and his mouth slightly open, surprised. He is in an old t-shirt, hair not combed. Small bathroom, white tile, cool daylight from a window on the left.",
+  "motion": "he stands still and only blinks and lowers his chin slightly, still looking down, his hands stay out of the frame"
+ },
+ {
+  "nombre": "mdtank_h11_customerbath",
+  "change": "The man is standing in the middle of a stranger's small bathroom with his hands on his hips, mid explanation, looking toward the toilet and talking. He is wearing a checked shirt with the sleeves rolled. There is a toolbag on the floor by the door and a beige bath mat. Daylight from a frosted window.",
+  "motion": "he stands still with his hands resting on his hips and only turns his head slowly toward the toilet while he keeps talking"
+ },
+ {
+  "nombre": "mdtank_h17_watchwait",
+  "change": "The man is standing back a step from the toilet with his arms folded across his chest, looking down at the bowl and waiting. The bowl is dry with foam sitting on the porcelain. Small bathroom, white tile, a towel on a rail behind him.",
+  "motion": "he stays still with his arms folded and only lowers his gaze, his hands stay tucked under his arms and out of sight"
+ },
+ {
+  "nombre": "mdtank_h18_brushrim",
+  "change": "The man is crouched beside the toilet pushing the head of a white bristled toilet brush up under the rim of the dry bowl, his forearm braced against the seat. His face is above, looking down into the bowl. Small bathroom, tiled floor, overhead light.",
+  "motion": "he holds the brush still against the underside of the rim and only his forearm shifts a couple of centimetres",
+  "causality": "the brush head stays pressed in the same place under the rim for the whole take and does not travel"
+ },
+ {
+  "nombre": "mdtank_h24_sinkdrain",
+  "change": "Close view of the man's hand pouring a little clear liquid from a small brown glass bottle around the chrome rim of a bathroom sink drain, with foam rising out of the drain opening. His face is above at the top of the frame, looking down.",
+  "motion": "he holds the bottle still just above the drain and a few small bubbles rise slowly out of the opening",
+  "causality": "the bubbles build up gradually a few at a time and only inside the drain opening, nothing appears all at once"
+ },
+ {
+  "nombre": "mdtank_h35_gloveslime",
+  "change": "The man is kneeling beside an open toilet tank with a yellow rubber glove on one hand, lifting a handful of dark slick slime out of the bottom of the tank, his face turned slightly away with a grimace. Small bathroom, tiled floor, overhead light.",
+  "motion": "the gloved hand stays still just above the open tank and only the dark slime hanging off it drips slowly",
+  "causality": "the glove keeps the same shape and the same number of fingers for the whole take"
+ },
+ {
+  "nombre": "mdtank_h36_slimeclose",
+  "change": "Very close view of a yellow rubber glove held over an open toilet tank with dark grey and purple slime spread across the fingers and dripping slowly back down into the water below. Even indoor light from above.",
+  "motion": "the glove stays completely still and one thick drop slides slowly down off a fingertip",
+  "causality": "the glove keeps the same shape and the same number of fingers for the whole take"
+ },
+ {
+  "nombre": "mdtank_h43_glassbubbles",
+  "change": "Close view of a plain drinking glass of clear liquid standing on a closed white toilet tank lid, with fine bubbles rising through the liquid, and the man's hand just setting it down and letting go. Small bathroom, white tile behind, daylight from the left.",
+  "motion": "his hand is already away from the glass and out of the frame, the glass stands still on the lid and only the fine bubbles keep rising",
+  "causality": "the glass does not move at all and the liquid level stays exactly the same"
+ },
+ {
+  "nombre": "mdtank_h45_calendar",
+  "change": "The man is standing in a hallway tapping one finger on a plain paper wall calendar hanging by a nail, looking at the grid of squares. Painted wall, a light switch beside the calendar, daylight from the side, no text",
+  "motion": "his fingertip stays touching the calendar and slides a few centimetres sideways across the row, both hands stay empty",
+  "causality": "nothing appears in either hand at any point and the calendar stays flat against the wall"
+ },
+ {
+  "nombre": "mdtank_h48_nomix",
+  "change": "The man is standing in a small bathroom holding a small brown glass bottle out to one side in his right hand and a white plastic bleach jug out to the other side in his left, arms wide apart, shaking his head. White tile behind him, tiled floor.",
+  "motion": "he holds both containers completely still out at his sides and only turns his head from one to the other",
+  "causality": "both containers stay upright in his hands the whole time and neither changes shape or size"
+ }
+]

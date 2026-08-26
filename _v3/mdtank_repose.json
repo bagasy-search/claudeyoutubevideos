@@ -1,0 +1,26 @@
+[
+ {
+  "nombre": "mdtank_h07_morninglook",
+  "change": "The man is standing still in the bathroom doorway in the morning, one hand resting on the door frame, looking across the room toward the open toilet with a puzzled look. He is in an old t-shirt, hair not combed. Small bathroom beyond him, white tile, cool daylight from a window on the far wall.",
+  "motion": "he stays where he is and only turns his head a little further toward the toilet, then blinks",
+  "causality": "his hand stays flat on the door frame the whole time and nothing else in the room moves"
+ },
+ {
+  "nombre": "mdtank_h11_customerbath",
+  "change": "The man is standing in a stranger's small bathroom with one forearm resting on the edge of the sink, mid explanation, talking toward the toilet across the room. He is wearing a checked shirt with the sleeves rolled. A toolbag sits on the floor by the door. Daylight from a frosted window.",
+  "motion": "he keeps talking and only turns his head slowly toward the toilet, his forearm stays resting on the sink",
+  "causality": "his forearm stays in contact with the edge of the sink for the whole take and does not lift"
+ },
+ {
+  "nombre": "mdtank_h18_brushrim",
+  "change": "Close view of the underside of a toilet rim with the head of a white bristled toilet brush already pushed up under it and held there, the bristles splayed against the porcelain. The man's hand and wrist on the brush handle fill the lower part of the frame and the top of his head is at the edge of the frame, looking in. Dry bowl below, ordinary indoor light.",
+  "motion": "the brush head stays exactly where it is under the rim and only rocks a couple of centimetres",
+  "causality": "the bristles stay pressed against the same spot under the rim and the framing stays on that same close view the whole time"
+ },
+ {
+  "nombre": "mdtank_h43_glassbubbles",
+  "change": "Close view of a plain drinking glass of clear liquid standing alone on a closed white toilet tank lid, with fine bubbles rising through the liquid. Nobody is touching it and there are no hands anywhere in the frame. Small bathroom, white tile behind, daylight from the left, no hands",
+  "motion": "the glass stays completely still and the fine bubbles keep rising slowly through the liquid",
+  "causality": "the glass does not move at all, the liquid level stays exactly the same and nothing enters the frame"
+ }
+]
