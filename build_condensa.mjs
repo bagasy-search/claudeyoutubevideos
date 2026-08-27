@@ -166,6 +166,9 @@ for (const f of FORCE_CLIP) {
 
 // ── FORCE: CTA (portada / landing) ────────────────────────────────────────────
 const FORCE = [
+  // ⛔ cond_vapor_taza medía YAVG 21 (<25 = se lee como pantalla negra, regla 2.ter):
+  //    ese momento va a la foto que además dice EXACTO lo que se narra.
+  { src: "img/condensa_s08_11.png", at: "colgar el trapo adentro de la casa" },
   { src: "img/condensa_portada.png", at: "Es una de las páginas de la guía completa", cta: true },
   { src: "img/condensa_landing.png", at: "La tienes en la descripción", cta: true },
 ];

@@ -62,7 +62,7 @@ export const CUES: Cue[] = [
   { key: "b_S8_15", start: 346.56, dur: 5.29, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/cond_lluvia_vidrio.mp4" hue="amber" darken={0} clipDur={50.56} /> },
   { key: "b_S8_16", start: 351.7, dur: 4.21, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/cond_gotas_ventana.mp4" hue="amber" darken={0} clipDur={12.01} /> },
   { key: "b_S8_18", start: 359.02, dur: 5.63, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/condensa_s08_01.png" hue="amber" darken={0} /> },
-  { key: "b_S8_19", start: 364.5, dur: 4.25, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/cond_vapor_taza.mp4" hue="amber" darken={0} clipDur={21.02} /> },
+  { key: "b_S8_19", start: 364.5, dur: 4.25, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/condensa_s08_11.png" hue="amber" darken={0} /> },
   { key: "b_S8_20", start: 368.6, dur: 3.95, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/condensa_s08_02.png" hue="amber" darken={0} /> },
   { key: "b_S9_0", start: 372.4, dur: 7.23, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/condensa_s09_01.png" hue="amber" darken={0} /> },
   { key: "b_S9_1", start: 379.48, dur: 4.69, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/condensa_s09_02.png" hue="amber" darken={0} /> },
