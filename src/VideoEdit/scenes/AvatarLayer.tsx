@@ -53,7 +53,9 @@ export const AvatarLayer: React.FC<{
   windows: AvatarWindow[]; // ordenadas por start
   accent?: string;
   wav?: string; // wav para el borde audio-reactive; default = derivado del src
-}> = ({ src, windows, accent = COLORS.accent, wav }) => {
+  loop?: boolean; // AVATAR PARCIAL: repite el clip cuando el creador grabó solo un tramo
+  muted?: boolean; // en el tramo en bucle el audio lo pone la cola de TTS, no el avatar
+}> = ({ src, windows, accent = COLORS.accent, wav, loop = false, muted = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame; // frames
@@ -134,7 +136,7 @@ export const AvatarLayer: React.FC<{
     return (
       <AbsoluteFill style={{ pointerEvents: "none" }}>
         <div style={{ position: "absolute", left: -9999, top: 0, width: 384, height: 512, overflow: "hidden" }}>
-          <Video src={staticFile(src)} style={{ width: 683, height: 384 }} />
+          <Video src={staticFile(src)} loop={loop} muted={muted} style={{ width: 683, height: 384 }} />
         </div>
       </AbsoluteFill>
     );
@@ -164,6 +166,8 @@ export const AvatarLayer: React.FC<{
       >
         <Video
           src={staticFile(src)}
+          loop={loop}
+          muted={muted}
           style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
         />
         {/* viñeta interna suave cuando es recuadro */}

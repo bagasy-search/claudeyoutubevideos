@@ -1,4 +1,5 @@
 import "./index.css";
+import { MainCondensa, TOTAL_FRAMES_CONDENSA } from "./VideoEdit/Main_condensa";
 import { Composition } from "remotion";
 import { RosemaryHero } from "./valeria/RosemaryHero";
 import { MainCollageDemo, TOTAL_FRAMES_COLLAGE } from "./VideoEdit/RemedioCollage";
@@ -746,6 +747,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="GrBanana" component={MainGrbanana} durationInFrames={TOTAL_FRAMES_GRBANANA} fps={30} width={1920} height={1080} />
       <Composition id="GrVaseline" component={MainGrvaseline} durationInFrames={TOTAL_FRAMES_GRVASELINE} fps={30} width={1920} height={1080} />
       <Composition id="Fcsdeterioro" component={MainFcsdeterioro} durationInFrames={TOTAL_FRAMES_FCSDETERIORO} fps={30} width={1920} height={1080} />
-    </>
+        <Composition id="Condensa" component={MainCondensa} durationInFrames={TOTAL_FRAMES_CONDENSA} fps={30} width={1920} height={1080} />
+</>
   );
 };
