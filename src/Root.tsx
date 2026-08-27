@@ -187,6 +187,7 @@ import { MainGrvaseline, TOTAL_FRAMES_GRVASELINE } from "./_fed6/VideoEdit/Main_
 import { MainFcsvarices, TOTAL_FRAMES_FCSVARICES } from "./_fed6/VideoEdit/Main_fcsvarices";
 import { MainFcsaguapiel, TOTAL_FRAMES_FCSAGUAPIEL } from "./_fed6/VideoEdit/Main_fcsaguapiel";
 import { MainFcsdeterioro, TOTAL_FRAMES_FCSDETERIORO } from "./_fed6/VideoEdit/Main_fcsdeterioro";
+import { MainParedhidro, TOTAL_FRAMES_PAREDHIDRO } from "./VideoEdit/Main_paredhidro";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
 // Las composiciones viejas (Fly, Hipos, Bisontes, Objetos, Civil, Top7Demo,
@@ -748,6 +749,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="GrVaseline" component={MainGrvaseline} durationInFrames={TOTAL_FRAMES_GRVASELINE} fps={30} width={1920} height={1080} />
       <Composition id="Fcsdeterioro" component={MainFcsdeterioro} durationInFrames={TOTAL_FRAMES_FCSDETERIORO} fps={30} width={1920} height={1080} />
         <Composition id="Condensa" component={MainCondensa} durationInFrames={TOTAL_FRAMES_CONDENSA} fps={30} width={1920} height={1080} />
+    <Composition
+      id="Paredhidro"
+      component={MainParedhidro}
+      durationInFrames={TOTAL_FRAMES_PAREDHIDRO}
+      fps={30}
+      width={1920}
+      height={1080}
+    />
 </>
   );
 };
