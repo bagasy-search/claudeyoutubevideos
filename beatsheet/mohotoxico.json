@@ -1921,125 +1921,49 @@
    "dur": 3.3
   },
   {
-   "id": "mohotoxico_s_193",
+   "id": "mohotoxico_lamina_0",
    "start": 988.4,
+   "dur": 11.0,
    "kind": "raw",
    "hue": "amber",
    "darken": 0,
-   "src": "img/mohotoxico_lamina_v2.png",
-   "dur": 7.2
+   "src": "img/mohotoxico_lamina_v2.png"
   },
   {
-   "id": "mohotoxico_s_194",
-   "start": 995.3,
+   "id": "mohotoxico_lamina_1",
+   "start": 999.4,
+   "dur": 11.0,
    "kind": "raw",
    "hue": "amber",
    "darken": 0,
-   "src": "img/mt_s08_01.png",
-   "dur": 5.433
+   "src": "img/mohotoxico_lamina_v2.png"
   },
   {
-   "id": "mohotoxico_s_195",
-   "start": 1000.433,
+   "id": "mohotoxico_lamina_2",
+   "start": 1010.4,
+   "dur": 11.0,
    "kind": "raw",
    "hue": "amber",
    "darken": 0,
-   "src": "broll/mohotoxico/mt_v802.mp4",
-   "noSplit": true,
-   "dur": 4.733
+   "src": "img/mohotoxico_lamina_v2.png"
   },
   {
-   "id": "mohotoxico_s_196",
-   "start": 1004.867,
+   "id": "mohotoxico_lamina_3",
+   "start": 1021.4,
+   "dur": 11.0,
    "kind": "raw",
    "hue": "amber",
    "darken": 0,
-   "src": "img/mohotoxico_lamina_v2.png",
-   "dur": 3.833
+   "src": "img/mohotoxico_lamina_v2.png"
   },
   {
-   "id": "mohotoxico_s_197",
-   "start": 1008.4,
+   "id": "mohotoxico_lamina_4",
+   "start": 1032.4,
+   "dur": 9.2,
    "kind": "raw",
    "hue": "amber",
    "darken": 0,
-   "src": "broll/mohotoxico/mt_v803.mp4",
-   "noSplit": true,
-   "dur": 3.6
-  },
-  {
-   "id": "mohotoxico_s_198",
-   "start": 1011.7,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "img/mt_s08_03.png",
-   "dur": 3
-  },
-  {
-   "id": "mohotoxico_s_199",
-   "start": 1014.4,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "broll/mohotoxico/mt_v804.mp4",
-   "noSplit": true,
-   "dur": 4.6
-  },
-  {
-   "id": "mohotoxico_s_200",
-   "start": 1018.7,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "img/mohotoxico_lamina_v2.png",
-   "dur": 6.333
-  },
-  {
-   "id": "mohotoxico_s_201",
-   "start": 1024.733,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "img/mohotoxico_lamina_v2.png",
-   "dur": 6.067
-  },
-  {
-   "id": "mohotoxico_s_202",
-   "start": 1030.5,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "img/mt_s08_05.png",
-   "dur": 3.733
-  },
-  {
-   "id": "mohotoxico_s_203",
-   "start": 1033.933,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "img/mohotoxico_lamina_v2.png",
-   "dur": 3.8
-  },
-  {
-   "id": "mohotoxico_s_204",
-   "start": 1037.433,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "img/mohotoxico_lamina_v2.png",
-   "dur": 4.167
-  },
-  {
-   "id": "mohotoxico_s_205",
-   "start": 1041.3,
-   "kind": "raw",
-   "hue": "amber",
-   "darken": 0,
-   "src": "broll/mohotoxico/mt_v807.mp4",
-   "noSplit": true,
-   "dur": 4.433
+   "src": "img/mohotoxico_lamina_v2.png"
   },
   {
    "id": "mohotoxico_s_206",
@@ -3583,7 +3507,7 @@
    "kind": "raw",
    "hue": "amber",
    "darken": 0,
-   "src": "broll/mt_c_25.mp4",
+   "src": "broll/mohotoxico/mt_v1304.mp4",
    "noSplit": true,
    "dur": 3.767
   },
@@ -3593,7 +3517,7 @@
    "kind": "raw",
    "hue": "amber",
    "darken": 0,
-   "src": "broll/mohotoxico/mt_v1301.mp4",
+   "src": "broll/mohotoxico/mt_v1310.mp4",
    "noSplit": true,
    "dur": 5
   }
