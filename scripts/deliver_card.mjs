@@ -50,8 +50,14 @@ const main = async () => {
   const thumb = item?.thumb || null;
 
   // 4) crear el video_jobs (mismo patrón que "Ya tengo el video hecho")
+  // `script` es NOT NULL en video_jobs (23502 si falta). Mandamos el guion real si está en disco.
+  let guion = "";
+  for (const c of [`guiones/${slug}.txt`, `guiones/${slug}.md`, `${slug}.txt`]) {
+    if (fs.existsSync(c)) { guion = fs.readFileSync(c, "utf8"); break; }
+  }
   const jobBody = {
     user_id: ch.user_id, channel_key: channelKey, channel_name: ch.name || null, slug,
+    script: guion,
     title: (meta.title || item?.title || slug).slice(0, 200), provider: "claude-chat",
     status: "done", mp4_url: url, thumb_url: thumb,
     yt_title: meta.title ? String(meta.title).slice(0, 120) : null, yt_description: meta.description || null,
@@ -63,9 +69,11 @@ const main = async () => {
 
   // 5) enganchar la tarjeta del planificador
   if (item) {
-    const next = plan.map((p) => (p.id === cardId ? { ...p, videoJobId: job.id, done: true } : p));
+    // ⛔ NUNCA `done:true` acá. En Bagasy el tic ✓ = SUBIDO A YOUTUBE, no entregado.
+    // Lo pone SOLO el sellado de MisCanales.jsx cuando aparece `yt_video_id`. Ver deliver_fix.mjs.
+    const next = plan.map((p) => (p.id === cardId ? { ...p, videoJobId: job.id } : p));
     const pu = await fetch(`${U}/rest/v1/tracked_channels?id=eq.${ch.id}`, { method: "PATCH", headers: { ...H, Prefer: "return=minimal" }, body: JSON.stringify({ plan: next }) });
-    console.log("tarjeta enganchada:", pu.status === 204 ? `OK (videoJobId=${job.id}, done=true → "video listo")` : `fallo ${pu.status}`);
+    console.log("tarjeta enganchada:", pu.status === 204 ? `OK (videoJobId=${job.id} → "Video listo · subir", SIN tic hasta subir a YouTube)` : `fallo ${pu.status}`);
   }
 
   // 6) YouTube (borrador PRIVADO) vía mint
