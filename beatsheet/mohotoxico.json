@@ -1,0 +1,3601 @@
+{
+ "video": "mohotoxico",
+ "avatar": "mohotoxico_opt.mp4",
+ "tutorial": true,
+ "beats": [
+  {
+   "id": "ov_framedphoto_8",
+   "start": 8.2,
+   "dur": 5.88,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "topLeft",
+   "image": "img/mt_s01_01.png",
+   "caption": "La mancha del rincón",
+   "sub": "Negra, con el borde verdoso, junto al zócalo",
+   "kenburns": true
+  },
+  {
+   "id": "mohotoxico_s_03",
+   "start": 11,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v102.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_04",
+   "start": 16.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_02.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_mythtruth_20",
+   "start": 20.14,
+   "dur": 6.44,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "El moho se limpia refregando",
+   "truth": "Refregar en seco lo siembra en el resto de la casa"
+  },
+  {
+   "id": "mohotoxico_s_05",
+   "start": 22.333,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v103.mp4",
+   "noSplit": true,
+   "dur": 3.333
+  },
+  {
+   "id": "mohotoxico_s_06",
+   "start": 25.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_03.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_hookcaption_25",
+   "start": 25.38,
+   "dur": 5.92,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "earth",
+   "zone": "topLeft",
+   "words": [
+    {
+     "text": "NO"
+    },
+    {
+     "text": "LO",
+     "boxed": true
+    },
+    {
+     "text": "TOQUES"
+    },
+    {
+     "text": "EN"
+    },
+    {
+     "text": "SECO",
+     "boxed": true
+    }
+   ],
+   "sub": "Un cepillo seco reparte el moho por toda la casa"
+  },
+  {
+   "id": "mohotoxico_s_08",
+   "start": 34.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_04.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_09",
+   "start": 43.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v105.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_11",
+   "start": 57,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v107.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_12",
+   "start": 62.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_06.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_13",
+   "start": 69.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v108.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_14",
+   "start": 74.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h01.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_15",
+   "start": 81.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_07.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_17",
+   "start": 91.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_08.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_18",
+   "start": 97.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v110.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_20",
+   "start": 107.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v111.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_21",
+   "start": 114.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_10.png",
+   "dur": 3.933
+  },
+  {
+   "id": "mohotoxico_s_22",
+   "start": 117.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v112.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_24",
+   "start": 132.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v113.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_25",
+   "start": 138.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s01_12.png",
+   "dur": 4.5
+  },
+  {
+   "id": "mohotoxico_s_27",
+   "start": 147.167,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v202.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_28",
+   "start": 153.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s02_01.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_29",
+   "start": 159.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v204.mp4",
+   "noSplit": true,
+   "dur": 4.433
+  },
+  {
+   "id": "mohotoxico_s_31",
+   "start": 169.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v205.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_32",
+   "start": 175.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s02_03.png",
+   "dur": 5.6
+  },
+  {
+   "id": "mohotoxico_s_34",
+   "start": 185.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s02_04.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_35",
+   "start": 193.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_06.mp4",
+   "noSplit": true,
+   "dur": 8.3
+  },
+  {
+   "id": "mohotoxico_s_36",
+   "start": 201.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s02_05.png",
+   "dur": 4.267
+  },
+  {
+   "id": "ov_pullquote_202",
+   "start": 202.13,
+   "dur": 6.72,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "topLeft",
+   "quote": "En esa pieza yo, de noche, no podía respirar.",
+   "author": "El inquilino",
+   "role": "Se fue a los tres meses",
+   "image": "img/mt_s02_06.png"
+  },
+  {
+   "id": "mohotoxico_s_37",
+   "start": 205.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_28.mp4",
+   "noSplit": true,
+   "dur": 3.733
+  },
+  {
+   "id": "mohotoxico_s_39",
+   "start": 214.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s02_07.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_40",
+   "start": 223.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s02_08.png",
+   "dur": 4.667
+  },
+  {
+   "id": "mohotoxico_s_41",
+   "start": 227.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s02_09.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_bulletcascade_229",
+   "start": 229.19,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Los tres errores",
+   "bullets": [
+    {
+     "pre": "Atacarlo ",
+     "key": "EN SECO",
+     "post": ""
+    },
+    {
+     "pre": "Agarrar el ",
+     "key": "FRASCO EQUIVOCADO",
+     "post": ""
+    },
+    {
+     "pre": "Rociar y ",
+     "key": "LIMPIAR ENSEGUIDA",
+     "post": ""
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_42",
+   "start": 234.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v304.mp4",
+   "noSplit": true,
+   "dur": 4.2
+  },
+  {
+   "id": "mohotoxico_s_44",
+   "start": 245.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v306.mp4",
+   "noSplit": true,
+   "dur": 4.167
+  },
+  {
+   "id": "mohotoxico_s_45",
+   "start": 249.733,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_02.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_layerstack_255",
+   "start": 254.83,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Lo que hay debajo de la mancha",
+   "layers": [
+    {
+     "label": "Pintura"
+    },
+    {
+     "label": "Poro del revoque"
+    },
+    {
+     "label": "Micelio (la alfombra de hilos)"
+    },
+    {
+     "label": "Raíz viva"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_46",
+   "start": 258.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v308.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "ov_cutawaycallouts_262",
+   "start": 262.21,
+   "dur": 8.12,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Por dentro",
+   "title": "La fábrica de esporas",
+   "image": "img/mt_s03_03.png",
+   "callouts": [
+    {
+     "text": "Torres",
+     "sub": "Fábricas de semillas",
+     "tx": 0.3,
+     "ty": 0.28
+    },
+    {
+     "text": "Micelio",
+     "sub": "La raíz metida en el poro",
+     "tx": 0.62,
+     "ty": 0.7
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_47",
+   "start": 266.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_03.png",
+   "dur": 4.533
+  },
+  {
+   "id": "mohotoxico_s_48",
+   "start": 270.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_07.mp4",
+   "noSplit": true,
+   "dur": 4.1
+  },
+  {
+   "id": "mohotoxico_s_50",
+   "start": 279.667,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_30.mp4",
+   "noSplit": true,
+   "dur": 6.1
+  },
+  {
+   "id": "mohotoxico_s_51",
+   "start": 285.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_05.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_52",
+   "start": 292.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_06.png",
+   "dur": 5.933
+  },
+  {
+   "id": "mohotoxico_s_53",
+   "start": 298.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_07.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_54",
+   "start": 304.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_08.png",
+   "dur": 5.4
+  },
+  {
+   "id": "mohotoxico_s_55",
+   "start": 309.667,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_09.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_56",
+   "start": 317.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_10.png",
+   "dur": 4.1
+  },
+  {
+   "id": "mohotoxico_s_57",
+   "start": 321.667,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_11.png",
+   "dur": 3.1
+  },
+  {
+   "id": "ov_highlightsweep_324",
+   "start": 324.45,
+   "dur": 5.88,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "Al moho ",
+   "highlight": "nunca se lo toca en seco",
+   "post": ". Primero se moja.",
+   "note": "Regla sin excepción"
+  },
+  {
+   "id": "mohotoxico_s_58",
+   "start": 324.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_12.png",
+   "dur": 3.867
+  },
+  {
+   "id": "mohotoxico_s_59",
+   "start": 328.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s03_13.png",
+   "dur": 3.833
+  },
+  {
+   "id": "mohotoxico_s_62",
+   "start": 338.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v404.mp4",
+   "noSplit": true,
+   "dur": 4.867
+  },
+  {
+   "id": "mohotoxico_s_63",
+   "start": 342.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s04_02.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_64",
+   "start": 348.733,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v405.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_65",
+   "start": 356.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s04_03.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_mythtruth_357",
+   "start": 356.97,
+   "dur": 6.16,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "La lavandina mata el moho",
+   "truth": "Rompe el color de arriba; la raíz sigue viva abajo"
+  },
+  {
+   "id": "mohotoxico_s_66",
+   "start": 362.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_09.mp4",
+   "noSplit": true,
+   "dur": 3.767
+  },
+  {
+   "id": "mohotoxico_s_67",
+   "start": 366.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s04_04.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_69",
+   "start": 380.533,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s04_05.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_donutpercent_384",
+   "start": 384.47,
+   "dur": 6.44,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "DonutPercent",
+   "theme": "earth",
+   "zone": "topLeft",
+   "value": 95,
+   "title": "de la botella es AGUA",
+   "support": "El cloro se gasta arriba y el agua riega la raíz"
+  },
+  {
+   "id": "mohotoxico_s_70",
+   "start": 389.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s04_06.png",
+   "dur": 4.267
+  },
+  {
+   "id": "ov_vsduel_400",
+   "start": 399.75,
+   "dur": 9.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Qué hace cada uno",
+   "title": "Blanquear no es matar",
+   "left": {
+    "label": "CLORO",
+    "sub": "Se queda en la boca del poro",
+    "image": "img/mt_s04_11.png",
+    "good": false
+   },
+   "right": {
+    "label": "ALCOHOL 70",
+    "sub": "Entra al poro y no deja agua",
+    "image": "img/mt_s06_03.png",
+    "good": true
+   }
+  },
+  {
+   "id": "mohotoxico_s_72",
+   "start": 399.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s04_08.png",
+   "dur": 4.333
+  },
+  {
+   "id": "mohotoxico_s_73",
+   "start": 403.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s04_09.png",
+   "dur": 3.467
+  },
+  {
+   "id": "mohotoxico_s_74",
+   "start": 406.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v501.mp4",
+   "noSplit": true,
+   "dur": 3.9
+  },
+  {
+   "id": "mohotoxico_s_76",
+   "start": 415.6,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v503.mp4",
+   "noSplit": true,
+   "dur": 3.667
+  },
+  {
+   "id": "mohotoxico_s_77",
+   "start": 418.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s05_02.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_78",
+   "start": 425.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v505.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "ov_highlightsweep_430",
+   "start": 430.45,
+   "dur": 6.44,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "Eso no es desinfectar. ",
+   "highlight": "Eso es mover la mancha de lugar",
+   "post": ".",
+   "note": "Cinco segundos no matan nada"
+  },
+  {
+   "id": "mohotoxico_s_79",
+   "start": 430.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s05_03.png",
+   "dur": 4.367
+  },
+  {
+   "id": "mohotoxico_s_80",
+   "start": 434.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v506.mp4",
+   "noSplit": true,
+   "dur": 4.867
+  },
+  {
+   "id": "mohotoxico_s_81",
+   "start": 439.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s05_04.png",
+   "dur": 3.467
+  },
+  {
+   "id": "ov_gaugedial_440",
+   "start": 439.91,
+   "dur": 4.2,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "GaugeDial",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Tiempo de contacto",
+   "label": "Lo que aguanta mojado",
+   "value": 8,
+   "suffix": "%",
+   "zones": true
+  },
+  {
+   "id": "mohotoxico_s_82",
+   "start": 442.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v507.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_83",
+   "start": 449.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s05_05.png",
+   "dur": 3.3
+  },
+  {
+   "id": "mohotoxico_s_84",
+   "start": 452.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v508.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_85",
+   "start": 459.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s05_06.png",
+   "dur": 4.267
+  },
+  {
+   "id": "mohotoxico_s_86",
+   "start": 463,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_10.mp4",
+   "noSplit": true,
+   "dur": 3.4
+  },
+  {
+   "id": "mohotoxico_s_88",
+   "start": 471,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_33.mp4",
+   "noSplit": true,
+   "dur": 4.933
+  },
+  {
+   "id": "mohotoxico_s_89",
+   "start": 475.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s05_08.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_vsduel_488",
+   "start": 488.47,
+   "dur": 9.52,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El frasco correcto",
+   "title": "70 le gana a 96",
+   "left": {
+    "label": "70 GRADOS",
+    "sub": "El agua le abre la puerta",
+    "image": "img/mt_s06_01.png",
+    "value": 70,
+    "unit": "°",
+    "good": true
+   },
+   "right": {
+    "label": "96 GRADOS",
+    "sub": "Cocina una cáscara y rebota",
+    "image": "img/mt_s06_02.png",
+    "value": 96,
+    "unit": "°",
+    "good": false
+   }
+  },
+  {
+   "id": "mohotoxico_s_91",
+   "start": 491.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_01.png",
+   "dur": 4.6
+  },
+  {
+   "id": "mohotoxico_s_92",
+   "start": 496.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v602.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_95",
+   "start": 508.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_03.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_96",
+   "start": 515.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v604.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "ov_mythtruth_522",
+   "start": 521.83,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Cuanto más concentrado, mejor",
+   "truth": "El de 96 se seca antes de llegar a matar"
+  },
+  {
+   "id": "mohotoxico_s_97",
+   "start": 524,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_04.png",
+   "dur": 3
+  },
+  {
+   "id": "mohotoxico_s_98",
+   "start": 526.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v606.mp4",
+   "noSplit": true,
+   "dur": 4.833
+  },
+  {
+   "id": "mohotoxico_s_100",
+   "start": 536,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v607.mp4",
+   "noSplit": true,
+   "dur": 4.167
+  },
+  {
+   "id": "mohotoxico_s_101",
+   "start": 539.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_06.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_flowsteps_540",
+   "start": 539.87,
+   "dur": 9.24,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "El mecanismo",
+   "title": "Cómo lo mata",
+   "nodes": [
+    {
+     "label": "Entra",
+     "sub": "El agua abre la membrana",
+     "image": "img/mt_s06_06.png"
+    },
+    {
+     "label": "Rompe",
+     "sub": "Le desarma la pared",
+     "image": "img/mt_s06_07.png"
+    },
+    {
+     "label": "Se va",
+     "sub": "Se evapora sin dejar agua",
+     "image": "img/mt_s06_10.png"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_102",
+   "start": 547.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v609.mp4",
+   "noSplit": true,
+   "dur": 3.667
+  },
+  {
+   "id": "mohotoxico_s_104",
+   "start": 554.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v610.mp4",
+   "noSplit": true,
+   "dur": 3.767
+  },
+  {
+   "id": "mohotoxico_s_105",
+   "start": 558.233,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_08.png",
+   "dur": 4.133
+  },
+  {
+   "id": "ov_bigstatreveal_564",
+   "start": 563.89,
+   "dur": 7.28,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La proporción que sirve",
+   "value": 70,
+   "prefix": "",
+   "suffix": "°",
+   "support": "70 de alcohol y 30 de agua: esa agua es la que abre el camino",
+   "source": ""
+  },
+  {
+   "id": "mohotoxico_s_107",
+   "start": 569.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_09.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_108",
+   "start": 577.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v622.mp4",
+   "noSplit": true,
+   "dur": 3.2
+  },
+  {
+   "id": "mohotoxico_s_110",
+   "start": 584.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v623.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_111",
+   "start": 590.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_11.png",
+   "dur": 5.8
+  },
+  {
+   "id": "mohotoxico_s_112",
+   "start": 596.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v624.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_114",
+   "start": 606.533,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h02.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_115",
+   "start": 612.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v625.mp4",
+   "noSplit": true,
+   "dur": 4.367
+  },
+  {
+   "id": "mohotoxico_s_117",
+   "start": 622.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v626.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_118",
+   "start": 628,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_14.png",
+   "dur": 5.5
+  },
+  {
+   "id": "mohotoxico_s_119",
+   "start": 633.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v627.mp4",
+   "noSplit": true,
+   "dur": 3.7
+  },
+  {
+   "id": "mohotoxico_s_121",
+   "start": 641.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v628.mp4",
+   "noSplit": true,
+   "dur": 4.967
+  },
+  {
+   "id": "mohotoxico_s_122",
+   "start": 646.333,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_16.png",
+   "dur": 4.6
+  },
+  {
+   "id": "mohotoxico_s_123",
+   "start": 650.667,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v629.mp4",
+   "noSplit": true,
+   "dur": 4.933
+  },
+  {
+   "id": "ov_numberedsteps_653",
+   "start": 652.77,
+   "dur": 10.36,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Si sólo tenés el de 96",
+   "title": "Convertirlo en la mesada",
+   "steps": [
+    {
+     "title": "7 vasos de alcohol",
+     "sub": "Del de 96 grados",
+     "image": "img/mt_s06_04.png"
+    },
+    {
+     "title": "3 vasos de agua",
+     "sub": "Agua común",
+     "image": "img/mt_s07_05.png"
+    },
+    {
+     "title": "Agitar",
+     "sub": "Y ya tenés el bueno",
+     "image": "img/mt_s06_09.png"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_124",
+   "start": 655.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s06_17.png",
+   "dur": 4.367
+  },
+  {
+   "id": "mohotoxico_s_125",
+   "start": 659.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v630.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_127",
+   "start": 670.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v631.mp4",
+   "noSplit": true,
+   "dur": 3.4
+  },
+  {
+   "id": "ov_bulletcascade_670",
+   "start": 670.37,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BulletCascade",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Por qué el alcohol",
+   "bullets": [
+    {
+     "pre": "Trabaja, mata ",
+     "key": "Y SE VA",
+     "post": ""
+    },
+    {
+     "pre": "No le deja ",
+     "key": "AGUA",
+     "post": " a la raíz"
+    },
+    {
+     "pre": "No ",
+     "key": "BLANQUEA",
+     "post": " la pintura"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_128",
+   "start": 673.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v632.mp4",
+   "noSplit": true,
+   "dur": 3.833
+  },
+  {
+   "id": "mohotoxico_s_129",
+   "start": 677,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v633.mp4",
+   "noSplit": true,
+   "dur": 3.667
+  },
+  {
+   "id": "mohotoxico_s_131",
+   "start": 687.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v635.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_133",
+   "start": 697.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v637.mp4",
+   "noSplit": true,
+   "dur": 3.533
+  },
+  {
+   "id": "mohotoxico_s_134",
+   "start": 701.167,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v638.mp4",
+   "noSplit": true,
+   "dur": 3.967
+  },
+  {
+   "id": "mohotoxico_s_135",
+   "start": 704.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v639.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_136",
+   "start": 709.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v640.mp4",
+   "noSplit": true,
+   "dur": 3.867
+  },
+  {
+   "id": "mohotoxico_s_138",
+   "start": 719.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_11.mp4",
+   "noSplit": true,
+   "dur": 7.733
+  },
+  {
+   "id": "mohotoxico_s_139",
+   "start": 727.333,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_34.mp4",
+   "noSplit": true,
+   "dur": 3.2
+  },
+  {
+   "id": "ov_chaptertitle_728",
+   "start": 728.25,
+   "dur": 3.92,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "5",
+   "title": "EL RELOJ",
+   "sub": "Cinco minutos, minuto por minuto"
+  },
+  {
+   "id": "mohotoxico_s_140",
+   "start": 730.233,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v701.mp4",
+   "noSplit": true,
+   "dur": 3.1
+  },
+  {
+   "id": "mohotoxico_s_141",
+   "start": 733.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_01.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_numberedsteps_734",
+   "start": 734.23,
+   "dur": 10.92,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Minuto cero",
+   "title": "Antes de arrancar",
+   "steps": [
+    {
+     "title": "Cerrá la puerta",
+     "sub": "Y abrí sólo la ventana de ese cuarto",
+     "image": "img/mt_s07_01.png"
+    },
+    {
+     "title": "Guantes y barbijo",
+     "sub": "Es un rato nada más",
+     "image": "img/mt_s07_03.png"
+    },
+    {
+     "title": "Sacá lo de tela",
+     "sub": "Almohada, ropa, alfombra",
+     "image": "img/mt_s07_05.png"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_142",
+   "start": 738.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v702.mp4",
+   "noSplit": true,
+   "dur": 4.167
+  },
+  {
+   "id": "mohotoxico_s_143",
+   "start": 742.667,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_02.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_145",
+   "start": 755.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_03.png",
+   "dur": 4.233
+  },
+  {
+   "id": "mohotoxico_s_146",
+   "start": 759.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h03.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_147",
+   "start": 766.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v707.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_148",
+   "start": 772.667,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_04.png",
+   "dur": 5.733
+  },
+  {
+   "id": "ov_floatingcutout_775",
+   "start": 775.35,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "topLeft",
+   "image": "img/mt_s07_08.png",
+   "label": "AGUA + 2 GOTAS",
+   "sub": "El detergente le rompe la tensión al agua: la espora se moja y ya no vuela"
+  },
+  {
+   "id": "mohotoxico_s_149",
+   "start": 778.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v708.mp4",
+   "noSplit": true,
+   "dur": 3.967
+  },
+  {
+   "id": "mohotoxico_s_150",
+   "start": 781.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_05.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_152",
+   "start": 795.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_06.png",
+   "dur": 5.8
+  },
+  {
+   "id": "mohotoxico_s_153",
+   "start": 801.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h04.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_155",
+   "start": 814.333,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_07.png",
+   "dur": 4.733
+  },
+  {
+   "id": "mohotoxico_s_156",
+   "start": 818.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v712.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_157",
+   "start": 824.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_08.png",
+   "dur": 5.4
+  },
+  {
+   "id": "mohotoxico_s_158",
+   "start": 829.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v713.mp4",
+   "noSplit": true,
+   "dur": 4.333
+  },
+  {
+   "id": "mohotoxico_s_159",
+   "start": 833.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_09.png",
+   "dur": 3.567
+  },
+  {
+   "id": "mohotoxico_s_160",
+   "start": 837.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h05.png",
+   "dur": 3.233
+  },
+  {
+   "id": "mohotoxico_s_161",
+   "start": 840.167,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v714.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_163",
+   "start": 851.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v715.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_164",
+   "start": 856.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_11.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_166",
+   "start": 869.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_12.png",
+   "dur": 3.2
+  },
+  {
+   "id": "ov_highlightsweep_870",
+   "start": 870.03,
+   "dur": 7.28,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "La parte más difícil es ",
+   "highlight": "no hacer nada",
+   "post": " durante dos minutos.",
+   "note": "Si pasás el trapo antes, tiraste el trabajo"
+  },
+  {
+   "id": "mohotoxico_s_167",
+   "start": 872.667,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h06.png",
+   "dur": 3.533
+  },
+  {
+   "id": "mohotoxico_s_168",
+   "start": 875.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v719.mp4",
+   "noSplit": true,
+   "dur": 3.867
+  },
+  {
+   "id": "mohotoxico_s_169",
+   "start": 879.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_13.png",
+   "dur": 4.9
+  },
+  {
+   "id": "ov_bigstatreveal_882",
+   "start": 882.31,
+   "dur": 5.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Tiempo de contacto",
+   "value": 2,
+   "prefix": "",
+   "suffix": " min",
+   "support": "La mitad del método es esperar sin tocar nada",
+   "source": ""
+  },
+  {
+   "id": "mohotoxico_s_170",
+   "start": 884.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_13.mp4",
+   "noSplit": true,
+   "dur": 4.233
+  },
+  {
+   "id": "mohotoxico_s_172",
+   "start": 892.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_35.mp4",
+   "noSplit": true,
+   "dur": 5.3
+  },
+  {
+   "id": "mohotoxico_s_173",
+   "start": 897.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_15.png",
+   "dur": 4.3
+  },
+  {
+   "id": "mohotoxico_s_176",
+   "start": 910.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_17.png",
+   "dur": 5.9
+  },
+  {
+   "id": "mohotoxico_s_177",
+   "start": 915.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_18.png",
+   "dur": 3.8
+  },
+  {
+   "id": "mohotoxico_s_178",
+   "start": 919.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_19.png",
+   "dur": 3.467
+  },
+  {
+   "id": "mohotoxico_s_180",
+   "start": 925.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_21.png",
+   "dur": 3.233
+  },
+  {
+   "id": "mohotoxico_s_181",
+   "start": 928.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_22.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_flowsteps_934",
+   "start": 934.17,
+   "dur": 11,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "Minuto cuatro y medio",
+   "title": "Cómo se retira",
+   "nodes": [
+    {
+     "label": "De arriba abajo",
+     "sub": "Una sola dirección",
+     "image": "img/mt_s07_18.png"
+    },
+    {
+     "label": "Dar vuelta el paño",
+     "sub": "Nunca volver con la cara sucia",
+     "image": "img/mt_s07_19.png"
+    },
+    {
+     "label": "A la bolsa",
+     "sub": "Y la bolsa sale de la casa",
+     "image": "img/mt_s07_21.png"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_182",
+   "start": 936.6,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_23.png",
+   "dur": 3.8
+  },
+  {
+   "id": "mohotoxico_s_183",
+   "start": 940.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_24.png",
+   "dur": 5.2
+  },
+  {
+   "id": "mohotoxico_s_184",
+   "start": 945,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v701.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_185",
+   "start": 952.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_01.png",
+   "dur": 4.233
+  },
+  {
+   "id": "mohotoxico_s_186",
+   "start": 956.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v702.mp4",
+   "noSplit": true,
+   "dur": 3.2
+  },
+  {
+   "id": "mohotoxico_s_188",
+   "start": 965.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v703.mp4",
+   "noSplit": true,
+   "dur": 4.1
+  },
+  {
+   "id": "ov_checklistreveal_967",
+   "start": 966.83,
+   "dur": 7.84,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "Minuto cinco",
+   "title": "Cerrá el trabajo",
+   "items": [
+    "Secar la pared con un paño",
+    "Rociar el guardia de clavo",
+    "No enjuagar, dejarlo puesto"
+   ],
+   "stamp": "LISTO"
+  },
+  {
+   "id": "mohotoxico_s_189",
+   "start": 969.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_03.png",
+   "dur": 4.133
+  },
+  {
+   "id": "mohotoxico_s_190",
+   "start": 973.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h03.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_192",
+   "start": 985.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s07_04.png",
+   "dur": 3.3
+  },
+  {
+   "id": "mohotoxico_s_193",
+   "start": 988.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 7.2
+  },
+  {
+   "id": "mohotoxico_s_194",
+   "start": 995.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_01.png",
+   "dur": 5.433
+  },
+  {
+   "id": "mohotoxico_s_195",
+   "start": 1000.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v802.mp4",
+   "noSplit": true,
+   "dur": 4.733
+  },
+  {
+   "id": "mohotoxico_s_196",
+   "start": 1004.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 3.833
+  },
+  {
+   "id": "mohotoxico_s_197",
+   "start": 1008.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v803.mp4",
+   "noSplit": true,
+   "dur": 3.6
+  },
+  {
+   "id": "mohotoxico_s_198",
+   "start": 1011.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_03.png",
+   "dur": 3
+  },
+  {
+   "id": "mohotoxico_s_199",
+   "start": 1014.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v804.mp4",
+   "noSplit": true,
+   "dur": 4.6
+  },
+  {
+   "id": "mohotoxico_s_200",
+   "start": 1018.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 6.333
+  },
+  {
+   "id": "mohotoxico_s_201",
+   "start": 1024.733,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 6.067
+  },
+  {
+   "id": "mohotoxico_s_202",
+   "start": 1030.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_05.png",
+   "dur": 3.733
+  },
+  {
+   "id": "mohotoxico_s_203",
+   "start": 1033.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 3.8
+  },
+  {
+   "id": "mohotoxico_s_204",
+   "start": 1037.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 4.167
+  },
+  {
+   "id": "mohotoxico_s_205",
+   "start": 1041.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v807.mp4",
+   "noSplit": true,
+   "dur": 4.433
+  },
+  {
+   "id": "mohotoxico_s_206",
+   "start": 1045.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_07.png",
+   "dur": 4.133
+  },
+  {
+   "id": "mohotoxico_s_207",
+   "start": 1049.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v808.mp4",
+   "noSplit": true,
+   "dur": 3.033
+  },
+  {
+   "id": "mohotoxico_s_208",
+   "start": 1052,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_08.png",
+   "dur": 3.4
+  },
+  {
+   "id": "mohotoxico_s_210",
+   "start": 1058.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 6.433
+  },
+  {
+   "id": "mohotoxico_s_211",
+   "start": 1065.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_lamina_v2.png",
+   "dur": 3.733
+  },
+  {
+   "id": "mohotoxico_s_212",
+   "start": 1068.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_10.png",
+   "dur": 3.733
+  },
+  {
+   "id": "mohotoxico_s_213",
+   "start": 1072,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_11.png",
+   "dur": 6
+  },
+  {
+   "id": "ov_ctacard_1076",
+   "start": 1075.79,
+   "dur": 8.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "De dónde salió esta página",
+   "title": "La colección completa",
+   "bullet": "Humedad, moho, filtraciones, óxido y madera, cada arreglo con sus medidas",
+   "price": 0,
+   "cta": "Enlace en la descripción",
+   "image": "img/mohotoxico_portada.png"
+  },
+  {
+   "id": "mohotoxico_s_214",
+   "start": 1079.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_portada.png",
+   "dur": 4.6
+  },
+  {
+   "id": "mohotoxico_s_215",
+   "start": 1084,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_13.png",
+   "dur": 4.367
+  },
+  {
+   "id": "mohotoxico_s_216",
+   "start": 1088.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_14.png",
+   "dur": 4.133
+  },
+  {
+   "id": "mohotoxico_s_218",
+   "start": 1095.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_landing.png",
+   "dur": 3.4
+  },
+  {
+   "id": "mohotoxico_s_219",
+   "start": 1098.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_17.png",
+   "dur": 6
+  },
+  {
+   "id": "float_qr_1102",
+   "start": 1101.87,
+   "dur": 8,
+   "kind": "float",
+   "overlay": true,
+   "src": "img/mohotoxico_qr_land.png",
+   "side": "right",
+   "kicker": "Escanea con tu celular",
+   "hue": "amber"
+  },
+  {
+   "id": "mohotoxico_s_221",
+   "start": 1109.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_19.png",
+   "dur": 6.733
+  },
+  {
+   "id": "mohotoxico_s_222",
+   "start": 1116.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s08_20.png",
+   "dur": 5.833
+  },
+  {
+   "id": "mohotoxico_s_223",
+   "start": 1121.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_portada.png",
+   "dur": 4.567
+  },
+  {
+   "id": "mohotoxico_s_224",
+   "start": 1126.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_01.png",
+   "dur": 8.5
+  },
+  {
+   "id": "mohotoxico_s_225",
+   "start": 1134.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v902.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_226",
+   "start": 1142.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_02.png",
+   "dur": 6.067
+  },
+  {
+   "id": "mohotoxico_s_227",
+   "start": 1148.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v904.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_228",
+   "start": 1154.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_03.png",
+   "dur": 5.767
+  },
+  {
+   "id": "mohotoxico_s_229",
+   "start": 1159.6,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h08.png",
+   "dur": 8.5
+  },
+  {
+   "id": "ov_floatingcutout_1168",
+   "start": 1168.29,
+   "dur": 7,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "topLeft",
+   "image": "img/mt_s09_02.png",
+   "label": "CLAVO DE OLOR",
+   "sub": "El eugenol es aceitoso: no se evapora y se queda de guardia en el poro"
+  },
+  {
+   "id": "mohotoxico_s_230",
+   "start": 1168.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v907.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "ov_mythtruth_1172",
+   "start": 1171.66,
+   "dur": 6.72,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "topLeft",
+   "myth": "Es sólo perfume para tapar el olor",
+   "truth": "El eugenol le rompe la membrana al hongo, lento y constante"
+  },
+  {
+   "id": "mohotoxico_s_231",
+   "start": 1173.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_04.png",
+   "dur": 4.567
+  },
+  {
+   "id": "mohotoxico_s_232",
+   "start": 1178.233,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_16.mp4",
+   "noSplit": true,
+   "dur": 8.133
+  },
+  {
+   "id": "mohotoxico_s_233",
+   "start": 1186.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_05.png",
+   "dur": 7
+  },
+  {
+   "id": "mohotoxico_s_234",
+   "start": 1192.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_39.mp4",
+   "noSplit": true,
+   "dur": 8.333
+  },
+  {
+   "id": "mohotoxico_s_235",
+   "start": 1200.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_06.png",
+   "dur": 6.5
+  },
+  {
+   "id": "mohotoxico_s_236",
+   "start": 1207.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h09.png",
+   "dur": 8.5
+  },
+  {
+   "id": "mohotoxico_s_237",
+   "start": 1215.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_07.png",
+   "dur": 5.567
+  },
+  {
+   "id": "mohotoxico_s_238",
+   "start": 1220.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_08.png",
+   "dur": 6.8
+  },
+  {
+   "id": "mohotoxico_s_239",
+   "start": 1227.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_09.png",
+   "dur": 8.4
+  },
+  {
+   "id": "ov_numberedsteps_1231",
+   "start": 1230.83,
+   "dur": 11,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El guardia",
+   "title": "La mezcla exacta",
+   "steps": [
+    {
+     "title": "½ cucharadita de aceite de clavo",
+     "sub": "Ni dos, ni una cucharada",
+     "image": "img/mt_s09_04.png"
+    },
+    {
+     "title": "1 litro de agua tibia",
+     "sub": "Al rociador",
+     "image": "img/mt_s09_05.png"
+    },
+    {
+     "title": "Agitar fuerte cada vez",
+     "sub": "El aceite se separa y se va arriba",
+     "image": "img/mt_s09_06.png"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_240",
+   "start": 1235.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_10.png",
+   "dur": 8.4
+  },
+  {
+   "id": "mohotoxico_s_241",
+   "start": 1243.6,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_11.png",
+   "dur": 5.5
+  },
+  {
+   "id": "mohotoxico_s_242",
+   "start": 1248.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_12.png",
+   "dur": 6.967
+  },
+  {
+   "id": "ov_highlightsweep_1253",
+   "start": 1252.66,
+   "dur": 6.44,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "Se rocía y ",
+   "highlight": "se deja",
+   "post": ". La película invisible es el guardia.",
+   "note": "Si pasás el trapo, lo despediste"
+  },
+  {
+   "id": "mohotoxico_s_243",
+   "start": 1255.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_13.png",
+   "dur": 6.2
+  },
+  {
+   "id": "mohotoxico_s_244",
+   "start": 1261.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_14.png",
+   "dur": 6
+  },
+  {
+   "id": "mohotoxico_s_245",
+   "start": 1267.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v901.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_246",
+   "start": 1275.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_01.png",
+   "dur": 8.467
+  },
+  {
+   "id": "mohotoxico_s_247",
+   "start": 1283.533,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v902.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_248",
+   "start": 1289.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s09_02.png",
+   "dur": 8.333
+  },
+  {
+   "id": "mohotoxico_s_249",
+   "start": 1297.167,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1001.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_250",
+   "start": 1303.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_01.png",
+   "dur": 6.067
+  },
+  {
+   "id": "mohotoxico_s_251",
+   "start": 1309.733,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1005.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_252",
+   "start": 1316.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_02.png",
+   "dur": 5.6
+  },
+  {
+   "id": "ov_checklistreveal_1317",
+   "start": 1317.38,
+   "dur": 9.8,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "Sé honesto",
+   "title": "Cuándo NO seguir solo",
+   "items": [
+    "Mancha más grande que un metro cuadrado",
+    "Placa de yeso blanda al apretarla",
+    "Alguien con asma o un bebé en la casa"
+   ],
+   "stamp": "PARÁ"
+  },
+  {
+   "id": "mohotoxico_s_253",
+   "start": 1322.233,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_18.mp4",
+   "noSplit": true,
+   "dur": 6.967
+  },
+  {
+   "id": "mohotoxico_s_254",
+   "start": 1328.9,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_03.png",
+   "dur": 3.633
+  },
+  {
+   "id": "mohotoxico_s_255",
+   "start": 1332.233,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h10.png",
+   "dur": 8.1
+  },
+  {
+   "id": "mohotoxico_s_256",
+   "start": 1340.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_04.png",
+   "dur": 6.167
+  },
+  {
+   "id": "mohotoxico_s_257",
+   "start": 1345.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_05.png",
+   "dur": 4.8
+  },
+  {
+   "id": "ov_stampbadge_1348",
+   "start": 1347.74,
+   "dur": 4.52,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "StampBadge",
+   "theme": "earth",
+   "zone": "topLeft",
+   "text": "SE CAMBIA",
+   "sub": "No hay líquido que llegue adentro del cartón",
+   "x": 0.68,
+   "y": 0.24
+  },
+  {
+   "id": "mohotoxico_s_258",
+   "start": 1350.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_06.png",
+   "dur": 3.433
+  },
+  {
+   "id": "mohotoxico_s_259",
+   "start": 1353.6,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_07.png",
+   "dur": 7.467
+  },
+  {
+   "id": "mohotoxico_s_260",
+   "start": 1360.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_08.png",
+   "dur": 8.067
+  },
+  {
+   "id": "mohotoxico_s_261",
+   "start": 1368.533,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s10_09.png",
+   "dur": 3.633
+  },
+  {
+   "id": "mohotoxico_s_262",
+   "start": 1371.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1101.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "ov_chaptertitle_1373",
+   "start": 1372.87,
+   "dur": 4.48,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChapterTitle",
+   "theme": "earth",
+   "zone": "topLeft",
+   "number": "1",
+   "title": "EL ERROR",
+   "sub": "Por qué vuelve siempre al mismo rincón"
+  },
+  {
+   "id": "mohotoxico_s_263",
+   "start": 1379.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_01.png",
+   "dur": 5.833
+  },
+  {
+   "id": "mohotoxico_s_264",
+   "start": 1384.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1103.mp4",
+   "noSplit": true,
+   "dur": 4.967
+  },
+  {
+   "id": "mohotoxico_s_265",
+   "start": 1389.5,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_02.png",
+   "dur": 7.733
+  },
+  {
+   "id": "mohotoxico_s_266",
+   "start": 1396.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1104.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_267",
+   "start": 1403.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_03.png",
+   "dur": 8.5
+  },
+  {
+   "id": "ov_highlightsweep_1410",
+   "start": 1410.48,
+   "dur": 6.72,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "El moho elige ese rincón ",
+   "highlight": "porque ahí la pared está más fría",
+   "post": ".",
+   "note": "No es suciedad: es temperatura"
+  },
+  {
+   "id": "mohotoxico_s_268",
+   "start": 1412.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1106.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_269",
+   "start": 1419.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_04.png",
+   "dur": 6.233
+  },
+  {
+   "id": "mohotoxico_s_270",
+   "start": 1425.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1107.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_271",
+   "start": 1432.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_05.png",
+   "dur": 7.467
+  },
+  {
+   "id": "mohotoxico_s_272",
+   "start": 1439.2,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1108.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_273",
+   "start": 1445.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_06.png",
+   "dur": 6.567
+  },
+  {
+   "id": "mohotoxico_s_274",
+   "start": 1451.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1109.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_275",
+   "start": 1458.533,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_07.png",
+   "dur": 5.933
+  },
+  {
+   "id": "mohotoxico_s_276",
+   "start": 1464.167,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1111.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "ov_cutawaycallouts_1469",
+   "start": 1468.59,
+   "dur": 9.52,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CutawayCallouts",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El corte de la pared",
+   "title": "El punto de rocío",
+   "image": "img/mt_s11_05.png",
+   "callouts": [
+    {
+     "text": "Aire tibio",
+     "sub": "Lleva agua invisible",
+     "tx": 0.28,
+     "ty": 0.3
+    },
+    {
+     "text": "Pared fría",
+     "sub": "Ahí el aire suelta el agua",
+     "tx": 0.66,
+     "ty": 0.62
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_277",
+   "start": 1470.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_08.png",
+   "dur": 3.367
+  },
+  {
+   "id": "mohotoxico_s_278",
+   "start": 1473.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1112.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_279",
+   "start": 1480.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h11.png",
+   "dur": 7.267
+  },
+  {
+   "id": "mohotoxico_s_280",
+   "start": 1487.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_09.png",
+   "dur": 8.033
+  },
+  {
+   "id": "mohotoxico_s_281",
+   "start": 1495.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1113.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_282",
+   "start": 1502.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_10.png",
+   "dur": 8
+  },
+  {
+   "id": "ov_layerstack_1507",
+   "start": 1506.83,
+   "dur": 8.4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "LayerStack",
+   "theme": "earth",
+   "zone": "topLeft",
+   "title": "Dónde está el tramo frío",
+   "layers": [
+    {
+     "label": "Esquina de dos paredes exteriores"
+    },
+    {
+     "label": "Viga o columna de hormigón"
+    },
+    {
+     "label": "Pared al sur, sin sol"
+    },
+    {
+     "label": "Detrás del mueble pegado"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_283",
+   "start": 1510.067,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1114.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_284",
+   "start": 1515.7,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_11.png",
+   "dur": 5.967
+  },
+  {
+   "id": "mohotoxico_s_285",
+   "start": 1521.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1115.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_286",
+   "start": 1528.333,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_12.png",
+   "dur": 5.6
+  },
+  {
+   "id": "mohotoxico_s_287",
+   "start": 1533.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1116.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_288",
+   "start": 1540.4,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_13.png",
+   "dur": 3.733
+  },
+  {
+   "id": "mohotoxico_s_289",
+   "start": 1543.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1117.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_290",
+   "start": 1550.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_14.png",
+   "dur": 6.867
+  },
+  {
+   "id": "mohotoxico_s_291",
+   "start": 1557,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1118.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_292",
+   "start": 1563.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_15.png",
+   "dur": 5.6
+  },
+  {
+   "id": "mohotoxico_s_293",
+   "start": 1568.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_20.mp4",
+   "noSplit": true,
+   "dur": 7
+  },
+  {
+   "id": "mohotoxico_s_294",
+   "start": 1575.133,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_16.png",
+   "dur": 4.5
+  },
+  {
+   "id": "ov_framedphoto_1577",
+   "start": 1577.2,
+   "dur": 6.44,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FramedPhoto",
+   "theme": "earth",
+   "zone": "topLeft",
+   "image": "img/mt_s11_16.png",
+   "caption": "La prueba del espejo",
+   "sub": "Una hora contra la pared: si sale empañado, ahí condensa",
+   "kenburns": true
+  },
+  {
+   "id": "mohotoxico_s_295",
+   "start": 1579.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_17.png",
+   "dur": 5.767
+  },
+  {
+   "id": "mohotoxico_s_296",
+   "start": 1584.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_18.png",
+   "dur": 6.633
+  },
+  {
+   "id": "mohotoxico_s_297",
+   "start": 1591.167,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1101.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_298",
+   "start": 1597.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s11_01.png",
+   "dur": 7.433
+  },
+  {
+   "id": "mohotoxico_s_299",
+   "start": 1605,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1201.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_300",
+   "start": 1610.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_01.png",
+   "dur": 7.933
+  },
+  {
+   "id": "mohotoxico_s_301",
+   "start": 1618.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1202.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_302",
+   "start": 1624.933,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_02.png",
+   "dur": 7
+  },
+  {
+   "id": "mohotoxico_s_303",
+   "start": 1631.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1203.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_304",
+   "start": 1637.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h12.png",
+   "dur": 6.4
+  },
+  {
+   "id": "ov_numberedsteps_1639",
+   "start": 1638.51,
+   "dur": 11,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "Las cinco medidas",
+   "title": "Para que no vuelva",
+   "steps": [
+    {
+     "title": "Mueble a tres dedos",
+     "sub": "Que el aire circule por atrás",
+     "image": "img/mt_h14.png"
+    },
+    {
+     "title": "La ropa no se seca adentro",
+     "sub": "Suelta litros en una noche",
+     "image": "img/mt_s12_03.png"
+    },
+    {
+     "title": "Tapá las ollas",
+     "sub": "El vapor termina en la pared fría",
+     "image": "img/mt_s12_04.png"
+    }
+   ]
+  },
+  {
+   "id": "mohotoxico_s_305",
+   "start": 1643.6,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_03.png",
+   "dur": 7.433
+  },
+  {
+   "id": "mohotoxico_s_306",
+   "start": 1650.733,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1204.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_307",
+   "start": 1658.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_04.png",
+   "dur": 6.767
+  },
+  {
+   "id": "ov_checklistreveal_1665",
+   "start": 1665.42,
+   "dur": 8.96,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "Las medidas gratis",
+   "title": "Las dos que faltan",
+   "items": [
+    "Extractor 20 minutos DESPUÉS de la ducha",
+    "Ventanas de par en par 5 minutos, dos veces al día"
+   ],
+   "stamp": "GRATIS"
+  },
+  {
+   "id": "mohotoxico_s_308",
+   "start": 1665.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1207.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_309",
+   "start": 1671.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_05.png",
+   "dur": 5.3
+  },
+  {
+   "id": "mohotoxico_s_310",
+   "start": 1676.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h13.png",
+   "dur": 5.8
+  },
+  {
+   "id": "mohotoxico_s_311",
+   "start": 1681.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1208.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_312",
+   "start": 1688.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_06.png",
+   "dur": 5.933
+  },
+  {
+   "id": "mohotoxico_s_313",
+   "start": 1694.3,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_21.mp4",
+   "noSplit": true,
+   "dur": 8.367
+  },
+  {
+   "id": "mohotoxico_s_314",
+   "start": 1702.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_07.png",
+   "dur": 6.033
+  },
+  {
+   "id": "mohotoxico_s_315",
+   "start": 1708.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s12_08.png",
+   "dur": 5.567
+  },
+  {
+   "id": "ov_beforeafter_1710",
+   "start": 1710.46,
+   "dur": 7.56,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El resultado",
+   "beforeLabel": "Rincón húmedo",
+   "afterLabel": "Rincón seco",
+   "beforeImage": "img/mt_s01_02.png",
+   "afterImage": "img/mt_s12_17.png",
+   "caption": "Una pared seca no tiene moho, por más esporas que le caigan"
+  },
+  {
+   "id": "mohotoxico_s_316",
+   "start": 1713.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h14.png",
+   "dur": 8.467
+  },
+  {
+   "id": "mohotoxico_s_317",
+   "start": 1721.567,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1301.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_318",
+   "start": 1726.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s13_01.png",
+   "dur": 8.467
+  },
+  {
+   "id": "mohotoxico_s_319",
+   "start": 1735.033,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1302.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_320",
+   "start": 1743.267,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s13_03.png",
+   "dur": 7.9
+  },
+  {
+   "id": "mohotoxico_s_321",
+   "start": 1750.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1303.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_322",
+   "start": 1758.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s13_04.png",
+   "dur": 5.867
+  },
+  {
+   "id": "mohotoxico_s_323",
+   "start": 1764.533,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1304.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "ov_highlightsweep_1768",
+   "start": 1768.22,
+   "dur": 7.56,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HighlightSweep",
+   "theme": "earth",
+   "zone": "topLeft",
+   "pre": "La fórmula de la junta de silicona ",
+   "highlight": "está en la descripción",
+   "post": ".",
+   "note": "Bajá hasta 'el truco que mencioné en el video'"
+  },
+  {
+   "id": "mohotoxico_s_324",
+   "start": 1772.733,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s13_05.png",
+   "dur": 8.4
+  },
+  {
+   "id": "ov_ctacard_1779",
+   "start": 1778.59,
+   "dur": 8.68,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La colección",
+   "title": "Todo lo que se rompe en una casa",
+   "bullet": "Humedad, moho, filtraciones, óxido y madera, con las medidas exactas",
+   "price": 0,
+   "cta": "Enlace en la descripción",
+   "image": "img/mohotoxico_portada.png"
+  },
+  {
+   "id": "mohotoxico_s_325",
+   "start": 1780.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mohotoxico_landing.png",
+   "dur": 4.567
+  },
+  {
+   "id": "ov_checklistreveal_1784",
+   "start": 1783.72,
+   "dur": 11,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "Repaso",
+   "title": "Los cinco minutos",
+   "items": [
+    "Mojar con agua y dos gotas de detergente",
+    "Alcohol de 70, empapar",
+    "Esperar dos minutos sin tocar",
+    "Retirar de arriba abajo, paño a la bolsa",
+    "Secar y dejar el guardia de clavo"
+   ],
+   "stamp": "5 MIN"
+  },
+  {
+   "id": "mohotoxico_s_326",
+   "start": 1786.633,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_h16.png",
+   "dur": 7.1
+  },
+  {
+   "id": "mohotoxico_s_327",
+   "start": 1793.433,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s13_06.png",
+   "dur": 5.967
+  },
+  {
+   "id": "mohotoxico_s_328",
+   "start": 1799.1,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1308.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_329",
+   "start": 1807.367,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s13_07.png",
+   "dur": 7.767
+  },
+  {
+   "id": "mohotoxico_s_330",
+   "start": 1814.833,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1309.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_331",
+   "start": 1822.967,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "img/mt_s13_08.png",
+   "dur": 6.1
+  },
+  {
+   "id": "ov_bigstatreveal_1825",
+   "start": 1824.53,
+   "dur": 6.44,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "La medida que lo arregla",
+   "value": 3,
+   "prefix": "",
+   "suffix": " dedos",
+   "support": "Separá el mueble de la pared y ese rincón se entibia",
+   "source": ""
+  },
+  {
+   "id": "mohotoxico_s_332",
+   "start": 1828.767,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1310.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_333",
+   "start": 1836.867,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1311.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_334",
+   "start": 1844.467,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1312.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_335",
+   "start": 1851.233,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1313.mp4",
+   "noSplit": true,
+   "dur": 5
+  },
+  {
+   "id": "mohotoxico_s_336",
+   "start": 1859.333,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mt_c_25.mp4",
+   "noSplit": true,
+   "dur": 3.767
+  },
+  {
+   "id": "mohotoxico_s_337",
+   "start": 1862.8,
+   "kind": "raw",
+   "hue": "amber",
+   "darken": 0,
+   "src": "broll/mohotoxico/mt_v1301.mp4",
+   "noSplit": true,
+   "dur": 5
+  }
+ ]
+}
