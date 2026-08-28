@@ -1,0 +1,650 @@
+[
+  {
+    "id": "cme_v2_s14_free",
+    "ms": 1123120,
+    "dur": 57.5,
+    "tipo": "ESCENA",
+    "dice": "Pero hay otra prueba de ese mismo dia",
+    "mov": "MovDieciocho",
+    "escena": "MovDieciocho",
+    "_manual": true,
+    "_sec": "S14_GRATIS",
+    "_anchor": {
+      "startWord": 2668,
+      "endWord": 2675,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s14_intro",
+    "ms": 1123120,
+    "dur": 5.6,
+    "tipo": "CLIP",
+    "dice": "Pero hay otra cosa de ese mismo dia",
+    "nombre": "cms_s14_trapo_mira_patio",
+    "_manual": true,
+    "_sec": "S14_GRATIS",
+    "_anchor": {
+      "startWord": 2668,
+      "endWord": 2675,
+      "coverage": 0.875
+    }
+  },
+  {
+    "id": "cme_v2_s14_zero",
+    "ms": 1129000,
+    "dur": 5.6,
+    "tipo": "CLIP",
+    "dice": "Combinó tres cambios sin comprar otro equipo",
+    "nombre": "cms_s14_manos_marco_pesa",
+    "_manual": true,
+    "_sec": "S14_GRATIS",
+    "_anchor": {
+      "startWord": 2684,
+      "endWord": 2690,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e25",
+    "ms": 1135860,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "Un generador abierto no tira el ruido igual para todos lados",
+    "muestra": "Ícono de anillos asimétricos pegado al generador, con el rótulo al costado.",
+    "porque": "Es la física que hace posible el truco: si el ruido saliera parejo, girar no serviría de nada.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_soundfield.png",
+    "texto": "EL RUIDO NO SALE PAREJO",
+    "sfx": "zumbido que se ladea",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2696,
+      "endWord": 2706,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e26",
+    "ms": 1140020,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "tira más por el lado del escape y por el ventilador.",
+    "muestra": "Ícono de escape con dos flechas cortas, apoyado del lado brillante del lóbulo.",
+    "porque": "Nombra las dos bocas exactas por donde sale el ruido, que son las que hay que dar vuelta.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_escape.png",
+    "texto": "ESCAPE + VENTILADOR",
+    "sfx": "tick metálico",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2707,
+      "endWord": 2718,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e29",
+    "ms": 1153380,
+    "dur": 4.3,
+    "tipo": "ICONO",
+    "dice": "bajó dos decibeles.",
+    "muestra": "La lasca verde-voltio de −2 se despega del marcador y queda flotando al costado.",
+    "porque": "Primer premio de los tres regalos: se muestra como una pieza que se guarda, porque después se van a sumar.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "−2 dB",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2740,
+      "endWord": 2742,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e30",
+    "ms": 1155320,
+    "dur": 3.6,
+    "tipo": "TEXTO",
+    "dice": "Girarlo nada más.",
+    "muestra": "Rótulo corto en blanco sobre el generador ya girado.",
+    "porque": "Subraya el precio del primer premio, que es lo único que lo vuelve memorable.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "GRATIS",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 2743,
+      "endWord": 2745,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e31",
+    "ms": 1156820,
+    "dur": 4.6,
+    "tipo": "TEXTO",
+    "dice": "Segundo, le rompí la línea de vista.",
+    "muestra": "Numeral 2 en verde-voltio con la instrucción, en la misma posición donde estuvo el 1.",
+    "porque": "Mantiene la lista viva y avisa que empieza el segundo regalo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "2 · ROMPER LA LÍNEA DE VISTA",
+    "sfx": "golpe corto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2746,
+      "endWord": 2752,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e33",
+    "ms": 1164800,
+    "dur": 5.8,
+    "tipo": "ICONO",
+    "dice": "Si en el medio hay algo sólido y pesado que tape la vista",
+    "muestra": "Ícono de muro apoyado sobre la coronación real del muro bajo del patio.",
+    "porque": "Las dos palabras que importan son sólido y pesado; el ícono las pega al bloque de concreto que ya está en pantalla.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_muro.png",
+    "texto": "ALGO SÓLIDO Y PESADO EN EL MEDIO",
+    "sfx": "golpe de bloque",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2768,
+      "endWord": 2780,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e34",
+    "ms": 1168700,
+    "dur": 3.4,
+    "tipo": "TEXTO",
+    "dice": "el sonido tiene que rodearlo y pierde energía.",
+    "muestra": "Rótulo pegado a los anillos que salen doblados del otro lado del muro.",
+    "porque": "Explica en cuatro palabras por qué el muro funciona, justo mientras se ve el anillo doblándose.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "EL SONIDO TIENE QUE RODEARLO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 2781,
+      "endWord": 2788,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e37",
+    "ms": 1178620,
+    "dur": 5.2,
+    "tipo": "ICONO",
+    "dice": "Tres decibeles más.",
+    "muestra": "La lasca verde-voltio de −3 se despega y se apila arriba de la de −2.",
+    "porque": "Segundo premio; apilarlo sobre el anterior prepara la suma que viene en un minuto.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "−3 dB",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2804,
+      "endWord": 2806,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e38",
+    "ms": 1180200,
+    "dur": 4.4,
+    "tipo": "TEXTO",
+    "dice": "Y tercero, el más grande",
+    "muestra": "Numeral 3 en verde-voltio, más grande que los dos anteriores.",
+    "porque": "El propio guion dice que es el más grande: el numeral tiene que entrar con más peso que los otros dos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "3 · LA DISTANCIA",
+    "sfx": "golpe grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2807,
+      "endWord": 2811,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e39",
+    "ms": 1182380,
+    "dur": 3.4,
+    "tipo": "TEXTO",
+    "dice": "el que la gente no usa porque le da pereza la distancia.",
+    "muestra": "Rótulo en ámbar bajo el numeral 3.",
+    "porque": "Nombra el obstáculo real, que no es técnico sino de ganas, y así el espectador se reconoce.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LA QUE NADIE USA POR PEREZA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 2813,
+      "endWord": 2824,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e40",
+    "ms": 1185800,
+    "dur": 6,
+    "tipo": "ICONO",
+    "dice": "Cada vez que duplicas la distancia entre la fuente y el oído, al aire libre pierdes seis decibeles.",
+    "muestra": "Ícono de pasos sobre la regla de distancia que corre abajo del cuadro, con los anillos separándose al doblarse el número.",
+    "porque": "Es la única ley física del tramo y hay que dejarla escrita el tiempo suficiente para copiarla.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_pasos.png",
+    "texto": "DOBLE LA DISTANCIA = −6 dB AL AIRE LIBRE",
+    "sfx": "zumbido que se aleja",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2825,
+      "endWord": 2842,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e41",
+    "ms": 1191460,
+    "dur": 4.2,
+    "tipo": "ICONO",
+    "dice": "Seis.",
+    "muestra": "La lasca verde-voltio de −6, la más gorda, cae sobre las otras dos.",
+    "porque": "Tercer premio y el más grande; cierra la pila que se va a convertir en el once.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "−6 dB",
+    "sfx": "golpe grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2841,
+      "endWord": 2841,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s14_cable",
+    "ms": 1198340,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Con 20 metros de cable de calibre grueso",
+    "nombre": "cms_s14_desenrolla_cable_naranja",
+    "_manual": true,
+    "_sec": "S14_GRATIS",
+    "_anchor": {
+      "startWord": 2854,
+      "endWord": 2861,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e43",
+    "ms": 1198340,
+    "dur": 4.6,
+    "tipo": "ICONO",
+    "dice": "Con 20 metros de calibre grueso",
+    "muestra": "Ícono de rollo de cable pegado al rollo naranja real que Claudio va soltando.",
+    "porque": "Es lo único que hubo que comprar en todo el tramo gratis y conviene decirlo sin esconderlo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_cable.png",
+    "texto": "20 m DE CABLE GRUESO",
+    "sfx": "cable que se desenrolla",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2854,
+      "endWord": 2861,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e9",
+    "ms": 1198340,
+    "dur": 6.44,
+    "tipo": "CLIP",
+    "dice": "Con 20 metros de calibre grueso lo llevé al fondo del terreno, a 14 metros.",
+    "muestra": "Claudio desenrolla un rollo naranja de cable grueso caminando de espaldas hacia el fondo oscuro del terreno, el cable serpenteando detrás de él sobre el concreto.",
+    "porque": "Los veinte metros de cable son el único material que costó algo en esta parte, y el gesto de desenrollarlo caminando ES la distancia.",
+    "nombre": "cms_s14_desenrolla_cable_naranja",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is walking backwards across a dark concrete backyard at night unrolling a thick orange extension cord from a reel held in one hand, the cord snaking behind him along the ground, an open frame generator and a plywood box near the camera, a low block wall to one side, cold blue night light and one warm window glow far behind, wide shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same open frame generator and plywood box in the foreground, same low block wall, same distant warm window, nothing behind him changes or moves",
+      "action": "Action: he keeps unrolling the orange cord from the reel and steps backwards away from the camera three slow steps, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "cable que se desenrolla + pasos",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2854,
+      "endWord": 2870,
+      "coverage": 0.867
+    }
+  },
+  {
+    "id": "s14_e10",
+    "ms": 1204920,
+    "dur": 3.1,
+    "tipo": "CLIP",
+    "dice": "Seis decibeles por caminar, 20 pasos.",
+    "muestra": "Claudio parado al fondo del terreno junto a la caja ya reubicada, mirando hacia la casa que quedó chiquita del otro lado del patio.",
+    "porque": "Cierra el viaje: el mismo hombre, el mismo patio, pero visto desde el otro extremo, que es todo lo que hizo falta.",
+    "nombre": "cms_s14_fondo_terreno_mira",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is standing at the far end of a dark backyard beside a plywood box with a generator inside, looking back toward his house which is small in the distance, the orange cord running away from him along the ground, cold blue night light, wide shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box beside him, same orange cord on the ground, same distant house, nothing behind him changes or moves",
+      "action": "Action: he puts one hand on the top of the plywood box and turns his head to look back toward the house, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "grillos + motor apagado a lo lejos",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2871,
+      "endWord": 2876,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e45",
+    "ms": 1204920,
+    "dur": 3,
+    "tipo": "ICONO",
+    "dice": "Seis decibeles por caminar, 20 pasos.",
+    "muestra": "Ícono de pasos con el número, junto a las botas de Claudio en el fondo del terreno.",
+    "porque": "Traduce los metros a la unidad más barata que existe, que son pasos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_pasos.png",
+    "texto": "20 PASOS",
+    "sfx": "pasos en el concreto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2871,
+      "endWord": 2876,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e49",
+    "ms": 1219020,
+    "dur": 5,
+    "tipo": "ICONO",
+    "dice": "18 decibeles.",
+    "muestra": "Ícono de sonómetro con el 18 debajo de la flecha del 78 al 60.",
+    "porque": "La resta es la que se va a repartir en la lámina siguiente, así que tiene que quedar clara antes.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "18 dB",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2902,
+      "endWord": 2903,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e14",
+    "ms": 1232820,
+    "dur": 2.82,
+    "tipo": "CLIP",
+    "dice": "Y fíjate en el orden porque es lo importante.",
+    "muestra": "Claudio levanta el dedo índice a la altura del pecho, junto a la caja, sin abrir la mano.",
+    "porque": "Marca el cambio de tono: deja de contar números y pasa a dar la instrucción, y el gesto corto lo señala sin frenar el ritmo.",
+    "nombre": "cms_s14_dedo_indice_orden",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is standing beside a plywood box in a dark backyard raising one index finger at chest height, his other hand at his side, palm not facing the camera, cold blue night light with a warm window glow behind, medium shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box beside him, same low block wall, same distant warm window, nothing behind him changes or moves",
+      "action": "Action: he raises his index finger a little higher and tilts his head slightly to one side, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "tick seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2933,
+      "endWord": 2941,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e51",
+    "ms": 1232820,
+    "dur": 2.6,
+    "tipo": "TEXTO",
+    "dice": "Y fíjate en el orden porque es lo importante.",
+    "muestra": "Rótulo corto en ámbar al lado del dedo levantado.",
+    "porque": "Marca que lo que viene no es un dato más sino la conclusión del tramo.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "FÍJATE EN EL ORDEN",
+    "sfx": "tick seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2933,
+      "endWord": 2941,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e54",
+    "ms": 1241960,
+    "dur": 3.2,
+    "tipo": "TEXTO",
+    "dice": "Antes de construir nada",
+    "muestra": "Rótulo en ámbar sobre Claudio girando el generador.",
+    "porque": "Es la instrucción de orden que resume el tramo entero y va justo antes de los tres verbos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "ANTES DE CONSTRUIR NADA",
+    "sfx": "tick seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2954,
+      "endWord": 2957,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e17",
+    "ms": 1264780,
+    "dur": 4.28,
+    "tipo": "CLIP",
+    "dice": "Puede ser que con eso ya te alcance y te ahorres la tarde entera.",
+    "muestra": "Claudio apoya la mano en la caja de contrachapado todavía sin usar, con las tablas sobrantes y la sierra en el banco detrás.",
+    "porque": "La honestidad de la frase es admitir que la caja puede sobrar; el cuadro tiene que mostrar la caja y las herramientas quietas.",
+    "nombre": "cms_s14_caja_sin_usar_banco",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is standing beside a raw plywood box with one hand resting flat on its lid in a dark backyard, leftover plywood offcuts and a circular saw lying still on a workbench behind him, cold blue night light, medium shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box, same offcuts and circular saw on the workbench, same low block wall, nothing behind him changes or moves",
+      "action": "Action: he pats the lid of the box twice with his palm and lets his hand rest there, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "palmada sobre madera",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3003,
+      "endWord": 3016,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e58",
+    "ms": 1264780,
+    "dur": 4,
+    "tipo": "TEXTO",
+    "dice": "Puede ser que con eso ya te alcance y te ahorres la tarde entera.",
+    "muestra": "Rótulo blanco sobre la caja sin usar y las herramientas quietas.",
+    "porque": "Es la frase que compra confianza: el que enseña admite que su propio proyecto puede sobrar.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "PUEDE SER QUE YA TE ALCANCE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 3003,
+      "endWord": 3016,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e18",
+    "ms": 1270720,
+    "dur": 4.82,
+    "tipo": "CLIP",
+    "dice": "si vas a alejarlo con un cable largo, el calibre importa.",
+    "muestra": "Claudio levanta el rollo de cable naranja y busca con el pulgar el calibre impreso en la funda, acercándolo a la luz.",
+    "porque": "El calibre es un número escondido en la funda del cable; el gesto de buscarlo con el pulgar enseña dónde mirar.",
+    "nombre": "cms_s14_pulgar_calibre_funda",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is holding a coil of thick orange extension cord up close to his chest and running his thumb along the printed gauge markings on its jacket, tilting it toward a work light, dark backyard behind him, cold blue night light with one warm lamp, medium close shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same coil of orange cord in his hands, same dark backyard, same work light, nothing behind him changes or moves",
+      "action": "Action: he rotates the cord jacket slowly under his thumb and leans it a little further toward the light, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium close shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "funda de cable que cruje",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3019,
+      "endWord": 3029,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e59",
+    "ms": 1270720,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "si vas a alejarlo con un cable largo, el calibre importa.",
+    "muestra": "Ícono de cable sobre la funda naranja que el pulgar está recorriendo.",
+    "porque": "Abre la advertencia de seguridad justo donde la mano está buscando el dato en el cable real.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_cable.png",
+    "texto": "EL CALIBRE IMPORTA",
+    "sfx": "tick metálico",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3019,
+      "endWord": 3029,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s14_e60",
+    "ms": 1275420,
+    "dur": 5.4,
+    "tipo": "TEXTO",
+    "dice": "Un cable fino y largo se calienta",
+    "muestra": "Rótulo en ámbar sobre el macro del enchufe quemado.",
+    "porque": "Es el primero de los tres daños y va pegado a la evidencia física del enchufe amarillento.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "FINO Y LARGO = SE CALIENTA",
+    "sfx": "zumbido eléctrico",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3030,
+      "endWord": 3036,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_cta_100w",
+    "ms": 1290240,
+    "dur": 12.5,
+    "tipo": "CTA",
+    "dice": "Promete 100W, entrega 43W",
+    "texto": "PROMETE 100 W. ENTREGA 43 W.\\nPrueba rápida antes de pagar",
+    "icono": "CTA_QR_02",
+    "asset": "img/cmesilencio/cms_cta_qr_02_100w.png",
+    "_manual": true,
+    "_sec": "S14_GRATIS",
+    "_anchor": {
+      "startWord": 3068,
+      "endWord": 3071,
+      "coverage": 1
+    }
+  }
+]

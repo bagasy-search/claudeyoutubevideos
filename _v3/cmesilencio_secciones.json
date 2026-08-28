@@ -1,0 +1,146 @@
+[
+ {
+  "sec": "S1_HOOK",
+  "i0": 0,
+  "i1": 9,
+  "start": 0,
+  "end": 88.86,
+  "dur": 88.9,
+  "frases": 10
+ },
+ {
+  "sec": "S2_PORQUE_SUENA",
+  "i0": 10,
+  "i1": 31,
+  "start": 89.24,
+  "end": 213.34,
+  "dur": 124.1,
+  "frases": 22
+ },
+ {
+  "sec": "S3_HONESTIDAD",
+  "i0": 32,
+  "i1": 50,
+  "start": 213.72,
+  "end": 290.76,
+  "dur": 77,
+  "frases": 19
+ },
+ {
+  "sec": "S4_TRES_NUMEROS",
+  "i0": 51,
+  "i1": 64,
+  "start": 291.2,
+  "end": 358.88,
+  "dur": 67.7,
+  "frases": 14
+ },
+ {
+  "sec": "S5_TRES_IDEAS",
+  "i0": 65,
+  "i1": 87,
+  "start": 359.18,
+  "end": 439.7,
+  "dur": 80.5,
+  "frases": 23
+ },
+ {
+  "sec": "S6_DOS_DOLARES",
+  "i0": 88,
+  "i1": 106,
+  "start": 440.06,
+  "end": 502.9,
+  "dur": 62.8,
+  "frases": 19
+ },
+ {
+  "sec": "S7_FRACASOS",
+  "i0": 107,
+  "i1": 117,
+  "start": 503.3,
+  "end": 565.48,
+  "dur": 62.2,
+  "frases": 11
+ },
+ {
+  "sec": "S8_LISTA20",
+  "i0": 118,
+  "i1": 127,
+  "start": 565.88,
+  "end": 631.68,
+  "dur": 65.8,
+  "frases": 10
+ },
+ {
+  "sec": "S9_LABERINTO",
+  "i0": 128,
+  "i1": 144,
+  "start": 631.84,
+  "end": 738.86,
+  "dur": 107,
+  "frases": 17
+ },
+ {
+  "sec": "S10_LAMINA",
+  "i0": 145,
+  "i1": 151,
+  "start": 739.12,
+  "end": 788.64,
+  "dur": 49.5,
+  "frases": 7
+ },
+ {
+  "sec": "S11_VENTILACION",
+  "i0": 152,
+  "i1": 163,
+  "start": 789.2,
+  "end": 848.52,
+  "dur": 59.3,
+  "frases": 12
+ },
+ {
+  "sec": "S12_HORNO",
+  "i0": 164,
+  "i1": 183,
+  "start": 848.74,
+  "end": 942.78,
+  "dur": 94,
+  "frases": 20
+ },
+ {
+  "sec": "S13_MEDICION",
+  "i0": 184,
+  "i1": 200,
+  "start": 942.78,
+  "end": 1023.9,
+  "dur": 81.1,
+  "frases": 17
+ },
+ {
+  "sec": "S14_GRATIS",
+  "i0": 201,
+  "i1": 230,
+  "start": 1024.5,
+  "end": 1165,
+  "dur": 140.5,
+  "frases": 30
+ },
+ {
+  "sec": "S15_LANA",
+  "i0": 231,
+  "i1": 257,
+  "start": 1165.36,
+  "end": 1380.97,
+  "dur": 215.6,
+  "frases": 27
+ },
+ {
+  "sec": "S16_CIERRE",
+  "i0": 258,
+  "i1": 275,
+  "start": 1381.29,
+  "end": 1494.77,
+  "dur": 113.5,
+  "frases": 18
+ }
+]

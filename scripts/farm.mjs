@@ -90,12 +90,17 @@ const tarDir = process.env.TAR_DIR || ".";
 const tar = `${tarDir}/assets-${slug}.tar`;
 const avatarCandidates = [`public/avatar_${slug}.mp4`, `public/${slug}_opt.mp4`];
 const avatar = avatarCandidates.find((candidate) => fs.existsSync(candidate)) || avatarCandidates[0];
-const wav = `public/${slug}.wav`;
+const audioCandidates = [
+  process.env.AUDIO_FILE ? `public/${process.env.AUDIO_FILE.replace(/^public[\\/]/, "")}` : null,
+  `public/${slug}.wav`,
+  `public/${slug}_fish.wav`,
+].filter(Boolean);
+const wav = audioCandidates.find((candidate) => fs.existsSync(candidate)) || audioCandidates[0];
 if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
 const hasAvatar = fs.existsSync(avatar); // videos FACELESS do not have either canonical avatar path
 if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la narración`);
 // rutas relativas a public/ (el workflow extrae con -C public)
-let items = [`${slug}.wav`];
+let items = [wav.replace(/^public[\\/]/, "")];
 if (hasAvatar) items.unshift(avatar.replace(/^public[\\/]/, ""));
 // SFX: `public/` está en .gitignore, así que un worktree nuevo nace SIN public/sfx. Este `if` se
 // escribió como defensa, pero la rama defensiva ES el caso roto: el tar salía sin sfx, en silencio,

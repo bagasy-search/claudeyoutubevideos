@@ -1,0 +1,427 @@
+[
+  {
+    "id": "s16_e1",
+    "ms": 1525950,
+    "dur": 4.2,
+    "tipo": "CLIP",
+    "dice": "Cerremos 78 decibeles al principio, 60 al final",
+    "muestra": "Plano largo del patio de noche desde donde arrancó el video: la caja cerrada con el generador andando bajo adentro, el muro bajo y la ventana del vecino, y Claudio chico al costado.",
+    "porque": "La cámara termina donde empezó, en el mismo encuadre alto del hook, pero con otro número y otra noche: ese es el cierre del video entero.",
+    "nombre": "cms_s16_patio_noche_cierre",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is standing small at the edge of a dark concrete backyard at night beside a closed raw plywood box with a generator running quietly inside it, a low block wall and the neighbour lit yellow window beyond, an orange cord running along the ground, cold blue night light, wide shot from high up, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same closed plywood box, same low block wall, same lit yellow window, same orange cord on the ground, nothing behind him changes or moves",
+      "action": "Action: he walks two slow steps toward the box and stops beside it with one hand on its lid, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "motor bajo y parejo + grillos",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3610,
+      "endWord": 3617,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e20",
+    "ms": 1525950,
+    "dur": 4.2,
+    "tipo": "TEXTO",
+    "dice": "Cerremos",
+    "muestra": "Rótulo en verde-voltio en la esquina del patio nocturno.",
+    "porque": "Marca el arranque del cierre para que el espectador sepa que empieza el resumen y no se vaya.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "CERREMOS",
+    "sfx": "golpe seco",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3610,
+      "endWord": 3610,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e21",
+    "ms": 1527330,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "78 decibeles al principio",
+    "muestra": "Ícono de sonómetro con el 78, en el lugar alto del cuadro donde estuvo en el hook.",
+    "porque": "El número de partida vuelve a su posición original para cerrar el arco visual del video.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "78 dB AL PRINCIPIO",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3611,
+      "endWord": 3614,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e22",
+    "ms": 1529970,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "60 al final",
+    "muestra": "Ícono de sonómetro con el 60, entrando justo debajo del 78.",
+    "porque": "Los dos números tienen que convivir un instante para que la caída se lea como distancia.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "60 dB AL FINAL",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3615,
+      "endWord": 3617,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e23",
+    "ms": 1533590,
+    "dur": 3.2,
+    "tipo": "ICONO",
+    "dice": "20 dólares en materiales",
+    "muestra": "Ícono de billete con el total del gasto, junto a la foto de la caja de la lámina.",
+    "porque": "El precio del proyecto entero es el segundo titular del video y va pegado al resultado.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_dolar.png",
+    "texto": "$20 EN MATERIALES",
+    "sfx": "roce de billete",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3622,
+      "endWord": 3625,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e24",
+    "ms": 1537530,
+    "dur": 2.8,
+    "tipo": "ICONO",
+    "dice": "y una tarde de trabajo.",
+    "muestra": "Ícono de reloj con el tiempo de obra, al lado del precio.",
+    "porque": "El costo verdadero de un proyecto casero es plata más tarde, y las dos cosas van juntas.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_reloj.png",
+    "texto": "UNA TARDE",
+    "sfx": "tick de reloj",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3632,
+      "endWord": 3636,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e26",
+    "ms": 1542530,
+    "dur": 2.4,
+    "tipo": "ICONO",
+    "dice": "girar el generador",
+    "muestra": "Ícono de giro que cae en el primer renglón de los cinco gestos.",
+    "porque": "Primero de los cinco gestos gratis, entrando en el orden exacto en que se nombran.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_giro.png",
+    "texto": "GIRAR EL GENERADOR",
+    "sfx": "tick",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3645,
+      "endWord": 3647,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e28",
+    "ms": 1545770,
+    "dur": 2.4,
+    "tipo": "ICONO",
+    "dice": "poner un muro en el medio",
+    "muestra": "Ícono de muro que cae en el tercer renglón.",
+    "porque": "Tercer gesto gratis, el que usa lo que ya está en el patio.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_muro.png",
+    "texto": "UN MURO EN EL MEDIO",
+    "sfx": "tick",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3651,
+      "endWord": 3656,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_cta_todo",
+    "ms": 1580850,
+    "dur": 15,
+    "tipo": "CTA",
+    "dice": "todo medido reune las dos guias",
+    "texto": "TODO MEDIDO\\nRuido · consumo · respaldo",
+    "icono": "CTA_QR_03",
+    "asset": "img/cmesilencio/cms_cta_qr_03_todo_medido.png",
+    "_manual": true,
+    "_sec": "S16_CIERRE",
+    "_anchor": {
+      "startWord": 3741,
+      "endWord": 3746,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e16",
+    "ms": 1600950,
+    "dur": 7.86,
+    "tipo": "CLIP",
+    "dice": "¿a cuántos metros está tu generador de la ventana de tu vecino?",
+    "muestra": "Claudio apoyado en el muro bajo del patio, mirando la ventana amarilla del vecino y midiendo la distancia con la vista.",
+    "porque": "La pregunta a la audiencia se hace en el lugar de la pregunta: el muro, la ventana y los metros que hay en el medio.",
+    "nombre": "cms_s16_muro_mira_ventana",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is leaning with both forearms on a low block wall in a dark backyard at night looking across at the neighbour lit yellow window on the other side, the closed plywood box and the running generator behind him, cold blue night light, medium wide shot from the side, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same low block wall, same lit yellow window across it, same closed plywood box behind him, nothing behind him changes or moves",
+      "action": "Action: he shifts his forearms on the wall and turns his head slowly from the window back toward the box, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "grillos + motor bajo",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3792,
+      "endWord": 3803,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e50",
+    "ms": 1600950,
+    "dur": 4.4,
+    "tipo": "TEXTO",
+    "dice": "¿a cuántos metros está tu generador de la ventana de tu vecino?",
+    "muestra": "La pregunta escrita sobre el muro bajo, entre Claudio y la ventana amarilla.",
+    "porque": "La pregunta a los comentarios se lee mejor si está literalmente en el espacio del que habla.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "¿A CUÁNTOS METROS ESTÁ TU GENERADOR?",
+    "sfx": "tick",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3792,
+      "endWord": 3803,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e51",
+    "ms": 1603370,
+    "dur": 3.4,
+    "tipo": "ICONO",
+    "dice": "de la ventana de tu vecino?",
+    "muestra": "Ícono de casa sobre la ventana amarilla del otro lado del muro.",
+    "porque": "Fija el otro extremo de la medida en el objeto que fue el antagonista de todo el video.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_casa.png",
+    "texto": "DE LA VENTANA DE TU VECINO",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3798,
+      "endWord": 3803,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e17",
+    "ms": 1605290,
+    "dur": 6.28,
+    "tipo": "CLIP",
+    "dice": "Si son menos de 7, haz la prueba de la distancia antes que nada y dime cuánto te bajó.",
+    "muestra": "Claudio camina contando pasos desde el generador hacia la pared del vecino, marcando con el pie cada paso sobre el concreto.",
+    "porque": "La tarea que se le pide al espectador es caminar y contar; hay que verlo hacer exactamente eso, con los pies.",
+    "nombre": "cms_s16_cuenta_pasos_pared",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is walking heel to toe across a dark concrete backyard from a running generator toward a boundary wall, looking down at his boots and counting his steps, chalk marks on the concrete beside him, cold blue night light, wide shot from the side, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same running generator behind him, same boundary wall ahead, same chalk marks on the concrete, nothing behind him changes or moves",
+      "action": "Action: he takes three careful heel to toe steps toward the wall while looking down at his boots, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "pasos contados en el concreto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3804,
+      "endWord": 3822,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e52",
+    "ms": 1605290,
+    "dur": 5,
+    "tipo": "TEXTO",
+    "dice": "Si son menos de 7, haz la prueba de la distancia antes que nada",
+    "muestra": "Rótulo sobre el concreto donde Claudio va contando pasos.",
+    "porque": "Es la tarea concreta que se le pide al espectador y tiene que quedar escrita mientras se demuestra.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "MENOS DE 7 m → HAZ LA PRUEBA DE LA DISTANCIA",
+    "sfx": "pasos",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3804,
+      "endWord": 3817,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e53",
+    "ms": 1609990,
+    "dur": 2.4,
+    "tipo": "TEXTO",
+    "dice": "y dime cuánto te bajó.",
+    "muestra": "Rótulo corto con la invitación al comentario, al pie del cuadro.",
+    "porque": "Cierra el pedido con la acción exacta que se espera en los comentarios.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "Y DIME CUÁNTO TE BAJÓ",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 3818,
+      "endWord": 3822,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e54",
+    "ms": 1612250,
+    "dur": 5,
+    "tipo": "TEXTO",
+    "dice": "Si esto te sirvió, suscríbete",
+    "muestra": "Rótulo sobre el sonómetro encendido en la oscuridad del apagón.",
+    "porque": "El pedido de suscripción va apoyado en la promesa del próximo video y no suelto.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "SUSCRÍBETE",
+    "sfx": "tick",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3823,
+      "endWord": 3827,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e18",
+    "ms": 1615170,
+    "dur": 5.78,
+    "tipo": "T2V",
+    "dice": "el que viene lo grabo con el medidor puesto durante un apagón entero, de punta a punta",
+    "muestra": "El sonómetro amarillo apoyado en el banco del patio durante un apagón, con la casa a oscuras detrás y el número corriendo solo en la pantalla.",
+    "porque": "El próximo video se promete mostrando su instrumento en su escenario: apagón, casa a oscuras, medidor encendido.",
+    "nombre": "cms_s16_medidor_apagon_entero",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "A yellow handheld sound level meter stands alone on a wooden bench in a dark backyard during a blackout, its display glowing and the number drifting, the house behind it completely dark with no window lit, one distant streetless sky, cold blue night light, shallow depth of field, documentary feel, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "grillos + motor lejano + tick del medidor",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3829,
+      "endWord": 3845,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e55",
+    "ms": 1615670,
+    "dur": 4.6,
+    "tipo": "TEXTO",
+    "dice": "lo grabo con el medidor puesto durante un apagón entero, de punta a punta",
+    "muestra": "Rótulo bajo el medidor, con el número corriendo detrás.",
+    "porque": "Es el gancho del próximo video: un apagón entero medido de punta a punta, dicho con sus palabras.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "EL QUE VIENE: UN APAGÓN ENTERO CON EL MEDIDOR PUESTO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 3832,
+      "endWord": 3845,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s16_e56",
+    "ms": 1624630,
+    "dur": 2.12,
+    "tipo": "TEXTO",
+    "dice": "Cuídate y mide antes de comprar.",
+    "muestra": "La firma del canal en verde-voltio, al lado del código, sobre el patio de noche.",
+    "porque": "Es la frase de cierre del canal y tiene que quedar escrita al lado del código, sin tapar el avatar.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "MIDE ANTES DE COMPRAR",
+    "sfx": "cierre suave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 3858,
+      "endWord": 3863,
+      "coverage": 1
+    }
+  }
+]

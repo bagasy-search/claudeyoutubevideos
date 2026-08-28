@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cme_v2_s9_safe_place",
+    "ms": 801320,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Primero colocas el generador en la posicion segura",
+    "nombre": "cms_s13_espaldas_ventana_vecino",
+    "_manual": true,
+    "_sec": "S9_LABERINTO",
+    "_anchor": {
+      "startWord": 1916,
+      "endWord": 1923,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s9_sightline",
+    "ms": 825120,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "La parte que hace que la pantalla funcione es la linea de vista",
+    "nombre": "cms_s9_mano_recorre_pared",
+    "_manual": true,
+    "_sec": "S9_LABERINTO",
+    "_anchor": {
+      "startWord": 1977,
+      "endWord": 1989,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s9_soundline",
+    "ms": 828960,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "El sonido viaja directo desde el motor hasta el oido",
+    "nombre": "cms_s9_haz_recto_sonido",
+    "_manual": true,
+    "_sec": "S9_LABERINTO",
+    "_anchor": {
+      "startWord": 1990,
+      "endWord": 1999,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s9_panels",
+    "ms": 839880,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Puedes usar tres paneles en forma de U abierta",
+    "nombre": "cms_s9_regla_plegable_hueco",
+    "_manual": true,
+    "_sec": "S9_LABERINTO",
+    "_anchor": {
+      "startWord": 2017,
+      "endWord": 2025,
+      "coverage": 1
+    }
+  }
+]

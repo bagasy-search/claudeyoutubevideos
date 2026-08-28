@@ -1,0 +1,383 @@
+[
+  {
+    "id": "s3_e1",
+    "ms": 239580,
+    "dur": 4.3,
+    "tipo": "CLIP",
+    "dice": "Ahora el trato de siempre. Yo no te vendo nada, yo mido.",
+    "muestra": "Claudio apoyando el sonómetro amarillo de mano sobre la tapa de la caja en el patio y dejando la mano encima, mirando a cámara.",
+    "porque": "S2 cerró con la palma sobre esta misma tapa: la sección abre poniendo el medidor encima de ella, sin mover la cámara de lugar. El objeto que aparece es el que da autoridad al trato.",
+    "nombre": "cms_s3_sonometro_sobre_tapa",
+    "foto_change": "he is standing in the backyard setting a yellow handheld sound level meter down flat on the raw plywood lid of the box and leaving his hand resting on it, looking toward the camera, the switched off open frame generator beside the box, the low concrete block wall behind him, cool blue grey late afternoon light, medium shot, he is on the right of the frame, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same raw plywood box, same switched off generator, same low concrete block wall, same neighbour's house behind, nothing behind him changes or moves.",
+      "action": "Action: he sets the yellow sound meter down on the plywood lid and leaves his hand flat over it, lifting his chin toward the camera, his lips stay closed, one single continuous action, his hand stays in contact with the meter.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "plástico duro apoyado sobre madera",
+    "escena": null,
+    "_anchor": {
+      "startWord": 564,
+      "endWord": 575,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e2",
+    "ms": 241680,
+    "dur": 3.6,
+    "tipo": "TEXTO",
+    "dice": "Yo no te vendo nada, yo mido",
+    "muestra": "Rótulo del trato del canal apoyado sobre la tapa, al lado del sonómetro.",
+    "porque": "Es la promesa de marca y el permiso para todo lo que viene: si el espectador acepta este renglón, acepta también los tres «no» que siguen.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "YO NO TE VENDO NADA · YO MIDO",
+    "sfx": "tick suave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 569,
+      "endWord": 575,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e3",
+    "ms": 245040,
+    "dur": 3.3,
+    "tipo": "T2V",
+    "dice": "Y te digo de entrada lo que esta caja no hace",
+    "muestra": "Macro del sonómetro amarillo apoyado en la madera: el micrófono con su espuma, la rueda de escalas y el cordón enroscado al costado.",
+    "porque": "El instrumento es la firma del canal y acá es literalmente la prueba de la frase. Verlo de cerca antes de la lista de límites carga de peso cada «no».",
+    "nombre": "cms_s3_macro_sonometro_espuma",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro of a yellow handheld sound level meter lying on raw wood, its foam windscreen microphone in focus, the scale selector wheel and a coiled wrist cord beside it, cool overcast light, very shallow depth of field, slow drift across the instrument, no people, no hands, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "clic de la rueda de escalas",
+    "escena": null,
+    "_anchor": {
+      "startWord": 576,
+      "endWord": 586,
+      "coverage": 0.909
+    }
+  },
+  {
+    "id": "s3_e6",
+    "ms": 245260,
+    "dur": 4.2,
+    "tipo": "TEXTO",
+    "dice": "te digo de entrada lo que esta caja no hace",
+    "muestra": "Rótulo de capítulo entrando por el borde, sobre el brazo que sostiene el medidor.",
+    "porque": "Anuncia que arranca la lista de límites. Es la señal que le permite al espectador prestar atención a tres negativas seguidas sin sentir que el video se cae.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LO QUE ESTA CAJA NO HACE",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 577,
+      "endWord": 586,
+      "coverage": 0.9
+    }
+  },
+  {
+    "id": "s3_e5",
+    "ms": 248780,
+    "dur": 5.3,
+    "tipo": "CLIP",
+    "dice": "si no te lo digo sería un vendedor y no un tipo con un medidor en la mano",
+    "muestra": "Claudio de pie en el patio con el sonómetro amarillo levantado a la altura del pecho, girándolo para que el micrófono apunte hacia el generador apagado.",
+    "porque": "La frase distingue dos personajes y la imagen elige uno: el que apunta el micrófono. El gesto está en el brazo y en el hombro, la mano sólo sostiene el aparato.",
+    "nombre": "cms_s3_apunta_micro_generador",
+    "foto_change": "he is standing in the backyard holding the yellow handheld sound level meter up at chest height and turning it so its foam microphone points toward the switched off open frame generator on the concrete, looking at the meter, the low concrete block wall and the neighbour's house behind him, cool blue grey late afternoon light, medium shot, he is on the left of the frame, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same switched off generator, same raw plywood box beside it, same low concrete block wall, same neighbour's house behind, nothing behind him changes or moves.",
+      "action": "Action: he rotates his wrist so the microphone of the meter turns toward the generator and holds it there, his lips stay closed, one single continuous action, both hands stay in contact with the meter.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "viento suave en la espuma del micrófono",
+    "escena": null,
+    "_anchor": {
+      "startWord": 588,
+      "endWord": 605,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e4",
+    "ms": 251720,
+    "dur": 3.4,
+    "tipo": "ICONO",
+    "dice": "un tipo con un medidor en la mano",
+    "muestra": "Un ícono de medidor se apoya sobre el instrumento real, con la etiqueta del trato.",
+    "porque": "Pega la identidad del canal al objeto: acá no hay opinión, hay un aparato. Es lo que separa este video de los cientos que muestran cajas sin medir nada.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "TODO MEDIDO · NADA VENDIDO",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 598,
+      "endWord": 605,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e8",
+    "ms": 254240,
+    "dur": 5.2,
+    "tipo": "ICONO",
+    "dice": "Esta caja no deja el generador en silencio. Nadie lo deja en silencio.",
+    "muestra": "Un ícono de prohibido se apoya sobre la caja de noche, numerado como el primero de la lista.",
+    "porque": "Numerar los tres «no» convierte una advertencia en una estructura que el espectador puede seguir. El primero es el que desactiva la expectativa mágica del título.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_prohibido.png",
+    "texto": "NO 1 · NO LO DEJA EN SILENCIO",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 606,
+      "endWord": 618,
+      "coverage": 0.846
+    }
+  },
+  {
+    "id": "s3_e10",
+    "ms": 259300,
+    "dur": 4.4,
+    "tipo": "CLIP",
+    "dice": "Lo que hace es bajarlo de no puedo dormir a ruido de fondo",
+    "muestra": "Claudio en el patio de noche con la mano apoyada en el costado de la caja mientras el generador zumba adentro, la cabeza girada hacia la ventana del vecino que se apaga.",
+    "porque": "El beneficio real del video es un cambio de categoría, no un apagado. La ventana que se apaga detrás de él es la medida honesta de ese cambio.",
+    "nombre": "cms_s3_mano_costado_caja_noche",
+    "foto_change": "he is standing in the backyard at night with one hand resting flat on the side of the plywood box while the generator runs inside it, his head turned toward the low block wall where the neighbour's window is going dark, cold blue night light with one warm work lamp from the left, medium shot, he is on the left of the frame, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box with the generator running inside, same low concrete block wall, same work lamp from the left, nothing behind him changes or moves.",
+      "action": "Action: he turns his head slowly toward the wall and lets his shoulders drop, his lips stay closed, one single continuous action, his hand stays in contact with the side of the box.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "zumbido de fondo que se vuelve tolerable",
+    "escena": null,
+    "_anchor": {
+      "startWord": 619,
+      "endWord": 631,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e11",
+    "ms": 260200,
+    "dur": 4.6,
+    "tipo": "TEXTO",
+    "dice": "bajarlo de no puedo dormir a ruido de fondo",
+    "muestra": "Dos estados enfrentados en un renglón, con una flecha corta entre ellos, apoyados sobre el costado de la caja.",
+    "porque": "Es la promesa realista del video escrita en las palabras del espectador, no en decibeles. Sirve como vara para juzgar el resultado del final.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "«NO PUEDO DORMIR» → «RUIDO DE FONDO»",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 623,
+      "endWord": 631,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e12",
+    "ms": 264480,
+    "dur": 2.3,
+    "tipo": "T2V",
+    "dice": "Tampoco arregla un escape roto",
+    "muestra": "Macro del escape corto del generador con una grieta en la soldadura y un cerco de hollín negro alrededor.",
+    "porque": "El segundo «no» necesita su síntoma visible. La grieta con hollín es lo que el espectador puede ir a buscar en su propia máquina esta tarde.",
+    "nombre": "cms_s3_grieta_escape_hollin",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro of a short generator exhaust muffler with a hairline crack along a weld seam and a black soot halo spreading around it, heat discoloured metal, cool light from one side, very shallow depth of field, no people, no hands, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "silbido irregular de escape",
+    "escena": null,
+    "_anchor": {
+      "startWord": 632,
+      "endWord": 636,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e13",
+    "ms": 264480,
+    "dur": 5,
+    "tipo": "ICONO",
+    "dice": "Tampoco arregla un escape roto",
+    "muestra": "Un ícono de prohibido se apoya sobre la grieta del escape, numerado como el segundo de la lista.",
+    "porque": "Mantiene la estructura de los tres «no» y clava la advertencia sobre la falla concreta en vez de dejarla flotando como un consejo general.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_prohibido.png",
+    "texto": "NO 2 · NO ARREGLA UN ESCAPE ROTO",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 632,
+      "endWord": 636,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e14",
+    "ms": 266700,
+    "dur": 5.6,
+    "tipo": "T2V",
+    "dice": "Si tu generador ya venía con un golpeteo metálico o un silbido, eso es una falla mecánica",
+    "muestra": "Macro del silenciador con la junta soplada: un hilo fino de humo saliendo por el borde de la brida y el metal decolorado por el calor alrededor de los tornillos.",
+    "porque": "Golpeteo y silbido son dos síntomas distintos y el segundo es el más difícil de mostrar. El hilo de humo saliendo por la brida lo hace visible sin efectos.",
+    "nombre": "cms_s3_junta_soplada_humo",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "extreme macro of a blown exhaust flange gasket on a small engine, a thin thread of smoke escaping from the edge of the flange, heat discoloured metal around the bolts, cool light against a dark background, very shallow depth of field, no people, no hands, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "silbido fino y golpeteo metálico irregular",
+    "escena": null,
+    "_anchor": {
+      "startWord": 637,
+      "endWord": 653,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e16",
+    "ms": 271780,
+    "dur": 6.7,
+    "tipo": "T2V",
+    "dice": "eso es una falla mecánica y la caja te la va a esconder",
+    "muestra": "Vista desde adentro de la caja cerrada: las paredes de contrachapado forradas de lana ocre en penumbra y, en el centro, el motor trabajando con el golpeteo apagándose contra la fibra.",
+    "porque": "Esconder es exactamente lo que hace la lana, y la única forma de mostrarlo es meterse adentro de la caja. El plano largo deja sentir que ahí adentro nadie escucharía nada raro.",
+    "nombre": "cms_s3_interior_caja_penumbra",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "view from inside a closed plywood box, ochre yellow mineral wool lining the walls in deep shadow, a small engine running in the centre of the space, a single shaft of light from the upper opening falling across it, warm dim interior, very slow push in, no people, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "golpeteo metálico que se apaga contra la fibra",
+    "escena": null,
+    "_anchor": {
+      "startWord": 649,
+      "endWord": 661,
+      "coverage": 0.923
+    }
+  },
+  {
+    "id": "s3_e15",
+    "ms": 273800,
+    "dur": 4,
+    "tipo": "TEXTO",
+    "dice": "la caja te la va a esconder hasta que se convierta en algo caro",
+    "muestra": "Rótulo de advertencia apoyado sobre el hilo de humo, en ámbar.",
+    "porque": "Es la consecuencia económica del segundo «no» y va en ámbar porque en esta VARA el ámbar es el color del dinero. La caja tapa el síntoma, no la falla.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "TE LA ESCONDE HASTA QUE SALE CARA",
+    "sfx": null,
+    "escena": null,
+    "_anchor": {
+      "startWord": 655,
+      "endWord": 668,
+      "coverage": 0.929
+    }
+  },
+  {
+    "id": "s3_e19",
+    "ms": 339440,
+    "dur": 4.4,
+    "tipo": "T2V",
+    "dice": "Un generador quema gasolina y produce monóxido de carbono",
+    "muestra": "Macro de la boca del tubo flexible metálico de escape saliendo por el costado de la caja, con el aire ondulando y deformando el muro que está detrás.",
+    "porque": "El gas no se ve, así que se muestra lo único que sí: la deformación del aire en la boca del tubo. Es la primera imagen de un bloque que tiene que dar miedo sin exagerar.",
+    "nombre": "cms_s3_boca_tubo_ondula",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": "macro of the open mouth of a flexible metal exhaust duct coming out of the side of a plywood box, strong heat shimmer distorting the concrete block wall visible behind it, cool late afternoon light, shallow depth of field, no people, no hands, no text",
+    "icono": null,
+    "texto": null,
+    "sfx": "soplido caliente y grave del escape",
+    "escena": null,
+    "_anchor": {
+      "startWord": 814,
+      "endWord": 822,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s3_e20",
+    "ms": 341880,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "produce monóxido de carbono",
+    "muestra": "Un ícono de advertencia se apoya sobre la ondulación de aire caliente, en ámbar de alerta.",
+    "porque": "El gas necesita un nombre en pantalla porque es lo único del video que mata. El ícono lo fija sobre la ondulación, que es su única manifestación visible.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_calavera.png",
+    "texto": "MONÓXIDO DE CARBONO",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 819,
+      "endWord": 822,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_cta_luz",
+    "ms": 405660,
+    "dur": 12.5,
+    "tipo": "CTA",
+    "dice": "Cuando se va la luz, una guia de todo medido",
+    "texto": "CUANDO SE VA LA LUZ\\nGuía de respaldo sin compras a ciegas",
+    "icono": "CTA_QR_01",
+    "asset": "img/cmesilencio/cms_cta_qr_01_luz.png",
+    "_manual": true,
+    "_sec": "S3_HONESTIDAD",
+    "_anchor": {
+      "startWord": 965,
+      "endWord": 974,
+      "coverage": 1
+    }
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "id": "s13_e1",
+    "ms": 1013340,
+    "dur": 7.2,
+    "tipo": "CLIP",
+    "dice": "Ahora sí, la medición.",
+    "muestra": "Claudio se endereza al lado de la caja de contrachapado y saca el teléfono con la aplicación de medidor de sonido; detrás, el generador de marco de tubo andando y el muro bajo con la ventana amarilla del vecino.",
+    "porque": "S12 nos dejó adentro de la caja recalentada; la sección arranca saliendo de ahí al patio, y lo primero que entra al cuadro es el objeto que da los números.",
+    "nombre": "cms_s13_endereza_medidor_patio",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is straightening up next to a raw plywood soundproof box in a concrete backyard at dusk, holding a phone flat in one hand with a sound meter app on its screen, an open tube frame generator with a red orange frame running behind him, a low block wall and the lit yellow window of the neighbour house further back, cold blue grey evening light from the left, medium wide shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same plywood box, same red orange tube frame generator, same low block wall, same lit yellow window behind the wall, nothing behind him changes or moves",
+      "action": "Action: he lifts the phone up to chest height and tilts its screen toward himself while his other hand rests on the top edge of the plywood box, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "motor de generador al ralentí + pasos en el concreto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2421,
+      "endWord": 2424,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e19",
+    "ms": 1019140,
+    "dur": 3.6,
+    "tipo": "TEXTO",
+    "dice": "Generador de 3.500 vatios, abierto de marco de tubo.",
+    "muestra": "Ficha del aparato pegada al marco de tubo del generador, en gris frío sobre el rojo del marco.",
+    "porque": "El dato técnico se dice una sola vez y hay que poder volver a él con la vista.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "3.500 W · MARCO ABIERTO",
+    "sfx": "tick suave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2432,
+      "endWord": 2441,
+      "coverage": 0.889
+    }
+  },
+  {
+    "id": "s13_e2",
+    "ms": 1019140,
+    "dur": 4.68,
+    "tipo": "CLIP",
+    "dice": "Generador de 3.500 vatios, abierto de marco de tubo.",
+    "muestra": "El generador entero en el centro del patio: marco de tubo rojo, motor arriba, tanque negro, escape corto a un costado. Claudio apoya la mano en el marco.",
+    "porque": "La frase nombra el aparato exacto; hay que ver el marco de tubo abierto para que después se entienda por qué el ruido sale por todos lados.",
+    "nombre": "cms_s13_generador_marco_tubo",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is crouching beside an open frame construction generator in a concrete backyard, red orange tube frame, engine on top, black fuel tank, grey sheet metal covers and a short exhaust on one side, his hand resting on the tube frame, a low block wall behind, cold blue grey evening light, medium shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same open frame generator, same red orange tube frame, same black fuel tank, same low block wall behind him, nothing behind him changes or moves",
+      "action": "Action: he slides his hand along the top rail of the tube frame from left to right and leans slightly toward the engine, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "motor parejo + roce de la mano en el tubo",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2432,
+      "endWord": 2441,
+      "coverage": 0.889
+    }
+  },
+  {
+    "id": "s13_e21",
+    "ms": 1031340,
+    "dur": 4.4,
+    "tipo": "ICONO",
+    "dice": "Refrigerador, congelador, seis luces y un calentador chico.",
+    "muestra": "Ícono de enchufe apoyado sobre la esquina de la lámina de la carga.",
+    "porque": "Amarra la lista de aparatos a la idea de que la carga fue idéntica, que es lo que hace honesta la comparación.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_enchufe.png",
+    "texto": "MISMA CARGA EN LAS 4",
+    "sfx": "tick suave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2456,
+      "endWord": 2463,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e5",
+    "ms": 1031340,
+    "dur": 4.7,
+    "tipo": "LAMINA",
+    "dice": "Refrigerador, congelador, seis luces y un calentador chico.",
+    "muestra": "Hoja de cuaderno con la carga anotada a mano y cuatro miniaturas reales al costado: refrigerador, congelador, un racimo de seis focos y un calentador eléctrico chico.",
+    "porque": "Son cuatro cosas dichas de corrido; en lista se leen en el mismo tiempo que se dicen y quedan como el patrón fijo de las cuatro pruebas.",
+    "nombre": "cms_s13_lamina_carga_fija",
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LA MISMA CARGA, LAS 4 VECES\nRefrigerador · Congelador · 6 luces · Calentador chico",
+    "sfx": "lápiz sobre papel",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2456,
+      "endWord": 2463,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s13_base",
+    "ms": 1041940,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Sin barrera, sobre el piso de concreto",
+    "nombre": "cms_s13_pantalla_setenta_ocho",
+    "_manual": true,
+    "_sec": "S13_MEDICION",
+    "_anchor": {
+      "startWord": 2478,
+      "endWord": 2484,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e6",
+    "ms": 1041940,
+    "dur": 4.3,
+    "tipo": "CLIP",
+    "dice": "Sin nada sobre el piso de concreto, apuntando a la casa del vecino.",
+    "muestra": "Claudio de espaldas junto al generador desnudo sobre el concreto, mirando hacia el muro bajo y la ventana amarilla encendida del vecino.",
+    "porque": "La frase da la dirección del ruido; la ventana amarilla es el blanco de todo el video y tiene que estar en el cuadro cuando se nombra.",
+    "nombre": "cms_s13_espaldas_ventana_vecino",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is standing with his back half turned to camera beside a bare open frame generator sitting directly on stained grey concrete, looking toward a low block wall and a lit yellow window on the other side of it, cold blue grey evening light, wide shot, he is small on the left of the frame, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same bare generator on the concrete, same low block wall, same lit yellow window behind the wall, nothing behind him changes or moves",
+      "action": "Action: he turns his head slowly toward the lit window and lowers his chin, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "motor + grillos lejanos",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2478,
+      "endWord": 2490,
+      "coverage": 0.846
+    }
+  },
+  {
+    "id": "s13_e22",
+    "ms": 1044860,
+    "dur": 3.9,
+    "tipo": "ICONO",
+    "dice": "apuntando a la casa del vecino.",
+    "muestra": "Ícono de casa con una flecha corta que apunta a la ventana amarilla que ya está en el cuadro.",
+    "porque": "Fija el blanco del ruido en el objeto real que se está viendo, no en una idea abstracta.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_casa.png",
+    "texto": "APUNTANDO A LA CASA DEL VECINO",
+    "sfx": "tick grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2485,
+      "endWord": 2490,
+      "coverage": 0.833
+    }
+  },
+  {
+    "id": "s13_e23",
+    "ms": 1048160,
+    "dur": 5.4,
+    "tipo": "ICONO",
+    "dice": "78 decibeles",
+    "muestra": "El 78 entra en verde-voltio pegado a la pantalla del medidor, con el ícono del sonómetro al lado.",
+    "porque": "Es el techo del video y el número contra el que se van a leer todos los demás.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "78 dB",
+    "sfx": "golpe grave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2491,
+      "endWord": 2492,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s13_open",
+    "ms": 1050120,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Con la pantalla abierta, puesta entre la fuente y el punto de medicion",
+    "nombre": "cms_s13_pantalla_setenta_ocho",
+    "_manual": true,
+    "_sec": "S13_MEDICION",
+    "_anchor": {
+      "startWord": 2493,
+      "endWord": 2505,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e25",
+    "ms": 1058820,
+    "dur": 5.2,
+    "tipo": "ICONO",
+    "dice": "72, seis decibeles.",
+    "muestra": "El 72 reemplaza al 78 en el mismo lugar y debajo aparece la resta de seis.",
+    "porque": "El valor de la prueba no es el 72 sino la diferencia; los dos tienen que verse juntos.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "72 dB · −6",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2515,
+      "endWord": 2517,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e9",
+    "ms": 1058820,
+    "dur": 2.64,
+    "tipo": "FOTO",
+    "dice": "72, seis decibeles.",
+    "muestra": "La pantalla del sonómetro amarillo llena el cuadro marcando 72, sostenido sobre el mismo punto de tiza.",
+    "porque": "El salto de 78 a 72 es el primer premio; se cobra mostrando el número solo, sin nada más en el cuadro.",
+    "nombre": "cms_s13_pantalla_setenta_dos",
+    "foto_change": "a yellow handheld sound level meter fills the frame held over a white chalk cross drawn on grey concrete, its display bright in the blue evening light, a blurred open frame generator far behind it, close shot, nobody visible except a hand at the edge of frame, no text",
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "tick del medidor",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2515,
+      "endWord": 2517,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s13_joints",
+    "ms": 1064060,
+    "dur": 5.4,
+    "tipo": "CLIP",
+    "dice": "Cierro las juntas entre los paneles",
+    "nombre": "cms_s13_rendija_luz_junta",
+    "_manual": true,
+    "_sec": "S13_MEDICION",
+    "_anchor": {
+      "startWord": 2522,
+      "endWord": 2527,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s13_69",
+    "ms": 1069700,
+    "dur": 4.4,
+    "tipo": "FOTO",
+    "dice": "69, tres decibeles mas en este montaje",
+    "nombre": "cms_s13_pantalla_sesenta_nueve",
+    "_manual": true,
+    "_sec": "S13_MEDICION",
+    "_anchor": {
+      "startWord": 2537,
+      "endWord": 2543,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e27",
+    "ms": 1069700,
+    "dur": 5,
+    "tipo": "ICONO",
+    "dice": "69, tres decibeles",
+    "muestra": "El 69 entra sobre la pantalla del sonómetro con la resta de tres debajo.",
+    "porque": "Tercer escalón de la serie: misma tipografía y misma posición que los dos anteriores para que se lea como progresión.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_medidor.png",
+    "texto": "69 dB · −3",
+    "sfx": "tick doble",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2537,
+      "endWord": 2539,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "cme_v2_s13_goma",
+    "ms": 1086080,
+    "dur": 5,
+    "tipo": "CLIP",
+    "dice": "una base antivibracion estable evita que el soporte",
+    "nombre": "cms_s13_taco_goma_pata",
+    "_manual": true,
+    "_sec": "S13_MEDICION",
+    "_anchor": {
+      "startWord": 2577,
+      "endWord": 2585,
+      "coverage": 0.875
+    }
+  },
+  {
+    "id": "cme_v2_s13_66",
+    "ms": 1091320,
+    "dur": 4.4,
+    "tipo": "FOTO",
+    "dice": "La lectura final de esta prueba queda en 66",
+    "nombre": "cms_s13_sesenta_seis_tiza",
+    "_manual": true,
+    "_sec": "S13_MEDICION",
+    "_anchor": {
+      "startWord": 2590,
+      "endWord": 2598,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e31",
+    "ms": 1094960,
+    "dur": 5.2,
+    "tipo": "TEXTO",
+    "dice": "78 a 66.",
+    "muestra": "Los dos extremos de la serie enfrentados en grande sobre el patio, con una flecha entre ellos.",
+    "porque": "Es el resumen que el espectador se lleva de la sección; tiene que quedar más tiempo que cada número suelto.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "78 → 66",
+    "sfx": "golpe grave que resuelve",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2599,
+      "endWord": 2601,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e32",
+    "ms": 1097060,
+    "dur": 4.2,
+    "tipo": "TEXTO",
+    "dice": "Y hagamos que ese número signifique algo, porque los decibeles son tramposos.",
+    "muestra": "Rótulo de advertencia en ámbar sobre el plano de Claudio bajando el teléfono.",
+    "porque": "Avisa que lo que sigue no son más mediciones sino la traducción de las mediciones.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": null,
+    "texto": "LOS DECIBELES SON TRAMPOSOS",
+    "sfx": "zumbido corto",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2602,
+      "endWord": 2613,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e14",
+    "ms": 1099640,
+    "dur": 5.18,
+    "tipo": "CLIP",
+    "dice": "porque los decibeles son tramposos.",
+    "muestra": "Claudio baja el teléfono contra el muslo y mira el patio, con la ventana amarilla del vecino todavía encendida detrás del muro.",
+    "porque": "Es la bisagra de la sección: deja de medir y empieza a explicar; el cuerpo tiene que bajar el instrumento antes de la explicación.",
+    "nombre": "cms_s13_baja_telefono_muslo",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is standing in a darkening concrete backyard with a phone lowered against his thigh, looking out across the yard toward a low block wall and a lit yellow window, a closed plywood box and generator behind him, cold blue grey evening light, medium shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard stays exactly the same for the whole shot, same closed plywood box, same low block wall, same lit yellow window, nothing behind him changes or moves",
+      "action": "Action: he shifts his weight onto one leg and turns his head slowly from the box toward the lit window, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, medium shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "motor lejano + viento suave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2609,
+      "endWord": 2613,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e17",
+    "ms": 1119940,
+    "dur": 3.18,
+    "tipo": "CLIP",
+    "dice": "un ruido que está ahí pero no manda en la casa.",
+    "muestra": "Claudio de espaldas en la puerta trasera de la casa, mirando el patio ya casi oscuro con la caja cerrada andando al fondo y la ventana del vecino amarilla detrás del muro.",
+    "porque": "Cierra la sección devolviendo la cámara al patio entero, pero visto desde adentro de la casa, que es donde se sufre el ruido.",
+    "nombre": "cms_s13_puerta_trasera_mira",
+    "foto_change": "he is a latino man about 45 with short curly black hair and a trimmed greying beard, wearing an open grey work shirt over a black t-shirt and dark trousers, he is standing in the open back doorway of a house seen from inside, his back half to camera, looking out at a dark concrete backyard where a closed plywood box sits over a running generator, a low block wall and a lit yellow window beyond, warm interior light on his shoulders and cold blue night outside, wide shot, no text",
+    "i2v": {
+      "continuity": "Scene continuity: the backyard and the doorway stay exactly the same for the whole shot, same closed plywood box in the yard, same low block wall, same lit yellow window, nothing behind him changes or moves",
+      "action": "Action: he leans one shoulder against the door frame and folds one arm across his chest while looking out at the yard, his lips stay closed, one single continuous action.",
+      "camera": "Camera: the framing never changes, wide shot, no dolly, no zoom, no pan, one continuous uninterrupted take, no cuts, no new scene."
+    },
+    "t2v": null,
+    "icono": null,
+    "texto": null,
+    "sfx": "motor amortiguado desde adentro de la casa",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2657,
+      "endWord": 2667,
+      "coverage": 1
+    }
+  },
+  {
+    "id": "s13_e36",
+    "ms": 1119940,
+    "dur": 3.18,
+    "tipo": "ICONO",
+    "dice": "un ruido que está ahí pero no manda en la casa.",
+    "muestra": "Ícono de televisión con el rótulo, flotando sobre el patio oscuro visto desde la puerta.",
+    "porque": "Devuelve la escala a la vida diaria justo cuando la cámara vuelve a la casa.",
+    "nombre": null,
+    "foto_change": null,
+    "i2v": null,
+    "t2v": null,
+    "icono": "cms_ic_tele.png",
+    "texto": "NO MANDA EN LA CASA",
+    "sfx": "tick suave",
+    "escena": null,
+    "_anchor": {
+      "startWord": 2657,
+      "endWord": 2667,
+      "coverage": 1
+    }
+  }
+]
