@@ -92,8 +92,8 @@ const avatarCandidates = [`public/avatar_${slug}.mp4`, `public/${slug}_opt.mp4`]
 const avatar = avatarCandidates.find((candidate) => fs.existsSync(candidate)) || avatarCandidates[0];
 const audioCandidates = [
   process.env.AUDIO_FILE ? `public/${process.env.AUDIO_FILE.replace(/^public[\\/]/, "")}` : null,
-  `public/${slug}.wav`,
   `public/${slug}_fish.wav`,
+  `public/${slug}.wav`,
 ].filter(Boolean);
 const wav = audioCandidates.find((candidate) => fs.existsSync(candidate)) || audioCandidates[0];
 if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
