@@ -196,34 +196,46 @@ jobs:
           fi
           cat list.txt
           SLUG="${{ github.event.inputs.slug }}"
-          ffmpeg -y -f concat -safe 0 -i list.txt -c copy "_cat_$SLUG.mp4"
-          # ⛔⛔ EL `concat -c copy` DEJA UN SALTO DE TIEMPO EN CADA COSTURA DE CHUNK.
-          # Medido en cmetemu (29-ago-2026): 59 costuras, y en cada una un cuadro dura 88 ms en vez
-          # de 33,33. Son 3,2 s de tiempo muerto repartido, el MP4 declara 30 fps pero su cadencia
-          # real es 29,936, y el audio se estira igual (deriva +2,7 s al minuto 20). Se ve como
-          # TIRÓN cada 25 segundos de punta a punta — el "todo el video lageado" de siempre, y NO
-          # lo detecta ningún chequeo de cuadros porque cada cuadro está perfecto: lo que está mal
-          # es CUÁNDO se muestra. Por eso hay que reescribir los timestamps a CFR exacto.
-          # El h264 crudo no tiene timestamps, así que `-r 30` al re-muxear los reparte perfectos.
-          # El audio se toma del WAV MÁSTER (continuo) si está; si no, del concat.
-          AUD=""; AMAP="-map 1:a -c:a copy"
-          if [ -s "public/$SLUG.wav" ]; then AUD="public/$SLUG.wav"; AMAP="-map 1:a -c:a aac -b:a 192k -ar 48000"; else AUD="_cat_$SLUG.mp4"; fi
-          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v -c:v copy -bsf:v h264_mp4toannexb -f h264 "_v_$SLUG.h264"              && ffmpeg -y -v error -fflags +genpts -r 30 -i "_v_$SLUG.h264" -i "$AUD"                   -map 0:v $AMAP -c:v copy -shortest -movflags +faststart "$SLUG.mp4"; then
-            echo "timestamps reescritos a 30 fps CFR (audio: $AUD)"
-            rm -f "_v_$SLUG.h264" "_cat_$SLUG.mp4"
-          else
-            echo "::warning::el remux a CFR falló — publico el concat crudo (puede tener el tirón de las costuras)"
-            mv -f "_cat_$SLUG.mp4" "$SLUG.mp4"
-          fi
-          # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
-          # esperado algo se truncó igual. total_frames/30 es la duración teórica.
-          ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")
-          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "${{ github.event.inputs.slug }}.mp4" | cut -d. -f1)
-          echo "duración: real ${REAL}s · esperada ${ESPERADO}s"
-          if [ "$REAL" -lt $(( ESPERADO * 90 / 100 )) ]; then
-            echo "::error::el MP4 dura ${REAL}s pero se esperaban ~${ESPERADO}s (menos del 90%). Está truncado — no lo publico."
-            exit 1
-          fi
+          RAW="_cat_$SLUG.mp4"
+          MASTER="${SLUG}_fish.wav"
+          # Concatenamos solo el video y luego lo decodificamos de nuevo. Así se eliminan los
+          # saltos de PTS que el concat por copia deja en cada una de las 59 costuras.
+          ffmpeg -y -v error -f concat -safe 0 -i list.txt \
+            -map 0:v:0 -c:v copy -an "$RAW"
+          test -s "$RAW"
+
+          # El audio continuo es el WAV real usado para locutar. Se baja una vez en stitch;
+          # ningún fallback vuelve a usar el audio de los chunks ni un WAV viejo.
+          export GH_TOKEN="${{ github.token }}"
+          n=0
+          until gh release download "assets-$SLUG" -R "${{ github.repository }}" \
+                  --pattern "$MASTER" --dir . --clobber; do
+            n=$((n+1)); [ "$n" -ge 4 ] && { echo "::error::no pude bajar el WAV máster tras $n intentos"; exit 1; }
+            echo "reintento $n de la descarga del WAV máster"; sleep $((10 * n))
+          done
+          test -s "$MASTER" || { echo "::error::no está el WAV máster $MASTER"; exit 1; }
+
+          ESPERADO=$(awk "BEGIN{printf \"%.6f\", ${{ github.event.inputs.total_frames }}/30}")
+          # `setpts=N/30/TB` descarta los timestamps heredados de las costuras y numera cada
+          # frame desde cero. `-frames:v` y `-r 30` hacen que el resultado sea CFR exacto.
+          ffmpeg -y -v error -i "$RAW" -i "$MASTER" \
+            -map 0:v:0 -map 1:a:0 \
+            -vf "setpts=N/30/TB,format=yuv420p" -r 30 -fps_mode cfr \
+            -frames:v "${{ github.event.inputs.total_frames }}" \
+            -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -video_track_timescale 90000 \
+            -c:a aac -b:a 192k -ar 48000 \
+            -af "aresample=async=1:first_pts=0,apad" \
+            -t "$ESPERADO" -movflags +faststart "$SLUG.mp4"
+          rm -f "$RAW" "$MASTER"
+
+          FPS=$(ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of default=nw=1:nk=1 "$SLUG.mp4")
+          NFR=$(ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames -of default=nw=1:nk=1 "$SLUG.mp4")
+          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$SLUG.mp4")
+          echo "validación CFR: fps=$FPS · frames=$NFR · duración=${REAL}s · esperada=${ESPERADO}s"
+          [ "$FPS" = "30/1" ] || { echo "::error::el MP4 no quedó a 30/1 CFR"; exit 1; }
+          [ "$NFR" = "${{ github.event.inputs.total_frames }}" ] || { echo "::error::cantidad de frames incorrecta: $NFR"; exit 1; }
+          awk -v real="$REAL" -v esperado="$ESPERADO" 'BEGIN { d=real-esperado; if (d<0) d=-d; if (d>1) exit 1 }' \
+            || { echo "::error::duración fuera de tolerancia de 1 segundo"; exit 1; }
       - uses: actions/upload-artifact@v4
         with:
           name: final-${{ github.event.inputs.slug }}
@@ -233,7 +245,6 @@ jobs:
       # ffmpeg ya esta instalado acá. Haciendolo aca el agente NO necesita bajarse 700 MB para
       # verificar duracion/audio/negros: lee esta salida del log de la corrida.
       - name: chequeo tecnico del MP4
-        continue-on-error: true
         run: |
           F="${{ github.event.inputs.slug }}.mp4"
           echo "=== CHEQUEO_TECNICO ==="
@@ -252,7 +263,6 @@ jobs:
       # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
       # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
       - name: publicar el MP4 final como release
-        continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           S="${{ github.event.inputs.slug }}"
