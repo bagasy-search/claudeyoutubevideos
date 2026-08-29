@@ -39,7 +39,7 @@ jobs:
           curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_reset" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}"}' || true
 
   render:
-    timeout-minutes: 40
+    timeout-minutes: 90
     needs: prepare
     runs-on: ubuntu-latest
     strategy:
