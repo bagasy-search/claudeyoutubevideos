@@ -636,7 +636,7 @@
     "dur": 12.5,
     "tipo": "CTA",
     "dice": "Promete 100W, entrega 43W",
-    "texto": "PROMETE 100 W. ENTREGA 43 W.\\nPrueba rápida antes de pagar",
+    "texto": "PROMETE 100 W. ENTREGA 43 W.\nPrueba rápida antes de pagar",
     "icono": "CTA_QR_02",
     "asset": "img/cmesilencio/cms_cta_qr_02_100w.png",
     "_manual": true,

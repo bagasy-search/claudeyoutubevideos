@@ -216,9 +216,9 @@ const manual = [
   event("S15_LANA", "cme_v2_s15_inverter", "Si tu generador es un inversor cerrado moderno", "CLIP", { nombre: "cms_s15_inversor_junto_marco", dur: 5.4 }),
   event("S15_LANA", "cme_v2_s15_battery", "Un respaldo de bateria no tiene escape ni monoxido", "CLIP", { nombre: "cms_s15_respaldo_bateria_taller", dur: 5.4 }),
   event("S14_GRATIS", "cme_v2_s14_free", "Pero hay otra prueba de ese mismo dia", "ESCENA", { dur: 57.5, mov: "MovDieciocho", escena: "MovDieciocho" }),
-  event("S3_HONESTIDAD", "cme_v2_cta_luz", "Cuando se va la luz, una guia de todo medido", "CTA", { dur: 12.5, texto: "CUANDO SE VA LA LUZ\\nGuía de respaldo sin compras a ciegas", icono: "CTA_QR_01", asset: "img/cmesilencio/cms_cta_qr_01_luz.png" }),
-  event("S14_GRATIS", "cme_v2_cta_100w", "Promete 100W, entrega 43W", "CTA", { dur: 12.5, texto: "PROMETE 100 W. ENTREGA 43 W.\\nPrueba rápida antes de pagar", icono: "CTA_QR_02", asset: "img/cmesilencio/cms_cta_qr_02_100w.png" }),
-  event("S16_CIERRE", "cme_v2_cta_todo", "todo medido reune las dos guias", "CTA", { dur: 15, texto: "TODO MEDIDO\\nRuido · consumo · respaldo", icono: "CTA_QR_03", asset: "img/cmesilencio/cms_cta_qr_03_todo_medido.png" }),
+  event("S3_HONESTIDAD", "cme_v2_cta_luz", "Cuando se va la luz, una guia de todo medido", "CTA", { dur: 12.5, texto: "CUANDO SE VA LA LUZ\nGuía de respaldo sin compras a ciegas", icono: "CTA_QR_01", asset: "img/cmesilencio/cms_cta_qr_01_luz.png" }),
+  event("S14_GRATIS", "cme_v2_cta_100w", "Promete 100W, entrega 43W", "CTA", { dur: 12.5, texto: "PROMETE 100 W. ENTREGA 43 W.\nPrueba rápida antes de pagar", icono: "CTA_QR_02", asset: "img/cmesilencio/cms_cta_qr_02_100w.png" }),
+  event("S16_CIERRE", "cme_v2_cta_todo", "todo medido reune las dos guias", "CTA", { dur: 15, texto: "TODO MEDIDO\nRuido · consumo · respaldo", icono: "CTA_QR_03", asset: "img/cmesilencio/cms_cta_qr_03_todo_medido.png" }),
 ];
 
 const report = [];

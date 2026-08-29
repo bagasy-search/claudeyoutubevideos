@@ -185,7 +185,7 @@
     "dur": 15,
     "tipo": "CTA",
     "dice": "todo medido reune las dos guias",
-    "texto": "TODO MEDIDO\\nRuido · consumo · respaldo",
+    "texto": "TODO MEDIDO\nRuido · consumo · respaldo",
     "icono": "CTA_QR_03",
     "asset": "img/cmesilencio/cms_cta_qr_03_todo_medido.png",
     "_manual": true,

@@ -369,7 +369,7 @@
     "dur": 12.5,
     "tipo": "CTA",
     "dice": "Cuando se va la luz, una guia de todo medido",
-    "texto": "CUANDO SE VA LA LUZ\\nGuía de respaldo sin compras a ciegas",
+    "texto": "CUANDO SE VA LA LUZ\nGuía de respaldo sin compras a ciegas",
     "icono": "CTA_QR_01",
     "asset": "img/cmesilencio/cms_cta_qr_01_luz.png",
     "_manual": true,
