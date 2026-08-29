@@ -39,6 +39,7 @@ jobs:
           curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_reset" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}"}' || true
 
   render:
+    timeout-minutes: 40
     needs: prepare
     runs-on: ubuntu-latest
     strategy:
@@ -131,6 +132,7 @@ jobs:
           retention-days: 3
 
   stitch:
+    timeout-minutes: 60
     needs: render
     # Sin este `if`, un solo chunk caído saltea el job ENTERO — y con él la persistencia de los que
     # sí salieron. Medido en el render del GUANTE: 6 chunks buenos, 13 caídos, stitch nunca corrió y
