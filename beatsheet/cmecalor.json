@@ -1,0 +1,1676 @@
+{
+  "video": "cmecalor",
+  "avatar": "avatar_cmecalor.mp4",
+  "audio": "cmecalor_fish.wav",
+  "tutorial": true,
+  "clipsfirst": false,
+  "fps": 30,
+  "totalFrames": 44818,
+  "timingSource": "public/captions_cmecalor.json",
+  "beats": [
+    {
+      "id": "cmec_a_001_still",
+      "start": 11.733,
+      "dur": 10.767,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_001_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "permite alimentar únicamente la calefacción que ya tienes, sin intentar sostener cada enchufe, cada lámpara y cada aparato del hogar durante un apagón.",
+      "nouns": [
+        "calefacción",
+        "enchufe",
+        "lámpara",
+        "aparato",
+        "hogar",
+        "apagón"
+      ],
+      "sourceMoment": "cmec_a_001"
+    },
+    {
+      "id": "cmec_a_002_still",
+      "start": 29.533,
+      "dur": 11.733,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_002_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "La llama entrega miles de vatios de calor, pero la parte eléctrica quizá solo necesita unos cientos para mover el ventilador, controlar la combustión y obedecer al termostato.",
+      "nouns": [
+        "llama",
+        "vatios",
+        "parte eléctrica",
+        "ventilador",
+        "combustión",
+        "termostato"
+      ],
+      "sourceMoment": "cmec_a_002"
+    },
+    {
+      "id": "cmec_m_009_still",
+      "start": 49.067,
+      "dur": 2.3,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_009_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "compres el primer tomacorriente que encuentres",
+      "nouns": [
+        "tomacorriente",
+        "calefacción"
+      ],
+      "sourceMoment": "cmec_m_009"
+    },
+    {
+      "id": "cmec_a_003_still",
+      "start": 53.033,
+      "dur": 9.833,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_003_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "La misma idea puede ser una solución segura o una conexión capaz de incendiar una casa, dañar la placa electrónica o devolver corriente hacia la calle.",
+      "nouns": [
+        "conexión",
+        "casa",
+        "placa electrónica",
+        "corriente",
+        "calle"
+      ],
+      "sourceMoment": "cmec_a_003"
+    },
+    {
+      "id": "cmec_a_004_still",
+      "start": 80.867,
+      "dur": 10.433,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_004.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "una batería relativamente pequeña puede sostener una caldera a gas durante horas, pero puede agotarse en menos de una hora si intentas alimentar un calefactor eléctrico.",
+      "nouns": [
+        "batería",
+        "caldera a gas",
+        "horas",
+        "calefactor eléctrico"
+      ],
+      "sourceMoment": "cmec_a_004"
+    },
+    {
+      "id": "cmec_a_005_still",
+      "start": 97.033,
+      "dur": 9.167,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_005.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "La batería parece tener potencia suficiente, el ventilador intenta arrancar y, aun así, la calefacción se bloquea.",
+      "nouns": [
+        "batería",
+        "potencia",
+        "ventilador",
+        "calefacción"
+      ],
+      "sourceMoment": "cmec_a_005"
+    },
+    {
+      "id": "cmec_m_022_still",
+      "start": 127.6,
+      "dur": 3.067,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_022_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "no vamos a tocar un conductor ni una tubería de gas en este video.",
+      "nouns": [
+        "conductor",
+        "tubería de gas"
+      ],
+      "sourceMoment": "cmec_m_022"
+    },
+    {
+      "id": "cmec_m_025_still",
+      "start": 150.933,
+      "dur": 2,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_025_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "¿por qué se apaga una calefacción a gas?",
+      "nouns": [
+        "calefacción a gas",
+        "apagón"
+      ],
+      "sourceMoment": "cmec_m_025"
+    },
+    {
+      "id": "cmec_a_006_still",
+      "start": 161.067,
+      "dur": 14.067,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_006_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "la placa recibe la orden del termostato, verifica los seguros, enciende el extractor, abre la válvula, confirma la llama y después mueve un ventilador grande para repartir el aire caliente por los conductos.",
+      "nouns": [
+        "placa",
+        "termostato",
+        "seguros",
+        "extractor",
+        "válvula",
+        "llama",
+        "ventilador",
+        "conductos"
+      ],
+      "sourceMoment": "cmec_a_006"
+    },
+    {
+      "id": "cmec_m_031_still",
+      "start": 170.233,
+      "dur": 4.9,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_031.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "mueve un ventilador grande para repartir el aire caliente por los conductos.",
+      "nouns": [
+        "ventilador grande",
+        "aire caliente",
+        "conductos"
+      ],
+      "sourceMoment": "cmec_m_031"
+    },
+    {
+      "id": "cmec_a_007_still",
+      "start": 214.433,
+      "dur": 11,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_007.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "horno o caldera que produce calor con gas, gas licuado o algún otro combustible, pero necesita electricidad para sus controles, su ventilador o su bomba.",
+      "nouns": [
+        "caldera",
+        "gas",
+        "electricidad",
+        "controles",
+        "ventilador",
+        "bomba"
+      ],
+      "sourceMoment": "cmec_a_007"
+    },
+    {
+      "id": "cmec_a_007_clip",
+      "start": 214.433,
+      "dur": 4.9,
+      "kind": "raw",
+      "src": "broll/cmecalor_agnes/cmec_a_007.mp4",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "horno o caldera que produce calor con gas, gas licuado o algún otro combustible, pero necesita electricidad para sus controles, su ventilador o su bomba.",
+      "nouns": [
+        "caldera",
+        "gas",
+        "electricidad",
+        "controles",
+        "ventilador",
+        "bomba"
+      ],
+      "sourceMoment": "cmec_a_007"
+    },
+    {
+      "id": "cmec_m_039_still",
+      "start": 223.633,
+      "dur": 0.733,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_039.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "su ventilador",
+      "nouns": [
+        "ventilador de calefacción"
+      ],
+      "sourceMoment": "cmec_m_039"
+    },
+    {
+      "id": "cmec_a_008_still",
+      "start": 238.367,
+      "dur": 13.9,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_008.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "equipos antiguos de tiro natural que funcionan con piloto permanente y sistema de milivoltios. Algunos pueden operar sin conexión a la red porque la propia llama alimenta la válvula y el calor se mueve por convección.",
+      "nouns": [
+        "equipos",
+        "tiro natural",
+        "piloto permanente",
+        "milivoltios",
+        "red",
+        "llama",
+        "válvula",
+        "calor",
+        "convección"
+      ],
+      "sourceMoment": "cmec_a_008"
+    },
+    {
+      "id": "cmec_a_008_clip",
+      "start": 238.367,
+      "dur": 4.9,
+      "kind": "raw",
+      "src": "broll/cmecalor_agnes/cmec_a_008.mp4",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "equipos antiguos de tiro natural que funcionan con piloto permanente y sistema de milivoltios. Algunos pueden operar sin conexión a la red porque la propia llama alimenta la válvula y el calor se mueve por convección.",
+      "nouns": [
+        "equipos",
+        "tiro natural",
+        "piloto permanente",
+        "milivoltios",
+        "red",
+        "llama",
+        "válvula",
+        "calor",
+        "convección"
+      ],
+      "sourceMoment": "cmec_a_008"
+    },
+    {
+      "id": "cmec_a_009_still",
+      "start": 267.967,
+      "dur": 17.667,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_009_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "calefacción eléctrica por resistencia, caloventor, radiador eléctrico, bomba de calor o aire acondicionado en modo calor. La electricidad es el calor, o mueve un compresor de gran potencia.",
+      "nouns": [
+        "calefacción eléctrica",
+        "resistencia",
+        "caloventor",
+        "radiador eléctrico",
+        "bomba de calor",
+        "aire acondicionado",
+        "electricidad",
+        "compresor"
+      ],
+      "sourceMoment": "cmec_a_009"
+    },
+    {
+      "id": "cmec_a_010_still",
+      "start": 292.733,
+      "dur": 11.733,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_010_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Un calefactor eléctrico portátil puede pedir alrededor de mil quinientos vatios de forma continua. Una estación de energía de un kilovatio hora puede vaciarse en bastante menos de una hora",
+      "nouns": [
+        "calefactor eléctrico",
+        "vatios",
+        "estación de energía",
+        "kilovatio hora",
+        "hora"
+      ],
+      "sourceMoment": "cmec_a_010"
+    },
+    {
+      "id": "cmec_a_011_still",
+      "start": 335.533,
+      "dur": 7.933,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_011.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "un electricista puede convertir la alimentación fija de la calefacción en una conexión mediante cordón y tomacorriente accesible.",
+      "nouns": [
+        "electricista",
+        "alimentación fija",
+        "calefacción",
+        "conexión",
+        "cordón",
+        "tomacorriente"
+      ],
+      "sourceMoment": "cmec_a_011"
+    },
+    {
+      "id": "cmec_a_012_still",
+      "start": 388.467,
+      "dur": 13.533,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_012_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "un conmutador de transferencia de un solo circuito. Tiene una entrada para la fuente de respaldo y un selector que conecta la calefacción a la red o al respaldo, pero nunca a los dos al mismo tiempo.",
+      "nouns": [
+        "conmutador de transferencia",
+        "circuito",
+        "entrada",
+        "fuente de respaldo",
+        "selector",
+        "calefacción",
+        "red"
+      ],
+      "sourceMoment": "cmec_a_012"
+    },
+    {
+      "id": "cmec_m_070_still",
+      "start": 430.133,
+      "dur": 2.4,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_070_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "A eso se le llama retroalimentación.",
+      "nouns": [
+        "generador",
+        "cable",
+        "tomacorriente",
+        "barrera"
+      ],
+      "sourceMoment": "cmec_m_070"
+    },
+    {
+      "id": "cmec_m_071_still",
+      "start": 433.133,
+      "dur": 3.7,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_071_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Puede energizar cables que un técnico de la compañía cree muertos",
+      "nouns": [
+        "técnico de la compañía",
+        "cables de servicio",
+        "detector de tensión",
+        "guantes"
+      ],
+      "sourceMoment": "cmec_m_071"
+    },
+    {
+      "id": "cmec_m_072_still",
+      "start": 437.367,
+      "dur": 5.967,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_072_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "puede saltarse protecciones de tu instalación y puede mandar tensión donde nunca debía aparecer.",
+      "nouns": [
+        "Claudio",
+        "tablero cerrado",
+        "protecciones",
+        "cable suelto"
+      ],
+      "sourceMoment": "cmec_m_072"
+    },
+    {
+      "id": "cmec_a_013_still",
+      "start": 443.867,
+      "dur": 3.8,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_013.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Tampoco se usa un cable con clavijas macho en ambos extremos.",
+      "nouns": [
+        "cable",
+        "clavijas macho",
+        "extremos"
+      ],
+      "sourceMoment": "cmec_a_013"
+    },
+    {
+      "id": "cmec_m_078_still",
+      "start": 481.367,
+      "dur": 7.4,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_078_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Ahora vamos a los números, porque aquí es donde esta idea deja de ser un truco de internet y se convierte en un plan.",
+      "nouns": [
+        "Claudio",
+        "teléfono",
+        "medidor",
+        "cuaderno",
+        "calculadora"
+      ],
+      "sourceMoment": "cmec_m_078"
+    },
+    {
+      "id": "cmec_a_016_still",
+      "start": 489,
+      "dur": 9.733,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_a_016.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Necesitas cuatro datos: potencia mientras funciona, pico de arranque, porcentaje de tiempo encendida y capacidad útil del respaldo.",
+      "nouns": [
+        "datos",
+        "potencia",
+        "pico de arranque",
+        "porcentaje de tiempo",
+        "capacidad útil",
+        "respaldo"
+      ],
+      "sourceMoment": "cmec_a_016"
+    },
+    {
+      "id": "cmec_a_014_still",
+      "start": 519,
+      "dur": 11,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_a_014_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Para acercarte al consumo real, empieza por la placa del equipo y por su manual. Busca tensión, corriente nominal y cualquier dato del motor del ventilador o de la bomba.",
+      "nouns": [
+        "consumo",
+        "placa del equipo",
+        "manual",
+        "tensión",
+        "corriente nominal",
+        "motor",
+        "ventilador",
+        "bomba"
+      ],
+      "sourceMoment": "cmec_a_014"
+    },
+    {
+      "id": "cmec_m_090_still",
+      "start": 540.433,
+      "dur": 6.233,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_090_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si continúa cableado de forma fija, la medición se hace con instrumentos y procedimiento profesional.",
+      "nouns": [
+        "calefacción cableada",
+        "electricista",
+        "instrumento profesional",
+        "cajas cerradas"
+      ],
+      "sourceMoment": "cmec_m_090"
+    },
+    {
+      "id": "cmec_m_091_still",
+      "start": 547.133,
+      "dur": 5.533,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_091_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "No abras el tablero para meter una pinza si no sabes exactamente qué estás tocando.",
+      "nouns": [
+        "Claudio",
+        "tablero cerrado",
+        "pinza amperométrica"
+      ],
+      "sourceMoment": "cmec_m_091"
+    },
+    {
+      "id": "cmec_m_092_still",
+      "start": 549.633,
+      "dur": 3.033,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_092_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "si no sabes exactamente qué estás tocando.",
+      "nouns": [
+        "electricista",
+        "guantes",
+        "instrumento",
+        "tablero cerrado"
+      ],
+      "sourceMoment": "cmec_m_092"
+    },
+    {
+      "id": "cmec_m_093_still",
+      "start": 553.167,
+      "dur": 5.333,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_093_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "El objetivo es obtener un número, no convertir la prueba en una emergencia.",
+      "nouns": [
+        "Claudio",
+        "cuaderno",
+        "medidor",
+        "calefacción cerrada"
+      ],
+      "sourceMoment": "cmec_m_093"
+    },
+    {
+      "id": "cmec_b_002_still",
+      "start": 562.433,
+      "dur": 6.833,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_b_002.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Imagina una calefacción a gas que consume cuatrocientos veinte vatios cuando el ventilador está trabajando.",
+      "nouns": [
+        "calefacción a gas",
+        "ventilador",
+        "medidor",
+        "cuatrocientos veinte vatios"
+      ],
+      "sourceMoment": "cmec_b_002"
+    },
+    {
+      "id": "cmec_b_003_still",
+      "start": 601.633,
+      "dur": 13.633,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_b_003.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Una batería anunciada como de mil veinticuatro vatios hora no entrega cada uno de esos vatios hora al enchufe: el inversor consume parte, el frío reduce rendimiento y conviene dejar reserva.",
+      "nouns": [
+        "batería",
+        "inversor",
+        "enchufe",
+        "frío",
+        "reserva"
+      ],
+      "sourceMoment": "cmec_b_003"
+    },
+    {
+      "id": "cmec_m_105_still",
+      "start": 624.933,
+      "dur": 3.4,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_105_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Ese resultado vale para ese ejemplo, no para tu casa.",
+      "nouns": [
+        "Claudio",
+        "cuaderno de ejemplo",
+        "casa",
+        "calefacción real"
+      ],
+      "sourceMoment": "cmec_m_105"
+    },
+    {
+      "id": "cmec_b_004_still",
+      "start": 638.533,
+      "dur": 5.633,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_b_004.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si la batería está fría, envejecida o alimenta otras cargas, también disminuye.",
+      "nouns": [
+        "batería fría",
+        "batería envejecida",
+        "otras cargas",
+        "teléfono"
+      ],
+      "sourceMoment": "cmec_b_004"
+    },
+    {
+      "id": "cmec_m_109_still",
+      "start": 644.833,
+      "dur": 6.3,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_109_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "la cifra honesta no está impresa en la caja de la estación. Sale de tu consumo y de tu ciclo real.",
+      "nouns": [
+        "caja de estación",
+        "medidor",
+        "reloj",
+        "calefacción"
+      ],
+      "sourceMoment": "cmec_m_109"
+    },
+    {
+      "id": "cmec_b_007_still",
+      "start": 684.267,
+      "dur": 16.467,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_b_007.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Arriba hay tres columnas. En la primera dice qué produce el calor: gas, combustible o electricidad. En la segunda, qué parte necesita corriente: control, ventilador, bomba o resistencia. En la tercera, qué tipo de respaldo tiene sentido.",
+      "nouns": [
+        "tres columnas",
+        "gas",
+        "combustible",
+        "electricidad",
+        "control",
+        "ventilador",
+        "bomba",
+        "resistencia",
+        "respaldo"
+      ],
+      "sourceMoment": "cmec_b_007"
+    },
+    {
+      "id": "cmec_m_118_still",
+      "start": 691.233,
+      "dur": 6.233,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_118.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "En la segunda, qué parte necesita corriente: control, ventilador, bomba o resistencia.",
+      "nouns": [
+        "placa de control",
+        "ventilador",
+        "bomba",
+        "resistencia"
+      ],
+      "sourceMoment": "cmec_m_118"
+    },
+    {
+      "id": "cmec_b_009_still",
+      "start": 737.533,
+      "dur": 14.4,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_b_009.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Capacidad útil dividida por promedio real. A un lado está el control de arranque: potencia de pico disponible mayor que el pico medido. Y al otro, el control de conexión: red y respaldo físicamente aislados.",
+      "nouns": [
+        "capacidad útil",
+        "promedio real",
+        "potencia de pico",
+        "pico medido",
+        "red",
+        "respaldo",
+        "aislamiento"
+      ],
+      "sourceMoment": "cmec_b_009"
+    },
+    {
+      "id": "cmec_b_010_still",
+      "start": 752.233,
+      "dur": 7.8,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_b_010.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Son tres casillas. Autonomía. Arranque. Aislamiento. Si una falla, el sistema no está listo.",
+      "nouns": [
+        "tres casillas",
+        "autonomía",
+        "arranque",
+        "aislamiento",
+        "sistema"
+      ],
+      "sourceMoment": "cmec_b_010"
+    },
+    {
+      "id": "cmec_m_127_still",
+      "start": 756.933,
+      "dur": 3.1,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_127_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si una falla, el sistema no está listo.",
+      "nouns": [
+        "Claudio",
+        "tres módulos",
+        "un indicador fallido",
+        "cable desconectado"
+      ],
+      "sourceMoment": "cmec_m_127"
+    },
+    {
+      "id": "cta_microgeneradores_1_1",
+      "start": 761.233,
+      "dur": 12.333,
+      "kind": "float",
+      "src": "img/cmecalor/cmec_cta_microgeneradores.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "esta hoja forma parte del capítulo sobre microgeneradores de la guía del canal",
+      "nouns": [
+        "guía",
+        "código QR"
+      ],
+      "sourceMoment": "cta_microgeneradores_1"
+    },
+    {
+      "id": "cta_microgeneradores_1_2",
+      "start": 773.567,
+      "dur": 12.367,
+      "kind": "float",
+      "src": "img/cmecalor/cmec_cta_pages.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "esta hoja forma parte del capítulo sobre microgeneradores de la guía del canal",
+      "nouns": [
+        "guía",
+        "código QR"
+      ],
+      "sourceMoment": "cta_microgeneradores_1"
+    },
+    {
+      "id": "cmec_b_013_still",
+      "start": 803.033,
+      "dur": 9.467,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_b_013.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "El termostato pide calor, arranca el extractor si existe, aparece la ignición, se confirma la llama y después entra el ventilador principal.",
+      "nouns": [
+        "termostato",
+        "extractor",
+        "ignición",
+        "llama",
+        "ventilador principal"
+      ],
+      "sourceMoment": "cmec_b_013"
+    },
+    {
+      "id": "cmec_m_139_still",
+      "start": 813.1,
+      "dur": 5.167,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_139.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Cada equipo tiene su propia secuencia. Si no la conoces, el manual la explica.",
+      "nouns": [
+        "equipo",
+        "secuencia",
+        "manual"
+      ],
+      "sourceMoment": "cmec_m_139"
+    },
+    {
+      "id": "cmec_m_141_still",
+      "start": 823.867,
+      "dur": 3.3,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_141_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "se corta la fuente normal mediante el sistema previsto.",
+      "nouns": [
+        "fuente normal",
+        "sistema"
+      ],
+      "sourceMoment": "cmec_m_141"
+    },
+    {
+      "id": "cmec_b_015_still",
+      "start": 837.067,
+      "dur": 2.767,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_b_015.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Mira el ciclo completo, no solo la primera llama.",
+      "nouns": [
+        "ciclo completo",
+        "primera llama",
+        "calefacción"
+      ],
+      "sourceMoment": "cmec_b_015"
+    },
+    {
+      "id": "cmec_b_015_clip",
+      "start": 837.067,
+      "dur": 2.767,
+      "kind": "raw",
+      "src": "broll/cmecalor_agnes/cmec_b_015.mp4",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Mira el ciclo completo, no solo la primera llama.",
+      "nouns": [
+        "ciclo completo",
+        "primera llama",
+        "calefacción"
+      ],
+      "sourceMoment": "cmec_b_015"
+    },
+    {
+      "id": "cmec_b_016_still",
+      "start": 862.767,
+      "dur": 1.933,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_b_016.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Lee el código y corta la prueba.",
+      "nouns": [
+        "código de falla",
+        "panel de calefacción",
+        "prueba"
+      ],
+      "sourceMoment": "cmec_b_016"
+    },
+    {
+      "id": "cmec_m_153_still",
+      "start": 865.233,
+      "dur": 6.133,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_153_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Los seguros de una calefacción existen para detener combustible o calor cuando algo no cuadra.",
+      "nouns": [
+        "seguros",
+        "calefacción",
+        "combustible",
+        "calor"
+      ],
+      "sourceMoment": "cmec_m_153"
+    },
+    {
+      "id": "cmec_b_017_still",
+      "start": 875.633,
+      "dur": 9.167,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_b_017.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Algunos equipos modernos son sensibles a la calidad de la alimentación. Pueden esperar una onda senoidal limpia. Pueden verificar polaridad.",
+      "nouns": [
+        "equipo moderno",
+        "calidad de alimentación",
+        "onda senoidal",
+        "polaridad",
+        "osciloscopio"
+      ],
+      "sourceMoment": "cmec_b_017"
+    },
+    {
+      "id": "cmec_m_158_still",
+      "start": 889.933,
+      "dur": 4.733,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_158_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "algunos generadores o estaciones portátiles tienen una salida flotante",
+      "nouns": [
+        "generadores",
+        "estaciones portátiles",
+        "salida"
+      ],
+      "sourceMoment": "cmec_m_158"
+    },
+    {
+      "id": "cmec_m_159_still",
+      "start": 894.667,
+      "dur": 5.367,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_159_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "que la placa interpreta como una falla, aunque el medidor muestre la tensión correcta.",
+      "nouns": [
+        "placa",
+        "falla",
+        "medidor",
+        "tensión"
+      ],
+      "sourceMoment": "cmec_m_159"
+    },
+    {
+      "id": "cmec_b_018_still",
+      "start": 901.5,
+      "dur": 11.4,
+      "kind": "raw",
+      "src": "img/cmecalor/ig_dg_cmec_b_018.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Dos fuentes con el mismo número de vatios no siempre se comportan igual. Una arranca la calefacción y la otra enciende la pantalla, intenta la secuencia y se bloquea.",
+      "nouns": [
+        "dos fuentes",
+        "vatios",
+        "calefacción",
+        "pantalla",
+        "bloqueo"
+      ],
+      "sourceMoment": "cmec_b_018"
+    },
+    {
+      "id": "cmec_m_162_still",
+      "start": 913.233,
+      "dur": 3.633,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_162_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "No se arregla improvisando un puente entre neutro y tierra.",
+      "nouns": [
+        "puente",
+        "neutro",
+        "tierra"
+      ],
+      "sourceMoment": "cmec_m_162"
+    },
+    {
+      "id": "cmec_m_164_still",
+      "start": 925.933,
+      "dur": 5.367,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_164_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "copiar un cable de un foro puede crear una corriente peligrosa sobre una carcasa metálica.",
+      "nouns": [
+        "cable",
+        "foro",
+        "corriente",
+        "carcasa metálica"
+      ],
+      "sourceMoment": "cmec_m_164"
+    },
+    {
+      "id": "cmec_m_165_still",
+      "start": 933.9,
+      "dur": 2.633,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_165.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "compatibilidad declarada por el fabricante,",
+      "nouns": [
+        "compatibilidad",
+        "fabricante"
+      ],
+      "sourceMoment": "cmec_m_165"
+    },
+    {
+      "id": "cmec_m_167_still",
+      "start": 940.133,
+      "dur": 3.767,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_167_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "revisión del esquema por el profesional que instala la transferencia.",
+      "nouns": [
+        "esquema",
+        "profesional",
+        "transferencia"
+      ],
+      "sourceMoment": "cmec_m_167"
+    },
+    {
+      "id": "cmec_m_168_still",
+      "start": 944.433,
+      "dur": 8.067,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_168_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si el equipo necesita una referencia específica, se resuelve en el diseño. No con un adaptador misterioso a las dos de la mañana.",
+      "nouns": [
+        "equipo",
+        "referencia",
+        "diseño",
+        "adaptador"
+      ],
+      "sourceMoment": "cmec_m_168"
+    },
+    {
+      "id": "cmec_m_169_still",
+      "start": 952.967,
+      "dur": 1.8,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_169.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Hablemos de las fuentes de respaldo.",
+      "nouns": [
+        "fuentes de respaldo"
+      ],
+      "sourceMoment": "cmec_m_169"
+    },
+    {
+      "id": "cmec_b_021_still",
+      "start": 955.233,
+      "dur": 16.533,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_b_021.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Una estación de energía con batería puede trabajar dentro de la casa porque no quema gasolina ni produce gases de escape. Aun así, debe mantenerse seca, ventilada como indique su fabricante, lejos de fuentes de calor y con espacio para disipar temperatura.",
+      "nouns": [
+        "estación de energía",
+        "batería",
+        "interior de la casa",
+        "ventilación",
+        "espacio",
+        "fuentes de calor"
+      ],
+      "sourceMoment": "cmec_b_021"
+    },
+    {
+      "id": "cmec_m_174_still",
+      "start": 975.867,
+      "dur": 5.167,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_174_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Su límite es la capacidad: cuando los vatios hora se terminan, se terminó el calor.",
+      "nouns": [
+        "capacidad",
+        "vatios hora",
+        "calor"
+      ],
+      "sourceMoment": "cmec_m_174"
+    },
+    {
+      "id": "cmec_b_022_still",
+      "start": 990.867,
+      "dur": 9.333,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_b_022_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Funciona siempre afuera, lejos de puertas, ventanas y respiraderos, con el escape apuntando en dirección contraria a la vivienda.",
+      "nouns": [
+        "generador portátil",
+        "exterior",
+        "puertas",
+        "ventanas",
+        "respiraderos",
+        "escape",
+        "vivienda"
+      ],
+      "sourceMoment": "cmec_b_022"
+    },
+    {
+      "id": "cmec_m_177_still",
+      "start": 1002.233,
+      "dur": 3.333,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_177.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "mantenlo al menos a unos seis metros de la casa.",
+      "nouns": [
+        "generador",
+        "metros",
+        "casa"
+      ],
+      "sourceMoment": "cmec_m_177"
+    },
+    {
+      "id": "cmec_m_178_still",
+      "start": 1006.067,
+      "dur": 5.8,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_178.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Nunca dentro del garaje, aunque la puerta esté abierta. Nunca en un cobertizo.",
+      "nouns": [
+        "garaje",
+        "puerta",
+        "cobertizo"
+      ],
+      "sourceMoment": "cmec_m_178"
+    },
+    {
+      "id": "cmec_m_179_still",
+      "start": 1012.267,
+      "dur": 1.9,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_179.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Nunca debajo de una ventana.",
+      "nouns": [
+        "generador",
+        "ventana"
+      ],
+      "sourceMoment": "cmec_m_179"
+    },
+    {
+      "id": "cmec_c_001_still",
+      "start": 1022.767,
+      "dur": 7.467,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_001_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Instala alarmas de monóxido a pilas o con respaldo de batería en cada nivel y fuera de las zonas donde se duerme.",
+      "nouns": [
+        "alarma de monóxido de carbono",
+        "baterías",
+        "pasillo",
+        "puertas de dormitorios"
+      ],
+      "sourceMoment": "cmec_c_001"
+    },
+    {
+      "id": "cmec_m_181_still",
+      "start": 1022.767,
+      "dur": 7.467,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_181.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Instala alarmas de monóxido a pilas o con respaldo de batería en cada nivel y fuera de las zonas donde se duerme.",
+      "nouns": [
+        "alarmas de monóxido",
+        "pilas",
+        "batería",
+        "nivel",
+        "zonas donde se duerme"
+      ],
+      "sourceMoment": "cmec_m_181"
+    },
+    {
+      "id": "cmec_m_182_still",
+      "start": 1030.7,
+      "dur": 7.067,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_182.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si suenan, o alguien siente dolor de cabeza, mareo, debilidad, náusea, sueño o confusión,",
+      "nouns": [
+        "alarmas",
+        "cabeza",
+        "mareo",
+        "debilidad",
+        "náusea",
+        "sueño",
+        "confusión"
+      ],
+      "sourceMoment": "cmec_m_182"
+    },
+    {
+      "id": "cmec_m_183_still",
+      "start": 1038.267,
+      "dur": 3.567,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_183.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "todos salen al aire libre y se pide ayuda desde afuera.",
+      "nouns": [
+        "aire libre",
+        "ayuda"
+      ],
+      "sourceMoment": "cmec_m_183"
+    },
+    {
+      "id": "cmec_c_002_still",
+      "start": 1045.133,
+      "dur": 9.033,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_002.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Debe ser para exterior, tener tierra, estar completa, sin empalmes ni aislamiento cortado, y soportar la corriente a la distancia utilizada.",
+      "nouns": [
+        "extensión para exterior",
+        "clavija con tierra",
+        "aislamiento",
+        "conectores"
+      ],
+      "sourceMoment": "cmec_c_002"
+    },
+    {
+      "id": "cmec_c_003_still",
+      "start": 1071.433,
+      "dur": 4.633,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_003.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si la extensión entra por una puerta o ventana, no la aplastes con el marco.",
+      "nouns": [
+        "extensión",
+        "puerta",
+        "marco",
+        "protector de paso"
+      ],
+      "sourceMoment": "cmec_c_003"
+    },
+    {
+      "id": "cmec_m_189_still",
+      "start": 1076.467,
+      "dur": 8.8,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_189_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si llueve, el generador y sus conexiones necesitan protección diseñada para mantener ventilación y evitar agua, sin encerrar el escape.",
+      "nouns": [
+        "lluvia",
+        "generador",
+        "conexiones",
+        "protección",
+        "ventilación",
+        "agua",
+        "escape"
+      ],
+      "sourceMoment": "cmec_m_189"
+    },
+    {
+      "id": "cmec_c_005_still",
+      "start": 1117.167,
+      "dur": 10.8,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_005.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Elige una habitación de reunión, de preferencia interior, pequeña y con pocas ventanas. Lleva allí mantas, agua, medicamentos, linternas y cargadores.",
+      "nouns": [
+        "habitación interior",
+        "mantas",
+        "agua",
+        "medicamentos",
+        "linternas",
+        "cargadores"
+      ],
+      "sourceMoment": "cmec_c_005"
+    },
+    {
+      "id": "cmec_m_195_still",
+      "start": 1128.567,
+      "dur": 12.7,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_195_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Cierra las puertas de habitaciones que no usan, pero no tapes al azar las rejillas de suministro o retorno de un sistema central: reducir demasiado el flujo puede recalentar el equipo o dañarlo.",
+      "nouns": [
+        "puertas",
+        "habitaciones",
+        "rejillas de suministro",
+        "retorno",
+        "sistema central",
+        "flujo",
+        "equipo"
+      ],
+      "sourceMoment": "cmec_m_195"
+    },
+    {
+      "id": "cmec_c_006_still",
+      "start": 1146.067,
+      "dur": 7.8,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_006.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Bloquea corrientes de aire en puertas y ventanas con burletes, toallas o plástico instalado de manera segura.",
+      "nouns": [
+        "ventana",
+        "burlete",
+        "corriente de aire",
+        "manos"
+      ],
+      "sourceMoment": "cmec_c_006"
+    },
+    {
+      "id": "cmec_m_196_still",
+      "start": 1146.067,
+      "dur": 7.8,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_196_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Bloquea corrientes de aire en puertas y ventanas con burletes, toallas o plástico instalado de manera segura.",
+      "nouns": [
+        "puerta",
+        "ventana",
+        "burlete",
+        "toalla",
+        "plástico"
+      ],
+      "sourceMoment": "cmec_m_196"
+    },
+    {
+      "id": "cmec_c_007_still",
+      "start": 1160.567,
+      "dur": 11.367,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_007.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Usa ropa seca por capas. Mantén a niños, personas mayores y quienes tengan problemas de salud en la zona más templada. Y controla la temperatura con un termómetro.",
+      "nouns": [
+        "ropa por capas",
+        "niño",
+        "persona mayor",
+        "habitación templada",
+        "termómetro"
+      ],
+      "sourceMoment": "cmec_c_007"
+    },
+    {
+      "id": "cmec_m_198_still",
+      "start": 1160.567,
+      "dur": 1.8,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_198_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Usa ropa seca por capas.",
+      "nouns": [
+        "ropa seca",
+        "capas"
+      ],
+      "sourceMoment": "cmec_m_198"
+    },
+    {
+      "id": "cmec_m_199_still",
+      "start": 1162.767,
+      "dur": 6.233,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_199_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Mantén a niños, personas mayores y quienes tengan problemas de salud en la zona más templada.",
+      "nouns": [
+        "niños",
+        "personas mayores",
+        "zona templada"
+      ],
+      "sourceMoment": "cmec_m_199"
+    },
+    {
+      "id": "cmec_c_008_still",
+      "start": 1176.333,
+      "dur": 4.567,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_008.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Bajar el termostato unos grados puede cambiar mucho el ciclo de trabajo.",
+      "nouns": [
+        "termostato",
+        "mano",
+        "temperatura"
+      ],
+      "sourceMoment": "cmec_c_008"
+    },
+    {
+      "id": "cmec_c_010_still",
+      "start": 1236.4,
+      "dur": 5.267,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_010.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Localiza de antemano la llave general, identifica las tuberías más expuestas.",
+      "nouns": [
+        "llave general de agua",
+        "tuberías expuestas",
+        "sótano",
+        "mano"
+      ],
+      "sourceMoment": "cmec_c_010"
+    },
+    {
+      "id": "cmec_c_010_clip",
+      "start": 1236.4,
+      "dur": 4.9,
+      "kind": "raw",
+      "src": "broll/cmecalor_agnes/cmec_c_010.mp4",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Localiza de antemano la llave general, identifica las tuberías más expuestas.",
+      "nouns": [
+        "llave general de agua",
+        "tuberías expuestas",
+        "sótano",
+        "mano"
+      ],
+      "sourceMoment": "cmec_c_010"
+    },
+    {
+      "id": "cmec_c_011_still",
+      "start": 1256.2,
+      "dur": 12.333,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_011.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Carga la batería, desconecta otras cargas y deja que la calefacción complete varios ciclos mientras anotas consumo, porcentaje inicial, porcentaje final y temperatura exterior.",
+      "nouns": [
+        "estación de energía",
+        "calefacción a gas",
+        "cuaderno",
+        "medidor de consumo",
+        "termómetro exterior"
+      ],
+      "sourceMoment": "cmec_c_011"
+    },
+    {
+      "id": "cmec_c_013_still",
+      "start": 1301.567,
+      "dur": 12.4,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_013_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Si una alarma de monóxido se activa, la respuesta no es improvisar otra conexión. Es ir a un refugio, a la casa de alguien con calefacción segura o al lugar indicado por las autoridades locales.",
+      "nouns": [
+        "alarma de monóxido",
+        "familia",
+        "puerta de salida",
+        "abrigos",
+        "bolso"
+      ],
+      "sourceMoment": "cmec_c_013"
+    },
+    {
+      "id": "cmec_m_224_still",
+      "start": 1307.067,
+      "dur": 6.9,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_224_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Es ir a un refugio, a la casa de alguien con calefacción segura o al lugar indicado por las autoridades locales.",
+      "nouns": [
+        "familia",
+        "refugio",
+        "casa",
+        "calefacción segura"
+      ],
+      "sourceMoment": "cmec_m_224"
+    },
+    {
+      "id": "cmec_c_014_still",
+      "start": 1331.833,
+      "dur": 3.633,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_014.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Mide potencia activa, pico de arranque y ciclo de trabajo.",
+      "nouns": [
+        "calefacción a gas",
+        "medidor eléctrico",
+        "ventilador",
+        "técnico"
+      ],
+      "sourceMoment": "cmec_c_014"
+    },
+    {
+      "id": "cmec_c_015_still",
+      "start": 1365.533,
+      "dur": 11.067,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_015.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Y si alguien te propone conectar un generador a un enchufe de la casa, fabricar un cable de dos puntas macho o unir neutro y tierra sin plano ni medición, aléjate.",
+      "nouns": [
+        "cable con dos clavijas macho",
+        "banco de trabajo"
+      ],
+      "sourceMoment": "cmec_c_015"
+    },
+    {
+      "id": "cta_microgeneradores_2_1",
+      "start": 1385.367,
+      "dur": 17.267,
+      "kind": "float",
+      "src": "img/cmecalor/cmec_cta_microgeneradores.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "En el capítulo sobre microgeneradores, disponible con el código QR de la pantalla y en la descripción",
+      "nouns": [
+        "guía",
+        "código QR"
+      ],
+      "sourceMoment": "cta_microgeneradores_2"
+    },
+    {
+      "id": "cta_microgeneradores_2_2",
+      "start": 1402.633,
+      "dur": 17.267,
+      "kind": "float",
+      "src": "img/cmecalor/cmec_cta_pages.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "En el capítulo sobre microgeneradores, disponible con el código QR de la pantalla y en la descripción",
+      "nouns": [
+        "guía",
+        "código QR"
+      ],
+      "sourceMoment": "cta_microgeneradores_2"
+    },
+    {
+      "id": "cmec_c_016_still",
+      "start": 1424.3,
+      "dur": 7.8,
+      "kind": "raw",
+      "src": "img/cmecalor/cmec_c_016.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "Convierte una calefacción fija en una carga que puedes aislar, medir y respaldar sin intentar alimentar toda la casa.",
+      "nouns": [
+        "calefacción fija a gas",
+        "conmutador de transferencia de un circuito",
+        "estación de energía",
+        "cable"
+      ],
+      "sourceMoment": "cmec_c_016"
+    },
+    {
+      "id": "cmec_m_251_still",
+      "start": 1450.333,
+      "dur": 3.833,
+      "kind": "raw",
+      "src": "img/cmecalor/mass/cmec_m_251_v2.png",
+      "hue": "amber",
+      "darken": 0,
+      "noSplit": true,
+      "anchor": "estufa de pared, bomba de calor o resistencia eléctrica.",
+      "nouns": [
+        "estufa de pared",
+        "bomba de calor",
+        "resistencia eléctrica"
+      ],
+      "sourceMoment": "cmec_m_251"
+    }
+  ]
+}

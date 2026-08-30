@@ -1,0 +1,4659 @@
+{
+  "slug": "cmecalor",
+  "stage": "1.5-assets",
+  "generated_at": "2026-08-30T14:55:40.570Z",
+  "timing_status": "pending_master_wav",
+  "approval_filter": "Only pass*/approved* validation, verdict, or status entries are normalized; explicit reject/fail always wins.",
+  "sources": [
+    {
+      "path": "work/cmecalor/visual_a.json",
+      "required": true,
+      "exists": true,
+      "size_bytes": 24292
+    },
+    {
+      "path": "work/cmecalor/visual_b.json",
+      "required": true,
+      "exists": true,
+      "size_bytes": 26640
+    },
+    {
+      "path": "work/cmecalor/visual_c.json",
+      "required": true,
+      "exists": true,
+      "size_bytes": 25807
+    },
+    {
+      "path": "work/cmecalor/mass_audit_s1.json",
+      "required": false,
+      "exists": true,
+      "size_bytes": 100239
+    },
+    {
+      "path": "work/cmecalor/mass_audit_s2.json",
+      "required": false,
+      "exists": true,
+      "size_bytes": 145870
+    },
+    {
+      "path": "work/cmecalor/mass_audit_s3.json",
+      "required": false,
+      "exists": true,
+      "size_bytes": 18655
+    },
+    {
+      "path": "work/cmecalor/mass_audit_s4.json",
+      "required": false,
+      "exists": true,
+      "size_bytes": 81094
+    },
+    {
+      "path": "public/img/cmecalor/cmec_cta_manifest.json",
+      "required": true,
+      "exists": true,
+      "size_bytes": 1856
+    },
+    {
+      "path": "work/cmecalor/agnes_clips_audit_final.json",
+      "required": true,
+      "exists": true,
+      "size_bytes": 2424
+    },
+    {
+      "path": "work/cmecalor/avatar_preflight.json",
+      "required": true,
+      "exists": true,
+      "size_bytes": 924
+    }
+  ],
+  "optional_audits_missing": [],
+  "counts": {
+    "approved_assets": 94,
+    "by_kind": {
+      "avatar": 1,
+      "cta": 4,
+      "diagram": 8,
+      "photo": 75,
+      "qr": 1,
+      "thumbnail": 1,
+      "video": 4
+    },
+    "by_role": {
+      "agnes_clip": 4,
+      "avatar": 1,
+      "mass_s1": 5,
+      "mass_s2": 12,
+      "mass_s3": 20,
+      "mass_s4": 5,
+      "pages": 1,
+      "qr_card": 1,
+      "qr_only": 1,
+      "review_carlos": 1,
+      "review_ricardo": 1,
+      "thumbnail": 1,
+      "visual_a": 15,
+      "visual_b": 13,
+      "visual_c": 13
+    },
+    "approved_photos_requiring_blur": 76,
+    "rejected_excluded": 220,
+    "non_approved_excluded": 17,
+    "approved_non_asset_decisions": 1,
+    "blocking_errors": 0,
+    "warnings": 1
+  },
+  "rejected_excluded": [
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-001",
+      "status": "reject|rejected",
+      "reason": "The furnace is visibly glowing although the exact line requires it off; the carton also has invented text."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-002",
+      "status": "reject|rejected",
+      "reason": "Claudio holds a digital meter, not the passive piece, and the frame does not prove a cold house."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-003",
+      "status": "reject|rejected",
+      "reason": "The selective backup feed is not legible; an exposed wall breaker and a lit appliance make the connection unsafe."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-004",
+      "status": "reject|rejected",
+      "reason": "Dangling exposed conductors dominate the frame, while visible lights and a glowing heater undermine the stated blackout."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-005",
+      "status": "reject|rejected",
+      "reason": "Claudio opens an outdoor-style HVAC fan cabinet rather than the cover of a gas furnace."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-006",
+      "status": "reject|rejected",
+      "reason": "The oversized orange-blue flame is physically implausible and does not resemble a normal gas burner row."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-007",
+      "status": "reject|rejected",
+      "reason": "It shows an axial outdoor HVAC fan and exposed green board, not a gas furnace blower controlling combustion."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-008",
+      "status": "reject|rejected",
+      "reason": "The requested POV is ignored and no safe, legible connection links the thermostat, backup source and furnace."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-010",
+      "status": "reject|rejected",
+      "reason": "A hand operates an open exposed breaker instead of a closed single-load transfer connection."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-011",
+      "status": "reject|rejected",
+      "reason": "The supposedly disconnected damaged board emits active sparks while a hand touches its conductors."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-012",
+      "status": "reject|rejected",
+      "reason": "No selector or two-source isolation is visible; Claudio only points at an open HVAC cabinet and carton."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-013",
+      "status": "reject|rejected",
+      "reason": "The unit is outdoor HVAC rather than the heating group being identified, and its labels are invented text."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-014",
+      "status": "reject|rejected",
+      "reason": "The POV is ignored and the meter is used beside an exposed panel without a legible approved connection."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-015",
+      "status": "reject|rejected",
+      "reason": "No battery is visible; the boiler and pump expose loose wiring instead of a closed safe feed."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-016",
+      "status": "reject|rejected",
+      "reason": "The power station still shows substantial charge and the still frame provides no evidence of depletion within an hour."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-017",
+      "status": "reject|rejected",
+      "reason": "The image is generic calculation work; no identifiable system detail is visibly causing the stated failure."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-018",
+      "status": "reject|rejected",
+      "reason": "A floating battery icon and deformed hand-wire interaction make the battery-versus-fan evidence visibly synthetic."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-019",
+      "status": "reject|rejected",
+      "reason": "The generator powers a portable space heater, not a gas furnace blower that attempts and locks out."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-020",
+      "status": "reject|rejected",
+      "reason": "A waveform is shown, but neutral, ground, polarity and the furnace board are not all visibly identified."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-021",
+      "status": "reject|rejected",
+      "reason": "Two workshop appliances do not literally show different houses or demonstrate that the method is not universal."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-023",
+      "status": "reject|rejected",
+      "reason": "Claudio and a plausible professional review one manual beside a closed furnace, but there is no separately identifiable local electrical-code booklet and no visible transfer switch. The image therefore omits a concrete noun and a required system component from the exact spec."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-024",
+      "status": "reject|rejected",
+      "reason": "The porch light remains on and an open electrical panel is being probed, so the blackout is not demonstrated safely."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-026",
+      "status": "reject|rejected",
+      "reason": "A live flame sits beside exposed energized controls; the exaggerated burner and open wiring are unsafe and synthetic."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-027",
+      "status": "reject|rejected",
+      "reason": "The POV is ignored and a background hand manipulates exposed conductors while Claudio points at unreadable controls."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-028",
+      "status": "reject|rejected",
+      "reason": "Hands and probes enter an exposed assembly; the image does not safely prove verified interlocks and an operating extractor."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-029",
+      "status": "reject|rejected",
+      "reason": "A hand turns a manual gas valve, not the automatic valve-opening step commanded by the control sequence."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-030",
+      "status": "reject|rejected",
+      "reason": "No credible flame sensor is visible and the single giant flame is an obvious AI artifact."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-032",
+      "status": "reject|rejected",
+      "reason": "The boiler pump has exposed sparking conductors and the control and ignition sequence are not safely legible."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-033",
+      "status": "reject|rejected",
+      "reason": "The intact gas line, closed furnace and blank thermostat are credible, but the adjacent room has neither the specified analog thermometer nor blankets. The hanging paper at the register may suggest stopped airflow, but it does not establish that no useful heat reaches the room; that causal claim remains ambiguous."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-034",
+      "status": "reject|rejected",
+      "reason": "The burner is visibly lit although the exact line says it receives no permission; pump stoppage is not proven."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-035",
+      "status": "reject|rejected",
+      "reason": "The stopped ribbon at the return grille and the outdoor propane tank support part of the sentence, but the specified cold-room thermometer is absent and the tank's full state is not visually established. The complete two-clause claim is therefore not literal enough."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-036",
+      "status": "reject|rejected",
+      "reason": "Two solid-fuel stoves and a portable unit do not represent the three named heating families."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-037",
+      "status": "reject|rejected",
+      "reason": "Unreadable carton text and an open HVAC cabinet do not prove choosing the correct backup from the equipment nameplate."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-038",
+      "status": "reject|rejected",
+      "reason": "The flame is oversized and loose conductors emerge from the control box, making the gas/control split unsafe and synthetic."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-040",
+      "status": "reject|rejected",
+      "reason": "No backup battery is visible and exposed circuitry plus a detached red motor do not prove control, air or water support."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-041",
+      "status": "reject|rejected",
+      "reason": "A hand inserts a tool directly into a large flame; this is not safe evidence of a permanent pilot system."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-042",
+      "status": "reject|rejected",
+      "reason": "A hand uses an ignition tool at the flame, contradicting autonomous millivolt operation despite the empty receptacle."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-043",
+      "status": "reject|rejected",
+      "reason": "A hand introduces a torch or lighter; the thermopile, valve and convection path are not visibly demonstrated."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-044",
+      "status": "reject|rejected",
+      "reason": "The cabinet is open despite the instruction not to modify it, and no readable nameplate is compared with the manual."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-045",
+      "status": "reject|rejected",
+      "reason": "The lineup substitutes a normal fan and hydronic radiator for the named electric systems and looks like an AI showroom."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-046",
+      "status": "reject|rejected",
+      "reason": "A split-frame composite shows live sparks at an exposed compressor, an unsafe and visibly generated construction."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-047",
+      "status": "reject|rejected",
+      "reason": "A pasted battery icon and open power box with a hand do not credibly show a small battery failing overnight."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-048",
+      "status": "reject|rejected",
+      "reason": "Two duplicated 1500 W meters and a damaged cord create physically implausible evidence despite the correct number."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-049",
+      "status": "reject|rejected",
+      "reason": "Pasted charge icons, invented branding and a damaged cable do not prove a one-kilowatt-hour station draining rapidly."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-050",
+      "status": "reject|rejected",
+      "reason": "Generic loose fan motors replace the gas furnace, battery and several hours of on-off cycling."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-051",
+      "status": "reject|rejected",
+      "reason": "The open box contains malformed sockets and an empty cavity; a preserved grounded connection is not legible."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-052",
+      "status": "reject|rejected",
+      "reason": "The requested POV is ignored and Claudio manipulates exposed conductors instead of showing a qualified closed installation."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-053",
+      "status": "reject|rejected",
+      "reason": "The selector enclosure is open with exposed wiring, so normal utility operation is neither closed nor safely legible."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-054",
+      "status": "reject|rejected",
+      "reason": "The requested POV is ignored and Claudio presses a switch inside an open live-looking cabinet during the outage."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-055",
+      "status": "reject|rejected",
+      "reason": "Cables enter the heater through active sparks, creating a dangerous direct connection rather than a safe inverter feed."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-056",
+      "status": "reject|rejected",
+      "reason": "The generator cable is spliced into an open panel with visible sparks; no protected extension entry is shown."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-057",
+      "status": "reject|rejected",
+      "reason": "Claudio holds the part beside an open sparking panel with invented labels, not a cheap visible component in a safe system."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-058",
+      "status": "reject|rejected",
+      "reason": "The cord is intact and disconnected, but it reads as a generic IEC appliance lead. The male plug geometry is not a clearly correct grounded furnace plug, and the required closed furnace receptacle box is absent; appropriateness for this equipment cannot be verified."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-059",
+      "status": "reject|rejected",
+      "reason": "Both boxes are open and a hand operates exposed protection, contradicting the closed box and preserved grounding claim."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-060",
+      "status": "reject|rejected",
+      "reason": "The POV is ignored; an open panel and unreadable paperwork do not prove manual and local-code approval."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-061",
+      "status": "reject|rejected",
+      "reason": "An open furnace emits sparks beside an exposed panel; no closed one-circuit transfer switch is identifiable."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-062",
+      "status": "reject|rejected",
+      "reason": "Hands hold stripped conductors inside an open box rather than showing a covered backup-source inlet."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-063",
+      "status": "reject|rejected",
+      "reason": "The POV is ignored and Claudio holds a plug at exposed wiring; a safe selector-to-utility position is absent."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-064",
+      "status": "reject|rejected",
+      "reason": "The POV is ignored and hands work on open conductors; no closed selector visibly connects the backup source."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "id": "cmec-m-065",
+      "status": "reject|rejected",
+      "reason": "An open red actuator with hands behind it does not visibly prove mutually exclusive utility and backup sources."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_066",
+      "status": "reject",
+      "reason": "el dispositivo de pared contiene lectura generada y texto quemado; no queda limpio."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_067",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: Claudio manipula cables conectados a una caja eléctrica con ambas manos; no señala un conmutador cerrado entre dos cables desconectados.; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_068",
+      "status": "reject",
+      "reason": "el conmutador tiene rótulos y símbolos generados; la barrera física no separa limpiamente las clavijas."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_069",
+      "status": "reject",
+      "reason": "el medidor de pared muestra texto y cifras generadas visibles."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_073",
+      "status": "reject",
+      "reason": "los extremos son conectores de audio, no dos clavijas macho domésticas; falla el sustantivo exacto."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_074",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: calefacción fija; acción incorrecta: La acción muestra cableado eléctrico en un conmutador de transferencia, no separación física de fuentes de calefacción; además el texto en las etiquetas ('COIGN', 'CGBAINO', 'CIRRD0') es falso/deformado y el panel está abierto con cables expuestos.; aspecto escenificado/cinematográfico o no documental; texto generado quemado; logo o marca visible"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_075",
+      "status": "reject",
+      "reason": "no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_076",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: Panel is open and actively being worked on with visible sparks; not installed and closed as required; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_077",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: tomacorriente, calefacción; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_079",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: Claudio is adjusting a single motor-like component on top of a cardboard box, not aligning four instruments on the table as narrated.; no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_080",
+      "status": "reject",
+      "reason": "muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_081",
+      "status": "reject",
+      "reason": "el medidor muestra cifras generadas legibles y el plano no respeta la cara sin lectura del instrumento."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_082",
+      "status": "reject",
+      "reason": "aspecto escenificado/cinematográfico o no documental"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_083",
+      "status": "reject",
+      "reason": "faltan: calefacción; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_084",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: calefacción; aspecto escenificado/cinematográfico o no documental; texto generado quemado"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_085",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: límite mecánico; acción incorrecta: La mano manipula activamente la palanca; hay chispas visibles en la parte inferior del panel; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_086",
+      "status": "reject",
+      "reason": "muestra una condición eléctrica insegura o activa; no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_087",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: campos de tensión, campos de corriente; muestra una condición eléctrica insegura o activa; aspecto escenificado/cinematográfico o no documental; texto generado quemado"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_088",
+      "status": "reject",
+      "reason": "aspecto escenificado/cinematográfico o no documental"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_089",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: calefacción, cordón con tierra; acción incorrecta: El medidor está conectado al tomacorriente de pared abierto, no en línea entre un tomacorriente autorizado y un cordón de calefacción; no se ve ningún equipo de calefacción conectado.; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_094",
+      "status": "reject",
+      "reason": "el equipo es un calentador de agua cilíndrico abierto, no una calefacción residencial a gas cerrada."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_095",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: calefacción a gas; acción incorrecta: The paper strip with printed Spanish text is fake/documentary-style overlay text crossing the fan; additionally the energy meter reads 000.0 rather than confirming 420W consumption as narrated.; aspecto escenificado/cinematográfico o no documental"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_096",
+      "status": "reject",
+      "reason": "el medidor presenta escala y cifras generadas legibles, contra la indicación de no inventar el valor."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_097",
+      "status": "reject",
+      "reason": "muestra una condición eléctrica insegura o activa; no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_098",
+      "status": "reject",
+      "reason": "muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_099",
+      "status": "reject",
+      "reason": "aspecto escenificado/cinematográfico o no documental; texto generado quemado; no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_100",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: The heater is actively burning with a visible flame, not in standby mode as required by the narration."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_101",
+      "status": "reject",
+      "reason": "acción incorrecta: Claudio points at the box/cable junction area rather than clearly indicating the battery and the outlet as two distinct points"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_102",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: inversor (no explicit labeling, ambiguous object); acción incorrecta: Active sparks and exposed live wires touching battery terminals — not safe heat dissipation during energy conversion; muestra una condición eléctrica insegura o activa; aspecto escenificado/cinematográfico o no documental"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_103",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: Hands are actively connecting wires to the battery, not merely remaining in place; logo o marca visible"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_104",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: cable desconectado; acción incorrecta: Cable is plugged into the battery, not disconnected; Claudio holds the clock near active equipment rather than stopping a charge.; muestra una condición eléctrica insegura o activa; texto generado quemado; logo o marca visible"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_106",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: ventilador pequeño; acción incorrecta: A hand adjusts/manipulates a motor on a circuit board; no small fan is visibly operating.; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_107",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: cortina movida; acción incorrecta: The heater is malfunctioning with heavy smoke and sparks instead of simply working; the curtain is not being moved by a draft.; muestra una condición eléctrica insegura o activa; aspecto escenificado/cinematográfico o no documental"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_108",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: batería usada, frío; acción incorrecta: Active sparks and exposed live wires from damaged cables are shown; no battery object is visible powering anything. A hand holds a phone near a heater but no scratched battery is present.; muestra una condición eléctrica insegura o activa; aspecto escenificado/cinematográfico o no documental; texto generado quemado; logo o marca visible"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_110",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: Claudio is using a probe connected to the motor with an active meter display, rather than simply pointing at both the motor and peak meter.; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_111",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: fuente de respaldo; acción incorrecta: Someone actively touching sparking live wires to the fan motor hub — opposite of 'stable power supply'; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_112",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: fuente de respaldo, pantalla apagada, motor del ventilador; acción incorrecta: El motor queda detenido y la pantalla de la fuente se apaga — neither motor stopping nor screen turning off is depicted; the device is open on a workbench with no active action shown.; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_113",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: generador, motor, medidor de pico; acción incorrecta: Claudio is not aparting battery/generator boxes and approaching motor/meter; he is working at a bench with batteries and a multimeter probe"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_114",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: fuente de respaldo, medidor de pico; acción incorrecta: Las agujas están en posición baja/parada, no muestran reserva activa por encima del arranque. El motor parece desconectado estáticamente."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_115",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: lámina técnica, mesa de taller; acción incorrecta: Claudio está colocando una caja de cartón sobre la mesa, no una lámina técnica.; muestra una condición eléctrica insegura o activa; manos/anatomía deformadas"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_116",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: puntero, lámina de tres columnas; acción incorrecta: La mano de Claudio señala con el dedo, no con un puntero, y las piezas son bloques de madera tridimensionales, no una lámina plana de tres columnas.; no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_117",
+      "status": "reject",
+      "reason": "aparecen tres llamas activas, incluso sobre la resistencia eléctrica, y texto ajeno en el recipiente; escena insegura e inexacta."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_119",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: estación de energía, generador portátil; acción incorrecta: Unidades conectadas y activas con chispas de soldadura; no aparecen desconectadas.; muestra una condición eléctrica insegura o activa; aspecto escenificado/cinematográfico o no documental"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_120",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: Claudio is actively probing exposed internal components of an open electrical panel rather than observing a safe measurement.; muestra una condición eléctrica insegura o activa"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_121",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: estufa de piloto, cable de red ausente; aspecto escenificado/cinematográfico o no documental; texto generado quemado; logo o marca visible"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_122",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; acción incorrecta: Claudio is attaching wires to the battery terminals rather than moving the battery away from the resistance and compressor.; muestra una condición eléctrica insegura o activa; aspecto escenificado/cinematográfico o no documental; texto generado quemado"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_123",
+      "status": "reject",
+      "reason": "no existe la estructura física capacidad/divisor/consumo; aparecen motores y relojes sin la relación narrada."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_124",
+      "status": "reject",
+      "reason": "los dos medidores contienen números y texto generado visibles; no respeta la lámina tangible sin cifras inventadas."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_125",
+      "status": "reject",
+      "reason": "las clavijas están insertadas en una caja con terminales visibles; no están desconectadas ni separadas sin tomas."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_126",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: tres casillas, batería con reloj, motor, dos clavijas separadas, tres módulos; acción incorrecta: hands interacting with one clock-box, not aligning three modules; no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_128",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: carpeta de guía; acción incorrecta: Claudio points at a blank page inside a wooden frame; he is not filing a sheet into a guide folder.; logo o marca visible"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_129",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: teléfono, cámara, espacio cuadrado para QR; acción incorrecta: Cortando papel con tijeras en vez de apuntar la cámara del teléfono a un espacio para QR; muestra una condición eléctrica insegura o activa; no es un POV real: aparece un rostro/personaje en cuadro"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "id": "cmec_m_130",
+      "status": "reject",
+      "reason": "no muestra literalmente la acción y los sustantivos de la frase; faltan: tabla, respaldo, calefacción; acción incorrecta: Claudio is cutting/working on a small wooden board with a tool at a workbench; he is not placing a guide next to a meter, clock, and single heater.; muestra una condición eléctrica insegura o activa; aspecto escenificado/cinematográfico o no documental"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_131",
+      "status": "reject",
+      "reason": "Open energized-looking furnace with visible flame and Claudio probing exposed wiring; unsafe and not just returning for a test."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_132",
+      "status": "reject",
+      "reason": "Shows a blower but no battery, so the sentence's concrete power source is missing."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_133",
+      "status": "reject",
+      "reason": "Checklist is present, but the active flame and exposed internals make the staged inspection unsafe."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_134",
+      "status": "reject",
+      "reason": "Does not clearly establish normal utility power or the recorded ordered sequence."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_135",
+      "status": "reject",
+      "reason": "Thermostat is disassembled with exposed wiring and handled with a metal tool, contradicting a normal heat request."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_136",
+      "status": "reject",
+      "reason": "Depicts a large generic blower rather than a recognizable combustion inducer."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_137",
+      "status": "reject",
+      "reason": "Shows an established open flame and a hand near it instead of the igniter beginning to glow."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_138",
+      "status": "reject",
+      "reason": "Exaggerated exposed flames and fan do not safely or realistically show the normal flame-to-blower sequence."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_140",
+      "status": "reject",
+      "reason": "Prominent invented badge and equipment labels; professional review is only implied and the transfer installation is unclear."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_142",
+      "status": "reject",
+      "reason": "Connection action is unclear and staged at exposed wiring; furnace-stopped state is not demonstrated."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_143",
+      "status": "reject",
+      "reason": "Shows handling exposed wiring rather than a safe transfer selector moved to backup."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_144",
+      "status": "reject",
+      "reason": "The device being touched is not a recognizable wall thermostat requesting heat."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_145",
+      "status": "reject",
+      "reason": "Prominent invented display text and an exposed oversized flame undermine a normal full-cycle observation."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_146",
+      "status": "reject",
+      "reason": "Visible sparks, invented logo and open improvised wiring make the motor/inverter scene unsafe."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_147",
+      "status": "reject",
+      "reason": "v2 is cleaner but still contradicts the alternative by showing steady flame and a red fault indicator simultaneously; both original and v2 remain rejected."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_148",
+      "status": "reject",
+      "reason": "Generic bench fan wired to exposed car batteries is not the furnace blower and backup margin, and looks unsafe."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_149",
+      "status": "reject",
+      "reason": "Second completed start is not visually distinguishable and the image contains fabricated display text."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_150",
+      "status": "reject",
+      "reason": "Open exposed conductors make the inspection look like unsafe intervention rather than leaving fuses and sensors unchanged."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_151",
+      "status": "reject",
+      "reason": "Does not clearly show stopping after one failed start or avoidance of repeated restart attempts."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_152",
+      "status": "reject",
+      "reason": "Shows probing an open board, not reading a fault code and safely cutting the test."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_154",
+      "status": "reject",
+      "reason": "Prominent invented equipment branding/text and ambiguous load setup."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_155",
+      "status": "reject",
+      "reason": "Clean sine wave is visible, but the frame contains extensive fabricated instrument text and bare improvised probes."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_156",
+      "status": "reject",
+      "reason": "Tests an open electrical enclosure instead of a closed receptacle with a polarity tester."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_157",
+      "status": "reject",
+      "reason": "Hand is dangerously close to flame and neutral-ground/flame-sensor relationship is not shown safely."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_160",
+      "status": "reject",
+      "reason": "Shows meters and an open furnace, not two same-watt backup sources behaving differently."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_161",
+      "status": "reject",
+      "reason": "Comparison is generic and relies on fabricated screens/logos; run-versus-lockout behavior is not clear."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_163",
+      "status": "reject",
+      "reason": "Plan and single open device do not clearly include generator, transfer switch, protections and local-code design together."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_166",
+      "status": "reject",
+      "reason": "Does not clearly show a protected clean-output inverter feeding an electronic furnace control; fabricated text is present."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_170",
+      "status": "reject",
+      "reason": "Shows active work on open wiring rather than a battery station simply operating indoors without fuel or exhaust."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_171",
+      "status": "reject",
+      "reason": "Scene reads as welding/bench work, not dry ventilated battery placement away from heat."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_172",
+      "status": "reject",
+      "reason": "Quiet battery operation is not the concrete focus; equipment context is generic and ambiguous."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_173",
+      "status": "reject",
+      "reason": "Button is on an open control board, not clearly the battery station starting the furnace immediately."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_175",
+      "status": "reject",
+      "reason": "Prominent fabricated labels and ambiguous handling of fuel near the generator weaken the safety message."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_176",
+      "status": "reject",
+      "reason": "Generator is positioned directly beside a house window/opening, contradicting the required safe placement."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_180",
+      "status": "reject",
+      "reason": "Visible smoke, sparks and pliers on live-looking wires misrepresent invisible carbon monoxide and show unsafe repair."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_184",
+      "status": "reject",
+      "reason": "Claudio appears to cut or strip the cord instead of inspecting a complete grounded outdoor extension."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_185",
+      "status": "reject",
+      "reason": "Cord jacket is shown being peeled/cut, contradicting the requirement for intact insulation and no splices."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_186",
+      "status": "reject",
+      "reason": "Dramatic sparks and fabricated 888 display replace the requested thin warm cord and failed motor-start evidence."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_187",
+      "status": "reject",
+      "reason": "Claudio points at a generic tabletop; cord length, load and local sizing table are not shown."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_188",
+      "status": "reject",
+      "reason": "Shows screwdriver work at a wall box, not a protected unpinched extension pass-through at a door or window."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_190",
+      "status": "reject",
+      "reason": "Claudio is opening the fuel can beside the generator; off and cooled state is not visually guaranteed, so it risks teaching unsafe refueling."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_191",
+      "status": "reject",
+      "reason": "Single-battery runtime preparation is not clear and open wiring introduces an unrelated unsafe action."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_192",
+      "status": "reject",
+      "reason": "Person does not match Claudio identity and lowering the thermostat/whole-house contrast is unclear."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_193",
+      "status": "reject",
+      "reason": "Shows Claudio at electrical equipment rather than selecting a small interior gathering room with few windows."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "id": "cmec_m_194",
+      "status": "reject",
+      "reason": "Emergency objects are present but prominent fabricated kit text violates the no-text requirement."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-197",
+      "status": "reject|rejected_independent",
+      "reason": "Sólo muestra el cierre al atardecer; no prueba la segunda acción de aprovechar la radiación solar durante el día ni el cambio entre ambos estados."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-200",
+      "status": "reject|rejected_independent",
+      "reason": "El dial no tiene números, unidades ni escala de temperatura coherente; no demuestra una lectura objetiva de termómetro ambiental."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-201",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-202",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-203",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-204",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-205",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-206",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-207",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-208",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-209",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-210",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-211",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-212",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-213",
+      "status": "reject|rejected_after_v2",
+      "reason": "The closed furnace, battery and storm clouds are present, but the power station appears plugged into an ordinary wall receptacle and the still does not prove a real isolated furnace autonomy test."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-214",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-215",
+      "status": "reject|rejected_conservative",
+      "reason": "Conservative rebuild: this asset is not one of the five independently approved shots, so it remains rejected pending a new literal review."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-216",
+      "status": "reject|rejected_conservative",
+      "reason": "Conservative rebuild: this asset is not one of the five independently approved shots, so it remains rejected pending a new literal review."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-217",
+      "status": "reject|rejected_after_v2",
+      "reason": "A calculator and battery drawings suggest estimation, but no concrete runtime requirement or deliberately retained capacity proves that the account was made with margin; Agnes also flagged the weak link."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-218",
+      "status": "reject|rejected_conservative",
+      "reason": "Conservative rebuild: this asset is not one of the five independently approved shots, so it remains rejected pending a new literal review."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-219",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-220",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-221",
+      "status": "reject|rejected_independent",
+      "reason": "Claudio revisa la mochila junto a la salida, pero las cajas eléctricas del fondo contienen rótulos y cifras sintéticas claramente ilegibles."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-222",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-223",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-225",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-226",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-227",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-228",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-229",
+      "status": "reject|rejected_independent",
+      "reason": "La clasificación como caldera a gas con circulador y respaldo es correcta, pero la bomba contiene letras y cifras generadas ilegibles a resolución original."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-230",
+      "status": "reject|rejected_conservative",
+      "reason": "duration, causal sequence, accumulated losses or multi-state measurements cannot be proved literally by one still; existing diagrams or avatar are safer"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-231",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-232",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-233",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-234",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-235",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-236",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-237",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-238",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-239",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-240",
+      "status": "reject|rejected_conservative",
+      "reason": "prohibitions and electrical operations carry a high reversal or active-danger risk in generated stills; no open panels or tutorial actions were requested"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-241",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-242",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-243",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-244",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-245",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-246",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-247",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-248",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-249",
+      "status": "reject|rejected_conservative",
+      "reason": "equivalent coverage exists in visual_c or the selected classification set provides clearer non-redundant coverage"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-250",
+      "status": "reject|rejected_independent",
+      "reason": "El horno de aire forzado, la caldera y el radiador están correctamente diferenciados, pero el horno conserva etiquetas técnicas sintéticas ilegibles."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-252",
+      "status": "reject|rejected_independent",
+      "reason": "La comparación batería pequeña/horno a gas/calefactor desenchufado es correcta, pero las tuberías del horno muestran etiquetas generadas ilegibles."
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-253",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-254",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-255",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-256",
+      "status": "reject|rejected_conservative",
+      "reason": "CTA, worksheet, QR and next-video material already has final real assets; no synthetic text was generated"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-257",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-258",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-259",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "id": "cmec-m-260",
+      "status": "reject|rejected_conservative",
+      "reason": "abstract summary/farewell claims or internal-component causality have no literal still advantage over Claudio/avatar or existing technical diagrams"
+    },
+    {
+      "source": "work/cmecalor/agnes_clips_audit_final.json",
+      "id": "cmec_c_002",
+      "status": "rejected",
+      "reason": "The grounded connector changes geometry while rotating, so it cannot safely illustrate inspection of an intact cord. Use the approved still instead."
+    },
+    {
+      "source": "work/cmecalor/agnes_clips_audit_final.json",
+      "id": "cmec_c_007",
+      "status": "rejected",
+      "reason": "The original analog thermometer becomes a digital display showing 78, violating object continuity. Use the approved still instead."
+    }
+  ],
+  "non_approved_excluded": [
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_001",
+      "status": "not_generated"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_005",
+      "status": "not_generated"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_006",
+      "status": "avatar_only"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_008",
+      "status": "not_generated"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_011",
+      "status": "avatar_only"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_012",
+      "status": "avatar_only"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_014",
+      "status": "not_generated"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_019",
+      "status": "not_generated"
+    },
+    {
+      "source": "work/cmecalor/visual_b.json",
+      "id": "cmec_b_020",
+      "status": "avatar_only"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-004",
+      "status": "avatar_only_literal"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-009",
+      "status": "not_applicable"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-012",
+      "status": "diagram_spec_only"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-017",
+      "status": "not_applicable"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-018",
+      "status": "not_applicable"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-019",
+      "status": "not_applicable"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-020",
+      "status": "not_applicable"
+    },
+    {
+      "source": "work/cmecalor/visual_c.json",
+      "id": "cmec-c-021",
+      "status": "not_applicable"
+    }
+  ],
+  "approved_non_asset_decisions": [
+    {
+      "source": "work/cmecalor/visual_a.json",
+      "id": "cmec_a_015",
+      "status": "pass",
+      "role": "visual_a"
+    }
+  ],
+  "assets": [
+    {
+      "id": "visual_a:cmec_a_001",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_001",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_001_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_001_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra la carga exclusiva que nombra la frase: calefacción alimentada y hogar apagado.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1650946,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 33397
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_002",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_002",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_002_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_002_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Visualiza literalmente la coexistencia de llama, control eléctrico y ventilador.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2203855,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 49438
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_003",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_003",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_003_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_003_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La frase nombra daño de placa por una conexión peligrosa; la imagen muestra exactamente ese resultado sin enseñar a realizarlo.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2294302,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 69591
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_004",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_004",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_a_004.png",
+      "blur": "public/img/cmecalor/cmec_a_004_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Representa la comparación exacta de las dos cargas nombradas y el efecto sobre la batería.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2262261,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 54325
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_005",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_005",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_a_005.png",
+      "blur": "public/img/cmecalor/cmec_a_005_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra el contraste literal entre batería con carga y calefacción bloqueada.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2072210,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 62561
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_006",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_006",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_006_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_006_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La imagen reúne únicamente los componentes físicos enumerados por la secuencia narrada.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2111912,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 61667
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_007",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_007",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_a_007.png",
+      "blur": "public/img/cmecalor/cmec_a_007_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Materializa exactamente la división entre combustible que crea calor y electricidad que mueve control y bomba.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2261119,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 59029
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_008",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_008",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_a_008.png",
+      "blur": "public/img/cmecalor/cmec_a_008_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra el equipo exacto operando sin conexión eléctrica, como dice la narración.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1801179,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 31843
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_009",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_009",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_009_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_009_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Enseña las dos clases de carga eléctrica intensiva mencionadas, junto con la batería insuficiente.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1983750,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 54755
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_010",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_010",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_010_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_010_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra exactamente el calefactor, la medición y la descarga rápida de la estación.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1993975,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 52601
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_011",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_011",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_a_011.png",
+      "blur": "public/img/cmecalor/cmec_a_011_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La acción y todos los sustantivos de la frase aparecen literalmente en un mismo plano.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2284633,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 49448
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_012",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_012",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_012_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_012_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra el dispositivo real y la separación física entre las fuentes, no un enchufe genérico.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1739001,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 41737
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_013",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_013",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_a_013.png",
+      "blur": "public/img/cmecalor/cmec_a_013_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La frase nombra un único objeto concreto; el plano lo muestra exactamente y sin demostrar su uso.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1920160,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 61360
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_014",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_014",
+      "role": "visual_a",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_manual_strict",
+      "file": "public/img/cmecalor/cmec_a_014_v2.png",
+      "blur": "public/img/cmecalor/cmec_a_014_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Representa la acción exacta de buscar los datos eléctricos del equipo y del motor.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1947700,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 52342
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_a:cmec_a_016",
+      "source": "work/cmecalor/visual_a.json",
+      "source_id": "cmec_a_016",
+      "role": "visual_a",
+      "kind": "diagram",
+      "visual_type": "diagram",
+      "approval_status": "pass_original_resolution_text_audit",
+      "file": "public/img/cmecalor/ig_dg_cmec_a_016.png",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "Los cuatro conceptos se presentan como instrumentos físicos separados y legibles en una lámina editorial tangible.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 2246020,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_002",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_002",
+      "role": "visual_b",
+      "kind": "diagram",
+      "visual_type": "diagram",
+      "approval_status": "pass_original_resolution_text_audit",
+      "file": "public/img/cmecalor/ig_dg_cmec_b_002.png",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "La imagen muestra el horno a gas, el ventilador activo, la medición y la cifra exacta en el mismo plano.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 2072366,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_003",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_003",
+      "role": "visual_b",
+      "kind": "diagram",
+      "visual_type": "diagram",
+      "approval_status": "pass_original_resolution_text_audit",
+      "file": "public/img/cmecalor/ig_dg_cmec_b_003.png",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "Objetos y flechas físicas hacen visible que el inversor, el frío y la reserva reducen la capacidad entregada al enchufe.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 2046085,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_004",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_004",
+      "role": "visual_b",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_b_004.png",
+      "blur": "public/img/cmecalor/cmec_b_004_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Representa literalmente batería fría y envejecida alimentando una carga adicional.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2259205,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 49760
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_007",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_007",
+      "role": "visual_b",
+      "kind": "diagram",
+      "visual_type": "diagram",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/ig_dg_cmec_b_007.png",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "La lámina materializa las tres columnas y Agnes OCR confirmó cada palabra exacta sin texto adicional.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 2378326,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_009",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_009",
+      "role": "visual_b",
+      "kind": "diagram",
+      "visual_type": "diagram",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/ig_dg_cmec_b_009.png",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "Los tres controles se leen literalmente y las relaciones están materializadas con instrumentos físicos; Agnes OCR confirmó símbolos y acentos.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 2320995,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_010",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_010",
+      "role": "visual_b",
+      "kind": "diagram",
+      "visual_type": "diagram",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/ig_dg_cmec_b_010.png",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "Las tres casillas y sus etiquetas exactas se distinguen de inmediato; Agnes OCR confirmó las tres palabras sin deformaciones.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 2830812,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_013",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_013",
+      "role": "visual_b",
+      "kind": "diagram",
+      "visual_type": "imagegen_infographic",
+      "approval_status": "pass_literal_original_resolution",
+      "file": "public/img/cmecalor/ig_dg_cmec_b_013.png",
+      "blur": "public/img/cmecalor/ig_dg_cmec_b_013_blur.jpg",
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "La plancha materializa los cinco componentes en el orden exacto, con cuatro flechas inequívocas y texto controlado.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2493091,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 23668
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_015",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_015",
+      "role": "visual_b",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_b_015.png",
+      "blur": "public/img/cmecalor/cmec_b_015_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La observación sostenida, la llama y el ventilador representan la revisión del ciclo completo.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1995793,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 50919
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_016",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_016",
+      "role": "visual_b",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_b_016.png",
+      "blur": "public/img/cmecalor/cmec_b_016_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Representa exactamente leer la falla y detener la prueba de forma segura.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2007176,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 53833
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_017",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_017",
+      "role": "visual_b",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_b_017.png",
+      "blur": "public/img/cmecalor/cmec_b_017_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Los instrumentos muestran literalmente la revisión de onda y polaridad.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2098077,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 63704
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_018",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_018",
+      "role": "visual_b",
+      "kind": "diagram",
+      "visual_type": "imagegen_infographic",
+      "approval_status": "pass_literal_original_resolution",
+      "file": "public/img/cmecalor/ig_dg_cmec_b_018.png",
+      "blur": "public/img/cmecalor/ig_dg_cmec_b_018_blur.jpg",
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "La comparación muestra fuentes de igual escala y resultados opuestos: operación completa a la izquierda y pantalla, intento y bloqueo a la derecha.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2342363,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 20846
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_021",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_021",
+      "role": "visual_b",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_b_021.png",
+      "blur": "public/img/cmecalor/cmec_b_021_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra exactamente estación interior, seca, ventilada y alejada del calor.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1747964,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 44701
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_b:cmec_b_022",
+      "source": "work/cmecalor/visual_b.json",
+      "source_id": "cmec_b_022",
+      "role": "visual_b",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_b_022_v2.png",
+      "blur": "public/img/cmecalor/cmec_b_022_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "El reemplazo muestra el generador al aire libre, la casa muy distante y el escape orientado hacia la cámara, en sentido opuesto a la vivienda.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 3199442,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 32740
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-001",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-001",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass_v2_literal",
+      "file": "public/img/cmecalor/cmec_c_001_v2.png",
+      "blur": "public/img/cmecalor/cmec_c_001_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La versión v2 es inequívocamente una alarma de monóxido: muestra lectura funcional en PPM, alimentación a pilas y ubicación fuera de dos dormitorios.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2329510,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 16826
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-002",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-002",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_002.png",
+      "blur": "public/img/cmecalor/cmec_c_002_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La extensión, la tierra y el aislamiento de la frase ocupan el plano.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1840638,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 39831
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-003",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-003",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "agnes_candidate",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_003.png",
+      "blur": "public/img/cmecalor/cmec_c_003_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Representa literalmente el cable atravesando el marco sin ser aplastado.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2106843,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 37204
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-005",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-005",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_005.png",
+      "blur": "public/img/cmecalor/cmec_c_005_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Incluye uno por uno los suministros y la habitación de reunión de la frase.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2249705,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 46054
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-006",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-006",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "agnes_candidate",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_006.png",
+      "blur": "public/img/cmecalor/cmec_c_006_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "El plano muestra exactamente la acción de bloquear la corriente con burlete.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1883085,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 40994
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-007",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-007",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_007.png",
+      "blur": "public/img/cmecalor/cmec_c_007_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Relaciona exactamente ropa por capas, personas vulnerables y control con termómetro.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2375459,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 42084
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-008",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-008",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "agnes_candidate",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_008.png",
+      "blur": "public/img/cmecalor/cmec_c_008_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "El termostato y la acción de bajarlo son el único foco.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1647359,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 29990
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-010",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-010",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_010.png",
+      "blur": "public/img/cmecalor/cmec_c_010_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra la llave general y las tuberías expuestas mientras se las localiza.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2411892,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 40076
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-011",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-011",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "agnes_candidate",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_011.png",
+      "blur": "public/img/cmecalor/cmec_c_011_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Reúne exactamente la batería, la calefacción y el registro de datos de la prueba.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2119035,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 39199
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-013",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-013",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "agnes_candidate",
+      "approval_status": "pass_v2_literal",
+      "file": "public/img/cmecalor/cmec_c_013_v2.png",
+      "blur": "public/img/cmecalor/cmec_c_013_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La versión v2 muestra de forma simultánea una alarma de CO activa con luz roja, la familia abrigada cruzando hacia afuera y una mochila de emergencia.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2576512,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 18826
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-014",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-014",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_014.png",
+      "blur": "public/img/cmecalor/cmec_c_014_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Muestra la medición real de la calefacción, no una batería genérica.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1809478,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 36808
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-015",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-015",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_015.png",
+      "blur": "public/img/cmecalor/cmec_c_015_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Hace visible el objeto peligroso exacto sin enseñar a conectarlo.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2656876,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 24162
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "visual_c:cmec-c-016",
+      "source": "work/cmecalor/visual_c.json",
+      "source_id": "cmec-c-016",
+      "role": "visual_c",
+      "kind": "photo",
+      "visual_type": "agnes_candidate",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/cmec_c_016.png",
+      "blur": "public/img/cmecalor/cmec_c_016_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Resume de forma literal una única calefacción aislada y respaldada, no la casa completa.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2079970,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1672,
+        "height": 941,
+        "size_bytes": 34071
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s1:cmec-m-009",
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "source_id": "cmec-m-009",
+      "role": "mass_s1",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass|approved",
+      "file": "public/img/cmecalor/mass/cmec_m_009_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_009_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio compara literalmente un tomacorriente suelto con la conexión instalada junto al horno cerrado; identidad, manos y seguridad pasan.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2372226,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14074
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s1:cmec-m-022",
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "source_id": "cmec-m-022",
+      "role": "mass_s1",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass|approved",
+      "file": "public/img/cmecalor/mass/cmec_m_022_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_022_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio señala sin tocar la caja eléctrica cerrada y la tubería de gas instalada; no hay conductor expuesto ni manipulación peligrosa.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1970927,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14283
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s1:cmec-m-025",
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "source_id": "cmec-m-025",
+      "role": "mass_s1",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass|approved",
+      "file": "public/img/cmecalor/mass/cmec_m_025_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_025_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio observa el horno cerrado apagado y el termostato sin energía; la pregunta mecánica se vuelve visible sin tocar el equipo.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1994474,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 13810
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s1:cmec-m-031",
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "source_id": "cmec-m-031",
+      "role": "mass_s1",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass|approved",
+      "file": "public/img/cmecalor/mass/cmec_m_031.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_031_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "A large furnace fan is clearly visible inside a cabinet connected directly to a metal air duct.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 5801755,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size_bytes": 156523
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s1:cmec-m-039",
+      "source": "work/cmecalor/mass_audit_s1.json",
+      "source_id": "cmec-m-039",
+      "role": "mass_s1",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass|approved",
+      "file": "public/img/cmecalor/mass/cmec_m_039.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_039_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "The exact concrete noun is shown cleanly: a full-size furnace fan inside its service cabinet.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 6287263,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size_bytes": 169022
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_070",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_070",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_070_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_070_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "El generador está apagado afuera y el cable permanece enrollado, desconectado y separado del tomacorriente por el umbral físico.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2641750,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14018
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_071",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_071",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_071_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_071_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "El técnico verifica un cable aislado junto a gabinetes cerrados antes de tocarlo; no hay conductor expuesto ni peligro actuado.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2653965,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14699
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_072",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_072",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_072_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_072_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio conserva identidad aprobada, señala el tablero cerrado y mantiene el cable no autorizado desconectado en una bandeja.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2029558,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14836
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_078",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_078",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_078_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_078_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio aparta el teléfono y reúne medidor, cuaderno, reloj y calculadora sin pantallas ni conexiones activas.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2327520,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 16417
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_090",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_090",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_090_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_090_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "El profesional prepara una medición frente a gabinete y calefacción cerrados, sin sonda sobre conductores ni pantalla legible.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2039332,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 12753
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_091",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_091",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_091_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_091_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio hace la señal de alto frente al tablero cerrado; la pinza queda colgada, cerrada y sin uso.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1947134,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14175
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_092",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_092",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_092_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_092_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "El electricista verifica sólo el exterior del tablero cerrado con detector sin contacto; no abre ni inserta nada.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1836661,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14034
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_093",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_093",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_093_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_093_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio registra el resultado junto a la calefacción cerrada sin tocar medidor, cordón ni conexiones.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1875767,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14292
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_105",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_105",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_105_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_105_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio deja el cuaderno de ejemplo sobre la mesa y señala la calefacción real y cerrada de la casa.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1854513,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 14741
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_109",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_109",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "claudio_pov",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_109_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_109_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "POV real: la caja sin marca se aparta y quedan en foco medidor, reloj, cuaderno y calefacción cerrada.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1910427,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 13914
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_118",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_118",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_118.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_118_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "placa de control, ventilador, bomba y resistencia aparecen como cuatro componentes distintos, ordenados y desconectados; foto cotidiana sin texto ni riesgo.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 5579999,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 539,
+        "size_bytes": 19249
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s2:cmec_m_127",
+      "source": "work/cmecalor/mass_audit_s2.json",
+      "source_id": "cmec_m_127",
+      "role": "mass_s2",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_127_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_127_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "La prueba fallida deja estación apagada, tomacorriente vacío y cordón de calefacción completamente desconectado.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1947213,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 960,
+        "height": 540,
+        "size_bytes": 15155
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_139",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_139",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_139.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_139_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio reads the equipment manual beside the exact furnace, matching the sentence without an unsafe action.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 4708932,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 63612
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_141",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_141",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_141_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_141_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 shows a gloved hand using only the external disconnect handle with every enclosure and the furnace closed.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1726681,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 33166
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_153",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_153",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_153_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_153_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 shows the external gas valve perpendicular to the pipe, closed furnace, red fault light and no flame or exposed parts.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1689563,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 30654
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_158",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_158",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_158_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_158_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 cleanly shows generator and battery source switched off, all sockets empty, and every cord and tester unplugged.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2235692,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 43704
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_159",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_159",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_159_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_159_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 shows a normal analog reading at the battery source and a separate red fault indicator on the closed furnace through a safe installed path.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1941286,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 35458
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_162",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_162",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_162_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_162_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 places the capped jumper loose in a red rejection tray while generator and transfer enclosure remain closed and disconnected.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1924543,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 42379
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_164",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_164",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_164_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_164_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 shows the visibly damaged improvised cable capped and fully disconnected beside a closed metal furnace, with a proper intact cord apart.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2408231,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 29127
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_165",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_165",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_165.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_165_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio checks equipment-specific manufacturer documents beside the unit; identity and literal action match.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 4965488,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 64320
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_167",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_167",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_167_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_167_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 preserves Claudio identity while he and the professional review a line-only plan beside closed transfer hardware and furnace.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1950251,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 39117
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_168",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_168",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_168_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_168_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 preserves Claudio identity and shows him rejecting a fully disconnected mystery adapter while pointing to the approved design; boxes stay closed.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2124492,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 40420
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_169",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_169",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_169.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_169_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio presents the concrete generator and battery backup sources in a normal workshop context.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 4405956,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 66273
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_174",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_174",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_174_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_174_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 shows an empty battery pictogram, unplugged cord and dark stopped gas furnace in the same safe utility-room frame.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2107048,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 31768
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_177",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_177",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_177.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_177_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio measures a long, visible house-to-generator safety distance; exact nouns and action are present.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 5114758,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 60518
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_178",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_178",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_178.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_178_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Generator is clearly outside while the open garage and shed remain behind it; object shot makes the prohibition concrete.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 5966620,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 84102
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_179",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_179",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_179.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_179_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio visibly relocates the off generator away from the window, matching the prohibition safely.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 4947942,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 59609
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_181",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_181",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_181.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_181_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio installs a battery-backed carbon-monoxide alarm in a hallway outside sleeping areas.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 4275705,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 59400
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_182",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_182",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_182.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_182_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Alarm and family member discomfort are both visible, matching the warning clause directly.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 4935898,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 62597
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_183",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_183",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_183.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_183_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio and family are outdoors while he calls for help, exactly matching the instructed response.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 4624200,
+      "media": {
+        "codec": "png",
+        "width": 2624,
+        "height": 1472,
+        "aspect_ratio": 1.78261
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 65516
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_189",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_189",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_189_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_189_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 shows the generator far from the house under a rigid high-roof shelter with completely open sides and no exposed connection.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2488738,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 41740
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s3:cmec_m_195",
+      "source": "work/cmecalor/mass_audit_s3.json",
+      "source_id": "cmec_m_195",
+      "role": "mass_s3",
+      "kind": "photo",
+      "visual_type": "photo",
+      "approval_status": "pass",
+      "file": "public/img/cmecalor/mass/cmec_m_195_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_195_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "v2 visibly closes the unused room while a floor supply grille and a large wall return grille remain fully unobstructed.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1849633,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 30585
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s4:cmec-m-196",
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "source_id": "cmec-m-196",
+      "role": "mass_s4",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass|approved_v2",
+      "file": "public/img/cmecalor/mass/cmec_m_196_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_196_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Puerta, ventana, burlete, toalla y plástico seguro están visibles; Claudio instala el burlete y la identidad coincide.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1953718,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 50236
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s4:cmec-m-198",
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "source_id": "cmec-m-198",
+      "role": "mass_s4",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass|approved_v2",
+      "file": "public/img/cmecalor/mass/cmec_m_198_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_198_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio se pone una capa exterior seca sobre la camiseta negra; acción, capas, identidad y aspecto casual son literales.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1795545,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 50668
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s4:cmec-m-199",
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "source_id": "cmec-m-199",
+      "role": "mass_s4",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass|approved_v2",
+      "file": "public/img/cmecalor/mass/cmec_m_199_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_199_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Una niña y una adulta mayor permanecen juntas, abrigadas, en la habitación con radiador; la situación es específica y segura.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1939602,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 62699
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s4:cmec-m-224",
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "source_id": "cmec-m-224",
+      "role": "mass_s4",
+      "kind": "photo",
+      "visual_type": "claudio",
+      "approval_status": "pass|approved_v2",
+      "file": "public/img/cmecalor/mass/cmec_m_224_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_224_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Claudio llega con familia, abrigos y bolsos a otra casa donde los reciben; el radiador visible prueba el destino calefaccionado.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 1872731,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 50391
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "mass_s4:cmec-m-251",
+      "source": "work/cmecalor/mass_audit_s4.json",
+      "source_id": "cmec-m-251",
+      "role": "mass_s4",
+      "kind": "photo",
+      "visual_type": "objeto",
+      "approval_status": "pass|approved_v2",
+      "file": "public/img/cmecalor/mass/cmec_m_251_v2.png",
+      "blur": "public/img/cmecalor/mass/cmec_m_251_v2_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": "Estufa mural, bomba de calor interior/exterior y calefactor de resistencia desenchufado aparecen como sistemas distintos y correctamente clasificados.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2207653,
+      "media": {
+        "codec": "png",
+        "width": 1672,
+        "height": 941,
+        "aspect_ratio": 1.77683
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1600,
+        "height": 900,
+        "size_bytes": 55474
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "cta:qr_only",
+      "source": "public/img/cmecalor/cmec_cta_manifest.json",
+      "source_id": "qr_only",
+      "role": "qr_only",
+      "kind": "qr",
+      "visual_type": "qr",
+      "approval_status": "approved_manifest",
+      "file": "public/img/cmecalor/cmec_qr_only.png",
+      "blur": "public/img/cmecalor/cmec_qr_only_blur.jpg",
+      "needs_blur": false,
+      "ratio_policy": "square",
+      "reason": null,
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 3739,
+      "media": {
+        "codec": "png",
+        "width": 720,
+        "height": 720,
+        "aspect_ratio": 1
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 720,
+        "height": 720,
+        "size_bytes": 22409
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "cta:qr_card",
+      "source": "public/img/cmecalor/cmec_cta_manifest.json",
+      "source_id": "qr_card",
+      "role": "qr_card",
+      "kind": "cta",
+      "visual_type": "graphic",
+      "approval_status": "approved_manifest",
+      "file": "public/img/cmecalor/cmec_cta_microgeneradores.png",
+      "blur": "public/img/cmecalor/cmec_cta_microgeneradores_blur.jpg",
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": null,
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 81979,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size_bytes": 60724
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "cta:pages",
+      "source": "public/img/cmecalor/cmec_cta_manifest.json",
+      "source_id": "pages",
+      "role": "pages",
+      "kind": "cta",
+      "visual_type": "graphic",
+      "approval_status": "approved_manifest",
+      "file": "public/img/cmecalor/cmec_cta_pages.png",
+      "blur": "public/img/cmecalor/cmec_cta_pages_blur.jpg",
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": null,
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 786712,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size_bytes": 59874
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "cta:review_ricardo",
+      "source": "public/img/cmecalor/cmec_cta_manifest.json",
+      "source_id": "review_ricardo",
+      "role": "review_ricardo",
+      "kind": "cta",
+      "visual_type": "graphic",
+      "approval_status": "approved_manifest",
+      "file": "public/img/cmecalor/cmec_cta_review_ricardo.png",
+      "blur": "public/img/cmecalor/cmec_cta_review_ricardo_blur.jpg",
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": null,
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 436668,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size_bytes": 46045
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "cta:review_carlos",
+      "source": "public/img/cmecalor/cmec_cta_manifest.json",
+      "source_id": "review_carlos",
+      "role": "review_carlos",
+      "kind": "cta",
+      "visual_type": "graphic",
+      "approval_status": "approved_manifest",
+      "file": "public/img/cmecalor/cmec_cta_review_carlos.png",
+      "blur": "public/img/cmecalor/cmec_cta_review_carlos_blur.jpg",
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": null,
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 509289,
+      "media": {
+        "codec": "png",
+        "width": 1920,
+        "height": 1080,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1920,
+        "height": 1080,
+        "size_bytes": 44029
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "agnes_clip:cmec_a_007",
+      "source": "work/cmecalor/agnes_clips_audit_final.json",
+      "source_id": "cmec_a_007",
+      "role": "agnes_clip",
+      "kind": "video",
+      "visual_type": "photo",
+      "approval_status": "approved_manual_override",
+      "file": "public/broll/cmecalor_agnes/cmec_a_007.mp4",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "Four frames preserve boiler, pump, pipework, cable and battery; only the flame and very subtle equipment motion change. The automatic hands/anatomy score is inapplicable because no person appears.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 518181,
+      "media": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 704,
+        "duration_seconds": 5.041667,
+        "aspect_ratio": 1.81818
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "agnes_clip:cmec_a_008",
+      "source": "work/cmecalor/agnes_clips_audit_final.json",
+      "source_id": "cmec_a_008",
+      "role": "agnes_clip",
+      "kind": "video",
+      "visual_type": "photo",
+      "approval_status": "approved_manual_override",
+      "file": "public/broll/cmecalor_agnes/cmec_a_008.mp4",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "The wall heater, empty receptacle and room remain fixed while only the small pilot flame flickers. The automatic human-anatomy failure is inapplicable.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 289484,
+      "media": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 704,
+        "duration_seconds": 5.041667,
+        "aspect_ratio": 1.81818
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "agnes_clip:cmec_b_015",
+      "source": "work/cmecalor/agnes_clips_audit_final.json",
+      "source_id": "cmec_b_015",
+      "role": "agnes_clip",
+      "kind": "video",
+      "visual_type": "photo",
+      "approval_status": "approved_manual_override",
+      "file": "public/broll/cmecalor_agnes/cmec_b_015.mp4",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "The technician continues observing the closed furnace through the inspection window; four frames show no object, face or scene discontinuity. Hands are out of frame, so the automatic hands score is inapplicable.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 537369,
+      "media": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 704,
+        "duration_seconds": 5.041667,
+        "aspect_ratio": 1.81818
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "agnes_clip:cmec_c_010",
+      "source": "work/cmecalor/agnes_clips_audit_final.json",
+      "source_id": "cmec_c_010",
+      "role": "agnes_clip",
+      "kind": "video",
+      "visual_type": "photo",
+      "approval_status": "approved_manual_override",
+      "file": "public/broll/cmecalor_agnes/cmec_c_010.mp4",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": "The main water shutoff and pipes remain exact; the hand points briefly and withdraws without turning the valve. The automatic hands/anatomy score is inapplicable after the hand leaves frame.",
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 1912120,
+      "media": {
+        "codec": "h264",
+        "width": 1280,
+        "height": 704,
+        "duration_seconds": 5.041667,
+        "aspect_ratio": 1.81818
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "required:thumbnail",
+      "source": "stage15_required",
+      "source_id": "thumbnail",
+      "role": "thumbnail",
+      "kind": "thumbnail",
+      "visual_type": "thumbnail",
+      "approval_status": "approved_required",
+      "file": "public/img/cmecalor/cmec_thumbnail.png",
+      "blur": "public/img/cmecalor/cmec_thumbnail_blur.jpg",
+      "needs_blur": true,
+      "ratio_policy": "16:9",
+      "reason": null,
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": true
+      },
+      "size_bytes": 2388456,
+      "media": {
+        "codec": "png",
+        "width": 1792,
+        "height": 1008,
+        "aspect_ratio": 1.77778
+      },
+      "blur_media": {
+        "codec": "jpeg",
+        "width": 1792,
+        "height": 1008,
+        "size_bytes": 80625
+      },
+      "symbolic_link": false
+    },
+    {
+      "id": "avatar:preflight",
+      "source": "work/cmecalor/avatar_preflight.json",
+      "source_id": "cmecalor",
+      "role": "avatar",
+      "kind": "avatar",
+      "visual_type": "video",
+      "approval_status": "approved_preflight:pass",
+      "file": "public/avatar_cmecalor.mp4",
+      "blur": null,
+      "needs_blur": false,
+      "ratio_policy": "16:9",
+      "reason": null,
+      "checks": {
+        "exists": true,
+        "nonempty": true,
+        "dimensions": true,
+        "blur": null
+      },
+      "size_bytes": 531417053,
+      "media": {
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080,
+        "duration_seconds": 1493.88,
+        "aspect_ratio": 1.77778
+      },
+      "symbolic_link": true
+    }
+  ]
+}

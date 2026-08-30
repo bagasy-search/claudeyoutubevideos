@@ -261,7 +261,11 @@ fs.writeFileSync(listFile, items.join("\n"));
 console.log(`empaquetando ${items.length} entradas → ${tar} ...`);
 // El tar de Windows (bsdtar) maneja rutas D:\ nativamente y NO soporta --force-local
 // (eso es de GNU tar). Detectamos cuál hay: si es bsdtar, sin --force-local.
-let tarArgs = ["-cf", tar, "-C", "public", "-T", listFile];
+// File links are useful locally to keep large avatar/audio assets on D:, but the FARM runners
+// cannot resolve a Windows target such as D:\\CodexMedia\\.... Opt in to materializing their
+// bytes in the transport tar without replacing the local links.
+const dereferenceLinks = process.env.FARM_DEREFERENCE_LINKS === "1";
+let tarArgs = [...(dereferenceLinks ? ["-h"] : []), "-cf", tar, "-C", "public", "-T", listFile];
 try {
   const help = execSync("tar --version", { encoding: "utf8" });
   if (/GNU tar/i.test(help)) tarArgs = ["--force-local", ...tarArgs]; // solo GNU lo necesita/soporta
@@ -305,11 +309,14 @@ if (fs.statSync(tar).size <= releaseAssetLimit) {
 
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
+// Stitch downloads the continuous master WAV as a release asset (not from inside the tar), so
+// publish the exact same file alongside the tar parts. The tar still contains it for Remotion.
+const releaseFiles = [...uploadFiles, wav];
 let reusableRelease = false;
 try {
   const release = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
   const remote = new Map((release.assets || []).map((asset) => [asset.name, Number(asset.size || 0)]));
-  reusableRelease = !release.isDraft && uploadFiles.every((file) => remote.get(path.basename(file)) === fs.statSync(file).size);
+  reusableRelease = !release.isDraft && releaseFiles.every((file) => remote.get(path.basename(file)) === fs.statSync(file).size);
 } catch { /* no existe o está incompleto */ }
 // `gh release create` puede dejar un draft huérfano si la subida grande se corta. Ese draft no
 // siempre aparece en `gh release view <tag>` y el reintento falla para siempre con HTTP 422. La API
@@ -328,9 +335,9 @@ if (!reusableRelease) {
   // GitHub may not have made visible yet after cleanup. The former race caused
   // intermittent HTTP 422 "Reference does not exist" before any render run.
   const releaseTarget = out("git rev-parse HEAD");
-  sh(`gh release create ${relTag} ${uploadFiles.map((file) => `"${file}"`).join(" ")} --target ${releaseTarget} --title ${relTag} --notes "assets del render"`);
+  sh(`gh release create ${relTag} ${releaseFiles.map((file) => `"${file}"`).join(" ")} --target ${releaseTarget} --title ${relTag} --notes "assets del render"`);
 } else {
-  console.log(`release ${relTag} ya contiene exactamente las ${uploadFiles.length} parte(s); reutilizo la subida`);
+  console.log(`release ${relTag} ya contiene exactamente las ${releaseFiles.length} parte(s), incluido el WAV máster; reutilizo la subida`);
 }
 for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, {force:true});
 }

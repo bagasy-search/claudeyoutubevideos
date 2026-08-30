@@ -1,0 +1,222 @@
+{
+  "slug": "cmecalor",
+  "phase": "director_pre_audio",
+  "timing_status": "waiting_for_real_wav_and_whisper",
+  "timing_rule": "No contiene milisegundos ni duraciones inventadas. El beatsheet se anclará únicamente a la transcripción del WAV real.",
+  "title": "Mantén a tu Familia con Calor en un Apagón con esta Pieza de $7",
+  "channel": "Claudio Mendoza Constructor",
+  "visual_rule": "Cada recurso nace de los sustantivos y la acción de la frase exacta. No existen pools temáticos intercambiables. Si no hay coincidencia literal, queda Claudio a pantalla completa.",
+  "look": {
+    "imagery": "fotografía documental doméstica y de taller, fotorrealista, luz práctica, textura cotidiana, sin gradación cinematográfica",
+    "palette": "negro grafito, blanco hueso y verde voltio del kit del canal",
+    "presenter": "Claudio a pantalla completa como continuidad y respaldo; cero PiP",
+    "captions": "none",
+    "transitions": "cortes limpios y movimientos informativos; sin filtros de color ni temblor"
+  },
+  "anchors": [
+    "calefacción a gas",
+    "horno de aire forzado",
+    "caldera a gas",
+    "ventilador de calefacción",
+    "bomba de circulación",
+    "tomacorriente con tierra",
+    "conmutador de transferencia de un circuito",
+    "estación de energía",
+    "generador portátil",
+    "alarma de monóxido de carbono"
+  ],
+  "glossary": {
+    "pieza": "tomacorriente con tierra o punto de conexión aprobado junto al equipo; nunca presentarlo como generador de calor",
+    "aislamiento": "separación física entre la red eléctrica y la fuente de respaldo",
+    "respaldo": "estación de energía con inversor o generador portátil exterior",
+    "equipo_candidato": "calefacción cuyo calor viene del gas y cuya electricidad alimenta control, ventilador o bomba",
+    "equipo_no_candidato": "resistencia eléctrica, caloventor, radiador eléctrico, bomba de calor o compresor grande"
+  },
+  "pace": {
+    "hook": "rápido y contrastado",
+    "mechanism": "didáctico, permitir leer el flujo",
+    "demonstration": "seguir la acción completa sin cortes arbitrarios",
+    "safety": "firme, visual literal, sin sensacionalismo",
+    "cta": "pausa suficiente para escanear el QR; duración final sale del WAV",
+    "close": "breve y directo"
+  },
+  "sources": {
+    "equipment_and_connections": "mixto: fotos IA literales + stock técnico verificado + avatar",
+    "measurements_and_math": "componentes reales del kit + fotos del medidor y del equipo exactos",
+    "generator_safety": "stock documental verificado + componentes de advertencia",
+    "family_heat_plan": "fotos IA domésticas literales + avatar",
+    "cta": "QR determinista + lámina del capítulo microgeneradores"
+  },
+  "scarce": false,
+  "music": "neutra, práctica y contenida; tensión leve solo en retroalimentación y monóxido",
+  "sections": [
+    {
+      "id": "S01_HOOK",
+      "paragraphs": [1, 6],
+      "objective": "Romper la interpretación literal del título y abrir el misterio de una calefacción a gas que solo necesita una pequeña carga eléctrica.",
+      "arc": "pieza visible -> calefacción encendida -> peligro de conexión incorrecta -> promesa del fallo oculto",
+      "component": "LayeredReveal con fotografías exactas del tomacorriente, la calefacción y la estación de energía",
+      "anchors": [
+        {"quote": "La pieza del título no produce calor", "nouns": ["pieza", "calefacción"], "show": "primerísimo plano del tomacorriente con tierra al lado de una calefacción a gas; la pieza permanece fría y el quemador está separado"},
+        {"quote": "La llama entrega miles de vatios de calor", "nouns": ["llama", "placa", "ventilador"], "show": "quemador a gas encendido y, en corte separado, placa y ventilador del mismo equipo"},
+        {"quote": "La batería parece tener potencia suficiente", "nouns": ["batería", "generador", "ventilador"], "show": "pantalla de estación de energía encendida mientras el ventilador intenta iniciar y se detiene"}
+      ]
+    },
+    {
+      "id": "S02_POR_QUE_SE_APAGA",
+      "paragraphs": [7, 9],
+      "objective": "Mostrar el recorrido real desde termostato hasta aire o agua caliente.",
+      "arc": "gas disponible -> orden eléctrica -> seguros -> ignición -> ventilador o bomba -> habitaciones",
+      "component": "FlowSteps y PartsDiagramKit adaptados al horno de aire forzado y a la caldera",
+      "anchors": [
+        {"quote": "la placa recibe la orden del termostato", "nouns": ["placa", "termostato"], "show": "dedo subiendo el termostato y placa de control recibiendo la orden"},
+        {"quote": "mueve un ventilador grande", "nouns": ["ventilador", "conductos"], "show": "ventilador centrífugo real girando y aire entrando a conductos"},
+        {"quote": "la bomba que hace circular el agua", "nouns": ["bomba", "radiadores", "piso radiante"], "show": "bomba de circulación de caldera moviendo agua hacia radiadores"}
+      ]
+    },
+    {
+      "id": "S03_TRES_FAMILIAS",
+      "paragraphs": [10, 14],
+      "objective": "Clasificar sin ambigüedad qué sistema es candidato y cuál no.",
+      "arc": "candidato gas+electricidad -> milivoltios autónomo -> resistencia o compresor -> comparación de demanda",
+      "component": "ProcessGridKit de tres tarjetas fotográficas y CompareTwoKit para 1500 W contra carga cíclica",
+      "anchors": [
+        {"quote": "horno o caldera que produce calor con gas", "nouns": ["horno", "caldera", "gas", "ventilador", "bomba"], "show": "dos fotografías específicas: horno con ventilador y caldera con bomba"},
+        {"quote": "piloto permanente y sistema de milivoltios", "nouns": ["estufa de pared", "piloto", "milivoltios"], "show": "piloto permanente azul de una estufa de pared antigua sin cable de red"},
+        {"quote": "calefactor eléctrico portátil puede pedir alrededor de mil quinientos vatios", "nouns": ["calefactor eléctrico", "medidor"], "show": "calefactor conectado a medidor mostrando consumo cercano a 1500 W; cifra se dibuja con componente, no dentro de la foto"}
+      ]
+    },
+    {
+      "id": "S04_PIEZA_Y_AISLAMIENTO",
+      "paragraphs": [15, 20],
+      "objective": "Revelar la pieza y dejar claro que la seguridad depende de separar las fuentes.",
+      "arc": "tomacorriente con tierra -> instalación aprobada -> conmutador -> metáfora puerta/portero -> retroalimentación prohibida -> solución correcta",
+      "component": "CutawayCallouts para la caja y el cordón; SplitPanel para red/respaldo; MythTruth para cable macho-macho; FlowArrowsKit con exclusión física",
+      "anchors": [
+        {"quote": "un punto de conexión con tierra", "nouns": ["tomacorriente", "tierra", "calefacción"], "show": "tomacorriente con tierra en caja cerrada junto al gabinete del equipo"},
+        {"quote": "un conmutador de transferencia de un solo circuito", "nouns": ["conmutador", "red", "respaldo"], "show": "selector físico con posiciones red y respaldo, una sola fuente activa"},
+        {"quote": "un cable con clavijas macho en ambos extremos", "nouns": ["cable", "dos clavijas macho"], "show": "cable macho-macho aislado sobre mesa con gran cruz del componente; ninguna mano tocando puntas"}
+      ]
+    },
+    {
+      "id": "S05_CUATRO_DATOS",
+      "paragraphs": [21, 28],
+      "objective": "Convertir la idea en cálculo verificable.",
+      "arc": "cuatro datos -> placa y manual -> medición -> ejemplo 420/900/40% -> autonomía útil -> margen -> pico de arranque",
+      "component": "StatGrid de cuatro datos, GaugeDial para pico, CycleDiagramKit para 40%, EquationKit para 800 Wh / 180 W",
+      "anchors": [
+        {"quote": "potencia mientras funciona, pico de arranque, porcentaje de tiempo encendida y capacidad útil", "nouns": ["potencia", "pico", "ciclo", "capacidad"], "show": "cuatro tarjetas del kit, cada una con su icono técnico y sin foto genérica"},
+        {"quote": "empieza por la placa del equipo y por su manual", "nouns": ["placa", "manual"], "show": "mano fotografiando la placa de datos del equipo con el manual abierto al lado; texto de foto ilegible para evitar datos inventados"},
+        {"quote": "consume cuatrocientos veinte vatios", "nouns": ["calefacción", "ventilador", "medidor"], "show": "medidor de energía conectado a la calefacción mientras funciona; la cifra 420 W aparece en componente separado"},
+        {"quote": "obtienes alrededor de cuatro horas y media", "nouns": ["batería", "autonomía"], "show": "EquationKit muestra la división y una batería se vacía hasta la marca calculada"}
+      ]
+    },
+    {
+      "id": "S06_LAMINA_Y_CTA_SEMILLA",
+      "paragraphs": [29, 34],
+      "objective": "Entregar la lámina memorable y conducir al capítulo de microgeneradores.",
+      "arc": "tres columnas -> clasificación -> fórmula -> tres casillas -> QR y guía",
+      "component": "DuelColumns adaptado a tres columnas, ChecklistReveal para Autonomía/Arranque/Aislamiento y QrFloat del kit Volt",
+      "anchors": [
+        {"quote": "qué produce el calor", "nouns": ["gas", "combustible", "electricidad"], "show": "columna visual con iconos literales de llama de gas, combustible y resistencia"},
+        {"quote": "Autonomía. Arranque. Aislamiento.", "nouns": ["autonomía", "arranque", "aislamiento"], "show": "tres casillas grandes del kit que se validan una por una"},
+        {"quote": "capítulo sobre microgeneradores", "nouns": ["capítulo", "microgeneradores", "código QR"], "show": "tarjeta QR determinista y página del capítulo microgeneradores, sin precio"}
+      ]
+    },
+    {
+      "id": "S07_PRUEBA_COMPLETA",
+      "paragraphs": [35, 39],
+      "objective": "Mostrar una prueba completa y el comportamiento correcto ante un bloqueo.",
+      "arc": "secuencia normal -> transferencia -> pedido de calor -> ciclo completo -> código de falla y corte",
+      "component": "NumberedSteps para el procedimiento y FlowSteps para termostato/extractor/ignición/llama/ventilador",
+      "anchors": [
+        {"quote": "el termostato pide calor, arranca el extractor", "nouns": ["termostato", "extractor", "ignición", "llama", "ventilador"], "show": "cinco pasos visuales del mismo horno, en orden"},
+        {"quote": "se conecta el respaldo con la calefacción detenida", "nouns": ["respaldo", "calefacción", "selector"], "show": "equipo detenido, fuente conectada y selector pasando a respaldo"},
+        {"quote": "Lee el código y corta la prueba", "nouns": ["código de falla", "interruptor"], "show": "pantalla de diagnóstico encendida y mano apagando el sistema; ningún sensor puenteado"}
+      ]
+    },
+    {
+      "id": "S08_FALLO_OCULTO",
+      "paragraphs": [40, 42],
+      "objective": "Explicar por qué igual potencia no garantiza compatibilidad.",
+      "arc": "onda/polaridad/referencia -> dos fuentes iguales en vatios con resultados distintos -> resolución profesional",
+      "component": "VsDuel para dos fuentes, GaugeDial para potencia y MythTruth para el puente neutro-tierra",
+      "anchors": [
+        {"quote": "onda senoidal limpia", "nouns": ["onda senoidal", "placa electrónica"], "show": "osciloscopio o componente con onda limpia alimentando una placa de calefacción"},
+        {"quote": "dos fuentes con el mismo número de vatios", "nouns": ["dos fuentes", "vatios", "calefacción"], "show": "dos estaciones lado a lado; una completa el arranque y la otra muestra protección"},
+        {"quote": "No se arregla improvisando un puente entre neutro y tierra", "nouns": ["neutro", "tierra", "puente"], "show": "diagrama del kit con el puente tachado; no mostrar manos ejecutándolo"}
+      ]
+    },
+    {
+      "id": "S09_FUENTES_Y_SEGURIDAD",
+      "paragraphs": [43, 48],
+      "objective": "Contrastar batería interior y generador exterior, con monóxido y extensión como riesgos concretos.",
+      "arc": "batería interior -> generador a seis metros -> monóxido -> cable correcto -> lluvia y combustible",
+      "component": "SplitPanel para batería/generador, BigStatReveal para seis metros, ChecklistKit para extensión y StampReveal de advertencia CO",
+      "anchors": [
+        {"quote": "Una estación de energía con batería puede trabajar dentro de la casa", "nouns": ["estación de energía", "casa"], "show": "estación seca y ventilada alimentando solo la calefacción dentro de un cuarto técnico"},
+        {"quote": "mantenlo al menos a unos seis metros de la casa", "nouns": ["generador", "casa", "puertas", "ventanas", "escape"], "show": "vista lateral medida de generador exterior, escape opuesto, puertas y ventanas cerradas"},
+        {"quote": "alarmas de monóxido", "nouns": ["alarma de monóxido", "dormitorios"], "show": "alarma a pilas instalada fuera de zonas de dormir"},
+        {"quote": "La extensión también forma parte del sistema", "nouns": ["extensión exterior", "tierra", "aislamiento"], "show": "primer plano de extensión gruesa con tierra, cubierta intacta, sin empalmes"}
+      ]
+    },
+    {
+      "id": "S10_ESTIRAR_AUTONOMIA",
+      "paragraphs": [49, 57],
+      "objective": "Convertir la vivienda en una carga térmica menor sin introducir peligros.",
+      "arc": "habitación segura -> sellar corrientes -> bajar termostato -> prohibiciones -> agua -> prueba real -> margen",
+      "component": "PhotoCarousel para la habitación, BeforeAfter para filtraciones, GaugeDial para 40% a 25%, ChecklistReveal de prohibiciones y StatGrid de prueba",
+      "anchors": [
+        {"quote": "Elige una habitación de reunión", "nouns": ["habitación", "mantas", "agua", "medicamentos", "linternas", "cargadores"], "show": "familia reunida en habitación interior con exactamente esos objetos visibles"},
+        {"quote": "Bloquea corrientes de aire", "nouns": ["puerta", "ventana", "burlete", "toalla", "cortina"], "show": "manos colocando burlete en ventana y toalla al pie de la puerta"},
+        {"quote": "pasar de un cuarenta por ciento a un veinticinco por ciento", "nouns": ["termostato", "ciclo"], "show": "GaugeDial reduce el ciclo y EquationKit actualiza autonomía"},
+        {"quote": "No uses la cocina ni el horno para calentar", "nouns": ["cocina", "horno", "brasero", "carbón", "velas"], "show": "ChecklistReveal con imágenes exactas tachadas, no una habitación genérica"},
+        {"quote": "localiza de antemano la llave general", "nouns": ["llave general", "tuberías"], "show": "mano señalando la llave general de agua y tuberías expuestas"}
+      ]
+    },
+    {
+      "id": "S11_DECISION_Y_SALIDA",
+      "paragraphs": [58, 62],
+      "objective": "Cerrar el árbol de decisión y fijar las prohibiciones críticas.",
+      "arc": "condiciones de salida -> candidato -> no candidato -> tres conexiones peligrosas",
+      "component": "FlowSteps como árbol de decisión, CompareTwoKit candidato/no candidato y MythTruth triple",
+      "anchors": [
+        {"quote": "prepara un plan de salida", "nouns": ["termómetro", "batería", "alarma de monóxido", "refugio"], "show": "familia recoge mochila y sale al activarse una condición del plan"},
+        {"quote": "produce calor con gas", "nouns": ["gas", "control", "ventilador", "bomba"], "show": "rama candidata con componentes exactos"},
+        {"quote": "cable de dos puntas macho o unir neutro y tierra", "nouns": ["generador", "tomacorriente", "cable macho-macho", "puente neutro-tierra"], "show": "tres tarjetas separadas, cada peligro con su objeto exacto y una cruz"}
+      ]
+    },
+    {
+      "id": "S12_CTA_MICROGENERADORES",
+      "paragraphs": [63, 63],
+      "objective": "Ofrecer el capítulo que resuelve la compra y el cálculo sin romper el tono educativo.",
+      "arc": "capítulo -> cuatro datos -> autonomía -> orden de prueba -> tabla de cable -> QR",
+      "component": "CtaCard con price=0, QrFloat y carrusel de páginas de la guía",
+      "anchors": [
+        {"quote": "disponible con el código QR de la pantalla", "nouns": ["código QR", "capítulo microgeneradores", "hoja de autonomía"], "show": "QR grande escaneable junto a portada del capítulo y tres páginas reales o diseñadas del contenido citado"}
+      ]
+    },
+    {
+      "id": "S13_CIERRE",
+      "paragraphs": [64, 67],
+      "objective": "Cerrar la promesa, abrir conversación y anticipar la medición del próximo video.",
+      "arc": "pieza como puerta -> pregunta por tipo de calefacción -> próximo experimento -> recordatorio final",
+      "component": "ClosingCardKit con miniaturas literales de los cinco sistemas y teaser de estación de energía medida",
+      "anchors": [
+        {"quote": "darle electricidad al cerebro y al ventilador", "nouns": ["placa", "ventilador", "calefacción a gas"], "show": "placa y ventilador reciben energía mientras la llama aporta el calor"},
+        {"quote": "aire forzado, caldera con radiadores, estufa de pared, bomba de calor o resistencia eléctrica", "nouns": ["cinco sistemas de calefacción"], "show": "cinco recortes fotográficos exactos; no usar una casa genérica"},
+        {"quote": "voy a medir cuánto dura una estación de energía", "nouns": ["estación de energía", "medidor", "cargas"], "show": "mesa de prueba con estación, medidor y varias cargas desconectadas listas para medirse una por una"}
+      ]
+    }
+  ],
+  "gates": {
+    "literal_sentence_match_required": true,
+    "generic_section_pool_forbidden": true,
+    "avatar_when_exact_asset_missing": true,
+    "no_subtitles": true,
+    "no_local_render": true,
+    "no_build_before_real_audio": true,
+    "no_ms_before_whisper": true,
+    "reuse_generated_assets_after_audio": true
+  }
+}

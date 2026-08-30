@@ -39,6 +39,7 @@ jobs:
           curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_reset" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}"}' || true
 
   render:
+    timeout-minutes: 90
     needs: prepare
     runs-on: ubuntu-latest
     strategy:
@@ -131,6 +132,7 @@ jobs:
           retention-days: 3
 
   stitch:
+    timeout-minutes: 60
     needs: render
     # Sin este `if`, un solo chunk caído saltea el job ENTERO — y con él la persistencia de los que
     # sí salieron. Medido en el render del GUANTE: 6 chunks buenos, 13 caídos, stitch nunca corrió y
@@ -195,16 +197,47 @@ jobs:
             exit 1
           fi
           cat list.txt
-          ffmpeg -y -f concat -safe 0 -i list.txt -c copy "${{ github.event.inputs.slug }}.mp4"
-          # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
-          # esperado algo se truncó igual. total_frames/30 es la duración teórica.
-          ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")
-          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "${{ github.event.inputs.slug }}.mp4" | cut -d. -f1)
-          echo "duración: real ${REAL}s · esperada ${ESPERADO}s"
-          if [ "$REAL" -lt $(( ESPERADO * 90 / 100 )) ]; then
-            echo "::error::el MP4 dura ${REAL}s pero se esperaban ~${ESPERADO}s (menos del 90%). Está truncado — no lo publico."
-            exit 1
-          fi
+          SLUG="${{ github.event.inputs.slug }}"
+          RAW="_cat_$SLUG.mp4"
+          MASTER="${SLUG}_fish.wav"
+          # Concatenamos solo el video y luego lo decodificamos de nuevo. Así se eliminan los
+          # saltos de PTS que el concat por copia deja en cada una de las 59 costuras.
+          ffmpeg -y -v error -f concat -safe 0 -i list.txt \
+            -map 0:v:0 -c:v copy -an "$RAW"
+          test -s "$RAW"
+
+          # El audio continuo es el WAV real usado para locutar. Se baja una vez en stitch;
+          # ningún fallback vuelve a usar el audio de los chunks ni un WAV viejo.
+          export GH_TOKEN="${{ github.token }}"
+          n=0
+          until gh release download "assets-$SLUG" -R "${{ github.repository }}" \
+                  --pattern "$MASTER" --dir . --clobber; do
+            n=$((n+1)); [ "$n" -ge 4 ] && { echo "::error::no pude bajar el WAV máster tras $n intentos"; exit 1; }
+            echo "reintento $n de la descarga del WAV máster"; sleep $((10 * n))
+          done
+          test -s "$MASTER" || { echo "::error::no está el WAV máster $MASTER"; exit 1; }
+
+          ESPERADO=$(awk "BEGIN{printf \"%.6f\", ${{ github.event.inputs.total_frames }}/30}")
+          # `setpts=N/30/TB` descarta los timestamps heredados de las costuras y numera cada
+          # frame desde cero. `-frames:v` y `-r 30` hacen que el resultado sea CFR exacto.
+          ffmpeg -y -v error -i "$RAW" -i "$MASTER" \
+            -map 0:v:0 -map 1:a:0 \
+            -vf "setpts=N/30/TB,format=yuv420p" -r 30 -fps_mode cfr \
+            -frames:v "${{ github.event.inputs.total_frames }}" \
+            -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -video_track_timescale 90000 \
+            -c:a aac -b:a 192k -ar 48000 \
+            -af "aresample=async=1:first_pts=0,apad" \
+            -t "$ESPERADO" -movflags +faststart "$SLUG.mp4"
+          rm -f "$RAW" "$MASTER"
+
+          FPS=$(ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of default=nw=1:nk=1 "$SLUG.mp4")
+          NFR=$(ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames -of default=nw=1:nk=1 "$SLUG.mp4")
+          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$SLUG.mp4")
+          echo "validación CFR: fps=$FPS · frames=$NFR · duración=${REAL}s · esperada=${ESPERADO}s"
+          [ "$FPS" = "30/1" ] || { echo "::error::el MP4 no quedó a 30/1 CFR"; exit 1; }
+          [ "$NFR" = "${{ github.event.inputs.total_frames }}" ] || { echo "::error::cantidad de frames incorrecta: $NFR"; exit 1; }
+          awk -v real="$REAL" -v esperado="$ESPERADO" 'BEGIN { d=real-esperado; if (d<0) d=-d; if (d>1) exit 1 }' \
+            || { echo "::error::duración fuera de tolerancia de 1 segundo"; exit 1; }
       - uses: actions/upload-artifact@v4
         with:
           name: final-${{ github.event.inputs.slug }}
@@ -214,7 +247,6 @@ jobs:
       # ffmpeg ya esta instalado acá. Haciendolo aca el agente NO necesita bajarse 700 MB para
       # verificar duracion/audio/negros: lee esta salida del log de la corrida.
       - name: chequeo tecnico del MP4
-        continue-on-error: true
         run: |
           F="${{ github.event.inputs.slug }}.mp4"
           echo "=== CHEQUEO_TECNICO ==="
@@ -233,7 +265,6 @@ jobs:
       # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
       # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
       - name: publicar el MP4 final como release
-        continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           S="${{ github.event.inputs.slug }}"
