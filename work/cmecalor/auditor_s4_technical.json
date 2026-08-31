@@ -1,0 +1,34 @@
+{
+  "slug": "cmecalor",
+  "gate": "§4 AUDITOR — técnico antes del FARM",
+  "status": "PASS",
+  "composition": {
+    "id": "Cmecalor",
+    "fps": 30,
+    "total_frames": 44818,
+    "duration_seconds": 1493.933
+  },
+  "media": {
+    "audio_master_seconds": 1493.909333,
+    "avatar_seconds": 1493.88
+  },
+  "checks": {
+    "isolated_entry": true,
+    "complete_explicit_asset_list": true,
+    "all_assets_nonempty": true,
+    "master_wav_is_only_audio": true,
+    "exact_duration_gate": true,
+    "farm_only_render": true,
+    "windows_links_materialized_for_farm": true,
+    "continuous_wav_uploaded_for_stitch": true,
+    "cfr_stitch_and_hard_release_checks": true,
+    "metadata_and_thumbnail_present": true,
+    "post_render_frame_audit_required": true
+  },
+  "post_render_required": [
+    "FARM log must prove 30/1 CFR, 44,818 decoded frames, audio stream, duration within one second, and published release asset.",
+    "Extract representative frames from the FARM MP4 with ffmpeg and inspect hook, transitions, CTA/QR, second half, and ending before Bagasy delivery.",
+    "Decode the QR from the rendered CTA frame, not merely from the PNG."
+  ],
+  "errors": []
+}

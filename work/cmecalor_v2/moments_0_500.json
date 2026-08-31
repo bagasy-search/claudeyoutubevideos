@@ -1,0 +1,302 @@
+[
+  {
+    "start_ms": 0,
+    "end_ms": 8160,
+    "caption_exact": "La pieza del título no produce calor, no genera electricidad y por sí sola no mantiene caliente una casa.",
+    "nouns": ["pieza", "calor", "electricidad", "casa"],
+    "action": "Claudio sostiene en la palma un tomacorriente con tierra y lo muestra frente a una calefacción apagada.",
+    "safety": "La pieza está suelta, sin cables y totalmente desenergizada; Claudio no toca contactos ni conductores.",
+    "prompt_es": "Foto horizontal 16:9 extremadamente fotorrealista, identidad exacta de Claudio Mendoza tomada de la imagen de referencia. Foto casual de celular, luz doméstica normal, sin estética cinematográfica. Claudio en un cuarto de servicio real sostiene en la palma un único tomacorriente con tierra completamente suelto y sin cables, mostrándolo a cámara; detrás se ve una calefacción doméstica apagada. Manos anatómicamente correctas, cinco dedos por mano, pieza con geometría eléctrica real, sin texto añadido, sin dramatismo.",
+    "agnes_motion_es": "Usar la imagen fija como referencia visual principal: leve respiración y pequeño giro natural de la muñeca para mostrar la pieza; cámara de celular casi estática, sin deformar dedos, tomacorriente ni calefacción."
+  },
+  {
+    "start_ms": 22820,
+    "end_ms": 28960,
+    "caption_exact": "Si tu equipo calienta con gas puede haber una sorpresa enorme escondida detrás de su tapa.",
+    "nouns": ["equipo a gas", "tapa", "interior"],
+    "action": "Claudio retira con ambas manos la tapa frontal de una calefacción a gas apagada para revelar su ventilador y placa, sin tocar el interior.",
+    "safety": "Equipo apagado, llave de gas cerrada y alimentación desconectada; la tapa ya está liberada y no hay conductores expuestos al alcance.",
+    "prompt_es": "Foto horizontal 16:9 hiperrealista de Claudio Mendoza, conservar exactamente el rostro, cabello, edad y complexión de la referencia. Fotografía casual de celular en un cuarto de máquinas común. Claudio termina de retirar con ambas manos la tapa frontal ya liberada de una calefacción a gas doméstica desenergizada; detrás de la tapa se distinguen de forma realista el ventilador y la placa de control, y él no toca nada interno. Manos y tornillos correctos, panel coherente, luz ambiente plana, nada cinematográfico.",
+    "agnes_motion_es": "Desde la referencia, Claudio separa apenas la tapa unos centímetros y dirige la mirada al interior; movimiento corto y real, sin inventar cables, sin cambiar la posición del ventilador ni de la placa."
+  },
+  {
+    "start_ms": 63320,
+    "end_ms": 68760,
+    "caption_exact": "La diferencia no está en el precio de la pieza, está en una palabra, aislamiento.",
+    "nouns": ["pieza", "aislamiento", "fuentes"],
+    "action": "Claudio señala el bloqueo mecánico de un conmutador de transferencia que deja disponible una sola fuente.",
+    "safety": "Conmutador instalado con tapa cerrada; no hay acceso a bornes ni partes energizadas.",
+    "prompt_es": "Foto 16:9 extremadamente realista de Claudio Mendoza usando su retrato como referencia exacta. En una pared de taller doméstico, Claudio señala con el índice el bloqueo mecánico visible de un conmutador de transferencia de un solo circuito, con la tapa cerrada y una sola posición de fuente habilitada. La pieza barata queda desenfocada sobre una mesa secundaria, pero el objeto principal es el conmutador aislador. Foto casual tomada con celular, iluminación normal, manos perfectas, hardware eléctrico verosímil, cero estilo de publicidad o cine.",
+    "agnes_motion_es": "Claudio mueve el índice unos centímetros siguiendo el bloqueo mecánico y asiente una vez; el selector permanece fijo y la cámara solo tiene microtemblor natural."
+  },
+  {
+    "start_ms": 108560,
+    "end_ms": 116240,
+    "caption_exact": "a veces el problema está en la forma de la corriente, la referencia entre neutro y tierra o la polaridad que espera la propia placa.",
+    "nouns": ["corriente", "neutro", "tierra", "polaridad", "placa"],
+    "action": "Claudio observa un analizador enchufable de polaridad y calidad de corriente conectado a la salida de un inversor.",
+    "safety": "Se usa un instrumento cerrado y certificado; no se muestran conductores abiertos, bornes ni mediciones invasivas.",
+    "prompt_es": "Fotografía horizontal 16:9 ultrafotorrealista, Claudio Mendoza idéntico a la referencia, escena casual de celular. Claudio sostiene con cuidado un analizador enchufable profesional conectado a la salida cerrada de un inversor de batería; mira su pantalla de forma concentrada para comprobar forma de onda, neutro-tierra y polaridad. A un lado se ve la carcasa cerrada de la placa de calefacción, sin cables expuestos. Instrumentos y clavijas físicamente correctos, manos naturales, luz de garaje común, nada cinematográfico, nada de gráficos flotantes.",
+    "agnes_motion_es": "Claudio inclina apenas el analizador para leerlo y luego mira la carcasa de control; mantener exactas pantalla, clavija, manos y conexiones, sin animar números ni crear chispas."
+  },
+  {
+    "start_ms": 131500,
+    "end_ms": 138800,
+    "caption_exact": "La instalación eléctrica fija y cualquier intervención dentro de un equipo de combustión se revisan con el manual,",
+    "nouns": ["instalación eléctrica fija", "equipo de combustión", "manual"],
+    "action": "Claudio lee el manual del fabricante junto a la calefacción cerrada y compara el diagrama con la placa de datos.",
+    "safety": "El equipo permanece cerrado y apagado; solo se consulta documentación y placa exterior.",
+    "prompt_es": "Foto casual de celular horizontal 16:9, realismo fotográfico extremo. Claudio Mendoza debe conservar exactamente la identidad del retrato de referencia. Junto a una calefacción a gas completamente cerrada y apagada, Claudio sostiene abierto el manual físico del fabricante y compara sus páginas con la placa de datos exterior del equipo, señalándola con un dedo. Papel, placa y carcasa realistas, manos correctas, taller doméstico ordinario, iluminación práctica sin look cinematográfico; no agregar titulares ni texto diseñado.",
+    "agnes_motion_es": "Claudio baja la vista del manual a la placa de datos y desplaza suavemente el dedo; hojas con movimiento mínimo, equipo inmóvil y sin alterar el texto visible."
+  },
+  {
+    "start_ms": 139380,
+    "end_ms": 142600,
+    "caption_exact": "la norma de tu localidad y un profesional habilitado.",
+    "nouns": ["norma local", "profesional habilitado"],
+    "action": "Claudio revisa un esquema de instalación con un electricista habilitado frente al equipo.",
+    "safety": "Revisión documental con el tablero y la calefacción cerrados; no se realiza trabajo energizado.",
+    "prompt_es": "Foto horizontal 16:9 extremadamente fotorrealista, estilo foto espontánea de celular. Claudio Mendoza, idéntico al retrato de referencia, está junto a un electricista habilitado con ropa de trabajo normal; ambos revisan un plano y el manual sobre una mesa frente a la calefacción cerrada. Claudio señala un punto del esquema y el profesional confirma. Ambiente doméstico real, luz común, expresiones naturales, manos anatómicas, cero pose corporativa, cero cine, sin texto superpuesto.",
+    "agnes_motion_es": "Ambos desplazan la mirada entre el plano y el equipo; Claudio hace un gesto corto sobre el papel, sin alterar documentos, rostros ni manos."
+  },
+  {
+    "start_ms": 146240,
+    "end_ms": 149640,
+    "caption_exact": "se corta la electricidad, pero el gas sigue llegando.",
+    "nouns": ["electricidad", "gas", "calefacción"],
+    "action": "Claudio señala el interruptor eléctrico apagado y la tubería de gas intacta que llega a la calefacción.",
+    "safety": "No acciona la válvula de gas ni abre el equipo; solo señala elementos exteriores identificables.",
+    "prompt_es": "Foto 16:9 hiperrealista de Claudio Mendoza con identidad exacta de la referencia, tomada con celular en un sótano doméstico durante un apagón. Claudio señala con una mano un interruptor de servicio claramente en posición apagada y con la otra indica, sin tocarla, la tubería de gas intacta que entra en la calefacción cerrada. La habitación tiene luz de linterna suave y realista, no dramática. Manos correctas, tubería y llave reales, ningún cable expuesto, nada cinematográfico.",
+    "agnes_motion_es": "Claudio alterna un pequeño gesto entre el interruptor apagado y la tubería, sin tocar la válvula; cámara fija y objetos completamente estables."
+  },
+  {
+    "start_ms": 153200,
+    "end_ms": 158680,
+    "caption_exact": "Porque el gas pone el calor, pero la electricidad dirige casi todo lo demás.",
+    "nouns": ["gas", "calor", "electricidad", "control"],
+    "action": "Claudio apunta primero a la mirilla sellada de la llama y luego al módulo eléctrico exterior de control.",
+    "safety": "Calefacción cerrada y operando normalmente; la llama solo se observa por mirilla sellada y no hay panel abierto.",
+    "prompt_es": "Imagen horizontal 16:9 de realismo fotográfico extremo, Claudio Mendoza idéntico al retrato de referencia. Foto casual de celular: Claudio agachado junto a una calefacción a gas cerrada señala la pequeña mirilla sellada donde se ve una llama normal y, con la otra mano, el módulo exterior cerrado de control eléctrico. Ningún panel removido, ninguna llama expuesta, ninguna mano cerca de calor. Cuarto de servicio común, luz práctica, anatomía y equipo correctos, cero estética cinematográfica.",
+    "agnes_motion_es": "Claudio desplaza lentamente el gesto desde la mirilla sellada hacia el control exterior; la llama fluctúa apenas detrás del vidrio, sin cambiar conexiones ni abrir el equipo."
+  },
+  {
+    "start_ms": 175420,
+    "end_ms": 184700,
+    "caption_exact": "En una caldera de agua, la electricidad puede alimentar la placa, el encendido y la bomba que hace circular el agua por radiadores o pisor radiante.",
+    "nouns": ["caldera", "placa", "encendido", "bomba", "radiadores", "piso radiante"],
+    "action": "Claudio señala la bomba circuladora externa y el control cerrado de una caldera de agua.",
+    "safety": "La caldera está cerrada; Claudio mantiene las manos fuera de tuberías calientes y componentes eléctricos.",
+    "prompt_es": "Foto de celular horizontal 16:9, fotorrealismo extremo. Claudio Mendoza conserva exactamente el rostro y aspecto de la referencia. En una sala de caldera real, Claudio señala con precisión la bomba circuladora externa instalada en la tubería y luego el panel de control cerrado de la caldera; al fondo se reconocen las tuberías que van a radiadores y piso radiante. Instalación plausible, manos perfectas, sin cables sueltos, iluminación doméstica neutral, no cinematográfica.",
+    "agnes_motion_es": "Claudio recorre con el dedo la bomba y la tubería de salida y mira después el panel; movimiento mínimo, sin hacer girar tuberías ni alterar válvulas."
+  },
+  {
+    "start_ms": 185140,
+    "end_ms": 193960,
+    "caption_exact": "Sin esa pequeña parte eléctrica, puede haber combustible en la tubería y aún así no llegar una sola caloría útil a las habitaciones.",
+    "nouns": ["parte eléctrica", "combustible", "tubería", "habitaciones", "calor"],
+    "action": "Claudio mide con un termómetro infrarrojo un radiador frío mientras la caldera está sin alimentación eléctrica.",
+    "safety": "Medición exterior sin abrir la caldera ni manipular gas; el interruptor de servicio está apagado.",
+    "prompt_es": "Fotografía horizontal 16:9 extremadamente realista, tomada casualmente con celular. Claudio Mendoza debe ser idéntico a la imagen de referencia. Claudio apunta un termómetro infrarrojo a un radiador doméstico frío; detrás se ve la caldera cerrada con su interruptor eléctrico apagado y la tubería de combustible intacta. Él viste ropa común y observa la lectura con atención. Termómetro, radiador y tubería físicamente coherentes, manos exactas, luz normal, sin cine ni gráficos.",
+    "agnes_motion_es": "Claudio eleva levemente el termómetro hacia el radiador y consulta la pantalla; no cambiar la lectura, la tubería, el interruptor ni la anatomía."
+  },
+  {
+    "start_ms": 200840,
+    "end_ms": 204020,
+    "caption_exact": "La casa se enfría aunque el tanque de gas esté lleno.",
+    "nouns": ["casa", "frío", "tanque de gas lleno"],
+    "action": "Claudio, abrigado dentro de la casa, muestra un termómetro ambiente bajo mientras por una ventana se ve el indicador lleno del tanque de gas.",
+    "safety": "No se manipula el tanque; la lectura se observa a distancia y la instalación permanece intacta.",
+    "prompt_es": "Foto horizontal 16:9 hiperrealista de Claudio Mendoza, identidad exacta de la referencia, como foto casual de teléfono. Claudio está dentro de una casa fría con un abrigo sencillo y sostiene un termómetro ambiente; a través de una ventana cercana se ve el tanque estacionario de gas exterior con su indicador de nivel lleno, sin que nadie lo toque. Escena cotidiana creíble, luz natural apagada, anatomía perfecta, nada melodramático ni cinematográfico, sin textos agregados.",
+    "agnes_motion_es": "Claudio mira el termómetro y luego el tanque por la ventana, con respiración y movimiento corporal muy sutil; mantener estable el indicador y el vidrio."
+  },
+  {
+    "start_ms": 225680,
+    "end_ms": 233400,
+    "caption_exact": "Aquí el respaldo no tiene que fabricar el calor, solo tiene que mantener vivo el cerebro y mover el aire o el agua.",
+    "nouns": ["respaldo", "control", "aire", "agua"],
+    "action": "Claudio comprueba una batería inversora que alimenta únicamente el control cerrado y la bomba de la calefacción.",
+    "safety": "Conexión mediante cordón aprobado y tomacorriente con tierra; todo cerrado, sin conductores expuestos ni retroalimentación.",
+    "prompt_es": "Foto 16:9 de realismo extremo, Claudio Mendoza idéntico al retrato de referencia, aspecto de foto de celular no preparada. Claudio se agacha junto a una estación de batería con inversor que, mediante un único cordón grueso con tierra y conexión aprobada, alimenta solamente el control cerrado y la bomba de una calefacción a gas. Señala el control y la bomba, no un calefactor eléctrico. Cableado simple y físicamente correcto, enchufes completos, manos naturales, luz común, no cine.",
+    "agnes_motion_es": "Claudio toca solo la carcasa de la batería y señala después el control y la bomba; ventilación o vibración muy sutil, sin mover ni transformar cables y enchufes."
+  },
+  {
+    "start_ms": 252660,
+    "end_ms": 259500,
+    "caption_exact": "Si tu equipo pertenece a esta familia quizá ya funciona durante un apagón y no necesita la pieza del título,",
+    "nouns": ["equipo", "apagón", "pieza"],
+    "action": "Claudio observa una estufa mural de piloto permanente funcionando sin cable eléctrico durante el apagón.",
+    "safety": "Equipo cerrado, ventilado y operando de fábrica; Claudio no toca la llama, válvula ni tubería.",
+    "prompt_es": "Foto casual horizontal 16:9, fotorrealismo extremo, Claudio Mendoza exacto a la referencia. Durante un apagón, Claudio está junto a una estufa mural antigua de tiro natural con piloto permanente, instalada y cerrada, que funciona sin ningún cable eléctrico visible. Él señala que no hay enchufe ni batería conectados, manteniendo distancia segura. Casa real, iluminación de linterna suave, aparato auténtico, manos correctas, ninguna llama expuesta, nada cinematográfico.",
+    "agnes_motion_es": "Claudio mueve suavemente la mano para indicar la ausencia de cable y mira la estufa; la llama del piloto apenas oscila detrás de la mirilla, sin cambios estructurales."
+  },
+  {
+    "start_ms": 259940,
+    "end_ms": 263920,
+    "caption_exact": "no lo modifiques por costumbre, revisa su placa y su manual.",
+    "nouns": ["equipo", "placa", "manual"],
+    "action": "Claudio deja las herramientas a un lado y compara la placa exterior del equipo con su manual.",
+    "safety": "No se modifica ni abre el equipo; todas las herramientas permanecen apartadas.",
+    "prompt_es": "Fotografía de celular horizontal 16:9 extremadamente fotorrealista. Claudio Mendoza mantiene exactamente la identidad de referencia. Junto a una estufa mural cerrada, Claudio ha dejado destornillador y pinza lejos sobre una mesa y ahora compara el manual abierto con la placa exterior del aparato, señalándola cuidadosamente. Gesto claro de inspeccionar antes de modificar. Manos anatómicas, placa y manual reales, ambiente doméstico simple, luz normal, cero estética cinematográfica.",
+    "agnes_motion_es": "Claudio aparta ligeramente la mano de las herramientas y acerca el dedo a la placa para leerla; no abrir, desmontar ni transformar el aparato."
+  },
+  {
+    "start_ms": 307680,
+    "end_ms": 315000,
+    "caption_exact": "En cambio, si una calefacción a gas consume 400 vatios cuando su ventilador está encendido y trabaja por ciclos,",
+    "nouns": ["calefacción a gas", "400 vatios", "ventilador", "ciclos"],
+    "action": "Claudio lee un vatímetro cerrado que marca 400 W mientras funciona el ventilador de la calefacción a gas.",
+    "safety": "Medición con vatímetro enchufable certificado y conexión aprobada; no hay paneles ni conductores abiertos.",
+    "prompt_es": "Foto horizontal 16:9 ultrafotorrealista, Claudio Mendoza idéntico a la referencia, cámara de celular y luz de cuarto de servicio. Claudio mira un vatímetro enchufable cerrado y certificado cuya pantalla legible muestra 400 W; el medidor está en la conexión aprobada de una calefacción a gas cerrada, cuyo ventilador está funcionando. Un solo cable con tierra, enchufes correctos, manos reales, pantalla sin números extra, ninguna pieza expuesta, nada cinematográfico.",
+    "agnes_motion_es": "Claudio inclina apenas la cabeza para leer 400 W y apoya la mano en la carcasa sin tocar clavijas; leve vibración del ventilador, pantalla y cable sin mutaciones."
+  },
+  {
+    "start_ms": 321220,
+    "end_ms": 324780,
+    "caption_exact": "es la razón por la que vale la pena medir antes de comprar.",
+    "nouns": ["medición", "compra", "vatímetro"],
+    "action": "Claudio anota la medición real del vatímetro antes de comparar baterías en su teléfono.",
+    "safety": "Solo registra una lectura de un instrumento cerrado; no manipula la instalación.",
+    "prompt_es": "Foto 16:9 extremadamente realista de Claudio Mendoza con identidad exacta de la imagen de referencia. Foto casual tomada con celular: Claudio anota en una libreta la lectura de un vatímetro cerrado junto a la calefacción y consulta en su teléfono distintas capacidades de batería antes de comprar. La acción principal es medir y registrar, no posar con productos. Escritura discreta, manos correctas, equipo cerrado, luz doméstica, sin estética comercial ni cinematográfica.",
+    "agnes_motion_es": "Claudio escribe una cifra corta en la libreta y luego mira el teléfono; movimientos pequeños, sin hacer aparecer texto nuevo ni alterar el medidor."
+  },
+  {
+    "start_ms": 325080,
+    "end_ms": 330260,
+    "caption_exact": "Ahora sí, la pieza. Lo que ves junto al equipo es un punto de conexión con tierra.",
+    "nouns": ["pieza", "equipo", "conexión con tierra"],
+    "action": "Claudio señala de cerca el tomacorriente dedicado con tierra instalado junto a la calefacción.",
+    "safety": "Caja terminada, tapa colocada y conductores ocultos; no se inserta ni retira ninguna clavija.",
+    "prompt_es": "Fotografía horizontal 16:9 hiperrealista, Claudio Mendoza exactamente igual al retrato de referencia, tomada con teléfono. Junto a una calefacción cerrada, Claudio señala de cerca un tomacorriente dedicado con tierra montado correctamente en una caja con tapa completa. El tomacorriente es el protagonista exacto, con geometría y tornillos reales; no hay cables abiertos. Mano e índice perfectos, pared y taller cotidianos, luz plana normal, nada cinematográfico ni de catálogo.",
+    "agnes_motion_es": "Claudio acerca el índice al contacto de tierra sin tocarlo y hace un pequeño gesto afirmativo; mantener inmóviles tornillos, ranuras, tapa y equipo."
+  },
+  {
+    "start_ms": 343760,
+    "end_ms": 347520,
+    "caption_exact": "En condiciones normales, el equipo recibe energía de la red.",
+    "nouns": ["equipo", "energía de red", "cordón", "tomacorriente"],
+    "action": "Claudio muestra el cordón aprobado de la calefacción conectado al tomacorriente dedicado de red.",
+    "safety": "Instalación terminada con tierra, alivio de tensión y caja cerrada; solo se señala la conexión.",
+    "prompt_es": "Foto horizontal 16:9 fotorrealista extrema, Claudio Mendoza idéntico a la referencia. Escena casual de celular en la que Claudio señala el único cordón grueso aprobado de la calefacción conectado normalmente a su tomacorriente dedicado de red con tierra. La caja, tapa, clavija y alivio de tensión están completos y físicamente correctos; calefacción cerrada, ninguna regleta ni cable extra. Manos reales, luz común, nada cinematográfico.",
+    "agnes_motion_es": "Claudio recorre con el dedo la ruta corta entre el cordón y el tomacorriente sin tocar la clavija; todo el cableado permanece fijo y coherente."
+  },
+  {
+    "start_ms": 347840,
+    "end_ms": 353720,
+    "caption_exact": "Durante un apagón se desconecta de esa fuente y se alimenta desde una batería con inversor",
+    "nouns": ["apagón", "fuente de red", "batería", "inversor", "cordón"],
+    "action": "Con la calefacción apagada, Claudio sostiene la clavija ya retirada de la red y la conecta a la salida con tierra de la batería inversora.",
+    "safety": "Equipo apagado antes de desconectar; cordón autorizado, manos sobre el cuerpo aislado de la clavija, sin tocar pines y sin conexión simultánea.",
+    "prompt_es": "Foto 16:9 de realismo extremo, Claudio Mendoza idéntico al retrato de referencia, foto casual de celular durante un apagón. La calefacción está apagada. Claudio sujeta correctamente por el cuerpo aislado la clavija con tierra del cordón autorizado, ya retirada del tomacorriente de red vacío, y la inserta en una salida con tierra de una batería inversora cercana. Se debe ver con absoluta claridad que solo existe una conexión a la vez. Manos perfectas, clavijas y sockets reales, ningún pin tocado, luz normal, no cine.",
+    "agnes_motion_es": "Animar únicamente el gesto corto de insertar la clavija en la batería mientras el tomacorriente de red queda claramente vacío; dedos sobre el cuerpo aislado, sin duplicar cables ni conexiones."
+  },
+  {
+    "start_ms": 354180,
+    "end_ms": 357660,
+    "caption_exact": "o desde una extensión que viene de un generador ubicado afuera.",
+    "nouns": ["extensión", "generador", "afuera"],
+    "action": "Claudio sostiene dentro de la casa el extremo de una extensión exterior gruesa que llega desde un generador visible afuera.",
+    "safety": "Generador a distancia segura al aire libre, lejos de puertas y ventanas; extensión para exterior intacta y sin empalmes.",
+    "prompt_es": "Foto horizontal 16:9 ultrafotorrealista de Claudio Mendoza, identidad exacta de referencia, aspecto de foto espontánea de celular. Claudio está dentro de un garaje y sostiene por la carcasa el extremo hembra de una extensión gruesa apta para exterior; el cable continúa hacia afuera, donde un generador se ve instalado muy lejos de la puerta y de ventanas, completamente al aire libre. Cable continuo sin empalmes, manos correctas, perspectiva real, sin humo interior, nada cinematográfico.",
+    "agnes_motion_es": "Claudio levanta apenas el extremo hembra para mostrarlo; el cable permanece continuo y el generador vibra mínimamente al fondo, sin acercarse ni cambiar de lugar."
+  },
+  {
+    "start_ms": 357980,
+    "end_ms": 364260,
+    "caption_exact": "La pieza visible puede ser barata. La instalación segura no se resume a comprarla y atornillarla.",
+    "nouns": ["pieza barata", "instalación segura", "caja", "protección"],
+    "action": "Claudio compara la pieza suelta con el conjunto terminado de caja, tapa, alivio de tensión y protección.",
+    "safety": "Ambos elementos están desenergizados y sobre un banco; no hay conductores pelados ni instalación activa.",
+    "prompt_es": "Fotografía 16:9 extremadamente fotorrealista, Claudio Mendoza exacto a la referencia, cámara de celular en un taller sencillo. Claudio sostiene una pieza barata y suelta en una mano, mientras con la otra señala sobre el banco el conjunto seguro completo: caja metálica, tapa, tomacorriente con tierra, alivio de tensión y cordón adecuado, todo desenergizado y sin conductores expuestos. La comparación es física y clara, manos perfectas, piezas realistas, luz normal, cero look cinematográfico.",
+    "agnes_motion_es": "Claudio baja un poco la pieza suelta y recorre con el dedo los componentes del conjunto completo; no cambiar su cantidad, forma ni conexiones."
+  },
+  {
+    "start_ms": 364600,
+    "end_ms": 367200,
+    "caption_exact": "El cordón debe ser apropiado para el equipo.",
+    "nouns": ["cordón", "equipo"],
+    "action": "Claudio selecciona un cordón grueso con tierra y alivio de tensión, dejando a un lado un cable doméstico delgado.",
+    "safety": "Cordones desconectados y sin cobre visible; comparación realizada sobre un banco de trabajo.",
+    "prompt_es": "Foto horizontal 16:9 de realismo fotográfico extremo, Claudio Mendoza idéntico a la referencia, foto casual de celular. Sobre un banco, Claudio selecciona con una mano un cordón grueso de tres conductores con clavija a tierra y alivio de tensión correcto para la calefacción; con la otra aparta un cable doméstico fino e inadecuado. Ambos están desconectados, intactos y sin cobre expuesto. Calibres y clavijas realistas, manos anatómicas, luz corriente, nada cinematográfico.",
+    "agnes_motion_es": "Claudio levanta ligeramente el cordón grueso y aparta el fino unos centímetros; conservar exactamente calibre, tres contactos, alivio de tensión y manos."
+  },
+  {
+    "start_ms": 367660,
+    "end_ms": 369380,
+    "caption_exact": "La caja debe quedar cerrada.",
+    "nouns": ["caja eléctrica", "tapa", "tornillo"],
+    "action": "Claudio aprieta el último tornillo de la tapa de una caja eléctrica desenergizada.",
+    "safety": "Circuito bloqueado y desenergizado; la tapa ya cubre completamente los conductores.",
+    "prompt_es": "Foto de celular horizontal 16:9, hiperrealismo extremo, Claudio Mendoza con identidad exacta de referencia. Primer plano natural de Claudio apretando con destornillador manual el último tornillo de la tapa ya colocada sobre una caja eléctrica desenergizada junto a la calefacción. La tapa cubre por completo el interior; una etiqueta de bloqueo apagado es visible fuera de foco. Mano, destornillador, tornillo y caja perfectamente alineados, sin cables visibles, luz práctica, nada cinematográfico.",
+    "agnes_motion_es": "Claudio da un único giro corto al destornillador y retira apenas la mano; no abrir la tapa ni inventar cables, tornillos o dedos."
+  },
+  {
+    "start_ms": 369780,
+    "end_ms": 371920,
+    "caption_exact": "La puesta a tierra debe conservarse.",
+    "nouns": ["puesta a tierra", "conductor verde", "tornillo de tierra", "caja"],
+    "action": "Con el circuito bloqueado, Claudio fija el conductor verde de tierra bajo el tornillo de tierra de la caja.",
+    "safety": "Bloqueo y verificación de ausencia de tensión; solo se muestra el conductor de protección, sin fase ni neutro expuestos.",
+    "prompt_es": "Fotografía horizontal 16:9 extremadamente fotorrealista, identidad exacta de Claudio Mendoza desde la referencia, estilo foto casual de celular. Circuito claramente bloqueado y desenergizado. Primer plano amplio: Claudio fija cuidadosamente un único conductor verde de tierra bajo el tornillo verde de una caja metálica; los demás conductores están protegidos dentro de la vaina y fuera de alcance. Debe verse una sola trayectoria de tierra correcta, manos y herramienta perfectas, nada de chispas, luz de taller normal, no cinematográfico.",
+    "agnes_motion_es": "Claudio ajusta suavemente el tornillo de tierra y comprueba el conductor con un tirón mínimo; no exponer otros cables ni alterar colores, tornillo o anatomía."
+  },
+  {
+    "start_ms": 372200,
+    "end_ms": 375120,
+    "caption_exact": "La protección del circuito debe seguir existiendo",
+    "nouns": ["protección", "circuito", "disyuntor", "tablero"],
+    "action": "Claudio señala el disyuntor dedicado de la calefacción en un tablero con la tapa cerrada.",
+    "safety": "Tablero cerrado; no se retira el frente ni se accede a barras o conductores.",
+    "prompt_es": "Foto 16:9 ultrafotorrealista de Claudio Mendoza idéntico a la imagen de referencia, tomada con celular. Claudio señala el disyuntor dedicado de la calefacción en un tablero doméstico cuya tapa y frente están completamente cerrados; el interruptor y la protección permanecen instalados. Su mano no acciona nada, solo identifica el circuito. Tablero realista, dedos correctos, entorno común, iluminación plana, sin gráficos ni estética cinematográfica.",
+    "agnes_motion_es": "Claudio acerca el índice al disyuntor dedicado y asiente; la puerta, palancas y todos los interruptores permanecen inmóviles y cerrados."
+  },
+  {
+    "start_ms": 381300,
+    "end_ms": 387940,
+    "caption_exact": "Cuando esa conversión no está permitida, existe una solución hecha específicamente para esto.",
+    "nouns": ["conversión", "solución específica", "conmutador de transferencia"],
+    "action": "Claudio presenta un conmutador listado de transferencia de un circuito junto a la alimentación fija intacta.",
+    "safety": "Dispositivo cerrado y sin abrir; la alimentación fija no se altera ni se desconecta.",
+    "prompt_es": "Foto horizontal 16:9 de fotorrealismo extremo, Claudio Mendoza exacto al retrato de referencia, estilo celular casual. Junto a una calefacción con alimentación fija intacta, Claudio sostiene la caja cerrada de un conmutador de transferencia listado para un solo circuito y señala el lugar donde un profesional lo instalaría, sin abrir la pared ni el equipo. Hardware real, escala correcta, manos naturales, luz de cuarto de máquinas común, cero cine y cero texto publicitario.",
+    "agnes_motion_es": "Claudio eleva apenas el conmutador cerrado y señala la alimentación fija; no abrir carcasas, crear cables ni simular instalación energizada."
+  },
+  {
+    "start_ms": 402480,
+    "end_ms": 409280,
+    "caption_exact": "Esa es la función que realmente importa, no el enchufe, no la extensión, el aislamiento entre fuentes.",
+    "nouns": ["enchufe", "extensión", "aislamiento", "fuentes"],
+    "action": "Claudio demuestra el obturador mecánico del transfer que tapa una entrada cuando la otra está seleccionada.",
+    "safety": "Demostración con el circuito apagado y cubierta cerrada; ambas fuentes están desconectadas.",
+    "prompt_es": "Foto casual de celular horizontal 16:9, realismo fotográfico extremo. Claudio Mendoza debe coincidir exactamente con la referencia. Con el sistema apagado, Claudio mueve el obturador mecánico exterior de un conmutador de transferencia: al seleccionar una entrada, la otra queda físicamente tapada. Sobre una mesa secundaria se ven un enchufe y una extensión desenfocados, pero el aislamiento mecánico es el foco exacto. Manos, guía y selector correctos, carcasa cerrada, luz normal, nada cinematográfico.",
+    "agnes_motion_es": "Claudio desliza el obturador solo hasta cubrir una entrada y descubre la otra; movimiento mecánico único, sin mostrar nunca ambas abiertas y sin deformar el sistema."
+  },
+  {
+    "start_ms": 422680,
+    "end_ms": 429660,
+    "caption_exact": "La conexión prohibida es intentar alimentar la casa enchufando un generador en un tomacorriente común.",
+    "nouns": ["generador", "casa", "tomacorriente común", "conexión prohibida"],
+    "action": "Claudio impide la conexión: mantiene el enchufe del generador lejos del tomacorriente común y hace señal de alto.",
+    "safety": "Nada está conectado; generador apagado y afuera, clavija alejada del tomacorriente y sin tocar pines.",
+    "prompt_es": "Foto horizontal 16:9 hiperrealista de Claudio Mendoza, identidad exacta de referencia, captura casual de celular. En el umbral de un garaje, un generador apagado está afuera. Claudio sostiene por el cuerpo aislado su cable completamente desconectado y lo mantiene claramente lejos de un tomacorriente doméstico común, mientras hace una señal inequívoca de alto con la otra mano. No hay conexión, pines tocados ni chispas. Anatomía y clavijas perfectas, luz diurna común, nada cinematográfico.",
+    "agnes_motion_es": "Claudio retrocede el enchufe unos centímetros alejándolo aún más del tomacorriente y refuerza la señal de alto; jamás insertar, acercar pines ni encender el generador."
+  },
+  {
+    "start_ms": 448000,
+    "end_ms": 453120,
+    "caption_exact": "Si tienes uno no es una herramienta de emergencia, es un riesgo de electrocución.",
+    "nouns": ["cable con dos clavijas macho", "herramienta", "electrocución"],
+    "action": "Claudio muestra un cable de dos clavijas macho completamente desconectado, sujetándolo por el centro y haciendo señal de rechazo.",
+    "safety": "Cable aislado sobre banco, sin fuente conectada; Claudio no toca ninguna espiga metálica.",
+    "prompt_es": "Foto 16:9 extremadamente fotorrealista de Claudio Mendoza idéntico al retrato de referencia, como foto casual de celular. Sobre un banco seco y sin energía hay un cable peligroso con clavija macho en cada extremo, ambos extremos completamente visibles y desconectados. Claudio lo levanta únicamente por el centro aislado, lejos de las espigas, y hace gesto claro de rechazo. Manos con cinco dedos, dos clavijas reales, ninguna conexión ni electricidad, iluminación normal, sin dramatismo cinematográfico.",
+    "agnes_motion_es": "Claudio niega con la cabeza y deja el cable desconectado sobre el banco tomándolo solo por el centro; mantener ambos extremos separados, visibles e inmóviles, sin chispas."
+  },
+  {
+    "start_ms": 453600,
+    "end_ms": 463220,
+    "caption_exact": "Para una carga fija como una calefacción, la solución correcta es un sistema que garantice físicamente que la red y el respaldo no se encuentren.",
+    "nouns": ["carga fija", "calefacción", "red", "respaldo", "aislamiento físico"],
+    "action": "Claudio opera un selector de transferencia junto a la calefacción; la traba física deja una fuente aislada mientras conecta la otra.",
+    "safety": "Equipo listado con tapa cerrada; operación exterior normal, una sola fuente seleccionada y ningún conductor accesible.",
+    "prompt_es": "Fotografía horizontal 16:9 ultrafotorrealista, Claudio Mendoza exacto a su imagen de referencia, foto espontánea de celular. Junto a una calefacción fija cerrada, Claudio opera la manija exterior de un conmutador de transferencia listado de un circuito. La traba mecánica visible mantiene físicamente aislada la entrada de red mientras permite respaldo, una sola fuente a la vez. Carcasa y cableado cerrados, mano y selector realistas, ambiente doméstico normal, sin estética cinematográfica ni gráficos flotantes.",
+    "agnes_motion_es": "Claudio mueve la manija desde centro apagado hacia una sola fuente; la traba cubre simultáneamente la otra, sin saltos, sin dobles conexiones y sin deformar dedos o mecanismo."
+  }
+]

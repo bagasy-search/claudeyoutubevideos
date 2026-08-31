@@ -2,6 +2,24 @@
 export type CmecalorCue = {key:string;start:number;dur:number;type:"still"|"clip"|"float";src:string;clipDuration:number|null;kicker:string|null;side:"left"|"right"|null;anchor:string;nouns:string[];sourceMoment:string};
 export const CUES_CMECALOR = [
   {
+    "key": "cmec_v2_root_001_still",
+    "start": 0,
+    "dur": 245,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La pieza del título no produce calor, no genera electricidad y por sí sola no mantiene caliente una casa.",
+    "nouns": [
+      "pieza",
+      "calor",
+      "electricidad",
+      "casa"
+    ],
+    "sourceMoment": "cmec_v2_root_001"
+  },
+  {
     "key": "cmec_a_001_still",
     "start": 352,
     "dur": 323,
@@ -20,6 +38,23 @@ export const CUES_CMECALOR = [
       "apagón"
     ],
     "sourceMoment": "cmec_a_001"
+  },
+  {
+    "key": "cmec_v2_0_001_still",
+    "start": 685,
+    "dur": 184,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si tu equipo calienta con gas puede haber una sorpresa enorme escondida detrás de su tapa.",
+    "nouns": [
+      "equipo a gas",
+      "tapa",
+      "interior"
+    ],
+    "sourceMoment": "cmec_v2_0_001"
   },
   {
     "key": "cmec_a_002_still",
@@ -77,6 +112,23 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_a_003"
   },
   {
+    "key": "cmec_v2_root_005_still",
+    "start": 1900,
+    "dur": 163,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La diferencia no está en el precio de la pieza, está en una palabra, aislamiento.",
+    "nouns": [
+      "pieza",
+      "aislamiento",
+      "fuentes"
+    ],
+    "sourceMoment": "cmec_v2_root_005"
+  },
+  {
     "key": "cmec_a_004_still",
     "start": 2426,
     "dur": 313,
@@ -129,6 +181,58 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_m_022"
   },
   {
+    "key": "cmec_v2_root_006_still",
+    "start": 3945,
+    "dur": 219,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_006.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La instalación eléctrica fija y cualquier intervención dentro de un equipo de combustión se revisan con el manual,",
+    "nouns": [
+      "instalación eléctrica fija",
+      "equipo de combustión",
+      "manual"
+    ],
+    "sourceMoment": "cmec_v2_root_006"
+  },
+  {
+    "key": "cmec_v2_root_006_clip",
+    "start": 3945,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_root_006.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "La instalación eléctrica fija y cualquier intervención dentro de un equipo de combustión se revisan con el manual,",
+    "nouns": [
+      "instalación eléctrica fija",
+      "equipo de combustión",
+      "manual"
+    ],
+    "sourceMoment": "cmec_v2_root_006"
+  },
+  {
+    "key": "cmec_v2_flow_001_still",
+    "start": 4387,
+    "dur": 102,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_flow_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "se corta la electricidad, pero el gas sigue llegando.",
+    "nouns": [
+      "electricidad",
+      "gas",
+      "calefacción",
+      "línea de gas"
+    ],
+    "sourceMoment": "cmec_v2_flow_001"
+  },
+  {
     "key": "cmec_m_025_still",
     "start": 4528,
     "dur": 60,
@@ -143,6 +247,42 @@ export const CUES_CMECALOR = [
       "apagón"
     ],
     "sourceMoment": "cmec_m_025"
+  },
+  {
+    "key": "cmec_v2_root_007_still",
+    "start": 4596,
+    "dur": 164,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_007.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Porque el gas pone el calor, pero la electricidad dirige casi todo lo demás.",
+    "nouns": [
+      "gas",
+      "calor",
+      "electricidad",
+      "control"
+    ],
+    "sourceMoment": "cmec_v2_root_007"
+  },
+  {
+    "key": "cmec_v2_root_007_clip",
+    "start": 4596,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_root_007.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Porque el gas pone el calor, pero la electricidad dirige casi todo lo demás.",
+    "nouns": [
+      "gas",
+      "calor",
+      "electricidad",
+      "control"
+    ],
+    "sourceMoment": "cmec_v2_root_007"
   },
   {
     "key": "cmec_a_006_still",
@@ -182,6 +322,82 @@ export const CUES_CMECALOR = [
       "conductos"
     ],
     "sourceMoment": "cmec_m_031"
+  },
+  {
+    "key": "cmec_v2_0_004_still",
+    "start": 5263,
+    "dur": 278,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "En una caldera de agua, la electricidad puede alimentar la placa, el encendido y la bomba que hace circular el agua por radiadores o pisor radiante.",
+    "nouns": [
+      "caldera",
+      "placa",
+      "encendido",
+      "bomba",
+      "radiadores",
+      "piso radiante"
+    ],
+    "sourceMoment": "cmec_v2_0_004"
+  },
+  {
+    "key": "cmec_v2_root_008_still",
+    "start": 5554,
+    "dur": 265,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_008.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Sin esa pequeña parte eléctrica, puede haber combustible en la tubería y aún así no llegar una sola caloría útil a las habitaciones.",
+    "nouns": [
+      "parte eléctrica",
+      "combustible",
+      "tubería",
+      "habitaciones",
+      "calor"
+    ],
+    "sourceMoment": "cmec_v2_root_008"
+  },
+  {
+    "key": "cmec_v2_root_008_clip",
+    "start": 5554,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_root_008.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Sin esa pequeña parte eléctrica, puede haber combustible en la tubería y aún así no llegar una sola caloría útil a las habitaciones.",
+    "nouns": [
+      "parte eléctrica",
+      "combustible",
+      "tubería",
+      "habitaciones",
+      "calor"
+    ],
+    "sourceMoment": "cmec_v2_root_008"
+  },
+  {
+    "key": "cmec_v2_flow_002_still",
+    "start": 6025,
+    "dur": 96,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_flow_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La casa se enfría aunque el tanque de gas esté lleno.",
+    "nouns": [
+      "casa",
+      "tanque de gas",
+      "termostato",
+      "frío"
+    ],
+    "sourceMoment": "cmec_v2_flow_002"
   },
   {
     "key": "cmec_a_007_still",
@@ -239,6 +455,28 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_m_039"
   },
   {
+    "key": "cmec_v2_flow_003_still",
+    "start": 6770,
+    "dur": 232,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_flow_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Aquí el respaldo no tiene que fabricar el calor, solo tiene que mantener vivo el cerebro y mover el aire o el agua.",
+    "nouns": [
+      "respaldo",
+      "calor",
+      "cerebro",
+      "aire",
+      "agua",
+      "caja de control",
+      "ventilador",
+      "batería"
+    ],
+    "sourceMoment": "cmec_v2_flow_003"
+  },
+  {
     "key": "cmec_a_008_still",
     "start": 7151,
     "dur": 417,
@@ -285,6 +523,40 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_a_008"
   },
   {
+    "key": "cmec_v2_0_005_still",
+    "start": 7798,
+    "dur": 120,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "no lo modifiques por costumbre, revisa su placa y su manual.",
+    "nouns": [
+      "equipo",
+      "placa",
+      "manual"
+    ],
+    "sourceMoment": "cmec_v2_0_005"
+  },
+  {
+    "key": "cmec_v2_0_005_clip",
+    "start": 7798,
+    "dur": 120,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_0_005.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "no lo modifiques por costumbre, revisa su placa y su manual.",
+    "nouns": [
+      "equipo",
+      "placa",
+      "manual"
+    ],
+    "sourceMoment": "cmec_v2_0_005"
+  },
+  {
     "key": "cmec_a_009_still",
     "start": 8039,
     "dur": 530,
@@ -326,6 +598,76 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_a_010"
   },
   {
+    "key": "cmec_v2_0_002_still",
+    "start": 9230,
+    "dur": 220,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "En cambio, si una calefacción a gas consume 400 vatios cuando su ventilador está encendido y trabaja por ciclos,",
+    "nouns": [
+      "calefacción a gas",
+      "400 vatios",
+      "ventilador",
+      "ciclos"
+    ],
+    "sourceMoment": "cmec_v2_0_002"
+  },
+  {
+    "key": "cmec_v2_0_002_clip",
+    "start": 9230,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_0_002.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "En cambio, si una calefacción a gas consume 400 vatios cuando su ventilador está encendido y trabaja por ciclos,",
+    "nouns": [
+      "calefacción a gas",
+      "400 vatios",
+      "ventilador",
+      "ciclos"
+    ],
+    "sourceMoment": "cmec_v2_0_002"
+  },
+  {
+    "key": "cmec_v2_0_006_still",
+    "start": 9752,
+    "dur": 156,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_006.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Ahora sí, la pieza. Lo que ves junto al equipo es un punto de conexión con tierra.",
+    "nouns": [
+      "pieza",
+      "equipo",
+      "conexión con tierra"
+    ],
+    "sourceMoment": "cmec_v2_0_006"
+  },
+  {
+    "key": "cmec_v2_0_006_clip",
+    "start": 9752,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_0_006.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Ahora sí, la pieza. Lo que ves junto al equipo es un punto de conexión con tierra.",
+    "nouns": [
+      "pieza",
+      "equipo",
+      "conexión con tierra"
+    ],
+    "sourceMoment": "cmec_v2_0_006"
+  },
+  {
     "key": "cmec_a_011_still",
     "start": 10066,
     "dur": 238,
@@ -344,6 +686,165 @@ export const CUES_CMECALOR = [
       "tomacorriente"
     ],
     "sourceMoment": "cmec_a_011"
+  },
+  {
+    "key": "cmec_v2_flow_004_still",
+    "start": 10313,
+    "dur": 113,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_flow_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "En condiciones normales, el equipo recibe energía de la red.",
+    "nouns": [
+      "equipo",
+      "energía",
+      "red",
+      "tomacorriente",
+      "cordón"
+    ],
+    "sourceMoment": "cmec_v2_flow_004"
+  },
+  {
+    "key": "cmec_v2_0_003_still",
+    "start": 10435,
+    "dur": 177,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Durante un apagón se desconecta de esa fuente y se alimenta desde una batería con inversor",
+    "nouns": [
+      "apagón",
+      "fuente de red",
+      "batería",
+      "inversor",
+      "cordón"
+    ],
+    "sourceMoment": "cmec_v2_0_003"
+  },
+  {
+    "key": "cmec_v2_0_003_clip",
+    "start": 10435,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_0_003.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Durante un apagón se desconecta de esa fuente y se alimenta desde una batería con inversor",
+    "nouns": [
+      "apagón",
+      "fuente de red",
+      "batería",
+      "inversor",
+      "cordón"
+    ],
+    "sourceMoment": "cmec_v2_0_003"
+  },
+  {
+    "key": "cmec_v2_0_012_still",
+    "start": 10938,
+    "dur": 78,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_012.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "El cordón debe ser apropiado para el equipo.",
+    "nouns": [
+      "cordón",
+      "equipo"
+    ],
+    "sourceMoment": "cmec_v2_0_012"
+  },
+  {
+    "key": "cmec_v2_0_012_clip",
+    "start": 10938,
+    "dur": 78,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_0_012.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "El cordón debe ser apropiado para el equipo.",
+    "nouns": [
+      "cordón",
+      "equipo"
+    ],
+    "sourceMoment": "cmec_v2_0_012"
+  },
+  {
+    "key": "cmec_v2_0_007_still",
+    "start": 11030,
+    "dur": 51,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_007.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La caja debe quedar cerrada.",
+    "nouns": [
+      "caja eléctrica",
+      "tapa",
+      "tornillo"
+    ],
+    "sourceMoment": "cmec_v2_0_007"
+  },
+  {
+    "key": "cmec_v2_0_007_clip",
+    "start": 11030,
+    "dur": 51,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_0_007.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "La caja debe quedar cerrada.",
+    "nouns": [
+      "caja eléctrica",
+      "tapa",
+      "tornillo"
+    ],
+    "sourceMoment": "cmec_v2_0_007"
+  },
+  {
+    "key": "cmec_v2_0_008_still",
+    "start": 11093,
+    "dur": 65,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_008.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La puesta a tierra debe conservarse.",
+    "nouns": [
+      "puesta a tierra",
+      "conductor verde",
+      "tornillo de tierra",
+      "caja"
+    ],
+    "sourceMoment": "cmec_v2_0_008"
+  },
+  {
+    "key": "cmec_v2_0_009_still",
+    "start": 11166,
+    "dur": 88,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_009.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La protección del circuito debe seguir existiendo",
+    "nouns": [
+      "protección",
+      "circuito",
+      "disyuntor",
+      "tablero"
+    ],
+    "sourceMoment": "cmec_v2_0_009"
   },
   {
     "key": "cmec_a_012_still",
@@ -365,6 +866,42 @@ export const CUES_CMECALOR = [
       "red"
     ],
     "sourceMoment": "cmec_a_012"
+  },
+  {
+    "key": "cmec_v2_0_010_still",
+    "start": 12680,
+    "dur": 210,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_010.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La conexión prohibida es intentar alimentar la casa enchufando un generador en un tomacorriente común.",
+    "nouns": [
+      "generador",
+      "casa",
+      "tomacorriente común",
+      "conexión prohibida"
+    ],
+    "sourceMoment": "cmec_v2_0_010"
+  },
+  {
+    "key": "cmec_v2_0_010_clip",
+    "start": 12680,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_0_010.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "La conexión prohibida es intentar alimentar la casa enchufando un generador en un tomacorriente común.",
+    "nouns": [
+      "generador",
+      "casa",
+      "tomacorriente común",
+      "conexión prohibida"
+    ],
+    "sourceMoment": "cmec_v2_0_010"
   },
   {
     "key": "cmec_m_070_still",
@@ -438,6 +975,42 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_a_013"
   },
   {
+    "key": "cmec_v2_0_011_still",
+    "start": 13440,
+    "dur": 154,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_0_011.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si tienes uno no es una herramienta de emergencia, es un riesgo de electrocución.",
+    "nouns": [
+      "cable con dos clavijas macho",
+      "herramienta",
+      "electrocución"
+    ],
+    "sourceMoment": "cmec_v2_0_011"
+  },
+  {
+    "key": "cmec_v2_root_002_still",
+    "start": 13608,
+    "dur": 289,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Para una carga fija como una calefacción, la solución correcta es un sistema que garantice físicamente que la red y el respaldo no se encuentren.",
+    "nouns": [
+      "carga fija",
+      "calefacción",
+      "red",
+      "respaldo",
+      "aislamiento físico"
+    ],
+    "sourceMoment": "cmec_v2_root_002"
+  },
+  {
     "key": "cmec_m_078_still",
     "start": 14441,
     "dur": 222,
@@ -477,6 +1050,23 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_a_016"
   },
   {
+    "key": "cmec_v2_root_003_still",
+    "start": 15119,
+    "dur": 126,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "El primer dato no sale del tamaño del interruptor del tablero.",
+    "nouns": [
+      "dato",
+      "interruptor",
+      "tablero"
+    ],
+    "sourceMoment": "cmec_v2_root_003"
+  },
+  {
     "key": "cmec_a_014_still",
     "start": 15570,
     "dur": 330,
@@ -497,6 +1087,24 @@ export const CUES_CMECALOR = [
       "bomba"
     ],
     "sourceMoment": "cmec_a_014"
+  },
+  {
+    "key": "cmec_v2_5_001_still",
+    "start": 15967,
+    "dur": 233,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el equipo ya está conectado mediante un sistema autorizado, un medidor de energía apropiado puede mostrar los vatios.",
+    "nouns": [
+      "equipo",
+      "sistema autorizado",
+      "medidor de energía",
+      "vatios"
+    ],
+    "sourceMoment": "cmec_v2_5_001"
   },
   {
     "key": "cmec_m_090_still",
@@ -588,6 +1196,61 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_b_002"
   },
   {
+    "key": "cmec_v2_root_009_still",
+    "start": 17096,
+    "dur": 111,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_009.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Al arrancar, durante un instante, se acerca a 900.",
+    "nouns": [
+      "arranque",
+      "900 vatios",
+      "medidor"
+    ],
+    "sourceMoment": "cmec_v2_root_009"
+  },
+  {
+    "key": "cmec_v2_root_010_still",
+    "start": 17231,
+    "dur": 237,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_010.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "En una hora fría, el quemador y el ventilador permanecen activos 24 minutos y descansan 36.",
+    "nouns": [
+      "hora fría",
+      "quemador",
+      "ventilador",
+      "24 minutos",
+      "36 minutos"
+    ],
+    "sourceMoment": "cmec_v2_root_010"
+  },
+  {
+    "key": "cmec_v2_root_011_still",
+    "start": 17577,
+    "dur": 277,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_011.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "420 vatios multiplicados por 0,4 dan 168 vatios de promedio mientras pasan los ciclos.",
+    "nouns": [
+      "420 vatios",
+      "0,4",
+      "168 vatios",
+      "promedio",
+      "ciclos"
+    ],
+    "sourceMoment": "cmec_v2_root_011"
+  },
+  {
     "key": "cmec_b_003_still",
     "start": 18049,
     "dur": 409,
@@ -607,6 +1270,24 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_b_003"
   },
   {
+    "key": "cmec_v2_root_012_still",
+    "start": 18469,
+    "dur": 274,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_012.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si cuentas con algo más de 800 vatios hora útiles y divides por 180, obtienes alrededor de 4 horas y media.",
+    "nouns": [
+      "800 vatios hora útiles",
+      "180 vatios",
+      "4 horas y media",
+      "calculadora"
+    ],
+    "sourceMoment": "cmec_v2_root_012"
+  },
+  {
     "key": "cmec_m_105_still",
     "start": 18748,
     "dur": 102,
@@ -623,6 +1304,42 @@ export const CUES_CMECALOR = [
       "calefacción real"
     ],
     "sourceMoment": "cmec_m_105"
+  },
+  {
+    "key": "cmec_v2_5_002_still",
+    "start": 18977,
+    "dur": 170,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si la vivienda pierde calor rápido y la calefacción trabaja casi sin parar, disminuye.",
+    "nouns": [
+      "vivienda",
+      "pérdida de calor",
+      "calefacción",
+      "tiempo"
+    ],
+    "sourceMoment": "cmec_v2_5_002"
+  },
+  {
+    "key": "cmec_v2_5_002_clip",
+    "start": 18977,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_5_002.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si la vivienda pierde calor rápido y la calefacción trabaja casi sin parar, disminuye.",
+    "nouns": [
+      "vivienda",
+      "pérdida de calor",
+      "calefacción",
+      "tiempo"
+    ],
+    "sourceMoment": "cmec_v2_5_002"
   },
   {
     "key": "cmec_b_004_still",
@@ -659,6 +1376,25 @@ export const CUES_CMECALOR = [
       "calefacción"
     ],
     "sourceMoment": "cmec_m_109"
+  },
+  {
+    "key": "cmec_v2_root_013_still",
+    "start": 19654,
+    "dur": 307,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_013.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La fuente de respaldo puede soportar 400 vatios continuos y apagarse cada vez que el motor intenta arrancar porque durante una fracción de segundo pide mucho más.",
+    "nouns": [
+      "fuente de respaldo",
+      "400 vatios continuos",
+      "motor",
+      "arranque",
+      "pico"
+    ],
+    "sourceMoment": "cmec_v2_root_013"
   },
   {
     "key": "cmec_b_007_still",
@@ -700,6 +1436,96 @@ export const CUES_CMECALOR = [
       "resistencia"
     ],
     "sourceMoment": "cmec_m_118"
+  },
+  {
+    "key": "cmec_v2_5_003_still",
+    "start": 21035,
+    "dur": 201,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el calor viene del gas y la electricidad solo mueve control y ventilador, mide consumo y pico.",
+    "nouns": [
+      "gas",
+      "electricidad",
+      "control",
+      "ventilador",
+      "consumo",
+      "pico"
+    ],
+    "sourceMoment": "cmec_v2_5_003"
+  },
+  {
+    "key": "cmec_v2_5_004_still",
+    "start": 21313,
+    "dur": 190,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el equipo funciona por milivoltios y no tiene alimentación de red, confirma el manual y no agregues nada.",
+    "nouns": [
+      "equipo de milivoltios",
+      "alimentación de red",
+      "manual"
+    ],
+    "sourceMoment": "cmec_v2_5_004"
+  },
+  {
+    "key": "cmec_v2_5_004_clip",
+    "start": 21313,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_5_004.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el equipo funciona por milivoltios y no tiene alimentación de red, confirma el manual y no agregues nada.",
+    "nouns": [
+      "equipo de milivoltios",
+      "alimentación de red",
+      "manual"
+    ],
+    "sourceMoment": "cmec_v2_5_004"
+  },
+  {
+    "key": "cmec_v2_5_005_still",
+    "start": 21503,
+    "dur": 255,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el calor viene de una resistencia o de un compresor grande, deja de mirar baterías pequeñas y calcula un sistema de otra categoría.",
+    "nouns": [
+      "resistencia",
+      "compresor grande",
+      "batería pequeña",
+      "sistema"
+    ],
+    "sourceMoment": "cmec_v2_5_005"
+  },
+  {
+    "key": "cmec_v2_5_005_clip",
+    "start": 21503,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_5_005.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el calor viene de una resistencia o de un compresor grande, deja de mirar baterías pequeñas y calcula un sistema de otra categoría.",
+    "nouns": [
+      "resistencia",
+      "compresor grande",
+      "batería pequeña",
+      "sistema"
+    ],
+    "sourceMoment": "cmec_v2_5_005"
   },
   {
     "key": "cmec_b_009_still",
@@ -792,6 +1618,25 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cta_microgeneradores_1"
   },
   {
+    "key": "cmec_v2_flow_005_still",
+    "start": 23952,
+    "dur": 125,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_flow_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Primero se prueba el sistema con la red normal y se anota el orden.",
+    "nouns": [
+      "sistema",
+      "red normal",
+      "orden",
+      "cuaderno",
+      "calefacción"
+    ],
+    "sourceMoment": "cmec_v2_flow_005"
+  },
+  {
     "key": "cmec_b_013_still",
     "start": 24091,
     "dur": 284,
@@ -828,6 +1673,38 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_m_139"
   },
   {
+    "key": "cmec_v2_5_006_still",
+    "start": 24553,
+    "dur": 147,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_006.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Después, con la instalación de transferencia terminada y revisada por un profesional,",
+    "nouns": [
+      "instalación de transferencia",
+      "profesional"
+    ],
+    "sourceMoment": "cmec_v2_5_006"
+  },
+  {
+    "key": "cmec_v2_5_006_clip",
+    "start": 24553,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_5_006.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Después, con la instalación de transferencia terminada y revisada por un profesional,",
+    "nouns": [
+      "instalación de transferencia",
+      "profesional"
+    ],
+    "sourceMoment": "cmec_v2_5_006"
+  },
+  {
     "key": "cmec_m_141_still",
     "start": 24716,
     "dur": 99,
@@ -842,6 +1719,23 @@ export const CUES_CMECALOR = [
       "sistema"
     ],
     "sourceMoment": "cmec_m_141"
+  },
+  {
+    "key": "cmec_v2_root_004_still",
+    "start": 24827,
+    "dur": 94,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Se conecta el respaldo con la calefacción detenida.",
+    "nouns": [
+      "respaldo",
+      "calefacción detenida",
+      "conector"
+    ],
+    "sourceMoment": "cmec_v2_root_004"
   },
   {
     "key": "cmec_b_015_still",
@@ -876,6 +1770,58 @@ export const CUES_CMECALOR = [
       "calefacción"
     ],
     "sourceMoment": "cmec_b_015"
+  },
+  {
+    "key": "cmec_v2_5_007_still",
+    "start": 25385,
+    "dur": 84,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_007.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "el ventilador alcanza su velocidad,",
+    "nouns": [
+      "ventilador",
+      "velocidad"
+    ],
+    "sourceMoment": "cmec_v2_5_007"
+  },
+  {
+    "key": "cmec_v2_5_008_still",
+    "start": 25676,
+    "dur": 193,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_008.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si se bloquea, no aumentes fusibles, no puentes sensores y no repítas el arranque 20 veces.",
+    "nouns": [
+      "bloqueo",
+      "fusibles",
+      "sensores",
+      "arranque"
+    ],
+    "sourceMoment": "cmec_v2_5_008"
+  },
+  {
+    "key": "cmec_v2_5_008_clip",
+    "start": 25676,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_5_008.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si se bloquea, no aumentes fusibles, no puentes sensores y no repítas el arranque 20 veces.",
+    "nouns": [
+      "bloqueo",
+      "fusibles",
+      "sensores",
+      "arranque"
+    ],
+    "sourceMoment": "cmec_v2_5_008"
   },
   {
     "key": "cmec_b_016_still",
@@ -1124,6 +2070,42 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_m_174"
   },
   {
+    "key": "cmec_v2_5_009_still",
+    "start": 29437,
+    "dur": 276,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_5_009.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Un generador portátil puede dar muchas más horas mientras tengas combustible, pero introduce el riesgo más grave de todo este vídeo.",
+    "nouns": [
+      "generador portátil",
+      "horas",
+      "combustible",
+      "riesgo"
+    ],
+    "sourceMoment": "cmec_v2_5_009"
+  },
+  {
+    "key": "cmec_v2_5_009_clip",
+    "start": 29437,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_5_009.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Un generador portátil puede dar muchas más horas mientras tengas combustible, pero introduce el riesgo más grave de todo este vídeo.",
+    "nouns": [
+      "generador portátil",
+      "horas",
+      "combustible",
+      "riesgo"
+    ],
+    "sourceMoment": "cmec_v2_5_009"
+  },
+  {
     "key": "cmec_b_022_still",
     "start": 29726,
     "dur": 280,
@@ -1269,6 +2251,38 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_m_183"
   },
   {
+    "key": "cmec_v2_10_001_still",
+    "start": 31262,
+    "dur": 81,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_10_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La extensión también forma parte del sistema.",
+    "nouns": [
+      "extensión para exterior",
+      "sistema de respaldo"
+    ],
+    "sourceMoment": "cmec_v2_10_001"
+  },
+  {
+    "key": "cmec_v2_10_001_clip",
+    "start": 31262,
+    "dur": 81,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_10_001.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "La extensión también forma parte del sistema.",
+    "nouns": [
+      "extensión para exterior",
+      "sistema de respaldo"
+    ],
+    "sourceMoment": "cmec_v2_10_001"
+  },
+  {
     "key": "cmec_c_002_still",
     "start": 31354,
     "dur": 271,
@@ -1285,6 +2299,63 @@ export const CUES_CMECALOR = [
       "conectores"
     ],
     "sourceMoment": "cmec_c_002"
+  },
+  {
+    "key": "cmec_v2_home_001_still",
+    "start": 31639,
+    "dur": 189,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_home_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Un cable demasiado fino puede perder tensión, calentarse y hacer que el motor arranque mal.",
+    "nouns": [
+      "cable fino",
+      "extensión exterior gruesa",
+      "motor"
+    ],
+    "sourceMoment": "cmec_v2_home_001"
+  },
+  {
+    "key": "cmec_v2_home_002_still",
+    "start": 31839,
+    "dur": 178,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_home_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "No te voy a leer una medida universal porque cambia con la tensión, la longitud y el consumo.",
+    "nouns": [
+      "medida",
+      "tensión",
+      "longitud",
+      "consumo",
+      "extensión",
+      "cinta métrica",
+      "medidor",
+      "carga"
+    ],
+    "sourceMoment": "cmec_v2_home_002"
+  },
+  {
+    "key": "cmec_v2_root_014_still",
+    "start": 32032,
+    "dur": 97,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_root_014.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Usa la tabla correspondiente a tu país y deja margen.",
+    "nouns": [
+      "tabla",
+      "país",
+      "margen",
+      "cable"
+    ],
+    "sourceMoment": "cmec_v2_root_014"
   },
   {
     "key": "cmec_c_003_still",
@@ -1324,6 +2395,76 @@ export const CUES_CMECALOR = [
       "escape"
     ],
     "sourceMoment": "cmec_m_189"
+  },
+  {
+    "key": "cmec_v2_10_002_still",
+    "start": 32572,
+    "dur": 111,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_10_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Y antes de cargar combustible, se apaga y se deja enfriar.",
+    "nouns": [
+      "generador",
+      "combustible",
+      "motor"
+    ],
+    "sourceMoment": "cmec_v2_10_002"
+  },
+  {
+    "key": "cmec_v2_10_002_clip",
+    "start": 32572,
+    "dur": 111,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_10_002.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Y antes de cargar combustible, se apaga y se deja enfriar.",
+    "nouns": [
+      "generador",
+      "combustible",
+      "motor"
+    ],
+    "sourceMoment": "cmec_v2_10_002"
+  },
+  {
+    "key": "cmec_v2_fuel_001_still",
+    "start": 32696,
+    "dur": 201,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_fuel_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Derramar gasolina sobre un motor caliente es una forma muy rápida de convertir un apagón en un incendio.",
+    "nouns": [
+      "gasolina",
+      "motor caliente",
+      "apagón",
+      "incendio"
+    ],
+    "sourceMoment": "cmec_v2_fuel_001"
+  },
+  {
+    "key": "cmec_v2_fuel_001_clip",
+    "start": 32696,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_fuel_001.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Derramar gasolina sobre un motor caliente es una forma muy rápida de convertir un apagón en un incendio.",
+    "nouns": [
+      "gasolina",
+      "motor caliente",
+      "apagón",
+      "incendio"
+    ],
+    "sourceMoment": "cmec_v2_fuel_001"
   },
   {
     "key": "cmec_c_005_still",
@@ -1404,6 +2545,40 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_m_196"
   },
   {
+    "key": "cmec_v2_10_003_still",
+    "start": 34631,
+    "dur": 56,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_10_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Cierra cortinas al caer el sol",
+    "nouns": [
+      "cortinas",
+      "sol"
+    ],
+    "sourceMoment": "cmec_v2_10_003"
+  },
+  {
+    "key": "cmec_v2_home_003_still",
+    "start": 34700,
+    "dur": 99,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_home_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "aprovecha la radiación solar durante el día si aparece.",
+    "nouns": [
+      "radiación solar",
+      "día",
+      "cortinas",
+      "habitación"
+    ],
+    "sourceMoment": "cmec_v2_home_003"
+  },
+  {
     "key": "cmec_c_007_still",
     "start": 34817,
     "dur": 341,
@@ -1473,6 +2648,164 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_c_008"
   },
   {
+    "key": "cmec_v2_10_004_still",
+    "start": 36183,
+    "dur": 105,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_10_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "No uses la cocina ni el horno para calentar la vivienda.",
+    "nouns": [
+      "cocina",
+      "horno",
+      "vivienda"
+    ],
+    "sourceMoment": "cmec_v2_10_004"
+  },
+  {
+    "key": "cmec_v2_10_004_clip",
+    "start": 36183,
+    "dur": 105,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_10_004.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "No uses la cocina ni el horno para calentar la vivienda.",
+    "nouns": [
+      "cocina",
+      "horno",
+      "vivienda"
+    ],
+    "sourceMoment": "cmec_v2_10_004"
+  },
+  {
+    "key": "cmec_v2_10_005_still",
+    "start": 36304,
+    "dur": 131,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_10_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "No lleves una parrilla, bracero o carbón a un ambiente cerrado.",
+    "nouns": [
+      "parrilla",
+      "bracero",
+      "carbón",
+      "ambiente cerrado"
+    ],
+    "sourceMoment": "cmec_v2_10_005"
+  },
+  {
+    "key": "cmec_v2_10_006_still",
+    "start": 36450,
+    "dur": 76,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_10_006.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "No dejes velas encendidas mientras duermen",
+    "nouns": [
+      "velas encendidas",
+      "sueño"
+    ],
+    "sourceMoment": "cmec_v2_10_006"
+  },
+  {
+    "key": "cmec_v2_10_006_clip",
+    "start": 36450,
+    "dur": 76,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_10_006.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "No dejes velas encendidas mientras duermen",
+    "nouns": [
+      "velas encendidas",
+      "sueño"
+    ],
+    "sourceMoment": "cmec_v2_10_006"
+  },
+  {
+    "key": "cmec_v2_auto_001_still",
+    "start": 36541,
+    "dur": 108,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_auto_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "no conectes un calefactor electrico a una estacion pequena",
+    "nouns": [
+      "calefactor electrico",
+      "estacion pequena",
+      "clavijas"
+    ],
+    "sourceMoment": "cmec_v2_auto_001"
+  },
+  {
+    "key": "cmec_v2_home_004_still",
+    "start": 36766,
+    "dur": 100,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_home_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "El tamaño físico no dice nada, mira los vatios",
+    "nouns": [
+      "tamaño físico",
+      "vatios",
+      "calefactor",
+      "placa de potencia",
+      "1500 W"
+    ],
+    "sourceMoment": "cmec_v2_home_004"
+  },
+  {
+    "key": "cmec_v2_auto_002_still",
+    "start": 36938,
+    "dur": 142,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_auto_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el apagon viene con frio extremo y la casa puede acercarse al congelamiento,",
+    "nouns": [
+      "apagon",
+      "frio extremo",
+      "casa",
+      "congelamiento",
+      "termometro"
+    ],
+    "sourceMoment": "cmec_v2_auto_002"
+  },
+  {
+    "key": "cmec_v2_auto_002_clip",
+    "start": 36938,
+    "dur": 142,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_auto_002.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el apagon viene con frio extremo y la casa puede acercarse al congelamiento,",
+    "nouns": [
+      "apagon",
+      "frio extremo",
+      "casa",
+      "congelamiento",
+      "termometro"
+    ],
+    "sourceMoment": "cmec_v2_auto_002"
+  },
+  {
     "key": "cmec_c_010_still",
     "start": 37092,
     "dur": 158,
@@ -1509,6 +2842,76 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_c_010"
   },
   {
+    "key": "cmec_v2_10_007_still",
+    "start": 37388,
+    "dur": 123,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_10_007.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "No espere a que una tubería reviente para aprender dónde se corta.",
+    "nouns": [
+      "tubería",
+      "llave de corte"
+    ],
+    "sourceMoment": "cmec_v2_10_007"
+  },
+  {
+    "key": "cmec_v2_10_007_clip",
+    "start": 37388,
+    "dur": 123,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_10_007.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "No espere a que una tubería reviente para aprender dónde se corta.",
+    "nouns": [
+      "tubería",
+      "llave de corte"
+    ],
+    "sourceMoment": "cmec_v2_10_007"
+  },
+  {
+    "key": "cmec_v2_auto_003_still",
+    "start": 37520,
+    "dur": 92,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_auto_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Antes de una tormenta, haz una prueba de autonomia real.",
+    "nouns": [
+      "tormenta",
+      "prueba",
+      "autonomia",
+      "bateria",
+      "cronometro"
+    ],
+    "sourceMoment": "cmec_v2_auto_003"
+  },
+  {
+    "key": "cmec_v2_auto_003_clip",
+    "start": 37520,
+    "dur": 92,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_auto_003.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Antes de una tormenta, haz una prueba de autonomia real.",
+    "nouns": [
+      "tormenta",
+      "prueba",
+      "autonomia",
+      "bateria",
+      "cronometro"
+    ],
+    "sourceMoment": "cmec_v2_auto_003"
+  },
+  {
     "key": "cmec_c_011_still",
     "start": 37686,
     "dur": 370,
@@ -1526,6 +2929,139 @@ export const CUES_CMECALOR = [
       "termómetro exterior"
     ],
     "sourceMoment": "cmec_c_011"
+  },
+  {
+    "key": "cmec_v2_auto_004_still",
+    "start": 38072,
+    "dur": 134,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_auto_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Con una hora de datos ya puedes estimar mucho mejor que con la etiqueta.",
+    "nouns": [
+      "hora",
+      "datos",
+      "etiqueta",
+      "medidor",
+      "cuaderno"
+    ],
+    "sourceMoment": "cmec_v2_auto_004"
+  },
+  {
+    "key": "cmec_v2_auto_005_still",
+    "start": 38212,
+    "dur": 40,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_auto_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Haz la cuenta con margen.",
+    "nouns": [
+      "cuenta",
+      "margen",
+      "calculadora",
+      "bateria",
+      "reserva"
+    ],
+    "sourceMoment": "cmec_v2_auto_005"
+  },
+  {
+    "key": "cmec_v2_heat_005_still",
+    "start": 38586,
+    "dur": 128,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_heat_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "cualquier teléfono que alguien conecte se comen esa precisión.",
+    "nouns": [
+      "dos teléfonos",
+      "radio",
+      "batería portátil",
+      "consumos",
+      "precisión"
+    ],
+    "sourceMoment": "cmec_v2_heat_005"
+  },
+  {
+    "key": "cmec_v2_auto_006_still",
+    "start": 38725,
+    "dur": 59,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_auto_006.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Disena para llegar con reserva.",
+    "nouns": [
+      "reserva",
+      "bateria",
+      "calefaccion",
+      "indicador de carga"
+    ],
+    "sourceMoment": "cmec_v2_auto_006"
+  },
+  {
+    "key": "cmec_v2_heat_006_still",
+    "start": 38793,
+    "dur": 43,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_heat_006.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Y prepara un plan de salida.",
+    "nouns": [
+      "plan de salida",
+      "llaves",
+      "abrigo",
+      "linterna",
+      "ruta",
+      "puerta"
+    ],
+    "sourceMoment": "cmec_v2_heat_006"
+  },
+  {
+    "key": "cmec_v2_heat_006_clip",
+    "start": 38793,
+    "dur": 43,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_heat_006.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Y prepara un plan de salida.",
+    "nouns": [
+      "plan de salida",
+      "llaves",
+      "abrigo",
+      "linterna",
+      "ruta",
+      "puerta"
+    ],
+    "sourceMoment": "cmec_v2_heat_006"
+  },
+  {
+    "key": "cmec_v2_fuel_002_still",
+    "start": 38848,
+    "dur": 191,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_fuel_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si la temperatura sigue bajando, si la batería llega al límite que definiste, si el generador falla",
+    "nouns": [
+      "temperatura baja",
+      "batería",
+      "límite",
+      "generador"
+    ],
+    "sourceMoment": "cmec_v2_fuel_002"
   },
   {
     "key": "cmec_c_013_still",
@@ -1565,6 +3101,46 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_m_224"
   },
   {
+    "key": "cmec_v2_home_005_still",
+    "start": 39503,
+    "dur": 50,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_home_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "No reemplaza un plan familiar.",
+    "nouns": [
+      "plan familiar",
+      "bolso",
+      "abrigo",
+      "linterna",
+      "ruta",
+      "tomacorriente"
+    ],
+    "sourceMoment": "cmec_v2_home_005"
+  },
+  {
+    "key": "cmec_v2_heat_001_still",
+    "start": 39634,
+    "dur": 303,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_heat_001.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si tu calefacción produce calor con gas y solo necesita electricidad para control, ventilador o bomba, puede ser una carga excelente para respaldo.",
+    "nouns": [
+      "calefacción a gas",
+      "línea de gas",
+      "control eléctrico",
+      "ventilador",
+      "bomba circuladora",
+      "respaldo"
+    ],
+    "sourceMoment": "cmec_v2_heat_001"
+  },
+  {
     "key": "cmec_c_014_still",
     "start": 39955,
     "dur": 109,
@@ -1583,6 +3159,112 @@ export const CUES_CMECALOR = [
     "sourceMoment": "cmec_c_014"
   },
   {
+    "key": "cmec_v2_fuel_003_still",
+    "start": 40079,
+    "dur": 204,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_fuel_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Después instala una forma aprobada de aislarla de la red y alimentarla desde una fuente compatible.",
+    "nouns": [
+      "aislamiento de red",
+      "conmutador de un circuito",
+      "fuente compatible"
+    ],
+    "sourceMoment": "cmec_v2_fuel_003"
+  },
+  {
+    "key": "cmec_v2_heat_002_still",
+    "start": 40299,
+    "dur": 183,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_heat_002.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el equipo ya funciona sin electricidad, confirma el manual y no agregues piezas innecesarias.",
+    "nouns": [
+      "equipo sin electricidad",
+      "manual",
+      "estufa mural",
+      "piezas innecesarias"
+    ],
+    "sourceMoment": "cmec_v2_heat_002"
+  },
+  {
+    "key": "cmec_v2_heat_002_clip",
+    "start": 40299,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_heat_002.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si el equipo ya funciona sin electricidad, confirma el manual y no agregues piezas innecesarias.",
+    "nouns": [
+      "equipo sin electricidad",
+      "manual",
+      "estufa mural",
+      "piezas innecesarias"
+    ],
+    "sourceMoment": "cmec_v2_heat_002"
+  },
+  {
+    "key": "cmec_v2_heat_003_still",
+    "start": 40496,
+    "dur": 209,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_heat_003.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Si la calefacción es eléctrica o depende de un compresor grande, una estación pequeña no es la respuesta.",
+    "nouns": [
+      "calefacción eléctrica",
+      "compresor grande",
+      "estación pequeña"
+    ],
+    "sourceMoment": "cmec_v2_heat_003"
+  },
+  {
+    "key": "cmec_v2_heat_004_still",
+    "start": 40717,
+    "dur": 90,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_heat_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "Necesitas reducir el área que intentas calentar,",
+    "nouns": [
+      "área calentada",
+      "puerta interior",
+      "una habitación",
+      "radiador mural"
+    ],
+    "sourceMoment": "cmec_v2_heat_004"
+  },
+  {
+    "key": "cmec_v2_heat_004_clip",
+    "start": 40717,
+    "dur": 90,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_heat_004.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "Necesitas reducir el área que intentas calentar,",
+    "nouns": [
+      "área calentada",
+      "puerta interior",
+      "una habitación",
+      "radiador mural"
+    ],
+    "sourceMoment": "cmec_v2_heat_004"
+  },
+  {
     "key": "cmec_c_015_still",
     "start": 40966,
     "dur": 332,
@@ -1597,6 +3279,24 @@ export const CUES_CMECALOR = [
       "banco de trabajo"
     ],
     "sourceMoment": "cmec_c_015"
+  },
+  {
+    "key": "cmec_v2_fuel_004_still",
+    "start": 41298,
+    "dur": 257,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_fuel_004.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "El problema no es que sea una solución poco elegante, es que puede dejar tensión en lugares donde una persona espera encontrar cero.",
+    "nouns": [
+      "tensión",
+      "cero voltios",
+      "probador sin contacto",
+      "gabinete cerrado"
+    ],
+    "sourceMoment": "cmec_v2_fuel_004"
   },
   {
     "key": "cta_microgeneradores_2_1",
@@ -1629,6 +3329,40 @@ export const CUES_CMECALOR = [
       "código QR"
     ],
     "sourceMoment": "cta_microgeneradores_2"
+  },
+  {
+    "key": "cmec_v2_fuel_005_still",
+    "start": 42608,
+    "dur": 110,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_fuel_005.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "La pieza del título no hace milagros, hace algo mejor.",
+    "nouns": [
+      "pieza del título",
+      "tomacorriente con tierra",
+      "calefacción"
+    ],
+    "sourceMoment": "cmec_v2_fuel_005"
+  },
+  {
+    "key": "cmec_v2_fuel_005_clip",
+    "start": 42608,
+    "dur": 110,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_fuel_005.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "La pieza del título no hace milagros, hace algo mejor.",
+    "nouns": [
+      "pieza del título",
+      "tomacorriente con tierra",
+      "calefacción"
+    ],
+    "sourceMoment": "cmec_v2_fuel_005"
   },
   {
     "key": "cmec_c_016_still",
@@ -1664,5 +3398,43 @@ export const CUES_CMECALOR = [
       "resistencia eléctrica"
     ],
     "sourceMoment": "cmec_m_251"
+  },
+  {
+    "key": "cmec_v2_fuel_006_still",
+    "start": 44063,
+    "dur": 297,
+    "type": "still",
+    "src": "img/cmecalor_v2/cmec_v2_fuel_006.png",
+    "clipDuration": null,
+    "kicker": null,
+    "side": null,
+    "anchor": "En el próximo vídeo voy a medir cuánto dura una estación de energía con las cargas que de verdad importan durante un apagón, una por una hasta que se apague.",
+    "nouns": [
+      "estación de energía",
+      "cargas importantes",
+      "medición",
+      "apagón",
+      "una por una"
+    ],
+    "sourceMoment": "cmec_v2_fuel_006"
+  },
+  {
+    "key": "cmec_v2_fuel_006_clip",
+    "start": 44063,
+    "dur": 147,
+    "type": "clip",
+    "src": "broll/cmecalor_v2_agnes/cmec_v2_fuel_006.mp4",
+    "clipDuration": 5.042,
+    "kicker": null,
+    "side": null,
+    "anchor": "En el próximo vídeo voy a medir cuánto dura una estación de energía con las cargas que de verdad importan durante un apagón, una por una hasta que se apague.",
+    "nouns": [
+      "estación de energía",
+      "cargas importantes",
+      "medición",
+      "apagón",
+      "una por una"
+    ],
+    "sourceMoment": "cmec_v2_fuel_006"
   }
 ] as const satisfies readonly CmecalorCue[];

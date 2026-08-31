@@ -29,8 +29,14 @@ const unionSeconds = (intervals) => {
   return merged.reduce((sum, [a, b]) => sum + b - a, 0);
 };
 
-const momentsDoc = readJson(`_v3/${SLUG}_moments_ms.json`);
-const manifest = readJson(`_v3/${SLUG}_asset_manifest.json`);
+const momentsFile = fs.existsSync(`_v3/${SLUG}_moments_ms_v2.json`)
+  ? `_v3/${SLUG}_moments_ms_v2.json`
+  : `_v3/${SLUG}_moments_ms.json`;
+const manifestFile = fs.existsSync(`_v3/${SLUG}_asset_manifest_v2.json`)
+  ? `_v3/${SLUG}_asset_manifest_v2.json`
+  : `_v3/${SLUG}_asset_manifest.json`;
+const momentsDoc = readJson(momentsFile);
+const manifest = readJson(manifestFile);
 const beatsheet = readJson(`beatsheet/${SLUG}.json`);
 const transcriptAudit = readJson(`work/${SLUG}/transcript_audit.json`);
 const audioAudit = readJson(`work/${SLUG}/audio_master_audit.json`);

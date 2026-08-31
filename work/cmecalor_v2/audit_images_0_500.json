@@ -1,0 +1,95 @@
+{
+  "range_ms": [0, 500000],
+  "reference_image": "claudio_ref.png",
+  "identity_policy": "La referencia se usó en cada llamada para parecido general y vestuario. Conforme al ajuste del usuario, una variación facial moderada no causa rechazo.",
+  "audit_policy": [
+    "frase, acción y sustantivos exactos",
+    "manos y puntos de contacto",
+    "mecánica y continuidad de cables/componentes",
+    "texto falso importante",
+    "seguridad eléctrica y de combustión"
+  ],
+  "approved_count": 12,
+  "rejected_count": 1,
+  "images": [
+    {
+      "candidate": {"start_ms": 22820, "end_ms": 28960, "caption_exact": "Si tu equipo calienta con gas puede haber una sorpresa enorme escondida detrás de su tapa."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_001.png",
+      "status": "approved",
+      "reason": "Claudio retira físicamente la tapa y quedan visibles ventilador y placa; sostiene solo el panel, no toca el interior y no hay acción energizada. Manos, tapa y componentes coherentes."
+    },
+    {
+      "candidate": {"start_ms": 307680, "end_ms": 315000, "caption_exact": "En cambio, si una calefacción a gas consume 400 vatios cuando su ventilador está encendido y trabaja por ciclos,"},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_002.png",
+      "status": "approved",
+      "reason": "El vatímetro cerrado muestra exactamente 400 W, Claudio lo lee y señala; calefacción cerrada, un solo cordón, sin conductores expuestos ni texto falso adicional."
+    },
+    {
+      "candidate": {"start_ms": 347840, "end_ms": 353720, "caption_exact": "Durante un apagón se desconecta de esa fuente y se alimenta desde una batería con inversor"},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_003.png",
+      "status": "approved",
+      "reason": "Se ve la inserción en la batería inversora y el tomacorriente de red permanece claramente vacío; agarre sobre cuerpo aislado, manos correctas y cero conexión simultánea."
+    },
+    {
+      "candidate": {"start_ms": 175420, "end_ms": 184700, "caption_exact": "En una caldera de agua, la electricidad puede alimentar la placa, el encendido y la bomba que hace circular el agua por radiadores o pisor radiante."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_004.png",
+      "status": "approved",
+      "reason": "Claudio señala literalmente la bomba circuladora externa y el control cerrado; tuberías continuas, caldera cerrada y manos alejadas del metal caliente."
+    },
+    {
+      "candidate": {"start_ms": 259940, "end_ms": 263920, "caption_exact": "no lo modifiques por costumbre, revisa su placa y su manual."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_005.png",
+      "status": "approved",
+      "reason": "Acción literal de comparar manual y placa exterior con herramientas apartadas. El equipo sigue cerrado; el texto pequeño es decorativo e ilegible, no una afirmación falsa importante."
+    },
+    {
+      "candidate": {"start_ms": 325080, "end_ms": 330260, "caption_exact": "Ahora sí, la pieza. Lo que ves junto al equipo es un punto de conexión con tierra."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_006.png",
+      "status": "approved",
+      "reason": "Tomacorriente dúplex con contacto de tierra, placa completa y tornillos visibles; Claudio lo señala sin tocar ranuras, sin cables ni caja abiertos."
+    },
+    {
+      "candidate": {"start_ms": 367660, "end_ms": 369380, "caption_exact": "La caja debe quedar cerrada."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_007.png",
+      "status": "approved",
+      "reason": "Claudio aprieta el último tornillo con la tapa totalmente asentada; herramienta y tornillo alineados, caja cerrada, bloqueo visible y cero conductor expuesto."
+    },
+    {
+      "candidate": {"start_ms": 369780, "end_ms": 371920, "caption_exact": "La puesta a tierra debe conservarse."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_008.png",
+      "status": "approved",
+      "reason": "Plano literal del único conductor verde fijado bajo el tornillo verde. Bloqueo visible, caja desenergizada, sin fases expuestas; manos y herramienta mecánicamente correctas."
+    },
+    {
+      "candidate": {"start_ms": 372200, "end_ms": 375120, "caption_exact": "La protección del circuito debe seguir existiendo"},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_009.png",
+      "status": "approved",
+      "reason": "Claudio señala el disyuntor con el frente muerto del tablero completamente instalado; no lo acciona y no hay barras ni conductores accesibles."
+    },
+    {
+      "candidate": {"start_ms": 422680, "end_ms": 429660, "caption_exact": "La conexión prohibida es intentar alimentar la casa enchufando un generador en un tomacorriente común."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_010.png",
+      "status": "approved",
+      "reason": "La conexión prohibida se evita: generador afuera, enchufe desconectado lejos del tomacorriente y señal de alto. Las manos tocan solo aislamiento; no hay retroalimentación."
+    },
+    {
+      "candidate": {"start_ms": 448000, "end_ms": 453120, "caption_exact": "Si tienes uno no es una herramienta de emergencia, es un riesgo de electrocución."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_011.png",
+      "status": "approved",
+      "reason": "Un solo cable con dos extremos macho desconectados queda íntegramente visible; Claudio lo toma por el centro y hace señal de rechazo, sin tocar espigas ni fuente."
+    },
+    {
+      "candidate": {"start_ms": 364600, "end_ms": 367200, "caption_exact": "El cordón debe ser apropiado para el equipo."},
+      "file": "public/img/cmecalor_v2/cmec_v2_0_012.png",
+      "status": "approved",
+      "reason": "Un único cordón grueso se ve completo desde la clavija con tierra hasta el alivio de tensión; está desconectado, intacto y sostenido solo por material aislante."
+    },
+    {
+      "candidate": {"start_ms": 364600, "end_ms": 367200, "caption_exact": "El cordón debe ser apropiado para el equipo."},
+      "file": null,
+      "generated_original": "C:/Users/bauti/.codex/generated_images/01a05717-a48a-7602-88df-27c5b970594a/exec-2b023889-74df-4c35-8c70-3ad2da55c49d.png",
+      "status": "rejected",
+      "reason": "La comparación falló la mecánica: el cordón grueso apareció con cuatro contactos y el cable fino quedó con topología macho-macho ambigua. No se copió al proyecto."
+    }
+  ]
+}

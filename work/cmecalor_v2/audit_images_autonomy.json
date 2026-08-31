@@ -1,0 +1,121 @@
+{
+  "range_ms": [1218020, 1292800],
+  "reference_image": "claudio_ref.png",
+  "identity_policy": "La referencia se uso como guia de aspecto general y vestuario. Conforme al pedido del usuario, no se aplico control facial estricto.",
+  "audit_policy": [
+    "literalidad de la frase y sus sustantivos",
+    "accion fisica exacta",
+    "manos, cables y objetos plausibles",
+    "equipos cerrados y seguridad electrica",
+    "sin texto superpuesto ni texto inventado importante"
+  ],
+  "approved_count": 6,
+  "rejected_count": 1,
+  "images": [
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_auto_001.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-3895-7e52-a217-f172b721fc3f/exec-c6e9b99a-5ef9-4d08-a37d-57ad4430286f.png",
+      "reason": "Calefactor y estacion pequena aparecen juntos, ambos apagados y con sus clavijas separadas sobre la mesa; Claudio hace una senal de NO clara. No hay conexion, calor ni conductor expuesto.",
+      "candidate": {
+        "start_ms": 1218020,
+        "end_ms": 1221620,
+        "caption_exact": "no conectes un calefactor electrico a una estacion pequena",
+        "nouns": ["calefactor electrico", "estacion pequena", "clavijas"],
+        "action": "Claudio hace un gesto de NO frente al calefactor y la estacion, ambos apagados y desenchufados.",
+        "safety": "Ambos equipos permanecen frios, apagados y desconectados; no hay conductores expuestos ni conexion entre ellos.",
+        "agnes_motion_es": "Claudio sostiene el gesto de alto y mueve apenas la cabeza en negacion. Mantener inmoviles y apagados el calefactor, la estacion y las dos clavijas; camara casi fija."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_auto_002.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-3895-7e52-a217-f172b721fc3f/exec-c7f30cf2-bbe0-40ea-9559-c711889a50f0.png",
+      "reason": "El termometro domestico fisico muestra 0 grados C y Claudio lleva abrigo en un interior frio normal. El equipo de calefaccion sigue completamente cerrado y la escena no dramatiza el riesgo.",
+      "candidate": {
+        "start_ms": 1231260,
+        "end_ms": 1236000,
+        "caption_exact": "Si el apagon viene con frio extremo y la casa puede acercarse al congelamiento,",
+        "nouns": ["apagon", "frio extremo", "casa", "congelamiento", "termometro"],
+        "action": "Claudio, con abrigo, comprueba un termometro domestico que marca 0 grados C junto a la calefaccion cerrada.",
+        "safety": "Calefaccion cerrada, manos alejadas de piezas calientes y ningun efecto de hielo o peligro inmediato.",
+        "agnes_motion_es": "Claudio gira muy levemente el termometro hacia la camara y lo observa. Conservar exactamente el 0 grados C, la forma del termometro, las manos y el gabinete cerrado."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_auto_003.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-3895-7e52-a217-f172b721fc3f/exec-4273f8c8-0f5c-4617-a858-1184d29e328e.png",
+      "reason": "La prueba real se realiza en un dia tranquilo: bateria, calefaccion cerrada, cronometro y cuaderno estan visibles. Un solo cable intacto alimenta el control del equipo sin acceso interno.",
+      "candidate": {
+        "start_ms": 1250680,
+        "end_ms": 1253740,
+        "caption_exact": "Antes de una tormenta, haz una prueba de autonomia real.",
+        "nouns": ["tormenta", "prueba", "autonomia", "bateria", "cronometro"],
+        "action": "Claudio cronometra y anota una prueba de la calefaccion cerrada alimentada por una bateria en una jornada tranquila.",
+        "safety": "Paneles cerrados, un solo cordon intacto, sin generador, retroalimentacion ni conductores expuestos.",
+        "agnes_motion_es": "Claudio mira el cronometro y escribe una sola marca breve en el cuaderno. Mantener estables la pantalla, el cable, el gabinete cerrado y la estacion."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_auto_004.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-3895-7e52-a217-f172b721fc3f/exec-04231245-1e6f-4d87-b15c-2462b5125076.png",
+      "reason": "El medidor muestra 180 W, el temporizador marca 60:00 y el cuaderno contiene una serie de mediciones sin palabras inventadas. Claudio senala literalmente el registro de una hora frente a la calefaccion cerrada.",
+      "candidate": {
+        "start_ms": 1269080,
+        "end_ms": 1273540,
+        "caption_exact": "Con una hora de datos ya puedes estimar mucho mejor que con la etiqueta.",
+        "nouns": ["hora", "datos", "etiqueta", "medidor", "cuaderno"],
+        "action": "Claudio senala un grafico de una hora junto al medidor enchufable y el temporizador en 60:00.",
+        "safety": "Medidor cerrado con enchufe intacto, calefaccion cerrada y ninguna manipulacion electrica.",
+        "agnes_motion_es": "Claudio desplaza apenas el indice a lo largo del grafico. Mantener exactos 180 W y 60:00, los puntos del grafico, el cable y el gabinete."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_auto_005.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-3895-7e52-a217-f172b721fc3f/exec-8f989024-ba59-4b63-94d9-a7aa946b9c6a.png",
+      "reason": "La calculadora y el resultado fisico 3.5 h muestran la cuenta; el diagrama de bateria tiene exactamente cuatro bloques sombreados y un quinto bloque vacio que hace visible el margen de reserva.",
+      "candidate": {
+        "start_ms": 1273720,
+        "end_ms": 1275080,
+        "caption_exact": "Haz la cuenta con margen.",
+        "nouns": ["cuenta", "margen", "calculadora", "bateria", "reserva"],
+        "action": "Claudio pulsa la calculadora junto a una hoja con el resultado rodeado y un bloque de bateria dejado vacio como reserva.",
+        "safety": "Bateria de contexto apagada; no hay conexiones ni piezas electricas expuestas.",
+        "agnes_motion_es": "Claudio pulsa una vez la tecla y retira apenas el dedo. Preservar el resultado 3.5 h, los cinco bloques, cuatro sombreados y el quinto vacio."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_auto_006.png",
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-3895-7e52-a217-f172b721fc3f/exec-cd3418b8-5f6d-4bc2-9464-da01d14b2791.png",
+      "reason": "La estacion alimenta solo la calefaccion cerrada y su indicador fisico conserva cuatro de cinco barras verdes. Claudio senala exactamente la energia sobrante; no aparece ninguna carga adicional.",
+      "candidate": {
+        "start_ms": 1290840,
+        "end_ms": 1292800,
+        "caption_exact": "Disena para llegar con reserva.",
+        "nouns": ["reserva", "bateria", "calefaccion", "indicador de carga"],
+        "action": "Claudio senala cuatro barras verdes restantes mientras la bateria alimenta solo la calefaccion cerrada.",
+        "safety": "Un solo cable intacto, paneles cerrados, sin retroalimentacion, tablero abierto ni conductores expuestos.",
+        "agnes_motion_es": "Claudio aproxima apenas el indice al indicador y asiente. Mantener cuatro barras verdes, cable unico, estacion y gabinete completamente estables."
+      }
+    },
+    {
+      "status": "rejected",
+      "file": null,
+      "source": "C:/Users/bauti/.codex/generated_images/01a058a0-3895-7e52-a217-f172b721fc3f/exec-3321cf72-8d93-4f9b-9e8c-749c1dc049e5.png",
+      "reason": "Primera version descartada: el dibujo de bateria dejo todos los bloques vacios y no distinguia de forma inequivoca la reserva. No se copio al proyecto.",
+      "candidate": {
+        "start_ms": 1273720,
+        "end_ms": 1275080,
+        "caption_exact": "Haz la cuenta con margen.",
+        "nouns": ["cuenta", "margen", "calculadora", "bateria", "reserva"],
+        "action": "Claudio pulsa la calculadora junto a una hoja con el resultado rodeado y un bloque de bateria dejado vacio como reserva.",
+        "safety": "Bateria de contexto apagada; no hay conexiones ni piezas electricas expuestas.",
+        "agnes_motion_es": "Claudio pulsa una vez la tecla y retira apenas el dedo. Preservar el resultado fisico, la mano y el diagrama de bateria."
+      }
+    }
+  ]
+}

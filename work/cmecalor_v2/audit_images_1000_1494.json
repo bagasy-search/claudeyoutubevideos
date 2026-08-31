@@ -1,0 +1,12 @@
+{
+  "identity_policy": "Parecido general guiado por la referencia; sin gate facial estricto.",
+  "items": [
+    {"status":"approved","file":"public/img/cmecalor_v2/cmec_v2_10_001.png","reason":"Extensión exterior intacta aparece como parte concreta del sistema entre generador y respaldo.","candidate":{"start_ms":1042060,"end_ms":1044760,"caption_exact":"La extensión también forma parte del sistema."}},
+    {"status":"approved","file":"public/img/cmecalor_v2/cmec_v2_10_002.png","reason":"Claudio comprueba que el generador está apagado y frío antes de cargar combustible.","candidate":{"start_ms":1085740,"end_ms":1089440,"caption_exact":"Y antes de cargar combustible, se apaga y se deja enfriar."}},
+    {"status":"approved","file":"public/img/cmecalor_v2/cmec_v2_10_003.png","reason":"Claudio cierra literalmente las cortinas al caer la luz; plano exacto y doméstico.","candidate":{"start_ms":1154360,"end_ms":1156240,"caption_exact":"Cierra cortinas al caer el sol"}},
+    {"status":"approved","file":"public/img/cmecalor_v2/cmec_v2_10_004.png","reason":"Claudio señala la cocina y el horno como elementos que no deben usarse para calefaccionar.","candidate":{"start_ms":1206100,"end_ms":1209600,"caption_exact":"No uses la cocina ni el horno para calentar la vivienda."}},
+    {"status":"approved","file":"public/img/cmecalor_v2/cmec_v2_10_005.png","reason":"Parrilla y carbón permanecen afuera mientras Claudio marca el límite interior/exterior.","candidate":{"start_ms":1210120,"end_ms":1214500,"caption_exact":"No lleves una parrilla, bracero o carbón a un ambiente cerrado."}},
+    {"status":"approved","file":"public/img/cmecalor_v2/cmec_v2_10_006.png","reason":"Claudio apaga una vela de forma segura, acción exacta sin dramatización.","candidate":{"start_ms":1215000,"end_ms":1217520,"caption_exact":"No dejes velas encendidas mientras duermen"}},
+    {"status":"approved","file":"public/img/cmecalor_v2/cmec_v2_10_007.png","reason":"Claudio identifica la llave general real antes de una emergencia; no opera la válvula.","candidate":{"start_ms":1246260,"end_ms":1250380,"caption_exact":"No espere a que una tubería reviente para aprender dónde se corta."}}
+  ]
+}

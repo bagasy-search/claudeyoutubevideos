@@ -1,0 +1,140 @@
+{
+  "policy": "La referencia guía parecido general y ropa; por pedido del usuario no se exige identidad facial estricta. Los gates obligatorios son literalidad, manos, mecánica y seguridad.",
+  "items": [
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_001.png",
+      "reason": "Claudio muestra exactamente el tomacorriente con tierra junto a la calefacción cerrada y apagada; manos y componente son plausibles.",
+      "candidate": {
+        "start_ms": 0,
+        "end_ms": 8160,
+        "caption_exact": "La pieza del título no produce calor, no genera electricidad y por sí sola no mantiene caliente una casa.",
+        "nouns": ["pieza", "calor", "electricidad", "casa"],
+        "action": "Claudio sostiene un tomacorriente con tierra junto a la calefacción a gas cerrada y apagada.",
+        "safety": "Calefacción apagada y cerrada; pieza suelta sin conductores ni energía.",
+        "agnes_motion_es": "Claudio inclina apenas la palma para mostrar el tomacorriente y señala una vez la calefacción apagada. Mantener invariable la geometría de la pieza, la mano y el gabinete; cámara casi fija."
+      }
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_002.png",
+      "reason": "Conmutador de un circuito completamente cerrado con selector físico único; Claudio señala la separación entre fuentes.",
+      "candidate": {"start_ms":453600,"end_ms":463220,"caption_exact":"Para una carga fija como una calefacción, la solución correcta es un sistema que garantice físicamente que la red y el respaldo no se encuentren."}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_003.png",
+      "reason": "Tablero cerrado y medidor separado hacen visible que el interruptor no es el dato de consumo.",
+      "candidate": {"start_ms":503960,"end_ms":508160,"caption_exact":"El primer dato no sale del tamaño del interruptor del tablero."}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_004.png",
+      "reason": "Claudio conecta el respaldo con la calefacción cerrada y detenida; toma la clavija por el cuerpo aislante y no hay conexión peligrosa.",
+      "candidate": {"start_ms":827560,"end_ms":830700,"caption_exact":"Se conecta el respaldo con la calefacción detenida."}
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0507d-b353-7b92-b711-1b693a2f3ba4/exec-f3e2078c-6072-4705-87ac-85c2005a7e99.png",
+      "reason": "El panel retirado deja mazos de conductores visibles y no supera el gate de seguridad para una demostración casual."
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_005.png",
+      "reason": "Claudio compara una pieza barata con un conmutador cerrado de aislamiento físico; manos y herrajes son plausibles.",
+      "candidate": {"start_ms":63320,"end_ms":68760,"caption_exact":"La diferencia no está en el precio de la pieza, está en una palabra, aislamiento."}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_006.png",
+      "reason": "Claudio consulta el manual frente a la calefacción cerrada y deja las herramientas apartadas.",
+      "candidate": {"start_ms":131500,"end_ms":138800,"caption_exact":"La instalación eléctrica fija y cualquier intervención dentro de un equipo de combustión se revisan con el manual,"}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_007.png",
+      "reason": "Gas, caja de control cerrada y ventilador aparecen en el mismo equipo sin manipulación interna.",
+      "candidate": {"start_ms":153200,"end_ms":158680,"caption_exact":"Porque el gas pone el calor, pero la electricidad dirige casi todo lo demás."}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_008.png",
+      "reason": "El suministro de gas está presente pero el ventilador y la rejilla no entregan aire; Claudio señala ambos extremos.",
+      "candidate": {"start_ms":185140,"end_ms":193960,"caption_exact":"Sin esa pequeña parte eléctrica, puede haber combustible en la tubería y aún así no llegar una sola caloría útil a las habitaciones."}
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0507d-b353-7b92-b711-1b693a2f3ba4/exec-cbed6946-f8ab-4d79-8c1b-1bac54034602.png",
+      "reason": "La lámpara está apagada pero los indicadores del equipo aparecen encendidos; contradice el corte de electricidad."
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_009.png",
+      "reason": "El medidor muestra el pico de 900 W en la calefacción cerrada; Claudio sólo observa y señala.",
+      "candidate": {"start_ms":569880,"end_ms":573580,"caption_exact":"Al arrancar, durante un instante, se acerca a 900."}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_010.png",
+      "reason": "El cronómetro, el termómetro y las anotaciones 24/36 muestran literalmente el ciclo medido.",
+      "candidate": {"start_ms":574380,"end_ms":582280,"caption_exact":"En una hora fría, el quemador y el ventilador permanecen activos 24 minutos y descansan 36."}
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0507d-b353-7b92-b711-1b693a2f3ba4/exec-af773855-a4eb-4f73-8f49-0073e97b4e4d.png",
+      "reason": "La carcasa del equipo deja ver conductores a través de un hueco; falla el gate de seguridad aunque las cifras sean correctas."
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_011.png",
+      "reason": "La calculadora física muestra 168 junto al registro de ciclos; calefacción cerrada y manos correctas.",
+      "candidate": {"start_ms":585900,"end_ms":595140,"caption_exact":"420 vatios multiplicados por 0,4 dan 168 vatios de promedio mientras pasan los ciclos."}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_012.png",
+      "reason": "La tarjeta 800 Wh / 180 W y el resultado cercano a 4,5 h aparecen junto a la batería apagada.",
+      "candidate": {"start_ms":615640,"end_ms":624760,"caption_exact":"Si cuentas con algo más de 800 vatios hora útiles y divides por 180, obtienes alrededor de 4 horas y media."}
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_013.png",
+      "reason": "La estación entra en protección durante un pico visible mientras Claudio observa la calefacción cerrada.",
+      "candidate": {"start_ms":655140,"end_ms":665360,"caption_exact":"La fuente de respaldo puede soportar 400 vatios continuos y apagarse cada vez que el motor intenta arrancar porque durante una fracción de segundo pide mucho más."}
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0507d-b353-7b92-b711-1b693a2f3ba4/exec-ccfa2799-6304-4a1a-89f0-b35285043cf4.png",
+      "reason": "La imagen contiene un bloque grande de texto superpuesto; se rechaza porque el video no lleva subtítulos."
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0507d-b353-7b92-b711-1b693a2f3ba4/exec-f1348c9c-42a0-4af5-a763-cf1cb9dcf2a2.png",
+      "reason": "El cuaderno y las etiquetas contienen texto inventado importante; no se usa aunque el parecido y la escena sean buenos."
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0507d-b353-7b92-b711-1b693a2f3ba4/exec-6aa61503-bf2b-45a0-a7a6-a6e3e29698d4.png",
+      "reason": "Aunque muestra el cable fino y la medición de temperatura, contiene una frase grande superpuesta; se rechaza porque el video no lleva subtítulos."
+    },
+    {
+      "status": "rejected",
+      "source": "C:/Users/bauti/.codex/generated_images/01a0507d-b353-7b92-b711-1b693a2f3ba4/exec-7073b70a-82c4-478a-b69f-40c3fe96abe2.png",
+      "reason": "La escena reúne tensión, longitud y carga, pero agrega una frase grande superpuesta; no se usa como b-roll sin subtítulos."
+    },
+    {
+      "status": "approved",
+      "file": "public/img/cmecalor_v2/cmec_v2_root_014.png",
+      "reason": "Claudio señala una tabla física de selección de cable por distancia y consumo; la lámina es el objeto explícito que se enseña y el cable permanece desconectado.",
+      "candidate": {
+        "start_ms": 1067720,
+        "end_ms": 1070980,
+        "caption_exact": "Usa la tabla correspondiente a tu país y deja margen.",
+        "nouns": ["tabla", "país", "margen", "cable"],
+        "action": "Claudio señala con el dedo una tabla impresa de selección de cable junto a una extensión desconectada.",
+        "safety": "Extensión sin energía; no se manipulan conductores ni equipos abiertos.",
+        "agnes_motion_es": "Claudio desliza muy poco el dedo por una fila de la tabla y asiente. Mantener la tabla, sus columnas, cifras, cable y manos totalmente estables; cámara casi fija."
+      }
+    }
+  ]
+}

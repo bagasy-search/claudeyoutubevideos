@@ -7,8 +7,12 @@ import {execFileSync} from 'node:child_process';
 const SLUG = 'cmecalor';
 const COMP = 'Cmecalor';
 const FPS = 30;
-const momentsPath = `_v3/${SLUG}_moments_ms.json`;
-const manifestPath = `_v3/${SLUG}_asset_manifest.json`;
+const momentsPath = fs.existsSync(`_v3/${SLUG}_moments_ms_v2.json`)
+  ? `_v3/${SLUG}_moments_ms_v2.json`
+  : `_v3/${SLUG}_moments_ms.json`;
+const manifestPath = fs.existsSync(`_v3/${SLUG}_asset_manifest_v2.json`)
+  ? `_v3/${SLUG}_asset_manifest_v2.json`
+  : `_v3/${SLUG}_asset_manifest.json`;
 const audioFile = `${SLUG}_fish.wav`;
 const avatarFile = `avatar_${SLUG}.mp4`;
 
