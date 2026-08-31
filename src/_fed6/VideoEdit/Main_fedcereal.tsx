@@ -63,11 +63,11 @@ const compDur = (b: any): number => {
 function buildWindows(): AvatarWindow[] {
   type Pt = { start: number; mode: AvatarWindow["mode"]; pr: number };
   const pts: Pt[] = [{ start: 0, mode: "full", pr: 0 }];
-  let flip = false;
   for (const c of FEDCEREAL_COVER) {
-    const puedeSplit = c.kind === "video" && c.start + c.cov < AVATAR_END;
-    const mode: AvatarWindow["mode"] = puedeSplit && flip ? "halfR" : "hidden";
-    if (puedeSplit) flip = !flip;
+    // ⛔ SIN SPLIT: el modo halfR dejaba la mitad derecha en NEGRO con un recorte del avatar
+    //    flotando (medido: 30 ventanas, 136 s de media pantalla negra). El b-roll va a pantalla
+    //    completa y el avatar sólo vuelve en los huecos.
+    const mode: AvatarWindow["mode"] = "hidden";
     pts.push({ start: c.start, mode, pr: 3 });
     pts.push({ start: +(c.start + c.cov).toFixed(2), mode: "full", pr: 1 });
   }

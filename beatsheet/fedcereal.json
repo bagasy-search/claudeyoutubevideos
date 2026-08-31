@@ -5075,19 +5075,9 @@
    "src": "img/fedcereal_a174_p.jpg"
   },
   {
-   "id": "a175",
+   "id": "a175_t",
    "start": 2127.48,
    "dur": 39.82,
-   "cov": 4.92,
-   "key": "s",
-   "kind": "raw",
-   "src": "broll/fedcereal_a175.mp4",
-   "snd": 1
-  },
-  {
-   "id": "a175_t",
-   "start": 2132.4,
-   "dur": 34.9,
    "cov": 6,
    "key": "s",
    "kind": "raw",
@@ -5095,19 +5085,18 @@
   },
   {
    "id": "a175_r1",
-   "start": 2138.4,
-   "dur": 28.9,
-   "cov": 4.8,
+   "start": 2133.48,
+   "dur": 33.82,
+   "cov": 6,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fedcereal_a175.mp4",
-   "kbPhase": 1,
-   "snd": 1
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 1
   },
   {
    "id": "a175_r2",
-   "start": 2143.2,
-   "dur": 24.1,
+   "start": 2139.48,
+   "dur": 27.82,
    "cov": 6,
    "key": "s",
    "kind": "raw",
@@ -5116,19 +5105,18 @@
   },
   {
    "id": "a175_r3",
-   "start": 2149.2,
-   "dur": 18.1,
-   "cov": 4.8,
+   "start": 2145.48,
+   "dur": 21.82,
+   "cov": 6,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fedcereal_a175.mp4",
-   "kbPhase": 3,
-   "snd": 1
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 3
   },
   {
    "id": "a175_r4",
-   "start": 2154,
-   "dur": 13.3,
+   "start": 2151.48,
+   "dur": 15.82,
    "cov": 6,
    "key": "s",
    "kind": "raw",
@@ -5137,20 +5125,19 @@
   },
   {
    "id": "a175_r5",
-   "start": 2160,
-   "dur": 7.3,
-   "cov": 4.8,
+   "start": 2157.48,
+   "dur": 9.82,
+   "cov": 6,
    "key": "s",
    "kind": "raw",
-   "src": "broll/fedcereal_a175.mp4",
-   "kbPhase": 5,
-   "snd": 1
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 5
   },
   {
    "id": "a175_r6",
-   "start": 2164.8,
-   "dur": 2.5,
-   "cov": 2.5,
+   "start": 2163.48,
+   "dur": 3.82,
+   "cov": 3.82,
    "key": "s",
    "kind": "raw",
    "src": "img/fedcereal_a175_p.jpg",
