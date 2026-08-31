@@ -32,8 +32,22 @@ let asset;
 try { asset = (JSON.parse(sh(`gh release view ${slug} -R ${REPO} --json assets`)).assets || []).find((a) => a.name === `${slug}.mp4`); }
 catch (e) { console.error(`no pude ver el release ${slug} en ${REPO}:`, String(e.stderr || e.message).slice(0, 160)); process.exit(2); }
 if (!asset || asset.size < 1e6) { console.error("el release no tiene el mp4 (o es muy chico) — el render no está publicado"); process.exit(2); }
-const url = `https://github.com/${REPO}/releases/download/${slug}/${slug}.mp4`;
+// MP4_SUFIJO: sufijo opcional para la URL (ej. MP4_SUFIJO="?v=2"). Sirve cuando se REEMPLAZO
+// el asset del release: la URL es la misma y el navegador puede seguir sirviendo el archivo VIEJO
+// desde su cache. Cambiando la URL, el cache no puede acertar. GitHub ignora el query.
+const url = `https://github.com/${REPO}/releases/download/${slug}/${slug}.mp4${process.env.MP4_SUFIJO || ""}`;
 console.log("release ✓", url, (asset.size / 1048576).toFixed(0) + "MB");
+
+// ⛔ COMPUERTA DE ENTREGA — no se saltea. El mp4 del farm NUNCA se entrega crudo: trae yuvj420p +
+// rango pc + matriz bt470bg (PAL) y keyframes de 9 s, y el creador lo ve como "lageado" y "con un
+// filtro de brillo" aunque el archivo mida perfecto en cuadros decodificados. Ya volvi a entregarlo
+// mal DOS veces por no abrir la memoria. La receta esta en la cabecera de check_entrega.mjs.
+try {
+  execSync(`node scripts/check_entrega.mjs "${url}"`, { stdio: "inherit" });
+} catch {
+  console.error("⛔ el mp4 no pasa la compuerta de entrega — corregilo y volve a subir el asset");
+  process.exit(3);
+}
 
 // 2) meta (título/descripción)
 let meta = {};

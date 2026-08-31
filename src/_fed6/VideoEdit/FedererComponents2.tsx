@@ -24,7 +24,10 @@ export function renderFederer2Comp(beat: any, d: number, opts: { medico?: boolea
     case "diagram": {
       // láminas gpt-image reales (DiagramBoard corta seco entre pages). Rutas CRUDAS
       // (Media resuelve staticFile internamente, como RawShot).
-      const pages = (beat.slides || [])
+      const rawPages = (beat.slides && beat.slides.length)
+        ? beat.slides
+        : (beat.image ? [{ image: beat.image, eyebrow: beat.eyebrow }] : []);
+      const pages = rawPages
         .filter((s: any) => s && s.image)
         .map((s: any) => ({ image: s.image, eyebrow: s.eyebrow || beat.eyebrow }));
       if (!pages.length) return null;

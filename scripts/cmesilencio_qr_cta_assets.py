@@ -38,24 +38,21 @@ FONT_DISPLAY_BOLD = FONT_DIR / "ARIALNB.TTF"
 VARIANTS = [
     {
         "key": "01_luz",
-        "eyebrow": "NOTA DE CAMPO 01",
+        "number": "01",
         "title": "CUANDO SE VA\nLA LUZ",
-        "subtitle": "Qué mantener encendido\nsin improvisar",
-        "footer": "ABRE LA GUÍA",
+        "footer": "ESCANEÁ LA GUÍA",
     },
     {
         "key": "02_100w",
-        "eyebrow": "NOTA DE CAMPO 02",
+        "number": "02",
         "title": "PROMETE 100 W.\nENTREGA 43 W.",
-        "subtitle": "La prueba antes\nde comprar",
-        "footer": "ABRE LA GUÍA",
+        "footer": "ESCANEÁ LA GUÍA",
     },
     {
         "key": "03_todo_medido",
-        "eyebrow": "NOTA DE CAMPO 03",
+        "number": "03",
         "title": "TODO\nMEDIDO",
-        "subtitle": "Las dos guías +\nlos cuatro anexos",
-        "footer": "ABRE EL MAPA",
+        "footer": "ESCANEÁ EL MAPA",
     },
 ]
 
@@ -72,7 +69,7 @@ def build_qr() -> Image.Image:
     qr = qrcode.QRCode(
         version=None,
         error_correction=ERROR_CORRECT_H,
-        box_size=12,
+        box_size=14,
         border=4,
     )
     qr.add_data(URL)
@@ -98,43 +95,46 @@ def build_card(qr_img: Image.Image, variant: dict[str, str], number: int) -> Ima
     card_draw = ImageDraw.Draw(card)
     card_draw.rounded_rectangle((40, 40, 1040, 1040), radius=56, fill=INK, outline=VOLT, width=3)
 
-    # Retícula mínima: evoca medición sin competir con el QR ni el copy.
-    for x in range(94, 1000, 44):
-        card_draw.line((x, 86, x, 995), fill=(200, 240, 0, 10), width=1)
-    for y in range(104, 995, 44):
-        card_draw.line((86, y, 995, y), fill=(200, 240, 0, 8), width=1)
+    # La tarjeta funciona como un cartel a distancia: sólo quedan un número grande, un titular
+    # grande, el QR y una instrucción. Se eliminan marca secundaria, bajada y microcopy porque
+    # se volvían ilegibles al lado del avatar y competían con el código.
+    card_draw.rounded_rectangle((78, 78, 158, 158), radius=22, fill=VOLT)
+    card_draw.text((118, 118), variant["number"], font=font(FONT_BODY_BOLD, 42), fill=INK, anchor="mm")
 
-    card_draw.ellipse((78, 78, 98, 98), fill=VOLT)
-    body = font(FONT_BODY_BOLD, 22)
-    body_regular = font(FONT_BODY, 20)
-    display = font(FONT_DISPLAY_BOLD, 78 if number != 2 else 66)
-    eyebrow = font(FONT_BODY_BOLD, 25)
-    footer = font(FONT_BODY_BOLD, 22)
-
-    card_draw.text((116, 76), "CLAUDIO MENDOZA", font=body, fill=PAPER)
-    card_draw.text((116, 106), "ENERGÍA EN CASA", font=body_regular, fill=MUTED)
-    card_draw.text((800, 82), variant["eyebrow"], font=eyebrow, fill=VOLT, anchor="ra")
-
+    display_size = 84 if number != 2 else 76
+    display = font(FONT_DISPLAY_BOLD, display_size)
+    footer = font(FONT_BODY_BOLD, 34)
     title = variant["title"]
     bbox = text_box(card_draw, title, display)
     title_h = bbox[3] - bbox[1]
-    card_draw.multiline_text((92, 164), title, font=display, fill=PAPER, spacing=-5)
-    title_bottom = 164 + title_h
-    card_draw.rounded_rectangle((92, title_bottom + 22, 988, title_bottom + 29), radius=3, fill=VOLT)
-    card_draw.multiline_text((92, title_bottom + 52), variant["subtitle"], font=font(FONT_BODY, 31), fill=MUTED, spacing=4)
+    card_draw.multiline_text((92, 166), title, font=display, fill=PAPER, spacing=-7)
+    title_bottom = 166 + title_h
+    card_draw.rounded_rectangle((92, title_bottom + 22, 988, title_bottom + 31), radius=4, fill=VOLT)
 
-    # El panel claro mantiene el quiet zone del QR y lo hace legible sobre cualquier b-roll.
+    # Placa clara amplia: conserva la zona tranquila y deja módulos suficientemente grandes en
+    # pantalla. El QR no comparte espacio con ningún texto ni elemento decorativo.
     qr_size = max(qr_img.size)
-    frame_left = (W - qr_size) // 2 - 28
-    frame_top = 410
-    frame_right = frame_left + qr_size + 56
-    frame_bottom = frame_top + qr_size + 56
-    card_draw.rounded_rectangle((frame_left, frame_top, frame_right, frame_bottom), radius=32, fill=PAPER)
-    card_draw.rounded_rectangle((frame_left - 10, frame_top - 10, frame_right + 10, frame_bottom + 10), radius=42, outline=(200, 240, 0, 130), width=2)
-    card.alpha_composite(qr_img.convert("RGBA"), (frame_left + 28, frame_top + 28))
+    frame_left = (W - qr_size) // 2 - 22
+    frame_top = 350
+    frame_right = frame_left + qr_size + 44
+    frame_bottom = frame_top + qr_size + 44
+    card_draw.rounded_rectangle((frame_left, frame_top, frame_right, frame_bottom), radius=30, fill=PAPER)
+    card_draw.rounded_rectangle((frame_left - 12, frame_top - 12, frame_right + 12, frame_bottom + 12), radius=42, outline=(200, 240, 0, 210), width=4)
+    card.alpha_composite(qr_img.convert("RGBA"), (frame_left + 22, frame_top + 22))
 
-    card_draw.text((W // 2, frame_bottom + 24), variant["footer"], font=footer, fill=VOLT, anchor="ma")
-    card_draw.text((W // 2, frame_bottom + 55), "TODO MEDIDO · MEDIDO DE VERDAD", font=font(FONT_BODY, 18), fill=MUTED, anchor="ma")
+    # Cuatro esquinas de lectura: un gesto visual simple que llama la atención al código sin
+    # contaminar su quiet zone.
+    corner = 30
+    for x0, y0, sx, sy in (
+        (frame_left - 26, frame_top - 26, 1, 1),
+        (frame_right + 26, frame_top - 26, -1, 1),
+        (frame_left - 26, frame_bottom + 26, 1, -1),
+        (frame_right + 26, frame_bottom + 26, -1, -1),
+    ):
+        card_draw.line((x0, y0, x0 + sx * corner, y0), fill=VOLT, width=5)
+        card_draw.line((x0, y0, x0, y0 + sy * corner), fill=VOLT, width=5)
+
+    card_draw.text((W // 2, frame_bottom + 34), variant["footer"], font=footer, fill=VOLT, anchor="ma")
 
     canvas.alpha_composite(card)
     return canvas

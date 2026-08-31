@@ -7,7 +7,7 @@
 //
 // ⛔ LO QUE NO SE TOCA (cada línea costó un render en los videos anteriores del canal):
 //  · El AVATAR es el FONDO GARANTIZADO: base full SIEMPRE. El archivo ya está en bucle y a 30 fps.
-//  · UN SOLO <Audio> con el master; el <Video> del avatar va MUTEADO.
+//  · UN SOLO <Audio> con el master; el <OffthreadVideo> del avatar va MUTEADO.
 //  · UN MOVIMIENTO = UNA <Sequence> (una por acto reinicia useCurrentFrame y salta la costura).
 //  · COMPUERTA DE FPS: todo clip y el avatar a 30/1 CFR o hay TIRÓN en todo el metraje.
 //  · Los overlay (ICONO/TEXTO/CTA) van ENCIMA, no ocultan la base, y su duración sale del TEXTO.
@@ -18,20 +18,11 @@ import { execFileSync } from "node:child_process";
 const SLUG = "cmesilencio", COMP = "Cmesilencio", UP = "CMESILENCIO", PRE = "cms_";
 const FPS = 30;
 const AVATAR_FILE = "avatar_cmesilencio.mp4";
-const PLAN_DIR = "_v3/secciones_cmesilencio_v2";
+const PLAN_DIR = "_v3/secciones_cmesilencio_v3";
 
-// El orden en el que los MOVIMIENTOS aparecen en el video. Cada corrida de eventos ESCENA
-// consecutivos es UN movimiento y se lleva el nombre siguiente de esta lista.
-const MOV_NOMBRES = [
-  "MovTercios",    // S2  — de dónde sale el ruido: el escape es sólo un tercio
-  "MovNumeros",    // S4  — los tres números del ruido
-  "MovAgujero",    // S5  — masa, toalla y el agujero (la moneda cruza los 5 actos)
-  "MovDolares",    // S6  — el sellador y los tacos: 78 -> 66
-  "MovEstante",    // S8  — el estante de materiales, 6 tarjetas con material real adentro
-  "MovDieciocho",  // S14 — girar, el muro, la distancia: 78 -> 60
-];
-// (S16 el cierre NO lleva movimiento: se resuelve con las tarjetas CTA sobre el avatar.
-//  S11 tiene un solo acto de 6 s: es un puente, y el filtro de abajo lo devuelve a la capa normal.)
+// Regla editorial vigente: un plano sólo entra si nace de un evento anclado a la voz.
+// No se generan pools por sección, rellenos de huecos ni montajes largos por tema.
+// Cuando un evento no tiene un recurso que muestre sus sustantivos, queda el avatar.
 
 const FFPROBE = "C:/Users/bauti/AppData/Local/Microsoft/WinGet/Links/ffprobe.exe";
 const probe = (rel, entries) => {
@@ -59,7 +50,8 @@ const AVATAR_FRAMES = Math.max(1, Math.floor(AVATAR_S * FPS));
 const f = (ms) => Math.round((ms / 1000) * FPS);
 
 // ── entrada: los eventos de los 4 directores, en orden de sección ──────────────
-const SECS = JSON.parse(fs.readFileSync("_v3/cmesilencio_secciones.json", "utf8")).map((s) => s.sec);
+const SECTION_ROWS = JSON.parse(fs.readFileSync("_v3/cmesilencio_secciones_v3.json", "utf8"));
+const SECS = SECTION_ROWS.map((s) => s.sec);
 const EV = [];
 for (const sec of SECS) {
   const cands = [`${PLAN_DIR}/${sec}_events.json`,
@@ -88,72 +80,18 @@ const add = (rel) => { assets.add(rel); return rel; };
 if (!existe(AVATAR_FILE)) { console.error(`⛔ falta public/${AVATAR_FILE}`); process.exit(1); }
 add(AVATAR_FILE);
 
-// ── MOVIMIENTOS: los ESCENA manuales declaran el componente de kit ─────────────
-// La voz nueva ya no contiene los movimientos de gabinete cerrado del beatsheet anterior. Los
-// cuatro movimientos compatibles se declaran con `mov` en el plan v2; no se infiere un componente
-// por el orden de eventos, porque eso volvería a colar MovLaberinto/MovHorno por accidente.
-const movs = [];
-{
-  for (const e of EV) {
-    if (e.tipo === "ESCENA" && e.mov) {
-      movs.push({ sec: e.sec, ms: e.ms, fin: e.ms + (e.dur || 0) * 1000, actos: 1, mov: e.mov });
-    }
-  }
-  const porSec = new Map();
-  for (const e of EV) {
-    if (e.tipo !== "ESCENA" || e.mov) continue;
-    const g = porSec.get(e.sec) || { sec: e.sec, ms: e.ms, fin: 0, actos: 0 };
-    g.ms = Math.min(g.ms, e.ms);
-    g.fin = Math.max(g.fin, e.ms + (e.dur || 0) * 1000);
-    g.actos++;
-    porSec.set(e.sec, g);
-  }
-  // Los grupos historicos sólo se aceptan si el plan los dejó expresamente; por seguridad, un
-  // ESCENA sin `mov` de una sección nueva no se convierte en movimiento por proximidad.
-  for (const g of porSec.values()) if (g.actos >= 2 && g.fin - g.ms >= 10000) movs.push(g);
-  movs.sort((a, b) => a.ms - b.ms);
-}
-if (movs.length > MOV_NOMBRES.length && movs.some((m) => !m.mov)) {
-  console.error(`⛔ ${movs.length} movimientos detectados y el plan tiene un movimiento sin nombre.`);
-  process.exit(1);
-}
-let fallbackMov = 0;
-for (const m of movs) if (!m.mov) m.mov = MOV_NOMBRES[fallbackMov++];
-if (movs.some((m) => !m.mov)) { console.error("⛔ no hay nombre de componente para un movimiento"); process.exit(1); }
-console.log("movimientos detectados:");
-movs.forEach((m) => console.log(`   ${m.mov.padEnd(14)} ${(m.ms / 1000).toFixed(1)}s -> ${(m.fin / 1000).toFixed(1)}s  (${((m.fin - m.ms) / 1000).toFixed(1)}s, ${m.actos} actos)`));
-
 const cues = [];
-for (const m of movs) {
-  const falta = !fs.existsSync(`src/${SLUG}/${m.mov}.tsx`);
-  if (falta) { console.error(`⛔ falta src/${SLUG}/${m.mov}.tsx`); process.exit(1); }
-  cues.push({
-    key: JSON.stringify(`mv_${m.mov}`), start: f(m.ms), dur: Math.round(((m.fin - m.ms) / 1000) * FPS),
-    capa: "base", el: `<${m.mov} acto={0} gFrame={_frame - ${f(m.ms)}} />`,
-  });
-}
-const movsUsados = movs.map((m) => m.mov);
-
-// ⛔ Un micro-momento DENTRO del tramo de un movimiento lo partiría en dos (el tileo recorta cada
-// cue al arranque del siguiente). Los que pisan un movimiento se descartan de la capa base; los
-// overlay no, que flotan encima sin robar tiempo.
-const tramos = movs.map((m) => [m.ms, m.fin]);
-const pisaMov = (ms) => tramos.some(([a, b]) => ms >= a - 200 && ms < b - 200);
-const OVER = new Set(["ICONO", "TEXTO", "CTA"]);
 let descartados = 0;
 
-// ⛔ CAMA DE FOTO BAJO TODO COMPONENTE (regla 2.quater): sin ella, el margen del componente deja
-// ver el fondo plano — y en el tramo del bucle eso son cientos de instantes con el avatar asomando.
-// Se usa la última foto disponible antes de ese instante, que además da continuidad de lugar.
-const fotosPorMs = EV
-  .filter((e) => (e.tipo === "CLIP" || e.tipo === "FOTO") && e.nombre)
-  .map((e) => ({ ms: e.ms, rel: `img/${SLUG}/${e.nombre}.jpg` }))
-  .filter((x) => existe(x.rel))
-  .sort((a, b) => a.ms - b.ms);
-const camaDe = (ms) => {
-  let r = null;
-  for (const x of fotosPorMs) { if (x.ms > ms) break; r = x.rel; }
-  return r || (fotosPorMs[0] ? fotosPorMs[0].rel : null);
+const visualAudit = [];
+const photoForEvent = (e) => {
+  const candidates = [];
+  if (e.asset) candidates.push(e.asset);
+  if (e.nombre) {
+    candidates.push(`img/${SLUG}/${e.nombre}.jpg`);
+    candidates.push(`img/${SLUG}/${e.nombre}.png`);
+  }
+  return candidates.find(existe) || null;
 };
 
 // tiempo de lectura: piso = 2,0 s (overlay) + 0,28 s por palabra sobre 3
@@ -166,22 +104,35 @@ for (const e of EV) {
   if (e.tipo === "ESCENA") continue;
   const start = f(e.ms);
   const K = JSON.stringify(e.id);
-  if (!OVER.has(e.tipo) && pisaMov(e.ms)) { descartados++; continue; }
 
   if (e.tipo === "CLIP" || e.tipo === "T2V") {
     const r = `broll/${SLUG}/${e.nombre}.mp4`;
-    if (!existe(r)) { faltan.push(r); continue; }
+    if (!existe(r)) {
+      visualAudit.push({ sec: e.sec, id: e.id, tipo: e.tipo, ms: e.ms, dur: e.dur,
+        dice: e.dice || e.texto || "", asset: r, decision: "avatar: no existe recurso exacto" });
+      console.warn(`visual exacto ausente: ${e.id} · queda Claudio (${r})`);
+      continue;
+    }
     add(r);
     const real = durDe(r);
     const cov = Math.max(2, Math.round(Math.min(e.dur, real - 0.1) * FPS));
     cues.push({ key: K, start, dur: cov, capa: "base", el: `<Clip src=${JSON.stringify(r)} />` });
+    visualAudit.push({ sec: e.sec, id: e.id, tipo: e.tipo, ms: e.ms, dur: e.dur,
+      dice: e.dice || e.texto || "", asset: r, decision: "plano directo anclado" });
 
   } else if (e.tipo === "FOTO") {
-    const r = `img/${SLUG}/${e.nombre}.jpg`;
-    if (!existe(r)) { faltan.push(r); continue; }
+    const r = photoForEvent(e);
+    if (!r) {
+      visualAudit.push({ sec: e.sec, id: e.id, tipo: e.tipo, ms: e.ms, dur: e.dur,
+        dice: e.dice || e.texto || "", asset: null, decision: "avatar: no existe foto exacta" });
+      console.warn(`foto exacta ausente: ${e.id} · queda Claudio`);
+      continue;
+    }
     add(r);
     cues.push({ key: K, start, dur: Math.max(2, Math.round(e.dur * FPS)), capa: "base",
       el: `<Foto src=${JSON.stringify(r)} seed={${start}} />` });
+    visualAudit.push({ sec: e.sec, id: e.id, tipo: e.tipo, ms: e.ms, dur: e.dur,
+      dice: e.dice || e.texto || "", asset: r, decision: "foto directa anclada" });
 
   } else if (e.tipo === "LAMINA") {
     // ⛔ REGLA DE HONESTIDAD: `Lamina` sólo para páginas que EXISTEN de verdad en la guía. Un dato
@@ -192,16 +143,12 @@ for (const e of EV) {
     if (r) {
       if (!existe(r)) { faltan.push(r); continue; }
       add(r);
-      const bed = camaDe(e.ms);
-      if (bed) add(bed);
       cues.push({ key: K, start, dur, capa: "base",
-        el: `<Lamina src=${JSON.stringify(r)} ${bed ? `bed=${JSON.stringify(bed)} ` : ""}` +
+        el: `<Lamina src=${JSON.stringify(r)} ` +
             `rotulo={${JSON.stringify(e.texto || "")}} />` });
     } else {
-      const bed = camaDe(e.ms);
-      if (bed) add(bed);
       cues.push({ key: K, start, dur, capa: "base",
-        el: `<Ficha texto={${JSON.stringify(e.texto || "")}} ${bed ? `bed=${JSON.stringify(bed)}` : ""} />` });
+        el: `<Ficha texto={${JSON.stringify(e.texto || "")}} />` });
     }
 
   } else if (e.tipo === "ICONO") {
@@ -222,7 +169,26 @@ for (const e of EV) {
     if (!existe(r)) { faltan.push(r); continue; }
     add(r);
     cues.push({ key: K, start, dur: Math.max(Math.round(e.dur * FPS), pisoLectura(e.texto, false)),
-      capa: "over", el: `<Cta src=${JSON.stringify(r)} texto={${JSON.stringify(e.texto || "")}} />` });
+      capa: "over", el: `<Cta src=${JSON.stringify(r)} />` });
+  }
+}
+
+// Apertura anclada a las palabras “caja”, “20 dólares”, “generador” y “funciona”.
+// Es un único plano diurno del patio realista de Claudio; no se recicla como relleno.
+{
+  const rel = "img/cmesilencio_v6/v6_opening_daylight.jpg";
+  const startMs = 580;
+  const endMs = 5880;
+  if (existe(rel)) {
+    add(rel);
+    cues.push({ key: JSON.stringify("opening_exact_box_generator"), start: f(startMs),
+      dur: Math.max(2, f(endMs) - f(startMs)), capa: "base",
+      el: `<Foto src=${JSON.stringify(rel)} seed={${f(startMs)}} />` });
+    visualAudit.push({ sec: "S1_HOOK", id: "opening_exact_box_generator", tipo: "FOTO", ms: startMs,
+      dur: (endMs - startMs) / 1000, dice: "caja de 20 dólares que silencia un generador y funciona",
+      asset: rel, decision: "plano directo anclado a la apertura" });
+  } else {
+    console.warn(`foto exacta ausente: apertura · queda Claudio (${rel})`);
   }
 }
 
@@ -249,85 +215,44 @@ if (faltan.length) {
   console.log(`fps ✓ ${[...assets].filter((a) => a.endsWith(".mp4")).length} clips + el avatar a ${FPS}/1 CFR`);
 }
 
-// ── TILEO DE LA CAPA BASE ──────────────────────────────────────────────────────
-// La apertura queda limpia para Claudio: los primeros 2 s son avatar full-frame,
-// sin cama de foto ni overlay. Después empieza el relleno visual del montaje.
-const LOOP_F = Math.round(2 * FPS);
-const TOPE_ESTIRO = Math.round(6.5 * FPS);
+// ── ORDEN DE LA CAPA BASE ──────────────────────────────────────────────────────
+// La duración de cada plano sigue su evento de voz. No se estira para tapar huecos:
+// un hueco significa que vuelve Claudio, porque no hay material exacto para esa frase.
 let base = cues.filter((c) => c.capa === "base").sort((a, b) => a.start - b.start || a.dur - b.dur);
 
-// ⛔ EL PLANO APLASTADO: dos momentos a 1,5 s de distancia dejan al primero en 1,5 s. No se arregla
-// estirando (el tileo recorta igual): se arregla SACANDO el que aplasta. Un MOVIMIENTO nunca se saca.
+// Dos eventos base en el mismo instante son alternativas del mismo anclaje, no dos capas.
+// Conservamos el primero y evitamos que uno tape silenciosamente al otro.
 {
-  const PISO = Math.round(2.4 * FPS);
   const out = [];
   let borrados = 0;
   for (const c of base) {
     const prev = out[out.length - 1];
-    const esMov = /^mv_/.test(JSON.parse(c.key));
-    if (prev && !esMov && c.start - prev.start < PISO) { borrados++; continue; }
+    if (prev && c.start === prev.start) { borrados++; continue; }
     out.push(c);
   }
-  console.log(`planos aplastados descartados: ${borrados} (piso ${(PISO / FPS).toFixed(1)}s entre arranques)`);
+  console.log(`alternativas base en el mismo anclaje descartadas: ${borrados}`);
   base = out;
   const keep = new Set(base.map((c) => c.key));
   for (let i = cues.length - 1; i >= 0; i--) if (cues[i].capa === "base" && !keep.has(cues[i].key)) cues.splice(i, 1);
 }
 
-let recort = 0, recortF = 0, estir = 0, estirF = 0, micro = 0;
+let recort = 0, recortF = 0;
 for (let i = 0; i < base.length; i++) {
   const sig = i + 1 < base.length ? base[i + 1].start : TOTAL_FRAMES;
   const fin = base[i].start + base[i].dur;
   if (fin > sig) { recortF += fin - sig; recort++; base[i].dur = Math.max(2, sig - base[i].start); }
-  else if (fin < sig && base[i].start >= LOOP_F) {
-    const h = sig - fin;
-    if (h <= TOPE_ESTIRO) { estirF += h; estir++; base[i].dur = sig - base[i].start; }
-  } else if (fin < sig && sig - fin <= 2) { micro++; base[i].dur = sig - base[i].start; }
 }
 console.log(`tileo: ${recort} recortados (-${(recortF / FPS).toFixed(1)}s de solape) · ` +
-  `${estir} estirados post-bucle (+${(estirF / FPS).toFixed(1)}s) · ${micro} destellos de 1-2 frames cerrados`);
+  `sin estirar planos para llenar huecos`);
 
-// ── RELLENO ANTI-HUECO POST-BUCLE ────────────────────────────────────────────────
-// ⛔ Después del bucle el lipsync YA NO VALE: cada instante sin contenido encima es un plano del
-// avatar con la boca desfasada. Y hay tramos que son casi todos OVERLAY —el cierre tiene 9 tarjetas
-// de CTA y sólo 10 cues de base para 113 s— porque el QR va flotando AL LADO del avatar hablando,
-// que es la regla del canal. El overlay flota, no cubre: el hueco queda igual.
-// Se rellena con la FOTO más cercana de ese tramo (Ken-Burns), partiendo los huecos largos en
-// varias fotos para que no quede un plano clavado de 39 s.
+// Pregunta real del tramo S3: 06:42.20 en el transcript del WAV híbrido.
+// Es un detalle editorial, no un subtítulo: entra como tarjeta de cuaderno y se retira antes de
+// que empiece la explicación de la guía.
 {
-  const PISO_HUECO = Math.round(1.5 * FPS);
-  const TROZO = Math.round(5.5 * FPS);
-  const ocupado = new Uint8Array(TOTAL_FRAMES);
-  for (const c of base) for (let x = c.start; x < Math.min(TOTAL_FRAMES, c.start + c.dur); x++) ocupado[x] = 1;
-
-  const nuevos = [];
-  let ini = -1;
-  for (let x = LOOP_F; x <= TOTAL_FRAMES; x++) {
-    const libre = x < TOTAL_FRAMES && !ocupado[x];
-    if (libre && ini < 0) ini = x;
-    if ((!libre || x === TOTAL_FRAMES) && ini >= 0) {
-      const largo = x - ini;
-      if (largo >= PISO_HUECO) {
-        const trozos = Math.max(1, Math.round(largo / TROZO));
-        const paso = Math.floor(largo / trozos);
-        for (let k = 0; k < trozos; k++) {
-          const a = ini + k * paso;
-          const d = k === trozos - 1 ? x - a : paso;
-          const rel = camaDe(Math.round((a / FPS) * 1000));
-          if (!rel) continue;
-          add(rel);
-          nuevos.push({ key: JSON.stringify(`fill_${a}`), start: a, dur: Math.max(2, d), capa: "base",
-            el: `<Foto src=${JSON.stringify(rel)} seed={${a}} />` });
-        }
-      }
-      ini = -1;
-    }
-  }
-  if (nuevos.length) {
-    cues.push(...nuevos);
-    base = base.concat(nuevos).sort((a, b) => a.start - b.start);
-    console.log(`relleno post-bucle: ${nuevos.length} fotos insertadas para tapar huecos donde el lipsync ya no vale`);
-  }
+  const start = f(402200);
+  const dur = Math.round(4.5 * FPS);
+  cues.push({ key: JSON.stringify("manual_question_outage"), start, dur, capa: "over",
+    el: `<TypewriterCard duration={${dur}} />` });
 }
 
 // ── RÓTULOS QUE SE PISAN ───────────────────────────────────
@@ -352,14 +277,15 @@ console.log(`tileo: ${recort} recortados (-${(recortF / FPS).toFixed(1)}s de sol
   console.log(`rótulos recortados para que no se pisen: ${cortados} de ${rot.length}`);
 }
 
-// ── COBERTURA (el anti-hueco da 0 siempre porque el avatar es el piso: se mide aparte) ──
+// ── COBERTURA ──────────────────────────────────────────────────────────────────
+// La cobertura parcial es intencional: el avatar permanece debajo y ocupa exactamente los
+// momentos en los que no existe un plano que muestre lo que se está diciendo.
 {
   const ocupado = new Uint8Array(TOTAL_FRAMES);
   for (const c of base) for (let x = c.start; x < Math.min(TOTAL_FRAMES, c.start + c.dur); x++) ocupado[x] = 1;
-  let cub = 0, cubPost = 0, totPost = 0;
+  let cub = 0;
   for (let x = 0; x < TOTAL_FRAMES; x++) {
     cub += ocupado[x];
-    if (x >= LOOP_F) { totPost++; cubPost += ocupado[x]; }
   }
   const huecos = [];
   let ini = -1;
@@ -370,8 +296,7 @@ console.log(`tileo: ${recort} recortados (-${(recortF / FPS).toFixed(1)}s de sol
       ini = -1;
     }
   }
-  console.log(`cobertura: ${(100 * cub / TOTAL_FRAMES).toFixed(1)}% global · ` +
-    `${(100 * cubPost / totPost).toFixed(1)}% DESPUÉS del bucle (tiene que ser ~100)`);
+  console.log(`cobertura: ${(100 * cub / TOTAL_FRAMES).toFixed(1)}% con plano directo · el resto queda en Claudio`);
   console.log(`huecos >=4s: ${huecos.length}`);
   huecos.slice(0, 14).forEach(([s, d]) =>
     console.log(`   hueco ${Math.floor(s / 60)}:${(s % 60).toFixed(0).padStart(2, "0")} de ${d.toFixed(1)}s` +
@@ -390,8 +315,9 @@ console.log(`tileo: ${recort} recortados (-${(recortF / FPS).toFixed(1)}s de sol
 }
 
 // ── cues_<slug>.gen.tsx ────────────────────────────────────────────────────────
-const imports = movsUsados.map((m) => `import { ${m} } from "./${m}";`).join("\n");
-const piezasUsadas = ["Clip", "Foto", "IconoNum", "Rotulo", "Cta", "Ficha"];
+const imports = "";
+const piezasUsadas = ["Clip", "Foto", "IconoNum", "Rotulo", "Cta", "Ficha", "TypewriterCard"];
+if (cues.some((c) => /<GuideBoard\b/.test(c.el))) piezasUsadas.push("GuideBoard");
 if (cues.some((c) => /<Lamina\b/.test(c.el))) piezasUsadas.splice(3, 0, "Lamina");
 fs.writeFileSync(`src/${SLUG}/cues_${SLUG}.gen.tsx`,
 `// cues_${SLUG}.gen.tsx — GENERADO por build_${SLUG}.mjs. NO editar a mano.
@@ -413,7 +339,7 @@ ${cues.sort((a, b) => a.start - b.start).map((c) => {
 fs.writeFileSync(`src/${SLUG}/Main_${SLUG}.tsx`,
 `// Main_${SLUG}.tsx — GENERADO por build_${SLUG}.mjs. NO editar a mano.
 import React from "react";
-import { AbsoluteFill, Audio, Loop, Sequence, Video, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Loop, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { CUES_${UP} } from "./cues_${SLUG}.gen";
 
 export const TOTAL_FRAMES_${UP} = ${TOTAL_FRAMES};
@@ -432,7 +358,7 @@ const AvatarPiso: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: "#0A0B08", overflow: "hidden" }}>
       <Loop durationInFrames={${AVATAR_FRAMES}}>
-        <Video src={staticFile("${AVATAR_FILE}")} muted style={est} />
+        <OffthreadVideo src={staticFile("${AVATAR_FILE}")} muted style={est} />
       </Loop>
     </AbsoluteFill>
   );
@@ -475,8 +401,10 @@ registerRoot(Root${COMP});
 // así que sin esto el tar sale corto y CADA chunk que monte un movimiento muere con 404 — y el error
 // MIENTE ("EncodingError: source image cannot be decoded"). Hay que sacar los comentarios primero:
 // un comentario que dice "nunca uses img/x.png" NO es una referencia.
-let deMovs = 0;
-for (const fn of fs.readdirSync(`src/${SLUG}`).filter((n) => n.endsWith(".tsx"))) {
+let deComponentes = 0;
+// Sólo se escanea la pieza activa. Los montajes viejos permanecen como historial y no pueden
+// volver al tar ni al render por accidente.
+for (const fn of fs.readdirSync(`src/${SLUG}`).filter((n) => n === "Piezas.tsx")) {
   const crudo = fs.readFileSync(path.join("src", SLUG, fn), "utf8");
   const src = crudo
     .replace(/\{\/\*[\s\S]*?\*\/\}/g, " ")
@@ -486,29 +414,15 @@ for (const fn of fs.readdirSync(`src/${SLUG}`).filter((n) => n.endsWith(".tsx"))
   for (const m of src.matchAll(/["'`]((?:broll|img|sfx|med)\/[^"'`\s]+\.(?:mp4|png|jpg|jpeg|webm|mp3|wav))["'`]/g)) {
     const r = m[1];
     if (!existe(r)) { console.error(`⛔ ${fn}: NO EXISTE public/${r}`); if (!process.env.SIN_ASSETS) process.exit(1); continue; }
-    if (!assets.has(r)) { assets.add(r); deMovs++; }
+    if (r.startsWith("img/cmesilencio_v3/")) continue;
+    if (!assets.has(r)) { assets.add(r); deComponentes++; }
   }
   for (const m of src.matchAll(/`[^`]*(?:broll|img)\/[^`]*\$\{/g)) {
     console.error(`⛔ ${fn}: ruta por TEMPLATE LITERAL, el tar no la empaqueta: ${m[0].slice(0, 60)}`);
     process.exit(1);
   }
 }
-console.log(`assets extra tomados de los Mov*.tsx: ${deMovs}`);
-
-// ── RED DE SEGURIDAD: todas las imágenes del slug viajan (pesan poco y evitan el 404) ──
-// ⛔ SOLO .jpg y los PNG que de verdad necesitan alfa (iconos + QR): los PNG de las fotos pesan 10×
-// y llevan el tar a donde el upload se corta y el release queda EN BORRADOR.
-if (fs.existsSync(`public/img/${SLUG}`)) {
-  for (const n of fs.readdirSync(`public/img/${SLUG}`)) {
-    if (/_blur\.jpg$/i.test(n)) continue;
-    const alfa = n.startsWith(`${PRE}ic_`) || n.startsWith(`${PRE}qr`);
-    if (/\.jpg$/i.test(n) || (alfa && /\.png$/i.test(n))) assets.add(`img/${SLUG}/${n}`);
-  }
-}
-for (const n of fs.readdirSync("public/img")) {
-  if (!n.startsWith(PRE) || /_blur\.jpg$/i.test(n)) continue;
-  if (/\.jpg$/i.test(n) || /^cms_(ic_|qr)/.test(n)) assets.add(`img/${n}`);
-}
+console.log(`assets extra tomados de las piezas activas: ${deComponentes}`);
 
 // ── lista de assets para el tar del farm (+ los _blur de cada imagen) ───────────
 const lista = [...assets].sort();
@@ -525,7 +439,17 @@ for (const a of lista) {
 if (sinBlur.length) console.log(`⚠️ ${sinBlur.length} imágenes sin _blur.jpg — corré \`node preblur.mjs\` antes de farmear`);
 fs.writeFileSync(`_${SLUG}_assets.txt`, conBlur.join("\n") + "\n");
 
-console.log(`cues ${cues.length} (base ${base.length} · over ${cues.length - base.length}) · ${descartados} momentos descartados por pisar un movimiento`);
-console.log(`movimientos: ${movsUsados.length} · eventos: ${EV.length}`);
+fs.writeFileSync(`_${SLUG}_visual_audit.json`, JSON.stringify({
+  rule: "Cada plano nace de un evento anclado a la voz; sin pools ni rellenos temáticos.",
+  items: visualAudit,
+}, null, 2) + "\n");
+
+if (cues.some((c) => /fill_|extra_clip_|extra_photo_|mv_/.test(c.key))) {
+  console.error("⛔ apareció un cue automático o un movimiento no anclado");
+  process.exit(1);
+}
+
+console.log(`cues ${cues.length} (base ${base.length} · over ${cues.length - base.length}) · ${descartados} descartados`);
+console.log(`movimientos automáticos: 0 · eventos: ${EV.length}`);
 console.log(`assets: ${assets.size} (+blur = ${conBlur.length})`);
 console.log(`duración: ${TOTAL_FRAMES} frames = ${(TOTAL_FRAMES / FPS / 60).toFixed(2)} min (wav ${WAV_S.toFixed(2)}s)`);

@@ -1,9 +1,9 @@
 // Main_cmesilencio.tsx — GENERADO por build_cmesilencio.mjs. NO editar a mano.
 import React from "react";
-import { AbsoluteFill, Audio, Loop, Sequence, Video, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Loop, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { CUES_CMESILENCIO } from "./cues_cmesilencio.gen";
 
-export const TOTAL_FRAMES_CMESILENCIO = 48835;
+export const TOTAL_FRAMES_CMESILENCIO = 44242;
 
 /** El avatar es el FONDO GARANTIZADO. Va MUTEADO: el audio sale del master.
  *  El archivo visual ya contiene el bucle completo y está a 30 fps.
@@ -19,7 +19,7 @@ const AvatarPiso: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: "#0A0B08", overflow: "hidden" }}>
       <Loop durationInFrames={48813}>
-        <Video src={staticFile("avatar_cmesilencio.mp4")} muted style={est} />
+        <OffthreadVideo src={staticFile("avatar_cmesilencio.mp4")} muted style={est} />
       </Loop>
     </AbsoluteFill>
   );

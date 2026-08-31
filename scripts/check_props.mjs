@@ -188,7 +188,22 @@ const CONTRACT = {
   hourdial:      { req: ["hour"], numeric: ["hour"] },
   nametag:       { assets: ["image"] },
   guardaesto:    { req: ["items"], arrayOfString: ["items"] },
-  avatarpizarra: { req: ["items"], itemKey: { items: "card" } },
+  avatarpizarra: { req: ["items"], itemKey: { items: "card|image" } },
+  // ⛔ los 12 kinds que antes salian "sin contrato declarado" y por eso NO se validaban.
+  //    Ahi vivia el bug de pizarraexplica: emitia items:[{t}] y la escena lee it.title,
+  //    => 5 tarjetas x ~13 s con las lineas VACIAS y ninguna compuerta lo vio.
+  pizarraexplica:   { req: ["title", "items"], itemKey: { items: "title" } },
+  listaflotante:    { req: ["items"], itemKey: { items: "text" } },
+  comparaprof:      { req: ["bars"], itemKey: { bars: "label" } },
+  skinlayer:        { req: ["stages"], itemKey: { stages: "label" } },
+  splitcompare:     { req: ["left", "right"] },
+  reprintscan:      { req: ["image"], assets: ["image"] },
+  barcompare:       { req: ["bars"], itemKey: { bars: "label" } },
+  checklisterrores: { req: ["items"], arrayOfString: ["items"] },
+  datoimpacto:      { req: ["figure"] },
+  whynight:         { req: ["dayTitle", "nightTitle"] },
+  relojnoche:       { req: ["marks"], itemKey: { marks: "label" } },
+  pizarraglicacion: {},
   mitoverdad:    { req: ["myth", "truth"] },   // _fed6/scenes/MitoVerdad.tsx usa myth/truth (el contrato viejo en ES era de otro kit)
   quote:         { req: ["text"] },
   callout:       { req: ["caption"] },
@@ -196,6 +211,13 @@ const CONTRACT = {
   lowerthird:    { req: ["title"] },
   errorstinger:  { req: ["title"] },
   // ── escenas PREMIUM de _fed6 (fcssenales): anillo 3D, profundidad, mecanismos ──
+  // ── contratos que FALTABAN y dejaron pasar `undefined was passed to staticFile()` (parpados60):
+  //    los 5 kinds sin contrato eran justo donde vivia la familia de bugs.
+  benefitlock:   { req: ["cards"], itemKey: { cards: "label" }, itemAssets: { cards: "img" } },
+  avatarkeyword: { req: ["items"], itemKey: { items: "word" } },
+  highlightdata: { req: ["highlight"] },
+  citationcard:  { req: ["finding"], numeric: ["stat"] },
+  carousel:      { req: ["cards"], itemKey: { cards: "name" }, itemAssets: { cards: "image" } },
   ring3d:        { req: ["cards", "focus"], itemKey: { cards: "name" }, itemAssets: { cards: "image" }, assets: ["bed"] },
   triptych:      { req: ["items"], itemKey: { items: "caption" }, itemAssets: { items: "image" }, assets: ["bed"] },
   depthphoto:    { req: ["image"], assets: ["image", "bed"] },
@@ -234,9 +256,13 @@ for (const b of beats) {
       errs.push(`${at}: \`${k}\` debe ser string[] (le pasaste objetos) -> React error #31`);
   }
   for (const [k, key] of Object.entries(c.itemKey || {})) {
+    // la clave puede ser ALTERNATIVA: "card|image" = alcanza con una de las dos.
+    // (AvatarPizarra: `isCard = !item.image && !!item.card` -> una lamina con `image`+`caption`
+    //  renderiza imagen enmarcada + texto, NO sale vacia. Exigir `card` siempre era falso positivo.)
+    const alts = String(key).split("|");
     for (const [i, it] of (b[k] || []).entries()) {
-      if (it && typeof it === "object" && !has(it[key]))
-        errs.push(`${at}: \`${k}[${i}]\` no tiene \`${key}\` -> el componente sale VACIO y el chunk pasa en VERDE`);
+      if (it && typeof it === "object" && !alts.some((a) => has(it[a])))
+        errs.push(`${at}: \`${k}[${i}]\` no tiene ${alts.map((a) => "\`" + a + "\`").join(" ni ")} -> el componente sale VACIO y el chunk pasa en VERDE`);
     }
   }
   for (const k of c.assets || []) {

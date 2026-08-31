@@ -25,7 +25,8 @@ const usos = [
 if (!usos.length) { console.log("no hay componentes con props en el plan"); process.exit(0); }
 
 // buscar el archivo donde vive cada componente
-const roots = ["src/VideoEdit/kit/premium", "src/VideoEdit/kit", "src/peroxide", "src/VideoEdit/scenes"];
+const roots = ["src/VideoEdit/kit/premium", "src/VideoEdit/kit", "src/peroxide", "src/VideoEdit/scenes",
+  "src/_fed6/VideoEdit/scenes", "src/_fed6/VideoEdit", "src"];   // + el kit _fed6 (Federer), que faltaba
 const files = [];
 const walk = (d) => {
   if (!fs.existsSync(d)) return;

@@ -124,8 +124,8 @@ if (hayCues) {
   try {
     const cs = readFileSync(cuesPath, "utf8");
     const arr = (re) => { const m = cs.match(re); return m ? JSON.parse(m[1]) : null; };
-    let bts = arr(/CP_BEATS[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z_]+_BEATS[^=]*=\s*(\[[\s\S]*?\]);/);
-    let brl = arr(/CP_BROLL[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z_]+_BROLL[^=]*=\s*(\[[\s\S]*?\]);/);
+    let bts = arr(/CP_BEATS[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z0-9_]+_BEATS[^=]*=\s*(\[[\s\S]*?\]);/);
+    let brl = arr(/CP_BROLL[^=]*=\s*(\[[\s\S]*?\]);/) || arr(/[A-Z0-9_]+_BROLL[^=]*=\s*(\[[\s\S]*?\]);/);
     // Variante de UN SOLO array: `export const BEATS: Cue[] = [...]` con componentes y b-roll
     // mezclados y separados por `kind` (kits por canal: valeria, _fed6...). Sin esto el gate
     // cae al conteo por JSX y ve los casos del switch, no los usos reales.
@@ -309,8 +309,14 @@ let tramos = null, tramoReal = false;
     tramos = Array.from({ length: NB }, () => new Set());
     let k = 0;
     for (const m of cs.matchAll(/<([A-Z][A-Za-z0-9]*)\b/g)) {
-      const n = m[1];
+      let n = m[1];
       if (FRAMEWORK.has(n) || ESTRUCTURA.has(n) || TOMAS.has(n)) continue;
+      // UN WRAPPER PUEDE SER MUCHOS COMPONENTES: <VoltPop e={{"kind":"numberpop"...}}/> dibuja
+      // nueve cosas visualmente distintas (numberpop, chip, meterjump, cross, arrowup, qrfloat,
+      // whitebeat, costfly, splitprice). Contarlas como UNA daba TRAMOS PELADOS en un video con
+      // 8-12 elementos distintos por tramo. Se cuenta por `kind`, que es lo que ve el espectador.
+      const kk = cs.slice(m.index, m.index + 400).match(/"kind"\s*:\s*"([a-z0-9_]+)"/);
+      if (kk) n = n + ":" + kk[1];
       while (k + 1 < marcas.length && marcas[k + 1].i < m.index) k++;
       while (k > 0 && marcas[k].i > m.index) k--;
       tramos[Math.min(NB - 1, Math.floor((marcas[k].t / fin) * NB))].add(n);

@@ -104,7 +104,9 @@ const one = async (it) => {
         ratio: it.ratio || "16:9",
       };
       if (images.length) body.extra_body = { image: images, response_format: "b64_json" };
-      else body.extra_body = { response_format: "b64_json" };
+      // ⛔ COMPUERTA 0.bis: SIN referencia, `b64_json` no contesta NUNCA (se cuelga hasta
+      // agotar los intentos y el item muere en silencio). Sin imagen va `url`.
+      else body.extra_body = { response_format: "url" };
 
       const r = await fetch(`${BASE}/images/generations`, {
         method: "POST",

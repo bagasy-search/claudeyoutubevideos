@@ -1,5 +1,7 @@
 import "./index.css";
 import { MainCondensa, TOTAL_FRAMES_CONDENSA } from "./VideoEdit/Main_condensa";
+import { MainFedguante, TOTAL_FRAMES_FEDGUANTE } from "./_fed6/VideoEdit/Main_fedguante";
+import { MainMohotecho, TOTAL_FRAMES_MOHOTECHO } from "./VideoEdit/Main_mohotecho";
 import { MainCmesilencio, TOTAL_FRAMES_CMESILENCIO } from "./cmesilencio/Main_cmesilencio";
 import { Composition } from "remotion";
 import { RosemaryHero } from "./valeria/RosemaryHero";
@@ -187,6 +189,7 @@ import { ValKitReel, VAL_REEL_F } from "./valeria/ValeriaKit";
 import { MainGrvaseline, TOTAL_FRAMES_GRVASELINE } from "./_fed6/VideoEdit/Main_grvaseline";
 import { MainFcsvarices, TOTAL_FRAMES_FCSVARICES } from "./_fed6/VideoEdit/Main_fcsvarices";
 import { MainFcsaguapiel, TOTAL_FRAMES_FCSAGUAPIEL } from "./_fed6/VideoEdit/Main_fcsaguapiel";
+import { MainFedagua60, TOTAL_FRAMES_FEDAGUA60 } from "./_fed6/VideoEdit/Main_fedagua60";
 import { MainFcsdeterioro, TOTAL_FRAMES_FCSDETERIORO } from "./_fed6/VideoEdit/Main_fcsdeterioro";
 
 // ── SOLO los videos ACTIVOS quedan registrados ──
@@ -204,6 +207,7 @@ export const RemotionRoot: React.FC = () => {
       {/* CLAUDIO YODER · dos metales baratos contra ratones (EN) · avatar 11:01 en bucle + kit MouseKit */}
       <Composition id="Fcsvarices" component={MainFcsvarices} durationInFrames={TOTAL_FRAMES_FCSVARICES} fps={30} width={1920} height={1080} />
       <Composition id="Fcsaguapiel" component={MainFcsaguapiel} durationInFrames={TOTAL_FRAMES_FCSAGUAPIEL} fps={30} width={1920} height={1080} />
+      <Composition id="Fedagua60" component={MainFedagua60} durationInFrames={TOTAL_FRAMES_FEDAGUA60} fps={30} width={1920} height={1080} />
       <Composition id="Cymouse" component={MainCymouse} durationInFrames={TOTAL_FRAMES_CYMOUSE} fps={30} width={1920} height={1080} />
       <Composition id="Warmpart5" component={MainWarmpart5} durationInFrames={TOTAL_FRAMES_WARMPART5} fps={30} width={1920} height={1080} />
       {/* CLAUDIO YODER · Amish oil lamp / power outage (EN) · avatar + 72 imgs gpt-image-2 + 28 stock + kit premium */}
@@ -750,6 +754,10 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="Fcsdeterioro" component={MainFcsdeterioro} durationInFrames={TOTAL_FRAMES_FCSDETERIORO} fps={30} width={1920} height={1080} />
         <Composition id="Condensa" component={MainCondensa} durationInFrames={TOTAL_FRAMES_CONDENSA} fps={30} width={1920} height={1080} />
         <Composition id="Cmesilencio" component={MainCmesilencio} durationInFrames={TOTAL_FRAMES_CMESILENCIO} fps={30} width={1920} height={1080} />
+        {/* Federer Archivos — "Truco del GUANTE de Romero" · avatar PARCIAL 18:49 + BUCLE
+            + cola de Fish · master 55:42 · b-roll agnes (i2v, animacion leve de la foto) */}
+        <Composition id="Fedguante" component={MainFedguante} durationInFrames={TOTAL_FRAMES_FEDGUANTE} fps={30} width={1920} height={1080} />
+        <Composition id="Mohotecho" component={MainMohotecho} durationInFrames={TOTAL_FRAMES_MOHOTECHO} fps={30} width={1920} height={1080} />
 </>
   );
 };
