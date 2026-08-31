@@ -171,6 +171,24 @@ jobs:
           gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
           gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
             || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
+      # ⛔⛔ EL WAV MÁSTER TIENE QUE ESTAR ACÁ O EL AUDIO SALE DE LOS CHUNKS (medido 29-ago-2026).
+      # Este job NO hace checkout ni baja el tar de assets, así que el `if [ -s "public/$SLUG.wav" ]`
+      # de más abajo daba SIEMPRE falso y el audio final se tomaba de los 60 pedazos concatenados.
+      # Cada frontera de AAC agrega ~73 ms: con 60 chunks la voz termina corrida +4,4 s respecto de
+      # la imagen. No lo ve ningún chequeo de cuadros (cada cuadro está perfecto) y el reproductor
+      # lo compensa tirando y repitiendo cuadros -> se ve como "todo el video lageado".
+      # El wav lo sube el dispatcher SUELTO al release de assets, además de adentro del tar.
+      - name: traer el WAV máster (si falta, el audio se corre)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          mkdir -p public
+          gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}"             --dir public --pattern "*.wav" --clobber || true
+          if [ -s "public/${{ github.event.inputs.slug }}.wav" ]; then
+            echo "wav máster OK -> el audio final sale de él"
+          else
+            echo "::warning::sin wav máster: el audio saldrá de los chunks y quedará corrido hasta ~4 s"
+          fi
       - name: install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: concat (todos los N en orden)
