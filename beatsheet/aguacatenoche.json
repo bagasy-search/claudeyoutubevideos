@@ -1,0 +1,4247 @@
+{
+ "video": "aguacatenoche",
+ "avatar": "aguacatenoche_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "m000",
+   "start": 0,
+   "dur": 6.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m000.mp4"
+  },
+  {
+   "id": "m000_t",
+   "start": 3.87,
+   "dur": 2.73,
+   "cov": 2.73,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m000.jpg"
+  },
+  {
+   "id": "m001",
+   "start": 6.6,
+   "dur": 4.53,
+   "cov": 4.53,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m001.jpg"
+  },
+  {
+   "id": "m002",
+   "start": 11.13,
+   "dur": 4.53,
+   "cov": 4.53,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_compara.jpg"
+  },
+  {
+   "id": "m003",
+   "start": 15.66,
+   "dur": 7.28,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_compara.jpg"
+  },
+  {
+   "id": "cmp_0_frasecinetica",
+   "start": 15.66,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "LA PIEL"
+    },
+    {
+     "t": "Y LAS"
+    },
+    {
+     "t": "RODILLAS",
+     "hl": true
+    },
+    {
+     "t": "A LA VEZ"
+    }
+   ],
+   "perWord": 13,
+   "tone": "teal"
+  },
+  {
+   "id": "m004",
+   "start": 22.94,
+   "dur": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m004.mp4"
+  },
+  {
+   "id": "m006",
+   "start": 29.84,
+   "dur": 5.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m006.mp4"
+  },
+  {
+   "id": "cmp_1_lowerthird",
+   "start": 29.84,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "El āhuacatl",
+   "kicker": "DR. FEDERER",
+   "desc": "Grasa buena, gratis, colgando de un árbol. Lo comemos desde antes del maíz cultivado.",
+   "tone": "teal"
+  },
+  {
+   "id": "m006_t",
+   "start": 33.71,
+   "dur": 2.05,
+   "cov": 2.05,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m006.jpg"
+  },
+  {
+   "id": "m007",
+   "start": 35.76,
+   "dur": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m007.mp4"
+  },
+  {
+   "id": "cmp_2_lineatiempo",
+   "start": 35.76,
+   "dur": 11,
+   "key": "s",
+   "kind": "lineatiempo",
+   "title": "La historia que nadie cuenta",
+   "tone": "teal",
+   "marks": [
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m008.jpg",
+     "label": "Valle de Tehuacán",
+     "sub": "huesos de aguacate junto a restos humanos, miles de años atrás"
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m015.jpg",
+     "label": "Francia",
+     "sub": "un medicamento para la artrosis, hecho con la parte insaponificable"
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m023.jpg",
+     "label": "Los Ángeles",
+     "sub": "un aguacate al día, ocho semanas: más firmeza y más elasticidad"
+    }
+   ]
+  },
+  {
+   "id": "m008",
+   "start": 38.76,
+   "dur": 7.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m008.mp4"
+  },
+  {
+   "id": "m008_t",
+   "start": 42.69,
+   "dur": 3.87,
+   "cov": 3.87,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m008.jpg"
+  },
+  {
+   "id": "m009",
+   "start": 46.56,
+   "dur": 5.82,
+   "cov": 5.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m009.jpg"
+  },
+  {
+   "id": "m010",
+   "start": 52.38,
+   "dur": 6.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m010.mp4"
+  },
+  {
+   "id": "m010_t",
+   "start": 56.31,
+   "dur": 2.19,
+   "cov": 2.19,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m010.jpg"
+  },
+  {
+   "id": "m011",
+   "start": 58.5,
+   "dur": 4.16,
+   "cov": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m011.jpg"
+  },
+  {
+   "id": "m013",
+   "start": 68.12,
+   "dur": 5.7,
+   "cov": 5.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m013.jpg"
+  },
+  {
+   "id": "cmp_3_pizarraexplica",
+   "start": 68.12,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "LO QUE CASI NADIE SABE",
+   "title": "El aguacate ya está en la farmacia",
+   "items": [
+    {
+     "t": "Se le saca la fracción insaponificable"
+    },
+    {
+     "t": "Un tercio aguacate, dos tercios soya"
+    },
+    {
+     "t": "Se receta para el desgaste de rodilla y cadera"
+    },
+    {
+     "t": "Acá estaba en la lista negra de las dietas"
+    }
+   ]
+  },
+  {
+   "id": "m014",
+   "start": 73.82,
+   "dur": 5.58,
+   "cov": 5.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m014.jpg"
+  },
+  {
+   "id": "m015",
+   "start": 79.4,
+   "dur": 7.44,
+   "cov": 7.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m015.jpg"
+  },
+  {
+   "id": "m016",
+   "start": 86.84,
+   "dur": 6.94,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m015.jpg"
+  },
+  {
+   "id": "cmp_4_bars",
+   "start": 86.84,
+   "dur": 8,
+   "key": "s",
+   "kind": "bars",
+   "image": "img/aguacatenoche/aguacatenoche_lam_esponja.jpg",
+   "title": "Lo que midieron los ensayos europeos",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Dolor de la articulación",
+     "value": 60,
+     "note": "menos"
+    },
+    {
+     "label": "Antiinflamatorios que necesitaban",
+     "value": 85,
+     "winner": true,
+     "note": "menos"
+    }
+   ]
+  },
+  {
+   "id": "m017",
+   "start": 93.78,
+   "dur": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m017.mp4"
+  },
+  {
+   "id": "m018",
+   "start": 97.62,
+   "dur": 4.38,
+   "cov": 4.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m018.jpg"
+  },
+  {
+   "id": "m019",
+   "start": 102,
+   "dur": 3.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m019.mp4"
+  },
+  {
+   "id": "m020",
+   "start": 105.72,
+   "dur": 1.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m020.mp4"
+  },
+  {
+   "id": "cmp_5_stat",
+   "start": 105.72,
+   "dur": 7,
+   "key": "s",
+   "kind": "stat",
+   "image": "img/aguacatenoche/aguacatenoche_m023.jpg",
+   "value": 8,
+   "unit": "semanas",
+   "eyebrow": "UNIVERSIDAD DE CALIFORNIA",
+   "label": "un aguacate al día · más firmeza y más elasticidad, medidas con aparato",
+   "tone": "teal"
+  },
+  {
+   "id": "m021",
+   "start": 107.36,
+   "dur": 5.16,
+   "cov": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m021.jpg"
+  },
+  {
+   "id": "m022",
+   "start": 112.52,
+   "dur": 6.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m022.mp4"
+  },
+  {
+   "id": "m022_t",
+   "start": 116.45,
+   "dur": 2.77,
+   "cov": 2.77,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m022.jpg"
+  },
+  {
+   "id": "m023",
+   "start": 119.22,
+   "dur": 6.97,
+   "cov": 6.97,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m023.jpg"
+  },
+  {
+   "id": "m024",
+   "start": 126.19,
+   "dur": 6.97,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m024.mp4"
+  },
+  {
+   "id": "cmp_6_frasecinetica",
+   "start": 128.52,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "OCHO"
+    },
+    {
+     "t": "SEMANAS"
+    },
+    {
+     "t": "UN"
+    },
+    {
+     "t": "AGUACATE",
+     "hl": true
+    }
+   ],
+   "perWord": 14,
+   "tone": "teal"
+  },
+  {
+   "id": "m024_t",
+   "start": 130.06,
+   "dur": 3.1,
+   "cov": 3.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m024.jpg"
+  },
+  {
+   "id": "m026",
+   "start": 135.3,
+   "dur": 6.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m026.mp4"
+  },
+  {
+   "id": "m026_t",
+   "start": 139.23,
+   "dur": 2.97,
+   "cov": 2.97,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m026.jpg"
+  },
+  {
+   "id": "m027",
+   "start": 142.2,
+   "dur": 2.08,
+   "cov": 2.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m026.jpg"
+  },
+  {
+   "id": "cmp_7_mitoverdad",
+   "start": 142.2,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/aguacatenoche/aguacatenoche_m029.jpg",
+   "myth": "«Toda la grasa engorda»",
+   "truth": "La de la fritanga y la del aguacate no son la misma cosa. Nunca lo fueron.",
+   "flipAt": 107
+  },
+  {
+   "id": "m028",
+   "start": 144.28,
+   "dur": 4.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m028.mp4"
+  },
+  {
+   "id": "m028_t",
+   "start": 148.21,
+   "dur": 0.89,
+   "cov": 0.89,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m028.jpg"
+  },
+  {
+   "id": "m029",
+   "start": 149.1,
+   "dur": 5.96,
+   "cov": 5.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m029.jpg"
+  },
+  {
+   "id": "m030",
+   "start": 155.06,
+   "dur": 5.19,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m030.mp4"
+  },
+  {
+   "id": "m030_t",
+   "start": 158.99,
+   "dur": 1.26,
+   "cov": 1.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m030.jpg"
+  },
+  {
+   "id": "m031",
+   "start": 160.25,
+   "dur": 7.2,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m031.jpg"
+  },
+  {
+   "id": "m032",
+   "start": 167.45,
+   "dur": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m032.mp4"
+  },
+  {
+   "id": "cmp_8_frasecinetica",
+   "start": 167.45,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ESA"
+    },
+    {
+     "t": "FRASE"
+    },
+    {
+     "t": "TE COSTÓ"
+    },
+    {
+     "t": "VEINTE AÑOS",
+     "hl": true
+    }
+   ],
+   "perWord": 13,
+   "tone": "warn"
+  },
+  {
+   "id": "m033",
+   "start": 169.41,
+   "dur": 3.76,
+   "cov": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m032.jpg"
+  },
+  {
+   "id": "m034",
+   "start": 173.17,
+   "dur": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m034.mp4"
+  },
+  {
+   "id": "m034_t",
+   "start": 177.1,
+   "dur": 0.27,
+   "cov": 0.27,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m034.jpg"
+  },
+  {
+   "id": "m035",
+   "start": 177.37,
+   "dur": 5.64,
+   "cov": 5.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m034.jpg"
+  },
+  {
+   "id": "cmp_9_lowerthird",
+   "start": 177.37,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "El error que apaga todo esto",
+   "kicker": "AL FINAL DEL VIDEO",
+   "desc": "No es de la receta. Está en el buró de tu recámara, a un brazo de tu cama.",
+   "tone": "warn"
+  },
+  {
+   "id": "m036",
+   "start": 183.01,
+   "dur": 6.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m036.mp4"
+  },
+  {
+   "id": "m036_t",
+   "start": 186.94,
+   "dur": 2.43,
+   "cov": 2.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m036.jpg"
+  },
+  {
+   "id": "m037",
+   "start": 189.37,
+   "dur": 6.36,
+   "cov": 6.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m037.jpg"
+  },
+  {
+   "id": "m038",
+   "start": 195.73,
+   "dur": 5.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m038.mp4"
+  },
+  {
+   "id": "m038_t",
+   "start": 199.66,
+   "dur": 1.53,
+   "cov": 1.53,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m038.jpg"
+  },
+  {
+   "id": "m039",
+   "start": 201.19,
+   "dur": 2.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m039.mp4"
+  },
+  {
+   "id": "m040",
+   "start": 203.41,
+   "dur": 5.62,
+   "cov": 5.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m039.jpg"
+  },
+  {
+   "id": "cmp_10_errorstinger",
+   "start": 203.41,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "EL ERROR DEL BURÓ",
+   "tone": "warn",
+   "eyebrow": "TE LO DIGO AL FINAL"
+  },
+  {
+   "id": "cmp_11_process",
+   "start": 209.03,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "title": "Tu línea de base, hoy",
+   "steps": [
+    {
+     "title": "1 · La prueba del pellizco",
+     "desc": "el dorso de la mano, entre los nudillos y la muñeca"
+    },
+    {
+     "title": "2 · Levántala y suéltala",
+     "desc": "y cuenta: uno, dos, tres"
+    },
+    {
+     "title": "3 · Mañana, los puños",
+     "desc": "cuántos hasta que la mano deja de estar tiesa"
+    }
+   ]
+  },
+  {
+   "id": "m042",
+   "start": 212.03,
+   "dur": 6.5,
+   "cov": 6.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m042.jpg"
+  },
+  {
+   "id": "m043",
+   "start": 218.53,
+   "dur": 5.16,
+   "cov": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m043.jpg"
+  },
+  {
+   "id": "m044",
+   "start": 223.69,
+   "dur": 7.22,
+   "cov": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_pellizco.jpg"
+  },
+  {
+   "id": "m045",
+   "start": 230.91,
+   "dur": 6.73,
+   "cov": 6.73,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m045.jpg"
+  },
+  {
+   "id": "m046",
+   "start": 237.64,
+   "dur": 6.73,
+   "cov": 6.73,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m046.jpg"
+  },
+  {
+   "id": "m047",
+   "start": 244.37,
+   "dur": 6.72,
+   "cov": 6.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m047.jpg"
+  },
+  {
+   "id": "m048",
+   "start": 251.09,
+   "dur": 2.12,
+   "cov": 2.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m047.jpg"
+  },
+  {
+   "id": "m049",
+   "start": 253.21,
+   "dur": 6.94,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m047.jpg"
+  },
+  {
+   "id": "cmp_12_pliegue",
+   "start": 253.21,
+   "dur": 9,
+   "key": "s",
+   "kind": "pliegue",
+   "leftImage": "img/aguacatenoche/aguacatenoche_m046.jpg",
+   "rightImage": "img/aguacatenoche/aguacatenoche_m047.jpg",
+   "leftLabel": "A LOS VEINTE",
+   "rightLabel": "A LOS SESENTA Y TANTOS",
+   "leftSeconds": 0,
+   "rightSeconds": 3,
+   "verdict": "La malla de abajo perdió agua y perdió tensión"
+  },
+  {
+   "id": "m050",
+   "start": 260.15,
+   "dur": 3.92,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m050.jpg"
+  },
+  {
+   "id": "cmp_13_frasecinetica",
+   "start": 260.15,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NO ESTÁ"
+    },
+    {
+     "t": "MUERTA"
+    },
+    {
+     "t": "ESTÁ"
+    },
+    {
+     "t": "DESATENDIDA",
+     "hl": true
+    }
+   ],
+   "perWord": 14,
+   "tone": "teal"
+  },
+  {
+   "id": "m051",
+   "start": 264.07,
+   "dur": 6.42,
+   "cov": 6.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m051.jpg"
+  },
+  {
+   "id": "cmp_14_checklist",
+   "start": 264.07,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "image": "img/aguacatenoche/aguacatenoche_h_puno.jpg",
+   "title": "Mañana, antes de levantarte",
+   "tone": "teal",
+   "items": [
+    {
+     "text": "Abre y cierra el puño diez veces, lento",
+     "state": "done"
+    },
+    {
+     "text": "Cuenta cuántos hasta que se destraba",
+     "state": "done"
+    },
+    {
+     "text": "Si son más de cinco, apunta ese número",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "m052",
+   "start": 270.49,
+   "dur": 3.36,
+   "cov": 3.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_puno.jpg"
+  },
+  {
+   "id": "m053",
+   "start": 273.85,
+   "dur": 6.9,
+   "cov": 6.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m053.jpg"
+  },
+  {
+   "id": "m054",
+   "start": 280.75,
+   "dur": 4.14,
+   "cov": 4.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m054.jpg"
+  },
+  {
+   "id": "m055",
+   "start": 284.89,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m054.jpg"
+  },
+  {
+   "id": "cmp_15_whynight",
+   "start": 284.89,
+   "dur": 10,
+   "key": "s",
+   "kind": "whynight",
+   "dayTitle": "DE DÍA",
+   "nightTitle": "DE NOCHE",
+   "dayWord": "DEFENSA",
+   "nightWord": "REPARACIÓN",
+   "daySub": "sol, aire, jabón, agua dura de la llave",
+   "nightSub": "las células se dividen a toda velocidad",
+   "cardText": "Tu piel no trabaja parejo las veinticuatro horas. Cambia de turno."
+  },
+  {
+   "id": "m058",
+   "start": 294.05,
+   "dur": 5.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m058.mp4"
+  },
+  {
+   "id": "m058_t",
+   "start": 297.98,
+   "dur": 1.61,
+   "cov": 1.61,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m058.jpg"
+  },
+  {
+   "id": "m059",
+   "start": 299.59,
+   "dur": 6.19,
+   "cov": 6.19,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m059.jpg"
+  },
+  {
+   "id": "m060",
+   "start": 305.78,
+   "dur": 6.19,
+   "cov": 6.19,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m059.jpg"
+  },
+  {
+   "id": "cmp_16_relojnoche",
+   "start": 308.37,
+   "dur": 11,
+   "key": "s",
+   "kind": "relojnoche",
+   "subtitle": "El horario de taller de tu piel",
+   "marks": [
+    {
+     "h": 22,
+     "label": "10 pm",
+     "sub": "cenaste hace dos o tres horas",
+     "at": 10
+    },
+    {
+     "h": 0,
+     "label": "12",
+     "sub": "arranca el turno de reparación",
+     "at": 60,
+     "big": true
+    },
+    {
+     "h": 4,
+     "label": "4 am",
+     "sub": "termina la ventana",
+     "at": 150
+    }
+   ],
+   "hits": [
+    {
+     "h": 1,
+     "label": "las células se dividen a toda velocidad",
+     "at": 95
+    },
+    {
+     "h": 3,
+     "label": "y es cuando más agua pierde",
+     "at": 175
+    }
+   ]
+  },
+  {
+   "id": "m061",
+   "start": 311.97,
+   "dur": 7,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m061.jpg"
+  },
+  {
+   "id": "m062",
+   "start": 318.97,
+   "dur": 4.6,
+   "cov": 4.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m062.jpg"
+  },
+  {
+   "id": "m063",
+   "start": 323.57,
+   "dur": 5.16,
+   "cov": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m063.jpg"
+  },
+  {
+   "id": "m064",
+   "start": 328.73,
+   "dur": 6.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m064.mp4"
+  },
+  {
+   "id": "cmp_17_pizarraexplica",
+   "start": 328.73,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "LA PREGUNTA ES UNA SOLA",
+   "title": "La obra vacía a medianoche",
+   "items": [
+    {
+     "t": "Por fin no hay nadie y el albañil puede trabajar"
+    },
+    {
+     "t": "¿Le dejaste material en la obra?"
+    },
+    {
+     "t": "¿O llegó y no había ni un bulto de cemento?"
+    }
+   ]
+  },
+  {
+   "id": "m064_t",
+   "start": 332.66,
+   "dur": 2.53,
+   "cov": 2.53,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m064.jpg"
+  },
+  {
+   "id": "m065",
+   "start": 335.19,
+   "dur": 6.4,
+   "cov": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m065.jpg"
+  },
+  {
+   "id": "m066",
+   "start": 341.59,
+   "dur": 6.4,
+   "cov": 6.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m065.jpg"
+  },
+  {
+   "id": "m067",
+   "start": 347.99,
+   "dur": 5.64,
+   "cov": 5.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m067.jpg"
+  },
+  {
+   "id": "cmp_18_callout",
+   "start": 347.99,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/aguacatenoche/aguacatenoche_m069.jpg",
+   "figure": "0",
+   "unit": "venas",
+   "eyebrow": "EL DATO QUE NADIE TE DIJO",
+   "caption": "El único tejido grande del cuerpo que se alimenta sin tubería",
+   "tone": "warn"
+  },
+  {
+   "id": "m068",
+   "start": 353.63,
+   "dur": 5.28,
+   "cov": 5.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_rodilla.jpg"
+  },
+  {
+   "id": "m069",
+   "start": 358.91,
+   "dur": 4.72,
+   "cov": 4.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m069.jpg"
+  },
+  {
+   "id": "m070",
+   "start": 363.63,
+   "dur": 4.7,
+   "cov": 4.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_esponja.jpg"
+  },
+  {
+   "id": "cmp_19_pizarraexplica",
+   "start": 363.63,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "CÓMO COME EL CARTÍLAGO",
+   "title": "Es una esponja",
+   "items": [
+    {
+     "t": "Cargas la rodilla: se aplasta y expulsa lo gastado"
+    },
+    {
+     "t": "La descargas: se esponja y chupa líquido nuevo"
+    },
+    {
+     "t": "Con el alimento adentro"
+    },
+    {
+     "t": "Y solo la descargas cuando te acuestas"
+    }
+   ]
+  },
+  {
+   "id": "m071",
+   "start": 368.33,
+   "dur": 6.72,
+   "cov": 6.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m071.jpg"
+  },
+  {
+   "id": "m072",
+   "start": 375.05,
+   "dur": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m072.mp4"
+  },
+  {
+   "id": "m072_t",
+   "start": 378.98,
+   "dur": 2.31,
+   "cov": 2.31,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m072.jpg"
+  },
+  {
+   "id": "m073",
+   "start": 381.29,
+   "dur": 1.88,
+   "cov": 1.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m072.jpg"
+  },
+  {
+   "id": "m074",
+   "start": 383.17,
+   "dur": 3.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m074.mp4"
+  },
+  {
+   "id": "m075",
+   "start": 386.87,
+   "dur": 6.58,
+   "cov": 6.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m075.jpg"
+  },
+  {
+   "id": "m076",
+   "start": 393.45,
+   "dur": 7.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m076.mp4"
+  },
+  {
+   "id": "cmp_20_frasecinetica",
+   "start": 393.45,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "TU CARTÍLAGO"
+    },
+    {
+     "t": "COME"
+    },
+    {
+     "t": "DE NOCHE",
+     "hl": true
+    }
+   ],
+   "perWord": 16,
+   "tone": "teal"
+  },
+  {
+   "id": "m076_t",
+   "start": 397.38,
+   "dur": 3.51,
+   "cov": 3.51,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m076.jpg"
+  },
+  {
+   "id": "m077",
+   "start": 400.89,
+   "dur": 5.46,
+   "cov": 5.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m076.jpg"
+  },
+  {
+   "id": "m078",
+   "start": 406.35,
+   "dur": 7.12,
+   "cov": 5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m076.jpg"
+  },
+  {
+   "id": "m079",
+   "start": 413.47,
+   "dur": 6,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m076.jpg"
+  },
+  {
+   "id": "cmp_21_splitlist",
+   "start": 413.47,
+   "dur": 9,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "El mismo turno, las mismas horas",
+   "items": [
+    "Tu piel entra en reparación",
+    "Tu cartílago abre la esponja",
+    "Y en ese horario exacto te dijeron: una manzana y un té"
+   ]
+  },
+  {
+   "id": "m080",
+   "start": 419.47,
+   "dur": 7.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m080.mp4"
+  },
+  {
+   "id": "m080_t",
+   "start": 423.4,
+   "dur": 3.35,
+   "cov": 3.35,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m080.jpg"
+  },
+  {
+   "id": "m081",
+   "start": 426.75,
+   "dur": 1.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m081.mp4"
+  },
+  {
+   "id": "m082",
+   "start": 428.73,
+   "dur": 4.05,
+   "cov": 4.05,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m081.jpg"
+  },
+  {
+   "id": "m083",
+   "start": 432.78,
+   "dur": 4.05,
+   "cov": 4.05,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m083.jpg"
+  },
+  {
+   "id": "cmp_22_nametag",
+   "start": 433.43,
+   "dur": 6,
+   "key": "s",
+   "kind": "nametag",
+   "image": "img/aguacatenoche/aguacatenoche_m083.jpg",
+   "name": "Doña Rosaura",
+   "role": "67 años · 41 detrás de un puesto de flores"
+  },
+  {
+   "id": "m084",
+   "start": 436.83,
+   "dur": 4.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m084.mp4"
+  },
+  {
+   "id": "m085",
+   "start": 440.89,
+   "dur": 4.2,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m085.jpg"
+  },
+  {
+   "id": "m086",
+   "start": 445.09,
+   "dur": 7.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m086.mp4"
+  },
+  {
+   "id": "m086_t",
+   "start": 449.02,
+   "dur": 3.31,
+   "cov": 3.31,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m086.jpg"
+  },
+  {
+   "id": "m087",
+   "start": 452.33,
+   "dur": 5.26,
+   "cov": 5.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m087.jpg"
+  },
+  {
+   "id": "m088",
+   "start": 457.59,
+   "dur": 2.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m088.mp4"
+  },
+  {
+   "id": "cmp_23_frasecinetica",
+   "start": 457.59,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "DOCTOR"
+    },
+    {
+     "t": "YA NO PUEDO"
+    },
+    {
+     "t": "HACER EL MOÑO",
+     "hl": true
+    }
+   ],
+   "perWord": 13,
+   "tone": "warn"
+  },
+  {
+   "id": "m089",
+   "start": 459.83,
+   "dur": 5.37,
+   "cov": 5.37,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m088.jpg"
+  },
+  {
+   "id": "m090",
+   "start": 465.2,
+   "dur": 5.37,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m090.mp4"
+  },
+  {
+   "id": "m090_t",
+   "start": 469.13,
+   "dur": 1.44,
+   "cov": 1.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m090.jpg"
+  },
+  {
+   "id": "m091",
+   "start": 470.57,
+   "dur": 6.66,
+   "cov": 6.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m091.jpg"
+  },
+  {
+   "id": "m092",
+   "start": 477.23,
+   "dur": 3.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m092.mp4"
+  },
+  {
+   "id": "m093",
+   "start": 480.43,
+   "dur": 5.32,
+   "cov": 5.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m093.jpg"
+  },
+  {
+   "id": "m094",
+   "start": 485.75,
+   "dur": 3.12,
+   "cov": 3.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m093.jpg"
+  },
+  {
+   "id": "m095",
+   "start": 488.87,
+   "dur": 5.18,
+   "cov": 5.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m095.jpg"
+  },
+  {
+   "id": "cmp_24_pricewar",
+   "start": 488.87,
+   "dur": 8,
+   "key": "s",
+   "kind": "pricewar",
+   "leftImage": "img/aguacatenoche/aguacatenoche_m096.jpg",
+   "rightImage": "img/aguacatenoche/aguacatenoche_h_muestra.jpg",
+   "leftPrice": "6.000",
+   "rightPrice": "25",
+   "leftLabel": "Bote importado + cápsulas",
+   "rightLabel": "Una fruta del mercado",
+   "strike": "pesos",
+   "subtitle": "Dos tandas en un año. Y no pasó nada.",
+   "verdict": "Y cuando volvió a preguntar, le vendieron otro más caro"
+  },
+  {
+   "id": "m096",
+   "start": 494.05,
+   "dur": 5.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m096.mp4"
+  },
+  {
+   "id": "m096_t",
+   "start": 497.98,
+   "dur": 1.75,
+   "cov": 1.75,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m096.jpg"
+  },
+  {
+   "id": "m097",
+   "start": 499.73,
+   "dur": 6.74,
+   "cov": 6.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m097.jpg"
+  },
+  {
+   "id": "m098",
+   "start": 506.47,
+   "dur": 5.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m098.mp4"
+  },
+  {
+   "id": "m098_t",
+   "start": 510.4,
+   "dur": 1.69,
+   "cov": 1.69,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m098.jpg"
+  },
+  {
+   "id": "m099",
+   "start": 512.09,
+   "dur": 5.16,
+   "cov": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m098.jpg"
+  },
+  {
+   "id": "m100",
+   "start": 517.25,
+   "dur": 6.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m100.mp4"
+  },
+  {
+   "id": "m100_t",
+   "start": 521.18,
+   "dur": 2.83,
+   "cov": 2.83,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m100.jpg"
+  },
+  {
+   "id": "m101",
+   "start": 524.01,
+   "dur": 6.44,
+   "cov": 6.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m100.jpg"
+  },
+  {
+   "id": "m102",
+   "start": 530.45,
+   "dur": 3.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m102.mp4"
+  },
+  {
+   "id": "cmp_25_frasecinetica",
+   "start": 530.45,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "LADRILLOS"
+    },
+    {
+     "t": "SIN ALBAÑIL"
+    },
+    {
+     "t": "SIN AGUA"
+    },
+    {
+     "t": "SIN LUZ",
+     "hl": true
+    }
+   ],
+   "perWord": 12,
+   "tone": "warn"
+  },
+  {
+   "id": "m103",
+   "start": 533.47,
+   "dur": 3.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m103.mp4"
+  },
+  {
+   "id": "m104",
+   "start": 537.19,
+   "dur": 5.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m104.mp4"
+  },
+  {
+   "id": "cmp_26_checklist",
+   "start": 537.19,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "image": "img/aguacatenoche/aguacatenoche_m104.jpg",
+   "title": "Lo que el bote NO traía",
+   "tone": "teal",
+   "items": [
+    {
+     "text": "Grasas buenas que armen la estructura",
+     "state": "done"
+    },
+    {
+     "text": "Vitamina E que proteja esa grasa",
+     "state": "done"
+    },
+    {
+     "text": "Glutatión",
+     "state": "done"
+    },
+    {
+     "text": "Carotenoides y lo que baja la inflamación",
+     "state": "done"
+    },
+    {
+     "text": "Todo eso venía junto en una fruta de veinticinco pesos",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "m104_t",
+   "start": 541.12,
+   "dur": 1.65,
+   "cov": 1.65,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m104.jpg"
+  },
+  {
+   "id": "m105",
+   "start": 542.77,
+   "dur": 6.18,
+   "cov": 6.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m105.jpg"
+  },
+  {
+   "id": "m106",
+   "start": 548.95,
+   "dur": 3.74,
+   "cov": 3.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_mercado.jpg"
+  },
+  {
+   "id": "m108",
+   "start": 554.99,
+   "dur": 6.03,
+   "cov": 6.03,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_mercado.jpg"
+  },
+  {
+   "id": "cmp_27_guidecta",
+   "start": 559.81,
+   "dur": 11,
+   "key": "s",
+   "kind": "guidecta",
+   "cover": "img/aguacatenoche_guia.jpg",
+   "qr": "img/qr_aguacatenoche.png",
+   "domain": "www.drfederer.com",
+   "scanTitle": "Escanea el código",
+   "scanSub": "o toca el enlace de la descripción",
+   "title": "La guía del Dr. Federer",
+   "kicker": "CON CALENDARIO Y CANTIDADES",
+   "desc": "Por qué la piel madura se afloja y qué sí la sostiene, paso por paso."
+  },
+  {
+   "id": "m109",
+   "start": 561.02,
+   "dur": 6.03,
+   "cov": 6.03,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_mercado.jpg"
+  },
+  {
+   "id": "m110",
+   "start": 567.05,
+   "dur": 5.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m110.mp4"
+  },
+  {
+   "id": "m110_t",
+   "start": 570.98,
+   "dur": 1.89,
+   "cov": 1.89,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m110.jpg"
+  },
+  {
+   "id": "m111",
+   "start": 572.87,
+   "dur": 4.24,
+   "cov": 4.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m111.jpg"
+  },
+  {
+   "id": "m112",
+   "start": 577.11,
+   "dur": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m112.mp4"
+  },
+  {
+   "id": "m113",
+   "start": 580.55,
+   "dur": 7.4,
+   "cov": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_cena.jpg"
+  },
+  {
+   "id": "m114",
+   "start": 587.95,
+   "dur": 5.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m114.mp4"
+  },
+  {
+   "id": "m114_t",
+   "start": 591.88,
+   "dur": 1.35,
+   "cov": 1.35,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m114.jpg"
+  },
+  {
+   "id": "m116",
+   "start": 595.53,
+   "dur": 3.44,
+   "cov": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m114.jpg"
+  },
+  {
+   "id": "m117",
+   "start": 598.97,
+   "dur": 3.67,
+   "cov": 3.67,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m117.jpg"
+  },
+  {
+   "id": "m118",
+   "start": 602.64,
+   "dur": 7.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m118.mp4"
+  },
+  {
+   "id": "cmp_28_errorstinger",
+   "start": 602.64,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "DURMIÓ",
+   "tone": "teal",
+   "eyebrow": "REGALO"
+  },
+  {
+   "id": "m118_t",
+   "start": 606.57,
+   "dur": 3.29,
+   "cov": 3.29,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m118.jpg"
+  },
+  {
+   "id": "m119",
+   "start": 609.87,
+   "dur": 3.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m119.mp4"
+  },
+  {
+   "id": "m120",
+   "start": 613.35,
+   "dur": 3.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m120.mp4"
+  },
+  {
+   "id": "cmp_29_carrusel",
+   "start": 613.35,
+   "dur": 13,
+   "key": "s",
+   "kind": "carrusel",
+   "title": "Lo que le dice al músculo: suéltate",
+   "tone": "teal",
+   "items": [
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m120.jpg",
+     "num": "1",
+     "title": "Magnesio",
+     "sub": "de la pepita y del propio aguacate"
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m121.jpg",
+     "num": "2",
+     "title": "Potasio",
+     "sub": "el músculo deja de tironear de madrugada"
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m118.jpg",
+     "num": "3",
+     "title": "Se duerme de corrido",
+     "sub": "no es un somnífero: es el músculo que se suelta"
+    }
+   ]
+  },
+  {
+   "id": "m121",
+   "start": 616.73,
+   "dur": 6.24,
+   "cov": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m121.jpg"
+  },
+  {
+   "id": "m122",
+   "start": 622.97,
+   "dur": 3,
+   "cov": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m122.jpg"
+  },
+  {
+   "id": "m123",
+   "start": 625.97,
+   "dur": 5.2,
+   "cov": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m122.jpg"
+  },
+  {
+   "id": "m124",
+   "start": 631.16,
+   "dur": 8.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m124.mp4"
+  },
+  {
+   "id": "cmp_30_errorstinger",
+   "start": 631.16,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "02",
+   "title": "LAS MANOS",
+   "tone": "teal",
+   "eyebrow": "REGALO"
+  },
+  {
+   "id": "m124_t",
+   "start": 635.09,
+   "dur": 4.29,
+   "cov": 4.29,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m124.jpg"
+  },
+  {
+   "id": "m125",
+   "start": 639.38,
+   "dur": 5.54,
+   "cov": 5.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m125.jpg"
+  },
+  {
+   "id": "cmp_31_bars",
+   "start": 639.38,
+   "dur": 8,
+   "key": "s",
+   "kind": "bars",
+   "image": "img/aguacatenoche/aguacatenoche_m124.jpg",
+   "title": "Cuánto tardaban en calentarse las manos",
+   "unit": "min",
+   "bars": [
+    {
+     "label": "Antes",
+     "value": 20,
+     "tone": "danger"
+    },
+    {
+     "label": "A las tres semanas",
+     "value": 8,
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "m126",
+   "start": 644.92,
+   "dur": 5.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m126.mp4"
+  },
+  {
+   "id": "m126_t",
+   "start": 648.85,
+   "dur": 1.35,
+   "cov": 1.35,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m126.jpg"
+  },
+  {
+   "id": "m127",
+   "start": 650.21,
+   "dur": 2.1,
+   "cov": 2.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m126.jpg"
+  },
+  {
+   "id": "cmp_32_freezezoom",
+   "start": 650.21,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/aguacatenoche/aguacatenoche_lam_esponja.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.35,
+   "label": "Descargada, la esponja absorbe",
+   "tone": "teal"
+  },
+  {
+   "id": "m128",
+   "start": 652.3,
+   "dur": 4.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m128.mp4"
+  },
+  {
+   "id": "m128_t",
+   "start": 656.23,
+   "dur": 0.31,
+   "cov": 0.31,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m128.jpg"
+  },
+  {
+   "id": "m129",
+   "start": 656.54,
+   "dur": 4.25,
+   "cov": 4.25,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m128.jpg"
+  },
+  {
+   "id": "cmp_33_frasecinetica",
+   "start": 657.99,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NO ES"
+    },
+    {
+     "t": "MAGIA"
+    },
+    {
+     "t": "ES"
+    },
+    {
+     "t": "LOGÍSTICA",
+     "hl": true
+    }
+   ],
+   "perWord": 15,
+   "tone": "teal"
+  },
+  {
+   "id": "m130",
+   "start": 660.78,
+   "dur": 6.54,
+   "cov": 6.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m128.jpg"
+  },
+  {
+   "id": "m131",
+   "start": 667.33,
+   "dur": 6.12,
+   "cov": 6.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m131.jpg"
+  },
+  {
+   "id": "m132",
+   "start": 673.45,
+   "dur": 3.08,
+   "cov": 3.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m131.jpg"
+  },
+  {
+   "id": "m133",
+   "start": 676.52,
+   "dur": 4.96,
+   "cov": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m133.jpg"
+  },
+  {
+   "id": "m134",
+   "start": 681.49,
+   "dur": 4.35,
+   "cov": 4.35,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m133.jpg"
+  },
+  {
+   "id": "cmp_34_mitoverdad",
+   "start": 681.49,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/aguacatenoche/aguacatenoche_m137.jpg",
+   "myth": "«El aguacate engorda, y de noche peor»",
+   "truth": "Medio aguacate es menos que dos galletas con café. Y viene envuelto en fibra.",
+   "flipAt": 107
+  },
+  {
+   "id": "m135",
+   "start": 685.83,
+   "dur": 4.33,
+   "cov": 4.33,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m135.jpg"
+  },
+  {
+   "id": "m136",
+   "start": 690.16,
+   "dur": 4.9,
+   "cov": 4.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m135.jpg"
+  },
+  {
+   "id": "m137",
+   "start": 695.07,
+   "dur": 5.8,
+   "cov": 5.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m137.jpg"
+  },
+  {
+   "id": "cmp_35_bars",
+   "start": 695.07,
+   "dur": 8,
+   "key": "s",
+   "kind": "bars",
+   "image": "img/aguacatenoche/aguacatenoche_m138.jpg",
+   "title": "Lo que cena la gente creyendo que cena ligero",
+   "unit": "kcal",
+   "bars": [
+    {
+     "label": "Medio aguacate",
+     "value": 130,
+     "winner": true
+    },
+    {
+     "label": "Dos galletas con café",
+     "value": 180
+    },
+    {
+     "label": "Un pan dulce chiquito",
+     "value": 300,
+     "tone": "danger"
+    }
+   ]
+  },
+  {
+   "id": "m138",
+   "start": 700.87,
+   "dur": 5.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m138.mp4"
+  },
+  {
+   "id": "m138_t",
+   "start": 704.79,
+   "dur": 1.37,
+   "cov": 1.37,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m138.jpg"
+  },
+  {
+   "id": "m139",
+   "start": 706.16,
+   "dur": 5.12,
+   "cov": 5.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m139.jpg"
+  },
+  {
+   "id": "m140",
+   "start": 711.28,
+   "dur": 5.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m140.mp4"
+  },
+  {
+   "id": "m140_t",
+   "start": 715.21,
+   "dur": 2.01,
+   "cov": 2.01,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m140.jpg"
+  },
+  {
+   "id": "m141",
+   "start": 717.23,
+   "dur": 5.7,
+   "cov": 5.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m141.jpg"
+  },
+  {
+   "id": "m142",
+   "start": 722.93,
+   "dur": 5.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m142.mp4"
+  },
+  {
+   "id": "cmp_36_stat",
+   "start": 723.02,
+   "dur": 7,
+   "key": "s",
+   "kind": "stat",
+   "image": "img/aguacatenoche/aguacatenoche_m142.jpg",
+   "value": 7,
+   "unit": "g de fibra",
+   "eyebrow": "EN MEDIO AGUACATE",
+   "label": "te apaga el hambre de las once de la noche",
+   "tone": "teal"
+  },
+  {
+   "id": "m142_t",
+   "start": 726.86,
+   "dur": 1.79,
+   "cov": 1.79,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m142.jpg"
+  },
+  {
+   "id": "m143",
+   "start": 728.64,
+   "dur": 4,
+   "cov": 4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m143.jpg"
+  },
+  {
+   "id": "m144",
+   "start": 732.65,
+   "dur": 4.01,
+   "cov": 4.01,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m144.jpg"
+  },
+  {
+   "id": "m145",
+   "start": 736.66,
+   "dur": 3.06,
+   "cov": 3.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m144.jpg"
+  },
+  {
+   "id": "m146",
+   "start": 739.73,
+   "dur": 3.58,
+   "cov": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m144.jpg"
+  },
+  {
+   "id": "m147",
+   "start": 743.3,
+   "dur": 4.34,
+   "cov": 4.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m144.jpg"
+  },
+  {
+   "id": "cmp_37_colador",
+   "start": 743.3,
+   "dur": 10,
+   "key": "s",
+   "kind": "colador",
+   "smallLabel": "Sin grasa en el plato",
+   "bigLabel": "Con aguacate en el plato",
+   "note": "Los carotenoides son liposolubles: sin grasa entran por un lado y salen por el otro",
+   "tone": "teal"
+  },
+  {
+   "id": "m148",
+   "start": 747.64,
+   "dur": 6.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m148.mp4"
+  },
+  {
+   "id": "m148_t",
+   "start": 751.57,
+   "dur": 2.59,
+   "cov": 2.59,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m148.jpg"
+  },
+  {
+   "id": "m149",
+   "start": 754.16,
+   "dur": 4.16,
+   "cov": 4.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m149.jpg"
+  },
+  {
+   "id": "m150",
+   "start": 758.33,
+   "dur": 5.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m150.mp4"
+  },
+  {
+   "id": "m150_t",
+   "start": 762.25,
+   "dur": 1.91,
+   "cov": 1.91,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m150.jpg"
+  },
+  {
+   "id": "m151",
+   "start": 764.16,
+   "dur": 6.34,
+   "cov": 6.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m150.jpg"
+  },
+  {
+   "id": "cmp_38_frasecinetica",
+   "start": 764.16,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "RESCATA"
+    },
+    {
+     "t": "LO QUE YA"
+    },
+    {
+     "t": "ESTABAS"
+    },
+    {
+     "t": "TIRANDO",
+     "hl": true
+    }
+   ],
+   "perWord": 13,
+   "tone": "teal"
+  },
+  {
+   "id": "m152",
+   "start": 770.5,
+   "dur": 6.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m152.mp4"
+  },
+  {
+   "id": "m152_t",
+   "start": 774.43,
+   "dur": 2.43,
+   "cov": 2.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m152.jpg"
+  },
+  {
+   "id": "m153",
+   "start": 776.87,
+   "dur": 5.94,
+   "cov": 5.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m152.jpg"
+  },
+  {
+   "id": "cmp_39_errorstinger",
+   "start": 776.87,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "03",
+   "title": "LA CARA",
+   "tone": "teal",
+   "eyebrow": "REGALO"
+  },
+  {
+   "id": "m154",
+   "start": 782.81,
+   "dur": 5.94,
+   "cov": 5.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m154.jpg"
+  },
+  {
+   "id": "m155",
+   "start": 788.75,
+   "dur": 3.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m155.mp4"
+  },
+  {
+   "id": "m156",
+   "start": 792.47,
+   "dur": 2.82,
+   "cov": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m155.jpg"
+  },
+  {
+   "id": "m157",
+   "start": 795.28,
+   "dur": 6.16,
+   "cov": 6.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m157.jpg"
+  },
+  {
+   "id": "m158",
+   "start": 801.45,
+   "dur": 6.34,
+   "cov": 6.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m158.jpg"
+  },
+  {
+   "id": "m159",
+   "start": 807.78,
+   "dur": 5.52,
+   "cov": 5.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m159.jpg"
+  },
+  {
+   "id": "m160",
+   "start": 813.3,
+   "dur": 5.94,
+   "cov": 5.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m159.jpg"
+  },
+  {
+   "id": "cmp_40_malla",
+   "start": 813.3,
+   "dur": 11,
+   "key": "s",
+   "kind": "malla",
+   "phase": "sana",
+   "labels": {
+    "sana": "la barrera se repone",
+    "soldadura": "el agua deja de evaporarse",
+    "rigida": "la piel sale de modo emergencia"
+   }
+  },
+  {
+   "id": "m161",
+   "start": 819.25,
+   "dur": 7.06,
+   "cov": 7.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m161.jpg"
+  },
+  {
+   "id": "cmp_41_carrusel",
+   "start": 824.38,
+   "dur": 13,
+   "key": "s",
+   "kind": "carrusel",
+   "title": "Lo que venía junto en la fruta",
+   "tone": "teal",
+   "items": [
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m162.jpg",
+     "num": "1",
+     "title": "Vitamina E",
+     "sub": "protege esa misma grasa de oxidarse"
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_lam_malla.jpg",
+     "num": "2",
+     "title": "Glutatión",
+     "sub": "el antioxidante que a partir de los 60 fabricas cada vez menos"
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m141.jpg",
+     "num": "3",
+     "title": "Grasa monoinsaturada",
+     "sub": "repone la barrera que retiene el agua toda la noche"
+    }
+   ]
+  },
+  {
+   "id": "m162",
+   "start": 826.3,
+   "dur": 6.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m162.mp4"
+  },
+  {
+   "id": "m162_t",
+   "start": 830.23,
+   "dur": 2.59,
+   "cov": 2.59,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m162.jpg"
+  },
+  {
+   "id": "m163",
+   "start": 832.83,
+   "dur": 1.48,
+   "cov": 1.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m162.jpg"
+  },
+  {
+   "id": "m164",
+   "start": 834.3,
+   "dur": 6.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m164.mp4"
+  },
+  {
+   "id": "m164_t",
+   "start": 838.23,
+   "dur": 2.53,
+   "cov": 2.53,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m164.jpg"
+  },
+  {
+   "id": "m165",
+   "start": 840.76,
+   "dur": 6.12,
+   "cov": 6.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m165.jpg"
+  },
+  {
+   "id": "cmp_42_frasecinetica",
+   "start": 840.76,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NO SE"
+    },
+    {
+     "t": "RELLENÓ"
+    },
+    {
+     "t": "SE"
+    },
+    {
+     "t": "REHIDRATÓ",
+     "hl": true
+    }
+   ],
+   "perWord": 13,
+   "tone": "teal"
+  },
+  {
+   "id": "m166",
+   "start": 846.88,
+   "dur": 4.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m166.mp4"
+  },
+  {
+   "id": "m167",
+   "start": 851.02,
+   "dur": 6.64,
+   "cov": 6.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m167.jpg"
+  },
+  {
+   "id": "cmp_43_errorstinger",
+   "start": 851.02,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "04",
+   "title": "LA VISTA",
+   "tone": "teal",
+   "eyebrow": "REGALO"
+  },
+  {
+   "id": "m168",
+   "start": 857.66,
+   "dur": 4.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m168.mp4"
+  },
+  {
+   "id": "cmp_44_pizarraexplica",
+   "start": 857.66,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "LUTEÍNA Y ZEAXANTINA",
+   "title": "Dos pigmentos que se guardan en el ojo",
+   "items": [
+    {
+     "t": "Se acumulan en el centro de la retina"
+    },
+    {
+     "t": "Funcionan como un filtro"
+    },
+    {
+     "t": "Y el aguacate es de los pocos alimentos que los trae"
+    }
+   ]
+  },
+  {
+   "id": "m168_t",
+   "start": 861.59,
+   "dur": 0.43,
+   "cov": 0.43,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m168.jpg"
+  },
+  {
+   "id": "m169",
+   "start": 862.02,
+   "dur": 6.52,
+   "cov": 6.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m169.jpg"
+  },
+  {
+   "id": "m170",
+   "start": 868.54,
+   "dur": 3.59,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m170.mp4"
+  },
+  {
+   "id": "m171",
+   "start": 872.13,
+   "dur": 3.58,
+   "cov": 3.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m170.jpg"
+  },
+  {
+   "id": "m172",
+   "start": 875.71,
+   "dur": 2.78,
+   "cov": 2.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m172.jpg"
+  },
+  {
+   "id": "m173",
+   "start": 878.49,
+   "dur": 4.8,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m173.jpg"
+  },
+  {
+   "id": "cmp_45_errorstinger",
+   "start": 878.49,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "05",
+   "title": "EL MOÑO",
+   "tone": "teal",
+   "eyebrow": "REGALO"
+  },
+  {
+   "id": "m174",
+   "start": 883.28,
+   "dur": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m174.mp4"
+  },
+  {
+   "id": "m175",
+   "start": 887.04,
+   "dur": 6.54,
+   "cov": 6.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_muestra.jpg"
+  },
+  {
+   "id": "cmp_46_recetaescena",
+   "start": 887.04,
+   "dur": 14,
+   "key": "s",
+   "kind": "recetaescena",
+   "title": "Lo que hay que hacer, en cinco pasos",
+   "tone": "teal",
+   "steps": [
+    {
+     "title": "Cuál",
+     "desc": "el de cáscara rugosa y oscura, no el liso grandote aguado",
+     "image": "img/aguacatenoche/aguacatenoche_m176.jpg"
+    },
+    {
+     "title": "Cuánto y cuándo",
+     "desc": "medio, en la cena, dos o tres horas antes de acostarte",
+     "image": "img/aguacatenoche/aguacatenoche_h_cena.jpg"
+    },
+    {
+     "title": "Nunca solo",
+     "desc": "algo verde y algo de color: jitomate, zanahoria, chile, hoja verde",
+     "image": "img/aguacatenoche/aguacatenoche_m191.jpg"
+    },
+    {
+     "title": "Pélalo con los dedos",
+     "desc": "la capa verde oscura es la mejor parte y se queda en la cáscara",
+     "image": "img/aguacatenoche/aguacatenoche_h_pela.jpg"
+    },
+    {
+     "title": "Un chorrito de limón",
+     "desc": "la vitamina C enciende la enzima que arma el colágeno",
+     "image": "img/aguacatenoche/aguacatenoche_h_limon.jpg"
+    }
+   ]
+  },
+  {
+   "id": "m176",
+   "start": 893.59,
+   "dur": 6.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m176.mp4"
+  },
+  {
+   "id": "m176_t",
+   "start": 897.51,
+   "dur": 2.63,
+   "cov": 2.63,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m176.jpg"
+  },
+  {
+   "id": "m177",
+   "start": 900.14,
+   "dur": 5.38,
+   "cov": 5.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m177.jpg"
+  },
+  {
+   "id": "m178",
+   "start": 905.52,
+   "dur": 5.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m178.mp4"
+  },
+  {
+   "id": "m178_t",
+   "start": 909.45,
+   "dur": 1.45,
+   "cov": 1.45,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m178.jpg"
+  },
+  {
+   "id": "m179",
+   "start": 910.9,
+   "dur": 3.28,
+   "cov": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_tallito.jpg"
+  },
+  {
+   "id": "cmp_47_freezezoom",
+   "start": 910.9,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/aguacatenoche/aguacatenoche_h_tallito.jpg",
+   "x": 0.52,
+   "y": 0.4,
+   "zoom": 1.4,
+   "label": "El botoncito de arriba",
+   "tone": "teal"
+  },
+  {
+   "id": "m180",
+   "start": 914.18,
+   "dur": 3.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m180.mp4"
+  },
+  {
+   "id": "cmp_48_checklist",
+   "start": 914.18,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "image": "img/aguacatenoche/aguacatenoche_lam_tallito.jpg",
+   "title": "La única prueba que necesitas, y es gratis",
+   "tone": "teal",
+   "items": [
+    {
+     "text": "Sale fácil y abajo está verde claro: está listo hoy",
+     "state": "done"
+    },
+    {
+     "text": "Sale y abajo está café oscuro: ya se pasó",
+     "state": "warn"
+    },
+    {
+     "text": "No sale: le faltan días",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "m181",
+   "start": 917.99,
+   "dur": 5.42,
+   "cov": 5.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m181.jpg"
+  },
+  {
+   "id": "m182",
+   "start": 923.4,
+   "dur": 2.88,
+   "cov": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m181.jpg"
+  },
+  {
+   "id": "m183",
+   "start": 926.28,
+   "dur": 3.32,
+   "cov": 3.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_corta.jpg"
+  },
+  {
+   "id": "cmp_49_hourdial",
+   "start": 926.28,
+   "dur": 6,
+   "key": "s",
+   "kind": "hourdial",
+   "hour": 20,
+   "big": "2-3",
+   "unit": "horas antes",
+   "label": "de acostarte · ni con el plato en la cama, ni a las cinco de la tarde",
+   "tone": "teal"
+  },
+  {
+   "id": "m184",
+   "start": 929.61,
+   "dur": 6.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m184.mp4"
+  },
+  {
+   "id": "m184_t",
+   "start": 933.53,
+   "dur": 2.61,
+   "cov": 2.61,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m184.jpg"
+  },
+  {
+   "id": "m185",
+   "start": 936.14,
+   "dur": 4.9,
+   "cov": 4.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m185.jpg"
+  },
+  {
+   "id": "m186",
+   "start": 941.04,
+   "dur": 3.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m186.mp4"
+  },
+  {
+   "id": "m187",
+   "start": 944.21,
+   "dur": 5.58,
+   "cov": 5.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m186.jpg"
+  },
+  {
+   "id": "m188",
+   "start": 949.78,
+   "dur": 4.22,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m188.mp4"
+  },
+  {
+   "id": "cmp_50_ingredientduo",
+   "start": 949.78,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "ingredientduo",
+   "leftImg": "img/aguacatenoche/aguacatenoche_m188.jpg",
+   "rightImg": "img/aguacatenoche/aguacatenoche_m191.jpg"
+  },
+  {
+   "id": "m188_t",
+   "start": 953.71,
+   "dur": 0.29,
+   "cov": 0.29,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m188.jpg"
+  },
+  {
+   "id": "m189",
+   "start": 954,
+   "dur": 4.02,
+   "cov": 4.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m189.jpg"
+  },
+  {
+   "id": "m190",
+   "start": 958.02,
+   "dur": 4.48,
+   "cov": 4.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m189.jpg"
+  },
+  {
+   "id": "m191",
+   "start": 962.5,
+   "dur": 6.08,
+   "cov": 6.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m191.jpg"
+  },
+  {
+   "id": "m192",
+   "start": 968.59,
+   "dur": 7.02,
+   "cov": 7.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m191.jpg"
+  },
+  {
+   "id": "cmp_51_freezezoom",
+   "start": 968.59,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/aguacatenoche/aguacatenoche_lam_transporte.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.3,
+   "label": "Sin lo demás, el camión va vacío",
+   "tone": "teal"
+  },
+  {
+   "id": "m193",
+   "start": 975.61,
+   "dur": 5.06,
+   "cov": 5.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m193.jpg"
+  },
+  {
+   "id": "cmp_52_mitoverdad",
+   "start": 975.61,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/aguacatenoche/aguacatenoche_h_pela.jpg",
+   "myth": "Sacarlo con cuchara",
+   "truth": "La capa verde oscura se queda pegada a la cáscara y se va a la basura. Pélalo con los dedos.",
+   "flipAt": 152
+  },
+  {
+   "id": "m194",
+   "start": 980.66,
+   "dur": 4.36,
+   "cov": 4.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_pela.jpg"
+  },
+  {
+   "id": "m195",
+   "start": 985.02,
+   "dur": 7.26,
+   "cov": 7.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m195.jpg"
+  },
+  {
+   "id": "cmp_53_freezezoom",
+   "start": 985.02,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/aguacatenoche/aguacatenoche_lam_capa.jpg",
+   "x": 0.5,
+   "y": 0.45,
+   "zoom": 1.35,
+   "label": "Ahí están concentrados los carotenoides",
+   "tone": "teal"
+  },
+  {
+   "id": "m196",
+   "start": 992.28,
+   "dur": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m196.mp4"
+  },
+  {
+   "id": "m196_t",
+   "start": 996.21,
+   "dur": 0.65,
+   "cov": 0.65,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m196.jpg"
+  },
+  {
+   "id": "m197",
+   "start": 996.87,
+   "dur": 2.96,
+   "cov": 2.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m196.jpg"
+  },
+  {
+   "id": "m198",
+   "start": 999.83,
+   "dur": 5.4,
+   "cov": 5.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_limon.jpg"
+  },
+  {
+   "id": "cmp_54_pizarraexplica",
+   "start": 999.83,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "POR QUÉ EL LIMÓN NO ES OPCIONAL",
+   "title": "Los materiales y la máquina",
+   "items": [
+    {
+     "t": "La vitamina C enciende la enzima que arma el colágeno"
+    },
+    {
+     "t": "Sin ella tienes los materiales y no tienes la máquina"
+    },
+    {
+     "t": "Es un tris de limón. No es negociable"
+    }
+   ]
+  },
+  {
+   "id": "m199",
+   "start": 1005.23,
+   "dur": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m199.mp4"
+  },
+  {
+   "id": "m200",
+   "start": 1008.99,
+   "dur": 6.88,
+   "cov": 6.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m199.jpg"
+  },
+  {
+   "id": "m201",
+   "start": 1015.87,
+   "dur": 6.36,
+   "cov": 6.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m201.jpg"
+  },
+  {
+   "id": "cmp_55_lowerthird",
+   "start": 1015.87,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Las cantidades exactas están en la descripción",
+   "kicker": "PARA QUE NO LAS APUNTES MAL",
+   "desc": "Con qué combinarlo cada día de la semana y los tiempos.",
+   "tone": "teal"
+  },
+  {
+   "id": "m202",
+   "start": 1022.23,
+   "dur": 5.96,
+   "cov": 5.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m201.jpg"
+  },
+  {
+   "id": "m203",
+   "start": 1028.18,
+   "dur": 3.9,
+   "cov": 3.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m201.jpg"
+  },
+  {
+   "id": "cmp_56_checklist",
+   "start": 1028.18,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "image": "img/aguacatenoche/aguacatenoche_m204.jpg",
+   "title": "Lo que esto NO hace",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "No te quita una artrosis avanzada",
+     "state": "warn"
+    },
+    {
+     "text": "Si el cartílago ya no está, ningún alimento lo repone",
+     "state": "warn"
+    },
+    {
+     "text": "No borra una arruga profunda",
+     "state": "warn"
+    },
+    {
+     "text": "Lo que sí: sostén, luz y agua — y que lo que queda esté mejor alimentado",
+     "state": "done"
+    }
+   ]
+  },
+  {
+   "id": "m204",
+   "start": 1032.09,
+   "dur": 2.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m204.mp4"
+  },
+  {
+   "id": "m205",
+   "start": 1034.51,
+   "dur": 5.28,
+   "cov": 5.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m205.jpg"
+  },
+  {
+   "id": "m206",
+   "start": 1039.79,
+   "dur": 4.48,
+   "cov": 4.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m205.jpg"
+  },
+  {
+   "id": "m207",
+   "start": 1044.27,
+   "dur": 7.06,
+   "cov": 7.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m207.jpg"
+  },
+  {
+   "id": "m208",
+   "start": 1051.33,
+   "dur": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m208.mp4"
+  },
+  {
+   "id": "m208_t",
+   "start": 1055.26,
+   "dur": 0.65,
+   "cov": 0.65,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m208.jpg"
+  },
+  {
+   "id": "m209",
+   "start": 1055.9,
+   "dur": 4.92,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m209.jpg"
+  },
+  {
+   "id": "m210",
+   "start": 1060.83,
+   "dur": 4.12,
+   "cov": 4.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m209.jpg"
+  },
+  {
+   "id": "cmp_57_lowerthird",
+   "start": 1060.83,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Esto va derecho y sin adornos",
+   "kicker": "ADVERTENCIAS",
+   "desc": "Cuatro casos en los que primero hablas con tu médico.",
+   "tone": "warn"
+  },
+  {
+   "id": "m211",
+   "start": 1064.94,
+   "dur": 6.08,
+   "cov": 6.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m211.jpg"
+  },
+  {
+   "id": "cmp_58_checklist",
+   "start": 1064.94,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "image": "img/aguacatenoche/aguacatenoche_m211.jpg",
+   "title": "Antes de meterle aguacate diario",
+   "tone": "warn",
+   "items": [
+    {
+     "text": "Anticoagulantes, sobre todo warfarina: háblalo con tu médico",
+     "state": "warn"
+    },
+    {
+     "text": "Enfermedad renal con potasio restringido: lo decide tu nefrólogo",
+     "state": "warn"
+    },
+    {
+     "text": "Comezón con plátano, kiwi o melón: alergia cruzada con el látex",
+     "state": "warn"
+    },
+    {
+     "text": "Sin vesícula: empieza con un cuarto y sube despacio",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "m212",
+   "start": 1071.03,
+   "dur": 5.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m212.mp4"
+  },
+  {
+   "id": "m212_t",
+   "start": 1074.96,
+   "dur": 1.77,
+   "cov": 1.77,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m212.jpg"
+  },
+  {
+   "id": "m213",
+   "start": 1076.72,
+   "dur": 1.96,
+   "cov": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m212.jpg"
+  },
+  {
+   "id": "m214",
+   "start": 1078.68,
+   "dur": 6.76,
+   "cov": 6.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m214.jpg"
+  },
+  {
+   "id": "m215",
+   "start": 1085.44,
+   "dur": 4.96,
+   "cov": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m215.jpg"
+  },
+  {
+   "id": "m216",
+   "start": 1090.4,
+   "dur": 6.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m216.mp4"
+  },
+  {
+   "id": "m216_t",
+   "start": 1094.34,
+   "dur": 2.71,
+   "cov": 2.71,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m216.jpg"
+  },
+  {
+   "id": "m217",
+   "start": 1097.05,
+   "dur": 5.5,
+   "cov": 5.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m217.jpg"
+  },
+  {
+   "id": "m218",
+   "start": 1102.55,
+   "dur": 2.28,
+   "cov": 2.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m217.jpg"
+  },
+  {
+   "id": "m219",
+   "start": 1104.83,
+   "dur": 6.7,
+   "cov": 6.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m219.jpg"
+  },
+  {
+   "id": "m220",
+   "start": 1111.53,
+   "dur": 3.81,
+   "cov": 3.81,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m219.jpg"
+  },
+  {
+   "id": "cmp_59_errorstinger",
+   "start": 1111.53,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "01",
+   "title": "EL DEL BURÓ",
+   "tone": "warn",
+   "eyebrow": "EL ERROR"
+  },
+  {
+   "id": "m221",
+   "start": 1115.34,
+   "dur": 3.81,
+   "cov": 3.81,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_pastilla.jpg"
+  },
+  {
+   "id": "m222",
+   "start": 1119.15,
+   "dur": 3.81,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m222.mp4"
+  },
+  {
+   "id": "m223",
+   "start": 1122.96,
+   "dur": 4.11,
+   "cov": 4.11,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m223.jpg"
+  },
+  {
+   "id": "m224",
+   "start": 1127.07,
+   "dur": 4.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m224.mp4"
+  },
+  {
+   "id": "m225",
+   "start": 1131.18,
+   "dur": 4.18,
+   "cov": 4.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m224.png"
+  },
+  {
+   "id": "m226",
+   "start": 1135.37,
+   "dur": 5.56,
+   "cov": 5.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m224.png"
+  },
+  {
+   "id": "cmp_60_mitoverdad",
+   "start": 1135.37,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/aguacatenoche/aguacatenoche_h_pastilla.jpg",
+   "myth": "«El error está en la receta»",
+   "truth": "No. El error es lo que te tomas DESPUÉS. La pastilla de todas las noches.",
+   "flipAt": 105
+  },
+  {
+   "id": "m227",
+   "start": 1140.92,
+   "dur": 5.56,
+   "cov": 5.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m227.jpg"
+  },
+  {
+   "id": "cmp_61_carrusel",
+   "start": 1141.37,
+   "dur": 13,
+   "key": "s",
+   "kind": "carrusel",
+   "title": "La caja que está en el buró",
+   "tone": "warn",
+   "items": [
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m228.jpg",
+     "num": "1",
+     "title": "Ibuprofeno",
+     "sub": ""
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m227.jpg",
+     "num": "2",
+     "title": "Naproxeno",
+     "sub": ""
+    },
+    {
+     "image": "img/aguacatenoche/aguacatenoche_m229.jpg",
+     "num": "3",
+     "title": "Diclofenaco",
+     "sub": "el que sea, todas las noches, por costumbre"
+    }
+   ]
+  },
+  {
+   "id": "m228",
+   "start": 1146.48,
+   "dur": 4.42,
+   "cov": 4.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m228.jpg"
+  },
+  {
+   "id": "m229",
+   "start": 1150.9,
+   "dur": 4.6,
+   "cov": 4.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m229.jpg"
+  },
+  {
+   "id": "m230",
+   "start": 1155.51,
+   "dur": 7.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m230.mp4"
+  },
+  {
+   "id": "m230_t",
+   "start": 1159.38,
+   "dur": 3.37,
+   "cov": 3.37,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m230.jpg"
+  },
+  {
+   "id": "m231",
+   "start": 1162.74,
+   "dur": 3.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m231.mp4"
+  },
+  {
+   "id": "m232",
+   "start": 1166.42,
+   "dur": 2.68,
+   "cov": 2.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m231.jpg"
+  },
+  {
+   "id": "m233",
+   "start": 1169.11,
+   "dur": 3.6,
+   "cov": 3.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m231.jpg"
+  },
+  {
+   "id": "cmp_62_pizarraexplica",
+   "start": 1169.11,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "LO QUE HACE MIENTRAS TE APAGA EL DOLOR",
+   "title": "Le pone el freno a la esponja",
+   "items": [
+    {
+     "t": "Bloquea la inflamación — que es la señal de obra"
+    },
+    {
+     "t": "Es la que le dice a tu cuerpo dónde reparar"
+    },
+    {
+     "t": "Y en el cartílago puede frenar los proteoglicanos"
+    },
+    {
+     "t": "Que son los que hacen que la esponja retenga agua"
+    }
+   ]
+  },
+  {
+   "id": "m234",
+   "start": 1172.7,
+   "dur": 5.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m234.mp4"
+  },
+  {
+   "id": "m234_t",
+   "start": 1176.63,
+   "dur": 1.55,
+   "cov": 1.55,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m234.jpg"
+  },
+  {
+   "id": "m235",
+   "start": 1178.18,
+   "dur": 2.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m235.mp4"
+  },
+  {
+   "id": "m236",
+   "start": 1180.77,
+   "dur": 4.86,
+   "cov": 4.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m236.jpg"
+  },
+  {
+   "id": "m237",
+   "start": 1185.63,
+   "dur": 5.8,
+   "cov": 5.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m236.jpg"
+  },
+  {
+   "id": "m238",
+   "start": 1191.42,
+   "dur": 4.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m238.mp4"
+  },
+  {
+   "id": "m239",
+   "start": 1195.48,
+   "dur": 3.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m239.mp4"
+  },
+  {
+   "id": "cmp_63_freezezoom",
+   "start": 1195.48,
+   "dur": 4.5,
+   "key": "s",
+   "kind": "freezezoom",
+   "image": "img/aguacatenoche/aguacatenoche_lam_freno.jpg",
+   "x": 0.5,
+   "y": 0.5,
+   "zoom": 1.3,
+   "label": "La esponja con el clamp puesto",
+   "tone": "warn"
+  },
+  {
+   "id": "m240",
+   "start": 1198.9,
+   "dur": 6.1,
+   "cov": 6.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m239.jpg"
+  },
+  {
+   "id": "m241",
+   "start": 1205.01,
+   "dur": 5.8,
+   "cov": 5.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m241.jpg"
+  },
+  {
+   "id": "m242",
+   "start": 1210.81,
+   "dur": 5.62,
+   "cov": 5.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m242.jpg"
+  },
+  {
+   "id": "cmp_64_frasecinetica",
+   "start": 1210.81,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "GASOLINA"
+    },
+    {
+     "t": "CON EL FRENO"
+    },
+    {
+     "t": "DE MANO"
+    },
+    {
+     "t": "PUESTO",
+     "hl": true
+    }
+   ],
+   "perWord": 12,
+   "tone": "warn"
+  },
+  {
+   "id": "m243",
+   "start": 1216.42,
+   "dur": 6.34,
+   "cov": 6.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m242.jpg"
+  },
+  {
+   "id": "m244",
+   "start": 1222.77,
+   "dur": 2.76,
+   "cov": 2.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m242.jpg"
+  },
+  {
+   "id": "m245",
+   "start": 1225.53,
+   "dur": 4.82,
+   "cov": 4.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m242.jpg"
+  },
+  {
+   "id": "m246",
+   "start": 1230.35,
+   "dur": 4.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m246.mp4"
+  },
+  {
+   "id": "m247",
+   "start": 1234.53,
+   "dur": 1.7,
+   "cov": 1.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m246.jpg"
+  },
+  {
+   "id": "m248",
+   "start": 1236.22,
+   "dur": 5.36,
+   "cov": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_escribe.jpg"
+  },
+  {
+   "id": "cmp_65_guardaesto",
+   "start": 1236.22,
+   "dur": 10,
+   "key": "s",
+   "kind": "guardaesto",
+   "image": "img/aguacatenoche/aguacatenoche_h_escribe.jpg",
+   "title": "La pregunta, con estas palabras",
+   "tag": "LLÉVALA A TU MÉDICO",
+   "prompt": "Anota esto",
+   "items": [
+    "Doctor, esta pastilla que tomo todas las noches desde hace años…",
+    "¿me la sigue recetando usted, o me la estoy tomando yo por costumbre?",
+    "¿Podemos ver si todavía la necesito diario, o solo los días malos?"
+   ]
+  },
+  {
+   "id": "m249",
+   "start": 1241.59,
+   "dur": 5.24,
+   "cov": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m249.jpg"
+  },
+  {
+   "id": "m250",
+   "start": 1246.83,
+   "dur": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m250.mp4"
+  },
+  {
+   "id": "m251",
+   "start": 1249.55,
+   "dur": 4.54,
+   "cov": 4.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m251.jpg"
+  },
+  {
+   "id": "m252",
+   "start": 1254.09,
+   "dur": 6.72,
+   "cov": 6.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m251.jpg"
+  },
+  {
+   "id": "cmp_66_stat",
+   "start": 1254.09,
+   "dur": 7,
+   "key": "s",
+   "kind": "stat",
+   "image": "img/aguacatenoche/aguacatenoche_m250.jpg",
+   "value": 15,
+   "unit": "segundos",
+   "eyebrow": "ES GRATIS Y DURA",
+   "label": "y puede cambiarte los siguientes diez años",
+   "tone": "teal"
+  },
+  {
+   "id": "m253",
+   "start": 1260.81,
+   "dur": 5.16,
+   "cov": 5.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m253.jpg"
+  },
+  {
+   "id": "cmp_67_bars",
+   "start": 1260.81,
+   "dur": 8,
+   "key": "s",
+   "kind": "bars",
+   "image": "img/aguacatenoche/aguacatenoche_m253.jpg",
+   "title": "Lo que cambió cuando quitó el freno",
+   "unit": "veces/semana",
+   "bars": [
+    {
+     "label": "Antes: todas las noches",
+     "value": 7,
+     "tone": "danger"
+    },
+    {
+     "label": "Después: solo los días malos",
+     "value": 2,
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "m254",
+   "start": 1265.96,
+   "dur": 6.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m254.mp4"
+  },
+  {
+   "id": "m254_t",
+   "start": 1269.89,
+   "dur": 2.75,
+   "cov": 2.75,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m254.jpg"
+  },
+  {
+   "id": "m255",
+   "start": 1272.64,
+   "dur": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m255.mp4"
+  },
+  {
+   "id": "m256",
+   "start": 1275.29,
+   "dur": 2.76,
+   "cov": 2.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m255.jpg"
+  },
+  {
+   "id": "cmp_68_guardaesto",
+   "start": 1275.29,
+   "dur": 10,
+   "key": "s",
+   "kind": "guardaesto",
+   "image": "img/aguacatenoche/aguacatenoche_h_cena.jpg",
+   "title": "Esta noche, tres cosas",
+   "tag": "GUÁRDALO",
+   "prompt": "Anota esto",
+   "items": [
+    "Medio aguacate en la cena, dos o tres horas antes de acostarte",
+    "Nunca solo: algo verde, algo de color, un chorrito de limón, pelado con los dedos",
+    "Revisa qué te tomas de noche para el dolor y llévale la pregunta a tu médico"
+   ]
+  },
+  {
+   "id": "m257",
+   "start": 1278.05,
+   "dur": 4.46,
+   "cov": 4.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m257.jpg"
+  },
+  {
+   "id": "m258",
+   "start": 1282.51,
+   "dur": 4.45,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m258.mp4"
+  },
+  {
+   "id": "m258_t",
+   "start": 1286.38,
+   "dur": 0.58,
+   "cov": 0.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m258.jpg"
+  },
+  {
+   "id": "m259",
+   "start": 1286.96,
+   "dur": 6.84,
+   "cov": 6.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m258.jpg"
+  },
+  {
+   "id": "m260",
+   "start": 1293.81,
+   "dur": 2.7,
+   "cov": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m258.jpg"
+  },
+  {
+   "id": "m261",
+   "start": 1296.51,
+   "dur": 3.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m261.mp4"
+  },
+  {
+   "id": "m262",
+   "start": 1299.97,
+   "dur": 3.45,
+   "cov": 3.45,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m262.jpg"
+  },
+  {
+   "id": "m263",
+   "start": 1303.42,
+   "dur": 5.36,
+   "cov": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m263.jpg"
+  },
+  {
+   "id": "m264",
+   "start": 1308.79,
+   "dur": 4.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m264.mp4"
+  },
+  {
+   "id": "cmp_69_checklist",
+   "start": 1308.79,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "image": "img/aguacatenoche/aguacatenoche_m264.jpg",
+   "title": "Anótalo y pégalo en el refrigerador",
+   "tone": "teal",
+   "items": [
+    {
+     "text": "El número de puños de esta mañana",
+     "state": "done"
+    },
+    {
+     "text": "Los segundos del pellizco, con la fecha",
+     "state": "done"
+    },
+    {
+     "text": "A las ocho semanas tu memoria te va a mentir. El papel no",
+     "state": "warn"
+    }
+   ]
+  },
+  {
+   "id": "m264_t",
+   "start": 1312.72,
+   "dur": 1.03,
+   "cov": 1.03,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m264.jpg"
+  },
+  {
+   "id": "m265",
+   "start": 1313.74,
+   "dur": 5.36,
+   "cov": 5.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m264.jpg"
+  },
+  {
+   "id": "m266",
+   "start": 1319.11,
+   "dur": 3.98,
+   "cov": 3.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m264.jpg"
+  },
+  {
+   "id": "m267",
+   "start": 1323.09,
+   "dur": 3.44,
+   "cov": 3.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m264.jpg"
+  },
+  {
+   "id": "m268",
+   "start": 1326.53,
+   "dur": 6.94,
+   "cov": 6.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m264.jpg"
+  },
+  {
+   "id": "cmp_70_guidecta",
+   "start": 1326.53,
+   "dur": 11,
+   "key": "s",
+   "kind": "guidecta",
+   "cover": "img/aguacatenoche_guia.jpg",
+   "qr": "img/qr_aguacatenoche.png",
+   "domain": "www.drfederer.com",
+   "scanTitle": "Escanea el código",
+   "scanSub": "o toca el enlace de la descripción",
+   "title": "La guía del Dr. Federer",
+   "kicker": "CON COSAS DEL MERCADO",
+   "desc": "El paso a paso completo de la piel después de los sesenta. No de la farmacia."
+  },
+  {
+   "id": "m269",
+   "start": 1333.46,
+   "dur": 4.98,
+   "cov": 4.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m269.jpg"
+  },
+  {
+   "id": "m270",
+   "start": 1338.44,
+   "dur": 2,
+   "cov": 2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m269.jpg"
+  },
+  {
+   "id": "m271",
+   "start": 1340.44,
+   "dur": 5.64,
+   "cov": 5.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m271.jpg"
+  },
+  {
+   "id": "cmp_71_frasecinetica",
+   "start": 1340.44,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ESCRIBE"
+    },
+    {
+     "t": "TU"
+    },
+    {
+     "t": "NÚMERO",
+     "hl": true
+    }
+   ],
+   "perWord": 15,
+   "tone": "teal"
+  },
+  {
+   "id": "m272",
+   "start": 1346.09,
+   "dur": 6.08,
+   "cov": 6.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m272.jpg"
+  },
+  {
+   "id": "m273",
+   "start": 1352.16,
+   "dur": 4.26,
+   "cov": 4.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m273.jpg"
+  },
+  {
+   "id": "m274",
+   "start": 1356.42,
+   "dur": 6.28,
+   "cov": 6.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m273.jpg"
+  },
+  {
+   "id": "m275",
+   "start": 1362.7,
+   "dur": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m275.mp4"
+  },
+  {
+   "id": "m276",
+   "start": 1364.66,
+   "dur": 1.96,
+   "cov": 1.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m275.jpg"
+  },
+  {
+   "id": "m277",
+   "start": 1366.63,
+   "dur": 5.92,
+   "cov": 5.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m277.jpg"
+  },
+  {
+   "id": "m278",
+   "start": 1372.55,
+   "dur": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m278.mp4"
+  },
+  {
+   "id": "m279",
+   "start": 1375.55,
+   "dur": 2.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m279.mp4"
+  },
+  {
+   "id": "m280",
+   "start": 1378.44,
+   "dur": 6.66,
+   "cov": 6.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m279.jpg"
+  },
+  {
+   "id": "cmp_72_lowerthird",
+   "start": 1378.44,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "En el próximo video",
+   "kicker": "ESTÁ EN TU BAÑO, NO EN TU COCINA",
+   "desc": "La temperatura del agua con la que te bañas — y por qué le cuesta a tu piel más que el sol.",
+   "tone": "teal"
+  },
+  {
+   "id": "m281",
+   "start": 1385.11,
+   "dur": 5.58,
+   "cov": 5.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m281.jpg"
+  },
+  {
+   "id": "m282",
+   "start": 1390.68,
+   "dur": 5.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m282.mp4"
+  },
+  {
+   "id": "m282_t",
+   "start": 1394.62,
+   "dur": 2.05,
+   "cov": 2.05,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_m282.jpg"
+  },
+  {
+   "id": "m283",
+   "start": 1396.66,
+   "dur": 2.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/aguacatenoche/aguacatenoche_m283.mp4"
+  },
+  {
+   "id": "m284",
+   "start": 1398.85,
+   "dur": 3.66,
+   "cov": 3.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_cierre.jpg"
+  },
+  {
+   "id": "cmp_73_frasecinetica",
+   "start": 1398.85,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "ESTA NOCHE"
+    },
+    {
+     "t": "MEDIO"
+    },
+    {
+     "t": "AGUACATE",
+     "hl": true
+    }
+   ],
+   "perWord": 16,
+   "tone": "teal"
+  },
+  {
+   "id": "m285",
+   "start": 1402.51,
+   "dur": 2.79,
+   "cov": 2.79,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/aguacatenoche/aguacatenoche_h_cierre.jpg"
+  }
+ ]
+}
