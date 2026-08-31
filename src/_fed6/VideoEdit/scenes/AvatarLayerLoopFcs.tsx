@@ -1,5 +1,4 @@
-import { Video } from "@remotion/media";
-import { AbsoluteFill, Loop, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
+import { AbsoluteFill, Loop, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
 import { COLORS } from "../theme";
 
 // ── AVATAR LAYER ──────────────────────────────────────────────────────────────
@@ -164,7 +163,7 @@ export const AvatarLayerLoopFcs: React.FC<{
         }}
       >
         <Loop durationInFrames={avatarFrames} layout="none">
-          <Video
+          <OffthreadVideo
             src={staticFile(src)}
             muted
             style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
