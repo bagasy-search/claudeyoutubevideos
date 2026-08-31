@@ -29,7 +29,7 @@ export const CMP = (G) => [
   text: "Yo levanté paredes enteras. Y no pude levantar veinte kilos de nieta." },
 { phrase: "son los años", kind: "frasecinetica",
   words: [{ t: "SON" }, { t: "LOS" }, { t: "AÑOS" }, { t: "NO", hl: true }, { t: "ALCANZA", hl: true }], perWord: 15, tone: "warn" },
-{ phrase: "Desayuno: mate con dos galletitas", kind: "splitlist", title: "Un día entero de comida", items: [
+{ phrase: "Desayuno: mate con dos galletitas", kind: "checklist", title: "Un día entero de comida", items: [
   "Mate con dos galletitas de agua",
   "Media mañana: nada",
   "Un plato de fideos con salsa",
@@ -154,7 +154,7 @@ export const CMP = (G) => [
   myth: "«Con esto ya no necesito carne»", truth: "No la reemplaza. Viene a llenar el hueco donde hoy hay fideos, puré y pan: ahí no hay nada.",
   flipPhrase: "Sirve como refuerzo y sirve como puente" },
 { phrase: "La gente le pone una cucharadita al yogur", kind: "errorstinger", number: "5", eyebrow: "ERROR", title: "Una cucharadita es decorativa" },
-{ phrase: "La mayoría de la gente grande hace todo lo contrario", kind: "splitlist", title: "El día dado vuelta", items: [
+{ phrase: "La mayoría de la gente grande hace todo lo contrario", kind: "checklist", title: "El día dado vuelta", items: [
   "Desayuna casi nada",
   "Almuerza poco",
   "Cena la comida más grande del día",
@@ -245,14 +245,14 @@ export const CMP = (G) => [
   words: [{ t: "UNA" }, { t: "CAÍDA" }, { t: "ES" }, { t: "UN" }, { t: "AVISO", hl: true }], perWord: 15, tone: "warn" },
 
 // ══ S15 · los dos grupos ══════════════════════════════════════════════════
-{ phrase: "Vos te parás de la silla sin manos", kind: "splitlist", title: "Grupo uno: proteger lo que tenés", items: [
+{ phrase: "Vos te parás de la silla sin manos", kind: "checklist", title: "Grupo uno: proteger lo que tenés", items: [
   "Te parás sin manos y abrís los frascos",
   "Recuperar cuesta el triple que mantener",
   "Desayuno con proteína",
   "Tus cinco sentadillas de silla",
   "Y seguí con tu vida",
 ] },
-{ phrase: "Vos ya contaste tres", kind: "splitlist", title: "Grupo dos: empezar hoy", tone: "warn", items: [
+{ phrase: "Vos ya contaste tres", kind: "checklist", title: "Grupo dos: empezar hoy", tone: "warn", items: [
   "Sacá turno con tu médico",
   "Desayuno con proteína desde mañana",
   "Cinco sentadillas de silla por día",
@@ -268,7 +268,7 @@ export const CMP = (G) => [
   words: [{ t: "VAN" }, { t: "A" }, { t: "PASAR" }, { t: "IGUAL", hl: true }], perWord: 16, tone: "teal" },
 
 // ══ S16 · cierre ══════════════════════════════════════════════════════════
-{ phrase: "Don Aníbal hizo dos cosas", kind: "splitlist", title: "Lo que hizo, y nada más", items: [
+{ phrase: "Don Aníbal hizo dos cosas", kind: "checklist", title: "Lo que hizo, y nada más", items: [
   "Cambió el desayuno: papilla con el huevo adentro",
   "Todos los días, sin faltar",
   "Sentadillas de silla mientras se calentaba el agua",
