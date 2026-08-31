@@ -125,7 +125,7 @@ export const MainFedguante: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* AUDIO MASTER — avatar real (0..18:49) + cola de Fish. El avatar va MUTEADO. */}
-      <Audio src={staticFile("fedguante.wav")} />
+      <Audio src={staticFile("fedguante.m4a")} />
 
       {/* CAPA 1 — CLIPS (agnes, animación leve de su propia foto) */}
       {FEDGUANTE_BROLL.map((b) => {
