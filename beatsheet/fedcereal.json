@@ -1,0 +1,6405 @@
+{
+ "video": "fedcereal",
+ "avatar": "fedcereal_opt.mp4",
+ "theme": "medico",
+ "beats": [
+  {
+   "id": "a001",
+   "start": 2.54,
+   "dur": 3.76,
+   "cov": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a001.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a002_t",
+   "start": 6.3,
+   "dur": 1.36,
+   "cov": 1.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a002_p.jpg"
+  },
+  {
+   "id": "a012",
+   "start": 7.66,
+   "dur": 16.2,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a012.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_2_mitoverdad",
+   "start": 7.66,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/fedcereal_a012_p.jpg",
+   "myth": "«La balanza dice que estoy igual»",
+   "truth": "Podés perder músculo y ganar grasa a la vez. El número no se mueve; adentro cambió todo.",
+   "flipAt": 107
+  },
+  {
+   "id": "cmp_6_frasecinetica",
+   "start": 9.68,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "SON"
+    },
+    {
+     "t": "LOS"
+    },
+    {
+     "t": "AÑOS"
+    },
+    {
+     "t": "NO",
+     "hl": true
+    },
+    {
+     "t": "ALCANZA",
+     "hl": true
+    }
+   ],
+   "perWord": 15,
+   "tone": "warn"
+  },
+  {
+   "id": "cmp_0_frasecinetica",
+   "start": 12.48,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "NO"
+    },
+    {
+     "t": "TE"
+    },
+    {
+     "t": "DUELE"
+    },
+    {
+     "t": "TE"
+    },
+    {
+     "t": "FALTA"
+    },
+    {
+     "t": "FUERZA",
+     "hl": true
+    }
+   ],
+   "perWord": 14,
+   "tone": "teal"
+  },
+  {
+   "id": "a012_t",
+   "start": 12.58,
+   "dur": 11.28,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a012_p.jpg"
+  },
+  {
+   "id": "a003",
+   "start": 23.86,
+   "dur": 10.16,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a003.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a003_t",
+   "start": 28.78,
+   "dur": 5.24,
+   "cov": 5.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a003_p.jpg"
+  },
+  {
+   "id": "a004",
+   "start": 34.02,
+   "dur": 6.42,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a004.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_1_checklist",
+   "start": 34.02,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Lo que ya estás notando",
+   "items": [
+    "Te empujás con las manos para salir del sillón",
+    "La bolsa la cambiás de mano a mitad de cuadra",
+    "El frasco te lo abre otro",
+    "Buscás el pasamanos antes de subir el pie",
+    "La ropa te queda floja en el brazo"
+   ]
+  },
+  {
+   "id": "a004_t",
+   "start": 38.94,
+   "dur": 1.5,
+   "cov": 1.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a004_p.jpg"
+  },
+  {
+   "id": "a005",
+   "start": 40.44,
+   "dur": 2.88,
+   "cov": 2.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a005.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a006",
+   "start": 43.32,
+   "dur": 3.48,
+   "cov": 3.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a006.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a007",
+   "start": 46.8,
+   "dur": 11.78,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a007.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a007_t",
+   "start": 51.72,
+   "dur": 6.86,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a007_p.jpg"
+  },
+  {
+   "id": "a008",
+   "start": 58.58,
+   "dur": 8.3,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a008.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a008_v2",
+   "start": 63.5,
+   "dur": 3.38,
+   "cov": 3.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a008.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a009",
+   "start": 66.88,
+   "dur": 6.38,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a009.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a009_t",
+   "start": 71.8,
+   "dur": 1.46,
+   "cov": 1.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a009_p.jpg"
+  },
+  {
+   "id": "a010",
+   "start": 73.26,
+   "dur": 2.84,
+   "cov": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a010.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a011",
+   "start": 76.1,
+   "dur": 13.14,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a011.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a011_t",
+   "start": 81.02,
+   "dur": 8.22,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a011_p.jpg"
+  },
+  {
+   "id": "cmp_3_nametag",
+   "start": 88.72,
+   "dur": 6,
+   "key": "s",
+   "kind": "nametag",
+   "name": "Dr. Federer",
+   "role": "Salud para mayores de 60",
+   "image": "img/fedcereal_f24.jpg"
+  },
+  {
+   "id": "a013",
+   "start": 89.24,
+   "dur": 2.64,
+   "cov": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a013.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_4_lowerthird",
+   "start": 91.18,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Un cereal que casi nadie tiene",
+   "kicker": "TE LO DIGO EN UN RATO",
+   "desc": "Primero por qué se te va el músculo. Si te doy el nombre ahora, lo vas a preparar mal y lo vas a dejar.",
+   "tone": "teal"
+  },
+  {
+   "id": "a014",
+   "start": 91.88,
+   "dur": 3.32,
+   "cov": 3.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a014.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a015",
+   "start": 95.2,
+   "dur": 10.38,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a015.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a015_t",
+   "start": 100.12,
+   "dur": 5.46,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a015_p.jpg"
+  },
+  {
+   "id": "a016",
+   "start": 105.58,
+   "dur": 22.68,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a016.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a016_t",
+   "start": 110.5,
+   "dur": 17.76,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a016_p.jpg"
+  },
+  {
+   "id": "a017_t",
+   "start": 128.26,
+   "dur": 5.8,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a017_p.jpg"
+  },
+  {
+   "id": "a018",
+   "start": 134.06,
+   "dur": 21.22,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a018.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a018_t",
+   "start": 138.98,
+   "dur": 16.3,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a018_p.jpg"
+  },
+  {
+   "id": "a019",
+   "start": 155.28,
+   "dur": 1.68,
+   "cov": 1.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a019.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a020",
+   "start": 156.96,
+   "dur": 11.56,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a020.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a020_t",
+   "start": 161.88,
+   "dur": 6.64,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a020_p.jpg"
+  },
+  {
+   "id": "a021",
+   "start": 168.52,
+   "dur": 9.94,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a021.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a021_t",
+   "start": 173.44,
+   "dur": 5.02,
+   "cov": 5.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a021_p.jpg"
+  },
+  {
+   "id": "a022",
+   "start": 178.46,
+   "dur": 7.54,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a022.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a022_t",
+   "start": 183.38,
+   "dur": 2.62,
+   "cov": 2.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a022_p.jpg"
+  },
+  {
+   "id": "a034",
+   "start": 186,
+   "dur": 2.02,
+   "cov": 2.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a034.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a023",
+   "start": 188.02,
+   "dur": 10.22,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a023.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a023_t",
+   "start": 192.94,
+   "dur": 5.3,
+   "cov": 5.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a023_p.jpg"
+  },
+  {
+   "id": "a024",
+   "start": 198.24,
+   "dur": 10.4,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a024.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a024_t",
+   "start": 203.16,
+   "dur": 5.48,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a024_p.jpg"
+  },
+  {
+   "id": "a025_v2",
+   "start": 208.64,
+   "dur": 6.7,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a025.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a025_t",
+   "start": 212.56,
+   "dur": 2.78,
+   "cov": 2.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a025_p.jpg"
+  },
+  {
+   "id": "a026",
+   "start": 215.34,
+   "dur": 6,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a026.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a026_t",
+   "start": 220.26,
+   "dur": 1.08,
+   "cov": 1.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a026_p.jpg"
+  },
+  {
+   "id": "a027",
+   "start": 221.34,
+   "dur": 5.52,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a027.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_5_quote",
+   "start": 221.34,
+   "dur": 8,
+   "key": "s",
+   "kind": "quote",
+   "image": "img/fedcereal_a027_p.jpg",
+   "text": "Yo levanté paredes enteras. Y no pude levantar veinte kilos de nieta."
+  },
+  {
+   "id": "a027_t",
+   "start": 226.26,
+   "dur": 0.6,
+   "cov": 0.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a027_p.jpg"
+  },
+  {
+   "id": "a028",
+   "start": 226.86,
+   "dur": 10.52,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a028.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a028_v2",
+   "start": 231.78,
+   "dur": 5.6,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a028.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a028_t",
+   "start": 235.7,
+   "dur": 1.68,
+   "cov": 1.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a028_p.jpg"
+  },
+  {
+   "id": "a029",
+   "start": 237.38,
+   "dur": 1.16,
+   "cov": 1.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a029.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a030",
+   "start": 238.54,
+   "dur": 12.6,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a030.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a030_v2",
+   "start": 243.46,
+   "dur": 7.68,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a030.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a030_t",
+   "start": 247.38,
+   "dur": 3.76,
+   "cov": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a030_p.jpg"
+  },
+  {
+   "id": "a031",
+   "start": 251.14,
+   "dur": 44.88,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a031.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a031_t",
+   "start": 256.06,
+   "dur": 39.96,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a031_p.jpg"
+  },
+  {
+   "id": "a032",
+   "start": 296.02,
+   "dur": 16.92,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a032.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a032_t",
+   "start": 300.94,
+   "dur": 12,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a032_p.jpg"
+  },
+  {
+   "id": "a033",
+   "start": 312.94,
+   "dur": 25.04,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a033.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a033_t",
+   "start": 317.86,
+   "dur": 20.12,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a033_p.jpg"
+  },
+  {
+   "id": "a035",
+   "start": 337.98,
+   "dur": 14.08,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a035.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a035_t",
+   "start": 342.9,
+   "dur": 9.16,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a035_p.jpg"
+  },
+  {
+   "id": "a036",
+   "start": 352.06,
+   "dur": 13.24,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a036.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a036_t",
+   "start": 356.98,
+   "dur": 8.32,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a036_p.jpg"
+  },
+  {
+   "id": "a037",
+   "start": 365.3,
+   "dur": 5.8,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a037.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_7_splitlist",
+   "start": 365.3,
+   "dur": 9,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "Un día entero de comida",
+   "items": [
+    "Mate con dos galletitas de agua",
+    "Media mañana: nada",
+    "Un plato de fideos con salsa",
+    "Mate otra vez, con una tostada",
+    "Sopa de sobre y un pedazo de pan",
+    "Carne: sólo los domingos"
+   ]
+  },
+  {
+   "id": "a037_t",
+   "start": 370.22,
+   "dur": 0.88,
+   "cov": 0.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a037_p.jpg"
+  },
+  {
+   "id": "a038",
+   "start": 371.1,
+   "dur": 8.22,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a038.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a038_v2",
+   "start": 376.02,
+   "dur": 3.3,
+   "cov": 3.3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a038.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a039",
+   "start": 379.32,
+   "dur": 13.66,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a039.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a039_t",
+   "start": 384.24,
+   "dur": 8.74,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a039_p.jpg"
+  },
+  {
+   "id": "a040",
+   "start": 392.98,
+   "dur": 6.98,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a040.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_8_callout",
+   "start": 395.6,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/fedcereal_a041_p.jpg",
+   "eyebrow": "ESTABA LLENO",
+   "figure": "SIN LADRILLOS",
+   "caption": "La panza llena no es lo mismo que el material puesto."
+  },
+  {
+   "id": "a040_t",
+   "start": 397.9,
+   "dur": 2.06,
+   "cov": 2.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a040_p.jpg"
+  },
+  {
+   "id": "a041_v2",
+   "start": 399.96,
+   "dur": 4.22,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a041.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a042",
+   "start": 404.18,
+   "dur": 20.6,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a042.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a042_v2",
+   "start": 409.1,
+   "dur": 15.68,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a042.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a042_t",
+   "start": 413.02,
+   "dur": 11.76,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a042_p.jpg"
+  },
+  {
+   "id": "a043",
+   "start": 424.78,
+   "dur": 12.04,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a043.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a043_t",
+   "start": 429.7,
+   "dur": 7.12,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a043_p.jpg"
+  },
+  {
+   "id": "a044",
+   "start": 436.82,
+   "dur": 11.66,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a044.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a044_t",
+   "start": 441.74,
+   "dur": 6.74,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a044_p.jpg"
+  },
+  {
+   "id": "a045_t",
+   "start": 448.48,
+   "dur": 6.3,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a045_p.jpg"
+  },
+  {
+   "id": "cmp_9_pizarraexplica",
+   "start": 448.48,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "PARA QUÉ SIRVE DE VERDAD",
+   "title": "Tu músculo hace tres cosas",
+   "items": [
+    {
+     "title": "Es tu motor",
+     "sub": "te para de la silla y te sube al colectivo"
+    },
+    {
+     "title": "Es tu despensa",
+     "sub": "de ahí come tu cuerpo cuando te enfermás"
+    },
+    {
+     "title": "Es tu esponja",
+     "sub": "ahí se mete el azúcar de lo que comiste"
+    }
+   ]
+  },
+  {
+   "id": "a046",
+   "start": 454.78,
+   "dur": 14.64,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a046.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a046_t",
+   "start": 459.7,
+   "dur": 9.72,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a046_p.jpg"
+  },
+  {
+   "id": "a047",
+   "start": 469.42,
+   "dur": 3.38,
+   "cov": 3.38,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a047.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a048_t",
+   "start": 472.8,
+   "dur": 6.62,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a048_p.jpg"
+  },
+  {
+   "id": "a049",
+   "start": 479.42,
+   "dur": 8.58,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a049.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a049_t",
+   "start": 484.34,
+   "dur": 3.66,
+   "cov": 3.66,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a049_p.jpg"
+  },
+  {
+   "id": "a050",
+   "start": 488,
+   "dur": 11.14,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a050.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a050_t",
+   "start": 492.92,
+   "dur": 6.22,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a050_p.jpg"
+  },
+  {
+   "id": "a051",
+   "start": 499.14,
+   "dur": 11.66,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a051.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a051_t",
+   "start": 504.06,
+   "dur": 6.74,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a051_p.jpg"
+  },
+  {
+   "id": "a052",
+   "start": 510.8,
+   "dur": 16.14,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a052.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a052_t",
+   "start": 515.72,
+   "dur": 11.22,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a052_p.jpg"
+  },
+  {
+   "id": "cmp_10_ingredientduo",
+   "start": 516.56,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "ingredientduo",
+   "leftImg": "img/fedcereal_a051_p.jpg",
+   "rightImg": "img/fedcereal_a052_p.jpg"
+  },
+  {
+   "id": "a053",
+   "start": 526.94,
+   "dur": 11.72,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a053.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a053_t",
+   "start": 531.86,
+   "dur": 6.8,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a053_p.jpg"
+  },
+  {
+   "id": "a054_t",
+   "start": 538.66,
+   "dur": 17.34,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a054_p.jpg"
+  },
+  {
+   "id": "cmp_11_lowerthird",
+   "start": 538.66,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Sarcopenia",
+   "kicker": "CÓMO SE LLAMA",
+   "desc": "Sarco, carne. Penia, pérdida. Se acelera después de los 60 y casi nadie la nombra.",
+   "tone": "warn"
+  },
+  {
+   "id": "a055",
+   "start": 556,
+   "dur": 9.5,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a055.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a055_t",
+   "start": 560.92,
+   "dur": 4.58,
+   "cov": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a055_p.jpg"
+  },
+  {
+   "id": "a056",
+   "start": 565.5,
+   "dur": 11.36,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a056.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a056_t",
+   "start": 570.42,
+   "dur": 6.44,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a056_p.jpg"
+  },
+  {
+   "id": "a057",
+   "start": 576.86,
+   "dur": 9.36,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a057.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_12_pizarraexplica",
+   "start": 579.78,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "POR QUÉ NO ALCANZA CON COMER MÁS",
+   "title": "El músculo se volvió sordo",
+   "items": [
+    {
+     "title": "A los 25",
+     "sub": "comés un huevo y el músculo se prende"
+    },
+    {
+     "title": "A los 70",
+     "sub": "comés lo mismo y no pasa nada"
+    },
+    {
+     "title": "No es que no quiera",
+     "sub": "es que no escucha"
+    },
+    {
+     "title": "Hay que hablarle fuerte",
+     "sub": "en una sola comida, no en migas"
+    }
+   ]
+  },
+  {
+   "id": "a057_t",
+   "start": 581.78,
+   "dur": 4.44,
+   "cov": 4.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a057_p.jpg"
+  },
+  {
+   "id": "a058",
+   "start": 586.22,
+   "dur": 14.18,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a058.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a058_t",
+   "start": 591.14,
+   "dur": 9.26,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a058_p.jpg"
+  },
+  {
+   "id": "a059",
+   "start": 600.4,
+   "dur": 5,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a059.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a060_t",
+   "start": 605.4,
+   "dur": 10.18,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a060_p.jpg"
+  },
+  {
+   "id": "cmp_13_pizarraexplica",
+   "start": 605.4,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "LA OBRA",
+   "title": "Quién es quién adentro tuyo",
+   "items": [
+    {
+     "title": "Los ladrillos",
+     "sub": "son los aminoácidos de la proteína"
+    },
+    {
+     "title": "El capataz",
+     "sub": "es uno solo y se llama leucina"
+    },
+    {
+     "title": "Sin capataz",
+     "sub": "los ladrillos quedan apilados en el piso"
+    },
+    {
+     "title": "A los 75",
+     "sub": "el silbato está gastado: hay que mandar más"
+    }
+   ]
+  },
+  {
+   "id": "a061",
+   "start": 615.58,
+   "dur": 20.56,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a061.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a061_t",
+   "start": 620.5,
+   "dur": 15.64,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a061_p.jpg"
+  },
+  {
+   "id": "a062",
+   "start": 636.14,
+   "dur": 18.28,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a062.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a062_t",
+   "start": 641.06,
+   "dur": 13.36,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a062_p.jpg"
+  },
+  {
+   "id": "a063_t",
+   "start": 654.42,
+   "dur": 11.18,
+   "cov": 4.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a063_p.jpg"
+  },
+  {
+   "id": "cmp_14_frasecinetica",
+   "start": 664.1,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "DIEZ"
+    },
+    {
+     "t": "VECES"
+    },
+    {
+     "t": "DESPACIO"
+    },
+    {
+     "t": "NO"
+    },
+    {
+     "t": "PRENDE",
+     "hl": true
+    }
+   ],
+   "perWord": 13,
+   "tone": "warn"
+  },
+  {
+   "id": "a064",
+   "start": 665.6,
+   "dur": 5.18,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a064.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a065",
+   "start": 670.78,
+   "dur": 5.2,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a065.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a066",
+   "start": 675.98,
+   "dur": 11.16,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a066.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a066_t",
+   "start": 680.9,
+   "dur": 6.24,
+   "cov": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a066_p.jpg"
+  },
+  {
+   "id": "a067_t",
+   "start": 687.14,
+   "dur": 8.52,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a067_p.jpg"
+  },
+  {
+   "id": "a067_r1",
+   "start": 693.14,
+   "dur": 2.52,
+   "cov": 2.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a067_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a068",
+   "start": 695.66,
+   "dur": 5.74,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a068.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a068_t",
+   "start": 700.58,
+   "dur": 0.82,
+   "cov": 0.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a068_p.jpg"
+  },
+  {
+   "id": "a069",
+   "start": 701.4,
+   "dur": 9.82,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a069.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_15_callout",
+   "start": 701.4,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/fedcereal_a068_p.jpg",
+   "eyebrow": "EL LADRILLO QUE FALTA",
+   "figure": "LISINA",
+   "caption": "Es esencial: tu cuerpo no la fabrica. O la comés, o no la tenés."
+  },
+  {
+   "id": "a069_t",
+   "start": 706.32,
+   "dur": 4.9,
+   "cov": 4.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a069_p.jpg"
+  },
+  {
+   "id": "a070",
+   "start": 711.22,
+   "dur": 6.24,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a070.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a070_t",
+   "start": 716.14,
+   "dur": 1.32,
+   "cov": 1.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a070_p.jpg"
+  },
+  {
+   "id": "a071_t",
+   "start": 717.46,
+   "dur": 9.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a071_p.jpg"
+  },
+  {
+   "id": "a071_r1",
+   "start": 723.46,
+   "dur": 3.56,
+   "cov": 3.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a071_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a072",
+   "start": 727.02,
+   "dur": 3.78,
+   "cov": 3.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a072.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a073_t",
+   "start": 730.8,
+   "dur": 12.46,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a073_p.jpg"
+  },
+  {
+   "id": "cmp_16_bars",
+   "start": 734.02,
+   "dur": 8,
+   "key": "s",
+   "kind": "bars",
+   "image": "img/fedcereal_a067_p.jpg",
+   "title": "Lisina en el cereal de todos los días",
+   "unit": "",
+   "bars": [
+    {
+     "label": "Trigo (pan, galletitas, fideos)",
+     "value": 25,
+     "tone": "danger",
+     "note": "el agujero"
+    },
+    {
+     "label": "Maíz",
+     "value": 28,
+     "tone": "danger"
+    },
+    {
+     "label": "Arroz",
+     "value": 38
+    },
+    {
+     "label": "Amaranto",
+     "value": 100,
+     "winner": true,
+     "note": "el ladrillo que falta"
+    }
+   ]
+  },
+  {
+   "id": "a073_r1",
+   "start": 736.8,
+   "dur": 6.46,
+   "cov": 6.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a073_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a074",
+   "start": 743.26,
+   "dur": 13.92,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a074.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a074_t",
+   "start": 748.18,
+   "dur": 9,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a074_p.jpg"
+  },
+  {
+   "id": "a074_r1",
+   "start": 754.18,
+   "dur": 3,
+   "cov": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a074.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a075_t",
+   "start": 757.18,
+   "dur": 11.44,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a075_p.jpg"
+  },
+  {
+   "id": "cmp_17_guardaesto",
+   "start": 757.18,
+   "dur": 10,
+   "key": "s",
+   "kind": "guardaesto",
+   "title": "AMARANTO",
+   "prompt": "Anotá esto",
+   "items": [
+    "Se vende también como KIWICHA",
+    "Semilla entera, no harina",
+    "En dietéticas y casas de productos regionales"
+   ]
+  },
+  {
+   "id": "a075_r1",
+   "start": 763.18,
+   "dur": 5.44,
+   "cov": 5.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a075_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a076",
+   "start": 768.62,
+   "dur": 3.54,
+   "cov": 3.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a076.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a077",
+   "start": 772.16,
+   "dur": 18.28,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a077.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a077_t",
+   "start": 777.08,
+   "dur": 13.36,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a077_p.jpg"
+  },
+  {
+   "id": "a077_r1",
+   "start": 783.08,
+   "dur": 7.36,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a077.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a077_r2",
+   "start": 787.88,
+   "dur": 2.56,
+   "cov": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a077_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a078",
+   "start": 790.44,
+   "dur": 3.5,
+   "cov": 3.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a078.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a079_t",
+   "start": 793.94,
+   "dur": 7.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a079_p.jpg"
+  },
+  {
+   "id": "a079_r1",
+   "start": 799.94,
+   "dur": 1.32,
+   "cov": 1.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a079_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a080_t",
+   "start": 801.26,
+   "dur": 11.64,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a080_p.jpg"
+  },
+  {
+   "id": "a080_r1",
+   "start": 807.26,
+   "dur": 5.64,
+   "cov": 5.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a080_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a081",
+   "start": 812.9,
+   "dur": 9.78,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a081.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_18_lineatiempo",
+   "start": 812.9,
+   "dur": 11,
+   "key": "s",
+   "kind": "lineatiempo",
+   "title": "Quinientos años en el olvido",
+   "marks": [
+    {
+     "label": "Comida de un imperio",
+     "sub": "se pagaban tributos con la semilla",
+     "image": "img/fedcereal_a079_p.jpg"
+    },
+    {
+     "label": "Prohibido",
+     "sub": "cortaron los cultivos y quemaron los campos",
+     "image": "img/fedcereal_a081_p.jpg",
+     "alert": true
+    },
+    {
+     "label": "Yuyo del camino",
+     "sub": "creció solo al costado de la ruta",
+     "image": "img/fedcereal_a082_p.jpg"
+    },
+    {
+     "label": "Comida de astronauta",
+     "sub": "estudiado por lo eficiente que es",
+     "image": "img/fedcereal_a084_p.jpg"
+    }
+   ]
+  },
+  {
+   "id": "a081_t",
+   "start": 817.82,
+   "dur": 4.86,
+   "cov": 4.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a081_p.jpg"
+  },
+  {
+   "id": "a082",
+   "start": 822.68,
+   "dur": 5.66,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a082.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a082_t",
+   "start": 827.6,
+   "dur": 0.74,
+   "cov": 0.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a082_p.jpg"
+  },
+  {
+   "id": "a083_t",
+   "start": 828.34,
+   "dur": 6.26,
+   "cov": 6.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a083_p.jpg"
+  },
+  {
+   "id": "a084",
+   "start": 834.6,
+   "dur": 19.34,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a084.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a084_t",
+   "start": 839.52,
+   "dur": 14.42,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a084_p.jpg"
+  },
+  {
+   "id": "a084_r1",
+   "start": 845.52,
+   "dur": 8.42,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a084.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a084_r2",
+   "start": 850.32,
+   "dur": 3.62,
+   "cov": 3.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a084_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a085_t",
+   "start": 853.94,
+   "dur": 9.08,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a085_p.jpg"
+  },
+  {
+   "id": "cmp_19_frasecinetica",
+   "start": 853.94,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "TIENE"
+    },
+    {
+     "t": "LA"
+    },
+    {
+     "t": "LISINA",
+     "hl": true
+    },
+    {
+     "t": "QUE"
+    },
+    {
+     "t": "LOS"
+    },
+    {
+     "t": "OTROS"
+    },
+    {
+     "t": "NO"
+    }
+   ],
+   "perWord": 12,
+   "tone": "teal"
+  },
+  {
+   "id": "a085_r1",
+   "start": 859.94,
+   "dur": 3.08,
+   "cov": 3.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a085_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a087_t",
+   "start": 863.02,
+   "dur": 5.2,
+   "cov": 5.2,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a087_p.jpg"
+  },
+  {
+   "id": "a086",
+   "start": 868.22,
+   "dur": 19.2,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a086.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a086_t",
+   "start": 873.14,
+   "dur": 14.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a086_p.jpg"
+  },
+  {
+   "id": "a086_r1",
+   "start": 879.14,
+   "dur": 8.28,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a086.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "cmp_20_bars",
+   "start": 881.68,
+   "dur": 8,
+   "key": "s",
+   "kind": "bars",
+   "image": "img/fedcereal_a087_p.jpg",
+   "title": "Proteína por cada 100 gramos",
+   "unit": "g",
+   "bars": [
+    {
+     "label": "Arroz blanco",
+     "value": 7,
+     "tone": "danger"
+    },
+    {
+     "label": "Maíz",
+     "value": 9
+    },
+    {
+     "label": "Trigo",
+     "value": 10,
+     "note": "y con el agujero de lisina"
+    },
+    {
+     "label": "Avena",
+     "value": 12
+    },
+    {
+     "label": "Amaranto",
+     "value": 14,
+     "winner": true
+    }
+   ]
+  },
+  {
+   "id": "a086_r2",
+   "start": 883.94,
+   "dur": 3.48,
+   "cov": 3.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a086_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a088",
+   "start": 887.42,
+   "dur": 4.46,
+   "cov": 4.46,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a088.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a089",
+   "start": 891.88,
+   "dur": 13.58,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a089.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a089_v2",
+   "start": 896.8,
+   "dur": 8.66,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a089.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a089_t",
+   "start": 900.72,
+   "dur": 4.74,
+   "cov": 4.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a089_p.jpg"
+  },
+  {
+   "id": "a090",
+   "start": 905.46,
+   "dur": 10.74,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a090.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a090_t",
+   "start": 910.38,
+   "dur": 5.82,
+   "cov": 5.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a090_p.jpg"
+  },
+  {
+   "id": "a091_t",
+   "start": 916.2,
+   "dur": 7.6,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a091_p.jpg"
+  },
+  {
+   "id": "cmp_21_stat",
+   "start": 916.2,
+   "dur": 7,
+   "key": "s",
+   "kind": "stat",
+   "image": "img/fedcereal_a091_p.jpg",
+   "value": 100,
+   "unit": "g",
+   "label": "de amaranto tienen más calcio que un vaso de leche",
+   "tone": "teal"
+  },
+  {
+   "id": "a091_r1",
+   "start": 922.2,
+   "dur": 1.6,
+   "cov": 1.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a091_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a092",
+   "start": 923.8,
+   "dur": 12.56,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a092.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a092_t",
+   "start": 928.72,
+   "dur": 7.64,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a092_p.jpg"
+  },
+  {
+   "id": "a092_r1",
+   "start": 934.72,
+   "dur": 1.64,
+   "cov": 1.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a092.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a093",
+   "start": 936.36,
+   "dur": 8.66,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a093.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a093_t",
+   "start": 941.28,
+   "dur": 3.74,
+   "cov": 3.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a093_p.jpg"
+  },
+  {
+   "id": "a094",
+   "start": 945.02,
+   "dur": 9,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a094.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a094_t",
+   "start": 949.94,
+   "dur": 4.08,
+   "cov": 4.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a094_p.jpg"
+  },
+  {
+   "id": "cmp_22_checklist",
+   "start": 952.76,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Lo que además trae",
+   "items": [
+    "Hierro, con la anemia que se ve a esta edad",
+    "Calcio, más que un vaso de leche",
+    "Magnesio, el que relaja el músculo",
+    "Fibra, más que la avena",
+    "Cero gluten"
+   ]
+  },
+  {
+   "id": "a095_t",
+   "start": 954.02,
+   "dur": 4.54,
+   "cov": 4.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a095_p.jpg"
+  },
+  {
+   "id": "a096",
+   "start": 958.56,
+   "dur": 25.98,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a096.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a096_t",
+   "start": 963.48,
+   "dur": 21.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a096_p.jpg"
+  },
+  {
+   "id": "a096_r1",
+   "start": 969.48,
+   "dur": 15.06,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a096.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a096_r2",
+   "start": 974.28,
+   "dur": 10.26,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a096_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a096_r3",
+   "start": 980.28,
+   "dur": 4.26,
+   "cov": 4.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a096.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a097",
+   "start": 984.54,
+   "dur": 10.7,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a097.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a097_t",
+   "start": 989.46,
+   "dur": 5.78,
+   "cov": 5.78,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a097_p.jpg"
+  },
+  {
+   "id": "a098",
+   "start": 995.24,
+   "dur": 8.64,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a098.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_23_process",
+   "start": 997.2,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "title": "La prueba de la silla",
+   "steps": [
+    {
+     "title": "Sentate en el borde",
+     "desc": "silla sin apoyabrazos, espalda derecha"
+    },
+    {
+     "title": "Parate sin usar las manos",
+     "desc": "sin apoyarte en las rodillas ni en la mesa"
+    },
+    {
+     "title": "Mirá si te hamacás",
+     "desc": "hamacarse para tomar impulso ya es la señal"
+    }
+   ]
+  },
+  {
+   "id": "a098_t",
+   "start": 1000.16,
+   "dur": 3.72,
+   "cov": 3.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a098_p.jpg"
+  },
+  {
+   "id": "a099_t",
+   "start": 1003.88,
+   "dur": 14.94,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a099_p.jpg"
+  },
+  {
+   "id": "a099_r1",
+   "start": 1009.88,
+   "dur": 8.94,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a099_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a099_r2",
+   "start": 1015.88,
+   "dur": 2.94,
+   "cov": 2.94,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a099_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a100",
+   "start": 1018.82,
+   "dur": 8.88,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a100.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a100_t",
+   "start": 1023.74,
+   "dur": 3.96,
+   "cov": 3.96,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a100_p.jpg"
+  },
+  {
+   "id": "a101",
+   "start": 1027.7,
+   "dur": 15.1,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a101.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_24_callout",
+   "start": 1029.84,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/fedcereal_a101_p.jpg",
+   "eyebrow": "LA MANO ES LA VENTANITA",
+   "figure": "EL APRETÓN",
+   "caption": "El frasco, la canilla dura, escurrir el trapo: la mano habla de todo el cuerpo."
+  },
+  {
+   "id": "a101_t",
+   "start": 1032.62,
+   "dur": 10.18,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a101_p.jpg"
+  },
+  {
+   "id": "a101_r1",
+   "start": 1038.62,
+   "dur": 4.18,
+   "cov": 4.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a101.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a102",
+   "start": 1042.8,
+   "dur": 2.7,
+   "cov": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a102.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a103_t",
+   "start": 1045.5,
+   "dur": 15.98,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a103_p.jpg"
+  },
+  {
+   "id": "a103_r1",
+   "start": 1051.5,
+   "dur": 9.98,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a103_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a103_r2",
+   "start": 1057.5,
+   "dur": 3.98,
+   "cov": 3.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a103_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a104_t",
+   "start": 1061.48,
+   "dur": 6.62,
+   "cov": 6.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a104_p.jpg"
+  },
+  {
+   "id": "cmp_25_lowerthird",
+   "start": 1066.2,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "¿Te alcanza el semáforo?",
+   "kicker": "SEÑAL DE VELOCIDAD",
+   "desc": "Si tenés que apurar el último tramo, muchas veces no es el semáforo: es la velocidad de marcha.",
+   "tone": "warn"
+  },
+  {
+   "id": "a105",
+   "start": 1068.1,
+   "dur": 17.62,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a105.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a105_t",
+   "start": 1073.02,
+   "dur": 12.7,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a105_p.jpg"
+  },
+  {
+   "id": "a105_r1",
+   "start": 1079.02,
+   "dur": 6.7,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a105.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a105_r2",
+   "start": 1083.82,
+   "dur": 1.9,
+   "cov": 1.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a105_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a106",
+   "start": 1085.72,
+   "dur": 4.76,
+   "cov": 4.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a106.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_26_mitoverdad",
+   "start": 1087.84,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/fedcereal_a108_p.jpg",
+   "myth": "«La balanza no se movió, estoy igual»",
+   "truth": "Dos kilos menos de músculo y dos más de grasa dan el mismo número. Y no es lo mismo.",
+   "flipAt": 107
+  },
+  {
+   "id": "a107_t",
+   "start": 1090.48,
+   "dur": 14.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a107_p.jpg"
+  },
+  {
+   "id": "a107_r1",
+   "start": 1096.48,
+   "dur": 8.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a107_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a107_r2",
+   "start": 1102.48,
+   "dur": 2.56,
+   "cov": 2.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a107_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a108",
+   "start": 1105.04,
+   "dur": 11.08,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a108.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a108_t",
+   "start": 1109.96,
+   "dur": 6.16,
+   "cov": 6.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a108_p.jpg"
+  },
+  {
+   "id": "a109",
+   "start": 1116.12,
+   "dur": 8.68,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a109.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_27_frasecinetica",
+   "start": 1120.18,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "EL"
+    },
+    {
+     "t": "MIEDO"
+    },
+    {
+     "t": "LLEGA"
+    },
+    {
+     "t": "ANTES"
+    },
+    {
+     "t": "QUE"
+    },
+    {
+     "t": "LA"
+    },
+    {
+     "t": "CAÍDA",
+     "hl": true
+    }
+   ],
+   "perWord": 13,
+   "tone": "warn"
+  },
+  {
+   "id": "a109_t",
+   "start": 1121.04,
+   "dur": 3.76,
+   "cov": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a109_p.jpg"
+  },
+  {
+   "id": "a110",
+   "start": 1124.8,
+   "dur": 3.28,
+   "cov": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a110.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a111_t",
+   "start": 1128.08,
+   "dur": 15.4,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a111_p.jpg"
+  },
+  {
+   "id": "a111_r1",
+   "start": 1134.08,
+   "dur": 9.4,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a111_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a111_r2",
+   "start": 1140.08,
+   "dur": 3.4,
+   "cov": 3.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a111_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a112",
+   "start": 1143.48,
+   "dur": 45.6,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a112.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a112_t",
+   "start": 1148.4,
+   "dur": 40.68,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a112_p.jpg"
+  },
+  {
+   "id": "a112_r1",
+   "start": 1154.4,
+   "dur": 34.68,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a112.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a112_r2",
+   "start": 1159.2,
+   "dur": 29.88,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a112_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a112_r3",
+   "start": 1165.2,
+   "dur": 23.88,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a112.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a112_r4",
+   "start": 1170,
+   "dur": 19.08,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a112_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a112_r5",
+   "start": 1176,
+   "dur": 13.08,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a112.mp4",
+   "kbPhase": 5,
+   "snd": 1
+  },
+  {
+   "id": "a112_r6",
+   "start": 1180.8,
+   "dur": 8.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a112_p.jpg",
+   "kbPhase": 6
+  },
+  {
+   "id": "a112_r7",
+   "start": 1186.8,
+   "dur": 2.28,
+   "cov": 2.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a112.mp4",
+   "kbPhase": 7,
+   "snd": 1
+  },
+  {
+   "id": "f14_t",
+   "start": 1189.08,
+   "dur": 51.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg"
+  },
+  {
+   "id": "cmp_28_guidecta",
+   "start": 1189.08,
+   "dur": 11,
+   "key": "s",
+   "kind": "guidecta",
+   "kicker": "PARA TENERLO ESCRITO",
+   "title": "La guía completa de la salud después de los 60",
+   "desc": "Las cantidades exactas, las señales para chequearte y la progresión del ejercicio.",
+   "cover": "img/fedcereal_lam5.jpg",
+   "qr": "qr_drfederer.png",
+   "domain": "archivos-federer.vercel.app",
+   "scanTitle": "Está en la descripción",
+   "scanSub": "primer enlace"
+  },
+  {
+   "id": "f14_r1",
+   "start": 1195.08,
+   "dur": 45.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "f14_r2",
+   "start": 1201.08,
+   "dur": 39.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "f14_r3",
+   "start": 1207.08,
+   "dur": 33.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "f14_r4",
+   "start": 1213.08,
+   "dur": 27.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "f14_r5",
+   "start": 1219.08,
+   "dur": 21.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 5
+  },
+  {
+   "id": "f14_r6",
+   "start": 1225.08,
+   "dur": 15.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 6
+  },
+  {
+   "id": "f14_r7",
+   "start": 1231.08,
+   "dur": 9.28,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 7
+  },
+  {
+   "id": "f14_r8",
+   "start": 1237.08,
+   "dur": 3.28,
+   "cov": 3.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f14.jpg",
+   "kbPhase": 8
+  },
+  {
+   "id": "a113",
+   "start": 1240.36,
+   "dur": 2.7,
+   "cov": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a113.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a114",
+   "start": 1243.06,
+   "dur": 18.36,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a114.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a114_t",
+   "start": 1247.98,
+   "dur": 13.44,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a114_p.jpg"
+  },
+  {
+   "id": "a114_r1",
+   "start": 1253.98,
+   "dur": 7.44,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a114.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "cmp_29_callout",
+   "start": 1254.96,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/fedcereal_a113_p.jpg",
+   "eyebrow": "NO LA COMPRES HECHA HARINA",
+   "figure": "SEMILLA ENTERA",
+   "caption": "La cáscara protege el aceite de adentro. Molé sólo lo de la semana."
+  },
+  {
+   "id": "a114_r2",
+   "start": 1258.78,
+   "dur": 2.64,
+   "cov": 2.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a114_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a115_t",
+   "start": 1261.42,
+   "dur": 10.76,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a115_p.jpg"
+  },
+  {
+   "id": "a115_r1",
+   "start": 1267.42,
+   "dur": 4.76,
+   "cov": 4.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a115_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a116",
+   "start": 1272.18,
+   "dur": 11.66,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a116.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a116_v2",
+   "start": 1277.1,
+   "dur": 6.74,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a116.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a116_t",
+   "start": 1281.02,
+   "dur": 2.82,
+   "cov": 2.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a116_p.jpg"
+  },
+  {
+   "id": "a117",
+   "start": 1283.84,
+   "dur": 6.1,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a117.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a117_t",
+   "start": 1288.76,
+   "dur": 1.18,
+   "cov": 1.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a117_p.jpg"
+  },
+  {
+   "id": "a118",
+   "start": 1289.94,
+   "dur": 20.54,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a118.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_30_pizarraexplica",
+   "start": 1294.38,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "POR QUÉ NO SE COME CRUDO",
+   "title": "Lo que hace el ácido fítico",
+   "items": [
+    {
+     "title": "Se pega al hierro",
+     "sub": "también al calcio y al zinc"
+    },
+    {
+     "title": "No los deja pasar",
+     "sub": "no llegan a tu sangre"
+    },
+    {
+     "title": "La ironía",
+     "sub": "comés la semilla por eso… y se va al baño"
+    },
+    {
+     "title": "Se cocina siempre",
+     "sub": "o se infla al calor. Crudo no"
+    }
+   ]
+  },
+  {
+   "id": "a118_t",
+   "start": 1294.86,
+   "dur": 15.62,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a118_p.jpg"
+  },
+  {
+   "id": "a118_r1",
+   "start": 1300.86,
+   "dur": 9.62,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a118.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a118_r2",
+   "start": 1305.66,
+   "dur": 4.82,
+   "cov": 4.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a118_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a119_t",
+   "start": 1310.48,
+   "dur": 16.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a119_p.jpg"
+  },
+  {
+   "id": "a119_r1",
+   "start": 1316.48,
+   "dur": 10.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a119_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a119_r2",
+   "start": 1322.48,
+   "dur": 4.56,
+   "cov": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a119_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a120",
+   "start": 1327.04,
+   "dur": 9.72,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a120.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a120_t",
+   "start": 1331.96,
+   "dur": 4.8,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a120_p.jpg"
+  },
+  {
+   "id": "a121",
+   "start": 1336.76,
+   "dur": 11.02,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a121.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_31_process",
+   "start": 1336.76,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "title": "El paso que casi nadie hace y es gratis",
+   "steps": [
+    {
+     "title": "Colador de té, no el común",
+     "desc": "el grano es tan chico que se escapa"
+    },
+    {
+     "title": "Agua fría un minuto",
+     "desc": "moviéndolo con la mano"
+    },
+    {
+     "title": "Hasta que el agua salga clara",
+     "desc": "lo turbio es la saponina, la del gusto amargo"
+    }
+   ]
+  },
+  {
+   "id": "a121_t",
+   "start": 1341.68,
+   "dur": 6.1,
+   "cov": 6.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a121_p.jpg"
+  },
+  {
+   "id": "a122",
+   "start": 1347.78,
+   "dur": 10.5,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a122.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a122_t",
+   "start": 1352.7,
+   "dur": 5.58,
+   "cov": 5.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a122_p.jpg"
+  },
+  {
+   "id": "a123_t",
+   "start": 1358.28,
+   "dur": 10.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a123_p.jpg"
+  },
+  {
+   "id": "cmp_32_lowerthird",
+   "start": 1362.54,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Más agua que para el arroz",
+   "kicker": "LA PROPORCIÓN EXACTA ESTÁ EN LA DESCRIPCIÓN",
+   "desc": "Fuego bajo, tapado y sin revolver todo el tiempo. Revolver de más es lo que lo vuelve una goma.",
+   "tone": "teal"
+  },
+  {
+   "id": "a123_r1",
+   "start": 1364.28,
+   "dur": 4.32,
+   "cov": 4.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a123_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a124",
+   "start": 1368.6,
+   "dur": 32.24,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a124.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a124_t",
+   "start": 1373.52,
+   "dur": 27.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a124_p.jpg"
+  },
+  {
+   "id": "a124_r1",
+   "start": 1379.52,
+   "dur": 21.32,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a124.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a124_r2",
+   "start": 1384.32,
+   "dur": 16.52,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a124_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a124_r3",
+   "start": 1390.32,
+   "dur": 10.52,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a124.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a124_r4",
+   "start": 1395.12,
+   "dur": 5.72,
+   "cov": 5.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a124_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a125_t",
+   "start": 1400.84,
+   "dur": 11.18,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a125_p.jpg"
+  },
+  {
+   "id": "cmp_33_process",
+   "start": 1400.84,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "title": "Dos cosas que le cambian el sabor",
+   "steps": [
+    {
+     "title": "Tostala seca un minuto",
+     "desc": "sin nada, hasta que huela a nuez"
+    },
+    {
+     "title": "Cocinala con caldo",
+     "desc": "casero, de pollo o verdura, con poca sal"
+    },
+    {
+     "title": "El que se deja no sirve",
+     "desc": "por más lisina que tenga"
+    }
+   ]
+  },
+  {
+   "id": "a125_r1",
+   "start": 1406.84,
+   "dur": 5.18,
+   "cov": 5.18,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a125_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a126",
+   "start": 1412.02,
+   "dur": 15.8,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a126.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a126_t",
+   "start": 1416.94,
+   "dur": 10.88,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a126_p.jpg"
+  },
+  {
+   "id": "a126_r1",
+   "start": 1422.94,
+   "dur": 4.88,
+   "cov": 4.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a126.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a127_t",
+   "start": 1427.82,
+   "dur": 35.68,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a127_p.jpg"
+  },
+  {
+   "id": "cmp_34_mitoverdad",
+   "start": 1430.2,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/fedcereal_a127_p.jpg",
+   "myth": "«Con esto ya no necesito carne»",
+   "truth": "No la reemplaza. Viene a llenar el hueco donde hoy hay fideos, puré y pan: ahí no hay nada.",
+   "flipAt": 107
+  },
+  {
+   "id": "a127_r1",
+   "start": 1433.82,
+   "dur": 29.68,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a127_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a127_r2",
+   "start": 1439.82,
+   "dur": 23.68,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a127_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a127_r3",
+   "start": 1445.82,
+   "dur": 17.68,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a127_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a127_r4",
+   "start": 1451.82,
+   "dur": 11.68,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a127_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a127_r5",
+   "start": 1457.82,
+   "dur": 5.68,
+   "cov": 5.68,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a127_p.jpg",
+   "kbPhase": 5
+  },
+  {
+   "id": "a128",
+   "start": 1463.5,
+   "dur": 1.7,
+   "cov": 1.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a128.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a129",
+   "start": 1465.2,
+   "dur": 5.54,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a129.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a129_t",
+   "start": 1470.12,
+   "dur": 0.62,
+   "cov": 0.62,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a129_p.jpg"
+  },
+  {
+   "id": "a130",
+   "start": 1470.74,
+   "dur": 8.08,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a130.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a130_t",
+   "start": 1475.66,
+   "dur": 3.16,
+   "cov": 3.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a130_p.jpg"
+  },
+  {
+   "id": "a131_t",
+   "start": 1478.82,
+   "dur": 8.5,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a131_p.jpg"
+  },
+  {
+   "id": "a131_r1",
+   "start": 1484.82,
+   "dur": 2.5,
+   "cov": 2.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a131_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a132",
+   "start": 1487.32,
+   "dur": 16.44,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a132.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a132_v2",
+   "start": 1492.24,
+   "dur": 11.52,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a132.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a132_t",
+   "start": 1496.16,
+   "dur": 7.6,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a132_p.jpg"
+  },
+  {
+   "id": "a132_r1",
+   "start": 1502.16,
+   "dur": 1.6,
+   "cov": 1.6,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a132.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a133_t",
+   "start": 1503.76,
+   "dur": 13.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a133_p.jpg"
+  },
+  {
+   "id": "cmp_35_errorstinger",
+   "start": 1508.26,
+   "dur": 2.4,
+   "key": "s",
+   "kind": "errorstinger",
+   "number": "5",
+   "eyebrow": "ERROR",
+   "title": "Una cucharadita es decorativa"
+  },
+  {
+   "id": "a133_r1",
+   "start": 1509.76,
+   "dur": 7.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a133_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a133_r2",
+   "start": 1515.76,
+   "dur": 1.32,
+   "cov": 1.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a133_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a134",
+   "start": 1517.08,
+   "dur": 38.82,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a134.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a134_t",
+   "start": 1522,
+   "dur": 33.9,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a134_p.jpg"
+  },
+  {
+   "id": "a134_r1",
+   "start": 1528,
+   "dur": 27.9,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a134.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a134_r2",
+   "start": 1532.8,
+   "dur": 23.1,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a134_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a134_r3",
+   "start": 1538.8,
+   "dur": 17.1,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a134.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a134_r4",
+   "start": 1543.6,
+   "dur": 12.3,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a134_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a134_r5",
+   "start": 1549.6,
+   "dur": 6.3,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a134.mp4",
+   "kbPhase": 5,
+   "snd": 1
+  },
+  {
+   "id": "a134_r6",
+   "start": 1554.4,
+   "dur": 1.5,
+   "cov": 1.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a134_p.jpg",
+   "kbPhase": 6
+  },
+  {
+   "id": "cmp_36_splitlist",
+   "start": 1554.8,
+   "dur": 9,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "El día dado vuelta",
+   "items": [
+    "Desayuna casi nada",
+    "Almuerza poco",
+    "Cena la comida más grande del día",
+    "Y a la noche el cuerpo ya no construye",
+    "Viene de diez o doce horas sin comer… y recibe dos galletitas"
+   ]
+  },
+  {
+   "id": "a138",
+   "start": 1555.9,
+   "dur": 3.06,
+   "cov": 3.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a138.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a135_t",
+   "start": 1558.96,
+   "dur": 11.52,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a135_p.jpg"
+  },
+  {
+   "id": "a135_r1",
+   "start": 1564.96,
+   "dur": 5.52,
+   "cov": 5.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a135_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a136",
+   "start": 1570.48,
+   "dur": 17.06,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a136.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a136_t",
+   "start": 1575.4,
+   "dur": 12.14,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a136_p.jpg"
+  },
+  {
+   "id": "a136_r1",
+   "start": 1581.4,
+   "dur": 6.14,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a136.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a136_r2",
+   "start": 1586.2,
+   "dur": 1.34,
+   "cov": 1.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a136_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a137",
+   "start": 1587.54,
+   "dur": 30.08,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a137.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a137_v2",
+   "start": 1592.46,
+   "dur": 25.16,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a137.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a137_t",
+   "start": 1596.38,
+   "dur": 21.24,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a137_p.jpg"
+  },
+  {
+   "id": "a137_r1",
+   "start": 1602.38,
+   "dur": 15.24,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a137.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a137_r2",
+   "start": 1607.18,
+   "dur": 10.44,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a137_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "cmp_37_guardaesto",
+   "start": 1608.62,
+   "dur": 10,
+   "key": "s",
+   "kind": "guardaesto",
+   "title": "EL ERROR QUE ARRUINA TODO",
+   "prompt": "No te lo saltees",
+   "items": [
+    "Comer la proteína y no pedirle nada al músculo",
+    "Es comprar los ladrillos y no llamar al albañil",
+    "El cuerpo no mantiene lo que no se usa"
+   ]
+  },
+  {
+   "id": "a137_r3",
+   "start": 1613.18,
+   "dur": 4.44,
+   "cov": 4.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a137.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a139_t",
+   "start": 1617.62,
+   "dur": 29.58,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a139_p.jpg"
+  },
+  {
+   "id": "a139_r1",
+   "start": 1623.62,
+   "dur": 23.58,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a139_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a139_r2",
+   "start": 1629.62,
+   "dur": 17.58,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a139_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a139_r3",
+   "start": 1635.62,
+   "dur": 11.58,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a139_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a139_r4",
+   "start": 1641.62,
+   "dur": 5.58,
+   "cov": 5.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a139_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a140",
+   "start": 1647.2,
+   "dur": 14.68,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a140.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a140_t",
+   "start": 1652.12,
+   "dur": 9.76,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a140_p.jpg"
+  },
+  {
+   "id": "a140_r1",
+   "start": 1658.12,
+   "dur": 3.76,
+   "cov": 3.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a140.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a141",
+   "start": 1661.88,
+   "dur": 7.76,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a141.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a141_t",
+   "start": 1666.8,
+   "dur": 2.84,
+   "cov": 2.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a141_p.jpg"
+  },
+  {
+   "id": "a142",
+   "start": 1669.64,
+   "dur": 28.36,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a142.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a142_v2",
+   "start": 1674.56,
+   "dur": 23.44,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a142.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a142_t",
+   "start": 1678.48,
+   "dur": 19.52,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a142_p.jpg"
+  },
+  {
+   "id": "a142_r1",
+   "start": 1684.48,
+   "dur": 13.52,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a142.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a142_r2",
+   "start": 1689.28,
+   "dur": 8.72,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a142_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a142_r3",
+   "start": 1695.28,
+   "dur": 2.72,
+   "cov": 2.72,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a142.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a143_t",
+   "start": 1698,
+   "dur": 16.88,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a143_p.jpg"
+  },
+  {
+   "id": "cmp_38_frasecinetica",
+   "start": 1698,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "LA"
+    },
+    {
+     "t": "COMIDA"
+    },
+    {
+     "t": "TRAE"
+    },
+    {
+     "t": "EL"
+    },
+    {
+     "t": "MATERIAL"
+    },
+    {
+     "t": "EL"
+    },
+    {
+     "t": "MOVIMIENTO"
+    },
+    {
+     "t": "DA"
+    },
+    {
+     "t": "LA"
+    },
+    {
+     "t": "ORDEN",
+     "hl": true
+    }
+   ],
+   "perWord": 11,
+   "tone": "teal"
+  },
+  {
+   "id": "a143_r1",
+   "start": 1704,
+   "dur": 10.88,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a143_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a143_r2",
+   "start": 1710,
+   "dur": 4.88,
+   "cov": 4.88,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a143_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a144",
+   "start": 1714.88,
+   "dur": 6.62,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a144.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a144_t",
+   "start": 1719.8,
+   "dur": 1.7,
+   "cov": 1.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a144_p.jpg"
+  },
+  {
+   "id": "a145",
+   "start": 1721.5,
+   "dur": 7.08,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a145.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_39_process",
+   "start": 1725.26,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "title": "El amaranto inflado",
+   "steps": [
+    {
+     "title": "Olla bien caliente y seca",
+     "desc": "sin nada de aceite; si está tibia se quema"
+    },
+    {
+     "title": "Una cucharada por vez",
+     "desc": "y tapá: suena como una lluvia"
+    },
+    {
+     "title": "Sacalo apenas para el ruido",
+     "desc": "a un plato frío, o se pone amargo"
+    }
+   ]
+  },
+  {
+   "id": "a145_t",
+   "start": 1726.42,
+   "dur": 2.16,
+   "cov": 2.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a145_p.jpg"
+  },
+  {
+   "id": "a146",
+   "start": 1728.58,
+   "dur": 12.26,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a146.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a146_t",
+   "start": 1733.5,
+   "dur": 7.34,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a146_p.jpg"
+  },
+  {
+   "id": "a146_r1",
+   "start": 1739.5,
+   "dur": 1.34,
+   "cov": 1.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a146.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a147_t",
+   "start": 1740.84,
+   "dur": 6.26,
+   "cov": 6.26,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a147_p.jpg"
+  },
+  {
+   "id": "a148_t",
+   "start": 1747.1,
+   "dur": 6.24,
+   "cov": 6.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a148_p.jpg"
+  },
+  {
+   "id": "a149_t",
+   "start": 1753.34,
+   "dur": 19.86,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a149_p.jpg"
+  },
+  {
+   "id": "a149_r1",
+   "start": 1759.34,
+   "dur": 13.86,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a149_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a149_r2",
+   "start": 1765.34,
+   "dur": 7.86,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a149_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a149_r3",
+   "start": 1771.34,
+   "dur": 1.86,
+   "cov": 1.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a149_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a150_t",
+   "start": 1773.2,
+   "dur": 8.02,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a150_p.jpg"
+  },
+  {
+   "id": "a150_r1",
+   "start": 1779.2,
+   "dur": 2.02,
+   "cov": 2.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a150_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a151_v2",
+   "start": 1781.22,
+   "dur": 4.96,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a151.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a151_t",
+   "start": 1785.14,
+   "dur": 1.04,
+   "cov": 1.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a151_p.jpg"
+  },
+  {
+   "id": "a152_t",
+   "start": 1786.18,
+   "dur": 9,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a152_p.jpg"
+  },
+  {
+   "id": "a152_r1",
+   "start": 1792.18,
+   "dur": 3,
+   "cov": 3,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a152_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a153",
+   "start": 1795.18,
+   "dur": 10.76,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a153.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a153_v2",
+   "start": 1800.1,
+   "dur": 5.84,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a153.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_40_recetaescena",
+   "start": 1801.26,
+   "dur": 14,
+   "key": "s",
+   "kind": "recetaescena",
+   "title": "La papilla de la mañana",
+   "steps": [
+    {
+     "num": "1",
+     "image": "img/fedcereal_a154_p.jpg",
+     "title": "Cocinalo despacio",
+     "desc": "en caldo o en leche, hasta que quede cremoso"
+    },
+    {
+     "num": "2",
+     "image": "img/fedcereal_a155_p.jpg",
+     "title": "El huevo adentro",
+     "desc": "batido, con la olla ya fuera del fuego"
+    },
+    {
+     "num": "3",
+     "image": "img/fedcereal_a156_p.jpg",
+     "title": "O leche en polvo",
+     "desc": "una cucharada colmada, lo más barato"
+    },
+    {
+     "num": "4",
+     "image": "img/fedcereal_a157_p.jpg",
+     "title": "Si lo hacés dulce",
+     "desc": "yogur natural y nueces picadas"
+    }
+   ]
+  },
+  {
+   "id": "a153_t",
+   "start": 1804.02,
+   "dur": 1.92,
+   "cov": 1.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a153_p.jpg"
+  },
+  {
+   "id": "a154",
+   "start": 1805.94,
+   "dur": 13.62,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a154.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a154_t",
+   "start": 1810.86,
+   "dur": 8.7,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a154_p.jpg"
+  },
+  {
+   "id": "a154_r1",
+   "start": 1816.86,
+   "dur": 2.7,
+   "cov": 2.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a154.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a162_t",
+   "start": 1819.56,
+   "dur": 0.8,
+   "cov": 0.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a162_p.jpg"
+  },
+  {
+   "id": "a155_t",
+   "start": 1820.36,
+   "dur": 8.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a155_p.jpg"
+  },
+  {
+   "id": "a155_r1",
+   "start": 1826.36,
+   "dur": 2.06,
+   "cov": 2.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a155_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a156",
+   "start": 1828.42,
+   "dur": 11.92,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a156.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a156_t",
+   "start": 1833.34,
+   "dur": 7,
+   "cov": 7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a156_p.jpg"
+  },
+  {
+   "id": "a157",
+   "start": 1840.34,
+   "dur": 28.06,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a157.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_41_pizarraexplica",
+   "start": 1844.4,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "POR QUÉ ESTE PLATO SÍ",
+   "title": "La jugada completa",
+   "items": [
+    {
+     "title": "El cereal",
+     "sub": "pone la lisina que le falta al trigo"
+    },
+    {
+     "title": "El huevo",
+     "sub": "pone la leucina, que es el capataz"
+    },
+    {
+     "title": "Juntos",
+     "sub": "llegan al umbral que despierta al músculo"
+    },
+    {
+     "title": "Solo, no alcanza",
+     "sub": "con el huevo adentro, sí"
+    }
+   ]
+  },
+  {
+   "id": "a157_v2",
+   "start": 1845.26,
+   "dur": 23.14,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a157.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a157_t",
+   "start": 1849.18,
+   "dur": 19.22,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a157_p.jpg"
+  },
+  {
+   "id": "a157_r1",
+   "start": 1855.18,
+   "dur": 13.22,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a157.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a157_r2",
+   "start": 1859.98,
+   "dur": 8.42,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a157_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a157_r3",
+   "start": 1865.98,
+   "dur": 2.42,
+   "cov": 2.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a157.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a158",
+   "start": 1868.4,
+   "dur": 11.44,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a158.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_42_checklist",
+   "start": 1871.34,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Dónde se esconde",
+   "items": [
+    "Dos cucharadas a la sopa, veinte minutos antes de apagar",
+    "En el relleno de las milanesas de verdura",
+    "Mezclado con la harina del pan casero o el budín",
+    "En el puré",
+    "En la torta de manzana de la tarde"
+   ]
+  },
+  {
+   "id": "a158_t",
+   "start": 1873.32,
+   "dur": 6.52,
+   "cov": 6.52,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a158_p.jpg"
+  },
+  {
+   "id": "a159_v2",
+   "start": 1879.84,
+   "dur": 10.82,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a159.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a159_t",
+   "start": 1883.76,
+   "dur": 6.9,
+   "cov": 6.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a159_p.jpg"
+  },
+  {
+   "id": "a160",
+   "start": 1890.66,
+   "dur": 11.08,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a160.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a160_t",
+   "start": 1895.58,
+   "dur": 6.16,
+   "cov": 6.16,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a160_p.jpg"
+  },
+  {
+   "id": "a161_t",
+   "start": 1901.74,
+   "dur": 49.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg"
+  },
+  {
+   "id": "a161_r1",
+   "start": 1907.74,
+   "dur": 43.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a161_r2",
+   "start": 1913.74,
+   "dur": 37.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a161_r3",
+   "start": 1919.74,
+   "dur": 31.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a161_r4",
+   "start": 1925.74,
+   "dur": 25.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "cmp_43_callout",
+   "start": 1930.4,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/fedcereal_a162_p.jpg",
+   "eyebrow": "SI TUVIERA QUE ELEGIR UNO",
+   "figure": "EL HUEVO",
+   "caption": "La mejor proteína que existe, la más barata, y lista en tres minutos."
+  },
+  {
+   "id": "a161_r5",
+   "start": 1931.74,
+   "dur": 19.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg",
+   "kbPhase": 5
+  },
+  {
+   "id": "a161_r6",
+   "start": 1937.74,
+   "dur": 13.06,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg",
+   "kbPhase": 6
+  },
+  {
+   "id": "a161_r7",
+   "start": 1943.74,
+   "dur": 7.06,
+   "cov": 7.06,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a161_p.jpg",
+   "kbPhase": 7
+  },
+  {
+   "id": "a164",
+   "start": 1950.8,
+   "dur": 26.3,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a164.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a164_t",
+   "start": 1955.72,
+   "dur": 21.38,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a164_p.jpg"
+  },
+  {
+   "id": "a164_r1",
+   "start": 1961.72,
+   "dur": 15.38,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a164.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a164_r2",
+   "start": 1966.52,
+   "dur": 10.58,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a164_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a164_r3",
+   "start": 1972.52,
+   "dur": 4.58,
+   "cov": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a164.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a165",
+   "start": 1977.1,
+   "dur": 14.76,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a165.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_44_pizarraexplica",
+   "start": 1980.6,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "pizarraexplica",
+   "eyebrow": "POR QUÉ EXISTE EN TODAS LAS CULTURAS",
+   "title": "El cereal y la legumbre se completan",
+   "items": [
+    {
+     "title": "A la legumbre",
+     "sub": "le sobra lisina"
+    },
+    {
+     "title": "Al cereal",
+     "sub": "le sobra el aminoácido que a ella le falta"
+    },
+    {
+     "title": "Se completan",
+     "sub": "arroz con lentejas, porotos con fideos"
+    },
+    {
+     "title": "En todas las culturas",
+     "sub": "nadie se puso de acuerdo: lo descubrieron comiendo"
+    }
+   ]
+  },
+  {
+   "id": "a165_t",
+   "start": 1982.02,
+   "dur": 9.84,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a165_p.jpg"
+  },
+  {
+   "id": "a165_r1",
+   "start": 1988.02,
+   "dur": 3.84,
+   "cov": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a165.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a166_t",
+   "start": 1991.86,
+   "dur": 0.5,
+   "cov": 0.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a166_p.jpg"
+  },
+  {
+   "id": "a176",
+   "start": 1992.36,
+   "dur": 21.7,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a176.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_48_checklist",
+   "start": 1992.36,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "title": "La progresión",
+   "items": [
+    "Arrancá con cinco",
+    "Cuando salgan cómodas, ocho",
+    "Después diez",
+    "Y después dos series de diez con un minuto en el medio",
+    "Enganchalo con algo que ya hacés todos los días"
+   ]
+  },
+  {
+   "id": "a176_t",
+   "start": 1997.28,
+   "dur": 16.78,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a176_p.jpg"
+  },
+  {
+   "id": "a176_r1",
+   "start": 2003.28,
+   "dur": 10.78,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a176.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a176_r2",
+   "start": 2008.08,
+   "dur": 5.98,
+   "cov": 5.98,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a176_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a167_t",
+   "start": 2014.06,
+   "dur": 1.54,
+   "cov": 1.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a167_p.jpg"
+  },
+  {
+   "id": "a168",
+   "start": 2015.6,
+   "dur": 5.4,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a168.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_45_lowerthird",
+   "start": 2016.48,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Sol en los brazos y en las piernas",
+   "kicker": "COMPAÑERO Nº3",
+   "desc": "A la mañana o a la tardecita. La vitamina D es la que mete el calcio en el hueso y participa en la fuerza.",
+   "tone": "teal"
+  },
+  {
+   "id": "a168_t",
+   "start": 2020.52,
+   "dur": 0.48,
+   "cov": 0.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a168_p.jpg"
+  },
+  {
+   "id": "a163_t",
+   "start": 2021,
+   "dur": 35.34,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a163_p.jpg"
+  },
+  {
+   "id": "a163_r1",
+   "start": 2027,
+   "dur": 29.34,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a163_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a163_r2",
+   "start": 2033,
+   "dur": 23.34,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a163_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a163_r3",
+   "start": 2039,
+   "dur": 17.34,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a163_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a163_r4",
+   "start": 2045,
+   "dur": 11.34,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a163_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a163_r5",
+   "start": 2051,
+   "dur": 5.34,
+   "cov": 5.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a163_p.jpg",
+   "kbPhase": 5
+  },
+  {
+   "id": "a169_v2",
+   "start": 2056.34,
+   "dur": 7.76,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a169.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a169_t",
+   "start": 2060.26,
+   "dur": 3.84,
+   "cov": 3.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a169_p.jpg"
+  },
+  {
+   "id": "cmp_46_callout",
+   "start": 2060.78,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/fedcereal_a169_p.jpg",
+   "eyebrow": "CON LOS AÑOS SE PIERDE LA SED",
+   "figure": "TOMÁ IGUAL",
+   "caption": "El cuerpo deja de avisar. De día aunque no tengas ganas; menos a la tardecita."
+  },
+  {
+   "id": "a170",
+   "start": 2064.1,
+   "dur": 18.16,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a170.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a170_t",
+   "start": 2069.02,
+   "dur": 13.24,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a170_p.jpg"
+  },
+  {
+   "id": "a170_r1",
+   "start": 2075.02,
+   "dur": 7.24,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a170.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a170_r2",
+   "start": 2079.82,
+   "dur": 2.44,
+   "cov": 2.44,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a170_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a171_t",
+   "start": 2082.26,
+   "dur": 12.02,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a171_p.jpg"
+  },
+  {
+   "id": "a171_r1",
+   "start": 2088.26,
+   "dur": 6.02,
+   "cov": 6.02,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a171_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a172",
+   "start": 2094.28,
+   "dur": 10.62,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a172.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a172_t",
+   "start": 2099.2,
+   "dur": 5.7,
+   "cov": 5.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a172_p.jpg"
+  },
+  {
+   "id": "cmp_47_process",
+   "start": 2099.24,
+   "dur": 9,
+   "key": "s",
+   "kind": "process",
+   "title": "Sentarse y pararse",
+   "steps": [
+    {
+     "title": "Sentate en el borde",
+     "desc": "pies apoyados, brazos cruzados en el pecho"
+    },
+    {
+     "title": "Subí sin manos",
+     "desc": "empujando con las piernas"
+    },
+    {
+     "title": "Bajá contando hasta tres",
+     "desc": "la bajada es la que más le pide al cuerpo"
+    }
+   ]
+  },
+  {
+   "id": "a173",
+   "start": 2104.9,
+   "dur": 10.82,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a173.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a173_t",
+   "start": 2109.82,
+   "dur": 5.9,
+   "cov": 5.9,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a173_p.jpg"
+  },
+  {
+   "id": "a174",
+   "start": 2115.72,
+   "dur": 11.76,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a174.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a174_t",
+   "start": 2120.64,
+   "dur": 6.84,
+   "cov": 6.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a174_p.jpg"
+  },
+  {
+   "id": "a175_t",
+   "start": 2127.48,
+   "dur": 39.82,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a175_p.jpg"
+  },
+  {
+   "id": "a175_r1",
+   "start": 2133.48,
+   "dur": 33.82,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a175_r2",
+   "start": 2139.48,
+   "dur": 27.82,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a175_r3",
+   "start": 2145.48,
+   "dur": 21.82,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a175_r4",
+   "start": 2151.48,
+   "dur": 15.82,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a175_r5",
+   "start": 2157.48,
+   "dur": 9.82,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 5
+  },
+  {
+   "id": "a175_r6",
+   "start": 2163.48,
+   "dur": 3.82,
+   "cov": 3.82,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a175_p.jpg",
+   "kbPhase": 6
+  },
+  {
+   "id": "a177",
+   "start": 2167.3,
+   "dur": 9.32,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a177.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a177_t",
+   "start": 2172.22,
+   "dur": 4.4,
+   "cov": 4.4,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a177_p.jpg"
+  },
+  {
+   "id": "cmp_49_lowerthird",
+   "start": 2172.82,
+   "dur": 6,
+   "key": "s",
+   "kind": "lowerthird",
+   "title": "Todos empezamos de donde podemos",
+   "kicker": "SI NO TE SALE",
+   "desc": "Almohadón en la silla para estar más alto y una sola mano apoyada. Con las semanas se sacan los dos.",
+   "tone": "teal"
+  },
+  {
+   "id": "a178",
+   "start": 2176.62,
+   "dur": 20.84,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a178.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a178_t",
+   "start": 2181.54,
+   "dur": 15.92,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a178_p.jpg"
+  },
+  {
+   "id": "a178_r1",
+   "start": 2187.54,
+   "dur": 9.92,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a178.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a178_r2",
+   "start": 2192.34,
+   "dur": 5.12,
+   "cov": 5.12,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a178_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a179_t",
+   "start": 2197.46,
+   "dur": 21.24,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a179_p.jpg"
+  },
+  {
+   "id": "a179_r1",
+   "start": 2203.46,
+   "dur": 15.24,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a179_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a179_r2",
+   "start": 2209.46,
+   "dur": 9.24,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a179_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a179_r3",
+   "start": 2215.46,
+   "dur": 3.24,
+   "cov": 3.24,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a179_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a180",
+   "start": 2218.7,
+   "dur": 12.76,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a180.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a180_t",
+   "start": 2223.62,
+   "dur": 7.84,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a180_p.jpg"
+  },
+  {
+   "id": "a180_r1",
+   "start": 2229.62,
+   "dur": 1.84,
+   "cov": 1.84,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a180.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a181",
+   "start": 2231.46,
+   "dur": 25.42,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a181.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_50_callout",
+   "start": 2231.46,
+   "dur": 7,
+   "key": "s",
+   "kind": "callout",
+   "image": "img/fedcereal_a181_p.jpg",
+   "eyebrow": "¿ES CARO?",
+   "figure": "RINDE",
+   "caption": "Con poca semilla sale un plato grande. Es comida, no un suplemento de gimnasio."
+  },
+  {
+   "id": "a181_t",
+   "start": 2236.38,
+   "dur": 20.5,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a181_p.jpg"
+  },
+  {
+   "id": "a181_r1",
+   "start": 2242.38,
+   "dur": 14.5,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a181.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a181_r2",
+   "start": 2247.18,
+   "dur": 9.7,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a181_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a181_r3",
+   "start": 2253.18,
+   "dur": 3.7,
+   "cov": 3.7,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a181.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a182",
+   "start": 2256.88,
+   "dur": 35.94,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a182.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_51_mitoverdad",
+   "start": 2258.9,
+   "dur": 8.5,
+   "key": "s",
+   "kind": "mitoverdad",
+   "image": "img/fedcereal_a182_p.jpg",
+   "myth": "«Soy diabético, entonces no»",
+   "truth": "En general sí, y suele ser mejor opción que el pan blanco. La cantidad tuya la dice tu médico.",
+   "flipAt": 107
+  },
+  {
+   "id": "a182_t",
+   "start": 2261.8,
+   "dur": 31.02,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a182_p.jpg"
+  },
+  {
+   "id": "a182_r1",
+   "start": 2267.8,
+   "dur": 25.02,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a182.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a182_r2",
+   "start": 2272.6,
+   "dur": 20.22,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a182_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a182_r3",
+   "start": 2278.6,
+   "dur": 14.22,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a182.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a182_r4",
+   "start": 2283.4,
+   "dur": 9.42,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a182_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a182_r5",
+   "start": 2289.4,
+   "dur": 3.42,
+   "cov": 3.42,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a182.mp4",
+   "kbPhase": 5,
+   "snd": 1
+  },
+  {
+   "id": "a183_t",
+   "start": 2292.82,
+   "dur": 17.64,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a183_p.jpg"
+  },
+  {
+   "id": "a183_r1",
+   "start": 2298.82,
+   "dur": 11.64,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a183_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a183_r2",
+   "start": 2304.82,
+   "dur": 5.64,
+   "cov": 5.64,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a183_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a184",
+   "start": 2310.46,
+   "dur": 22.82,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a184.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_52_ingredientduo",
+   "start": 2310.46,
+   "dur": 6.5,
+   "key": "s",
+   "kind": "ingredientduo",
+   "leftImg": "img/fedcereal_a089_p.jpg",
+   "rightImg": "img/fedcereal_a184_p.jpg"
+  },
+  {
+   "id": "a184_t",
+   "start": 2315.38,
+   "dur": 17.9,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a184_p.jpg"
+  },
+  {
+   "id": "a184_r1",
+   "start": 2321.38,
+   "dur": 11.9,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a184.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a184_r2",
+   "start": 2326.18,
+   "dur": 7.1,
+   "cov": 7.1,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a184_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a185",
+   "start": 2333.28,
+   "dur": 26.14,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a185.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a185_v2",
+   "start": 2338.2,
+   "dur": 21.22,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a185.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a185_t",
+   "start": 2342.12,
+   "dur": 17.3,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a185_p.jpg"
+  },
+  {
+   "id": "a185_r1",
+   "start": 2348.12,
+   "dur": 11.3,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a185.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "cmp_53_checklist",
+   "start": 2348.12,
+   "dur": 10,
+   "key": "s",
+   "kind": "checklist",
+   "title": "Cuándo NO es cuestión de comida",
+   "tone": "warn",
+   "items": [
+    "Si bajás de peso sin proponértelo",
+    "Si la debilidad es de un lado solo",
+    "Si te empezaste a caer, aunque no te hayas roto nada",
+    "Si tenés problemas de riñón, antes de subir la proteína",
+    "Si tomás anticoagulantes o tenés alguna condición particular"
+   ]
+  },
+  {
+   "id": "a185_r2",
+   "start": 2352.92,
+   "dur": 6.5,
+   "cov": 6.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a185_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a186_t",
+   "start": 2359.42,
+   "dur": 19.54,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a186_p.jpg"
+  },
+  {
+   "id": "a186_r1",
+   "start": 2365.42,
+   "dur": 13.54,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a186_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a186_r2",
+   "start": 2371.42,
+   "dur": 7.54,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a186_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a186_r3",
+   "start": 2377.42,
+   "dur": 1.54,
+   "cov": 1.54,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a186_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a187_t",
+   "start": 2378.96,
+   "dur": 16.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a187_p.jpg"
+  },
+  {
+   "id": "a187_r1",
+   "start": 2384.96,
+   "dur": 10.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a187_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a187_r2",
+   "start": 2390.96,
+   "dur": 4.56,
+   "cov": 4.56,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a187_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a188",
+   "start": 2395.52,
+   "dur": 10.96,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a188.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_54_frasecinetica",
+   "start": 2397.36,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "UNA"
+    },
+    {
+     "t": "CAÍDA"
+    },
+    {
+     "t": "ES"
+    },
+    {
+     "t": "UN"
+    },
+    {
+     "t": "AVISO",
+     "hl": true
+    }
+   ],
+   "perWord": 15,
+   "tone": "warn"
+  },
+  {
+   "id": "a188_t",
+   "start": 2400.44,
+   "dur": 6.04,
+   "cov": 6.04,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a188_p.jpg"
+  },
+  {
+   "id": "a189",
+   "start": 2406.48,
+   "dur": 13.42,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a189.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a189_v2",
+   "start": 2411.4,
+   "dur": 8.5,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a189.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a189_t",
+   "start": 2415.32,
+   "dur": 4.58,
+   "cov": 4.58,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a189_p.jpg"
+  },
+  {
+   "id": "a190",
+   "start": 2419.9,
+   "dur": 17.48,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a190.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a190_t",
+   "start": 2424.82,
+   "dur": 12.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a190_p.jpg"
+  },
+  {
+   "id": "a190_r1",
+   "start": 2430.82,
+   "dur": 6.56,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a190.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a190_r2",
+   "start": 2435.62,
+   "dur": 1.76,
+   "cov": 1.76,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a190_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a191_v2",
+   "start": 2437.38,
+   "dur": 9.84,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a191.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a191_t",
+   "start": 2441.3,
+   "dur": 5.92,
+   "cov": 5.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a191_p.jpg"
+  },
+  {
+   "id": "a192",
+   "start": 2447.22,
+   "dur": 29.66,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a192.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_55_splitlist",
+   "start": 2447.22,
+   "dur": 9,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "Grupo uno: proteger lo que tenés",
+   "items": [
+    "Te parás sin manos y abrís los frascos",
+    "Recuperar cuesta el triple que mantener",
+    "Desayuno con proteína",
+    "Tus cinco sentadillas de silla",
+    "Y seguí con tu vida"
+   ]
+  },
+  {
+   "id": "a192_t",
+   "start": 2452.14,
+   "dur": 24.74,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a192_p.jpg"
+  },
+  {
+   "id": "a192_r1",
+   "start": 2458.14,
+   "dur": 18.74,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a192.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a192_r2",
+   "start": 2462.94,
+   "dur": 13.94,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a192_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a192_r3",
+   "start": 2468.94,
+   "dur": 7.94,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a192.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a192_r4",
+   "start": 2473.74,
+   "dur": 3.14,
+   "cov": 3.14,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a192_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a193",
+   "start": 2476.88,
+   "dur": 16.24,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a193.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_56_splitlist",
+   "start": 2476.88,
+   "dur": 9,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "Grupo dos: empezar hoy",
+   "tone": "warn",
+   "items": [
+    "Sacá turno con tu médico",
+    "Desayuno con proteína desde mañana",
+    "Cinco sentadillas de silla por día",
+    "No esperes sentir algo en tres días",
+    "El músculo responde a cualquier edad"
+   ]
+  },
+  {
+   "id": "a193_t",
+   "start": 2481.8,
+   "dur": 11.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a193_p.jpg"
+  },
+  {
+   "id": "a193_r1",
+   "start": 2487.8,
+   "dur": 5.32,
+   "cov": 5.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a193.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a194",
+   "start": 2493.12,
+   "dur": 39.82,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a194.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a194_t",
+   "start": 2498.04,
+   "dur": 34.9,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a194_p.jpg"
+  },
+  {
+   "id": "a194_r1",
+   "start": 2504.04,
+   "dur": 28.9,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a194.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a194_r2",
+   "start": 2508.84,
+   "dur": 24.1,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a194_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a194_r3",
+   "start": 2514.84,
+   "dur": 18.1,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a194.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "cmp_57_lineatiempo",
+   "start": 2518.94,
+   "dur": 11,
+   "key": "s",
+   "kind": "lineatiempo",
+   "title": "Cuánto tarda, sin vender humo",
+   "marks": [
+    {
+     "label": "Dos o tres semanas",
+     "sub": "te parás de la silla con menos esfuerzo"
+    },
+    {
+     "label": "Dos o tres meses",
+     "sub": "el músculo que se ve y se toca"
+    },
+    {
+     "label": "Seis meses o más",
+     "sub": "el cambio que te notan los demás"
+    }
+   ]
+  },
+  {
+   "id": "a194_r4",
+   "start": 2519.64,
+   "dur": 13.3,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a194_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a194_r5",
+   "start": 2525.64,
+   "dur": 7.3,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a194.mp4",
+   "kbPhase": 5,
+   "snd": 1
+  },
+  {
+   "id": "a194_r6",
+   "start": 2530.44,
+   "dur": 2.5,
+   "cov": 2.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a194_p.jpg",
+   "kbPhase": 6
+  },
+  {
+   "id": "a195_v2",
+   "start": 2532.94,
+   "dur": 34.24,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a195.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a195_t",
+   "start": 2536.86,
+   "dur": 30.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a195_p.jpg"
+  },
+  {
+   "id": "a195_r1",
+   "start": 2542.86,
+   "dur": 24.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a195_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "cmp_58_frasecinetica",
+   "start": 2546.92,
+   "dur": 5.5,
+   "key": "s",
+   "kind": "frasecinetica",
+   "words": [
+    {
+     "t": "VAN"
+    },
+    {
+     "t": "A"
+    },
+    {
+     "t": "PASAR"
+    },
+    {
+     "t": "IGUAL",
+     "hl": true
+    }
+   ],
+   "perWord": 16,
+   "tone": "teal"
+  },
+  {
+   "id": "a195_r2",
+   "start": 2548.86,
+   "dur": 18.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a195_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a195_r3",
+   "start": 2554.86,
+   "dur": 12.32,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a195_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "cmp_59_splitlist",
+   "start": 2559.54,
+   "dur": 9,
+   "key": "s",
+   "kind": "splitlist",
+   "title": "Lo que hizo, y nada más",
+   "items": [
+    "Cambió el desayuno: papilla con el huevo adentro",
+    "Todos los días, sin faltar",
+    "Sentadillas de silla mientras se calentaba el agua",
+    "Al principio le salían tres, con una mano apoyada",
+    "A la tercera semana llamó enojado. Le dije: siga"
+   ]
+  },
+  {
+   "id": "a195_r4",
+   "start": 2560.86,
+   "dur": 6.32,
+   "cov": 6.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a195_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a196",
+   "start": 2567.18,
+   "dur": 11.16,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a196.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a196_v2",
+   "start": 2572.1,
+   "dur": 6.24,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a196.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a196_t",
+   "start": 2576.02,
+   "dur": 2.32,
+   "cov": 2.32,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a196_p.jpg"
+  },
+  {
+   "id": "a197",
+   "start": 2578.34,
+   "dur": 12.58,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a197.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a197_v2",
+   "start": 2583.26,
+   "dur": 7.66,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a197.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a197_t",
+   "start": 2587.18,
+   "dur": 3.74,
+   "cov": 3.74,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a197_p.jpg"
+  },
+  {
+   "id": "a198",
+   "start": 2590.92,
+   "dur": 2.28,
+   "cov": 2.28,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a198.mp4",
+   "snd": 1
+  },
+  {
+   "id": "f23_t",
+   "start": 2593.2,
+   "dur": 11.34,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f23.jpg"
+  },
+  {
+   "id": "f23_r1",
+   "start": 2599.2,
+   "dur": 5.34,
+   "cov": 5.34,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f23.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a199_t",
+   "start": 2604.54,
+   "dur": 5.48,
+   "cov": 5.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a199_p.jpg"
+  },
+  {
+   "id": "a200",
+   "start": 2610.02,
+   "dur": 14.92,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a200.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a200_v2",
+   "start": 2614.94,
+   "dur": 10,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a200.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a200_t",
+   "start": 2618.86,
+   "dur": 6.08,
+   "cov": 6.08,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a200_p.jpg"
+  },
+  {
+   "id": "a201_v2",
+   "start": 2624.94,
+   "dur": 28.78,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a201.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a201_t",
+   "start": 2628.86,
+   "dur": 24.86,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a201_p.jpg"
+  },
+  {
+   "id": "a201_r1",
+   "start": 2634.86,
+   "dur": 18.86,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a201_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a201_r2",
+   "start": 2640.86,
+   "dur": 12.86,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a201_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a201_r3",
+   "start": 2646.86,
+   "dur": 6.86,
+   "cov": 6.86,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a201_p.jpg",
+   "kbPhase": 3
+  },
+  {
+   "id": "a202",
+   "start": 2653.72,
+   "dur": 13.34,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a202.mp4",
+   "snd": 1
+  },
+  {
+   "id": "cmp_60_guardaesto",
+   "start": 2658.04,
+   "dur": 10,
+   "key": "s",
+   "kind": "guardaesto",
+   "title": "HACÉ UNA SOLA COSA",
+   "prompt": "Hoy",
+   "items": [
+    "Mañana el desayuno lleva proteína",
+    "O cinco veces sentarte y pararte de la silla",
+    "Una sola. Y mañana esa misma"
+   ]
+  },
+  {
+   "id": "a202_v2",
+   "start": 2658.64,
+   "dur": 8.42,
+   "cov": 3.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll_t2v_fc/fedcereal_a202.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a202_t",
+   "start": 2662.56,
+   "dur": 4.5,
+   "cov": 4.5,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a202_p.jpg"
+  },
+  {
+   "id": "a203_t",
+   "start": 2667.06,
+   "dur": 12.48,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a203_p.jpg"
+  },
+  {
+   "id": "a203_r1",
+   "start": 2673.06,
+   "dur": 6.48,
+   "cov": 6.48,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a203_p.jpg",
+   "kbPhase": 1
+  },
+  {
+   "id": "a204",
+   "start": 2679.54,
+   "dur": 78.08,
+   "cov": 4.92,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "snd": 1
+  },
+  {
+   "id": "a204_t",
+   "start": 2684.46,
+   "dur": 73.16,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a204_p.jpg"
+  },
+  {
+   "id": "cmp_61_guidecta",
+   "start": 2688.26,
+   "dur": 11,
+   "key": "s",
+   "kind": "guidecta",
+   "kicker": "LO QUE VISTE, ESCRITO",
+   "title": "La guía completa de la salud después de los 60",
+   "desc": "Las cantidades de cada preparación, las combinaciones y la progresión semana por semana. Y la lista de señales de alerta.",
+   "cover": "img/fedcereal_lam1.jpg",
+   "qr": "qr_drfederer.png",
+   "domain": "archivos-federer.vercel.app",
+   "scanTitle": "Está en la descripción",
+   "scanSub": "primer enlace"
+  },
+  {
+   "id": "a204_r1",
+   "start": 2690.46,
+   "dur": 67.16,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "kbPhase": 1,
+   "snd": 1
+  },
+  {
+   "id": "a204_r2",
+   "start": 2695.26,
+   "dur": 62.36,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a204_p.jpg",
+   "kbPhase": 2
+  },
+  {
+   "id": "a204_r3",
+   "start": 2701.26,
+   "dur": 56.36,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "kbPhase": 3,
+   "snd": 1
+  },
+  {
+   "id": "a204_r4",
+   "start": 2706.06,
+   "dur": 51.56,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a204_p.jpg",
+   "kbPhase": 4
+  },
+  {
+   "id": "a204_r5",
+   "start": 2712.06,
+   "dur": 45.56,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "kbPhase": 5,
+   "snd": 1
+  },
+  {
+   "id": "a204_r6",
+   "start": 2716.86,
+   "dur": 40.76,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a204_p.jpg",
+   "kbPhase": 6
+  },
+  {
+   "id": "a204_r7",
+   "start": 2722.86,
+   "dur": 34.76,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "kbPhase": 7,
+   "snd": 1
+  },
+  {
+   "id": "a204_r8",
+   "start": 2727.66,
+   "dur": 29.96,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a204_p.jpg",
+   "kbPhase": 8
+  },
+  {
+   "id": "a204_r9",
+   "start": 2733.66,
+   "dur": 23.96,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "kbPhase": 9,
+   "snd": 1
+  },
+  {
+   "id": "a204_r10",
+   "start": 2738.46,
+   "dur": 19.16,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a204_p.jpg",
+   "kbPhase": 10
+  },
+  {
+   "id": "a204_r11",
+   "start": 2744.46,
+   "dur": 13.16,
+   "cov": 4.8,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "kbPhase": 11,
+   "snd": 1
+  },
+  {
+   "id": "a204_r12",
+   "start": 2749.26,
+   "dur": 8.36,
+   "cov": 6,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_a204_p.jpg",
+   "kbPhase": 12
+  },
+  {
+   "id": "a204_r13",
+   "start": 2755.26,
+   "dur": 2.36,
+   "cov": 2.36,
+   "key": "s",
+   "kind": "raw",
+   "src": "broll/fedcereal_a204.mp4",
+   "kbPhase": 13,
+   "snd": 1
+  },
+  {
+   "id": "f24_t",
+   "start": 2757.62,
+   "dur": 1.81,
+   "cov": 1.81,
+   "key": "s",
+   "kind": "raw",
+   "src": "img/fedcereal_f24.jpg"
+  }
+ ]
+}
