@@ -184,6 +184,13 @@ jobs:
         run: |
           mkdir -p public
           gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}"             --dir public --pattern "*.wav" --clobber || true
+          # el dispatcher a veces lo llama <slug>_fish.wav (cola generada con Fish): el `if` de más
+          # abajo busca <slug>.wav exacto, así que si vino con otro nombre lo dejamos donde lo espera.
+          S="${{ github.event.inputs.slug }}"
+          if [ ! -s "public/$S.wav" ]; then
+            OTRO=$(ls public/*.wav 2>/dev/null | head -1)
+            [ -n "$OTRO" ] && cp "$OTRO" "public/$S.wav" && echo "usando $OTRO como wav máster"
+          fi
           if [ -s "public/${{ github.event.inputs.slug }}.wav" ]; then
             echo "wav máster OK -> el audio final sale de él"
           else
