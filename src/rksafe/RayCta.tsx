@@ -9,13 +9,17 @@ export const RayCta: React.FC<{
   title?: string;
   sub?: string;
   domain?: string;
+  eyebrow?: string;
   qr?: string;
+  showQr?: boolean;
   durationInFrames?: number;
 }> = ({
   title = "The One Afternoon Door",
   sub = "The exact spots, the bolt-down, the decoy — the whole afternoon laid out.",
   domain = "[ walkthrough below ]",
+  eyebrow = "Free walkthrough",
   qr = undefined,
+  showQr = true,
 }) => {
   const frame = useCurrentFrame();
   const a = enter(frame, 14);
@@ -43,7 +47,7 @@ export const RayCta: React.FC<{
           <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 10 }}>
             <Keyring size={40} />
             <div style={{ fontFamily: F_DISPLAY, fontWeight: 700, fontSize: 20, letterSpacing: 3, textTransform: "uppercase", color: V.brass }}>
-              Free walkthrough
+              {eyebrow}
             </div>
           </div>
 
@@ -59,7 +63,8 @@ export const RayCta: React.FC<{
               </div>
             </div>
 
-            {/* QR: real si lo pasan, si no placeholder dibujado */}
+            {/* QR: real si lo pasan, si no placeholder dibujado. showQr=false lo oculta del todo (canales sin producto). */}
+            {showQr ? (
             <div style={{ flex: "0 0 auto", width: 150, height: 150, borderRadius: 10, padding: 10, background: rgba(V.ink0, 0.7), border: `2px dashed ${V.brass}`, boxShadow: `inset 0 0 0 1px ${rgba(V.brass, 0.2)}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
               {qr ? (
                 <Img src={staticFile(qr)} style={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: 4 }} />
@@ -76,6 +81,7 @@ export const RayCta: React.FC<{
                 </>
               )}
             </div>
+            ) : null}
           </div>
         </div>
       </div>
