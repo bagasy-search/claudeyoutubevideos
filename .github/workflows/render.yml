@@ -236,7 +236,17 @@ jobs:
           # todo lo que el render puso adentro (tipeo, efectos). ⛔ NADA de `-shortest`: con una
           # entrada cruda corta de mas — dejo el audio 6,7 s mas corto que el video y el cierre mudo.
           OK=0
-          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v -c:v copy -bsf:v h264_mp4toannexb -f h264 "_v_$SLUG.h264"              && ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:a -c:a copy -f adts "_a_$SLUG.aac"              && ffmpeg -y -v error -fflags +genpts -r 30 -i "_v_$SLUG.h264" -i "_a_$SLUG.aac"                   -map 0:v:0 -map 1:a:0 -c copy -movflags +faststart "$SLUG.mp4"; then OK=1; fi
+          # ⛔⛔ NO SE PUEDE ARREGLAR LOS TIMESTAMPS COPIANDO EL STREAM. El h264 crudo no lleva
+          # tiempos, asi que `-fflags +genpts -r 30` los reparte EN FILA y deja pts == dts en todos
+          # los cuadros. Pero el stream tiene B-FRAMES (la mayoria de los cuadros lo son), y con
+          # B-frames el orden de MOSTRAR no es el de DECODIFICAR: el contenedor termina pidiendo
+          # que se muestren desordenados. Los reproductores de escritorio lo corrigen solos (por
+          # eso en local se ve fluido), pero CHROME obedece al contenedor y se ve como TIRON, solo
+          # donde hay movimiento continuo (el avatar); sobre fotos casi fijas es invisible.
+          # Costo real: 8 rondas y 6 renders en `cmetemu` buscandolo en el archivo equivocado.
+          # La UNICA forma correcta de forzar CFR conservando el reordenamiento es RE-ENCODEAR.
+          # Verificado midiendo pts vs dts en las dos variantes antes de tocar esto.
+          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v:0 -map 0:a:0 -vf "setpts=N/30/TB,format=yuv420p" -r 30 -fps_mode cfr -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -video_track_timescale 90000 -c:a aac -b:a 192k -ar 48000 -af "aresample=async=1:first_pts=0,apad" -movflags +faststart "$SLUG.mp4"; then OK=1; fi
           # ⛔⛔ COMPUERTA: el final TIENE que tener pista de audio y durar casi lo mismo que el video.
           if [ "$OK" = "1" ]; then
             VD=$(ffprobe -v error -select_streams v -show_entries stream=duration -of csv=p=0 "$SLUG.mp4")
@@ -247,6 +257,11 @@ jobs:
             fi
           fi
           if [ "$OK" = "1" ]; then
+            NB=$(ffprobe -v error -select_streams v:0 -show_entries stream=has_b_frames -of csv=p=0 "$SLUG.mp4")
+            PD=$(ffprobe -v error -select_streams v -show_entries packet=pts_time,dts_time -read_intervals "%+1" -of csv=p=0 "$SLUG.mp4" | awk -F, '{ if ($1 != $2) c++ } END { print c+0 }')
+            if [ "${NB:-0}" != "0" ] && [ "$PD" = "0" ]; then
+              echo "::error::el mp4 tiene B-frames pero pts == dts en todos los cuadros — se veria con TIRON en Chrome"; exit 1
+            fi
             echo "timestamps reescritos a 30 fps CFR (video y audio)"
             rm -f "_v_$SLUG.h264" "_a_$SLUG.aac" "_cat_$SLUG.mp4"
           else
