@@ -275,6 +275,15 @@ export const BulletCascade: React.FC<{
   const t = useTheme(theme);
   const ink = useInk(t);
   const { frame, fps, op } = useBeat(durationInFrames);
+  // ⛔ El renglon va con `whiteSpace: nowrap` (para que la barra de resaltado no se parta) y el
+  // fontSize estaba CLAVADO en 66: cualquier bullet de mas de ~42 caracteres se salia del panel
+  // y quedaba CORTADO al medio (medido en fedrodillas: "…la cabeza queda sobre" de 59). El cuerpo
+  // se achica lo justo para que entre el bullet mas largo.
+  const AVAIL = 1444;               // 1920 - inset 60*2 - left/right 150*2 - punto 22 - gap 34
+  const CHAR_W = 0.52;              // ancho medio de caracter, en unidades de fontSize
+  const longest = Math.max(1, ...bullets.map((b) =>
+    (b.pre ? b.pre.length + 1 : 0) + (b.key || "").length + (b.post ? b.post.length + 1 : 0)));
+  const bodySize = Math.max(38, Math.min(66, Math.floor(AVAIL / (longest * CHAR_W))));
   return (
     <Stage theme={t} style={{ opacity: op }}>
       <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={18}>
@@ -298,7 +307,7 @@ export const BulletCascade: React.FC<{
                     flexShrink: 0,
                   }}
                 />
-                <div style={{ fontFamily: t.fontDisplay, fontWeight: t.displayWeight, fontSize: 66, lineHeight: 1.15, color: ink.text, textShadow: ink.shadowStrong }}>
+                <div style={{ fontFamily: t.fontDisplay, fontWeight: t.displayWeight, fontSize: bodySize, lineHeight: 1.15, color: ink.text, textShadow: ink.shadowStrong }}>
                   {b.pre && <span style={{ color: ink.soft, fontWeight: 500 }}>{b.pre} </span>}
                   <span style={{ position: "relative", whiteSpace: "nowrap" }}>
                     <span

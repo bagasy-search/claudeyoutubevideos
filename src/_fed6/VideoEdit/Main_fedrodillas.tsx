@@ -129,7 +129,12 @@ const HalfLeft: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div style={{ position: "absolute", left: 0, top: 0, width: 960, height: 1080, overflow: "hidden", background: BG }}>{children}</div>
 );
 
-const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag");
+// ⛔ El endcard se anclaba al ULTIMO "nametag" a secas. En este video el unico nametag
+// es la ficha de Don Ernesto (1:44), asi que la placa "Suscribite" — que es PANTALLA
+// COMPLETA — quedaba pegada encima del video desde 1:44 hasta el final: 44 min de 46.
+// El ancla solo vale si el nametag cae en el tramo final; si no, ultimos 12 s.
+const CTA_MIN = VEND - 90;
+const ctaBeat = [...compBeats].reverse().find((b: any) => b.kind === "nametag" && b.start >= CTA_MIN);
 const CTA_AT = ctaBeat ? ctaBeat.start : VEND - 12;
 
 const renderComp = (b: any, d: number) =>

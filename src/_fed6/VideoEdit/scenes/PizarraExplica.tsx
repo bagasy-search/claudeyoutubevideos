@@ -28,21 +28,29 @@ const C = {
 };
 const FONT = "Inter, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif";
 
-export type BoardItem = { image?: string; title: string; sub?: string; tone?: "teal" | "blue" | "coral" };
+// ⛔ El generador de beats escribe el texto del item como `t` (los 4 builds que usan este
+// componente lo hacen asi), pero aca se leia SOLO `title`: las filas salian NUMERADAS y VACIAS.
+// Se acepta `t` como alias. `title` sigue teniendo prioridad si viene.
+export type BoardItem = { image?: string; title?: string; t?: string; sub?: string; tone?: "teal" | "blue" | "coral" };
+export const boardText = (it: BoardItem) => it.title ?? it.t ?? "";
 
 export const PizarraExplica: React.FC<{
   durationInFrames: number;
   eyebrow?: string;
   title?: string;
   items: BoardItem[];
-  side?: "left" | "right";
-}> = ({ durationInFrames, eyebrow, title, items, side = "left" }) => {
+  side?: "left" | "right" | "full";
+}> = ({ durationInFrames, eyebrow, title, items, side = "full" }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // El avatar ocupa ~760px de un lado; la pizarra toma el resto.
-  const BOARD_W = 1010;
-  const boardX = side === "left" ? 48 : 1920 - BOARD_W - 48;
+  // El beat `pizarraexplica` esta en NEWFULL: el Main OCULTA al avatar mientras dura, asi que
+  // la pizarra es la escena entera. Con BOARD_W fijo en 1010 quedaban 860px de fondo vacio a la
+  // derecha. Por defecto ocupa el cuadro completo; `side` sigue dando la version angosta para
+  // cuando se la quiera al lado del avatar.
+  const FULL = side === "full";
+  const BOARD_W = FULL ? 1824 : 1010;
+  const boardX = FULL || side === "left" ? 48 : 1920 - BOARD_W - 48;
 
   // entrada del panel
   const pin = spring({ frame, fps, config: { damping: 16, mass: 0.7, stiffness: 110 } });
@@ -59,8 +67,10 @@ export const PizarraExplica: React.FC<{
 
   // altura de fila según haya imagen
   const hasImg = items.some((it) => it.image);
-  const rowH = hasImg ? 150 : 104;
   const listTop = 210;
+  // ⛔ rowH era 104 fijo: un item que ocupa dos renglones se comia la fila de abajo. Se reparte
+  // el alto que queda entre los items (con piso y techo) para que respiren.
+  const rowH = hasImg ? 150 : Math.max(104, Math.min(176, Math.floor((984 - listTop - 56) / Math.max(1, items.length))));
   const spineX = 96;
 
   // progreso de la línea "espina" (se dibuja hasta el último ítem visible)
@@ -175,7 +185,8 @@ export const PizarraExplica: React.FC<{
               </div>
 
               {/* fila: (thumb imagen) + textos */}
-              <div style={{ display: "flex", alignItems: "center", gap: 26, marginLeft: 8, height: rowH - 20 }}>
+              {/* ⛔ marginLeft era 8: el texto arrancaba DEBAJO de la chapa numerada y quedaba tachado. */}
+              <div style={{ display: "flex", alignItems: "center", gap: 26, marginLeft: 66, height: rowH - 20 }}>
                 {it.image && (
                   <div
                     style={{
@@ -194,7 +205,7 @@ export const PizarraExplica: React.FC<{
                 )}
                 <div style={{ minWidth: 0 }}>
                   <div style={{ fontSize: it.image ? 40 : 44, fontWeight: 850, color: C.ink, lineHeight: 1.08, letterSpacing: -0.3 }}>
-                    {it.title}
+                    {boardText(it)}
                   </div>
                   {it.sub && (
                     <div style={{ fontSize: 27, color: C.soft, marginTop: 8, lineHeight: 1.24, fontWeight: 500 }}>{it.sub}</div>

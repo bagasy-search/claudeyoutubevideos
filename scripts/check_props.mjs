@@ -41,6 +41,9 @@ const CONTRACT = {
   nametag:       { assets: ["image"] },
   guardaesto:    { req: ["items"], arrayOfString: ["items"] },
   avatarpizarra: { req: ["items"], itemKey: { items: "card" } },
+  // PizarraExplica lee el texto del item como `title` con alias `t`. Sin contrato, 4 videos
+  // (fcsaguapiel, fcsmusculo, fcssenales, fedrodillas) salieron con las filas NUMERADAS y VACIAS.
+  pizarraexplica: { req: ["items"], itemKey: { items: "t" }, itemAssets: { items: "image" } },
   mitoverdad:    { req: ["myth", "truth"] },   // _fed6/scenes/MitoVerdad.tsx usa myth/truth (el contrato viejo en ES era de otro kit)
   quote:         { req: ["text"] },
   callout:       { req: ["caption"] },
