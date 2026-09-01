@@ -1,0 +1,236 @@
+{
+ "clips": [
+  {
+   "from": 221,
+   "dur": 175,
+   "name": "bas_trio_bueno"
+  },
+  {
+   "from": 1186,
+   "dur": 175,
+   "name": "bas_dr_present"
+  },
+  {
+   "from": 3168,
+   "dur": 175,
+   "name": "bas_colador_filtra"
+  },
+  {
+   "from": 3794,
+   "dur": 175,
+   "name": "bas_amanecer_cocina"
+  },
+  {
+   "from": 4358,
+   "dur": 175,
+   "name": "bas_marta_asustada"
+  },
+  {
+   "from": 5150,
+   "dur": 175,
+   "name": "bas_marta_botella"
+  },
+  {
+   "from": 5724,
+   "dur": 120,
+   "name": "bas_marta_tranquila"
+  },
+  {
+   "from": 5791,
+   "dur": 175,
+   "name": "bas_marta_tobillos"
+  },
+  {
+   "from": 7776,
+   "dur": 175,
+   "name": "bas_arteria_circulacion"
+  },
+  {
+   "from": 8105,
+   "dur": 175,
+   "name": "bas_jengibre_rodajas"
+  },
+  {
+   "from": 9329,
+   "dur": 175,
+   "name": "bas_hibisco_infusion"
+  },
+  {
+   "from": 9634,
+   "dur": 175,
+   "name": "bas_tensiometro"
+  },
+  {
+   "from": 10224,
+   "dur": 175,
+   "name": "bas_manguera"
+  },
+  {
+   "from": 11775,
+   "dur": 175,
+   "name": "bas_cebada_agua"
+  },
+  {
+   "from": 13189,
+   "dur": 175,
+   "name": "bas_cebada_olla"
+  },
+  {
+   "from": 14024,
+   "dur": 175,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 16287,
+   "dur": 175,
+   "name": "bas_azucar_colador"
+  },
+  {
+   "from": 19340,
+   "dur": 175,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 19527,
+   "dur": 175,
+   "name": "bas_sangre_espesa"
+  },
+  {
+   "from": 22897,
+   "dur": 175,
+   "name": "bas_manos_taza"
+  },
+  {
+   "from": 25081,
+   "dur": 175,
+   "name": "bas_dr_analisis"
+  },
+  {
+   "from": 28856,
+   "dur": 175,
+   "name": "bas_cierre_jengibre"
+  }
+ ],
+ "broll": [
+  {
+   "from": 3610,
+   "dur": 175,
+   "img": "bas_rinon_dos.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 8702,
+   "dur": 175,
+   "img": "bas_anticoagulantes.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "from": 9216,
+   "dur": 120,
+   "img": "bas_hibisco_flores.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 11679,
+   "dur": 120,
+   "img": "bas_cebada_granos.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 12493,
+   "dur": 175,
+   "img": "bas_piedras.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "amber"
+  },
+  {
+   "from": 13899,
+   "dur": 120,
+   "img": "bas_vaso_agua.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 14595,
+   "dur": 175,
+   "img": "bas_agua_vs_te.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 15157,
+   "dur": 120,
+   "img": "bas_trio_malo.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 15210,
+   "dur": 175,
+   "img": "bas_envase_hojita.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 16064,
+   "dur": 175,
+   "img": "bas_azucar_fila.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 16959,
+   "dur": 175,
+   "img": "bas_hibisco_frio.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 19035,
+   "dur": 175,
+   "img": "bas_sen_hierba.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 21783,
+   "dur": 175,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 24411,
+   "dur": 175,
+   "img": "bas_analisis_creatinina.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "from": 29379,
+   "dur": 154,
+   "img": "bas_rinon_noble.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  }
+ ]
+}

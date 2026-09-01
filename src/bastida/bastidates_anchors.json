@@ -1,0 +1,357 @@
+{
+  "img_dr_hook": {
+    "frame": 5,
+    "ms": 160,
+    "pos": 0
+  },
+  "img_dr_present": {
+    "frame": 1186,
+    "ms": 39520,
+    "pos": 147
+  },
+  "img_dr_colador": {
+    "frame": 2626,
+    "ms": 87520,
+    "pos": 301
+  },
+  "img_dr_jengibre": {
+    "frame": 6840,
+    "ms": 228000,
+    "pos": 752
+  },
+  "img_dr_hibisco": {
+    "frame": 9134,
+    "ms": 304480,
+    "pos": 1003
+  },
+  "img_dr_agua": {
+    "frame": 14024,
+    "ms": 467465,
+    "pos": 1567
+  },
+  "img_dr_analisis": {
+    "frame": 25081,
+    "ms": 836025,
+    "pos": 2788
+  },
+  "img_marta_asustada": {
+    "frame": 4358,
+    "ms": 145280,
+    "pos": 479
+  },
+  "img_marta_botella": {
+    "frame": 5150,
+    "ms": 171680,
+    "pos": 557
+  },
+  "img_marta_tranquila": {
+    "frame": 5724,
+    "ms": 190800,
+    "pos": 623
+  },
+  "img_marta_tobillos": {
+    "frame": 5791,
+    "ms": 193040,
+    "pos": 628
+  },
+  "img_trio_bueno": {
+    "frame": 221,
+    "ms": 7360,
+    "pos": 24
+  },
+  "img_jengibre_raiz": {
+    "frame": 6919,
+    "ms": 230640,
+    "pos": 759
+  },
+  "img_jengibre_rodajas": {
+    "frame": 8105,
+    "ms": 270160,
+    "pos": 885
+  },
+  "img_hibisco_flores": {
+    "frame": 9216,
+    "ms": 307200,
+    "pos": 1013
+  },
+  "img_hibisco_infusion": {
+    "frame": 9329,
+    "ms": 310960,
+    "pos": 1024
+  },
+  "img_cebada_granos": {
+    "frame": 11679,
+    "ms": 389305,
+    "pos": 1295
+  },
+  "img_cebada_agua": {
+    "frame": 11775,
+    "ms": 392505,
+    "pos": 1306
+  },
+  "img_cebada_olla": {
+    "frame": 13189,
+    "ms": 439625,
+    "pos": 1467
+  },
+  "img_vaso_agua": {
+    "frame": 13899,
+    "ms": 463305,
+    "pos": 1554
+  },
+  "img_agua_vs_te": {
+    "frame": 14595,
+    "ms": 486505,
+    "pos": 1633
+  },
+  "img_rinon_dos": {
+    "frame": 3610,
+    "ms": 120320,
+    "pos": 399
+  },
+  "img_colador_filtra": {
+    "frame": 3168,
+    "ms": 105600,
+    "pos": 358
+  },
+  "img_amanecer_cocina": {
+    "frame": 3794,
+    "ms": 126480,
+    "pos": 415
+  },
+  "img_arteria_circulacion": {
+    "frame": 7776,
+    "ms": 259200,
+    "pos": 847
+  },
+  "img_analisis_creatinina": {
+    "frame": 24411,
+    "ms": 813705,
+    "pos": 2717
+  },
+  "img_semaforo": {
+    "frame": 24709,
+    "ms": 823625,
+    "pos": 2749
+  },
+  "img_tensiometro": {
+    "frame": 9634,
+    "ms": 321120,
+    "pos": 1067
+  },
+  "img_manguera": {
+    "frame": 10224,
+    "ms": 340800,
+    "pos": 1129
+  },
+  "img_anticoagulantes": {
+    "frame": 8702,
+    "ms": 290080,
+    "pos": 953
+  },
+  "img_piedras": {
+    "frame": 12493,
+    "ms": 416425,
+    "pos": 1388
+  },
+  "img_trio_malo": {
+    "frame": 15157,
+    "ms": 505225,
+    "pos": 1701
+  },
+  "img_envase_hojita": {
+    "frame": 15210,
+    "ms": 506985,
+    "pos": 1709
+  },
+  "img_botella_helado": {
+    "frame": 15536,
+    "ms": 517865,
+    "pos": 1755
+  },
+  "img_azucar_fila": {
+    "frame": 16064,
+    "ms": 535465,
+    "pos": 1812
+  },
+  "img_azucar_colador": {
+    "frame": 16287,
+    "ms": 542905,
+    "pos": 1837
+  },
+  "img_hibisco_frio": {
+    "frame": 16959,
+    "ms": 565305,
+    "pos": 1919
+  },
+  "img_saquito": {
+    "frame": 17190,
+    "ms": 572985,
+    "pos": 1943
+  },
+  "img_tres_cucharadas": {
+    "frame": 17278,
+    "ms": 575945,
+    "pos": 1953
+  },
+  "img_detox_caja": {
+    "frame": 18464,
+    "ms": 615465,
+    "pos": 2085
+  },
+  "img_sen_hierba": {
+    "frame": 19035,
+    "ms": 634505,
+    "pos": 2148
+  },
+  "img_deshidratado": {
+    "frame": 19340,
+    "ms": 644665,
+    "pos": 2183
+  },
+  "img_sangre_espesa": {
+    "frame": 19527,
+    "ms": 650905,
+    "pos": 2205
+  },
+  "img_etiqueta_azucar": {
+    "frame": 21286,
+    "ms": 709545,
+    "pos": 2384
+  },
+  "img_promesa_milagro": {
+    "frame": 21526,
+    "ms": 717545,
+    "pos": 2404
+  },
+  "img_taza_casera": {
+    "frame": 21783,
+    "ms": 726105,
+    "pos": 2427
+  },
+  "img_manos_taza": {
+    "frame": 22897,
+    "ms": 763225,
+    "pos": 2553
+  },
+  "img_guia_heladera": {
+    "frame": 27954,
+    "ms": 931785,
+    "pos": 3116
+  },
+  "img_rinon_noble": {
+    "frame": 29379,
+    "ms": 979305,
+    "pos": 3285
+  },
+  "img_cierre_jengibre": {
+    "frame": 28856,
+    "ms": 961865,
+    "pos": 3225
+  },
+  "open": {
+    "frame": 5,
+    "ms": 160,
+    "pos": 0
+  },
+  "present": {
+    "frame": 1186,
+    "ms": 39520,
+    "pos": 147
+  },
+  "dialisis": {
+    "frame": 1846,
+    "ms": 61520,
+    "pos": 220
+  },
+  "mecanismo": {
+    "frame": 2626,
+    "ms": 87520,
+    "pos": 301
+  },
+  "marta": {
+    "frame": 4236,
+    "ms": 141200,
+    "pos": 467
+  },
+  "buenos": {
+    "frame": 6214,
+    "ms": 207120,
+    "pos": 673
+  },
+  "ch_jengibre": {
+    "frame": 6778,
+    "ms": 225920,
+    "pos": 741
+  },
+  "ch_hibisco": {
+    "frame": 9022,
+    "ms": 300720,
+    "pos": 987
+  },
+  "ch_cebada": {
+    "frame": 11355,
+    "ms": 378505,
+    "pos": 1259
+  },
+  "agua_reina": {
+    "frame": 14024,
+    "ms": 467465,
+    "pos": 1567
+  },
+  "malos_intro": {
+    "frame": 15044,
+    "ms": 501465,
+    "pos": 1690
+  },
+  "malo_helado": {
+    "frame": 15536,
+    "ms": 517865,
+    "pos": 1755
+  },
+  "malo_sobre": {
+    "frame": 17142,
+    "ms": 571385,
+    "pos": 1938
+  },
+  "malo_detox": {
+    "frame": 18464,
+    "ms": 615465,
+    "pos": 2085
+  },
+  "regla": {
+    "frame": 21198,
+    "ms": 706585,
+    "pos": 2379
+  },
+  "empatia": {
+    "frame": 22897,
+    "ms": 763225,
+    "pos": 2553
+  },
+  "creatinina": {
+    "frame": 24709,
+    "ms": 823625,
+    "pos": 2749
+  },
+  "repaso": {
+    "frame": 25455,
+    "ms": 848505,
+    "pos": 2833
+  },
+  "cta_guide": {
+    "frame": 27742,
+    "ms": 924745,
+    "pos": 3090
+  },
+  "subscribe": {
+    "frame": 28222,
+    "ms": 940745,
+    "pos": 3151
+  },
+  "cierre": {
+    "frame": 29379,
+    "ms": 979305,
+    "pos": 3285
+  }
+}
