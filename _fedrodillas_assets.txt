@@ -799,4 +799,6 @@ img/rr_071.jpg
 img/rr_071_blur.jpg
 img/rr_072.jpg
 img/rr_072_blur.jpg
+img/rr_073.jpg
+img/rr_073_blur.jpg
 qr_fedrodillas.png
