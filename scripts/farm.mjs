@@ -22,6 +22,15 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 
+// ⛔ CHUNKS por defecto = 200 (era 60). MEDIDO el 1-sep-2026 sobre un video de 47 min:
+// el overhead fijo de un chunk (checkout + deps cacheadas + bajar el tar + bundlear) es de
+// 0,5 min, pero el RENDER de cada chunk va de 4,9 a 49,3 min — un desbalance de 10x, porque
+// se parte por CANTIDAD DE CUADROS y un cuadro con componentes cuesta muchisimo mas que una
+// foto quieta. El reloj lo marca el chunk mas lento, asi que 60 pedazos = 49 min de cola con
+// 59 runners libres esperando. Partir mas chico es casi gratis (0,5 min c/u) y corta esa cola
+// proporcionalmente:  60 -> 49 min | 120 -> 25 | 200 -> ~15.  El tope de una matrix es 256.
+// Lo correcto de verdad seria partir por COSTO estimado y no por cuadros; esto es el 90% del
+// beneficio sin necesitar que el runner conozca el contenido.
 // CHUNKS por defecto = 60. Era 20 porque ese es el tope de jobs concurrentes de una cuenta free, y
 // pasarse significaba una 2ª tanda con casi todos los slots ociosos. Desde jul 2026 el repo vive en
 // la organización bagasy-search con plan Team → el tope es 60 y entra TODO en una sola tanda.
@@ -31,7 +40,7 @@ import os from "node:os";
 // su propio checkout + install. 60 chunks son ~37 GB de transferencia contra ~12 GB con 20. Más
 // arriba de 60 el arranque pesaría más que el render, así que es el techo útil, no sólo el del plan.
 // Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ 60 / videos_en_curso.
-const [slug, comp, total, chunks = "60", pref] = process.argv.slice(2);
+const [slug, comp, total, chunks = "200", pref] = process.argv.slice(2);
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
   process.exit(1);
@@ -409,7 +418,13 @@ function lockOwner() { // devuelve el dueño VIVO del candado, o null si está l
 function releaseLock() {
   try { if (JSON.parse(fs.readFileSync(LOCK, "utf8")).pid === process.pid) fs.rmSync(LOCK, { force: true }); } catch { /* no es mío o no está */ }
 }
-if (!process.env.FARM_NO_LOCK) {
+// ⛔ EL CANDADO YA NO CORRE POR DEFECTO. El comentario de arriba decía "la cuenta tiene 20 jobs
+// concurrentes", y con eso serializaba TODO. Es falso: la cuenta tiene 60 runners. MEDIDO el
+// 1-sep-2026: TRES renders del worker corriendo a la vez sumaban 16 jobs activos y CERO encolados,
+// o sea ni entre tres saturaban — mientras un render lanzado a mano esperaba turno una hora.
+// Además el stitch ocupa UN job y no toca el pool: mientras un video stitchea, otro puede rendear.
+// Se puede volver a serializar con FARM_LOCK=1.
+if (process.env.FARM_LOCK) {
   let avisado = false;
   for (;;) {
     const dueño = lockOwner();
@@ -479,7 +494,7 @@ if (!process.env.FARM_ALLOW_DUP) {
   } catch { /* sin gh o sin red: no bloqueo el render por no poder consultar */ }
 }
 console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
-sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}`);
+sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${process.env.STITCH_RAW ? ` -f stitch_raw=1` : ""}`);
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");
