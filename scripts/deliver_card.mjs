@@ -53,6 +53,10 @@ const main = async () => {
   const jobBody = {
     user_id: ch.user_id, channel_key: channelKey, channel_name: ch.name || null, slug,
     title: (meta.title || item?.title || slug).slice(0, 200), provider: "claude-chat",
+    // ⛔ `script` es NOT NULL y no tiene default: sin esta linea el insert rebota con 23502
+    // ("null value in column script violates not-null constraint") DESPUES de haber subido el
+    // mp4 al release, asi que el video queda arriba y la tarjeta sin enganchar.
+    script: meta.script || "",
     status: "done", mp4_url: url, thumb_url: thumb,
     yt_title: meta.title ? String(meta.title).slice(0, 120) : null, yt_description: meta.description || null,
   };
