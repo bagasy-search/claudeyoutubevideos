@@ -1,0 +1,919 @@
+[
+ {
+  "from": 745,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "",
+  "kb": 1
+ },
+ {
+  "from": 870,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_veg_colorful_market.mp4",
+  "caption": "",
+  "kb": -1
+ },
+ {
+  "from": 1030,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_veg_lineup_bad.mp4",
+  "caption": "",
+  "kb": 1
+ },
+ {
+  "from": 1170,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "",
+  "kb": -1
+ },
+ {
+  "from": 3050,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_dark_greens_pile.mp4",
+  "caption": "Verduras oscuras",
+  "kb": 1
+ },
+ {
+  "from": 4585,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_sponge_dry.mp4",
+  "caption": "Esponja de minerales",
+  "kb": -1
+ },
+ {
+  "from": 4870,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_sponge_squeeze.mp4",
+  "caption": "Esponja de minerales",
+  "kb": 1
+ },
+ {
+  "from": 5010,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_sponge_wet_drip.mp4",
+  "caption": "Esponja de minerales",
+  "kb": -1
+ },
+ {
+  "from": 5165,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_dark_leafy_closeup.mp4",
+  "caption": "Esponja de minerales",
+  "kb": 1
+ },
+ {
+  "from": 5295,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_mineral_crystals.mp4",
+  "caption": "Esponja de minerales",
+  "kb": -1
+ },
+ {
+  "from": 5465,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_sponge_dry.mp4",
+  "caption": "Esponja de minerales",
+  "kb": 1
+ },
+ {
+  "from": 5615,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_sponge_squeeze.mp4",
+  "caption": "Esponja de minerales",
+  "kb": -1
+ },
+ {
+  "from": 5740,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_sponge_dry.mp4",
+  "caption": "Esponja de minerales",
+  "kb": 1
+ },
+ {
+  "from": 5900,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_sponge_squeeze.mp4",
+  "caption": "Esponja de minerales",
+  "kb": -1
+ },
+ {
+  "from": 6040,
+  "dur": 121,
+  "clip": "broll/bastidarenal8/bas8_sponge_dry.mp4",
+  "caption": "Esponja de minerales",
+  "kb": 1
+ },
+ {
+  "from": 7348,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_sieve_fine_mesh.mp4",
+  "caption": "Se junta, forma piedras",
+  "kb": -1
+ },
+ {
+  "from": 7488,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_mineral_crystals.mp4",
+  "caption": "Se junta, forma piedras",
+  "kb": 1
+ },
+ {
+  "from": 7491,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_colander_clog.mp4",
+  "caption": "El filtro que se tapa",
+  "kb": -1
+ },
+ {
+  "from": 7641,
+  "dur": 101,
+  "clip": "broll/bastidarenal8/bas8_colander_drain_greens.mp4",
+  "caption": "El filtro que se tapa",
+  "kb": 1
+ },
+ {
+  "from": 7643,
+  "dur": 99,
+  "clip": "broll/bastidarenal8/bas8_sieve_fine_mesh.mp4",
+  "caption": "Se junta, forma piedras",
+  "kb": -1
+ },
+ {
+  "from": 8062,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_cristina_blender.mp4",
+  "caption": "Doña Cristina",
+  "kb": 1
+ },
+ {
+  "from": 8187,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_cristina_drink.mp4",
+  "caption": "Doña Cristina",
+  "kb": -1
+ },
+ {
+  "from": 9833,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_cabbage_cut_half.mp4",
+  "caption": "El repollo",
+  "kb": 1
+ },
+ {
+  "from": 10003,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_cabbage_market_hands.mp4",
+  "caption": "El repollo",
+  "kb": -1
+ },
+ {
+  "from": 10153,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_cabbage_salad_bowl.mp4",
+  "caption": "El repollo",
+  "kb": 1
+ },
+ {
+  "from": 10278,
+  "dur": 152,
+  "clip": "broll/bastidarenal8/bas8_cabbage_saute_pan.mp4",
+  "caption": "El repollo",
+  "kb": -1
+ },
+ {
+  "from": 10855,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_redpepper_cut_strips.mp4",
+  "caption": "El pimiento rojo",
+  "kb": 1
+ },
+ {
+  "from": 11025,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_redpepper_pile_market.mp4",
+  "caption": "El pimiento rojo",
+  "kb": -1
+ },
+ {
+  "from": 11175,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_redpepper_roasted.mp4",
+  "caption": "El pimiento rojo",
+  "kb": 1
+ },
+ {
+  "from": 11300,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_redpepper_seeds.mp4",
+  "caption": "El pimiento rojo",
+  "kb": -1
+ },
+ {
+  "from": 13168,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_onion_basket.mp4",
+  "caption": "La cebolla",
+  "kb": 1
+ },
+ {
+  "from": 13293,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_onion_browning_pan.mp4",
+  "caption": "La cebolla",
+  "kb": -1
+ },
+ {
+  "from": 13453,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_onion_cut.mp4",
+  "caption": "La cebolla",
+  "kb": 1
+ },
+ {
+  "from": 13593,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_onion_golden_stir.mp4",
+  "caption": "La cebolla",
+  "kb": -1
+ },
+ {
+  "from": 13748,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_onion_half_rings.mp4",
+  "caption": "La cebolla",
+  "kb": 1
+ },
+ {
+  "from": 13878,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_onion_rings_board.mp4",
+  "caption": "La cebolla",
+  "kb": -1
+ },
+ {
+  "from": 15658,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_spinach_boiled_strain.mp4",
+  "caption": "Espinaca cruda",
+  "kb": 1
+ },
+ {
+  "from": 15813,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_spinach_bowl_raw.mp4",
+  "caption": "Espinaca cruda",
+  "kb": -1
+ },
+ {
+  "from": 15943,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_spinach_detox_lineup.mp4",
+  "caption": "Espinaca cruda",
+  "kb": 1
+ },
+ {
+  "from": 16113,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_spinach_handful.mp4",
+  "caption": "Espinaca cruda",
+  "kb": -1
+ },
+ {
+  "from": 16263,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_spinach_into_blender.mp4",
+  "caption": "Espinaca cruda",
+  "kb": 1
+ },
+ {
+  "from": 16723,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_potato_boiling_pot.mp4",
+  "caption": "La papa",
+  "kb": -1
+ },
+ {
+  "from": 16878,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_potato_cut_chunks.mp4",
+  "caption": "La papa",
+  "kb": 1
+ },
+ {
+  "from": 17008,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_potato_double_drain.mp4",
+  "caption": "La papa",
+  "kb": -1
+ },
+ {
+  "from": 17178,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_potato_fried_pan.mp4",
+  "caption": "La papa",
+  "kb": 1
+ },
+ {
+  "from": 17915,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_tomato_fresh_slice.mp4",
+  "caption": "El tomate concentrado",
+  "kb": -1
+ },
+ {
+  "from": 18365,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_tomato_paste_jar.mp4",
+  "caption": "El tomate concentrado",
+  "kb": 1
+ },
+ {
+  "from": 18490,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_tomato_paste_spoon.mp4",
+  "caption": "El tomate concentrado",
+  "kb": -1
+ },
+ {
+  "from": 18650,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_tomato_sauce_pot.mp4",
+  "caption": "El tomate concentrado",
+  "kb": 1
+ },
+ {
+  "from": 18790,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_ketchup_bottle_table.mp4",
+  "caption": "El tomate concentrado",
+  "kb": -1
+ },
+ {
+  "from": 18945,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_ketchup_squeeze.mp4",
+  "caption": "El tomate concentrado",
+  "kb": 1
+ },
+ {
+  "from": 19075,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_tomatoes_reducing.mp4",
+  "caption": "El tomate concentrado",
+  "kb": -1
+ },
+ {
+  "from": 19245,
+  "dur": 86,
+  "clip": "broll/bastidarenal8/bas8_tomato_fresh_slice.mp4",
+  "caption": "El tomate concentrado",
+  "kb": 1
+ },
+ {
+  "from": 19756,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_beet_bunch_leaves.mp4",
+  "caption": "La remolacha",
+  "kb": -1
+ },
+ {
+  "from": 20211,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_beet_cut_half.mp4",
+  "caption": "La remolacha",
+  "kb": 1
+ },
+ {
+  "from": 20361,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_beet_detox_glass.mp4",
+  "caption": "La remolacha",
+  "kb": -1
+ },
+ {
+  "from": 20486,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_beet_grated.mp4",
+  "caption": "La remolacha",
+  "kb": 1
+ },
+ {
+  "from": 20646,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_beet_juice_glass.mp4",
+  "caption": "La remolacha",
+  "kb": -1
+ },
+ {
+  "from": 20786,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_beet_juice_pour.mp4",
+  "caption": "La remolacha",
+  "kb": 1
+ },
+ {
+  "from": 20941,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_beet_raw_whole.mp4",
+  "caption": "La remolacha",
+  "kb": -1
+ },
+ {
+  "from": 21071,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_beet_slices_board.mp4",
+  "caption": "La remolacha",
+  "kb": 1
+ },
+ {
+  "from": 21241,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_beet_stained_hands.mp4",
+  "caption": "La remolacha",
+  "kb": -1
+ },
+ {
+  "from": 21391,
+  "dur": 79,
+  "clip": "broll/bastidarenal8/bas8_beet_bunch_leaves.mp4",
+  "caption": "La remolacha",
+  "kb": 1
+ },
+ {
+  "from": 21770,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_colander_water.mp4",
+  "caption": "Las dos aguas",
+  "kb": -1
+ },
+ {
+  "from": 21925,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_pot_boiling_veg.mp4",
+  "caption": "Las dos aguas",
+  "kb": 1
+ },
+ {
+  "from": 22055,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_pot_cloudy_water.mp4",
+  "caption": "Las dos aguas",
+  "kb": -1
+ },
+ {
+  "from": 22225,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_drain_water_swirl.mp4",
+  "caption": "Las dos aguas",
+  "kb": 1
+ },
+ {
+  "from": 22375,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_pour_water_drain.mp4",
+  "caption": "Las dos aguas",
+  "kb": -1
+ },
+ {
+  "from": 22800,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_potato_fries_plate.mp4",
+  "caption": "Las dos aguas",
+  "kb": 1
+ },
+ {
+  "from": 22955,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_potato_mash_bowl.mp4",
+  "caption": "Las dos aguas",
+  "kb": -1
+ },
+ {
+  "from": 23085,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_potato_peel.mp4",
+  "caption": "Las dos aguas",
+  "kb": 1
+ },
+ {
+  "from": 23255,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_colander_clog.mp4",
+  "caption": "Las dos aguas",
+  "kb": -1
+ },
+ {
+  "from": 23405,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_colander_drain_greens.mp4",
+  "caption": "Las dos aguas",
+  "kb": 1
+ },
+ {
+  "from": 23530,
+  "dur": 78,
+  "clip": "broll/bastidarenal8/bas8_colander_clog.mp4",
+  "caption": "Las dos aguas",
+  "kb": -1
+ },
+ {
+  "from": 23903,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_spinach_raw_bunch.mp4",
+  "caption": "Hervir y colar",
+  "kb": 1
+ },
+ {
+  "from": 24033,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_spinach_wilting_pan.mp4",
+  "caption": "Hervir y colar",
+  "kb": -1
+ },
+ {
+  "from": 24203,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_colander_clog.mp4",
+  "caption": "Hervir y colar",
+  "kb": 1
+ },
+ {
+  "from": 24353,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_colander_drain_greens.mp4",
+  "caption": "Hervir y colar",
+  "kb": -1
+ },
+ {
+  "from": 24478,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_colander_clog.mp4",
+  "caption": "Hervir y colar",
+  "kb": 1
+ },
+ {
+  "from": 24638,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_colander_drain_greens.mp4",
+  "caption": "Hervir y colar",
+  "kb": -1
+ },
+ {
+  "from": 25063,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_colander_clog.mp4",
+  "caption": "Hervir y colar",
+  "kb": 1
+ },
+ {
+  "from": 25233,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_colander_drain_greens.mp4",
+  "caption": "Hervir y colar",
+  "kb": -1
+ },
+ {
+  "from": 25383,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_colander_clog.mp4",
+  "caption": "Hervir y colar",
+  "kb": 1
+ },
+ {
+  "from": 25866,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_blood_test_tube.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 25996,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_lab_report_focus.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 26166,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_lab_report_paper.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 26601,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_creatinine_vial.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 26741,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_kidney_stones_hand.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 26896,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_blood_test_tube.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 27026,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_lab_report_focus.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 27196,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_blood_test_tube.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 27346,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_lab_report_focus.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 27471,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_blood_test_tube.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 27631,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_lab_report_focus.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 27771,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_blood_test_tube.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 27926,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_lab_report_focus.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 28056,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_blood_test_tube.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 28226,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_lab_report_focus.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 28376,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_blood_test_tube.mp4",
+  "caption": "El órgano callado",
+  "kb": 1
+ },
+ {
+  "from": 28501,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_lab_report_focus.mp4",
+  "caption": "El órgano callado",
+  "kb": -1
+ },
+ {
+  "from": 28993,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_guide_book_table.mp4",
+  "caption": "La guía",
+  "kb": 1
+ },
+ {
+  "from": 29123,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_phone_camera_hand.mp4",
+  "caption": "La guía",
+  "kb": -1
+ },
+ {
+  "from": 29728,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_family_share_kitchen.mp4",
+  "caption": "La guía",
+  "kb": 1
+ },
+ {
+  "from": 29868,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "La guía",
+  "kb": -1
+ },
+ {
+  "from": 30023,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "La guía",
+  "kb": 1
+ },
+ {
+  "from": 30153,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "La guía",
+  "kb": -1
+ },
+ {
+  "from": 30323,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "La guía",
+  "kb": 1
+ },
+ {
+  "from": 30473,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "La guía",
+  "kb": -1
+ },
+ {
+  "from": 31053,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "La guía",
+  "kb": 1
+ },
+ {
+  "from": 31183,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "La guía",
+  "kb": -1
+ },
+ {
+  "from": 31353,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "La guía",
+  "kb": 1
+ },
+ {
+  "from": 31503,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "La guía",
+  "kb": -1
+ },
+ {
+  "from": 31628,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "La guía",
+  "kb": 1
+ },
+ {
+  "from": 31788,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "La guía",
+  "kb": -1
+ },
+ {
+  "from": 32584,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_teresa_drain_pot.mp4",
+  "caption": "Teresa, de Monterrey",
+  "kb": 1
+ },
+ {
+  "from": 32709,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_teresa_happy_kitchen.mp4",
+  "caption": "Teresa, de Monterrey",
+  "kb": -1
+ },
+ {
+  "from": 32869,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_cristina_pour_hands.mp4",
+  "caption": "Teresa, de Monterrey",
+  "kb": 1
+ },
+ {
+  "from": 33009,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_teresa_drain_pot.mp4",
+  "caption": "Teresa, de Monterrey",
+  "kb": -1
+ },
+ {
+  "from": 33164,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_teresa_happy_kitchen.mp4",
+  "caption": "Teresa, de Monterrey",
+  "kb": 1
+ },
+ {
+  "from": 33294,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_teresa_drain_pot.mp4",
+  "caption": "Teresa, de Monterrey",
+  "kb": -1
+ },
+ {
+  "from": 33793,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_cabbage_shred_knife.mp4",
+  "caption": "Recuerde",
+  "kb": 1
+ },
+ {
+  "from": 33953,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_cabbage_steam_pot.mp4",
+  "caption": "Recuerde",
+  "kb": -1
+ },
+ {
+  "from": 34093,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_cabbage_whole_white.mp4",
+  "caption": "Recuerde",
+  "kb": 1
+ },
+ {
+  "from": 34248,
+  "dur": 130,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "Recuerde",
+  "kb": -1
+ },
+ {
+  "from": 34378,
+  "dur": 170,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "Recuerde",
+  "kb": 1
+ },
+ {
+  "from": 34548,
+  "dur": 150,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "Recuerde",
+  "kb": -1
+ },
+ {
+  "from": 34698,
+  "dur": 125,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "Recuerde",
+  "kb": 1
+ },
+ {
+  "from": 34823,
+  "dur": 160,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "Recuerde",
+  "kb": -1
+ },
+ {
+  "from": 34983,
+  "dur": 140,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "Recuerde",
+  "kb": 1
+ },
+ {
+  "from": 35123,
+  "dur": 155,
+  "clip": "broll/bastidarenal8/bas8_four_good_veg.mp4",
+  "caption": "Recuerde",
+  "kb": -1
+ },
+ {
+  "from": 35278,
+  "dur": 102,
+  "clip": "broll/bastidarenal8/bas8_veg_board_mixed.mp4",
+  "caption": "Recuerde",
+  "kb": 1
+ }
+]

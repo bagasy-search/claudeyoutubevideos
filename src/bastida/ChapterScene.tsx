@@ -19,12 +19,13 @@ export type ChapterSceneProps = {
   number?: string;
   unit?: string;
   subtitle?: string;
-  hero?: string; // ilustración PNG (public path)
+  hero?: string; // ilustración PNG (public path). Si falta/no existe → placeholder tintado.
   heroSide?: 'left' | 'right';
   accent?: string; // color de acento (número, kicker)
   accentDeep?: string;
   ambient?: string; // tinte del halo ambiental
   flourish?: Flourish;
+  verdict?: 'si' | 'no'; // veredicto opcional (SÍ verde / NO rojo) — chip semántico
 };
 
 /* --------- flourish: sistemas de partículas deterministas por metáfora --------- */
@@ -90,16 +91,42 @@ const Flourishes: React.FC<{kind: Flourish; frame: number; fps: number; p: numbe
   );
 };
 
+/* --------- placeholder de MATERIAL tintado cuando no hay ilustración PNG ---------
+   No es un ícono plano: es un "objeto" glossy translúcido con luz de producto (highlight
+   especular + rim + oclusión + respiración lenta), para no romper el estándar 2.5D. */
+const HeroPlaceholder: React.FC<{accent: string; accentDeep: string; frame: number; fps: number}> = ({accent, accentDeep, frame, fps}) => {
+  const breathe = 1 + Math.sin(frame / fps * 1.1) * 0.02;
+  const spec = 34 + Math.sin(frame / fps * 0.8) * 6;
+  return (
+    <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      {/* halo cálido del material */}
+      <div style={{position: 'absolute', width: 340, height: 340, borderRadius: '50%', background: `radial-gradient(closest-side, ${rgba(accent, 0.3)}, transparent 72%)`, filter: 'blur(26px)', mixBlendMode: 'screen'}} />
+      {/* cuerpo del material — orbe biselado con gradiente de producto */}
+      <div style={{position: 'absolute', width: 300, height: 300, borderRadius: '42% 58% 55% 45% / 52% 44% 56% 48%',
+        transform: `scale(${breathe}) rotate(${Math.sin(frame / fps * 0.5) * 3}deg)`,
+        background: `radial-gradient(60% 55% at 38% 32%, ${shade(accent, 0.42)} 0%, ${accent} 44%, ${shade(accentDeep, -0.1)} 100%)`,
+        boxShadow: `inset 0 10px 26px ${rgba('#ffffff', 0.4)}, inset 0 -26px 46px ${rgba('#000000', 0.5)}, inset 14px 0 40px ${rgba(accentDeep, 0.55)}, 0 30px 60px ${rgba('#000000', 0.5)}`,
+        border: `1px solid ${rgba('#ffffff', 0.16)}`}}>
+        {/* specular grande */}
+        <div style={{position: 'absolute', left: `${spec}%`, top: '18%', width: 90, height: 66, borderRadius: '50%', background: `radial-gradient(closest-side, ${rgba('#ffffff', 0.7)}, transparent 72%)`, filter: 'blur(4px)'}} />
+        {/* micro-specular de recorte */}
+        <div style={{position: 'absolute', right: '20%', bottom: '24%', width: 34, height: 24, borderRadius: '50%', background: `radial-gradient(closest-side, ${rgba(accent, 0.9)}, transparent 70%)`, filter: 'blur(2px)', mixBlendMode: 'screen'}} />
+      </div>
+    </div>
+  );
+};
+
 export const ChapterScene: React.FC<ChapterSceneProps> = ({
   number = '2',
   unit = 'CEBADA',
   subtitle = 'el agua noble de la abuela',
-  hero = 'img/ill/bas_ill_barley.png',
+  hero,
   heroSide = 'right',
   accent = '#D9B36A',
   accentDeep = '#8A6636',
   ambient = 'rgba(217,179,106,0.14)',
   flourish = 'grains',
+  verdict,
 }) => {
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
@@ -187,14 +214,38 @@ export const ChapterScene: React.FC<ChapterSceneProps> = ({
           </div>
         </Layer>
 
-        {/* HERO ilustración (objeto protagonista, flota en su esquina) */}
+        {/* HERO ilustración (objeto protagonista, flota en su esquina).
+            Si no hay PNG (o falla al cargar) cae con gracia a un placeholder de MATERIAL tintado. */}
         <Layer z={96} style={{opacity: heroP}}>
           <div style={{position: 'absolute', left: heroLeftPx, top: -360, width: 400, height: 400,
             transform: `translateY(${interpolate(heroP, [0, 1], [50, 0]) + Math.sin(frame / fps * 1.3) * 7}px) rotate(${Math.sin(frame / fps * 0.9) * 1.6}deg) scale(${interpolate(heroP, [0, 1], [0.86, 1])})`,
             filter: 'drop-shadow(0 34px 46px rgba(0,0,0,0.55))'}}>
-            <Img src={staticFile(hero)} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
+            {/* placeholder de material SIEMPRE detrás: si el PNG carga lo tapa; si no, sostiene la escena */}
+            <HeroPlaceholder accent={accent} accentDeep={accentDeep} frame={frame} fps={fps} />
+            {hero ? (
+              <Img
+                src={staticFile(hero)}
+                onError={() => {}}
+                style={{position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'contain'}}
+              />
+            ) : null}
           </div>
         </Layer>
+
+        {/* VEREDICTO opcional (chip acrílico SÍ verde / NO rojo) — flota bajo el hero, con peso */}
+        {verdict ? (
+          <Layer z={70} style={{opacity: interpolate(frame, [46, 62], [0, 1], clamp)}}>
+            <div style={{position: 'absolute', left: heroLeftPx + 70, top: 96,
+              transform: `translateY(${interpolate(frame, [46, 62], [16, 0], clamp)}px)`,
+              display: 'flex', alignItems: 'center', gap: 14, padding: '12px 26px 12px 20px', borderRadius: 999,
+              background: `linear-gradient(150deg, ${shade(verdict === 'si' ? BAS.si : BAS.no, 0.28)}, ${verdict === 'si' ? BAS.si : BAS.no} 55%, ${shade(verdict === 'si' ? BAS.si : BAS.no, -0.3)})`,
+              border: `1px solid ${rgba('#ffffff', 0.28)}`,
+              boxShadow: `inset 0 2px 0 ${rgba('#ffffff', 0.35)}, inset 0 -3px 8px ${rgba('#000000', 0.4)}, 0 18px 34px ${rgba('#000000', 0.45)}, 0 0 26px ${rgba(verdict === 'si' ? BAS.si : BAS.no, 0.45)}`}}>
+              <span style={{width: 34, height: 34, borderRadius: '50%', background: rgba('#ffffff', 0.22), display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24, fontWeight: 900, color: '#ffffff', boxShadow: `inset 0 1px 0 ${rgba('#ffffff', 0.5)}`}}>{verdict === 'si' ? '✓' : '✕'}</span>
+              <span style={{fontFamily: FONT_SANS, fontSize: 34, fontWeight: 800, letterSpacing: 3, color: verdict === 'si' ? BAS.onSi : BAS.onNo, textShadow: `0 1px 0 ${rgba('#000000', 0.25)}`}}>{verdict === 'si' ? 'SÍ' : 'NO'}</span>
+            </div>
+          </Layer>
+        ) : null}
 
         {/* barrido especular frontal */}
         <Layer z={82}>
@@ -229,4 +280,9 @@ export const CHAPTER_CONFIGS: Record<string, ChapterSceneProps> = {
   lino: {number: '1', unit: 'LINO', subtitle: 'molido · una cucharada al día', hero: 'img/ill/bas6_ill_lino.png', heroSide: 'right', accent: '#C9A56A', accentDeep: '#7A5A2E', ambient: 'rgba(201,165,106,0.14)', flourish: 'grains'},
   chia: {number: '2', unit: 'CHÍA', subtitle: 'remojada · la dosis es la medicina', hero: 'img/ill/bas6_ill_chia.png', heroSide: 'left', accent: '#34C6E0', accentDeep: '#0E7F97', ambient: 'rgba(52,198,224,0.14)', flourish: 'droplets'},
   cilantro: {number: '3', unit: 'CILANTRO', subtitle: 'en infusión · la excusa para tomar agua', hero: 'img/ill/bas6_ill_cilantro.png', heroSide: 'right', accent: '#3FA96B', accentDeep: '#1E6B43', ambient: 'rgba(63,169,107,0.14)', flourish: 'steam'},
+  // --- VIDEO "verduras amigas del riñón" (las 4 SÍ; hero cae a placeholder tintado hasta tener PNG) ---
+  repollo: {number: '1', unit: 'REPOLLO', subtitle: 'bajo en potasio · escúdo del riñón', heroSide: 'right', accent: '#5FB87A', accentDeep: '#25703F', ambient: 'rgba(95,184,122,0.14)', flourish: 'petals', verdict: 'si'},
+  pimiento: {number: '2', unit: 'PIMIENTO', subtitle: 'rojo · vitamina C sin cargar potasio', heroSide: 'left', accent: '#E0603C', accentDeep: '#8A2E16', ambient: 'rgba(224,96,60,0.14)', flourish: 'droplets', verdict: 'si'},
+  coliflor: {number: '3', unit: 'COLIFLOR', subtitle: 'reemplaza al puré sin fósforo de más', heroSide: 'right', accent: '#E4DAC0', accentDeep: '#9C8E6A', ambient: 'rgba(228,218,192,0.13)', flourish: 'steam', verdict: 'si'},
+  cebolla: {number: '4', unit: 'CEBOLLA', subtitle: 'sabor sin sal · antioxidante suave', heroSide: 'left', accent: '#F2A23C', accentDeep: '#A05F12', ambient: 'rgba(242,162,60,0.14)', flourish: 'droplets', verdict: 'si'},
 };
