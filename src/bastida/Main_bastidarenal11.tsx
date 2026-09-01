@@ -172,7 +172,7 @@ const BAD_RECAP = [
 /* ================= DEPTH (escenas de profundidad ancladas al ms) ================= */
 const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[] = [
   // HOOK — los peores alimentos, bloqueados en un anillo: ¿cuáles son?
-  {from: 2, dur: 780, dir: 'in', node: <RenalCarousel cards={[{name: 'Fiambre', img: 'img/bas11_fiambre_platter.jpg', tint: '#D64541'}, {name: 'Gaseosa', img: 'img/bas11_cola_glass.jpg', tint: '#D64541'}, {name: 'Caldo en cubito', img: 'img/bas11_cubito_pot.jpg', tint: '#D64541'}, {name: 'Snacks', img: 'img/bas11_snacks_bowl.jpg', tint: '#D64541'}, {name: 'La sal', img: 'img/bas11_salero.jpg', tint: '#D64541'}]} reveals={[70, 150, 230, 310, 390]} teaseIndex={4} introDur={40} kicker="Salud renal · 10 alimentos" title="¿Cuáles destruyen sus riñones?" />},
+  {from: 2, dur: 780, dir: 'in', node: <RenalCarousel cards={[{name: 'Fiambre', img: 'img/bas11_fiambre_platter.jpg', tint: '#D64541'}, {name: 'Gaseosa', img: 'img/bas11_cola_glass.jpg', tint: '#D64541'}, {name: 'Caldo en cubito', img: 'img/bas11_cubito_pot.jpg', tint: '#D64541'}, {name: 'Snacks', img: 'img/bas11_snacks_bowl.jpg', tint: '#D64541'}, {name: 'La sal', img: 'img/bas11_salero.jpg', tint: '#D64541'}]} reveals={[70, 150, 230, 310]} teaseIndex={4} introDur={40} kicker="Salud renal · 10 alimentos" title="¿Cuáles destruyen sus riñones?" />},
   // INTRO — presentación del doctor
   {from: 833, dur: 300, dir: 'up', node: <PresenterIntro name="Dr. Emilio Bastida" role="Nefrólogo · Salud Renal" kicker="30 años cuidando riñones" img="renal/bastida_cutout.png" />},
   // MECANISMO — el riñón es un colador que se tapa
