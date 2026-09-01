@@ -153,6 +153,23 @@ jobs:
           # -R explícito: este job NO hace checkout, así que gh no puede inferir el repo del .git
           gh release download "chunks-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" --dir prev --pattern "*.mp4" || true
           if [ -d prev ]; then cp -n prev/*.mp4 chunks/ 2>/dev/null || true; fi
+      # ⛔⛔ EL WAV MÁSTER, O EL AUDIO SALE DEL CONCAT Y LE FALTAN SEGUNDOS.
+      # Más abajo se decide `if [ -s "public/$SLUG.wav" ]`, pero este job NO hace checkout ni baja
+      # el tar de assets: el archivo NUNCA existía y la condición era SIEMPRE falsa, así que el
+      # audio salía de los 60 chunks concatenados. Cada costura de AAC come ~120 ms: medido en
+      # `fedrodillas`, 7,2 s de audio de MENOS y la voz desfasada hasta 1,4 s contra la imagen.
+      # El video renderiza perfecto y ninguna compuerta de imagen lo ve.
+      - name: traer el WAV MÁSTER (si no, el audio sale del concat y deriva)
+        continue-on-error: true
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          SLUG="${{ github.event.inputs.slug }}"
+          mkdir -p public
+          for N in "$SLUG.wav" "${SLUG}_fish.wav"; do
+            gh release download "assets-$SLUG" -R "${{ github.repository }}" --dir public --pattern "$N" --clobber 2>/dev/null || true
+          done
+          if [ -s "public/${SLUG}_fish.wav" ] && [ ! -s "public/$SLUG.wav" ]; then mv "public/${SLUG}_fish.wav" "public/$SLUG.wav"; fi
+          if [ -s "public/$SLUG.wav" ]; then echo "wav máster OK ($(stat -c%s "public/$SLUG.wav") bytes)"; else echo "::warning::sin wav máster — el audio saldrá del concat y va a derivar"; fi
       # ── PERSISTIR PRIMERO, CONCATENAR DESPUÉS ──────────────────────────────────────────────
       # Este paso estaba al FINAL del job, después del concat. Con eso, cualquier corrida con un
       # chunk caído moría en el concat y no guardaba NADA — ni siquiera los 19 que sí salieron —,
