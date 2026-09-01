@@ -63,7 +63,7 @@ const findMs = (phrase, after = 0, hint = null) => {
   // ⛔ el arranque puede ser la 1ª, 2ª o 3ª clave (Whisper conjuga distinto: "poné"->"pon"),
   //    y entonces la alineación TIENE que empezar en esa clave, no en la 0: si no, el score da 0.
   let mejor = null, mejorPunt = 0;
-  const VENTANA = 150;   // s de tolerancia alrededor de la posición esperada
+  const VENTANA = 90;    // s de tolerancia alrededor de la posición esperada
   for (let i = 0; i < CW.length; i++) {
     if (CW[i].s < after) continue;
     if (hint != null && Math.abs(CW[i].s - hint) > VENTANA) continue;
@@ -77,7 +77,13 @@ const findMs = (phrase, after = 0, hint = null) => {
         j++;
       }
       const punt = hits / restan;
-      if (punt > mejorPunt) { mejorPunt = punt; mejor = CW[i].s; }
+      const dist = hint == null ? 0 : Math.abs(CW[i].s - hint);
+      const mejorDist = hint == null || mejor == null ? Infinity : Math.abs(mejor - hint);
+      // ⛔ DESEMPATE POR CERCANÍA: sin esto el plano se va a otra parte del video y deja de
+      //    ilustrar lo que se dice en ese segundo, que es la regla dura del canal.
+      if (punt > mejorPunt + 0.001 || (Math.abs(punt - mejorPunt) <= 0.001 && dist < mejorDist)) {
+        mejorPunt = Math.max(mejorPunt, punt); mejor = CW[i].s;
+      }
       break;
     }
     if (mejorPunt === 1) break;
@@ -89,7 +95,8 @@ const findMs = (phrase, after = 0, hint = null) => {
 const A = JSON.parse(fs.readFileSync(`_v3/${SLUG}_moments.json`, "utf8").replace(/^﻿/, ""));
 const F = fs.existsSync(`_v3/${SLUG}_federer.json`)
   ? JSON.parse(fs.readFileSync(`_v3/${SLUG}_federer.json`, "utf8").replace(/^﻿/, "")) : [];
-const ZOOM = fs.existsSync(`_${SLUG}_zoom.json`) ? JSON.parse(fs.readFileSync(`_${SLUG}_zoom.json`, "utf8")) : {};
+const ZOOM = fs.existsSync(`_${SLUG}_zoom2.json`) ? JSON.parse(fs.readFileSync(`_${SLUG}_zoom2.json`, "utf8"))
+  : fs.existsSync(`_${SLUG}_zoom.json`) ? JSON.parse(fs.readFileSync(`_${SLUG}_zoom.json`, "utf8")) : {};
 
 const crudos = [];
 for (const it of A) crudos.push({ n: it.name.replace(`${SLUG}_`, ""), at: it.at, tipo: "a" });
@@ -143,11 +150,14 @@ for (let i = 0; i < N; i++) {
   const zonaFish = st >= AVATAR_END;
   let t = st, resto = slot;
 
-  // 1) clip i2v (encuadre clavado, animación de la foto exacta del momento)
+  // 1) clip i2v (animación de la foto exacta del momento, cortado por deriva medida)
   const c1 = clipI2V(m);
   if (c1 && resto > 1.0) {
     const real = probeDur("public/" + c1) || 5.04;
-    const cov = +Math.max(1.0, Math.min(resto, real - 0.12)).toFixed(2);
+    const z = ZOOM[`${SLUG}_${m.n}`];
+    const quieto = z != null && Math.abs(z - 1) <= ZOOM_OK;
+    const tope = quieto ? 4.5 : 2.2;
+    const cov = +Math.max(1.0, Math.min(resto, real - 0.12, tope)).toFixed(2);
     beats.push({ id: m.n, start: +t.toFixed(2), dur: +resto.toFixed(2), cov, key: "s", kind: "raw", src: c1, snd: 1 });
     BROLL.push({ name: m.n, src: c1, start: +t.toFixed(2), dur: cov, cov, snd: 1, query: m.at.slice(0, 70) });
     COVER.push({ start: +t.toFixed(2), cov, kind: "video", src: c1 });
@@ -186,7 +196,9 @@ for (let i = 0; i < N; i++) {
       while (resto > 0.5 && fase < 24) {
         const usarClip = c1 && fase % 2 === 1;
         const src = usarClip ? c1 : foto || c1;
-        const tope = usarClip ? 4.8 : FISH_PHOTO_CAP;
+        const zr = ZOOM[`${SLUG}_${m.n}`];
+        const quietoR = zr != null && Math.abs(zr - 1) <= ZOOM_OK;
+        const tope = usarClip ? (quietoR ? 4.5 : 2.2) : FISH_PHOTO_CAP;
         let cov = Math.min(resto, tope);
         if (resto - cov < 1.2) cov = resto;
         cov = +cov.toFixed(2);
@@ -226,6 +238,43 @@ for (const b of cmpBeats) {
   }
 }
 cmpBeats.sort((a, b) => a.start - b.start);
+
+// ⛔⛔ COMPUERTA ANTI-SUPERPOSICIÓN. Los OVERLAY (lowerthird / frasecinetica) van ENCIMA de todo:
+// si arrancan mientras hay una tarjeta a pantalla completa, los dos textos quedan uno sobre otro y
+// no se lee ninguno (medido en el render: la frase cinética pisando la tarjeta del mito).
+// Regla: un overlay NO puede solaparse con NINGÚN otro componente. Se corre hasta después del que
+// esté en pantalla; si no entra antes del siguiente, se descarta (mejor nada que ilegible).
+{
+  const OVER = new Set(["lowerthird", "frasecinetica"]);
+  const capOf = (k) => capOfDur[k] || 6;
+  const durDe = (x) => {
+    const nx = cmpBeats.filter((y) => y.start > x.start && !OVER.has(y.kind)).sort((m, n) => m.start - n.start)[0];
+    const room = nx ? nx.start - x.start - 0.1 : x.dur;
+    return Math.max(2, Math.min(x.dur, capOf(x.kind), room));
+  };
+  const full = cmpBeats.filter((x) => !OVER.has(x.kind)).map((x) => [x.start, x.start + durDe(x)]);
+  const movidos = [], caidos = [];
+  const vivos = [];
+  for (const x of cmpBeats) {
+    if (!OVER.has(x.kind)) { vivos.push(x); continue; }
+    const d = capOf(x.kind);
+    const choca = (t) => full.some(([s0, e0]) => t < e0 - 0.05 && t + d > s0 + 0.05)
+      || vivos.some((y) => OVER.has(y.kind) && t < y.start + capOf(y.kind) - 0.05 && t + d > y.start + 0.05);
+    if (!choca(x.start)) { vivos.push(x); continue; }
+    // correrlo hasta que termine lo que está en pantalla (máx 7 s de deriva: más que eso ya no
+    // ilustra la frase que lo justifica)
+    let t = x.start, movido = false;
+    for (const [s0, e0] of full.sort((m, n) => m[0] - n[0])) {
+      if (t < e0 && t + d > s0) t = +(e0 + 0.25).toFixed(2);
+    }
+    if (t - x.start <= 7 && !choca(t)) { x.start = t; movido = true; }
+    if (movido) { vivos.push(x); movidos.push(`${x.kind}@${x.start}`); }
+    else caidos.push(`${x.kind}@${x.start.toFixed(1)}`);
+  }
+  cmpBeats.length = 0;
+  vivos.sort((m, n) => m.start - n.start).forEach((x) => cmpBeats.push(x));
+  console.log(`ANTI-SUPERPOSICION: ${movidos.length} overlays corridos · ${caidos.length} descartados${caidos.length ? " -> " + caidos.slice(0, 6).join(", ") : ""}`);
+}
 fs.mkdirSync("public", { recursive: true });
 fs.writeFileSync(`public/avatar_clips_${SLUG}.json`, JSON.stringify([], null, 1));
 
