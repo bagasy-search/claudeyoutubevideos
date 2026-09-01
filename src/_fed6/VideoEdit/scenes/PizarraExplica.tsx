@@ -60,7 +60,13 @@ export const PizarraExplica: React.FC<{
   // altura de fila según haya imagen
   const hasImg = items.some((it) => it.image);
   const rowH = hasImg ? 150 : 104;
-  const listTop = 210;
+  // El título (58px, peso 900) entra en ~24 caracteres por línea dentro del panel
+  // (BOARD_W 1010 − 128 de padding ≈ 882px). Si es más largo, SE PARTE en 2 líneas
+  // y su segunda línea pisaba el primer ítem (listTop fijo 210). Empujamos la lista
+  // hacia abajo SOLO cuando el título realmente envuelve — los títulos cortos de
+  // otros videos siguen en 210 (sin cambio visual para ellos).
+  const titleWraps = (title?.length ?? 0) > 24;
+  const listTop = titleWraps ? 300 : 210;
   const spineX = 96;
 
   // progreso de la línea "espina" (se dibuja hasta el último ítem visible)
@@ -175,7 +181,12 @@ export const PizarraExplica: React.FC<{
               </div>
 
               {/* fila: (thumb imagen) + textos */}
-              <div style={{ display: "flex", alignItems: "center", gap: 26, marginLeft: 8, height: rowH - 20 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 26,
+                // sin miniatura el texto arrancaba en x=8 y el NODO numerado (x=17..51) le
+                // tapaba las primeras letras ("Cierra"->"erra"). Con thumb el nodo pisa la
+                // imagen a proposito (badge), asi que solo se corrige el caso sin imagen.
+                marginLeft: hasImg ? 8 : (spineX - 64 - 15) + 34 + 22,
+                height: rowH - 20 }}>
                 {it.image && (
                   <div
                     style={{
