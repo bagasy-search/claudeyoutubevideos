@@ -257,8 +257,9 @@ export const MainAguaAyunas60: React.FC = () => {
       {/* AVATAR — un solo OffthreadVideo en bucle y MUDO; el audio sale del master */}
       <OffthreadVideo src={staticFile(AVATAR_LOOP)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
 
-      {/* MASTER de audio (tramo1 = audio del avatar → lipsync real; después, cola Fish) */}
-      <Audio src={staticFile('aguaayunas60.wav')} />
+      {/* MASTER de audio (tramo1 = audio del avatar → lipsync real; después, cola Fish).
+          Nombre _fish.wav: el stitch del farm usa ESE archivo para el audio final sin deriva. */}
+      <Audio src={staticFile('aguaayunas60_fish.wav')} />
 
       <AbsoluteFill style={{background: `linear-gradient(160deg, ${rgba(BAS.bgPanel, 0.42)}, ${rgba(BAS.bgDeep, 0.5)})`, mixBlendMode: 'soft-light'}} />
       <AbsoluteFill style={{background: `radial-gradient(120% 115% at 50% 44%, transparent 55%, ${rgba(BAS.bgEdge, 0.5)} 100%)`, pointerEvents: 'none'}} />
