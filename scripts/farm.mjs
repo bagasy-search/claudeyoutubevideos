@@ -494,7 +494,29 @@ if (!process.env.FARM_ALLOW_DUP) {
   } catch { /* sin gh o sin red: no bloqueo el render por no poder consultar */ }
 }
 console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
-sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${process.env.STITCH_RAW ? ` -f stitch_raw=1` : ""}`);
+// ── REPARTO POR COSTO ────────────────────────────────────────────────────────────────────────
+// El reloj de un render lo marca el chunk MAS LENTO. Partiendo por cuadros salen brutalmente
+// desparejos: en fedagua60 (200 chunks) el mas lento tardo 35,1 min contra 4,3 de promedio,
+// porque las escenas 3D del kit cuestan hasta 5x mas por cuadro que una foto quieta.
+// chunkplan.mjs pesa cada segundo con costos MEDIDOS y devuelve rangos de costo parejo.
+// Si no hay beatsheet del slug, no pasa nada: el workflow cae al reparto uniforme de siempre.
+// Se puede forzar a mano con RANGES=... y desactivar con NO_CHUNKPLAN=1.
+let ranges = process.env.RANGES || "";
+if (!ranges && !process.env.NO_CHUNKPLAN && !only) {
+  const bs = process.env.BEATSHEET || `beatsheet/${slug}.json`;
+  if (fs.existsSync(bs)) {
+    try {
+      ranges = execSync(`node scripts/chunkplan.mjs "${bs}" ${total} ${chunks}`, { encoding: "utf8" }).trim();
+      const n = ranges ? ranges.split(",").length : 0;
+      if (n !== Number(chunks)) { console.error(`chunkplan devolvio ${n} rangos para ${chunks} chunks — sigo con reparto uniforme`); ranges = ""; }
+      else console.log(`reparto por COSTO ✓ (${n} rangos desde ${bs})`);
+    } catch (e) { console.error("chunkplan fallo — sigo con reparto uniforme:", String(e.message).slice(0, 120)); ranges = ""; }
+  } else {
+    console.log(`sin ${bs} — reparto uniforme por cuadros (el chunk mas lento manda el reloj)`);
+  }
+}
+
+sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${process.env.STITCH_RAW ? ` -f stitch_raw=1` : ""}${ranges ? ` -f ranges=${ranges}` : ""}`);
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");

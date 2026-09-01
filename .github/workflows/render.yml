@@ -17,6 +17,7 @@ on:
       only_chunks: { description: "solo estos chunks (ej 3 | 3,4 | 3-5). vacio = todos", required: false, default: "" }
       entry:       { description: "entry propio del video (ej src/index_<slug>.tsx). vacio = Root.tsx compartido", required: false, default: "" }
       stitch_raw:  { description: "1 = publicar el concat SIN re-encodear (ahorra ~65 min de un solo nucleo). El mp4 sale con las costuras y sin CFR: SOLO para flujos que lo re-encodean despues", required: false, default: "" }
+      ranges:      { description: "rangos explicitos a-b,a-b,... (chunkplan.mjs: reparto por COSTO). vacio = uniforme por cuadros", required: false, default: "" }
 
 jobs:
   prepare:
@@ -100,7 +101,7 @@ jobs:
           done
       - name: frame range
         id: r
-        run: node scripts/chunkmath.mjs ${{ github.event.inputs.total_frames }} ${{ github.event.inputs.chunks }} ${{ matrix.idx }} >> "$GITHUB_OUTPUT"
+        run: node scripts/chunkmath.mjs ${{ github.event.inputs.total_frames }} ${{ github.event.inputs.chunks }} ${{ matrix.idx }} "${{ github.event.inputs.ranges }}" >> "$GITHUB_OUTPUT"
       - name: render chunk
         run: |
           mkdir -p out
