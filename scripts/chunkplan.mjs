@@ -6,23 +6,26 @@
 // pasar de 60 a 200 chunks (3,3x) solo bajo la cola de 49,8 a 35,1, porque el costo NO esta
 // repartido parejo: hay escenas 3D del kit que cuestan varias veces mas por cuadro que una foto.
 //
-// LOS PESOS SON MEDIDOS, no inventados: se cruzo la duracion real de los 200 chunks contra el
-// contenido de cada rango, repartiendo el tiempo entre los kinds presentes. Costo en minutos de
-// CPU por segundo de video, con la foto (`raw`) = 1:
-//     malla 5.3 · skinlayer 3.9 · whynight 3.5 · ingredientduo 3.5 · lineatiempo 3.0 · bodymap 2.6
-//     bars 2.3 · carrusel 1.8 · pizarraglicacion 1.8 · colador 1.7 · listaflotante 1.7
-//     beforeafter 1.7 · el resto ~1
-// Para re-medir sobre otro video: duracion por job de la corrida (gh run view --json jobs) cruzada
-// con los beats de cada rango.
+// LOS PESOS SON MEDIDOS POR REGRESION, no estimados a ojo. Se ajusto por minimos cuadrados
+// (no-negativos) sobre 400 chunks reales de DOS corridas de fedagua60: tiempo_del_chunk =
+// suma(segundos de cada kind x costo del kind). Error medio 1,01 min sobre un promedio de 4,4.
+// `raw` (foto quieta) = 0,183 min de CPU por segundo de video; el resto va en multiplos de eso.
+//
+// ⛔ EL PRIMER INTENTO REPARTIO EL TIEMPO DEL CHUNK PROPORCIONAL A LOS SEGUNDOS DE CADA KIND, y
+// eso SUBESTIMA sistematicamente lo caro: le regala a la foto parte del costo de la escena que
+// comparte el chunk. Daba malla 5.3x cuando la realidad es 17.8x. Medido: un chunk con 3,1 s de
+// malla tardo 14,2 min (4,6 min por segundo de video).
+// Para re-medir sobre otro video: duracion por job (gh run view --json jobs) + los rangos usados,
+// y ajustar la misma regresion.
 //
 //   node scripts/chunkplan.mjs <beatsheet.json> <totalFrames> <chunks> [fps=30]
 //   -> imprime "a-b,a-b,..." (rangos INCLUSIVOS, listos para -f ranges=)
 import fs from "node:fs";
 
-const PESO = {
-  malla: 5.3, skinlayer: 3.9, whynight: 3.5, ingredientduo: 3.5, lineatiempo: 3.0,
-  bodymap: 2.6, bars: 2.3, carrusel: 1.8, pizarraglicacion: 1.8, colador: 1.7,
-  listaflotante: 1.7, beforeafter: 1.7,
+const PESO = { malla: 17.8, whynight: 14.2, ingredientduo: 10.8, skinlayer: 10.6,
+  beforeafter: 8, lineatiempo: 7.3, bodymap: 6.9, carrusel: 4.6, bars: 4.6, listaflotante: 4.1,
+  colador: 4.1, comparaprof: 3.7, pliegue: 3.7, datoimpacto: 3.6, barcompare: 3.1,
+  recetaescena: 2.8, pricewar: 2.8, guidecta: 2.1, splitcompare: 1.8,
 };
 const PESO_DEFAULT = 1.0;
 
