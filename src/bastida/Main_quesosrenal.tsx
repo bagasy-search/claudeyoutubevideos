@@ -17,6 +17,7 @@ import {CreatininaScene} from './CreatininaScene';
 import {FoodVerdictScene} from './FoodVerdictScene';
 import {AlertSignalsScene} from './AlertSignalsScene';
 import {TestimonialScene} from './TestimonialScene';
+import {RenalItemCard} from './RenalItemCard';
 import {MatchWhip, WhipDir} from './MatchWhip';
 import {FilterMechanismScene} from './scenes7/FilterMechanismScene';
 import {RuleScene} from './scenes7/RuleScene';
@@ -141,6 +142,16 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
   {from: 21091, dur: 520, dir: 'up', node: <FoodVerdictScene title="Quesos y sus riñones: SÍ / NO" good={GOOD_V} bad={BAD_V} />},
   {from: 23016, dur: 380, dir: 'right', node: <RuleScene kicker="La porción justa" question="¿Entra en dos dedos?" answer="Del tamaño de una cajita de fósforos" note="Un poquito del bueno, no una montaña" img="img/qr_dr_porcion.jpg" imgSide="left" accent={BAS.aqua} />},
   {from: 26863, dur: 760, dir: 'up', node: <AlertSignalsScene title="¿Sus riñones ya piden ayuda?" signals={['Tobillos o pies hinchados al final del día', 'Cansancio que no se arregla durmiendo', 'Cambios en el color o la cantidad de orina', 'Picazón en la piel, o un gusto metálico']} footer="Si reconoce 2 o más, pídale a su médico un análisis con creatinina" />},
+  // OPENERS 2.5D por queso (tarjeta de vidrio flotante con foto + número acrílico + profundidad)
+  {from: 8654, dur: 100, dir: 'in', node: <RenalItemCard n="1" name="Procesado en fetas" note="Sal + fosfato agregado" img="img/qr_procesado.jpg" accent={BAS.no} side="right" />},
+  {from: 9888, dur: 100, dir: 'in', node: <RenalItemCard n="2" name="Queso azul" note="De los más salados que hay" img="img/qr_azul.jpg" accent={BAS.no} side="left" />},
+  {from: 11095, dur: 100, dir: 'in', node: <RenalItemCard n="3" name="Estacionado duro" note="Sal y fósforo concentrados" img="img/qr_parmesano.jpg" accent={BAS.no} side="right" />},
+  {from: 12295, dur: 100, dir: 'in', node: <RenalItemCard n="4" name="En salmuera" note="Una esponja de sodio" img="img/qr_feta.jpg" accent={BAS.no} side="left" />},
+  {from: 16462, dur: 100, dir: 'in', node: <RenalItemCard n="1" name="Ricota fresca" note="Baja en sodio, proteína suave" img="img/qr_ricota.jpg" accent={BAS.si} side="right" />},
+  {from: 17486, dur: 100, dir: 'in', node: <RenalItemCard n="2" name="Mozzarella fresca" note="Poca industria encima" img="img/qr_mozzarella.jpg" accent={BAS.si} side="left" />},
+  {from: 18526, dur: 100, dir: 'in', node: <RenalItemCard n="3" name="Queso suizo" note="De los más bajos en sodio" img="img/qr_suizo.jpg" accent={BAS.si} side="right" />},
+  {from: 19610, dur: 100, dir: 'in', node: <RenalItemCard n="4" name="Cabra fresco" note="Suave, menos sodio" img="img/qr_cabra.jpg" accent={BAS.si} side="left" />},
+  {from: 20227, dur: 100, dir: 'in', node: <RenalItemCard n="5" name="Requesón sin sal" note="Proteína suave, poca sal" img="img/qr_requeson.jpg" accent={BAS.si} side="right" />},
 ];
 
 // clips animados con agnes (pantalla completa, avatar oculto)
@@ -203,16 +214,7 @@ const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
   {from: 1560, dur: 230, node: <RenalLowerThird name="Dr. Emilio Bastida" role="Nefrólogo · Salud Renal" tag="RIÑONES 60+" focusX={0.5} />},
   {from: 4358, dur: 200, node: <KeyWord word="SODIO" sub="retiene agua, sube la presión" color={BAS.no} />},
   {from: 5976, dur: 200, node: <KeyWord word="FÓSFORO" sub="el que casi nadie nombra" color={BAS.amber} />},
-  {from: 8720, dur: 200, node: <NumTag n="1" label="Procesado en fetas" />},
-  {from: 9950, dur: 200, node: <NumTag n="2" label="Queso azul" />},
-  {from: 11160, dur: 200, node: <NumTag n="3" label="Estacionado duro" />},
-  {from: 12360, dur: 200, node: <NumTag n="4" label="En salmuera" />},
   {from: 13954, dur: 200, node: <KeyWord word="EL GOTEO CONSTANTE" sub="no el gusto de una vez" color={BAS.amber} />},
-  {from: 16560, dur: 200, node: <NumTag n="1" label="Ricota fresca" color={BAS.si} />},
-  {from: 17590, dur: 200, node: <NumTag n="2" label="Mozzarella fresca" color={BAS.si} />},
-  {from: 18640, dur: 200, node: <NumTag n="3" label="Queso suizo" color={BAS.si} />},
-  {from: 19720, dur: 200, node: <NumTag n="4" label="Cabra fresco" color={BAS.si} />},
-  {from: 20340, dur: 200, node: <NumTag n="5" label="Requesón sin sal" color={BAS.si} />},
   {from: 22368, dur: 220, node: <KeyWord word="BUSQUE: FOSFATO" sub="si está, déjelo en la góndola" color={BAS.no} />},
   {from: 23900, dur: 190, node: <KeyWord word="ENJUÁGUELO" sub="le saca la sal de la superficie" color={BAS.aqua} />},
   {from: 25126, dur: 210, node: <KeyWord word="Y TOME SU AGUA" sub="la mejor amiga del riñón" color={BAS.aqua} />},
