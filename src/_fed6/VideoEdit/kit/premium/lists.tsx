@@ -286,7 +286,11 @@ export const BulletCascade: React.FC<{
   const bodySize = Math.max(38, Math.min(66, Math.floor(AVAIL / (longest * CHAR_W))));
   return (
     <Stage theme={t} style={{ opacity: op }}>
-      <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={18}>
+      {/* ⛔ `paper` sin pasar dejaba el panel casi transparente: `useInk` devuelve el color
+          OSCURO (superficie "paper") y encima de un fondo oscuro el renglón desaparecía.
+          Medido en fedrodillas 13:20: texto azul marino sobre negro, ilegible. Con el papel
+          sólido el mismo color oscuro se lee, que es para lo que está pensado. */}
+      <Panel theme={t} style={{ position: "absolute", inset: 60 }} raysX={18} paper={0.93}>
         <div style={{ position: "absolute", top: 92, left: 150 }}>
           <Eyebrow theme={t} size={30}>{eyebrow}</Eyebrow>
         </div>

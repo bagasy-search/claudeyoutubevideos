@@ -225,7 +225,7 @@ jobs:
           # El audio se toma del WAV MÁSTER (continuo) si está; si no, del concat.
           AUD=""; AMAP="-map 1:a -c:a copy"
           if [ -s "public/$SLUG.wav" ]; then AUD="public/$SLUG.wav"; AMAP="-map 1:a -c:a aac -b:a 192k -ar 48000"; else AUD="_cat_$SLUG.mp4"; fi
-          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v -c:v copy -bsf:v h264_mp4toannexb -f h264 "_v_$SLUG.h264"              && ffmpeg -y -v error -fflags +genpts -r 30 -i "_v_$SLUG.h264" -i "$AUD"                   -map 0:v $AMAP -c:v copy -shortest -movflags +faststart "$SLUG.mp4"; then
+          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v -c:v copy -bsf:v h264_mp4toannexb -f h264 "_v_$SLUG.h264"              && ffmpeg -y -v error -fflags +genpts -r 30 -i "_v_$SLUG.h264" -i "$AUD"                   -map 0:v $AMAP -c:v copy -movflags +faststart "$SLUG.mp4"; then
             echo "timestamps reescritos a 30 fps CFR (audio: $AUD)"
             rm -f "_v_$SLUG.h264" "_cat_$SLUG.mp4"
           else
