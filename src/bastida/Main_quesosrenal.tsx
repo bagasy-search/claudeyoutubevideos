@@ -12,6 +12,7 @@ import {AbsoluteFill, Audio, interpolate, OffthreadVideo, Sequence, spring, stat
 import {BAS, CARD_SHADOW, FONT_DISPLAY, FONT_SANS, rgba} from './theme';
 import {RenalCarousel} from './BastidaCarousel';
 import {FearToCalm, BRoll} from './BastidaFX';
+import {BRollCard} from './BRollCard';
 import {RenalLowerThird} from './BastidaKit';
 import {CreatininaScene} from './CreatininaScene';
 import {FoodVerdictScene} from './FoodVerdictScene';
@@ -156,13 +157,21 @@ const DEPTH: {from: number; dur: number; dir?: WhipDir; node: React.ReactNode}[]
 
 // clips animados con agnes (pantalla completa, avatar oculto)
 const CLIPS: {from: number; dur: number; name: string; kb?: number}[] = [
+  // stock real (Pexels, 30fps CFR)
+  {from: 660, dur: 148, name: 'quesosrenal_stock/qs_cheese_board_c30'},
+  {from: 4400, dur: 148, name: 'quesosrenal_stock/qs_salt_c30'},
+  {from: 6280, dur: 148, name: 'quesosrenal_stock/qs_kidney_c30'},
+  {from: 13700, dur: 148, name: 'quesosrenal_stock/qs_cheese_cut_c30'},
+  {from: 22150, dur: 148, name: 'quesosrenal_stock/qs_dairy_aisle_c30'},
+  {from: 25180, dur: 148, name: 'quesosrenal_stock/qs_water_pour_c30'},
+  {from: 27900, dur: 148, name: 'quesosrenal_stock/qs_bloodtest_c30'},
+  // clips agnes (animados de las fotos)
   {from: 3900, dur: 150, name: 'qr_colador'},
-  {from: 4400, dur: 150, name: 'qr_procesado'},
   {from: 8720, dur: 168, name: 'qr_procesado', kb: 2},
   {from: 9950, dur: 172, name: 'qr_azul'},
   {from: 11160, dur: 172, name: 'qr_parmesano'},
   {from: 12360, dur: 172, name: 'qr_feta'},
-  {from: 13400, dur: 168, name: 'qr_desayuno_feta'},
+  {from: 13400, dur: 150, name: 'qr_desayuno_feta'},
   {from: 16560, dur: 190, name: 'qr_ricota'},
   {from: 17590, dur: 190, name: 'qr_mozzarella'},
   {from: 18640, dur: 190, name: 'qr_suizo'},
@@ -170,43 +179,39 @@ const CLIPS: {from: number; dur: number; name: string; kb?: number}[] = [
   {from: 20340, dur: 172, name: 'qr_requeson'},
   {from: 23900, dur: 172, name: 'qr_enjuague'},
   {from: 24420, dur: 180, name: 'qr_plato_verdura'},
-  {from: 25180, dur: 168, name: 'qr_agua'},
 ];
 
-// fotos b-roll (pantalla completa, avatar oculto)
-const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: number}[] = [
-  {from: 520, dur: 168, img: 'qr_procesado.jpg', caption: 'Cuatro que están en su heladera'},
+// fotos b-roll: `card` = tarjeta de vidrio flotante 2.5D (objetos); sin card = full-bleed (planos del doctor)
+const BROLL: {from: number; dur: number; img: string; caption?: string; kb?: number; card?: boolean; side?: 'left' | 'right'; accent?: string}[] = [
+  {from: 520, dur: 172, img: 'qr_procesado.jpg', caption: 'Cuatro que están en su heladera', card: true, side: 'right', accent: BAS.no},
   {from: 2560, dur: 156, img: 'qr_dr_hook.jpg', caption: 'No le vengo a vender un milagro'},
   {from: 4720, dur: 160, img: 'qr_dr_sal.jpg', caption: 'La sal retiene agua'},
-  {from: 5180, dur: 156, img: 'qr_sal.jpg', caption: 'La sal escondida del queso'},
-  {from: 5560, dur: 150, img: 'qr_analisis.jpg', caption: '"Baje la sal"'},
-  {from: 6000, dur: 150, img: 'qr_huesos.jpg', caption: 'El fósforo de más'},
+  {from: 5560, dur: 156, img: 'qr_analisis.jpg', caption: '"Baje la sal"', card: true, side: 'left', accent: BAS.aqua},
+  {from: 6000, dur: 156, img: 'qr_huesos.jpg', caption: 'El fósforo de más', card: true, side: 'right', accent: BAS.amber},
   {from: 7480, dur: 168, img: 'qr_dr_etiqueta.jpg', caption: "Busque 'fosfato' en la etiqueta"},
   {from: 9060, dur: 168, img: 'qr_dr_procesado.jpg', caption: 'No es un queso: es un producto'},
-  {from: 9400, dur: 150, img: 'qr_desayuno_feta.jpg', caption: 'La feta de cada mañana'},
-  {from: 10380, dur: 150, img: 'qr_azul.jpg', caption: 'De los más salados que hay'},
-  {from: 11600, dur: 150, img: 'qr_parmesano.jpg', caption: 'Sal y fósforo concentrados'},
-  {from: 12800, dur: 150, img: 'qr_feta.jpg', caption: 'Una esponja de sodio'},
-  {from: 13850, dur: 156, img: 'qr_plato_verdura.jpg', caption: 'No le dije "nunca más"'},
+  {from: 9400, dur: 156, img: 'qr_desayuno_feta.jpg', caption: 'La feta de cada mañana', card: true, side: 'left', accent: BAS.no},
+  {from: 10380, dur: 156, img: 'qr_azul.jpg', caption: 'De los más salados que hay', card: true, side: 'right', accent: BAS.no},
+  {from: 11600, dur: 156, img: 'qr_parmesano.jpg', caption: 'Sal y fósforo concentrados', card: true, side: 'left', accent: BAS.no},
+  {from: 12800, dur: 156, img: 'qr_feta.jpg', caption: 'Una esponja de sodio', card: true, side: 'right', accent: BAS.no},
+  {from: 13850, dur: 160, img: 'qr_plato_verdura.jpg', caption: 'No le dije "nunca más"', card: true, side: 'left', accent: BAS.aqua},
   {from: 14900, dur: 168, img: 'qr_dr_analisis.jpg', caption: 'Le pregunté por el desayuno'},
   {from: 16900, dur: 168, img: 'qr_dr_ricota.jpg', caption: 'Ricota en la tostada'},
-  {from: 17150, dur: 150, img: 'qr_ricota.jpg', caption: 'Baja en sodio, proteína suave'},
-  {from: 18040, dur: 156, img: 'qr_mozzarella.jpg', caption: 'Fresca, con pocas manos de industria'},
+  {from: 17150, dur: 156, img: 'qr_ricota.jpg', caption: 'Baja en sodio, proteína suave', card: true, side: 'left', accent: BAS.si},
+  {from: 18040, dur: 160, img: 'qr_mozzarella.jpg', caption: 'Fresca, con pocas manos de industria', card: true, side: 'right', accent: BAS.si},
   {from: 19060, dur: 170, img: 'qr_dr_suizo.jpg', caption: 'De los más bajos en sodio'},
-  {from: 19300, dur: 150, img: 'qr_suizo.jpg', caption: 'El secreto del nefrólogo'},
-  {from: 20780, dur: 156, img: 'qr_cabra.jpg', caption: 'Suave, menos sodio'},
+  {from: 19300, dur: 156, img: 'qr_suizo.jpg', caption: 'El secreto del nefrólogo', card: true, side: 'left', accent: BAS.si},
+  {from: 20620, dur: 160, img: 'qr_cabra.jpg', caption: 'Suave, menos sodio', card: true, side: 'right', accent: BAS.si},
   {from: 21980, dur: 160, img: 'qr_dr_etiqueta.jpg', caption: 'Dele vuelta el paquete'},
-  {from: 22450, dur: 156, img: 'qr_procesado.jpg', caption: 'Si la lista parece un shampoo…'},
-  {from: 24000, dur: 156, img: 'qr_enjuague.jpg', caption: 'Un enjuague le saca sal'},
+  {from: 22450, dur: 156, img: 'qr_procesado.jpg', caption: 'Si la lista parece un shampoo…', card: true, side: 'right', accent: BAS.no},
   {from: 24750, dur: 168, img: 'qr_dr_plato.jpg', caption: 'Acompáñelo con verduras'},
   {from: 25920, dur: 168, img: 'qr_dr_analisis.jpg', caption: 'Acompaña a su médico, no lo reemplaza'},
-  {from: 27900, dur: 156, img: 'qr_analisis.jpg', caption: 'Un análisis simple, con creatinina'},
-  {from: 28260, dur: 168, img: 'qr_rinon_modelo.jpg', caption: 'De a poquito, en silencio'},
-  {from: 28820, dur: 156, img: 'qr_suizo.jpg', caption: 'Cada feta que cambia por suizo'},
-  {from: 29320, dur: 150, img: 'qr_plato_verdura.jpg', caption: 'Cada comida buena que elige'},
+  {from: 28260, dur: 168, img: 'qr_rinon_modelo.jpg', caption: 'De a poquito, en silencio', card: true, side: 'left', accent: BAS.aqua},
+  {from: 28820, dur: 156, img: 'qr_suizo.jpg', caption: 'Cada feta que cambia por suizo', card: true, side: 'right', accent: BAS.si},
+  {from: 29320, dur: 156, img: 'qr_plato_verdura.jpg', caption: 'Cada comida buena que elige', card: true, side: 'left', accent: BAS.si},
   {from: 29900, dur: 150, img: 'qr_dr_plato.jpg', caption: 'Coma rico, pero coma despierto'},
-  {from: 30450, dur: 160, img: 'qr_ricota.jpg', caption: 'La guía, en la descripción'},
-  {from: 30760, dur: 230, img: 'qr_rinon_modelo.jpg', caption: 'Cuide ese filtro maravilloso'},
+  {from: 30450, dur: 160, img: 'qr_ricota.jpg', caption: 'La guía, en la descripción', card: true, side: 'right', accent: BAS.aqua},
+  {from: 30760, dur: 230, img: 'qr_rinon_modelo.jpg', caption: 'Cuide ese filtro maravilloso', card: true, side: 'left', accent: BAS.aqua},
 ];
 
 const OVERLAY: {from: number; dur: number; node: React.ReactNode}[] = [
@@ -275,10 +280,16 @@ export const MainQuesosRenal: React.FC = () => {
         </Sequence>
       ))}
 
-      {/* B-ROLL fotos */}
+      {/* B-ROLL: card = tarjeta 2.5D (objetos) · sin card = full-bleed (doctor) */}
       {BROLL.map((b, i) => (
         <Sequence key={`br${i}`} from={b.from} durationInFrames={b.dur}>
-          <BRoll img={b.img} caption={b.caption} dur={b.dur} kb={b.kb ?? 1} />
+          {b.card ? (
+            <MatchWhip dur={b.dur} dir={b.side === 'left' ? 'left' : 'right'}>
+              <BRollCard img={b.img} caption={b.caption} dur={b.dur} side={b.side ?? 'right'} accent={b.accent ?? BAS.aqua} />
+            </MatchWhip>
+          ) : (
+            <BRoll img={b.img} caption={b.caption} dur={b.dur} kb={b.kb ?? 1} />
+          )}
         </Sequence>
       ))}
 
