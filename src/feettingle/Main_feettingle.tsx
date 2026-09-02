@@ -38,7 +38,7 @@ export const MainFeettingle: React.FC = () => {
           <AbsoluteFill>{c.el()}</AbsoluteFill>
         </Sequence>
       ))}
-      <Audio src={staticFile("feettingle.m4a")} />
+      <Audio src={staticFile("feettingle.wav")} />
     </AbsoluteFill>
   );
 };
