@@ -164,7 +164,7 @@ export const AvatarLayerSal: React.FC<{
           willChange: "left, top, width, height",
         }}
       >
-        <Video
+        <OffthreadVideo
           src={staticFile(src)}
           loop={loop}
           muted={muted}
