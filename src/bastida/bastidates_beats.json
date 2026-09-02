@@ -1,232 +1,1113 @@
 {
  "clips": [
   {
-   "from": 221,
-   "dur": 175,
+   "from": 240,
+   "dur": 102,
    "name": "bas_trio_bueno"
   },
   {
-   "from": 1186,
-   "dur": 175,
+   "from": 344,
+   "dur": 150,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 624,
+   "dur": 150,
    "name": "bas_dr_present"
   },
   {
-   "from": 3168,
-   "dur": 175,
-   "name": "bas_colador_filtra"
-  },
-  {
-   "from": 3794,
-   "dur": 175,
+   "from": 776,
+   "dur": 114,
    "name": "bas_amanecer_cocina"
   },
   {
-   "from": 4358,
-   "dur": 175,
-   "name": "bas_marta_asustada"
+   "from": 892,
+   "dur": 150,
+   "name": "bas_trio_bueno"
   },
   {
-   "from": 5150,
-   "dur": 175,
-   "name": "bas_marta_botella"
+   "from": 1044,
+   "dur": 138,
+   "name": "bas_stk_tea_steam"
   },
   {
-   "from": 5724,
-   "dur": 120,
-   "name": "bas_marta_tranquila"
+   "from": 1366,
+   "dur": 108,
+   "name": "bas_dr_present"
   },
   {
-   "from": 5791,
-   "dur": 175,
-   "name": "bas_marta_tobillos"
+   "from": 1476,
+   "dur": 150,
+   "name": "bas_amanecer_cocina"
   },
   {
-   "from": 7776,
-   "dur": 175,
-   "name": "bas_arteria_circulacion"
+   "from": 1628,
+   "dur": 102,
+   "name": "bas_trio_bueno"
   },
   {
-   "from": 8105,
-   "dur": 175,
+   "from": 1732,
+   "dur": 110,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 2150,
+   "dur": 102,
+   "name": "bas_trio_bueno"
+  },
+  {
+   "from": 2254,
+   "dur": 150,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 3060,
+   "dur": 150,
+   "name": "bas_dr_present"
+  },
+  {
+   "from": 3212,
+   "dur": 114,
+   "name": "bas_amanecer_cocina"
+  },
+  {
+   "from": 3328,
+   "dur": 150,
+   "name": "bas_trio_bueno"
+  },
+  {
+   "from": 3480,
+   "dur": 138,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 3802,
+   "dur": 108,
+   "name": "bas_dr_present"
+  },
+  {
+   "from": 3912,
+   "dur": 150,
+   "name": "bas_amanecer_cocina"
+  },
+  {
+   "from": 4064,
+   "dur": 102,
+   "name": "bas_trio_bueno"
+  },
+  {
+   "from": 4168,
+   "dur": 150,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 4448,
+   "dur": 150,
+   "name": "bas_dr_present"
+  },
+  {
+   "from": 4600,
+   "dur": 114,
+   "name": "bas_amanecer_cocina"
+  },
+  {
+   "from": 4716,
+   "dur": 150,
+   "name": "bas_trio_bueno"
+  },
+  {
+   "from": 4868,
+   "dur": 138,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 5190,
+   "dur": 108,
+   "name": "bas_dr_present"
+  },
+  {
+   "from": 5300,
+   "dur": 150,
+   "name": "bas_amanecer_cocina"
+  },
+  {
+   "from": 5452,
+   "dur": 102,
+   "name": "bas_trio_bueno"
+  },
+  {
+   "from": 5556,
+   "dur": 150,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 5836,
+   "dur": 150,
+   "name": "bas_dr_present"
+  },
+  {
+   "from": 5988,
+   "dur": 114,
+   "name": "bas_amanecer_cocina"
+  },
+  {
+   "from": 6104,
+   "dur": 106,
+   "name": "bas_trio_bueno"
+  },
+  {
+   "from": 6638,
+   "dur": 136,
+   "name": "bas_stk_tea_steam"
+  },
+  {
+   "from": 7036,
+   "dur": 150,
+   "name": "bas2_dr_jengibre_corta"
+  },
+  {
+   "from": 7188,
+   "dur": 126,
    "name": "bas_jengibre_rodajas"
   },
   {
-   "from": 9329,
-   "dur": 175,
+   "from": 7316,
+   "dur": 150,
+   "name": "bas_stk_ginger"
+  },
+  {
+   "from": 7468,
+   "dur": 114,
+   "name": "bas2_dr_jengibre_vierte"
+  },
+  {
+   "from": 7876,
+   "dur": 150,
+   "name": "bas_arteria_circulacion"
+  },
+  {
+   "from": 8028,
+   "dur": 108,
+   "name": "bas2_dr_jengibre_toma"
+  },
+  {
+   "from": 8406,
+   "dur": 150,
+   "name": "bas2_dr_jengibre_corta"
+  },
+  {
+   "from": 8558,
+   "dur": 126,
+   "name": "bas_jengibre_rodajas"
+  },
+  {
+   "from": 8686,
+   "dur": 150,
+   "name": "bas_stk_ginger"
+  },
+  {
+   "from": 8838,
+   "dur": 114,
+   "name": "bas2_dr_jengibre_vierte"
+  },
+  {
+   "from": 9450,
+   "dur": 126,
    "name": "bas_hibisco_infusion"
   },
   {
-   "from": 9634,
-   "dur": 175,
+   "from": 9578,
+   "dur": 150,
+   "name": "bas_stk_hibiscus"
+  },
+  {
+   "from": 9730,
+   "dur": 114,
+   "name": "bas2_dr_hibisco_vierte"
+  },
+  {
+   "from": 9998,
+   "dur": 138,
    "name": "bas_tensiometro"
   },
   {
-   "from": 10224,
-   "dur": 175,
+   "from": 10138,
+   "dur": 150,
    "name": "bas_manguera"
   },
   {
-   "from": 11775,
-   "dur": 175,
-   "name": "bas_cebada_agua"
+   "from": 10290,
+   "dur": 108,
+   "name": "bas2_dr_hibisco_toma"
   },
   {
-   "from": 13189,
-   "dur": 175,
+   "from": 10668,
+   "dur": 150,
+   "name": "bas_hibisco_infusion"
+  },
+  {
+   "from": 10820,
+   "dur": 126,
+   "name": "bas_stk_hibiscus"
+  },
+  {
+   "from": 10948,
+   "dur": 150,
+   "name": "bas2_dr_hibisco_vierte"
+  },
+  {
+   "from": 11216,
+   "dur": 135,
+   "name": "bas_tensiometro"
+  },
+  {
+   "from": 11613,
+   "dur": 150,
+   "name": "bas2_dr_cebada_hierve"
+  },
+  {
+   "from": 11765,
+   "dur": 126,
    "name": "bas_cebada_olla"
   },
   {
-   "from": 14024,
-   "dur": 175,
-   "name": "bas_dr_agua"
+   "from": 11893,
+   "dur": 150,
+   "name": "bas2_dr_cebada_cuela"
   },
   {
-   "from": 16287,
-   "dur": 175,
+   "from": 12161,
+   "dur": 150,
+   "name": "bas_cebada_agua"
+  },
+  {
+   "from": 12745,
+   "dur": 150,
+   "name": "bas2_dr_cebada_hierve"
+  },
+  {
+   "from": 12897,
+   "dur": 102,
+   "name": "bas_cebada_olla"
+  },
+  {
+   "from": 13001,
+   "dur": 150,
+   "name": "bas2_dr_cebada_cuela"
+  },
+  {
+   "from": 13281,
+   "dur": 150,
+   "name": "bas_cebada_agua"
+  },
+  {
+   "from": 13841,
+   "dur": 150,
+   "name": "bas2_dr_cebada_hierve"
+  },
+  {
+   "from": 13993,
+   "dur": 108,
+   "name": "bas_cebada_olla"
+  },
+  {
+   "from": 14103,
+   "dur": 150,
+   "name": "bas2_dr_cebada_cuela"
+  },
+  {
+   "from": 14359,
+   "dur": 150,
+   "name": "bas_cebada_agua"
+  },
+  {
+   "from": 14949,
+   "dur": 150,
+   "name": "bas2_dr_cebada_hierve"
+  },
+  {
+   "from": 15101,
+   "dur": 138,
+   "name": "bas_cebada_olla"
+  },
+  {
+   "from": 15241,
+   "dur": 150,
+   "name": "bas2_dr_cebada_cuela"
+  },
+  {
+   "from": 16072,
+   "dur": 150,
+   "name": "bas2_dr_no_botella"
+  },
+  {
+   "from": 16224,
+   "dur": 114,
    "name": "bas_azucar_colador"
   },
   {
-   "from": 19340,
-   "dur": 175,
+   "from": 16340,
+   "dur": 150,
+   "name": "bas_stk_sugar_pour"
+  },
+  {
+   "from": 16924,
+   "dur": 150,
+   "name": "bas2_dr_no_detox"
+  },
+  {
+   "from": 17380,
+   "dur": 150,
    "name": "bas_deshidratado"
   },
   {
-   "from": 19527,
-   "dur": 175,
+   "from": 17532,
+   "dur": 126,
    "name": "bas_sangre_espesa"
   },
   {
-   "from": 22897,
-   "dur": 175,
+   "from": 18122,
+   "dur": 138,
+   "name": "bas2_dr_no_botella"
+  },
+  {
+   "from": 18262,
+   "dur": 150,
+   "name": "bas_azucar_colador"
+  },
+  {
+   "from": 18598,
+   "dur": 108,
+   "name": "bas_stk_sugar_pour"
+  },
+  {
+   "from": 19146,
+   "dur": 126,
+   "name": "bas2_dr_no_detox"
+  },
+  {
+   "from": 19468,
+   "dur": 114,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 19584,
+   "dur": 150,
+   "name": "bas_sangre_espesa"
+  },
+  {
+   "from": 20168,
+   "dur": 150,
+   "name": "bas2_dr_no_botella"
+  },
+  {
+   "from": 20320,
+   "dur": 102,
+   "name": "bas_azucar_colador"
+  },
+  {
+   "from": 20424,
+   "dur": 150,
+   "name": "bas_stk_sugar_pour"
+  },
+  {
+   "from": 21014,
+   "dur": 150,
+   "name": "bas2_dr_no_detox"
+  },
+  {
+   "from": 21826,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 22106,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 22374,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 22666,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 22928,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 23184,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 23464,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 23732,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 24024,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 24286,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 24542,
+   "dur": 150,
+   "name": "bas_deshidratado"
+  },
+  {
+   "from": 25013,
+   "dur": 102,
    "name": "bas_manos_taza"
   },
   {
-   "from": 25081,
-   "dur": 175,
-   "name": "bas_dr_analisis"
+   "from": 25287,
+   "dur": 126,
+   "name": "bas_stk_bloodtest"
   },
   {
-   "from": 28856,
-   "dur": 175,
-   "name": "bas_cierre_jengibre"
+   "from": 25979,
+   "dur": 102,
+   "name": "bas2_dr_guia"
+  },
+  {
+   "from": 26083,
+   "dur": 150,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 26363,
+   "dur": 150,
+   "name": "bas2_dr_guia"
+  },
+  {
+   "from": 26515,
+   "dur": 114,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 26783,
+   "dur": 138,
+   "name": "bas2_dr_guia"
+  },
+  {
+   "from": 26923,
+   "dur": 150,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 27185,
+   "dur": 150,
+   "name": "bas2_dr_guia"
+  },
+  {
+   "from": 27337,
+   "dur": 102,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 27611,
+   "dur": 126,
+   "name": "bas2_dr_guia"
+  },
+  {
+   "from": 28106,
+   "dur": 150,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 28374,
+   "dur": 150,
+   "name": "bas2_dr_guia"
+  },
+  {
+   "from": 28526,
+   "dur": 138,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 28848,
+   "dur": 108,
+   "name": "bas2_dr_guia"
+  },
+  {
+   "from": 28958,
+   "dur": 150,
+   "name": "bas_dr_agua"
+  },
+  {
+   "from": 29214,
+   "dur": 150,
+   "name": "bas2_dr_guia"
   }
  ],
  "broll": [
   {
-   "from": 3610,
-   "dur": 175,
-   "img": "bas_rinon_dos.jpg",
+   "from": 496,
+   "dur": 126,
+   "img": "bas_trio_malo.jpg",
    "card": true,
    "side": "right",
-   "accent": "aqua"
+   "accent": "no"
   },
   {
-   "from": 8702,
-   "dur": 175,
-   "img": "bas_anticoagulantes.jpg",
-   "card": true,
-   "side": "left",
-   "accent": "amber"
-  },
-  {
-   "from": 9216,
-   "dur": 120,
-   "img": "bas_hibisco_flores.jpg",
-   "card": true,
-   "side": "right",
-   "accent": "aqua"
-  },
-  {
-   "from": 11679,
-   "dur": 120,
-   "img": "bas_cebada_granos.jpg",
-   "card": true,
-   "side": "left",
-   "accent": "aqua"
-  },
-  {
-   "from": 12493,
-   "dur": 175,
-   "img": "bas_piedras.jpg",
-   "card": true,
-   "side": "right",
-   "accent": "amber"
-  },
-  {
-   "from": 13899,
-   "dur": 120,
-   "img": "bas_vaso_agua.jpg",
-   "card": true,
-   "side": "left",
-   "accent": "aqua"
-  },
-  {
-   "from": 14595,
-   "dur": 175,
-   "img": "bas_agua_vs_te.jpg",
-   "card": true,
-   "side": "right",
-   "accent": "aqua"
-  },
-  {
-   "from": 15157,
-   "dur": 120,
+   "from": 1184,
+   "dur": 180,
    "img": "bas_trio_malo.jpg",
    "card": true,
    "side": "left",
    "accent": "no"
   },
   {
-   "from": 15210,
-   "dur": 175,
+   "from": 2406,
+   "dur": 126,
+   "img": "bas_trio_malo.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 3620,
+   "dur": 180,
+   "img": "bas_trio_malo.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 4320,
+   "dur": 126,
+   "img": "bas_trio_malo.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 5008,
+   "dur": 180,
+   "img": "bas_trio_malo.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 5708,
+   "dur": 126,
+   "img": "bas_trio_malo.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 6932,
+   "dur": 102,
+   "img": "bas_jengibre_raiz.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 7584,
+   "dur": 150,
+   "img": "bas2_receta_jengibre.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 7736,
+   "dur": 138,
+   "img": "bas2_dr_jengibre_tapa.jpg",
+   "card": false
+  },
+  {
+   "from": 8138,
+   "dur": 162,
+   "img": "bas_anticoagulantes.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "amber"
+  },
+  {
+   "from": 8302,
+   "dur": 102,
+   "img": "bas_jengibre_raiz.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 9176,
+   "dur": 102,
+   "img": "bas_hibisco_flores.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 9280,
+   "dur": 168,
+   "img": "bas2_dr_hibisco_mide.jpg",
+   "card": false
+  },
+  {
+   "from": 9846,
+   "dur": 150,
+   "img": "bas2_receta_hibisco.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 10400,
+   "dur": 162,
+   "img": "bas_hibisco_flores.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 10564,
+   "dur": 102,
+   "img": "bas2_dr_hibisco_mide.jpg",
+   "card": false
+  },
+  {
+   "from": 11100,
+   "dur": 114,
+   "img": "bas2_receta_hibisco.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 11509,
+   "dur": 102,
+   "img": "bas_cebada_granos.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 12045,
+   "dur": 114,
+   "img": "bas2_receta_cebada.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 12313,
+   "dur": 138,
+   "img": "bas2_dr_cebada_toma.jpg",
+   "card": false
+  },
+  {
+   "from": 12453,
+   "dur": 180,
+   "img": "bas_piedras.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 12635,
+   "dur": 108,
+   "img": "bas_cebada_granos.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 13153,
+   "dur": 126,
+   "img": "bas2_receta_cebada.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 13433,
+   "dur": 114,
+   "img": "bas2_dr_cebada_toma.jpg",
+   "card": false
+  },
+  {
+   "from": 13549,
+   "dur": 150,
+   "img": "bas_piedras.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 13701,
+   "dur": 138,
+   "img": "bas_cebada_granos.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 14255,
+   "dur": 102,
+   "img": "bas2_receta_cebada.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 14511,
+   "dur": 126,
+   "img": "bas2_dr_cebada_toma.jpg",
+   "card": false
+  },
+  {
+   "from": 14639,
+   "dur": 192,
+   "img": "bas_piedras.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 14833,
+   "dur": 114,
+   "img": "bas_cebada_granos.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 15393,
+   "dur": 108,
+   "img": "bas2_receta_cebada.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 15670,
+   "dur": 102,
    "img": "bas_envase_hojita.jpg",
    "card": true,
    "side": "right",
    "accent": "no"
   },
   {
-   "from": 16064,
-   "dur": 175,
+   "from": 15774,
+   "dur": 168,
+   "img": "bas_botella_helado.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 15944,
+   "dur": 126,
+   "img": "bas_azucar_fila.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 16492,
+   "dur": 138,
+   "img": "bas_hibisco_frio.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 16632,
+   "dur": 180,
+   "img": "bas_saquito.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 16814,
+   "dur": 108,
+   "img": "bas_detox_caja.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 17276,
+   "dur": 102,
+   "img": "bas_sen_hierba.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 17660,
+   "dur": 192,
+   "img": "bas_envase_hojita.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 17854,
+   "dur": 114,
+   "img": "bas_botella_helado.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 17970,
+   "dur": 150,
    "img": "bas_azucar_fila.jpg",
    "card": true,
    "side": "left",
    "accent": "no"
   },
   {
-   "from": 16959,
-   "dur": 175,
+   "from": 18708,
+   "dur": 162,
    "img": "bas_hibisco_frio.jpg",
    "card": true,
    "side": "right",
    "accent": "aqua"
   },
   {
-   "from": 19035,
-   "dur": 175,
+   "from": 18872,
+   "dur": 102,
+   "img": "bas_saquito.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 18976,
+   "dur": 168,
+   "img": "bas_detox_caja.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 19274,
+   "dur": 192,
    "img": "bas_sen_hierba.jpg",
    "card": true,
    "side": "left",
    "accent": "no"
   },
   {
-   "from": 21783,
-   "dur": 175,
+   "from": 19736,
+   "dur": 138,
+   "img": "bas_envase_hojita.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 19876,
+   "dur": 180,
+   "img": "bas_botella_helado.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 20058,
+   "dur": 108,
+   "img": "bas_azucar_fila.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 20576,
+   "dur": 126,
+   "img": "bas_hibisco_frio.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 20704,
+   "dur": 192,
+   "img": "bas_saquito.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "no"
+  },
+  {
+   "from": 20898,
+   "dur": 114,
+   "img": "bas_detox_caja.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "no"
+  },
+  {
+   "from": 21722,
+   "dur": 102,
    "img": "bas_taza_casera.jpg",
    "card": true,
    "side": "right",
    "accent": "aqua"
   },
   {
-   "from": 24411,
-   "dur": 175,
+   "from": 21978,
+   "dur": 126,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 22258,
+   "dur": 114,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 22526,
+   "dur": 138,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 22818,
+   "dur": 108,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 23080,
+   "dur": 102,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 23336,
+   "dur": 126,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 23616,
+   "dur": 114,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 23884,
+   "dur": 138,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 24176,
+   "dur": 108,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 24438,
+   "dur": 102,
+   "img": "bas_taza_casera.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 25117,
+   "dur": 168,
    "img": "bas_analisis_creatinina.jpg",
    "card": true,
    "side": "left",
-   "accent": "amber"
+   "accent": "aqua"
   },
   {
-   "from": 29379,
-   "dur": 154,
+   "from": 26235,
+   "dur": 126,
+   "img": "bas_rinon_noble.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 26631,
+   "dur": 150,
+   "img": "bas_rinon_noble.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 27075,
+   "dur": 108,
+   "img": "bas_rinon_noble.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 27441,
+   "dur": 168,
+   "img": "bas_rinon_noble.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 28258,
+   "dur": 114,
+   "img": "bas_rinon_noble.jpg",
+   "card": true,
+   "side": "right",
+   "accent": "aqua"
+  },
+  {
+   "from": 28666,
+   "dur": 180,
+   "img": "bas_rinon_noble.jpg",
+   "card": true,
+   "side": "left",
+   "accent": "aqua"
+  },
+  {
+   "from": 29110,
+   "dur": 102,
    "img": "bas_rinon_noble.jpg",
    "card": true,
    "side": "right",
