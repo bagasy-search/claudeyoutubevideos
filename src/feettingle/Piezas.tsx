@@ -2,17 +2,18 @@
 // Clip (OffthreadVideo + audio nativo ducked), Foto (ken-burns), LaminaZoom (recorrido por filas),
 // LowerThird + QrCard (CTA). ⛔ SIEMPRE OffthreadVideo, NUNCA <Video> (lag en el render).
 import React from "react";
-import { AbsoluteFill, OffthreadVideo, Audio, Img, staticFile, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, OffthreadVideo, Img, staticFile, useCurrentFrame, interpolate } from "remotion";
 
 const BG = "#0A0B08";
 
-export const Clip: React.FC<{ src: string; vol?: number }> = ({ src, vol = 0.1 }) => {
+// Clip i2v: b-roll con movimiento sutil. loop para llenar el slot sin congelar; silencioso (la
+// narración va en el Main). ⛔ SIEMPRE OffthreadVideo, NUNCA <Video>.
+export const Clip: React.FC<{ src: string }> = ({ src }) => {
   const f = useCurrentFrame();
   const s = 1.02 + Math.sin(f / 700) * 0.012;
   return (
     <AbsoluteFill style={{ backgroundColor: BG, overflow: "hidden" }}>
-      <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s.toFixed(4)})` }} />
-      <Audio src={staticFile(src)} volume={vol} />
+      <OffthreadVideo src={staticFile(src)} muted loop style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s.toFixed(4)})` }} />
     </AbsoluteFill>
   );
 };
