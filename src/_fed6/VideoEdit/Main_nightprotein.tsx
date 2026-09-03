@@ -15,6 +15,10 @@ import { ListaFlotante } from "./scenes/ListaFlotante";
 import { MitoRevelado } from "./scenes/MitoRevelado";
 import { GuiaCTA3D } from "./scenes/GuiaCTA3D";
 import { FreezeZoom } from "./scenes/FreezeZoom";
+import { PriceWar } from "./scenes/PriceWar";
+import { FdSplitCompare } from "./scenes/FdSplitCompare";
+import { FdRazonCarousel } from "./scenes/FdRazonCarousel";
+import { BenefitLockReveal } from "./scenes/BenefitLockReveal";
 import { F_INTER } from "./kit/premium/theme";
 import { NIGHTPROTEIN_BEATS, NIGHTPROTEIN_BROLL, NIGHTPROTEIN_COVER, AVATAR_END, VIDEO_END as VEND } from "./nightprotein_beats";
 
@@ -28,7 +32,7 @@ const BG = "#0E1D23";
 const AVATAR = "nightprotein_opt.mp4";
 const AVATAR_FRAMES = Math.round(630.24 * 30); // largo REAL del mp4 → el <Loop> lo repite
 
-const NEWFULL = new Set(["mitoverdad", "errorstinger", "hourdial", "guidecta", "freezezoom", "datoimpacto", "checklist", "lineatiempo"]);
+const NEWFULL = new Set(["mitoverdad", "errorstinger", "hourdial", "guidecta", "freezezoom", "datoimpacto", "checklist", "lineatiempo", "pricewar", "splitcompare", "razoncarousel", "lockreveal"]);
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
 const isComp = (k: string) => NEWFULL.has(k) || OVERLAY.has(k);
 
@@ -36,7 +40,8 @@ const HERO_CAP = 4.5;
 const capOf = (k: string): number =>
   k === "errorstinger" ? 2.6 : k === "mitoverdad" ? 7.5 : k === "lowerthird" ? 6 : k === "frasecinetica" ? 5.5
   : k === "hourdial" ? 6.5 : k === "datoimpacto" ? 6.5 : k === "checklist" ? 9.5 : k === "lineatiempo" ? 11.5
-  : k === "freezezoom" ? 6 : k === "guidecta" ? 11.5 : 6;
+  : k === "freezezoom" ? 6 : k === "guidecta" ? 11.5
+  : k === "pricewar" ? 8.5 : k === "splitcompare" ? 8.5 : k === "razoncarousel" ? 10.5 : k === "lockreveal" ? 9.5 : 6;
 
 const compBeats = NIGHTPROTEIN_BEATS.filter((b: any) => isComp(b.kind));
 const rawTop = NIGHTPROTEIN_BEATS.filter((b: any) => b.kind === "raw" && /^img\//.test(b.src || ""));
@@ -97,6 +102,10 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "lineatiempo" ? <LineaTiempoPiel durationInFrames={d} title={b.title} marks={b.marks} tone={b.tone} />
   : b.kind === "guidecta" ? <GuiaCTA3D durationInFrames={d} cover={b.cover} qr={b.qr} domain={b.domain} kicker={b.kicker} title={b.title} desc={b.desc} scanTitle={b.scanTitle} scanSub={b.scanSub} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "pricewar" ? <PriceWar durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftPrice={b.leftPrice} rightPrice={b.rightPrice} leftLabel={b.leftLabel} rightLabel={b.rightLabel} strike={b.strike} verdict={b.verdict} />
+  : b.kind === "splitcompare" ? <FdSplitCompare durationInFrames={d} left={b.left} right={b.right} eyebrow={b.eyebrow} title={b.title} winner={b.winner} unit={b.unit} />
+  : b.kind === "razoncarousel" ? <FdRazonCarousel durationInFrames={d} cards={b.cards} eyebrow={b.eyebrow} kicker={b.kicker} intro={b.intro} />
+  : b.kind === "lockreveal" ? <BenefitLockReveal durationInFrames={d} cards={b.cards} index={b.index} />
   : null;
 
 export const MainNightprotein: React.FC = () => {
