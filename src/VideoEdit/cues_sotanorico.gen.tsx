@@ -3,7 +3,10 @@
 import { ReactNode } from "react";
 import { RawShot } from "./scenes/RawShot";
 import { PremiumOverlay } from "./scenes/PremiumOverlay";
-import { HookCaption, PizarraExplica, FraseCinetica, BigStatReveal, MythTruth, PullQuote, NumberedSteps, BeforeAfter, FloatingCutout, FlowSteps, CtaCard, FloatingInsert, VsDuel, ChecklistReveal, THEME_EARTH } from "./kit/premium";
+import { HookCaption, BigStatReveal, MythTruth, PullQuote, NumberedSteps, BeforeAfter, FloatingCutout, FlowSteps, CtaCard, VsDuel, ChecklistReveal, THEME_EARTH } from "./kit/premium";
+import { FloatingInsert } from "./scenes/FloatingInsert";
+import { PizarraExplica } from "../_fed6/VideoEdit/scenes/PizarraExplica";
+import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
 
 export type Cue = { key: string; start: number; dur: number; kind: string; el: (d: number) => ReactNode };
 
