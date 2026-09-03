@@ -1420,6 +1420,7 @@ function renderEl(b) {
       delete rest.kind;
       return `<${PXC[b.kind]} durationInFrames={d} {...(${j(rest)} as any)} />`;
     }
+    case "lamina": return `<LaminaChapa />`;
     case "premium": {
       const rest = {}; for (const k of Object.keys(b)) if (!KIT_SYS.has(k) && k !== "comp" && k !== "zone" && k !== "theme") rest[k] = b[k];
       const themeConst = `THEME_${(b.theme || "earth").toUpperCase()}`;
@@ -1516,6 +1517,7 @@ if (kinds.has("timeline")) imports.push(`import { SagaTimeline } from "./scenes/
 if (kinds.has("metertag")) imports.push(`import { MeterTag } from "./scenes/MeterTag";`);
 if (kinds.has("foundertree")) imports.push(`import { FounderTree } from "./scenes/FounderTree";`);
 if (kinds.has("float")) imports.push(`import { FloatingInsert } from "./scenes/FloatingInsert";`);
+if (kinds.has("lamina")) imports.push(`import { LaminaChapa } from "../chapapintar/LaminaChapa";`);
 if (kinds.has("headline")) imports.push(`import { KineticHeadline } from "./scenes/KineticHeadline";`);
 if (kinds.has("aged")) imports.push(`import { AgedDoc } from "./scenes/AgedDoc";`);
 if (kinds.has("bars")) imports.push(`import { BarCompare } from "./scenes/BarCompare";`);
