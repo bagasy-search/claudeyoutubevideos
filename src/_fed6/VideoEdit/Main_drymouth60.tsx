@@ -68,12 +68,13 @@ function buildWindows(): AvatarWindow[] {
   let last = "";
   for (const p of pts) { if (p.mode !== last) { coll.push({ start: p.start, mode: p.mode }); last = p.mode; } }
 
-  // HOOK: avatar full 1,4 s (abre él) + scrim; después retoma
+  // HOOK: el avatar es el FONDO GARANTIZADO — full durante todo el hook (el scrim va ENCIMA).
+  // ⛔ Antes ocultaba el avatar a 1,4s y el 1er cover recién entraba a ~2,0s → 0,57s de NEGRO
+  //    en la apertura (medido con blackdetect). El avatar full detrás del scrim lo elimina.
   const HOOK_END = 6.8;
-  const post = coll.filter((w) => w.start < 1.4 || w.start >= HOOK_END);
-  post.push({ start: 0, mode: "full" }, { start: 1.4, mode: "hidden" });
-  const resume = coll.filter((w) => w.start < HOOK_END).pop();
-  post.push({ start: HOOK_END, mode: resume && resume.start >= 1.4 ? "hidden" : (resume?.mode ?? "full") });
+  const post = coll.filter((w) => w.start >= HOOK_END);
+  post.push({ start: 0, mode: "full" });
+  post.push({ start: HOOK_END, mode: "full" });
   // ⛔ ZONA FISH: forzar hidden — el avatar en bucle jamás a la vista (labios desfasados)
   const noFull = post.filter((w) => !(w.start >= AVATAR_END && w.mode === "full"));
   noFull.push({ start: AVATAR_END, mode: "hidden" });
