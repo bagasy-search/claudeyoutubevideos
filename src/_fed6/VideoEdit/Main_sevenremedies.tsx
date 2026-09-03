@@ -77,8 +77,10 @@ function buildWindows(): AvatarWindow[] {
   const HOOK_END = 6.8;
   const post = coll.filter((w) => w.start < 1.4 || w.start >= HOOK_END);
   post.push({ start: 0, mode: "full" }, { start: 1.4, mode: "hidden" });
-  const resume = coll.filter((w) => w.start < HOOK_END).pop();
-  post.push({ start: HOOK_END, mode: resume && resume.start >= 1.4 ? "hidden" : (resume?.mode ?? "full") });
+  // ⛔ FIX HUECO NEGRO: en la ZONA AVATAR el presentador es el FONDO garantizado. Tras el hook
+  // se RETOMA en FULL (no hidden): si el próximo cover está lejos, el avatar cubre el gap en vez
+  // de dejar el fondo plano a la vista (medido: negro 6.8→19.5s con resume hidden).
+  post.push({ start: HOOK_END, mode: "full" });
   // ⛔ ZONA FISH: forzar hidden — el avatar en bucle jamás a la vista (labios desfasados)
   const noFull = post.filter((w) => !(w.start >= AVATAR_END && w.mode === "full"));
   noFull.push({ start: AVATAR_END, mode: "hidden" });
