@@ -1,0 +1,7 @@
+/* ⛔ `@import "tailwindcss"` a secas hace auto-deteccion de fuentes sobre TODO el proyecto,
+   y este repo tiene public/ con ~28 GB de mp4/jpg: Tailwind los lee como texto y revienta con
+   `RangeError: Invalid code point`. Eso rompia el bundler LOCAL (no se podia sacar ni un still
+   para revisar una escena; habia que gastar un render entero en el farm para ver una tarjeta).
+   source(none) + @source explicito = escanea solo el codigo. */
+@import "tailwindcss" source(none);
+@source "./**/*.{ts,tsx}";
