@@ -174,7 +174,7 @@ export const MainFarmanos: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BG }}>
       {/* AUDIO MASTER — avatar real (0..15:05) + Fish desde la costura. El avatar va MUTEADO. */}
-      <Audio src={staticFile("farmanos.wav")} />
+      <Audio src={staticFile("farmanos_fish.wav")} />
 
       {/* CAPA 1 — CLIPS (agnes) */}
       {FARMANOS_BROLL.map((b) => {
