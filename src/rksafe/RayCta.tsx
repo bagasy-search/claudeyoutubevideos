@@ -67,7 +67,14 @@ export const RayCta: React.FC<{
             {showQr ? (
             <div style={{ flex: "0 0 auto", width: 150, height: 150, borderRadius: 10, padding: 10, background: rgba(V.ink0, 0.7), border: `2px dashed ${V.brass}`, boxShadow: `inset 0 0 0 1px ${rgba(V.brass, 0.2)}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
               {qr ? (
-                <Img src={staticFile(qr)} style={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: 4 }} />
+                <>
+                  <Img src={staticFile(qr)} style={{ width: 104, height: 104, objectFit: "contain", borderRadius: 4, background: "#fff" }} />
+                  {/* El dominio TAMBIEN va con QR real: sin esto la tarjeta muestra el codigo y ningun
+                      texto, y el que mira en la tele (no escanea) se queda sin saber adonde ir. */}
+                  <div style={{ marginTop: 8, fontFamily: F_BODY, fontWeight: 600, fontSize: 12, letterSpacing: 0.4, color: V.brassSoft, textAlign: "center" }}>
+                    {domain}
+                  </div>
+                </>
               ) : (
                 <>
                   <div style={{ display: "grid", gridTemplateColumns: `repeat(${N}, 1fr)`, gridTemplateRows: `repeat(${N}, 1fr)`, gap: 1, width: 104, height: 104 }}>
