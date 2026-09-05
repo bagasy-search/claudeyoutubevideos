@@ -16,6 +16,7 @@ on:
       chunks:      { description: "en cuantos pedazos partir", required: false, default: "60" }
       only_chunks: { description: "solo estos chunks (ej 3 | 3,4 | 3-5). vacio = todos", required: false, default: "" }
       entry:       { description: "entry propio del video (ej src/index_<slug>.tsx). vacio = Root.tsx compartido", required: false, default: "" }
+      stitch_only: { description: "Reuse all persisted chunks and run only final assembly", required: false, type: boolean, default: false }
 
 jobs:
   prepare:
@@ -33,12 +34,13 @@ jobs:
           fi
           echo "matrix=$LIST" >> "$GITHUB_OUTPUT"
       - name: reset progreso (Bagasy)
-        if: ${{ github.event.inputs.only_chunks == '' }}
+        if: ${{ github.event.inputs.only_chunks == '' && github.event.inputs.stitch_only != 'true' }}
         continue-on-error: true
         run: |
           curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_reset" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}"}' || true
 
   render:
+    if: ${{ github.event.inputs.stitch_only != 'true' }}
     timeout-minutes: 90
     needs: prepare
     runs-on: ubuntu-latest
@@ -148,12 +150,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
+        if: ${{ github.event.inputs.stitch_only != 'true' }}
         with: { path: chunks, pattern: "chunk-*", merge-multiple: true }
       - name: traer chunks persistidos (reusar los no-cambiados)
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           # -R explícito: este job NO hace checkout, así que gh no puede inferir el repo del .git
+          mkdir -p chunks
           gh release download "chunks-${{ github.event.inputs.slug }}" -R "${{ github.repository }}" --dir prev --pattern "*.mp4" || true
           if [ -d prev ]; then cp -n prev/*.mp4 chunks/ 2>/dev/null || true; fi
       # ── PERSISTIR PRIMERO, CONCATENAR DESPUÉS ──────────────────────────────────────────────
@@ -163,7 +167,7 @@ jobs:
       # cero releases chunks-* en el repo. Guardar es barato y es lo único que sobrevive a un
       # concat fallido, así que va primero.
       - name: persistir chunks (para re-render parcial)
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && github.event.inputs.stitch_only != 'true' }}
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
@@ -221,9 +225,9 @@ jobs:
           ESPERADO=$(awk "BEGIN{printf \"%.6f\", ${{ github.event.inputs.total_frames }}/30}")
           # Convert the measured source range/matrix once. Never squeeze limited levels again
           # and never label full-range pixels as TV without conversion (crushed shadows).
-          PIX=$(ffprobe -v error -select_streams v:0 -show_entries stream=pix_fmt -of csv=p=0 "$RAW")
-          RANGE=$(ffprobe -v error -select_streams v:0 -show_entries stream=color_range -of csv=p=0 "$RAW")
-          MATRIX=$(ffprobe -v error -select_streams v:0 -show_entries stream=color_space -of csv=p=0 "$RAW")
+          PIX=$(ffprobe -v error -select_streams v:0 -show_entries stream=pix_fmt -of default=nw=1:nk=1 "$RAW")
+          RANGE=$(ffprobe -v error -select_streams v:0 -show_entries stream=color_range -of default=nw=1:nk=1 "$RAW")
+          MATRIX=$(ffprobe -v error -select_streams v:0 -show_entries stream=color_space -of default=nw=1:nk=1 "$RAW")
           IN_RANGE=limited
           if [ "$RANGE" = "pc" ] || [[ "$PIX" == yuvj* ]]; then IN_RANGE=full; fi
           case "$MATRIX" in
@@ -233,7 +237,7 @@ jobs:
           esac
           echo "color conversion: $PIX / $RANGE / $MATRIX -> yuv420p / tv / bt709"
           AF="aresample=async=1:first_pts=0,apad"
-          CHANNELS=$(ffprobe -v error -select_streams a:0 -show_entries stream=channels -of csv=p=0 "$MASTER")
+          CHANNELS=$(ffprobe -v error -select_streams a:0 -show_entries stream=channels -of default=nw=1:nk=1 "$MASTER")
           if [ "$CHANNELS" = "1" ]; then AF="pan=stereo|c0=c0|c1=c0,$AF"; fi
           # `setpts=N/30/TB` descarta los timestamps heredados de las costuras y numera cada
           # frame desde cero. `-frames:v` y `-r 30` hacen que el resultado sea CFR exacto.
@@ -258,7 +262,7 @@ jobs:
           awk -v real="$REAL" -v esperado="$ESPERADO" 'BEGIN { d=real-esperado; if (d<0) d=-d; if (d>1) exit 1 }' \
             || { echo "::error::duración fuera de tolerancia de 1 segundo"; exit 1; }
           # Preserve fix8ba83e5: B-frame streams must declare display/decode reordering.
-          NB=$(ffprobe -v error -select_streams v:0 -show_entries stream=has_b_frames -of csv=p=0 "$SLUG.mp4")
+          NB=$(ffprobe -v error -select_streams v:0 -show_entries stream=has_b_frames -of default=nw=1:nk=1 "$SLUG.mp4")
           PD=$(ffprobe -v error -select_streams v -show_entries packet=pts_time,dts_time -read_intervals "%+1" -of csv=p=0 "$SLUG.mp4" | awk -F, '{ if ($1 != $2) c++ } END { print c+0 }')
           if [ "${NB:-0}" != "0" ] && [ "$PD" = "0" ]; then
             echo "::error::B-frames with identical PTS/DTS would stutter in Chrome"; exit 1
