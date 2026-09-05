@@ -1,0 +1,91 @@
+name: Rayvault cloud splice and proof
+on:
+  workflow_dispatch:
+    inputs:
+      head_url:
+        description: Approved exact-length intro MP4 URL
+        required: true
+        type: string
+      tail_url:
+        description: Existing full Rayvault MP4 URL
+        default: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/rayvault/rayvault.mp4
+        required: true
+        type: string
+      master_url:
+        description: Full continuous 1746.8-second WAV URL
+        required: true
+        type: string
+      cut_seconds:
+        description: Exact keyframe replacement boundary
+        default: '78'
+        required: true
+        type: string
+      total_frames:
+        description: Exact full timeline frame count
+        default: '52404'
+        required: true
+        type: string
+      expected_tail_sha:
+        description: SHA256 of original full MP4
+        default: a50c64d2a8f4c84aab40db041c0e5fa270b67e1f93c265b1e2f511f37763a2bf
+        required: true
+        type: string
+      patch_url:
+        description: Optional compact patchstrip MP4 URL
+        default: ''
+        required: false
+        type: string
+      patch_intervals:
+        description: Ordered original timeline intervals as JSON pairs of seconds
+        default: '[]'
+        required: false
+        type: string
+permissions:
+  contents: read
+jobs:
+  splice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install cloud analysis dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          python -m pip install numpy scipy
+      - name: Copy video streams, encode continuous audio, verify every frame
+        env:
+          HEAD_URL: ${{ inputs.head_url }}
+          TAIL_URL: ${{ inputs.tail_url }}
+          MASTER_URL: ${{ inputs.master_url }}
+          CUT_SECONDS: ${{ inputs.cut_seconds }}
+          TOTAL_FRAMES: ${{ inputs.total_frames }}
+          EXPECTED_TAIL_SHA: ${{ inputs.expected_tail_sha }}
+          PATCH_URL: ${{ inputs.patch_url }}
+          PATCH_INTERVALS: ${{ inputs.patch_intervals }}
+        run: |
+          python scripts/rayvault_splice_cloud.py --worker \
+            --head-url "$HEAD_URL" --tail-url "$TAIL_URL" --master-url "$MASTER_URL" \
+            --cut-seconds "$CUT_SECONDS" --total-frames "$TOTAL_FRAMES" \
+            --expected-tail-sha "$EXPECTED_TAIL_SHA" --out-dir splice-output \
+            --patch-url "$PATCH_URL" --patch-intervals "$PATCH_INTERVALS"
+      - name: Preserve diagnostic evidence
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: rayvault-splice-evidence
+          path: |
+            splice-output/*.json
+            splice-output/*.log
+            splice-output/*.framemd5
+            splice-output/audio_*.wav
+          retention-days: 14
+      - name: Store validated candidate for final visual review
+        uses: actions/upload-artifact@v4
+        with:
+          name: rayvault-spliced-candidate
+          path: splice-output/rayvault-spliced.mp4
+          retention-days: 14
+      # Deliberately no release upload or Bagasy mutation: publication follows independent final QA.
