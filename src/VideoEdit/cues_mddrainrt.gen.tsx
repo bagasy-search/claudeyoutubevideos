@@ -161,7 +161,7 @@ export const CUES: Cue[] = [
   { key: "clip_1294480", start: 1294.48, dur: 10.08, el: (d) => <MdClip durationInFrames={d} src="broll/mddrainrt_152_plumbersguessing.mp4" startFrom={0} speed={0.5} /> },
   { key: "foto_1305040", start: 1305.04, dur: 9, el: (d) => <MdFoto durationInFrames={d} src="img/mddrainrt_153_drytrap.png" /> },
   { key: "clip_1319120", start: 1319.12, dur: 8.73, el: (d) => <MdClip durationInFrames={d} src="broll/mddrainrt_154_evaporates.mp4" startFrom={0} speed={0.5773195876288659} /> },
-  { key: "clip_1328000", start: 1328, dur: 10.08, el: (d) => <MdClip durationInFrames={d} src="broll/mddrainrt_155_nothingbetween.mp4" startFrom={0} speed={0.5} /> },
+  { key: "clip_1328000", start: 1328, dur: 6.2, el: (d) => <MdClip durationInFrames={d} src="broll/mddrainrt_155_nothingbetween.mp4" startFrom={0} speed={0.5} /> },
   { key: "foto_1342320", start: 1342.32, dur: 1.24, el: (d) => <MdFoto durationInFrames={d} src="img/mddrainrt_156_guestbath.png" /> },
   { key: "foto_1343760", start: 1343.76, dur: 7.16, el: (d) => <MdFoto durationInFrames={d} src="img/mddrainrt_157_floordrain.png" /> },
   { key: "clip_1351120", start: 1351.12, dur: 6.65, el: (d) => <MdClip durationInFrames={d} src="broll/mddrainrt_158_runeverydrain.mp4" startFrom={0} speed={0.7578947368421053} /> },
