@@ -116,12 +116,12 @@ const Shot:React.FC<{index:number}>=({index})=>{
 
 // Only the mechanical studies carry dimensional graphics. Footage occupies the
 // full canvas everywhere else; the QR stays still and clear while shots move.
-export const MainRaytrailer78:React.FC=()=>{
+export const MainRaytrailer78:React.FC<{audioEnabled?:boolean}>=({audioEnabled=true})=>{
  const f=useCurrentFrame();const guideExit=interpolate(f,[2298,2322],[1,0],clamp);
  return <AbsoluteFill style={{background:'#081313'}}>
   {TRAILER_SHOTS.map(([from,to,name],index)=><Sequence key={name} from={from} durationInFrames={to-from}><Shot index={index}/></Sequence>)}
   {f<2322&&<div style={{position:'absolute',left:48,top:36,fontFamily:BODY,fontSize:13,fontWeight:600,letterSpacing:3,color:white,textShadow:'0 2px 10px #000'}}>RAY KESSLER <span style={{color:gold,marginLeft:17}}> / </span><span style={{marginLeft:17,opacity:.75}}>THE FOUR THOUSAND DOORS</span></div>}
   <Sequence from={997} durationInFrames={1325}><div style={{opacity:guideExit}}><Guide/></div></Sequence>
-  <Audio src={staticFile('raytrailer78_fish.wav')}/>
+  {audioEnabled&&<Audio src={staticFile('raytrailer78_fish.wav')}/>}
  </AbsoluteFill>;
 };
