@@ -1,0 +1,219 @@
+{
+  "status": "PREFLIGHT_CLEAR_RENDER_AUDIT_PENDING",
+  "final_passed": false,
+  "render_inspected": false,
+  "main_sha256": "7fdd73c7aa51c539c8390fd118849f0060a419e196bfecd6ad4c66fb007990a7",
+  "beats_checked": 297,
+  "overlays_checked": 5,
+  "asset_mounts_checked": 311,
+  "asset_reuse": [],
+  "missing_assets": [],
+  "sequence_drift": [],
+  "coverage_gaps": [],
+  "tail_coverage_percent": 100,
+  "avatar_tail_loop": false,
+  "clips": [
+    {
+      "id": "rv_003",
+      "path": "broll/rayvault_h_02.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.977419,
+      "available_seconds": 5.217823676437638,
+      "slot_seconds": 5.166666666666667
+    },
+    {
+      "id": "rv_013",
+      "path": "broll/rayvault_rv_013.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 3.9
+    },
+    {
+      "id": "rv_019",
+      "path": "broll/rayvault_h_03.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.977419,
+      "available_seconds": 5.217823676437638,
+      "slot_seconds": 5.166666666666667
+    },
+    {
+      "id": "rv_032",
+      "path": "broll/rayvault_rv_032.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 4.866666666666666
+    },
+    {
+      "id": "rv_034",
+      "path": "broll/rayvault_rv_034.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.977419,
+      "available_seconds": 5.217823676437638,
+      "slot_seconds": 5.166666666666667
+    },
+    {
+      "id": "rv_051",
+      "path": "broll/rayvault_h_06.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 3.6333333333333333
+    },
+    {
+      "id": "rv_065",
+      "path": "broll/rayvault_h_07.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.901786,
+      "available_seconds": 5.655443752730692,
+      "slot_seconds": 5.6
+    },
+    {
+      "id": "rv_079",
+      "path": "broll/rayvault_h_08.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.841667,
+      "available_seconds": 6.05940354083028,
+      "slot_seconds": 6.0
+    },
+    {
+      "id": "rv_087",
+      "path": "broll/rayvault_rv_087.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.7575,
+      "available_seconds": 6.732673267326732,
+      "slot_seconds": 6.666666666666667
+    },
+    {
+      "id": "rv_090",
+      "path": "broll/rayvault_rv_090.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 3.8
+    },
+    {
+      "id": "rv_096",
+      "path": "broll/rayvault_rv_096.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.912651,
+      "available_seconds": 5.588116377454251,
+      "slot_seconds": 5.533333333333333
+    },
+    {
+      "id": "rv_100",
+      "path": "broll/rayvault_h_09_r1.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.765152,
+      "available_seconds": 6.6653423110702175,
+      "slot_seconds": 6.6
+    },
+    {
+      "id": "rv_119",
+      "path": "broll/rayvault_rv_119.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.789062,
+      "available_seconds": 6.463370432234728,
+      "slot_seconds": 6.4
+    },
+    {
+      "id": "rv_135",
+      "path": "broll/rayvault_rv_135.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.805851,
+      "available_seconds": 6.328713372571356,
+      "slot_seconds": 6.266666666666667
+    },
+    {
+      "id": "rv_140",
+      "path": "broll/rayvault_h_13.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.946875,
+      "available_seconds": 5.386138613861386,
+      "slot_seconds": 5.333333333333333
+    },
+    {
+      "id": "rv_143",
+      "path": "broll/rayvault_rv_143.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.801587,
+      "available_seconds": 6.362378631389979,
+      "slot_seconds": 6.3
+    },
+    {
+      "id": "rv_155",
+      "path": "broll/rayvault_rv_155.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 3.433333333333333
+    },
+    {
+      "id": "rv_158",
+      "path": "broll/rayvault_h_14.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 5.0
+    },
+    {
+      "id": "rv_170",
+      "path": "broll/rayvault_h_15.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.87069,
+      "available_seconds": 5.857423422802604,
+      "slot_seconds": 5.8
+    },
+    {
+      "id": "rv_185",
+      "path": "broll/rayvault_h_16.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.983766,
+      "available_seconds": 5.184159647721104,
+      "slot_seconds": 5.133333333333334
+    },
+    {
+      "id": "rv_195",
+      "path": "broll/rayvault_rv_195.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.793194,
+      "available_seconds": 6.42970067852253,
+      "slot_seconds": 6.366666666666666
+    },
+    {
+      "id": "rv_199",
+      "path": "broll/rayvault_rv_199.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 4.633333333333334
+    },
+    {
+      "id": "rv_200",
+      "path": "broll/rayvault_h_17.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 2.2666666666666666
+    },
+    {
+      "id": "rv_213",
+      "path": "broll/rayvault_rv_213.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 0.977419,
+      "available_seconds": 5.217823676437638,
+      "slot_seconds": 5.166666666666667
+    },
+    {
+      "id": "rv_251",
+      "path": "broll/rayvault_h_18.mp4",
+      "source_seconds": 5.1,
+      "playback_rate": 1.0,
+      "available_seconds": 5.1,
+      "slot_seconds": 2.1
+    }
+  ],
+  "issues": [],
+  "warnings": []
+}

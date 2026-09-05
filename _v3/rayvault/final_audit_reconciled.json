@@ -1,0 +1,1423 @@
+{
+  "stage": "AGENTE4 actual-render audit reconciled with full-resolution pixels and exact active beat narration",
+  "render": "C:\\Users\\bauti\\Documents\\Codex\\2026-09-04\\lee\\outputs\\rayvault.mp4",
+  "framesEvaluated": 412,
+  "batchesEvaluated": 103,
+  "apiErrors": 0,
+  "rawFlagsPreserved": 86,
+  "secondPassFrames": 86,
+  "rawFlagReconciliation": [
+    {
+      "t": 0.0,
+      "beatId": "rv_001",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración describe 'The lock was still locked. The pine around it was on the floor' — una escena de puerta/cerradura con madera en el piso — pero el visual muestra a Ray en su taller lleno de llaves colgadas. No hay relación entre el audio y la imagen.",
+        "fix": "cambiar a footage de puerta/cerradura"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000000.jpg",
+      "activeNarration": "The lock was still locked.",
+      "beatDuration": 3.1666666666666665,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "User-required original Ray opening. Actual authorized presenter is clean. Active beat only says The lock was still locked; opening lasts 3.167s."
+    },
+    {
+      "t": 0.5,
+      "beatId": "rv_001",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Mismo problema: narración sobre cerradura y pino en el piso, visual es Ray en taller de llaves.",
+        "fix": "cambiar a footage de puerta/cerradura"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000015.jpg",
+      "activeNarration": "The lock was still locked.",
+      "beatDuration": 3.1666666666666665,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "User-required original Ray opening. Actual authorized presenter is clean. Active beat only says The lock was still locked; opening lasts 3.167s."
+    },
+    {
+      "t": 1.5,
+      "beatId": "rv_001",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Idem. La secuencia de narración continúa describiendo la escena de la puerta bloqueada, pero se mantiene el plano estático de Ray sin corresponde.",
+        "fix": "cambiar a footage de puerta/cerradura"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000045.jpg",
+      "activeNarration": "The lock was still locked.",
+      "beatDuration": 3.1666666666666665,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "User-required original Ray opening. Actual authorized presenter is clean. Active beat only says The lock was still locked; opening lasts 3.167s."
+    },
+    {
+      "t": 3.1,
+      "beatId": "rv_001",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Continúa el mismo discrepancy. Narración sobre el pine en el piso; visual sigue siendo Ray en el taller sin cambio de componente.",
+        "fix": "cambiar a footage de puerta/cerradura"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000093.jpg",
+      "activeNarration": "The lock was still locked.",
+      "beatDuration": 3.1666666666666665,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "User-required original Ray opening. Actual authorized presenter is clean. Active beat only says The lock was still locked; opening lasts 3.167s."
+    },
+    {
+      "t": 16.833,
+      "beatId": "rv_005",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "El parche en la camisa dice 'PLAY' en lugar de 'RAY'. Es un texto quemado/editado incorrectamente en el footage.",
+        "fix": "reemplazar|recortar|ocultar con B-roll"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000505.jpg",
+      "activeNarration": "I kept looking at the little strip of wood that had been holding it.",
+      "beatDuration": 5,
+      "disposition": "confirmed_material",
+      "pixelReason": "At 16.833s generated clip changes authorized RAY patch to PLAY."
+    },
+    {
+      "t": 21.733,
+      "beatId": "rv_006",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración dice 'I just replaced the doors they came through, about 4,000' pero el visual muestra a Ray trabajando con cerraduras en su banco, no puertas ni la cantidad mencionada.",
+        "fix": "acortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000652.jpg",
+      "activeNarration": "I never caught a burglar. I just replaced the doors they came through —",
+      "beatDuration": 4.8,
+      "disposition": "confirmed_material",
+      "pixelReason": "At 21.733s actual clip patch is malformed characters, not RAY."
+    },
+    {
+      "t": 23.667,
+      "beatId": "rv_006",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración habla de '4,000 puertas por las que entraron' pero el visual muestra a Ray en su taller con herramientas y cajas fuertes, sin conexión temática con puertas forzadas o reemplazadas.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000710.jpg",
+      "activeNarration": "I never caught a burglar. I just replaced the doors they came through —",
+      "beatDuration": 4.8,
+      "disposition": "confirmed_material",
+      "pixelReason": "At 21.733s actual clip patch is malformed characters, not RAY."
+    },
+    {
+      "t": 43.967,
+      "beatId": "rv_010",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Pequeño icono/logo en la esquina inferior derecha del componente BigStat que no corresponde a la marca editorial permitida.",
+        "fix": "recortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_001319.jpg",
+      "activeNarration": "The screws holding the strike plate were about three-quarters of an inch long.",
+      "beatDuration": 5.4,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Intentional large editorial 3/4 inch card, high contrast and readable. Small gold keyring is the authorized kit mark."
+    },
+    {
+      "t": 157.2,
+      "beatId": "rv_027",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Small golden key icon watermark visible in lower-right corner of the MythTruth component frame; not listed in intentionalText or overlays.",
+        "fix": "remove waterma"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_004716.jpg",
+      "activeNarration": "Brick on the front of the house hadn't improved the connection between that plate and the framing.",
+      "beatDuration": 5.6,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Intentional MythTruth comparison of brick veneer and framing, readable. Authorized keyring."
+    },
+    {
+      "t": 159.633,
+      "beatId": "rv_027",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Same small golden key icon watermark in lower-right corner; unauthorized branding element not part of the editorial kit.",
+        "fix": "remove watermark"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_004789.jpg",
+      "activeNarration": "Brick on the front of the house hadn't improved the connection between that plate and the framing.",
+      "beatDuration": 5.6,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Intentional MythTruth comparison of brick veneer and framing, readable. Authorized keyring."
+    },
+    {
+      "t": 169.933,
+      "beatId": "rv_029",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Identical visual to frames at 170 and 173.167 (RouteFlow diagram unchanged for >12s total duration).",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_005098.jpg",
+      "activeNarration": "From the door, through the bolt, into the plate, through the fasteners, and into something substantial.",
+      "beatDuration": 7.4,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual RouteFlow and labels readable. Whole beat is 7.4s, so dead >12s allegation is factually impossible."
+    },
+    {
+      "t": 201.8,
+      "beatId": "rv_034",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Ray está de pie en el mostrador sin mostrar strike plate ni tornillos; la narración habla de strike plates y screws.",
+        "fix": "acortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_006054.jpg",
+      "activeNarration": "The first money I spend usually goes into the strike plate and its screws.",
+      "beatDuration": 5.166666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray is at his bench with strike plates and screws visible. A host introducing the priority of these objects is semantically relevant; no spending action is required."
+    },
+    {
+      "t": 203.867,
+      "beatId": "rv_034",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Mismo plano que el anterior; Ray alcanza algo en el mostrador pero no se ve claramente un strike plate o sus tornillos.",
+        "fix": "acortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_006116.jpg",
+      "activeNarration": "The first money I spend usually goes into the strike plate and its screws.",
+      "beatDuration": 5.166666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray is at his bench with strike plates and screws visible. A host introducing the priority of these objects is semantically relevant; no spending action is required."
+    },
+    {
+      "t": 205.933,
+      "beatId": "rv_034",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Ray señala hacia la puerta con la mano pero no se muestra strike plate ni refuerzo; la narración trata sobre reemplazar strikes en puertas de madera.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_006178.jpg",
+      "activeNarration": "The first money I spend usually goes into the strike plate and its screws.",
+      "beatDuration": 5.166666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray is at his bench with strike plates and screws visible. A host introducing the priority of these objects is semantically relevant; no spending action is required."
+    },
+    {
+      "t": 250.967,
+      "beatId": "rv_041",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Mismo plano que frame 250s; separación <12s (0.967s). Pantalla clavada.",
+        "fix": "acortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_007529.jpg",
+      "activeNarration": "I don't reach for brittle drywall screws because a box happens to be nearby.",
+      "beatDuration": 5.533333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual SplitVs compares fasteners. VS badge is intentional. Beat 5.533s; cloud conflated separate sample timestamps into continuous footage."
+    },
+    {
+      "t": 260.0,
+      "beatId": "rv_043",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración refiere a inspección por servicios/wiring en la trayectoria; visual muestra técnico de empresa instalando puerta con mujer observando, no inspección de Framing o servicios.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_007800.jpg",
+      "activeNarration": "If I can't confirm the framing, or there could be wiring or other services in the path, that's a reason to get someone qualified to inspect it.",
+      "beatDuration": 9.633333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual technician examines exposed doorway with homeowner: directly supports getting someone qualified to inspect the path."
+    },
+    {
+      "t": 330.0,
+      "beatId": "rv_054",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration describes original screws getting a modest hold in the jamb (old, stripped, loose hardware). The image shows a clean/new-looking wooden jamb with what appear to be new screws and a fresh hinge installation — visually contradicts the concept of worn, insufficient original screw hold.",
+        "fix": "cambiar footage por uno de bisagra existente con tornillos flojos/atornillados mal en marco viejovisually contradicts the concept of worn, insufficient original screw hold."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_009900.jpg",
+      "activeNarration": "On some installations, the original screws only get a modest hold in that jamb.",
+      "beatDuration": 6.7,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual short screws beside jamb demonstrate modest original engagement. Narration does not require rusty or old hardware."
+    },
+    {
+      "t": 500.0,
+      "beatId": "rv_074b",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration discusses 'a space between the jamb and the' (referring to shim gaps during installation), but the visual shows a heavily damaged/worn door bottom corner on an existing installed door — unrelated to the concept of shim spacing or jamb installation.",
+        "fix": "replace with footage showing gap between jamb and rough opening, or shims being inserted"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_015000.jpg",
+      "activeNarration": "Sometimes the whole door unit has reached the end of its useful life.",
+      "beatDuration": 4.7,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual end-of-life damaged door matches active beat exactly; next-beat shim wording was incorrectly included in original context."
+    },
+    {
+      "t": 530.0,
+      "beatId": "rv_079",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration moves to rv_079 ('The next layer is reinforcement that spreads the work across more of the doorway.') but the visual shows Ray Kessler holding a reinforcement bracket in a workshop. The audio expects footage of door reinforcement being demonstrated on a doorway, not the host holding the part.",
+        "fix": "re-shoot or swap footage: show the reinforcement piece installed on the door jamb, demonstrating how it spreads the load across more of the doorway frame."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_015900.jpg",
+      "activeNarration": "The next layer is reinforcement that spreads the work across more of the doorway.",
+      "beatDuration": 6,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray holds the long reinforcement piece being introduced. The object matches the narration."
+    },
+    {
+      "t": 600.0,
+      "beatId": "rv_090",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Exactamente el mismo frame que t=599.967, mismo beat rv_090, misma imagen de Ray leyendo. Solo 0.033s de diferencia, no hay movimiento.",
+        "fix": "Eliminar duplicado, mantener uno solo"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_018000.jpg",
+      "activeNarration": "I read the installation instructions before I buy it.",
+      "beatDuration": 3.8,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray reads instructions with hardware in hand. Beat lasts 3.8s; samples 0.033s apart cannot show dead >12s."
+    },
+    {
+      "t": 610.0,
+      "beatId": "rv_092",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "El visual muestra una placa metálica blanca sin contexto, mientras la narración habla de no elegir por el nombre del producto; no hay relación visual.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_018300.jpg",
+      "activeNarration": "I don't choose by how threatening the product name sounds.",
+      "beatDuration": 4.066666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Plain unbranded hardware/packaging product illustration remains relevant to choosing by suitability rather than threatening marketing names. No requirement to burn in advertising text."
+    },
+    {
+      "t": 642.5,
+      "beatId": "rv_096",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "The visual shows Ray holding a deadbolt, but the narration introduces the concept of the deadbolt not doing the frame's job. The frame should illustrate the door/frame context or demonstrate the interaction between the deadbolt and the frame.",
+        "fix": "Use stock footage of a door frame or a demonstration of the deadbolt installed in a frame to match the narration."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_019275.jpg",
+      "activeNarration": "Now we can talk about the deadbolt without asking it to do the frame's job.",
+      "beatDuration": 5.533333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray visibly handles a deadbolt during its introduction; no unrelated subject."
+    },
+    {
+      "t": 644.7,
+      "beatId": "rv_096",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Continues to show Ray handling the deadbolt without addressing the narration about the frame's job.",
+        "fix": "Switch to footage that visually represents the frame's role or the problem being described."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_019341.jpg",
+      "activeNarration": "Now we can talk about the deadbolt without asking it to do the frame's job.",
+      "beatDuration": 5.533333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray visibly handles a deadbolt during its introduction; no unrelated subject."
+    },
+    {
+      "t": 646.9,
+      "beatId": "rv_096",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Still mismatched; Ray is shown with the deadbolt while the narration discusses the deadbolt's importance.",
+        "fix": "Replace with relevant visuals that illustrate the point about deadbolt construction and ratings."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_019407.jpg",
+      "activeNarration": "Now we can talk about the deadbolt without asking it to do the frame's job.",
+      "beatDuration": 5.533333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray visibly handles a deadbolt during its introduction; no unrelated subject."
+    },
+    {
+      "t": 668.833,
+      "beatId": "rv_098b",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration says 'Nominal means' (defining the term) but shows a close-up of an extended bolt — already demonstrated the concept visually in previous frames without adding new illustrative value for the definition.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_020065.jpg",
+      "activeNarration": "On many residential deadbolts, you'll see a nominal one-inch throw.",
+      "beatDuration": 6,
+      "disposition": "confirmed_material",
+      "pixelReason": "Nominal one-inch deadbolt throw card background is a loose threaded machine screw, not extended deadbolt."
+    },
+    {
+      "t": 700.0,
+      "beatId": "rv_103",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration describes the bolt reaching the fully locked position smoothly (action of closing/locking), but the frame shows a static shot of closed white double doors with no mechanism or motion visible.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_021000.jpg",
+      "activeNarration": "Once the door is closed, the bolt should reach that same fully locked position smoothly.",
+      "beatDuration": 6.9,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Closed door illustrates the closed-door operating condition. Close-up is elsewhere; this 6.9s shot need not prove lock motion from a still sample."
+    },
+    {
+      "t": 720.0,
+      "beatId": "rv_106",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration references 'a brown ranch house' and the homeowner's experience, but the frame shows Ray at a white door in a bright interior—not the brown ranch setting described.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_021600.jpg",
+      "activeNarration": "He'd been living with it so long that he thought that was the locked position.",
+      "beatDuration": 5.966666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Older homeowner holding a door lock illustrates his habitual incomplete locking; a brown exterior ranch facade is not in the active cue."
+    },
+    {
+      "t": 740.0,
+      "beatId": "rv_108",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Frames at 740, 741.9 and 746.2 show identical static diagram image — no animation or change over >6s span. Close-ups confirm identical bolt position, lighting, and label placement across all three timestamps.",
+        "fix": "animar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_022200.jpg",
+      "activeNarration": "And bolt projection is not identical to supported engagement. The gap between the door and frame uses up part of that distance.",
+      "beatDuration": 9.766666666666667,
+      "disposition": "confirmed_material",
+      "pixelReason": "Projection/engagement diagram shows headed threaded screw bridging door/jamb as deadbolt, mechanically impossible."
+    },
+    {
+      "t": 741.9,
+      "beatId": "rv_108",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Mismo plano estático que el frame anterior; imagen idéntica sin cambio visual en componente RouteFlow rv_108.",
+        "fix": "animar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_022257.jpg",
+      "activeNarration": "And bolt projection is not identical to supported engagement. The gap between the door and frame uses up part of that distance.",
+      "beatDuration": 9.766666666666667,
+      "disposition": "confirmed_material",
+      "pixelReason": "Projection/engagement diagram shows headed threaded screw bridging door/jamb as deadbolt, mechanically impossible."
+    },
+    {
+      "t": 746.2,
+      "beatId": "rv_108",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Imagen idéntica a los frames previos; sin variación en el diagrama de RouteFlow rv_108 durante todo el beat.",
+        "fix": "animar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_022386.jpg",
+      "activeNarration": "And bolt projection is not identical to supported engagement. The gap between the door and frame uses up part of that distance.",
+      "beatDuration": 9.766666666666667,
+      "disposition": "confirmed_material",
+      "pixelReason": "Projection/engagement diagram shows headed threaded screw bridging door/jamb as deadbolt, mechanically impossible."
+    },
+    {
+      "t": 760.0,
+      "beatId": "rv_110",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration mentions 'A lock that needs a shoulder against the door' but shows a packaged product box and metal component on white surface - not demonstrating door/shoulder concept visually",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_022800.jpg",
+      "activeNarration": "A one-inch claim on a package is useful information. The door still has to deliver it.",
+      "beatDuration": 7.366666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual lock product with plain box supports package-claim discussion. Shoulder wording belongs to the next cue. No generated label needed."
+    },
+    {
+      "t": 780.0,
+      "beatId": "rv_113",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration discusses not solving three problems by filing the strike opening, but the visual shows a file and strike plate on wood—not the door, strike, or sagging context. The image doesn't illustrate the narration's point about incorrect repair approaches.",
+        "fix": "cambiar a footage de la puerta mostrando los tres problemas (strike fuera de posición,_door_ desplomada, sellado ajustado)"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_023400.jpg",
+      "activeNarration": "Those are different problems. I don't solve all three by attacking the strike opening with a file.",
+      "beatDuration": 7.733333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual file and strike plate directly illustrate the stated wrong repair approach; no need to depict all three previous causes simultaneously."
+    },
+    {
+      "t": 810.0,
+      "beatId": "rv_116b",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración dice que se corrigió la posición y se revisaron las bisagras, pero la imagen muestra perfiles de burlete (weather seal), no bisagras ni marco de puerta ajustándose.",
+        "fix": "cambiar footage"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_024300.jpg",
+      "activeNarration": "The replacement was the wrong fit, and the door was being held away from its normal position.",
+      "beatDuration": 7.4,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual weather-seal profiles support the wrong-fit replacement seal discussed in this sentence and preceding cue."
+    },
+    {
+      "t": 815.6,
+      "beatId": "rv_117",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Timestamp bar and technical metadata overlay visible at the bottom of the frame.",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_024468.jpg",
+      "activeNarration": "We corrected that, checked the hinges, and aligned the hardware.",
+      "beatDuration": 5.333333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual door/jamb shot has no timestamp footer. Alleged footer existed only outside the video tile in audit contact sheet."
+    },
+    {
+      "t": 815.9,
+      "beatId": "rv_117",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Timestamp bar and technical metadata overlay visible at the bottom of the frame.",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_024477.jpg",
+      "activeNarration": "We corrected that, checked the hinges, and aligned the hardware.",
+      "beatDuration": 5.333333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual door/jamb shot has no timestamp footer. Alleged footer existed only outside the video tile in audit contact sheet."
+    },
+    {
+      "t": 816.267,
+      "beatId": "rv_117",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Timestamp bar and technical metadata overlay visible at the bottom of the frame.",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_024488.jpg",
+      "activeNarration": "We corrected that, checked the hinges, and aligned the hardware.",
+      "beatDuration": 5.333333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual door/jamb shot has no timestamp footer. Alleged footer existed only outside the video tile in audit contact sheet."
+    },
+    {
+      "t": 816.6,
+      "beatId": "rv_118",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Timestamp bar and technical metadata overlay visible at the bottom of the frame.",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_024498.jpg",
+      "activeNarration": "One person could lock it with two fingers afterward.",
+      "beatDuration": 4,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual Ray operates thumbturn with fingers. Alleged timestamp footer was audit-only."
+    },
+    {
+      "t": 821.233,
+      "beatId": "rv_119",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "El beat rv_119 muestra a Ray en su taller con pared de llaves detrás, abriendo una puerta con vidrios; la narración dice 'slow down and watch the door operate / check it with the latch engaged'. El plano es demasiado ancho para evaluar el latch y no se enfoca en el mecanismo de cierre.",
+        "fix": "acortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_024637.jpg",
+      "activeNarration": "This is where I slow down and watch the door operate. I check it with the latch engaged.",
+      "beatDuration": 6.4,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray at an operating door supports watching the door operate; latch need not fill screen for whole cue."
+    },
+    {
+      "t": 870.0,
+      "beatId": "rv_126",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Ray stands next to a solid wood exterior door, but narration discusses interior hollow core doors",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_026100.jpg",
+      "activeNarration": "Put your palm against the door itself before you buy another accessory.",
+      "beatDuration": 5.2,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray palm on solid door matches active cue. Hollow-core sentence starts next beat."
+    },
+    {
+      "t": 880.0,
+      "beatId": "rv_127",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Air curtain model shown instead of lightweight exterior door being discussed",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_026400.jpg",
+      "activeNarration": "An interior hollow-core door belongs inside the house. It isn't a suitable substitute for a properly specified exterior entrance door.",
+      "beatDuration": 10.133333333333333,
+      "disposition": "confirmed_material",
+      "pixelReason": "Actual hollow-core illustration is a curved thick white mesh panel resembling filter, not recognizable door slab."
+    },
+    {
+      "t": 898.8,
+      "beatId": "rv_129",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Mismo plano del componente MythTruth que en el frame 897.433s; separación de solo 1.367s (menos del umbral de 12s) pero visualmente idéntico sin transición ni movimiento.",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_026964.jpg",
+      "activeNarration": "The material name alone doesn't settle the question.",
+      "beatDuration": 3.2666666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable material MythTruth; whole beat is 3.267s, not >12s."
+    },
+    {
+      "t": 920.0,
+      "beatId": "rv_131b",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración dice 'There wasn't a sensible little paint and a surprisingly expensive lock' pero el frame muestra una imagen de bisagras de puerta, no pintura ni cerradura.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_027600.jpg",
+      "activeNarration": "It had a fresh coat of paint and a surprisingly expensive lock.",
+      "beatDuration": 4.466666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "White painted door surface with gold lock illustrates fresh paint and expensive lock. First cloud misidentified this as hinges."
+    },
+    {
+      "t": 930.0,
+      "beatId": "rv_133",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración dice 'door assembly' (conjunto de puerta: marco + hoja + herrajes). El frame muestra una puerta individual sin marco instalado ni ensamblaje, aislada en el espacio del taller.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_027900.jpg",
+      "activeNarration": "The owner needed an exterior door assembly appropriate for the opening.",
+      "beatDuration": 5.433333333333334,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual freestanding prehung door includes visible frame around slab; allegation that no frame is present is wrong."
+    },
+    {
+      "t": 940.0,
+      "beatId": "rv_135",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración: 'Replacing the door would have spent money without addressing the first problems.' El frame muestra a Ray con hardware de cerrajería sobre banco, no una puerta existente ni sus problemas. No hay conexión visual con 'problemas visibles de la puerta'.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_028200.jpg",
+      "activeNarration": "Replacing the door would have spent money without addressing the first problems I could see.",
+      "beatDuration": 6.266666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray indicates reinforcement hardware on bench while explaining addressing initial problems before replacing door. Relevant host illustration, no contradiction."
+    },
+    {
+      "t": 940.5,
+      "beatId": "rv_135",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Mismo problema que 940s: narración sobre problemas de la puerta existente, frame muestra a Ray manipulando hardware de cerradura en banco de trabajo. Sin relación visual con el problema de la puerta.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_028215.jpg",
+      "activeNarration": "Replacing the door would have spent money without addressing the first problems I could see.",
+      "beatDuration": 6.266666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray indicates reinforcement hardware on bench while explaining addressing initial problems before replacing door. Relevant host illustration, no contradiction."
+    },
+    {
+      "t": 943.0,
+      "beatId": "rv_135",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración continúa sobre problemas de la puerta. Frame es plano prácticamente idéntico al anterior (Ray en mismo ángulo, misma acción en el banco), sin transición significativa. Además sigue sin mostrar la puerta con sus problemas.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_028290.jpg",
+      "activeNarration": "Replacing the door would have spent money without addressing the first problems I could see.",
+      "beatDuration": 6.266666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray indicates reinforcement hardware on bench while explaining addressing initial problems before replacing door. Relevant host illustration, no contradiction."
+    },
+    {
+      "t": 960.0,
+      "beatId": "rv_137b",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración menciona específicamente una 'fiberglass door' (puerta de fibra de vidrio), pero el visual muestra un umbral de madera podrida/daanada. El material visual no coincide con el sujeto de la oración.",
+        "fix": "cambiar footage"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_028800.jpg",
+      "activeNarration": "A steel door can still sit in a damaged frame.",
+      "beatDuration": 4.6,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Damaged frame under metal threshold matches active damaged-frame cue; fiberglass belongs to a different cue."
+    },
+    {
+      "t": 976.533,
+      "beatId": "rv_139",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración describe 'That narrow pane of glass beside the door' (ese estrecho pane de vidrio al lado de la puerta), pero la imagen de fondo del componente PullQuote muestra una puerta maciza de madera sin ningún pane de vidrio visible.",
+        "fix": "cambiar background del componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_029296.jpg",
+      "activeNarration": "Buy the door you need. Keep the sound door you already have.",
+      "beatDuration": 5,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable Keep the sound door quote on a sound wooden door. Narrow glass sentence belongs to next beat."
+    },
+    {
+      "t": 978.7,
+      "beatId": "rv_139",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Mismo problema que el frame anterior: la narración sigue describiendo el 'narrow pane of glass' y su ubicación, pero el visual sigue siendo la puerta maciza sin vidrio.",
+        "fix": "cambiar background del componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_029361.jpg",
+      "activeNarration": "Buy the door you need. Keep the sound door you already have.",
+      "beatDuration": 5,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable Keep the sound door quote on a sound wooden door. Narrow glass sentence belongs to next beat."
+    },
+    {
+      "t": 1000.0,
+      "beatId": "rv_142",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración dice 'to the inside hardware' refiriéndose a hardware interior y glazing visto desde dentro, pero el plano muestra la puerta y sidelight desde el exterior (se ve el pasto y barandal afuera). Debería ser un plano interior o detalle del mecanismo interior.",
+        "fix": "acortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_030000.jpg",
+      "activeNarration": "I'm interested in the glazing, how it's retained in its frame, and its relationship to the inside hardware.",
+      "beatDuration": 7.633333333333334,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual camera is INSIDE: interior trim and wall on right, lawn is seen THROUGH glazing on left. Glazing and adjacent interior hardware are visible. Cloud reversed viewpoint."
+    },
+    {
+      "t": 1007.233,
+      "beatId": "rv_143",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Visual muestra torso con llaves al cinturón junto a marco de ventana interior; la narración introduce a una viuda en una casa de ladrillo, pero no se ve ninguna fachada de ladrillo ni contexto exterior.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_030217.jpg",
+      "activeNarration": "I don't need to demonstrate any way of exploiting it to explain why it deserves attention.",
+      "beatDuration": 6.3,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray beside glazing is relevant to discussing it without demonstrating exploitation. Widow/brick anecdote belongs to following beat."
+    },
+    {
+      "t": 1047.3,
+      "beatId": "rv_148",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration shifts to 'Ordinary decorative film is not the same thing as a security' but visual remains the rv_148 CheckCard showing Glass/Retention/Complete assembly checks — same component as 1043.933s with no visual change to match the new narration topic.",
+        "fix": "switch to decorative film footage or different visual that reflects the narration about decorative film vs security glazing"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_031419.jpg",
+      "activeNarration": "The words on the product matter less than what the complete installation is designed and tested to do.",
+      "beatDuration": 7.7,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable installation checklist supports complete installation designed/tested. Decorative film topic begins next beat."
+    },
+    {
+      "t": 1091.367,
+      "beatId": "rv_155",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Ray sostiene una caja de cartón cerrada sobre la mesa mientras la narración dice 'save you from buying the expensive part first'. No hay relación visual con ahorrar en repuestos ni desempaquetar nada.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_032741.jpg",
+      "activeNarration": "Let me save you from buying the expensive part first.",
+      "beatDuration": 3.433333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray with a boxed purchase supports save-you-from-buying introduction. No unrelated object."
+    },
+    {
+      "t": 1100.0,
+      "beatId": "rv_157",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración menciona 'doorbell camera', pero la imagen muestra un smartphone con vista de cámara de seguridad apuntando a un porche/baranda exterior, no un timbre con cámara.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_033000.jpg",
+      "activeNarration": "A doorbell camera can help you decide whether to answer. Those are useful jobs.",
+      "beatDuration": 6.1,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Smartphone showing porch camera feed directly illustrates deciding whether to answer a doorbell."
+    },
+    {
+      "t": 1110.0,
+      "beatId": "rv_159",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La imagen muestra un cierre (strike plate) instalado en la marco de una puerta, pero la narración asignada corresponde al beat anterior ('visited a home with a new camera...'). El beatNarration correcto para este frame debería ser 'I visited a home with a new camera, a new smart lock, and a strike plate loose enough to move under my fingertip.'",
+        "fix": "mover"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_033300.jpg",
+      "activeNarration": "I visited a home with a new camera, a new smart lock, and a strike plate loose enough to move under my fingertip.",
+      "beatDuration": 8.333333333333334,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual strike on jamb matches loose-strike anecdote. No requirement all camera and lock devices appear simultaneously."
+    },
+    {
+      "t": 1120.0,
+      "beatId": "rv_160",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Se ve un hombre sentado en una terminal de aeropuerto revisando su teléfono. La narración habla de 'a home the deadbolt was still meeting a poorly attached' (cerrojo en casa) y el beat dice 'The owner could watch his porch from an airport' — el visual no corresponde al contexto de refuerzo de puertas en el hogar que se está tratando.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_033600.jpg",
+      "activeNarration": "The owner could watch his porch from an airport.",
+      "beatDuration": 3.2,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Airport phone viewer exactly matches active sentence owner could watch porch from an airport. Home bolt clause is next beat."
+    },
+    {
+      "t": 1140.0,
+      "beatId": "rv_163b",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Visual muestra a una persona mayor tecleando en un panel tipo caja fuerte, no tiene relación con la narración sobre cerraduras smart para puertas y refuerzo de marcos.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_034200.jpg",
+      "activeNarration": "If carrying keys is difficult, or a household needs managed access, that convenience may be worth paying for.",
+      "beatDuration": 8.233333333333333,
+      "disposition": "confirmed_material",
+      "pixelReason": "Older person operates large desktop calculator/register with generated key labels, not accessible door entry keypad."
+    },
+    {
+      "t": 1186.4,
+      "beatId": "rv_169",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "PullQuote muestra solo la puerta con texto 'The doorway does its own work.' pero la narración continúa con 'And those security bars deserve a slower look'. El componente no refleja el sujeto que se está narrando en este beat.",
+        "fix": "cambiar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_035592.jpg",
+      "activeNarration": "The camera can be the eyes. The doorway still has to do its own work.",
+      "beatDuration": 5.066666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable doorway quote matches active sentence. Security bar wording is next beat. Total 5.067s, no dead issue."
+    },
+    {
+      "t": 1188.567,
+      "beatId": "rv_169",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Mismo PullQuote estático que 1186.4. La narración dice 'own work. And those security bars deserve a slower look' pero la imagen sigue siendo solo la puerta sin barras de seguridad visibles.",
+        "fix": "cambiar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_035657.jpg",
+      "activeNarration": "The camera can be the eyes. The doorway still has to do its own work.",
+      "beatDuration": 5.066666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable doorway quote matches active sentence. Security bar wording is next beat. Total 5.067s, no dead issue."
+    },
+    {
+      "t": 1189.233,
+      "beatId": "rv_170",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Ray sostiene un dispositivo metálico largo (barra/portón), pero la narración se refiere a 'security bars' como tema visual antes de transición. El objeto no corresponde claramente a barras de seguridad tradicionales mostradas con detenimiento.",
+        "fix": "stock o cambiar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_035677.jpg",
+      "activeNarration": "And those security bars deserve a slower look than the advertisement gives them.",
+      "beatDuration": 5.8,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray holds a recognizable telescoping security brace with rubber foot and knob cradle. It is the narrated device."
+    },
+    {
+      "t": 1200.0,
+      "beatId": "rv_172",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "CheckCard overlay lists only 'Floor surface' as a single item, but the beatNarration calls for three checklist items (floor surface, door arrangement, positioning). Additionally, the visual shows a different product (a tension bar/cross-bar device) lying on the floor rather than the security bars discussed in the narration leading up to this frame.",
+        "fix": "corregir componente CheckCard: completar los tres ítems de la lista; ajustar el footage del fondo para que muestre el producto correcto (las security bars de tensión, no un device cruzado) o swappear por img/rayvault_rv_172_fix1.jpg tal como indica el bed del beat"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_036000.jpg",
+      "activeNarration": "Some portable products depend heavily on the floor surface, the door arrangement, and exactly how they're positioned.",
+      "beatDuration": 7.366666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "CheckCard progressively reveals rows within 7.367s; later sample confirms completed checklist. Early single row is intentional animation. Floor-device shot is relevant."
+    },
+    {
+      "t": 1210.0,
+      "beatId": "rv_173",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración explica por qué un pie de goma sobre una alfombra suelta NO es confiable ('rug doesn't become reliable'), pero la imagen muestra el producto sobre la alfombra sin contexto visual que ilustre el problema de estabilidad o falta de fiabilidad que se narra.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_036300.jpg",
+      "activeNarration": "A rubber foot on a loose rug doesn't become reliable because the tube above it looks substantial.",
+      "beatDuration": 8.333333333333334,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual brace/rubber foot and loose rug in doorway directly illustrate the negative installation condition. Still need not demonstrate a failure test."
+    },
+    {
+      "t": 1290.0,
+      "beatId": "rv_184",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration describes how a device behaves on tile, rug, or particular door. Visual shows a close-up of a workbench with a black handle tool (door pull bar?), a small white tile/sample, and a woven mat piece — but no door, no device being tested, and no demonstration of behavior on surfaces. The narration 'how a device will behave' is not illustrated.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_038700.jpg",
+      "activeNarration": "An impressive demonstration on a sales page doesn't tell you how a device will behave on your tile, your rug, or your particular door.",
+      "beatDuration": 9.233333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual brace, tile and rug samples directly show the compatibility variables being discussed. It need not show a sales page or live test."
+    },
+    {
+      "t": 1310.0,
+      "beatId": "rv_187",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration describes a tenant showing a folder of lock advertisements, but the frame shows a desk with notebooks and a phone — no folder or advertisements visible.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_039300.jpg",
+      "activeNarration": "A tenant once showed me a folder of lock advertisements.",
+      "beatDuration": 3.8,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Closed kraft folder with phone and notepad supports tenant-document anecdote. Generic short 3.8s establishing shot, no contradictory object or fake readable advertising."
+    },
+    {
+      "t": 1320.0,
+      "beatId": "rv_189",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración habla de 'the property owner... she' (mujer dueña que arregla), pero el visual muestra grupo de 4 personas (hombre en traje, hombre técnico, dos mujeres) discutiendo frente a puerta. No hay figura femenina protagonista clara.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_039600.jpg",
+      "activeNarration": "The property owner arranged the repair. She didn't have to spend her money covering up a problem in somebody else's doorway.",
+      "beatDuration": 8.266666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Owner, tenant and tradespeople at doorway illustrate arranged repair. Narration she refers to tenant retaining money, not necessarily property owner; group includes woman."
+    },
+    {
+      "t": 1330.0,
+      "beatId": "rv_190",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración sobre 'rental door' y permiso para alterarla; visual muestra mujer con documentos frente a puerta blanca interior sin indicadores de que sea una puerta de rental.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_039900.jpg",
+      "activeNarration": "Get the appropriate permission before altering a rental door.",
+      "beatDuration": 4.233333333333333,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Woman holding paperwork at door is relevant to rental permission."
+    },
+    {
+      "t": 1340.0,
+      "beatId": "rv_191",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Metadata '1340.000s | rv_191 | image/clip' quemada en barra inferior.",
+        "fix": "quitar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_040200.jpg",
+      "activeNarration": "It may be part of a rated assembly with particular hardware, closing, and sealing requirements.",
+      "beatDuration": 6.633333333333334,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Rated-looking door with closer matches cue. Timestamp footer was audit-only and absent from actual video."
+    },
+    {
+      "t": 1350.0,
+      "beatId": "rv_193",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Logo circular 'VS' en centro del marco metálico (watermark de software/editor). Ícono de lupa/búsqueda en esquina superior derecha (UI element).",
+        "fix": "quitar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_040500.jpg",
+      "activeNarration": "The same goes for unusual frames.",
+      "beatDuration": 4.133333333333334,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Wood/metal/masonry frame comparison is relevant. Sample catches entrance animation; later full component sample is readable."
+    },
+    {
+      "t": 1420.0,
+      "beatId": "rv_202",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration describes operating the bolt/lock mechanism, but the visual shows a static close-up of the bolt latch on a white door — no hand interaction, no bolt being operated or retracted as described",
+        "fix": "reshoot"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_042600.jpg",
+      "activeNarration": "Operate the lock with the door open, then retract the bolt before closing it.",
+      "beatDuration": 5.666666666666667,
+      "disposition": "confirmed_material",
+      "pixelReason": "Actual hardware is two opposed knob-shaped forms joined across opening, not a bolt retracting into door edge."
+    },
+    {
+      "t": 1430.0,
+      "beatId": "rv_204",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Static RayChecklist graphic; no movement or change versus the beat transition",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_042900.jpg",
+      "activeNarration": "If you find damaged wood, serious misalignment, or a door that doesn't belong on an exterior entrance,",
+      "beatDuration": 8.2,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Actual check card lists damaged wood, misalignment and unsuitable door with matching sample backgrounds; readable."
+    },
+    {
+      "t": 1463.867,
+      "beatId": "rv_207",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración indica 'Finally, take a separate look at the glass', pero el visual sigue mostrando el componente de cierre de comparación (deadbolt) en lugar de la vidrio.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_043916.jpg",
+      "activeNarration": "Then assess the deadbolt. Keep a sound, suitable one. Replace a worn, unsuitable, or unreliable one.",
+      "beatDuration": 8.966666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable worn/sound deadbolt comparison matches active assess-and-keep-or-replace cue. Glass follows next beat."
+    },
+    {
+      "t": 1490.0,
+      "beatId": "rv_212",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración: 'He returned the unopened boxes.' Visual: hombre sostiene dos cajas cerradas y bolsa de compras, sin indicar que las está devolviendo. El frame muestra posesión activa, no acción de devolución.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_044700.jpg",
+      "activeNarration": "He returned the unopened boxes.",
+      "beatDuration": 3.2,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Homeowner holding unopened boxes illustrates returns anecdote; still image need not show retail counter."
+    },
+    {
+      "t": 1510.0,
+      "beatId": "rv_216",
+      "rawFlag": {
+        "issue": "illegible",
+        "note": "Spreadsheet on wooden table — column headers, row labels, and numerical data are too small and blurry to read; text appears garbled/machine-generated rather than intentional editorial typography.",
+        "fix": "agrandar componente"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_045300.jpg",
+      "activeNarration": "Let's put real planning numbers around that order.",
+      "beatDuration": 3.2333333333333334,
+      "disposition": "confirmed_material",
+      "pixelReason": "Prominent planning sheet contains generated gibberish headers and random illegible table entries."
+    },
+    {
+      "t": 1530.0,
+      "beatId": "rv_219",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Small golden watermark/key symbol in bottom-right corner",
+        "fix": "remove"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_045900.jpg",
+      "activeNarration": "For a sound, compatible doorway, a basic reinforced strike and appropriate fasteners might take roughly twenty to fifty dollars.",
+      "beatDuration": 9.633333333333333,
+      "disposition": "confirmed_material",
+      "pixelReason": "Reinforced strike + fasteners price background shows short machine bolts and solid rounded piece lacking recognizable strike opening."
+    },
+    {
+      "t": 1550.0,
+      "beatId": "rv_221",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narración dice 'A conventional replacement deadbolt might be around' pero el visual sigue mostrando los tornillos y bisagra de '$5-15 Suitable hinge fasteners' del beat anterior. Debería cambiar a imagen de deadbolt.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_046500.jpg",
+      "activeNarration": "Suitable hinge fasteners might add five to fifteen dollars.",
+      "beatDuration": 5.1,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable $5-15 hinge-fastener card with screws. Deadbolt sentence is next beat; 0.133s-separated samples cannot prove dead."
+    },
+    {
+      "t": 1550.133,
+      "beatId": "rv_221",
+      "rawFlag": {
+        "issue": "dead",
+        "note": "Mismo frame que 1550s (menos de 0.2s de diferencia) — pantalla clavada sin cambio visual. Además mismatch: narración sobre deadbolt, visual sigue en hinge fasteners.",
+        "fix": "acortar"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_046504.jpg",
+      "activeNarration": "Suitable hinge fasteners might add five to fifteen dollars.",
+      "beatDuration": 5.1,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable $5-15 hinge-fastener card with screws. Deadbolt sentence is next beat; 0.133s-separated samples cannot prove dead."
+    },
+    {
+      "t": 1571.0,
+      "beatId": "rv_225",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Pequeño ícono de lupa/watermark en esquina inferior derecha.",
+        "fix": "Eliminar watermark."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_047130.jpg",
+      "activeNarration": "Small fitting supplies can add another ten or twenty.",
+      "beatDuration": 3.2666666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable fitting-supply price card; gold keyring is authorized."
+    },
+    {
+      "t": 1572.367,
+      "beatId": "rv_225",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Pequeño ícono de lupa/watermark en esquina inferior derecha.",
+        "fix": "Eliminar watermark."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_047171.jpg",
+      "activeNarration": "Small fitting supplies can add another ten or twenty.",
+      "beatDuration": 3.2666666666666666,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Readable fitting-supply price card; gold keyring is authorized."
+    },
+    {
+      "t": 1577.367,
+      "beatId": "rv_226b",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Pequeño ícono de lupa/watermark en esquina inferior derecha.",
+        "fix": "Eliminar watermark."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_047321.jpg",
+      "activeNarration": "Thirty-five for a reinforced strike and its fasteners.",
+      "beatDuration": 3.8,
+      "disposition": "confirmed_material",
+      "pixelReason": "Strike + fasteners $35 card shows hollow tube/socket and nuts, not strike plate and screws."
+    },
+    {
+      "t": 1578.967,
+      "beatId": "rv_226b",
+      "rawFlag": {
+        "issue": "burned",
+        "note": "Pequeño ícono de lupa/watermark en esquina inferior derecha.",
+        "fix": "Eliminar watermark."
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_047369.jpg",
+      "activeNarration": "Thirty-five for a reinforced strike and its fasteners.",
+      "beatDuration": 3.8,
+      "disposition": "confirmed_material",
+      "pixelReason": "Strike + fasteners $35 card shows hollow tube/socket and nuts, not strike plate and screws."
+    },
+    {
+      "t": 1599.033,
+      "beatId": "rv_228",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration says \"Choose a $110 jamb\" but frame shows the same reinforcement sleeve + doorknob + screws composition from the previous beat with no jamb visible.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_047971.jpg",
+      "activeNarration": "Add a forty-five-dollar door-edge reinforcement only if suitable and needed, and the example becomes one hundred sixty.",
+      "beatDuration": 8.2,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Door-edge sleeve and $160 example match exact cue. $110 jamb is next cue. Overlay contrast is tracked separately."
+    },
+    {
+      "t": 1610.0,
+      "beatId": "rv_230",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration says 'I'm replacing one line, not charging you for both' but the visual shows a side-by-side '$35 vs $110' comparison with a VS badge — the visual is about price comparison, not about the concept of 'not charging for both lines.' The narration and tile content don't match conceptually.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_048300.jpg",
+      "activeNarration": "I'm replacing one line, not charging you for both.",
+      "beatDuration": 4.266666666666667,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Parts comparison correctly explains replacing the $35 line with $110 jamb system. Cloud invented labor-charge interpretation. Early sample is text entrance animation."
+    },
+    {
+      "t": 1670.0,
+      "beatId": "rv_239",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "La narración dice 'turning a screwdriver' (girar un destornillador), pero el video muestra a Ray sosteniendo llaves. El objeto visual no corresponde al objeto mencionado en el audio en ese momento.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_050100.jpg",
+      "activeNarration": "The trouble for most people isn't turning a screwdriver.",
+      "beatDuration": 4.1,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray holds small hardware near screwdriver; relevant to the introduction about ordering work. No unrelated icon problem."
+    },
+    {
+      "t": 1722.4,
+      "beatId": "rv_249",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration says 'Correct those things. Recheck the door...' but visual shows Ray holding a giant prop key instead of interacting with a door.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_051672.jpg",
+      "activeNarration": "Correct those things.",
+      "beatDuration": 1.6333333333333333,
+      "disposition": "confirmed_material",
+      "pixelReason": "Ray holds giant prop key during Correct those things, unrelated to corrected strike."
+    },
+    {
+      "t": 1723.033,
+      "beatId": "rv_249",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration continues about rechecking the door; visual still shows Ray holding the oversized key prop.",
+        "fix": "stock"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_051691.jpg",
+      "activeNarration": "Correct those things.",
+      "beatDuration": 1.6333333333333333,
+      "disposition": "confirmed_material",
+      "pixelReason": "Ray holds giant prop key during Correct those things, unrelated to corrected strike."
+    },
+    {
+      "t": 1740.0,
+      "beatId": "rv_255",
+      "rawFlag": {
+        "issue": "mismatch",
+        "note": "Narration describes a specific moment (lock locked, screw in palm), but visual shows Ray sitting in his shop gesturing — no screw or lock detail shown.",
+        "fix": "otra imagen"
+      },
+      "actualFrame": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_052200.jpg",
+      "activeNarration": "The lock was locked. The little screw was sitting in my palm.",
+      "beatDuration": 5.633333333333334,
+      "disposition": "false_positive_or_valid_editorial",
+      "pixelReason": "Ray seated with open palm closes his personal anecdote. Tiny screw is not clearly resolved in sample but calm host close is relevant; no reason to require literal macro shot throughout."
+    }
+  ],
+  "materialIssues": [
+    {
+      "beatId": "rv_005",
+      "from": 430,
+      "to": 580,
+      "startSeconds": 14.333333333333334,
+      "endSeconds": 19.333333333333332,
+      "assetId": "h_01",
+      "issue": "burned",
+      "note": "At 16.833s generated clip changes authorized RAY patch to PLAY.",
+      "fix": "Replace clip with approved still or repair patch throughout.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000445.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000505.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000565.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_006",
+      "from": 580,
+      "to": 724,
+      "startSeconds": 19.333333333333332,
+      "endSeconds": 24.133333333333333,
+      "assetId": "rv_006",
+      "issue": "burned",
+      "note": "At 21.733s actual clip patch is malformed characters, not RAY.",
+      "fix": "Use clean approved still or repair entire clip patch.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000594.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000600.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000652.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_000710.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_098b",
+      "from": 19966,
+      "to": 20146,
+      "startSeconds": 665.5333333333333,
+      "endSeconds": 671.5333333333333,
+      "assetId": "rv_098b",
+      "issue": "mismatch",
+      "note": "Nominal one-inch deadbolt throw card background is a loose threaded machine screw, not extended deadbolt.",
+      "fix": "Replace unique background with recognizable smooth deadbolt projection.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_020065.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_020100.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_020143.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_108",
+      "from": 22096,
+      "to": 22389,
+      "startSeconds": 736.5333333333333,
+      "endSeconds": 746.3,
+      "assetId": "rv_108",
+      "issue": "ugly",
+      "note": "Projection/engagement diagram shows headed threaded screw bridging door/jamb as deadbolt, mechanically impossible.",
+      "fix": "Replace unique background with correct smooth deadbolt into strike pocket; preserve editorial labels.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_022200.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_022257.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_022386.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_127",
+      "from": 26128,
+      "to": 26432,
+      "startSeconds": 870.9333333333333,
+      "endSeconds": 881.0666666666667,
+      "assetId": "rv_127",
+      "issue": "mismatch",
+      "note": "Actual hollow-core illustration is a curved thick white mesh panel resembling filter, not recognizable door slab.",
+      "fix": "Replace with flat rectangular hollow-core door cutaway with timber perimeter and paper honeycomb.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_026400.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_163b",
+      "from": 34021,
+      "to": 34268,
+      "startSeconds": 1134.0333333333333,
+      "endSeconds": 1142.2666666666667,
+      "assetId": "rv_163b",
+      "issue": "mismatch",
+      "note": "Older person operates large desktop calculator/register with generated key labels, not accessible door entry keypad.",
+      "fix": "Replace with normal door-mounted access keypad and natural hand.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_034200.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_202",
+      "from": 42477,
+      "to": 42647,
+      "startSeconds": 1415.9,
+      "endSeconds": 1421.5666666666666,
+      "assetId": "rv_202",
+      "issue": "ugly",
+      "note": "Actual hardware is two opposed knob-shaped forms joined across opening, not a bolt retracting into door edge.",
+      "fix": "Replace with physically plausible open door and standard retracted deadbolt.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_042600.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_216",
+      "from": 45285,
+      "to": 45382,
+      "startSeconds": 1509.5,
+      "endSeconds": 1512.7333333333333,
+      "assetId": "rv_216",
+      "issue": "illegible",
+      "note": "Prominent planning sheet contains generated gibberish headers and random illegible table entries.",
+      "fix": "Replace generated paper with clean unlettered planning props or accurate editorial sheet.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_045300.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_219",
+      "from": 45839,
+      "to": 46128,
+      "startSeconds": 1527.9666666666667,
+      "endSeconds": 1537.6,
+      "assetId": "rv_219",
+      "issue": "mismatch",
+      "note": "Reinforced strike + fasteners price background shows short machine bolts and solid rounded piece lacking recognizable strike opening.",
+      "fix": "Replace unique background with reinforced strike plate and appropriate long wood screws.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_045900.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_045998.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_046125.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_220",
+      "from": 46128,
+      "to": 46354,
+      "startSeconds": 1537.6,
+      "endSeconds": 1545.1333333333334,
+      "assetId": "rv_220",
+      "issue": "burned",
+      "note": "Budget kit has prominent garbled white product labels.",
+      "fix": "Replace with clean unlabeled plausible kit.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_046200.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_046241.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_046331.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_226b",
+      "from": 47258,
+      "to": 47372,
+      "startSeconds": 1575.2666666666667,
+      "endSeconds": 1579.0666666666666,
+      "assetId": "rv_226b",
+      "issue": "mismatch",
+      "note": "Strike + fasteners $35 card shows hollow tube/socket and nuts, not strike plate and screws.",
+      "fix": "Replace unique background with correct strike and wood screws.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_047321.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_047369.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "rv_249",
+      "from": 51647,
+      "to": 51696,
+      "startSeconds": 1721.5666666666666,
+      "endSeconds": 1723.2,
+      "assetId": "rv_249",
+      "issue": "mismatch",
+      "note": "Ray holds giant prop key during Correct those things, unrelated to corrected strike.",
+      "fix": "Replace with unique correct repair detail still.",
+      "evidence": [
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_051652.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_051672.jpg",
+        "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\final_audit_frames\\frame_051691.jpg"
+      ],
+      "status": "repair_coordinated_with_parent_not_yet_reaudited"
+    },
+    {
+      "beatId": "StatBug_overlays",
+      "issue": "illegible",
+      "note": "Brass disclaimer series at bottom right loses contrast on pale wood; upper-left caption also low contrast in light areas. Confirmed on real budget frames.",
+      "fix": "Dark backing plates behind number/caption and series in all four overlays.",
+      "status": "parent_applied_in_worktree_not_yet_reaudited"
+    }
+  ],
+  "status": "REPAIRS_REQUIRED",
+  "finalDeliveryPassed": false,
+  "remaining": "Parent to render all repaired ranges once; re-extract actual final MP4 affected frames and visually verify each repair. Unchanged ranges retain this audit. Technical audit separate."
+}

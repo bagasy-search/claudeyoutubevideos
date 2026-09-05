@@ -1,0 +1,48 @@
+{
+  "mapping": {
+    "rayvault_rv_098b": "rayvault_rv_098b_fix2",
+    "rayvault_rv_108": "rayvault_rv_108_fix2",
+    "rayvault_rv_127": "rayvault_rv_127_fix1",
+    "rayvault_rv_163b": "rayvault_rv_163b_fix1",
+    "rayvault_rv_202": "rayvault_rv_202_fix4",
+    "rayvault_rv_216": "rayvault_rv_216_fix1",
+    "rayvault_rv_219": "rayvault_rv_219_fix1",
+    "rayvault_rv_220": "rayvault_rv_220_fix2",
+    "rayvault_rv_226b": "rayvault_rv_226b_fix2",
+    "rayvault_rv_249": "rayvault_rv_249_fix1"
+  },
+  "clipRejections": {
+    "rayvault_h_01_r1": "RAY shirt patch morphs to PLAY in the actual render; use the approved source still.",
+    "rayvault_rv_006": "RAY shirt patch deforms during motion; use the approved source still.",
+    "rayvault_rv_249": "Actual clip contains a giant prop key instead of corrected door strike; use newly approved still."
+  },
+  "deltaAssets": [
+    "img/rayvault_h_01_r1.jpg",
+    "img/rayvault_h_01_r1_blur.jpg",
+    "img/rayvault_rv_006.jpg",
+    "img/rayvault_rv_006_blur.jpg",
+    "img/rayvault_rv_098b_fix2.jpg",
+    "img/rayvault_rv_098b_fix2_blur.jpg",
+    "img/rayvault_rv_108_fix2.jpg",
+    "img/rayvault_rv_108_fix2_blur.jpg",
+    "img/rayvault_rv_127_fix1.jpg",
+    "img/rayvault_rv_127_fix1_blur.jpg",
+    "img/rayvault_rv_163b_fix1.jpg",
+    "img/rayvault_rv_163b_fix1_blur.jpg",
+    "img/rayvault_rv_202_fix4.jpg",
+    "img/rayvault_rv_202_fix4_blur.jpg",
+    "img/rayvault_rv_216_fix1.jpg",
+    "img/rayvault_rv_216_fix1_blur.jpg",
+    "img/rayvault_rv_219_fix1.jpg",
+    "img/rayvault_rv_219_fix1_blur.jpg",
+    "img/rayvault_rv_220_fix2.jpg",
+    "img/rayvault_rv_220_fix2_blur.jpg",
+    "img/rayvault_rv_226b_fix2.jpg",
+    "img/rayvault_rv_226b_fix2_blur.jpg",
+    "img/rayvault_rv_249_fix1.jpg",
+    "img/rayvault_rv_249_fix1_blur.jpg"
+  ],
+  "preservedMaster": true,
+  "preservedTimelineFrames": 52404,
+  "kitChange": "StatBug dark plates for value, caption and material allowance"
+}

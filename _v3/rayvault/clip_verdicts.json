@@ -2,8 +2,8 @@
   {
     "name": "rayvault_h_01_r1",
     "phrase": "The lock was still locked.",
-    "ok": true,
-    "action": "keep",
+    "ok": false,
+    "action": "use_still",
     "reason": "Ray's damaged door frame/jamb with worn lock holes visually supports the idea that the lock was still in place/locked — he's showing the physical evidence of the locking mechanism embedded in the wood.",
     "identity": "same",
     "anatomy_ok": true,
@@ -40,7 +40,9 @@
         "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_01_r1_end.jpg"
       }
     ],
-    "review_model": "agnes-2.5-flash"
+    "review_model": "agnes-2.5-flash",
+    "final_render_reason": "RAY shirt patch morphs to PLAY in the actual render; use the approved source still.",
+    "final_render_evidence": "render_v1/final_audit_reconciled.json"
   },
   {
     "name": "rayvault_h_02",
@@ -659,8 +661,8 @@
   {
     "name": "rayvault_rv_006",
     "phrase": "I never caught a burglar.",
-    "ok": true,
-    "action": "keep",
+    "ok": false,
+    "action": "use_still",
     "reason": "Ray speaking/narrating with B-roll of him at workbench surrounded by lock hardware. Phrase 'I never caught a burglar..' is reflective/narrative — no specific action required. Clean footage, no watermarks/text overlays, correct identity confirmed across clips.",
     "identity": "same",
     "anatomy_ok": true,
@@ -697,7 +699,9 @@
         "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_006_end.jpg"
       }
     ],
-    "review_model": "agnes-2.5-flash"
+    "review_model": "agnes-2.5-flash",
+    "final_render_reason": "RAY shirt patch deforms during motion; use the approved source still.",
+    "final_render_evidence": "render_v1/final_audit_reconciled.json"
   },
   {
     "name": "rayvault_rv_013",
@@ -1668,8 +1672,8 @@
   {
     "name": "rayvault_rv_249",
     "phrase": "Correct those things.",
-    "ok": true,
-    "action": "keep",
+    "ok": false,
+    "action": "use_still",
     "reason": "Hands and blue shirt sleeves match Ray in workshop setting",
     "identity": "same",
     "anatomy_ok": true,
@@ -1706,7 +1710,9 @@
         "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_249_end.jpg"
       }
     ],
-    "review_model": "agnes-2.5-flash"
+    "review_model": "agnes-2.5-flash",
+    "final_render_reason": "Actual clip contains a giant prop key instead of corrected door strike; use newly approved still.",
+    "final_render_evidence": "render_v1/final_audit_reconciled.json"
   },
   {
     "name": "rayvault_rv_255",

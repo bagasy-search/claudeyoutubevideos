@@ -169,16 +169,16 @@ export const StatBug: React.FC<{
   const color = tone === "danger" ? V.danger : V.brass;
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <div style={{ position: "absolute", left: "5%", top: "9%", opacity: a, transform: `translateY(${((1 - a) * 12).toFixed(1)}px)` }}>
+      <div style={{ position: "absolute", left: "5%", top: "9%", opacity: a, transform: `translateY(${((1 - a) * 12).toFixed(1)}px)`, padding: "22px 26px", maxWidth: "48%", background: "rgba(10,12,10,0.92)", border: `1px solid ${rgba(V.brass, 0.65)}`, borderRadius: 10 }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
           <div style={{ fontFamily: F_DISPLAY, fontWeight: 800, fontSize: 118, lineHeight: 0.9, color, textShadow: `0 0 42px ${rgba(color, 0.34)}, 0 6px 26px rgba(0,0,0,0.92)` }}>{value}</div>
           {unit ? <div style={{ fontFamily: F_DISPLAY, fontSize: 44, color: rgba(color, 0.9), textShadow: shadow }}>{unit}</div> : null}
         </div>
         {caption ? <div style={{ marginTop: 4, fontFamily: F_BODY, fontSize: 30, color: V.white, maxWidth: 640, textShadow: shadow }}>{caption}</div> : null}
       </div>
-      <div style={{ position: "absolute", right: "5%", bottom: "8%", opacity: a * 0.9, display: "flex", alignItems: "center", gap: 10 }}>
+      <div style={{ position: "absolute", right: "5%", bottom: "8%", opacity: a, display: "flex", alignItems: "center", gap: 12, padding: "14px 20px", background: "rgba(10,12,10,0.92)", border: `1px solid ${rgba(V.brass, 0.65)}`, borderRadius: 8 }}>
         <Keyring size={30} />
-        <div style={{ fontFamily: F_DISPLAY, fontSize: 24, letterSpacing: 2, color: V.brass, textShadow: shadow }}>{series}</div>
+        <div style={{ fontFamily: F_DISPLAY, fontSize: 28, letterSpacing: 2, color: V.white, textShadow: shadow }}>{series}</div>
       </div>
     </AbsoluteFill>
   );

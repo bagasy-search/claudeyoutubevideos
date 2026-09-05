@@ -126,7 +126,7 @@
       "props": {},
       "assetId": "h_01",
       "assetPath": "img/rayvault_h_01.jpg",
-      "tipo": "clip",
+      "tipo": "imagen",
       "layer": "full",
       "sourceStart": 187,
       "sourceEnd": 259,
@@ -144,7 +144,7 @@
       "to": 580,
       "durationInFrames": 150,
       "durationSeconds": 5,
-      "src": "broll/rayvault_h_01_r1.mp4"
+      "src": "img/rayvault_h_01_r1.jpg"
     },
     {
       "id": "rv_006",
@@ -155,7 +155,7 @@
       "props": {},
       "assetId": "rv_006",
       "assetPath": "img/rayvault_rv_006.jpg",
-      "tipo": "clip",
+      "tipo": "imagen",
       "layer": "full",
       "sourceStart": 259,
       "sourceEnd": 331,
@@ -173,7 +173,7 @@
       "to": 724,
       "durationInFrames": 144,
       "durationSeconds": 4.8,
-      "src": "broll/rayvault_rv_006.mp4"
+      "src": "img/rayvault_rv_006.jpg"
     },
     {
       "id": "rv_007",
@@ -3411,7 +3411,7 @@
         "unit": "",
         "caption": "Nominal throw — verify installed travel",
         "tone": "brass",
-        "bed": "img/rayvault_rv_098b.jpg"
+        "bed": "img/rayvault_rv_098b_fix2.jpg"
       },
       "assetId": "rv_098b",
       "assetPath": "img/rayvault_rv_098b.jpg",
@@ -3433,7 +3433,7 @@
       "to": 20146,
       "durationInFrames": 180,
       "durationSeconds": 6,
-      "src": "img/rayvault_rv_098b.jpg"
+      "src": "img/rayvault_rv_098b_fix2.jpg"
     },
     {
       "id": "rv_099",
@@ -3843,7 +3843,7 @@
             "label": "Sound support"
           }
         ],
-        "bed": "img/rayvault_rv_108.jpg"
+        "bed": "img/rayvault_rv_108_fix2.jpg"
       },
       "assetId": "rv_108",
       "assetPath": "img/rayvault_rv_108.jpg",
@@ -3865,7 +3865,7 @@
       "to": 22389,
       "durationInFrames": 293,
       "durationSeconds": 9.766666666666667,
-      "src": "img/rayvault_rv_108.jpg"
+      "src": "img/rayvault_rv_108_fix2.jpg"
     },
     {
       "id": "rv_109",
@@ -4533,7 +4533,7 @@
       "to": 26432,
       "durationInFrames": 304,
       "durationSeconds": 10.133333333333333,
-      "src": "img/rayvault_rv_127.jpg"
+      "src": "img/rayvault_rv_127_fix1.jpg"
     },
     {
       "id": "rv_128",
@@ -5924,7 +5924,7 @@
       "to": 34268,
       "durationInFrames": 247,
       "durationSeconds": 8.233333333333333,
-      "src": "img/rayvault_rv_163b.jpg"
+      "src": "img/rayvault_rv_163b_fix1.jpg"
     },
     {
       "id": "rv_164",
@@ -7411,7 +7411,7 @@
       "to": 42647,
       "durationInFrames": 170,
       "durationSeconds": 5.666666666666667,
-      "src": "img/rayvault_rv_202.jpg"
+      "src": "img/rayvault_rv_202_fix4.jpg"
     },
     {
       "id": "rv_203",
@@ -7870,7 +7870,7 @@
       "to": 45382,
       "durationInFrames": 97,
       "durationSeconds": 3.2333333333333334,
-      "src": "img/rayvault_rv_216.jpg"
+      "src": "img/rayvault_rv_216_fix1.jpg"
     },
     {
       "id": "rv_217",
@@ -7956,7 +7956,7 @@
         "unit": "",
         "caption": "Reinforced strike + fasteners",
         "tone": "brass",
-        "bed": "img/rayvault_rv_219.jpg"
+        "bed": "img/rayvault_rv_219_fix1.jpg"
       },
       "assetId": "rv_219",
       "assetPath": "img/rayvault_rv_219.jpg",
@@ -7978,7 +7978,7 @@
       "to": 46128,
       "durationInFrames": 289,
       "durationSeconds": 9.633333333333333,
-      "src": "img/rayvault_rv_219.jpg"
+      "src": "img/rayvault_rv_219_fix1.jpg"
     },
     {
       "id": "rv_220",
@@ -8010,7 +8010,7 @@
       "overlayId": "rv_220_overlay",
       "originalTipo": "componente",
       "originalComponent": "StatBug",
-      "src": "img/rayvault_rv_220.jpg"
+      "src": "img/rayvault_rv_220_fix2.jpg"
     },
     {
       "id": "rv_221",
@@ -8221,7 +8221,7 @@
         "unit": "",
         "caption": "Example: strike + fasteners",
         "tone": "brass",
-        "bed": "img/rayvault_rv_226b.jpg"
+        "bed": "img/rayvault_rv_226b_fix2.jpg"
       },
       "assetId": "rv_226b",
       "assetPath": "img/rayvault_rv_226b.jpg",
@@ -8243,7 +8243,7 @@
       "to": 47372,
       "durationInFrames": 114,
       "durationSeconds": 3.8,
-      "src": "img/rayvault_rv_226b.jpg"
+      "src": "img/rayvault_rv_226b_fix2.jpg"
     },
     {
       "id": "rv_226c",
@@ -9071,7 +9071,7 @@
       "props": {},
       "assetId": "rv_249",
       "assetPath": "img/rayvault_rv_249.jpg",
-      "tipo": "clip",
+      "tipo": "imagen",
       "layer": "full",
       "sourceStart": 23890,
       "sourceEnd": 23912,
@@ -9089,7 +9089,7 @@
       "to": 51696,
       "durationInFrames": 49,
       "durationSeconds": 1.6333333333333333,
-      "src": "broll/rayvault_rv_249.mp4"
+      "src": "img/rayvault_rv_249_fix1.jpg"
     },
     {
       "id": "rv_250",

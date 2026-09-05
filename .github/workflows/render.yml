@@ -152,6 +152,14 @@ jobs:
       - uses: actions/download-artifact@v4
         if: ${{ github.event.inputs.stitch_only != 'true' }}
         with: { path: chunks, pattern: "chunk-*", merge-multiple: true }
+      - name: require every selected chunk from this run
+        if: ${{ github.event.inputs.only_chunks != '' && github.event.inputs.stitch_only != 'true' }}
+        env: { ONLY: "${{ github.event.inputs.only_chunks }}" }
+        run: |
+          LIST=$(node -e "const a=[];for(const p of process.argv[1].split(',')){if(p.includes('-')){const[x,y]=p.split('-').map(Number);for(let i=x;i<=y;i++)a.push(i)}else a.push(Number(p))}if(a.some(x=>!Number.isInteger(x)||x<0))throw Error('Invalid chunk index');console.log([...new Set(a)].join(' '))" "$ONLY")
+          for i in $LIST; do
+            [ -s "chunks/chunk_$i.mp4" ] || { echo "::error::selected chunk $i has no NEW artifact; refusing a stale fallback"; exit 1; }
+          done
       - name: traer chunks persistidos (reusar los no-cambiados)
         continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
@@ -175,9 +183,9 @@ jobs:
           ls chunk_*.mp4 >/dev/null 2>&1 || { echo "(no hay chunks para persistir)"; exit 0; }
           echo "persistiendo $(ls chunk_*.mp4 | wc -l) chunks"
           R="${{ github.repository }}"   # sin -R falla: el job stitch no hace checkout
-          gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
-            || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
+          gh release view "chunks-${{ github.event.inputs.slug }}" -R "$R" >/dev/null 2>&1 \
+            || gh release create "chunks-${{ github.event.inputs.slug }}" -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial"
+          gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
       - name: install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: concat (todos los N en orden)

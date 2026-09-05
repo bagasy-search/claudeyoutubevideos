@@ -24,16 +24,6 @@
       "rate": 0.9774193548387096
     },
     {
-      "id": "rv_005",
-      "src": "broll/rayvault_h_01_r1.mp4",
-      "rate": 1
-    },
-    {
-      "id": "rv_006",
-      "src": "broll/rayvault_rv_006.mp4",
-      "rate": 1
-    },
-    {
       "id": "rv_013",
       "src": "broll/rayvault_rv_013.mp4",
       "rate": 1
@@ -147,11 +137,6 @@
       "id": "rv_213",
       "src": "broll/rayvault_rv_213.mp4",
       "rate": 0.9774193548387096
-    },
-    {
-      "id": "rv_249",
-      "src": "broll/rayvault_rv_249.mp4",
-      "rate": 1
     },
     {
       "id": "rv_251",
