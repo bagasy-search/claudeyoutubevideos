@@ -1,0 +1,1629 @@
+[
+  {
+    "name": "rayvault_h_01_r1",
+    "ok": true,
+    "evidence": "repair_verdicts.json",
+    "originalName": "rayvault_h_01"
+  },
+  {
+    "name": "rayvault_h_02",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_03",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_04",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_06",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_07",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_08",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_09_r1",
+    "ok": true,
+    "evidence": "repair_verdicts.json",
+    "originalName": "rayvault_h_09"
+  },
+  {
+    "name": "rayvault_h_11_fix3",
+    "ok": true,
+    "evidence": "Direct full-size inspection: 077_left cured expanding foam between wood samples; 077_right solid cedar shim between wood samples with long screw; h11 Ray fingers directly hold short brass deadbolt paddle with hinges opposite lock edge.",
+    "originalName": "rayvault_h_11"
+  },
+  {
+    "name": "rayvault_h_13",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_14",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_15",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_16",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_17",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_h_18",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_01",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_02",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_03",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_04",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_05",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_06",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_07",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_08",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_09_r1",
+    "ok": true,
+    "evidence": "repair_verdicts.json",
+    "originalName": "rayvault_m_09"
+  },
+  {
+    "name": "rayvault_m_10",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_11",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_12",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_13",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_m_14",
+    "ok": true,
+    "evidence": "image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_004_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_004"
+  },
+  {
+    "name": "rayvault_rv_006",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_007_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_007"
+  },
+  {
+    "name": "rayvault_rv_008",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_009",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_010",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_011",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_012",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_013",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_014_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_014"
+  },
+  {
+    "name": "rayvault_rv_015",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_016",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_017",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_018",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_020_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_020"
+  },
+  {
+    "name": "rayvault_rv_021_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_021"
+  },
+  {
+    "name": "rayvault_rv_022",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_023",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_024",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_025",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_026",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_027",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_028",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_030",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_031",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_032",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_033_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_033"
+  },
+  {
+    "name": "rayvault_rv_034",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_035",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_037",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_038",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_039_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_039"
+  },
+  {
+    "name": "rayvault_rv_040",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_041",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_042_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_042"
+  },
+  {
+    "name": "rayvault_rv_043",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_044",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_045",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_046",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_047_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_047"
+  },
+  {
+    "name": "rayvault_rv_049_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_049"
+  },
+  {
+    "name": "rayvault_rv_052_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_052"
+  },
+  {
+    "name": "rayvault_rv_054",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_055",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_056",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_057",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_058_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_058"
+  },
+  {
+    "name": "rayvault_rv_059",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_060",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_061",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_062",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_063",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_064",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_067",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_068",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_069",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_070",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_071",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_072_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_072"
+  },
+  {
+    "name": "rayvault_rv_073",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_074",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_075_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_075"
+  },
+  {
+    "name": "rayvault_rv_076",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_077",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_078",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_080",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_081_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_081"
+  },
+  {
+    "name": "rayvault_rv_083",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_084",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_085",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_086",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_087",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_088",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_089_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_089"
+  },
+  {
+    "name": "rayvault_rv_090",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_091",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_092",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_093_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_093"
+  },
+  {
+    "name": "rayvault_rv_094",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_095",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_096",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_097_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_097"
+  },
+  {
+    "name": "rayvault_rv_099",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_101",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_102_fix2",
+    "ok": true,
+    "evidence": "Direct full-size review: rectangular deadbolt end visibly flush with narrow door-edge faceplate, conventional interior thumbturn on broad face. Cloud final verdict incorrectly required action in still image.",
+    "originalName": "rayvault_rv_102"
+  },
+  {
+    "name": "rayvault_rv_103",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_104",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_105",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_106",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_107_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_107"
+  },
+  {
+    "name": "rayvault_rv_108",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_109",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_110",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_111",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_112_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_112"
+  },
+  {
+    "name": "rayvault_rv_113_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_113"
+  },
+  {
+    "name": "rayvault_rv_114",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_115",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_117",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_119",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_120",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_121",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_122",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_123_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_123"
+  },
+  {
+    "name": "rayvault_rv_124",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_125",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_126_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_126"
+  },
+  {
+    "name": "rayvault_rv_127",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_129",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_130",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_131",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_132_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_132"
+  },
+  {
+    "name": "rayvault_rv_133",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_134",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_135",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_136",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_137_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_137"
+  },
+  {
+    "name": "rayvault_rv_138_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_138"
+  },
+  {
+    "name": "rayvault_rv_139",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_141",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_143",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_144",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_145",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_146_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_146"
+  },
+  {
+    "name": "rayvault_rv_147",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_148",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_150",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_151_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_151"
+  },
+  {
+    "name": "rayvault_rv_152",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_153",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_154",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_155",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_156",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_157",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_159",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_160",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_161_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_161"
+  },
+  {
+    "name": "rayvault_rv_162_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_162"
+  },
+  {
+    "name": "rayvault_rv_163",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_164",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_165",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_166",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_167_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_167"
+  },
+  {
+    "name": "rayvault_rv_168_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_168"
+  },
+  {
+    "name": "rayvault_rv_169",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_171_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_171"
+  },
+  {
+    "name": "rayvault_rv_172_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_172"
+  },
+  {
+    "name": "rayvault_rv_174_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_174"
+  },
+  {
+    "name": "rayvault_rv_175_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_175"
+  },
+  {
+    "name": "rayvault_rv_176",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_177",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_178_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_178"
+  },
+  {
+    "name": "rayvault_rv_179_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_179"
+  },
+  {
+    "name": "rayvault_rv_180",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_181_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_181"
+  },
+  {
+    "name": "rayvault_rv_182",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_183",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_184_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_184"
+  },
+  {
+    "name": "rayvault_rv_186",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_187",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_188",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_189",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_190",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_191_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_191"
+  },
+  {
+    "name": "rayvault_rv_192",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_193",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_194",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_195",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_196",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_197",
+    "ok": true,
+    "evidence": "Direct visual review of repair_sheet_1..5, with complete narration and second cloud opinion. Subject matches literal interval; original rejection was overbroad."
+  },
+  {
+    "name": "rayvault_rv_198",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_199",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_201_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_201"
+  },
+  {
+    "name": "rayvault_rv_202",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_203",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_204_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_204"
+  },
+  {
+    "name": "rayvault_rv_205",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_206",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_207",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_208",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_209",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_210",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_211",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_212_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_212"
+  },
+  {
+    "name": "rayvault_rv_213",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_214",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_215",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_216",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_217_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_217"
+  },
+  {
+    "name": "rayvault_rv_218",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_219",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_220",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_221_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_221"
+  },
+  {
+    "name": "rayvault_rv_222",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_223_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_223"
+  },
+  {
+    "name": "rayvault_rv_224",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_225",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_227",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_228_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_228"
+  },
+  {
+    "name": "rayvault_rv_229",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_230_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_230"
+  },
+  {
+    "name": "rayvault_rv_231_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_231"
+  },
+  {
+    "name": "rayvault_rv_232",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_233",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_234_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_234"
+  },
+  {
+    "name": "rayvault_rv_235",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_236_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_236"
+  },
+  {
+    "name": "rayvault_rv_237",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_238",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_240",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_241_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_241"
+  },
+  {
+    "name": "rayvault_rv_242_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_242"
+  },
+  {
+    "name": "rayvault_rv_243_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_243"
+  },
+  {
+    "name": "rayvault_rv_244",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_245",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_246",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_247_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_247"
+  },
+  {
+    "name": "rayvault_rv_248_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_248"
+  },
+  {
+    "name": "rayvault_rv_249",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_250",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_252",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_253",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_254",
+    "ok": true,
+    "evidence": "director_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_255",
+    "ok": true,
+    "evidence": "Direct full-size source review: one tiny screw visibly rests in center of Ray open palm. Clip failure does not apply to still."
+  },
+  {
+    "name": "rayvault_rv_256_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_256"
+  },
+  {
+    "name": "rayvault_rv_014b_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_014b"
+  },
+  {
+    "name": "rayvault_rv_017b",
+    "ok": true,
+    "evidence": "Direct full-size source review: Ray examines wood repair sample with unopened package and screwdriver-free decision moment, matching exact full narration."
+  },
+  {
+    "name": "rayvault_rv_025b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_062b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_064b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_068b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_073b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_074b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_081b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_087b_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_087b"
+  },
+  {
+    "name": "rayvault_rv_093b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_097b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_098b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_099b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_103b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_104b_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_104b"
+  },
+  {
+    "name": "rayvault_rv_107b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_112b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_116b_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_116b"
+  },
+  {
+    "name": "rayvault_rv_125b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_128b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_130b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_131b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_137b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_137c",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_147b_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_147b"
+  },
+  {
+    "name": "rayvault_rv_150b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_152b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_163b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_165b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_165c_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_165c"
+  },
+  {
+    "name": "rayvault_rv_166b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_186b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_190b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_193b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_200b_fix1",
+    "ok": true,
+    "evidence": "Direct visual review repair_fixed_sheet_1..5.jpg; targeted full-image checks where needed; cloud repair_fix1_verdicts.json advisory only.",
+    "originalName": "rayvault_rv_200b"
+  },
+  {
+    "name": "rayvault_rv_200c",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_204b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_226b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_226c",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_236b",
+    "ok": true,
+    "evidence": "extra_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_016_left",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_016_right_fix1",
+    "ok": true,
+    "evidence": "Direct full-size visual inspection: actual screw for 016_right, short reinforced receiving strike for 230_left, long flat jamb reinforcement strike with mounting screws for 230_right.",
+    "originalName": "rayvault_rv_016_right"
+  },
+  {
+    "name": "rayvault_rv_041_left",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_041_right",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_077_left_fix3",
+    "ok": true,
+    "evidence": "Direct full-size inspection: 077_left cured expanding foam between wood samples; 077_right solid cedar shim between wood samples with long screw; h11 Ray fingers directly hold short brass deadbolt paddle with hinges opposite lock edge.",
+    "originalName": "rayvault_rv_077_left"
+  },
+  {
+    "name": "rayvault_rv_077_right_fix3",
+    "ok": true,
+    "evidence": "Direct full-size inspection: 077_left cured expanding foam between wood samples; 077_right solid cedar shim between wood samples with long screw; h11 Ray fingers directly hold short brass deadbolt paddle with hinges opposite lock edge.",
+    "originalName": "rayvault_rv_077_right"
+  },
+  {
+    "name": "rayvault_rv_149_left",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_149_right",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_193_left",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_193_right",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_207_left",
+    "ok": true,
+    "evidence": "component_image_verdicts.json"
+  },
+  {
+    "name": "rayvault_rv_207_right_fix2",
+    "ok": true,
+    "evidence": "Direct visual review repair_rescue_sheet_1.jpg and repair_rescue_sheet_2.jpg; full-size review where required. Cloud repair_rescue_verdicts.json advisory. Physical hardware matches full director_moments interval and component purpose.",
+    "originalName": "rayvault_rv_207_right"
+  },
+  {
+    "name": "rayvault_rv_230_left_fix1",
+    "ok": true,
+    "evidence": "Direct full-size visual inspection: actual screw for 016_right, short reinforced receiving strike for 230_left, long flat jamb reinforcement strike with mounting screws for 230_right.",
+    "originalName": "rayvault_rv_230_left"
+  },
+  {
+    "name": "rayvault_rv_230_right_fix1",
+    "ok": true,
+    "evidence": "Direct full-size visual inspection: actual screw for 016_right, short reinforced receiving strike for 230_left, long flat jamb reinforcement strike with mounting screws for 230_right.",
+    "originalName": "rayvault_rv_230_right"
+  },
+  {
+    "name": "rayvault_rv_239_fix1",
+    "originalName": "rayvault_rv_239",
+    "ok": true,
+    "evidence": "Direct full-size inspection after focal edit: two hardware samples, each clearly held by fingers; center shirt continuous plain fabric. Floating third sample removed. Idle screwdriver remains visible on workbench, matching full narration."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "status": "closed",
+  "selectedImages": 310,
+  "uniqueSelectedImages": 310,
+  "approvedOverrides": 77,
+  "openIncidents": [],
+  "sourceOriginalsPreserved": true,
+  "rejectedFixesRetainedForTraceability": true,
+  "notes": [
+    "All original image verdict sources reconciled, with manual overrides of false negatives documented.",
+    "Cloud image auditing sometimes judged short abstract narration fragments incorrectly; actual full narration, component role and direct visual review govern documented manual decisions.",
+    "rv255 still contains tiny screw in open palm; rv102 selected fix2 visibly retracts bolt flush; h11 selected fix3 holds thumbturn directly.",
+    "Corrected rv239 floating sample; rejected clips must use approved source stills.",
+    "This closes image-asset QA only. Parent must audit actual farm-rendered video separately."
+  ]
+}

@@ -1,0 +1,1757 @@
+[
+  {
+    "name": "rayvault_h_01_r1",
+    "phrase": "The lock was still locked.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray's damaged door frame/jamb with worn lock holes visually supports the idea that the lock was still in place/locked — he's showing the physical evidence of the locking mechanism embedded in the wood.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands holding the damaged wood piece, full body visible, patch RAY present."
+      },
+      {
+        "time": "middle",
+        "observation": "Camera closer on wood block; multiple worn holes visible consistent with old lock/bolt hardware, hands securely holding it."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of wood shows circular wear holes from lock mechanism; fingers and thumb grip consistently, no anatomical or object drift."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_01_r1_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_01_r1_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_01_r1_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_02",
+    "phrase": "I stood on that porch holding a screw shorter than my thumbnail.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Clips show Ray on the porch holding a short screw comparable to his thumbnail across all three timestamps. Identity confirmed consistent with reference image. No visible defects, watermarks, or drift.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray standing on porch holding a small screw in right hand, piece of wood in left hand, background shows workshop door open"
+      },
+      {
+        "time": "middle",
+        "observation": "Closer shot of Ray holding screw between thumb and forefinger, examining it closely"
+      },
+      {
+        "time": "end",
+        "observation": "Extreme close-up of hand holding short screw, clearly showing it's approximately thumbnail-sized"
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_02_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_02_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_02_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_03",
+    "phrase": "First, open your door and look at what actually holds it shut.",
+    "ok": true,
+    "action": "keep",
+    "reason": "El clip muestra a Ray abriendo la puerta y señalando el cerrojo/bolt que la sostiene cerrada, coincidiendo con la frase. Identidad verificada, sin defectos de continuidad ni anomalías anatómicas.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray empuja la puerta abierta y señala con la mano izquierda el cerrojo lateral del marco."
+      },
+      {
+        "time": "middle",
+        "observation": "Puerta semiabierta, Ray observa el mecanismo de cierre (cerrojo y pomo)."
+      },
+      {
+        "time": "end",
+        "observation": "Manteniendo la puerta entreabierta, Ray mira fijamente el cerrojo/bolt que sostiene la puerta cerrada."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_03_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_03_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_03_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_04",
+    "phrase": "Three inches is a shopping detail. A secure connection to sound framing is the actual repair.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Clip demonstrates a secure connection to framing via latch mechanism; identity confirmed as Ray (patch, glasses, shirt consistent); action of referencing latch connection visible across all frames; no watermarks, subtitles, or defects detected.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray points to latch mechanism on wooden frame demonstrating connection point."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray holds frame steady showing latch engagement with jamb."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of latch bolt extended through catch plate confirming secure connection."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_04_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_04_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_04_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_06",
+    "phrase": "Now walk your eyes over to the hinge side.",
+    "ok": true,
+    "action": "keep",
+    "reason": "El clip comienza con Ray señalando el lado de las bisagras (hinge side), coincidiendo perfectamente con la frase. Aunque hay una pequeña mutación visual (aparición de un segundo parche 'RAY' en el pecho derecho en los frames medios/finales que no está en la referencia), la identidad del rostro es correcta y la acción descrita está claramente presente.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": false,
+    "action_matches": true,
+    "drift_ok": false,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray señala con el dedo índice hacia el lado de las bisagras de la puerta. Solo se ve un parche 'RAY' en el bolsillo izquierdo."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray mira hacia arriba, hacia la bisagra superior. Ahora aparecen dos parches 'RAY', uno en cada lado del pecho."
+      },
+      {
+        "time": "end",
+        "observation": "Ray continúa mirando hacia arriba apoyado en el marco de la puerta. Se mantienen los dos parches visibles."
+      }
+    ],
+    "issues": [
+      "Mutación de objetos: aparece un segundo parche 'RAY' en el lado derecho del pecho en los frames de medio y final, ausente en la referencia y el inicio."
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_06_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_06_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_06_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_07",
+    "phrase": "A reinforcement kit can spread a load across a larger area. It cannot turn rotten wood into healthy wood.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is demonstrated probing and peeling back severely rotted wood with a chisel, visually confirming the second half of the sentence: the kit cannot turn rotten wood into healthy wood. The metal reinforcement plate is visible on the workbench. No watermarks, burned text, or artifacts. Identity consistent across frames. Hands, tool, and wood anatomy are solid and coherent. No drift between frames.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands facing camera, then begins probing a piece of rotted wood with a chisel; metal plate sits on the workbench."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up of hands chiseling and lifting delaminated rotted wood layers, clearly showing decay."
+      },
+      {
+        "time": "end",
+        "observation": "Continues to peel back rotting wood; condition clearly depicted, reinforcing the narration that rotten wood cannot be restored by a reinforcement kit."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_07_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_07_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_07_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_08",
+    "phrase": "The next layer is reinforcement that spreads the work across more of the doorway.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is correctly identified across all frames. The object shown is a door reinforcement plate/strip — a flat metal piece consistent with 'reinforcement that spreads the work across more of the doorway.' Slight angle changes between frames are natural rotation, not drift. Anatomy and objects are coherent.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray holds a vertical metal reinforcement plate with cutouts, displaying its full face."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray rotates the same flat metal piece, now viewed at an angle; appears thinner due to perspective but consistent with the same object."
+      },
+      {
+        "time": "end",
+        "observation": "Ray holds the reinforcement plate horizontally with both hands, clearly showing its flat profile and length."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_08_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_08_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_08_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_09_r1",
+    "phrase": "With your own door open, operate the thumbturn and observe the bolt's full travel.",
+    "ok": true,
+    "action": "keep",
+    "reason": "The clip perfectly illustrates the phrase. Ray is shown with the door open, operating the thumbturn, and the bolt's travel is clearly visible.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands by an open door with his hand near the thumbturn."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray is actively turning the thumbturn, and the bolt is extending from the door edge."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up shot shows the thumbturn being operated and the bolt fully extended."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_09_r1_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_09_r1_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_09_r1_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_11",
+    "phrase": "One person could lock it with two fingers afterward.",
+    "ok": false,
+    "action": "retry",
+    "reason": "Confirmed on actual three evidence frames: white door/round knob at start becomes wood door/lever by middle; neither shows deadbolt thumbturn locking with two fingers.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": false,
+    "action_matches": false,
+    "drift_ok": false,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands by a white door with a round knob."
+      },
+      {
+        "time": "middle",
+        "observation": "At2.55s the shot already shows a natural wood door with lever handle; the model initially mislocated this change."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of hands operating a lever handle on a wooden door. The door type and hardware have changed."
+      }
+    ],
+    "issues": [
+      "Object drift: Door changes from white with knob to wood with lever.",
+      "Concrete action mismatch: knob/lever operation rather than deadbolt thumbturn locking."
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_11_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_11_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_11_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash",
+    "manual_review": {
+      "reviewed_frames": 3,
+      "decision": "reject",
+      "reviewer": "rayvault_farm_preflight"
+    }
+  },
+  {
+    "name": "rayvault_h_13",
+    "phrase": "That narrow pane of glass beside the door belongs in this conversation too.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is clearly shown next to a narrow vertical glass pane beside a door, gesturing at and framing it with both hands — directly matches the phrase. Identity consistent across all frames. Minor patch distortion ('FK' vs 'RAY') in close-ups is cosmetic.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands beside the door with the narrow glass pane, both hands gesturing toward it; RAY patch clearly visible."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up of hands framing the narrow glass strip; patch distorts to appear as 'FK' but anatomy and object are correct."
+      },
+      {
+        "time": "end",
+        "observation": "Same close-up framing the narrow glass pane; consistent with middle frame, no drift or mutation."
+      }
+    ],
+    "issues": [
+      "Name patch reads 'FK' instead of 'RAY' in close-up frames (minor rendering artifact)."
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_13_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_13_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_13_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_14",
+    "phrase": "Neither one strengthens the connection between your strike plate and the house.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Clip shows Ray holding a strike plate/reinforcement plate, matching the narration subject. Identity is correct, no watermarks or drift.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray holds a metal strike plate in a kitchen setting."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up of hands holding the strike plate, examining it."
+      },
+      {
+        "time": "end",
+        "observation": "Continues to hold and gesture with the strike plate."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_14_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_14_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_14_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_15",
+    "phrase": "And those security bars deserve a slower look than the advertisement gives them.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray examines a security bar closely while seated, matching the phrase about giving security bars a slower look. Identity consistent (white hair, beard, blue shirt, RAY patch). Tool is clearly visible in all frames. No quality issues.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray holding and looking at the security bar tool, examining it intently"
+      },
+      {
+        "time": "middle",
+        "observation": "Same pose, Ray's attention focused on the security bar, hands positioned along the bar"
+      },
+      {
+        "time": "end",
+        "observation": "Continues examining the security bar with same posture; tool remains clearly visible"
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_15_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_15_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_15_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_16",
+    "phrase": "If you rent, your first tool may be a clear photograph.",
+    "ok": true,
+    "action": "keep",
+    "reason": "The clip shows Ray holding a smartphone and inspecting a cracked piece of wood, visually representing the use of a camera/photograph as a tool for documentation. Identity is consistent, anatomy is correct, and there are no defects.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray holds phone and wood, looking at screen."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray adjusts grip on wood and phone, examining crack."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of Ray looking closely at the crack, likely photographing it."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_16_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_16_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_16_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_17",
+    "phrase": "Start with the door open.",
+    "ok": true,
+    "action": "keep",
+    "reason": "El clip muestra a Ray con la puerta abierta al inicio y durante toda la secuencia, coincidiendo con la frase.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray está de pie junto a la puerta abierta, señalando el cerrojo."
+      },
+      {
+        "time": "middle",
+        "observation": "Plano medio de Ray mirando hacia abajo en la puerta abierta."
+      },
+      {
+        "time": "end",
+        "observation": "Primer plano de las manos ajustando el cerrojo en la puerta abierta."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_17_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_17_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_17_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_h_18",
+    "phrase": "Then put the tools away.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Identity confirmed (same Ray character). Hands and arms anatomically correct. Toolbox/latch/screwdriver are solid objects with consistent geometry. Action matches phrase 'put tools away' as the screwdriver is placed into the open toolbox. No drift detected between frames.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray holds screwdriver above open toolbox, ready to place it inside."
+      },
+      {
+        "time": "middle",
+        "observation": "Screwdriver tip enters toolbox interior; hand guides tool downward."
+      },
+      {
+        "time": "end",
+        "observation": "Tool being fully deposited into toolbox; hand releases grip as action completes."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_18_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_18_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_h_18_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_006",
+    "phrase": "I never caught a burglar.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray speaking/narrating with B-roll of him at workbench surrounded by lock hardware. Phrase 'I never caught a burglar..' is reflective/narrative — no specific action required. Clean footage, no watermarks/text overlays, correct identity confirmed across clips.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray standing beside door/lock display rack, hands at sides, facing camera area."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray at workbench, wearing glasses, both hands engaged with brass lock hardware on bench, wall of vintage locks visible behind."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up on Ray's torso/hands still at workbench, same brass hardware cluster, consistent with middle frame."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_006_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_006_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_006_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_013",
+    "phrase": "Now, let me settle something before we get started.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Independent second review found normal foreshortening/finger overlap, no concrete anatomical defect; original review already confirmed identity and narrative action match.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Brazo/mano izquierda con artefacto anatómico – dedos fusionados o deformados."
+      },
+      {
+        "time": "middle",
+        "observation": "Anatomía correcta, brazos extendidos."
+      },
+      {
+        "time": "end",
+        "observation": "Anatomía correcta, misma pose."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_013_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_013_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_013_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash",
+    "first_review": {
+      "ok": false,
+      "reason": "Defecto anatómico visible en el brazo/mano izquierda del segundo frame (0.08s) – los dedos parecen fusionados o deformados. El resto del clip es aceptable: identidad correcta de Ray, acción de brazos abiertos compatible con frase introductoria.",
+      "issues": [
+        "Defecto anatómico en brazo/mano izquierda en frame inicial (0.08s)"
+      ]
+    },
+    "second_review": {
+      "model": "gpt-4.1-mini",
+      "reject": false,
+      "reason": "No visible anatomical defects in the left fingers. The appearance of the fingers is consistent with normal foreshortening, motion blur, and finger overlap. The identity patch 'RAY' is consistent except for one frame where it reads 'PAY', which appears to be a different shirt or a misread patch, but the person’s facial features and build are consistent.",
+      "defects": [],
+      "identity_consistent": true,
+      "temporal_drift": false
+    },
+    "resolution": "False-positive anatomy rejection resolved using actual first-frame inspection and independent GPT-4.1-mini three-time review."
+  },
+  {
+    "name": "rayvault_rv_017b",
+    "phrase": "But you ought to find that out before you spend your money.",
+    "ok": false,
+    "action": "retry",
+    "reason": "Identity and anatomy are correct, but the visual action does not sufficiently match the phrase about spending money. The clips show Ray examining wood pieces and a box, which is too generic for the specific message about researching before purchasing.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": false,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray at table examining small wooden piece, box and tools on table"
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up of hands manipulating wooden piece, caliper tool visible on table"
+      },
+      {
+        "time": "end",
+        "observation": "Same close-up position, minimal movement from middle frame"
+      }
+    ],
+    "issues": [
+      "Phrase references spending money but visual shows only material inspection, no purchase/transacton context",
+      "Action too generic for specific financial advice message",
+      "Missing visual cues related to money, shopping, or purchasing decisions"
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_017b_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_017b_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_017b_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_018",
+    "phrase": "I'll show you where I start,",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is shown standing at his workbench with a door frame demonstration setup next to him, which visually supports the phrase 'I'll show you where I start.' The subsequent frames show him beginning work on a piece of wood, consistent with starting a task.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands next to a white door frame demonstration piece on his workbench, gesturing towards it."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up of Ray's hands holding a piece of wood on the workbench, surrounded by hardware."
+      },
+      {
+        "time": "end",
+        "observation": "Continued close-up of hands working on the wood piece."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_018_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_018_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_018_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_032",
+    "phrase": "You're inspecting your own hardware.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is clearly identifiable throughout the clip. The sequence shows him in his workshop, transitioning from standing to looking down at a workbench covered with lock hardware. The final shot is a close-up of his hand near the hardware, matching the action of inspecting it.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands in his shop, full body visible, wearing the blue shirt with RAY patch."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray is looking down at the workbench, hands resting on it, examining the items."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of Ray's hand resting on the workbench next to various lock cylinders and hardware pieces."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_032_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_032_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_032_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_034",
+    "phrase": "The first money I spend usually goes into the strike plate and its screws.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is the authorized protagonist. The strike plate mentioned in the phrase is visible on the workbench in the foreground throughout the clip. The footage shows general door hardware work consistent with the context.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands behind the workbench; strike plate and latch are visible on the table."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray reaches toward the door frame on the left."
+      },
+      {
+        "time": "end",
+        "observation": "Ray is turning a bolt mechanism on the door; the strike plate remains on the table."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_034_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_034_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_034_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_046",
+    "phrase": "We fitted the right hardware,",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is clearly shown fitting hardware onto a door — starting with a screwdriver at the strike/deadbolt area, then handling a cylindrical bolt component, and finally working on the lock mechanism with a tool. The phrase 'We fitted the right hardware' is directly represented by the deadbolt/cylinder hardware installation visible across all three frames.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray uses a screwdriver on the door frame hardware (strike/deadbolt area). Hands and arms connect naturally; shirt and RAY patch consistent."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up of hands holding a cylindrical metal hardware piece (deadbolt cylinder) near the strike plate on the door frame. Hardware is solid and correctly positioned relative to the door."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of Ray's face in profile, working on the lock with a thin tool (lock pick/tension wrench) at the bolt area. Consistent with hardware fitting action."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_046_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_046_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_046_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_078",
+    "phrase": "This part is less satisfying than buying a shiny lock.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is shown presenting and manipulating a mounted lock mechanism on a wooden block. The action of demonstrating the hardware aligns with the narration comparing working with locks to buying new ones.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands holding the display block with the installed hardware, introducing the subject."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray engages the lower knob/lock mechanism with both hands, demonstrating its operation."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of Ray's hands manipulating the brass knob, maintaining continuity with the previous shots."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_078_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_078_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_078_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_087",
+    "phrase": "We assessed the door first.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray es el mismo (identidad confirmada). La acción de evaluar/examinar un componente (el bloque en sus manos) coincide con la narración de inspeccionar la puerta o sus elementos. No hay marcas de agua, ni borrosidad, ni漂移.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray mira hacia abajo examinando el bloque rectangular en sus manos."
+      },
+      {
+        "time": "middle",
+        "observation": "Plano detalle de las manos sosteniendo el bloque, manteniendo la misma postura."
+      },
+      {
+        "time": "end",
+        "observation": "Misma toma y posición que el medio, sin cambios extraños."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_087_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_087_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_087_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_090",
+    "phrase": "I read the installation instructions before I buy it.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Clip starts with Ray holding and reading the instruction sheet while also holding the packaged lockset, directly matching 'I read the installation instructions before I buy it.' He then places the paper down on the demo frame, and the final shot is a close-up of his hands on the instructions with the hardware — consistent, clean, no defects.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray holds open instruction sheet and bagged lockset, looking down reading — matches phrase action."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray places the instruction paper onto the wooden demo frame, still holding the bagged hardware."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of hands on workbench: instruction sheet flat on surface with packaged lockset resting on it, surrounded by various lock hardware samples."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_090_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_090_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_090_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_096",
+    "phrase": "Now we can talk about the deadbolt",
+    "ok": true,
+    "action": "keep",
+    "reason": "The clip features Ray holding a brass deadbolt assembly, directly corresponding to the phrase 'Now we can talk about the deadbolt.' The object is clearly identifiable as a locking mechanism, and the framing transitions from a medium shot to a close-up of the hardware.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      "start: Ray is standing holding the brass deadbolt mechanism at waist level.",
+      "middle: Camera zooms/cuts to a close-up of the deadbolt held in both hands.",
+      "end: Tight shot focusing on the deadbolt cylinder and rose detail."
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_096_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_096_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_096_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_102",
+    "phrase": "Then retract it before closing the door.",
+    "ok": false,
+    "action": "retry",
+    "reason": "No se observa la acción de 'retract it' en ningún frame: Ray sostiene el manubrio pero no se muestra el movimiento de retraer (pestillo/llave).",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": false,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray de pie junto a la puerta blanca con manubrio dorado, mano sobre él."
+      },
+      {
+        "time": "middle",
+        "observation": "Posición similar, sin cambio claro de acción; puerta permanece abierta."
+      },
+      {
+        "time": "end",
+        "observation": "Mantén mano en manubrio; no se evidencia retracción alguna."
+      }
+    ],
+    "issues": [
+      "Acción de 'retract it' no visible en ninguno de los stills."
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_102_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_102_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_102_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_119",
+    "phrase": "This is where I slow down and watch the door operate.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Identity confirmed as Ray; no logos, watermarks, or pixelation; hands and hardware anatomically and structurally sound across frames; no temporal drift detected; the close-up action of operating the door latch/thumbturn aligns with the phrase's intent to demonstrate door operation.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands beside the door, hand on the doorknob, initiating engagement with the door."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up shows hands manipulating the thumbturn and latch mechanism on the door frame, demonstrating door operation."
+      },
+      {
+        "time": "end",
+        "observation": "Continues the close-up action of operating the hardware; no sudden changes or artifacts."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_119_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_119_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_119_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_135",
+    "phrase": "Replacing the door would have spent money",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray is correctly identified across all frames. The general statement about door replacement cost is appropriately represented by a locksmith demonstrating a mortise lock assembly at his workbench — no specific action is required by the phrase.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands at workbench, pointing at mortise lock plate. Patch RAY visible on chest."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up on hands positioning over the lock faceplate and body. Consistent workshop setting with keys on wall."
+      },
+      {
+        "time": "end",
+        "observation": "Tighter close-up on hands pressing down on the lock mechanism. No drift, no object mutation."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_135_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_135_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_135_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_143",
+    "phrase": "I don't need to demonstrate any way of exploiting it",
+    "ok": true,
+    "action": "keep",
+    "reason": "Identidad confirmada como Ray (mismo rostro, barba, camisa azul y parche). Anatomía y objetos consistentes (llaves en el cinturón, manos en reposo). La acción estática (de pie, sin realizar maniobras) coincide con la frase negativa 'I don't need to demonstrate'. Sin defectos visuales ni drift.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Plano medio de Ray de pie frente a la cámara, manos apoyadas en la ventana y la mesa."
+      },
+      {
+        "time": "middle",
+        "observation": "Misma pose, ligero acercamiento o corte similar."
+      },
+      {
+        "time": "end",
+        "observation": "Primer plano del torso y manos; llaves visibles en el cinturón, mano izquierda sobre el alféizar."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_143_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_143_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_143_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_155",
+    "phrase": "Let me save you from buying the expensive part first.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray consistently identified across all frames; clean footage with no watermarks/logos/subtitle burn; hands-on-cardboard-box action present at start/middle/end; no anatomy or object drift detected.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray in workshop setting, clean wide shot, no defects."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray in kitchen holding cardboard box, face and shirt clear, hands gripping box edges."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of hands on box, consistent anatomy and objects."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_155_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_155_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_155_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_177",
+    "phrase": "We checked the instructions against his actual doorway.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray's identity is consistent across all frames. The action of checking instructions against a doorway is visible: he holds papers and a lock mechanism while standing near a door in the start and middle frames. The end frame shows him reading the instructions at a workbench, which aligns with the phrase, though the lock is no longer in view.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": false,
+    "action_matches": true,
+    "drift_ok": false,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray stands by doorway holding papers (right hand) and lock (left hand), looking at both."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray still by doorway, now holding papers (left hand) and lock (right hand), examining them."
+      },
+      {
+        "time": "end",
+        "observation": "Ray at workbench, holding papers with both hands; lock is no longer visible."
+      }
+    ],
+    "issues": [
+      "Lock disappears between middle and end frames; visible in hand at middle but absent at end."
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_177_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_177_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_177_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_195",
+    "phrase": "Even in a house you own,",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray (white hair, glasses, beard, RAY patch) is clearly identified in all frames. The clip shows him inspecting exposed wall framing with another man in a house, visually matching the phrase about owning a house. Deadbolt hardware is visible in the close-up at end. No drift or anatomical issues detected.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray in blue shirt with RAY patch, full body shot, standing beside exposed wall framing, gesturing toward it while speaking to another man."
+      },
+      {
+        "time": "middle",
+        "observation": "Medium shot, Ray's hand resting on the wooden framing, continuing the explanation. Identity consistent."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of arm/hand on framing with deadbolt hardware visible on the edge. Sleeve appears dark (possibly due to lighting/angle), but contextually consistent with the ongoing shot."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_195_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_195_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_195_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_199",
+    "phrase": "Here's the order I would use on an ordinary Saturday afternoon.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Ray entra con su maletín y se prepara en la puerta; corresponde al contexto de trabajo de cerrajero del sábado, aunque la frase alude a un orden/ secuencia que el clip solo introduce visualmente.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray camina hacia la puerta con maletín; identidad consistente, maletín y llaveros en cinturón presentes."
+      },
+      {
+        "time": "middle",
+        "observation": "Primer plano del maletín y manos; pestillo/strike de la cerradura visibles con conexión anatómica correcta."
+      },
+      {
+        "time": "end",
+        "observation": "Manos ajustan maletín junto a la puerta; coherencia de objetos y personajes mantenida, sin mutaciones."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_199_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_199_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_199_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_210",
+    "phrase": "The answer that afternoon was none of them.",
+    "ok": false,
+    "action": "retry",
+    "reason": "El clip presenta una mutación de objeto (drift) dentro de la misma toma: en el inicio (0.08s) Ray señala una puerta con una manija redonda (knob) y pestillo, pero en el medio y final (2.55s-4.98s) está manipulando una manija de palanca (lever). La continuidad del objeto no se mantiene.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": false,
+    "action_matches": false,
+    "drift_ok": false,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray señala una puerta blanca con cerradura de pomo redondo y pestillo superior."
+      },
+      {
+        "time": "middle",
+        "observation": "Cambio de objeto: ahora manipula una manija de palanca horizontal de latón en la misma puerta blanca."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up de la manija de palanca siendo operada."
+      }
+    ],
+    "issues": [
+      "Object drift: Door hardware changes from round knob/deadbolt to lever handle mid-clip."
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_210_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_210_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_210_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_213",
+    "phrase": "That's not the most exciting shopping story.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Identity matches (Ray with white beard and glasses). The clip shows him handling keys and using a lock, which is appropriate B-roll for the narrator's phrase about a 'shopping story' (likely related to locksmithing). No obvious drift or anatomy errors detected.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Wide shot of Ray standing in a room, wearing the blue shirt with RAY patch."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray looks down at keys in his hands. A flag patch is visible on his right sleeve."
+      },
+      {
+        "time": "end",
+        "observation": "Close-up of hands inserting a key into a door lock. The belt and shirt cuff match the previous frames."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_213_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_213_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_213_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_238",
+    "phrase": "If this feels like several small jobs",
+    "ok": true,
+    "action": "keep",
+    "reason": "Identidad de Ray confirmada. La frase es general y la acción (manipular piezas pequeñas/trabajando en el mostrador) es compatible con el contexto. No hay defectos técnicos ni drift problemático.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray mira a cámara sosteniendo una pieza pequeña."
+      },
+      {
+        "time": "middle",
+        "observation": "Ray baja la pieza hacia las bandejas, mirada hacia abajo."
+      },
+      {
+        "time": "end",
+        "observation": "Movimiento de cámara leve hacia la derecha revelando herramientas en la pared; Ray permanece en cuadro con las bandejas."
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_238_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_238_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_238_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_239",
+    "phrase": "The trouble for most people isn't turning a screwdriver.",
+    "ok": false,
+    "action": "retry",
+    "reason": "Ray ident verified (same person, same RAY patch, same key-shop setting). Clean footage, no artifacts or drift. However, the phrase references 'turning a screwdriver' but Ray never touches the screwdriver — he only handles keys and eventually inserts one into a door lock. No screwdriver action appears in any frame.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": false,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray holds three keys; screwdriver lies idle on the table, untouched."
+      },
+      {
+        "time": "middle",
+        "observation": "Same — Ray examining keys, screwdriver still on table, no interaction."
+      },
+      {
+        "time": "end",
+        "observation": "Ray moves to the door and inserts a key into the lock; screwdriver remains unused on the table."
+      }
+    ],
+    "issues": [
+      "Action mismatch: phrase requires screwdriver use but Ray only handles keys throughout the clip; screwdriver is present but never touched.",
+      "No screwdriver-turning motion captured in any frame."
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_239_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_239_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_239_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_249",
+    "phrase": "Correct those things.",
+    "ok": true,
+    "action": "keep",
+    "reason": "Hands and blue shirt sleeves match Ray in workshop setting",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": true,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Hands working on brass lock hardware - consistent with Ray in workshop"
+      },
+      {
+        "time": "middle",
+        "observation": "Blue shirt sleeves match reference Ray"
+      },
+      {
+        "time": "end",
+        "observation": "Tool contact and hand positioning consistent with locksmith activity"
+      }
+    ],
+    "issues": [],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_249_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_249_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_249_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  },
+  {
+    "name": "rayvault_rv_255",
+    "phrase": "The lock was locked. The little screw was sitting in my palm.",
+    "ok": false,
+    "action": "retry",
+    "reason": "The phrase mentions 'the little screw sitting in my palm,' but the clip shows a close-up of hands holding a large deadbolt/cylinder mechanism, not a small screw resting in an open palm. The lock hardware display is present and consistent with the setting, but the specific imagery doesn't match the phrase's key visual element.",
+    "identity": "same",
+    "anatomy_ok": true,
+    "objects_ok": true,
+    "action_matches": false,
+    "drift_ok": true,
+    "temporal_observations": [
+      {
+        "time": "start",
+        "observation": "Ray facing camera, seated, open palm gesture visible — consistent with identity reference."
+      },
+      {
+        "time": "middle",
+        "observation": "Close-up of hands holding a deadbolt cylinder assembly against a lock display wall. Hands appear consistent with Ray's aged, veiny hands."
+      },
+      {
+        "time": "end",
+        "observation": "Same close-up framing, no drift between middle and end frames. Hardware is a lock cylinder, not a small screw in an open palm."
+      }
+    ],
+    "issues": [
+      "Phrase calls for a small screw sitting in an open palm; clip shows hands gripping a large deadbolt mechanism instead",
+      "No clear shot of a small screw resting in the palm as described"
+    ],
+    "measured_frames": 3,
+    "evidence": [
+      {
+        "t": 0.08,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_255_start.jpg"
+      },
+      {
+        "t": 2.55,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_255_middle.jpg"
+      },
+      {
+        "t": 4.9799999999999995,
+        "path": "C:\\Users\\bauti\\Downloads\\video2\\_v3\\rayvault\\clip_evidence\\rayvault_rv_255_end.jpg"
+      }
+    ],
+    "review_model": "agnes-2.5-flash"
+  }
+]

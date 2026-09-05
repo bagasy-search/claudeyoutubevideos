@@ -1,0 +1,164 @@
+{
+  "totalMs": 1746789.167,
+  "totalFrames": 52404,
+  "beats": 297,
+  "overlays": 5,
+  "components": [
+    "BigStat",
+    "MythTruth",
+    "SplitVs",
+    "ProcessChips",
+    "RouteFlow",
+    "RayChecklist",
+    "CheckCard",
+    "PullQuote",
+    "StatBug",
+    "RayCta"
+  ],
+  "uniqueImages": 310,
+  "assetCount": 312,
+  "clips": [
+    {
+      "id": "rv_003",
+      "src": "broll/rayvault_h_02.mp4",
+      "rate": 0.9774193548387096
+    },
+    {
+      "id": "rv_005",
+      "src": "broll/rayvault_h_01_r1.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_006",
+      "src": "broll/rayvault_rv_006.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_013",
+      "src": "broll/rayvault_rv_013.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_019",
+      "src": "broll/rayvault_h_03.mp4",
+      "rate": 0.9774193548387096
+    },
+    {
+      "id": "rv_032",
+      "src": "broll/rayvault_rv_032.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_034",
+      "src": "broll/rayvault_rv_034.mp4",
+      "rate": 0.9774193548387096
+    },
+    {
+      "id": "rv_051",
+      "src": "broll/rayvault_h_06.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_065",
+      "src": "broll/rayvault_h_07.mp4",
+      "rate": 0.9017857142857143
+    },
+    {
+      "id": "rv_079",
+      "src": "broll/rayvault_h_08.mp4",
+      "rate": 0.8416666666666667
+    },
+    {
+      "id": "rv_087",
+      "src": "broll/rayvault_rv_087.mp4",
+      "rate": 0.7575
+    },
+    {
+      "id": "rv_090",
+      "src": "broll/rayvault_rv_090.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_096",
+      "src": "broll/rayvault_rv_096.mp4",
+      "rate": 0.9126506024096386
+    },
+    {
+      "id": "rv_100",
+      "src": "broll/rayvault_h_09_r1.mp4",
+      "rate": 0.7651515151515151
+    },
+    {
+      "id": "rv_119",
+      "src": "broll/rayvault_rv_119.mp4",
+      "rate": 0.7890624999999999
+    },
+    {
+      "id": "rv_135",
+      "src": "broll/rayvault_rv_135.mp4",
+      "rate": 0.8058510638297872
+    },
+    {
+      "id": "rv_140",
+      "src": "broll/rayvault_h_13.mp4",
+      "rate": 0.946875
+    },
+    {
+      "id": "rv_143",
+      "src": "broll/rayvault_rv_143.mp4",
+      "rate": 0.8015873015873016
+    },
+    {
+      "id": "rv_155",
+      "src": "broll/rayvault_rv_155.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_158",
+      "src": "broll/rayvault_h_14.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_170",
+      "src": "broll/rayvault_h_15.mp4",
+      "rate": 0.8706896551724138
+    },
+    {
+      "id": "rv_185",
+      "src": "broll/rayvault_h_16.mp4",
+      "rate": 0.9837662337662336
+    },
+    {
+      "id": "rv_195",
+      "src": "broll/rayvault_rv_195.mp4",
+      "rate": 0.7931937172774869
+    },
+    {
+      "id": "rv_199",
+      "src": "broll/rayvault_rv_199.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_200",
+      "src": "broll/rayvault_h_17.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_213",
+      "src": "broll/rayvault_rv_213.mp4",
+      "rate": 0.9774193548387096
+    },
+    {
+      "id": "rv_249",
+      "src": "broll/rayvault_rv_249.mp4",
+      "rate": 1
+    },
+    {
+      "id": "rv_251",
+      "src": "broll/rayvault_h_18.mp4",
+      "rate": 1
+    }
+  ],
+  "avatarSeconds": 3.1666666666666665,
+  "maxShot": 10.3
+}

@@ -1,3 +1,4 @@
+import {rayvaultSourceScope} from './rayvault_source_scope.mjs';
 // farm.mjs — ORQUESTADOR del render gratis en GitHub Actions.
 // Hace todo el ciclo desde tu máquina (o desde donde corra Claude), sin que toques nada:
 //   1) empaqueta los assets del video en un tarball
@@ -53,7 +54,7 @@ const reuseAssets = process.env.REUSE_ASSETS === "1"; // full rerender with an a
 if (!process.env.FARM_FIXED_CHUNKS && !only) {
   try {
     const runs = JSON.parse(execSync(`gh run list --workflow=render.yml -L 40 --json status,headBranch`, { encoding: "utf8" }))
-      .filter((r) => r.status !== "completed" && r.headBranch && r.headBranch !== `molino-${slug}`);
+      .filter((r) => r.status !== "completed" && r.headBranch && r.headBranch !== (process.env.FARM_REF || `molino-${slug}`));
     const otros = new Set(runs.map((r) => r.headBranch)).size;
     if (otros > 0) {
       const reparto = Math.max(12, Math.round(60 / (otros + 1)));
@@ -126,14 +127,15 @@ if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la nar
 // rutas relativas a public/ (el workflow extrae con -C public)
 let items = [wav.replace(/^public[\\/]/, "")];
 if (hasAvatar) items.unshift(avatar.replace(/^public[\\/]/, ""));
+const rayScope = slug === 'rayvault' ? rayvaultSourceScope(process.env.ENTRY) : null;
 // SFX: `public/` está en .gitignore, así que un worktree nuevo nace SIN public/sfx. Este `if` se
 // escribió como defensa, pero la rama defensiva ES el caso roto: el tar salía sin sfx, en silencio,
 // y cada chunk que usaba un whoosh moría con "404 downloading /public/sfx/…". Costó 13 de 20 chunks
 // en el render del GUANTE de ROMERO. Si el build los pide y no están, se frena ACÁ —en 1 segundo y
 // gratis— en vez de descubrirlo 20 runners y 8 minutos más tarde.
-if (fs.existsSync("public/sfx")) {
+if (fs.existsSync("public/sfx") && (!rayScope || rayScope.source.includes("sfx/"))) {
   items.push("sfx"); // camas ambientales + efectos (siempre)
-} else {
+} else if (!rayScope || rayScope.source.includes("sfx/")) {
   // Acá NO se intenta adivinar si ESTE build usa sfx. El build no los nombra: los pide un componente
   // del kit (scenes/RawShot, AvatarKeyword, Endcard…) varios imports más abajo, así que mirar el
   // Main_ da 0 coincidencias y deja pasar el tarball roto — que es justo lo que pasó. Rastrear la
@@ -190,7 +192,7 @@ if (pref && pref.startsWith("@")) {
   // imports más abajo (scenes/RawShot, components/Sfx, Endcard…), así que el Main_ da 0 referencias
   // y el chequeo pasaría de largo justo el error que más caro salió. Se cuentan en src/ y son dos:
   // sfx (292 referencias) y med (21). Las dos rompieron renders. Se exigen enteras, siempre.
-  const COMPARTIDAS = (process.env.ASSETS_COMPARTIDOS || "sfx,med").split(",").map((s) => s.trim()).filter(Boolean);
+  const COMPARTIDAS = rayScope ? ["sfx","med"].filter(d=>rayScope.source.includes(d+"/")) : (process.env.ASSETS_COMPARTIDOS || "sfx,med").split(",").map((s) => s.trim()).filter(Boolean);
   const usa = (dir) => {
     try {
       return execSync(`git grep -lE "/?(public/)?${dir}/[^\\"'\`]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
@@ -514,7 +516,7 @@ const entry = process.env.ENTRY || "";
 if (!process.env.FARM_ALLOW_DUP) {
   try {
     const vivas = JSON.parse(out(`gh run list --workflow=render.yml -L 20 --json databaseId,status,headBranch`))
-      .filter((r) => r.status !== "completed" && r.headBranch === `molino-${slug}`);
+      .filter((r) => r.status !== "completed" && r.headBranch === (process.env.FARM_REF || `molino-${slug}`));
     if (vivas.length) {
       console.error(`✗ YA HAY ${vivas.length} RENDER(S) DE ESTE VIDEO CORRIENDO: ${vivas.map((r) => r.databaseId).join(", ")}`);
       console.error(`  Lanzar otro no acelera nada: duplica el trabajo, se reparten los runners y los chunks de una`);
