@@ -83,14 +83,14 @@ export const PhotoBed: React.FC<{ src?: string; dim?: number }> = ({ src, dim = 
 };
 
 // ── CLIP a sangre: el plano real (Ray demostrando). OffthreadVideo SIEMPRE ────────────────────
-export const Clip: React.FC<{ src: string }> = ({ src }) => {
+export const Clip: React.FC<{ src: string; rate?: number }> = ({ src, rate = 1 }) => {
   const frame = useCurrentFrame();
   const a = enter(frame, 6);
   const z = interpolate(frame, [0, 180], [1.012, 1.03], { extrapolateLeft: "clamp", extrapolateRight: "extend", easing: Easing.linear });
   const x = interpolate(frame, [0, 180], [-0.32, 0.32], { extrapolateLeft: "clamp", extrapolateRight: "extend", easing: Easing.linear });
   return (
     <AbsoluteFill style={{ backgroundColor: V.ink0, overflow: "hidden" }}>
-      <OffthreadVideo src={staticFile(src)} muted style={{ width: "100%", height: "100%", objectFit: "cover", opacity: a, transform: `scale(${z.toFixed(4)}) translateX(${x.toFixed(3)}%)` }} />
+      <OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover", opacity: a, transform: `scale(${z.toFixed(4)}) translateX(${x.toFixed(3)}%)` }} />
     </AbsoluteFill>
   );
 };
