@@ -1,0 +1,1 @@
+{"extends": "./tsconfig.json", "compilerOptions": {"noUnusedLocals": false}, "include": ["src/index_rayfixes8.tsx"], "exclude": ["node_modules"]}

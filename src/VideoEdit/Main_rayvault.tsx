@@ -11,8 +11,103 @@ import {CheckCard} from '../rksafe/CheckCard';
 import {PullQuote} from '../rksafe/PullQuote';
 import {RayCta} from '../rksafe/RayCta';
 const RayvaultAvatar:React.FC<{start:number}>=({start})=>{const f=useCurrentFrame();return <OffthreadVideo muted src={staticFile('rayvault_avatar.mp4')} startFrom={start} style={{width:'100%',height:'100%',objectFit:'cover',transform:`scale(${(1.006+f*0.000035).toFixed(5)})`}} />;};
+// Eight source-audited mechanical corrections. Each is an original diagram;
+// no photo/clip is reused and every existing narration boundary is preserved.
+const RayvaultMechanicalRepair:React.FC<{kind:string}>=({kind})=>{
+  const f=useCurrentFrame();
+  const ease=(a:number,b:number)=>{const x=Math.max(0,Math.min(1,(f-a)/(b-a)));return x*x*(3-2*x);};
+  const brass='#CDA451',ink='#172B2A',wood='#C89D6A',steel='#A8B7B8',red='#B14538';
+  const titles:Record<string,string>={strike:'A small plate. A small attachment area.',jobs:'Related jobs. Different connections.',travel:'Full travel — with the door closed.',rubbing:'Correct the fit. Don’t rely on wear.',keypad:'Convenience at the door.',instructions:'Clear installation requirements.',brace:'The floor contact matters.',framing:'Connect the strike to sound framing.'};
+  const label=(x:number,y:number,t:string,color=ink,size=31)=><text x={x} y={y} fill={color} fontSize={size} fontWeight={650} fontFamily="Arial, sans-serif">{t}</text>;
+  const screwHead=(x:number,y:number)=><g><circle cx={x} cy={y} r={18} fill="#748687" stroke="#DDE5E3" strokeWidth={3}/><path d={`M${x-9} ${y}h18 M${x} ${y-9}v18`} stroke={ink} strokeWidth={3}/></g>;
+  const plate=(x:number,y:number,w=170,h=360)=><g><rect x={x} y={y} width={w} height={h} rx={12} fill={steel} stroke="#506969" strokeWidth={4}/><rect x={x+w*.26} y={y+h*.33} width={w*.48} height={h*.34} rx={4} fill="#314442"/>{screwHead(x+w/2,y+h*.13)}{screwHead(x+w/2,y+h*.87)}</g>;
+  const woodGrain=(x:number,y:number,w:number,h:number)=><g>{Array.from({length:9},(_,i)=><path key={i} d={`M${x+12} ${y+18+i*(h-36)/8} Q${x+w*.45} ${y+26+i*(h-36)/8} ${x+w-12} ${y+18+i*(h-36)/8}`} fill="none" stroke="#9E774D" opacity={.22} strokeWidth={3}/>)}</g>;
+  const fastener=(x:number,y:number,length:number)=><g><path d={`M${x} ${y}h${length-20}l20 0 -20 9 H${x}Z`} fill="#64797B"/>{Array.from({length:Math.floor((length-25)/16)},(_,i)=><path key={i} d={`M${x+10+i*16} ${y-5}l-6 18`} stroke="#3C5154" strokeWidth={3}/>)}<rect x={x-5} y={y-12} width={9} height={32} rx={3} fill="#A8B7B8"/></g>;
+  const travel=kind==='travel';const boltY=travel?478:442+36*ease(50,105);const extension=travel?80+230*ease(25,100):310;
+  return <AbsoluteFill style={{background:'linear-gradient(130deg,#F8F4E9,#E7E4D7)',color:ink}}>
+    <svg viewBox="0 0 1920 1080" style={{width:'100%',height:'100%'}}>
+      <defs><pattern id={`grain-${kind}`} width="60" height="60" patternUnits="userSpaceOnUse"><circle cx="12" cy="17" r="1" fill="#53615B" opacity=".09"/></pattern></defs>
+      <rect width="1920" height="1080" fill={`url(#grain-${kind})`}/>
+      <path d="M120 170H1800" stroke={brass} strokeWidth={3}/>
+      {label(120,125,titles[kind],ink,49)}
+      <g transform={`translate(${(1-ease(0,18))*12} 0)`}>
+      {kind==='strike'&&<g>
+        <rect x={600} y={245} width={510} height={630} rx={8} fill={wood}/>{woodGrain(600,245,510,630)}
+        <rect x={752} y={356} width={200} height={407} rx={16} fill={brass} opacity={.15+.1*ease(15,55)}/>{plate(768,380)}
+        <path d="M840 426H1210 M840 693H1210" stroke={brass} strokeWidth={3}/>
+        {label(1230,448,'Two fixing points')}{label(1230,708,'A limited area')}
+        {label(610,953,'Small strike plate',ink,38)}
+      </g>}
+      {kind==='jobs'&&<g>
+        <rect x={270} y={285} width={1380} height={615} rx={8} fill="#DED6C4"/>
+        <rect x={405} y={337} width={1130} height={515} fill="#FAF8F0" stroke={wood} strokeWidth={45}/>
+        <rect x={590} y={364} width={760} height={465} fill="#E8EBDD" stroke="#81948E" strokeWidth={4}/>
+        <rect x={535} y={460} width={35} height={210} rx={4} fill={brass}/>
+        <rect x={590} y={475} width={35} height={184} rx={4} fill={steel}/>
+        {[435,650].map(y=><rect key={y} x={1340} y={y} width={65} height={75} rx={4} fill={steel} stroke={ink} strokeWidth={3}/>)}
+        <path d="M535 540H205V970 M612 662V970 M1385 686V970" fill="none" stroke={ink} strokeWidth={3}/>
+        {label(145,1020,'Jamb reinforcement',ink,30)}{label(600,1020,'Door-edge reinforcement',ink,30)}{label(1320,1020,'Hinge attachment',ink,30)}
+      </g>}
+      {(kind==='travel'||kind==='rubbing')&&<g>
+        {label(305,300,'DOOR',ink,28)}{label(1015,300,'JAMB + RECEIVING POCKET',ink,28)}
+        <rect x={300} y={355} width={600} height={355} rx={4} fill={wood}/>{woodGrain(300,355,600,355)}
+        <rect x={1000} y={355} width={530} height={355} rx={4} fill="#CEAD80"/>{woodGrain(1000,355,530,355)}
+        <rect x={985} y={400} width={30} height={220} fill={steel}/>
+        <rect x={985} y={459} width={290} height={110} fill="#324841"/>
+        <rect x={762} y={boltY} width={extension} height={74} rx={5} fill={steel} stroke="#627777" strokeWidth={4}/>
+        <rect x={810} y={415} width={28} height={188} fill="#829597"/>
+        {kind==='rubbing'&&<circle cx={991} cy={457} r={38} fill="none" stroke={red} opacity={1-ease(55,106)} strokeWidth={6}/>}
+        <path d="M810 798H1170" stroke={travel?brass:ink} strokeWidth={5}/><path d="M1150 784L1170 798 1150 812" fill="none" stroke={travel?brass:ink} strokeWidth={5}/>
+        {label(330,895,travel?'The bolt reaches its full locked position.':f<90?'Rubbing is a fit problem.':'Correct the alignment for smooth travel.',ink,39)}
+        {label(330,947,'Section diagram', '#5B6D63',24)}
+      </g>}
+      {kind==='keypad'&&<g>
+        <rect x={440} y={228} width={970} height={810} fill={wood}/>{woodGrain(440,228,970,810)}
+        <rect x={1245} y={228} width={95} height={810} fill="#C39865"/>
+        <rect x={800} y={304} width={278} height={438} rx={34} fill={ink} stroke="#718680" strokeWidth={7}/>
+        <rect x={827} y={333} width={222} height={57} rx={8} fill="#425D51"/>
+        {Array.from({length:9},(_,i)=>{const x=851+(i%3)*88,y=435+Math.floor(i/3)*90;const active=i===4&&f>30&&f<80;return <g key={i}><circle cx={x} cy={y} r={31} fill={active?brass:'#374E48'}/><text x={x} y={y+11} textAnchor="middle" fontFamily="Arial" fontSize={30} fill={active?ink:'#EDF1E9'}>{i+1}</text></g>;})}
+        <circle cx={939} cy={850} r={59} fill={steel} stroke="#60787A" strokeWidth={6}/>
+        <path d="M1058 527H1500" stroke={brass} strokeWidth={4}/>{label(1460,590,'Keypad entry',ink,34)}
+      </g>}
+      {kind==='instructions'&&<g>
+        <rect x={265} y={256} width={650} height={730} rx={6} fill="#FFFEF8" stroke="#C7CBBF" strokeWidth={3}/>
+        {label(328,350,'Before choosing hardware',ink,36)}
+        {['Fasteners','Fit','Installation'].map((t,i)=><g key={t} opacity={.45+.55*ease(8+i*18,26+i*18)}><rect x={330} y={414+i*148} width={42} height={42} rx={5} fill="none" stroke={brass} strokeWidth={4}/>{label(406,448+i*148,t,ink,39)}<path d={`M330 ${490+i*148}H836`} stroke="#CED2C6" strokeWidth={2}/></g>)}
+        <rect x={1120} y={332} width={365} height={535} fill={wood}/>{woodGrain(1120,332,365,535)}{plate(1215,400,170,360)}
+        <path d="M985 590H1120" stroke={brass} strokeWidth={5} strokeDasharray="10 9"/>
+      </g>}
+      {kind==='brace'&&<g>
+        <path d="M250 925H1710" stroke={ink} strokeWidth={8}/>
+        <rect x={455} y={266} width={85} height={655} fill={wood} stroke="#967041" strokeWidth={4}/>
+        <path d="M540 472H594" stroke={steel} strokeWidth={24}/><circle cx={595} cy={472} r={31} fill={steel} stroke={ink} strokeWidth={4}/>
+        <g transform={`translate(${ease(45,100)*22} 0)`}>
+          <path d="M563 451Q590 521 624 453" fill="none" stroke={ink} strokeWidth={15}/>
+          <path d="M592 492L1125 886" stroke="#557174" strokeWidth={37}/><path d="M601 498L1132 887" stroke="#BDCACA" strokeWidth={18}/>
+          <ellipse cx={1130} cy={897} rx={91} ry={22} fill={ink}/>
+          <path d="M943 921Q1080 913 1285 921L1340 943H920Z" fill="#B69D7B" stroke="#8C795D" strokeWidth={3}/>
+        </g>
+        <path d="M1350 775L1230 877" stroke={brass} strokeWidth={4}/>{label(1355,754,'Rubber foot',ink,35)}
+        <path d="M992 992H1265" stroke={red} strokeWidth={5}/><path d="M1008 980L992 992 1008 1004 M1249 980L1265 992 1249 1004" fill="none" stroke={red} strokeWidth={4}/>
+        {label(345,1036,'A loose rug can move beneath the foot.',ink,35)}
+      </g>}
+      {kind==='framing'&&<g>
+        <rect x={355} y={280} width={280} height={610} fill="#E6D6B6"/>{woodGrain(355,280,280,610)}
+        <rect x={635} y={280} width={145} height={610} fill="#E6E9DA"/>
+        <rect x={780} y={280} width={615} height={610} fill={wood}/>{woodGrain(780,280,615,610)}
+        <rect x={635} y={392} width={145} height={72} fill="#BF955A"/><rect x={635} y={723} width={145} height={72} fill="#BF955A"/>
+        <rect x={337} y={345} width={35} height={496} rx={3} fill={steel}/>
+        <rect x={337} y={526} width={156} height={134} fill="#384F46"/>
+        {fastener(356,427,650)}{fastener(356,758,650)}
+        {label(355,962,'Jamb',ink,32)}{label(625,962,'Solid shim',ink,32)}{label(1020,962,'Sound framing',ink,32)}
+        {label(1060,382,'Compatible fasteners',ink,32)}
+      </g>}
+      </g>
+    </svg>
+  </AbsoluteFill>;
+};
 export const TOTAL_FRAMES_RAYVAULT=52404;
-export const MainRayvault:React.FC=()=> <AbsoluteFill style={{backgroundColor:'#0A0A0C'}}>
+export const MainRayvault:React.FC<{audioEnabled?:boolean}>=({audioEnabled=true})=> <AbsoluteFill style={{backgroundColor:'#0A0A0C'}}>
 <Sequence key="rv_001" from={0} durationInFrames={95}><AbsoluteFill><RayvaultAvatar start={0} /></AbsoluteFill></Sequence>
 <Sequence key="rv_002" from={95} durationInFrames={57}><AbsoluteFill><Foto src="img/rayvault_m_01.jpg" seed={95} /></AbsoluteFill></Sequence>
 <Sequence key="rv_003" from={152} durationInFrames={155}><AbsoluteFill><OffthreadVideo muted src={staticFile("broll/rayvault_h_02.mp4")} playbackRate={0.977419} style={{width:'100%',height:'100%',objectFit:'cover'}} /></AbsoluteFill></Sequence>
@@ -100,12 +195,12 @@ export const MainRayvault:React.FC=()=> <AbsoluteFill style={{backgroundColor:'#
 <Sequence key="rv_077" from={15399} durationInFrames={253}><AbsoluteFill><SplitVs durationInFrames={253} {...({"leftLabel":"Foam","leftValue":"Sealing","rightLabel":"Solid shim","rightValue":"Support","verdict":"Different jobs","bed":"img/rayvault_rv_077.jpg","leftImage":"img/rayvault_rv_077_left_fix3.jpg","rightImage":"img/rayvault_rv_077_right_fix3.jpg"} as any)} /></AbsoluteFill></Sequence>
 <Sequence key="rv_078" from={15652} durationInFrames={239}><AbsoluteFill><Foto src="img/rayvault_rv_078.jpg" seed={15652} /></AbsoluteFill></Sequence>
 <Sequence key="rv_079" from={15891} durationInFrames={180}><AbsoluteFill><OffthreadVideo muted src={staticFile("broll/rayvault_h_08.mp4")} playbackRate={0.841667} style={{width:'100%',height:'100%',objectFit:'cover'}} /></AbsoluteFill></Sequence>
-<Sequence key="rv_080" from={16071} durationInFrames={133}><AbsoluteFill><Foto src="img/rayvault_rv_080.jpg" seed={16071} /></AbsoluteFill></Sequence>
+<Sequence key="rv_080" from={16071} durationInFrames={133}><RayvaultMechanicalRepair kind="strike" /></Sequence>
 <Sequence key="rv_081" from={16204} durationInFrames={236}><AbsoluteFill><Foto src="img/rayvault_rv_081_fix1.jpg" seed={16204} /></AbsoluteFill></Sequence>
 <Sequence key="rv_081b" from={16440} durationInFrames={88}><AbsoluteFill><Foto src="img/rayvault_rv_081b.jpg" seed={16440} /></AbsoluteFill></Sequence>
 <Sequence key="rv_082" from={16528} durationInFrames={129}><AbsoluteFill><Foto src="img/rayvault_m_07.jpg" seed={16528} /></AbsoluteFill></Sequence>
 <Sequence key="rv_083" from={16657} durationInFrames={87}><AbsoluteFill><Foto src="img/rayvault_rv_083.jpg" seed={16657} /></AbsoluteFill></Sequence>
-<Sequence key="rv_084" from={16744} durationInFrames={124}><AbsoluteFill><CheckCard durationInFrames={124} {...({"title":"Check the actual installation","kicker":"RAY’S CHECK","items":[{"text":"Jamb reinforcement"},{"text":"Door-edge reinforcement"},{"text":"Hinge attachment"}],"bed":"img/rayvault_rv_084.jpg"} as any)} /></AbsoluteFill></Sequence>
+<Sequence key="rv_084" from={16744} durationInFrames={124}><RayvaultMechanicalRepair kind="jobs" /></Sequence>
 <Sequence key="rv_085" from={16868} durationInFrames={250}><AbsoluteFill><Foto src="img/rayvault_rv_085.jpg" seed={16868} /></AbsoluteFill></Sequence>
 <Sequence key="rv_086" from={17118} durationInFrames={170}><AbsoluteFill><Foto src="img/rayvault_rv_086.jpg" seed={17118} /></AbsoluteFill></Sequence>
 <Sequence key="rv_087" from={17288} durationInFrames={200}><AbsoluteFill><OffthreadVideo muted src={staticFile("broll/rayvault_rv_087.mp4")} playbackRate={0.757500} style={{width:'100%',height:'100%',objectFit:'cover'}} /></AbsoluteFill></Sequence>
@@ -129,7 +224,7 @@ export const MainRayvault:React.FC=()=> <AbsoluteFill style={{backgroundColor:'#
 <Sequence key="rv_100" from={20453} durationInFrames={198}><AbsoluteFill><OffthreadVideo muted src={staticFile("broll/rayvault_h_09_r1.mp4")} playbackRate={0.765152} style={{width:'100%',height:'100%',objectFit:'cover'}} /></AbsoluteFill></Sequence>
 <Sequence key="rv_101" from={20651} durationInFrames={100}><AbsoluteFill><Foto src="img/rayvault_rv_101.jpg" seed={20651} /></AbsoluteFill></Sequence>
 <Sequence key="rv_102" from={20751} durationInFrames={112}><AbsoluteFill><Foto src="img/rayvault_rv_102_fix2.jpg" seed={20751} /></AbsoluteFill></Sequence>
-<Sequence key="rv_103" from={20863} durationInFrames={207}><AbsoluteFill><Foto src="img/rayvault_rv_103.jpg" seed={20863} /></AbsoluteFill></Sequence>
+<Sequence key="rv_103" from={20863} durationInFrames={207}><RayvaultMechanicalRepair kind="travel" /></Sequence>
 <Sequence key="rv_103b" from={21070} durationInFrames={139}><AbsoluteFill><Foto src="img/rayvault_rv_103b.jpg" seed={21070} /></AbsoluteFill></Sequence>
 <Sequence key="rv_104" from={21209} durationInFrames={122}><AbsoluteFill><Foto src="img/rayvault_rv_104.jpg" seed={21209} /></AbsoluteFill></Sequence>
 <Sequence key="rv_104b" from={21331} durationInFrames={150}><AbsoluteFill><Foto src="img/rayvault_rv_104b_fix1.jpg" seed={21331} /></AbsoluteFill></Sequence>
@@ -153,7 +248,7 @@ export const MainRayvault:React.FC=()=> <AbsoluteFill style={{backgroundColor:'#
 <Sequence key="rv_119" from={24618} durationInFrames={192}><AbsoluteFill><OffthreadVideo muted src={staticFile("broll/rayvault_rv_119.mp4")} playbackRate={0.789062} style={{width:'100%',height:'100%',objectFit:'cover'}} /></AbsoluteFill></Sequence>
 <Sequence key="rv_120" from={24810} durationInFrames={105}><AbsoluteFill><Foto src="img/rayvault_rv_120.jpg" seed={24810} /></AbsoluteFill></Sequence>
 <Sequence key="rv_121" from={24915} durationInFrames={111}><AbsoluteFill><Foto src="img/rayvault_rv_121.jpg" seed={24915} /></AbsoluteFill></Sequence>
-<Sequence key="rv_122" from={25026} durationInFrames={211}><AbsoluteFill><Foto src="img/rayvault_rv_122.jpg" seed={25026} /></AbsoluteFill></Sequence>
+<Sequence key="rv_122" from={25026} durationInFrames={211}><RayvaultMechanicalRepair kind="rubbing" /></Sequence>
 <Sequence key="rv_123" from={25237} durationInFrames={306}><AbsoluteFill><Foto src="img/rayvault_rv_123_fix1.jpg" seed={25237} /></AbsoluteFill></Sequence>
 <Sequence key="rv_124" from={25543} durationInFrames={122}><AbsoluteFill><Foto src="img/rayvault_rv_124.jpg" seed={25543} /></AbsoluteFill></Sequence>
 <Sequence key="rv_125" from={25665} durationInFrames={216}><AbsoluteFill><Foto src="img/rayvault_rv_125.jpg" seed={25665} /></AbsoluteFill></Sequence>
@@ -203,21 +298,21 @@ export const MainRayvault:React.FC=()=> <AbsoluteFill style={{backgroundColor:'#
 <Sequence key="rv_160" from={33507} durationInFrames={96}><AbsoluteFill><Foto src="img/rayvault_rv_160.jpg" seed={33507} /></AbsoluteFill></Sequence>
 <Sequence key="rv_161" from={33603} durationInFrames={161}><AbsoluteFill><Foto src="img/rayvault_rv_161_fix2.jpg" seed={33603} /></AbsoluteFill></Sequence>
 <Sequence key="rv_162" from={33764} durationInFrames={129}><AbsoluteFill><ProcessChips durationInFrames={129} {...({"title":"In the right order","kicker":"PRACTICAL CHECKS","steps":[{"title":"Sound frame"},{"title":"Mechanical fit"},{"title":"Convenience"}],"bed":"img/rayvault_rv_162_fix1.jpg"} as any)} /></AbsoluteFill></Sequence>
-<Sequence key="rv_163" from={33893} durationInFrames={128}><AbsoluteFill><Foto src="img/rayvault_rv_163.jpg" seed={33893} /></AbsoluteFill></Sequence>
+<Sequence key="rv_163" from={33893} durationInFrames={128}><RayvaultMechanicalRepair kind="keypad" /></Sequence>
 <Sequence key="rv_163b" from={34021} durationInFrames={247}><AbsoluteFill><Foto src="img/rayvault_rv_163b_fix1.jpg" seed={34021} /></AbsoluteFill></Sequence>
 <Sequence key="rv_164" from={34268} durationInFrames={180}><AbsoluteFill><MythTruth durationInFrames={180} {...({"myth":"Smart hardware repairs a weak frame","truth":"Prepare the doorway first","kicker":"CHECK THE ASSUMPTION","bed":"img/rayvault_rv_164.jpg"} as any)} /></AbsoluteFill></Sequence>
 <Sequence key="rv_165" from={34448} durationInFrames={80}><AbsoluteFill><Foto src="img/rayvault_rv_165.jpg" seed={34448} /></AbsoluteFill></Sequence>
 <Sequence key="rv_165b" from={34528} durationInFrames={230}><AbsoluteFill><RayChecklist durationInFrames={230} {...({"title":"Check the actual installation","kicker":"RAY’S CHECK","items":[{"text":"Physical hardware"},{"text":"Compatibility"},{"text":"Power arrangements"},{"text":"Inside operation"}],"bed":"img/rayvault_rv_165b.jpg"} as any)} /></AbsoluteFill></Sequence>
 <Sequence key="rv_165c" from={34758} durationInFrames={98}><AbsoluteFill><Foto src="img/rayvault_rv_165c_fix2.jpg" seed={34758} /></AbsoluteFill></Sequence>
 <Sequence key="rv_166" from={34856} durationInFrames={121}><AbsoluteFill><Foto src="img/rayvault_rv_166.jpg" seed={34856} /></AbsoluteFill></Sequence>
-<Sequence key="rv_166b" from={34977} durationInFrames={196}><AbsoluteFill><Foto src="img/rayvault_rv_166b.jpg" seed={34977} /></AbsoluteFill></Sequence>
+<Sequence key="rv_166b" from={34977} durationInFrames={196}><RayvaultMechanicalRepair kind="instructions" /></Sequence>
 <Sequence key="rv_167" from={35173} durationInFrames={103}><AbsoluteFill><Foto src="img/rayvault_rv_167_fix1.jpg" seed={35173} /></AbsoluteFill></Sequence>
 <Sequence key="rv_168" from={35276} durationInFrames={232}><AbsoluteFill><Foto src="img/rayvault_rv_168_fix1.jpg" seed={35276} /></AbsoluteFill></Sequence>
 <Sequence key="rv_169" from={35508} durationInFrames={152}><AbsoluteFill><PullQuote durationInFrames={152} {...({"quote":"The doorway does its own work.","attrib":"Ray Kessler","bed":"img/rayvault_rv_169.jpg"} as any)} /></AbsoluteFill></Sequence>
 <Sequence key="rv_170" from={35660} durationInFrames={174}><AbsoluteFill><OffthreadVideo muted src={staticFile("broll/rayvault_h_15.mp4")} playbackRate={0.870690} style={{width:'100%',height:'100%',objectFit:'cover'}} /></AbsoluteFill></Sequence>
 <Sequence key="rv_171" from={35834} durationInFrames={145}><AbsoluteFill><Foto src="img/rayvault_rv_171_fix1.jpg" seed={35834} /></AbsoluteFill></Sequence>
 <Sequence key="rv_172" from={35979} durationInFrames={221}><AbsoluteFill><CheckCard durationInFrames={221} {...({"title":"Check the actual installation","kicker":"RAY’S CHECK","items":[{"text":"Floor surface"},{"text":"Door arrangement"},{"text":"Positioning"}],"bed":"img/rayvault_rv_172_fix1.jpg"} as any)} /></AbsoluteFill></Sequence>
-<Sequence key="rv_173" from={36200} durationInFrames={250}><AbsoluteFill><Foto src="img/rayvault_m_13.jpg" seed={36200} /></AbsoluteFill></Sequence>
+<Sequence key="rv_173" from={36200} durationInFrames={250}><RayvaultMechanicalRepair kind="brace" /></Sequence>
 <Sequence key="rv_174" from={36450} durationInFrames={180}><AbsoluteFill><Foto src="img/rayvault_rv_174_fix1.jpg" seed={36450} /></AbsoluteFill></Sequence>
 <Sequence key="rv_175" from={36630} durationInFrames={240}><AbsoluteFill><Foto src="img/rayvault_rv_175_fix1.jpg" seed={36630} /></AbsoluteFill></Sequence>
 <Sequence key="rv_176" from={36870} durationInFrames={95}><AbsoluteFill><Foto src="img/rayvault_rv_176.jpg" seed={36870} /></AbsoluteFill></Sequence>
@@ -255,7 +350,7 @@ export const MainRayvault:React.FC=()=> <AbsoluteFill style={{backgroundColor:'#
 <Sequence key="rv_203" from={42647} durationInFrames={180}><AbsoluteFill><Foto src="img/rayvault_rv_203.jpg" seed={42647} /></AbsoluteFill></Sequence>
 <Sequence key="rv_204" from={42827} durationInFrames={246}><AbsoluteFill><RayChecklist durationInFrames={246} {...({"title":"Check the actual installation","kicker":"RAY’S CHECK","items":[{"text":"Damaged wood"},{"text":"Serious misalignment"},{"text":"Unsuitable exterior door"}],"bed":"img/rayvault_rv_204_fix1.jpg"} as any)} /></AbsoluteFill></Sequence>
 <Sequence key="rv_204b" from={43073} durationInFrames={114}><AbsoluteFill><Foto src="img/rayvault_rv_204b.jpg" seed={43073} /></AbsoluteFill></Sequence>
-<Sequence key="rv_205" from={43187} durationInFrames={216}><AbsoluteFill><Foto src="img/rayvault_rv_205.jpg" seed={43187} /></AbsoluteFill></Sequence>
+<Sequence key="rv_205" from={43187} durationInFrames={216}><RayvaultMechanicalRepair kind="framing" /></Sequence>
 <Sequence key="rv_206" from={43403} durationInFrames={247}><AbsoluteFill><Foto src="img/rayvault_rv_206.jpg" seed={43403} /></AbsoluteFill></Sequence>
 <Sequence key="rv_207" from={43650} durationInFrames={269}><AbsoluteFill><SplitVs durationInFrames={269} {...({"leftLabel":"Unsuitable lock","leftValue":"Replace","rightLabel":"Sound suitable lock","rightValue":"Keep","verdict":"Condition decides","bed":"img/rayvault_rv_207.jpg","leftImage":"img/rayvault_rv_207_left.jpg","rightImage":"img/rayvault_rv_207_right_fix2.jpg"} as any)} /></AbsoluteFill></Sequence>
 <Sequence key="rv_208" from={43919} durationInFrames={85}><AbsoluteFill><Foto src="img/rayvault_rv_208.jpg" seed={43919} /></AbsoluteFill></Sequence>
@@ -316,5 +411,5 @@ export const MainRayvault:React.FC=()=> <AbsoluteFill style={{backgroundColor:'#
 <Sequence key="over_rv_228_overlay" from={47750} durationInFrames={246} layout="none"><StatBug durationInFrames={246} {...({"value":"$160","unit":"","caption":"Example: $115 + $45 suitable sleeve","tone":"brass","series":"ILLUSTRATIVE MATERIAL ALLOWANCE"} as any)} /></Sequence>
 <Sequence key="over_guide_early" from={982} durationInFrames={1340} layout="none"><RayCta durationInFrames={1340} {...({"title":"The One Afternoon Door","sub":"Know what to check before you buy another lock.","domain":"raykessler.vercel.app","eyebrow":"CHECK YOUR DOOR TODAY","action":"SCAN TO SEE THE GUIDE","qr":"qr_rayvault.png","showQr":true} as any)} /></Sequence>
 <Sequence key="over_guide_closing" from={50385} durationInFrames={1860} layout="none"><RayCta durationInFrames={1860} {...({"title":"The One Afternoon Door","sub":"Know what to check before you buy another lock.","domain":"raykessler.vercel.app","eyebrow":"CHECK YOUR DOOR TODAY","action":"SCAN TO SEE THE GUIDE","qr":"qr_rayvault.png","showQr":true} as any)} /></Sequence>
-<Audio src={staticFile('rayvault_fish.wav')} />
+{audioEnabled&&<Audio src={staticFile('rayvault_fish.wav')} />}
 </AbsoluteFill>;
