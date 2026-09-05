@@ -40,6 +40,11 @@ on:
         default: '[]'
         required: false
         type: string
+      expected_head_sha:
+        description: SHA256 of independently approved intro MP4
+        default: ''
+        required: false
+        type: string
 permissions:
   contents: read
 jobs:
@@ -65,12 +70,13 @@ jobs:
           EXPECTED_TAIL_SHA: ${{ inputs.expected_tail_sha }}
           PATCH_URL: ${{ inputs.patch_url }}
           PATCH_INTERVALS: ${{ inputs.patch_intervals }}
+          EXPECTED_HEAD_SHA: ${{ inputs.expected_head_sha }}
         run: |
           python scripts/rayvault_splice_cloud.py --worker \
             --head-url "$HEAD_URL" --tail-url "$TAIL_URL" --master-url "$MASTER_URL" \
             --cut-seconds "$CUT_SECONDS" --total-frames "$TOTAL_FRAMES" \
             --expected-tail-sha "$EXPECTED_TAIL_SHA" --out-dir splice-output \
-            --patch-url "$PATCH_URL" --patch-intervals "$PATCH_INTERVALS"
+            --patch-url "$PATCH_URL" --patch-intervals "$PATCH_INTERVALS" --expected-head-sha "$EXPECTED_HEAD_SHA"
       - name: Preserve diagnostic evidence
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4

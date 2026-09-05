@@ -8,6 +8,7 @@ import argparse
 import concurrent.futures
 import hashlib
 import json
+import re
 import subprocess
 import time
 import urllib.request
@@ -18,7 +19,7 @@ TAIL = 'https://github.com/bagasy-search/claudeyoutubevideos/releases/download/r
 TAIL_SHA = 'a50c64d2a8f4c84aab40db041c0e5fa270b67e1f93c265b1e2f511f37763a2bf'
 
 
-def execute(head_url, tail_url, master_url, cut_seconds, total_frames, expected_tail_sha, out_dir, pilot=False, patch_url='', patch_intervals='[]'):
+def execute(head_url, tail_url, master_url, cut_seconds, total_frames, expected_tail_sha, out_dir, pilot=False, patch_url='', patch_intervals='[]', expected_head_sha=''):
     root = Path(out_dir)
     root.mkdir(parents=True, exist_ok=True)
     timings = {}
@@ -71,6 +72,9 @@ def execute(head_url, tail_url, master_url, cut_seconds, total_frames, expected_
         list(pool.map(download, downloads))
     timings['download'] = round(time.monotonic() - started, 3)
     head, original = root/'head_source.mp4', root/'tail_source.mp4'
+    head_sha=sha(head)
+    if expected_head_sha and head_sha!=expected_head_sha:
+        raise ValueError('Approved intro identity mismatch: '+head_sha)
     source_sha = sha(original)
     if source_sha != expected_tail_sha:
         raise ValueError('Tail identity mismatch: ' + source_sha)
@@ -153,13 +157,25 @@ def execute(head_url, tail_url, master_url, cut_seconds, total_frames, expected_
         data=run(args,label)
         (root/(label+'.framemd5')).write_text(data,encoding='utf-8')
         return [line.split(',')[-1].strip() for line in data.splitlines() if line and not line.startswith('#')]
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+    def full_video_scan():
+        run(['ffmpeg','-hide_banner','-nostats','-threads','4','-i',str(output),'-map','0:v:0','-an','-vf',
+             'scale=480:-2,blackdetect=d=0.15:pic_th=0.98:pix_th=0.10,metadata=print:key=lavfi.black_start,metadata=print:key=lavfi.black_end,freezedetect=noise=-55dB:d=1.0',
+             '-f','null','-'],'full_video_scan')
+        return (root/'full_video_scan.log').read_text()
+    def loudness_scan():
+        run(['ffmpeg','-hide_banner','-nostats','-i',str(output),'-map','0:a:0','-vn','-af','loudnorm=I=-16:TP=-1.5:LRA=11:print_format=json','-f','null','-'],'full_loudness_scan')
+        return json.loads(re.findall(r'\{\s*"input_i"[\s\S]*?\}',(root/'full_loudness_scan.log').read_text())[-1])
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         full_f=pool.submit(framehash,output,'decoded_final')
         tail_f=pool.submit(framehash,original,'decoded_original_tail',cut_seconds)
         head_f=pool.submit(framehash,head,'decoded_head')
         patch_f=pool.submit(framehash,root/'patch_source.mp4','decoded_patch') if intervals else None
+        scan_f=pool.submit(full_video_scan) if not pilot else None
+        loudness_f=pool.submit(loudness_scan) if not pilot and master_url else None
         full_hashes,tail_hashes,head_hashes=full_f.result(),tail_f.result(),head_f.result()
         patch_hashes=patch_f.result() if patch_f else []
+        scan_log=scan_f.result() if scan_f else ''
+        loudness=loudness_f.result() if loudness_f else None
     head_count=round(cut_seconds*30)
     expected_hashes=[];segment_proofs=[]
     for segment in segments:
@@ -184,6 +200,21 @@ def execute(head_url, tail_url, master_url, cut_seconds, total_frames, expected_
         'complete_timeline_decoded_identical_to_sources':full_hashes==expected_hashes,
         'no_decoder_errors':not (root/'decoded_final.log').read_text().strip(),
         'no_nonmonotonic_mux_warning':'non-monoton' not in (root/'assemble_copy_video_aac_master.log').read_text().lower()}
+    if expected_head_sha: checks['approved_intro_identity']=head_sha==expected_head_sha
+    black=[];freezes=[];pending=None
+    for event,value in re.findall(r'lavfi.black_(start|end)=([\d.]+)',scan_log):
+        if event=='start': pending=float(value)
+        elif pending is not None:
+            if float(value)-pending>=0.15: black.append({'start':pending,'end':float(value)})
+            pending=None
+    if pending is not None and total_frames/30-pending>=0.15: black.append({'start':pending,'end':total_frames/30})
+    pending=None
+    for event,value in re.findall(r'freeze_(start|end): ([\d.]+)',scan_log):
+        if event=='start': pending=float(value)
+        elif pending is not None:
+            freezes.append({'start':pending,'end':float(value),'duration':float(value)-pending});pending=None
+    if pending is not None: freezes.append({'start':pending,'end':total_frames/30,'duration':total_frames/30-pending})
+    if not pilot: checks['no_black_over_150ms']=not black
     audio_report=None
     if master_url:
         import io,wave
@@ -207,7 +238,9 @@ def execute(head_url, tail_url, master_url, cut_seconds, total_frames, expected_
         audio_stream=next(s for s in meta['streams'] if s['codec_type']=='audio')
         checks['audio_duration']=abs(float(audio_stream['duration'])-total_frames/30)<=0.05
     report={'pass':all(checks.values()),'pilot':pilot,'audio_audited':bool(master_url),'source_urls':{'head':head_url,'tail':tail_url,'master':master_url},
-        'source_tail_sha256':source_sha,'output_sha256':sha(output),'output_bytes':output.stat().st_size,'cut_seconds':cut_seconds,'total_frames':total_frames,'patch_intervals':intervals,'segment_proofs':segment_proofs,
+        'source_tail_sha256':source_sha,'source_head_sha256':head_sha,'source_patch_sha256':sha(root/'patch_source.mp4') if intervals else None,
+        'source_master_sha256':sha(root/'master.wav') if master_url else None,'output_sha256':sha(output),'output_bytes':output.stat().st_size,'cut_seconds':cut_seconds,'total_frames':total_frames,'patch_intervals':intervals,'segment_proofs':segment_proofs,
+        'black_intervals':black,'freeze_intervals':freezes,'freeze_note':'Low-motion detections require timeline/visual review and are not automatically playback failures.','loudness_measurement':loudness,
         'checks':checks,'audio_windows':audio_report,'metadata':meta,'head_stream':hv,'tail_stream':tv,'max_pts_step_error':max(abs(s-1/30) for s in steps),
         'seam_packet_pts_dts':[p for p in packets if abs(float(p['pts_time'])-cut_seconds)<0.15],'timings_seconds':timings,'elapsed_seconds':round(time.monotonic()-started,3),
         'method':'Video packet copy, continuous WAV encoded to AAC only; complete decoded frame equality against intro and original tail.'}
@@ -225,6 +258,7 @@ if __name__ == '__main__':
     parser.add_argument('--total-frames',type=int,default=52404);parser.add_argument('--expected-tail-sha',default=TAIL_SHA)
     parser.add_argument('--out-dir',default='splice-output');parser.add_argument('--pilot',action='store_true')
     parser.add_argument('--patch-url',default='');parser.add_argument('--patch-intervals',default='[]')
+    parser.add_argument('--expected-head-sha',default='')
     args=vars(parser.parse_args());args.pop('worker')
     print(json.dumps(execute(**args),indent=2))
 else:
@@ -234,7 +268,7 @@ else:
     volume=modal.Volume.from_name('rayvault-splice-evidence',create_if_missing=True)
 
     @app.function(image=image,cpu=12,memory=16384,timeout=3600,volumes={'/evidence':volume})
-    def cloud(head_url,tail_url,master_url,cut_seconds,total_frames,expected_tail_sha,pilot,run_name,patch_url,patch_intervals):
+    def cloud(head_url,tail_url,master_url,cut_seconds,total_frames,expected_tail_sha,pilot,run_name,patch_url,patch_intervals,expected_head_sha):
         try:
             if patch_url == 'pilot-from-original':
                 if not pilot:
@@ -256,13 +290,13 @@ else:
                 subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(synth/'list.txt'),'-map','0:v:0','-an','-c:v','copy','-video_track_timescale','90000',str(compact)],check=True)
                 patch_url=compact.as_uri()
                 tail_url=cached.as_uri()
-            return execute(head_url,tail_url,master_url,cut_seconds,total_frames,expected_tail_sha,'/evidence/'+run_name,pilot,patch_url,patch_intervals)
+            return execute(head_url,tail_url,master_url,cut_seconds,total_frames,expected_tail_sha,'/evidence/'+run_name,pilot,patch_url,patch_intervals,expected_head_sha)
         finally:
             volume.commit()
 
     @app.local_entrypoint()
-    def main(head_url:str=HEAD,tail_url:str=TAIL,master_url:str='',cut_seconds:float=78,total_frames:int=52404,expected_tail_sha:str=TAIL_SHA,pilot:bool=False,run_name:str='pilot60',patch_url:str='',patch_intervals:str='[]'):
-        report=cloud.remote(head_url,tail_url,master_url,cut_seconds,total_frames,expected_tail_sha,pilot,run_name,patch_url,patch_intervals)
+    def main(head_url:str=HEAD,tail_url:str=TAIL,master_url:str='',cut_seconds:float=78,total_frames:int=52404,expected_tail_sha:str=TAIL_SHA,pilot:bool=False,run_name:str='pilot60',patch_url:str='',patch_intervals:str='[]',expected_head_sha:str=''):
+        report=cloud.remote(head_url,tail_url,master_url,cut_seconds,total_frames,expected_tail_sha,pilot,run_name,patch_url,patch_intervals,expected_head_sha)
         target=Path('C:/Users/bauti/Downloads/video2/_v3/rayvault/splice')
         target.mkdir(parents=True,exist_ok=True)
         (target/(run_name+'_report.json')).write_text(json.dumps(report,indent=2),encoding='utf-8')
