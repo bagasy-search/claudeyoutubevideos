@@ -56,7 +56,7 @@ const Card:React.FC<{children:React.ReactNode;w?:number;h?:number;style?:React.C
 const Photo:React.FC<{src:string;style?:React.CSSProperties}>=({src,style})=><Img src={file(src)} style={{width:'100%',height:'100%',objectFit:'cover',...style}}/>;
 const Clip:React.FC<{src:string;start?:number;rate?:number;style?:React.CSSProperties}>=({src,start=0,rate=1,style})=><OffthreadVideo src={file(src)} muted startFrom={start} playbackRate={rate} style={{width:'100%',height:'100%',objectFit:'cover',...style}}/>;
 
-const Screw:React.FC<{style?:React.CSSProperties;id?:string}>=({style,id='s'})=><svg viewBox="0 0 820 180" style={{width:820,height:180,filter:'drop-shadow(0 25px 16px #0008)',...style}}>
+export const Screw:React.FC<{style?:React.CSSProperties;id?:string}>=({style,id='s'})=><svg viewBox="0 0 820 180" style={{width:820,height:180,filter:'drop-shadow(0 25px 16px #0008)',...style}}>
  <defs><linearGradient id={id} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#444e4e"/><stop offset=".22" stopColor="#faf7e8"/><stop offset=".45" stopColor="#8b9996"/><stop offset=".65" stopColor="#dce1d6"/><stop offset="1" stopColor="#3e4a49"/></linearGradient></defs>
  <path d="M170 65 L684 65 L786 90 L684 115 L170 115Z" fill={`url(#${id})`} stroke="#cfd4c5" strokeWidth="2"/>
  {Array.from({length:23},(_,i)=><path key={i} d={`M${210+i*21} 63l-24 55`} stroke="#263433" strokeWidth="8"/>)}
@@ -133,7 +133,7 @@ const Block:React.FC<{x:number;z:number;w:number;h?:number;depth:number;color:st
  <div style={{position:'absolute',top:labelY,left:-45,right:-90,fontFamily:DISPLAY,fontSize:29,letterSpacing:1,color:C.paper,whiteSpace:'nowrap',transform:'translateZ(15px)'}}>{label}</div>
  </div>};
 
-const Exploded:React.FC=()=>{const f=useCurrentFrame();const k=p(f,0,52);return <Stage>
+export const Exploded:React.FC=()=>{const f=useCurrentFrame();const k=p(f,0,52);return <Stage>
  <div style={{position:'absolute',left:110,top:155}}><Label>06 / THE LOAD PATH</Label><Heading style={{marginTop:27}}>SMALL HARDWARE.<br/><span style={{color:C.gold}}>THIN PINE.</span></Heading></div>
  <div style={{position:'absolute',left:655,top:445,width:1170,height:570,perspective:1600}}><div style={{...fill,...keep3d,transform:`rotateX(-9deg) rotateY(${-25+k*8}deg) scale(.84)`}}>
   <div style={{position:'absolute',left:0,top:440,width:1100,height:130,background:'#0009',filter:'blur(28px)',transform:'rotateX(75deg) translateZ(-100px)'}}/>
@@ -157,7 +157,7 @@ const RayReturn:React.FC=()=>{const f=useCurrentFrame();return <AbsoluteFill><Cl
 
 const Resolve:React.FC=()=>{const f=useCurrentFrame();const k=p(f,0,26);return <Stage><div style={{position:'absolute',left:190,top:145,width:465,height:830,perspective:1100}}><div style={{...fill,border:'3px solid #DBB56B',boxShadow:'inset 0 0 70px #dbb56b1a,0 0 55px #dbb56b18',transform:`rotateY(${-32*(1-k)}deg)`}}><div style={{position:'absolute',inset:21,border:'1px solid #dbb56b66'}}/><div style={{position:'absolute',right:50,top:450,width:18,height:18,borderRadius:'50%',background:C.gold}}/></div></div><div style={{position:'absolute',left:784,top:350,width:950}}><Label>THE FOUR THOUSAND DOORS</Label><Heading style={{marginTop:24}}>WHAT HOLDS<br/><span style={{color:C.gold}}>THE LOCK.</span></Heading><div style={{marginTop:32,fontSize:23,color:C.muted,letterSpacing:4}}>RAY KESSLER</div></div></Stage>};
 
-const Guide:React.FC=()=>{const f=useCurrentFrame();const k=p(f,0,24);return <div style={{position:'absolute',right:52,top:70,width:660,height:270,display:'flex',padding:16,gap:18,boxSizing:'border-box',borderRadius:16,border:'1px solid #c7a15b',background:'linear-gradient(125deg,#122120,#080f10)',boxShadow:'0 22px 55px #0008',opacity:k,transform:`translateY(${(1-k)*26}px)`}}>
+export const Guide:React.FC=()=>{const f=useCurrentFrame();const k=p(f,0,24);return <div style={{position:'absolute',right:52,top:70,width:660,height:270,display:'flex',padding:16,gap:18,boxSizing:'border-box',borderRadius:16,border:'1px solid #c7a15b',background:'linear-gradient(125deg,#122120,#080f10)',boxShadow:'0 22px 55px #0008',opacity:k,transform:`translateY(${(1-k)*26}px)`}}>
  <div style={{flex:1,padding:'11px 0 0 7px'}}><div style={{fontFamily:BODY,fontSize:14,fontWeight:600,letterSpacing:2,color:C.gold}}>CHECK YOUR DOOR TODAY</div><div style={{fontFamily:DISPLAY,fontSize:38,lineHeight:1.12,color:C.paper,marginTop:16}}>The One<br/>Afternoon Door</div><div style={{marginTop:23,borderTop:'1px solid #ad8d4b66',paddingTop:15,fontFamily:BODY,fontSize:15,fontWeight:600,color:C.gold,letterSpacing:.7}}>SCAN TO SEE THE GUIDE →</div></div>
  <div style={{width:230,flexShrink:0,background:'white',borderRadius:8,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}><Img src={file('guide_qr.png')} style={{width:222,height:222,objectFit:'contain',flexShrink:0}}/><span style={{fontFamily:BODY,fontSize:10,fontWeight:700,color:'#152021',marginTop:-3}}>raykessler.vercel.app</span></div>
  </div>};
