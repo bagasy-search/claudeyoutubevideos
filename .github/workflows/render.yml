@@ -39,6 +39,7 @@ jobs:
           curl -s -X POST "${{ secrets.SB_URL }}/rest/v1/rpc/render_reset" -H "apikey: ${{ secrets.SB_ANON }}" -H "Authorization: Bearer ${{ secrets.SB_ANON }}" -H "Content-Type: application/json" -d '{"p_slug":"${{ github.event.inputs.slug }}"}' || true
 
   render:
+    timeout-minutes: 90
     needs: prepare
     runs-on: ubuntu-latest
     strategy:
@@ -131,6 +132,7 @@ jobs:
           retention-days: 3
 
   stitch:
+    timeout-minutes: 120
     needs: render
     # Sin este `if`, un solo chunk caído saltea el job ENTERO — y con él la persistencia de los que
     # sí salieron. Medido en el render del GUANTE: 6 chunks buenos, 13 caídos, stitch nunca corrió y
@@ -144,6 +146,7 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with: { path: chunks, pattern: "chunk-*", merge-multiple: true }
       - name: traer chunks persistidos (reusar los no-cambiados)
@@ -171,31 +174,6 @@ jobs:
           gh release delete "chunks-${{ github.event.inputs.slug }}" -R "$R" --yes --cleanup-tag 2>/dev/null || true
           gh release create "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --title "chunks-${{ github.event.inputs.slug }}" --notes "chunks para re-render parcial" \
             || gh release upload "chunks-${{ github.event.inputs.slug }}" chunk_*.mp4 -R "$R" --clobber
-      # ⛔⛔ EL WAV MÁSTER TIENE QUE ESTAR ACÁ O EL AUDIO SALE DE LOS CHUNKS (medido 29-ago-2026).
-      # Este job NO hace checkout ni baja el tar de assets, así que el `if [ -s "public/$SLUG.wav" ]`
-      # de más abajo daba SIEMPRE falso y el audio final se tomaba de los 60 pedazos concatenados.
-      # Cada frontera de AAC agrega ~73 ms: con 60 chunks la voz termina corrida +4,4 s respecto de
-      # la imagen. No lo ve ningún chequeo de cuadros (cada cuadro está perfecto) y el reproductor
-      # lo compensa tirando y repitiendo cuadros -> se ve como "todo el video lageado".
-      # El wav lo sube el dispatcher SUELTO al release de assets, además de adentro del tar.
-      - name: traer el WAV máster (si falta, el audio se corre)
-        continue-on-error: true
-        env: { GH_TOKEN: "${{ github.token }}" }
-        run: |
-          mkdir -p public
-          gh release download "assets-${{ github.event.inputs.slug }}" -R "${{ github.repository }}"             --dir public --pattern "*.wav" --clobber || true
-          # el dispatcher a veces lo llama <slug>_fish.wav (cola generada con Fish): el `if` de más
-          # abajo busca <slug>.wav exacto, así que si vino con otro nombre lo dejamos donde lo espera.
-          S="${{ github.event.inputs.slug }}"
-          if [ ! -s "public/$S.wav" ]; then
-            OTRO=$(ls public/*.wav 2>/dev/null | head -1)
-            [ -n "$OTRO" ] && cp "$OTRO" "public/$S.wav" && echo "usando $OTRO como wav máster"
-          fi
-          if [ -s "public/${{ github.event.inputs.slug }}.wav" ]; then
-            echo "wav máster OK -> el audio final sale de él"
-          else
-            echo "::warning::sin wav máster: el audio saldrá de los chunks y quedará corrido hasta ~4 s"
-          fi
       - name: install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: concat (todos los N en orden)
@@ -221,62 +199,71 @@ jobs:
           fi
           cat list.txt
           SLUG="${{ github.event.inputs.slug }}"
-          ffmpeg -y -f concat -safe 0 -i list.txt -c copy "_cat_$SLUG.mp4"
-          # ⛔⛔ EL `concat -c copy` DEJA UN SALTO DE TIEMPO EN CADA COSTURA DE CHUNK.
-          # Medido en cmetemu (29-ago-2026): 59 costuras, y en cada una un cuadro dura 88 ms en vez
-          # de 33,33. Son 3,2 s de tiempo muerto repartido, el MP4 declara 30 fps pero su cadencia
-          # real es 29,936, y el audio se estira igual (deriva +2,7 s al minuto 20). Se ve como
-          # TIRÓN cada 25 segundos de punta a punta — el "todo el video lageado" de siempre, y NO
-          # lo detecta ningún chequeo de cuadros porque cada cuadro está perfecto: lo que está mal
-          # es CUÁNDO se muestra. Por eso hay que reescribir los timestamps a CFR exacto.
-          # El h264 crudo no tiene timestamps, así que `-r 30` al re-muxear los reparte perfectos.
-          # El audio se toma del WAV MÁSTER (continuo) si está; si no, del concat.
-          # ⛔ El AUDIO del `_cat` trae los MISMOS huecos que el video. Se demuxea a ADTS crudo (que
-          # tampoco lleva timestamps) y se re-muxea: asi los recupera continuos, y de paso conserva
-          # todo lo que el render puso adentro (tipeo, efectos). ⛔ NADA de `-shortest`: con una
-          # entrada cruda corta de mas — dejo el audio 6,7 s mas corto que el video y el cierre mudo.
-          OK=0
-          # ⛔⛔ NO SE PUEDE ARREGLAR LOS TIMESTAMPS COPIANDO EL STREAM. El h264 crudo no lleva
-          # tiempos, asi que `-fflags +genpts -r 30` los reparte EN FILA y deja pts == dts en todos
-          # los cuadros. Pero el stream tiene B-FRAMES (la mayoria de los cuadros lo son), y con
-          # B-frames el orden de MOSTRAR no es el de DECODIFICAR: el contenedor termina pidiendo
-          # que se muestren desordenados. Los reproductores de escritorio lo corrigen solos (por
-          # eso en local se ve fluido), pero CHROME obedece al contenedor y se ve como TIRON, solo
-          # donde hay movimiento continuo (el avatar); sobre fotos casi fijas es invisible.
-          # Costo real: 8 rondas y 6 renders en `cmetemu` buscandolo en el archivo equivocado.
-          # La UNICA forma correcta de forzar CFR conservando el reordenamiento es RE-ENCODEAR.
-          # Verificado midiendo pts vs dts en las dos variantes antes de tocar esto.
-          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v:0 -map 0:a:0 -vf "setpts=N/30/TB,format=yuv420p" -r 30 -fps_mode cfr -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -video_track_timescale 90000 -c:a aac -b:a 192k -ar 48000 -af "aresample=async=1:first_pts=0,apad" -movflags +faststart "$SLUG.mp4"; then OK=1; fi
-          # ⛔⛔ COMPUERTA: el final TIENE que tener pista de audio y durar casi lo mismo que el video.
-          if [ "$OK" = "1" ]; then
-            VD=$(ffprobe -v error -select_streams v -show_entries stream=duration -of csv=p=0 "$SLUG.mp4")
-            AD=$(ffprobe -v error -select_streams a -show_entries stream=duration -of csv=p=0 "$SLUG.mp4")
-            echo "remux CFR: video ${VD:-0}s · audio ${AD:-0}s"
-            if [ -z "$AD" ] || awk -v a="${AD:-0}" -v v="${VD:-1}" 'BEGIN{exit !(a < v-2)}'; then
-              echo "::warning::el remux dejo el audio corto o ausente — vuelvo al concat crudo"; OK=0
-            fi
+          RAW="_cat_$SLUG.mp4"
+          MASTER="${SLUG}_fish.wav"
+          # Concatenamos solo el video y luego lo decodificamos de nuevo. Así se eliminan los
+          # saltos de PTS que el concat por copia deja en cada una de las 59 costuras.
+          ffmpeg -y -v error -f concat -safe 0 -i list.txt \
+            -map 0:v:0 -c:v copy -an "$RAW"
+          test -s "$RAW"
+
+          # El audio continuo es el WAV real usado para locutar. Se baja una vez en stitch;
+          # ningún fallback vuelve a usar el audio de los chunks ni un WAV viejo.
+          export GH_TOKEN="${{ github.token }}"
+          n=0
+          until gh release download "assets-$SLUG" -R "${{ github.repository }}" \
+                  --pattern "$MASTER" --dir . --clobber; do
+            n=$((n+1)); [ "$n" -ge 4 ] && { echo "::error::no pude bajar el WAV máster tras $n intentos"; exit 1; }
+            echo "reintento $n de la descarga del WAV máster"; sleep $((10 * n))
+          done
+          test -s "$MASTER" || { echo "::error::no está el WAV máster $MASTER"; exit 1; }
+
+          ESPERADO=$(awk "BEGIN{printf \"%.6f\", ${{ github.event.inputs.total_frames }}/30}")
+          # Convert the measured source range/matrix once. Never squeeze limited levels again
+          # and never label full-range pixels as TV without conversion (crushed shadows).
+          PIX=$(ffprobe -v error -select_streams v:0 -show_entries stream=pix_fmt -of csv=p=0 "$RAW")
+          RANGE=$(ffprobe -v error -select_streams v:0 -show_entries stream=color_range -of csv=p=0 "$RAW")
+          MATRIX=$(ffprobe -v error -select_streams v:0 -show_entries stream=color_space -of csv=p=0 "$RAW")
+          IN_RANGE=limited
+          if [ "$RANGE" = "pc" ] || [[ "$PIX" == yuvj* ]]; then IN_RANGE=full; fi
+          case "$MATRIX" in
+            bt470bg|smpte170m) IN_MATRIX=bt601 ;;
+            bt709|unknown|"") IN_MATRIX=bt709 ;;
+            *) echo "::error::unsupported source color matrix $MATRIX"; exit 1 ;;
+          esac
+          echo "color conversion: $PIX / $RANGE / $MATRIX -> yuv420p / tv / bt709"
+          AF="aresample=async=1:first_pts=0,apad"
+          CHANNELS=$(ffprobe -v error -select_streams a:0 -show_entries stream=channels -of csv=p=0 "$MASTER")
+          if [ "$CHANNELS" = "1" ]; then AF="pan=stereo|c0=c0|c1=c0,$AF"; fi
+          # `setpts=N/30/TB` descarta los timestamps heredados de las costuras y numera cada
+          # frame desde cero. `-frames:v` y `-r 30` hacen que el resultado sea CFR exacto.
+          ffmpeg -y -v error -i "$RAW" -i "$MASTER" \
+            -map 0:v:0 -map 1:a:0 \
+            -vf "setpts=N/30/TB,scale=in_range=$IN_RANGE:out_range=limited:in_color_matrix=$IN_MATRIX:out_color_matrix=bt709,format=yuv420p" -r 30 -fps_mode cfr \
+            -frames:v "${{ github.event.inputs.total_frames }}" \
+            -c:v libx264 -preset faster -crf 20 -maxrate 5M -bufsize 10M -pix_fmt yuv420p -video_track_timescale 90000 \
+            -g 60 -keyint_min 60 -sc_threshold 0 \
+            -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+            -c:a aac -b:a 192k -ar 48000 \
+            -af "$AF" \
+            -t "$ESPERADO" -movflags +faststart "$SLUG.mp4"
+          rm -f "$RAW" "$MASTER"
+
+          FPS=$(ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of default=nw=1:nk=1 "$SLUG.mp4")
+          NFR=$(ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames -of default=nw=1:nk=1 "$SLUG.mp4")
+          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$SLUG.mp4")
+          echo "validación CFR: fps=$FPS · frames=$NFR · duración=${REAL}s · esperada=${ESPERADO}s"
+          [ "$FPS" = "30/1" ] || { echo "::error::el MP4 no quedó a 30/1 CFR"; exit 1; }
+          [ "$NFR" = "${{ github.event.inputs.total_frames }}" ] || { echo "::error::cantidad de frames incorrecta: $NFR"; exit 1; }
+          awk -v real="$REAL" -v esperado="$ESPERADO" 'BEGIN { d=real-esperado; if (d<0) d=-d; if (d>1) exit 1 }' \
+            || { echo "::error::duración fuera de tolerancia de 1 segundo"; exit 1; }
+          # Preserve fix8ba83e5: B-frame streams must declare display/decode reordering.
+          NB=$(ffprobe -v error -select_streams v:0 -show_entries stream=has_b_frames -of csv=p=0 "$SLUG.mp4")
+          PD=$(ffprobe -v error -select_streams v -show_entries packet=pts_time,dts_time -read_intervals "%+1" -of csv=p=0 "$SLUG.mp4" | awk -F, '{ if ($1 != $2) c++ } END { print c+0 }')
+          if [ "${NB:-0}" != "0" ] && [ "$PD" = "0" ]; then
+            echo "::error::B-frames with identical PTS/DTS would stutter in Chrome"; exit 1
           fi
-          if [ "$OK" = "1" ]; then
-            NB=$(ffprobe -v error -select_streams v:0 -show_entries stream=has_b_frames -of csv=p=0 "$SLUG.mp4")
-            PD=$(ffprobe -v error -select_streams v -show_entries packet=pts_time,dts_time -read_intervals "%+1" -of csv=p=0 "$SLUG.mp4" | awk -F, '{ if ($1 != $2) c++ } END { print c+0 }')
-            if [ "${NB:-0}" != "0" ] && [ "$PD" = "0" ]; then
-              echo "::error::el mp4 tiene B-frames pero pts == dts en todos los cuadros — se veria con TIRON en Chrome"; exit 1
-            fi
-            echo "timestamps reescritos a 30 fps CFR (video y audio)"
-            rm -f "_v_$SLUG.h264" "_a_$SLUG.aac" "_cat_$SLUG.mp4"
-          else
-            echo "::warning::el remux a CFR falló — publico el concat crudo (puede tener el tirón de las costuras)"
-            mv -f "_cat_$SLUG.mp4" "$SLUG.mp4"
-          fi
-          # Segundo cinturón: aunque estén los N archivos, si el resultado dura mucho menos de lo
-          # esperado algo se truncó igual. total_frames/30 es la duración teórica.
-          ESPERADO=$(awk "BEGIN{printf \"%.0f\", ${{ github.event.inputs.total_frames }}/30}")
-          REAL=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "${{ github.event.inputs.slug }}.mp4" | cut -d. -f1)
-          echo "duración: real ${REAL}s · esperada ${ESPERADO}s"
-          if [ "$REAL" -lt $(( ESPERADO * 90 / 100 )) ]; then
-            echo "::error::el MP4 dura ${REAL}s pero se esperaban ~${ESPERADO}s (menos del 90%). Está truncado — no lo publico."
-            exit 1
-          fi
+          node scripts/check_entrega.mjs "$SLUG.mp4"
       - uses: actions/upload-artifact@v4
         with:
           name: final-${{ github.event.inputs.slug }}
@@ -286,7 +273,6 @@ jobs:
       # ffmpeg ya esta instalado acá. Haciendolo aca el agente NO necesita bajarse 700 MB para
       # verificar duracion/audio/negros: lee esta salida del log de la corrida.
       - name: chequeo tecnico del MP4
-        continue-on-error: true
         run: |
           F="${{ github.event.inputs.slug }}.mp4"
           echo "=== CHEQUEO_TECNICO ==="
@@ -305,7 +291,6 @@ jobs:
       # por eso una vez se entrego un render viejo (la parte 1 sola) en vez del final.
       # Publicando aca, lo entregado ES exactamente lo que se acaba de concatenar.
       - name: publicar el MP4 final como release
-        continue-on-error: true
         env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           S="${{ github.event.inputs.slug }}"

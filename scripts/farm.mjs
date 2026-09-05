@@ -31,7 +31,8 @@ import os from "node:os";
 // su propio checkout + install. 60 chunks son ~37 GB de transferencia contra ~12 GB con 20. Más
 // arriba de 60 el arranque pesaría más que el render, así que es el techo útil, no sólo el del plan.
 // Si hay VARIOS videos rendeando a la vez, repartí: chunks ≈ 60 / videos_en_curso.
-const [slug, comp, total, chunks = "60", pref] = process.argv.slice(2);
+const [slug, comp, total, chunksArg, pref] = process.argv.slice(2);
+let chunks = chunksArg || "60"; // puede BAJAR por auto-reparto (ver bloque de abajo)
 if (!slug || !comp || !total) {
   console.error("Uso: node scripts/farm.mjs <slug> <comp_id> <total_frames> [chunks] [prefijo]");
   process.exit(1);
@@ -40,6 +41,29 @@ const sh = (c) => execSync(c, { stdio: "inherit" });
 const out = (c) => execSync(c, { encoding: "utf8" }).trim();
 const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chunks (reusa el resto; assets ya subidos)
 const reuseAssets = process.env.REUSE_ASSETS === "1"; // full rerender with an already validated release
+
+// ── AUTO-REPARTO DE LOS 60 SLOTS ENTRE VIDEOS ────────────────────────────────────────────────
+// La cuenta Team tiene 60 jobs concurrentes: es un TECHO DURO del plan (no sube gratis). Un render
+// de 60 chunks se lleva los 60 slots él solo, así que al lanzar VARIOS videos a la vez cada uno pide
+// su tanda, GitHub encola el resto y los videos se traban entre sí — y cada chunk encolado igual va a
+// rebajar el tarball de assets ENTERO (~600 MB) cuando le toque, así que partir de más también gasta
+// más. Acá SOLO BAJAMOS los chunks (nunca los subimos) y solo si hay OTROS videos en curso: repartimos
+// 60 entre todos (este incluido), con piso de 12 (menos arriesga el timeout de 90' por chunk en un
+// video largo). El número que pasás a mano queda como TECHO. Desactivar: FARM_FIXED_CHUNKS=1.
+if (!process.env.FARM_FIXED_CHUNKS && !only) {
+  try {
+    const runs = JSON.parse(execSync(`gh run list --workflow=render.yml -L 40 --json status,headBranch`, { encoding: "utf8" }))
+      .filter((r) => r.status !== "completed" && r.headBranch && r.headBranch !== `molino-${slug}`);
+    const otros = new Set(runs.map((r) => r.headBranch)).size;
+    if (otros > 0) {
+      const reparto = Math.max(12, Math.round(60 / (otros + 1)));
+      if (reparto < Number(chunks)) {
+        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de 60 slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
+        chunks = String(reparto);
+      }
+    }
+  } catch { /* sin gh o sin red: me quedo con el valor pasado */ }
+}
 
 // ── PRE-VUELO (milisegundos, todo local) ────────────────────────────────────────────────
 // Sin esto se sube ~1 GB de assets y se encienden 20-24 runners para que recién ADENTRO del
@@ -88,14 +112,19 @@ if (!only && !reuseAssets) { // partial/recovery rerenders reuse the already val
 // 1) tarball de assets (TAR_DIR redirige el .tar a otro disco — C: se llena con ~1GB)
 const tarDir = process.env.TAR_DIR || ".";
 const tar = `${tarDir}/assets-${slug}.tar`;
-const avatarCandidates = [`public/avatar_${slug}.mp4`, `public/${slug}_opt.mp4`];
+const avatarCandidates = [`public/${slug}_avatar.mp4`, `public/avatar_${slug}.mp4`, `public/${slug}_opt.mp4`];
 const avatar = avatarCandidates.find((candidate) => fs.existsSync(candidate)) || avatarCandidates[0];
-const wav = `public/${slug}.wav`;
+const audioCandidates = [
+  process.env.AUDIO_FILE ? `public/${process.env.AUDIO_FILE.replace(/^public[\\/]/, "")}` : null,
+  `public/${slug}_fish.wav`,
+  `public/${slug}.wav`,
+].filter(Boolean);
+const wav = audioCandidates.find((candidate) => fs.existsSync(candidate)) || audioCandidates[0];
 if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
 const hasAvatar = fs.existsSync(avatar); // videos FACELESS do not have either canonical avatar path
 if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la narración`);
 // rutas relativas a public/ (el workflow extrae con -C public)
-let items = [`${slug}.wav`];
+let items = [wav.replace(/^public[\\/]/, "")];
 if (hasAvatar) items.unshift(avatar.replace(/^public[\\/]/, ""));
 // SFX: `public/` está en .gitignore, así que un worktree nuevo nace SIN public/sfx. Este `if` se
 // escribió como defensa, pero la rama defensiva ES el caso roto: el tar salía sin sfx, en silencio,
@@ -199,8 +228,16 @@ if (pref && pref.startsWith("@")) {
       console.log(`  ${d}: ${usados.length} archivo(s) usados (${mb.toFixed(0)} MB) en vez de la carpeta entera (${totalMb} MB)`);
       items.push(...usados);
     } else {
-      console.log(`  ${d}: no pude listar los usados → empaqueto la carpeta entera (seguro pero pesado)`);
-      items.push(d);
+      // Antes de caer a la carpeta ENTERA: si la lista EXPLÍCITA (@lista) ya nombra archivos de
+      // este dir (p.ej. med/<slug>_qr.png viene del BEAT, no de src), usar esos. El grep sólo mira
+      // src y no ve los assets nombrados en los beats → falso "no pude listar" y tarball inflado.
+      const enLista = items.filter((it) => it === d + "/" || it.startsWith(d + "/"));
+      if (enLista.length) {
+        console.log(`  ${d}: ${enLista.length} archivo(s) de la lista explícita (sin la carpeta entera)`);
+      } else {
+        console.log(`  ${d}: no pude listar los usados → empaqueto la carpeta entera (seguro pero pesado)`);
+        items.push(d);
+      }
     }
   }
 
@@ -256,7 +293,11 @@ fs.writeFileSync(listFile, items.join("\n"));
 console.log(`empaquetando ${items.length} entradas → ${tar} ...`);
 // El tar de Windows (bsdtar) maneja rutas D:\ nativamente y NO soporta --force-local
 // (eso es de GNU tar). Detectamos cuál hay: si es bsdtar, sin --force-local.
-let tarArgs = ["-cf", tar, "-C", "public", "-T", listFile];
+// File links are useful locally to keep large avatar/audio assets on D:, but the FARM runners
+// cannot resolve a Windows target such as D:\\CodexMedia\\.... Opt in to materializing their
+// bytes in the transport tar without replacing the local links.
+const dereferenceLinks = process.env.FARM_DEREFERENCE_LINKS === "1";
+let tarArgs = [...(dereferenceLinks ? ["-h"] : []), "-cf", tar, "-C", "public", "-T", listFile];
 try {
   const help = execSync("tar --version", { encoding: "utf8" });
   if (/GNU tar/i.test(help)) tarArgs = ["--force-local", ...tarArgs]; // solo GNU lo necesita/soporta
@@ -300,11 +341,14 @@ if (fs.statSync(tar).size <= releaseAssetLimit) {
 
 // 2) subir como release asset (reemplaza si ya existe)
 const relTag = `assets-${slug}`;
+// Stitch downloads the continuous master WAV as a release asset (not from inside the tar), so
+// publish the exact same file alongside the tar parts. The tar still contains it for Remotion.
+const releaseFiles = [...uploadFiles, wav];
 let reusableRelease = false;
 try {
   const release = JSON.parse(out(`gh release view ${relTag} --json isDraft,assets`));
   const remote = new Map((release.assets || []).map((asset) => [asset.name, Number(asset.size || 0)]));
-  reusableRelease = !release.isDraft && uploadFiles.every((file) => remote.get(path.basename(file)) === fs.statSync(file).size);
+  reusableRelease = !release.isDraft && releaseFiles.every((file) => remote.get(path.basename(file)) === fs.statSync(file).size);
 } catch { /* no existe o está incompleto */ }
 // `gh release create` puede dejar un draft huérfano si la subida grande se corta. Ese draft no
 // siempre aparece en `gh release view <tag>` y el reintento falla para siempre con HTTP 422. La API
@@ -323,9 +367,9 @@ if (!reusableRelease) {
   // GitHub may not have made visible yet after cleanup. The former race caused
   // intermittent HTTP 422 "Reference does not exist" before any render run.
   const releaseTarget = out("git rev-parse HEAD");
-  sh(`gh release create ${relTag} ${uploadFiles.map((file) => `"${file}"`).join(" ")} --target ${releaseTarget} --title ${relTag} --notes "assets del render"`);
+  sh(`gh release create ${relTag} ${releaseFiles.map((file) => `"${file}"`).join(" ")} --target ${releaseTarget} --title ${relTag} --notes "assets del render"`);
 } else {
-  console.log(`release ${relTag} ya contiene exactamente las ${uploadFiles.length} parte(s); reutilizo la subida`);
+  console.log(`release ${relTag} ya contiene exactamente las ${releaseFiles.length} parte(s), incluido el WAV máster; reutilizo la subida`);
 }
 for (const file of new Set([tar, ...uploadFiles])) fs.rmSync(file, {force:true});
 }
@@ -391,10 +435,13 @@ if (only) {
   }
 }
 
-// 2.5) CANDADO DE RENDER — la cuenta tiene 20 jobs concurrentes en total. Si dos videos rendean a la
-// vez se reparten los slots y los DOS tardan el doble. Serializando, cada render usa los 20 a pleno y
-// el throughput total es mayor. El resto del pipeline (guion, Modal, b-roll) sigue en paralelo: esto
-// solo hace cola en el render. Desactivable con FARM_NO_LOCK=1.
+// 2.5) CANDADO DE RENDER — OPT-IN. La cuenta es GitHub TEAM = 60 jobs concurrentes (NO 20; eso era el
+// tope Free viejo con el que se escribió esto). Un render son 60 chunks, así que UNO SOLO ya usa los
+// 60 en una ola. Serializar acá DESPERDICIA capacidad: cuando el render de adelante baja a sus últimos
+// chunks deja ~40-52 slots ociosos mientras el siguiente espera el candado (medido ago-2026: v2 esperó
+// 2 renders y sólo se usaban ~20). Por eso el default AHORA es NO serializar: se dispara y GitHub
+// encola los chunks, llenando hasta 60 entre todos los renders. El guard de DUPLICADOS (más abajo)
+// sigue evitando 2 corridas DEL MISMO video. Para volver al viejo modo serial: FARM_SERIALIZE=1.
 const LOCK = path.join(os.tmpdir(), "bagasy-render.lock");
 const LOCK_STALE_MS = 90 * 60 * 1000; // si el dueño se colgó, a los 90' el candado se considera vencido
 const napMs = (ms) => execSync(`sleep ${Math.round(ms / 1000)} 2>/dev/null || ping -n ${Math.round(ms / 1000) + 1} 127.0.0.1 >NUL`, { stdio: "ignore", shell: true });
@@ -409,14 +456,14 @@ function lockOwner() { // devuelve el dueño VIVO del candado, o null si está l
 function releaseLock() {
   try { if (JSON.parse(fs.readFileSync(LOCK, "utf8")).pid === process.pid) fs.rmSync(LOCK, { force: true }); } catch { /* no es mío o no está */ }
 }
-if (!process.env.FARM_NO_LOCK) {
+if (process.env.FARM_SERIALIZE) { // opt-in: viejo modo serial (cuenta Free/20). Default = no serializar (Team/60).
   let avisado = false;
   for (;;) {
     const dueño = lockOwner();
     if (!dueño) { try { fs.rmSync(LOCK, { force: true }); } catch { /* ya no está */ } }
     try { fs.writeFileSync(LOCK, JSON.stringify({ pid: process.pid, slug, at: Date.now() }), { flag: "wx" }); break; }
     catch {
-      if (!avisado) { console.log(`⏳ hay otro render en curso (${dueño?.slug || "otro video"}) — espero mi turno para usar los 20 slots enteros...`); avisado = true; }
+      if (!avisado) { console.log(`⏳ FARM_SERIALIZE: hay otro render en curso (${dueño?.slug || "otro video"}) — espero mi turno...`); avisado = true; }
       napMs(30_000);
     }
   }
