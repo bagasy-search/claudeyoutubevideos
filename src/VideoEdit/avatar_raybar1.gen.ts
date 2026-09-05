@@ -685,7 +685,7 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 1248.867,
+    "start": 1245.633,
     "mode": "full"
   },
   {
@@ -717,7 +717,15 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 1316.6,
+    "start": 1312.533,
+    "mode": "full"
+  },
+  {
+    "start": 1313.2,
+    "mode": "hidden"
+  },
+  {
+    "start": 1319.1,
     "mode": "full"
   },
   {
