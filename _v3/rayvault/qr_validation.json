@@ -1,0 +1,20 @@
+{
+  "url": "https://raykessler.vercel.app/",
+  "decoded": "https://raykessler.vercel.app/",
+  "errorCorrection": "M",
+  "quietZoneModules": 4,
+  "modules": 29,
+  "sourceSize": 444,
+  "screenSize1080p": 222,
+  "screenDecodeVerified": true,
+  "placeholder": false,
+  "early": {
+    "from": 982,
+    "to": 2322
+  },
+  "closing": {
+    "from": 50385,
+    "to": 52245
+  },
+  "fps": 30
+}

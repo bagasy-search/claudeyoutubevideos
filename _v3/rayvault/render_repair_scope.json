@@ -15,9 +15,10 @@
     "rv_249"
   ],
   "unchangedNarrationAndFrames": true,
-  "changedSharedKit": "StatBug only",
+  "changedSharedKit": "StatBug contrast and requested RayCta redesign",
   "onlyChunks": [
     0,
+    1,
     11,
     12,
     14,
@@ -27,10 +28,10 @@
     25,
     26,
     27,
+    28,
     29
   ],
   "reusedChunks": [
-    1,
     2,
     3,
     4,
@@ -47,9 +48,21 @@
     20,
     21,
     22,
-    23,
-    28
+    23
   ],
   "totalFrames": 52404,
-  "chunkCount": 30
+  "chunkCount": 30,
+  "requestedQrSlots": [
+    {
+      "from": 982,
+      "to": 2322,
+      "seconds": 44.666666666666664
+    },
+    {
+      "from": 50385,
+      "to": 52245,
+      "seconds": 62.0
+    }
+  ],
+  "qrUrl": "https://raykessler.vercel.app/"
 }

@@ -2,7 +2,7 @@
   "totalMs": 1746789.167,
   "totalFrames": 52404,
   "beats": 297,
-  "overlays": 5,
+  "overlays": 6,
   "components": [
     "BigStat",
     "MythTruth",
@@ -16,7 +16,7 @@
     "RayCta"
   ],
   "uniqueImages": 310,
-  "assetCount": 312,
+  "assetCount": 313,
   "clips": [
     {
       "id": "rv_003",

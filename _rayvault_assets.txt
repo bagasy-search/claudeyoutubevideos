@@ -593,5 +593,6 @@ img/rayvault_rv_255.jpg
 img/rayvault_rv_255_blur.jpg
 img/rayvault_rv_256_fix2.jpg
 img/rayvault_rv_256_fix2_blur.jpg
+qr_rayvault.png
 rayvault_avatar.mp4
 rayvault_fish.wav

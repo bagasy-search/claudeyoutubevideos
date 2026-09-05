@@ -43,7 +43,7 @@ const goodClips=new Set(clipRows.filter(v=>v.ok).map(v=>v.name||v.id));
 const overrides=fs.existsSync('_v3/rayvault/asset_overrides.json')?JSON.parse(fs.readFileSync('_v3/rayvault/asset_overrides.json','utf8')):{};
 const applyOverride=(s)=>{s=canonical(s);for(const [a,b]of Object.entries(overrides))s=s.replace(new RegExp(a+'(?=\\.(?:jpg|mp4)$|$)'),b);return s;};
 const overrideDeep=(v)=>typeof v==='string'?applyOverride(v):Array.isArray(v)?v.map(overrideDeep):v&&typeof v==='object'?Object.fromEntries(Object.entries(v).map(([k,x])=>[k,overrideDeep(x)])):v;
-const assets=new Set(['rayvault_avatar.mp4','rayvault_fish.wav']);
+const assets=new Set(['rayvault_avatar.mp4','rayvault_fish.wav','qr_rayvault.png']);
 const owners=new Map();
 const useAssets=(v,id)=>{
  if(typeof v==='string'&&/^(img\/.*\.(?:jpg|png|webp)|broll\/.*\.mp4)$/.test(v)){
@@ -78,13 +78,19 @@ for(let i=0;i<beats.length;i++){
  if((b.to-b.from)/30>10.5)throw Error('Unbroken shot over10.5seconds '+b.id);
  if(b.tipo!=='avatar'){if(b.tipo==='componente')useAssets(b.props,b.id);else useAssets(b.src,b.id);}
 }
-const overlays=(plan.overlays||[]).map((o)=>({...o,id:o.id||`ov_${o.ms_in}`,from:Math.round(o.ms_in/1000*30),to:Math.round(o.ms_out/1000*30),component:o.component||o.componente,props:overrideDeep(deep(o.props||{}))})).reduce((out,o)=>{
- if(o.component==='RayCta')o.props.sub='The door inspection guide is in development.';
+const overlays=(plan.overlays||[]).filter(o=>(o.component||o.componente)!=='RayCta').map((o)=>({...o,id:o.id||`ov_${o.ms_in}`,from:Math.round(o.ms_in/1000*30),to:Math.round(o.ms_out/1000*30),component:o.component||o.componente,props:overrideDeep(deep(o.props||{}))})).reduce((out,o)=>{
  const previous=out.at(-1);
  if(previous&&previous.component===o.component&&previous.to===o.from&&JSON.stringify(previous.props)===JSON.stringify(o.props)){previous.to=o.to;previous.ms_out=o.ms_out;}
  else out.push(o);
  return out;
 },[]);
+const guideProps={title:'The One Afternoon Door',sub:'Know what to check before you buy another lock.',
+ domain:'raykessler.vercel.app',eyebrow:'CHECK YOUR DOOR TODAY',action:'SCAN TO SEE THE GUIDE',qr:'qr_rayvault.png',showQr:true};
+for(const slot of [{id:'guide_early',from:982,to:2322,baseBeatId:'rv_009'},{id:'guide_closing',from:50385,to:52245,baseBeatId:'rv_241'}]){
+ overlays.push({...slot,component:'RayCta',props:{...guideProps},layer:'over',mountsAsset:false,
+  assetUsage:'scannable_brand_graphic_overlay',ms_in:slot.from/30*1000,ms_out:slot.to/30*1000,
+  durationInFrames:slot.to-slot.from,durationSeconds:(slot.to-slot.from)/30});
+}
 for(const o of overlays){if(!Number.isFinite(o.from)||o.to<=o.from)throw Error('Unanchored overlay '+o.id);useAssets(o.props,o.id);}
 const components=new Set([...beats,...overlays].map(b=>b.component).filter(Boolean));
 if(components.size<6)throw Error('Insufficient kit variety');
