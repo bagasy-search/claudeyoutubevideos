@@ -74,7 +74,7 @@ const WorkStat:React.FC=()=>{
 
 const LoadPath:React.FC=()=>{
  const f=useCurrentFrame();return <AbsoluteFill style={{overflow:'hidden'}}>
-  <div style={{position:'absolute',inset:0,transformOrigin:'56% 66%',transform:`scale(${1+rise(f,85,145)*.11}) translateX(${-rise(f,85,145)*36}px)`}}><Exploded/></div>
+  <div style={{position:'absolute',inset:0,transformOrigin:'20% 66%',transform:`scale(${1+rise(f,85,145)*.11})`}}><Exploded/></div>
  </AbsoluteFill>;
 };
 
@@ -84,7 +84,7 @@ const Shot:React.FC<{index:number}>=({index})=>{
  switch(index){
  case 0:return <Opening/>;
  case 1:return <Film name="stock_lock.mp4" start={114} zoom={1.25} push={.08} origin="58% 50%"/>;
- case 2:return <ImageShot name="floor.jpg" zoom={1.62} end={1.75} origin="20% 40%"><Type top={795} size={100}>THE PINE GAVE WAY.</Type></ImageShot>;
+ case 2:return <ImageShot name="floor.jpg" zoom={2.35} end={2.45} origin="0% 0%"><Type top={795} size={100}>THE PINE GAVE WAY.</Type></ImageShot>;
  case 3:return <Film name="porch.mp4" zoom={1.04} push={.07}/>;
  case 4:return <FastenerMacro/>;
  case 5:return <ImageShot name="homeowner.jpg" zoom={1.03} end={1.10}/>;
