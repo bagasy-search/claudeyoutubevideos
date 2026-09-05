@@ -22,7 +22,8 @@ if(process.argv.includes('--ready')){
  if(result.job.yt_video_id)throw Error('Unexpected YouTube publication id');
  if(result.thumb!==before.thumb||result.job.thumb_url!==before.thumb)throw Error('Thumbnail changed');
  if(result.job.yt_title!==meta.title||result.job.yt_description!==meta.description)throw Error('Delivered metadata mismatch');
- if(result.job.mp4_url!=='https://github.com/bagasy-search/claudeyoutubevideos/releases/download/rayvault/rayvault.mp4')throw Error('Wrong final video URL');
+ const expectedUrl='https://github.com/bagasy-search/claudeyoutubevideos/releases/download/rayvault/rayvault.mp4'+(process.env.MP4_SUFIJO||'');
+ if(result.job.mp4_url!==expectedUrl)throw Error('Wrong final video URL');
  result.verifiedReady=true;
 }
 fs.writeFileSync(dest,JSON.stringify(result,null,2));
