@@ -23,6 +23,12 @@ const byName = Object.fromEntries(momentos.map((m) => [m.name, m]));
 //    Tienen PRIORIDAD sobre el clip generado (un video 100 % IA "se siente vacío").
 const REALP = "_v3/fedvet3_real.json";
 const REAL = fs.existsSync(REALP) ? JSON.parse(fs.readFileSync(REALP, "utf8")) : {};
+// ⛔ El AUDITOR encontró metraje real que ROMPE LA IDENTIDAD del video (un perro durmiendo en el
+//    PASTO a plena luz, en un video que pasa de noche en un dormitorio). No es "un poco genérico":
+//    es otro video, y caía en el segundo 30, donde se decide la retención. Esos planos vuelven a su
+//    clip generado, que muestra la escena de ESA frase. Lista: _v3/fedvet3_exterior.mjs
+const FUERA = "_v3/fedvet3_real_fuera.json";
+if (fs.existsSync(FUERA)) for (const n of JSON.parse(fs.readFileSync(FUERA, "utf8"))) delete REAL[n];
 const img = (n) => `img/${n}.jpg`;
 const jstr = (s) => JSON.stringify(s);
 
