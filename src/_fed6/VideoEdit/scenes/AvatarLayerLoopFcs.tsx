@@ -1,5 +1,4 @@
-import { Video } from "@remotion/media";
-import { AbsoluteFill, Loop, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
+import { AbsoluteFill, Loop, OffthreadVideo, staticFile, useCurrentFrame, useVideoConfig, interpolate, Easing } from "remotion";
 import { COLORS } from "../theme";
 
 // ── AVATAR LAYER ──────────────────────────────────────────────────────────────
@@ -121,21 +120,17 @@ export const AvatarLayerLoopFcs: React.FC<{
   // zoom extra SOLO en split y SOLO si el video lo pide (default 1 → sin cambio)
   const splitZoom = isSplit && avatarFocus?.splitZoom ? avatarFocus.splitZoom : 1;
   const zoom = (curMode === "full" ? fullZoom : kb) * splitZoom;
-  let coverW = Math.max(w, h * ratio) * zoom;
-  let coverH = coverW / ratio;
-  const clampOff = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
+  void ratio; // ya no hace falta: el cover lo resuelve el CSS, no una cuenta con el aspecto
+  const clamp01 = (v: number) => Math.min(1, Math.max(0, v));
   // ENCUADRE del split (halfR/halfL): centrar la CARA de Federer en su media pantalla.
   //  · Si el video pasa avatarFocus.x (0..1 = dónde está su cara en ESE clip) → offX la centra ahí,
   //    con clamp para que el video SIEMPRE cubra la caja (nunca borde vacío ni corte al costado).
   //  · Si NO lo pasa → se mantiene el sesgo anterior (0.10): comportamiento idéntico a antes.
-  const offX = isSplit
-    ? (avatarFocus?.x != null
-        ? clampOff(w / 2 - avatarFocus.x * coverW, w - coverW, 0)
-        : (w - coverW) * 0.10)
-    : (w - coverW) / 2;
-  const offY = (isSplit && avatarFocus?.y != null)
-    ? clampOff(h / 2 - avatarFocus.y * coverH, h - coverH, 0)
-    : (h - coverH) * (0.28 + 0.04 * smallness); // mostrar la cara
+  // objectPosition: 0..1 = que parte del cuadro fuente se alinea con la caja.
+  // Se conserva el sesgo de antes: 0.10 a la izquierda en split, centrado en full.
+  const posX = isSplit ? clamp01(avatarFocus?.x ?? 0.10) : 0.5;
+  // vertical: se conserva el sesgo a la CARA (~0.30 arriba) que ya estaba validado
+  const posY = clamp01(avatarFocus?.y ?? (0.28 + 0.04 * smallness));
 
   // ★ AUDIO CONTINUO (fix del corte de oración): UN SOLO <Video>, SIEMPRE montado en la MISMA
   // posición del árbol. Antes había DOS ramas (oculto/visible) con <Video> distintos → al cambiar
@@ -164,10 +159,28 @@ export const AvatarLayerLoopFcs: React.FC<{
         }}
       >
         <Loop durationInFrames={avatarFrames} layout="none">
-          <Video
+          <OffthreadVideo
             src={staticFile(src)}
             muted
-            style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
+            // ⛔ ANTES: width/height numericos calculados a mano (coverW/coverH) + left/top.
+            // En el render el elemento NO tomaba ese tamano y quedaba con el CUADRO ENTERO
+            // encogido al ancho de la caja: en el split 50/50 el avatar salia como un
+            // rectangulo 16:9 de 960x540 flotando en su mitad de 960x1080 (medido), con
+            // fondo arriba y abajo. En "full" no se notaba porque la caja YA es 16:9.
+            // AHORA el llenado lo hace el CSS: cover sobre la caja, que no depende de
+            // ningun default de Remotion NI del `ratio` hardcodeado a 16/9 (si el mp4 del
+            // avatar no fuera 16:9, la cuenta vieja tambien mentia). El encuadre pasa a
+            // objectPosition y el push-in a transform:scale.
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: `${(posX * 100).toFixed(1)}% ${(posY * 100).toFixed(1)}%`,
+              transform: `scale(${zoom.toFixed(4)})`,
+              transformOrigin: "center center",
+            }}
           />
         </Loop>
         {/* viñeta interna suave cuando es recuadro (solo si se ve) */}
