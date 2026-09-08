@@ -1,0 +1,6573 @@
+[
+ {
+  "id": "s00_001",
+  "ms": 2.88,
+  "dur": 4.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_001.jpg"
+ },
+ {
+  "id": "s00_002",
+  "ms": 7.52,
+  "dur": 6.88,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_002.jpg"
+ },
+ {
+  "id": "s00_003",
+  "ms": 14.4,
+  "dur": 2.56,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_003.jpg"
+ },
+ {
+  "id": "s00_004",
+  "ms": 16.96,
+  "dur": 4.64,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_004.jpg"
+ },
+ {
+  "id": "s00_005",
+  "ms": 21.6,
+  "dur": 7.2,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s00_005.mp4"
+ },
+ {
+  "id": "s00_006",
+  "ms": 28.8,
+  "dur": 2.08,
+  "mov": "out",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s00_007",
+  "ms": 30.88,
+  "dur": 3.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_007.jpg"
+ },
+ {
+  "id": "s00_008",
+  "ms": 34.72,
+  "dur": 4.48,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s00_008.mp4"
+ },
+ {
+  "id": "s00_009",
+  "ms": 39.2,
+  "dur": 1.56,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_009.jpg"
+ },
+ {
+  "id": "s00_010",
+  "ms": 40.76,
+  "dur": 8.76,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_010.jpg"
+ },
+ {
+  "id": "s00_011",
+  "ms": 49.52,
+  "dur": 4.32,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_011.jpg"
+ },
+ {
+  "id": "s00_012",
+  "ms": 53.84,
+  "dur": 4.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_012.jpg"
+ },
+ {
+  "id": "s00_013",
+  "ms": 58.4,
+  "dur": 1.92,
+  "mov": "in",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s00_014",
+  "ms": 60.32,
+  "dur": 6.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_014.jpg"
+ },
+ {
+  "id": "s00_015",
+  "ms": 66.56,
+  "dur": 1.28,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_015.jpg"
+ },
+ {
+  "id": "s00_016",
+  "ms": 67.84,
+  "dur": 1.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_016.jpg"
+ },
+ {
+  "id": "s00_017",
+  "ms": 69.52,
+  "dur": 1.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_017.jpg"
+ },
+ {
+  "id": "s00_018",
+  "ms": 71.36,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_018.jpg"
+ },
+ {
+  "id": "s00_019",
+  "ms": 73.6,
+  "dur": 5.52,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_019.jpg"
+ },
+ {
+  "id": "s00_020",
+  "ms": 79.12,
+  "dur": 6.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_020.jpg"
+ },
+ {
+  "id": "s00_021",
+  "ms": 86.08,
+  "dur": 6.4,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_021.jpg"
+ },
+ {
+  "id": "s00_022",
+  "ms": 92.48,
+  "dur": 2.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s00_022.mp4"
+ },
+ {
+  "id": "s00_023",
+  "ms": 95.36,
+  "dur": 5.76,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_023.jpg"
+ },
+ {
+  "id": "s00_024",
+  "ms": 101.12,
+  "dur": 4.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s00_024.mp4"
+ },
+ {
+  "id": "s00_025",
+  "ms": 105.44,
+  "dur": 6.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s00_025.mp4"
+ },
+ {
+  "id": "s00_026",
+  "ms": 111.84,
+  "dur": 3.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s00_026.mp4"
+ },
+ {
+  "id": "s00_027",
+  "ms": 115.36,
+  "dur": 5.2,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_023.jpg"
+ },
+ {
+  "id": "s00_028",
+  "ms": 120.56,
+  "dur": 6.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_028.jpg"
+ },
+ {
+  "id": "s00_029",
+  "ms": 126.88,
+  "dur": 4.64,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_029.jpg"
+ },
+ {
+  "id": "s01_001",
+  "ms": 131.52,
+  "dur": 0.88,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_001.jpg"
+ },
+ {
+  "id": "s01_002",
+  "ms": 132.4,
+  "dur": 5.36,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_002.jpg"
+ },
+ {
+  "id": "s01_003",
+  "ms": 137.76,
+  "dur": 3.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s01_003.mp4"
+ },
+ {
+  "id": "s01_004",
+  "ms": 141.2,
+  "dur": 2.88,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_004.jpg"
+ },
+ {
+  "id": "s01_005",
+  "ms": 144.08,
+  "dur": 2.24,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s01_005.jpg"
+ },
+ {
+  "id": "s01_006",
+  "ms": 146.32,
+  "dur": 3.04,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s01_006.mp4"
+ },
+ {
+  "id": "s01_007",
+  "ms": 149.36,
+  "dur": 3.52,
+  "mov": "out",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s01_008",
+  "ms": 152.88,
+  "dur": 1.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_008.jpg"
+ },
+ {
+  "id": "s01_009",
+  "ms": 154.72,
+  "dur": 5.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_009.jpg"
+ },
+ {
+  "id": "s01_010",
+  "ms": 159.76,
+  "dur": 4.8,
+  "mov": "left",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s01_011",
+  "ms": 164.56,
+  "dur": 4.4,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s01_011.jpg"
+ },
+ {
+  "id": "s01_012",
+  "ms": 168.96,
+  "dur": 2.96,
+  "mov": "right",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s01_013",
+  "ms": 171.92,
+  "dur": 1.6,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_013.jpg"
+ },
+ {
+  "id": "s01_014",
+  "ms": 173.52,
+  "dur": 2.32,
+  "mov": "in",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s01_015",
+  "ms": 175.84,
+  "dur": 3.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_015.jpg"
+ },
+ {
+  "id": "s01_016",
+  "ms": 179.6,
+  "dur": 8.24,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s01_016.jpg"
+ },
+ {
+  "id": "s01_017",
+  "ms": 187.84,
+  "dur": 6.16,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_017.jpg"
+ },
+ {
+  "id": "s01_018",
+  "ms": 194,
+  "dur": 2.32,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_018.jpg"
+ },
+ {
+  "id": "s01_019",
+  "ms": 196.32,
+  "dur": 2.8,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s01_019.mp4"
+ },
+ {
+  "id": "s01_020",
+  "ms": 199.12,
+  "dur": 8.4,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s01_020.jpg"
+ },
+ {
+  "id": "s01_021",
+  "ms": 207.52,
+  "dur": 11.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_021.jpg"
+ },
+ {
+  "id": "s01_022",
+  "ms": 218.8,
+  "dur": 6,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s01_022.jpg"
+ },
+ {
+  "id": "s02_001",
+  "ms": 224.8,
+  "dur": 8.8,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_001.jpg"
+ },
+ {
+  "id": "s02_002",
+  "ms": 233.6,
+  "dur": 2.72,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_002.jpg"
+ },
+ {
+  "id": "s02_003",
+  "ms": 236.32,
+  "dur": 3.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_003.jpg"
+ },
+ {
+  "id": "s02_004",
+  "ms": 239.52,
+  "dur": 2.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_004.jpg"
+ },
+ {
+  "id": "s02_005",
+  "ms": 242.08,
+  "dur": 1.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_005.jpg"
+ },
+ {
+  "id": "s02_006",
+  "ms": 243.12,
+  "dur": 9.52,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_006.jpg"
+ },
+ {
+  "id": "s02_007",
+  "ms": 252.64,
+  "dur": 10.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s02_008",
+  "ms": 263.04,
+  "dur": 2,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_008.jpg"
+ },
+ {
+  "id": "s02_009",
+  "ms": 265.04,
+  "dur": 1.92,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_009.jpg"
+ },
+ {
+  "id": "s02_010",
+  "ms": 266.96,
+  "dur": 2.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_010.jpg"
+ },
+ {
+  "id": "s02_011",
+  "ms": 269.04,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s02_011.jpg"
+ },
+ {
+  "id": "s02_012",
+  "ms": 271.28,
+  "dur": 4.4,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s02_012.jpg"
+ },
+ {
+  "id": "s02_013",
+  "ms": 275.68,
+  "dur": 6.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_006.jpg"
+ },
+ {
+  "id": "s02_014",
+  "ms": 282.32,
+  "dur": 10.56,
+  "mov": "right",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s02_015",
+  "ms": 292.88,
+  "dur": 6.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_015.jpg"
+ },
+ {
+  "id": "s02_016",
+  "ms": 299.44,
+  "dur": 2.8,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_016.jpg"
+ },
+ {
+  "id": "s02_017",
+  "ms": 302.24,
+  "dur": 2.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_017.jpg"
+ },
+ {
+  "id": "s02_018",
+  "ms": 305.2,
+  "dur": 1.36,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_018.jpg"
+ },
+ {
+  "id": "s02_019",
+  "ms": 306.56,
+  "dur": 5.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_019.jpg"
+ },
+ {
+  "id": "s02_020",
+  "ms": 312.16,
+  "dur": 3.04,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_018.jpg"
+ },
+ {
+  "id": "s02_021",
+  "ms": 315.2,
+  "dur": 4.88,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_021.jpg"
+ },
+ {
+  "id": "s02_022",
+  "ms": 320.08,
+  "dur": 2.48,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_022.jpg"
+ },
+ {
+  "id": "s02_023",
+  "ms": 322.56,
+  "dur": 3.84,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_023.jpg"
+ },
+ {
+  "id": "s02_024",
+  "ms": 326.4,
+  "dur": 1.52,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_024.jpg"
+ },
+ {
+  "id": "s02_025",
+  "ms": 327.92,
+  "dur": 11.76,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_025.jpg"
+ },
+ {
+  "id": "s02_026",
+  "ms": 339.68,
+  "dur": 6.08,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s02_026.mp4"
+ },
+ {
+  "id": "s02_027",
+  "ms": 345.76,
+  "dur": 8.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_027.jpg"
+ },
+ {
+  "id": "s02_028",
+  "ms": 354.08,
+  "dur": 6.48,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_028.jpg"
+ },
+ {
+  "id": "s02_029",
+  "ms": 360.56,
+  "dur": 2.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s02_029.mp4"
+ },
+ {
+  "id": "s02_030",
+  "ms": 363.52,
+  "dur": 4.48,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_030.jpg"
+ },
+ {
+  "id": "s02_031",
+  "ms": 368,
+  "dur": 6.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s02_022.jpg"
+ },
+ {
+  "id": "s02_032",
+  "ms": 374.08,
+  "dur": 4.88,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s02_032.mp4"
+ },
+ {
+  "id": "s03_001",
+  "ms": 378.96,
+  "dur": 1.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_001.jpg"
+ },
+ {
+  "id": "s03_002",
+  "ms": 380.48,
+  "dur": 6.24,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_002.jpg"
+ },
+ {
+  "id": "s03_003",
+  "ms": 386.72,
+  "dur": 2.72,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_003.jpg"
+ },
+ {
+  "id": "s03_004",
+  "ms": 389.44,
+  "dur": 6,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_004.jpg"
+ },
+ {
+  "id": "s03_005",
+  "ms": 395.44,
+  "dur": 6.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_005.jpg"
+ },
+ {
+  "id": "s03_006",
+  "ms": 402.08,
+  "dur": 1.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_006.jpg"
+ },
+ {
+  "id": "s03_007",
+  "ms": 403.92,
+  "dur": 4.8,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_007.jpg"
+ },
+ {
+  "id": "s03_008",
+  "ms": 408.72,
+  "dur": 6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_008.jpg"
+ },
+ {
+  "id": "s03_009",
+  "ms": 414.72,
+  "dur": 6.64,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_009.jpg"
+ },
+ {
+  "id": "s03_010",
+  "ms": 421.36,
+  "dur": 4.48,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_003.jpg"
+ },
+ {
+  "id": "s03_011",
+  "ms": 425.84,
+  "dur": 4.16,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_011.jpg"
+ },
+ {
+  "id": "s03_012",
+  "ms": 430,
+  "dur": 2.64,
+  "mov": "right",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s03_013",
+  "ms": 432.64,
+  "dur": 3.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_008.jpg"
+ },
+ {
+  "id": "s03_014",
+  "ms": 436.4,
+  "dur": 4.24,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_014.jpg"
+ },
+ {
+  "id": "s03_015",
+  "ms": 440.64,
+  "dur": 3.36,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_015.jpg"
+ },
+ {
+  "id": "s03_016",
+  "ms": 444,
+  "dur": 6.24,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_006.jpg"
+ },
+ {
+  "id": "s03_017",
+  "ms": 450.24,
+  "dur": 4.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_004.jpg"
+ },
+ {
+  "id": "s03_018",
+  "ms": 454.8,
+  "dur": 4.4,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_018.jpg"
+ },
+ {
+  "id": "s03_019",
+  "ms": 459.2,
+  "dur": 4.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_019.jpg"
+ },
+ {
+  "id": "s03_020",
+  "ms": 463.28,
+  "dur": 4.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_020.jpg"
+ },
+ {
+  "id": "s03_021",
+  "ms": 467.68,
+  "dur": 2.64,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s03_021.jpg"
+ },
+ {
+  "id": "s03_022",
+  "ms": 470.32,
+  "dur": 1.68,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_020.jpg"
+ },
+ {
+  "id": "s03_023",
+  "ms": 472,
+  "dur": 6.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_019.jpg"
+ },
+ {
+  "id": "s03_024",
+  "ms": 478.08,
+  "dur": 4.88,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_024.jpg"
+ },
+ {
+  "id": "s03_025",
+  "ms": 482.96,
+  "dur": 4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_025.jpg"
+ },
+ {
+  "id": "s03_026",
+  "ms": 486.96,
+  "dur": 4.8,
+  "mov": "in",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s03_027",
+  "ms": 491.76,
+  "dur": 6,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_025.jpg"
+ },
+ {
+  "id": "s03_028",
+  "ms": 497.76,
+  "dur": 9.04,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s03_028.mp4"
+ },
+ {
+  "id": "s03_029",
+  "ms": 506.8,
+  "dur": 8.72,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s03_029.mp4"
+ },
+ {
+  "id": "s03_030",
+  "ms": 515.52,
+  "dur": 4.4,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s03_025.jpg"
+ },
+ {
+  "id": "s04_001",
+  "ms": 519.92,
+  "dur": 6.96,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_001.jpg"
+ },
+ {
+  "id": "s04_002",
+  "ms": 526.88,
+  "dur": 5.6,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_002.jpg"
+ },
+ {
+  "id": "s04_003",
+  "ms": 532.48,
+  "dur": 6.88,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s04_003.mp4"
+ },
+ {
+  "id": "s04_004",
+  "ms": 539.36,
+  "dur": 3.68,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_004.jpg"
+ },
+ {
+  "id": "s04_005",
+  "ms": 543.04,
+  "dur": 1.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s04_005.mp4"
+ },
+ {
+  "id": "s04_006",
+  "ms": 544.88,
+  "dur": 3.92,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_006.jpg"
+ },
+ {
+  "id": "s04_007",
+  "ms": 548.8,
+  "dur": 3.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s04_003.mp4"
+ },
+ {
+  "id": "s04_008",
+  "ms": 552.24,
+  "dur": 5.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_008.jpg"
+ },
+ {
+  "id": "s04_009",
+  "ms": 557.84,
+  "dur": 5.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_009.jpg"
+ },
+ {
+  "id": "s04_010",
+  "ms": 563.28,
+  "dur": 4.96,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_010.jpg"
+ },
+ {
+  "id": "s04_011",
+  "ms": 568.24,
+  "dur": 3.2,
+  "mov": "in",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s04_012",
+  "ms": 571.44,
+  "dur": 4.4,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_012.jpg"
+ },
+ {
+  "id": "s04_013",
+  "ms": 575.84,
+  "dur": 6.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_013.jpg"
+ },
+ {
+  "id": "s04_014",
+  "ms": 582.8,
+  "dur": 2.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_014.jpg"
+ },
+ {
+  "id": "s04_015",
+  "ms": 585.68,
+  "dur": 3.92,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_015.jpg"
+ },
+ {
+  "id": "s04_016",
+  "ms": 589.6,
+  "dur": 3.6,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_016.jpg"
+ },
+ {
+  "id": "s04_017",
+  "ms": 593.2,
+  "dur": 4.08,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_017.jpg"
+ },
+ {
+  "id": "s04_018",
+  "ms": 597.28,
+  "dur": 5.76,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_018.jpg"
+ },
+ {
+  "id": "s04_019",
+  "ms": 603.04,
+  "dur": 10.8,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_019.jpg"
+ },
+ {
+  "id": "s04_020",
+  "ms": 613.84,
+  "dur": 5.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_020.jpg"
+ },
+ {
+  "id": "s04_021",
+  "ms": 619.68,
+  "dur": 0.88,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_021.jpg"
+ },
+ {
+  "id": "s04_022",
+  "ms": 620.56,
+  "dur": 7.6,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_022.jpg"
+ },
+ {
+  "id": "s04_023",
+  "ms": 628.16,
+  "dur": 1.44,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_023.jpg"
+ },
+ {
+  "id": "s04_024",
+  "ms": 629.6,
+  "dur": 2,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_024.jpg"
+ },
+ {
+  "id": "s04_025",
+  "ms": 631.6,
+  "dur": 10.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_025.jpg"
+ },
+ {
+  "id": "s04_026",
+  "ms": 641.68,
+  "dur": 7.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_026.jpg"
+ },
+ {
+  "id": "s04_027",
+  "ms": 649.52,
+  "dur": 4.48,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_027.jpg"
+ },
+ {
+  "id": "s04_028",
+  "ms": 654,
+  "dur": 1.92,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_028.jpg"
+ },
+ {
+  "id": "s04_029",
+  "ms": 655.92,
+  "dur": 6.8,
+  "mov": "in",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s04_030",
+  "ms": 662.72,
+  "dur": 3.36,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_030.jpg"
+ },
+ {
+  "id": "s04_031",
+  "ms": 666.08,
+  "dur": 7.12,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_031.jpg"
+ },
+ {
+  "id": "s04_032",
+  "ms": 673.2,
+  "dur": 5.84,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s04_030.jpg"
+ },
+ {
+  "id": "s04_033",
+  "ms": 679.04,
+  "dur": 3.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s04_033.jpg"
+ },
+ {
+  "id": "s05_001",
+  "ms": 682.72,
+  "dur": 1.92,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_001.jpg"
+ },
+ {
+  "id": "s05_002",
+  "ms": 684.64,
+  "dur": 3.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_002.mp4"
+ },
+ {
+  "id": "s05_003",
+  "ms": 688.16,
+  "dur": 6.08,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_003.mp4"
+ },
+ {
+  "id": "s05_004",
+  "ms": 694.24,
+  "dur": 4.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_004.mp4"
+ },
+ {
+  "id": "s05_005",
+  "ms": 698.56,
+  "dur": 4.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_005.jpg"
+ },
+ {
+  "id": "s05_006",
+  "ms": 703.44,
+  "dur": 3.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_006.mp4"
+ },
+ {
+  "id": "s05_007",
+  "ms": 707.2,
+  "dur": 6.8,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_007.mp4"
+ },
+ {
+  "id": "s05_008",
+  "ms": 714,
+  "dur": 7.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_008.jpg"
+ },
+ {
+  "id": "s05_009",
+  "ms": 721.6,
+  "dur": 4.48,
+  "mov": "right",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s05_010",
+  "ms": 726.08,
+  "dur": 7.36,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_007.mp4"
+ },
+ {
+  "id": "s05_011",
+  "ms": 733.44,
+  "dur": 2.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_006.mp4"
+ },
+ {
+  "id": "s05_012",
+  "ms": 736.32,
+  "dur": 4.8,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_008.jpg"
+ },
+ {
+  "id": "s05_013",
+  "ms": 741.12,
+  "dur": 1.92,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s05_013.jpg"
+ },
+ {
+  "id": "s05_014",
+  "ms": 743.04,
+  "dur": 11.76,
+  "mov": "in",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s05_015",
+  "ms": 754.8,
+  "dur": 7.12,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_007.mp4"
+ },
+ {
+  "id": "s05_016",
+  "ms": 761.92,
+  "dur": 4.48,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_016.jpg"
+ },
+ {
+  "id": "s05_017",
+  "ms": 766.4,
+  "dur": 5.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_017.jpg"
+ },
+ {
+  "id": "s05_018",
+  "ms": 771.92,
+  "dur": 6.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_018.jpg"
+ },
+ {
+  "id": "s05_019",
+  "ms": 778.16,
+  "dur": 6.72,
+  "mov": "left",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s05_020",
+  "ms": 784.88,
+  "dur": 5.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_004.mp4"
+ },
+ {
+  "id": "s05_021",
+  "ms": 789.92,
+  "dur": 3.2,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_002.mp4"
+ },
+ {
+  "id": "s05_022",
+  "ms": 793.12,
+  "dur": 3.36,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_022.jpg"
+ },
+ {
+  "id": "s05_023",
+  "ms": 796.48,
+  "dur": 2.48,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_001.jpg"
+ },
+ {
+  "id": "s05_024",
+  "ms": 798.96,
+  "dur": 2.48,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_024.jpg"
+ },
+ {
+  "id": "s05_025",
+  "ms": 801.44,
+  "dur": 3.84,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_025.jpg"
+ },
+ {
+  "id": "s05_026",
+  "ms": 805.28,
+  "dur": 3.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_026.jpg"
+ },
+ {
+  "id": "s05_027",
+  "ms": 808.8,
+  "dur": 3.92,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_024.jpg"
+ },
+ {
+  "id": "s05_028",
+  "ms": 812.72,
+  "dur": 3.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_016.jpg"
+ },
+ {
+  "id": "s05_029",
+  "ms": 816.24,
+  "dur": 4.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_029.jpg"
+ },
+ {
+  "id": "s05_030",
+  "ms": 820.8,
+  "dur": 2.48,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_030.mp4"
+ },
+ {
+  "id": "s05_031",
+  "ms": 823.28,
+  "dur": 2.96,
+  "mov": "left",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s05_032",
+  "ms": 826.24,
+  "dur": 2.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_032.jpg"
+ },
+ {
+  "id": "s05_033",
+  "ms": 828.64,
+  "dur": 4.72,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_033.jpg"
+ },
+ {
+  "id": "s05_034",
+  "ms": 833.36,
+  "dur": 3.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_034.jpg"
+ },
+ {
+  "id": "s05_035",
+  "ms": 837.12,
+  "dur": 5.76,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s05_035.mp4"
+ },
+ {
+  "id": "s05_036",
+  "ms": 842.88,
+  "dur": 4.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_024.jpg"
+ },
+ {
+  "id": "s05_037",
+  "ms": 847.44,
+  "dur": 5.2,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_026.jpg"
+ },
+ {
+  "id": "s05_038",
+  "ms": 852.64,
+  "dur": 9.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_017.jpg"
+ },
+ {
+  "id": "s05_039",
+  "ms": 861.92,
+  "dur": 2.88,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_018.jpg"
+ },
+ {
+  "id": "s05_040",
+  "ms": 864.8,
+  "dur": 7.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_040.jpg"
+ },
+ {
+  "id": "s05_041",
+  "ms": 872.32,
+  "dur": 8.72,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_041.jpg"
+ },
+ {
+  "id": "s05_042",
+  "ms": 881.04,
+  "dur": 4.48,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_042.jpg"
+ },
+ {
+  "id": "s05_043",
+  "ms": 885.52,
+  "dur": 3.76,
+  "mov": "left",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s05_044",
+  "ms": 889.28,
+  "dur": 3.92,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s05_033.jpg"
+ },
+ {
+  "id": "s05_045",
+  "ms": 893.2,
+  "dur": 1.28,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s05_045.jpg"
+ },
+ {
+  "id": "s05_046",
+  "ms": 894.48,
+  "dur": 7.2,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s05_013.jpg"
+ },
+ {
+  "id": "s05_047",
+  "ms": 901.68,
+  "dur": 6.32,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s05_045.jpg"
+ },
+ {
+  "id": "s06_001",
+  "ms": 908,
+  "dur": 10.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_001.jpg"
+ },
+ {
+  "id": "s06_002",
+  "ms": 918.16,
+  "dur": 4.08,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_002.jpg"
+ },
+ {
+  "id": "s06_003",
+  "ms": 922.24,
+  "dur": 5.2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_003.jpg"
+ },
+ {
+  "id": "s06_004",
+  "ms": 927.44,
+  "dur": 9.44,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_004.jpg"
+ },
+ {
+  "id": "s06_005",
+  "ms": 936.88,
+  "dur": 9.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_005.jpg"
+ },
+ {
+  "id": "s06_006",
+  "ms": 946.4,
+  "dur": 5.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_006.mp4"
+ },
+ {
+  "id": "s06_007",
+  "ms": 952.24,
+  "dur": 5.12,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_007.jpg"
+ },
+ {
+  "id": "s06_008",
+  "ms": 957.36,
+  "dur": 6.08,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_008.jpg"
+ },
+ {
+  "id": "s06_009",
+  "ms": 963.44,
+  "dur": 4.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_009.mp4"
+ },
+ {
+  "id": "s06_010",
+  "ms": 967.52,
+  "dur": 2.08,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_010.jpg"
+ },
+ {
+  "id": "s06_011",
+  "ms": 969.6,
+  "dur": 2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s06_012",
+  "ms": 971.6,
+  "dur": 1.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_012.mp4"
+ },
+ {
+  "id": "s06_013",
+  "ms": 973.12,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_007.jpg"
+ },
+ {
+  "id": "s06_014",
+  "ms": 975.36,
+  "dur": 2.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_002.jpg"
+ },
+ {
+  "id": "s06_015",
+  "ms": 977.52,
+  "dur": 2.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_015.jpg"
+ },
+ {
+  "id": "s06_016",
+  "ms": 980.16,
+  "dur": 4.96,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_016.jpg"
+ },
+ {
+  "id": "s06_017",
+  "ms": 985.12,
+  "dur": 5.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_017.jpg"
+ },
+ {
+  "id": "s06_018",
+  "ms": 990.16,
+  "dur": 4.72,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s06_018.jpg"
+ },
+ {
+  "id": "s06_019",
+  "ms": 994.88,
+  "dur": 2.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_019.jpg"
+ },
+ {
+  "id": "s06_020",
+  "ms": 996.96,
+  "dur": 4.24,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_020.mp4"
+ },
+ {
+  "id": "s06_021",
+  "ms": 1001.2,
+  "dur": 4.16,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_021.jpg"
+ },
+ {
+  "id": "s06_022",
+  "ms": 1005.36,
+  "dur": 2.48,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_022.mp4"
+ },
+ {
+  "id": "s06_023",
+  "ms": 1007.84,
+  "dur": 3.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_023.mp4"
+ },
+ {
+  "id": "s06_024",
+  "ms": 1011.52,
+  "dur": 6.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_022.mp4"
+ },
+ {
+  "id": "s06_025",
+  "ms": 1017.6,
+  "dur": 4.64,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_025.jpg"
+ },
+ {
+  "id": "s06_026",
+  "ms": 1022.24,
+  "dur": 3.36,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_019.jpg"
+ },
+ {
+  "id": "s06_027",
+  "ms": 1025.6,
+  "dur": 7.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_027.jpg"
+ },
+ {
+  "id": "s06_028",
+  "ms": 1033.28,
+  "dur": 4.64,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_028.jpg"
+ },
+ {
+  "id": "s06_029",
+  "ms": 1037.92,
+  "dur": 2.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_029.mp4"
+ },
+ {
+  "id": "s06_030",
+  "ms": 1040.48,
+  "dur": 5.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s06_031",
+  "ms": 1045.76,
+  "dur": 3.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_031.jpg"
+ },
+ {
+  "id": "s06_032",
+  "ms": 1048.8,
+  "dur": 6.72,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s06_032.jpg"
+ },
+ {
+  "id": "s06_033",
+  "ms": 1055.52,
+  "dur": 2.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_031.jpg"
+ },
+ {
+  "id": "s06_034",
+  "ms": 1058.08,
+  "dur": 3.6,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_034.jpg"
+ },
+ {
+  "id": "s06_035",
+  "ms": 1061.68,
+  "dur": 4.72,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_035.jpg"
+ },
+ {
+  "id": "s06_036",
+  "ms": 1066.4,
+  "dur": 7.2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_036.jpg"
+ },
+ {
+  "id": "s06_037",
+  "ms": 1073.6,
+  "dur": 4.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_037.jpg"
+ },
+ {
+  "id": "s06_038",
+  "ms": 1078,
+  "dur": 4.96,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_035.jpg"
+ },
+ {
+  "id": "s06_039",
+  "ms": 1082.96,
+  "dur": 4.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_039.mp4"
+ },
+ {
+  "id": "s06_040",
+  "ms": 1087.36,
+  "dur": 5.76,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_040.mp4"
+ },
+ {
+  "id": "s06_041",
+  "ms": 1093.12,
+  "dur": 4.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_041.jpg"
+ },
+ {
+  "id": "s06_042",
+  "ms": 1097.28,
+  "dur": 5.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_042.jpg"
+ },
+ {
+  "id": "s06_043",
+  "ms": 1102.32,
+  "dur": 7.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_036.jpg"
+ },
+ {
+  "id": "s06_044",
+  "ms": 1109.52,
+  "dur": 3.2,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_034.jpg"
+ },
+ {
+  "id": "s06_045",
+  "ms": 1112.72,
+  "dur": 3.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_045.jpg"
+ },
+ {
+  "id": "s06_046",
+  "ms": 1116.32,
+  "dur": 5.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_046.jpg"
+ },
+ {
+  "id": "s06_047",
+  "ms": 1122.16,
+  "dur": 4.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_047.jpg"
+ },
+ {
+  "id": "s06_048",
+  "ms": 1127.12,
+  "dur": 4.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_048.mp4"
+ },
+ {
+  "id": "s06_049",
+  "ms": 1132,
+  "dur": 2.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_049.jpg"
+ },
+ {
+  "id": "s06_050",
+  "ms": 1134.56,
+  "dur": 7.28,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_050.jpg"
+ },
+ {
+  "id": "s06_051",
+  "ms": 1141.84,
+  "dur": 5.76,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_046.jpg"
+ },
+ {
+  "id": "s06_052",
+  "ms": 1147.6,
+  "dur": 6.16,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_052.jpg"
+ },
+ {
+  "id": "s06_053",
+  "ms": 1153.76,
+  "dur": 4.64,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s06_053.mp4"
+ },
+ {
+  "id": "s06_054",
+  "ms": 1158.4,
+  "dur": 5.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s06_052.jpg"
+ },
+ {
+  "id": "s07_001",
+  "ms": 1164.08,
+  "dur": 3.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_001.jpg"
+ },
+ {
+  "id": "s07_002",
+  "ms": 1167.28,
+  "dur": 3.52,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_002.jpg"
+ },
+ {
+  "id": "s07_003",
+  "ms": 1170.8,
+  "dur": 1.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_003.jpg"
+ },
+ {
+  "id": "s07_004",
+  "ms": 1172.64,
+  "dur": 6.56,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_004.jpg"
+ },
+ {
+  "id": "s07_005",
+  "ms": 1179.2,
+  "dur": 7.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_005.jpg"
+ },
+ {
+  "id": "s07_006",
+  "ms": 1186.4,
+  "dur": 12.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_006.jpg"
+ },
+ {
+  "id": "s07_007",
+  "ms": 1199.28,
+  "dur": 4.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_001.jpg"
+ },
+ {
+  "id": "s07_008",
+  "ms": 1203.44,
+  "dur": 7.04,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_008.jpg"
+ },
+ {
+  "id": "s07_009",
+  "ms": 1210.48,
+  "dur": 7.04,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_009.jpg"
+ },
+ {
+  "id": "s07_010",
+  "ms": 1217.52,
+  "dur": 1.28,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_002.jpg"
+ },
+ {
+  "id": "s07_011",
+  "ms": 1218.8,
+  "dur": 4.8,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_011.jpg"
+ },
+ {
+  "id": "s07_012",
+  "ms": 1223.6,
+  "dur": 2.56,
+  "mov": "in",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s07_013",
+  "ms": 1226.16,
+  "dur": 1.36,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_009.jpg"
+ },
+ {
+  "id": "s07_014",
+  "ms": 1227.52,
+  "dur": 1.36,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_014.jpg"
+ },
+ {
+  "id": "s07_015",
+  "ms": 1228.88,
+  "dur": 1.92,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_009.jpg"
+ },
+ {
+  "id": "s07_016",
+  "ms": 1230.8,
+  "dur": 1.6,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_016.jpg"
+ },
+ {
+  "id": "s07_017",
+  "ms": 1232.4,
+  "dur": 1.52,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_009.jpg"
+ },
+ {
+  "id": "s07_018",
+  "ms": 1233.92,
+  "dur": 2.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_018.jpg"
+ },
+ {
+  "id": "s07_019",
+  "ms": 1236.8,
+  "dur": 1.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_019.jpg"
+ },
+ {
+  "id": "s07_020",
+  "ms": 1238.48,
+  "dur": 1.44,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_020.jpg"
+ },
+ {
+  "id": "s07_021",
+  "ms": 1239.92,
+  "dur": 1.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s07_021.mp4"
+ },
+ {
+  "id": "s07_022",
+  "ms": 1241.2,
+  "dur": 1.68,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_022.jpg"
+ },
+ {
+  "id": "s07_023",
+  "ms": 1242.88,
+  "dur": 1.12,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s07_023.mp4"
+ },
+ {
+  "id": "s07_024",
+  "ms": 1244,
+  "dur": 2.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_024.jpg"
+ },
+ {
+  "id": "s07_025",
+  "ms": 1246.64,
+  "dur": 2.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_025.jpg"
+ },
+ {
+  "id": "s07_026",
+  "ms": 1248.96,
+  "dur": 5.76,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_009.jpg"
+ },
+ {
+  "id": "s07_027",
+  "ms": 1254.72,
+  "dur": 10.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_027.jpg"
+ },
+ {
+  "id": "s07_028",
+  "ms": 1265.12,
+  "dur": 7.12,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_028.jpg"
+ },
+ {
+  "id": "s07_029",
+  "ms": 1272.24,
+  "dur": 3.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_029.jpg"
+ },
+ {
+  "id": "s07_030",
+  "ms": 1275.28,
+  "dur": 6.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_030.jpg"
+ },
+ {
+  "id": "s07_031",
+  "ms": 1281.84,
+  "dur": 1.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_031.jpg"
+ },
+ {
+  "id": "s07_032",
+  "ms": 1283.12,
+  "dur": 4.64,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_032.jpg"
+ },
+ {
+  "id": "s07_033",
+  "ms": 1287.76,
+  "dur": 1.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s07_033.mp4"
+ },
+ {
+  "id": "s07_034",
+  "ms": 1288.8,
+  "dur": 4.08,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_031.jpg"
+ },
+ {
+  "id": "s07_035",
+  "ms": 1292.88,
+  "dur": 2.64,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_035.jpg"
+ },
+ {
+  "id": "s07_036",
+  "ms": 1295.52,
+  "dur": 4.96,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_036.jpg"
+ },
+ {
+  "id": "s07_037",
+  "ms": 1300.48,
+  "dur": 5.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_037.jpg"
+ },
+ {
+  "id": "s07_038",
+  "ms": 1306.16,
+  "dur": 6.48,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_038.jpg"
+ },
+ {
+  "id": "s07_039",
+  "ms": 1312.64,
+  "dur": 7.44,
+  "mov": "in",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s07_040",
+  "ms": 1320.08,
+  "dur": 5.04,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_040.jpg"
+ },
+ {
+  "id": "s07_041",
+  "ms": 1325.12,
+  "dur": 7.36,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_041.jpg"
+ },
+ {
+  "id": "s07_042",
+  "ms": 1332.48,
+  "dur": 1.44,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_028.jpg"
+ },
+ {
+  "id": "s07_043",
+  "ms": 1333.92,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s07_009.jpg"
+ },
+ {
+  "id": "s07_044",
+  "ms": 1336.16,
+  "dur": 0.8,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_044.jpg"
+ },
+ {
+  "id": "s07_045",
+  "ms": 1336.96,
+  "dur": 6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_045.jpg"
+ },
+ {
+  "id": "s07_046",
+  "ms": 1342.96,
+  "dur": 4.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_046.jpg"
+ },
+ {
+  "id": "s07_047",
+  "ms": 1347.2,
+  "dur": 10.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s07_047.mp4"
+ },
+ {
+  "id": "s07_048",
+  "ms": 1357.6,
+  "dur": 2.16,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s07_048.mp4"
+ },
+ {
+  "id": "s07_049",
+  "ms": 1359.76,
+  "dur": 6.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_049.jpg"
+ },
+ {
+  "id": "s07_050",
+  "ms": 1366.08,
+  "dur": 5.68,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_050.jpg"
+ },
+ {
+  "id": "s07_051",
+  "ms": 1371.76,
+  "dur": 3.76,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_051.jpg"
+ },
+ {
+  "id": "s07_052",
+  "ms": 1375.52,
+  "dur": 5.68,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_050.jpg"
+ },
+ {
+  "id": "s07_053",
+  "ms": 1381.2,
+  "dur": 8.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s07_053.jpg"
+ },
+ {
+  "id": "s08_001",
+  "ms": 1389.6,
+  "dur": 4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_001.jpg"
+ },
+ {
+  "id": "s08_002",
+  "ms": 1393.6,
+  "dur": 1.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_002.jpg"
+ },
+ {
+  "id": "s08_003",
+  "ms": 1394.88,
+  "dur": 5.84,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s08_003.jpg"
+ },
+ {
+  "id": "s08_004",
+  "ms": 1400.72,
+  "dur": 4.16,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s08_004.mp4"
+ },
+ {
+  "id": "s08_005",
+  "ms": 1404.88,
+  "dur": 4.16,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s08_005.mp4"
+ },
+ {
+  "id": "s08_006",
+  "ms": 1409.04,
+  "dur": 3.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_006.jpg"
+ },
+ {
+  "id": "s08_007",
+  "ms": 1412.8,
+  "dur": 1.44,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_007.jpg"
+ },
+ {
+  "id": "s08_008",
+  "ms": 1414.24,
+  "dur": 3.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_008.jpg"
+ },
+ {
+  "id": "s08_009",
+  "ms": 1417.52,
+  "dur": 4.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_009.jpg"
+ },
+ {
+  "id": "s08_010",
+  "ms": 1421.68,
+  "dur": 2.96,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s08_010.mp4"
+ },
+ {
+  "id": "s08_011",
+  "ms": 1424.64,
+  "dur": 4.16,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_011.jpg"
+ },
+ {
+  "id": "s08_012",
+  "ms": 1428.8,
+  "dur": 3.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_012.jpg"
+ },
+ {
+  "id": "s08_013",
+  "ms": 1432.08,
+  "dur": 2.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_013.jpg"
+ },
+ {
+  "id": "s08_014",
+  "ms": 1434.72,
+  "dur": 5.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_014.jpg"
+ },
+ {
+  "id": "s08_015",
+  "ms": 1440,
+  "dur": 5.2,
+  "mov": "left",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s08_016",
+  "ms": 1445.2,
+  "dur": 5.36,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s08_016.mp4"
+ },
+ {
+  "id": "s08_017",
+  "ms": 1450.56,
+  "dur": 6.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_017.jpg"
+ },
+ {
+  "id": "s08_018",
+  "ms": 1456.8,
+  "dur": 4.8,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_018.jpg"
+ },
+ {
+  "id": "s08_019",
+  "ms": 1461.6,
+  "dur": 4.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s08_019.mp4"
+ },
+ {
+  "id": "s08_020",
+  "ms": 1465.68,
+  "dur": 3.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_020.jpg"
+ },
+ {
+  "id": "s08_021",
+  "ms": 1469.2,
+  "dur": 6.48,
+  "mov": "left",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s08_022",
+  "ms": 1475.68,
+  "dur": 6.96,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s08_022.mp4"
+ },
+ {
+  "id": "s08_023",
+  "ms": 1482.64,
+  "dur": 3.2,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_023.jpg"
+ },
+ {
+  "id": "s08_024",
+  "ms": 1485.84,
+  "dur": 2.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_024.jpg"
+ },
+ {
+  "id": "s08_025",
+  "ms": 1488.4,
+  "dur": 3.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_025.jpg"
+ },
+ {
+  "id": "s08_026",
+  "ms": 1492.08,
+  "dur": 4.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_026.jpg"
+ },
+ {
+  "id": "s08_027",
+  "ms": 1496.16,
+  "dur": 2.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_025.jpg"
+ },
+ {
+  "id": "s08_028",
+  "ms": 1498.32,
+  "dur": 5.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_028.jpg"
+ },
+ {
+  "id": "s08_029",
+  "ms": 1504.16,
+  "dur": 1.44,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_029.jpg"
+ },
+ {
+  "id": "s08_030",
+  "ms": 1505.6,
+  "dur": 6.8,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s08_030.jpg"
+ },
+ {
+  "id": "s08_031",
+  "ms": 1512.4,
+  "dur": 1.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s08_031.jpg"
+ },
+ {
+  "id": "s09_001",
+  "ms": 1513.68,
+  "dur": 1.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_001.jpg"
+ },
+ {
+  "id": "s09_002",
+  "ms": 1515.2,
+  "dur": 3.12,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_002.jpg"
+ },
+ {
+  "id": "s09_003",
+  "ms": 1518.32,
+  "dur": 4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_003.jpg"
+ },
+ {
+  "id": "s09_004",
+  "ms": 1522.32,
+  "dur": 2.32,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_004.jpg"
+ },
+ {
+  "id": "s09_005",
+  "ms": 1524.64,
+  "dur": 1.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_005.jpg"
+ },
+ {
+  "id": "s09_006",
+  "ms": 1525.68,
+  "dur": 6.24,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_006.jpg"
+ },
+ {
+  "id": "s09_007",
+  "ms": 1531.92,
+  "dur": 3.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_007.jpg"
+ },
+ {
+  "id": "s09_008",
+  "ms": 1535.12,
+  "dur": 5.28,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_008.jpg"
+ },
+ {
+  "id": "s09_009",
+  "ms": 1540.4,
+  "dur": 3.44,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_009.jpg"
+ },
+ {
+  "id": "s09_010",
+  "ms": 1543.84,
+  "dur": 2.88,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_010.jpg"
+ },
+ {
+  "id": "s09_011",
+  "ms": 1546.72,
+  "dur": 7.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_011.jpg"
+ },
+ {
+  "id": "s09_012",
+  "ms": 1553.92,
+  "dur": 1.36,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_012.jpg"
+ },
+ {
+  "id": "s09_013",
+  "ms": 1555.28,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_013.jpg"
+ },
+ {
+  "id": "s09_014",
+  "ms": 1557.52,
+  "dur": 2.64,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_014.jpg"
+ },
+ {
+  "id": "s09_015",
+  "ms": 1560.16,
+  "dur": 3.2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_015.jpg"
+ },
+ {
+  "id": "s09_016",
+  "ms": 1563.36,
+  "dur": 6.64,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_016.jpg"
+ },
+ {
+  "id": "s09_017",
+  "ms": 1570,
+  "dur": 5.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_017.jpg"
+ },
+ {
+  "id": "s09_018",
+  "ms": 1575.2,
+  "dur": 6.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_018.jpg"
+ },
+ {
+  "id": "s09_019",
+  "ms": 1581.84,
+  "dur": 5.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_019.jpg"
+ },
+ {
+  "id": "s09_020",
+  "ms": 1587.28,
+  "dur": 2.64,
+  "mov": "left",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s09_021",
+  "ms": 1589.92,
+  "dur": 2.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s09_021.mp4"
+ },
+ {
+  "id": "s09_022",
+  "ms": 1592,
+  "dur": 3.36,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_022.jpg"
+ },
+ {
+  "id": "s09_023",
+  "ms": 1595.36,
+  "dur": 2.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_023.jpg"
+ },
+ {
+  "id": "s09_024",
+  "ms": 1598.32,
+  "dur": 4.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_024.jpg"
+ },
+ {
+  "id": "s09_025",
+  "ms": 1602.72,
+  "dur": 1.92,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_022.jpg"
+ },
+ {
+  "id": "s09_026",
+  "ms": 1604.64,
+  "dur": 4.56,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_026.jpg"
+ },
+ {
+  "id": "s09_027",
+  "ms": 1609.2,
+  "dur": 1.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_027.jpg"
+ },
+ {
+  "id": "s09_028",
+  "ms": 1610.88,
+  "dur": 1.76,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s09_028.mp4"
+ },
+ {
+  "id": "s09_029",
+  "ms": 1612.64,
+  "dur": 3.12,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_029.jpg"
+ },
+ {
+  "id": "s09_030",
+  "ms": 1615.76,
+  "dur": 3.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_030.jpg"
+ },
+ {
+  "id": "s09_031",
+  "ms": 1618.8,
+  "dur": 6.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_031.jpg"
+ },
+ {
+  "id": "s09_032",
+  "ms": 1625.04,
+  "dur": 3.12,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_032.jpg"
+ },
+ {
+  "id": "s09_033",
+  "ms": 1628.16,
+  "dur": 5.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_033.jpg"
+ },
+ {
+  "id": "s09_034",
+  "ms": 1633.76,
+  "dur": 8.32,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_034.jpg"
+ },
+ {
+  "id": "s09_035",
+  "ms": 1642.08,
+  "dur": 4.64,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_035.jpg"
+ },
+ {
+  "id": "s09_036",
+  "ms": 1646.72,
+  "dur": 5.28,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_036.jpg"
+ },
+ {
+  "id": "s09_037",
+  "ms": 1652,
+  "dur": 4.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_037.jpg"
+ },
+ {
+  "id": "s09_038",
+  "ms": 1656.08,
+  "dur": 1.12,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_034.jpg"
+ },
+ {
+  "id": "s09_039",
+  "ms": 1657.2,
+  "dur": 5.36,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_039.jpg"
+ },
+ {
+  "id": "s09_040",
+  "ms": 1662.56,
+  "dur": 8.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_040.jpg"
+ },
+ {
+  "id": "s09_041",
+  "ms": 1670.8,
+  "dur": 7.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_041.jpg"
+ },
+ {
+  "id": "s09_042",
+  "ms": 1677.84,
+  "dur": 6.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_042.jpg"
+ },
+ {
+  "id": "s09_043",
+  "ms": 1683.92,
+  "dur": 4.88,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_043.jpg"
+ },
+ {
+  "id": "s09_044",
+  "ms": 1688.8,
+  "dur": 2.08,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_044.jpg"
+ },
+ {
+  "id": "s09_045",
+  "ms": 1690.88,
+  "dur": 1.12,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s09_045.mp4"
+ },
+ {
+  "id": "s09_046",
+  "ms": 1692,
+  "dur": 4.32,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_046.jpg"
+ },
+ {
+  "id": "s09_047",
+  "ms": 1696.32,
+  "dur": 4.8,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_047.jpg"
+ },
+ {
+  "id": "s09_048",
+  "ms": 1701.12,
+  "dur": 3.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s09_048.mp4"
+ },
+ {
+  "id": "s09_049",
+  "ms": 1704.16,
+  "dur": 4.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_049.jpg"
+ },
+ {
+  "id": "s09_050",
+  "ms": 1708.72,
+  "dur": 4,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_050.jpg"
+ },
+ {
+  "id": "s09_051",
+  "ms": 1712.72,
+  "dur": 2.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_051.jpg"
+ },
+ {
+  "id": "s09_052",
+  "ms": 1715.04,
+  "dur": 2.16,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_052.jpg"
+ },
+ {
+  "id": "s09_053",
+  "ms": 1717.2,
+  "dur": 8.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_053.jpg"
+ },
+ {
+  "id": "s09_054",
+  "ms": 1725.28,
+  "dur": 2.8,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_054.jpg"
+ },
+ {
+  "id": "s09_055",
+  "ms": 1728.08,
+  "dur": 6.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_055.jpg"
+ },
+ {
+  "id": "s09_056",
+  "ms": 1734.4,
+  "dur": 3.84,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_056.jpg"
+ },
+ {
+  "id": "s09_057",
+  "ms": 1738.24,
+  "dur": 3.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s09_057.mp4"
+ },
+ {
+  "id": "s09_058",
+  "ms": 1741.92,
+  "dur": 5.76,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_054.jpg"
+ },
+ {
+  "id": "s09_059",
+  "ms": 1747.68,
+  "dur": 2.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_059.jpg"
+ },
+ {
+  "id": "s09_060",
+  "ms": 1750.24,
+  "dur": 4.48,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_060.jpg"
+ },
+ {
+  "id": "s09_061",
+  "ms": 1754.72,
+  "dur": 3.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_061.jpg"
+ },
+ {
+  "id": "s09_062",
+  "ms": 1758.24,
+  "dur": 4.8,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_062.jpg"
+ },
+ {
+  "id": "s09_063",
+  "ms": 1763.04,
+  "dur": 4.96,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_063.jpg"
+ },
+ {
+  "id": "s09_064",
+  "ms": 1768,
+  "dur": 7.28,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_064.jpg"
+ },
+ {
+  "id": "s09_065",
+  "ms": 1775.28,
+  "dur": 6.24,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_065.jpg"
+ },
+ {
+  "id": "s09_066",
+  "ms": 1781.52,
+  "dur": 2.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_066.jpg"
+ },
+ {
+  "id": "s09_067",
+  "ms": 1784.16,
+  "dur": 4.32,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_067.jpg"
+ },
+ {
+  "id": "s09_068",
+  "ms": 1788.48,
+  "dur": 8.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_068.jpg"
+ },
+ {
+  "id": "s09_069",
+  "ms": 1796.64,
+  "dur": 2.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_069.jpg"
+ },
+ {
+  "id": "s09_070",
+  "ms": 1799.28,
+  "dur": 7.44,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_070.jpg"
+ },
+ {
+  "id": "s09_071",
+  "ms": 1806.72,
+  "dur": 3.12,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_071.jpg"
+ },
+ {
+  "id": "s09_072",
+  "ms": 1809.84,
+  "dur": 4.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_070.jpg"
+ },
+ {
+  "id": "s09_073",
+  "ms": 1814.16,
+  "dur": 3.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s09_074",
+  "ms": 1817.92,
+  "dur": 1.28,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_069.jpg"
+ },
+ {
+  "id": "s09_075",
+  "ms": 1819.2,
+  "dur": 2.96,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s09_075.jpg"
+ },
+ {
+  "id": "s09_076",
+  "ms": 1822.16,
+  "dur": 2.32,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s09_076.jpg"
+ },
+ {
+  "id": "s09_077",
+  "ms": 1824.48,
+  "dur": 2.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s09_077.mp4"
+ },
+ {
+  "id": "s10_001",
+  "ms": 1826.88,
+  "dur": 2.24,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_001.jpg"
+ },
+ {
+  "id": "s10_002",
+  "ms": 1829.12,
+  "dur": 1.12,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_002.mp4"
+ },
+ {
+  "id": "s10_003",
+  "ms": 1830.24,
+  "dur": 1.04,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_003.mp4"
+ },
+ {
+  "id": "s10_004",
+  "ms": 1831.28,
+  "dur": 3.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_002.mp4"
+ },
+ {
+  "id": "s10_005",
+  "ms": 1834.56,
+  "dur": 5.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_005.mp4"
+ },
+ {
+  "id": "s10_006",
+  "ms": 1840.4,
+  "dur": 5.2,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s10_006.jpg"
+ },
+ {
+  "id": "s10_007",
+  "ms": 1845.6,
+  "dur": 3.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_007.jpg"
+ },
+ {
+  "id": "s10_008",
+  "ms": 1849.2,
+  "dur": 5.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_008.mp4"
+ },
+ {
+  "id": "s10_009",
+  "ms": 1854.96,
+  "dur": 7.92,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_009.mp4"
+ },
+ {
+  "id": "s10_010",
+  "ms": 1862.88,
+  "dur": 5.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_010.mp4"
+ },
+ {
+  "id": "s10_011",
+  "ms": 1868.56,
+  "dur": 6,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_011.jpg"
+ },
+ {
+  "id": "s10_012",
+  "ms": 1874.56,
+  "dur": 4.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s10_013",
+  "ms": 1879.12,
+  "dur": 5.36,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_013.jpg"
+ },
+ {
+  "id": "s10_014",
+  "ms": 1884.48,
+  "dur": 0.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_014.jpg"
+ },
+ {
+  "id": "s10_015",
+  "ms": 1884.48,
+  "dur": 6.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_015.jpg"
+ },
+ {
+  "id": "s10_016",
+  "ms": 1890.64,
+  "dur": 4.88,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s10_016.jpg"
+ },
+ {
+  "id": "s10_017",
+  "ms": 1895.52,
+  "dur": 2.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_017.jpg"
+ },
+ {
+  "id": "s10_018",
+  "ms": 1897.76,
+  "dur": 5.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_018.jpg"
+ },
+ {
+  "id": "s10_019",
+  "ms": 1903.28,
+  "dur": 6.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_019.jpg"
+ },
+ {
+  "id": "s10_020",
+  "ms": 1909.92,
+  "dur": 5.36,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_020.jpg"
+ },
+ {
+  "id": "s10_021",
+  "ms": 1915.28,
+  "dur": 3.04,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_002.mp4"
+ },
+ {
+  "id": "s10_022",
+  "ms": 1918.32,
+  "dur": 8.24,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_022.jpg"
+ },
+ {
+  "id": "s10_023",
+  "ms": 1926.56,
+  "dur": 2.8,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_023.jpg"
+ },
+ {
+  "id": "s10_024",
+  "ms": 1929.36,
+  "dur": 4.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_024.jpg"
+ },
+ {
+  "id": "s10_025",
+  "ms": 1934.32,
+  "dur": 3.12,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s10_025.jpg"
+ },
+ {
+  "id": "s10_026",
+  "ms": 1937.44,
+  "dur": 2.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_026.jpg"
+ },
+ {
+  "id": "s10_027",
+  "ms": 1940.4,
+  "dur": 4.88,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_027.jpg"
+ },
+ {
+  "id": "s10_028",
+  "ms": 1945.28,
+  "dur": 3.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_028.jpg"
+ },
+ {
+  "id": "s10_029",
+  "ms": 1948.56,
+  "dur": 2.8,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_029.jpg"
+ },
+ {
+  "id": "s10_030",
+  "ms": 1951.36,
+  "dur": 4.48,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_030.jpg"
+ },
+ {
+  "id": "s10_031",
+  "ms": 1955.84,
+  "dur": 7.36,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_031.jpg"
+ },
+ {
+  "id": "s10_032",
+  "ms": 1963.2,
+  "dur": 2.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_032.mp4"
+ },
+ {
+  "id": "s10_033",
+  "ms": 1965.6,
+  "dur": 7.12,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_033.jpg"
+ },
+ {
+  "id": "s10_034",
+  "ms": 1972.72,
+  "dur": 1.76,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_034.mp4"
+ },
+ {
+  "id": "s10_035",
+  "ms": 1974.48,
+  "dur": 8.88,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_035.jpg"
+ },
+ {
+  "id": "s10_036",
+  "ms": 1983.36,
+  "dur": 3.92,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_036.jpg"
+ },
+ {
+  "id": "s10_037",
+  "ms": 1987.28,
+  "dur": 2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_037.jpg"
+ },
+ {
+  "id": "s10_038",
+  "ms": 1989.28,
+  "dur": 0.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_038.jpg"
+ },
+ {
+  "id": "s10_039",
+  "ms": 1989.28,
+  "dur": 2.96,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_039.jpg"
+ },
+ {
+  "id": "s10_040",
+  "ms": 1992.24,
+  "dur": 3.92,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_040.jpg"
+ },
+ {
+  "id": "s10_041",
+  "ms": 1996.16,
+  "dur": 3.6,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_041.jpg"
+ },
+ {
+  "id": "s10_042",
+  "ms": 1999.76,
+  "dur": 3.84,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_042.jpg"
+ },
+ {
+  "id": "s10_043",
+  "ms": 2003.6,
+  "dur": 5.36,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s10_043.jpg"
+ },
+ {
+  "id": "s10_044",
+  "ms": 2008.96,
+  "dur": 8.8,
+  "mov": "out",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s10_045",
+  "ms": 2017.76,
+  "dur": 4.8,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_045.jpg"
+ },
+ {
+  "id": "s10_046",
+  "ms": 2022.56,
+  "dur": 4.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_046.jpg"
+ },
+ {
+  "id": "s10_047",
+  "ms": 2026.88,
+  "dur": 2.96,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_047.jpg"
+ },
+ {
+  "id": "s10_048",
+  "ms": 2029.84,
+  "dur": 5.84,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_048.jpg"
+ },
+ {
+  "id": "s10_049",
+  "ms": 2035.68,
+  "dur": 7.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_049.jpg"
+ },
+ {
+  "id": "s10_050",
+  "ms": 2042.72,
+  "dur": 4.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_050.mp4"
+ },
+ {
+  "id": "s10_051",
+  "ms": 2047.68,
+  "dur": 2.48,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_051.jpg"
+ },
+ {
+  "id": "s10_052",
+  "ms": 2050.16,
+  "dur": 7.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_052.jpg"
+ },
+ {
+  "id": "s10_053",
+  "ms": 2057.84,
+  "dur": 2.56,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_053.mp4"
+ },
+ {
+  "id": "s10_054",
+  "ms": 2060.4,
+  "dur": 5.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_054.jpg"
+ },
+ {
+  "id": "s10_055",
+  "ms": 2065.6,
+  "dur": 6.72,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_055.mp4"
+ },
+ {
+  "id": "s10_056",
+  "ms": 2072.32,
+  "dur": 6.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_053.mp4"
+ },
+ {
+  "id": "s10_057",
+  "ms": 2078.4,
+  "dur": 6.56,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_057.jpg"
+ },
+ {
+  "id": "s10_058",
+  "ms": 2084.96,
+  "dur": 9.2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_058.jpg"
+ },
+ {
+  "id": "s10_059",
+  "ms": 2094.16,
+  "dur": 6.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_059.mp4"
+ },
+ {
+  "id": "s10_060",
+  "ms": 2100.4,
+  "dur": 1.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_060.mp4"
+ },
+ {
+  "id": "s10_061",
+  "ms": 2102.08,
+  "dur": 2.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_061.jpg"
+ },
+ {
+  "id": "s10_062",
+  "ms": 2104.48,
+  "dur": 10.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_062.jpg"
+ },
+ {
+  "id": "s10_063",
+  "ms": 2114.72,
+  "dur": 5.36,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_063.mp4"
+ },
+ {
+  "id": "s10_064",
+  "ms": 2120.08,
+  "dur": 1.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_064.mp4"
+ },
+ {
+  "id": "s10_065",
+  "ms": 2121.76,
+  "dur": 6.4,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_065.mp4"
+ },
+ {
+  "id": "s10_066",
+  "ms": 2128.16,
+  "dur": 6.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_066.jpg"
+ },
+ {
+  "id": "s10_067",
+  "ms": 2134.32,
+  "dur": 6.366,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_067.jpg"
+ },
+ {
+  "id": "s10_068",
+  "ms": 2140.686,
+  "dur": 4.194,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s10_068.jpg"
+ },
+ {
+  "id": "s10_069",
+  "ms": 2144.88,
+  "dur": 8.48,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_069.jpg"
+ },
+ {
+  "id": "s10_070",
+  "ms": 2153.36,
+  "dur": 1.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_070.jpg"
+ },
+ {
+  "id": "s10_071",
+  "ms": 2155.04,
+  "dur": 6.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_064.mp4"
+ },
+ {
+  "id": "s10_072",
+  "ms": 2161.28,
+  "dur": 5.92,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_072.mp4"
+ },
+ {
+  "id": "s10_073",
+  "ms": 2167.2,
+  "dur": 6.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_073.jpg"
+ },
+ {
+  "id": "s10_074",
+  "ms": 2173.28,
+  "dur": 6.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_074.jpg"
+ },
+ {
+  "id": "s10_075",
+  "ms": 2179.52,
+  "dur": 2.24,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s10_016.jpg"
+ },
+ {
+  "id": "s10_076",
+  "ms": 2181.76,
+  "dur": 11.44,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_076.mp4"
+ },
+ {
+  "id": "s10_077",
+  "ms": 2193.2,
+  "dur": 4.56,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_077.jpg"
+ },
+ {
+  "id": "s10_078",
+  "ms": 2197.76,
+  "dur": 4.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_078.jpg"
+ },
+ {
+  "id": "s10_079",
+  "ms": 2202.16,
+  "dur": 2.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_079.jpg"
+ },
+ {
+  "id": "s10_080",
+  "ms": 2204.56,
+  "dur": 6.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_080.jpg"
+ },
+ {
+  "id": "s10_081",
+  "ms": 2210.64,
+  "dur": 2.8,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_081.jpg"
+ },
+ {
+  "id": "s10_082",
+  "ms": 2213.44,
+  "dur": 2.24,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_082.jpg"
+ },
+ {
+  "id": "s10_083",
+  "ms": 2215.68,
+  "dur": 4,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_083.jpg"
+ },
+ {
+  "id": "s10_084",
+  "ms": 2219.68,
+  "dur": 0.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_084.jpg"
+ },
+ {
+  "id": "s10_085",
+  "ms": 2219.68,
+  "dur": 1.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s10_086",
+  "ms": 2221.52,
+  "dur": 6.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_086.jpg"
+ },
+ {
+  "id": "s10_087",
+  "ms": 2227.68,
+  "dur": 0.4,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_087.jpg"
+ },
+ {
+  "id": "s10_088",
+  "ms": 2227.68,
+  "dur": 3.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_088.jpg"
+ },
+ {
+  "id": "s10_089",
+  "ms": 2231.2,
+  "dur": 1.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_089.jpg"
+ },
+ {
+  "id": "s10_090",
+  "ms": 2233.04,
+  "dur": 0.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_090.jpg"
+ },
+ {
+  "id": "s10_091",
+  "ms": 2233.04,
+  "dur": 5.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_091.jpg"
+ },
+ {
+  "id": "s10_092",
+  "ms": 2238.32,
+  "dur": 0.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_092.jpg"
+ },
+ {
+  "id": "s10_093",
+  "ms": 2238.32,
+  "dur": 2.4,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_093.jpg"
+ },
+ {
+  "id": "s10_094",
+  "ms": 2240.72,
+  "dur": 2.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_094.jpg"
+ },
+ {
+  "id": "s10_095",
+  "ms": 2243.04,
+  "dur": 3.92,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_095.jpg"
+ },
+ {
+  "id": "s10_096",
+  "ms": 2246.96,
+  "dur": 1.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_096.jpg"
+ },
+ {
+  "id": "s10_097",
+  "ms": 2248.48,
+  "dur": 0.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s10_097.mp4"
+ },
+ {
+  "id": "s10_098",
+  "ms": 2248.48,
+  "dur": 5.84,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s10_098.jpg"
+ },
+ {
+  "id": "s10_099",
+  "ms": 2254.32,
+  "dur": 3.68,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s10_099.jpg"
+ },
+ {
+  "id": "s11_001",
+  "ms": 2258,
+  "dur": 2.8,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_001.jpg"
+ },
+ {
+  "id": "s11_002",
+  "ms": 2260.8,
+  "dur": 4.64,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_002.jpg"
+ },
+ {
+  "id": "s11_003",
+  "ms": 2265.44,
+  "dur": 4.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_003.jpg"
+ },
+ {
+  "id": "s11_004",
+  "ms": 2269.52,
+  "dur": 6.48,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_004.jpg"
+ },
+ {
+  "id": "s11_005",
+  "ms": 2276,
+  "dur": 2,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_005.jpg"
+ },
+ {
+  "id": "s11_006",
+  "ms": 2278,
+  "dur": 1.92,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_006.mp4"
+ },
+ {
+  "id": "s11_007",
+  "ms": 2279.92,
+  "dur": 3.2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_007.jpg"
+ },
+ {
+  "id": "s11_008",
+  "ms": 2283.12,
+  "dur": 5.36,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_008.jpg"
+ },
+ {
+  "id": "s11_009",
+  "ms": 2288.48,
+  "dur": 3.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_009.mp4"
+ },
+ {
+  "id": "s11_010",
+  "ms": 2292.24,
+  "dur": 3.12,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_010.jpg"
+ },
+ {
+  "id": "s11_011",
+  "ms": 2295.36,
+  "dur": 6.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_011.jpg"
+ },
+ {
+  "id": "s11_012",
+  "ms": 2301.52,
+  "dur": 5.28,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_009.mp4"
+ },
+ {
+  "id": "s11_013",
+  "ms": 2306.8,
+  "dur": 5.12,
+  "mov": "in",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s11_014",
+  "ms": 2311.92,
+  "dur": 2.56,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_014.jpg"
+ },
+ {
+  "id": "s11_015",
+  "ms": 2314.48,
+  "dur": 1.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_015.jpg"
+ },
+ {
+  "id": "s11_016",
+  "ms": 2316,
+  "dur": 3.92,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_016.jpg"
+ },
+ {
+  "id": "s11_017",
+  "ms": 2319.92,
+  "dur": 3.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_017.jpg"
+ },
+ {
+  "id": "s11_018",
+  "ms": 2323.12,
+  "dur": 2.48,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_018.mp4"
+ },
+ {
+  "id": "s11_019",
+  "ms": 2325.6,
+  "dur": 8.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_019.jpg"
+ },
+ {
+  "id": "s11_020",
+  "ms": 2333.92,
+  "dur": 1.2,
+  "mov": "right",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s11_021",
+  "ms": 2335.12,
+  "dur": 3.56,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_021.mp4"
+ },
+ {
+  "id": "s11_022",
+  "ms": 2338.68,
+  "dur": 2.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_022.jpg"
+ },
+ {
+  "id": "s11_023",
+  "ms": 2341.36,
+  "dur": 4.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_023.jpg"
+ },
+ {
+  "id": "s11_024",
+  "ms": 2345.68,
+  "dur": 1.76,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_024.jpg"
+ },
+ {
+  "id": "s11_025",
+  "ms": 2347.44,
+  "dur": 2.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_025.mp4"
+ },
+ {
+  "id": "s11_026",
+  "ms": 2349.84,
+  "dur": 4.72,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_026.mp4"
+ },
+ {
+  "id": "s11_027",
+  "ms": 2354.56,
+  "dur": 7.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_027.jpg"
+ },
+ {
+  "id": "s11_028",
+  "ms": 2362.24,
+  "dur": 4.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_028.jpg"
+ },
+ {
+  "id": "s11_029",
+  "ms": 2366.64,
+  "dur": 1.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_029.jpg"
+ },
+ {
+  "id": "s11_030",
+  "ms": 2368.32,
+  "dur": 2.64,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_027.jpg"
+ },
+ {
+  "id": "s11_031",
+  "ms": 2370.96,
+  "dur": 6.8,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_031.jpg"
+ },
+ {
+  "id": "s11_032",
+  "ms": 2377.76,
+  "dur": 1.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_026.mp4"
+ },
+ {
+  "id": "s11_033",
+  "ms": 2379.6,
+  "dur": 1.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_033.mp4"
+ },
+ {
+  "id": "s11_034",
+  "ms": 2380.8,
+  "dur": 5.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_034.jpg"
+ },
+ {
+  "id": "s11_035",
+  "ms": 2385.84,
+  "dur": 5.6,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_035.jpg"
+ },
+ {
+  "id": "s11_036",
+  "ms": 2391.44,
+  "dur": 3.2,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_036.jpg"
+ },
+ {
+  "id": "s11_037",
+  "ms": 2394.64,
+  "dur": 0.48,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_037.jpg"
+ },
+ {
+  "id": "s11_038",
+  "ms": 2395.12,
+  "dur": 4.32,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_038.mp4"
+ },
+ {
+  "id": "s11_039",
+  "ms": 2399.44,
+  "dur": 7.92,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_039.jpg"
+ },
+ {
+  "id": "s11_040",
+  "ms": 2407.36,
+  "dur": 3.52,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_040.jpg"
+ },
+ {
+  "id": "s11_041",
+  "ms": 2410.88,
+  "dur": 3.6,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_041.mp4"
+ },
+ {
+  "id": "s11_042",
+  "ms": 2414.48,
+  "dur": 2,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_042.jpg"
+ },
+ {
+  "id": "s11_043",
+  "ms": 2416.48,
+  "dur": 6.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_043.mp4"
+ },
+ {
+  "id": "s11_044",
+  "ms": 2423.12,
+  "dur": 3.68,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_044.mp4"
+ },
+ {
+  "id": "s11_045",
+  "ms": 2426.8,
+  "dur": 3.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_045.jpg"
+ },
+ {
+  "id": "s11_046",
+  "ms": 2430.24,
+  "dur": 6.8,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_046.jpg"
+ },
+ {
+  "id": "s11_047",
+  "ms": 2437.04,
+  "dur": 1.36,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_047.mp4"
+ },
+ {
+  "id": "s11_048",
+  "ms": 2438.4,
+  "dur": 3.6,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_048.mp4"
+ },
+ {
+  "id": "s11_049",
+  "ms": 2442,
+  "dur": 1.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_049.mp4"
+ },
+ {
+  "id": "s11_050",
+  "ms": 2443.6,
+  "dur": 2.4,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_050.jpg"
+ },
+ {
+  "id": "s11_051",
+  "ms": 2446,
+  "dur": 4.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_051.mp4"
+ },
+ {
+  "id": "s11_052",
+  "ms": 2450.32,
+  "dur": 2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_050.jpg"
+ },
+ {
+  "id": "s11_053",
+  "ms": 2452.32,
+  "dur": 2.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_053.jpg"
+ },
+ {
+  "id": "s11_054",
+  "ms": 2454.64,
+  "dur": 5.84,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_047.mp4"
+ },
+ {
+  "id": "s11_055",
+  "ms": 2460.48,
+  "dur": 3.12,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_036.jpg"
+ },
+ {
+  "id": "s11_056",
+  "ms": 2463.6,
+  "dur": 2,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_056.jpg"
+ },
+ {
+  "id": "s11_057",
+  "ms": 2465.6,
+  "dur": 3.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_057.jpg"
+ },
+ {
+  "id": "s11_058",
+  "ms": 2468.8,
+  "dur": 4.72,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_058.jpg"
+ },
+ {
+  "id": "s11_059",
+  "ms": 2473.52,
+  "dur": 5.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_059.jpg"
+ },
+ {
+  "id": "s11_060",
+  "ms": 2478.96,
+  "dur": 3.84,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_060.jpg"
+ },
+ {
+  "id": "s11_061",
+  "ms": 2482.8,
+  "dur": 5.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s11_062",
+  "ms": 2488.48,
+  "dur": 1.44,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_062.jpg"
+ },
+ {
+  "id": "s11_063",
+  "ms": 2489.92,
+  "dur": 7.36,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_063.jpg"
+ },
+ {
+  "id": "s11_064",
+  "ms": 2497.28,
+  "dur": 6.16,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_064.jpg"
+ },
+ {
+  "id": "s11_065",
+  "ms": 2503.44,
+  "dur": 4.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_065.mp4"
+ },
+ {
+  "id": "s11_066",
+  "ms": 2507.6,
+  "dur": 2.96,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_066.jpg"
+ },
+ {
+  "id": "s11_067",
+  "ms": 2510.56,
+  "dur": 3.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_067.jpg"
+ },
+ {
+  "id": "s11_068",
+  "ms": 2513.84,
+  "dur": 6.32,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_068.jpg"
+ },
+ {
+  "id": "s11_069",
+  "ms": 2520.16,
+  "dur": 7.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_069.jpg"
+ },
+ {
+  "id": "s11_070",
+  "ms": 2527.2,
+  "dur": 6.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_070.jpg"
+ },
+ {
+  "id": "s11_071",
+  "ms": 2533.52,
+  "dur": 5.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_071.jpg"
+ },
+ {
+  "id": "s11_072",
+  "ms": 2538.72,
+  "dur": 2.24,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_039.jpg"
+ },
+ {
+  "id": "s11_073",
+  "ms": 2540.96,
+  "dur": 4.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_073.jpg"
+ },
+ {
+  "id": "s11_074",
+  "ms": 2545.6,
+  "dur": 5.28,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_074.mp4"
+ },
+ {
+  "id": "s11_075",
+  "ms": 2550.88,
+  "dur": 3.68,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_075.jpg"
+ },
+ {
+  "id": "s11_076",
+  "ms": 2554.56,
+  "dur": 5.28,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_076.jpg"
+ },
+ {
+  "id": "s11_077",
+  "ms": 2559.84,
+  "dur": 4,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s11_077.jpg"
+ },
+ {
+  "id": "s11_078",
+  "ms": 2563.84,
+  "dur": 3.28,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_078.jpg"
+ },
+ {
+  "id": "s11_079",
+  "ms": 2567.12,
+  "dur": 2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s11_043.mp4"
+ },
+ {
+  "id": "s11_080",
+  "ms": 2569.12,
+  "dur": 6.8,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_080.jpg"
+ },
+ {
+  "id": "s11_081",
+  "ms": 2575.92,
+  "dur": 2.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_081.jpg"
+ },
+ {
+  "id": "s11_082",
+  "ms": 2578.08,
+  "dur": 3.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s11_082.jpg"
+ },
+ {
+  "id": "s12_001",
+  "ms": 2581.36,
+  "dur": 4.64,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_001.jpg"
+ },
+ {
+  "id": "s12_002",
+  "ms": 2586,
+  "dur": 6,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_002.jpg"
+ },
+ {
+  "id": "s12_003",
+  "ms": 2592,
+  "dur": 4.32,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_003.jpg"
+ },
+ {
+  "id": "s12_004",
+  "ms": 2596.32,
+  "dur": 9.2,
+  "mov": "right",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s12_005",
+  "ms": 2605.52,
+  "dur": 2.96,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_005.mp4"
+ },
+ {
+  "id": "s12_006",
+  "ms": 2608.48,
+  "dur": 5.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_006.mp4"
+ },
+ {
+  "id": "s12_007",
+  "ms": 2614.08,
+  "dur": 1.92,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_007.jpg"
+ },
+ {
+  "id": "s12_008",
+  "ms": 2616,
+  "dur": 4.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_008.jpg"
+ },
+ {
+  "id": "s12_009",
+  "ms": 2620.16,
+  "dur": 6.48,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_009.jpg"
+ },
+ {
+  "id": "s12_010",
+  "ms": 2626.64,
+  "dur": 1.68,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_010.jpg"
+ },
+ {
+  "id": "s12_011",
+  "ms": 2628.32,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_011.jpg"
+ },
+ {
+  "id": "s12_012",
+  "ms": 2630.56,
+  "dur": 1.92,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_012.jpg"
+ },
+ {
+  "id": "s12_013",
+  "ms": 2632.48,
+  "dur": 1.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_013.jpg"
+ },
+ {
+  "id": "s12_014",
+  "ms": 2633.92,
+  "dur": 2.96,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_014.jpg"
+ },
+ {
+  "id": "s12_015",
+  "ms": 2636.88,
+  "dur": 5.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_015.mp4"
+ },
+ {
+  "id": "s12_016",
+  "ms": 2642.4,
+  "dur": 1.52,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_014.jpg"
+ },
+ {
+  "id": "s12_017",
+  "ms": 2643.92,
+  "dur": 1.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_017.jpg"
+ },
+ {
+  "id": "s12_018",
+  "ms": 2645.68,
+  "dur": 1.36,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_014.jpg"
+ },
+ {
+  "id": "s12_019",
+  "ms": 2647.04,
+  "dur": 2,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_019.jpg"
+ },
+ {
+  "id": "s12_020",
+  "ms": 2649.04,
+  "dur": 3.04,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_020.jpg"
+ },
+ {
+  "id": "s12_021",
+  "ms": 2652.08,
+  "dur": 1.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_021.jpg"
+ },
+ {
+  "id": "s12_022",
+  "ms": 2653.76,
+  "dur": 4.4,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_022.mp4"
+ },
+ {
+  "id": "s12_023",
+  "ms": 2658.16,
+  "dur": 1.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_009.jpg"
+ },
+ {
+  "id": "s12_024",
+  "ms": 2659.36,
+  "dur": 3.2,
+  "mov": "in",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s12_025",
+  "ms": 2662.56,
+  "dur": 2.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_025.mp4"
+ },
+ {
+  "id": "s12_026",
+  "ms": 2664.72,
+  "dur": 2.96,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_026.jpg"
+ },
+ {
+  "id": "s12_027",
+  "ms": 2667.68,
+  "dur": 2.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_027.jpg"
+ },
+ {
+  "id": "s12_028",
+  "ms": 2669.76,
+  "dur": 4.56,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_028.jpg"
+ },
+ {
+  "id": "s12_029",
+  "ms": 2674.32,
+  "dur": 5.04,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_029.jpg"
+ },
+ {
+  "id": "s12_030",
+  "ms": 2679.36,
+  "dur": 1.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_030.mp4"
+ },
+ {
+  "id": "s12_031",
+  "ms": 2680.96,
+  "dur": 4.08,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_031.jpg"
+ },
+ {
+  "id": "s12_032",
+  "ms": 2685.04,
+  "dur": 3.28,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_032.jpg"
+ },
+ {
+  "id": "s12_033",
+  "ms": 2688.32,
+  "dur": 2.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_033.jpg"
+ },
+ {
+  "id": "s12_034",
+  "ms": 2690.88,
+  "dur": 1.68,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_001.jpg"
+ },
+ {
+  "id": "s12_035",
+  "ms": 2692.56,
+  "dur": 5.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_035.jpg"
+ },
+ {
+  "id": "s12_036",
+  "ms": 2697.84,
+  "dur": 6.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_036.jpg"
+ },
+ {
+  "id": "s12_037",
+  "ms": 2703.92,
+  "dur": 2.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_037.mp4"
+ },
+ {
+  "id": "s12_038",
+  "ms": 2706.32,
+  "dur": 2.72,
+  "mov": "left",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_038.mp4"
+ },
+ {
+  "id": "s12_039",
+  "ms": 2709.04,
+  "dur": 4.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_039.jpg"
+ },
+ {
+  "id": "s12_040",
+  "ms": 2713.12,
+  "dur": 4.48,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_040.jpg"
+ },
+ {
+  "id": "s12_041",
+  "ms": 2717.6,
+  "dur": 2.32,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_041.jpg"
+ },
+ {
+  "id": "s12_042",
+  "ms": 2719.92,
+  "dur": 2.8,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_040.jpg"
+ },
+ {
+  "id": "s12_043",
+  "ms": 2722.72,
+  "dur": 1.76,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_043.mp4"
+ },
+ {
+  "id": "s12_044",
+  "ms": 2724.48,
+  "dur": 3.76,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_044.jpg"
+ },
+ {
+  "id": "s12_045",
+  "ms": 2728.24,
+  "dur": 3.6,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_020.jpg"
+ },
+ {
+  "id": "s12_046",
+  "ms": 2731.84,
+  "dur": 5.52,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_046.jpg"
+ },
+ {
+  "id": "s12_047",
+  "ms": 2737.36,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_001.jpg"
+ },
+ {
+  "id": "s12_048",
+  "ms": 2739.6,
+  "dur": 2.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_048.jpg"
+ },
+ {
+  "id": "s12_049",
+  "ms": 2742.16,
+  "dur": 5.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_049.jpg"
+ },
+ {
+  "id": "s12_050",
+  "ms": 2747.44,
+  "dur": 2.72,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_050.jpg"
+ },
+ {
+  "id": "s12_051",
+  "ms": 2750.16,
+  "dur": 5.44,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_014.jpg"
+ },
+ {
+  "id": "s12_052",
+  "ms": 2755.6,
+  "dur": 4.32,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_052.jpg"
+ },
+ {
+  "id": "s12_053",
+  "ms": 2759.92,
+  "dur": 1.12,
+  "mov": "out",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_053.mp4"
+ },
+ {
+  "id": "s12_054",
+  "ms": 2761.04,
+  "dur": 3.44,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_001.jpg"
+ },
+ {
+  "id": "s12_055",
+  "ms": 2764.48,
+  "dur": 3.84,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_055.jpg"
+ },
+ {
+  "id": "s12_056",
+  "ms": 2768.32,
+  "dur": 2.96,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_056.jpg"
+ },
+ {
+  "id": "s12_057",
+  "ms": 2771.28,
+  "dur": 7.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_057.jpg"
+ },
+ {
+  "id": "s12_058",
+  "ms": 2778.8,
+  "dur": 4.64,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_056.jpg"
+ },
+ {
+  "id": "s12_059",
+  "ms": 2783.44,
+  "dur": 2.72,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_059.jpg"
+ },
+ {
+  "id": "s12_060",
+  "ms": 2786.16,
+  "dur": 5.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_060.jpg"
+ },
+ {
+  "id": "s12_061",
+  "ms": 2792,
+  "dur": 8.8,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_061.jpg"
+ },
+ {
+  "id": "s12_062",
+  "ms": 2800.8,
+  "dur": 6.64,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_062.jpg"
+ },
+ {
+  "id": "s12_063",
+  "ms": 2807.44,
+  "dur": 3.44,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_014.jpg"
+ },
+ {
+  "id": "s12_064",
+  "ms": 2810.88,
+  "dur": 3.6,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s12_064.mp4"
+ },
+ {
+  "id": "s12_065",
+  "ms": 2814.48,
+  "dur": 9.12,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s12_040.jpg"
+ },
+ {
+  "id": "s12_066",
+  "ms": 2823.6,
+  "dur": 2.08,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_066.jpg"
+ },
+ {
+  "id": "s12_067",
+  "ms": 2825.68,
+  "dur": 2.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_067.jpg"
+ },
+ {
+  "id": "s12_068",
+  "ms": 2827.84,
+  "dur": 1.6,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_068.jpg"
+ },
+ {
+  "id": "s12_069",
+  "ms": 2829.44,
+  "dur": 2.24,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_069.jpg"
+ },
+ {
+  "id": "s12_070",
+  "ms": 2831.68,
+  "dur": 7.04,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_070.jpg"
+ },
+ {
+  "id": "s12_071",
+  "ms": 2838.72,
+  "dur": 3.84,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_071.jpg"
+ },
+ {
+  "id": "s12_072",
+  "ms": 2842.56,
+  "dur": 5.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_072.jpg"
+ },
+ {
+  "id": "s12_073",
+  "ms": 2848.4,
+  "dur": 9.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s12_073.jpg"
+ },
+ {
+  "id": "s13_001",
+  "ms": 2857.84,
+  "dur": 7.36,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_001.jpg"
+ },
+ {
+  "id": "s13_002",
+  "ms": 2865.2,
+  "dur": 5.2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_002.jpg"
+ },
+ {
+  "id": "s13_003",
+  "ms": 2870.4,
+  "dur": 7.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "comp"
+ },
+ {
+  "id": "s13_004",
+  "ms": 2878.24,
+  "dur": 7.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_004.jpg"
+ },
+ {
+  "id": "s13_005",
+  "ms": 2885.52,
+  "dur": 3.12,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_005.jpg"
+ },
+ {
+  "id": "s13_006",
+  "ms": 2888.64,
+  "dur": 5.84,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_006.jpg"
+ },
+ {
+  "id": "s13_007",
+  "ms": 2894.48,
+  "dur": 6.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_007.jpg"
+ },
+ {
+  "id": "s13_008",
+  "ms": 2900.64,
+  "dur": 1.12,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_008.jpg"
+ },
+ {
+  "id": "s13_009",
+  "ms": 2901.76,
+  "dur": 5.84,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_009.jpg"
+ },
+ {
+  "id": "s13_010",
+  "ms": 2907.6,
+  "dur": 6.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_010.jpg"
+ },
+ {
+  "id": "s13_011",
+  "ms": 2913.76,
+  "dur": 4.4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_011.jpg"
+ },
+ {
+  "id": "s13_012",
+  "ms": 2918.16,
+  "dur": 6.88,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_012.jpg"
+ },
+ {
+  "id": "s13_013",
+  "ms": 2925.04,
+  "dur": 1.36,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_013.jpg"
+ },
+ {
+  "id": "s13_014",
+  "ms": 2926.4,
+  "dur": 1.94,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_014.jpg"
+ },
+ {
+  "id": "s13_015",
+  "ms": 2928.34,
+  "dur": 2.94,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s13_015.mp4"
+ },
+ {
+  "id": "s13_016",
+  "ms": 2931.28,
+  "dur": 6.16,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_016.jpg"
+ },
+ {
+  "id": "s13_017",
+  "ms": 2937.44,
+  "dur": 6.48,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_017.jpg"
+ },
+ {
+  "id": "s13_018",
+  "ms": 2943.92,
+  "dur": 6.4,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_018.jpg"
+ },
+ {
+  "id": "s13_019",
+  "ms": 2950.32,
+  "dur": 2.96,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_019.jpg"
+ },
+ {
+  "id": "s13_020",
+  "ms": 2953.28,
+  "dur": 3.92,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_020.jpg"
+ },
+ {
+  "id": "s13_021",
+  "ms": 2957.2,
+  "dur": 5.84,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_021.jpg"
+ },
+ {
+  "id": "s13_022",
+  "ms": 2963.04,
+  "dur": 2.08,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_022.jpg"
+ },
+ {
+  "id": "s13_023",
+  "ms": 2965.12,
+  "dur": 5.04,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_023.jpg"
+ },
+ {
+  "id": "s13_024",
+  "ms": 2970.16,
+  "dur": 5.28,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_024.jpg"
+ },
+ {
+  "id": "s13_025",
+  "ms": 2975.44,
+  "dur": 3.52,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_025.jpg"
+ },
+ {
+  "id": "s13_026",
+  "ms": 2978.96,
+  "dur": 1.76,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_026.jpg"
+ },
+ {
+  "id": "s13_027",
+  "ms": 2980.72,
+  "dur": 8.88,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_027.jpg"
+ },
+ {
+  "id": "s13_028",
+  "ms": 2989.6,
+  "dur": 5.68,
+  "mov": "out",
+  "archivo": true,
+  "kind": "comp"
+ },
+ {
+  "id": "s13_029",
+  "ms": 2995.28,
+  "dur": 1.84,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_014.jpg"
+ },
+ {
+  "id": "s13_030",
+  "ms": 2997.12,
+  "dur": 7.04,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_030.jpg"
+ },
+ {
+  "id": "s13_031",
+  "ms": 3004.16,
+  "dur": 2.16,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_031.jpg"
+ },
+ {
+  "id": "s13_032",
+  "ms": 3006.32,
+  "dur": 4.16,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_032.jpg"
+ },
+ {
+  "id": "s13_033",
+  "ms": 3010.48,
+  "dur": 4.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_033.jpg"
+ },
+ {
+  "id": "s13_034",
+  "ms": 3014.72,
+  "dur": 4.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_034.jpg"
+ },
+ {
+  "id": "s13_035",
+  "ms": 3019.04,
+  "dur": 1.92,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_035.jpg"
+ },
+ {
+  "id": "s13_036",
+  "ms": 3020.96,
+  "dur": 3.12,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_036.jpg"
+ },
+ {
+  "id": "s13_037",
+  "ms": 3024.08,
+  "dur": 2.32,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_037.jpg"
+ },
+ {
+  "id": "s13_038",
+  "ms": 3026.4,
+  "dur": 3.84,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_006.jpg"
+ },
+ {
+  "id": "s13_039",
+  "ms": 3030.24,
+  "dur": 3.28,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_034.jpg"
+ },
+ {
+  "id": "s13_040",
+  "ms": 3033.52,
+  "dur": 2.16,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_001.jpg"
+ },
+ {
+  "id": "s13_041",
+  "ms": 3035.68,
+  "dur": 2.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s13_041.mp4"
+ },
+ {
+  "id": "s13_042",
+  "ms": 3038.32,
+  "dur": 3.2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_042.jpg"
+ },
+ {
+  "id": "s13_043",
+  "ms": 3041.52,
+  "dur": 2.24,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_032.jpg"
+ },
+ {
+  "id": "s13_044",
+  "ms": 3043.76,
+  "dur": 0.96,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_044.jpg"
+ },
+ {
+  "id": "s13_045",
+  "ms": 3044.72,
+  "dur": 1.68,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_045.jpg"
+ },
+ {
+  "id": "s13_046",
+  "ms": 3046.4,
+  "dur": 2.24,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_036.jpg"
+ },
+ {
+  "id": "s13_047",
+  "ms": 3048.64,
+  "dur": 1.28,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_047.jpg"
+ },
+ {
+  "id": "s13_048",
+  "ms": 3049.92,
+  "dur": 1.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_048.jpg"
+ },
+ {
+  "id": "s13_049",
+  "ms": 3051.36,
+  "dur": 2.4,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_049.jpg"
+ },
+ {
+  "id": "s13_050",
+  "ms": 3053.76,
+  "dur": 9.04,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_050.jpg"
+ },
+ {
+  "id": "s13_051",
+  "ms": 3062.8,
+  "dur": 3.36,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_051.jpg"
+ },
+ {
+  "id": "s13_052",
+  "ms": 3066.16,
+  "dur": 4,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_037.jpg"
+ },
+ {
+  "id": "s13_053",
+  "ms": 3070.16,
+  "dur": 3.52,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_053.jpg"
+ },
+ {
+  "id": "s13_054",
+  "ms": 3073.68,
+  "dur": 3.68,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_054.jpg"
+ },
+ {
+  "id": "s13_055",
+  "ms": 3077.36,
+  "dur": 2.56,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_055.jpg"
+ },
+ {
+  "id": "s13_056",
+  "ms": 3079.92,
+  "dur": 5.36,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_056.jpg"
+ },
+ {
+  "id": "s13_057",
+  "ms": 3085.28,
+  "dur": 0.96,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_057.jpg"
+ },
+ {
+  "id": "s13_058",
+  "ms": 3086.24,
+  "dur": 1.44,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_045.jpg"
+ },
+ {
+  "id": "s13_059",
+  "ms": 3087.68,
+  "dur": 7.84,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_059.jpg"
+ },
+ {
+  "id": "s13_060",
+  "ms": 3095.52,
+  "dur": 2.4,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_060.jpg"
+ },
+ {
+  "id": "s13_061",
+  "ms": 3097.92,
+  "dur": 3.52,
+  "mov": "left",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s13_037.jpg"
+ },
+ {
+  "id": "s13_062",
+  "ms": 3101.44,
+  "dur": 3.56,
+  "mov": "in",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s13_062.mp4"
+ },
+ {
+  "id": "s13_063",
+  "ms": 3105,
+  "dur": 2.44,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_063.jpg"
+ },
+ {
+  "id": "s13_064",
+  "ms": 3107.44,
+  "dur": 2,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_064.jpg"
+ },
+ {
+  "id": "s13_065",
+  "ms": 3109.44,
+  "dur": 4.16,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_065.jpg"
+ },
+ {
+  "id": "s13_066",
+  "ms": 3113.6,
+  "dur": 1.52,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_066.jpg"
+ },
+ {
+  "id": "s13_067",
+  "ms": 3115.12,
+  "dur": 5.92,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_001.jpg"
+ },
+ {
+  "id": "s13_068",
+  "ms": 3121.04,
+  "dur": 6.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_068.jpg"
+ },
+ {
+  "id": "s13_069",
+  "ms": 3127.68,
+  "dur": 5.04,
+  "mov": "right",
+  "archivo": false,
+  "kind": "clip",
+  "src": "broll/friogranero_s13_069.mp4"
+ },
+ {
+  "id": "s13_070",
+  "ms": 3132.72,
+  "dur": 3.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_070.jpg"
+ },
+ {
+  "id": "s13_071",
+  "ms": 3136,
+  "dur": 5.76,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_071.jpg"
+ },
+ {
+  "id": "s13_072",
+  "ms": 3141.76,
+  "dur": 2.036,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s13_068.jpg"
+ }
+]
