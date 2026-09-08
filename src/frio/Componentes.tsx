@@ -48,7 +48,7 @@ export const CorteSuelo: React.FC<{
 }> = ({ dur, capas, titulo = "LO QUE PASA ABAJO" }) => {
   const f = useCurrentFrame();
   const inn = interpolate(f, [0, 14], [0, 1], { extrapolateRight: "clamp", easing: ease });
-  const H = 640, Y0 = 190, W = 1120, X = 300;
+  const H = 640, Y0 = 190, W = 980, X = 286;
   return (
     <Hoja inn={inn} giro={-0.2}>
       <svg width="100%" height="100%" viewBox="0 0 1808 968" preserveAspectRatio="xMidYMid meet">
@@ -70,7 +70,7 @@ export const CorteSuelo: React.FC<{
               {/* temperatura, adentro de la capa */}
               <text x={X + 34} y={y + h / 2 + 14} fill={i < 2 ? TINTA : "#F2ECDC"} fontFamily={SERIF} fontSize={46}>{c.temp}</text>
               {/* nota, a la derecha */}
-              <text x={X + W + 34} y={y + h / 2 + 10} fill={TINTA} fontFamily={SERIF} fontSize={29} opacity={0.82}>{c.nota}</text>
+              <text x={X + W + 30} y={y + h / 2 + 10} fill={TINTA} fontFamily={SERIF} fontSize={27} opacity={0.82}>{c.nota}</text>
             </g>
           );
         })}
@@ -118,9 +118,9 @@ export const CuadernoCargas: React.FC<{
         })}
         {/* el total, a la derecha, con su regla */}
         <g opacity={interpolate(f, [Math.round(dur * 0.55), Math.round(dur * 0.68)], [0, 1], { extrapolateRight: "clamp", easing: ease })}>
-          <text x={1560} y={470} textAnchor="middle" fill={TINTA} fontFamily={SERIF} fontSize={172} letterSpacing={-4}>{cifra}</text>
-          <line x1={1330} y1={520} x2={1790} y2={520} stroke={AMBAR} strokeWidth={3} />
-          <text x={1560} y={572} textAnchor="middle" fill="#6B5B36" fontFamily={SERIF} fontSize={26} letterSpacing={7}>{pie}</text>
+          <text x={1450} y={470} textAnchor="middle" fill={TINTA} fontFamily={SERIF} fontSize={172} letterSpacing={-4}>{cifra}</text>
+          <line x1={1230} y1={520} x2={1670} y2={520} stroke={AMBAR} strokeWidth={3} />
+          <text x={1450} y={572} textAnchor="middle" fill="#6B5B36" fontFamily={SERIF} fontSize={26} letterSpacing={7}>{pie}</text>
         </g>
       </svg>
     </Hoja>
