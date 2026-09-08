@@ -1,0 +1,207 @@
+[
+ {
+  "id": "s00_000",
+  "ms": 0.08,
+  "dur": 2.64,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_000.png"
+ },
+ {
+  "id": "s00_001",
+  "ms": 2.72,
+  "dur": 4.8,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_001c.png"
+ },
+ {
+  "id": "s00_002",
+  "ms": 7.52,
+  "dur": 3.44,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_002b.png"
+ },
+ {
+  "id": "s00_002s",
+  "ms": 10.96,
+  "dur": 3.44,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_002s.png",
+  "fadeIn": 10
+ },
+ {
+  "id": "s00_003",
+  "ms": 14.4,
+  "dur": 2.56,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_003c.png"
+ },
+ {
+  "id": "s00_004",
+  "ms": 16.96,
+  "dur": 4.64,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_004b.png"
+ },
+ {
+  "id": "s00_005",
+  "ms": 21.6,
+  "dur": 7.2,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_005b.png"
+ },
+ {
+  "id": "s00_006",
+  "ms": 28.8,
+  "dur": 2.08,
+  "mov": "out",
+  "archivo": true,
+  "kind": "ficha",
+  "cifra": "41",
+  "unidad": "km",
+  "pie": "hasta el pueblo mas cercano",
+  "bed": "img/friogranero_s00_005b.png"
+ },
+ {
+  "id": "s00_007",
+  "ms": 30.88,
+  "dur": 3.84,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_007c.png"
+ },
+ {
+  "id": "s00_008",
+  "ms": 34.72,
+  "dur": 4.48,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_008c.png"
+ },
+ {
+  "id": "s00_009",
+  "ms": 39.2,
+  "dur": 1.56,
+  "mov": "right",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_009b.png"
+ },
+ {
+  "id": "s00_010",
+  "ms": 40.76,
+  "dur": 4.38,
+  "mov": "out",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_010b.png"
+ },
+ {
+  "id": "s00_010s",
+  "ms": 45.14,
+  "dur": 4.38,
+  "mov": "in",
+  "archivo": true,
+  "kind": "plate",
+  "src": "img/friogranero_s00_009b.png"
+ },
+ {
+  "id": "s00_011",
+  "ms": 49.52,
+  "dur": 4.32,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_011b.png"
+ },
+ {
+  "id": "s00_012",
+  "ms": 53.84,
+  "dur": 4.56,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_012c.png"
+ },
+ {
+  "id": "s00_013",
+  "ms": 58.4,
+  "dur": 1.92,
+  "mov": "in",
+  "archivo": true,
+  "kind": "ficha",
+  "cifra": "11",
+  "unidad": "dias",
+  "pie": "de agonia",
+  "bed": "img/friogranero_s00_012c.png"
+ },
+ {
+  "id": "s00_014",
+  "ms": 60.32,
+  "dur": 6.24,
+  "mov": "right",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_014b.png"
+ },
+ {
+  "id": "s00_015",
+  "ms": 66.56,
+  "dur": 1.28,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_015c.png"
+ },
+ {
+  "id": "s00_016",
+  "ms": 67.84,
+  "dur": 1.68,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_016b.png"
+ },
+ {
+  "id": "s00_017",
+  "ms": 69.52,
+  "dur": 1.84,
+  "mov": "out",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_017c.png"
+ },
+ {
+  "id": "s00_018",
+  "ms": 71.36,
+  "dur": 5.44,
+  "mov": "left",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_018c.png"
+ },
+ {
+  "id": "s00_019",
+  "ms": 76.8,
+  "dur": 4,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_019c.png"
+ }
+]
