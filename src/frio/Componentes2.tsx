@@ -10,35 +10,45 @@ const ease = Easing.bezier(0.33, 0, 0.15, 1);
 const VB = { viewBox: "0 0 1808 968", preserveAspectRatio: "xMidYMid meet" as const };
 
 // ── 7. CITA DEL CUADERNO — lo que ella escribió, con su fecha. La firma emocional del canal.
+//      Va CENTRADA y grande: es la pieza que la gente recorta y comparte, no una nota al pie.
 export const CitaCuaderno: React.FC<{ dur: number; texto: string; fecha?: string; atribucion?: string }> = ({
   dur, texto, fecha, atribucion,
 }) => {
   const f = useCurrentFrame();
   const inn = interpolate(f, [0, 14], [0, 1], { extrapolateRight: "clamp", easing: ease });
   const palabras = texto.split(/\s+/);
-  const porPalabra = Math.max(2, Math.floor((dur * 0.45) / Math.max(1, palabras.length)));
+  const porPalabra = Math.max(2, Math.floor((dur * 0.42) / Math.max(1, palabras.length)));
   const vistas = palabras.filter((_, i) => f >= 18 + i * porPalabra).length;
-  const pie = interpolate(f, [Math.round(dur * 0.62), Math.round(dur * 0.78)], [0, 1], { extrapolateRight: "clamp", easing: ease });
-  // el texto se parte en renglones de ~34 caracteres, como en un cuaderno angosto
+  const pie = interpolate(f, [Math.round(dur * 0.60), Math.round(dur * 0.76)], [0, 1], { extrapolateRight: "clamp", easing: ease });
+
+  // reparto equilibrado: nunca un renglón final huérfano de una sola palabra
+  const MAXC = 26;
   const lineas: string[][] = [[]];
   let largo = 0;
   palabras.forEach((w) => {
-    if (largo + w.length > 34) { lineas.push([]); largo = 0; }
+    if (largo + w.length > MAXC && lineas[lineas.length - 1].length) { lineas.push([]); largo = 0; }
     lineas[lineas.length - 1].push(w); largo += w.length + 1;
   });
+  if (lineas.length > 1 && lineas[lineas.length - 1].length === 1) {
+    const prev = lineas[lineas.length - 2];
+    if (prev.length > 1) lineas[lineas.length - 1].unshift(prev.pop() as string);
+  }
+
+  const SALTO = 104;
+  const Y0 = 484 - ((lineas.length - 1) * SALTO) / 2;
   let idx = 0;
   return (
     <Hoja inn={inn} giro={0.3}>
       <svg width="100%" height="100%" {...VB}>
-        {Array.from({ length: 10 }).map((_, i) => (
-          <line key={i} x1={240} y1={250 + i * 86} x2={1570} y2={250 + i * 86} stroke="#9A8A62" strokeWidth={1} opacity={0.26} />
-        ))}
-        <line x1={300} y1={140} x2={300} y2={880} stroke="#B4553A" strokeWidth={2} opacity={0.35} />
+        <line x1={300} y1={200} x2={300} y2={820} stroke="#B4553A" strokeWidth={2} opacity={0.30} />
         {fecha ? (
-          <text x={340} y={196} fill="#7A6A44" fontFamily={SERIF} fontSize={30} letterSpacing={4} opacity={inn}>{fecha}</text>
+          <text x={904} y={236} textAnchor="middle" fill="#7A6A44" fontFamily={SERIF} fontSize={29} letterSpacing={7} opacity={inn}>
+            {fecha.toUpperCase()}
+          </text>
         ) : null}
+        <text x={470} y={Y0 - 96} fill={AMBAR} fontFamily={SERIF} fontSize={150} opacity={inn * 0.45}>&#8220;</text>
         {lineas.map((ln, li) => (
-          <text key={li} x={340} y={318 + li * 86} fill={TINTA} fontFamily={SERIF} fontSize={54} fontStyle="italic">
+          <text key={li} x={904} y={Y0 + li * SALTO} textAnchor="middle" fill={TINTA} fontFamily={SERIF} fontSize={70} fontStyle="italic">
             {ln.map((w) => {
               const mostrar = idx < vistas; idx += 1;
               return <tspan key={idx} opacity={mostrar ? 1 : 0}>{w} </tspan>;
@@ -47,8 +57,10 @@ export const CitaCuaderno: React.FC<{ dur: number; texto: string; fecha?: string
         ))}
         {atribucion ? (
           <g opacity={pie}>
-            <line x1={340} y1={846} x2={620} y2={846} stroke={AMBAR} strokeWidth={2} />
-            <text x={340} y={892} fill="#6B5B36" fontFamily={SERIF} fontSize={27} letterSpacing={6}>{atribucion.toUpperCase()}</text>
+            <line x1={764} y1={Y0 + lineas.length * SALTO + 26} x2={1044} y2={Y0 + lineas.length * SALTO + 26} stroke={AMBAR} strokeWidth={2} />
+            <text x={904} y={Y0 + lineas.length * SALTO + 78} textAnchor="middle" fill="#6B5B36" fontFamily={SERIF} fontSize={28} letterSpacing={6}>
+              {atribucion.toUpperCase()}
+            </text>
           </g>
         ) : null}
       </svg>
