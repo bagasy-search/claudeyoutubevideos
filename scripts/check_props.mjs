@@ -44,6 +44,14 @@ if (!fs.existsSync(`beatsheet/${SLUG}.json`) && fs.existsSync(`_v3/${SLUG}_plan.
   const DIRS = [`src/${SLUG}`, "src/mdtank", "src/mdmold", "src/mdtoilet", "src/mdring", "src/peroxide",
     "src/VideoEdit/kit/premium", "src/VideoEdit/scenes", "src/VideoEdit/components"];
   const FILES = [];
+  // ── EL KIT REUSADO manda: canales que CLONAN un build (raydoor1 reusa src/rksafe) importan sus
+  // componentes con `from "../<kit>/..."`. Esos archivos TIENEN PRIORIDAD sobre cualquier homónimo
+  // del kit premium/scenes (MythTruth/CrossSection/PullQuote colisionan por nombre). Sin esto el
+  // gate resolvía la firma equivocada y pedía props de OTRO componente.
+  for (const m of cues.matchAll(/from\s+"\.\.\/([^"]+)"/g)) {
+    const rel = `src/${m[1]}`;
+    for (const cand of [`${rel}.tsx`, `${rel}.ts`]) if (fs.existsSync(cand) && !FILES.includes(cand)) FILES.push(cand);
+  }
   for (const d of DIRS) {
     if (!fs.existsSync(d)) continue;
     for (const f of fs.readdirSync(d)) if (/\.tsx?$/.test(f)) FILES.push(path.join(d, f));
