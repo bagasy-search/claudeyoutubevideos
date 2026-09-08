@@ -113,7 +113,20 @@ function buildWindows(): AvatarWindow[] {
   post.sort((a, b) => a.start - b.start);
   const out: AvatarWindow[] = [];
   for (const x of post) { if (!out.length || out[out.length - 1].mode !== x.mode) out.push(x); }
-  return out;
+  // ⛔⛔ EN LA ZONA FISH EL AVATAR NUNCA VUELVE A `full`. Esta lista es una secuencia de puntos
+  //    "el ultimo gana", no un modelo de intervalos: cuando dos coberturas se SOLAPAN, el punto de
+  //    FIN de la primera pone `full` aunque la segunda siga en pantalla. Medido en el render:
+  //    169 s (8% de la zona) con el bucle MUDO a la vista y los labios fuera de sincronia.
+  //    ⚠️ El anti-hueco no lo veia: solo buscaba "oculto y sin nada debajo" (pantalla negra),
+  //    nunca el caso contrario.
+  const fixed = out.map((w) => (w.start >= AVATAR_END && w.mode === "full" ? { ...w, mode: "hidden" as const } : w));
+  // ⛔ y el BORDE: la ventana que arranca ANTES de la costura y se extiende mas alla no la
+  //    agarra el filtro de arriba. Se planta un punto explicito en AVATAR_END.
+  fixed.push({ start: AVATAR_END, mode: "hidden" as const });
+  fixed.sort((a, b) => a.start - b.start);
+  const dedup: AvatarWindow[] = [];
+  for (const x of fixed) { if (!dedup.length || dedup[dedup.length - 1].mode !== x.mode) dedup.push(x); }
+  return dedup;
 }
 const AVATAR_WINDOWS = buildWindows();
 
