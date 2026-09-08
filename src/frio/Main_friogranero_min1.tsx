@@ -38,7 +38,7 @@ export const MainFrioMin1: React.FC = () => {
         return (
           <Sequence key={b.id} from={f0} durationInFrames={dur} name={b.id}>
             {b.kind === "avatar" ? (
-              <Avatar src={AVATAR} desde={b.desde ?? 0} dur={dur} />
+              <Avatar src={b.src!} desde={b.desde ?? 0} dur={dur} />
             ) : b.kind === "mapa" ? (
               <MapaDistancia
                 origen={b.origen!}

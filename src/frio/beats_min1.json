@@ -40,7 +40,8 @@
   "ms": 14.4,
   "dur": 2.56,
   "kind": "avatar",
-  "desde": 432
+  "desde": 0,
+  "src": "broll/frio/av_s00_003_av.mp4"
  },
  {
   "id": "s00_004",
@@ -96,7 +97,8 @@
   "ms": 39.2,
   "dur": 1.56,
   "kind": "avatar",
-  "desde": 1176
+  "desde": 0,
+  "src": "broll/frio/av_s00_009_av.mp4"
  },
  {
   "id": "s00_010",
@@ -152,7 +154,8 @@
   "ms": 60.32,
   "dur": 2,
   "kind": "avatar",
-  "desde": 1810
+  "desde": 0,
+  "src": "broll/frio/av_s00_014_av.mp4"
  },
  {
   "id": "s00_014",
