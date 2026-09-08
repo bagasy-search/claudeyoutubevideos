@@ -21,7 +21,7 @@ export const MapaDistancia: React.FC<{
   const cif = interpolate(f, [Math.max(24, dur * 0.42), Math.max(40, dur * 0.66)], [0, 1], { extrapolateRight: "clamp", easing: ease });
   const pO = interpolate(f, [12, 26], [0, 1], { extrapolateRight: "clamp", easing: ease });
   const pD = interpolate(f, [Math.max(30, dur * 0.6), Math.max(44, dur * 0.78)], [0, 1], { extrapolateRight: "clamp", easing: ease });
-  const LEN = 760;
+  
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#0A0C10" }}>
@@ -57,8 +57,9 @@ export const MapaDistancia: React.FC<{
             stroke={FRIO.amber}
             strokeWidth={5}
             fill="none"
-            strokeDasharray={`${LEN}`}
-            strokeDashoffset={LEN * (1 - ruta)}
+            pathLength={1}
+            strokeDasharray={1}
+            strokeDashoffset={1 - ruta}
             strokeLinecap="round"
             opacity={0.95}
           />
@@ -67,7 +68,7 @@ export const MapaDistancia: React.FC<{
           <g opacity={pO}>
             <circle cx={430} cy={640} r={13} fill="#2C2318" />
             <circle cx={430} cy={640} r={26} fill="none" stroke="#2C2318" strokeWidth={2} opacity={0.5} />
-            <text x={396} y={706} textAnchor="end" fill="#2C2318" fontFamily={FRIO.serif} fontSize={38} letterSpacing={1}>
+            <text x={430} y={716} textAnchor="middle" fill="#2C2318" fontFamily={FRIO.serif} fontSize={34} letterSpacing={1}>
               {origen}
             </text>
           </g>
