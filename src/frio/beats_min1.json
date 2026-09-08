@@ -5,8 +5,8 @@
   "dur": 2.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_000.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_000.mp4"
  },
  {
   "id": "s00_001",
@@ -14,8 +14,8 @@
   "dur": 4.8,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_001c.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_001c.mp4"
  },
  {
   "id": "s00_002",
@@ -23,8 +23,8 @@
   "dur": 3.44,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_002b.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_002b.mp4"
  },
  {
   "id": "s00_002s",
@@ -32,18 +32,15 @@
   "dur": 3.44,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_002s.png",
-  "fadeIn": 10
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_002s.mp4"
  },
  {
-  "id": "s00_003",
+  "id": "s00_003_av",
   "ms": 14.4,
   "dur": 2.56,
-  "mov": "right",
-  "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_003c.png"
+  "kind": "avatar",
+  "desde": 432
  },
  {
   "id": "s00_004",
@@ -51,8 +48,8 @@
   "dur": 4.64,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_004b.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_004b.mp4"
  },
  {
   "id": "s00_005",
@@ -60,8 +57,8 @@
   "dur": 7.2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_005b.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_005b.mp4"
  },
  {
   "id": "s00_006",
@@ -69,11 +66,12 @@
   "dur": 2.08,
   "mov": "out",
   "archivo": true,
-  "kind": "ficha",
+  "kind": "mapa",
+  "origen": "Cañadon Seco de las Lajas",
+  "destino": "Colonia Sarmiento",
   "cifra": "41",
-  "unidad": "km",
-  "pie": "hasta el pueblo mas cercano",
-  "bed": "img/friogranero_s00_005b.png"
+  "unidad": " km",
+  "pie": "dos dias de carro"
  },
  {
   "id": "s00_007",
@@ -81,8 +79,8 @@
   "dur": 3.84,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_007c.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_007c.mp4"
  },
  {
   "id": "s00_008",
@@ -90,17 +88,15 @@
   "dur": 4.48,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_008c.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_008c.mp4"
  },
  {
-  "id": "s00_009",
+  "id": "s00_009_av",
   "ms": 39.2,
   "dur": 1.56,
-  "mov": "right",
-  "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_009b.png"
+  "kind": "avatar",
+  "desde": 1176
  },
  {
   "id": "s00_010",
@@ -108,8 +104,8 @@
   "dur": 4.38,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_010b.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_010b.mp4"
  },
  {
   "id": "s00_010s",
@@ -117,8 +113,8 @@
   "dur": 4.38,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_009b.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_009b.mp4"
  },
  {
   "id": "s00_011",
@@ -136,7 +132,7 @@
   "mov": "left",
   "archivo": false,
   "kind": "plate",
-  "src": "img/friogranero_s00_012c.png"
+  "src": "img/friogranero_s00_012d.png"
  },
  {
   "id": "s00_013",
@@ -146,18 +142,26 @@
   "archivo": true,
   "kind": "ficha",
   "cifra": "11",
-  "unidad": "dias",
+  "unidad": " dias",
   "pie": "de agonia",
-  "bed": "img/friogranero_s00_012c.png"
+  "bed": "broll/frio/friogranero_s00_012c.mp4",
+  "bedEsClip": true
+ },
+ {
+  "id": "s00_014_av",
+  "ms": 60.32,
+  "dur": 2,
+  "kind": "avatar",
+  "desde": 1810
  },
  {
   "id": "s00_014",
-  "ms": 60.32,
-  "dur": 6.24,
+  "ms": 62.32,
+  "dur": 4.24,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_014b.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_014b.mp4"
  },
  {
   "id": "s00_015",
@@ -166,7 +170,7 @@
   "mov": "out",
   "archivo": false,
   "kind": "plate",
-  "src": "img/friogranero_s00_015c.png"
+  "src": "img/friogranero_s00_015d.png"
  },
  {
   "id": "s00_016",
@@ -175,7 +179,7 @@
   "mov": "in",
   "archivo": false,
   "kind": "plate",
-  "src": "img/friogranero_s00_016b.png"
+  "src": "img/friogranero_s00_016d.png"
  },
  {
   "id": "s00_017",
@@ -184,7 +188,7 @@
   "mov": "out",
   "archivo": false,
   "kind": "plate",
-  "src": "img/friogranero_s00_017c.png"
+  "src": "img/friogranero_s00_017d.png"
  },
  {
   "id": "s00_018",
@@ -192,8 +196,8 @@
   "dur": 5.44,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_018c.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_018c.mp4"
  },
  {
   "id": "s00_019",
@@ -201,7 +205,7 @@
   "dur": 4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_019c.png"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_019c.mp4"
  }
 ]
