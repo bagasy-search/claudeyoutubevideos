@@ -17,10 +17,10 @@ export const MapaDistancia: React.FC<{
 }> = ({ origen, destino, cifra, unidad, pie, dur }) => {
   const f = useCurrentFrame();
   const inn = interpolate(f, [0, 16], [0, 1], { extrapolateRight: "clamp", easing: ease });
-  const ruta = interpolate(f, [14, Math.max(30, dur * 0.62)], [0, 1], { extrapolateRight: "clamp", easing: ease });
-  const cif = interpolate(f, [Math.max(24, dur * 0.42), Math.max(40, dur * 0.66)], [0, 1], { extrapolateRight: "clamp", easing: ease });
+  const ruta = interpolate(f, [10, Math.max(26, dur * 0.40)], [0, 1], { extrapolateRight: "clamp", easing: ease });
+  const cif = interpolate(f, [Math.max(30, dur * 0.50), Math.max(46, dur * 0.66)], [0, 1], { extrapolateRight: "clamp", easing: ease });
   const pO = interpolate(f, [12, 26], [0, 1], { extrapolateRight: "clamp", easing: ease });
-  const pD = interpolate(f, [Math.max(30, dur * 0.6), Math.max(44, dur * 0.78)], [0, 1], { extrapolateRight: "clamp", easing: ease });
+  const pD = interpolate(f, [Math.max(24, dur * 0.36), Math.max(38, dur * 0.50)], [0, 1], { extrapolateRight: "clamp", easing: ease });
   
 
   return (
@@ -37,19 +37,19 @@ export const MapaDistancia: React.FC<{
           overflow: "hidden",
         }}
       >
-        <svg width="100%" height="100%" viewBox="0 0 1812 972" preserveAspectRatio="xMidYMid slice">
+        <svg width="100%" height="100%" viewBox="0 0 1808 968" preserveAspectRatio="xMidYMid meet">
           {/* curvas de nivel de la meseta, muy tenues */}
-          <g stroke="#8E7746" fill="none" opacity={0.22}>
+          <g stroke="#8E7746" fill="none" opacity={0.38}>
             {[0, 1, 2, 3, 4, 5].map((i) => (
               <path
                 key={i}
                 d={`M ${-40 + i * 22} ${700 - i * 46} C ${420} ${610 - i * 52}, ${900} ${790 - i * 40}, ${1860} ${640 - i * 48}`}
-                strokeWidth={1.4}
+                strokeWidth={2.0}
               />
             ))}
           </g>
           {/* el río, en trazo más grueso */}
-          <path d="M 120 900 C 500 820, 760 930, 1180 800 C 1460 712, 1600 760, 1840 700" stroke="#7E8E8C" strokeWidth={4} fill="none" opacity={0.4} />
+          <path d="M 120 900 C 500 820, 760 930, 1180 800 C 1460 712, 1600 760, 1840 700" stroke="#6F8480" strokeWidth={6} fill="none" opacity={0.55} />
 
           {/* la ruta entre los dos puntos, punteada, que se DIBUJA */}
           <path

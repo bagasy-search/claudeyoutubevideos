@@ -51,7 +51,7 @@ export const CorteSuelo: React.FC<{
   const H = 640, Y0 = 190, W = 1120, X = 300;
   return (
     <Hoja inn={inn} giro={-0.2}>
-      <svg width="100%" height="100%" viewBox="0 0 1812 972" preserveAspectRatio="xMidYMid slice">
+      <svg width="100%" height="100%" viewBox="0 0 1808 968" preserveAspectRatio="xMidYMid meet">
         <text x={906} y={124} textAnchor="middle" fill={TINTA} fontFamily={SERIF} fontSize={40} letterSpacing={10} opacity={inn}>
           {titulo}
         </text>
@@ -98,7 +98,7 @@ export const CuadernoCargas: React.FC<{
   const cifra = Math.round(acum + (total - acum) * tot);
   return (
     <Hoja inn={inn} giro={0.25}>
-      <svg width="100%" height="100%" viewBox="0 0 1812 972" preserveAspectRatio="xMidYMid slice">
+      <svg width="100%" height="100%" viewBox="0 0 1808 968" preserveAspectRatio="xMidYMid meet">
         {/* renglones del cuaderno */}
         {Array.from({ length: 14 }).map((_, i) => (
           <line key={i} x1={150} y1={190 + i * 52} x2={1080} y2={190 + i * 52} stroke="#9A8A62" strokeWidth={1} opacity={0.30} />
@@ -138,7 +138,7 @@ export const TresTermometros: React.FC<{
   const yDe = (v: number) => Y + H * (1 - (v - MIN) / (MAX - MIN));
   return (
     <Hoja inn={inn} giro={-0.15}>
-      <svg width="100%" height="100%" viewBox="0 0 1812 972" preserveAspectRatio="xMidYMid slice">
+      <svg width="100%" height="100%" viewBox="0 0 1808 968" preserveAspectRatio="xMidYMid meet">
         {/* la línea del cero: la referencia que hace legible todo */}
         <line x1={200} y1={yDe(0)} x2={1620} y2={yDe(0)} stroke={TINTA} strokeWidth={2} strokeDasharray="10 8" opacity={0.55} />
         <text x={172} y={yDe(0) + 10} textAnchor="end" fill={TINTA} fontFamily={SERIF} fontSize={30} opacity={0.7}>0°</text>
@@ -180,7 +180,7 @@ export const DosCanos: React.FC<{ dur: number }> = ({ dur }) => {
   const flujo = (f % 60) / 60;
   return (
     <Hoja inn={inn} giro={0.18}>
-      <svg width="100%" height="100%" viewBox="0 0 1812 972" preserveAspectRatio="xMidYMid slice">
+      <svg width="100%" height="100%" viewBox="0 0 1808 968" preserveAspectRatio="xMidYMid meet">
         {/* la tierra en corte */}
         <rect x={300} y={330} width={1210} height={470} fill="#B9A67E" opacity={0.55 * corte} />
         <line x1={300} y1={330} x2={1510} y2={330} stroke={TINTA} strokeWidth={4} opacity={corte} />
