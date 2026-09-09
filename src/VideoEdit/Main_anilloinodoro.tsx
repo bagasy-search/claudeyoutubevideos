@@ -30,7 +30,7 @@ export const MainAnilloinodoro: React.FC = () => {
               {cue.el(sec(cue.dur))}
             </Sequence>
           ))}
-          <AvatarLayerSal src="anilloinodoro_opt.mp4" muted windows={AVATAR_WINDOWS} accent={COLORS.accent} />
+          <AvatarLayerSal src="anilloinodoro_opt.mp4" wav="anilloinodoro.m4a" muted windows={AVATAR_WINDOWS} accent={COLORS.accent} />
           <Audio src={staticFile("anilloinodoro.m4a")} />
           {OVERLAYS.map((cue) => (
             <Sequence key={cue.key} from={sec(cue.start)} durationInFrames={sec(cue.dur)}>
