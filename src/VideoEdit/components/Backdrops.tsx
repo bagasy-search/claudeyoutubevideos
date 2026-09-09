@@ -18,11 +18,12 @@ export const ImageBackdrop: React.FC<{
   fit?: "cover" | "blur";
   clipDur?: number; // duración real del mp4 (s) → anti-congelado en Media
   beatDur?: number; // duración del beat en timeline (s)
+  speed?: number;   // playbackRate del clip (1 = nativo). def: el de Media (0.6 = judder)
   // NORMALIZACIÓN por clip (no es un "look": corrige brillo/saturación hacia la
   // mediana del lote para que no se note el salto entre fuentes — lo calcula
   // scripts/probe_grade.mjs). Ej: "brightness(1.04) saturate(0.96)".
   grade?: string;
-}> = ({ src, blur = 7, darken = 0.55, tint, durationInFrames = 300, fit = "cover", clipDur, beatDur, grade }) => {
+}> = ({ src, blur = 7, darken = 0.55, tint, durationInFrames = 300, fit = "cover", clipDur, beatDur, speed, grade }) => {
   const frame = useCurrentFrame();
   // casi estático: el movimiento principal lo da el Ken-Burns suave de SceneFrame.
   // (antes 1.08→1.18 se SUMABA al Ken-Burns y los zooms quedaban muy fuertes/rápidos)
@@ -60,6 +61,7 @@ export const ImageBackdrop: React.FC<{
             src={src}
             clipDur={clipDur}
             beatDur={beatDur}
+            speed={speed}
             style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(28px) saturate(0.9)" }}
           />
         </AbsoluteFill>
@@ -69,6 +71,7 @@ export const ImageBackdrop: React.FC<{
             src={src}
             clipDur={clipDur}
             beatDur={beatDur}
+            speed={speed}
             style={{ width: "100%", height: "100%", objectFit: "contain", filter: gradeFilter || undefined }}
           />
         </AbsoluteFill>
@@ -84,6 +87,7 @@ export const ImageBackdrop: React.FC<{
           src={finalSrc}
           clipDur={clipDur}
           beatDur={beatDur}
+          speed={speed}
           style={{ width: "100%", height: "100%", objectFit: "cover", filter: mediaFilter }}
         />
       </AbsoluteFill>
