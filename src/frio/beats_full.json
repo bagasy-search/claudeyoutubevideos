@@ -1,5 +1,14 @@
 [
  {
+  "id": "s00_000",
+  "ms": 0,
+  "dur": 2.88,
+  "mov": "in",
+  "archivo": false,
+  "kind": "plate",
+  "src": "img/friogranero_s00_000.jpg"
+ },
+ {
   "id": "s00_001",
   "ms": 2.88,
   "dur": 4.64,
@@ -5651,8 +5660,8 @@
   "dur": 1.76,
   "mov": "out",
   "archivo": false,
-  "kind": "clip",
-  "src": "broll/friogranero_s12_043.mp4"
+  "kind": "plate",
+  "src": "img/friogranero_s12_043.jpg"
  },
  {
   "id": "s12_044",
