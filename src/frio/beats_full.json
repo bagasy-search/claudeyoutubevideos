@@ -5,8 +5,8 @@
   "dur": 2.88,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_000.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_000.mp4"
  },
  {
   "id": "s00_001",
@@ -14,8 +14,8 @@
   "dur": 4.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_001.mp4"
  },
  {
   "id": "s00_002",
@@ -23,8 +23,8 @@
   "dur": 6.88,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_002.mp4"
  },
  {
   "id": "s00_003",
@@ -32,8 +32,8 @@
   "dur": 2.56,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_003.mp4"
  },
  {
   "id": "s00_004",
@@ -41,8 +41,8 @@
   "dur": 4.64,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_004.mp4"
  },
  {
   "id": "s00_005",
@@ -67,8 +67,8 @@
   "dur": 3.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_007.mp4"
  },
  {
   "id": "s00_008",
@@ -85,8 +85,8 @@
   "dur": 1.56,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_009.mp4"
  },
  {
   "id": "s00_010",
@@ -94,8 +94,8 @@
   "dur": 8.76,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_010.mp4"
  },
  {
   "id": "s00_011",
@@ -103,8 +103,8 @@
   "dur": 4.32,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_011.mp4"
  },
  {
   "id": "s00_012",
@@ -112,8 +112,8 @@
   "dur": 4.56,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_012.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_012.mp4"
  },
  {
   "id": "s00_013",
@@ -129,8 +129,8 @@
   "dur": 6.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_014.mp4"
  },
  {
   "id": "s00_015",
@@ -138,8 +138,8 @@
   "dur": 1.28,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_015.mp4"
  },
  {
   "id": "s00_016",
@@ -147,8 +147,8 @@
   "dur": 1.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_016.mp4"
  },
  {
   "id": "s00_017",
@@ -156,8 +156,8 @@
   "dur": 1.84,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_017.mp4"
  },
  {
   "id": "s00_018",
@@ -165,8 +165,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_018.mp4"
  },
  {
   "id": "s00_019",
@@ -174,8 +174,8 @@
   "dur": 5.52,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_019.mp4"
  },
  {
   "id": "s00_020",
@@ -183,8 +183,8 @@
   "dur": 6.96,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_020.mp4"
  },
  {
   "id": "s00_021",
@@ -192,8 +192,8 @@
   "dur": 6.4,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_021.mp4"
  },
  {
   "id": "s00_022",
@@ -210,8 +210,8 @@
   "dur": 5.76,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_023.mp4"
  },
  {
   "id": "s00_024",
@@ -246,8 +246,8 @@
   "dur": 5.2,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_023.mp4"
  },
  {
   "id": "s00_028",
@@ -255,8 +255,8 @@
   "dur": 6.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s00_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_028.mp4"
  },
  {
   "id": "s00_029",
@@ -264,8 +264,8 @@
   "dur": 4.64,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s00_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s00_029.mp4"
  },
  {
   "id": "s01_001",
@@ -273,8 +273,8 @@
   "dur": 0.88,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_001.mp4"
  },
  {
   "id": "s01_002",
@@ -282,8 +282,8 @@
   "dur": 5.36,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_002.mp4"
  },
  {
   "id": "s01_003",
@@ -300,8 +300,8 @@
   "dur": 2.88,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_004.mp4"
  },
  {
   "id": "s01_005",
@@ -309,8 +309,8 @@
   "dur": 2.24,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s01_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_005.mp4"
  },
  {
   "id": "s01_006",
@@ -335,8 +335,8 @@
   "dur": 1.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_008.mp4"
  },
  {
   "id": "s01_009",
@@ -344,8 +344,8 @@
   "dur": 5.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_009.mp4"
  },
  {
   "id": "s01_010",
@@ -361,8 +361,8 @@
   "dur": 4.4,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s01_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_011.mp4"
  },
  {
   "id": "s01_012",
@@ -378,8 +378,8 @@
   "dur": 1.6,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_013.mp4"
  },
  {
   "id": "s01_014",
@@ -395,8 +395,8 @@
   "dur": 3.76,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_015.mp4"
  },
  {
   "id": "s01_016",
@@ -404,8 +404,8 @@
   "dur": 8.24,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s01_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_016.mp4"
  },
  {
   "id": "s01_017",
@@ -413,8 +413,8 @@
   "dur": 6.16,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_017.mp4"
  },
  {
   "id": "s01_018",
@@ -422,8 +422,8 @@
   "dur": 2.32,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_018.mp4"
  },
  {
   "id": "s01_019",
@@ -440,8 +440,8 @@
   "dur": 8.4,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s01_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_020.mp4"
  },
  {
   "id": "s01_021",
@@ -449,8 +449,8 @@
   "dur": 11.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_021.mp4"
  },
  {
   "id": "s01_022",
@@ -458,8 +458,8 @@
   "dur": 6,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s01_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s01_022.mp4"
  },
  {
   "id": "s02_001",
@@ -467,8 +467,8 @@
   "dur": 8.8,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_001.mp4"
  },
  {
   "id": "s02_002",
@@ -476,8 +476,8 @@
   "dur": 2.72,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_002.mp4"
  },
  {
   "id": "s02_003",
@@ -485,8 +485,8 @@
   "dur": 3.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_003.mp4"
  },
  {
   "id": "s02_004",
@@ -494,8 +494,8 @@
   "dur": 2.56,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_004.mp4"
  },
  {
   "id": "s02_005",
@@ -503,8 +503,8 @@
   "dur": 1.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_005.mp4"
  },
  {
   "id": "s02_006",
@@ -512,8 +512,8 @@
   "dur": 9.52,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_006.mp4"
  },
  {
   "id": "s02_007",
@@ -529,8 +529,8 @@
   "dur": 2,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_008.mp4"
  },
  {
   "id": "s02_009",
@@ -538,8 +538,8 @@
   "dur": 1.92,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_009.mp4"
  },
  {
   "id": "s02_010",
@@ -547,8 +547,8 @@
   "dur": 2.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_010.mp4"
  },
  {
   "id": "s02_011",
@@ -556,8 +556,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s02_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_011.mp4"
  },
  {
   "id": "s02_012",
@@ -565,8 +565,8 @@
   "dur": 4.4,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s02_012.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_012.mp4"
  },
  {
   "id": "s02_013",
@@ -574,8 +574,8 @@
   "dur": 6.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_006.mp4"
  },
  {
   "id": "s02_014",
@@ -591,8 +591,8 @@
   "dur": 6.56,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_015.mp4"
  },
  {
   "id": "s02_016",
@@ -600,8 +600,8 @@
   "dur": 2.8,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_016.mp4"
  },
  {
   "id": "s02_017",
@@ -609,8 +609,8 @@
   "dur": 2.96,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_017.mp4"
  },
  {
   "id": "s02_018",
@@ -618,8 +618,8 @@
   "dur": 1.36,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_018.mp4"
  },
  {
   "id": "s02_019",
@@ -627,8 +627,8 @@
   "dur": 5.6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_019.mp4"
  },
  {
   "id": "s02_020",
@@ -636,8 +636,8 @@
   "dur": 3.04,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_018.mp4"
  },
  {
   "id": "s02_021",
@@ -645,8 +645,8 @@
   "dur": 4.88,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_021.mp4"
  },
  {
   "id": "s02_022",
@@ -654,8 +654,8 @@
   "dur": 2.48,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_022.mp4"
  },
  {
   "id": "s02_023",
@@ -663,8 +663,8 @@
   "dur": 3.84,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_023.mp4"
  },
  {
   "id": "s02_024",
@@ -672,8 +672,8 @@
   "dur": 1.52,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_024.mp4"
  },
  {
   "id": "s02_025",
@@ -681,8 +681,8 @@
   "dur": 11.76,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_025.mp4"
  },
  {
   "id": "s02_026",
@@ -699,8 +699,8 @@
   "dur": 8.32,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_027.mp4"
  },
  {
   "id": "s02_028",
@@ -708,8 +708,8 @@
   "dur": 6.48,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_028.mp4"
  },
  {
   "id": "s02_029",
@@ -726,8 +726,8 @@
   "dur": 4.48,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_030.mp4"
  },
  {
   "id": "s02_031",
@@ -735,8 +735,8 @@
   "dur": 6.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s02_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s02_022.mp4"
  },
  {
   "id": "s02_032",
@@ -753,8 +753,8 @@
   "dur": 1.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_001.mp4"
  },
  {
   "id": "s03_002",
@@ -762,8 +762,8 @@
   "dur": 6.24,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_002.mp4"
  },
  {
   "id": "s03_003",
@@ -771,8 +771,8 @@
   "dur": 2.72,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_003.mp4"
  },
  {
   "id": "s03_004",
@@ -780,8 +780,8 @@
   "dur": 6,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_004.mp4"
  },
  {
   "id": "s03_005",
@@ -789,8 +789,8 @@
   "dur": 6.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_005.mp4"
  },
  {
   "id": "s03_006",
@@ -798,8 +798,8 @@
   "dur": 1.84,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_006.mp4"
  },
  {
   "id": "s03_007",
@@ -807,8 +807,8 @@
   "dur": 4.8,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_007.mp4"
  },
  {
   "id": "s03_008",
@@ -816,8 +816,8 @@
   "dur": 6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_008.mp4"
  },
  {
   "id": "s03_009",
@@ -825,8 +825,8 @@
   "dur": 6.64,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_009.mp4"
  },
  {
   "id": "s03_010",
@@ -834,8 +834,8 @@
   "dur": 4.48,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_003.mp4"
  },
  {
   "id": "s03_011",
@@ -843,8 +843,8 @@
   "dur": 4.16,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_011.mp4"
  },
  {
   "id": "s03_012",
@@ -860,8 +860,8 @@
   "dur": 3.76,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_008.mp4"
  },
  {
   "id": "s03_014",
@@ -869,8 +869,8 @@
   "dur": 4.24,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_014.mp4"
  },
  {
   "id": "s03_015",
@@ -878,8 +878,8 @@
   "dur": 3.36,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_015.mp4"
  },
  {
   "id": "s03_016",
@@ -887,8 +887,8 @@
   "dur": 6.24,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_006.mp4"
  },
  {
   "id": "s03_017",
@@ -896,8 +896,8 @@
   "dur": 4.56,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_004.mp4"
  },
  {
   "id": "s03_018",
@@ -905,8 +905,8 @@
   "dur": 4.4,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_018.mp4"
  },
  {
   "id": "s03_019",
@@ -914,8 +914,8 @@
   "dur": 4.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_019.mp4"
  },
  {
   "id": "s03_020",
@@ -923,8 +923,8 @@
   "dur": 4.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_020.mp4"
  },
  {
   "id": "s03_021",
@@ -932,8 +932,8 @@
   "dur": 2.64,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s03_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_021.mp4"
  },
  {
   "id": "s03_022",
@@ -941,8 +941,8 @@
   "dur": 1.68,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_020.mp4"
  },
  {
   "id": "s03_023",
@@ -950,8 +950,8 @@
   "dur": 6.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_019.mp4"
  },
  {
   "id": "s03_024",
@@ -959,8 +959,8 @@
   "dur": 4.88,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_024.mp4"
  },
  {
   "id": "s03_025",
@@ -968,8 +968,8 @@
   "dur": 4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_025.mp4"
  },
  {
   "id": "s03_026",
@@ -985,8 +985,8 @@
   "dur": 6,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_025.mp4"
  },
  {
   "id": "s03_028",
@@ -1012,8 +1012,8 @@
   "dur": 4.4,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s03_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s03_025.mp4"
  },
  {
   "id": "s04_001",
@@ -1021,8 +1021,8 @@
   "dur": 6.96,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_001.mp4"
  },
  {
   "id": "s04_002",
@@ -1030,8 +1030,8 @@
   "dur": 5.6,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_002.mp4"
  },
  {
   "id": "s04_003",
@@ -1048,8 +1048,8 @@
   "dur": 3.68,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_004.mp4"
  },
  {
   "id": "s04_005",
@@ -1066,8 +1066,8 @@
   "dur": 3.92,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_006.mp4"
  },
  {
   "id": "s04_007",
@@ -1084,8 +1084,8 @@
   "dur": 5.6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_008.mp4"
  },
  {
   "id": "s04_009",
@@ -1093,8 +1093,8 @@
   "dur": 5.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_009.mp4"
  },
  {
   "id": "s04_010",
@@ -1102,8 +1102,8 @@
   "dur": 4.96,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_010.mp4"
  },
  {
   "id": "s04_011",
@@ -1119,8 +1119,8 @@
   "dur": 4.4,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_012.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_012.mp4"
  },
  {
   "id": "s04_013",
@@ -1128,8 +1128,8 @@
   "dur": 6.96,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_013.mp4"
  },
  {
   "id": "s04_014",
@@ -1137,8 +1137,8 @@
   "dur": 2.88,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_014.mp4"
  },
  {
   "id": "s04_015",
@@ -1146,8 +1146,8 @@
   "dur": 3.92,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_015.mp4"
  },
  {
   "id": "s04_016",
@@ -1155,8 +1155,8 @@
   "dur": 3.6,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_016.mp4"
  },
  {
   "id": "s04_017",
@@ -1164,8 +1164,8 @@
   "dur": 4.08,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_017.mp4"
  },
  {
   "id": "s04_018",
@@ -1173,8 +1173,8 @@
   "dur": 5.76,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_018.mp4"
  },
  {
   "id": "s04_019",
@@ -1182,8 +1182,8 @@
   "dur": 10.8,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_019.mp4"
  },
  {
   "id": "s04_020",
@@ -1191,8 +1191,8 @@
   "dur": 5.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_020.mp4"
  },
  {
   "id": "s04_021",
@@ -1200,8 +1200,8 @@
   "dur": 0.88,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_021.mp4"
  },
  {
   "id": "s04_022",
@@ -1209,8 +1209,8 @@
   "dur": 7.6,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_022.mp4"
  },
  {
   "id": "s04_023",
@@ -1218,8 +1218,8 @@
   "dur": 1.44,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_023.mp4"
  },
  {
   "id": "s04_024",
@@ -1227,8 +1227,8 @@
   "dur": 2,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_024.mp4"
  },
  {
   "id": "s04_025",
@@ -1236,8 +1236,8 @@
   "dur": 10.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_025.mp4"
  },
  {
   "id": "s04_026",
@@ -1245,8 +1245,8 @@
   "dur": 7.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_026.mp4"
  },
  {
   "id": "s04_027",
@@ -1254,8 +1254,8 @@
   "dur": 4.48,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_027.mp4"
  },
  {
   "id": "s04_028",
@@ -1263,8 +1263,8 @@
   "dur": 1.92,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_028.mp4"
  },
  {
   "id": "s04_029",
@@ -1280,8 +1280,8 @@
   "dur": 3.36,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_030.mp4"
  },
  {
   "id": "s04_031",
@@ -1289,8 +1289,8 @@
   "dur": 7.12,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_031.mp4"
  },
  {
   "id": "s04_032",
@@ -1298,8 +1298,8 @@
   "dur": 5.84,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s04_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_030.mp4"
  },
  {
   "id": "s04_033",
@@ -1307,8 +1307,8 @@
   "dur": 3.68,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s04_033.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s04_033.mp4"
  },
  {
   "id": "s05_001",
@@ -1316,8 +1316,8 @@
   "dur": 1.92,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_001.mp4"
  },
  {
   "id": "s05_002",
@@ -1352,8 +1352,8 @@
   "dur": 4.88,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_005.mp4"
  },
  {
   "id": "s05_006",
@@ -1379,8 +1379,8 @@
   "dur": 7.6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_008.mp4"
  },
  {
   "id": "s05_009",
@@ -1414,8 +1414,8 @@
   "dur": 4.8,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_008.mp4"
  },
  {
   "id": "s05_013",
@@ -1423,8 +1423,8 @@
   "dur": 1.92,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s05_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_013.mp4"
  },
  {
   "id": "s05_014",
@@ -1449,8 +1449,8 @@
   "dur": 4.48,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_016.mp4"
  },
  {
   "id": "s05_017",
@@ -1458,8 +1458,8 @@
   "dur": 5.52,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_017.mp4"
  },
  {
   "id": "s05_018",
@@ -1467,8 +1467,8 @@
   "dur": 6.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_018.mp4"
  },
  {
   "id": "s05_019",
@@ -1502,8 +1502,8 @@
   "dur": 3.36,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_022.mp4"
  },
  {
   "id": "s05_023",
@@ -1511,8 +1511,8 @@
   "dur": 2.48,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_001.mp4"
  },
  {
   "id": "s05_024",
@@ -1520,8 +1520,8 @@
   "dur": 2.48,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_024.mp4"
  },
  {
   "id": "s05_025",
@@ -1529,8 +1529,8 @@
   "dur": 3.84,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_025.mp4"
  },
  {
   "id": "s05_026",
@@ -1538,8 +1538,8 @@
   "dur": 3.52,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_026.mp4"
  },
  {
   "id": "s05_027",
@@ -1547,8 +1547,8 @@
   "dur": 3.92,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_024.mp4"
  },
  {
   "id": "s05_028",
@@ -1556,8 +1556,8 @@
   "dur": 3.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_016.mp4"
  },
  {
   "id": "s05_029",
@@ -1565,8 +1565,8 @@
   "dur": 4.56,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_029.mp4"
  },
  {
   "id": "s05_030",
@@ -1591,8 +1591,8 @@
   "dur": 2.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_032.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_032.mp4"
  },
  {
   "id": "s05_033",
@@ -1600,8 +1600,8 @@
   "dur": 4.72,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_033.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_033.mp4"
  },
  {
   "id": "s05_034",
@@ -1609,8 +1609,8 @@
   "dur": 3.76,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_034.mp4"
  },
  {
   "id": "s05_035",
@@ -1627,8 +1627,8 @@
   "dur": 4.56,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_024.mp4"
  },
  {
   "id": "s05_037",
@@ -1636,8 +1636,8 @@
   "dur": 5.2,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_026.mp4"
  },
  {
   "id": "s05_038",
@@ -1645,8 +1645,8 @@
   "dur": 9.28,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_017.mp4"
  },
  {
   "id": "s05_039",
@@ -1654,8 +1654,8 @@
   "dur": 2.88,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_018.mp4"
  },
  {
   "id": "s05_040",
@@ -1663,8 +1663,8 @@
   "dur": 7.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_040.mp4"
  },
  {
   "id": "s05_041",
@@ -1672,8 +1672,8 @@
   "dur": 8.72,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_041.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_041.mp4"
  },
  {
   "id": "s05_042",
@@ -1681,8 +1681,8 @@
   "dur": 4.48,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_042.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_042.mp4"
  },
  {
   "id": "s05_043",
@@ -1698,8 +1698,8 @@
   "dur": 3.92,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s05_033.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_033.mp4"
  },
  {
   "id": "s05_045",
@@ -1707,8 +1707,8 @@
   "dur": 1.28,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s05_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_045.mp4"
  },
  {
   "id": "s05_046",
@@ -1716,8 +1716,8 @@
   "dur": 7.2,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s05_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_013.mp4"
  },
  {
   "id": "s05_047",
@@ -1725,8 +1725,8 @@
   "dur": 6.32,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s05_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s05_045.mp4"
  },
  {
   "id": "s06_001",
@@ -1734,8 +1734,8 @@
   "dur": 10.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_001.mp4"
  },
  {
   "id": "s06_002",
@@ -1743,8 +1743,8 @@
   "dur": 4.08,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_002.mp4"
  },
  {
   "id": "s06_003",
@@ -1752,8 +1752,8 @@
   "dur": 5.2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_003.mp4"
  },
  {
   "id": "s06_004",
@@ -1761,8 +1761,8 @@
   "dur": 9.44,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_004.mp4"
  },
  {
   "id": "s06_005",
@@ -1770,8 +1770,8 @@
   "dur": 9.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_005.mp4"
  },
  {
   "id": "s06_006",
@@ -1788,8 +1788,8 @@
   "dur": 5.12,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_007.mp4"
  },
  {
   "id": "s06_008",
@@ -1797,8 +1797,8 @@
   "dur": 6.08,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_008.mp4"
  },
  {
   "id": "s06_009",
@@ -1815,8 +1815,8 @@
   "dur": 2.08,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_010.mp4"
  },
  {
   "id": "s06_011",
@@ -1841,8 +1841,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_007.mp4"
  },
  {
   "id": "s06_014",
@@ -1850,8 +1850,8 @@
   "dur": 2.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_002.mp4"
  },
  {
   "id": "s06_015",
@@ -1859,8 +1859,8 @@
   "dur": 2.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_015.mp4"
  },
  {
   "id": "s06_016",
@@ -1868,8 +1868,8 @@
   "dur": 4.96,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_016.mp4"
  },
  {
   "id": "s06_017",
@@ -1877,8 +1877,8 @@
   "dur": 5.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_017.mp4"
  },
  {
   "id": "s06_018",
@@ -1886,8 +1886,8 @@
   "dur": 4.72,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s06_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_018.mp4"
  },
  {
   "id": "s06_019",
@@ -1895,8 +1895,8 @@
   "dur": 2.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_019.mp4"
  },
  {
   "id": "s06_020",
@@ -1913,8 +1913,8 @@
   "dur": 4.16,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_021.mp4"
  },
  {
   "id": "s06_022",
@@ -1949,8 +1949,8 @@
   "dur": 4.64,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_025.mp4"
  },
  {
   "id": "s06_026",
@@ -1958,8 +1958,8 @@
   "dur": 3.36,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_019.mp4"
  },
  {
   "id": "s06_027",
@@ -1967,8 +1967,8 @@
   "dur": 7.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_027.mp4"
  },
  {
   "id": "s06_028",
@@ -1976,8 +1976,8 @@
   "dur": 4.64,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_028.mp4"
  },
  {
   "id": "s06_029",
@@ -2002,8 +2002,8 @@
   "dur": 3.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_031.mp4"
  },
  {
   "id": "s06_032",
@@ -2011,8 +2011,8 @@
   "dur": 6.72,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s06_032.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_032.mp4"
  },
  {
   "id": "s06_033",
@@ -2020,8 +2020,8 @@
   "dur": 2.56,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_031.mp4"
  },
  {
   "id": "s06_034",
@@ -2029,8 +2029,8 @@
   "dur": 3.6,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_034.mp4"
  },
  {
   "id": "s06_035",
@@ -2038,8 +2038,8 @@
   "dur": 4.72,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_035.mp4"
  },
  {
   "id": "s06_036",
@@ -2047,8 +2047,8 @@
   "dur": 7.2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_036.mp4"
  },
  {
   "id": "s06_037",
@@ -2056,8 +2056,8 @@
   "dur": 4.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_037.mp4"
  },
  {
   "id": "s06_038",
@@ -2065,8 +2065,8 @@
   "dur": 4.96,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_035.mp4"
  },
  {
   "id": "s06_039",
@@ -2092,8 +2092,8 @@
   "dur": 4.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_041.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_041.mp4"
  },
  {
   "id": "s06_042",
@@ -2101,8 +2101,8 @@
   "dur": 5.04,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_042.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_042.mp4"
  },
  {
   "id": "s06_043",
@@ -2110,8 +2110,8 @@
   "dur": 7.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_036.mp4"
  },
  {
   "id": "s06_044",
@@ -2119,8 +2119,8 @@
   "dur": 3.2,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_034.mp4"
  },
  {
   "id": "s06_045",
@@ -2128,8 +2128,8 @@
   "dur": 3.6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_045.mp4"
  },
  {
   "id": "s06_046",
@@ -2137,8 +2137,8 @@
   "dur": 5.84,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_046.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_046.mp4"
  },
  {
   "id": "s06_047",
@@ -2146,8 +2146,8 @@
   "dur": 4.96,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_047.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_047.mp4"
  },
  {
   "id": "s06_048",
@@ -2164,8 +2164,8 @@
   "dur": 2.56,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_049.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_049.mp4"
  },
  {
   "id": "s06_050",
@@ -2173,8 +2173,8 @@
   "dur": 7.28,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_050.mp4"
  },
  {
   "id": "s06_051",
@@ -2182,8 +2182,8 @@
   "dur": 5.76,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_046.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_046.mp4"
  },
  {
   "id": "s06_052",
@@ -2191,8 +2191,8 @@
   "dur": 6.16,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_052.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_052.mp4"
  },
  {
   "id": "s06_053",
@@ -2209,8 +2209,8 @@
   "dur": 5.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s06_052.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s06_052.mp4"
  },
  {
   "id": "s07_001",
@@ -2218,8 +2218,8 @@
   "dur": 3.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_001.mp4"
  },
  {
   "id": "s07_002",
@@ -2227,8 +2227,8 @@
   "dur": 3.52,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_002.mp4"
  },
  {
   "id": "s07_003",
@@ -2236,8 +2236,8 @@
   "dur": 1.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_003.mp4"
  },
  {
   "id": "s07_004",
@@ -2245,8 +2245,8 @@
   "dur": 6.56,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_004.mp4"
  },
  {
   "id": "s07_005",
@@ -2254,8 +2254,8 @@
   "dur": 7.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_005.mp4"
  },
  {
   "id": "s07_006",
@@ -2263,8 +2263,8 @@
   "dur": 12.88,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_006.mp4"
  },
  {
   "id": "s07_007",
@@ -2272,8 +2272,8 @@
   "dur": 4.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_001.mp4"
  },
  {
   "id": "s07_008",
@@ -2281,8 +2281,8 @@
   "dur": 7.04,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_008.mp4"
  },
  {
   "id": "s07_009",
@@ -2290,8 +2290,8 @@
   "dur": 7.04,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_009.mp4"
  },
  {
   "id": "s07_010",
@@ -2299,8 +2299,8 @@
   "dur": 1.28,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_002.mp4"
  },
  {
   "id": "s07_011",
@@ -2308,8 +2308,8 @@
   "dur": 4.8,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_011.mp4"
  },
  {
   "id": "s07_012",
@@ -2325,8 +2325,8 @@
   "dur": 1.36,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_009.mp4"
  },
  {
   "id": "s07_014",
@@ -2334,8 +2334,8 @@
   "dur": 1.36,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_014.mp4"
  },
  {
   "id": "s07_015",
@@ -2343,8 +2343,8 @@
   "dur": 1.92,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_009.mp4"
  },
  {
   "id": "s07_016",
@@ -2352,8 +2352,8 @@
   "dur": 1.6,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_016.mp4"
  },
  {
   "id": "s07_017",
@@ -2361,8 +2361,8 @@
   "dur": 1.52,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_009.mp4"
  },
  {
   "id": "s07_018",
@@ -2370,8 +2370,8 @@
   "dur": 2.88,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_018.mp4"
  },
  {
   "id": "s07_019",
@@ -2379,8 +2379,8 @@
   "dur": 1.68,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_019.mp4"
  },
  {
   "id": "s07_020",
@@ -2388,8 +2388,8 @@
   "dur": 1.44,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_020.mp4"
  },
  {
   "id": "s07_021",
@@ -2406,8 +2406,8 @@
   "dur": 1.68,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_022.mp4"
  },
  {
   "id": "s07_023",
@@ -2424,8 +2424,8 @@
   "dur": 2.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_024.mp4"
  },
  {
   "id": "s07_025",
@@ -2433,8 +2433,8 @@
   "dur": 2.32,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_025.mp4"
  },
  {
   "id": "s07_026",
@@ -2442,8 +2442,8 @@
   "dur": 5.76,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_009.mp4"
  },
  {
   "id": "s07_027",
@@ -2451,8 +2451,8 @@
   "dur": 10.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_027.mp4"
  },
  {
   "id": "s07_028",
@@ -2460,8 +2460,8 @@
   "dur": 7.12,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_028.mp4"
  },
  {
   "id": "s07_029",
@@ -2469,8 +2469,8 @@
   "dur": 3.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_029.mp4"
  },
  {
   "id": "s07_030",
@@ -2478,8 +2478,8 @@
   "dur": 6.56,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_030.mp4"
  },
  {
   "id": "s07_031",
@@ -2487,8 +2487,8 @@
   "dur": 1.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_031.mp4"
  },
  {
   "id": "s07_032",
@@ -2496,8 +2496,8 @@
   "dur": 4.64,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_032.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_032.mp4"
  },
  {
   "id": "s07_033",
@@ -2514,8 +2514,8 @@
   "dur": 4.08,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_031.mp4"
  },
  {
   "id": "s07_035",
@@ -2523,8 +2523,8 @@
   "dur": 2.64,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_035.mp4"
  },
  {
   "id": "s07_036",
@@ -2532,8 +2532,8 @@
   "dur": 4.96,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_036.mp4"
  },
  {
   "id": "s07_037",
@@ -2541,8 +2541,8 @@
   "dur": 5.68,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_037.mp4"
  },
  {
   "id": "s07_038",
@@ -2550,8 +2550,8 @@
   "dur": 6.48,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_038.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_038.mp4"
  },
  {
   "id": "s07_039",
@@ -2567,8 +2567,8 @@
   "dur": 5.04,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_040.mp4"
  },
  {
   "id": "s07_041",
@@ -2576,8 +2576,8 @@
   "dur": 7.36,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_041.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_041.mp4"
  },
  {
   "id": "s07_042",
@@ -2585,8 +2585,8 @@
   "dur": 1.44,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_028.mp4"
  },
  {
   "id": "s07_043",
@@ -2594,8 +2594,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s07_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_009.mp4"
  },
  {
   "id": "s07_044",
@@ -2603,8 +2603,8 @@
   "dur": 0.8,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_044.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_044.mp4"
  },
  {
   "id": "s07_045",
@@ -2612,8 +2612,8 @@
   "dur": 6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_045.mp4"
  },
  {
   "id": "s07_046",
@@ -2621,8 +2621,8 @@
   "dur": 4.24,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_046.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_046.mp4"
  },
  {
   "id": "s07_047",
@@ -2648,8 +2648,8 @@
   "dur": 6.32,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_049.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_049.mp4"
  },
  {
   "id": "s07_050",
@@ -2657,8 +2657,8 @@
   "dur": 5.68,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_050.mp4"
  },
  {
   "id": "s07_051",
@@ -2666,8 +2666,8 @@
   "dur": 3.76,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_051.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_051.mp4"
  },
  {
   "id": "s07_052",
@@ -2675,8 +2675,8 @@
   "dur": 5.68,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_050.mp4"
  },
  {
   "id": "s07_053",
@@ -2684,8 +2684,8 @@
   "dur": 8.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s07_053.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s07_053.mp4"
  },
  {
   "id": "s08_001",
@@ -2693,8 +2693,8 @@
   "dur": 4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_001.mp4"
  },
  {
   "id": "s08_002",
@@ -2702,8 +2702,8 @@
   "dur": 1.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_002.mp4"
  },
  {
   "id": "s08_003",
@@ -2711,8 +2711,8 @@
   "dur": 5.84,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s08_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_003.mp4"
  },
  {
   "id": "s08_004",
@@ -2738,8 +2738,8 @@
   "dur": 3.76,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_006.mp4"
  },
  {
   "id": "s08_007",
@@ -2747,8 +2747,8 @@
   "dur": 1.44,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_007.mp4"
  },
  {
   "id": "s08_008",
@@ -2756,8 +2756,8 @@
   "dur": 3.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_008.mp4"
  },
  {
   "id": "s08_009",
@@ -2765,8 +2765,8 @@
   "dur": 4.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_009.mp4"
  },
  {
   "id": "s08_010",
@@ -2783,8 +2783,8 @@
   "dur": 4.16,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_011.mp4"
  },
  {
   "id": "s08_012",
@@ -2792,8 +2792,8 @@
   "dur": 3.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_012.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_012.mp4"
  },
  {
   "id": "s08_013",
@@ -2801,8 +2801,8 @@
   "dur": 2.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_013.mp4"
  },
  {
   "id": "s08_014",
@@ -2810,8 +2810,8 @@
   "dur": 5.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_014.mp4"
  },
  {
   "id": "s08_015",
@@ -2836,8 +2836,8 @@
   "dur": 6.24,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_017.mp4"
  },
  {
   "id": "s08_018",
@@ -2845,8 +2845,8 @@
   "dur": 4.8,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_018.mp4"
  },
  {
   "id": "s08_019",
@@ -2863,8 +2863,8 @@
   "dur": 3.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_020.mp4"
  },
  {
   "id": "s08_021",
@@ -2889,8 +2889,8 @@
   "dur": 3.2,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_023.mp4"
  },
  {
   "id": "s08_024",
@@ -2898,8 +2898,8 @@
   "dur": 2.56,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_024.mp4"
  },
  {
   "id": "s08_025",
@@ -2907,8 +2907,8 @@
   "dur": 3.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_025.mp4"
  },
  {
   "id": "s08_026",
@@ -2916,8 +2916,8 @@
   "dur": 4.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_026.mp4"
  },
  {
   "id": "s08_027",
@@ -2925,8 +2925,8 @@
   "dur": 2.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_025.mp4"
  },
  {
   "id": "s08_028",
@@ -2934,8 +2934,8 @@
   "dur": 5.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_028.mp4"
  },
  {
   "id": "s08_029",
@@ -2943,8 +2943,8 @@
   "dur": 1.44,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_029.mp4"
  },
  {
   "id": "s08_030",
@@ -2952,8 +2952,8 @@
   "dur": 6.8,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s08_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_030.mp4"
  },
  {
   "id": "s08_031",
@@ -2961,8 +2961,8 @@
   "dur": 1.28,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s08_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s08_031.mp4"
  },
  {
   "id": "s09_001",
@@ -2970,8 +2970,8 @@
   "dur": 1.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_001.mp4"
  },
  {
   "id": "s09_002",
@@ -2979,8 +2979,8 @@
   "dur": 3.12,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_002.mp4"
  },
  {
   "id": "s09_003",
@@ -2988,8 +2988,8 @@
   "dur": 4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_003.mp4"
  },
  {
   "id": "s09_004",
@@ -2997,8 +2997,8 @@
   "dur": 2.32,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_004.mp4"
  },
  {
   "id": "s09_005",
@@ -3006,8 +3006,8 @@
   "dur": 1.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_005.mp4"
  },
  {
   "id": "s09_006",
@@ -3015,8 +3015,8 @@
   "dur": 6.24,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_006.mp4"
  },
  {
   "id": "s09_007",
@@ -3024,8 +3024,8 @@
   "dur": 3.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_007.mp4"
  },
  {
   "id": "s09_008",
@@ -3033,8 +3033,8 @@
   "dur": 5.28,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_008.mp4"
  },
  {
   "id": "s09_009",
@@ -3042,8 +3042,8 @@
   "dur": 3.44,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_009.mp4"
  },
  {
   "id": "s09_010",
@@ -3051,8 +3051,8 @@
   "dur": 2.88,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_010.mp4"
  },
  {
   "id": "s09_011",
@@ -3060,8 +3060,8 @@
   "dur": 7.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_011.mp4"
  },
  {
   "id": "s09_012",
@@ -3069,8 +3069,8 @@
   "dur": 1.36,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_012.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_012.mp4"
  },
  {
   "id": "s09_013",
@@ -3078,8 +3078,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_013.mp4"
  },
  {
   "id": "s09_014",
@@ -3087,8 +3087,8 @@
   "dur": 2.64,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_014.mp4"
  },
  {
   "id": "s09_015",
@@ -3096,8 +3096,8 @@
   "dur": 3.2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_015.mp4"
  },
  {
   "id": "s09_016",
@@ -3105,8 +3105,8 @@
   "dur": 6.64,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_016.mp4"
  },
  {
   "id": "s09_017",
@@ -3114,8 +3114,8 @@
   "dur": 5.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_017.mp4"
  },
  {
   "id": "s09_018",
@@ -3123,8 +3123,8 @@
   "dur": 6.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_018.mp4"
  },
  {
   "id": "s09_019",
@@ -3132,8 +3132,8 @@
   "dur": 5.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_019.mp4"
  },
  {
   "id": "s09_020",
@@ -3158,8 +3158,8 @@
   "dur": 3.36,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_022.mp4"
  },
  {
   "id": "s09_023",
@@ -3167,8 +3167,8 @@
   "dur": 2.96,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_023.mp4"
  },
  {
   "id": "s09_024",
@@ -3176,8 +3176,8 @@
   "dur": 4.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_024.mp4"
  },
  {
   "id": "s09_025",
@@ -3185,8 +3185,8 @@
   "dur": 1.92,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_022.mp4"
  },
  {
   "id": "s09_026",
@@ -3194,8 +3194,8 @@
   "dur": 4.56,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_026.mp4"
  },
  {
   "id": "s09_027",
@@ -3203,8 +3203,8 @@
   "dur": 1.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_027.mp4"
  },
  {
   "id": "s09_028",
@@ -3221,8 +3221,8 @@
   "dur": 3.12,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_029.mp4"
  },
  {
   "id": "s09_030",
@@ -3230,8 +3230,8 @@
   "dur": 3.04,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_030.mp4"
  },
  {
   "id": "s09_031",
@@ -3239,8 +3239,8 @@
   "dur": 6.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_031.mp4"
  },
  {
   "id": "s09_032",
@@ -3248,8 +3248,8 @@
   "dur": 3.12,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_032.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_032.mp4"
  },
  {
   "id": "s09_033",
@@ -3257,8 +3257,8 @@
   "dur": 5.6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_033.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_033.mp4"
  },
  {
   "id": "s09_034",
@@ -3266,8 +3266,8 @@
   "dur": 8.32,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_034.mp4"
  },
  {
   "id": "s09_035",
@@ -3275,8 +3275,8 @@
   "dur": 4.64,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_035.mp4"
  },
  {
   "id": "s09_036",
@@ -3284,8 +3284,8 @@
   "dur": 5.28,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_036.mp4"
  },
  {
   "id": "s09_037",
@@ -3293,8 +3293,8 @@
   "dur": 4.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_037.mp4"
  },
  {
   "id": "s09_038",
@@ -3302,8 +3302,8 @@
   "dur": 1.12,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_034.mp4"
  },
  {
   "id": "s09_039",
@@ -3311,8 +3311,8 @@
   "dur": 5.36,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_039.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_039.mp4"
  },
  {
   "id": "s09_040",
@@ -3320,8 +3320,8 @@
   "dur": 8.24,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_040.mp4"
  },
  {
   "id": "s09_041",
@@ -3329,8 +3329,8 @@
   "dur": 7.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_041.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_041.mp4"
  },
  {
   "id": "s09_042",
@@ -3338,8 +3338,8 @@
   "dur": 6.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_042.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_042.mp4"
  },
  {
   "id": "s09_043",
@@ -3347,8 +3347,8 @@
   "dur": 4.88,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_043.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_043.mp4"
  },
  {
   "id": "s09_044",
@@ -3356,8 +3356,8 @@
   "dur": 2.08,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_044.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_044.mp4"
  },
  {
   "id": "s09_045",
@@ -3374,8 +3374,8 @@
   "dur": 4.32,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_046.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_046.mp4"
  },
  {
   "id": "s09_047",
@@ -3383,8 +3383,8 @@
   "dur": 4.8,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_047.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_047.mp4"
  },
  {
   "id": "s09_048",
@@ -3401,8 +3401,8 @@
   "dur": 4.56,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_049.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_049.mp4"
  },
  {
   "id": "s09_050",
@@ -3410,8 +3410,8 @@
   "dur": 4,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_050.mp4"
  },
  {
   "id": "s09_051",
@@ -3419,8 +3419,8 @@
   "dur": 2.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_051.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_051.mp4"
  },
  {
   "id": "s09_052",
@@ -3428,8 +3428,8 @@
   "dur": 2.16,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_052.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_052.mp4"
  },
  {
   "id": "s09_053",
@@ -3437,8 +3437,8 @@
   "dur": 8.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_053.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_053.mp4"
  },
  {
   "id": "s09_054",
@@ -3446,8 +3446,8 @@
   "dur": 2.8,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_054.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_054.mp4"
  },
  {
   "id": "s09_055",
@@ -3455,8 +3455,8 @@
   "dur": 6.32,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_055.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_055.mp4"
  },
  {
   "id": "s09_056",
@@ -3464,8 +3464,8 @@
   "dur": 3.84,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_056.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_056.mp4"
  },
  {
   "id": "s09_057",
@@ -3482,8 +3482,8 @@
   "dur": 5.76,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_054.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_054.mp4"
  },
  {
   "id": "s09_059",
@@ -3491,8 +3491,8 @@
   "dur": 2.56,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_059.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_059.mp4"
  },
  {
   "id": "s09_060",
@@ -3500,8 +3500,8 @@
   "dur": 4.48,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_060.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_060.mp4"
  },
  {
   "id": "s09_061",
@@ -3509,8 +3509,8 @@
   "dur": 3.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_061.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_061.mp4"
  },
  {
   "id": "s09_062",
@@ -3518,8 +3518,8 @@
   "dur": 4.8,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_062.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_062.mp4"
  },
  {
   "id": "s09_063",
@@ -3527,8 +3527,8 @@
   "dur": 4.96,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_063.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_063.mp4"
  },
  {
   "id": "s09_064",
@@ -3536,8 +3536,8 @@
   "dur": 7.28,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_064.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_064.mp4"
  },
  {
   "id": "s09_065",
@@ -3545,8 +3545,8 @@
   "dur": 6.24,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_065.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_065.mp4"
  },
  {
   "id": "s09_066",
@@ -3554,8 +3554,8 @@
   "dur": 2.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_066.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_066.mp4"
  },
  {
   "id": "s09_067",
@@ -3563,8 +3563,8 @@
   "dur": 4.32,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_067.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_067.mp4"
  },
  {
   "id": "s09_068",
@@ -3572,8 +3572,8 @@
   "dur": 8.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_068.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_068.mp4"
  },
  {
   "id": "s09_069",
@@ -3581,8 +3581,8 @@
   "dur": 2.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_069.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_069.mp4"
  },
  {
   "id": "s09_070",
@@ -3590,8 +3590,8 @@
   "dur": 7.44,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_070.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_070.mp4"
  },
  {
   "id": "s09_071",
@@ -3599,8 +3599,8 @@
   "dur": 3.12,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_071.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_071.mp4"
  },
  {
   "id": "s09_072",
@@ -3608,8 +3608,8 @@
   "dur": 4.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_070.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_070.mp4"
  },
  {
   "id": "s09_073",
@@ -3625,8 +3625,8 @@
   "dur": 1.28,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_069.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_069.mp4"
  },
  {
   "id": "s09_075",
@@ -3634,8 +3634,8 @@
   "dur": 2.96,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s09_075.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_075.mp4"
  },
  {
   "id": "s09_076",
@@ -3643,8 +3643,8 @@
   "dur": 2.32,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s09_076.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s09_076.mp4"
  },
  {
   "id": "s09_077",
@@ -3661,8 +3661,8 @@
   "dur": 2.24,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_001.mp4"
  },
  {
   "id": "s10_002",
@@ -3706,8 +3706,8 @@
   "dur": 5.2,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s10_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_006.mp4"
  },
  {
   "id": "s10_007",
@@ -3715,8 +3715,8 @@
   "dur": 3.6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_007.mp4"
  },
  {
   "id": "s10_008",
@@ -3751,8 +3751,8 @@
   "dur": 6,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_011.mp4"
  },
  {
   "id": "s10_012",
@@ -3768,8 +3768,8 @@
   "dur": 5.36,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_013.mp4"
  },
  {
   "id": "s10_014",
@@ -3777,8 +3777,8 @@
   "dur": 0.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_014.mp4"
  },
  {
   "id": "s10_015",
@@ -3786,8 +3786,8 @@
   "dur": 6.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_015.mp4"
  },
  {
   "id": "s10_016",
@@ -3795,8 +3795,8 @@
   "dur": 4.88,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s10_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_016.mp4"
  },
  {
   "id": "s10_017",
@@ -3804,8 +3804,8 @@
   "dur": 2.24,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_017.mp4"
  },
  {
   "id": "s10_018",
@@ -3813,8 +3813,8 @@
   "dur": 5.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_018.mp4"
  },
  {
   "id": "s10_019",
@@ -3822,8 +3822,8 @@
   "dur": 6.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_019.mp4"
  },
  {
   "id": "s10_020",
@@ -3831,8 +3831,8 @@
   "dur": 5.36,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_020.mp4"
  },
  {
   "id": "s10_021",
@@ -3849,8 +3849,8 @@
   "dur": 8.24,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_022.mp4"
  },
  {
   "id": "s10_023",
@@ -3858,8 +3858,8 @@
   "dur": 2.8,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_023.mp4"
  },
  {
   "id": "s10_024",
@@ -3867,8 +3867,8 @@
   "dur": 4.96,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_024.mp4"
  },
  {
   "id": "s10_025",
@@ -3876,8 +3876,8 @@
   "dur": 3.12,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s10_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_025.mp4"
  },
  {
   "id": "s10_026",
@@ -3885,8 +3885,8 @@
   "dur": 2.96,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_026.mp4"
  },
  {
   "id": "s10_027",
@@ -3894,8 +3894,8 @@
   "dur": 4.88,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_027.mp4"
  },
  {
   "id": "s10_028",
@@ -3903,8 +3903,8 @@
   "dur": 3.28,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_028.mp4"
  },
  {
   "id": "s10_029",
@@ -3912,8 +3912,8 @@
   "dur": 2.8,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_029.mp4"
  },
  {
   "id": "s10_030",
@@ -3921,8 +3921,8 @@
   "dur": 4.48,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_030.mp4"
  },
  {
   "id": "s10_031",
@@ -3930,8 +3930,8 @@
   "dur": 7.36,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_031.mp4"
  },
  {
   "id": "s10_032",
@@ -3948,8 +3948,8 @@
   "dur": 7.12,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_033.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_033.mp4"
  },
  {
   "id": "s10_034",
@@ -3966,8 +3966,8 @@
   "dur": 8.88,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_035.mp4"
  },
  {
   "id": "s10_036",
@@ -3975,8 +3975,8 @@
   "dur": 3.92,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_036.mp4"
  },
  {
   "id": "s10_037",
@@ -3984,8 +3984,8 @@
   "dur": 2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_037.mp4"
  },
  {
   "id": "s10_038",
@@ -3993,8 +3993,8 @@
   "dur": 0.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_038.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_038.mp4"
  },
  {
   "id": "s10_039",
@@ -4002,8 +4002,8 @@
   "dur": 2.96,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_039.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_039.mp4"
  },
  {
   "id": "s10_040",
@@ -4011,8 +4011,8 @@
   "dur": 3.92,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_040.mp4"
  },
  {
   "id": "s10_041",
@@ -4020,8 +4020,8 @@
   "dur": 3.6,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_041.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_041.mp4"
  },
  {
   "id": "s10_042",
@@ -4029,8 +4029,8 @@
   "dur": 3.84,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_042.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_042.mp4"
  },
  {
   "id": "s10_043",
@@ -4038,8 +4038,8 @@
   "dur": 5.36,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s10_043.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_043.mp4"
  },
  {
   "id": "s10_044",
@@ -4055,8 +4055,8 @@
   "dur": 4.8,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_045.mp4"
  },
  {
   "id": "s10_046",
@@ -4064,8 +4064,8 @@
   "dur": 4.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_046.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_046.mp4"
  },
  {
   "id": "s10_047",
@@ -4073,8 +4073,8 @@
   "dur": 2.96,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_047.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_047.mp4"
  },
  {
   "id": "s10_048",
@@ -4082,8 +4082,8 @@
   "dur": 5.84,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_048.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_048.mp4"
  },
  {
   "id": "s10_049",
@@ -4091,8 +4091,8 @@
   "dur": 7.04,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_049.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_049.mp4"
  },
  {
   "id": "s10_050",
@@ -4109,8 +4109,8 @@
   "dur": 2.48,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_051.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_051.mp4"
  },
  {
   "id": "s10_052",
@@ -4118,8 +4118,8 @@
   "dur": 7.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_052.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_052.mp4"
  },
  {
   "id": "s10_053",
@@ -4136,8 +4136,8 @@
   "dur": 5.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_054.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_054.mp4"
  },
  {
   "id": "s10_055",
@@ -4163,8 +4163,8 @@
   "dur": 6.56,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_057.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_057.mp4"
  },
  {
   "id": "s10_058",
@@ -4172,8 +4172,8 @@
   "dur": 9.2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_058.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_058.mp4"
  },
  {
   "id": "s10_059",
@@ -4199,8 +4199,8 @@
   "dur": 2.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_061.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_061.mp4"
  },
  {
   "id": "s10_062",
@@ -4208,8 +4208,8 @@
   "dur": 10.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_062.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_062.mp4"
  },
  {
   "id": "s10_063",
@@ -4244,8 +4244,8 @@
   "dur": 6.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_066.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_066.mp4"
  },
  {
   "id": "s10_067",
@@ -4253,8 +4253,8 @@
   "dur": 6.366,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_067.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_067.mp4"
  },
  {
   "id": "s10_068",
@@ -4262,8 +4262,8 @@
   "dur": 4.194,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s10_068.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_068.mp4"
  },
  {
   "id": "s10_069",
@@ -4271,8 +4271,8 @@
   "dur": 8.48,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_069.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_069.mp4"
  },
  {
   "id": "s10_070",
@@ -4280,8 +4280,8 @@
   "dur": 1.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_070.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_070.mp4"
  },
  {
   "id": "s10_071",
@@ -4307,8 +4307,8 @@
   "dur": 6.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_073.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_073.mp4"
  },
  {
   "id": "s10_074",
@@ -4316,8 +4316,8 @@
   "dur": 6.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_074.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_074.mp4"
  },
  {
   "id": "s10_075",
@@ -4325,8 +4325,8 @@
   "dur": 2.24,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s10_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_016.mp4"
  },
  {
   "id": "s10_076",
@@ -4343,8 +4343,8 @@
   "dur": 4.56,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_077.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_077.mp4"
  },
  {
   "id": "s10_078",
@@ -4352,8 +4352,8 @@
   "dur": 4.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_078.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_078.mp4"
  },
  {
   "id": "s10_079",
@@ -4361,8 +4361,8 @@
   "dur": 2.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_079.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_079.mp4"
  },
  {
   "id": "s10_080",
@@ -4370,8 +4370,8 @@
   "dur": 6.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_080.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_080.mp4"
  },
  {
   "id": "s10_081",
@@ -4379,8 +4379,8 @@
   "dur": 2.8,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_081.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_081.mp4"
  },
  {
   "id": "s10_082",
@@ -4388,8 +4388,8 @@
   "dur": 2.24,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_082.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_082.mp4"
  },
  {
   "id": "s10_083",
@@ -4397,8 +4397,8 @@
   "dur": 4,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_083.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_083.mp4"
  },
  {
   "id": "s10_084",
@@ -4406,8 +4406,8 @@
   "dur": 0.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_084.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_084.mp4"
  },
  {
   "id": "s10_085",
@@ -4423,8 +4423,8 @@
   "dur": 6.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_086.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_086.mp4"
  },
  {
   "id": "s10_087",
@@ -4432,8 +4432,8 @@
   "dur": 0.4,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_087.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_087.mp4"
  },
  {
   "id": "s10_088",
@@ -4441,8 +4441,8 @@
   "dur": 3.52,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_088.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_088.mp4"
  },
  {
   "id": "s10_089",
@@ -4450,8 +4450,8 @@
   "dur": 1.84,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_089.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_089.mp4"
  },
  {
   "id": "s10_090",
@@ -4459,8 +4459,8 @@
   "dur": 0.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_090.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_090.mp4"
  },
  {
   "id": "s10_091",
@@ -4468,8 +4468,8 @@
   "dur": 5.28,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_091.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_091.mp4"
  },
  {
   "id": "s10_092",
@@ -4477,8 +4477,8 @@
   "dur": 0.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_092.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_092.mp4"
  },
  {
   "id": "s10_093",
@@ -4486,8 +4486,8 @@
   "dur": 2.4,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_093.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_093.mp4"
  },
  {
   "id": "s10_094",
@@ -4495,8 +4495,8 @@
   "dur": 2.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_094.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_094.mp4"
  },
  {
   "id": "s10_095",
@@ -4504,8 +4504,8 @@
   "dur": 3.92,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_095.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_095.mp4"
  },
  {
   "id": "s10_096",
@@ -4513,8 +4513,8 @@
   "dur": 1.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_096.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_096.mp4"
  },
  {
   "id": "s10_097",
@@ -4531,8 +4531,8 @@
   "dur": 5.84,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s10_098.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_098.mp4"
  },
  {
   "id": "s10_099",
@@ -4540,8 +4540,8 @@
   "dur": 3.68,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s10_099.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s10_099.mp4"
  },
  {
   "id": "s11_001",
@@ -4549,8 +4549,8 @@
   "dur": 2.8,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_001.mp4"
  },
  {
   "id": "s11_002",
@@ -4558,8 +4558,8 @@
   "dur": 4.64,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_002.mp4"
  },
  {
   "id": "s11_003",
@@ -4567,8 +4567,8 @@
   "dur": 4.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_003.mp4"
  },
  {
   "id": "s11_004",
@@ -4576,8 +4576,8 @@
   "dur": 6.48,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_004.mp4"
  },
  {
   "id": "s11_005",
@@ -4585,8 +4585,8 @@
   "dur": 2,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_005.mp4"
  },
  {
   "id": "s11_006",
@@ -4603,8 +4603,8 @@
   "dur": 3.2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_007.mp4"
  },
  {
   "id": "s11_008",
@@ -4612,8 +4612,8 @@
   "dur": 5.36,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_008.mp4"
  },
  {
   "id": "s11_009",
@@ -4630,8 +4630,8 @@
   "dur": 3.12,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_010.mp4"
  },
  {
   "id": "s11_011",
@@ -4639,8 +4639,8 @@
   "dur": 6.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_011.mp4"
  },
  {
   "id": "s11_012",
@@ -4665,8 +4665,8 @@
   "dur": 2.56,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_014.mp4"
  },
  {
   "id": "s11_015",
@@ -4674,8 +4674,8 @@
   "dur": 1.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_015.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_015.mp4"
  },
  {
   "id": "s11_016",
@@ -4683,8 +4683,8 @@
   "dur": 3.92,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_016.mp4"
  },
  {
   "id": "s11_017",
@@ -4692,8 +4692,8 @@
   "dur": 3.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_017.mp4"
  },
  {
   "id": "s11_018",
@@ -4710,8 +4710,8 @@
   "dur": 8.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_019.mp4"
  },
  {
   "id": "s11_020",
@@ -4736,8 +4736,8 @@
   "dur": 2.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_022.mp4"
  },
  {
   "id": "s11_023",
@@ -4745,8 +4745,8 @@
   "dur": 4.32,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_023.mp4"
  },
  {
   "id": "s11_024",
@@ -4754,8 +4754,8 @@
   "dur": 1.76,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_024.mp4"
  },
  {
   "id": "s11_025",
@@ -4781,8 +4781,8 @@
   "dur": 7.68,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_027.mp4"
  },
  {
   "id": "s11_028",
@@ -4790,8 +4790,8 @@
   "dur": 4.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_028.mp4"
  },
  {
   "id": "s11_029",
@@ -4799,8 +4799,8 @@
   "dur": 1.68,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_029.mp4"
  },
  {
   "id": "s11_030",
@@ -4808,8 +4808,8 @@
   "dur": 2.64,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_027.mp4"
  },
  {
   "id": "s11_031",
@@ -4817,8 +4817,8 @@
   "dur": 6.8,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_031.mp4"
  },
  {
   "id": "s11_032",
@@ -4844,8 +4844,8 @@
   "dur": 5.04,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_034.mp4"
  },
  {
   "id": "s11_035",
@@ -4853,8 +4853,8 @@
   "dur": 5.6,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_035.mp4"
  },
  {
   "id": "s11_036",
@@ -4862,8 +4862,8 @@
   "dur": 3.2,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_036.mp4"
  },
  {
   "id": "s11_037",
@@ -4871,8 +4871,8 @@
   "dur": 0.48,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_037.mp4"
  },
  {
   "id": "s11_038",
@@ -4889,8 +4889,8 @@
   "dur": 7.92,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_039.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_039.mp4"
  },
  {
   "id": "s11_040",
@@ -4898,8 +4898,8 @@
   "dur": 3.52,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_040.mp4"
  },
  {
   "id": "s11_041",
@@ -4916,8 +4916,8 @@
   "dur": 2,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_042.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_042.mp4"
  },
  {
   "id": "s11_043",
@@ -4943,8 +4943,8 @@
   "dur": 3.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_045.mp4"
  },
  {
   "id": "s11_046",
@@ -4952,8 +4952,8 @@
   "dur": 6.8,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_046.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_046.mp4"
  },
  {
   "id": "s11_047",
@@ -4988,8 +4988,8 @@
   "dur": 2.4,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_050.mp4"
  },
  {
   "id": "s11_051",
@@ -5006,8 +5006,8 @@
   "dur": 2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_050.mp4"
  },
  {
   "id": "s11_053",
@@ -5015,8 +5015,8 @@
   "dur": 2.32,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_053.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_053.mp4"
  },
  {
   "id": "s11_054",
@@ -5033,8 +5033,8 @@
   "dur": 3.12,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_036.mp4"
  },
  {
   "id": "s11_056",
@@ -5042,8 +5042,8 @@
   "dur": 2,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_056.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_056.mp4"
  },
  {
   "id": "s11_057",
@@ -5051,8 +5051,8 @@
   "dur": 3.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_057.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_057.mp4"
  },
  {
   "id": "s11_058",
@@ -5060,8 +5060,8 @@
   "dur": 4.72,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_058.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_058.mp4"
  },
  {
   "id": "s11_059",
@@ -5069,8 +5069,8 @@
   "dur": 5.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_059.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_059.mp4"
  },
  {
   "id": "s11_060",
@@ -5078,8 +5078,8 @@
   "dur": 3.84,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_060.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_060.mp4"
  },
  {
   "id": "s11_061",
@@ -5095,8 +5095,8 @@
   "dur": 1.44,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_062.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_062.mp4"
  },
  {
   "id": "s11_063",
@@ -5104,8 +5104,8 @@
   "dur": 7.36,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_063.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_063.mp4"
  },
  {
   "id": "s11_064",
@@ -5113,8 +5113,8 @@
   "dur": 6.16,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_064.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_064.mp4"
  },
  {
   "id": "s11_065",
@@ -5131,8 +5131,8 @@
   "dur": 2.96,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_066.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_066.mp4"
  },
  {
   "id": "s11_067",
@@ -5140,8 +5140,8 @@
   "dur": 3.28,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_067.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_067.mp4"
  },
  {
   "id": "s11_068",
@@ -5149,8 +5149,8 @@
   "dur": 6.32,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_068.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_068.mp4"
  },
  {
   "id": "s11_069",
@@ -5158,8 +5158,8 @@
   "dur": 7.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_069.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_069.mp4"
  },
  {
   "id": "s11_070",
@@ -5167,8 +5167,8 @@
   "dur": 6.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_070.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_070.mp4"
  },
  {
   "id": "s11_071",
@@ -5176,8 +5176,8 @@
   "dur": 5.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_071.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_071.mp4"
  },
  {
   "id": "s11_072",
@@ -5185,8 +5185,8 @@
   "dur": 2.24,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_039.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_039.mp4"
  },
  {
   "id": "s11_073",
@@ -5194,8 +5194,8 @@
   "dur": 4.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_073.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_073.mp4"
  },
  {
   "id": "s11_074",
@@ -5212,8 +5212,8 @@
   "dur": 3.68,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_075.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_075.mp4"
  },
  {
   "id": "s11_076",
@@ -5221,8 +5221,8 @@
   "dur": 5.28,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_076.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_076.mp4"
  },
  {
   "id": "s11_077",
@@ -5230,8 +5230,8 @@
   "dur": 4,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s11_077.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_077.mp4"
  },
  {
   "id": "s11_078",
@@ -5239,8 +5239,8 @@
   "dur": 3.28,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_078.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_078.mp4"
  },
  {
   "id": "s11_079",
@@ -5257,8 +5257,8 @@
   "dur": 6.8,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_080.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_080.mp4"
  },
  {
   "id": "s11_081",
@@ -5266,8 +5266,8 @@
   "dur": 2.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_081.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_081.mp4"
  },
  {
   "id": "s11_082",
@@ -5275,8 +5275,8 @@
   "dur": 3.28,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s11_082.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s11_082.mp4"
  },
  {
   "id": "s12_001",
@@ -5284,8 +5284,8 @@
   "dur": 4.64,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_001.mp4"
  },
  {
   "id": "s12_002",
@@ -5293,8 +5293,8 @@
   "dur": 6,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_002.mp4"
  },
  {
   "id": "s12_003",
@@ -5302,8 +5302,8 @@
   "dur": 4.32,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_003.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_003.mp4"
  },
  {
   "id": "s12_004",
@@ -5337,8 +5337,8 @@
   "dur": 1.92,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_007.mp4"
  },
  {
   "id": "s12_008",
@@ -5346,8 +5346,8 @@
   "dur": 4.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_008.mp4"
  },
  {
   "id": "s12_009",
@@ -5355,8 +5355,8 @@
   "dur": 6.48,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_009.mp4"
  },
  {
   "id": "s12_010",
@@ -5364,8 +5364,8 @@
   "dur": 1.68,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_010.mp4"
  },
  {
   "id": "s12_011",
@@ -5373,8 +5373,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_011.mp4"
  },
  {
   "id": "s12_012",
@@ -5382,8 +5382,8 @@
   "dur": 1.92,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_012.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_012.mp4"
  },
  {
   "id": "s12_013",
@@ -5391,8 +5391,8 @@
   "dur": 1.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_013.mp4"
  },
  {
   "id": "s12_014",
@@ -5400,8 +5400,8 @@
   "dur": 2.96,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_014.mp4"
  },
  {
   "id": "s12_015",
@@ -5418,8 +5418,8 @@
   "dur": 1.52,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_014.mp4"
  },
  {
   "id": "s12_017",
@@ -5427,8 +5427,8 @@
   "dur": 1.76,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_017.mp4"
  },
  {
   "id": "s12_018",
@@ -5436,8 +5436,8 @@
   "dur": 1.36,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_014.mp4"
  },
  {
   "id": "s12_019",
@@ -5445,8 +5445,8 @@
   "dur": 2,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_019.mp4"
  },
  {
   "id": "s12_020",
@@ -5454,8 +5454,8 @@
   "dur": 3.04,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_020.mp4"
  },
  {
   "id": "s12_021",
@@ -5463,8 +5463,8 @@
   "dur": 1.68,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_021.mp4"
  },
  {
   "id": "s12_022",
@@ -5481,8 +5481,8 @@
   "dur": 1.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_009.mp4"
  },
  {
   "id": "s12_024",
@@ -5507,8 +5507,8 @@
   "dur": 2.96,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_026.mp4"
  },
  {
   "id": "s12_027",
@@ -5516,8 +5516,8 @@
   "dur": 2.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_027.mp4"
  },
  {
   "id": "s12_028",
@@ -5525,8 +5525,8 @@
   "dur": 4.56,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_028.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_028.mp4"
  },
  {
   "id": "s12_029",
@@ -5534,8 +5534,8 @@
   "dur": 5.04,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_029.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_029.mp4"
  },
  {
   "id": "s12_030",
@@ -5552,8 +5552,8 @@
   "dur": 4.08,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_031.mp4"
  },
  {
   "id": "s12_032",
@@ -5561,8 +5561,8 @@
   "dur": 3.28,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_032.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_032.mp4"
  },
  {
   "id": "s12_033",
@@ -5570,8 +5570,8 @@
   "dur": 2.56,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_033.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_033.mp4"
  },
  {
   "id": "s12_034",
@@ -5579,8 +5579,8 @@
   "dur": 1.68,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_001.mp4"
  },
  {
   "id": "s12_035",
@@ -5588,8 +5588,8 @@
   "dur": 5.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_035.mp4"
  },
  {
   "id": "s12_036",
@@ -5597,8 +5597,8 @@
   "dur": 6.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_036.mp4"
  },
  {
   "id": "s12_037",
@@ -5624,8 +5624,8 @@
   "dur": 4.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_039.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_039.mp4"
  },
  {
   "id": "s12_040",
@@ -5633,8 +5633,8 @@
   "dur": 4.48,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_040.mp4"
  },
  {
   "id": "s12_041",
@@ -5642,8 +5642,8 @@
   "dur": 2.32,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_041.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_041.mp4"
  },
  {
   "id": "s12_042",
@@ -5651,8 +5651,8 @@
   "dur": 2.8,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_040.mp4"
  },
  {
   "id": "s12_043",
@@ -5669,8 +5669,8 @@
   "dur": 3.76,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_044.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_044.mp4"
  },
  {
   "id": "s12_045",
@@ -5678,8 +5678,8 @@
   "dur": 3.6,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_020.mp4"
  },
  {
   "id": "s12_046",
@@ -5687,8 +5687,8 @@
   "dur": 5.52,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_046.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_046.mp4"
  },
  {
   "id": "s12_047",
@@ -5696,8 +5696,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_001.mp4"
  },
  {
   "id": "s12_048",
@@ -5705,8 +5705,8 @@
   "dur": 2.56,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_048.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_048.mp4"
  },
  {
   "id": "s12_049",
@@ -5714,8 +5714,8 @@
   "dur": 5.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_049.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_049.mp4"
  },
  {
   "id": "s12_050",
@@ -5723,8 +5723,8 @@
   "dur": 2.72,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_050.mp4"
  },
  {
   "id": "s12_051",
@@ -5732,8 +5732,8 @@
   "dur": 5.44,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_014.mp4"
  },
  {
   "id": "s12_052",
@@ -5741,8 +5741,8 @@
   "dur": 4.32,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_052.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_052.mp4"
  },
  {
   "id": "s12_053",
@@ -5759,8 +5759,8 @@
   "dur": 3.44,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_001.mp4"
  },
  {
   "id": "s12_055",
@@ -5768,8 +5768,8 @@
   "dur": 3.84,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_055.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_055.mp4"
  },
  {
   "id": "s12_056",
@@ -5777,8 +5777,8 @@
   "dur": 2.96,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_056.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_056.mp4"
  },
  {
   "id": "s12_057",
@@ -5786,8 +5786,8 @@
   "dur": 7.52,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_057.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_057.mp4"
  },
  {
   "id": "s12_058",
@@ -5795,8 +5795,8 @@
   "dur": 4.64,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_056.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_056.mp4"
  },
  {
   "id": "s12_059",
@@ -5804,8 +5804,8 @@
   "dur": 2.72,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_059.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_059.mp4"
  },
  {
   "id": "s12_060",
@@ -5813,8 +5813,8 @@
   "dur": 5.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_060.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_060.mp4"
  },
  {
   "id": "s12_061",
@@ -5822,8 +5822,8 @@
   "dur": 8.8,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_061.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_061.mp4"
  },
  {
   "id": "s12_062",
@@ -5831,8 +5831,8 @@
   "dur": 6.64,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_062.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_062.mp4"
  },
  {
   "id": "s12_063",
@@ -5840,8 +5840,8 @@
   "dur": 3.44,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_014.mp4"
  },
  {
   "id": "s12_064",
@@ -5858,8 +5858,8 @@
   "dur": 9.12,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s12_040.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_040.mp4"
  },
  {
   "id": "s12_066",
@@ -5867,8 +5867,8 @@
   "dur": 2.08,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_066.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_066.mp4"
  },
  {
   "id": "s12_067",
@@ -5876,8 +5876,8 @@
   "dur": 2.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_067.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_067.mp4"
  },
  {
   "id": "s12_068",
@@ -5885,8 +5885,8 @@
   "dur": 1.6,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_068.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_068.mp4"
  },
  {
   "id": "s12_069",
@@ -5894,8 +5894,8 @@
   "dur": 2.24,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_069.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_069.mp4"
  },
  {
   "id": "s12_070",
@@ -5903,8 +5903,8 @@
   "dur": 7.04,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_070.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_070.mp4"
  },
  {
   "id": "s12_071",
@@ -5912,8 +5912,8 @@
   "dur": 3.84,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_071.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_071.mp4"
  },
  {
   "id": "s12_072",
@@ -5921,8 +5921,8 @@
   "dur": 5.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_072.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_072.mp4"
  },
  {
   "id": "s12_073",
@@ -5930,8 +5930,8 @@
   "dur": 9.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s12_073.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s12_073.mp4"
  },
  {
   "id": "s13_001",
@@ -5939,8 +5939,8 @@
   "dur": 7.36,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_001.mp4"
  },
  {
   "id": "s13_002",
@@ -5948,8 +5948,8 @@
   "dur": 5.2,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_002.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_002.mp4"
  },
  {
   "id": "s13_003",
@@ -5965,8 +5965,8 @@
   "dur": 7.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_004.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_004.mp4"
  },
  {
   "id": "s13_005",
@@ -5974,8 +5974,8 @@
   "dur": 3.12,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_005.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_005.mp4"
  },
  {
   "id": "s13_006",
@@ -5983,8 +5983,8 @@
   "dur": 5.84,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_006.mp4"
  },
  {
   "id": "s13_007",
@@ -5992,8 +5992,8 @@
   "dur": 6.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_007.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_007.mp4"
  },
  {
   "id": "s13_008",
@@ -6001,8 +6001,8 @@
   "dur": 1.12,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_008.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_008.mp4"
  },
  {
   "id": "s13_009",
@@ -6010,8 +6010,8 @@
   "dur": 5.84,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_009.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_009.mp4"
  },
  {
   "id": "s13_010",
@@ -6019,8 +6019,8 @@
   "dur": 6.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_010.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_010.mp4"
  },
  {
   "id": "s13_011",
@@ -6028,8 +6028,8 @@
   "dur": 4.4,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_011.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_011.mp4"
  },
  {
   "id": "s13_012",
@@ -6037,8 +6037,8 @@
   "dur": 6.88,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_012.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_012.mp4"
  },
  {
   "id": "s13_013",
@@ -6046,8 +6046,8 @@
   "dur": 1.36,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_013.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_013.mp4"
  },
  {
   "id": "s13_014",
@@ -6055,8 +6055,8 @@
   "dur": 1.94,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_014.mp4"
  },
  {
   "id": "s13_015",
@@ -6073,8 +6073,8 @@
   "dur": 6.16,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_016.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_016.mp4"
  },
  {
   "id": "s13_017",
@@ -6082,8 +6082,8 @@
   "dur": 6.48,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_017.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_017.mp4"
  },
  {
   "id": "s13_018",
@@ -6091,8 +6091,8 @@
   "dur": 6.4,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_018.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_018.mp4"
  },
  {
   "id": "s13_019",
@@ -6100,8 +6100,8 @@
   "dur": 2.96,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_019.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_019.mp4"
  },
  {
   "id": "s13_020",
@@ -6109,8 +6109,8 @@
   "dur": 3.92,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_020.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_020.mp4"
  },
  {
   "id": "s13_021",
@@ -6118,8 +6118,8 @@
   "dur": 5.84,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_021.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_021.mp4"
  },
  {
   "id": "s13_022",
@@ -6127,8 +6127,8 @@
   "dur": 2.08,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_022.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_022.mp4"
  },
  {
   "id": "s13_023",
@@ -6136,8 +6136,8 @@
   "dur": 5.04,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_023.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_023.mp4"
  },
  {
   "id": "s13_024",
@@ -6145,8 +6145,8 @@
   "dur": 5.28,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_024.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_024.mp4"
  },
  {
   "id": "s13_025",
@@ -6154,8 +6154,8 @@
   "dur": 3.52,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_025.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_025.mp4"
  },
  {
   "id": "s13_026",
@@ -6163,8 +6163,8 @@
   "dur": 1.76,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_026.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_026.mp4"
  },
  {
   "id": "s13_027",
@@ -6172,8 +6172,8 @@
   "dur": 8.88,
   "mov": "right",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_027.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_027.mp4"
  },
  {
   "id": "s13_028",
@@ -6189,8 +6189,8 @@
   "dur": 1.84,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_014.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_014.mp4"
  },
  {
   "id": "s13_030",
@@ -6198,8 +6198,8 @@
   "dur": 7.04,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_030.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_030.mp4"
  },
  {
   "id": "s13_031",
@@ -6207,8 +6207,8 @@
   "dur": 2.16,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_031.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_031.mp4"
  },
  {
   "id": "s13_032",
@@ -6216,8 +6216,8 @@
   "dur": 4.16,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_032.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_032.mp4"
  },
  {
   "id": "s13_033",
@@ -6225,8 +6225,8 @@
   "dur": 4.24,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_033.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_033.mp4"
  },
  {
   "id": "s13_034",
@@ -6234,8 +6234,8 @@
   "dur": 4.32,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_034.mp4"
  },
  {
   "id": "s13_035",
@@ -6243,8 +6243,8 @@
   "dur": 1.92,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_035.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_035.mp4"
  },
  {
   "id": "s13_036",
@@ -6252,8 +6252,8 @@
   "dur": 3.12,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_036.mp4"
  },
  {
   "id": "s13_037",
@@ -6261,8 +6261,8 @@
   "dur": 2.32,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_037.mp4"
  },
  {
   "id": "s13_038",
@@ -6270,8 +6270,8 @@
   "dur": 3.84,
   "mov": "in",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_006.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_006.mp4"
  },
  {
   "id": "s13_039",
@@ -6279,8 +6279,8 @@
   "dur": 3.28,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_034.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_034.mp4"
  },
  {
   "id": "s13_040",
@@ -6288,8 +6288,8 @@
   "dur": 2.16,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_001.mp4"
  },
  {
   "id": "s13_041",
@@ -6306,8 +6306,8 @@
   "dur": 3.2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_042.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_042.mp4"
  },
  {
   "id": "s13_043",
@@ -6315,8 +6315,8 @@
   "dur": 2.24,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_032.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_032.mp4"
  },
  {
   "id": "s13_044",
@@ -6324,8 +6324,8 @@
   "dur": 0.96,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_044.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_044.mp4"
  },
  {
   "id": "s13_045",
@@ -6333,8 +6333,8 @@
   "dur": 1.68,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_045.mp4"
  },
  {
   "id": "s13_046",
@@ -6342,8 +6342,8 @@
   "dur": 2.24,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_036.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_036.mp4"
  },
  {
   "id": "s13_047",
@@ -6351,8 +6351,8 @@
   "dur": 1.28,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_047.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_047.mp4"
  },
  {
   "id": "s13_048",
@@ -6360,8 +6360,8 @@
   "dur": 1.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_048.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_048.mp4"
  },
  {
   "id": "s13_049",
@@ -6369,8 +6369,8 @@
   "dur": 2.4,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_049.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_049.mp4"
  },
  {
   "id": "s13_050",
@@ -6378,8 +6378,8 @@
   "dur": 9.04,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_050.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_050.mp4"
  },
  {
   "id": "s13_051",
@@ -6387,8 +6387,8 @@
   "dur": 3.36,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_051.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_051.mp4"
  },
  {
   "id": "s13_052",
@@ -6396,8 +6396,8 @@
   "dur": 4,
   "mov": "out",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_037.mp4"
  },
  {
   "id": "s13_053",
@@ -6405,8 +6405,8 @@
   "dur": 3.52,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_053.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_053.mp4"
  },
  {
   "id": "s13_054",
@@ -6414,8 +6414,8 @@
   "dur": 3.68,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_054.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_054.mp4"
  },
  {
   "id": "s13_055",
@@ -6423,8 +6423,8 @@
   "dur": 2.56,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_055.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_055.mp4"
  },
  {
   "id": "s13_056",
@@ -6432,8 +6432,8 @@
   "dur": 5.36,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_056.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_056.mp4"
  },
  {
   "id": "s13_057",
@@ -6441,8 +6441,8 @@
   "dur": 0.96,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_057.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_057.mp4"
  },
  {
   "id": "s13_058",
@@ -6450,8 +6450,8 @@
   "dur": 1.44,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_045.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_045.mp4"
  },
  {
   "id": "s13_059",
@@ -6459,8 +6459,8 @@
   "dur": 7.84,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_059.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_059.mp4"
  },
  {
   "id": "s13_060",
@@ -6468,8 +6468,8 @@
   "dur": 2.4,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_060.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_060.mp4"
  },
  {
   "id": "s13_061",
@@ -6477,8 +6477,8 @@
   "dur": 3.52,
   "mov": "left",
   "archivo": true,
-  "kind": "plate",
-  "src": "img/friogranero_s13_037.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_037.mp4"
  },
  {
   "id": "s13_062",
@@ -6495,8 +6495,8 @@
   "dur": 2.44,
   "mov": "right",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_063.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_063.mp4"
  },
  {
   "id": "s13_064",
@@ -6504,8 +6504,8 @@
   "dur": 2,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_064.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_064.mp4"
  },
  {
   "id": "s13_065",
@@ -6513,8 +6513,8 @@
   "dur": 4.16,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_065.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_065.mp4"
  },
  {
   "id": "s13_066",
@@ -6522,8 +6522,8 @@
   "dur": 1.52,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_066.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_066.mp4"
  },
  {
   "id": "s13_067",
@@ -6531,8 +6531,8 @@
   "dur": 5.92,
   "mov": "left",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_001.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_001.mp4"
  },
  {
   "id": "s13_068",
@@ -6540,8 +6540,8 @@
   "dur": 6.64,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_068.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_068.mp4"
  },
  {
   "id": "s13_069",
@@ -6558,8 +6558,8 @@
   "dur": 3.28,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_070.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_070.mp4"
  },
  {
   "id": "s13_071",
@@ -6567,8 +6567,8 @@
   "dur": 5.76,
   "mov": "in",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_071.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_071.mp4"
  },
  {
   "id": "s13_072",
@@ -6576,7 +6576,7 @@
   "dur": 2.036,
   "mov": "out",
   "archivo": false,
-  "kind": "plate",
-  "src": "img/friogranero_s13_068.jpg"
+  "kind": "clip",
+  "src": "broll/frio/friogranero_s13_068.mp4"
  }
 ]
