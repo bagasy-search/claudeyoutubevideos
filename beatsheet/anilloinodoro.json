@@ -1,0 +1,3099 @@
+{
+ "slug": "anilloinodoro",
+ "total": 1833.62,
+ "beats": [
+  {
+   "id": "anilloinodoro_001",
+   "start": 0,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_001.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "ov_hookcaption_0",
+   "start": 0,
+   "dur": 7.85,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "HookCaption",
+   "theme": "earth",
+   "zone": "top",
+   "words": [
+    {
+     "text": "¿Por qué"
+    },
+    {
+     "text": "ESTO",
+     "boxed": true
+    },
+    {
+     "text": "siempre"
+    },
+    {
+     "text": "VUELVE",
+     "boxed": true
+    },
+    {
+     "text": "por más que limpies?"
+    }
+   ],
+   "sub": "No es suciedad, y no vive donde tú pasas el cepillo"
+  },
+  {
+   "id": "anilloinodoro_001t",
+   "start": 5.033333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_001.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6
+  },
+  {
+   "id": "anilloinodoro_006",
+   "start": 36.766666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_006.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.633333333333334
+  },
+  {
+   "id": "anilloinodoro_009",
+   "start": 55.8,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_009.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.766666666666667
+  },
+  {
+   "id": "anilloinodoro_012",
+   "start": 77.56666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_012.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_013",
+   "start": 82.96666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_013.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.166666666666667
+  },
+  {
+   "id": "ov_checklistreveal_97",
+   "start": 96.98,
+   "dur": 20.85,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "Lo que ya probaste",
+   "title": "Todo esto falló, y no fue tu culpa",
+   "items": [
+    "El limpiador azul: se fue el color, volvió a los cuatro días",
+    "El gel espeso del borde: duró un poco más",
+    "Cloro puro: el olor no se aguantaba y la sombra quedó",
+    "Cambiar el inodoro entero: la misma raya a los tres meses"
+   ],
+   "stamp": "NO FUNCIONÓ"
+  },
+  {
+   "id": "anilloinodoro_018",
+   "start": 109.3,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_018.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.8
+  },
+  {
+   "id": "anilloinodoro_019",
+   "start": 120.1,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_019.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.066666666666666
+  },
+  {
+   "id": "anilloinodoro_022",
+   "start": 137.66666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_022.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.733333333333333
+  },
+  {
+   "id": "anilloinodoro_024",
+   "start": 147.63333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_024.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_024t",
+   "start": 152.66666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_024.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.9666666666666666
+  },
+  {
+   "id": "anilloinodoro_025",
+   "start": 154.63333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_025.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.433333333333334
+  },
+  {
+   "id": "anilloinodoro_027",
+   "start": 163.86666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_027.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_027t",
+   "start": 168.86666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_027.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.2333333333333334
+  },
+  {
+   "id": "anilloinodoro_028",
+   "start": 170.1,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_028.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.533333333333333
+  },
+  {
+   "id": "anilloinodoro_030",
+   "start": 186.76666666666668,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_030.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pizarraexplica_188",
+   "start": 188,
+   "dur": 16.76,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PizarraExplica",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Contra qué estás peleando",
+   "title": "No es mugre: está vivo y tiene techo",
+   "side": "left",
+   "items": [
+    {
+     "image": "img/anilloinodoro_s_028.jpg",
+     "title": "Millones de bacterias",
+     "sub": "se pegan a la porcelana y se juntan",
+     "tone": "teal"
+    },
+    {
+     "image": "img/anilloinodoro_s_030.jpg",
+     "title": "Se fabrican una baba",
+     "sub": "esa gelatina es una armadura",
+     "tone": "blue"
+    },
+    {
+     "image": "img/anilloinodoro_s_033.jpg",
+     "title": "El cloro resbala",
+     "sub": "mata la cara de afuera, no la colonia",
+     "tone": "clay"
+    }
+   ]
+  },
+  {
+   "id": "anilloinodoro_030t",
+   "start": 191.76666666666668,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_030.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.2666666666666666
+  },
+  {
+   "id": "anilloinodoro_031",
+   "start": 193.03333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_031.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.433333333333333
+  },
+  {
+   "id": "anilloinodoro_033",
+   "start": 202.26666666666668,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_033.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_033t",
+   "start": 207.3,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_033.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.9666666666666666
+  },
+  {
+   "id": "ov_frasecinetica_209",
+   "start": 209.28,
+   "dur": 4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FraseCinetica",
+   "theme": "earth",
+   "zone": "full",
+   "tone": "teal",
+   "onImage": true,
+   "words": [
+    {
+     "t": "A"
+    },
+    {
+     "t": "las"
+    },
+    {
+     "t": "pocas"
+    },
+    {
+     "t": "horas"
+    },
+    {
+     "t": "ya"
+    },
+    {
+     "t": "la"
+    },
+    {
+     "t": "está"
+    },
+    {
+     "t": "reconstruyendo",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "id": "anilloinodoro_036",
+   "start": 222.96666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_036.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_036t",
+   "start": 227.96666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_036.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.233333333333333
+  },
+  {
+   "id": "anilloinodoro_037",
+   "start": 233.2,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_037.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2333333333333334,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_039",
+   "start": 242.6,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_039.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.433333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_042",
+   "start": 255.63333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_042.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.9666666666666666
+  },
+  {
+   "id": "ov_flowsteps_263",
+   "start": 262.82,
+   "dur": 10.18,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "top",
+   "kicker": "El color es el diagnóstico",
+   "title": "Tres manchas, tres problemas distintos",
+   "nodes": [
+    {
+     "label": "Negra resbalosa",
+     "sub": "colonia viva",
+     "image": "img/anilloinodoro_s_044.jpg"
+    },
+    {
+     "label": "Marrón dura",
+     "sub": "sarro mineral",
+     "image": "img/anilloinodoro_s_046.jpg"
+    },
+    {
+     "label": "Rosada",
+     "sub": "agua estancada",
+     "image": "img/anilloinodoro_s_047.jpg"
+    }
+   ]
+  },
+  {
+   "id": "anilloinodoro_045",
+   "start": 276.2,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_045.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 12.633333333333333
+  },
+  {
+   "id": "anilloinodoro_046",
+   "start": 288.8333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_046.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "anilloinodoro_048",
+   "start": 297.03333333333336,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_048.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_048t",
+   "start": 302.06666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_048.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3333333333333335
+  },
+  {
+   "id": "anilloinodoro_049",
+   "start": 304.4,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_049.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.466666666666667
+  },
+  {
+   "id": "anilloinodoro_051",
+   "start": 324,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_051.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_051t",
+   "start": 329.03333333333336,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_051.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.966666666666667
+  },
+  {
+   "id": "anilloinodoro_054",
+   "start": 344.73333333333335,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_054.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_054t",
+   "start": 349.73333333333335,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_054.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "anilloinodoro_055",
+   "start": 351.8333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_055.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.933333333333334
+  },
+  {
+   "id": "ov_pizarraexplica_352",
+   "start": 351.84,
+   "dur": 16.34,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PizarraExplica",
+   "theme": "earth",
+   "zone": "left",
+   "eyebrow": "Dónde vive de verdad",
+   "title": "Tres escondites que el cepillo no toca",
+   "side": "left",
+   "items": [
+    {
+     "image": "img/anilloinodoro_s_060.jpg",
+     "title": "El conducto del borde",
+     "sub": "un túnel hueco que da la vuelta entera",
+     "tone": "clay"
+    },
+    {
+     "image": "img/anilloinodoro_s_069.jpg",
+     "title": "El sifón",
+     "sub": "agua tibia y quieta que nunca se vacía",
+     "tone": "teal"
+    },
+    {
+     "image": "img/anilloinodoro_s_080.jpg",
+     "title": "El tanque",
+     "sub": "la fábrica: riega en cada descarga",
+     "tone": "blue"
+    }
+   ]
+  },
+  {
+   "id": "anilloinodoro_057",
+   "start": 365.23333333333335,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_057.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_057t",
+   "start": 370.26666666666665,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_057.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.2333333333333334
+  },
+  {
+   "id": "anilloinodoro_058",
+   "start": 371.5,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_058.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.966666666666667
+  },
+  {
+   "id": "anilloinodoro_060",
+   "start": 384.76666666666665,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_060.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_060t",
+   "start": 389.8,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_060.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7666666666666666
+  },
+  {
+   "id": "anilloinodoro_061",
+   "start": 392.56666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_061.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9
+  },
+  {
+   "id": "anilloinodoro_063",
+   "start": 404.96666666666664,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_063.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_063t",
+   "start": 410,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_063.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5
+  },
+  {
+   "id": "anilloinodoro_066",
+   "start": 429.96666666666664,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_066.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "ov_floatingcutout_430",
+   "start": 429.98,
+   "dur": 7.59,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingCutout",
+   "theme": "earth",
+   "zone": "top",
+   "image": "img/anilloinodoro_s_066.jpg",
+   "label": "Cada raya nace en un agujerito",
+   "sub": "el inodoro te está mostrando dónde está el problema"
+  },
+  {
+   "id": "anilloinodoro_066t",
+   "start": 435,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_066.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2666666666666666
+  },
+  {
+   "id": "anilloinodoro_067",
+   "start": 438.26666666666665,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_067.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.166666666666667
+  },
+  {
+   "id": "anilloinodoro_069",
+   "start": 449.1333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_069.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_069t",
+   "start": 454.1666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_069.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.866666666666666
+  },
+  {
+   "id": "anilloinodoro_070",
+   "start": 459.03333333333336,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_070.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.066666666666666
+  },
+  {
+   "id": "anilloinodoro_073",
+   "start": 474.3333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_073.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.8
+  },
+  {
+   "id": "anilloinodoro_075",
+   "start": 487.46666666666664,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_075.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_075t",
+   "start": 492.5,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_075.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6333333333333333
+  },
+  {
+   "id": "anilloinodoro_076",
+   "start": 495.1333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_076.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2666666666666666
+  },
+  {
+   "id": "anilloinodoro_078",
+   "start": 506.1333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_078.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_078t",
+   "start": 511.1666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_078.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 0.7666666666666667
+  },
+  {
+   "id": "anilloinodoro_079",
+   "start": 511.93333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_079.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.333333333333333
+  },
+  {
+   "id": "anilloinodoro_082",
+   "start": 526.7333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_082.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.8333333333333335
+  },
+  {
+   "id": "anilloinodoro_084",
+   "start": 536.0666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_084.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_084t",
+   "start": 541.0666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_084.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "anilloinodoro_085",
+   "start": 544.3666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_085.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.5
+  },
+  {
+   "id": "anilloinodoro_087",
+   "start": 561.4666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_087.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_087t",
+   "start": 566.4666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_087.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 0.6666666666666666
+  },
+  {
+   "id": "ov_bigstatreveal_591",
+   "start": 591.16,
+   "dur": 7.64,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Tiempo real de contacto",
+   "value": 20,
+   "prefix": "",
+   "suffix": " s",
+   "support": "es lo que tarda el líquido en resbalar hasta el agua y diluirse",
+   "source": ""
+  },
+  {
+   "id": "anilloinodoro_093",
+   "start": 604.5666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_093.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.466666666666667
+  },
+  {
+   "id": "anilloinodoro_094",
+   "start": 607.0333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_094.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.066666666666666
+  },
+  {
+   "id": "anilloinodoro_096",
+   "start": 621.8666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_096.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_096t",
+   "start": 626.9,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_096.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.133333333333334
+  },
+  {
+   "id": "anilloinodoro_097",
+   "start": 633.0333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_097.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.933333333333333
+  },
+  {
+   "id": "ov_mythtruth_636",
+   "start": 635.98,
+   "dur": 8.62,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "mythLabel": "MITO",
+   "truthLabel": "VERDAD",
+   "myth": "Con cloro suficiente, el sarro se va",
+   "truth": "El sarro es mineral: sale con ácido, nunca con cloro"
+  },
+  {
+   "id": "anilloinodoro_099",
+   "start": 642.1333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_099.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_099t",
+   "start": 647.1333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_099.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.0666666666666667
+  },
+  {
+   "id": "anilloinodoro_100",
+   "start": 648.2,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_100.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_100t",
+   "start": 653.2333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_100.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2
+  },
+  {
+   "id": "ov_beforeafter_662",
+   "start": 661.92,
+   "dur": 9.3,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Por qué vuelve más rápido",
+   "beforeLabel": "Costra porosa",
+   "afterLabel": "Porcelana lisa",
+   "beforeImage": "img/anilloinodoro_s_102.jpg",
+   "afterImage": "img/anilloinodoro_s_103.jpg",
+   "caption": "En la costra la colonia se agarra. En la porcelana lisa, no puede."
+  },
+  {
+   "id": "anilloinodoro_102",
+   "start": 661.9333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_102.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.933333333333334
+  },
+  {
+   "id": "anilloinodoro_103",
+   "start": 667.8666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_103.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.766666666666667
+  },
+  {
+   "id": "anilloinodoro_105",
+   "start": 681.2333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_105.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_105t",
+   "start": 686.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_105.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5666666666666667
+  },
+  {
+   "id": "anilloinodoro_108",
+   "start": 695.7666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_108.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_108t",
+   "start": 700.8,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_108.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 0.9666666666666667
+  },
+  {
+   "id": "anilloinodoro_109",
+   "start": 701.7666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_109.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_111",
+   "start": 712.6333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_111.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_111t",
+   "start": 717.6666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_111.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1666666666666665
+  },
+  {
+   "id": "anilloinodoro_112",
+   "start": 719.8333333333334,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_112.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_112t",
+   "start": 724.8333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_112.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333
+  },
+  {
+   "id": "anilloinodoro_114",
+   "start": 735.8,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_114.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.933333333333334
+  },
+  {
+   "id": "anilloinodoro_117",
+   "start": 757.4333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_117.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.4
+  },
+  {
+   "id": "anilloinodoro_118",
+   "start": 759.8333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_118.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.766666666666667
+  },
+  {
+   "id": "anilloinodoro_120",
+   "start": 770.1333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_120.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.933333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_121",
+   "start": 776.6666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_121.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.9
+  },
+  {
+   "id": "anilloinodoro_122",
+   "start": 779.5666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_122.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_122t",
+   "start": 784.6,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_122.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.566666666666667
+  },
+  {
+   "id": "anilloinodoro_123",
+   "start": 787.1666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_123.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_123t",
+   "start": 792.2,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_123.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "anilloinodoro_124",
+   "start": 794.7,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_124.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.433333333333334
+  },
+  {
+   "id": "anilloinodoro_126",
+   "start": 804.74,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_126.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.53,
+   "noSplit": true
+  },
+  {
+   "id": "ov_numberedsteps_805",
+   "start": 805.26,
+   "dur": 17.41,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "NumberedSteps",
+   "theme": "earth",
+   "zone": "topLeft",
+   "eyebrow": "El diagnóstico",
+   "title": "Tres pruebas, cinco minutos, cero dinero",
+   "steps": [
+    {
+     "title": "El espejo",
+     "sub": "mira el borde por dentro con la linterna del teléfono"
+    },
+    {
+     "title": "El dedo",
+     "sub": "resbaloso es colonia; si raspa, es sarro"
+    },
+    {
+     "title": "El colorante",
+     "sub": "media hora sin descargar: si la taza se tiñe, hay fuga"
+    }
+   ]
+  },
+  {
+   "id": "anilloinodoro_126t",
+   "start": 810.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_126.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.3
+  },
+  {
+   "id": "anilloinodoro_127",
+   "start": 811.5666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_127.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.066666666666667
+  },
+  {
+   "id": "anilloinodoro_128",
+   "start": 814.6333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_128.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_129",
+   "start": 819.63,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_129.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.6,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_129t",
+   "start": 825.2333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_129.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.8
+  },
+  {
+   "id": "anilloinodoro_130",
+   "start": 827.0333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_130.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.033333333333333
+  },
+  {
+   "id": "anilloinodoro_131",
+   "start": 838.0666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_131.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "anilloinodoro_132",
+   "start": 841.1666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_132.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_133",
+   "start": 846.2,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_133.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.03
+  },
+  {
+   "id": "anilloinodoro_134",
+   "start": 852.2333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_134.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_135",
+   "start": 858.0333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_135.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_136",
+   "start": 860.2333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_136.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6
+  },
+  {
+   "id": "anilloinodoro_137",
+   "start": 863.8333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_137.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.5
+  },
+  {
+   "id": "anilloinodoro_138",
+   "start": 871.3333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_138.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.5
+  },
+  {
+   "id": "anilloinodoro_139",
+   "start": 877.8333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_139.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.066666666666666
+  },
+  {
+   "id": "anilloinodoro_141",
+   "start": 888.5,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_141.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.53,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_142",
+   "start": 894.03,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_142.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.1
+  },
+  {
+   "id": "anilloinodoro_143",
+   "start": 902.1333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_143.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.4
+  },
+  {
+   "id": "anilloinodoro_144",
+   "start": 909.5333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_144.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6666666666666665,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_145",
+   "start": 913.2,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_145.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_146",
+   "start": 918.23,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_146.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8
+  },
+  {
+   "id": "anilloinodoro_147",
+   "start": 923.0333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_147.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_147t",
+   "start": 928.0666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_147.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "anilloinodoro_148",
+   "start": 930.1666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_148.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.6666666666666665
+  },
+  {
+   "id": "anilloinodoro_149",
+   "start": 933.8333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_149.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "anilloinodoro_150",
+   "start": 939.0333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_150.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_151",
+   "start": 944.07,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_151.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.46,
+   "noSplit": true
+  },
+  {
+   "id": "ov_pullquote_944",
+   "start": 944.48,
+   "dur": 11.55,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "PullQuote",
+   "theme": "earth",
+   "zone": "left",
+   "quote": "Un hilo de agua corriendo día y noche es un riego permanente por el mismo camino.",
+   "author": "La fuga silenciosa",
+   "role": "el motor de la mancha que no sale con nada",
+   "image": "img/anilloinodoro_s_147.jpg"
+  },
+  {
+   "id": "anilloinodoro_152",
+   "start": 949.5333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_152.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.866666666666666
+  },
+  {
+   "id": "anilloinodoro_lam153",
+   "start": 954.4,
+   "kind": "raw",
+   "src": "img/anilloinodoro_lamina.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 22.233333333333334
+  },
+  {
+   "id": "anilloinodoro_lam154",
+   "start": 976.6333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_lamina.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 25.2
+  },
+  {
+   "id": "anilloinodoro_lam155",
+   "start": 1001.8333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_lamina.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 34.666666666666664
+  },
+  {
+   "id": "anilloinodoro_lam156",
+   "start": 1036.5,
+   "kind": "raw",
+   "src": "img/anilloinodoro_lamina.png",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 38.86666666666667
+  },
+  {
+   "id": "ov_ctacard_1048",
+   "start": 1047.77,
+   "dur": 11.55,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "La guía completa",
+   "title": "La Colección del Constructor Libre",
+   "bullet": "Esta lámina es tal cual una página de la guía, con el paso a paso completo",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN",
+   "image": "img/anilloinodoro_portada.png"
+  },
+  {
+   "id": "ov_floatinginsert_1064",
+   "start": 1063.61,
+   "dur": 4,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FloatingInsert",
+   "theme": "earth",
+   "zone": "full",
+   "src": "img/anilloinodoro_qr_land.png",
+   "side": "right",
+   "kicker": "Escanea con tu celular",
+   "hue": "amber"
+  },
+  {
+   "id": "ov_flowsteps_1075",
+   "start": 1075.37,
+   "dur": 20.37,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "FlowSteps",
+   "theme": "earth",
+   "zone": "top",
+   "kicker": "El orden es la mitad del resultado",
+   "title": "El método, paso por paso",
+   "nodes": [
+    {
+     "label": "Baja el agua",
+     "sub": "cierra la llave y descarga",
+     "image": "img/anilloinodoro_s_174.jpg"
+    },
+    {
+     "label": "Ácido y compresa",
+     "sub": "vinagre caliente en papel, una hora",
+     "image": "img/anilloinodoro_s_186.jpg"
+    },
+    {
+     "label": "El borde por dentro",
+     "sub": "por el tubo de rebose y alambre",
+     "image": "img/anilloinodoro_s_198.jpg"
+    },
+    {
+     "label": "Piedra pómez",
+     "sub": "hasta que quede lisa como un vidrio",
+     "image": "img/anilloinodoro_s_208.jpg"
+    },
+    {
+     "label": "El tanque",
+     "sub": "la fábrica, o vuelve en un mes",
+     "image": "img/anilloinodoro_s_220.jpg"
+    }
+   ]
+  },
+  {
+   "id": "anilloinodoro_157",
+   "start": 1077.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_172.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.533333333333333
+  },
+  {
+   "id": "anilloinodoro_158",
+   "start": 1082.5,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_173.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.433333333333334
+  },
+  {
+   "id": "anilloinodoro_159",
+   "start": 1087.9333333333334,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_174.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_159t",
+   "start": 1092.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_174.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2
+  },
+  {
+   "id": "anilloinodoro_160",
+   "start": 1094.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_175.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.4
+  },
+  {
+   "id": "anilloinodoro_161",
+   "start": 1101.3666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_176.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_161t",
+   "start": 1106.4,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_176.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.8666666666666667
+  },
+  {
+   "id": "anilloinodoro_162",
+   "start": 1108.2666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_177.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_162t",
+   "start": 1113.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_177.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1
+  },
+  {
+   "id": "anilloinodoro_163",
+   "start": 1114.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_178.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.1
+  },
+  {
+   "id": "anilloinodoro_164",
+   "start": 1119.9666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_179.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.433333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_164t",
+   "start": 1122.4,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_179.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.0666666666666667
+  },
+  {
+   "id": "anilloinodoro_165",
+   "start": 1123.4666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_180.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.133333333333334,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_166",
+   "start": 1127.6,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_181.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.733333333333333
+  },
+  {
+   "id": "anilloinodoro_167",
+   "start": 1134.3333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_182.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_167t",
+   "start": 1139.3666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_182.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7333333333333334
+  },
+  {
+   "id": "anilloinodoro_168",
+   "start": 1142.1,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_183.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_168t",
+   "start": 1147.1,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_183.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3
+  },
+  {
+   "id": "anilloinodoro_169",
+   "start": 1150.4,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_184.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.566666666666666
+  },
+  {
+   "id": "anilloinodoro_170",
+   "start": 1156.9666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_185.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_171",
+   "start": 1161.1666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_186.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_171t",
+   "start": 1166.1666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_186.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.066666666666667
+  },
+  {
+   "id": "anilloinodoro_172",
+   "start": 1169.2333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_187.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3666666666666667
+  },
+  {
+   "id": "anilloinodoro_173",
+   "start": 1172.6,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_188.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.533333333333333
+  },
+  {
+   "id": "ov_bigstatreveal_1180",
+   "start": 1180.12,
+   "dur": 8.78,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BigStatReveal",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Tiempo de contacto de la compresa",
+   "value": 1,
+   "prefix": "",
+   "suffix": " hora",
+   "support": "una hora como mínimo pegada al anillo; toda la noche es mejor",
+   "source": ""
+  },
+  {
+   "id": "anilloinodoro_174",
+   "start": 1180.1333333333334,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_189.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.766666666666667,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_175",
+   "start": 1184.9,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_190.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.57
+  },
+  {
+   "id": "anilloinodoro_177",
+   "start": 1192.07,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_192.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.43,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_177t",
+   "start": 1194.5,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_192.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.4666666666666666
+  },
+  {
+   "id": "anilloinodoro_178",
+   "start": 1195.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_193.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.8
+  },
+  {
+   "id": "anilloinodoro_179",
+   "start": 1198.7666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_194.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_179t",
+   "start": 1203.7666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_194.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "anilloinodoro_180",
+   "start": 1205.9666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_195.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_180t",
+   "start": 1210.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_195.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.8
+  },
+  {
+   "id": "anilloinodoro_181",
+   "start": 1212.7666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_196.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.9
+  },
+  {
+   "id": "anilloinodoro_182",
+   "start": 1220.6666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_197.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.9
+  },
+  {
+   "id": "anilloinodoro_183",
+   "start": 1225.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_198.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.266666666666667
+  },
+  {
+   "id": "anilloinodoro_184",
+   "start": 1232.8333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_199.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_185",
+   "start": 1236.0333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_200.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.533333333333333
+  },
+  {
+   "id": "anilloinodoro_186",
+   "start": 1243.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_201.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.4
+  },
+  {
+   "id": "anilloinodoro_187",
+   "start": 1253.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_202.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.3
+  },
+  {
+   "id": "anilloinodoro_188",
+   "start": 1262.2666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_203.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_188t",
+   "start": 1267.3,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_203.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.8666666666666667
+  },
+  {
+   "id": "anilloinodoro_189",
+   "start": 1269.1666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_204.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.033333333333333
+  },
+  {
+   "id": "anilloinodoro_190",
+   "start": 1276.2,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_205.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.633333333333333
+  },
+  {
+   "id": "anilloinodoro_191",
+   "start": 1287.4333333333334,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_206.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.433333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_192",
+   "start": 1289.87,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_207.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.1
+  },
+  {
+   "id": "anilloinodoro_193",
+   "start": 1293.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_208.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.066666666666666
+  },
+  {
+   "id": "anilloinodoro_194",
+   "start": 1304.0333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_209.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.633333333333334
+  },
+  {
+   "id": "anilloinodoro_195",
+   "start": 1308.6666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_210.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_195t",
+   "start": 1313.7,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_210.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "anilloinodoro_196",
+   "start": 1316.2,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_211.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.866666666666666,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_197",
+   "start": 1321.0666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_212.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.5
+  },
+  {
+   "id": "ov_vsduel_1321",
+   "start": 1321.07,
+   "dur": 12.05,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "VsDuel",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "La piedra pómez",
+   "title": "Dónde sí y dónde nunca",
+   "left": {
+    "label": "Sí: porcelana",
+    "sub": "la taza esmaltada, siempre bien mojada",
+    "good": true,
+    "image": "img/anilloinodoro_s_210.jpg"
+   },
+   "right": {
+    "label": "Nunca: metal ni plástico",
+    "sub": "grifería, acero, el asiento: los raya para siempre",
+    "good": false,
+    "image": "img/anilloinodoro_s_212.jpg"
+   }
+  },
+  {
+   "id": "anilloinodoro_198",
+   "start": 1329.5666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_213.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_198t",
+   "start": 1334.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_213.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.7
+  },
+  {
+   "id": "anilloinodoro_199",
+   "start": 1336.2666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_214.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.933333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_200",
+   "start": 1340.2,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_215.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.366666666666666
+  },
+  {
+   "id": "anilloinodoro_201",
+   "start": 1345.5666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_216.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_201t",
+   "start": 1350.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_216.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.3
+  },
+  {
+   "id": "anilloinodoro_202",
+   "start": 1351.8666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_217.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.8,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_203",
+   "start": 1359.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_218.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.1
+  },
+  {
+   "id": "anilloinodoro_204",
+   "start": 1364.3666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_219.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_205",
+   "start": 1369.37,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_220.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_205t",
+   "start": 1374.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_220.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "anilloinodoro_206",
+   "start": 1376.6666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_221.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 11.366666666666667
+  },
+  {
+   "id": "anilloinodoro_207",
+   "start": 1388.0333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_222.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_208",
+   "start": 1393.0666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_223.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_208t",
+   "start": 1398.1,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_223.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2
+  },
+  {
+   "id": "anilloinodoro_209",
+   "start": 1400.1,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_224.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.466666666666667
+  },
+  {
+   "id": "anilloinodoro_210",
+   "start": 1406.1666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_225.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.4,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_210t",
+   "start": 1408.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_225.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.1
+  },
+  {
+   "id": "anilloinodoro_211",
+   "start": 1410.6666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_226.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_211t",
+   "start": 1415.7,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_226.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.966666666666667
+  },
+  {
+   "id": "anilloinodoro_212",
+   "start": 1420.6666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_227.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.4
+  },
+  {
+   "id": "anilloinodoro_213",
+   "start": 1429.0666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_228.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_213t",
+   "start": 1434.0666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_228.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "anilloinodoro_214",
+   "start": 1438.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_229.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.933333333333334
+  },
+  {
+   "id": "anilloinodoro_215",
+   "start": 1444.5,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_230.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.366666666666666
+  },
+  {
+   "id": "anilloinodoro_216",
+   "start": 1452.4666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_231.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.4,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_217",
+   "start": 1453.8666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_232.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_217t",
+   "start": 1458.8666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_232.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.5
+  },
+  {
+   "id": "anilloinodoro_218",
+   "start": 1463.3666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_233.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.966666666666667
+  },
+  {
+   "id": "anilloinodoro_219",
+   "start": 1470.3333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_234.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_220",
+   "start": 1475.37,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_235.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_221",
+   "start": 1480.57,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_236.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.5
+  },
+  {
+   "id": "anilloinodoro_222",
+   "start": 1489.0666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_237.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.4
+  },
+  {
+   "id": "anilloinodoro_223",
+   "start": 1493.4666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_238.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_224",
+   "start": 1498.47,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_239.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.3,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_225",
+   "start": 1503.77,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_240.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "anilloinodoro_226",
+   "start": 1506.2666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_241.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_226t",
+   "start": 1511.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_241.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2666666666666666
+  },
+  {
+   "id": "anilloinodoro_227",
+   "start": 1513.5333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_242.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.533333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_228",
+   "start": 1517.0666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_243.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.433333333333333
+  },
+  {
+   "id": "anilloinodoro_229",
+   "start": 1520.5,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_244.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_229t",
+   "start": 1525.5,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_244.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 0.8333333333333334
+  },
+  {
+   "id": "anilloinodoro_230",
+   "start": 1526.3333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_245.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6
+  },
+  {
+   "id": "anilloinodoro_231",
+   "start": 1532.3333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_246.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.833333333333333
+  },
+  {
+   "id": "anilloinodoro_232",
+   "start": 1540.1666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_247.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_232t",
+   "start": 1545.2,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_247.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 6.4
+  },
+  {
+   "id": "anilloinodoro_233",
+   "start": 1551.6,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_248.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.2
+  },
+  {
+   "id": "anilloinodoro_234",
+   "start": 1561.4,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_249.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.066666666666667
+  },
+  {
+   "id": "anilloinodoro_235",
+   "start": 1564.4666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_250.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 10.1
+  },
+  {
+   "id": "ov_mythtruth_1575",
+   "start": 1574.56,
+   "dur": 9.48,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "MythTruth",
+   "theme": "earth",
+   "zone": "top",
+   "mythLabel": "MITO",
+   "truthLabel": "VERDAD",
+   "myth": "La pastilla en el tanque mantiene el inodoro limpio",
+   "truth": "Ataca las gomas, no la mancha: te fabrica la fuga"
+  },
+  {
+   "id": "anilloinodoro_236",
+   "start": 1574.5666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_251.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_236t",
+   "start": 1579.5666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_251.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.066666666666667
+  },
+  {
+   "id": "anilloinodoro_237",
+   "start": 1582.6333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_252.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.333333333333333
+  },
+  {
+   "id": "anilloinodoro_238",
+   "start": 1586.9666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_253.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.9
+  },
+  {
+   "id": "anilloinodoro_239",
+   "start": 1594.8666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_254.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_239t",
+   "start": 1599.9,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_254.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3666666666666667
+  },
+  {
+   "id": "anilloinodoro_240",
+   "start": 1603.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_255.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.133333333333334
+  },
+  {
+   "id": "ov_beforeafter_1605",
+   "start": 1604.72,
+   "dur": 12.55,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "BeforeAfter",
+   "theme": "earth",
+   "zone": "top",
+   "eyebrow": "Lo que le hace la pastilla al tanque",
+   "beforeLabel": "Sello sano",
+   "afterLabel": "Sello reseco y agrietado",
+   "beforeImage": "img/anilloinodoro_s_221.jpg",
+   "afterImage": "img/anilloinodoro_s_255.jpg",
+   "caption": "Cuando el sello deja de cerrar, empieza el hilo de agua que marca el anillo para siempre."
+  },
+  {
+   "id": "anilloinodoro_241",
+   "start": 1610.4,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_256.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.466666666666667
+  },
+  {
+   "id": "anilloinodoro_242",
+   "start": 1614.8666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_257.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_242t",
+   "start": 1619.9,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_257.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3333333333333335
+  },
+  {
+   "id": "anilloinodoro_243",
+   "start": 1622.2333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_258.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.7
+  },
+  {
+   "id": "anilloinodoro_244",
+   "start": 1631.9333333333334,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_259.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_245",
+   "start": 1635.1333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_260.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.1
+  },
+  {
+   "id": "anilloinodoro_246",
+   "start": 1642.2333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_261.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_246t",
+   "start": 1647.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_261.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.6
+  },
+  {
+   "id": "anilloinodoro_247",
+   "start": 1648.8666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_262.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.333333333333333
+  },
+  {
+   "id": "anilloinodoro_248",
+   "start": 1653.2,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_263.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_248t",
+   "start": 1658.2333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_263.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.5
+  },
+  {
+   "id": "anilloinodoro_249",
+   "start": 1660.7333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_264.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_249t",
+   "start": 1665.7333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_264.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.2
+  },
+  {
+   "id": "anilloinodoro_250",
+   "start": 1667.9333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_265.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "anilloinodoro_251",
+   "start": 1673.1333333333334,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_266.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.2,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_252",
+   "start": 1676.3333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_267.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_252t",
+   "start": 1681.3333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_267.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.333333333333333
+  },
+  {
+   "id": "anilloinodoro_253",
+   "start": 1685.6666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_268.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7333333333333334
+  },
+  {
+   "id": "anilloinodoro_254",
+   "start": 1688.4,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_269.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.166666666666667,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_255",
+   "start": 1692.5666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_270.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.566666666666666,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_256",
+   "start": 1697.1333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_271.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.933333333333334
+  },
+  {
+   "id": "anilloinodoro_257",
+   "start": 1703.0666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_272.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.9,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_258",
+   "start": 1706.9666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_273.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_258t",
+   "start": 1712,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_273.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.3333333333333335
+  },
+  {
+   "id": "anilloinodoro_259",
+   "start": 1714.3333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_274.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.7666666666666666
+  },
+  {
+   "id": "anilloinodoro_260",
+   "start": 1718.1,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_275.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_260t",
+   "start": 1723.1,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_275.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.5666666666666667
+  },
+  {
+   "id": "anilloinodoro_261",
+   "start": 1724.6666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_276.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.466666666666667,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_262",
+   "start": 1729.1333333333334,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_277.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.133333333333334
+  },
+  {
+   "id": "anilloinodoro_263",
+   "start": 1736.2666666666667,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_278.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_263t",
+   "start": 1741.2666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_278.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7333333333333334
+  },
+  {
+   "id": "ov_checklistreveal_1744",
+   "start": 1744.01,
+   "dur": 24.6,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "ChecklistReveal",
+   "theme": "earth",
+   "zone": "topLeft",
+   "kicker": "El repaso",
+   "title": "Seis cosas para que no vuelva",
+   "items": [
+    "No es suciedad: es una colonia viva con armadura",
+    "No vive donde limpias: borde, sifón y tanque",
+    "El color te dice qué es y con qué se pelea",
+    "El orden: bajar el agua, ácido, borde, piedra, tanque",
+    "El colorante te delata la fuga silenciosa en media hora",
+    "Saca la pastilla del tanque hoy mismo"
+   ],
+   "stamp": "ASÍ SÍ"
+  },
+  {
+   "id": "anilloinodoro_265",
+   "start": 1746.61,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_280.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 8.06
+  },
+  {
+   "id": "anilloinodoro_266",
+   "start": 1754.6666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_281.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 9.666666666666666
+  },
+  {
+   "id": "anilloinodoro_267",
+   "start": 1764.3333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_282.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_267t",
+   "start": 1769.3666666666666,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_282.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.2
+  },
+  {
+   "id": "anilloinodoro_268",
+   "start": 1774.5666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_283.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_268t",
+   "start": 1779.6,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_283.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.7333333333333334
+  },
+  {
+   "id": "anilloinodoro_269",
+   "start": 1782.3333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_284.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4
+  },
+  {
+   "id": "anilloinodoro_270",
+   "start": 1786.3333333333333,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_285.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.666666666666667
+  },
+  {
+   "id": "anilloinodoro_271",
+   "start": 1794,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_286.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.933333333333333
+  },
+  {
+   "id": "anilloinodoro_272",
+   "start": 1800.5333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_287.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 1.4666666666666666,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_273",
+   "start": 1802,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_288.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 7.6
+  },
+  {
+   "id": "anilloinodoro_274",
+   "start": 1809.6,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_289.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 4.966666666666667,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_275",
+   "start": 1814.5666666666666,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_290.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5.033333333333333,
+   "noSplit": true
+  },
+  {
+   "id": "ov_ctacard_1815",
+   "start": 1814.58,
+   "dur": 12.76,
+   "kind": "premium",
+   "overlay": true,
+   "comp": "CtaCard",
+   "theme": "earth",
+   "zone": "full",
+   "eyebrow": "La guía completa",
+   "title": "La Colección del Constructor Libre",
+   "bullet": "Las láminas que viste son páginas de la guía: diagramas, tablas y el paso a paso de la casa",
+   "price": 0,
+   "cta": "LINK EN LA DESCRIPCIÓN",
+   "image": "img/anilloinodoro_portada.png"
+  },
+  {
+   "id": "anilloinodoro_275t",
+   "start": 1819.6,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_290.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.066666666666667
+  },
+  {
+   "id": "anilloinodoro_276",
+   "start": 1822.6666666666667,
+   "kind": "raw",
+   "src": "img/anilloinodoro_s_291.jpg",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 3.3666666666666667
+  },
+  {
+   "id": "anilloinodoro_277",
+   "start": 1826.0333333333333,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_292.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 5,
+   "noSplit": true
+  },
+  {
+   "id": "anilloinodoro_278",
+   "start": 1831.03,
+   "kind": "raw",
+   "src": "broll/anilloinodoro_s_293.mp4",
+   "hue": "amber",
+   "darken": 0,
+   "dur": 2.6,
+   "noSplit": true
+  }
+ ]
+}
