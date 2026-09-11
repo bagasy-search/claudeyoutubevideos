@@ -298,7 +298,7 @@ const PolvoObra: React.FC<{ panX: number; panY: number }> = ({ panX, panY }) => 
 /** La copia YA desenfocada en disco del mismo material que está en juego, como pared de fondo
  *  detrás de las piezas, con máscara suave y su propio parallax. Coste de render: 0. */
 const MURO = [
-  { src: "img/vslk01_blur.jpg", r: [0, 0, 96, 132] },
+  { src: "img/vslk01_blur.jpg", r: [-1, 0, 96, 132] },   // ⛔ arrancaba en [0,0,…] y interpolate exige inputRange ESTRICTAMENTE creciente: mato 3 chunks
   { src: "img/vsls02_blur.jpg", r: [96, 132, 190, 226] },
   { src: "img/vslk02_blur.jpg", r: [190, 226, 320, 352] },
   { src: "img/vslc03_blur.jpg", r: [320, 352, 366, 382] },

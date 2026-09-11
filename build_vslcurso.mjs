@@ -469,6 +469,29 @@ for (const m of MOVS) {
   if (/Math\.random|Date\.now|new Date\(/.test(src)) err(`${p} usa Math.random/Date: el farm rinde en 50 chunks y cada uno daría algo distinto`);
   if (/backdropFilter\s*:|["'`]backdrop-filter["'`]/.test(src)) err(`${p} usa backdrop-filter: ×5 el tiempo de render`);
   if (/Easing\.quint/.test(src)) err(`${p} usa Easing.quint, que NO EXISTE → Easing.poly(5)`);
+  // ⛔⛔ `interpolate` exige un inputRange ESTRICTAMENTE creciente y sólo revienta EN EL RENDER, en
+  // el frame exacto donde se evalúa. Un `[0, 0, 96, 132]` —la forma natural de escribir "ya está
+  // visible en el frame 0, sin fade de entrada"— mató 3 chunks de este video con los 50 runners
+  // encendidos. `tsc` no lo ve: son números. Acá se revisan los rangos LITERALES.
+  // ⚠️ Y la compuerta tiene que mirar SÓLO el inputRange: un outputRange legítimamente baja o
+  // repite valores (`[0, 1, 1, 0]` es un fade in-hold-out perfectamente válido). La primera
+  // versión miraba TODO array de números y escupió 28 falsos positivos.
+  const creciente = (lit, donde) => {
+    const n = lit.slice(1, -1).split(",").map((x) => Number(x.trim()));
+    if (n.length < 2 || n.some((v) => !Number.isFinite(v))) return;
+    if (n.some((v, k) => k > 0 && v <= n[k - 1])) {
+      err(`${p} ${donde} ${lit} NO es estrictamente creciente → interpolate revienta EN EL RENDER`);
+    }
+  };
+  // forma directa: interpolate(x, [ … ], …)
+  for (const m of src.matchAll(/\binterpolate\s*\(\s*[^,()]*(?:\([^()]*\))?[^,()]*,\s*(\[[^\][]*\])/g)) {
+    creciente(m[1], "pasa como inputRange");
+  }
+  // forma indirecta: el rango vive en una prop `r`/`rango`/`range` de una tabla y se pasa después
+  // (así se colaron los `[0, 0, 96, 132]` del muro de Mov2, que mataron 3 chunks)
+  for (const m of src.matchAll(/\b(?:r|rango|range|inRange)\s*:\s*(\[[^\][]*\])/g)) {
+    creciente(m[1], "declara el rango");
+  }
   if (/\bloop\b/.test(src.replace(/<Loop[\s>]/g, ""))) console.warn(`⚠ ${p} menciona \`loop\`: NO es prop de OffthreadVideo (cae en ...props y se ignora en silencio)`);
 }
 
