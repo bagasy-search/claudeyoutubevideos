@@ -113,8 +113,8 @@ export const Foto: React.FC<{ src: string; seed?: number }> = ({ src, seed = 1 }
 const Velo: React.FC<{ p: number; fuerza?: number }> = ({ p, fuerza = 1 }) => (
   <AbsoluteFill
     style={{
-      backgroundColor: `rgba(20,18,15,${(0.80 * fuerza * p).toFixed(3)})`,
-      backdropFilter: `blur(${(16 * fuerza * p).toFixed(1)}px) saturate(${(1 - 0.35 * p).toFixed(2)})`,
+      backgroundColor: `rgba(20,18,15,${(0.58 * fuerza * p).toFixed(3)})`,
+      backdropFilter: `blur(${(12 * fuerza * p).toFixed(1)}px) saturate(${(1 - 0.28 * p).toFixed(2)})`,
     }}
   />
 );
@@ -148,10 +148,10 @@ export const Comentario: React.FC<{ texto: string; resalta?: string; fuente: str
     <AbsoluteFill>
       <Velo p={p} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 150px" }}>
-        <div style={{ width: "100%", maxWidth: 1360, opacity: a, transform: `translateY(${y.toFixed(1)}px)` }}>
+        <div style={{ width: "100%", maxWidth: 1520, opacity: a, transform: `translateY(${y.toFixed(1)}px)` }}>
           <Tarjeta style={{ padding: "62px 72px" }}>
             <Eyebrow>Comentario real · YouTube</Eyebrow>
-            <div style={{ fontFamily: FF, fontSize: 58, lineHeight: 1.26, fontWeight: 600, color: INK, letterSpacing: "-0.015em" }}>
+            <div style={{ fontFamily: FF, fontSize: 64, lineHeight: 1.24, fontWeight: 600, color: INK, letterSpacing: "-0.015em" }}>
               {partes ? (
                 <>
                   {partes[0]}
@@ -202,7 +202,7 @@ export const Frase: React.FC<{ lineas: string[]; cada?: number }> = ({ lineas, c
                   style={{
                     display: "inline-block",
                     fontFamily: FF,
-                    fontSize: ultima ? 92 : 76,
+                    fontSize: ultima ? 98 : 80,
                     fontWeight: ultima ? 800 : 600,
                     letterSpacing: "-0.025em",
                     lineHeight: 1.12,
@@ -210,7 +210,7 @@ export const Frase: React.FC<{ lineas: string[]; cada?: number }> = ({ lineas, c
                     background: ultima ? ACC : "transparent",
                     padding: ultima ? "10px 30px 16px" : 0,
                     borderRadius: ultima ? 14 : 0,
-                    textShadow: ultima ? "none" : "0 4px 26px rgba(0,0,0,.55)",
+                    textShadow: ultima ? "none" : "0 3px 12px rgba(0,0,0,.6), 0 7px 38px rgba(0,0,0,.78)",
                   }}
                 >
                   {l}
@@ -243,7 +243,7 @@ export const Cifra: React.FC<{ eyebrow: string; valor: number; prefijo?: string;
           <div
             style={{
               fontFamily: FF, fontSize: 250, fontWeight: 800, lineHeight: 0.95, letterSpacing: "-0.045em",
-              color: PAPER, textShadow: "0 8px 44px rgba(0,0,0,.6)", fontVariantNumeric: "tabular-nums",
+              color: PAPER, textShadow: "0 4px 14px rgba(0,0,0,.6), 0 10px 50px rgba(0,0,0,.8)", fontVariantNumeric: "tabular-nums",
             }}
           >
             {prefijo}
@@ -282,18 +282,18 @@ export const Escalera: React.FC<{ eyebrow: string; items: { valor: string; nota:
           <div style={{ display: "flex", gap: 34, justifyContent: "center", alignItems: "flex-end", marginTop: 26 }}>
             {items.map((it, i) => {
               const q = interpolate(frame, [en[i] ?? i * 12, (en[i] ?? i * 12) + 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
-              const alto = 200 + i * 52;   // escalera real: cada chip un poco más alto
+              const alto = 250 + i * 58;   // escalera real: cada chip un poco más alto
               return (
                 <div
                   key={i}
                   style={{
-                    width: 400, height: alto, background: i === items.length - 1 ? ACC : PAPER, borderRadius: 20,
+                    width: 470, height: alto, background: i === items.length - 1 ? ACC : PAPER, borderRadius: 20,
                     boxShadow: SOMBRA_TARJETA, display: "flex", flexDirection: "column",
                     alignItems: "center", justifyContent: "center", gap: 8,
                     opacity: q, transform: `translateY(${((1 - q) * 34).toFixed(1)}px) scale(${(0.94 + 0.06 * q).toFixed(3)})`,
                   }}
                 >
-                  <div style={{ fontFamily: FF, fontSize: 96, fontWeight: 800, letterSpacing: "-0.04em", color: INK, fontVariantNumeric: "tabular-nums" }}>
+                  <div style={{ fontFamily: FF, fontSize: 112, fontWeight: 800, letterSpacing: "-0.04em", color: INK, fontVariantNumeric: "tabular-nums" }}>
                     {it.valor}
                   </div>
                   <div style={{ fontFamily: FF, fontSize: 27, fontWeight: 600, color: i === items.length - 1 ? "rgba(20,18,15,.72)" : MUTE }}>{it.nota}</div>
@@ -322,10 +322,10 @@ export const Cuenta: React.FC<{ eyebrow: string; titulo: string; filas: { trabaj
     <AbsoluteFill>
       <Velo p={p} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 150px" }}>
-        <div style={{ width: "100%", maxWidth: 1420, opacity: out }}>
+        <div style={{ width: "100%", maxWidth: 1560, opacity: out }}>
           <div style={{ opacity: eb, transform: `translateY(${((1 - eb) * 20).toFixed(1)}px)` }}>
             <Eyebrow>{eyebrow}</Eyebrow>
-            <div style={{ fontFamily: FF, fontSize: 66, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", marginBottom: 40, textShadow: "0 4px 26px rgba(0,0,0,.55)" }}>
+            <div style={{ fontFamily: FF, fontSize: 66, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", marginBottom: 40, textShadow: "0 3px 10px rgba(0,0,0,.55), 0 6px 34px rgba(0,0,0,.7)" }}>
               {titulo}
             </div>
           </div>
@@ -342,10 +342,10 @@ export const Cuenta: React.FC<{ eyebrow: string; titulo: string; filas: { trabaj
                   opacity: q, transform: `translateX(${((1 - q) * -40).toFixed(1)}px)`,
                 }}
               >
-                <div style={{ fontFamily: FF, fontSize: 42, fontWeight: 600, color: INK, letterSpacing: "-0.015em" }}>{f.trabajo}</div>
+                <div style={{ fontFamily: FF, fontSize: 46, fontWeight: 600, color: INK, letterSpacing: "-0.015em" }}>{f.trabajo}</div>
                 <div style={{ display: "flex", alignItems: "center", gap: 22 }}>
                   <div style={{ width: 46, height: 3, background: LINE, borderRadius: 2 }} />
-                  <div style={{ fontFamily: FF, fontSize: 60, fontWeight: 800, color: ACC, letterSpacing: "-0.03em", fontVariantNumeric: "tabular-nums" }}>
+                  <div style={{ fontFamily: FF, fontSize: 66, fontWeight: 800, color: ACC, letterSpacing: "-0.03em", fontVariantNumeric: "tabular-nums" }}>
                     {f.total}
                   </div>
                 </div>
@@ -381,7 +381,7 @@ export const Duelo: React.FC<{
           opacity: q, transform: `translateY(${((1 - q) * 30).toFixed(1)}px)`,
         }}
       >
-        <div style={{ position: "relative", height: 330, background: SOFT }}>
+        <div style={{ position: "relative", height: 392, background: SOFT }}>
           <Img src={staticFile(d.img)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: bien ? "none" : "saturate(.6)" }} />
           <div
             style={{
@@ -394,7 +394,7 @@ export const Duelo: React.FC<{
           </div>
         </div>
         <div style={{ padding: "30px 38px 38px" }}>
-          <div style={{ fontFamily: FF, fontSize: 46, fontWeight: 700, color: INK, letterSpacing: "-0.022em", lineHeight: 1.14 }}>{d.rotulo}</div>
+          <div style={{ fontFamily: FF, fontSize: 50, fontWeight: 700, color: INK, letterSpacing: "-0.022em", lineHeight: 1.14 }}>{d.rotulo}</div>
           <div style={{ fontFamily: FF, fontSize: 29, fontWeight: 500, color: MUTE, marginTop: 12, lineHeight: 1.34 }}>{d.sub}</div>
         </div>
       </div>
@@ -405,10 +405,10 @@ export const Duelo: React.FC<{
     <AbsoluteFill>
       <Velo p={p} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 130px" }}>
-        <div style={{ width: "100%", maxWidth: 1500, opacity: out }}>
+        <div style={{ width: "100%", maxWidth: 1640, opacity: out }}>
           <div style={{ textAlign: "center", opacity: cab, transform: `translateY(${((1 - cab) * 18).toFixed(1)}px)`, marginBottom: 34 }}>
             <Eyebrow>{eyebrow}</Eyebrow>
-            <div style={{ fontFamily: FF, fontSize: 62, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 4px 26px rgba(0,0,0,.55)" }}>
+            <div style={{ fontFamily: FF, fontSize: 62, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 3px 10px rgba(0,0,0,.55), 0 6px 34px rgba(0,0,0,.7)" }}>
               {titulo}
             </div>
           </div>
@@ -440,7 +440,7 @@ export const Tarjetas: React.FC<{ eyebrow: string; titulo: string; items: { rotu
         <div style={{ width: "100%", opacity: out }}>
           <div style={{ textAlign: "center", opacity: cab, transform: `translateY(${((1 - cab) * 18).toFixed(1)}px)`, marginBottom: 36 }}>
             <Eyebrow>{eyebrow}</Eyebrow>
-            <div style={{ fontFamily: FF, fontSize: 62, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 4px 26px rgba(0,0,0,.55)" }}>
+            <div style={{ fontFamily: FF, fontSize: 62, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 3px 10px rgba(0,0,0,.55), 0 6px 34px rgba(0,0,0,.7)" }}>
               {titulo}
             </div>
           </div>
@@ -452,11 +452,11 @@ export const Tarjetas: React.FC<{ eyebrow: string; titulo: string; items: { rotu
                 <div
                   key={i}
                   style={{
-                    flex: 1, maxWidth: 430, background: PAPER, borderRadius: 20, overflow: "hidden", boxShadow: SOMBRA_TARJETA,
+                    flex: 1, maxWidth: 500, background: PAPER, borderRadius: 20, overflow: "hidden", boxShadow: SOMBRA_TARJETA,
                     opacity: q, transform: `translateY(${((1 - q) * 32).toFixed(1)}px)`,
                   }}
                 >
-                  <div style={{ height: 252, background: SOFT }}>
+                  <div style={{ height: 300, background: SOFT }}>
                     <Img src={staticFile(it.img)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                   </div>
                   <div style={{ padding: "26px 30px 32px" }}>
@@ -464,7 +464,7 @@ export const Tarjetas: React.FC<{ eyebrow: string; titulo: string; items: { rotu
                       <div style={{ width: 30, height: 30, borderRadius: 15, background: ACC, color: INK, fontFamily: FF, fontSize: 18, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center" }}>
                         {i + 1}
                       </div>
-                      <div style={{ fontFamily: FF, fontSize: 40, fontWeight: 700, color: INK, letterSpacing: "-0.02em" }}>{it.rotulo}</div>
+                      <div style={{ fontFamily: FF, fontSize: 44, fontWeight: 700, color: INK, letterSpacing: "-0.02em" }}>{it.rotulo}</div>
                     </div>
                     <div style={{ fontFamily: FF, fontSize: 27, fontWeight: 500, color: MUTE, marginTop: 12, lineHeight: 1.34 }}>{it.sub}</div>
                   </div>
@@ -496,7 +496,7 @@ export const Pasos: React.FC<{ eyebrow: string; titulo: string; pasos: { rotulo:
         <div style={{ width: "100%", opacity: out }}>
           <div style={{ textAlign: "center", opacity: cab, transform: `translateY(${((1 - cab) * 18).toFixed(1)}px)`, marginBottom: 42 }}>
             <Eyebrow>{eyebrow}</Eyebrow>
-            <div style={{ fontFamily: FF, fontSize: 62, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 4px 26px rgba(0,0,0,.55)" }}>
+            <div style={{ fontFamily: FF, fontSize: 62, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 3px 10px rgba(0,0,0,.55), 0 6px 34px rgba(0,0,0,.7)" }}>
               {titulo}
             </div>
           </div>
@@ -511,7 +511,7 @@ export const Pasos: React.FC<{ eyebrow: string; titulo: string; pasos: { rotulo:
                   )}
                   <div
                     style={{
-                      width: 328, background: PAPER, borderRadius: 20, boxShadow: SOMBRA_TARJETA, padding: "30px 30px 34px",
+                      width: 372, background: PAPER, borderRadius: 20, boxShadow: SOMBRA_TARJETA, padding: "30px 30px 34px",
                       display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center",
                       opacity: q, transform: `translateY(${((1 - q) * 28).toFixed(1)}px)`,
                     }}
@@ -519,8 +519,8 @@ export const Pasos: React.FC<{ eyebrow: string; titulo: string; pasos: { rotulo:
                     <div style={{ width: 46, height: 46, borderRadius: 23, background: INK, color: PAPER, fontFamily: FF, fontSize: 24, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 18 }}>
                       {i + 1}
                     </div>
-                    {s.img && <Img src={staticFile(s.img)} style={{ width: 108, height: 108, objectFit: "contain", marginBottom: 14 }} />}
-                    <div style={{ fontFamily: FF, fontSize: 38, fontWeight: 700, color: INK, letterSpacing: "-0.02em" }}>{s.rotulo}</div>
+                    {s.img && <Img src={staticFile(s.img)} style={{ width: 126, height: 126, objectFit: "contain", marginBottom: 14 }} />}
+                    <div style={{ fontFamily: FF, fontSize: 42, fontWeight: 700, color: INK, letterSpacing: "-0.02em" }}>{s.rotulo}</div>
                     <div style={{ fontFamily: FF, fontSize: 25, fontWeight: 500, color: MUTE, marginTop: 10, lineHeight: 1.32 }}>{s.sub}</div>
                   </div>
                 </React.Fragment>
@@ -547,11 +547,11 @@ export const Lista: React.FC<{ eyebrow: string; titulo: string; items: string[];
     <AbsoluteFill>
       <Velo p={p} fuerza={0.72} />
       <AbsoluteFill style={{ alignItems: "flex-start", justifyContent: "center", padding: "0 0 0 120px" }}>
-        <div style={{ width: 1080, marginTop: 0, height: "100%", display: "flex", alignItems: "center", opacity: out }}>
+        <div style={{ width: 1200, marginTop: 0, height: "100%", display: "flex", alignItems: "center", opacity: out }}>
           <div style={{ width: "100%" }}>
             <div style={{ opacity: cab, transform: `translateY(${((1 - cab) * 18).toFixed(1)}px)`, marginBottom: 32 }}>
               <Eyebrow>{eyebrow}</Eyebrow>
-              <div style={{ fontFamily: FF, fontSize: 64, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", lineHeight: 1.1, textShadow: "0 4px 26px rgba(0,0,0,.6)" }}>
+              <div style={{ fontFamily: FF, fontSize: 64, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", lineHeight: 1.1, textShadow: "0 3px 10px rgba(0,0,0,.6), 0 6px 34px rgba(0,0,0,.75)" }}>
                 {titulo}
               </div>
             </div>
@@ -570,7 +570,7 @@ export const Lista: React.FC<{ eyebrow: string; titulo: string; items: string[];
                   <div style={{ width: 38, height: 38, borderRadius: 19, background: GOOD, color: PAPER, fontFamily: FF, fontSize: 22, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                     ✓
                   </div>
-                  <div style={{ fontFamily: FF, fontSize: 37, fontWeight: 600, color: INK, letterSpacing: "-0.015em", lineHeight: 1.2 }}>{it}</div>
+                  <div style={{ fontFamily: FF, fontSize: 40, fontWeight: 600, color: INK, letterSpacing: "-0.015em", lineHeight: 1.2 }}>{it}</div>
                 </div>
               );
             })}
@@ -611,7 +611,7 @@ export const AntesDespues: React.FC<{ eyebrow: string; titulo: string; antes: st
         <div style={{ width: "100%", maxWidth: 1420, opacity: out }}>
           <div style={{ textAlign: "center", opacity: cab, transform: `translateY(${((1 - cab) * 18).toFixed(1)}px)`, marginBottom: 30 }}>
             <Eyebrow>{eyebrow}</Eyebrow>
-            <div style={{ fontFamily: FF, fontSize: 60, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 4px 26px rgba(0,0,0,.55)" }}>
+            <div style={{ fontFamily: FF, fontSize: 60, fontWeight: 700, color: PAPER, letterSpacing: "-0.028em", textShadow: "0 3px 10px rgba(0,0,0,.55), 0 6px 34px rgba(0,0,0,.7)" }}>
               {titulo}
             </div>
           </div>
@@ -637,24 +637,24 @@ export const Sello: React.FC<{ dias: number; titulo: string; apoyo: string }> = 
   const { p, a, y } = useBeat();
   const frame = useCurrentFrame();
   const anillo = interpolate(frame, [8, 40], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
-  const R = 128, C = 2 * Math.PI * R;
+  const R = 152, C = 2 * Math.PI * R;
   return (
     <AbsoluteFill>
       <Velo p={p} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 150px" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 62, opacity: a, transform: `translateY(${y.toFixed(1)}px)` }}>
-          <div style={{ position: "relative", width: 300, height: 300, flexShrink: 0 }}>
-            <svg width={300} height={300} style={{ position: "absolute", inset: 0, transform: "rotate(-90deg)" }}>
-              <circle cx={150} cy={150} r={R} fill="none" stroke="rgba(255,255,255,.18)" strokeWidth={10} />
-              <circle cx={150} cy={150} r={R} fill="none" stroke={ACC} strokeWidth={10} strokeLinecap="round" strokeDasharray={C} strokeDashoffset={C * (1 - anillo)} />
+        <div style={{ display: "flex", alignItems: "center", gap: 76, opacity: a, transform: `translateY(${y.toFixed(1)}px)` }}>
+          <div style={{ position: "relative", width: 356, height: 356, flexShrink: 0 }}>
+            <svg width={356} height={356} style={{ position: "absolute", inset: 0, transform: "rotate(-90deg)" }}>
+              <circle cx={178} cy={178} r={R} fill="none" stroke="rgba(255,255,255,.20)" strokeWidth={12} />
+              <circle cx={178} cy={178} r={R} fill="none" stroke={ACC} strokeWidth={12} strokeLinecap="round" strokeDasharray={C} strokeDashoffset={C * (1 - anillo)} />
             </svg>
             <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-              <div style={{ fontFamily: FF, fontSize: 128, fontWeight: 800, color: PAPER, lineHeight: 0.9, letterSpacing: "-0.05em" }}>{dias}</div>
+              <div style={{ fontFamily: FF, fontSize: 152, fontWeight: 800, color: PAPER, lineHeight: 0.9, letterSpacing: "-0.05em" }}>{dias}</div>
               <div style={{ fontFamily: FF, fontSize: 30, fontWeight: 700, color: ACC, letterSpacing: "0.14em", textTransform: "uppercase", marginTop: 6 }}>días</div>
             </div>
           </div>
           <div style={{ maxWidth: 780 }}>
-            <div style={{ fontFamily: FF, fontSize: 74, fontWeight: 800, color: PAPER, letterSpacing: "-0.032em", lineHeight: 1.06, textShadow: "0 4px 26px rgba(0,0,0,.55)" }}>
+            <div style={{ fontFamily: FF, fontSize: 82, fontWeight: 800, color: PAPER, letterSpacing: "-0.032em", lineHeight: 1.06, textShadow: "0 3px 10px rgba(0,0,0,.55), 0 6px 34px rgba(0,0,0,.7)" }}>
               {titulo}
             </div>
             <div style={{ fontFamily: FF, fontSize: 34, fontWeight: 500, color: "rgba(255,255,255,.84)", marginTop: 20, lineHeight: 1.38 }}>{apoyo}</div>

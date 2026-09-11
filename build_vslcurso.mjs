@@ -215,7 +215,7 @@ const OVER = [
   { comp: "AntesDespues", a: 158.80, z: 165.00, props: {
     eyebrow: "Tu primer objetivo",
     titulo: "Un trabajo bien hecho, una foto, una recomendación",
-    antes: I("vslad_ad1_antes"), despues: I("vslad_ad1_despues"),
+    antes: I("vslad_ad4_antes"), despues: I("vslad_ad4_despues"),
   } },
 
   { comp: "Escalera", a: 168.40, z: 175.30, en: [169.30, 170.80, 171.60], props: {
