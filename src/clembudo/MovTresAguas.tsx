@@ -103,7 +103,7 @@
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import {
-  AR, Atmos, Backplate, C, Ground, Kick, Lamina, Lower, LowerBed, Mat, Occluder, Paper, Plate,
+  AR, Atmos, Backplate, C, Ground, Kick, Lamina, Lower, LowerBed, Mat, Occluder, Paper, Plate, fitCx, fitCx,
   cam, camStyle, luz, rampIn, rng, Ink,
 } from "./Stage";
 
@@ -338,10 +338,13 @@ export const MovTresAguas: React.FC = () => {
             {f >= 1512
               ? CHIPS.map((c, i) => {
                   const k = ramp(f, 1512 + i * 9, 1548 + i * 9, Easing.out(Easing.poly(3)));
+                  const zz = lerp(-120, 130, k);
                   return (
                     <Plate
-                      key={c.n} cx={396 + i * 564} cy={lerp(1180, 616, k)} w={476}
-                      z={lerp(-120, 130, k)} ry={(i - 1) * 6} lift={1.2}
+                      // fitCx: en mundo estas tres estaban holgadas, pero la camara (z 1,10 mas la
+                      // perspectiva) se comia la primera por la izquierda y la tercera por la derecha.
+                      key={c.n} cx={fitCx(396 + i * 564, 476, zz, K)} cy={lerp(1180, 616, k)} w={476}
+                      z={zz} ry={(i - 1) * 6} lift={1.2}
                     >
                       <Mat img={c.n} kb={1.05} />
                     </Plate>

@@ -505,3 +505,29 @@ export const Lamina: React.FC<{ src: string; cx: number; cy: number; w: number; 
       </div>
     );
   };
+
+// ── D3(b) · LO MISMO QUE LE PASABA AL TEXTO, PERO A LAS TARJETAS ──────────────────────────────
+// El texto lo saqué de la cámara y dejó de cortarse. Las tarjetas HÉROE no pueden salir: son el
+// objeto protagonista del acto. Pero viven en coordenadas de MUNDO, así que la cámara las mueve:
+// medido sobre el render, las tres manchas del cierre de MovTresAguas y la foto de los billetes de
+// MovDinero quedaban cortadas contra el borde, aunque en mundo estuvieran holgadas.
+//
+// `fitCx` proyecta la tarjeta a PANTALLA y corre su `cx` lo justo para que entre con `margin` px
+// de aire REAL. La proyección de `camStyle` es, en orden:
+//   scale(z) → rotateY(ry) → translate3d(panX) → perspective(1600)
+// `scale()` es 2D: NO toca el translateZ de la tarjeta. Por eso el factor de perspectiva sale del
+// z de la tarjeta y el zoom sólo escala el dx.
+//
+// ⚠️ Si la tarjeta NO ENTRA ni centrada (un zoom-through que crece hasta tapar el cuadro), devuelve
+// el cx original: ahí salirse es la intención, y clavarla al centro arruinaría la costura.
+export const fitCx = (cx: number, w: number, zp: number, K: Cam, margin = SAFE): number => {
+  const ry = (K.ry * Math.PI) / 180;
+  const P = 1600 / (1600 - zp * Math.cos(ry));          // agrandamiento por perspectiva
+  const half = (w / 2) * K.z * P;
+  const lim = W / 2 - margin - half;
+  if (lim <= 0) return cx;                              // no entra ni centrada → es a propósito
+  const k = K.z * Math.cos(ry) * P;
+  const off = (zp * Math.sin(ry) + K.panX) * P;
+  const dx = Math.min(Math.max(cx - W / 2, (-lim - off) / k), (lim - off) / k);
+  return W / 2 + dx;
+};

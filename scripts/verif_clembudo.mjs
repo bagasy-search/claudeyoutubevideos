@@ -42,16 +42,20 @@ ok(negros.length === 0, `blackdetect: ${negros.length} tramos negros${negros.len
 // ── 3 · luma media cada 4 s ─────────────────────────────────────────────────────────────────
 // ⚠️ Un cuadro "oscuro y vacío" NO llega a ser negro: blackdetect da CERO y pasa igual. Por eso
 // además de blackdetect va la luma, que es la que agarró los 6 instantes del render anterior.
+// ⚠️ UNA SOLA PASADA. La primera versión lanzaba un ffprobe por muestra con
+// `select=gte(t,N)`: cada uno vuelve a decodificar desde el frame 0, o sea 183 decodificaciones de
+// un mp4 de 460 MB. No terminó en 10 minutos. Con `fps=1/4` + `metadata=print` es una pasada sola.
 const paso = 4;
-const bajos = [];
-let medidos = 0;
-for (let t = 1; t < dur - 1; t += paso) {
-  medidos++;
-  const out = quiet(`ffprobe -v error -f lavfi -i "movie=${MP4.replace(/:/g, "\\\\:")},select=gte(t\\,${t.toFixed(2)}),signalstats" -show_entries frame_tags=lavfi.signalstats.YAVG -of csv=p=0 -read_intervals %+#1`);
-  const y = parseFloat(out.trim().split("\n")[0]);
-  if (Number.isFinite(y) && y < 45) bajos.push([t, y]);
+const raw = quiet(`ffmpeg -v error -i "${MP4}" -vf "fps=1/${paso},signalstats,metadata=print:key=lavfi.signalstats.YAVG:file=-" -an -f null - 2>&1`);
+const lum = [...raw.matchAll(/pts_time:([\d.]+)[\s\S]*?YAVG=([\d.]+)/g)].map((m) => [+m[1], +m[2]]);
+const bajos = lum.filter(([, y]) => y < 45);
+const medidos = lum.length;
+ok(medidos > 150, `luma: ${medidos} instantes medidos (cada ${paso}s) — si esto es 0, la compuerta no miró nada`);
+ok(bajos.length === 0, `luma: ${bajos.length} de ${medidos} instantes con YAVG < 45${bajos.length ? " → " + bajos.slice(0, 8).map(([t, y]) => `${t.toFixed(0)}s:${y.toFixed(0)}`).join(", ") : ""}`);
+if (medidos) {
+  const ys = lum.map(([, y]) => y).sort((a, b) => a - b);
+  console.log(`     (mín ${ys[0].toFixed(1)} · mediana ${ys[ys.length >> 1].toFixed(1)} · máx ${ys[ys.length - 1].toFixed(1)})`);
 }
-ok(bajos.length === 0, `luma cada ${paso}s: ${bajos.length} de ${medidos} instantes con YAVG < 45${bajos.length ? " → " + bajos.slice(0, 6).map(([t, y]) => `${t}s:${y.toFixed(0)}`).join(", ") : ""}`);
 
 // ── 4 · el QR de las dos ventanas del CTA ───────────────────────────────────────────────────
 console.log(`\n── QR (se decodifica a mano con un lector; acá quedan los frames)`);

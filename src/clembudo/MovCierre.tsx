@@ -322,7 +322,9 @@ export const MovCierre: React.FC = () => {
         {/* ── EL SET (sube entero en la frontera 1: objeto que entra, ⛔ no un fade) ───────────── */}
         <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `translateY(${setY.toFixed(1)}px)` }}>
           {/* D2 · L0 · el fondo NO es un degradé: es el galpón REAL (material, no CSS) */}
-          <Backplate img="clembudo_s439" z={-620} scale={1.42} veil={0.58} />
+          {/* veil 0,58 a 0,74: con 0,58 la cara del fondo competia con las cartas y el cuadro se leia
+              como dos capas encimadas, que es justo la sensacion que el D4 vino a matar. */}
+          <Backplate img="clembudo_s439" z={-620} scale={1.42} veil={0.74} />
           {/* L1 · EL PISO DEL GALPÓN — ⛔ gira sobre su borde INFERIOR y HACIA ATRÁS: nunca puede
               adelantarse a las cartas. Ésta es la corrección del D1 (antes: rotateX(56) sobre el
               borde superior, borde cercano en z=+1269, que se comía la mitad de abajo de la carta). */}
@@ -470,16 +472,16 @@ export const MovCierre: React.FC = () => {
               </div>
             </Paper>
           </div>
-          <div style={{ position: "absolute", left: 210, top: 690, width: 500, textAlign: "center" }}>
+          <div style={{ position: "absolute", left: 176, top: 690, width: 568, textAlign: "center" }}>
             <Paper pad={18} tilt={0.6}>
               <Ink size={50}>Cobra 80</Ink>
               <div style={{ marginTop: 6, fontSize: 31, color: C.inkSoft, fontFamily: "inherit" }}>Trata la mancha y espera</div>
             </Paper>
           </div>
-          <div style={{ position: "absolute", right: 210, top: 690, width: 500, textAlign: "center" }}>
+          <div style={{ position: "absolute", right: 176, top: 690, width: 568, textAlign: "center" }}>
             <Paper pad={18} tilt={-0.6}>
               <Ink size={50}>Cobra 250</Ink>
-              <div style={{ marginTop: 6, fontSize: 31, color: C.inkSoft, fontFamily: "inherit" }}>Diagnostica y sabe decir que no</div>
+              <div style={{ marginTop: 6, fontSize: 31, color: C.inkSoft, fontFamily: "inherit" }}>Diagnostica antes de cotizar</div>
             </Paper>
           </div>
         </AbsoluteFill>

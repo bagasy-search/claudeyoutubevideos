@@ -94,7 +94,7 @@
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import {
-  Atmos, Backplate, C, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate,
+  Atmos, Backplate, C, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate, fitCx,
   cam, camStyle, luz, rampIn, rng,
 } from "./Stage";
 
@@ -154,8 +154,11 @@ export const MovCloroBorax: React.FC = () => {
   const polvo = ramp(f, A4 - 22, A4 + 26, Easing.inOut(Easing.cubic));
 
   // A4 · la receta: la taza, el balde, la fila de baldes cargados
-  const taza = ramp(f, A4 + 18, A4 + 74, Easing.out(Easing.cubic)) * (1 - ramp(f, 1080, 1118, Easing.in(Easing.cubic)));
-  const baldes = ramp(f, 1214, 1268, Easing.out(Easing.cubic)) * (1 - ramp(f, A5 - 14, A5 + 10, Easing.in(Easing.cubic)));
+  // MEDIDO SOBRE EL RENDER: la taza se iba en f1118 y los baldes recien entraban en f1214, asi
+  // que entre medio el acto se quedaba con el fondo y una tarjeta de texto: un acto VACIO, que es
+  // el defecto D2. Las dos ventanas ahora SE SOLAPAN: nunca hay un frame sin objeto protagonista.
+  const taza = ramp(f, A4 + 18, A4 + 74, Easing.out(Easing.cubic)) * (1 - ramp(f, 1186, 1226, Easing.in(Easing.cubic)));
+  const baldes = ramp(f, 1150, 1206, Easing.out(Easing.cubic)) * (1 - ramp(f, A5 - 14, A5 + 10, Easing.in(Easing.cubic)));
   const precio = ramp(f, 1118, 1156, Easing.out(Easing.poly(4))) * (1 - ramp(f, 1244, 1276, Easing.in(Easing.cubic)));
 
   // A5 · el mecanismo. El balde (círculo) se vuelve la boca del poro: MATCH-SHAPE.
@@ -206,7 +209,7 @@ export const MovCloroBorax: React.FC = () => {
         {/* ═══ A4 · LA RECETA — la taza colmada y la fila de baldes, cada una en su 16:9 ═══════ */}
         {taza > 0.004 ? (
           <Plate
-            cx={lerp(1420, 1180, taza)} cy={lerp(620, 520, taza)} w={lerp(440, 900, taza)}
+            cx={fitCx(lerp(1400, 1160, taza), lerp(440, 900, taza), lerp(-230, 190, taza), K)} cy={lerp(620, 520, taza)} w={lerp(440, 900, taza)}
             z={lerp(-230, 190, taza)} ry={lerp(-20, -4, taza)} dim={(1 - taza) * 0.6} lift={1.35}
           >
             <Mat img="clembudo_s308" clip="clembudo_s308" from={A4 + 24} dur={150} rate={0.86} kb={1.05} />
@@ -214,7 +217,7 @@ export const MovCloroBorax: React.FC = () => {
         ) : null}
         {baldes > 0.004 ? (
           <Plate
-            cx={lerp(520, 700, baldes)} cy={lerp(680, 560, baldes)} w={lerp(420, 880, baldes)}
+            cx={fitCx(lerp(540, 720, baldes), lerp(420, 880, baldes), lerp(-250, 170, baldes), K)} cy={lerp(680, 560, baldes)} w={lerp(420, 880, baldes)}
             z={lerp(-250, 170, baldes)} ry={lerp(22, 6, baldes)} dim={(1 - baldes) * 0.6} lift={1.3}
           >
             <Mat img="clembudo_s310" clip="clembudo_s310" from={1220} dur={110} rate={0.9} kb={1.05} />

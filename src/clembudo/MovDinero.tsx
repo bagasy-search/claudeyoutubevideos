@@ -88,7 +88,7 @@
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import {
-  Atmos, Backplate, C, FONT, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate,
+  Atmos, Backplate, C, FONT, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate, fitCx,
   cam, camStyle, luz, rampIn, rng,
 } from "./Stage";
 
@@ -267,7 +267,7 @@ export const MovDinero: React.FC = () => {
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <AbsoluteFill style={camStyle(K)}>
         {/* D2 · el fondo es MATERIA, no un degradé: el galpón donde Claudio cuenta los billetes */}
-        <Backplate img="clembudo_s400" clip="clembudo_s400" from={0} dur={150} rate={0.9} z={-600} scale={1.44} veil={0.54} />
+        <Backplate img="clembudo_s400" clip="clembudo_s400" from={0} dur={150} rate={0.9} z={-600} scale={1.44} veil={0.66} />
         {/* el piso / la mesa — gira sobre su borde INFERIOR y hacia atrás (⛔ nunca se adelanta) */}
         <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `translateY(${((1 - mesa) * 980).toFixed(1)}px)` }}>
           <Ground img="clembudo_s436" y={1220} h={1380} z0={-210} tilt={63} veil={0.6} />
@@ -294,13 +294,13 @@ export const MovDinero: React.FC = () => {
         {ph > 0.004 && phOut < 0.996 ? (
           <>
             <Plate
-              cx={lerp(300, 372, ph)} cy={lerp(880, 786, ph)} w={lerp(300, 430, ph) * (1 - phOut * 0.7)}
+              cx={fitCx(lerp(340, 404, ph), lerp(300, 430, ph), lerp(-180, 226, ph), K)} cy={lerp(880, 786, ph)} w={lerp(300, 430, ph) * (1 - phOut * 0.7)}
               z={lerp(-180, 226, ph)} ry={lerp(-26, -14, ph)} dim={(1 - ph) * 0.7 + phOut * 0.5} lift={1.1}
             >
               <Mat img="clembudo_s435" kb={1.05 + ph * 0.04} />
             </Plate>
             <Plate
-              cx={lerp(1640, 1560, ph)} cy={lerp(842, 758, ph)} w={lerp(300, 430, ph) * (1 - phOut * 0.7)}
+              cx={fitCx(lerp(1580, 1516, ph), lerp(300, 430, ph), lerp(-180, 200, ph), K)} cy={lerp(842, 758, ph)} w={lerp(300, 430, ph) * (1 - phOut * 0.7)}
               z={lerp(-180, 200, ph)} ry={lerp(24, 13, ph)} dim={(1 - ph) * 0.7 + phOut * 0.5} lift={1.1}
             >
               <Mat img="clembudo_s421" clip="clembudo_s421" from={280} dur={120} rate={1} kb={1.05} />
@@ -326,12 +326,15 @@ export const MovDinero: React.FC = () => {
             <Pedazo at={IMP12} left={BAR_X + 128 * PPU} w={12 * PPU} />
             {/* el material de este acto va en su PROPIA Plate, con su 16:9 intacto (⛔ no adentro
                 de la barra: ése era exactamente el defecto D1) */}
-            <Plate cx={1414} cy={360} w={620} z={190} ry={-7} lift={1.35}>
+            {/* fitCx: con z 1,16-1,21 y translateZ 190 esta foto se salia por la derecha. Y baja
+                a 540 px para no pisar la cifra de las restas. */}
+            <Plate cx={fitCx(1400, 540, 190, K)} cy={332} w={540} z={190} ry={-7} lift={1.35}>
               <Mat img="clembudo_s416" clip="clembudo_s416" from={A4 + 8} dur={150} rate={0.86} kb={1.05} />
             </Plate>
             <Cifra at={A4 + 10} x={BAR_X} y={BAR_Y - 214} texto="$160" tag="LO QUE SE COBRÓ" />
-            <Cifra at={IMP20 + 4} x={BAR_X + 640} y={BAR_Y - 198} texto="−20" tag="MATERIALES" size={96} until={IMP12 - 2} />
-            <Cifra at={IMP12 + 4} x={BAR_X + 640} y={BAR_Y - 198} texto="−12" tag="TRANSPORTE" size={96} />
+            {/* las restas van DEBAJO de la barra, no a su derecha: ahi chocaban con la foto */}
+            <Cifra at={IMP20 + 4} x={BAR_X + 30} y={BAR_Y + 150} texto="−20" tag="MATERIALES" size={92} until={IMP12 - 2} />
+            <Cifra at={IMP12 + 4} x={BAR_X + 30} y={BAR_Y + 150} texto="−12" tag="TRANSPORTE" size={92} />
           </>
         ) : null}
 

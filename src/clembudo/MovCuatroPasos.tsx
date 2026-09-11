@@ -90,7 +90,7 @@
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import {
-  Atmos, Backplate, C, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate,
+  Atmos, Backplate, C, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate, fitCx,
   cam, camStyle, luz, rampIn, rng,
 } from "./Stage";
 
@@ -227,7 +227,7 @@ export const MovCuatroPasos: React.FC = () => {
               <Mat img="clembudo_s321" kb={1.04 + anillo * 0.05} />
             </Plate>
             <Plate
-              cx={lerp(420, 470, anillo)} cy={lerp(880, 806, anillo)} w={lerp(300, 410, anillo)}
+              cx={fitCx(lerp(450, 500, anillo), lerp(300, 410, anillo), lerp(-300, -40, anillo), K)} cy={lerp(880, 806, anillo)} w={lerp(300, 410, anillo)}
               z={lerp(-300, -40, anillo)} ry={22} dim={0.2 + (1 - anillo) * 0.5} lift={1}
             >
               <Mat img="clembudo_s322" clip="clembudo_s322" from={1046} dur={140} rate={0.9} kb={1.05} />

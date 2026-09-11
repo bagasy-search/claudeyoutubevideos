@@ -95,7 +95,7 @@
 import React from "react";
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import {
-  Atmos, Backplate, C, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate,
+  Atmos, Backplate, C, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate, fitCx,
   cam, camStyle, luz, rampIn, rng,
 } from "./Stage";
 
@@ -279,7 +279,7 @@ export const MovCaso35: React.FC = () => {
           ? VECINOS.map((v, i) => (
               <Plate
                 key={v.img}
-                cx={v.x} cy={lerp(1180, 486, dosVec)} w={560}
+                cx={fitCx(v.x, 560, lerp(-160, 150, dosVec), K)} cy={lerp(1180, 486, dosVec)} w={560}
                 z={lerp(-160, 150, dosVec)} ry={i === 0 ? 8 : -8} lift={1.25}
               >
                 <Mat img={v.img} kb={1.05} />
