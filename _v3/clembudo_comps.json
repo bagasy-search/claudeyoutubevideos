@@ -1,53 +1,201 @@
 [
- { "tipo": "componente", "componente": "BigStatReveal", "ms_in": 13360, "ms_out": 18840,
-   "bed": "img/clembudo/clembudo_s002.png",
-   "props": { "eyebrow": "UN TRABAJO", "prefix": "$", "value": 300, "support": "Entre 80 y 300 dólares, en efectivo, el mismo día que lo terminas", "source": "" } },
-
- { "tipo": "componente", "componente": "PullQuote", "ms_in": 40520, "ms_out": 46200,
-   "props": { "quote": "Esto no lo aprendí en ningún curso. Lo aprendí peleándome con mi propia casa.", "author": "Claudio Mendoza", "role": "El Constructor Libre", "image": "img/clembudo/clembudo_s012.png" } },
-
- { "tipo": "componente", "componente": "MythTruth", "ms_in": 51920, "ms_out": 58400,
-   "bed": "img/clembudo/clembudo_s014.png",
-   "props": { "mythLabel": "LO QUE HICE TRES VECES", "myth": "Taparla con cloro, sellador y pintura cara", "truthLabel": "LO QUE LA RESOLVIÓ", "truth": "Buscar de dónde venía el agua" } },
-
- { "tipo": "componente", "componente": "HighlightSweep", "ms_in": 176000, "ms_out": 182000,
-   "bed": "img/clembudo/clembudo_s204.png",
-   "props": { "pre": "La mancha no es el problema:", "highlight": "es el síntoma", "post": "", "note": "El que trata la mancha fracasa. El que encuentra de dónde viene el agua, la resuelve para siempre." } },
-
- { "tipo": "componente", "componente": "ChecklistReveal", "ms_in": 269900, "ms_out": 279000,
-   "bed": "img/laminas/m02_19_regla_tres.png",
-   "props": { "kicker": "ANOTA ESTO", "title": "La regla de las tres frases", "items": ["Difusa y arriba, es el aire", "Aparece con la lluvia, es de afuera", "Abajo, en banda y con polvo blanco, es el suelo"], "stamp": "80%" } },
-
- { "tipo": "componente", "componente": "BigStatReveal", "ms_in": 342680, "ms_out": 347500,
-   "bed": "img/clembudo/clembudo_s310.png",
-   "props": { "eyebrow": "EL KILO DE BÓRAX", "prefix": "$", "value": 5, "support": "Entre 2 y 5 dólares en cualquier ferretería. Rinde 16 litros.", "source": "" } },
-
- { "tipo": "componente", "componente": "HighlightSweep", "ms_in": 367540, "ms_out": 373000,
-   "bed": "img/clembudo/clembudo_s312.png",
-   "props": { "pre": "La solución de bórax", "highlight": "no se enjuaga", "post": "nunca", "note": "Si la enjuagas, le quitas la protección." } },
-
- { "tipo": "componente", "componente": "PullQuote", "ms_in": 436900, "ms_out": 442000,
-   "props": { "quote": "Si pintas sobre una pared húmeda, la mancha vuelve el cien por ciento de las veces. No es mala suerte, es física.", "author": "", "role": "", "image": "img/clembudo/clembudo_s321.png" } },
-
- { "tipo": "componente", "componente": "BigStatReveal", "ms_in": 448680, "ms_out": 454000,
-   "bed": "img/clembudo/clembudo_s324.png",
-   "props": { "eyebrow": "LA VARIANTE DEL TECHO", "prefix": "$", "value": 1, "suffix": "", "support": "Un ingrediente más, menos de un dólar. La proporción exacta está en la descripción.", "source": "" } },
-
- { "tipo": "componente", "componente": "PullQuote", "ms_in": 546700, "ms_out": 552000,
-   "props": { "quote": "El que sabe decir que no es al que después llaman.", "author": "", "role": "", "image": "img/clembudo/clembudo_s414.png" } },
-
- { "tipo": "componente", "componente": "HighlightSweep", "ms_in": 576040, "ms_out": 582000,
-   "bed": "img/clembudo/clembudo_s421.png",
-   "props": { "pre": "Estuvo", "highlight": "veinte minutos", "post": "parado en la vereda", "note": "Le parecía demasiado pedir tres mil doscientos pesos. Lo dijo sin justificarse, y la señora aceptó." } },
-
- { "tipo": "componente", "componente": "PullQuote", "ms_in": 644960, "ms_out": 650500,
-   "props": { "quote": "No es dinero fácil. Es dinero simple, que es distinto.", "author": "", "role": "", "image": "img/clembudo/clembudo_s430.png" } },
-
- { "tipo": "componente", "componente": "VsDuel", "ms_in": 659780, "ms_out": 665200,
-   "props": { "eyebrow": "LAS CUATRO COSAS QUE FALTAN", "title": "Lo que separa a uno del otro",
-     "left": { "label": "Cobra 80", "sub": "Trata la mancha y espera", "image": "img/clembudo/clembudo_s433.png" },
-     "right": { "label": "Cobra 250", "sub": "Diagnostica, cotiza y sabe decir que no", "image": "img/clembudo/clembudo_s434.png", "good": true } } },
-
- { "tipo": "componente", "componente": "CtaCard", "ms_in": 694340, "ms_out": 703000,
-   "props": { "eyebrow": "EL CURSO", "title": "De $3 a $180 por Pared", "bullet": "16 clases · el cuaderno del oficio · 15 días de garantía", "price": 0, "cta": "El enlace está en la descripción", "image": "img/vslcurso_portada.jpg" } }
+ {
+  "tipo": "componente",
+  "componente": "BigStatReveal",
+  "ms_in": 13360,
+  "ms_out": 18840,
+  "bed": "img/clembudo/clembudo_s002.png",
+  "props": {
+   "eyebrow": "UN TRABAJO",
+   "prefix": "$",
+   "value": 300,
+   "support": "Entre 80 y 300 dólares, en efectivo, el mismo día que lo terminas",
+   "source": ""
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "PullQuote",
+  "ms_in": 40520,
+  "ms_out": 46200,
+  "props": {
+   "quote": "Esto no lo aprendí en ningún curso. Lo aprendí peleándome con mi propia casa.",
+   "author": "Claudio Mendoza",
+   "role": "El Constructor Libre",
+   "image": "img/clembudo/clembudo_s012.png"
+  },
+  "bed": "img/clembudo/clembudo_s012.png"
+ },
+ {
+  "tipo": "componente",
+  "componente": "MythTruth",
+  "ms_in": 51920,
+  "ms_out": 58400,
+  "bed": "img/clembudo/clembudo_s014.png",
+  "props": {
+   "mythLabel": "LO QUE HICE TRES VECES",
+   "myth": "Taparla con cloro, sellador y pintura cara",
+   "truthLabel": "LO QUE LA RESOLVIÓ",
+   "truth": "Buscar de dónde venía el agua"
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "HighlightSweep",
+  "ms_in": 176000,
+  "ms_out": 182000,
+  "bed": "img/clembudo/clembudo_s204.png",
+  "props": {
+   "pre": "La mancha no es el problema:",
+   "highlight": "es el síntoma",
+   "post": "",
+   "note": "El que trata la mancha fracasa. El que encuentra de dónde viene el agua, la resuelve para siempre."
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "ChecklistReveal",
+  "ms_in": 269900,
+  "ms_out": 279000,
+  "bed": "img/laminas/m02_19_regla_tres.png",
+  "props": {
+   "kicker": "ANOTA ESTO",
+   "title": "La regla de las tres frases",
+   "items": [
+    "Difusa y arriba, es el aire",
+    "Aparece con la lluvia, es de afuera",
+    "Abajo, en banda y con polvo blanco, es el suelo"
+   ],
+   "stamp": "80%"
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "BigStatReveal",
+  "ms_in": 342680,
+  "ms_out": 347500,
+  "bed": "img/clembudo/clembudo_s310.png",
+  "props": {
+   "eyebrow": "EL KILO DE BÓRAX",
+   "prefix": "$",
+   "value": 5,
+   "support": "Entre 2 y 5 dólares en cualquier ferretería. Rinde 16 litros.",
+   "source": ""
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "HighlightSweep",
+  "ms_in": 367540,
+  "ms_out": 373000,
+  "bed": "img/clembudo/clembudo_s312.png",
+  "props": {
+   "pre": "La solución de bórax",
+   "highlight": "no se enjuaga",
+   "post": "nunca",
+   "note": "Si la enjuagas, le quitas la protección."
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "PullQuote",
+  "ms_in": 436900,
+  "ms_out": 442000,
+  "props": {
+   "quote": "Si pintas sobre una pared húmeda, la mancha vuelve el cien por ciento de las veces. No es mala suerte, es física.",
+   "author": "",
+   "role": "",
+   "image": "img/clembudo/clembudo_s321.png"
+  },
+  "bed": "img/clembudo/clembudo_s321.png"
+ },
+ {
+  "tipo": "componente",
+  "componente": "BigStatReveal",
+  "ms_in": 448680,
+  "ms_out": 454000,
+  "bed": "img/clembudo/clembudo_s324.png",
+  "props": {
+   "eyebrow": "LA VARIANTE DEL TECHO",
+   "prefix": "$",
+   "value": 1,
+   "suffix": "",
+   "support": "Un ingrediente más, menos de un dólar. La proporción exacta está en la descripción.",
+   "source": ""
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "PullQuote",
+  "ms_in": 546700,
+  "ms_out": 552000,
+  "props": {
+   "quote": "El que sabe decir que no es al que después llaman.",
+   "author": "",
+   "role": "",
+   "image": "img/clembudo/clembudo_s414.png"
+  },
+  "bed": "img/clembudo/clembudo_s414.png"
+ },
+ {
+  "tipo": "componente",
+  "componente": "HighlightSweep",
+  "ms_in": 576040,
+  "ms_out": 582000,
+  "bed": "img/clembudo/clembudo_s421.png",
+  "props": {
+   "pre": "Estuvo",
+   "highlight": "veinte minutos",
+   "post": "parado en la vereda",
+   "note": "Le parecía demasiado pedir tres mil doscientos pesos. Lo dijo sin justificarse, y la señora aceptó."
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "PullQuote",
+  "ms_in": 644960,
+  "ms_out": 650500,
+  "props": {
+   "quote": "No es dinero fácil. Es dinero simple, que es distinto.",
+   "author": "",
+   "role": "",
+   "image": "img/clembudo/clembudo_s430.png"
+  },
+  "bed": "img/clembudo/clembudo_s430.png"
+ },
+ {
+  "tipo": "componente",
+  "componente": "VsDuel",
+  "ms_in": 659780,
+  "ms_out": 665200,
+  "props": {
+   "eyebrow": "LAS CUATRO COSAS QUE FALTAN",
+   "title": "Lo que separa a uno del otro",
+   "left": {
+    "label": "Cobra 80",
+    "sub": "Trata la mancha y espera",
+    "image": "img/clembudo/clembudo_s433.png"
+   },
+   "right": {
+    "label": "Cobra 250",
+    "sub": "Diagnostica, cotiza y sabe decir que no",
+    "image": "img/clembudo/clembudo_s434.png",
+    "good": true
+   }
+  }
+ },
+ {
+  "tipo": "componente",
+  "componente": "CtaCard",
+  "ms_in": 694340,
+  "ms_out": 703000,
+  "props": {
+   "eyebrow": "EL CURSO",
+   "title": "De $3 a $180 por Pared",
+   "bullet": "16 clases · el cuaderno del oficio · 15 días de garantía",
+   "price": 0,
+   "cta": "El enlace está en la descripción",
+   "image": "img/vslcurso_portada.jpg"
+  }
+ }
 ]

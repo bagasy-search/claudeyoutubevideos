@@ -96,9 +96,23 @@ for (const b of vivos) {
       if (typeof v === "string" && /^img\/.+\.(png|jpg|jpeg)$/i.test(v)) note(v);
       else if (v && typeof v === "object" && typeof v.image === "string") note(v.image);
     }
-    if (b.bed) { const blur = b.bed.replace(/\.(png|jpg|jpeg)$/i, "_blur.jpg"); const use = fs.existsSync(`public/${blur}`) ? blur : b.bed; props.bed = use; note(use); }
+    // ⛔⛔ LA CAMA VA COMO CAPA, NO COMO PROP. Se la pasaba como `bed` y NINGUNO de estos
+    // componentes declara esa prop (BigStatReveal, MythTruth, PullQuote, ChecklistReveal y
+    // HighlightSweep no la tienen): React la ignora en silencio, el componente queda flotando
+    // sobre el b-roll que justo recorté para meterlo, y el cuadro sale casi negro.
+    // Medido sobre el render: 6 de 183 instantes con luma <45 (mín 37), todos en estas ventanas.
+    // Y `blackdetect` NO lo ve, porque no llega a ser negro: es oscuro y vacío, que es peor
+    // porque pasa todas las compuertas. La cama va DEBAJO, como foto de verdad.
+    let bedEl = "";
+    if (b.bed) {
+      const blur = b.bed.replace(/\.(png|jpg|jpeg)$/i, "_blur.jpg");
+      const use = fs.existsSync(`public/${blur}`) ? blur : b.bed;
+      note(use); note(b.bed);
+      bedEl = `<ClPhoto durationInFrames={d} src="${b.bed}" seed={${b.ms_in % 100000}} />`;
+    }
     const j = JSON.stringify(props).replace(/</g, "\\u003c");
-    cues.push({ key, start, dur, el: `(d) => <${b.componente} durationInFrames={d} theme={THEME_EARTH} {...(${j} as any)} />` });
+    const comp = `<${b.componente} durationInFrames={d} theme={THEME_EARTH} {...(${j} as any)} />`;
+    cues.push({ key, start, dur, el: bedEl ? `(d) => <>${bedEl}${comp}</>` : `(d) => ${comp}` });
   }
 }
 
