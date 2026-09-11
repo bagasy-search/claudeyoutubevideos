@@ -1,0 +1,3 @@
+// generado por build_vslcurso.mjs
+export const TOTAL_VSLCURSO = 277.632;
+export const AVATAR_WINDOWS = [{"start":0,"mode":"hidden"},{"start":22.6,"mode":"full"},{"start":32.4,"mode":"hidden"},{"start":50.1,"mode":"full"},{"start":59.5,"mode":"hidden"},{"start":62.8,"mode":"full"},{"start":68.3,"mode":"hidden"},{"start":89.3,"mode":"full"},{"start":96,"mode":"hidden"},{"start":148.7,"mode":"full"},{"start":153.3,"mode":"hidden"},{"start":156.2,"mode":"full"},{"start":159.7,"mode":"hidden"},{"start":211.2,"mode":"full"},{"start":217.6,"mode":"hidden"},{"start":227.3,"mode":"full"},{"start":232.2,"mode":"hidden"},{"start":272.1,"mode":"full"}] as const;
