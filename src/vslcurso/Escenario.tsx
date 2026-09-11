@@ -173,9 +173,24 @@ export const Grade: React.FC<{ p: number; blurSrc?: string; fuerza?: number; lad
       : `radial-gradient(130% 105% at 50% 46%, rgba(12,11,9,${(a * 0.82).toFixed(3)}) 0%, rgba(12,11,9,${(a * 1.18).toFixed(3)}) 100%)`;
   return (
     <>
+      {/* ⛔⛔ ESTA CAPA IBA A 0,82 DE ALFA Y TAPABA EL PLATE. Lo cazó uno de los directores de
+          movimiento rindiendo stills de verdad: el cobro quedaba "una mancha blanda" y el círculo
+          de su costura, un disco beige plano. Es exactamente el defecto que el creador ya rechazó
+          como look de stock trucho (`feedback_broll_fondo_desenfocado_look_stock`): el fondo
+          desenfocado a pantalla completa se lee como banco de imágenes.
+          Ahora: 0,32 de alfa y una MÁSCARA RADIAL, así el desenfoque sólo existe en el centro —
+          donde apoya la tarjeta y hace falta para leer— y en los bordes sobrevive el b-roll
+          NÍTIDO, que es lo que hace que el plano siga pareciendo material real. */}
       {blurSrc && (
-        <AbsoluteFill style={{ opacity: 0.82 * p, overflow: "hidden" }}>
-          <Img src={staticFile(blurSrc)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.14)" }} />
+        <AbsoluteFill style={{ opacity: 0.32 * p, overflow: "hidden" }}>
+          <Img
+            src={staticFile(blurSrc)}
+            style={{
+              width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.14)",
+              maskImage: "radial-gradient(115% 100% at 50% 48%, #000 0%, #000 44%, transparent 82%)",
+              WebkitMaskImage: "radial-gradient(115% 100% at 50% 48%, #000 0%, #000 44%, transparent 82%)",
+            }}
+          />
         </AbsoluteFill>
       )}
       <AbsoluteFill style={{ background: g }} />
