@@ -34,13 +34,15 @@ export const BAD = "#C1442F";
 // ── MOTOR DE ENTRADA/SALIDA ───────────────────────────────────────────────────────────────────
 /** Entra con un spring corto y sale con un fade rápido. Un solo gesto para todo el kit:
  *  la sensación de "limpio" sale de que TODAS las piezas se muevan igual. */
-const useBeat = (delay = 0) => {
+const useBeat = (delay = 0, sinSalida = false) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const p = spring({ frame: frame - delay, fps, config: { damping: 200, mass: 0.55 }, durationInFrames: 15 });
-  const out = interpolate(frame, [Math.max(1, durationInFrames - 9), durationInFrames], [1, 0], {
-    extrapolateLeft: "clamp", extrapolateRight: "clamp",
-  });
+  const out = sinSalida
+    ? 1
+    : interpolate(frame, [Math.max(1, durationInFrames - 9), durationInFrames], [1, 0], {
+        extrapolateLeft: "clamp", extrapolateRight: "clamp",
+      });
   return { p, a: p * out, y: (1 - p) * 26 };
 };
 
@@ -590,7 +592,7 @@ export const AntesDespues: React.FC<{ eyebrow: string; titulo: string; antes: st
   const { durationInFrames } = useVideoConfig();
   const out = interpolate(frame, [Math.max(1, durationInFrames - 9), durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const cab = interpolate(frame, [0, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const w = interpolate(frame, [26, 58], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const w = interpolate(frame, [30, 120], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
 
   const Rotulo: React.FC<{ t: string; der?: boolean; color: string }> = ({ t, der, color }) => (
     <div
@@ -712,7 +714,7 @@ export const Rotulo: React.FC<{ texto: string; nota?: string; flecha?: boolean }
 export const Cierre: React.FC<{ eyebrow: string; titulo: string; bullet: string; cta: string; img: string }> = ({
   eyebrow, titulo, bullet, cta, img,
 }) => {
-  const { a, y } = useBeat();
+  const { a, y } = useBeat(0, true); // ⛔ sin fade de salida: es el último cuadro del VSL
   const frame = useCurrentFrame();
   const bob = Math.sin(frame / 7) * 5;
   return (
