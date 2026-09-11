@@ -294,7 +294,7 @@ export const MovDinero: React.FC = () => {
         {ph > 0.004 && phOut < 0.996 ? (
           <>
             <Plate
-              cx={fitCx(lerp(340, 404, ph), lerp(300, 430, ph), lerp(-180, 226, ph), K)} cy={lerp(880, 786, ph)} w={lerp(300, 430, ph) * (1 - phOut * 0.7)}
+              cx={fitCx(lerp(340, 404, ph), lerp(300, 430, ph), lerp(-180, 226, ph), K)} cy={lerp(806, 664, ph)} w={lerp(300, 430, ph) * (1 - phOut * 0.7)}
               z={lerp(-180, 226, ph)} ry={lerp(-26, -14, ph)} dim={(1 - ph) * 0.7 + phOut * 0.5} lift={1.1}
             >
               <Mat img="clembudo_s435" kb={1.05 + ph * 0.04} />
@@ -332,9 +332,11 @@ export const MovDinero: React.FC = () => {
               <Mat img="clembudo_s416" clip="clembudo_s416" from={A4 + 8} dur={150} rate={0.86} kb={1.05} />
             </Plate>
             <Cifra at={A4 + 10} x={BAR_X} y={BAR_Y - 214} texto="$160" tag="LO QUE SE COBRÓ" />
-            {/* las restas van DEBAJO de la barra, no a su derecha: ahi chocaban con la foto */}
-            <Cifra at={IMP20 + 4} x={BAR_X + 30} y={BAR_Y + 150} texto="−20" tag="MATERIALES" size={92} until={IMP12 - 2} />
-            <Cifra at={IMP12 + 4} x={BAR_X + 30} y={BAR_Y + 150} texto="−12" tag="TRANSPORTE" size={92} />
+            {/* MEDIDO SOBRE EL RENDER: a la derecha chocaban con la foto, y abajo se iban contra el
+                borde inferior y encima del texto. Van al lado del $160, a la misma altura: entre la
+                cifra y el borde izquierdo de la foto hay ~130 px de hueco real, ya proyectados. */}
+            <Cifra at={IMP20 + 4} x={BAR_X + 430} y={BAR_Y - 214} texto="−20" tag="MATERIALES" size={92} until={IMP12 - 2} />
+            <Cifra at={IMP12 + 4} x={BAR_X + 430} y={BAR_Y - 214} texto="−12" tag="TRANSPORTE" size={92} />
           </>
         ) : null}
 
