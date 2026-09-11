@@ -70,7 +70,15 @@ if (!totalFrames) { const m = src.match(/TOTAL_FRAMES[_A-Z0-9]*\s*=\s*(\d+)/) ||
 if (!totalFrames) {
   for (const p of [`src/VideoEdit/avatar_${slug}.gen.ts`, cuesPath, build]) {
     if (!existsSync(p)) continue;
-    const m = readFileSync(p, "utf8").match(/TOTAL_[A-Z0-9_]*\s*=\s*([\d.]+)\s*;/);
+    // ⛔⛔ ESTA RAMA ES PARA CONSTANTES EN **SEGUNDOS**, y `TOTAL_[A-Z0-9_]*` también matchea
+    // `TOTAL_FRAMES_<SLUG>`, que está en FRAMES. Cuando el build no deja el literal de frames en
+    // el .mjs (porque lo escribe con una plantilla), la primera rama falla, cae acá, y multiplica
+    // los frames por 30: un video de 12,2 min se mide como 365,6 min. Con esa duración falsa el
+    // gate exige 2741 visuales y 548 clips, y "falla" un video que está bien. Medido en `clembudo`.
+    const txt = readFileSync(p, "utf8");
+    let m = txt.match(/TOTAL_FRAMES[_A-Z0-9]*\s*=\s*(\d+)/);
+    if (m) { totalFrames = +m[1]; break; }                       // ya viene en FRAMES
+    m = txt.match(/TOTAL_(?!FRAMES)[A-Z0-9_]*\s*=\s*([\d.]+)\s*;/);
     if (m && +m[1] > 60) { totalFrames = Math.round(+m[1] * FPS); break; }
   }
 }
