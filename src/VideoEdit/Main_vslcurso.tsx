@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { AvatarLayerSal } from "./scenes/AvatarLayerSal";
-import { CUES, OVERLAYS } from "./cues_vslcurso.gen";
+import { CUES, MOVIMIENTOS, OVERLAYS } from "./cues_vslcurso.gen";
 import { AVATAR_WINDOWS, TOTAL_VSLCURSO } from "./avatar_vslcurso.gen";
 import { INK } from "../vslcurso/Piezas";
 
@@ -32,6 +32,15 @@ export const MainVslcurso: React.FC = () => (
       accent="#E0922C"
     />
     {CUES.map((c) => (
+      <Sequence key={c.key} from={c.start} durationInFrames={c.dur} layout="none">
+        <AbsoluteFill>{c.el()}</AbsoluteFill>
+      </Sequence>
+    ))}
+    {/* los 6 MOVIMIENTOS: cada uno es UNA escena continua de 4-6 actos que ocupa el cuadro
+        entero. Van sobre la base y debajo de las piezas sueltas. Reciben `desde` (su frame
+        absoluto) porque la cámara del Escenario es función del frame GLOBAL del video: así el
+        movimiento hereda la inercia del anterior y ningún acto vuelve a 0. */}
+    {MOVIMIENTOS.map((c) => (
       <Sequence key={c.key} from={c.start} durationInFrames={c.dur} layout="none">
         <AbsoluteFill>{c.el()}</AbsoluteFill>
       </Sequence>
