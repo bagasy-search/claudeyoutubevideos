@@ -13,8 +13,9 @@
 //   82   "…verlo completo y decidir con el curso   → el sello CONVIVE con el producto (ficha de
 //         delante tuyo"                              una clase real flotando sobre la mesa)
 //   137  "La humedad ya está en las casas"        → COSTURA F1: la mancha del techo nace DENTRO
-//                                                    del anillo y se come el cuadro; empieza el
-//                                                    MURO 3D de casas reales, acumulándose
+//                                                    del anillo y se come el cuadro; en el 166 cae
+//                                                    el kicker y en el 168 arranca el MURO 3D de
+//                                                    casas reales, que se ACUMULA hasta el 340
 //   230  "Los clientes ya están preguntando        → WIPE interno: entran las PERSONAS señalando
 //         quién puede resolverla"                    su propia pared; el muro sigue acumulando
 //   380  "ALGUIEN VA A COBRAR por esos trabajos"  → COSTURA F2: oclusión de revoque y el remate:
@@ -104,6 +105,7 @@
 // `OffthreadVideo`, así que NINGÚN clip se estira más que su duración real:
 //    001 → 211 f reales, uso 96 · 046 → 185 f, uso 160 · 002 → 210 f, uso 200 ·
 //    045 → 160 f, uso 150 · 037 → 127 f, uso 120 · 043 → 210 f, uso 99.
+// ⛔ Y un `clipPath` NO recorta descendientes con `preserve-3d`: ver la nota del muro.
 // `Easing.quint` NO EXISTE (va `Easing.poly(5)`) · imports sólo de remotion/react/./Escenario ·
 // ⛔ sin precio del curso, sin "$", sin QR y sin URL en pantalla.
 import React from "react";
@@ -334,13 +336,13 @@ type Carta = { src: string; x: number; y: number; z: number; w: number; h: numbe
  *  frame 0 (si no, `OffthreadVideo` busca en `f/30` y CONGELA el último cuadro). */
 const CARTAS: Carta[] = [
   // grupo A · las CASAS (137→230)
-  { src: F_TECHO, x: -448, y: -167, z: -120, w: 430, h: 290, rot: 6, at: 146 },
-  { src: F_GRIS, x: -28, y: 136, z: 60, w: 520, h: 345, rot: -4, at: 164 },
-  { src: F_BANO_INOD, x: 420, y: -207, z: -60, w: 450, h: 300, rot: -7, at: 182 },
-  { src: F_BANO_PARED, x: 830, y: 167, z: -260, w: 400 * 1, h: 270, rot: 5, at: 200 },
-  { src: F_PLACARD, x: -830, y: 189, z: -300, w: 390, h: 260, rot: 8, at: 216 },
-  { src: CLIP_MOHO, x: -1064, y: -207, z: -460, w: 380, h: 250, rot: 10, at: 0, seq: 150, dur: 200 },
-  { src: CLIP_SALITRE, x: 1099, y: -220, z: -380, w: 370, h: 245, rot: -9, at: 0, seq: 196, dur: 150 },
+  { src: F_TECHO, x: -448, y: -167, z: -120, w: 430, h: 290, rot: 6, at: 170 },
+  { src: F_GRIS, x: -28, y: 136, z: 60, w: 520, h: 345, rot: -4, at: 182 },
+  { src: F_BANO_INOD, x: 420, y: -207, z: -60, w: 450, h: 300, rot: -7, at: 194 },
+  { src: F_BANO_PARED, x: 830, y: 167, z: -260, w: 400, h: 270, rot: 5, at: 206 },
+  { src: F_PLACARD, x: -830, y: 189, z: -300, w: 390, h: 260, rot: 8, at: 218 },
+  { src: CLIP_MOHO, x: -1064, y: -207, z: -460, w: 380, h: 250, rot: 10, at: 0, seq: 174, dur: 200 },
+  { src: CLIP_SALITRE, x: 1099, y: -220, z: -380, w: 370, h: 245, rot: -9, at: 0, seq: 200, dur: 150 },
   // grupo B · las PERSONAS señalando su propia pared (230→380)
   { src: F_SENOR, x: 210, y: -233, z: 190, w: 470, h: 315, rot: -3, at: 238 },
   { src: F_MUJER, x: 634, y: 207, z: 120, w: 460, h: 310, rot: 6, at: 256 },
@@ -352,8 +354,8 @@ const CARTAS: Carta[] = [
 const Muro: React.FC<{ desde: number }> = ({ desde }) => {
   const f = useCurrentFrame();
   // TRUCK: la cámara recorre el muro. Easing NO constante (inOut cubic) y push que acelera.
-  const truck = interpolate(ramp(f, A2, 356, Easing.inOut(Easing.cubic)), [0, 1], [380, -400]);
-  const push = interpolate(ramp(f, A2, 340, Easing.out(Easing.quad)), [0, 1], [0.88, 1.06]);
+  const truck = interpolate(ramp(f, 168, 356, Easing.inOut(Easing.cubic)), [0, 1], [380, -400]);
+  const push = interpolate(ramp(f, 168, 340, Easing.out(Easing.quad)), [0, 1], [0.88, 1.06]);
   // salida: el muro se va al FONDO (no se desvanece: retrocede), y encima cae la oclusión
   const fuga = ramp(f, 356, 378, Easing.in(Easing.cubic));
   return (
@@ -396,7 +398,9 @@ export const Mov6Cierre: React.FC<{ desde: number }> = ({ desde }) => {
   // push local del acto 1 que el acto 2 HEREDA y suelta (la cámara global nunca se reinicia)
   const pushA1 = ramp(f, 118, A2, Easing.in(Easing.cubic)) * 0.055;
   const suelta = 1 - ramp(f, A2, 165, Easing.out(Easing.cubic));
-  const zA1 = salidaZoom * (1 + pushA1 * 1);
+  // y mientras el círculo de F1 crece, el acto 1 es EMPUJADO hacia cámara: el mundo viejo se sale
+  // de cuadro en vez de quedarse quieto esperando que lo tapen.
+  const zA1 = salidaZoom * (1 + pushA1) * (1 + ramp(f, A2, 167, Easing.in(Easing.cubic)) * 0.14);
 
   // F1 · MATCH-SHAPE: el círculo nace DENTRO del anillo del sello y se come el cuadro
   const R = interpolate(f, [A2, 149, 167], [0, ANILLO_R, 2450], {
@@ -453,6 +457,11 @@ export const Mov6Cierre: React.FC<{ desde: number }> = ({ desde }) => {
             )}
 
             {/* L7 · la ÚNICA idea de texto del acto, a la derecha sobre el lado ya hundido */}
+            {/* cama de sombra del bloque de texto: sin ella el apoyo se pierde sobre el mantel */}
+            <AbsoluteFill style={{
+              background: "radial-gradient(44% 34% at 72% 48%, rgba(12,11,9,0.60) 0%, rgba(12,11,9,0) 74%)",
+              pointerEvents: "none",
+            }} />
             <Plano z={50} x={420} y={-18} desde={desde}>
               <div style={{ width: 820 }}>
                 <Titular at={14} size={58} z={50}>Días de garantía</Titular>
@@ -512,25 +521,38 @@ export const Mov6Cierre: React.FC<{ desde: number }> = ({ desde }) => {
             </AbsoluteFill>
           </Sequence>
 
-          {/* L5+L6 · EL MURO 3D que se ACUMULA (12 tarjetas, 7 planos de profundidad) */}
-          <Muro desde={desde} />
+          {/* L5+L6 · EL MURO 3D que se ACUMULA (12 tarjetas, 7 planos de profundidad).
+              ⛔ Arranca en el 168, cuando el círculo de F1 ya sangró: un `clipPath` NO recorta
+              descendientes con `preserve-3d` (medido en render — las tarjetas se veían FUERA del
+              círculo, como slabs pegados en las esquinas). Dentro del círculo sólo va el plate. */}
+          {f >= 168 && <Muro desde={desde} />}
 
-          {/* L7 · la ÚNICA idea de texto del acto, abajo a la izquierda y dentro de la safe area */}
-          {f < 376 && (
-            <div style={{
-              position: "absolute", left: SAFE, bottom: 132,
-              transform: `scale(1.4) translate(${(cam.panX * 3).toFixed(1)}px, ${(cam.panY * 2).toFixed(1)}px)`,
-              transformOrigin: "0% 100%",
-            }}>
-              <Kicker at={143}>LA HUMEDAD YA ESTÁ EN LAS CASAS</Kicker>
-              <div style={{
-                marginTop: 12, height: 4, borderRadius: 2, background: ACC,
-                width: `${(ramp(f, 150, 200, Easing.out(Easing.cubic)) * 430).toFixed(0)}px`,
-                boxShadow: "0 4px 18px rgba(224,146,44,0.5)",
-              }} />
-            </div>
-          )}
         </AbsoluteFill>
+      )}
+
+      {/* ════ L7 · la ÚNICA idea de texto del acto 2 ════
+           ⛔ Va FUERA del `clipPath` del acto: adentro, el círculo de la costura F1 la cortaba por
+           la mitad y se leía como un bug. Entra en el 166, cuando el círculo ya sangró. */}
+      {f >= 164 && f < 376 && (
+        <>
+          {/* cama de sombra: el ámbar sobre revoque claro no se lee sin ella */}
+          <AbsoluteFill style={{
+            background: "radial-gradient(38% 26% at 22% 86%, rgba(12,11,9,0.66) 0%, rgba(12,11,9,0) 72%)",
+            pointerEvents: "none",
+          }} />
+          <div style={{
+            position: "absolute", left: SAFE, bottom: 132,
+            transform: `scale(1.4) translate(${(cam.panX * 3).toFixed(1)}px, ${(cam.panY * 2).toFixed(1)}px)`,
+            transformOrigin: "0% 100%",
+          }}>
+            <Kicker at={166}>LA HUMEDAD YA ESTÁ EN LAS CASAS</Kicker>
+            <div style={{
+              marginTop: 12, height: 4, borderRadius: 2, background: ACC,
+              width: `${(ramp(f, 172, 220, Easing.out(Easing.cubic)) * 430).toFixed(0)}px`,
+              boxShadow: "0 4px 18px rgba(224,146,44,0.5)",
+            }} />
+          </div>
+        </>
       )}
 
       {/* ════ EL ANILLO que cabalga el borde del círculo: la MATERIA de la costura F1 ════ */}
@@ -556,10 +578,10 @@ export const Mov6Cierre: React.FC<{ desde: number }> = ({ desde }) => {
 
           <AbsoluteFill style={{ perspective: 2300, perspectiveOrigin: "56% 46%", transform: cam.css }}>
             {/* L5 · dos ecos del muro MUY al fondo: los clientes que quedaron preguntando */}
-            {[{ s: F_SENOR, x: -490, y: -264, z: -440, at: 386, rot: 9 },
-              { s: F_MUJER, x: -700, y: 220, z: -420, at: 400, rot: 11 }].map((e, i) => (
+            {[{ s: F_SENOR, x: -780, y: -372, z: -440, at: 386, rot: 9 },
+              { s: F_MUJER, x: -860, y: 356, z: -420, at: 400, rot: 11 }].map((e, i) => (
               <Plano key={i} z={e.z} x={e.x} y={e.y} desde={desde} rot={e.rot}>
-                <div style={{ opacity: (1 - despeje) * 0.62 }}>
+                <div style={{ opacity: (1 - despeje) * 0.5 }}>
                   <Tarjeta src={e.s} w={330} h={220} texto={false} seed={i * 5 + 41} z={e.z} at={e.at} />
                 </div>
               </Plano>
@@ -596,7 +618,7 @@ export const Mov6Cierre: React.FC<{ desde: number }> = ({ desde }) => {
             {/* L6 · LA TARJETA PUENTE ya con su contenido nuevo: el balde de billetes.
                 Mismo marco, misma posición, mismo tamaño que traía del acto 2.
                 (clip 043: 210 frames reales, uso 99) */}
-            <Sequence from={A3} durationInFrames={99} layout="none">
+            <Sequence from={384} durationInFrames={99} layout="none">
               <div style={{
                 position: "absolute", left: "50%", top: "50%",
                 transform: `translate(-50%,-50%) translate3d(${(px + cam.panX * 9 + despeje * 260).toFixed(1)}px, ${(py + cam.panY * 7 - despeje * 90).toFixed(1)}px, ${(pz + despeje * 900).toFixed(0)}px) rotateY(${(cam.ry * 0.8 - 4).toFixed(2)}deg)`,
@@ -612,7 +634,7 @@ export const Mov6Cierre: React.FC<{ desde: number }> = ({ desde }) => {
 
       {/* ════ LA TARJETA PUENTE en el acto 2 (la materia que CRUZA F2) ════
            Se despega del muro en el 350 y viaja a su sitio; bajo la oclusión cambia de contenido. */}
-      {f >= 314 && f < A3 && (
+      {f >= 314 && f < 384 && (
         <AbsoluteFill style={{ perspective: 2300, perspectiveOrigin: "50% 46%", pointerEvents: "none" }}>
           <div style={{
             position: "absolute", left: "50%", top: "50%",
