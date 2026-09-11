@@ -173,10 +173,17 @@ const Abanico: React.FC<{ foco: number; plano: number; fanX: number; push: numbe
  *  la voz dice "200, 250 o 300" y aterrice en 300 sobre la palabra. */
 const Precio: React.FC<{
   hasta: number; base?: number; at: number; size: number; color: string; vis: number; seed?: number;
-}> = ({ hasta, base = 0, at, size, color, vis, seed = 0 }) => {
+  /** ⛔⛔ `fijo` = sin odómetro, el número ya vale lo que vale.
+   *  En el acto 4 (la ESCALERA) las tres cifras se volvían a montar y el odómetro arrancaba de
+   *  CERO otra vez: aterrizaba en el frame 368/372/376 de un acto que termina en el 378, así que
+   *  en pantalla se leía `$73 $116 $252` durante 0,9 s y el valor correcto sólo 0,3 s. Números
+   *  FALSOS contradiciendo a la voz, que es falla material, no cosmética.
+   *  En la escalera los tres precios YA se dijeron y ya contaron en los actos 1-3: van fijos. */
+  fijo?: boolean;
+}> = ({ hasta, base = 0, at, size, color, vis, seed = 0, fijo = false }) => {
   const frame = useCurrentFrame();
   const e = useEntra(at, { rise: 26, salida: false });
-  const k = interpolate(frame, [at + 3, at + 26], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
+  const k = fijo ? 1 : interpolate(frame, [at + 3, at + 26], [0, 1], { ...CL, easing: Easing.out(Easing.cubic) });
   const v = Math.round(base + (hasta - base) * k);
   const fl = Math.sin(frame / 49 + seed) * 3;
   const wob = Math.cos(frame / 190 + seed * 2.3) * 1.4;
@@ -484,7 +491,7 @@ export const Mov2Numeros: React.FC<{ desde: number }> = ({ desde }) => {
                   display: "flex", justifyContent: "center",
                 }}
               >
-                <Precio hasta={c.precio} base={c.base} at={342 + i * 4} size={e.px} color={c.color} vis={visEsc} seed={i + 5} />
+                <Precio hasta={c.precio} base={c.base} at={342 + i * 4} size={e.px} color={c.color} vis={visEsc} seed={i + 5} fijo />
               </div>
               <div
                 style={{
