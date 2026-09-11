@@ -188,7 +188,9 @@ export const MovCaso35: React.FC = () => {
         {f >= A3 && f < A4 + 26 ? <Backplate img="clembudo_s411" clip="clembudo_s411" from={A3 + 4} dur={150} rate={0.86} z={-600} scale={1.4} veil={0.5} /> : null}
         {f >= A4 && f < A5 + 26 ? <Backplate img="clembudo_s414" clip="clembudo_s414" from={A4 + 4} dur={150} rate={0.86} z={-600} scale={1.4} veil={0.52} /> : null}
         {f >= A5 && f < A6 + 26 ? <Backplate img="clembudo_s416" clip="clembudo_s416" from={A5 + 4} dur={150} rate={0.86} z={-600} scale={1.4} veil={0.48} /> : null}
-        {f >= A6 ? <Backplate img="clembudo_s415" clip="clembudo_s415" from={A6 + 4} dur={150} rate={0.86} z={-600} scale={1.38} veil={0.5} /> : null}
+        {/* ⚠️ s415 NO TIENE CLIP i2v (está en las fotos del movimiento, no en los clips): pedirle el
+            .mp4 daba 404 y mataba el chunk. Va la foto, y el movimiento lo pone la cámara. */}
+        {f >= A6 ? <Backplate img="clembudo_s415" z={-600} scale={1.38} veil={0.5} /> : null}
 
         {/* el piso: gira sobre su borde INFERIOR y hacia atrás (⛔ jamás se adelanta a las Plates) */}
         <Ground y={1250} h={1300} z0={-250} tilt={63} veil={0.64} />
@@ -268,7 +270,7 @@ export const MovCaso35: React.FC = () => {
             cx={lerp(880, 960, vereda)} cy={lerp(580, 486, vereda)} w={lerp(620, 1120, vereda)}
             z={lerp(-180, 190, vereda)} ry={lerp(14, 2, vereda)} dim={(1 - vereda) * 0.55} lift={1.4}
           >
-            <Mat img="clembudo_s415" clip="clembudo_s415" from={A6 + 20} dur={150} rate={0.86} kb={1.05} />
+            <Mat img="clembudo_s415" kb={1.04 + vereda * 0.07} />
           </Plate>
         ) : null}
 

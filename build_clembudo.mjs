@@ -159,6 +159,41 @@ for (const f of fs.readdirSync(`src/${SLUG}`).filter((x) => x.endsWith(".tsx")))
 }
 console.log(`material HARDCODEADO en los movimientos: ${hard} referencias sumadas al tarball`);
 
+// ── ⛔⛔ COMPUERTA: UN `clip=` QUE NO EXISTE EN DISCO SE SALTEABA EN SILENCIO ──────────────────
+// El escaneo de arriba suma `broll/<slug>/<n>.mp4` SÓLO SI existe. Si un movimiento pide un clip
+// que no está en disco, `note()` no se llama nunca: el asset no entra al tarball, no aparece en la
+// lista de faltantes, y el build termina diciendo "✅ los assets referenciados existen todos".
+// Recién el farm se entera, con un 404 que mata el chunk entero 8 minutos después de arrancar.
+// Medido: `clembudo_s415` está en las FOTOS del movimiento pero NO tiene clip i2v; MovCaso35 le
+// pedía el .mp4 y murió el chunk 43 (frames 15.738-16.103).
+// Acá se buscan los usos REALES (`clip="..."`), no las menciones en comentarios, y se exige el
+// archivo. Un comentario que nombra un asset no es una referencia; un `clip=` sí.
+{
+  const rotos = [];
+  let usos = 0;
+  for (const f of fs.readdirSync(`src/${SLUG}`).filter((x) => x.endsWith(".tsx"))) {
+    const src = fs.readFileSync(`src/${SLUG}/${f}`, "utf8");
+    for (const m of src.matchAll(/clip=\{?\s*"([a-z0-9_]+)"/g)) {
+      usos++;
+      const rel = `broll/${SLUG}/${m[1]}.mp4`;
+      if (!fs.existsSync(`public/${rel}`)) rotos.push(`${f} → ${rel}`);
+    }
+    for (const m of src.matchAll(/img=\{?\s*"([a-z0-9_]+)"/g)) {
+      usos++;
+      const rel = `img/${SLUG}/${m[1]}.png`;
+      if (!fs.existsSync(`public/${rel}`)) rotos.push(`${f} → ${rel}`);
+    }
+  }
+  if (rotos.length) {
+    console.error(`
+⛔ ${rotos.length} de ${usos} referencias de los movimientos NO existen en disco:`);
+    for (const r of rotos) console.error(`   ${r}`);
+    console.error("El farm las pediría igual y moriría el chunk con un 404. Arreglalas antes de rendear.");
+    process.exit(1);
+  }
+  console.log(`compuerta de material: ${usos} usos reales (clip=/img=) de los movimientos, todos en disco`);
+}
+
 // ⚠️ la DURACIÓN total se redondea HACIA ARRIBA (no con fr(), que redondea al más cercano): el
 // último frame tiene que existir aunque el audio termine a mitad de frame. Con fr() el video
 // perdía 1 frame (21.934 en vez de 21.935) y la compuerta de duración lo habría acusado.
