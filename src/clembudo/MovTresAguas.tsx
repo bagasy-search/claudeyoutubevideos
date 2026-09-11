@@ -169,13 +169,12 @@ const CHIPS = [
 
 // las tres flechas, en coordenadas normalizadas de la lámina en héroe (⛔ de PANTALLA, no de mundo)
 const LAM_HERO = { cx: 700, cy: 468, w: 1120 };
-const flecha = (fx: number, fy: number) => ({
-  x: LAM_HERO.cx - LAM_HERO.w / 2 + LAM_HERO.w * fx,
-  y: LAM_HERO.cy - LAM_HERO.w / AR / 2 + (LAM_HERO.w / AR) * fy,
+// Los aros siguen a la lamina: cuando la de tres origenes se corre y se achica para no tapar a la
+// otra, las flechas se mueven con ella. Si se dejaran fijas, el aro verde quedaria en el aire.
+const flecha = (fx: number, fy: number, cx: number, w: number) => ({
+  x: cx - w / 2 + w * fx,
+  y: LAM_HERO.cy - w / AR / 2 + (w / AR) * fy,
 });
-const F_AIRE = flecha(0.262, 0.515);
-const F_AFUERA = flecha(0.715, 0.548);
-const F_SUELO = flecha(0.585, 0.835);
 
 // ── el aro que marca una flecha. Es un ARO, no una mancha: no tapa la etiqueta de la lámina ────
 const Aro: React.FC<{ f: number; x: number; y: number; r: number; color: string; k: number }> =
@@ -249,6 +248,19 @@ export const MovTresAguas: React.FC = () => {
   const heroB = ramp(f, A4 + 8, A4 + 26, Easing.out(Easing.poly(3))) * (1 - ramp(f, 1200, 1220, Easing.in(Easing.cubic)));
   const lamHero = Math.max(heroA, heroB);
   const lamRegla = ramp(f, 56, 74, Easing.out(Easing.poly(3))) * (1 - ramp(f, 156, 176, Easing.in(Easing.cubic)));
+  // MEDIDO SOBRE EL RENDER: entre f100 y f176 las DOS laminas estan en pantalla, y la de tres
+  // origenes (dibujada despues, o sea encima) le tapaba los primeros 250 px a la de la regla:
+  // se leia "LA DE LAS TRES FRASES" en vez de "LA REGLA DE LAS TRES FRASES". La regla del canal
+  // es que las laminas van ENTERAS y sin tapar, asi que mientras conviven la de tres origenes se
+  // corre a la izquierda y se achica, y recien cuando la otra se va crece a heroe.
+  //   juntas: [120, 880] y [1020, 1780]  -> 140 px de aire entre las dos
+  //   sola:   [140, 1260]
+  // ⛔ NO puede depender de `lamRegla`: durante su fundido de salida (f156-176) la otra lamina ya
+  // estaria creciendo mientras esta todavia se ve, y se vuelven a pisar 232 px. El crecimiento
+  // arranca DESPUES de que la otra se fue del todo (f176).
+  const juntas = 1 - ramp(f, 178, 206, Easing.inOut(Easing.cubic));
+  const heroW = lerp(1120, 760, juntas);
+  const heroCx = lerp(700, 500, juntas);
 
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
@@ -357,7 +369,7 @@ export const MovTresAguas: React.FC = () => {
 
           {/* FRONTERA 1 · ZOOM-THROUGH: el portal nace en la flecha verde de la lámina */}
           {f >= A2 - 22 && f < A2 + 46 ? (
-            <Portal f={f} a={A2 - 22} b={A2 + 40} x={F_AIRE.x} y={F_AIRE.y}>
+            <Portal f={f} a={A2 - 22} b={A2 + 40} x={flecha(0.262, 0.515, heroCx, heroW).x} y={flecha(0.262, 0.515, heroCx, heroW).y}>
               <Mat img="clembudo_s207" clip="clembudo_s207" from={A2 - 18} dur={150} rate={0.86} kb={1.06} />
             </Portal>
           ) : null}
@@ -378,7 +390,7 @@ export const MovTresAguas: React.FC = () => {
                 transform: `translateY(${((1 - lamRegla) * 56).toFixed(1)}px) scale(${(0.965 + lamRegla * 0.035).toFixed(4)})`,
               }}
             >
-              <Lamina src={LAM_REGLA} cx={1420} cy={470} w={820} tilt={0.8} />
+              <Lamina src={LAM_REGLA} cx={1400} cy={468} w={760} tilt={0.8} />
             </div>
           ) : null}
           {lamHero > 0.004 ? (
@@ -388,12 +400,12 @@ export const MovTresAguas: React.FC = () => {
                 transform: `translateY(${((1 - lamHero) * 62).toFixed(1)}px) scale(${(0.962 + lamHero * 0.038).toFixed(4)})`,
               }}
             >
-              <Lamina src={LAM_TRES} cx={LAM_HERO.cx} cy={LAM_HERO.cy} w={LAM_HERO.w} tilt={-0.5} />
-              <Aro f={f} x={F_AIRE.x} y={F_AIRE.y} r={LAM_HERO.w * 0.085} color="rgba(34,140,66,0.95)"
+              <Lamina src={LAM_TRES} cx={heroCx} cy={LAM_HERO.cy} w={heroW} tilt={-0.5} />
+              <Aro f={f} x={flecha(0.262, 0.515, heroCx, heroW).x} y={flecha(0.262, 0.515, heroCx, heroW).y} r={heroW * 0.085} color="rgba(34,140,66,0.95)"
                    k={ip(f, [130, 152, 206, 226], [0, 1, 1, 0.3])} />
-              <Aro f={f} x={F_AFUERA.x} y={F_AFUERA.y} r={LAM_HERO.w * 0.075} color="rgba(196,54,38,0.95)"
+              <Aro f={f} x={flecha(0.715, 0.548, heroCx, heroW).x} y={flecha(0.715, 0.548, heroCx, heroW).y} r={heroW * 0.075} color="rgba(196,54,38,0.95)"
                    k={ip(f, [A4 + 30, A4 + 62, 1160, 1204], [0, 1, 1, 0.3])} />
-              <Aro f={f} x={F_SUELO.x} y={F_SUELO.y} r={LAM_HERO.w * 0.075} color="rgba(34,140,66,0.95)"
+              <Aro f={f} x={flecha(0.585, 0.835, heroCx, heroW).x} y={flecha(0.585, 0.835, heroCx, heroW).y} r={heroW * 0.075} color="rgba(34,140,66,0.95)"
                    k={ip(f, [1180, 1206, 1216, 1228], [0, 0.9, 0.9, 0])} />
             </div>
           ) : null}
