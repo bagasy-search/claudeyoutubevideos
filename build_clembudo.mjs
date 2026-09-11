@@ -10,7 +10,18 @@ import fs from "node:fs";
 
 const SLUG = "clembudo", COMP = "ClEmbudo";
 const { beats, totalMs } = JSON.parse(fs.readFileSync(`_v3/${SLUG}_plan.json`, "utf8").replace(/^﻿/, ""));
-const sec = (ms) => +(ms / 1000).toFixed(3);
+// ⛔⛔ LOS TIEMPOS SE DERIVAN DEL FRAME FINAL, NUNCA DEL LARGO.
+// Redondear `start` y `dur` POR SEPARADO deja huecos de 1 frame entre planos: el cue que va de
+// 8,18 s a 11,62 s daba start=round(8.18*30)=245 y dur=round(3.44*30)=103 → tapaba hasta el frame
+// 348 exclusive, pero la ventana del avatar volvía a `full` recién en round(11.62*30)=349. El
+// frame 348 quedaba con el avatar oculto y NADA debajo: 33 ms de negro que `blackdetect` no ve
+// (pide 0,5 s) y que un muestreo cada 200 ms se saltea. Medido por la compuerta anti-hueco.
+// Con `fr()` los bordes son los MISMOS enteros para el cue y para la ventana, así que el hueco no
+// puede existir — y de paso desaparecen los solapes de 1 frame.
+const FPS = 30;
+const fr = (ms) => Math.round((ms * FPS) / 1000);
+const sec = (ms) => +(fr(ms) / FPS).toFixed(5);
+const dursec = (msIn, msOut) => +(Math.max(1, fr(msOut) - fr(msIn)) / FPS).toFixed(5);
 
 // ── CTA: las DOS ventanas del QR ─────────────────────────────────────────────────────────────
 // ⛔⛔ REGLA DURA DEL CANAL: el QR va SIEMPRE como tarjeta flotando al costado con el presentador
@@ -74,7 +85,7 @@ const note = (rel) => {
 
 let lastMode = null;
 for (const b of vivos) {
-  const start = sec(b.ms_in), dur = sec(b.ms_out - b.ms_in), key = `${b.tipo}_${b.ms_in}`;
+  const start = sec(b.ms_in), dur = dursec(b.ms_in, b.ms_out), key = `${b.tipo}_${b.ms_in}`;
   // el avatar es el FONDO GARANTIZADO: full cuando nada lo tapa, hidden cuando algo lo cubre
   const mode = b.tipo === "avatar" ? "full" : "hidden";
   if (mode !== lastMode) { windows.push({ start, mode }); lastMode = mode; }
@@ -120,7 +131,7 @@ for (const b of vivos) {
 for (const c of CTAS) {
   note(QR); note(PORTADA);
   overlays.push({
-    key: `qr_${c.ms}`, start: sec(c.ms), dur: sec(c.dur),
+    key: `qr_${c.ms}`, start: sec(c.ms), dur: dursec(c.ms, c.ms + c.dur),
     el: `(d) => <FloatingInsert durationInFrames={d} src="${QR}" side="right" kicker=${JSON.stringify(c.kicker)} hue="amber" />`,
   });
 }
@@ -148,7 +159,10 @@ for (const f of fs.readdirSync(`src/${SLUG}`).filter((x) => x.endsWith(".tsx")))
 }
 console.log(`material HARDCODEADO en los movimientos: ${hard} referencias sumadas al tarball`);
 
-const TOTAL = sec(totalMs), TOTAL_FRAMES = Math.ceil(TOTAL * 30);
+// ⚠️ la DURACIÓN total se redondea HACIA ARRIBA (no con fr(), que redondea al más cercano): el
+// último frame tiene que existir aunque el audio termine a mitad de frame. Con fr() el video
+// perdía 1 frame (21.934 en vez de 21.935) y la compuerta de duración lo habría acusado.
+const TOTAL = sec(totalMs), TOTAL_FRAMES = Math.ceil((totalMs * FPS) / 1000);
 const movs = [...new Set(vivos.filter((b) => b.tipo === "movimiento").map((b) => b.componente))];
 const kit = [...new Set(vivos.filter((b) => b.tipo === "componente").map((b) => b.componente))];
 

@@ -5,6 +5,22 @@
 // vuelve la primera carta, las otras tres salen de atrás de ella, el abanico gira una carta por
 // carencia, y al final las cuatro colapsan en la pila de hojas impresas que ES el curso.
 //
+// ═══ QUÉ CAMBIÓ EN LA REHECHURA (sep-2026) — los tres defectos que tenía este movimiento ═══════
+//  D1 · TARJETAS APLASTADAS A UNA TIRA (664 s, 674 s, 685 s).
+//       CAUSA MEDIDA: el "banco de trabajo" era un plano de 1760 px con `rotateX(56deg)` y
+//       `transformOrigin: 50% 0%`. Girando sobre su borde SUPERIOR, su borde cercano terminaba en
+//       z = −190 + 1760·sin(56°) = **+1269**, o sea MUY por delante de las cartas (z ≈ +170): el
+//       piso les tapaba la mitad de abajo y la carta se leía como una franja con las cabezas
+//       cortadas. Ahora el piso es `<Ground/>`, que gira sobre su borde INFERIOR y hacia atrás.
+//       Y las cartas son `<Plate/>`: la altura SALE del ancho por 16:9, nunca se pasa suelta.
+//  D4 · FANTASMA DE DOBLE EXPOSICIÓN. Dos causas: (a) la profundidad se resolvía con `opacity`;
+//       ahora va con `dim` (un velo NEGRO adentro de la tarjeta, que sigue siendo opaca).
+//       (b) el componente `VsDuel` del kit se montaba ENCIMA de este movimiento (659,8→665,2 cae
+//       entero adentro de 653→694,3) y se veía el abanico A TRAVÉS de él. Ese duelo ahora es
+//       NATIVO del acto 2 — y el `VsDuel` salió de `_v3/clembudo_comps.json`.
+//  D7 · TÍTULOS SIN CONTRASTE ("Lo que separa a uno del otro", tinta oscura sobre cama oscura).
+//       Todo titular en tinta va sobre `<Paper/>`; el que va claro lleva `<LowerBed/>` detrás.
+//
 // ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
 // │ TABLA DE HANDOFF — cada acto arranca EXACTAMENTE en el exitTo del anterior                      │
 // ├────────────────────────────────────────────────────────────────────────────────────────────────┤
@@ -12,49 +28,50 @@
 // │   enterFrom cam {z 1.00, panX +86, panY +12, ry −6.0, rx +1.0} · luz 0.350                      │
 // │             materia: (del MovCaso35) el galpón ya calentándose, cuadro limpio                   │
 // │   exitTo    cam {z 1.04, panX +46, panY   0, ry −3.2, rx +0.8} · luz 0.371                      │
-// │             materia: LA HOJA DEL CUADERNO (s440) flotando en el tercio izquierdo                │
+// │             materia: EL CUADERNO DEL OFICIO (s440) flotando en el tercio izquierdo              │
 // │                                                                                                 │
 // │ ── FRONTERA 1 @ f117 · MATCH-SHAPE ───────────────────────────────────────────────────────────  │
 // │   La hoja NO se va: gira sobre su eje vertical (0°→180°) y en el instante en que está de canto  │
 // │   —ancho cero, swap invisible— su otra cara ya es la CARTA 1 (el diagnóstico). Mientras gira,    │
-// │   el banco de trabajo sube desde abajo del cuadro (objeto físico, ⛔ no un fade) y las otras     │
+// │   el piso del galpón sube desde abajo del cuadro (objeto físico, ⛔ no un fade) y las otras      │
 // │   tres cartas salen de atrás de ella. Mismo rectángulo, misma posición, misma inercia.          │
 // ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-// │ ACTO 2 · f 117–369 · "Te faltan cuatro cosas / separan al que cobra 80 del que cobra 250"       │
+// │ ACTO 2 · f 117–368 · "te faltan cuatro cosas / separan al que cobra 80 del que cobra 250"       │
 // │   enterFrom cam {z 1.04, panX +46, panY   0, ry −3.2, rx +0.8} · luz 0.371                      │
 // │             materia: la hoja, ya girando, convertida en la carta 1                              │
 // │   exitTo    cam {z 1.10, panX   0, panY −10, ry +3.0, rx −1.0} · luz 0.418                      │
-// │             materia: EL ABANICO DE CUATRO CARTAS, armado y con la 1 al frente                   │
+// │             materia: EL DUELO 80 vs 250 (s433 / s434) colapsando de vuelta al abanico           │
+// │   (f203–f352: EL DUELO, nativo. Dos Plates 16:9 gemelas + el titular EN TINTA sobre papel.)     │
 // │                                                                                                 │
-// │ ── FRONTERA 2 @ f370 · ZOOM-THROUGH ──────────────────────────────────────────────────────────  │
+// │ ── FRONTERA 2 @ f369 · ZOOM-THROUGH ──────────────────────────────────────────────────────────  │
 // │   La cámara no corta: ENTRA en la carta 1. z 1.04→1.10 y la carta se agranda ×1.42 hasta        │
-// │   dominar el plano; las otras tres quedan atrás, chicas y al borde. Se pasa de plano general    │
-// │   del abanico a plano de producto de una sola carta sin un solo frame de nada.                  │
+// │   dominar el plano; las otras tres quedan atrás, chicas y hundidas por `dim`. Se pasa de plano  │
+// │   general del abanico a plano de producto de una sola carta sin un solo frame de nada.          │
 // ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-// │ ACTO 3 · f 370–663 · CARENCIA 1: diagnosticar en 10 min + SU CONSECUENCIA (la garantía)         │
+// │ ACTO 3 · f 369–662 · CARENCIA 1: diagnosticar en 10 min + SU CONSECUENCIA (la garantía)         │
 // │   enterFrom cam {z 1.10, panX   0, panY −10, ry +3.0, rx −1.0} · luz 0.418                      │
 // │             materia: la carta 1 al frente con el clip del medidor delante del cliente (s434)    │
 // │   exitTo    cam {z 1.18, panX −110, panY −20, ry +7.5, rx −1.6} · luz 0.472                     │
 // │             materia: la MISMA carta, ya girada a su segunda cara: la mancha que vuelve (s435)   │
-// │   (dentro del acto, f526: la carta vuelve a girar 180° — el gesto es la consecuencia)           │
+// │   (dentro del acto, f526: la carta vuelve a girar 180° — el gesto ES la consecuencia)           │
 // │                                                                                                 │
-// │ ── FRONTERA 3 @ f664 · OCLUSIÓN ──────────────────────────────────────────────────────────────  │
+// │ ── FRONTERA 3 @ f663 · OCLUSIÓN ──────────────────────────────────────────────────────────────  │
 // │   El cuero del delantal de Claudio cruza el cuadro en diagonal (#B5854F — ⛔ NO el color del     │
 // │   fondo: es la materia real que ya está en la escena) y detrás el abanico ya rotó una carta.    │
 // │   Cambio de tema fuerte (de la garantía al dinero) → pide tapar, no fundir.                     │
 // ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-// │ ACTO 4 · f 664–973 · CARENCIAS 2 y 3: cotizar (Luis en la vereda) · los primeros 10 clientes    │
+// │ ACTO 4 · f 663–972 · CARENCIAS 2 y 3: cotizar (Luis en la vereda) · los primeros 10 clientes    │
 // │   enterFrom cam {z 1.18, panX −110, panY −20, ry +7.5, rx −1.6} · luz 0.472                     │
 // │             materia: el abanico, ya con la carta 2 al frente cuando se despeja el cuero         │
 // │   exitTo    cam {z 1.14, panX −200, panY −10, ry +12.0, rx −1.4} · luz 0.535                    │
 // │             materia: el abanico EN PLENA ROTACIÓN hacia la carta 4 (no se detiene en la costura)│
 // │                                                                                                 │
-// │ ── FRONTERA 4 @ f974 · MATCH-MOVE ────────────────────────────────────────────────────────────  │
-// │   La cámara ya viene paneando a la derecha (panX −110→−200) y el abanico ya viene rotando       │
-// │   desde f956. El contenido cambia DETRÁS del movimiento: la carta 3 sale por el borde y la 4    │
-// │   entra, sin que nada arranque ni se detenga.                                                   │
+// │ ── FRONTERA 4 @ f973 · MATCH-MOVE ────────────────────────────────────────────────────────────  │
+// │   La cámara ya viene paneando (panX −110→−200) y el abanico ya viene rotando desde f956. El     │
+// │   contenido cambia DETRÁS del movimiento: la carta 3 sale por el borde y la 4 entra, sin que    │
+// │   nada arranque ni se detenga.                                                                  │
 // ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-// │ ACTO 5 · f 974–1141 · CARENCIA 4: qué trabajos NO tomar + CALLBACK de los 35 dólares            │
+// │ ACTO 5 · f 973–1140 · CARENCIA 4: qué trabajos NO tomar + CALLBACK de los 35 dólares            │
 // │   enterFrom cam {z 1.14, panX −200, panY −10, ry +12.0, rx −1.4} · luz 0.535                    │
 // │             materia: la carta 4 llegando al frente (la palma del "ese no lo tomo", s438)        │
 // │   exitTo    cam {z 1.08, panX −120, panY  +8, ry +6.0, rx −0.3} · luz 0.579                     │
@@ -62,12 +79,12 @@
 // │   (f1054: vuelve desde el fondo el clip s411 — el apretón de los 35 dólares, el MISMO material  │
 // │    del MovCaso35. Es el cierre del arco: la carencia 4 ES el caso que ya vio.)                  │
 // │                                                                                                 │
-// │ ── FRONTERA 5 @ f1142 · MATCH-SHAPE ──────────────────────────────────────────────────────────  │
+// │ ── FRONTERA 5 @ f1141 · MATCH-SHAPE ──────────────────────────────────────────────────────────  │
 // │   Cuatro rectángulos → UNO. Las cartas convergen y se apilan con desfase de unos milímetros     │
 // │   (una pila real), y por delante sube la hoja de arriba: la palma de Claudio sobre la pila de   │
 // │   hojas impresas (s439). No hay fundido: una carta se apoya sobre las otras cuatro.             │
 // ├────────────────────────────────────────────────────────────────────────────────────────────────┤
-// │ ACTO 6 · f 1142–1238 · "que el primer año no te fundas" → la pila. ESO ES EL CURSO.             │
+// │ ACTO 6 · f 1141–1238 · "que el primer año no te fundas" → la pila. ESO ES EL CURSO.             │
 // │   enterFrom cam {z 1.08, panX −120, panY  +8, ry +6.0, rx −0.3} · luz 0.579                     │
 // │             materia: la baraja colapsando                                                       │
 // │   exitTo    cam {z 1.03, panX  −60, panY +14, ry +2.4, rx  0.0} · luz 0.600 — ⚠️ QUIETA desde    │
@@ -79,38 +96,34 @@
 // COSTURAS EN ORDEN: MATCH-SHAPE · ZOOM-THROUGH · OCLUSIÓN · MATCH-MOVE · MATCH-SHAPE
 // (⛔ ninguna es un fade · ⛔ no hay dos seguidas iguales)
 //
-// LUZ: luz(f, 1239, 0.35, 0.60) — el tramo más cálido del video. Una sola rampa, sin saltos: el
-// ámbar de galpón al atardecer entra por la clave cálida (L5) y por el tint de <Atmos/>.
+// LUZ: luz(f, 1239, 0.35, 0.60) — el tramo más cálido del video. Una sola rampa, sin saltos.
 //
 // AVATAR: sólo se ve en el ACTO 1 (fondo transparente, elementos en el tercio IZQUIERDO y en la
-// franja inferior — ⛔ nunca boca ni mentón). Del acto 2 en adelante el banco de trabajo sube y
-// tapa el cuadro entero.
+// franja inferior — ⛔ nunca boca ni mentón). Del acto 2 en adelante el piso sube y tapa el cuadro.
 //
 // ⛔ NO se escribe el precio del curso ni la URL: el QR y la portada los monta el build.
 // ⛔ Math.random / Date.now: cero (todo sale de hash/rng de Stage y de useCurrentFrame).
 // ⛔ backdrop-filter: cero. ⛔ blur full-screen: cero. ⛔ <Video>: cero (todo OffthreadVideo).
 import React from "react";
+import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import {
-  AbsoluteFill, Easing, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame,
-} from "remotion";
-import { Atmos, C, Glass, Head, Kick, Occluder, cam, camStyle, luz, rampIn, rng } from "./Stage";
+  Atmos, Backplate, Ground, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate,
+  cam, camStyle, luz, rampIn, rng, Ink, C,
+} from "./Stage";
 
 const DUR = 1239;
 
 // ── frames de los actos (derivados de los timestamps REALES de Whisper) ─────────────────────────
 const A2 = 117;   // 656,90 "para cobrarlo te faltan 4 cosas"
-const A3 = 370;   // 665,32 "diagnosticar en 10 minutos delante del cliente"
-const A4 = 664;   // 675,12 "cotizar, que es lo que a Luis le costó 20 minutos"
-const A5 = 974;   // 685,46 "y saber qué trabajos no tomar"
-const A6 = 1142;  // 691,06 "y es lo que evita que el primer año te fundas"
+const A3 = 369;   // 665,32 "diagnosticar en 10 minutos delante del cliente"
+const A4 = 663;   // 675,12 "cotizar, que es lo que a Luis le costó 20 minutos"
+const A5 = 973;   // 685,46 "y saber qué trabajos no tomar"
+const A6 = 1141;  // 691,06 "y es lo que evita que el primer año te fundas"
 
 const EZ = Easing.bezier(0.22, 0.61, 0.24, 1);
 const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
 const ramp = (f: number, a: number, b: number, e = EZ) =>
   interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
-
-const IMG = (n: string) => staticFile(`img/clembudo/${n}.png`);
-const CLIP = (n: string) => staticFile(`broll/clembudo/${n}.mp4`);
 
 // ── UNA SOLA CÁMARA, CONTINUA: patas encadenadas (el from de cada una ES el to de la anterior) ───
 // La deriva permanente (hold vivo) la aporta `cam()` de Stage con el frame GLOBAL, así que la fase
@@ -144,59 +157,24 @@ const camAt = (f: number): CamK => {
 };
 
 // ── LA BARAJA ───────────────────────────────────────────────────────────────────────────────────
-const CW = 620, CH = 349;              // 16:9, igual que el material (1792×1008)
+// ⛔ NO hay `h`: la carta es una `Plate` y su alto SALE del ancho por 16:9 (D1). El "tamaño" de una
+// carta es UN número — su ancho en píxeles de mundo — y todo lo demás se deriva.
+const CARD_W = 620;                    // ancho base de carta (→ alto 349, el 16:9 del material)
 const FAN_X = 940, FAN_Y = 520;        // centro del abanico en coordenadas de mundo
-const UNO_X = 290, UNO_Y = 604;        // slot del acto 1: tercio IZQUIERDO (el avatar queda libre)
-const DECK_X = 838, DECK_Y = 566;      // dónde se apila todo en el acto 6
+const UNO_X = 320, UNO_Y = 596;        // slot del acto 1: tercio IZQUIERDO (el avatar queda libre)
+const DECK_X = 838, DECK_Y = 560;      // dónde se apila todo en el acto 6
 
-type Slot = { x: number; y: number; z: number; sc: number; ry: number };
+type Slot = { x: number; y: number; z: number; w: number; ry: number; dim: number };
 
-// ── MATERIAL REAL adentro de cada carta ─────────────────────────────────────────────────────────
-// El PNG es literalmente el frame 0 del MP4 (los clips son i2v generados desde esa imagen), así que
-// mostrar el PNG mientras la carta está en el fondo y encender el clip cuando pasa al frente NO se
-// ve: es el mismo cuadro. Además ahorra decodificar cuatro videos todo el tiempo.
-// ⛔ `loop` no es prop de OffthreadVideo y los clips duran 5,04 s: cada ventana se cubre con
-//    `playbackRate` calibrado, nunca loopeando.
-const Mat: React.FC<{
-  png: string; vid?: { from: number; dur: number; rate: number }; kb?: number; mirror?: boolean;
-}> = ({ png, vid, kb = 1.04, mirror = false }) => (
-  <div style={{ position: "absolute", inset: 0, transform: mirror ? "scaleX(-1)" : undefined }}>
-    <Img
-      src={IMG(png)}
-      style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${kb.toFixed(4)})` }}
-    />
-    {vid ? (
-      <Sequence from={vid.from} durationInFrames={vid.dur}>
-        <OffthreadVideo
-          src={CLIP(png)}
-          muted
-          playbackRate={vid.rate}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-        />
-      </Sequence>
-    ) : null}
-    {/* marco de la carta + hundido de los bordes (iluminación de producto, no un borde plano) */}
-    <div
-      style={{
-        position: "absolute", inset: 0, pointerEvents: "none",
-        boxShadow: "inset 0 0 0 3px rgba(245,238,220,0.34), inset 0 0 70px rgba(42,38,32,0.44)",
-      }}
-    />
-  </div>
-);
-
-const Card: React.FC<{ s: Slot; turn?: number; w?: number; h?: number; lift?: number; children: React.ReactNode }> =
-  ({ s, turn = 0, w = CW, h = CH, lift = 1, children }) => (
-    <div
-      style={{
-        position: "absolute", left: s.x, top: s.y, width: 0, height: 0,
-        transformStyle: "preserve-3d",
-        transform: `translateZ(${s.z.toFixed(2)}px) rotateY(${(s.ry + turn).toFixed(2)}deg) scale(${s.sc.toFixed(4)})`,
-      }}
-    >
-      <Glass x={-w / 2} y={-h / 2} w={w} h={h} lift={lift}>{children}</Glass>
-    </div>
-  );
+// Las CUATRO carencias. El PNG es literalmente el frame 0 del MP4 (los clips son i2v generados
+// desde esa imagen), así que mostrar la foto mientras la carta está en el fondo y encender el clip
+// cuando pasa al frente NO se ve: es el mismo cuadro. Y ahorra decodificar cuatro videos siempre.
+const CARENCIAS = [
+  { img: "clembudo_s434", clip: "clembudo_s434", from: 380, dur: 150, rate: 0.86, mirror: true },  // diagnosticar
+  { img: "clembudo_s436", clip: "clembudo_s436", from: 672, dur: 150, rate: 0.88, mirror: false }, // cotizar
+  { img: "clembudo_s437", clip: "clembudo_s437", from: 820, dur: 150, rate: 0.86, mirror: false }, // conseguir
+  { img: "clembudo_s438", clip: "clembudo_s438", from: 986, dur: 150, rate: 0.84, mirror: false }, // no tomar
+];
 
 // ── polvo EN EL MUNDO (parallax propio, distinto del polvo de pantalla de <Atmos/>) ──────────────
 const DustWorld: React.FC<{ f: number }> = ({ f }) => (
@@ -215,47 +193,13 @@ const DustWorld: React.FC<{ f: number }> = ({ f }) => (
   </div>
 );
 
-// ── TEXTO (L8, espacio de PANTALLA: no lo arrastra el paneo, siempre legible y siempre en safe) ──
-// 1 idea por acto · titular ≤7 palabras · ⛔ sin precio del curso, ⛔ sin URL.
-const Txt: React.FC<{ f: number; from: number; to: number; kick?: string; head?: string; kick2?: string; kickAt?: number }> =
-  ({ f, from, to, kick, head, kick2, kickAt = 0 }) => {
-    if (f < from - 2 || f > to + 10) return null;
-    const a = ramp(f, from, from + 11) * (1 - ramp(f, to, to + 9, Easing.in(Easing.cubic)));
-    const dy = (1 - ramp(f, from, from + 13)) * 20;
-    // el rótulo puede cambiar dentro del acto (es una etiqueta, no una idea nueva)
-    const swap = kick2 ? ramp(f, kickAt, kickAt + 9) : 0;
-    return (
-      <div
-        style={{
-          position: "absolute", left: 104, bottom: 124, width: 850,
-          opacity: a, transform: `translateY(${dy.toFixed(2)}px)`,
-        }}
-      >
-        <div style={{ marginBottom: 14, height: kick ? 38 : 0, position: "relative" }}>
-          <div style={{ position: "absolute", inset: 0, opacity: 1 - swap, transform: `translateY(${(-10 * swap).toFixed(2)}px)` }}>
-            {kick ? <Kick size={29}>{kick}</Kick> : null}
-          </div>
-          {kick2 ? (
-            <div style={{ position: "absolute", inset: 0, opacity: swap, transform: `translateY(${(12 * (1 - swap)).toFixed(2)}px)` }}>
-              <Kick size={29}>{kick2}</Kick>
-            </div>
-          ) : null}
-        </div>
-        {head ? <Head size={57}>{head}</Head> : null}
-      </div>
-    );
-  };
-
 export const MovCierre: React.FC = () => {
   const f = useCurrentFrame();
   const K = camAt(f);
   const L = luz(f, DUR, 0.35, 0.60);          // 0.35 → 0.60: el tramo más cálido del video
   const rin = rampIn(f, 14);                   // entrada ≤15 frames (⛔ nada subiendo 2 s de negro)
 
-  // El SET (pared, banco, viga, cuero) sube desde abajo del cuadro: es un objeto que entra, ⛔ no un fade.
-  // ⚠️ MEDIDO: con 1240 px la pared (que arranca en y −700 y mide 2500) seguía asomando por la mitad
-  // inferior del cuadro durante TODO el acto 1 y le tapaba el pecho al avatar. El recorrido tiene que
-  // dejar el borde SUPERIOR de la pared (−700) por debajo de los 1080 px → mínimo 1780.
+  // El SET sube desde abajo del cuadro: es un objeto que entra, ⛔ no un fade.
   const setY = (1 - ramp(f, 106, 156, Easing.out(Easing.cubic))) * 2160;
 
   // Carta 0: migra del slot del acto 1 al frente del abanico mientras gira.
@@ -274,6 +218,10 @@ export const MovCierre: React.FC = () => {
 
   const col = ramp(f, A6, 1198, Easing.out(Easing.poly(4)));   // colapso en la pila (frontera 5)
 
+  // ── EL DUELO del acto 2 (nativo, ex-VsDuel). Las cuatro cartas se HUNDEN al fondo mientras dura,
+  // así que no hay dos capas compitiendo por el mismo cuadro: hay una sola escena.
+  const duelo = ramp(f, 203, 240, Easing.out(Easing.cubic)) * (1 - ramp(f, 330, 360, Easing.in(Easing.cubic)));
+
   // Slot del abanico puro (sin migración ni colapso)
   const fanSlot = (i: number): Slot => {
     const d = i - fr;
@@ -283,24 +231,33 @@ export const MovCierre: React.FC = () => {
       x: FAN_X + d * 352,
       y: FAN_Y + ad * 30 - prom * 14 + Math.sin((f + i * 47) / 61) * (3 + prom * 4),
       z: 180 * prom - 150 * Math.min(ad, 2.2),
-      sc: (1 - Math.min(ad, 3) * 0.15) * (1 + prom * 0.42),
+      w: CARD_W * (1 - Math.min(ad, 3) * 0.15) * (1 + prom * 0.42),
       ry: -d * 15,
+      // D4 · la profundidad se PINTA: la carta del fondo se hunde con un velo negro adentro, no
+      // volviéndose transparente. Una tarjeta semitransparente deja ver el b-roll y es el fantasma.
+      dim: Math.min(0.62, Math.min(ad, 2.4) * 0.26),
     };
   };
   const mix = (a: Slot, b: Slot, k: number): Slot => ({
     x: lerp(a.x, b.x, k), y: lerp(a.y, b.y, k), z: lerp(a.z, b.z, k),
-    sc: lerp(a.sc, b.sc, k), ry: lerp(a.ry, b.ry, k),
+    w: lerp(a.w, b.w, k), ry: lerp(a.ry, b.ry, k), dim: lerp(a.dim, b.dim, k),
   });
   const toDeck = (s: Slot, i: number): Slot =>
     col > 0
-      ? mix(s, { x: DECK_X + i * 9, y: DECK_Y - i * 7, z: -10 - i * 14, sc: 0.86, ry: -4 + i * 2 }, col)
+      ? mix(s, { x: DECK_X + i * 9, y: DECK_Y - i * 7, z: -10 - i * 14, w: CARD_W * 0.86, ry: -4 + i * 2, dim: 0.18 + i * 0.06 }, col)
+      : s;
+  // durante el duelo las cuatro cartas se van al fondo (no compiten con el duelo por el cuadro)
+  const toFondo = (s: Slot, i: number): Slot =>
+    duelo > 0.004
+      ? mix(s, { x: 300 + i * 470, y: 268, z: -520, w: CARD_W * 0.52, ry: (i - 1.5) * 7, dim: 0.74 }, duelo)
       : s;
 
   // CARTA 0 · viene del slot del acto 1 (tercio izquierdo, el avatar libre) y migra al frente.
   const s0 = toDeck(
-    intro > 0
-      ? mix(fanSlot(0), { x: UNO_X, y: UNO_Y, z: 40, sc: 0.80, ry: -3 }, intro)
-      : fanSlot(0),
+    toFondo(
+      intro > 0 ? mix(fanSlot(0), { x: UNO_X, y: UNO_Y, z: 40, w: CARD_W * 0.80, ry: -3, dim: 0 }, intro) : fanSlot(0),
+      0,
+    ),
     0,
   );
   // CARTAS 1-3 · ⛔ NO existen en el acto 1: nacen EXACTAMENTE debajo de la carta 0 (mismo x/y, un
@@ -310,8 +267,8 @@ export const MovCierre: React.FC = () => {
   // detrás. Las otras tres no pueden existir hasta que la carta 0 vuelve a estar de frente (f162).
   const deckOn = f >= 160;
   const em = ramp(f, 166, 224);
-  const behind = (i: number): Slot => ({ x: s0.x, y: s0.y + i * 5, z: s0.z - 26 - i * 20, sc: s0.sc * 0.97, ry: s0.ry });
-  const sN = (i: number) => toDeck(mix(behind(i), fanSlot(i), em), i);
+  const behind = (i: number): Slot => ({ x: s0.x, y: s0.y + i * 5, z: s0.z - 26 - i * 20, w: s0.w * 0.97, ry: s0.ry, dim: 0.3 + i * 0.1 });
+  const sN = (i: number) => toDeck(toFondo(mix(behind(i), fanSlot(i), em), i), i);
   const s1 = sN(1), s2 = sN(2), s3 = sN(3);
 
   // La hoja de arriba de la pila: sube por delante y se apoya sobre las otras cuatro (MATCH-SHAPE).
@@ -320,8 +277,9 @@ export const MovCierre: React.FC = () => {
     x: lerp(DECK_X + 46, DECK_X - 18, pk),
     y: lerp(DECK_Y + 690, DECK_Y - 26, pk),
     z: lerp(210, 22, pk),
-    sc: lerp(1.24, 1.44, pk),
+    w: lerp(CARD_W * 1.24, CARD_W * 1.44, pk),
     ry: lerp(-13, -3, pk),
+    dim: 0,
   };
 
   // Carta-recuerdo: los 35 dólares vuelven desde el fondo (MISMO material del MovCaso35) y, cuando
@@ -332,18 +290,29 @@ export const MovCierre: React.FC = () => {
     x: lerp(lerp(560, 470, ck), DECK_X - 40, cOut),
     y: lerp(lerp(760, 690, ck), DECK_Y + 150, cOut),
     z: lerp(lerp(-260, -30, ck), -430, cOut),
-    sc: lerp(lerp(0.42, 0.62, ck), 0.18, cOut),
+    w: lerp(lerp(CARD_W * 0.42, CARD_W * 0.62, ck), CARD_W * 0.18, cOut),
     ry: lerp(lerp(22, 13, ck), 26, cOut),
+    dim: lerp(lerp(0.5, 0.1, ck), 0.7, cOut),
   };
   // Luis parado en la vereda: entra detrás de la carta de cotizar y se hunde cuando gira el abanico.
   const lk = ramp(f, 686, 736, Easing.out(Easing.cubic));
   const lOut = ramp(f, 796, 828, Easing.in(Easing.cubic));
   const luisS: Slot = {
-    x: lerp(lerp(500, 430, lk), 330, lOut),
-    y: lerp(lerp(742, 686, lk), 820, lOut),
+    x: lerp(lerp(500, 424, lk), 320, lOut),
+    y: lerp(lerp(742, 682, lk), 820, lOut),
     z: lerp(lerp(-250, -46, lk), -430, lOut),
-    sc: lerp(lerp(0.40, 0.58, lk), 0.18, lOut),
+    w: lerp(lerp(CARD_W * 0.40, CARD_W * 0.58, lk), CARD_W * 0.18, lOut),
     ry: lerp(lerp(-20, -12, lk), -26, lOut),
+    dim: lerp(lerp(0.5, 0.08, lk), 0.7, lOut),
+  };
+
+  const carta = (s: Slot, i: number) => {
+    const c = CARENCIAS[i];
+    return (
+      <Plate cx={s.x} cy={s.y} w={s.w} z={s.z} ry={s.ry} dim={s.dim} lift={1 + Math.max(0, s.z) / 260}>
+        <Mat img={c.img} clip={c.clip} from={c.from} dur={c.dur} rate={c.rate} kb={1.05} mirror={c.mirror} />
+      </Plate>
+    );
   };
 
   return (
@@ -352,39 +321,16 @@ export const MovCierre: React.FC = () => {
       <AbsoluteFill style={camStyle(K)}>
         {/* ── EL SET (sube entero en la frontera 1: objeto que entra, ⛔ no un fade) ───────────── */}
         <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", transform: `translateY(${setY.toFixed(1)}px)` }}>
-          {/* L0 · pared de tablas del galpón (z −620: el plano que MENOS se mueve) */}
-          <div
-            style={{
-              position: "absolute", left: -1180, top: -700, width: 4280, height: 2500,
-              transform: "translateZ(-620px)",
-              background: `linear-gradient(176deg, #2A2419 0%, #3B3222 38%, #4A3D27 72%, #2B2418 100%)`,
-              backgroundImage: [
-                "repeating-linear-gradient(90deg, rgba(0,0,0,0.24) 0 3px, rgba(0,0,0,0) 3px 146px)",
-                "repeating-linear-gradient(90deg, rgba(255,228,176,0.05) 0 1px, rgba(0,0,0,0) 1px 146px)",
-                `linear-gradient(176deg, #2A2419 0%, #3B3222 38%, #4A3D27 72%, #2B2418 100%)`,
-              ].join(","),
-            }}
-          />
-          {/* L1 · EL BANCO DE TRABAJO — es el cuaderno del oficio (s440) tumbado: la materia del
-              acto 1 no se va, se vuelve el suelo sobre el que flota toda la baraja. */}
-          <div
-            style={{
-              position: "absolute", left: -420, top: 250, width: 2760, height: 1760,
-              transform: "translateZ(-190px) rotateX(56deg)",
-              transformOrigin: "50% 0%",
-              overflow: "hidden",
-              boxShadow: "0 -26px 70px rgba(20,16,10,0.55)",
-            }}
-          >
-            <Img src={IMG("clembudo_s440")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(30,25,16,0.30) 0%, rgba(30,25,16,0.74) 58%, rgba(24,20,13,0.94) 100%)" }} />
-            {/* canto iluminado del banco: el borde que lidera la entrada del set */}
-            <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 7, background: "linear-gradient(90deg, rgba(255,226,168,0) 0%, rgba(255,226,168,0.58) 26%, rgba(255,226,168,0.62) 74%, rgba(255,226,168,0) 100%)" }} />
-          </div>
+          {/* D2 · L0 · el fondo NO es un degradé: es el galpón REAL (material, no CSS) */}
+          <Backplate img="clembudo_s439" z={-620} scale={1.42} veil={0.58} />
+          {/* L1 · EL PISO DEL GALPÓN — ⛔ gira sobre su borde INFERIOR y HACIA ATRÁS: nunca puede
+              adelantarse a las cartas. Ésta es la corrección del D1 (antes: rotateX(56) sobre el
+              borde superior, borde cercano en z=+1269, que se comía la mitad de abajo de la carta). */}
+          <Ground img="clembudo_s440" y={1290} h={1460} z0={-230} tilt={64} veil={0.66} />
           {/* L6 · viga de madera en el borde derecho (primer plano: el que MÁS se mueve) */}
           <div
             style={{
-              position: "absolute", left: 1680, top: -230, width: 150, height: 1560,
+              position: "absolute", left: 1700, top: -230, width: 150, height: 1560,
               transform: "translateZ(215px)",
               background: "linear-gradient(90deg, rgba(18,14,9,0.94) 0%, rgba(46,37,24,0.90) 46%, rgba(12,9,6,0.96) 100%)",
               boxShadow: "-30px 0 70px rgba(16,12,7,0.62)",
@@ -393,7 +339,7 @@ export const MovCierre: React.FC = () => {
           {/* L6 · el cuero del delantal cruzando abajo, fuera de plano (contacto y profundidad) */}
           <div
             style={{
-              position: "absolute", left: -300, right: -300, bottom: -120, height: 250,
+              position: "absolute", left: -300, right: -300, bottom: -140, height: 240,
               transform: "translateZ(232px) rotate(-1.6deg)",
               background: `linear-gradient(180deg, rgba(24,17,10,0) 0%, rgba(58,38,21,0.72) 42%, ${C.ink} 100%)`,
             }}
@@ -404,58 +350,89 @@ export const MovCierre: React.FC = () => {
 
         {/* ── L3/L4 · LA BARAJA. Cada carta lleva MATERIAL REAL adentro y su propio desfase: la
             delantera vive a translateZ +180 y la de atrás a −330, así que bajo el mismo paneo la
-            delantera se mueve ~1,45× más que la trasera (parallax real, no simulado). ───────── */}
-        <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d", opacity: rin }}>
+            delantera se mueve ~1,45× más que la trasera (parallax real, no simulado).
+            ⛔ Este contenedor va SIN `opacity` variable: la entrada del movimiento la resuelve el
+            velo de rampa que está más abajo, en espacio de pantalla. Una `opacity` acá aplanaría el
+            preserve-3d y volvería a mezclar planos (que es como nacía el fantasma). ───────────── */}
+        <div style={{ position: "absolute", inset: 0, transformStyle: "preserve-3d" }}>
           {deckOn ? (
             <>
-              {/* CARTA 2 · COTIZAR — la mano escribiendo el número en la planilla */}
-              <Card s={s1}>
-                <Mat png="clembudo_s436" vid={{ from: 656, dur: 170, rate: 0.88 }} kb={1.05} />
-              </Card>
-              {/* CARTA 3 · CONSEGUIR — el apretón en la puerta de la casa */}
-              <Card s={s2}>
-                <Mat png="clembudo_s437" vid={{ from: 804, dur: 178, rate: 0.84 }} kb={1.05} />
-              </Card>
-              {/* CARTA 4 · NO TOMAR — la palma abierta del "ese no lo tomo" */}
-              <Card s={s3}>
-                <Mat png="clembudo_s438" vid={{ from: 964, dur: 186, rate: 0.81 }} kb={1.05} />
-              </Card>
+              {carta(s1, 1)}
+              {carta(s2, 2)}
+              {carta(s3, 3)}
             </>
           ) : null}
 
           {/* CARTA-RECUERDO · los 35 dólares: el MISMO clip del MovCaso35 volviendo desde el fondo */}
           {f >= 1046 && f < 1180 ? (
-            <Card s={callback} w={520} h={293} lift={0.8}>
-              <Mat png="clembudo_s411" vid={{ from: 1054, dur: 96, rate: 1 }} kb={1.06} />
-            </Card>
+            <Plate cx={callback.x} cy={callback.y} w={callback.w} z={callback.z} ry={callback.ry} dim={callback.dim} lift={0.8}>
+              <Mat img="clembudo_s411" clip="clembudo_s411" from={1054} dur={126} kb={1.06} />
+            </Plate>
           ) : null}
           {/* CARTA-RECUERDO · Luis, veinte minutos parado en la vereda */}
           {f >= 678 && f < 832 ? (
-            <Card s={luisS} w={520} h={293} lift={0.8}>
-              <Mat png="clembudo_s422" vid={{ from: 686, dur: 128, rate: 1 }} kb={1.06} />
-            </Card>
+            <Plate cx={luisS.x} cy={luisS.y} w={luisS.w} z={luisS.z} ry={luisS.ry} dim={luisS.dim} lift={0.8}>
+              <Mat img="clembudo_s422" clip="clembudo_s422" from={686} dur={146} kb={1.06} />
+            </Plate>
           ) : null}
 
           {/* CARTA 1 — la que viene del acto 1. Tres caras, y el swap ocurre SIEMPRE de canto:
               0 el cuaderno (el método que ya te di) · 1 el diagnóstico · 2 la mancha que vuelve. */}
-          <Card s={s0} turn={turn0}>
+          <Plate cx={s0.x} cy={s0.y} w={s0.w} z={s0.z} ry={s0.ry + turn0} dim={s0.dim} lift={1 + Math.max(0, s0.z) / 260}>
             {face0 === 0 ? (
-              <Mat png="clembudo_s440" kb={1.06 + ramp(f, 0, A2) * 0.05} />
+              <Mat img="clembudo_s440" kb={1.06 + ramp(f, 0, A2) * 0.05} />
             ) : face0 === 1 ? (
-              <Mat png="clembudo_s434" vid={{ from: 364, dur: 178, rate: 0.84 }} kb={1.05} mirror />
+              <Mat img="clembudo_s434" clip="clembudo_s434" from={380} dur={150} rate={0.86} kb={1.05} mirror />
             ) : (
-              <Mat png="clembudo_s435" kb={1.04 + ramp(f, 540, A4 + 40) * 0.10} />
+              <Mat img="clembudo_s435" kb={1.04 + ramp(f, 540, A4 + 40) * 0.10} />
             )}
-          </Card>
+          </Plate>
+
+          {/* ═══ ACTO 2 · EL DUELO, NATIVO (ex-VsDuel del kit, que se montaba ENCIMA y hacía el
+              fantasma de doble exposición). Dos Plates gemelas, mismo ancho, mismo 16:9, material
+              real adentro y el pilar de cuero en el medio. ⛔ El titular NO va acá: va en papel, en
+              espacio de pantalla, más abajo. ═════════════════════════════════════════════════ */}
+          {duelo > 0.004 ? (
+            <>
+              <Plate
+                cx={lerp(430, 560, duelo)} cy={470} w={lerp(480, 590, duelo)}
+                z={lerp(-180, 120, duelo)} ry={lerp(-22, -9, duelo)} dim={(1 - duelo) * 0.6} lift={1.2}
+              >
+                <Mat img="clembudo_s427" clip="clembudo_s427" from={206} dur={148} rate={0.9} kb={1.05} />
+                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(20,16,10,0) 46%, rgba(20,16,10,0.86) 100%)" }} />
+              </Plate>
+              <Plate
+                cx={lerp(1490, 1360, duelo)} cy={470} w={lerp(480, 590, duelo)}
+                z={lerp(-180, 120, duelo)} ry={lerp(22, 9, duelo)} dim={(1 - duelo) * 0.6} lift={1.2}
+              >
+                <Mat img="clembudo_s429" clip="clembudo_s429" from={214} dur={148} rate={0.9} kb={1.05} />
+                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(20,16,10,0) 46%, rgba(20,16,10,0.86) 100%)" }} />
+              </Plate>
+              {/* el pilar de cuero que separa los dos lados: materia de la escena, no una línea CSS */}
+              <div
+                style={{
+                  position: "absolute", left: 944, top: 236, width: 32, height: 470,
+                  transform: `translateZ(150px) scaleY(${duelo.toFixed(3)})`, transformOrigin: "50% 50%",
+                  background: "linear-gradient(90deg, rgba(24,17,10,0.9) 0%, #8E6538 42%, #B5854F 62%, rgba(24,17,10,0.92) 100%)",
+                  boxShadow: "0 18px 40px rgba(18,13,8,0.6)",
+                }}
+              />
+            </>
+          ) : null}
 
           {/* LA HOJA DE ARRIBA — la pila de hojas impresas: ESO es el curso. */}
-          {f >= 1142 ? (
-            <Card s={pile} w={640} h={360} lift={1.25}>
-              <Mat png="clembudo_s439" vid={{ from: 1146, dur: 93, rate: 1 }} kb={1.04} />
-            </Card>
+          {f >= A6 ? (
+            <Plate cx={pile.x} cy={pile.y} w={pile.w} z={pile.z} ry={pile.ry} lift={1.25}>
+              <Mat img="clembudo_s439" clip="clembudo_s439" from={1146} dur={93} kb={1.04} />
+            </Plate>
           ) : null}
         </div>
       </AbsoluteFill>
+
+      {/* ═══ ENTRADA DEL AMBIENTE (≤15 f) — un velo que se retira, NO una opacity sobre el mundo ══ */}
+      {rin < 0.999 ? (
+        <AbsoluteFill style={{ background: "rgba(20,16,10,1)", opacity: 1 - rin, pointerEvents: "none" }} />
+      ) : null}
 
       {/* ═══ L5 · CLAVE CÁLIDA — la luz que evoluciona 0,35 → 0,60 (ámbar de galpón al atardecer) ══ */}
       <AbsoluteFill
@@ -478,6 +455,36 @@ export const MovCierre: React.FC = () => {
         <Occluder at={A4} len={12} color="#B5854F" angle={-11} />
       </AbsoluteFill>
 
+      {/* ═══ ACTO 2 · LAS ETIQUETAS DEL DUELO — en espacio de PANTALLA, ancladas en píxeles reales.
+          ⛔ Nunca dentro de la cámara: ahí el zoom las corta contra el borde (D3). ═══════════════ */}
+      {duelo > 0.004 ? (
+        <AbsoluteFill style={{ pointerEvents: "none", opacity: duelo }}>
+          {/* D7 · el titular va EN TINTA sobre PAPEL. Antes era tinta oscura sobre cama oscura y
+              directamente desaparecía: "Lo que separa a uno del otro" no se leía. */}
+          <div style={{ position: "absolute", left: 0, right: 0, top: 96, display: "flex", justifyContent: "center" }}>
+            <Paper pad={24} tilt={-0.5}>
+              <div style={{ textAlign: "center" }}>
+                <Kick size={28} color={C.gold}>LAS CUATRO COSAS QUE FALTAN</Kick>
+                <div style={{ height: 10 }} />
+                <Ink size={56}>Lo que separa a uno del otro</Ink>
+              </div>
+            </Paper>
+          </div>
+          <div style={{ position: "absolute", left: 210, top: 690, width: 500, textAlign: "center" }}>
+            <Paper pad={18} tilt={0.6}>
+              <Ink size={50}>Cobra 80</Ink>
+              <div style={{ marginTop: 6, fontSize: 31, color: C.inkSoft, fontFamily: "inherit" }}>Trata la mancha y espera</div>
+            </Paper>
+          </div>
+          <div style={{ position: "absolute", right: 210, top: 690, width: 500, textAlign: "center" }}>
+            <Paper pad={18} tilt={-0.6}>
+              <Ink size={50}>Cobra 250</Ink>
+              <div style={{ marginTop: 6, fontSize: 31, color: C.inkSoft, fontFamily: "inherit" }}>Diagnostica y sabe decir que no</div>
+            </Paper>
+          </div>
+        </AbsoluteFill>
+      ) : null}
+
       {/* ═══ ACTO 6 · el tercio derecho queda LIMPIO y velado: ahí se monta la tarjeta de CTA ═════ */}
       <AbsoluteFill
         style={{
@@ -486,30 +493,21 @@ export const MovCierre: React.FC = () => {
         }}
       />
 
-      {/* ═══ L8 · TEXTO — 1 idea por acto, cama oscura abajo a la izquierda para legibilidad +60 ══ */}
-      <AbsoluteFill
-        style={{
-          pointerEvents: "none",
-          background: "linear-gradient(22deg, rgba(22,17,11,0.80) 0%, rgba(22,17,11,0.42) 34%, rgba(22,17,11,0) 60%)",
-          opacity: 0.92,
-        }}
-      />
+      {/* ═══ L8 · TEXTO — 1 idea por acto. Todo en espacio de PANTALLA, anclado por bottom/left,
+          con su cama oscura detrás para que el texto claro lea sobre cualquier material. ═════════ */}
+      <LowerBed o={duelo > 0.5 ? 0.3 : 0.9} />
       <AbsoluteFill style={{ pointerEvents: "none" }}>
-        <Txt f={f} from={6}    to={104}  kick="EL MÉTODO YA ESTÁ"        head="Con esto todavía no te alcanza." />
-        <Txt f={f} from={122}  to={196}  kick="TE FALTAN"                head="Cuatro cosas para poder cobrarlo." />
-        <Txt f={f} from={208}  to={356}  kick="LO QUE SEPARA"            head="De cobrar 80 a cobrar 250." />
-        <Txt f={f} from={378}  to={512}  kick="UNO · DIAGNOSTICAR"       head="Diez minutos delante del cliente." />
-        <Txt f={f} from={532}  to={648}  kick="SI FALLAS AHÍ"            head="El trabajo vuelve y pierdes la garantía." />
-        <Txt f={f} from={672}  to={790}  kick="DOS · COTIZAR"            head="Veinte minutos parado en la vereda." />
-        <Txt f={f} from={820}  to={950}  kick="TRES · CONSEGUIR"         head="Diez clientes sin gastar un peso." />
-        <Txt
-          f={f} from={982} to={1128}
-          kick="CUATRO · QUÉ NO TOMAR" kick2="LOS TREINTA Y CINCO DÓLARES" kickAt={1062}
-          head="Saber qué trabajos no tomar."
-        />
-        <Txt f={f} from={1152} to={1200} kick="LA CONSECUENCIA"          head="Que el primer año no te fundas." />
+        <Lower f={f} from={6}    to={104}  kick="EL MÉTODO YA ESTÁ"   head="Con esto todavía no te alcanza." />
+        <Lower f={f} from={122}  to={192}  kick="TE FALTAN"           head="Cuatro cosas para poder cobrarlo." />
+        <Lower f={f} from={378}  to={512}  kick="UNO · DIAGNOSTICAR"  head="Diez minutos delante del cliente." />
+        <Lower f={f} from={532}  to={646}  kick="SI FALLAS AHÍ"       head="El trabajo vuelve y pierdes la garantía." />
+        <Lower f={f} from={672}  to={790}  kick="DOS · COTIZAR"       head="Veinte minutos parado en la vereda." />
+        <Lower f={f} from={820}  to={950}  kick="TRES · CONSEGUIR"    head="Diez clientes sin gastar un peso." />
+        <Lower f={f} from={982}  to={1046} kick="CUATRO · QUÉ NO TOMAR" head="Saber qué trabajos no tomar." />
+        <Lower f={f} from={1060} to={1128} kick="LOS TREINTA Y CINCO DÓLARES" head="Eso ya lo viste hace un rato." />
+        <Lower f={f} from={1152} to={1200} kick="LA CONSECUENCIA"     head="Que el primer año no te fundas." />
         {/* El último acto aterriza acá. ⛔ Ni el precio ni la URL: el QR y la portada los monta el build. */}
-        <Txt f={f} from={1210} to={DUR}  head="Eso es el curso." />
+        <Lower f={f} from={1210} to={DUR}  head="Eso es el curso." />
       </AbsoluteFill>
 
       {/* ═══ L9 · ATMÓSFERA — montada UNA sola vez para los 1239 frames, jamás se remonta ═════════ */}

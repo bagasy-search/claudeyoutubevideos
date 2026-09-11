@@ -1,758 +1,348 @@
-// MovCloroBorax.tsx — MOVIMIENTO de `clembudo` (El Constructor Libre)
-// 1767 frames @30fps · desde_s 305.5 · luz 0.30 → 0.45
+// MovCloroBorax.tsx — clembudo · El Constructor Libre · 305,5 s → 364,4 s · 1767 frames @30fps
 //
-// TEMA: el mito más caro del oficio. El cloro no mata el moho de una pared: el hipoclorito se queda
-// en la superficie y decolora, pero el AGUA —que es casi todo lo que estás echando— se mete en el
-// poro, que es justo donde está la raíz. Le sacaste el color y le diste de beber. El bórax sí
-// funciona porque penetra CON el agua y al evaporarse queda cristalizado adentro, de guardia.
+// "El cloro no mata el moho de una pared." El objeto protagonista del movimiento es EL PORO: todo
+// pasa adentro de ese agujero de la pared — el cloro se queda en el borde, el agua baja hasta la
+// raíz, el bórax baja con ella y se queda cristalizado de guardia. La materia que cruza todas las
+// fronteras es siempre la misma superficie, vista a distintas escalas.
 //
-// ⭐ LA ESTRELLA ES EL CORTE DEL PORO. No hay split A/B mito-vs-verdad: hay UN SOLO PORO que cambia
-// de estado. El rig `P` es una pila de 8 planos con profundidad real (proyección s = K/(depth-camZ));
-// la cámara ENTRA por la boca en el acto 2, sigue adentro durante la receta (aunque no se vea),
-// llega más al fondo en el acto 5 y sale retrocediendo en el 6. `camZ(f)` es UNA sola curva sobre el
-// frame GLOBAL del movimiento: ningún acto la reinicia.
+// ═══ QUÉ CAMBIÓ EN LA REHECHURA (sep-2026) ═════════════════════════════════════════════════════
+//  D1 · las tarjetas se armaban con `<Glass w h/>` y un alto elegido a mano (700×438 = 1,60:1,
+//       300×300 = 1:1) con material 16:9 adentro en `objectFit:cover`: el material se recortaba.
+//       AHORA todas son `<Plate/>`, que deriva el alto del ancho por 16:9 y no acepta un alto libre.
+//  D3 · el texto vivía DENTRO de la cámara (`<Head>` adentro de `camStyle`), donde el `scale(z)` y
+//       la perspectiva lo corren contra el borde. AHORA va en `<Lower/>`, espacio de pantalla.
+//  D4 · la profundidad se pintaba con `opacity` (`opacity: 0.5 + t*0.5`, `opacity: 0.9` sobre una
+//       foto a cuadro completo) → se veía el b-roll a través. AHORA `<Plate dim={}/>`.
+//  D2 · los fondos eran degradés CSS haciendo de pared. AHORA cada acto tiene su `<Backplate/>`.
+//  ⛔ Y el componente `BigStatReveal` del kit (342,7→347,5 · "EL KILO DE BÓRAX $5") caía ENTERO
+//     adentro de este movimiento y se montaba encima: dos capas compitiendo por el mismo cuadro,
+//     que es exactamente cómo nacía el fantasma de doble exposición. Ese precio ahora es NATIVO
+//     del acto 4 (papel + tinta, ⛔ nunca el precio del CURSO: éste es el del kilo de bórax), y el
+//     componente salió de `_v3/clembudo_comps.json`.
 //
-// ══════════════════ TABLA DE HANDOFF ══════════════════════════════════════════════════════════
-// acto 1  MITO — "parece que funcionó"                                   f 0 → 286   (287 f)
-//   enterFrom {cam:{camZ:-0.90, z:1.000, ry:+2.6}, luz:0.300, materia:"— (abre el movimiento)"}
-//   exitTo    {cam:{camZ: 0.00, z:1.014, ry:+1.8}, luz:0.314, materia:"la pared s303 con la mancha"}
-// ── F1 ZOOM-THROUGH ── f 262-290: el plate s303 y la capa `pared` del rig SON LA MISMA FOTO a la
-//    misma escala; la cámara, ya entrando, la atraviesa. Nada aparece: la pared se abre.
-//
-// acto 2  DENTRO DEL PORO — la raíz viva y el agua                       f 287 → 636  (350 f)
-//   enterFrom {cam:{camZ: 0.00, z:1.014, ry:+1.8}, luz:0.314, materia:"la pared s303 → plano L1"}
-//   exitTo    {cam:{camZ: 4.60, z:1.031, ry:+0.3}, luz:0.349, materia:"la BOCA del poro (óvalo oscuro)"}
-// ── F2 MATCH-SHAPE ── f 631-659: el óvalo oscuro de la boca del poro se retira y encaja con el
-//    círculo de moho de s322 en la pared del taller. Misma forma, otra escala. (No repite F1.)
-//
-// acto 3  POR ESO TE LLAMAN — el cliente ya lo intentó   [AVATAR VISIBLE]  f 637 → 836  (200 f)
-//   enterFrom {cam:{camZ: 4.60, z:1.031, ry:+0.3}, luz:0.349, materia:"el círculo de moho s322"}
-//   exitTo    {cam:{camZ: 4.85, z:1.037, ry:-0.4}, luz:0.361, materia:"el balde blanco del piso"}
-// ── F3 OCLUSIÓN ── f 836: el CUERO DEL DELANTAL de Claudio cruza el cuadro (banda de 300% de ancho,
-//    color C.gold = la materia real, ⛔ nunca el color del fondo). MEDIDO: 4 frames de cobertura
-//    100% del ancho, centrados en el swap (el `Occluder` de Stage, a 150% de ancho, da 0 — por eso
-//    va sólo de canto). El balde blanco entra tapado y sale recibiendo el polvo.
-//
-// acto 4  EL BÓRAX — la receta, el precio, el rinde                      f 837 → 1276 (440 f)
-//         (su material sobrevive hasta f 1302, comido por el wipe columna a columna)
-//   enterFrom {cam:{camZ: 4.85, z:1.037, ry:-0.4}, luz:0.361, materia:"el balde blanco"}
-//   exitTo    {cam:{camZ: 5.10, z:1.049, ry:-1.6}, luz:0.397, materia:"el VAPOR del agua caliente"}
-// ── F4 WIPE POR MATERIA ── f 1250-1316: el vapor del agua caliente barre de derecha a izquierda y
-//    el acto 4 se retira con un mask que usa EL MISMO `wipeF` que el vapor: el swap ocurre columna
-//    por columna detrás de la materia. Detrás ya está el poro, montado desde f 1250, mojado y
-//    espumando. El vapor es lo único que existe a los dos lados. (No repite F3.)
-//
-// acto 5  PENETRA Y CRISTALIZA — el mismo poro, otro estado              f 1277 → 1613 (337 f)
-//   enterFrom {cam:{camZ: 5.10, z:1.049, ry:-1.6}, luz:0.397, materia:"el vapor → la espuma del poro"}
-//   exitTo    {cam:{camZ: 5.62, z:1.057, ry:-2.4}, luz:0.427, materia:"el CRISTAL de bórax (plano L8)"}
-// ── F5 MATCH-MOVE ── f 1606-1676: la cámara ya viene retrocediendo desde el cristal; sigue su
-//    vector (camZ 5.62 → 3.30) y el contenido cambia detrás del movimiento. (No repite F4.)
-//
-// acto 6  DE GUARDIA — y la regla más rara del oficio                    f 1614 → 1766 (153 f)
-//   enterFrom {cam:{camZ: 5.62, z:1.057, ry:-2.4}, luz:0.427, materia:"el cristal, alejándose"}
-//   exitTo    {cam:{camZ: 3.30, z:1.066, ry:-3.2}, luz:0.450, materia:"la pared seca → al mov. siguiente"}
 // ═══════════════════════════════════════════════════════════════════════════════════════════════
+// TABLA DE HANDOFF  (cada acto arranca EXACTAMENTE en el exitTo del anterior)
+// ═══════════════════════════════════════════════════════════════════════════════════════════════
+// A1 · EL CLORO NO MATA NADA                                         f 0 → 287   (288 f · 9,6 s)
+//    enterFrom cam {z 1.02, panX  −8, panY  10, ry −3.0, rx  1.4} · luz 0.300
+//              materia: — (del b-roll previo: el galpón y la pared enferma)
+//    exitTo    cam {z 1.07, panX −30, panY   2, ry −1.0, rx  0.6} · luz 0.322
+//              materia: LA SUPERFICIE DECOLORADA donde pasó el trapo (s303), en héroe
+//    protagonista: s302 (vuelca la lavandina y niega a cámara) → s303 (el trapo aclara el borde)
 //
-// COMPUERTAS CORRIDAS: tsc 0 errores propios · 13 rutas verificadas en disco · barrido de los 1767
-// frames (no una muestra): 0 frames con el cuadro descubierto, cobertura mínima 0,941 · ninguna
-// Sequence pide más de los 151 frames reales que tiene cada mp4.
+//    ── FRONTERA 1 @f288 · ZOOM-THROUGH ────────────────────────────────────────────────────────
+//    La cámara ENTRA por la mancha decolorada: la tarjeta crece y adentro ya está el macro del
+//    poro con la gota bajando. Superficie → interior. Es literalmente el argumento del acto.
 //
-// CONTRATO: cero Math.random/Date · cero backdrop-filter · cero blur full-screen · Easing.poly(n)
-// en vez del inexistente Easing.quint · safe area 60px anclada por bottom/right · rampa ≤15 f ·
-// OffthreadVideo SIEMPRE (nunca <Video>) y nunca loopeado: cada clip dura 151 f a rate 1.
+// A2 · EL PORO Y LA RAÍZ                                             f 288 → 689 (402 f · 13,4 s)
+//    enterFrom = exitTo A1                                           · luz 0.322
+//              materia: el poro, ya abierto a cuadro completo
+//    exitTo    cam {z 1.13, panX  26, panY −16, ry  2.2, rx −0.8} · luz 0.352
+//              materia: LA MANCHA QUE VOLVIÓ sobre el parche blanqueado (s306)
+//    protagonista: s304 (la gota y las raíces del hongo) → s306 (volvió en el mismo lugar)
+//
+//    ── FRONTERA 2 @f690 · CORTE EN EL BEAT ────────────────────────────────────────────────────
+//    Corte seco EXACTO en "y por eso el cliente ya te está esperando" (328,50 s · f690). Encuadre,
+//    escala y luz calzan: la pared de A2 y la pared de A3 son el mismo plano y la misma clave.
+//
+// A3 · EL CLIENTE QUE YA LO INTENTÓ                                  f 690 → 915 (226 f · 7,5 s)
+//    enterFrom = exitTo A2                                           · luz 0.352
+//              materia: la mancha que volvió, ahora detrás de Claudio
+//    exitTo    cam {z 1.16, panX  −6, panY −28, ry −1.4, rx −1.2} · luz 0.372
+//              materia: EL BALDE humeante entrando por abajo — el arranque de la receta
+//    protagonista: s301 (dedo en alto, advierte) → s305 (el trapo chorreando, fastidiado)
+//
+//    ── FRONTERA 3 @f916 · WIPE POR MATERIA ────────────────────────────────────────────────────
+//    El POLVO BLANCO cae desde arriba del cuadro (la taza que se vuelca) y detrás ya está la
+//    receta montada. Es materia real atravesando el plano, ⛔ no un fade.
+//
+// A4 · LA RECETA DEL BÓRAX                                           f 916 → 1279 (364 f · 12,1 s)
+//    enterFrom = exitTo A3                                           · luz 0.372
+//              materia: el polvo cayendo en el balde
+//    exitTo    cam {z 1.21, panX  38, panY −44, ry  3.4, rx −1.6} · luz 0.408
+//              materia: EL BALDE cargado — que en la frontera se vuelve la boca del poro
+//    protagonista: s307/s308 (la taza colmada) → s309 (revuelve) → s310 (la fila de baldes)
+//    (f1118: el precio del KILO, nativo, en papel: 2 a 5 dólares · 16 litros. ⛔ no es el curso.)
+//
+//    ── FRONTERA 4 @f1280 · MATCH-SHAPE ────────────────────────────────────────────────────────
+//    El círculo del balde visto desde arriba se convierte en la boca del poro: el mismo círculo,
+//    la misma posición, la misma inercia — cambia la escala, no la forma.
+//
+// A5 · EL MECANISMO: baja con el agua y se queda cristalizado        f 1280 → 1617 (338 f · 11,3 s)
+//    enterFrom = exitTo A4                                           · luz 0.408
+//              materia: la boca del poro
+//    exitTo    cam {z 1.17, panX −24, panY −20, ry −2.0, rx −0.6} · luz 0.437
+//              materia: LOS CRISTALES tapizando el poro seco (s312)
+//    protagonista: s311 (la solución baja a la raíz) → s312 (el bórax cristalizado)
+//
+//    ── FRONTERA 5 @f1618 · OCLUSIÓN ───────────────────────────────────────────────────────────
+//    El cuero del delantal cruza el cuadro (#B5854F, luma ≈131 — ⛔ NO el color del fondo) y
+//    detrás ya está el careo final. Cambio de tema fuerte: del mecanismo al veredicto.
+//
+// A6 · CLORO SE VA · BÓRAX SE QUEDA DE GUARDIA                       f 1618 → 1766 (149 f · 5,0 s)
+//    enterFrom = exitTo A5                                           · luz 0.437
+//              materia: el cuero se despeja sobre las DOS manos de s313
+//    exitTo    cam {z 1.10, panX  10, panY   0, ry  0.6, rx  0.0} · luz 0.450
+//              materia: la taza en alto — el open loop de "la regla más rara del oficio"
+//    protagonista: s313 (la botella vacía boca abajo vs la taza de polvo en alto)
+//
+// COSTURAS EN ORDEN: ZOOM-THROUGH · CORTE EN EL BEAT · WIPE POR MATERIA · MATCH-SHAPE · OCLUSIÓN
+// (⛔ ninguna es un fade · ⛔ no hay dos seguidas iguales)
+//
+// ⛔ Los clips duran 5,04 s (151 f): ninguna Sequence pide más de 150 frames. Cero `loop`.
+// ⛔ Math.random / Date.now: cero. ⛔ backdrop-filter: cero. ⛔ <Video>: cero.
 import React from "react";
+import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import {
-  AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile,
-  useCurrentFrame, interpolate, Easing,
-} from "remotion";
-import { C, FONT, SAFE, W, H, cam, camStyle, luz, rng, Atmos, Glass, Head, Kick, Occluder, rampIn } from "./Stage";
+  Atmos, Backplate, C, Ground, Ink, Kick, Lower, LowerBed, Mat, Occluder, Paper, Plate,
+  cam, camStyle, luz, rampIn, rng,
+} from "./Stage";
 
 const DUR = 1767;
 
-// ── fronteras de acto (frame exacto) ───────────────────────────────────────────────────────────
-const A2 = 287, A3 = 637, A4 = 837, A5 = 1277, A6 = 1614;
+const A2 = 288;   // 315,10 "pero el agua se mete en el poro"
+const A3 = 690;   // 328,50 "y por eso el cliente ya te está esperando"
+const A4 = 916;   // 336,02 "250 gramos, una taza bien llena, en 4 litros"
+const A5 = 1280;  // 348,16 "penetra en el poro junto con el agua"
+const A6 = 1618;  // 359,44 "el cloro se evapora entero y no deja nada"
 
-const img = (n: string) => staticFile(`img/clembudo/${n}.png`);
-const vid = (n: string) => staticFile(`broll/clembudo/${n}.mp4`);
+const EZ = Easing.bezier(0.22, 0.61, 0.24, 1);
+const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
+const ramp = (f: number, a: number, b: number, e = EZ) =>
+  interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
 
-// ── CLIP — OffthreadVideo con su propio reloj. La Sequence es SÓLO para resetear el tiempo del
-// video; nada de adentro lee useCurrentFrame, así que la cámara global no se entera.
-// ⛔ `loop` no es prop de OffthreadVideo: cada aparición dura como mucho 151/rate frames.
-const Clip: React.FC<{ src: string; from: number; dur: number; rate?: number; pos?: string }> =
-  ({ src, from, dur, rate = 1, pos = "center" }) => (
-    <Sequence from={from} durationInFrames={dur} layout="none">
-      <OffthreadVideo
-        src={vid(src)}
-        muted
-        playbackRate={rate}
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: pos }}
-      />
-    </Sequence>
-  );
-
-// ══════════════════════════════════════════════════════════════════════════════════════════════
-// EL RIG DEL PORO — 8 planos con profundidad REAL. Proyección de cámara: cuanto más chico es
-// (depth - camZ), más grande y más cerca está el plano; cuando se vuelve negativo el plano quedó
-// DETRÁS de la cámara y se apaga. Eso es lo que hace que el zoom-through se sienta como entrar en
-// la pared, y no como un scale sobre una foto.
-// ══════════════════════════════════════════════════════════════════════════════════════════════
-const K = 2.2;
-
-const camZ = (f: number) =>
-  interpolate(
-    f,
-    [0, A2, A3 - 1, A4 - 1, 1276, 1420, 1613, DUR],
-    [-0.9, 0.0, 4.6, 4.85, 5.1, 5.45, 5.62, 3.3],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.3, 0.02, 0.22, 1) },
-  );
-
-type Plano = { depth: number; base: number; seed: number };
-
-const P: Record<string, Plano> = {
-  pared:   { depth: 0.8,  base: 0.42, seed: 3 },
-  halo:    { depth: 1.45, base: 0.62, seed: 11 },
-  labio:   { depth: 2.2,  base: 0.8,  seed: 19 },
-  boca:    { depth: 3.05, base: 0.86, seed: 27 },
-  gargant: { depth: 3.95, base: 0.86, seed: 35 },
-  hilos:   { depth: 4.85, base: 0.88, seed: 43 },
-  raiz:    { depth: 6.6,  base: 0.79, seed: 51 },
-  cristal: { depth: 7.2,  base: 0.72, seed: 59 },
-};
-
-const depthClamp = (d: number) => (d < 0.1 ? 0.1 : d);
-
-// proyección + parallax propio por plano (cada capa deriva distinto: eso es el parallax)
-const proj = (p: Plano, cz: number, f: number) => {
-  const d = depthClamp(p.depth - cz);
-  const s = (K / d) * p.base;
-  const o =
-    interpolate(d, [0.1, 0.34, 0.8], [0, 0.55, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) *
-    interpolate(d, [3.4, 8.2], [1, 0.28], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const amp = 26 / d;
-  const dx = Math.sin((f + p.seed * 37) / (88 + p.seed)) * amp;
-  const dy = Math.cos((f + p.seed * 23) / (111 + p.seed)) * amp * 0.62;
-  return { s, o, dx, dy, d };
-};
-
-const Plate3D: React.FC<{
-  p: Plano; cz: number; f: number; on: number; mask?: string;
-  blend?: React.CSSProperties["mixBlendMode"]; children: React.ReactNode;
-}> = ({ p, cz, f, on, mask, blend, children }) => {
-  const { s, o, dx, dy } = proj(p, cz, f);
-  if (o * on <= 0.004) return null;
-  return (
-    <div
-      style={{
-        position: "absolute", left: "50%", top: "50%",
-        width: W, height: H, marginLeft: -W / 2, marginTop: -H / 2,
-        transform: `translate3d(${dx}px, ${dy}px, 0) scale(${s})`,
-        transformOrigin: "50% 50%",
-        opacity: o * on,
-        mixBlendMode: blend,
-        ...(mask ? { WebkitMaskImage: mask, maskImage: mask } : {}),
-        willChange: "transform, opacity",
-      }}
-    >
-      {children}
-    </div>
-  );
-};
-
-// el labio y la boca del poro son ANILLOS, no discos: así se ve el HUECO, no una foto pegada
-const ANILLO_LABIO = "radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 21%, rgba(0,0,0,1) 32%, rgba(0,0,0,1) 78%, rgba(0,0,0,0) 96%)";
-const ANILLO_BOCA = "radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 15%, rgba(0,0,0,1) 26%, rgba(0,0,0,1) 62%, rgba(0,0,0,0) 84%)";
-const DISCO_FONDO = "radial-gradient(circle at 50% 50%, rgba(0,0,0,1) 42%, rgba(0,0,0,0.55) 68%, rgba(0,0,0,0) 90%)";
-
-// ── HILOS de agua / espuma bajando por la garganta (el agua que le da de beber a la raíz) ───────
-const Hilos: React.FC<{ f: number; n: number; tono: string; vel: number }> = ({ f, n, tono, vel }) => (
-  <>
-    {new Array(n).fill(0).map((_, i) => {
-      const x = 8 + rng(71, i) * 84;
-      const len = 90 + rng(83, i) * 260;
-      const y = ((rng(97, i) * 1400 + f * vel * (0.6 + rng(101, i))) % 1500) - 200;
-      const w = 2 + rng(107, i) * 5;
-      const o = 0.16 + rng(113, i) * 0.4;
-      return (
-        <div
-          key={i}
-          style={{
-            position: "absolute", left: `${x}%`, top: y, width: w, height: len,
-            borderRadius: w, opacity: o,
-            background: `linear-gradient(180deg, rgba(255,255,255,0) 0%, ${tono} 34%, ${tono} 72%, rgba(255,255,255,0) 100%)`,
-          }}
-        />
-      );
-    })}
-  </>
-);
-
-// ── CRISTALES de bórax: no se dibujan de la nada, CRECEN cuando el agua se evapora ──────────────
-const Cristales: React.FC<{ f: number; k: number }> = ({ f, k }) => (
-  <>
-    {new Array(34).fill(0).map((_, i) => {
-      const t0 = rng(131, i) * 0.55;
-      const t = interpolate(k, [t0, t0 + 0.38], [0, 1], {
-        extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.poly(3)),
-      });
-      if (t <= 0.002) return null;
-      const a = rng(137, i) * Math.PI * 2;
-      const r = 14 + rng(139, i) * 30;
-      const sz = (16 + rng(149, i) * 46) * t;
-      const rot = rng(151, i) * 360 + Math.sin((f + i * 17) / 140) * 4;
-      return (
-        <div
-          key={i}
-          style={{
-            position: "absolute",
-            left: `${50 + Math.cos(a) * r}%`, top: `${50 + Math.sin(a) * r * 0.82}%`,
-            width: sz, height: sz * (0.7 + rng(157, i) * 0.6),
-            marginLeft: -sz / 2, marginTop: -sz / 2,
-            transform: `rotate(${rot}deg)`,
-            borderRadius: "38% 62% 55% 45% / 48% 42% 58% 52%",
-            background: "linear-gradient(142deg, rgba(255,253,246,0.96) 0%, rgba(232,226,208,0.78) 44%, rgba(255,255,255,0.92) 100%)",
-            boxShadow: "inset 0 1px 0 rgba(255,255,255,0.95), inset 0 -2px 4px rgba(42,38,32,0.22), 0 2px 8px rgba(42,38,32,0.3)",
-            opacity: 0.5 + t * 0.5,
-          }}
-        />
-      );
-    })}
-  </>
-);
-
-// ── F3 · EL CUERO DEL DELANTAL — la materia que ocluye ──────────────────────────────────────────
-// ⛔⛔ El color NO es el del fondo (eso no ocluye: hace un fundido a negro y se ve un flash). Es
-// C.gold, el cuero del delantal de Claudio. Ancho 300% para que la cobertura 100% dure ~7 frames
-// centrada en el swap; el `Occluder` de Stage, a 150%, cubre el cuadro entero menos de 1 frame, así
-// que va DETRÁS como el canto brillante que entra primero, no como el cuerpo de la banda.
-const Cuero: React.FC<{ at: number; len?: number }> = ({ at, len = 15 }) => {
-  const f = useCurrentFrame();
-  if (f < at - len || f > at + len) return null;
-  const L = interpolate(f, [at - len, at + len], [-330, 170], {
-    extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic),
-  });
-  return (
-    <div
-      style={{
-        position: "absolute", left: `${L}%`, top: "-24%", width: "300%", height: "148%",
-        transform: "rotate(-7deg)",
-        background: `linear-gradient(96deg, rgba(0,0,0,0) 0%, #6E4B2C 5%, ${C.gold} 16%, #B98A58 38%, ${C.gold} 62%, #7A5432 92%, rgba(0,0,0,0) 100%)`,
-        boxShadow: "inset 0 22px 46px rgba(42,26,12,0.45), inset 0 -26px 50px rgba(42,26,12,0.5)",
-      }}
-    >
-      {/* costura del delantal: la banda es un objeto de la escena, no una cortina */}
-      <div style={{ position: "absolute", left: 0, right: 0, top: "27%", height: 3, background: "repeating-linear-gradient(90deg, rgba(58,38,20,0.75) 0 16px, rgba(0,0,0,0) 16px 30px)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: "24%", height: 3, background: "repeating-linear-gradient(90deg, rgba(58,38,20,0.7) 0 16px, rgba(0,0,0,0) 16px 30px)" }} />
-      <div style={{ position: "absolute", inset: 0, background: "repeating-linear-gradient(72deg, rgba(255,228,190,0.05) 0 3px, rgba(60,38,18,0.06) 3px 7px)" }} />
-    </div>
-  );
-};
-
-// ── TIPOGRAFÍA del movimiento: UN solo bloque por acto, anclado por bottom, con cama oscura ──────
-const Bloque: React.FC<{ f: number; at: number; kick: string; head: string; side?: "left" | "right"; w?: number }> =
-  ({ f, at, kick, head, side = "left", w = 760 }) => {
-    const k = rampIn(f - at, 13);
-    if (k <= 0.004) return null;
-    return (
-      <div
-        style={{
-          position: "absolute", bottom: SAFE + 34,
-          ...(side === "left" ? { left: SAFE + 18 } : { right: SAFE + 18 }),
-          width: w, opacity: k, transform: `translateY(${(1 - k) * 34}px)`,
-          textAlign: side === "left" ? "left" : "right",
-        }}
-      >
-        <div
-          style={{
-            display: "inline-block", padding: "22px 30px 26px", textAlign: "left",
-            background: "linear-gradient(180deg, rgba(24,20,15,0.06) 0%, rgba(24,20,15,0.62) 42%, rgba(24,20,15,0.74) 100%)",
-            borderLeft: side === "left" ? `4px solid ${C.gold}` : undefined,
-            borderRight: side === "right" ? `4px solid ${C.gold}` : undefined,
-            borderRadius: 4,
-          }}
-        >
-          <Kick size={30}>{kick}</Kick>
-          <div style={{ height: 12 }} />
-          <div style={{ whiteSpace: "pre-line" }}>
-            <Head size={62}>{head}</Head>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
-// ── FICHA DE CIFRA del acto 4: UNA sola tarjeta que cambia de valor (no cuatro tarjetas) ────────
-const CIFRAS: { at: number; big: string; small: string }[] = [
-  { at: 916, big: "250 g", small: "una taza bien llena" },
-  { at: 1030, big: "4 litros", small: "de agua lo más caliente que puedas" },
-  { at: 1115, big: "US$ 2 a 5", small: "el kilo" },
-  { at: 1208, big: "16 litros", small: "lo que rinde ese kilo" },
+type CamK = { z: number; panX: number; panY: number; ry: number; rx: number };
+const LEGS: Array<[number, CamK]> = [
+  [0,   { z: 1.02, panX:  -8, panY:  10, ry: -3.0, rx:  1.4 }],
+  [A2,  { z: 1.07, panX: -30, panY:   2, ry: -1.0, rx:  0.6 }],
+  [A3,  { z: 1.13, panX:  26, panY: -16, ry:  2.2, rx: -0.8 }],
+  [A4,  { z: 1.16, panX:  -6, panY: -28, ry: -1.4, rx: -1.2 }],
+  [A5,  { z: 1.21, panX:  38, panY: -44, ry:  3.4, rx: -1.6 }],
+  [A6,  { z: 1.17, panX: -24, panY: -20, ry: -2.0, rx: -0.6 }],
+  [DUR, { z: 1.10, panX:  10, panY:   0, ry:  0.6, rx:  0.0 }],
 ];
-
-const Ficha: React.FC<{ f: number }> = ({ f }) => {
-  if (f < CIFRAS[0].at - 10 || f > 1268) return null;
-  let idx = 0;
-  for (let i = 0; i < CIFRAS.length; i++) if (f >= CIFRAS[i].at) idx = i;
-  const cur = CIFRAS[idx];
-  const local = f - cur.at;
-  const k = rampIn(local + 8, 12) * interpolate(f, [1252, 1268], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  // el cambio de valor NO remonta la ficha: la vuelve a apoyar
-  const pop = interpolate(local, [0, 7, 18], [0.955, 1.022, 1], {
-    extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.poly(3)),
-  });
-  const respira = 1 + Math.sin(f / 46) * 0.006;
-  return (
-    <div
-      style={{
-        position: "absolute", right: SAFE + 22, bottom: SAFE + 40,
-        transform: `scale(${pop * respira})`, transformOrigin: "100% 100%", opacity: k,
-      }}
-    >
-      <div
-        style={{
-          padding: "26px 40px 30px", minWidth: 430, maxWidth: 520, textAlign: "right",
-          background: "linear-gradient(178deg, rgba(247,241,223,0.96) 0%, rgba(226,216,191,0.94) 100%)",
-          borderRadius: 8,
-          boxShadow: "0 26px 60px rgba(42,38,32,0.42), 0 4px 10px rgba(42,38,32,0.3), inset 0 1px 0 rgba(255,252,242,0.9)",
-          borderTop: `5px solid ${C.accent}`,
-        }}
-      >
-        <div style={{ fontFamily: FONT, fontSize: 96, fontWeight: 800, color: C.ink, lineHeight: 0.96, letterSpacing: -2 }}>{cur.big}</div>
-        <div style={{ fontFamily: FONT, fontSize: 32, fontWeight: 600, color: C.inkSoft, marginTop: 10, lineHeight: 1.16 }}>{cur.small}</div>
-      </div>
-    </div>
-  );
+const camAt = (f: number): CamK => {
+  let i = 0;
+  for (let j = 0; j < LEGS.length - 1; j++) if (f >= LEGS[j][0]) i = j;
+  const [fa, A] = LEGS[i];
+  const [fb, B] = LEGS[i + 1];
+  const k = ramp(f, fa, fb);
+  const d = cam(f, DUR);
+  return {
+    z: lerp(A.z, B.z, k) * d.z,
+    panX: lerp(A.panX, B.panX, k) + d.panX,
+    panY: lerp(A.panY, B.panY, k) + d.panY,
+    ry: lerp(A.ry, B.ry, k),
+    rx: lerp(A.rx, B.rx, k),
+  };
 };
 
-// ═══════════════════════════════════════════════════════════════════════════════════════════════
 export const MovCloroBorax: React.FC = () => {
   const f = useCurrentFrame();
-  const cz = camZ(f);
-  const t = luz(f, DUR, 0.3, 0.45);
-  const c = cam(f, DUR, { z: 1.0, ry: 2.6, panX: -16 }, { z: 1.066, ry: -3.2, panX: 14 });
-  const boot = rampIn(f, 14);
+  const K = camAt(f);
+  const L = luz(f, DUR, 0.30, 0.45);
+  const rin = rampIn(f, 14);
 
-  // F4 · frente del wipe de vapor, en % de ancho. El mask del acto 4 y el vapor comparten este
-  // número: por eso el swap ocurre columna por columna DETRÁS de la materia, sin un frame al aire.
-  const wipeF = interpolate(f, [1256, 1302], [108, -8], {
-    extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.poly(3)),
-  });
+  // A1 · la superficie decolorada, que es por donde entra la cámara en la frontera 1
+  const sup = ramp(f, 110, 180, Easing.out(Easing.cubic));
+  const supZoom = ramp(f, A2 - 34, A2 + 10, Easing.in(Easing.poly(3)));   // ZOOM-THROUGH
 
-  // ventanas de material. Cortes DUROS en las fronteras: la costura las tapa.
-  const enA1 = f < A2 + 3;
-  const poroOn = f < 262 ? 0 : f < A3 ? 1 : f < 1250 ? 0 : f < A6 + 92 ? 1 : 0;
-  const enA3 = f >= A3 - 6 && f < A4;
-  const enA4 = f >= A4 - 6 && f < 1306;
-  const enA6 = f >= A6 - 8;
+  // A2 · la mancha que volvió sobre el parche blanqueado
+  const volvio = ramp(f, 612, 672, Easing.out(Easing.cubic)) * (1 - ramp(f, A3 + 60, A3 + 100, Easing.in(Easing.cubic)));
 
-  // estado del poro: 0 = seco, la raíz viva bebiendo (acto 2) · 1 = mojado con bórax (acto 5)
-  const estado = interpolate(f, [1256, 1300], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const kCristal = interpolate(f, [1392, 1560], [0, 1], {
-    extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.poly(3)),
-  });
+  // FRONTERA 3 · WIPE POR MATERIA: el polvo blanco cae y detrás ya está la receta
+  const polvo = ramp(f, A4 - 22, A4 + 26, Easing.inOut(Easing.cubic));
+
+  // A4 · la receta: la taza, el balde, la fila de baldes cargados
+  const taza = ramp(f, A4 + 18, A4 + 74, Easing.out(Easing.cubic)) * (1 - ramp(f, 1080, 1118, Easing.in(Easing.cubic)));
+  const baldes = ramp(f, 1214, 1268, Easing.out(Easing.cubic)) * (1 - ramp(f, A5 - 14, A5 + 10, Easing.in(Easing.cubic)));
+  const precio = ramp(f, 1118, 1156, Easing.out(Easing.poly(4))) * (1 - ramp(f, 1244, 1276, Easing.in(Easing.cubic)));
+
+  // A5 · el mecanismo. El balde (círculo) se vuelve la boca del poro: MATCH-SHAPE.
+  const poro = ramp(f, A5 - 20, A5 + 40, Easing.inOut(Easing.poly(3)));
+  const cristal = ramp(f, 1408, 1470, Easing.out(Easing.cubic)) * (1 - ramp(f, A6 - 20, A6, Easing.in(Easing.cubic)));
+
+  // A6 · el careo final
+  const careo = ramp(f, A6 + 6, A6 + 56, Easing.out(Easing.cubic));
 
   return (
-    <AbsoluteFill style={{ opacity: boot }}>
-      {/* ═══ ESCENARIO ÚNICO: una sola cámara, un solo espacio 3D. NUNCA se remonta. ═══ */}
-      <AbsoluteFill style={{ ...camStyle(c), overflow: "hidden" }}>
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <AbsoluteFill style={camStyle(K)}>
+        {/* D2 · cada acto tiene MATERIAL REAL de fondo, ⛔ nunca un degradé haciendo de pared */}
+        {f < A2 + 26 ? <Backplate img="clembudo_s302" clip="clembudo_s302" from={8} dur={150} rate={0.86} z={-600} scale={1.42} veil={0.5} /> : null}
+        {f >= A2 && f < A3 + 26 ? <Backplate img="clembudo_s304" clip="clembudo_s304" from={A2 + 4} dur={150} rate={0.84} z={-600} scale={1.4} veil={0.52} /> : null}
+        {f >= A3 && f < A4 + 26 ? <Backplate img="clembudo_s301" clip="clembudo_s301" from={A3 + 4} dur={150} rate={0.86} z={-600} scale={1.4} veil={0.5} /> : null}
+        {f >= A4 && f < A5 + 26 ? <Backplate img="clembudo_s309" clip="clembudo_s309" from={A4 + 4} dur={150} rate={0.86} z={-600} scale={1.4} veil={0.52} /> : null}
+        {f >= A5 && f < A6 + 26 ? <Backplate img="clembudo_s311" clip="clembudo_s311" from={A5 + 4} dur={150} rate={0.84} z={-600} scale={1.4} veil={0.52} /> : null}
+        {f >= A6 ? <Backplate img="clembudo_s313" clip="clembudo_s313" from={A6 + 4} dur={148} rate={0.9} z={-600} scale={1.38} veil={0.48} /> : null}
 
-        {/* ─────────── ACTO 1 · MITO — el cloro que sólo decolora ─────────── */}
-        {enA1 ? (
-          <AbsoluteFill
-            style={{ opacity: interpolate(f, [A2 - 2, A2 + 2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}
+        {/* el piso del galpón: gira sobre su borde INFERIOR y hacia atrás (⛔ jamás se adelanta) */}
+        <Ground y={1250} h={1300} z0={-250} tilt={63} veil={0.64} />
+
+        {/* ═══ A1 → F1 · LA SUPERFICIE DECOLORADA, por donde ENTRA la cámara ═══════════════════ */}
+        {f < A2 + 14 ? (
+          <Plate
+            cx={lerp(lerp(1340, 1010, sup), 960, supZoom)}
+            cy={lerp(lerp(600, 512, sup), 540, supZoom)}
+            w={lerp(lerp(440, 1000, sup), 1000 * 6.5, supZoom)}
+            z={lerp(lerp(-240, 180, sup), 880, supZoom)}
+            ry={lerp(lerp(-22, -5, sup), 0, supZoom)}
+            dim={(1 - sup) * 0.62} lift={1.35}
           >
-            {/* el cloro entrando al balde */}
-            <div style={{ position: "absolute", inset: 0, transform: `scale(${1.05 + f * 0.00022})` }}>
-              <Clip src="clembudo_s302" from={0} dur={150} rate={1} />
-            </div>
-
-            {/* la pared que se decolora — a partir de f 118. Esta MISMA foto es la capa `pared`
-                del rig del poro: por eso la frontera F1 no se ve. */}
-            <div
-              style={{
-                position: "absolute", inset: 0,
-                opacity: interpolate(f, [116, 132], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
-                transform: `scale(${1.02 + (f - 118) * 0.00028})`,
-              }}
-            >
-              <Clip src="clembudo_s303" from={118} dur={150} rate={1} />
-              {/* el hipoclorito ACLARA la superficie: el velo sube justo donde pasa el trapo */}
-              <div
-                style={{
-                  position: "absolute", inset: 0, mixBlendMode: "screen",
-                  background: "radial-gradient(58% 46% at 47% 41%, rgba(255,252,244,0.86) 0%, rgba(255,252,244,0.34) 52%, rgba(255,252,244,0) 82%)",
-                  opacity: interpolate(f, [150, 232], [0, 0.92], {
-                    extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.sin),
-                  }),
-                }}
-              />
-            </div>
-
-            {/* tarjeta flotante con MATERIAL REAL adentro: la mancha ya "limpia" */}
-            <div style={{ position: "absolute", inset: 0, perspective: 1500, transformStyle: "preserve-3d" }}>
-              {(() => {
-                const k = rampIn(f - 74, 14);
-                const out = interpolate(f, [238, 262], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-                if (k <= 0.004 || out <= 0.004) return null;
-                const fl = Math.sin((f - 74) / 62) * 6;
-                return (
-                  <div
-                    style={{
-                      position: "absolute", inset: 0, opacity: k * out,
-                      transformStyle: "preserve-3d", transform: `translateY(${(1 - k) * 40}px)`,
-                    }}
-                  >
-                    <Glass x={1050} y={168} w={700} h={438} z={120} ry={-11 + fl * 0.4} rx={3} radius={10} lift={1.25}>
-                      <Img src={img("clembudo_s305")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(184deg, rgba(0,0,0,0) 52%, rgba(20,16,11,0.72) 100%)" }} />
-                      <div
-                        style={{
-                          position: "absolute", left: 26, bottom: 22,
-                          fontFamily: FONT, fontSize: 34, fontWeight: 700, color: "#F7F1DF",
-                          textShadow: "0 2px 10px rgba(0,0,0,0.8)",
-                        }}
-                      >
-                        parece que funcionó
-                      </div>
-                    </Glass>
-                  </div>
-                );
-              })()}
-            </div>
-
-            <Bloque f={f} at={16} kick="EL MITO MÁS CARO" head={"El cloro sólo decolora\nla superficie"} w={800} />
-          </AbsoluteFill>
+            <Mat img="clembudo_s303" clip="clembudo_s303" from={116} dur={150} rate={0.86} kb={1.05} />
+          </Plate>
         ) : null}
 
-        {/* ─────────── RIG DEL PORO · actos 2 y 5 (el MISMO poro, dos estados) ─────────── */}
-        {poroOn > 0 ? (
-          <AbsoluteFill style={{ transformStyle: "preserve-3d" }}>
-            {/* L1 · la pared de lejos — la misma foto del acto 1: por eso F1 no se ve */}
-            <Plate3D p={P.pared} cz={cz} f={f} on={poroOn}>
-              <Img src={img("clembudo_s303")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-            </Plate3D>
-
-            {/* L2 · el halo decolorado alrededor de la mancha */}
-            <Plate3D p={P.halo} cz={cz} f={f} on={poroOn}>
-              <Img src={img("clembudo_s305")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              <div style={{ position: "absolute", inset: 0, background: "radial-gradient(46% 40% at 50% 50%, rgba(20,16,11,0.55) 0%, rgba(20,16,11,0) 74%)" }} />
-            </Plate3D>
-
-            {/* L3 · el labio exterior del poro (anillo) */}
-            <Plate3D p={P.labio} cz={cz} f={f} on={poroOn} mask={ANILLO_LABIO}>
-              <Img src={img("clembudo_s304")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.16)" }} />
-            </Plate3D>
-
-            {/* L4 · la boca (anillo interior) — el óvalo oscuro que en F2 se vuelve el círculo de s322 */}
-            <Plate3D p={P.boca} cz={cz} f={f} on={poroOn} mask={ANILLO_BOCA}>
-              <Img src={img("clembudo_s304")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.62) rotate(6deg)" }} />
-              <div style={{ position: "absolute", inset: 0, background: "radial-gradient(38% 34% at 50% 50%, rgba(14,11,7,0.86) 0%, rgba(14,11,7,0) 72%)" }} />
-            </Plate3D>
-
-            {/* L5 · la garganta: el pozo. Acá no hay foto que alcance — es aire oscuro y pared curva */}
-            <Plate3D p={P.gargant} cz={cz} f={f} on={poroOn}>
-              <div
-                style={{
-                  position: "absolute", inset: 0,
-                  background: "radial-gradient(52% 46% at 50% 47%, rgba(9,7,5,0.96) 0%, rgba(26,20,14,0.88) 44%, rgba(58,46,33,0.5) 72%, rgba(0,0,0,0) 92%)",
-                }}
-              />
-              <div
-                style={{
-                  position: "absolute", inset: 0, mixBlendMode: "screen",
-                  background: `radial-gradient(60% 52% at 34% 26%, rgba(255,240,206,${0.1 + t * 0.14}) 0%, rgba(255,240,206,0) 58%)`,
-                }}
-              />
-            </Plate3D>
-
-            {/* L6 · el agua bajando por la garganta — turbia en el acto 2, ESPUMA de bórax en el 5 */}
-            <Plate3D p={P.hilos} cz={cz} f={f} on={poroOn} mask={DISCO_FONDO}>
-              <div style={{ position: "absolute", inset: 0, opacity: 1 - estado }}>
-                <Hilos f={f} n={16} tono="rgba(196,214,226,0.82)" vel={5.2} />
-              </div>
-              {estado > 0.01 ? (
-                <div style={{ position: "absolute", inset: 0, opacity: estado }}>
-                  <Clip src="clembudo_s311" from={1256} dur={151} rate={1} />
-                  <div style={{ position: "absolute", inset: 0 }}>
-                    <Hilos f={f} n={22} tono="rgba(255,255,255,0.9)" vel={6.6} />
-                  </div>
-                </div>
-              ) : null}
-            </Plate3D>
-
-            {/* L7 · LA RAÍZ al fondo del poro. Viva y latiendo en el acto 2; sepultada en el 5 */}
-            <Plate3D p={P.raiz} cz={cz} f={f} on={poroOn} mask={DISCO_FONDO}>
-              <div style={{ position: "absolute", inset: 0, transform: `scale(${1.06 + Math.sin(f / 54) * 0.018})` }}>
-                <Img src={img("clembudo_s312")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.5)" }} />
-              </div>
-              <div
-                style={{
-                  position: "absolute", inset: 0, mixBlendMode: "multiply",
-                  background: `radial-gradient(30% 26% at 50% 52%, rgba(72,44,20,${0.55 + Math.sin(f / 38) * 0.13}) 0%, rgba(72,44,20,0) 70%)`,
-                  opacity: 1 - estado * 0.55,
-                }}
-              />
-              <div
-                style={{
-                  position: "absolute", inset: 0, mixBlendMode: "screen",
-                  background: `radial-gradient(34% 30% at 50% 50%, rgba(176,80,60,${(0.16 + Math.sin(f / 31) * 0.07) * (1 - estado)}) 0%, rgba(176,80,60,0) 66%)`,
-                }}
-              />
-            </Plate3D>
-
-            {/* L8 · EL CRISTAL DE GUARDIA — crece cuando el agua se evapora (actos 5 y 6) */}
-            {kCristal > 0.002 ? (
-              <Plate3D p={P.cristal} cz={cz} f={f} on={poroOn} mask={DISCO_FONDO}>
-                <Img src={img("clembudo_s312")} style={{ width: "100%", height: "100%", objectFit: "cover", opacity: 0.9 }} />
-                <div style={{ position: "absolute", inset: 0 }}>
-                  <Cristales f={f} k={kCristal} />
-                </div>
-                <div
-                  style={{
-                    position: "absolute", inset: 0, mixBlendMode: "screen",
-                    background: `radial-gradient(40% 36% at 44% 40%, rgba(255,252,240,${0.12 + kCristal * 0.2 + Math.sin(f / 44) * 0.04}) 0%, rgba(255,252,240,0) 70%)`,
-                  }}
-                />
-              </Plate3D>
-            ) : null}
-
-            {/* L9 · motas suspendidas DELANTE de todo: el plano más cercano, parallax manual */}
-            <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
-              {new Array(22).fill(0).map((_, i) => {
-                const a = rng(163, i) * Math.PI * 2;
-                const r = 6 + rng(167, i) * 62;
-                const push = 1 + cz * 0.42;
-                const x = 50 + Math.cos(a) * r * push;
-                const y = 50 + Math.sin(a) * r * push * 0.78 + Math.sin((f + i * 29) / 74) * 1.6;
-                if (x < -12 || x > 112 || y < -12 || y > 112) return null;
-                const sz = (2 + rng(173, i) * 5) * push;
-                return (
-                  <div
-                    key={i}
-                    style={{
-                      position: "absolute", left: `${x}%`, top: `${y}%`, width: sz, height: sz,
-                      borderRadius: "50%", background: "#FFF4DC",
-                      opacity: (0.1 + rng(179, i) * 0.2) * poroOn,
-                    }}
-                  />
-                );
-              })}
-            </div>
-
-            {f >= A2 && f < A3 ? (
-              <Bloque f={f} at={A2 + 118} kick="ADENTRO DEL PORO" head={"Le sacaste el color\ny le diste de beber"} w={820} />
-            ) : null}
-            {f >= A5 && f < A6 ? (
-              <Bloque f={f} at={1396} kick="Y AL EVAPORARSE" head={"Queda cristalizado\ndentro del poro"} side="right" w={760} />
-            ) : null}
-          </AbsoluteFill>
-        ) : null}
-
-        {/* ─────────── ACTO 3 · EL CLIENTE — avatar VISIBLE, elementos a los lados ─────────── */}
-        {enA3 ? (
-          <AbsoluteFill>
-            {/* la boca del poro aterriza como el CÍRCULO de moho de s322 (F2 MATCH-SHAPE) y se
-                retira al tercio izquierdo, dejando el derecho libre para el avatar */}
-            {(() => {
-              const k = interpolate(f, [A3 - 6, A3 + 22], [0, 1], {
-                extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.poly(4)),
-              });
-              // ⛔ nada de fade de salida: el acto 3 corta DURO en 837, debajo del cuero.
-              // (Medido: un fade de 22 frames acá dejaba la cobertura en 0,50 antes de la oclusión.)
-              const s = interpolate(k, [0, 1], [2.3, 1], { extrapolateRight: "clamp" });
-              const ox = interpolate(k, [0, 1], [0, -318], { extrapolateRight: "clamp" });
-              return (
-                <div
-                  style={{
-                    position: "absolute", left: 0, top: 0, width: W, height: H,
-                    transform: `translateX(${ox}px) scale(${s})`, transformOrigin: "50% 50%",
-                  }}
-                >
-                  <Clip src="clembudo_s322" from={A3 - 6} dur={200} rate={0.75} />
-                  <div
-                    style={{
-                      position: "absolute", inset: 0,
-                      background: `linear-gradient(96deg, rgba(20,16,11,0) 0%, rgba(20,16,11,0) 44%, rgba(20,16,11,${0.55 * k}) 72%, rgba(20,16,11,${0.9 * k}) 100%)`,
-                    }}
-                  />
-                </div>
-              );
-            })()}
-
-            {/* el avatar respira por el tercio derecho. ⛔ nada le tapa boca ni mentón */}
-            <div
-              style={{
-                position: "absolute", right: SAFE, top: SAFE + 46, width: 540,
-                opacity: rampIn(f - (A3 + 58), 14), textAlign: "right",
-              }}
-            >
-              <Kick size={30}>POR ESO TE LLAMAN</Kick>
-              <div style={{ height: 14 }} />
-              <div style={{ whiteSpace: "pre-line" }}>
-                <Head size={58} align="left">{"Ya lo intentó.\nLe falló."}</Head>
-              </div>
-            </div>
-
-            {/* el balde blanco del piso: la materia que cruza hacia el acto 4, ya en su sitio */}
-            <div
-              style={{
-                position: "absolute", left: SAFE + 26, bottom: SAFE + 6, width: 300, height: 300,
-                opacity: rampIn(f - (A3 + 96), 12), transformStyle: "preserve-3d",
-              }}
-            >
-              <Glass x={0} y={0} w={300} h={300} z={70} ry={9} rx={-2} radius={8} lift={1.1}>
-                <Img src={img("clembudo_s315")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "62% 72%" }} />
-              </Glass>
-            </div>
-          </AbsoluteFill>
-        ) : null}
-
-        {/* ─────────── ACTO 4 · EL BÓRAX — la receta, el precio, el rinde ─────────── */}
-        {enA4 ? (
-          <AbsoluteFill
-            style={
-              f >= 1256
-                ? {
-                    WebkitMaskImage: `linear-gradient(90deg, #000 0%, #000 ${wipeF}%, rgba(0,0,0,0) ${wipeF + 7}%)`,
-                    maskImage: `linear-gradient(90deg, #000 0%, #000 ${wipeF}%, rgba(0,0,0,0) ${wipeF + 7}%)`,
-                  }
-                : undefined
-            }
+        {/* ═══ A2 · LA MANCHA QUE VOLVIÓ EN EL MISMO LUGAR ═════════════════════════════════════ */}
+        {volvio > 0.004 ? (
+          <Plate
+            cx={lerp(560, 700, volvio)} cy={lerp(640, 528, volvio)} w={lerp(440, 940, volvio)}
+            z={lerp(-240, 190, volvio)} ry={lerp(20, 5, volvio)} dim={(1 - volvio) * 0.62} lift={1.35}
           >
-            {/* ⚠️ cada clip dura 151 frames REALES a rate 1 y NO se loopea: las cuatro ventanas se
-                solapan y CADA CAPA SÓLO ENTRA, nunca se va — la de arriba tapa a la de abajo, que se
-                apaga sola cuando termina su Sequence. (Con crossfade cruzado la cobertura caía a
-                0,50 en el medio de cada cambio: medido frame a frame.)
-                s307 831-982 · s308 905-1056 · s309 1040-1191 · s310 1140-1288 */}
-
-            {/* "lo que sí funciona es el bórax": el polvo cayendo al balde */}
-            <div style={{ position: "absolute", inset: 0, transform: `scale(${1.04 + (f - A4) * 0.00016})` }}>
-              <Clip src="clembudo_s307" from={A4 - 6} dur={151} rate={1} />
-            </div>
-
-            {/* "250 gramos, una taza bien llena, en 4 litros": la taza medida sobre la olla */}
-            <div
-              style={{
-                position: "absolute", inset: 0,
-                opacity: interpolate(f, [905, 922], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
-                transform: `scale(${1.03 + (f - 905) * 0.00018})`,
-              }}
-            >
-              <Clip src="clembudo_s308" from={905} dur={151} rate={1} />
-            </div>
-
-            {/* "lo más caliente que puedas": revolviendo, con el vapor subiendo */}
-            <div
-              style={{
-                position: "absolute", inset: 0,
-                opacity: interpolate(f, [1040, 1057], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
-                transform: `scale(${1.03 + (f - 1040) * 0.0002})`,
-              }}
-            >
-              <Clip src="clembudo_s309" from={1040} dur={151} rate={1} />
-            </div>
-
-            {/* "2 a 5 dólares el kilo / rinde 16 litros": la bolsa y los baldes llenos */}
-            <div
-              style={{
-                position: "absolute", inset: 0,
-                opacity: interpolate(f, [1140, 1158], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
-                transform: `scale(${1.02 + (f - 1140) * 0.00022})`,
-              }}
-            >
-              <Clip src="clembudo_s310" from={1140} dur={151} rate={1} />
-            </div>
-
-            {/* cama: la tipografía no pelea con el taller */}
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(276deg, rgba(20,16,11,0.7) 0%, rgba(20,16,11,0.22) 40%, rgba(20,16,11,0) 66%)" }} />
-
-            <Bloque f={f} at={A4 + 10} kick="LO QUE SÍ FUNCIONA" head={"El bórax penetra\ncon el agua"} w={700} />
-            <Ficha f={f} />
-          </AbsoluteFill>
+            <Mat img="clembudo_s306" clip="clembudo_s306" from={618} dur={150} rate={0.86} kb={1.05} />
+          </Plate>
         ) : null}
 
-        {/* ═══ F4 · WIPE POR MATERIA: el vapor del agua caliente barre de derecha a izquierda y el
-             acto 4 se retira EXACTAMENTE detrás de su frente (el mask de arriba usa el mismo
-             `wipeF`). Detrás ya está el poro montado desde f 1250: no hay ni un frame descubierto,
-             y el vapor es la única materia que existe a los dos lados de la frontera. ═══ */}
-        {f >= 1250 && f <= 1316 ? (
+        {/* ═══ A4 · LA RECETA — la taza colmada y la fila de baldes, cada una en su 16:9 ═══════ */}
+        {taza > 0.004 ? (
+          <Plate
+            cx={lerp(1420, 1180, taza)} cy={lerp(620, 520, taza)} w={lerp(440, 900, taza)}
+            z={lerp(-230, 190, taza)} ry={lerp(-20, -4, taza)} dim={(1 - taza) * 0.6} lift={1.35}
+          >
+            <Mat img="clembudo_s308" clip="clembudo_s308" from={A4 + 24} dur={150} rate={0.86} kb={1.05} />
+          </Plate>
+        ) : null}
+        {baldes > 0.004 ? (
+          <Plate
+            cx={lerp(520, 700, baldes)} cy={lerp(680, 560, baldes)} w={lerp(420, 880, baldes)}
+            z={lerp(-250, 170, baldes)} ry={lerp(22, 6, baldes)} dim={(1 - baldes) * 0.6} lift={1.3}
+          >
+            <Mat img="clembudo_s310" clip="clembudo_s310" from={1220} dur={110} rate={0.9} kb={1.05} />
+          </Plate>
+        ) : null}
+
+        {/* ═══ A5 · EL MECANISMO — la boca del poro (MATCH-SHAPE desde el círculo del balde) ═══ */}
+        {poro > 0.004 && f < A6 + 10 ? (
           <div
             style={{
-              position: "absolute", left: `${wipeF - 27}%`, top: "-16%", width: "58%", height: "132%",
-              transform: "rotate(3deg)",
-              opacity: interpolate(f, [1250, 1262, 1298, 1316], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
-              background: "radial-gradient(52% 58% at 50% 50%, rgba(252,250,246,0.97) 0%, rgba(246,242,232,0.78) 44%, rgba(240,236,226,0) 80%)",
+              position: "absolute",
+              left: 960 - lerp(210, 760, poro), top: 520 - lerp(210, 760, poro),
+              width: lerp(420, 1520, poro), height: lerp(420, 1520, poro),
+              borderRadius: "50%", overflow: "hidden",
+              transform: `translateZ(${lerp(-120, 150, poro).toFixed(1)}px)`,
+              boxShadow: "0 26px 70px rgba(18,13,8,0.6), inset 0 0 90px rgba(14,10,6,0.75)",
+              background: "#15110B",
             }}
           >
-            {/* el vapor no es una cortina lisa: tiene volutas que suben */}
-            {new Array(14).fill(0).map((_, i) => {
-              const x = rng(191, i) * 100;
-              const y = ((rng(193, i) * 140 - f * (1.1 + rng(197, i) * 1.4)) % 150 + 150) % 150;
-              const sz = 90 + rng(199, i) * 220;
-              return (
-                <div
-                  key={i}
-                  style={{
-                    position: "absolute", left: `${x}%`, top: `${y}%`, width: sz, height: sz,
-                    marginLeft: -sz / 2, marginTop: -sz / 2, borderRadius: "50%",
-                    background: `radial-gradient(circle, rgba(255,255,255,${0.1 + rng(211, i) * 0.16}) 0%, rgba(255,255,255,0) 68%)`,
-                  }}
-                />
-              );
-            })}
+            <div style={{ position: "absolute", left: "-14%", top: "-14%", width: "128%", height: "128%" }}>
+              <Mat img={cristal > 0.5 ? "clembudo_s312" : "clembudo_s311"} clip={cristal > 0.5 ? undefined : "clembudo_s311"} from={A5 + 10} dur={150} rate={0.84} kb={1.06} />
+            </div>
+            {/* el borde del poro: materia, no un anillo CSS suelto */}
+            <div style={{ position: "absolute", inset: 0, borderRadius: "50%", boxShadow: "inset 0 0 0 10px rgba(52,40,24,0.7), inset 0 0 120px rgba(12,9,5,0.8)" }} />
           </div>
         ) : null}
 
-        {/* ─────────── ACTO 6 · DE GUARDIA + la regla más rara del oficio ─────────── */}
-        {enA6 ? (
-          <AbsoluteFill>
-            {/* la cámara ya viene retrocediendo (camZ 5.62 → 3.30) y la pared seca aparece detrás */}
-            <div
-              style={{
-                position: "absolute", inset: 0,
-                opacity: interpolate(f, [A6 + 40, A6 + 76], [0, 1], {
-                  extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.sin),
-                }),
-                transform: `scale(${1.1 - (f - A6) * 0.0004})`,
-              }}
-            >
-              <Clip src="clembudo_s323" from={A6 + 40} dur={113} rate={1} />
-              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(268deg, rgba(20,16,11,0.62) 0%, rgba(20,16,11,0.1) 46%, rgba(20,16,11,0) 72%)" }} />
-            </div>
-
-            {/* el contraste final: el cloro no deja nada, el bórax se queda */}
-            {(() => {
-              const k = rampIn(f - (A6 + 8), 13);
-              if (k <= 0.004) return null;
-              return (
-                <div style={{ position: "absolute", left: SAFE + 20, bottom: SAFE + 216, width: 900, opacity: k, transform: `translateY(${(1 - k) * 28}px)` }}>
-                  <div style={{ display: "flex", alignItems: "stretch", gap: 18 }}>
-                    <div style={{ flex: 1, padding: "18px 22px", background: "rgba(24,20,15,0.68)", borderLeft: `4px solid ${C.danger}`, borderRadius: 4 }}>
-                      <div style={{ fontFamily: FONT, fontSize: 30, fontWeight: 700, color: C.danger, letterSpacing: 3 }}>CLORO</div>
-                      <div style={{ fontFamily: FONT, fontSize: 38, fontWeight: 700, color: "#F2EAD6", marginTop: 6, textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}>se evapora entero</div>
-                    </div>
-                    <div style={{ flex: 1, padding: "18px 22px", background: "rgba(24,20,15,0.68)", borderLeft: `4px solid ${C.good}`, borderRadius: 4 }}>
-                      <div style={{ fontFamily: FONT, fontSize: 30, fontWeight: 700, color: C.accentSoft, letterSpacing: 3 }}>BÓRAX</div>
-                      <div style={{ fontFamily: FONT, fontSize: 38, fontWeight: 700, color: "#F2EAD6", marginTop: 6, textShadow: "0 2px 8px rgba(0,0,0,0.7)" }}>se queda de guardia</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })()}
-
-            <Bloque f={f} at={A6 + 98} kick="LA REGLA MÁS RARA DEL OFICIO" head={"Esta solución\nno se enjuaga nunca"} w={880} />
-          </AbsoluteFill>
+        {/* ═══ A6 · EL CAREO — la botella vacía y la taza en alto, el mismo gesto, dos materias ═ */}
+        {careo > 0.004 ? (
+          <Plate
+            cx={lerp(1100, 960, careo)} cy={lerp(560, 470, careo)} w={lerp(520, 1060, careo)}
+            z={lerp(-200, 200, careo)} ry={lerp(-14, -2, careo)} dim={(1 - careo) * 0.6} lift={1.4}
+          >
+            <Mat img="clembudo_s313" clip="clembudo_s313" from={A6 + 12} dur={137} rate={0.9} kb={1.05} />
+          </Plate>
         ) : null}
-
-        {/* ═══ F3 · LA OCLUSIÓN: el cuero del delantal cruza justo en el swap del acto 3 al 4 ═══ */}
-        <Occluder at={A4 - 1} len={9} color={C.gold} angle={-7} />
-        <Cuero at={A4 - 1} len={15} />
       </AbsoluteFill>
 
-      {/* ═══ ATMÓSFERA ÚNICA — montada UNA vez, nunca se remonta entre actos. En el acto 3 baja de
-           intensidad para que el avatar respire, pero es la MISMA capa. ═══ */}
-      <AbsoluteFill style={{ opacity: (enA3 && f > A3 + 10 ? 0.5 : 1) * boot, pointerEvents: "none" }}>
-        <Atmos t={t} dust={30} />
+      {/* entrada del ambiente ≤15 f (⛔ nada de 2 s subiendo desde negro) */}
+      {rin < 0.999 ? <AbsoluteFill style={{ background: "rgba(20,16,10,1)", opacity: 1 - rin, pointerEvents: "none" }} /> : null}
+
+      {/* ═══ FRONTERA 3 · WIPE POR MATERIA — el polvo blanco cae y detrás ya está la receta ═════ */}
+      {polvo > 0.002 && polvo < 0.998 ? (
+        <AbsoluteFill style={{ pointerEvents: "none" }}>
+          <div
+            style={{
+              position: "absolute", left: -60, right: -60,
+              top: `${(polvo * 168 - 64).toFixed(1)}%`, height: "58%",
+              transform: "skewY(1.4deg)",
+              background: "linear-gradient(180deg, rgba(246,242,230,0) 0%, rgba(248,245,234,0.62) 34%, rgba(252,250,242,0.80) 58%, rgba(246,242,230,0) 100%)",
+            }}
+          />
+          {new Array(64).fill(0).map((_, i) => {
+            const t = (rng(37, i) + polvo * 1.4) % 1;
+            return (
+              <div
+                key={i}
+                style={{
+                  position: "absolute",
+                  left: rng(59, i) * 1920,
+                  top: `${(t * 130 - 16).toFixed(2)}%`,
+                  width: 2 + rng(83, i) * 4,
+                  height: 2 + rng(83, i) * 4,
+                  borderRadius: "50%",
+                  background: "rgba(255,253,246,0.92)",
+                  opacity: Math.sin(Math.min(1, Math.max(0, polvo)) * Math.PI),
+                }}
+              />
+            );
+          })}
+        </AbsoluteFill>
+      ) : null}
+
+      {/* L5 · clave que se templa a lo largo del movimiento (galpón frío → agua caliente) */}
+      <AbsoluteFill
+        style={{
+          background: `radial-gradient(74% 58% at ${(28 + L * 14).toFixed(1)}% ${(18 + L * 8).toFixed(1)}%, rgba(255,208,138,${(0.05 + L * 0.19).toFixed(3)}) 0%, rgba(255,190,112,0) 62%)`,
+          mixBlendMode: "screen", pointerEvents: "none",
+        }}
+      />
+
+      {/* FRONTERA 5 · OCLUSIÓN — el cuero del delantal (⛔ nunca el color del fondo) */}
+      <AbsoluteFill style={{ pointerEvents: "none" }}>
+        <Occluder at={A6} len={12} color="#B5854F" angle={8} />
       </AbsoluteFill>
+
+      {/* ═══ EL PRECIO DEL KILO DE BÓRAX — nativo, en papel, arriba a la derecha ════════════════
+          ⛔ Esto NO es el precio del curso (ése no se escribe nunca): es el kilo de bórax, que es
+          justo el argumento del acto. Antes lo ponía un `BigStatReveal` montado ENCIMA de este
+          movimiento, y las dos capas se veían una a través de la otra. ══════════════════════════ */}
+      {precio > 0.004 ? (
+        <AbsoluteFill style={{ pointerEvents: "none" }}>
+          <div
+            style={{
+              position: "absolute", right: 96, top: 112, opacity: precio,
+              transform: `scale(${(1 + (1 - precio) * 0.22).toFixed(3)})`, transformOrigin: "100% 0%",
+            }}
+          >
+            <Paper pad={22} tilt={1.2}>
+              <div style={{ textAlign: "right" }}>
+                <Kick size={27} color={C.gold}>EL KILO DE BÓRAX</Kick>
+                <div style={{ height: 6 }} />
+                <Ink size={124}>$2 a $5</Ink>
+                <div style={{ marginTop: 8, fontSize: 32, color: C.inkSoft }}>Rinde dieciséis litros</div>
+              </div>
+            </Paper>
+          </div>
+        </AbsoluteFill>
+      ) : null}
+
+      {/* ═══ L8 · TEXTO — 1 idea por acto, titular ≤7 palabras, anclado por bottom/left ═════════ */}
+      <LowerBed o={0.9} />
+      <AbsoluteFill style={{ pointerEvents: "none" }}>
+        <Lower f={f} from={10}   to={220}  kick="LO QUE NO FUNCIONA"  head="El cloro no mata el moho." />
+        <Lower f={f} from={238}  to={278}  kick="POR QUÉ PARECE"      head="Sólo decolora la superficie." />
+        <Lower f={f} from={298}  to={412}  kick="LO QUE SÍ ENTRA"     head="El agua, hasta el fondo del poro." />
+        <Lower f={f} from={430}  to={600}  kick="DONDE ESTÁ EL HONGO" head="La raíz vive adentro del poro." />
+        <Lower f={f} from={618}  to={676}  kick="TRES SEMANAS"        head="Vuelve en el mismo lugar." />
+        <Lower f={f} from={700}  to={900}  kick="POR ESO TE LLAMAN"   head="Ya lo intentó, y le falló." />
+        <Lower f={f} from={926}  to={1090} kick="LO QUE SÍ FUNCIONA"  head="Bórax: una taza en cuatro litros." />
+        <Lower f={f} from={1220} to={1266} kick="EL AGUA"             head="Lo más caliente que puedas." />
+        <Lower f={f} from={1292} to={1390} kick="CÓMO ACTÚA"          head="Baja con el agua hasta la raíz." />
+        <Lower f={f} from={1408} to={1600} kick="CUANDO SE EVAPORA"   head="Queda cristalizado adentro." />
+        <Lower f={f} from={1632} to={1758} kick="LA DIFERENCIA"       head="El bórax se queda de guardia." />
+      </AbsoluteFill>
+
+      {/* L9 · atmósfera — montada UNA sola vez para los 1767 frames, jamás se remonta */}
+      <Atmos t={L} dust={28} />
     </AbsoluteFill>
   );
 };

@@ -14,7 +14,7 @@
 //  · Safe area 60px. En planos con `translateZ` alto la perspectiva AGRANDA: anclá por bottom/right.
 //  · Imports SÓLO de `remotion` y `react`.
 import React from "react";
-import { useCurrentFrame, interpolate, Easing, AbsoluteFill } from "remotion";
+import { useCurrentFrame, interpolate, Easing, AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile } from "remotion";
 
 export const FPS = 30;
 export const W = 1920;
@@ -252,3 +252,256 @@ export const Occluder: React.FC<{ at: number; len?: number; color?: string; angl
 // Entrada del ambiente: ≤15 frames. ⛔ Nada de 2s subiendo desde negro (se lee como hueco).
 export const rampIn = (f: number, frames = 14) =>
   interpolate(f, [0, frames], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+
+// ═════════════════════════════════════════════════════════════════════════════════════════════
+// PRIMITIVOS DE LA REHECHURA (sep-2026) — cada uno existe porque un defecto MEDIDO sobre el
+// render lo pedía. Los siete defectos no dispararon ni UNA compuerta automática: se ven mirando.
+// ═════════════════════════════════════════════════════════════════════════════════════════════
+
+export const AR = 16 / 9; // todo el material (fotos 1792x1008 y clips i2v) es 16:9
+
+// ── D1 · TARJETAS APLASTADAS A UNA TIRA ───────────────────────────────────────────────────────
+// Medido: una tarjeta de 1240x120 con una foto adentro en `objectFit:cover` recorta el material a
+// una franja y CORTA LAS CABEZAS. Pasaba en dos lugares distintos por el mismo motivo de fondo:
+// el contenedor elegía su alto por razones de composición (una BARRA de dinero de 794x206) y el
+// material se acomodaba como podía.
+// `Plate` NO acepta un alto libre: la altura SIEMPRE sale del ancho y del aspecto del material.
+// Si un acto necesita una barra, la barra es una barra — pero entonces NO lleva foto adentro.
+export const Plate: React.FC<{
+  cx: number; cy: number; w: number; ar?: number;
+  z?: number; ry?: number; rx?: number; rot?: number;
+  radius?: number; lift?: number; dim?: number; frame?: boolean;
+  children?: React.ReactNode;
+}> = ({ cx, cy, w, ar = AR, z = 0, ry = 0, rx = 0, rot = 0, radius = 16, lift = 1, dim = 0, frame = true, children }) => {
+  const h = w / ar;
+  return (
+    <div
+      style={{
+        position: "absolute", left: cx - w / 2, top: cy - h / 2, width: w, height: h,
+        transform: `translateZ(${z.toFixed(2)}px) rotateY(${ry.toFixed(2)}deg) rotateX(${rx.toFixed(2)}deg) rotate(${rot.toFixed(2)}deg)`,
+        transformStyle: "preserve-3d",
+        borderRadius: radius,
+        overflow: "hidden",
+        // ⛔ OPACO SIEMPRE (D4): el fondo de la tarjeta no puede dejar ver el b-roll de atrás.
+        background: "#1C1812",
+        boxShadow: [
+          `0 ${(20 * lift).toFixed(0)}px ${(52 * lift).toFixed(0)}px rgba(20,16,10,${(0.4 * lift).toFixed(2)})`,
+          `0 ${(4 * lift).toFixed(0)}px ${(10 * lift).toFixed(0)}px rgba(20,16,10,0.30)`,
+          "inset 0 1px 0 rgba(255,248,230,0.50)",
+          "inset 0 -1px 0 rgba(20,16,10,0.34)",
+        ].join(","),
+      }}
+    >
+      {children}
+      {frame ? (
+        <div
+          style={{
+            position: "absolute", inset: 0, pointerEvents: "none",
+            boxShadow: "inset 0 0 0 3px rgba(245,238,220,0.30), inset 0 0 74px rgba(20,16,10,0.42)",
+          }}
+        />
+      ) : null}
+      {/* D4 · la PROFUNDIDAD se pinta, no se transparenta: un velo NEGRO adentro de la tarjeta.
+          Así una tarjeta del fondo se ve hundida y sigue siendo opaca. */}
+      {dim > 0.002 ? (
+        <div style={{ position: "absolute", inset: 0, pointerEvents: "none", background: `rgba(16,13,8,${Math.min(0.82, dim).toFixed(3)})` }} />
+      ) : null}
+      <PlateSweep />
+    </div>
+  );
+};
+
+const PlateSweep: React.FC = () => {
+  const f = useCurrentFrame();
+  const p = ((f % 168) / 168) * 260 - 60;
+  return (
+    <div
+      style={{
+        position: "absolute", inset: 0, pointerEvents: "none",
+        background: `linear-gradient(102deg, rgba(255,250,236,0) ${p - 15}%, rgba(255,250,236,0.13) ${p}%, rgba(255,250,236,0) ${p + 15}%)`,
+        mixBlendMode: "screen",
+      }}
+    />
+  );
+};
+
+// ── MATERIAL REAL adentro de una Plate ────────────────────────────────────────────────────────
+// La foto es el frame 0 del clip i2v (el clip nació de ella), así que encender el video encima NO
+// se ve: es el mismo cuadro. ⛔ `loop` no es prop de OffthreadVideo y el clip dura 151 f.
+export const Mat: React.FC<{
+  img: string; clip?: string; from?: number; dur?: number; rate?: number; kb?: number; mirror?: boolean;
+}> = ({ img, clip, from = 0, dur = 151, rate = 1, kb = 1.04, mirror = false }) => (
+  <div style={{ position: "absolute", inset: 0, transform: mirror ? "scaleX(-1)" : undefined }}>
+    <Img
+      src={staticFile(`img/clembudo/${img}.png`)}
+      style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transform: `scale(${kb.toFixed(4)})` }}
+    />
+    {clip ? (
+      <Sequence from={from} durationInFrames={Math.max(1, Math.min(dur, Math.floor(151 / Math.max(rate, 0.01))))} layout="absolute-fill">
+        <OffthreadVideo
+          src={staticFile(`broll/clembudo/${clip}.mp4`)}
+          muted
+          playbackRate={rate}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </Sequence>
+    ) : null}
+  </div>
+);
+
+// ── D7 · TÍTULOS SIN CONTRASTE ────────────────────────────────────────────────────────────────
+// Tinta oscura sobre cama oscura desaparece. `Paper` es la cama de papel crema del canal: si el
+// texto va en tinta (C.ink), va SOBRE esto. Si no hay papel, el texto va claro con sombra.
+export const Paper: React.FC<{ children?: React.ReactNode; pad?: number; radius?: number; tilt?: number; style?: React.CSSProperties }> =
+  ({ children, pad = 26, radius = 8, tilt = 0, style }) => (
+    <div
+      style={{
+        background: "linear-gradient(168deg, #FBF4E2 0%, #F1E7CD 58%, #E6DBBD 100%)",
+        padding: pad, borderRadius: radius,
+        transform: tilt ? `rotate(${tilt}deg)` : undefined,
+        boxShadow: "0 20px 46px rgba(20,16,10,0.42), 0 3px 8px rgba(20,16,10,0.30), inset 0 1px 0 rgba(255,255,255,0.85)",
+        ...style,
+      }}
+    >
+      {children}
+    </div>
+  );
+
+// Titular EN TINTA — sólo válido dentro de <Paper>. >=48 px (legibilidad +60).
+export const Ink: React.FC<{ children: React.ReactNode; size?: number; weight?: number; color?: string }> =
+  ({ children, size = 58, weight = 800, color = C.ink }) => (
+    <div style={{ fontFamily: FONT, fontSize: Math.max(48, size), fontWeight: weight, color, lineHeight: 1.06, letterSpacing: -0.4 }}>
+      {children}
+    </div>
+  );
+
+// ── D3 · TEXTO CORTADO POR EL BORDE ───────────────────────────────────────────────────────────
+// Causa medida: el texto vivía DENTRO de la cámara. Con `scale(z)` > 1 y `translateZ` alto la
+// perspectiva AGRANDA, así que un `left: 70` en coordenadas de mundo termina en x ~ 14 o fuera.
+// `Lower` vive en ESPACIO DE PANTALLA (fuera de camStyle) y se ancla por bottom/left en píxeles
+// reales: no hay cámara que lo pueda mover. Nada que lleve texto puede ir adentro del mundo.
+export const LOWER_L = 104; // > SAFE(60), holgado para la sombra
+export const LOWER_B = 118;
+export const LOWER_W = 880;
+
+export const Lower: React.FC<{
+  f: number; from: number; to: number; kick?: string; head?: string; onPaper?: boolean; w?: number; size?: number;
+}> = ({ f, from, to, kick, head, onPaper = false, w = LOWER_W, size = 56 }) => {
+  if (f < from - 2 || f > to + 12) return null;
+  const a = interpolate(f, [from, from + 11, to, to + 10], [0, 1, 1, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic),
+  });
+  const dy = interpolate(f, [from, from + 14], [20, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  const cuerpo = (
+    <>
+      {kick ? <div style={{ marginBottom: 12 }}><Kick size={30} color={onPaper ? C.gold : C.accentSoft}>{kick}</Kick></div> : null}
+      {head ? (onPaper ? <Ink size={size}>{head}</Ink> : <Head size={size}>{head}</Head>) : null}
+    </>
+  );
+  return (
+    <div
+      style={{
+        position: "absolute", left: LOWER_L, bottom: LOWER_B, width: w,
+        opacity: a, transform: `translateY(${dy.toFixed(2)}px)`,
+      }}
+    >
+      {onPaper ? <Paper pad={28} tilt={-0.4}>{cuerpo}</Paper> : cuerpo}
+    </div>
+  );
+};
+
+// Cama oscura para que el texto claro lea sobre cualquier material (no es un fade: es constante).
+export const LowerBed: React.FC<{ o?: number }> = ({ o = 0.84 }) => (
+  <AbsoluteFill
+    style={{
+      pointerEvents: "none", opacity: o,
+      background: "linear-gradient(18deg, rgba(20,16,10,0.86) 0%, rgba(20,16,10,0.46) 32%, rgba(20,16,10,0) 58%)",
+    }}
+  />
+);
+
+// ── D1(b) · EL PISO QUE SE COMÍA LAS TARJETAS ─────────────────────────────────────────────────
+// Medido en MovCierre: un plano de 1760 px de alto con `rotateX(56deg)` y `transformOrigin:50% 0%`
+// lleva su borde CERCANO a z = -190 + 1760*sin(56) = +1269, o sea MUY por delante de las tarjetas
+// (z ~ +170). El piso les tapaba la mitad de abajo y las tarjetas se leían como una tira.
+// `Ground` gira sobre su borde INFERIOR y hacia atrás: todo el plano queda detrás de z0.
+export const Ground: React.FC<{ img?: string; y: number; h?: number; z0?: number; tilt?: number; veil?: number }> =
+  ({ img, y, h = 1500, z0 = -240, tilt = 62, veil = 0.62 }) => (
+    <div
+      style={{
+        position: "absolute", left: -560, top: y - h, width: 3040, height: h,
+        // ⛔⛔ EL SIGNO IMPORTA Y ES CONTRAINTUITIVO. En CSS, rotateX(t) manda (y,z) a
+        // (y·cos t − z·sin t, y·sin t + z·cos t), con `y` hacia ABAJO. Con el origen en el borde
+        // INFERIOR, el borde lejano está en y = −h, así que su z queda en −h·sin(t): sólo es
+        // NEGATIVO (se va hacia atrás) si t es POSITIVO. Con rotateX(−62°) el borde lejano
+        // terminaría en z = +1324 y volvería a taparle la mitad de abajo a las tarjetas, que es
+        // justo el defecto D1 que este helper viene a matar.
+        transform: `translateZ(${z0}px) rotateX(${tilt}deg)`,
+        transformOrigin: "50% 100%", // el borde de abajo: desde ahí el plano se va HACIA ATRÁS
+        overflow: "hidden",
+        background: "linear-gradient(180deg, #241D13 0%, #3A3020 40%, #4A3C27 100%)",
+      }}
+    >
+      {img ? (
+        <Img src={staticFile(`img/clembudo/${img}.png`)} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+      ) : null}
+      <div style={{ position: "absolute", inset: 0, background: `linear-gradient(0deg, rgba(20,16,10,${veil}) 0%, rgba(20,16,10,0.20) 62%, rgba(20,16,10,0.06) 100%)` }} />
+      {/* canto iluminado del borde cercano: da contacto y separa el piso del fondo */}
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 6, background: "linear-gradient(90deg, rgba(255,226,168,0) 0%, rgba(255,226,168,0.50) 30%, rgba(255,226,168,0.54) 70%, rgba(255,226,168,0) 100%)" }} />
+    </div>
+  );
+
+// ── D2 · ACTOS VACÍOS ─────────────────────────────────────────────────────────────────────────
+// Un acto sin objeto protagonista no es un acto. `Backplate` es el material REAL que ocupa el
+// cuadro entero detrás de todo: ningún acto puede quedarse con un degradé plano y nada más.
+export const Backplate: React.FC<{ img: string; clip?: string; from?: number; dur?: number; rate?: number; z?: number; scale?: number; veil?: number }> =
+  ({ img, clip, from = 0, dur = 151, rate = 1, z = -560, scale = 1.5, veil = 0.46 }) => (
+    <div
+      style={{
+        position: "absolute", inset: -200,
+        transform: `translateZ(${z}px) scale(${(((1600 - z) / 1600) * scale).toFixed(4)})`,
+        transformStyle: "preserve-3d",
+        overflow: "hidden",
+        background: "#1C1812",
+      }}
+    >
+      <Img src={staticFile(`img/clembudo/${img}.png`)} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+      {clip ? (
+        <Sequence from={from} durationInFrames={Math.max(1, Math.min(dur, Math.floor(151 / Math.max(rate, 0.01))))} layout="absolute-fill">
+          <OffthreadVideo src={staticFile(`broll/clembudo/${clip}.mp4`)} muted playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </Sequence>
+      ) : null}
+      <div style={{ position: "absolute", inset: 0, background: `rgba(18,14,9,${veil})` }} />
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(96% 76% at 50% 44%, rgba(0,0,0,0) 44%, rgba(18,14,9,0.52) 100%)" }} />
+    </div>
+  );
+
+// ── LA LÁMINA DEL CURSO ───────────────────────────────────────────────────────────────────────
+// Regla del canal: entera, nítida y QUIETA, sin tipografía encima y sin recortar. Por eso vive en
+// ESPACIO DE PANTALLA (⛔ nunca dentro de la cámara: el zoom la sacaba del cuadro por la izquierda,
+// medido — "EL AIRE" cortado y "10 a 15 litros" leyéndose "0 a 15 litros").
+export const Lamina: React.FC<{ src: string; cx: number; cy: number; w: number; tilt?: number }> =
+  ({ src, cx, cy, w, tilt = 0 }) => {
+    const h = w / AR;
+    // se clava dentro del cuadro con 60 px de margen REAL, ya en píxeles de pantalla
+    const x = Math.min(Math.max(cx - w / 2, SAFE), W - SAFE - w);
+    const y = Math.min(Math.max(cy - h / 2, SAFE), H - SAFE - h);
+    return (
+      <div
+        style={{
+          position: "absolute", left: x, top: y, width: w, height: h,
+          background: "#FCF8EE", padding: Math.max(7, w * 0.011),
+          transform: tilt ? `rotate(${tilt}deg)` : undefined,
+          boxShadow: `0 ${Math.round(w * 0.02)}px ${Math.round(w * 0.052)}px rgba(20,16,10,0.44), 0 3px 8px rgba(20,16,10,0.32), inset 0 1px 0 rgba(255,255,255,0.92)`,
+        }}
+      >
+        <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "fill", display: "block" }} />
+        <div
+          style={{
+            position: "absolute", inset: 0, pointerEvents: "none",
+            background: "linear-gradient(126deg, rgba(255,250,232,0.16) 0%, rgba(255,250,232,0) 32%, rgba(20,16,10,0) 70%, rgba(20,16,10,0.09) 100%)",
+          }}
+        />
+      </div>
+    );
+  };
