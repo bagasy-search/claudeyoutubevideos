@@ -55,7 +55,12 @@ export const AvatarLayerSal: React.FC<{
   wav?: string; // wav para el borde audio-reactive; default = derivado del src
   loop?: boolean; // AVATAR PARCIAL: repite el clip cuando el creador grabó solo un tramo
   muted?: boolean; // en el tramo en bucle el audio lo pone la cola de TTS, no el avatar
-}> = ({ src, windows, accent = COLORS.accent, wav, loop = false, muted = false }) => {
+  // ⛔ El push Ken-Burns del modo `full` RECORTA el encuadre: en las ventanas impares arranca
+  // ya ampliado al 6 %, así que el plano abre cortado. El creador lo rechazó por eso
+  // ("un movimiento horrendo que hace que se desencuadre"). Con `sinMovimiento` el avatar
+  // queda 1:1, sin zoom ni recorte. Default false para no tocar los demás videos del canal.
+  sinMovimiento?: boolean;
+}> = ({ src, windows, accent = COLORS.accent, wav, loop = false, muted = false, sinMovimiento = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame; // frames
@@ -120,7 +125,7 @@ export const AvatarLayerSal: React.FC<{
   // ★ PUSH a VELOCIDAD CONSTANTE en TODA ventana full (incluidas las cortas de ~2s: headers
   // de capítulo). ~0.9%/s, clamp 6%. Alterna push-in / pull-out por ventana. Nunca estático.
   let fullZoom = 1;
-  if (curMode === "full") {
+  if (curMode === "full" && !sinMovimiento) {
     const elapsed = (t - starts[i]) / fps; // segundos dentro de la ventana
     const drift = Math.min(0.06, 0.009 * elapsed);
     fullZoom = i % 2 === 0 ? 1 + drift : Math.max(1, 1.06 - drift); // 1→1.06  ó  1.06→1
