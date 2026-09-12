@@ -31,14 +31,26 @@ const API = ENGINE === "agnes"
   : "https://api.openai.com/v1/chat/completions";
 let ki = 0;
 
-const SYSTEM = `Sos un control de calidad de fotogramas para video. Mira SOLO una cosa: si en la
-imagen hay LETRAS, PALABRAS, NUMEROS, logos o marca de agua VISIBLES.
-Responde JSON: {"has_text": true|false, "what": "<que dice o donde esta, muy corto>"}
+// ⛔ POLITICA (validada por el creador, general para TODO video): el texto INVENTADO / ILEGIBLE que
+// generan los modelos de imagen (etiquetas de productos, carteles, letreros de fondo, numeros en una
+// caja) es IRRELEVANTE y NO se reporta — los canales mas virales estan llenos de imagenes con texto
+// ilegible y no molesta a nadie. Lo UNICO que importa acustar acá es la MARCA DE AGUA / logo SOBREPUESTO
+// tipo banco de stock (Shutterstock, iStock, Getty, Dreamstime, Alamy, Adobe Stock, un @usuario, un URL),
+// que delata footage robado y sí obliga a re-generar. Para las LAMINAS EXPLICATIVAS con texto horneado
+// (gpt-image: diagramas dg_*, tarjetas con titulo/pasos) el texto SÍ tiene que ser correcto, pero eso lo
+// audita otro pase (imgaudit sobre esos assets puntuales), NO este.
+const SYSTEM = `Sos un control de calidad de fotogramas de video. Mira SOLO UNA cosa: si la imagen tiene
+una MARCA DE AGUA o LOGO SOBREPUESTO de banco de imagenes/stock (por ejemplo "Shutterstock", "iStock",
+"Getty", "Dreamstime", "Alamy", "Adobe Stock", "123RF", "Depositphotos", un @usuario, o una URL/logo
+translucido repetido encima de toda la imagen), o una firma/credito impuesto sobre la foto.
+Responde JSON: {"has_text": true|false, "what": "<que marca de agua y donde, muy corto>"}
 Reglas:
-- Cuenta como texto: cualquier palabra o letra legible o SEMI-legible, texto borroneado que
-  claramente pretende ser texto, digitos en un reloj o pantalla, un logo de marca, una firma.
-- NO cuenta: dibujos, simbolos sin letras, texturas.
-- Ante la duda de si eso es texto, responde true. Es preferible revisar de mas.`;
+- has_text=true SOLO si hay una marca de agua/logo de stock o un credito/URL/@usuario SOBREPUESTO a la
+  imagen (una capa encima, no parte de la escena).
+- has_text=FALSE para TODO texto que es parte de la ESCENA: etiquetas de botellas/productos, carteles,
+  letreros de pared, numeros en cajas, texto en pantallas, texto BORROSO o GIBBERISH/ILEGIBLE inventado
+  por el generador, logos de marcas que aparecen naturalmente dentro de la escena. NADA de eso se reporta.
+- Ante la duda, responde FALSE. Solo la marca de agua de stock sobrepuesta cuenta.`;
 
 const items = JSON.parse(fs.readFileSync(manifestArg, "utf8").replace(/^﻿/, ""));
 const out = [];

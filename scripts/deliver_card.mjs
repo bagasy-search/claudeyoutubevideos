@@ -7,9 +7,10 @@
 // - <channel_key>: p.ej. "https://www.youtube.com/@FedererBuilding" (o "draft:xxxx")
 // - <card_id>: el id del item del plan (lo trae el prompt de Bagasy)
 // - <slug>: el slug del render; el release <slug> debe tener el asset <slug>.mp4, y debe existir public/<slug>_meta.json
-// Creds de Supabase: D:/Proyectos/yt-scout-web/.env.local (mismo patrón que deliver_to_bagasy.mjs / el worker).
+// Creds de Supabase: resueltas en cascada por scripts/supa_creds.mjs (env vars, <video2>/.env.local, yt-scout-web).
 import fs from "node:fs";
 import { execSync } from "node:child_process";
+import { supaCreds } from "./supa_creds.mjs";
 
 const [channelKey, cardId, slug, ...rest] = process.argv.slice(2);
 if (!channelKey || !cardId || !slug) {
@@ -21,50 +22,8 @@ const REPO = process.env.BAGASY_REPO || "bagasy-search/claudeyoutubevideos";
 const MINT = process.env.BAGASY_MINT || "https://bagasy-search.vercel.app/api/youtube/mint";
 const sh = (c) => execSync(c, { stdio: ["ignore", "pipe", "pipe"], encoding: "utf8" });
 
-// ⛔⛔ ANTES ACÁ HABÍA UNA SOLA RUTA QUEMADA (`D:/Proyectos/yt-scout-web/.env.local`) y un
-//    `readFileSync` pelado. Medido el 12-sep-2026: ese repo NO está en esta máquina, así que la
-//    entrega moría con un ENOENT crudo **con el video ya renderizado, verificado y publicado en el
-//    release** — el trabajo entero hecho, frenado en el último comando. Y el mensaje de error no
-//    decía qué hacer.
-//    ✅ Ahora: env vars → `--env <ruta>` → lista de rutas conocidas. Y si no encuentra nada,
-//       explica exactamente qué falta y dónde ponerlo.
-const envFlag = (process.argv.find((a) => a.startsWith("--env=")) || "").slice(6);
-const CANDIDATOS = [
-  envFlag,
-  process.env.BAGASY_ENV,
-  "D:/Proyectos/yt-scout-web/.env.local",
-  "D:/Proyectos/bagasy-search/.env.local",
-  "C:/Users/bauti/Downloads/yt-scout-web/.env.local",
-  "C:/Users/bauti/Downloads/bagasy-search/.env.local",
-].filter(Boolean);
-
-let U = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
-let K = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
-let origen = U && K ? "variables de entorno" : "";
-if (!U || !K) {
-  for (const ruta of CANDIDATOS) {
-    if (!fs.existsSync(ruta)) continue;
-    const env = fs.readFileSync(ruta, "utf8");
-    const g = (k) => (env.match(new RegExp("^" + k + "=(.*)$", "m")) || [])[1]?.trim();
-    const u = g("NEXT_PUBLIC_SUPABASE_URL") || g("SUPABASE_URL");
-    const k = g("SUPABASE_SERVICE_ROLE_KEY");
-    if (u && k) { U = u; K = k; origen = ruta; break; }
-  }
-}
-if (!U || !K) {
-  console.error("⛔ no encontré las credenciales de Supabase de Bagasy.");
-  console.error("   Busqué en las variables de entorno (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY) y en:");
-  for (const r of CANDIDATOS) console.error("     " + (fs.existsSync(r) ? "· (existe, sin las dos vars) " : "· (no existe) ") + r);
-  console.error("");
-  console.error("   Arreglalo de UNA de estas formas:");
-  console.error("     1) dejá el .env.local con NEXT_PUBLIC_SUPABASE_URL y SUPABASE_SERVICE_ROLE_KEY en alguna de esas rutas");
-  console.error("     2) pasalo explícito:  --env=<ruta al .env.local>");
-  console.error("     3) exportá las dos variables antes de correr el comando");
-  console.error("   ⚠️ El video NO se pierde: el mp4 ya está en el release y el meta en public/<slug>_meta.json.");
-  console.error("      Con las creds puestas, este mismo comando termina la entrega.");
-  process.exit(3);
-}
-console.log("creds de Supabase ← " + origen);
+const { U, K, fuente: fuenteCreds } = supaCreds();
+console.log("creds de Supabase:", fuenteCreds);
 const H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" };
 
 // 1) verificar release descargable
@@ -72,8 +31,22 @@ let asset;
 try { asset = (JSON.parse(sh(`gh release view ${slug} -R ${REPO} --json assets`)).assets || []).find((a) => a.name === `${slug}.mp4`); }
 catch (e) { console.error(`no pude ver el release ${slug} en ${REPO}:`, String(e.stderr || e.message).slice(0, 160)); process.exit(2); }
 if (!asset || asset.size < 1e6) { console.error("el release no tiene el mp4 (o es muy chico) — el render no está publicado"); process.exit(2); }
-const url = `https://github.com/${REPO}/releases/download/${slug}/${slug}.mp4`;
+// MP4_SUFIJO: sufijo opcional para la URL (ej. MP4_SUFIJO="?v=2"). Sirve cuando se REEMPLAZO
+// el asset del release: la URL es la misma y el navegador puede seguir sirviendo el archivo VIEJO
+// desde su cache. Cambiando la URL, el cache no puede acertar. GitHub ignora el query.
+const url = `https://github.com/${REPO}/releases/download/${slug}/${slug}.mp4${process.env.MP4_SUFIJO || ""}`;
 console.log("release ✓", url, (asset.size / 1048576).toFixed(0) + "MB");
+
+// ⛔ COMPUERTA DE ENTREGA — no se saltea. El mp4 del farm NUNCA se entrega crudo: trae yuvj420p +
+// rango pc + matriz bt470bg (PAL) y keyframes de 9 s, y el creador lo ve como "lageado" y "con un
+// filtro de brillo" aunque el archivo mida perfecto en cuadros decodificados. Ya volvi a entregarlo
+// mal DOS veces por no abrir la memoria. La receta esta en la cabecera de check_entrega.mjs.
+try {
+  execSync(`node scripts/check_entrega.mjs "${url}"`, { stdio: "inherit" });
+} catch {
+  console.error("⛔ el mp4 no pasa la compuerta de entrega — corregilo y volve a subir el asset");
+  process.exit(3);
+}
 
 // 2) meta (título/descripción)
 let meta = {};
@@ -90,22 +63,59 @@ const main = async () => {
   const thumb = item?.thumb || null;
 
   // 4) crear el video_jobs (mismo patrón que "Ya tengo el video hecho")
+  // `script` es NOT NULL en video_jobs (23502 si falta). Mandamos el guion real si está en disco.
+  let guion = "";
+  for (const c of [`guiones/${slug}.txt`, `guiones/${slug}.md`, `${slug}.txt`]) {
+    if (fs.existsSync(c)) { guion = fs.readFileSync(c, "utf8"); break; }
+  }
   const jobBody = {
     user_id: ch.user_id, channel_key: channelKey, channel_name: ch.name || null, slug,
+    script: guion,
     title: (meta.title || item?.title || slug).slice(0, 200), provider: "claude-chat",
     status: "done", mp4_url: url, thumb_url: thumb,
     yt_title: meta.title ? String(meta.title).slice(0, 120) : null, yt_description: meta.description || null,
   };
-  const jr = await fetch(`${U}/rest/v1/video_jobs`, { method: "POST", headers: { ...H, Prefer: "return=representation" }, body: JSON.stringify(jobBody) });
-  if (!jr.ok) { console.error("insert video_jobs falló:", jr.status, (await jr.text()).slice(0, 200)); process.exit(5); }
-  const job = (await jr.json())[0];
-  console.log("video_jobs ✓ id", job.id, "· status=done · mp4_url seteado");
+  // ⛔ ANTI-DUPLICADOS: un video = UN job por tarjeta. Cada corrida ANTES insertaba una fila nueva y
+  // re-enganchaba la tarjeta → quedaban varios jobs "subibles" para la misma tarjeta, y si se apretaba
+  // "subir" en momentos distintos se subía una versión INTERMEDIA distinta = DUPLICADO en el canal.
+  // Ahora: si la tarjeta ya tiene job, se ACTUALIZA esa fila (no se crea otra). Y si ese job YA ESTÁ
+  // SUBIDO a YouTube, se ABORTA (re-entregar crearía un 2º video) salvo --force-reupload explícito.
+  let existingJob = null;
+  if (item?.videoJobId) {
+    const ej = await (await fetch(`${U}/rest/v1/video_jobs?id=eq.${item.videoJobId}&select=id,yt_video_id,yt_upload_status`, { headers: H })).json();
+    existingJob = Array.isArray(ej) ? ej[0] : null;
+  }
+  // Guarda ANCHA: ¿ESTE slug en ESTE canal ya tiene ALGÚN job subido? (aunque la tarjeta apunte a otro
+  // job intermedio). Si sí, re-entregar y subir haría un 2º video = duplicado. Se aborta salvo --force.
+  const yaSubido = await (await fetch(`${U}/rest/v1/video_jobs?channel_key=eq.${encodeURIComponent(channelKey)}&slug=eq.${slug}&yt_video_id=not.is.null&select=id,yt_video_id&limit=1`, { headers: H })).json();
+  const subido = Array.isArray(yaSubido) ? yaSubido[0] : null;
+  if (subido) {
+    console.error(`\n⛔ DUPLICADO EVITADO: el slug ${slug} en este canal YA tiene un video SUBIDO (job ${subido.id}, yt_video_id=${subido.yt_video_id}).`);
+    console.error(`   Re-entregar y subir crearía un SEGUNDO video. Si esa subida es la versión EQUIVOCADA: borrala en`);
+    console.error(`   https://studio.youtube.com/video/${subido.yt_video_id}/edit y volvé a correr con --force-reupload.`);
+    if (!rest.includes("--force-reupload")) process.exit(6);
+    console.error("   (--force-reupload) sigo; actualizo el job pero NO re-subo automático, lo subís vos.");
+  }
+  let job;
+  if (existingJob) {
+    const up = await fetch(`${U}/rest/v1/video_jobs?id=eq.${existingJob.id}`, { method: "PATCH", headers: { ...H, Prefer: "return=representation" }, body: JSON.stringify(jobBody) });
+    if (!up.ok) { console.error("update video_jobs falló:", up.status, (await up.text()).slice(0, 200)); process.exit(5); }
+    job = (await up.json())[0];
+    console.log("video_jobs ✓ id", job.id, "· REUSADO (update, sin duplicar) · mp4_url seteado");
+  } else {
+    const jr = await fetch(`${U}/rest/v1/video_jobs`, { method: "POST", headers: { ...H, Prefer: "return=representation" }, body: JSON.stringify(jobBody) });
+    if (!jr.ok) { console.error("insert video_jobs falló:", jr.status, (await jr.text()).slice(0, 200)); process.exit(5); }
+    job = (await jr.json())[0];
+    console.log("video_jobs ✓ id", job.id, "· nuevo · mp4_url seteado");
+  }
 
   // 5) enganchar la tarjeta del planificador
   if (item) {
-    const next = plan.map((p) => (p.id === cardId ? { ...p, videoJobId: job.id, done: true } : p));
+    // ⛔ NUNCA `done:true` acá. En Bagasy el tic ✓ = SUBIDO A YOUTUBE, no entregado.
+    // Lo pone SOLO el sellado de MisCanales.jsx cuando aparece `yt_video_id`. Ver deliver_fix.mjs.
+    const next = plan.map((p) => (p.id === cardId ? { ...p, videoJobId: job.id } : p));
     const pu = await fetch(`${U}/rest/v1/tracked_channels?id=eq.${ch.id}`, { method: "PATCH", headers: { ...H, Prefer: "return=minimal" }, body: JSON.stringify({ plan: next }) });
-    console.log("tarjeta enganchada:", pu.status === 204 ? `OK (videoJobId=${job.id}, done=true → "video listo")` : `fallo ${pu.status}`);
+    console.log("tarjeta enganchada:", pu.status === 204 ? `OK (videoJobId=${job.id} → "Video listo · subir", SIN tic hasta subir a YouTube)` : `fallo ${pu.status}`);
   }
 
   // 6) YouTube (borrador PRIVADO) vía mint

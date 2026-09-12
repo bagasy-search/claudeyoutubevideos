@@ -35,6 +35,10 @@ export const RawShot: React.FC<{
   grade?: string;
   kbPhase?: number; // fuerza variante de Ken-Burns (para splits A/B del mismo asset)
   kbBoost?: number; // multiplica la magnitud del Ken-Burns (cámara más viva); default 1
+  // ⛔ playbackRate del clip. `Media` lo pone en 0.6 POR DEFECTO (cámara lenta), y un video de
+  // 30 fps a 0.6x en una timeline de 30 fps repite 1 de cada 2 cuadros de forma irregular = JUDDER.
+  // Pasar speed={1} lo reproduce a velocidad nativa, 1 cuadro de fuente por cuadro de timeline.
+  speed?: number;
 }> = ({
   durationInFrames,
   src,
@@ -46,6 +50,7 @@ export const RawShot: React.FC<{
   accent = COLORS.accent,
   fit = "cover",
   clipDur,
+  speed,
   focus,
   trans,
   grade,
@@ -86,6 +91,7 @@ export const RawShot: React.FC<{
       camOrigin={camOrigin}
       noReveal
       clipDur={clipDur}
+      speed={speed}
       beatDur={durSec}
       grade={grade}
       fadeIn={trans}

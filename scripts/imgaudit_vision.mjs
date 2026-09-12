@@ -39,7 +39,7 @@ const CONC = +(process.env.IMGAUDIT_CONC || (ENGINE === "agnes" ? 10 : 6));
 
 const SYSTEM = `Sos un AUDITOR de imágenes de b-roll para un video documental. Te doy UNA imagen y la FRASE que narra el video en ese momento. Juzgá 3 cosas:
 1) ENCAJE: ¿la imagen MUESTRA algo concreto (objeto/acción/lugar) que va con la frase? Una foto de relleno que no tiene que ver = mal.
-2) LIMPIA: ¿tiene TEXTO quemado, subtítulos, marca de agua o logo? Eso = mal (el texto lo ponen los componentes, no la foto).
+2) LIMPIA: ¿tiene una MARCA DE AGUA o un logo de banco de imágenes sobrepuesto (Shutterstock, Getty, iStock, Alamy) o subtítulos quemados de otro video? SOLO eso = mal. ⛔ El texto de la PROPIA ESCENA (etiquetas de productos, carteles del taller, letreros de fondo), aunque sea ilegible o inventado, NO es falla: es b-roll de IA normal y el creador pidió explícitamente NO auditarlo.
 3) NO-GENÉRICA: ¿es una "persona genérica explicando/señalando la nada" sin objeto concreto? Ese es el fallo típico de IA cuando el prompt era abstracto = mal.
 Devolvé SOLO JSON: {"ok": true|false, "issue": "ok"|"off-topic"|"texto"|"marca-agua"|"persona-generica"|"fea", "reason": "<8-15 palabras>"}. ok=true SOLO si encaja Y está limpia Y no es persona-genérica de relleno.`;
 

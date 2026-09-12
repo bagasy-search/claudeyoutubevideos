@@ -1,0 +1,98 @@
+// imgaudit_vision.mjs — AUDITA imágenes IA con visión (gpt-4o-mini) DESDE UN SCRIPT, fuera del
+// contexto del agente. Antes el agente LEÍA las 342 imágenes él mismo → un turno chupaba 16M de
+// cache (el 70% del gasto del video). Acá cada imagen se juzga por API y el agente solo lee el JSON
+// chico de veredictos. NUNCA metas imágenes en el contexto del agente principal: usá esto.
+//
+//   node scripts/imgaudit_vision.mjs <manifest.json> [out_verdicts.json]
+//   manifest = [{name, path, phrase}]  (los _v3/imgaudit_N.json ya tienen ese formato)
+//   Salida  = [{name, ok, issue, reason}]  + resumen por consola (N ok / M a regenerar).
+//   Env: OPENAI_API_KEY (de .env). Concurrencia IMGAUDIT_CONC (def 6). Modelo IMGAUDIT_MODEL.
+import fs from "fs";
+import path from "path";
+
+const [manifestArg, outArg] = process.argv.slice(2);
+if (!manifestArg) { console.error("Uso: node scripts/imgaudit_vision.mjs <manifest.json> [out.json]"); process.exit(1); }
+
+const env = {};
+try { for (const l of fs.readFileSync(".env", "utf8").split(/\r?\n/)) { const m = l.match(/^([A-Z_0-9]+)\s*=\s*(.*)$/); if (m) env[m[1]] = m[2].replace(/^["']|["']$/g, ""); } } catch {}
+// MOTOR: agnes (GRATIS) por defecto; AUDIT_ENGINE=openai vuelve a gpt-4.1-mini (pago).
+// Medido 23-ago-2026 (60 frames de grvaseline): agnes empata en fallas DURAS y cuesta $0.
+// Ver skill `agnes-broll` §4.
+const ENGINE = (process.env.AUDIT_ENGINE || "agnes").toLowerCase();
+const AGNES_KS = (env.AGNES_KEYS || process.env.AGNES_KEYS || "").split(",").map((s) => s.trim()).filter(Boolean);
+const KEY = process.env.OPENAI_API_KEY || env.OPENAI_API_KEY;
+if (ENGINE === "openai" && !KEY) { console.error("falta OPENAI_API_KEY en .env"); process.exit(1); }
+if (ENGINE === "agnes" && !AGNES_KS.length) { console.error("faltan AGNES_KEYS en .env"); process.exit(1); }
+let ki = 0;
+// ⚠ MEDIDO (2026-08-23, 7 imagenes de ground truth + costo real por token):
+//   gpt-4o-mini  5/7 aciertos · $0.150 / 328 imgs   ← era el default y es el PEOR de los dos
+//   gpt-4.1-mini 6/7 aciertos · $0.079 / 328 imgs   ← mejor Y la mitad de precio
+//   gpt-4.1-nano 3/7 aciertos · $0.025              ← aprueba texto quemado y grafiti: INSERVIBLE
+// gpt-4o-mini parecia el barato pero le aplica un multiplicador de ~33x a las IMAGENES:
+// una imagen en detail:low le cuesta 2872 tokens contra 124 de gpt-4o. El precio por token
+// bajo no compensa. detail:"low" se mantiene (en high el mini se va a 14206 tokens).
+const MODEL = process.env.IMGAUDIT_MODEL || (ENGINE === "agnes" ? "agnes-2.5-flash" : "gpt-4.1-mini");
+const API = ENGINE === "agnes"
+  ? (env.AGNES_BASE_URL || "https://apihub.agnes-ai.com/v1") + "/chat/completions"
+  : "https://api.openai.com/v1/chat/completions";
+const CONC = +(process.env.IMGAUDIT_CONC || (ENGINE === "agnes" ? 10 : 6));
+
+const SYSTEM = `You independently judge generated b-roll for a practical American home-door repair video. Image1 is Ray identity reference; image2 is candidate. Compare face only when candidate contains Ray. Judge visible evidence, not prompt intentions. Approve only if the main object/action plausibly matches narration and construction is physically coherent. Check hands and connected arms, tool contact, bolt on narrow door edge versus thumbturn on broad interior face, receiving strike on stationary jamb, hinge between door and jamb. Reject concrete anatomical defects, impossible hardware geometry, wrong action, or generic filler. Do not reject ordinary RAY shirt patch or tiny background product markings; reject prominent invented explanatory text, subtitles and watermarks. Realism need not be flawless. Do not infer concealed internals. Return ONLY JSON {"ok":boolean,"issue":"ok|off-topic|anatomy|hardware|watermark|error","reason":"short concrete visible reason"}.`;
+
+const manifest = JSON.parse(fs.readFileSync(manifestArg, "utf8"));
+const items = (Array.isArray(manifest) ? manifest : []).filter((it) => it && it.name && it.path);
+console.log(`imgaudit visión · motor ${ENGINE} (${MODEL}, conc ${CONC}) · ${items.length} imágenes`);
+
+const mimeOf = (p) => /\.png$/i.test(p) ? "image/png" : /\.webp$/i.test(p) ? "image/webp" : "image/jpeg";
+
+async function audit(it, attempt = 1) {
+  const abs = path.isAbsolute(it.path) ? it.path : it.path;
+  if (!fs.existsSync(abs)) return { name: it.name, ok: false, issue: "falta", reason: "no existe el archivo" };
+  try {
+    const b64 = fs.readFileSync(abs).toString("base64");
+    const auth = ENGINE === "agnes" ? AGNES_KS[(ki++) % AGNES_KS.length] : KEY;
+    const r = await fetch(API, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${auth}` },
+      signal: AbortSignal.timeout(120000),
+      body: JSON.stringify({
+        model: MODEL, temperature: 0,
+        // agnes RAZONA antes del JSON: response_format y max_tokens cortos lo truncan.
+        ...(ENGINE === "agnes" ? {} : { max_tokens: 120, response_format: { type: "json_object" } }),
+        messages: [
+          { role: "system", content: SYSTEM },
+          { role: "user", content: [
+            { type: "image_url", image_url: { url: "data:image/png;base64," + fs.readFileSync("public/ref_rayvault.png").toString("base64"), detail: "low" } },
+            { type: "text", text: `FRASE que narra el video acá: "${it.phrase || "(sin frase)"}"` },
+            { type: "image_url", image_url: { url: `data:${mimeOf(abs)};base64,${b64}`, detail: "low" } },
+          ] },
+        ],
+      }),
+    });
+    if (!r.ok) {
+      if ((r.status === 429 || r.status >= 500) && attempt < 4) { await new Promise((s) => setTimeout(s, 800 * attempt)); return audit(it, attempt + 1); }
+      return { name: it.name, ok: false, issue: "error", reason: `http ${r.status}` };
+    }
+    const j = await r.json();
+    // agnes devuelve el JSON DESPUES del razonamiento -> recortarlo, no parsear el cuerpo entero.
+    const content = j.choices?.[0]?.message?.content || "";
+    let v; try { v = JSON.parse((content.match(/\{[\s\S]*\}/) || ["{}"])[0]); } catch { v = {}; }
+    return { name: it.name, ok: v.ok === true, issue: v.issue || (v.ok ? "ok" : "fea"), reason: (v.reason || "").slice(0, 120) };
+  } catch (e) {
+    if (attempt < 4) { await new Promise((s) => setTimeout(s, 800 * attempt)); return audit(it, attempt + 1); }
+    return { name: it.name, ok: false, issue: "error", reason: e.message.slice(0, 80) };
+  }
+}
+
+// pool de concurrencia
+const out = [];
+let i = 0;
+async function worker() { while (i < items.length) { const it = items[i++]; out.push(await audit(it)); } }
+await Promise.all(Array.from({ length: Math.min(CONC, items.length) }, worker));
+out.sort((a, b) => items.findIndex((x) => x.name === a.name) - items.findIndex((x) => x.name === b.name));
+
+const bad = out.filter((v) => !v.ok);
+const dest = outArg || manifestArg.replace(/\.json$/, "_verdicts.json");
+fs.writeFileSync(dest, JSON.stringify(out, null, 2));
+console.log(`\n${out.length - bad.length} ok / ${bad.length} a regenerar → ${dest}`);
+if (bad.length) { console.log("A regenerar:"); bad.slice(0, 40).forEach((v) => console.log(`  · ${v.name} [${v.issue}] ${v.reason}`)); }

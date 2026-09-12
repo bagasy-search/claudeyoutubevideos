@@ -16,6 +16,7 @@ import { MainBastida2, TOTAL_2 } from "./bastida/Main_bastida2";
 import { MainBastida4, TOTAL_4 } from "./bastida/Main_bastida4";
 import { MainBastida5, TOTAL_5 } from "./bastida/Main_bastida5";
 import { MainBastida6, TOTAL_6 } from "./bastida/Main_bastida6";
+import { MainBastida8, TOTAL_FRAMES_8 } from "./bastida/Main_bastida8";
 import { LaminaSeguras, SemaforoScene, ManoVsCuchara, OxalatoScene, SemillaDespensa } from "./bastida/Bastida6Kit";
 import { ChapterAguaLimon } from "./bastida/ChapterAguaLimon";
 import { ChapterScene, CHAPTER_CONFIGS } from "./bastida/ChapterScene";
@@ -26,6 +27,8 @@ import { GuideCTAScene } from "./bastida/GuideCTAScene";
 import { QrCtaScene } from "./bastida/QrCtaScene";
 import { TestimonialScene } from "./bastida/TestimonialScene";
 import { NightShiftScene, OxidationScene } from "./bastida/VideoScenes2";
+import { EsponjaScene } from "./bastida/EsponjaScene";
+import { DosAguasScene } from "./bastida/DosAguasScene";
 
 // Root de REVIEW del kit "Dr. Bastida · Salud Renal" — cada componente firma como su
 // propia Composition (prefijo Bas_) para verlo aislado, + Bas_KitReel que los encadena.
@@ -52,6 +55,14 @@ export const RootBastida: React.FC = () => (
       id="Bas-Main6"
       component={MainBastida6}
       durationInFrames={TOTAL_6}
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Bas-Main8"
+      component={MainBastida8}
+      durationInFrames={TOTAL_FRAMES_8}
       fps={30}
       width={1920}
       height={1080}
@@ -208,6 +219,12 @@ export const RootBastida: React.FC = () => (
     <Composition id="Bas-Chapter-Manzana" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.manzana} />
     <Composition id="Bas-Chapter-Frutillas" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.frutillas} />
     <Composition id="Bas-Chapter-Pina" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.pina} />
+    <Composition id="Bas-Chapter-Repollo" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.repollo} />
+    <Composition id="Bas-Chapter-Pimiento" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.pimiento} />
+    <Composition id="Bas-Chapter-Coliflor" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.coliflor} />
+    <Composition id="Bas-Chapter-Cebolla" component={ChapterScene} durationInFrames={100} fps={30} width={1920} height={1080} defaultProps={CHAPTER_CONFIGS.cebolla} />
+    <Composition id="Bas-Esponja" component={EsponjaScene} durationInFrames={130} fps={30} width={1920} height={1080} />
+    <Composition id="Bas-DosAguas" component={DosAguasScene} durationInFrames={150} fps={30} width={1920} height={1080} />
     <Composition
       id="Bas-SideIllustration"
       component={SideIllustration}

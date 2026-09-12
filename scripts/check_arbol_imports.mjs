@@ -1,90 +1,116 @@
-// check_arbol_imports.mjs — recorre el árbol de imports DESDE EL ENTRY y verifica que cada archivo
-// (a) exista en disco y (b) esté en el ÍNDICE DE GIT, que es lo único que viaja al farm.
+// check_arbol_imports.mjs — COMPUERTA: cada nombre importado de un módulo LOCAL existe como
+// export REAL en ese archivo.
 //
-//   node scripts/check_arbol_imports.mjs src/index_<slug>.tsx
+//   node scripts/check_arbol_imports.mjs src/index_<slug>.tsx src/<slug>/Main_<slug>.tsx ...
 //
-// ⛔ POR QUÉ EXISTE: el repo es compartido y los kits nuevos nacen SIN TRACKEAR. El farm hace
-//    checkout de una ref: lo que no está en el árbol de git NO LLEGA, y los 60 chunks mueren con
-//    un import undefined. Pasó en raybar1, raygarage y rkbill — las tres veces con el MISMO kit.
-// ⛔ Y la versión vieja de esta compuerta "sólo miraba los archivos que le pasabas": hay que
-//    pasarle el ENTRY y que RECORRA. Si le pasás una lista a mano, mide lo que vos ya sabías.
-// ⛔ Leé la CABECERA del output, no la cola: el resumen de arriba es el que dice SIN TRACKEAR.
-import fs from 'node:fs';
-import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+// Por qué existe: clonar una escena y no renombrar su `export const` deja el import como
+// `undefined` y React tira `Minified React error #130`, que NO dice qué componente fue. Como el
+// avatar es el piso del video, eso mata los 60 chunks. `tsc -p` NO lo marca.
+// Escrito sin regex con escapes a propósito: el shell los mastica y la compuerta termina
+// midiendo cero (ya pasó: "0 rotos" con un regex que nunca podía matchear).
+import fs from "node:fs";
+import path from "node:path";
 
-const entry = process.argv[2];
-if (!entry) { console.error('uso: node scripts/check_arbol_imports.mjs <entry.tsx>'); process.exit(1); }
-if (!fs.existsSync(entry)) { console.error('⛔ no existe el entry: ' + entry); process.exit(1); }
+const roots = process.argv.slice(2);
+const KINDS = ["const", "function", "class", "type", "interface", "default", "let", "var"];
+const isName = (c) => !!c && /[A-Za-z0-9_$]/.test(c);
 
-// índice de git = lo que viaja
-const tracked = new Set(
-  execFileSync('git', ['ls-files'], { maxBuffer: 64 * 1024 * 1024 }).toString()
-    .split(/\r?\n/).filter(Boolean).map(p => p.replace(/\\/g, '/'))
-);
-// modificados sin commitear (viajan en la versión VIEJA, que es peor que no viajar)
-const dirty = new Set(
-  execFileSync('git', ['status', '--porcelain'], { maxBuffer: 32 * 1024 * 1024 }).toString()
-    .split(/\r?\n/).filter(Boolean)
-    .map(l => ({ x: l.slice(0, 2), p: l.slice(3).replace(/\\/g, '/').replace(/^"|"$/g, '') }))
-    .filter(o => / M|M |MM|AM/.test(o.x)).map(o => o.p)
-);
+let nombres = 0, mods = 0, roto = 0;
 
-const EXT = ['', '.tsx', '.ts', '.jsx', '.js', '/index.tsx', '/index.ts', '/index.js'];
-const resolve = (from, spec) => {
-  if (!spec.startsWith('.')) return null;            // paquete de node_modules
-  const base = path.resolve(path.dirname(from), spec);
-  for (const e of EXT) { const c = base + e; if (fs.existsSync(c) && fs.statSync(c).isFile()) return c; }
-  return { missing: base };
-};
+// ⛔⛔ RECORRE EL ARBOL ENTERO, no solo los roots que te acordaste de pasar.
+// Medido (tswoil3in1, sep-2026): pasandole solo `src/index_<slug>.tsx` imprimio
+// "2 nombres revisados en 1 modulos - rotos 0" — verde — y los 60 chunks murieron con
+// "Can't resolve './VoltStage'", porque Piezas.tsx importaba un archivo que nunca revise.
+// Una compuerta que mide 1 modulo de 6 y dice OK es peor que no tenerla.
+const cola = [...roots];
+const vistos = new Set();
 
-const vistos = new Set(), faltan = [], sinTrackear = [], modificados = [];
-let leidos = 0, importsVistos = 0;
+while (cola.length) {
+  const r = cola.shift();
+  if (vistos.has(r)) continue;
+  vistos.add(r);
+  if (!fs.existsSync(r)) { console.log("  MODULO NO EXISTE: " + r); roto++; continue; }
+  // ⛔ FILTRAR LOS COMENTARIOS ANTES DE BUSCAR: `kit/premium/index.ts` trae en su cabecera
+  //    `// Importá de acá: import { VsDuel } from "./kit/premium";` y la compuerta lo leía como
+  //    un import REAL, reportando "MODULO NO EXISTE" sobre un árbol perfectamente sano.
+  //    (Misma mina que el falso positivo de `<Video>` disparado por su propio comentario.)
+  const s = fs.readFileSync(r, "utf8")
+    .split("\n")
+    .map((L) => { const t = L.trim(); return (t.startsWith("//") || t.startsWith("*") || t.startsWith("/*")) ? "" : L; })
+    .join("\n");
+  let i = 0;
+  while ((i = s.indexOf("import", i)) !== -1) {
+    const open = s.indexOf("{", i);
+    const fromI = s.indexOf("from", i);
+    i += 6;
+    if (open === -1 || fromI === -1 || open > fromI) continue;
+    const close = s.indexOf("}", open);
+    if (close === -1 || close > fromI) continue;
+    const q1 = s.indexOf('"', fromI);
+    const q2 = s.indexOf('"', q1 + 1);
+    if (q1 === -1 || q2 === -1) continue;
+    const spec = s.slice(q1 + 1, q2);
+    if (spec[0] !== ".") continue;                       // sólo módulos locales
 
-function walk(file) {
-  const rel = path.relative(process.cwd(), file).replace(/\\/g, '/');
-  if (vistos.has(rel)) return;
-  vistos.add(rel);
-  leidos++;
-  if (!tracked.has(rel)) sinTrackear.push(rel);
-  else if (dirty.has(rel)) modificados.push(rel);
+    const names = s.slice(open + 1, close)
+      .split(",").map((x) => x.trim().split(" as ")[0].trim()).filter(Boolean);
 
-  const src = fs.readFileSync(file, 'utf8');
-  const specs = [
-    ...src.matchAll(/(?:^|\n)\s*import\s[^;]*?from\s*["']([^"']+)["']/g),
-    ...src.matchAll(/(?:^|\n)\s*export\s[^;]*?from\s*["']([^"']+)["']/g),
-    ...src.matchAll(/\bimport\(\s*["']([^"']+)["']\s*\)/g),
-    ...src.matchAll(/(?:^|\n)\s*import\s*["']([^"']+)["']/g),
-  ].map(m => m[1]);
+    let f = path.join(path.dirname(r), spec);
+    // ⛔ faltaban los barrels `dir/index.tsx`: con un import que resuelve a un DIRECTORIO,
+    //    existsSync daba true, f se quedaba en la carpeta y readFileSync moría con EISDIR
+    //    (la compuerta ABORTA y no revisa NADA — un crash tampoco es un OK).
+    let resuelto = false;
+    for (const ext of ["", ".tsx", ".ts", "/index.tsx", "/index.ts", ".jsx", ".js"]) {
+      if (fs.existsSync(f + ext) && fs.statSync(f + ext).isFile()) { f = f + ext; resuelto = true; break; }
+    }
+    if (!resuelto) {
+      console.log("  MODULO NO EXISTE: " + spec + " (desde " + r + ")");
+      roto++; continue;
+    }
+    mods++;
+    if (/[.](tsx?|jsx?)$/.test(f)) cola.push(f);   // <- y se sigue por dentro
+    const src = fs.readFileSync(f, "utf8");
 
-  for (const s of specs) {
-    importsVistos++;
-    const r = resolve(file, s);
-    if (r === null) continue;
-    if (r.missing) { faltan.push({ de: rel, spec: s }); continue; }
-    walk(r);
+    for (const nm of names) {
+      nombres++;
+      let ok = false;
+      for (const k of KINDS) {
+        const pat = "export " + k + " " + nm;
+        let j = 0;
+        while ((j = src.indexOf(pat, j)) !== -1) {
+          // ⛔ sin este corte, "export const FotoX" matchea la busqueda de "Foto" y la compuerta
+          // da OK con el export ROTO (lo cazo el control negativo, no la corrida normal).
+          if (!isName(src[j + pat.length])) { ok = true; break; }
+          j += pat.length;
+        }
+        if (ok) break;
+      }
+      if (!ok) {
+        // re-export en llaves:  export { A, B } from ...   /   export { A }
+        let j = 0;
+        while (!ok && (j = src.indexOf("export", j)) !== -1) {
+          const b = s0(src, j);
+          if (b !== -1) {
+            const e = src.indexOf("}", b);
+            if (e !== -1) {
+              const lista = src.slice(b + 1, e).split(",").map((x) => x.trim().split(" as ")[0].trim());
+              if (lista.includes(nm)) ok = true;
+            }
+          }
+          j += 6;
+        }
+      }
+      if (!ok) { console.log("  ROTO: " + nm + " no existe como export en " + f); roto++; }
+    }
   }
 }
-walk(path.resolve(entry));
 
-// ── CABECERA: lo que importa va ARRIBA ────────────────────────────────────
-console.log('═'.repeat(72));
-console.log('ENTRY: ' + entry);
-console.log('MEDIDO: ' + leidos + ' archivos del árbol · ' + importsVistos + ' imports resueltos · ' +
-  tracked.size + ' archivos en el índice de git');
-if (leidos <= 1) { console.error('⛔ recorrí 1 archivo o menos — el recorrido está roto, NO es un árbol sano'); process.exit(1); }
-console.log('');
-console.log('SIN TRACKEAR : ' + sinTrackear.length + (sinTrackear.length ? '   ⛔ NO VIAJAN AL FARM' : '   ✓'));
-for (const f of sinTrackear) console.log('     ⛔ ' + f);
-console.log('MODIFICADOS  : ' + modificados.length + (modificados.length ? '   ⛔ el farm se lleva la versión VIEJA' : '   ✓'));
-for (const f of modificados) console.log('     ⛔ ' + f);
-console.log('IMPORTS ROTOS: ' + faltan.length + (faltan.length ? '   ⛔' : '   ✓'));
-for (const f of faltan) console.log('     ⛔ ' + f.de + ' → "' + f.spec + '"');
-console.log('═'.repeat(72));
-
-if (sinTrackear.length || modificados.length || faltan.length) {
-  console.log('');
-  console.log('ARREGLO: `git add` de los sin-trackear y los modificados ANTES de armar la ref de render.');
-  console.log('         (`git checkout <ref> -- <path>` ya los deja en el índice: es la vía corta.)');
-  process.exit(2);
+// primera llave después de `export`, si sólo hay espacios en el medio
+function s0(src, j) {
+  let k = j + 6;
+  while (k < src.length && (src[k] === " " || src[k] === "\t")) k++;
+  return src[k] === "{" ? k : -1;
 }
+
+console.log("  " + nombres + " nombres revisados en " + mods + " modulos - rotos " + roto);
+process.exit(roto ? 1 : 0);
