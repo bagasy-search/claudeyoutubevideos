@@ -8,6 +8,14 @@ dist
 .env.*
 !.env.example
 
+# ⛔ SECRETOS DE YOUTUBE — el repo es PUBLICO y estos NO estaban cubiertos.
+#    Descubierto el 12-sep-2026: un `git stash -u` se los llevo del disco, lo que probo
+#    que git los veia como "untracked" (o sea, commiteables), no como ignorados.
+youtube/client_secret.json
+youtube/tokens/
+cookies/
+*.enc
+
 # Ignore the output video from Git but not videos you import into src/.
 out
 
