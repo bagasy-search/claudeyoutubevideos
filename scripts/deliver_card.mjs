@@ -21,10 +21,50 @@ const REPO = process.env.BAGASY_REPO || "bagasy-search/claudeyoutubevideos";
 const MINT = process.env.BAGASY_MINT || "https://bagasy-search.vercel.app/api/youtube/mint";
 const sh = (c) => execSync(c, { stdio: ["ignore", "pipe", "pipe"], encoding: "utf8" });
 
-const env = fs.readFileSync("D:/Proyectos/yt-scout-web/.env.local", "utf8");
-const g = (k) => (env.match(new RegExp("^" + k + "=(.*)$", "m")) || [])[1]?.trim();
-const U = g("NEXT_PUBLIC_SUPABASE_URL"), K = g("SUPABASE_SERVICE_ROLE_KEY");
-if (!U || !K) { console.error("faltan creds de Supabase en yt-scout-web/.env.local"); process.exit(3); }
+// ⛔⛔ ANTES ACÁ HABÍA UNA SOLA RUTA QUEMADA (`D:/Proyectos/yt-scout-web/.env.local`) y un
+//    `readFileSync` pelado. Medido el 12-sep-2026: ese repo NO está en esta máquina, así que la
+//    entrega moría con un ENOENT crudo **con el video ya renderizado, verificado y publicado en el
+//    release** — el trabajo entero hecho, frenado en el último comando. Y el mensaje de error no
+//    decía qué hacer.
+//    ✅ Ahora: env vars → `--env <ruta>` → lista de rutas conocidas. Y si no encuentra nada,
+//       explica exactamente qué falta y dónde ponerlo.
+const envFlag = (process.argv.find((a) => a.startsWith("--env=")) || "").slice(6);
+const CANDIDATOS = [
+  envFlag,
+  process.env.BAGASY_ENV,
+  "D:/Proyectos/yt-scout-web/.env.local",
+  "D:/Proyectos/bagasy-search/.env.local",
+  "C:/Users/bauti/Downloads/yt-scout-web/.env.local",
+  "C:/Users/bauti/Downloads/bagasy-search/.env.local",
+].filter(Boolean);
+
+let U = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || "";
+let K = process.env.SUPABASE_SERVICE_ROLE_KEY || "";
+let origen = U && K ? "variables de entorno" : "";
+if (!U || !K) {
+  for (const ruta of CANDIDATOS) {
+    if (!fs.existsSync(ruta)) continue;
+    const env = fs.readFileSync(ruta, "utf8");
+    const g = (k) => (env.match(new RegExp("^" + k + "=(.*)$", "m")) || [])[1]?.trim();
+    const u = g("NEXT_PUBLIC_SUPABASE_URL") || g("SUPABASE_URL");
+    const k = g("SUPABASE_SERVICE_ROLE_KEY");
+    if (u && k) { U = u; K = k; origen = ruta; break; }
+  }
+}
+if (!U || !K) {
+  console.error("⛔ no encontré las credenciales de Supabase de Bagasy.");
+  console.error("   Busqué en las variables de entorno (SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY) y en:");
+  for (const r of CANDIDATOS) console.error("     " + (fs.existsSync(r) ? "· (existe, sin las dos vars) " : "· (no existe) ") + r);
+  console.error("");
+  console.error("   Arreglalo de UNA de estas formas:");
+  console.error("     1) dejá el .env.local con NEXT_PUBLIC_SUPABASE_URL y SUPABASE_SERVICE_ROLE_KEY en alguna de esas rutas");
+  console.error("     2) pasalo explícito:  --env=<ruta al .env.local>");
+  console.error("     3) exportá las dos variables antes de correr el comando");
+  console.error("   ⚠️ El video NO se pierde: el mp4 ya está en el release y el meta en public/<slug>_meta.json.");
+  console.error("      Con las creds puestas, este mismo comando termina la entrega.");
+  process.exit(3);
+}
+console.log("creds de Supabase ← " + origen);
 const H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "application/json" };
 
 // 1) verificar release descargable
