@@ -46,7 +46,7 @@ const idDeAsset = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, 
 
 const usados = new Set();
 const cues = [], overlays = [];
-let nCam = 0;
+let nCam = 0, nCamas = 0;
 
 for (const b of plan.beats) {
   const key = `${b.kind}_${Math.round(b.t * 1000)}`;
@@ -74,8 +74,25 @@ for (const b of plan.beats) {
     if (b.bed && !OVERLAY.has(b.comp)) props.bed = b.bed;
     el = `(d) => <${b.comp} durationInFrames={d} {...(${JSON.stringify(props)} as any)} />`;
   }
+  const esOverlay = b.kind === 'componente' && OVERLAY.has(b.comp);
   const row = `  { key: ${JSON.stringify(key)}, start: ${b.t}, dur: ${b.dur}, el: ${el} },`;
-  (b.kind === 'componente' && OVERLAY.has(b.comp) ? overlays : cues).push(row);
+  (esOverlay ? overlays : cues).push(row);
+
+  // ⛔⛔ UN OVERLAY NO CUBRE NADA — Y DESPUÉS DE `AVATAR_END` ESO SE VE.
+  //    Medido acá sobre el render: el `RayCta` arranca en 1313,5 s, el plano de base anterior
+  //    termina EXACTAMENTE ahí, y durante sus 8,12 s no queda ningún cue en la capa base →
+  //    se ve el AVATAR EN BUCLE, con la boca moviéndose fuera de sincronía, 6,3 minutos después
+  //    de que terminó la grabación. Justo en el CTA.
+  //    Ninguna compuerta lo veía: no hay negro, hay imagen, el `density_gate` lo contaba como
+  //    cobertura porque el beat existe. Es la mina de fcscolageno: "avatar VISIBLE donde no puede
+  //    estarlo" nunca se midió.
+  //    ✅ Todo overlay lleva su PROPIA cama en la capa base, por su duración exacta.
+  if (esOverlay && b.bed) {
+    const camaId = b.bed.replace(/^img\//, '').replace(/_blur\.jpg$/, '');
+    cues.push(`  { key: ${JSON.stringify(key + '_cama')}, start: ${b.t}, dur: ${b.dur}, ` +
+      `el: (d) => <Foto src=${JSON.stringify('img/' + camaId + '.jpg')} seed={${seed}} durF={d} /> },`);
+    nCamas++;
+  }
 }
 
 const compsNecesarios = [...usados].sort();
@@ -154,7 +171,37 @@ console.log('CUES     : ' + cues.length + '  ·  OVERLAYS: ' + overlays.length);
 console.log('CÁMARA DE VIGILANCIA: ' + nCam + ' planos con el tratamiento RaySecurityCam ' + (nCam >= 8 ? '✓' : '⛔ el hook se va a ver como una foto quieta'));
 console.log('COMPONENTES importados: ' + compsNecesarios.length + ' → ' + compsNecesarios.join(' · '));
 console.log('TOTAL_FRAMES: ' + TOTAL_F + ' (' + plan.total.toFixed(2) + ' s)  ·  AVATAR_FRAMES: ' + AVATAR_F);
+console.log('CAMAS BAJO OVERLAY: ' + nCamas + ' (sin esto se ve el avatar en bucle debajo del CTA) ' + (nCamas === overlays.length ? '✓' : '⛔'));
 if (!overlays.length) console.log('⚠️ 0 overlays — ¿el RayCta quedó en la capa base?');
+
+// ── ⛔⛔ COMPUERTA: NINGÚN INSTANTE DESPUÉS DE AVATAR_END SIN CUE DE BASE ─────────────────
+// Es la que faltaba y la que dejó pasar los 8,12 s de avatar en bucle debajo del CTA.
+// Se simula la capa BASE (sólo CUES, los OVERLAYS no cubren nada) cada 0,1 s.
+// ⚠️ Medir sobre los BEATS del plan MIENTE: ahí el RayCta es un beat y cuenta como cobertura.
+//    Hay que medir sobre lo que realmente se monta en la capa base.
+{
+  const baseBeats = plan.beats.filter(b => !(b.kind === 'componente' && OVERLAY.has(b.comp)));
+  const camas = plan.beats.filter(b => b.kind === 'componente' && OVERLAY.has(b.comp) && b.bed)
+    .map(b => ({ t: b.t, dur: b.dur }));
+  const spans = [...baseBeats.map(b => ({ t: b.t, dur: b.dur })), ...camas].sort((a, b) => a.t - b.t);
+  let huecos = 0, peor = 0, peorT = 0, medidos = 0;
+  for (let t = plan.avatarEnd; t < plan.total - 0.15; t += 0.1) {
+    medidos++;
+    const cubierto = spans.some(s => s.t <= t && s.t + s.dur > t);
+    if (!cubierto) {
+      huecos++;
+      let run = 0.1, u = t + 0.1;
+      while (u < plan.total && !spans.some(s => s.t <= u && s.t + s.dur > u)) { run += 0.1; u += 0.1; }
+      if (run > peor) { peor = run; peorT = t; }
+    }
+  }
+  const seg = (huecos * 0.1).toFixed(1);
+  console.log('AVATAR EN BUCLE A LA VISTA: instantes medidos ' + medidos + ' · descubiertos ' + huecos +
+    ' = ' + seg + ' s' + (huecos ? '  ⛔ el peor de ' + peor.toFixed(1) + ' s en ' +
+      Math.floor(peorT / 60) + ':' + String(Math.round(peorT % 60)).padStart(2, '0') : '  ✓'));
+  if (medidos < 100) { console.error('⛔ medí ' + medidos + ' instantes — el medidor está roto'); process.exit(3); }
+  if (huecos) { console.error('⛔ después de AVATAR_END los labios no coinciden: no se puede ver el avatar ahí'); process.exit(3); }
+}
 
 // ── COMPUERTA: todo asset referenciado tiene que EXISTIR ─────────────────
 let faltan = 0, chequeados = 0;

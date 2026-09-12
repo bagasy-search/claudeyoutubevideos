@@ -519,7 +519,22 @@ if (!ranges && !process.env.NO_CHUNKPLAN && !only) {
   }
 }
 
-sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${process.env.STITCH_RAW ? ` -f stitch_raw=1` : ""}${ranges ? ` -f ranges=${ranges}` : ""}`);
+// ⭐⭐ `stitch_raw` ES EL DEFAULT (medido 12-sep-2026, rkfob). El paso `stitch` del workflow NO
+// "pega" los pedazos: hace un RE-ENCODE COMPLETO con x264 (`-preset fast -crf 18`) de todo el
+// video en un runner de DOS núcleos. Medido en este repo sobre corridas reales:
+//     clembudo (corto)  13 · 16 · 17 min
+//     fasenales17       85 min
+//     fasilla          101 min
+//     rkfob (23:29)     ~65 min proyectados
+// Y ESE RE-ENCODE ESTÁ DUPLICADO: el re-encode de ENTREGA es obligatorio igual (el mp4 del farm
+// nunca se entrega crudo — hay que rehacer los PTS, corregir el color a tv/bt709 y montar el audio
+// mono→estéreo del máster), y ya aplica el MISMO `setpts=N/30/TB -r 30 -fps_mode cfr`.
+// El concat crudo tarda SEGUNDOS: medido, 42.277 cuadros en 2,42 s a 583x.
+// ⛔ Poner `STITCH_RAW=0` SÓLO si el mp4 del farm se fuera a entregar tal cual — cosa que la regla
+//    dura del pipeline prohíbe. Por eso el default correcto es 1, no vacío.
+const stitchRaw = process.env.STITCH_RAW === "0" ? "" : " -f stitch_raw=1";
+sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${stitchRaw}${ranges ? ` -f ranges=${ranges}` : ""}`);
+if (stitchRaw) console.log("stitch_raw=1 → el runner publica el concat CRUDO (segundos, no ~65 min). El CFR/color/audio los pone el re-encode de entrega.");
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");

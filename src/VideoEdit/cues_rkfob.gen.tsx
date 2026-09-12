@@ -212,7 +212,7 @@ export const CUES: Cue[] = [
   { key: "imagen_1141675", start: 1141.675, dur: 5.6, el: (d) => <Foto src="img/rkfob_p2_43.jpg" seed={34250} durF={d} /> },
   { key: "imagen_1147275", start: 1147.275, dur: 2.9, el: (d) => <Foto src="img/rkfob_p2_44.jpg" seed={34418} durF={d} /> },
   { key: "imagen_1150175", start: 1150.175, dur: 5.2, el: (d) => <Foto src="img/rkfob_s9_01.jpg" seed={34505} durF={d} /> },
-  { key: "imagen_1155375", start: 1155.375, dur: 3.2, el: (d) => <Foto src="img/rkfob_s9_02.jpg" seed={34661} durF={d} /> },
+  { key: "imagen_1155375", start: 1155.375, dur: 3.735, el: (d) => <Foto src="img/rkfob_s9_02.jpg" seed={34661} durF={d} /> },
   { key: "componente_1179505", start: 1179.505, dur: 7.84, el: (d) => <RouteFlow durationInFrames={d} {...({"kicker":"WHAT ACTUALLY LEAVES","title":"It stops being a car job","steps":[{"label":"The truck"},{"label":"The key"},{"label":"The garage remote"},{"label":"Your address"},{"label":"Your front door"}],"bed":"img/rkfob_s10_01_blur.jpg"} as any)} /> },
   { key: "componente_1235725", start: 1235.725, dur: 6.44, el: (d) => <BigStat durationInFrames={d} {...({"value":"4 days","unit":"and eleven phone calls","caption":"Against thirty seconds and a button you already own.","tone":"danger","bed":"img/rkfob_s10_01_blur.jpg"} as any)} /> },
   { key: "imagen_1159110", start: 1159.11, dur: 8.5, el: (d) => <Foto src="img/rkfob_s10_01.jpg" seed={34773} durF={d} /> },
@@ -231,6 +231,7 @@ export const CUES: Cue[] = [
   { key: "imagen_1246765", start: 1246.765, dur: 9.2, el: (d) => <Foto src="img/rkfob_p2_45.jpg" seed={37403} durF={d} /> },
   { key: "clip_1255965", start: 1255.965, dur: 2.995, el: (d) => <Clip src="broll/rkfob/rkfob_p2_46.mp4" rate={1} /> },
   { key: "componente_1258965", start: 1258.965, dur: 6.44, el: (d) => <PullQuote durationInFrames={d} {...({"quote":"Ray, was there something I was supposed to know?","attrib":"— a customer, in her own doorway","bed":"img/rkfob_s11_01_blur.jpg"} as any)} /> },
+  { key: "componente_1313485_cama", start: 1313.485, dur: 8.12, el: (d) => <Foto src="img/rkfob_s11_01.jpg" seed={39405} durF={d} /> },
   { key: "imagen_1265405", start: 1265.405, dur: 8.5, el: (d) => <Foto src="img/rkfob_s11_01.jpg" seed={37962} durF={d} /> },
   { key: "clip_1273905", start: 1273.905, dur: 4.03, el: (d) => <Clip src="broll/rkfob/rkfob_s11_02.mp4" rate={1} /> },
   { key: "imagen_1277935", start: 1277.935, dur: 6.2, el: (d) => <Foto src="img/rkfob_s11_03.jpg" seed={38338} durF={d} /> },
@@ -238,7 +239,7 @@ export const CUES: Cue[] = [
   { key: "imagen_1292205", start: 1292.205, dur: 4.6, el: (d) => <Foto src="img/rkfob_s11_05.jpg" seed={38766} durF={d} /> },
   { key: "imagen_1296805", start: 1296.805, dur: 9.2, el: (d) => <Foto src="img/rkfob_s11_06.jpg" seed={38904} durF={d} /> },
   { key: "clip_1306005", start: 1306.005, dur: 4.03, el: (d) => <Clip src="broll/rkfob/rkfob_s11_07.mp4" rate={1} /> },
-  { key: "imagen_1310035", start: 1310.035, dur: 3.45, el: (d) => <Foto src="img/rkfob_s11_08.jpg" seed={39301} durF={d} /> },
+  { key: "imagen_1310035", start: 1310.035, dur: 11.57, el: (d) => <Foto src="img/rkfob_s11_08.jpg" seed={39301} durF={d} /> },
   { key: "imagen_1321605", start: 1321.605, dur: 8.5, el: (d) => <Foto src="img/rkfob_s11_09.jpg" seed={39648} durF={d} /> },
   { key: "clip_1330105", start: 1330.105, dur: 4.03, el: (d) => <Clip src="broll/rkfob/rkfob_s11_10.mp4" rate={1} /> },
   { key: "imagen_1334135", start: 1334.135, dur: 6.2, el: (d) => <Foto src="img/rkfob_p2_48.jpg" seed={40024} durF={d} /> },
@@ -254,7 +255,7 @@ export const CUES: Cue[] = [
   { key: "imagen_1385885", start: 1385.885, dur: 9.2, el: (d) => <Foto src="img/rkfob_s12_06.jpg" seed={41577} durF={d} /> },
   { key: "clip_1395085", start: 1395.085, dur: 4.03, el: (d) => <Clip src="broll/rkfob/rkfob_s12_07.mp4" rate={1} /> },
   { key: "imagen_1399115", start: 1399.115, dur: 7.1, el: (d) => <Foto src="img/rkfob_s12_08.jpg" seed={41973} durF={d} /> },
-  { key: "imagen_1406215", start: 1406.215, dur: 2.745, el: (d) => <Foto src="img/rkfob_s12_09.jpg" seed={42186} durF={d} /> },
+  { key: "imagen_1406215", start: 1406.215, dur: 3.003, el: (d) => <Foto src="img/rkfob_s12_09.jpg" seed={42186} durF={d} /> },
 ];
 
 export const OVERLAYS: Cue[] = [

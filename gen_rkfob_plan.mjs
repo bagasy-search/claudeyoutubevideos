@@ -228,6 +228,26 @@ let quitados = 0;
 }
 const finales = beats.filter(b => !b._quitar);
 
+// ── ⛔⛔ CERRAR LOS HUECOS DE LA CAPA BASE DESPUÉS DE AVATAR_END ───────────
+// Ahí el avatar corre en BUCLE y sus labios no coinciden: medio segundo de su cara con la boca
+// fuera de sincronía se ve igual. Los huecos salen de dos lados: el borde entre secciones (la
+// escalera de duraciones no llega justo al límite) y el final del video.
+// ⛔ El RayCta NO cuenta como cobertura: es un OVERLAY, va encima y no tapa nada. Medirlo como
+//    beat es lo que dejó pasar 8,12 s de avatar en bucle debajo del CTA.
+{
+  const OV = new Set(['RayCta']);
+  const base = finales.filter(b => !(b.kind === 'componente' && OV.has(b.comp)))
+    .sort((a, b) => a.t - b.t);
+  let cerrados = 0, seg = 0;
+  for (let i = 0; i < base.length; i++) {
+    const fin = base[i].t + base[i].dur;
+    const sig = i + 1 < base.length ? base[i + 1].t : TOTAL;
+    if (fin < AVATAR_END - 0.05) continue;          // antes de AVATAR_END la cara SÍ puede verse
+    if (sig - fin > 0.05) { seg += sig - fin; base[i].dur = +(sig - base[i].t).toFixed(3); cerrados++; }
+  }
+  console.log('huecos de base cerrados en el tramo 2: ' + cerrados + ' (' + seg.toFixed(2) + ' s de avatar en bucle evitados)');
+}
+
 // ── MÉTRICAS ──────────────────────────────────────────────────────────────
 const durs = finales.filter(b => b.kind !== 'componente').map(b => b.dur).sort((a, b) => a - b);
 const q = (p) => durs.length ? durs[Math.min(durs.length - 1, Math.floor(durs.length * p))] : 0;
