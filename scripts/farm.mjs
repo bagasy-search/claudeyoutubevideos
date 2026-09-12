@@ -539,7 +539,20 @@ if (!process.env.FARM_ALLOW_DUP) {
   } catch { /* sin gh o sin red: no bloqueo el render por no poder consultar */ }
 }
 console.log(only ? `disparando render.yml (PARCIAL, chunks ${only}) ...` : "disparando render.yml ...");
-sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}`);
+// ⭐⭐ `stitch_raw` ES EL DEFAULT (medido 12-sep-2026, rkfob). El paso `stitch` del workflow NO
+// "pega" los pedazos: hace un RE-ENCODE COMPLETO con x264 (`-preset fast -crf 18`) de todo el
+// video en un runner de DOS núcleos. Duraciones reales de este repo:
+//     clembudo (corto)  13 · 16 · 17 min   |   fasenales17  85 min   |   fasilla  101 min
+// Y ESE RE-ENCODE ESTÁ DUPLICADO: el re-encode de ENTREGA es obligatorio igual (rehacer los PTS,
+// corregir el color a tv/bt709 y montar el audio mono→estéreo del máster) y ya aplica el MISMO
+// `setpts=N/30/TB -r 30 -fps_mode cfr`. El concat crudo tarda SEGUNDOS: 42.277 cuadros en 2,42 s.
+// ⛔ `STITCH_RAW=0` lo desactiva, y sólo tendría sentido si el mp4 del farm se entregara tal cual —
+//    cosa que la regla dura del pipeline prohíbe. Por eso el default correcto es 1, no vacío.
+// 🔧 Si una corrida ya salió sin el flag: `node scripts/stitch_local.mjs <run_id> <total_frames>`
+//    baja los chunks (quedan como artifacts) y los concatena acá en segundos.
+const stitchRaw = process.env.STITCH_RAW === "0" ? "" : " -f stitch_raw=1";
+sh(`gh workflow run render.yml${process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : ""} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f chunks=${chunks}${only ? ` -f only_chunks=${only}` : ""}${entry ? ` -f entry=${entry}` : ""}${stitchRaw}`);
+if (stitchRaw) console.log("stitch_raw=1 → el runner publica el concat CRUDO (segundos, no ~65 min). El CFR/color/audio los pone el re-encode de entrega.");
 
 // 4) esperar y descargar el mp4 final
 console.log("esperando que aparezca la corrida ...");

@@ -12,6 +12,7 @@
 import React from "react";
 import {
   AbsoluteFill, Easing, Img, Loop, OffthreadVideo, interpolate, staticFile, useCurrentFrame,
+  useVideoConfig,
 } from "remotion";
 import { F_OSWALD, F_INTER } from "../VideoEdit/kit/premium/theme";
 
@@ -36,9 +37,16 @@ export const F_BODY = F_INTER;
 export const clamp01 = (x: number) => Math.max(0, Math.min(1, x));
 export const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 // hash determinístico: reemplaza Math.random() (obligatorio, el farm rinde en paralelo)
+// ⛔ NO volver a `Math.sin(k*12.9898)*43758.5453`: con seeds GRANDES —y acá el seed es el cuadro de
+//    arranque del plano, que llega a 40.000— pierde precisión y se CORRELACIONA. Medido en pinluz:
+//    racha de 11 del mismo signo y reparto 43/57. Con hash entero dio racha 8 y 47/53, que es la
+//    mediana exacta del azar para esa cantidad de planos.
 export const rnd = (k: number) => {
-  const x = Math.sin(k * 127.1 + 311.7) * 43758.5453;
-  return x - Math.floor(x);
+  let h = (k | 0) ^ 0x9e3779b9;
+  h = Math.imul(h ^ (h >>> 16), 0x85ebca6b);
+  h = Math.imul(h ^ (h >>> 13), 0xc2b2ae35);
+  h = (h ^ (h >>> 16)) >>> 0;
+  return h / 4294967296;
 };
 export const rgba = (hex: string, a: number) => {
   if (!hex) return `rgba(0,0,0,${a})`;
@@ -96,15 +104,47 @@ export const Clip: React.FC<{ src: string; rate?: number }> = ({ src, rate = 1 }
 };
 
 // ── FOTO real con Ken-Burns casi imperceptible: movimiento de cámara, no efecto de póster ─────
-export const Foto: React.FC<{ src: string; seed?: number }> = ({ src, seed = 1 }) => {
+// ⛔⛔⛔ REGLA DEL CREADOR (sep-2026, TODOS LOS NICHOS, PARA SIEMPRE).
+// Lo que había acá era EXACTAMENTE el defecto que él marcó, y se puede medir:
+//   · z iba SIEMPRE de 1.02 a 1.075 → **todos los zooms idénticos, todos IN, todos al centro**;
+//     el seed sólo elegía si el paneo iba a izquierda o derecha.
+//   · 5,5 % de escala repartidos en 260 cuadros = **0,63 %/s**, cuando 1,5 %/s es lo que él ya
+//     había visto y descrito como "no estás animando ninguna imagen".
+// Lo que el seed tiene que decidir, TODO por plano y TODO al azar (no alternado):
+//   · sentido  ~50 % IN / ~50 % OUT — ⛔ nunca un patrón out-in-out-in, eso es igual de mecánico
+//   · amplitud 1,8-4,0 %/s con techo total del 20 %
+//   · foco     transformOrigin sorteado en 35-65 % en los DOS ejes (no siempre al centro)
+//   · borde    el paneo se ata a la ESCALA (k = (z-zBase)/amp), así el traslado máximo coincide
+//              con la escala máxima y nunca asoma el fondo.
+export const Foto: React.FC<{ src: string; seed?: number; durF?: number }> = ({ src, seed = 1, durF }) => {
   const frame = useCurrentFrame();
-  const dir = rnd(seed) > 0.5 ? 1 : -1;
-  const z = interpolate(frame, [0, 260], [1.02, 1.075], { extrapolateLeft: "clamp", extrapolateRight: "extend", easing: Easing.bezier(0.22, 0.61, 0.28, 1) });
-  const x = interpolate(frame, [0, 260], [dir * -0.7, dir * 0.9], { extrapolateLeft: "clamp", extrapolateRight: "extend", easing: Easing.linear });
-  const y = Math.sin((frame + (seed % 91)) / 99) * 0.15;
+  const cfg = useVideoConfig();
+  const dur = Math.max(12, durF ?? cfg.durationInFrames);
+  const segundos = dur / cfg.fps;
+
+  const out = rnd(seed * 3 + 11) < 0.5;                       // sentido
+  const velPct = 1.8 + rnd(seed * 7 + 29) * 2.2;              // 1,8-4,0 %/s
+  const ampPct = Math.min(20, velPct * segundos);             // techo total 20 %
+  const amp = ampPct / 100;
+  const zBase = 1.06;
+  const zA = out ? zBase + amp : zBase;
+  const zB = out ? zBase : zBase + amp;
+  const ox = 35 + rnd(seed * 13 + 5) * 30;                    // foco 35-65 %
+  const oy = 35 + rnd(seed * 17 + 3) * 30;
+  const ang = rnd(seed * 23 + 41) * Math.PI * 2;              // paneo en un ángulo cualquiera
+
+  const z = interpolate(frame, [0, dur], [zA, zB], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.3, 0.05, 0.3, 1) });
+  const k = amp > 0 ? clamp01((z - zBase) / amp) : 0;         // traslado atado a la ESCALA
+  const x = Math.cos(ang) * 2.0 * k;
+  const y = Math.sin(ang) * 1.2 * k;
+
   return (
     <AbsoluteFill style={{ backgroundColor: V.ink0, overflow: "hidden" }}>
-      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)}) translate(${x.toFixed(3)}%, ${y.toFixed(3)}%)` }} />
+      <Img src={staticFile(src)} style={{
+        width: "100%", height: "100%", objectFit: "cover",
+        transformOrigin: `${ox.toFixed(1)}% ${oy.toFixed(1)}%`,
+        transform: `scale(${z.toFixed(4)}) translate(${x.toFixed(3)}%, ${y.toFixed(3)}%)`,
+      }} />
     </AbsoluteFill>
   );
 };
