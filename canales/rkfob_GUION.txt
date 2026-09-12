@@ -1,0 +1,163 @@
+Three forty-seven in the morning. That's the number in the corner of my camera. Two men come up my driveway, and neither one of them is in a hurry.
+
+Look at the one in front. He's carrying something in a canvas bag, down at his side, and he walks past my truck like the truck isn't the point. He goes up to my front window. Not the door. The window. And he stands there, holding that bag up against the glass, for about eleven seconds. The second man is already standing at the driver's door of my truck with his hand resting on the handle. Waiting.
+
+That's the whole crime, right there. One man at my window, one man at my handle. Nobody touched a lock. Nobody broke anything. Nobody picked anything. If you were asleep in that house, you would have slept straight through it.
+
+And then, right about here, the first man lowers the bag, says something to the other one, and they walk back down the driveway and they're gone in forty seconds. Forty seconds, start to finish.
+
+I'm going to tell you why they left, because it wasn't the camera and it wasn't a dog and it wasn't luck. It was a thing I did to my key fob about six weeks earlier that took me thirty seconds and cost me nothing.
+
+My name is Ray Kessler. I spent thirty-five years as a locksmith. I never caught a thief in my life. I'm the guy who showed up the morning after, with a coffee going cold in the van, while somebody stood in their own driveway telling me what they'd lost. And for the last dozen years of that, more and more of those calls weren't about doors at all. They were about cars. Cars sitting in driveways with no broken glass, no scratched paint, no pried door. Just gone.
+
+So before I explain any of it, I'm going to give you the thing. Because I know how this goes. You watch eleven minutes of a man building suspense and then he tells you to buy something. I'm not doing that. Here's the thing, right now, and you can go do it while I'm still talking.
+
+Go get your car key. The one with the buttons on it, the one you don't put into anything, the one where you just walk up and grab the handle and the truck unlocks. If you've got that kind of key, this is for you.
+
+Hold down the lock button. Don't let go of it. And while you're holding it, press the unlock button twice. Two taps. You'll see the little light on the fob blink at you — on most of them it blinks a couple of times and then holds for a second.
+
+That's it. That's the whole thing. Your key just went to sleep.
+
+Now go test it, because I don't want you taking my word for it. Walk out to your car with that key in your pocket, and reach for the handle the way you always do. Nothing's going to happen. Give it a second. Give it three. The car doesn't know you're there. It doesn't know that key exists.
+
+To wake it back up, you press any button on the fob. Any one. Lock, unlock, the trunk, doesn't matter. One press and it's back to normal and the handle works again.
+
+That's thirty seconds. That's the entire fix. And I want to be honest with you about one thing before we go any further: that exact button combination is what works on most Toyota smart keys, because that's the one I get asked about the most, and it's the one on the truck in my driveway. Other makes do the same thing with a different handshake. Some Fords put themselves to sleep on their own after about forty seconds of sitting still, which is a very good thing that Ford almost never brags about. Some Hyundais want you to hold the lock button for a few seconds and then press lock and unlock together. Some cars don't have a gesture at all but they'll let you shut the whole system off in a menu on the dashboard screen.
+
+Here's how you find yours in about a minute, and this is the part I really want you to hear, because it's how I found it the first time. Get the owner's manual out of the glove box — the actual paper one, or the PDF if you'd rather — and go to the index in the back. Don't look up theft. Don't look up security. Don't look up keyless entry.
+
+Look up battery.
+
+Because the manufacturers don't call it an anti-theft feature. Toyota calls it the electronic key battery-saving function. That's the name. It's in the manual, in a paragraph about making the little coin cell in your fob last longer, and there is not one word anywhere near it about a man standing at your window at three in the morning with a bag.
+
+So now you've got it. Go do it tonight, before you forget, and if you want to shut the video off right here I genuinely don't mind — you got the useful part.
+
+Everything from here is the why. And the why is what changes whether you actually keep doing it in three weeks, so if you've got the time, stay with me.
+
+Let's talk about what your key is doing right now.
+
+Your key is not asleep in that bowl by the front door. It's not sitting there quietly waiting for you. Your key, right this second, is transmitting. It's been transmitting since you walked in the house. It transmits while you eat dinner and it transmits while you watch the news and it transmits while you're asleep, all night, every night, until the battery dies.
+
+And what it's saying, over and over, is essentially one question. Is that you? Is that you? Is that you?
+
+It's asking your car. It's also asking every other car it can reach, which is most of them, and they're all asking it back, because none of them know which key belongs to which vehicle until they've had that little conversation. That's how the convenience works. That's the whole trick of walking up with your hands full and having the door just open for you. The key and the car never stopped talking. They were talking the entire time you were inside.
+
+The range on that conversation is short. That's the part everybody leans on. It's a handful of feet. Your key in the kitchen is not reaching your truck in the driveway, and that's true, and that's exactly what everybody at the dealership will tell you if you ask.
+
+But here's what nobody tells you: that range is not a law of physics. It's a volume setting. And volume can be turned up by somebody standing outside your house.
+
+That's the bag. That's what the first man was holding against my front window.
+
+I'm not going to tell you what's in it or where to get one, because that's not what this channel is for and I'd rather not be useful to the wrong person. But I'll tell you what it does, in plain language, because you deserve to understand the thing that's aimed at you.
+
+It listens for your key. It picks up that little "is that you" whisper coming out of your kitchen through one pane of glass. And it hands it to the second man, the one standing at your door handle. His end plays your key's voice at your truck. Your truck hears its own key, right there, three feet away, exactly where it expects it to be, and it does what it was built to do. It unlocks. He gets in, pushes the start button, and the truck starts, because as far as your truck is concerned you are sitting in the driver's seat with the key in your pocket.
+
+That's it. That's the entire attack. Two men, one signal, one cheap piece of hardware, and your key did all the work for them from a bowl in your kitchen.
+
+Now let me clear up the thing that almost everybody gets wrong, including a couple of very popular videos about this, and I say that with respect because they got the fix right even when they got the reason wrong.
+
+They are not copying your key.
+
+You'll hear that a lot — that a thief scans your fob, downloads the code, burns it onto a blank, and drives off with a duplicate. That's not what's happening on your driveway. Your key doesn't send the same code twice. It rolls. Every press is a new number, and the old number is dead the second it's used, and your car keeps track. Sitting outside and recording your fob to play it back later mostly gets somebody a recording of a number that already expired.
+
+They don't need to copy it. That's the whole ugly elegance of it. They don't have to break your key's security at all. They just move your key. Not physically — electronically. They pick your voice up in the kitchen and set it down in the driveway, and every single security feature in that car works perfectly the whole time. The locks aren't defeated. The immobilizer isn't defeated. The rolling code isn't defeated.
+
+You were defeated. Because you left your key talking.
+
+And that's why the fix is so small. You're not out-engineering anybody. You're not buying a better lock. You're just telling your key to shut up for nine hours. There's nothing for the bag to pick up. The man at your window stands there for eleven seconds hearing nothing at all, and then he tells his partner it's a dead house, and they go find a driveway where the key is still talking. Which is almost every other driveway on your street.
+
+I want to say that last part again, because it's the part that people find uncomfortable and it's the truest thing I know about this trade. You are not trying to be impossible. You're trying to be slower than the next one. That's how every property crime I ever cleaned up actually worked. Nobody picks a house. They pick the easiest house they walked past.
+
+Alright. Now the objections, because I've heard all of them standing in driveways.
+
+The first one is always: my car's not worth stealing. It's eight years old. It's a base model. There's a hundred thirty thousand miles on it.
+
+I understand why that feels true and it is completely wrong, and the reason is that the people doing this are not car people. They are not looking at your car the way you look at your car. A truck like mine is not stolen to be driven around town. It gets driven straight onto a trailer or into a container, and the parts on it are worth what they're worth whether you love it or not. And the ones that don't go overseas get used for something else for about nine hours and left somewhere with the doors open. The condition of your interior is not part of anybody's decision.
+
+The second one: I've got an alarm.
+
+Your alarm is disarmed. It was disarmed by your own key, by the relay, at the moment the door opened. The alarm did exactly what it was supposed to do — it recognized the owner. That's not an alarm failure. That's an alarm doing its job for the wrong person.
+
+The third one: I park in the garage.
+
+Good. That's real. That's a genuine layer and I'm glad you have it. But go stand in your garage and look at the wall your car is closest to, and then go look at where you hang your keys, and be honest with yourself about how many feet and how many walls are actually between those two things. In most of the houses I worked in, the answer was one wall and about fifteen feet, and half the time the key was hanging on a hook in the mudroom, which is the room that shares a wall with the garage. A garage door stops a person. It does not do much of anything to a radio signal.
+
+The fourth one, and this is the one that gets people: I don't live in that kind of neighborhood.
+
+I'm going to be careful here because I don't want to sell you fear. So let me just tell you the pattern I saw, over and over, in the calls I got. It's driveways. Quiet streets. Houses set back a little, with a hedge or a fence, where a man standing at a window at three in the morning is not visible from the road. The busy street with the streetlight and the neighbors on top of each other is a worse target than the nice cul-de-sac. I'm not telling you your street is dangerous. I'm telling you that "nothing happens here" is a description of the past, and the bag is new.
+
+Now let me give you the second half of this, which is the one almost nobody does, and it's the reason I said go get your key, singular, but I actually meant both of them.
+
+You have two fobs. You got two when you bought the car. One's in your pocket. Where's the other one?
+
+I'll guess. Kitchen drawer with the takeout menus and the dead batteries. Or a hook by the back door. Or a dish on the dresser. Or the little tray on the hall table that everything ends up in.
+
+That second key has never been turned off in its life, and it has been transmitting continuously since the day you brought the car home, and in about half the houses I walked into it was sitting closer to the driveway than the key in the owner's pocket.
+
+Putting your everyday fob to sleep and leaving the spare awake in a drawer six feet from the front window accomplishes exactly nothing. The bag doesn't care which of your two keys it hears. It only needs one of them talking.
+
+So do both. Tonight. Same gesture, both keys. And then here's what I'd actually tell you to do with the spare, because I've thought about this one a lot.
+
+Take the battery out of it.
+
+That's what I did. My spare key lives in a drawer, and the little coin cell that was in it lives in a separate envelope taped to the inside of that same drawer. Dead silent, permanently, no gesture to remember, no chance of me bumping a button in a drawer and waking it up for three weeks without knowing. And if I ever lose the one in my pocket, it's a thirty-second job to pop that cell back in.
+
+And by the way — and this is the thing the dealership really should have told you, right along with the other thing they should have told you — that spare key still opens your car door with no battery at all. There's a real metal key hiding inside almost every one of these fobs. There's a little slide or a little button on the side and the blade comes right out, and there's a keyhole on your driver's door under a plastic cap. I have watched grown men who have owned a vehicle for five years find out about that key in my presence and go quiet for a second.
+
+Okay. What if your key doesn't have a sleep gesture, or you've got a car where the menu doesn't let you shut it off, or you just know yourself well enough to know you're not going to do a button combination every single night for the rest of your life?
+
+Fine. Then we do it with a box, and I'll tell you exactly what works and exactly what doesn't, because this is where people waste money.
+
+A metal container with a metal lid, with your key inside it, works. That's it. That's the technology. A cookie tin. A coffee can. An old ammo box. A biscuit tin your aunt's had since nineteen eighty-something. The metal wraps the signal and the signal doesn't get out. It has to be metal all the way around, and the lid has to actually be on — not resting, on. A metal box with the lid off is a bowl.
+
+The pouches you can buy, the little zippered ones lined with silver fabric, those also work. They work well. They're genuinely good. But I want you to know one thing about them that nobody selling them will mention: they wear out. The lining is a fabric, and fabric that gets folded and shoved in a pocket and zipped a thousand times develops cracks in the lining you cannot see. I've had a customer hand me a pouch that had been protecting nothing for months.
+
+Which brings me to the only rule that matters with any of this, whether it's a tin or a pouch or a button combination.
+
+Test it. And then test it again in six months.
+
+It takes twenty seconds. Put the key in the thing. Walk to the car. Grab the handle. If the car opens, the thing you're trusting doesn't work. That's the entire test. Do it in your driveway in daylight where you'll feel silly rather than finding out at four in the morning by the sound of your own truck pulling away.
+
+And do the same test after you do the sleep gesture, the first few times, until you trust it. A fix you're not sure about is a fix you'll stop doing.
+
+There's one more thing I want to give you and then I'll get out of your way, and this one isn't about your house at all. It's about a parking lot.
+
+You come out of the grocery store, arms full. You walk away from the car and you press lock over your shoulder without looking, the way everybody does. And this time there's no chirp. Or the mirrors don't fold, or the lights don't flash, or whatever your car normally does to tell you it heard you.
+
+Most people press it again. It works the second time. They shrug and they go home.
+
+Don't shrug. Go back and physically pull the door handle.
+
+Because there's a version of this where somebody nearby is stepping on your key's signal so your car never hears the lock command, and they're counting on exactly that shrug. You walk away believing the car is locked. It isn't. It's a quiet, unlocked car in a parking lot with nobody near it.
+
+It costs you eleven seconds to walk back and pull the handle. I've been telling people that for fifteen years and it is still the cheapest piece of advice I own.
+
+Now — I know some of you are sitting there doing the math on what this would actually cost if it happened, and I want to give you honest numbers from the wrong side of it, because the number you're thinking of is not the number.
+
+You're thinking about the car, and you're thinking insurance covers the car, and mostly it does, eventually, after a while.
+
+Here's what it doesn't cover, or covers badly. The deductible. The rental while you wait, if you didn't have that coverage, and a lot of people find out they didn't have that coverage on the phone on the worst morning of their month. The key itself — if the car turns up, and they do turn up, it turns up without a key, and a new smart key programmed to that vehicle is not the twelve-dollar copy you made at the hardware store in nineteen ninety-four. The car seat that was in the back. The garage door opener clipped to the visor, which is now a garage door opener in somebody else's hand, along with your address off the registration in the glove box. Which means it isn't a car job anymore. Now it's a house job, and now I'm the guy in your driveway.
+
+That last one is the one that kept me busy. More than one of the door calls I took started as a car call three nights earlier.
+
+So the real cost isn't the truck. It's the four days, the eleven phone calls, the deductible, the new key, the locks I had to change on your house because your address went out the driveway in your own glove box, and the fact that you're going to stand at the window at two in the morning for about a month afterward.
+
+Against thirty seconds and a button you already own.
+
+Look, I'll tell you why I made this one. A few years back I did a job for a woman who'd had her car taken out of the driveway overnight, and while I was re-keying her front door she asked me a question I've never forgotten. She said, "Ray, was there something I was supposed to know?"
+
+And there was. There was one paragraph in a manual in her glove box, filed under battery life, that would have stopped it. Nobody ever told her. Not the dealer, not the salesman, not the finance office where she sat for two hours signing things. One paragraph, under the wrong heading, in a book nobody opens.
+
+So now you know. Two keys. Hold lock, press unlock twice, watch for the blink. Pull the battery out of the spare. Test it in the driveway where you can feel silly about it. And if your key doesn't do that, a tin with a lid does the same job for free.
+
+If you want the rest of it — and by the rest of it I mean the front door, which is the thing I actually spent thirty-five years on — I've put together the whole walkthrough of what I'd do to a house in one afternoon. What to buy, what length, what to throw away out of the box it came in, and what to say on the phone when you're calling a locksmith at eleven at night and you're about to get taken for fifteen hundred dollars. There's a section in there that costs nothing at all — thirty-seven things you can do this weekend with what's already in your kitchen drawer. It's down below this video if you want it. I'm not going to stand here and sell it to you in the middle of something that's supposed to be useful for free.
+
+Let me leave you back where we started.
+
+Those two men in my driveway at three forty-seven in the morning weren't clever. They weren't some crew. One of them had a bag and the other one had a hand on a door handle and they had, between them, about forty seconds of patience. They stood at my window, they heard nothing, and they walked away and found a house where the key was still talking. Somewhere within a couple of miles of me, somebody woke up to an empty driveway that morning, and it wasn't because they did anything wrong. It's because nobody ever told them.
+
+I've got a camera. I don't have a fortress. I've got a truck in a driveway like you do, and the only thing between it and a trailer was a button combination I learned from a paragraph about battery life.
+
+Your key is on your counter right now. It's talking. Go tell it to be quiet.
+
+I'll see you on the next one.

@@ -99,12 +99,15 @@ const tarDir = process.env.TAR_DIR || ".";
 const tar = `${tarDir}/assets-${slug}.tar`;
 const avatarCandidates = [`public/avatar_${slug}.mp4`, `public/${slug}_opt.mp4`];
 const avatar = avatarCandidates.find((candidate) => fs.existsSync(candidate)) || avatarCandidates[0];
-const wav = `public/${slug}.wav`;
+// AUDIO_FILE: el Main puede referenciar un m4a liviano en vez del WAV. El wav de 300 MB x 60
+// chunks son ~18 GB de transferencia de mas. Sin la env, el comportamiento es el de siempre.
+const audioName = process.env.AUDIO_FILE || `${slug}.wav`;
+const wav = `public/${audioName}`;
 if (!fs.existsSync(wav)) { console.error("falta:", wav); process.exit(1); }
 const hasAvatar = fs.existsSync(avatar); // videos FACELESS do not have either canonical avatar path
 if (!hasAvatar) console.warn(`(faceless) sin ${avatar} — empaqueto solo la narración`);
 // rutas relativas a public/ (el workflow extrae con -C public)
-let items = [`${slug}.wav`];
+let items = [audioName];
 if (hasAvatar) items.unshift(avatar.replace(/^public[\\/]/, ""));
 // SFX: `public/` está en .gitignore, así que un worktree nuevo nace SIN public/sfx. Este `if` se
 // escribió como defensa, pero la rama defensiva ES el caso roto: el tar salía sin sfx, en silencio,
