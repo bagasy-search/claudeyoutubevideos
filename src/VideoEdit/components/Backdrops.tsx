@@ -12,7 +12,18 @@ export const ImageBackdrop: React.FC<{
   darken?: number; // 0..1 black overlay
   tint?: string; // e.g. "rgba(255,178,62,0.18)" warm amber wash
   durationInFrames?: number;
-}> = ({ src, blur = 7, darken = 0.55, tint, durationInFrames = 300 }) => {
+  // "blur" = blur-fill: fondo = copia del clip escalada a cubrir + blur fuerte +
+  // oscurecida; el clip real va CENTRADO con object-fit:contain (no se estira →
+  // no pixela). Para clips verticales/baja-res.
+  fit?: "cover" | "blur";
+  clipDur?: number; // duración real del mp4 (s) → anti-congelado en Media
+  beatDur?: number; // duración del beat en timeline (s)
+  speed?: number;   // playbackRate del clip (1 = nativo). def: el de Media (0.6 = judder)
+  // NORMALIZACIÓN por clip (no es un "look": corrige brillo/saturación hacia la
+  // mediana del lote para que no se note el salto entre fuentes — lo calcula
+  // scripts/probe_grade.mjs). Ej: "brightness(1.04) saturate(0.96)".
+  grade?: string;
+}> = ({ src, blur = 7, darken = 0.55, tint, durationInFrames = 300, fit = "cover", clipDur, beatDur, speed, grade }) => {
   const frame = useCurrentFrame();
   // casi estático: el movimiento principal lo da el Ken-Burns suave de SceneFrame.
   // (antes 1.08→1.18 se SUMABA al Ken-Burns y los zooms quedaban muy fuertes/rápidos)
@@ -31,18 +42,52 @@ export const ImageBackdrop: React.FC<{
   const hasBaked = src.includes("img/") && !baseName.startsWith("dg_") && !baseName.startsWith("_avatar_ref");
   const useBaked = blur > 0 && !isVideo && hasBaked;
   const finalSrc = useBaked ? src.replace(/\.(png|jpe?g)$/i, "_blur.jpg") : src;
-  // GRADE unificador para clips reales rippeados (broll/*.mp4): vienen de fuentes
-  // distintas con colores dispares → bajamos saturación + push sepia/cálido para
-  // que se fundan con la paleta terrosa y se sienta UNA sola película.
-  // colores NATURALES (sin grade sepia/retro — preferencia del usuario): clips sin filtro de color.
-  const gradeFilter = "";
+  // GRADE: colores NATURALES, sin look sepia/retro (preferencia del usuario). Lo único
+  // permitido es la NORMALIZACIÓN por clip que llega por prop `grade` (corrige el salto
+  // de exposición/saturación entre fuentes hacia la mediana del lote; ±8% máx).
+  const gradeFilter = grade || "";
   const blurFilter = !useBaked && blur > 0 ? `blur(${blur}px)` : "";
   const mediaFilter = [blurFilter, gradeFilter].filter(Boolean).join(" ") || undefined;
+
+  // ── BLUR-FILL (clips verticales / baja-res) ────────────────────────────────
+  // Fondo: MISMO clip escalado a cubrir + blur fuerte + oscurecido (así los
+  // laterales no quedan negros). Encima: el clip real CENTRADO con contain, a su
+  // relación de aspecto nativa → nunca se estira a 1920 ni se magnifica → 0 pixelado.
+  if (fit === "blur") {
+    return (
+      <AbsoluteFill>
+        <AbsoluteFill style={{ transform: `scale(${scale * 1.12})` }}>
+          <Media
+            src={src}
+            clipDur={clipDur}
+            beatDur={beatDur}
+            speed={speed}
+            style={{ width: "100%", height: "100%", objectFit: "cover", filter: "blur(28px) saturate(0.9)" }}
+          />
+        </AbsoluteFill>
+        <AbsoluteFill style={{ background: "rgba(0,0,0,0.42)" }} />
+        <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+          <Media
+            src={src}
+            clipDur={clipDur}
+            beatDur={beatDur}
+            speed={speed}
+            style={{ width: "100%", height: "100%", objectFit: "contain", filter: gradeFilter || undefined }}
+          />
+        </AbsoluteFill>
+        <AbsoluteFill style={{ background: `rgba(0,0,0,${darken})` }} />
+      </AbsoluteFill>
+    );
+  }
+
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ transform: `scale(${scale})` }}>
         <Media
           src={finalSrc}
+          clipDur={clipDur}
+          beatDur={beatDur}
+          speed={speed}
           style={{ width: "100%", height: "100%", objectFit: "cover", filter: mediaFilter }}
         />
       </AbsoluteFill>

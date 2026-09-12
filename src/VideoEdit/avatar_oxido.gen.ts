@@ -227,19 +227,19 @@ export const AVATAR_WINDOWS: AvatarWindow[] = [
     "mode": "hidden"
   },
   {
-    "start": 1364.52,
+    "start": 1365.84,
     "mode": "cornerBL"
   },
   {
-    "start": 1366.24,
+    "start": 1372.84,
     "mode": "hidden"
   },
   {
-    "start": 1442.8,
+    "start": 1456.13,
     "mode": "cornerTL"
   },
   {
-    "start": 1447.4,
+    "start": 1457.85,
     "mode": "hidden"
   },
   {

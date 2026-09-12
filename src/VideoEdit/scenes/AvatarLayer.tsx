@@ -53,7 +53,9 @@ export const AvatarLayer: React.FC<{
   windows: AvatarWindow[]; // ordenadas por start
   accent?: string;
   wav?: string; // wav para el borde audio-reactive; default = derivado del src
-}> = ({ src, windows, accent = COLORS.accent, wav }) => {
+  loop?: boolean; // AVATAR PARCIAL: repite el clip cuando el creador grabó solo un tramo
+  muted?: boolean; // en el tramo en bucle el audio lo pone la cola de TTS, no el avatar
+}> = ({ src, windows, accent = COLORS.accent, wav, loop = false, muted = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame; // frames
@@ -81,11 +83,15 @@ export const AvatarLayer: React.FC<{
   const toGeom: Geom = curMode === "hidden" ? { ...geomOf(prevMode), op: 0 } : geomOf(curMode);
   const fromGeom: Geom = prevMode === "hidden" ? { ...geomOf(curMode), op: 0 } : geomOf(prevMode);
 
-  const p = interpolate(t - starts[i], [0, TRANS], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: Easing.inOut(Easing.cubic),
-  });
+  // ★ Volver a PANTALLA COMPLETA = CORTE DURO (sin animación de transición): la
+  // geometría salta directo a full (p=1). El slide suave solo aplica al resto de modos.
+  const p = curMode === "full"
+    ? 1
+    : interpolate(t - starts[i], [0, TRANS], [0, 1], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+        easing: Easing.inOut(Easing.cubic),
+      });
 
   const x = lerp(fromGeom.x, toGeom.x, p);
   const y = lerp(fromGeom.y, toGeom.y, p);
@@ -111,10 +117,13 @@ export const AvatarLayer: React.FC<{
   // no sea siempre igual. Le da vida al plano-presentador sin que se note brusco.
   const winEnd = i + 1 < starts.length ? starts[i + 1] : starts[i] + 99999;
   const winLen = winEnd - starts[i];
+  // ★ PUSH a VELOCIDAD CONSTANTE en TODA ventana full (incluidas las cortas de ~2s: headers
+  // de capítulo). ~0.9%/s, clamp 6%. Alterna push-in / pull-out por ventana. Nunca estático.
   let fullZoom = 1;
-  if (curMode === "full" && winLen > fps * 4) {
-    const prog = interpolate(t - starts[i], [0, winLen], [0, 1], { extrapolateRight: "clamp" });
-    fullZoom = i % 2 === 0 ? 1 + 0.05 * prog : 1.05 - 0.05 * prog; // 1.00→1.05 ó 1.05→1.00
+  if (curMode === "full") {
+    const elapsed = (t - starts[i]) / fps; // segundos dentro de la ventana
+    const drift = Math.min(0.06, 0.009 * elapsed);
+    fullZoom = i % 2 === 0 ? 1 + drift : Math.max(1, 1.06 - drift); // 1→1.06  ó  1.06→1
   }
   const zoom = curMode === "full" ? fullZoom : kb;
   let coverW = Math.max(w, h * ratio) * zoom;
@@ -127,7 +136,7 @@ export const AvatarLayer: React.FC<{
     return (
       <AbsoluteFill style={{ pointerEvents: "none" }}>
         <div style={{ position: "absolute", left: -9999, top: 0, width: 384, height: 512, overflow: "hidden" }}>
-          <Video src={staticFile(src)} style={{ width: 683, height: 384 }} />
+          <Video src={staticFile(src)} loop={loop} muted={muted} style={{ width: 683, height: 384 }} />
         </div>
       </AbsoluteFill>
     );
@@ -157,6 +166,8 @@ export const AvatarLayer: React.FC<{
       >
         <Video
           src={staticFile(src)}
+          loop={loop}
+          muted={muted}
           style={{ position: "absolute", left: offX, top: offY, width: coverW, height: coverH }}
         />
         {/* viñeta interna suave cuando es recuadro */}

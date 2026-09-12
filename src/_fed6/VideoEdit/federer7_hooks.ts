@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_federer7.mjs — rangos talk.
+export const TALKS7: { start: number; dur: number }[] = [{"start":1.3,"dur":4},{"start":24.46,"dur":5.88},{"start":57.18,"dur":11.62},{"start":173.24,"dur":15.4},{"start":260.94,"dur":6.48},{"start":313.98,"dur":7.38},{"start":474.3,"dur":6.98},{"start":531.48,"dur":7.52},{"start":611.3,"dur":15.8},{"start":767.34,"dur":6.44},{"start":811.98,"dur":4.96},{"start":892.78,"dur":7.5},{"start":917.6,"dur":1.97}];

@@ -155,7 +155,16 @@ export const JourneyCanvas: React.FC<{
         const distFade = interpolate(dist, [640, 1150], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
         const dim = appear * distFade;
         const dwellI = sec(waypoints[i].dwell ?? 2.4);
-        const winEnd = i === n - 1 ? endStart : arr[i] + dwellI;
+        // ⛔ El rango del interpolate de abajo TIENE que ser creciente. Para el último waypoint,
+        // winEnd sale de endStart = min(arr[n-1] + lastDwell, endEnd - 1): si los waypoints no
+        // entran en la duración que le dieron al componente, ese min agarra `endEnd - 1` y queda
+        // ANTES de que el waypoint aparezca → [arr[i]-12, arr[i], winEnd-12, winEnd] deja de
+        // crecer y Remotion tira "inputRange must be strictly monotonically increasing", que mata
+        // el chunk entero a mitad del render. Pasó el 2026-07-27 en dos videos distintos
+        // (ej. [360,372,127,139]: el waypoint arranca en el frame 372 y su ventana cerraba en 139).
+        // El piso deja el fundido de salida sin sentido en ese caso, pero un cartel que se va raro
+        // es infinitamente mejor que un render caído.
+        const winEnd = Math.max(i === n - 1 ? endStart : arr[i] + dwellI, arr[i] + sec(0.5));
         const labelFocus = interpolate(frame, [arr[i] - sec(0.4), arr[i], winEnd - sec(0.4), winEnd], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: easeIO });
         const float = Math.sin(frame / 38 + i * 1.7) * 4 * m.z;
         const cardW = 330 * m.s, cardH = 220 * m.s; // ★ tarjetas GRANDES

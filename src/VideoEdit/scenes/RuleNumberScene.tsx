@@ -6,6 +6,7 @@ import {
   interpolate,
 } from "remotion";
 import { COLORS, FONT_STACK, SPRING_ZOOM } from "../theme";
+import { COLORS as BEN } from "../theme_ben";
 import { TechBackground } from "../components/TechBackground";
 
 // Rule 3 — glossy iOS app-icon card with big NUMBER + small label, title below.
@@ -16,7 +17,8 @@ export const RuleNumberScene: React.FC<{
   label?: string; // "REGLA"
   title: string; // "Trabajar mucho, en lo equivocado"
   hue?: "blue" | "amber" | "red";
-}> = ({ durationInFrames, number, label = "REGLA", title, hue = "blue" }) => {
+  dark?: boolean; // fondo oscuro theme_ben (negro premium + tarjeta oro) en vez del crema terroso
+}> = ({ durationInFrames, number, label = "REGLA", title, hue = "blue", dark = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
@@ -36,8 +38,12 @@ export const RuleNumberScene: React.FC<{
   return (
     <AbsoluteFill style={{ fontFamily: FONT_STACK }}>
       {/* base oscura OPACA → la tarjeta se lee aunque el clip de fondo sea blanco brillante (hielo) */}
-      <AbsoluteFill style={{ backgroundColor: "#070b12" }} />
-      <TechBackground glowX={50} glowY={38} hue={hue} />
+      <AbsoluteFill style={{ backgroundColor: dark ? BEN.bg0 : "#070b12" }} />
+      {dark ? (
+        <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 40%, ${BEN.bg1} 0%, ${BEN.bg0} 70%)` }} />
+      ) : (
+        <TechBackground glowX={50} glowY={38} hue={hue} />
+      )}
 
       <AbsoluteFill
         style={{
@@ -56,7 +62,7 @@ export const RuleNumberScene: React.FC<{
             width: 720,
             height: 720,
             borderRadius: "50%",
-            background: "radial-gradient(circle, rgba(124,138,90,0.4) 0%, rgba(0,0,0,0) 62%)",
+            background: dark ? "radial-gradient(circle, rgba(255,196,0,0.38) 0%, rgba(0,0,0,0) 62%)" : "radial-gradient(circle, rgba(124,138,90,0.4) 0%, rgba(0,0,0,0) 62%)",
             transform: `scale(${interpolate(enter, [0, 1], [0.6, 1.05])})`,
             filter: "blur(8px)",
           }}
@@ -69,10 +75,12 @@ export const RuleNumberScene: React.FC<{
             height: 360,
             borderRadius: 84,
             position: "relative",
-            background:
-              "linear-gradient(160deg, #AEBA8C 0%, #7C8A5A 46%, #5C6A3E 100%)",
-            boxShadow:
-              "0 50px 120px rgba(124,138,90,0.55), 0 10px 30px rgba(0,0,0,0.5), inset 0 2px 0 rgba(255,255,255,0.55)",
+            background: dark
+              ? "linear-gradient(160deg, #FFDD8A 0%, #E0A83A 46%, #A9741C 100%)"
+              : "linear-gradient(160deg, #AEBA8C 0%, #7C8A5A 46%, #5C6A3E 100%)",
+            boxShadow: dark
+              ? "0 50px 120px rgba(224,168,58,0.5), 0 10px 30px rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.55)"
+              : "0 50px 120px rgba(124,138,90,0.55), 0 10px 30px rgba(0,0,0,0.5), inset 0 2px 0 rgba(255,255,255,0.55)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -128,8 +136,8 @@ export const RuleNumberScene: React.FC<{
             fontSize: 64,
             fontWeight: 800,
             fontStyle: "italic",
-            color: COLORS.text,
-            textShadow: "0 4px 30px rgba(255,255,255,0.22)",
+            color: dark ? BEN.text : COLORS.text,
+            textShadow: dark ? "0 4px 24px rgba(0,0,0,0.7)" : "0 4px 30px rgba(255,255,255,0.22)",
             opacity: titleIn,
             transform: `translateY(${interpolate(titleIn, [0, 1], [26, 0])}px)`,
             lineHeight: 1.1,

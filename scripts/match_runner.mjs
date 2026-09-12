@@ -9,27 +9,7 @@
 // Uso:  node scripts/match_runner.mjs <slug> <idx> <total> [matchListPath]
 import fs from "fs";
 import path from "path";
-import { spawnSync, spawn } from "child_process";
-// subproceso ASYNC (no bloquea el event loop → permite N descargas/búsquedas en paralelo,
-// saturando la capacidad de conexiones concurrentes de cada proxy residencial).
-const sh = (bin, args, { timeout = 120000, maxBuffer = 1 << 26 } = {}) => new Promise((resolve) => {
-  let out = "", err = "", done = false;
-  let p;
-  try { p = spawn(bin, args, { stdio: ["ignore", "pipe", "pipe"] }); }
-  catch (e) { return resolve({ status: -1, stdout: "", stderr: String(e) }); }
-  const fin = (status) => { if (done) return; done = true; clearTimeout(to); try { p.kill("SIGKILL"); } catch {} resolve({ status, stdout: out, stderr: err }); };
-  const to = setTimeout(() => fin(-1), timeout);
-  p.stdout.on("data", (d) => { if (out.length < maxBuffer) out += d; });
-  p.stderr.on("data", (d) => { if (err.length < 8192) err += d; });
-  p.on("close", (c) => fin(c));
-  p.on("error", () => fin(-1));
-});
-// semáforo de RED: capa las operaciones concurrentes de yt-dlp por shard (protege al proxy de
-// saturarse). El ffmpeg (extract, CPU local) corre libre. MATCH_NET_MAX = conexiones a la vez.
-const makeSem = (n) => { let active = 0; const q = []; return {
-  async run(fn) { if (active >= n) await new Promise((r) => q.push(r)); active++; try { return await fn(); } finally { active--; if (q.length) q.shift()(); } },
-}; };
-const NET = makeSem(+(process.env.MATCH_NET_MAX || 8));
+import { spawnSync } from "child_process";
 import { pipeline } from "@huggingface/transformers";
 
 const [slug, idxArg, totalArg, listArg] = process.argv.slice(2);
@@ -89,18 +69,18 @@ const BAD = /(reaction|react|podcast|full episode|interview|tier list|gameplay|l
 // canales muy marcados: su footage casi siempre trae logo/bug → en fauna los penalizamos
 const BRANDED = /(national geographic|nat ?geo|bbc|discovery|animal planet|pbs|smithsonian|earth ?touch)/i;
 
-const searchRanked = async (queries, concept, limit = CANDS) => {
+const searchRanked = (queries, concept, limit = CANDS) => {
   const want = new Set([...kw(concept), ...queries.flatMap(kw)]);
   const seen = new Map();
-  // las queries de UN concepto se buscan en PARALELO (independientes)
-  const rs = await Promise.all(queries.filter(Boolean).map((q) => NET.run(() => sh(YTDLP, [
-    `ytsearch${POOL}:${q}`, "--skip-download", "--no-warnings", ...COOKIE, ...PROXY,
-    "--socket-timeout", "30", "--match-filter", "duration>40 & duration<3000 & !is_live",
-    "--print", "%(id)s\t%(title)s\t%(duration)s",
-  ], { timeout: 60000 }))));
-  for (const r of rs) {
+  for (const q of queries) {
+    if (!q) continue;
+    const r = spawnSync(YTDLP, [
+      `ytsearch${POOL}:${q}`, "--skip-download", "--no-warnings", ...COOKIE, ...PROXY,
+      "--socket-timeout", "30", "--match-filter", "duration>40 & duration<3000 & !is_live",
+      "--print", "%(id)s\t%(title)s\t%(duration)s",
+    ], { encoding: "utf8", maxBuffer: 1 << 26, timeout: 60000, killSignal: "SIGKILL" });
     const lines = (r.stdout || "").trim().split(/\r?\n/).filter(Boolean);
-    if (!lines.length && process.env.MATCH_DEBUG) console.error(`  [dbg] status=${r.status} stderr=${(r.stderr || "").slice(0, 200)}`);
+    if (!lines.length && process.env.MATCH_DEBUG) console.error(`  [dbg] q="${q}" status=${r.status} err=${r.error && r.error.message} stderr=${(r.stderr || "").slice(0, 200)}`);
     lines.forEach((line, ri) => {
       const [id, title = "", durS = ""] = line.split("\t");
       if (!id) return;
@@ -114,25 +94,26 @@ const searchRanked = async (queries, concept, limit = CANDS) => {
   return [...seen.values()].sort((a, b) => (b.lex - a.lex) || (a.rank - b.rank)).slice(0, limit);
 };
 
-const dlProxy = async (url, a, b, tag) => {
+const dlProxy = (url, a, b, tag) => {
   const proxy = path.join(TMP, `${tag}.mp4`);
+  // --ffmpeg-location SOLO si FFMPEG es una ruta (local: ffmpeg de Remotion). En el farm
+  // FFMPEG="ffmpeg" (en el PATH) → se omite. Sin esto, yt-dlp no puede cortar la sección.
   const ffloc = /[\\/]/.test(FF) ? ["--ffmpeg-location", path.dirname(FF)] : [];
-  const dl = await NET.run(() => sh(YTDLP, [
-    url, ...COOKIE, ...PROXY, "--socket-timeout", "20", "--retries", "1", "--fragment-retries", "1", "--extractor-retries", "1",
-    "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
+  const dl = spawnSync(YTDLP, [
+    url, ...COOKIE, ...PROXY, "--socket-timeout", "30", "--download-sections", `*${Math.max(0, a)}-${b}`, "--force-keyframes-at-cuts",
     "-f", "bv*[height<=240]/wv*/w", ...ffloc, "--merge-output-format", "mp4", "--no-playlist",
     "-o", proxy, "--force-overwrites", "--quiet", "--no-warnings",
-  ], { timeout: 55000 }));  // falla rápido si el proxy está rate-limiteado (antes 120s → colgaba)
+  ], { encoding: "utf8", timeout: 120000, killSignal: "SIGKILL" });
   return (dl.status === 0 && fs.existsSync(proxy)) ? proxy : null;
 };
-const extract = async (proxy, baseT, step, maxF, tag, ss = 0) => {
+const extract = (proxy, baseT, step, maxF, tag, ss = 0) => {
   const fdir = path.join(TMP, `${tag}_f`);
   fs.rmSync(fdir, { recursive: true, force: true });
   fs.mkdirSync(fdir, { recursive: true });
   const args = ["-y"];
   if (ss > 0) args.push("-ss", String(ss));
   args.push("-i", proxy, "-r", String(1 / step), "-frames:v", String(maxF), path.join(fdir, "f%04d.png"));
-  await sh(FF, args, { timeout: 90000 });
+  spawnSync(FF, args, { encoding: "utf8", timeout: 90000, killSignal: "SIGKILL" });
   const files = fs.existsSync(fdir) ? fs.readdirSync(fdir).filter((f) => f.endsWith(".png")).sort() : [];
   return files.map((f, i) => ({ file: path.join(fdir, f), t: +(baseT + i * step).toFixed(1) }));
 };
@@ -166,9 +147,8 @@ const MARK_LABELS = [
 ];
 // curva de penalización: score×1 si la confianza ≤LO, ×FLOOR si ≥HI, lineal en medio.
 const curve = (x, LO, HI, FLOOR) => (x <= LO ? 1 : x >= HI ? FLOOR : 1 - ((x - LO) / (HI - LO)) * (1 - FLOOR));
-const CLIP = makeSem(+(process.env.MATCH_CLIP_MAX || 1)); // ORT single-session → serializar inferencia
 const scoreFrame = async (file, concept) => {
-  const out = await CLIP.run(() => clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS, ...MARK_LABELS]));
+  const out = await clf(file, [concept, ...DISTRACTORS, ...TEXT_LABELS, ...MARK_LABELS]);
   const get = (l) => out.find((o) => o.label === l)?.score || 0;
   // devolvemos CRUDO: concepto puro + confianza de texto + de marca. La penalización se
   // aplica DESPUÉS a nivel candidato (ranking), no acá, para no contaminar el _score.
@@ -183,72 +163,54 @@ const analyze = async (cand, beat, tag) => {
     ? a0 + (beat.scan ?? 180)
     : Math.min(a0 + MAXSPAN, dur ? Math.floor(dur * (1 - TAIL)) : a0 + MAXSPAN);
   const span = Math.max(2, end - a0);
-  const proxy = await dlProxy(cand.url, a0, end, tag);
+  const proxy = dlProxy(cand.url, a0, end, tag);
   if (!proxy) return null;
   const coarseStep = explicitWindow ? (beat.step || 2) : Math.max(2, +(span / COARSE).toFixed(2));
-  const coarse = await extract(proxy, a0, coarseStep, Math.ceil(span / coarseStep) + 2, tag + "_c");
+  const coarse = extract(proxy, a0, coarseStep, Math.ceil(span / coarseStep) + 2, tag + "_c");
   if (!coarse.length) return null;
-  let bf = { fs: -1, c: -1, t: a0, text: 0 };
+  let bf = { c: -1, t: a0 };
   let texty = 0, total = 0, markHi = 0;
-  // framePen = qué tan LIMPIO está ESTE frame (elige el MOMENTO sin cartel dentro del clip,
-  // no el pico de concepto que suele caer justo sobre un título). CLIP rara vez pasa ~0.30 en
-  // "texto en pantalla", así que pegamos desde 0.10 y a 0.32 ya vale ×0.12.
-  const framePen = (tx) => curve(tx, 0.10, 0.32, 0.12);
-  const scan = (r, t) => {
-    total++; if (r.text > 0.10) texty++; markHi = Math.max(markHi, r.mark);
-    const fs = r.c * framePen(r.text);            // score del frame = concepto × limpieza
-    if (fs > bf.fs) bf = { fs, c: r.c, t, text: r.text };
-  };
-  for (const fr of coarse) { const r = await scoreFrame(fr.file, beat.concept); scan(r, fr.t); }
+  for (const fr of coarse) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.12) texty++; markHi = Math.max(markHi, r.mark); if (r.c > bf.c) bf = { c: r.c, t: fr.t }; }
   if (coarseStep > FINE) {
     const fa = Math.max(a0, +(bf.t - coarseStep).toFixed(2));
     const fb = Math.min(end, +(bf.t + coarseStep).toFixed(2));
-    const fine = await extract(proxy, fa, FINE, Math.ceil((fb - fa) / FINE) + 2, tag + "_x", fa - a0);
-    for (const fr of fine) { const r = await scoreFrame(fr.file, beat.concept); scan(r, fr.t); }
+    const fine = extract(proxy, fa, FINE, Math.ceil((fb - fa) / FINE) + 2, tag + "_x", fa - a0);
+    for (const fr of fine) { const r = await scoreFrame(fr.file, beat.concept); total++; if (r.text > 0.12) texty++; markHi = Math.max(markHi, r.mark); if (r.c > bf.c) bf = { c: r.c, t: fr.t }; }
   }
-  // TEXTO a nivel VENTANA: la fracción de frames con texto quemado RANKEA candidatos (preferir
-  // el más limpio) SIN destruir el _score de concepto → el filtro por _score sigue siendo "qué
-  // tan on-topic". DURO (los _score de concepto saturan ~1.0, así que winPen es EL discriminador):
-  // 10% de frames texty ya demota; ≥45% ⇒ ×0.06 → un clip texty pierde contra uno limpio.
+  // TEXTO a nivel VENTANA: la fracción de frames con texto quemado RANKEA candidatos
+  // (preferir el más limpio) SIN destruir el score de concepto → el filtro por _score sigue
+  // siendo "qué tan on-topic" (no perdemos densidad). winPen SUAVE: full-texty ⇒ ×0.3 (demota).
   const frac = total ? texty / total : 0;
-  const winPen = curve(frac, 0.10, 0.45, 0.06);
+  const winPen = curve(frac, 0.25, 0.65, 0.3);
   const markPen = WM ? curve(markHi, 0.05, 0.14, 0.05) : 1; // logo/marca: solo fauna, en el RANK
-  // rank = concepto × limpieza-del-momento × limpieza-de-la-ventana × marca (elige limpio+on-topic)
-  return { score: +bf.c.toFixed(4), rank: +(bf.fs * winPen * markPen).toFixed(4), t: bf.t, url: cand.url, id: cand.id, text: +frac.toFixed(2) };
+  return { score: +bf.c.toFixed(4), rank: +(bf.c * winPen * markPen).toFixed(4), t: bf.t, url: cand.url, id: cand.id, text: +frac.toFixed(2) };
 };
 
 const results = [];
 const usedIds = new Set();
-// PARALELISMO: procesar PAR conceptos a la vez, y dentro de cada uno TODOS los candidatos en
-// paralelo → satura las conexiones concurrentes del proxy del shard (antes: 1 a la vez). Misma
-// lógica de scoring/elección → calidad idéntica. MATCH_PAR conceptos concurrentes por shard.
-const PAR = +(process.env.MATCH_PAR || 4);
-async function processBeat(b) {
+for (const b of beats) {
   const { name, concept, dur = 6, lead = 1.0 } = b;
-  const cands = b.urls ? b.urls.map((u) => ({ url: u, id: vidId(u), title: "", dur: 0 }))
-    : await searchRanked(Array.isArray(b.query) ? b.query : [b.query], concept);
-  if (!cands.length) { console.log(`✗ ${name}: sin candidatos`); return; }
-  // TODOS los candidatos del concepto se analizan EN PARALELO (descargas concurrentes)
-  const scored = (await Promise.all(cands.map((c, i) => analyze(c, b, `${name}_${i}`)))).filter(Boolean);
-  if (!scored.length) { console.log(`✗ ${name}: sin frames`); return; }
+  let cands;
+  if (b.urls) cands = b.urls.map((u) => ({ url: u, id: vidId(u), title: "", dur: 0 }));
+  else cands = searchRanked(Array.isArray(b.query) ? b.query : [b.query], concept);
+  if (!cands.length) { console.log(`✗ ${name}: sin candidatos`); continue; }
+  const scored = [];
+  for (let i = 0; i < cands.length; i++) {
+    const res = await analyze(cands[i], b, `${name}_${i}`);
+    if (res) scored.push(res);
+  }
+  if (!scored.length) { console.log(`✗ ${name}: sin frames`); continue; }
+  // RANK = concepto × limpieza-de-texto (elige el candidato más limpio y on-topic).
   scored.sort((a, b2) => b2.rank - a.rank);
   let best = scored[0];
   const fresh = scored.find((c) => c.id && !usedIds.has(c.id) && c.rank >= scored[0].rank * 0.88);
   if (fresh) best = fresh;
-  if (best.id) usedIds.add(best.id);  // dedup best-effort (bajo paralelismo puede reusar alguno, aceptable)
+  if (best.id) usedIds.add(best.id);
   const start = Math.max(0, +(best.t - lead).toFixed(1));
   console.log(`  ${name}: ${best.score.toFixed(3)} @ ${best.t}s (${best.id})${best.text > 0.3 ? ` ⚠txt${best.text}` : ""}`);
+  // _score = concepto puro (para filtrar on-topic). _text = fracción de frames con texto.
   results.push({ name, url: best.url, start, dur, _score: +best.score.toFixed(3), _text: best.text });
 }
-// pool de conceptos concurrentes + DEADLINE por shard (un shard rate-limiteado NO puede
-// arrastrar el run: al vencer el tiempo escribe lo que tiene y sale; lo no matcheado cae al
-// pool en el build). Antes: un shard quemado quedaba 60+ min en reintentos.
-let bi = 0;
-const DEADLINE = Date.now() + (+(process.env.MATCH_SHARD_MAX_MIN || 15)) * 60000;
-await Promise.all(Array.from({ length: Math.min(PAR, beats.length) }, async () => {
-  while (bi < beats.length && Date.now() < DEADLINE) { const b = beats[bi++]; try { await processBeat(b); } catch (e) { console.log(`✗ ${b.name}: ${(e.message || e).toString().slice(0, 80)}`); } }
-}));
-if (bi < beats.length) console.log(`⏱ deadline: ${beats.length - Math.min(bi, beats.length)} beats sin procesar (rate-limit) → caen al pool en el build`);
 
 fs.mkdirSync("out", { recursive: true });
 const outPath = `out/match_part_${IDX}.json`;

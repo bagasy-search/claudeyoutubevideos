@@ -25,7 +25,12 @@ for (const b of beats) { const k = kindOf(b); count[k] = (count[k] || 0) + 1; }
 
 const rawShare = ((count.raw_real || 0) + (count.raw_gen || 0) + (count.raw_stock || 0) + (count.raw_clip || 0)) / tot;
 // grupo "estructurado" = los formatos que SIEMPRE se subusan
-const STRUCT = ["bars", "cross", "process", "journey", "infzoom", "annotated", "callout", "checklist", "splitlist", "aged"];
+const STRUCT = ["bars", "vs", "cross", "process", "journey", "infzoom", "annotated", "callout", "checklist", "splitlist", "aged",
+  "perox", "bigstat", "statgrid", "bulletlist", "numberedsteps", "timeline", "comparetwo", "barchart", "rankingbars", "donutstat",
+  "partsdiagram", "crosssection", "flowarrows", "cyclediagram", "mappin", "annotatedphoto", "quotecard", "equation", "ingredientscard",
+  "costtally", "gaugemeter", "stampreveal", "labelcallout", "splitpanel", "processgrid", "closingcard",
+  "pxbottle", "pxsoil", "pxseed", "pxrescue", "pxmildew", "pxsun", "pxdose", "pxfizz", "pxamber", "pxgnats",
+  "pxwater", "pxcost", "pxforge", "pxdrown", "pxmyth", "pxseven"];
 const structKinds = STRUCT.filter((k) => count[k] > 0);
 const structCount = STRUCT.reduce((a, k) => a + (count[k] || 0), 0);
 const nonRawDistinct = Object.keys(count).filter((k) => !k.startsWith("raw")).length;
@@ -50,7 +55,7 @@ const RULES = [
   { ok: nonRawDistinct >= 11, msg: `tipos NO-raw distintos = ${nonRawDistinct} (debe ser ≥11 — usá más del catálogo)` },
   { ok: structKinds.length >= 6, msg: `formatos estructurados presentes = ${structKinds.length}/${STRUCT.length} [${structKinds.join(",")}] (≥6; faltan: ${STRUCT.filter(k=>!count[k]).join(",")})` },
   { ok: structCount / tot >= STRUCT_MIN, msg: `peso de estructurados = ${(100 * structCount / tot).toFixed(0)}% (≥${(STRUCT_MIN*100).toFixed(0)}% — bars/cross/process/journey/etc. no pueden ser migajas)` },
-  { ok: (count.bars || 0) >= 2 && (count.checklist || 0) >= 1, msg: `bars=${count.bars||0} (≥2), checklist=${count.checklist||0} (≥1)` },
+  { ok: ((count.bars || 0) + (count.vs || 0)) >= 2 && (count.checklist || 0) >= 1, msg: `bars+vs=${(count.bars||0)+(count.vs||0)} (≥2), checklist=${count.checklist||0} (≥1)` },
 ];
 if (CLIPSFIRST) console.log("(modo CLIPS-FIRST: tope de raw% desactivado; variedad de componentes SÍ exigida)");
 

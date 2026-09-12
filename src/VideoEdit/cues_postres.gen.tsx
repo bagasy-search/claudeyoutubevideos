@@ -138,3 +138,7 @@ export const CUES: Cue[] = [
 ];
 
 export const REFRAME: { start: number; end: number }[] = [];
+
+export const OVERLAYS: Cue[] = [
+
+];

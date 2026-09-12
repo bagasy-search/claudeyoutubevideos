@@ -68,6 +68,15 @@ export const SFX = {
   kickerType: "sfx/sfx_paper_tick.mp3",
   sectionSwell: "sfx/sfx_trans2.mp3",
   stingerHit: "sfx/sfx_trans1.mp3",
+  // ★ Nicho AGUA OXIGENADA / peroxide — kit de limpieza (src/peroxide/).
+  // Foley REAL de Freesound, todo CC0 (uso comercial libre). Ver public/sfx/px_sfx_manifest.json.
+  capPop: "sfx/px_capPop.mp3", // "Champagne Cork" — destape de la botella
+  gluglu: "sfx/px_gluglu.mp3", // "pour small bottle" — glú-glú al verter
+  fizz: "sfx/px_fizz.mp3", // "Fizzing Carbonated Beverage" — espuma que crece
+  spray: "sfx/px_spray.mp3", // "Two Spritzes" — rociador
+  bubble: "sfx/px_bubble.mp3", // "multiple bubbles bursting" — burbujitas
+  wipe: "sfx/px_wipe.mp3", // paño al frotar — superficie limpia
+  sparkleClean: "sfx/px_sparkleClean.mp3", // "magic sparkle" — sello ¡LIMPIO!
   ambTaller: "sfx/amb_taller.mp3",
   ambFuego: "sfx/amb_fuego.mp3",
   ambCampo: "sfx/amb_campo.mp3",

@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_firmwater.mjs — rangos talk.
+export const TALKSR: { start: number; dur: number }[] = [{"start":74.66,"dur":3.98},{"start":113.14,"dur":1.8},{"start":193.02,"dur":2.32},{"start":239.84,"dur":5.98},{"start":276.74,"dur":29.58},{"start":319.56,"dur":14.12},{"start":410.22,"dur":11.28},{"start":539.34,"dur":4.68},{"start":650.4,"dur":3.58},{"start":707.88,"dur":15.33},{"start":896.8,"dur":24.64},{"start":1072.76,"dur":30.2}];

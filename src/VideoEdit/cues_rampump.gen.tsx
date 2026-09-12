@@ -105,7 +105,7 @@ export const CUES: Cue[] = [
   { key: "rp_grid_came", start: 728.4, dur: 8.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rp_grid_came.mp4" darken={0} /> },
   { key: "rp_forgotten", start: 736.3, dur: 8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rp_forgotten.mp4" darken={0} /> },
   { key: "rp_no_money", start: 743.8, dur: 9.2, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rp_no_money.mp4" darken={0} /> },
-  { key: "rp_catalog", start: 752.5, dur: 16.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rp_catalog.mp4" darken={0} /> },
+  { key: "rp_catalog", start: 752.5, dur: 16.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/rp_catalog.png" darken={0} /> },
   { key: "rp_offgrid_folks", start: 768.9, dur: 16.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rp_offgrid_folks.mp4" darken={0} /> },
   { key: "cmp_materials", start: 784.7, dur: 12.7, kind: "checklist", el: (d) => <Checklist durationInFrames={d} title="What to buy" items={[{"text":"Falling water source (3+ ft drop)","state":"done"},{"text":"Rigid drive pipe","state":"done"},{"text":"Two check valves","state":"done"},{"text":"Air chamber + delivery pipe","state":"done"}]} eyebrow="Any hardware store" accent="good" hue="amber" image="img/cmp_materials_bg.png" /> },
   { key: "rp_solid_pipe", start: 797.4, dur: 12.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/rp_solid_pipe.mp4" darken={0} /> },

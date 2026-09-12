@@ -42,26 +42,11 @@ _assets_list.txt
 lista_*.txt
 _*_tts*.log
 cookies/_*/
+_v3*
+_v3out*/
+_sb_*/
+_v3probe/
 
-# Proxies residenciales + cookies de cuentas (credenciales, se inyectan en runtime)
-cookies/proxies.txt
-cookies/*.txt
-nock/
-
-# Credenciales de Telegram (bot token + chat_id) — NUNCA commitear
-.telegram_bot
-telegram_bot*
-*.telegram
-
-# Telegram userbot (Telethon) — sesión y credenciales, NUNCA commitear
-.tg_docs.session
-*.session
-*.session-journal
-.tg_userbot
-tg_creds.txt
-.tg_delivery
-.tg_bridge_state.json
-.tg_bridge.log
-analizador/cache/
-.tg_bots
-analizador/last_report.json
+.flowprofile/
+.flowaccounts.json
+.render_accounts.json

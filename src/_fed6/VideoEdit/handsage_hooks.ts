@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_handsage.mjs — rangos talk.
+export const TALKSR: { start: number; dur: number }[] = [{"start":52.7,"dur":1.68},{"start":103.42,"dur":7.96},{"start":153.3,"dur":5},{"start":219.86,"dur":9.28},{"start":292.68,"dur":6.86},{"start":351.96,"dur":26.58},{"start":421.06,"dur":0.67},{"start":492.46,"dur":3.96},{"start":560.94,"dur":3.3},{"start":633,"dur":8.88},{"start":673.82,"dur":10.46},{"start":749.34,"dur":8.36},{"start":1002.58,"dur":2.15},{"start":1053.02,"dur":6.28}];

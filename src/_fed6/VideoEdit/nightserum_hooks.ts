@@ -1,0 +1,2 @@
+export const TALKS_NS: { start: number; dur: number }[] = [{"start":0,"dur":30.56},{"start":37.1,"dur":17.96},{"start":85.38,"dur":6.3},{"start":91.68,"dur":47.04},{"start":230.28,"dur":22.92},{"start":319.5,"dur":30.46},{"start":489.46,"dur":23.52},{"start":593.66,"dur":28.64},{"start":632.96,"dur":14.7},{"start":856.44,"dur":8.62},{"start":916.6,"dur":6.78},{"start":1053.96,"dur":5.02},{"start":1179.1,"dur":19.86},{"start":1407.12,"dur":7.48},{"start":1568.2,"dur":5.66}];
+export const AVATAR_FOCUS_NS = {"x": 0.616, "y": 0.4};

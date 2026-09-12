@@ -15,9 +15,17 @@ import { execSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
-const [slug, comp, total, count = "12"] = process.argv.slice(2);
+// Saca los flags Y sus valores, si no `--from 3072` metía "3072" entre los posicionales
+// (hoy no rompe porque sólo se leen los 4 primeros, pero rompería si los flags van antes).
+const argv = process.argv.slice(2);
+const pos = argv.filter((a, i) => !a.startsWith("--") && !(i > 0 && argv[i - 1].startsWith("--")));
+const [slug, comp, total, count = "12"] = pos;
+// Rango opcional: auditar UNA escena de cerca (los N frames caen DENTRO de la ventana) en vez de
+// muestrear los 20 min enteros — en un barrido completo una escena de 8s no aparece.
+const flag = (n) => { const i = process.argv.indexOf(n); return i > 0 ? process.argv[i + 1] : ""; };
+const from = flag("--from"), to = flag("--to");
 if (!slug || !comp || !total) {
-  console.error("Uso: node scripts/grid.mjs <slug> <comp_id> <total_frames> [count]");
+  console.error("Uso: node scripts/grid.mjs <slug> <comp_id> <total_frames> [count] [--from N --to M]");
   process.exit(1);
 }
 const sh = (c) => execSync(c, { stdio: "inherit" });
@@ -26,7 +34,9 @@ const ref = process.env.FARM_REF ? ` --ref ${process.env.FARM_REF}` : "";
 const entry = process.env.ENTRY ? ` -f entry=${process.env.ENTRY}` : "";
 
 console.log("disparando stills.yml (auditoría previa) ...");
-sh(`gh workflow run stills.yml${ref} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f count=${count}${entry}`);
+const rango = from && to ? ` -f from=${from} -f to=${to}` : "";
+if (rango) console.log(`   (rango: frames ${from}–${to} — auditoría de UNA escena)`);
+sh(`gh workflow run stills.yml${ref} -f slug=${slug} -f comp_id=${comp} -f total_frames=${total} -f count=${count}${entry}${rango}`);
 
 execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", shell: true });
 // filtrar por LA RAMA de este video: con varios agentes, sin -b agarrás la corrida de otro

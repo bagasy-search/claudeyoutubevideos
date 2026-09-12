@@ -3,10 +3,20 @@ import { SceneFrame } from "../components/SceneFrame";
 import { useCurrentFrame, useVideoConfig, spring } from "remotion";
 
 // RAW full-bleed real photo / clip. Topic-agnostic b-roll: shows the actual thing
-// the narration is talking about, CLEAN — no darkening text card over it. Accepts
-// either an image ("img/x.png") or a generated clip ("vid/x.mp4"); the backdrop is
-// video-aware (Media) so clips animate in slow-mo. Optional tiny corner kicker only
-// if you really want a label — default is fully raw. Gentle Ken-Burns keeps it alive.
+// the narration is talking about, CLEAN — no darkening text card over it.
+//
+// ★ KEN-BURNS CON INTENCIÓN (fix del "zoom uniforme"):
+//   · la MAGNITUD escala con la duración (velocidad de cámara ~constante): un beat de
+//     2s se mueve poco; uno de 20s no queda clavado — antes era ±7% fijo, así que los
+//     planos largos parecían pantalla congelada.
+//   · los planos LARGOS los parte el AUTOSPLIT del beatsheet (maxRawDur) en tomas A/B
+//     con kbPhase distinto — acá solo variamos magnitud/dirección/origen.
+//   · `focus` ("x% y%") permite apuntar el origen del zoom al SUJETO de la foto
+//     (lo puede emitir la autoría/QC); sin focus, hash del filename como siempre.
+// ★ Anti-congelado: `clipDur` (dur real del mp4, medida por beatsheet.mjs) baja a
+//   Media vía SceneFrame para adaptar playbackRate/loop.
+// ★ `trans` (frames) = fade-in de cambio de SECCIÓN (opt-in del build; cortes internos
+//   siguen secos). ★ `grade` = normalización de color por clip (probe_grade).
 export const RawShot: React.FC<{
   durationInFrames: number;
   src: string; // "img/name.png" or "vid/name.mp4"
@@ -16,6 +26,19 @@ export const RawShot: React.FC<{
   zoom?: [number, number];
   kicker?: string; // optional small top-left tag; omit for fully raw
   accent?: string;
+  // BUG 2: "blur" = clip vertical/baja-res → fondo blureado (cover) + clip real
+  // centrado con object-fit:contain a su tamaño nativo (NO se estira → no pixela).
+  fit?: "cover" | "blur";
+  clipDur?: number;
+  focus?: string; // "62% 40%" — origen del Ken-Burns apuntado al sujeto
+  trans?: number; // frames de fade-in (cambio de sección)
+  grade?: string;
+  kbPhase?: number; // fuerza variante de Ken-Burns (para splits A/B del mismo asset)
+  kbBoost?: number; // multiplica la magnitud del Ken-Burns (cámara más viva); default 1
+  // ⛔ playbackRate del clip. `Media` lo pone en 0.6 POR DEFECTO (cámara lenta), y un video de
+  // 30 fps a 0.6x en una timeline de 30 fps repite 1 de cada 2 cuadros de forma irregular = JUDDER.
+  // Pasar speed={1} lo reproduce a velocidad nativa, 1 cuadro de fuente por cuadro de timeline.
+  speed?: number;
 }> = ({
   durationInFrames,
   src,
@@ -25,30 +48,36 @@ export const RawShot: React.FC<{
   zoom,
   kicker,
   accent = COLORS.accent,
+  fit = "cover",
+  clipDur,
+  speed,
+  focus,
+  trans,
+  grade,
+  kbPhase,
+  kbBoost = 1,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const kIn = spring({ frame: frame - sec(0.2), fps, config: { damping: 18, mass: 0.7 } });
-  // ★ VARIEDAD de cámara: cada foto/clip recibe un Ken-Burns distinto (dirección
-  // in/out, magnitud y ORIGEN del zoom) según un hash del src → no se siente
-  // repetitivo. Si el caller pasa `zoom` explícito, se respeta.
   let seed = 0;
   for (let i = 0; i < src.length; i++) seed = (seed * 31 + src.charCodeAt(i)) >>> 0;
-  // Ken-Burns SUAVE (feedback usuario: los zooms eran muy fuertes y rápidos).
-  // Magnitud máx ~+7% (antes +20%) → movimiento lento y sutil, no un punch.
-  const MOTIONS: [number, number][] = [
-    [1.015, 1.055], // in muy suave
-    [1.055, 1.015], // out muy suave
-    [1.02, 1.065], // in suave
-    [1.065, 1.02], // out suave
-    [1.01, 1.045], // in mínimo
-    [1.05, 1.012], // out leve
-    [1.03, 1.07], // in medio
-    [1.04, 1.008], // out medio
-  ];
+  if (kbPhase != null) seed = (seed + kbPhase * 7919) >>> 0;
+
+  const durSec = durationInFrames / fps;
+  // magnitud por duración: ~0.9%/s de zoom, clamp [2%, 10%] punta a punta.
+  // kbBoost sube la magnitud (cámara más viva) — clamp más alto cuando hay boost.
+  const span = Math.min(0.10 * Math.max(1, kbBoost), Math.max(0.02 * kbBoost, 0.009 * durSec * kbBoost));
+  const zoomIn = seed % 2 === 0; // dirección alternada estable por asset
+  const base = 1.01 + ((seed >> 4) % 4) * 0.005; // punto de partida levemente variado
+  const blurFill = fit === "blur";
+  const motion: [number, number] = zoom ?? (blurFill
+    ? [1.0, 1.02]
+    : zoomIn ? [base, +(base + span).toFixed(3)] : [+(base + span).toFixed(3), base]);
+
   const ORIGINS = ["50% 50%", "32% 30%", "70% 38%", "38% 70%", "66% 62%", "30% 55%", "60% 30%", "50% 72%"];
-  const motion = zoom ?? MOTIONS[seed % MOTIONS.length];
-  const camOrigin = ORIGINS[(seed >> 3) % ORIGINS.length];
+  const camOrigin = focus || ORIGINS[(seed >> 3) % ORIGINS.length];
+
   return (
     <SceneFrame
       durationInFrames={durationInFrames}
@@ -57,9 +86,15 @@ export const RawShot: React.FC<{
       image={src}
       imageBlur={blur}
       imageDarken={darken}
+      imageFit={blurFill ? "blur" : "cover"}
       zoom={motion}
       camOrigin={camOrigin}
       noReveal
+      clipDur={clipDur}
+      speed={speed}
+      beatDur={durSec}
+      grade={grade}
+      fadeIn={trans}
       contentStyle={{ alignItems: "flex-start", justifyContent: "flex-start" }}
     >
       {kicker && (

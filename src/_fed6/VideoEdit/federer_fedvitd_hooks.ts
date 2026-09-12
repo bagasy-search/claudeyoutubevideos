@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_fedvitd.mjs — rangos talk.
+export const TALKSZ: { start: number; dur: number }[] = [{"start":1.2,"dur":5.8},{"start":104.06,"dur":17.83},{"start":150.44,"dur":6.16},{"start":342.16,"dur":8.18},{"start":445.54,"dur":20.4},{"start":675.78,"dur":5.96},{"start":1087.56,"dur":5.06},{"start":1277.12,"dur":1.51},{"start":1416.94,"dur":4.46},{"start":1700.96,"dur":16.62},{"start":1821.42,"dur":2.78},{"start":1936.84,"dur":4.68}];

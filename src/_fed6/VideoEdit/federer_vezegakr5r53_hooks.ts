@@ -1,0 +1,2 @@
+// AUTO-GENERADO por gen_vezegakr5r53.mjs — rangos talk.
+export const TALKSZ: { start: number; dur: number }[] = [{"start":1.3,"dur":18.24},{"start":82.72,"dur":4.84},{"start":154.04,"dur":1.48},{"start":173.62,"dur":3.02},{"start":250.82,"dur":3.91},{"start":382.4,"dur":2.8},{"start":479.62,"dur":8.52},{"start":549.66,"dur":2.91},{"start":598.98,"dur":0.48},{"start":714.52,"dur":9.34},{"start":775.02,"dur":1.36},{"start":817.32,"dur":7.64},{"start":908.66,"dur":1.24},{"start":1009.74,"dur":9.33},{"start":1099.18,"dur":2.96},{"start":1128.52,"dur":7.2}];

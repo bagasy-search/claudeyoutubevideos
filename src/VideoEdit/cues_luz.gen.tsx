@@ -89,7 +89,7 @@ export const CUES: Cue[] = [
   { key: "lz_setup_all", start: 752.9, dur: 12.5, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lz_setup_all.mp4" darken={0} /> },
   { key: "lz_bright_work", start: 764.9, dur: 16.1, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lz_bright_work.mp4" darken={0} /> },
   { key: "lz_fine_work_hist", start: 780.5, dur: 17.3, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lz_fine_work_hist.mp4" darken={0} /> },
-  { key: "lz_jam_jar_lamp", start: 797.3, dur: 16.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lz_jam_jar_lamp.mp4" darken={0} /> },
+  { key: "lz_jam_jar_lamp", start: 797.3, dur: 16.6, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="img/lz_jam_jar_lamp.png" darken={0} /> },
   { key: "lz_wick_float", start: 813.4, dur: 16.8, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lz_wick_float.mp4" darken={0} /> },
   { key: "lz_trim_wick", start: 829.7, dur: 17.4, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lz_trim_wick.mp4" darken={0} /> },
   { key: "lz_round_bottle", start: 846.6, dur: 12.9, kind: "raw", el: (d) => <RawShot durationInFrames={d} src="broll/lz_round_bottle.mp4" darken={0} /> },

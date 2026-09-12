@@ -32,7 +32,7 @@ const ASSET_RE = /^(img|vid|real|broll|assets|avatar_clips)\/.+\.(png|jpe?g|webp
 // kinds que beatsheet.mjs sabe renderizar (si no está acá, el cue sale null → el beat
 // no se dibuja). Mantener en sync con el switch de renderEl en beatsheet.mjs.
 const KNOWN = new Set([
-  "raw", "diagram", "quote", "chips", "splitlist", "stat", "impact", "journey", "float",
+  "raw", "diagram", "layered", "quote", "chips", "splitlist", "stat", "impact", "journey", "float",
   "headline", "aged", "bars", "cross", "process", "checklist", "rule", "annotated", "callout",
   "infzoom", "teasecards", "half", "top7", "riskclock", "moat", "sizescale", "loctag", "chapter",
   "nametag", "phrasetag", "metertag", "foundertree", "timeline", "stattag", "spreadmap", "costtally",
@@ -45,6 +45,15 @@ const KNOWN = new Set([
   "expeditionmap", "scalecolossus", "evidenceboard", "loupe", "thennow", "ghost",
   // fichas explicativas
   "focuscard", "termcard", "splitexplain",
+  // overlays a medida (OxCards / MaderaCards / MaderaPolish / CementoPolish / ManualCard)
+  "oxstat", "oxmethod", "oxrule", "oxclamp", "oxtag", "oxbefore", "oxside", "oxstack", "oxspec", "oxnote", "oxquote", "manualcard",
+  "mdgauge", "mdlife", "mdrecipe", "mdpost", "mdchar", "mdrecap", "mdname", "mdnext",
+  "mdtwoplanks", "mdsealtrap", "mdrotinside", "mdrulestamp", "mdfungus", "mdslider", "mdkicker", "mdendcard", "mdtrans",
+  "cmrecipe", "cmyears", "cmselfheal", "cmcure", "cmerror", "cmname",
+  "slcapillary", "slsalt", "slseal", "slbarrier", "sllime", "sltwowalls", "slname",
+  "acgauge", "acports", "acoverfill", "acsteps", "accircuit", "acname",
+  // otros kinds del switch de beatsheet ausentes del set original
+  "ingredients", "numcard", "regrow", "lielist", "gridreveal", "growthtimeline", "kineticline", "blurreveal", "hugel", "olla", "floatcards", "layered",
 ]);
 
 // deep-walk: junta TODA string que parezca path de asset, sin importar en qué campo
