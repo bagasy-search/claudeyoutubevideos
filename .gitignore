@@ -2,6 +2,11 @@ node_modules
 dist
 .DS_Store
 .env
+# ⛔ el repo es PUBLICO: cualquier variante de .env queda fuera.
+#    `.env` solo NO cubre `.env.local`, que es donde viven las creds de Supabase
+#    (NEXT_PUBLIC_SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY) que lee scripts/supa_creds.mjs.
+.env.*
+!.env.example
 
 # Ignore the output video from Git but not videos you import into src/.
 out
@@ -49,4 +54,3 @@ _v3probe/
 
 .flowprofile/
 .flowaccounts.json
-.render_accounts.json
