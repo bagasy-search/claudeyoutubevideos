@@ -5,10 +5,10 @@ import { BigStatReveal, ChapterTitle, ChecklistReveal, CornerEyebrow, CtaCard, C
 export const TOTAL_FRAMES_OLIVARES2 = 52960;
 export const CUES = [
  { key: "p1_02", from: 236, dur: 101, el: () => (<Clip src="broll/olivares2/ol2_p1_02.mp4" seed={236} frames={121} />) },
- { key: "p1_03", from: 337, dur: 101, el: () => (<Foto src="img/ol2_p1_03.jpg" seed={337} />) },
+ { key: "p1_03", from: 337, dur: 101, el: () => (<Clip src="broll/olivares2/ol2_p1_03.mp4" seed={337} frames={121} />) },
  { key: "p1_04", from: 438, dur: 100, el: () => (<Clip src="broll/olivares2/ol2_p1_04.mp4" seed={438} frames={121} />) },
  { key: "p1_05", from: 538, dur: 101, el: () => (<Clip src="broll/olivares2/ol2_p1_05.mp4" seed={538} frames={121} />) },
- { key: "p1_07", from: 740, dur: 49, el: () => (<Foto src="img/ol2_p1_07.jpg" seed={740} />) },
+ { key: "p1_07", from: 740, dur: 49, el: () => (<Clip src="broll/olivares2/ol2_p1_07.mp4" seed={740} frames={121} />) },
  { key: "p1_08", from: 789, dur: 169, el: () => (<Clip src="broll/olivares2/ol2_p1_08.mp4" seed={789} frames={121} />) },
  { key: "p1_09", from: 1078, dur: 62, el: () => (<Clip src="broll/olivares2/ol2_p1_09.mp4" seed={1078} frames={121} />) },
  { key: "p1_11", from: 1322, dur: 183, el: () => (<Clip src="broll/olivares2/ol2_p1_11.mp4" seed={1322} frames={121} />) },
