@@ -9,7 +9,7 @@
 // ⛔ El generador pseudoaleatorio va con hash ENTERO (mulberry): Math.sin(seed*12.9898)*43758.5453
 //    con semillas grandes pierde precisión y se correlaciona (racha de 11 y reparto 43/57 medidos).
 import React from "react";
-import { AbsoluteFill, Img, Loop, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 
 export const OL = {
   ink0: "#0C1412",
@@ -52,15 +52,28 @@ const useKenBurns = (seed: number, base: number, ampMax: number) => {
 
 const LLENA: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover" };
 
-/** CLIP animado. `frames` = cuadros REALES del archivo (los mide el build con ffprobe). */
-export const Clip: React.FC<{ src: string; seed: number; frames?: number }> = ({ src, seed, frames }) => {
-  const t = useKenBurns(seed, 1.03, 0.075);
-  // ⛔ `loop` NO es prop de OffthreadVideo: cae en ...props y se ignora, y el clip se CONGELA el
-  //    resto del slot. El bucle va con <Loop> y la cantidad REAL de cuadros del archivo.
-  const v = <OffthreadVideo src={staticFile(src)} muted style={{ ...LLENA, ...t }} />;
+/** CLIP animado: se reproduce UNA SOLA VEZ.
+ *
+ * ⛔ NUNCA <Loop>. Regla permanente del creador: no se repite un clip para rellenar un slot —
+ *    y loopear es, literalmente, poner el mismo clip dos veces seguidas. Para llegar a la duración
+ *    del slot se RALENTIZA, y a lo sumo a 0,5× (el doble de su largo real). Si aun así no llega,
+ *    debajo está la FOTO BASE DEL MISMO PLANO con su propio Ken-Burns: misma escena, así que no es
+ *    "repetir una imagen", es el plano que sigue vivo después de que el movimiento terminó.
+ * `frames` = cuadros REALES del archivo · `dur` = cuadros del slot (los dos los mide el build).
+ */
+export const Clip: React.FC<{ src: string; img: string; seed: number; frames: number; dur: number }> = ({ src, img, seed, frames, dur }) => {
+  const tv = useKenBurns(seed, 1.03, 0.075);
+  const tf = useKenBurns(seed + 91, 1.06, 0.12);
+  const rate = Math.max(0.5, Math.min(1, frames / Math.max(1, dur)));
+  const cuadrosDelClip = Math.min(dur, Math.max(2, Math.round(frames / rate)));
   return (
     <AbsoluteFill style={{ backgroundColor: OL.ink0, overflow: "hidden" }}>
-      {frames && frames > 1 ? <Loop durationInFrames={frames}>{v}</Loop> : v}
+      <Img src={staticFile(img)} style={{ ...LLENA, ...tf }} />
+      <Sequence durationInFrames={cuadrosDelClip}>
+        <AbsoluteFill style={{ overflow: "hidden" }}>
+          <OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ ...LLENA, ...tv }} />
+        </AbsoluteFill>
+      </Sequence>
     </AbsoluteFill>
   );
 };
