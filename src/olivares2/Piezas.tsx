@@ -52,6 +52,20 @@ const useKenBurns = (seed: number, base: number, ampMax: number) => {
 
 const LLENA: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover" };
 
+/** El clip se apaga sobre la foto base en vez de CORTAR a ella.
+ *
+ * Sin esto el paso del clip a su foto es un corte duro en medio del mismo plano: el Ken-Burns de la
+ * foto viene corriendo desde el arranque del slot con otra escala y otro origen, así que el encuadre
+ * pega un salto a la vista (medido en el render: se nota). Con ~12 cuadros de disolvencia la foto
+ * aparece como si el movimiento se hubiera ido calmando. Si no hay cola, no hay nada que disolver.
+ */
+const VideoConCola: React.FC<{ frames: number; cola: number; children: React.ReactNode }> = ({ frames, cola, children }) => {
+  const f = useCurrentFrame();
+  const d = Math.min(12, Math.max(0, Math.min(cola, frames - 2)));
+  const opacity = d > 0 ? interpolate(f, [frames - d, frames - 1], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
+  return <AbsoluteFill style={{ overflow: "hidden", opacity }}>{children}</AbsoluteFill>;
+};
+
 /** CLIP animado: se reproduce UNA SOLA VEZ.
  *
  * ⛔ NUNCA <Loop>. Regla permanente del creador: no se repite un clip para rellenar un slot —
@@ -70,9 +84,9 @@ export const Clip: React.FC<{ src: string; img: string; seed: number; frames: nu
     <AbsoluteFill style={{ backgroundColor: OL.ink0, overflow: "hidden" }}>
       <Img src={staticFile(img)} style={{ ...LLENA, ...tf }} />
       <Sequence durationInFrames={cuadrosDelClip}>
-        <AbsoluteFill style={{ overflow: "hidden" }}>
+        <VideoConCola frames={cuadrosDelClip} cola={dur - cuadrosDelClip}>
           <OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ ...LLENA, ...tv }} />
-        </AbsoluteFill>
+        </VideoConCola>
       </Sequence>
     </AbsoluteFill>
   );
