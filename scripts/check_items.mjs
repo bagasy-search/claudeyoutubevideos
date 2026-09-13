@@ -48,6 +48,11 @@ if (SELF) {                       // control POSITIVO: rompo a propósito
     romper("WorstSpots", "label", "name"),
     romper("RouteFlow", "label", "text"),
     romper("SectionDiagram", "text", "t"),      // kit Amish
+    // kit premium (lo usan los videos del canal Mike Dalton y los que clonen ese kit)
+    romper("NumberedSteps", "title", "t"),
+    romper("FlowSteps", "label", "text"),
+    romper("BulletCascade", "key", "k"),
+    romper("HookCaption", "text", "t"),
     romper("PaperChart", "label", "name"),      // kit Amish
     romper("PizarraExplica", "title", "t"),
   ].filter(Boolean).length;
@@ -63,6 +68,18 @@ function contrato(comp) {
   const cand = [`src/${KIT}/${comp}.tsx`, `src/${KIT}/RayStage.tsx`, `src/${KIT}/AmishKit.tsx`,
                 `src/${KIT}/VideoEdit/scenes/${comp}.tsx`, `src/${KIT}/VideoEdit/${comp}.tsx`,
                 `src/${KIT}/VideoEdit/FedererComponents2.tsx`, `src/${KIT}/VideoEdit/FedererComponents.tsx`];
+  // ⛔ AGREGADO: un kit puede repartir sus componentes en VARIOS archivos con nombres que no son
+  //    el del componente (el kit premium tiene 17 en lists/text/compare/stats/diagrams/frame.tsx).
+  //    Sin esto la compuerta mide 0 arrays y avisa que no midió. Es aditivo: sólo suma candidatos.
+  //    El KIT acepta VARIOS directorios separados por coma: un video puede mezclar el kit premium
+  //    con los componentes firma de su canal (src/peroxide), y mirar uno solo deja la mitad sin medir.
+  for (const k of String(KIT).split(",").map((x) => x.trim()).filter(Boolean)) {
+    try {
+      const dir = `src/${k}`;
+      if (fs.existsSync(dir) && fs.statSync(dir).isDirectory())
+        for (const f of fs.readdirSync(dir)) if (f.endsWith(".tsx")) cand.push(`${dir}/${f}`);
+    } catch {}
+  }
   let src = null, file = null;
   for (const f of cand) {
     if (!fs.existsSync(f)) continue;
