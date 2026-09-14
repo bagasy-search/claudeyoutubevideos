@@ -307,7 +307,7 @@ export const CUES: Cue[] = [
   { key: "176_0", from: 42278, dur: 155, el: (d) => <MdhFoto durationInFrames={d} src="img/mdfreezer_176.jpg" seed={42190} /> },
   { key: "177_0", from: 42433, dur: 121, el: (d) => <MdhFoto durationInFrames={d} src="img/mdfreezer_177.jpg" seed={42433} /> },
   { key: "177_1", from: 42554, dur: 120, el: (d) => <MdhFoto durationInFrames={d} src="img/mdfreezer_177.jpg" seed={42554} /> },
-  { key: "c_1422460", from: 42674, dur: 245, el: (d) => <MdhBed durationInFrames={d} src="img/mdfreezer_177.jpg" seed={42674}><CtaCard durationInFrames={d} theme={THEME_PEROXIDE} {...({"eyebrow":"FREE DOWNLOAD","title":"The freezer-fix checklist","bullet":"steps · tools · where to get the copper wire","cta":"Link in the description","sfx":false} as any)} /></MdhBed> },
+  { key: "c_1422460", from: 42674, dur: 245, el: (d) => <MdhBed durationInFrames={d} src="img/mdfreezer_177.jpg" seed={42674}><CtaCard durationInFrames={d} theme={THEME_PEROXIDE} {...({"price":0,"eyebrow":"FREE DOWNLOAD","title":"The freezer-fix checklist","bullet":"steps · tools · where to get the copper wire","cta":"Link in the description","sfx":false} as any)} /></MdhBed> },
   { key: "av_42919", from: 42919, dur: 88, el: (d) => <MdhAvatar durationInFrames={d} src="av_mdfreezer/win-068.mp4" seed={42919} /> },
   { key: "179_0", from: 43007, dur: 95, el: (d) => <MdhFoto durationInFrames={d} src="img/mdfreezer_179.jpg" seed={42919} /> },
 ];
