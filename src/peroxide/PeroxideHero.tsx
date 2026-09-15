@@ -585,10 +585,10 @@ export const ChapterTrailCard: React.FC<{
           <AbsoluteFill style={{overflow: 'hidden'}}>
             <img
               src={staticFile(bed)}
-              style={{width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.34) saturate(0.62)', transform: 'scale(1.14)'}}
+              style={{width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.72) saturate(0.78)', transform: 'scale(1.14)'}}
             />
           </AbsoluteFill>
-          <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 40%, rgba(16,19,24,0.70) 0%, rgba(6,7,8,0.86) 55%, rgba(0,0,0,0.93) 100%)'}} />
+          <AbsoluteFill style={{background: 'radial-gradient(130% 130% at 50% 40%, rgba(16,19,24,0.28) 0%, rgba(6,7,8,0.40) 55%, rgba(0,0,0,0.52) 100%)'}} />
         </>
       ) : null}
 
