@@ -489,7 +489,7 @@ export const CUES: Cue[] = [
   { key: "imagen_2611460", start: 2611.4666666666667, dur: 4.566666666666666, el: (d) => <Foto src="img/farinon_416.jpg" seed={78344} /> },
   { key: "imagen_2616020", start: 2616.0333333333333, dur: 4.533333333333333, el: (d) => <Foto src="img/farinon_416.jpg" seed={78481} /> },
   { key: "clip_2625380", start: 2625.366666666667, dur: 3.6666666666666665, el: (d) => <Clip src="broll/farinon/farinon_418.mp4" seed={78761} startFrom={0.6} /> },
-  { key: "clip_2629021", start: 2629.0333333333333, dur: 2.966666666666667, el: (d) => <Clip src="broll/farinon/farinon_418.mp4" seed={78871} startFrom={23.25} /> },
+  { key: "clip_2629021", start: 2629.0333333333333, dur: 2.966666666666667, el: (d) => <Clip src="broll/farinon/farinon_418.mp4" seed={78871} startFrom={7.59} /> },
   { key: "clip_2632000", start: 2632, dur: 4.233333333333333, el: (d) => <Clip src="broll/farinon/farinon_419.mp4" seed={78960} startFrom={0.6} /> },
   { key: "clip_2636224", start: 2636.233333333333, dur: 3.433333333333333, el: (d) => <Clip src="broll/farinon/farinon_419.mp4" seed={79087} startFrom={7.83} /> },
   { key: "clip_2644190", start: 2644.2, dur: 2.3333333333333335, el: (d) => <Clip src="broll/farinon/farinon_422.mp4" seed={79326} startFrom={0.6} /> },
