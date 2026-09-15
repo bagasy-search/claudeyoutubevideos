@@ -41,6 +41,7 @@ const st = new State(slug);
 const legado = { status: "done", inputsHash: "legacy-import", medido: { importado: true } };
 if (fs.existsSync(P.wav)) st.set("10_voice", legado);
 if (fs.existsSync(P.mom)) { st.set("00_preflight", legado); st.set("20_asr", legado); }
+if (fs.existsSync(P.frases)) st.set("15_frases", legado);
 if (fs.existsSync(P.plan)) { st.set("30_direct", legado); st.set("40_images", legado); st.set("50_agnes", legado); }
 if (fs.existsSync(P.ventanas)) st.set("55_avatar", legado);
 console.log(`importado ${slug}: ${copiados.join(", ")} · wav ${fs.existsSync(P.wav) ? "copiado (nunca hardlink)" : "FALTA"} · spec ${specFile}`);

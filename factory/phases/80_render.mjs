@@ -38,6 +38,37 @@ export async function commitRender({ slug, files, base, ref, work, mensaje, runn
   return { commit, tree, malos };
 }
 
+/**
+ * Worktree MÍNIMO por video, parado (detached) en el commit de render. farm.mjs exige HEAD == ref del render
+ * (pre-vuelo) y lee src/, public/ y _v3/ relativos al cwd; el repo compartido está en la rama de OTRO video.
+ *   · `worktree add --no-checkout` + checkout SÓLO de los archivos del árbol de imports → pesa KB, índice propio.
+ *   · public/ y _v3/ son JUNCTIONS al repo real. ⛔⛔ Este worktree NUNCA se borra con rmdir /s ni `worktree remove`
+ *     (así se perdió el public/ real: project_canal_the_free_builder). Se reutiliza moviendo HEAD.
+ */
+export async function prepararWorktree({ slug, commit, files, wt, assetsList, runner = run }) {
+  const g = (args, cwd = ROOT) => runner("git", args, { cwd, timeoutMs: 5 * 60_000 });
+  if (!fs.existsSync(path.join(wt, ".git"))) {
+    fs.mkdirSync(path.dirname(wt), { recursive: true });
+    await g(["worktree", "add", "--no-checkout", "--detach", wt, commit]);
+  } else {
+    await g(["checkout", "--detach", commit], wt);
+  }
+  await g(["checkout", commit, "--", ...files], wt);
+  for (const d of ["public", "_v3"]) {
+    const link = path.join(wt, d);
+    if (fs.existsSync(link)) {
+      const st = fs.lstatSync(link);
+      if (!st.isSymbolicLink()) throw new Error(`${link} existe y NO es junction: no lo toco (revisar a mano)`);
+      continue;
+    }
+    await runner("cmd", ["/c", "mklink", "/J", link.replace(/\//g, "\\"), path.join(ROOT, d).replace(/\//g, "\\")], { timeoutMs: 30_000 });
+  }
+  fs.copyFileSync(assetsList, path.join(wt, path.basename(assetsList)));
+  const head = (await g(["rev-parse", "HEAD"], wt)).stdout.trim();
+  if (head !== commit) throw new Error(`worktree ${wt}: HEAD ${head.slice(0, 7)} ≠ commit ${commit.slice(0, 7)}`);
+  return { wt, head };
+}
+
 export default {
   id: "80_render",
   deps: ["70_gates"],
@@ -60,6 +91,10 @@ export default {
     const total = Number(fs.readFileSync(path.join(P.srcDir, `Main_${slug}.tsx`), "utf8").match(/TOTAL_FRAMES_\w+ = (\d+)/)[1]);
     assertMeasured("totalFrames", total, { min: 300, log });
 
+    const wt = path.join(P.work, "render", "wt");
+    await prepararWorktree({ slug, commit: c.commit, files: tree.archivos, wt, assetsList: P.assetsList });
+    log(`worktree de render ${wt} en ${c.commit.slice(0, 7)} (public/ y _v3/ por junction; nunca se borra)`);
+
     const prev = state.get("80_render");
     let runId = prev?.status !== "done" && prev?.runId ? prev.runId : null;
     const res = await withLease("farm_slots", slug, chunks, async () => {
@@ -67,8 +102,8 @@ export default {
         for (let i = 0; ; i++) {
           try {
             const reuse = i > 0 && (await releaseAssetPublic(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
-            const r = await run("node", ["scripts/farm.mjs", slug, P.comp, String(total), String(chunks), `@${path.basename(P.assetsList)}`], {
-              cwd: ROOT, timeoutMs: 3 * 3600_000, expect: /WAIT_RUN:\s*\d+/,
+            const r = await run("node", [path.join(ROOT, "scripts", "farm.mjs"), slug, P.comp, String(total), String(chunks), `@${path.basename(P.assetsList)}`], {
+              cwd: wt, timeoutMs: 3 * 3600_000, expect: /WAIT_RUN:\s*\d+/,
               env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
               onLine: (l) => /PRE-VUELO|✗|⛔|WAIT_RUN|release|chunks|agnes QC/i.test(l) && log(l.slice(0, 180)),
             });
