@@ -287,6 +287,18 @@ if (pref && pref.startsWith("@")) {
 }
 
 
+// ── PRE-VUELO AGNES QC (sep-2026, regla del creador: "por y para siempre, todos los canales") ────
+// Ningún clip de agnes entra al render sin el control único (scripts/agnes_qc.mjs): gente inventada,
+// escena cambiada, identidad, cosas derretidas, movimiento imposible, y REPETICIÓN (planos más
+// largos que su clip = el loop repite el movimiento; tcbriquetas tenía 86/236). Escape a la vista:
+// AGNES_QC_OVERRIDE="<motivo>".
+{
+  const { agnesGate } = await import("./agnes_qc_gate.mjs");
+  const g = agnesGate(slug, items);
+  if (!g.ok) { console.error(g.msg); process.exit(1); }
+  console.log(g.msg);
+}
+
 // nombre PER-SLUG en tmpdir: dos farm.mjs en paralelo NO se pisan la lista (antes era "_assets_list.txt" fijo en el CWD)
 const listFile = path.join(os.tmpdir(), `_assets_${slug}.txt`);
 fs.writeFileSync(listFile, items.join("\n"));
