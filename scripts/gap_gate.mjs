@@ -28,6 +28,9 @@ const grab = (re) => { const m = bs.match(re); return m ? JSON.parse(m[1]) : [];
 const BEATS = grab(/[A-Z_]+_BEATS[^=]*=\s*(\[[\s\S]*?\]);/);
 const COVER = grab(/[A-Z_]+_COVER[^=]*=\s*(\[[\s\S]*?\]);/);
 const END = +(bs.match(/VIDEO_END\s*=\s*([\d.]+)/) || [])[1] || 0;
+// ⛔ fail-closed (fábrica, 15-sep-2026): si las regex no calzaban, END=0 y BEATS=[] → el bucle no corría y
+// imprimía "no puede haber pantalla negra" sin haber simulado un solo instante.
+if (!(END > 0) || (!BEATS.length && !COVER.length)) { console.error(`⛔ NO MIDIÓ: VIDEO_END=${END} · beats ${BEATS.length} · cover ${COVER.length} en ${beatsPath}`); process.exit(2); }
 
 const mainSrc = readFileSync(mainPath, "utf8");
 // los conjuntos REALES del Main (no se asumen: se leen)

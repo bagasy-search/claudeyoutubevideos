@@ -56,6 +56,7 @@ async function one(it, intento = 1) {
           ] },
         ],
       }),
+      signal: AbortSignal.timeout(120_000),
     });
     if (!r.ok) {
       if ((r.status === 429 || r.status >= 500) && intento < 5) {
@@ -68,7 +69,10 @@ async function one(it, intento = 1) {
     const txt = j.choices?.[0]?.message?.content || "";
     const m = txt.match(/\{[\s\S]*\}/);
     if (!m) return { name: it.name, ok: false, defecto: "sin-veredicto", detalle: txt.slice(0, 60) };
-    const o = JSON.parse(m[0]); return { name: it.name, ok: o.publicable !== false, defecto: o.motivo, detalle: o.detalle };
+    // ⛔ antes `publicable !== false`: una respuesta SIN la clave contaba como publicable
+    const o = JSON.parse(m[0]);
+    if (typeof o.publicable !== "boolean") return { name: it.name, ok: false, defecto: "sin-veredicto", detalle: txt.slice(0, 60) };
+    return { name: it.name, ok: o.publicable === true, defecto: o.motivo, detalle: o.detalle };
   } catch (e) {
     if (intento < 5) { await new Promise((s) => setTimeout(s, 1200 * intento)); return one(it, intento + 1); }
     return { name: it.name, ok: false, defecto: "error", detalle: e.message.slice(0, 50) };
@@ -90,3 +94,7 @@ const porDef = {};
 for (const x of mal) porDef[x.defecto] = (porDef[x.defecto] || 0) + 1;
 console.log(`\nevaluadas ${res.length} · CON DEFECTO ${mal.length}`, porDef);
 for (const x of mal.slice(0, 25)) console.log(`  ${x.name}  dedos=${x.dedos}  ${x.defecto}: ${x.detalle}`);
+// ⛔ fail-closed (fábrica, 15-sep-2026): nunca salía con error. No medido → 2; con defecto → 1.
+const noMedidos = res.filter((x) => ["error", "falta", "sin-veredicto"].includes(x.defecto));
+if (!items.length || noMedidos.length) { console.log(`⛔ NO MIDIÓ ${noMedidos.length}/${items.length}`); process.exit(2); }
+if (mal.length) process.exit(1);
