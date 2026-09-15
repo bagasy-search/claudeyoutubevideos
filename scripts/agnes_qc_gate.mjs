@@ -33,7 +33,8 @@ export function agnesGate(slug, assets = null) {
     for (const r of enRender) {
       const n = path.basename(r, ".mp4"), c = qc.clips?.[n], st = fs.statSync(path.join("public", r));
       if (!c) { sinSello++; ej.push(`${n}: sin sello`); continue; }
-      if (!c.ok || c.removed) { conDefecto++; ej.push(`${n}: ${c.issue} ${c.why || ""}`); continue; }
+      if (!c.revisado) { sinSello++; ej.push(`${n}: sin revisión a ojo (agnes_qc.mjs arma la hoja, --revision la registra)`); continue; }
+      if (!c.ok || c.removed) { conDefecto++; ej.push(`${n}: ${c.rechazado || c.auto || c.issue || "no aprobado"}`); continue; }
       if (c.size !== st.size || c.mtime !== Math.round(st.mtimeMs)) { cambiados++; ej.push(`${n}: cambió después del control`); }
     }
     if (sinSello || conDefecto || cambiados) probs.push(`${enRender.length} clips de agnes · sin sello ${sinSello} · con defecto ${conDefecto} · modificados después del control ${cambiados}\n      ${ej.slice(0, 10).join("\n      ")}`);
