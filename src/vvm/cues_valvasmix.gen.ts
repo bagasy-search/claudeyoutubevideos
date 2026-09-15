@@ -186,8 +186,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h017.png",
   "start": 109.86666666666666,
-  "dur": 12.5,
+  "dur": 6.866666666666666,
   "seed": 3296
+ },
+ {
+  "id": "m017b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h017b.png",
+  "start": 116.73333333333333,
+  "dur": 5.633333333333334,
+  "seed": 3502
  },
  {
   "id": "m018_0",
@@ -267,7 +275,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m023_0.mp4",
   "start": 157.7,
-  "dur": 4.833333333333333,
+  "dur": 3.2333333333333334,
   "seed": 4731,
   "frames": 296
  },
@@ -275,10 +283,19 @@ export const BEATS: any[] = [
   "id": "m023_1",
   "kind": "clip",
   "src": "vvm/broll/m023_1.mp4",
-  "start": 162.53333333333333,
-  "dur": 4.833333333333333,
-  "seed": 4876,
+  "start": 160.93333333333334,
+  "dur": 3.2333333333333334,
+  "seed": 4828,
   "frames": 135
+ },
+ {
+  "id": "m023_2",
+  "kind": "clip",
+  "src": "vvm/broll/m023_2.mp4",
+  "start": 164.16666666666666,
+  "dur": 3.2,
+  "seed": 4925,
+  "frames": 420
  },
  {
   "id": "m024",
@@ -537,7 +554,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m043_0.mp4",
   "start": 314.8666666666667,
-  "dur": 7.5,
+  "dur": 3.7666666666666666,
   "seed": 9446,
   "frames": 420
  },
@@ -545,9 +562,27 @@ export const BEATS: any[] = [
   "id": "m043_1",
   "kind": "clip",
   "src": "vvm/broll/m043_1.mp4",
+  "start": 318.6333333333333,
+  "dur": 3.7333333333333334,
+  "seed": 9559,
+  "frames": 420
+ },
+ {
+  "id": "m043_2",
+  "kind": "clip",
+  "src": "vvm/broll/m043_2.mp4",
   "start": 322.3666666666667,
-  "dur": 7.5,
+  "dur": 3.7666666666666666,
   "seed": 9671,
+  "frames": 420
+ },
+ {
+  "id": "m043_3",
+  "kind": "clip",
+  "src": "vvm/broll/m043_3.mp4",
+  "start": 326.1333333333333,
+  "dur": 3.7333333333333334,
+  "seed": 9784,
   "frames": 420
  },
  {
@@ -602,7 +637,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m048_0.mp4",
   "start": 363.6666666666667,
-  "dur": 6.166666666666667,
+  "dur": 3.1,
   "seed": 10910,
   "frames": 420
  },
@@ -610,10 +645,28 @@ export const BEATS: any[] = [
   "id": "m048_1",
   "kind": "clip",
   "src": "vvm/broll/m048_1.mp4",
-  "start": 369.8333333333333,
-  "dur": 6.2,
-  "seed": 11095,
+  "start": 366.76666666666665,
+  "dur": 3.066666666666667,
+  "seed": 11003,
   "frames": 259
+ },
+ {
+  "id": "m048_2",
+  "kind": "clip",
+  "src": "vvm/broll/m048_2.mp4",
+  "start": 369.8333333333333,
+  "dur": 3.1,
+  "seed": 11095,
+  "frames": 420
+ },
+ {
+  "id": "m048_3",
+  "kind": "clip",
+  "src": "vvm/broll/m048_3.mp4",
+  "start": 372.93333333333334,
+  "dur": 3.1,
+  "seed": 11188,
+  "frames": 420
  },
  {
   "id": "m049",
@@ -653,7 +706,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m050_0.mp4",
   "start": 387.06666666666666,
-  "dur": 8.9,
+  "dur": 3.566666666666667,
   "seed": 11612,
   "frames": 420
  },
@@ -661,9 +714,36 @@ export const BEATS: any[] = [
   "id": "m050_1",
   "kind": "clip",
   "src": "vvm/broll/m050_1.mp4",
-  "start": 395.96666666666664,
-  "dur": 8.9,
-  "seed": 11879,
+  "start": 390.6333333333333,
+  "dur": 3.566666666666667,
+  "seed": 11719,
+  "frames": 420
+ },
+ {
+  "id": "m050_2",
+  "kind": "clip",
+  "src": "vvm/broll/m050_2.mp4",
+  "start": 394.2,
+  "dur": 3.566666666666667,
+  "seed": 11826,
+  "frames": 420
+ },
+ {
+  "id": "m050_3",
+  "kind": "clip",
+  "src": "vvm/broll/m050_3.mp4",
+  "start": 397.76666666666665,
+  "dur": 3.566666666666667,
+  "seed": 11933,
+  "frames": 420
+ },
+ {
+  "id": "m050_4",
+  "kind": "clip",
+  "src": "vvm/broll/m050_4.mp4",
+  "start": 401.3333333333333,
+  "dur": 3.533333333333333,
+  "seed": 12040,
   "frames": 420
  },
  {
@@ -671,7 +751,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m051_0.mp4",
   "start": 404.8666666666667,
-  "dur": 4.733333333333333,
+  "dur": 3.1666666666666665,
   "seed": 12146,
   "frames": 420
  },
@@ -679,10 +759,19 @@ export const BEATS: any[] = [
   "id": "m051_1",
   "kind": "clip",
   "src": "vvm/broll/m051_1.mp4",
-  "start": 409.6,
-  "dur": 4.733333333333333,
-  "seed": 12288,
+  "start": 408.03333333333336,
+  "dur": 3.1333333333333333,
+  "seed": 12241,
   "frames": 375
+ },
+ {
+  "id": "m051_2",
+  "kind": "clip",
+  "src": "vvm/broll/m051_2.mp4",
+  "start": 411.1666666666667,
+  "dur": 3.1666666666666665,
+  "seed": 12335,
+  "frames": 420
  },
  {
   "id": "m052",
@@ -796,15 +885,23 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h060.png",
   "start": 468.46666666666664,
-  "dur": 10.5,
+  "dur": 5.766666666666667,
   "seed": 14054
+ },
+ {
+  "id": "m060b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h060b.png",
+  "start": 474.23333333333335,
+  "dur": 4.733333333333333,
+  "seed": 14227
  },
  {
   "id": "m061_0",
   "kind": "clip",
   "src": "vvm/broll/m061_0.mp4",
   "start": 478.96666666666664,
-  "dur": 6.666666666666667,
+  "dur": 3.3333333333333335,
   "seed": 14369,
   "frames": 326
  },
@@ -812,10 +909,28 @@ export const BEATS: any[] = [
   "id": "m061_1",
   "kind": "clip",
   "src": "vvm/broll/m061_1.mp4",
-  "start": 485.6333333333333,
-  "dur": 6.633333333333334,
-  "seed": 14569,
+  "start": 482.3,
+  "dur": 3.3333333333333335,
+  "seed": 14469,
   "frames": 107
+ },
+ {
+  "id": "m061_2",
+  "kind": "clip",
+  "src": "vvm/broll/m061_2.mp4",
+  "start": 485.6333333333333,
+  "dur": 3.3333333333333335,
+  "seed": 14569,
+  "frames": 350
+ },
+ {
+  "id": "m061_3",
+  "kind": "clip",
+  "src": "vvm/broll/m061_3.mp4",
+  "start": 488.96666666666664,
+  "dur": 3.3,
+  "seed": 14669,
+  "frames": 420
  },
  {
   "id": "m062",
@@ -916,8 +1031,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h070.png",
   "start": 544.0333333333333,
-  "dur": 13.033333333333333,
+  "dur": 7.166666666666667,
   "seed": 16321
+ },
+ {
+  "id": "m070b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h070b.png",
+  "start": 551.2,
+  "dur": 5.866666666666666,
+  "seed": 16536
  },
  {
   "id": "m071_0",
@@ -1149,7 +1272,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m085_0.mp4",
   "start": 698.1333333333333,
-  "dur": 5.5,
+  "dur": 3.6666666666666665,
   "seed": 20944,
   "frames": 294
  },
@@ -1157,10 +1280,19 @@ export const BEATS: any[] = [
   "id": "m085_1",
   "kind": "clip",
   "src": "vvm/broll/m085_1.mp4",
-  "start": 703.6333333333333,
-  "dur": 5.5,
-  "seed": 21109,
+  "start": 701.8,
+  "dur": 3.6666666666666665,
+  "seed": 21054,
   "frames": 288
+ },
+ {
+  "id": "m085_2",
+  "kind": "clip",
+  "src": "vvm/broll/m085_2.mp4",
+  "start": 705.4666666666667,
+  "dur": 3.6666666666666665,
+  "seed": 21164,
+  "frames": 420
  },
  {
   "id": "m086",
@@ -1240,8 +1372,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h091.png",
   "start": 766.4333333333333,
-  "dur": 15.633333333333333,
+  "dur": 8.6,
   "seed": 22993
+ },
+ {
+  "id": "m091b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h091b.png",
+  "start": 775.0333333333333,
+  "dur": 7.033333333333333,
+  "seed": 23251
  },
  {
   "id": "m092_0",
@@ -1304,14 +1444,14 @@ export const BEATS: any[] = [
    "Poquita"
   ],
   "sub": "1 parte por cada 6 de vaselina",
-  "image": null
+  "image": "vvm/img/m095_iq.jpg"
  },
  {
   "id": "m096_0",
   "kind": "clip",
   "src": "vvm/broll/m096_0.mp4",
   "start": 807.3666666666667,
-  "dur": 10.133333333333333,
+  "dur": 3.4,
   "seed": 24221,
   "frames": 391
  },
@@ -1319,10 +1459,46 @@ export const BEATS: any[] = [
   "id": "m096_1",
   "kind": "clip",
   "src": "vvm/broll/m096_1.mp4",
-  "start": 817.5,
-  "dur": 10.133333333333333,
-  "seed": 24525,
+  "start": 810.7666666666667,
+  "dur": 3.3666666666666667,
+  "seed": 24323,
   "frames": 419
+ },
+ {
+  "id": "m096_2",
+  "kind": "clip",
+  "src": "vvm/broll/m096_2.mp4",
+  "start": 814.1333333333333,
+  "dur": 3.3666666666666667,
+  "seed": 24424,
+  "frames": 420
+ },
+ {
+  "id": "m096_3",
+  "kind": "clip",
+  "src": "vvm/broll/m096_3.mp4",
+  "start": 817.5,
+  "dur": 3.3666666666666667,
+  "seed": 24525,
+  "frames": 420
+ },
+ {
+  "id": "m096_4",
+  "kind": "clip",
+  "src": "vvm/broll/m096_4.mp4",
+  "start": 820.8666666666667,
+  "dur": 3.3666666666666667,
+  "seed": 24626,
+  "frames": 253
+ },
+ {
+  "id": "m096_5",
+  "kind": "clip",
+  "src": "vvm/broll/m096_5.mp4",
+  "start": 824.2333333333333,
+  "dur": 3.4,
+  "seed": 24727,
+  "frames": 420
  },
  {
   "id": "m097",
@@ -1343,7 +1519,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m098_0.mp4",
   "start": 834.8666666666667,
-  "dur": 5,
+  "dur": 3.3333333333333335,
   "seed": 25046,
   "frames": 230
  },
@@ -1351,17 +1527,26 @@ export const BEATS: any[] = [
   "id": "m098_1",
   "kind": "clip",
   "src": "vvm/broll/m098_1.mp4",
-  "start": 839.8666666666667,
-  "dur": 5,
-  "seed": 25196,
+  "start": 838.2,
+  "dur": 3.3333333333333335,
+  "seed": 25146,
   "frames": 420
+ },
+ {
+  "id": "m098_2",
+  "kind": "clip",
+  "src": "vvm/broll/m098_2.mp4",
+  "start": 841.5333333333333,
+  "dur": 3.3333333333333335,
+  "seed": 25246,
+  "frames": 341
  },
  {
   "id": "m099_0",
   "kind": "clip",
   "src": "vvm/broll/m099_0.mp4",
   "start": 844.8666666666667,
-  "dur": 5.666666666666667,
+  "dur": 3.7666666666666666,
   "seed": 25346,
   "frames": 302
  },
@@ -1369,10 +1554,19 @@ export const BEATS: any[] = [
   "id": "m099_1",
   "kind": "clip",
   "src": "vvm/broll/m099_1.mp4",
-  "start": 850.5333333333333,
-  "dur": 5.633333333333334,
-  "seed": 25516,
+  "start": 848.6333333333333,
+  "dur": 3.7666666666666666,
+  "seed": 25459,
   "frames": 342
+ },
+ {
+  "id": "m099_2",
+  "kind": "clip",
+  "src": "vvm/broll/m099_2.mp4",
+  "start": 852.4,
+  "dur": 3.7666666666666666,
+  "seed": 25572,
+  "frames": 420
  },
  {
   "id": "av_w015",
@@ -1459,7 +1653,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m106_0.mp4",
   "start": 912.9,
-  "dur": 5.733333333333333,
+  "dur": 3.8,
   "seed": 27387,
   "frames": 411
  },
@@ -1467,19 +1661,19 @@ export const BEATS: any[] = [
   "id": "m106_1",
   "kind": "clip",
   "src": "vvm/broll/m106_1.mp4",
-  "start": 918.6333333333333,
-  "dur": 5.7,
-  "seed": 27559,
+  "start": 916.7,
+  "dur": 3.8333333333333335,
+  "seed": 27501,
   "frames": 282
  },
  {
-  "id": "m107_0",
+  "id": "m106_2",
   "kind": "clip",
-  "src": "vvm/broll/m107_0.mp4",
-  "start": 924.3333333333334,
-  "dur": 4.8,
-  "seed": 27730,
-  "frames": 420
+  "src": "vvm/broll/m106_2.mp4",
+  "start": 920.5333333333333,
+  "dur": 8.6,
+  "seed": 27616,
+  "frames": 373
  },
  {
   "id": "m108_0",
@@ -1504,8 +1698,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h109.png",
   "start": 934.8666666666667,
-  "dur": 12.366666666666667,
+  "dur": 6.8,
   "seed": 28046
+ },
+ {
+  "id": "m109b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h109b.png",
+  "start": 941.6666666666666,
+  "dur": 5.566666666666666,
+  "seed": 28250
  },
  {
   "id": "m110",
@@ -1530,7 +1732,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m112_0.mp4",
   "start": 959.8666666666667,
-  "dur": 5,
+  "dur": 3.3333333333333335,
   "seed": 28796,
   "frames": 420
  },
@@ -1538,10 +1740,19 @@ export const BEATS: any[] = [
   "id": "m112_1",
   "kind": "clip",
   "src": "vvm/broll/m112_1.mp4",
-  "start": 964.8666666666667,
-  "dur": 5,
-  "seed": 28946,
+  "start": 963.2,
+  "dur": 3.3333333333333335,
+  "seed": 28896,
   "frames": 420
+ },
+ {
+  "id": "m112_2",
+  "kind": "clip",
+  "src": "vvm/broll/m112_2.mp4",
+  "start": 966.5333333333333,
+  "dur": 3.3333333333333335,
+  "seed": 28996,
+  "frames": 364
  },
  {
   "id": "m113",
@@ -1594,23 +1805,39 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h116.png",
   "start": 996.1333333333333,
-  "dur": 8.733333333333333,
+  "dur": 4.8,
   "seed": 29884
+ },
+ {
+  "id": "m116b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h116b.png",
+  "start": 1000.9333333333333,
+  "dur": 3.933333333333333,
+  "seed": 30028
  },
  {
   "id": "m117",
   "kind": "foto",
   "src": "vvm/img/vvm_h117.png",
   "start": 1004.8666666666667,
-  "dur": 12.7,
+  "dur": 7,
   "seed": 30146
+ },
+ {
+  "id": "m117b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h117b.png",
+  "start": 1011.8666666666667,
+  "dur": 5.7,
+  "seed": 30356
  },
  {
   "id": "m118_0",
   "kind": "clip",
   "src": "vvm/broll/m118_0.mp4",
   "start": 1017.5666666666667,
-  "dur": 6.166666666666667,
+  "dur": 3.066666666666667,
   "seed": 30527,
   "frames": 283
  },
@@ -1618,10 +1845,28 @@ export const BEATS: any[] = [
   "id": "m118_1",
   "kind": "clip",
   "src": "vvm/broll/m118_1.mp4",
-  "start": 1023.7333333333333,
-  "dur": 6.133333333333334,
-  "seed": 30712,
+  "start": 1020.6333333333333,
+  "dur": 3.1,
+  "seed": 30619,
   "frames": 358
+ },
+ {
+  "id": "m118_2",
+  "kind": "clip",
+  "src": "vvm/broll/m118_2.mp4",
+  "start": 1023.7333333333333,
+  "dur": 3.066666666666667,
+  "seed": 30712,
+  "frames": 319
+ },
+ {
+  "id": "m118_3",
+  "kind": "clip",
+  "src": "vvm/broll/m118_3.mp4",
+  "start": 1026.8,
+  "dur": 3.066666666666667,
+  "seed": 30804,
+  "frames": 210
  },
  {
   "id": "av_w018",
@@ -1663,8 +1908,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h122.png",
   "start": 1049.8666666666666,
-  "dur": 14.266666666666667,
+  "dur": 7.866666666666666,
   "seed": 31496
+ },
+ {
+  "id": "m122b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h122b.png",
+  "start": 1057.7333333333333,
+  "dur": 6.4,
+  "seed": 31732
  },
  {
   "id": "m123",
@@ -1707,7 +1960,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m125_0.mp4",
   "start": 1088,
-  "dur": 5.933333333333334,
+  "dur": 3.966666666666667,
   "seed": 32640,
   "frames": 373
  },
@@ -1715,10 +1968,19 @@ export const BEATS: any[] = [
   "id": "m125_1",
   "kind": "clip",
   "src": "vvm/broll/m125_1.mp4",
-  "start": 1093.9333333333334,
-  "dur": 5.933333333333334,
-  "seed": 32818,
+  "start": 1091.9666666666667,
+  "dur": 3.966666666666667,
+  "seed": 32759,
   "frames": 286
+ },
+ {
+  "id": "m125_2",
+  "kind": "clip",
+  "src": "vvm/broll/m125_2.mp4",
+  "start": 1095.9333333333334,
+  "dur": 3.933333333333333,
+  "seed": 32878,
+  "frames": 300
  },
  {
   "id": "m126",
@@ -1825,8 +2087,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h129.png",
   "start": 1114.8666666666666,
-  "dur": 13.4,
+  "dur": 7.366666666666666,
   "seed": 33446
+ },
+ {
+  "id": "m129b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h129b.png",
+  "start": 1122.2333333333333,
+  "dur": 6.033333333333333,
+  "seed": 33667
  },
  {
   "id": "m130_0",
@@ -1851,7 +2121,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m131_0.mp4",
   "start": 1134.8666666666666,
-  "dur": 5.9,
+  "dur": 3.933333333333333,
   "seed": 34046,
   "frames": 420
  },
@@ -1859,9 +2129,18 @@ export const BEATS: any[] = [
   "id": "m131_1",
   "kind": "clip",
   "src": "vvm/broll/m131_1.mp4",
-  "start": 1140.7666666666667,
-  "dur": 5.866666666666666,
-  "seed": 34223,
+  "start": 1138.8,
+  "dur": 3.9,
+  "seed": 34164,
+  "frames": 420
+ },
+ {
+  "id": "m131_2",
+  "kind": "clip",
+  "src": "vvm/broll/m131_2.mp4",
+  "start": 1142.7,
+  "dur": 3.933333333333333,
+  "seed": 34281,
   "frames": 420
  },
  {
@@ -1910,7 +2189,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m133_0.mp4",
   "start": 1150.7,
-  "dur": 7.1,
+  "dur": 3.533333333333333,
   "seed": 34521,
   "frames": 420
  },
@@ -1918,28 +2197,28 @@ export const BEATS: any[] = [
   "id": "m133_1",
   "kind": "clip",
   "src": "vvm/broll/m133_1.mp4",
-  "start": 1157.8,
-  "dur": 7.066666666666666,
-  "seed": 34734,
+  "start": 1154.2333333333333,
+  "dur": 3.566666666666667,
+  "seed": 34627,
   "frames": 319
  },
  {
-  "id": "m134_0",
+  "id": "m133_2",
   "kind": "clip",
-  "src": "vvm/broll/m134_0.mp4",
-  "start": 1164.8666666666666,
-  "dur": 3.2,
-  "seed": 34946,
-  "frames": 419
+  "src": "vvm/broll/m133_2.mp4",
+  "start": 1157.8,
+  "dur": 3.533333333333333,
+  "seed": 34734,
+  "frames": 416
  },
  {
-  "id": "m134_1",
+  "id": "m133_3",
   "kind": "clip",
-  "src": "vvm/broll/m134_1.mp4",
-  "start": 1168.0666666666666,
-  "dur": 3.2,
-  "seed": 35042,
-  "frames": 299
+  "src": "vvm/broll/m133_3.mp4",
+  "start": 1161.3333333333333,
+  "dur": 9.933333333333334,
+  "seed": 34840,
+  "frames": 293
  },
  {
   "id": "m135",
@@ -1987,7 +2266,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m136_0.mp4",
   "start": 1175.8333333333333,
-  "dur": 5.833333333333333,
+  "dur": 3.9,
   "seed": 35275,
   "frames": 306
  },
@@ -1995,10 +2274,19 @@ export const BEATS: any[] = [
   "id": "m136_1",
   "kind": "clip",
   "src": "vvm/broll/m136_1.mp4",
-  "start": 1181.6666666666667,
-  "dur": 5.866666666666666,
-  "seed": 35450,
+  "start": 1179.7333333333333,
+  "dur": 3.9,
+  "seed": 35392,
   "frames": 413
+ },
+ {
+  "id": "m136_2",
+  "kind": "clip",
+  "src": "vvm/broll/m136_2.mp4",
+  "start": 1183.6333333333334,
+  "dur": 3.9,
+  "seed": 35509,
+  "frames": 420
  },
  {
   "id": "m137_0",
@@ -2014,18 +2302,9 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m137_1.mp4",
   "start": 1191.2,
-  "dur": 3.6666666666666665,
+  "dur": 8.666666666666666,
   "seed": 35736,
   "frames": 420
- },
- {
-  "id": "m138_0",
-  "kind": "clip",
-  "src": "vvm/broll/m138_0.mp4",
-  "start": 1194.8666666666666,
-  "dur": 5,
-  "seed": 35846,
-  "frames": 161
  },
  {
   "id": "m139",
@@ -2073,7 +2352,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m140_0.mp4",
   "start": 1208.7333333333333,
-  "dur": 5.566666666666666,
+  "dur": 3.7333333333333334,
   "seed": 36262,
   "frames": 294
  },
@@ -2081,9 +2360,18 @@ export const BEATS: any[] = [
   "id": "m140_1",
   "kind": "clip",
   "src": "vvm/broll/m140_1.mp4",
-  "start": 1214.3,
-  "dur": 5.566666666666666,
-  "seed": 36429,
+  "start": 1212.4666666666667,
+  "dur": 3.7,
+  "seed": 36374,
+  "frames": 420
+ },
+ {
+  "id": "m140_2",
+  "kind": "clip",
+  "src": "vvm/broll/m140_2.mp4",
+  "start": 1216.1666666666667,
+  "dur": 3.7,
+  "seed": 36485,
   "frames": 420
  },
  {
@@ -2132,7 +2420,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m142_0.mp4",
   "start": 1227.1333333333334,
-  "dur": 7.7,
+  "dur": 3.8666666666666667,
   "seed": 36814,
   "frames": 420
  },
@@ -2140,10 +2428,28 @@ export const BEATS: any[] = [
   "id": "m142_1",
   "kind": "clip",
   "src": "vvm/broll/m142_1.mp4",
-  "start": 1234.8333333333333,
-  "dur": 7.7,
-  "seed": 37045,
+  "start": 1231,
+  "dur": 3.8333333333333335,
+  "seed": 36930,
   "frames": 360
+ },
+ {
+  "id": "m142_2",
+  "kind": "clip",
+  "src": "vvm/broll/m142_2.mp4",
+  "start": 1234.8333333333333,
+  "dur": 3.8333333333333335,
+  "seed": 37045,
+  "frames": 420
+ },
+ {
+  "id": "m142_3",
+  "kind": "clip",
+  "src": "vvm/broll/m142_3.mp4",
+  "start": 1238.6666666666667,
+  "dur": 3.8666666666666667,
+  "seed": 37160,
+  "frames": 374
  },
  {
   "id": "m143",
@@ -2191,16 +2497,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h144.png",
   "start": 1249.0333333333333,
-  "dur": 13.133333333333333,
+  "dur": 7.233333333333333,
   "seed": 37471
  },
  {
-  "id": "m145_0",
-  "kind": "clip",
-  "src": "vvm/broll/m145_0.mp4",
-  "start": 1262.1666666666667,
-  "dur": 2.7,
-  "seed": 37865
+  "id": "m144b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h144b.png",
+  "start": 1256.2666666666667,
+  "dur": 8.6,
+  "seed": 37688
  },
  {
   "id": "av_w019",
@@ -2215,7 +2521,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m147_0.mp4",
   "start": 1271.8333333333333,
   "dur": 3.2666666666666666,
-  "seed": 38155
+  "seed": 38155,
+  "frames": 420
  },
  {
   "id": "m147_1",
@@ -2223,7 +2530,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m147_1.mp4",
   "start": 1275.1,
   "dur": 3.2666666666666666,
-  "seed": 38253
+  "seed": 38253,
+  "frames": 420
  },
  {
   "id": "m147_2",
@@ -2231,7 +2539,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m147_2.mp4",
   "start": 1278.3666666666666,
   "dur": 3.2666666666666666,
-  "seed": 38351
+  "seed": 38351,
+  "frames": 331
  },
  {
   "id": "m148",
@@ -2256,7 +2565,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m149_0.mp4",
   "start": 1292.9666666666667,
   "dur": 4,
-  "seed": 38789
+  "seed": 38789,
+  "frames": 340
  },
  {
   "id": "m149_1",
@@ -2264,7 +2574,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m149_1.mp4",
   "start": 1296.9666666666667,
   "dur": 4,
-  "seed": 38909
+  "seed": 38909,
+  "frames": 420
  },
  {
   "id": "m150_0",
@@ -2272,7 +2583,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m150_0.mp4",
   "start": 1300.9666666666667,
   "dur": 3.3666666666666667,
-  "seed": 39029
+  "seed": 39029,
+  "frames": 420
  },
  {
   "id": "m150_1",
@@ -2280,7 +2592,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m150_1.mp4",
   "start": 1304.3333333333333,
   "dur": 3.3666666666666667,
-  "seed": 39130
+  "seed": 39130,
+  "frames": 420
  },
  {
   "id": "m150_2",
@@ -2288,7 +2601,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m150_2.mp4",
   "start": 1307.7,
   "dur": 3.3666666666666667,
-  "seed": 39231
+  "seed": 39231,
+  "frames": 140
  },
  {
   "id": "m151",
@@ -2310,40 +2624,36 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vvm/broll/m153_0.mp4",
   "start": 1323.4,
-  "dur": 3.3,
-  "seed": 39702
+  "dur": 4.133333333333334,
+  "seed": 39702,
+  "frames": 295
  },
  {
   "id": "m153_1",
   "kind": "clip",
   "src": "vvm/broll/m153_1.mp4",
-  "start": 1326.7,
-  "dur": 3.3,
-  "seed": 39801
+  "start": 1327.5333333333333,
+  "dur": 4.1,
+  "seed": 39826,
+  "frames": 420
  },
  {
   "id": "m153_2",
   "kind": "clip",
   "src": "vvm/broll/m153_2.mp4",
-  "start": 1330,
-  "dur": 3.3,
-  "seed": 39900
+  "start": 1331.6333333333334,
+  "dur": 4.133333333333334,
+  "seed": 39949,
+  "frames": 419
  },
  {
   "id": "m153_3",
   "kind": "clip",
   "src": "vvm/broll/m153_3.mp4",
-  "start": 1333.3,
-  "dur": 3.3,
-  "seed": 39999
- },
- {
-  "id": "m153_4",
-  "kind": "clip",
-  "src": "vvm/broll/m153_4.mp4",
-  "start": 1336.6,
-  "dur": 3.2666666666666666,
-  "seed": 40098
+  "start": 1335.7666666666667,
+  "dur": 4.1,
+  "seed": 40073,
+  "frames": 420
  },
  {
   "id": "m154",
@@ -2367,7 +2677,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m155_0.mp4",
   "start": 1348.2666666666667,
   "dur": 3.566666666666667,
-  "seed": 40448
+  "seed": 40448,
+  "frames": 420
  },
  {
   "id": "m155_1",
@@ -2375,7 +2686,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m155_1.mp4",
   "start": 1351.8333333333333,
   "dur": 3.533333333333333,
-  "seed": 40555
+  "seed": 40555,
+  "frames": 386
  },
  {
   "id": "m155_2",
@@ -2383,12 +2695,13 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m155_2.mp4",
   "start": 1355.3666666666666,
   "dur": 3.566666666666667,
-  "seed": 40661
+  "seed": 40661,
+  "frames": 379
  },
  {
   "id": "m156",
   "start": 1358.9333333333334,
-  "dur": 19.5,
+  "dur": 7.5,
   "kind": "hero",
   "kicker": "Muy importante",
   "title": "Oxígeno en casa: sin vaselina",
@@ -2397,7 +2710,15 @@ export const BEATS: any[] = [
   ],
   "sub": "riesgo de quemadura · cremas a base de agua",
   "side": "left",
-  "image": null
+  "image": "vvm/img/m156_iq.jpg"
+ },
+ {
+  "id": "m156_bed",
+  "kind": "foto",
+  "src": "vvm/img/m156_iq.jpg",
+  "start": 1366.4333333333334,
+  "dur": 12,
+  "seed": 40993
  },
  {
   "id": "m157_0",
@@ -2405,7 +2726,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m157_0.mp4",
   "start": 1378.4333333333334,
   "dur": 3.033333333333333,
-  "seed": 41353
+  "seed": 41353,
+  "frames": 420
  },
  {
   "id": "m157_1",
@@ -2413,7 +2735,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m157_1.mp4",
   "start": 1381.4666666666667,
   "dur": 3.066666666666667,
-  "seed": 41444
+  "seed": 41444,
+  "frames": 420
  },
  {
   "id": "m157_2",
@@ -2421,7 +2744,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m157_2.mp4",
   "start": 1384.5333333333333,
   "dur": 3.033333333333333,
-  "seed": 41536
+  "seed": 41536,
+  "frames": 378
  },
  {
   "id": "m158",
@@ -2444,8 +2768,16 @@ export const BEATS: any[] = [
   "kind": "foto",
   "src": "vvm/img/vvm_h159.png",
   "start": 1397.2666666666667,
-  "dur": 11.866666666666667,
+  "dur": 6.533333333333333,
   "seed": 41918
+ },
+ {
+  "id": "m159b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h159b.png",
+  "start": 1403.8,
+  "dur": 5.333333333333333,
+  "seed": 42114
  },
  {
   "id": "av_w021",
@@ -2477,7 +2809,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m163_0.mp4",
   "start": 1441.8666666666666,
   "dur": 3.566666666666667,
-  "seed": 43256
+  "seed": 43256,
+  "frames": 389
  },
  {
   "id": "m163_1",
@@ -2485,7 +2818,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m163_1.mp4",
   "start": 1445.4333333333334,
   "dur": 3.566666666666667,
-  "seed": 43363
+  "seed": 43363,
+  "frames": 420
  },
  {
   "id": "m164_0",
@@ -2493,7 +2827,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m164_0.mp4",
   "start": 1449,
   "dur": 3.566666666666667,
-  "seed": 43470
+  "seed": 43470,
+  "frames": 320
  },
  {
   "id": "m164_1",
@@ -2501,7 +2836,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m164_1.mp4",
   "start": 1452.5666666666666,
   "dur": 3.566666666666667,
-  "seed": 43577
+  "seed": 43577,
+  "frames": 256
  },
  {
   "id": "m165_0",
@@ -2509,7 +2845,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m165_0.mp4",
   "start": 1456.1333333333334,
   "dur": 2.966666666666667,
-  "seed": 43684
+  "seed": 43684,
+  "frames": 290
  },
  {
   "id": "m165_1",
@@ -2517,12 +2854,13 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m165_1.mp4",
   "start": 1459.1,
   "dur": 2.966666666666667,
-  "seed": 43773
+  "seed": 43773,
+  "frames": 420
  },
  {
   "id": "m166",
   "start": 1462.0666666666666,
-  "dur": 11.8,
+  "dur": 10,
   "kind": "cta",
   "kicker": "Medidas exactas",
   "title": "Todo escrito en la descripción",
@@ -2531,15 +2869,31 @@ export const BEATS: any[] = [
   ],
   "sub": "receta, proporción y las seis formas",
   "buttonLabel": "Ver descripción",
-  "image": null
+  "image": "vvm/img/m166_iq.jpg"
+ },
+ {
+  "id": "m166_bed",
+  "kind": "foto",
+  "src": "vvm/img/m166_iq.jpg",
+  "start": 1472.0666666666666,
+  "dur": 1.8,
+  "seed": 44162
  },
  {
   "id": "m167",
   "kind": "foto",
   "src": "vvm/img/vvm_h167.png",
   "start": 1473.8666666666666,
-  "dur": 13.5,
+  "dur": 7.433333333333334,
   "seed": 44216
+ },
+ {
+  "id": "m167b",
+  "kind": "foto",
+  "src": "vvm/img/vvm_h167b.png",
+  "start": 1481.3,
+  "dur": 6.066666666666666,
+  "seed": 44439
  },
  {
   "id": "m168_0",
@@ -2547,7 +2901,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m168_0.mp4",
   "start": 1487.3666666666666,
   "dur": 3.433333333333333,
-  "seed": 44621
+  "seed": 44621,
+  "frames": 325
  },
  {
   "id": "m168_1",
@@ -2555,7 +2910,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m168_1.mp4",
   "start": 1490.8,
   "dur": 3.4,
-  "seed": 44724
+  "seed": 44724,
+  "frames": 420
  },
  {
   "id": "m168_2",
@@ -2563,7 +2919,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m168_2.mp4",
   "start": 1494.2,
   "dur": 3.433333333333333,
-  "seed": 44826
+  "seed": 44826,
+  "frames": 420
  },
  {
   "id": "av_w022",
@@ -2578,7 +2935,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m170_0.mp4",
   "start": 1514.0666666666666,
   "dur": 4,
-  "seed": 45422
+  "seed": 45422,
+  "frames": 420
  },
  {
   "id": "m170_1",
@@ -2586,7 +2944,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m170_1.mp4",
   "start": 1518.0666666666666,
   "dur": 4,
-  "seed": 45542
+  "seed": 45542,
+  "frames": 420
  },
  {
   "id": "m170_2",
@@ -2594,7 +2953,8 @@ export const BEATS: any[] = [
   "src": "vvm/broll/m170_2.mp4",
   "start": 1522.0666666666666,
   "dur": 4,
-  "seed": 45662
+  "seed": 45662,
+  "frames": 386
  },
  {
   "id": "av_w023",
