@@ -24,7 +24,7 @@ import { run as exec } from "./lib/exec.mjs";
 
 process.chdir(ROOT);   // los scripts compartidos (agnes_qc, farm) usan rutas relativas a video2
 
-const PHASE_FILES = ["00_preflight", "10_voice", "20_asr", "30_direct", "40_images", "50_agnes", "55_avatar", "60_build", "70_gates", "80_render", "90_deliver"];
+const PHASE_FILES = ["00_preflight", "10_voice", "15_frases", "20_asr", "30_direct", "40_images", "50_agnes", "55_avatar", "60_build", "70_gates", "80_render", "90_deliver"];
 async function loadPhases() {
   const out = [];
   for (const f of PHASE_FILES) out.push((await import(`./phases/${f}.mjs`)).default);

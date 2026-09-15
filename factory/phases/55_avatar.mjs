@@ -81,7 +81,7 @@ async function runpodJob({ slug, parte, face, audio, prompt, jobsFile, outMp4, l
 
 export default {
   id: "55_avatar",
-  deps: ["30_direct"],
+  deps: ["20_asr", "30_direct"],   // arranca apenas hay tiempos reales + qué momentos son avatar (en paralelo con imágenes/agnes)
   applies: ({ spec }) => spec.modo === "avatar",
   inputs: ({ P, spec, style }) => [P.mom, P.plan, P.wav, spec.avatar, style.ventanas],
   async run({ slug, spec, style, P, log }) {

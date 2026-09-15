@@ -76,7 +76,7 @@ registerRoot(Root);
 
 export default {
   id: "60_build",
-  deps: ["50_agnes", "55_avatar"],
+  deps: ["20_asr", "50_agnes", "55_avatar"],
   inputs: ({ P, style, spec }) => [P.mom, P.plan, P.ventanas, P.wav, P.imgDir, P.brollDir, style.vlog, spec.cta, path.join(ROOT, "factory", "styles", style.montaje || "vlog-crudo", "Piezas.tsx"), env("FACTORY_DRY") || ""],
   async run({ slug, spec, style, P, log }) {
     if ((style.montaje || "vlog-crudo") !== "vlog-crudo") throw new Error(`montaje "${style.montaje}" todavía no está en la fábrica (sólo vlog-crudo)`);

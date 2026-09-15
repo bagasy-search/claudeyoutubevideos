@@ -7,12 +7,12 @@ import { run } from "../lib/exec.mjs";
 import { assertMeasured } from "../lib/gate.mjs";
 import { withLease } from "../lib/lease.mjs";
 import { ROOT } from "../lib/env.mjs";
-import { frases, detectarBucles, secciones } from "../lib/text.mjs";
+import { detectarBucles } from "../lib/text.mjs";
 
 export default {
   id: "20_asr",
-  deps: ["10_voice"],
-  inputs: ({ P, style, spec }) => [P.wav, P.guion, style.frases, spec.secciones || null],
+  deps: ["10_voice", "15_frases"],
+  inputs: ({ P }) => [P.wav, P.guion, P.frases],
   async run({ slug, spec, style, P, log }) {
     fs.mkdirSync(path.dirname(P.frases), { recursive: true });
     let motor = "modal";
@@ -38,16 +38,13 @@ export default {
     assertMeasured("ttsBucles", b.bucles.length, { max: 0, allowZero: true, log });
     assertMeasured("asrInflacionPct", Math.max(0, b.inflacionPct), { max: 8, allowZero: true, log });
 
-    const mom = frases(guion, style.frases);
-    fs.writeFileSync(P.frases, JSON.stringify(mom, null, 1));
+    // los momentos ya los armó 15_frases (la dirección trabaja sobre ellos en paralelo): acá sólo se anclan al ms
     const r = await run("python", [path.join(ROOT, "factory", "py", "align.py"), P.captions, P.frases, P.mom], { timeoutMs: 20 * 60_000, env: { PYTHONUTF8: "1" } });
     const al = JSON.parse(r.stdout.trim().split("\n").pop());
     assertMeasured("anclajeExactoPct", al.anclajeExactoPct, { min: 90, log });
     assertMeasured("alineacionDesorden", al.desorden, { max: 0, allowZero: true, log });
     assertMeasured("planoMaxSec", al.planoMaxSec, { max: 20, log });
 
-    const secs = secciones(JSON.parse(fs.readFileSync(P.mom, "utf8")), spec.secciones);
-    fs.writeFileSync(path.join(path.dirname(P.mom), "secciones.json"), JSON.stringify(secs, null, 1));
-    return { motor, palabras: words.length, inflacionPct: b.inflacionPct, secciones: secs.length, ...al };
+    return { motor, palabras: words.length, inflacionPct: b.inflacionPct, ...al };
   },
 };

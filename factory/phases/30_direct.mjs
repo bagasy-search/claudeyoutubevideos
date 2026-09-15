@@ -34,11 +34,12 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
 
 export default {
   id: "30_direct",
-  deps: ["20_asr"],
-  inputs: ({ P, style }) => [P.mom, P.dirDir, style.lugares, style.presentador, style.formula],
+  // sobre los momentos ESTIMADOS del guion (15_frases): no espera la voz ni el ASR (mismos nombres pNNN)
+  deps: ["15_frases"],
+  inputs: ({ P, style }) => [P.frases, P.dirDir, style.lugares, style.presentador, style.formula],
   async run({ slug, spec, style, P, log }) {
-    const mom = JSON.parse(fs.readFileSync(P.mom, "utf8"));
-    const secsFile = path.join(path.dirname(P.mom), "secciones.json");
+    const mom = JSON.parse(fs.readFileSync(P.frases, "utf8"));
+    const secsFile = path.join(path.dirname(P.frases), "secciones.json");
     const secs = fs.existsSync(secsFile) ? JSON.parse(fs.readFileSync(secsFile, "utf8")) : [];
     fs.mkdirSync(P.dirDir, { recursive: true });
     const files = fs.readdirSync(P.dirDir).filter((f) => /^dir_[A-Z]+\.json$/.test(f)).sort();

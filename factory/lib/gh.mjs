@@ -40,6 +40,17 @@ export async function ghJson(args, o) {
   return JSON.parse(r.stdout);
 }
 
+/**
+ * Asset de release por la URL PÚBLICA (HEAD, sin tocar la API de GitHub → no gasta el límite secundario que
+ * trabó a 5 sesiones el 15-sep). Repo público. → { existe, size }
+ */
+export async function releaseAssetPublic(repo, tag, name, { fetchImpl = fetch } = {}) {
+  try {
+    const r = await fetchImpl(`https://github.com/${repo}/releases/download/${tag}/${name}`, { method: "HEAD", redirect: "follow", signal: AbortSignal.timeout(60_000) });
+    return { existe: r.ok, size: Number(r.headers.get("content-length") || 0), status: r.status };
+  } catch (e) { return { existe: false, size: 0, error: e.message }; }
+}
+
 /** Estado REAL de un asset de release: { existe, size } — es la verdad, no el exit code del upload. */
 export async function releaseAsset(repo, tag, name, o = {}) {
   const r = await gh(["release", "view", tag, "-R", repo, "--json", "assets"], { ...o, allowFail: true });

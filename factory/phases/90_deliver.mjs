@@ -5,7 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { run, durSec } from "../lib/exec.mjs";
 import { assertMeasured } from "../lib/gate.mjs";
-import { gh, releaseAsset } from "../lib/gh.mjs";
+import { gh, releaseAsset, releaseAssetPublic } from "../lib/gh.mjs";
 import { diskFreeGB, BlockedError } from "../lib/budget.mjs";
 import { NeedsError } from "../lib/phase.mjs";
 import { ROOT, env } from "../lib/env.mjs";
@@ -21,11 +21,21 @@ export default {
     if (libre < 2) throw new BlockedError(`D: con ${libre.toFixed(1)} GB: no entra el re-encode`);
     const wavSec = await durSec(P.wav);
     fs.mkdirSync(path.dirname(P.finalMp4), { recursive: true });
+    // Codificador: NVENC (RTX de la máquina) si está, si no libx264. Mismo contrato de entrega: CFR, tv/bt709,
+    // GOP 2 s, SIN B-frames (pts==dts: el "lageado" real), audio = máster. FACTORY_ENCODER=x264 fuerza CPU.
+    // ⛔ que ffmpeg LISTE h264_nvenc no alcanza (15-sep-2026: driver con API 12.2, ffmpeg pide 13.1 → no abre):
+    // se prueba abriendo el encoder con 1 segundo sintético.
+    const nvenc = env("FACTORY_ENCODER") !== "x264" && (await run("ffmpeg", ["-v", "error", "-f", "lavfi", "-i", "testsrc=s=320x180:d=1:r=30", "-c:v", "h264_nvenc", "-f", "null", "-"], { timeoutMs: 60_000, allowFail: true })).code === 0;
+    const vcodec = nvenc
+      ? ["-c:v", "h264_nvenc", "-preset", "p5", "-tune", "hq", "-rc", "vbr", "-cq", "21", "-b:v", "5M", "-maxrate", "6M", "-bufsize", "12M", "-bf", "0", "-g", "60", "-profile:v", "high"]
+      : ["-c:v", "libx264", "-preset", "faster", "-crf", "21", "-maxrate", "6M", "-bufsize", "12M", "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-threads", "6"];
+    const t0 = Date.now();
     await run("ffmpeg", ["-v", "error", "-y", "-i", P.rawMp4, "-i", P.wav, "-map", "0:v:0", "-map", "1:a:0",
       "-vf", "setpts=N/30/TB,scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p", "-fps_mode", "passthrough",
       "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
-      "-c:v", "libx264", "-preset", "faster", "-crf", "21", "-maxrate", "6M", "-bufsize", "12M", "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-threads", "6",
+      ...vcodec,
       "-af", "pan=stereo|c0=c0|c1=c0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart", P.finalMp4], { timeoutMs: 3 * 3600_000 });
+    log(`re-encode de entrega con ${nvenc ? "NVENC (GPU)" : "libx264 (CPU)"}: ${Math.round((Date.now() - t0) / 1000)} s`);
 
     await run("node", ["scripts/check_entrega.mjs", P.finalMp4], { cwd: ROOT, timeoutMs: 30 * 60_000 });
     const pts = await run("ffprobe", ["-v", "error", "-select_streams", "v", "-show_entries", "frame=pts_time", "-of", "csv=p=0", P.finalMp4], { timeoutMs: 60 * 60_000 });
@@ -47,7 +57,10 @@ export default {
     const rel = await gh(["release", "view", slug, "-R", repo], { allowFail: true, log });
     if (rel.failed) await gh(["release", "create", slug, "-R", repo, "--title", slug, "--notes", "entrega de la fábrica"], { log });
     await gh(["release", "upload", slug, P.finalMp4, "-R", repo, "--clobber"], { log, timeoutMs: 2 * 3600_000 });
-    const a = await releaseAsset(repo, slug, `${slug}.mp4`, { log });
+    // verificación por la URL pública (no gasta la API); si no da el tamaño, recién ahí la API
+    let a = await releaseAssetPublic(repo, slug, `${slug}.mp4`);
+    if (!a.size) a = await releaseAsset(repo, slug, `${slug}.mp4`, { log });
+    log(`release: ${a.size} bytes publicados · local ${size}`);
     assertMeasured("releaseBytesIguales", a.size === size ? 1 : 0, { min: 1, log });
     // re-entregas: la versión arranca DESPUÉS de la ya usada (FACTORY_V_START), si no el navegador sirve la vieja de caché
     const version = Math.max((state.get("90_deliver")?.medido?.version || 0) + 1, Number(env("FACTORY_V_START") || 1));

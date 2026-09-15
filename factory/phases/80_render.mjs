@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { run, durSec } from "../lib/exec.mjs";
 import { assertMeasured } from "../lib/gate.mjs";
-import { gh, waitRun, releaseAsset, esRateLimit } from "../lib/gh.mjs";
+import { gh, waitRun, releaseAssetPublic, esRateLimit } from "../lib/gh.mjs";
 import { withLease } from "../lib/lease.mjs";
 import { importTree } from "../lib/imports.mjs";
 import { ROOT, env } from "../lib/env.mjs";
@@ -66,7 +66,7 @@ export default {
       if (!runId) {
         for (let i = 0; ; i++) {
           try {
-            const reuse = i > 0 && (await releaseAsset(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
+            const reuse = i > 0 && (await releaseAssetPublic(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
             const r = await run("node", ["scripts/farm.mjs", slug, P.comp, String(total), String(chunks), `@${path.basename(P.assetsList)}`], {
               cwd: ROOT, timeoutMs: 3 * 3600_000, expect: /WAIT_RUN:\s*\d+/,
               env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
