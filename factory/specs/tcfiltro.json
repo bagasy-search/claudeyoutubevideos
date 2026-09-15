@@ -1,0 +1,17 @@
+{
+  "slug": "tcfiltro",
+  "canal": "taller-de-claudio",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "GUION_tcfiltro.txt",
+  "voz": {
+    "id": "claudio_definitiva"
+  },
+  "cta": {
+    "head": "Suscribite al taller",
+    "ancla": "Si esto te sirvió, suscribite"
+  },
+  "avatar": {
+    "face": "public/ref_tcfiltro_face.png"
+  }
+}

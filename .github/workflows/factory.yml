@@ -1,0 +1,26 @@
+name: factory-tests
+# CI de la FÁBRICA: pruebas de los cimientos, CONTROL POSITIVO de las compuertas (trampas plantadas)
+# y guardia anti-regresión (scripts por slug nuevos / claves quemadas).
+on:
+  push:
+    branches: [factory, main]
+    paths: ["factory/**", ".github/workflows/factory.yml"]
+  pull_request:
+    paths: ["factory/**"]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - name: pruebas + trampas
+        env: { FACTORY_LEASE_DIR: /tmp/factory_leases, FACTORY_WORK: /tmp/factory_work, FACTORY_STATE: /tmp/factory_state }
+        run: node --test factory/tests/*.test.mjs
+      - name: guardia anti-regresión
+        run: node factory/tools/guard.mjs
