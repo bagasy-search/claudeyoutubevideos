@@ -358,7 +358,7 @@ export const BEATS: any[] = [
   "kind": "clip",
   "src": "vac/broll/m029_0.mp4",
   "start": 216.73333333333332,
-  "dur": 4.233333333333333,
+  "dur": 5.666666666666667,
   "seed": 6502,
   "frames": 420
  },
@@ -366,28 +366,19 @@ export const BEATS: any[] = [
   "id": "m029_1",
   "kind": "clip",
   "src": "vac/broll/m029_1.mp4",
-  "start": 220.96666666666667,
-  "dur": 4.233333333333333,
-  "seed": 6629,
+  "start": 222.4,
+  "dur": 5.633333333333334,
+  "seed": 6672,
   "frames": 280
  },
  {
   "id": "m029_2",
   "kind": "clip",
   "src": "vac/broll/m029_2.mp4",
-  "start": 225.2,
-  "dur": 4.233333333333333,
-  "seed": 6756,
+  "start": 228.03333333333333,
+  "dur": 5.633333333333334,
+  "seed": 6841,
   "frames": 244
- },
- {
-  "id": "m029_3",
-  "kind": "clip",
-  "src": "vac/broll/m029_3.mp4",
-  "start": 229.43333333333334,
-  "dur": 4.233333333333333,
-  "seed": 6883,
-  "frames": 419
  },
  {
   "id": "m030",
