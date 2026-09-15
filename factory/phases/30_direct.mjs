@@ -26,6 +26,11 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
     { n: "p001", c: 1, e: "medium", l: Object.keys(style.lugares || {})[0] || "lugar", m: "qué muestra, en castellano", s: `${style.presentadorToken} crouching next to ... (escena en inglés, viva)`, mo: "his hand turns the object slowly, nothing else moves" },
     { n: "p001x", c: 0, e: "close", l: Object.keys(style.lugares || {})[0] || "lugar", m: "detalle", s: "close view of ...", mo: "a single drop slides down ..." },
   ], null, 1), "```", "");
+  if (style.guia?.temas?.length) {
+    L.push("## La guía del canal (lo que el CTA puede prometer)",
+      "Sólo se promete lo que ESTÁ en la guía. Si el guion menciona un remedio/receta que no está en esta lista, NO lo vendas como parte de la guía (caso castorglove: el ricino no estaba).",
+      ...style.guia.temas.map((t) => `- ${t}`), style.guia.landing ? `Landing: ${style.guia.landing}` : "", "");
+  }
   L.push(`## Lugares del estilo (\`l\`)`, ...Object.keys(style.lugares || {}).map((k) => `- \`${k}\``), "", "Si hace falta un lugar nuevo, agregalo en `factory/styles/" + spec.canal + ".json` (≥5 objetos concretos del fondo).", "");
   L.push("## Momentos", "| n | sec | dur s | dice |", "|---|---|---|---|");
   for (const m of mom) L.push(`| ${m.name} | ${secs.find((s) => m.i >= s.desde && m.i <= s.hasta)?.nombre || ""} | ${m.dur} | ${m.texto.replace(/\|/g, "/")} |`);

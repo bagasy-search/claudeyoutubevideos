@@ -28,7 +28,7 @@ export default {
     const nvenc = env("FACTORY_ENCODER") !== "x264" && (await run("ffmpeg", ["-v", "error", "-f", "lavfi", "-i", "testsrc=s=320x180:d=1:r=30", "-c:v", "h264_nvenc", "-f", "null", "-"], { timeoutMs: 60_000, allowFail: true })).code === 0;
     const vcodec = nvenc
       ? ["-c:v", "h264_nvenc", "-preset", "p5", "-tune", "hq", "-rc", "vbr", "-cq", "21", "-b:v", "5M", "-maxrate", "6M", "-bufsize", "12M", "-bf", "0", "-g", "60", "-profile:v", "high"]
-      : ["-c:v", "libx264", "-preset", "faster", "-crf", "21", "-maxrate", "6M", "-bufsize", "12M", "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-threads", "6"];
+      : ["-c:v", "libx264", "-preset", "faster", "-crf", "21", "-maxrate", "6M", "-bufsize", "12M", "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-threads", "0"];   // todos los hilos: 120 s de video 69 s → 32 s (Ryzen 7 6800H, 15-sep-2026)
     const t0 = Date.now();
     await run("ffmpeg", ["-v", "error", "-y", "-i", P.rawMp4, "-i", P.wav, "-map", "0:v:0", "-map", "1:a:0",
       "-vf", "setpts=N/30/TB,scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p", "-fps_mode", "passthrough",

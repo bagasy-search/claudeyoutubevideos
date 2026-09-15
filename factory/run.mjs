@@ -148,8 +148,14 @@ function gc(apply) {
     if (d?.status !== "done") continue;
     const P = slugPaths(slug);
     const borrables = [P.rawMp4, path.join(P.work, "png"), path.join(P.avatarDir, "parte1.mp4"), path.join(P.avatarDir, "parte1_trim.mp4"), path.join(P.avatarDir, "parte2.mp4"), P.wav16k];
-    for (const b of borrables) {
-      if (!fs.existsSync(b) || !insideSlug(slug, b)) continue;
+    // I8: restos del camino VIEJO en la raíz de D: (medido 15-sep: .h264, _entrega/_farm/_vN.mp4, chunks_*, tars partidos)
+    const legado = [];
+    try {
+      const re = new RegExp(`^(${slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(\\.h264|_v\\.h264|_v\\d*\\.h264|_(entrega|farm|farm_v\\d+|final|fix|stitched|vid|v\\d+[a-z]?|pts)\\.mp4|_concat\\.txt|_fish\\.wav)$|^chunks[_-]${slug}$|^assets-${slug}\\.tar(\\.part\\d+|\\.delta\\d*)?$`);
+      for (const f of fs.readdirSync("D:/")) if (re.test(f)) legado.push(path.join("D:/", f));
+    } catch { /* sin D: */ }
+    for (const b of [...borrables, ...legado]) {
+      if (!fs.existsSync(b) || (!insideSlug(slug, b) && !legado.includes(b))) continue;
       const size = fs.statSync(b).isDirectory() ? fs.readdirSync(b).reduce((a, f) => a + fs.statSync(path.join(b, f)).size, 0) : fs.statSync(b).size;
       total += size;
       console.log(`${apply ? "borro" : "borraría"} ${(size / 1048576).toFixed(0)} MB  ${b}`);
