@@ -13,6 +13,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import { ROOT } from "../lib/env.mjs";
 
 const ALLOW = path.join(ROOT, "factory", "tools", "legacy_allowlist.txt");
@@ -41,12 +42,19 @@ export function checkFiles(files, { allow = new Set(), read = (f) => fs.readFile
   return prob;
 }
 
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}` || process.argv[1]?.endsWith("guard.mjs")) {
+const esMain = !!process.argv[1] && path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
+if (esMain) {
   const files = execFileSync("git", ["ls-files"], { cwd: ROOT, encoding: "utf8", maxBuffer: 64 * 1024 * 1024 }).split("\n").filter(Boolean);
   if (process.argv.includes("--freeze")) {
-    const legacy = files.filter((f) => !f.startsWith("factory/") && SLUG_SCRIPT.test(f)).sort();
+    // UNIÓN: lo que ya estaba congelado + el legado del árbol local + el de las refs pedidas (--ref main --ref factory).
+    // Congelar sólo desde la rama local dejó afuera 8 scripts viejos que main ya tenía (CI rojo, 15-sep-2026).
+    const refs = process.argv.flatMap((a, i) => (a === "--ref" ? [process.argv[i + 1]] : []));
+    const deRef = (r) => execFileSync("git", ["ls-tree", "-r", "--name-only", r], { cwd: ROOT, encoding: "utf8", maxBuffer: 64 * 1024 * 1024 }).split("\n").filter(Boolean);
+    const prev = fs.existsSync(ALLOW) ? fs.readFileSync(ALLOW, "utf8").split(/\r?\n/).filter(Boolean) : [];
+    const todos = [...files, ...refs.flatMap(deRef)];
+    const legacy = [...new Set([...prev, ...todos.filter((f) => !f.startsWith("factory/") && SLUG_SCRIPT.test(f))])].sort();
     fs.writeFileSync(ALLOW, legacy.join("\n") + "\n");
-    console.log(`lista de legado congelada: ${legacy.length} scripts por slug trackeados`);
+    console.log(`lista de legado congelada: ${legacy.length} scripts por slug (unión de ${prev.length} previos + local + ${refs.join(", ") || "sin refs"})`);
     process.exit(0);
   }
   const allow = new Set(fs.existsSync(ALLOW) ? fs.readFileSync(ALLOW, "utf8").split(/\r?\n/).filter(Boolean) : []);

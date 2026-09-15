@@ -10,6 +10,7 @@ build_animales.mjs
 build_animales_beats.mjs
 build_antartida.mjs
 build_antena25.mjs
+build_artefactos_cfg.mjs
 build_assets_fly.mjs
 build_barcos.mjs
 build_barnfloor.mjs
@@ -120,9 +121,16 @@ gen_agnes_video_valeriabocaseca.mjs
 gen_agnes_video_valerianariz.mjs
 scripts/build_abuela.mjs
 scripts/build_bastida6.mjs
+scripts/build_broll_darkspots.mjs
+scripts/build_broll_extra_ns.mjs
 scripts/build_broll_greenglove.mjs
+scripts/build_broll_handsage.mjs
+scripts/build_broll_nightserum.mjs
 scripts/build_comidas.mjs
 scripts/build_comidas_v2.mjs
 scripts/build_comidas_v3.mjs
+scripts/build_darkspots_assets.mjs
 scripts/build_dulcesv2.mjs
 scripts/build_dulcesv3.mjs
+scripts/build_handsage_assets.mjs
+scripts/redibujo_cmeciclo.mjs
