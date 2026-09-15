@@ -66,6 +66,14 @@ async function runSlug(slug, { from, only } = {}) {
       if (ph.applies && !ph.applies(ctx)) { status.set(ph.id, "skipped"); state.set(ph.id, { status: "skipped" }); continue; }
       let h;
       try { h = hashInputs(ph.inputs(ctx)); } catch (e) { h = `err:${e.message}`; }
+      // ⛔⛔ (15-sep-2026) `--from X` y los imports del legado: una fase ANTERIOR a X que ya está `done` (o importada)
+      // se CONFÍA tal cual — nunca se rehace por diferencia de hash. Rehacerla re-generó la voz de tcestufa y pisó su máster.
+      const prev = state.get(ph.id);
+      const antesDeFrom = from && ids.indexOf(ph.id) < ids.indexOf(from);
+      if (prev?.status === "done" && (antesDeFrom || prev.inputsHash === "legacy-import")) {
+        status.set(ph.id, "done"); ctx.log(`✓ confiada (${antesDeFrom ? `anterior a --from ${from}` : "importada del legado"})`); continue;
+      }
+      if (antesDeFrom) { status.set(ph.id, "failed"); state.set(ph.id, { ...(prev || {}), status: prev?.status || "failed", error: `--from ${from} exige que ${ph.id} ya esté hecha (está ${prev?.status || "sin estado"}): no se rehace sola` }); ctx.log(`✗ --from ${from} pero ${ph.id} no está hecha: no la rehago`); continue; }
       if (state.isFresh(ph.id, h)) { status.set(ph.id, "done"); ctx.log(`✓ fresca (${JSON.stringify(state.get(ph.id).medido || {}).slice(0, 140)})`); continue; }
       ctx.log("▶ arranca");
       state.set(ph.id, { ...(state.get(ph.id) || {}), status: "running", inputsHash: h });

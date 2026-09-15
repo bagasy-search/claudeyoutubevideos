@@ -34,12 +34,14 @@ for (const [src, dst] of [["mom", P.mom], ["plan", P.plan], ["ventanas", P.venta
 }
 const wav = flag("--wav") || `D:/rtmp/${slug}_audio/${slug}.wav`;
 fs.mkdirSync(path.dirname(P.wav), { recursive: true });
-if (!fs.existsSync(P.wav)) { try { fs.linkSync(wav, P.wav); } catch { fs.copyFileSync(wav, P.wav); } }
+// ⛔⛔ COPIA, nunca hardlink (15-sep-2026): con hardlink, una fase que reescribió P.wav pisó el máster ORIGINAL de
+// tcestufa (mismo inodo). Los insumos del legado son de sólo lectura para la fábrica.
+if (!fs.existsSync(P.wav)) fs.copyFileSync(wav, P.wav);
 const st = new State(slug);
 const legado = { status: "done", inputsHash: "legacy-import", medido: { importado: true } };
 if (fs.existsSync(P.wav)) st.set("10_voice", legado);
 if (fs.existsSync(P.mom)) { st.set("00_preflight", legado); st.set("20_asr", legado); }
 if (fs.existsSync(P.plan)) { st.set("30_direct", legado); st.set("40_images", legado); st.set("50_agnes", legado); }
 if (fs.existsSync(P.ventanas)) st.set("55_avatar", legado);
-console.log(`importado ${slug}: ${copiados.join(", ")} · wav ${fs.existsSync(P.wav) ? "enlazado" : "FALTA"} · spec ${specFile}`);
+console.log(`importado ${slug}: ${copiados.join(", ")} · wav ${fs.existsSync(P.wav) ? "copiado (nunca hardlink)" : "FALTA"} · spec ${specFile}`);
 console.log(`siguiente (sin tocar src/): FACTORY_DRY=1 node factory/run.mjs run ${slug} --only 60_build`);
