@@ -97,11 +97,16 @@ export default {
 
     const prev = state.get("80_render");
     let runId = prev?.status !== "done" && prev?.runId ? prev.runId : null;
-    const res = await withLease("farm_slots", slug, chunks, async () => {
+    // ⛔ (15-sep-2026) otra sesión canceló el render de tcestufa al relanzar el suyo: una corrida CANCELADA se
+    // re-despacha sola (hasta 2 veces) reusando el tar ya subido del MISMO commit.
+    let reusarAssets = env("FACTORY_REUSE_ASSETS") === "1";
+    let res;
+    for (let intento = 0; ; intento++) {
+    res = await withLease("farm_slots", slug, chunks, async () => {
       if (!runId) {
         for (let i = 0; ; i++) {
           try {
-            const reuse = i > 0 && (await releaseAssetPublic(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
+            const reuse = (reusarAssets || i > 0) && (await releaseAssetPublic(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
             const r = await run("node", [path.join(ROOT, "scripts", "farm.mjs"), slug, P.comp, String(total), String(chunks), `@${path.basename(P.assetsList)}`], {
               cwd: wt, timeoutMs: 3 * 3600_000, expect: /WAIT_RUN:\s*\d+/,
               env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
@@ -120,6 +125,11 @@ export default {
       log(`run ${runId}: esperando (poll cada 5 min)`);
       return waitRun(repo, runId, { log });
     }, { log });
+      if (res.ok || res.conclusion !== "cancelled" || intento >= 2) break;
+      log(`run ${runId} CANCELADO desde afuera (otra sesión o a mano) · jobs ok ${res.jobsOk}/${res.jobsTotal} → re-despacho ${intento + 1}/2 reusando assets`);
+      runId = null; reusarAssets = true;
+      state.set("80_render", { status: "running", runId: null, cancelados: intento + 1 });
+    }
     if (!res.ok) throw new Error(`run ${runId}: ${res.conclusion} · jobs ok ${res.jobsOk} · fallidos ${res.jobsBad} de ${res.jobsTotal}`);
 
     const dir = path.dirname(P.rawMp4);
