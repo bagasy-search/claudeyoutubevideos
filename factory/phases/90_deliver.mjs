@@ -49,7 +49,8 @@ export default {
     await gh(["release", "upload", slug, P.finalMp4, "-R", repo, "--clobber"], { log, timeoutMs: 2 * 3600_000 });
     const a = await releaseAsset(repo, slug, `${slug}.mp4`, { log });
     assertMeasured("releaseBytesIguales", a.size === size ? 1 : 0, { min: 1, log });
-    const version = (state.get("90_deliver")?.medido?.version || 0) + 1;
+    // re-entregas: la versión arranca DESPUÉS de la ya usada (FACTORY_V_START), si no el navegador sirve la vieja de caché
+    const version = Math.max((state.get("90_deliver")?.medido?.version || 0) + 1, Number(env("FACTORY_V_START") || 1));
     const url = `https://github.com/${repo}/releases/download/${slug}/${slug}.mp4?v=${version}`;
 
     let bagasy = "no (sin spec.bagasy o FACTORY_DELIVER≠1)";

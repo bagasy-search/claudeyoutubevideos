@@ -1,9 +1,9 @@
 {
-  "slug": "tcfiltro",
+  "slug": "tcestufa",
   "canal": "taller-de-claudio",
   "modo": "avatar",
   "idioma": "es",
-  "guion": "GUION_tcfiltro.txt",
+  "guion": "GUION_tcestufa.txt",
   "voz": {
     "id": "claudio_definitiva"
   },
@@ -12,11 +12,11 @@
     "ancla": "Si esto te sirvió, suscribite"
   },
   "avatar": {
-    "face": "public/ref_tcfiltro_face.png"
+    "face": "public/ref_tcestufa_face.png"
   },
   "overrides": {
     "vlog": {
-      "colaFotoS": 3.5
+      "colaFotoS": 3
     }
   }
 }

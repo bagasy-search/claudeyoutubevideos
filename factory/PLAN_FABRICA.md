@@ -145,6 +145,19 @@ Para cada fase: extraer la versión SANA (fuente: scripts usados en **fa70estudi
 
 ---
 
+### FASE I — Palancas medidas por 5 chats de producción (15-sep-2026, farinon/faojos60/teamind60/turkeyneck y otros)
+Consenso de los 5: el cómputo es corto; el reloj se va en (1) avatar en serie, (2) farm + GitHub compartidos, (3) disco, (4) Claude en el medio. Medidos: avatar 38–155 min (RunPod ~8–10× tiempo real), farm 40–60 min con 12–30 chunks por cola, 15–40 min trabados por 403 de GitHub, ASR OpenAI 15 min con concurrencia 5, re-encode local 10–13 min, arranque leyendo skills 12–60 min.
+- [ ] **I1. Avatar arranca apenas termina Fish**, sin esperar ASR ni montaje (ventanas desde el manifest de bloques de Fish; el ASR sólo afina anclajes). Ahorro medido ~20 min. En la fábrica: 55_avatar hoy depende de 30_direct → separar "ventanas por plan" de "ventanas previas".
+- [ ] **I2. ⏸ DECISIÓN DEL CREADOR — avatar en paralelo.** (a) 3–4 /run simultáneos: 38–97 min → 10–15 min, US$0,75–1,50 en vez de US$0,25, contradice "un solo /run"; (b) endpoint serverless PROPIO en RunPod (fork parcheado, steps 2, fp8, varios workers): rápido y probablemente más barato, requiere deploy desde la consola de RunPod (lo hace el creador).
+- [ ] **I3. Assets fuera de GitHub Releases → R2/S3** (ya hay R2): el endpoint de releases es el que se satura con 5 renders; tar cacheado por contenido entre videos. Desbloquea el paralelismo real.
+- [ ] **I4. Capacidad de render:** multicuenta (`reference_renderbatch_multicuenta`, token `.gh_token2` vencido) o runners self-hosted/GPU; nunca bajar a 12–15 chunks por cola. Poll por URL pública del release en vez de la API de Actions; un token por trabajador.
+- [ ] **I5. Re-encode de entrega fuera del PC** (en el runner o con nvenc): 10–13 min → ~2 min.
+- [ ] **I6. Preset por canal + bibliotecas reutilizables:** voz, cara, CTA, portada, QR, índice de la guía ya extraído (el caso "salvia/ricino no está en la guía" se caza al planificar), stock y fotos del presentador ya auditados por tema. Arranque 12–60 min → ~1 min; Pexels ~1 h → ~0.
+- [ ] **I7. Concurrencia:** ASR (si cae a OpenAI) de 5 a 20–30; Batch de imágenes del presentador sale apenas está el guion (no depende de la voz).
+- [ ] **I8. Limpieza automática post-entrega** (tars, chunks, `.h264`, copias `_entrega`/`_final`/`vN`) — el 15-sep había 132 GB regenerables sólo en lo relevado; `factory/tools/plan_limpieza.mjs` es la base (el borrado lo ejecuta el creador).
+- ⛔ Incidentes a no repetir, reportados por esos chats: una sesión **borró imágenes de fapiel60/farinon** podando disco; otra **generó el avatar COMPLETO (18 min) en vez de sólo ventanas**; otra clonó `build_<slug>.mjs` + `sed` de rutas. Todo eso lo impide la fábrica (aislamiento por slug, 55_avatar sólo ventanas, guard CI).
+Estimación consensuada: 1 video ~25–60 min (5–6×) con I1+I3+I5+I6+I7; 10× y N sesiones sin chocar requieren además I2 e I4.
+
 ## §5. Orden de ejecución y reglas de trabajo
 
 1. Orden: **A → D1–D3 → C (C6 y C7 primero, son los que más cuestan) → B → E → H1 → F → H2–H4.** G en cuanto haya herramienta.
