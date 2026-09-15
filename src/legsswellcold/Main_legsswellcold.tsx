@@ -9,7 +9,8 @@ import { DatoImpacto } from "../_fed6/VideoEdit/scenes/DatoImpacto";
 import { ListaFlotante } from "../_fed6/VideoEdit/scenes/ListaFlotante";
 import { MitoRevelado } from "../_fed6/VideoEdit/scenes/MitoRevelado";
 import { FreezeZoom } from "../_fed6/VideoEdit/scenes/FreezeZoom";
-import { LineaTiempoPiel } from "../_fed6/VideoEdit/scenes/LineaTiempoPiel";
+// clon local: el original trae "Línea de tiempo" / "Hitos" escritos a mano, sin prop (canal EN)
+import { LineaTiempoPiel } from "./LineaTiempoEN";
 
 // ── CANAL "Dr. Federer — The Nightly Remedy" (EN) · legsswellcold ─────────────
 // Audio = máster Fish (voz del canal). Avatar = InfiniteTalk/RunPod SÓLO en las ventanas visibles
