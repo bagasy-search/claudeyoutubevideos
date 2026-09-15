@@ -56,7 +56,7 @@ moments.sort((a, b) => a.t - b.t);
 
 const inWin = (t) => WIN.find((w) => t >= w.start && t < w.end - 0.05);
 
-const CAP_OUT = 9.5, CAP_IN = [3.4, 4.6, 3.8, 5.2, 4.2];
+const CAP_OUT = 10.5, CAP_IN = [3.6, 5.4, 4.0, 6.2, 4.6];
 const cues = [];
 for (let i = 0; i < moments.length; i++) {
   const m = moments[i], next = i + 1 < moments.length ? moments[i + 1].t : VIDEO_END;
@@ -106,7 +106,7 @@ for (let i = 0; i < fused.length; i++) {
   fused[i].f0 = F(fused[i].start);
   fused[i].f1 = i + 1 < fused.length ? F(fused[i + 1].start) : F(VIDEO_END);
 }
-const LONG = F(7.5), PART = [5.4, 4.1, 6.3, 3.6, 5.0, 4.6];
+const LONG = F(9.0), PART = [6.4, 4.3, 7.6, 3.9, 5.9, 5.3];
 const altOf = (b) => {
   if (b.kind === "clip" && has(`cog/img/${b.n}.jpg`)) return { kind: "foto", src: `cog/img/${b.n}.jpg`, n: b.n };
   if (b.kind === "foto" && has(`cog/clips/${b.n}.mp4`)) return { kind: "clip", src: `cog/clips/${b.n}.mp4`, n: b.n };
