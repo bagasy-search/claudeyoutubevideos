@@ -41,8 +41,8 @@ export const MainRowemole: React.FC = () => (
     {BASE.map((b: any, i: number) => (
       <Sequence key={`b${i}`} from={b.from} durationInFrames={b.dur} premountFor={30}>
         {b.kind === "avatar" ? <AvatarWin src={AVATAR_REEL} trimFrames={b.trim} seed={b.seed} />
-          : b.kind === "clip" ? <Clip src={b.src} seed={b.seed} frames={b.frames} last={b.last} />
-          : <Foto src={b.src} seed={b.seed} />}
+          : b.kind === "clip" ? <Clip src={b.src} seed={b.seed} frames={b.frames} last={b.last} kbN={b.kbN} />
+          : <Foto src={b.src} seed={b.seed} cont={b.cont} />}
       </Sequence>
     ))}
 

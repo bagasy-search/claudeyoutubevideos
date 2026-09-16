@@ -41,10 +41,11 @@ export const kenBurns = (seed: number, frame: number, n: number, fps: number, ki
 
 const cover: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover" };
 
-export const Foto: React.FC<{ src: string; seed: number }> = ({ src, seed }) => {
+export const Foto: React.FC<{ src: string; seed: number; cont?: { seed: number; off: number; n: number } }> = ({ src, seed, cont }) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
-  const kb = kenBurns(seed, frame, durationInFrames, fps, "foto");
+  // `cont`: último cuadro congelado de un clip → sigue SU curva de Ken-Burns (mismo plano, sin salto)
+  const kb = cont ? kenBurns(cont.seed, frame + cont.off, cont.n, fps, "clip") : kenBurns(seed, frame, durationInFrames, fps, "foto");
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0E1D23" }}>
       <Img src={staticFile(src)} style={{ ...cover, transform: kb.transform, transformOrigin: kb.transformOrigin }} />
@@ -52,10 +53,10 @@ export const Foto: React.FC<{ src: string; seed: number }> = ({ src, seed }) => 
   );
 };
 
-export const Clip: React.FC<{ src: string; seed: number; frames: number; last?: string }> = ({ src, seed, frames, last }) => {
+export const Clip: React.FC<{ src: string; seed: number; frames: number; last?: string; kbN?: number }> = ({ src, seed, frames, last, kbN }) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps } = useVideoConfig();
-  const kb = kenBurns(seed, frame, durationInFrames, fps, "clip");
+  const kb = kenBurns(seed, frame, kbN ?? durationInFrames, fps, "clip");
   // ⛔ camino único agnes: el clip NUNCA se repite (sin <Loop>). Si el plano dura más que el archivo,
   //    se sostiene su ÚLTIMO cuadro (jpg extraído por el build).
   const cuandoTermina = frames > 1 && durationInFrames > frames && last;
