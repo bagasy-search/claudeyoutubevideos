@@ -124,7 +124,12 @@ List ONLY clear problems a viewer would notice: a person or feet/legs that were 
 Answer ONLY JSON: {"suspect": true|false, "hint": "<max 10 words, empty if none>"}`;
 
 async function medir(n) {
-  const clip = clipOf(n), it = info[n], st = stamp(clip);
+  const clip = clipOf(n), it = info[n];
+  // Una compuerta NO se cae: informa. Antes `stamp()` tiraba ENOENT en el primer clip que
+  // faltara y mataba la corrida entera, asi que en vez de "faltan 46" salia un stack de fs.statSync
+  // (medido en cmeamazon: 264 de 310 generados, se cayo en p083x).
+  if (!fs.existsSync(clip)) return { size: 0, mtime: 0, dur: 0, auto: "clip inexistente", hint: "" };
+  const st = stamp(clip);
   const r = { ...st, auto: null, hint: "" };
   let fps = "", dur = 0;
   try { fps = probe(["-select_streams", "v", "-show_entries", "stream=r_frame_rate", "-of", "csv=p=0", clip]); dur = +probe(["-show_entries", "format=duration", "-of", "csv=p=0", clip]); } catch {}
