@@ -50,7 +50,7 @@ export const RowePresenter: React.FC<{
   const bellK = mode === "signoff" ? ramp(frame, 60, 90) : 0;
   const bellRot = mode === "signoff" && frame > 60 && frame < 96 ? Math.sin((frame - 60) * 0.9) * 18 * (1 - bellK) : 0;
 
-  const nameStyle: React.CSSProperties = { fontFamily: F_DISPLAY, fontSize: 92, fontWeight: 700, letterSpacing: 1, whiteSpace: "nowrap", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", lineHeight: 1.05 };
+  const nameStyle: React.CSSProperties = { fontFamily: F_DISPLAY, fontSize: 72, fontWeight: 700, letterSpacing: 1, whiteSpace: "nowrap", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", lineHeight: 1.05 };
 
   return (
     <AbsoluteFill style={{ opacity: 1 - out, filter: out > 0.01 ? `blur(${(out * 12).toFixed(1)}px)` : undefined, transform: `scale(${(1 + out * 0.05).toFixed(4)})` }}>
