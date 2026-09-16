@@ -452,6 +452,7 @@ img/rfchestrub/rf_sum7.jpg
 img/rfchestrub/rf_swollen_lids.jpg
 img/rfchestrub/rf_toothpaste_spot.jpg
 img/rfchestrub/rf_watery_winter.jpg
+qr_rfchestrub.png
 rfchestrub.m4a
 rfchestrub_avatar.mp4
 sfx/cam_zoom_punch.mp3
