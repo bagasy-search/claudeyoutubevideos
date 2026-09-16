@@ -10,8 +10,8 @@
 //      archivos del video (src/<slug>/** e src/index_<slug>.tsx). USA UN INDICE TEMPORAL
 //      (GIT_INDEX_FILE) => NO toca el índice ni el HEAD compartido => cero choque entre sesiones.
 //      (El default del farm sincroniza molino-v1, que con 5-8 sesiones se pisan el código.)
-//   4) CHUNKS = 60 / (renders activos + 1): reparte los 60 slots de GitHub Team entre los videos
-//      en curso, así corren EN PARALELO en vez de en fila (el candado del farm serializa 60-chunk).
+//   4) CHUNKS = FARM_SLOTS / (renders activos + 1), tope 60 por video (scripts/farm_slots.mjs):
+//      reparte los slots del plan entre los videos en curso, así corren EN PARALELO en vez de en fila.
 //   5) WORKTREE aislado en D:\rtmp\wt-<slug> con junctions a public/ y node_modules (via
 //      safe_junction.ps1, que nunca borra el target real), y lanza el farm ahí (HEAD==<slug>-render,
 //      así pasa el pre-vuelo). No modifica farm.mjs: lo ENVUELVE.
@@ -19,6 +19,7 @@ import { execSync, spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import { chunksPorVideo } from "./farm_slots.mjs";
 
 const [slug, comp, total, pref] = process.argv.slice(2);
 if (!slug || !comp || !total) {
@@ -73,7 +74,7 @@ try { fs.rmSync(idx, { force: true }); } catch {}
 sh(`git push -f origin ${slug}-render`);
 log(`  rama ${slug}-render = ${commit.slice(0, 8)} (índice compartido intacto)`);
 
-// ---- 4) CHUNKS = 60 / (renders activos + 1) ----
+// ---- 4) CHUNKS = FARM_SLOTS / (renders activos + 1), tope 60 por video ----
 let activos = 0;
 try {
   const runs = JSON.parse(shq(`gh run list --limit 40 --json status,headBranch`) || "[]");
@@ -81,7 +82,7 @@ try {
   activos = set.size;
 } catch {}
 const N = activos + 1;
-const chunks = Math.max(8, Math.min(60, Math.floor(60 / N)));
+const chunks = chunksPorVideo(activos, { piso: 8 });
 log(`  renders activos: ${activos} -> N=${N} -> chunks=${chunks}`);
 
 // ---- 5) WORKTREE + junctions + farm ----

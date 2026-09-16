@@ -21,6 +21,7 @@ import { execSync, execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import { FARM_SLOTS, chunksPorVideo } from "./farm_slots.mjs";
 
 // CHUNKS por defecto = 60. Era 20 porque ese es el tope de jobs concurrentes de una cuenta free, y
 // pasarse significaba una 2ª tanda con casi todos los slots ociosos. Desde jul 2026 el repo vive en
@@ -42,13 +43,13 @@ const out = (c) => execSync(c, { encoding: "utf8" }).trim();
 const only = process.env.ONLY_CHUNKS || ""; // re-render PARCIAL: solo estos chunks (reusa el resto; assets ya subidos)
 const reuseAssets = process.env.REUSE_ASSETS === "1"; // full rerender with an already validated release
 
-// ── AUTO-REPARTO DE LOS 60 SLOTS ENTRE VIDEOS ────────────────────────────────────────────────
-// La cuenta Team tiene 60 jobs concurrentes: es un TECHO DURO del plan (no sube gratis). Un render
-// de 60 chunks se lleva los 60 slots él solo, así que al lanzar VARIOS videos a la vez cada uno pide
-// su tanda, GitHub encola el resto y los videos se traban entre sí — y cada chunk encolado igual va a
-// rebajar el tarball de assets ENTERO (~600 MB) cuando le toque, así que partir de más también gasta
-// más. Acá SOLO BAJAMOS los chunks (nunca los subimos) y solo si hay OTROS videos en curso: repartimos
-// 60 entre todos (este incluido), con piso de 12 (menos arriesga el timeout de 90' por chunk en un
+// ── AUTO-REPARTO DE LOS SLOTS ENTRE VIDEOS ───────────────────────────────────────────────────
+// El plan tiene un TECHO DURO de jobs concurrentes (FARM_SLOTS en scripts/farm_slots.mjs: Team eran 60,
+// Enterprise 180→360 y subiendo). Si los videos en curso piden más que eso entre todos, GitHub encola el
+// resto y los videos se traban entre sí — y cada chunk encolado igual va a rebajar el tarball de assets
+// ENTERO (~600 MB) cuando le toque, así que partir de más también gasta más. Acá SOLO BAJAMOS los chunks
+// (nunca los subimos) y solo si hay OTROS videos en curso: repartimos FARM_SLOTS entre todos (este
+// incluido), sin pasar de 60 por video, con piso de 12 (menos arriesga el timeout de 90' por chunk en un
 // video largo). El número que pasás a mano queda como TECHO. Desactivar: FARM_FIXED_CHUNKS=1.
 if (!process.env.FARM_FIXED_CHUNKS && !only) {
   try {
@@ -56,9 +57,9 @@ if (!process.env.FARM_FIXED_CHUNKS && !only) {
       .filter((r) => r.status !== "completed" && r.headBranch && r.headBranch !== `molino-${slug}`);
     const otros = new Set(runs.map((r) => r.headBranch)).size;
     if (otros > 0) {
-      const reparto = Math.max(12, Math.round(60 / (otros + 1)));
+      const reparto = chunksPorVideo(otros);
       if (reparto < Number(chunks)) {
-        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de 60 slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
+        console.log(`auto-reparto: ${otros} otro(s) video(s) en curso → bajo de ${chunks} a ${reparto} chunks para no trabar la cola de ${FARM_SLOTS} slots (FARM_FIXED_CHUNKS=1 lo desactiva)`);
         chunks = String(reparto);
       }
     }

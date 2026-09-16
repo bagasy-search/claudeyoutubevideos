@@ -18,7 +18,7 @@ export const CAPACIDAD = {
   runpod: () => Number(env("FACTORY_CAP_RUNPOD") || 4),
   openai_batch: () => Number(env("FACTORY_CAP_OPENAI") || 4),
   fish: () => Number(env("FACTORY_CAP_FISH") || 3),
-  farm_slots: () => Number(env("FACTORY_CAP_FARM") || 60),
+  farm_slots: () => Number(env("FACTORY_CAP_FARM") || env("FARM_SLOTS") || 360), // Enterprise: 180→360 (16-sep-2026); ver scripts/farm_slots.mjs
   modal: () => Number(env("FACTORY_CAP_MODAL") || 4),
 };
 
