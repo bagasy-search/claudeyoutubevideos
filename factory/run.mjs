@@ -205,6 +205,24 @@ try {
   if (!cmd || cmd === "help" || cmd === "--help") { console.log(HELP); console.log("fases: " + PHASE_FILES.join(" → ")); process.exit(0); }
   if (cmd === "run") process.exit(await runSlug(args[1], { from: flag("--from"), only: flag("--only") }));
   if (cmd === "status") { printStatus(args[1]); process.exit(0); }
+  if (cmd === "reset") {
+    // Rehacer UNA fase sin arrastrar las de atrás. `--only` respeta el hash (no rehace nada) y
+    // `--from` resetea todo lo que viene después, que con el avatar corriendo en paralelo no sirve.
+    // Antes de esto había que borrar el json de estado a mano.
+    const [, slug, fase] = args;
+    if (!slug || !fase) { console.error("uso: node factory/run.mjs reset <slug> <fase> - fases: " + PHASE_FILES.join(" ")); process.exit(1); }
+    if (!PHASE_FILES.includes(fase)) { console.error(`fase desconocida "${fase}" - fases: ` + PHASE_FILES.join(" ")); process.exit(1); }
+    const st = new State(slug);
+    const prev = st.get(fase);
+    if (!prev) { console.log(`${slug}/${fase} ya estaba sin estado: nada que resetear`); process.exit(0); }
+    if (prev.status === "running" && !args.includes("--force")) {
+      console.error(`${slug}/${fase} está RUNNING: resetearla ahora deja dos corridas pisándose. Esperá a que termine, o --force si sabés que el proceso está muerto.`);
+      process.exit(1);
+    }
+    st.reset(fase);
+    console.log(`${slug}/${fase} reseteada (estaba ${prev.status}). Se rehace en la próxima corrida: node factory/run.mjs run ${slug}`);
+    process.exit(0);
+  }
   if (cmd === "new") { nuevo(args[1]); process.exit(0); }
   if (cmd === "queue") { if (args[1] === "add") qAdd(args[2]); else for (const q of qList()) console.log(`${q.slug.padEnd(20)} ${q.estado}`); process.exit(0); }
   if (cmd === "worker") { await worker(Number(flag("--n") || 3)); process.exit(0); }
