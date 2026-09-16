@@ -112,6 +112,8 @@ export default {
     log(`ventanas ${W.length} · visibles ${reelSec.toFixed(1)} s de ${TOT.toFixed(1)} s (${((100 * reelSec) / TOT).toFixed(1)} %)`);
 
     // 2. RunPod: un job; cola sólo si vuelve corto
+    const TOL_CORTE_SEC = 2 / 30 + 0.02;   // lo que tolera el cortador de ventanas (abajo)
+    const MAX_PAD_SEC = 0.5;               // por encima de esto NO se clona: se pide la cola de verdad
     const face = path.join(A, "face.jpg");
     await run("ffmpeg", ["-v", "error", "-y", "-i", spec.avatar.face, "-q:v", "2", "-frames:v", "1", "-update", "1", face], { timeoutMs: 60_000 });
     const prompt = spec.avatar.prompt || style.avatarPrompt || "A person speaks naturally to the camera, natural head movement, realistic lighting";
@@ -124,7 +126,7 @@ export default {
         if (!fs.existsSync(p1)) { const r = await runpodJob({ slug, parte: "parte1", face, audio: reelWav, prompt, jobsFile, outMp4: p1, log }); costo += r.costo || 0; }
         jobs++;
         const d1 = await durSec(p1);
-        if (d1 >= reelSec - 1.5) { fs.copyFileSync(p1, reelMp4); return; }
+        if (d1 >= reelSec - MAX_PAD_SEC) { fs.copyFileSync(p1, reelMp4); return; }
         const corte = Math.max(...W.map((w) => w.reel_off).filter((o) => o <= d1 - 0.3));
         if (!(corte > 0)) throw new Error(`el job 1 volvió con ${d1.toFixed(1)} s y no hay borde de ventana antes: revisar`);
         log(`job 1 volvió corto (${d1.toFixed(1)} s de ${reelSec.toFixed(1)} s, cap RunPod) → 2º job SÓLO con la cola desde ${corte} s`);
@@ -136,7 +138,25 @@ export default {
         await run("ffmpeg", ["-v", "error", "-y", "-i", p1t, "-i", p2, "-filter_complex", "[0:v][1:v]concat=n=2:v=1:a=0[v]", "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", reelMp4], { timeoutMs: 1_800_000 });
       }, { log });
     }
+    // ⛔ BANDA MUERTA (medida en cmealter): el disparador del 2º /run y el gate del reel toleraban
+    // 1,5 s, pero el cortador de ventanas sólo 0,087 s. Un faltante entre esos dos números pasaba los
+    // dos chequeos del reel y DESPUÉS rompía la última ventana, con la rama de la cola inalcanzable.
+    // Ahora: > MAX_PAD_SEC pide la cola de verdad (arriba); entre la tolerancia del cortador y ese
+    // umbral se clona el último cuadro, que sólo congela el final de la ÚLTIMA ventana y no corre el
+    // lipsync de nada (tpad agrega, no desplaza).
+    {
+      const d = await durSec(reelMp4);
+      const falta = reelSec - d;
+      if (falta > TOL_CORTE_SEC && falta <= MAX_PAD_SEC) {
+        const pad = path.join(A, "reel_pad.mp4");
+        log(`reel ${falta.toFixed(3)} s corto (bajo el umbral de cola): clono el último cuadro ${Math.round(falta * 30)} cuadros`);
+        await run("ffmpeg", ["-v", "error", "-y", "-i", reelMp4, "-vf", `tpad=stop_mode=clone:stop_duration=${(falta + 0.04).toFixed(3)}`,
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-an", pad], { timeoutMs: 1_800_000 });
+        fs.renameSync(pad, reelMp4);
+      }
+    }
     const dReel = await durSec(reelMp4);
+    assertMeasured("reelFaltanteSec", +Math.max(0, reelSec - dReel).toFixed(3), { max: TOL_CORTE_SEC, allowZero: true, log });
     assertMeasured("reelDesvioSec", +Math.abs(dReel - reelSec).toFixed(2), { max: 1.5, allowZero: true, log });
 
     // 3. sincro (sobre el reel CRUDO vs su wav, antes de montar)
