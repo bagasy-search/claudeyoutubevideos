@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { Foto, Clip, AvatarWin } from "./Piezas";
-import { BASE, COMPS, TOTAL_FRAMES } from "./cues.gen";
+import { BASE, COMPS, SFX, TOTAL_FRAMES } from "./cues.gen";
 import { LowerThird } from "../_fed6/VideoEdit/scenes/LowerThird";
 import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
 import { ErrorStinger } from "../_fed6/VideoEdit/scenes/ErrorStinger";
@@ -15,6 +15,14 @@ import { MallaColageno } from "../_fed6/VideoEdit/scenes/MallaColageno";
 import { LineaTiempoPiel } from "./LineaTiempoEN";
 import { PruebaPliegueEN } from "./PruebaPliegueEN";
 import { SplitCompareEN } from "./SplitCompareEN";
+import { PhotoTriptych } from "../_fed6/VideoEdit/scenes/PhotoTriptych";
+import { RowePresenter } from "./RowePresenter";
+import { RoweCarousel } from "./RoweCarousel";
+import { MythTruth } from "./MythTruth";
+import { RedFlags } from "./RedFlags";
+import { RoutineSwap } from "./RoutineSwap";
+import { FallTease } from "./FallTease";
+import { SelfCheck } from "./SelfCheck";
 
 // ── CANAL "Dr. Emmett Rowe" (EN) · rowepinch ────────────────────────────────
 // Audio = máster Fish (voz `rowe`). Avatar = InfiniteTalk/RunPod SÓLO en las ventanas visibles
@@ -39,15 +47,16 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "pliegue" ? <PruebaPliegueEN durationInFrames={d} leftImage={b.leftImage} rightImage={b.rightImage} leftLabel={b.leftLabel} rightLabel={b.rightLabel}
       leftSeconds={b.leftSeconds} rightSeconds={b.rightSeconds} verdict={b.verdict} leftCaption={b.leftCaption} rightCaption={b.rightCaption} />
   : b.kind === "split" ? <SplitCompareEN durationInFrames={d} left={b.left} right={b.right} eyebrow={b.eyebrow} title={b.title} winner={b.winner} unit={b.unit} />
+  : b.kind === "presenter" ? <RowePresenter durationInFrames={d} name="Dr. Emmett Rowe" mode={b.mode} img={b.img} bg={b.bg} kicker={b.kicker} role={b.role} cta="SUBSCRIBE" />
+  : b.kind === "carousel" ? <RoweCarousel durationInFrames={d} mode={b.mode} cards={b.cards} reveals={b.reveals} offset={b.offset ?? 0} kicker={b.kicker} title={b.title} bed={b.bed} />
+  : b.kind === "myth2" ? <MythTruth durationInFrames={d} kicker={b.kicker} myth={b.myth} truth={b.truth} mythImg={b.mythImg} truthImg={b.truthImg} bed={b.bed} hitAt={b.hitAt} truthAt={b.truthAt} />
+  : b.kind === "redflags" ? <RedFlags durationInFrames={d} kicker={b.kicker} img={b.img} bed={b.bed} flags={b.flags} stamp={b.stamp} stampAt={b.stampAt} />
+  : b.kind === "routineswap" ? <RoutineSwap durationInFrames={d} mode={b.mode} kicker={b.kicker} title={b.title} items={b.items} bed={b.bed} chip={b.chip} chipAt={b.chipAt} />
+  : b.kind === "falltease" ? <FallTease durationInFrames={d} kicker={b.kicker} title={b.title} img={b.img} sideL={b.sideL} sideR={b.sideR} bed={b.bed} hitAt={b.hitAt} />
+  : b.kind === "selfcheck" ? <SelfCheck durationInFrames={d} kicker={b.kicker} questions={b.questions} offset={b.offset ?? 0} bed={b.bed} />
+  : b.kind === "triptych" ? <PhotoTriptych durationInFrames={d} items={b.items} title={b.title} eyebrow={b.eyebrow ?? "BEFORE YOU PANIC"} bed={b.bed} />
   : null;
 
-// SFX puntuales (bajos) para los componentes que no traen los suyos
-const SFX_IN: Record<string, [string, number]> = {
-  lowerthird: ["sfx/sfx_pop.mp3", 0.22], frasecinetica: ["sfx/sfx_text_thud.mp3", 0.2], datoimpacto: ["sfx/number_slam.mp3", 0.24],
-  checklist: ["sfx/sfx_whoosh_soft.mp3", 0.22], mitoverdad: ["sfx/sfx_whoosh_soft.mp3", 0.22], lineatiempo: ["sfx/line_draw.mp3", 0.2],
-  freezezoom: ["sfx/cam_zoom_punch.mp3", 0.22], carrusel: ["sfx/sfx_whoosh_soft.mp3", 0.22], malla: ["sfx/section_swell.mp3", 0.18],
-  pliegue: ["sfx/sfx_whoosh_soft.mp3", 0.22],
-};
 
 export const MainRowepinch: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#0E1D23" }}>
@@ -64,7 +73,12 @@ export const MainRowepinch: React.FC = () => (
     {COMPS.map((c: any, i: number) => (
       <Sequence key={`c${i}`} from={c.from} durationInFrames={c.dur} layout="none">
         {renderComp(c, c.dur)}
-        {SFX_IN[c.kind] ? <Audio src={staticFile(SFX_IN[c.kind][0])} volume={SFX_IN[c.kind][1]} /> : null}
+      </Sequence>
+    ))}
+
+    {SFX.map((s: any, k: number) => (
+      <Sequence key={`sfx${k}`} from={s.from} durationInFrames={75} layout="none">
+        <Audio src={staticFile(s.src)} volume={s.vol} />
       </Sequence>
     ))}
   </AbsoluteFill>
