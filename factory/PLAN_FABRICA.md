@@ -37,7 +37,7 @@ Estas siguen mandando y la fábrica las CODIFICA, no las relaja:
 - ASR = Modal por defecto; OpenAI whisper-1 sólo respaldo.
 - Cada plano = lo que se dice en ese segundo · cobertura ≥90% · ≥25% metraje REAL · prompts de escena VIVA + ultradetalle (dirección manda).
 - Clips agnes sólo por `scripts/agnes_i2v.mjs` + `agnes_qc.mjs --fix`; nunca repetir un clip; nunca pedir "respirar".
-- Ruteo imagen: sin presentador→Klein; con presentador→gpt-image low `/edits` por Batch.
+- Imagen: **gpt-image-2 para TODO** (decisión del creador 16-sep-2026, Klein fuera) — sin presentador `/generations`, con presentador `/edits` + crop de cara 128×192; siempre low + 1088x608 + Batch. La calidad sale del prompt: CONTEXTO de ese segundo + DETALLE + CREATIVIDAD.
 - MP4 del farm no se entrega crudo (reencode salvo que ya sea `tv`); pts==dts.
 - Nombre personal nunca visible; no subir a YouTube hasta la FINAL; avisar proactivo al terminar.
 - No borrar assets pagos. Finales → D:.
@@ -64,7 +64,7 @@ video2/factory/
     10_voice.mjs          # Fish bloques ≤1200 + ASR por bloque, detector de loops
     20_asr.mjs            # Modal; fallback OpenAI con args correctos
     30_direct.mjs         # UNA llamada Claude → beatsheet.json validado (ver §5)
-    40_images.mjs         # Klein / gpt-image Batch con fetch en stream
+    40_images.mjs         # gpt-image Batch (edits/generations) con fetch en stream
     50_agnes.mjs          # i2v + QC + sello
     55_avatar.mjs         # RunPod ventanas visibles, auto-cola si <audio
     60_build.mjs          # beatsheet → props Remotion (UN build genérico por estilo)
@@ -104,7 +104,7 @@ Cada ítem tiene **Criterio de aceptación (CA)**. No se marca sin cumplir el CA
 Para cada fase: extraer la versión SANA (fuente: scripts usados en **fa70estudios** y **tcfiltro**), no la última copia.
 - [~] **C1. 10_voice.** Fish bloques ≤1200 chars; ASR por bloque; detector de loops (n-gramas repetidos ≥3) → regenera sólo ese bloque; concat a wav máster único. CA: guion de tcbriquetas sale sin loops en una pasada. — compuerta blockChars ≤1200, loudnorm 2 pasadas (lee stderr), detector de bucles por n-gramas en 20_asr (test). ⏳ regeneración automática SÓLO del bloque con bucle: falta; CA sin medir (paga).
 - [~] **C2. 20_asr.** Modal default; fallback OpenAI con chunk=600 s fijo en código (no por arg posicional). CA: timestamps por palabra, mediana error ≤~80 ms vs referencia. — implementado + alineación global genérica (`factory/py/align.py`); momentos portados dan **idénticos** al legado (tcfiltro 281/281, tcbriquetas 246/246). ⏳ CA de precisión sin medir.
-- [~] **C3. 40_images.** Ruteo Klein/gpt-image automático por plano (flag `presentador` del beatsheet); Batch con fetch en STREAM (sin crash a 140+); filtro "gente inventada" y "objeto equivocado" (tcestufa anafe) por visión barata con muestreo. CA: 150 imgs fetch sin crash; reporte de rechazos con números. — `lib/openai_batch.mjs` (edits+generations, STREAM, batch ids persistidos, sin crédito → blocked). ⛔ Klein y filtro de visión: faltan.
+- [~] **C3. 40_images.** Endpoint gpt-image automático por plano (flag `presentador` del beatsheet: `/edits` con crop o `/generations`; Klein fuera desde 16-sep); Batch con fetch en STREAM (sin crash a 140+); filtro "gente inventada" y "objeto equivocado" (tcestufa anafe) por visión barata con muestreo. CA: 150 imgs fetch sin crash; reporte de rechazos con números. — `lib/openai_batch.mjs` (edits+generations, STREAM, batch ids persistidos, sin crédito → blocked). ⛔ Klein y filtro de visión: faltan.
 - [~] **C4. 50_agnes.** Envolver `agnes_i2v.mjs` + `agnes_qc.mjs --fix`; regex de reintento correcta (fcspellizco tiraba 179/195); "ya estaban N" sólo cuenta clips con sello válido; throughput esperado ~7 clips/min como alarma. CA: re-run no duplica clips; 429 → espera lease, no falla. — envuelve el camino único, lease agnes, `--fix` automático, revisión a ojo → `needs` con comando exacto; cuenta aprobados por sello. ⏳ CA sin medir.
 - [~] **C5. 55_avatar.** RunPod: ventanas visibles del beatsheet; UN /run; si mp4 < audio → 2º /run con la cola exacta; `executionTimeout` alto; inputs hospedados en Supabase/R2 (nunca GitHub); **sin pad** de ventanas; compuerta de sync (`avatar_sync_gate.mjs`) con offset medido. CA: farinon (792 s) resuelve en ≤2 jobs y offset |≤40 ms| en todas las ventanas. — implementado (1 job; cola cortada en borde de ventana; Supabase; job ids persistidos; sync corr ≥0,35 y desfase ≤40 ms; clip por ventana ±2 cuadros). Ventanas portadas = legado tcfiltro (Δ 0,000 s). ⏳ CA farinon sin medir (paga).
 - [x] **C6. 60_build GENÉRICO.** Un solo build por estilo que lee beatsheet+style. Fix del bug tcestufa/tcbriquetas: **ningún plano puede solaparse con ventana de avatar visible** (assert). Respeta máx 3 s/img, ≤12 palabras por componente, staggers relativos a duración. CA: tcbriquetas reconstruido desde spec da 0 s de avatar tapado. — ✅ `lib/vlogplan.mjs` + `lib/timeline.mjs`: tcbriquetas desde spec (DRY) = 315 cues, 37.612 cuadros, **0 s tapado**, pasa `tsc`; tcfiltro con sus assets = 0 s (entregado: 73 s). ⛔ Sólo montaje vlog-crudo (componentes/Federer: falta).
