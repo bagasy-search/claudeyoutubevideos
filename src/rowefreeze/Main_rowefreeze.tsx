@@ -1,0 +1,63 @@
+import React from "react";
+import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
+import { Foto, Clip, AvatarWin } from "./Piezas";
+import { BASE, COMPS, TOTAL_FRAMES } from "./cues.gen";
+import { LowerThird } from "../_fed6/VideoEdit/scenes/LowerThird";
+import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
+import { ErrorStinger } from "../_fed6/VideoEdit/scenes/ErrorStinger";
+import { DatoImpacto } from "../_fed6/VideoEdit/scenes/DatoImpacto";
+import { ListaFlotante } from "../_fed6/VideoEdit/scenes/ListaFlotante";
+import { MitoRevelado } from "../_fed6/VideoEdit/scenes/MitoRevelado";
+import { FreezeZoom } from "../_fed6/VideoEdit/scenes/FreezeZoom";
+import { Carrusel3D } from "../_fed6/VideoEdit/scenes/Carrusel3D";
+import { CalloutMark } from "../_fed6/VideoEdit/scenes/CalloutMark";
+import { BarCompare } from "../_fed6/VideoEdit/scenes/BarCompare";
+import { PhotoTriptych } from "../_fed6/VideoEdit/scenes/PhotoTriptych";
+import { BeforeAfterPush } from "../_fed6/VideoEdit/scenes/BeforeAfterPush";
+import { ManchaRing3D } from "../_fed6/VideoEdit/scenes/ManchaRing3D";
+import { LineaTiempoPiel } from "./LineaTiempoEN";
+
+// ── CANAL "Dr. Emmett Rowe" (EN) · rowefreeze ───────────────────────────────
+// Audio = máster Fish (voz `rowe`). Avatar = InfiniteTalk/RunPod SÓLO en las ventanas visibles
+// (reel `rowefreeze_avatar.mp4`, recortado con trimBefore). Todo video por OffthreadVideo.
+export const TOTAL_FRAMES_ROWEFREEZE = TOTAL_FRAMES;
+const AVATAR_REEL = "rowefreeze_avatar.mp4";
+const TAG = "DR. EMMETT ROWE";
+
+const renderComp = (b: any, d: number) =>
+  b.kind === "lowerthird" ? <LowerThird durationInFrames={d} title={b.title} desc={b.desc} kicker={b.kicker ?? TAG} tag={TAG} tone={b.tone} />
+  : b.kind === "frasecinetica" ? <FraseCinetica durationInFrames={d} words={b.words} ats={b.ats} perWord={b.perWord} tone={b.tone} />
+  : b.kind === "errorstinger" ? <ErrorStinger durationInFrames={d} number={b.number} title={b.title} tone={b.tone} eyebrow={b.eyebrow} />
+  : b.kind === "datoimpacto" ? <DatoImpacto durationInFrames={d} figure={b.figure} unit={b.unit} eyebrow={b.eyebrow} caption={b.caption} image={b.image} tone={b.tone} />
+  : b.kind === "checklist" ? <ListaFlotante durationInFrames={d} title={b.title} image={b.image} items={b.items} tone={b.tone} />
+  : b.kind === "mitoverdad" ? <MitoRevelado durationInFrames={d} myth={b.myth} truth={b.truth} image={b.image} flipAt={b.flipAt}
+      mythLabel="THE MYTH" truthLabel="WHAT'S REALLY TRUE" />
+  : b.kind === "lineatiempo" ? <LineaTiempoPiel durationInFrames={d} title={b.title} marks={b.marks} tone={b.tone} />
+  : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
+  : b.kind === "carrusel" ? <Carrusel3D durationInFrames={d} title={b.title} items={b.items} focus={b.focus} tone={b.tone} />
+  : b.kind === "callout" ? <CalloutMark durationInFrames={d} figure={b.figure} eyebrow={b.eyebrow} caption={b.caption} image={b.image} medico />
+  : b.kind === "barcompare" ? <BarCompare durationInFrames={d} eyebrow={b.eyebrow} title={b.title} bars={b.bars} orientation={b.orientation} medico />
+  : b.kind === "phototriptych" ? <PhotoTriptych durationInFrames={d} items={b.items} title={b.title} eyebrow={b.eyebrow} bed={b.bed} />
+  : b.kind === "beforeafterpush" ? <BeforeAfterPush durationInFrames={d} before={b.before} after={b.after} beforeLabel={b.beforeLabel} afterLabel={b.afterLabel} caption={b.caption} focus={b.focus} bed={b.bed} />
+  : b.kind === "ring3d" ? <ManchaRing3D durationInFrames={d} cards={b.cards} focus={b.focus} intro={b.intro} eyebrow={b.eyebrow} bed={b.bed} />
+  : null;
+
+export const MainRowefreeze: React.FC = () => (
+  <AbsoluteFill style={{ backgroundColor: "#0E1D23" }}>
+    <Audio src={staticFile("rowefreeze.m4a")} />
+
+    {BASE.map((b: any, i: number) => (
+      <Sequence key={`b${i}`} from={b.from} durationInFrames={b.dur} premountFor={30}>
+        {b.kind === "avatar" ? <AvatarWin src={AVATAR_REEL} trimFrames={b.trim} seed={b.seed} />
+          : b.kind === "clip" ? <Clip src={b.src} seed={b.seed} frames={b.frames} last={b.last} kbN={b.kbN} />
+          : <Foto src={b.src} seed={b.seed} cont={b.cont} />}
+      </Sequence>
+    ))}
+
+    {COMPS.map((c: any, i: number) => (
+      <Sequence key={`c${i}`} from={c.from} durationInFrames={c.dur} layout="none">
+        {renderComp(c, c.dur)}
+      </Sequence>
+    ))}
+  </AbsoluteFill>
+);
