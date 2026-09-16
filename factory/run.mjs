@@ -74,7 +74,16 @@ async function runSlug(slug, { from, only } = {}) {
         status.set(ph.id, "done"); ctx.log(`✓ confiada (${antesDeFrom ? `anterior a --from ${from}` : "importada del legado"})`); continue;
       }
       if (antesDeFrom) { status.set(ph.id, "failed"); state.set(ph.id, { ...(prev || {}), status: prev?.status || "failed", error: `--from ${from} exige que ${ph.id} ya esté hecha (está ${prev?.status || "sin estado"}): no se rehace sola` }); ctx.log(`✗ --from ${from} pero ${ph.id} no está hecha: no la rehago`); continue; }
-      if (state.isFresh(ph.id, h)) { status.set(ph.id, "done"); ctx.log(`✓ fresca (${JSON.stringify(state.get(ph.id).medido || {}).slice(0, 140)})`); continue; }
+      if (state.isFresh(ph.id, h)) {
+        // ⛔ El hash de INPUTS no ve el disco: si alguien borró las salidas para regenerarlas, la fase
+        // se salteaba con "✓ fresca" y su compuerta —que vive DENTRO de la fase— nunca llegaba a correr
+        // (medido en cmealter: 115 imágenes borradas, la fase no miró y el montaje se iba con las viejas).
+        // `verify` es opcional: sin él, el comportamiento es el de antes.
+        let falta = null;
+        if (ph.verify) { try { falta = await ph.verify(ctx); } catch (e) { falta = e.message; } }
+        if (!falta) { status.set(ph.id, "done"); ctx.log(`✓ fresca (${JSON.stringify(state.get(ph.id).medido || {}).slice(0, 140)})`); continue; }
+        ctx.log(`↻ estaba done pero sus salidas no están: ${falta} — la rehago`);
+      }
       ctx.log("▶ arranca");
       state.set(ph.id, { ...(state.get(ph.id) || {}), status: "running", inputsHash: h });
       const t = Date.now();

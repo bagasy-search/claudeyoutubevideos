@@ -12,6 +12,13 @@ export default {
   id: "40_images",
   deps: ["30_direct"],
   inputs: ({ P, style, spec }) => [P.plan, style.imagen, spec.avatar?.ref || spec.avatar?.face || null],
+  // Cuenta los jpg que el plan exige. Devuelve null si está completa, o el texto del faltante.
+  verify: ({ P }) => {
+    const plan = JSON.parse(fs.readFileSync(P.plan, "utf8"));
+    const quiere = plan.filter((p) => p.tipo !== "avatar").length;
+    const hay = fs.existsSync(P.imgDir) ? fs.readdirSync(P.imgDir).filter((f) => f.endsWith(".jpg")).length : 0;
+    return hay >= quiere ? null : `${hay} jpg de ${quiere}`;
+  },
   async run({ slug, spec, style, P, log }) {
     const plan = JSON.parse(fs.readFileSync(P.plan, "utf8")).filter((p) => p.tipo === "imagen");
     assertMeasured("planosImagen", plan.length, { min: 1, log });
