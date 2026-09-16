@@ -22,8 +22,8 @@ export const RowePresenter: React.FC<{
   name = "Dr. Emmett Rowe",
   role = "",
   kicker = "",
-  img = "img/roweshower/rs_doc_cutout.png",
-  bg = "img/roweshower/roweshower_060.png",
+  img = "",
+  bg = "",
   mode = "intro",
   cta = "SUBSCRIBE",
   durationInFrames = 180,
@@ -55,7 +55,7 @@ export const RowePresenter: React.FC<{
   return (
     <AbsoluteFill style={{ opacity: 1 - out, filter: out > 0.01 ? `blur(${(out * 12).toFixed(1)}px)` : undefined, transform: `scale(${(1 + out * 0.05).toFixed(4)})` }}>
       <AbsoluteFill style={{ opacity: bgIn }}>
-        <Atmosphere frame={frame} img={bg} blur={18} dim={0.62} bokeh={10} seed={7} camX={cam.camX} />
+        <Atmosphere frame={frame} img={bg || undefined} blur={18} dim={0.62} bokeh={10} seed={7} camX={cam.camX} />
         {/* halo dorado detrás del bloque */}
         <AbsoluteFill style={{ background: `radial-gradient(46% 50% at 52% 54%, ${rgba("#E9C46E", 0.13)} 0%, transparent 70%)` }} />
       </AbsoluteFill>
@@ -111,7 +111,7 @@ export const RowePresenter: React.FC<{
             WebkitMaskImage: "linear-gradient(to bottom, black 90%, transparent 100%)",
             maskImage: "linear-gradient(to bottom, black 90%, transparent 100%)",
           }}>
-            <Img src={src(img)} style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "bottom" }} />
+            {img ? <Img src={src(img)} style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "bottom" }} /> : null}
           </div>
           {/* punto "en línea" */}
           <div style={{
