@@ -115,6 +115,15 @@ Para cada fase: extraer la versión SANA (fuente: scripts usados en **fa70estudi
 - [x] **D1. Inventario.** Listar TODAS las compuertas actuales (`*_gate.mjs`, `audit_*.mjs`, `density_gate`, `dark_gate`, `broll_isolation_gate`, `check_redibujo`, `vision_haygente`, `agnes_qc_gate`). Para cada una: qué mide, puede dar verde sin mirar?, falsos positivos conocidos. — ✅ `factory/GATES_INVENTARIO.md` (29 scripts, con línea que prueba cada "verde sin mirar").
 - [~] **D2. Migrar a `gate.mjs`.** Cada compuerta imprime cuánto midió; unidades explícitas (frames vs segundos con tipo en el nombre: `durFrames`, `durSec`); todo `fetch` con timeout. — ✅ las 8 más peligrosas arregladas con la convención **exit 2 = NO MIDIÓ** (`d0cba2e`): audit_frames (**daba ✅ con 3 s negros, probado con el original**), check_timestamps, dark_gate, gap_gate, check_arbol_git, gate_intrusos, vision_haygente, nudecheck. ⏳ resto en la tabla "Pendientes" del inventario.
 - [~] **D3. Control positivo.** `tests/fixtures/trampa/`: video mini con defectos plantados (avatar tapado, luma negra, clip repetido, `clip=` inexistente, cobertura 60%, texto negro por prop inválida, velo 0,80, CTA comido por fade). CA: `factory test gates` falla en TODOS; video sano pasa. Corre en CI. — ✅ en CI (46 tests): trampas del montaje (avatar tapado, bug tcfiltro, asset inexistente, clip 0 cuadros, clip repetido, loop, apertura, CTA, cobertura) + video negro/sin cuadros/stills negros/entry inexistente. ⛔ faltan texto negro por prop inválida, velo 0,80 y CTA comido por fade (son de montajes con componentes, todavía no en la fábrica).
+- [~] **D6. Frescura que mira el DISCO, no sólo el hash de inputs.** Una fase `done` cuyas salidas se
+  borraron se salteaba con "✓ fresca" y su compuerta interna nunca corría. CA: borrar N imágenes y
+  relanzar las regenera. — ✅ `verify(ctx)` opcional en `run.mjs` + implementado en `40_images`
+  (`9396c5e`); probado en vivo (cmealter delató "192 jpg de 307"). ⏳ **Falta el caso STALE**: si el
+  prompt de un plano cambia pero el jpg sigue ahí, `verify` lo da por bueno. Fix propuesto (agente de
+  cmealter, 16-sep): guardar un sidecar `name → hash(prompt)` junto a las imágenes y que `verify`
+  devuelva los planos cuyo hash no coincide, para regenerar SÓLO ésos. ⚠️ No se implementó en caliente
+  a propósito: sin sidecar previo, los videos en vuelo habrían visto TODAS sus imágenes como vencidas
+  y las habrían vuelto a pedir. Hacerlo con la cola vacía, y sembrar el sidecar sin invalidar nada.
 - [ ] **D4. Recalibrar falsos positivos.** `check_redibujo` (44 marcados/16 reales) y `vision_haygente`: umbral medido sobre muestra ≥5 etiquetada a mano. CA: precisión reportada en el propio archivo. — ⏳ requiere etiquetar a ojo una muestra.
 - [~] **D5. Veredicto final único.** 70_gates produce `GATES.md` con tabla medido/umbral/estado y una hoja de contactos; Claude hace UNA revisión de visión sobre la hoja (no frame por frame). — 70_gates escribe GATES.md; 90_deliver deja `audit/hoja.jpg`. ⏳ sin corrida real.
 
