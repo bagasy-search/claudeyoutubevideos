@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { Foto, Clip, AvatarWin } from "./Piezas";
-import { BASE, COMPS, TOTAL_FRAMES } from "./cues.gen";
+import { BASE, COMPS, SFX, TOTAL_FRAMES } from "./cues.gen";
 import { LowerThird } from "../_fed6/VideoEdit/scenes/LowerThird";
 import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
 import { ErrorStinger } from "../_fed6/VideoEdit/scenes/ErrorStinger";
@@ -12,6 +12,13 @@ import { FreezeZoom } from "../_fed6/VideoEdit/scenes/FreezeZoom";
 import { BodyMapScene } from "../_fed6/VideoEdit/scenes/BodyMapScene";
 import { Carrusel3D } from "../_fed6/VideoEdit/scenes/Carrusel3D";
 import { LineaTiempoPiel } from "./LineaTiempoEN";
+import { PhotoTriptych } from "../_fed6/VideoEdit/scenes/PhotoTriptych";
+import { RowePresenter } from "./RowePresenter";
+import { RoweCarousel } from "./RoweCarousel";
+import { MythTruth } from "./MythTruth";
+import { RedFlags } from "./RedFlags";
+import { RoutineSwap } from "./RoutineSwap";
+import { FallTease } from "./FallTease";
 
 // ── CANAL "Dr. Emmett Rowe" (EN) · rowesoap ─────────────────────────────────────────────
 // Audio = máster Fish (voz `rowe`). Avatar = InfiniteTalk/RunPod SÓLO en las ventanas visibles
@@ -32,6 +39,13 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "lineatiempo" ? <LineaTiempoPiel durationInFrames={d} title={b.title} marks={b.marks} tone={b.tone} />
   : b.kind === "freezezoom" ? <FreezeZoom durationInFrames={d} image={b.image} x={b.x} y={b.y} label={b.label} zoom={b.zoom} tone={b.tone} />
   : b.kind === "bodymap" ? <BodyMapScene durationInFrames={d} title={b.title ?? "Where the soap never reached"} stops={b.stops} bed={b.bed} />
+  : b.kind === "presenter" ? <RowePresenter durationInFrames={d} name="Dr. Emmett Rowe" mode={b.mode} img={b.img} bg={b.bg} kicker={b.kicker} role={b.role} cta="SUBSCRIBE" />
+  : b.kind === "carousel" ? <RoweCarousel durationInFrames={d} mode={b.mode} cards={b.cards} reveals={b.reveals} offset={b.offset ?? 0} kicker={b.kicker} title={b.title} bed={b.bed} />
+  : b.kind === "myth2" ? <MythTruth durationInFrames={d} kicker={b.kicker} myth={b.myth} truth={b.truth} mythImg={b.mythImg} truthImg={b.truthImg} bed={b.bed} hitAt={b.hitAt} truthAt={b.truthAt} />
+  : b.kind === "redflags" ? <RedFlags durationInFrames={d} kicker={b.kicker} img={b.img} bed={b.bed} flags={b.flags} stamp={b.stamp} stampAt={b.stampAt} />
+  : b.kind === "routineswap" ? <RoutineSwap durationInFrames={d} mode={b.mode} kicker={b.kicker} title={b.title} items={b.items} bed={b.bed} chip={b.chip} chipAt={b.chipAt} />
+  : b.kind === "falltease" ? <FallTease durationInFrames={d} kicker={b.kicker} title={b.title} img={b.img} sideL={b.sideL} sideR={b.sideR} bed={b.bed} hitAt={b.hitAt} />
+  : b.kind === "triptych" ? <PhotoTriptych durationInFrames={d} items={b.items} title={b.title} eyebrow={b.eyebrow ?? "WHY AFTER 70"} bed={b.bed} />
   : b.kind === "carrusel3d" ? <Carrusel3D durationInFrames={d} title={b.title} items={b.items} focus={b.focus} tone={b.tone} />
   : null;
 
@@ -52,6 +66,13 @@ export const MainRowesoap: React.FC = () => (
     {COMPS.map((c: any, i: number) => (
       <Sequence key={`c${i}`} from={c.from} durationInFrames={c.dur} layout="none">
         {renderComp(c, c.dur)}
+      </Sequence>
+    ))}
+
+    {/* SFX en los golpes de los set-pieces */}
+    {SFX.map((s: any, k: number) => (
+      <Sequence key={`sfx${k}`} from={s.from} durationInFrames={75} layout="none">
+        <Audio src={staticFile(s.src)} volume={s.vol} />
       </Sequence>
     ))}
   </AbsoluteFill>
