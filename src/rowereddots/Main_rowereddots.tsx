@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { Foto, Clip, AvatarWin } from "./Piezas";
-import { BASE, COMPS, TOTAL_FRAMES } from "./cues.gen";
+import { BASE, COMPS, SFX, TOTAL_FRAMES } from "./cues.gen";
 import { LowerThird } from "../_fed6/VideoEdit/scenes/LowerThird";
 import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
 import { ErrorStinger } from "../_fed6/VideoEdit/scenes/ErrorStinger";
@@ -14,8 +14,14 @@ import { CalloutMark } from "../_fed6/VideoEdit/scenes/CalloutMark";
 import { GlassTestScene } from "../_fed6/VideoEdit/scenes/GlassTestScene";
 import { BodyMapScene } from "../_fed6/VideoEdit/scenes/BodyMapScene";
 import { FdSplitCompare } from "../_fed6/VideoEdit/scenes/FdSplitCompare";
-import { SfxCue, SFX } from "../_fed6/VideoEdit/components/Sfx";
 import { LineaTiempoPiel } from "./LineaTiempoEN";
+import { RowePresenter } from "./RowePresenter";
+import { RoweCarousel } from "./RoweCarousel";
+import { MythTruth } from "./MythTruth";
+import { RedFlags } from "./RedFlags";
+import { RoutineSwap } from "./RoutineSwap";
+import { FallTease } from "./FallTease";
+import { SelfCheck } from "./SelfCheck";
 
 // ── CANAL "Dr. Emmett Rowe" (EN) · rowereddots ──────────────────────────────
 // Audio = máster Fish (voz `rowe`). Avatar = InfiniteTalk/RunPod SÓLO en las ventanas visibles
@@ -39,30 +45,14 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "glasstest" ? <GlassTestScene durationInFrames={d} image={b.image} bed={b.bed ?? b.image} leftLabel={b.leftLabel} rightLabel={b.rightLabel} leftVerdict={b.leftVerdict} rightVerdict={b.rightVerdict} />
   : b.kind === "bodymap" ? <BodyMapScene durationInFrames={d} title={b.title} stops={b.stops} bed={b.bed} />
   : b.kind === "splitcompare" ? <FdSplitCompare durationInFrames={d} eyebrow={b.eyebrow} title={b.title} left={b.left} right={b.right} winner={b.winner} unit={b.unit ?? ""} />
+  : b.kind === "presenter" ? <RowePresenter durationInFrames={d} name="Dr. Emmett Rowe" mode={b.mode} img={b.img} bg={b.bg} kicker={b.kicker} role={b.role} cta="SUBSCRIBE" />
+  : b.kind === "carousel" ? <RoweCarousel durationInFrames={d} mode={b.mode} cards={b.cards} reveals={b.reveals} offset={b.offset ?? 0} kicker={b.kicker} title={b.title} bed={b.bed} />
+  : b.kind === "myth2" ? <MythTruth durationInFrames={d} kicker={b.kicker} myth={b.myth} truth={b.truth} mythImg={b.mythImg} truthImg={b.truthImg} bed={b.bed} hitAt={b.hitAt} truthAt={b.truthAt} />
+  : b.kind === "redflags" ? <RedFlags durationInFrames={d} kicker={b.kicker} img={b.img} bed={b.bed} flags={b.flags} stamp={b.stamp} stampAt={b.stampAt} />
+  : b.kind === "routineswap" ? <RoutineSwap durationInFrames={d} mode={b.mode} kicker={b.kicker} title={b.title} items={b.items} bed={b.bed} chip={b.chip} chipAt={b.chipAt} />
+  : b.kind === "falltease" ? <FallTease durationInFrames={d} kicker={b.kicker} title={b.title} img={b.img} sideL={b.sideL} sideR={b.sideR} bed={b.bed} hitAt={b.hitAt} />
+  : b.kind === "selfcheck" ? <SelfCheck durationInFrames={d} kicker={b.kicker} questions={b.questions} offset={b.offset ?? 0} bed={b.bed} />
   : null;
-
-// Diseño de sonido de los componentes que NO traen SFX propio (ErrorStinger, CalloutMark y
-// FdSplitCompare ya los traen). Suave, por debajo de la voz.
-const sfxFor = (b: any, d: number): React.ReactNode => {
-  const w = <SfxCue at={0} src={SFX.whoosh} volume={0.22} />;
-  switch (b.kind) {
-    case "lowerthird": return <>{w}<SfxCue at={10} src={SFX.kickerType} volume={0.22} /></>;
-    case "frasecinetica": return <>{(b.words || []).map((_: any, i: number) => <SfxCue key={i} at={i * (b.perWord || 9)} src={SFX.popUp} volume={0.16} />)}</>;
-    case "datoimpacto": return <>{w}<SfxCue at={14} src={SFX.numberSlam} volume={0.24} /></>;
-    case "checklist": return <>{w}{(b.items || []).map((_: any, i: number) => <SfxCue key={i} at={18 + i * 12} src={SFX.kickerType} volume={0.2} />)}</>;
-    case "mitoverdad": return <>{w}{b.flipAt ? <SfxCue at={b.flipAt} src={SFX.winnerChime} volume={0.22} /> : null}</>;
-    case "lineatiempo": return <>{w}{(b.marks || []).map((_: any, i: number) => <SfxCue key={i} at={Math.round(8 + (i * (d - 20)) / Math.max(1, (b.marks || []).length))} src={SFX.chipPop3d} volume={0.2} />)}</>;
-    case "freezezoom": return <><SfxCue at={0} src={SFX.shutter} volume={0.2} /><SfxCue at={8} src={SFX.whoosh} volume={0.18} /></>;
-    case "carrusel": return <>{w}<SfxCue at={12} src={SFX.chipPop3d} volume={0.2} /></>;
-    case "glasstest": return <><SfxCue at={6} src={SFX.whoosh} volume={0.2} /><SfxCue at={28} src={SFX.numberSlam} volume={0.2} /><SfxCue at={44} src={SFX.kickerType} volume={0.2} /><SfxCue at={54} src={SFX.chipPop3d} volume={0.22} /></>;
-    case "bodymap": {
-      const n = Math.max(1, (b.stops || []).length);
-      const slot = Math.max(30, d - 12 - 8 - 40) / n;
-      return <>{w}{(b.stops || []).map((_: any, i: number) => <SfxCue key={i} at={Math.round(8 + 40 + i * slot)} src={SFX.chipPop3d} volume={0.2} />)}</>;
-    }
-    default: return null;
-  }
-};
 
 export const MainRowereddots: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#0E1D23" }}>
@@ -79,7 +69,13 @@ export const MainRowereddots: React.FC = () => (
     {COMPS.map((c: any, i: number) => (
       <Sequence key={`c${i}`} from={c.from} durationInFrames={c.dur} layout="none">
         {renderComp(c, c.dur)}
-        {sfxFor(c, c.dur)}
+      </Sequence>
+    ))}
+
+    {/* SFX: lista única emitida por el build (la misma que se mezcla con el máster en la entrega) */}
+    {SFX.map((x: any, k: number) => (
+      <Sequence key={`sfx${k}`} from={x.from} durationInFrames={75} layout="none">
+        <Audio src={staticFile(x.src)} volume={x.vol} />
       </Sequence>
     ))}
   </AbsoluteFill>

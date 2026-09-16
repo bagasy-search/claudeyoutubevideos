@@ -1,32 +1,300 @@
 [
-{"id":"s12_rutina","nombre":"La rutina mensual","objetivo":"una rutina hacible: ducha, luz, espejo, alguien para la espalda, fotos con moneda, el vaso en el botiquín",
-"momentos":[
-{"n":"rd_after_shower","p":"Once a month, after a shower, stand in good light in front of a mirror.","tipo":"gen","enc":"medio","seg":4,"porque":"'una vez por mes, después de la ducha, con buena luz' → el señor en bata frente al espejo empañado","prompt":"medium shot of a 72-year-old man in a terry bathrobe opened at the chest standing in front of a large bathroom mirror still slightly steamed at the edges after a shower, wiping a clear patch with his hand, bright daylight from a window beside the mirror, a towel hanging over the shower door, a bathmat, a plant on the windowsill, a toothbrush cup","motion":"his hand wipes the steam off the mirror in a slow arc"},
-{"n":"rd_wife_back","p":"ask someone you trust to look at your back","tipo":"gen","enc":"medio","seg":4,"porque":"'pedile a alguien de confianza que te mire la espalda' → la esposa revisándole la espalda con la linterna del celular","prompt":"medium shot of a 70-year-old wife standing behind her husband who sits on the edge of their bed with his t-shirt pulled up to his shoulders, she shines her phone flashlight on his back dotted with small red spots and points at one with a pen, both calm and chatting, a nightstand with a lamp, a quilt, a dresser with photos, afternoon light","motion":"the phone flashlight moves slowly across his back"},
-{"n":"rd_dr_not_counting","p":"You're not counting the red dots.","tipo":"pres","enc":"medio","seg":3,"porque":"'no estás contando los puntos' → él riéndose, tachando con la mano una lista de números","prompt":"sitting at his desk laughing softly and pushing aside a notepad covered with tally marks, shaking his head with an amused grin, a hand mirror on the desk, a coffee mug, a stethoscope around his neck, bookshelf with plant, framed mountain print, daylight","motion":"he slides the notepad away and shakes his head with a laugh"},
-{"n":"rd_mirror_selfie","p":"Take one picture of your chest and one of your back","tipo":"gen","enc":"medio","seg":3.5,"porque":"'sacate una foto del pecho y una de la espalda' → el señor sacándose foto frente al espejo","prompt":"medium shot of a 68-year-old man in his bedroom with his shirt off holding a smartphone at chest height and taking a photo of his chest in the closet mirror, the phone's back facing the mirror, concentrated expression with his tongue slightly between his lips, a bed with a folded shirt on it, a lamp, a laundry basket, window daylight","motion":"his thumb taps the phone and he checks the photo"},
-{"n":"rd_coin_closeup","p":"with a coin next to it for size","tipo":"gen","enc":"cerrado","seg":3,"porque":"'con una moneda al lado para el tamaño' → la moneda de un cuarto junto al punto","prompt":"close shot of a US quarter coin held flat against the skin of an older man's upper arm right next to a small round cherry-red dot, his thumb and finger holding the coin, freckles and fine hairs, the sleeve of a white t-shirt pushed up, a smartphone's rounded corner at the edge of the frame, bright window light","motion":"the fingers settle the coin closer to the dot"},
-{"n":"rd_compare_phones","p":"Next month, take the same pictures and compare.","tipo":"gen","enc":"medio","seg":3.5,"porque":"'el mes que viene, las mismas fotos y comparás' → la pareja comparando dos fotos en el celular","prompt":"medium shot of an older couple sitting side by side at their kitchen table, the husband holding a smartphone with a dark screen reflection, the wife leaning in with her reading glasses on, both focused and comparing, a spiral notebook with dates, a pen, two cups of coffee, a plate of cookies, a window with morning light","motion":"he swipes on the phone and she leans closer"},
-{"n":"rd_coin_month2","p":"very easy to see in a photo","tipo":"gen","enc":"cerrado","seg":3,"porque":"'muy fácil de ver en una foto' → la misma moneda junto al mismo punto un mes después","prompt":"close shot of a US quarter coin held against the upper arm of an older man next to the same small round cherry-red dot, photographed a month later in the same window light, a thin pen circle drawn on the skin around the dot, the sleeve of a white t-shirt, freckles and fine hairs","motion":"the fingers hold the coin steady while the light brightens a little"},
-{"n":"rd_glass_cabinet","p":"Keep a clear glass in the bathroom cabinet.","tipo":"gen","enc":"medio","seg":3,"porque":"'guardá un vaso en el botiquín' → el botiquín abierto con el vaso limpio en el estante","prompt":"medium shot of an open mirrored bathroom medicine cabinet with a single clean clear drinking glass on the middle shelf next to a box of adhesive bandages, a thermometer, a roll of gauze and a small pair of scissors, an older woman's hand placing the glass, white tiles, morning window light","motion":"the hand sets the glass on the shelf and the mirror door swings a little"},
-{"n":"rd_press_home","p":"press the glass on them","tipo":"gen","enc":"cerrado","seg":3,"porque":"'apretá el vaso' → la mano presionando el vaso contra puntitos del tobillo en el baño","prompt":"close shot of an older woman's hand pressing a clear drinking glass against the inside of her ankle over a few tiny red dots while she sits on the closed toilet lid, a pink bath mat, a slipper, the edge of a white tub, bathroom light","motion":"the glass presses down and the skin around it whitens"},
-{"n":"rd_dr_you_know","p":"If they don't fade, you know what to do.","tipo":"pres","enc":"medio","seg":3,"porque":"'si no se borran, ya sabés qué hacer' → él levantando el teléfono, mirada firme y cálida","prompt":"standing by his desk holding up the handset of the office phone toward the camera with a firm, warm look and a small nod, a clear glass on the desk beside a stethoscope, a stack of charts, a desk lamp, bookshelf with plant, framed mountain print, daylight","motion":"he lifts the phone a little and nods once"}
-],
-"componentes":[
-{"p":"So let's put this into a simple routine.","kind":"lowerthird","title":"The monthly skin check","kicker":"routine","desc":"once a month, after a shower, good light","tone":"teal"},
-{"p":"You're looking for anything new","kind":"checklist","title":"What you're looking for","tone":"teal","image":"img/rowereddots/rd_wife_back.jpg","items":[{"text":"Anything new","state":"warn"},{"text":"Anything growing fast","state":"warn"},{"text":"Anything bleeding","state":"warn"},{"text":"The ugly duckling","state":"warn"}]},
-{"p":"And here's the trick that makes this work.","kind":"frasecinetica","words":[{"t":"TAKE"},{"t":"PHOTOS.","hl":true}],"perWord":12,"tone":"teal"},
-{"p":"Change is very hard to see from memory","kind":"splitcompare","eyebrow":"SAME SPOT, SAME COIN","title":"Compare, don't remember","left":{"image":"img/rowereddots/rd_coin_closeup.jpg","label":"This month","note":"photo + coin for size"},"right":{"image":"img/rowereddots/rd_coin_month2.jpg","label":"Next month","note":"same light, same angle"},"winner":"none"}
-]},
-{"id":"s13_cierre","nombre":"Cierre y CTA","objetivo":"la foto grande, la guía en la descripción, educación, suscribirse",
-"momentos":[
-{"n":"rd_couple_dock","p":"your skin has been around for a while","tipo":"gen","enc":"abierto","seg":3.5,"porque":"'tu piel ya tiene sus años' → pareja mayor al sol en el lago, tranquila","prompt":"wide shot of a 74-year-old husband and wife sitting on the edge of a wooden lake dock with their feet in the water, he in an open short-sleeved shirt with a few red dots on his chest, she in a sun hat, both laughing, a thermos and two mugs between them, a fishing rod leaning on a post, pine trees, sparkling water, golden late afternoon light","motion":"their feet kick the water gently and the ripples spread"},
-{"n":"rd_neighborhood","p":"they share the neighborhood with a few spots that are serious","tipo":"gen","enc":"cerrado","seg":3.5,"porque":"'comparten el barrio con unos pocos serios' → muchos puntitos rojos y una lesión rara entre ellos, con la lupa","prompt":"close shot of an older man's upper back under a round magnifying lamp, many small round red cherry dots and freckles and one irregular dark pink crusted bump among them circled lightly with a surgical skin marker, a gloved hand holding the marker, the edge of a paper gown, clinic light","motion":"the marker finishes the circle around the odd bump"},
-{"n":"rd_mirror_print","p":"print it for your bathroom mirror","tipo":"gen","enc":"medio","seg":3.5,"porque":"'imprimila para el espejo del baño' → una hojita pegada con cinta al borde del espejo","prompt":"medium shot of a bathroom mirror with a single printed checklist sheet taped to its lower corner with blue painter's tape, an older woman's hand smoothing the tape, a clear glass on the shelf below, a toothbrush cup, a hand towel, white tiles, bright morning light","motion":"her hand presses the tape flat and the page settles"},
-{"n":"rd_share_friends","p":"share it with someone who has been quietly counting red dots in the mirror","tipo":"gen","enc":"medio","seg":3.5,"porque":"'compartilo con alguien que cuenta puntitos en silencio' → dos amigos jubilados en el café, uno le muestra el celular al otro","prompt":"medium shot of two retired men in their seventies at a small diner counter, one holding out his phone with a dark screen toward the other and tapping his own chest with a knowing grin, the friend raising his eyebrows and laughing, cups of coffee, a slice of pie, a sugar dispenser, a napkin holder, a chrome counter, morning window light","motion":"he taps his chest and his friend leans in laughing"}
-],
-"componentes":[
-{"p":"They're not your liver","kind":"checklist","title":"The big picture","tone":"teal","image":"img/rowereddots/rd_couple_dock.jpg","items":[{"text":"Not your liver, not your diet","state":"ok"},{"text":"Not contagious, not cancer","state":"ok"},{"text":"Sudden flat dots: glass test","state":"warn"},{"text":"Never cut or burn at home","state":"danger"}]},
-{"p":"I put the full monthly skin check","kind":"lowerthird","title":"The monthly skin check","kicker":"in the description","desc":"glass test + warning signs, ready to print","tone":"teal"}
-]}
+ {
+  "id": "s12_rutina",
+  "nombre": "La rutina mensual",
+  "objetivo": "una rutina hacible: ducha, luz, espejo, alguien para la espalda, fotos con moneda, el vaso en el botiquín",
+  "momentos": [
+   {
+    "n": "rd_after_shower",
+    "p": "Once a month, after a shower, stand in good light in front of a mirror.",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 4,
+    "porque": "'una vez por mes, después de la ducha, con buena luz' → el señor en bata frente al espejo empañado",
+    "prompt": "medium shot of a 72-year-old man in a terry bathrobe opened at the chest standing in front of a large bathroom mirror still slightly steamed at the edges after a shower, wiping a clear patch with his hand, bright daylight from a window beside the mirror, a towel hanging over the shower door, a bathmat, a plant on the windowsill, a toothbrush cup",
+    "motion": "his hand wipes the steam off the mirror in a slow arc"
+   },
+   {
+    "n": "rd_wife_back",
+    "p": "ask someone you trust to look at your back",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 4,
+    "porque": "'pedile a alguien de confianza que te mire la espalda' → la esposa revisándole la espalda con la linterna del celular",
+    "prompt": "medium shot of a 70-year-old wife standing behind her husband who sits on the edge of their bed with his t-shirt pulled up to his shoulders, she shines her phone flashlight on his back dotted with small red spots and points at one with a pen, both calm and chatting, a nightstand with a lamp, a quilt, a dresser with photos, afternoon light",
+    "motion": "the phone flashlight moves slowly across his back"
+   },
+   {
+    "n": "rd_dr_not_counting",
+    "p": "You're not counting the red dots.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'no estás contando los puntos' → él riéndose, tachando con la mano una lista de números",
+    "prompt": "sitting at his desk laughing softly and pushing aside a notepad covered with tally marks, shaking his head with an amused grin, a hand mirror on the desk, a coffee mug, a stethoscope around his neck, bookshelf with plant, framed mountain print, daylight",
+    "motion": "he slides the notepad away and shakes his head with a laugh"
+   },
+   {
+    "n": "rd_mirror_selfie",
+    "p": "Take one picture of your chest and one of your back",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'sacate una foto del pecho y una de la espalda' → el señor sacándose foto frente al espejo",
+    "prompt": "medium shot of a 68-year-old man in his bedroom with his shirt off holding a smartphone at chest height and taking a photo of his chest in the closet mirror, the phone's back facing the mirror, concentrated expression with his tongue slightly between his lips, a bed with a folded shirt on it, a lamp, a laundry basket, window daylight",
+    "motion": "his thumb taps the phone and he checks the photo"
+   },
+   {
+    "n": "rd_coin_closeup",
+    "p": "with a coin next to it for size",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'con una moneda al lado para el tamaño' → la moneda de un cuarto junto al punto",
+    "prompt": "close shot of a US quarter coin held flat against the skin of an older man's upper arm right next to a small round cherry-red dot, his thumb and finger holding the coin, freckles and fine hairs, the sleeve of a white t-shirt pushed up, a smartphone's rounded corner at the edge of the frame, bright window light",
+    "motion": "the fingers settle the coin closer to the dot"
+   },
+   {
+    "n": "rd_compare_phones",
+    "p": "Next month, take the same pictures and compare.",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'el mes que viene, las mismas fotos y comparás' → la pareja comparando dos fotos en el celular",
+    "prompt": "medium shot of an older couple sitting side by side at their kitchen table, the husband holding a smartphone with a dark screen reflection, the wife leaning in with her reading glasses on, both focused and comparing, a spiral notebook with dates, a pen, two cups of coffee, a plate of cookies, a window with morning light",
+    "motion": "he swipes on the phone and she leans closer"
+   },
+   {
+    "n": "rd_coin_month2",
+    "p": "very easy to see in a photo",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'muy fácil de ver en una foto' → la misma moneda junto al mismo punto un mes después",
+    "prompt": "close shot of a US quarter coin held against the upper arm of an older man next to the same small round cherry-red dot, photographed a month later in the same window light, a thin pen circle drawn on the skin around the dot, the sleeve of a white t-shirt, freckles and fine hairs",
+    "motion": "the fingers hold the coin steady while the light brightens a little"
+   },
+   {
+    "n": "rd_glass_cabinet",
+    "p": "Keep a clear glass in the bathroom cabinet.",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'guardá un vaso en el botiquín' → el botiquín abierto con el vaso limpio en el estante",
+    "prompt": "medium shot of an open mirrored bathroom medicine cabinet with a single clean clear drinking glass on the middle shelf next to a box of adhesive bandages, a thermometer, a roll of gauze and a small pair of scissors, an older woman's hand placing the glass, white tiles, morning window light",
+    "motion": "the hand sets the glass on the shelf and the mirror door swings a little"
+   },
+   {
+    "n": "rd_press_home",
+    "p": "press the glass on them",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'apretá el vaso' → la mano presionando el vaso contra puntitos del tobillo en el baño",
+    "prompt": "close shot of an older woman's hand pressing a clear drinking glass against the inside of her ankle over a few tiny red dots while she sits on the closed toilet lid, a pink bath mat, a slipper, the edge of a white tub, bathroom light",
+    "motion": "the glass presses down and the skin around it whitens"
+   },
+   {
+    "n": "rd_dr_you_know",
+    "p": "If they don't fade, you know what to do.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'si no se borran, ya sabés qué hacer' → él levantando el teléfono, mirada firme y cálida",
+    "prompt": "standing by his desk holding up the handset of the office phone toward the camera with a firm, warm look and a small nod, a clear glass on the desk beside a stethoscope, a stack of charts, a desk lamp, bookshelf with plant, framed mountain print, daylight",
+    "motion": "he lifts the phone a little and nods once"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "So let's put this into a simple routine.",
+    "kind": "lowerthird",
+    "title": "The monthly skin check",
+    "kicker": "routine",
+    "desc": "once a month, after a shower, good light",
+    "tone": "teal"
+   },
+   {
+    "p": "And here's the trick that makes this work.",
+    "kind": "frasecinetica",
+    "words": [
+     {
+      "t": "TAKE"
+     },
+     {
+      "t": "PHOTOS.",
+      "hl": true
+     }
+    ],
+    "perWord": 12,
+    "tone": "teal"
+   },
+   {
+    "p": "Change is very hard to see from memory",
+    "kind": "splitcompare",
+    "eyebrow": "SAME SPOT, SAME COIN",
+    "title": "Compare, don't remember",
+    "left": {
+     "image": "img/rowereddots/rd_coin_closeup.jpg",
+     "label": "This month",
+     "note": "photo + coin for size"
+    },
+    "right": {
+     "image": "img/rowereddots/rd_coin_month2.jpg",
+     "label": "Next month",
+     "note": "same light, same angle"
+    },
+    "winner": "none"
+   },
+   {
+    "p": "You're looking for anything new",
+    "kind": "selfcheck",
+    "kicker": "Your monthly check",
+    "questions": [
+     {
+      "text": "Anything new?",
+      "img": "img/rowereddots/rd_wife_back.jpg",
+      "atP": "anything new"
+     },
+     {
+      "text": "Growing fast?",
+      "img": "img/rowereddots/rd_warn_grow.jpg",
+      "atP": "anything growing fast"
+     },
+     {
+      "text": "Bleeding?",
+      "img": "img/rowereddots/rd_warn_bleed.jpg",
+      "atP": "anything bleeding",
+      "tone": "danger"
+     },
+     {
+      "text": "The ugly duckling?",
+      "img": "img/rowereddots/rd_ugly_duckling.jpg",
+      "atP": "anything that is the ugly duckling",
+      "tone": "danger"
+     }
+    ],
+    "endP": "anything that is the ugly duckling."
+   },
+   {
+    "p": "Keep a clear glass in the bathroom cabinet.",
+    "kind": "selfcheck",
+    "kicker": "The glass test",
+    "questions": [
+     {
+      "text": "Sudden flat red dots?",
+      "img": "img/rowereddots/rd_press_home.jpg",
+      "atP": "a sudden crop of tiny flat red dots"
+     },
+     {
+      "text": "Do they fade under a glass?",
+      "img": "img/rowereddots/rd_glass_shin.jpg",
+      "atP": "press the glass on them"
+     },
+     {
+      "text": "No? Call your doctor today",
+      "img": "img/rowereddots/rd_dr_you_know.jpg",
+      "atP": "If they don't fade",
+      "tone": "danger"
+     }
+    ],
+    "endP": "you know what to do."
+   },
+   {
+    "p": "Let me leave you with the big picture.",
+    "kind": "carousel",
+    "mode": "recap",
+    "cards": [
+     {
+      "name": "Not your liver",
+      "img": "img/rowereddots/rd_liver_worry.jpg"
+     },
+     {
+      "name": "Not contagious",
+      "img": "img/rowereddots/rd_grandpa_hug.jpg"
+     },
+     {
+      "name": "Not cancer",
+      "img": "img/rowereddots/rd_dr_benign.jpg"
+     }
+    ],
+    "revealP": [
+     "They're not your liver",
+     "they're not contagious",
+     "they don't turn into cancer"
+    ],
+    "endP": "a few spots that are serious.",
+    "kicker": "The big picture",
+    "title": "What to remember",
+    "bed": "img/rowereddots/rd_couple_dock.jpg"
+   }
+  ]
+ },
+ {
+  "id": "s13_cierre",
+  "nombre": "Cierre y CTA",
+  "objetivo": "la foto grande, la guía en la descripción, educación, suscribirse",
+  "momentos": [
+   {
+    "n": "rd_couple_dock",
+    "p": "your skin has been around for a while",
+    "tipo": "gen",
+    "enc": "abierto",
+    "seg": 3.5,
+    "porque": "'tu piel ya tiene sus años' → pareja mayor al sol en el lago, tranquila",
+    "prompt": "wide shot of a 74-year-old husband and wife sitting on the edge of a wooden lake dock with their feet in the water, he in an open short-sleeved shirt with a few red dots on his chest, she in a sun hat, both laughing, a thermos and two mugs between them, a fishing rod leaning on a post, pine trees, sparkling water, golden late afternoon light",
+    "motion": "their feet kick the water gently and the ripples spread"
+   },
+   {
+    "n": "rd_neighborhood",
+    "p": "they share the neighborhood with a few spots that are serious",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3.5,
+    "porque": "'comparten el barrio con unos pocos serios' → muchos puntitos rojos y una lesión rara entre ellos, con la lupa",
+    "prompt": "close shot of an older man's upper back under a round magnifying lamp, many small round red cherry dots and freckles and one irregular dark pink crusted bump among them circled lightly with a surgical skin marker, a gloved hand holding the marker, the edge of a paper gown, clinic light",
+    "motion": "the marker finishes the circle around the odd bump"
+   },
+   {
+    "n": "rd_mirror_print",
+    "p": "print it for your bathroom mirror",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'imprimila para el espejo del baño' → una hojita pegada con cinta al borde del espejo",
+    "prompt": "medium shot of a bathroom mirror with a single printed checklist sheet taped to its lower corner with blue painter's tape, an older woman's hand smoothing the tape, a clear glass on the shelf below, a toothbrush cup, a hand towel, white tiles, bright morning light",
+    "motion": "her hand presses the tape flat and the page settles"
+   },
+   {
+    "n": "rd_share_friends",
+    "p": "share it with someone who has been quietly counting red dots in the mirror",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'compartilo con alguien que cuenta puntitos en silencio' → dos amigos jubilados en el café, uno le muestra el celular al otro",
+    "prompt": "medium shot of two retired men in their seventies at a small diner counter, one holding out his phone with a dark screen toward the other and tapping his own chest with a knowing grin, the friend raising his eyebrows and laughing, cups of coffee, a slice of pie, a sugar dispenser, a napkin holder, a chrome counter, morning window light",
+    "motion": "he taps his chest and his friend leans in laughing"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "I put the full monthly skin check",
+    "kind": "lowerthird",
+    "title": "The monthly skin check",
+    "kicker": "in the description",
+    "desc": "glass test + warning signs, ready to print",
+    "tone": "teal"
+   },
+   {
+    "p": "If this helped you",
+    "kind": "presenter",
+    "mode": "signoff",
+    "img": "img/rowereddots/rd_doc_cutout.png",
+    "bg": "img/rowereddots/rd_dr_glass_desk.jpg",
+    "kicker": "Subscribe",
+    "role": "Everyday skin questions after 60",
+    "endP": "I read them."
+   }
+  ]
+ }
 ]

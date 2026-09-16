@@ -1,54 +1,441 @@
 [
-{"id":"s3_aspecto","nombre":"Cómo se ven + la prueba del vaso (siembra)","objetivo":"que el espectador compare con los suyos: forma, color, evolución, dónde salen; sembrar el vaso",
-"momentos":[
-{"n":"rd_dr_arm_lamp","p":"Now let me describe what they usually look like","tipo":"pres","enc":"medio","seg":4,"porque":"'te describo cómo se ven' → él examinando el brazo de un paciente con la lámpara lupa","prompt":"seated on a rolling stool, holding a lighted magnifying lamp on an articulated arm over the upper arm of an older man in a rolled-up sleeve, pointing with a capped pen at a small red dot, explaining with an engaged, friendly expression and eyebrows slightly raised, a box of gloves, a jar of cotton swabs, an exam table with paper roll, a wall-mounted otoscope, a framed mountain print, window daylight","motion":"he moves the pen tip slowly around the dot as if tracing its edge"},
-{"n":"rd_round_oval","p":"A cherry angioma is round or slightly oval.","tipo":"gen","enc":"cerrado","seg":3,"porque":"'redondo o apenas ovalado' → un puntito con una regla milimetrada al lado","prompt":"close shot of the upper chest skin of an older man with one round, slightly oval cherry-red spot, a small clear plastic millimeter ruler held flat right next to it by gloved fingertips, a few freckles and pores, the edge of a white paper exam gown, the chrome arm of an exam lamp and a steel tray with cotton swabs at the side of the frame, bright clinic light","motion":"the gloved fingers slide the ruler a millimeter closer to the spot"},
-{"n":"rd_color_range","p":"sometimes a deeper red or even purple as it gets older","tipo":"gen","enc":"cerrado","seg":3.5,"porque":"'a veces más oscuro o morado con los años' → varios puntos en distintos tonos en un hombro","prompt":"close shot of the freckled shoulder and upper back of a 78-year-old woman in a lowered cardigan, several round spots in different shades side by side: one bright cherry red, one deeper crimson, one dark purple, a bra strap of beige cotton, the soft wool of the cardigan, a wooden chair back, a window with afternoon sun behind","motion":"the cardigan slides a little lower off her shoulder"},
-{"n":"rd_pinpoint_new","p":"When it is new, it is usually flat and tiny, like a pinpoint.","tipo":"gen","enc":"cerrado","seg":3,"porque":"'nuevo es plano y chiquito como una punta' → un puntito recién salido al lado de una peca","prompt":"close shot of the forearm of an older man resting on the arm of a green recliner, a brand-new flat red dot no bigger than the tip of a pin next to a light brown freckle, the tip of a sewing needle held by his other fingers a few centimeters away for size, the ribbed fabric of the chair, a TV remote, a newspaper on his lap, warm lamp light","motion":"his fingers hold the needle still while the lamp light glints on its tip"},
-{"n":"rd_dome_wax","p":"like a tiny drop of red wax sitting on the skin","tipo":"gen","enc":"cerrado","seg":3.5,"porque":"'como una gotita de cera roja' → el domo brillante de perfil, con la vela roja goteando al lado","prompt":"close side-lit shot of a raised, smooth and shiny dome-shaped cherry-red spot on the chest skin of an older man, seen almost from the side so its little dome catches a highlight, next to it on the nightstand a red candle with a fresh drop of red wax on its holder, a book of matches, the corner of a pillowcase, warm evening lamp light","motion":"the candle flame flickers and the highlight on the dome moves slightly"},
-{"n":"rd_trunk_porch","p":"the trunk of the body","tipo":"gen","enc":"abierto","seg":3.5,"porque":"'el tronco del cuerpo' → un señor sin camisa en el muelle, los puntitos repartidos en el torso","prompt":"wide shot of a 73-year-old man standing shirtless at the end of a wooden lake dock holding a fishing rod, his chest, belly and upper arms scattered with small red dots, a tackle box and a cooler at his feet, a folded towel, a canoe tied to a post, pine trees on the far shore, calm water reflecting a blue sky, bright late morning light","motion":"the fishing line sways and small ripples move across the water"},
-{"n":"rd_no_itch","p":"And they usually don't hurt and don't itch.","tipo":"gen","enc":"medio","seg":3.5,"porque":"'no duelen ni pican' → una señora trabajando la huerta tranquila, con puntitos en el brazo","prompt":"medium shot of a 70-year-old woman in a sleeveless cotton top kneeling at a raised garden bed planting tomato seedlings, relaxed and smiling to herself, a few small red dots on her upper arm, dirt on her garden gloves, a trowel, a watering can, a flat of seedlings, a wheelbarrow, a wooden fence with climbing beans, warm morning sun","motion":"she presses the soil around a seedling with both hands"},
-{"n":"rd_dr_press_glass","p":"Take a clear drinking glass and press it gently against the spot.","tipo":"pres","enc":"medio","seg":4,"porque":"'tomá un vaso y apretalo contra el punto' → él haciéndolo sobre el antebrazo de un paciente","prompt":"leaning over an exam table and pressing the bottom of a plain clear drinking glass gently against a red dot on the forearm of an older woman patient, both of them looking closely at the skin through the glass, his face focused with a slight curious smile, a box of tissues, a steel tray, a paper roll on the table, a wall clock, a framed mountain print, soft daylight","motion":"he presses the glass a little more and tilts his head to look through it"},
-{"n":"rd_glass_paler","p":"get a bit paler under the pressure","tipo":"gen","enc":"cerrado","seg":3,"porque":"'se pone un poco más pálido' → el punto visto a través del fondo del vaso, más claro","prompt":"close shot looking straight down through the thick round bottom of a clear drinking glass pressed onto the forearm skin of an older person, the skin under the glass slightly whitened and a red dot beneath it looking paler and pinker than two identical red dots just outside the rim, fingers holding the glass, reflections on the glass edge, a checked tablecloth around","motion":"the glass presses down and the dot under it fades a little paler"},
-{"n":"rd_dr_glass_mind","p":"Keep that glass in mind","tipo":"pres","enc":"medio","seg":3.5,"porque":"'guardate ese vaso en la cabeza' → él tocándose la sien y señalando el vaso, cómplice","prompt":"sitting on the edge of his desk, setting a clear drinking glass down on the wood and tapping his temple with one finger, looking at the camera with a warm conspiratorial smile, a stethoscope around his neck, a stack of patient folders, a coffee mug, a desk lamp, a tall bookshelf with a trailing plant, a framed mountain print, daylight","motion":"he taps his temple twice and leaves his hand next to the glass"}
-],
-"componentes":[
-{"p":"A cherry angioma is round or slightly oval.","kind":"checklist","title":"What a cherry angioma looks like","tone":"teal","image":"img/rowereddots/rd_round_oval.jpg","items":[{"text":"Round or slightly oval","state":"ok"},{"text":"Bright red, darker with age","state":"ok"},{"text":"Flat pinpoint, then a smooth dome","state":"ok"}]},
-{"p":"like a tiny drop of red wax sitting on the skin","kind":"freezezoom","image":"img/rowereddots/rd_dome_wax.jpg","x":0.48,"y":0.5,"label":"a smooth, shiny red dome","zoom":1.7,"tone":"teal"},
-{"p":"They show up most on the chest","kind":"bodymap","title":"Where they show up most","stops":[{"n":1,"label":"Chest","x":0.5,"y":0.3},{"n":2,"label":"Upper arms","x":0.15,"y":0.32},{"n":3,"label":"Belly","x":0.52,"y":0.46},{"n":4,"label":"Back (ask for help)","x":0.84,"y":0.36}],"sfx":true},
-{"p":"because we are going to come back to it","kind":"frasecinetica","words":[{"t":"REMEMBER"},{"t":"THE"},{"t":"GLASS.","hl":true}],"perWord":10,"tone":"teal"}
-]},
-{"id":"s4_porque","nombre":"Por qué salen","objetivo":"edad, familia, hormonas, algunos medicamentos: sacar la culpa",
-"momentos":[
-{"n":"rd_dr_old_photo","p":"the biggest reason is simply age","tipo":"pres","enc":"medio","seg":4,"porque":"'la razón principal es la edad' → él mirando una foto suya de joven, sonriendo con nostalgia","prompt":"standing by the bookshelf in his office holding a small framed photograph of himself as a young medical student in the 1990s, looking at it with a nostalgic, amused smile, a few gray hairs visible at his temples, medical books and a trailing plant on the shelf, a framed mountain print, a coat rack, soft window daylight","motion":"he tilts the frame slightly toward the light and his smile widens"},
-{"n":"rd_family_album","p":"If your mother or your father had a lot of red dots","tipo":"gen","enc":"medio","seg":3.5,"porque":"'si tu mamá o tu papá tenía muchos' → madre anciana e hijo mirando fotos viejas de la familia","prompt":"medium shot of a 45-year-old man and his 80-year-old mother sitting close together on a floral sofa looking through an old family photo album, she points at a faded 1970s beach photo of her late husband in swim trunks, both smiling, the son's forearm with two small red dots, a crocheted blanket over the armrest, a lamp, a cup of tea, a bookcase with knick-knacks, afternoon light","motion":"her finger taps the old photo and he leans in closer"},
-{"n":"rd_pregnancy","p":"some women notice new ones during pregnancy","tipo":"gen","enc":"medio","seg":3.5,"porque":"'algunas mujeres notan nuevos en el embarazo' → una embarazada doblando ropa de bebé","prompt":"medium shot of a pregnant woman in her thirties in a soft grey maternity tank top folding tiny baby onesies in a half-finished nursery, looking down at a couple of small red dots near her collarbone with mild curiosity, a white crib with a folded blanket, a rocking chair, a stack of diapers, a mobile hanging from the ceiling, a window with sheer curtains and daylight","motion":"she smooths a onesie on her belly and the mobile turns slowly"},
-{"n":"rd_garage_chemicals","p":"a few medicines and chemical exposures have been linked to them","tipo":"gen","enc":"medio","seg":3.5,"porque":"'algunos medicamentos y químicos' → estante de garaje con latas de químicos junto a un pastillero","prompt":"medium shot of a cluttered garage workbench with old unlabeled metal cans and plastic jugs of chemicals on a shelf, a pair of rubber gloves, a respirator mask on a hook, next to them on the bench a weekly plastic pill organizer and a coffee thermos, a pegboard with tools, a shop light hanging from a chain, a dusty window with daylight","motion":"the hanging shop light sways a little on its chain"}
-],
-"componentes":[
-{"p":"The honest answer is that the biggest reason is simply age.","kind":"carrusel","title":"Why they appear","tone":"teal","focus":0,"items":"@why"},
-{"p":"Hormones can play a part","kind":"carrusel","title":"Why they appear","tone":"teal","focus":2,"items":"@why"},
-{"p":"it is just time and genes","kind":"frasecinetica","words":[{"t":"TIME"},{"t":"+"},{"t":"GENES.","hl":true}],"perWord":10,"tone":"teal"}
-]},
-{"id":"s5_mitos","nombre":"Tres mitos y la prevención","objetivo":"desarmar hígado / comida-higiene-contagio / cáncer; no gastar en productos milagro",
-"momentos":[
-{"n":"rd_liver_worry","p":"Red dots mean your liver is bad.","tipo":"gen","enc":"medio","seg":3.5,"porque":"'los puntos rojos significan hígado malo' → un señor asustado leyendo sobre el hígado","prompt":"medium shot of a 67-year-old man sitting at his kitchen table late at night in a bathrobe, one hand pressed against the right side of his ribs, staring at a tablet with a dark reflective screen, worried with his mouth tight and forehead creased, a cold cup of coffee, reading glasses pushed up on his head, a stack of mail, a fruit bowl, a dark window reflecting the kitchen light","motion":"he rubs his side slowly and leans closer to the tablet"},
-{"n":"rd_spider_angioma","p":"like the legs of a spider","tipo":"gen","enc":"cerrado","seg":3,"porque":"'como las patas de una araña' → una araña vascular en la mejilla, centro rojo con patitas","prompt":"close shot of the cheek of a 60-year-old woman showing a spider angioma: a tiny bright red central dot with thin red threadlike vessels radiating out around it like the legs of a spider, fine skin texture and a few freckles, the edge of her pearl earring and grey hair, a bathroom mirror frame and a soft white towel at the side, daylight from a window","motion":"her head turns slightly toward the light"},
-{"n":"rd_mirror_compare_dots","p":"That is not the same thing as a round cherry dot.","tipo":"gen","enc":"medio","seg":3.5,"porque":"'no es lo mismo que un punto redondo' → la señora comparando su mejilla con el punto del brazo","prompt":"medium shot of a 63-year-old woman at her bathroom vanity holding a round magnifying makeup mirror up to her cheek while looking at a round red dot on her other forearm, comparing the two with a thoughtful frown, a jar of face cream, a hairbrush, a small plant on the windowsill, white subway tiles, a towel ring, warm vanity lights","motion":"she tilts the round mirror and turns her forearm toward the light"},
-{"n":"rd_bacon_beer","p":"something you ate, or by drinking too much","tipo":"gen","enc":"medio","seg":3,"porque":"'algo que comiste o tomaste' → la mesa del domingo con panceta y cerveza","prompt":"medium shot of a diner-style breakfast table with a plate of fried eggs and crispy bacon, a glass of beer half full, a bottle of ketchup, a salt shaker, a crumpled napkin, an older man's hand holding a fork, his short sleeve showing a red dot on his forearm, a window booth with morning light and a parking lot outside","motion":"the fork cuts into the egg and the yolk slowly runs"},
-{"n":"rd_grandpa_hug","p":"you cannot give them to your grandchildren","tipo":"gen","enc":"medio","seg":3.5,"porque":"'no se los podés contagiar a tus nietos' → abuelo en camiseta abrazando al nieto en el sillón","prompt":"medium shot of a laughing 72-year-old grandfather in a sleeveless white undershirt on a living room couch hugging his 6-year-old granddaughter who climbs onto his lap, small red dots on his shoulders and chest, a picture book fallen on the cushion, a toy dinosaur, a bowl of popcorn, a lamp, family photos on the wall, afternoon sun through the blinds","motion":"the girl wraps her arms around his neck and he rocks her side to side"},
-{"n":"rd_dr_benign","p":"Cherry angiomas are benign.","tipo":"pres","enc":"medio","seg":3.5,"porque":"'son benignos' → él dándole la buena noticia a un paciente que suspira aliviado","prompt":"sitting across his desk from an older man in a checked shirt, leaning forward with his hands folded and a warm, relieved smile as he delivers good news, the patient exhaling with his hand on his chest, a laptop turned away, a mug of coffee, a box of tissues, a bookshelf with a plant, a framed mountain print, daylight","motion":"the patient leans back in his chair and the doctor nods with a smile"},
-{"n":"rd_cream_shelf","p":"There is no cream, no vitamin and no special diet","tipo":"gen","enc":"medio","seg":3.5,"porque":"'ni crema ni vitamina ni dieta' → el estante del baño lleno de frascos que no sirven","prompt":"medium shot of an overcrowded bathroom shelf crammed with plain unlabeled jars of cream, amber vitamin bottles, a tube of ointment, a bottle of fish oil capsules, cotton pads, a half-used bar of soap, a sticky note-free mirror above, white tiles, a hand towel, bright morning light from a small window","motion":"one jar slides a little and bumps the vitamin bottle"},
-{"n":"rd_sunscreen_porch","p":"Sunscreen is still a great habit for your skin in general","tipo":"gen","enc":"medio","seg":3.5,"porque":"'el protector solar sigue siendo buen hábito' → una señora poniéndole protector al marido en la galería","prompt":"medium shot of a 70-year-old woman rubbing white sunscreen onto the shoulders of her husband who sits on the porch steps in a tank top before gardening, both smiling, a wide-brimmed straw hat, a tube of sunscreen without label, garden gloves, a basket of tools, potted geraniums, a screen door, bright morning sun","motion":"her hands spread the sunscreen across his shoulder"},
-{"n":"rd_miracle_bottle","p":"a product that promises to make them vanish","tipo":"gen","enc":"medio","seg":3.5,"porque":"'un producto que promete hacerlos desaparecer' → la caja del envío abierta con el frasquito milagro","prompt":"medium shot of an opened cardboard shipping box on a kitchen counter with crumpled brown packing paper and a small dark glass dropper bottle without any label lying inside, an older man's hands holding the receipt and his reading glasses, a skeptical raised eyebrow reflected in the dark oven door, a pair of scissors, a set of keys, a fruit bowl, window light","motion":"his hands turn the little bottle over and the packing paper rustles"},
-{"n":"rd_dr_wallet","p":"keep your wallet in your pocket","tipo":"pres","enc":"medio","seg":3.5,"porque":"'guardá la billetera' → él empujando el frasquito con un dedo y palmeando su bolsillo, divertido","prompt":"sitting at his desk, pushing a small unlabeled dropper bottle away across the wood with one finger while patting the pocket of his white coat with the other hand, shaking his head with an amused, knowing grin, a stethoscope around his neck, a stack of folders, a coffee mug, a desk lamp, bookshelf with plant, framed mountain print, daylight","motion":"the bottle slides a few centimeters across the desk and he pats his pocket"}
-],
-"componentes":[
-{"p":"Myth number one.","kind":"mitoverdad","myth":"Red dots mean a bad liver","truth":"Round cherry dots are not a liver sign","image":"img/rowereddots/rd_liver_worry.jpg","flipPhrase":"Cherry angiomas by themselves are not a sign of liver disease."},
-{"p":"That is not the same thing as a round cherry dot.","kind":"splitcompare","eyebrow":"NOT THE SAME SPOT","title":"Spider vs. cherry","left":{"image":"img/rowereddots/rd_spider_angioma.jpg","label":"Spider angioma","note":"red center + thin legs"},"right":{"image":"img/rowereddots/rd_round_oval.jpg","label":"Cherry angioma","note":"a round dot, no legs"},"winner":"none"},
-{"p":"Myth number two.","kind":"mitoverdad","myth":"Caused by food, drink or dirt","truth":"Not diet, not hygiene, not contagious","image":"img/rowereddots/rd_grandpa_hug.jpg","flipPhrase":"No. They are not about your diet"},
-{"p":"Myth number three.","kind":"mitoverdad","myth":"Left alone, they turn into cancer","truth":"Benign. They don't become skin cancer.","image":"img/rowereddots/rd_dr_benign.jpg","flipPhrase":"Cherry angiomas are benign."},
-{"p":"There is no cream, no vitamin and no special diet","kind":"datoimpacto","figure":"0","eyebrow":"CREAMS PROVEN TO PREVENT THEM","caption":"no cream, vitamin or diet","image":"img/rowereddots/rd_cream_shelf.jpg","tone":"warn"},
-{"p":"keep your wallet in your pocket","kind":"frasecinetica","words":[{"t":"KEEP"},{"t":"YOUR"},{"t":"WALLET.","hl":true}],"perWord":10,"tone":"warn"}
-]}
+ {
+  "id": "s3_aspecto",
+  "nombre": "Cómo se ven + la prueba del vaso (siembra)",
+  "objetivo": "que el espectador compare con los suyos: forma, color, evolución, dónde salen; sembrar el vaso",
+  "momentos": [
+   {
+    "n": "rd_dr_arm_lamp",
+    "p": "Now let me describe what they usually look like",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 4,
+    "porque": "'te describo cómo se ven' → él examinando el brazo de un paciente con la lámpara lupa",
+    "prompt": "seated on a rolling stool, holding a lighted magnifying lamp on an articulated arm over the upper arm of an older man in a rolled-up sleeve, pointing with a capped pen at a small red dot, explaining with an engaged, friendly expression and eyebrows slightly raised, a box of gloves, a jar of cotton swabs, an exam table with paper roll, a wall-mounted otoscope, a framed mountain print, window daylight",
+    "motion": "he moves the pen tip slowly around the dot as if tracing its edge"
+   },
+   {
+    "n": "rd_round_oval",
+    "p": "A cherry angioma is round or slightly oval.",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'redondo o apenas ovalado' → un puntito con una regla milimetrada al lado",
+    "prompt": "close shot of the upper chest skin of an older man with one round, slightly oval cherry-red spot, a small clear plastic millimeter ruler held flat right next to it by gloved fingertips, a few freckles and pores, the edge of a white paper exam gown, the chrome arm of an exam lamp and a steel tray with cotton swabs at the side of the frame, bright clinic light",
+    "motion": "the gloved fingers slide the ruler a millimeter closer to the spot"
+   },
+   {
+    "n": "rd_color_range",
+    "p": "sometimes a deeper red or even purple as it gets older",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3.5,
+    "porque": "'a veces más oscuro o morado con los años' → varios puntos en distintos tonos en un hombro",
+    "prompt": "close shot of the freckled shoulder and upper back of a 78-year-old woman in a lowered cardigan, several round spots in different shades side by side: one bright cherry red, one deeper crimson, one dark purple, a bra strap of beige cotton, the soft wool of the cardigan, a wooden chair back, a window with afternoon sun behind",
+    "motion": "the cardigan slides a little lower off her shoulder"
+   },
+   {
+    "n": "rd_pinpoint_new",
+    "p": "When it is new, it is usually flat and tiny, like a pinpoint.",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'nuevo es plano y chiquito como una punta' → un puntito recién salido al lado de una peca",
+    "prompt": "close shot of the forearm of an older man resting on the arm of a green recliner, a brand-new flat red dot no bigger than the tip of a pin next to a light brown freckle, the tip of a sewing needle held by his other fingers a few centimeters away for size, the ribbed fabric of the chair, a TV remote, a newspaper on his lap, warm lamp light",
+    "motion": "his fingers hold the needle still while the lamp light glints on its tip"
+   },
+   {
+    "n": "rd_dome_wax",
+    "p": "like a tiny drop of red wax sitting on the skin",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3.5,
+    "porque": "'como una gotita de cera roja' → el domo brillante de perfil, con la vela roja goteando al lado",
+    "prompt": "close side-lit shot of a raised, smooth and shiny dome-shaped cherry-red spot on the chest skin of an older man, seen almost from the side so its little dome catches a highlight, next to it on the nightstand a red candle with a fresh drop of red wax on its holder, a book of matches, the corner of a pillowcase, warm evening lamp light",
+    "motion": "the candle flame flickers and the highlight on the dome moves slightly"
+   },
+   {
+    "n": "rd_trunk_porch",
+    "p": "the trunk of the body",
+    "tipo": "gen",
+    "enc": "abierto",
+    "seg": 3.5,
+    "porque": "'el tronco del cuerpo' → un señor sin camisa en el muelle, los puntitos repartidos en el torso",
+    "prompt": "wide shot of a 73-year-old man standing shirtless at the end of a wooden lake dock holding a fishing rod, his chest, belly and upper arms scattered with small red dots, a tackle box and a cooler at his feet, a folded towel, a canoe tied to a post, pine trees on the far shore, calm water reflecting a blue sky, bright late morning light",
+    "motion": "the fishing line sways and small ripples move across the water"
+   },
+   {
+    "n": "rd_no_itch",
+    "p": "And they usually don't hurt and don't itch.",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'no duelen ni pican' → una señora trabajando la huerta tranquila, con puntitos en el brazo",
+    "prompt": "medium shot of a 70-year-old woman in a sleeveless cotton top kneeling at a raised garden bed planting tomato seedlings, relaxed and smiling to herself, a few small red dots on her upper arm, dirt on her garden gloves, a trowel, a watering can, a flat of seedlings, a wheelbarrow, a wooden fence with climbing beans, warm morning sun",
+    "motion": "she presses the soil around a seedling with both hands"
+   },
+   {
+    "n": "rd_dr_press_glass",
+    "p": "Take a clear drinking glass and press it gently against the spot.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 4,
+    "porque": "'tomá un vaso y apretalo contra el punto' → él haciéndolo sobre el antebrazo de un paciente",
+    "prompt": "leaning over an exam table and pressing the bottom of a plain clear drinking glass gently against a red dot on the forearm of an older woman patient, both of them looking closely at the skin through the glass, his face focused with a slight curious smile, a box of tissues, a steel tray, a paper roll on the table, a wall clock, a framed mountain print, soft daylight",
+    "motion": "he presses the glass a little more and tilts his head to look through it"
+   },
+   {
+    "n": "rd_glass_paler",
+    "p": "get a bit paler under the pressure",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'se pone un poco más pálido' → el punto visto a través del fondo del vaso, más claro",
+    "prompt": "close shot looking straight down through the thick round bottom of a clear drinking glass pressed onto the forearm skin of an older person, the skin under the glass slightly whitened and a red dot beneath it looking paler and pinker than two identical red dots just outside the rim, fingers holding the glass, reflections on the glass edge, a checked tablecloth around",
+    "motion": "the glass presses down and the dot under it fades a little paler"
+   },
+   {
+    "n": "rd_dr_glass_mind",
+    "p": "Keep that glass in mind",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'guardate ese vaso en la cabeza' → él tocándose la sien y señalando el vaso, cómplice",
+    "prompt": "sitting on the edge of his desk, setting a clear drinking glass down on the wood and tapping his temple with one finger, looking at the camera with a warm conspiratorial smile, a stethoscope around his neck, a stack of patient folders, a coffee mug, a desk lamp, a tall bookshelf with a trailing plant, a framed mountain print, daylight",
+    "motion": "he taps his temple twice and leaves his hand next to the glass"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "A cherry angioma is round or slightly oval.",
+    "kind": "checklist",
+    "title": "What a cherry angioma looks like",
+    "tone": "teal",
+    "image": "img/rowereddots/rd_round_oval.jpg",
+    "items": [
+     {
+      "text": "Round or slightly oval",
+      "state": "ok"
+     },
+     {
+      "text": "Bright red, darker with age",
+      "state": "ok"
+     },
+     {
+      "text": "Flat pinpoint, then a smooth dome",
+      "state": "ok"
+     }
+    ]
+   },
+   {
+    "p": "like a tiny drop of red wax sitting on the skin",
+    "kind": "freezezoom",
+    "image": "img/rowereddots/rd_dome_wax.jpg",
+    "x": 0.48,
+    "y": 0.5,
+    "label": "a smooth, shiny red dome",
+    "zoom": 1.7,
+    "tone": "teal"
+   },
+   {
+    "p": "They show up most on the chest",
+    "kind": "bodymap",
+    "title": "Where they show up most",
+    "stops": [
+     {
+      "n": 1,
+      "label": "Chest",
+      "x": 0.5,
+      "y": 0.3
+     },
+     {
+      "n": 2,
+      "label": "Upper arms",
+      "x": 0.15,
+      "y": 0.32
+     },
+     {
+      "n": 3,
+      "label": "Belly",
+      "x": 0.52,
+      "y": 0.46
+     },
+     {
+      "n": 4,
+      "label": "Back (ask for help)",
+      "x": 0.84,
+      "y": 0.36
+     }
+    ],
+    "sfx": true
+   },
+   {
+    "p": "because we are going to come back to it",
+    "kind": "frasecinetica",
+    "words": [
+     {
+      "t": "REMEMBER"
+     },
+     {
+      "t": "THE"
+     },
+     {
+      "t": "GLASS.",
+      "hl": true
+     }
+    ],
+    "perWord": 10,
+    "tone": "teal"
+   }
+  ]
+ },
+ {
+  "id": "s4_porque",
+  "nombre": "Por qué salen",
+  "objetivo": "edad, familia, hormonas, algunos medicamentos: sacar la culpa",
+  "momentos": [
+   {
+    "n": "rd_dr_old_photo",
+    "p": "the biggest reason is simply age",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 4,
+    "porque": "'la razón principal es la edad' → él mirando una foto suya de joven, sonriendo con nostalgia",
+    "prompt": "standing by the bookshelf in his office holding a small framed photograph of himself as a young medical student in the 1990s, looking at it with a nostalgic, amused smile, a few gray hairs visible at his temples, medical books and a trailing plant on the shelf, a framed mountain print, a coat rack, soft window daylight",
+    "motion": "he tilts the frame slightly toward the light and his smile widens"
+   },
+   {
+    "n": "rd_family_album",
+    "p": "If your mother or your father had a lot of red dots",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'si tu mamá o tu papá tenía muchos' → madre anciana e hijo mirando fotos viejas de la familia",
+    "prompt": "medium shot of a 45-year-old man and his 80-year-old mother sitting close together on a floral sofa looking through an old family photo album, she points at a faded 1970s beach photo of her late husband in swim trunks, both smiling, the son's forearm with two small red dots, a crocheted blanket over the armrest, a lamp, a cup of tea, a bookcase with knick-knacks, afternoon light",
+    "motion": "her finger taps the old photo and he leans in closer"
+   },
+   {
+    "n": "rd_pregnancy",
+    "p": "some women notice new ones during pregnancy",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'algunas mujeres notan nuevos en el embarazo' → una embarazada doblando ropa de bebé",
+    "prompt": "medium shot of a pregnant woman in her thirties in a soft grey maternity tank top folding tiny baby onesies in a half-finished nursery, looking down at a couple of small red dots near her collarbone with mild curiosity, a white crib with a folded blanket, a rocking chair, a stack of diapers, a mobile hanging from the ceiling, a window with sheer curtains and daylight",
+    "motion": "she smooths a onesie on her belly and the mobile turns slowly"
+   },
+   {
+    "n": "rd_garage_chemicals",
+    "p": "a few medicines and chemical exposures have been linked to them",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'algunos medicamentos y químicos' → estante de garaje con latas de químicos junto a un pastillero",
+    "prompt": "medium shot of a cluttered garage workbench with old unlabeled metal cans and plastic jugs of chemicals on a shelf, a pair of rubber gloves, a respirator mask on a hook, next to them on the bench a weekly plastic pill organizer and a coffee thermos, a pegboard with tools, a shop light hanging from a chain, a dusty window with daylight",
+    "motion": "the hanging shop light sways a little on its chain"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "The honest answer is that the biggest reason is simply age.",
+    "kind": "carrusel",
+    "title": "Why they appear",
+    "tone": "teal",
+    "focus": 0,
+    "items": "@why"
+   },
+   {
+    "p": "it is just time and genes",
+    "kind": "frasecinetica",
+    "words": [
+     {
+      "t": "TIME"
+     },
+     {
+      "t": "+"
+     },
+     {
+      "t": "GENES.",
+      "hl": true
+     }
+    ],
+    "perWord": 10,
+    "tone": "teal"
+   }
+  ]
+ },
+ {
+  "id": "s5_mitos",
+  "nombre": "Tres mitos y la prevención",
+  "objetivo": "desarmar hígado / comida-higiene-contagio / cáncer; no gastar en productos milagro",
+  "momentos": [
+   {
+    "n": "rd_liver_worry",
+    "p": "Red dots mean your liver is bad.",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'los puntos rojos significan hígado malo' → un señor asustado leyendo sobre el hígado",
+    "prompt": "medium shot of a 67-year-old man sitting at his kitchen table late at night in a bathrobe, one hand pressed against the right side of his ribs, staring at a tablet with a dark reflective screen, worried with his mouth tight and forehead creased, a cold cup of coffee, reading glasses pushed up on his head, a stack of mail, a fruit bowl, a dark window reflecting the kitchen light",
+    "motion": "he rubs his side slowly and leans closer to the tablet"
+   },
+   {
+    "n": "rd_spider_angioma",
+    "p": "like the legs of a spider",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'como las patas de una araña' → una araña vascular en la mejilla, centro rojo con patitas",
+    "prompt": "close shot of the cheek of a 60-year-old woman showing a spider angioma: a tiny bright red central dot with thin red threadlike vessels radiating out around it like the legs of a spider, fine skin texture and a few freckles, the edge of her pearl earring and grey hair, a bathroom mirror frame and a soft white towel at the side, daylight from a window",
+    "motion": "her head turns slightly toward the light"
+   },
+   {
+    "n": "rd_mirror_compare_dots",
+    "p": "That is not the same thing as a round cherry dot.",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'no es lo mismo que un punto redondo' → la señora comparando su mejilla con el punto del brazo",
+    "prompt": "medium shot of a 63-year-old woman at her bathroom vanity holding a round magnifying makeup mirror up to her cheek while looking at a round red dot on her other forearm, comparing the two with a thoughtful frown, a jar of face cream, a hairbrush, a small plant on the windowsill, white subway tiles, a towel ring, warm vanity lights",
+    "motion": "she tilts the round mirror and turns her forearm toward the light"
+   },
+   {
+    "n": "rd_bacon_beer",
+    "p": "something you ate, or by drinking too much",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'algo que comiste o tomaste' → la mesa del domingo con panceta y cerveza",
+    "prompt": "medium shot of a diner-style breakfast table with a plate of fried eggs and crispy bacon, a glass of beer half full, a bottle of ketchup, a salt shaker, a crumpled napkin, an older man's hand holding a fork, his short sleeve showing a red dot on his forearm, a window booth with morning light and a parking lot outside",
+    "motion": "the fork cuts into the egg and the yolk slowly runs"
+   },
+   {
+    "n": "rd_grandpa_hug",
+    "p": "you cannot give them to your grandchildren",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'no se los podés contagiar a tus nietos' → abuelo en camiseta abrazando al nieto en el sillón",
+    "prompt": "medium shot of a laughing 72-year-old grandfather in a sleeveless white undershirt on a living room couch hugging his 6-year-old granddaughter who climbs onto his lap, small red dots on his shoulders and chest, a picture book fallen on the cushion, a toy dinosaur, a bowl of popcorn, a lamp, family photos on the wall, afternoon sun through the blinds",
+    "motion": "the girl wraps her arms around his neck and he rocks her side to side"
+   },
+   {
+    "n": "rd_dr_benign",
+    "p": "Cherry angiomas are benign.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'son benignos' → él dándole la buena noticia a un paciente que suspira aliviado",
+    "prompt": "sitting across his desk from an older man in a checked shirt, leaning forward with his hands folded and a warm, relieved smile as he delivers good news, the patient exhaling with his hand on his chest, a laptop turned away, a mug of coffee, a box of tissues, a bookshelf with a plant, a framed mountain print, daylight",
+    "motion": "the patient leans back in his chair and the doctor nods with a smile"
+   },
+   {
+    "n": "rd_cream_shelf",
+    "p": "There is no cream, no vitamin and no special diet",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'ni crema ni vitamina ni dieta' → el estante del baño lleno de frascos que no sirven",
+    "prompt": "medium shot of an overcrowded bathroom shelf crammed with plain unlabeled jars of cream, amber vitamin bottles, a tube of ointment, a bottle of fish oil capsules, cotton pads, a half-used bar of soap, a sticky note-free mirror above, white tiles, a hand towel, bright morning light from a small window",
+    "motion": "one jar slides a little and bumps the vitamin bottle"
+   },
+   {
+    "n": "rd_sunscreen_porch",
+    "p": "Sunscreen is still a great habit for your skin in general",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'el protector solar sigue siendo buen hábito' → una señora poniéndole protector al marido en la galería",
+    "prompt": "medium shot of a 70-year-old woman rubbing white sunscreen onto the shoulders of her husband who sits on the porch steps in a tank top before gardening, both smiling, a wide-brimmed straw hat, a tube of sunscreen without label, garden gloves, a basket of tools, potted geraniums, a screen door, bright morning sun",
+    "motion": "her hands spread the sunscreen across his shoulder"
+   },
+   {
+    "n": "rd_miracle_bottle",
+    "p": "a product that promises to make them vanish",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'un producto que promete hacerlos desaparecer' → la caja del envío abierta con el frasquito milagro",
+    "prompt": "medium shot of an opened cardboard shipping box on a kitchen counter with crumpled brown packing paper and a small dark glass dropper bottle without any label lying inside, an older man's hands holding the receipt and his reading glasses, a skeptical raised eyebrow reflected in the dark oven door, a pair of scissors, a set of keys, a fruit bowl, window light",
+    "motion": "his hands turn the little bottle over and the packing paper rustles"
+   },
+   {
+    "n": "rd_dr_wallet",
+    "p": "keep your wallet in your pocket",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'guardá la billetera' → él empujando el frasquito con un dedo y palmeando su bolsillo, divertido",
+    "prompt": "sitting at his desk, pushing a small unlabeled dropper bottle away across the wood with one finger while patting the pocket of his white coat with the other hand, shaking his head with an amused, knowing grin, a stethoscope around his neck, a stack of folders, a coffee mug, a desk lamp, bookshelf with plant, framed mountain print, daylight",
+    "motion": "the bottle slides a few centimeters across the desk and he pats his pocket"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "Myth number two.",
+    "kind": "mitoverdad",
+    "myth": "Caused by food, drink or dirt",
+    "truth": "Not diet, not hygiene, not contagious",
+    "image": "img/rowereddots/rd_grandpa_hug.jpg",
+    "flipPhrase": "No. They are not about your diet"
+   },
+   {
+    "p": "Red dots mean your liver is bad.",
+    "kind": "myth2",
+    "kicker": "Myth number one",
+    "myth": "Red dots mean a bad liver",
+    "truth": "That's a spider angioma, not a cherry dot",
+    "mythImg": "img/rowereddots/rd_liver_worry.jpg",
+    "truthImg": "img/rowereddots/rd_spider_angioma.jpg",
+    "bed": "img/rowereddots/rd_liver_worry.jpg",
+    "hitAtP": "This one scares a lot of people",
+    "truthAtP": "There is a different spot, called a spider angioma",
+    "endP": "can be connected to liver problems."
+   },
+   {
+    "p": "A spider angioma has a red center",
+    "kind": "splitcompare",
+    "eyebrow": "NOT THE SAME SPOT",
+    "title": "Spider vs. cherry",
+    "left": {
+     "image": "img/rowereddots/rd_spider_angioma.jpg",
+     "label": "Spider angioma",
+     "note": "red center + thin legs"
+    },
+    "right": {
+     "image": "img/rowereddots/rd_round_oval.jpg",
+     "label": "Cherry angioma",
+     "note": "a round dot, no legs"
+    },
+    "winner": "none",
+    "endP": "not a sign of liver disease."
+   },
+   {
+    "p": "Myth number three.",
+    "kind": "myth2",
+    "kicker": "Myth number three",
+    "myth": "Left alone, they turn into cancer",
+    "truth": "Benign. They don't become skin cancer.",
+    "mythImg": "img/rowereddots/rd_warn_black.jpg",
+    "truthImg": "img/rowereddots/rd_dr_benign.jpg",
+    "bed": "img/rowereddots/rd_dr_benign.jpg",
+    "hitAtP": "Cherry angiomas are benign.",
+    "truthAtP": "Benign means not cancer.",
+    "endP": "that is their normal behavior."
+   },
+   {
+    "p": "There is no cream, no vitamin and no special diet",
+    "kind": "myth2",
+    "kicker": "Can you prevent them?",
+    "myth": "A cream or vitamin stops them",
+    "truth": "Nothing proven. Keep your wallet.",
+    "mythImg": "img/rowereddots/rd_cream_shelf.jpg",
+    "truthImg": "img/rowereddots/rd_dr_wallet.jpg",
+    "bed": "img/rowereddots/rd_miracle_bottle.jpg",
+    "hitAtP": "has been shown to stop cherry angiomas",
+    "truthAtP": "So please don't spend your money",
+    "endP": "keep your wallet in your pocket."
+   }
+  ]
+ }
 ]

@@ -147,132 +147,53 @@
   ],
   "componentes": [
    {
-    "p": "The spider angioma I already mentioned.",
-    "kind": "carousel",
-    "group": "look",
-    "idx": 1,
-    "mode": "reveal",
-    "cards": [
-     {
-      "name": "Petechiae",
-      "img": "img/rowereddots/rd_petechiae_ankles.jpg"
-     },
-     {
-      "name": "Spider angioma",
-      "img": "img/rowereddots/rd_spider_angioma.jpg"
-     },
-     {
-      "name": "Pyogenic granuloma",
-      "img": "img/rowereddots/rd_pyogenic.jpg"
-     },
-     {
-      "name": "Red melanoma (rare)",
-      "img": "img/rowereddots/rd_red_melanoma.jpg"
-     }
-    ],
-    "revealP": [
-     "The spider angioma I already mentioned."
-    ],
-    "endP": "Red center, little legs.",
-    "kicker": "Lookalike 2 of 4",
-    "title": "Red dots that aren't cherries",
-    "bed": "img/rowereddots/rd_quick_glance.jpg"
-   },
-   {
     "p": "Then there is a spot called a pyogenic granuloma.",
-    "kind": "carousel",
-    "group": "look",
-    "idx": 2,
-    "mode": "reveal",
-    "cards": [
-     {
-      "name": "Petechiae",
-      "img": "img/rowereddots/rd_petechiae_ankles.jpg"
-     },
-     {
-      "name": "Spider angioma",
-      "img": "img/rowereddots/rd_spider_angioma.jpg"
-     },
-     {
-      "name": "Pyogenic granuloma",
-      "img": "img/rowereddots/rd_pyogenic.jpg"
-     },
-     {
-      "name": "Red melanoma (rare)",
-      "img": "img/rowereddots/rd_red_melanoma.jpg"
-     }
-    ],
-    "revealP": [
-     "a spot called a pyogenic granuloma."
-    ],
-    "endP": "because it is not an infection.",
-    "kicker": "Lookalike 3 of 4",
-    "title": "Red dots that aren't cherries",
-    "bed": "img/rowereddots/rd_quick_glance.jpg"
+    "kind": "lowerthird",
+    "title": "Pyogenic granuloma",
+    "kicker": "another lookalike",
+    "desc": "grows fast, looks raw, bleeds easily",
+    "tone": "warn"
    },
    {
-    "p": "Some skin cancers, including a type of melanoma",
-    "kind": "carousel",
-    "group": "look",
-    "idx": 3,
-    "mode": "reveal",
-    "cards": [
-     {
-      "name": "Petechiae",
-      "img": "img/rowereddots/rd_petechiae_ankles.jpg"
-     },
-     {
-      "name": "Spider angioma",
-      "img": "img/rowereddots/rd_spider_angioma.jpg"
-     },
-     {
-      "name": "Pyogenic granuloma",
-      "img": "img/rowereddots/rd_pyogenic.jpg"
-     },
-     {
-      "name": "Red melanoma (rare)",
-      "img": "img/rowereddots/rd_red_melanoma.jpg"
-     }
-    ],
-    "revealP": [
-     "Some skin cancers, including a type of melanoma"
-    ],
-    "endP": "instead of brown.",
-    "kicker": "Lookalike 4 of 4",
-    "title": "Red dots that aren't cherries",
-    "bed": "img/rowereddots/rd_quick_glance.jpg"
+    "p": "What gives them away is behavior.",
+    "kind": "callout",
+    "figure": "BEHAVIOR",
+    "eyebrow": "WHAT GIVES THEM AWAY",
+    "caption": "growing, changing, bleeding, looking different",
+    "image": "img/rowereddots/rd_red_melanoma.jpg"
    },
    {
     "p": "So here are the warning signs.",
-    "kind": "redflags",
-    "kicker": "Show a doctor if a red spot",
-    "img": "img/rowereddots/rd_ugly_duckling.jpg",
-    "bed": "img/rowereddots/rd_dr_serious.jpg",
-    "flags": [
-     {
-      "text": "Grows quickly over weeks",
-      "atP": "if it grows quickly"
-     },
-     {
-      "text": "Changes shape or edge",
-      "atP": "If it changes shape"
-     },
-     {
-      "text": "Turns black or blue",
-      "atP": "If it turns black or blue."
-     },
-     {
-      "text": "Bleeds on its own",
-      "atP": "If it bleeds again and again"
-     },
-     {
-      "text": "A sore that won't heal",
-      "atP": "open sore that doesn't heal."
-     }
-    ],
-    "stamp": "Or: the ugly duckling",
-    "stampAtP": "the one spot that looks different",
-    "endP": "looks different from all the others."
+    "kind": "carrusel",
+    "title": "Show a doctor if it...",
+    "tone": "warn",
+    "focus": 0,
+    "items": "@warn"
+   },
+   {
+    "p": "If it becomes an open sore that doesn't heal.",
+    "kind": "carrusel",
+    "title": "Show a doctor if it...",
+    "tone": "warn",
+    "focus": 4,
+    "items": "@warn"
+   },
+   {
+    "p": "Dermatologists call that the ugly duckling sign",
+    "kind": "lowerthird",
+    "title": "The ugly duckling sign",
+    "kicker": "rule of thumb",
+    "desc": "the one spot unlike all the others",
+    "tone": "warn"
+   },
+   {
+    "p": "over just a few weeks or months, mention it at your next visit",
+    "kind": "datoimpacto",
+    "figure": "DOZENS",
+    "eyebrow": "NEW ONES, IN A FEW WEEKS",
+    "caption": "mention it at your next visit",
+    "image": "img/rowereddots/rd_sudden_many.jpg",
+    "tone": "warn"
    }
   ]
  },
@@ -351,41 +272,6 @@
     "caption": "longer if you take blood thinners",
     "image": "img/rowereddots/rd_gauze_press.jpg",
     "tone": "teal"
-   },
-   {
-    "p": "I have seen patients who tried to burn these spots off",
-    "kind": "routineswap",
-    "mode": "old",
-    "kicker": "What people do at home",
-    "title": "Please don't.",
-    "bed": "img/rowereddots/rd_hot_needle.jpg",
-    "items": [
-     {
-      "label": "A hot needle",
-      "img": "img/rowereddots/rd_hot_needle.jpg",
-      "atP": "burn these spots off",
-      "hitAtP": "Please don't."
-     },
-     {
-      "label": "Nail clippers or thread",
-      "img": "img/rowereddots/rd_clippers_thread.jpg",
-      "atP": "cut them with nail clippers",
-      "hitAtP": "Please don't."
-     },
-     {
-      "label": "Vinegar or garlic",
-      "img": "img/rowereddots/rd_vinegar_garlic.jpg",
-      "atP": "apple cider vinegar",
-      "hitAtP": "Please don't."
-     },
-     {
-      "label": "Remover pens",
-      "img": "img/rowereddots/rd_remover_pen.jpg",
-      "atP": "online remover pens",
-      "hitAtP": "Please don't."
-     }
-    ],
-    "endP": "so it bleeds."
    }
   ]
  },
@@ -456,6 +342,14 @@
    }
   ],
   "componentes": [
+   {
+    "p": "I have seen patients who tried to burn these spots off",
+    "kind": "errorstinger",
+    "number": "1",
+    "title": "REMOVING THEM AT HOME",
+    "eyebrow": "the mistake",
+    "tone": "warn"
+   },
    {
     "p": "You can get an infection",
     "kind": "checklist",
@@ -561,6 +455,31 @@
   ],
   "componentes": [
    {
+    "p": "The common options are a tiny electric needle",
+    "kind": "checklist",
+    "title": "Safe removal, in the office",
+    "tone": "teal",
+    "image": "img/rowereddots/rd_dr_cautery.jpg",
+    "items": [
+     {
+      "text": "Tiny electric needle",
+      "state": "ok"
+     },
+     {
+      "text": "Laser that targets the red",
+      "state": "ok"
+     },
+     {
+      "text": "Freezing",
+      "state": "ok"
+     },
+     {
+      "text": "Small shave removal",
+      "state": "ok"
+     }
+    ]
+   },
+   {
     "p": "called a dermatoscope",
     "kind": "callout",
     "figure": "dermatoscope",
@@ -569,45 +488,14 @@
     "image": "img/rowereddots/rd_dr_dermatoscope.jpg"
    },
    {
-    "p": "The common options are a tiny electric needle",
-    "kind": "routineswap",
-    "mode": "new",
-    "kicker": "Safe, in the office",
-    "title": "The right way to remove one",
-    "bed": "img/rowereddots/rd_dr_cautery.jpg",
-    "items": [
-     {
-      "label": "A hot needle",
-      "img": "img/rowereddots/rd_hot_needle.jpg",
-      "newLabel": "Tiny electric needle",
-      "newImg": "img/rowereddots/rd_dr_cautery.jpg",
-      "flipAtP": "a tiny electric needle"
-     },
-     {
-      "label": "Nail clippers",
-      "img": "img/rowereddots/rd_clippers_thread.jpg",
-      "newLabel": "Laser for the red",
-      "newImg": "img/rowereddots/rd_laser.jpg",
-      "flipAtP": "a laser that targets"
-     },
-     {
-      "label": "Vinegar or garlic",
-      "img": "img/rowereddots/rd_vinegar_garlic.jpg",
-      "newLabel": "Freezing",
-      "newImg": "img/rowereddots/rd_dr_no_needles.jpg",
-      "flipAtP": "freezing, or"
-     },
-     {
-      "label": "Remover pens",
-      "img": "img/rowereddots/rd_remover_pen.jpg",
-      "newLabel": "Small shave removal",
-      "newImg": "img/rowereddots/rd_dr_dermatoscope.jpg",
-      "flipAtP": "a small shave removal."
-     }
-    ],
-    "chip": "Ask about the cost first",
-    "chipAtP": "ask about the cost",
-    "endP": "ask about the cost before you book."
+    "p": "a little cluster of round red or purple pockets",
+    "kind": "freezezoom",
+    "image": "img/rowereddots/rd_grapes_view.jpg",
+    "x": 0.45,
+    "y": 0.48,
+    "label": "round red 'pockets', like tiny grapes",
+    "zoom": 1.7,
+    "tone": "teal"
    }
   ]
  }

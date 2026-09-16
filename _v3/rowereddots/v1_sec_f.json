@@ -1,0 +1,443 @@
+[
+ {
+  "id": "sx_real",
+  "nombre": "Metraje real (stock Pexels) repartido por frase",
+  "objetivo": "≥25% de metraje real: gente, consultorios, rutinas reales anclados a la frase exacta",
+  "momentos": [
+   {
+    "n": "rd_st_doctor_talk",
+    "p": "Every year there are more of them.",
+    "tipo": "stock",
+    "q": "doctor talking with elderly patient office",
+    "porque": "la consulta real donde se hace la pregunta"
+   },
+   {
+    "n": "rd_st_mirror_man",
+    "p": "without ever asking anyone",
+    "tipo": "stock",
+    "q": "senior man looking in bathroom mirror",
+    "porque": "el que se mira solo y no pregunta"
+   },
+   {
+    "n": "rd_st_old_book",
+    "p": "You may also hear them called senile angiomas",
+    "tipo": "stock",
+    "q": "old medical book pages",
+    "porque": "nombres viejos, historia médica"
+   },
+   {
+    "n": "rd_st_blood_cells",
+    "p": "Here is what is actually happening under your skin.",
+    "tipo": "stock",
+    "q": "red blood cells flowing vessel",
+    "porque": "lo que pasa debajo de la piel: sangre en vasos"
+   },
+   {
+    "n": "rd_st_microscope_skin",
+    "p": "a little cluster of those capillaries grows",
+    "tipo": "stock",
+    "q": "microscope laboratory scientist",
+    "porque": "el mecanismo visto al microscopio"
+   },
+   {
+    "n": "rd_st_seniors_laugh",
+    "p": "They are incredibly common.",
+    "tipo": "stock",
+    "q": "group of seniors laughing together",
+    "porque": "'son comunísimos' → mucha gente mayor junta"
+   },
+   {
+    "n": "rd_st_senior_pool",
+    "p": "Most people start getting a few after the age of thirty",
+    "tipo": "stock",
+    "q": "senior people swimming pool",
+    "porque": "torsos al aire de gente mayor, sin drama"
+   },
+   {
+    "n": "rd_st_magnifier",
+    "p": "so you can compare with your own",
+    "tipo": "stock",
+    "q": "magnifying glass skin close up",
+    "porque": "mirar de cerca para comparar"
+   },
+   {
+    "n": "rd_st_older_skin",
+    "p": "The color is bright red, cherry red",
+    "tipo": "stock",
+    "q": "elderly skin close up",
+    "porque": "piel mayor real"
+   },
+   {
+    "n": "rd_st_man_shirtless_beach",
+    "p": "They show up most on the chest, the belly",
+    "tipo": "stock",
+    "q": "elderly man shirtless beach",
+    "porque": "pecho y panza reales al sol"
+   },
+   {
+    "n": "rd_st_glass_water",
+    "p": "because you are squeezing the blood out",
+    "tipo": "stock",
+    "q": "clear drinking glass water table",
+    "porque": "el vaso protagonista"
+   },
+   {
+    "n": "rd_st_old_couple_photos",
+    "p": "The years change the way those tiny vessels grow.",
+    "tipo": "stock",
+    "q": "elderly couple looking at old photographs",
+    "porque": "los años"
+   },
+   {
+    "n": "rd_st_family_gen",
+    "p": "The second reason is your family.",
+    "tipo": "stock",
+    "q": "three generations family portrait",
+    "porque": "la familia, los genes"
+   },
+   {
+    "n": "rd_st_pregnant",
+    "p": "Hormones can play a part",
+    "tipo": "stock",
+    "q": "pregnant woman belly home",
+    "porque": "hormonas, embarazo"
+   },
+   {
+    "n": "rd_st_doctor_liver",
+    "p": "that can be connected to liver problems",
+    "tipo": "stock",
+    "q": "doctor examining abdomen patient",
+    "porque": "el hígado revisado de verdad"
+   },
+   {
+    "n": "rd_st_shower",
+    "p": "or by not being clean",
+    "tipo": "stock",
+    "q": "washing hands with soap",
+    "porque": "la higiene del mito"
+   },
+   {
+    "n": "rd_st_grandpa_kid",
+    "p": "they are not contagious",
+    "tipo": "stock",
+    "q": "grandfather playing with grandchild",
+    "porque": "no se contagia a los nietos"
+   },
+   {
+    "n": "rd_st_sunscreen",
+    "p": "it protects you from the spots that really are dangerous",
+    "tipo": "stock",
+    "q": "applying sunscreen on skin",
+    "porque": "protector solar real"
+   },
+   {
+    "n": "rd_st_online_shop",
+    "p": "If someone is selling you a bottle",
+    "tipo": "stock",
+    "q": "elderly man online shopping laptop",
+    "porque": "el producto milagro comprado online"
+   },
+   {
+    "n": "rd_st_legs_bed",
+    "p": "often on the legs and ankles",
+    "tipo": "stock",
+    "q": "elderly woman legs sitting on bed",
+    "porque": "piernas y tobillos"
+   },
+   {
+    "n": "rd_st_blood_test",
+    "p": "your blood is not clotting the way it should",
+    "tipo": "stock",
+    "q": "blood sample test tube laboratory",
+    "porque": "la sangre que no coagula: análisis"
+   },
+   {
+    "n": "rd_st_pills",
+    "p": "That can happen with low platelets",
+    "tipo": "stock",
+    "q": "elderly hands pills medication",
+    "porque": "medicamentos diarios"
+   },
+   {
+    "n": "rd_st_ambulance",
+    "p": "don't wait for an appointment",
+    "tipo": "stock",
+    "q": "ambulance lights night",
+    "porque": "no esperar el turno"
+   },
+   {
+    "n": "rd_st_hospital_hall",
+    "p": "because this happens more often than you'd think",
+    "tipo": "stock",
+    "q": "hospital corridor",
+    "porque": "pasa más de lo que creés"
+   },
+   {
+    "n": "rd_st_library",
+    "p": "and they never bothered her",
+    "tipo": "stock",
+    "q": "elderly woman reading library",
+    "porque": "Ruth en su mundo de libros"
+   },
+   {
+    "n": "rd_st_night_bedroom",
+    "p": "One Sunday evening",
+    "tipo": "stock",
+    "q": "elderly woman bedroom night lamp",
+    "porque": "domingo a la noche en su cuarto"
+   },
+   {
+    "n": "rd_st_pharmacy",
+    "p": "It turned out one of her medications",
+    "tipo": "stock",
+    "q": "pharmacist talking to senior customer",
+    "porque": "el remedio cambiado"
+   },
+   {
+    "n": "rd_st_woman_garden",
+    "p": "it could have been a very different story",
+    "tipo": "stock",
+    "q": "senior woman gardening smiling",
+    "porque": "la vida que siguió"
+   },
+   {
+    "n": "rd_st_doctor_photos",
+    "p": "Red center, little legs.",
+    "tipo": "stock",
+    "q": "dermatologist examining patient skin",
+    "porque": "el dermatólogo mirando"
+   },
+   {
+    "n": "rd_st_bandage_finger",
+    "p": "It is not dangerous in itself",
+    "tipo": "stock",
+    "q": "adhesive bandage finger",
+    "porque": "el dedito que sangra, curado"
+   },
+   {
+    "n": "rd_st_measure",
+    "p": "They are uncommon, but they exist.",
+    "tipo": "stock",
+    "q": "doctor with magnifier checking mole",
+    "porque": "revisión seria de un lunar"
+   },
+   {
+    "n": "rd_st_ducklings",
+    "p": "one of the most useful rules you can learn",
+    "tipo": "stock",
+    "q": "ducklings swimming pond",
+    "porque": "el patito feo, literal y amable"
+   },
+   {
+    "n": "rd_st_checkup",
+    "p": "Most of the time it means nothing",
+    "tipo": "stock",
+    "q": "senior patient blood pressure check",
+    "porque": "chequeo básico"
+   },
+   {
+    "n": "rd_st_shaving",
+    "p": "Now, what about bleeding?",
+    "tipo": "stock",
+    "q": "senior man shaving razor bathroom",
+    "porque": "la afeitadora, causa típica"
+   },
+   {
+    "n": "rd_st_gauze",
+    "p": "Take a clean cloth or gauze",
+    "tipo": "stock",
+    "q": "first aid gauze bandage",
+    "porque": "la gasa limpia"
+   },
+   {
+    "n": "rd_st_blood_thinner",
+    "p": "If you take blood thinners, it may take longer.",
+    "tipo": "stock",
+    "q": "pill organizer elderly",
+    "porque": "anticoagulantes"
+   },
+   {
+    "n": "rd_st_lighter",
+    "p": "What people do at home.",
+    "tipo": "stock",
+    "q": "lighter flame close up",
+    "porque": "el fuego casero"
+   },
+   {
+    "n": "rd_st_doctor_skin_exam",
+    "p": "That's a perfectly good reason to ask.",
+    "tipo": "stock",
+    "q": "doctor consultation senior woman",
+    "porque": "pedir la consulta"
+   },
+   {
+    "n": "rd_st_laser",
+    "p": "a small shave removal",
+    "tipo": "stock",
+    "q": "laser skin treatment clinic",
+    "porque": "tratamientos reales en consultorio"
+   },
+   {
+    "n": "rd_st_lab",
+    "p": "the doctor can send it to the lab",
+    "tipo": "stock",
+    "q": "pathologist microscope slides laboratory",
+    "porque": "la muestra al laboratorio"
+   },
+   {
+    "n": "rd_st_derm_exam",
+    "p": "It's much simpler than people imagine.",
+    "tipo": "stock",
+    "q": "dermatologist dermatoscope examination",
+    "porque": "la consulta simple"
+   },
+   {
+    "n": "rd_st_couple_mirror",
+    "p": "Look at your chest, your belly, your arms",
+    "tipo": "stock",
+    "q": "elderly woman looking at mirror",
+    "porque": "la revisión frente al espejo"
+   },
+   {
+    "n": "rd_st_phone_photo",
+    "p": "and a close-up of any spot you're unsure about",
+    "tipo": "stock",
+    "q": "senior using smartphone camera",
+    "porque": "sacar la foto"
+   },
+   {
+    "n": "rd_st_couple_beach",
+    "p": "Let me leave you with the big picture.",
+    "tipo": "stock",
+    "q": "senior couple walking on beach",
+    "porque": "la foto grande: una vida vivida"
+   },
+   {
+    "n": "rd_st_hike",
+    "p": "take your photos, respect the glass test",
+    "tipo": "stock",
+    "q": "senior man hiking nature",
+    "porque": "cuidarse y seguir viviendo"
+   },
+   {
+    "n": "rd_st_coffee_friends",
+    "p": "Subscribe so you don't miss the next one",
+    "tipo": "stock",
+    "q": "senior friends drinking coffee talking",
+    "porque": "compartir con amigos"
+   },
+   {
+    "n": "rd_st_clipboard",
+    "p": "Let's start with the name.",
+    "tipo": "stock",
+    "q": "doctor writing notes clipboard",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_explain",
+    "p": "And it is not blood leaking out.",
+    "tipo": "stock",
+    "q": "doctor explaining to senior patient",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_cough",
+    "p": "Petechiae can come from something simple",
+    "tipo": "stock",
+    "q": "senior man coughing home",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_phone_home",
+    "p": "Most insurance plans consider it cosmetic",
+    "tipo": "stock",
+    "q": "senior woman phone call home",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_dermatoscope",
+    "p": "Under that lens",
+    "tipo": "stock",
+    "q": "dermatoscope skin examination",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_calendar",
+    "p": "You're not counting the red dots.",
+    "tipo": "stock",
+    "q": "marking calendar with pen",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_handshake",
+    "p": "It can't replace an exam by your own doctor",
+    "tipo": "stock",
+    "q": "senior patient doctor handshake",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_skin_check",
+    "p": "The spider angioma I already mentioned.",
+    "tipo": "stock",
+    "q": "woman examining face in mirror",
+    "porque": "metraje real extra anclado a la frase"
+   },
+   {
+    "n": "rd_st_good_news",
+    "p": "Benign means not cancer.",
+    "tipo": "stock",
+    "q": "doctor smiling with senior patient",
+    "porque": "la buena noticia"
+   },
+   {
+    "n": "rd_st_relaxed",
+    "p": "They do not turn into skin cancer over time.",
+    "tipo": "stock",
+    "q": "relaxed senior man smiling outdoors",
+    "porque": "alivio"
+   },
+   {
+    "n": "rd_st_worried_woman",
+    "p": "one of them in particular should never be ignored",
+    "tipo": "stock",
+    "q": "worried senior woman thinking",
+    "porque": "el que no hay que ignorar"
+   },
+   {
+    "n": "rd_st_worried_bath",
+    "p": "Because this is the part that frightens people.",
+    "tipo": "stock",
+    "q": "worried elderly man looking in mirror",
+    "porque": "el susto del sangrado"
+   },
+   {
+    "n": "rd_st_ultrasound",
+    "p": "because he or she may want to check your liver",
+    "tipo": "stock",
+    "q": "doctor ultrasound abdomen patient",
+    "porque": "revisar el hígado"
+   },
+   {
+    "n": "rd_drawer_away",
+    "p": "never cut, burn or pick at a spot",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "nunca cortes ni quemes → guardar las herramientas caseras",
+    "prompt": "medium shot of an older man in a grey cardigan closing a bathroom vanity drawer that holds a pair of nail clippers, a sewing needle card and a plastic lighter, with a calm decided half-smile, a hand towel on a ring, a soap dispenser, a small plant on the windowsill, white tiles, bright morning light",
+    "motion": "the drawer slides shut slowly under his hand"
+   },
+   {
+    "n": "rd_dr_confusing",
+    "p": "The name is confusing, because it is not an infection.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "el nombre confunde → él encogiéndose de hombros",
+    "prompt": "sitting on the corner of his desk holding a thick open dermatology textbook in one hand, shrugging with the other palm up and a playful, apologetic grimace as if admitting the name is silly, a stethoscope around his neck, a mug, a desk lamp, bookshelf with plant, framed mountain print, daylight",
+    "motion": "he shrugs a little and closes the book slowly"
+   }
+  ],
+  "componentes": []
+ }
+]

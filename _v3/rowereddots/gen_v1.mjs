@@ -54,13 +54,11 @@ moments.sort((a, b) => a.t - b.t);
 
 const inWin = (t) => WIN.find((w) => t >= w.start && t < w.end - 0.05);
 
-const CAP_OUT = 10.5, CAP_IN = [3.0, 3.6, 3.2, 4.0];
+const CAP_OUT = 10.5, CAP_IN = [3.6, 5.4, 4.0, 6.2, 4.6];
 const cues = [];
 for (let i = 0; i < moments.length; i++) {
   const m = moments[i], next = i + 1 < moments.length ? moments[i + 1].t : VIDEO_END;
   const w = inWin(m.t);
-  // v2: el avatar se ve MAS (25-30 %): en ventanas < 9 s no entra b-roll; en las largas, sólo después de 2,5 s y corto
-  if (w && (w.end - w.start < 9 || m.t - w.start < 2.5)) continue;
   let end = w ? Math.min(next, m.t + CAP_IN[i % CAP_IN.length], w.end) : Math.min(next, m.t + CAP_OUT);
   if (!w) { const nw = WIN.find((x) => x.start > m.t && x.start < end); if (nw) end = Math.max(m.t + 2.2, Math.min(end, nw.start)); }
   if (end - m.t < 1.2) end = Math.min(next, m.t + 1.2);
@@ -164,11 +162,9 @@ for (let i = 1; i < BASE.length; i++) {
 { let rep = 0; for (let i = 1; i < BASE.length; i++) if (BASE[i].src && BASE[i].src === BASE[i - 1].src && BASE[i].kind === BASE[i - 1].kind) rep++; console.log(`  pares consecutivos con el mismo archivo: ${rep}`); }
 fs.writeFileSync(`_v3/${SLUG}_cues.json`, JSON.stringify(BASE.filter((b) => b.src).map((b) => ({ key: b.n, src: b.src, dur: b.dur / FPS }))));
 
-// ── componentes (v2 premium: set-pieces HERO + overlays del kit) ──
+// ── componentes ──
 const OVERLAY = new Set(["lowerthird", "frasecinetica"]);
-const CAP = { datoimpacto: 6.5, mitoverdad: 8, checklist: 11, lowerthird: 6, frasecinetica: 5, errorstinger: 4.5, freezezoom: 9, lineatiempo: 11, carrusel: 7.5, callout: 6.5, glasstest: 7.5, bodymap: 9, splitcompare: 12, presenter: 9.5, carousel: 9, carouselrecap: 20, myth2: 18, redflags: 20, routineswap: 20, falltease: 9, selfcheck: 16 };
-const MINDUR = { presenter: 6.6, signoff: 4.6, carousel: 3.4, myth2: 5.5, redflags: 6, routineswap: 8, falltease: 5, selfcheck: 6, splitcompare: 5 };
-const endOf = (phrase, fromChar) => { const i0 = SCRIPT.indexOf(phrase, fromChar); if (i0 < 0) { miss.push("(endP) " + phrase); return null; } const endC = i0 + phrase.length; const w = WMS.filter((x) => x.c < endC).slice(-1)[0]; return w ? w.e : null; };
+const CAP = { datoimpacto: 6.5, mitoverdad: 8, checklist: 11, lowerthird: 6, frasecinetica: 5, errorstinger: 4.5, freezezoom: 9, lineatiempo: 11, carrusel: 7.5, callout: 6.5, glasstest: 7.5, bodymap: 9, splitcompare: 7.5 };
 const COMPS = [];
 {
   let cur = 0;
@@ -179,119 +175,20 @@ const COMPS = [];
   }
 }
 COMPS.sort((a, b) => a.t - b.t);
-const grupos = {};
-for (const c of COMPS.filter((c) => c.kind === "carousel" && c.group)) (grupos[c.group] ||= []).push(c);
-const G0 = {}, GREV = {};
-for (const [g, arr] of Object.entries(grupos)) {
-  arr.sort((a, b) => a.idx - b.idx); G0[g] = arr[0].t;
-  GREV[g] = arr.map((z) => { const r = msOf(z.revealP[0], z.c); return r ? F(r.ms - G0[g]) : 0; });
-}
-const resolveP = (o, c) => {
-  if (Array.isArray(o)) return o.map((x) => resolveP(x, c));
-  if (!o || typeof o !== "object") return o;
-  const out = {};
-  for (const [k, v] of Object.entries(o)) {
-    if (k.endsWith("P") && k !== "revealP" && k !== "endP" && typeof v === "string") {
-      const r = msOf(v, c.c); if (!r) miss.push(`(${k}) ${v}`); out[k.slice(0, -1)] = r ? Math.max(0, F(r.ms - c.t)) : undefined;
-    } else out[k] = resolveP(v, c);
-  }
-  return out;
-};
-for (let i = 0; i < COMPS.length; i++) {
-  let c = COMPS[i];
-  if (c.kind === "mitoverdad" && c.flipPhrase) { const r = msOf(c.flipPhrase, c.c || 0); c.flipAt = r ? Math.max(8, F(r.ms - c.t)) : undefined; delete c.flipPhrase; }
-  if (c.endP) { const e = endOf(c.endP, c.c); if (e != null) c.fixedEnd = e + 0.35; }
-  if (c.kind === "carousel") {
-    if (c.group) { c.offset = F(c.t - G0[c.group]); c.reveals = GREV[c.group]; }
-    else c.reveals = c.revealP.map((ph) => { const r = msOf(ph, c.c); return r ? Math.max(0, F(r.ms - c.t)) : 0; });
-  }
-  const res = resolveP(c, c);
-  COMPS[i] = c = { ...res, t: c.t, c: c.c, fixedEnd: c.fixedEnd };
-}
 for (let i = 0; i < COMPS.length; i++) {
   const c = COMPS[i];
+  if (c.kind === "mitoverdad" && c.flipPhrase) {
+    const r = msOf(c.flipPhrase, c.c || 0); c.flipAt = r ? Math.max(8, F(r.ms - c.t)) : undefined; delete c.flipPhrase;
+  }
   const nextFull = COMPS.slice(i + 1).find((x) => !OVERLAY.has(x.kind));
-  const capK = CAP[c.kind === "carousel" && c.mode === "recap" ? "carouselrecap" : c.kind];
-  let d = c.fixedEnd ? Math.min(c.fixedEnd - c.t, capK ?? 30) : capK || 6;
-  const minD = MINDUR[c.mode === "signoff" ? "signoff" : c.kind];
-  if (minD && d < minD) d = minD;
+  let d = c.fixedEnd ? c.fixedEnd - c.t : CAP[c.kind] || 6;
   if (!OVERLAY.has(c.kind) && nextFull) d = Math.min(d, nextFull.t - c.t - 0.05);
-  if (d > VIDEO_END - c.t) d = VIDEO_END - c.t;
-  const nextOv = COMPS.slice(i + 1).find((x) => OVERLAY.has(x.kind));
-  if (OVERLAY.has(c.kind) && nextOv) d = Math.min(d, nextOv.t - c.t - 0.05);
-  const txt = [c.title, c.myth, c.truth, c.desc, ...(c.items || []).map((x) => x.text || x.title || x.label), c.caption, c.figure, ...(c.words || []).map((x) => x.t), c.left?.label, c.left?.note, c.right?.label, c.right?.note, ...(c.stops || []).map((x) => x.label), ...(c.marks || []).map((x) => x.label + " " + (x.sub || "")), c.leftVerdict, c.rightVerdict].filter(Boolean).join(" ");
+  const txt = [c.title, c.myth, c.truth, c.label, c.desc, ...(c.items || []).map((x) => x.text || x.title), c.caption, c.figure, ...(c.words || []).map((x) => x.t), c.left?.label, c.left?.note, c.right?.label, c.right?.note, ...(c.stops || []).map((x) => x.label), ...(c.marks || []).map((x) => x.label + ' ' + (x.sub || '')), c.leftVerdict, c.rightVerdict].filter(Boolean).join(" ");
   const nw = txt.split(/\s+/).filter(Boolean).length;
   const piso = (OVERLAY.has(c.kind) ? 2.0 : 2.8) + 0.28 * Math.max(0, nw - 3);
-  if (d < Math.min(piso, CAP[c.kind] || 6)) d = OVERLAY.has(c.kind) ? Math.min(piso, CAP[c.kind] || 6, nextOv ? nextOv.t - c.t - 0.05 : Infinity) : d;
-  c.from = F(c.t); c.dur = Math.max(F(1.2), F(d)); delete c.c; delete c.fixedEnd; delete c.endP; delete c.revealP; delete c.group; delete c.idx; delete c.t;
+  if (d < Math.min(piso, CAP[c.kind] || 6)) d = OVERLAY.has(c.kind) ? Math.min(piso, CAP[c.kind] || 6) : d;
+  c.from = F(c.t); c.dur = Math.max(F(1.2), F(d)); delete c.c; delete c.fixedEnd;
   if (c.kind === "mitoverdad") c.flipAt = Math.min(c.flipAt ?? Infinity, Math.round(c.dur * 0.42));
-}
-{
-  const full = COMPS.filter((c) => !OVERLAY.has(c.kind));
-  for (let i = COMPS.length - 1; i >= 0; i--) {
-    const c = COMPS[i]; if (!OVERLAY.has(c.kind)) continue;
-    const f = full.find((f) => c.from < f.from + f.dur && c.from + c.dur > f.from);
-    if (f && c.from < f.from && f.from - c.from >= F(1.6)) { c.dur = f.from - c.from; console.log(`  overlay recortado contra componente: ${c.kind} @${(c.from / FPS).toFixed(1)} -> ${(c.dur / FPS).toFixed(1)}s`); }
-    else if (f) { console.log(`  overlay descartado (choca con componente): ${c.kind} @${(c.from / FPS).toFixed(1)}`); COMPS.splice(i, 1); }
-  }
-}
-let tardeN = 0;
-{
-  const ej = [];
-  const chk = (c, k, v) => { if (v === undefined) { tardeN++; ej.push(`${c.kind}@${(c.from / FPS).toFixed(0)} ${k}=SIN RESOLVER`); return; } if (typeof v === "number" && v > c.dur - 12) { tardeN++; ej.push(`${c.kind}@${(c.from / FPS).toFixed(0)} ${k}=${v}/${c.dur}`); } };
-  let medidos = 0;
-  const revealers = COMPS.filter((x) => x.kind === "carousel" && x.mode === "reveal");
-  for (const c of COMPS) {
-    for (const k of ["hitAt", "truthAt", "stampAt", "chipAt"]) if (k in c) { medidos++; chk(c, k, c[k]); }
-    for (const f of c.flags || []) { medidos++; chk(c, "flag.at", f.at); }
-    for (const it of c.items || []) { if ("flipAt" in it) { medidos++; chk(c, "flipAt", it.flipAt); } if ("hitAt" in it) { medidos++; chk(c, "item.hitAt", it.hitAt); } }
-    for (const q of c.questions || []) { medidos++; chk(c, "q.at", q.at); }
-    if (c.kind === "carousel" && c.mode === "recap") c.reveals.forEach((v) => { medidos++; chk(c, "reveal", v); });
-    if (c.kind === "carousel" && c.mode === "reveal") { const idx = revealers.indexOf(c); medidos++; chk(c, "reveal", c.reveals[idx] - c.offset); }
-  }
-  console.log(`  tiempos internos medidos ${medidos} · fuera del componente: ${tardeN}${ej.length ? " -> " + ej.join(" | ") : ""}`);
-}
-// ── SFX (lista única: la usa el Main y la mezcla de entrega) ──
-const SFX = [];
-{
-  const lib = (n, k) => `sfx/lib/${n}_${(k % 4) + 1}.mp3`;
-  let k = 0;
-  const add = (from, src, vol) => SFX.push({ from, src, vol });
-  for (const c of COMPS) {
-    const b = c.from, hits = [];
-    if (OVERLAY.has(c.kind)) {
-      if (c.kind === "lowerthird") { add(b, "sfx/sfx_whoosh_soft.mp3", 0.22); add(b + 10, "sfx/sfx_paper_tick.mp3", 0.22); }
-      else (c.words || []).forEach((_, i) => { if (i * (c.perWord || 9) < c.dur) add(b + i * (c.perWord || 9), "sfx/sfx_pop.mp3", 0.16); });
-      continue;
-    }
-    add(b, lib(c.kind === "carousel" ? "card_slide" : "whoosh_soft", k), 0.32);
-    if (c.kind === "presenter") { hits.push([18, "shimmer", 0.35]); if (c.mode === "signoff") hits.push([56, "pop_soft", 0.4]); }
-    if (c.kind === "myth2") { hits.push([c.hitAt ?? 22, "impact_soft", 0.45]); hits.push([c.truthAt ?? 46, "chime", 0.3]); }
-    if (c.kind === "redflags") { (c.flags || []).forEach((f) => hits.push([f.at, "pop_soft", 0.32])); if (c.stamp) hits.push([c.stampAt, "impact_soft", 0.5]); }
-    if (c.kind === "routineswap") (c.items || []).forEach((it) => hits.push([c.mode === "old" ? it.at : it.flipAt, c.mode === "old" ? "card_slide" : "page_flip", 0.36]));
-    if (c.kind === "routineswap" && c.mode === "old") hits.push([(c.items || [])[0]?.hitAt, "impact_soft", 0.45]);
-    if (c.kind === "routineswap" && c.chip) hits.push([c.chipAt, "success", 0.3]);
-    if (c.kind === "falltease") hits.push([c.hitAt ?? 40, "impact_soft", 0.45]);
-    if (c.kind === "selfcheck") (c.questions || []).forEach((q) => hits.push([q.at, "tick", 0.32]));
-    if (c.kind === "carousel" && c.mode === "recap") c.reveals.forEach((v) => hits.push([v, "pop_soft", 0.3]));
-    if (c.kind === "carousel" && c.mode === "reveal") { const idx = COMPS.filter((x) => x.kind === "carousel" && x.mode === "reveal").indexOf(c); hits.push([c.reveals[idx] - c.offset, "shimmer", 0.35]); }
-    if (c.kind === "datoimpacto") hits.push([14, "impact_soft", 0.3]);
-    if (c.kind === "checklist") (c.items || []).forEach((_, i) => hits.push([18 + i * 12, "tick", 0.24]));
-    if (c.kind === "mitoverdad" && c.flipAt) hits.push([c.flipAt, "chime", 0.26]);
-    if (c.kind === "lineatiempo") (c.marks || []).forEach((_, i) => hits.push([Math.round(8 + (i * (c.dur - 20)) / (c.marks.length || 1)), "pop_soft", 0.24]));
-    if (c.kind === "freezezoom") hits.push([8, "light_pass", 0.26]);
-    if (c.kind === "glasstest") { hits.push([28, "glass_ting", 0.34]); hits.push([44, "tick", 0.24]); hits.push([54, "pop_soft", 0.26]); }
-    if (c.kind === "bodymap") { const n = Math.max(1, (c.stops || []).length); const slot = Math.max(30, c.dur - 60) / n; (c.stops || []).forEach((_, i) => hits.push([Math.round(48 + i * slot), "pop_soft", 0.24])); }
-    if (c.kind === "errorstinger") hits.push([9, "impact_soft", 0.42]);
-    if (c.kind === "callout") hits.push([12, "click_soft", 0.3]);
-    if (c.kind === "splitcompare") { hits.push([9, "swish", 0.24]); hits.push([30, "pop_soft", 0.26]); }
-    if (c.kind === "carrusel") hits.push([12, "pop_soft", 0.24]);
-    for (const [off, n, v] of hits) if (typeof off === "number" && off >= 0 && off < c.dur) add(b + off, lib(n, k++), v);
-    k++;
-  }
-  SFX.sort((a, b) => a.from - b.from);
-  const faltaSfx = [...new Set(SFX.map((s) => s.src))].filter((s) => !has(s));
-  if (faltaSfx.length) console.log("  SFX inexistentes:", faltaSfx.join(" "));
 }
 
 // ── COMPUERTAS ──
@@ -307,13 +204,11 @@ const endF = BASE[BASE.length - 1].from + BASE[BASE.length - 1].dur;
 say(gaps === 0 && over === 0 && BASE[0].from === 0 && endF === F(VIDEO_END), `base contigua frame a frame: huecos ${gaps} · solapes ${over} · fin ${endF}/${F(VIDEO_END)}`);
 const avBad = BASE.filter((b) => b.kind === "avatar").filter((b) => {
   const s = b.from / FPS, e = (b.from + b.dur) / FPS;
-  for (let t = s; t < e - 0.01; t += 0.1) if (!WIN.some((w) => t >= w.start - 0.05 && t <= w.end + 0.6)) return true;
-  return false;
+  return !WIN.some((w) => s >= w.start - 0.05 && e <= w.end + 0.6);
 });
 const reelF = parseInt(probe(`public/${SLUG}_avatar.mp4`, ["-count_packets", "-select_streams", "v", "-show_entries", "stream=nb_read_packets"])) || 0;
 const avOver = BASE.filter((b) => b.kind === "avatar" && b.trim + b.dur > reelF);
 say(reelF > 0 && avOver.length === 0, `avatar dentro del reel: ${reelF} cuadros · cues que se pasan ${avOver.length}`);
-avBad.forEach((b) => console.log(`    fuera: ${(b.from / FPS).toFixed(2)}-${((b.from + b.dur) / FPS).toFixed(2)}`));
 say(avBad.length === 0, `avatar SÓLO dentro de ventanas con lipsync: ${avBad.length} cues fuera`);
 const nonAv = BASE.filter((b) => b.kind !== "avatar").reduce((acc, b) => { if (b.cont && acc.length) { acc[acc.length - 1] = { ...acc[acc.length - 1], dur: acc[acc.length - 1].dur + b.dur }; } else acc.push(b); return acc; }, []);
 const hash = (n) => { let x = (n | 0) ^ 0x9e3779b9; x = Math.imul(x ^ (x >>> 16), 0x85ebca6b); x = Math.imul(x ^ (x >>> 13), 0xc2b2ae35); x ^= x >>> 16; return (x >>> 0) / 4294967296; };
@@ -328,21 +223,20 @@ const vis = nonAv.map((b) => ({ b, v: visOf(b) / FPS })).filter((x) => x.v >= 1.
 const durs = vis.map((x) => x.v).sort((a, b) => a - b); const q = (p) => durs[Math.floor(durs.length * p)] || 0;
 const phraseAt = (sec) => { const i = WMS.findIndex((w) => w.s >= sec); return i < 0 ? "" : WMS.slice(i, i + 9).map((w) => w.w).join(" "); };
 vis.sort((a, b) => b.v - a.v).filter((x) => x.v > 6.2).forEach((x) => console.log(`  largo ${x.v.toFixed(1)}s @${(x.b.from / FPS).toFixed(1)} ${x.b.n} · "${phraseAt(x.b.from / FPS)}"`));
-say(q(0.5) >= 2.8 && q(0.5) <= 5.0, `pacing: mediana ${q(0.5).toFixed(2)}s · p75 ${q(0.75).toFixed(2)}s · ≥5s ${(100 * durs.filter((d) => d >= 5).length / durs.length).toFixed(0)}% · máx ${durs[durs.length - 1].toFixed(1)}s`);
+say(q(0.5) >= 3.0 && q(0.5) <= 5.0, `pacing: mediana ${q(0.5).toFixed(2)}s · p75 ${q(0.75).toFixed(2)}s · ≥5s ${(100 * durs.filter((d) => d >= 5).length / durs.length).toFixed(0)}% · máx ${durs[durs.length - 1].toFixed(1)}s`);
 const avF = BASE.filter((b) => b.kind === "avatar").reduce((s, b) => s + b.dur, 0);
 const stF = BASE.filter((b) => (b.src || "").startsWith("broll/rowereddots/stock/")).reduce((s, b) => s + b.dur, 0);
 console.log(`  avatar ${(avF / FPS).toFixed(0)}s (${(100 * avF / F(VIDEO_END)).toFixed(1)}%) · stock real ${(100 * stF / F(VIDEO_END)).toFixed(1)}% · clips ${BASE.filter((b) => b.kind === "clip").length} · fotos ${BASE.filter((b) => b.kind === "foto").length}`);
 const clips0 = BASE.filter((b) => b.kind === "clip" && !b.frames);
 say(clips0.length === 0, `clips con frames medidos: ${BASE.filter((b) => b.kind === "clip").length - clips0.length}/${BASE.filter((b) => b.kind === "clip").length}`);
 const kinds = {}; COMPS.forEach((c) => (kinds[c.kind] = (kinds[c.kind] || 0) + 1));
-say(tardeN === 0, `tiempos internos dentro de su componente (fuera: ${tardeN})`);
-say(COMPS.length >= 40 && Object.keys(kinds).length >= 15, `componentes distintos: ${Object.keys(kinds).length} → ${Object.entries(kinds).map(([k, v]) => k + "×" + v).join(", ")}`);
+say(Object.keys(kinds).length >= 6, `componentes distintos: ${Object.keys(kinds).length} → ${Object.entries(kinds).map(([k, v]) => k + "×" + v).join(", ")}`);
 const vidTags = fs.readdirSync(`src/${SLUG}`).filter((f) => f.endsWith(".tsx")).map((f) => fs.readFileSync(`src/${SLUG}/` + f, "utf8").split("\n").filter((l) => !/^\s*(\/\/|\*)/.test(l)).join("\n")).join("\n");
 say(!/<Video[\s>]/.test(vidTags), `ningún <Video> en src/${SLUG} (OffthreadVideo)`);
 
 // ── assets ──
-const need = new Set([`${SLUG}.m4a`, `${SLUG}_avatar.mp4`, ...SFX.map((x) => x.src)]);
-const hurga = (v) => { if (typeof v === "string") { if (/^(img|broll|med|sfx)\//.test(v)) need.add(v); return; } if (Array.isArray(v)) v.forEach(hurga); else if (v && typeof v === "object") Object.values(v).forEach(hurga); };
+const need = new Set([`${SLUG}.m4a`, `${SLUG}_avatar.mp4`]);
+const hurga = (v) => { if (typeof v === "string") { if (/^(img|broll|med)\//.test(v)) need.add(v); return; } if (Array.isArray(v)) v.forEach(hurga); else if (v && typeof v === "object") Object.values(v).forEach(hurga); };
 [...BASE, ...COMPS].forEach(hurga);
 const assets = new Set();
 for (const p of need) { assets.add(p); if (/\.(jpe?g|png)$/i.test(p)) { const b = p.replace(/\.(jpe?g|png)$/i, "_blur.jpg"); if (has(b)) assets.add(b); } }
@@ -359,7 +253,6 @@ fs.writeFileSync(`src/${SLUG}/cues.gen.ts`,
   `// AUTO-GENERADO por _v3/rowereddots/gen.mjs — NO editar a mano.\n` +
   `export const TOTAL_FRAMES = ${F(VIDEO_END)};\n` +
   `export const BASE: any[] = ${JSON.stringify(BASE)};\n` +
-  `export const COMPS: any[] = ${JSON.stringify(COMPS)};\n` +
-  `export const SFX: any[] = ${JSON.stringify(SFX)};\n`);
+  `export const COMPS: any[] = ${JSON.stringify(COMPS)};\n`);
 console.log(fail ? `\n✗ ${fail} compuerta(s) en rojo` : "\n✓ todas las compuertas en verde");
 process.exit(fail ? 1 : 0);

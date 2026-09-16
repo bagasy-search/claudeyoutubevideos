@@ -34,11 +34,25 @@
    "componentes": [
     {
      "p": "But there is one kind of red dot that looks a lot like them",
-     "kind": "errorstinger",
-     "number": "1",
-     "title": "THE RED DOT THAT CAN'T WAIT",
-     "eyebrow": "coming up",
-     "tone": "warn"
+     "kind": "falltease",
+     "kicker": "Before we're done",
+     "title": "The red dot that can't wait",
+     "img": "img/rowereddots/rd_shins_hook.jpg",
+     "sideL": "img/rowereddots/rd_petechiae_ankles.jpg",
+     "sideR": "img/rowereddots/rd_leaked_forearm.jpg",
+     "bed": "img/rowereddots/rd_shins_hook.jpg",
+     "hitAtP": "call your doctor today",
+     "endP": "not next month."
+    },
+    {
+     "p": "I'm Dr. Emmett Rowe",
+     "kind": "presenter",
+     "mode": "intro",
+     "img": "img/rowereddots/rd_doc_cutout.png",
+     "bg": "img/rowereddots/rd_dr_glass_desk.jpg",
+     "kicker": "Your doctor today",
+     "role": "Everyday skin questions after 60",
+     "endP": "more than almost anything else."
     }
    ]
   },
@@ -133,14 +147,6 @@
     }
    ],
    "componentes": [
-    {
-     "p": "more than almost anything else",
-     "kind": "lowerthird",
-     "title": "The question I hear most",
-     "kicker": "in my office",
-     "desc": "red dots on the chest, more every year",
-     "tone": "teal"
-    },
     {
      "p": "Some have fifty.",
      "kind": "datoimpacto",
@@ -289,36 +295,6 @@
      "y": 0.5,
      "label": "a little knot of tiny vessels",
      "zoom": 1.8,
-     "tone": "teal"
-    },
-    {
-     "p": "It is not a blood clot.",
-     "kind": "checklist",
-     "title": "What it is NOT",
-     "tone": "teal",
-     "image": "img/rowereddots/rd_dr_not_clot.jpg",
-     "items": [
-      {
-       "text": "Not a blood clot",
-       "state": "ok"
-      },
-      {
-       "text": "Not a broken vessel",
-       "state": "ok"
-      },
-      {
-       "text": "Not blood leaking out",
-       "state": "ok"
-      }
-     ]
-    },
-    {
-     "p": "the majority of us have at least some",
-     "kind": "datoimpacto",
-     "figure": "MOST",
-     "eyebrow": "ADULTS IN THEIR 70s",
-     "caption": "have at least a few of them",
-     "image": "img/rowereddots/rd_seventy_cake.jpg",
      "tone": "teal"
     }
    ]
@@ -622,39 +598,6 @@
      ]
     },
     {
-     "p": "Hormones can play a part",
-     "kind": "carrusel",
-     "title": "Why they appear",
-     "tone": "teal",
-     "focus": 2,
-     "items": [
-      {
-       "num": "1",
-       "title": "Age",
-       "sub": "the years change tiny vessels",
-       "image": "img/rowereddots/rd_dr_old_photo.jpg"
-      },
-      {
-       "num": "2",
-       "title": "Family",
-       "sub": "it runs in families",
-       "image": "img/rowereddots/rd_family_album.jpg"
-      },
-      {
-       "num": "3",
-       "title": "Hormones",
-       "sub": "new ones in pregnancy",
-       "image": "img/rowereddots/rd_pregnancy.jpg"
-      },
-      {
-       "num": "4",
-       "title": "Some exposures",
-       "sub": "a few medicines and chemicals",
-       "image": "img/rowereddots/rd_garage_chemicals.jpg"
-      }
-     ]
-    },
-    {
      "p": "it is just time and genes",
      "kind": "frasecinetica",
      "words": [
@@ -802,15 +745,28 @@
    ],
    "componentes": [
     {
-     "p": "Myth number one.",
+     "p": "Myth number two.",
      "kind": "mitoverdad",
-     "myth": "Red dots mean a bad liver",
-     "truth": "Round cherry dots are not a liver sign",
-     "image": "img/rowereddots/rd_liver_worry.jpg",
-     "flipPhrase": "Cherry angiomas by themselves are not a sign of liver disease."
+     "myth": "Caused by food, drink or dirt",
+     "truth": "Not diet, not hygiene, not contagious",
+     "image": "img/rowereddots/rd_grandpa_hug.jpg",
+     "flipPhrase": "No. They are not about your diet"
     },
     {
-     "p": "That is not the same thing as a round cherry dot.",
+     "p": "Red dots mean your liver is bad.",
+     "kind": "myth2",
+     "kicker": "Myth number one",
+     "myth": "Red dots mean a bad liver",
+     "truth": "That's a spider angioma, not a cherry dot",
+     "mythImg": "img/rowereddots/rd_liver_worry.jpg",
+     "truthImg": "img/rowereddots/rd_spider_angioma.jpg",
+     "bed": "img/rowereddots/rd_liver_worry.jpg",
+     "hitAtP": "This one scares a lot of people",
+     "truthAtP": "There is a different spot, called a spider angioma",
+     "endP": "can be connected to liver problems."
+    },
+    {
+     "p": "A spider angioma has a red center",
      "kind": "splitcompare",
      "eyebrow": "NOT THE SAME SPOT",
      "title": "Spider vs. cherry",
@@ -824,50 +780,34 @@
       "label": "Cherry angioma",
       "note": "a round dot, no legs"
      },
-     "winner": "none"
-    },
-    {
-     "p": "Myth number two.",
-     "kind": "mitoverdad",
-     "myth": "Caused by food, drink or dirt",
-     "truth": "Not diet, not hygiene, not contagious",
-     "image": "img/rowereddots/rd_grandpa_hug.jpg",
-     "flipPhrase": "No. They are not about your diet"
+     "winner": "none",
+     "endP": "not a sign of liver disease."
     },
     {
      "p": "Myth number three.",
-     "kind": "mitoverdad",
+     "kind": "myth2",
+     "kicker": "Myth number three",
      "myth": "Left alone, they turn into cancer",
      "truth": "Benign. They don't become skin cancer.",
-     "image": "img/rowereddots/rd_dr_benign.jpg",
-     "flipPhrase": "Cherry angiomas are benign."
+     "mythImg": "img/rowereddots/rd_warn_black.jpg",
+     "truthImg": "img/rowereddots/rd_dr_benign.jpg",
+     "bed": "img/rowereddots/rd_dr_benign.jpg",
+     "hitAtP": "Cherry angiomas are benign.",
+     "truthAtP": "Benign means not cancer.",
+     "endP": "that is their normal behavior."
     },
     {
      "p": "There is no cream, no vitamin and no special diet",
-     "kind": "datoimpacto",
-     "figure": "0",
-     "eyebrow": "CREAMS PROVEN TO PREVENT THEM",
-     "caption": "no cream, vitamin or diet",
-     "image": "img/rowereddots/rd_cream_shelf.jpg",
-     "tone": "warn"
-    },
-    {
-     "p": "keep your wallet in your pocket",
-     "kind": "frasecinetica",
-     "words": [
-      {
-       "t": "KEEP"
-      },
-      {
-       "t": "YOUR"
-      },
-      {
-       "t": "WALLET.",
-       "hl": true
-      }
-     ],
-     "perWord": 10,
-     "tone": "warn"
+     "kind": "myth2",
+     "kicker": "Can you prevent them?",
+     "myth": "A cream or vitamin stops them",
+     "truth": "Nothing proven. Keep your wallet.",
+     "mythImg": "img/rowereddots/rd_cream_shelf.jpg",
+     "truthImg": "img/rowereddots/rd_dr_wallet.jpg",
+     "bed": "img/rowereddots/rd_miracle_bottle.jpg",
+     "hitAtP": "has been shown to stop cherry angiomas",
+     "truthAtP": "So please don't spend your money",
+     "endP": "keep your wallet in your pocket."
     }
    ]
   },
@@ -1023,14 +963,6 @@
    ],
    "componentes": [
     {
-     "p": "The first one, and the most important one, is called petechiae.",
-     "kind": "lowerthird",
-     "title": "Petechiae",
-     "kicker": "lookalike #1",
-     "desc": "flat pinpoint dots of leaked blood",
-     "tone": "warn"
-    },
-    {
      "p": "Cherry angiomas show up one by one",
      "kind": "lineatiempo",
      "title": "Slow vs. sudden",
@@ -1059,58 +991,12 @@
      "rightVerdict": "Call your doctor today"
     },
     {
-     "p": "That can happen with low platelets",
-     "kind": "checklist",
-     "title": "What petechiae can signal",
-     "tone": "warn",
-     "image": "img/rowereddots/rd_blood_thinner.jpg",
-     "items": [
-      {
-       "text": "Low platelets",
-       "state": "warn"
-      },
-      {
-       "text": "Some infections",
-       "state": "warn"
-      },
-      {
-       "text": "Blood thinners and other medicines",
-       "state": "warn"
-      }
-     ]
-    },
-    {
      "p": "If a crop of tiny flat red or purple dots appears suddenly",
      "kind": "errorstinger",
      "number": "!",
      "title": "SUDDEN + DOESN'T FADE = CALL TODAY",
      "eyebrow": "my rule",
      "tone": "warn"
-    },
-    {
-     "p": "And if those dots come with a fever",
-     "kind": "checklist",
-     "title": "Don't wait if you also have",
-     "tone": "warn",
-     "image": "img/rowereddots/rd_fever_bed.jpg",
-     "items": [
-      {
-       "text": "Fever or feeling very sick",
-       "state": "danger"
-      },
-      {
-       "text": "New bruises you can't explain",
-       "state": "danger"
-      },
-      {
-       "text": "Bleeding gums or nosebleeds",
-       "state": "danger"
-      },
-      {
-       "text": "Blood in your urine",
-       "state": "danger"
-      }
-     ]
     },
     {
      "p": "That is your body asking for help.",
@@ -1135,6 +1021,66 @@
      ],
      "perWord": 8,
      "tone": "warn"
+    },
+    {
+     "p": "The first one, and the most important one, is called petechiae.",
+     "kind": "carousel",
+     "group": "look",
+     "idx": 0,
+     "mode": "reveal",
+     "cards": [
+      {
+       "name": "Petechiae",
+       "img": "img/rowereddots/rd_petechiae_ankles.jpg"
+      },
+      {
+       "name": "Spider angioma",
+       "img": "img/rowereddots/rd_spider_angioma.jpg"
+      },
+      {
+       "name": "Pyogenic granuloma",
+       "img": "img/rowereddots/rd_pyogenic.jpg"
+      },
+      {
+       "name": "Red melanoma (rare)",
+       "img": "img/rowereddots/rd_red_melanoma.jpg"
+      }
+     ],
+     "revealP": [
+      "is called petechiae."
+     ],
+     "endP": "under the skin.",
+     "kicker": "Lookalike 1 of 4",
+     "title": "Red dots that aren't cherries",
+     "bed": "img/rowereddots/rd_quick_glance.jpg"
+    },
+    {
+     "p": "And if those dots come with a fever",
+     "kind": "redflags",
+     "kicker": "Don't wait for an appointment",
+     "img": "img/rowereddots/rd_fever_bed.jpg",
+     "bed": "img/rowereddots/rd_er_entrance.jpg",
+     "flags": [
+      {
+       "text": "Fever or feeling very sick",
+       "atP": "with a fever"
+      },
+      {
+       "text": "New bruises you can't explain",
+       "atP": "with new bruises"
+      },
+      {
+       "text": "Bleeding gums or nosebleeds",
+       "atP": "with bleeding gums"
+      },
+      {
+       "text": "Blood in your urine",
+       "atP": "blood in your urine"
+      }
+     ],
+     "stamp": "Get seen right away",
+     "stampAtP": "Get seen right away.",
+     "endP": "Get seen right away."
     }
    ]
   },
@@ -1505,115 +1451,132 @@
    ],
    "componentes": [
     {
-     "p": "Then there is a spot called a pyogenic granuloma.",
-     "kind": "lowerthird",
-     "title": "Pyogenic granuloma",
-     "kicker": "another lookalike",
-     "desc": "grows fast, looks raw, bleeds easily",
-     "tone": "warn"
+     "p": "The spider angioma I already mentioned.",
+     "kind": "carousel",
+     "group": "look",
+     "idx": 1,
+     "mode": "reveal",
+     "cards": [
+      {
+       "name": "Petechiae",
+       "img": "img/rowereddots/rd_petechiae_ankles.jpg"
+      },
+      {
+       "name": "Spider angioma",
+       "img": "img/rowereddots/rd_spider_angioma.jpg"
+      },
+      {
+       "name": "Pyogenic granuloma",
+       "img": "img/rowereddots/rd_pyogenic.jpg"
+      },
+      {
+       "name": "Red melanoma (rare)",
+       "img": "img/rowereddots/rd_red_melanoma.jpg"
+      }
+     ],
+     "revealP": [
+      "The spider angioma I already mentioned."
+     ],
+     "endP": "Red center, little legs.",
+     "kicker": "Lookalike 2 of 4",
+     "title": "Red dots that aren't cherries",
+     "bed": "img/rowereddots/rd_quick_glance.jpg"
     },
     {
-     "p": "What gives them away is behavior.",
-     "kind": "callout",
-     "figure": "BEHAVIOR",
-     "eyebrow": "WHAT GIVES THEM AWAY",
-     "caption": "growing, changing, bleeding, looking different",
-     "image": "img/rowereddots/rd_red_melanoma.jpg"
+     "p": "Then there is a spot called a pyogenic granuloma.",
+     "kind": "carousel",
+     "group": "look",
+     "idx": 2,
+     "mode": "reveal",
+     "cards": [
+      {
+       "name": "Petechiae",
+       "img": "img/rowereddots/rd_petechiae_ankles.jpg"
+      },
+      {
+       "name": "Spider angioma",
+       "img": "img/rowereddots/rd_spider_angioma.jpg"
+      },
+      {
+       "name": "Pyogenic granuloma",
+       "img": "img/rowereddots/rd_pyogenic.jpg"
+      },
+      {
+       "name": "Red melanoma (rare)",
+       "img": "img/rowereddots/rd_red_melanoma.jpg"
+      }
+     ],
+     "revealP": [
+      "a spot called a pyogenic granuloma."
+     ],
+     "endP": "because it is not an infection.",
+     "kicker": "Lookalike 3 of 4",
+     "title": "Red dots that aren't cherries",
+     "bed": "img/rowereddots/rd_quick_glance.jpg"
+    },
+    {
+     "p": "Some skin cancers, including a type of melanoma",
+     "kind": "carousel",
+     "group": "look",
+     "idx": 3,
+     "mode": "reveal",
+     "cards": [
+      {
+       "name": "Petechiae",
+       "img": "img/rowereddots/rd_petechiae_ankles.jpg"
+      },
+      {
+       "name": "Spider angioma",
+       "img": "img/rowereddots/rd_spider_angioma.jpg"
+      },
+      {
+       "name": "Pyogenic granuloma",
+       "img": "img/rowereddots/rd_pyogenic.jpg"
+      },
+      {
+       "name": "Red melanoma (rare)",
+       "img": "img/rowereddots/rd_red_melanoma.jpg"
+      }
+     ],
+     "revealP": [
+      "Some skin cancers, including a type of melanoma"
+     ],
+     "endP": "instead of brown.",
+     "kicker": "Lookalike 4 of 4",
+     "title": "Red dots that aren't cherries",
+     "bed": "img/rowereddots/rd_quick_glance.jpg"
     },
     {
      "p": "So here are the warning signs.",
-     "kind": "carrusel",
-     "title": "Show a doctor if it...",
-     "tone": "warn",
-     "focus": 0,
-     "items": [
+     "kind": "redflags",
+     "kicker": "Show a doctor if a red spot",
+     "img": "img/rowereddots/rd_ugly_duckling.jpg",
+     "bed": "img/rowereddots/rd_dr_serious.jpg",
+     "flags": [
       {
-       "num": "1",
-       "title": "Grows fast",
-       "sub": "over a few weeks",
-       "image": "img/rowereddots/rd_warn_grow.jpg"
+       "text": "Grows quickly over weeks",
+       "atP": "if it grows quickly"
       },
       {
-       "num": "2",
-       "title": "Changes shape",
-       "sub": "ragged, irregular edge",
-       "image": "img/rowereddots/rd_warn_shape.jpg"
+       "text": "Changes shape or edge",
+       "atP": "If it changes shape"
       },
       {
-       "num": "3",
-       "title": "Turns black or blue",
-       "sub": "a dark new color",
-       "image": "img/rowereddots/rd_warn_black.jpg"
+       "text": "Turns black or blue",
+       "atP": "If it turns black or blue."
       },
       {
-       "num": "4",
-       "title": "Bleeds on its own",
-       "sub": "again and again",
-       "image": "img/rowereddots/rd_warn_bleed.jpg"
+       "text": "Bleeds on its own",
+       "atP": "If it bleeds again and again"
       },
       {
-       "num": "5",
-       "title": "Won't heal",
-       "sub": "an open sore",
-       "image": "img/rowereddots/rd_warn_sore.jpg"
+       "text": "A sore that won't heal",
+       "atP": "open sore that doesn't heal."
       }
-     ]
-    },
-    {
-     "p": "If it becomes an open sore that doesn't heal.",
-     "kind": "carrusel",
-     "title": "Show a doctor if it...",
-     "tone": "warn",
-     "focus": 4,
-     "items": [
-      {
-       "num": "1",
-       "title": "Grows fast",
-       "sub": "over a few weeks",
-       "image": "img/rowereddots/rd_warn_grow.jpg"
-      },
-      {
-       "num": "2",
-       "title": "Changes shape",
-       "sub": "ragged, irregular edge",
-       "image": "img/rowereddots/rd_warn_shape.jpg"
-      },
-      {
-       "num": "3",
-       "title": "Turns black or blue",
-       "sub": "a dark new color",
-       "image": "img/rowereddots/rd_warn_black.jpg"
-      },
-      {
-       "num": "4",
-       "title": "Bleeds on its own",
-       "sub": "again and again",
-       "image": "img/rowereddots/rd_warn_bleed.jpg"
-      },
-      {
-       "num": "5",
-       "title": "Won't heal",
-       "sub": "an open sore",
-       "image": "img/rowereddots/rd_warn_sore.jpg"
-      }
-     ]
-    },
-    {
-     "p": "Dermatologists call that the ugly duckling sign",
-     "kind": "lowerthird",
-     "title": "The ugly duckling sign",
-     "kicker": "rule of thumb",
-     "desc": "the one spot unlike all the others",
-     "tone": "warn"
-    },
-    {
-     "p": "over just a few weeks or months, mention it at your next visit",
-     "kind": "datoimpacto",
-     "figure": "DOZENS",
-     "eyebrow": "NEW ONES, IN A FEW WEEKS",
-     "caption": "mention it at your next visit",
-     "image": "img/rowereddots/rd_sudden_many.jpg",
-     "tone": "warn"
+     ],
+     "stamp": "Or: the ugly duckling",
+     "stampAtP": "the one spot that looks different",
+     "endP": "looks different from all the others."
     }
    ]
   },
@@ -1704,6 +1667,41 @@
      "caption": "longer if you take blood thinners",
      "image": "img/rowereddots/rd_gauze_press.jpg",
      "tone": "teal"
+    },
+    {
+     "p": "I have seen patients who tried to burn these spots off",
+     "kind": "routineswap",
+     "mode": "old",
+     "kicker": "What people do at home",
+     "title": "Please don't.",
+     "bed": "img/rowereddots/rd_hot_needle.jpg",
+     "items": [
+      {
+       "label": "A hot needle",
+       "img": "img/rowereddots/rd_hot_needle.jpg",
+       "atP": "burn these spots off",
+       "hitAtP": "Please don't."
+      },
+      {
+       "label": "Nail clippers or thread",
+       "img": "img/rowereddots/rd_clippers_thread.jpg",
+       "atP": "cut them with nail clippers",
+       "hitAtP": "Please don't."
+      },
+      {
+       "label": "Vinegar or garlic",
+       "img": "img/rowereddots/rd_vinegar_garlic.jpg",
+       "atP": "apple cider vinegar",
+       "hitAtP": "Please don't."
+      },
+      {
+       "label": "Remover pens",
+       "img": "img/rowereddots/rd_remover_pen.jpg",
+       "atP": "online remover pens",
+       "hitAtP": "Please don't."
+      }
+     ],
+     "endP": "so it bleeds."
     }
    ]
   },
@@ -1786,14 +1784,6 @@
     }
    ],
    "componentes": [
-    {
-     "p": "I have seen patients who tried to burn these spots off",
-     "kind": "errorstinger",
-     "number": "1",
-     "title": "REMOVING THEM AT HOME",
-     "eyebrow": "the mistake",
-     "tone": "warn"
-    },
     {
      "p": "You can get an infection",
      "kind": "checklist",
@@ -1913,31 +1903,6 @@
    ],
    "componentes": [
     {
-     "p": "The common options are a tiny electric needle",
-     "kind": "checklist",
-     "title": "Safe removal, in the office",
-     "tone": "teal",
-     "image": "img/rowereddots/rd_dr_cautery.jpg",
-     "items": [
-      {
-       "text": "Tiny electric needle",
-       "state": "ok"
-      },
-      {
-       "text": "Laser that targets the red",
-       "state": "ok"
-      },
-      {
-       "text": "Freezing",
-       "state": "ok"
-      },
-      {
-       "text": "Small shave removal",
-       "state": "ok"
-      }
-     ]
-    },
-    {
      "p": "called a dermatoscope",
      "kind": "callout",
      "figure": "dermatoscope",
@@ -1946,14 +1911,45 @@
      "image": "img/rowereddots/rd_dr_dermatoscope.jpg"
     },
     {
-     "p": "a little cluster of round red or purple pockets",
-     "kind": "freezezoom",
-     "image": "img/rowereddots/rd_grapes_view.jpg",
-     "x": 0.45,
-     "y": 0.48,
-     "label": "round red 'pockets', like tiny grapes",
-     "zoom": 1.7,
-     "tone": "teal"
+     "p": "The common options are a tiny electric needle",
+     "kind": "routineswap",
+     "mode": "new",
+     "kicker": "Safe, in the office",
+     "title": "The right way to remove one",
+     "bed": "img/rowereddots/rd_dr_cautery.jpg",
+     "items": [
+      {
+       "label": "A hot needle",
+       "img": "img/rowereddots/rd_hot_needle.jpg",
+       "newLabel": "Tiny electric needle",
+       "newImg": "img/rowereddots/rd_dr_cautery.jpg",
+       "flipAtP": "a tiny electric needle"
+      },
+      {
+       "label": "Nail clippers",
+       "img": "img/rowereddots/rd_clippers_thread.jpg",
+       "newLabel": "Laser for the red",
+       "newImg": "img/rowereddots/rd_laser.jpg",
+       "flipAtP": "a laser that targets"
+      },
+      {
+       "label": "Vinegar or garlic",
+       "img": "img/rowereddots/rd_vinegar_garlic.jpg",
+       "newLabel": "Freezing",
+       "newImg": "img/rowereddots/rd_dr_no_needles.jpg",
+       "flipAtP": "freezing, or"
+      },
+      {
+       "label": "Remover pens",
+       "img": "img/rowereddots/rd_remover_pen.jpg",
+       "newLabel": "Small shave removal",
+       "newImg": "img/rowereddots/rd_dr_dermatoscope.jpg",
+       "flipAtP": "a small shave removal."
+      }
+     ],
+     "chip": "Ask about the cost first",
+     "chipAtP": "ask about the cost",
+     "endP": "ask about the cost before you book."
     }
    ]
   },
@@ -2093,31 +2089,6 @@
      "tone": "teal"
     },
     {
-     "p": "You're looking for anything new",
-     "kind": "checklist",
-     "title": "What you're looking for",
-     "tone": "teal",
-     "image": "img/rowereddots/rd_wife_back.jpg",
-     "items": [
-      {
-       "text": "Anything new",
-       "state": "warn"
-      },
-      {
-       "text": "Anything growing fast",
-       "state": "warn"
-      },
-      {
-       "text": "Anything bleeding",
-       "state": "warn"
-      },
-      {
-       "text": "The ugly duckling",
-       "state": "warn"
-      }
-     ]
-    },
-    {
      "p": "And here's the trick that makes this work.",
      "kind": "frasecinetica",
      "words": [
@@ -2148,6 +2119,88 @@
       "note": "same light, same angle"
      },
      "winner": "none"
+    },
+    {
+     "p": "You're looking for anything new",
+     "kind": "selfcheck",
+     "kicker": "Your monthly check",
+     "questions": [
+      {
+       "text": "Anything new?",
+       "img": "img/rowereddots/rd_wife_back.jpg",
+       "atP": "anything new"
+      },
+      {
+       "text": "Growing fast?",
+       "img": "img/rowereddots/rd_warn_grow.jpg",
+       "atP": "anything growing fast"
+      },
+      {
+       "text": "Bleeding?",
+       "img": "img/rowereddots/rd_warn_bleed.jpg",
+       "atP": "anything bleeding",
+       "tone": "danger"
+      },
+      {
+       "text": "The ugly duckling?",
+       "img": "img/rowereddots/rd_ugly_duckling.jpg",
+       "atP": "anything that is the ugly duckling",
+       "tone": "danger"
+      }
+     ],
+     "endP": "anything that is the ugly duckling."
+    },
+    {
+     "p": "Keep a clear glass in the bathroom cabinet.",
+     "kind": "selfcheck",
+     "kicker": "The glass test",
+     "questions": [
+      {
+       "text": "Sudden flat red dots?",
+       "img": "img/rowereddots/rd_press_home.jpg",
+       "atP": "a sudden crop of tiny flat red dots"
+      },
+      {
+       "text": "Do they fade under a glass?",
+       "img": "img/rowereddots/rd_glass_shin.jpg",
+       "atP": "press the glass on them"
+      },
+      {
+       "text": "No? Call your doctor today",
+       "img": "img/rowereddots/rd_dr_you_know.jpg",
+       "atP": "If they don't fade",
+       "tone": "danger"
+      }
+     ],
+     "endP": "you know what to do."
+    },
+    {
+     "p": "Let me leave you with the big picture.",
+     "kind": "carousel",
+     "mode": "recap",
+     "cards": [
+      {
+       "name": "Not your liver",
+       "img": "img/rowereddots/rd_liver_worry.jpg"
+      },
+      {
+       "name": "Not contagious",
+       "img": "img/rowereddots/rd_grandpa_hug.jpg"
+      },
+      {
+       "name": "Not cancer",
+       "img": "img/rowereddots/rd_dr_benign.jpg"
+      }
+     ],
+     "revealP": [
+      "They're not your liver",
+      "they're not contagious",
+      "they don't turn into cancer"
+     ],
+     "endP": "a few spots that are serious.",
+     "kicker": "The big picture",
+     "title": "What to remember",
+     "bed": "img/rowereddots/rd_couple_dock.jpg"
     }
    ]
   },
@@ -2207,37 +2260,22 @@
    ],
    "componentes": [
     {
-     "p": "They're not your liver",
-     "kind": "checklist",
-     "title": "The big picture",
-     "tone": "teal",
-     "image": "img/rowereddots/rd_couple_dock.jpg",
-     "items": [
-      {
-       "text": "Not your liver, not your diet",
-       "state": "ok"
-      },
-      {
-       "text": "Not contagious, not cancer",
-       "state": "ok"
-      },
-      {
-       "text": "Sudden flat dots: glass test",
-       "state": "warn"
-      },
-      {
-       "text": "Never cut or burn at home",
-       "state": "danger"
-      }
-     ]
-    },
-    {
      "p": "I put the full monthly skin check",
      "kind": "lowerthird",
      "title": "The monthly skin check",
      "kicker": "in the description",
      "desc": "glass test + warning signs, ready to print",
      "tone": "teal"
+    },
+    {
+     "p": "If this helped you",
+     "kind": "presenter",
+     "mode": "signoff",
+     "img": "img/rowereddots/rd_doc_cutout.png",
+     "bg": "img/rowereddots/rd_dr_glass_desk.jpg",
+     "kicker": "Subscribe",
+     "role": "Everyday skin questions after 60",
+     "endP": "I read them."
     }
    ]
   },

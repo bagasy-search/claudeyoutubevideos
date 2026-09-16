@@ -7,7 +7,7 @@ const SETS={
  "@why":[{num:"1",title:"Age",sub:"the years change tiny vessels",image:I("rd_dr_old_photo")},{num:"2",title:"Family",sub:"it runs in families",image:I("rd_family_album")},{num:"3",title:"Hormones",sub:"new ones in pregnancy",image:I("rd_pregnancy")},{num:"4",title:"Some exposures",sub:"a few medicines and chemicals",image:I("rd_garage_chemicals")}],
  "@warn":[{num:"1",title:"Grows fast",sub:"over a few weeks",image:I("rd_warn_grow")},{num:"2",title:"Changes shape",sub:"ragged, irregular edge",image:I("rd_warn_shape")},{num:"3",title:"Turns black or blue",sub:"a dark new color",image:I("rd_warn_black")},{num:"4",title:"Bleeds on its own",sub:"again and again",image:I("rd_warn_bleed")},{num:"5",title:"Won't heal",sub:"an open sore",image:I("rd_warn_sore")}],
 };
-const KINDS=new Set(["lowerthird","frasecinetica","errorstinger","datoimpacto","checklist","mitoverdad","lineatiempo","freezezoom","carrusel","callout","glasstest","bodymap","splitcompare"]);
+const KINDS=new Set(["lowerthird","frasecinetica","errorstinger","datoimpacto","checklist","mitoverdad","lineatiempo","freezezoom","carrusel","callout","glasstest","bodymap","splitcompare","presenter","falltease","carousel","myth2","redflags","routineswap","selfcheck"]);
 let bad=0; const names=new Set();
 const BAD=/bokeh|cinematic|35mm|\b8k\b|blurr|out of focus|shallow depth|soft focus|grainy|muted|subject isolation|stock photo|breath/i;
 let nm=0, nc=0;
