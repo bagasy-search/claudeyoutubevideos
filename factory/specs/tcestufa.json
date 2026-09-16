@@ -1,0 +1,22 @@
+{
+  "slug": "tcestufa",
+  "canal": "taller-de-claudio",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "GUION_tcestufa.txt",
+  "voz": {
+    "id": "claudio_definitiva"
+  },
+  "cta": {
+    "head": "Suscribite al taller",
+    "ancla": "Si esto te sirvió, suscribite"
+  },
+  "avatar": {
+    "face": "public/ref_tcestufa_face.png"
+  },
+  "overrides": {
+    "vlog": {
+      "colaFotoS": 3
+    }
+  }
+}

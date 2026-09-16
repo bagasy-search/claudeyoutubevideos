@@ -15,7 +15,11 @@
 //   node scripts/check_arbol_git.mjs [src/index_<slug>.tsx]
 
 import fs from "fs"; import path from "path"; import { execSync } from "child_process";
-const vistos = new Set(); const cola = [process.argv[2] || "src/index_fedguante.tsx"];
+// ⛔ fail-closed (fábrica, 15-sep-2026): sin argumento miraba `fedguante` (otro video) y con un entry
+// inexistente recorría 0 archivos y salía 0.
+const ENTRY = process.argv[2];
+if (!ENTRY || !fs.existsSync(ENTRY)) { console.error(`⛔ NO MIDIÓ: entry "${ENTRY || "(falta)"}" no existe. Uso: node scripts/check_arbol_git.mjs src/index_<slug>.tsx`); process.exit(2); }
+const vistos = new Set(); const cola = [ENTRY];
 while (cola.length) {
   const f = cola.pop();
   if (vistos.has(f) || !fs.existsSync(f)) continue;

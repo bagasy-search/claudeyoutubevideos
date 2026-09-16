@@ -1,0 +1,61 @@
+# Forced alignment (Whisper/stable-ts) GRATIS en GitHub Actions — CPU, sin GPU.
+# Alinea el GUION ya conocido contra el audio narrado, palabra por palabra, con el
+# MISMO align.py que corría local en ttsenv+CUDA. Acá corre en CPU: más lento que
+# con GPU pero gratis y no depende de tener una NVIDIA en la máquina.
+#
+# Assets: el orquestador (scripts/alignfarm.mjs) sube public/<slug>_16k.wav +
+# transcript_<slug>.txt como RELEASE asset "align-<slug>". El resultado
+# (captions_<slug>_aligned.json, timestamps EXACTOS por palabra) vuelve como
+# ARTIFACT "aligned-<slug>".
+#
+# Disparo:  gh workflow run align.yml -f slug=estiercol -f model=medium
+name: align
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "slug del video (ej: estiercol)"
+        required: true
+      model:
+        description: "modelo whisper (tiny/base/small/medium/large-v3) — mas grande = mas preciso y mas lento en CPU"
+        required: false
+        default: "medium"
+
+jobs:
+  align:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # cachea el modelo whisper descargado (~1.5GB el "medium") → runs siguientes no lo re-bajan
+      - name: cache pip + modelo whisper
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/whisper
+          key: align-${{ runner.os }}-${{ github.event.inputs.model }}-v1
+      # torch Y torchaudio del indice CPU-only (si torchaudio se resuelve del PyPI
+      # normal via stable-ts trae una build linkeada a CUDA -> "libcudart.so.13" no
+      # existe en el runner y explota al importar).
+      - name: install stable-ts (torch+torchaudio CPU-only — sin CUDA no hace falta la build pesada)
+        run: |
+          pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install stable-ts
+      - name: download audio + guion
+        env:
+          GH_TOKEN: "${{ github.token }}"
+        run: |
+          gh release download "align-${{ github.event.inputs.slug }}" \
+            --pattern "align-${{ github.event.inputs.slug }}.tar" --dir .
+          tar -xf "align-${{ github.event.inputs.slug }}.tar"
+      - name: align (forced alignment, timestamps por palabra)
+        run: python align.py "${{ github.event.inputs.slug }}" "${{ github.event.inputs.model }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aligned-${{ github.event.inputs.slug }}
+          path: public/captions_${{ github.event.inputs.slug }}_aligned.json
+          retention-days: 7

@@ -1,5 +1,9 @@
 # video2
 
+> 🏭 **ORDEN VIGENTE (15-sep-2026): FÁBRICA x10.** Antes de producir o tocar el pipeline de
+> video, leé `factory/PLAN_FABRICA.md` (§0–§2 + §7 LOG), avanzá el próximo ítem del checklist
+> y actualizá el LOG al cerrar. Prohibido crear scripts nuevos por slug (`build_<slug>.mjs`, etc.).
+
 ## Índice de código (MCP `codebase-memory`)
 
 Este repo está indexado en un grafo de símbolos. Para preguntas **estructurales**

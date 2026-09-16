@@ -1,0 +1,81 @@
+# TTS con voz clonada (Chatterbox) GRATIS en GitHub Actions — CPU, sin GPU.
+# Corre el MISMO gen_tts.py que local (ttsenv+CUDA en la RTX 3060), para máquinas
+# sin NVIDIA. Mucho más lento que en GPU (Chatterbox es autoregresivo), pero sirve
+# para guiones cortos de prueba.
+#
+# Assets: el orquestador (scripts/ttsfarm.mjs) sube transcript_<slug>.txt (+ el wav
+# de referencia de voz, si se usa) como RELEASE asset "tts-<slug>". El resultado
+# (public/<slug>.wav + <slug>_timing.json) vuelve como ARTIFACT "tts-out-<slug>".
+#
+# Disparo:  gh workflow run tts.yml -f slug=svalbard -f lang=en
+name: tts
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "slug del video (ej: svalbard)"
+        required: true
+      lang:
+        description: "idioma (en = modelo ingles, cualquier otro = multilingue)"
+        required: false
+        default: "en"
+      ref:
+        description: "nombre del wav de referencia YA empaquetado por ttsfarm (ej: ref_anciana.wav) — vacio = voz default"
+        required: false
+        default: ""
+      exaggeration:
+        required: false
+        default: "0.5"
+      cfg:
+        required: false
+        default: "0.5"
+
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # cachea pip + los pesos de Chatterbox (se bajan solos la 1a vez, son pesados)
+      - name: cache pip + modelo chatterbox
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+          key: tts-${{ runner.os }}-${{ github.event.inputs.lang }}-v1
+      # torch Y torchaudio del indice CPU-only PRIMERO (mismo bug que en align.yml:
+      # si se resuelven via chatterbox-tts normal, pip trae una build linkeada a CUDA
+      # -> "libcudart.so.13" no existe en el runner y explota al importar).
+      - name: install chatterbox-tts (torch+torchaudio CPU-only)
+        run: |
+          pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install chatterbox-tts
+      - name: download guion (+ ref de voz si se uso)
+        env:
+          GH_TOKEN: "${{ github.token }}"
+        run: |
+          gh release download "tts-${{ github.event.inputs.slug }}" \
+            --pattern "tts-${{ github.event.inputs.slug }}.tar" --dir .
+          tar -xf "tts-${{ github.event.inputs.slug }}.tar"
+      - name: generar narracion (Chatterbox, CPU)
+        run: |
+          ARGS=(--text "transcript_${{ github.event.inputs.slug }}.txt" \
+                --out "public/${{ github.event.inputs.slug }}.wav" \
+                --lang "${{ github.event.inputs.lang }}" \
+                --exaggeration "${{ github.event.inputs.exaggeration }}" \
+                --cfg "${{ github.event.inputs.cfg }}")
+          if [ -n "${{ github.event.inputs.ref }}" ]; then
+            ARGS+=(--ref "public/${{ github.event.inputs.ref }}")
+          fi
+          python gen_tts.py "${ARGS[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tts-out-${{ github.event.inputs.slug }}
+          path: |
+            public/${{ github.event.inputs.slug }}.wav
+            public/${{ github.event.inputs.slug }}_timing.json
+          retention-days: 7

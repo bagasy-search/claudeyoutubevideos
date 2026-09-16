@@ -71,6 +71,7 @@ async function audit(it, attempt = 1) {
           ] },
         ],
       }),
+      signal: AbortSignal.timeout(120_000),
     });
     if (!r.ok) {
       if ((r.status === 429 || r.status >= 500) && attempt < 4) { await new Promise((s) => setTimeout(s, 800 * attempt)); return audit(it, attempt + 1); }
@@ -99,3 +100,7 @@ const dest = outArg || manifestArg.replace(/\.json$/, "_verdicts.json");
 fs.writeFileSync(dest, JSON.stringify(out, null, 2));
 console.log(`\n${out.length - bad.length} ok / ${bad.length} a regenerar → ${dest}`);
 if (bad.length) { console.log("A regenerar:"); bad.slice(0, 40).forEach((v) => console.log(`  · ${v.name} [${v.issue}] ${v.reason}`)); }
+// ⛔ fail-closed (fábrica, 15-sep-2026): sigue siendo un REPORTE (tiene falsos positivos: se mira a ojo), pero
+// lo que NO se pudo medir (error de API, archivo faltante, 0 imágenes) ya no sale con 0.
+const noMedidos = out.filter((v) => v.issue === "error" || v.issue === "falta");
+if (!items.length || noMedidos.length) { console.log(`⛔ NO MIDIÓ ${noMedidos.length}/${items.length} (${noMedidos.slice(0, 5).map((v) => v.name).join(", ")})`); process.exit(2); }

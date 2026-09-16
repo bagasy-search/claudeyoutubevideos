@@ -50,6 +50,7 @@ async function preguntar(a, b, k) {
         { type: "image_url", image_url: { url: `data:image/jpeg;base64,${b64(b)}`, detail: "high" } },
       ] }],
     }),
+    signal: AbortSignal.timeout(180_000),   // sin timeout un juez colgó 30 min (fcsricino)
   });
   const t = await r.text();
   if (!r.ok) throw new Error(`${r.status} ${t.slice(0, 140)}`);
@@ -81,6 +82,11 @@ for (const c of clips) {
 }
 fs.writeFileSync(OUT, JSON.stringify(res, null, 1), "utf8");
 const malos = res.filter((r) => r.rechazado);
-console.log(`\nmedidos ${res.length} · rechazados ${malos.length} (${res.length ? Math.round(100 * malos.length / res.length) : 0}%)`);
+// ⛔ fail-closed (fábrica, 15-sep-2026): un error de API tras 4 intentos contaba como "no rechazado" y los
+// clips sin foto de origen se salteaban callados. Ahora los dos son "no medido" y cortan con exit 2.
+const errores = res.filter((r) => r.error);
+const sinFoto = clips.length - res.length;
+console.log(`\nclips ${clips.length} · medidos ${res.length - errores.length} · con error ${errores.length} · sin foto de origen ${sinFoto} · rechazados ${malos.length} (${res.length ? Math.round(100 * malos.length / res.length) : 0}%)`);
 console.log(`→ ${OUT}`);
 if (malos.length) process.exit(1);
+if (!clips.length || errores.length || res.length === 0) { console.log(`⛔ NO MIDIÓ todo: ${errores.length} errores de API, ${clips.length} clips`); process.exit(2); }

@@ -1,0 +1,28 @@
+{
+  "nombre": "Taller de Claudio",
+  "montaje": "vlog-crudo",
+  "idioma": "es",
+  "fish": { "voz": "claudio_definitiva", "blockChars": 1200, "cps": 15.0 },
+  "frases": { "cps": 15.0, "minChars": 55, "maxSec": 9.0, "objetivoSec": 5.5 },
+  "ventanas": { "padSec": 0.4, "fusionarSec": 0.2 },
+  "vlog": { "minPlanoS": 1.2, "partirS": 7.0, "colaFotoS": 2.5, "maxAvatarTapadoS": 1.0, "maxPlacaVistaS": 1.5 },
+  "fondo": "#0A0B08",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "imagen": { "size": "1088x608", "quality": "low", "motorConCara": "gpt", "motorSinCara": "gptsin" },
+  "presentador": "the same man from the reference image, about 45, short dark curly hair with volume, a short salt-and-pepper beard, olive skin, wearing a dark navy blue button-up work shirt with the sleeves rolled to the forearm",
+  "presentadorToken": "CLAUDIO",
+  "formula": "bright natural daylight, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "vintage": "faded 1970s colour photograph, real family snapshot, no text, no letters, no labels, no signs",
+  "lugares": {
+    "taller_a": "in a small home workshop at a rough wooden workbench, in the background a pegboard wall with hanging pliers, a hacksaw and a coil of wire, a metal shelf with glass jars of screws and a red toolbox, a window on the left letting in daylight, a broom leaning in the corner",
+    "taller_b": "in the same small home workshop by the metal shelving, in the background shelves with empty tin cans sorted by size, a cardboard box of old candles, a clay flowerpot, paint tins, a roll of tape and a pair of work gloves on the shelf",
+    "taller_c": "in the same home workshop near the open door, grey concrete floor, in the background a stack of bricks, a red plastic bucket, a folded tarp on a wooden crate, a stepladder and the backyard visible through the doorway",
+    "galpon": "in a bigger garage workshop, concrete floor, in the background a steel workbench, tires stacked against the wall, shelves with oil bottles and cardboard boxes, and a bicycle hanging on a hook",
+    "ferreteria": "at the counter of a small neighbourhood hardware store, in the background wooden drawers of screws, hanging coils of hose and rope, copper pipe fittings on a pegboard, boxes of nails and a paint tin display",
+    "cocina": "in a modest home kitchen, in the background a gas stove with an old aluminium pot, white wall tiles, a dish rack with plates, a kettle, a jar of wooden spoons on the counter and a checkered cloth on the table",
+    "patio": "in a small backyard patio, worn floor tiles, in the background a brick wall, a clothesline with laundry, a red plastic bucket under a tap, a coiled green garden hose and potted plants",
+    "living": "in a modest living room, in the background a worn brown sofa with a cushion, a low tv stand with the tv switched off, a thin rug, a window with curtains and a plant in a pot"
+  },
+  "cta": { "regex": "^Si esto te sirvió, suscribite", "head": "Suscribite al taller" },
+  "avatarPrompt": "A man speaks warmly and naturally to the camera in his workshop, natural head movement, expressive face, realistic lighting"
+}
