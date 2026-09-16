@@ -1,10 +1,10 @@
-# fish_factory_rkfob.py — cola de voz clonada con Fish s2.1-pro-free para `rkfob` (Ray Kessler, EN).
+# fish_factory.py — voz clonada con Fish s2.1-pro-free. ES EL COMPARTIDO: lo llama
+# factory/phases/10_voice.mjs. Naci como copia de fish_factory_rkfob.py (multi-referencia) y
+# volvi a ser el generico el 16-sep-2026: acepta `--voice <id>` leyendo fish_voices.json,
+# escribe `status` en el manifest y arma `master.wav` (sin eso 10_voice muere con 0 bloques).
 #
-# El factory compartido (`fish_factory.py`) se perdió del checkout, y de todos modos SÓLO ACEPTA
-# UNA referencia: en rkbill y rkbottle hubo que parchear una copia para mandar TRES. Ésta ya nace
-# multi-referencia.
-#
-#   python fish_factory_rkfob.py --script cola.txt --refs refs.json --out dir [--block-chars 500]
+#   python fish_factory.py --script g.txt --voice claudio_mendoza_s4 --out dir [--block-chars 1200]
+#   python fish_factory.py --script cola.txt --refs refs.json --out dir [--block-chars 500]
 #                                [--concurrency 3] [--fix-flagged 2] [--temperature 0.75] [--top-p 0.8]
 #
 # refs.json = [{"wav": "...", "text": "transcripción EXACTA"}, ...]
@@ -219,8 +219,10 @@ def main():
                 flagged.append((i, t, "long", d, esperado))
             elif d < esperado * 0.6:
                 flagged.append((i, t, "short", d, esperado))
+        malos = {i for i, *_ in flagged}
         manifest = {f"b{i:03d}": {"chars": len(t), "dur": wav_dur(out / f'b{i:03d}.wav'),
-                                  "esperado": round(len(t)/CHARS_PER_SEC, 2)} for i, t in enumerate(blocks)}
+                                  "esperado": round(len(t)/CHARS_PER_SEC, 2),
+                                  "status": "flagged" if i in malos else "ok"} for i, t in enumerate(blocks)}
         manifest_p.write_text(json.dumps(manifest, indent=1))
         print(f"\nRONDA {ronda}: bloques {len(blocks)} · marcados {len(flagged)}")
         for i, t, why, d, e in flagged:
@@ -237,6 +239,13 @@ def main():
     lst.write_text("\n".join(f"file '{(out / f'b{i:03d}.wav').resolve().as_posix()}'"
                              for i in range(len(blocks))), encoding="utf-8")
     print(f"lista de concat → {lst}")
+
+    # master.wav: lo consume factory/phases/10_voice.mjs (P.fishMaster). Sin esto la fase muere.
+    master = out / "master.wav"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0",
+                    "-i", str(lst), "-c:a", "pcm_s16le", "-ar", "44100", "-ac", "1", str(master)],
+                   check=True)
+    print(f"master → {master} ({wav_dur(master):.1f}s)")
 
 
 if __name__ == "__main__":
