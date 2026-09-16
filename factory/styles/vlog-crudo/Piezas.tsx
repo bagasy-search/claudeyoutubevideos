@@ -1,7 +1,8 @@
 // Piezas.tsx — primitivas del montaje VLOG CRUDO de la FÁBRICA (estilo compartido, NO clonar por slug).
 // Procedencia: src/tcbriquetas/Piezas.tsx (Taller de Claudio). El build la copia a src/<slug>/Piezas.tsx
 // para que el árbol de imports del farm sea autocontenido; la fuente de verdad es ESTE archivo.
-// cero componentes. Lo único encima es el CTA de canal al cierre (este canal no tiene landing: sin QR).
+// cero componentes. Lo único encima es el CTA: texto + QR opcional. El QR necesita un cuadro quieto
+// para poder escanearse, por eso es la ÚNICA composición que sobrevive al vlog crudo.
 //
 // ⛔⛔ TODO video va con `OffthreadVideo`, NUNCA con `<Video>` (busca por tiempo, repite y saltea
 // cuadros de forma irregular = el "se ve lageado").
@@ -91,7 +92,7 @@ export const AvatarVentana: React.FC<{ src: string; desde: number }> = ({ src, d
 
 /** CTA DE CANAL — suscripción + lo que viene. OVERLAY en la esquina inferior, sin tarjeta a pantalla
  *  completa. ⛔ Va en la capa `over`, NUNCA como cue base (en dale1 dejó 13 s de negro). */
-export const CtaFinal: React.FC<{ head: string; sub?: string }> = ({ head, sub }) => {
+export const CtaFinal: React.FC<{ head: string; sub?: string; qr?: string }> = ({ head, sub, qr }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const inP = interpolate(frame, [0, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
@@ -99,11 +100,16 @@ export const CtaFinal: React.FC<{ head: string; sub?: string }> = ({ head, sub }
   const a = Math.min(inP, out);
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <div style={{ position: "absolute", left: 64, bottom: 150, maxWidth: 1360, opacity: a, transform: `translateY(${((1 - inP) * 26).toFixed(1)}px)` }}>
-        <div style={{ display: "inline-block", padding: "18px 30px 20px", background: "rgba(10,11,8,.74)", borderLeft: "6px solid #F2B233" }}>
+      <div style={{ position: "absolute", left: 64, bottom: 150, maxWidth: 1600, opacity: a, transform: `translateY(${((1 - inP) * 26).toFixed(1)}px)`, display: "flex", alignItems: "flex-end", gap: 20 }}>
+        <div style={{ padding: "18px 30px 20px", background: "rgba(10,11,8,.74)", borderLeft: "6px solid #F2B233" }}>
           <div style={{ fontFamily: "Oswald, Impact, system-ui, sans-serif", fontSize: 72, lineHeight: 1.04, fontWeight: 800, textTransform: "uppercase", color: "#FFFFFF", textShadow: "0 4px 24px rgba(0,0,0,.95)" }}>{head}</div>
           {sub ? <div style={{ fontFamily: "Oswald, Impact, system-ui, sans-serif", fontSize: 42, lineHeight: 1.15, marginTop: 10, color: "#F2B233", textShadow: "0 4px 22px rgba(0,0,0,.95)" }}>{sub}</div> : null}
-        </div>
+          </div>
+          {qr ? (
+            <div style={{ display: "flex", alignItems: "center", gap: 18, padding: 14, background: "#FFFFFF", borderLeft: "6px solid #F2B233" }}>
+              <Img src={staticFile(qr)} style={{ width: 208, height: 208, display: "block", imageRendering: "pixelated" }} />
+            </div>
+          ) : null}
       </div>
     </AbsoluteFill>
   );

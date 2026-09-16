@@ -1,0 +1,84 @@
+{
+  "nombre": "Claudio Mendoza Constructor",
+  "montaje": "vlog-crudo",
+  "idioma": "es",
+  "fish": {
+    "voz": "claudio_mendoza_s4",
+    "blockChars": 1200,
+    "cps": 11
+  },
+  "frases": {
+    "cps": 11,
+    "minChars": 55,
+    "maxSec": 9,
+    "objetivoSec": 5.5
+  },
+  "ventanas": {
+    "padSec": 0.4,
+    "fusionarSec": 0.2
+  },
+  "vlog": {
+    "minPlanoS": 1.2,
+    "partirS": 7,
+    "colaFotoS": 2.5,
+    "maxAvatarTapadoS": 1,
+    "maxPlacaVistaS": 1.5
+  },
+  "fondo": "#0A0B08",
+  "placa": "img/{slug}/{slug}_placa_a.jpg",
+  "imagen": {
+    "size": "1088x608",
+    "quality": "low",
+    "motorConCara": "gpt",
+    "motorSinCara": "gptsin"
+  },
+  "presentador": "the same man from the reference image, about 45, dark curly hair with volume, short salt-and-pepper stubble, olive skin, wearing a charcoal grey button-up work shirt with the sleeves rolled to the forearm over a black t-shirt",
+  "presentadorToken": "CLAUDIO",
+  "formula": "bright natural daylight, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels, no signs",
+  "vintage": "faded 1970s colour photograph, real family snapshot, no text, no letters, no labels, no signs",
+  "lugares": {
+    "taller_a": "in a working home garage with a concrete floor, in the background a rolling black tool chest with the drawers half open, a pegboard wall with spanners and pliers hanging, a car engine block on a red stand, and the roller door open to the street letting daylight in",
+    "taller_b": "in the same home garage by the steel shelving, in the background shelves with car batteries of different sizes, coils of red and black cable, a battery charger with its clamps hanging, plastic bins of terminals and fuses, and a stack of tyres against the wall",
+    "banco": "at a rough wooden workbench in the garage, in the background a vice bolted to the bench, a clamp meter and a multimeter lying on the wood, stripped cable ends, a roll of insulating tape, a coffee mug and a notebook with a pen",
+    "patio": "in a small backyard with worn floor tiles, in the background a brick wall, a portable solar panel propped against a plastic chair, an extension lead running across the tiles, a coiled garden hose and potted plants",
+    "techo": "on a flat concrete roof terrace under open sky, in the background a low parapet wall, a water tank on a stand, a television aerial, a clothesline and two solar panels leaning on wooden blocks",
+    "medidor": "in a narrow utility passage at the electricity meter box, in the background the open grey meter cabinet with the breakers in a row, conduit running up the wall, a broom leaning in the corner and a bare bulb overhead",
+    "ferreteria": "at the counter of a small neighbourhood hardware store, in the background wooden drawers of screws, hanging coils of cable, boxes of breakers and plug adaptors on a pegboard, extension leads on hooks and a shelf of torches",
+    "cocina": "in a modest home kitchen, in the background a refrigerator, white wall tiles, a dish rack with plates, a kettle and a microwave on the counter and a checkered cloth on the table",
+    "living": "in a modest living room, in the background a worn brown sofa with a cushion, a low tv stand with the tv switched off, a thin rug, a window with curtains, a floor fan and a plant in a pot",
+    "entrada": "in the driveway in front of the house at dusk, in the background a parked pickup truck with the bonnet up, a jump lead running from the battery, the house windows dark and a torch standing on the bumper"
+  },
+  "cta": {
+    "regex": "^Si esto te sirvi",
+    "head": "Suscríbete al canal"
+  },
+  "avatarPrompt": "A man speaks warmly and naturally to the camera in his garage workshop, natural head movement, expressive face, realistic lighting",
+  "dialecto": "ESPAÑOL NEUTRO — tú (nunca vos/vosotros). Usar: refrigerador, gasolina, dinero, regleta, lavadora, secadora, piscina, breaker, calentador de agua, laptop, hornilla eléctrica, foco, tomacorriente, cable de extensión.",
+  "guia": {
+    "nombre": "Los 3 manuales de Claudio Mendoza (pack Energía en casa)",
+    "landing": "https://claudiomendoza.vercel.app",
+    "pago": "PAGO — pago único, acceso inmediato, garantía de 7 días. ⛔ NUNCA decir gratis, ni regalo, ni descarga libre.",
+    "temas": [
+      "Los 3 sistemas de respaldo que Claudio armó y midió, con el precio de cada pieza y la tabla de cuántas horas dura cada uno con el refrigerador y el WiFi prendidos",
+      "El orden exacto de las primeras 2 horas de un apagón",
+      "La tabla de cable y fusible que evita el incendio",
+      "Las 7 conexiones que no se hacen nunca",
+      "27 equipos solares medidos con pinza amperimétrica: cuánto entrega cada uno de verdad (casi ninguno cumple lo que dice la caja)",
+      "La prueba de 10 minutos para hacerle al equipo ANTES de pagarlo",
+      "Baterías: cuál sale más barata por año, con números",
+      "Las 7 mentiras del vendedor, con la respuesta lista para cada una",
+      "Hasta cuánto conviene pagar por cada cosa",
+      "60 aparatos de una casa normal medidos uno por uno: potencia, cómo medirlo, cuánto se puede reducir y la alerta de cada uno",
+      "32 técnicas comprobables: qué cambiar, cuánto tiempo probarla y qué número mirar para saber si funcionó",
+      "Talleres prácticos con piezas, pasos, prueba y límite de seguridad",
+      "Cuaderno práctico de 30 días para medir el antes y el después"
+    ],
+    "reglas": [
+      "Sólo se promete lo que está en esta lista. Si el guion menciona algo que NO está acá, no se vende como parte de la guía.",
+      "Es PAGA: prohibido decir gratis / te la regalo / descargala libre. Se dice que está en el link o en el QR, nada más.",
+      "NUNCA decir el precio ni deletrear el link en voz alta: el precio y el link van en la descripción y en el QR en pantalla.",
+      "Nunca decir el nombre personal del creador ni nada que revele que no es Claudio.",
+      "3 CTA por video, casuales, dentro del flujo de lo que está explicando — nunca un corte comercial. La 1ª nace de un dato que acaba de medir, la 2ª de un error que acaba de mostrar, la 3ª al cierre."
+    ]
+  }
+}

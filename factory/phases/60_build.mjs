@@ -77,7 +77,7 @@ registerRoot(Root);
 export default {
   id: "60_build",
   deps: ["20_asr", "50_agnes", "55_avatar"],
-  inputs: ({ P, style, spec }) => [P.mom, P.plan, P.ventanas, P.wav, P.imgDir, P.brollDir, style.vlog, spec.cta, path.join(ROOT, "factory", "styles", style.montaje || "vlog-crudo", "Piezas.tsx"), env("FACTORY_DRY") || ""],
+  inputs: ({ P, style, spec }) => [P.mom, P.plan, P.ventanas, P.wav, P.imgDir, P.brollDir, style.vlog, spec.cta, spec.ctas || null, path.join(ROOT, "factory", "styles", style.montaje || "vlog-crudo", "Piezas.tsx"), env("FACTORY_DRY") || ""],
   async run({ slug, spec, style, P, log }) {
     if ((style.montaje || "vlog-crudo") !== "vlog-crudo") throw new Error(`montaje "${style.montaje}" todavía no está en la fábrica (sólo vlog-crudo)`);
     const dry = env("FACTORY_DRY") === "1";
@@ -110,7 +110,10 @@ export default {
       mom, plan, ventanasSec: vent, wavSec, assetOf,
       framesOf: (src) => frames.get(src) ?? 0,
       finFoto: (name, clipSrc) => { finPend.push([name, clipSrc]); return { tipo: "foto", src: `img/${slug}/${name}_fin.jpg` }; },
-      cta: { regex: new RegExp("^" + escRe(spec.cta.ancla), "i"), head: spec.cta.head, sub: spec.cta.sub || "" },
+      cta: [
+        ...(spec.ctas || []).map((c) => ({ regex: new RegExp("^" + escRe(c.ancla), "i"), head: c.head, sub: c.sub || "", qr: c.qr || spec.cta.qr, durS: c.durS || 9 })),
+        { regex: new RegExp("^" + escRe(spec.cta.ancla), "i"), head: spec.cta.head, sub: spec.cta.sub || "", qr: spec.cta.qr },
+      ],
       opts: style.vlog || {},
     });
     for (const [a, b] of Object.entries(r.medido)) if (!Array.isArray(b)) log(`  ${a.padEnd(26, ".")} ${b}`);
