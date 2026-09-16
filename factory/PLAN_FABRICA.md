@@ -124,6 +124,15 @@ Para cada fase: extraer la versión SANA (fuente: scripts usados en **fa70estudi
   devuelva los planos cuyo hash no coincide, para regenerar SÓLO ésos. ⚠️ No se implementó en caliente
   a propósito: sin sidecar previo, los videos en vuelo habrían visto TODAS sus imágenes como vencidas
   y las habrían vuelto a pedir. Hacerlo con la cola vacía, y sembrar el sidecar sin invalidar nada.
+- [ ] **B6. El lease no tiene FIFO: un video puede pasar hambre.** `acquire` es un `tryAcquire` en
+  bucle con `sleep`, así que al liberarse el recurso gana el que justo poletea, no el que más esperó.
+  Medido 16-sep con los 5 de Claudio Mendoza: `50_agnes` pide la capacidad ENTERA (14 unidades, a
+  propósito — dos videos a la vez dieron 429 en fcspellizco+fcscanas), cada tanda dura ~45 min y
+  `cmealter` perdió 3 sorteos seguidos: 75 min esperando sin producir un clip. No afecta el
+  throughput (medido: ~7 clips/min por cuenta, lo tome uno o dos videos), sólo la EQUIDAD — en el
+  límite un video espera indefinidamente. CA: con 4 specs pidiendo el mismo recurso, el orden de
+  entrega respeta el orden de pedido. ⚠️ No tocar con corridas en vuelo: cambia la semántica de un
+  archivo que todos los procesos vivos están consultando.
 - [ ] **D4. Recalibrar falsos positivos.** `check_redibujo` (44 marcados/16 reales) y `vision_haygente`: umbral medido sobre muestra ≥5 etiquetada a mano. CA: precisión reportada en el propio archivo. — ⏳ requiere etiquetar a ojo una muestra.
 - [~] **D5. Veredicto final único.** 70_gates produce `GATES.md` con tabla medido/umbral/estado y una hoja de contactos; Claude hace UNA revisión de visión sobre la hoja (no frame por frame). — 70_gates escribe GATES.md; 90_deliver deja `audit/hoja.jpg`. ⏳ sin corrida real.
 
