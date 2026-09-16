@@ -192,6 +192,15 @@ export default {
       if (Math.abs(real - d) > 2 / 30 + 0.02) malos.push(`w${w.k}: ${real.toFixed(3)} vs ${d.toFixed(3)}`);
     });
     assertMeasured("ventanasMalCortadas", malos.length, { max: 0, allowZero: true, log });
-    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costo, syncCorr: corr, syncLagMs: Math.round(lag * 1000) };
+    // El costo sale del SELLO de jobs.json, no del acumulador de esta corrida: al reanudar (reel ya
+    // en disco, o parte1 reusada) no se llama a RunPod y `costo` queda en 0, con lo que el estado de
+    // la fase decia que el avatar habia salido gratis y cualquier suma aguas abajo lo perdia.
+    let costoSellado = costo;
+    try {
+      const js = JSON.parse(fs.readFileSync(jobsFile, "utf8"));
+      const suma = Object.values(js).reduce((a, j) => a + (Number(j?.costo) || 0), 0);
+      if (suma > costoSellado) costoSellado = +suma.toFixed(4);
+    } catch { /* sin sello: queda el acumulador */ }
+    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costoSellado, syncCorr: corr, syncLagMs: Math.round(lag * 1000) };
   },
 };
