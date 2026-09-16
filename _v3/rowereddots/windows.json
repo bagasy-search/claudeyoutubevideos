@@ -1,0 +1,231 @@
+{
+ "gap": 0,
+ "reel_dur": 224.165,
+ "windows": [
+  {
+   "a": "Those tiny bright red dots on your chest",
+   "start": 0.0,
+   "end": 20.89,
+   "dur": 20.89,
+   "reel_start": 0.0,
+   "reel_dur": 20.89,
+   "out_start": 0.0
+  },
+  {
+   "a": "I'm Dr. Emmett Rowe",
+   "start": 21.12,
+   "end": 37.75,
+   "dur": 16.63,
+   "reel_start": 20.89,
+   "reel_dur": 16.63,
+   "out_start": 20.89
+  },
+  {
+   "a": "So today I want to take that worry away",
+   "start": 53.94,
+   "end": 67.67,
+   "dur": 13.73,
+   "reel_start": 37.52,
+   "reel_dur": 13.73,
+   "out_start": 37.52
+  },
+  {
+   "a": "That's all it is.",
+   "start": 111.04,
+   "end": 116.07,
+   "dur": 5.03,
+   "reel_start": 51.25,
+   "reel_dur": 5.03,
+   "out_start": 51.25
+  },
+  {
+   "a": "So if you have them, you are in very good company.",
+   "start": 131.08,
+   "end": 134.51,
+   "dur": 3.43,
+   "reel_start": 56.28,
+   "reel_dur": 3.43,
+   "out_start": 56.28
+  },
+  {
+   "a": "Here is one little test I show my patients.",
+   "start": 171.5,
+   "end": 178.89,
+   "dur": 7.39,
+   "reel_start": 59.71,
+   "reel_dur": 7.39,
+   "out_start": 59.71
+  },
+  {
+   "a": "So why do they appear?",
+   "start": 193.64,
+   "end": 210.79,
+   "dur": 17.15,
+   "reel_start": 67.1,
+   "reel_dur": 17.15,
+   "out_start": 67.1
+  },
+  {
+   "a": "And I want to clear up three myths",
+   "start": 223.1,
+   "end": 227.61,
+   "dur": 4.51,
+   "reel_start": 84.25,
+   "reel_dur": 4.51,
+   "out_start": 84.25
+  },
+  {
+   "a": "So please don't spend your money",
+   "start": 310.2,
+   "end": 321.29,
+   "dur": 11.09,
+   "reel_start": 88.76,
+   "reel_dur": 11.09,
+   "out_start": 88.76
+  },
+  {
+   "a": "So if they're harmless, why am I making a whole video about them?",
+   "start": 321.2,
+   "end": 326.91,
+   "dur": 5.71,
+   "reel_start": 99.85,
+   "reel_dur": 5.71,
+   "out_start": 99.85
+  },
+  {
+   "a": "So my rule is simple.",
+   "start": 398.32,
+   "end": 408.87,
+   "dur": 10.55,
+   "reel_start": 105.56,
+   "reel_dur": 10.55,
+   "out_start": 105.56
+  },
+  {
+   "a": "That's not a cherry angioma.",
+   "start": 422.18,
+   "end": 426.65,
+   "dur": 4.47,
+   "reel_start": 116.11,
+   "reel_dur": 4.47,
+   "out_start": 116.11
+  },
+  {
+   "a": "Let me paint you a picture",
+   "start": 426.74,
+   "end": 437.41,
+   "dur": 10.67,
+   "reel_start": 120.58,
+   "reel_dur": 10.67,
+   "out_start": 120.48
+  },
+  {
+   "a": "The difference was not that Ruth knew medicine.",
+   "start": 485.42,
+   "end": 491.51,
+   "dur": 6.09,
+   "reel_start": 131.25,
+   "reel_dur": 6.09,
+   "out_start": 131.15
+  },
+  {
+   "a": "So here are the warning signs.",
+   "start": 550.56,
+   "end": 556.51,
+   "dur": 5.95,
+   "reel_start": 137.34,
+   "reel_dur": 5.95,
+   "out_start": 137.24
+  },
+  {
+   "a": "Dermatologists call that the ugly duckling sign",
+   "start": 571.62,
+   "end": 577.67,
+   "dur": 6.05,
+   "reel_start": 143.29,
+   "reel_dur": 6.05,
+   "out_start": 143.19
+  },
+  {
+   "a": "That brings me to the thing I really want to warn you about.",
+   "start": 628.18,
+   "end": 632.83,
+   "dur": 4.65,
+   "reel_start": 149.34,
+   "reel_dur": 4.65,
+   "out_start": 149.24
+  },
+  {
+   "a": "Please don't. You are cutting",
+   "start": 648.2,
+   "end": 654.01,
+   "dur": 5.81,
+   "reel_start": 153.99,
+   "reel_dur": 5.81,
+   "out_start": 153.89
+  },
+  {
+   "a": "So what if they bother you?",
+   "start": 667.26,
+   "end": 679.01,
+   "dur": 11.75,
+   "reel_start": 159.8,
+   "reel_dur": 11.75,
+   "out_start": 159.7
+  },
+  {
+   "a": "No needles, no blood test, no drama.",
+   "start": 731.88,
+   "end": 740.53,
+   "dur": 8.65,
+   "reel_start": 171.55,
+   "reel_dur": 8.65,
+   "out_start": 171.45
+  },
+  {
+   "a": "So let's put this into a simple routine.",
+   "start": 740.4,
+   "end": 743.23,
+   "dur": 2.83,
+   "reel_start": 180.2,
+   "reel_dur": 2.83,
+   "out_start": 180.1
+  },
+  {
+   "a": "And here's the trick that makes this work.",
+   "start": 762.74,
+   "end": 766.67,
+   "dur": 3.93,
+   "reel_start": 183.03,
+   "reel_dur": 3.93,
+   "out_start": 182.93
+  },
+  {
+   "a": "Let me leave you with the big picture.",
+   "start": 794.84,
+   "end": 804.21,
+   "dur": 9.37,
+   "reel_start": 186.96,
+   "reel_dur": 9.37,
+   "out_start": 186.86
+  },
+  {
+   "a": "And please remember, this video is for education.",
+   "start": 833.32,
+   "end": 844.69,
+   "dur": 11.37,
+   "reel_start": 196.33,
+   "reel_dur": 11.37,
+   "out_start": 196.23
+  },
+  {
+   "a": "If this helped you",
+   "start": 844.62,
+   "end": 861.085,
+   "dur": 16.465,
+   "reel_start": 207.7,
+   "reel_dur": 16.465,
+   "out_start": 207.6
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+import fs from "fs";
+const L=JSON.parse(fs.readFileSync("_v3/rowereddots/list_img.json","utf8")).filter(x=>["rd_drawer_away","rd_dr_confusing"].includes(x.name));fs.writeFileSync("_v3/rowereddots/list_img_add.json",JSON.stringify(L,null,1));
+const A=JSON.parse(fs.readFileSync("_v3/rowereddots/list_agnes.json","utf8")).filter(x=>["rd_drawer_away","rd_dr_confusing","rd_dome_wax","rd_ruth_mirror_stop","rd_ugly_duckling","rd_gauze_press","rd_dr_cards"].includes(x.nombre));fs.writeFileSync("_v3/rowereddots/list_agnes_add.json",JSON.stringify(A,null,1));
+const S=JSON.parse(fs.readFileSync("_v3/rowereddots/list_stock.json","utf8")).filter(x=>/good_news|relaxed|worried_woman|worried_bath|ultrasound/.test(x.name)).map(x=>({name:x.name,concept:x.query,query:x.query,dur:8}));fs.writeFileSync("_v3/rowereddots/list_stock5.json",JSON.stringify(S,null,1));console.log(L.length,A.length,S.length);

@@ -1,0 +1,13 @@
+import fs from "fs";
+const plan = JSON.parse(fs.readFileSync("_v3/rowereddots_plan.json","utf8"));
+const M = plan.secciones.flatMap(s=>s.momentos);
+const DR = "The SAME man from the reference image (same face, same wavy brown hair with grey at the temples, same short salt-and-pepper beard and moustache, about 55 years old), wearing a white doctor's coat over navy blue scrubs with a black stethoscope around his neck: ";
+const TAIL = ", candid photo taken on a modern smartphone, true-to-life colors, sharp focus, deep depth of field with the whole room in focus, the background cluttered with ordinary everyday objects that stay readable, nothing blurred out, realistic skin with pores, candid everyday snapshot, no filter, no ai look, no text, no letters, no labels";
+const img = M.filter(m=>m.tipo!=="stock").map(m=>({ name:m.n, prompt:"16:9 landscape photo. "+(m.tipo==="pres"?DR:"")+m.prompt+TAIL, ...(m.tipo==="pres"?{ref:"public/ref_rowereddots_face.png"}:{}) }));
+fs.writeFileSync("_v3/rowereddots/list_img.json", JSON.stringify(img,null,1));
+const ag = M.filter(m=>m.tipo!=="stock").map(m=>({ nombre:m.n, motion:m.motion, ...(m.tipo==="pres"?{pres:true}:(/\b(man|woman|men|women|couple|grandmother|grandson|daughter|father|friends|patient|person|hand|he |she )/i.test(m.prompt)?{gente:true}:{})) }));
+fs.writeFileSync("_v3/rowereddots/list_agnes.json", JSON.stringify(ag,null,1));
+const st = M.filter(m=>m.tipo==="stock").map(m=>({ name:m.n, concept:m.porque, query:m.q, dur:6 }));
+fs.writeFileSync("_v3/rowereddots/list_stock.json", JSON.stringify(st,null,1));
+const enc={}; M.filter(m=>m.enc).forEach(m=>enc[m.enc]=(enc[m.enc]||0)+1);
+console.log(`img ${img.length} (ref ${img.filter(i=>i.ref).length}) · agnes ${ag.length} (pres ${ag.filter(a=>a.pres).length}, gente ${ag.filter(a=>a.gente).length}) · stock ${st.length} · encuadre ${JSON.stringify(enc)}`);

@@ -1,0 +1,502 @@
+[
+ {
+  "id": "s8_parecidos",
+  "nombre": "Los otros parecidos y las señales",
+  "objetivo": "araña vascular, granuloma piógeno, melanoma rojo; las señales de alarma y el patito feo",
+  "momentos": [
+   {
+    "n": "rd_dr_cards",
+    "p": "Now let's talk about the other lookalikes, quickly.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'los otros parecidos, rápido' → él repartiendo fotos de lesiones sobre el escritorio como cartas",
+    "prompt": "sitting at his desk quickly laying out a row of printed close-up photos of different red skin spots like playing cards, focused and brisk with a slight half-smile, a magnifying glass on the desk, a mug, a stethoscope, a stack of folders, a desk lamp, bookshelf with plant, framed mountain print, daylight",
+    "motion": "he flips down one more photo card onto the row"
+   },
+   {
+    "n": "rd_spider_neck",
+    "p": "several new ones on your face, neck or chest",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'varias nuevas en cara, cuello o pecho' → una señora descubriendo arañitas en el cuello con el espejo de mano",
+    "prompt": "medium shot of a 62-year-old woman in a bathrobe holding a small compact mirror up to her neck, looking at two tiny spider-like red spots with thin radiating vessels on her neck and upper chest, concerned narrowed eyes, a vanity with a hairdryer, a jar of cotton balls, a phone face down, a towel on her shoulder, bright bathroom light",
+    "motion": "she tilts the compact mirror and lifts her chin"
+   },
+   {
+    "n": "rd_pyogenic",
+    "p": "a spot called a pyogenic granuloma",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'granuloma piógeno' → un bultito rojo, húmedo, en el dedo",
+    "prompt": "close shot of the side of an older man's index finger near the nail with a small raised raw-looking wet red bump like a tiny raspberry, a loosened adhesive bandage beside it, a garden-rough knuckle, a workbench surface with a tape measure and a pencil, warm garage light",
+    "motion": "the finger turns slowly to show the bump from the side"
+   },
+   {
+    "n": "rd_bleeds_touch",
+    "p": "bleeds with the slightest touch",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'sangra con el mínimo roce' → el pañuelo con una gota tras apenas tocarlo",
+    "prompt": "medium shot of an older man at a kitchen table dabbing his finger with a white paper napkin that already shows a small bright red spot, his face surprised and annoyed, a box of adhesive bandages opened, a pair of reading glasses, a coffee cup, a newspaper, a window with daylight",
+    "motion": "he dabs the finger again and looks at the napkin"
+   },
+   {
+    "n": "rd_dr_serious",
+    "p": "And there is a rare one I don't want to skip.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'hay uno raro que no quiero saltear' → él se inclina hacia cámara, serio",
+    "prompt": "leaning forward in his office chair with elbows on his knees and hands clasped, looking straight toward the camera with a serious, caring expression and slightly lowered brows, a stethoscope around his neck, a desk with a closed laptop behind him, a bookshelf, a plant, a framed mountain print, soft window light",
+    "motion": "he leans in a little more and clasps his hands tighter"
+   },
+   {
+    "n": "rd_red_melanoma",
+    "p": "can be red or pink instead of brown",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'pueden ser rojos o rosados en vez de marrones' → un bulto rosado-rojizo irregular en un hombro",
+    "prompt": "close shot of the sun-damaged shoulder of a 70-year-old fair-skinned man with one irregular pink-red raised bump with uneven edges and a slightly crusted spot, clearly different from two small round cherry dots nearby, freckles and sunspots, a tan line from a tank top, a white paper exam gown slipping off, clinic light",
+    "motion": "the gown slides a little off the shoulder"
+   },
+   {
+    "n": "rd_warn_grow",
+    "p": "Show a red spot to a doctor if it grows quickly over weeks.",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'si crece rápido en semanas' → la cinta métrica junto a un bulto que creció",
+    "prompt": "close shot of a flexible cloth measuring tape held by an older woman's fingers next to a red raised bump on her forearm, a pen mark dot beside it on the skin, a spiral notebook with a pencil lying below, a kitchen table with a coffee cup, morning window light",
+    "motion": "her fingers slide the tape measure along the bump"
+   },
+   {
+    "n": "rd_warn_shape",
+    "p": "If it changes shape, or the edge becomes irregular.",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'si cambia de forma o el borde se vuelve irregular' → un punto con borde desparejo bajo la lupa",
+    "prompt": "close shot through a magnifying glass of a red spot on older back skin with a ragged irregular notched edge instead of a round one, a gloved fingertip pointing at the notch, the steel rim of the magnifier, a paper exam sheet, bright clinic light",
+    "motion": "the magnifying glass moves slowly along the ragged edge"
+   },
+   {
+    "n": "rd_warn_black",
+    "p": "If it turns black or blue.",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'si se pone negro o azul' → un punto oscuro azulado entre los rojos",
+    "prompt": "close shot of the belly skin of an older man with several bright red cherry dots and one that has turned dark blue-black, the waistband of khaki pants, a leather belt, a fine line of hair, warm living room lamp light",
+    "motion": "his fingers pull the waistband down a little to show the dark spot"
+   },
+   {
+    "n": "rd_warn_bleed",
+    "p": "If it bleeds again and again without being scratched.",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'si sangra una y otra vez sin rascarse' → la camiseta con manchitas en el mismo lugar",
+    "prompt": "medium shot of a white cotton undershirt laid on a laundry room counter showing three small old brownish-red blood spots in the same place on the chest, an older woman's hands holding it up, a bottle of stain remover without label, a laundry basket, a washing machine with the lid open, fluorescent light",
+    "motion": "her hands lift the shirt closer to the light"
+   },
+   {
+    "n": "rd_warn_sore",
+    "p": "If it becomes an open sore that doesn't heal.",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'si se vuelve una herida que no cierra' → una llaguita abierta en la piel del pecho",
+    "prompt": "close shot of the upper chest of an older man with a small open shallow sore that has a crusted edge and does not look healed, a used bandage with its paper backing lying beside it on the bathroom counter, the neckline of a grey t-shirt, a tube of ointment, bathroom light",
+    "motion": "his fingers peel back the edge of the shirt collar"
+   },
+   {
+    "n": "rd_ugly_duckling",
+    "p": "the one spot that looks different from all the others",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3.5,
+    "porque": "'el que es distinto a todos' → espalda con muchos puntos rojos iguales y uno oscuro raro",
+    "prompt": "close-medium shot of the freckled upper back of a 72-year-old man sitting on a paper-covered exam table, dozens of similar small round cherry-red dots and among them one larger dark brown-black irregular spot that looks nothing like the others, a gloved finger pointing right at that one, the edge of his folded shirt, a lamp arm, clinic light",
+    "motion": "the gloved finger taps next to the odd dark spot"
+   },
+   {
+    "n": "rd_sudden_many",
+    "p": "If dozens of new cherry angiomas appear suddenly",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'si aparecen decenas de golpe' → un señor alarmado viendo en el espejo un montón de puntitos nuevos",
+    "prompt": "medium shot of a 66-year-old man lifting his polo shirt up to his chin in front of a bedroom closet mirror, staring at dozens of small new red dots across his chest and belly with wide eyes and raised eyebrows, his other hand holding his phone, a bed with a suitcase half unpacked, a lamp, a window with afternoon light",
+    "motion": "he lifts the shirt higher and turns his torso toward the mirror"
+   },
+   {
+    "n": "rd_dr_conversation",
+    "p": "a sudden eruption is worth a conversation and a basic checkup",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'vale una charla y un chequeo' → él conversando con ese paciente, tomándole la presión",
+    "prompt": "wrapping a blood pressure cuff around the arm of a seated older man in a polo shirt while talking to him with an easy, attentive smile, a stethoscope in his ears ready, a small table with a lab request clipboard, a box of gloves, an exam table, a framed mountain print, daylight",
+    "motion": "he tightens the cuff and squeezes the bulb gently"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "Then there is a spot called a pyogenic granuloma.",
+    "kind": "lowerthird",
+    "title": "Pyogenic granuloma",
+    "kicker": "another lookalike",
+    "desc": "grows fast, looks raw, bleeds easily",
+    "tone": "warn"
+   },
+   {
+    "p": "What gives them away is behavior.",
+    "kind": "callout",
+    "figure": "BEHAVIOR",
+    "eyebrow": "WHAT GIVES THEM AWAY",
+    "caption": "growing, changing, bleeding, looking different",
+    "image": "img/rowereddots/rd_red_melanoma.jpg"
+   },
+   {
+    "p": "So here are the warning signs.",
+    "kind": "carrusel",
+    "title": "Show a doctor if it...",
+    "tone": "warn",
+    "focus": 0,
+    "items": "@warn"
+   },
+   {
+    "p": "If it becomes an open sore that doesn't heal.",
+    "kind": "carrusel",
+    "title": "Show a doctor if it...",
+    "tone": "warn",
+    "focus": 4,
+    "items": "@warn"
+   },
+   {
+    "p": "Dermatologists call that the ugly duckling sign",
+    "kind": "lowerthird",
+    "title": "The ugly duckling sign",
+    "kicker": "rule of thumb",
+    "desc": "the one spot unlike all the others",
+    "tone": "warn"
+   },
+   {
+    "p": "over just a few weeks or months, mention it at your next visit",
+    "kind": "datoimpacto",
+    "figure": "DOZENS",
+    "eyebrow": "NEW ONES, IN A FEW WEEKS",
+    "caption": "mention it at your next visit",
+    "image": "img/rowereddots/rd_sudden_many.jpg",
+    "tone": "warn"
+   }
+  ]
+ },
+ {
+  "id": "s9_sangrado",
+  "nombre": "Si sangra",
+  "objetivo": "quitar el susto: presión firme 10 minutos, cuándo pedir ayuda",
+  "momentos": [
+   {
+    "n": "rd_razor_nick",
+    "p": "if you catch one with a razor",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'si te lo llevás con la afeitadora' → afeitándose el cuello, una gotita en un puntito",
+    "prompt": "medium shot of a 70-year-old man shaving his neck at the bathroom mirror with a disposable razor and white foam on his jaw, a small bead of bright red blood on a red dot at the side of his neck, his mouth tightening in an 'ouch', a can of shaving foam, a towel over his shoulder, a toothbrush cup, white tiles, morning light",
+    "motion": "he pulls the razor away and a tiny drop of blood rolls down"
+   },
+   {
+    "n": "rd_towel_drops",
+    "p": "it can bleed a surprising amount",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'puede sangrar muchísimo' → la toalla blanca con gotas rojas junto a la pileta",
+    "prompt": "medium shot of a white hand towel crumpled on a bathroom counter beside the sink with several bright red blood drops soaked into it, a few drops in the white sink basin, a razor, a bar of soap, the man's hand pressing a corner of the towel to his neck at the edge of the frame, chrome faucet, morning light",
+    "motion": "a drop falls into the sink and the hand presses the towel"
+   },
+   {
+    "n": "rd_dr_calm_hands",
+    "p": "It looks dramatic, but it is usually easy to stop.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'parece dramático pero se para fácil' → él con las manos abiertas pidiendo calma, sonriendo",
+    "prompt": "sitting on the front edge of his desk with both palms lowered in a calm-down gesture, relaxed reassuring smile and soft eyes, a roll of gauze and a box of adhesive bandages beside him on the desk, a stethoscope around his neck, a bookshelf with a plant, a framed mountain print, daylight",
+    "motion": "he lowers his palms slowly and nods"
+   },
+   {
+    "n": "rd_gauze_press",
+    "p": "press firmly on the spot",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'apretá firme sobre el punto' → el señor sentado apretando una gasa doblada en el pecho",
+    "prompt": "medium shot of a 71-year-old man sitting calmly on a kitchen chair with his shirt open, pressing a folded square of white gauze firmly against a spot on his chest with two fingers, patient and steady expression, a mechanical kitchen timer on the table beside a glass of water, an opened pack of gauze, a radio, a window with daylight",
+    "motion": "he keeps steady pressure while the second hand of the wall clock moves"
+   },
+   {
+    "n": "rd_kitchen_timer",
+    "p": "hold the pressure for ten full minutes without peeking",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'diez minutos sin espiar' → el timer de cocina girado a diez minutos",
+    "prompt": "close shot of a round white mechanical kitchen egg timer on a wooden table turned to ten minutes, a folded gauze pad and its torn paper wrapper beside it, the corner of a glass of water, a man's knee in khaki pants at the edge, warm daylight",
+    "motion": "the dial of the timer ticks slowly backward"
+   },
+   {
+    "n": "rd_urgent_care",
+    "p": "then it's time to get help",
+    "tipo": "gen",
+    "enc": "abierto",
+    "seg": 3,
+    "porque": "'ahí es momento de pedir ayuda' → entrando a un centro de atención rápida con la gasa en el pecho",
+    "prompt": "wide shot of an older man in an open jacket walking into a small urgent care clinic waiting room while holding a folded gauze against his chest, his wife at his side talking to the receptionist behind a glass window, rows of chairs, a water cooler, a potted plant, a wall-mounted TV turned off, bright fluorescent light",
+    "motion": "the glass entry door swings closed behind them"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "hold the pressure for ten full minutes",
+    "kind": "datoimpacto",
+    "figure": "10 MIN",
+    "eyebrow": "FIRM PRESSURE, NO PEEKING",
+    "caption": "longer if you take blood thinners",
+    "image": "img/rowereddots/rd_gauze_press.jpg",
+    "tone": "teal"
+   }
+  ]
+ },
+ {
+  "id": "s10_casa",
+  "nombre": "Lo que hace la gente en casa",
+  "objetivo": "el error: quemar, cortar, atar, vinagre, lapiceras; por qué no",
+  "momentos": [
+   {
+    "n": "rd_hot_needle",
+    "p": "burn these spots off with a hot needle",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'quemarlos con una aguja caliente' → la aguja sobre el encendedor en la mesada del baño",
+    "prompt": "medium shot of a bathroom counter at night with an older man's hand holding a sewing needle over the flame of a plastic lighter, a hand mirror propped against the wall, a bottle of rubbing alcohol without label, cotton balls, a box of matches, a toothbrush cup, a dim vanity bulb, tense shadows",
+    "motion": "the lighter flame flickers under the needle tip"
+   },
+   {
+    "n": "rd_clippers_thread",
+    "p": "cut them with nail clippers, tie a thread around them",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'cortarlos con el cortaúñas, atarlos con hilo' → las herramientas caseras listas sobre la toalla",
+    "prompt": "medium shot of a folded white towel on a bathroom counter with a pair of steel nail clippers, a spool of white sewing thread with a loose end, small scissors, tweezers and an opened box of adhesive bandages laid out, a magnifying hand mirror, a drip on the faucet, pale tiles, warm vanity light",
+    "motion": "the loose end of the thread slides off the spool"
+   },
+   {
+    "n": "rd_vinegar_garlic",
+    "p": "put apple cider vinegar or garlic on them",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'vinagre de manzana o ajo' → algodón empapado, ajo pelado y el frasco sobre la mesada",
+    "prompt": "medium shot of a kitchen counter with a glass bottle of amber apple cider vinegar without label, a cotton ball soaked amber, a peeled crushed garlic clove on a saucer, a roll of medical tape, a small knife, a cutting board, a lemon, morning window light",
+    "motion": "a drop of vinegar runs down the side of the bottle"
+   },
+   {
+    "n": "rd_remover_pen",
+    "p": "one of those online remover pens that burns the skin",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'esas lapiceras quita-manchas de internet' → el aparatito sacado de la caja de envío",
+    "prompt": "medium shot of a cheap plastic pen-shaped skin spot removal device with a thin metal needle tip and a small USB cable, lying on its crumpled plastic packaging inside an opened small shipping box on a living room coffee table, a pair of reading glasses, a TV remote, a coaster with a glass, lamp light",
+    "motion": "the tiny indicator light on the pen blinks"
+   },
+   {
+    "n": "rd_white_scar",
+    "p": "leave a white scar that looks worse than the red dot ever did",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'una cicatriz blanca peor que el punto' → la marca blanca y brillante en la piel del pecho",
+    "prompt": "close shot of the chest skin of an older man with a shiny white round scar with pinkish edges where a spot was burned off, next to two untouched small red cherry dots, fine chest hairs, the collar of a light blue shirt, soft bathroom light",
+    "motion": "his fingertip touches the scar lightly"
+   },
+   {
+    "n": "rd_dr_specimen",
+    "p": "you just destroyed the evidence a doctor needed to see",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'destruiste la evidencia que el médico necesitaba' → él con un frasquito de muestra vacío, serio",
+    "prompt": "standing at the clinic counter holding up a small empty clear specimen jar with a white lid, looking at it and then at the camera with a serious, slightly frustrated expression and tight lips, a microscope and a rack of slides beside him, a box of gloves, a sharps container, fluorescent light, a framed mountain print",
+    "motion": "he turns the empty jar slowly in his fingers"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "I have seen patients who tried to burn these spots off",
+    "kind": "errorstinger",
+    "number": "1",
+    "title": "REMOVING THEM AT HOME",
+    "eyebrow": "the mistake",
+    "tone": "warn"
+   },
+   {
+    "p": "You can get an infection",
+    "kind": "checklist",
+    "title": "What home removal can do",
+    "tone": "warn",
+    "image": "img/rowereddots/rd_white_scar.jpg",
+    "items": [
+     {
+      "text": "Bleeding that's hard to stop",
+      "state": "danger"
+     },
+     {
+      "text": "Infection",
+      "state": "danger"
+     },
+     {
+      "text": "A white scar",
+      "state": "danger"
+     },
+     {
+      "text": "Destroys what a doctor needs to see",
+      "state": "danger"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "s11_consultorio",
+  "nombre": "Sacarlos bien y qué pasa en la consulta",
+  "objetivo": "opciones seguras en el consultorio, costo, laboratorio, dermatoscopio sin drama",
+  "momentos": [
+   {
+    "n": "rd_sweater_catch",
+    "p": "one catches on your clothes",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'uno se engancha en la ropa' → la lana del suéter enganchada en el punto",
+    "prompt": "close shot of an older woman pulling a chunky knit cream wool sweater over her head, a loop of yarn catching on a raised red dot on her upper chest, her fingers freeing the thread, a bedroom dresser with a jewelry dish, soft morning light",
+    "motion": "her fingers unhook the yarn from the spot"
+   },
+   {
+    "n": "rd_dr_cautery",
+    "p": "A doctor or a dermatologist can remove them safely in the office",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 4,
+    "porque": "'se sacan seguro en el consultorio' → él con el electrocauterio fino, guantes, en el hombro de la paciente",
+    "prompt": "wearing blue exam gloves and magnifying loupes pushed up on his forehead, holding a slim pen-like electric cautery device near a small red dot on the shoulder of a relaxed older woman lying on her side on an exam table, calm concentrated expression, a steel tray with gauze, a numbing cream tube, a surgical lamp, a framed mountain print, bright clinic light",
+    "motion": "he brings the tip of the device slowly toward the dot"
+   },
+   {
+    "n": "rd_laser",
+    "p": "a laser that targets the red color",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3.5,
+    "porque": "'un láser que apunta al rojo' → la paciente con antiparras y el cabezal del láser",
+    "prompt": "medium shot of a dermatology treatment room, a 68-year-old man lying back on a treatment chair wearing dark protective goggles, a gloved technician holding a laser handpiece with a small glowing tip over a red dot on his chest, the laser machine console on a cart, a cooling fan, a box of gloves, soft dimmed lights",
+    "motion": "the tip of the handpiece glows and moves to the next dot"
+   },
+   {
+    "n": "rd_insurance_call",
+    "p": "ask about the cost before you book",
+    "tipo": "gen",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'preguntá el costo antes de sacar turno' → una señora al teléfono con su tarjeta de la obra social",
+    "prompt": "medium shot of a 67-year-old woman sitting at her dining table on the phone, holding a blank plastic insurance card in her other hand and reading glasses on her nose, a notepad and pen, a calendar, a cup of coffee, a bowl of apples, a window with a garden view and daylight",
+    "motion": "she turns the card over while listening"
+   },
+   {
+    "n": "rd_dr_dermatoscope",
+    "p": "called a dermatoscope",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 4,
+    "porque": "'se llama dermatoscopio' → él mirando el punto del pecho con el dermatoscopio pegado al ojo",
+    "prompt": "leaning close to the chest of an older man on an exam table and holding a small black handheld dermatoscope with a lit lens up to his eye against a red dot, one eye closed, curious focused expression, his other hand gently steadying the patient's shoulder, a box of gloves, a paper roll, an exam lamp, a framed mountain print, daylight",
+    "motion": "he adjusts the dermatoscope a little and squints"
+   },
+   {
+    "n": "rd_grapes_view",
+    "p": "almost like a bunch of tiny grapes",
+    "tipo": "gen",
+    "enc": "cerrado",
+    "seg": 3,
+    "porque": "'como un racimo de uvas chiquitas' → la vista de cerca con lagunas rojas redondas y un racimo al lado",
+    "prompt": "close shot of a magnified view of a cherry angioma through the glass lens of a dermatoscope: many round red and dark purple pockets packed together like a tiny bunch of grapes, separated by thin pale lines, the round black rim of the lens with its ring of small lights, and beside the instrument on a steel tray a small bunch of red grapes, clinic light",
+    "motion": "the ring of lights brightens a little and the view drifts"
+   },
+   {
+    "n": "rd_dr_no_needles",
+    "p": "No needles, no blood test, no drama.",
+    "tipo": "pres",
+    "enc": "medio",
+    "seg": 3,
+    "porque": "'sin agujas, sin análisis, sin drama' → él sacándose los guantes, sonriente, y el paciente abotonándose",
+    "prompt": "pulling off his blue exam gloves with a relaxed easy grin while an older man on the exam table buttons his shirt back up and laughs, a trash bin, a paper roll, a box of tissues, a framed mountain print, a potted plant, daylight",
+    "motion": "he tosses the gloves into the bin and the patient finishes buttoning"
+   }
+  ],
+  "componentes": [
+   {
+    "p": "The common options are a tiny electric needle",
+    "kind": "checklist",
+    "title": "Safe removal, in the office",
+    "tone": "teal",
+    "image": "img/rowereddots/rd_dr_cautery.jpg",
+    "items": [
+     {
+      "text": "Tiny electric needle",
+      "state": "ok"
+     },
+     {
+      "text": "Laser that targets the red",
+      "state": "ok"
+     },
+     {
+      "text": "Freezing",
+      "state": "ok"
+     },
+     {
+      "text": "Small shave removal",
+      "state": "ok"
+     }
+    ]
+   },
+   {
+    "p": "called a dermatoscope",
+    "kind": "callout",
+    "figure": "dermatoscope",
+    "eyebrow": "THE TOOL",
+    "caption": "a lighted magnifier for your skin",
+    "image": "img/rowereddots/rd_dr_dermatoscope.jpg"
+   },
+   {
+    "p": "a little cluster of round red or purple pockets",
+    "kind": "freezezoom",
+    "image": "img/rowereddots/rd_grapes_view.jpg",
+    "x": 0.45,
+    "y": 0.48,
+    "label": "round red 'pockets', like tiny grapes",
+    "zoom": 1.7,
+    "tone": "teal"
+   }
+  ]
+ }
+]
