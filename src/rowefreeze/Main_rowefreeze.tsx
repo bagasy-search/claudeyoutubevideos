@@ -1,7 +1,7 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { Foto, Clip, AvatarWin } from "./Piezas";
-import { BASE, COMPS, TOTAL_FRAMES } from "./cues.gen";
+import { BASE, COMPS, SFX, TOTAL_FRAMES } from "./cues.gen";
 import { LowerThird } from "../_fed6/VideoEdit/scenes/LowerThird";
 import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
 import { ErrorStinger } from "../_fed6/VideoEdit/scenes/ErrorStinger";
@@ -16,6 +16,13 @@ import { PhotoTriptych } from "../_fed6/VideoEdit/scenes/PhotoTriptych";
 import { BeforeAfterPush } from "../_fed6/VideoEdit/scenes/BeforeAfterPush";
 import { ManchaRing3D } from "../_fed6/VideoEdit/scenes/ManchaRing3D";
 import { LineaTiempoPiel } from "./LineaTiempoEN";
+import { RowePresenter } from "./RowePresenter";
+import { RoweCarousel } from "./RoweCarousel";
+import { MythTruth } from "./MythTruth";
+import { RedFlags } from "./RedFlags";
+import { RoutineSwap } from "./RoutineSwap";
+import { FallTease } from "./FallTease";
+import { SelfCheck } from "./SelfCheck";
 
 // ── CANAL "Dr. Emmett Rowe" (EN) · rowefreeze ───────────────────────────────
 // Audio = máster Fish (voz `rowe`). Avatar = InfiniteTalk/RunPod SÓLO en las ventanas visibles
@@ -40,6 +47,13 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "phototriptych" ? <PhotoTriptych durationInFrames={d} items={b.items} title={b.title} eyebrow={b.eyebrow} bed={b.bed} />
   : b.kind === "beforeafterpush" ? <BeforeAfterPush durationInFrames={d} before={b.before} after={b.after} beforeLabel={b.beforeLabel} afterLabel={b.afterLabel} caption={b.caption} focus={b.focus} bed={b.bed} />
   : b.kind === "ring3d" ? <ManchaRing3D durationInFrames={d} cards={b.cards} focus={b.focus} intro={b.intro} eyebrow={b.eyebrow} bed={b.bed} />
+  : b.kind === "presenter" ? <RowePresenter durationInFrames={d} name="Dr. Emmett Rowe" mode={b.mode} img={b.img} bg={b.bg} kicker={b.kicker} role={b.role} cta="SUBSCRIBE" />
+  : b.kind === "carousel" ? <RoweCarousel durationInFrames={d} mode={b.mode} cards={b.cards} reveals={b.reveals} offset={b.offset ?? 0} kicker={b.kicker} title={b.title} bed={b.bed} />
+  : b.kind === "myth2" ? <MythTruth durationInFrames={d} kicker={b.kicker} myth={b.myth} truth={b.truth} mythImg={b.mythImg} truthImg={b.truthImg} bed={b.bed} hitAt={b.hitAt} truthAt={b.truthAt} />
+  : b.kind === "redflags" ? <RedFlags durationInFrames={d} kicker={b.kicker} img={b.img} bed={b.bed} flags={b.flags} stamp={b.stamp} stampAt={b.stampAt} />
+  : b.kind === "routineswap" ? <RoutineSwap durationInFrames={d} mode={b.mode} kicker={b.kicker} title={b.title} items={b.items} bed={b.bed} chip={b.chip} chipAt={b.chipAt} />
+  : b.kind === "falltease" ? <FallTease durationInFrames={d} kicker={b.kicker} title={b.title} img={b.img} sideL={b.sideL} sideR={b.sideR} bed={b.bed} hitAt={b.hitAt} />
+  : b.kind === "selfcheck" ? <SelfCheck durationInFrames={d} kicker={b.kicker} questions={b.questions} offset={b.offset ?? 0} bed={b.bed} />
   : null;
 
 export const MainRowefreeze: React.FC = () => (
@@ -57,6 +71,13 @@ export const MainRowefreeze: React.FC = () => (
     {COMPS.map((c: any, i: number) => (
       <Sequence key={`c${i}`} from={c.from} durationInFrames={c.dur} layout="none">
         {renderComp(c, c.dur)}
+      </Sequence>
+    ))}
+
+    {/* SFX en los golpes de los set-pieces */}
+    {SFX.map((s: any, k: number) => (
+      <Sequence key={`sfx${k}`} from={s.from} durationInFrames={75} layout="none">
+        <Audio src={staticFile(s.src)} volume={s.vol} />
       </Sequence>
     ))}
   </AbsoluteFill>
