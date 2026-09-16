@@ -145,13 +145,27 @@ export default {
     // umbral se clona el último cuadro, que sólo congela el final de la ÚLTIMA ventana y no corre el
     // lipsync de nada (tpad agrega, no desplaza).
     {
+      // El sync gate saca el audio DEL PROPIO reel, asi que el reel tiene que conservarlo. Si una
+      // corrida anterior lo dejo mudo (el tpad llevaba -an), se rehace desde parte1 en vez de quedar
+      // en un ciclo que no cierra: ya padeado no vuelve a entrar acá, y mudo revienta el gate.
+      const tieneAudio = async (f) => {
+        const r = await run("ffprobe", ["-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", f],
+          { timeoutMs: 60_000, allowFail: true });
+        return /\d/.test(r.out || "");
+      };
+      const p1 = path.join(A, "parte1.mp4");
+      if (fs.existsSync(reelMp4) && !(await tieneAudio(reelMp4)) && fs.existsSync(p1)) {
+        log("el reel quedó sin pista de audio (corrida anterior): lo rehago desde parte1");
+        fs.copyFileSync(p1, reelMp4);
+      }
       const d = await durSec(reelMp4);
       const falta = reelSec - d;
       if (falta > TOL_CORTE_SEC && falta <= MAX_PAD_SEC) {
         const pad = path.join(A, "reel_pad.mp4");
         log(`reel ${falta.toFixed(3)} s corto (bajo el umbral de cola): clono el último cuadro ${Math.round(falta * 30)} cuadros`);
         await run("ffmpeg", ["-v", "error", "-y", "-i", reelMp4, "-vf", `tpad=stop_mode=clone:stop_duration=${(falta + 0.04).toFixed(3)}`,
-          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-an", pad], { timeoutMs: 1_800_000 });
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-c:a", "copy", pad], { timeoutMs: 1_800_000 });
+        if (!(await tieneAudio(pad))) throw new Error("el clonado dejó el reel sin audio: el sync gate lo saca de acá");
         fs.renameSync(pad, reelMp4);
       }
     }
