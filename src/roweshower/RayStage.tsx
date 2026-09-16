@@ -70,14 +70,31 @@ export const Body: React.FC<{ children: React.ReactNode; size?: number; color?: 
 // ── LA CAMA DE FOTO — va debajo de TODO componente (regla 2.quater/2.ter) ─────────────────────
 // El componente nunca muestra el fondo plano en su margen: una foto real, oscurecida, lo llena.
 export const PhotoBed: React.FC<{ src?: string; dim?: number }> = ({ src, dim = 0.62 }) => {
+  // v2: la cama tiene PROFUNDIDAD — foto con parallax lento + copia desenfocada delante de los bordes,
+  // bokeh teal/ámbar que deriva, haz de luz que cruza, polvo en suspensión y grano. Todos los
+  // componentes del kit la heredan.
   const frame = useCurrentFrame();
-  const z = 1.04 + Math.sin(frame / 240) * 0.012;
-  if (!src) return <AbsoluteFill style={{ background: `radial-gradient(120% 100% at 50% 0%, ${V.ink2} 0%, ${V.ink0} 70%)` }} />;
+  const z = 1.06 + Math.sin(frame / 240) * 0.014 + frame * 0.00003;
+  const dx = Math.sin(frame / 300) * 14;
+  const sweep = (frame * 0.3) % 170 - 40;
   return (
     <AbsoluteFill style={{ backgroundColor: V.ink0, overflow: "hidden" }}>
-      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `brightness(${(1 - dim).toFixed(2)}) saturate(0.82)`, transform: `scale(${z.toFixed(4)})` }} />
-      <AbsoluteFill style={{ background: `linear-gradient(180deg, ${rgba(V.ink0, 0.5)} 0%, ${rgba(V.ink0, 0.32)} 46%, ${rgba(V.ink0, 0.72)} 100%)` }} />
+      {src ? <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `blur(3px) brightness(${(1 - dim).toFixed(2)}) saturate(0.8)`, transform: `scale(${z.toFixed(4)}) translateX(${dx.toFixed(2)}px)` }} />
+        : <AbsoluteFill style={{ background: `radial-gradient(120% 100% at 50% 0%, ${V.ink2} 0%, ${V.ink0} 70%)` }} />}
+      <AbsoluteFill style={{ background: `linear-gradient(180deg, ${rgba(V.ink0, 0.5)} 0%, ${rgba(V.ink0, 0.3)} 46%, ${rgba(V.ink0, 0.74)} 100%)` }} />
+      {Array.from({ length: 8 }).map((_, i) => {
+        const s = 140 + rnd(i * 7 + 3) * 260, x = rnd(i * 5 + 1) * 100, y = rnd(i * 11 + 2) * 100;
+        const col = i % 3 === 0 ? V.amber : V.brass;
+        return <div key={i} style={{ position: "absolute", left: `${x}%`, top: `${y}%`, width: s, height: s, borderRadius: "50%", background: `radial-gradient(circle, ${rgba(col, 0.2)} 0%, ${rgba(col, 0)} 68%)`, transform: `translate(-50%,-50%) translate(${(dx * (0.6 + rnd(i) * 0.8)).toFixed(1)}px, ${(Math.sin(frame / (80 + i * 17) + i) * 24).toFixed(1)}px)` }} />;
+      })}
+      <AbsoluteFill style={{ background: `linear-gradient(115deg, transparent ${sweep - 15}%, ${rgba("#ffffff", 0.045)} ${sweep}%, transparent ${sweep + 15}%)` }} />
+      {Array.from({ length: 16 }).map((_, i) => {
+        const x = (rnd(i * 3 + 9) * 100 + frame * (0.01 + rnd(i) * 0.02)) % 100, y = (rnd(i * 13 + 4) * 100 - frame * (0.02 + rnd(i * 2) * 0.03) + 200) % 100;
+        const s = 2 + rnd(i * 17) * 4;
+        return <div key={`m${i}`} style={{ position: "absolute", left: `${x}%`, top: `${y}%`, width: s, height: s, borderRadius: "50%", background: rgba("#EAF4FB", 0.25 + rnd(i * 5) * 0.3) }} />;
+      })}
       <AbsoluteFill style={{ opacity: 0.045, backgroundImage: "repeating-conic-gradient(rgba(255,255,255,.5) 0% 25%, rgba(0,0,0,.5) 0% 50%)", backgroundSize: "3px 3px", mixBlendMode: "overlay" }} />
+      <AbsoluteFill style={{ background: `radial-gradient(125% 110% at 50% 45%, transparent 55%, ${rgba("#03070D", 0.62)} 100%)` }} />
     </AbsoluteFill>
   );
 };

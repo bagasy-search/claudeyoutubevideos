@@ -1,7 +1,7 @@
 // Main_roweshower.tsx — GENERADO por _work/roweshower/montaje.mjs. NO editar a mano.
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
-import { BASE, AVATAR, OVERLAYS, TOTAL_FRAMES_ROWESHOWER } from "./cues.gen";
+import { BASE, AVATAR, OVERLAYS, OV2, HERO, SFX, TOTAL_FRAMES_ROWESHOWER } from "./cues.gen";
 
 const Capa: React.FC<{ cues: typeof BASE }> = ({ cues }) => (
   <>
@@ -18,7 +18,14 @@ export const MainRoweshower: React.FC = () => (
     <Capa cues={BASE} />
     <Capa cues={AVATAR} />
     <Capa cues={OVERLAYS} />
+    <Capa cues={OV2} />
+    <Capa cues={HERO} />
     <Audio src={staticFile("roweshower.m4a")} />
+    {SFX.map((s, k) => (
+      <Sequence key={"sfx" + k} from={s.from} durationInFrames={75} layout="none">
+        <Audio src={staticFile(s.src)} volume={s.vol} />
+      </Sequence>
+    ))}
   </AbsoluteFill>
 );
 export { TOTAL_FRAMES_ROWESHOWER };
