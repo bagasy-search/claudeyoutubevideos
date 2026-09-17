@@ -232,7 +232,7 @@ export const PromiseTruth: React.FC<{ bed: string; promise: string; truthTitle: 
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={51} blur={5} wash={0.12} />
       <AbsoluteFill style={{ perspective: 2200, alignItems: "center", justifyContent: "center" }}>
-        <div style={{ width: 1180, height: 700, position: "relative", transformStyle: "preserve-3d", transform: `rotateY(${rot}deg) scale(${0.9 + 0.1 * inn})`, opacity: inn }}>
+        <div style={{ width: 1180, height: 600, position: "relative", transformStyle: "preserve-3d", transform: `rotateY(${rot}deg) scale(${0.9 + 0.1 * inn})`, opacity: inn }}>
           <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden" }}>
             <Card accent={C.red} style={{ height: "100%", boxSizing: "border-box", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center" }}>
               <Kicker color={C.red}>LO QUE DICE EL TÍTULO</Kicker>
@@ -250,7 +250,7 @@ export const PromiseTruth: React.FC<{ bed: string; promise: string; truthTitle: 
                 const at = hits[i] ?? flipAt + 0.8 + i * 0.7;
                 const p = interpolate(f, [at * FPS, at * FPS + 12], [0, 1], { ...clamp, easing: ease });
                 return (
-                  <div key={i} style={{ display: "flex", gap: 22, alignItems: "center", fontSize: 46, fontWeight: 800, padding: "12px 0", opacity: p, transform: `translateX(${(1 - p) * 30}px)` }}>
+                  <div key={i} style={{ display: "flex", gap: 22, alignItems: "center", fontSize: 58, fontWeight: 800, padding: "14px 0", opacity: p, transform: `translateX(${(1 - p) * 30}px)` }}>
                     <div style={{ width: 54, height: 54, borderRadius: 27, background: C.green, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 34 }}>✓</div>
                     {t}
                   </div>
@@ -306,13 +306,12 @@ export const SkinDiagram: React.FC<{ title: string; labels: { text: string }[]; 
     <AbsoluteFill style={{ opacity: out, background: `linear-gradient(180deg, #EAF6F5 0%, ${C.paper} 100%)` }}>
       <AbsoluteFill style={{ transform: `scale(${cam})` }}>
         <svg width={1920} height={1080} viewBox="0 0 1920 1080">
-          {/* rayos de sol */}
+          {/* rayos de sol: salen del sol (arriba a la derecha) hacia la piel */}
           {Array.from({ length: 7 }).map((_, i) => {
-            const x = 520 + i * 150;
-            const len = sun * 330;
-            return <line key={i} x1={x - 160} y1={120} x2={x - 160 + len * 0.45} y2={120 + len} stroke={C.amber} strokeWidth={14} strokeLinecap="round" opacity={0.85 * sun} />;
+            const x0 = 1640, y0 = 170, x1 = 520 + i * 190, y1 = 460;
+            return <line key={i} x1={x0} y1={y0} x2={x0 + (x1 - x0) * sun} y2={y0 + (y1 - y0) * sun} stroke={C.amber} strokeWidth={12} strokeLinecap="round" opacity={0.8 * sun} />;
           })}
-          <circle cx={330} cy={150} r={70} fill={C.amber} opacity={sun} />
+          <circle cx={1640} cy={170} r={80} fill={C.amber} opacity={Math.max(0.15, sun)} />
           {/* capas de piel */}
           <path d="M0 470 C 400 440, 800 500, 1200 465 S 1700 450, 1920 470 L1920 1080 L0 1080 Z" fill="#F3C9A8" />
           <path d="M0 470 C 400 440, 800 500, 1200 465 S 1700 450, 1920 470 L1920 520 C 1600 510, 1200 530, 800 540 S 300 515, 0 520 Z" fill="#E8B08C" />
@@ -338,7 +337,7 @@ export const SkinDiagram: React.FC<{ title: string; labels: { text: string }[]; 
       {labels.map((l, i) => {
         const at = i === 0 ? sunAt + 0.4 : spotAt + 0.6 + (i - 1) * 0.8;
         const p = usePopSafe(f, at);
-        const pos = [{ left: 1260, top: 250 }, { left: 1180, top: 760 }, { left: 140, top: 820 }][i] || { left: 140, top: 820 };
+        const pos = [{ left: 120, top: 300 }, { left: 1180, top: 760 }, { left: 140, top: 820 }][i] || { left: 140, top: 820 };
         return (
           <div key={i} style={{ position: "absolute", ...pos, opacity: p, transform: `scale(${0.8 + 0.2 * p})` }}>
             <Card accent={i === 1 ? C.amber : C.teal} style={{ padding: "18px 30px" }}><div style={{ fontSize: 40, fontWeight: 800 }}>{l.text}</div></Card>
@@ -663,11 +662,11 @@ export const WeekTimeline: React.FC<{ bed: string; title: string; marks: { label
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={181} blur={9} wash={0.3} />
       <div style={{ position: "absolute", left: 120, top: 110, ...lift(t) }}><Card style={{ padding: "20px 36px" }}><Title size={60}>{title}</Title></Card></div>
-      <div style={{ position: "absolute", left: 200, right: 200, top: 520, height: 14, background: C.line, borderRadius: 7 }}>
+      <div style={{ position: "absolute", left: 300, right: 300, top: 520, height: 14, background: C.line, borderRadius: 7 }}>
         <div style={{ width: `${head * 100}%`, height: "100%", background: C.teal, borderRadius: 7 }} />
       </div>
       {marks.map((m, i) => {
-        const x = 200 + (1520 * i) / Math.max(1, n - 1);
+        const x = 300 + (1320 * i) / Math.max(1, n - 1);
         const at = hits[i] ?? 0.6 + i * 1.2;
         const p = usePopSafe(f, at);
         const on = i < cur;
