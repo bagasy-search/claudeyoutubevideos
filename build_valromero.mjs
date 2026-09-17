@@ -72,7 +72,7 @@ for (let i = 0; i < M.length; i++) {
     const names = Array.from({length: n}, (_, k) => (m.t === 'V' ? `valromero/broll/${m.id}_${k}.mp4` : `valromero/img/${m.id}_${k}.jpg`));
     names.forEach((f, k) => { if (!has(f)) NEEDS_STOCK.push({id: `${m.id}_${k}`, kind: m.t === 'V' ? 'v' : 'p', q: m.q[k % m.q.length], dest: `${PUB}/${f}`}); });
     const files = PLAN_MODE ? names : names.filter(has);
-    if (!files.length) { console.log(`  ⚠ sin stock ${m.id} (${m.q[0]}) → estira el vecino`); if (cues.length && cues[cues.length - 1].kind !== 'talk') cues[cues.length - 1].dur += span; else FAIL(`sin asset y sin vecino ${m.id}`); cursor = e; continue; }
+    if (!files.length) { console.log(`  ⚠ sin stock ${m.id} (${m.q[0]}) → estira el vecino`); if (cues.length && M[i - 1]?.t !== "A" && cues[cues.length - 1].kind !== "talk") cues[cues.length - 1].dur += span; else FAIL(`sin asset y sin vecino ${m.id}`); cursor = e; continue; }
     const d = span / files.length;
     files.forEach((f, k) => push({id: `${m.id}_${k}`, kind: m.t === 'V' ? 'clip' : 'foto', real: 1, src: f, start: s + d * k, dur: d}));
     cursor = e; continue;
