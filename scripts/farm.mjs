@@ -198,11 +198,21 @@ if (pref && pref.startsWith("@")) {
   // el barrido completo (falso bloqueo < falso OK).
   const ARBOL = (process.env.ARBOL_SRC || "").split(",").map((x) => x.trim()).filter(Boolean);
   const donde = ARBOL.length ? ARBOL.map((f) => `"${f}"`).join(" ") : "src";
+  // ⛔⛔ Esto llevaba `2>/dev/null || true` dentro de un execSync: sintaxis de Unix que cmd.exe NO
+  // entiende, asi que el comando SIEMPRE tiraba excepcion y el catch devolvia `true`. Resultado: el
+  // pre-vuelo bloqueaba SIEMPRE, mirara lo que mirara. cmeodian tuvo que esquivarlo a mano con
+  // ASSETS_COMPARTIDOS=sfx. Ahora sin shell, y `git grep` sin coincidencias sale con 1, que NO es un
+  // error: es la respuesta "no la usa".
   const usa = (dir) => {
+    const pat = "/?(public/)?" + dir + "/[^\"'`]+\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)";
+    const args = ["grep", "-lE", pat, "--", ...(ARBOL.length ? ARBOL : ["src"])];
     try {
-      return execSync(`git grep -lE "/?(public/)?${dir}/[^\\"'\`]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- ${donde} 2>/dev/null || true`,
-        { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().length > 0;
-    } catch { return true; } // sin git no adivino: la doy por usada (falso bloqueo < falso OK)
+      return execFileSync("git", args, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().length > 0;
+    } catch (e) {
+      if (e.status === 1) return false;   // sin coincidencias: NO la usa
+      console.error(`  (pre-vuelo: no pude mirar ${dir} (estado ${e.status}); la doy por usada)`);
+      return true;                        // cualquier otra cosa: conservador
+    }
   };
   const rotas = COMPARTIDAS.filter((d) => usa(d) && !fs.existsSync(`public/${d}`));
   if (rotas.length) {
