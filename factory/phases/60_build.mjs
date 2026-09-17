@@ -140,6 +140,10 @@ export default {
     const assets = new Set([`${slug}.m4a`]);
     if (spec.modo === "avatar") assets.add(placaRel);
     for (const c of r.cues) if (c.src) assets.add(c.src);
+    // ⛔ Un asset que viaja en las PROPS de un componente (el QR del CTA) no tiene `src`, asi que no
+    // entraba en la lista y el farm lo servia 404: el chunk moria con EncodingError. Medido en
+    // cmeamazon (dos renders fallados seguidos por `public/qr/cmeamazon.png` 404).
+    for (const c of r.cues) if (c.props?.qr) assets.add(c.props.qr);
     for (const w of ventanas) assets.add(w.src);
     const lista = [...assets];
     const sinDisco = dry ? [] : lista.filter((a) => !fs.existsSync(path.join(ROOT, "public", a)));
