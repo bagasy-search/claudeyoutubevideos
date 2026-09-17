@@ -155,9 +155,22 @@ export default {
 
     const dir = path.dirname(P.rawMp4);
     fs.mkdirSync(dir, { recursive: true });
-    await gh(["run", "download", String(runId), "-R", repo, "-n", `final-${slug}`, "-D", dir], { log, timeoutMs: 60 * 60_000 });
-    const d = await durSec(P.rawMp4);
+    // No re-bajar 600 MB que ya estan en disco. El artefacto del farm tarda ~1 h con esta conexion y
+    // la descarga puede cortarse justo al final; si el mp4 ya esta y dura lo que tiene que durar, se
+    // usa. Medido el 17-sep: cmealter y cmeamazon tenian su mp4 completo y la fase murio igual
+    // reintentando la descarga durante 3.592 s.
     const esperado = total / 30;
+    let listo = false;
+    if (fs.existsSync(P.rawMp4)) {
+      try {
+        const dPrev = await durSec(P.rawMp4);
+        listo = Math.abs(dPrev - esperado) / esperado * 100 <= 0.6;
+        log(listo ? `mp4 ya en disco (${dPrev.toFixed(1)} s): no lo vuelvo a bajar`
+                  : `mp4 en disco pero dura ${dPrev.toFixed(1)} s y se esperaban ${esperado.toFixed(1)}: lo bajo de nuevo`);
+      } catch { /* ilegible: se baja */ }
+    }
+    if (!listo) await gh(["run", "download", String(runId), "-R", repo, "-n", `final-${slug}`, "-D", dir], { log, timeoutMs: 60 * 60_000 });
+    const d = await durSec(P.rawMp4);
     assertMeasured("renderDesvioPct", +(Math.abs(d - esperado) / esperado * 100).toFixed(3), { max: 0.6, allowZero: true, log });   // el farm estira ~0,2 %
     return { runId, commit: c.commit, archivos: tree.archivos.length, chunks, jobsOk: res.jobsOk, durSec: +d.toFixed(2), totalFrames: total };
   },
