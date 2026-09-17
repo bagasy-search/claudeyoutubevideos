@@ -6,7 +6,7 @@ import { LowerThird } from "../_fed6/VideoEdit/scenes/LowerThird";
 import { FraseCinetica } from "../_fed6/VideoEdit/scenes/FraseCinetica";
 import { HourDial } from "../_fed6/VideoEdit/scenes/HourDial";
 import { ListaFlotante } from "../_fed6/VideoEdit/scenes/ListaFlotante";
-import { ScalpDive } from "../_fed6/VideoEdit/scenes/ScalpDive";
+import { ScalpDiveES } from "./ScalpDiveES";
 import { MythTruth, RedFlags, RoutineSwap, LockTease, Carousel } from "./Sets";
 import { HookSplit, Lamina, GuiaCTA, Compare2, DatoCard, Hitos, Presenter } from "./Hero";
 
@@ -22,7 +22,7 @@ const renderComp = (b: any, d: number) =>
   : b.kind === "frasecinetica" ? <FraseCinetica durationInFrames={d} words={b.words} ats={b.ats} perWord={b.perWord} tone={b.tone} />
   : b.kind === "hourdial" ? <HourDial durationInFrames={d} hour={b.hour} big={b.big} unit={b.unit} label={b.label} tone={b.tone} />
   : b.kind === "listaflotante" ? <ListaFlotante durationInFrames={d} title={b.title} image={b.image} items={b.items} prompt={b.prompt} tone={b.tone} />
-  : b.kind === "scalpdive" ? <ScalpDive durationInFrames={d} labelTop={b.labelTop} labelRoot={b.labelRoot} />
+  : b.kind === "scalpdive" ? <ScalpDiveES durationInFrames={d} labelTop={b.labelTop} labelRoot={b.labelRoot} />
   : b.kind === "myth2" ? <MythTruth durationInFrames={d} kicker={b.kicker} myth={b.myth} truth={b.truth} mythImg={b.mythImg} truthImg={b.truthImg} bed={b.bed} hitAt={b.hitAt} truthAt={b.truthAt} />
   : b.kind === "redflags" ? <RedFlags durationInFrames={d} kicker={b.kicker} img={b.img} bed={b.bed} flags={b.flags} stamp={b.stamp} stampAt={b.stampAt} />
   : b.kind === "routineswap" ? <RoutineSwap durationInFrames={d} kicker={b.kicker} title={b.title} items={b.items} bed={b.bed} />

@@ -19,22 +19,22 @@ export const HookSplit: React.FC<{ before?: string; after?: string; beforeLabel?
   const wipe = interpolate(frame, [18, 42], [0, 1], { ...CL, easing: eIO });
   const badgeK = spr(frame, fps, 30, 90, 0.6);
   const out = outK(frame, durationInFrames);
-  const W = 420, H = 560;
+  const W = 300, H = 400;
   return (
     <AbsoluteFill style={{ opacity: 1 - out, transform: `translateX(${((1 - inK) * 260 + out * 120).toFixed(1)}px)` }}>
-      <div style={{ position: "absolute", right: 70, top: 150, width: W * 2 + 30, height: H + 90 }}>
+      <div style={{ position: "absolute", right: 40, top: 110, width: W * 2 + 30, height: H + 90 }}>
         <div style={{ position: "absolute", left: 0, top: 0, transform: "rotate(-3deg)" }}>
-          <PaperPhoto img={before} w={W} h={H} label={beforeLabel} labelSize={40} tone={V.mute} push={frame * 0.0004} />
+          <PaperPhoto img={before} w={W} h={H} label={beforeLabel} labelSize={32} tone={V.mute} push={frame * 0.0004} />
         </div>
         <div style={{ position: "absolute", left: W + 30, top: 20, transform: `rotate(2.5deg) translateY(${((1 - wipe) * 40).toFixed(1)}px)`, opacity: wipe }}>
-          <PaperPhoto img={after} w={W} h={H} label={afterLabel} labelSize={40} tone={V.teal} glow={V.teal} glowK={wipe} push={frame * 0.0004} />
+          <PaperPhoto img={after} w={W} h={H} label={afterLabel} labelSize={32} tone={V.teal} glow={V.teal} glowK={wipe} push={frame * 0.0004} />
         </div>
         <svg width={120} height={80} viewBox="0 0 120 80" style={{ position: "absolute", left: W - 50, top: H / 2 - 40, opacity: wipe, filter: `drop-shadow(0 6px 12px ${rgba("#27343A", 0.35)})` }}>
           <path d="M8 40 H86 M66 16 L96 40 L66 64" fill="none" stroke={V.green} strokeWidth={16} strokeLinecap="round" strokeLinejoin="round" />
         </svg>
         {badge ? (
           <div style={{ position: "absolute", left: "50%", top: H + 20, transform: `translateX(-50%) rotate(-2deg) scale(${badgeK.toFixed(3)})` }}>
-            <div style={{ padding: "12px 40px", borderRadius: 14, background: V.danger, color: V.white, fontFamily: F_DISPLAY, fontWeight: 900, fontSize: 52, letterSpacing: 2, whiteSpace: "nowrap", boxShadow: SHADOW(90) }}>{badge}</div>
+            <div style={{ padding: "12px 40px", borderRadius: 14, background: V.danger, color: V.white, fontFamily: F_DISPLAY, fontWeight: 900, fontSize: 44, letterSpacing: 2, whiteSpace: "nowrap", boxShadow: SHADOW(90) }}>{badge}</div>
           </div>
         ) : null}
       </div>
