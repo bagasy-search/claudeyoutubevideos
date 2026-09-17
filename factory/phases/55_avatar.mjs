@@ -165,6 +165,19 @@ export default {
       }
       const d = await durSec(reelMp4);
       const falta = reelSec - d;
+      // Simétrico al relleno: si el reel quedó MÁS LARGO que las ventanas (pasa cuando se recompone el
+      // plan y el span total baja unos segundos), el sobrante está en la COLA, después de la última
+      // ventana. Recortarlo es gratis y correcto — verificado en cme150 y cmealter: con el audio nuevo
+      // el reel viejo daba correlación 1,000 y desfase 0,00 s, o sea que todo lo anterior seguía en su
+      // lugar. Antes, esto obligaba a un /run nuevo de RunPod (US$0,25) por dos segundos de cola.
+      if (falta < -EPS_PAD_SEC) {
+        const rec = path.join(A, "reel_rec.mp4");
+        log(`reel ${(-falta).toFixed(2)} s más largo que las ventanas: recorto la cola`);
+        await run("ffmpeg", ["-v", "error", "-y", "-i", reelMp4, "-t", reelSec.toFixed(3),
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-c:a", "copy", rec], { timeoutMs: 1_800_000 });
+        if (!(await tieneAudio(rec))) throw new Error("el recorte dejó el reel sin audio");
+        fs.renameSync(rec, reelMp4);
+      }
       if (falta > EPS_PAD_SEC && falta <= MAX_PAD_SEC) {
         const pad = path.join(A, "reel_pad.mp4");
         log(`reel ${falta.toFixed(3)} s corto (bajo el umbral de cola): clono el último cuadro ${Math.round(falta * 30)} cuadros`);

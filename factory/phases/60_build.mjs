@@ -10,7 +10,7 @@ import { pool } from "../lib/phase.mjs";
 
 const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, fps = 30 }) {
+export function emitVlog({ slug, comp, total, cues, ventanas, placa, fondo, ambiente = null, fps = 30 }) {
   const U = slug.toUpperCase().replace(/[^A-Z0-9]/g, "_");
   const el = (c) => (c.kind === "cta" ? `<CtaFinal {...(${JSON.stringify(c.props)} as any)} />`
     : c.tipo === "clip" ? `<Clip src="${c.src}" seed={${c.start}} frames={${c.frames || 0}} />`
@@ -55,8 +55,8 @@ export const Main${comp}: React.FC = () => {
           <AbsoluteFill>{c.el(frame)}</AbsoluteFill>
         </Sequence>
       ))}
-      <Audio src={staticFile("${slug}.m4a")} />${spec.ambiente ? `
-      <Audio src={staticFile("${spec.ambiente}")} />` : ""}
+      <Audio src={staticFile("${slug}.m4a")} />${ambiente ? `
+      <Audio src={staticFile("${ambiente}")} />` : ""}
     </AbsoluteFill>
   );
 };
@@ -127,7 +127,7 @@ export default {
 
     for (const c of r.cues) if (c.tipo === "clip") c.frames = frames.get(c.src) || 0;
     const ventanas = r.ventanas.map((w) => ({ ...w, src: `broll/${slug}/av_w${String(w.k).padStart(3, "0")}.mp4` }));
-    const out = emitVlog({ slug, comp: P.comp, total: r.total, cues: r.cues, ventanas, placa: spec.modo === "avatar" ? placaRel : null, fondo: style.fondo || "#0A0B08" });
+    const out = emitVlog({ slug, comp: P.comp, total: r.total, cues: r.cues, ventanas, placa: spec.modo === "avatar" ? placaRel : null, fondo: style.fondo || "#0A0B08", ambiente: spec.ambiente || null });
     // DRY emite adentro del repo (gitignored) para que `tsc` resuelva remotion desde node_modules
     const dryRoot = path.join(ROOT, "factory", "_dry");
     const srcDir = dry ? path.join(dryRoot, slug) : P.srcDir;
