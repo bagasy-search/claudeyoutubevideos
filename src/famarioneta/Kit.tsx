@@ -77,6 +77,9 @@ const Full: React.FC<{ bed?: string; ov?: boolean; children: React.ReactNode; ve
       {children}
     </AbsoluteFill>
   );
+// overlay compacto de un componente pensado a pantalla completa: se achica y va a la derecha, el footage se ve
+const Mini: React.FC<{ on?: boolean; children: React.ReactNode }> = ({ on, children }) =>
+  on ? <AbsoluteFill style={{ transform: "scale(0.62)", transformOrigin: "96% 50%" }}>{children}</AbsoluteFill> : <>{children}</>;
 const CheckIcon: React.FC<{ k: number; ok?: boolean; size?: number }> = ({ k, ok = true, size = 58 }) => (
   <svg width={size} height={size} viewBox="0 0 60 60" style={{ flex: "none" }}>
     <circle cx="30" cy="30" r="27" fill={ok ? C.teal : C.red} opacity={0.15 + 0.85 * k} />
@@ -245,7 +248,7 @@ export const FmNameTag: React.FC<Base & { name: string; role: string }> = ({ dur
 };
 
 // ═════════════════════════════ 7. SÍ HACE / NO HACE
-export const FmDoesDoesnt: React.FC<Base & { yes: string[]; no: string[] }> = ({ durationInFrames: d, bed, hits, yes, no }) => {
+export const FmDoesDoesnt: React.FC<Base & { yes: string[]; no: string[] }> = ({ durationInFrames: d, bed, ov, hits, yes, no }) => {
   const f = useCurrentFrame();
   const n = yes.length + no.length;
   const Col: React.FC<{ title: string; list: string[]; ok: boolean; off: number; tilt: number }> = ({ title, list, ok, off, tilt }) => (
@@ -266,12 +269,14 @@ export const FmDoesDoesnt: React.FC<Base & { yes: string[]; no: string[] }> = ({
     </Card>
   );
   return (
-    <Full bed={bed} veil={0.7} seed={7}>
+    <Full bed={bed} ov={ov} veil={0.7} seed={7}>
+      <Mini on={ov}>
       <AbsoluteFill style={{ flexDirection: "row", gap: 60, padding: "110px 110px", alignItems: "center" }}>
         <Col title="Lo que SÍ hace" list={yes} ok off={0} tilt={-1} />
         <Col title="Lo que NO hace" list={no} ok={false} off={yes.length} tilt={1} />
       </AbsoluteFill>
       {Array.from({ length: n }).map((_, i) => <Sfx key={i} at={hitF(hits, i, n, d)} src={S_TICK} vol={0.22} />)}
+    </Mini>
     </Full>
   );
 };
@@ -308,11 +313,12 @@ export const FmQuoteMini: React.FC<Base & { quote: string }> = ({ durationInFram
 };
 
 // ═════════════════════════════ 9. LAS 3 CAUSAS
-export const FmCauses: React.FC<Base & { title: string; items: { t: string; s: string }[]; state: number }> = ({ durationInFrames: d, bed, hits, title, items, state }) => {
+export const FmCauses: React.FC<Base & { title: string; items: { t: string; s: string }[]; state: number }> = ({ durationInFrames: d, bed, ov, hits, title, items, state }) => {
   const f = useCurrentFrame();
   const icons = ["M20 70 Q60 20 100 70 Q60 110 20 70 Z", "M30 30 L90 30 L60 95 Z", "M25 60 h70 M25 45 h70 M25 75 h70"];
   return (
-    <Full bed={bed} veil={0.7} seed={9}>
+    <Full bed={bed} ov={ov} veil={0.7} seed={9}>
+      <Mini on={ov}>
       <AbsoluteFill style={{ padding: "100px 110px", alignItems: "center" }}>
         <div style={{ fontFamily: F_INTER, fontSize: 70, fontWeight: 900, color: C.ink, opacity: useSpr(0) }}>{title}</div>
         <Rule at={6} />
@@ -339,6 +345,7 @@ export const FmCauses: React.FC<Base & { title: string; items: { t: string; s: s
         </div>
       </AbsoluteFill>
       {state === 0 ? items.map((_, i) => <Sfx key={i} at={8 + i * 10} src={S_TICK} vol={0.22} />) : [0, 1, 2].map((i) => <Sfx key={i} at={hitF(hits, i === 0 ? 0 : 1, 2, d) + (i === 2 ? 8 : 0)} src={S_THUD} vol={0.25} />)}
+    </Mini>
     </Full>
   );
 };
@@ -606,10 +613,11 @@ export const FmReps: React.FC<Base & { a: string; b: string; reps: string }> = (
 };
 
 // ═════════════════════════════ 18. BARRAS comparadas
-export const FmBars: React.FC<Base & { title: string; bars: { label: string; value: number; max: number; tone: string; note: string }[] }> = ({ durationInFrames: d, bed, hits, title, bars }) => {
+export const FmBars: React.FC<Base & { title: string; bars: { label: string; value: number; max: number; tone: string; note: string }[] }> = ({ durationInFrames: d, bed, ov, hits, title, bars }) => {
   const f = useCurrentFrame();
   return (
-    <Full bed={bed} veil={0.74} seed={18}>
+    <Full bed={bed} ov={ov} veil={0.74} seed={18}>
+      <Mini on={ov}>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", fontFamily: F_INTER }}>
         <Card enter={0} tilt={-0.6} style={{ width: 1500, padding: "60px 80px" }}>
           <div style={{ fontSize: 72, fontWeight: 900 }}>{title}</div>
@@ -630,6 +638,7 @@ export const FmBars: React.FC<Base & { title: string; bars: { label: string; val
         </Card>
       </AbsoluteFill>
       {bars.map((_, i) => <Sfx key={i} at={hitF(hits, i, bars.length, d)} src="bar_grow.mp3" vol={0.25} />)}
+    </Mini>
     </Full>
   );
 };
@@ -766,13 +775,14 @@ export const FmAlarm: React.FC<Base & { title: string; items: string[]; cta: str
 };
 
 // ═════════════════════════════ 24. LÍNEA DE TIEMPO (semanas)
-export const FmTimeline: React.FC<Base & { title: string; marks: { at: string; t: string }[] }> = ({ durationInFrames: d, bed, hits, title, marks }) => {
+export const FmTimeline: React.FC<Base & { title: string; marks: { at: string; t: string }[] }> = ({ durationInFrames: d, bed, ov, hits, title, marks }) => {
   const f = useCurrentFrame();
   const n = marks.length;
   const last = hitF(hits, n - 1, n, d);
   const line = interpolate(f, [hitF(hits, 0, n, d) - 6, last + 10], [0, 1], clamp);
   return (
-    <Full bed={bed} veil={0.74} seed={24}>
+    <Full bed={bed} ov={ov} veil={0.74} seed={24}>
+      <Mini on={ov}>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", fontFamily: F_INTER }}>
         <div style={{ fontSize: 72, fontWeight: 900, color: C.ink, opacity: useSpr(0) }}>{title}</div>
         <Rule at={6} />
@@ -796,15 +806,17 @@ export const FmTimeline: React.FC<Base & { title: string; marks: { at: string; t
         </div>
       </AbsoluteFill>
       {marks.map((_, i) => <Sfx key={i} at={hitF(hits, i, n, d)} src="pin_plop.mp3" vol={0.25} />)}
+    </Mini>
     </Full>
   );
 };
 
 // ═════════════════════════════ 25. LOS TRES NUNCA
-export const FmNever: React.FC<Base & { items: string[] }> = ({ durationInFrames: d, bed, hits, items }) => {
+export const FmNever: React.FC<Base & { items: string[] }> = ({ durationInFrames: d, bed, ov, hits, items }) => {
   const f = useCurrentFrame();
   return (
-    <Full bed={bed} veil={0.72} seed={25}>
+    <Full bed={bed} ov={ov} veil={0.72} seed={25}>
+      <Mini on={ov}>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", gap: 30, fontFamily: F_INTER }}>
         {items.map((t, i) => {
           const at = hitF(hits, i, items.length, d);
@@ -818,6 +830,7 @@ export const FmNever: React.FC<Base & { items: string[] }> = ({ durationInFrames
         })}
       </AbsoluteFill>
       {items.map((_, i) => <Sfx key={i} at={hitF(hits, i, items.length, d)} src={S_THUD} vol={0.26} />)}
+    </Mini>
     </Full>
   );
 };
