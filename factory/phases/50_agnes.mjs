@@ -51,7 +51,16 @@ export default {
       for (const n of nombres) { const r = c[n]; if (!r || !r.revisado) st.pendientes++; else if (!r.ok || r.removed) st.rechazados++; else st.ok++; }
       return st;
     };
-    const qc = (args = []) => run("node", ["scripts/agnes_qc.mjs", slug, ...args], { cwd: ROOT, timeoutMs: 3 * 3600_000, env: { QC_IMGDIR: P.imgDir, QC_CLIPDIR: P.brollDir } });
+    // El QC sale con 1 cuando encuentra clips para rehacer: eso es un RESULTADO, no una falla del
+    // proceso. Con el exit mandando, la fase moria antes de que `cuenta()` mirara el reporte y sin
+    // imprimir un numero (medido en cmeamazon: 310/310 clips en disco y la fase en `failed`).
+    // Si el QC se rompio de verdad, el reporte queda viejo o incompleto y las compuertas de abajo
+    // (`clipsAprobados`, y el NeedsError de la revision a ojo) frenan igual. Decide la medicion.
+    const qc = async (args = []) => {
+      const r = await run("node", ["scripts/agnes_qc.mjs", slug, ...args], { cwd: ROOT, timeoutMs: 3 * 3600_000, allowFail: true, env: { QC_IMGDIR: P.imgDir, QC_CLIPDIR: P.brollDir } });
+      if (r.code !== 0) log(`agnes_qc salió con ${r.code} (hay clips para rehacer): decide la compuerta, no el exit`);
+      return r;
+    };
     let st = cuenta();
     if (st.rechazados) { log(`${st.rechazados} rechazados → --fix`); await qc(["--fix"]); st = cuenta(); }
     if (st.pendientes) {
