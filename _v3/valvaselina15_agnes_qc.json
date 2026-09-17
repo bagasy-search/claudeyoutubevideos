@@ -1,0 +1,374 @@
+{
+ "clips": {
+  "k66b9867b": {
+   "size": 1330708,
+   "mtime": 1789654476328,
+   "auto": null,
+   "hint": "Face melts and framing jumps in middle frame",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.954Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k49d4f15": {
+   "size": 1127378,
+   "mtime": 1789654555623,
+   "auto": null,
+   "hint": "Pose jump between frames 2 and 3; extra reflection in frame ",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "k0017e16b": {
+   "size": 1734735,
+   "mtime": 1789654530365,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k1d6ad9e": {
+   "size": 1341623,
+   "mtime": 1789654677671,
+   "auto": null,
+   "hint": "A second hand appears in images 3 and 4 peeling nails, not i",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "k0017e16": {
+   "size": 1456319,
+   "mtime": 1789654480643,
+   "auto": null,
+   "hint": "Grey box and pink tulips appear on the dresser; photo frame ",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "k49d4f15b": {
+   "size": 1392773,
+   "mtime": 1789654744367,
+   "auto": null,
+   "hint": "Face changes to different person in last frame; eyes closed ",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "k9926958": {
+   "size": 2557139,
+   "mtime": 1789654687084,
+   "auto": null,
+   "hint": "Presenter's arm skin and sweater change drastically.",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.954Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k66b9867": {
+   "size": 1306970,
+   "mtime": 1789654483443,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k9926958b": {
+   "size": 2171288,
+   "mtime": 1789654716128,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "kc7d6c61": {
+   "size": 1758550,
+   "mtime": 1789654578155,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k1d6ad9eb": {
+   "size": 2179491,
+   "mtime": 1789654652155,
+   "auto": null,
+   "hint": "Thumb stretches into a spike; foot appears in background.",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "k73e0e62b": {
+   "size": 1909351,
+   "mtime": 1789654604795,
+   "auto": null,
+   "hint": "Green towel moved from wall ring to counter in frames 3-4",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.954Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "kbdd0b9b": {
+   "size": 1980870,
+   "mtime": 1789654526789,
+   "auto": null,
+   "hint": "Extra fingers appear in images 3 and 4 not in image 1",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.954Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "kbdd0b9bb": {
+   "size": 866956,
+   "mtime": 1789654532450,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "kf69c62b": {
+   "size": 1136445,
+   "mtime": 1789654527573,
+   "auto": null,
+   "hint": "Face replaced in video; mirror reflection inconsistent",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "kf69c62bb": {
+   "size": 1673121,
+   "mtime": 1789654531734,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "ke209de0": {
+   "size": 1020426,
+   "mtime": 1789654704945,
+   "auto": null,
+   "hint": "White substance in small jar changes shape and texture.",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k73e0e62": {
+   "size": 1622289,
+   "mtime": 1789654602724,
+   "auto": null,
+   "hint": "Ear deformed in last frame; substance color mismatch.",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "kcc8aefe": {
+   "size": 1255388,
+   "mtime": 1789654600384,
+   "auto": null,
+   "hint": "jump in framing; pose and hair change abruptly",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "kcc8aefeb": {
+   "size": 810530,
+   "mtime": 1789654709343,
+   "auto": null,
+   "hint": "Right panel woman changes to a different person.",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "kc7d6c61b": {
+   "size": 1103840,
+   "mtime": 1789654554176,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "ke209de0b": {
+   "size": 928741,
+   "mtime": 1789654776360,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k2ff6019": {
+   "size": 892782,
+   "mtime": 1789655134113,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k0811446b": {
+   "size": 1397056,
+   "mtime": 1789655653174,
+   "auto": null,
+   "hint": "Hand/fingers distort and melt in later frames",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "k339c0fe": {
+   "size": 693732,
+   "mtime": 1789655495243,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k2ff6019b": {
+   "size": 871149,
+   "mtime": 1789655165563,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k36e7c6b": {
+   "size": 1095951,
+   "mtime": 1789655193632,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k6794201": {
+   "size": 564939,
+   "mtime": 1789655243656,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.956Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k2db2a04b": {
+   "size": 1072869,
+   "mtime": 1789655523408,
+   "auto": null,
+   "hint": "Hand fingers stretching and melting in later frames",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.953Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k2db2a04": {
+   "size": 1056067,
+   "mtime": 1789655495942,
+   "auto": null,
+   "hint": "Right hand appears melted/distorted in frame 2",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.952Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k0811446": {
+   "size": 1349522,
+   "mtime": 1789655573244,
+   "auto": null,
+   "hint": "Presenter's hands are distorted and melting in later frames",
+   "dur": 4.033,
+   "revisado": null,
+   "rechazado": null,
+   "ok": false
+  },
+  "k6794201b": {
+   "size": 561827,
+   "mtime": 1789655197438,
+   "auto": null,
+   "hint": "Necklace appears on presenter in final frame not in starting",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.954Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "kd7faf74": {
+   "size": 1399275,
+   "mtime": 1789655195538,
+   "auto": null,
+   "hint": "",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.957Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k339c0feb": {
+   "size": 768819,
+   "mtime": 1789655557092,
+   "auto": null,
+   "hint": "glasses and plant distortion in middle frame",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.953Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "kd7faf74b": {
+   "size": 976907,
+   "mtime": 1789655652576,
+   "auto": null,
+   "hint": "White dots appear on neck and chest",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.955Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "k36e7c6bb": {
+   "size": 705528,
+   "mtime": 1789655227232,
+   "auto": null,
+   "hint": "Makeup brush disappears in middle frames and reappears in la",
+   "dur": 4.033,
+   "revisado": "2026-09-17T14:42:03.954Z",
+   "rechazado": null,
+   "ok": true
+  }
+ },
+ "hojas": null,
+ "version": 2,
+ "slug": "valvaselina15",
+ "at": "2026-09-17T14:42:30.693Z",
+ "repeticion": {
+  "planos": 105,
+  "loops": 0,
+  "dobles": 0,
+  "ejemplos": []
+ }
+}
