@@ -30,8 +30,13 @@ export default {
     const falta = () => i2v.filter((x) => !fs.existsSync(path.join(P.brollDir, `${x.nombre}.mp4`)));
     if (falta().length) {
       const units = CAPACIDAD.agnes();
-      await withLease("agnes", slug, units, () => run("node", ["scripts/agnes_i2v.mjs", lista, slug, P.imgDir, P.brollDir],
-        { cwd: ROOT, timeoutMs: 8 * 3600_000, onLine: (l) => /✗|⛔|error|429|listo|===/i.test(l) && log(l.slice(0, 160)) }), { log });
+      // `agnes_i2v.mjs` sale con 1 si falló ALGÚN clip, aunque hayan salido 305 de 307. Con el exit
+      // mandando, la fase moría antes de llegar al QC y sin medir nada — cuando la que decide es la
+      // compuerta `clipsHechosPct` (min 90), que cuenta archivos REALES en disco. El exit code es un
+      // dato, no el veredicto: se registra y se sigue, y si de verdad faltan clips la compuerta frena.
+      const rI2v = await withLease("agnes", slug, units, () => run("node", ["scripts/agnes_i2v.mjs", lista, slug, P.imgDir, P.brollDir],
+        { cwd: ROOT, timeoutMs: 8 * 3600_000, allowFail: true, onLine: (l) => /✗|⛔|error|429|listo|===/i.test(l) && log(l.slice(0, 160)) }), { log });
+      if (rI2v.code !== 0) log(`agnes_i2v salió con ${rI2v.code} (algún clip falló): decide la compuerta, no el exit`);
     }
     const hechos = i2v.length - falta().length;
     log(`clips ${hechos}/${i2v.length} (throughput de referencia ≈7 clips/min)`);
