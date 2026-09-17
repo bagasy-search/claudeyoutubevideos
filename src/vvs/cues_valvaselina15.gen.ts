@@ -238,7 +238,7 @@ export const BEATS: any[] = [
   "dur": 4.266666666666667,
   "real": 1,
   "seed": 1754,
-  "frames": 480
+  "frames": 246
  },
  {
   "id": "kae367ba_1",
@@ -248,7 +248,7 @@ export const BEATS: any[] = [
   "dur": 4.233333333333333,
   "real": 1,
   "seed": 1882,
-  "frames": 480
+  "frames": 421
  },
  {
   "id": "kf94854b",
@@ -564,7 +564,7 @@ export const BEATS: any[] = [
   "dur": 4.266666666666667,
   "real": 1,
   "seed": 5756,
-  "frames": 480
+  "frames": 276
  },
  {
   "id": "av_w007",
@@ -1006,7 +1006,7 @@ export const BEATS: any[] = [
   "dur": 5.433333333333334,
   "real": 1,
   "seed": 9775,
-  "frames": 216
+  "frames": 366
  },
  {
   "id": "k5d7ddca_0",
@@ -1016,7 +1016,7 @@ export const BEATS: any[] = [
   "dur": 4.6,
   "real": 1,
   "seed": 9938,
-  "frames": 479
+  "frames": 396
  },
  {
   "id": "kaeecbe2_0",
@@ -1138,7 +1138,7 @@ export const BEATS: any[] = [
   "dur": 4.3,
   "real": 1,
   "seed": 10725,
-  "frames": 336
+  "frames": 216
  },
  {
   "id": "k870bf16_1",
@@ -1148,7 +1148,7 @@ export const BEATS: any[] = [
   "dur": 4.3,
   "real": 1,
   "seed": 10854,
-  "frames": 455
+  "frames": 216
  },
  {
   "id": "av_w012",
@@ -1298,7 +1298,7 @@ export const BEATS: any[] = [
  {
   "id": "k4c07167",
   "start": 443.46666666666664,
-  "dur": 7,
+  "dur": 12.366666666666667,
   "kind": "checklist",
   "kicker": "El orden",
   "title": "De lo líquido a lo que sella",
@@ -1310,16 +1310,6 @@ export const BEATS: any[] = [
    "Algo con agua: tónico o sérum",
    "Vaselina, al final"
   ]
- },
- {
-  "id": "k36dbb64_0",
-  "kind": "clip",
-  "src": "broll/valvaselina15_st/k36dbb64_0.mp4",
-  "start": 450.46666666666664,
-  "dur": 5.366666666666666,
-  "real": 1,
-  "seed": 13514,
-  "frames": 328
  },
  {
   "id": "k718f13a_0",
@@ -1882,7 +1872,7 @@ export const BEATS: any[] = [
   "dur": 4,
   "real": 1,
   "seed": 19793,
-  "frames": 480
+  "frames": 334
  },
  {
   "id": "av_w019",
@@ -2181,7 +2171,7 @@ export const BEATS: any[] = [
   "dur": 4.033333333333333,
   "real": 1,
   "seed": 22372,
-  "frames": 426
+  "frames": 480
  },
  {
   "id": "k94ccd4f_1",
@@ -2624,7 +2614,7 @@ export const BEATS: any[] = [
   "dur": 6.066666666666666,
   "real": 1,
   "seed": 26919,
-  "frames": 480
+  "frames": 246
  },
  {
   "id": "av_w029",
@@ -2884,7 +2874,7 @@ export const BEATS: any[] = [
   "dur": 3.933333333333333,
   "real": 1,
   "seed": 29573,
-  "frames": 480
+  "frames": 268
  },
  {
   "id": "kc7502a8_1",
@@ -2894,7 +2884,7 @@ export const BEATS: any[] = [
   "dur": 3.933333333333333,
   "real": 1,
   "seed": 29691,
-  "frames": 480
+  "frames": 216
  },
  {
   "id": "k4b4c50b",
@@ -2917,7 +2907,7 @@ export const BEATS: any[] = [
   "dur": 3.8,
   "real": 1,
   "seed": 30109,
-  "frames": 366
+  "frames": 396
  },
  {
   "id": "av_w034",
@@ -3192,7 +3182,7 @@ export const BEATS: any[] = [
   "dur": 5.1,
   "real": 1,
   "seed": 32144,
-  "frames": 456
+  "frames": 389
  },
  {
   "id": "ka8317ef_0",
@@ -3382,7 +3372,7 @@ export const BEATS: any[] = [
   "dur": 5.6,
   "real": 1,
   "seed": 33776,
-  "frames": 306
+  "frames": 480
  },
  {
   "id": "k5540942",
@@ -3535,7 +3525,7 @@ export const BEATS: any[] = [
   "dur": 6.466666666666667,
   "real": 1,
   "seed": 36020,
-  "frames": 276
+  "frames": 480
  },
  {
   "id": "av_w041",
@@ -3828,7 +3818,7 @@ export const BEATS: any[] = [
   "dur": 4.466666666666667,
   "real": 1,
   "seed": 39603,
-  "frames": 480
+  "frames": 239
  },
  {
   "id": "av_w046",
@@ -3858,7 +3848,7 @@ export const BEATS: any[] = [
   "dur": 6.4,
   "real": 1,
   "seed": 40223,
-  "frames": 480
+  "frames": 306
  },
  {
   "id": "k999425c_a1",
@@ -3868,7 +3858,7 @@ export const BEATS: any[] = [
   "dur": 6.4,
   "real": 1,
   "seed": 40415,
-  "frames": 480
+  "frames": 276
  },
  {
   "id": "av_w047",
@@ -3984,7 +3974,7 @@ export const BEATS: any[] = [
   "dur": 6.766666666666667,
   "real": 1,
   "seed": 42197,
-  "frames": 270
+  "frames": 480
  },
  {
   "id": "av_w049",

@@ -46,7 +46,7 @@ async function dl(url, dest) {
 }
 async function judge(tile, texto, n) {
   const b64 = fs.readFileSync(tile).toString('base64');
-  const sys = 'Sos el editor de un canal de YouTube de belleza para mujeres de 60 a 80 años (una doctora da trucos con vaselina). Elegís metraje de stock REAL que muestre LITERALMENTE lo que la narradora dice en esa frase. Rechazás: personas jóvenes (menores de ~50 años) como protagonistas, médicos/doctores/enfermeras (la única doctora del video es la presentadora), marcas de agua o logos, marcas comerciales visibles, desnudos o escotes, planos oscuros, animaciones 3D, y todo lo que sea sólo "del tema" pero no muestre el sujeto concreto de la frase. Si la frase es sobre un objeto o una parte del cuerpo en primer plano (manos, labios, talones), la edad importa menos, pero preferí piel madura.';
+  const sys = 'Sos el editor de un canal de YouTube de belleza para mujeres de 60 a 80 años (una doctora da trucos con vaselina). Elegís metraje de stock REAL que muestre LITERALMENTE lo que la narradora dice en esa frase. Rechazás: personas jóvenes (menores de ~50 años) como protagonistas, médicos/doctores/enfermeras (la única doctora del video es la presentadora), marcas de agua o logos, marcas comerciales visibles, desnudos o escotes, planos oscuros, animaciones 3D, y todo lo que sea sólo "del tema" pero no muestre el sujeto concreto de la frase. REGLA DURA: si en la opción se ve CUALQUIER persona joven (cara, labios, ojos o piel lisa de menos de ~50 años) o piel desnuda (espalda, pecho, tirantes), esa opción NO sirve aunque sea perfecta. Un plano sólo de OBJETOS relacionados con la frase sí sirve (y si la búsqueda es de objetos, rechazá toda opción con personas). Si la frase es sobre un objeto o una parte del cuerpo en primer plano (manos, labios, talones), la edad importa menos, pero preferí piel madura.';
   const user = `La imagen es una grilla de ${n} opciones numeradas de izquierda a derecha y de arriba abajo (1 a ${n}, 4 por fila).\n${texto}\nElegí la opción que mejor muestre el SUJETO CONCRETO de la frase. Respondé SOLO JSON: {"pick": <número 1-${n}, o 0 si ninguna sirve>, "reason": "<máx 12 palabras>"}`;
   for (let a = 0; a < 4; a++) {
     try {
@@ -65,7 +65,8 @@ async function judge(tile, texto, n) {
 }
 
 const NEEDS = JSON.parse(fs.readFileSync('_work/valvaselina15/needs.json', 'utf8')).filter((n) => n.what === 'stock');
-const shots = NEEDS.map((n) => ({id: n.p.split('/').pop().replace('.mp4', ''), dest: `public/${n.p}`, qs: [n.q, ...n.alt.filter((x) => x !== n.q)], need: n.dur || 5, texto: (q) => `Frase que se escucha: "${ctxOf(n.d)}" · Búsqueda: ${q}`}))
+const OVR = (() => { try { return JSON.parse(fs.readFileSync('_work/valvaselina15/q_override.json', 'utf8')); } catch { return {}; } })();
+const shots = NEEDS.map((n) => ({id: n.p.split('/').pop().replace('.mp4', ''), dest: `public/${n.p}`, qs: OVR[n.p.split('/').pop().replace('.mp4', '')] || [n.q, ...n.alt.filter((x) => x !== n.q)], need: n.dur || 5, texto: (q) => `Frase que se escucha: "${ctxOf(n.d)}" · Búsqueda: ${q}`}))
   .filter((s) => !ONLY || ONLY.has(s.id));
 const PICKS_F = `${J}/picks.json`;
 let PICKS = {}; try { PICKS = JSON.parse(fs.readFileSync(PICKS_F, 'utf8')); } catch {}

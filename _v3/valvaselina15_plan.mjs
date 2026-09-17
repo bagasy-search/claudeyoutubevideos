@@ -119,7 +119,6 @@ export const SECCIONES = [
   { d: 'Aquí están las cantidades', t: 'A' },
   { d: 'Mire. Un grano de arroz', t: 'C', c: { kind: 'lamina', part: 0 } },
   { d: 'Abajo, el orden', t: 'C', c: { kind: 'checklist', kicker: 'El orden', title: 'De lo líquido a lo que sella', hot: ['sella'], items: ['Piel limpia', 'Algo con agua: tónico o sérum', 'Vaselina, al final'] } },
-  { d: 'Después algo con agua', t: 'V', q: ['woman applying toner cotton pad face', 'serum dropper face senior'] },
   { d: 'Y de día, en la cara, no va vaselina', t: 'V', q: ['senior woman applying sunscreen face', 'older woman sunscreen morning'] },
   { d: 'Y aquí, en el recuadro, los tres errores', t: 'C', c: { kind: 'redflags', kicker: 'Los 3 errores que la arruinan', flags: [{ text: 'Capa gruesa', at: 'Uno, la capa gruesa' }, { text: 'Sobre la piel seca', at: 'Dos, sobre la piel seca' }, { text: 'Almohada enseguida', at: 'Tres, apoyar la cara' }], ip: 'EMPTY: nobody in the room, no reflection of any person. An unmade bed with a white cotton pillowcase showing a faint greasy smudge in the morning light', stamp: 'Fina · húmeda · al final', stampAt: 'Tres, apoyar la cara' } },
   { d: 'Una mujer me escribió', t: 'C', c: { kind: 'quote', kicker: 'Me escribieron', quote: 'Cuando me pongo crema en la noche, amanezco con más arrugas.', author: 'Una seguidora del canal', role: '', ip: 'an older woman\'s hands holding a smartphone while typing a message, sitting on a bed in the morning' } },
