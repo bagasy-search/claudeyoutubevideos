@@ -131,8 +131,18 @@ Para cada fase: extraer la versión SANA (fuente: scripts usados en **fa70estudi
   `cmealter` perdió 3 sorteos seguidos: 75 min esperando sin producir un clip. No afecta el
   throughput (medido: ~7 clips/min por cuenta, lo tome uno o dos videos), sólo la EQUIDAD — en el
   límite un video espera indefinidamente. CA: con 4 specs pidiendo el mismo recurso, el orden de
-  entrega respeta el orden de pedido. ⚠️ No tocar con corridas en vuelo: cambia la semántica de un
-  archivo que todos los procesos vivos están consultando.
+  entrega respeta el orden de pedido. **Medición final del caso (16-sep):** cmealter esperó
+  **3 h 10** y perdió **5 sorteos** (cmeodian → cme150 → cmecaja → cmeodian → cmeamazon) con **1 clip
+  de 307** hecho; cmeodian fue servido DOS veces y cmealter ninguna. Cuatro de los cinco necesitaban
+  entre 1 y 14 clips y se llevaron el turno entero de 14 unidades por unos minutos cada uno.
+  **Fix propuesto (agente de cmealter, y es el correcto):** envejecimiento en `acquire` — registrar el
+  `desde` de cada pretendiente y que `tryAcquire` no otorgue si hay otro esperando hace más tiempo.
+  Sigue corriendo un video a la vez (que es lo que conviene: ~7 clips/min por CUENTA, medido) pero en
+  orden de llegada. ⚠️ No tocar con corridas en vuelo, y no por riesgo teórico: los procesos vivos ya
+  tienen cargado el código viejo y **no registrarían su espera**, así que el arreglo no serviría para
+  la tanda en curso y sólo agregaría riesgo. Hacerlo con la cola vacía.
+  Considerar además prioridad al que MENOS trabajo le falta: en esta tanda, cuatro videos a 1-14 clips
+  de terminar habrían cerrado en minutos y liberado el camino al farm.
 - [ ] **D4. Recalibrar falsos positivos.** `check_redibujo` (44 marcados/16 reales) y `vision_haygente`: umbral medido sobre muestra ≥5 etiquetada a mano. CA: precisión reportada en el propio archivo. — ⏳ requiere etiquetar a ojo una muestra.
 - [~] **D5. Veredicto final único.** 70_gates produce `GATES.md` con tabla medido/umbral/estado y una hoja de contactos; Claude hace UNA revisión de visión sobre la hoja (no frame por frame). — 70_gates escribe GATES.md; 90_deliver deja `audit/hoja.jpg`. ⏳ sin corrida real.
 
