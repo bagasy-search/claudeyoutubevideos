@@ -1,0 +1,10 @@
+import { supaCreds } from "../../scripts/supa_creds.mjs";
+const { U, K } = supaCreds();
+const r = await fetch(`${U}/rest/v1/tracked_channels?id=eq.117&select=id,plan`, { headers: { apikey: K, Authorization: `Bearer ${K}` } });
+const [row] = await r.json();
+const plan = row.plan || [];
+for (const c of plan.filter((c) => /^fa20260916/.test(c.id || c.card_id || ""))) console.log(JSON.stringify({ id: c.id, videoJobId: c.videoJobId, done: c.done }));
+const c = plan.find((c) => (c.id || c.card_id) === "fa202609165");
+console.log(JSON.stringify(c, null, 1));
+const j = await (await fetch(`${U}/rest/v1/video_jobs?id=eq.471&select=id,status,provider,slug,progress`, { headers: { apikey: K, Authorization: `Bearer ${K}` } })).json();
+console.log(JSON.stringify(j));
