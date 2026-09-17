@@ -160,7 +160,6 @@ export const DropsCount: React.FC<{ bed: string; n: number; label: string; sub?:
   const f = useCurrentFrame();
   const out = useOut();
   const panel = usePop(0.1);
-  const shown = hits.length ? hits.filter((h) => f >= h * FPS + 14).length : n;
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={31} />
@@ -181,7 +180,7 @@ export const DropsCount: React.FC<{ bed: string; n: number; label: string; sub?:
               );
             })}
           </svg>
-          <Title size={120} color={C.ink} style={{ marginTop: 6 }}>{`${shown} ${label}`}</Title>
+          <Title size={120} color={C.ink} style={{ marginTop: 6 }}>{`${n} ${label}`}</Title>
           {sub && <div style={{ fontSize: 36, fontWeight: 700, color: C.ink2, marginTop: 10 }}>{sub}</div>}
         </Card>
       </div>
