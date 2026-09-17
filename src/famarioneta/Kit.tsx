@@ -114,7 +114,7 @@ export const FmBeforeAfter: React.FC<Base & { left: string; right: string; label
 export const FmRoutine: React.FC<Base & { title: string; steps: { t: string; d: string }[]; active: number }> = ({ durationInFrames: d, bed, hits, title, steps, active }) => {
   const f = useCurrentFrame();
   const intro = active === 0;
-  const onAt = (i: number) => (intro ? hitF(hits && hits.length >= 3 ? [hits[0], hits[1], ...steps.map((_, k) => hits[2] + k * 0.35)] : undefined, i + 2, steps.length + 2, d) : 8 + i * 5);
+  const onAt = (i: number) => (intro ? Math.round(((hits && hits[1] !== undefined ? hits[1] : 1.5) + 0.2 + i * 0.45) * FPS) : 8 + i * 5);
   const curMin = intro ? interpolate(f, [onAt(0), d - 6], [0, 5], clamp) : interpolate(f, [0, d], [active - 1, Math.min(5, active)], clamp);
   const ring = (curMin / 5) * 2 * Math.PI * 150;
   const mm = Math.floor(curMin), ss = Math.floor((curMin - mm) * 60);
@@ -331,7 +331,7 @@ export const FmCauses: React.FC<Base & { title: string; items: { t: string; s: s
                 <div style={{ fontSize: 60, fontWeight: 900, marginTop: 6 }}>{it.t}</div>
                 <div style={{ fontSize: 40, fontWeight: 600, color: C.inkSoft, textAlign: "center", marginTop: 12 }}>{it.s}</div>
                 {state === 1 ? (
-                  <div style={{ position: "absolute", bottom: 34, transform: `rotate(-6deg) scale(${1.6 - 0.6 * sk})`, opacity: sk, border: `6px solid ${dead ? C.red : C.teal}`, color: dead ? C.red : C.teal, fontSize: 40, fontWeight: 900, padding: "8px 22px", borderRadius: 12, letterSpacing: 2 }}>{dead ? "NO SE TOCA" : "SE TRABAJA"}</div>
+                  <div style={{ position: "absolute", top: 22, right: 18, transform: `rotate(8deg) scale(${1.6 - 0.6 * sk})`, opacity: sk, border: `6px solid ${dead ? C.red : C.teal}`, color: dead ? C.red : C.teal, fontSize: 40, fontWeight: 900, padding: "8px 22px", borderRadius: 12, letterSpacing: 2 }}>{dead ? "NO SE TOCA" : "SE TRABAJA"}</div>
                 ) : null}
               </Card>
             );
@@ -378,6 +378,7 @@ export const FmFace: React.FC<Base & { mode: string; title: string; label: strin
   if (mode === "punto") extra = <g>{[[240, 500], [360, 500]].map(([x, y], i) => <g key={i}><circle cx={x} cy={y} r={26 + 18 * pulse * k0} fill="none" stroke={C.teal} strokeWidth="6" /><circle cx={x} cy={y} r="14" fill={C.teal} opacity={k0} /></g>)}{arrow(420, 540, 520, 600, C.amber, k1, "b")}</g>;
   if (mode === "atm") extra = <g><circle cx="140" cy="330" r={30 + 20 * pulse} fill={C.red} opacity={0.45 * k0} /><circle cx="460" cy="330" r={30 + 20 * pulse} fill={C.red} opacity={0.45 * k0} /></g>;
   if (mode === "sonrisa") extra = <g>{arrow(250, 440, 190, 330, C.teal, k0, "s1")}{arrow(350, 440, 410, 330, C.teal, k0, "s2")}<g opacity={k1}><line x1="350" y1="445" x2="520" y2="445" stroke={C.red} strokeWidth="10" /><line x1="470" y1="415" x2="530" y2="475" stroke={C.red} strokeWidth="10" /><line x1="530" y1="415" x2="470" y2="475" stroke={C.red} strokeWidth="10" /></g></g>;
+  if (mode === "flechas") extra = <g>{arrow(250, 455, 150, 300, C.teal, k0, "f1")}{arrow(350, 455, 450, 300, C.teal, k0, "f2")}{[[248, 470, 220, 540], [352, 470, 380, 540]].map(([x, y, x2, y2], i) => <path key={i} d={`M${x} ${y} L${x2 - 30} ${y2} L${x2 + 30} ${y2} Z`} fill={C.red} opacity={(0.25 + 0.65 * k1) * pulse} />)}</g>;
   if (mode === "orbicular") extra = <ellipse cx="300" cy="440" rx={70 + 12 * pulse * k0} ry={36 + 8 * pulse * k0} fill="none" stroke={C.teal} strokeWidth="12" opacity={k0} />;
   if (mode === "masetero") extra = <g><path d="M150 360 Q170 470 230 520" stroke={C.red} strokeWidth={26 * k0 * pulse} fill="none" opacity="0.6" /><path d="M450 360 Q430 470 370 520" stroke={C.red} strokeWidth={26 * k0 * pulse} fill="none" opacity="0.6" /><ellipse cx="300" cy="440" rx="70" ry="30" fill="none" stroke={C.teal} strokeWidth="8" strokeDasharray="12 10" opacity={k1} /></g>;
   if (mode === "lengua") extra = <g><path d={`M330 ${410 - 40 * k0} Q390 ${330 - 40 * k0} 440 ${372 - 10 * k0}`} stroke={C.red} strokeWidth="30" fill="none" strokeLinecap="round" opacity="0.7" /><line x1="452" y1="392" x2="462" y2={392 + 10 * k1} stroke={C.teal} strokeWidth="6" />{arrow(300, 60, 300, -10, C.teal, k1, "l")}</g>;

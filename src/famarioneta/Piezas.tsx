@@ -69,17 +69,14 @@ export const AvatarClip: React.FC<{ src: string; seed: number }> = ({ src, seed 
 // arranca desde la zona anterior → un solo movimiento de cámara punto por punto.
 const ZONAS: Record<string, [number, number, number]> = {
   completa: [50, 50, 1.0],
-  titulo: [50, 12, 1.5],
-  paso1: [27, 29, 2.0],
-  paso2: [27, 43, 2.0],
-  paso3: [27, 57, 2.0],
-  paso4: [27, 70, 2.0],
-  paso5: [27, 84, 2.0],
-  diagrama: [76, 36, 1.7],
-  flechas: [76, 30, 2.2],
-  triangulo: [76, 52, 2.4],
-  errores: [76, 81, 1.9],
-  plazo: [50, 97, 1.7],
+  paso1: [2, 30, 1.6],
+  paso2: [2, 43, 1.6],
+  paso3: [2, 56, 1.6],
+  paso4: [2, 69, 1.6],
+  paso5: [2, 82, 1.6],
+  diagrama: [97, 38, 1.55],
+  errores: [97, 86, 1.6],
+  plazo: [50, 100, 1.35],
 };
 export const Lamina: React.FC<{ src: string; zoom?: string; desde?: string }> = ({ src, zoom = "completa", desde }) => {
   const frame = useCurrentFrame();
