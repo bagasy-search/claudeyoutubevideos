@@ -18,7 +18,7 @@ export const CAPACIDAD = {
   runpod: () => Number(env("FACTORY_CAP_RUNPOD") || 4),
   openai_batch: () => Number(env("FACTORY_CAP_OPENAI") || 4),
   fish: () => Number(env("FACTORY_CAP_FISH") || 3),
-  farm_slots: () => Number(env("FACTORY_CAP_FARM") || env("FARM_SLOTS") || 360), // Enterprise: 180→360 (16-sep-2026); ver scripts/farm_slots.mjs
+  farm_slots: () => Number(env("FACTORY_CAP_FARM") || 60),
   modal: () => Number(env("FACTORY_CAP_MODAL") || 4),
 };
 
@@ -82,14 +82,24 @@ export async function tryAcquire(recurso, holder, units = 1, { ttlMs = 10 * 60_0
 
 function makeHandle(lease, d) {
   const file = path.join(d, `${lease.holder.replace(/[^\w.-]/g, "_")}.json`);
+  const h = { ...lease, perdido: false };
   const hb = setInterval(() => {
-    try { lease.expiresAt = Date.now() + lease.ttlMs; fs.writeFileSync(file, JSON.stringify(lease)); } catch { /* nada */ }
+    // ⛔ El latido NO puede RESUCITAR un lease reclamado. Antes reescribía el archivo sin mirar nada:
+    // si este tenedor se atrasaba más que su TTL, `vivos()` lo barría, OTRO proceso tomaba la
+    // capacidad legítimamente, y al volver el atrasado se re-creaba el archivo encima → los dos
+    // corriendo. Medido 16-sep con agnes: cmealter×14 + cmecaja×14 = 28 sobre una capacidad de 14,
+    // los dos PIDs vivos. `tryAcquire` estaba bien; el que se salteaba el chequeo era esto.
+    try {
+      if (!fs.existsSync(file)) { h.perdido = true; clearInterval(hb); return; }
+      const actual = JSON.parse(fs.readFileSync(file, "utf8"));
+      if (actual.pid !== lease.pid || actual.host !== lease.host) { h.perdido = true; clearInterval(hb); return; }
+      lease.expiresAt = Date.now() + lease.ttlMs;
+      fs.writeFileSync(file, JSON.stringify(lease));
+    } catch { /* nada */ }
   }, Math.max(1000, Math.floor(lease.ttlMs / 3)));
   hb.unref();
-  return {
-    ...lease,
-    release() { clearInterval(hb); try { fs.unlinkSync(file); } catch { /* ya liberado */ } },
-  };
+  h.release = () => { clearInterval(hb); try { fs.unlinkSync(file); } catch { /* ya liberado */ } };
+  return h;
 }
 
 export async function acquire(recurso, holder, units = 1, { waitMs = 6 * 3600_000, pollMs = 5000, log = console.log, ...o } = {}) {
@@ -107,5 +117,11 @@ export async function acquire(recurso, holder, units = 1, { waitMs = 6 * 3600_00
 /** Ejecuta fn con el lease tomado y SIEMPRE lo libera. */
 export async function withLease(recurso, holder, units, fn, o = {}) {
   const l = await acquire(recurso, holder, units, o);
-  try { return await fn(l); } finally { l.release(); }
+  try {
+    const r = await fn(l);
+    // Si mientras corríamos nos reclamaron el lease, lo decimos: el trabajo puede haberse solapado
+    // con otro tenedor (429 y gasto doble). No se rompe el resultado, pero no se calla.
+    if (l.perdido) (o.log || console.log)(`⚠️ lease ${recurso}/${holder}: fue reclamado durante la corrida (pudo haber otro tenedor a la vez)`);
+    return r;
+  } finally { l.release(); }
 }
