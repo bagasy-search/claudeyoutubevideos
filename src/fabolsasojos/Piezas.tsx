@@ -70,26 +70,30 @@ export const AvatarClip: React.FC<{ src: string; seed: number; startFrom?: numbe
  *  el paso de una zona a otra se lea como un solo movimiento de cámara, no como cortes. */
 const ZONAS: Record<string, [number, number, number]> = {
   completa: [50, 50, 1.0],
-  pasos: [50, 22, 1.28],
-  paso1: [12, 32, 2.0],
-  paso2: [37, 32, 2.0],
-  paso3: [62, 32, 2.0],
-  paso4: [88, 32, 2.0],
-  diagrama: [24, 73, 1.7],
-  errores: [78, 73, 1.7],
-  plazo: [50, 97, 1.45],
+  pasos: [50, 32, 1.15],
+  paso1: [13, 34, 2.5],
+  paso2: [38, 34, 2.5],
+  paso3: [62, 34, 2.5],
+  paso4: [87, 34, 2.5],
+  diagrama: [28, 72, 1.7],
+  errores: [77, 72, 1.8],
+  plazo: [50, 92, 1.35],
 };
+/** LÁMINA de la guía a pantalla completa. Cada momento lleva al CENTRO de la pantalla la zona que él está nombrando
+ *  (escala + traslado, con los bordes siempre cubiertos). Arranca desde la zona ANTERIOR: un solo movimiento de cámara. */
 export const Lamina: React.FC<{ src: string; zoom?: string; desde?: string }> = ({ src, zoom = "completa", desde }) => {
   const frame = useCurrentFrame();
   const [ox, oy, z] = ZONAS[zoom] || ZONAS.completa;
   const [px, py, pz] = ZONAS[desde || zoom] || ZONAS[zoom] || ZONAS.completa;
-  const k = interpolate(frame, [0, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
-  const drift = interpolate(frame, [22, 400], [0, 0.025], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const k = interpolate(frame, [0, 24], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
+  const drift = interpolate(frame, [24, 400], [0, 0.025], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const s = (pz + (z - pz) * k) * (1 + drift);
-  const x = px + (ox - px) * k, y = py + (oy - py) * k;
+  const cx = px + (ox - px) * k, cy = py + (oy - py) * k;
+  const clampT = (t: number) => Math.min(0, Math.max(100 - 100 * s, t));
+  const tx = clampT(50 - cx * s), ty = clampT(50 - cy * s);
   return (
     <AbsoluteFill style={{ backgroundColor: "#F4EEDD", overflow: "hidden" }}>
-      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${s.toFixed(4)})`, transformOrigin: `${x.toFixed(2)}% ${y.toFixed(2)}%` }} />
+      <Img src={staticFile(src)} style={{ position: "absolute", left: 0, top: 0, width: "100%", height: "100%", objectFit: "cover", transformOrigin: "0% 0%", transform: `translate(${tx.toFixed(3)}%, ${ty.toFixed(3)}%) scale(${s.toFixed(4)})` }} />
     </AbsoluteFill>
   );
 };
