@@ -16,6 +16,7 @@ export const SCHEMA = {
   cta: { type: "object", required: true, props: { head: { type: "string", required: true }, sub: { type: "string", required: false }, ancla: { type: "string", required: true }, landing: { type: "string", required: false }, qr: { type: "string", required: false } } },
   bagasy: { type: "object", required: false, props: { channelKey: { type: "string", required: true }, cardId: { type: "string", required: true } } },
   ctas: { type: "array", required: false },                     // CTA del MEDIO: [{ancla, head, sub?, qr?, durS?}]; el de cierre es `cta`
+  ambiente: { type: "string", required: false },                 // cama de ambiente bajo todo el video (ruta en public/)
   secciones: { type: "array", required: false },                // [[NOMBRE, "frase ancla"], ...]
   overrides: { type: "object", required: false },               // perillas del estilo por video (auditables)
 };

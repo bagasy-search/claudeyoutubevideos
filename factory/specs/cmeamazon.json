@@ -38,5 +38,6 @@
   "bagasy": {
     "channelKey": "https://www.youtube.com/channel/UCH0IxFDZmuX2sxqFG1CIvXA",
     "cardId": "cmep202609089"
-  }
+  },
+  "ambiente": "sfx/amb_cmeamazon.mp3"
 }

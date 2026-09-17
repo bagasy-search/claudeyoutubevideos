@@ -55,7 +55,8 @@ export const Main${comp}: React.FC = () => {
           <AbsoluteFill>{c.el(frame)}</AbsoluteFill>
         </Sequence>
       ))}
-      <Audio src={staticFile("${slug}.m4a")} />
+      <Audio src={staticFile("${slug}.m4a")} />${spec.ambiente ? `
+      <Audio src={staticFile("${spec.ambiente}")} />` : ""}
     </AbsoluteFill>
   );
 };
@@ -138,6 +139,7 @@ export default {
     fs.writeFileSync(entry, out.index);
 
     const assets = new Set([`${slug}.m4a`]);
+    if (spec.ambiente) assets.add(spec.ambiente);   // la cama de ambiente tambien viaja al farm
     if (spec.modo === "avatar") assets.add(placaRel);
     for (const c of r.cues) if (c.src) assets.add(c.src);
     // ⛔ Un asset que viaja en las PROPS de un componente (el QR del CTA) no tiene `src`, asi que no

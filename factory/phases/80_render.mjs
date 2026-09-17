@@ -69,6 +69,26 @@ export async function prepararWorktree({ slug, commit, files, wt, assetsList, ru
   return { wt, head };
 }
 
+/**
+ * Quita los junctions `public/` y `_v3/` del worktree de render. ⛔⛔ VITAL: mientras existen, ese
+ * worktree es una BOMBA — cualquier limpieza recursiva de afuera (`worktree remove`, un `rm -rf`, otra
+ * sesion ordenando D:/rtmp) sigue el enlace y borra el `public/` REAL del repo. Paso DOS veces el
+ * 17-sep-2026 con 5 videos en vuelo: se llevo 2.638 archivos y casi todas las imagenes y clips.
+ * El enlace solo hace falta mientras se arma el tarball, asi que se desarma apenas el farm despacha.
+ * Borrar un symlink/junction NO toca el destino.
+ */
+async function desarmarJunctions(wt, log) {
+  for (const d of ["public", "_v3"]) {
+    const link = path.join(wt, d);
+    try {
+      if (!fs.existsSync(link)) continue;
+      if (!fs.lstatSync(link).isSymbolicLink()) { log(`⚠️ ${link} no es junction: lo dejo`); continue; }
+      fs.unlinkSync(link);
+      log(`junction desarmado: ${d}`);
+    } catch (e) { log(`⚠️ no pude desarmar ${d}: ${e.message}`); }
+  }
+}
+
 export default {
   id: "80_render",
   deps: ["70_gates"],
@@ -113,6 +133,7 @@ export default {
               onLine: (l) => /PRE-VUELO|✗|⛔|WAIT_RUN|release|chunks|agnes QC/i.test(l) && log(l.slice(0, 180)),
             });
             runId = r.out.match(/WAIT_RUN:\s*(\d+)/)[1];
+            await desarmarJunctions(wt, log);   // el tar ya esta armado: el enlace no tiene que sobrevivir
             break;
           } catch (e) {
             if (i >= 3 || !esRateLimit(e.out || e.message)) throw e;
