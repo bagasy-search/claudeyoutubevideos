@@ -36,11 +36,16 @@ export default {
     const bfile = path.join(P.listas, "batches.json");
     const batches = fs.existsSync(bfile) ? JSON.parse(fs.readFileSync(bfile, "utf8")) : {};
     const faltaJpg = (it) => !fs.existsSync(path.join(P.imgDir, `${it.name}.jpg`));
+    // ⛔ NO se vuelve a PAGAR una imagen cuyo PNG ya esta en disco. El JPG es un derivado gratis del
+    // PNG; si falta sólo el JPG, se reconvierte. Sin esto, perder public/img/ (que está en .gitignore)
+    // hacía que la fase reenviara el batch entero a OpenAI: medido el 17-sep, tras un borrado
+    // accidental de public/, habrían sido ~US$2,75 por los 5 videos con los PNG intactos en disco.
+    const faltaPagar = (it) => faltaJpg(it) && !fs.existsSync(path.join(P.pngDir, `${it.name}.png`));
     const size = style.imagen?.size || "1088x608", quality = style.imagen?.quality || "low";
 
     await withLease("openai_batch", slug, 1, async () => {
       for (const [k, items] of Object.entries(listas)) {
-        const pend = items.filter(faltaJpg);
+        const pend = items.filter(faltaPagar);
         if (!pend.length) continue;
         if (!batches[k] || batches[k].fetched) {
           const s = await submitBatch({ items: pend, outDir: P.pngDir, size, quality });
