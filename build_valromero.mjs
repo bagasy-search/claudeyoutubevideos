@@ -51,7 +51,7 @@ const img = (id, slot) => `valromero/img/${id}_${slot}.jpg`;
 const AG_DUR = 4.03;
 const QR = {qr: 'img/valromero/qr_valromero.png', cover: 'valromero/img/cover.jpg', pages: ['valromero/img/pag1.jpg', 'valromero/img/pag2.jpg', 'valromero/img/pag3.jpg'], url: 'recetario-doctora.vercel.app'};
 const sfx = (t, src, vol = 0.35) => SFX.push({t, src, vol});
-const SFX_IN = {chapter: 'sfx/sfx_trans2.mp3', recipe: 'sfx/gentle_papercard_pop_#2-1780923860389.mp3', dial: 'sfx/sfx_whoosh_soft.mp3', drops: 'sfx/sfx_whoosh_soft.mp3', error: 'sfx/sfx_whoosh_soft.mp3', myth: 'sfx/sfx_trans1.mp3', redflags: 'sfx/sfx_trans3.mp3', week: 'sfx/gentle_papercard_pop_#2-1780923860389.mp3', timeline: 'sfx/sfx_trans1.mp3', teaser: 'sfx/sfx_whoosh_soft.mp3', lamina: 'sfx/cam_zoom_out.mp3', qr: 'sfx/sfx_trans4.mp3', hero: 'sfx/sfx_whoosh_soft.mp3', stat: 'sfx/sfx_whoosh_soft.mp3', quote: 'sfx/sfx_paper_tick.mp3', checklist: 'sfx/sfx_paper_tick.mp3', beforeafter: 'sfx/sfx_trans1.mp3', molecule: 'sfx/sfx_whoosh_soft.mp3', step: 'sfx/sfx_paper_tick.mp3'};
+const SFX_IN = {chapter: 'sfx/sfx_trans2.mp3', recipe: 'sfx/layer_drop.mp3', dial: 'sfx/sfx_whoosh_soft.mp3', drops: 'sfx/sfx_whoosh_soft.mp3', error: 'sfx/sfx_whoosh_soft.mp3', myth: 'sfx/sfx_trans1.mp3', redflags: 'sfx/sfx_trans3.mp3', week: 'sfx/layer_drop.mp3', timeline: 'sfx/sfx_trans1.mp3', teaser: 'sfx/sfx_whoosh_soft.mp3', lamina: 'sfx/cam_zoom_out.mp3', qr: 'sfx/sfx_trans4.mp3', hero: 'sfx/sfx_whoosh_soft.mp3', stat: 'sfx/sfx_whoosh_soft.mp3', quote: 'sfx/sfx_paper_tick.mp3', checklist: 'sfx/sfx_paper_tick.mp3', beforeafter: 'sfx/sfx_trans1.mp3', molecule: 'sfx/sfx_whoosh_soft.mp3', step: 'sfx/sfx_paper_tick.mp3'};
 let cursor = 0;
 const windows = [];
 const agList = [];
