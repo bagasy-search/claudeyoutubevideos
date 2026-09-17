@@ -114,6 +114,11 @@ export default {
     // 2. RunPod: un job; cola sólo si vuelve corto
     const TOL_CORTE_SEC = 2 / 30 + 0.02;   // lo que tolera el cortador de ventanas (abajo)
     const MAX_PAD_SEC = 0.5;               // por encima de esto NO se clona: se pide la cola de verdad
+    // Se rellena ante CUALQUIER faltante, no sólo cuando supera la tolerancia del cortador: con
+    // 0,077 s de menos (bajo los 0,087 del cortador) la última ventana se iba de rango igual por el
+    // redondeo a cuadros, y la fase moría con `ventanasMalCortadas: 1` (medido en cmeamazon).
+    // Clonar 2 cuadros al final no tiene costo ni efecto visible; quedarse corto sí.
+    const EPS_PAD_SEC = 0.01;
     const face = path.join(A, "face.jpg");
     await run("ffmpeg", ["-v", "error", "-y", "-i", spec.avatar.face, "-q:v", "2", "-frames:v", "1", "-update", "1", face], { timeoutMs: 60_000 });
     const prompt = spec.avatar.prompt || style.avatarPrompt || "A person speaks naturally to the camera, natural head movement, realistic lighting";
@@ -160,7 +165,7 @@ export default {
       }
       const d = await durSec(reelMp4);
       const falta = reelSec - d;
-      if (falta > TOL_CORTE_SEC && falta <= MAX_PAD_SEC) {
+      if (falta > EPS_PAD_SEC && falta <= MAX_PAD_SEC) {
         const pad = path.join(A, "reel_pad.mp4");
         log(`reel ${falta.toFixed(3)} s corto (bajo el umbral de cola): clono el último cuadro ${Math.round(falta * 30)} cuadros`);
         await run("ffmpeg", ["-v", "error", "-y", "-i", reelMp4, "-vf", `tpad=stop_mode=clone:stop_duration=${(falta + 0.04).toFixed(3)}`,
