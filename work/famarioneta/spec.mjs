@@ -282,7 +282,7 @@ export const SPEC = {
   m250: { t: "S", q: "senior woman morning coffee kitchen window", ov: { c: "FmQA", props: { q: "¿Mañana o noche?", a: "La que puedas sostener." }, at: ["la que puedas sostener"] } },
   m251: { t: "S", q: "senior woman evening skincare bathroom" },
   m252: { t: "A" },
-  m253: { t: "S", q: "senior woman waking up morning bed", alt: 1, ov: { c: "FmTimeline", span: 2, props: { title: "¿En cuánto tiempo se nota?", marks: [{ at: "Sem 1-2", t: "Por dentro: la cara más suelta" }, { at: "Sem 4-6", t: "Algunas ven la boca más descansada" }, { at: "Sem 6", t: "Recién ahí juzgas" }] }, at: ["primeras dos semanas", "entre la cuarta y la sexta"] } },
+  m253: { t: "S", q: "senior woman relaxed smiling at home", alt: 4, ov: { c: "FmTimeline", span: 2, props: { title: "¿En cuánto tiempo se nota?", marks: [{ at: "Sem 1-2", t: "Por dentro: la cara más suelta" }, { at: "Sem 4-6", t: "Algunas ven la boca más descansada" }, { at: "Sem 6", t: "Recién ahí juzgas" }] }, at: ["primeras dos semanas", "entre la cuarta y la sexta"] } },
   m254: { t: "S", q: "senior woman relaxed smiling at home", alt: 1 },
   m255: { t: "A" },
   m256: { t: "A" },

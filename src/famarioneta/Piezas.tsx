@@ -76,7 +76,7 @@ const ZONAS: Record<string, [number, number, number]> = {
   paso5: [2, 82, 1.6],
   diagrama: [97, 38, 1.55],
   errores: [97, 86, 1.6],
-  plazo: [50, 100, 1.35],
+  plazo: [50, 100, 1.18],
 };
 export const Lamina: React.FC<{ src: string; zoom?: string; desde?: string }> = ({ src, zoom = "completa", desde }) => {
   const frame = useCurrentFrame();
