@@ -109,7 +109,7 @@ export default {
             const reuse = (reusarAssets || i > 0) && (await releaseAssetPublic(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
             const r = await run("node", [path.join(ROOT, "scripts", "farm.mjs"), slug, P.comp, String(total), String(chunks), `@${path.basename(P.assetsList)}`], {
               cwd: wt, timeoutMs: 3 * 3600_000, expect: /WAIT_RUN:\s*\d+/,
-              env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
+              env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ARBOL_SRC: tree.archivos.join(","), ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
               onLine: (l) => /PRE-VUELO|✗|⛔|WAIT_RUN|release|chunks|agnes QC/i.test(l) && log(l.slice(0, 180)),
             });
             runId = r.out.match(/WAIT_RUN:\s*(\d+)/)[1];
