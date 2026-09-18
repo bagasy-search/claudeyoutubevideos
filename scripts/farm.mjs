@@ -191,11 +191,28 @@ if (pref && pref.startsWith("@")) {
   // y el chequeo pasaría de largo justo el error que más caro salió. Se cuentan en src/ y son dos:
   // sfx (292 referencias) y med (21). Las dos rompieron renders. Se exigen enteras, siempre.
   const COMPARTIDAS = (process.env.ASSETS_COMPARTIDOS || "sfx,med").split(",").map((s) => s.trim()).filter(Boolean);
+  // Escanear TODO `src` da un FALSO BLOQUEO a los videos con arbol autocontenido: los archivos del
+  // kit Federer (src/Fed*.tsx) nombran `med/`, que en este repo no existe, asi que un vlog-crudo de 4
+  // archivos que no toca el kit quedaba bloqueado por un asset que no usa. Si el que llama pasa el
+  // arbol de imports del entry (ARBOL_SRC), el grep mira SOLO esos archivos. Sin ARBOL_SRC se mantiene
+  // el barrido completo (falso bloqueo < falso OK).
+  const ARBOL = (process.env.ARBOL_SRC || "").split(",").map((x) => x.trim()).filter(Boolean);
+  const donde = ARBOL.length ? ARBOL.map((f) => `"${f}"`).join(" ") : "src";
+  // ⛔⛔ Esto llevaba `2>/dev/null || true` dentro de un execSync: sintaxis de Unix que cmd.exe NO
+  // entiende, asi que el comando SIEMPRE tiraba excepcion y el catch devolvia `true`. Resultado: el
+  // pre-vuelo bloqueaba SIEMPRE, mirara lo que mirara. cmeodian tuvo que esquivarlo a mano con
+  // ASSETS_COMPARTIDOS=sfx. Ahora sin shell, y `git grep` sin coincidencias sale con 1, que NO es un
+  // error: es la respuesta "no la usa".
   const usa = (dir) => {
+    const pat = "/?(public/)?" + dir + "/[^\"'`]+\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)";
+    const args = ["grep", "-lE", pat, "--", ...(ARBOL.length ? ARBOL : ["src"])];
     try {
-      return execSync(`git grep -lE "/?(public/)?${dir}/[^\\"'\`]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
-        { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().length > 0;
-    } catch { return true; } // sin git no adivino: la doy por usada (falso bloqueo < falso OK)
+      return execFileSync("git", args, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim().length > 0;
+    } catch (e) {
+      if (e.status === 1) return false;   // sin coincidencias: NO la usa
+      console.error(`  (pre-vuelo: no pude mirar ${dir} (estado ${e.status}); la doy por usada)`);
+      return true;                        // cualquier otra cosa: conservador
+    }
   };
   const rotas = COMPARTIDAS.filter((d) => usa(d) && !fs.existsSync(`public/${d}`));
   if (rotas.length) {
@@ -217,7 +234,7 @@ if (pref && pref.startsWith("@")) {
     let usados = [];
     try {
       const re = new RegExp(`(?:public/)?${d}/[A-Za-z0-9_./-]+\\.(?:png|jpe?g|webp|mp4|webm|mov|mp3|wav)`, "g");
-      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- src 2>/dev/null || true`,
+      const salida = execSync(`git grep -hoE "(public/)?${d}/[A-Za-z0-9_./-]+\\.(png|jpe?g|webp|mp4|webm|mov|mp3|wav)" -- ${donde} 2>/dev/null || true`,
         { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"], maxBuffer: 32 * 1024 * 1024 });
       usados = [...new Set((salida.match(re) || []).map((r) => r.replace(/^public\//, "")))]
         .filter((r) => fs.existsSync(`public/${r}`));

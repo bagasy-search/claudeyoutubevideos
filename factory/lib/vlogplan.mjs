@@ -29,7 +29,7 @@ export const rnd = (n) => {
  *   assetOf(name) → { tipo: "clip"|"foto", src } | null      (src relativo a public/)
  *   framesOf(src) → cuadros reales del clip (0 si no se puede medir)
  *   finFoto(name, clipSrc) → { tipo: "foto", src }            (último cuadro del clip como foto)
- *   cta: { regex: RegExp, head, sub }
+ *   cta: { regex, head, sub, qr?, durS? } o [ {...}, ... ]  (varios CTA; sin durS = hasta el final)
  */
 export function planVlog({ mom, plan, ventanasSec, wavSec, assetOf, framesOf, finFoto, cta, opts = {} }) {
   const O = { ...DEFAULTS, ...opts };
@@ -153,9 +153,16 @@ export function planVlog({ mom, plan, ventanasSec, wavSec, assetOf, framesOf, fi
   }
 
   // 4. CTA (capa over) atado a su frase
-  const mCta = cta ? mm.find((x) => cta.regex.test(x.texto)) : null;
-  if (cta && !mCta) prob.push(`no encontré la frase del CTA (${cta.regex}) en el guion`);
-  if (mCta) cues.push({ key: "cta", start: F(mCta.start), dur: TOTAL - F(mCta.start), capa: "over", kind: "cta", props: { head: cta.head, sub: cta.sub } });
+  // CTA: uno o varios. Los del medio duran `durS` (hay que poder escanear el QR); el último va al final.
+  const ctas = !cta ? [] : Array.isArray(cta) ? cta : [cta];
+  ctas.forEach((c, idx) => {
+    const m = mm.find((x) => c.regex.test(x.texto));
+    if (!m) { prob.push(`no encontré la frase del CTA ${idx + 1} (${c.regex}) en el guion`); return; }
+    const f0 = F(m.start);
+    const dur = c.durS ? Math.min(F(c.durS), TOTAL - f0) : TOTAL - f0;
+    if (dur < F(3)) { prob.push(`el CTA ${idx + 1} dura ${(dur / O.fps).toFixed(1)} s: no alcanza para escanear el QR`); return; }
+    cues.push({ key: `cta${idx + 1}`, start: f0, dur, capa: "over", kind: "cta", props: { head: c.head, sub: c.sub, ...(c.qr ? { qr: c.qr } : {}) } });
+  });
 
   // 5. MEDICIÓN + problemas (todo con número)
   const base = cues.filter((c) => c.capa === "base").sort((a, b) => a.start - b.start);

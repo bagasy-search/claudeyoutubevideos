@@ -143,5 +143,18 @@
     "wav": "voices/bastida7.wav",
     "text": "Vamos con las tres que le están cargando el filtro sin que usted se entere. La número uno es la más fácil de adivinar y la más difícil de dejar: el fiambre. El jamón, la mortadela, el salame, la panceta, las salchichas, el pollo ese que viene ya cocido en fetas prolijitas en la bandeja del supermercado. Yo sé que es cómodo, que es el sanguchito de la noche cuando no tiene ganas de cocinar. Pero escúcheme lo que le voy a decir: una sola feta de fiambre puede traerle más sal que tres bifes, y trae fósforo agregado, que es el peor de todos porque se le absorbe casi entero.",
     "note": "ref del avatar7 (proteinas) 607.52s +28.56s - continuidad exacta con el tramo del avatar"
+  },
+  "claudio_mendoza_s4": {
+    "language": "es",
+    "refs": [
+      {
+        "wav": "fish_refs/claudio_s4_a.wav",
+        "text": "Mira, hay algo que casi nadie revisa antes de empezar a cambiar piezas y lo peor es que muchas veces el problema está ahí, frente a tus ojos. Me pasó durante años, escuchaba un ruido extraño, asumía que era algo grave y terminaba desmontando medio coche."
+      },
+      {
+        "wav": "fish_refs/claudio_s4_b.wav",
+        "text": "¿Ves esta conexión de aquí? Si tiene apenas un poco de juego, puede provocar vibraciones, fallos e incluso hacerte pensar que el motor está por romperse. Y no, no necesitas una herramienta especial. Sólo paciencia y mirar bien. Parece una tontería, pero te sorprendería saber cuánta gente gasta cientos de dólares por no revisar esto primero."
+      }
+    ]
   }
 }

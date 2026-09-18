@@ -69,6 +69,26 @@ export async function prepararWorktree({ slug, commit, files, wt, assetsList, ru
   return { wt, head };
 }
 
+/**
+ * Quita los junctions `public/` y `_v3/` del worktree de render. ⛔⛔ VITAL: mientras existen, ese
+ * worktree es una BOMBA — cualquier limpieza recursiva de afuera (`worktree remove`, un `rm -rf`, otra
+ * sesion ordenando D:/rtmp) sigue el enlace y borra el `public/` REAL del repo. Paso DOS veces el
+ * 17-sep-2026 con 5 videos en vuelo: se llevo 2.638 archivos y casi todas las imagenes y clips.
+ * El enlace solo hace falta mientras se arma el tarball, asi que se desarma apenas el farm despacha.
+ * Borrar un symlink/junction NO toca el destino.
+ */
+async function desarmarJunctions(wt, log) {
+  for (const d of ["public", "_v3"]) {
+    const link = path.join(wt, d);
+    try {
+      if (!fs.existsSync(link)) continue;
+      if (!fs.lstatSync(link).isSymbolicLink()) { log(`⚠️ ${link} no es junction: lo dejo`); continue; }
+      fs.unlinkSync(link);
+      log(`junction desarmado: ${d}`);
+    } catch (e) { log(`⚠️ no pude desarmar ${d}: ${e.message}`); }
+  }
+}
+
 export default {
   id: "80_render",
   deps: ["70_gates"],
@@ -109,10 +129,11 @@ export default {
             const reuse = (reusarAssets || i > 0) && (await releaseAssetPublic(repo, `assets-${slug}`, `assets-${slug}.tar`)).existe;
             const r = await run("node", [path.join(ROOT, "scripts", "farm.mjs"), slug, P.comp, String(total), String(chunks), `@${path.basename(P.assetsList)}`], {
               cwd: wt, timeoutMs: 3 * 3600_000, expect: /WAIT_RUN:\s*\d+/,
-              env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
+              env: { ENTRY: `src/index_${slug}.tsx`, FARM_REF: P.renderRef, AUDIO_FILE: `${slug}.m4a`, TAR_DIR: env("FACTORY_TAR_DIR") || "D:/", FARM_NOWAIT: "1", ARBOL_SRC: tree.archivos.join(","), ...(reuse ? { REUSE_ASSETS: "1" } : {}) },
               onLine: (l) => /PRE-VUELO|✗|⛔|WAIT_RUN|release|chunks|agnes QC/i.test(l) && log(l.slice(0, 180)),
             });
             runId = r.out.match(/WAIT_RUN:\s*(\d+)/)[1];
+            await desarmarJunctions(wt, log);   // el tar ya esta armado: el enlace no tiene que sobrevivir
             break;
           } catch (e) {
             if (i >= 3 || !esRateLimit(e.out || e.message)) throw e;
@@ -134,9 +155,22 @@ export default {
 
     const dir = path.dirname(P.rawMp4);
     fs.mkdirSync(dir, { recursive: true });
-    await gh(["run", "download", String(runId), "-R", repo, "-n", `final-${slug}`, "-D", dir], { log, timeoutMs: 60 * 60_000 });
-    const d = await durSec(P.rawMp4);
+    // No re-bajar 600 MB que ya estan en disco. El artefacto del farm tarda ~1 h con esta conexion y
+    // la descarga puede cortarse justo al final; si el mp4 ya esta y dura lo que tiene que durar, se
+    // usa. Medido el 17-sep: cmealter y cmeamazon tenian su mp4 completo y la fase murio igual
+    // reintentando la descarga durante 3.592 s.
     const esperado = total / 30;
+    let listo = false;
+    if (fs.existsSync(P.rawMp4)) {
+      try {
+        const dPrev = await durSec(P.rawMp4);
+        listo = Math.abs(dPrev - esperado) / esperado * 100 <= 0.6;
+        log(listo ? `mp4 ya en disco (${dPrev.toFixed(1)} s): no lo vuelvo a bajar`
+                  : `mp4 en disco pero dura ${dPrev.toFixed(1)} s y se esperaban ${esperado.toFixed(1)}: lo bajo de nuevo`);
+      } catch { /* ilegible: se baja */ }
+    }
+    if (!listo) await gh(["run", "download", String(runId), "-R", repo, "-n", `final-${slug}`, "-D", dir], { log, timeoutMs: 60 * 60_000 });
+    const d = await durSec(P.rawMp4);
     assertMeasured("renderDesvioPct", +(Math.abs(d - esperado) / esperado * 100).toFixed(3), { max: 0.6, allowZero: true, log });   // el farm estira ~0,2 %
     return { runId, commit: c.commit, archivos: tree.archivos.length, chunks, jobsOk: res.jobsOk, durSec: +d.toFixed(2), totalFrames: total };
   },

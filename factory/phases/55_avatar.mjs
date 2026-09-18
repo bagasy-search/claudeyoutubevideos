@@ -112,6 +112,13 @@ export default {
     log(`ventanas ${W.length} · visibles ${reelSec.toFixed(1)} s de ${TOT.toFixed(1)} s (${((100 * reelSec) / TOT).toFixed(1)} %)`);
 
     // 2. RunPod: un job; cola sólo si vuelve corto
+    const TOL_CORTE_SEC = 2 / 30 + 0.02;   // lo que tolera el cortador de ventanas (abajo)
+    const MAX_PAD_SEC = 0.5;               // por encima de esto NO se clona: se pide la cola de verdad
+    // Se rellena ante CUALQUIER faltante, no sólo cuando supera la tolerancia del cortador: con
+    // 0,077 s de menos (bajo los 0,087 del cortador) la última ventana se iba de rango igual por el
+    // redondeo a cuadros, y la fase moría con `ventanasMalCortadas: 1` (medido en cmeamazon).
+    // Clonar 2 cuadros al final no tiene costo ni efecto visible; quedarse corto sí.
+    const EPS_PAD_SEC = 0.01;
     const face = path.join(A, "face.jpg");
     await run("ffmpeg", ["-v", "error", "-y", "-i", spec.avatar.face, "-q:v", "2", "-frames:v", "1", "-update", "1", face], { timeoutMs: 60_000 });
     const prompt = spec.avatar.prompt || style.avatarPrompt || "A person speaks naturally to the camera, natural head movement, realistic lighting";
@@ -124,7 +131,7 @@ export default {
         if (!fs.existsSync(p1)) { const r = await runpodJob({ slug, parte: "parte1", face, audio: reelWav, prompt, jobsFile, outMp4: p1, log }); costo += r.costo || 0; }
         jobs++;
         const d1 = await durSec(p1);
-        if (d1 >= reelSec - 1.5) { fs.copyFileSync(p1, reelMp4); return; }
+        if (d1 >= reelSec - MAX_PAD_SEC) { fs.copyFileSync(p1, reelMp4); return; }
         const corte = Math.max(...W.map((w) => w.reel_off).filter((o) => o <= d1 - 0.3));
         if (!(corte > 0)) throw new Error(`el job 1 volvió con ${d1.toFixed(1)} s y no hay borde de ventana antes: revisar`);
         log(`job 1 volvió corto (${d1.toFixed(1)} s de ${reelSec.toFixed(1)} s, cap RunPod) → 2º job SÓLO con la cola desde ${corte} s`);
@@ -136,7 +143,52 @@ export default {
         await run("ffmpeg", ["-v", "error", "-y", "-i", p1t, "-i", p2, "-filter_complex", "[0:v][1:v]concat=n=2:v=1:a=0[v]", "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", reelMp4], { timeoutMs: 1_800_000 });
       }, { log });
     }
+    // ⛔ BANDA MUERTA (medida en cmealter): el disparador del 2º /run y el gate del reel toleraban
+    // 1,5 s, pero el cortador de ventanas sólo 0,087 s. Un faltante entre esos dos números pasaba los
+    // dos chequeos del reel y DESPUÉS rompía la última ventana, con la rama de la cola inalcanzable.
+    // Ahora: > MAX_PAD_SEC pide la cola de verdad (arriba); entre la tolerancia del cortador y ese
+    // umbral se clona el último cuadro, que sólo congela el final de la ÚLTIMA ventana y no corre el
+    // lipsync de nada (tpad agrega, no desplaza).
+    {
+      // El sync gate saca el audio DEL PROPIO reel, asi que el reel tiene que conservarlo. Si una
+      // corrida anterior lo dejo mudo (el tpad llevaba -an), se rehace desde parte1 en vez de quedar
+      // en un ciclo que no cierra: ya padeado no vuelve a entrar acá, y mudo revienta el gate.
+      const tieneAudio = async (f) => {
+        const r = await run("ffprobe", ["-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", f],
+          { timeoutMs: 60_000, allowFail: true });
+        return /\d/.test(r.out || "");
+      };
+      const p1 = path.join(A, "parte1.mp4");
+      if (fs.existsSync(reelMp4) && !(await tieneAudio(reelMp4)) && fs.existsSync(p1)) {
+        log("el reel quedó sin pista de audio (corrida anterior): lo rehago desde parte1");
+        fs.copyFileSync(p1, reelMp4);
+      }
+      const d = await durSec(reelMp4);
+      const falta = reelSec - d;
+      // Simétrico al relleno: si el reel quedó MÁS LARGO que las ventanas (pasa cuando se recompone el
+      // plan y el span total baja unos segundos), el sobrante está en la COLA, después de la última
+      // ventana. Recortarlo es gratis y correcto — verificado en cme150 y cmealter: con el audio nuevo
+      // el reel viejo daba correlación 1,000 y desfase 0,00 s, o sea que todo lo anterior seguía en su
+      // lugar. Antes, esto obligaba a un /run nuevo de RunPod (US$0,25) por dos segundos de cola.
+      if (falta < -EPS_PAD_SEC) {
+        const rec = path.join(A, "reel_rec.mp4");
+        log(`reel ${(-falta).toFixed(2)} s más largo que las ventanas: recorto la cola`);
+        await run("ffmpeg", ["-v", "error", "-y", "-i", reelMp4, "-t", reelSec.toFixed(3),
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-c:a", "copy", rec], { timeoutMs: 1_800_000 });
+        if (!(await tieneAudio(rec))) throw new Error("el recorte dejó el reel sin audio");
+        fs.renameSync(rec, reelMp4);
+      }
+      if (falta > EPS_PAD_SEC && falta <= MAX_PAD_SEC) {
+        const pad = path.join(A, "reel_pad.mp4");
+        log(`reel ${falta.toFixed(3)} s corto (bajo el umbral de cola): clono el último cuadro ${Math.round(falta * 30)} cuadros`);
+        await run("ffmpeg", ["-v", "error", "-y", "-i", reelMp4, "-vf", `tpad=stop_mode=clone:stop_duration=${(falta + 0.04).toFixed(3)}`,
+          "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-c:a", "copy", pad], { timeoutMs: 1_800_000 });
+        if (!(await tieneAudio(pad))) throw new Error("el clonado dejó el reel sin audio: el sync gate lo saca de acá");
+        fs.renameSync(pad, reelMp4);
+      }
+    }
     const dReel = await durSec(reelMp4);
+    assertMeasured("reelFaltanteSec", +Math.max(0, reelSec - dReel).toFixed(3), { max: TOL_CORTE_SEC, allowZero: true, log });
     assertMeasured("reelDesvioSec", +Math.abs(dReel - reelSec).toFixed(2), { max: 1.5, allowZero: true, log });
 
     // 3. sincro (sobre el reel CRUDO vs su wav, antes de montar)
@@ -158,6 +210,15 @@ export default {
       if (Math.abs(real - d) > 2 / 30 + 0.02) malos.push(`w${w.k}: ${real.toFixed(3)} vs ${d.toFixed(3)}`);
     });
     assertMeasured("ventanasMalCortadas", malos.length, { max: 0, allowZero: true, log });
-    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costo, syncCorr: corr, syncLagMs: Math.round(lag * 1000) };
+    // El costo sale del SELLO de jobs.json, no del acumulador de esta corrida: al reanudar (reel ya
+    // en disco, o parte1 reusada) no se llama a RunPod y `costo` queda en 0, con lo que el estado de
+    // la fase decia que el avatar habia salido gratis y cualquier suma aguas abajo lo perdia.
+    let costoSellado = costo;
+    try {
+      const js = JSON.parse(fs.readFileSync(jobsFile, "utf8"));
+      const suma = Object.values(js).reduce((a, j) => a + (Number(j?.costo) || 0), 0);
+      if (suma > costoSellado) costoSellado = +suma.toFixed(4);
+    } catch { /* sin sello: queda el acumulador */ }
+    return { ventanas: W.length, visiblesSec: +reelSec.toFixed(2), visiblesPct: +((100 * reelSec) / TOT).toFixed(1), jobs, costoUsd: costoSellado, syncCorr: corr, syncLagMs: Math.round(lag * 1000) };
   },
 };
