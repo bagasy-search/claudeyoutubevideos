@@ -30,15 +30,36 @@ export default {
       ? ["-c:v", "h264_nvenc", "-preset", "p5", "-tune", "hq", "-rc", "vbr", "-cq", "21", "-b:v", "5M", "-maxrate", "6M", "-bufsize", "12M", "-bf", "0", "-g", "60", "-profile:v", "high"]
       : ["-c:v", "libx264", "-preset", "faster", "-crf", "21", "-maxrate", "6M", "-bufsize", "12M", "-g", "60", "-keyint_min", "60", "-sc_threshold", "0", "-threads", "0"];   // todos los hilos: 120 s de video 69 s → 32 s (Ryzen 7 6800H, 15-sep-2026)
     const t0 = Date.now();
-    // re-encode ya hecho y POSTERIOR al render crudo → no se repite (reanudación tras un fallo de compuerta/subida)
-    const yaHecho = fs.existsSync(P.finalMp4) && fs.statSync(P.finalMp4).mtimeMs > fs.statSync(P.rawMp4).mtimeMs && fs.statSync(P.finalMp4).size > 1e7;
-    if (yaHecho) log(`re-encode de entrega ya hecho (${P.finalMp4} posterior al render): no se repite`);
-    else await run("ffmpeg", ["-v", "error", "-y", "-i", P.rawMp4, "-i", P.wav, "-map", "0:v:0", "-map", "1:a:0",
+    // re-encode ya hecho y POSTERIOR al render crudo → no se repite (reanudación tras un fallo de compuerta/subida).
+    // ⛔ (18-sep-2026) mtime + tamaño NO alcanzan: un re-encode cortado a mitad deja un mp4 SIN moov, más nuevo que
+    //    el crudo y de 489 MB, y esta rama lo daba por bueno para siempre (cmecaja murió así en check_entrega).
+    //    Ahora se EXIGE que ffprobe lo lea y que dure lo que tiene que durar; y el encode escribe en .part y recién
+    //    al terminar renombra, así una corrida interrumpida no deja nunca un archivo trunco en el nombre final.
+    let yaHecho = false;
+    if (fs.existsSync(P.finalMp4) && fs.statSync(P.finalMp4).mtimeMs > fs.statSync(P.rawMp4).mtimeMs && fs.statSync(P.finalMp4).size > 1e7) {
+      try {
+        const dPrev = await durSec(P.finalMp4);
+        yaHecho = Math.abs(dPrev - wavSec) <= 1;
+        log(yaHecho ? `re-encode de entrega ya hecho (${dPrev.toFixed(1)} s, posterior al render): no se repite`
+                    : `entrega en disco dura ${dPrev.toFixed(1)} s y se esperaban ${wavSec.toFixed(1)}: la rehago`);
+      } catch (e) { log(`entrega en disco ILEGIBLE (${String(e.message || e).replace(/\s+/g, " ").slice(0, 90)}): la rehago`); }
+    }
+    const parcial = P.finalMp4 + ".part";
+    if (!yaHecho) { try { fs.unlinkSync(parcial); } catch { /* no estaba */ } }
+    if (!yaHecho) await run("ffmpeg", ["-v", "error", "-y", "-i", P.rawMp4, "-i", P.wav, "-map", "0:v:0", "-map", "1:a:0",
       "-vf", "setpts=N/30/TB,scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p", "-fps_mode", "passthrough",
       "-color_range", "tv", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
       ...vcodec,
-      "-af", "pan=stereo|c0=c0|c1=c0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart", P.finalMp4], { timeoutMs: 3 * 3600_000 });
-    log(`re-encode de entrega con ${nvenc ? "NVENC (GPU)" : "libx264 (CPU)"}: ${Math.round((Date.now() - t0) / 1000)} s`);
+      "-af", "pan=stereo|c0=c0|c1=c0", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", String(wavSec), "-movflags", "+faststart",
+      // ⛔ el archivo de salida es "<final>.mp4.part": ffmpeg infiere el formato por EXTENSION y ".part" no le
+      // dice nada -> "Unable to choose an output format". Medido en tfbsilicona (entrega frenada). Va explicito.
+      "-f", "mp4", parcial], { timeoutMs: 3 * 3600_000 });
+    if (!yaHecho) {
+      const dPart = await durSec(parcial);   // si el .part no se deja leer, acá revienta y el nombre final queda intacto
+      assertMeasured("entregaDesvioSec", +Math.abs(dPart - wavSec).toFixed(3), { max: 1, allowZero: true, log });
+      fs.renameSync(parcial, P.finalMp4);
+      log(`re-encode de entrega con ${nvenc ? "NVENC (GPU)" : "libx264 (CPU)"}: ${Math.round((Date.now() - t0) / 1000)} s`);
+    }
 
     await run("node", ["scripts/check_entrega.mjs", P.finalMp4], { cwd: ROOT, timeoutMs: 30 * 60_000 });
     const pts = await run("ffprobe", ["-v", "error", "-select_streams", "v", "-show_entries", "frame=pts_time", "-of", "csv=p=0", P.finalMp4], { timeoutMs: 60 * 60_000 });
