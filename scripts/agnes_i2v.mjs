@@ -33,6 +33,16 @@ const FRAMES = Number(process.env.AG_FRAMES || 121);
 const FPS = Number(process.env.AG_FPS || 60);
 const SLOW = Number(process.env.AG_SLOW || FPS / 30);            // 60 fps → ×2 → 30 CFR sin repetidos
 if ((FRAMES - 1) % 8) { console.error(`⛔ AG_FRAMES=${FRAMES} no cumple 8n+1 (la API rebota sin decir por qué)`); process.exit(1); }
+// ⛔⛔ REGLA DEL CREADOR (18-sep-2026), para TODOS los nichos y canales: agnes anima 2 SEGUNDOS y se
+// reproduce a 0,5× de velocidad. "Es demasiado tonto agnes": cuanto más tiempo le pedís, más se le
+// derriten las manos, mete gente o cambia de escena. 121f @60 = 2,0 s de inferencia · setpts=2.0*PTS
+// -> 4,03 s a 30 CFR. Bajar el fps o el ralentí NO es una preferencia de nicho: rompe la regla.
+const INFER_S = FRAMES / FPS;
+if (!process.env.AG_FORCE && (INFER_S > 2.2 || SLOW < 2)) {
+  console.error(`⛔ fuera de la regla: ${INFER_S.toFixed(2)} s de inferencia a ralentí ×${SLOW} (la regla es ~2 s a ×2 = 0,5 de velocidad).`);
+  console.error(`   medido: FRAMES=${FRAMES} FPS=${FPS} SLOW=${SLOW}. Si de verdad lo querés, AG_FORCE=1.`);
+  process.exit(1);
+}
 const COOLDOWN = 62_000, QUEUE_RETRY = 8_000, POLL_MS = 12_000, MAX_WAIT = 25 * 60_000;
 const MAX_INFLIGHT = Number(process.env.AGNES_INFLIGHT || 12);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
