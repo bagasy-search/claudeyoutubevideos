@@ -44,6 +44,27 @@ export default {
     const bloques = Object.values(man);
     const malos = bloques.filter((b) => b.status !== "ok").length;
     assertMeasured("fishBloquesOk", bloques.length - malos, { min: bloques.length, total: bloques.length, log });
+    // COMPUERTA DEL BLOQUE LOOPEADO (18-sep-2026, medida en fboxidoropa). Fish a veces dice el bloque
+    // y lo REPITE: b002 salió 148,3 s contra ~74 esperados (2,0×) y b008 129,5 s (1,8×). El ASR
+    // después alinea 74 s de texto contra un wav del doble y reporta "oyó el 1 % de sus palabras",
+    // que manda a buscar el problema al lado equivocado (se perdieron 3 rondas de regeneración).
+    // ⛔ `fishBloquesOk` NO lo ve: un bloque que falla no llega a entrar al manifest, así que la
+    //    compuerta cuenta sólo los que SÍ entraron y le dan todos ok. Por eso acá se miden los wav
+    //    que hay EN DISCO, no el manifest. Los bloques se parten a ≤1200 chars en límite de frase,
+    //    así que duran todos parecido: los sanos midieron 69-81 s (mediana ~75) y los looped 129-148.
+    //    El corte en 1,4× la mediana separa limpio. Sólo se marca lo LARGO (el último bloque puede
+    //    ser corto y eso es normal). Se cura regenerando ese bloque PARTIDO en dos mitades.
+    const wavs = fs.readdirSync(P.fishDir).filter((f) => /^b\d+\.wav$/.test(f)).sort();
+    const durs = [];
+    for (const f of wavs) { try { durs.push({ f, d: await durSec(path.join(P.fishDir, f)) }); } catch { /* ignoro el ilegible */ } }
+    if (durs.length >= 3) {
+      const orden = durs.map((x) => x.d).sort((a, b) => a - b);
+      const mediana = orden[Math.floor(orden.length / 2)];
+      const largos = durs.filter((x) => x.d > 1.4 * mediana);
+      for (const x of largos) log(`  ⛔ ${x.f}: ${x.d.toFixed(1)} s = ${(x.d / mediana).toFixed(2)}× la mediana (${mediana.toFixed(1)} s) — Fish lo repitió`);
+      log(`  bloques en disco ${durs.length} · mediana ${mediana.toFixed(1)} s · el más largo ${Math.max(...orden).toFixed(1)} s`);
+      assertMeasured("fishBloquesLooped", largos.length, { max: 0, allowZero: true, log });
+    } else log(`  bloques en disco ${durs.length}: muy pocos para medir la mediana, no mido looped`);
     const fishSec = await durSec(P.fishMaster);
     assertMeasured("fishDurSec", Math.round(fishSec), { min: 60, log });
 

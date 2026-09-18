@@ -69,6 +69,10 @@ async function runpodJob({ slug, parte, face, audio, prompt, jobsFile, outMp4, l
       catch (e) { log(`poll: ${e.message}`); continue; }
       if (k % 10 === 0) log(`RunPod ${parte}: ${st.status}`);
       if (["COMPLETED", "FAILED", "CANCELLED", "TIMED_OUT"].includes(st.status)) break;
+      // ⛔ Un estado DESCONOCIDO también es terminal. Con sólo la lista de arriba, un job que ya no
+      //    existe (404 al retomar uno viejo) no cortaba nunca: 600 vueltas × 30 s = 5 horas poleando a un
+      //    muerto, con la fase en `running` y nadie mirándola. Medido el 18-sep-2026 en fboxidoropa.
+      if (!["IN_QUEUE", "IN_PROGRESS", "RUNNING"].includes(st.status)) break;
     }
   } finally { if (host) await host.borrar(); }
   if (st?.status !== "COMPLETED") { delete jobs[parte]; fs.writeFileSync(jobsFile, JSON.stringify(jobs, null, 1)); throw new Error(`RunPod ${parte}: ${st?.status} ${JSON.stringify(st?.error || "").slice(0, 200)}`); }
@@ -124,11 +128,47 @@ export default {
     const prompt = spec.avatar.prompt || style.avatarPrompt || "A person speaks naturally to the camera, natural head movement, realistic lighting";
     const jobsFile = path.join(A, "jobs.json");
     const reelMp4 = path.join(A, "reel.mp4");
+    // ⛔⛔ CADUCIDAD POR AUDIO (18-sep-2026). Los pedazos del avatar se reusaban con un
+    //    `existsSync` pelado: preguntaban si el archivo ESTÁ, no si es del audio de AHORA. Al cambiar
+    //    la voz del canal (Fish → ElevenLabs) la fase reusó `parte1.mp4` de la corrida anterior y siguió
+    //    adelante: un avatar lipsincado contra OTRA locución. Si no fuera porque el reel quedó corto y
+    //    la compuerta de duración lo frenaó, se entregaba un video con la boca fuera de sincro y ninguna
+    //    compuerta mirando eso. El `inputsHash` de la fase SÍ ve el wav — pero eso decide si la fase
+    //    corre, no si lo que hay en disco sirve. Regla: un pedazo MÁS VIEJO que el audio no existe.
+    const mtime = (f) => { try { return fs.statSync(f).mtimeMs; } catch { return 0; } };
+    const audioMs = mtime(P.wav);
+    // Al caducar un pedazo hay que caducar TAMBIÉN su job en `jobs.json`: si no, la fase "retoma" el job
+    // de la corrida vieja y vuelve a bajar el avatar del audio anterior (o se come un 404, que fue lo que
+    // pasó). El id viejo no sirve para nada una vez que el audio cambió.
+    // El discriminador es la FECHA DEL JOB contra la del audio, no si el mp4 está en disco. Retomar un
+    // job es legítimo cuando se cortó la corrida y el job sigue vivo en RunPod — eso hay que conservarlo.
+    // Lo que no sirve NUNCA es un job LANZADO ANTES del audio actual: o devuelve el avatar de la voz
+    // vieja, o ya caducó y da 404 (medido: reanudó el job de Fish y se comió el 404 dos veces).
+    const jobsFilePre = path.join(A, "jobs.json");
+    try {
+      if (fs.existsSync(jobsFilePre)) {
+        const j = JSON.parse(fs.readFileSync(jobsFilePre, "utf8"));
+        const viejos = Object.keys(j).filter((k) => !(j[k]?.ts >= audioMs));
+        if (viejos.length) {
+          for (const k of viejos) delete j[k];
+          fs.writeFileSync(jobsFilePre, JSON.stringify(j, null, 1));
+          log(`  olvido ${viejos.length} job(s) de RunPod anteriores al audio: ${viejos.join(", ")}`);
+        }
+      }
+    } catch { /* jobs.json ilegible: que lo rehaga */ }
+    const sirve = (f) => {
+      const t = mtime(f); if (!t) return false; if (t >= audioMs) return true;
+      const b = path.basename(f, ".mp4");
+      log(`  ${path.basename(f)} es anterior al audio: lo rehago`);
+      fs.rmSync(f, { force: true });
+      return false;
+    };
     let costo = 0, jobs = 0;
-    if (!fs.existsSync(reelMp4) || Math.abs((await durSec(reelMp4)) - reelSec) > 1.5) {
+    if (!sirve(reelMp4) || Math.abs((await durSec(reelMp4)) - reelSec) > 1.5) {
       await withLease("runpod", slug, 1, async () => {
         const p1 = path.join(A, "parte1.mp4");
-        if (!fs.existsSync(p1)) { const r = await runpodJob({ slug, parte: "parte1", face, audio: reelWav, prompt, jobsFile, outMp4: p1, log }); costo += r.costo || 0; }
+        let p1Nueva = false;
+        if (!sirve(p1)) { const r = await runpodJob({ slug, parte: "parte1", face, audio: reelWav, prompt, jobsFile, outMp4: p1, log }); costo += r.costo || 0; p1Nueva = true; }
         jobs++;
         const d1 = await durSec(p1);
         if (d1 >= reelSec - MAX_PAD_SEC) { fs.copyFileSync(p1, reelMp4); return; }
@@ -136,9 +176,12 @@ export default {
         if (!(corte > 0)) throw new Error(`el job 1 volvió con ${d1.toFixed(1)} s y no hay borde de ventana antes: revisar`);
         log(`job 1 volvió corto (${d1.toFixed(1)} s de ${reelSec.toFixed(1)} s, cap RunPod) → 2º job SÓLO con la cola desde ${corte} s`);
         const cola = path.join(A, "cola.wav"), p1t = path.join(A, "parte1_trim.mp4"), p2 = path.join(A, "parte2.mp4");
+        // La cola se corta en el borde de ventana que cae dentro de lo que devolvió la parte 1. Si la
+        // parte 1 se rehizo, ese borde cambia y una parte 2 vieja empalmaría en el lugar equivocado.
+        if (p1Nueva && fs.existsSync(p2)) { log("  parte1 es nueva: la cola vieja ya no empalma, rehago parte2"); fs.rmSync(p2, { force: true }); }
         await run("ffmpeg", ["-v", "error", "-y", "-ss", String(corte), "-i", reelWav, "-c:a", "pcm_s16le", cola], { timeoutMs: 120_000 });
         await run("ffmpeg", ["-v", "error", "-y", "-i", p1, "-t", String(corte), "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-an", p1t], { timeoutMs: 1_800_000 });
-        if (!fs.existsSync(p2)) { const r = await runpodJob({ slug, parte: "parte2", face, audio: cola, prompt, jobsFile, outMp4: p2, log }); costo += r.costo || 0; }
+        if (!sirve(p2)) { const r = await runpodJob({ slug, parte: "parte2", face, audio: cola, prompt, jobsFile, outMp4: p2, log }); costo += r.costo || 0; }
         jobs++;
         await run("ffmpeg", ["-v", "error", "-y", "-i", p1t, "-i", p2, "-filter_complex", "[0:v][1:v]concat=n=2:v=1:a=0[v]", "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", reelMp4], { timeoutMs: 1_800_000 });
       }, { log });

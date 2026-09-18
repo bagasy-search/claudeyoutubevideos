@@ -1,0 +1,52 @@
+{
+  "slug": "fbaislar",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "voz": {
+    "id": "freebuilder",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "guion": "GUION_fbaislar.txt",
+  "titulo": "Cómo AISLAR tu Casa del Frío SIN OBRAS (Por Monedas)",
+  "ctas": [
+    {
+      "ancla": "Y aquí va algo que me costó plata aprender",
+      "head": "Cuánto rinde cada material",
+      "sub": "Escanea el código",
+      "qr": "qr/fbaislar.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Ese error me costó un invierno entero",
+      "head": "Hasta dónde se puede sellar",
+      "sub": "Escanea el código",
+      "qr": "qr/fbaislar.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/fbaislar.png"
+  },
+  "secciones": [
+    ["GANCHO", "Apaga la luz del pasillo y cierra la puerta de la calle"],
+    ["QUEES", "Empecemos por lo que de verdad enfría tu casa"],
+    ["MECANISMO", "Ahora sí, la parte que casi nadie explica"],
+    ["DOSIS", "Vamos al método, que es lo que viniste a buscar"],
+    ["USOS", "Y ahora el radiador, que es la otra mitad del problema"],
+    ["COSTO", "Ahora hablemos de lo que cuesta, y de lo que no vale la pena"],
+    ["ERROR", "Y vamos al error. El mío"],
+    ["CIERRE", "Antes de cerrar, una cosa más"]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv71789673092521-p20_aislar"
+  }
+}

@@ -17,9 +17,10 @@ export default {
   deps: ["45_stock"],
   inputs: ({ P }) => [P.plan, P.imgDir, P.brollDir, path.join(ROOT, "_v3", `${P.slug}_agnes_qc.json`)],
   async run({ slug, P, log }) {
-    const plan = JSON.parse(fs.readFileSync(P.plan, "utf8")).filter((p) => p.tipo === "imagen");
+    const plan = JSON.parse(fs.readFileSync(P.plan, "utf8")).filter((p) => p.tipo === "imagen" && !p.quieto);   // `quieto` = foto con Ken-Burns, no va a agnes
     const i2v = plan.map((p) => ({ nombre: p.name, person: p.motor === "gpt" || !!p.gente, pres: p.motor === "gpt", gente: !!p.gente,
       change: "The scene stays exactly as it is. No cut, no new place, no camera move.", motion: p.motion }));
+    if (!i2v.length) { log("0 planos animados (el director los marco todos quietos): agnes no corre"); return { planos: 0, clips: 0, aprobados: 0 }; }
     const sinMotion = i2v.filter((x) => !x.motion).map((x) => x.nombre);
     assertMeasured("i2vSinMovimiento", sinMotion.length, { max: 0, allowZero: true, log });
     fs.mkdirSync(P.listas, { recursive: true });
@@ -47,9 +48,15 @@ export default {
 
     const qcFile = path.join(ROOT, "_v3", `${slug}_agnes_qc.json`);
     const leer = () => (fs.existsSync(qcFile) ? JSON.parse(fs.readFileSync(qcFile, "utf8")).clips || {} : {});
+    // ⛔ Un plano cuyo mp4 en disco es METRAJE REAL no lo anima agnes aunque esté en la lista de i2v
+    //    (45_stock corre ANTES y deja el clip de Pexels en su lugar). Sin esta resta, el QC de agnes
+    //    nunca le va a poner sello — porque no lo revisa — y la fase queda pidiendo para siempre una
+    //    "revisión a ojo" de 33 clips que no son de agnes (medido en fbdeterg, 18-sep-2026).
+    let realStock = new Set();
+    try { realStock = new Set(Object.keys(JSON.parse(fs.readFileSync(path.join(ROOT, "_v3", `${slug}_stock.json`), "utf8")))); } catch {}
     const cuenta = () => {
       const c = leer();
-      const nombres = i2v.map((x) => x.nombre).filter((n) => fs.existsSync(path.join(P.brollDir, `${n}.mp4`)));
+      const nombres = i2v.map((x) => x.nombre).filter((n) => !realStock.has(n) && fs.existsSync(path.join(P.brollDir, `${n}.mp4`)));
       const st = { total: nombres.length, pendientes: 0, rechazados: 0, ok: 0 };
       for (const n of nombres) { const r = c[n]; if (!r || !r.revisado) st.pendientes++; else if (!r.ok || r.removed) st.rechazados++; else st.ok++; }
       return st;

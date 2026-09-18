@@ -1,0 +1,53 @@
+{
+  "slug": "fbrefrac",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "voz": {
+    "id": "freebuilder",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "guion": "GUION_fbrefrac.txt",
+  "titulo": "Nunca Más Compres CEMENTO REFRACTARIO: Hacelo en Casa con 3 Cosas",
+  "ctas": [
+    {
+      "ancla": "Y aquí va algo que aprendí pagando de más",
+      "head": "Cuánto rinde cada material",
+      "sub": "Escanea el código",
+      "qr": "qr/fbrefrac.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Y esa herramienta me faltó el primer día",
+      "head": "Con qué herramientas alcanza",
+      "sub": "Escanea el código",
+      "qr": "qr/fbrefrac.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/fbrefrac.png"
+  },
+  "secciones": [
+    ["GANCHO", "Estas dos placas estuvieron media hora contra la misma llama"],
+    ["QUEES", "Empecemos por lo que de verdad se rompe"],
+    ["MECANISMO", "Ahora sí, la parte que casi nadie explica"],
+    ["DOSIS", "Vamos a la fórmula, que es lo que viniste a buscar"],
+    ["PRUEBA", "Ahora sí, la prueba de fuego"],
+    ["USOS", "Y ahora la pregunta importante: dónde sirve y dónde no"],
+    ["COSTO", "Ahora la otra mitad. Lo que esto cuesta de verdad"],
+    ["ERROR", "Y vamos al error. El mío"],
+    ["CIERRE", "Antes de cerrar, una cosa más"]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv71789673092521-p19_refractario"
+  }
+}

@@ -1,0 +1,14 @@
+{
+ "fase": "00_preflight",
+ "ts": "2026-09-18T22:10:05.871Z",
+ "status": "done",
+ "inputsHash": "0ba7ed7ab38a3024",
+ "medido": {
+  "tools": 5,
+  "discoC_GB": 27.97,
+  "discoD_GB": 709.85,
+  "guionChars": 19142,
+  "runpodUsd": 7.286576013
+ },
+ "ms": 11368
+}

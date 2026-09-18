@@ -134,10 +134,46 @@ export default {
     }
 
     const clips = [];
+    // ⛔ Un plano marcado QUIETO (`q:1` → `quieto`) tiene que salir como FOTO con Ken-Burns, aunque su
+    //    clip siga en disco de una corrida anterior. Sin esto, `assetOf` prefería el mp4 y el montaje
+    //    se iba con los 146 planos animados igual: la regla de "como mucho la mitad se anima" pasaba
+    //    la compuerta en 30_direct y NO llegaba al video (medido en fbmarmol, 18-sep-2026).
+    //    ⛔⛔ PERO el guard NO puede ser "quieto → nunca mp4": desde que los planos de METRAJE REAL se
+    //    marcan `q:1` (para sacarlos del universo de agnes y que `animadoPct` mida lo que agnes anima),
+    //    ese mismo `if` tiraba los mp4 de Pexels y de Creative Commons. Medido en fbaislar: de 49 clips
+    //    de Pexels + 4 CC pedidos llegó 1 y 1 a pantalla, y el video quedó con 1,2 % de metraje real en
+    //    movimiento contra 81 % de foto IA. Y ni siquiera fallaba parejo: los dos que sobrevivieron se
+    //    colaron porque el guard mira `base` sin la `x` final.
+    //    El discriminador correcto es "¿este mp4 lo hizo AGNES?", no "¿el plano es quieto?". El registro
+    //    `_v3/<slug>_i2v.json` tiene exactamente los nombres que agnes generó (verificado: 40 de agnes y
+    //    49 de stock, intersección vacía). Sin registro se cae al comportamiento anterior, que es el
+    //    conservador.
+    //    ⛔⛔⛔ Y el registro de AGNES tampoco sirve de discriminador: medido en fbtelgopor (18-sep),
+    //    `_i2v.json` sólo guarda la ÚLTIMA tanda (108 de 221) y `_agnes_clips.json` guarda los 221,
+    //    incluidos los 28 que después pisó el metraje real. O sea: "está en el registro de agnes" da
+    //    verdadero para clips que en el disco son de Pexels. El discriminador que SÍ cierra es el del
+    //    otro lado: un plano quieto conserva su mp4 SÓLO si ese mp4 es METRAJE REAL, y el único que
+    //    sabe eso es el registro de stock, que se escribe con el archivo ya conformado en disco.
+    const quietos = new Set(plan.filter((p) => p.quieto).map((p) => p.name));
+    let real = new Set();
+    try {
+      const reg = path.join(ROOT, "_v3", `${slug}_stock.json`);
+      if (fs.existsSync(reg)) real = new Set(Object.keys(JSON.parse(fs.readFileSync(reg, "utf8"))));
+    } catch { real = new Set(); }
+    log(`  quietos ${quietos.size} · clips de METRAJE REAL registrados ${real.size}`);
+    // el plano quieto vuelve a ser FOTO salvo que su mp4 sea metraje real
+    const tapaElClip = (name) => quietos.has(name.replace(/x$/, "")) && !real.has(name);
     const assetOf = (name) => {
-      if (fs.existsSync(path.join(P.brollDir, `${name}.mp4`))) { const src = `broll/${slug}/${name}.mp4`; clips.push(src); return { tipo: "clip", src }; }
-      if (fs.existsSync(path.join(P.imgDir, `${name}.jpg`))) return { tipo: "foto", src: `img/${slug}/${name}.jpg` };
-      return null;
+      const base = name.replace(/x$/, "");
+      const hayClip = fs.existsSync(path.join(P.brollDir, `${name}.mp4`));
+      const clip = () => { const src = `broll/${slug}/${name}.mp4`; clips.push(src); return { tipo: "clip", src }; };
+      if (hayClip && !tapaElClip(name)) return clip();
+      // el plano de continuación ("pXXXx") normalmente no tiene jpg propio: cae al de su base, que es
+      // la MISMA foto con otro Ken-Burns. Antes caía al mp4 y por ahí se colaban los clips tapados.
+      for (const n of [name, base]) {
+        if (fs.existsSync(path.join(P.imgDir, `${n}.jpg`))) return { tipo: "foto", src: `img/${slug}/${n}.jpg` };
+      }
+      return hayClip ? clip() : null;
     };
     for (const p of plan) { assetOf(p.name); assetOf(`${p.name}x`); }
     const frames = new Map();
@@ -166,6 +202,51 @@ export default {
       assertMeasured("compsKindsDistintos", r.medido.compsKinds, { min: 1, log });
       assertMeasured("compDurMinSec", r.medido.compDurMinSec, { min: 2, unidad: " s", log });
     }
+
+    // METRAJE REAL, MEDIDO SOBRE LO QUE LLEGA A PANTALLA (18-sep-2026).
+    // ⛔ `45_stock` imprimía `metrajeRealPct: 29` y no mentía: medía los clips PEDIDOS a Pexels.
+    //    Pero el video de fbaislar salió con 1,2 % de metraje real en movimiento, porque el guard de
+    //    `quietos` descartaba esos mp4 al armar los cues. Verde perfecto, video sin metraje real.
+    //    Un porcentaje de algo que "se pidió" no dice nada del video: acá se cuentan los SEGUNDOS de
+    //    cue que de verdad salen de un mp4 que NO hizo agnes (stock de Pexels + Creative Commons +
+    //    cualquier clip colocado a mano), sobre el total del timeline.
+    // ⛔ LA PRIMERA VERSIÓN DE ESTA MEDICIÓN ESTABA MAL Y LA CAZÓ UN AGENTE, no una compuerta:
+    //    dividía `dur` por 30 asumiendo CUADROS sin verificarlo, y el denominador le daba 746,9 s — que
+    //    no es ni el video entero (808,97 s) ni el tiempo de b-roll (648,9 s). El numerador estaba bien
+    //    (174,5 s, verificado a mano contra los cues), el divisor era una mezcla. Una medición con la
+    //    unidad ADIVINADA es justo el verde que miente que estamos persiguiendo.
+    //    Ahora la unidad se DEDUCE y se imprime: se compara la suma contra el total conocido del video.
+    //    Si no se parece a ninguno de los dos, no se inventa un número: se tira.
+    // ⛔ Y LA SEGUNDA VERSIÓN TAMBIÉN ESTABA MAL, cazada por el mismo agente: sumaba TODOS los cues,
+    //    incluidas las capas de OVERLAY (los componentes se dibujan ENCIMA del b-roll), así que contaba
+    //    dos veces el mismo tiempo — 98 s de más en fboxidoropa, que caían enteros del lado de "foto" y
+    //    hundían el porcentaje de 27 % a 23 %. El universo correcto es el MISMO que se exporta a
+    //    `_v3/<slug>_cues.json`: la capa base con asset. Si dos mediciones del mismo video no dan igual,
+    //    una de las dos está mal — acá lo estaba la mía, dos veces seguidas.
+    const base = r.cues.filter((c) => c.capa === "base" && c.src);
+    const crudo = base.reduce((a2, c) => a2 + (c.dur ?? c.durationInFrames ?? 0), 0);
+    const videoSec = (r.total || 0) / 30;
+    const enCuadros = videoSec > 0 && Math.abs(crudo / 30 - videoSec) < Math.abs(crudo - videoSec);
+    const segDe = (c) => ((c.dur ?? c.durationInFrames ?? 0) / (enCuadros ? 30 : 1));
+    const sinDur = base.filter((c) => (c.dur ?? c.durationInFrames) === undefined).length;
+    if (sinDur) throw new Error(`metrajeReal: ${sinDur} de ${base.length} cues de la capa base sin duración — el porcentaje sería falso`);
+    const brollSec = base.reduce((a2, c) => a2 + segDe(c), 0);
+    // El metraje REAL se mide por el registro de stock (lo que se bajó de Pexels y se conformó en
+    // disco), no por descarte de agnes: el registro de agnes incluye nombres que después pisó el clip
+    // real, así que "no está en agnes" dejaba fuera metraje que SÍ es real.
+    const esReal = (c) => c.src && String(c.src).endsWith(".mp4") && real.has(path.basename(String(c.src), ".mp4"));
+    const esClip = (c) => c.src && String(c.src).endsWith(".mp4");
+    const realSec = base.filter(esReal).reduce((a2, c) => a2 + segDe(c), 0);
+    const agnesSec = base.filter((c) => esClip(c) && !esReal(c)).reduce((a2, c) => a2 + segDe(c), 0);
+    // El porcentaje que vale es sobre el B-ROLL, no sobre el video: el resto del video es el avatar,
+    // y meterlo en el divisor hace bajar el número por una razón que no tiene que ver con el metraje.
+    const realPct = brollSec ? Math.round((100 * realSec) / brollSec) : 0;
+    log(`  metraje real ${realSec.toFixed(1)} s · agnes ${agnesSec.toFixed(1)} s · foto ${(brollSec - realSec - agnesSec).toFixed(1)} s · b-roll ${brollSec.toFixed(1)} s de ${videoSec.toFixed(1)} s de video (dur en ${enCuadros ? "cuadros" : "segundos"})`);
+    // El piso es 10, no 25: la regla del canal (≥25 %) la juzga el creador con el número a la vista,
+    // porque un video puede quedar legítimamente en 20 % si Pexels no tenía material del tema. Lo que
+    // esta compuerta tiene que frenar es el DERRUMBE — el 1,2 % de fbaislar, que fue un bug y no una
+    // decisión. Una compuerta que no puede fallar nunca no es una compuerta.
+    assertMeasured("metrajeRealEnPantallaPct", realPct, { min: 10, unidad: " % del b-roll", log });
 
     if (!dry) await pool(finPend, 4, async ([name, clipSrc]) => {
       const jpg = path.join(P.imgDir, `${name}_fin.jpg`);

@@ -176,7 +176,7 @@ export function planVlog({ mom, plan, ventanasSec, wavSec, assetOf, framesOf, fi
   if (med.placaVistaSec > O.maxPlacaVistaS) prob.push(`${med.placaVistaSec} s con la PLACA quieta a la vista`);
   if (med.coberturaPct < O.minCoberturaPct) prob.push(`cobertura ${med.coberturaPct} % < ${O.minCoberturaPct} %`);
   if (med.destellos) prob.push(`${med.destellos} destellos (hueco 1-5 cuadros fuera de ventana)`);
-  if (med.repesConsecutivos) prob.push(`${med.repesConsecutivos} pares consecutivos con el MISMO asset`);
+  if (med.repesConsecutivos) prob.push(`${med.repesConsecutivos} pares consecutivos con el MISMO asset: ${(med.paresRepe || []).join(" | ")}`);
   const loops = base.filter((c) => c.tipo === "clip" && c.dur > capDe(c) + 1);
   if (loops.length) prob.push(`${loops.length} planos de clip más largos que su archivo: ${loops.slice(0, 5).map((c) => c.key).join(", ")}`);
   const uso = {};

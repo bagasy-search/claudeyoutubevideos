@@ -1,0 +1,16 @@
+{
+ "fase": "45_stock",
+ "ts": "2026-09-18T11:39:47.218Z",
+ "status": "done",
+ "inputsHash": "bec6601d7113cabc",
+ "medido": {
+  "stockPedidos": 86,
+  "stockNuevos": 0,
+  "stockEnDisco": 72,
+  "stockSinResultado": 0,
+  "stockRepetidos": 0,
+  "stockIdsUnicos": 72,
+  "metrajeRealPct": 22
+ },
+ "ms": 3475
+}

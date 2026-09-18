@@ -1,0 +1,13 @@
+{
+ "fase": "45_stock",
+ "ts": "2026-09-18T01:34:32.565Z",
+ "status": "done",
+ "inputsHash": "39591d8622cf1711",
+ "medido": {
+  "pedidos": 24,
+  "conseguidos": 24,
+  "sinMatch": 0,
+  "segundosReales": 133
+ },
+ "ms": 2292
+}

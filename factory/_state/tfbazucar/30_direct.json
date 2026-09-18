@@ -1,0 +1,9 @@
+{
+ "fase": "30_direct",
+ "ts": "2026-09-18T04:18:28.081Z",
+ "status": "done",
+ "inputsHash": "reparado-tras-borrado-del-repo",
+ "medido": {
+  "origen": "disco"
+ }
+}

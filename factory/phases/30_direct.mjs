@@ -29,11 +29,32 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
     "- Mencionar un atributo en positivo invoca su cliché: describí objetos por GEOMETRÍA y usá claves de `glosario.json` para lo recurrente.",
     "- Toda frase de más de 7 s lleva un SEGUNDO plano `<n>x` (si no, queda un plano clavado).",
     spec.modo === "avatar" ? "- `p000` es `{\"n\":\"p000\",\"t\":\"avatar\"}` (el video abre con el avatar hablando). Avatar visible ≈25-30 % de los momentos, repartido." : "- Modo narrador: sin planos avatar.",
-    "- Encuadres variados: close ≤20 %, wide ≥25 %. Racha máxima del mismo lugar ≤6.", "");
+    "- Encuadres variados: close ≤20 %, wide ≥25 %. Racha máxima del mismo lugar ≤6.",
+    "- ⛔ RITMO HUMANO, NO METRÓNOMO: la duración de cada plano la decide LO QUE SE DICE, no un reloj.",
+    "  Momento rápido o que enumera → plano corto. Momento que explica o que merece mirarse → plano",
+    "  sostenido. Si todos los planos duran lo mismo se ve robótico, aunque la mediana dé linda.",
+    "- ⛔ COMO MUCHO LA MITAD DE LOS PLANOS DE IMAGEN SE ANIMAN. El resto lleva `\"q\": 1` y se queda",
+    "  como FOTO QUIETA (la fábrica le pone Ken-Burns). Un plano con `q` NO lleva `mo`.",
+    "  Animá SÓLO donde el movimiento aporta de verdad (algo que se vierte, cae, se frota, humea, arde).",
+    "  Objeto quieto sobre una mesa → `q`. La mezcla que busca el creador: fotos quietas + algunas",
+    "  animadas + metraje real (`st`). La compuerta `animadoPct` falla por encima de 50.",
+    "- ⚠ MEDIDO en DOS videos (18-sep-2026, fbaislar + fboxidoropa, 84 clips de la 1ª pasada de agnes):",
+    "  animar un plano CON PRESENTADOR (`c:1`) se rechaza el DOBLE. Juntando los dos: 22 de 40 con",
+    "  presentador (55 %) contra 12 de 44 sin presentador (27 %). Por video: 56 % vs 40 % en fbaislar,",
+    "  50 % vs 21 % en fboxidoropa — la dirección coincide, aunque la muestra `c:1` de fboxidoropa es",
+    "  de sólo 8 clips y no alcanza sola.",
+    "  ⛔ El MODO de falla NO es uno solo, así que no lo prometas: en fbaislar agnes derivó a un RETRATO",
+    "  DE CARA en primer plano (la palma en la puerta, el tablero y la junta terminaron en la cara",
+    "  sonriendo); en fboxidoropa no pasó ni una vez y la deriva fue hacia AFUERA (corta al presentador",
+    "  fuera de cuadro, se va a la mano) más reemplazo de objeto y fondo. Lo que sí comparten: el",
+    "  presentador es una figura articulada MÁS que agnes tiene que sostener, y sube el riesgo.",
+    "  → Por defecto, los planos `c:1` van con `q:1` (foto quieta). Animá con presentador sólo si el",
+    "  movimiento es imprescindible, y contá con rehacerlo.", "");
   L.push("## Formato", "```json", JSON.stringify([
     { n: "p000", t: "avatar", m: "presentador a cámara con el objeto en la mano" },
     { n: "p001", c: 1, e: "medium", l: Object.keys(style.lugares || {})[0] || "lugar", m: "qué muestra, en castellano", s: `${style.presentadorToken} crouching next to ... (escena en inglés, viva)`, mo: "his hand turns the object slowly, nothing else moves" },
     { n: "p001x", c: 0, e: "close", l: Object.keys(style.lugares || {})[0] || "lugar", m: "detalle", s: "close view of ...", mo: "a single drop slides down ..." },
+    { n: "p002", c: 0, e: "wide", l: Object.keys(style.lugares || {})[0] || "lugar", m: "plano QUIETO (foto)", s: "wide view of ...", q: 1 },
   ], null, 1), "```", "");
   if (style.guia?.temas?.length) {
     L.push("## La guía del canal (lo que el CTA puede prometer)",
@@ -71,7 +92,21 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
       "- ⛔ Tampoco en los planos específicos del truco del video: eso no existe en stock.",
       "- Consulta de 3 a 7 palabras, concreta, nombrando el MATERIAL: `pouring wet concrete into a mould`,",
       "  `hand sanding a concrete surface`, `close up of cement powder`. Nunca `construction` ni `DIY` a secas.",
-      "- Si dudás, NO marques: el plano se queda con su imagen IA, que es lo seguro.", "");
+      "- Si dudás, NO marques: el plano se queda con su imagen IA, que es lo seguro.",
+      "",
+      "⛔⛔ DOS TRAMPAS MEDIDAS EL 18-sep-2026 QUE NINGUNA COMPUERTA PUEDE CAZAR — sólo mirar los clips:",
+      "  1) PALABRAS AMBIGUAS. `\"caulking gun and cartridge on a workbench\"` devolvió **una pistola",
+      "     semiautomática desarmada sobre un banco**: el banco de stock leyó `gun` literal. Estuvo a punto",
+      "     de entrar a un video del canal. ⛔ Nunca `gun` en un `st`: escribí `sealant cartridge and",
+      "     applicator`. Lo mismo con cualquier palabra que tenga un sentido violento, sexual o médico",
+      "     además del de oficio (`shoot`, `strip`, `nail`, `screw`, `blow`): nombrá el objeto, no la jerga.",
+      "  2) GENTE AJENA. Pedir un plano sin presentador (`c:0`) NO garantiza que el clip no traiga a nadie:",
+      "     en fbaislar se colaron 15 clips con desconocidos — uno desvistiéndose en una ducha, un hombre sin",
+      "     remera, una mujer leyendo en un sillón. ⛔ Todo clip de stock se AUDITA a ojo antes de montar,",
+      "     con AL MENOS DOS CUADROS por clip y a tamaño legible (400 px, no miniaturas de 240): los",
+      "     desconocidos de dos de esos clips recién aparecían al cuarto segundo. Criterio: fuera toda",
+      "     persona reconocible (cara visible, cuerpo entero, alguien protagonizando el plano); quedan",
+      "     torso, manos y brazos trabajando SIN cara, que leen igual que un clip de agnes.", "");
   }
   L.push(`## Lugares del estilo (\`l\`)`, ...Object.keys(style.lugares || {}).map((k) => `- \`${k}\``), "", "Si hace falta un lugar nuevo, agregalo en `factory/styles/" + spec.canal + ".json` (≥5 objetos concretos del fondo).", "");
   L.push("## Momentos", "| n | sec | dur s | dice |", "|---|---|---|---|");
@@ -109,6 +144,9 @@ export default {
       assertMeasured("avatarPctMomentos", r.medido.avatarPctMomentos, { min: 10, max: 45, log });
     }
     assertMeasured("rachaMaxLugar", r.medido.rachaMaxLugar, { max: Number(style.rachaMaxLugar || 8), log });
+    // Regla del creador (18-sep-2026): animar TODAS las fotos se ve robotico (y agnes redibuja ~14 %).
+    // Mide sobre los planos de IMAGEN; `q:1` deja el plano como foto quieta con Ken-Burns.
+    assertMeasured("animadoPct", r.medido.animadoPct, { max: 50, allowZero: true, log });
     fs.writeFileSync(P.plan, JSON.stringify(r.plan, null, 1));
     return { archivosDireccion: files.length, ...r.medido };
   },

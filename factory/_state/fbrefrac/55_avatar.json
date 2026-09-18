@@ -1,0 +1,16 @@
+{
+ "fase": "55_avatar",
+ "ts": "2026-09-18T21:24:29.501Z",
+ "status": "done",
+ "inputsHash": "c9f15bfead24c516",
+ "medido": {
+  "ventanas": 32,
+  "visiblesSec": 219.71,
+  "visiblesPct": 22.8,
+  "jobs": 1,
+  "costoUsd": 0.25,
+  "syncCorr": 1,
+  "syncLagMs": 0
+ },
+ "ms": 2297915
+}

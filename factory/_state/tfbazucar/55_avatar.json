@@ -1,0 +1,16 @@
+{
+ "fase": "55_avatar",
+ "ts": "2026-09-18T04:23:05.400Z",
+ "status": "done",
+ "inputsHash": "D:\\rtmp\\factory\\tfbazucar\\plan\\mom.json,D:\\rtmp\\factory\\tfbazucar\\plan\\plan.json,D:\\rtmp\\factory\\tfbazucar\\audio\\tfbazucar.wav,[object Object],[object Object]",
+ "medido": {
+  "ventanas": 58,
+  "visiblesSec": 355.02,
+  "visiblesPct": 24,
+  "jobs": 0,
+  "costoUsd": 0.25,
+  "syncCorr": 1,
+  "syncLagMs": 0
+ },
+ "ms": 132299
+}

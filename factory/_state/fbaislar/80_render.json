@@ -1,0 +1,16 @@
+{
+ "fase": "80_render",
+ "ts": "2026-09-18T22:23:53.808Z",
+ "status": "done",
+ "inputsHash": "437bf981a7e4dba1",
+ "medido": {
+  "runId": "35400332942",
+  "commit": "858b5645363a3ca2b10a4e60104f5d84677f9bc1",
+  "archivos": 32,
+  "chunks": 30,
+  "jobsOk": 32,
+  "durSec": 981.91,
+  "totalFrames": 29415
+ },
+ "ms": 1443851
+}

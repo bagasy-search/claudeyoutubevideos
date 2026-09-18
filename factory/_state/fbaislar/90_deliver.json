@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T22:43:08.147Z",
+ "status": "done",
+ "inputsHash": "bb8853f604a87382",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fbaislar/fbaislar.mp4?v=1",
+  "version": 1,
+  "bytes": 404165348,
+  "durSec": 980.5,
+  "saltosPts": 0,
+  "tramosNegros": 0,
+  "hoja": "D:\\rtmp\\factory\\fbaislar\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 1151837
+}

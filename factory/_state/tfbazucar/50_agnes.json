@@ -1,0 +1,9 @@
+{
+ "fase": "50_agnes",
+ "ts": "2026-09-18T04:18:28.086Z",
+ "status": "done",
+ "inputsHash": "reparado-tras-borrado-del-repo",
+ "medido": {
+  "origen": "disco"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "fase": "20_asr",
+ "ts": "2026-09-17T20:29:59.174Z",
+ "status": "done",
+ "inputsHash": "1b7ff59725e4a07d",
+ "medido": {
+  "motor": "modal",
+  "palabras": 3619,
+  "inflacionPct": -1.3,
+  "momentos": 264,
+  "palabrasGuion": 3668,
+  "palabrasAsr": 3619,
+  "similitud": 0.9853,
+  "anclajeExactoPct": 99.4,
+  "duracionSec": 1238.08,
+  "planoMedianaSec": 4.56,
+  "planoMaxSec": 9.62,
+  "desorden": 0,
+  "tramosRepartidos": 1,
+  "tramos": [
+   "p185..p187"
+  ]
+ },
+ "ms": 102645
+}

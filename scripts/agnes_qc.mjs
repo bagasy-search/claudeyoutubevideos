@@ -56,12 +56,20 @@ for (const f of fs.readdirSync("_v3").filter((f) => f.startsWith(`${SLUG}_i2v`) 
     if (Array.isArray(arr)) for (const it of arr) if (it && it.nombre) info[it.nombre] = { ...info[it.nombre], ...it, person: !!(it.person || it.pres || it.gente) };
   } catch { /* no es lista de i2v */ }
 }
-const names = Object.keys(info).filter((n) => fs.existsSync(clipOf(n))).sort();
+// ⛔ El registro de agnes guarda TAMBIÉN los nombres que después pisó el METRAJE REAL de Pexels
+//    (medido en fbtelgopor/fbdeterg, 18-sep-2026: los 28/33 planos con `st` estaban en los dos lados).
+//    Si el QC los revisa como si fueran de agnes, un "rechazado" los manda a regenerar y el clip real
+//    desaparece. El registro de stock manda: lo que es metraje real NO lo revisa el QC de agnes.
+const REAL = (() => {
+  try { return new Set(Object.keys(JSON.parse(fs.readFileSync(`_v3/${SLUG}_stock.json`, "utf8")))); }
+  catch { return new Set(); }
+})();
+const names = Object.keys(info).filter((n) => !REAL.has(n) && fs.existsSync(clipOf(n))).sort();
 const doc = fs.existsSync(OUTJ) ? JSON.parse(fs.readFileSync(OUTJ, "utf8")) : {};
 doc.clips ||= {};
 const guardar = () => { doc.version = 2; doc.slug = SLUG; doc.at = new Date().toISOString(); fs.writeFileSync(OUTJ, JSON.stringify(doc, null, 1)); };
 const vigente = (n) => { const c = doc.clips[n], st = stamp(clipOf(n)); return c && c.size === st.size && c.mtime === st.mtime; };
-console.log(`agnes_qc · ${SLUG} · ${Object.keys(info).length} clips registrados · ${names.length} en disco`);
+console.log(`agnes_qc · ${SLUG} · ${Object.keys(info).length} clips registrados · ${REAL.size} son metraje REAL (no se revisan) · ${names.length} en disco a revisar`);
 
 // ---------- 2. registrar la revisión a ojo de las últimas hojas ----------
 if (REV !== null) {

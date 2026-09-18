@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T11:47:21.254Z",
+ "status": "done",
+ "inputsHash": "69b482e92c063225",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/tfbsilicona/tfbsilicona.mp4?v=1",
+  "version": 1,
+  "bytes": 820480271,
+  "durSec": 1468.03,
+  "saltosPts": 0,
+  "tramosNegros": 1,
+  "hoja": "D:\\rtmp\\factory\\tfbsilicona\\audit\\hoja.jpg",
+  "bagasy": "entregado (--no-youtube)"
+ },
+ "ms": 855226
+}

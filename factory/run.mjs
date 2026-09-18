@@ -21,6 +21,7 @@ import { loadSpec, validateSpec } from "./lib/spec.mjs";
 import { logger, NeedsError, BlockedError } from "./lib/phase.mjs";
 import { usage, CAPACIDAD } from "./lib/lease.mjs";
 import { run as exec } from "./lib/exec.mjs";
+import { avisarProgreso } from "./lib/bagasy.mjs";
 
 process.chdir(ROOT);   // los scripts compartidos (agnes_qc, farm) usan rutas relativas a video2
 
@@ -87,10 +88,12 @@ async function runSlug(slug, { from, only } = {}) {
       ctx.log("▶ arranca");
       state.set(ph.id, { ...(state.get(ph.id) || {}), status: "running", inputsHash: h });
       const t = Date.now();
-      running.set(ph.id, ph.run(ctx).then((medido) => {
+      running.set(ph.id, ph.run(ctx).then(async (medido) => {
         state.set(ph.id, { status: "done", inputsHash: h, medido, ms: Date.now() - t });
         status.set(ph.id, "done");
         ctx.log(`✓ hecha en ${Math.round((Date.now() - t) / 1000)} s`);
+        // el panel de Bagasy muestra "generando" con el avance real, no un hueco durante 4 h
+        await avisarProgreso({ slug, spec, fase: ph.id, medido, log: ctx.log });
       }).catch((e) => {
         const st = e instanceof NeedsError ? "needs" : e instanceof BlockedError ? "blocked" : "failed";
         state.set(ph.id, { status: st, inputsHash: h, error: e.message, instrucciones: e.instrucciones, detalle: e.detail || e.detalle, ms: Date.now() - t, runId: state.get(ph.id)?.runId });

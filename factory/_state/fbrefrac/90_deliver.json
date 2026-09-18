@@ -1,0 +1,17 @@
+{
+ "fase": "90_deliver",
+ "ts": "2026-09-18T22:31:51.378Z",
+ "status": "done",
+ "inputsHash": "81cc257e98c1f49e",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fbrefrac/fbrefrac.mp4?v=1",
+  "version": 1,
+  "bytes": 460007738,
+  "durSec": 962.53,
+  "saltosPts": 0,
+  "tramosNegros": 1,
+  "hoja": "D:\\rtmp\\factory\\fbrefrac\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 2260641
+}

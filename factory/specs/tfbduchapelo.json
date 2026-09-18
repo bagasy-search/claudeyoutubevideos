@@ -1,0 +1,71 @@
+{
+  "slug": "tfbduchapelo",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "GUION_tfbduchapelo.txt",
+  "voz": {
+    "id": "freebuilder"
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "titulo": "Por Qué se te Tapa Siempre el Desagüe de la Ducha — No Es el Pelo",
+  "ctas": [
+    {
+      "ancla": "Espera un segundo antes de seguir",
+      "head": "El corte del caño, capa por capa",
+      "sub": "Escanea el código",
+      "qr": "qr/tfbduchapelo.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Déjame darte una mano con esto",
+      "head": "Cuánto rinde cada cosa y qué tener en casa",
+      "sub": "Escanea el código",
+      "qr": "qr/tfbduchapelo.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/tfbduchapelo.png"
+  },
+  "secciones": [
+    [
+      "GANCHO",
+      "Esto que ves aquí es un pedazo de caño"
+    ],
+    [
+      "MITO",
+      "Empecemos por el pelo"
+    ],
+    [
+      "QUIMICA",
+      "Y ahora sí, qué es esa costra"
+    ],
+    [
+      "FRACASOS",
+      "Porque con esto claro"
+    ],
+    [
+      "METODO",
+      "Vamos al método"
+    ],
+    [
+      "ERROR",
+      "Y ahora el error"
+    ],
+    [
+      "CIERRE",
+      "Y ahora sí, redondeando todo"
+    ]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv61789671785526-p14_ducha"
+  }
+}

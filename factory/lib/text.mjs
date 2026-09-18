@@ -95,7 +95,14 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     let esc = x.s.replaceAll(TOKEN, style.presentador + ",");
     for (const [k, v] of Object.entries(glosario)) esc = esc.replaceAll(k, v);
     const cuerpo = `${ENC(x)}${esc}, ${style.lugares[x.l]}`;
-    return x.v ? `${cuerpo}, ${style.vintage}` : `candid photo taken on a modern smartphone, ${cuerpo}, ${style.formula}`;
+    // ⛔⛔ Si el plano NO lleva presentador (`c:0`) y no pidió gente (`g:1`), hay que PROHIBIR personas
+    //    EXPLÍCITAMENTE. Sin esto el motor inventa gente que NO es el presentador y queda en el video:
+    //    medido en fbmarmol (17-sep-2026) — un señor mayor atendiendo el mostrador de la ferretería, un
+    //    hombre de remera oscura con una caja, alguien de buzo negro agachado junto al balde: 11 planos.
+    //    La marca `gente` existía en el plan desde siempre pero NO llegaba al prompt.
+    //    Las MANOS sí se permiten: media dirección son manos trabajando, y "no hands" rompería esos planos.
+    const sinGente = !x.c && !x.g ? ", nobody in the picture, no people, no person, no face, no bystander, no figure in the background" : "";
+    return x.v ? `${cuerpo}${sinGente}, ${style.vintage}` : `candid photo taken on a modern smartphone, ${cuerpo}${sinGente}, ${style.formula}`;
   };
   const plan = [];
   const vistos = new Set();
@@ -109,12 +116,53 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     // 60_build y 45_stock los leen de ahí. ⛔ Si `compose` los descarta, el plan queda sin componentes
     // y el montaje premium emite un video mudo de comps sin decir nada (medido: plan.json con 0 `k`
     // mientras los dir_*.json tenían 57).
+    // COMPUERTA DE LA FORMA DEL COMPONENTE (18-sep-2026). DOS de tres directores escribieron las props
+    // al nivel de `k` en vez de dentro de `props` (fboxidoropa: 11 componentes emitidos 0; fbaislar: 9).
+    // El montaje no falla, el render sale VERDE y el video llega sin UN SOLO componente en pantalla:
+    // sale a la luz recien al contar `componentesEmitidos` despues de armar los cues, o peor, mirandolo.
+    // No es torpeza del director: el formato invita al error. Se caza aca, en la direccion, que es
+    // donde cuesta cero arreglarlo.
+    if (x.k) {
+      const kind = typeof x.k.kind === "string" ? x.k.kind : null;
+      if (!kind) errores.push(`${x.n}: el componente no declara "kind"`);
+      const sueltas = Object.keys(x.k).filter((kk) => !["kind", "props", "durS"].includes(kk));
+      if (sueltas.length) {
+        errores.push(`${x.n}: el componente "${kind || "?"}" tiene props SUELTAS al nivel de \`k\` (${sueltas.slice(0, 6).join(", ")}${sueltas.length > 6 ? ", …" : ""}) — van DENTRO de \`props\`: {"kind":"${kind || "X"}","props":{…}}. Así se emiten CERO componentes y el render igual da verde.`);
+      } else if (!x.k.props || typeof x.k.props !== "object" || Array.isArray(x.k.props)) {
+        errores.push(`${x.n}: el componente "${kind || "?"}" no trae \`props\` (si de verdad no lleva ninguna, poné "props": {})`);
+      }
+    }
     const extra = { ...(x.k ? { k: x.k } : {}), ...(x.st ? { st: String(x.st) } : {}) };
     if (x.t === "avatar") { plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "avatar", muestra: x.m || "presentador a cámara", ...extra }); continue; }
     if (!["wide", "medium", "close"].includes(x.e)) { errores.push(`${x.n}: encuadre inválido "${x.e}"`); continue; }
-    if (!x.s || !x.mo) { errores.push(`${x.n}: falta escena (s) o movimiento (mo)`); continue; }
-    if (/\bbreath|breathing|respir/i.test(x.mo)) errores.push(`${x.n}: el movimiento pide "respirar" (prohibido: agnes lo deforma)`);
-    plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "imagen", muestra: x.m, encuadre: x.e, motor: x.c ? "gpt" : "gptsin", lugar: x.l, prompt: prompt(x), motion: x.mo, persona: !!x.c, gente: !!x.g, ...extra });
+    // REGLA DEL CREADOR (18-sep-2026): `"q": 1` = plano QUIETO. Se queda como FOTO (con su
+    //    Ken-Burns) y NO se manda a agnes. Animar TODAS las fotos se ve robotico, y encima agnes
+    //    redibuja ~14 %. Como mucho la MITAD de los planos de imagen se animan (compuerta
+    //    `animadoPct` en 30_direct). Sin `q` el plano se anima: el default no cambia.
+    if (!x.s || (!x.q && !x.mo)) { errores.push(`${x.n}: falta escena (s) o movimiento (mo) - si el plano va QUIETO pone "q":1`); continue; }
+    if (x.q && x.mo) { errores.push(`${x.n}: tiene "q":1 (quieto) Y movimiento (mo) - elegi uno`); continue; }
+    if (x.mo && /\bbreath|breathing|respir/i.test(x.mo)) errores.push(`${x.n}: el movimiento pide "respirar" (prohibido: agnes lo deforma)`);
+    // ⛔⛔ "face" en un plano de OBJETO hace que el motor esculpa una CARA HUMANA. Medido en fbmarmol:
+    //    el director escribió "a casting face" / "the rest of the face" queriendo decir la SUPERFICIE de
+    //    la pieza, y salieron 6 clips con rostros esculpidos en un video de cemento (45 planos en riesgo
+    //    acá, 26 en fbtelgopor y 20 en fbdeterg). Con presentador (`c:1`) "face" es legítimo: es su cara.
+    if (!x.c && /(?<![a-z])faces?(?![a-z])/i.test(x.s)) {
+      errores.push(`${x.n}: la escena dice "face" en un plano SIN presentador — el motor esculpe una CARA HUMANA. Si querés la superficie de la pieza, escribí "surface"`);
+    }
+    // ⛔⛔ REGLA DEL CREADOR (17-sep-2026): el movimiento tiene que ser lo MÁS SIMPLE POSIBLE, un
+    //    movimiento de CÁMARA. "agnes es tonto y no piensa": si le pedís que un OBJETO haga algo, lo
+    //    inventa y deforma la escena. Medido: 248 de 263 planos pedían acción de objeto, y de ahí
+    //    salieron las losas que se vuelven rocas y la fuente estirada en columna. Pasarlos todos a
+    //    cámara bajó el rechazo de clips de 28 a 0.
+    //    Se permite sin cámara lo que agnes SÍ maneja y el QC no considera defecto: humo, vapor, agua,
+    //    fuego y luz. Se activa por estilo (`"movimiento": "camara"`), NO global: otros canales tienen
+    //    su propia regla medida (una sola cosa se mueve, la que una mano ya está tocando).
+    if (style.movimiento === "camara" && x.mo
+        && !/\bcamera\b/i.test(x.mo)
+        && !/\b(steam|smoke|water|flame|fire|light|shadow|sunlight|daylight|ripple|vapour|vapor)\b/i.test(x.mo)) {
+      errores.push(`${x.n}: el movimiento pide que un objeto ACTÚE ("${x.mo.slice(0, 44)}…"). agnes no lo entiende y deforma la escena: poné un movimiento de CÁMARA (ej. "the camera pushes in very slowly, nothing else moves")`);
+    }
+    plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "imagen", muestra: x.m, encuadre: x.e, motor: x.c ? "gpt" : "gptsin", lugar: x.l, prompt: prompt(x), motion: x.mo, persona: !!x.c, gente: !!x.g, ...(x.q ? { quieto: true } : {}), ...extra });
   }
   plan.sort((a, b) => a.i - b.i || a.name.localeCompare(b.name));
   const faltan = mom.filter((m) => !vistos.has(m.name)).map((m) => m.name);
@@ -128,6 +176,7 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     medido: { momentos: mom.length, cubiertos: mom.length - faltan.length, planosImagen: img.length, planosAvatar: plan.length - img.length,
       avatarPctMomentos: Math.round((100 * (plan.length - img.length)) / mom.length), presentadorPct: pct(img.filter((p) => p.motor === "gpt").length),
       closePct: pct(img.filter((p) => p.encuadre === "close").length), mediumPct: pct(img.filter((p) => p.encuadre === "medium").length),
-      widePct: pct(img.filter((p) => p.encuadre === "wide").length), rachaMaxLugar: rachaMax },
+      widePct: pct(img.filter((p) => p.encuadre === "wide").length), rachaMaxLugar: rachaMax,
+      animadoPct: pct(img.filter((p) => !p.quieto).length), quietos: img.filter((p) => p.quieto).length },
   };
 }

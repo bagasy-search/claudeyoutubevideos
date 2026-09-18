@@ -1,0 +1,14 @@
+{
+ "fase": "10_voice",
+ "ts": "2026-09-18T16:05:02.982Z",
+ "status": "done",
+ "inputsHash": "19bb3bc316a274d0",
+ "medido": {
+  "motor": "elevenlabs-v3",
+  "fuente": "s4_completo (3).wav",
+  "fishSec": 980.48,
+  "wavSec": 980.48,
+  "lufs": -14.04
+ },
+ "ms": 77548
+}

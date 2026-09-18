@@ -160,16 +160,30 @@ export default {
     // usa. Medido el 17-sep: cmealter y cmeamazon tenian su mp4 completo y la fase murio igual
     // reintentando la descarga durante 3.592 s.
     const esperado = total / 30;
+    // ⛔⛔ (18-sep-2026) Este guard comparaba SÓLO la duración — y un re-render del MISMO guion dura
+    //    exactamente lo mismo. Resultado: se arreglaron 4 tarjetas negras, se re-rendeó (runId nuevo,
+    //    32/32 jobs) y la entrega volvió a validar el MP4 VIEJO, sin los arreglos. Es la misma familia
+    //    que el PNG sellado por prompt: una caché indexada por algo que no captura el cambio.
+    //    Ahora el mp4 en disco se sella con el RUN que lo produjo; si el run es otro, se baja de nuevo.
+    const sello = `${P.rawMp4}.runid`;
+    const selloPrev = fs.existsSync(sello) ? fs.readFileSync(sello, "utf8").trim() : "";
     let listo = false;
     if (fs.existsSync(P.rawMp4)) {
       try {
         const dPrev = await durSec(P.rawMp4);
-        listo = Math.abs(dPrev - esperado) / esperado * 100 <= 0.6;
-        log(listo ? `mp4 ya en disco (${dPrev.toFixed(1)} s): no lo vuelvo a bajar`
-                  : `mp4 en disco pero dura ${dPrev.toFixed(1)} s y se esperaban ${esperado.toFixed(1)}: lo bajo de nuevo`);
+        const duraBien = Math.abs(dPrev - esperado) / esperado * 100 <= 0.6;
+        const mismoRun = selloPrev === String(runId);
+        listo = duraBien && mismoRun;
+        log(listo ? `mp4 ya en disco del run ${runId} (${dPrev.toFixed(1)} s): no lo vuelvo a bajar`
+          : !duraBien ? `mp4 en disco dura ${dPrev.toFixed(1)} s y se esperaban ${esperado.toFixed(1)}: lo bajo de nuevo`
+            : `mp4 en disco es del run ${selloPrev || "desconocido"} y este es el ${runId}: lo bajo de nuevo`);
       } catch { /* ilegible: se baja */ }
     }
-    if (!listo) await gh(["run", "download", String(runId), "-R", repo, "-n", `final-${slug}`, "-D", dir], { log, timeoutMs: 60 * 60_000 });
+    if (!listo) {
+      if (fs.existsSync(P.rawMp4)) fs.rmSync(P.rawMp4);   // `gh run download` no pisa un archivo existente
+      await gh(["run", "download", String(runId), "-R", repo, "-n", `final-${slug}`, "-D", dir], { log, timeoutMs: 60 * 60_000 });
+      fs.writeFileSync(sello, String(runId));
+    }
     const d = await durSec(P.rawMp4);
     assertMeasured("renderDesvioPct", +(Math.abs(d - esperado) / esperado * 100).toFixed(3), { max: 0.6, allowZero: true, log });   // el farm estira ~0,2 %
     return { runId, commit: c.commit, archivos: tree.archivos.length, chunks, jobsOk: res.jobsOk, durSec: +d.toFixed(2), totalFrames: total };

@@ -1,0 +1,28 @@
+{
+  "slug": "tfbsilicona",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "guion": "GUION_tfbsilicona.txt",
+  "voz": { "id": "freebuilder", "blockChars": 1200 },
+  "cta": { "ancla": "Si esto te sirvió", "head": "Suscríbete al canal", "sub": "La colección, en el enlace de abajo", "qr": "qr/tfbsilicona.png" },
+  "avatar": { "face": "public/ref/freebuilder_full.png", "ref": "public/ref/freebuilder_face128.png" },
+  "titulo": "Mezclá SILICONA con DETERGENTE y Hacé Moldes Gratis",
+  "ctas": [
+    { "ancla": "Espera, que esto te ahorra dinero", "head": "Cuánto rinde cada material", "sub": "Escanea el código", "qr": "qr/tfbsilicona.png", "durS": 9 },
+    { "ancla": "Y ya que estamos hablando de errores", "head": "Las herramientas que sí hacen falta", "sub": "Escanea el código", "qr": "qr/tfbsilicona.png", "durS": 9 }
+  ],
+  "secciones": [
+    ["GANCHO", "Este molde lo hice en una tarde"],
+    ["MITO", "Empecemos por lo que dice internet"],
+    ["QUIMICA", "Así que vamos a lo que pasa de verdad"],
+    ["TUBO", "Y aquí viene la primera trampa"],
+    ["RECETA", "Vamos a la receta, entonces"],
+    ["MOLDE", "Ahora sí, el molde"],
+    ["ERROR", "Son tres errores, en realidad"],
+    ["EXTRAS", "Y ahora te traigo el molde que te prometí"],
+    ["LIMITES", "Y ahora la parte que nadie te cuenta"],
+    ["CIERRE", "Ahora déjame cerrar el círculo"]
+  ],
+  "bagasy": { "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ", "cardId": "fbv61789671785526-p17_silicona" }
+}

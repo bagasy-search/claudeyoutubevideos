@@ -1,0 +1,16 @@
+{
+ "fase": "80_render",
+ "ts": "2026-09-18T09:52:08.957Z",
+ "status": "done",
+ "inputsHash": "C:\\Users\\bauti\\Downloads\\video2\\src\\index_tfbazucar.tsx,C:\\Users\\bauti\\Downloads\\video2\\src\\tfbazucar,C:\\Users\\bauti\\Downloads\\video2\\_tfbazucar_assets.txt,2026-09-18T09:26:59.046Z",
+ "medido": {
+  "runId": "35329997181",
+  "commit": "bd057f89a47e2da9d93c29d6b8e1298338a9505a",
+  "archivos": 32,
+  "chunks": 30,
+  "jobsOk": 32,
+  "durSec": 1482.58,
+  "totalFrames": 44432
+ },
+ "ms": 1505397
+}

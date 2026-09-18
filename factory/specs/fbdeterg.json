@@ -1,0 +1,72 @@
+{
+  "slug": "fbdeterg",
+  "canal": "freebuilder",
+  "modo": "avatar",
+  "idioma": "es",
+  "voz": {
+    "id": "freebuilder",
+    "blockChars": 1200
+  },
+  "avatar": {
+    "face": "public/ref/freebuilder_full.png",
+    "ref": "public/ref/freebuilder_face128.png"
+  },
+  "guion": "GUION_fbdeterg.txt",
+  "titulo": "Mezclá CEMENTO con DETERGENTE y Mirá lo Que Pasa",
+  "ctas": [
+    {
+      "ancla": "Espera un momento antes de seguir",
+      "head": "Cuánto rinde cada material",
+      "sub": "Escanea el código",
+      "qr": "qr/fbdeterg.png",
+      "durS": 9
+    },
+    {
+      "ancla": "Déjame darte una mano con esto",
+      "head": "Las herramientas que sí hacen falta",
+      "sub": "Escanea el código",
+      "qr": "qr/fbdeterg.png",
+      "durS": 9
+    }
+  ],
+  "cta": {
+    "ancla": "Si esto te sirvió",
+    "head": "Suscríbete al canal",
+    "sub": "La colección, en el enlace de abajo",
+    "qr": "qr/fbdeterg.png"
+  },
+  "secciones": [
+    [
+      "GANCHO",
+      "Esta pieza de cemento salió lisa"
+    ],
+    [
+      "MITO",
+      "Empecemos por lo que dice internet"
+    ],
+    [
+      "FISICA",
+      "Así que vamos a la física"
+    ],
+    [
+      "DOSIS",
+      "Volvamos a la cubeta"
+    ],
+    [
+      "METODO",
+      "Ahora, el método"
+    ],
+    [
+      "ERROR",
+      "Son dos errores, en realidad"
+    ],
+    [
+      "CIERRE",
+      "Y ahora sí, redondeando todo"
+    ]
+  ],
+  "bagasy": {
+    "channelKey": "https://www.youtube.com/channel/UC-Xn4lJ35qOcf2px1BkHvEQ",
+    "cardId": "fbv61789671785526-p15_detergente"
+  }
+}
