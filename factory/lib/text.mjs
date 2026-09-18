@@ -105,11 +105,16 @@ export function compose({ mom, tramos, style, glosario = {}, secs }) {
     if (!m) { errores.push(`${x.n}: no es un momento`); continue; }
     if (vistos.has(x.n)) { errores.push(`${x.n}: repetido`); continue; }
     vistos.add(x.n);
-    if (x.t === "avatar") { plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "avatar", muestra: x.m || "presentador a cámara" }); continue; }
+    // `k` (componente del kit premium) y `st` (consulta de metraje real) viajan TAL CUAL al plan:
+    // 60_build y 45_stock los leen de ahí. ⛔ Si `compose` los descarta, el plan queda sin componentes
+    // y el montaje premium emite un video mudo de comps sin decir nada (medido: plan.json con 0 `k`
+    // mientras los dir_*.json tenían 57).
+    const extra = { ...(x.k ? { k: x.k } : {}), ...(x.st ? { st: String(x.st) } : {}) };
+    if (x.t === "avatar") { plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "avatar", muestra: x.m || "presentador a cámara", ...extra }); continue; }
     if (!["wide", "medium", "close"].includes(x.e)) { errores.push(`${x.n}: encuadre inválido "${x.e}"`); continue; }
     if (!x.s || !x.mo) { errores.push(`${x.n}: falta escena (s) o movimiento (mo)`); continue; }
     if (/\bbreath|breathing|respir/i.test(x.mo)) errores.push(`${x.n}: el movimiento pide "respirar" (prohibido: agnes lo deforma)`);
-    plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "imagen", muestra: x.m, encuadre: x.e, motor: x.c ? "gpt" : "gptsin", lugar: x.l, prompt: prompt(x), motion: x.mo, persona: !!x.c, gente: !!x.g });
+    plan.push({ name: x.n, i: m.i, sec: secDe(m.i), dice: m.texto, tipo: "imagen", muestra: x.m, encuadre: x.e, motor: x.c ? "gpt" : "gptsin", lugar: x.l, prompt: prompt(x), motion: x.mo, persona: !!x.c, gente: !!x.g, ...extra });
   }
   plan.sort((a, b) => a.i - b.i || a.name.localeCompare(b.name));
   const faltan = mom.filter((m) => !vistos.has(m.name)).map((m) => m.name);

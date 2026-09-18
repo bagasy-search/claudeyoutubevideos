@@ -1,0 +1,212 @@
+{
+  "_": [
+    "kit.json — EL CONTRATO del montaje PREMIUM. Comp.tsx lo dice en su cabecera: 'el contrato vive en",
+    "factory/styles/premium/kit.json' y 'la fábrica verifica contra kit.json que cada nombre exista como",
+    "export REAL antes de emitir nada'. Eso lo hace cargarKit() en factory/lib/kit.mjs.",
+    "",
+    "POR QUÉ ES UN ARCHIVO DE DATOS Y NO CÓDIGO: un kind que no está en el MAPA de Comp.tsx llega como",
+    "`undefined` y React tira el error #130, que NO dice qué componente fue; y como el import es NOMBRADO,",
+    "`tsc` tampoco lo marca. La única defensa es leer el .tsx real y buscar el export ANTES de emitir.",
+    "",
+    "REGLAS DE LOS VALORES (medidas, no opinables):",
+    "  · Una prop de UNIÓN inválida deja el texto NEGRO sin tirar error (reference_props_de_union_texto_negro).",
+    "    Por eso cada enum declara sus `val` EXACTOS leídos de la firma del componente.",
+    "  · `alias` traduce lo que el director escribió a lo que el componente ACEPTA cuando el componente",
+    "    simplemente no tiene ese valor (StatBig y RuleNumberScene no tienen hue 'cold'; StepTracker no",
+    "    tiene accent 'accent'). Un valor que no está ni en `val` ni en `alias` NO se degrada en silencio:",
+    "    es un problema y la compuerta frena.",
+    "  · `asset` = la ruta viaja DENTRO de las props. Toda ruta así TIENE que entrar en la lista de assets",
+    "    del farm o el chunk muere con un 404 (la mina del QR del CTA, cmeamazon).",
+    "  · `escalona` = el componente reparte su revelado con startAt/stagger. Staggers FIJOS en un momento",
+    "    corto dejan el componente A MEDIO DIBUJAR: kit.mjs los recalcula contra la duración REAL del cue.",
+    "    El director tiene PROHIBIDO escribirlos (lo dice el DIRECTOR_PROMPT).",
+    "  · `capa`: 'overlay' se dibuja encima del plano y SIRVE sobre el avatar. 'tapa' ocupa la pantalla",
+    "    entera, así que en un momento de avatar cuenta como AVATAR TAPADO y la compuerta falla."
+  ],
+
+  "dir": "../../../src/VideoEdit/scenes",
+
+  "tipos": {
+    "Bar": {
+      "req": ["label", "value"],
+      "props": {
+        "label": "string", "value": "number", "display": "string", "sub": "string",
+        "tone": { "val": ["accent", "amber", "good", "cold", "danger"], "alias": { "red": "danger", "blue": "cold", "neutral": "accent", "warning": "amber" } },
+        "winner": "bool"
+      }
+    },
+    "CheckItem": {
+      "req": ["text"],
+      "props": {
+        "text": "string", "note": "string",
+        "state": { "val": ["done", "doing", "todo"], "alias": { "ok": "done", "hecho": "done", "pendiente": "todo", "falta": "todo" } }
+      }
+    },
+    "Layer": {
+      "req": ["label", "color"],
+      "props": { "label": "string", "color": "color", "depth": "string", "weight": "number" }
+    },
+    "QuoteWord": { "req": ["text"], "props": { "text": "string", "em": "bool" } },
+    "Step": { "req": ["title"], "props": { "title": "string", "desc": "string", "image": "asset" } },
+    "SagaEvent": {
+      "req": ["year", "label"],
+      "props": {
+        "year": "string", "label": "string", "image": "asset",
+        "accent": { "val": ["amber", "danger", "accent", "cold"], "alias": { "red": "danger", "blue": "cold", "good": "accent", "neutral": "accent" } }
+      }
+    },
+    "SigLine": { "req": ["text"], "props": { "text": "string", "gold": "bool" } },
+    "SizeItem": { "req": ["label", "d"], "props": { "label": "string", "d": "number", "sub": "string", "flag": "bool" } },
+    "VsSide": { "req": ["label", "value"], "props": { "label": "string", "value": "string", "sub": "string", "good": "bool" } },
+    "Marker": {
+      "req": [],
+      "props": {
+        "label": "string", "atDepth": "number",
+        "color": { "val": ["accent", "amber", "good", "cold", "danger"], "alias": { "red": "danger", "blue": "cold" } }
+      }
+    }
+  },
+
+  "kinds": {
+    "AvatarScrimText": {
+      "file": "AvatarScrimText.tsx", "export": "AvatarScrimText", "capa": "overlay",
+      "req": ["impact"],
+      "props": {
+        "setup": "string", "impact": "string", "fontSize": "number", "accentColor": "color", "font": "string",
+        "impactAccent": { "val": ["accent", "amber", "good", "cold", "danger"], "alias": { "red": "danger", "blue": "cold", "neutral": "accent" } }
+      }
+    },
+    "BarCompare": {
+      "file": "BarCompare.tsx", "export": "BarCompare", "capa": "tapa",
+      "req": ["bars"],
+      "props": {
+        "eyebrow": "string", "title": "string", "unit": "string",
+        "bars": { "array": "Bar" },
+        "orientation": { "val": ["vertical", "horizontal"], "alias": { "h": "horizontal", "v": "vertical" } },
+        "accent": { "val": ["accent", "amber", "good", "cold", "danger"], "alias": { "red": "danger", "blue": "cold", "neutral": "accent" } },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "accent": "amber", "neutral": "cold" } }
+      },
+      "escalona": { "lista": "bars", "inicio": "startAt", "paso": "stagger", "pasoMinS": 0.45, "pasoMaxS": 0.9, "colaS": 0.8 }
+    },
+    "Checklist": {
+      "file": "Checklist.tsx", "export": "Checklist", "capa": "tapa",
+      "req": ["title", "items"],
+      "props": {
+        "title": "string", "eyebrow": "string",
+        "items": { "array": "CheckItem" },
+        "image": "asset", "imageBlur": "number", "imageDarken": "number",
+        "pin": { "val": ["left", "right", "center"], "alias": {} },
+        "accent": { "val": ["accent", "amber", "good", "cold", "danger"], "alias": { "red": "danger", "blue": "cold", "neutral": "accent" } },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "accent": "amber", "neutral": "cold" } }
+      },
+      "escalona": { "lista": "items", "inicio": "startAt", "paso": "stagger", "pasoMinS": 0.4, "pasoMaxS": 0.95, "colaS": 0.8 }
+    },
+    "CrossSection": {
+      "file": "CrossSection.tsx", "export": "CrossSection", "capa": "tapa",
+      "req": ["layers"],
+      "props": {
+        "eyebrow": "string", "title": "string",
+        "layers": { "array": "Layer" },
+        "marker": { "obj": "Marker" },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "accent": "amber", "neutral": "cold" } }
+      },
+      "escalona": { "lista": "layers", "inicio": "startAt", "paso": "stagger", "pasoMinS": 0.5, "pasoMaxS": 1.25, "colaS": 0.9 }
+    },
+    "StatBig": {
+      "file": "DataViz.tsx", "export": "StatBig", "capa": "tapa",
+      "_file": "⛔ StatBig NO vive en un archivo con su nombre: está dentro de DataViz.tsx.",
+      "req": ["to"],
+      "props": {
+        "to": "number", "from": "number", "decimals": "number", "size": "number",
+        "prefix": "string", "suffix": "string", "label": "string", "caption": "string",
+        "image": "asset", "imageBlur": "number", "imageDarken": "number", "imageTint": "color",
+        "accent": { "val": ["neutral", "danger", "good", "amber"], "alias": { "accent": "neutral", "cold": "neutral", "red": "danger", "blue": "neutral" } },
+        "hue": { "val": ["blue", "amber", "red"], "alias": { "cold": "blue", "danger": "red", "good": "blue", "accent": "amber", "neutral": "blue" } },
+        "bg": { "val": ["grid", "image", "black", "white"], "alias": {} }
+      }
+    },
+    "FloatingInsert": {
+      "file": "FloatingInsert.tsx", "export": "FloatingInsert", "capa": "overlay",
+      "req": ["src"],
+      "props": {
+        "src": "asset", "kicker": "string", "accent": "color",
+        "side": { "val": ["left", "right"], "alias": {} },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "neutral": "cold" } }
+      }
+    },
+    "KineticQuote": {
+      "file": "KineticQuote.tsx", "export": "KineticQuote", "capa": "tapa",
+      "req": ["words"],
+      "props": {
+        "eyebrow": "string", "cite": "string", "fontSize": "number",
+        "words": { "array": "QuoteWord" },
+        "image": "asset", "imageBlur": "number", "imageDarken": "number",
+        "accent": { "val": ["accent", "amber", "good", "cold", "danger"], "alias": { "red": "danger", "blue": "cold", "neutral": "accent" } },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "accent": "amber", "neutral": "cold" } }
+      },
+      "escalona": { "lista": "words", "inicio": "startAt", "paso": "perWord", "pasoMinS": 0.16, "pasoMaxS": 0.42, "colaS": 0.7 }
+    },
+    "MistakeCard": {
+      "file": "MistakeCard.tsx", "export": "MistakeCard", "capa": "tapa",
+      "req": ["number", "title"],
+      "props": { "number": "string", "title": "string", "desc": "string", "eyebrow": "string", "image": "asset" }
+    },
+    "ProcessSteps": {
+      "file": "ProcessSteps.tsx", "export": "ProcessSteps", "capa": "tapa",
+      "req": ["steps"],
+      "props": {
+        "eyebrow": "string", "title": "string",
+        "steps": { "array": "Step" },
+        "orientation": { "val": ["horizontal", "vertical"], "alias": { "h": "horizontal", "v": "vertical" } },
+        "accent": { "val": ["accent", "amber", "good", "cold", "danger"], "alias": { "red": "danger", "blue": "cold", "neutral": "accent" } },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "accent": "amber", "neutral": "cold" } }
+      },
+      "escalona": { "lista": "steps", "inicio": "startAt", "paso": "stagger", "pasoMinS": 0.7, "pasoMaxS": 1.9, "colaS": 1.0 }
+    },
+    "RuleNumberScene": {
+      "file": "RuleNumberScene.tsx", "export": "RuleNumberScene", "capa": "tapa",
+      "req": ["number", "title"],
+      "props": {
+        "number": "string", "title": "string", "label": "string", "dark": "bool",
+        "hue": { "val": ["blue", "amber", "red"], "alias": { "cold": "blue", "danger": "red", "good": "blue", "accent": "amber", "neutral": "blue" } }
+      }
+    },
+    "SagaTimeline": {
+      "file": "SagaTimeline.tsx", "export": "SagaTimeline", "capa": "tapa",
+      "req": ["events"],
+      "props": { "eyebrow": "string", "title": "string", "events": { "array": "SagaEvent" } }
+    },
+    "SignaturePhrase": {
+      "file": "SignaturePhrase.tsx", "export": "SignaturePhrase", "capa": "tapa",
+      "req": ["lines"],
+      "props": { "eyebrow": "string", "lines": { "array": "SigLine" } }
+    },
+    "SizeScale": {
+      "file": "SizeScale.tsx", "export": "SizeScale", "capa": "tapa",
+      "req": ["items"],
+      "props": {
+        "eyebrow": "string", "title": "string",
+        "items": { "array": "SizeItem" },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "accent": "amber", "neutral": "cold" } }
+      },
+      "escalona": { "lista": "items", "inicio": "startAt", "paso": "stagger", "pasoMinS": 0.55, "pasoMaxS": 1.5, "colaS": 0.9 }
+    },
+    "StepTracker": {
+      "file": "StepTracker.tsx", "export": "StepTracker", "capa": "overlay",
+      "req": ["step"],
+      "props": {
+        "step": "number", "total": "number", "label": "string",
+        "accent": { "val": ["amber", "danger", "good"], "alias": { "red": "danger", "accent": "amber", "cold": "amber", "blue": "amber", "neutral": "amber" } }
+      }
+    },
+    "VsCard": {
+      "file": "VsCard.tsx", "export": "VsCard", "capa": "tapa",
+      "req": ["left", "right"],
+      "props": {
+        "eyebrow": "string", "title": "string",
+        "left": { "obj": "VsSide" }, "right": { "obj": "VsSide" },
+        "hue": { "val": ["blue", "cold", "amber", "red"], "alias": { "danger": "red", "good": "cold", "accent": "amber", "neutral": "cold" } }
+      }
+    }
+  }
+}

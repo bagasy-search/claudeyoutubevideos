@@ -24,7 +24,7 @@ import { run as exec } from "./lib/exec.mjs";
 
 process.chdir(ROOT);   // los scripts compartidos (agnes_qc, farm) usan rutas relativas a video2
 
-const PHASE_FILES = ["00_preflight", "10_voice", "15_frases", "20_asr", "30_direct", "40_images", "50_agnes", "55_avatar", "60_build", "70_gates", "80_render", "90_deliver"];
+const PHASE_FILES = ["00_preflight", "10_voice", "15_frases", "20_asr", "30_direct", "40_images", "45_stock", "50_agnes", "55_avatar", "60_build", "70_gates", "80_render", "90_deliver"];
 async function loadPhases() {
   const out = [];
   for (const f of PHASE_FILES) out.push((await import(`./phases/${f}.mjs`)).default);
@@ -74,7 +74,16 @@ async function runSlug(slug, { from, only } = {}) {
         status.set(ph.id, "done"); ctx.log(`✓ confiada (${antesDeFrom ? `anterior a --from ${from}` : "importada del legado"})`); continue;
       }
       if (antesDeFrom) { status.set(ph.id, "failed"); state.set(ph.id, { ...(prev || {}), status: prev?.status || "failed", error: `--from ${from} exige que ${ph.id} ya esté hecha (está ${prev?.status || "sin estado"}): no se rehace sola` }); ctx.log(`✗ --from ${from} pero ${ph.id} no está hecha: no la rehago`); continue; }
-      if (state.isFresh(ph.id, h)) { status.set(ph.id, "done"); ctx.log(`✓ fresca (${JSON.stringify(state.get(ph.id).medido || {}).slice(0, 140)})`); continue; }
+      if (state.isFresh(ph.id, h)) {
+        // ⛔ El hash de INPUTS no ve el disco: si alguien borró las salidas para regenerarlas, la fase
+        // se salteaba con "✓ fresca" y su compuerta —que vive DENTRO de la fase— nunca llegaba a correr
+        // (medido en cmealter: 115 imágenes borradas, la fase no miró y el montaje se iba con las viejas).
+        // `verify` es opcional: sin él, el comportamiento es el de antes.
+        let falta = null;
+        if (ph.verify) { try { falta = await ph.verify(ctx); } catch (e) { falta = e.message; } }
+        if (!falta) { status.set(ph.id, "done"); ctx.log(`✓ fresca (${JSON.stringify(state.get(ph.id).medido || {}).slice(0, 140)})`); continue; }
+        ctx.log(`↻ estaba done pero sus salidas no están: ${falta} — la rehago`);
+      }
       ctx.log("▶ arranca");
       state.set(ph.id, { ...(state.get(ph.id) || {}), status: "running", inputsHash: h });
       const t = Date.now();
@@ -196,6 +205,24 @@ try {
   if (!cmd || cmd === "help" || cmd === "--help") { console.log(HELP); console.log("fases: " + PHASE_FILES.join(" → ")); process.exit(0); }
   if (cmd === "run") process.exit(await runSlug(args[1], { from: flag("--from"), only: flag("--only") }));
   if (cmd === "status") { printStatus(args[1]); process.exit(0); }
+  if (cmd === "reset") {
+    // Rehacer UNA fase sin arrastrar las de atrás. `--only` respeta el hash (no rehace nada) y
+    // `--from` resetea todo lo que viene después, que con el avatar corriendo en paralelo no sirve.
+    // Antes de esto había que borrar el json de estado a mano.
+    const [, slug, fase] = args;
+    if (!slug || !fase) { console.error("uso: node factory/run.mjs reset <slug> <fase> - fases: " + PHASE_FILES.join(" ")); process.exit(1); }
+    if (!PHASE_FILES.includes(fase)) { console.error(`fase desconocida "${fase}" - fases: ` + PHASE_FILES.join(" ")); process.exit(1); }
+    const st = new State(slug);
+    const prev = st.get(fase);
+    if (!prev) { console.log(`${slug}/${fase} ya estaba sin estado: nada que resetear`); process.exit(0); }
+    if (prev.status === "running" && !args.includes("--force")) {
+      console.error(`${slug}/${fase} está RUNNING: resetearla ahora deja dos corridas pisándose. Esperá a que termine, o --force si sabés que el proceso está muerto.`);
+      process.exit(1);
+    }
+    st.reset(fase);
+    console.log(`${slug}/${fase} reseteada (estaba ${prev.status}). Se rehace en la próxima corrida: node factory/run.mjs run ${slug}`);
+    process.exit(0);
+  }
   if (cmd === "new") { nuevo(args[1]); process.exit(0); }
   if (cmd === "queue") { if (args[1] === "add") qAdd(args[2]); else for (const q of qList()) console.log(`${q.slug.padEnd(20)} ${q.estado}`); process.exit(0); }
   if (cmd === "worker") { await worker(Number(flag("--n") || 3)); process.exit(0); }

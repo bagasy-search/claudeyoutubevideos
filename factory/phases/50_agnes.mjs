@@ -11,7 +11,10 @@ import { ROOT } from "../lib/env.mjs";
 
 export default {
   id: "50_agnes",
-  deps: ["40_images"],
+  // 45_stock va ANTES: deja el metraje real en brollDir y `falta()` ya no manda esos planos a agnes
+  // (sale más real y más barato). Cuando el estilo no es premium, 45_stock queda `skipped`, que para
+  // el runner cuenta como hecha.
+  deps: ["45_stock"],
   inputs: ({ P }) => [P.plan, P.imgDir, P.brollDir, path.join(ROOT, "_v3", `${P.slug}_agnes_qc.json`)],
   async run({ slug, P, log }) {
     const plan = JSON.parse(fs.readFileSync(P.plan, "utf8")).filter((p) => p.tipo === "imagen");
@@ -30,8 +33,13 @@ export default {
     const falta = () => i2v.filter((x) => !fs.existsSync(path.join(P.brollDir, `${x.nombre}.mp4`)));
     if (falta().length) {
       const units = CAPACIDAD.agnes();
-      await withLease("agnes", slug, units, () => run("node", ["scripts/agnes_i2v.mjs", lista, slug, P.imgDir, P.brollDir],
-        { cwd: ROOT, timeoutMs: 8 * 3600_000, onLine: (l) => /✗|⛔|error|429|listo|===/i.test(l) && log(l.slice(0, 160)) }), { log });
+      // `agnes_i2v.mjs` sale con 1 si falló ALGÚN clip, aunque hayan salido 305 de 307. Con el exit
+      // mandando, la fase moría antes de llegar al QC y sin medir nada — cuando la que decide es la
+      // compuerta `clipsHechosPct` (min 90), que cuenta archivos REALES en disco. El exit code es un
+      // dato, no el veredicto: se registra y se sigue, y si de verdad faltan clips la compuerta frena.
+      const rI2v = await withLease("agnes", slug, units, () => run("node", ["scripts/agnes_i2v.mjs", lista, slug, P.imgDir, P.brollDir],
+        { cwd: ROOT, timeoutMs: 8 * 3600_000, allowFail: true, onLine: (l) => /✗|⛔|error|429|listo|===/i.test(l) && log(l.slice(0, 160)) }), { log });
+      if (rI2v.code !== 0) log(`agnes_i2v salió con ${rI2v.code} (algún clip falló): decide la compuerta, no el exit`);
     }
     const hechos = i2v.length - falta().length;
     log(`clips ${hechos}/${i2v.length} (throughput de referencia ≈7 clips/min)`);
@@ -46,7 +54,16 @@ export default {
       for (const n of nombres) { const r = c[n]; if (!r || !r.revisado) st.pendientes++; else if (!r.ok || r.removed) st.rechazados++; else st.ok++; }
       return st;
     };
-    const qc = (args = []) => run("node", ["scripts/agnes_qc.mjs", slug, ...args], { cwd: ROOT, timeoutMs: 3 * 3600_000, env: { QC_IMGDIR: P.imgDir, QC_CLIPDIR: P.brollDir } });
+    // El QC sale con 1 cuando encuentra clips para rehacer: eso es un RESULTADO, no una falla del
+    // proceso. Con el exit mandando, la fase moria antes de que `cuenta()` mirara el reporte y sin
+    // imprimir un numero (medido en cmeamazon: 310/310 clips en disco y la fase en `failed`).
+    // Si el QC se rompio de verdad, el reporte queda viejo o incompleto y las compuertas de abajo
+    // (`clipsAprobados`, y el NeedsError de la revision a ojo) frenan igual. Decide la medicion.
+    const qc = async (args = []) => {
+      const r = await run("node", ["scripts/agnes_qc.mjs", slug, ...args], { cwd: ROOT, timeoutMs: 3 * 3600_000, allowFail: true, env: { QC_IMGDIR: P.imgDir, QC_CLIPDIR: P.brollDir } });
+      if (r.code !== 0) log(`agnes_qc salió con ${r.code} (hay clips para rehacer): decide la compuerta, no el exit`);
+      return r;
+    };
     let st = cuenta();
     if (st.rechazados) { log(`${st.rechazados} rechazados → --fix`); await qc(["--fix"]); st = cuenta(); }
     if (st.pendientes) {
