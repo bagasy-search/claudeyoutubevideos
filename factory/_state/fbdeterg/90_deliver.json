@@ -1,6 +1,17 @@
 {
  "fase": "90_deliver",
- "ts": "2026-09-18T22:45:33.105Z",
- "status": "running",
- "inputsHash": "475b94aa2335dc36"
+ "ts": "2026-09-18T23:13:53.557Z",
+ "status": "done",
+ "inputsHash": "475b94aa2335dc36",
+ "medido": {
+  "url": "https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fbdeterg/fbdeterg.mp4?v=1",
+  "version": 1,
+  "bytes": 555945154,
+  "durSec": 1232.2,
+  "saltosPts": 0,
+  "tramosNegros": 1,
+  "hoja": "D:\\rtmp\\factory\\fbdeterg\\audit\\hoja.jpg",
+  "bagasy": "no (sin spec.bagasy o FACTORY_DELIVER≠1)"
+ },
+ "ms": 1700450
 }
