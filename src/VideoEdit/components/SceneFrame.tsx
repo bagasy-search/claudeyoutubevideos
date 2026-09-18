@@ -29,6 +29,7 @@ export const SceneFrame: React.FC<{
   noReveal?: boolean; // RawShot: HARD-CUT, sin fade/blur de entrada NI salida (regla del nicho)
   camOrigin?: string; // origen del Ken-Burns (varía el "punto" del zoom/pan). def centro
   clipDur?: number; // duración real del mp4 (s) → anti-congelado (Media)
+  speed?: number;   // playbackRate del clip (1 = nativo, sin judder). def: el de Media
   beatDur?: number; // duración del beat en timeline (s)
   grade?: string; // normalización por clip (probe_grade) — no es un look
   // ★ TRANSICIÓN DE SECCIÓN (opt-in): N frames de fade-in SOLO cuando el build lo pide
@@ -53,6 +54,7 @@ export const SceneFrame: React.FC<{
   noReveal = false,
   camOrigin = "center center",
   clipDur,
+  speed,
   beatDur,
   grade,
   fadeIn = 0,
@@ -87,6 +89,7 @@ export const SceneFrame: React.FC<{
             fit={imageFit}
             durationInFrames={durationInFrames}
             clipDur={clipDur}
+            speed={speed}
             beatDur={beatDur}
             grade={grade}
           />
