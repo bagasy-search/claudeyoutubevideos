@@ -8,6 +8,8 @@ import { assertMeasured } from "../lib/gate.mjs";
 import { withLease } from "../lib/lease.mjs";
 import { ROOT } from "../lib/env.mjs";
 import { detectarBucles } from "../lib/text.mjs";
+import { sitiosDeBucle, bloquesGarbled } from "../lib/voz.mjs";
+import { assertNoProblems } from "../lib/gate.mjs";
 
 export default {
   id: "20_asr",
@@ -33,9 +35,37 @@ export default {
 
     const guion = fs.readFileSync(P.guion, "utf8");
     const b = detectarBucles(guion, words.map((w) => w.text).join(" "));
-    log(`bucles: palabras guion ${b.palabrasGuion} · asr ${b.palabrasAsr} · inflación ${b.inflacionPct}% · n-gramas repetidos ${b.bucles.length}`);
-    for (const x of b.bucles.slice(0, 5)) log(`   ⛔ "${x.ngrama}" ×${x.asr} (guion ×${x.guion})`);
-    assertMeasured("ttsBucles", b.bucles.length, { max: 0, allowZero: true, log });
+    // ⛔ el conteo de n-gramas SOLAPADOS infla 20× un solo tramo repetido (medido: t=1140,6 s daba 20):
+    // la compuerta va sobre SITIOS distintos, y cada uno se imprime con su segundo.
+    const sitios = sitiosDeBucle(words);
+    log(`bucles: palabras guion ${b.palabrasGuion} · asr ${b.palabrasAsr} · inflación ${b.inflacionPct}% · sitios de bucle ${sitios.length} (n-gramas solapados ${b.bucles.length})`);
+    for (const s of sitios.slice(0, 5)) log(`   ⛔ t=${s.segundo}s ×${s.veces} :: "${s.texto}"`);
+    assertMeasured("ttsBucles", sitios.length, { max: 0, allowZero: true, log });
+
+    // ── salud POR BLOQUE del máster de Fish ────────────────────────────────────────────────
+    // fish_factory sólo caza el loop por DURACIÓN; el bloque GARBLED sale con el largo correcto.
+    // Acá se atribuyen las palabras del ASR a cada bloque por su ventana de tiempo y se regeneran
+    // SÓLO los malos (el proveedor falla al azar: validar el máster entero no converge nunca).
+    const manPath = path.join(P.fishDir, "manifest.json");
+    if (fs.existsSync(manPath)) {
+      const man = JSON.parse(fs.readFileSync(manPath, "utf8"));
+      const sal = bloquesGarbled({ words, manifest: man, palabrasGuion: b.palabrasGuion });
+      const rondasP = path.join(P.fishDir, "_rondas.json");
+      const rondas = fs.existsSync(rondasP) ? JSON.parse(fs.readFileSync(rondasP, "utf8")) : { n: 0 };
+      if (sal.malos.length && rondas.n < 3) {
+        for (const m of sal.malos) {
+          try { fs.unlinkSync(path.join(P.fishDir, `${m.bloque}.wav`)); } catch { /* ya no está */ }
+          delete man[m.bloque];
+        }
+        fs.writeFileSync(manPath, JSON.stringify(man, null, 1));
+        for (const f of [P.fishMaster, P.wav, P.wav16k, path.join(P.fishDir, "concat.txt")]) { try { fs.unlinkSync(f); } catch { /* ya no está */ } }
+        try { fs.unlinkSync(path.join(P.state, "10_voice.json")); } catch { /* ya no está */ }
+        fs.writeFileSync(rondasP, JSON.stringify({ n: rondas.n + 1, ultimos: sal.malos.map((m) => m.bloque) }));
+        log(`ronda ${rondas.n + 1}/3: regenero sólo ${sal.malos.map((m) => m.bloque).join(",")} — volvé a correr y 10_voice rehace ESOS bloques`);
+      }
+      assertNoProblems("bloquesGarbled", sal.malos.map((m) => `${m.bloque} [${m.desde}-${m.hasta}s] ${m.motivos.join(" · ")}`), sal.inspeccionados, { log });
+      try { fs.unlinkSync(rondasP); } catch { /* limpio al cerrar */ }
+    }
     assertMeasured("asrInflacionPct", Math.max(0, b.inflacionPct), { max: 8, allowZero: true, log });
 
     // los momentos ya los armó 15_frases (la dirección trabaja sobre ellos en paralelo): acá sólo se anclan al ms
