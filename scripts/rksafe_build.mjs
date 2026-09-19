@@ -38,6 +38,33 @@ const durDe = (rel) => {
 };
 let clipsCortos = 0;
 
+// ⛔⛔ EL MAIN REDONDEA `from` Y `durationInFrames` POR SEPARADO. `F(53.94) + F(0.98)` no cae en
+//    `F(54.92)`: según el resto, el cue siguiente arranca un cuadro ANTES (solape: un plano tapa al
+//    otro) o un cuadro DESPUÉS (destello de 33 ms del fondo, que `blackdetect` no ve porque pide
+//    0,4 s). Medido acá antes del arreglo: 10 solapes y 2 destellos.
+//    Se alinean los cuadros ACÁ, derivando la duración del CUADRO FINAL y no del largo.
+{
+  const OVs = new Set(cfg.OVERLAY);
+  const baseB = plan.beats.filter((b) => !(b.kind === 'componente' && OVs.has(b.comp))).sort((a, b) => a.t - b.t);
+  let pegados = 0;
+  for (let i = 0; i < baseB.length; i++) {
+    const f0 = Math.round(baseB[i].t * FPS);
+    let f1 = f0 + Math.max(1, Math.round(baseB[i].dur * FPS));
+    const sig = baseB[i + 1];
+    if (sig) {
+      const sf0 = Math.round(sig.t * FPS);
+      if (Math.abs(sf0 - f1) <= 3 && sf0 > f0) { f1 = sf0; pegados++; }
+      else if (f1 > sf0) { f1 = Math.max(f0 + 1, sf0); pegados++; }
+    }
+    baseB[i].t = f0 / FPS;
+    baseB[i].dur = Math.max(1, f1 - f0) / FPS;
+  }
+  console.log('fronteras alineadas al cuadro: ' + pegados + ' de ' + baseB.length);
+  // ⛔ y se PERSISTE el plan alineado: si el gate de timeline mide el plan CRUDO y el render usa
+  //    el alineado, la compuerta está midiendo otra cosa que la que se ve. Orden: plan -> build -> gates.
+  fs.writeFileSync(`_v3/${SLUG}_plan.json`, JSON.stringify(plan, null, 1));
+}
+
 const usados = new Set();
 const cues = [], overlays = [];
 let nCam = 0, nClip = 0;
