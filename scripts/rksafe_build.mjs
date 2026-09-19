@@ -23,6 +23,11 @@ const FPS = plan.fps;
 const TOTAL_F = Math.round(plan.total * FPS);
 const AVATAR_F = Math.round(plan.avatarEnd * FPS);
 const OVERLAY = new Set(cfg.OVERLAY);
+// ⛔⛔ MODO VENTANAS: el avatar NO es una capa continua. Fuera de las ventanas el fondo es NEGRO,
+//    asi que cada ventana se monta como un plano mas de la capa base con `RayAvatarWin` (media
+//    panel 960x540 = upscale 1,154x; `RayAvatar` a pantalla completa es 2,31x y el creador lo rechazo).
+const MODO = cfg.AVATAR_MODO || 'fondo';
+const AVDIR = `avwin/${SLUG}`;
 const CAM = cfg.CAM;
 const idDeAsset = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '');
 
@@ -67,7 +72,9 @@ let clipsCortos = 0;
 
 const usados = new Set();
 const cues = [], overlays = [];
-let nCam = 0, nClip = 0;
+let nCam = 0, nClip = 0, nAv = 0;
+let ultimaFoto = null;
+const avBeds = new Set();
 
 for (const b of plan.beats) {
   const key = `${b.kind}_${Math.round(b.t * 1000)}`;
@@ -90,6 +97,14 @@ for (const b of plan.beats) {
     if (necesita > df + 0.02) { console.log(`  ⛔ ${b.asset}: el plano pide ${necesita.toFixed(2)}s de fuente y el archivo tiene ${df.toFixed(2)}s (se congelaría)`); clipsCortos++; }
     el = `(d) => <Clip src=${JSON.stringify(b.asset)} rate={${b.rate ?? 1}} />`;
     nClip++;
+  } else if (b.kind === 'avatar') {
+    const rel = `${AVDIR}/w${String(b.win).padStart(3, '0')}.mp4`;
+    // la CAMA de foto del plano anterior llena el resto del cuadro (el panel es 960x540, no full)
+    const bedRel = b.bed || ultimaFoto;
+    const bedProp = bedRel ? ` bed=${JSON.stringify(bedRel)}` : '';
+    el = `(d) => <RayAvatarWin src=${JSON.stringify(rel)} seed={${seed}} durF={d}${bedProp} />`;
+    if (bedRel) avBeds.add(bedRel);
+    nAv++;
   } else if (b.kind === 'imagen') {
     el = `(d) => <Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} />`;
   } else {
@@ -98,6 +113,7 @@ for (const b of plan.beats) {
     if (b.bed && !OVERLAY.has(b.comp)) props.bed = b.bed;   // los overlay no llevan cama de foto
     el = `(d) => <${b.comp} durationInFrames={d} {...(${JSON.stringify(props)} as any)} />`;
   }
+  if (camId) ultimaFoto = 'img/' + camId + '_blur.jpg';
   const row = `  { key: ${JSON.stringify(key)}, start: ${b.t}, dur: ${b.dur}, el: ${el} },`;
   (b.kind === 'componente' && OVERLAY.has(b.comp) ? overlays : cues).push(row);
 }
@@ -109,6 +125,7 @@ const cuesSrc = `// cues_${SLUG}.gen.tsx — GENERADO por scripts/rksafe_build.m
 import React from "react";
 ${compsNecesarios.map((c) => `import { ${c} } from "${cfg.IMPORTS[c]}";`).join('\n')}
 import { Clip, Foto } from "../rksafe/RayStage";
+${MODO === 'ventanas' ? 'import { RayAvatarWin } from "../rksafe/RayAvatarWin";' : ''}
 
 export type Cue = { key: string; start: number; dur: number; el: (d: number) => React.ReactNode };
 
@@ -129,7 +146,7 @@ export const AVATAR_FRAMES_${UP} = ${AVATAR_F};
 const mainSrc = `// Main_${SLUG}.tsx — GENERADO por scripts/rksafe_build.mjs. NO editar a mano.
 import React from "react";
 import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
-import { RayAvatar } from "../rksafe/RayStage";
+${MODO === 'ventanas' ? '' : 'import { RayAvatar } from "../rksafe/RayStage";'}
 import { CUES, OVERLAYS } from "./cues_${SLUG}.gen";
 import { TOTAL_FRAMES_${UP}, AVATAR_FRAMES_${UP} } from "./avatar_${SLUG}.gen";
 
@@ -137,8 +154,9 @@ const F = (s: number) => Math.round(s * ${FPS});
 
 export const Main${Cap}: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#0A0A0C" }}>
-    {/* El avatar es el FONDO GARANTIZADO. */}
-    <RayAvatar src="${SLUG}_opt.mp4" loopFrames={AVATAR_FRAMES_${UP}} />
+${MODO === 'ventanas'
+    ? '{/* MODO VENTANAS: no hay avatar de fondo. El fondo es NEGRO y la cobertura tiene que dar 100 %. */}'
+    : '{/* El avatar es el FONDO GARANTIZADO. */}' + String.fromCharCode(10) + '    <RayAvatar src="' + SLUG + '_opt.mp4" loopFrames={AVATAR_FRAMES_' + UP + '} />'}
 
     {CUES.map((cue) => (
       <Sequence key={cue.key} from={F(cue.start)} durationInFrames={Math.max(1, F(cue.dur))} layout="none">
@@ -180,6 +198,7 @@ fs.writeFileSync(`src/index_${SLUG}.tsx`, entrySrc);
 console.log('═'.repeat(66));
 console.log('CUES     : ' + cues.length + '  ·  OVERLAYS: ' + overlays.length + '  ·  clips medidos con ffprobe: ' + nClip +
   '  ·  que se congelarían: ' + clipsCortos + (clipsCortos ? ' ⛔' : ' ✓'));
+if (MODO === 'ventanas') console.log('VENTANAS DE AVATAR: ' + nAv + ' planos RayAvatarWin (upscale 1,25x, media pantalla)');
 console.log('CÁMARA DE VIGILANCIA: ' + nCam + ' planos ' + (nCam >= 8 ? '✓' : '⛔ el hook se va a ver como una foto quieta'));
 console.log('COMPONENTES importados: ' + compsNecesarios.length + ' → ' + compsNecesarios.join(' · '));
 console.log('TOTAL_FRAMES: ' + TOTAL_F + ' (' + plan.total.toFixed(2) + ' s)  ·  AVATAR_FRAMES: ' + AVATAR_F);
@@ -204,7 +223,13 @@ for (const a of [...assets]) if (a.endsWith('.jpg') && !a.endsWith('_blur.jpg'))
   assets.add(bl);
   if (!fs.existsSync('public/' + bl)) { console.log('  ⛔ falta public/' + bl + ' (hermano _blur, se pide en runtime)'); faltan++; }
 }
-for (const extra of [`${SLUG}_opt.mp4`, `${SLUG}.m4a`, `img/${SLUG}_qr.png`]) {
+for (const bd of avBeds) { chequeados++; assets.add(bd); if (!fs.existsSync('public/' + bd)) { console.log('  ⛔ falta public/' + bd + ' (cama del avatar)'); faltan++; } }
+for (const b of plan.beats) if (b.kind === 'avatar') {
+  const r = `${AVDIR}/w${String(b.win).padStart(3, '0')}.mp4`;
+  chequeados++; assets.add(r);
+  if (!fs.existsSync('public/' + r)) { console.log('  ⛔ falta public/' + r); faltan++; }
+}
+for (const extra of (MODO === 'ventanas' ? [`${SLUG}.m4a`, `img/${SLUG}_qr.png`] : [`${SLUG}_opt.mp4`, `${SLUG}.m4a`, `img/${SLUG}_qr.png`])) {
   assets.add(extra);
   const ok = fs.existsSync('public/' + extra);
   console.log('  ' + (ok ? '✓' : '⛔') + ' public/' + extra);

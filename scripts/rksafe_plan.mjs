@@ -250,18 +250,62 @@ for (const sec of secciones) {
 const OBJ_COB_T1 = 0.775;
 let quitados = 0;
 if (AVATAR_END > 1) {
-  const t1 = beats.filter((b) => b.t + b.dur <= AVATAR_END && b.kind !== 'componente');
+  // ⛔⛔ EN MODO VENTANAS LOS COMPONENTES TAMBIÉN TAPAN AL AVATAR. Medido acá: descontando sólo los
+  //    planos de b-roll contra el 77,5 % del total, los 30 componentes se comían el resto y el avatar
+  //    quedaba en 7,1 % (el objetivo era ~22 %). El sobrante se calcula contra TODO lo que no es
+  //    avatar, y el objetivo sale del cfg.
+  const modoVent = (cfg.AVATAR_MODO || 'fondo') === 'ventanas';
+  const objNoAvatar = modoVent ? (1 - (cfg.AVATAR_OBJ ?? 0.20)) : OBJ_COB_T1;
+  const t1 = beats.filter((b) => b.t + b.dur <= AVATAR_END && (modoVent || b.kind !== 'componente'));
   const durT1 = t1.reduce((a, b) => a + b.dur, 0);
-  let sobra = durT1 - AVATAR_END * OBJ_COB_T1;
+  let sobra = durT1 - AVATAR_END * objNoAvatar;
   const inicios = new Set(paras.map((p) => +tDeChar(p.s).toFixed(3)));
   const protegidos = new Set(Object.values(cfg.ORDEN_FORZADO).flat());
   const idDe = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '');
-  const candidatos = t1.filter((b) => b.dur <= 6.5 && !(b.asset && protegidos.has(idDe(b.asset))))
+  // ⛔ un COMPONENTE nunca se quita para abrir ventana: el plan lo reservó primero y quitarlo lo
+  //    hace DESAPARECER sin avisar (en rkfob se perdieron 5 de 18, uno era el CTA del video).
+  const candidatos = t1.filter((b) => b.kind !== 'componente' && b.dur <= 6.5 && !(b.asset && protegidos.has(idDe(b.asset))))
     .sort((a, b) => (inicios.has(b.t) ? 1 : 0) - (inicios.has(a.t) ? 1 : 0));
   const paso = Math.max(1, Math.floor(candidatos.length / Math.max(1, Math.ceil(sobra / 4.5))));
   for (let i = 0; i < candidatos.length && sobra > 0; i += paso) { candidatos[i]._quitar = true; sobra -= candidatos[i].dur; quitados++; }
 }
 const finales = beats.filter((b) => !b._quitar);
+
+// ── MODO VENTANAS: el avatar NO es fondo, es un plano más de la capa base ──
+// ⛔⛔ En los videos donde el avatar lo genero YO (RunPod InfiniteTalk) no hay capa continua: fuera
+//    de las ventanas el fondo es NEGRO. Así que los huecos que abrió el paso anterior se convierten
+//    en beats `avatar` EXPLÍCITOS, y la cobertura pasa a exigirse al 100 %.
+//    El componente es `RayAvatarWin` (media pantalla, upscale 1,25x), NUNCA `RayAvatar`.
+const MODO = cfg.AVATAR_MODO || 'fondo';
+if (MODO === 'ventanas') {
+  const OVv = new Set(cfg.OVERLAY);
+  const base0 = finales.filter((b) => !(b.kind === 'componente' && OVv.has(b.comp))).sort((a, b) => a.t - b.t);
+  const MIN_WIN = cfg.AVATAR_WIN_MIN ?? 1.4;
+  const huecos = [];
+  let cur = 0;
+  for (const b of base0) { if (b.t - cur > 0.02) huecos.push([cur, b.t]); cur = Math.max(cur, b.t + b.dur); }
+  if (TOTAL - cur > 0.02) huecos.push([cur, TOTAL]);
+  let n = 0, cortos = 0;
+  for (const [h0, h1] of huecos) {
+    const d = h1 - h0;
+    if (d < MIN_WIN) {
+      // ⛔ una ventana de <1,4 s no se lee como "vuelve la cara", se lee como parpadeo: se la come
+      //    el plano ANTERIOR (o el siguiente si el hueco abre el video).
+      const prev = [...base0].reverse().find((b) => b.t + b.dur <= h0 + 0.02);
+      if (prev) prev.dur = +(h1 - prev.t).toFixed(3);
+      else { const sig = base0.find((b) => b.t >= h1 - 0.02); if (sig) { sig.dur = +(sig.t + sig.dur - h0).toFixed(3); sig.t = +h0.toFixed(3); } }
+      cortos++; continue;
+    }
+    finales.push({ t: +h0.toFixed(3), dur: +d.toFixed(3), sec: 'AV', kind: 'avatar', win: n, lugar: 'avatar' });
+    n++;
+  }
+  const segAv = finales.filter((b) => b.kind === 'avatar').reduce((a, b) => a + b.dur, 0);
+  console.log('VENTANAS DE AVATAR: ' + n + ' · ' + segAv.toFixed(1) + ' s = ' + (segAv / TOTAL * 100).toFixed(1) +
+    '% del video · ' + cortos + ' huecos <' + MIN_WIN + 's absorbidos por el plano vecino');
+  fs.writeFileSync(`_v3/${SLUG}_avwins.json`, JSON.stringify(
+    finales.filter((b) => b.kind === 'avatar').sort((a, b) => a.win - b.win)
+      .map((b) => ({ i: b.win, t: b.t, dur: b.dur })), null, 1));
+}
 
 // ── cerrar los huecos de la capa base DESPUÉS de AVATAR_END ───────────────
 // ⛔ El CTA es OVERLAY: va encima y NO cuenta como cobertura (rkfob: 8,12 s de avatar en bucle debajo).
@@ -279,7 +323,7 @@ const finales = beats.filter((b) => !b._quitar);
 }
 
 // ── MÉTRICAS ──────────────────────────────────────────────────────────────
-const durs = finales.filter((b) => b.kind !== 'componente').map((b) => b.dur).sort((a, b) => a - b);
+const durs = finales.filter((b) => b.kind !== 'componente' && b.kind !== 'avatar').map((b) => b.dur).sort((a, b) => a - b);
 const q = (p) => (durs.length ? durs[Math.min(durs.length - 1, Math.floor(durs.length * p))] : 0);
 const OV = new Set(cfg.OVERLAY);
 const base = finales.filter((b) => !(b.kind === 'componente' && OV.has(b.comp)));
@@ -293,7 +337,12 @@ console.log('ventanas de avatar abiertas en el tramo 1: ' + quitados);
 console.log('PACING  min ' + q(0).toFixed(2) + ' · p25 ' + q(0.25).toFixed(2) + ' · mediana ' + q(0.5).toFixed(2) +
   ' · p75 ' + q(0.75).toFixed(2) + ' · max ' + q(0.999).toFixed(2) + '  (dispersión p25↔p75 ' + (q(0.75) - q(0.25)).toFixed(2) + 's, buena ~1,8)');
 console.log('   ≥5s: ' + (durs.filter((d) => d >= 5).length / durs.length * 100).toFixed(0) + '% (objetivo ~40)');
-console.log('COBERTURA total ' + (cob(0, TOTAL) * 100).toFixed(1) + '%  (piso 90)');
+console.log('COBERTURA total ' + (cob(0, TOTAL) * 100).toFixed(1) + '%  (piso ' + (MODO === 'ventanas' ? '100, el fondo es NEGRO' : '90') + ')');
+if (MODO === 'ventanas') {
+  const bro = base.filter((b) => b.kind !== 'avatar');
+  const cobB = (a, b) => bro.filter((x) => x.t < b && x.t + x.dur > a).reduce((s2, x) => s2 + (Math.min(b, x.t + x.dur) - Math.max(a, x.t)), 0) / (b - a);
+  console.log('   de eso, B-ROLL/componentes ' + (cobB(0, TOTAL) * 100).toFixed(1) + '% · el resto lo cubre el avatar');
+}
 console.log('   tercio 1 ' + (cob(0, TOTAL / 3) * 100).toFixed(1) + '% · tercio 2 ' + (cob(TOTAL / 3, 2 * TOTAL / 3) * 100).toFixed(1) +
   '% · tercio 3 ' + (cob(2 * TOTAL / 3, TOTAL) * 100).toFixed(1) + '%');
 if (AVATAR_END < TOTAL - 1) {
@@ -309,7 +358,7 @@ if (AVATAR_END < TOTAL - 1) {
 }
 console.log('COMPONENTES: ' + new Set(compsUsados).size + ' distintos (piso 6) · ' + compsUsados.length + ' usos');
 console.log('   ' + [...new Set(compsUsados)].join(' · '));
-const primer = base.filter((b) => b.kind !== 'componente').sort((a, b) => a.t - b.t)[0];
+const primer = base.filter((b) => b.kind !== 'componente' && b.kind !== 'avatar').sort((a, b) => a.t - b.t)[0];
 console.log('APERTURA: primer b-roll en ' + primer.t.toFixed(2) + 's  (piso ' + APERTURA_MIN + ') ' + (primer.t >= APERTURA_MIN ? '✓' : '⛔'));
 
 const orden = [...base].sort((a, b) => a.t - b.t);
