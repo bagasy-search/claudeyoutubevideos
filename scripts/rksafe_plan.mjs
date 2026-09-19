@@ -181,7 +181,9 @@ for (const sec of secciones) {
       // ⭐ El metraje REAL no está atado a las duraciones de agnes: el archivo dura 8,2 s enteros y
       //    se reproduce a 1×, así que puede llenar CUALQUIER slot de 4,5 s para arriba. Sin esto
       //    sólo entraba en los slots de 4,03/8,07 y el metraje real se quedaba en 9,3 %.
-      const admiteReal = dur >= 4.5 && dur <= 9.4;   // el tope real de cada archivo se aplica abajo
+      // ⛔ 4,5 s era demasiado conservador: un archivo de 8,2 s entra en CUALQUIER slot (se corta,
+      //    no se congela), y con el piso alto 14 de 36 clips reales no se montaban nunca -> 8,7 %.
+      const admiteReal = dur >= 3.4 && dur <= 9.4;   // el tope real de cada archivo se aplica abajo
       // ⛔⛔ EL CURSOR NO PUEDE COMERSE LOS PLANOS QUE SALTEA (rkfob: 7 de 13 planos del hook nunca
       //    se montaron). Se lleva un set de USADOS; los salteados quedan disponibles.
       usadosPool[sec.sec] ||= new Set();
@@ -264,7 +266,11 @@ if (AVATAR_END > 1) {
   const idDe = (a) => (a || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '');
   // ⛔ un COMPONENTE nunca se quita para abrir ventana: el plan lo reservó primero y quitarlo lo
   //    hace DESAPARECER sin avisar (en rkfob se perdieron 5 de 18, uno era el CTA del video).
-  const candidatos = t1.filter((b) => b.kind !== 'componente' && b.dur <= 6.5 && !(b.asset && protegidos.has(idDe(b.asset))))
+  // ⛔⛔ Y TAMPOCO SE QUITA UN PLANO DE METRAJE REAL. Medido acá: el abridor de ventanas borraba 14 de
+  //    los 36 clips de stock YA asignados (8,8 % de metraje real cuando había 21 % de material en
+  //    disco). El stock es lo más escaso del pool y lo único que no dibujó una máquina: la ventana de
+  //    avatar se abre sobre una FOTO, que sobra.
+  const candidatos = t1.filter((b) => b.kind !== 'componente' && !b.real && b.dur <= 6.5 && !(b.asset && protegidos.has(idDe(b.asset))))
     .sort((a, b) => (inicios.has(b.t) ? 1 : 0) - (inicios.has(a.t) ? 1 : 0));
   const paso = Math.max(1, Math.floor(candidatos.length / Math.max(1, Math.ceil(sobra / 4.5))));
   for (let i = 0; i < candidatos.length && sobra > 0; i += paso) { candidatos[i]._quitar = true; sobra -= candidatos[i].dur; quitados++; }

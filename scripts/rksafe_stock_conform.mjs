@@ -11,7 +11,7 @@
 //    de agnes y sobre cámara real se ve como cámara lenta rara).
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 
 const SLUG = process.argv[2];
 if (!SLUG) { console.error('uso: node scripts/rksafe_stock_conform.mjs <slug> [srcDir]'); process.exit(1); }
@@ -29,12 +29,13 @@ const probe = (p, campos) => {
   } catch { return ''; }
 };
 const lumaMin = (p, t) => {
-  // ⛔ `-v info` y se lee STDERR: con `-v error` el medidor devuelve vacío y se lee como OK.
-  let salida = '';
-  try {
-    salida = ff(['-v', 'info', '-t', String(t), '-i', p, '-an', '-vf',
-      'scale=160:90,signalstats,metadata=print:key=lavfi.signalstats.YAVG', '-f', 'null', '-']);
-  } catch (e) { salida = String(e.stderr || ''); }
+  // ⛔⛔ `metadata=print` escribe en STDERR y ffmpeg SALE CON 0, así que `execFileSync` devuelve
+  //    stdout (vacío) y no hay excepción de la que sacar el stderr: el medidor daba "NO MEDÍ" en los
+  //    50 clips. Va `spawnSync`, que devuelve las DOS corrientes pase lo que pase.
+  const r = spawnSync('ffmpeg', ['-v', 'info', '-t', String(t), '-i', p, '-an', '-vf',
+    'scale=160:90,signalstats,metadata=print:key=lavfi.signalstats.YAVG', '-f', 'null', '-'],
+    { encoding: 'utf8', maxBuffer: 1 << 26 });
+  const salida = String(r.stdout || '') + String(r.stderr || '');
   const vals = [...salida.matchAll(/YAVG=([\d.]+)/g)].map((m) => +m[1]);
   return vals.length ? { min: Math.min(...vals), n: vals.length } : { min: null, n: 0 };
 };
