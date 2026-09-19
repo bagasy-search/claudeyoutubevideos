@@ -353,5 +353,245 @@
   "sec": "S15",
   "lugar": "workbench",
   "prompt": "workbench tools real footage"
+ },
+ "rkspots_r72": {
+  "sec": "S1",
+  "lugar": "hall",
+  "prompt": "empty hallway real footage"
+ },
+ "rkspots_r73": {
+  "sec": "S1",
+  "lugar": "street",
+  "prompt": "porch light real footage"
+ },
+ "rkspots_r74": {
+  "sec": "S15",
+  "lugar": "street",
+  "prompt": "garden path real footage"
+ },
+ "rkspots_r75": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "wooden staircase real footage"
+ },
+ "rkspots_r76": {
+  "sec": "S2",
+  "lugar": "street",
+  "prompt": "front doormat real footage"
+ },
+ "rkspots_r77": {
+  "sec": "S2",
+  "lugar": "livingroom",
+  "prompt": "curtain window real footage"
+ },
+ "rkspots_r78": {
+  "sec": "S3",
+  "lugar": "kitchen",
+  "prompt": "kitchen counter real footage"
+ },
+ "rkspots_r79": {
+  "sec": "S3",
+  "lugar": "kitchen",
+  "prompt": "empty kitchen real footage"
+ },
+ "rkspots_r80": {
+  "sec": "S3",
+  "lugar": "utility",
+  "prompt": "wooden shelf real footage"
+ },
+ "rkspots_r81": {
+  "sec": "S4",
+  "lugar": "bathroom",
+  "prompt": "bathroom tiles real footage"
+ },
+ "rkspots_r82": {
+  "sec": "S4",
+  "lugar": "bathroom",
+  "prompt": "empty bathroom real footage"
+ },
+ "rkspots_r83": {
+  "sec": "S4",
+  "lugar": "bathroom",
+  "prompt": "folded towels real footage"
+ },
+ "rkspots_r84": {
+  "sec": "S5",
+  "lugar": "livingroom",
+  "prompt": "old books stack real footage"
+ },
+ "rkspots_r85": {
+  "sec": "S5",
+  "lugar": "study",
+  "prompt": "bookshelf close real footage"
+ },
+ "rkspots_r86": {
+  "sec": "S5",
+  "lugar": "livingroom",
+  "prompt": "photo album real footage"
+ },
+ "rkspots_r87": {
+  "sec": "S6",
+  "lugar": "study",
+  "prompt": "desk lamp real footage"
+ },
+ "rkspots_r88": {
+  "sec": "S6",
+  "lugar": "study",
+  "prompt": "paper stack real footage"
+ },
+ "rkspots_r89": {
+  "sec": "S6",
+  "lugar": "study",
+  "prompt": "wooden desk real footage"
+ },
+ "rkspots_r90": {
+  "sec": "S7",
+  "lugar": "kidroom",
+  "prompt": "sewing box real footage"
+ },
+ "rkspots_r91": {
+  "sec": "S7",
+  "lugar": "kidroom",
+  "prompt": "wooden toy real footage"
+ },
+ "rkspots_r92": {
+  "sec": "S7",
+  "lugar": "kidroom",
+  "prompt": "empty nursery real footage"
+ },
+ "rkspots_r93": {
+  "sec": "S8",
+  "lugar": "bedroom",
+  "prompt": "tidy bedroom real footage"
+ },
+ "rkspots_r94": {
+  "sec": "S8",
+  "lugar": "bedroom",
+  "prompt": "bedroom window real footage"
+ },
+ "rkspots_r95": {
+  "sec": "S8",
+  "lugar": "bedroom",
+  "prompt": "wooden floor real footage"
+ },
+ "rkspots_r96": {
+  "sec": "S9",
+  "lugar": "closet",
+  "prompt": "empty wardrobe real footage"
+ },
+ "rkspots_r97": {
+  "sec": "S9",
+  "lugar": "closet",
+  "prompt": "old suitcase real footage"
+ },
+ "rkspots_r98": {
+  "sec": "S9",
+  "lugar": "closet",
+  "prompt": "linen cupboard real footage"
+ },
+ "rkspots_r99": {
+  "sec": "S10",
+  "lugar": "bedroom",
+  "prompt": "bedside lamp real footage"
+ },
+ "rkspots_r100": {
+  "sec": "S10",
+  "lugar": "bedroom",
+  "prompt": "old clock real footage"
+ },
+ "rkspots_r101": {
+  "sec": "S10",
+  "lugar": "bedroom",
+  "prompt": "dresser mirror real footage"
+ },
+ "rkspots_r102": {
+  "sec": "S11",
+  "lugar": "garage",
+  "prompt": "metal box real footage"
+ },
+ "rkspots_r103": {
+  "sec": "S11",
+  "lugar": "garage",
+  "prompt": "tool bench real footage"
+ },
+ "rkspots_r104": {
+  "sec": "S11",
+  "lugar": "garage",
+  "prompt": "screws real footage"
+ },
+ "rkspots_r105": {
+  "sec": "S11",
+  "lugar": "garage",
+  "prompt": "padlock real footage"
+ },
+ "rkspots_r106": {
+  "sec": "S12",
+  "lugar": "bedroom",
+  "prompt": "jewelry close real footage"
+ },
+ "rkspots_r107": {
+  "sec": "S12",
+  "lugar": "bedroom",
+  "prompt": "gold chain real footage"
+ },
+ "rkspots_r108": {
+  "sec": "S12",
+  "lugar": "bedroom",
+  "prompt": "watch close real footage"
+ },
+ "rkspots_r109": {
+  "sec": "S12",
+  "lugar": "bedroom",
+  "prompt": "coins real footage"
+ },
+ "rkspots_r110": {
+  "sec": "S13",
+  "lugar": "utility",
+  "prompt": "cardboard boxes real footage"
+ },
+ "rkspots_r111": {
+  "sec": "S13",
+  "lugar": "utility",
+  "prompt": "basement shelf real footage"
+ },
+ "rkspots_r112": {
+  "sec": "S13",
+  "lugar": "utility",
+  "prompt": "attic boxes real footage"
+ },
+ "rkspots_r113": {
+  "sec": "S13",
+  "lugar": "bedroom",
+  "prompt": "banknotes real footage"
+ },
+ "rkspots_r114": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "closed door real footage"
+ },
+ "rkspots_r115": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "door hinge real footage"
+ },
+ "rkspots_r116": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "keyhole real footage"
+ },
+ "rkspots_r117": {
+  "sec": "S14",
+  "lugar": "workbench",
+  "prompt": "brass key real footage"
+ },
+ "rkspots_r118": {
+  "sec": "S15",
+  "lugar": "livingroom",
+  "prompt": "window light real footage"
+ },
+ "rkspots_r119": {
+  "sec": "S15",
+  "lugar": "hall",
+  "prompt": "dusty attic real footage"
  }
 }

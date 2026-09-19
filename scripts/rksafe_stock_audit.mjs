@@ -66,11 +66,24 @@ if (!Array.isArray(ver) || ver.length < manifest.length * 0.9) {
 }
 
 // un clip cae si CUALQUIERA de sus dos cuadros tiene persona
+// ⛔⛔ EL JUEZ SE CONTRADICE A SÍ MISMO Y HAY QUE RECONCILIARLO CON SU PROPIA REGLA. Medido acá sobre
+//    142 cuadros: 6 veredictos volvieron `ok:false` con una razón que dice lo contrario —
+//    dos literalmente "No hay persona visible en la imagen" (etiqueta dada vuelta) y cuatro
+//    describiendo SÓLO UNA MANO o un brazo, que el propio SYSTEM del juez excluye ("sólo manos o
+//    sólo dedos NO cuenta"). Descartar por la etiqueta sola tira 5 clips sanos, y en un video donde
+//    las manos son las DEL PRESENTADOR eso es justo el material que se quiere.
+const NOPERSONA = /^\s*(no hay (ninguna )?persona|no visible person|ninguna persona|sin persona)/i;
+const SOLOMANO = /^\s*(una |la |el |un )?(mano|manos|brazo|brazos|dedo|dedos|hand|hands|a hand)\b/i;
 const conGente = new Map();
+let reconciliados = 0;
 for (const v of ver) {
   const id = String(v.name).replace(/_[ab]$/, '');
-  if (v.ok === false) conGente.set(id, (conGente.get(id) || []).concat(v.reason || v.issue || 'persona'));
+  if (v.ok !== false) continue;
+  const razon = String(v.reason || '');
+  if (NOPERSONA.test(razon) || SOLOMANO.test(razon)) { reconciliados++; continue; }
+  conGente.set(id, (conGente.get(id) || []).concat(razon || v.issue || 'persona'));
 }
+console.log(`MEDIDO: ${ver.length} veredictos · ${reconciliados} se contradecían con su propia razón (etiqueta dada vuelta o sólo manos) y NO se cuentan como persona`);
 const mapa = fs.existsSync(MAPA) ? JSON.parse(fs.readFileSync(MAPA, 'utf8')) : {};
 const vivos = clips.filter((id) => !conGente.has(id));
 const caidos = clips.filter((id) => conGente.has(id));

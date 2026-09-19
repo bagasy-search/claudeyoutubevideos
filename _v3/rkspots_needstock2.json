@@ -1,0 +1,338 @@
+[
+ {
+  "name": "rkspots_r72",
+  "concept": "empty hallway",
+  "query": "empty hallway",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r73",
+  "concept": "porch light",
+  "query": "porch light",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r74",
+  "concept": "garden path",
+  "query": "garden path",
+  "dur": 8.2,
+  "sec": "S15"
+ },
+ {
+  "name": "rkspots_r75",
+  "concept": "wooden staircase",
+  "query": "wooden staircase",
+  "dur": 8.2,
+  "sec": "S2"
+ },
+ {
+  "name": "rkspots_r76",
+  "concept": "front doormat",
+  "query": "front doormat",
+  "dur": 8.2,
+  "sec": "S2"
+ },
+ {
+  "name": "rkspots_r77",
+  "concept": "curtain window",
+  "query": "curtain window",
+  "dur": 8.2,
+  "sec": "S2"
+ },
+ {
+  "name": "rkspots_r78",
+  "concept": "kitchen counter",
+  "query": "kitchen counter",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r79",
+  "concept": "empty kitchen",
+  "query": "empty kitchen",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r80",
+  "concept": "wooden shelf",
+  "query": "wooden shelf",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r81",
+  "concept": "bathroom tiles",
+  "query": "bathroom tiles",
+  "dur": 8.2,
+  "sec": "S4"
+ },
+ {
+  "name": "rkspots_r82",
+  "concept": "empty bathroom",
+  "query": "empty bathroom",
+  "dur": 8.2,
+  "sec": "S4"
+ },
+ {
+  "name": "rkspots_r83",
+  "concept": "folded towels",
+  "query": "folded towels",
+  "dur": 8.2,
+  "sec": "S4"
+ },
+ {
+  "name": "rkspots_r84",
+  "concept": "old books stack",
+  "query": "old books stack",
+  "dur": 8.2,
+  "sec": "S5"
+ },
+ {
+  "name": "rkspots_r85",
+  "concept": "bookshelf close",
+  "query": "bookshelf close",
+  "dur": 8.2,
+  "sec": "S5"
+ },
+ {
+  "name": "rkspots_r86",
+  "concept": "photo album",
+  "query": "photo album",
+  "dur": 8.2,
+  "sec": "S5"
+ },
+ {
+  "name": "rkspots_r87",
+  "concept": "desk lamp",
+  "query": "desk lamp",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r88",
+  "concept": "paper stack",
+  "query": "paper stack",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r89",
+  "concept": "wooden desk",
+  "query": "wooden desk",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r90",
+  "concept": "sewing box",
+  "query": "sewing box",
+  "dur": 8.2,
+  "sec": "S7"
+ },
+ {
+  "name": "rkspots_r91",
+  "concept": "wooden toy",
+  "query": "wooden toy",
+  "dur": 8.2,
+  "sec": "S7"
+ },
+ {
+  "name": "rkspots_r92",
+  "concept": "empty nursery",
+  "query": "empty nursery",
+  "dur": 8.2,
+  "sec": "S7"
+ },
+ {
+  "name": "rkspots_r93",
+  "concept": "tidy bedroom",
+  "query": "tidy bedroom",
+  "dur": 8.2,
+  "sec": "S8"
+ },
+ {
+  "name": "rkspots_r94",
+  "concept": "bedroom window",
+  "query": "bedroom window",
+  "dur": 8.2,
+  "sec": "S8"
+ },
+ {
+  "name": "rkspots_r95",
+  "concept": "wooden floor",
+  "query": "wooden floor",
+  "dur": 8.2,
+  "sec": "S8"
+ },
+ {
+  "name": "rkspots_r96",
+  "concept": "empty wardrobe",
+  "query": "empty wardrobe",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r97",
+  "concept": "old suitcase",
+  "query": "old suitcase",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r98",
+  "concept": "linen cupboard",
+  "query": "linen cupboard",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r99",
+  "concept": "bedside lamp",
+  "query": "bedside lamp",
+  "dur": 8.2,
+  "sec": "S10"
+ },
+ {
+  "name": "rkspots_r100",
+  "concept": "old clock",
+  "query": "old clock",
+  "dur": 8.2,
+  "sec": "S10"
+ },
+ {
+  "name": "rkspots_r101",
+  "concept": "dresser mirror",
+  "query": "dresser mirror",
+  "dur": 8.2,
+  "sec": "S10"
+ },
+ {
+  "name": "rkspots_r102",
+  "concept": "metal box",
+  "query": "metal box",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r103",
+  "concept": "tool bench",
+  "query": "tool bench",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r104",
+  "concept": "screws",
+  "query": "screws",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r105",
+  "concept": "padlock",
+  "query": "padlock",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r106",
+  "concept": "jewelry close",
+  "query": "jewelry close",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r107",
+  "concept": "gold chain",
+  "query": "gold chain",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r108",
+  "concept": "watch close",
+  "query": "watch close",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r109",
+  "concept": "coins",
+  "query": "coins",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r110",
+  "concept": "cardboard boxes",
+  "query": "cardboard boxes",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r111",
+  "concept": "basement shelf",
+  "query": "basement shelf",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r112",
+  "concept": "attic boxes",
+  "query": "attic boxes",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r113",
+  "concept": "banknotes",
+  "query": "banknotes",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r114",
+  "concept": "closed door",
+  "query": "closed door",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r115",
+  "concept": "door hinge",
+  "query": "door hinge",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r116",
+  "concept": "keyhole",
+  "query": "keyhole",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r117",
+  "concept": "brass key",
+  "query": "brass key",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r118",
+  "concept": "window light",
+  "query": "window light",
+  "dur": 8.2,
+  "sec": "S15"
+ },
+ {
+  "name": "rkspots_r119",
+  "concept": "dusty attic",
+  "query": "dusty attic",
+  "dur": 8.2,
+  "sec": "S15"
+ }
+]
