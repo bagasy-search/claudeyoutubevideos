@@ -1,0 +1,2958 @@
+{
+ "total": 1588.824,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0,
+   "dur": 4.6,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w000.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 4.6,
+   "dur": 3.066667,
+   "sec": "S0",
+   "m": 2,
+   "lug": "porch",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m002.mp4"
+  },
+  {
+   "t": 7.666667,
+   "dur": 6.066667,
+   "sec": "S0",
+   "m": 3,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m003.jpg"
+  },
+  {
+   "t": 13.733333,
+   "dur": 5.366667,
+   "sec": "S0",
+   "m": 4,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m004.jpg"
+  },
+  {
+   "t": 19.1,
+   "dur": 4.233333,
+   "sec": "S0",
+   "m": 4,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m004x.jpg"
+  },
+  {
+   "t": 23.333333,
+   "dur": 5.233333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w001.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 28.566667,
+   "dur": 3.633333,
+   "sec": "S0",
+   "m": 7,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m007.jpg"
+  },
+  {
+   "t": 32.2,
+   "dur": 3.433333,
+   "sec": "S0",
+   "m": 8,
+   "lug": "taller",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m008.mp4"
+  },
+  {
+   "t": 35.633333,
+   "dur": 2.866667,
+   "sec": "S0",
+   "m": 9,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m009.jpg"
+  },
+  {
+   "t": 38.5,
+   "dur": 6.566667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w002.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 45.066667,
+   "dur": 6.666667,
+   "sec": "S0",
+   "m": 12,
+   "lug": "living",
+   "kind": "imagen",
+   "asset": "img/rksmart_m012.jpg"
+  },
+  {
+   "t": 51.733333,
+   "dur": 5.233333,
+   "sec": "S0",
+   "m": 12,
+   "lug": "calle",
+   "kind": "imagen",
+   "asset": "img/rksmart_m012x.jpg"
+  },
+  {
+   "t": 56.966667,
+   "dur": 3.366667,
+   "sec": "S0",
+   "m": 13,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m013.jpg"
+  },
+  {
+   "t": 60.333333,
+   "dur": 3.466667,
+   "sec": "S0",
+   "m": 14,
+   "lug": "tienda",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m014.mp4"
+  },
+  {
+   "t": 63.8,
+   "dur": 10.966667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w003.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 74.766667,
+   "dur": 6.366667,
+   "sec": "S0",
+   "m": 17,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m017.jpg"
+  },
+  {
+   "t": 81.133333,
+   "dur": 5.866667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w004.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 87,
+   "dur": 6.633333,
+   "sec": "S0",
+   "m": 19,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m019.jpg"
+  },
+  {
+   "t": 93.633333,
+   "dur": 5.2,
+   "sec": "S0",
+   "m": 19,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m019x.jpg"
+  },
+  {
+   "t": 98.833333,
+   "dur": 6.233333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w005.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 105.066667,
+   "dur": 4.033333,
+   "sec": "S1",
+   "m": 23,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m023.jpg"
+  },
+  {
+   "t": 109.1,
+   "dur": 7.366667,
+   "sec": "S1",
+   "m": 24,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m024.jpg"
+  },
+  {
+   "t": 116.466667,
+   "dur": 8.366667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w006.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 124.833333,
+   "dur": 4.2,
+   "sec": "S1",
+   "m": 27,
+   "lug": "calle",
+   "kind": "imagen",
+   "asset": "img/rksmart_m027.jpg"
+  },
+  {
+   "t": 129.033333,
+   "dur": 4.033333,
+   "sec": "S1",
+   "m": 28,
+   "lug": "kitchen",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m028.mp4"
+  },
+  {
+   "t": 133.066667,
+   "dur": 4.466667,
+   "sec": "S1",
+   "m": 28,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m028x.jpg"
+  },
+  {
+   "t": 137.533333,
+   "dur": 6.933333,
+   "sec": "S1",
+   "m": 29,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m029.jpg"
+  },
+  {
+   "t": 144.466667,
+   "dur": 2.5,
+   "sec": "S1",
+   "m": 30,
+   "lug": "taller",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m030.mp4"
+  },
+  {
+   "t": 146.966667,
+   "dur": 8.9,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w007.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 155.866667,
+   "dur": 5.966667,
+   "sec": "S1",
+   "m": 33,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m033.jpg"
+  },
+  {
+   "t": 161.833333,
+   "dur": 3.8,
+   "sec": "S1",
+   "m": 34,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m034.jpg"
+  },
+  {
+   "t": 165.633333,
+   "dur": 6.233333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w008.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 171.866667,
+   "dur": 7.933333,
+   "sec": "S1",
+   "m": 36,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m036.jpg"
+  },
+  {
+   "t": 179.8,
+   "dur": 4.033333,
+   "sec": "S1",
+   "m": 36,
+   "lug": "casa",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m036x.mp4"
+  },
+  {
+   "t": 183.833333,
+   "dur": 2.533333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w009.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 186.366667,
+   "dur": 4.5,
+   "kind": "componente",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "The lock was always fine. It was the wood that lost.",
+    "attrib": "— Ray, four thousand doors"
+   },
+   "bed": "img/rksmart_m036x_blur.jpg",
+   "sec": "S1",
+   "m": 38
+  },
+  {
+   "t": 190.866667,
+   "dur": 6.4,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w010.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 197.266667,
+   "dur": 2.7,
+   "sec": "S2",
+   "m": 40,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m040.jpg"
+  },
+  {
+   "t": 199.966667,
+   "dur": 8.7,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w011.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 208.666667,
+   "dur": 2.7,
+   "sec": "S2",
+   "m": 43,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m043.jpg"
+  },
+  {
+   "t": 211.366667,
+   "dur": 2.333333,
+   "sec": "S2",
+   "m": 44,
+   "lug": "taller",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m044.mp4"
+  },
+  {
+   "t": 213.7,
+   "dur": 4.7,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w012.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 218.4,
+   "dur": 5.633333,
+   "sec": "S2",
+   "m": 46,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m046.jpg"
+  },
+  {
+   "t": 224.033333,
+   "dur": 7.333333,
+   "sec": "S2",
+   "m": 47,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m047.jpg"
+  },
+  {
+   "t": 231.366667,
+   "dur": 1.633333,
+   "sec": "S2",
+   "m": 48,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m048.jpg"
+  },
+  {
+   "t": 233,
+   "dur": 6.066667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w013.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 239.066667,
+   "dur": 6.9,
+   "kind": "componente",
+   "comp": "RouteFlow",
+   "props": {
+    "kicker": "HOW THEY ACTUALLY GET IN",
+    "title": "Three buckets, and none of them is clever",
+    "steps": [
+     {
+      "label": "Forced"
+     },
+     {
+      "label": "Walked in"
+     },
+     {
+      "label": "Tried and failed"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m048_blur.jpg",
+   "sec": "S2",
+   "m": 50
+  },
+  {
+   "t": 245.966667,
+   "dur": 1.9,
+   "sec": "S2",
+   "m": 51,
+   "lug": "casa",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m051.mp4"
+  },
+  {
+   "t": 247.866667,
+   "dur": 5.6,
+   "sec": "S2",
+   "m": 52,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m052.jpg"
+  },
+  {
+   "t": 253.466667,
+   "dur": 4.4,
+   "sec": "S2",
+   "m": 52,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m052x.jpg"
+  },
+  {
+   "t": 257.866667,
+   "dur": 2.733333,
+   "sec": "S2",
+   "m": 53,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m053.jpg"
+  },
+  {
+   "t": 260.6,
+   "dur": 15.1,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w014.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 275.7,
+   "dur": 5.133333,
+   "sec": "S2",
+   "m": 58,
+   "lug": "calle",
+   "kind": "imagen",
+   "asset": "img/rksmart_m058.jpg"
+  },
+  {
+   "t": 280.833333,
+   "dur": 4.033333,
+   "sec": "S2",
+   "m": 58,
+   "lug": "calle",
+   "kind": "imagen",
+   "asset": "img/rksmart_m058x.jpg"
+  },
+  {
+   "t": 284.866667,
+   "dur": 6,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w015.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 290.866667,
+   "dur": 4.266667,
+   "sec": "S2",
+   "m": 60,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m060.jpg"
+  },
+  {
+   "t": 295.133333,
+   "dur": 4.033333,
+   "sec": "S2",
+   "m": 61,
+   "lug": "porch",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m061.mp4"
+  },
+  {
+   "t": 299.166667,
+   "dur": 5.466667,
+   "sec": "S2",
+   "m": 62,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m062.jpg"
+  },
+  {
+   "t": 304.633333,
+   "dur": 3.4,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "10,000",
+    "unit": "down to 24",
+    "caption": "Four polished buttons is all it takes.",
+    "tone": "danger"
+   },
+   "bed": "img/rksmart_m062_blur.jpg",
+   "sec": "S2",
+   "m": 63
+  },
+  {
+   "t": 308.033333,
+   "dur": 7.366667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w016.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 315.4,
+   "dur": 7.2,
+   "sec": "S2",
+   "m": 65,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m065.jpg"
+  },
+  {
+   "t": 322.6,
+   "dur": 5.666667,
+   "sec": "S2",
+   "m": 65,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m065x.jpg"
+  },
+  {
+   "t": 328.266667,
+   "dur": 11.033333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w017.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 339.3,
+   "dur": 7.366667,
+   "sec": "S3",
+   "m": 70,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m070.jpg"
+  },
+  {
+   "t": 346.666667,
+   "dur": 4.066667,
+   "sec": "S3",
+   "m": 71,
+   "lug": "porch",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m071.mp4"
+  },
+  {
+   "t": 350.733333,
+   "dur": 2.933333,
+   "sec": "S3",
+   "m": 72,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m072.jpg"
+  },
+  {
+   "t": 353.666667,
+   "dur": 6.6,
+   "sec": "S3",
+   "m": 73,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m073.jpg"
+  },
+  {
+   "t": 360.266667,
+   "dur": 6.7,
+   "kind": "componente",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "THE PART NOBODY MENTIONS",
+    "myth": "The lock is the app",
+    "truth": "The lock is the keyhole under the cap"
+   },
+   "bed": "img/rksmart_m073_blur.jpg",
+   "sec": "S3",
+   "m": 74
+  },
+  {
+   "t": 366.966667,
+   "dur": 6.633333,
+   "sec": "S3",
+   "m": 75,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m075.jpg"
+  },
+  {
+   "t": 373.6,
+   "dur": 5.2,
+   "sec": "S3",
+   "m": 75,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m075x.jpg"
+  },
+  {
+   "t": 378.8,
+   "dur": 3.866667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w018.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 382.666667,
+   "dur": 2.6,
+   "sec": "S3",
+   "m": 77,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m077.jpg"
+  },
+  {
+   "t": 385.266667,
+   "dur": 5.5,
+   "sec": "S3",
+   "m": 78,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m078.jpg"
+  },
+  {
+   "t": 390.766667,
+   "dur": 4.033333,
+   "sec": "S3",
+   "m": 79,
+   "lug": "living",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m079.mp4"
+  },
+  {
+   "t": 394.8,
+   "dur": 5.2,
+   "sec": "S3",
+   "m": 79,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m079x.jpg"
+  },
+  {
+   "t": 400,
+   "dur": 5.2,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w019.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 405.2,
+   "dur": 2.966667,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "$15",
+    "unit": "of the $400",
+    "caption": "That is the part that actually opens the door.",
+    "tone": "danger"
+   },
+   "bed": "img/rksmart_m079x_blur.jpg",
+   "sec": "S3",
+   "m": 81
+  },
+  {
+   "t": 408.166667,
+   "dur": 4.133333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w020.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 412.3,
+   "dur": 1.733333,
+   "sec": "S3",
+   "m": 83,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m083.jpg"
+  },
+  {
+   "t": 414.033333,
+   "dur": 3.366667,
+   "sec": "S3",
+   "m": 84,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m084.jpg"
+  },
+  {
+   "t": 417.4,
+   "dur": 4.033333,
+   "sec": "S3",
+   "m": 85,
+   "lug": "oficina",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m085.mp4"
+  },
+  {
+   "t": 421.433333,
+   "dur": 4.9,
+   "sec": "S3",
+   "m": 86,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m086.jpg"
+  },
+  {
+   "t": 426.333333,
+   "dur": 8.866667,
+   "sec": "S3",
+   "m": 87,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m087.jpg"
+  },
+  {
+   "t": 435.2,
+   "dur": 4.033333,
+   "sec": "S3",
+   "m": 87,
+   "lug": "tienda",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m087x.mp4"
+  },
+  {
+   "t": 439.233333,
+   "dur": 3.1,
+   "sec": "S3",
+   "m": 88,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m088.jpg"
+  },
+  {
+   "t": 442.333333,
+   "dur": 3.6,
+   "sec": "S3",
+   "m": 89,
+   "lug": "taller",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m089.mp4"
+  },
+  {
+   "t": 445.933333,
+   "dur": 13.233333,
+   "kind": "componente",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "THE ELECTRONIC LOCK",
+    "leftValue": "Rolling codes",
+    "rightLabel": "THE CYLINDER UNDER IT",
+    "rightValue": "1890",
+    "verdict": "He gets to choose which one he deals with."
+   },
+   "bed": "img/rksmart_m089_blur.jpg",
+   "sec": "S3",
+   "m": 90
+  },
+  {
+   "t": 459.166667,
+   "dur": 16.233333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w021.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 475.4,
+   "dur": 6.7,
+   "sec": "S3",
+   "m": 95,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m095.jpg"
+  },
+  {
+   "t": 482.1,
+   "dur": 5.666667,
+   "sec": "S3",
+   "m": 95,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m095x.jpg"
+  },
+  {
+   "t": 487.766667,
+   "dur": 4.366667,
+   "sec": "S3",
+   "m": 95,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m095y.jpg"
+  },
+  {
+   "t": 492.133333,
+   "dur": 2.533333,
+   "sec": "S3",
+   "m": 96,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m096.jpg"
+  },
+  {
+   "t": 494.666667,
+   "dur": 4.7,
+   "sec": "S3",
+   "m": 97,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m097.jpg"
+  },
+  {
+   "t": 499.366667,
+   "dur": 4.733333,
+   "sec": "S3",
+   "m": 98,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m098.jpg"
+  },
+  {
+   "t": 504.1,
+   "dur": 3.7,
+   "sec": "S3",
+   "m": 98,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m098x.jpg"
+  },
+  {
+   "t": 507.8,
+   "dur": 8.566667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w022.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 516.366667,
+   "dur": 7.233333,
+   "sec": "S3",
+   "m": 101,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m101.jpg"
+  },
+  {
+   "t": 523.6,
+   "dur": 11.733333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w023.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 535.333333,
+   "dur": 4.3,
+   "sec": "S4",
+   "m": 104,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m104.jpg"
+  },
+  {
+   "t": 539.633333,
+   "dur": 2.3,
+   "sec": "S4",
+   "m": 105,
+   "lug": "kitchen",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m105.mp4"
+  },
+  {
+   "t": 541.933333,
+   "dur": 10.066667,
+   "kind": "componente",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "THE KEYS YOU ACTUALLY KNOW ABOUT",
+    "title": "Four, and you can name all four",
+    "items": [
+     {
+      "text": "Yours, on your ring"
+     },
+     {
+      "text": "Your wife's"
+     },
+     {
+      "text": "The one in the drawer"
+     },
+     {
+      "text": "The one your sister keeps"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m105_blur.jpg",
+   "sec": "S4",
+   "m": 106
+  },
+  {
+   "t": 552,
+   "dur": 2.033333,
+   "sec": "S4",
+   "m": 107,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m107.jpg"
+  },
+  {
+   "t": 554.033333,
+   "dur": 2.633333,
+   "sec": "S4",
+   "m": 108,
+   "lug": "living",
+   "kind": "imagen",
+   "asset": "img/rksmart_m108.jpg"
+  },
+  {
+   "t": 556.666667,
+   "dur": 3.033333,
+   "sec": "S4",
+   "m": 109,
+   "lug": "living",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m109.mp4"
+  },
+  {
+   "t": 559.7,
+   "dur": 4.6,
+   "sec": "S4",
+   "m": 110,
+   "lug": "calle",
+   "kind": "imagen",
+   "asset": "img/rksmart_m110.jpg"
+  },
+  {
+   "t": 564.3,
+   "dur": 2.566667,
+   "sec": "S4",
+   "m": 111,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m111.jpg"
+  },
+  {
+   "t": 566.866667,
+   "dur": 2.666667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w024.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 569.533333,
+   "dur": 5,
+   "sec": "S4",
+   "m": 113,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m113.jpg"
+  },
+  {
+   "t": 574.533333,
+   "dur": 4.033333,
+   "sec": "S4",
+   "m": 114,
+   "lug": "kitchen",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m114.mp4"
+  },
+  {
+   "t": 578.566667,
+   "dur": 5.366667,
+   "sec": "S4",
+   "m": 114,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m114x.jpg"
+  },
+  {
+   "t": 583.933333,
+   "dur": 3.833333,
+   "sec": "S4",
+   "m": 115,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m115.jpg"
+  },
+  {
+   "t": 587.766667,
+   "dur": 4.933333,
+   "sec": "S4",
+   "m": 116,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m116.jpg"
+  },
+  {
+   "t": 592.7,
+   "dur": 4.033333,
+   "sec": "S4",
+   "m": 117,
+   "lug": "casa",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m117.mp4"
+  },
+  {
+   "t": 596.733333,
+   "dur": 13.733333,
+   "kind": "componente",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "THE CODES",
+    "leftValue": "You manage them",
+    "rightLabel": "THE KEYS",
+    "rightValue": "Nobody does",
+    "verdict": "The lock never sends you a notification about a key."
+   },
+   "bed": "img/rksmart_m117_blur.jpg",
+   "sec": "S4",
+   "m": 118
+  },
+  {
+   "t": 610.466667,
+   "dur": 3.466667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w025.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 613.933333,
+   "dur": 4.933333,
+   "sec": "S4",
+   "m": 120,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m120.jpg"
+  },
+  {
+   "t": 618.866667,
+   "dur": 6.8,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w026.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 625.666667,
+   "dur": 4.666667,
+   "kind": "componente",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "If the keyhole is the weak point, why does the lock have one at all?",
+    "attrib": "— the fair question"
+   },
+   "bed": "img/rksmart_m120_blur.jpg",
+   "sec": "S5",
+   "m": 122
+  },
+  {
+   "t": 630.333333,
+   "dur": 2.833333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w027.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 633.166667,
+   "dur": 4.766667,
+   "sec": "S5",
+   "m": 124,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m124.jpg"
+  },
+  {
+   "t": 637.933333,
+   "dur": 3.766667,
+   "sec": "S5",
+   "m": 124,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m124x.jpg"
+  },
+  {
+   "t": 641.7,
+   "dur": 6.6,
+   "sec": "S5",
+   "m": 125,
+   "lug": "oficina",
+   "kind": "imagen",
+   "asset": "img/rksmart_m125.jpg"
+  },
+  {
+   "t": 648.3,
+   "dur": 4.033333,
+   "sec": "S5",
+   "m": 125,
+   "lug": "tienda",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m125x.mp4"
+  },
+  {
+   "t": 652.333333,
+   "dur": 6.033333,
+   "sec": "S5",
+   "m": 126,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m126.jpg"
+  },
+  {
+   "t": 658.366667,
+   "dur": 9.666667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w028.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 668.033333,
+   "dur": 7.4,
+   "sec": "S5",
+   "m": 129,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m129.jpg"
+  },
+  {
+   "t": 675.433333,
+   "dur": 5.833333,
+   "sec": "S5",
+   "m": 129,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m129x.jpg"
+  },
+  {
+   "t": 681.266667,
+   "dur": 2.933333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w029.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 684.2,
+   "dur": 6.1,
+   "kind": "componente",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "NOT ALL OF THEM",
+    "myth": "Every keyhole is a hole",
+    "truth": "A serious cylinder makes it a feature"
+   },
+   "bed": "img/rksmart_m129x_blur.jpg",
+   "sec": "S5",
+   "m": 131
+  },
+  {
+   "t": 690.3,
+   "dur": 7.533333,
+   "sec": "S5",
+   "m": 132,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m132.jpg"
+  },
+  {
+   "t": 697.833333,
+   "dur": 4.033333,
+   "sec": "S5",
+   "m": 133,
+   "lug": "tienda",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m133.mp4"
+  },
+  {
+   "t": 701.866667,
+   "dur": 6.9,
+   "sec": "S5",
+   "m": 134,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m134.jpg"
+  },
+  {
+   "t": 708.766667,
+   "dur": 11.733333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w030.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 720.5,
+   "dur": 6.966667,
+   "sec": "S6",
+   "m": 138,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m138.jpg"
+  },
+  {
+   "t": 727.466667,
+   "dur": 7.4,
+   "sec": "S6",
+   "m": 139,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m139.jpg"
+  },
+  {
+   "t": 734.866667,
+   "dur": 2.566667,
+   "kind": "componente",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "The lock is not what holds your door shut.",
+    "attrib": "— Ray"
+   },
+   "bed": "img/rksmart_m139_blur.jpg",
+   "sec": "S6",
+   "m": 140
+  },
+  {
+   "t": 737.433333,
+   "dur": 4.8,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w031.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 742.233333,
+   "dur": 1.6,
+   "sec": "S6",
+   "m": 142,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m142.jpg"
+  },
+  {
+   "t": 743.833333,
+   "dur": 2.466667,
+   "sec": "S6",
+   "m": 143,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m143.jpg"
+  },
+  {
+   "t": 746.3,
+   "dur": 1.966667,
+   "sec": "S6",
+   "m": 143,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m143x.jpg"
+  },
+  {
+   "t": 748.266667,
+   "dur": 6.6,
+   "sec": "S6",
+   "m": 144,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m144.jpg"
+  },
+  {
+   "t": 754.866667,
+   "dur": 7.266667,
+   "sec": "S6",
+   "m": 144,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m144x.jpg"
+  },
+  {
+   "t": 762.133333,
+   "dur": 4.033333,
+   "sec": "S6",
+   "m": 145,
+   "lug": "casa",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m145.mp4"
+  },
+  {
+   "t": 766.166667,
+   "dur": 4.766667,
+   "sec": "S6",
+   "m": 145,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m145x.jpg"
+  },
+  {
+   "t": 770.933333,
+   "dur": 5.9,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "3/4\"",
+    "unit": "of screw",
+    "caption": "That is what is holding the door. Not the lock.",
+    "tone": "danger"
+   },
+   "bed": "img/rksmart_m145x_blur.jpg",
+   "sec": "S6",
+   "m": 146
+  },
+  {
+   "t": 776.833333,
+   "dur": 2.133333,
+   "sec": "S6",
+   "m": 148,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m148.jpg"
+  },
+  {
+   "t": 778.966667,
+   "dur": 4.033333,
+   "sec": "S6",
+   "m": 149,
+   "lug": "taller",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m149.mp4"
+  },
+  {
+   "t": 783,
+   "dur": 3.933333,
+   "sec": "S6",
+   "m": 149,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m149x.jpg"
+  },
+  {
+   "t": 786.933333,
+   "dur": 3.166667,
+   "sec": "S6",
+   "m": 150,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m150.jpg"
+  },
+  {
+   "t": 790.1,
+   "dur": 6.433333,
+   "kind": "componente",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "WHAT YOU BOUGHT",
+    "leftValue": "$460",
+    "rightLabel": "WHAT IS HOLDING IT",
+    "rightValue": "2 screws",
+    "verdict": "Two little screws in some pine."
+   },
+   "bed": "img/rksmart_m150_blur.jpg",
+   "sec": "S6",
+   "m": 151
+  },
+  {
+   "t": 796.533333,
+   "dur": 5.733333,
+   "sec": "S6",
+   "m": 152,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m152.jpg"
+  },
+  {
+   "t": 802.266667,
+   "dur": 4.133333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w032.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 806.4,
+   "dur": 5.766667,
+   "sec": "S6",
+   "m": 155,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m155.jpg"
+  },
+  {
+   "t": 812.166667,
+   "dur": 4.9,
+   "sec": "S6",
+   "m": 155,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m155x.jpg"
+  },
+  {
+   "t": 817.066667,
+   "dur": 3.733333,
+   "sec": "S6",
+   "m": 155,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m155y.jpg"
+  },
+  {
+   "t": 820.8,
+   "dur": 4.833333,
+   "sec": "S6",
+   "m": 156,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m156.jpg"
+  },
+  {
+   "t": 825.633333,
+   "dur": 7.233333,
+   "sec": "S6",
+   "m": 157,
+   "lug": "oficina",
+   "kind": "imagen",
+   "asset": "img/rksmart_m157.jpg"
+  },
+  {
+   "t": 832.866667,
+   "dur": 7.533333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w033.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 840.4,
+   "dur": 8.433333,
+   "sec": "S6",
+   "m": 159,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m159.jpg"
+  },
+  {
+   "t": 848.833333,
+   "dur": 3,
+   "sec": "S6",
+   "m": 160,
+   "lug": "living",
+   "kind": "imagen",
+   "asset": "img/rksmart_m160.jpg"
+  },
+  {
+   "t": 851.833333,
+   "dur": 10.633333,
+   "sec": "S6",
+   "m": 161,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m161.jpg"
+  },
+  {
+   "t": 862.466667,
+   "dur": 6.6,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w034.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 869.066667,
+   "dur": 4.266667,
+   "sec": "S7",
+   "m": 163,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m163.jpg"
+  },
+  {
+   "t": 873.333333,
+   "dur": 3.333333,
+   "sec": "S7",
+   "m": 163,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m163x.jpg"
+  },
+  {
+   "t": 876.666667,
+   "dur": 1.866667,
+   "sec": "S7",
+   "m": 164,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m164.jpg"
+  },
+  {
+   "t": 878.533333,
+   "dur": 6.733333,
+   "kind": "componente",
+   "comp": "ScrewHero",
+   "props": {
+    "kicker": "THE ONE THAT ANCHORS THE DOOR",
+    "title": "3\"",
+    "sub": "The long wood screw. Same head, same drive, just long.",
+    "pieces": [
+     {
+      "kind": "bolt",
+      "x": 19,
+      "scale": 0.84,
+      "rot": -14
+     },
+     {
+      "kind": "stubby",
+      "x": 40,
+      "scale": 0.88,
+      "rot": 9
+     },
+     {
+      "kind": "wood",
+      "x": 61,
+      "scale": 1.06,
+      "rot": -6,
+      "hero": true
+     },
+     {
+      "kind": "nail",
+      "x": 81,
+      "scale": 0.8,
+      "rot": 17
+     }
+    ]
+   },
+   "bed": "img/rksmart_m164_blur.jpg",
+   "sec": "S7",
+   "m": 165
+  },
+  {
+   "t": 885.266667,
+   "dur": 1.833333,
+   "sec": "S7",
+   "m": 166,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m166.jpg"
+  },
+  {
+   "t": 887.1,
+   "dur": 1.633333,
+   "sec": "S7",
+   "m": 167,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m167.jpg"
+  },
+  {
+   "t": 888.733333,
+   "dur": 5.2,
+   "sec": "S7",
+   "m": 168,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m168.jpg"
+  },
+  {
+   "t": 893.933333,
+   "dur": 4.033333,
+   "sec": "S7",
+   "m": 169,
+   "lug": "tienda",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m169.mp4"
+  },
+  {
+   "t": 897.966667,
+   "dur": 1.366667,
+   "sec": "S7",
+   "m": 170,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m170.jpg"
+  },
+  {
+   "t": 899.333333,
+   "dur": 4.066667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w035.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 903.4,
+   "dur": 5.5,
+   "sec": "S7",
+   "m": 172,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m172.jpg"
+  },
+  {
+   "t": 908.9,
+   "dur": 4.633333,
+   "sec": "S7",
+   "m": 172,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m172x.jpg"
+  },
+  {
+   "t": 913.533333,
+   "dur": 3.566667,
+   "sec": "S7",
+   "m": 172,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m172y.jpg"
+  },
+  {
+   "t": 917.1,
+   "dur": 5.866667,
+   "sec": "S7",
+   "m": 173,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m173.jpg"
+  },
+  {
+   "t": 922.966667,
+   "dur": 4.033333,
+   "sec": "S7",
+   "m": 174,
+   "lug": "casa",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m174.mp4"
+  },
+  {
+   "t": 927,
+   "dur": 3.866667,
+   "sec": "S7",
+   "m": 175,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m175.jpg"
+  },
+  {
+   "t": 930.866667,
+   "dur": 8.266667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w036.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 939.133333,
+   "dur": 2.9,
+   "sec": "S7",
+   "m": 177,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m177.jpg"
+  },
+  {
+   "t": 942.033333,
+   "dur": 4.033333,
+   "sec": "S7",
+   "m": 178,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m178.jpg"
+  },
+  {
+   "t": 946.066667,
+   "dur": 9.033333,
+   "sec": "S7",
+   "m": 179,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m179.jpg"
+  },
+  {
+   "t": 955.1,
+   "dur": 7.066667,
+   "sec": "S7",
+   "m": 179,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m179x.jpg"
+  },
+  {
+   "t": 962.166667,
+   "dur": 7.6,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "$3",
+    "unit": "fixes it",
+    "caption": "Everything past that is somebody's margin.",
+    "tone": "brass"
+   },
+   "bed": "img/rksmart_m179x_blur.jpg",
+   "sec": "S7",
+   "m": 180
+  },
+  {
+   "t": 969.766667,
+   "dur": 4.2,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w037.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 973.966667,
+   "dur": 9.766667,
+   "sec": "S8",
+   "m": 182,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m182.jpg"
+  },
+  {
+   "t": 983.733333,
+   "dur": 4.033333,
+   "sec": "S8",
+   "m": 183,
+   "lug": "tienda",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m183.mp4"
+  },
+  {
+   "t": 987.766667,
+   "dur": 5.866667,
+   "sec": "S8",
+   "m": 184,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m184.jpg"
+  },
+  {
+   "t": 993.633333,
+   "dur": 6.733333,
+   "kind": "componente",
+   "comp": "ProcessChips",
+   "props": {
+    "kicker": "THE OLD SYSTEM",
+    "title": "One number, and it is a test",
+    "steps": [
+     {
+      "title": "Grade 3"
+     },
+     {
+      "title": "Grade 2"
+     },
+     {
+      "title": "Grade 1"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m184_blur.jpg",
+   "sec": "S8",
+   "m": 185
+  },
+  {
+   "t": 1000.366667,
+   "dur": 10.033333,
+   "sec": "S8",
+   "m": 187,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m187.jpg"
+  },
+  {
+   "t": 1010.4,
+   "dur": 2.333333,
+   "sec": "S8",
+   "m": 188,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m188.jpg"
+  },
+  {
+   "t": 1012.733333,
+   "dur": 6.3,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "2",
+    "unit": "blows",
+    "caption": "That is the whole specification for Grade 3.",
+    "tone": "danger"
+   },
+   "bed": "img/rksmart_m188_blur.jpg",
+   "sec": "S8",
+   "m": 189
+  },
+  {
+   "t": 1019.033333,
+   "dur": 1.833333,
+   "sec": "S8",
+   "m": 190,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m190.jpg"
+  },
+  {
+   "t": 1020.866667,
+   "dur": 5.3,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "5",
+    "unit": "blows",
+    "caption": "Grade 2. About a hundred and fifty thousand cycles.",
+    "tone": "brass"
+   },
+   "bed": "img/rksmart_m190_blur.jpg",
+   "sec": "S8",
+   "m": 191
+  },
+  {
+   "t": 1026.166667,
+   "dur": 1.033333,
+   "sec": "S8",
+   "m": 192,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m192.jpg"
+  },
+  {
+   "t": 1027.2,
+   "dur": 5.333333,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "10",
+    "unit": "blows",
+    "caption": "Grade 1. The commercial standard, for fifteen dollars more.",
+    "tone": "brass"
+   },
+   "bed": "img/rksmart_m192_blur.jpg",
+   "sec": "S8",
+   "m": 193
+  },
+  {
+   "t": 1032.533333,
+   "dur": 1.533333,
+   "kind": "componente",
+   "comp": "RouteFlow",
+   "props": {
+    "kicker": "NOW YOU KNOW WHAT YOU ARE BUYING",
+    "title": "Two, five, ten",
+    "steps": [
+     {
+      "label": "Grade 3 · two"
+     },
+     {
+      "label": "Grade 2 · five"
+     },
+     {
+      "label": "Grade 1 · ten"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m192_blur.jpg",
+   "sec": "S8",
+   "m": 194
+  },
+  {
+   "t": 1034.066667,
+   "dur": 4.4,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w038.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1038.466667,
+   "dur": 2.633333,
+   "sec": "S8",
+   "m": 196,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m196.jpg"
+  },
+  {
+   "t": 1041.1,
+   "dur": 5.333333,
+   "sec": "S8",
+   "m": 197,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m197.jpg"
+  },
+  {
+   "t": 1046.433333,
+   "dur": 4.066667,
+   "sec": "S8",
+   "m": 198,
+   "lug": "casa",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m198.mp4"
+  },
+  {
+   "t": 1050.5,
+   "dur": 4.833333,
+   "sec": "S8",
+   "m": 199,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m199.jpg"
+  },
+  {
+   "t": 1055.333333,
+   "dur": 11.2,
+   "kind": "componente",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "FOR THE DOOR THEY SLEEP BEHIND",
+    "title": "Grade 1, or Grade 2 at the very worst",
+    "items": [
+     {
+      "text": "Grade 1 is the commercial standard"
+     },
+     {
+      "text": "Grade 2 is the honest minimum"
+     },
+     {
+      "text": "Grade 3 is for the shed"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m199_blur.jpg",
+   "sec": "S8",
+   "m": 200
+  },
+  {
+   "t": 1066.533333,
+   "dur": 6.866667,
+   "sec": "S8",
+   "m": 202,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m202.jpg"
+  },
+  {
+   "t": 1073.4,
+   "dur": 9.433333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w039.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1082.833333,
+   "dur": 7.5,
+   "sec": "S8",
+   "m": 204,
+   "lug": "oficina",
+   "kind": "imagen",
+   "asset": "img/rksmart_m204.jpg"
+  },
+  {
+   "t": 1090.333333,
+   "dur": 5.9,
+   "sec": "S8",
+   "m": 204,
+   "lug": "oficina",
+   "kind": "imagen",
+   "asset": "img/rksmart_m204x.jpg"
+  },
+  {
+   "t": 1096.233333,
+   "dur": 2.733333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w040.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1098.966667,
+   "dur": 3.566667,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "AAA",
+    "unit": "",
+    "caption": "Three letters, not one number.",
+    "tone": "brass"
+   },
+   "bed": "img/rksmart_m204x_blur.jpg",
+   "sec": "S8",
+   "m": 206
+  },
+  {
+   "t": 1102.533333,
+   "dur": 4.333333,
+   "sec": "S8",
+   "m": 207,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m207.jpg"
+  },
+  {
+   "t": 1106.866667,
+   "dur": 3.233333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w041.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1110.1,
+   "dur": 1.5,
+   "kind": "componente",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "WHAT EACH LETTER IS",
+    "title": "Security. Durability. Finish.",
+    "items": [
+     {
+      "text": "First letter — security"
+     },
+     {
+      "text": "Second letter — durability"
+     },
+     {
+      "text": "Third letter — finish"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m207_blur.jpg",
+   "sec": "S8",
+   "m": 209
+  },
+  {
+   "t": 1111.6,
+   "dur": 4.933333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w042.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1116.533333,
+   "dur": 3.733333,
+   "sec": "S8",
+   "m": 212,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m212.jpg"
+  },
+  {
+   "t": 1120.266667,
+   "dur": 6.433333,
+   "kind": "componente",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "HOW THE GRADE IS EARNED",
+    "myth": "They average the tests",
+    "truth": "It gets the LOWEST grade it earned"
+   },
+   "bed": "img/rksmart_m212_blur.jpg",
+   "sec": "S8",
+   "m": 213
+  },
+  {
+   "t": 1126.7,
+   "dur": 8.6,
+   "sec": "S8",
+   "m": 214,
+   "lug": "oficina",
+   "kind": "imagen",
+   "asset": "img/rksmart_m214.jpg"
+  },
+  {
+   "t": 1135.3,
+   "dur": 2.333333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w043.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1137.633333,
+   "dur": 9.3,
+   "sec": "S8",
+   "m": 216,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m216.jpg"
+  },
+  {
+   "t": 1146.933333,
+   "dur": 2.133333,
+   "sec": "S8",
+   "m": 217,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m217.jpg"
+  },
+  {
+   "t": 1149.066667,
+   "dur": 7.833333,
+   "sec": "S8",
+   "m": 218,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m218.jpg"
+  },
+  {
+   "t": 1156.9,
+   "dur": 7.066667,
+   "sec": "S8",
+   "m": 219,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m219.jpg"
+  },
+  {
+   "t": 1163.966667,
+   "dur": 2.6,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w044.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1166.566667,
+   "dur": 7.466667,
+   "sec": "S9",
+   "m": 221,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m221.jpg"
+  },
+  {
+   "t": 1174.033333,
+   "dur": 1.266667,
+   "kind": "componente",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "THE FIVE",
+    "title": "What I would tell my own sister",
+    "items": [
+     {
+      "text": "Look for the letters or the grade"
+     },
+     {
+      "text": "Ask if you need the keyhole at all"
+     },
+     {
+      "text": "If you keep it, treat the cylinder as the lock"
+     },
+     {
+      "text": "Put the batteries on the calendar"
+     },
+     {
+      "text": "Three inch screws, same afternoon"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m221_blur.jpg",
+   "sec": "S9",
+   "m": 222
+  },
+  {
+   "t": 1175.3,
+   "dur": 3.1,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w045.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1178.4,
+   "dur": 5.2,
+   "sec": "S9",
+   "m": 224,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m224.jpg"
+  },
+  {
+   "t": 1183.6,
+   "dur": 6.166667,
+   "sec": "S9",
+   "m": 225,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m225.jpg"
+  },
+  {
+   "t": 1189.766667,
+   "dur": 4.033333,
+   "sec": "S9",
+   "m": 225,
+   "lug": "oficina",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m225x.mp4"
+  },
+  {
+   "t": 1193.8,
+   "dur": 3.966667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w046.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1197.766667,
+   "dur": 4.833333,
+   "sec": "S9",
+   "m": 227,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m227.jpg"
+  },
+  {
+   "t": 1202.6,
+   "dur": 5.733333,
+   "sec": "S9",
+   "m": 228,
+   "lug": "tienda",
+   "kind": "imagen",
+   "asset": "img/rksmart_m228.jpg"
+  },
+  {
+   "t": 1208.333333,
+   "dur": 7.2,
+   "sec": "S9",
+   "m": 229,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m229.jpg"
+  },
+  {
+   "t": 1215.533333,
+   "dur": 11.2,
+   "kind": "componente",
+   "comp": "CheckCard",
+   "props": {
+    "kicker": "THE CATEGORY EXISTS",
+    "title": "Key-free, and certified",
+    "items": [
+     {
+      "text": "Yale Assure Lock 2 — a key-free version, the line is Grade 2"
+     },
+     {
+      "text": "Schlage Encode Plus — no keyway, rated AAA"
+     },
+     {
+      "text": "Search the words: key-free, no keyway"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m229_blur.jpg",
+   "sec": "S9",
+   "m": 230
+  },
+  {
+   "t": 1226.733333,
+   "dur": 4.866667,
+   "sec": "S9",
+   "m": 231,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m231.jpg"
+  },
+  {
+   "t": 1231.6,
+   "dur": 3.866667,
+   "sec": "S9",
+   "m": 231,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m231x.jpg"
+  },
+  {
+   "t": 1235.466667,
+   "dur": 3.466667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w047.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1238.933333,
+   "dur": 4.533333,
+   "sec": "S9",
+   "m": 233,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m233.jpg"
+  },
+  {
+   "t": 1243.466667,
+   "dur": 9.1,
+   "sec": "S9",
+   "m": 234,
+   "lug": "oficina",
+   "kind": "imagen",
+   "asset": "img/rksmart_m234.jpg"
+  },
+  {
+   "t": 1252.566667,
+   "dur": 6.7,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w048.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1259.266667,
+   "dur": 8.9,
+   "kind": "componente",
+   "comp": "WorstSpots",
+   "props": {
+    "kicker": "WHAT GOES AWAY WITH THE KEYHOLE",
+    "title": "All of it, in one decision",
+    "spots": [
+     {
+      "label": "The cheap cylinder"
+     },
+     {
+      "label": "The forgotten spare"
+     },
+     {
+      "label": "The previous owner"
+     },
+     {
+      "label": "The one your kid lost"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m234_blur.jpg",
+   "sec": "S9",
+   "m": 236
+  },
+  {
+   "t": 1268.166667,
+   "dur": 1.6,
+   "sec": "S9",
+   "m": 237,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m237.jpg"
+  },
+  {
+   "t": 1269.766667,
+   "dur": 2.633333,
+   "sec": "S9",
+   "m": 238,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m238.jpg"
+  },
+  {
+   "t": 1272.4,
+   "dur": 6.766667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w049.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1279.166667,
+   "dur": 1.966667,
+   "sec": "S9",
+   "m": 240,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m240.jpg"
+  },
+  {
+   "t": 1281.133333,
+   "dur": 7.7,
+   "sec": "S9",
+   "m": 241,
+   "lug": "oficina",
+   "kind": "imagen",
+   "asset": "img/rksmart_m241.jpg"
+  },
+  {
+   "t": 1288.833333,
+   "dur": 8.633333,
+   "sec": "S9",
+   "m": 241,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m241x.jpg"
+  },
+  {
+   "t": 1297.466667,
+   "dur": 4.033333,
+   "sec": "S9",
+   "m": 242,
+   "lug": "casa",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m242.mp4"
+  },
+  {
+   "t": 1301.5,
+   "dur": 5.166667,
+   "sec": "S9",
+   "m": 242,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m242x.jpg"
+  },
+  {
+   "t": 1306.666667,
+   "dur": 7.866667,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "How many?",
+    "unit": "keys exist",
+    "caption": "If you cannot answer that, that is this weekend's job.",
+    "tone": "brass"
+   },
+   "bed": "img/rksmart_m242x_blur.jpg",
+   "sec": "S9",
+   "m": 243
+  },
+  {
+   "t": 1314.533333,
+   "dur": 7.566667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w050.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1322.1,
+   "dur": 1.9,
+   "sec": "S9",
+   "m": 245,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m245.jpg"
+  },
+  {
+   "t": 1324,
+   "dur": 10.366667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w051.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1334.366667,
+   "dur": 0.833333,
+   "sec": "S9",
+   "m": 248,
+   "lug": "porch",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m248.mp4"
+  },
+  {
+   "t": 1335.2,
+   "dur": 0.633333,
+   "sec": "S9",
+   "m": 248,
+   "lug": "living",
+   "kind": "imagen",
+   "asset": "img/rksmart_m248x.jpg"
+  },
+  {
+   "t": 1335.833333,
+   "dur": 12.633333,
+   "sec": "S9",
+   "m": 249,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m249.jpg"
+  },
+  {
+   "t": 1348.466667,
+   "dur": 4.8,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w052.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1353.266667,
+   "dur": 2.233333,
+   "sec": "S9",
+   "m": 251,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m251.jpg"
+  },
+  {
+   "t": 1355.5,
+   "dur": 2.133333,
+   "sec": "S9",
+   "m": 252,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m252.jpg"
+  },
+  {
+   "t": 1357.633333,
+   "dur": 5.7,
+   "sec": "S9",
+   "m": 253,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m253.jpg"
+  },
+  {
+   "t": 1363.333333,
+   "dur": 6.733333,
+   "kind": "componente",
+   "comp": "ProcessChips",
+   "props": {
+    "kicker": "ONCE A YEAR",
+    "title": "The whole battery objection, gone",
+    "steps": [
+     {
+      "title": "Same week, every year"
+     },
+     {
+      "title": "Four AA's"
+     },
+     {
+      "title": "Five minutes"
+     },
+     {
+      "title": "Done"
+     }
+    ]
+   },
+   "bed": "img/rksmart_m253_blur.jpg",
+   "sec": "S9",
+   "m": 254
+  },
+  {
+   "t": 1370.066667,
+   "dur": 5.566667,
+   "sec": "S9",
+   "m": 255,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m255.jpg"
+  },
+  {
+   "t": 1375.633333,
+   "dur": 9.066667,
+   "sec": "S9",
+   "m": 256,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m256.jpg"
+  },
+  {
+   "t": 1384.7,
+   "dur": 4.033333,
+   "sec": "S9",
+   "m": 256,
+   "lug": "porch",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m256x.mp4"
+  },
+  {
+   "t": 1388.733333,
+   "dur": 3.6,
+   "sec": "S9",
+   "m": 257,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m257.jpg"
+  },
+  {
+   "t": 1392.333333,
+   "dur": 4.333333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w053.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1396.666667,
+   "dur": 4.7,
+   "kind": "componente",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Whatever lock you buy, the three inch screws go in the same afternoon.",
+    "attrib": "— Ray, rule five"
+   },
+   "bed": "img/rksmart_m257_blur.jpg",
+   "sec": "S9",
+   "m": 259
+  },
+  {
+   "t": 1401.366667,
+   "dur": 10.366667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w054.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1411.733333,
+   "dur": 1.3,
+   "sec": "S9",
+   "m": 261,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m261.jpg"
+  },
+  {
+   "t": 1413.033333,
+   "dur": 2.133333,
+   "sec": "S9",
+   "m": 262,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m262.jpg"
+  },
+  {
+   "t": 1415.166667,
+   "dur": 3.466667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w055.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1418.633333,
+   "dur": 4.6,
+   "sec": "S9",
+   "m": 264,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m264.jpg"
+  },
+  {
+   "t": 1423.233333,
+   "dur": 2.533333,
+   "kind": "componente",
+   "comp": "BigStat",
+   "props": {
+    "value": "4,000",
+    "unit": "doors",
+    "caption": "Not once did the lock lose.",
+    "tone": "brass"
+   },
+   "bed": "img/rksmart_m264_blur.jpg",
+   "sec": "S9",
+   "m": 265
+  },
+  {
+   "t": 1425.766667,
+   "dur": 2.633333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w056.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1428.4,
+   "dur": 5.566667,
+   "sec": "S9",
+   "m": 267,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m267.jpg"
+  },
+  {
+   "t": 1433.966667,
+   "dur": 7.533333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w057.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1441.5,
+   "dur": 2.966667,
+   "sec": "S10",
+   "m": 269,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m269.jpg"
+  },
+  {
+   "t": 1444.466667,
+   "dur": 5.933333,
+   "sec": "S10",
+   "m": 270,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m270.jpg"
+  },
+  {
+   "t": 1450.4,
+   "dur": 4.033333,
+   "sec": "S10",
+   "m": 270,
+   "lug": "jardin",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m270x.mp4"
+  },
+  {
+   "t": 1454.433333,
+   "dur": 4.533333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w058.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1458.966667,
+   "dur": 5.3,
+   "sec": "S10",
+   "m": 272,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m272.jpg"
+  },
+  {
+   "t": 1464.266667,
+   "dur": 4.133333,
+   "sec": "S10",
+   "m": 272,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m272x.jpg"
+  },
+  {
+   "t": 1468.4,
+   "dur": 6.9,
+   "sec": "S10",
+   "m": 273,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m273.jpg"
+  },
+  {
+   "t": 1475.3,
+   "dur": 2,
+   "sec": "S10",
+   "m": 274,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m274.jpg"
+  },
+  {
+   "t": 1477.3,
+   "dur": 9.166667,
+   "sec": "S10",
+   "m": 275,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m275.jpg"
+  },
+  {
+   "t": 1486.466667,
+   "dur": 1.6,
+   "sec": "S10",
+   "m": 276,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m276.jpg"
+  },
+  {
+   "t": 1488.066667,
+   "dur": 3.533333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w059.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1491.6,
+   "dur": 1.7,
+   "sec": "S10",
+   "m": 278,
+   "lug": "calle",
+   "kind": "imagen",
+   "asset": "img/rksmart_m278.jpg"
+  },
+  {
+   "t": 1493.3,
+   "dur": 10.066667,
+   "kind": "componente",
+   "comp": "RayCta",
+   "props": {
+    "eyebrow": "BEFORE YOU FORGET",
+    "title": "The Thousand Dollar Afternoon",
+    "sub": "The ten minute test, the shopping list with the real lengths, the afternoon in order, and the eleven-o-clock phone call.",
+    "domain": "raykessler.vercel.app",
+    "showQr": true,
+    "qr": "img/rksmart_qr.png"
+   },
+   "bed": "img/rksmart_m264.jpg",
+   "sec": "S10",
+   "m": 279
+  },
+  {
+   "t": 1493.3,
+   "dur": 10.066667,
+   "kind": "imagen",
+   "asset": "img/rksmart_m264.jpg",
+   "sec": "S10",
+   "m": 279,
+   "cama": true
+  },
+  {
+   "t": 1503.366667,
+   "dur": 9.866667,
+   "sec": "S10",
+   "m": 279,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m279.jpg"
+  },
+  {
+   "t": 1513.233333,
+   "dur": 7.733333,
+   "sec": "S10",
+   "m": 279,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m279x.jpg"
+  },
+  {
+   "t": 1520.966667,
+   "dur": 1.9,
+   "sec": "S10",
+   "m": 280,
+   "lug": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rksmart_m280.jpg"
+  },
+  {
+   "t": 1522.866667,
+   "dur": 8.433333,
+   "sec": "S10",
+   "m": 281,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m281.jpg"
+  },
+  {
+   "t": 1531.3,
+   "dur": 7.766667,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w060.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1539.066667,
+   "dur": 3.866667,
+   "sec": "S11",
+   "m": 284,
+   "lug": "calle",
+   "kind": "imagen",
+   "asset": "img/rksmart_m284.jpg"
+  },
+  {
+   "t": 1542.933333,
+   "dur": 6.733333,
+   "sec": "S11",
+   "m": 285,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m285.jpg"
+  },
+  {
+   "t": 1549.666667,
+   "dur": 2.1,
+   "sec": "S11",
+   "m": 286,
+   "lug": "taller",
+   "kind": "clip",
+   "asset": "broll/rksmart/rksmart_m286.mp4"
+  },
+  {
+   "t": 1551.766667,
+   "dur": 3.5,
+   "sec": "S11",
+   "m": 287,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m287.jpg"
+  },
+  {
+   "t": 1555.266667,
+   "dur": 2.4,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w061.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1557.666667,
+   "dur": 4.966667,
+   "sec": "S11",
+   "m": 289,
+   "lug": "porch",
+   "kind": "imagen",
+   "asset": "img/rksmart_m289.jpg"
+  },
+  {
+   "t": 1562.633333,
+   "dur": 3.933333,
+   "sec": "S11",
+   "m": 289,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m289x.jpg"
+  },
+  {
+   "t": 1566.566667,
+   "dur": 3.7,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w062.mp4",
+   "sec": "AV"
+  },
+  {
+   "t": 1570.266667,
+   "dur": 2.5,
+   "sec": "S11",
+   "m": 291,
+   "lug": "taller",
+   "kind": "imagen",
+   "asset": "img/rksmart_m291.jpg"
+  },
+  {
+   "t": 1572.766667,
+   "dur": 4.966667,
+   "sec": "S11",
+   "m": 292,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m292.jpg"
+  },
+  {
+   "t": 1577.733333,
+   "dur": 4.233333,
+   "sec": "S11",
+   "m": 292,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m292x.jpg"
+  },
+  {
+   "t": 1581.966667,
+   "dur": 3.233333,
+   "sec": "S11",
+   "m": 292,
+   "lug": "casa",
+   "kind": "imagen",
+   "asset": "img/rksmart_m292y.jpg"
+  },
+  {
+   "t": 1585.2,
+   "dur": 3.633333,
+   "kind": "avatar",
+   "asset": "broll/rksmart/av_w063.mp4",
+   "sec": "AV"
+  }
+ ]
+}

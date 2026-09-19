@@ -1,0 +1,237 @@
+A woman called me last spring. Not for a job. She'd already had the job done by somebody else. She called because she wanted a second opinion, and she'd found my old number in a drawer.
+
+She said, Ray, I just spent four hundred and sixty dollars on a smart lock for my front door, and my son-in-law told me I basically bought a toy. Is he right? Did I waste the money?
+
+I asked her one question. I said, does it have a little keyhole on the bottom of it. A real keyhole, for a real key.
+
+She went quiet for a second and she said, yes. Why.
+
+And that is the whole video. That one question is the whole thing. Everything else people argue about online — the app, the WiFi, the fingerprints, the hackers, the guy in a van with a laptop — that is not where your house is weak. The keyhole is where your house is weak. And nobody selling you that lock is going to bring it up.
+
+So let me give you the verdict up front, because I hate videos that make you wait twenty minutes for an answer.
+
+Yes. A smart lock is safe. In most cases it is safer than the lock that is on your door right now, and I'll show you exactly why in a minute.
+
+But it is safe for a reason that has nothing to do with the smart part. And the way most people buy one, they take a good lock and they hand the burglar a back door on purpose, for twelve dollars worth of brass, because it made them feel better about getting locked out.
+
+That's the whole thing. Now let me earn it.
+
+My name is Ray Kessler. I was a locksmith for thirty-five years and I retired a few years back. I want to be honest with you about what that means, because people hear locksmith and they picture something out of a movie.
+
+I never caught a burglar. Not one. In thirty-five years I never once showed up while something was happening.
+
+What I did was show up the morning after. I was the man they called at seven in the morning when the coffee was already cold and there was a police report on the counter and the back door wouldn't shut anymore. I'd measure the damage, I'd tell them what it would cost, and then I'd put a new door on the hole they came through.
+
+I did that about four thousand times.
+
+And here is what four thousand of those mornings will teach you, and it is not what you'd expect. Almost none of them were clever. I can count on one hand the number of jobs in thirty-five years where somebody actually picked the lock. Actually picked it, with picks, the way it looks on television.
+
+Almost every single one of them, the lock was completely fine. I'd stand there with a screwdriver in my hand looking at a perfectly good deadbolt still sticking out of a door, still locked, and the door frame next to it was in four pieces on the kitchen floor.
+
+Hold on to that picture. We're going to come back to it, because it is the single most expensive thing I know.
+
+But first let's do the keypad, because that's what everybody asks about and I want it off the table.
+
+Is somebody going to hack your front door.
+
+No. Practically speaking, no. And I'll tell you how I know, and it's not because I read a white paper.
+
+Nobody ever hired me to fix a hacked lock. Not once. Thirty-five years. Every single call I ever got was a broken thing. Splintered wood, a bent strike, a busted window, a garage door standing open. The tool was always a boot or a crowbar or a rock or a hand on an unlocked handle. It was never a laptop.
+
+And when you look at the actual numbers instead of the internet, you get the same picture. The federal crime numbers break burglaries into three buckets. A little over half of them are forcible entry — something got broken. Almost thirty-eight percent are what they call unlawful entry, which is a polite way of saying somebody walked in through something that wasn't locked at all. And the rest are attempts that didn't work.
+
+There's no bucket for hacked. There isn't one. It's not that it's small, it's that it isn't a category, because it doesn't happen enough to be one.
+
+So the keypad isn't your problem. The app isn't your problem. Your neighbor's teenager isn't standing in your bushes with a laptop, and if he was, there is a much easier way into your house and he's standing next to it.
+
+The keypad has one real weakness and it's got nothing to do with technology. It's your fingers.
+
+If you use the same four digits for two years on a touchscreen, those four buttons get polished. The oil from your hand builds up on four squares and not on the other six. You can see it in the right light from four feet away. That doesn't tell somebody the order, but it takes ten thousand possibilities down to twenty-four. That's a real thing and it takes you thirty seconds to fix: wipe the whole keypad with your sleeve every once in a while, and use a code with a repeated digit in it, so the smudges lie to them.
+
+That's it. That's the entire keypad problem. Wipe it. Move on.
+
+Now the part nobody tells you.
+
+Go look at your smart lock. Go look at it right now if it's in the house, I'll wait, because this is the one thing I actually want you to do today.
+
+Most of them have a keyhole on the bottom of the outside part. Sometimes it's right out in the open. Sometimes there's a little plastic cover you slide, or a rubber plug you pop out with a fingernail.
+
+That keyhole is called the mechanical override. And every single thing the expensive part of that lock does — the encryption, the rolling codes, the notifications, the auto-lock, the whole reason you spent four hundred and sixty dollars — every bit of that stops at that keyhole.
+
+Because a keyhole doesn't know about any of it. A keyhole is a hole with springs in it. It's the same technology as eighteen ninety. And if somebody opens that cylinder, the lock retracts the bolt and the app tells you it was unlocked with a key, which it was, and everything worked exactly as designed.
+
+Now here is the part that made me angry for about fifteen years.
+
+That cylinder is the cheapest part of the whole lock.
+
+I want you to think about where the money went on that lock. It went into a radio. It went into a touchscreen. It went into an app with a design team and a cloud account and a support line. It went into the box, the photography, the ad you saw.
+
+The cylinder is a fifteen dollar part on a four hundred dollar product, and on a lot of them it is the exact same cylinder that comes on the twenty-two dollar builder-grade knob at the hardware store. Literally the same part number in some cases. Same wafers, same springs, same everything.
+
+So what you have bought, if you bought one of those, is a very good electronic lock bolted to a very ordinary mechanical lock, and a burglar gets to pick which one of the two he'd like to deal with. And he is not going to pick the one with the app.
+
+Now, I have to be careful here, and I'm going to be, because I'm not going to teach anybody anything on this channel.
+
+I'm not going to tell you how any of that is done. I'm not going to name the tool. What I will tell you is that there are entire product categories of professional tools, sold openly to the trade, that exist for exactly one purpose, which is opening common residential cylinders quickly and without damage. I owned a drawer full of them. That's not a secret and it's not a scandal — that's my old job. Somebody locks themselves out at eleven at night with a baby inside, and you are not going to stand there and pick it for forty minutes.
+
+The point isn't that it's easy. The point is that it's a completely separate problem from the one you paid to solve. You bought a solution to problem A and left problem B sitting there on the bottom of the lock under a little rubber cap.
+
+So that's strike one against the keyhole.
+
+Here's strike two, and this one is worse, because this one happens without anybody breaking anything at all.
+
+When you had a normal lock, your key was a thing you controlled. Maybe four of them existed. You, your wife, one in a drawer, one with your sister.
+
+When you buy a smart lock and put a keyhole on it, you now have two systems, and you only manage one of them. You are very careful with the codes. You delete the cleaner's code when she stops coming. You give the dog walker a code that only works on Tuesdays. You feel organized, and you are.
+
+And meanwhile there is a key.
+
+There's the key that came in the box. There's the second key that came in the box, that you have never seen, that is probably still in the plastic sleeve at the bottom of a kitchen drawer with four batteries and a tape measure. There's the key the previous owner had, if you didn't change the cylinder. There's the one the contractor's guy had for six weeks. There's the one on the ring your kid lost at college and never mentioned.
+
+You manage the codes like a hawk and the keys are just out there in the world, and the keys open the door just as wide as the codes do, and the lock will never once send you a notification about the ones you forgot about.
+
+That's not a hack. That's just arithmetic. And I have walked into a lot of houses where that was the whole story.
+
+Okay. So now you are about to ask me the obvious thing, and it's the right thing to ask.
+
+Ray, if the keyhole is the weak point, why does the lock have one at all.
+
+Because of you. Honestly. Because of all of us.
+
+Because the number one fear people have about a keyless lock is not burglars, it's being locked out of their own house. And the manufacturers know that, and the return rate on a lock that leaves somebody standing on their own porch in the rain is a company-ending number. So they put a keyhole on it, and everybody feels better in the store, and the thing gets bought.
+
+And I want to say something fair here, because I don't like one-sided videos.
+
+That keyhole is not automatically a disaster. On a good lock, from a company that took it seriously, that override cylinder is a proper high-security cylinder with real anti-drill pins and a restricted key you can't get copied at a kiosk. Some of them are genuinely excellent. On those, the keyhole is a feature, not a hole.
+
+The problem is you cannot tell which one you've got by looking at the box, because nobody advertises the cylinder. Nobody. You will find the battery life on the front of the box in big letters. You will not find one word about the cylinder, ever, because it is the part they're hoping you don't ask about.
+
+So that's the smart lock question, honestly answered. Now let me take it all away from you, because there's a bigger one underneath it.
+
+Remember that picture from earlier. The perfectly good deadbolt still sticking out of a door, and the frame in four pieces on the floor.
+
+Here is the thing that took me about ten years to really understand, and I'm going to say it as plainly as I can.
+
+The lock is not what holds your door shut.
+
+Say it again. The lock is not what holds your door shut.
+
+The lock is a metal bar. That's all it is. A metal bar that slides out of the door. It doesn't hold anything. What holds your door shut is the piece of wood that the metal bar slides into, and the screws that hold that piece of metal into that piece of wood.
+
+And on the vast majority of houses in this country, that piece of metal is a thin plate held on by two screws that are three quarters of an inch long.
+
+Three quarters of an inch. Think about that. Not into the frame of your house. Not into the stud. Into the trim. Into a strip of soft pine that is nailed to the actual frame, with about an inch of air behind it.
+
+That's what's between your family and the outside. Not the lock. Two little screws in some pine.
+
+So when somebody hits that door with their shoulder, or with the bottom of their boot right next to the handle, the lock doesn't fail. It never fails. The lock is fine. The bolt is fine. The two little screws tear out of the pine like it's a cracker, and the whole frame goes, and the door swings open with the deadbolt still locked and still sticking out, looking proud of itself.
+
+I have photographed that exact scene hundreds of times for insurance. Hundreds. The deadbolt, extended, undamaged, sitting in a piece of splintered wood on the floor.
+
+So here's my honest opinion, and it's going to sound strange coming from a man who sold locks.
+
+If you put a four hundred dollar smart lock on a door with three quarter inch screws in the strike plate, you did not make your house safer. You made your phone more interesting.
+
+And if you take the cheapest deadbolt in the store and you install it properly, into the actual structure of the house, you are ahead of ninety percent of the street.
+
+Which brings me to the only hardware advice in this whole video, and it costs three dollars.
+
+Take the two screws out of your strike plate — that's the metal plate on the door frame with the hole the bolt goes into. Take them out and look at them. If they're three quarters of an inch, that's the whole problem, right there in your hand.
+
+Go get a box of three inch wood screws. Three inch. Same head, same drive, just long. They're about three dollars for a box and they're in the same aisle you're already standing in.
+
+Put those in instead. That's it. That's the entire job. It takes eleven minutes and a screwdriver, and now your bolt is anchored into the actual timber frame of your house instead of a decorative strip of pine, and now when somebody hits that door, they're fighting the building.
+
+Do the hinges too, while you've got the screwdriver out. One long screw in each hinge, in the hole closest to the middle. Nobody does the hinges and the hinges fail the same way.
+
+And I want to be clear about something, because there is a whole industry built on selling you the expensive version of this.
+
+You do not need a reinforcement bar. You do not need the branded one for a hundred and twenty-five dollars. If you want a heavier strike plate, the generic four-screw one at the hardware store is about twenty-five dollars and it is fine, and honestly, the long screws in the plate you already own get you most of the way there. This is a three dollar problem that has a three dollar solution, and everything past that is somebody's margin.
+
+Alright. So now you know where your door is actually weak. Let's go shopping, and let me teach you how to read a box, because this is the part I actually think is worth your time.
+
+There are numbers on the back of every lock box and almost nobody knows what they mean. I'm going to give them to you in about two minutes and you'll never be talked into anything again.
+
+The first one is the old system, and you've seen it. Grade one, grade two, grade three. That's the industry standard for locks and latches, and here's what's actually behind those numbers, because it isn't a marketing badge, it's a test.
+
+Grade three is residential. That lock gets cycled about a hundred thousand times and it has to survive two heavy blows to the bolt. Two.
+
+Grade two is the middle. About a hundred and fifty thousand cycles, and five blows.
+
+Grade one is the commercial standard. Two hundred and fifty thousand cycles, and ten blows.
+
+Two blows, five blows, ten blows. Now you know exactly what you're buying. A grade three lock is a lock that was tested to survive being hit twice. That's not an insult, that's just the specification. It's a fine lock for an interior door or a shed or a closet.
+
+For the door your family sleeps behind, you want grade one, or at the absolute minimum grade two. And grade one is not four times the price. It is usually fifteen or twenty dollars more, which is less than the difference between two finishes of the same lock.
+
+Now the second system, and this is the one that matters for smart locks specifically, and almost nobody knows it exists.
+
+Electronic and smart deadbolts are tested under their own residential standard — the number on the paper is A one fifty six point forty, and you don't need to remember that, you need to remember what it gives you.
+
+It doesn't give you one number. It gives you three letters.
+
+Three letters, in a row, like triple-A, or A-B-B, or triple-C. And each letter is a different category. The first letter is security. The second letter is durability. The third letter is finish.
+
+A is the best, B is the middle, C is the lowest. So triple-A is the top of that standard on all three counts.
+
+And here is the part I love about that grading, because it's honest in a way most consumer testing isn't: within a category, the lock gets the lowest grade it earned. Not the average. The lowest. If there are fifteen security tests and it aces fourteen and only manages a B on the fifteenth, the lock is a B. It doesn't get to round up.
+
+So when you look at a smart lock box and it says triple-A, that is a real thing and it was earned the hard way. And when a box doesn't mention any letters at all, that's also a real thing, and it's telling you something.
+
+Now let's put it together. Here is what I'd tell my own sister to look for, and I want you to notice that almost none of it is about the smart part.
+
+Number one. Look for the letters or the grade. Triple-A under the electronic standard, or grade one under the old one. If the box doesn't say, and the product page doesn't say, and you have to email them to find out — that's your answer, and you can put it down.
+
+Number two, and this is the one from the beginning of the video. Ask yourself, honestly, whether you need the keyhole at all.
+
+Because there is a whole category of these now that simply do not have one. Key-free. No cylinder, no override, nothing on the outside but the keypad. Yale makes a key-free version of the Assure Lock, and the whole Assure Lock line is certified to grade two. Schlage makes the Encode Plus, which has no keyway on it either, and that one carries the triple-A rating on the electronic standard — top marks on security, durability and finish.
+
+I'm not telling you to buy either of those. I have no relationship with anybody and nobody sends me anything. What I'm telling you is that those two are proof the category exists and that it can be certified, so you know what to search for.
+
+And look — if the keyhole is gone, the whole first half of this video is gone with it. The cheap cylinder problem, the forgotten spare key problem, the previous owner problem, the ex-boyfriend's key problem. All of it. Deleted. One decision.
+
+Number three. If you do keep a keyhole, then treat that cylinder like it is the lock, because it is. Ask what cylinder it is. If the manufacturer offers a high-security or restricted-key upgrade for that model, that upgrade is the most important twenty dollars in the entire purchase, and it is the one nobody buys.
+
+And the day you install it, take both keys that came in the box, put them somewhere you'll find them in an emergency but not in the kitchen drawer, and write down where you put them. Not for security. So that you know, at all times, exactly how many keys to your house exist in the world. If you can't answer that question right now, that's the job for this weekend, not the lock.
+
+Number four. Batteries. This is the objection everybody has and it deserves a straight answer.
+
+Yes, a smart lock runs on batteries and yes, batteries die. But they do not die suddenly. Every one of these things has been screaming at you for two to three weeks by the time it quits — the keypad flashes at you, the app sends you a notification, some of them chirp. Nobody has ever been locked out by a battery that didn't warn them. They've been locked out by ignoring it.
+
+So put it on the calendar. Once a year, same week every year, you change the batteries whether it's asking or not. Pick a week you'll remember — I do it the week the clocks change. Four double-A's, twelve dollars, five minutes, and the entire battery objection is gone forever.
+
+And by the way, most of them have a set of little contacts on the bottom where you can hold a nine volt battery against it from outside and it'll power up long enough to let you punch your code in. Find out if yours does that, today, while you're calm. Not at eleven at night in the rain.
+
+Number five, and this is the last one and it's the one I feel strongest about.
+
+Whatever lock you buy — smart, dumb, four hundred dollars, forty dollars — the three inch screws go in the strike plate on the same afternoon. Same afternoon. Before you download the app. Before you set up a single code.
+
+Because I have never in my life gone to a house where the lock lost. Not once in four thousand doors. The lock always wins. It's the wood that loses, every single time, and the wood costs three dollars to fix.
+
+So let me answer her question, the woman from the beginning, the same way I answered it on the phone.
+
+I told her no. You did not waste your money. It's a good lock and you'll like it and the codes will make your life easier and you'll stop hiding a key under a rock, which is worth the price on its own.
+
+But I told her to do two things that afternoon.
+
+I told her to take the two spare keys out of the drawer, decide who in this world is allowed to have one, and put the rest somewhere she chose on purpose.
+
+And I told her to take the screwdriver and put three inch screws in the strike plate and one in each hinge.
+
+She called me back a week later. She said her son-in-law came over and did it in twenty minutes and then stood there looking at the old screws in his hand, and said, that's it? That's what was holding the door?
+
+Yeah. That's what was holding the door. That's what's holding most of them.
+
+Now, if you want the whole afternoon written down — the ten minute test you do before you spend a dollar, the shopping list with the actual lengths and gauges, which screws to throw straight in the bin, the door, the frame, the hinges and the strike in the right order, and the phone script for when you do have to call a locksmith at eleven at night so you don't get taken for fifteen hundred dollars — I put all of it together.
+
+It's three guides. They're at raykessler dot vercel dot app, it's twenty-seven dollars for all three, and it downloads the second you get it. That's the only thing I'll ever ask you for and I'm only going to ask once.
+
+Here's where I'll leave you.
+
+I spent thirty-five years being the guy who shows up after. And the thing about being the guy who shows up after is you eventually stop being impressed by locks. You start looking at the wood.
+
+The smart lock on your door is almost certainly fine. Better than fine. It's a nicer lock than most of what I installed for three decades, and the codes are genuinely a better idea than keys, and you should enjoy it.
+
+Just don't let it be the thing you're relying on. It's a bar of metal and an app. What's actually keeping your family in that house tonight is two screws in a piece of pine, and you can go find out how long they are right now, and you can fix it for three dollars before dinner.
+
+That's the whole job. I'll see you next time.

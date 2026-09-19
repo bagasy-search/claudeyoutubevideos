@@ -1,0 +1,2657 @@
+[
+ {
+  "c0": 0,
+  "c1": 30,
+  "txt": "A woman called me last spring.",
+  "t": 0.0,
+  "end": 2.62,
+  "dur": 2.62,
+  "para": 0
+ },
+ {
+  "c0": 31,
+  "c1": 45,
+  "txt": "Not for a job.",
+  "t": 2.62,
+  "end": 4.26,
+  "dur": 1.64,
+  "para": 0
+ },
+ {
+  "c0": 46,
+  "c1": 94,
+  "txt": "She'd already had the job done by somebody else.",
+  "t": 4.26,
+  "end": 7.66,
+  "dur": 3.4,
+  "para": 0
+ },
+ {
+  "c0": 95,
+  "c1": 185,
+  "txt": "She called because she wanted a second opinion, and she'd found my old number in a drawer.",
+  "t": 7.66,
+  "end": 13.72,
+  "dur": 6.06,
+  "para": 0
+ },
+ {
+  "c0": 187,
+  "c1": 332,
+  "txt": "She said, Ray, I just spent four hundred and sixty dollars on a smart lock for my front door, and my son-in-law told me I basically bought a toy.",
+  "t": 13.72,
+  "end": 23.68,
+  "dur": 9.96,
+  "para": 1
+ },
+ {
+  "c0": 333,
+  "c1": 368,
+  "txt": "Is he right? Did I waste the money?",
+  "t": 23.68,
+  "end": 26.56,
+  "dur": 2.88,
+  "para": 1
+ },
+ {
+  "c0": 370,
+  "c1": 395,
+  "txt": "I asked her one question.",
+  "t": 26.56,
+  "end": 28.2,
+  "dur": 1.64,
+  "para": 2
+ },
+ {
+  "c0": 396,
+  "c1": 454,
+  "txt": "I said, does it have a little keyhole on the bottom of it.",
+  "t": 28.2,
+  "end": 32.2,
+  "dur": 4.0,
+  "para": 2
+ },
+ {
+  "c0": 455,
+  "c1": 486,
+  "txt": "A real keyhole, for a real key.",
+  "t": 32.2,
+  "end": 35.64,
+  "dur": 3.44,
+  "para": 2
+ },
+ {
+  "c0": 488,
+  "c1": 534,
+  "txt": "She went quiet for a second and she said, yes.",
+  "t": 35.64,
+  "end": 38.84,
+  "dur": 3.2,
+  "para": 3
+ },
+ {
+  "c0": 535,
+  "c1": 569,
+  "txt": "Why. And that is the whole video.",
+  "t": 38.84,
+  "end": 41.92,
+  "dur": 3.08,
+  "para": 3
+ },
+ {
+  "c0": 570,
+  "c1": 607,
+  "txt": "That one question is the whole thing.",
+  "t": 41.92,
+  "end": 44.7,
+  "dur": 2.78,
+  "para": 4
+ },
+ {
+  "c0": 608,
+  "c1": 772,
+  "txt": "Everything else people argue about online — the app, the WiFi, the fingerprints, the hackers, the guy in a van with a laptop — that is not where your house is weak.",
+  "t": 44.7,
+  "end": 56.96,
+  "dur": 12.26,
+  "para": 4
+ },
+ {
+  "c0": 773,
+  "c1": 813,
+  "txt": "The keyhole is where your house is weak.",
+  "t": 56.96,
+  "end": 60.34,
+  "dur": 3.38,
+  "para": 4
+ },
+ {
+  "c0": 814,
+  "c1": 871,
+  "txt": "And nobody selling you that lock is going to bring it up.",
+  "t": 60.34,
+  "end": 64.16,
+  "dur": 3.82,
+  "para": 4
+ },
+ {
+  "c0": 873,
+  "c1": 984,
+  "txt": "So let me give you the verdict up front, because I hate videos that make you wait twenty minutes for an answer.",
+  "t": 64.16,
+  "end": 71.26,
+  "dur": 7.1,
+  "para": 5
+ },
+ {
+  "c0": 986,
+  "c1": 1012,
+  "txt": "Yes. A smart lock is safe.",
+  "t": 71.26,
+  "end": 74.42,
+  "dur": 3.16,
+  "para": 6
+ },
+ {
+  "c0": 1013,
+  "c1": 1127,
+  "txt": "In most cases it is safer than the lock that is on your door right now, and I'll show you exactly why in a minute.",
+  "t": 74.42,
+  "end": 81.48,
+  "dur": 7.06,
+  "para": 6
+ },
+ {
+  "c0": 1129,
+  "c1": 1200,
+  "txt": "But it is safe for a reason that has nothing to do with the smart part.",
+  "t": 81.48,
+  "end": 86.66,
+  "dur": 5.18,
+  "para": 7
+ },
+ {
+  "c0": 1201,
+  "c1": 1399,
+  "txt": "And the way most people buy one, they take a good lock and they hand the burglar a back door on purpose, for twelve dollars worth of brass, because it made them feel better about getting locked out.",
+  "t": 86.66,
+  "end": 99.18,
+  "dur": 12.52,
+  "para": 7
+ },
+ {
+  "c0": 1401,
+  "c1": 1424,
+  "txt": "That's the whole thing.",
+  "t": 99.18,
+  "end": 100.92,
+  "dur": 1.74,
+  "para": 8
+ },
+ {
+  "c0": 1425,
+  "c1": 1444,
+  "txt": "Now let me earn it.",
+  "t": 100.92,
+  "end": 102.62,
+  "dur": 1.7,
+  "para": 8
+ },
+ {
+  "c0": 1446,
+  "c1": 1469,
+  "txt": "My name is Ray Kessler.",
+  "t": 102.62,
+  "end": 104.7,
+  "dur": 2.08,
+  "para": 9
+ },
+ {
+  "c0": 1470,
+  "c1": 1541,
+  "txt": "I was a locksmith for thirty-five years and I retired a few years back.",
+  "t": 104.7,
+  "end": 109.1,
+  "dur": 4.4,
+  "para": 9
+ },
+ {
+  "c0": 1542,
+  "c1": 1666,
+  "txt": "I want to be honest with you about what that means, because people hear locksmith and they picture something out of a movie.",
+  "t": 109.1,
+  "end": 116.8,
+  "dur": 7.7,
+  "para": 9
+ },
+ {
+  "c0": 1668,
+  "c1": 1693,
+  "txt": "I never caught a burglar.",
+  "t": 116.8,
+  "end": 118.4,
+  "dur": 1.6,
+  "para": 10
+ },
+ {
+  "c0": 1694,
+  "c1": 1777,
+  "txt": "Not one. In thirty-five years I never once showed up while something was happening.",
+  "t": 118.4,
+  "end": 124.48,
+  "dur": 6.08,
+  "para": 10
+ },
+ {
+  "c0": 1779,
+  "c1": 1820,
+  "txt": "What I did was show up the morning after.",
+  "t": 124.48,
+  "end": 127.36,
+  "dur": 2.88,
+  "para": 11
+ },
+ {
+  "c0": 1821,
+  "c1": 1989,
+  "txt": "I was the man they called at seven in the morning when the coffee was already cold and there was a police report on the counter and the back door wouldn't shut anymore.",
+  "t": 127.36,
+  "end": 137.54,
+  "dur": 10.18,
+  "para": 11
+ },
+ {
+  "c0": 1990,
+  "c1": 2106,
+  "txt": "I'd measure the damage, I'd tell them what it would cost, and then I'd put a new door on the hole they came through.",
+  "t": 137.54,
+  "end": 144.48,
+  "dur": 6.94,
+  "para": 11
+ },
+ {
+  "c0": 2108,
+  "c1": 2145,
+  "txt": "I did that about four thousand times.",
+  "t": 144.48,
+  "end": 147.3,
+  "dur": 2.82,
+  "para": 12
+ },
+ {
+  "c0": 2147,
+  "c1": 2244,
+  "txt": "And here is what four thousand of those mornings will teach you, and it is not what you'd expect.",
+  "t": 147.3,
+  "end": 153.26,
+  "dur": 5.96,
+  "para": 13
+ },
+ {
+  "c0": 2245,
+  "c1": 2277,
+  "txt": "Almost none of them were clever.",
+  "t": 153.26,
+  "end": 155.52,
+  "dur": 2.26,
+  "para": 13
+ },
+ {
+  "c0": 2278,
+  "c1": 2382,
+  "txt": "I can count on one hand the number of jobs in thirty-five years where somebody actually picked the lock.",
+  "t": 155.52,
+  "end": 161.84,
+  "dur": 6.32,
+  "para": 13
+ },
+ {
+  "c0": 2383,
+  "c1": 2446,
+  "txt": "Actually picked it, with picks, the way it looks on television.",
+  "t": 161.84,
+  "end": 165.98,
+  "dur": 4.14,
+  "para": 13
+ },
+ {
+  "c0": 2448,
+  "c1": 2510,
+  "txt": "Almost every single one of them, the lock was completely fine.",
+  "t": 165.98,
+  "end": 171.5,
+  "dur": 5.52,
+  "para": 14
+ },
+ {
+  "c0": 2511,
+  "c1": 2708,
+  "txt": "I'd stand there with a screwdriver in my hand looking at a perfectly good deadbolt still sticking out of a door, still locked, and the door frame next to it was in four pieces on the kitchen floor.",
+  "t": 171.5,
+  "end": 184.18,
+  "dur": 12.68,
+  "para": 14
+ },
+ {
+  "c0": 2710,
+  "c1": 2734,
+  "txt": "Hold on to that picture.",
+  "t": 184.18,
+  "end": 186.0,
+  "dur": 1.82,
+  "para": 15
+ },
+ {
+  "c0": 2735,
+  "c1": 2820,
+  "txt": "We're going to come back to it, because it is the single most expensive thing I know.",
+  "t": 186.0,
+  "end": 191.2,
+  "dur": 5.2,
+  "para": 15
+ },
+ {
+  "c0": 2822,
+  "c1": 2922,
+  "txt": "But first let's do the keypad, because that's what everybody asks about and I want it off the table.",
+  "t": 191.2,
+  "end": 196.92,
+  "dur": 5.72,
+  "para": 16
+ },
+ {
+  "c0": 2924,
+  "c1": 2966,
+  "txt": "Is somebody going to hack your front door.",
+  "t": 196.92,
+  "end": 200.3,
+  "dur": 3.38,
+  "para": 17
+ },
+ {
+  "c0": 2968,
+  "c1": 2997,
+  "txt": "No. Practically speaking, no.",
+  "t": 200.3,
+  "end": 203.2,
+  "dur": 2.9,
+  "para": 18
+ },
+ {
+  "c0": 2998,
+  "c1": 3070,
+  "txt": "And I'll tell you how I know, and it's not because I read a white paper.",
+  "t": 203.2,
+  "end": 208.3,
+  "dur": 5.1,
+  "para": 18
+ },
+ {
+  "c0": 3072,
+  "c1": 3114,
+  "txt": "Nobody ever hired me to fix a hacked lock.",
+  "t": 208.3,
+  "end": 211.36,
+  "dur": 3.06,
+  "para": 19
+ },
+ {
+  "c0": 3115,
+  "c1": 3143,
+  "txt": "Not once. Thirty-five years.",
+  "t": 211.36,
+  "end": 214.06,
+  "dur": 2.7,
+  "para": 19
+ },
+ {
+  "c0": 3144,
+  "c1": 3192,
+  "txt": "Every single call I ever got was a broken thing.",
+  "t": 214.06,
+  "end": 218.04,
+  "dur": 3.98,
+  "para": 19
+ },
+ {
+  "c0": 3193,
+  "c1": 3270,
+  "txt": "Splintered wood, a bent strike, a busted window, a garage door standing open.",
+  "t": 218.04,
+  "end": 224.02,
+  "dur": 5.98,
+  "para": 19
+ },
+ {
+  "c0": 3271,
+  "c1": 3353,
+  "txt": "The tool was always a boot or a crowbar or a rock or a hand on an unlocked handle.",
+  "t": 224.02,
+  "end": 231.38,
+  "dur": 7.36,
+  "para": 19
+ },
+ {
+  "c0": 3354,
+  "c1": 3376,
+  "txt": "It was never a laptop.",
+  "t": 231.38,
+  "end": 233.36,
+  "dur": 1.98,
+  "para": 19
+ },
+ {
+  "c0": 3378,
+  "c1": 3468,
+  "txt": "And when you look at the actual numbers instead of the internet, you get the same picture.",
+  "t": 233.36,
+  "end": 238.7,
+  "dur": 5.34,
+  "para": 20
+ },
+ {
+  "c0": 3469,
+  "c1": 3531,
+  "txt": "The federal crime numbers break burglaries into three buckets.",
+  "t": 238.7,
+  "end": 242.64,
+  "dur": 3.94,
+  "para": 20
+ },
+ {
+  "c0": 3532,
+  "c1": 3601,
+  "txt": "A little over half of them are forcible entry — something got broken.",
+  "t": 242.64,
+  "end": 247.86,
+  "dur": 5.22,
+  "para": 20
+ },
+ {
+  "c0": 3602,
+  "c1": 3760,
+  "txt": "Almost thirty-eight percent are what they call unlawful entry, which is a polite way of saying somebody walked in through something that wasn't locked at all.",
+  "t": 247.86,
+  "end": 257.88,
+  "dur": 10.02,
+  "para": 20
+ },
+ {
+  "c0": 3761,
+  "c1": 3804,
+  "txt": "And the rest are attempts that didn't work.",
+  "t": 257.88,
+  "end": 260.96,
+  "dur": 3.08,
+  "para": 20
+ },
+ {
+  "c0": 3806,
+  "c1": 3835,
+  "txt": "There's no bucket for hacked.",
+  "t": 260.96,
+  "end": 262.78,
+  "dur": 1.82,
+  "para": 21
+ },
+ {
+  "c0": 3836,
+  "c1": 3953,
+  "txt": "There isn't one. It's not that it's small, it's that it isn't a category, because it doesn't happen enough to be one.",
+  "t": 262.78,
+  "end": 270.52,
+  "dur": 7.74,
+  "para": 21
+ },
+ {
+  "c0": 3955,
+  "c1": 3988,
+  "txt": "So the keypad isn't your problem.",
+  "t": 270.52,
+  "end": 272.92,
+  "dur": 2.4,
+  "para": 22
+ },
+ {
+  "c0": 3989,
+  "c1": 4016,
+  "txt": "The app isn't your problem.",
+  "t": 272.92,
+  "end": 275.36,
+  "dur": 2.44,
+  "para": 22
+ },
+ {
+  "c0": 4017,
+  "c1": 4174,
+  "txt": "Your neighbor's teenager isn't standing in your bushes with a laptop, and if he was, there is a much easier way into your house and he's standing next to it.",
+  "t": 275.36,
+  "end": 285.22,
+  "dur": 9.86,
+  "para": 22
+ },
+ {
+  "c0": 4176,
+  "c1": 4252,
+  "txt": "The keypad has one real weakness and it's got nothing to do with technology.",
+  "t": 285.22,
+  "end": 290.52,
+  "dur": 5.3,
+  "para": 23
+ },
+ {
+  "c0": 4253,
+  "c1": 4271,
+  "txt": "It's your fingers.",
+  "t": 290.52,
+  "end": 292.62,
+  "dur": 2.1,
+  "para": 23
+ },
+ {
+  "c0": 4273,
+  "c1": 4369,
+  "txt": "If you use the same four digits for two years on a touchscreen, those four buttons get polished.",
+  "t": 292.62,
+  "end": 299.18,
+  "dur": 6.56,
+  "para": 24
+ },
+ {
+  "c0": 4370,
+  "c1": 4444,
+  "txt": "The oil from your hand builds up on four squares and not on the other six.",
+  "t": 299.18,
+  "end": 304.62,
+  "dur": 5.44,
+  "para": 24
+ },
+ {
+  "c0": 4445,
+  "c1": 4499,
+  "txt": "You can see it in the right light from four feet away.",
+  "t": 304.62,
+  "end": 308.38,
+  "dur": 3.76,
+  "para": 24
+ },
+ {
+  "c0": 4500,
+  "c1": 4598,
+  "txt": "That doesn't tell somebody the order, but it takes ten thousand possibilities down to twenty-four.",
+  "t": 308.38,
+  "end": 315.06,
+  "dur": 6.68,
+  "para": 24
+ },
+ {
+  "c0": 4599,
+  "c1": 4792,
+  "txt": "That's a real thing and it takes you thirty seconds to fix: wipe the whole keypad with your sleeve every once in a while, and use a code with a repeated digit in it, so the smudges lie to them.",
+  "t": 315.06,
+  "end": 328.6,
+  "dur": 13.54,
+  "para": 24
+ },
+ {
+  "c0": 4794,
+  "c1": 4838,
+  "txt": "That's it. That's the entire keypad problem.",
+  "t": 328.6,
+  "end": 332.3,
+  "dur": 3.7,
+  "para": 25
+ },
+ {
+  "c0": 4839,
+  "c1": 4856,
+  "txt": "Wipe it. Move on.",
+  "t": 332.3,
+  "end": 334.18,
+  "dur": 1.88,
+  "para": 25
+ },
+ {
+  "c0": 4858,
+  "c1": 4888,
+  "txt": "Now the part nobody tells you.",
+  "t": 334.18,
+  "end": 336.26,
+  "dur": 2.08,
+  "para": 26
+ },
+ {
+  "c0": 4890,
+  "c1": 4917,
+  "txt": "Go look at your smart lock.",
+  "t": 336.26,
+  "end": 338.96,
+  "dur": 2.7,
+  "para": 27
+ },
+ {
+  "c0": 4918,
+  "c1": 5037,
+  "txt": "Go look at it right now if it's in the house, I'll wait, because this is the one thing I actually want you to do today.",
+  "t": 338.96,
+  "end": 346.68,
+  "dur": 7.72,
+  "para": 27
+ },
+ {
+  "c0": 5039,
+  "c1": 5101,
+  "txt": "Most of them have a keyhole on the bottom of the outside part.",
+  "t": 346.68,
+  "end": 350.74,
+  "dur": 4.06,
+  "para": 28
+ },
+ {
+  "c0": 5102,
+  "c1": 5139,
+  "txt": "Sometimes it's right out in the open.",
+  "t": 350.74,
+  "end": 353.68,
+  "dur": 2.94,
+  "para": 28
+ },
+ {
+  "c0": 5140,
+  "c1": 5239,
+  "txt": "Sometimes there's a little plastic cover you slide, or a rubber plug you pop out with a fingernail.",
+  "t": 353.68,
+  "end": 360.26,
+  "dur": 6.58,
+  "para": 28
+ },
+ {
+  "c0": 5241,
+  "c1": 5288,
+  "txt": "That keyhole is called the mechanical override.",
+  "t": 360.26,
+  "end": 363.04,
+  "dur": 2.78,
+  "para": 29
+ },
+ {
+  "c0": 5289,
+  "c1": 5520,
+  "txt": "And every single thing the expensive part of that lock does — the encryption, the rolling codes, the notifications, the auto-lock, the whole reason you spent four hundred and sixty dollars — every bit of that stops at that keyhole.",
+  "t": 363.04,
+  "end": 379.16,
+  "dur": 16.12,
+  "para": 29
+ },
+ {
+  "c0": 5522,
+  "c1": 5569,
+  "txt": "Because a keyhole doesn't know about any of it.",
+  "t": 379.16,
+  "end": 382.32,
+  "dur": 3.16,
+  "para": 30
+ },
+ {
+  "c0": 5570,
+  "c1": 5609,
+  "txt": "A keyhole is a hole with springs in it.",
+  "t": 382.32,
+  "end": 385.26,
+  "dur": 2.94,
+  "para": 30
+ },
+ {
+  "c0": 5610,
+  "c1": 5654,
+  "txt": "It's the same technology as eighteen ninety.",
+  "t": 385.26,
+  "end": 388.2,
+  "dur": 2.94,
+  "para": 30
+ },
+ {
+  "c0": 5655,
+  "c1": 5825,
+  "txt": "And if somebody opens that cylinder, the lock retracts the bolt and the app tells you it was unlocked with a key, which it was, and everything worked exactly as designed.",
+  "t": 388.2,
+  "end": 400.34,
+  "dur": 12.14,
+  "para": 30
+ },
+ {
+  "c0": 5827,
+  "c1": 5891,
+  "txt": "Now here is the part that made me angry for about fifteen years.",
+  "t": 400.34,
+  "end": 404.86,
+  "dur": 4.52,
+  "para": 31
+ },
+ {
+  "c0": 5893,
+  "c1": 5946,
+  "txt": "That cylinder is the cheapest part of the whole lock.",
+  "t": 404.86,
+  "end": 408.52,
+  "dur": 3.66,
+  "para": 32
+ },
+ {
+  "c0": 5948,
+  "c1": 6008,
+  "txt": "I want you to think about where the money went on that lock.",
+  "t": 408.52,
+  "end": 411.96,
+  "dur": 3.44,
+  "para": 33
+ },
+ {
+  "c0": 6009,
+  "c1": 6030,
+  "txt": "It went into a radio.",
+  "t": 411.96,
+  "end": 414.04,
+  "dur": 2.08,
+  "para": 33
+ },
+ {
+  "c0": 6031,
+  "c1": 6058,
+  "txt": "It went into a touchscreen.",
+  "t": 414.04,
+  "end": 416.08,
+  "dur": 2.04,
+  "para": 33
+ },
+ {
+  "c0": 6059,
+  "c1": 6137,
+  "txt": "It went into an app with a design team and a cloud account and a support line.",
+  "t": 416.08,
+  "end": 421.42,
+  "dur": 5.34,
+  "para": 33
+ },
+ {
+  "c0": 6138,
+  "c1": 6192,
+  "txt": "It went into the box, the photography, the ad you saw.",
+  "t": 421.42,
+  "end": 426.34,
+  "dur": 4.92,
+  "para": 33
+ },
+ {
+  "c0": 6194,
+  "c1": 6394,
+  "txt": "The cylinder is a fifteen dollar part on a four hundred dollar product, and on a lot of them it is the exact same cylinder that comes on the twenty-two dollar builder-grade knob at the hardware store.",
+  "t": 426.34,
+  "end": 439.22,
+  "dur": 12.88,
+  "para": 34
+ },
+ {
+  "c0": 6395,
+  "c1": 6440,
+  "txt": "Literally the same part number in some cases.",
+  "t": 439.22,
+  "end": 442.34,
+  "dur": 3.12,
+  "para": 34
+ },
+ {
+  "c0": 6441,
+  "c1": 6484,
+  "txt": "Same wafers, same springs, same everything.",
+  "t": 442.34,
+  "end": 445.92,
+  "dur": 3.58,
+  "para": 34
+ },
+ {
+  "c0": 6486,
+  "c1": 6684,
+  "txt": "So what you have bought, if you bought one of those, is a very good electronic lock bolted to a very ordinary mechanical lock, and a burglar gets to pick which one of the two he'd like to deal with.",
+  "t": 445.92,
+  "end": 459.5,
+  "dur": 13.58,
+  "para": 35
+ },
+ {
+  "c0": 6685,
+  "c1": 6734,
+  "txt": "And he is not going to pick the one with the app.",
+  "t": 459.5,
+  "end": 463.04,
+  "dur": 3.54,
+  "para": 35
+ },
+ {
+  "c0": 6736,
+  "c1": 6853,
+  "txt": "Now, I have to be careful here, and I'm going to be, because I'm not going to teach anybody anything on this channel.",
+  "t": 463.04,
+  "end": 469.82,
+  "dur": 6.78,
+  "para": 36
+ },
+ {
+  "c0": 6855,
+  "c1": 6905,
+  "txt": "I'm not going to tell you how any of that is done.",
+  "t": 469.82,
+  "end": 473.14,
+  "dur": 3.32,
+  "para": 37
+ },
+ {
+  "c0": 6906,
+  "c1": 6937,
+  "txt": "I'm not going to name the tool.",
+  "t": 473.14,
+  "end": 475.06,
+  "dur": 1.92,
+  "para": 37
+ },
+ {
+  "c0": 6938,
+  "c1": 7161,
+  "txt": "What I will tell you is that there are entire product categories of professional tools, sold openly to the trade, that exist for exactly one purpose, which is opening common residential cylinders quickly and without damage.",
+  "t": 475.06,
+  "end": 492.12,
+  "dur": 17.06,
+  "para": 37
+ },
+ {
+  "c0": 7162,
+  "c1": 7192,
+  "txt": "I owned a drawer full of them.",
+  "t": 492.12,
+  "end": 494.66,
+  "dur": 2.54,
+  "para": 37
+ },
+ {
+  "c0": 7193,
+  "c1": 7256,
+  "txt": "That's not a secret and it's not a scandal — that's my old job.",
+  "t": 494.66,
+  "end": 499.38,
+  "dur": 4.72,
+  "para": 37
+ },
+ {
+  "c0": 7257,
+  "c1": 7393,
+  "txt": "Somebody locks themselves out at eleven at night with a baby inside, and you are not going to stand there and pick it for forty minutes.",
+  "t": 499.38,
+  "end": 508.14,
+  "dur": 8.76,
+  "para": 37
+ },
+ {
+  "c0": 7395,
+  "c1": 7426,
+  "txt": "The point isn't that it's easy.",
+  "t": 508.14,
+  "end": 510.56,
+  "dur": 2.42,
+  "para": 38
+ },
+ {
+  "c0": 7427,
+  "c1": 7511,
+  "txt": "The point is that it's a completely separate problem from the one you paid to solve.",
+  "t": 510.56,
+  "end": 516.02,
+  "dur": 5.46,
+  "para": 38
+ },
+ {
+  "c0": 7512,
+  "c1": 7632,
+  "txt": "You bought a solution to problem A and left problem B sitting there on the bottom of the lock under a little rubber cap.",
+  "t": 516.02,
+  "end": 523.94,
+  "dur": 7.92,
+  "para": 38
+ },
+ {
+  "c0": 7634,
+  "c1": 7675,
+  "txt": "So that's strike one against the keyhole.",
+  "t": 523.94,
+  "end": 527.16,
+  "dur": 3.22,
+  "para": 39
+ },
+ {
+  "c0": 7677,
+  "c1": 7785,
+  "txt": "Here's strike two, and this one is worse, because this one happens without anybody breaking anything at all.",
+  "t": 527.16,
+  "end": 534.98,
+  "dur": 7.82,
+  "para": 40
+ },
+ {
+  "c0": 7787,
+  "c1": 7851,
+  "txt": "When you had a normal lock, your key was a thing you controlled.",
+  "t": 534.98,
+  "end": 539.64,
+  "dur": 4.66,
+  "para": 41
+ },
+ {
+  "c0": 7852,
+  "c1": 7879,
+  "txt": "Maybe four of them existed.",
+  "t": 539.64,
+  "end": 541.92,
+  "dur": 2.28,
+  "para": 41
+ },
+ {
+  "c0": 7880,
+  "c1": 7934,
+  "txt": "You, your wife, one in a drawer, one with your sister.",
+  "t": 541.92,
+  "end": 546.54,
+  "dur": 4.62,
+  "para": 41
+ },
+ {
+  "c0": 7936,
+  "c1": 8045,
+  "txt": "When you buy a smart lock and put a keyhole on it, you now have two systems, and you only manage one of them.",
+  "t": 546.54,
+  "end": 554.04,
+  "dur": 7.5,
+  "para": 42
+ },
+ {
+  "c0": 8046,
+  "c1": 8082,
+  "txt": "You are very careful with the codes.",
+  "t": 554.04,
+  "end": 556.66,
+  "dur": 2.62,
+  "para": 42
+ },
+ {
+  "c0": 8083,
+  "c1": 8135,
+  "txt": "You delete the cleaner's code when she stops coming.",
+  "t": 556.66,
+  "end": 559.7,
+  "dur": 3.04,
+  "para": 42
+ },
+ {
+  "c0": 8136,
+  "c1": 8195,
+  "txt": "You give the dog walker a code that only works on Tuesdays.",
+  "t": 559.7,
+  "end": 564.3,
+  "dur": 4.6,
+  "para": 42
+ },
+ {
+  "c0": 8196,
+  "c1": 8228,
+  "txt": "You feel organized, and you are.",
+  "t": 564.3,
+  "end": 567.22,
+  "dur": 2.92,
+  "para": 42
+ },
+ {
+  "c0": 8230,
+  "c1": 8259,
+  "txt": "And meanwhile there is a key.",
+  "t": 567.22,
+  "end": 569.18,
+  "dur": 1.96,
+  "para": 43
+ },
+ {
+  "c0": 8261,
+  "c1": 8298,
+  "txt": "There's the key that came in the box.",
+  "t": 569.18,
+  "end": 571.72,
+  "dur": 2.54,
+  "para": 44
+ },
+ {
+  "c0": 8299,
+  "c1": 8488,
+  "txt": "There's the second key that came in the box, that you have never seen, that is probably still in the plastic sleeve at the bottom of a kitchen drawer with four batteries and a tape measure.",
+  "t": 571.72,
+  "end": 583.92,
+  "dur": 12.2,
+  "para": 44
+ },
+ {
+  "c0": 8489,
+  "c1": 8563,
+  "txt": "There's the key the previous owner had, if you didn't change the cylinder.",
+  "t": 583.92,
+  "end": 587.76,
+  "dur": 3.84,
+  "para": 44
+ },
+ {
+  "c0": 8564,
+  "c1": 8619,
+  "txt": "There's the one the contractor's guy had for six weeks.",
+  "t": 587.76,
+  "end": 592.14,
+  "dur": 4.38,
+  "para": 44
+ },
+ {
+  "c0": 8620,
+  "c1": 8693,
+  "txt": "There's the one on the ring your kid lost at college and never mentioned.",
+  "t": 592.14,
+  "end": 596.72,
+  "dur": 4.58,
+  "para": 44
+ },
+ {
+  "c0": 8695,
+  "c1": 8916,
+  "txt": "You manage the codes like a hawk and the keys are just out there in the world, and the keys open the door just as wide as the codes do, and the lock will never once send you a notification about the ones you forgot about.",
+  "t": 596.72,
+  "end": 610.8,
+  "dur": 14.08,
+  "para": 45
+ },
+ {
+  "c0": 8918,
+  "c1": 8960,
+  "txt": "That's not a hack. That's just arithmetic.",
+  "t": 610.8,
+  "end": 613.58,
+  "dur": 2.78,
+  "para": 46
+ },
+ {
+  "c0": 8961,
+  "c1": 9031,
+  "txt": "And I have walked into a lot of houses where that was the whole story.",
+  "t": 613.58,
+  "end": 619.22,
+  "dur": 5.64,
+  "para": 46
+ },
+ {
+  "c0": 9033,
+  "c1": 9121,
+  "txt": "Okay. So now you are about to ask me the obvious thing, and it's the right thing to ask.",
+  "t": 619.22,
+  "end": 625.32,
+  "dur": 6.1,
+  "para": 47
+ },
+ {
+  "c0": 9123,
+  "c1": 9196,
+  "txt": "Ray, if the keyhole is the weak point, why does the lock have one at all.",
+  "t": 625.32,
+  "end": 630.68,
+  "dur": 5.36,
+  "para": 48
+ },
+ {
+  "c0": 9198,
+  "c1": 9223,
+  "txt": "Because of you. Honestly.",
+  "t": 630.68,
+  "end": 632.82,
+  "dur": 2.14,
+  "para": 49
+ },
+ {
+  "c0": 9224,
+  "c1": 9366,
+  "txt": "Because of all of us. Because the number one fear people have about a keyless lock is not burglars, it's being locked out of their own house.",
+  "t": 632.82,
+  "end": 641.7,
+  "dur": 8.88,
+  "para": 49
+ },
+ {
+  "c0": 9367,
+  "c1": 9518,
+  "txt": "And the manufacturers know that, and the return rate on a lock that leaves somebody standing on their own porch in the rain is a company-ending number.",
+  "t": 641.7,
+  "end": 652.34,
+  "dur": 10.64,
+  "para": 50
+ },
+ {
+  "c0": 9519,
+  "c1": 9615,
+  "txt": "So they put a keyhole on it, and everybody feels better in the store, and the thing gets bought.",
+  "t": 652.34,
+  "end": 658.7,
+  "dur": 6.36,
+  "para": 50
+ },
+ {
+  "c0": 9617,
+  "c1": 9694,
+  "txt": "And I want to say something fair here, because I don't like one-sided videos.",
+  "t": 658.7,
+  "end": 664.0,
+  "dur": 5.3,
+  "para": 51
+ },
+ {
+  "c0": 9696,
+  "c1": 9741,
+  "txt": "That keyhole is not automatically a disaster.",
+  "t": 664.0,
+  "end": 667.68,
+  "dur": 3.68,
+  "para": 52
+ },
+ {
+  "c0": 9742,
+  "c1": 9934,
+  "txt": "On a good lock, from a company that took it seriously, that override cylinder is a proper high-security cylinder with real anti-drill pins and a restricted key you can't get copied at a kiosk.",
+  "t": 667.68,
+  "end": 681.6,
+  "dur": 13.92,
+  "para": 52
+ },
+ {
+  "c0": 9935,
+  "c1": 9972,
+  "txt": "Some of them are genuinely excellent.",
+  "t": 681.6,
+  "end": 683.86,
+  "dur": 2.26,
+  "para": 52
+ },
+ {
+  "c0": 9973,
+  "c1": 10020,
+  "txt": "On those, the keyhole is a feature, not a hole.",
+  "t": 683.86,
+  "end": 688.02,
+  "dur": 4.16,
+  "para": 52
+ },
+ {
+  "c0": 10022,
+  "c1": 10136,
+  "txt": "The problem is you cannot tell which one you've got by looking at the box, because nobody advertises the cylinder.",
+  "t": 688.02,
+  "end": 695.94,
+  "dur": 7.92,
+  "para": 53
+ },
+ {
+  "c0": 10137,
+  "c1": 10215,
+  "txt": "Nobody. You will find the battery life on the front of the box in big letters.",
+  "t": 695.94,
+  "end": 701.88,
+  "dur": 5.94,
+  "para": 53
+ },
+ {
+  "c0": 10216,
+  "c1": 10327,
+  "txt": "You will not find one word about the cylinder, ever, because it is the part they're hoping you don't ask about.",
+  "t": 701.88,
+  "end": 709.1,
+  "dur": 7.22,
+  "para": 53
+ },
+ {
+  "c0": 10329,
+  "c1": 10382,
+  "txt": "So that's the smart lock question, honestly answered.",
+  "t": 709.1,
+  "end": 712.4,
+  "dur": 3.3,
+  "para": 54
+ },
+ {
+  "c0": 10383,
+  "c1": 10464,
+  "txt": "Now let me take it all away from you, because there's a bigger one underneath it.",
+  "t": 712.4,
+  "end": 717.74,
+  "dur": 5.34,
+  "para": 54
+ },
+ {
+  "c0": 10466,
+  "c1": 10501,
+  "txt": "Remember that picture from earlier.",
+  "t": 717.74,
+  "end": 720.14,
+  "dur": 2.4,
+  "para": 55
+ },
+ {
+  "c0": 10502,
+  "c1": 10602,
+  "txt": "The perfectly good deadbolt still sticking out of a door, and the frame in four pieces on the floor.",
+  "t": 720.14,
+  "end": 727.48,
+  "dur": 7.34,
+  "para": 55
+ },
+ {
+  "c0": 10604,
+  "c1": 10717,
+  "txt": "Here is the thing that took me about ten years to really understand, and I'm going to say it as plainly as I can.",
+  "t": 727.48,
+  "end": 734.86,
+  "dur": 7.38,
+  "para": 56
+ },
+ {
+  "c0": 10719,
+  "c1": 10761,
+  "txt": "The lock is not what holds your door shut.",
+  "t": 734.86,
+  "end": 737.78,
+  "dur": 2.92,
+  "para": 57
+ },
+ {
+  "c0": 10763,
+  "c1": 10819,
+  "txt": "Say it again. The lock is not what holds your door shut.",
+  "t": 737.78,
+  "end": 741.88,
+  "dur": 4.1,
+  "para": 58
+ },
+ {
+  "c0": 10821,
+  "c1": 10845,
+  "txt": "The lock is a metal bar.",
+  "t": 741.88,
+  "end": 743.82,
+  "dur": 1.94,
+  "para": 59
+ },
+ {
+  "c0": 10846,
+  "c1": 10904,
+  "txt": "That's all it is. A metal bar that slides out of the door.",
+  "t": 743.82,
+  "end": 748.26,
+  "dur": 4.44,
+  "para": 59
+ },
+ {
+  "c0": 10905,
+  "c1": 11079,
+  "txt": "It doesn't hold anything. What holds your door shut is the piece of wood that the metal bar slides into, and the screws that hold that piece of metal into that piece of wood.",
+  "t": 748.26,
+  "end": 760.06,
+  "dur": 11.8,
+  "para": 59
+ },
+ {
+  "c0": 11081,
+  "c1": 11231,
+  "txt": "And on the vast majority of houses in this country, that piece of metal is a thin plate held on by two screws that are three quarters of an inch long.",
+  "t": 760.06,
+  "end": 770.94,
+  "dur": 10.88,
+  "para": 60
+ },
+ {
+  "c0": 11233,
+  "c1": 11277,
+  "txt": "Three quarters of an inch. Think about that.",
+  "t": 770.94,
+  "end": 774.18,
+  "dur": 3.24,
+  "para": 61
+ },
+ {
+  "c0": 11278,
+  "c1": 11311,
+  "txt": "Not into the frame of your house.",
+  "t": 774.18,
+  "end": 776.38,
+  "dur": 2.2,
+  "para": 61
+ },
+ {
+  "c0": 11312,
+  "c1": 11330,
+  "txt": "Not into the stud.",
+  "t": 776.38,
+  "end": 778.02,
+  "dur": 1.64,
+  "para": 61
+ },
+ {
+  "c0": 11331,
+  "c1": 11444,
+  "txt": "Into the trim. Into a strip of soft pine that is nailed to the actual frame, with about an inch of air behind it.",
+  "t": 778.02,
+  "end": 786.92,
+  "dur": 8.9,
+  "para": 61
+ },
+ {
+  "c0": 11446,
+  "c1": 11496,
+  "txt": "That's what's between your family and the outside.",
+  "t": 786.92,
+  "end": 790.1,
+  "dur": 3.18,
+  "para": 62
+ },
+ {
+  "c0": 11497,
+  "c1": 11542,
+  "txt": "Not the lock. Two little screws in some pine.",
+  "t": 790.1,
+  "end": 793.94,
+  "dur": 3.84,
+  "para": 62
+ },
+ {
+  "c0": 11544,
+  "c1": 11678,
+  "txt": "So when somebody hits that door with their shoulder, or with the bottom of their boot right next to the handle, the lock doesn't fail.",
+  "t": 793.94,
+  "end": 802.6,
+  "dur": 8.66,
+  "para": 63
+ },
+ {
+  "c0": 11679,
+  "c1": 11694,
+  "txt": "It never fails.",
+  "t": 802.6,
+  "end": 804.34,
+  "dur": 1.74,
+  "para": 63
+ },
+ {
+  "c0": 11695,
+  "c1": 11712,
+  "txt": "The lock is fine.",
+  "t": 804.34,
+  "end": 806.06,
+  "dur": 1.72,
+  "para": 63
+ },
+ {
+  "c0": 11713,
+  "c1": 11925,
+  "txt": "The bolt is fine. The two little screws tear out of the pine like it's a cracker, and the whole frame goes, and the door swings open with the deadbolt still locked and still sticking out, looking proud of itself.",
+  "t": 806.06,
+  "end": 820.8,
+  "dur": 14.74,
+  "para": 63
+ },
+ {
+  "c0": 11927,
+  "c1": 11996,
+  "txt": "I have photographed that exact scene hundreds of times for insurance.",
+  "t": 820.8,
+  "end": 825.62,
+  "dur": 4.82,
+  "para": 64
+ },
+ {
+  "c0": 11997,
+  "c1": 12093,
+  "txt": "Hundreds. The deadbolt, extended, undamaged, sitting in a piece of splintered wood on the floor.",
+  "t": 825.62,
+  "end": 833.2,
+  "dur": 7.58,
+  "para": 64
+ },
+ {
+  "c0": 12095,
+  "c1": 12189,
+  "txt": "So here's my honest opinion, and it's going to sound strange coming from a man who sold locks.",
+  "t": 833.2,
+  "end": 840.06,
+  "dur": 6.86,
+  "para": 65
+ },
+ {
+  "c0": 12191,
+  "c1": 12331,
+  "txt": "If you put a four hundred dollar smart lock on a door with three quarter inch screws in the strike plate, you did not make your house safer.",
+  "t": 840.06,
+  "end": 848.82,
+  "dur": 8.76,
+  "para": 66
+ },
+ {
+  "c0": 12332,
+  "c1": 12369,
+  "txt": "You made your phone more interesting.",
+  "t": 848.82,
+  "end": 851.82,
+  "dur": 3.0,
+  "para": 66
+ },
+ {
+  "c0": 12371,
+  "c1": 12537,
+  "txt": "And if you take the cheapest deadbolt in the store and you install it properly, into the actual structure of the house, you are ahead of ninety percent of the street.",
+  "t": 851.82,
+  "end": 862.82,
+  "dur": 11.0,
+  "para": 67
+ },
+ {
+  "c0": 12539,
+  "c1": 12631,
+  "txt": "Which brings me to the only hardware advice in this whole video, and it costs three dollars.",
+  "t": 862.82,
+  "end": 868.72,
+  "dur": 5.9,
+  "para": 68
+ },
+ {
+  "c0": 12633,
+  "c1": 12754,
+  "txt": "Take the two screws out of your strike plate — that's the metal plate on the door frame with the hole the bolt goes into.",
+  "t": 868.72,
+  "end": 876.66,
+  "dur": 7.94,
+  "para": 69
+ },
+ {
+  "c0": 12755,
+  "c1": 12786,
+  "txt": "Take them out and look at them.",
+  "t": 876.66,
+  "end": 878.54,
+  "dur": 1.88,
+  "para": 69
+ },
+ {
+  "c0": 12787,
+  "c1": 12876,
+  "txt": "If they're three quarters of an inch, that's the whole problem, right there in your hand.",
+  "t": 878.54,
+  "end": 883.98,
+  "dur": 5.44,
+  "para": 69
+ },
+ {
+  "c0": 12878,
+  "c1": 12917,
+  "txt": "Go get a box of three inch wood screws.",
+  "t": 883.98,
+  "end": 887.1,
+  "dur": 3.12,
+  "para": 70
+ },
+ {
+  "c0": 12918,
+  "c1": 12929,
+  "txt": "Three inch.",
+  "t": 887.1,
+  "end": 888.74,
+  "dur": 1.64,
+  "para": 70
+ },
+ {
+  "c0": 12930,
+  "c1": 12963,
+  "txt": "Same head, same drive, just long.",
+  "t": 888.74,
+  "end": 891.52,
+  "dur": 2.78,
+  "para": 70
+ },
+ {
+  "c0": 12964,
+  "c1": 13059,
+  "txt": "They're about three dollars for a box and they're in the same aisle you're already standing in.",
+  "t": 891.52,
+  "end": 897.98,
+  "dur": 6.46,
+  "para": 70
+ },
+ {
+  "c0": 13061,
+  "c1": 13082,
+  "txt": "Put those in instead.",
+  "t": 897.98,
+  "end": 899.68,
+  "dur": 1.7,
+  "para": 71
+ },
+ {
+  "c0": 13083,
+  "c1": 13116,
+  "txt": "That's it. That's the entire job.",
+  "t": 899.68,
+  "end": 903.06,
+  "dur": 3.38,
+  "para": 71
+ },
+ {
+  "c0": 13117,
+  "c1": 13340,
+  "txt": "It takes eleven minutes and a screwdriver, and now your bolt is anchored into the actual timber frame of your house instead of a decorative strip of pine, and now when somebody hits that door, they're fighting the building.",
+  "t": 903.06,
+  "end": 917.1,
+  "dur": 14.04,
+  "para": 71
+ },
+ {
+  "c0": 13342,
+  "c1": 13398,
+  "txt": "Do the hinges too, while you've got the screwdriver out.",
+  "t": 917.1,
+  "end": 921.94,
+  "dur": 4.84,
+  "para": 72
+ },
+ {
+  "c0": 13399,
+  "c1": 13463,
+  "txt": "One long screw in each hinge, in the hole closest to the middle.",
+  "t": 921.94,
+  "end": 927.0,
+  "dur": 5.06,
+  "para": 72
+ },
+ {
+  "c0": 13464,
+  "c1": 13520,
+  "txt": "Nobody does the hinges and the hinges fail the same way.",
+  "t": 927.0,
+  "end": 931.2,
+  "dur": 4.2,
+  "para": 72
+ },
+ {
+  "c0": 13522,
+  "c1": 13647,
+  "txt": "And I want to be clear about something, because there is a whole industry built on selling you the expensive version of this.",
+  "t": 931.2,
+  "end": 938.78,
+  "dur": 7.58,
+  "para": 73
+ },
+ {
+  "c0": 13649,
+  "c1": 13685,
+  "txt": "You do not need a reinforcement bar.",
+  "t": 938.78,
+  "end": 942.02,
+  "dur": 3.24,
+  "para": 74
+ },
+ {
+  "c0": 13686,
+  "c1": 13756,
+  "txt": "You do not need the branded one for a hundred and twenty-five dollars.",
+  "t": 942.02,
+  "end": 946.08,
+  "dur": 4.06,
+  "para": 74
+ },
+ {
+  "c0": 13757,
+  "c1": 13976,
+  "txt": "If you want a heavier strike plate, the generic four-screw one at the hardware store is about twenty-five dollars and it is fine, and honestly, the long screws in the plate you already own get you most of the way there.",
+  "t": 946.08,
+  "end": 962.16,
+  "dur": 16.08,
+  "para": 74
+ },
+ {
+  "c0": 13977,
+  "c1": 14088,
+  "txt": "This is a three dollar problem that has a three dollar solution, and everything past that is somebody's margin.",
+  "t": 962.16,
+  "end": 970.12,
+  "dur": 7.96,
+  "para": 74
+ },
+ {
+  "c0": 14090,
+  "c1": 14148,
+  "txt": "Alright. So now you know where your door is actually weak.",
+  "t": 970.12,
+  "end": 973.62,
+  "dur": 3.5,
+  "para": 75
+ },
+ {
+  "c0": 14149,
+  "c1": 14269,
+  "txt": "Let's go shopping, and let me teach you how to read a box, because this is the part I actually think is worth your time.",
+  "t": 973.62,
+  "end": 982.14,
+  "dur": 8.52,
+  "para": 75
+ },
+ {
+  "c0": 14271,
+  "c1": 14358,
+  "txt": "There are numbers on the back of every lock box and almost nobody knows what they mean.",
+  "t": 982.14,
+  "end": 987.76,
+  "dur": 5.62,
+  "para": 76
+ },
+ {
+  "c0": 14359,
+  "c1": 14457,
+  "txt": "I'm going to give them to you in about two minutes and you'll never be talked into anything again.",
+  "t": 987.76,
+  "end": 993.64,
+  "dur": 5.88,
+  "para": 76
+ },
+ {
+  "c0": 14459,
+  "c1": 14511,
+  "txt": "The first one is the old system, and you've seen it.",
+  "t": 993.64,
+  "end": 997.22,
+  "dur": 3.58,
+  "para": 77
+ },
+ {
+  "c0": 14512,
+  "c1": 14546,
+  "txt": "Grade one, grade two, grade three.",
+  "t": 997.22,
+  "end": 1000.38,
+  "dur": 3.16,
+  "para": 77
+ },
+ {
+  "c0": 14547,
+  "c1": 14696,
+  "txt": "That's the industry standard for locks and latches, and here's what's actually behind those numbers, because it isn't a marketing badge, it's a test.",
+  "t": 1000.38,
+  "end": 1010.4,
+  "dur": 10.02,
+  "para": 77
+ },
+ {
+  "c0": 14698,
+  "c1": 14725,
+  "txt": "Grade three is residential.",
+  "t": 1010.4,
+  "end": 1012.74,
+  "dur": 2.34,
+  "para": 78
+ },
+ {
+  "c0": 14726,
+  "c1": 14829,
+  "txt": "That lock gets cycled about a hundred thousand times and it has to survive two heavy blows to the bolt.",
+  "t": 1012.74,
+  "end": 1019.04,
+  "dur": 6.3,
+  "para": 78
+ },
+ {
+  "c0": 14830,
+  "c1": 14834,
+  "txt": "Two.",
+  "t": 1019.04,
+  "end": 1020.86,
+  "dur": 1.82,
+  "para": 78
+ },
+ {
+  "c0": 14836,
+  "c1": 14860,
+  "txt": "Grade two is the middle.",
+  "t": 1020.86,
+  "end": 1022.84,
+  "dur": 1.98,
+  "para": 79
+ },
+ {
+  "c0": 14861,
+  "c1": 14919,
+  "txt": "About a hundred and fifty thousand cycles, and five blows.",
+  "t": 1022.84,
+  "end": 1027.2,
+  "dur": 4.36,
+  "para": 79
+ },
+ {
+  "c0": 14921,
+  "c1": 14958,
+  "txt": "Grade one is the commercial standard.",
+  "t": 1027.2,
+  "end": 1030.3,
+  "dur": 3.1,
+  "para": 80
+ },
+ {
+  "c0": 14959,
+  "c1": 15012,
+  "txt": "Two hundred and fifty thousand cycles, and ten blows.",
+  "t": 1030.3,
+  "end": 1034.42,
+  "dur": 4.12,
+  "para": 80
+ },
+ {
+  "c0": 15014,
+  "c1": 15047,
+  "txt": "Two blows, five blows, ten blows.",
+  "t": 1034.42,
+  "end": 1038.1,
+  "dur": 3.68,
+  "para": 81
+ },
+ {
+  "c0": 15048,
+  "c1": 15088,
+  "txt": "Now you know exactly what you're buying.",
+  "t": 1038.1,
+  "end": 1041.1,
+  "dur": 3.0,
+  "para": 81
+ },
+ {
+  "c0": 15089,
+  "c1": 15161,
+  "txt": "A grade three lock is a lock that was tested to survive being hit twice.",
+  "t": 1041.1,
+  "end": 1046.42,
+  "dur": 5.32,
+  "para": 81
+ },
+ {
+  "c0": 15162,
+  "c1": 15214,
+  "txt": "That's not an insult, that's just the specification.",
+  "t": 1046.42,
+  "end": 1050.5,
+  "dur": 4.08,
+  "para": 81
+ },
+ {
+  "c0": 15215,
+  "c1": 15275,
+  "txt": "It's a fine lock for an interior door or a shed or a closet.",
+  "t": 1050.5,
+  "end": 1055.34,
+  "dur": 4.84,
+  "para": 81
+ },
+ {
+  "c0": 15277,
+  "c1": 15374,
+  "txt": "For the door your family sleeps behind, you want grade one, or at the absolute minimum grade two.",
+  "t": 1055.34,
+  "end": 1062.82,
+  "dur": 7.48,
+  "para": 82
+ },
+ {
+  "c0": 15375,
+  "c1": 15417,
+  "txt": "And grade one is not four times the price.",
+  "t": 1062.82,
+  "end": 1066.1,
+  "dur": 3.28,
+  "para": 82
+ },
+ {
+  "c0": 15418,
+  "c1": 15536,
+  "txt": "It is usually fifteen or twenty dollars more, which is less than the difference between two finishes of the same lock.",
+  "t": 1066.1,
+  "end": 1073.74,
+  "dur": 7.64,
+  "para": 82
+ },
+ {
+  "c0": 15538,
+  "c1": 15658,
+  "txt": "Now the second system, and this is the one that matters for smart locks specifically, and almost nobody knows it exists.",
+  "t": 1073.74,
+  "end": 1082.48,
+  "dur": 8.74,
+  "para": 83
+ },
+ {
+  "c0": 15660,
+  "c1": 15873,
+  "txt": "Electronic and smart deadbolts are tested under their own residential standard — the number on the paper is A one fifty six point forty, and you don't need to remember that, you need to remember what it gives you.",
+  "t": 1082.48,
+  "end": 1096.58,
+  "dur": 14.1,
+  "para": 84
+ },
+ {
+  "c0": 15875,
+  "c1": 15906,
+  "txt": "It doesn't give you one number.",
+  "t": 1096.58,
+  "end": 1098.6,
+  "dur": 2.02,
+  "para": 85
+ },
+ {
+  "c0": 15907,
+  "c1": 15934,
+  "txt": "It gives you three letters.",
+  "t": 1098.6,
+  "end": 1100.9,
+  "dur": 2.3,
+  "para": 85
+ },
+ {
+  "c0": 15936,
+  "c1": 15998,
+  "txt": "Three letters, in a row, like triple-A, or A-B-B, or triple-C.",
+  "t": 1100.9,
+  "end": 1107.22,
+  "dur": 6.32,
+  "para": 86
+ },
+ {
+  "c0": 15999,
+  "c1": 16039,
+  "txt": "And each letter is a different category.",
+  "t": 1107.22,
+  "end": 1109.76,
+  "dur": 2.54,
+  "para": 86
+ },
+ {
+  "c0": 16040,
+  "c1": 16069,
+  "txt": "The first letter is security.",
+  "t": 1109.76,
+  "end": 1111.96,
+  "dur": 2.2,
+  "para": 86
+ },
+ {
+  "c0": 16070,
+  "c1": 16102,
+  "txt": "The second letter is durability.",
+  "t": 1111.96,
+  "end": 1113.74,
+  "dur": 1.78,
+  "para": 86
+ },
+ {
+  "c0": 16103,
+  "c1": 16130,
+  "txt": "The third letter is finish.",
+  "t": 1113.74,
+  "end": 1116.18,
+  "dur": 2.44,
+  "para": 86
+ },
+ {
+  "c0": 16132,
+  "c1": 16180,
+  "txt": "A is the best, B is the middle, C is the lowest.",
+  "t": 1116.18,
+  "end": 1120.26,
+  "dur": 4.08,
+  "para": 87
+ },
+ {
+  "c0": 16181,
+  "c1": 16241,
+  "txt": "So triple-A is the top of that standard on all three counts.",
+  "t": 1120.26,
+  "end": 1124.46,
+  "dur": 4.2,
+  "para": 87
+ },
+ {
+  "c0": 16243,
+  "c1": 16409,
+  "txt": "And here is the part I love about that grading, because it's honest in a way most consumer testing isn't: within a category, the lock gets the lowest grade it earned.",
+  "t": 1124.46,
+  "end": 1135.66,
+  "dur": 11.2,
+  "para": 88
+ },
+ {
+  "c0": 16410,
+  "c1": 16426,
+  "txt": "Not the average.",
+  "t": 1135.66,
+  "end": 1137.28,
+  "dur": 1.62,
+  "para": 88
+ },
+ {
+  "c0": 16427,
+  "c1": 16551,
+  "txt": "The lowest. If there are fifteen security tests and it aces fourteen and only manages a B on the fifteenth, the lock is a B.",
+  "t": 1137.28,
+  "end": 1146.94,
+  "dur": 9.66,
+  "para": 88
+ },
+ {
+  "c0": 16552,
+  "c1": 16579,
+  "txt": "It doesn't get to round up.",
+  "t": 1146.94,
+  "end": 1149.06,
+  "dur": 2.12,
+  "para": 88
+ },
+ {
+  "c0": 16581,
+  "c1": 16692,
+  "txt": "So when you look at a smart lock box and it says triple-A, that is a real thing and it was earned the hard way.",
+  "t": 1149.06,
+  "end": 1156.9,
+  "dur": 7.84,
+  "para": 89
+ },
+ {
+  "c0": 16693,
+  "c1": 16801,
+  "txt": "And when a box doesn't mention any letters at all, that's also a real thing, and it's telling you something.",
+  "t": 1156.9,
+  "end": 1164.3,
+  "dur": 7.4,
+  "para": 89
+ },
+ {
+  "c0": 16803,
+  "c1": 16829,
+  "txt": "Now let's put it together.",
+  "t": 1164.3,
+  "end": 1166.2,
+  "dur": 1.9,
+  "para": 90
+ },
+ {
+  "c0": 16830,
+  "c1": 16951,
+  "txt": "Here is what I'd tell my own sister to look for, and I want you to notice that almost none of it is about the smart part.",
+  "t": 1166.2,
+  "end": 1174.04,
+  "dur": 7.84,
+  "para": 90
+ },
+ {
+  "c0": 16953,
+  "c1": 16964,
+  "txt": "Number one.",
+  "t": 1174.04,
+  "end": 1175.64,
+  "dur": 1.6,
+  "para": 91
+ },
+ {
+  "c0": 16965,
+  "c1": 16999,
+  "txt": "Look for the letters or the grade.",
+  "t": 1175.64,
+  "end": 1178.04,
+  "dur": 2.4,
+  "para": 91
+ },
+ {
+  "c0": 17000,
+  "c1": 17071,
+  "txt": "Triple-A under the electronic standard, or grade one under the old one.",
+  "t": 1178.04,
+  "end": 1183.6,
+  "dur": 5.56,
+  "para": 91
+ },
+ {
+  "c0": 17072,
+  "c1": 17215,
+  "txt": "If the box doesn't say, and the product page doesn't say, and you have to email them to find out — that's your answer, and you can put it down.",
+  "t": 1183.6,
+  "end": 1194.16,
+  "dur": 10.56,
+  "para": 91
+ },
+ {
+  "c0": 17217,
+  "c1": 17281,
+  "txt": "Number two, and this is the one from the beginning of the video.",
+  "t": 1194.16,
+  "end": 1197.42,
+  "dur": 3.26,
+  "para": 92
+ },
+ {
+  "c0": 17282,
+  "c1": 17342,
+  "txt": "Ask yourself, honestly, whether you need the keyhole at all.",
+  "t": 1197.42,
+  "end": 1202.6,
+  "dur": 5.18,
+  "para": 92
+ },
+ {
+  "c0": 17344,
+  "c1": 17419,
+  "txt": "Because there is a whole category of these now that simply do not have one.",
+  "t": 1202.6,
+  "end": 1208.32,
+  "dur": 5.72,
+  "para": 93
+ },
+ {
+  "c0": 17420,
+  "c1": 17494,
+  "txt": "Key-free. No cylinder, no override, nothing on the outside but the keypad.",
+  "t": 1208.32,
+  "end": 1215.52,
+  "dur": 7.2,
+  "para": 93
+ },
+ {
+  "c0": 17495,
+  "c1": 17602,
+  "txt": "Yale makes a key-free version of the Assure Lock, and the whole Assure Lock line is certified to grade two.",
+  "t": 1215.52,
+  "end": 1222.62,
+  "dur": 7.1,
+  "para": 93
+ },
+ {
+  "c0": 17603,
+  "c1": 17783,
+  "txt": "Schlage makes the Encode Plus, which has no keyway on it either, and that one carries the triple-A rating on the electronic standard — top marks on security, durability and finish.",
+  "t": 1222.62,
+  "end": 1235.8,
+  "dur": 13.18,
+  "para": 93
+ },
+ {
+  "c0": 17785,
+  "c1": 17828,
+  "txt": "I'm not telling you to buy either of those.",
+  "t": 1235.8,
+  "end": 1238.58,
+  "dur": 2.78,
+  "para": 94
+ },
+ {
+  "c0": 17829,
+  "c1": 17894,
+  "txt": "I have no relationship with anybody and nobody sends me anything.",
+  "t": 1238.58,
+  "end": 1243.48,
+  "dur": 4.9,
+  "para": 94
+ },
+ {
+  "c0": 17895,
+  "c1": 18025,
+  "txt": "What I'm telling you is that those two are proof the category exists and that it can be certified, so you know what to search for.",
+  "t": 1243.48,
+  "end": 1252.92,
+  "dur": 9.44,
+  "para": 94
+ },
+ {
+  "c0": 18027,
+  "c1": 18113,
+  "txt": "And look — if the keyhole is gone, the whole first half of this video is gone with it.",
+  "t": 1252.92,
+  "end": 1258.92,
+  "dur": 6.0,
+  "para": 95
+ },
+ {
+  "c0": 18114,
+  "c1": 18234,
+  "txt": "The cheap cylinder problem, the forgotten spare key problem, the previous owner problem, the ex-boyfriend's key problem.",
+  "t": 1258.92,
+  "end": 1267.56,
+  "dur": 8.64,
+  "para": 95
+ },
+ {
+  "c0": 18235,
+  "c1": 18254,
+  "txt": "All of it. Deleted.",
+  "t": 1267.56,
+  "end": 1269.76,
+  "dur": 2.2,
+  "para": 95
+ },
+ {
+  "c0": 18255,
+  "c1": 18283,
+  "txt": "One decision. Number three.",
+  "t": 1269.76,
+  "end": 1272.74,
+  "dur": 2.98,
+  "para": 95
+ },
+ {
+  "c0": 18284,
+  "c1": 18370,
+  "txt": "If you do keep a keyhole, then treat that cylinder like it is the lock, because it is.",
+  "t": 1272.74,
+  "end": 1278.8,
+  "dur": 6.06,
+  "para": 96
+ },
+ {
+  "c0": 18371,
+  "c1": 18395,
+  "txt": "Ask what cylinder it is.",
+  "t": 1278.8,
+  "end": 1281.12,
+  "dur": 2.32,
+  "para": 96
+ },
+ {
+  "c0": 18396,
+  "c1": 18585,
+  "txt": "If the manufacturer offers a high-security or restricted-key upgrade for that model, that upgrade is the most important twenty dollars in the entire purchase, and it is the one nobody buys.",
+  "t": 1281.12,
+  "end": 1294.92,
+  "dur": 13.8,
+  "para": 96
+ },
+ {
+  "c0": 18587,
+  "c1": 18769,
+  "txt": "And the day you install it, take both keys that came in the box, put them somewhere you'll find them in an emergency but not in the kitchen drawer, and write down where you put them.",
+  "t": 1294.92,
+  "end": 1306.66,
+  "dur": 11.74,
+  "para": 97
+ },
+ {
+  "c0": 18770,
+  "c1": 18875,
+  "txt": "Not for security. So that you know, at all times, exactly how many keys to your house exist in the world.",
+  "t": 1306.66,
+  "end": 1314.88,
+  "dur": 8.22,
+  "para": 97
+ },
+ {
+  "c0": 18876,
+  "c1": 18967,
+  "txt": "If you can't answer that question right now, that's the job for this weekend, not the lock.",
+  "t": 1314.88,
+  "end": 1321.74,
+  "dur": 6.86,
+  "para": 97
+ },
+ {
+  "c0": 18969,
+  "c1": 18992,
+  "txt": "Number four. Batteries.",
+  "t": 1321.74,
+  "end": 1324.36,
+  "dur": 2.62,
+  "para": 98
+ },
+ {
+  "c0": 18993,
+  "c1": 19063,
+  "txt": "This is the objection everybody has and it deserves a straight answer.",
+  "t": 1324.36,
+  "end": 1328.88,
+  "dur": 4.52,
+  "para": 98
+ },
+ {
+  "c0": 19065,
+  "c1": 19124,
+  "txt": "Yes, a smart lock runs on batteries and yes, batteries die.",
+  "t": 1328.88,
+  "end": 1334.02,
+  "dur": 5.14,
+  "para": 99
+ },
+ {
+  "c0": 19125,
+  "c1": 19154,
+  "txt": "But they do not die suddenly.",
+  "t": 1334.02,
+  "end": 1335.84,
+  "dur": 1.82,
+  "para": 99
+ },
+ {
+  "c0": 19155,
+  "c1": 19333,
+  "txt": "Every one of these things has been screaming at you for two to three weeks by the time it quits — the keypad flashes at you, the app sends you a notification, some of them chirp.",
+  "t": 1335.84,
+  "end": 1348.82,
+  "dur": 12.98,
+  "para": 99
+ },
+ {
+  "c0": 19334,
+  "c1": 19401,
+  "txt": "Nobody has ever been locked out by a battery that didn't warn them.",
+  "t": 1348.82,
+  "end": 1352.92,
+  "dur": 4.1,
+  "para": 99
+ },
+ {
+  "c0": 19402,
+  "c1": 19441,
+  "txt": "They've been locked out by ignoring it.",
+  "t": 1352.92,
+  "end": 1355.5,
+  "dur": 2.58,
+  "para": 99
+ },
+ {
+  "c0": 19443,
+  "c1": 19469,
+  "txt": "So put it on the calendar.",
+  "t": 1355.5,
+  "end": 1357.64,
+  "dur": 2.14,
+  "para": 100
+ },
+ {
+  "c0": 19470,
+  "c1": 19557,
+  "txt": "Once a year, same week every year, you change the batteries whether it's asking or not.",
+  "t": 1357.64,
+  "end": 1363.34,
+  "dur": 5.7,
+  "para": 100
+ },
+ {
+  "c0": 19558,
+  "c1": 19623,
+  "txt": "Pick a week you'll remember — I do it the week the clocks change.",
+  "t": 1363.34,
+  "end": 1368.18,
+  "dur": 4.84,
+  "para": 100
+ },
+ {
+  "c0": 19624,
+  "c1": 19720,
+  "txt": "Four double-A's, twelve dollars, five minutes, and the entire battery objection is gone forever.",
+  "t": 1368.18,
+  "end": 1375.64,
+  "dur": 7.46,
+  "para": 100
+ },
+ {
+  "c0": 19722,
+  "c1": 19919,
+  "txt": "And by the way, most of them have a set of little contacts on the bottom where you can hold a nine volt battery against it from outside and it'll power up long enough to let you punch your code in.",
+  "t": 1375.64,
+  "end": 1388.72,
+  "dur": 13.08,
+  "para": 101
+ },
+ {
+  "c0": 19920,
+  "c1": 19974,
+  "txt": "Find out if yours does that, today, while you're calm.",
+  "t": 1388.72,
+  "end": 1392.68,
+  "dur": 3.96,
+  "para": 101
+ },
+ {
+  "c0": 19975,
+  "c1": 20010,
+  "txt": "Not at eleven at night in the rain.",
+  "t": 1392.68,
+  "end": 1396.3,
+  "dur": 3.62,
+  "para": 101
+ },
+ {
+  "c0": 20012,
+  "c1": 20090,
+  "txt": "Number five, and this is the last one and it's the one I feel strongest about.",
+  "t": 1396.3,
+  "end": 1401.72,
+  "dur": 5.42,
+  "para": 102
+ },
+ {
+  "c0": 20092,
+  "c1": 20234,
+  "txt": "Whatever lock you buy — smart, dumb, four hundred dollars, forty dollars — the three inch screws go in the strike plate on the same afternoon.",
+  "t": 1401.72,
+  "end": 1411.38,
+  "dur": 9.66,
+  "para": 103
+ },
+ {
+  "c0": 20235,
+  "c1": 20250,
+  "txt": "Same afternoon.",
+  "t": 1411.38,
+  "end": 1413.04,
+  "dur": 1.66,
+  "para": 103
+ },
+ {
+  "c0": 20251,
+  "c1": 20279,
+  "txt": "Before you download the app.",
+  "t": 1413.04,
+  "end": 1415.5,
+  "dur": 2.46,
+  "para": 103
+ },
+ {
+  "c0": 20280,
+  "c1": 20312,
+  "txt": "Before you set up a single code.",
+  "t": 1415.5,
+  "end": 1418.28,
+  "dur": 2.78,
+  "para": 103
+ },
+ {
+  "c0": 20314,
+  "c1": 20382,
+  "txt": "Because I have never in my life gone to a house where the lock lost.",
+  "t": 1418.28,
+  "end": 1423.24,
+  "dur": 4.96,
+  "para": 104
+ },
+ {
+  "c0": 20383,
+  "c1": 20415,
+  "txt": "Not once in four thousand doors.",
+  "t": 1423.24,
+  "end": 1426.12,
+  "dur": 2.88,
+  "para": 104
+ },
+ {
+  "c0": 20416,
+  "c1": 20437,
+  "txt": "The lock always wins.",
+  "t": 1426.12,
+  "end": 1428.04,
+  "dur": 1.92,
+  "para": 104
+ },
+ {
+  "c0": 20438,
+  "c1": 20523,
+  "txt": "It's the wood that loses, every single time, and the wood costs three dollars to fix.",
+  "t": 1428.04,
+  "end": 1434.3,
+  "dur": 6.26,
+  "para": 104
+ },
+ {
+  "c0": 20525,
+  "c1": 20626,
+  "txt": "So let me answer her question, the woman from the beginning, the same way I answered it on the phone.",
+  "t": 1434.3,
+  "end": 1441.16,
+  "dur": 6.86,
+  "para": 105
+ },
+ {
+  "c0": 20628,
+  "c1": 20672,
+  "txt": "I told her no. You did not waste your money.",
+  "t": 1441.16,
+  "end": 1444.46,
+  "dur": 3.3,
+  "para": 106
+ },
+ {
+  "c0": 20673,
+  "c1": 20829,
+  "txt": "It's a good lock and you'll like it and the codes will make your life easier and you'll stop hiding a key under a rock, which is worth the price on its own.",
+  "t": 1444.46,
+  "end": 1454.78,
+  "dur": 10.32,
+  "para": 106
+ },
+ {
+  "c0": 20831,
+  "c1": 20878,
+  "txt": "But I told her to do two things that afternoon.",
+  "t": 1454.78,
+  "end": 1458.62,
+  "dur": 3.84,
+  "para": 107
+ },
+ {
+  "c0": 20880,
+  "c1": 21034,
+  "txt": "I told her to take the two spare keys out of the drawer, decide who in this world is allowed to have one, and put the rest somewhere she chose on purpose.",
+  "t": 1458.62,
+  "end": 1468.4,
+  "dur": 9.78,
+  "para": 108
+ },
+ {
+  "c0": 21036,
+  "c1": 21143,
+  "txt": "And I told her to take the screwdriver and put three inch screws in the strike plate and one in each hinge.",
+  "t": 1468.4,
+  "end": 1475.3,
+  "dur": 6.9,
+  "para": 109
+ },
+ {
+  "c0": 21145,
+  "c1": 21177,
+  "txt": "She called me back a week later.",
+  "t": 1475.3,
+  "end": 1477.3,
+  "dur": 2.0,
+  "para": 110
+ },
+ {
+  "c0": 21178,
+  "c1": 21321,
+  "txt": "She said her son-in-law came over and did it in twenty minutes and then stood there looking at the old screws in his hand, and said, that's it?",
+  "t": 1477.3,
+  "end": 1486.48,
+  "dur": 9.18,
+  "para": 110
+ },
+ {
+  "c0": 21322,
+  "c1": 21355,
+  "txt": "That's what was holding the door?",
+  "t": 1486.48,
+  "end": 1488.42,
+  "dur": 1.94,
+  "para": 110
+ },
+ {
+  "c0": 21357,
+  "c1": 21396,
+  "txt": "Yeah. That's what was holding the door.",
+  "t": 1488.42,
+  "end": 1491.26,
+  "dur": 2.84,
+  "para": 111
+ },
+ {
+  "c0": 21397,
+  "c1": 21432,
+  "txt": "That's what's holding most of them.",
+  "t": 1491.26,
+  "end": 1493.3,
+  "dur": 2.04,
+  "para": 111
+ },
+ {
+  "c0": 21434,
+  "c1": 21863,
+  "txt": "Now, if you want the whole afternoon written down — the ten minute test you do before you spend a dollar, the shopping list with the actual lengths and gauges, which screws to throw straight in the bin, the door, the frame, the hinges and the strike in the right order, and the phone script for when you do have to call a locksmith at eleven at night so you don't get taken for fifteen hundred dollars — I put all of it together.",
+  "t": 1493.3,
+  "end": 1520.96,
+  "dur": 27.66,
+  "para": 112
+ },
+ {
+  "c0": 21865,
+  "c1": 21883,
+  "txt": "It's three guides.",
+  "t": 1520.96,
+  "end": 1522.86,
+  "dur": 1.9,
+  "para": 113
+ },
+ {
+  "c0": 21884,
+  "c1": 22006,
+  "txt": "They're at raykessler dot vercel dot app, it's twenty-seven dollars for all three, and it downloads the second you get it.",
+  "t": 1522.86,
+  "end": 1531.64,
+  "dur": 8.78,
+  "para": 113
+ },
+ {
+  "c0": 22007,
+  "c1": 22082,
+  "txt": "That's the only thing I'll ever ask you for and I'm only going to ask once.",
+  "t": 1531.64,
+  "end": 1536.02,
+  "dur": 4.38,
+  "para": 113
+ },
+ {
+  "c0": 22084,
+  "c1": 22112,
+  "txt": "Here's where I'll leave you.",
+  "t": 1536.02,
+  "end": 1538.72,
+  "dur": 2.7,
+  "para": 114
+ },
+ {
+  "c0": 22114,
+  "c1": 22173,
+  "txt": "I spent thirty-five years being the guy who shows up after.",
+  "t": 1538.72,
+  "end": 1542.94,
+  "dur": 4.22,
+  "para": 115
+ },
+ {
+  "c0": 22174,
+  "c1": 22275,
+  "txt": "And the thing about being the guy who shows up after is you eventually stop being impressed by locks.",
+  "t": 1542.94,
+  "end": 1549.66,
+  "dur": 6.72,
+  "para": 115
+ },
+ {
+  "c0": 22276,
+  "c1": 22306,
+  "txt": "You start looking at the wood.",
+  "t": 1549.66,
+  "end": 1551.76,
+  "dur": 2.1,
+  "para": 115
+ },
+ {
+  "c0": 22308,
+  "c1": 22361,
+  "txt": "The smart lock on your door is almost certainly fine.",
+  "t": 1551.76,
+  "end": 1555.62,
+  "dur": 3.86,
+  "para": 116
+ },
+ {
+  "c0": 22362,
+  "c1": 22379,
+  "txt": "Better than fine.",
+  "t": 1555.62,
+  "end": 1557.3,
+  "dur": 1.68,
+  "para": 116
+ },
+ {
+  "c0": 22380,
+  "c1": 22524,
+  "txt": "It's a nicer lock than most of what I installed for three decades, and the codes are genuinely a better idea than keys, and you should enjoy it.",
+  "t": 1557.3,
+  "end": 1566.9,
+  "dur": 9.6,
+  "para": 116
+ },
+ {
+  "c0": 22526,
+  "c1": 22575,
+  "txt": "Just don't let it be the thing you're relying on.",
+  "t": 1566.9,
+  "end": 1569.9,
+  "dur": 3.0,
+  "para": 117
+ },
+ {
+  "c0": 22576,
+  "c1": 22607,
+  "txt": "It's a bar of metal and an app.",
+  "t": 1569.9,
+  "end": 1572.78,
+  "dur": 2.88,
+  "para": 117
+ },
+ {
+  "c0": 22608,
+  "c1": 22804,
+  "txt": "What's actually keeping your family in that house tonight is two screws in a piece of pine, and you can go find out how long they are right now, and you can fix it for three dollars before dinner.",
+  "t": 1572.78,
+  "end": 1585.54,
+  "dur": 12.76,
+  "para": 117
+ },
+ {
+  "c0": 22806,
+  "c1": 22827,
+  "txt": "That's the whole job.",
+  "t": 1585.54,
+  "end": 1587.34,
+  "dur": 1.8,
+  "para": 118
+ },
+ {
+  "c0": 22828,
+  "c1": 22851,
+  "txt": "I'll see you next time.",
+  "t": 1587.34,
+  "end": 1588.824,
+  "dur": 1.484,
+  "para": 118
+ }
+]

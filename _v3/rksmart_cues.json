@@ -1,0 +1,1652 @@
+[
+ {
+  "key": "avatar_0",
+  "src": "broll/rksmart/av_w000.mp4",
+  "start": 0,
+  "dur": 4.6
+ },
+ {
+  "key": "clip_4600",
+  "src": "broll/rksmart/rksmart_m002.mp4",
+  "start": 4.6,
+  "dur": 3.066667
+ },
+ {
+  "key": "imagen_7667",
+  "src": "img/rksmart_m003.jpg",
+  "start": 7.666667,
+  "dur": 6.066667
+ },
+ {
+  "key": "imagen_13733",
+  "src": "img/rksmart_m004.jpg",
+  "start": 13.733333,
+  "dur": 5.366667
+ },
+ {
+  "key": "imagen_19100",
+  "src": "img/rksmart_m004x.jpg",
+  "start": 19.1,
+  "dur": 4.233333
+ },
+ {
+  "key": "avatar_23333",
+  "src": "broll/rksmart/av_w001.mp4",
+  "start": 23.333333,
+  "dur": 5.233333
+ },
+ {
+  "key": "imagen_28567",
+  "src": "img/rksmart_m007.jpg",
+  "start": 28.566667,
+  "dur": 3.633333
+ },
+ {
+  "key": "clip_32200",
+  "src": "broll/rksmart/rksmart_m008.mp4",
+  "start": 32.2,
+  "dur": 3.433333
+ },
+ {
+  "key": "imagen_35633",
+  "src": "img/rksmart_m009.jpg",
+  "start": 35.633333,
+  "dur": 2.866667
+ },
+ {
+  "key": "avatar_38500",
+  "src": "broll/rksmart/av_w002.mp4",
+  "start": 38.5,
+  "dur": 6.566667
+ },
+ {
+  "key": "imagen_45067",
+  "src": "img/rksmart_m012.jpg",
+  "start": 45.066667,
+  "dur": 6.666667
+ },
+ {
+  "key": "imagen_51733",
+  "src": "img/rksmart_m012x.jpg",
+  "start": 51.733333,
+  "dur": 5.233333
+ },
+ {
+  "key": "imagen_56967",
+  "src": "img/rksmart_m013.jpg",
+  "start": 56.966667,
+  "dur": 3.366667
+ },
+ {
+  "key": "clip_60333",
+  "src": "broll/rksmart/rksmart_m014.mp4",
+  "start": 60.333333,
+  "dur": 3.466667
+ },
+ {
+  "key": "avatar_63800",
+  "src": "broll/rksmart/av_w003.mp4",
+  "start": 63.8,
+  "dur": 10.966667
+ },
+ {
+  "key": "imagen_74767",
+  "src": "img/rksmart_m017.jpg",
+  "start": 74.766667,
+  "dur": 6.366667
+ },
+ {
+  "key": "avatar_81133",
+  "src": "broll/rksmart/av_w004.mp4",
+  "start": 81.133333,
+  "dur": 5.866667
+ },
+ {
+  "key": "imagen_87000",
+  "src": "img/rksmart_m019.jpg",
+  "start": 87,
+  "dur": 6.633333
+ },
+ {
+  "key": "imagen_93633",
+  "src": "img/rksmart_m019x.jpg",
+  "start": 93.633333,
+  "dur": 5.2
+ },
+ {
+  "key": "avatar_98833",
+  "src": "broll/rksmart/av_w005.mp4",
+  "start": 98.833333,
+  "dur": 6.233333
+ },
+ {
+  "key": "imagen_105067",
+  "src": "img/rksmart_m023.jpg",
+  "start": 105.066667,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_109100",
+  "src": "img/rksmart_m024.jpg",
+  "start": 109.1,
+  "dur": 7.366667
+ },
+ {
+  "key": "avatar_116467",
+  "src": "broll/rksmart/av_w006.mp4",
+  "start": 116.466667,
+  "dur": 8.366667
+ },
+ {
+  "key": "imagen_124833",
+  "src": "img/rksmart_m027.jpg",
+  "start": 124.833333,
+  "dur": 4.2
+ },
+ {
+  "key": "clip_129033",
+  "src": "broll/rksmart/rksmart_m028.mp4",
+  "start": 129.033333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_133067",
+  "src": "img/rksmart_m028x.jpg",
+  "start": 133.066667,
+  "dur": 4.466667
+ },
+ {
+  "key": "imagen_137533",
+  "src": "img/rksmart_m029.jpg",
+  "start": 137.533333,
+  "dur": 6.933333
+ },
+ {
+  "key": "clip_144467",
+  "src": "broll/rksmart/rksmart_m030.mp4",
+  "start": 144.466667,
+  "dur": 2.5
+ },
+ {
+  "key": "avatar_146967",
+  "src": "broll/rksmart/av_w007.mp4",
+  "start": 146.966667,
+  "dur": 8.9
+ },
+ {
+  "key": "imagen_155867",
+  "src": "img/rksmart_m033.jpg",
+  "start": 155.866667,
+  "dur": 5.966667
+ },
+ {
+  "key": "imagen_161833",
+  "src": "img/rksmart_m034.jpg",
+  "start": 161.833333,
+  "dur": 3.8
+ },
+ {
+  "key": "avatar_165633",
+  "src": "broll/rksmart/av_w008.mp4",
+  "start": 165.633333,
+  "dur": 6.233333
+ },
+ {
+  "key": "imagen_171867",
+  "src": "img/rksmart_m036.jpg",
+  "start": 171.866667,
+  "dur": 7.933333
+ },
+ {
+  "key": "clip_179800",
+  "src": "broll/rksmart/rksmart_m036x.mp4",
+  "start": 179.8,
+  "dur": 4.033333
+ },
+ {
+  "key": "avatar_183833",
+  "src": "broll/rksmart/av_w009.mp4",
+  "start": 183.833333,
+  "dur": 2.533333
+ },
+ {
+  "key": "avatar_190867",
+  "src": "broll/rksmart/av_w010.mp4",
+  "start": 190.866667,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_197267",
+  "src": "img/rksmart_m040.jpg",
+  "start": 197.266667,
+  "dur": 2.7
+ },
+ {
+  "key": "avatar_199967",
+  "src": "broll/rksmart/av_w011.mp4",
+  "start": 199.966667,
+  "dur": 8.7
+ },
+ {
+  "key": "imagen_208667",
+  "src": "img/rksmart_m043.jpg",
+  "start": 208.666667,
+  "dur": 2.7
+ },
+ {
+  "key": "clip_211367",
+  "src": "broll/rksmart/rksmart_m044.mp4",
+  "start": 211.366667,
+  "dur": 2.333333
+ },
+ {
+  "key": "avatar_213700",
+  "src": "broll/rksmart/av_w012.mp4",
+  "start": 213.7,
+  "dur": 4.7
+ },
+ {
+  "key": "imagen_218400",
+  "src": "img/rksmart_m046.jpg",
+  "start": 218.4,
+  "dur": 5.633333
+ },
+ {
+  "key": "imagen_224033",
+  "src": "img/rksmart_m047.jpg",
+  "start": 224.033333,
+  "dur": 7.333333
+ },
+ {
+  "key": "imagen_231367",
+  "src": "img/rksmart_m048.jpg",
+  "start": 231.366667,
+  "dur": 1.633333
+ },
+ {
+  "key": "avatar_233000",
+  "src": "broll/rksmart/av_w013.mp4",
+  "start": 233,
+  "dur": 6.066667
+ },
+ {
+  "key": "clip_245967",
+  "src": "broll/rksmart/rksmart_m051.mp4",
+  "start": 245.966667,
+  "dur": 1.9
+ },
+ {
+  "key": "imagen_247867",
+  "src": "img/rksmart_m052.jpg",
+  "start": 247.866667,
+  "dur": 5.6
+ },
+ {
+  "key": "imagen_253467",
+  "src": "img/rksmart_m052x.jpg",
+  "start": 253.466667,
+  "dur": 4.4
+ },
+ {
+  "key": "imagen_257867",
+  "src": "img/rksmart_m053.jpg",
+  "start": 257.866667,
+  "dur": 2.733333
+ },
+ {
+  "key": "avatar_260600",
+  "src": "broll/rksmart/av_w014.mp4",
+  "start": 260.6,
+  "dur": 15.1
+ },
+ {
+  "key": "imagen_275700",
+  "src": "img/rksmart_m058.jpg",
+  "start": 275.7,
+  "dur": 5.133333
+ },
+ {
+  "key": "imagen_280833",
+  "src": "img/rksmart_m058x.jpg",
+  "start": 280.833333,
+  "dur": 4.033333
+ },
+ {
+  "key": "avatar_284867",
+  "src": "broll/rksmart/av_w015.mp4",
+  "start": 284.866667,
+  "dur": 6
+ },
+ {
+  "key": "imagen_290867",
+  "src": "img/rksmart_m060.jpg",
+  "start": 290.866667,
+  "dur": 4.266667
+ },
+ {
+  "key": "clip_295133",
+  "src": "broll/rksmart/rksmart_m061.mp4",
+  "start": 295.133333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_299167",
+  "src": "img/rksmart_m062.jpg",
+  "start": 299.166667,
+  "dur": 5.466667
+ },
+ {
+  "key": "avatar_308033",
+  "src": "broll/rksmart/av_w016.mp4",
+  "start": 308.033333,
+  "dur": 7.366667
+ },
+ {
+  "key": "imagen_315400",
+  "src": "img/rksmart_m065.jpg",
+  "start": 315.4,
+  "dur": 7.2
+ },
+ {
+  "key": "imagen_322600",
+  "src": "img/rksmart_m065x.jpg",
+  "start": 322.6,
+  "dur": 5.666667
+ },
+ {
+  "key": "avatar_328267",
+  "src": "broll/rksmart/av_w017.mp4",
+  "start": 328.266667,
+  "dur": 11.033333
+ },
+ {
+  "key": "imagen_339300",
+  "src": "img/rksmart_m070.jpg",
+  "start": 339.3,
+  "dur": 7.366667
+ },
+ {
+  "key": "clip_346667",
+  "src": "broll/rksmart/rksmart_m071.mp4",
+  "start": 346.666667,
+  "dur": 4.066667
+ },
+ {
+  "key": "imagen_350733",
+  "src": "img/rksmart_m072.jpg",
+  "start": 350.733333,
+  "dur": 2.933333
+ },
+ {
+  "key": "imagen_353667",
+  "src": "img/rksmart_m073.jpg",
+  "start": 353.666667,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_366967",
+  "src": "img/rksmart_m075.jpg",
+  "start": 366.966667,
+  "dur": 6.633333
+ },
+ {
+  "key": "imagen_373600",
+  "src": "img/rksmart_m075x.jpg",
+  "start": 373.6,
+  "dur": 5.2
+ },
+ {
+  "key": "avatar_378800",
+  "src": "broll/rksmart/av_w018.mp4",
+  "start": 378.8,
+  "dur": 3.866667
+ },
+ {
+  "key": "imagen_382667",
+  "src": "img/rksmart_m077.jpg",
+  "start": 382.666667,
+  "dur": 2.6
+ },
+ {
+  "key": "imagen_385267",
+  "src": "img/rksmart_m078.jpg",
+  "start": 385.266667,
+  "dur": 5.5
+ },
+ {
+  "key": "clip_390767",
+  "src": "broll/rksmart/rksmart_m079.mp4",
+  "start": 390.766667,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_394800",
+  "src": "img/rksmart_m079x.jpg",
+  "start": 394.8,
+  "dur": 5.2
+ },
+ {
+  "key": "avatar_400000",
+  "src": "broll/rksmart/av_w019.mp4",
+  "start": 400,
+  "dur": 5.2
+ },
+ {
+  "key": "avatar_408167",
+  "src": "broll/rksmart/av_w020.mp4",
+  "start": 408.166667,
+  "dur": 4.133333
+ },
+ {
+  "key": "imagen_412300",
+  "src": "img/rksmart_m083.jpg",
+  "start": 412.3,
+  "dur": 1.733333
+ },
+ {
+  "key": "imagen_414033",
+  "src": "img/rksmart_m084.jpg",
+  "start": 414.033333,
+  "dur": 3.366667
+ },
+ {
+  "key": "clip_417400",
+  "src": "broll/rksmart/rksmart_m085.mp4",
+  "start": 417.4,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_421433",
+  "src": "img/rksmart_m086.jpg",
+  "start": 421.433333,
+  "dur": 4.9
+ },
+ {
+  "key": "imagen_426333",
+  "src": "img/rksmart_m087.jpg",
+  "start": 426.333333,
+  "dur": 8.866667
+ },
+ {
+  "key": "clip_435200",
+  "src": "broll/rksmart/rksmart_m087x.mp4",
+  "start": 435.2,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_439233",
+  "src": "img/rksmart_m088.jpg",
+  "start": 439.233333,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_442333",
+  "src": "broll/rksmart/rksmart_m089.mp4",
+  "start": 442.333333,
+  "dur": 3.6
+ },
+ {
+  "key": "avatar_459167",
+  "src": "broll/rksmart/av_w021.mp4",
+  "start": 459.166667,
+  "dur": 16.233333
+ },
+ {
+  "key": "imagen_475400",
+  "src": "img/rksmart_m095.jpg",
+  "start": 475.4,
+  "dur": 6.7
+ },
+ {
+  "key": "imagen_482100",
+  "src": "img/rksmart_m095x.jpg",
+  "start": 482.1,
+  "dur": 5.666667
+ },
+ {
+  "key": "imagen_487767",
+  "src": "img/rksmart_m095y.jpg",
+  "start": 487.766667,
+  "dur": 4.366667
+ },
+ {
+  "key": "imagen_492133",
+  "src": "img/rksmart_m096.jpg",
+  "start": 492.133333,
+  "dur": 2.533333
+ },
+ {
+  "key": "imagen_494667",
+  "src": "img/rksmart_m097.jpg",
+  "start": 494.666667,
+  "dur": 4.7
+ },
+ {
+  "key": "imagen_499367",
+  "src": "img/rksmart_m098.jpg",
+  "start": 499.366667,
+  "dur": 4.733333
+ },
+ {
+  "key": "imagen_504100",
+  "src": "img/rksmart_m098x.jpg",
+  "start": 504.1,
+  "dur": 3.7
+ },
+ {
+  "key": "avatar_507800",
+  "src": "broll/rksmart/av_w022.mp4",
+  "start": 507.8,
+  "dur": 8.566667
+ },
+ {
+  "key": "imagen_516367",
+  "src": "img/rksmart_m101.jpg",
+  "start": 516.366667,
+  "dur": 7.233333
+ },
+ {
+  "key": "avatar_523600",
+  "src": "broll/rksmart/av_w023.mp4",
+  "start": 523.6,
+  "dur": 11.733333
+ },
+ {
+  "key": "imagen_535333",
+  "src": "img/rksmart_m104.jpg",
+  "start": 535.333333,
+  "dur": 4.3
+ },
+ {
+  "key": "clip_539633",
+  "src": "broll/rksmart/rksmart_m105.mp4",
+  "start": 539.633333,
+  "dur": 2.3
+ },
+ {
+  "key": "imagen_552000",
+  "src": "img/rksmart_m107.jpg",
+  "start": 552,
+  "dur": 2.033333
+ },
+ {
+  "key": "imagen_554033",
+  "src": "img/rksmart_m108.jpg",
+  "start": 554.033333,
+  "dur": 2.633333
+ },
+ {
+  "key": "clip_556667",
+  "src": "broll/rksmart/rksmart_m109.mp4",
+  "start": 556.666667,
+  "dur": 3.033333
+ },
+ {
+  "key": "imagen_559700",
+  "src": "img/rksmart_m110.jpg",
+  "start": 559.7,
+  "dur": 4.6
+ },
+ {
+  "key": "imagen_564300",
+  "src": "img/rksmart_m111.jpg",
+  "start": 564.3,
+  "dur": 2.566667
+ },
+ {
+  "key": "avatar_566867",
+  "src": "broll/rksmart/av_w024.mp4",
+  "start": 566.866667,
+  "dur": 2.666667
+ },
+ {
+  "key": "imagen_569533",
+  "src": "img/rksmart_m113.jpg",
+  "start": 569.533333,
+  "dur": 5
+ },
+ {
+  "key": "clip_574533",
+  "src": "broll/rksmart/rksmart_m114.mp4",
+  "start": 574.533333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_578567",
+  "src": "img/rksmart_m114x.jpg",
+  "start": 578.566667,
+  "dur": 5.366667
+ },
+ {
+  "key": "imagen_583933",
+  "src": "img/rksmart_m115.jpg",
+  "start": 583.933333,
+  "dur": 3.833333
+ },
+ {
+  "key": "imagen_587767",
+  "src": "img/rksmart_m116.jpg",
+  "start": 587.766667,
+  "dur": 4.933333
+ },
+ {
+  "key": "clip_592700",
+  "src": "broll/rksmart/rksmart_m117.mp4",
+  "start": 592.7,
+  "dur": 4.033333
+ },
+ {
+  "key": "avatar_610467",
+  "src": "broll/rksmart/av_w025.mp4",
+  "start": 610.466667,
+  "dur": 3.466667
+ },
+ {
+  "key": "imagen_613933",
+  "src": "img/rksmart_m120.jpg",
+  "start": 613.933333,
+  "dur": 4.933333
+ },
+ {
+  "key": "avatar_618867",
+  "src": "broll/rksmart/av_w026.mp4",
+  "start": 618.866667,
+  "dur": 6.8
+ },
+ {
+  "key": "avatar_630333",
+  "src": "broll/rksmart/av_w027.mp4",
+  "start": 630.333333,
+  "dur": 2.833333
+ },
+ {
+  "key": "imagen_633167",
+  "src": "img/rksmart_m124.jpg",
+  "start": 633.166667,
+  "dur": 4.766667
+ },
+ {
+  "key": "imagen_637933",
+  "src": "img/rksmart_m124x.jpg",
+  "start": 637.933333,
+  "dur": 3.766667
+ },
+ {
+  "key": "imagen_641700",
+  "src": "img/rksmart_m125.jpg",
+  "start": 641.7,
+  "dur": 6.6
+ },
+ {
+  "key": "clip_648300",
+  "src": "broll/rksmart/rksmart_m125x.mp4",
+  "start": 648.3,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_652333",
+  "src": "img/rksmart_m126.jpg",
+  "start": 652.333333,
+  "dur": 6.033333
+ },
+ {
+  "key": "avatar_658367",
+  "src": "broll/rksmart/av_w028.mp4",
+  "start": 658.366667,
+  "dur": 9.666667
+ },
+ {
+  "key": "imagen_668033",
+  "src": "img/rksmart_m129.jpg",
+  "start": 668.033333,
+  "dur": 7.4
+ },
+ {
+  "key": "imagen_675433",
+  "src": "img/rksmart_m129x.jpg",
+  "start": 675.433333,
+  "dur": 5.833333
+ },
+ {
+  "key": "avatar_681267",
+  "src": "broll/rksmart/av_w029.mp4",
+  "start": 681.266667,
+  "dur": 2.933333
+ },
+ {
+  "key": "imagen_690300",
+  "src": "img/rksmart_m132.jpg",
+  "start": 690.3,
+  "dur": 7.533333
+ },
+ {
+  "key": "clip_697833",
+  "src": "broll/rksmart/rksmart_m133.mp4",
+  "start": 697.833333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_701867",
+  "src": "img/rksmart_m134.jpg",
+  "start": 701.866667,
+  "dur": 6.9
+ },
+ {
+  "key": "avatar_708767",
+  "src": "broll/rksmart/av_w030.mp4",
+  "start": 708.766667,
+  "dur": 11.733333
+ },
+ {
+  "key": "imagen_720500",
+  "src": "img/rksmart_m138.jpg",
+  "start": 720.5,
+  "dur": 6.966667
+ },
+ {
+  "key": "imagen_727467",
+  "src": "img/rksmart_m139.jpg",
+  "start": 727.466667,
+  "dur": 7.4
+ },
+ {
+  "key": "avatar_737433",
+  "src": "broll/rksmart/av_w031.mp4",
+  "start": 737.433333,
+  "dur": 4.8
+ },
+ {
+  "key": "imagen_742233",
+  "src": "img/rksmart_m142.jpg",
+  "start": 742.233333,
+  "dur": 1.6
+ },
+ {
+  "key": "imagen_743833",
+  "src": "img/rksmart_m143.jpg",
+  "start": 743.833333,
+  "dur": 2.466667
+ },
+ {
+  "key": "imagen_746300",
+  "src": "img/rksmart_m143x.jpg",
+  "start": 746.3,
+  "dur": 1.966667
+ },
+ {
+  "key": "imagen_748267",
+  "src": "img/rksmart_m144.jpg",
+  "start": 748.266667,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_754867",
+  "src": "img/rksmart_m144x.jpg",
+  "start": 754.866667,
+  "dur": 7.266667
+ },
+ {
+  "key": "clip_762133",
+  "src": "broll/rksmart/rksmart_m145.mp4",
+  "start": 762.133333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_766167",
+  "src": "img/rksmart_m145x.jpg",
+  "start": 766.166667,
+  "dur": 4.766667
+ },
+ {
+  "key": "imagen_776833",
+  "src": "img/rksmart_m148.jpg",
+  "start": 776.833333,
+  "dur": 2.133333
+ },
+ {
+  "key": "clip_778967",
+  "src": "broll/rksmart/rksmart_m149.mp4",
+  "start": 778.966667,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_783000",
+  "src": "img/rksmart_m149x.jpg",
+  "start": 783,
+  "dur": 3.933333
+ },
+ {
+  "key": "imagen_786933",
+  "src": "img/rksmart_m150.jpg",
+  "start": 786.933333,
+  "dur": 3.166667
+ },
+ {
+  "key": "imagen_796533",
+  "src": "img/rksmart_m152.jpg",
+  "start": 796.533333,
+  "dur": 5.733333
+ },
+ {
+  "key": "avatar_802267",
+  "src": "broll/rksmart/av_w032.mp4",
+  "start": 802.266667,
+  "dur": 4.133333
+ },
+ {
+  "key": "imagen_806400",
+  "src": "img/rksmart_m155.jpg",
+  "start": 806.4,
+  "dur": 5.766667
+ },
+ {
+  "key": "imagen_812167",
+  "src": "img/rksmart_m155x.jpg",
+  "start": 812.166667,
+  "dur": 4.9
+ },
+ {
+  "key": "imagen_817067",
+  "src": "img/rksmart_m155y.jpg",
+  "start": 817.066667,
+  "dur": 3.733333
+ },
+ {
+  "key": "imagen_820800",
+  "src": "img/rksmart_m156.jpg",
+  "start": 820.8,
+  "dur": 4.833333
+ },
+ {
+  "key": "imagen_825633",
+  "src": "img/rksmart_m157.jpg",
+  "start": 825.633333,
+  "dur": 7.233333
+ },
+ {
+  "key": "avatar_832867",
+  "src": "broll/rksmart/av_w033.mp4",
+  "start": 832.866667,
+  "dur": 7.533333
+ },
+ {
+  "key": "imagen_840400",
+  "src": "img/rksmart_m159.jpg",
+  "start": 840.4,
+  "dur": 8.433333
+ },
+ {
+  "key": "imagen_848833",
+  "src": "img/rksmart_m160.jpg",
+  "start": 848.833333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_851833",
+  "src": "img/rksmart_m161.jpg",
+  "start": 851.833333,
+  "dur": 10.633333
+ },
+ {
+  "key": "avatar_862467",
+  "src": "broll/rksmart/av_w034.mp4",
+  "start": 862.466667,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_869067",
+  "src": "img/rksmart_m163.jpg",
+  "start": 869.066667,
+  "dur": 4.266667
+ },
+ {
+  "key": "imagen_873333",
+  "src": "img/rksmart_m163x.jpg",
+  "start": 873.333333,
+  "dur": 3.333333
+ },
+ {
+  "key": "imagen_876667",
+  "src": "img/rksmart_m164.jpg",
+  "start": 876.666667,
+  "dur": 1.866667
+ },
+ {
+  "key": "imagen_885267",
+  "src": "img/rksmart_m166.jpg",
+  "start": 885.266667,
+  "dur": 1.833333
+ },
+ {
+  "key": "imagen_887100",
+  "src": "img/rksmart_m167.jpg",
+  "start": 887.1,
+  "dur": 1.633333
+ },
+ {
+  "key": "imagen_888733",
+  "src": "img/rksmart_m168.jpg",
+  "start": 888.733333,
+  "dur": 5.2
+ },
+ {
+  "key": "clip_893933",
+  "src": "broll/rksmart/rksmart_m169.mp4",
+  "start": 893.933333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_897967",
+  "src": "img/rksmart_m170.jpg",
+  "start": 897.966667,
+  "dur": 1.366667
+ },
+ {
+  "key": "avatar_899333",
+  "src": "broll/rksmart/av_w035.mp4",
+  "start": 899.333333,
+  "dur": 4.066667
+ },
+ {
+  "key": "imagen_903400",
+  "src": "img/rksmart_m172.jpg",
+  "start": 903.4,
+  "dur": 5.5
+ },
+ {
+  "key": "imagen_908900",
+  "src": "img/rksmart_m172x.jpg",
+  "start": 908.9,
+  "dur": 4.633333
+ },
+ {
+  "key": "imagen_913533",
+  "src": "img/rksmart_m172y.jpg",
+  "start": 913.533333,
+  "dur": 3.566667
+ },
+ {
+  "key": "imagen_917100",
+  "src": "img/rksmart_m173.jpg",
+  "start": 917.1,
+  "dur": 5.866667
+ },
+ {
+  "key": "clip_922967",
+  "src": "broll/rksmart/rksmart_m174.mp4",
+  "start": 922.966667,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_927000",
+  "src": "img/rksmart_m175.jpg",
+  "start": 927,
+  "dur": 3.866667
+ },
+ {
+  "key": "avatar_930867",
+  "src": "broll/rksmart/av_w036.mp4",
+  "start": 930.866667,
+  "dur": 8.266667
+ },
+ {
+  "key": "imagen_939133",
+  "src": "img/rksmart_m177.jpg",
+  "start": 939.133333,
+  "dur": 2.9
+ },
+ {
+  "key": "imagen_942033",
+  "src": "img/rksmart_m178.jpg",
+  "start": 942.033333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_946067",
+  "src": "img/rksmart_m179.jpg",
+  "start": 946.066667,
+  "dur": 9.033333
+ },
+ {
+  "key": "imagen_955100",
+  "src": "img/rksmart_m179x.jpg",
+  "start": 955.1,
+  "dur": 7.066667
+ },
+ {
+  "key": "avatar_969767",
+  "src": "broll/rksmart/av_w037.mp4",
+  "start": 969.766667,
+  "dur": 4.2
+ },
+ {
+  "key": "imagen_973967",
+  "src": "img/rksmart_m182.jpg",
+  "start": 973.966667,
+  "dur": 9.766667
+ },
+ {
+  "key": "clip_983733",
+  "src": "broll/rksmart/rksmart_m183.mp4",
+  "start": 983.733333,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_987767",
+  "src": "img/rksmart_m184.jpg",
+  "start": 987.766667,
+  "dur": 5.866667
+ },
+ {
+  "key": "imagen_1000367",
+  "src": "img/rksmart_m187.jpg",
+  "start": 1000.366667,
+  "dur": 10.033333
+ },
+ {
+  "key": "imagen_1010400",
+  "src": "img/rksmart_m188.jpg",
+  "start": 1010.4,
+  "dur": 2.333333
+ },
+ {
+  "key": "imagen_1019033",
+  "src": "img/rksmart_m190.jpg",
+  "start": 1019.033333,
+  "dur": 1.833333
+ },
+ {
+  "key": "imagen_1026167",
+  "src": "img/rksmart_m192.jpg",
+  "start": 1026.166667,
+  "dur": 1.033333
+ },
+ {
+  "key": "avatar_1034067",
+  "src": "broll/rksmart/av_w038.mp4",
+  "start": 1034.066667,
+  "dur": 4.4
+ },
+ {
+  "key": "imagen_1038467",
+  "src": "img/rksmart_m196.jpg",
+  "start": 1038.466667,
+  "dur": 2.633333
+ },
+ {
+  "key": "imagen_1041100",
+  "src": "img/rksmart_m197.jpg",
+  "start": 1041.1,
+  "dur": 5.333333
+ },
+ {
+  "key": "clip_1046433",
+  "src": "broll/rksmart/rksmart_m198.mp4",
+  "start": 1046.433333,
+  "dur": 4.066667
+ },
+ {
+  "key": "imagen_1050500",
+  "src": "img/rksmart_m199.jpg",
+  "start": 1050.5,
+  "dur": 4.833333
+ },
+ {
+  "key": "imagen_1066533",
+  "src": "img/rksmart_m202.jpg",
+  "start": 1066.533333,
+  "dur": 6.866667
+ },
+ {
+  "key": "avatar_1073400",
+  "src": "broll/rksmart/av_w039.mp4",
+  "start": 1073.4,
+  "dur": 9.433333
+ },
+ {
+  "key": "imagen_1082833",
+  "src": "img/rksmart_m204.jpg",
+  "start": 1082.833333,
+  "dur": 7.5
+ },
+ {
+  "key": "imagen_1090333",
+  "src": "img/rksmart_m204x.jpg",
+  "start": 1090.333333,
+  "dur": 5.9
+ },
+ {
+  "key": "avatar_1096233",
+  "src": "broll/rksmart/av_w040.mp4",
+  "start": 1096.233333,
+  "dur": 2.733333
+ },
+ {
+  "key": "imagen_1102533",
+  "src": "img/rksmart_m207.jpg",
+  "start": 1102.533333,
+  "dur": 4.333333
+ },
+ {
+  "key": "avatar_1106867",
+  "src": "broll/rksmart/av_w041.mp4",
+  "start": 1106.866667,
+  "dur": 3.233333
+ },
+ {
+  "key": "avatar_1111600",
+  "src": "broll/rksmart/av_w042.mp4",
+  "start": 1111.6,
+  "dur": 4.933333
+ },
+ {
+  "key": "imagen_1116533",
+  "src": "img/rksmart_m212.jpg",
+  "start": 1116.533333,
+  "dur": 3.733333
+ },
+ {
+  "key": "imagen_1126700",
+  "src": "img/rksmart_m214.jpg",
+  "start": 1126.7,
+  "dur": 8.6
+ },
+ {
+  "key": "avatar_1135300",
+  "src": "broll/rksmart/av_w043.mp4",
+  "start": 1135.3,
+  "dur": 2.333333
+ },
+ {
+  "key": "imagen_1137633",
+  "src": "img/rksmart_m216.jpg",
+  "start": 1137.633333,
+  "dur": 9.3
+ },
+ {
+  "key": "imagen_1146933",
+  "src": "img/rksmart_m217.jpg",
+  "start": 1146.933333,
+  "dur": 2.133333
+ },
+ {
+  "key": "imagen_1149067",
+  "src": "img/rksmart_m218.jpg",
+  "start": 1149.066667,
+  "dur": 7.833333
+ },
+ {
+  "key": "imagen_1156900",
+  "src": "img/rksmart_m219.jpg",
+  "start": 1156.9,
+  "dur": 7.066667
+ },
+ {
+  "key": "avatar_1163967",
+  "src": "broll/rksmart/av_w044.mp4",
+  "start": 1163.966667,
+  "dur": 2.6
+ },
+ {
+  "key": "imagen_1166567",
+  "src": "img/rksmart_m221.jpg",
+  "start": 1166.566667,
+  "dur": 7.466667
+ },
+ {
+  "key": "avatar_1175300",
+  "src": "broll/rksmart/av_w045.mp4",
+  "start": 1175.3,
+  "dur": 3.1
+ },
+ {
+  "key": "imagen_1178400",
+  "src": "img/rksmart_m224.jpg",
+  "start": 1178.4,
+  "dur": 5.2
+ },
+ {
+  "key": "imagen_1183600",
+  "src": "img/rksmart_m225.jpg",
+  "start": 1183.6,
+  "dur": 6.166667
+ },
+ {
+  "key": "clip_1189767",
+  "src": "broll/rksmart/rksmart_m225x.mp4",
+  "start": 1189.766667,
+  "dur": 4.033333
+ },
+ {
+  "key": "avatar_1193800",
+  "src": "broll/rksmart/av_w046.mp4",
+  "start": 1193.8,
+  "dur": 3.966667
+ },
+ {
+  "key": "imagen_1197767",
+  "src": "img/rksmart_m227.jpg",
+  "start": 1197.766667,
+  "dur": 4.833333
+ },
+ {
+  "key": "imagen_1202600",
+  "src": "img/rksmart_m228.jpg",
+  "start": 1202.6,
+  "dur": 5.733333
+ },
+ {
+  "key": "imagen_1208333",
+  "src": "img/rksmart_m229.jpg",
+  "start": 1208.333333,
+  "dur": 7.2
+ },
+ {
+  "key": "imagen_1226733",
+  "src": "img/rksmart_m231.jpg",
+  "start": 1226.733333,
+  "dur": 4.866667
+ },
+ {
+  "key": "imagen_1231600",
+  "src": "img/rksmart_m231x.jpg",
+  "start": 1231.6,
+  "dur": 3.866667
+ },
+ {
+  "key": "avatar_1235467",
+  "src": "broll/rksmart/av_w047.mp4",
+  "start": 1235.466667,
+  "dur": 3.466667
+ },
+ {
+  "key": "imagen_1238933",
+  "src": "img/rksmart_m233.jpg",
+  "start": 1238.933333,
+  "dur": 4.533333
+ },
+ {
+  "key": "imagen_1243467",
+  "src": "img/rksmart_m234.jpg",
+  "start": 1243.466667,
+  "dur": 9.1
+ },
+ {
+  "key": "avatar_1252567",
+  "src": "broll/rksmart/av_w048.mp4",
+  "start": 1252.566667,
+  "dur": 6.7
+ },
+ {
+  "key": "imagen_1268167",
+  "src": "img/rksmart_m237.jpg",
+  "start": 1268.166667,
+  "dur": 1.6
+ },
+ {
+  "key": "imagen_1269767",
+  "src": "img/rksmart_m238.jpg",
+  "start": 1269.766667,
+  "dur": 2.633333
+ },
+ {
+  "key": "avatar_1272400",
+  "src": "broll/rksmart/av_w049.mp4",
+  "start": 1272.4,
+  "dur": 6.766667
+ },
+ {
+  "key": "imagen_1279167",
+  "src": "img/rksmart_m240.jpg",
+  "start": 1279.166667,
+  "dur": 1.966667
+ },
+ {
+  "key": "imagen_1281133",
+  "src": "img/rksmart_m241.jpg",
+  "start": 1281.133333,
+  "dur": 7.7
+ },
+ {
+  "key": "imagen_1288833",
+  "src": "img/rksmart_m241x.jpg",
+  "start": 1288.833333,
+  "dur": 8.633333
+ },
+ {
+  "key": "clip_1297467",
+  "src": "broll/rksmart/rksmart_m242.mp4",
+  "start": 1297.466667,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_1301500",
+  "src": "img/rksmart_m242x.jpg",
+  "start": 1301.5,
+  "dur": 5.166667
+ },
+ {
+  "key": "avatar_1314533",
+  "src": "broll/rksmart/av_w050.mp4",
+  "start": 1314.533333,
+  "dur": 7.566667
+ },
+ {
+  "key": "imagen_1322100",
+  "src": "img/rksmart_m245.jpg",
+  "start": 1322.1,
+  "dur": 1.9
+ },
+ {
+  "key": "avatar_1324000",
+  "src": "broll/rksmart/av_w051.mp4",
+  "start": 1324,
+  "dur": 10.366667
+ },
+ {
+  "key": "clip_1334367",
+  "src": "broll/rksmart/rksmart_m248.mp4",
+  "start": 1334.366667,
+  "dur": 0.833333
+ },
+ {
+  "key": "imagen_1335200",
+  "src": "img/rksmart_m248x.jpg",
+  "start": 1335.2,
+  "dur": 0.633333
+ },
+ {
+  "key": "imagen_1335833",
+  "src": "img/rksmart_m249.jpg",
+  "start": 1335.833333,
+  "dur": 12.633333
+ },
+ {
+  "key": "avatar_1348467",
+  "src": "broll/rksmart/av_w052.mp4",
+  "start": 1348.466667,
+  "dur": 4.8
+ },
+ {
+  "key": "imagen_1353267",
+  "src": "img/rksmart_m251.jpg",
+  "start": 1353.266667,
+  "dur": 2.233333
+ },
+ {
+  "key": "imagen_1355500",
+  "src": "img/rksmart_m252.jpg",
+  "start": 1355.5,
+  "dur": 2.133333
+ },
+ {
+  "key": "imagen_1357633",
+  "src": "img/rksmart_m253.jpg",
+  "start": 1357.633333,
+  "dur": 5.7
+ },
+ {
+  "key": "imagen_1370067",
+  "src": "img/rksmart_m255.jpg",
+  "start": 1370.066667,
+  "dur": 5.566667
+ },
+ {
+  "key": "imagen_1375633",
+  "src": "img/rksmart_m256.jpg",
+  "start": 1375.633333,
+  "dur": 9.066667
+ },
+ {
+  "key": "clip_1384700",
+  "src": "broll/rksmart/rksmart_m256x.mp4",
+  "start": 1384.7,
+  "dur": 4.033333
+ },
+ {
+  "key": "imagen_1388733",
+  "src": "img/rksmart_m257.jpg",
+  "start": 1388.733333,
+  "dur": 3.6
+ },
+ {
+  "key": "avatar_1392333",
+  "src": "broll/rksmart/av_w053.mp4",
+  "start": 1392.333333,
+  "dur": 4.333333
+ },
+ {
+  "key": "avatar_1401367",
+  "src": "broll/rksmart/av_w054.mp4",
+  "start": 1401.366667,
+  "dur": 10.366667
+ },
+ {
+  "key": "imagen_1411733",
+  "src": "img/rksmart_m261.jpg",
+  "start": 1411.733333,
+  "dur": 1.3
+ },
+ {
+  "key": "imagen_1413033",
+  "src": "img/rksmart_m262.jpg",
+  "start": 1413.033333,
+  "dur": 2.133333
+ },
+ {
+  "key": "avatar_1415167",
+  "src": "broll/rksmart/av_w055.mp4",
+  "start": 1415.166667,
+  "dur": 3.466667
+ },
+ {
+  "key": "imagen_1418633",
+  "src": "img/rksmart_m264.jpg",
+  "start": 1418.633333,
+  "dur": 4.6
+ },
+ {
+  "key": "avatar_1425767",
+  "src": "broll/rksmart/av_w056.mp4",
+  "start": 1425.766667,
+  "dur": 2.633333
+ },
+ {
+  "key": "imagen_1428400",
+  "src": "img/rksmart_m267.jpg",
+  "start": 1428.4,
+  "dur": 5.566667
+ },
+ {
+  "key": "avatar_1433967",
+  "src": "broll/rksmart/av_w057.mp4",
+  "start": 1433.966667,
+  "dur": 7.533333
+ },
+ {
+  "key": "imagen_1441500",
+  "src": "img/rksmart_m269.jpg",
+  "start": 1441.5,
+  "dur": 2.966667
+ },
+ {
+  "key": "imagen_1444467",
+  "src": "img/rksmart_m270.jpg",
+  "start": 1444.466667,
+  "dur": 5.933333
+ },
+ {
+  "key": "clip_1450400",
+  "src": "broll/rksmart/rksmart_m270x.mp4",
+  "start": 1450.4,
+  "dur": 4.033333
+ },
+ {
+  "key": "avatar_1454433",
+  "src": "broll/rksmart/av_w058.mp4",
+  "start": 1454.433333,
+  "dur": 4.533333
+ },
+ {
+  "key": "imagen_1458967",
+  "src": "img/rksmart_m272.jpg",
+  "start": 1458.966667,
+  "dur": 5.3
+ },
+ {
+  "key": "imagen_1464267",
+  "src": "img/rksmart_m272x.jpg",
+  "start": 1464.266667,
+  "dur": 4.133333
+ },
+ {
+  "key": "imagen_1468400",
+  "src": "img/rksmart_m273.jpg",
+  "start": 1468.4,
+  "dur": 6.9
+ },
+ {
+  "key": "imagen_1475300",
+  "src": "img/rksmart_m274.jpg",
+  "start": 1475.3,
+  "dur": 2
+ },
+ {
+  "key": "imagen_1477300",
+  "src": "img/rksmart_m275.jpg",
+  "start": 1477.3,
+  "dur": 9.166667
+ },
+ {
+  "key": "imagen_1486467",
+  "src": "img/rksmart_m276.jpg",
+  "start": 1486.466667,
+  "dur": 1.6
+ },
+ {
+  "key": "avatar_1488067",
+  "src": "broll/rksmart/av_w059.mp4",
+  "start": 1488.066667,
+  "dur": 3.533333
+ },
+ {
+  "key": "imagen_1491600",
+  "src": "img/rksmart_m278.jpg",
+  "start": 1491.6,
+  "dur": 1.7
+ },
+ {
+  "key": "imagen_1493300",
+  "src": "img/rksmart_m264.jpg",
+  "start": 1493.3,
+  "dur": 10.066667
+ },
+ {
+  "key": "imagen_1503367",
+  "src": "img/rksmart_m279.jpg",
+  "start": 1503.366667,
+  "dur": 9.866667
+ },
+ {
+  "key": "imagen_1513233",
+  "src": "img/rksmart_m279x.jpg",
+  "start": 1513.233333,
+  "dur": 7.733333
+ },
+ {
+  "key": "imagen_1520967",
+  "src": "img/rksmart_m280.jpg",
+  "start": 1520.966667,
+  "dur": 1.9
+ },
+ {
+  "key": "imagen_1522867",
+  "src": "img/rksmart_m281.jpg",
+  "start": 1522.866667,
+  "dur": 8.433333
+ },
+ {
+  "key": "avatar_1531300",
+  "src": "broll/rksmart/av_w060.mp4",
+  "start": 1531.3,
+  "dur": 7.766667
+ },
+ {
+  "key": "imagen_1539067",
+  "src": "img/rksmart_m284.jpg",
+  "start": 1539.066667,
+  "dur": 3.866667
+ },
+ {
+  "key": "imagen_1542933",
+  "src": "img/rksmart_m285.jpg",
+  "start": 1542.933333,
+  "dur": 6.733333
+ },
+ {
+  "key": "clip_1549667",
+  "src": "broll/rksmart/rksmart_m286.mp4",
+  "start": 1549.666667,
+  "dur": 2.1
+ },
+ {
+  "key": "imagen_1551767",
+  "src": "img/rksmart_m287.jpg",
+  "start": 1551.766667,
+  "dur": 3.5
+ },
+ {
+  "key": "avatar_1555267",
+  "src": "broll/rksmart/av_w061.mp4",
+  "start": 1555.266667,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_1557667",
+  "src": "img/rksmart_m289.jpg",
+  "start": 1557.666667,
+  "dur": 4.966667
+ },
+ {
+  "key": "imagen_1562633",
+  "src": "img/rksmart_m289x.jpg",
+  "start": 1562.633333,
+  "dur": 3.933333
+ },
+ {
+  "key": "avatar_1566567",
+  "src": "broll/rksmart/av_w062.mp4",
+  "start": 1566.566667,
+  "dur": 3.7
+ },
+ {
+  "key": "imagen_1570267",
+  "src": "img/rksmart_m291.jpg",
+  "start": 1570.266667,
+  "dur": 2.5
+ },
+ {
+  "key": "imagen_1572767",
+  "src": "img/rksmart_m292.jpg",
+  "start": 1572.766667,
+  "dur": 4.966667
+ },
+ {
+  "key": "imagen_1577733",
+  "src": "img/rksmart_m292x.jpg",
+  "start": 1577.733333,
+  "dur": 4.233333
+ },
+ {
+  "key": "imagen_1581967",
+  "src": "img/rksmart_m292y.jpg",
+  "start": 1581.966667,
+  "dur": 3.233333
+ },
+ {
+  "key": "avatar_1585200",
+  "src": "broll/rksmart/av_w063.mp4",
+  "start": 1585.2,
+  "dur": 3.633333
+ }
+]
