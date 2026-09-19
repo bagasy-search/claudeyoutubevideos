@@ -1,0 +1,499 @@
+[
+ {
+  "name": "rkspots_r01",
+  "concept": "suburban house",
+  "query": "suburban house",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r02",
+  "concept": "front door",
+  "query": "front door",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r03",
+  "concept": "staircase",
+  "query": "staircase",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r04",
+  "concept": "bedroom dresser",
+  "query": "bedroom dresser",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r05",
+  "concept": "wall clock",
+  "query": "wall clock",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r06",
+  "concept": "empty driveway",
+  "query": "empty driveway",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r07",
+  "concept": "living room",
+  "query": "living room",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r08",
+  "concept": "autumn leaves",
+  "query": "autumn leaves",
+  "dur": 8.2,
+  "sec": "S1"
+ },
+ {
+  "name": "rkspots_r09",
+  "concept": "suburban street",
+  "query": "suburban street",
+  "dur": 8.2,
+  "sec": "S2"
+ },
+ {
+  "name": "rkspots_r10",
+  "concept": "house window",
+  "query": "house window",
+  "dur": 8.2,
+  "sec": "S2"
+ },
+ {
+  "name": "rkspots_r11",
+  "concept": "hallway walking",
+  "query": "hallway walking",
+  "dur": 8.2,
+  "sec": "S2"
+ },
+ {
+  "name": "rkspots_r12",
+  "concept": "old notebook",
+  "query": "old notebook",
+  "dur": 8.2,
+  "sec": "S2"
+ },
+ {
+  "name": "rkspots_r13",
+  "concept": "open freezer",
+  "query": "open freezer",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r14",
+  "concept": "frozen food",
+  "query": "frozen food",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r15",
+  "concept": "kitchen pantry",
+  "query": "kitchen pantry",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r16",
+  "concept": "food tins",
+  "query": "food tins",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r17",
+  "concept": "ice cubes",
+  "query": "ice cubes",
+  "dur": 8.2,
+  "sec": "S3"
+ },
+ {
+  "name": "rkspots_r18",
+  "concept": "bathroom sink",
+  "query": "bathroom sink",
+  "dur": 8.2,
+  "sec": "S4"
+ },
+ {
+  "name": "rkspots_r19",
+  "concept": "medicine cabinet",
+  "query": "medicine cabinet",
+  "dur": 8.2,
+  "sec": "S4"
+ },
+ {
+  "name": "rkspots_r20",
+  "concept": "bathroom mirror",
+  "query": "bathroom mirror",
+  "dur": 8.2,
+  "sec": "S4"
+ },
+ {
+  "name": "rkspots_r21",
+  "concept": "white toilet",
+  "query": "white toilet",
+  "dur": 8.2,
+  "sec": "S4"
+ },
+ {
+  "name": "rkspots_r22",
+  "concept": "bookshelf books",
+  "query": "bookshelf books",
+  "dur": 8.2,
+  "sec": "S5"
+ },
+ {
+  "name": "rkspots_r23",
+  "concept": "old books",
+  "query": "old books",
+  "dur": 8.2,
+  "sec": "S5"
+ },
+ {
+  "name": "rkspots_r24",
+  "concept": "library shelf",
+  "query": "library shelf",
+  "dur": 8.2,
+  "sec": "S5"
+ },
+ {
+  "name": "rkspots_r25",
+  "concept": "dusty books",
+  "query": "dusty books",
+  "dur": 8.2,
+  "sec": "S5"
+ },
+ {
+  "name": "rkspots_r26",
+  "concept": "home office",
+  "query": "home office",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r27",
+  "concept": "desk drawer",
+  "query": "desk drawer",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r28",
+  "concept": "filing cabinet",
+  "query": "filing cabinet",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r29",
+  "concept": "paper documents",
+  "query": "paper documents",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r30",
+  "concept": "office papers",
+  "query": "office papers",
+  "dur": 8.2,
+  "sec": "S6"
+ },
+ {
+  "name": "rkspots_r31",
+  "concept": "childs bedroom",
+  "query": "childs bedroom",
+  "dur": 8.2,
+  "sec": "S7"
+ },
+ {
+  "name": "rkspots_r32",
+  "concept": "toy box",
+  "query": "toy box",
+  "dur": 8.2,
+  "sec": "S7"
+ },
+ {
+  "name": "rkspots_r33",
+  "concept": "teddy bear",
+  "query": "teddy bear",
+  "dur": 8.2,
+  "sec": "S7"
+ },
+ {
+  "name": "rkspots_r34",
+  "concept": "piggy bank",
+  "query": "piggy bank",
+  "dur": 8.2,
+  "sec": "S7"
+ },
+ {
+  "name": "rkspots_r35",
+  "concept": "made bed",
+  "query": "made bed",
+  "dur": 8.2,
+  "sec": "S8"
+ },
+ {
+  "name": "rkspots_r36",
+  "concept": "bedroom mattress",
+  "query": "bedroom mattress",
+  "dur": 8.2,
+  "sec": "S8"
+ },
+ {
+  "name": "rkspots_r37",
+  "concept": "pillow bed",
+  "query": "pillow bed",
+  "dur": 8.2,
+  "sec": "S8"
+ },
+ {
+  "name": "rkspots_r38",
+  "concept": "white bedsheets",
+  "query": "white bedsheets",
+  "dur": 8.2,
+  "sec": "S8"
+ },
+ {
+  "name": "rkspots_r39",
+  "concept": "walk in closet",
+  "query": "walk in closet",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r40",
+  "concept": "hanging clothes",
+  "query": "hanging clothes",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r41",
+  "concept": "shoe boxes",
+  "query": "shoe boxes",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r42",
+  "concept": "wardrobe clothes",
+  "query": "wardrobe clothes",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r43",
+  "concept": "suitcase",
+  "query": "suitcase",
+  "dur": 8.2,
+  "sec": "S9"
+ },
+ {
+  "name": "rkspots_r44",
+  "concept": "bedside table",
+  "query": "bedside table",
+  "dur": 8.2,
+  "sec": "S10"
+ },
+ {
+  "name": "rkspots_r45",
+  "concept": "night lamp",
+  "query": "night lamp",
+  "dur": 8.2,
+  "sec": "S10"
+ },
+ {
+  "name": "rkspots_r46",
+  "concept": "wristwatch",
+  "query": "wristwatch",
+  "dur": 8.2,
+  "sec": "S10"
+ },
+ {
+  "name": "rkspots_r47",
+  "concept": "alarm clock",
+  "query": "alarm clock",
+  "dur": 8.2,
+  "sec": "S10"
+ },
+ {
+  "name": "rkspots_r48",
+  "concept": "metal safe",
+  "query": "metal safe",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r49",
+  "concept": "steel box",
+  "query": "steel box",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r50",
+  "concept": "drill wood",
+  "query": "drill wood",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r51",
+  "concept": "screwdriver tools",
+  "query": "screwdriver tools",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r52",
+  "concept": "toolbox",
+  "query": "toolbox",
+  "dur": 8.2,
+  "sec": "S11"
+ },
+ {
+  "name": "rkspots_r53",
+  "concept": "chest drawers",
+  "query": "chest drawers",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r54",
+  "concept": "folded socks",
+  "query": "folded socks",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r55",
+  "concept": "jewelry box",
+  "query": "jewelry box",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r56",
+  "concept": "gold rings",
+  "query": "gold rings",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r57",
+  "concept": "wedding ring",
+  "query": "wedding ring",
+  "dur": 8.2,
+  "sec": "S12"
+ },
+ {
+  "name": "rkspots_r58",
+  "concept": "cardboard box",
+  "query": "cardboard box",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r59",
+  "concept": "phone photo",
+  "query": "phone photo",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r60",
+  "concept": "writing notes",
+  "query": "writing notes",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r61",
+  "concept": "kitchen table",
+  "query": "kitchen table",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r62",
+  "concept": "laundry room",
+  "query": "laundry room",
+  "dur": 8.2,
+  "sec": "S13"
+ },
+ {
+  "name": "rkspots_r63",
+  "concept": "door lock",
+  "query": "door lock",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r64",
+  "concept": "door hinge",
+  "query": "door hinge",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r65",
+  "concept": "house keys",
+  "query": "house keys",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r66",
+  "concept": "garden stones",
+  "query": "garden stones",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r67",
+  "concept": "front porch",
+  "query": "front porch",
+  "dur": 8.2,
+  "sec": "S14"
+ },
+ {
+  "name": "rkspots_r68",
+  "concept": "empty room",
+  "query": "empty room",
+  "dur": 8.2,
+  "sec": "S15"
+ },
+ {
+  "name": "rkspots_r69",
+  "concept": "quiet street",
+  "query": "quiet street",
+  "dur": 8.2,
+  "sec": "S15"
+ },
+ {
+  "name": "rkspots_r70",
+  "concept": "brass keys",
+  "query": "brass keys",
+  "dur": 8.2,
+  "sec": "S15"
+ },
+ {
+  "name": "rkspots_r71",
+  "concept": "workbench tools",
+  "query": "workbench tools",
+  "dur": 8.2,
+  "sec": "S15"
+ }
+]
