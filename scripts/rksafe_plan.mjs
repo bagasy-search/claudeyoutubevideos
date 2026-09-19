@@ -138,14 +138,19 @@ for (const sec of secciones) {
       used.add(elegido.id);
 
       const usaClip = quiereClip && elegido.hayClip;
+      // ⛔ LA VELOCIDAD SE DECIDE CON LA DURACIÓN PLANEADA, NO CON LA RECORTADA. Medido acá: un slot
+      //    de 8,07 (clip a 0,5×) recortado a 7,02 por el borde de sección dejaba de parecerse a 8,07,
+      //    el ternario le ponía rate 1 y el plano pedía 7,02 s de una fuente de 4,03 → se CONGELA.
+      const rate = usaClip ? (Math.abs(dur - 8.07) < 0.06 ? 0.5 : 1) : undefined;
       if (!usaClip) dur = Math.min(dur, CAP_IMG);
+      else dur = Math.min(dur, 4.033 / rate);       // nunca más allá del archivo
       dur = Math.min(dur, li1 - t);
       if (dur < 1.2) break;
       beats.push({
         t: +t.toFixed(3), dur: +dur.toFixed(3), sec: sec.sec, lugar: elegido.lugar,
         kind: usaClip ? 'clip' : 'imagen',
         asset: usaClip ? `broll/${SLUG}/${elegido.id}.mp4` : `img/${elegido.id}.jpg`,
-        rate: usaClip ? (Math.abs(dur - 8.07) < 0.3 ? 0.5 : 1) : undefined,
+        rate,
       });
       t += dur;
     }
@@ -153,7 +158,7 @@ for (const sec of secciones) {
 }
 
 // ── VENTANAS DE AVATAR: sólo ANTES de AVATAR_END ──────────────────────────
-const OBJ_COB_T1 = 0.74;
+const OBJ_COB_T1 = 0.755;
 let quitados = 0;
 if (AVATAR_END > 1) {
   const t1 = beats.filter((b) => b.t + b.dur <= AVATAR_END && b.kind !== 'componente');
