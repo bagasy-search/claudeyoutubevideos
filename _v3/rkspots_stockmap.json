@@ -593,5 +593,155 @@
   "sec": "S15",
   "lugar": "hall",
   "prompt": "dusty attic real footage: attic dust loft boxes roof beams storage"
+ },
+ "rkspots_r120": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "door frame real footage: door frame house home detail object"
+ },
+ "rkspots_r121": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "brass handle real footage: brass handle house home detail object"
+ },
+ "rkspots_r122": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "letterbox real footage: letterbox house home detail object"
+ },
+ "rkspots_r123": {
+  "sec": "S13",
+  "lugar": "utility",
+  "prompt": "wooden box real footage: wooden box house home detail object"
+ },
+ "rkspots_r124": {
+  "sec": "S14",
+  "lugar": "porch",
+  "prompt": "metal hinge real footage: metal hinge house home detail object"
+ },
+ "rkspots_r125": {
+  "sec": "S15",
+  "lugar": "workbench",
+  "prompt": "old key real footage: old key house home detail object"
+ },
+ "rkspots_r126": {
+  "sec": "S12",
+  "lugar": "bedroom",
+  "prompt": "drawer handle real footage: drawer handle house home detail object"
+ },
+ "rkspots_r127": {
+  "sec": "S5",
+  "lugar": "livingroom",
+  "prompt": "wall shelf real footage: wall shelf house home detail object"
+ },
+ "rkspots_r128": {
+  "sec": "S13",
+  "lugar": "utility",
+  "prompt": "storage boxes real footage: storage boxes house home detail object"
+ },
+ "rkspots_r129": {
+  "sec": "S15",
+  "lugar": "livingroom",
+  "prompt": "dust sunlight real footage: dust sunlight house home detail object"
+ },
+ "rkspots_r130": {
+  "sec": "S9",
+  "lugar": "closet",
+  "prompt": "wooden chest real footage: wooden chest house home detail object"
+ },
+ "rkspots_r131": {
+  "sec": "S3",
+  "lugar": "kitchen",
+  "prompt": "tin box real footage: tin box house home detail object"
+ },
+ "rkspots_r132": {
+  "sec": "S3",
+  "lugar": "kitchen",
+  "prompt": "glass jar real footage: glass jar house home detail object"
+ },
+ "rkspots_r133": {
+  "sec": "S4",
+  "lugar": "bathroom",
+  "prompt": "pill bottles real footage: pill bottles house home detail object"
+ },
+ "rkspots_r134": {
+  "sec": "S4",
+  "lugar": "bathroom",
+  "prompt": "towel rail real footage: towel rail house home detail object"
+ },
+ "rkspots_r135": {
+  "sec": "S8",
+  "lugar": "bedroom",
+  "prompt": "radiator real footage: radiator house home detail object"
+ },
+ "rkspots_r136": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "skirting board real footage: skirting board house home detail object"
+ },
+ "rkspots_r137": {
+  "sec": "S1",
+  "lugar": "hall",
+  "prompt": "ceiling light real footage: ceiling light house home detail object"
+ },
+ "rkspots_r138": {
+  "sec": "S11",
+  "lugar": "garage",
+  "prompt": "garage interior real footage: garage interior house home detail object"
+ },
+ "rkspots_r139": {
+  "sec": "S11",
+  "lugar": "garage",
+  "prompt": "shed interior real footage: shed interior house home detail object"
+ },
+ "rkspots_r140": {
+  "sec": "S9",
+  "lugar": "closet",
+  "prompt": "attic hatch real footage: attic hatch house home detail object"
+ },
+ "rkspots_r141": {
+  "sec": "S8",
+  "lugar": "bedroom",
+  "prompt": "floorboards real footage: floorboards house home detail object"
+ },
+ "rkspots_r142": {
+  "sec": "S2",
+  "lugar": "hall",
+  "prompt": "carpet stairs real footage: carpet stairs house home detail object"
+ },
+ "rkspots_r143": {
+  "sec": "S1",
+  "lugar": "hall",
+  "prompt": "hallway mirror real footage: hallway mirror house home detail object"
+ },
+ "rkspots_r144": {
+  "sec": "S6",
+  "lugar": "study",
+  "prompt": "empty shelf real footage: empty shelf house home detail object"
+ },
+ "rkspots_r145": {
+  "sec": "S10",
+  "lugar": "bedroom",
+  "prompt": "lamp switch real footage: lamp switch house home detail object"
+ },
+ "rkspots_r146": {
+  "sec": "S12",
+  "lugar": "bedroom",
+  "prompt": "velvet pouch real footage: velvet pouch house home detail object"
+ },
+ "rkspots_r147": {
+  "sec": "S7",
+  "lugar": "kidroom",
+  "prompt": "wooden blocks real footage: wooden blocks house home detail object"
+ },
+ "rkspots_r148": {
+  "sec": "S13",
+  "lugar": "study",
+  "prompt": "pen paper real footage: pen paper house home detail object"
+ },
+ "rkspots_r149": {
+  "sec": "S15",
+  "lugar": "street",
+  "prompt": "autumn tree real footage: autumn tree house home detail object"
  }
 }

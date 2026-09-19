@@ -275,7 +275,46 @@ if (AVATAR_END > 1) {
   const paso = Math.max(1, Math.floor(candidatos.length / Math.max(1, Math.ceil(sobra / 4.5))));
   for (let i = 0; i < candidatos.length && sobra > 0; i += paso) { candidatos[i]._quitar = true; sobra -= candidatos[i].dur; quitados++; }
 }
-const finales = beats.filter((b) => !b._quitar);
+let finales = beats.filter((b) => !b._quitar);
+
+// ⛔⛔ UNA VENTANA DE AVATAR NO PUEDE SER UN POZO. El abridor reparte el sobrante con un paso fijo,
+//    así que donde el pool de la sección se queda corto varias ventanas quedan PEGADAS y salen
+//    tramos larguísimos con la cara sola. Medido en rkspots antes de este arreglo: una ventana de
+//    31,3 s a los 12:47 (la sección del placard tiene 12 planos para ~20 slots), con el resto de
+//    las métricas en verde — cobertura 100 %, 0 huecos ≥6 s, pacing correcto. Ninguna compuerta lo
+//    ve porque técnicamente NO es un hueco: hay avatar ahí.
+// ✅ Se DEVUELVEN al montaje los planos que el abridor había quitado dentro de cada tramo largo,
+//    empezando por el más cercano al medio, hasta que ningún tramo pase el techo.
+{
+  const MAX_WIN = cfg.AVATAR_WIN_MAX ?? 12;
+  const OVq = new Set(cfg.OVERLAY);
+  let devueltos = 0, peorAntes = 0;
+  for (let vuelta = 0; vuelta < 8; vuelta++) {
+    const base = finales.filter((b) => !(b.kind === 'componente' && OVq.has(b.comp))).sort((a, b) => a.t - b.t);
+    const tramos = [];
+    let cur = 0;
+    for (const b of base) { if (b.t - cur > 0.02) tramos.push([cur, b.t]); cur = Math.max(cur, b.t + b.dur); }
+    if (TOTAL - cur > 0.02) tramos.push([cur, TOTAL]);
+    const largos = tramos.filter(([a, b]) => b - a > MAX_WIN);
+    if (vuelta === 0) peorAntes = tramos.reduce((m, [a, b]) => Math.max(m, b - a), 0);
+    if (!largos.length) break;
+    let cambio = false;
+    for (const [h0, h1] of largos) {
+      const medio = (h0 + h1) / 2;
+      const dentro = beats.filter((b) => b._quitar && b.t >= h0 - 0.01 && b.t + b.dur <= h1 + 0.01)
+        .sort((a, b) => Math.abs(a.t + a.dur / 2 - medio) - Math.abs(b.t + b.dur / 2 - medio));
+      if (dentro.length) { delete dentro[0]._quitar; devueltos++; cambio = true; }
+    }
+    if (!cambio) break;
+    finales = beats.filter((b) => !b._quitar);
+  }
+  const base = finales.filter((b) => !(b.kind === 'componente' && OVq.has(b.comp))).sort((a, b) => a.t - b.t);
+  let cur = 0, peor = 0;
+  for (const b of base) { peor = Math.max(peor, b.t - cur); cur = Math.max(cur, b.t + b.dur); }
+  peor = Math.max(peor, TOTAL - cur);
+  console.log('ventanas de avatar acotadas: ' + devueltos + ' planos devueltos al montaje · la más larga pasó de '
+    + peorAntes.toFixed(1) + ' s a ' + peor.toFixed(1) + ' s (techo ' + MAX_WIN + ')');
+}
 
 // ── MODO VENTANAS: el avatar NO es fondo, es un plano más de la capa base ──
 // ⛔⛔ En los videos donde el avatar lo genero YO (RunPod InfiniteTalk) no hay capa continua: fuera

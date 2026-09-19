@@ -1,0 +1,512 @@
+[
+ {
+  "id": "rkspots_r02",
+  "motivo": [
+   "Man in pink shirt holding yellow package near door.",
+   "una persona con camisa rosa doblada sosteniendo paquetes"
+  ],
+  "query": "front door real footage: front door doorway porch step handle lock frame entrance house"
+ },
+ {
+  "id": "rkspots_r04",
+  "motivo": [
+   "Se ve una persona sentada en la cama, reflejada en el espejo de la izquierda"
+  ],
+  "query": "bedroom dresser real footage: bedroom dresser chest drawers wood mirror lamp jewellery top drawer"
+ },
+ {
+  "id": "rkspots_r06",
+  "motivo": [
+   "Hay una persona parada a la derecha del estacionamiento."
+  ],
+  "query": "empty driveway real footage: driveway street house garage concrete car kerb neighbourhood afternoon"
+ },
+ {
+  "id": "rkspots_r101",
+  "motivo": [
+   "Mujer de perfil sentada frente al tocador",
+   "Mujer de cabello rizado sentada a la derecha, de perfil."
+  ],
+  "query": "dresser mirror real footage: mirror dresser bedroom reflection wood chest drawers"
+ },
+ {
+  "id": "rkspots_r109",
+  "motivo": [
+   "Torso y piernas de una persona sosteniendo un frasco de monedas."
+  ],
+  "query": "coins real footage: coins money change loose saucer copper silver"
+ },
+ {
+  "id": "rkspots_r11",
+  "motivo": [
+   "Hombre de traje caminando por un pasillo, visto de espaldas y perfil",
+   "La espalda de una persona caminando por un pasillo."
+  ],
+  "query": "hallway walking real footage: hallway hall corridor walking floor door rug stairs house route"
+ },
+ {
+  "id": "rkspots_r112",
+  "motivo": [
+   "Una mujer sentada en la cama y un hombre de pie detrás.",
+   "Una mujer sentada en la cama y un hombre de pie cerca de las cajas, ambos visibles en una habitación"
+  ],
+  "query": "attic boxes real footage: attic boxes storage loft dust roof cardboard"
+ },
+ {
+  "id": "rkspots_r114",
+  "motivo": [
+   "Dos personas caminando: una con abrigo beige y otra con pantalones naranjas",
+   "Dos personas en el centro: un hombre de pie y otra agachada."
+  ],
+  "query": "closed door real footage: door closed front handle lock frame wood entrance"
+ },
+ {
+  "id": "rkspots_r115",
+  "motivo": [
+   "Persona con camisa a cuadros a la derecha abriendo una puerta",
+   "Un hombre con camiseta blanca 'VOLUNTEER' en primer plano."
+  ],
+  "query": "door hinge real footage: hinge door screws frame metal pin leaf jamb"
+ },
+ {
+  "id": "rkspots_r117",
+  "motivo": [
+   "Se ven las manos y torso de una persona sosteniendo unas llaves"
+  ],
+  "query": "brass key real footage: key brass cut metal blade ring house"
+ },
+ {
+  "id": "rkspots_r118",
+  "motivo": [
+   "una persona de espaldas con chaqueta blanca en una sala",
+   "persona de cuerpo entero, piernas y pies visibles, con parte del torso arriba"
+  ],
+  "query": "window light real footage: window light room glass curtain daylight sill"
+ },
+ {
+  "id": "rkspots_r121",
+  "motivo": [
+   "se ve la cabeza borrosa de una persona al fondo centro, detrás de la llave de cerveza"
+  ],
+  "query": "brass handle real footage: brass handle house home detail object"
+ },
+ {
+  "id": "rkspots_r122",
+  "motivo": [
+   "Hombre con chaleco amarillo y gorra de pie frente a la casa",
+   "Persona con chaleco amarillo, gorra y mascarilla frente a una casa."
+  ],
+  "query": "letterbox real footage: letterbox house home detail object"
+ },
+ {
+  "id": "rkspots_r126",
+  "motivo": [
+   "Se ve un brazo con manga y una mano de una persona a la izquierda de la imagen."
+  ],
+  "query": "drawer handle real footage: drawer handle house home detail object"
+ },
+ {
+  "id": "rkspots_r127",
+  "motivo": [
+   "Una persona de espaldas sosteniendo un teléfono",
+   "Persona de espaldas con camisa roja sosteniendo un teléfono."
+  ],
+  "query": "wall shelf real footage: wall shelf house home detail object"
+ },
+ {
+  "id": "rkspots_r128",
+  "motivo": [
+   "Persona de torso y brazos visibles, inclinada sobre una caja de cartón"
+  ],
+  "query": "storage boxes real footage: storage boxes house home detail object"
+ },
+ {
+  "id": "rkspots_r13",
+  "motivo": [
+   "Mujer con brazo y torso visibles frente al congelador"
+  ],
+  "query": "open freezer real footage: freezer drawer frozen food ice peas bags kitchen cold packets"
+ },
+ {
+  "id": "rkspots_r130",
+  "motivo": [
+   "Un hombre haciendo press de banca con barra en un gimnasio doméstico",
+   "Una persona está haciendo press de banca en el centro de la imagen."
+  ],
+  "query": "wooden chest real footage: wooden chest house home detail object"
+ },
+ {
+  "id": "rkspots_r134",
+  "motivo": [
+   "Una mujer con toallas en la cabeza y hombros, al centro de la imagen.",
+   "mujer con toalla sentada en el sofá"
+  ],
+  "query": "towel rail real footage: towel rail house home detail object"
+ },
+ {
+  "id": "rkspots_r135",
+  "motivo": [
+   "A young woman with a braid stands looking out a window.",
+   "Mujer de cabello rojo junto a la ventana a la derecha."
+  ],
+  "query": "radiator real footage: radiator house home detail object"
+ },
+ {
+  "id": "rkspots_r136",
+  "motivo": [
+   "piernas y pies de bailarina con zapatillas de puntas",
+   "pierna y pie visibles bajo el vestido en la parte inferior derecha"
+  ],
+  "query": "skirting board real footage: skirting board house home detail object"
+ },
+ {
+  "id": "rkspots_r140",
+  "motivo": [
+   "Dos personas de pie en una cocina sosteniendo un objeto.",
+   "Una mujer a la izquierda y un hombre a la derecha."
+  ],
+  "query": "attic hatch real footage: attic hatch house home detail object"
+ },
+ {
+  "id": "rkspots_r141",
+  "motivo": [
+   "Se ven los pies y tobillos de una persona de pie sobre el suelo.",
+   "Se ven los pies y piernas de una persona sobre el piso."
+  ],
+  "query": "floorboards real footage: floorboards house home detail object"
+ },
+ {
+  "id": "rkspots_r143",
+  "motivo": [
+   "una pareja de pie en el pasillo y su reflejo en el espejo"
+  ],
+  "query": "hallway mirror real footage: hallway mirror house home detail object"
+ },
+ {
+  "id": "rkspots_r146",
+  "motivo": [
+   "Una mujer con pañuelo rojo y joyas en primer plano.",
+   "Mujer sentada en mesa organizando joyas"
+  ],
+  "query": "velvet pouch real footage: velvet pouch house home detail object"
+ },
+ {
+  "id": "rkspots_r147",
+  "motivo": [
+   "Niña con camisa azul jugando con bloques de madera en una mesa",
+   "Un niño de espaldas jugando con bloques de madera."
+  ],
+  "query": "wooden blocks real footage: wooden blocks house home detail object"
+ },
+ {
+  "id": "rkspots_r148",
+  "motivo": [
+   "Dos personas con brazos y manos visibles firmando documentos",
+   "persona con torso y brazo firmando documentos en primer plano"
+  ],
+  "query": "pen paper real footage: pen paper house home detail object"
+ },
+ {
+  "id": "rkspots_r17",
+  "motivo": [
+   "Persona de espaldas en el fondo, a la derecha, vestida de blanco"
+  ],
+  "query": "ice cubes real footage: ice cubes freezer cold water tray frozen kitchen"
+ },
+ {
+  "id": "rkspots_r19",
+  "motivo": [
+   "Se ve el perfil de una persona con torso y rostro sosteniendo botellas",
+   "Mujer de perfil con bata blanca mirando un mueble."
+  ],
+  "query": "medicine cabinet real footage: cabinet bathroom mirror shelves pills medicine boxes razor bottles"
+ },
+ {
+  "id": "rkspots_r26",
+  "motivo": [
+   "Mujer de pie junto a una mesa con laptop, en el centro de la imagen",
+   "Una persona de espaldas en el centro, colgando fotos en la pared."
+  ],
+  "query": "home office real footage: office desk study laptop lamp papers chair filing cabinet room"
+ },
+ {
+  "id": "rkspots_r28",
+  "motivo": [
+   "Mujer con cabello rizado y camisa blanca de perfil a la izquierda, abriendo un gabinete.",
+   "mujer de perfil con cabello rizado junto a un mueble"
+  ],
+  "query": "filing cabinet real footage: filing cabinet drawer files folders office paper metal tabs"
+ },
+ {
+  "id": "rkspots_r31",
+  "motivo": [
+   "Una niña durmiendo en la cama.",
+   "Una persona de pie de espaldas junto a la cama y un niño acostado en ella"
+  ],
+  "query": "childs bedroom real footage: child bedroom kid room toys bed duvet bookshelf wardrobe small"
+ },
+ {
+  "id": "rkspots_r32",
+  "motivo": [
+   "Persona sentada en el fondo con torso y manos visibles, desenfocada",
+   "niño sentado en el piso, se ven brazos, torso y piernas"
+  ],
+  "query": "toy box real footage: toy box crate toys plastic bricks child bedroom lid floor"
+ },
+ {
+  "id": "rkspots_r35",
+  "motivo": [
+   "piernas con pantalón oscuro sobre la cama",
+   "piernas de una persona con pantalones oscuros sobre la cama"
+  ],
+  "query": "made bed real footage: bed made quilt duvet mattress bedroom pillow sheet bedside"
+ },
+ {
+  "id": "rkspots_r36",
+  "motivo": [
+   "Una mujer y dos niñas saltando en la cama",
+   "Tres niñas saltando sobre la cama en el centro de la imagen"
+  ],
+  "query": "bedroom mattress real footage: mattress bed box spring bedroom sheet corner quilt divan"
+ },
+ {
+  "id": "rkspots_r37",
+  "motivo": [
+   "Mujer con cara visible detrás de las almohadas en la cama",
+   "Mujer acostada en la cama, rostro y torso visibles entre almohadas blancas"
+  ],
+  "query": "pillow bed real footage: pillow bed sheet bedroom headboard quilt mattress sleep"
+ },
+ {
+  "id": "rkspots_r40",
+  "motivo": [
+   "Dos personas vistas de espalda junto a un ropero con ropa.",
+   "Dos mujeres vistas desde atrás frente al ropero"
+  ],
+  "query": "hanging clothes real footage: clothes hangers rail wardrobe closet shirts coats hanging"
+ },
+ {
+  "id": "rkspots_r41",
+  "motivo": [
+   "hombre con glasses y camisa azul sosteniendo teléfono en centro de la imagen",
+   "Un hombre de pie en el centro de la imagen revisando su teléfono."
+  ],
+  "query": "shoe boxes real footage: shoeboxes boxes shoes closet wardrobe floor cardboard lids stack"
+ },
+ {
+  "id": "rkspots_r43",
+  "motivo": [
+   "Se ven varias personas de pie en el fondo de la terminal de equipajes.",
+   "Varias personas visibles en el fondo del área de recolección de equipaje"
+  ],
+  "query": "suitcase real footage: suitcase case luggage bag closet wardrobe handle wheels carry"
+ },
+ {
+  "id": "rkspots_r45",
+  "motivo": [
+   "Niña y mujer sentadas en la cama mostrando una caja fuerte luminosa",
+   "mujer y niña sentadas en la cama sosteniendo una lámpara"
+  ],
+  "query": "night lamp real footage: lamp bedside light bedroom table shade night glow"
+ },
+ {
+  "id": "rkspots_r52",
+  "motivo": [
+   "Hombre de espaldas en un taller, junto a un banco de trabajo.",
+   "Persona de espaldas al fondo del taller, junto a la ventana"
+  ],
+  "query": "toolbox real footage: toolbox tools bench garage workshop wrench screws drill"
+ },
+ {
+  "id": "rkspots_r53",
+  "motivo": [
+   "Se ve una mano y pierna de una persona sentada a la izquierda del mueble blanco",
+   "se ve una mano y brazo abriendo un cajón"
+  ],
+  "query": "chest drawers real footage: chest drawers dresser bedroom wood socks drawer top mirror"
+ },
+ {
+  "id": "rkspots_r58",
+  "motivo": [
+   "Torso visible a la derecha, vestido con blusa blanca con botones."
+  ],
+  "query": "cardboard box real footage: box cardboard plain tape sealed shelf utility storage boring"
+ },
+ {
+  "id": "rkspots_r59",
+  "motivo": [
+   "Se ve una persona de torso y mano sosteniendo un celular"
+  ],
+  "query": "phone photo real footage: phone photograph camera screen picture jewellery inventory"
+ },
+ {
+  "id": "rkspots_r60",
+  "motivo": [
+   "Una persona con camisa gris está sentada en la mesa.",
+   "Hombre de perfil con camisa clara escribiendo en una nota amarilla"
+  ],
+  "query": "writing notes real footage: writing pen paper notes list serial numbers sheet desk"
+ },
+ {
+  "id": "rkspots_r61",
+  "motivo": [
+   "Mujer y dos niños sentados en la mesa, más reflejo en espejo",
+   "Tres personas sentadas en una mesa de comedor con flores y platos"
+  ],
+  "query": "kitchen table real footage: kitchen table mugs tea paper pen biscuit chairs morning"
+ },
+ {
+  "id": "rkspots_r62",
+  "motivo": [
+   "Una mujer de espaldas en el centro de la imagen",
+   "Mujer de pie de perfil en una lavandería sosteniendo una canasta blanca"
+  ],
+  "query": "laundry room real footage: laundry utility washing machine shelves powder mop room basket"
+ },
+ {
+  "id": "rkspots_r65",
+  "motivo": [
+   "persona visible con torso, manos y piernas, sosteniendo llaves",
+   "Persona con torso y manos visibles sosteniendo llaves"
+  ],
+  "query": "house keys real footage: keys key brass ring house spare metal cut"
+ },
+ {
+  "id": "rkspots_r68",
+  "motivo": [
+   "Se ve parcialmente un pie y tobillo en la esquina inferior derecha.",
+   "persona de pie junto a silla, camiseta gris y pantalón beige, centro de la habitación"
+  ],
+  "query": "empty room real footage: room empty quiet living television sofa nobody still"
+ },
+ {
+  "id": "rkspots_r69",
+  "motivo": [
+   "Hay una persona sentada en el lado derecho, cerca del edificio"
+  ],
+  "query": "quiet street real footage: street quiet houses road neighbourhood empty pavement afternoon"
+ },
+ {
+  "id": "rkspots_r73",
+  "motivo": [
+   "Dos personas sentadas en el porche de la cabaña.",
+   "Dos personas sentadas en el porche iluminado de la casa"
+  ],
+  "query": "porch light real footage: porch light house front evening lamp door step"
+ },
+ {
+  "id": "rkspots_r75",
+  "motivo": [
+   "persona bajando escaleras de madera, vista desde atrás",
+   "mujer mayor con chaqueta amarilla bajando escaleras, de espaldas"
+  ],
+  "query": "wooden staircase real footage: staircase stairs wooden banister steps landing rail upstairs"
+ },
+ {
+  "id": "rkspots_r76",
+  "motivo": [
+   "piernas y pies de persona caminando en el centro de la imagen",
+   "persona de espaldas con leggings negros inclinándose cerca del ropero blanco"
+  ],
+  "query": "front doormat real footage: doormat mat door step front entrance porch"
+ },
+ {
+  "id": "rkspots_r77",
+  "motivo": [
+   "mujer de perfil a la derecha junto al espejo",
+   "Mujer de cabello rizado visible de perfil junto a una ventana."
+  ],
+  "query": "curtain window real footage: curtain window light living room net glass room"
+ },
+ {
+  "id": "rkspots_r83",
+  "motivo": [
+   "una mujer con camisa blanca organiza toallas en un placard",
+   "Una mujer con el cabello oscuro organizando toallas en un placard."
+  ],
+  "query": "folded towels real footage: towels folded bathroom rail linen cupboard stack"
+ },
+ {
+  "id": "rkspots_r85",
+  "motivo": [
+   "Una persona acostada leyendo en el sofá/cama"
+  ],
+  "query": "bookshelf close real footage: bookshelf books spines shelf row dust hardback gap"
+ },
+ {
+  "id": "rkspots_r86",
+  "motivo": [
+   "Mujer de perfil y otra persona con anteojos mirando un álbum de fotos",
+   "Se ven manos y parte del torso/cabeza de una persona a la derecha"
+  ],
+  "query": "photo album real footage: album photographs pictures book memories shelf paper old"
+ },
+ {
+  "id": "rkspots_r89",
+  "motivo": [
+   "Se ve una mano y parte del brazo de una persona cerrando la laptop."
+  ],
+  "query": "wooden desk real footage: desk wooden office study drawer surface lamp papers"
+ },
+ {
+  "id": "rkspots_r90",
+  "motivo": [
+   "mujer de cabello rubio visible a la derecha, sus manos sobre carretes de hilo"
+  ],
+  "query": "sewing box real footage: sewing box tin buttons thread small lid contents"
+ },
+ {
+  "id": "rkspots_r91",
+  "motivo": [
+   "Se ve una mano en la esquina superior izquierda y parte del cuerpo/pierna con ropa tejida a la derecha.",
+   "Se ve una mano y parte del torso de una persona a la derecha."
+  ],
+  "query": "wooden toy real footage: toy wooden child bedroom small play blocks"
+ },
+ {
+  "id": "rkspots_r93",
+  "motivo": [
+   "Persona de pie junto a la cama, visible desde cintura hasta pies"
+  ],
+  "query": "tidy bedroom real footage: bedroom tidy bed made wardrobe dresser lamp window"
+ },
+ {
+  "id": "rkspots_r94",
+  "motivo": [
+   "Cabeza con cabello rizado visible en la esquina inferior derecha, recostada en la cama.",
+   "Persona de espaldas con cabello rizado sentada en la cama."
+  ],
+  "query": "bedroom window real footage: window bedroom curtain light room sill glass"
+ },
+ {
+  "id": "rkspots_r95",
+  "motivo": [
+   "piernas y mano de persona pintando piso con rodillo",
+   "piernas y pies de una persona visibles detrás del rodillo de pintura"
+  ],
+  "query": "wooden floor real footage: floor wooden boards floorboard room grain joist"
+ },
+ {
+  "id": "rkspots_r96",
+  "motivo": [
+   "Hay una mujer reflejada en el espejo del armario.",
+   "Mujer reflejada en el espejo a la izquierda del armario."
+  ],
+  "query": "empty wardrobe real footage: wardrobe empty closet rail hangers shelf doors"
+ },
+ {
+  "id": "rkspots_r97",
+  "motivo": [
+   "persona con chaqueta roja a la izquierda del maletero",
+   "Persona con chaqueta roja cargando maletín junto al auto"
+  ],
+  "query": "old suitcase real footage: suitcase old case luggage leather handle closet"
+ },
+ {
+  "id": "rkspots_r98",
+  "motivo": [
+   "Una mujer con vestido rosa está de pie junto al armario."
+  ],
+  "query": "linen cupboard real footage: cupboard linen towels sheets shelves landing storage"
+ }
+]
