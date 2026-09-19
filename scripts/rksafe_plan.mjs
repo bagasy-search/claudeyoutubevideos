@@ -16,6 +16,7 @@
 // TIEMPO DE LECTURA de los componentes: piso 2,8 s + 0,28 s por palabra más allá de 3 (techo 13 s).
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 
 const SLUG = process.argv[2];
 if (!SLUG) { console.error('uso: node scripts/rksafe_plan.mjs <slug>'); process.exit(1); }
@@ -36,6 +37,26 @@ const clipsEnDisco = new Set(
   fs.existsSync(`public/broll/${SLUG}`)
     ? fs.readdirSync(`public/broll/${SLUG}`).filter((f) => f.endsWith('.mp4')).map((f) => f.replace(/\.mp4$/, ''))
     : []);
+// ── METRAJE REAL (stock ya conformado a 30/1 CFR) ────────────────────────────────────────────
+// ⛔ El metraje real NO se ralentiza: `rate` siempre 1 (el 0,5× existe para esconder los
+//    artefactos de agnes, y sobre una toma de cámara real sólo se ve como cámara lenta rara).
+const REAL_DIR = `public/broll/${SLUG}_real`;
+const realEnDisco = new Set(fs.existsSync(REAL_DIR)
+  ? fs.readdirSync(REAL_DIR).filter((f) => f.endsWith('.mp4')).map((f) => f.replace(/\.mp4$/, ''))
+  : []);
+let REAL = [];
+try { ({ REAL } = await import(path.resolve(raiz, `_v3/${SLUG}_real.mjs`).replace(/\\/g, '/').replace(/^/, 'file:///'))); } catch { /* el video puede no tener metraje real */ }
+// ⛔ NO SE SUPONE LA DURACIÓN DEL METRAJE REAL. Se bajan con `-t 8.2` pero la FUENTE puede ser más
+//    corta: medido acá, 5 clips tenían entre 4,83 y 7,80 s y el build avisó que el plano los
+//    CONGELARÍA. Se mide cada archivo una vez con ffprobe.
+const durReal = {};
+for (const id of realEnDisco) {
+  try {
+    const o = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0',
+      `${REAL_DIR}/${id}.mp4`], { encoding: 'utf8' });
+    durReal[id] = Math.max(0, (+(o.match(/[\d.]+/) || [0])[0]) - 0.08);
+  } catch { durReal[id] = 0; }
+}
 
 const esClip = (d) => Math.abs(d - 4.03) < 0.06 || Math.abs(d - 8.07) < 0.06;
 
@@ -88,6 +109,14 @@ for (const it of ITEMS) (poolPorSec[it.sec] ||= []).push({
   id: SLUG + '_' + it.id, lugar: it.lugar, hayClip: clipsEnDisco.has(SLUG + '_' + it.id),
   tokens: tokensDe(it.prompt),
 });
+let nReal = 0;
+for (const it of REAL) {
+  const id = SLUG + '_' + it.id;
+  if (!realEnDisco.has(id)) continue;
+  (poolPorSec[it.sec] ||= []).push({ id, lugar: it.lugar, hayClip: true, real: true, tokens: tokensDe(it.prompt) });
+  nReal++;
+}
+console.log('metraje REAL disponible: ' + nReal + ' clips de ' + REAL.length + ' declarados');
 
 // ── armado de beats ───────────────────────────────────────────────────────
 const beats = [];
@@ -132,7 +161,8 @@ for (const sec of secciones) {
     process.exit(4);
   }
   for (const r of vivas) {
-    const bed = pool.length ? pool[cursorPool[sec.sec] % pool.length].id : null;
+    const conFoto = pool.filter((c) => !c.real);
+    const bed = conFoto.length ? conFoto[cursorPool[sec.sec] % conFoto.length].id : null;
     beats.push({ t: +r.t.toFixed(3), dur: +r.dur.toFixed(3), kind: 'componente', sec: sec.sec, comp: r.c.comp, props: r.c.props, bed: bed ? `img/${bed}_blur.jpg` : undefined });
     compsUsados.push(r.c.comp);
   }
@@ -148,6 +178,10 @@ for (const sec of secciones) {
     while (t < li1 - 0.4) {
       let dur = esc[k % esc.length]; k++;
       const quiereClip = esClip(dur);
+      // ⭐ El metraje REAL no está atado a las duraciones de agnes: el archivo dura 8,2 s enteros y
+      //    se reproduce a 1×, así que puede llenar CUALQUIER slot de 4,5 s para arriba. Sin esto
+      //    sólo entraba en los slots de 4,03/8,07 y el metraje real se quedaba en 9,3 %.
+      const admiteReal = dur >= 4.5 && dur <= 9.4;   // el tope real de cada archivo se aplica abajo
       // ⛔⛔ EL CURSOR NO PUEDE COMERSE LOS PLANOS QUE SALTEA (rkfob: 7 de 13 planos del hook nunca
       //    se montaron). Se lleva un set de USADOS; los salteados quedan disponibles.
       usadosPool[sec.sec] ||= new Set();
@@ -163,12 +197,17 @@ for (const sec of secciones) {
         // ⛔ y con el puntaje empatado, gana el que CAMBIA DE LUGAR: minutos enteros en el mismo
         //    rincón no los ve ningún número suelto, sólo la hoja de contactos (pinvacas: 50 seguidos).
         const lugarPrev = beats.length ? beats[beats.length - 1].lugar : null;
+        // ⭐ el metraje REAL gana los empates: es el 25 % que la vara del pipeline exige y es lo
+        //    único del pool que no lo dibujó una máquina.
         const mejorDe = (cands) => cands
-          .map((c) => ({ c, s: puntaje(sust, c.tokens) }))
+          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? 0.6 : 0) }))
           .sort((a, b) => b.s - a.s)[0]?.c;
         const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id));
-        elegido = (quiereClip ? mejorDe(libres2.filter((c) => c.hayClip && !clipsUsados.has(c.id))) : null)
-          || mejorDe(libres2) || mejorDe(pool.filter((c) => !used.has(c.id)));
+        // ⛔ un item REAL no tiene foto: sólo puede entrar en un slot de CLIP
+        const soloFoto = (l) => l.filter((c) => !c.real);
+        const clipOk = (c) => c.hayClip && !clipsUsados.has(c.id) && (quiereClip || (c.real && admiteReal));
+        elegido = mejorDe(libres2.filter(clipOk))
+          || mejorDe(soloFoto(libres2)) || mejorDe(soloFoto(pool.filter((c) => !used.has(c.id))));
         // ⛔ UNA SECCIÓN CORTA DE POOL SE REPITE SOLA. S6 (el dintel) tiene 7 planos para 13 slots:
         //    ciclaba los mismos siete. Cuando el propio pool no aporta NADA a la frase, se busca en
         //    TODO el pool del video el plano que sí comparta sustantivos con lo que se está diciendo
@@ -176,29 +215,30 @@ for (const sec of secciones) {
         const puntajeDe = (c) => (c ? puntaje(sust, c.tokens) : -1);
         if (puntajeDe(elegido) < 1 && sust.length) {
           const recientes = new Set(beats.slice(-14).map((b) => (b.asset || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '')));
-          const global = todos.filter((c) => !recientes.has(c.id) && (!quiereClip || (c.hayClip && !clipsUsados.has(c.id))));
+          const global = todos.filter((c) => !recientes.has(c.id) && (c.real ? (admiteReal && !clipsUsados.has(c.id)) : (!quiereClip || (c.hayClip && !clipsUsados.has(c.id)))));
           const g = mejorDe(global);
           if (puntajeDe(g) > puntajeDe(elegido)) elegido = g;
         }
       }
-      if (!elegido) { used.clear(); elegido = pool[0]; }
+      if (!elegido) { used.clear(); elegido = soloFoto(pool)[0] || pool[0]; }
       if (!elegido) break;
       used.add(elegido.id);
 
-      const usaClip = quiereClip && elegido.hayClip && !clipsUsados.has(elegido.id);
+      const usaClip = elegido.hayClip && !clipsUsados.has(elegido.id) && (quiereClip || (elegido.real && admiteReal));
       if (usaClip) clipsUsados.add(elegido.id);
       // ⛔ LA VELOCIDAD SE DECIDE CON LA DURACIÓN PLANEADA, NO CON LA RECORTADA. Medido acá: un slot
       //    de 8,07 (clip a 0,5×) recortado a 7,02 por el borde de sección dejaba de parecerse a 8,07,
       //    el ternario le ponía rate 1 y el plano pedía 7,02 s de una fuente de 4,03 → se CONGELA.
-      const rate = usaClip ? (Math.abs(dur - 8.07) < 0.06 ? 0.5 : 1) : undefined;
+      const esReal = usaClip && elegido.real;
+      const rate = usaClip ? (esReal ? 1 : (Math.abs(dur - 8.07) < 0.06 ? 0.5 : 1)) : undefined;
       if (!usaClip) dur = Math.min(dur, CAP_IMG);
-      else dur = Math.min(dur, 4.033 / rate);       // nunca más allá del archivo
+      else dur = Math.min(dur, esReal ? (durReal[elegido.id] || 0) : 4.033 / rate);   // nunca más allá del archivo
       dur = Math.min(dur, li1 - t);
       if (dur < 1.2) break;
       beats.push({
         t: +t.toFixed(3), dur: +dur.toFixed(3), sec: sec.sec, lugar: elegido.lugar,
-        kind: usaClip ? 'clip' : 'imagen',
-        asset: usaClip ? `broll/${SLUG}/${elegido.id}.mp4` : `img/${elegido.id}.jpg`,
+        kind: usaClip ? 'clip' : 'imagen', real: esReal || undefined,
+        asset: usaClip ? `broll/${SLUG}${esReal ? '_real' : ''}/${elegido.id}.mp4` : `img/${elegido.id}.jpg`,
         rate,
       });
       t += dur;
@@ -259,6 +299,13 @@ console.log('   tercio 1 ' + (cob(0, TOTAL / 3) * 100).toFixed(1) + '% · tercio
 if (AVATAR_END < TOTAL - 1) {
   const c2 = cob(AVATAR_END, TOTAL);
   console.log('   ⛔ TRAMO 2 (avatar en bucle) ' + (c2 * 100).toFixed(1) + '%  (piso 95) ' + (c2 >= 0.95 ? '✓' : '⛔'));
+}
+{
+  const segReal = finales.filter((b) => b.real).reduce((a, b) => a + b.dur, 0);
+  const segClip = finales.filter((b) => b.kind === 'clip' && !b.real).reduce((a, b) => a + b.dur, 0);
+  console.log('METRAJE REAL: ' + finales.filter((b) => b.real).length + ' planos · ' + segReal.toFixed(0) + ' s = ' +
+    (segReal / TOTAL * 100).toFixed(1) + '% del video  (piso 25) ' + (segReal / TOTAL >= 0.25 ? '✓' : '⛔') +
+    '  · clips de agnes ' + segClip.toFixed(0) + ' s');
 }
 console.log('COMPONENTES: ' + new Set(compsUsados).size + ' distintos (piso 6) · ' + compsUsados.length + ' usos');
 console.log('   ' + [...new Set(compsUsados)].join(' · '));
