@@ -184,6 +184,10 @@ for (const extra of [`${SLUG}_opt.mp4`, `${SLUG}.m4a`, `img/${SLUG}_qr.png`]) {
   if (!ok) faltan++;
 }
 fs.writeFileSync(`_${SLUG}_assets.txt`, [...assets].sort().join('\n') + '\n');
+// el farm exige la medición de REPETICIÓN de agnes_qc, y ésa sale de la capa base del montaje
+fs.writeFileSync(`_v3/${SLUG}_cues.json`, JSON.stringify(plan.beats
+  .filter((b) => b.asset)
+  .map((b) => ({ key: `${b.kind}_${Math.round(b.t * 1000)}`, src: b.asset, start: b.t, dur: b.kind === 'clip' ? b.dur * (b.rate ?? 1) : b.dur })), null, 1));
 console.log('ASSETS   : ' + chequeados + ' referenciados · ' + assets.size + ' en la lista · ' + faltan + ' faltan ' + (faltan ? '⛔' : '✓'));
 console.log('→ src/VideoEdit/Main_' + SLUG + '.tsx · cues · avatar · src/index_' + SLUG + '.tsx · _' + SLUG + '_assets.txt');
 console.log('═'.repeat(66));

@@ -39,6 +39,24 @@ const clipsEnDisco = new Set(
 
 const esClip = (d) => Math.abs(d - 4.03) < 0.06 || Math.abs(d - 8.07) < 0.06;
 
+// ⛔⛔ EL ASSET SE ELIGE POR LA FRASE QUE SUENA EN ESE SEGUNDO, NO POR RONDA. Repartir el pool de la
+//    sección en round-robin da coherencia de TEMA y no de FRASE: la oración del felpudo agarra el
+//    plano del medidor porque le tocó. Medido acá antes del arreglo: 45 % de planos pegaban.
+//    Se puntúa cada candidato por los SUSTANTIVOS compartidos con su ventana y se elige el mejor.
+const VACIAS = new Set(('a an the and or but of to in on at for with that this it is are was were be been am i you he she they we ' +
+  'my your his her their our not no yes so if then than as from by about into out up down over under one two three four five ' +
+  'do does did done go going goes get got make makes made take takes took put puts say says said just like can could would ' +
+  'will shall may might must have has had there here what when where who how why very really only also even still back ' +
+  'thing things something anything nothing somebody everybody nobody people person because before after while all any each ' +
+  'own same other another more most less least much many little big good bad right left new old first last next').split(' '));
+const tokensDe = (txt) => new Set(String(txt).toLowerCase().match(/[a-z']{4,}/g) || []);
+const raiz2 = (w) => w.replace(/(ies|es|s)$/, '');
+const puntaje = (sust, tokens) => {
+  let n = 0;
+  for (const s of sust) if (tokens.has(s) || tokens.has(raiz2(s)) || (s.length > 5 && [...tokens].some((t) => t.startsWith(s.slice(0, 5))))) n++;
+  return n;
+};
+
 // tiempo de lectura de un componente (el piso sale del TEXTO, no del slot)
 const palabrasDe = (props) => {
   let n = 0;
@@ -68,6 +86,7 @@ const secciones = cfg.SECCIONES.map((s, i, arr) => ({
 const poolPorSec = {};
 for (const it of ITEMS) (poolPorSec[it.sec] ||= []).push({
   id: SLUG + '_' + it.id, lugar: it.lugar, hayClip: clipsEnDisco.has(SLUG + '_' + it.id),
+  tokens: tokensDe(it.prompt),
 });
 
 // ── armado de beats ───────────────────────────────────────────────────────
@@ -75,6 +94,10 @@ const beats = [];
 const compsUsados = [];
 const usadosPool = {};
 const cursorPool = {};
+// ⛔ NUNCA REPETIR UN CLIP (regla del creador, todos los canales). El pool de fotos sí se puede
+//    reusar dentro de una sección; el CLIP no: agnes_qc bloquea el render si un mp4 aparece dos veces.
+const clipsUsados = new Set();
+const todos = Object.values(poolPorSec).flat();
 
 for (const sec of secciones) {
   const esc = cfg.ESCALERA[sec.rol];
@@ -132,12 +155,38 @@ for (const sec of secciones) {
       if (used.size >= pool.length) used.clear();
       const forz = (cfg.ORDEN_FORZADO[sec.sec] || []).find((id) => !used.has(id));
       let elegido = forz ? pool.find((c) => c.id === forz) : null;
-      if (!elegido) elegido = pool.find((c) => !used.has(c.id) && (!quiereClip || c.hayClip)) || pool.find((c) => !used.has(c.id));
+      if (!elegido) {
+        // sustantivos de la frase que suena EN ESTA ventana
+        const sust = words.filter((w) => w.t >= t && w.t < t + (esc[(k - 1) % esc.length] || 4))
+          .map((w) => w.w).filter((w) => w.length > 3 && !VACIAS.has(w));
+        const anterior = beats.length ? (beats[beats.length - 1].asset || '') : '';
+        // ⛔ y con el puntaje empatado, gana el que CAMBIA DE LUGAR: minutos enteros en el mismo
+        //    rincón no los ve ningún número suelto, sólo la hoja de contactos (pinvacas: 50 seguidos).
+        const lugarPrev = beats.length ? beats[beats.length - 1].lugar : null;
+        const mejorDe = (cands) => cands
+          .map((c) => ({ c, s: puntaje(sust, c.tokens) }))
+          .sort((a, b) => b.s - a.s)[0]?.c;
+        const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id));
+        elegido = (quiereClip ? mejorDe(libres2.filter((c) => c.hayClip && !clipsUsados.has(c.id))) : null)
+          || mejorDe(libres2) || mejorDe(pool.filter((c) => !used.has(c.id)));
+        // ⛔ UNA SECCIÓN CORTA DE POOL SE REPITE SOLA. S6 (el dintel) tiene 7 planos para 13 slots:
+        //    ciclaba los mismos siete. Cuando el propio pool no aporta NADA a la frase, se busca en
+        //    TODO el pool del video el plano que sí comparta sustantivos con lo que se está diciendo
+        //    (es la red de rescate de la regla 8: buscar en el pool ENTERO antes de repetir).
+        const puntajeDe = (c) => (c ? puntaje(sust, c.tokens) : -1);
+        if (puntajeDe(elegido) < 1 && sust.length) {
+          const recientes = new Set(beats.slice(-14).map((b) => (b.asset || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '')));
+          const global = todos.filter((c) => !recientes.has(c.id) && (!quiereClip || (c.hayClip && !clipsUsados.has(c.id))));
+          const g = mejorDe(global);
+          if (puntajeDe(g) > puntajeDe(elegido)) elegido = g;
+        }
+      }
       if (!elegido) { used.clear(); elegido = pool[0]; }
       if (!elegido) break;
       used.add(elegido.id);
 
-      const usaClip = quiereClip && elegido.hayClip;
+      const usaClip = quiereClip && elegido.hayClip && !clipsUsados.has(elegido.id);
+      if (usaClip) clipsUsados.add(elegido.id);
       // ⛔ LA VELOCIDAD SE DECIDE CON LA DURACIÓN PLANEADA, NO CON LA RECORTADA. Medido acá: un slot
       //    de 8,07 (clip a 0,5×) recortado a 7,02 por el borde de sección dejaba de parecerse a 8,07,
       //    el ternario le ponía rate 1 y el plano pedía 7,02 s de una fuente de 4,03 → se CONGELA.
@@ -158,7 +207,7 @@ for (const sec of secciones) {
 }
 
 // ── VENTANAS DE AVATAR: sólo ANTES de AVATAR_END ──────────────────────────
-const OBJ_COB_T1 = 0.755;
+const OBJ_COB_T1 = 0.775;
 let quitados = 0;
 if (AVATAR_END > 1) {
   const t1 = beats.filter((b) => b.t + b.dur <= AVATAR_END && b.kind !== 'componente');
